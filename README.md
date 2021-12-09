@@ -1,5 +1,4 @@
-# SuperPeople_Dump
-
+# Super People sdk
 
 Offsets
 
