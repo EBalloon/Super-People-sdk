@@ -3,7 +3,7 @@
 
 Offsets
 
-    Uworld: 0xFCADF3    
+Uworld: 0xFCADF3    
     ObjObjects: 0x190296A   
     Gnames: 0x21BB9D1   
     BoneMatrix: 0x36F5490   
