@@ -21,6 +21,7 @@ Uworld: 0xFCADF3
     Mesh: 0x3a8 
     RelativeLocation: 0x194 
     Health: 0x22d0  
+    TeamIndex: 0x5a8 + 0xe8
 
 Actor ID
 
