@@ -8,7 +8,6 @@ Offsets
     BoneMatrix: 0x36ED010  
     WorldToScreen: 0x37D0070   
 
-
     LocalPlayers: 0xb8  
     GameInstance: 0x1d8 
     PersistentLevel: 0x48   
