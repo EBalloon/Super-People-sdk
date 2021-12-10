@@ -2,25 +2,25 @@
 
 Offsets
 
-    Uworld: 0x693C641    
-    ObjObjects: 0x67F3C01 
-    Gnames: 0x67DB3C1  
-    BoneMatrix: 0x36ED011 
-    WorldToScreen: 0x37D0071   
+    Uworld: 0x693C640    
+    ObjObjects: 0x67F3C00  
+    Gnames: 0x67DB3C0   
+    BoneMatrix: 0x36ED010  
+    WorldToScreen: 0x37D0070   
 
     LocalPlayers: 0xb8  
-    GameInstance: 0x1d80
+    GameInstance: 0x1d8 
     PersistentLevel: 0x48   
     Levels: 0x198   
     PlayerController: 0x30  
-    PlayerCameraManager: 0x430
-    AcknowledgedPawn: 0x420
-    PlayerState: 0x340
-    RootComponent: 0x150   
+    PlayerCameraManager: 0x438  
+    AcknowledgedPawn: 0x428
+    PlayerState: 0x340  
+    RootComponent: 0x158    
     Mesh: 0x398 
-    RelativeLocation: 0x220
-    Health: 0xd20 
-    TeamIndex: 0x590 + 0xe8
+    RelativeLocation: 0x224
+    Health: 0xd28 
+    TeamIndex: 0x598 + 0xe8
 
 Actor ID
 
