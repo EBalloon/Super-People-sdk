@@ -9,18 +9,18 @@ Offsets
     WorldToScreen: 0x37D0070   
 
     LocalPlayers: 0xb8  
-    GameInstance: 0x1d8 
+    GameInstance: 0x1d80
     PersistentLevel: 0x48   
     Levels: 0x198   
     PlayerController: 0x30  
-    PlayerCameraManager: 0x438  
-    AcknowledgedPawn: 0x428
-    PlayerState: 0x340  
-    RootComponent: 0x158    
+    PlayerCameraManager: 0x430
+    AcknowledgedPawn: 0x420
+    PlayerState: 0x340
+    RootComponent: 0x150   
     Mesh: 0x398 
-    RelativeLocation: 0x224
-    Health: 0xd28 
-    TeamIndex: 0x598 + 0xe8
+    RelativeLocation: 0x220
+    Health: 0xd20 
+    TeamIndex: 0x590 + 0xe8
 
 Actor ID
 
