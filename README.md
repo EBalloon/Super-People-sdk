@@ -2,11 +2,11 @@
 
 Offsets
 
-    Uworld: 0x693C640    
-    ObjObjects: 0x67F3C00  
-    Gnames: 0x67DB3C0   
-    BoneMatrix: 0x36ED010  
-    WorldToScreen: 0x37D0070   
+    Uworld: 0x693C641    
+    ObjObjects: 0x67F3C01 
+    Gnames: 0x67DB3C1  
+    BoneMatrix: 0x36ED011 
+    WorldToScreen: 0x37D0071   
 
     LocalPlayers: 0xb8  
     GameInstance: 0x1d80
