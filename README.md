@@ -33,7 +33,7 @@ Check Team
 
     if (teamindex != currentindex) 
     { 
-         //your code
+         //your code 
     ;
 
 Actor ID
