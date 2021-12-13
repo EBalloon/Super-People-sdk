@@ -37,9 +37,9 @@ Check Team
     ;
 
 Actor ID
-
-   BP-BattleRoyalePawn_C
-
+    
+      BP-BattleRoyalePawn_C
+    
 Bones ID
 
     Backpack = 120
