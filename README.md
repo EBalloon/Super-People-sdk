@@ -3,7 +3,7 @@
 Offsets
 
     Uworld: 0x693C640    
-    ObjObjects: 0x67F3C00  
+    UObjects: 0x67F3C00  
     Gnames: 0x67DB3C0   
     BoneMatrix: 0x36ED010  
     WorldToScreen: 0x37D0070   
