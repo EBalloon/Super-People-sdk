@@ -19,6 +19,7 @@ Offsets
     RootComponent: 0x158    
     Mesh: 0x398 
     RelativeLocation: 0x224
+    PlayerName: 0x3f8
     Health: 0xd28 
     TeamIndex: 0x598 + 0xe8
 
