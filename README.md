@@ -25,11 +25,11 @@ Offsets
 
 Check Team
 
-    auto CurUHReplicatedPlayerInfo = Read<uintptr_t>(LocalPlayerState + 0x598);
-    auto UHReplicatedPlayerInfo = Read<uintptr_t>(EnemyPlayerState + 0x598);
+    auto CurUHReplicatedPlayerInfo = Read<uintptr_t>(LocalPlayerState + 0x590);
+    auto UHReplicatedPlayerInfo = Read<uintptr_t>(EnemyPlayerState + 0x590);
 
-    auto currentindex = Read<char>(CurUHReplicatedPlayerInfo + 0xe8);
-    auto teamindex = Read<char>(UHReplicatedPlayerInfo + 0xe8);
+    auto currentindex = Read<char>(CurUHReplicatedPlayerInfo + 0xe0);
+    auto teamindex = Read<char>(UHReplicatedPlayerInfo + 0xe0);
 
     if (teamindex != currentindex) 
     { 
