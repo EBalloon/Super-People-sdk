@@ -22,6 +22,21 @@ Offsets
     Health: 0xd28 
     TeamIndex: 0x598 + 0xe8
 
+
+Check Team
+
+
+				auto CurUHReplicatedPlayerInfo = Read<uintptr_t>(LocalPlayerState + 0x598);
+				auto UHReplicatedPlayerInfo = Read<uintptr_t>(EnemyPlayerState + 0x598);
+
+				auto currentindex = Read<char>(CurUHReplicatedPlayerInfo + 0xe8);
+				auto teamindex = Read<char>(UHReplicatedPlayerInfo + 0xe8);
+
+				if (teamindex != currentindex) 
+				{ 
+				    //your code
+				};
+
 Actor ID
 
 BP-BattleRoyalePawn_C
