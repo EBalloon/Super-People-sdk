@@ -2,11 +2,12 @@
 
 Offsets
 
-    Uworld: 0x693C640    
-    UObjects: 0x67F3C00  
-    Gnames: 0x67DB3C0   
-    BoneMatrix: 0x36ED010  
-    WorldToScreen: 0x37D0070   
+    Uworld: 0x6958720  
+    UObjects: 0x680FCC0 
+    Gnames: 0x67F7400  
+    BoneMatrix: 0x36FF400 
+    WorldToScreen: 0x37E2460   
+    LineOfSightTo: 0x372FA50
 
     LocalPlayers: 0xb8  
     GameInstance: 0x1d8 
@@ -20,7 +21,7 @@ Offsets
     Mesh: 0x398 
     RelativeLocation: 0x224
     PlayerName: 0x3f8
-    Health: 0xd28 
+    Health: 0x10e0 
     TeamIndex: 0x598 + 0xe8
 
 
