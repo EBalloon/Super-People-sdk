@@ -27,6 +27,7 @@
 	char bDisableTextureLayoutManagement; // 0x39(0x01)
 	Unknown ReferencedMaterials; // 0x40(0x10)
 	Unknown ImageProperties; // 0x50(0x10)
+	Unknown GroupNodeMap; // 0x60(0x50)
 	Unknown ContributingMorphTargets; // 0xb0(0x10)
 	Unknown MorphTargetReconstructionInfo; // 0xc0(0x10)
 	Unknown VersionId; // 0xd0(0x10)
