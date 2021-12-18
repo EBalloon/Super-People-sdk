@@ -30,7 +30,9 @@ Check Team
 
     auto CurUHReplicatedPlayerInfo = Read<uintptr_t>(LocalPlayerState + 0x598);
     auto currentindex = Read<char>(CurUHReplicatedPlayerInfo + 0xe8);
-        
+    
+    // ...  
+    
     auto UHReplicatedPlayerInfo = Read<uintptr_t>(EnemyPlayerState + 0x598);
     auto teamindex = Read<char>(UHReplicatedPlayerInfo + 0xe8);
 
