@@ -1,0 +1,38 @@
+// WidgetBlueprintGeneratedClass GraphicWidget.GraphicWidget_C
+struct UGraphicWidget_C : UBravoHotelSettingSubWidget {
+	Unknown UberGraphFrame; //  0x298 Size(8)
+	Unknown Anti; //  0x2a0 Size(8)
+	Unknown display; //  0x2a8 Size(8)
+	Unknown DisplayMode; //  0x2b0 Size(8)
+	Unknown DLSS; //  0x2b8 Size(8)
+	Unknown DOF; //  0x2c0 Size(8)
+	Unknown Effect; //  0x2c8 Size(8)
+	Unknown Foliage; //  0x2d0 Size(8)
+	Unknown FOV; //  0x2d8 Size(8)
+	Unknown FSR; //  0x2e0 Size(8)
+	Unknown LanguageSetting; //  0x2e8 Size(8)
+	Unknown MaxFrameRate; //  0x2f0 Size(8)
+	Unknown MaxLobbyFrameRate; //  0x2f8 Size(8)
+	Unknown PP; //  0x300 Size(8)
+	Unknown Reflex; //  0x308 Size(8)
+	Unknown Resolution; //  0x310 Size(8)
+	Unknown ResolutionScaling; //  0x318 Size(8)
+	Unknown ScrollBox_55; //  0x320 Size(8)
+	Unknown Shading; //  0x328 Size(8)
+	Unknown Shadow; //  0x330 Size(8)
+	Unknown Sharpen; //  0x338 Size(8)
+	Unknown SlotItemWidget_C_1; //  0x340 Size(8)
+	Unknown Smooth; //  0x348 Size(8)
+	Unknown SubTitleSlotWidget; //  0x350 Size(8)
+	Unknown Texture; //  0x358 Size(8)
+	Unknown v; //  0x360 Size(8)
+	Unknown ViewDistance; //  0x368 Size(8)
+	Unknown ; //  0x370 Size(8)
+	Unknown ; //  0x378 Size(8)
+	float OldDisplayModeValue; //  0x380 Size(4)
+	float OldDisplayResolutionValue; //  0x384 Size(4)
+	Unknown ScrollBarTimer; //  0x388 Size(8)
+
+	void CustomEvent_1(Unknown Value); // Function GraphicWidget.GraphicWidget_C.CustomEvent_1(BlueprintCallable|BlueprintEvent) // <Game+0x23a73f0>
+};
+

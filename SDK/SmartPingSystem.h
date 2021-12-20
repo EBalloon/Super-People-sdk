@@ -1,0 +1,38 @@
+// BlueprintGeneratedClass SmartPingSystem.SmartPingSystem_C
+struct USmartPingSystem_C : UBravoHotelSmartPingSystem {
+	Unknown UberGraphFrame; //  0x128 Size(8)
+	struct FMulticastInlineDelegate RequestOnServer; //  0x130 Size(10)
+	Unknown SelectionMode; //  0x140 Size(1)
+	float TimeoutBetweenPings; //  0x144 Size(4)
+	Unknown PingTimeouts; //  0x148 Size(10)
+	Unknown ExecutingMenuIconIDs; //  0x158 Size(10)
+	Unknown ExecutingMenuIconSettings; //  0x168 Size(10)
+	Unknown OwningPawn; //  0x178 Size(8)
+	Unknown SelectionMenu; //  0x180 Size(8)
+	struct FMulticastInlineDelegate ExecuteOwningClient; //  0x188 Size(10)
+	Unknown TraceMethod; //  0x198 Size(1)
+	float TraceLength; //  0x19c Size(4)
+	float TraceRadius; //  0x1a0 Size(4)
+	Unknown TraceChannel; //  0x1a4 Size(1)
+	char TraceComplex; //  0x1a5 Size(1)
+	struct FMulticastInlineDelegate MenuActivated; //  0x1a8 Size(10)
+	struct FMulticastInlineDelegate MenuDeactivated; //  0x1b8 Size(10)
+	struct FMulticastInlineDelegate PingReceivedOnServer; //  0x1c8 Size(10)
+	Unknown ExecutingPingInfo2; //  0x1d8 Size(38)
+	char NoneHitActor; //  0x210 Size(1)
+	char IgnorInput; //  0x211 Size(1)
+	struct FName TempItemPingTableIndex; //  0x214 Size(8)
+	char Enab; //  0x21c Size(1)
+	struct FName NewVar_1; //  0x220 Size(8)
+	Unknown MainWidget; //  0x228 Size(8)
+	Unknown Enab; //  0x230 Size(1)
+	char IsSelectionMenuOnMap; //  0x231 Size(1)
+	Unknown TmpLocationByMap; //  0x234 Size(c)
+	Unknown TmpMousePosition; //  0x240 Size(8)
+	char IsVisibleSelectionMenu; //  0x248 Size(1)
+	char IsPressedCtrl; //  0x249 Size(1)
+	char FindPickUpItem; //  0x24a Size(1)
+
+	void Set(char IsPingType); // Function SmartPingSystem.SmartPingSystem_C.Set(Public|BlueprintCallable|BlueprintEvent) // <Game+0x23a73f0>
+};
+

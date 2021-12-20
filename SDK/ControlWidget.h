@@ -1,0 +1,35 @@
+// WidgetBlueprintGeneratedClass ControlWidget.ControlWidget_C
+struct UControlWidget_C : UBravoHotelSettingSubWidget {
+	Unknown UberGraphFrame; //  0x298 Size(8)
+	Unknown 15XSensitivity; //  0x2a0 Size(8)
+	Unknown 2XSensitivity; //  0x2a8 Size(8)
+	Unknown 4XSensitivity; //  0x2b0 Size(8)
+	Unknown 6XSensitivity; //  0x2b8 Size(8)
+	Unknown 8XSensitivity; //  0x2c0 Size(8)
+	Unknown ADSSensitivity; //  0x2c8 Size(8)
+	Unknown GeneralSensitivity; //  0x2d0 Size(8)
+	Unknown ReverseLeftAndRight; //  0x2d8 Size(8)
+	Unknown ReverseUpAndDown; //  0x2e0 Size(8)
+	Unknown ScrollBox_55; //  0x2e8 Size(8)
+	Unknown TargetingSensitivity; //  0x2f0 Size(8)
+	Unknown ToggleADS; //  0x2f8 Size(8)
+	Unknown ToggleAOS; //  0x300 Size(8)
+	Unknown ToggleCrouch; //  0x308 Size(8)
+	Unknown ToggleExLean; //  0x310 Size(8)
+	Unknown ToggleFreeLook; //  0x318 Size(8)
+	Unknown ToggleSprint; //  0x320 Size(8)
+	Unknown ToggleSteadyAim; //  0x328 Size(8)
+	Unknown ToggleWalk; //  0x330 Size(8)
+	Unknown TotalSensitivity; //  0x338 Size(8)
+	Unknown UsingDetailSensitiv; //  0x340 Size(8)
+	Unknown VehicleDriverSensitivity; //  0x348 Size(8)
+	Unknown VerticalBox_1; //  0x350 Size(8)
+	Unknown VerticlaModifier; //  0x358 Size(8)
+	Unknown ; //  0x360 Size(8)
+	Unknown ; //  0x368 Size(8)
+	Unknown ; //  0x370 Size(8)
+	Unknown ScrollBarTimer; //  0x378 Size(8)
+
+	void Construct(); // Function ControlWidget.ControlWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game+0x23a73f0>
+};
+
