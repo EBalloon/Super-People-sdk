@@ -1,4 +1,4 @@
-// UserDefinedEnum EModifySetting.EModifySetting
+// User EModifySetting.EModifySetting
 enum class EModifySetting : uint8 {
 	EModifySetting = 0,
 	EModifySetting = 1,

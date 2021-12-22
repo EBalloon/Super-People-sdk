@@ -1,4 +1,4 @@
-// UserDefinedEnum LOOKPresetsEnum.LOOKPresetsEnum
+// User LOOKPresetsEnum.LOOKPresetsEnum
 enum class LOOKPresetsEnum : uint8 {
 	LOOKPresetsEnum = 0,
 	LOOKPresetsEnum = 1,

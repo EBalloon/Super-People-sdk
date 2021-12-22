@@ -157,11 +157,11 @@ enum class ECoherentUIGTSettingsSeverity : uint8 {
 };
 
 // Enum CoherentUIGTPlugin.EGamepadBehaviourOnFocusLost
-enum class EGamepadBehaviourOnFocusLost : uint8 {
+enum class EGamepadBehaviourOnFocusLoss : uint8 {
 	ResetState = 0,
 	UseCurrentState = 1,
 	UseStateBeforeReset = 2,
-	EGamepadBehaviourOnFocusLost_MAX = 3
+	EGamepadBehaviourOnFocusLos = 3
 };
 
 // Enum CoherentUIGTPlugin.EGTInputWidgetLineTraceMode
@@ -181,8 +181,8 @@ enum class EGTInputWidgetRaycastQuality : uint8 {
 
 // Class CoherentUIGTPlugin.CoherentUIGTAudioWrapper
 struct UCoherentUIGTAudioWrapper : Object {
-	Unknown Owner; //  0x28 Size(8)
-	Unknown Sounds; //  0x30 Size(50)
+	struct Unknown Owner; //  0x28 Size(8)
+	struct TMap<{}, {}>Unknown Sounds; //  0x30 Size(50)
 };
 
 // Class CoherentUIGTPlugin.CoherentUIGTBaseComponent
@@ -196,8 +196,8 @@ struct UCoherentUIGTBaseComponent : UActorComponent {
 	struct FMulticastInlineDelegate JavaScriptEvent; //  0x110 Size(10)
 	struct FMulticastInlineDelegate UIGTScriptingReady; //  0x120 Size(10)
 	struct FDelegate LiveViewSizeRequested; //  0x130 Size(10)
-	Unknown Texture; //  0x158 Size(8)
-	Unknown Filter; //  0x160 Size(1)
+	struct Unknown Texture; //  0x158 Size(8)
+	char Filter; //  0x160 Size(1)
 	char bReceiveInput; //  0x161 Size(1)
 	char bReceiveInputWhenTransparent; //  0x162 Size(1)
 	char AllowPerformanceWarnings; //  0x163 Size(1)
@@ -210,9 +210,9 @@ struct UCoherentUIGTBaseComponent : UActorComponent {
 	int32_t LayerHeightThreshold; //  0x17c Size(4)
 	char bEnableAdditionalDefaultStyles; //  0x180 Size(1)
 	char bDelayedUpdate; //  0x181 Size(1)
-	Unknown AudioWrapper; //  0x1f8 Size(8)
+	struct Unknown AudioWrapper; //  0x1f8 Size(8)
 
-	void UpdateWholeDataModelFromStruct(Unknown Arg); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.UpdateWholeDataModelFromStruct(Final|Native|Public|BlueprintCallable|Const) // <Game+0x1100940>
+	void UpdateWholeDataModelFromStruct(struct TFieldPath<FUnknown> Arg); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.UpdateWholeDataModelFromStruct(Final|Native|Public|BlueprintCallable|Const) // <Game+0x1100d70>
 };
 
 // Class CoherentUIGTPlugin.CoherentUIGTComponent
@@ -227,16 +227,16 @@ struct UCoherentUIGTComponent : UCoherentUIGTBaseComponent {
 
 // Class CoherentUIGTPlugin.CoherentUIGTGameHUD
 struct ACoherentUIGTGameHUD : AHUD {
-	Unknown CoherentUIGTHUD; //  0x400 Size(8)
+	struct Unknown CoherentUIGTHUD; //  0x400 Size(8)
 
-	void SetupUIGTView(struct FString PageUrl, char bIsTransparent, float ClickThroughAlphaThreshold, float AnimationFrameDefer, char bDelayedUpdate); // Function CoherentUIGTPlugin.CoherentUIGTGameHUD.SetupUIGTView(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game+0x1103730>
+	void SetupUIGTView(struct FString PageUrl, char bIsTransparent, float ClickThroughAlphaThreshold, float AnimationFrameDefer, char bDelayedUpdate); // Function CoherentUIGTPlugin.CoherentUIGTGameHUD.SetupUIGTView(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game+0x1103b70>
 };
 
 // Class CoherentUIGTPlugin.CoherentUIGTHUD
 struct UCoherentUIGTHUD : UCoherentUIGTBaseComponent {
-	Unknown HUDMaterialName; //  0x230 Size(18)
-	Unknown HUDMaterial; //  0x248 Size(8)
-	Unknown HUDMaterialInstance; //  0x250 Size(8)
+	struct Unknown HUDMaterialName; //  0x230 Size(18)
+	struct Unknown HUDMaterial; //  0x248 Size(8)
+	struct Unknown HUDMaterialInstance; //  0x250 Size(8)
 };
 
 // Class CoherentUIGTPlugin.CoherentUIGTInputActor
@@ -246,42 +246,42 @@ struct ACoherentUIGTInputActor : UActor {
 	struct FMulticastInlineDelegate OnCoherentUIGTInputActorKeyDown; //  0x330 Size(10)
 	struct FMulticastInlineDelegate OnCoherentUIGTInputActorKeyUp; //  0x340 Size(10)
 
-	void ToggleCoherentUIGTInputFocus(); // Function CoherentUIGTPlugin.CoherentUIGTInputActor.ToggleCoherentUIGTInputFocus(Final|Native|Public|BlueprintCallable) // <Game+0x1103990>
+	void ToggleCoherentUIGTInputFocus(); // Function CoherentUIGTPlugin.CoherentUIGTInputActor.ToggleCoherentUIGTInputFocus(Final|Native|Public|BlueprintCallable) // <Game+0x1103dd0>
 };
 
 // Class CoherentUIGTPlugin.CoherentUIGTJSEvent
 struct UCoherentUIGTJSEvent : Object {
-	Unknown StructTypes; //  0xa8 Size(10)
+	struct TArray<Unknown> StructTypes; //  0xa8 Size(10)
 
-	void AddText(struct FText& Text); // Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddText(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x1106630>
+	void AddText(struct FText& Text); // Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddText(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x1106a70>
 };
 
 // Class CoherentUIGTPlugin.CoherentUIGTJSPayload
 struct UCoherentUIGTJSPayload : Object {
 	struct FString EventName; //  0x28 Size(10)
 
-	void ReadObject(int32_t Index, Unknown Object); // Function CoherentUIGTPlugin.CoherentUIGTJSPayload.ReadObject(Final|Native|Public|BlueprintCallable) // <Game+0x1106f80>
+	void ReadObject(int32_t Index, struct Unknown Object); // Function CoherentUIGTPlugin.CoherentUIGTJSPayload.ReadObject(Final|Native|Public|BlueprintCallable) // <Game+0x11073c0>
 };
 
 // Class CoherentUIGTPlugin.CoherentUIGTLiveView
 struct UCoherentUIGTLiveView : UActorComponent {
 	struct FString LinkName; //  0xb0 Size(10)
-	Unknown Texture; //  0xc0 Size(8)
+	struct Unknown Texture; //  0xc0 Size(8)
 
-	void OnLiveViewSizeRequest(Unknown baseComponent, struct FString Name, int32_t& Width, int32_t& Height); // Function CoherentUIGTPlugin.CoherentUIGTLiveView.OnLiveViewSizeRequest(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x1106df0>
+	void OnLiveViewSizeRequest(struct Unknown baseComponent, struct FString Name, int32_t& Width, int32_t& Height); // Function CoherentUIGTPlugin.CoherentUIGTLiveView.OnLiveViewSizeRequest(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x1107230>
 };
 
 // Class CoherentUIGTPlugin.CoherentUIGTSettings
 struct UCoherentUIGTSettings : Object {
-	char Enab; //  0x28 Size(1)
+	char EnableLiveReload; //  0x28 Size(1)
 	int32_t InspectorPort; //  0x2c Size(4)
 	int32_t WebdriverPort; //  0x30 Size(4)
-	char Enab; //  0x34 Size(1)
-	char EnabriverPort; //  0x35 Size(1)
+	char EnableWebSecurity; //  0x34 Size(1)
+	char EnableLocalization; //  0x35 Size(1)
 	char RunAsynchronous; //  0x36 Size(1)
 	char AllowPerformanceWarningsInEditor; //  0x37 Size(1)
 	char ShowWarningsOnScreen; //  0x38 Size(1)
-	Unknown LogSeverity; //  0x39 Size(1)
+	enum class Unknow LogSeverity; //  0x39 Size(1)
 	char bPaintToBackBuffer; //  0x3a Size(1)
 	char bRespectTitleSafeZone; //  0x3b Size(1)
 	char bRespectLetterboxing; //  0x3c Size(1)
@@ -289,7 +289,7 @@ struct UCoherentUIGTSettings : Object {
 	struct FString CoUIResourcesRoot; //  0x50 Size(10)
 	char TickWhileGameIsPaused; //  0x60 Size(1)
 	char bUseLowerCaseNamesForAutoExposedProperties; //  0x61 Size(1)
-	Unknown MSAA; //  0x62 Size(1)
+	enum class Unknow MSAA; //  0x62 Size(1)
 	struct FString CookiesResource; //  0x68 Size(10)
 	struct FString LocalStorageFolder; //  0x78 Size(10)
 	char UseCacheFile; //  0x88 Size(1)
@@ -298,7 +298,7 @@ struct UCoherentUIGTSettings : Object {
 
 // Class CoherentUIGTPlugin.CoherentUIGTWidget
 struct UCoherentUIGTWidget : UWidget {
-	Unknown Owner; //  0x120 Size(8)
+	struct Unknown Owner; //  0x120 Size(8)
 	struct FMulticastInlineDelegate ReadyForBindings; //  0x128 Size(10)
 	struct FMulticastInlineDelegate BindingsReleased; //  0x138 Size(10)
 	struct FMulticastInlineDelegate FinishLoad; //  0x148 Size(10)
@@ -311,9 +311,9 @@ struct UCoherentUIGTWidget : UWidget {
 	struct FMulticastInlineDelegate KeyUpDelegate; //  0x1d0 Size(10)
 	struct FMulticastInlineDelegate KeyDownDelegate; //  0x1e0 Size(10)
 	struct FMulticastInlineDelegate MouseEventDelegate; //  0x1f0 Size(10)
-	Unknown Filter; //  0x200 Size(1)
+	char Filter; //  0x200 Size(1)
 	char bReceiveInput; //  0x201 Size(1)
-	Unknown InputPropagationBehaviour; //  0x202 Size(1)
+	char InputPropagationBehaviour; //  0x202 Size(1)
 	char bReceiveInputWhenTransparent; //  0x203 Size(1)
 	char bGammaCorrectedMaterial; //  0x204 Size(1)
 	float TickPeriodInMinimizedGame; //  0x208 Size(4)
@@ -326,12 +326,12 @@ struct UCoherentUIGTWidget : UWidget {
 	int32_t LayerWidthThreshold; //  0x224 Size(4)
 	int32_t LayerHeightThreshold; //  0x228 Size(4)
 	char bEnableAdditionalDefaultStyles; //  0x22c Size(1)
-	Unknown AudioWrapper; //  0x2a0 Size(8)
+	struct Unknown AudioWrapper; //  0x2a0 Size(8)
 	struct FString URL; //  0x328 Size(10)
 	float ClickThroughAlphaThreshold; //  0x338 Size(4)
 	char OffscreenCanvasRendering; //  0x33c Size(1)
 	char Transparent; //  0x33d Size(1)
 
-	void UpdateWholeDataModelFromStruct(Unknown Arg); // Function CoherentUIGTPlugin.CoherentUIGTWidget.UpdateWholeDataModelFromStruct(Final|Native|Public|BlueprintCallable|Const) // <Game+0x1100a10>
+	void UpdateWholeDataModelFromStruct(struct TFieldPath<FUnknown> Arg); // Function CoherentUIGTPlugin.CoherentUIGTWidget.UpdateWholeDataModelFromStruct(Final|Native|Public|BlueprintCallable|Const) // <Game+0x1100e40>
 };
 

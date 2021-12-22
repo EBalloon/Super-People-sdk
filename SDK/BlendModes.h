@@ -1,4 +1,4 @@
-// UserDefinedEnum BlendModes.BlendModes
+// User BlendModes.BlendModes
 enum class BlendModes : uint8 {
 	BlendModes = 0,
 	BlendModes = 1,

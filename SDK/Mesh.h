@@ -1,4 +1,4 @@
-// Enum MeshDescription.EComputeNTBsOptions
+// Enum Mesh.EComputeNTBsOptions
 enum class EComputeNTBsOptions : uint8 {
 	EComputeNTBsOptions = 0,
 	EComputeNTBsOptions = 1,

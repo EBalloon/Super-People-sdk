@@ -66,25 +66,25 @@ enum class EMagicLeapControllerLEDSpeed : uint8 {
 	EMagicLeapControllerLEDSpeed = 3
 };
 
-// Enum MagicLeapController.EMagicLeapControllerLEDColo
-enum class EMagicLeapControllerLEDColo : uint8 {
-	EMagicLeapControllerLEDColo = 0,
-	EMagicLeapControllerLEDColo = 1,
-	EMagicLeapControllerLEDColo = 2,
-	EMagicLeapControllerLEDColo = 3,
-	EMagicLeapControllerLEDColo = 4,
-	EMagicLeapControllerLEDColo = 5,
-	EMagicLeapControllerLEDColo = 6,
-	EMagicLeapControllerLEDColo = 7,
-	EMagicLeapControllerLEDColo = 8,
-	EMagicLeapControllerLEDColo = 9,
-	EMagicLeapControllerLEDColo = 10,
-	EMagicLeapControllerLEDColo = 11,
-	EMagicLeapControllerLEDColo = 12,
-	EMagicLeapControllerLEDColo = 13,
-	EMagicLeapControllerLEDColo = 14,
-	EMagicLeapControllerLEDColo = 15,
-	EMagicLeapControllerLEDColo = 16
+// Enum MagicLeapController.EMagicLeapControllerLEDColor
+enum class EMagicLeapControllerLEDColor : uint8 {
+	EMagicLeapControllerLEDColor = 0,
+	EMagicLeapControllerLEDColor = 1,
+	EMagicLeapControllerLEDColor = 2,
+	EMagicLeapControllerLEDColor = 3,
+	EMagicLeapControllerLEDColor = 4,
+	EMagicLeapControllerLEDColor = 5,
+	EMagicLeapControllerLEDColor = 6,
+	EMagicLeapControllerLEDColor = 7,
+	EMagicLeapControllerLEDColor = 8,
+	EMagicLeapControllerLEDColor = 9,
+	EMagicLeapControllerLEDColor = 10,
+	EMagicLeapControllerLEDColor = 11,
+	EMagicLeapControllerLEDColor = 12,
+	EMagicLeapControllerLEDColor = 13,
+	EMagicLeapControllerLEDColor = 14,
+	EMagicLeapControllerLEDColor = 15,
+	EMagicLeapControllerLEDColor = 16
 };
 
 // Enum MagicLeapController.EMagicLeapControllerLEDEffect
@@ -130,8 +130,8 @@ enum class EMagicLeapControllerType : uint8 {
 	EMagicLeapControllerType = 3
 };
 
-// Class MagicLeapController.MagicLeapTouchpadGesturesCo
-struct UMagicLeapTouchpadGesturesCot : UActorComponent {
+// Class MagicLeapController.MagicLeapTouchpadGesturesComponent
+struct UMagicLeapTouchpadGesturesComponent : UActorComponent {
 	struct FMulticastInlineDelegate OnTouchpadGestureStart; //  0xb8 Size(10)
 	struct FMulticastInlineDelegate OnTouchpadGestureContinue; //  0xc8 Size(10)
 	struct FMulticastInlineDelegate OnTouchpadGestureEnd; //  0xd8 Size(10)

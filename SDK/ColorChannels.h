@@ -1,4 +1,4 @@
-// UserDefinedEnum ColorChannels.ColorChannels
+// User ColorChannels.ColorChannels
 enum class ColorChannels : uint8 {
 	ColorChannels = 0,
 	ColorChannels = 1,

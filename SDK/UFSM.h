@@ -16,176 +16,176 @@ enum class ESeverity : uint8 {
 
 // Class UFSM.FSM_SetState_Async
 struct UFSM_SetState_Async : UBlueprintAsyncActionBase {
-	Unknown Target; //  0x30 Size(8)
+	struct Unknown Target; //  0x30 Size(8)
 	struct FName StateName; //  0x38 Size(8)
 	float Timer; //  0x40 Size(4)
 	char Repeat; //  0x44 Size(1)
-	Unknown TimerHandle; //  0x48 Size(8)
+	struct Unknown TimerHandle; //  0x48 Size(8)
 	struct FMulticastInlineDelegate OnSuccess; //  0x50 Size(10)
-	struct FMulticastInlineDelegate OnAb; //  0x60 Size(10)
+	struct FMulticastInlineDelegate OnAborted; //  0x60 Size(10)
 
-	Unknown FSM_SetState_Async(Unknown FSM, float WaitForSeconds, struct FName Name, char Loop); // Function UFSM.FSM_SetState_Async.FSM_SetState_Async(Final|Native|Static|Public|BlueprintCallable) // <Game+0x11ee010>
+	struct Unknown FSM_SetState_Async(struct Unknown FSM, float WaitForSeconds, struct FName Name, char Loop); // Function UFSM.FSM_SetState_Async.FSM_SetState_Async(Final|Native|Static|Public|BlueprintCallable) // <Game+0x11ee500>
 };
 
 // Class UFSM.FSM_SetStateID_Async
 struct UFSM_SetStateID_Async : UBlueprintAsyncActionBase {
-	Unknown Target; //  0x30 Size(8)
-	Unknown StateID; //  0x38 Size(1)
+	struct Unknown Target; //  0x30 Size(8)
+	char StateID; //  0x38 Size(1)
 	float Timer; //  0x3c Size(4)
 	char Repeat; //  0x40 Size(1)
-	Unknown TimerHandle; //  0x48 Size(8)
+	struct Unknown TimerHandle; //  0x48 Size(8)
 	struct FMulticastInlineDelegate OnSuccess; //  0x50 Size(10)
-	struct FMulticastInlineDelegate OnAb; //  0x60 Size(10)
+	struct FMulticastInlineDelegate OnAborted; //  0x60 Size(10)
 
-	Unknown FSM_SetStateID_Async(Unknown FSM, float WaitForSeconds, Unknown ID, char Loop); // Function UFSM.FSM_SetStateID_Async.FSM_SetStateID_Async(Final|Native|Static|Public|BlueprintCallable) // <Game+0x11ed8e0>
+	struct Unknown FSM_SetStateID_Async(struct Unknown FSM, float WaitForSeconds, char ID, char Loop); // Function UFSM.FSM_SetStateID_Async.FSM_SetStateID_Async(Final|Native|Static|Public|BlueprintCallable) // <Game+0x11eddd0>
 };
 
 // Class UFSM.FSM_SetState_ConditionalAsync
 struct UFSM_SetState_ConditionalAsync : UBlueprintAsyncActionBase {
-	Unknown Target; //  0x30 Size(8)
-	Unknown Conditional; //  0x38 Size(1)
+	struct Unknown Target; //  0x30 Size(8)
+	enum class Unknow Conditional; //  0x38 Size(1)
 	struct FName StateName; //  0x3c Size(8)
 	float Timer; //  0x44 Size(4)
 	char Repeat; //  0x48 Size(1)
-	Unknown TimerHandle; //  0x50 Size(8)
+	struct Unknown TimerHandle; //  0x50 Size(8)
 	struct FMulticastInlineDelegate OnSuccess; //  0x58 Size(10)
-	struct FMulticastInlineDelegate OnAb; //  0x68 Size(10)
+	struct FMulticastInlineDelegate OnAborted; //  0x68 Size(10)
 
-	Unknown FSM_SetState_ConditionalAsync(Unknown FSM, float WaitForSeconds, struct FName Name, Unknown Condition, char Loop); // Function UFSM.FSM_SetState_ConditionalAsync.FSM_SetState_ConditionalAsync(Final|Native|Static|Public|BlueprintCallable) // <Game+0x11ee360>
+	struct Unknown FSM_SetState_ConditionalAsync(struct Unknown FSM, float WaitForSeconds, struct FName Name, enum class Unknow Condition, char Loop); // Function UFSM.FSM_SetState_ConditionalAsync.FSM_SetState_ConditionalAsync(Final|Native|Static|Public|BlueprintCallable) // <Game+0x11ee850>
 };
 
 // Class UFSM.FSM_SetStateID_ConditionalAsync
 struct UFSM_SetStateID_ConditionalAsync : UBlueprintAsyncActionBase {
-	Unknown Target; //  0x30 Size(8)
-	Unknown Conditional; //  0x38 Size(1)
-	Unknown StateID; //  0x39 Size(1)
+	struct Unknown Target; //  0x30 Size(8)
+	enum class Unknow Conditional; //  0x38 Size(1)
+	char StateID; //  0x39 Size(1)
 	float Timer; //  0x3c Size(4)
 	char Repeat; //  0x40 Size(1)
-	Unknown TimerHandle; //  0x48 Size(8)
+	struct Unknown TimerHandle; //  0x48 Size(8)
 	struct FMulticastInlineDelegate OnSuccess; //  0x50 Size(10)
-	struct FMulticastInlineDelegate OnAb; //  0x60 Size(10)
+	struct FMulticastInlineDelegate OnAborted; //  0x60 Size(10)
 
-	Unknown FSM_SetStateID_ConditionalAsync(Unknown FSM, float WaitForSeconds, Unknown ID, Unknown Condition, char Loop); // Function UFSM.FSM_SetStateID_ConditionalAsync.FSM_SetStateID_ConditionalAsync(Final|Native|Static|Public|BlueprintCallable) // <Game+0x11edc40>
+	struct Unknown FSM_SetStateID_ConditionalAsync(struct Unknown FSM, float WaitForSeconds, char ID, enum class Unknow Condition, char Loop); // Function UFSM.FSM_SetStateID_ConditionalAsync.FSM_SetStateID_ConditionalAsync(Final|Native|Static|Public|BlueprintCallable) // <Game+0x11ee130>
 };
 
 // Class UFSM.FSM_SetState_AsyncWithCallbacks
 struct UFSM_SetState_AsyncWithCallbacks : UBlueprintAsyncActionBase {
-	Unknown Target; //  0x30 Size(8)
+	struct Unknown Target; //  0x30 Size(8)
 	struct FDelegate InBegin; //  0x38 Size(10)
 	struct FDelegate InExit; //  0x48 Size(10)
 	struct FName StateName; //  0x58 Size(8)
 	float Timer; //  0x60 Size(4)
 	char Repeat; //  0x64 Size(1)
-	Unknown TimerHandle; //  0x68 Size(8)
+	struct Unknown TimerHandle; //  0x68 Size(8)
 	struct FMulticastInlineDelegate OnSuccess; //  0x70 Size(10)
-	struct FMulticastInlineDelegate OnAb; //  0x80 Size(10)
+	struct FMulticastInlineDelegate OnAborted; //  0x80 Size(10)
 
-	Unknown FSM_SetState_AsyncWithCallbacks(Unknown FSM, float WaitForSeconds, struct FName Name, char Loop, struct FDelegate& ExitPreviousStateCallback, struct FDelegate& BeginNextStateCallback); // Function UFSM.FSM_SetState_AsyncWithCallbacks.FSM_SetState_AsyncWithCallbacks(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game+0x11ee150>
+	struct Unknown FSM_SetState_AsyncWithCallbacks(struct Unknown FSM, float WaitForSeconds, struct FName Name, char Loop, struct FDelegate& ExitPreviousStateCallback, struct FDelegate& BeginNextStateCallback); // Function UFSM.FSM_SetState_AsyncWithCallbacks.FSM_SetState_AsyncWithCallbacks(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game+0x11ee640>
 };
 
 // Class UFSM.FSM_SetStateID_AsyncWithCallbacks
 struct UFSM_SetStateID_AsyncWithCallbacks : UBlueprintAsyncActionBase {
-	Unknown Target; //  0x30 Size(8)
+	struct Unknown Target; //  0x30 Size(8)
 	struct FDelegate InBegin; //  0x38 Size(10)
 	struct FDelegate InExit; //  0x48 Size(10)
-	Unknown StateID; //  0x58 Size(1)
+	char StateID; //  0x58 Size(1)
 	float Timer; //  0x5c Size(4)
 	char Repeat; //  0x60 Size(1)
-	Unknown TimerHandle; //  0x68 Size(8)
+	struct Unknown TimerHandle; //  0x68 Size(8)
 	struct FMulticastInlineDelegate OnSuccess; //  0x70 Size(10)
-	struct FMulticastInlineDelegate OnAb; //  0x80 Size(10)
+	struct FMulticastInlineDelegate OnAborted; //  0x80 Size(10)
 
-	Unknown FSM_SetStateID_AsyncWithCallbacks(Unknown FSM, float WaitForSeconds, Unknown ID, char Loop, struct FDelegate& ExitPreviousStateCallback, struct FDelegate& BeginNextStateCallback); // Function UFSM.FSM_SetStateID_AsyncWithCallbacks.FSM_SetStateID_AsyncWithCallbacks(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game+0x11eda20>
+	struct Unknown FSM_SetStateID_AsyncWithCallbacks(struct Unknown FSM, float WaitForSeconds, char ID, char Loop, struct FDelegate& ExitPreviousStateCallback, struct FDelegate& BeginNextStateCallback); // Function UFSM.FSM_SetStateID_AsyncWithCallbacks.FSM_SetStateID_AsyncWithCallbacks(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game+0x11edf10>
 };
 
-// Class UFSM.FSM_SetState_ConditionalAsyncWithCallbacks
-struct UFSM_SetState_ConditionalAsyncWithCallbacks : UBlueprintAsyncActionBase {
-	Unknown Target; //  0x30 Size(8)
-	Unknown Conditional; //  0x38 Size(1)
+// Class UFSM.FSM_SetState_ConditionalAsyncWi
+struct UFSM_SetState_ConditionalAsyncWi : UBlueprintAsyncActionBase {
+	struct Unknown Target; //  0x30 Size(8)
+	enum class Unknow Conditional; //  0x38 Size(1)
 	struct FDelegate InBegin; //  0x3c Size(10)
 	struct FDelegate InExit; //  0x4c Size(10)
 	struct FName StateName; //  0x5c Size(8)
 	float Timer; //  0x64 Size(4)
 	char Repeat; //  0x68 Size(1)
-	Unknown TimerHandle; //  0x70 Size(8)
+	struct Unknown TimerHandle; //  0x70 Size(8)
 	struct FMulticastInlineDelegate OnSuccess; //  0x78 Size(10)
-	struct FMulticastInlineDelegate OnAb; //  0x88 Size(10)
+	struct FMulticastInlineDelegate OnAborted; //  0x88 Size(10)
 
-	Unknown FSM_SetState_ConditionalAsyncWithCallbacks(Unknown FSM, float WaitForSeconds, struct FName Name, Unknown Condition, char Loop, struct FDelegate& ExitPreviousStateCallback, struct FDelegate& BeginNextStateCallback); // Function UFSM.FSM_SetState_ConditionalAsyncWithCallbacks.FSM_SetState_ConditionalAsyncWithCallbacks(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game+0x11ee4e0>
+	struct Unknown FSM_SetState_ConditionalAsyncWi(struct Unknown FSM, float WaitForSeconds, struct FName Name, enum class Unknow Condition, char Loop, struct FDelegate& ExitPreviousStateCallback, struct FDelegate& BeginNextStateCallback); // Function UFSM.FSM_SetState_ConditionalAsyncWi.FSM_SetState_ConditionalAsyncWi(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game+0x11ee9d0>
 };
 
 // Class UFSM.FSM_SetStateID_ConditionalAsyncWithCallbacks
 struct UFSM_SetStateID_ConditionalAsyncWithCallbacks : UBlueprintAsyncActionBase {
-	Unknown Target; //  0x30 Size(8)
-	Unknown Conditional; //  0x38 Size(1)
+	struct Unknown Target; //  0x30 Size(8)
+	enum class Unknow Conditional; //  0x38 Size(1)
 	struct FDelegate InBegin; //  0x3c Size(10)
 	struct FDelegate InExit; //  0x4c Size(10)
-	Unknown StateID; //  0x5c Size(1)
+	char StateID; //  0x5c Size(1)
 	float Timer; //  0x60 Size(4)
 	char Repeat; //  0x64 Size(1)
-	Unknown TimerHandle; //  0x68 Size(8)
+	struct Unknown TimerHandle; //  0x68 Size(8)
 	struct FMulticastInlineDelegate OnSuccess; //  0x70 Size(10)
-	struct FMulticastInlineDelegate OnAb; //  0x80 Size(10)
+	struct FMulticastInlineDelegate OnAborted; //  0x80 Size(10)
 
-	Unknown FSM_SetStateID_ConditionalAsyncWithCallbacks(Unknown FSM, float WaitForSeconds, Unknown ID, Unknown Condition, char Loop, struct FDelegate& ExitPreviousStateCallback, struct FDelegate& BeginNextStateCallback); // Function UFSM.FSM_SetStateID_ConditionalAsyncWithCallbacks.FSM_SetStateID_ConditionalAsyncWithCallbacks(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game+0x11eddc0>
+	struct Unknown FSM_SetStateID_ConditionalAsyncWithCallbacks(struct Unknown FSM, float WaitForSeconds, char ID, enum class Unknow Condition, char Loop, struct FDelegate& ExitPreviousStateCallback, struct FDelegate& BeginNextStateCallback); // Function UFSM.FSM_SetStateID_ConditionalAsyncWithCallbacks.FSM_SetStateID_ConditionalAsyncWithCallbacks(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game+0x11ee2b0>
 };
 
 // Class UFSM.FSM_FinishState_Async
 struct UFSM_FinishState_Async : UBlueprintAsyncActionBase {
-	Unknown Target; //  0x30 Size(8)
+	struct Unknown Target; //  0x30 Size(8)
 	float Timer; //  0x38 Size(4)
-	Unknown TimerHandle; //  0x40 Size(8)
+	struct Unknown TimerHandle; //  0x40 Size(8)
 	struct FMulticastInlineDelegate OnSuccess; //  0x48 Size(10)
-	struct FMulticastInlineDelegate OnAb; //  0x58 Size(10)
+	struct FMulticastInlineDelegate OnAborted; //  0x58 Size(10)
 
-	Unknown FSM_FinishState_Async(Unknown FSM, float WaitForSeconds); // Function UFSM.FSM_FinishState_Async.FSM_FinishState_Async(Final|Native|Static|Public|BlueprintCallable) // <Game+0x11ed2c0>
+	struct Unknown FSM_FinishState_Async(struct Unknown FSM, float WaitForSeconds); // Function UFSM.FSM_FinishState_Async.FSM_FinishState_Async(Final|Native|Static|Public|BlueprintCallable) // <Game+0x11ed7b0>
 };
 
 // Class UFSM.FSM_FinishState_ConditionalAsync
 struct UFSM_FinishState_ConditionalAsync : UBlueprintAsyncActionBase {
-	Unknown Target; //  0x30 Size(8)
-	Unknown Conditional; //  0x38 Size(1)
+	struct Unknown Target; //  0x30 Size(8)
+	enum class Unknow Conditional; //  0x38 Size(1)
 	struct FName FallbackState; //  0x3c Size(8)
 	float Timer; //  0x44 Size(4)
-	Unknown TimerHandle; //  0x48 Size(8)
+	struct Unknown TimerHandle; //  0x48 Size(8)
 	struct FMulticastInlineDelegate OnSuccess; //  0x50 Size(10)
-	struct FMulticastInlineDelegate OnAb; //  0x60 Size(10)
+	struct FMulticastInlineDelegate OnAborted; //  0x60 Size(10)
 
-	Unknown FSM_FinishState_ConditionalAsync(Unknown FSM, Unknown Condition, float WaitForSeconds, struct FName Fallback); // Function UFSM.FSM_FinishState_ConditionalAsync.FSM_FinishState_ConditionalAsync(Final|Native|Static|Public|BlueprintCallable) // <Game+0x11ed520>
+	struct Unknown FSM_FinishState_ConditionalAsync(struct Unknown FSM, enum class Unknow Condition, float WaitForSeconds, struct FName Fallback); // Function UFSM.FSM_FinishState_ConditionalAsync.FSM_FinishState_ConditionalAsync(Final|Native|Static|Public|BlueprintCallable) // <Game+0x11eda10>
 };
 
 // Class UFSM.FSM_FinishState_AsyncWithCallbacks
 struct UFSM_FinishState_AsyncWithCallbacks : UBlueprintAsyncActionBase {
-	Unknown Target; //  0x30 Size(8)
+	struct Unknown Target; //  0x30 Size(8)
 	struct FDelegate InBegin; //  0x38 Size(10)
 	struct FDelegate InExit; //  0x48 Size(10)
 	float Timer; //  0x58 Size(4)
-	Unknown TimerHandle; //  0x60 Size(8)
+	struct Unknown TimerHandle; //  0x60 Size(8)
 	struct FMulticastInlineDelegate OnSuccess; //  0x68 Size(10)
-	struct FMulticastInlineDelegate OnAb; //  0x78 Size(10)
+	struct FMulticastInlineDelegate OnAborted; //  0x78 Size(10)
 
-	Unknown FSM_FinishState_AsyncWithCallbacks(Unknown FSM, float WaitForSeconds, struct FDelegate& ExitPreviousStateCallback, struct FDelegate& BeginNextStateCallback); // Function UFSM.FSM_FinishState_AsyncWithCallbacks.FSM_FinishState_AsyncWithCallbacks(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game+0x11ed390>
+	struct Unknown FSM_FinishState_AsyncWithCallbacks(struct Unknown FSM, float WaitForSeconds, struct FDelegate& ExitPreviousStateCallback, struct FDelegate& BeginNextStateCallback); // Function UFSM.FSM_FinishState_AsyncWithCallbacks.FSM_FinishState_AsyncWithCallbacks(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game+0x11ed880>
 };
 
 // Class UFSM.FSM_FinishState_ConditionalAsyncWithCallbacks
 struct UFSM_FinishState_ConditionalAsyncWithCallbacks : UBlueprintAsyncActionBase {
-	Unknown Target; //  0x30 Size(8)
-	Unknown Conditional; //  0x38 Size(1)
+	struct Unknown Target; //  0x30 Size(8)
+	enum class Unknow Conditional; //  0x38 Size(1)
 	struct FDelegate InBegin; //  0x3c Size(10)
 	struct FDelegate InExit; //  0x4c Size(10)
 	struct FDelegate InFallback; //  0x5c Size(10)
 	struct FName FallbackState; //  0x6c Size(8)
 	float Timer; //  0x74 Size(4)
-	Unknown TimerHandle; //  0x78 Size(8)
+	struct Unknown TimerHandle; //  0x78 Size(8)
 	struct FMulticastInlineDelegate OnSuccess; //  0x80 Size(10)
-	struct FMulticastInlineDelegate OnAb; //  0x90 Size(10)
+	struct FMulticastInlineDelegate OnAborted; //  0x90 Size(10)
 
-	Unknown FSM_FinishState_ConditionalAsyncWithCallbacks(Unknown FSM, Unknown Condition, float WaitForSeconds, struct FName Fallback, struct FDelegate& ExitPreviousStateCallback, struct FDelegate& BeginNextStateCallback, struct FDelegate& BeginFallbackStateCallback); // Function UFSM.FSM_FinishState_ConditionalAsyncWithCallbacks.FSM_FinishState_ConditionalAsyncWithCallbacks(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game+0x11ed660>
+	struct Unknown FSM_FinishState_ConditionalAsyncWithCallbacks(struct Unknown FSM, enum class Unknow Condition, float WaitForSeconds, struct FName Fallback, struct FDelegate& ExitPreviousStateCallback, struct FDelegate& BeginNextStateCallback, struct FDelegate& BeginFallbackStateCallback); // Function UFSM.FSM_FinishState_ConditionalAsyncWithCallbacks.FSM_FinishState_ConditionalAsyncWithCallbacks(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game+0x11edb50>
 };
 
 // Class UFSM.BTTask_FSM_AddState
 struct UBTTask_FSM_AddState : UBTTask_BlackboardBase {
-	Unknown FSM; //  0x98 Size(8)
+	struct Unknown FSM; //  0x98 Size(8)
 	struct FName TargetFSM; //  0xa0 Size(8)
 	struct FName NewStateName; //  0xa8 Size(8)
 	char Debug; //  0xb0 Size(1)
@@ -194,7 +194,7 @@ struct UBTTask_FSM_AddState : UBTTask_BlackboardBase {
 
 // Class UFSM.BTTask_FSM_SetState
 struct UBTTask_FSM_SetState : UBTTask_BlackboardBase {
-	Unknown FSM; //  0x98 Size(8)
+	struct Unknown FSM; //  0x98 Size(8)
 	struct FName TargetFSM; //  0xa0 Size(8)
 	struct FName StateName; //  0xa8 Size(8)
 	char Debug; //  0xb0 Size(1)
@@ -203,7 +203,7 @@ struct UBTTask_FSM_SetState : UBTTask_BlackboardBase {
 
 // Class UFSM.BTTask_FSM_RemoveState
 struct UBTTask_FSM_RemoveState : UBTTask_BlackboardBase {
-	Unknown FSM; //  0x98 Size(8)
+	struct Unknown FSM; //  0x98 Size(8)
 	struct FName TargetFSM; //  0xa0 Size(8)
 	struct FName StateName; //  0xa8 Size(8)
 	char Debug; //  0xb0 Size(1)
@@ -212,7 +212,7 @@ struct UBTTask_FSM_RemoveState : UBTTask_BlackboardBase {
 
 // Class UFSM.BTTask_FSM_CheckState
 struct UBTTask_FSM_CheckState : UBTTask_BlackboardBase {
-	Unknown FSM; //  0x98 Size(8)
+	struct Unknown FSM; //  0x98 Size(8)
 	struct FName TargetFSM; //  0xa0 Size(8)
 	struct FName StateName; //  0xa8 Size(8)
 	char Debug; //  0xb0 Size(1)
@@ -221,67 +221,67 @@ struct UBTTask_FSM_CheckState : UBTTask_BlackboardBase {
 
 // Class UFSM.RSM
 struct URSM : Object {
-	Unknown SGUID; //  0x28 Size(10)
+	struct Unknown SGUID; //  0x28 Size(10)
 	int32_t PlayerId; //  0x38 Size(4)
-	Unknown Owner; //  0x3c Size(8)
+	struct TWeakObjectPtr<struct Unknown> Owner; //  0x3c Size(8)
 };
 
 // Class UFSM.ReactiveStateMachine
 struct UReactiveStateMachine : URSM {
-	Unknown StateGraph; //  0x58 Size(10)
+	struct TArray<Unknown> StateGraph; //  0x58 Size(10)
 	float MachineTime; //  0x68 Size(4)
 	struct FMulticastInlineDelegate _OnEntry; //  0x70 Size(10)
 	struct FMulticastInlineDelegate _OnExit; //  0x80 Size(10)
-	Unknown MachineData; //  0x90 Size(50)
+	struct TMap<{}, {}>Unknown MachineData; //  0x90 Size(50)
 
-	void Update(float DeltaTime); // Function UFSM.ReactiveStateMachine.Update(Final|Native|Private) // <Game+0x11f2da0>
+	void Update(float DeltaTime); // Function UFSM.ReactiveStateMachine.Update(Final|Native|Private) // <Game+0x11f32a0>
 };
 
 // Class UFSM.FSMSettings
 struct UFSMSettings : Object {
-	char Enab; //  0x28 Size(1)
+	char EnableInterfaceStatePropagation; //  0x28 Size(1)
 	char SuppressRPCWarnings; //  0x29 Size(1)
 	float DefaultTickInterval; //  0x2c Size(4)
-	Unknown DefaultStates; //  0x30 Size(10)
+	struct TArray<Unknown> DefaultStates; //  0x30 Size(10)
 };
 
 // Class UFSM.RSMSubsystem
 struct URSMSubsystem : ULocalPlayerSubsystem {
-	Unknown MachineStack; //  0x30 Size(10)
+	struct TArray<Unknown> MachineStack; //  0x30 Size(10)
 };
 
 // Class UFSM.StateMachineABP
 struct UStateMachineABP : UAnimInstance {
-	Unknown FSM; //  0x268 Size(8)
+	struct Unknown FSM; //  0x268 Size(8)
 	char OverrideFSM; //  0x270 Size(1)
 	struct FName TargetFSM; //  0x274 Size(8)
 	struct FName TargetASM; //  0x27c Size(8)
 
-	Unknown GetFSMComponentByName(struct FName Name); // Function UFSM.StateMachineABP.GetFSMComponentByName(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game+0x11f7010>
+	struct Unknown GetFSMComponentByName(struct FName Name); // Function UFSM.StateMachineABP.GetFSMComponentByName(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game+0x11f7560>
 };
 
 // Class UFSM.StateMachineComponent
 struct UStateMachineComponent : UActorComponent {
-	Unknown FSM_ExitArguments; //  0xb8 Size(c)
-	Unknown FSM_BeginArguments; //  0xc4 Size(c)
-	Unknown FSM_UpdateArguments; //  0xd0 Size(8)
+	struct Unknown FSM_ExitArguments; //  0xb8 Size(c)
+	struct Unknown FSM_BeginArguments; //  0xc4 Size(c)
+	struct Unknown FSM_UpdateArguments; //  0xd0 Size(8)
 	char IsOverriden; //  0xe0 Size(1)
 	char IsFullyInitialized; //  0xe1 Size(1)
-	Unknown StateID; //  0xe2 Size(1)
-	Unknown PreviousStateID; //  0xe3 Size(1)
+	char StateID; //  0xe2 Size(1)
+	char PreviousStateID; //  0xe3 Size(1)
 	float StateTime; //  0xe4 Size(4)
-	Unknown STATE_Null; //  0xe8 Size(40)
-	Unknown State; //  0x128 Size(50)
+	struct Unknown STATE_Null; //  0xe8 Size(40)
+	struct TMap<{}, {}>Unknown State; //  0x128 Size(50)
 	struct FDelegate InBegin; //  0x178 Size(10)
 	struct FDelegate InUpdate; //  0x188 Size(10)
 	struct FDelegate InExit; //  0x198 Size(10)
 	struct FName StartupState; //  0x1a8 Size(8)
-	Unknown States; //  0x1b0 Size(10)
-	Unknown LINKS; //  0x1c0 Size(50)
+	struct TArray<Unknown> States; //  0x1b0 Size(10)
+	struct TMap<{}, {}>Unknown LINKS; //  0x1c0 Size(50)
 	char UseEnumFromCPP; //  0x210 Size(1)
 	struct FString CPP_EnumName; //  0x218 Size(10)
-	Unknown K2_Enumerator; //  0x228 Size(8)
-	Unknown ReplicationMode; //  0x230 Size(1)
+	struct Unknown K2_Enumerator; //  0x228 Size(8)
+	char ReplicationMode; //  0x230 Size(1)
 	char BlueprintAutoFlowFSM; //  0x231 Size(1)
 	char BlueprintAutoFlowTransitions; //  0x232 Size(1)
 	char AlwaysTickFSM; //  0x233 Size(1)
@@ -294,6 +294,6 @@ struct UStateMachineComponent : UActorComponent {
 	struct FMulticastInlineDelegate OnUpdate; //  0x258 Size(10)
 	struct FMulticastInlineDelegate OnExit; //  0x268 Size(10)
 
-	void Update(Unknown UpState, struct FDelegate& Callback); // Function UFSM.StateMachineComponent.Update(Native|Protected|HasOutParms) // <Game+0x11f9d80>
+	void Update(char UpState, struct FDelegate& Callback); // Function UFSM.StateMachineComponent.Update(Native|Protected|HasOutParms) // <Game+0x11fa2d0>
 };
 

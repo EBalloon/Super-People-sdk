@@ -11,13 +11,13 @@ enum class ECoherentRenderingSettingsSeverity : uint8 {
 
 // Class CoherentRenderingPlugin.CoherentRenderingSettings
 struct UCoherentRenderingSettings : Object {
-	Unknown RenderingLogSeverity; //  0x28 Size(1)
+	enum class Unknow RenderingLogSeverity; //  0x28 Size(1)
 	char ShowWarningsOnScreen; //  0x29 Size(1)
 	struct FString DeveloperOptions; //  0x30 Size(10)
 };
 
 // Class CoherentRenderingPlugin.CohTextureUserWrapData
 struct UCohTextureUserWrapData : Object {
-	Unknown Texture; //  0x70 Size(8)
+	struct Unknown Texture; //  0x70 Size(8)
 };
 

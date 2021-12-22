@@ -1,4 +1,4 @@
-// UserDefinedEnum DrawingNoiseModes.DrawingNoiseModes
+// User DrawingNoiseModes.DrawingNoiseModes
 enum class DrawingNoiseModes : uint8 {
 	DrawingNoiseModes = 0,
 	DrawingNoiseModes = 1,

@@ -1,4 +1,4 @@
-// UserDefinedEnum EKeyConflict.EKeyConflict
+// User EKeyConflict.EKeyConflict
 enum class EKeyConflict : uint8 {
 	EKeyConflict = 0,
 	EKeyConflict = 1,

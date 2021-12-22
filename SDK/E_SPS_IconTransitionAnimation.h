@@ -1,4 +1,4 @@
-// UserDefinedEnum E_SPS_IconTransitionAnimation.E_SPS_IconTransitionAnimation
+// User E_SPS_IconTransitionAnimation.E_SPS_IconTransitionAnimation
 enum class E_SPS_IconTransitionAnimation : uint8 {
 	E_SPS_IconTransitionAnimation = 0,
 	E_SPS_IconTransitionAnimation = 1,

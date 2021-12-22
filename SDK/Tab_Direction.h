@@ -1,7 +1,7 @@
-// UserDefinedEnum Tab_Direction.Tab_Direction
-enum class Tab_Direction : uint8 {
-	Tab_Direction = 0,
-	Tab_Direction = 1,
-	Tab_Direction = 2
+// User Tab_Direction.Tab_
+enum class Tab_ : uint8 {
+	Tab_ = 0,
+	Tab_ = 1,
+	Tab_ = 2
 };
 

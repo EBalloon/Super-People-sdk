@@ -1,4 +1,4 @@
-// UserDefinedEnum ENiagaraOrientationAxis.ENiagaraOrientationAxis
+// User ENiagaraOrientationAxis.ENiagaraOrientationAxis
 enum class ENiagaraOrientationAxis : uint8 {
 	ENiagaraOrientationAxis = 0,
 	ENiagaraOrientationAxis = 1,

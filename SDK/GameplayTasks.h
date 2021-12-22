@@ -28,23 +28,23 @@ enum class EGameplayTaskRunResult : uint8 {
 // Class GameplayTasks.GameplayTask
 struct UGameplayTask : Object {
 	struct FName InstanceName; //  0x30 Size(8)
-	Unknown ResourceOverlapPolicy; //  0x3a Size(1)
-	Unknown ChildTask; //  0x60 Size(8)
+	enum class Unknow ResourceOverlapPolicy; //  0x3a Size(1)
+	struct Unknown ChildTask; //  0x60 Size(8)
 
-	void ReadyForActivation(); // Function GameplayTasks.GameplayTask.ReadyForActivation(Final|Native|Public|BlueprintCallable) // <Game+0x3eab6a0>
+	void ReadyForActivation(); // Function GameplayTasks.GameplayTask.ReadyForActivation(Final|Native|Public|BlueprintCallable) // <Game+0x3eb8da0>
 };
 
 // Class GameplayTasks.GameplayTask_SpawnActor
 struct UGameplayTask_SpawnActor : UGameplayTask {
 	struct FMulticastInlineDelegate SUCCESS; //  0x68 Size(10)
 	struct FMulticastInlineDelegate DidNotSpawn; //  0x78 Size(10)
-	Unknown ClassToSpawn; //  0xa0 Size(8)
+	struct Unknown* ClassToSpawn; //  0xa0 Size(8)
 
-	Unknown SpawnActor(Unknown TaskOwner, Unknown SpawnLocation, Unknown SpawnRotation, Unknown Class, char bSpawnOnlyOnAuthority); // Function GameplayTasks.GameplayTask_SpawnActor.SpawnActor(Final|Native|Static|Public|HasDefaults|BlueprintCallable) // <Game+0x3eab6c0>
+	struct Unknown SpawnActor(struct TScriptInterface<IUnknown> TaskOwner, struct Unknown SpawnLocation, struct Unknown SpawnRotation, struct Unknown* Class, char bSpawnOnlyOnAuthority); // Function GameplayTasks.GameplayTask_SpawnActor.SpawnActor(Final|Native|Static|Public|HasDefaults|BlueprintCallable) // <Game+0x3eb8dc0>
 };
 
-// Class GameplayTasks.GameplayTask_TimeLimitedExecution
-struct UGameplayTask_TimeLimitedExecution : UGameplayTask {
+// Class GameplayTasks.GameplayTask_TimeLimitedExecuti
+struct UGameplayTask_TimeLimitedExecuti : UGameplayTask {
 	struct FMulticastInlineDelegate OnFinished; //  0x68 Size(10)
 	struct FMulticastInlineDelegate OnTimeExpired; //  0x78 Size(10)
 };
@@ -53,7 +53,7 @@ struct UGameplayTask_TimeLimitedExecution : UGameplayTask {
 struct UGameplayTask_WaitDelay : UGameplayTask {
 	struct FMulticastInlineDelegate OnFinish; //  0x68 Size(10)
 
-	Unknown TaskWaitDelay(Unknown TaskOwner, float Time, Unknown Priority); // Function GameplayTasks.GameplayTask_WaitDelay.TaskWaitDelay(Final|Native|Static|Public|BlueprintCallable) // <Game+0x3eab870>
+	struct Unknown TaskWaitDelay(struct TScriptInterface<IUnknown> TaskOwner, float Time, char Priority); // Function GameplayTasks.GameplayTask_WaitDelay.TaskWaitDelay(Final|Native|Static|Public|BlueprintCallable) // <Game+0x3eb8f70>
 };
 
 // Class GameplayTasks.GameplayTaskResource
@@ -66,12 +66,12 @@ struct UGameplayTaskResource : Object {
 // Class GameplayTasks.GameplayTasksComponent
 struct UGameplayTasksComponent : UActorComponent {
 	char bIsNetDirty; //  0xbc Size(1)
-	Unknown SimulatedTasks; //  0xc0 Size(10)
-	Unknown TaskPriorityQueue; //  0xd0 Size(10)
-	Unknown TickingTasks; //  0xf0 Size(10)
-	Unknown KnownTasks; //  0x100 Size(10)
+	struct TArray<Unknown> SimulatedTasks; //  0xc0 Size(10)
+	struct TArray<Unknown> TaskPriorityQueue; //  0xd0 Size(10)
+	struct TArray<Unknown> TickingTasks; //  0xf0 Size(10)
+	struct TArray<Unknown> KnownTasks; //  0x100 Size(10)
 	struct FMulticastInlineDelegate OnClaimedResourcesChange; //  0x110 Size(10)
 
-	void OnRep_SimulatedTasks(); // Function GameplayTasks.GameplayTasksComponent.OnRep_SimulatedTasks(Final|Native|Public) // <Game+0x3eab680>
+	void OnRep_SimulatedTasks(); // Function GameplayTasks.GameplayTasksComponent.OnRep_SimulatedTasks(Final|Native|Public) // <Game+0x3eb8d80>
 };
 

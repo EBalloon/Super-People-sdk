@@ -67,15 +67,15 @@ struct UFileMediaSource : UBaseMediaSource {
 	struct FString FilePath; //  0x88 Size(10)
 	char PrecacheFile; //  0x98 Size(1)
 
-	void SetFilePath(struct FString Path); // Function MediaAssets.FileMediaSource.SetFilePath(Final|Native|Public|BlueprintCallable) // <Game+0x34e7b00>
+	void SetFilePath(struct FString Path); // Function MediaAssets.FileMediaSource.SetFilePath(Final|Native|Public|BlueprintCallable) // <Game+0x34f33f0>
 };
 
 // Class MediaAssets.MediaComponent
 struct UMediaComponent : UActorComponent {
-	Unknown MediaTexture; //  0xb0 Size(8)
-	Unknown MediaPlayer; //  0xb8 Size(8)
+	struct Unknown MediaTexture; //  0xb0 Size(8)
+	struct Unknown MediaPlayer; //  0xb8 Size(8)
 
-	Unknown GetMediaTexture(); // Function MediaAssets.MediaComponent.GetMediaTexture(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x2eeb140>
+	struct Unknown GetMediaTexture(); // Function MediaAssets.MediaComponent.GetMediaTexture(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x2ef5ec0>
 };
 
 // Class MediaAssets.MediaPlayer
@@ -88,59 +88,59 @@ struct UMediaPlayer : Object {
 	struct FMulticastInlineDelegate OnPlaybackSuspended; //  0x78 Size(10)
 	struct FMulticastInlineDelegate OnSeekCompleted; //  0x88 Size(10)
 	struct FMulticastInlineDelegate OnTracksChanged; //  0x98 Size(10)
-	Unknown CacheAhead; //  0xa8 Size(8)
-	Unknown CacheBehind; //  0xb0 Size(8)
-	Unknown CacheBehindGame; //  0xb8 Size(8)
+	struct Unknown CacheAhead; //  0xa8 Size(8)
+	struct Unknown CacheBehind; //  0xb0 Size(8)
+	struct Unknown CacheBehindGame; //  0xb8 Size(8)
 	char NativeAudioOut; //  0xc0 Size(1)
 	char PlayOnOpen; //  0xc1 Size(1)
 	char Shuffle; //  0xc4 Size(1)
 	char Loop; //  0xc4 Size(1)
-	Unknown Playlist; //  0xc8 Size(8)
+	struct Unknown Playlist; //  0xc8 Size(8)
 	int32_t PlaylistIndex; //  0xd0 Size(4)
-	Unknown TimeDelay; //  0xd8 Size(8)
+	struct Unknown Time; //  0xd8 Size(8)
 	float HorizontalFieldOfView; //  0xe0 Size(4)
 	float VerticalFieldOfView; //  0xe4 Size(4)
-	Unknown ViewRotation; //  0xe8 Size(c)
-	Unknown playerGUID; //  0x120 Size(10)
-	Unknown OwnerWidget; //  0x138 Size(8)
+	struct Unknown ViewRotation; //  0xe8 Size(c)
+	struct Unknown playerGUID; //  0x120 Size(10)
+	struct Unknown OwnerWidget; //  0x138 Size(8)
 
-	char SupportsSeeking(); // Function MediaAssets.MediaPlayer.SupportsSeeking(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x34e88d0>
+	char SupportsSeeking(); // Function MediaAssets.MediaPlayer.SupportsSeeking(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x34f41c0>
 };
 
 // Class MediaAssets.MediaPlaylist
 struct UMediaPlaylist : Object {
-	Unknown Items; //  0x28 Size(10)
+	struct TArray<Unknown> Items; //  0x28 Size(10)
 
-	char Replace(int32_t Index, Unknown Replacement); // Function MediaAssets.MediaPlaylist.Replace(Final|Native|Public|BlueprintCallable) // <Game+0x34e75c0>
+	char Replace(int32_t Index, struct Unknown Replacement); // Function MediaAssets.MediaPlaylist.Replace(Final|Native|Public|BlueprintCallable) // <Game+0x34f2eb0>
 };
 
 // Class MediaAssets.MediaSoundComponent
 struct UMediaSoundComponent : USynthComponent {
-	Unknown Channels; //  0x710 Size(4)
+	enum class Unknow Channels; //  0x710 Size(4)
 	char DynamicRateAdjustment; //  0x714 Size(1)
 	float RateAdjustmentFactor; //  0x718 Size(4)
-	Unknown RateAdjustmentRange; //  0x71c Size(10)
-	Unknown MediaPlayer; //  0x730 Size(8)
+	struct Unknown RateAdjustmentRange; //  0x71c Size(10)
+	struct Unknown MediaPlayer; //  0x730 Size(8)
 
-	void SetSpectralAnalysisSettings(Unknown InFrequenciesToAnalyze, Unknown InFFTSize); // Function MediaAssets.MediaSoundComponent.SetSpectralAnalysisSettings(Final|Native|Public|BlueprintCallable) // <Game+0x34e8240>
+	void SetSpectralAnalysisSettings(struct TArray<Unknown> InFrequenciesToAnalyze, enum class Unknow InFFTSize); // Function MediaAssets.MediaSoundComponent.SetSpectralAnalysisSettings(Final|Native|Public|BlueprintCallable) // <Game+0x34f3b30>
 };
 
 // Class MediaAssets.MediaTexture
 struct UMediaTexture : UTexture {
-	Unknown AddressX; //  0xb8 Size(1)
-	Unknown AddressY; //  0xb9 Size(1)
+	char AddressX; //  0xb8 Size(1)
+	char AddressY; //  0xb9 Size(1)
 	char AutoClear; //  0xba Size(1)
-	Unknown ClearColor; //  0xbc Size(10)
-	char Enab; //  0xcc Size(1)
-	Unknown NumMips; //  0xcd Size(1)
-	Unknown MediaPlayer; //  0xd0 Size(8)
+	struct Unknown ClearColor; //  0xbc Size(10)
+	char EnableGenMips; //  0xcc Size(1)
+	char NumMips; //  0xcd Size(1)
+	struct Unknown MediaPlayer; //  0xd0 Size(8)
 
-	void SetMediaPlayer(Unknown NewMediaPlayer); // Function MediaAssets.MediaTexture.SetMediaPlayer(Final|Native|Public|BlueprintCallable) // <Game+0x34e80a0>
+	void SetMediaPlayer(struct Unknown NewMediaPlayer); // Function MediaAssets.MediaTexture.SetMediaPlayer(Final|Native|Public|BlueprintCallable) // <Game+0x34f3990>
 };
 
 // Class MediaAssets.PlatformMediaSource
 struct UPlatformMediaSource : UMediaSource {
-	Unknown MediaSource; //  0x80 Size(8)
+	struct Unknown MediaSource; //  0x80 Size(8)
 };
 
 // Class MediaAssets.StreamMediaSource
@@ -152,6 +152,6 @@ struct UStreamMediaSource : UBaseMediaSource {
 struct UTimeSynchronizableMediaSource : UBaseMediaSource {
 	char bUseTimeSynchronization; //  0x88 Size(1)
 	int32_t FrameDelay; //  0x8c Size(4)
-	Unknown TimeDelay; //  0x90 Size(8)
+	double Time; //  0x90 Size(8)
 };
 

@@ -1,4 +1,4 @@
-// UserDefinedEnum EKeyCombinationDisplay.EKeyCombinationDisplay
+// User EKeyCombinationDisplay.EKeyCombinationDisplay
 enum class EKeyCombinationDisplay : uint8 {
 	EKeyCombinationDisplay = 0,
 	EKeyCombinationDisplay = 1,

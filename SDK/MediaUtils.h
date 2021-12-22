@@ -1,8 +1,8 @@
-// Enum MediaUtils.EMediaPlayerOptionBooleanOverride
-enum class EMediaPlayerOptionBooleanOverride : uint8 {
-	EMediaPlayerOptionBooleanOverride = 0,
-	EMediaPlayerOptionBooleanOverride = 1,
-	EMediaPlayerOptionBooleanOverride = 2,
-	EMediaPlayerOptionBooleanOverride = 3
+// Enum MediaUtils.EMediaPlayerOptionBooleanOverri
+enum class EMediaPlayerOptionBooleanOverri : uint8 {
+	EMediaPlayerOptionBooleanOverri = 0,
+	EMediaPlayerOptionBooleanOverri = 1,
+	EMediaPlayerOptionBooleanOverri = 2,
+	EMediaPlayerOptionBooleanOverri = 3
 };
 

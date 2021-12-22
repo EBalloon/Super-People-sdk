@@ -142,11 +142,11 @@ enum class EWeightsFromColorComponent : uint8 {
 	EWeightsFromColorComponent = 4
 };
 
-// Enum SimplygonUObjects.EBoneReductionTargetStopCondition
-enum class EBoneReductionTargetStopCondition : uint8 {
-	EBoneReductionTargetStopCondition = 0,
-	EBoneReductionTargetStopCondition = 1,
-	EBoneReductionTargetStopCondition = 2
+// Enum SimplygonUObjects.EBoneReductionTargetStopConditi
+enum class EBoneReductionTargetStopConditi : uint8 {
+	EBoneReductionTargetStopConditi = 0,
+	EBoneReductionTargetStopConditi = 1,
+	EBoneReductionTargetStopConditi = 2
 };
 
 // Enum SimplygonUObjects.EComputeVisibilityMode
@@ -188,61 +188,61 @@ enum class EReductionTargetStopCondition : uint8 {
 
 // Class SimplygonUObjects.StandinNearPipeline
 struct UStandinNearPipeline : USimplygonStandinPipeline {
-	Unknown Settings; //  0x28 Size(1b0)
+	struct Unknown Settings; //  0x28 Size(1b0)
 };
 
 // Class SimplygonUObjects.StandinFarPipeline
 struct UStandinFarPipeline : USimplygonStandinPipeline {
-	Unknown Settings; //  0x28 Size(1c0)
+	struct Unknown Settings; //  0x28 Size(1c0)
 };
 
 // Class SimplygonUObjects.SimplygonColorCaster
 struct USimplygonColorCaster : USimplygonMaterialCaster {
-	Unknown ColorCasterSettings; //  0x28 Size(50)
+	struct Unknown ColorCasterSettings; //  0x28 Size(50)
 };
 
 // Class SimplygonUObjects.SimplygonNormalCaster
 struct USimplygonNormalCaster : USimplygonMaterialCaster {
-	Unknown NormalCasterSettings; //  0x28 Size(50)
+	struct Unknown NormalCasterSettings; //  0x28 Size(50)
 };
 
 // Class SimplygonUObjects.ReductionPipeline
 struct UReductionPipeline : USimplygonPipeline {
-	Unknown Settings; //  0x28 Size(230)
+	struct Unknown Settings; //  0x28 Size(230)
 };
 
 // Class SimplygonUObjects.RemeshingPipeline
 struct URemeshingPipeline : USimplygonPipeline {
-	Unknown Settings; //  0x28 Size(1c0)
+	struct Unknown Settings; //  0x28 Size(1c0)
 };
 
 // Class SimplygonUObjects.AggregationPipeline
 struct UAggregationPipeline : USimplygonPipeline {
-	Unknown Settings; //  0x28 Size(1b0)
+	struct Unknown Settings; //  0x28 Size(1b0)
 };
 
 // Class SimplygonUObjects.SimplygonOpacityCaster
 struct USimplygonOpacityCaster : USimplygonMaterialCaster {
-	Unknown OpacityCasterSettings; //  0x28 Size(48)
+	struct Unknown OpacityCasterSettings; //  0x28 Size(48)
 };
 
 // Class SimplygonUObjects.SimplygonDisplacementCaster
 struct USimplygonDisplacementCaster : USimplygonMaterialCaster {
-	Unknown DisplacementCasterSettings; //  0x28 Size(58)
+	struct Unknown DisplacementCasterSettings; //  0x28 Size(58)
 };
 
 // Class SimplygonUObjects.SimplygonAmbientOcclusionCaster
 struct USimplygonAmbientOcclusionCaster : USimplygonMaterialCaster {
-	Unknown AmbientOcclusionCasterSettings; //  0x28 Size(58)
+	struct Unknown AmbientOcclusionCasterSettings; //  0x28 Size(58)
 };
 
 // Class SimplygonUObjects.SimplygonGeometryDataCaster
 struct USimplygonGeometryDataCaster : USimplygonMaterialCaster {
-	Unknown GeometryDataCasterSettings; //  0x30 Size(90)
+	struct Unknown GeometryDataCasterSettings; //  0x30 Size(90)
 };
 
 // Class SimplygonUObjects.SimplygonVertexColorCaster
 struct USimplygonVertexColorCaster : USimplygonMaterialCaster {
-	Unknown VertexColorCasterSettings; //  0x28 Size(60)
+	struct Unknown VertexColorCasterSettings; //  0x28 Size(60)
 };
 

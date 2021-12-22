@@ -1,4 +1,4 @@
-// UserDefinedEnum E_SPS_IconLoopAnimation.E_SPS_IconLoopAnimation
+// User E_SPS_IconLoopAnimation.E_SPS_IconLoopAnimation
 enum class E_SPS_IconLoopAnimation : uint8 {
 	E_SPS_IconLoopAnimation = 0,
 	E_SPS_IconLoopAnimation = 1,

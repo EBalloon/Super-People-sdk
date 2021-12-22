@@ -10,6 +10,6 @@ enum class EMoviePlaybackType : uint8 {
 struct UMoviePlayerSettings : Object {
 	char bWaitForMoviesToComplete; //  0x28 Size(1)
 	char bMoviesAreSkippable; //  0x29 Size(1)
-	Unknown StartupMovies; //  0x30 Size(10)
+	struct TArray<Unknown> StartupMovies; //  0x30 Size(10)
 };
 

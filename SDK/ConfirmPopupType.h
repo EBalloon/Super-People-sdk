@@ -1,4 +1,4 @@
-// UserDefinedEnum ConfirmPopupType.ConfirmPopupType
+// User ConfirmPopupType.ConfirmPopupType
 enum class ConfirmPopupType : uint8 {
 	ConfirmPopupType = 0,
 	ConfirmPopupType = 1,

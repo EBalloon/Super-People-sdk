@@ -62,7 +62,7 @@ struct UVRNotificationsComponent : UActorComponent {
 	struct FMulticastInlineDelegate HMDLostDelegate; //  0xe0 Size(10)
 	struct FMulticastInlineDelegate HMDReconnectedDelegate; //  0xf0 Size(10)
 	struct FMulticastInlineDelegate HMDConnectCanceledDelegate; //  0x100 Size(10)
-	struct FMulticastInlineDelegate HMDPutOnHeadDelegate; //  0x110 Size(10)
+	struct FMulticastInlineDelegate HMDPutOnHead; //  0x110 Size(10)
 	struct FMulticastInlineDelegate HMDRemovedFromHeadDelegate; //  0x120 Size(10)
 	struct FMulticastInlineDelegate VRControllerRecenteredDelegate; //  0x130 Size(10)
 };
@@ -70,25 +70,25 @@ struct UVRNotificationsComponent : UActorComponent {
 // Class HeadMountedDisplay.MotionControllerComponent
 struct UMotionControllerComponent : UPrimitiveComponent {
 	int32_t PlayerIndex; //  0x4b8 Size(4)
-	Unknown Hand; //  0x4bc Size(1)
+	enum class Unknow Hand; //  0x4bc Size(1)
 	struct FName MotionSource; //  0x4c0 Size(8)
 	char bDisableLowLatencyUpdate; //  0x4c8 Size(1)
-	Unknown CurrentTrackingStatus; //  0x4cc Size(1)
+	enum class Unknow CurrentTrackingStatus; //  0x4cc Size(1)
 	char bDisplayDeviceModel; //  0x4cd Size(1)
 	struct FName DisplayModelSource; //  0x4d0 Size(8)
-	Unknown CustomDisplayMesh; //  0x4d8 Size(8)
-	Unknown DisplayMeshMaterialOverrides; //  0x4e0 Size(10)
-	Unknown DisplayComponent; //  0x550 Size(8)
+	struct Unknown CustomDisplayMesh; //  0x4d8 Size(8)
+	struct TArray<Unknown> DisplayMeshMaterialOverrides; //  0x4e0 Size(10)
+	struct Unknown DisplayComponent; //  0x550 Size(8)
 
-	void SetTrackingSource(Unknown NewSource); // Function HeadMountedDisplay.MotionControllerComponent.SetTrackingSource(Final|Native|Public|BlueprintCallable) // <Game+0x2f0a260>
+	void SetTrackingSource(enum class Unknow NewSource); // Function HeadMountedDisplay.MotionControllerComponent.SetTrackingSource(Final|Native|Public|BlueprintCallable) // <Game+0x2f14fe0>
 };
 
-// Class HeadMountedDisplay.AsyncTask_LoadXRDev
+// Class HeadMountedDisplay.AsyncTask_LoadXRDevDisplayssj
 struct UAsyncTask_LoadXRDev : UBlueprintAsyncActionBase {
 	struct FMulticastInlineDelegate OnModelLoaded; //  0x30 Size(10)
 	struct FMulticastInlineDelegate OnLoadFailure; //  0x40 Size(10)
-	Unknown SpawnedComponent; //  0x58 Size(8)
+	struct Unknown SpawnedComponent; //  0x58 Size(8)
 
-	Unknown AddNamedDeviceVisualizationComponentAsync(Unknown Target, struct FName SystemName, struct FName DeviceName, char bManualAttachment, Unknown& RelativeTransform, Unknown& XRDeviceId, Unknown& NewComponent); // Function HeadMountedDisplay.AsyncTask_LoadXRDev.AddNamedDeviceVisualizationComponentAsync(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game+0x2f076f0>
+	struct Unknown AddNamedDeviceVisualizationComponentAsync(struct Unknown Target, struct FName SystemName, struct FName DeviceName, char bManualAttachment, struct Unknown& RelativeTransform, struct Unknown& XRDeviceId, struct Unknown& NewComponent); // Function HeadMountedDisplay.AsyncTask_LoadXRDevgateProperty.AddNamedDeviceVisualizationComponentAsync(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game+0x2f12470>
 };
 

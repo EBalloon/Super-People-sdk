@@ -5,12 +5,12 @@ enum class ECustomizableObjectRelevancy : uint8 {
 	ECustomizableObjectRelevancy = 2
 };
 
-// Enum CustomizableObject.ECustomizableObjectProjecto
-enum class ECustomizableObjectProjecto : uint8 {
-	ECustomizableObjectProjecto = 0,
-	ECustomizableObjectProjectoy = 1,
-	ECustomizableObjectProjecto = 2,
-	ECustomizableObjectProjectoy = 3
+// Enum CustomizableObject.ECustomizableObjectProjectorType
+enum class ECustomizableObjectProjectorType : uint8 {
+	ECustomizableObjectProjectorType = 0,
+	ECustomizableObjectProjectorType = 1,
+	ECustomizableObjectProjectorType = 2,
+	ECustomizableObjectProjectorType = 3
 };
 
 // Enum CustomizableObject.EMutableCompileMeshType
@@ -46,89 +46,89 @@ enum class EMutableParameterType : uint8 {
 
 // Class CustomizableObject.CustomizableInstancePrivateData
 struct UCustomizableInstancePrivateData : Object {
-	Unknown GeneratedMaterials; //  0x30 Size(10)
-	Unknown GeneratedMeshes; //  0x40 Size(10)
-	Unknown GeneratedTextures; //  0x50 Size(10)
-	Unknown ParameterDecorations; //  0xe8 Size(10)
-	Unknown TextureReuseCache; //  0x108 Size(50)
-	Unknown ReferencedMaterials; //  0x320 Size(10)
-	Unknown PhysicsAssetsToMerge; //  0x3d0 Size(10)
+	struct TArray<Unknown> GeneratedMaterials; //  0x30 Size(10)
+	struct TArray<Unknown> GeneratedMeshes; //  0x40 Size(10)
+	struct TArray<Unknown> GeneratedTextures; //  0x50 Size(10)
+	struct TArray<Unknown> ParameterDecorations; //  0xe8 Size(10)
+	struct TMap<{}, {}>Unknown TextureReuseCache; //  0x108 Size(50)
+	struct TArray<Unknown> ReferencedMaterials; //  0x320 Size(10)
+	struct TArray<Unknown> PhysicsAssetsToMerge; //  0x3d0 Size(10)
 };
 
 // Class CustomizableObject.MutableMaskOutCache
 struct UMutableMaskOutCache : Object {
-	Unknown Materials; //  0x28 Size(50)
-	Unknown Textures; //  0x78 Size(50)
+	struct TMap<{}, {}>Unknown Materials; //  0x28 Size(50)
+	struct TMap<{}, {}>Unknown Textures; //  0x78 Size(50)
 };
 
 // Class CustomizableObject.CustomizableObject
 struct UCustomizableObject : Object {
-	Unknown ReferenceSkeletalMesh; //  0x28 Size(8)
-	Unknown ReferenceStaticMesh; //  0x30 Size(8)
-	Unknown Relevancy; //  0x38 Size(1)
+	struct Unknown ReferenceSkeletalMesh; //  0x28 Size(8)
+	struct Unknown ReferenceStaticMesh; //  0x30 Size(8)
+	enum class Unknow Relevancy; //  0x38 Size(1)
 	char bDisableTextureLayoutManagement; //  0x39 Size(1)
-	Unknown ReferencedMaterials; //  0x40 Size(10)
-	Unknown ImageProperties; //  0x50 Size(10)
-	Unknown GroupNodeMap; //  0x60 Size(50)
-	Unknown ContributingMorphTargets; //  0xb0 Size(10)
-	Unknown MorphTargetReconstructionInfo; //  0xc0 Size(10)
-	Unknown VersionId; //  0xd0 Size(10)
-	Unknown ParameterProperties; //  0xe0 Size(10)
-	Unknown ParameterUIDataMap; //  0x140 Size(50)
-	Unknown StateUIDataMap; //  0x190 Size(50)
-	Unknown PhysicsAssetsMap; //  0x1e0 Size(50)
-	Unknown MaskOutCache; //  0x230 Size(28)
+	struct TArray<Unknown> ReferencedMaterials; //  0x40 Size(10)
+	struct TArray<Unknown> ImageProperties; //  0x50 Size(10)
+	struct TMap<{}, {}>Unknown GroupNodeMap; //  0x60 Size(50)
+	struct TArray<Unknown> ContributingMorphTargets; //  0xb0 Size(10)
+	struct TArray<Unknown> MorphTargetReconstructionInfo; //  0xc0 Size(10)
+	struct Unknown VersionId; //  0xd0 Size(10)
+	struct TArray<Unknown> ParameterProperties; //  0xe0 Size(10)
+	struct TMap<{}, {}>Unknown ParameterUIDataMap; //  0x140 Size(50)
+	struct TMap<{}, {}>Unknown StateUIDataMap; //  0x190 Size(50)
+	struct TMap<{}, {}>Unknown PhysicsAssetsMap; //  0x1e0 Size(50)
+	struct TSoftObjectPtr<Unknown> MaskOutCache; //  0x230 Size(28)
 	char bIsChildObject; //  0x258 Size(1)
-	Unknown MaskOutCache_HardRef; //  0x260 Size(8)
+	struct Unknown MaskOutCache_HardRef; //  0x260 Size(8)
 
-	void UnloadMaskOutCache(); // Function CustomizableObject.CustomizableObject.UnloadMaskOutCache(Final|Native|Public|BlueprintCallable) // <Game+0x1037d50>
+	void UnloadMaskOutCache(); // Function CustomizableObject.CustomizableObject.UnloadMaskOutCache(Final|Native|Public|BlueprintCallable) // <Game+0x1038100>
 };
 
 // Class CustomizableObject.CustomizableObjectInstance
 struct UCustomizableObjectInstance : Object {
-	Unknown CustomizableObject; //  0x28 Size(8)
-	Unknown SkeletalMesh; //  0x30 Size(8)
-	Unknown BoolParameters; //  0x38 Size(10)
-	Unknown IntParameters; //  0x48 Size(10)
-	Unknown FloatParameters; //  0x58 Size(10)
-	Unknown TextureParameters; //  0x68 Size(10)
-	Unknown VectorParameters; //  0x78 Size(10)
-	Unknown ProjectorParameters; //  0x88 Size(10)
+	struct Unknown CustomizableObject; //  0x28 Size(8)
+	struct Unknown SkeletalMesh; //  0x30 Size(8)
+	struct TArray<Unknown> BoolParameters; //  0x38 Size(10)
+	struct TArray<Unknown> IntParameters; //  0x48 Size(10)
+	struct TArray<Unknown> FloatParameters; //  0x58 Size(10)
+	struct TArray<Unknown> TextureParameters; //  0x68 Size(10)
+	struct TArray<Unknown> VectorParameters; //  0x78 Size(10)
+	struct TArray<Unknown> ProjectorParameters; //  0x88 Size(10)
 	char bBuildParameterDecorations; //  0x98 Size(1)
 	struct FMulticastInlineDelegate UpdatedDelegate; //  0xa0 Size(10)
 	struct FString SkeletalMeshStatus; //  0x110 Size(10)
-	Unknown MaterialTags; //  0x140 Size(10)
-	Unknown PrivateData; //  0x1d0 Size(8)
+	struct TArray<Unknown> MaterialTags; //  0x140 Size(10)
+	struct Unknown PrivateData; //  0x1d0 Size(8)
 
-	void UpdateSkeletalMeshAsync(char bIgnoreCloseDist, char bForceHighPriority); // Function CustomizableObject.CustomizableObjectInstance.UpdateSkeletalMeshAsync(Final|Native|Public|BlueprintCallable) // <Game+0x1037d70>
+	void UpdateSkeletalMeshAsync(char bIgnoreClose, char bForceHighPriority); // Function CustomizableObject.CustomizableObjectInstance.UpdateSkeletalMeshAsync(Final|Native|Public|BlueprintCallable) // <Game+0x1038120>
 };
 
 // Class CustomizableObject.CustomizableObjectImageProviderArray
 struct UCustomizableObjectImageProviderArray : UCustomizableSystemImageProvider {
-	Unknown Textures; //  0x28 Size(10)
+	struct TArray<Unknown> Textures; //  0x28 Size(10)
 };
 
 // Class CustomizableObject.CustomizableObjectSystem
 struct UCustomizableObjectSystem : Object {
-	Unknown PendingReleaseSkeletalMesh; //  0x28 Size(10)
-	Unknown PreviewExternalImageProvider; //  0x48 Size(8)
-	Unknown ProtectedCachedTextures; //  0x150 Size(10)
-	Unknown DefaultInstanceLODManagement; //  0x170 Size(8)
-	Unknown CurrentInstanceLODManagement; //  0x178 Size(8)
+	struct TArray<Unknown> PendingReleaseSkeletalMesh; //  0x28 Size(10)
+	struct Unknown PreviewExternalImageProvider; //  0x48 Size(8)
+	struct TArray<Unknown> ProtectedCachedTextures; //  0x150 Size(10)
+	struct Unknown DefaultInstanceLODManagement; //  0x170 Size(8)
+	struct Unknown CurrentInstanceLODManagement; //  0x178 Size(8)
 
-	void SetReleaseMutableTexturesImmediately(char bReleaseTextures); // Function CustomizableObject.CustomizableObjectSystem.SetReleaseMutableTexturesImmediately(Final|Native|Public|BlueprintCallable) // <Game+0x103c3d0>
+	void SetReleaseMutableTexturesImmedi(char bReleaseTextures); // Function CustomizableObject.CustomizableObjectSystem.SetReleaseMutableTexturesImmedi(Final|Native|Public|BlueprintCallable) // <Game+0x103c780>
 };
 
 // Class CustomizableObject.CustomizableSkeletalComponent
 struct UCustomizableSkeletalComponent : USceneComponent {
 	float SkippedLastRenderTime; //  0x23c Size(4)
-	Unknown CustomizableObjectInstance; //  0x240 Size(8)
+	struct Unknown CustomizableObjectInstance; //  0x240 Size(8)
 
-	void UpdateSkeletalMeshAsync(char bNeverSkipUpdate); // Function CustomizableObject.CustomizableSkeletalComponent.UpdateSkeletalMeshAsync(Final|Native|Public|BlueprintCallable) // <Game+0x103c460>
+	void UpdateSkeletalMeshAsync(char bNeverSkipUpdate); // Function CustomizableObject.CustomizableSkeletalComponent.UpdateSkeletalMeshAsync(Final|Native|Public|BlueprintCallable) // <Game+0x103c810>
 };
 
 // Class CustomizableObject.CustomizableSkeletalMeshActor
 struct ACustomizableSkeletalMeshActor : ASkeletalMeshActor {
-	Unknown CustomizableSkeletalComponent; //  0x398 Size(8)
+	struct Unknown CustomizableSkeletalComponent; //  0x398 Size(8)
 };
 

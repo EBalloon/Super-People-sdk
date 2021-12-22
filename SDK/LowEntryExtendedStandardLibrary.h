@@ -97,95 +97,95 @@ enum class ELowEntrySplitScreenTypeThreePlayers : uint8 {
 	ELowEntrySplitScreenTypeThreePlayers = 2
 };
 
-// Enum LowEntryExtendedStandardLibrary.ELowEntrySplitScreenTypeTwo
-enum class ELowEntrySplitScreenTypeTwondardLi : uint8 {
-	ELowEntrySplitScreenTypeTwo = 0,
-	ELowEntrySplitScreenTypeTwondardLibrary = 1,
-	ELowEntrySplitScreenTypeTwo = 2
+// Enum LowEntryExtendedStandardLibrary.ELowEntrySplitScreenTypeTwoPlayers
+enum class ELowEntrySplitScreenTypeTwoPlayers : uint8 {
+	ELowEntrySplitScreenTypeTwoPlayers = 0,
+	ELowEntrySplitScreenTypeTwoPlayers = 1,
+	ELowEntrySplitScreenTypeTwoPlayers = 2
 };
 
 // Class LowEntryExtendedStandardLibrary.LowEntryBitDataEntry
 struct ULowEntryBitDataEntry : Object {
-	Unknown Type; //  0x28 Size(1)
-	Unknown ByteValue; //  0x29 Size(1)
+	char Type; //  0x28 Size(1)
+	char ByteValue; //  0x29 Size(1)
 	int32_t IntegerValue; //  0x2c Size(4)
-	Unknown LongBytesValue; //  0x30 Size(8)
+	struct Unknown LongBytesValue; //  0x30 Size(8)
 	float FloatValue; //  0x38 Size(4)
-	Unknown Doub; //  0x40 Size(8)
+	struct Unknown DoubleBytesValue; //  0x40 Size(8)
 	char BooleanValue; //  0x48 Size(1)
 	struct FString StringUtf8Value; //  0x50 Size(10)
-	Unknown ByteArrayValue; //  0x60 Size(10)
-	Unknown IntegerArrayValue; //  0x70 Size(10)
-	Unknown LongBytesArrayValue; //  0x80 Size(10)
-	Unknown FloatArrayValue; //  0x90 Size(10)
-	Unknown Doub; //  0xa0 Size(10)
-	Unknown BooleanArrayValue; //  0xb0 Size(10)
-	Unknown StringUtf8ArrayValue; //  0xc0 Size(10)
+	struct TArray<Unknown> ByteArrayValue; //  0x60 Size(10)
+	struct TArray<Unknown> IntegerArrayValue; //  0x70 Size(10)
+	struct TArray<Unknown> LongBytesArrayValue; //  0x80 Size(10)
+	struct TArray<Unknown> FloatArrayValue; //  0x90 Size(10)
+	struct TArray<Unknown> DoubleBytesArrayValue; //  0xa0 Size(10)
+	struct TArray<Unknown> BooleanArrayValue; //  0xb0 Size(10)
+	struct TArray<Unknown> StringUtf8ArrayValue; //  0xc0 Size(10)
 };
 
 // Class LowEntryExtendedStandardLibrary.LowEntryBitDataReader
 struct ULowEntryBitDataReader : Object {
-	Unknown Bytes; //  0x28 Size(10)
+	struct TArray<Unknown> Bytes; //  0x28 Size(10)
 	int32_t Position; //  0x38 Size(4)
-	Unknown CurrentByte; //  0x3c Size(1)
+	char CurrentByte; //  0x3c Size(1)
 	int32_t CurrentBytePosition; //  0x40 Size(4)
 
-	void SetPosition(int32_t Position_); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.SetPosition(Final|Native|Public|BlueprintCallable) // <Game+0x1060c70>
+	void SetPosition(int32_t Position_); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.SetPosition(Final|Native|Public|BlueprintCallable) // <Game+0x1061040>
 };
 
 // Class LowEntryExtendedStandardLibrary.LowEntryBitDataWriter
 struct ULowEntryBitDataWriter : Object {
-	Unknown Bytes; //  0x28 Size(10)
-	Unknown CurrentByte; //  0x38 Size(1)
+	struct TArray<Unknown> Bytes; //  0x28 Size(10)
+	char CurrentByte; //  0x38 Size(1)
 	int32_t CurrentBytePosition; //  0x3c Size(4)
 
-	void AddStringUtf8Array(Unknown& Value); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddStringUtf8Array(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x105fe00>
+	void AddStringUtf8Array(struct TArray<Unknown>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddStringUtf8Array(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x10601d0>
 };
 
 // Class LowEntryExtendedStandardLibrary.LowEntryByteArray
 struct ULowEntryByteArray : Object {
-	Unknown ByteArray; //  0x28 Size(10)
+	struct TArray<Unknown> ByteArray; //  0x28 Size(10)
 };
 
-// Class LowEntryExtendedStandardLibrary.LowEntryByteDataEntry
-struct ULowEntryByteDataEntry : Object {
-	Unknown Type; //  0x28 Size(1)
-	Unknown ByteValue; //  0x29 Size(1)
+// Class LowEntryExtendedStandardLibrary.LowEntryByte
+struct ULowEntryByte : Object {
+	char Type; //  0x28 Size(1)
+	char ByteValue; //  0x29 Size(1)
 	int32_t IntegerValue; //  0x2c Size(4)
-	Unknown LongBytesValue; //  0x30 Size(8)
+	struct Unknown LongBytesValue; //  0x30 Size(8)
 	float FloatValue; //  0x38 Size(4)
-	Unknown Doub; //  0x40 Size(8)
+	struct Unknown DoubleBytesValue; //  0x40 Size(8)
 	char BooleanValue; //  0x48 Size(1)
 	struct FString StringUtf8Value; //  0x50 Size(10)
-	Unknown ByteArrayValue; //  0x60 Size(10)
-	Unknown IntegerArrayValue; //  0x70 Size(10)
-	Unknown LongBytesArrayValue; //  0x80 Size(10)
-	Unknown FloatArrayValue; //  0x90 Size(10)
-	Unknown Doub; //  0xa0 Size(10)
-	Unknown BooleanArrayValue; //  0xb0 Size(10)
-	Unknown StringUtf8ArrayValue; //  0xc0 Size(10)
+	struct TArray<Unknown> ByteArrayValue; //  0x60 Size(10)
+	struct TArray<Unknown> IntegerArrayValue; //  0x70 Size(10)
+	struct TArray<Unknown> LongBytesArrayValue; //  0x80 Size(10)
+	struct TArray<Unknown> FloatArrayValue; //  0x90 Size(10)
+	struct TArray<Unknown> DoubleBytesArrayValue; //  0xa0 Size(10)
+	struct TArray<Unknown> BooleanArrayValue; //  0xb0 Size(10)
+	struct TArray<Unknown> StringUtf8ArrayValue; //  0xc0 Size(10)
 };
 
-// Class LowEntryExtendedStandardLibrary.LowEntryByteDataReader
-struct ULowEntryByteDataReader : Object {
-	Unknown Bytes; //  0x28 Size(10)
+// Class LowEntryExtendedStandardLibrary.LowEntryByte
+struct ULowEntryByte : Object {
+	struct TArray<Unknown> Bytes; //  0x28 Size(10)
 	int32_t Position; //  0x38 Size(4)
 
-	void SetPosition(int32_t Position_); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.SetPosition(Final|Native|Public|BlueprintCallable) // <Game+0x10764e0>
+	void SetPosition(int32_t Position_); // Function LowEntryExtendedStandardLibrary.LowEntryByte.SetPosition(Final|Native|Public|BlueprintCallable) // <Game+0x10768b0>
 };
 
-// Class LowEntryExtendedStandardLibrary.LowEntryByteDataWriter
-struct ULowEntryByteDataWriter : Object {
-	Unknown Bytes; //  0x28 Size(10)
+// Class LowEntryExtendedStandardLibrary.LowEntryByte
+struct ULowEntryByte : Object {
+	struct TArray<Unknown> Bytes; //  0x28 Size(10)
 
-	void AddStringUtf8Array(Unknown& Value); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddStringUtf8Array(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x1066820>
+	void AddStringUtf8Array(struct TArray<Unknown>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryByte.AddStringUtf8Array(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x1066bf0>
 };
 
 // Class LowEntryExtendedStandardLibrary.LowEntryDouble
 struct ULowEntryDouble : Object {
-	Unknown Bytes; //  0x28 Size(10)
+	struct TArray<Unknown> Bytes; //  0x28 Size(10)
 
-	void SetBytes(Unknown& ByteArray, int32_t Index, int32_t Length); // Function LowEntryExtendedStandardLibrary.LowEntryDouble.SetBytes(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x1076130>
+	void SetBytes(struct TArray<Unknown>& ByteArray, int32_t Index, int32_t Length); // Function LowEntryExtendedStandardLibrary.LowEntryDouble.SetBytes(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x1076500>
 };
 
 // Class LowEntryExtendedStandardLibrary.LowEntryExecutionQueue
@@ -200,7 +200,7 @@ struct ULowEntryLatentActionBoolean : Object {
 	char Result; //  0x29 Size(1)
 	int32_t KeepAliveCount; //  0x2c Size(4)
 
-	void WaitTillDone(Unknown WorldContextObject, Unknown LatentInfo, char& Result_); // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionBoolean.WaitTillDone(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x107afb0>
+	void WaitTillDone(struct Unknown WorldContextObject, struct Unknown LatentInfo, char& Result_); // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionBoolean.WaitTillDone(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x107b380>
 };
 
 // Class LowEntryExtendedStandardLibrary.LowEntryLatentActionFloat
@@ -209,7 +209,7 @@ struct ULowEntryLatentActionFloat : Object {
 	float Result; //  0x2c Size(4)
 	int32_t KeepAliveCount; //  0x30 Size(4)
 
-	void WaitTillDone(Unknown WorldContextObject, Unknown LatentInfo, float& Result_); // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionFloat.WaitTillDone(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x107b0f0>
+	void WaitTillDone(struct Unknown WorldContextObject, struct Unknown LatentInfo, float& Result_); // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionFloat.WaitTillDone(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x107b4c0>
 };
 
 // Class LowEntryExtendedStandardLibrary.LowEntryLatentActionInteger
@@ -218,7 +218,7 @@ struct ULowEntryLatentActionInteger : Object {
 	int32_t Result; //  0x2c Size(4)
 	int32_t KeepAliveCount; //  0x30 Size(4)
 
-	void WaitTillDone(Unknown WorldContextObject, Unknown LatentInfo, int32_t& Result_); // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionInteger.WaitTillDone(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x107b230>
+	void WaitTillDone(struct Unknown WorldContextObject, struct Unknown LatentInfo, int32_t& Result_); // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionInteger.WaitTillDone(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x107b600>
 };
 
 // Class LowEntryExtendedStandardLibrary.LowEntryLatentActionNone
@@ -226,16 +226,16 @@ struct ULowEntryLatentActionNone : Object {
 	char Finished; //  0x28 Size(1)
 	int32_t KeepAliveCount; //  0x2c Size(4)
 
-	void WaitTillDone(Unknown WorldContextObject, Unknown LatentInfo); // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionNone.WaitTillDone(Final|Native|Public|BlueprintCallable) // <Game+0x107b370>
+	void WaitTillDone(struct Unknown WorldContextObject, struct Unknown LatentInfo); // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionNone.WaitTillDone(Final|Native|Public|BlueprintCallable) // <Game+0x107b740>
 };
 
 // Class LowEntryExtendedStandardLibrary.LowEntryLatentActionObject
 struct ULowEntryLatentActionObject : Object {
 	char Finished; //  0x28 Size(1)
-	Unknown Result; //  0x30 Size(8)
+	struct Unknown Result; //  0x30 Size(8)
 	int32_t KeepAliveCount; //  0x38 Size(4)
 
-	void WaitTillDone(Unknown WorldContextObject, Unknown LatentInfo, Unknown& Result_); // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionObject.WaitTillDone(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x107b460>
+	void WaitTillDone(struct Unknown WorldContextObject, struct Unknown LatentInfo, struct Unknown& Result_); // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionObject.WaitTillDone(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x107b830>
 };
 
 // Class LowEntryExtendedStandardLibrary.LowEntryLatentActionString
@@ -244,23 +244,23 @@ struct ULowEntryLatentActionString : Object {
 	struct FString Result; //  0x30 Size(10)
 	int32_t KeepAliveCount; //  0x40 Size(4)
 
-	void WaitTillDone(Unknown WorldContextObject, Unknown LatentInfo, struct FString& Result_); // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionString.WaitTillDone(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x107b5a0>
+	void WaitTillDone(struct Unknown WorldContextObject, struct Unknown LatentInfo, struct FString& Result_); // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionString.WaitTillDone(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x107b970>
 };
 
 // Class LowEntryExtendedStandardLibrary.LowEntryLong
 struct ULowEntryLong : Object {
-	Unknown Bytes; //  0x28 Size(10)
+	struct TArray<Unknown> Bytes; //  0x28 Size(10)
 
-	void SetBytes(Unknown& ByteArray, int32_t Index, int32_t Length); // Function LowEntryExtendedStandardLibrary.LowEntryLong.SetBytes(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x1076130>
+	void SetBytes(struct TArray<Unknown>& ByteArray, int32_t Index, int32_t Length); // Function LowEntryExtendedStandardLibrary.LowEntryLong.SetBytes(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x1076500>
 };
 
 // Class LowEntryExtendedStandardLibrary.LowEntryParsedHashcash
 struct ULowEntryParsedHashcash : Object {
 	char Valid; //  0x28 Size(1)
 	struct FString Resource; //  0x30 Size(10)
-	Unknown Date; //  0x40 Size(8)
+	struct Unknown Date; //  0x40 Size(8)
 	int32_t Bits; //  0x48 Size(4)
 
-	struct FString ToString(); // Function LowEntryExtendedStandardLibrary.LowEntryParsedHashcash.ToString(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game+0x107af30>
+	struct FString ToString(); // Function LowEntryExtendedStandardLibrary.LowEntryParsedHashcash.ToString(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game+0x107b300>
 };
 

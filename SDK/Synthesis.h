@@ -1,21 +1,21 @@
-// Enum Synthesis.ESynth1PatchDestination
-enum class ESynth1PatchDestination : uint8 {
-	ESynth1PatchDestination = 0,
-	ESynth1PatchDestination = 1,
-	ESynth1PatchDestination = 2,
-	ESynth1PatchDestination = 3,
-	ESynth1PatchDestination = 4,
-	ESynth1PatchDestination = 5,
-	ESynth1PatchDestination = 6,
-	ESynth1PatchDestination = 7,
-	ESynth1PatchDestination = 8,
-	ESynth1PatchDestination = 9,
-	ESynth1PatchDestination = 10,
-	ESynth1PatchDestination = 11,
-	ESynth1PatchDestination = 12,
-	ESynth1PatchDestination = 13,
-	ESynth1PatchDestination = 14,
-	ESynth1PatchDestination = 15
+// Enum Synthesis.ESynth1Patch
+enum class ESynth1Patch : uint8 {
+	ESynth1Patch = 0,
+	ESynth1Patch = 1,
+	ESynth1Patch = 2,
+	ESynth1Patch = 3,
+	ESynth1Patch = 4,
+	ESynth1Patch = 5,
+	ESynth1Patch = 6,
+	ESynth1Patch = 7,
+	ESynth1Patch = 8,
+	ESynth1Patch = 9,
+	ESynth1Patch = 10,
+	ESynth1Patch = 11,
+	ESynth1Patch = 12,
+	ESynth1Patch = 13,
+	ESynth1Patch = 14,
+	ESynth1Patch = 15
 };
 
 // Enum Synthesis.ESynth1PatchSource
@@ -28,13 +28,13 @@ enum class ESynth1PatchSource : uint8 {
 	ESynth1PatchSource = 5
 };
 
-// Enum Synthesis.ESynthStereoDelayMode
-enum class ESynthStereoDelayMode : uint8 {
-	ESynthStereoDelayMode = 0,
-	ESynthStereoDelayMode = 1,
-	ESynthStereoDelayMode = 2,
-	ESynthStereoDelayMode = 3,
-	ESynthStereoDelayMode = 4
+// Enum Synthesis.ESynthStereo
+enum class ESynthStereo : uint8 {
+	ESynthStereo = 0,
+	ESynthStereo = 1,
+	ESynthStereo = 2,
+	ESynthStereo = 3,
+	ESynthStereo = 4
 };
 
 // Enum Synthesis.ESynthFilterAlgorithm
@@ -132,23 +132,23 @@ enum class ESynth1OscType : uint8 {
 	ESynth1OscType = 6
 };
 
-// Enum Synthesis.ESourceEffectDynamicsPeakMo
-enum class ESourceEffectDynamicsPeakMoyp : uint8 {
-	ESourceEffectDynamicsPeakMo = 0,
-	ESourceEffectDynamicsPeakMoype_MAX = 1,
-	ESourceEffectDynamicsPeakMo = 2,
-	ESourceEffectDynamicsPeakMoype_MAX = 3,
-	ESourceEffectDynamicsPeakMo = 4
+// Enum Synthesis.ESourceEffectDynamicsPeakMode
+enum class ESourceEffectDynamicsPeakMode : uint8 {
+	ESourceEffectDynamicsPeakMode = 0,
+	ESourceEffectDynamicsPeakMode = 1,
+	ESourceEffectDynamicsPeakMode = 2,
+	ESourceEffectDynamicsPeakMode = 3,
+	ESourceEffectDynamicsPeakMode = 4
 };
 
-// Enum Synthesis.ESourceEffectDynamicsProcessorType
-enum class ESourceEffectDynamicsProcessorType : uint8 {
-	ESourceEffectDynamicsProcessorType = 0,
-	ESourceEffectDynamicsProcessorType = 1,
-	ESourceEffectDynamicsProcessorType = 2,
-	ESourceEffectDynamicsProcessorType = 3,
-	ESourceEffectDynamicsProcessorType = 4,
-	ESourceEffectDynamicsProcessorType = 5
+// Enum Synthesis.ESourceEffectDynamicsProcesde
+enum class ESourceEffectDynamicsProces : uint8 {
+	ESourceEffectDynamicsProcesde = 0,
+	ESourceEffectDynamicsProces = 1,
+	ESourceEffectDynamicsProces = 2,
+	ESourceEffectDynamicsProces = 3,
+	ESourceEffectDynamicsProces = 4,
+	ESourceEffectDynamicsProces = 5
 };
 
 // Enum Synthesis.EEnvelopeFollowerPeakMode
@@ -219,31 +219,31 @@ enum class EStereoDelaySourceEffect : uint8 {
 	EStereoDelaySourceEffect = 4
 };
 
-// Enum Synthesis.ESub
-enum class ESubd : uint8 {
-	ESub = 0,
-	ESubd = 1,
-	ESubd = 2,
-	ESubd = 3
+// Enum Synthesis.ESubmixEffectConvolutionReverbBlockSize
+enum class ESubmixEffectConvolutionReverbBlockSize : uint8 {
+	ESubmixEffectConvolutionReverbBlockSize = 0,
+	ESubmixEffectConvolutionReverbBlockSize = 1,
+	ESubmixEffectConvolutionReverbBlockSize = 2,
+	ESubmixEffectConvolutionReverbBlockSize = 3
 };
 
-// Enum Synthesis.ESub
-enum class ESubd : uint8 {
-	ESub = 0,
-	ESubd = 1,
-	ESubd = 2,
-	ESubd = 3,
-	ESubd = 4
+// Enum Synthesis.ESubmixFilterAlgorithm
+enum class ESubmixFilterAlgorithm : uint8 {
+	ESubmixFilterAlgorithm = 0,
+	ESubmixFilterAlgorithm = 1,
+	ESubmixFilterAlgorithm = 2,
+	ESubmixFilterAlgorithm = 3,
+	ESubmixFilterAlgorithm = 4
 };
 
-// Enum Synthesis.ESub
-enum class ESubd : uint8 {
-	ESub = 0,
-	ESubd = 1,
-	ESubd = 2,
-	ESubd = 3,
-	ESubd = 4,
-	ESubd = 5
+// Enum Synthesis.ESubmixFilterType
+enum class ESubmixFilterType : uint8 {
+	ESubmixFilterType = 0,
+	ESubmixFilterType = 1,
+	ESubmixFilterType = 2,
+	ESubmixFilterType = 3,
+	ESubmixFilterType = 4,
+	ESubmixFilterType = 5
 };
 
 // Enum Synthesis.ETapLineMode
@@ -326,35 +326,35 @@ enum class ESynthSlateSizeType : uint8 {
 
 // Class Synthesis.ModularSynthPresetBank
 struct UModularSynthPresetBank : Object {
-	Unknown Presets; //  0x28 Size(10)
+	struct TArray<Unknown> Presets; //  0x28 Size(10)
 };
 
 // Class Synthesis.ModularSynthComponent
 struct UModularSynthComponent : USynthComponent {
 	int32_t VoiceCount; //  0x710 Size(4)
 
-	void SetSynthPreset(Unknown& SynthPreset); // Function Synthesis.ModularSynthComponent.SetSynthPreset(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x18d7690>
+	void SetSynthPreset(struct Unknown& SynthPreset); // Function Synthesis.ModularSynthComponent.SetSynthPreset(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x18d8510>
 };
 
 // Class Synthesis.SourceEffectBitCrusherPreset
 struct USourceEffectBitCrusherPreset : USoundEffectSourcePreset {
-	Unknown Settings; //  0x70 Size(8)
+	struct Unknown Settings; //  0x70 Size(8)
 
-	void SetSettings(Unknown& InSettings); // Function Synthesis.SourceEffectBitCrusherPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x18df240>
+	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SourceEffectBitCrusherPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x18e0120>
 };
 
 // Class Synthesis.SourceEffectChorusPreset
 struct USourceEffectChorusPreset : USoundEffectSourcePreset {
-	Unknown Settings; //  0x80 Size(18)
+	struct Unknown Settings; //  0x80 Size(18)
 
-	void SetSettings(Unknown& InSettings); // Function Synthesis.SourceEffectChorusPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x18df2f0>
+	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SourceEffectChorusPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x18e01d0>
 };
 
-// Class Synthesis.SourceEffectDynamicsProcessorPreset
-struct USourceEffectDynamicsProcessorPreset : USoundEffectSourcePreset {
-	Unknown Settings; //  0x90 Size(28)
+// Class Synthesis.SourceEffect
+struct USourceEffect : USoundEffectSourcePreset {
+	struct Unknown Settings; //  0x90 Size(28)
 
-	void SetSettings(Unknown& InSettings); // Function Synthesis.SourceEffectDynamicsProcessorPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x18df3a0>
+	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SourceEffect.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x18e0280>
 };
 
 // Class Synthesis.EnvelopeFollowerListener
@@ -364,127 +364,127 @@ struct UEnvelopeFollowerListener : UActorComponent {
 
 // Class Synthesis.SourceEffectEnvelopeFollowerPreset
 struct USourceEffectEnvelopeFollowerPreset : USoundEffectSourcePreset {
-	Unknown Settings; //  0x74 Size(c)
+	struct Unknown Settings; //  0x74 Size(c)
 
-	void UnregisterEnvelopeFollowerListener(Unknown EnvelopeFollowerListener); // Function Synthesis.SourceEffectEnvelopeFollowerPreset.UnregisterEnvelopeFollowerListener(Final|Native|Public|BlueprintCallable) // <Game+0x18dfb20>
+	void UnregisterEnvelopeFollowerListener(struct Unknown EnvelopeFollowerListener); // Function Synthesis.SourceEffectEnvelopeFollowerPreset.UnregisterEnvelopeFollowerListener(Final|Native|Public|BlueprintCallable) // <Game+0x18e0a00>
 };
 
 // Class Synthesis.SourceEffectEQPreset
 struct USourceEffectEQPreset : USoundEffectSourcePreset {
-	Unknown Settings; //  0x78 Size(10)
+	struct Unknown Settings; //  0x78 Size(10)
 
-	void SetSettings(Unknown& InSettings); // Function Synthesis.SourceEffectEQPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x18df450>
+	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SourceEffectEQPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x18e0330>
 };
 
 // Class Synthesis.SourceEffectFilterPreset
 struct USourceEffectFilterPreset : USoundEffectSourcePreset {
-	Unknown Settings; //  0x74 Size(c)
+	struct Unknown Settings; //  0x74 Size(c)
 
-	void SetSettings(Unknown& InSettings); // Function Synthesis.SourceEffectFilterPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x18df5b0>
+	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SourceEffectFilterPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x18e0490>
 };
 
-// Class Synthesis.SourceEffectFoldbackDistortionPreset
-struct USourceEffectFoldbackDistortionPreset : USoundEffectSourcePreset {
-	Unknown Settings; //  0x74 Size(c)
+// Class Synthesis.SourceEffectFoldback
+struct USourceEffectFoldback : USoundEffectSourcePreset {
+	struct Unknown Settings; //  0x74 Size(c)
 
-	void SetSettings(Unknown& InSettings); // Function Synthesis.SourceEffectFoldbackDistortionPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x18df660>
+	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SourceEffectFoldbackDset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x18e0540>
 };
 
 // Class Synthesis.SourceEffectMidSideSpreaderPreset
 struct USourceEffectMidSideSpreaderPreset : USoundEffectSourcePreset {
-	Unknown Settings; //  0x74 Size(c)
+	struct Unknown Settings; //  0x74 Size(c)
 
-	void SetSettings(Unknown& InSettings); // Function Synthesis.SourceEffectMidSideSpreaderPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x18df710>
+	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SourceEffectMidSideSpreaderPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x18e05f0>
 };
 
 // Class Synthesis.SourceEffectPannerPreset
 struct USourceEffectPannerPreset : USoundEffectSourcePreset {
-	Unknown Settings; //  0x70 Size(8)
+	struct Unknown Settings; //  0x70 Size(8)
 
-	void SetSettings(Unknown& InSettings); // Function Synthesis.SourceEffectPannerPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x18df7c0>
+	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SourceEffectPannerPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x18e06a0>
 };
 
 // Class Synthesis.SourceEffectPhaserPreset
 struct USourceEffectPhaserPreset : USoundEffectSourcePreset {
-	Unknown Settings; //  0x78 Size(10)
+	struct Unknown Settings; //  0x78 Size(10)
 
-	void SetSettings(Unknown& InSettings); // Function Synthesis.SourceEffectPhaserPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x18df870>
+	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SourceEffectPhaserPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x18e0750>
 };
 
 // Class Synthesis.SourceEffectRingModulationPreset
 struct USourceEffectRingModulationPreset : USoundEffectSourcePreset {
-	Unknown Settings; //  0x7c Size(14)
+	struct Unknown Settings; //  0x7c Size(14)
 
-	void SetSettings(Unknown& InSettings); // Function Synthesis.SourceEffectRingModulationPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x18df930>
+	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SourceEffectRingModulationPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x18e0810>
 };
 
-// Class Synthesis.SourceEffectSimpleDelayPreset
-struct USourceEffectSimpleDelayPreset : USoundEffectSourcePreset {
-	Unknown Settings; //  0x80 Size(18)
+// Class Synthesis.SourceEffectSimpleDelayPres
+struct USourceEffectSimpleDelayPres : USoundEffectSourcePreset {
+	struct Unknown Settings; //  0x80 Size(18)
 
-	void SetSettings(Unknown& InSettings); // Function Synthesis.SourceEffectSimpleDelayPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x18df9d0>
+	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SourceEffectSimpleDelayPres.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x18e08b0>
 };
 
-// Class Synthesis.SourceEffectStereoDelayPreset
-struct USourceEffectStereoDelayPreset : USoundEffectSourcePreset {
-	Unknown Settings; //  0x7c Size(14)
+// Class Synthesis.SourceEffectStereoDelayPres
+struct USourceEffectStereoDelayPres : USoundEffectSourcePreset {
+	struct Unknown Settings; //  0x7c Size(14)
 
-	void SetSettings(Unknown& InSettings); // Function Synthesis.SourceEffectStereoDelayPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x18dfa80>
+	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SourceEffectStereoDelayPres.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x18e0960>
 };
 
 // Class Synthesis.SourceEffectWaveShaperPreset
 struct USourceEffectWaveShaperPreset : USoundEffectSourcePreset {
-	Unknown Settings; //  0x70 Size(8)
+	struct Unknown Settings; //  0x70 Size(8)
 
-	void SetSettings(Unknown& InSettings); // Function Synthesis.SourceEffectWaveShaperPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x18df7c0>
+	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SourceEffectWaveShaperPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x18e06a0>
 };
 
 // Class Synthesis.AudioImpulseResponse
 struct UAudioImpulseResponse : Object {
-	Unknown ImpulseResponse; //  0x28 Size(10)
+	struct TArray<Unknown> ImpulseResponse; //  0x28 Size(10)
 	int32_t NumChannels; //  0x38 Size(4)
 	int32_t SampleRate; //  0x3c Size(4)
 	float NormalizationVolumeDb; //  0x40 Size(4)
-	Unknown IRData; //  0x48 Size(10)
+	struct TArray<Unknown> IRData; //  0x48 Size(10)
 };
 
 // Class Synthesis.SubmixEffectConvolutionReverbPreset
 struct USubmixEffectConvolutionReverbPreset : USoundEffectSubmixPreset {
-	Unknown Settings; //  0x40 Size(20)
-	Unknown ImpulseResponse; //  0x60 Size(8)
-	Unknown BlockSize; //  0x68 Size(1)
+	struct Unknown Settings; //  0x40 Size(20)
+	struct Unknown ImpulseResponse; //  0x60 Size(8)
+	enum class Unknow BlockSize; //  0x68 Size(1)
 	char bEnableHardwareAcceleration; //  0x69 Size(1)
 
-	void SetSettings(Unknown& InSettings); // Function Synthesis.SubmixEffectConvolutionReverbPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x18e4c50>
+	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SubmixEffectConvolutionReverbPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x18e5b50>
 };
 
-// Class Synthesis.SubmixEffectDelayPreset
-struct USubmixEffectDelayPreset : USoundEffectSubmixPreset {
-	Unknown Settings; //  0x74 Size(c)
-	Unknown DynamicSettings; //  0x80 Size(c)
+// Class Synthesis.SubmixEffect
+struct USubmixEffect : USoundEffectSubmixPreset {
+	struct Unknown Settings; //  0x74 Size(c)
+	struct Unknown DynamicSettings; //  0x80 Size(c)
 
-	void SetSettings(Unknown& InSettings); // Function Synthesis.SubmixEffectDelayPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x18e4cf0>
+	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SubmixEffect.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x18e5bf0>
 };
 
 // Class Synthesis.SubmixEffectFilterPreset
 struct USubmixEffectFilterPreset : USoundEffectSubmixPreset {
-	Unknown Settings; //  0x74 Size(c)
+	struct Unknown Settings; //  0x74 Size(c)
 
-	void SetSettings(Unknown& InSettings); // Function Synthesis.SubmixEffectFilterPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x18e4db0>
+	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SubmixEffectFilterPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x18e5cb0>
 };
 
 // Class Synthesis.SubmixEffectFlexiverbPreset
 struct USubmixEffectFlexiverbPreset : USoundEffectSubmixPreset {
-	Unknown Settings; //  0x78 Size(10)
+	struct Unknown Settings; //  0x78 Size(10)
 
-	void SetSettings(Unknown& InSettings); // Function Synthesis.SubmixEffectFlexiverbPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x18e4e60>
+	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SubmixEffectFlexiverbPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x18e5d60>
 };
 
 // Class Synthesis.SubmixEffectTapDelayPreset
 struct USubmixEffectTapDelayPreset : USoundEffectSubmixPreset {
-	Unknown Settings; //  0x80 Size(18)
+	struct Unknown Settings; //  0x80 Size(18)
 
-	void SetTap(int32_t TapId, Unknown& TapInfo); // Function Synthesis.SubmixEffectTapDelayPreset.SetTap(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x18e51e0>
+	void SetTap(int32_t TapId, struct Unknown& TapInfo); // Function Synthesis.SubmixEffectTapDelayPreset.SetTap(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x18e60e0>
 };
 
 // Class Synthesis.Synth2DSlider
@@ -493,8 +493,8 @@ struct USynth2DSlider : UWidget {
 	float ValueY; //  0x10c Size(4)
 	struct FDelegate ValueXDelegate; //  0x110 Size(10)
 	struct FDelegate ValueYDelegate; //  0x120 Size(10)
-	Unknown WidgetStyle; //  0x130 Size(2b8)
-	Unknown SliderHandleColor; //  0x3e8 Size(10)
+	struct Unknown WidgetStyle; //  0x130 Size(2b8)
+	struct Unknown SliderHandleColor; //  0x3e8 Size(10)
 	char IndentHandle; //  0x3f8 Size(1)
 	char Locked; //  0x3f9 Size(1)
 	float StepSize; //  0x3fc Size(4)
@@ -506,14 +506,14 @@ struct USynth2DSlider : UWidget {
 	struct FMulticastInlineDelegate OnValueChangedX; //  0x448 Size(10)
 	struct FMulticastInlineDelegate OnValueChangedY; //  0x458 Size(10)
 
-	void SetValue(Unknown InValue); // Function Synthesis.Synth2DSlider.SetValue(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game+0x18e52c0>
+	void SetValue(struct Unknown InValue); // Function Synthesis.Synth2DSlider.SetValue(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game+0x18e61c0>
 };
 
 // Class Synthesis.GranularSynth
 struct UGranularSynth : USynthComponent {
-	Unknown GranulatedSoundWave; //  0x710 Size(8)
+	struct Unknown GranulatedSoundWave; //  0x710 Size(8)
 
-	void SetSustainGain(float SustainGain); // Function Synthesis.GranularSynth.SetSustainGain(Final|Native|Public|BlueprintCallable) // <Game+0x18e5160>
+	void SetSustainGain(float SustainGain); // Function Synthesis.GranularSynth.SetSustainGain(Final|Native|Public|BlueprintCallable) // <Game+0x18e6060>
 };
 
 // Class Synthesis.MonoWaveTableSynthPreset
@@ -522,7 +522,7 @@ struct UMonoWaveTableSynthPreset : Object {
 	char bLockKeyframesToGridBool; //  0x38 Size(1)
 	int32_t LockKeyframesToGrid; //  0x3c Size(4)
 	int32_t WaveTableResolution; //  0x40 Size(4)
-	Unknown WaveTable; //  0x48 Size(10)
+	struct TArray<Unknown> WaveTable; //  0x48 Size(10)
 	char bNormalizeWaveTables; //  0x58 Size(1)
 };
 
@@ -530,18 +530,18 @@ struct UMonoWaveTableSynthPreset : Object {
 struct USynthComponentMonoWaveTable : USynthComponent {
 	struct FMulticastInlineDelegate OnTableAltered; //  0x710 Size(10)
 	struct FMulticastInlineDelegate OnNumTablesChanged; //  0x720 Size(10)
-	Unknown CurrentPreset; //  0x730 Size(8)
+	struct Unknown CurrentPreset; //  0x730 Size(8)
 
-	void SetWaveTablePosition(float InPosition); // Function Synthesis.SynthComponentMonoWaveTable.SetWaveTablePosition(Final|Native|Public|BlueprintCallable) // <Game+0x18e8940>
+	void SetWaveTablePosition(float InPosition); // Function Synthesis.SynthComponentMonoWaveTable.SetWaveTablePosition(Final|Native|Public|BlueprintCallable) // <Game+0x18e9840>
 };
 
 // Class Synthesis.SynthSamplePlayer
 struct USynthSamplePlayer : USynthComponent {
-	Unknown SoundWave; //  0x710 Size(8)
+	struct Unknown SoundWave; //  0x710 Size(8)
 	struct FMulticastInlineDelegate OnSampleLoaded; //  0x718 Size(10)
 	struct FMulticastInlineDelegate OnSamplePlaybackProgress; //  0x728 Size(10)
 
-	void SetSoundWave(Unknown InSoundWave); // Function Synthesis.SynthSamplePlayer.SetSoundWave(Final|Native|Public|BlueprintCallable) // <Game+0x18e8730>
+	void SetSoundWave(struct Unknown InSoundWave); // Function Synthesis.SynthSamplePlayer.SetSoundWave(Final|Native|Public|BlueprintCallable) // <Game+0x18e9630>
 };
 
 // Class Synthesis.SynthKnob
@@ -554,7 +554,7 @@ struct USynthKnob : UWidget {
 	struct FText ParameterName; //  0x120 Size(18)
 	struct FText ParameterUnits; //  0x138 Size(18)
 	struct FDelegate ValueDelegate; //  0x150 Size(10)
-	Unknown WidgetStyle; //  0x160 Size(238)
+	struct Unknown WidgetStyle; //  0x160 Size(238)
 	char Locked; //  0x398 Size(1)
 	char IsFocusable; //  0x399 Size(1)
 	struct FMulticastInlineDelegate OnMouseCaptureBegin; //  0x3a0 Size(10)
@@ -563,6 +563,6 @@ struct USynthKnob : UWidget {
 	struct FMulticastInlineDelegate OnControllerCaptureEnd; //  0x3d0 Size(10)
 	struct FMulticastInlineDelegate OnValueChanged; //  0x3e0 Size(10)
 
-	void SetValue(float InValue); // Function Synthesis.SynthKnob.SetValue(Final|Native|Public|BlueprintCallable) // <Game+0x18e88c0>
+	void SetValue(float InValue); // Function Synthesis.SynthKnob.SetValue(Final|Native|Public|BlueprintCallable) // <Game+0x18e97c0>
 };
 

@@ -1,11 +1,11 @@
-// Enum TimeManagement.EFrameNumberDisplayFormats
-enum class EFrameNumberDisplayFormats : uint8 {
-	EFrameNumberDisplayFormats = 0,
-	EFrameNumberDisplayFormats = 1,
-	EFrameNumberDisplayFormats = 2,
-	EFrameNumberDisplayFormats = 3,
-	EFrameNumberDisplayFormats = 4,
-	EFrameNumberDisplayFormats = 5
+// Enum TimeManagement.EFrameNumber
+enum class EFrameNumber : uint8 {
+	EFrameNumber = 0,
+	EFrameNumber = 1,
+	EFrameNumber = 2,
+	EFrameNumber = 3,
+	EFrameNumber = 4,
+	EFrameNumber = 5
 };
 
 // Enum TimeManagement.ETimedDataInputState
@@ -26,7 +26,7 @@ enum class ETimedDataInputEvaluationType : uint8 {
 
 // Class TimeManagement.FixedFrameRateCustomTimeStep
 struct UFixedFrameRateCustomTimeStep : UEngineCustomTimeStep {
-	Unknown FixedFrameRate; //  0x28 Size(8)
+	struct Unknown FixedFrameRate; //  0x28 Size(8)
 };
 
 // Class TimeManagement.TimeSynchronizationSource

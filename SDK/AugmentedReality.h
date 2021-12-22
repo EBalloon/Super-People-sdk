@@ -178,11 +178,11 @@ enum class EARFaceTrackingDirection : uint8 {
 	EARFaceTrackingDirection = 2
 };
 
-// Enum AugmentedReality.EARCandidateImageOrientatioD
-enum class EARCandidateImageOrientatioA : uint8 {
-	EARCandidateImageOrientatio = 0,
-	EARCandidateImageOrientatioARFaceTrack = 1,
-	EARCandidateImageOrientatio = 2
+// Enum AugmentedReality.EARCandidateImageOrientation
+enum class EARCandidateImageOrientation : uint8 {
+	EARCandidateImageOrientation = 0,
+	EARCandidateImageOrientation = 1,
+	EARCandidateImageOrientation = 2
 };
 
 // Enum AugmentedReality.EARJointTransformSpace
@@ -275,160 +275,160 @@ struct UARSessionConfig : UDataAsset {
 	char bRenderMeshDataInWireframe; //  0x34 Size(1)
 	char bTrackSceneObjects; //  0x35 Size(1)
 	char bUsePersonSegmentationForOcclusion; //  0x36 Size(1)
-	Unknown WorldAlignment; //  0x37 Size(1)
-	Unknown SessionType; //  0x38 Size(1)
-	Unknown PlaneDetectionMode; //  0x39 Size(1)
+	enum class Unknow WorldAlignment; //  0x37 Size(1)
+	enum class Unknow SessionType; //  0x38 Size(1)
+	enum class Unknow PlaneDetectionMode; //  0x39 Size(1)
 	char bHorizontalPlaneDetection; //  0x3a Size(1)
 	char bVerticalPlaneDetection; //  0x3b Size(1)
 	char bEnableAutoFocus; //  0x3c Size(1)
-	Unknown LightEstimationMode; //  0x3d Size(1)
-	Unknown FrameSyncMode; //  0x3e Size(1)
+	enum class Unknow LightEstimationMode; //  0x3d Size(1)
+	enum class Unknow FrameSyncMode; //  0x3e Size(1)
 	char bEnableAutomaticCameraOverlay; //  0x3f Size(1)
 	char bEnableAutomaticCameraTracking; //  0x40 Size(1)
 	char bResetCameraTracking; //  0x41 Size(1)
 	char bResetTrackedObjects; //  0x42 Size(1)
-	Unknown CandidateImages; //  0x48 Size(10)
+	struct TArray<Unknown> CandidateImages; //  0x48 Size(10)
 	int32_t MaxNumSimultaneousImagesTracked; //  0x58 Size(4)
-	Unknown EnvironmentCaptureProbeType; //  0x5c Size(1)
-	Unknown WorldMapData; //  0x60 Size(10)
-	Unknown CandidateObjects; //  0x70 Size(10)
-	Unknown DesiredVideoFormat; //  0x80 Size(c)
-	Unknown FaceTrackingDirection; //  0x8c Size(1)
-	Unknown FaceTrackingUpdate; //  0x8d Size(1)
-	Unknown SerializedARCandidateImageDatabase; //  0x90 Size(10)
-	Unknown Enab; //  0xa0 Size(1)
+	enum class Unknow EnvironmentCaptureProbeType; //  0x5c Size(1)
+	struct TArray<Unknown> WorldMapData; //  0x60 Size(10)
+	struct TArray<Unknown> CandidateObjects; //  0x70 Size(10)
+	struct Unknown DesiredVideoFormat; //  0x80 Size(c)
+	enum class Unknow FaceTracking; //  0x8c Size(1)
+	enum class Unknow FaceTrackingUpdate; //  0x8d Size(1)
+	struct TArray<Unknown> SerializedARCandidateImageDatabase; //  0x90 Size(10)
+	enum class Unknow EnabledSessionTrackingFeature; //  0xa0 Size(1)
 
-	char ShouldResetTrackedObjects(); // Function AugmentedReality.ARSessionConfig.ShouldResetTrackedObjects(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x2ee70a0>
+	char ShouldResetTrackedObjects(); // Function AugmentedReality.ARSessionConfig.ShouldResetTrackedObjects(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x2ef1e10>
 };
 
 // Class AugmentedReality.ARBasicLightEstimate
 struct UARBasicLightEstimate : UARLightEstimate {
 	float AmbientIntensityLumens; //  0x28 Size(4)
 	float AmbientColorTemperatureKelvin; //  0x2c Size(4)
-	Unknown AmbientColor; //  0x30 Size(10)
+	struct Unknown AmbientColor; //  0x30 Size(10)
 
-	float GetAmbientIntensityLumens(); // Function AugmentedReality.ARBasicLightEstimate.GetAmbientIntensityLumens(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x2ee5330>
+	float GetAmbientIntensityLumens(); // Function AugmentedReality.ARBasicLightEstimate.GetAmbientIntensityLumens(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x2ef00a0>
 };
 
 // Class AugmentedReality.ARCandidateImage
 struct UARCandidateImage : UDataAsset {
-	Unknown CandidateTexture; //  0x30 Size(8)
+	struct Unknown CandidateTexture; //  0x30 Size(8)
 	struct FString FriendlyName; //  0x38 Size(10)
 	float Width; //  0x48 Size(4)
 	float Height; //  0x4c Size(4)
-	Unknown Orientation; //  0x50 Size(1)
+	enum class Unknow Orientation; //  0x50 Size(1)
 
-	float GetPhysicalWidth(); // Function AugmentedReality.ARCandidateImage.GetPhysicalWidth(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x2eed940>
+	float GetPhysicalWidth(); // Function AugmentedReality.ARCandidateImage.GetPhysicalWidth(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x2ef86c0>
 };
 
 // Class AugmentedReality.ARSaveWorldAsyncTaskBlueprintProxy
-struct UARSaveWorldAsyncTaskBlueprintProxy : UARBaseAsyncTaskBlueprintPro {
+struct UARSaveWorldAsyncTaskBlueprintProxy : UARBaseAsyncTaskBlueprintProxy {
 	struct FMulticastInlineDelegate OnSuccess; //  0x50 Size(10)
 	struct FMulticastInlineDelegate OnFailed; //  0x60 Size(10)
 
-	Unknown ARSaveWorld(Unknown WorldContextObject); // Function AugmentedReality.ARSaveWorldAsyncTaskBlueprintProxy.ARSaveWorld(Final|Native|Static|Public|BlueprintCallable) // <Game+0x2ee4510>
+	struct Unknown ARSaveWorld(struct Unknown WorldContextObject); // Function AugmentedReality.ARSaveWorldAsyncTaskBlueprintProxy.ARSaveWorld(Final|Native|Static|Public|BlueprintCallable) // <Game+0x2eef280>
 };
 
 // Class AugmentedReality.ARGetCandidateObjectAsyncTaskBlueprintProxy
-struct UARGetCandidateObjectAsyncTaskBlueprintProxy : UARBaseAsyncTaskBlueprintPro {
+struct UARGetCandidateObjectAsyncTaskBlueprintProxy : UARBaseAsyncTaskBlueprintProxy {
 	struct FMulticastInlineDelegate OnSuccess; //  0x50 Size(10)
 	struct FMulticastInlineDelegate OnFailed; //  0x60 Size(10)
 
-	Unknown ARGetCandidateObject(Unknown WorldContextObject, Unknown Location, Unknown Extent); // Function AugmentedReality.ARGetCandidateObjectAsyncTaskBlueprintProxy.ARGetCandidateObject(Final|Native|Static|Public|HasDefaults|BlueprintCallable) // <Game+0x2ee43f0>
+	struct Unknown ARGetCandidateObject(struct Unknown WorldContextObject, struct Unknown Location, struct Unknown Extent); // Function AugmentedReality.ARGetCandidateObjectAsyncTaskBlueprintProxy.ARGetCandidateObject(Final|Native|Static|Public|HasDefaults|BlueprintCallable) // <Game+0x2eef160>
 };
 
 // Class AugmentedReality.ARPin
 struct UARPin : Object {
-	Unknown TrackedGeometry; //  0x28 Size(8)
-	Unknown PinnedComponent; //  0x30 Size(8)
-	Unknown LocalToTrackingTransform; //  0x40 Size(30)
-	Unknown LocalToAlignedTrackingTransform; //  0x70 Size(30)
-	Unknown TrackingState; //  0xa0 Size(1)
+	struct Unknown TrackedGeometry; //  0x28 Size(8)
+	struct Unknown PinnedComponent; //  0x30 Size(8)
+	struct Unknown LocalToTrackingTransform; //  0x40 Size(30)
+	struct Unknown LocalToAlignedTrackingTrans; //  0x70 Size(30)
+	enum class Unknow TrackingState; //  0xa0 Size(1)
 	struct FMulticastInlineDelegate OnARTrackingStateChanged; //  0xc0 Size(10)
 	struct FMulticastInlineDelegate OnARTransformUpdated; //  0xd0 Size(10)
 
-	Unknown GetTrackingState(); // Function AugmentedReality.ARPin.GetTrackingState(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x2ee5690>
+	enum class Unknow GetTrackingState(); // Function AugmentedReality.ARPin.GetTrackingState(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x2ef0400>
 };
 
 // Class AugmentedReality.ARSharedWorldGameMode
 struct AARSharedWorldGameMode : AGameMode {
 	int32_t BufferSizePerChunk; //  0x3f8 Size(4)
 
-	void SetPreviewImageData(Unknown ImageData); // Function AugmentedReality.ARSharedWorldGameMode.SetPreviewImageData(Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <Game+0x2eeb430>
+	void SetPreviewImageData(struct TArray<Unknown> ImageData); // Function AugmentedReality.ARSharedWorldGameMode.SetPreviewImageData(Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <Game+0x2ef61b0>
 };
 
 // Class AugmentedReality.ARSharedWorldGameState
 struct AARSharedWorldGameState : AGameState {
-	Unknown PreviewImageData; //  0x380 Size(10)
-	Unknown ARWorldData; //  0x390 Size(10)
+	struct TArray<Unknown> PreviewImage; //  0x380 Size(10)
+	struct TArray<Unknown> ARWorldData; //  0x390 Size(10)
 	int32_t PreviewImageBytesTotal; //  0x3a0 Size(4)
 	int32_t ARWorldBytesTotal; //  0x3a4 Size(4)
 	int32_t PreviewImageBytesDelivered; //  0x3a8 Size(4)
-	int32_t ARWorldBytesDelivered; //  0x3ac Size(4)
+	int32_t ARWorldBytes; //  0x3ac Size(4)
 
-	void K2_OnARWorldMapIsReady(); // Function AugmentedReality.ARSharedWorldGameState.K2_OnARWorldMapIsReady(Event|Public|BlueprintEvent) // <Game+0x23a73f0>
+	void K2_OnARWorldMapIsReady(); // Function AugmentedReality.ARSharedWorldGameState.K2_OnARWorldMapIsReady(Event|Public|BlueprintEvent) // <Game+0x23b1e70>
 };
 
 // Class AugmentedReality.ARSkyLight
 struct AARSkyLight : ASkyLight {
-	Unknown CaptureProbe; //  0x320 Size(8)
+	struct Unknown CaptureProbe; //  0x320 Size(8)
 
-	void SetEnvironmentCaptureProbe(Unknown InCaptureProbe); // Function AugmentedReality.ARSkyLight.SetEnvironmentCaptureProbe(Final|Native|Public|BlueprintCallable) // <Game+0x2eeb3b0>
+	void SetEnvironmentCaptureProbe(struct Unknown InCaptureProbe); // Function AugmentedReality.ARSkyLight.SetEnvironmentCaptureProbe(Final|Native|Public|BlueprintCallable) // <Game+0x2ef6130>
 };
 
 // Class AugmentedReality.ARTexture
 struct UARTexture : UTexture {
-	Unknown TextureType; //  0xb8 Size(1)
+	enum class Unknow TextureType; //  0xb8 Size(1)
 	float Timestamp; //  0xbc Size(4)
-	Unknown ExternalTextureGuid; //  0xc0 Size(10)
-	Unknown Size; //  0xd0 Size(8)
+	struct Unknown ExternalTextureGuid; //  0xc0 Size(10)
+	struct Unknown Size; //  0xd0 Size(8)
 };
 
 // Class AugmentedReality.ARTextureCameraDepth
 struct UARTextureCameraDepth : UARTexture {
-	Unknown DepthQuality; //  0xd8 Size(1)
-	Unknown DepthAccuracy; //  0xd9 Size(1)
+	enum class Unknow DepthQuality; //  0xd8 Size(1)
+	enum class Unknow DepthAccuracy; //  0xd9 Size(1)
 	char bIsTemporallySmoothed; //  0xda Size(1)
 };
 
 // Class AugmentedReality.AREnvironmentCaptureProbeTexture
 struct UAREnvironmentCaptureProbeTexture : UTextureCube {
-	Unknown TextureType; //  0x110 Size(1)
+	enum class Unknow TextureType; //  0x110 Size(1)
 	float Timestamp; //  0x114 Size(4)
-	Unknown ExternalTextureGuid; //  0x118 Size(10)
-	Unknown Size; //  0x128 Size(8)
+	struct Unknown ExternalTextureGuid; //  0x118 Size(10)
+	struct Unknown Size; //  0x128 Size(8)
 };
 
 // Class AugmentedReality.ARTrackedGeometry
 struct UARTrackedGeometry : Object {
-	Unknown UniqueID; //  0x28 Size(10)
-	Unknown LocalToTrackingTransform; //  0x40 Size(30)
-	Unknown LocalToAlignedTrackingTransform; //  0x70 Size(30)
-	Unknown TrackingState; //  0xa0 Size(1)
-	Unknown UnderlyingMesh; //  0xb0 Size(8)
-	Unknown ObjectClassification; //  0xb8 Size(1)
+	struct Unknown UniqueID; //  0x28 Size(10)
+	struct Unknown LocalToTrackingTransform; //  0x40 Size(30)
+	struct Unknown LocalToAlignedTrackingTrans; //  0x70 Size(30)
+	enum class Unknow TrackingState; //  0xa0 Size(1)
+	struct Unknown UnderlyingMesh; //  0xb0 Size(8)
+	enum class Unknow ObjectClassification; //  0xb8 Size(1)
 	int32_t LastUpdateFrameNumber; //  0xd0 Size(4)
 	struct FName DebugName; //  0xe0 Size(8)
 
-	char IsTracked(); // Function AugmentedReality.ARTrackedGeometry.IsTracked(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x2eeb220>
+	char IsTracked(); // Function AugmentedReality.ARTrackedGeometry.IsTracked(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x2ef5fa0>
 };
 
 // Class AugmentedReality.ARPlaneGeometry
 struct UARPlaneGeometry : UARTrackedGeometry {
-	Unknown Orientation; //  0xe8 Size(1)
-	Unknown Center; //  0xec Size(c)
-	Unknown Extent; //  0xf8 Size(c)
-	Unknown SubsumedBy; //  0x118 Size(8)
+	enum class Unknow Orientation; //  0xe8 Size(1)
+	struct Unknown Center; //  0xec Size(c)
+	struct Unknown Extent; //  0xf8 Size(c)
+	struct Unknown SubsumedBy; //  0x118 Size(8)
 
-	Unknown GetSubsumedBy(); // Function AugmentedReality.ARPlaneGeometry.GetSubsumedBy(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x2eeb0f0>
+	struct Unknown GetSubsumedBy(); // Function AugmentedReality.ARPlaneGeometry.GetSubsumedBy(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x2ef5e70>
 };
 
 // Class AugmentedReality.ARTrackedImage
 struct UARTrackedImage : UARTrackedGeometry {
-	Unknown DetectedImage; //  0xe8 Size(8)
-	Unknown EstimatedSize; //  0xf0 Size(8)
+	struct Unknown DetectedImage; //  0xe8 Size(8)
+	struct Unknown EstimatedSize; //  0xf0 Size(8)
 
-	Unknown GetEstimateSize(); // Function AugmentedReality.ARTrackedImage.GetEstimateSize(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure) // <Game+0x2eeaea0>
+	struct Unknown GetEstimateSize(); // Function AugmentedReality.ARTrackedImage.GetEstimateSize(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure) // <Game+0x2ef5c20>
 };
 
 // Class AugmentedReality.ARTrackedQRCode
@@ -439,25 +439,25 @@ struct UARTrackedQRCode : UARTrackedImage {
 
 // Class AugmentedReality.ARFaceGeometry
 struct UARFaceGeometry : UARTrackedGeometry {
-	Unknown LookAtTarget; //  0xe8 Size(c)
+	struct Unknown LookAtTarget; //  0xe8 Size(c)
 	char bIsTracked; //  0xf4 Size(1)
-	Unknown BlendShapes; //  0xf8 Size(50)
+	struct TMap<{}, {}>Unknown BlendShapes; //  0xf8 Size(50)
 
-	Unknown GetWorldSpaceEyeTransform(Unknown Eye); // Function AugmentedReality.ARFaceGeometry.GetWorldSpaceEyeTransform(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game+0x2eeb170>
+	struct Unknown GetWorldSpaceEyeTransform(enum class Unknow Eye); // Function AugmentedReality.ARFaceGeometry.GetWorldSpaceEyeTransform(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game+0x2ef5ef0>
 };
 
 // Class AugmentedReality.AREnvironmentCaptureProbe
 struct UAREnvironmentCaptureProbe : UARTrackedGeometry {
-	Unknown EnvironmentCaptureTexture; //  0xf8 Size(8)
+	struct Unknown EnvironmentCaptureTexture; //  0xf8 Size(8)
 
-	Unknown GetExtent(); // Function AugmentedReality.AREnvironmentCaptureProbe.GetExtent(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game+0x2eeaee0>
+	struct Unknown GetExtent(); // Function AugmentedReality.AREnvironmentCaptureProbe.GetExtent(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game+0x2ef5c60>
 };
 
 // Class AugmentedReality.ARTrackedObject
 struct UARTrackedObject : UARTrackedGeometry {
-	Unknown DetectedObject; //  0xe8 Size(8)
+	struct Unknown DetectedObject; //  0xe8 Size(8)
 
-	Unknown GetDetectedObject(); // Function AugmentedReality.ARTrackedObject.GetDetectedObject(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x2eeae50>
+	struct Unknown GetDetectedObject(); // Function AugmentedReality.ARTrackedObject.GetDetectedObject(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x2ef5bd0>
 };
 
 // Class AugmentedReality.ARTrackableNotifyComponent
@@ -487,10 +487,10 @@ struct UARTrackableNotifyComponent : UActorComponent {
 
 // Class AugmentedReality.ARCandidateObject
 struct UARCandidateObject : UDataAsset {
-	Unknown CandidateObjectData; //  0x30 Size(10)
+	struct TArray<Unknown> CandidateObjectData; //  0x30 Size(10)
 	struct FString FriendlyName; //  0x40 Size(10)
-	Unknown BoundingBox; //  0x50 Size(1c)
+	struct Unknown BoundingBox; //  0x50 Size(1c)
 
-	void SetFriendlyName(struct FString NewName); // Function AugmentedReality.ARCandidateObject.SetFriendlyName(Final|Native|Public|BlueprintCallable) // <Game+0x2eedab0>
+	void SetFriendlyName(struct FString NewName); // Function AugmentedReality.ARCandidateObject.SetFriendlyName(Final|Native|Public|BlueprintCallable) // <Game+0x2ef8830>
 };
 

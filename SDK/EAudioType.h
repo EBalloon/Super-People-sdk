@@ -1,4 +1,4 @@
-// UserDefinedEnum EAudioType.EAudioType
+// User EAudioType.EAudioType
 enum class EAudioType : uint8 {
 	EAudioType = 0,
 	EAudioType = 1,

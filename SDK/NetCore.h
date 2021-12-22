@@ -1,5 +1,5 @@
 // Class NetCore.NetAnalyticsAggregatorConfig
 struct UNetAnalyticsAggregatorConfig : Object {
-	Unknown NetAnalyticsData; //  0x28 Size(10)
+	struct TArray<Unknown> NetAnalytics; //  0x28 Size(10)
 };
 

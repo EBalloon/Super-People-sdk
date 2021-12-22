@@ -1,4 +1,4 @@
-// UserDefinedEnum ENiagaraCoordinateSpace.ENiagaraCoordinateSpace
+// User ENiagaraCoordinateSpace.ENiagaraCoordinateSpace
 enum class ENiagaraCoordinateSpace : uint8 {
 	ENiagaraCoordinateSpace = 0,
 	ENiagaraCoordinateSpace = 1,

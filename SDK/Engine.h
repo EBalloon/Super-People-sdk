@@ -309,8 +309,8 @@ enum class EDetachmentRule : uint8 {
 	EDetachmentRule = 2
 };
 
-// Enum Engine.ENetDormancy
-enum class ENetDormancy : uint8 {
+// Enum Engine.ENet
+enum class ENet : uint8 {
 	DORM_Never = 0,
 	DORM_Awake = 1,
 	DORM_DormantAll = 2,
@@ -403,7 +403,7 @@ enum class ECollisionChannel : uint8 {
 	ECC_Camera = 4,
 	ECC_PhysicsBody = 5,
 	ECC_Vehicle = 6,
-	ECC_Destructible = 7,
+	ECC_ = 7,
 	ECC_EngineTraceChannel1 = 8,
 	ECC_EngineTraceChannel2 = 9,
 	ECC_EngineTraceChannel3 = 10,
@@ -613,7 +613,7 @@ enum class EBloomMethod : uint8 {
 
 // Enum Engine.EPhysicalSurface
 enum class EPhysicalSurface : uint8 {
-	SurfaceType_Default = 0,
+	SurfaceType_ = 0,
 	SurfaceType1 = 1,
 	SurfaceType2 = 2,
 	SurfaceType3 = 3,
@@ -680,13 +680,13 @@ enum class EPhysicalSurface : uint8 {
 	EPhysicalSurface_MAX = 64
 };
 
-// Enum Engine.EFastArraySerializerDeltaFlags
-enum class EFastArraySerializerDeltaFlags : uint8 {
-	EFastArraySerializerDeltaFlags = 0,
-	EFastArraySerializerDeltaFlags = 1,
-	EFastArraySerializerDeltaFlags = 2,
-	EFastArraySerializerDeltaFlags = 4,
-	EFastArraySerializerDeltaFlags = 5
+// Enum Engine.EFastArraySerializer
+enum class EFastArraySerializer : uint8 {
+	EFastArraySerializerDeltaFlagsi = 0,
+	EFastArraySerializer = 1,
+	EFastArraySerializer = 2,
+	EFastArraySerializer = 4,
+	EFastArraySerializer = 5
 };
 
 // Enum Engine.ERadialImpulseFalloff
@@ -698,14 +698,14 @@ enum class ERadialImpulseFalloff : uint8 {
 
 // Enum Engine.EBlendMode
 enum class EBlendMode : uint8 {
-	BLEND_Opaque = 0,
-	BLEND_Masked = 1,
-	BLEND_Translucent = 2,
-	BLEND_Additive = 3,
-	BLEND_Modulate = 4,
-	BLEND_AlphaComposite = 5,
-	BLEND_AlphaHoldout = 6,
-	BLEND_MAX = 7
+	BLEN = 0,
+	BLEN = 1,
+	BLEN = 2,
+	BLEN = 3,
+	BLEN = 4,
+	BLEN = 5,
+	BLEN = 6,
+	BLEN = 7
 };
 
 // Enum Engine.ERichCurveExtrapolation
@@ -763,7 +763,7 @@ enum class ECollisionResponse : uint8 {
 	ECR_MAX = 3
 };
 
-// Enum Engine.EWalkableSlopeBehav1
+// Enum Engine.EWalkableSlopeBehavQue
 enum class EWalkableSlopeBehav : uint8 {
 	WalkableSlope_Default = 0,
 	WalkableSlope_Increase = 1,
@@ -850,9 +850,9 @@ enum class EIndirectLightingCacheQuality : uint8 {
 
 // Enum Engine.ESceneDepthPriorityGroup
 enum class ESceneDepthPriorityGroup : uint8 {
-	SDPG_World = 0,
-	SDPG_Foreground = 1,
-	SDPG_MAX = 2
+	SDPG = 0,
+	SDPG = 1,
+	SDPG = 2
 };
 
 // Enum Engine.EAlphaBlendOption
@@ -885,11 +885,11 @@ enum class EAnimGroupRole : uint8 {
 	EAnimGroupRole = 5
 };
 
-// Enum Engine.EPreviewAnimationBlueprintApplicationMethod
-enum class EPreviewAnimationBlueprintApplicationMethod : uint8 {
-	EPreviewAnimationBlueprintApplicationMethod = 0,
-	EPreviewAnimationBlueprintApplicationMethod = 1,
-	EPreviewAnimationBlueprintApplicationMethod = 2
+// Enum Engine.EPreviewAnimationBlueprintAppli
+enum class EPreviewAnimationBlueprintAppli : uint8 {
+	EPreviewAnimationBlueprintAppli = 0,
+	EPreviewAnimationBlueprintAppli = 1,
+	EPreviewAnimationBlueprintAppli = 2
 };
 
 // Enum Engine.AnimationKeyFormat
@@ -912,7 +912,7 @@ enum class ERawCurveTrackTypes : uint8 {
 enum class EAnimAssetCurveFlags : uint8 {
 	AACF_NONE = 0,
 	AACF_DriveMorphTarget_DEPRECATED = 1,
-	AACF_DriveAttribute_DEPRECATED = 2,
+	AACF_DriveAttribute_DRCT_Float = 2,
 	AACF_Editable = 4,
 	AACF_DriveMaterial_DEPRECATED = 8,
 	AACF_Metadata = 16,
@@ -1226,15 +1226,15 @@ enum class EAttenuationShape : uint8 {
 	EAttenuationShape = 4
 };
 
-// Enum Engine.EAttenuationDistanceModel
-enum class EAttenuationDistanceModel : uint8 {
-	EAttenuationDistanceModel = 0,
-	EAttenuationDistanceModel = 1,
-	EAttenuationDistanceModel = 2,
-	EAttenuationDistanceModel = 3,
-	EAttenuationDistanceModel = 4,
-	EAttenuationDistanceModel = 5,
-	EAttenuationDistanceModel = 6
+// Enum Engine.EAttenuationDe
+enum class EAttenuation : uint8 {
+	EAttenuation = 0,
+	EAttenuation = 1,
+	EAttenuation = 2,
+	EAttenuation = 3,
+	EAttenuation = 4,
+	EAttenuation = 5,
+	EAttenuation = 6
 };
 
 // Enum Engine.EAudioFaderCurve
@@ -1390,7 +1390,7 @@ enum class ECsgOper : uint8 {
 	CSG_Add = 1,
 	CSG_Subtract = 2,
 	CSG_Intersect = 3,
-	CSG_Deintersect = 4,
+	CSG_ = 4,
 	CSG_None = 5,
 	CSG_MAX = 6
 };
@@ -1435,10 +1435,10 @@ enum class ECloudStorageDelegate : uint8 {
 	CSD_KeyValueReadComplete = 0,
 	CSD_KeyValueWriteComplete = 1,
 	CSD_ValueChanged = 2,
-	CSD_DocumentQueryComplete = 3,
-	CSD_DocumentReadComplete = 4,
-	CSD_DocumentWriteComplete = 5,
-	CSD_DocumentConflictDetected = 6,
+	CSD_ = 3,
+	CSD_ = 4,
+	CSD_ = 5,
+	CSD_ = 6,
 	CSD_MAX = 7
 };
 
@@ -1492,7 +1492,7 @@ enum class EGrammaticalGender : uint8 {
 enum class DistributionParamMode : uint8 {
 	DPM_Normal = 0,
 	DPM_Abs = 1,
-	DPM_Direct = 2,
+	DPM_ = 2,
 	DPM_MAX = 3
 };
 
@@ -1549,8 +1549,8 @@ enum class EPinContainerType : uint8 {
 	EPinContainerType = 4
 };
 
-// Enum Engine.EEdGraphPinDirection
-enum class EEdGraphPinDirection : uint8 {
+// Enum Engine.EEdG
+enum class EEdG : uint8 {
 	EGPD_Input = 0,
 	EGPD_Output = 1,
 	EGPD_MAX = 2
@@ -1563,8 +1563,8 @@ enum class EBlueprintPinStyleType : uint8 {
 	BPST_MAX = 2
 };
 
-// Enum Engine.ECanCreateConnectionResponse
-enum class ECanCreateConnectionResponse : uint8 {
+// Enum Engine.ECanCreateConnectionRespons
+enum class ECanCreateConnectionRespons : uint8 {
 	CONNECT_RESPONSE_MAKE = 0,
 	CONNECT_RESPONSE_DISALLOW = 1,
 	CONNECT_RESPONSE_BREAK_OTHERS_A = 2,
@@ -1600,7 +1600,7 @@ enum class ETransitionType : uint8 {
 enum class EFullyLoadPackageType : uint8 {
 	FULLYLOAD_Map = 0,
 	FULLYLOAD_Game_PreLoadClass = 1,
-	FULLYLOAD_Game_PostLoadClass = 2,
+	FULLYLOAD_Game_PostLoadClas = 2,
 	FULLYLOAD_Always = 3,
 	FULLYLOAD_Mutator = 4,
 	FULLYLOAD_MAX = 5
@@ -1616,7 +1616,7 @@ enum class EViewModeIndex : uint8 {
 	VMI_LightingOnly = 5,
 	VMI_LightComplexity = 6,
 	VMI_ShaderComplexity = 8,
-	VMI_LightmapDensity = 9,
+	VMI_Lightmap = 9,
 	VMI_LitLightmapDensity = 10,
 	VMI_ReflectionOverride = 11,
 	VMI_VisualizeBuffer = 12,
@@ -1804,17 +1804,17 @@ enum class EMaterialSamplerType : uint8 {
 	SAMPLERTYPE_Alpha = 2,
 	SAMPLERTYPE_Normal = 3,
 	SAMPLERTYPE_Masks = 4,
-	SAMPLERTYPE_DistanceFieldFo = 5,
+	SAMPLERTYPE_ = 5,
 	SAMPLERTYPE_LinearColor = 6,
 	SAMPLERTYPE_LinearGrayscale = 7,
-	SAMPLERTYPE_Data = 8,
+	SAMPLERTYPE_ = 8,
 	SAMPLERTYPE_External = 9,
 	SAMPLERTYPE_VirtualColor = 10,
 	SAMPLERTYPE_VirtualGrayscale = 11,
 	SAMPLERTYPE_VirtualAlpha = 12,
 	SAMPLERTYPE_VirtualNormal = 13,
 	SAMPLERTYPE_VirtualMasks = 14,
-	SAMPLERTYPE_VirtualLinearCo = 15,
+	SAMPLERTYPE_VirtualLinearColor = 15,
 	SAMPLERTYPE_VirtualLinearGrayscale = 16,
 	SAMPLERTYPE_MAX = 17
 };
@@ -1830,7 +1830,7 @@ enum class EMaterialTessellationMode : uint8 {
 // Enum Engine.EMaterialShadingModel
 enum class EMaterialShadingModel : uint8 {
 	MSM_Unlit = 0,
-	MSM_DefaultLit = 1,
+	MSM_ = 1,
 	MSM_Subsurface = 2,
 	MSM_PreintegratedSkin = 3,
 	MSM_ClearCoat = 4,
@@ -1886,7 +1886,7 @@ enum class ESceneCaptureSource : uint8 {
 	SCS_FinalColorLDR = 2,
 	SCS_SceneColorSceneDepth = 3,
 	SCS_SceneDepth = 4,
-	SCS_DeviceDepth = 5,
+	SCS_ = 5,
 	SCS_Normal = 6,
 	SCS_BaseColor = 7,
 	SCS_FinalColorHDR = 8,
@@ -2156,16 +2156,16 @@ enum class EDecalBlendMode : uint8 {
 	DBM_Stain = 1,
 	DBM_Normal = 2,
 	DBM_Emissive = 3,
-	DBM_DBuffer_ColorNormalRoughness = 4,
-	DBM_DBuffer_Color = 5,
-	DBM_DBuffer_ColorNormal = 6,
-	DBM_DBuffer_ColorRoughness = 7,
-	DBM_DBuffer_Normal = 8,
-	DBM_DBuffer_NormalRoughness = 9,
-	DBM_DBuffer_Roughness = 10,
-	DBM_DBuffer_Emissiv = 11,
-	DBM_DBuffer_AlphaComposite = 12,
-	DBM_DBuffer_Emissiv = 13,
+	DBM_ = 4,
+	DBM_ = 5,
+	DBM_ = 6,
+	DBM_ = 7,
+	DBM_ = 8,
+	DBM_ = 9,
+	DBM_ = 10,
+	DBM_ = 11,
+	DBM_ = 12,
+	DBM_ = 13,
 	DBM_Volumetric_DistanceFunction = 14,
 	DBM_AlphaComposite = 15,
 	DBM_AmbientOcclusion = 16,
@@ -2266,11 +2266,11 @@ enum class EMaterialSceneAttributeInputMode : uint8 {
 	EMaterialSceneAttributeInputMode = 2
 };
 
-// Enum Engine.ESpeedTreeLODType
-enum class ESpeedTreeLODType : uint8 {
-	STLOD_Pop = 0,
-	STLOD_Smooth = 1,
-	STLOD_MAX = 2
+// Enum Engine.ESpeedTreeLODe
+enum class ESpeedTreeLO : uint8 {
+	STLO = 0,
+	STLO = 1,
+	STLO = 2
 };
 
 // Enum Engine.ESpeedTreeWindType
@@ -2311,8 +2311,8 @@ enum class ETextureMipValueMode : uint8 {
 	TMVM_MAX = 4
 };
 
-// Enum Engine.EMaterialVectorCoordTransfo
-enum class EMaterialVectorCoordTransfo : uint8 {
+// Enum Engine.EMaterialVectorCoordTransform
+enum class EMaterialVectorCoordTransform : uint8 {
 	TRANSFORM_Tangent = 0,
 	TRANSFORM_Local = 1,
 	TRANSFORM_World = 2,
@@ -2322,8 +2322,8 @@ enum class EMaterialVectorCoordTransfo : uint8 {
 	TRANSFORM_MAX = 6
 };
 
-// Enum Engine.EMaterialVectorCoordTransfo
-enum class EMaterialVectorCoordTransfo : uint8 {
+// Enum Engine.EMaterialVectorCoordTransformSource
+enum class EMaterialVectorCoordTransformSource : uint8 {
 	TRANSFORMSOURCE_Tangent = 0,
 	TRANSFORMSOURCE_Local = 1,
 	TRANSFORMSOURCE_World = 2,
@@ -2374,7 +2374,7 @@ enum class EMaterialExposedViewProperty : uint8 {
 
 // Enum Engine.EWorldPositionIncludedOffsets
 enum class EWorldPositionIncludedOffsets : uint8 {
-	WPT_Default = 0,
+	WPT_ = 0,
 	WPT_ExcludeAllShaderOffsets = 1,
 	WPT_CameraRelative = 2,
 	WPT_CameraRelativeNoOffsets = 3,
@@ -2398,7 +2398,7 @@ enum class EMaterialUsage : uint8 {
 	MATUSAGE_StaticLighting = 4,
 	MATUSAGE_MorphTargets = 5,
 	MATUSAGE_SplineMesh = 6,
-	MATUSAGE_InstancedStaticMeshes = 7,
+	MATUSAGE_InstancedStaticMes = 7,
 	MATUSAGE_GeometryCollections = 8,
 	MATUSAGE_Clothing = 9,
 	MATUSAGE_NiagaraSprites = 10,
@@ -2415,7 +2415,7 @@ enum class EMaterialUsage : uint8 {
 enum class EMaterialParameterAssociation : uint8 {
 	LayerParameter = 0,
 	BlendParameter = 1,
-	Globd = 2,
+	GlobalParameter = 2,
 	EMaterialParameterAssociation_MAX = 3
 };
 
@@ -2439,7 +2439,7 @@ enum class ETextureSizingType : uint8 {
 enum class ESceneTextureId : uint8 {
 	PPI_SceneColor = 0,
 	PPI_SceneDepth = 1,
-	PPI_DiffuseColor = 2,
+	PPI_ = 2,
 	PPI_SpecularColor = 3,
 	PPI_SubsurfaceColor = 4,
 	PPI_BaseColor = 5,
@@ -2458,7 +2458,7 @@ enum class ESceneTextureId : uint8 {
 	PPI_PostProcessInput4 = 18,
 	PPI_PostProcessInput5 = 19,
 	PPI_PostProcessInput6 = 20,
-	PPI_DecalMask = 21,
+	PPI_ = 21,
 	PPI_ShadingModelColor = 22,
 	PPI_ShadingModelID = 23,
 	PPI_AmbientOcclusion = 24,
@@ -2685,20 +2685,20 @@ enum class ENavPathEvent : uint8 {
 	ENavPathEvent = 8
 };
 
-// Enum Engine.ENavDataGatheringModeConfig
-enum class ENavDataGatheringModeConfig : uint8 {
-	ENavDataGatheringModeConfig = 0,
-	ENavDataGatheringModeConfig = 1,
-	ENavDataGatheringModeConfig = 2,
-	ENavDataGatheringModeConfig = 3
+// Enum Engine.ENav
+enum class ENav : uint8 {
+	ENav = 0,
+	ENav = 1,
+	ENav = 2,
+	ENav = 3
 };
 
-// Enum Engine.ENavDataGatheringMode
-enum class ENavDataGatheringMode : uint8 {
-	ENavDataGatheringMode = 0,
-	ENavDataGatheringMode = 1,
-	ENavDataGatheringMode = 2,
-	ENavDataGatheringMode = 3
+// Enum Engine.ENav
+enum class ENav : uint8 {
+	ENav = 0,
+	ENav = 1,
+	ENav = 2,
+	ENav = 3
 };
 
 // Enum Engine.ENavigationOptionFlag
@@ -2853,8 +2853,8 @@ enum class EParticleCollisionResponse : uint8 {
 	EParticleCollisionResponse = 3
 };
 
-// Enum Engine.ELocationBoneSocketSelectio
-enum class ELocationBoneSocketSelectio : uint8 {
+// Enum Engine.ELocationBoneSocketSelectionMethod
+enum class ELocationBoneSocketSelectionMethod : uint8 {
 	BONESOCKETSEL_Sequential = 0,
 	BONESOCKETSEL_Random = 1,
 	BONESOCKETSEL_MAX = 2
@@ -2889,8 +2889,8 @@ enum class ELocationSkelVertSurfaceSource : uint8 {
 	VERTSURFACESOURCE_MAX = 2
 };
 
-// Enum Engine.EOrb
-enum class EOrbd : uint8 {
+// Enum Engine.EOrbitChainMode
+enum class EOrbitChainMode : uint8 {
 	EOChainMode_Add = 0,
 	EOChainMode_Scale = 1,
 	EOChainMode_Link = 2,
@@ -2984,7 +2984,7 @@ enum class EMeshCameraFacingOptions : uint8 {
 	XAxisFacing_ZUp = 1,
 	XAxisFacing_Negativ = 2,
 	XAxisFacing_YUp = 3,
-	XAxisFacing_Negativ = 4,
+	XAxisFacing_NegativStat = 4,
 	LockedAxis_ZAxisFacing = 5,
 	LockedAxis_NegativeZAxisFacing = 6,
 	LockedAxis_YAxisFacing = 7,
@@ -3070,7 +3070,7 @@ enum class EParticleEventType : uint8 {
 
 // Enum Engine.ParticleReplayState
 enum class ParticleReplayState : uint8 {
-	PRS_Disabled = 0,
+	PRS_ = 0,
 	PRS_Capturing = 1,
 	PRS_Replaying = 2,
 	PRS_MAX = 3
@@ -3168,13 +3168,13 @@ enum class ECustomDepthStencil : uint8 {
 	ECustomDepthStencil = 4
 };
 
-// Enum Engine.EMob
-enum class EMobd : uint8 {
-	EMob = 1,
-	EMobd = 2,
-	EMobd = 4,
-	EMobd = 8,
-	EMobd = 9
+// Enum Engine.EMobileMSAASampleCount
+enum class EMobileMSAASampleCount : uint8 {
+	EMobileMSAASampleCount = 1,
+	EMobileMSAASampleCount = 2,
+	EMobileMSAASampleCount = 4,
+	EMobileMSAASampleCount = 8,
+	EMobileMSAASampleCount = 9
 };
 
 // Enum Engine.ECompositingSampleCount
@@ -3251,8 +3251,8 @@ enum class ReverbPreset : uint8 {
 	REVERB_MAX = 23
 };
 
-// Enum Engine.ERichCurveKeyTimeCompressio
-enum class ERichCurveKeyTimeCompressio : uint8 {
+// Enum Engine.ERichCurveKeyTimeCompressionFormat
+enum class ERichCurveKeyTimeCompressionFormat : uint8 {
 	RCKTCF_uint16 = 0,
 	RCKTCF_float32 = 1,
 	RCKTCF_MAX = 2
@@ -3282,12 +3282,12 @@ enum class EControlConstraint : uint8 {
 	EControlConstraint = 2
 };
 
-// Enum Engine.ERootMotionFinishVelocityMo
-enum class ERootMotionFinishVelocityMo : uint8 {
-	ERootMotionFinishVelocityMo = 0,
-	ERootMotionFinishVelocityMotion = 1,
-	ERootMotionFinishVelocityMo = 2,
-	ERootMotionFinishVelocityMotion = 3
+// Enum Engine.ERootMotionFinishVelocityMode
+enum class ERootMotionFinishVelocityMode : uint8 {
+	ERootMotionFinishVelocityMode = 0,
+	ERootMotionFinishVelocityMode = 1,
+	ERootMotionFinishVelocityMode = 2,
+	ERootMotionFinishVelocityMode = 3
 };
 
 // Enum Engine.ERootMotionSourceSettingsFlags
@@ -3425,11 +3425,11 @@ enum class EAnimationMode : uint8 {
 	EAnimationMode = 3
 };
 
-// Enum Engine.EKinematicBonesUpdateToPhysics
-enum class EKinematicBonesUpdateToPhysics : uint8 {
-	EKinematicBonesUpdateToPhysics = 0,
-	EKinematicBonesUpdateToPhysics = 1,
-	EKinematicBonesUpdateToPhysics = 2
+// Enum Engine.EKinematicBonesUpdateToPhys
+enum class EKinematicBonesUpdateToPhys : uint8 {
+	EKinematicBonesUpdateToPhys = 0,
+	EKinematicBonesUpdateToPhys = 1,
+	EKinematicBonesUpdateToPhys = 2
 };
 
 // Enum Engine.EClothMassMode
@@ -3558,7 +3558,7 @@ enum class ESkyAtmosphereTransformMode : uint8 {
 // Enum Engine.ESpecularOcclusionMode
 enum class ESpecularOcclusionMode : uint8 {
 	SOM_NonDirectional = 0,
-	SOM_DirectionalCones = 1,
+	SOM_ = 1,
 	SOM_Combine = 2,
 	SOM_Maximum = 3,
 	SOM_MAX = 4
@@ -3579,12 +3579,12 @@ enum class EPriorityAttenuationMethod : uint8 {
 	EPriorityAttenuationMethod = 3
 };
 
-// Enum Engine.ESub
-enum class ESubd : uint8 {
-	ESub = 0,
-	ESubd = 1,
-	ESubd = 2,
-	ESubd = 3
+// Enum Engine.ESubmixSendMethod
+enum class ESubmixSendMethod : uint8 {
+	ESubmixSendMethod = 0,
+	ESubmixSendMethod = 1,
+	ESubmixSendMethod = 2,
+	ESubmixSendMethod = 3
 };
 
 // Enum Engine.EReverbSendMethod
@@ -3611,11 +3611,11 @@ enum class ESoundSpatializationAlgorithm : uint8 {
 
 // Enum Engine.ESoundDistanceCalc
 enum class ESoundDistanceCalc : uint8 {
-	SOUNDDISTANCE_Normal = 0,
-	SOUNDDISTANCE_InfiniteXYPlane = 1,
-	SOUNDDISTANCE_InfiniteXZPlane = 2,
-	SOUNDDISTANCE_InfiniteYZPlane = 3,
-	SOUNDDISTANCE_MAX = 4
+	SOUN = 0,
+	SOUN = 1,
+	SOUN = 2,
+	SOUN = 3,
+	SOUN = 4
 };
 
 // Enum Engine.EVirtualizationMode
@@ -3641,39 +3641,39 @@ enum class EMaxConcurrentResolutionRule : uint8 {
 
 // Enum Engine.ESoundGroup
 enum class ESoundGroup : uint8 {
-	SOUNDGROUP_Default = 0,
-	SOUNDGROUP_Effects = 1,
-	SOUNDGROUP_UI = 2,
-	SOUNDGROUP_Music = 3,
-	SOUNDGROUP_Voice = 4,
-	SOUNDGROUP_GameSoundGroup1 = 5,
-	SOUNDGROUP_GameSoundGroup2 = 6,
-	SOUNDGROUP_GameSoundGroup3 = 7,
-	SOUNDGROUP_GameSoundGroup4 = 8,
-	SOUNDGROUP_GameSoundGroup5 = 9,
-	SOUNDGROUP_GameSoundGroup6 = 10,
-	SOUNDGROUP_GameSoundGroup7 = 11,
-	SOUNDGROUP_GameSoundGroup8 = 12,
-	SOUNDGROUP_GameSoundGroup9 = 13,
-	SOUNDGROUP_GameSoundGroup10 = 14,
-	SOUNDGROUP_GameSoundGroup11 = 15,
-	SOUNDGROUP_GameSoundGroup12 = 16,
-	SOUNDGROUP_GameSoundGroup13 = 17,
-	SOUNDGROUP_GameSoundGroup14 = 18,
-	SOUNDGROUP_GameSoundGroup15 = 19,
-	SOUNDGROUP_GameSoundGroup16 = 20,
-	SOUNDGROUP_GameSoundGroup17 = 21,
-	SOUNDGROUP_GameSoundGroup18 = 22,
-	SOUNDGROUP_GameSoundGroup19 = 23,
-	SOUNDGROUP_GameSoundGroup20 = 24,
-	SOUNDGROUP_MAX = 25
+	SOUN = 0,
+	SOUN = 1,
+	SOUN = 2,
+	SOUN = 3,
+	SOUN = 4,
+	SOUN = 5,
+	SOUN = 6,
+	SOUN = 7,
+	SOUN = 8,
+	SOUN = 9,
+	SOUN = 10,
+	SOUN = 11,
+	SOUN = 12,
+	SOUN = 13,
+	SOUN = 14,
+	SOUN = 15,
+	SOUN = 16,
+	SOUN = 17,
+	SOUN = 18,
+	SOUN = 19,
+	SOUN = 20,
+	SOUN = 21,
+	SOUN = 22,
+	SOUN = 23,
+	SOUN = 24,
+	SOUN = 25
 };
 
 // Enum Engine.ModulationParamMode
 enum class ModulationParamMode : uint8 {
 	MPM_Normal = 0,
 	MPM_Abs = 1,
-	MPM_Direct = 2,
+	MPM_ = 2,
 	MPM_MAX = 3
 };
 
@@ -3822,8 +3822,8 @@ enum class EOpacitySourceMode : uint8 {
 	OSM_MAX = 5
 };
 
-// Enum Engine.ESub
-enum class ESubd : uint8 {
+// Enum Engine.ESubUVBoundingVertexCount
+enum class ESubUVBoundingVertexCount : uint8 {
 	BVC_FourVertices = 0,
 	BVC_EightVertices = 1,
 	BVC_MAX = 2
@@ -3846,8 +3846,8 @@ enum class EHorizTextAligment : uint8 {
 	EHTA_MAX = 3
 };
 
-// Enum Engine.ETextureLossyCompressionAmo
-enum class ETextureLossyCompressionAmo : uint8 {
+// Enum Engine.ETextureLossyCompressionAmount
+enum class ETextureLossyCompressionAmount : uint8 {
 	TLCA_Default = 0,
 	TLCA_None = 1,
 	TLCA_Lowest = 2,
@@ -3860,7 +3860,7 @@ enum class ETextureLossyCompressionAmo : uint8 {
 
 // Enum Engine.ETextureCompressionQuality
 enum class ETextureCompressionQuality : uint8 {
-	TCQ_Default = 0,
+	TCQ_ = 0,
 	TCQ_Lowest = 1,
 	TCQ_Low = 2,
 	TCQ_Medium = 3,
@@ -3901,7 +3901,7 @@ enum class ETextureMipCount : uint8 {
 
 // Enum Engine.ECompositeTextureMode
 enum class ECompositeTextureMode : uint8 {
-	CTM_Disabled = 0,
+	CTM_ = 0,
 	CTM_NormalRoughnessToRed = 1,
 	CTM_NormalRoughnessToGreen = 2,
 	CTM_NormalRoughnessToBlue = 3,
@@ -3922,14 +3922,14 @@ enum class TextureCompressionSettings : uint8 {
 	TC_Default = 0,
 	TC_Normalmap = 1,
 	TC_Masks = 2,
-	TC_Grayscale = 3,
+	TC_G = 3,
 	TC_Displacementmap = 4,
 	TC_VectorDisplacementmap = 5,
-	TC_HDR = 6,
+	TC_H = 6,
 	TC_EditorIcon = 7,
 	TC_Alpha = 8,
 	TC_DistanceFieldFont = 9,
-	TC_HDR_Compressed = 10,
+	TC_H = 10,
 	TC_BC7 = 11,
 	TC_MAX = 12
 };
@@ -4092,7 +4092,7 @@ enum class ETwitterIntegrationDelegate : uint8 {
 enum class ETwitterRequestMethod : uint8 {
 	TRM_Get = 0,
 	TRM_Post = 1,
-	TRM_Delete = 2,
+	TRM_ = 2,
 	TRM_MAX = 3
 };
 
@@ -4179,9 +4179,9 @@ enum class EVisibilityAggressiveness : uint8 {
 
 // Class Engine.ActorComponent
 struct UActorComponent : Object {
-	Unknown PrimaryComponentTick; //  0x30 Size(30)
-	Unknown ComponentTags; //  0x60 Size(10)
-	Unknown AssetUserData; //  0x70 Size(10)
+	struct Unknown PrimaryComponentTick; //  0x30 Size(30)
+	struct TArray<Unknown> ComponentTags; //  0x60 Size(10)
+	struct TArray<Unknown> AssetUserData; //  0x70 Size(10)
 	int32_t UCSSerializationIndex; //  0x84 Size(4)
 	char bNetAddressable; //  0x88 Size(1)
 	char bReplicates; //  0x88 Size(1)
@@ -4190,25 +4190,25 @@ struct UActorComponent : Object {
 	char bEditableWhenInherited; //  0x8a Size(1)
 	char bCanEverAffectNavigation; //  0x8a Size(1)
 	char bIsEditorOnly; //  0x8a Size(1)
-	Unknown CreationMethod; //  0x8c Size(1)
+	enum class Unknow CreationMethod; //  0x8c Size(1)
 	struct FMulticastSparseDelegate OnComponentActivated; //  0x8d Size(1)
 	struct FMulticastSparseDelegate OnComponentDeactivated; //  0x8e Size(1)
-	Unknown UCSModifiedProperties; //  0x90 Size(10)
+	struct TArray<Unknown> UCSModifiedProperties; //  0x90 Size(10)
 
-	void ToggleActive(); // Function Engine.ActorComponent.ToggleActive(Native|Public|BlueprintCallable) // <Game+0x337f170>
+	void ToggleActive(); // Function Engine.ActorComponent.ToggleActive(Native|Public|BlueprintCallable) // <Game+0x338a6d0>
 };
 
 // Class Engine.SceneComponent
 struct USceneComponent : UActorComponent {
-	Unknown PhysicsVolume; //  0x144 Size(8)
-	Unknown AttachParent; //  0x1d0 Size(8)
+	struct TWeakObjectPtr<struct Unknown> PhysicsVolume; //  0x144 Size(8)
+	struct Unknown AttachParent; //  0x1d0 Size(8)
 	struct FName AttachSocketName; //  0x1dc Size(8)
-	Unknown AttachChildren; //  0xb8 Size(10)
-	Unknown ClientAttachedChildren; //  0x190 Size(10)
-	Unknown RelativeLocation; //  0x224 Size(c)
-	Unknown RelativeRotation; //  0x1b4 Size(c)
-	Unknown RelativeScale3D; //  0x1c4 Size(c)
-	Unknown ComponentVelocity; //  0x164 Size(c)
+	struct TArray<Unknown> AttachChildren; //  0xb8 Size(10)
+	struct TArray<Unknown> ClientAttachedChildren; //  0x190 Size(10)
+	struct Unknown RelativeLocation; //  0x224 Size(c)
+	struct Unknown RelativeRotation; //  0x1b4 Size(c)
+	struct Unknown RelativeScale3D; //  0x1c4 Size(c)
+	struct Unknown ComponentVelocity; //  0x164 Size(c)
 	char bComponentToWorldUpdated; //  0x140 Size(1)
 	char bAbsoluteLocation; //  0x220 Size(1)
 	char bAbsoluteRotation; //  0x1d8 Size(1)
@@ -4219,31 +4219,31 @@ struct USceneComponent : UActorComponent {
 	char bShouldSnapRotationWhenAttached; //  0x188 Size(1)
 	char bShouldUpdatePhysicsVolume; //  0x1a0 Size(1)
 	char bHiddenInGame; //  0x220 Size(1)
-	char bBoundsChangeTriggersStreamingDataRebuild; //  0xc8 Size(1)
+	char bBoundsChangeTriggersStreamingDataRebui; //  0xc8 Size(1)
 	char bUseAttachParentBound; //  0x1d8 Size(1)
-	Unknown Mobility; //  0x221 Size(1)
-	Unknown DetailMode; //  0x160 Size(1)
-	struct FMulticastSparseDelegate PhysicsVolumeChangedDelegate; //  0xb0 Size(1)
+	char Mobility; //  0x221 Size(1)
+	char DetailMode; //  0x160 Size(1)
+	struct FMulticastSparseDelegate PhysicsVolumeChanged; //  0xb0 Size(1)
 
-	void ToggleVisibility(char bPropagateToChildren); // Function Engine.SceneComponent.ToggleVisibility(Final|Native|Public|BlueprintCallable) // <Game+0x3ddb810>
+	void ToggleVisibility(char bPropagateToChildren); // Function Engine.SceneComponent.ToggleVisibility(Final|Native|Public|BlueprintCallable) // <Game+0x3de8840>
 };
 
 // Class Engine.MKActorEx
 struct UMKActorEx : Object {
-	Unknown ReplaySamplable; //  0x28 Size(1)
-	Unknown ReplaySampleClass; //  0x30 Size(8)
+	char ReplaySamplable; //  0x28 Size(1)
+	struct Unknown* ReplaySampleClass; //  0x30 Size(8)
 	float ReplaySamplingFrequency; //  0x38 Size(4)
 	uint32_t ClientReplaySamplingGUID; //  0x3c Size(4)
 	char bReplayLevelAttached; //  0x44 Size(1)
-	Unknown ReplaySamplesForPlayback; //  0x68 Size(10)
-	Unknown SelfActor; //  0x88 Size(8)
+	struct TArray<Unknown> ReplaySamplesForPlayback; //  0x68 Size(10)
+	struct Unknown SelfActor; //  0x88 Size(8)
 
-	void OnTickReplaySampleRecord(Unknown DemoNetDriver, float MinRecordHz, float MaxRecordHz, char bSaveCheckpoint); // Function Engine.MKActorEx.OnTickReplaySampleRecord(Final|Native|Private) // <Game+0x3d88db0>
+	void OnTickReplaySampleRecord(struct Unknown DemoNetDriver, float MinRecordHz, float MaxRecordHz, char bSaveCheckpoint); // Function Engine.MKActorEx.OnTickReplaySampleRecord(Final|Native|Private) // <Game+0x3d957f0>
 };
 
 // Class Engine.Actor
 struct UActor : UMKActorEx {
-	Unknown PrimaryActorTick; //  0x1d8 Size(30)
+	struct Unknown PrimaryActorTick; //  0x1d8 Size(30)
 	char bNetTemporary; //  0x284 Size(1)
 	char bNetStartup; //  0x248 Size(1)
 	char bOnlyRelevantToOwner; //  0x1c4 Size(1)
@@ -4273,37 +4273,37 @@ struct UActor : UMKActorEx {
 	char bAllowReceiveTickEv; //  0x198 Size(1)
 	char bActorEnableCollision; //  0x1b8 Size(1)
 	char bActorIsBeingDestroyed; //  0x30e Size(1)
-	Unknown UpdateOverlapsMethodDuringLevelStreaming; //  0x154 Size(1)
-	Unknown DefaultUpdateOverlapsMethodDuringLevelStreaming; //  0xa3 Size(1)
-	Unknown RemoteRole; //  0x279 Size(1)
-	Unknown ReplicatedMovement; //  0xec Size(34)
+	enum class Unknow UpdateOverlapsMethod; //  0x154 Size(1)
+	enum class Unknow DefaultUpdateOverlapsMethodDuri; //  0xa3 Size(1)
+	char RemoteRole; //  0x279 Size(1)
+	struct Unknown ReplicatedMovement; //  0xec Size(34)
 	float InitialLifeSpan; //  0x2e0 Size(4)
 	float CustomTimeDilation; //  0x308 Size(4)
-	Unknown AttachmentReplication; //  0xa8 Size(40)
-	Unknown Owner; //  0x178 Size(8)
+	struct Unknown AttachmentReplication; //  0xa8 Size(40)
+	struct Unknown Owner; //  0x178 Size(8)
 	struct FName NetDriverName; //  0x94 Size(8)
-	Unknown Role; //  0x9e Size(1)
-	Unknown NetDormancy; //  0x238 Size(1)
-	Unknown SpawnCollisionHandlingMetho; //  0x304 Size(1)
-	Unknown AutoReceiveInput; //  0x302 Size(1)
+	char Role; //  0x9e Size(1)
+	char NetDormancy; //  0x238 Size(1)
+	enum class Unknow SpawnCollisionHandlingMethod; //  0x304 Size(1)
+	char AutoReceiveInput; //  0x302 Size(1)
 	int32_t InputPriority; //  0x150 Size(4)
-	Unknown InputComponent; //  0x2f8 Size(8)
+	struct Unknown InputComponent; //  0x2f8 Size(8)
 	float NetCullDistanceSquared; //  0x280 Size(4)
 	int32_t NetTag; //  0x24c Size(4)
 	float NetUpdateFrequency; //  0x27c Size(4)
 	float MinNetUpdateFrequency; //  0x288 Size(4)
 	float NetPriority; //  0x21c Size(4)
-	Unknown Instigator; //  0x258 Size(8)
-	Unknown Children; //  0x268 Size(10)
-	Unknown RootComponent; //  0x158 Size(8)
-	Unknown ControllingMatineeActors; //  0x208 Size(10)
-	Unknown Layers; //  0x188 Size(10)
-	Unknown ParentComponent; //  0x1bc Size(8)
+	struct Unknown Instigator; //  0x258 Size(8)
+	struct TArray<Unknown> Children; //  0x268 Size(10)
+	struct Unknown RootComponent; //  0x158 Size(8)
+	struct TArray<Unknown> ControllingMatineeActors; //  0x208 Size(10)
+	struct TArray<Unknown> Layers; //  0x188 Size(10)
+	struct TWeakObjectPtr<struct Unknown> ParentComponent; //  0x1bc Size(8)
 	char bEnableRerunConstructionScript; //  0x30c Size(1)
-	Unknown Tags; //  0x140 Size(10)
+	struct TArray<Unknown> Tags; //  0x140 Size(10)
 	struct FMulticastSparseDelegate OnTakeAnyDamage; //  0x218 Size(1)
 	struct FMulticastSparseDelegate OnTakePointDamage; //  0x27a Size(1)
-	struct FMulticastSparseDelegate OnTakeRadialDamage; //  0x9c Size(1)
+	struct FMulticastSparseDelegate OnTakeRadial; //  0x9c Size(1)
 	struct FMulticastSparseDelegate OnActorBeginOverlap; //  0x27b Size(1)
 	struct FMulticastSparseDelegate OnActorEndOverlap; //  0xa0 Size(1)
 	struct FMulticastSparseDelegate OnBeginCursorOver; //  0x221 Size(1)
@@ -4317,24 +4317,24 @@ struct UActor : UMKActorEx {
 	struct FMulticastSparseDelegate OnActorHit; //  0x180 Size(1)
 	struct FMulticastSparseDelegate OnDestroyed; //  0x220 Size(1)
 	struct FMulticastSparseDelegate OnEndPlay; //  0x30d Size(1)
-	Unknown InstanceComponents; //  0x128 Size(10)
-	Unknown BlueprintCreatedComponents; //  0x1a8 Size(10)
-	Unknown LoadedObjects; //  0x1c8 Size(10)
+	struct TArray<Unknown> InstanceComponents; //  0x128 Size(10)
+	struct TArray<Unknown> BlueprintCreatedComponents; //  0x1a8 Size(10)
+	struct TArray<Unknown> LoadedObjects; //  0x1c8 Size(10)
 
-	char WasRecentlyRendered(float Tolerance); // Function Engine.Actor.WasRecentlyRendered(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x3c58a10>
+	char WasRecentlyRendered(float Tolerance); // Function Engine.Actor.WasRecentlyRendered(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x3c644a0>
 };
 
 // Class Engine.SkeletalMeshActor
 struct ASkeletalMeshActor : UActor {
 	char bShouldDoAnimNotifies; //  0x318 Size(1)
 	char bWakeOnLevelStart; //  0x318 Size(1)
-	Unknown SkeletalMeshComponent; //  0x320 Size(8)
-	Unknown ReplicatedMesh; //  0x328 Size(8)
-	Unknown ReplicatedPhysAsset; //  0x330 Size(8)
-	Unknown ReplicatedMaterial0; //  0x338 Size(8)
-	Unknown ReplicatedMaterial1; //  0x340 Size(8)
+	struct Unknown SkeletalMeshComponent; //  0x320 Size(8)
+	struct Unknown ReplicatedMesh; //  0x328 Size(8)
+	struct Unknown ReplicatedPhysAsset; //  0x330 Size(8)
+	struct Unknown ReplicatedMaterial0; //  0x338 Size(8)
+	struct Unknown ReplicatedMaterial1; //  0x340 Size(8)
 
-	void OnRep_ReplicatedPhysAsset(); // Function Engine.SkeletalMeshActor.OnRep_ReplicatedPhysAsset(Native|Public) // <Game+0x1236d40>
+	void OnRep_ReplicatedPhysAsset(); // Function Engine.SkeletalMeshActor.OnRep_ReplicatedPhysAsset(Native|Public) // <Game+0x12372b0>
 };
 
 // Class Engine.PrimitiveComponent
@@ -4342,10 +4342,10 @@ struct UPrimitiveComponent : USceneComponent {
 	float MinDrawDistance; //  0x240 Size(4)
 	float LDMaxDrawDistance; //  0x244 Size(4)
 	float CachedMaxDrawDistance; //  0x248 Size(4)
-	Unknown DepthPriorityGroup; //  0x24c Size(1)
-	Unknown ViewOwnerDepthPriorityGroup; //  0x24d Size(1)
-	Unknown IndirectLightingCacheQuality; //  0x24e Size(1)
-	Unknown LightmapType; //  0x24f Size(1)
+	char DepthPriorityGroup; //  0x24c Size(1)
+	char ViewOwnerDepthPriorityGroup; //  0x24d Size(1)
+	char IndirectLightingCacheQuality; //  0x24e Size(1)
+	enum class Unknow LightmapType; //  0x24f Size(1)
 	char bUseMaxLODAsImposter; //  0x250 Size(1)
 	char bBatchImpostersAsInstances; //  0x250 Size(1)
 	char bNeverDistanceCull; //  0x250 Size(1)
@@ -4365,7 +4365,7 @@ struct UPrimitiveComponent : USceneComponent {
 	char bOwnerNoSee; //  0x252 Size(1)
 	char bOnlyOwnerSee; //  0x252 Size(1)
 	char bIgnoreNearClippingForOcclusion; //  0x252 Size(1)
-	char bTreatAsBackgroundForOcclusion; //  0x252 Size(1)
+	char bTreatAsBackgroundForOcclus; //  0x252 Size(1)
 	char bUseAsOccluder; //  0x253 Size(1)
 	char bSelectable; //  0x253 Size(1)
 	char bForceMipStreaming; //  0x253 Size(1)
@@ -4391,32 +4391,32 @@ struct UPrimitiveComponent : USceneComponent {
 	char bIgnoreRadialImpulse; //  0x255 Size(1)
 	char bIgnoreRadialForce; //  0x255 Size(1)
 	char bApplyImpulseOnDamage; //  0x256 Size(1)
-	char bReplicatePhysicsToAutonomo; //  0x256 Size(1)
+	char bReplicatePhysicsToAutonomousProxy; //  0x256 Size(1)
 	char bFillCollisionUnderneathForNavmesh; //  0x256 Size(1)
 	char AlwaysLoadOnClient; //  0x256 Size(1)
 	char AlwaysLoadOnServer; //  0x256 Size(1)
 	char bUseEditorCompositing; //  0x256 Size(1)
 	char bRenderCustomDepth; //  0x256 Size(1)
 	char bHasNoStreamableTextures; //  0x257 Size(1)
-	Unknown bHasCustomNavigableGeometry; //  0x258 Size(1)
-	Unknown CanCharacterStepUpOn; //  0x25a Size(1)
-	Unknown LightingChannels; //  0x25b Size(1)
-	Unknown CustomDepthStencilWriteMask; //  0x25c Size(1)
+	char bHasCustomNavigableGeometry; //  0x258 Size(1)
+	char CanCharacterStepUpOn; //  0x25a Size(1)
+	struct Unknown LightingChannels; //  0x25b Size(1)
+	enum class Unknow CustomDepthStencilWriteMask; //  0x25c Size(1)
 	int32_t CustomDepthStencilValue; //  0x260 Size(4)
-	Unknown CustomPrimitiveData; //  0x268 Size(10)
-	Unknown CustomPrimitiveDataInternal; //  0x278 Size(10)
+	struct Unknown CustomPrimitiveData; //  0x268 Size(10)
+	struct Unknown CustomPrimitiveDataInternal; //  0x278 Size(10)
 	int32_t TranslucencySortPriority; //  0x288 Size(4)
 	int32_t VisibilityId; //  0x28c Size(4)
-	Unknown RuntimeVirtualTextures; //  0x290 Size(10)
+	struct TArray<Unknown> RuntimeVirtualTextures; //  0x290 Size(10)
 	int8_t VirtualTextureLodBias; //  0x2a0 Size(1)
 	int8_t VirtualTextureCullMips; //  0x2a1 Size(1)
 	int8_t VirtualTextureMinCoverage; //  0x2a2 Size(1)
-	Unknown VirtualTextureRenderPassType; //  0x2a3 Size(1)
+	enum class Unknow VirtualTextureRenderPassType; //  0x2a3 Size(1)
 	float LpvBiasMultiplier; //  0x2a8 Size(4)
 	float BoundsScale; //  0x2b4 Size(4)
-	Unknown MoveIgnoreActors; //  0x2c8 Size(10)
-	Unknown MoveIgnoreComponents; //  0x2d8 Size(10)
-	Unknown BodyInstance; //  0x2f8 Size(190)
+	struct TArray<Unknown> MoveIgnoreActors; //  0x2c8 Size(10)
+	struct TArray<Unknown> MoveIgnoreComponents; //  0x2d8 Size(10)
+	struct Unknown BodyInstance; //  0x2f8 Size(190)
 	struct FMulticastSparseDelegate OnComponentHit; //  0x488 Size(1)
 	struct FMulticastSparseDelegate OnComponentBeginOverlap; //  0x489 Size(1)
 	struct FMulticastSparseDelegate OnComponentEndOverlap; //  0x48a Size(1)
@@ -4430,31 +4430,31 @@ struct UPrimitiveComponent : USceneComponent {
 	struct FMulticastSparseDelegate OnInputTouchEnd; //  0x493 Size(1)
 	struct FMulticastSparseDelegate OnInputTouchEnter; //  0x494 Size(1)
 	struct FMulticastSparseDelegate OnInputTouchLeave; //  0x495 Size(1)
-	Unknown LODParentPrimitive; //  0x4b0 Size(8)
+	struct Unknown LODParentPrimitive; //  0x4b0 Size(8)
 
-	char WasRecentlyRendered(float Tolerance); // Function Engine.PrimitiveComponent.WasRecentlyRendered(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x3dc8c90>
+	char WasRecentlyRendered(float Tolerance); // Function Engine.PrimitiveComponent.WasRecentlyRendered(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x3dd5b30>
 };
 
 // Class Engine.MeshComponent
 struct UMeshComponent : UPrimitiveComponent {
 	float MipStreamingScale; //  0x4b8 Size(4)
-	Unknown OverrideMaterials; //  0x4c0 Size(10)
+	struct TArray<Unknown> OverrideMaterials; //  0x4c0 Size(10)
 	char bEnableMaterialParameterCaching; //  0x4e0 Size(1)
 
-	void SetVectorParameterValueOnMaterials(struct FName ParameterName, Unknown ParameterValue); // Function Engine.MeshComponent.SetVectorParameterValueOnMaterials(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game+0x3d80b90>
+	void SetVectorParameterValueOnMateri(struct FName ParameterName, struct Unknown ParameterValue); // Function Engine.MeshComponent.SetVectorParameterValueOnMateri(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game+0x3d8d520>
 };
 
 // Class Engine.SkinnedMeshComponent
 struct USkinnedMeshComponent : UMeshComponent {
-	Unknown SkeletalMesh; //  0x4e8 Size(8)
-	Unknown MasterPoseComponent; //  0x4f0 Size(8)
-	Unknown SkinCacheUsage; //  0x4f8 Size(10)
-	Unknown PhysicsAssetOverride; //  0x600 Size(8)
+	struct Unknown SkeletalMesh; //  0x4e8 Size(8)
+	struct TWeakObjectPtr<struct Unknown> MasterPoseComponent; //  0x4f0 Size(8)
+	struct TArray<Unknown> SkinCacheUsage; //  0x4f8 Size(10)
+	struct Unknown PhysicsAssetOverride; //  0x600 Size(8)
 	int32_t ForcedLodModel; //  0x608 Size(4)
 	int32_t MinLodModel; //  0x60c Size(4)
 	float StreamingDistanceMultiplier; //  0x618 Size(4)
-	Unknown LODInfo; //  0x628 Size(10)
-	Unknown VisibilityBasedAnimTickOption; //  0x65c Size(1)
+	struct TArray<Unknown> LODInfo; //  0x628 Size(10)
+	enum class Unknow VisibilityBasedAnimTickOption; //  0x65c Size(1)
 	char bOverrideMinLod; //  0x65e Size(1)
 	char bUseBoundsFromMasterPoseComponent; //  0x65e Size(1)
 	char bForceWireframe; //  0x65e Size(1)
@@ -4465,9 +4465,9 @@ struct USkinnedMeshComponent : UMeshComponent {
 	char bComponentUseFixedSkelBounds; //  0x65f Size(1)
 	char bConsiderAllBodiesForBounds; //  0x65f Size(1)
 	char bSyncAttachParentLOD; //  0x65f Size(1)
-	char bCanHighlightSelectedSectio; //  0x65f Size(1)
+	char bCanHighlightSelectedSections; //  0x65f Size(1)
 	char bRecentlyRendered; //  0x65f Size(1)
-	char bCastCapsuleDirectShadow; //  0x65f Size(1)
+	char bCastCapsule; //  0x65f Size(1)
 	char bCastCapsuleIndirectShadow; //  0x65f Size(1)
 	char bCPUSkinning; //  0x660 Size(1)
 	char bEnableUpdateRateOptimizations; //  0x660 Size(1)
@@ -4476,20 +4476,20 @@ struct USkinnedMeshComponent : UMeshComponent {
 	char bIgnoreMasterPoseComponentLOD; //  0x660 Size(1)
 	char bCachedLocalBoundsUpToDate; //  0x660 Size(1)
 	char bForceMeshObjectUpdate; //  0x661 Size(1)
-	float CapsuleIndirectShadowMinVisibility; //  0x664 Size(4)
-	Unknown CachedWorldSpaceBounds; //  0x678 Size(1c)
-	Unknown CachedWorldToLocalTransform; //  0x6a0 Size(40)
+	float CapsuleIndirectShadowMinVisonsi; //  0x664 Size(4)
+	struct Unknown CachedWorldSpaceBounds; //  0x678 Size(1c)
+	struct Unknown CachedWorldToLocalTransform; //  0x6a0 Size(40)
 
-	void UnloadSkinWeightProfile(struct FName InProfileName); // Function Engine.SkinnedMeshComponent.UnloadSkinWeightProfile(Final|Native|Public|BlueprintCallable) // <Game+0x3def250>
+	void UnloadSkinWeightProfile(struct FName InProfileName); // Function Engine.SkinnedMeshComponent.UnloadSkinWeightProfile(Final|Native|Public|BlueprintCallable) // <Game+0x3dfc400>
 };
 
 // Class Engine.StreamableRenderAsset
 struct UStreamableRenderAsset : Object {
-	Unknown ForceMipLevelsToBeResidentTimestamp; //  0x28 Size(8)
+	double ForceMipLevelsToBeResidentTimestamp; //  0x28 Size(8)
 	int32_t NumCinematicMipLevels; //  0x30 Size(4)
 	int32_t StreamingIndex; //  0x34 Size(4)
 	int32_t CachedCombinedLODBias; //  0x38 Size(4)
-	Unknown CachedNumResidentLODs; //  0x3c Size(1)
+	char CachedNumResidentLODs; //  0x3c Size(1)
 	char bCachedReadyForStreaming; //  0x3d Size(1)
 	char NeverStream; //  0x3d Size(1)
 	char bGlobalForceMipLevelsToBeResident; //  0x3d Size(1)
@@ -4502,71 +4502,71 @@ struct UStreamableRenderAsset : Object {
 
 // Class Engine.SkeletalMesh
 struct USkeletalMesh : UStreamableRenderAsset {
-	Unknown Skeleton; //  0x60 Size(8)
-	Unknown ImportedBounds; //  0x68 Size(1c)
-	Unknown ExtendedBounds; //  0x84 Size(1c)
-	Unknown PositiveBoundsExtension; //  0xa0 Size(c)
-	Unknown NegativeBoundsExtension; //  0xac Size(c)
-	Unknown Materials; //  0xb8 Size(10)
-	Unknown SkelMirrorTable; //  0xc8 Size(10)
-	Unknown LODInfo; //  0xd8 Size(10)
-	Unknown MinLOD; //  0x138 Size(4)
-	Unknown DisableBelowMinLodStripping; //  0x13c Size(1)
-	Unknown SkelMirrorAxis; //  0x13d Size(1)
-	Unknown SkelMirrorFlipAxis; //  0x13e Size(1)
+	struct Unknown Skeleton; //  0x60 Size(8)
+	struct Unknown ImportedBounds; //  0x68 Size(1c)
+	struct Unknown ExtendedBounds; //  0x84 Size(1c)
+	struct Unknown PositiveBoundsExtension; //  0xa0 Size(c)
+	struct Unknown NegativeBoundsExtension; //  0xac Size(c)
+	struct TArray<Unknown> Materials; //  0xb8 Size(10)
+	struct TArray<Unknown> SkelMirrorTable; //  0xc8 Size(10)
+	struct TArray<Unknown> LODInfo; //  0xd8 Size(10)
+	struct Unknown MinLOD; //  0x138 Size(4)
+	struct Unknown DisableBelowMinLodStripping; //  0x13c Size(1)
+	char SkelMirrorAxis; //  0x13d Size(1)
+	char SkelMirrorFlipAxis; //  0x13e Size(1)
 	char bUseFullPrecisionUVs; //  0x13f Size(1)
-	char bUseHighPrecisionTangentBasis; //  0x13f Size(1)
+	char bUseHighPrecisionTangentBasOD; //  0x13f Size(1)
 	char bHasBeenSimplified; //  0x13f Size(1)
 	char bHasVertexColors; //  0x13f Size(1)
 	char bEnablePerPolyCollision; //  0x13f Size(1)
-	Unknown BodySetup; //  0x140 Size(8)
-	Unknown PhysicsAsset; //  0x148 Size(8)
-	Unknown ShadowPhysicsAsset; //  0x150 Size(8)
-	Unknown NodeMappingData; //  0x158 Size(10)
-	Unknown MorphTargets; //  0x168 Size(10)
-	Unknown PostProcessAnimBlueprint; //  0x2f0 Size(8)
-	Unknown MeshClothingAssets; //  0x2f8 Size(10)
-	Unknown SamplingInfo; //  0x308 Size(30)
-	Unknown AssetUserData; //  0x338 Size(10)
-	Unknown Sockets; //  0x350 Size(10)
-	Unknown SkinWeightProfiles; //  0x370 Size(10)
+	struct Unknown BodySetup; //  0x140 Size(8)
+	struct Unknown PhysicsAsset; //  0x148 Size(8)
+	struct Unknown ShadowPhysicsAsset; //  0x150 Size(8)
+	struct TArray<Unknown> NodeMappingData; //  0x158 Size(10)
+	struct TArray<Unknown> MorphTargets; //  0x168 Size(10)
+	struct Unknown* PostProcessAnimBlueprint; //  0x2f0 Size(8)
+	struct TArray<Unknown> MeshClothingAssets; //  0x2f8 Size(10)
+	struct Unknown SamplingInfo; //  0x308 Size(30)
+	struct TArray<Unknown> AssetUserData; //  0x338 Size(10)
+	struct TArray<Unknown> Sockets; //  0x350 Size(10)
+	struct TArray<Unknown> SkinWeightProfiles; //  0x370 Size(10)
 
-	void SetLODSettings(Unknown InLODSettings); // Function Engine.SkeletalMesh.SetLODSettings(Final|Native|Public|BlueprintCallable) // <Game+0x16b3b30>
+	void SetLODSettings(struct Unknown InLO); // Function Engine.SkeletalMesh.SetLODSettings(Final|Native|Public|BlueprintCallable) // <Game+0x16b4710>
 };
 
 // Class Engine.StaticMeshActor
 struct AStaticMeshActor : UActor {
-	Unknown StaticMeshComponent; //  0x310 Size(8)
+	struct Unknown StaticMeshComponent; //  0x310 Size(8)
 	char bStaticMeshReplicateMovement; //  0x318 Size(1)
-	Unknown NavigationGeometryGatheringMode; //  0x319 Size(1)
+	enum class Unknow NavigationGeometryGatheringMode; //  0x319 Size(1)
 
-	void SetMobility(Unknown InMobility); // Function Engine.StaticMeshActor.SetMobility(Final|Native|Public|BlueprintCallable) // <Game+0x124c9f0>
+	void SetMobility(char InMobility); // Function Engine.StaticMeshActor.SetMobility(Final|Native|Public|BlueprintCallable) // <Game+0x124cf50>
 };
 
 // Class Engine.Texture
 struct UTexture : UStreamableRenderAsset {
-	Unknown LightingGuid; //  0x48 Size(10)
+	struct Unknown LightingGuid; //  0x48 Size(10)
 	int32_t LODBias; //  0x58 Size(4)
-	Unknown CompressionSettings; //  0x5c Size(1)
-	Unknown Filter; //  0x5d Size(1)
-	Unknown MipLoadOptions; //  0x5e Size(1)
-	Unknown LODGroup; //  0x5f Size(1)
+	char CompressionSettings; //  0x5c Size(1)
+	char Filter; //  0x5d Size(1)
+	enum class Unknow MipLoadOptions; //  0x5e Size(1)
+	char LODG; //  0x5f Size(1)
 	char SRGB; //  0x60 Size(1)
 	char bNoTiling; //  0x60 Size(1)
 	char VirtualTextureStreaming; //  0x60 Size(1)
 	char CompressionYCoCg; //  0x60 Size(1)
 	char bAsyncResourceReleaseHasBeenStarted; //  0x60 Size(1)
-	Unknown AssetUserData; //  0x68 Size(10)
+	struct TArray<Unknown> AssetUserData; //  0x68 Size(10)
 };
 
 // Class Engine.Texture2DDynamic
 struct UTexture2DDynamic : UTexture {
-	Unknown Format; //  0xc0 Size(1)
+	char Format; //  0xc0 Size(1)
 };
 
 // Class Engine.HUD
 struct AHUD : UActor {
-	Unknown PlayerOwner; //  0x310 Size(8)
+	struct Unknown PlayerOwner; //  0x310 Size(8)
 	char bLostFocusPaused; //  0x318 Size(1)
 	char bShowHUD; //  0x318 Size(1)
 	char bShowDebugInfo; //  0x318 Size(1)
@@ -4574,21 +4574,21 @@ struct AHUD : UActor {
 	char bShowHitBoxDebugInfo; //  0x320 Size(1)
 	char bShowOverlays; //  0x320 Size(1)
 	char bEnableDebugTextShadow; //  0x320 Size(1)
-	Unknown PostRenderedActors; //  0x328 Size(10)
-	Unknown DebugDisplay; //  0x340 Size(10)
-	Unknown ToggledDebugCategories; //  0x350 Size(10)
-	Unknown Canvas; //  0x360 Size(8)
-	Unknown DebugCanvas; //  0x368 Size(8)
-	Unknown DebugTextList; //  0x370 Size(10)
-	Unknown ShowDebugTargetDesiredClass; //  0x380 Size(8)
-	Unknown ShowDebugTargetActor; //  0x388 Size(8)
+	struct TArray<Unknown> PostRenderedActors; //  0x328 Size(10)
+	struct TArray<Unknown> DebugDisplay; //  0x340 Size(10)
+	struct TArray<Unknown> ToggledDebugCategories; //  0x350 Size(10)
+	struct Unknown Canvas; //  0x360 Size(8)
+	struct Unknown DebugCanvas; //  0x368 Size(8)
+	struct TArray<Unknown> DebugTextList; //  0x370 Size(10)
+	struct Unknown* Show; //  0x380 Size(8)
+	struct Unknown Show; //  0x388 Size(8)
 
-	void ShowHUD(); // Function Engine.HUD.ShowHUD(Exec|Native|Public) // <Game+0x1e4be10>
+	void ShowHUD(); // Function Engine.HUD.ShowHUD(Exec|Native|Public) // <Game+0x1e52540>
 };
 
 // Class Engine.Player
 struct UPlayer : Object {
-	Unknown PlayerController; //  0x30 Size(8)
+	struct Unknown PlayerController; //  0x30 Size(8)
 	int32_t CurrentNetSpeed; //  0x38 Size(4)
 	int32_t ConfiguredInternetSpeed; //  0x3c Size(4)
 	int32_t ConfiguredLanSpeed; //  0x40 Size(4)
@@ -4596,24 +4596,24 @@ struct UPlayer : Object {
 
 // Class Engine.MKNetConnectionEx
 struct UMKNetConnectionEx : UPlayer {
-	Unknown SelfNetConnection; //  0xb0 Size(8)
+	struct Unknown SelfNetConnection; //  0xb0 Size(8)
 };
 
 // Class Engine.NetConnection
 struct UNetConnection : UMKNetConnectionEx {
-	Unknown Children; //  0xb8 Size(10)
-	Unknown Driver; //  0xc8 Size(8)
-	Unknown PackageMapClass; //  0xd0 Size(8)
-	Unknown PackageMap; //  0xd8 Size(8)
-	Unknown OpenChannels; //  0xe0 Size(10)
-	Unknown SentTemporaries; //  0xf0 Size(10)
-	Unknown ViewTarget; //  0x100 Size(8)
-	Unknown OwningActor; //  0x108 Size(8)
+	struct TArray<Unknown> Children; //  0xb8 Size(10)
+	struct Unknown Driver; //  0xc8 Size(8)
+	struct Unknown* PackageMapClass; //  0xd0 Size(8)
+	struct Unknown PackageMap; //  0xd8 Size(8)
+	struct TArray<Unknown> OpenChannels; //  0xe0 Size(10)
+	struct TArray<Unknown> SentTemporaries; //  0xf0 Size(10)
+	struct Unknown ViewTarget; //  0x100 Size(8)
+	struct Unknown OwningActor; //  0x108 Size(8)
 	int32_t MaxPacket; //  0x110 Size(4)
 	char InternalAck; //  0x114 Size(1)
-	Unknown PlayerId; //  0x1d0 Size(28)
-	Unknown LastReceiveTime; //  0x240 Size(8)
-	Unknown ChannelsToTick; //  0x1580 Size(10)
+	struct Unknown PlayerId; //  0x1d0 Size(28)
+	double LastReceiveTime; //  0x240 Size(8)
+	struct TArray<Unknown> ChannelsToTick; //  0x1580 Size(10)
 };
 
 // Class Engine.NetDriver
@@ -4635,157 +4635,157 @@ struct UNetDriver : Object {
 	float TimeoutMultiplierForUnoptimizedBuilds; //  0x80 Size(4)
 	char bNoTimeouts; //  0x84 Size(1)
 	char bNeverApplyNetworkEmulationSettings; //  0x85 Size(1)
-	Unknown ServerConnection; //  0x88 Size(8)
-	Unknown ClientConnections; //  0x90 Size(10)
+	struct Unknown ServerConnection; //  0x88 Size(8)
+	struct TArray<Unknown> ClientConnections; //  0x90 Size(10)
 	int32_t RecentlyDisconnectedTrackingTime; //  0x100 Size(4)
-	Unknown World; //  0x140 Size(8)
-	Unknown WorldPackage; //  0x148 Size(8)
-	Unknown NetConnectionClass; //  0x170 Size(8)
-	Unknown ReplicationDriverClass; //  0x178 Size(8)
+	struct Unknown World; //  0x140 Size(8)
+	struct Unknown WorldPackage; //  0x148 Size(8)
+	struct Unknown* NetConnectionClass; //  0x170 Size(8)
+	struct Unknown* ReplicationDriverClass; //  0x178 Size(8)
 	struct FName NetDriverName; //  0x190 Size(8)
-	Unknown ChannelDefinitions; //  0x198 Size(10)
-	Unknown ChannelDefinitionMap; //  0x1a8 Size(50)
-	Unknown ActorChannelPool; //  0x1f8 Size(10)
+	struct TArray<Unknown> ChannelDefinitions; //  0x198 Size(10)
+	struct TMap<{}, {}>Unknown ChannelDefinitionMap; //  0x1a8 Size(50)
+	struct TArray<Unknown> ActorChannelPool; //  0x1f8 Size(10)
 	float Time; //  0x210 Size(4)
-	Unknown ReplicationDriver; //  0x6e8 Size(8)
+	struct Unknown ReplicationDriver; //  0x6e8 Size(8)
 };
 
 // Class Engine.Engine
 struct UEngine : Object {
-	Unknown TinyFont; //  0x30 Size(8)
-	Unknown TinyFontName; //  0x38 Size(18)
-	Unknown SmallFont; //  0x50 Size(8)
-	Unknown SmallFontName; //  0x58 Size(18)
-	Unknown MediumFont; //  0x70 Size(8)
-	Unknown MediumFontName; //  0x78 Size(18)
-	Unknown LargeFont; //  0x90 Size(8)
-	Unknown LargeFontName; //  0x98 Size(18)
-	Unknown SubtitleFont; //  0xb0 Size(8)
-	Unknown SubtitleFontName; //  0xb8 Size(18)
-	Unknown AdditionalFonts; //  0xd0 Size(10)
-	Unknown AdditionalFontNames; //  0xe8 Size(10)
-	Unknown ConsoleClass; //  0xf8 Size(8)
-	Unknown ConsoleClassName; //  0x100 Size(18)
-	Unknown GameViewportClientClass; //  0x118 Size(8)
-	Unknown GameViewportClientClassName; //  0x120 Size(18)
-	Unknown LocalPlayerClass; //  0x138 Size(8)
-	Unknown LocalPlayerClassName; //  0x140 Size(18)
-	Unknown WorldSettingsClass; //  0x158 Size(8)
-	Unknown WorldSettingsClassName; //  0x160 Size(18)
-	Unknown NavigationSystemClassName; //  0x178 Size(18)
-	Unknown NavigationSystemClass; //  0x190 Size(8)
-	Unknown NavigationSystemConfigClassName; //  0x198 Size(18)
-	Unknown NavigationSystemConfigClass; //  0x1b0 Size(8)
-	Unknown AvoidanceManagerClassName; //  0x1b8 Size(18)
-	Unknown AvoidanceManagerClass; //  0x1d0 Size(8)
-	Unknown PhysicsCollisionHandlerClass; //  0x1d8 Size(8)
-	Unknown PhysicsCollisionHandlerClassName; //  0x1e0 Size(18)
-	Unknown GameUserSettingsClassName; //  0x1f8 Size(18)
-	Unknown GameUserSettingsClass; //  0x210 Size(8)
-	Unknown AIControllerClassName; //  0x218 Size(18)
-	Unknown GameUserSettings; //  0x230 Size(8)
-	Unknown LevelScriptActorClass; //  0x238 Size(8)
-	Unknown LevelScriptActorClassName; //  0x240 Size(18)
-	Unknown DefaultBlueprintBaseClassName; //  0x258 Size(18)
-	Unknown GameSingletonClassName; //  0x270 Size(18)
-	Unknown GameSingleton; //  0x288 Size(8)
-	Unknown AssetManagerClassName; //  0x290 Size(18)
-	Unknown AssetManager; //  0x2a8 Size(8)
-	Unknown DefaultTexture; //  0x2b0 Size(8)
-	Unknown DefaultTextureName; //  0x2b8 Size(18)
-	Unknown DefaultDiffuseTexture; //  0x2d0 Size(8)
-	Unknown DefaultDiffuseTextureName; //  0x2d8 Size(18)
-	Unknown DefaultBSPVertexTexture; //  0x2f0 Size(8)
-	Unknown DefaultBSPVertexTextureName; //  0x2f8 Size(18)
-	Unknown HighFrequencyNoiseTexture; //  0x310 Size(8)
-	Unknown HighFrequencyNoiseTextureName; //  0x318 Size(18)
-	Unknown DefaultBokehTexture; //  0x330 Size(8)
-	Unknown DefaultBokehTextureName; //  0x338 Size(18)
-	Unknown DefaultBloomKernelTexture; //  0x350 Size(8)
-	Unknown DefaultBloomKernelTextureName; //  0x358 Size(18)
-	Unknown WireframeMaterial; //  0x370 Size(8)
+	struct Unknown TinyFont; //  0x30 Size(8)
+	struct Unknown TinyFontName; //  0x38 Size(18)
+	struct Unknown SmallFont; //  0x50 Size(8)
+	struct Unknown SmallFontName; //  0x58 Size(18)
+	struct Unknown MediumFont; //  0x70 Size(8)
+	struct Unknown MediumFontName; //  0x78 Size(18)
+	struct Unknown LargeFont; //  0x90 Size(8)
+	struct Unknown LargeFontName; //  0x98 Size(18)
+	struct Unknown SubtitleFont; //  0xb0 Size(8)
+	struct Unknown SubtitleFontName; //  0xb8 Size(18)
+	struct TArray<Unknown> AdditionalFonts; //  0xd0 Size(10)
+	struct TArray<Unknown> AdditionalFontNames; //  0xe8 Size(10)
+	struct Unknown* ConsoleClass; //  0xf8 Size(8)
+	struct Unknown ConsoleClassName; //  0x100 Size(18)
+	struct Unknown* GameViewportClientClass; //  0x118 Size(8)
+	struct Unknown GameViewportClientClassName; //  0x120 Size(18)
+	struct Unknown* LocalPlayerClass; //  0x138 Size(8)
+	struct Unknown LocalPlayerClassName; //  0x140 Size(18)
+	struct Unknown* WorldSettingsClass; //  0x158 Size(8)
+	struct Unknown WorldSettingsClassName; //  0x160 Size(18)
+	struct Unknown NavigationSystemClassName; //  0x178 Size(18)
+	struct Unknown* NavigationSystemClass; //  0x190 Size(8)
+	struct Unknown NavigationSystemConfigClass; //  0x198 Size(18)
+	struct Unknown* NavigationSystemConfigClass; //  0x1b0 Size(8)
+	struct Unknown AvoidanceManagerClassName; //  0x1b8 Size(18)
+	struct Unknown* AvoidanceManagerClass; //  0x1d0 Size(8)
+	struct Unknown* PhysicsCollisionHandlerClas; //  0x1d8 Size(8)
+	struct Unknown PhysicsCollisionHandlerClas; //  0x1e0 Size(18)
+	struct Unknown GameUserSettingsClassName; //  0x1f8 Size(18)
+	struct Unknown* GameUserSettingsClass; //  0x210 Size(8)
+	struct Unknown AIControllerClassName; //  0x218 Size(18)
+	struct Unknown GameUserSettings; //  0x230 Size(8)
+	struct Unknown* LevelScriptActorClass; //  0x238 Size(8)
+	struct Unknown LevelScriptActorClassName; //  0x240 Size(18)
+	struct Unknown DefaultBlueprintBaseClassName; //  0x258 Size(18)
+	struct Unknown GameSingletonClassName; //  0x270 Size(18)
+	struct Unknown GameSingleton; //  0x288 Size(8)
+	struct Unknown AssetManagerClassName; //  0x290 Size(18)
+	struct Unknown AssetManager; //  0x2a8 Size(8)
+	struct Unknown DefaultTexture; //  0x2b0 Size(8)
+	struct Unknown DefaultTextureName; //  0x2b8 Size(18)
+	struct Unknown DefaultDiffuseTexture; //  0x2d0 Size(8)
+	struct Unknown DefaultDiffuseTextureName; //  0x2d8 Size(18)
+	struct Unknown DefaultBSPVertexTexture; //  0x2f0 Size(8)
+	struct Unknown DefaultBSPVertexTextureName; //  0x2f8 Size(18)
+	struct Unknown HighFrequencyNoiseTexture; //  0x310 Size(8)
+	struct Unknown HighFrequencyNoiseTextureName; //  0x318 Size(18)
+	struct Unknown DefaultBokehTexture; //  0x330 Size(8)
+	struct Unknown DefaultBokehTextureName; //  0x338 Size(18)
+	struct Unknown DefaultBloomKernelTexture; //  0x350 Size(8)
+	struct Unknown DefaultBloomKernelTextureName; //  0x358 Size(18)
+	struct Unknown WireframeMaterial; //  0x370 Size(8)
 	struct FString WireframeMaterialName; //  0x378 Size(10)
-	Unknown DebugMeshMaterial; //  0x388 Size(8)
-	Unknown DebugMeshMaterialName; //  0x390 Size(18)
-	Unknown EmissiveMeshMaterial; //  0x3a8 Size(8)
-	Unknown EmissiveMeshMaterialName; //  0x3b0 Size(18)
-	Unknown LevelColorationLitMaterial; //  0x3c8 Size(8)
+	struct Unknown DebugMeshMaterial; //  0x388 Size(8)
+	struct Unknown DebugMeshMaterialName; //  0x390 Size(18)
+	struct Unknown EmissiveMeshMaterial; //  0x3a8 Size(8)
+	struct Unknown EmissiveMeshMaterialName; //  0x3b0 Size(18)
+	struct Unknown LevelColorationLitMaterial; //  0x3c8 Size(8)
 	struct FString LevelColorationLitMaterialName; //  0x3d0 Size(10)
-	Unknown LevelColorationUnlitMaterial; //  0x3e0 Size(8)
+	struct Unknown LevelColorationUnlitMaterial; //  0x3e0 Size(8)
 	struct FString LevelColorationUnlitMaterialName; //  0x3e8 Size(10)
-	Unknown LightingTexelDensityMaterial; //  0x3f8 Size(8)
+	struct Unknown LightingTexelDensityMaterial; //  0x3f8 Size(8)
 	struct FString LightingTexelDensityName; //  0x400 Size(10)
-	Unknown ShadedLevelColorationLitMaterial; //  0x410 Size(8)
+	struct Unknown ShadedLevelColorationLitMaterial; //  0x410 Size(8)
 	struct FString ShadedLevelColorationLitMaterialName; //  0x418 Size(10)
-	Unknown ShadedLevelColorationUnlitMaterial; //  0x428 Size(8)
+	struct Unknown ShadedLevelColorationUnlitMaterial; //  0x428 Size(8)
 	struct FString ShadedLevelColorationUnlitMaterialName; //  0x430 Size(10)
-	Unknown RemoveSurfaceMaterial; //  0x440 Size(8)
-	Unknown RemoveSurfaceMaterialName; //  0x448 Size(18)
-	Unknown VertexColorMaterial; //  0x460 Size(8)
+	struct Unknown RemoveSurfaceMaterial; //  0x440 Size(8)
+	struct Unknown RemoveSurfaceMaterialName; //  0x448 Size(18)
+	struct Unknown VertexColorMaterial; //  0x460 Size(8)
 	struct FString VertexColorMaterialName; //  0x468 Size(10)
-	Unknown VertexColorViewModeMaterial_ColorOnly; //  0x478 Size(8)
-	struct FString VertexColorViewModeMaterialName_; //  0x480 Size(10)
-	Unknown VertexColorViewModeMaterial_AlphaAsColor; //  0x490 Size(8)
+	struct Unknown VertexColorViewModeMaterial_ColorOnly; //  0x478 Size(8)
+	struct FString VertexColorViewModeMaterialName_ColorOnly; //  0x480 Size(10)
+	struct Unknown VertexColorViewModeMaterial_AlphaAsColor; //  0x490 Size(8)
 	struct FString VertexColorViewModeMaterialName_AlphaAsColor; //  0x498 Size(10)
-	Unknown VertexColorViewModeMaterial_RedOnly; //  0x4a8 Size(8)
+	struct Unknown VertexColorViewModeMaterial_RedOnly; //  0x4a8 Size(8)
 	struct FString VertexColorViewModeMaterialName_RedOnly; //  0x4b0 Size(10)
-	Unknown VertexColorViewModeMaterial_GreenOnly; //  0x4c0 Size(8)
-	struct FString VertexColorViewModeMaterialName_GreenOnly; //  0x4c8 Size(10)
-	Unknown VertexColorViewModeMaterial_BlueOnly; //  0x4d8 Size(8)
+	struct Unknown VertexColorViewModeMaterial_GreenOnly; //  0x4c0 Size(8)
+	struct FString VertexColorViewModeMaterialName_; //  0x4c8 Size(10)
+	struct Unknown VertexColorViewModeMaterial_BlueOnly; //  0x4d8 Size(8)
 	struct FString VertexColorViewModeMaterialName_BlueOnly; //  0x4e0 Size(10)
-	Unknown DebugEditorMaterialName; //  0x4f0 Size(18)
-	Unknown ConstraintLimitMaterial; //  0x508 Size(8)
-	Unknown ConstraintLimitMaterialX; //  0x510 Size(8)
-	Unknown ConstraintLimitMaterialXAxis; //  0x518 Size(8)
-	Unknown ConstraintLimitMaterialY; //  0x520 Size(8)
-	Unknown ConstraintLimitMaterialYAxis; //  0x528 Size(8)
-	Unknown ConstraintLimitMaterialZ; //  0x530 Size(8)
-	Unknown ConstraintLimitMaterialZAxis; //  0x538 Size(8)
-	Unknown ConstraintLimitMaterialPrismatic; //  0x540 Size(8)
-	Unknown InvalidLightmapSettingsMaterial; //  0x548 Size(8)
-	Unknown InvalidLightmapSettingsMaterialName; //  0x550 Size(18)
-	Unknown PreviewShadowsIndicatorMaterial; //  0x568 Size(8)
-	Unknown PreviewShadowsIndicatorMaterialName; //  0x570 Size(18)
-	Unknown ArrowMaterial; //  0x588 Size(8)
-	Unknown ArrowMaterialYellow; //  0x590 Size(8)
-	Unknown ArrowMaterialName; //  0x598 Size(18)
-	Unknown LightingOnlyBrightness; //  0x5b0 Size(10)
-	Unknown ShaderComplexityColors; //  0x5c0 Size(10)
-	Unknown QuadComplexityColors; //  0x5d0 Size(10)
-	Unknown LightComplexityColors; //  0x5e0 Size(10)
-	Unknown StationaryLightOverlapColors; //  0x5f0 Size(10)
-	Unknown LODColorationColors; //  0x600 Size(10)
-	Unknown HLODColorationColors; //  0x610 Size(10)
-	Unknown StreamingAccuracyColors; //  0x620 Size(10)
-	float MaxPixelShaderAdditiveComplexity; //  0x630 Size(4)
-	float MaxES3PixelShaderAdditiveCo; //  0x634 Size(4)
+	struct Unknown DebugEditorMaterialName; //  0x4f0 Size(18)
+	struct Unknown ConstraintLimitMaterial; //  0x508 Size(8)
+	struct Unknown ConstraintLimitMaterialX; //  0x510 Size(8)
+	struct Unknown ConstraintLimitMaterialXAxis; //  0x518 Size(8)
+	struct Unknown ConstraintLimitMaterialY; //  0x520 Size(8)
+	struct Unknown ConstraintLimitMaterialYAxis; //  0x528 Size(8)
+	struct Unknown ConstraintLimitMaterialZ; //  0x530 Size(8)
+	struct Unknown ConstraintLimitMaterialZAxis; //  0x538 Size(8)
+	struct Unknown ConstraintLimitMaterialPris; //  0x540 Size(8)
+	struct Unknown InvalidLightmapSettingsMaterial; //  0x548 Size(8)
+	struct Unknown InvalidLightmapSettingsMaterialName; //  0x550 Size(18)
+	struct Unknown PreviewShadowsIndicatorMaterial; //  0x568 Size(8)
+	struct Unknown PreviewShadowsIndicatorMaterialName; //  0x570 Size(18)
+	struct Unknown ArrowMaterial; //  0x588 Size(8)
+	struct Unknown ArrowMaterialYellow; //  0x590 Size(8)
+	struct Unknown ArrowMaterialName; //  0x598 Size(18)
+	struct Unknown LightingOnlyBrightness; //  0x5b0 Size(10)
+	struct TArray<Unknown> ShaderComplexityColors; //  0x5c0 Size(10)
+	struct TArray<Unknown> QuadComplexityColors; //  0x5d0 Size(10)
+	struct TArray<Unknown> LightComplexityColors; //  0x5e0 Size(10)
+	struct TArray<Unknown> StationaryLightOverlapColors; //  0x5f0 Size(10)
+	struct TArray<Unknown> LODColorationColors; //  0x600 Size(10)
+	struct TArray<Unknown> HLODColorationColors; //  0x610 Size(10)
+	struct TArray<Unknown> StreamingAccuracyColors; //  0x620 Size(10)
+	float MaxPixelShaderAdditiveComplexityCount; //  0x630 Size(4)
+	float MaxES3PixelShaderAdditiveComplexityCount; //  0x634 Size(4)
 	float MinLightMapDensity; //  0x638 Size(4)
 	float IdealLightMapDensity; //  0x63c Size(4)
 	float MaxLightMapDensity; //  0x640 Size(4)
-	char bRenderLightMapDensityGrayscale; //  0x644 Size(1)
+	char bRenderLightMapDensityGrays; //  0x644 Size(1)
 	float RenderLightMapDensityGrayscaleScale; //  0x648 Size(4)
 	float RenderLightMapDensityColorScale; //  0x64c Size(4)
-	Unknown LightMapDensityVertexMappedColor; //  0x650 Size(10)
-	Unknown LightMapDensitySelectedColo; //  0x660 Size(10)
-	Unknown StatColorMappings; //  0x670 Size(10)
-	Unknown DefaultPhysMaterial; //  0x680 Size(8)
-	Unknown DefaultPhysMaterialName; //  0x688 Size(18)
-	Unknown ActiveGameNameRedirects; //  0x6a0 Size(10)
-	Unknown ActiveClassRedirects; //  0x6b0 Size(10)
-	Unknown ActivePluginRedirects; //  0x6c0 Size(10)
-	Unknown ActiveStructRedirects; //  0x6d0 Size(10)
-	Unknown PreIntegratedSkinBRDFTexture; //  0x6e0 Size(8)
-	Unknown PreIntegratedSkinBRDFTextureName; //  0x6e8 Size(18)
-	Unknown BlueNoiseTexture; //  0x700 Size(8)
-	Unknown BlueNoiseTextureName; //  0x708 Size(18)
-	Unknown MiniFontTexture; //  0x720 Size(8)
-	Unknown MiniFontTextureName; //  0x728 Size(18)
-	Unknown WeightMapPlaceholderTexture; //  0x740 Size(8)
-	Unknown WeightMapPlaceholderTextureName; //  0x748 Size(18)
-	Unknown LightMapDensityTexture; //  0x760 Size(8)
-	Unknown LightMapDensityTextureName; //  0x768 Size(18)
-	Unknown GameViewport; //  0x788 Size(8)
-	Unknown DeferredCommands; //  0x790 Size(10)
+	struct Unknown LightMapDensityVertexMappedColor; //  0x650 Size(10)
+	struct Unknown LightMapDensitySelectedColor; //  0x660 Size(10)
+	struct TArray<Unknown> StatColorMappings; //  0x670 Size(10)
+	struct Unknown DefaultPhysMaterial; //  0x680 Size(8)
+	struct Unknown DefaultPhysMaterialName; //  0x688 Size(18)
+	struct TArray<Unknown> ActiveGameNameRedirects; //  0x6a0 Size(10)
+	struct TArray<Unknown> ActiveClassRedirects; //  0x6b0 Size(10)
+	struct TArray<Unknown> ActivePluginRedirects; //  0x6c0 Size(10)
+	struct TArray<Unknown> ActiveStructRedirects; //  0x6d0 Size(10)
+	struct Unknown PreIntegratedSkinBRDFTexture; //  0x6e0 Size(8)
+	struct Unknown PreIntegratedSkinBRDFTextureName; //  0x6e8 Size(18)
+	struct Unknown BlueNoiseTexture; //  0x700 Size(8)
+	struct Unknown BlueNoiseTextureName; //  0x708 Size(18)
+	struct Unknown MiniFontTexture; //  0x720 Size(8)
+	struct Unknown MiniFontTextureName; //  0x728 Size(18)
+	struct Unknown WeightMapPlaceholderTexture; //  0x740 Size(8)
+	struct Unknown WeightMapPlaceholderTextureName; //  0x748 Size(18)
+	struct Unknown LightMapDensityTexture; //  0x760 Size(8)
+	struct Unknown LightMapDensityTextureName; //  0x768 Size(18)
+	struct Unknown GameViewport; //  0x788 Size(8)
+	struct TArray<Unknown> DeferredCommands; //  0x790 Size(10)
 	int32_t TickCycles; //  0x7a0 Size(4)
 	int32_t GameCycles; //  0x7a4 Size(4)
 	int32_t ClientCycles; //  0x7a8 Size(4)
@@ -4793,43 +4793,43 @@ struct UEngine : Object {
 	float EditorNearClipPlane; //  0x7b0 Size(4)
 	char bUseCustomAudioModule; //  0x7b4 Size(1)
 	char bHardwareSurveyEnabled; //  0x7b8 Size(1)
-	char bSub; //  0x7b8 Size(1)
-	char bSubdwareSurveyEn; //  0x7b8 Size(1)
+	char bSubtitlesEnabled; //  0x7b8 Size(1)
+	char bSubtitlesForcedOff; //  0x7b8 Size(1)
 	int32_t MaximumLoopIterationCount; //  0x7bc Size(4)
-	char bCanBlueprintsTickByDefault; //  0x7c0 Size(1)
+	char bCanBlueprintsTickBy; //  0x7c0 Size(1)
 	char bOptimizeAnimBlueprintMemberVariableAccess; //  0x7c0 Size(1)
-	char bAllowMultiThreadedAnimatio; //  0x7c0 Size(1)
+	char bAllowMultiThreadedAnimationUpdate; //  0x7c0 Size(1)
 	char bEnableEditorPSysRealtimeLOD; //  0x7c0 Size(1)
 	char bSmoothFrameRate; //  0x7c0 Size(1)
 	char bUseFixedFrameRate; //  0x7c0 Size(1)
 	float FixedFrameRate; //  0x7c4 Size(4)
-	Unknown SmoothedFrameRateRange; //  0x7c8 Size(10)
-	Unknown CustomTimeStep; //  0x7d8 Size(8)
-	Unknown CustomTimeStepClassName; //  0x800 Size(18)
-	Unknown TimecodeProvider; //  0x818 Size(8)
-	Unknown TimecodeProviderClassName; //  0x840 Size(18)
+	struct Unknown SmoothedFrameRateRange; //  0x7c8 Size(10)
+	struct Unknown CustomTimeStep; //  0x7d8 Size(8)
+	struct Unknown CustomTimeStepClassName; //  0x800 Size(18)
+	struct Unknown TimecodeProvider; //  0x818 Size(8)
+	struct Unknown TimecodeProviderClassName; //  0x840 Size(18)
 	char bGenerateDefaultTimecode; //  0x858 Size(1)
-	Unknown GenerateDefaultTimecodeFrameRate; //  0x85c Size(8)
+	struct Unknown GenerateDefaultTimecodeFrameRate; //  0x85c Size(8)
 	float GenerateDefaultTimecodeFrameDelay; //  0x864 Size(4)
 	char bCheckForMultiplePawnsSpawnedInAFrame; //  0x868 Size(1)
 	int32_t NumPawnsAllowedToBeSpawnedInAFrame; //  0x86c Size(4)
 	char bShouldGenerateLowQualityLightmaps; //  0x870 Size(1)
-	Unknown C_WorldBox; //  0x874 Size(4)
-	Unknown C_BrushWire; //  0x878 Size(4)
-	Unknown C_AddWire; //  0x87c Size(4)
-	Unknown C_SubtractWire; //  0x880 Size(4)
-	Unknown C_SemiSolidWire; //  0x884 Size(4)
-	Unknown C_NonSolidWire; //  0x888 Size(4)
-	Unknown C_WireBackground; //  0x88c Size(4)
-	Unknown C_ScaleBoxHi; //  0x890 Size(4)
-	Unknown C_VolumeCollision; //  0x894 Size(4)
-	Unknown C_BSPCollision; //  0x898 Size(4)
-	Unknown C_OrthoBackground; //  0x89c Size(4)
-	Unknown C_Volume; //  0x8a0 Size(4)
-	Unknown C_BrushShape; //  0x8a4 Size(4)
+	struct Unknown C_WorldBox; //  0x874 Size(4)
+	struct Unknown C_BrushWire; //  0x878 Size(4)
+	struct Unknown C_AddWire; //  0x87c Size(4)
+	struct Unknown C_SubtractWire; //  0x880 Size(4)
+	struct Unknown C_SemiSolidWire; //  0x884 Size(4)
+	struct Unknown C_NonSolidWire; //  0x888 Size(4)
+	struct Unknown C_WireBackground; //  0x88c Size(4)
+	struct Unknown C_ScaleBoxHi; //  0x890 Size(4)
+	struct Unknown C_VolumeCollision; //  0x894 Size(4)
+	struct Unknown C_BSPCollision; //  0x898 Size(4)
+	struct Unknown C_OrthoBackground; //  0x89c Size(4)
+	struct Unknown C_Volume; //  0x8a0 Size(4)
+	struct Unknown C_BrushShape; //  0x8a4 Size(4)
 	float StreamingDistanceFactor; //  0x8a8 Size(4)
-	Unknown GameScreenshotSaveDirectory; //  0x8b0 Size(10)
-	Unknown TransitionType; //  0x8c0 Size(1)
+	struct Unknown GameScreenshotSaveDirectory; //  0x8b0 Size(10)
+	enum class Unknow TransitionType; //  0x8c0 Size(1)
 	struct FString TransitionDescription; //  0x8c8 Size(10)
 	struct FString TransitionGameMode; //  0x8d8 Size(10)
 	float MeshLODRange; //  0x8e8 Size(4)
@@ -4841,30 +4841,30 @@ struct UEngine : Object {
 	char bPauseOnLossOfFocus; //  0x900 Size(1)
 	int32_t MaxParticleResize; //  0x904 Size(4)
 	int32_t MaxParticleResizeWarn; //  0x908 Size(4)
-	Unknown PendingDroppedNotes; //  0x910 Size(10)
+	struct TArray<Unknown> PendingDroppedNotes; //  0x910 Size(10)
 	float NetClientTicksPerSecond; //  0x920 Size(4)
 	float DisplayGamma; //  0x924 Size(4)
 	float MinDesiredFrameRate; //  0x928 Size(4)
-	Unknown DefaultSelectedMaterialColo; //  0x92c Size(10)
-	Unknown SelectedMaterialColor; //  0x93c Size(10)
-	Unknown SelectionOutlineColor; //  0x94c Size(10)
-	Unknown SubduedSelectionOutlineColoe; //  0x95c Size(10)
-	Unknown SelectedMaterialColorOverride; //  0x96c Size(10)
+	struct Unknown DefaultSelectedMaterialColor; //  0x92c Size(10)
+	struct Unknown SelectedMaterialColor; //  0x93c Size(10)
+	struct Unknown SelectionOutlineColor; //  0x94c Size(10)
+	struct Unknown SubduedSelectionOutlineColor; //  0x95c Size(10)
+	struct Unknown SelectedMaterialColorOverride; //  0x96c Size(10)
 	char bIsOverridingSelectedColor; //  0x97c Size(1)
 	char bEnableOnScreenDebugMessages; //  0x980 Size(1)
 	char bEnableOnScreenDebugMessagesDisplay; //  0x980 Size(1)
 	char bSuppressMapWarnings; //  0x980 Size(1)
 	char bDisableAILogging; //  0x980 Size(1)
 	uint32_t bEnableVisualLogRecordingOnStart; //  0x984 Size(4)
-	int32_t ScreenSaverInhibitorSemapho; //  0x98c Size(4)
+	int32_t ScreenSaverInhibitorSemaphore; //  0x98c Size(4)
 	char bLockReadOnlyLevels; //  0x990 Size(1)
 	struct FString ParticleEventManagerClassPath; //  0x998 Size(10)
 	float SelectionHighlightIntensity; //  0x9a8 Size(4)
-	float BSPSelectionHighlightIntensity; //  0x9ac Size(4)
+	float BSPSelectionHighlightIntensWb; //  0x9ac Size(4)
 	float SelectionHighlightIntensityBillboards; //  0x9b0 Size(4)
-	Unknown NetDriverDefinitions; //  0xc00 Size(10)
-	Unknown ServerActors; //  0xc10 Size(10)
-	Unknown RuntimeServerActors; //  0xc20 Size(10)
+	struct TArray<Unknown> NetDriverDefinitions; //  0xc00 Size(10)
+	struct TArray<Unknown> ServerActors; //  0xc10 Size(10)
+	struct TArray<Unknown> RuntimeServerActors; //  0xc20 Size(10)
 	float NetErrorLogInterval; //  0xc30 Size(4)
 	char bStartedLoadMapMovie; //  0xc34 Size(1)
 	int32_t NextWorldContextHandle; //  0xc50 Size(4)
@@ -4872,29 +4872,29 @@ struct UEngine : Object {
 
 // Class Engine.LocalPlayer
 struct ULocalPlayer : UPlayer {
-	Unknown ViewportClient; //  0x70 Size(8)
-	Unknown AspectRatioAxisConstraint; //  0x94 Size(1)
-	Unknown PendingLevelPlayerControllerClass; //  0x98 Size(8)
+	struct Unknown ViewportClient; //  0x70 Size(8)
+	char AspectRatioAxisConstraint; //  0x94 Size(1)
+	struct Unknown* PendingLevelPlayerControllerClass; //  0x98 Size(8)
 	char bSentSplitJoin; //  0xa0 Size(1)
 	int32_t ControllerId; //  0xb8 Size(4)
 };
 
 // Class Engine.SkeletalMeshComponent
 struct USkeletalMeshComponent : USkinnedMeshComponent {
-	Unknown AnimBlueprintGeneratedClass; //  0x700 Size(8)
-	Unknown AnimClass; //  0x708 Size(8)
-	Unknown AnimScriptInstance; //  0x710 Size(8)
-	Unknown PostprocessAnimInstance; //  0x718 Size(8)
-	Unknown AnimationData; //  0x720 Size(18)
-	Unknown RootBoneTranslation; //  0x748 Size(c)
-	Unknown LineCheckBoundsScale; //  0x754 Size(c)
-	Unknown LinkedInstances; //  0x780 Size(10)
-	Unknown CachedBoneSpaceTransforms; //  0x790 Size(10)
-	Unknown CachedComponentSpaceTransfo; //  0x7a0 Size(10)
-	float Glob; //  0x7d0 Size(4)
-	Unknown KinematicBonesUpdateType; //  0x7d4 Size(1)
-	Unknown PhysicsTransformUpdateMode; //  0x7d5 Size(1)
-	Unknown AnimationMode; //  0x7dd Size(1)
+	struct Unknown* AnimBlueprintGeneratedClass; //  0x700 Size(8)
+	struct Unknown* AnimClass; //  0x708 Size(8)
+	struct Unknown AnimScriptInstance; //  0x710 Size(8)
+	struct Unknown PostprocessAnimInstance; //  0x718 Size(8)
+	struct Unknown AnimationData; //  0x720 Size(18)
+	struct Unknown RootBoneTranslation; //  0x748 Size(c)
+	struct Unknown LineCheckBoundsScale; //  0x754 Size(c)
+	struct TArray<Unknown> LinkedInstances; //  0x780 Size(10)
+	struct TArray<Unknown> CachedBoneSpaceTransforms; //  0x790 Size(10)
+	struct TArray<Unknown> CachedComponentSpaceTransforms; //  0x7a0 Size(10)
+	float GlobalAnimRateScale; //  0x7d0 Size(4)
+	char KinematicBonesUpdateType; //  0x7d4 Size(1)
+	char PhysicsTransformUpdateMode; //  0x7d5 Size(1)
+	char AnimationMode; //  0x7dd Size(1)
 	char bDisablePostProcessBlueprint; //  0x7df Size(1)
 	char bUpdateOverlapsOnAnimationFinalize; //  0x7df Size(1)
 	char bHasValidBodies; //  0x7df Size(1)
@@ -4915,7 +4915,7 @@ struct USkeletalMeshComponent : USkinnedMeshComponent {
 	char bUseRefPoseOnInitAnim; //  0x7e2 Size(1)
 	char bEnablePerPolyCollision; //  0x7e2 Size(1)
 	char bForceRefpose; //  0x7e2 Size(1)
-	char bOnlyAllowAutonomousTickPose; //  0x7e2 Size(1)
+	char bOnlyAllowAutonomousTickPos; //  0x7e2 Size(1)
 	char bIsAutonomousTickPose; //  0x7e2 Size(1)
 	char bOldForceRefPose; //  0x7e2 Size(1)
 	char bShowPrePhysBones; //  0x7e2 Size(1)
@@ -4933,7 +4933,7 @@ struct USkeletalMeshComponent : USkinnedMeshComponent {
 	char bSkipBoundsUpdateWhenInterpolating; //  0x7e4 Size(1)
 	char bNeedsQueuedAnimEventsDispatched; //  0x7e4 Size(1)
 	uint16_t CachedAnimCurveUidVersion; //  0x7e6 Size(2)
-	Unknown MassMode; //  0x7e8 Size(1)
+	enum class Unknow MassMode; //  0x7e8 Size(1)
 	float UniformMass; //  0x7ec Size(4)
 	float TotalMass; //  0x7f0 Size(4)
 	float Density; //  0x7f4 Size(4)
@@ -4945,23 +4945,23 @@ struct USkeletalMeshComponent : USkinnedMeshComponent {
 	float VolumeStiffness; //  0x80c Size(4)
 	float StrainLimitingStiffness; //  0x810 Size(4)
 	float ShapeTargetStiffness; //  0x814 Size(4)
-	Unknown DisallowedAnimCurves; //  0x818 Size(10)
-	Unknown BodySetup; //  0x828 Size(8)
+	struct TArray<Unknown> DisallowedAnimCurves; //  0x818 Size(10)
+	struct Unknown BodySetup; //  0x828 Size(8)
 	struct FMulticastInlineDelegate OnConstraintBroken; //  0x838 Size(10)
-	Unknown ClothingSimulationFactory; //  0x848 Size(8)
+	struct Unknown* ClothingSimulationFactory; //  0x848 Size(8)
 	float TeleportDistanceThreshold; //  0x918 Size(4)
 	float TeleportRotationThreshold; //  0x91c Size(4)
 	uint32_t LastPoseTickFrame; //  0x928 Size(4)
-	Unknown ClothingInteractor; //  0x980 Size(8)
+	struct Unknown ClothingInteractor; //  0x980 Size(8)
 	struct FMulticastInlineDelegate OnAnimInitialized; //  0xa50 Size(10)
 
-	void UnlinkAnimClassLayers(Unknown InClass); // Function Engine.SkeletalMeshComponent.UnlinkAnimClassLayers(Final|Native|Public|BlueprintCallable) // <Game+0x3de6e40>
+	void UnlinkAnimClassLayers(struct Unknown* InClass); // Function Engine.SkeletalMeshComponent.UnlinkAnimClassLayers(Final|Native|Public|BlueprintCallable) // <Game+0x3df3f90>
 };
 
 // Class Engine.AnimInstance
 struct UAnimInstance : Object {
-	Unknown CurrentSkeleton; //  0x28 Size(8)
-	Unknown RootMotionMode; //  0x30 Size(1)
+	struct Unknown CurrentSkeleton; //  0x28 Size(8)
+	char RootMotionMode; //  0x30 Size(1)
 	char bUseMultiThreadedAnimationUpdate; //  0x31 Size(1)
 	char bUsingCopyPoseFromMesh; //  0x31 Size(1)
 	char bReceiveNotifiesFromLinkedInstances; //  0x31 Size(1)
@@ -4971,33 +4971,33 @@ struct UAnimInstance : Object {
 	struct FMulticastInlineDelegate OnMontageStarted; //  0x48 Size(10)
 	struct FMulticastInlineDelegate OnMontageEnded; //  0x58 Size(10)
 	struct FMulticastInlineDelegate OnAllMontageInstancesEnded; //  0x68 Size(10)
-	Unknown NotifyQueue; //  0x100 Size(70)
-	Unknown ActiveAnimNotifyState; //  0x170 Size(10)
+	struct Unknown NotifyQueue; //  0x100 Size(70)
+	struct TArray<Unknown> ActiveAnimNotifyState; //  0x170 Size(10)
 
-	void UnlockAIResources(char bUnlockMovement, char UnlockAILogic); // Function Engine.AnimInstance.UnlockAIResources(Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <Game+0x1ed8b20>
+	void UnlockAIResources(char bUnlockMovement, char UnlockAILogic); // Function Engine.AnimInstance.UnlockAIResources(Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <Game+0x1edf3b0>
 };
 
 // Class Engine.Exporter
 struct UExporter : Object {
-	Unknown SupportedClass; //  0x28 Size(8)
-	Unknown ExportRootScope; //  0x30 Size(8)
-	Unknown FormatExtension; //  0x38 Size(10)
-	Unknown FormatDescription; //  0x48 Size(10)
+	struct Unknown* SupportedClass; //  0x28 Size(8)
+	struct Unknown ExportRootScope; //  0x30 Size(8)
+	struct TArray<Unknown> FormatExtension; //  0x38 Size(10)
+	struct TArray<Unknown> FormatDescription; //  0x48 Size(10)
 	int32_t PreferredFormatIndex; //  0x58 Size(4)
 	int32_t TextIndent; //  0x5c Size(4)
 	char bText; //  0x60 Size(1)
 	char bSelectedOnly; //  0x60 Size(1)
 	char bForceFileOperations; //  0x60 Size(1)
-	Unknown ExportTask; //  0x68 Size(8)
+	struct Unknown ExportTask; //  0x68 Size(8)
 
-	char ScriptRunAssetExportTask(Unknown Task); // Function Engine.Exporter.ScriptRunAssetExportTask(Event|Public|BlueprintEvent) // <Game+0x23a73f0>
+	char ScriptRunAssetExportTask(struct Unknown Task); // Function Engine.Exporter.ScriptRunAssetExportTask(Event|Public|BlueprintEvent) // <Game+0x23b1e70>
 };
 
 // Class Engine.LevelScriptActor
 struct ALevelScriptActor : UActor {
 	char bInputEnabled; //  0x310 Size(1)
 
-	void WorldOriginLocationChanged(Unknown OldOriginLocation, Unknown NewOriginLocation); // Function Engine.LevelScriptActor.WorldOriginLocationChanged(Event|Public|HasDefaults|BlueprintEvent) // <Game+0x23a73f0>
+	void WorldOriginLocationChanged(struct Unknown OldOriginLocation, struct Unknown NewOriginLocation); // Function Engine.LevelScriptActor.WorldOriginLocationChanged(Event|Public|HasDefaults|BlueprintEvent) // <Game+0x23b1e70>
 };
 
 // Class Engine.FXSystemAsset
@@ -5007,138 +5007,138 @@ struct UFXSystemAsset : Object {
 
 // Class Engine.Brush
 struct ABrush : UActor {
-	Unknown BrushType; //  0x310 Size(1)
-	Unknown BrushColor; //  0x314 Size(4)
+	char BrushType; //  0x310 Size(1)
+	struct Unknown BrushColor; //  0x314 Size(4)
 	int32_t PolyFlags; //  0x318 Size(4)
 	char bColored; //  0x31c Size(1)
 	char bSolidWhenSelected; //  0x31c Size(1)
 	char bPlaceableFromClassBrowser; //  0x31c Size(1)
 	char bNotForClientOrServ; //  0x31c Size(1)
-	Unknown Brush; //  0x320 Size(8)
-	Unknown BrushComponent; //  0x328 Size(8)
+	struct Unknown Brush; //  0x320 Size(8)
+	struct Unknown BrushComponent; //  0x328 Size(8)
 	char bInManipulation; //  0x330 Size(1)
-	Unknown SavedSelections; //  0x338 Size(10)
+	struct TArray<Unknown> SavedSelections; //  0x338 Size(10)
 };
 
 // Class Engine.MKWorldEx
 struct UMKWorldEx : Object {
-	Unknown SelfWorld; //  0x38 Size(8)
+	struct Unknown SelfWorld; //  0x38 Size(8)
 };
 
 // Class Engine.World
 struct UWorld : UMKWorldEx {
-	Unknown PersistentLevel; //  0x48 Size(8)
-	Unknown NetDriver; //  0x50 Size(8)
-	Unknown LineBatcher; //  0x58 Size(8)
-	Unknown PersistentLineBatcher; //  0x60 Size(8)
-	Unknown ForegroundLineBatcher; //  0x68 Size(8)
-	Unknown NetworkManager; //  0x70 Size(8)
-	Unknown PhysicsCollisionHandler; //  0x78 Size(8)
-	Unknown ExtraReferencedObjects; //  0x80 Size(10)
-	Unknown PerModuleDataObjects; //  0x90 Size(10)
-	Unknown LevelSequenceActors; //  0xa0 Size(10)
-	Unknown StreamingLevels; //  0xb0 Size(10)
-	Unknown StreamingLevelsToConsider; //  0xc0 Size(48)
+	struct Unknown PersistentLevel; //  0x48 Size(8)
+	struct Unknown NetDriver; //  0x50 Size(8)
+	struct Unknown LineBatcher; //  0x58 Size(8)
+	struct Unknown PersistentLineBatcher; //  0x60 Size(8)
+	struct Unknown ForegroundLineBatcher; //  0x68 Size(8)
+	struct Unknown NetworkManager; //  0x70 Size(8)
+	struct Unknown PhysicsCollisionHandler; //  0x78 Size(8)
+	struct TArray<Unknown> ExtraReferencedObjects; //  0x80 Size(10)
+	struct TArray<Unknown> PerModuleDataObjects; //  0x90 Size(10)
+	struct TArray<Unknown> LevelSequenceActors; //  0xa0 Size(10)
+	struct TArray<Unknown> StreamingLevels; //  0xb0 Size(10)
+	struct Unknown StreamingLevelsToConsider; //  0xc0 Size(48)
 	struct FString StreamingLevelsPrefix; //  0x120 Size(10)
-	Unknown CurrentLevelPendingVisibility; //  0x130 Size(8)
-	Unknown CurrentLevelPendingInvisibility; //  0x138 Size(8)
-	Unknown DemoNetDriver; //  0x140 Size(8)
-	Unknown MyParticleEventManager; //  0x148 Size(8)
-	Unknown DefaultPhysicsVolume; //  0x150 Size(8)
+	struct Unknown CurrentLevelPendingVisibility; //  0x130 Size(8)
+	struct Unknown CurrentLevelPendingInvisibility; //  0x138 Size(8)
+	struct Unknown DemoNetDriver; //  0x140 Size(8)
+	struct Unknown MyParticleEventManager; //  0x148 Size(8)
+	struct Unknown DefaultPhysicsVolume; //  0x150 Size(8)
 	char bAreConstraintsDirty; //  0x16e Size(1)
-	Unknown NavigationSystem; //  0x170 Size(8)
-	Unknown AuthorityGameMode; //  0x178 Size(8)
-	Unknown GameState; //  0x180 Size(8)
-	Unknown AISystem; //  0x188 Size(8)
-	Unknown AvoidanceManager; //  0x190 Size(8)
-	Unknown Levels; //  0x198 Size(10)
-	Unknown LevelCollections; //  0x1a8 Size(10)
-	Unknown OwningGameInstance; //  0x1d8 Size(8)
-	Unknown ParameterCollectionInstances; //  0x1e0 Size(10)
-	Unknown CanvasForRenderingToTarget; //  0x1f0 Size(8)
-	Unknown CanvasForDrawMaterialToRenderTarget; //  0x1f8 Size(8)
-	Unknown ComponentsThatNeedEndOfFrameUpdate; //  0x250 Size(10)
-	Unknown ComponentsThatNeedEndOfFrameUpdate_OnGameThread; //  0x260 Size(10)
-	Unknown WorldComposition; //  0x5b0 Size(8)
-	Unknown PSCPool; //  0x650 Size(58)
+	struct Unknown NavigationSystem; //  0x170 Size(8)
+	struct Unknown AuthorityGameMode; //  0x178 Size(8)
+	struct Unknown GameState; //  0x180 Size(8)
+	struct Unknown AISystem; //  0x188 Size(8)
+	struct Unknown AvoidanceManager; //  0x190 Size(8)
+	struct TArray<Unknown> Levels; //  0x198 Size(10)
+	struct TArray<Unknown> LevelCollections; //  0x1a8 Size(10)
+	struct Unknown OwningGameInstance; //  0x1d8 Size(8)
+	struct TArray<Unknown> ParameterCollectionInstances; //  0x1e0 Size(10)
+	struct Unknown CanvasForRenderingToTarget; //  0x1f0 Size(8)
+	struct Unknown CanvasForDrawMaterialToRenderTarget; //  0x1f8 Size(8)
+	struct TArray<Unknown> ComponentsThatNeedEndOfFrameUpdate; //  0x250 Size(10)
+	struct TArray<Unknown> ComponentsThatNeedEndOfFrameUpdate_OnGameThread; //  0x260 Size(10)
+	struct Unknown WorldComposition; //  0x5b0 Size(8)
+	struct Unknown PSCPool; //  0x650 Size(58)
 
-	Unknown K2_GetWorldSettings(); // Function Engine.World.K2_GetWorldSettings(Final|Native|Public|BlueprintCallable) // <Game+0x3e209f0>
+	struct Unknown K2_G(); // Function Engine.World.K2_G(Final|Native|Public|BlueprintCallable) // <Game+0x3e2e050>
 };
 
 // Class Engine.InterpTrack
 struct UInterpTrack : Object {
-	Unknown SubTracks; //  0x38 Size(10)
-	Unknown TrackInstClass; //  0x48 Size(8)
-	Unknown ActiveCondition; //  0x50 Size(1)
+	struct TArray<Unknown> SubTracks; //  0x38 Size(10)
+	struct Unknown* TrackInstClass; //  0x48 Size(8)
+	char ActiveCondition; //  0x50 Size(1)
 	struct FString TrackTitle; //  0x58 Size(10)
 	char bOnePerGroup; //  0x68 Size(1)
 	char bDirGroupOnly; //  0x68 Size(1)
 	char bDisableTrack; //  0x68 Size(1)
 	char bIsSelected; //  0x68 Size(1)
 	char bIsAnimControlTrack; //  0x68 Size(1)
-	char bSub; //  0x68 Size(1)
+	char bSubTrackOnly; //  0x68 Size(1)
 	char bVisible; //  0x68 Size(1)
 	char bIsRecording; //  0x68 Size(1)
 };
 
 // Class Engine.InterpTrackVectorBase
 struct UInterpTrackVectorBase : UInterpTrack {
-	Unknown VectorTrack; //  0x70 Size(18)
+	struct Unknown VectorTrack; //  0x70 Size(18)
 	float CurveTension; //  0x88 Size(4)
 };
 
 // Class Engine.InterpTrackFloatBase
 struct UInterpTrackFloatBase : UInterpTrack {
-	Unknown FloatTrack; //  0x70 Size(18)
+	struct Unknown FloatTrack; //  0x70 Size(18)
 	float CurveTension; //  0x88 Size(4)
 };
 
 // Class Engine.DataAsset
 struct UDataAsset : Object {
-	Unknown NativeClass; //  0x28 Size(8)
+	struct Unknown* NativeClass; //  0x28 Size(8)
 };
 
 // Class Engine.MaterialExpression
 struct UMaterialExpression : Object {
-	Unknown Material; //  0x28 Size(8)
-	Unknown Function; //  0x30 Size(8)
+	struct Unknown Material; //  0x28 Size(8)
+	struct Unknown Function; //  0x30 Size(8)
 	char bIsParameterExpression; //  0x38 Size(1)
 };
 
 // Class Engine.MaterialExpressionTextureBase
 struct UMaterialExpressionTextureBase : UMaterialExpression {
-	Unknown Texture; //  0x40 Size(8)
-	Unknown SamplerType; //  0x48 Size(1)
+	struct Unknown Texture; //  0x40 Size(8)
+	char SamplerType; //  0x48 Size(1)
 	char IsDefaultMeshpaintTexture; //  0x49 Size(1)
 };
 
 // Class Engine.MaterialExpressionTextureSample
 struct UMaterialExpressionTextureSample : UMaterialExpressionTextureBase {
-	Unknown Coordinates; //  0x50 Size(c)
-	Unknown TextureObject; //  0x64 Size(c)
-	Unknown MipValue; //  0x78 Size(c)
-	Unknown CoordinatesDX; //  0x8c Size(c)
-	Unknown CoordinatesDY; //  0xa0 Size(c)
-	Unknown AutomaticViewMipBiasValue; //  0xb4 Size(c)
-	Unknown MipValueMode; //  0xc8 Size(1)
-	Unknown SamplerSource; //  0xc9 Size(1)
+	struct Unknown Coordinates; //  0x50 Size(c)
+	struct Unknown TextureObject; //  0x64 Size(c)
+	struct Unknown MipValue; //  0x78 Size(c)
+	struct Unknown CoordinatesDX; //  0x8c Size(c)
+	struct Unknown CoordinatesDY; //  0xa0 Size(c)
+	struct Unknown AutomaticViewMipBiasValue; //  0xb4 Size(c)
+	char MipValueMode; //  0xc8 Size(1)
+	char SamplerSource; //  0xc9 Size(1)
 	char AutomaticViewMipBias; //  0xca Size(1)
-	Unknown ConstCoordinate; //  0xcb Size(1)
+	char ConstCoordinate; //  0xcb Size(1)
 	int32_t ConstMipValue; //  0xcc Size(4)
 };
 
 // Class Engine.MaterialExpressionTextureSampleParameter
 struct UMaterialExpressionTextureSampleParameter : UMaterialExpressionTextureSample {
 	struct FName ParameterName; //  0xd0 Size(8)
-	Unknown ExpressionGUID; //  0xd8 Size(10)
+	struct Unknown ExpressionGUID; //  0xd8 Size(10)
 	struct FName Group; //  0xe8 Size(8)
 };
 
 // Class Engine.MKPawnEx
 struct AMKPawnEx : UActor {
-	Unknown SelfPawn; //  0x318 Size(8)
+	struct Unknown SelfPawn; //  0x318 Size(8)
 
-	void OnChangedViewMode(); // Function Engine.MKPawnEx.OnChangedViewMode(Native|Event|Public|BlueprintEvent) // <Game+0x1e4be10>
+	void OnChangedViewMode(); // Function Engine.MKPawnEx.OnChangedViewMode(Native|Event|Public|BlueprintEvent) // <Game+0x1e52540>
 };
 
 // Class Engine.Pawn
@@ -5148,38 +5148,38 @@ struct APawn : AMKPawnEx {
 	char bUseControllerRotationRoll; //  0x328 Size(1)
 	char bCanAffectNavigationGeneration; //  0x328 Size(1)
 	float BaseEyeHeight; //  0x32c Size(4)
-	Unknown AutoPossessPlayer; //  0x330 Size(1)
-	Unknown AutoPossessAI; //  0x331 Size(1)
+	char AutoPossessPlayer; //  0x330 Size(1)
+	enum class Unknow AutoPossessAI; //  0x331 Size(1)
 	uint16_t RemoteViewPitch; //  0x332 Size(2)
 	uint16_t RemoteViewYaw; //  0x334 Size(2)
-	Unknown AIControllerClass; //  0x338 Size(8)
-	Unknown PlayerState; //  0x340 Size(8)
-	Unknown LastHitBy; //  0x350 Size(8)
-	Unknown Controller; //  0x358 Size(8)
-	Unknown ControlInputVector; //  0x364 Size(c)
-	Unknown LastControlInputVector; //  0x370 Size(c)
+	struct Unknown* AIControllerClass; //  0x338 Size(8)
+	struct Unknown PlayerState; //  0x340 Size(8)
+	struct Unknown LastHitBy; //  0x350 Size(8)
+	struct Unknown Controller; //  0x358 Size(8)
+	struct Unknown ControlInputVector; //  0x364 Size(c)
+	struct Unknown LastControlInputVector; //  0x370 Size(c)
 
-	void SpawnDefaultController(); // Function Engine.Pawn.SpawnDefaultController(Native|Public|BlueprintCallable) // <Game+0x3da7a70>
+	void SpawnDefaultController(); // Function Engine.Pawn.SpawnDefaultController(Native|Public|BlueprintCallable) // <Game+0x3db47a0>
 };
 
 // Class Engine.MKCharacterEx
 struct AMKCharacterEx : APawn {
-	Unknown SelfCharacter; //  0x388 Size(8)
+	struct Unknown SelfCharacter; //  0x388 Size(8)
 };
 
 // Class Engine.Character
 struct ACharacter : AMKCharacterEx {
-	Unknown Mesh; //  0x398 Size(8)
-	Unknown CharacterMovement; //  0x3a0 Size(8)
-	Unknown CapsuleComponent; //  0x3a8 Size(8)
-	Unknown BasedMovement; //  0x3b8 Size(30)
-	Unknown ReplicatedBasedMovement; //  0x3e8 Size(30)
+	struct Unknown Mesh; //  0x398 Size(8)
+	struct Unknown CharacterMovement; //  0x3a0 Size(8)
+	struct Unknown CapsuleComponent; //  0x3a8 Size(8)
+	struct Unknown BasedMovement; //  0x3b8 Size(30)
+	struct Unknown ReplicatedBasedMovement; //  0x3e8 Size(30)
 	float AnimRootMotionTranslationScale; //  0x418 Size(4)
-	Unknown BaseTranslationOffset; //  0x41c Size(c)
-	Unknown BaseRotationOffset; //  0x430 Size(10)
-	float ReplicatedServerLastTransfo; //  0x440 Size(4)
+	struct Unknown BaseTranslationOffset; //  0x41c Size(c)
+	struct Unknown BaseRotationOffset; //  0x430 Size(10)
+	float ReplicatedServerLastTransformUpdateTimeStamp; //  0x440 Size(4)
 	float ReplayLastTransformUpdateTimeStamp; //  0x444 Size(4)
-	Unknown ReplicatedMovementMode; //  0x448 Size(1)
+	char ReplicatedMovementMode; //  0x448 Size(1)
 	char bInBaseReplication; //  0x449 Size(1)
 	float CrouchedEyeHeight; //  0x44c Size(4)
 	char bIsCrouched; //  0x450 Size(1)
@@ -5202,21 +5202,21 @@ struct ACharacter : AMKCharacterEx {
 	struct FMulticastInlineDelegate OnReachedJumpApex; //  0x470 Size(10)
 	struct FMulticastInlineDelegate MovementModeChangedDelegate; //  0x490 Size(10)
 	struct FMulticastInlineDelegate OnCharacterMovementUpdated; //  0x4a0 Size(10)
-	Unknown SavedRootMotion; //  0x4b0 Size(38)
-	Unknown ClientRootMotionParams; //  0x4f0 Size(40)
-	Unknown RootMotionRepMoves; //  0x530 Size(10)
-	Unknown RepRootMotion; //  0x540 Size(98)
+	struct Unknown SavedRootMotion; //  0x4b0 Size(38)
+	struct Unknown ClientRootMotionParams; //  0x4f0 Size(40)
+	struct TArray<Unknown> RootMotionRepMoves; //  0x530 Size(10)
+	struct Unknown RepRootMotion; //  0x540 Size(98)
 
-	void UnCrouch(char bClientSimulation); // Function Engine.Character.UnCrouch(Native|Public|BlueprintCallable) // <Game+0x2024f20>
+	void UnCrouch(char bClientSimulation); // Function Engine.Character.UnCrouch(Native|Public|BlueprintCallable) // <Game+0x202df60>
 };
 
 // Class Engine.SplineComponent
 struct USplineComponent : UPrimitiveComponent {
-	Unknown SplineCurves; //  0x4b8 Size(68)
-	Unknown SplineInfo; //  0x520 Size(18)
-	Unknown SplineRotInfo; //  0x538 Size(18)
-	Unknown SplineScaleInfo; //  0x550 Size(18)
-	Unknown SplineReparamTable; //  0x568 Size(18)
+	struct Unknown SplineCurves; //  0x4b8 Size(68)
+	struct Unknown SplineInfo; //  0x520 Size(18)
+	struct Unknown SplineRotInfo; //  0x538 Size(18)
+	struct Unknown SplineScaleInfo; //  0x550 Size(18)
+	struct Unknown SplineReparamTable; //  0x568 Size(18)
 	char bAllowSplineEditingPerInstance; //  0x580 Size(1)
 	int32_t ReparamStepsPerSegment; //  0x584 Size(4)
 	float Duration; //  0x588 Size(4)
@@ -5228,18 +5228,18 @@ struct USplineComponent : UPrimitiveComponent {
 	char bClosedLoop; //  0x591 Size(1)
 	char bLoopPositionOverride; //  0x592 Size(1)
 	float LoopPosition; //  0x594 Size(4)
-	Unknown DefaultUpVector; //  0x598 Size(c)
+	struct Unknown DefaultUpVector; //  0x598 Size(c)
 
-	void UpdateSpline(); // Function Engine.SplineComponent.UpdateSpline(Final|Native|Public|BlueprintCallable) // <Game+0x3e04590>
+	void UpdateSpline(); // Function Engine.SplineComponent.UpdateSpline(Final|Native|Public|BlueprintCallable) // <Game+0x3e118f0>
 };
 
 // Class Engine.Commandlet
 struct UCommandlet : Object {
-	struct FString HelpDescription; //  0x28 Size(10)
+	struct FString Help; //  0x28 Size(10)
 	struct FString HelpUsage; //  0x38 Size(10)
 	struct FString HelpWebLink; //  0x48 Size(10)
-	Unknown HelpParamNames; //  0x58 Size(10)
-	Unknown HelpParamDescriptions; //  0x68 Size(10)
+	struct TArray<Unknown> HelpParamNames; //  0x58 Size(10)
+	struct TArray<Unknown> HelpParamDescriptions; //  0x68 Size(10)
 	char IsServer; //  0x78 Size(1)
 	char IsClient; //  0x78 Size(1)
 	char IsEditor; //  0x78 Size(1)
@@ -5250,9 +5250,9 @@ struct UCommandlet : Object {
 
 // Class Engine.AudioComponent
 struct UAudioComponent : USceneComponent {
-	Unknown Sound; //  0x238 Size(8)
-	Unknown InstanceParameters; //  0x240 Size(10)
-	Unknown SoundClassOverride; //  0x250 Size(8)
+	struct Unknown Sound; //  0x238 Size(8)
+	struct TArray<Unknown> InstanceParameters; //  0x240 Size(10)
+	struct Unknown SoundClassOverride; //  0x250 Size(8)
 	char bAutoDestroy; //  0x258 Size(1)
 	char bStopWhenOwnerDestroyed; //  0x258 Size(1)
 	char bShouldRemainActiveIfDropped; //  0x258 Size(1)
@@ -5274,49 +5274,49 @@ struct UAudioComponent : USceneComponent {
 	int32_t EnvelopeFollowerReleaseTime; //  0x280 Size(4)
 	float Priority; //  0x284 Size(4)
 	float SubtitlePriority; //  0x288 Size(4)
-	Unknown SourceEffectChain; //  0x290 Size(8)
+	struct Unknown SourceEffectChain; //  0x290 Size(8)
 	float PitchMultiplier; //  0x298 Size(4)
 	float LowPassFilterFrequency; //  0x29c Size(4)
-	Unknown AttenuationSettings; //  0x2a8 Size(8)
-	Unknown AttenuationOverrides; //  0x2b0 Size(3a0)
-	Unknown ConcurrencySettings; //  0x650 Size(8)
-	Unknown ConcurrencySet; //  0x658 Size(50)
-	Unknown AutoAttachLocationRule; //  0x6b4 Size(1)
-	Unknown AutoAttachRotationRule; //  0x6b5 Size(1)
-	Unknown AutoAttachScaleRule; //  0x6b6 Size(1)
+	struct Unknown AttenuationSettings; //  0x2a8 Size(8)
+	struct Unknown AttenuationOverrides; //  0x2b0 Size(3a0)
+	struct Unknown ConcurrencySettings; //  0x650 Size(8)
+	struct TSet<Unknown> ConcurrencySet; //  0x658 Size(50)
+	enum class Unknow AutoAttachLocationRule; //  0x6b4 Size(1)
+	enum class Unknow AutoAttachRotationRule; //  0x6b5 Size(1)
+	enum class Unknow AutoAttachScaleRule; //  0x6b6 Size(1)
 	struct FMulticastInlineDelegate OnAudioFinished; //  0x6b8 Size(10)
 	struct FMulticastInlineDelegate OnAudioPlaybackPercent; //  0x6e0 Size(10)
 	struct FMulticastInlineDelegate OnAudioSingleEnvelopeValue; //  0x708 Size(10)
 	struct FMulticastInlineDelegate OnAudioMultiEnvelopeValue; //  0x730 Size(10)
-	Unknown Modulation; //  0x758 Size(10)
+	struct Unknown Modulation; //  0x758 Size(10)
 	struct FDelegate OnQueueSubtitles; //  0x768 Size(10)
-	Unknown AutoAttachParent; //  0x778 Size(8)
+	struct TWeakObjectPtr<struct Unknown> AutoAttachParent; //  0x778 Size(8)
 	struct FName AutoAttachSocketName; //  0x780 Size(8)
 
-	void StopDelayed(float DelayTime); // Function Engine.AudioComponent.StopDelayed(Final|Native|Public|BlueprintCallable) // <Game+0x3c85000>
+	void Stop(float DelayTime); // Function Engine.AudioComponent.Stop(Final|Native|Public|BlueprintCallable) // <Game+0x3c90f70>
 };
 
 // Class Engine.GameModeBase
 struct AGameModeBase : AInfo {
 	struct FString OptionsString; //  0x310 Size(10)
-	Unknown GameSessionClass; //  0x320 Size(8)
-	Unknown GameStateClass; //  0x328 Size(8)
-	Unknown PlayerControllerClass; //  0x330 Size(8)
-	Unknown PlayerStateClass; //  0x338 Size(8)
-	Unknown HUDClass; //  0x340 Size(8)
-	Unknown DefaultPawnClass; //  0x348 Size(8)
-	Unknown SpectatorClass; //  0x350 Size(8)
-	Unknown ReplaySpectatorPlayerContro; //  0x358 Size(8)
-	Unknown ServerStatReplicatorClass; //  0x360 Size(8)
-	Unknown GameSession; //  0x368 Size(8)
-	Unknown GameState; //  0x370 Size(8)
-	Unknown ServerStatReplicator; //  0x378 Size(8)
+	struct Unknown* GameSessionClass; //  0x320 Size(8)
+	struct Unknown* GameStateClass; //  0x328 Size(8)
+	struct Unknown* PlayerControllerClass; //  0x330 Size(8)
+	struct Unknown* PlayerStateClass; //  0x338 Size(8)
+	struct Unknown* HUDClass; //  0x340 Size(8)
+	struct Unknown* DefaultPawnClass; //  0x348 Size(8)
+	struct Unknown* SpectatorClass; //  0x350 Size(8)
+	struct Unknown* ReplaySpectatorPlayerControllerClass; //  0x358 Size(8)
+	struct Unknown* ServerStatReplicatorClass; //  0x360 Size(8)
+	struct Unknown GameSession; //  0x368 Size(8)
+	struct Unknown GameState; //  0x370 Size(8)
+	struct Unknown ServerStatReplicator; //  0x378 Size(8)
 	struct FText DefaultPlayerName; //  0x380 Size(18)
 	char bUseSeamlessTravel; //  0x398 Size(1)
 	char bStartPlayersAsSpectators; //  0x398 Size(1)
 	char bPauseable; //  0x398 Size(1)
 
-	void StartPlay(); // Function Engine.GameModeBase.StartPlay(Native|Public|BlueprintCallable) // <Game+0x3cdadb0>
+	void StartPlay(); // Function Engine.GameModeBase.StartPlay(Native|Public|BlueprintCallable) // <Game+0x3ce7380>
 };
 
 // Class Engine.GameMode
@@ -5328,27 +5328,27 @@ struct AGameMode : AGameModeBase {
 	int32_t NumBots; //  0x3c4 Size(4)
 	float MinRespawnDelay; //  0x3c8 Size(4)
 	int32_t NumTravellingPlayers; //  0x3cc Size(4)
-	Unknown EngineMessageClass; //  0x3d0 Size(8)
-	Unknown InactivePlayerArray; //  0x3d8 Size(10)
+	struct Unknown* EngineMessageClass; //  0x3d0 Size(8)
+	struct TArray<Unknown> InactivePlayerArray; //  0x3d8 Size(10)
 	float InactivePlayerStateLifeSpan; //  0x3e8 Size(4)
 	int32_t MaxInactivePlayers; //  0x3ec Size(4)
 	char bHandleDedicatedServerReplays; //  0x3f0 Size(1)
 
-	void StartMatch(); // Function Engine.GameMode.StartMatch(Native|Public|BlueprintCallable) // <Game+0x3cdad90>
+	void StartMatch(); // Function Engine.GameMode.StartMatch(Native|Public|BlueprintCallable) // <Game+0x3ce7360>
 };
 
 // Class Engine.GameStateBase
 struct AGameStateBase : AInfo {
-	Unknown GameModeClass; //  0x310 Size(8)
-	Unknown AuthorityGameMode; //  0x318 Size(8)
-	Unknown SpectatorClass; //  0x320 Size(8)
-	Unknown PlayerArray; //  0x328 Size(10)
+	struct Unknown* GameModeClass; //  0x310 Size(8)
+	struct Unknown AuthorityGameMode; //  0x318 Size(8)
+	struct Unknown* SpectatorClass; //  0x320 Size(8)
+	struct TArray<Unknown> PlayerArray; //  0x328 Size(10)
 	char bReplicatedHasBegunPlay; //  0x338 Size(1)
 	float ReplicatedWorldTimeSeconds; //  0x33c Size(4)
 	float ServerWorldTimeSecondsDelta; //  0x340 Size(4)
 	float ServerWorldTimeSecondsUpdateFrequency; //  0x344 Size(4)
 
-	void OnRep_SpectatorClass(); // Function Engine.GameStateBase.OnRep_SpectatorClass(Native|Protected) // <Game+0x1f184e0>
+	void OnRep_SpectatorClass(); // Function Engine.GameStateBase.OnRep_SpectatorClass(Native|Protected) // <Game+0x1f1f240>
 };
 
 // Class Engine.GameState
@@ -5357,53 +5357,53 @@ struct AGameState : AGameStateBase {
 	struct FName PreviousMatchState; //  0x368 Size(8)
 	int32_t ElapsedTime; //  0x370 Size(4)
 
-	void OnRep_MatchState(); // Function Engine.GameState.OnRep_MatchState(Native|Public) // <Game+0x3cda6f0>
+	void OnRep_MatchState(); // Function Engine.GameState.OnRep_MatchState(Native|Public) // <Game+0x3ce6cc0>
 };
 
 // Class Engine.Controller
 struct AController : UActor {
-	Unknown PlayerState; //  0x348 Size(8)
+	struct Unknown PlayerState; //  0x348 Size(8)
 	struct FMulticastInlineDelegate OnInstigatedAnyDamage; //  0x388 Size(10)
 	struct FName StateName; //  0x324 Size(8)
-	Unknown Pawn; //  0x378 Size(8)
-	Unknown Character; //  0x338 Size(8)
-	Unknown TransformComponent; //  0x330 Size(8)
-	Unknown ControlRotation; //  0x39c Size(c)
+	struct Unknown Pawn; //  0x378 Size(8)
+	struct Unknown Character; //  0x338 Size(8)
+	struct Unknown TransformComponent; //  0x330 Size(8)
+	struct Unknown ControlRotation; //  0x39c Size(c)
 	char bAttachToPawn; //  0x32c Size(1)
 
-	void UnPossess(); // Function Engine.Controller.UnPossess(Final|Native|Public|BlueprintCallable) // <Game+0x3cb41f0>
+	void UnPossess(); // Function Engine.Controller.UnPossess(Final|Native|Public|BlueprintCallable) // <Game+0x3cc04b0>
 };
 
 // Class Engine.MKPlayerControllerEx
 struct AMKPlayerControllerEx : AController {
-	Unknown SelfPlayerController; //  0x3b0 Size(8)
+	struct Unknown SelfPlayerController; //  0x3b0 Size(8)
 };
 
 // Class Engine.PlayerController
 struct APlayerController : AMKPlayerControllerEx {
-	Unknown Player; //  0x510 Size(8)
-	Unknown AcknowledgedPawn; //  0x428 Size(8)
-	Unknown ControllingDirTrackInst; //  0x4f8 Size(8)
-	Unknown MyHUD; //  0x5e8 Size(8)
-	Unknown PlayerCameraManager; //  0x438 Size(8)
-	Unknown PlayerCameraManagerClass; //  0x480 Size(8)
+	struct Unknown Player; //  0x510 Size(8)
+	struct Unknown AcknowledgedPawn; //  0x428 Size(8)
+	struct Unknown ControllingDirTrackInst; //  0x4f8 Size(8)
+	struct Unknown MyHUD; //  0x5e8 Size(8)
+	struct Unknown PlayerCameraManager; //  0x438 Size(8)
+	struct Unknown* PlayerCameraManagerClass; //  0x480 Size(8)
 	char bAutoManageActiveCameraTarget; //  0x6e4 Size(1)
-	Unknown TargetViewRotation; //  0x664 Size(c)
+	struct Unknown TargetViewRotation; //  0x664 Size(c)
 	float SmoothTargetViewRotationSpeed; //  0x640 Size(4)
-	Unknown HiddenActors; //  0x5b8 Size(10)
-	Unknown HiddenPrimitiveComponents; //  0x4d0 Size(10)
+	struct TArray<Unknown> HiddenActors; //  0x5b8 Size(10)
+	struct TArray<Unknown> HiddenPrimitiveComponents; //  0x4d0 Size(10)
 	float LastSpectatorStateSynchTime; //  0x674 Size(4)
-	Unknown LastSpectatorSyncLocation; //  0x558 Size(c)
-	Unknown LastSpectatorSyncRotation; //  0x45c Size(c)
+	struct Unknown LastSpectatorSyncLocation; //  0x558 Size(c)
+	struct Unknown LastSpectatorSyncRotation; //  0x45c Size(c)
 	int32_t ClientCap; //  0x478 Size(4)
-	Unknown CheatManager; //  0x568 Size(8)
-	Unknown CheatClass; //  0x590 Size(8)
-	Unknown PlayerInput; //  0x518 Size(8)
-	Unknown ActiveForceFeedbackEffects; //  0x580 Size(10)
+	struct Unknown CheatManager; //  0x568 Size(8)
+	struct Unknown* CheatClass; //  0x590 Size(8)
+	struct Unknown PlayerInput; //  0x518 Size(8)
+	struct TArray<Unknown> ActiveForceFeedbackEffects; //  0x580 Size(10)
 	char bPlayerIsWaiting; //  0x498 Size(1)
-	Unknown NetPlayerIndex; //  0x4bc Size(1)
-	Unknown PendingSwapConnection; //  0x468 Size(8)
-	Unknown NetConnection; //  0x3e0 Size(8)
+	char NetPlayerIndex; //  0x4bc Size(1)
+	struct Unknown PendingSwapConnection; //  0x468 Size(8)
+	struct Unknown NetConnection; //  0x3e0 Size(8)
 	float InputYawScale; //  0x5e0 Size(4)
 	float InputPitchScale; //  0x5a8 Size(4)
 	float InputRollScale; //  0x578 Size(4)
@@ -5414,32 +5414,32 @@ struct APlayerController : AMKPlayerControllerEx {
 	char bEnableTouchOverEvents; //  0x670 Size(1)
 	char bForceFeedbackEnabled; //  0x57c Size(1)
 	float ForceFeedbackScale; //  0x488 Size(4)
-	Unknown ClickEventKeys; //  0x4a0 Size(10)
-	Unknown DefaultMouseCursor; //  0x618 Size(1)
-	Unknown CurrentMouseCursor; //  0x5e4 Size(1)
-	Unknown DefaultClickTraceChannel; //  0x47c Size(1)
-	Unknown CurrentClickTraceChannel; //  0x48c Size(1)
+	struct TArray<Unknown> ClickEventKeys; //  0x4a0 Size(10)
+	char DefaultMouseCursor; //  0x618 Size(1)
+	char CurrentMouseCursor; //  0x5e4 Size(1)
+	char DefaultClickTraceChannel; //  0x47c Size(1)
+	char CurrentClickTraceChannel; //  0x48c Size(1)
 	float HitResultTraceDistance; //  0x3ec Size(4)
 	uint16_t SeamlessTravelCount; //  0x5ac Size(2)
 	uint16_t LastCompletedSeamlessTravelCount; //  0x540 Size(2)
-	Unknown InactiveStateInputComponent; //  0x490 Size(8)
+	struct Unknown InactiveStateInputComponent; //  0x490 Size(8)
 	char bShouldPerformFullTickWhenPaused; //  0x570 Size(1)
-	Unknown CurrentTouchInterface; //  0x550 Size(8)
-	Unknown SpectatorPawn; //  0x470 Size(8)
+	struct Unknown CurrentTouchInterface; //  0x550 Size(8)
+	struct Unknown SpectatorPawn; //  0x470 Size(8)
 	char bIsLocalPlayerController; //  0x5c8 Size(1)
-	Unknown SpawnLocation; //  0x61c Size(c)
+	struct Unknown SpawnLocation; //  0x61c Size(c)
 
-	char WasInputKeyJustReleased(Unknown Key); // Function Engine.PlayerController.WasInputKeyJustReleased(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x3dba970>
+	char WasInputKeyJustReleased(struct Unknown Key); // Function Engine.PlayerController.WasInputKeyJustReleased(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x3dc7710>
 };
 
 // Class Engine.ApplicationLifecycleComponent
 struct UApplicationLifecycleComponent : UActorComponent {
 	struct FMulticastInlineDelegate ApplicationWillDeactivateDelegate; //  0xb0 Size(10)
 	struct FMulticastInlineDelegate ApplicationHasReactivatedDelegate; //  0xc0 Size(10)
-	struct FMulticastInlineDelegate ApplicationWillEnterBackgro; //  0xd0 Size(10)
+	struct FMulticastInlineDelegate ApplicationWillEnterBackgroundDelegate; //  0xd0 Size(10)
 	struct FMulticastInlineDelegate ApplicationHasEnteredForegroundDelegate; //  0xe0 Size(10)
 	struct FMulticastInlineDelegate ApplicationWillTerminateDelegate; //  0xf0 Size(10)
-	struct FMulticastInlineDelegate ApplicationShouldUnloadReso; //  0x100 Size(10)
+	struct FMulticastInlineDelegate ApplicationShouldUnloadResourcesDelegate; //  0x100 Size(10)
 	struct FMulticastInlineDelegate ApplicationReceivedStartupArgumentsDelegate; //  0x110 Size(10)
 	struct FMulticastInlineDelegate OnTemperatureChangeDelegate; //  0x120 Size(10)
 	struct FMulticastInlineDelegate OnLowPowerModeDelegate; //  0x130 Size(10)
@@ -5447,11 +5447,11 @@ struct UApplicationLifecycleComponent : UActorComponent {
 
 // Class Engine.MovementComponent
 struct UMovementComponent : UActorComponent {
-	Unknown UpdatedComponent; //  0xb0 Size(8)
-	Unknown UpdatedPrimitive; //  0xb8 Size(8)
-	Unknown Velocity; //  0xc4 Size(c)
-	Unknown PlaneConstraintNormal; //  0xd0 Size(c)
-	Unknown PlaneConstraintOrigin; //  0xdc Size(c)
+	struct Unknown UpdatedComponent; //  0xb0 Size(8)
+	struct Unknown UpdatedPrimitive; //  0xb8 Size(8)
+	struct Unknown Velocity; //  0xc4 Size(c)
+	struct Unknown PlaneConstraintNormal; //  0xd0 Size(c)
+	struct Unknown PlaneConstraintOrigin; //  0xdc Size(c)
 	char bUpdateOnlyIfRendered; //  0xe8 Size(1)
 	char bAutoUpdateTickRegistration; //  0xe8 Size(1)
 	char bTickBeforeOwner; //  0xe8 Size(1)
@@ -5460,43 +5460,43 @@ struct UMovementComponent : UActorComponent {
 	char bSnapToPlaneAtStart; //  0xe8 Size(1)
 	char bAutoRegisterPhysicsVolumeUpdates; //  0xe8 Size(1)
 	char bComponentShouldUpdatePhysicsVolume; //  0xe8 Size(1)
-	Unknown PlaneConstraintAxisSetting; //  0xeb Size(1)
+	enum class Unknow PlaneConstraintAxisSetting; //  0xeb Size(1)
 
-	void StopMovementImmediately(); // Function Engine.MovementComponent.StopMovementImmediately(Native|Public|BlueprintCallable) // <Game+0x2049f00>
+	void StopMovementImmediately(); // Function Engine.MovementComponent.StopMovementImmediately(Native|Public|BlueprintCallable) // <Game+0x2053b20>
 };
 
 // Class Engine.NavMovementComponent
 struct UNavMovementComponent : UMovementComponent {
-	Unknown NavAgentProps; //  0xf0 Size(30)
+	struct Unknown NavAgentProps; //  0xf0 Size(30)
 	float FixedPathBrakingDistance; //  0x120 Size(4)
-	char bUpdateNavAgentWithOwnersCo; //  0x124 Size(1)
+	char bUpdateNavAgentWithOwnersCollision; //  0x124 Size(1)
 	char bUseAccelerationForPaths; //  0x124 Size(1)
 	char bUseFixedBrakingDistanceForPaths; //  0x124 Size(1)
-	Unknown MovementState; //  0x125 Size(1)
-	Unknown PathFollowingComp; //  0x128 Size(8)
+	struct Unknown MovementState; //  0x125 Size(1)
+	struct Unknown PathFollowingComp; //  0x128 Size(8)
 
-	void StopMovementKeepPathing(); // Function Engine.NavMovementComponent.StopMovementKeepPathing(Final|Native|Public|BlueprintCallable) // <Game+0x3d925a0>
+	void StopMovementKeepPathing(); // Function Engine.NavMovementComponent.StopMovementKeepPathing(Final|Native|Public|BlueprintCallable) // <Game+0x3d9f1a0>
 };
 
 // Class Engine.PawnMovementComponent
 struct UPawnMovementComponent : UNavMovementComponent {
-	Unknown PawnOwner; //  0x130 Size(8)
+	struct Unknown PawnOwner; //  0x130 Size(8)
 
-	Unknown K2_GetInputVector(); // Function Engine.PawnMovementComponent.K2_GetInputVector(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game+0x3da7320>
+	struct Unknown K2_G(); // Function Engine.PawnMovementComponent.K2_G(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game+0x3db4050>
 };
 
 // Class Engine.CharacterMovementComponent
 struct UCharacterMovementComponent : UPawnMovementComponent {
-	Unknown CharacterOwner; //  0x2b0 Size(8)
+	struct Unknown CharacterOwner; //  0x2b0 Size(8)
 	float GravityScale; //  0x2ec Size(4)
 	float MaxStepHeight; //  0x468 Size(4)
 	float JumpZVelocity; //  0x474 Size(4)
 	float JumpOffJumpZFactor; //  0x6c8 Size(4)
 	float WalkableFloorAngle; //  0x4f8 Size(4)
 	float WalkableFloorZ; //  0x488 Size(4)
-	Unknown MovementMode; //  0x438 Size(1)
-	Unknown CustomMovementMode; //  0x56c Size(1)
-	Unknown NetworkSmoothingMode; //  0x280 Size(1)
+	char MovementMode; //  0x438 Size(1)
+	char CustomMovementMode; //  0x56c Size(1)
+	enum class Unknow NetworkSmoothingMode; //  0x280 Size(1)
 	float GroundFriction; //  0x470 Size(4)
 	float MaxWalkSpeed; //  0x300 Size(4)
 	float MaxWalkSpeedCrouched; //  0x6e0 Size(4)
@@ -5520,7 +5520,7 @@ struct UCharacterMovementComponent : UPawnMovementComponent {
 	float Buoyancy; //  0x40c Size(4)
 	float PerchRadiusThreshold; //  0x244 Size(4)
 	float PerchAdditionalHeight; //  0x248 Size(4)
-	Unknown RotationRate; //  0x520 Size(c)
+	struct Unknown RotationRate; //  0x520 Size(c)
 	char bUseSeparateBrakingFriction; //  0x298 Size(1)
 	char bApplyGravityWhileJumping; //  0x2d4 Size(1)
 	char bUseControllerDesiredRotation; //  0x2e4 Size(1)
@@ -5543,7 +5543,7 @@ struct UCharacterMovementComponent : UPawnMovementComponent {
 	char bPushForceScaledToMass; //  0x540 Size(1)
 	char bPushForceUsingZOffset; //  0x5ac Size(1)
 	char bScalePushForceToVelocity; //  0x6dc Size(1)
-	Unknown DeferredUpdatedMoveComponent; //  0x3e8 Size(8)
+	struct Unknown DeferredUpdatedMoveComponent; //  0x3e8 Size(8)
 	float MaxOutOfWaterStepHeight; //  0x240 Size(4)
 	float OutofWaterZ; //  0x22c Size(4)
 	float Mass; //  0x23c Size(4)
@@ -5555,15 +5555,15 @@ struct UCharacterMovementComponent : UPawnMovementComponent {
 	float MinTouchForce; //  0x3a8 Size(4)
 	float MaxTouchForce; //  0x5a8 Size(4)
 	float RepulsionForce; //  0x3ac Size(4)
-	Unknown Acceleration; //  0x6d0 Size(c)
-	Unknown LastUpdateRotation; //  0x270 Size(10)
-	Unknown LastUpdateLocation; //  0x288 Size(c)
-	Unknown LastUpdateVelocity; //  0x2d8 Size(c)
+	struct Unknown Acceleration; //  0x6d0 Size(c)
+	struct Unknown LastUpdateRotation; //  0x270 Size(10)
+	struct Unknown LastUpdateLocation; //  0x288 Size(c)
+	struct Unknown LastUpdateVelocity; //  0x2d8 Size(c)
 	float ServerLastTransformUpdateTimeStamp; //  0x310 Size(4)
 	float ServerLastClientGoodMoveAckTime; //  0x50c Size(4)
 	float ServerLastClientAdjustmentTime; //  0x4bc Size(4)
-	Unknown PendingImpulseToApply; //  0x21c Size(c)
-	Unknown PendingForceToApply; //  0x5c4 Size(c)
+	struct Unknown PendingImpulseToApply; //  0x21c Size(c)
+	struct Unknown PendingForceToApply; //  0x5c4 Size(c)
 	float AnalogInputModifier; //  0x4d4 Size(4)
 	float MaxSimulationTimeStep; //  0x2f4 Size(4)
 	int32_t MaxSimulationIterations; //  0x444 Size(4)
@@ -5582,15 +5582,15 @@ struct UCharacterMovementComponent : UPawnMovementComponent {
 	float NetworkNoSmoothUpdateDistance; //  0x4d8 Size(4)
 	float NetworkMinTimeBetweenClientAckGoodMoves; //  0x530 Size(4)
 	float NetworkMinTimeBetweenClientAdjustments; //  0x284 Size(4)
-	float NetworkMinTimeBetweenClientAdjustmentsLargeCorrection; //  0x2e8 Size(4)
-	float NetworkLargeClientCorrectio; //  0x410 Size(4)
+	float NetworkMinTimeBetweenClientAdjustmentsLargeCorrect; //  0x2e8 Size(4)
+	float NetworkLargeClientCorrectionDistance; //  0x410 Size(4)
 	float LedgeCheckThreshold; //  0x514 Size(4)
 	float JumpOutOfWaterPitch; //  0x4cc Size(4)
-	Unknown CurrentFloor; //  0x314 Size(94)
-	Unknown DefaultLandMovementMode; //  0x3fc Size(1)
-	Unknown DefaultWaterMovementMode; //  0x2f2 Size(1)
-	Unknown GroundMovementMode; //  0x305 Size(1)
-	char bMaintainHorizontalGroundVelocity; //  0x518 Size(1)
+	struct Unknown CurrentFloor; //  0x314 Size(94)
+	char DefaultLandMovementMode; //  0x3fc Size(1)
+	char DefaultWaterMovementMode; //  0x2f2 Size(1)
+	char GroundMovementMode; //  0x305 Size(1)
+	char bMaintainHorizontalGroundVeloci; //  0x518 Size(1)
 	char bImpartBaseVelocityX; //  0x5c0 Size(1)
 	char bImpartBaseVelocityY; //  0x2fc Size(1)
 	char bImpartBaseVelocityZ; //  0x4c0 Size(1)
@@ -5603,7 +5603,7 @@ struct UCharacterMovementComponent : UPawnMovementComponent {
 	char bNotifyApex; //  0x464 Size(1)
 	char bCheatFlying; //  0x24c Size(1)
 	char bWantsToCrouch; //  0x4b8 Size(1)
-	char bCrouchMaintainsBaseLocatio; //  0x2b8 Size(1)
+	char bCrouchMaintainsBaseLocation; //  0x2b8 Size(1)
 	char bIgnoreBaseRotation; //  0x538 Size(1)
 	char bFastAttachedMove; //  0x218 Size(1)
 	char bAlwaysCheckFloor; //  0x430 Size(1)
@@ -5613,73 +5613,73 @@ struct UCharacterMovementComponent : UPawnMovementComponent {
 	char bUseRVOAvoidance; //  0x6c0 Size(1)
 	char bRequestedMoveUseAcceleration; //  0x498 Size(1)
 	char bWasSimulatingRootMotion; //  0x478 Size(1)
-	char bAllowPhysicsRotationDuringAnimRootMotion; //  0x44c Size(1)
+	char bAllowPhysicsRotationDuringAnimRootMoti; //  0x44c Size(1)
 	char bHasRequestedVelocity; //  0x304 Size(1)
 	char bRequestedMoveWithMaxSpeed; //  0x52c Size(1)
 	char bWasAvoidanceUpdated; //  0x2fc Size(1)
 	char bProjectNavMeshWalking; //  0x508 Size(1)
 	char bProjectNavMeshOnBothWorldChannels; //  0x228 Size(1)
 	float AvoidanceConsiderationRadius; //  0x448 Size(4)
-	Unknown RequestedVelocity; //  0x4a0 Size(c)
+	struct Unknown RequestedVelocity; //  0x4a0 Size(c)
 	int32_t AvoidanceUID; //  0x250 Size(4)
-	Unknown AvoidanceGroup; //  0x48c Size(4)
-	Unknown GroupsToAvoid; //  0x2bc Size(4)
-	Unknown GroupsToIgnore; //  0x4c4 Size(4)
+	struct Unknown AvoidanceGroup; //  0x48c Size(4)
+	struct Unknown GroupsToAvoid; //  0x2bc Size(4)
+	struct Unknown GroupsToIgnore; //  0x4c4 Size(4)
 	float AvoidanceWeight; //  0x2a8 Size(4)
-	Unknown PendingLaunchVelocity; //  0x558 Size(c)
+	struct Unknown PendingLaunchVelocity; //  0x558 Size(c)
 	float NavMeshProjectionInterval; //  0x2a4 Size(4)
 	float NavMeshProjectionTimer; //  0x30c Size(4)
 	float NavMeshProjectionInterpSpeed; //  0x254 Size(4)
 	float NavMeshProjectionHeightScaleUp; //  0x234 Size(4)
 	float NavMeshProjectionHeightScaleDown; //  0x408 Size(4)
 	float NavWalkingFloorDistTolerance; //  0x2f8 Size(4)
-	Unknown PostPhysicsTickFunction; //  0x148 Size(30)
+	struct Unknown PostPhysicsTickFunction; //  0x148 Size(30)
 	float MinTimeBetweenTimeStampResets; //  0x5b0 Size(4)
-	Unknown ClientAutonomuousBase; //  0x4f0 Size(8)
-	Unknown CurrentRootMotion; //  0x570 Size(38)
-	Unknown RootMotionParams; //  0x5e0 Size(40)
-	Unknown AnimRootMotionVelocity; //  0x2c4 Size(c)
-	float BlockingHit_SlideAccelerato; //  0x628 Size(4)
-	Unknown BlockingPhysMaterial; //  0x4b0 Size(8)
+	struct Unknown ClientAutonomuousBase; //  0x4f0 Size(8)
+	struct Unknown CurrentRootMotion; //  0x570 Size(38)
+	struct Unknown RootMotionParams; //  0x5e0 Size(40)
+	struct Unknown AnimRootMotionVelocity; //  0x2c4 Size(c)
+	float BlockingHit_SlideAccelerator; //  0x628 Size(4)
+	struct Unknown BlockingPhysMaterial; //  0x4b0 Size(8)
 
-	void SetWalkableFloorZ(float InWalkableFloorZ); // Function Engine.CharacterMovementComponent.SetWalkableFloorZ(Final|Native|Public|BlueprintCallable) // <Game+0x3cab4b0>
+	void SetWalkableFloorZ(float InWalkableFloorZ); // Function Engine.CharacterMovementComponent.SetWalkableFloorZ(Final|Native|Public|BlueprintCallable) // <Game+0x3cb76b0>
 };
 
 // Class Engine.SceneCapture
 struct ASceneCapture : UActor {
-	Unknown MeshComp; //  0x310 Size(8)
-	Unknown SceneComponent; //  0x318 Size(8)
+	struct Unknown MeshComp; //  0x310 Size(8)
+	struct Unknown SceneComponent; //  0x318 Size(8)
 };
 
 // Class Engine.SceneCapture2D
 struct ASceneCapture2D : ASceneCapture {
-	Unknown CaptureComponent2D; //  0x320 Size(8)
+	struct Unknown CaptureComponent2D; //  0x320 Size(8)
 
-	void OnInterpToggle(char bEnable); // Function Engine.SceneCapture2D.OnInterpToggle(Final|Native|Public|BlueprintCallable) // <Game+0x3daf520>
+	void OnInterpToggle(char bEnable); // Function Engine.SceneCapture2D.OnInterpToggle(Final|Native|Public|BlueprintCallable) // <Game+0x3dbc2c0>
 };
 
 // Class Engine.AssetManager
 struct UAssetManager : Object {
-	Unknown ObjectReferenceList; //  0x2c0 Size(10)
-	char bIsGlobalAsyncScanEnvironment; //  0x2d0 Size(1)
+	struct TArray<Unknown> ObjectReferenceList; //  0x2c0 Size(10)
+	char bIsG; //  0x2d0 Size(1)
 	char bShouldGuessTypeAndName; //  0x2d1 Size(1)
 	char bShouldUseSynchronousLoad; //  0x2d2 Size(1)
 	char bIsLoadingFromPakFiles; //  0x2d3 Size(1)
-	char bShouldAcquireMissingChunksOnLoad; //  0x2d4 Size(1)
+	char bShouldAcquireMissingChunks; //  0x2d4 Size(1)
 	char bOnlyCookProductionAssets; //  0x2d5 Size(1)
 	char bIsBulkScanning; //  0x2d6 Size(1)
 	char bIsPrimaryAssetDirectoryCurrent; //  0x2d7 Size(1)
 	char bIsManagementDatabaseCurrent; //  0x2d8 Size(1)
 	char bUpdateManagementDatabaseAfterScan; //  0x2d9 Size(1)
 	char bIncludeOnlyOnDiskAssets; //  0x2da Size(1)
-	int32_t Numb; //  0x2dc Size(4)
+	int32_t NumberOfSpawnedNotifications; //  0x2dc Size(4)
 };
 
 // Class Engine.ShapeComponent
 struct UShapeComponent : UPrimitiveComponent {
-	Unknown ShapeBodySetup; //  0x4b8 Size(8)
-	Unknown AreaClass; //  0x4c0 Size(8)
-	Unknown ShapeColor; //  0x4c8 Size(4)
+	struct Unknown ShapeBodySetup; //  0x4b8 Size(8)
+	struct Unknown* AreaClass; //  0x4c0 Size(8)
+	struct Unknown ShapeColor; //  0x4c8 Size(4)
 	char bDrawOnlyIfSelected; //  0x4cc Size(1)
 	char bShouldCollideWhenPlacing; //  0x4cc Size(1)
 	char bDynamicObstacle; //  0x4cc Size(1)
@@ -5687,10 +5687,10 @@ struct UShapeComponent : UPrimitiveComponent {
 
 // Class Engine.BoxComponent
 struct UBoxComponent : UShapeComponent {
-	Unknown BoxExtent; //  0x4d0 Size(c)
+	struct Unknown BoxExtent; //  0x4d0 Size(c)
 	float LineThickness; //  0x4dc Size(4)
 
-	void SetBoxExtent(Unknown InBoxExtent, char bUpdateOverlaps); // Function Engine.BoxComponent.SetBoxExtent(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game+0x3c9d1a0>
+	void SetBoxExtent(struct Unknown InBoxExtent, char bUpdateOverlaps); // Function Engine.BoxComponent.SetBoxExtent(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game+0x3ca9300>
 };
 
 // Class Engine.CameraComponent
@@ -5704,19 +5704,19 @@ struct UCameraComponent : USceneComponent {
 	char bUseFieldOfViewForLOD; //  0x24c Size(1)
 	char bLockToHmd; //  0x254 Size(1)
 	char bUsePawnControlRotation; //  0x254 Size(1)
-	Unknown ProjectionMode; //  0x255 Size(1)
+	char ProjectionMode; //  0x255 Size(1)
 	float PostProcessBlendWeight; //  0x290 Size(4)
-	Unknown PostProcessSettings; //  0x2c0 Size(5c0)
+	struct Unknown PostProcessSettings; //  0x2c0 Size(5c0)
 
-	void SetUseFieldOfViewForLOD(char bInUseFieldOfViewForLOD); // Function Engine.CameraComponent.SetUseFieldOfViewForLOD(Final|Native|Public|BlueprintCallable) // <Game+0x3c9d710>
+	void SetUseFieldOfViewForLOD(char bInUseFieldOfViewForLOD); // Function Engine.CameraComponent.SetUseFieldOfViewForLOD(Final|Native|Public|BlueprintCallable) // <Game+0x3ca9870>
 };
 
 // Class Engine.CheatManager
 struct UCheatManager : Object {
-	Unknown DebugCameraControllerRef; //  0x28 Size(8)
-	Unknown DebugCameraControllerClass; //  0x30 Size(8)
+	struct Unknown DebugCameraControllerRef; //  0x28 Size(8)
+	struct Unknown* DebugCameraControllerClass; //  0x30 Size(8)
 
-	void Walk(); // Function Engine.CheatManager.Walk(Exec|Native|Public|BlueprintCallable) // <Game+0x2ed6cc0>
+	void Walk(); // Function Engine.CheatManager.Walk(Exec|Native|Public|BlueprintCallable) // <Game+0x2ee1a20>
 };
 
 // Class Engine.DamageType
@@ -5726,25 +5726,25 @@ struct UDamageType : Object {
 	char bRadialDamageVelChange; //  0x28 Size(1)
 	float DamageImpulse; //  0x2c Size(4)
 	float DestructibleImpulse; //  0x30 Size(4)
-	float DestructibleDamageSpreadScale; //  0x34 Size(4)
+	float Destructible; //  0x34 Size(4)
 	float DamageFalloff; //  0x38 Size(4)
 };
 
 // Class Engine.MKDemoNetDriverEx
 struct UMKDemoNetDriverEx : UNetDriver {
-	Unknown SpectatorControllerClass; //  0x928 Size(8)
-	Unknown SelfDemoNetDriver; //  0x930 Size(8)
+	struct Unknown* SpectatorControllerClass; //  0x928 Size(8)
+	struct Unknown Self; //  0x930 Size(8)
 
-	void SetReplaySample(Unknown Target, Unknown ReplaySample, char bSaveCheckpoint); // Function Engine.MKDemoNetDriverEx.SetReplaySample(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game+0x3d890e0>
+	void SetReplaySample(struct Unknown Target, struct Unknown ReplaySample, char bSaveCheckpoint); // Function Engine.MKDemoNetDriverEx.SetReplaySample(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game+0x3d95b20>
 };
 
 // Class Engine.DemoNetDriver
 struct UDemoNetDriver : UMKDemoNetDriverEx {
-	Unknown RollbackNetStartupActors; //  0xa50 Size(50)
+	struct TMap<{}, {}>Unknown RollbackNetStartupActors; //  0xa50 Size(50)
 	float CheckpointSaveMaxMSPerFrame; //  0xecc Size(4)
-	Unknown MulticastRecordOptions; //  0xf00 Size(10)
+	struct TArray<Unknown> MulticastRecordOptions; //  0xf00 Size(10)
 	char bIsLocalReplay; //  0xf60 Size(1)
-	Unknown SpectatorControllers; //  0xf68 Size(10)
+	struct TArray<Unknown> SpectatorControllers; //  0xf68 Size(10)
 };
 
 // Class Engine.StaticMeshComponent
@@ -5753,8 +5753,8 @@ struct UStaticMeshComponent : UMeshComponent {
 	int32_t PreviousLODLevel; //  0x4ec Size(4)
 	int32_t MinLOD; //  0x4f0 Size(4)
 	int32_t SubDivisionStepSize; //  0x4f4 Size(4)
-	Unknown StaticMesh; //  0x4f8 Size(8)
-	Unknown WireframeColorOverride; //  0x500 Size(4)
+	struct Unknown StaticMesh; //  0x4f8 Size(8)
+	struct Unknown WireframeColorOverride; //  0x500 Size(4)
 	char bEvaluateWorldPositionOffset; //  0x504 Size(1)
 	char bOverrideWireframeColor; //  0x504 Size(1)
 	char bOverrideMinLod; //  0x504 Size(1)
@@ -5766,46 +5766,46 @@ struct UStaticMeshComponent : UMeshComponent {
 	char bCastDistanceFieldIndirectShadow; //  0x505 Size(1)
 	char bOverrideDistanceFieldSelfShadowBias; //  0x505 Size(1)
 	char bUseSubDivisions; //  0x505 Size(1)
-	char bUseDefaultCollision; //  0x505 Size(1)
+	char bUse; //  0x505 Size(1)
 	char bReverseCulling; //  0x505 Size(1)
 	int32_t OverriddenLightMapRes; //  0x508 Size(4)
 	float DistanceFieldIndirectShadowMinVisibility; //  0x50c Size(4)
 	float DistanceFieldSelfShadowBias; //  0x510 Size(4)
 	float StreamingDistanceMultiplier; //  0x514 Size(4)
-	Unknown LODData; //  0x518 Size(10)
-	Unknown StreamingTextureData; //  0x528 Size(10)
-	Unknown LightmassSettings; //  0x538 Size(18)
+	struct TArray<Unknown> LODData; //  0x518 Size(10)
+	struct TArray<Unknown> StreamingTextureData; //  0x528 Size(10)
+	struct Unknown LightmassSettings; //  0x538 Size(18)
 
-	char SetStaticMesh(Unknown NewMesh); // Function Engine.StaticMeshComponent.SetStaticMesh(Native|Public|BlueprintCallable) // <Game+0x168d070>
+	char SetStaticMesh(struct Unknown NewMesh); // Function Engine.StaticMeshComponent.SetStaticMesh(Native|Public|BlueprintCallable) // <Game+0x168dbb0>
 };
 
 // Class Engine.GameEngine
 struct UGameEngine : UEngine {
 	float MaxDeltaTime; //  0xde8 Size(4)
 	float ServerFlushLogInterval; //  0xdec Size(4)
-	Unknown GameInstance; //  0xdf0 Size(8)
+	struct Unknown GameInstance; //  0xdf0 Size(8)
 };
 
 // Class Engine.MKGameInstanceEx
 struct UMKGameInstanceEx : Object {
-	Unknown ReplayListItemInfos; //  0x28 Size(10)
+	struct TArray<Unknown> ReplayListItemInfos; //  0x28 Size(10)
 	struct FMulticastInlineDelegate OnEnumerateReplayListCompleteEvent; //  0x38 Size(10)
 	struct FMulticastInlineDelegate OnDeleteReplayCompleteEvent; //  0x48 Size(10)
 	struct FMulticastInlineDelegate OnKeepAndDeleteOldetsReplaysCompleteEvent; //  0x58 Size(10)
-	struct FMulticastInlineDelegate OnKeepAndDeleteOldVersionReplays; //  0x68 Size(10)
-	Unknown SelfGameInstance; //  0x80 Size(8)
+	struct FMulticastInlineDelegate OnKeepAndDeleteOldVersionReplaysCompleteEvent; //  0x68 Size(10)
+	struct Unknown SelfGameInstance; //  0x80 Size(8)
 	char bLoadingWidgetVisible; //  0x88 Size(1)
 
-	void PlayReplayCommand(struct FString DemoName); // Function Engine.MKGameInstanceEx.PlayReplayCommand(Final|Exec|Native|Public) // <Game+0x3d88ff0>
+	void SetTargetCamera(char bKiller); // Function Engine.MKGameInstanceEx.SetTargetCamera(Final|Native|Public|BlueprintCallable) // <Game+0x3d95c30>
 };
 
 // Class Engine.GameInstance
 struct UGameInstance : UMKGameInstanceEx {
-	Unknown LocalPlayers; //  0xb8 Size(10)
-	Unknown OnlineSession; //  0xc8 Size(8)
-	Unknown ReferencedObjects; //  0xd0 Size(10)
+	struct TArray<Unknown> LocalPlayers; //  0xb8 Size(10)
+	struct Unknown OnlineSession; //  0xc8 Size(8)
+	struct TArray<Unknown> ReferencedObjects; //  0xd0 Size(10)
 
-	void ReceiveShutdown(); // Function Engine.GameInstance.ReceiveShutdown(Event|Public|BlueprintEvent) // <Game+0x23a73f0>
+	void ReceiveShutdown(); // Function Engine.GameInstance.ReceiveShutdown(Event|Public|BlueprintEvent) // <Game+0x23b1e70>
 };
 
 // Class Engine.GameSession
@@ -5813,44 +5813,44 @@ struct AGameSession : AInfo {
 	int32_t MaxSpectators; //  0x310 Size(4)
 	int32_t MaxPlayers; //  0x314 Size(4)
 	int32_t MaxPartySize; //  0x318 Size(4)
-	Unknown MaxSplitscreensPerConnectio; //  0x31c Size(1)
+	char MaxSplitscreensPerConnection; //  0x31c Size(1)
 	char bRequiresPushToTalk; //  0x31d Size(1)
 	struct FName SessionName; //  0x320 Size(8)
 };
 
 // Class Engine.InstancedStaticMeshComponent
 struct UInstancedStaticMeshComponent : UStaticMeshComponent {
-	Unknown PerInstanceSMData; //  0x550 Size(10)
+	struct TArray<Unknown> PerInstanceSMData; //  0x550 Size(10)
 	int32_t NumCustomDataFloats; //  0x560 Size(4)
-	Unknown PerInstanceSMCustomData; //  0x568 Size(10)
+	struct TArray<Unknown> PerInstanceSMCustomData; //  0x568 Size(10)
 	char bMergeCollision; //  0x578 Size(1)
 	int32_t InstancingRandomSeed; //  0x57c Size(4)
 	int32_t InstanceStartCullDistance; //  0x580 Size(4)
 	int32_t InstanceEndCullDistance; //  0x584 Size(4)
 	int8_t CulldistanceType; //  0x588 Size(1)
 	float MinScreenSizeScale; //  0x58c Size(4)
-	Unknown InstanceBodiesSplitRatio; //  0x590 Size(1)
-	Unknown InstanceReorderTable; //  0x598 Size(10)
+	char InstanceBodiesSplitRatio; //  0x590 Size(1)
+	struct TArray<Unknown> InstanceReorderTable; //  0x598 Size(10)
 	int32_t NumPendingLightmaps; //  0x604 Size(4)
-	Unknown CachedMappings; //  0x608 Size(10)
+	struct TArray<Unknown> CachedMappings; //  0x608 Size(10)
 
-	char UpdateInstanceTransform(int32_t InstanceIndex, Unknown& NewInstanceTransform, char bWorldSpace, char bMarkRenderStateDirty, char bTeleport); // Function Engine.InstancedStaticMeshComponent.UpdateInstanceTransform(Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game+0x3cfbb20>
+	char UpdateInstanceTransform(int32_t InstanceIndex, struct Unknown& NewInstanceTransform, char bWorldSpace, char bMarkRenderStateDirty, char bTeleport); // Function Engine.InstancedStaticMeshComponent.UpdateInstanceTransform(Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game+0x3d08220>
 };
 
 // Class Engine.HierarchicalInstancedStaticMeshComponent
 struct UHierarchicalInstancedStaticMeshComponent : UInstancedStaticMeshComponent {
-	Unknown SortedInstances; //  0x628 Size(10)
+	struct TArray<Unknown> SortedInstances; //  0x628 Size(10)
 	int32_t NumBuiltInstances; //  0x638 Size(4)
-	Unknown BuiltInstanceBounds; //  0x640 Size(1c)
-	Unknown UnbuiltInstanceBounds; //  0x65c Size(1c)
-	Unknown UnbuiltInstanceBoundsList; //  0x678 Size(10)
+	struct Unknown BuiltInstanceBounds; //  0x640 Size(1c)
+	struct Unknown UnbuiltInstanceBounds; //  0x65c Size(1c)
+	struct TArray<Unknown> UnbuiltInstanceBoundsList; //  0x678 Size(10)
 	char bEnableDensityScaling; //  0x688 Size(1)
 	int32_t OcclusionLayerNumNodes; //  0x690 Size(4)
-	Unknown CacheMeshExtendedBounds; //  0x694 Size(1c)
+	struct Unknown CacheMeshExtendedBounds; //  0x694 Size(1c)
 	char bDisableCollision; //  0x6b0 Size(1)
 	int32_t InstanceCountToRender; //  0x6b4 Size(4)
 
-	char RemoveInstances(Unknown& InstancesToRemove); // Function Engine.HierarchicalInstancedStaticMeshComponent.RemoveInstances(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x3cefb40>
+	char RemoveInstances(struct TArray<Unknown>& InstancesToRemove); // Function Engine.HierarchicalInstancedStaticMeshComponent.RemoveInstances(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x3cfc180>
 };
 
 // Class Engine.MK3DReplayController
@@ -5863,73 +5863,73 @@ struct AMK3DReplayController : APlayerController {
 	struct FMulticastInlineDelegate ChangeViewModeDelegate; //  0x7c8 Size(10)
 	struct FMulticastInlineDelegate ChangeCameraTypeDelegate; //  0x7d8 Size(10)
 	struct FMulticastInlineDelegate ChangeCameraTypeByNetGuidDelegate; //  0x7e8 Size(10)
-	Unknown WidgetInfoArray; //  0x800 Size(10)
-	Unknown ReplayWidgetMap; //  0x810 Size(50)
-	Unknown KillcamComponent; //  0x8c0 Size(8)
-	Unknown TargetcamComponent; //  0x8c8 Size(8)
-	Unknown pTargetPlayerInRecording; //  0x8e0 Size(8)
+	struct TArray<Unknown> WidgetInfoArray; //  0x800 Size(10)
+	struct TMap<{}, {}>Unknown ReplayWidgetMap; //  0x810 Size(50)
+	struct Unknown KillcamComponent; //  0x8c0 Size(8)
+	struct Unknown TargetcamComponent; //  0x8c8 Size(8)
+	struct Unknown pTargetPlayerInRecording; //  0x8e0 Size(8)
 	struct FString AfterKillcamHUDClassName; //  0x8e8 Size(10)
-	Unknown AfterKillcamHUDClass; //  0x8f8 Size(8)
+	struct Unknown* AfterKillcamHUDClass; //  0x8f8 Size(8)
 	struct FString ReplayHUDClassName; //  0x910 Size(10)
-	Unknown ReplayHUDClass; //  0x920 Size(8)
+	struct Unknown* ReplayHUDClass; //  0x920 Size(8)
 
-	void ToggleReplayPauseAndResume(); // Function Engine.MK3DReplayController.ToggleReplayPauseAndResume(Final|Native|Protected|BlueprintCallable) // <Game+0x3d849c0>
+	void ToggleReplayPauseAndResume(); // Function Engine.MK3DReplayController.ToggleReplayPauseAndResume(Final|Native|Protected|BlueprintCallable) // <Game+0x3d913b0>
 };
 
 // Class Engine.DefaultPawn
 struct ADefaultPawn : APawn {
 	float BaseTurnRate; //  0x380 Size(4)
 	float BaseLookUpRate; //  0x384 Size(4)
-	Unknown MovementComponent; //  0x388 Size(8)
-	Unknown CollisionComponent; //  0x390 Size(8)
-	Unknown MeshComponent; //  0x398 Size(8)
-	char bAddDefaultMovementBindings; //  0x3a0 Size(1)
+	struct Unknown MovementComponent; //  0x388 Size(8)
+	struct Unknown CollisionComponent; //  0x390 Size(8)
+	struct Unknown MeshComponent; //  0x398 Size(8)
+	char bAdd; //  0x3a0 Size(1)
 
-	void TurnAtRate(float Rate); // Function Engine.DefaultPawn.TurnAtRate(Native|Public|BlueprintCallable) // <Game+0x3cbd230>
+	void TurnAtRate(float Rate); // Function Engine.DefaultPawn.TurnAtRate(Native|Public|BlueprintCallable) // <Game+0x3cc95d0>
 };
 
 // Class Engine.PhysicalMaterial
 struct UPhysicalMaterial : Object {
 	float Friction; //  0x28 Size(4)
-	Unknown FrictionCombineMode; //  0x2c Size(1)
+	char FrictionCombineMode; //  0x2c Size(1)
 	char bOverrideFrictionCombineMode; //  0x2d Size(1)
 	float Restitution; //  0x30 Size(4)
-	Unknown RestitutionCombineMode; //  0x34 Size(1)
+	char RestitutionCombineMode; //  0x34 Size(1)
 	char bOverrideRestitutionCombineMode; //  0x35 Size(1)
 	float Density; //  0x38 Size(4)
 	float RaiseMassToPower; //  0x3c Size(4)
-	float DestructibleDamageThresholdScale; //  0x40 Size(4)
-	Unknown PhysicalMaterialProperty; //  0x48 Size(8)
-	Unknown SurfaceType; //  0x50 Size(1)
+	float Destructible; //  0x40 Size(4)
+	struct Unknown PhysicalMaterialProperty; //  0x48 Size(8)
+	char SurfaceType; //  0x50 Size(1)
 	float TireFrictionScale; //  0x54 Size(4)
-	Unknown TireFrictionScales; //  0x58 Size(10)
+	struct TArray<Unknown> TireFrictionScales; //  0x58 Size(10)
 };
 
 // Class Engine.PlayerCameraManager
 struct APlayerCameraManager : UActor {
-	Unknown PCOwner; //  0x310 Size(8)
-	Unknown TransformComponent; //  0x318 Size(8)
+	struct Unknown PCOwner; //  0x310 Size(8)
+	struct Unknown TransformComponent; //  0x318 Size(8)
 	float DefaultFOV; //  0x328 Size(4)
 	float DefaultOrthoWidth; //  0x330 Size(4)
 	float DefaultAspectRatio; //  0x338 Size(4)
-	Unknown CameraCache; //  0x380 Size(660)
-	Unknown LastFrameCameraCache; //  0x9e0 Size(660)
-	Unknown ViewTarget; //  0x1040 Size(670)
-	Unknown PendingViewTarget; //  0x16b0 Size(670)
-	Unknown CameraCachePrivate; //  0x1d50 Size(660)
-	Unknown LastFrameCameraCachePrivate; //  0x23b0 Size(660)
-	Unknown ModifierList; //  0x2a10 Size(10)
-	Unknown DefaultModifiers; //  0x2a20 Size(10)
+	struct Unknown CameraCache; //  0x380 Size(660)
+	struct Unknown LastFrameCameraCache; //  0x9e0 Size(660)
+	struct Unknown ViewTarget; //  0x1040 Size(670)
+	struct Unknown PendingViewTarget; //  0x16b0 Size(670)
+	struct Unknown CameraCachePrivate; //  0x1d50 Size(660)
+	struct Unknown LastFrameCameraCachePrivate; //  0x23b0 Size(660)
+	struct TArray<Unknown> ModifierList; //  0x2a10 Size(10)
+	struct TArray<Unknown> DefaultModifiers; //  0x2a20 Size(10)
 	float FreeCamDistance; //  0x2a30 Size(4)
-	Unknown FreeCamOffset; //  0x2a34 Size(c)
-	Unknown ViewTargetOffset; //  0x2a40 Size(c)
-	Unknown CameraLensEffects; //  0x2a60 Size(10)
-	Unknown CachedCameraShakeMod; //  0x2a70 Size(8)
-	Unknown AnimInstPool; //  0x2a78 Size(40)
-	Unknown PostProcessBlendCache; //  0x2ab8 Size(10)
-	Unknown ActiveAnims; //  0x2ad8 Size(10)
-	Unknown FreeAnims; //  0x2ae8 Size(10)
-	Unknown AnimCameraActor; //  0x2af8 Size(8)
+	struct Unknown FreeCamOffset; //  0x2a34 Size(c)
+	struct Unknown ViewTargetOffset; //  0x2a40 Size(c)
+	struct TArray<Unknown> CameraLensEffects; //  0x2a60 Size(10)
+	struct Unknown CachedCameraShakeMod; //  0x2a70 Size(8)
+	struct Unknown AnimInstPool; //  0x2a78 Size(40)
+	struct TArray<Unknown> PostProcessBlendCache; //  0x2ab8 Size(10)
+	struct TArray<Unknown> ActiveAnims; //  0x2ad8 Size(10)
+	struct TArray<Unknown> FreeAnims; //  0x2ae8 Size(10)
+	struct Unknown AnimCameraActor; //  0x2af8 Size(8)
 	char bIsOrthographic; //  0x2b00 Size(1)
 	char bDefaultConstrainAspectRatio; //  0x2b00 Size(1)
 	char bClientSimulatingViewTarget; //  0x2b00 Size(1)
@@ -5943,19 +5943,19 @@ struct APlayerCameraManager : UActor {
 	float ViewRollMax; //  0x2b18 Size(4)
 	float ServerUpdateCameraTimeout; //  0x2b20 Size(4)
 
-	void StopCameraShake(Unknown ShakeInstance, char bImmediately); // Function Engine.PlayerCameraManager.StopCameraShake(Native|Public|BlueprintCallable) // <Game+0x3db0460>
+	void StopCameraShake(struct Unknown ShakeInstance, char bImmediately); // Function Engine.PlayerCameraManager.StopCameraShake(Native|Public|BlueprintCallable) // <Game+0x3dbd200>
 };
 
 // Class Engine.MKPlayerStateEx
 struct AMKPlayerStateEx : AInfo {
-	Unknown SelfPlayerState; //  0x310 Size(8)
+	struct Unknown SelfPlayerState; //  0x310 Size(8)
 };
 
 // Class Engine.PlayerState
 struct APlayerState : AMKPlayerStateEx {
 	float Score; //  0x318 Size(4)
 	int32_t PlayerId; //  0x31c Size(4)
-	Unknown Ping; //  0x320 Size(1)
+	char Ping; //  0x320 Size(1)
 	char bShouldUpdateReplicatedPing; //  0x322 Size(1)
 	char bIsSpectator; //  0x322 Size(1)
 	char bOnlySpectator; //  0x322 Size(1)
@@ -5963,78 +5963,78 @@ struct APlayerState : AMKPlayerStateEx {
 	char bIsInactive; //  0x322 Size(1)
 	char bFromPreviousLevel; //  0x322 Size(1)
 	int32_t StartTime; //  0x324 Size(4)
-	Unknown EngineMessageClass; //  0x328 Size(8)
+	struct Unknown* EngineMessageClass; //  0x328 Size(8)
 	struct FString SavedNetworkAddress; //  0x338 Size(10)
-	Unknown UniqueID; //  0x348 Size(28)
-	Unknown PawnPrivate; //  0x378 Size(8)
+	struct Unknown UniqueID; //  0x348 Size(28)
+	struct Unknown PawnPrivate; //  0x378 Size(8)
 	struct FString PlayerNamePrivate; //  0x3f8 Size(10)
 
-	void ReceiveOverrideWith(Unknown OldPlayerState); // Function Engine.PlayerState.ReceiveOverrideWith(Event|Protected|BlueprintEvent) // <Game+0x23a73f0>
+	void ReceiveOverrideWith(struct Unknown OldPlayerState); // Function Engine.PlayerState.ReceiveOverrideWith(Event|Protected|BlueprintEvent) // <Game+0x23b1e70>
 };
 
 // Class Engine.SceneCaptureComponent
 struct USceneCaptureComponent : USceneComponent {
-	Unknown PrimitiveRenderMode; //  0x238 Size(1)
+	enum class Unknow PrimitiveRenderMode; //  0x238 Size(1)
 	char bTonemapPropagateAlpha; //  0x239 Size(1)
 	char bUsePostProcessMaterial; //  0x239 Size(1)
-	char bUseDirectionalLights; //  0x239 Size(1)
-	Unknown CaptureSource; //  0x23a Size(1)
+	char bUse; //  0x239 Size(1)
+	char CaptureSource; //  0x23a Size(1)
 	char bCaptureEveryFrame; //  0x23b Size(1)
 	char bCaptureOnMovement; //  0x23b Size(1)
 	char bAlwaysPersistRenderingState; //  0x23c Size(1)
-	Unknown HiddenComponents; //  0x240 Size(10)
-	Unknown HiddenActors; //  0x250 Size(10)
-	Unknown ShowOnlyComponents; //  0x260 Size(10)
-	Unknown ShowOnlyActors; //  0x270 Size(10)
+	struct TArray<Unknown> HiddenComponents; //  0x240 Size(10)
+	struct TArray<Unknown> HiddenActors; //  0x250 Size(10)
+	struct TArray<Unknown> ShowOnlyComponents; //  0x260 Size(10)
+	struct TArray<Unknown> ShowOnlyActors; //  0x270 Size(10)
 	float LODDistanceFactor; //  0x280 Size(4)
 	float MaxViewDistanceOverride; //  0x284 Size(4)
 	int32_t CaptureSortPriority; //  0x288 Size(4)
 	char bUseRayTracingIfEnabled; //  0x28c Size(1)
-	Unknown ShowFlagSettings; //  0x290 Size(10)
+	struct TArray<Unknown> ShowFlagSettings; //  0x290 Size(10)
 	struct FString ProfilingEventName; //  0x2b0 Size(10)
 
-	void ShowOnlyComponent(Unknown InComponent); // Function Engine.SceneCaptureComponent.ShowOnlyComponent(Final|Native|Public|BlueprintCallable) // <Game+0x3ddb6d0>
+	void ShowOnlyComponent(struct Unknown InComponent); // Function Engine.SceneCaptureComponent.ShowOnlyComponent(Final|Native|Public|BlueprintCallable) // <Game+0x3de8700>
 };
 
 // Class Engine.SceneCaptureComponent2D
 struct USceneCaptureComponent2D : USceneCaptureComponent {
-	Unknown ProjectionType; //  0x2d0 Size(1)
+	char ProjectionType; //  0x2d0 Size(1)
 	float FOVAngle; //  0x2d4 Size(4)
 	float OrthoWidth; //  0x2d8 Size(4)
-	Unknown TextureTarget; //  0x2e0 Size(8)
-	Unknown CompositeMode; //  0x2e8 Size(1)
-	Unknown PostProcessSettings; //  0x2f0 Size(5c0)
+	struct Unknown TextureTarget; //  0x2e0 Size(8)
+	char CompositeMode; //  0x2e8 Size(1)
+	struct Unknown PostProcessSettings; //  0x2f0 Size(5c0)
 	float PostProcessBlendWeight; //  0x8b0 Size(4)
 	char bOverride_CustomNearClippingPlane; //  0x8b4 Size(1)
 	float CustomNearClippingPlane; //  0x8b8 Size(4)
 	char bUseCustomProjectionMatrix; //  0x8bc Size(1)
-	Unknown CustomProjectionMatrix; //  0x8c0 Size(40)
+	struct Unknown CustomProjectionMatrix; //  0x8c0 Size(40)
 	char bEnableClipPlane; //  0x900 Size(1)
-	Unknown ClipPlaneBase; //  0x904 Size(c)
-	Unknown ClipPlaneNormal; //  0x910 Size(c)
+	struct Unknown ClipPlaneBase; //  0x904 Size(c)
+	struct Unknown ClipPlaneNormal; //  0x910 Size(c)
 	char bCameraCutThisFrame; //  0x91c Size(1)
 	char bConsiderUnrenderedOpaquePixelAsFullyTranslucent; //  0x91c Size(1)
 	char bDisableFlipCopyGLES; //  0x920 Size(1)
 
-	void CaptureScene(); // Function Engine.SceneCaptureComponent2D.CaptureScene(Final|Native|Public|BlueprintCallable) // <Game+0x3dd80d0>
+	void CaptureScene(); // Function Engine.SceneCaptureComponent2D.CaptureScene(Final|Native|Public|BlueprintCallable) // <Game+0x3de5100>
 };
 
 // Class Engine.ArrowComponent
 struct UArrowComponent : UPrimitiveComponent {
-	Unknown ArrowColor; //  0x4b8 Size(4)
+	struct Unknown ArrowColor; //  0x4b8 Size(4)
 	float ArrowSize; //  0x4bc Size(4)
 	float ScreenSize; //  0x4c0 Size(4)
 	char bIsScreenSizeScaled; //  0x4c4 Size(1)
 	char bTreatAsASprite; //  0x4c4 Size(1)
 
-	void SetArrowColor(Unknown NewColor); // Function Engine.ArrowComponent.SetArrowColor(Native|Public|HasDefaults|BlueprintCallable) // <Game+0x3c7c9e0>
+	void SetArrowColor(struct Unknown NewColor); // Function Engine.ArrowComponent.SetArrowColor(Native|Public|HasDefaults|BlueprintCallable) // <Game+0x3c88900>
 };
 
 // Class Engine.NavigationObjectBase
 struct ANavigationObjectBase : UActor {
-	Unknown CapsuleComponent; //  0x318 Size(8)
-	Unknown GoodSprite; //  0x320 Size(8)
-	Unknown BadSprite; //  0x328 Size(8)
+	struct Unknown CapsuleComponent; //  0x318 Size(8)
+	struct Unknown GoodSprite; //  0x320 Size(8)
+	struct Unknown BadSprite; //  0x328 Size(8)
 	char bIsPIEPlayerStart; //  0x330 Size(1)
 };
 
@@ -6060,7 +6060,7 @@ struct UProjectileMovementComponent : UMovementComponent {
 	char bInterpMovement; //  0xf9 Size(1)
 	char bInterpRotation; //  0xf9 Size(1)
 	float PreviousHitTime; //  0xfc Size(4)
-	Unknown PreviousHitNormal; //  0x100 Size(c)
+	struct Unknown PreviousHitNormal; //  0x100 Size(c)
 	float ProjectileGravityScale; //  0x10c Size(4)
 	float Buoyancy; //  0x110 Size(4)
 	float Bounciness; //  0x114 Size(4)
@@ -6070,23 +6070,23 @@ struct UProjectileMovementComponent : UMovementComponent {
 	struct FMulticastInlineDelegate OnProjectileBounce; //  0x128 Size(10)
 	struct FMulticastInlineDelegate OnProjectileStop; //  0x138 Size(10)
 	float HomingAccelerationMagnitude; //  0x148 Size(4)
-	Unknown HomingTargetComponent; //  0x14c Size(8)
+	struct TWeakObjectPtr<struct Unknown> HomingTargetComponent; //  0x14c Size(8)
 	float MaxSimulationTimeStep; //  0x154 Size(4)
 	int32_t MaxSimulationIterations; //  0x158 Size(4)
 	int32_t BounceAdditionalIterations; //  0x15c Size(4)
 	float InterpLocationTime; //  0x160 Size(4)
 	float InterpRotationTime; //  0x164 Size(4)
-	float InterpLocationMaxLagDistance; //  0x168 Size(4)
+	float InterpLocationMaxLag; //  0x168 Size(4)
 	float InterpLocationSnapToTargetDistance; //  0x16c Size(4)
 
-	void StopSimulating(Unknown& HitResult); // Function Engine.ProjectileMovementComponent.StopSimulating(Native|Public|HasOutParms|BlueprintCallable) // <Game+0x3dcb620>
+	void StopSimulating(struct Unknown& HitResult); // Function Engine.ProjectileMovementComponent.StopSimulating(Native|Public|HasOutParms|BlueprintCallable) // <Game+0x3dd84d0>
 };
 
 // Class Engine.GameUserSettings
 struct UGameUserSettings : Object {
 	char bUseVSync; //  0x28 Size(1)
 	char bIsSmoothFrameRate; //  0x29 Size(1)
-	char bUseDynamicResolution; //  0x2a Size(1)
+	char bUse; //  0x2a Size(1)
 	uint32_t ResolutionSizeX; //  0x80 Size(4)
 	uint32_t ResolutionSizeY; //  0x84 Size(4)
 	uint32_t LastUserConfirmedResolutionSizeX; //  0x88 Size(4)
@@ -6100,9 +6100,9 @@ struct UGameUserSettings : Object {
 	int32_t AudioQualityLevel; //  0xa8 Size(4)
 	int32_t LastConfirmedAudioQualityLevel; //  0xac Size(4)
 	float FrameRateLimit; //  0xb0 Size(4)
-	float Lobb; //  0xb4 Size(4)
+	float LobbyFrameRateLimit; //  0xb4 Size(4)
 	int32_t DesiredScreenWidth; //  0xbc Size(4)
-	char bUseDesiredScreenHeight; //  0xc0 Size(1)
+	char bUse; //  0xc0 Size(1)
 	int32_t DesiredScreenHeight; //  0xc4 Size(4)
 	int32_t LastUserConfirmedDesiredScreenWidth; //  0xc8 Size(4)
 	int32_t LastUserConfirmedDesiredScreenHeight; //  0xcc Size(4)
@@ -6110,8 +6110,8 @@ struct UGameUserSettings : Object {
 	float LastRecommendedScreenHeight; //  0xd4 Size(4)
 	float LastCPUBenchmarkResult; //  0xd8 Size(4)
 	float LastGPUBenchmarkResult; //  0xdc Size(4)
-	Unknown LastCPUBenchmarkSteps; //  0xe0 Size(10)
-	Unknown LastGPUBenchmarkSteps; //  0xf0 Size(10)
+	struct TArray<Unknown> LastCPUBenchmarkSteps; //  0xe0 Size(10)
+	struct TArray<Unknown> LastGPUBenchmarkSteps; //  0xf0 Size(10)
 	struct FString LastCPUBrand; //  0x100 Size(10)
 	struct FString LastGPUBrand; //  0x110 Size(10)
 	int32_t LastInstallStorageType; //  0x120 Size(4)
@@ -6122,7 +6122,7 @@ struct UGameUserSettings : Object {
 	char ShowHUD; //  0x13c Size(1)
 	struct FMulticastInlineDelegate OnGameUserSettingsUINeedsUpdate; //  0x140 Size(10)
 
-	void ValidateSettings(); // Function Engine.GameUserSettings.ValidateSettings(Native|Public|BlueprintCallable) // <Game+0x2ed6cc0>
+	void ValidateSettings(); // Function Engine.GameUserSettings.ValidateSettings(Native|Public|BlueprintCallable) // <Game+0x2ee1a20>
 };
 
 // Class Engine.CapsuleComponent
@@ -6130,18 +6130,18 @@ struct UCapsuleComponent : UShapeComponent {
 	float CapsuleHalfHeight; //  0x4d0 Size(4)
 	float CapsuleRadius; //  0x4d4 Size(4)
 
-	void SetCapsuleSize(float InRadius, float InHalfHeight, char bUpdateOverlaps); // Function Engine.CapsuleComponent.SetCapsuleSize(Final|Native|Public|BlueprintCallable) // <Game+0x3ca8d00>
+	void SetCapsuleSize(float InRadius, float InHalfHeight, char bUpdateOverlaps); // Function Engine.CapsuleComponent.SetCapsuleSize(Final|Native|Public|BlueprintCallable) // <Game+0x3cb4eb0>
 };
 
 // Class Engine.GameViewportClient
 struct UGameViewportClient : UScriptViewportClient {
-	Unknown ViewportConsole; //  0x40 Size(8)
-	Unknown DebugProperties; //  0x48 Size(10)
+	struct Unknown ViewportConsole; //  0x40 Size(8)
+	struct TArray<Unknown> DebugProperties; //  0x48 Size(10)
 	int32_t MaxSplitscreenPlayers; //  0x68 Size(4)
-	Unknown World; //  0x78 Size(8)
-	Unknown GameInstance; //  0x80 Size(8)
+	struct Unknown World; //  0x78 Size(8)
+	struct Unknown GameInstance; //  0x80 Size(8)
 
-	void SSSwapControllers(); // Function Engine.GameViewportClient.SSSwapControllers(Exec|Native|Public) // <Game+0x2ed6e40>
+	void SSSwapControllers(); // Function Engine.GameViewportClient.SSSwapControllers(Exec|Native|Public) // <Game+0x2ee1ba0>
 };
 
 // Class Engine.PhysicsVolume
@@ -6156,7 +6156,7 @@ struct APhysicsVolume : AVolume {
 // Class Engine.WorldSettings
 struct AWorldSettings : AInfo {
 	int32_t VisibilityCellSize; //  0x318 Size(4)
-	Unknown VisibilityAggressiv; //  0x31c Size(1)
+	char VisibilityAggressiv; //  0x31c Size(1)
 	char bPrecomputeVisibility; //  0x31d Size(1)
 	char bPlaceCellsOnlyAlongCameraTracks; //  0x31d Size(1)
 	char bEnableWorldBoundsChecks; //  0x31d Size(1)
@@ -6171,102 +6171,102 @@ struct AWorldSettings : AInfo {
 	char bForceNoPrecomputedLighting; //  0x31e Size(1)
 	char bHighPriorityLoading; //  0x31e Size(1)
 	char bHighPriorityLoadingLocal; //  0x31e Size(1)
-	char bOverrideDefaultBroadphaseSettings; //  0x31e Size(1)
-	Unknown NavigationSystemConfig; //  0x320 Size(8)
-	Unknown NavigationSystemConfigOverride; //  0x328 Size(8)
+	char bOverrideDefaultBroadphaseSetti; //  0x31e Size(1)
+	struct Unknown NavigationSystemConfig; //  0x320 Size(8)
+	struct Unknown NavigationSystemConfigOverride; //  0x328 Size(8)
 	float WorldToMeters; //  0x330 Size(4)
 	float KillZ; //  0x334 Size(4)
-	Unknown KillZDamageType; //  0x338 Size(8)
+	struct Unknown* KillZDamageType; //  0x338 Size(8)
 	float WorldGravityZ; //  0x340 Size(4)
-	float Glob; //  0x344 Size(4)
-	Unknown DefaultPhysicsVolumeClass; //  0x348 Size(8)
-	Unknown PhysicsCollisionHandlerClass; //  0x350 Size(8)
-	Unknown DefaultGameMode; //  0x358 Size(8)
-	Unknown GameNetworkManagerClass; //  0x360 Size(8)
+	float GlobalGravityZ; //  0x344 Size(4)
+	struct Unknown* DefaultPhysicsVolumeClass; //  0x348 Size(8)
+	struct Unknown* PhysicsCollisionHandlerClas; //  0x350 Size(8)
+	struct Unknown* DefaultGameMode; //  0x358 Size(8)
+	struct Unknown* GameNetworkManagerClass; //  0x360 Size(8)
 	int32_t PackedLightAndShadowMapTextureSize; //  0x368 Size(4)
-	Unknown DefaultColorScale; //  0x36c Size(c)
+	struct Unknown DefaultColorScale; //  0x36c Size(c)
 	float DefaultMaxDistanceFieldOcclusionDistance; //  0x378 Size(4)
-	float Glob; //  0x37c Size(4)
+	float GlobalDistanceFieldViewDistance; //  0x37c Size(4)
 	float DynamicIndirectShadowsSelfShadowingIntensity; //  0x380 Size(4)
-	Unknown DefaultReverbSettings; //  0x388 Size(20)
-	Unknown DefaultAmbientZoneSettings; //  0x3a8 Size(24)
+	struct Unknown DefaultReverbSettings; //  0x388 Size(20)
+	struct Unknown DefaultAmbientZoneSettings; //  0x3a8 Size(24)
 	float MonoCullingDistance; //  0x3cc Size(4)
-	Unknown DefaultBaseSoundMix; //  0x3d0 Size(8)
-	float TimeDilation; //  0x3d8 Size(4)
+	struct Unknown DefaultBaseSoundMix; //  0x3d0 Size(8)
+	float Time; //  0x3d8 Size(4)
 	float MatineeTimeDilation; //  0x3dc Size(4)
-	float DemoPlayTimeDilation; //  0x3e0 Size(4)
-	float MinGlobalTimeDilation; //  0x3e4 Size(4)
-	float MaxGlobalTimeDilation; //  0x3e8 Size(4)
+	float DemoPlayTime; //  0x3e0 Size(4)
+	float MinG; //  0x3e4 Size(4)
+	float MaxG; //  0x3e8 Size(4)
 	float MinUndilatedFrameTime; //  0x3ec Size(4)
 	float MaxUndilatedFrameTime; //  0x3f0 Size(4)
-	Unknown BroadphaseSettings; //  0x3f4 Size(40)
-	Unknown Pauser; //  0x438 Size(8)
-	Unknown ReplicationViewers; //  0x440 Size(10)
-	Unknown AssetUserData; //  0x450 Size(10)
-	Unknown PauserPlayerState; //  0x460 Size(8)
+	struct Unknown BroadphaseSettings; //  0x3f4 Size(40)
+	struct Unknown Pauser; //  0x438 Size(8)
+	struct TArray<Unknown> ReplicationViewers; //  0x440 Size(10)
+	struct TArray<Unknown> AssetUserData; //  0x450 Size(10)
+	struct Unknown PauserPlayerState; //  0x460 Size(8)
 	int32_t MaxNumberOfBookmarks; //  0x468 Size(4)
-	Unknown DefaultBookmarkClass; //  0x470 Size(8)
-	Unknown BookmarkArray; //  0x478 Size(10)
-	Unknown LastBookmarkClass; //  0x488 Size(8)
-	char bUseInstancedStaticCollisio; //  0x490 Size(1)
+	struct Unknown* DefaultBookmarkClass; //  0x470 Size(8)
+	struct TArray<Unknown> BookmarkArray; //  0x478 Size(10)
+	struct Unknown* LastBookmarkClass; //  0x488 Size(8)
+	char bUseInstancedStaticCollision; //  0x490 Size(1)
 
-	void OnRep_WorldGravityZ(); // Function Engine.WorldSettings.OnRep_WorldGravityZ(Native|Public) // <Game+0x1e4be10>
+	void OnRep_WorldGravityZ(); // Function Engine.WorldSettings.OnRep_WorldGravityZ(Native|Public) // <Game+0x1e52540>
 };
 
 // Class Engine.CameraModifier
 struct UCameraModifier : Object {
-	char bDeb; //  0x28 Size(1)
+	char bDebug; //  0x28 Size(1)
 	char bExclusive; //  0x28 Size(1)
-	Unknown Priority; //  0x2c Size(1)
-	Unknown CameraOwner; //  0x30 Size(8)
+	char Priority; //  0x2c Size(1)
+	struct Unknown CameraOwner; //  0x30 Size(8)
 	float AlphaInTime; //  0x38 Size(4)
 	float AlphaOutTime; //  0x3c Size(4)
 	float ALPHA; //  0x40 Size(4)
 
-	char IsDisabled(); // Function Engine.CameraModifier.IsDisabled(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x2ed6dc0>
+	char IsDisabled(); // Function Engine.CameraModifier.IsDisabled(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x2ee1b20>
 };
 
 // Class Engine.SkyLight
 struct ASkyLight : AInfo {
-	Unknown LightComponent; //  0x310 Size(8)
+	struct Unknown LightComponent; //  0x310 Size(8)
 	char bEnabled; //  0x318 Size(1)
 
-	void OnRep_bEnabled(); // Function Engine.SkyLight.OnRep_bEnabled(Native|Public) // <Game+0x1e4be10>
+	void OnRep_bEnabled(); // Function Engine.SkyLight.OnRep_bEnabled(Native|Public) // <Game+0x1e52540>
 };
 
 // Class Engine.MaterialInterface
 struct UMaterialInterface : Object {
-	Unknown SubsurfaceProfile; //  0x38 Size(8)
-	Unknown LightmassSettings; //  0x50 Size(10)
-	Unknown TextureStreamingData; //  0x60 Size(10)
-	Unknown AssetUserData; //  0x70 Size(10)
+	struct Unknown SubsurfaceProfile; //  0x38 Size(8)
+	struct Unknown LightmassSettings; //  0x50 Size(10)
+	struct TArray<Unknown> TextureStreamingData; //  0x60 Size(10)
+	struct TArray<Unknown> AssetUserData; //  0x70 Size(10)
 
-	void SetForceMipLevelsToBeResident(char OverrideForceMiplev, char bForceMiplevelsToBeResidentValue, float ForceDuration, int32_t CinematicTextureGroups, char bFastResponse); // Function Engine.MaterialInterface.SetForceMipLevelsToBeResident(RequiredAPI|Native|Public|BlueprintCallable) // <Game+0x3d7c630>
+	void SetForceMipLevelsToBeResident(char OverrideForceMiplev, char bForceMiplevelsToBeResidentValue, float ForceDuration, int32_t CinematicTextureGroups, char bFastResponse); // Function Engine.MaterialInterface.SetForceMipLevelsToBeResident(RequiredAPI|Native|Public|BlueprintCallable) // <Game+0x3d88f70>
 };
 
 // Class Engine.MaterialInstance
 struct UMaterialInstance : UMaterialInterface {
-	Unknown PhysMaterial; //  0x88 Size(8)
-	Unknown PhysicalMaterialMap; //  0x90 Size(40)
-	Unknown Parent; //  0xd0 Size(8)
+	struct Unknown PhysMaterial; //  0x88 Size(8)
+	struct Unknown PhysicalMaterialMap; //  0x90 Size(40)
+	struct Unknown Parent; //  0xd0 Size(8)
 	char bHasStaticPermutationResource; //  0xd8 Size(1)
 	char bOverrideSubsurfaceProfile; //  0xd8 Size(1)
-	Unknown ScalarParameterValues; //  0xe0 Size(10)
-	Unknown VectorParameterValues; //  0xf0 Size(10)
-	Unknown TextureParameterValues; //  0x100 Size(10)
-	Unknown RuntimeVirtualTextureParameterValues; //  0x110 Size(10)
-	Unknown FontParameterValues; //  0x120 Size(10)
-	Unknown BasePropertyOverrides; //  0x130 Size(8)
-	Unknown StaticParameters; //  0x148 Size(40)
-	Unknown CachedLayerParameters; //  0x188 Size(1a0)
-	Unknown CachedReferencedTextures; //  0x328 Size(10)
+	struct TArray<Unknown> ScalarParameterValues; //  0xe0 Size(10)
+	struct TArray<Unknown> VectorParameterValues; //  0xf0 Size(10)
+	struct TArray<Unknown> TextureParameterValues; //  0x100 Size(10)
+	struct TArray<Unknown> RuntimeVirtualTextureParameterValues; //  0x110 Size(10)
+	struct TArray<Unknown> FontParameterValues; //  0x120 Size(10)
+	struct Unknown BasePropertyOverrides; //  0x130 Size(8)
+	struct Unknown StaticParameters; //  0x148 Size(40)
+	struct Unknown CachedLayerParameters; //  0x188 Size(1a0)
+	struct TArray<Unknown> CachedReferencedTextures; //  0x328 Size(10)
 };
 
 // Class Engine.MaterialInstanceConstant
 struct UMaterialInstanceConstant : UMaterialInstance {
-	Unknown PhysMaterialMask; //  0x408 Size(8)
+	struct Unknown PhysMaterialMask; //  0x408 Size(8)
 
-	Unknown K2_GetVectorParameterValue(struct FName ParameterName); // Function Engine.MaterialInstanceConstant.K2_GetVectorParameterValue(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game+0x3d7c330>
+	struct Unknown K2_G(struct FName ParameterName); // Function Engine.MaterialInstanceConstant.K2_G(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game+0x3d88c70>
 };
 
 // Class Engine.BlueprintGeneratedClass
@@ -6274,73 +6274,73 @@ struct UBlueprintGeneratedClass : UClass {
 	int32_t NumReplicatedProperties; //  0x2d0 Size(4)
 	char bHasNativizedParent; //  0x2d4 Size(1)
 	char bHasCookedComponentInstancingData; //  0x2d4 Size(1)
-	Unknown DynamicBindingObjects; //  0x2d8 Size(10)
-	Unknown ComponentTemplates; //  0x2e8 Size(10)
-	Unknown Timelines; //  0x2f8 Size(10)
-	Unknown ComponentClassOverrides; //  0x308 Size(10)
-	Unknown SimpleConstructionScript; //  0x318 Size(8)
-	Unknown InheritableComponentHandler; //  0x320 Size(8)
-	Unknown UberGraphFramePointerProperty; //  0x328 Size(8)
-	Unknown UberGraphFunction; //  0x338 Size(8)
-	Unknown CookedComponentInstancingData; //  0x340 Size(50)
+	struct TArray<Unknown> DynamicBindingObjects; //  0x2d8 Size(10)
+	struct TArray<Unknown> ComponentTemplates; //  0x2e8 Size(10)
+	struct TArray<Unknown> Timelines; //  0x2f8 Size(10)
+	struct TArray<Unknown> ComponentClassOverrides; //  0x308 Size(10)
+	struct Unknown SimpleConstructionScript; //  0x318 Size(8)
+	struct Unknown InheritableComponentHandler; //  0x320 Size(8)
+	struct Unknown UberGraphFramePointerProperty; //  0x328 Size(8)
+	struct Unknown UberGraphFunction; //  0x338 Size(8)
+	struct TMap<{}, {}>Unknown CookedComponentInstancingData; //  0x340 Size(50)
 };
 
 // Class Engine.CameraActor
 struct ACameraActor : UActor {
-	Unknown AutoActivateForPlayer; //  0x310 Size(1)
-	Unknown CameraComponent; //  0x318 Size(8)
-	Unknown SceneComponent; //  0x320 Size(8)
+	char AutoActivateForPlayer; //  0x310 Size(1)
+	struct Unknown CameraComponent; //  0x318 Size(8)
+	struct Unknown SceneComponent; //  0x320 Size(8)
 	char bConstrainAspectRatio; //  0x330 Size(1)
 	float AspectRatio; //  0x334 Size(4)
 	float FOVAngle; //  0x338 Size(4)
 	float PostProcessBlendWeight; //  0x33c Size(4)
-	Unknown PostProcessSettings; //  0x340 Size(5c0)
+	struct Unknown PostProcessSettings; //  0x340 Size(5c0)
 
-	int32_t GetAutoActivatePlayerIndex(); // Function Engine.CameraActor.GetAutoActivatePlayerIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x3c9cd90>
+	int32_t GetAutoActivatePlayerIndex(); // Function Engine.CameraActor.GetAutoActivatePlayerIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x3ca8ef0>
 };
 
 // Class Engine.SoundBase
 struct USoundBase : Object {
-	Unknown SoundClassObject; //  0x28 Size(8)
-	char bDeb; //  0x30 Size(1)
+	struct Unknown SoundClassObject; //  0x28 Size(8)
+	char bDebug; //  0x30 Size(1)
 	char bOverrideConcurrency; //  0x30 Size(1)
 	char bOutputToBusOnly; //  0x30 Size(1)
-	char bHasDelayNode; //  0x30 Size(1)
+	char bHas; //  0x30 Size(1)
 	char bHasConcatenatorNode; //  0x30 Size(1)
 	char bBypassVolumeScaleForPriority; //  0x30 Size(1)
-	Unknown VirtualizationMode; //  0x31 Size(1)
-	Unknown ConcurrencySet; //  0x88 Size(50)
-	Unknown ConcurrencyOverrides; //  0xd8 Size(20)
+	enum class Unknow VirtualizationMode; //  0x31 Size(1)
+	struct TSet<Unknown> ConcurrencySet; //  0x88 Size(50)
+	struct Unknown ConcurrencyOverrides; //  0xd8 Size(20)
 	float Duration; //  0xf8 Size(4)
 	float MaxDistance; //  0xfc Size(4)
 	float TotalSamples; //  0x100 Size(4)
 	float Priority; //  0x104 Size(4)
-	Unknown AttenuationSettings; //  0x108 Size(8)
-	Unknown Modulation; //  0x110 Size(10)
-	Unknown SoundSubmixObject; //  0x120 Size(8)
-	Unknown SoundSubmixSends; //  0x128 Size(10)
-	Unknown SourceEffectChain; //  0x138 Size(8)
-	Unknown BusSends; //  0x140 Size(10)
-	Unknown PreEffectBusSends; //  0x150 Size(10)
+	struct Unknown AttenuationSettings; //  0x108 Size(8)
+	struct Unknown Modulation; //  0x110 Size(10)
+	struct Unknown SoundSubmixObject; //  0x120 Size(8)
+	struct TArray<Unknown> SoundSubmixSends; //  0x128 Size(10)
+	struct Unknown SourceEffectChain; //  0x138 Size(8)
+	struct TArray<Unknown> BusSends; //  0x140 Size(10)
+	struct TArray<Unknown> PreEffectBusSends; //  0x150 Size(10)
 };
 
 // Class Engine.SoundWave
 struct USoundWave : USoundBase {
 	int32_t CompressionQuality; //  0x160 Size(4)
 	int32_t StreamingPriority; //  0x164 Size(4)
-	Unknown SampleRateQuality; //  0x168 Size(1)
-	Unknown SoundGroup; //  0x16a Size(1)
+	enum class Unknow SampleRateQuality; //  0x168 Size(1)
+	char SoundGroup; //  0x16a Size(1)
 	char bLooping; //  0x16b Size(1)
 	char bStreaming; //  0x16b Size(1)
 	char bSeekableStreaming; //  0x16b Size(1)
-	Unknown LoadingBehavior; //  0x16c Size(1)
+	enum class Unknow LoadingBehavior; //  0x16c Size(1)
 	char bMature; //  0x16d Size(1)
 	char bManualWordWrap; //  0x16d Size(1)
 	char bSingleLine; //  0x16d Size(1)
 	char bIsAmbisonics; //  0x16e Size(1)
-	Unknown FrequenciesToAnalyze; //  0x170 Size(10)
-	Unknown CookedSpectralTimeData; //  0x180 Size(10)
-	Unknown CookedEnvelopeTimeData; //  0x190 Size(10)
+	struct TArray<Unknown> FrequenciesToAnalyze; //  0x170 Size(10)
+	struct TArray<Unknown> CookedSpectralTimeData; //  0x180 Size(10)
+	struct TArray<Unknown> CookedEnvelopeTimeData; //  0x190 Size(10)
 	int32_t InitialChunkSize; //  0x1a0 Size(4)
 	struct FString SpokenText; //  0x1e8 Size(10)
 	float SubtitlePriority; //  0x1f8 Size(4)
@@ -6348,79 +6348,79 @@ struct USoundWave : USoundBase {
 	float Pitch; //  0x200 Size(4)
 	int32_t NumChannels; //  0x204 Size(4)
 	int32_t SampleRate; //  0x208 Size(4)
-	Unknown Subtitles; //  0x218 Size(10)
-	Unknown Curves; //  0x228 Size(8)
-	Unknown InternalCurves; //  0x230 Size(8)
+	struct TArray<Unknown> Subtitles; //  0x218 Size(10)
+	struct Unknown Curves; //  0x228 Size(8)
+	struct Unknown InternalCurves; //  0x230 Size(8)
 };
 
 // Class Engine.BlueprintCore
 struct UBlueprintCore : Object {
-	Unknown SkeletonGeneratedClass; //  0x28 Size(8)
-	Unknown GeneratedClass; //  0x30 Size(8)
+	struct Unknown* SkeletonGeneratedClass; //  0x28 Size(8)
+	struct Unknown* GeneratedClass; //  0x30 Size(8)
 	char bLegacyNeedToPurgeSkelRefs; //  0x38 Size(1)
-	Unknown BlueprintGuid; //  0x3c Size(10)
+	struct Unknown BlueprintGuid; //  0x3c Size(10)
 };
 
 // Class Engine.Blueprint
 struct UBlueprint : UBlueprintCore {
-	Unknown ParentClass; //  0x50 Size(8)
-	Unknown BlueprintType; //  0x58 Size(1)
+	struct Unknown* ParentClass; //  0x50 Size(8)
+	char BlueprintType; //  0x58 Size(1)
 	char bRecompileOnLoad; //  0x59 Size(1)
 	char bHasBeenRegenerated; //  0x59 Size(1)
 	char bIsRegeneratingOnLoad; //  0x59 Size(1)
 	int32_t BlueprintSystemVersion; //  0x5c Size(4)
-	Unknown SimpleConstructionScript; //  0x60 Size(8)
-	Unknown ComponentTemplates; //  0x68 Size(10)
-	Unknown Timelines; //  0x78 Size(10)
-	Unknown ComponentClassOverrides; //  0x88 Size(10)
-	Unknown InheritableComponentHandler; //  0x98 Size(8)
+	struct Unknown SimpleConstructionScript; //  0x60 Size(8)
+	struct TArray<Unknown> ComponentTemplates; //  0x68 Size(10)
+	struct TArray<Unknown> Timelines; //  0x78 Size(10)
+	struct TArray<Unknown> ComponentClassOverrides; //  0x88 Size(10)
+	struct Unknown InheritableComponentHandler; //  0x98 Size(8)
 };
 
 // Class Engine.MKChannelEx
 struct UMKChannelEx : Object {
-	Unknown SelfChannel; //  0x30 Size(8)
+	struct Unknown SelfChannel; //  0x30 Size(8)
 };
 
 // Class Engine.Channel
 struct UChannel : UMKChannelEx {
-	Unknown Connection; //  0x38 Size(8)
+	struct Unknown Connection; //  0x38 Size(8)
 };
 
 // Class Engine.MKActorChannelEx
 struct UMKActorChannelEx : UChannel {
-	Unknown SelfActorChannel; //  0xa0 Size(8)
+	struct Unknown SelfActorChannel; //  0xa0 Size(8)
 };
 
 // Class Engine.ActorChannel
 struct UActorChannel : UMKActorChannelEx {
-	Unknown Actor; //  0xa8 Size(8)
-	Unknown CreateSubObjects; //  0x198 Size(10)
+	struct Unknown Actor; //  0xa8 Size(8)
+	struct TArray<Unknown> CreateSubObjects; //  0x198 Size(10)
 };
 
 // Class Engine.AnimationAsset
 struct UAnimationAsset : Object {
-	Unknown Skeleton; //  0x38 Size(8)
-	Unknown MetaData; //  0x60 Size(10)
-	Unknown AssetUserData; //  0x70 Size(10)
+	struct Unknown Skeleton; //  0x38 Size(8)
+	struct TArray<Unknown> Meta; //  0x60 Size(10)
+	struct TArray<Unknown> AssetUserData; //  0x70 Size(10)
 };
 
 // Class Engine.BlendSpaceBase
 struct UBlendSpaceBase : UAnimationAsset {
 	char bRotationBlendInMeshSpace; //  0x88 Size(1)
 	float AnimLength; //  0x8c Size(4)
-	Unknown InterpolationParam; //  0x90 Size(18)
+	struct Unknown InterpolationParam; //  0x90 Size(18)
 	float TargetWeightInterpolationSpeedPerSec; //  0xa8 Size(4)
-	Unknown NotifyTriggerMode; //  0xac Size(1)
-	Unknown PerBoneBlend; //  0xb0 Size(10)
+	char NotifyTriggerMode; //  0xac Size(1)
+	struct TArray<Unknown> PerBoneBlend; //  0xb0 Size(10)
 	int32_t SampleIndexWithMarkers; //  0xc0 Size(4)
-	Unknown SampleData; //  0xc8 Size(10)
-	Unknown GridSamples; //  0xd8 Size(10)
-	Unknown BlendParameters; //  0xe8 Size(60)
+	struct TArray<Unknown> SampleData; //  0xc8 Size(10)
+	struct TArray<Unknown> GridSamples; //  0xd8 Size(10)
+	struct Unknown BlendParameters; //  0xe8 Size(60)
 };
 
 // Class Engine.BlendSpace
 struct UBlendSpace : UBlendSpaceBase {
-	Unknown AxisToScaleAnimation; //  0x148 Size(1)
+	char AxisToScaleAnimation; //  0x148 Size(1)
 };
 
 // Class Engine.BlendSpace1D
@@ -6430,22 +6430,22 @@ struct UBlendSpace1D : UBlendSpaceBase {
 
 // Class Engine.AISystemBase
 struct UAISystemBase : Object {
-	Unknown AISystemClassName; //  0x28 Size(18)
+	struct Unknown AISystemClassName; //  0x28 Size(18)
 	struct FName AISystemModuleName; //  0x40 Size(8)
 	char bInstantiateAISystemOnClient; //  0x50 Size(1)
 };
 
 // Class Engine.AmbientSound
 struct AAmbientSound : UActor {
-	Unknown AudioComponent; //  0x310 Size(8)
+	struct Unknown AudioComponent; //  0x310 Size(8)
 
-	void Stop(); // Function Engine.AmbientSound.Stop(Final|Native|Public|BlueprintCallable) // <Game+0x3c5d570>
+	void Stop(); // Function Engine.AmbientSound.Stop(Final|Native|Public|BlueprintCallable) // <Game+0x3c690c0>
 };
 
 // Class Engine.AnimationSettings
 struct UAnimationSettings : UDeveloperSettings {
 	int32_t CompressCommandletVersion; //  0x38 Size(4)
-	Unknown KeyEndEffectorsMatchNameArray; //  0x40 Size(10)
+	struct TArray<Unknown> KeyEndEffectorsMatchNameArray; //  0x40 Size(10)
 	char ForceRecompression; //  0x50 Size(1)
 	char bOnlyCheckForMissingSkeletalMeshes; //  0x51 Size(1)
 	char bForceBelowThreshold; //  0x52 Size(1)
@@ -6453,27 +6453,27 @@ struct UAnimationSettings : UDeveloperSettings {
 	char bRaiseMaxErrorToExisting; //  0x54 Size(1)
 	char bEnablePerformanceLog; //  0x55 Size(1)
 	char bStripAnimationDataOnDedicatedServer; //  0x56 Size(1)
-	char bTickAnimationOnSkeletalMeshInit; //  0x57 Size(1)
+	char bTickAnimationOnSkeletalMes; //  0x57 Size(1)
 };
 
 // Class Engine.AnimBlueprint
 struct UAnimBlueprint : UBlueprint {
-	Unknown TargetSkeleton; //  0xa8 Size(8)
-	Unknown Groups; //  0xb0 Size(10)
+	struct Unknown TargetSkeleton; //  0xa8 Size(8)
+	struct TArray<Unknown> Groups; //  0xb0 Size(10)
 	char bUseMultiThreadedAnimationUpdate; //  0xc0 Size(1)
 	char bWarnAboutBlueprintUsage; //  0xc1 Size(1)
 };
 
 // Class Engine.AnimBlueprintGeneratedClass
 struct UAnimBlueprintGeneratedClass : UBlueprintGeneratedClass {
-	Unknown BakedStateMachines; //  0x3d0 Size(10)
-	Unknown TargetSkeleton; //  0x3e0 Size(8)
-	Unknown AnimNotifies; //  0x3e8 Size(10)
-	Unknown OrderedSavedPoseIndicesMap; //  0x3f8 Size(50)
-	Unknown SyncGroupNames; //  0x4c8 Size(10)
-	Unknown EvaluateGraphExposedInputs; //  0x4d8 Size(10)
-	Unknown GraphAssetPlayerInformation; //  0x4e8 Size(50)
-	Unknown GraphBlendOptions; //  0x538 Size(50)
+	struct TArray<Unknown> BakedStateMachines; //  0x3d0 Size(10)
+	struct Unknown TargetSkeleton; //  0x3e0 Size(8)
+	struct TArray<Unknown> AnimNotifies; //  0x3e8 Size(10)
+	struct TMap<{}, {}>Unknown OrderedSavedPoseIndicesMap; //  0x3f8 Size(50)
+	struct TArray<Unknown> SyncGroupNames; //  0x4c8 Size(10)
+	struct TArray<Unknown> EvaluateGraphExposedInputs; //  0x4d8 Size(10)
+	struct TMap<{}, {}>Unknown GraphAssetPlayerInformation; //  0x4e8 Size(50)
+	struct TMap<{}, {}>Unknown GraphBlendOptions; //  0x538 Size(50)
 };
 
 // Class Engine.AnimBoneCompressionCodec
@@ -6483,51 +6483,51 @@ struct UAnimBoneCompressionCodec : Object {
 
 // Class Engine.AnimBoneCompressionSettings
 struct UAnimBoneCompressionSettings : Object {
-	Unknown Codecs; //  0x28 Size(10)
+	struct TArray<Unknown> Codecs; //  0x28 Size(10)
 };
 
 // Class Engine.AnimClassData
 struct UAnimClassData : Object {
-	Unknown BakedStateMachines; //  0x30 Size(10)
-	Unknown TargetSkeleton; //  0x40 Size(8)
-	Unknown AnimNotifies; //  0x48 Size(10)
-	Unknown OrderedSavedPoseIndicesMap; //  0x58 Size(50)
-	Unknown AnimBlueprintFunctions; //  0xa8 Size(10)
-	Unknown AnimBlueprintFunctionData; //  0xb8 Size(10)
-	Unknown AnimNodeProperties; //  0xc8 Size(10)
-	Unknown LinkedAnimGraphNodeProperties; //  0xe8 Size(10)
-	Unknown LinkedAnimLayerNodeProperties; //  0x108 Size(10)
-	Unknown PreUpdateNodeProperties; //  0x128 Size(10)
-	Unknown DynamicResetNodeProperties; //  0x148 Size(10)
-	Unknown StateMachineNodeProperties; //  0x168 Size(10)
-	Unknown InitializationNodeProperties; //  0x188 Size(10)
-	Unknown GraphNameAssetPlayers; //  0x1a8 Size(50)
-	Unknown SyncGroupNames; //  0x1f8 Size(10)
-	Unknown EvaluateGraphExposedInputs; //  0x208 Size(10)
-	Unknown GraphBlendOptions; //  0x218 Size(50)
+	struct TArray<Unknown> BakedStateMachines; //  0x30 Size(10)
+	struct Unknown TargetSkeleton; //  0x40 Size(8)
+	struct TArray<Unknown> AnimNotifies; //  0x48 Size(10)
+	struct TMap<{}, {}>Unknown OrderedSavedPoseIndicesMap; //  0x58 Size(50)
+	struct TArray<Unknown> AnimBlueprintFunctions; //  0xa8 Size(10)
+	struct TArray<Unknown> AnimBlueprintFunctionData; //  0xb8 Size(10)
+	struct TArray<Unknown> AnimNodeProperties; //  0xc8 Size(10)
+	struct TArray<Unknown> LinkedAnimGraphNodeProperties; //  0xe8 Size(10)
+	struct TArray<Unknown> LinkedAnimLayerNodeProperties; //  0x108 Size(10)
+	struct TArray<Unknown> PreUpdateNodeProperties; //  0x128 Size(10)
+	struct TArray<Unknown> DynamicResetNodeProperties; //  0x148 Size(10)
+	struct TArray<Unknown> StateMachineNodeProperties; //  0x168 Size(10)
+	struct TArray<Unknown> InitializationNodeProperties; //  0x188 Size(10)
+	struct TMap<{}, {}>Unknown GraphNameAssetPlayers; //  0x1a8 Size(50)
+	struct TArray<Unknown> SyncGroupNames; //  0x1f8 Size(10)
+	struct TArray<Unknown> EvaluateGraphExposedInputs; //  0x208 Size(10)
+	struct TMap<{}, {}>Unknown GraphBlendOptions; //  0x218 Size(50)
 };
 
 // Class Engine.AnimSequenceBase
 struct UAnimSequenceBase : UAnimationAsset {
-	Unknown Notifies; //  0x80 Size(10)
+	struct TArray<Unknown> Notifies; //  0x80 Size(10)
 	float SequenceLength; //  0x90 Size(4)
 	float RateScale; //  0x94 Size(4)
-	Unknown RawCurveData; //  0x98 Size(10)
+	struct Unknown RawCurveData; //  0x98 Size(10)
 
-	float GetPlayLength(); // Function Engine.AnimSequenceBase.GetPlayLength(Native|Public|BlueprintCallable) // <Game+0x3c76cb0>
+	float GetPlayLength(); // Function Engine.AnimSequenceBase.GetPlayLength(Native|Public|BlueprintCallable) // <Game+0x3c82b30>
 };
 
 // Class Engine.AnimComposite
 struct UAnimComposite : UAnimCompositeBase {
-	Unknown AnimationTrack; //  0xa8 Size(10)
+	struct Unknown AnimationTrack; //  0xa8 Size(10)
 };
 
 // Class Engine.AnimCompress
 struct UAnimCompress : UAnimBoneCompressionCodec {
 	char bNeedsSkeleton; //  0x38 Size(1)
-	Unknown TranslationCompressionFormat; //  0x3c Size(1)
-	Unknown RotationCompressionFormat; //  0x3d Size(1)
-	Unknown ScaleCompressionFormat; //  0x3e Size(1)
+	char TranslationCompressionFormat; //  0x3c Size(1)
+	char RotationCompressionFormat; //  0x3d Size(1)
+	char ScaleCompressionFormat; //  0x3e Size(1)
 };
 
 // Class Engine.AnimCompress_RemoveLinearKeys
@@ -6549,9 +6549,9 @@ struct UAnimCompress_PerTrackCompression : UAnimCompress_RemoveLinearKeys {
 	float MaxPosDiffBitwise; //  0x64 Size(4)
 	float MaxAngleDiffBitwise; //  0x68 Size(4)
 	float MaxScaleDiffBitwise; //  0x6c Size(4)
-	Unknown AllowedRotationFormats; //  0x70 Size(10)
-	Unknown AllowedTranslationFormats; //  0x80 Size(10)
-	Unknown AllowedScaleFormats; //  0x90 Size(10)
+	struct TArray<Unknown> AllowedRotationFormats; //  0x70 Size(10)
+	struct TArray<Unknown> AllowedTranslationFormats; //  0x80 Size(10)
+	struct TArray<Unknown> AllowedScaleFormats; //  0x90 Size(10)
 	char bResampleAnimation; //  0xa0 Size(1)
 	float ResampledFramerate; //  0xa4 Size(4)
 	int32_t MinKeysForResampling; //  0xa8 Size(4)
@@ -6583,47 +6583,47 @@ struct UAnimCompress_RemoveTrivialKeys : UAnimCompress {
 
 // Class Engine.AnimCurveCompressionSettings
 struct UAnimCurveCompressionSettings : Object {
-	Unknown Codec; //  0x28 Size(8)
+	struct Unknown Codec; //  0x28 Size(8)
 };
 
 // Class Engine.AnimMontage
 struct UAnimMontage : UAnimCompositeBase {
-	Unknown BlendIn; //  0xa8 Size(30)
+	struct Unknown BlendIn; //  0xa8 Size(30)
 	float BlendInTime; //  0xd8 Size(4)
-	Unknown BlendOut; //  0xe0 Size(30)
+	struct Unknown BlendOut; //  0xe0 Size(30)
 	float BlendOutTime; //  0x110 Size(4)
 	float BlendOutTriggerTime; //  0x114 Size(4)
 	struct FName SyncGroup; //  0x118 Size(8)
 	int32_t SyncSlotIndex; //  0x120 Size(4)
-	Unknown MarkerData; //  0x128 Size(20)
-	Unknown CompositeSections; //  0x148 Size(10)
-	Unknown SlotAnimTracks; //  0x158 Size(10)
-	Unknown BranchingPoints; //  0x168 Size(10)
-	char bEnableRootMotionTranslatio; //  0x178 Size(1)
+	struct Unknown MarkerData; //  0x128 Size(20)
+	struct TArray<Unknown> CompositeSections; //  0x148 Size(10)
+	struct TArray<Unknown> SlotAnimTracks; //  0x158 Size(10)
+	struct TArray<Unknown> BranchingPoints; //  0x168 Size(10)
+	char bEnableRootMotionTranslation; //  0x178 Size(1)
 	char bEnableRootMotionRotation; //  0x179 Size(1)
 	char bEnableAutoBlendOut; //  0x17a Size(1)
-	Unknown RootMotionRootLock; //  0x17b Size(1)
-	Unknown BranchingPointMarkers; //  0x180 Size(10)
-	Unknown BranchingPointStateNotifyIndices; //  0x190 Size(10)
-	Unknown TimeStretchCurve; //  0x1a0 Size(28)
+	char RootMotionRootLock; //  0x17b Size(1)
+	struct TArray<Unknown> BranchingPointMarkers; //  0x180 Size(10)
+	struct TArray<Unknown> BranchingPointStateNotifyIndices; //  0x190 Size(10)
+	struct Unknown TimeStretchCurve; //  0x1a0 Size(28)
 	struct FName TimeStretchCurveName; //  0x1c8 Size(8)
 
-	float GetDefaultBlendOutTime(); // Function Engine.AnimMontage.GetDefaultBlendOutTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x3284800>
+	float GetDefaultBlendOutTime(); // Function Engine.AnimMontage.GetDefaultBlendOutTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x328fc80>
 };
 
 // Class Engine.AnimNotify_PlayParticleEffect
 struct UAnimNotify_PlayParticleEffect : UAnimNotify {
-	Unknown PSTemplate; //  0x38 Size(8)
-	Unknown LocationOffset; //  0x40 Size(c)
-	Unknown RotationOffset; //  0x4c Size(c)
-	Unknown Scale; //  0x58 Size(c)
+	struct Unknown PSTemplate; //  0x38 Size(8)
+	struct Unknown LocationOffset; //  0x40 Size(c)
+	struct Unknown RotationOffset; //  0x4c Size(c)
+	struct Unknown Scale; //  0x58 Size(c)
 	char Attached; //  0x80 Size(1)
 	struct FName SocketName; //  0x84 Size(8)
 };
 
 // Class Engine.AnimNotify_PlaySound
 struct UAnimNotify_PlaySound : UAnimNotify {
-	Unknown Sound; //  0x38 Size(8)
+	struct Unknown Sound; //  0x38 Size(8)
 	float VolumeMultiplier; //  0x40 Size(4)
 	float PitchMultiplier; //  0x44 Size(4)
 	char bFollow; //  0x48 Size(1)
@@ -6632,83 +6632,83 @@ struct UAnimNotify_PlaySound : UAnimNotify {
 
 // Class Engine.AnimNotifyState_TimedParticleEffect
 struct UAnimNotifyState_TimedParticleEffect : UAnimNotifyState {
-	Unknown PSTemplate; //  0x30 Size(8)
+	struct Unknown PSTemplate; //  0x30 Size(8)
 	struct FName SocketName; //  0x38 Size(8)
-	Unknown LocationOffset; //  0x40 Size(c)
-	Unknown RotationOffset; //  0x4c Size(c)
+	struct Unknown LocationOffset; //  0x40 Size(c)
+	struct Unknown RotationOffset; //  0x4c Size(c)
 	char bDestroyAtEnd; //  0x58 Size(1)
 };
 
 // Class Engine.AnimNotifyState_Trail
 struct UAnimNotifyState_Trail : UAnimNotifyState {
-	Unknown PSTemplate; //  0x30 Size(8)
+	struct Unknown PSTemplate; //  0x30 Size(8)
 	struct FName FirstSocketName; //  0x38 Size(8)
 	struct FName SecondSocketName; //  0x40 Size(8)
-	Unknown WidthScaleMode; //  0x48 Size(1)
+	char WidthScaleMode; //  0x48 Size(1)
 	struct FName WidthScaleCurve; //  0x4c Size(8)
 	char bRecycleSpawnedSystems; //  0x54 Size(1)
 
-	Unknown OverridePSTemplate(Unknown MeshComp, Unknown Animation); // Function Engine.AnimNotifyState_Trail.OverridePSTemplate(Event|Public|BlueprintEvent|Const) // <Game+0x23a73f0>
+	struct Unknown OverridePSTemplate(struct Unknown MeshComp, struct Unknown Animation); // Function Engine.AnimNotifyState_Trail.OverridePSTemplate(Event|Public|BlueprintEvent|Const) // <Game+0x23b1e70>
 };
 
 // Class Engine.AnimSequence
 struct UAnimSequence : UAnimSequenceBase {
 	int32_t NumFrames; //  0xa8 Size(4)
-	Unknown TrackToSkeletonMapTable; //  0xb0 Size(10)
-	Unknown BoneCompressionSettings; //  0xd0 Size(8)
-	Unknown CurveCompressionSettings; //  0xd8 Size(8)
-	Unknown AdditiveAnimType; //  0x150 Size(1)
-	Unknown RefPoseType; //  0x151 Size(1)
-	Unknown RefPoseSeq; //  0x158 Size(8)
+	struct TArray<Unknown> TrackToSkeletonMapTable; //  0xb0 Size(10)
+	struct Unknown BoneCompressionSettings; //  0xd0 Size(8)
+	struct Unknown CurveCompressionSettings; //  0xd8 Size(8)
+	char AdditiveAnimType; //  0x150 Size(1)
+	char RefPoseType; //  0x151 Size(1)
+	struct Unknown RefPoseSeq; //  0x158 Size(8)
 	int32_t RefFrameIndex; //  0x160 Size(4)
 	struct FName RetargetSource; //  0x164 Size(8)
-	Unknown Interpolation; //  0x16c Size(1)
+	enum class Unknow Interpolation; //  0x16c Size(1)
 	char bEnableRootMotion; //  0x16d Size(1)
-	Unknown RootMotionRootLock; //  0x16e Size(1)
+	char RootMotionRootLock; //  0x16e Size(1)
 	char bForceRootLock; //  0x16f Size(1)
 	char bUseNormalizedRootMotionScale; //  0x170 Size(1)
 	char bRootMotionSettingsCopiedFromMontage; //  0x171 Size(1)
-	Unknown AuthoredSyncMarkers; //  0x178 Size(10)
+	struct TArray<Unknown> AuthoredSyncMarkers; //  0x178 Size(10)
 };
 
 // Class Engine.AnimSet
 struct UAnimSet : Object {
 	char bAnimRotationOnly; //  0x28 Size(1)
-	Unknown TrackBoneNames; //  0x30 Size(10)
-	Unknown LinkupCache; //  0x40 Size(10)
-	Unknown BoneUseAnimTranslation; //  0x50 Size(10)
-	Unknown ForceUseMeshTranslation; //  0x60 Size(10)
-	Unknown UseTranslationBoneNames; //  0x70 Size(10)
-	Unknown ForceMeshTranslationBoneNames; //  0x80 Size(10)
+	struct TArray<Unknown> TrackBoneNames; //  0x30 Size(10)
+	struct TArray<Unknown> LinkupCache; //  0x40 Size(10)
+	struct TArray<Unknown> BoneUseAnimTranslation; //  0x50 Size(10)
+	struct TArray<Unknown> ForceUseMeshTranslation; //  0x60 Size(10)
+	struct TArray<Unknown> UseTranslationBoneNames; //  0x70 Size(10)
+	struct TArray<Unknown> ForceMeshTranslationBoneNames; //  0x80 Size(10)
 	struct FName PreviewSkelMeshName; //  0x90 Size(8)
 	struct FName BestRatioSkelMeshName; //  0x98 Size(8)
 };
 
 // Class Engine.AnimSingleNodeInstance
 struct UAnimSingleNodeInstance : UAnimInstance {
-	Unknown CurrentAsset; //  0x268 Size(8)
+	struct Unknown CurrentAsset; //  0x268 Size(8)
 	struct FDelegate PostEvaluateAnimEvent; //  0x270 Size(10)
 
-	void StopAnim(); // Function Engine.AnimSingleNodeInstance.StopAnim(Final|Native|Public|BlueprintCallable) // <Game+0x3c774c0>
+	void StopAnim(); // Function Engine.AnimSingleNodeInstance.StopAnim(Final|Native|Public|BlueprintCallable) // <Game+0x3c83340>
 };
 
 // Class Engine.AnimStreamable
 struct UAnimStreamable : UAnimSequenceBase {
 	int32_t NumFrames; //  0xa8 Size(4)
-	Unknown Interpolation; //  0xac Size(1)
+	enum class Unknow Interpolation; //  0xac Size(1)
 	struct FName RetargetSource; //  0xb0 Size(8)
-	Unknown BoneCompressionSettings; //  0xc8 Size(8)
-	Unknown CurveCompressionSettings; //  0xd0 Size(8)
+	struct Unknown BoneCompressionSettings; //  0xc8 Size(8)
+	struct Unknown CurveCompressionSettings; //  0xd0 Size(8)
 	char bEnableRootMotion; //  0xd8 Size(1)
-	Unknown RootMotionRootLock; //  0xd9 Size(1)
+	char RootMotionRootLock; //  0xd9 Size(1)
 	char bForceRootLock; //  0xda Size(1)
 	char bUseNormalizedRootMotionScale; //  0xdb Size(1)
 };
 
 // Class Engine.AssetExportTask
 struct UAssetExportTask : Object {
-	Unknown Object; //  0x28 Size(8)
-	Unknown Exporter; //  0x30 Size(8)
+	struct Unknown Object; //  0x28 Size(8)
+	struct Unknown Exporter; //  0x30 Size(8)
 	struct FString Filename; //  0x38 Size(10)
 	char bSelected; //  0x48 Size(1)
 	char bReplaceIdentical; //  0x49 Size(1)
@@ -6716,80 +6716,80 @@ struct UAssetExportTask : Object {
 	char bAutomated; //  0x4b Size(1)
 	char bUseFileArchive; //  0x4c Size(1)
 	char bWriteEmptyFiles; //  0x4d Size(1)
-	Unknown IgnoreObjectList; //  0x50 Size(10)
-	Unknown options; //  0x60 Size(8)
-	Unknown Errors; //  0x68 Size(10)
+	struct TArray<Unknown> IgnoreObjectList; //  0x50 Size(10)
+	struct Unknown options; //  0x60 Size(8)
+	struct TArray<Unknown> Errors; //  0x68 Size(10)
 };
 
 // Class Engine.AssetManagerSettings
 struct UAssetManagerSettings : UDeveloperSettings {
-	Unknown PrimaryAssetTypesToScan; //  0x38 Size(10)
-	Unknown DirectoriesToExclude; //  0x48 Size(10)
-	Unknown PrimaryAssetRules; //  0x58 Size(10)
-	Unknown CustomPrimaryAssetRules; //  0x68 Size(10)
+	struct TArray<Unknown> PrimaryAssetTypesToScan; //  0x38 Size(10)
+	struct TArray<Unknown> DirectoriesToExclude; //  0x48 Size(10)
+	struct TArray<Unknown> PrimaryAssetRules; //  0x58 Size(10)
+	struct TArray<Unknown> CustomPrimaryAssetRules; //  0x68 Size(10)
 	char bOnlyCookProductionAssets; //  0x78 Size(1)
 	char bShouldManagerDetermineTypeAndName; //  0x79 Size(1)
 	char bShouldGuessTypeAndNameInEditor; //  0x7a Size(1)
-	char bShouldAcquireMissingChunksOnLoad; //  0x7b Size(1)
-	Unknown PrimaryAssetIdRedirects; //  0x80 Size(10)
-	Unknown PrimaryAssetTypeRedirects; //  0x90 Size(10)
-	Unknown AssetPathRedirects; //  0xa0 Size(10)
-	Unknown MetaDataTagsForAssetRegistry; //  0xb0 Size(50)
+	char bShouldAcquireMissingChunks; //  0x7b Size(1)
+	struct TArray<Unknown> PrimaryAssetIdRedirects; //  0x80 Size(10)
+	struct TArray<Unknown> PrimaryAssetTypeRedirects; //  0x90 Size(10)
+	struct TArray<Unknown> AssetPathRedirects; //  0xa0 Size(10)
+	struct TSet<Unknown> Meta; //  0xb0 Size(50)
 	char bUsePathExcludedFromScan; //  0x100 Size(1)
 	char bRemoveRedundantDirectroyChunks; //  0x101 Size(1)
 };
 
 // Class Engine.AssetMappingTable
 struct UAssetMappingTable : Object {
-	Unknown MappedAssets; //  0x28 Size(10)
+	struct TArray<Unknown> MappedAssets; //  0x28 Size(10)
 };
 
 // Class Engine.AsyncActionHandleSaveGame
 struct UAsyncActionHandleSaveGame : UBlueprintAsyncActionBase {
 	struct FMulticastInlineDelegate Completed; //  0x30 Size(10)
-	Unknown SaveGameObject; //  0x60 Size(8)
+	struct Unknown SaveGameObject; //  0x60 Size(8)
 
-	Unknown AsyncSaveGameToSlot(Unknown WorldContextObject, Unknown SaveGameObject, struct FString SlotName, int32_t UserIndex); // Function Engine.AsyncActionHandleSaveGame.AsyncSaveGameToSlot(Final|Native|Static|Public|BlueprintCallable) // <Game+0x3c80b30>
+	struct Unknown AsyncSaveGameToSlot(struct Unknown WorldContextObject, struct Unknown SaveGameObject, struct FString SlotName, int32_t UserIndex); // Function Engine.AsyncActionHandleSaveGame.AsyncSaveGameToSlot(Final|Native|Static|Public|BlueprintCallable) // <Game+0x3c8ca60>
 };
 
 // Class Engine.AsyncActionLoadPrimaryAsset
 struct UAsyncActionLoadPrimaryAsset : UAsyncActionLoadPrimaryAssetBase {
 	struct FMulticastInlineDelegate Completed; //  0x78 Size(10)
 
-	Unknown AsyncLoadPrimaryAsset(Unknown WorldContextObject, Unknown PrimaryAsset, Unknown& LoadBundles); // Function Engine.AsyncActionLoadPrimaryAsset.AsyncLoadPrimaryAsset(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game+0x3c805f0>
+	struct Unknown AsyncLoadPrimaryAsset(struct Unknown WorldContextObject, struct Unknown PrimaryAsset, struct TArray<Unknown>& LoadBundles); // Function Engine.AsyncActionLoadPrimaryAsset.AsyncLoadPrimaryAsset(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game+0x3c8c520>
 };
 
 // Class Engine.AsyncActionLoadPrimaryAssetClass
 struct UAsyncActionLoadPrimaryAssetClass : UAsyncActionLoadPrimaryAssetBase {
 	struct FMulticastInlineDelegate Completed; //  0x78 Size(10)
 
-	Unknown AsyncLoadPrimaryAssetClass(Unknown WorldContextObject, Unknown PrimaryAsset, Unknown& LoadBundles); // Function Engine.AsyncActionLoadPrimaryAssetClass.AsyncLoadPrimaryAssetClass(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game+0x3c80730>
+	struct Unknown AsyncLoadPrimaryAssetClass(struct Unknown WorldContextObject, struct Unknown PrimaryAsset, struct TArray<Unknown>& LoadBundles); // Function Engine.AsyncActionLoadPrimaryAssetClass.AsyncLoadPrimaryAssetClass(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game+0x3c8c660>
 };
 
 // Class Engine.AsyncActionLoadPrimaryAssetList
 struct UAsyncActionLoadPrimaryAssetList : UAsyncActionLoadPrimaryAssetBase {
 	struct FMulticastInlineDelegate Completed; //  0x78 Size(10)
 
-	Unknown AsyncLoadPrimaryAssetList(Unknown WorldContextObject, Unknown& PrimaryAssetList, Unknown& LoadBundles); // Function Engine.AsyncActionLoadPrimaryAssetList.AsyncLoadPrimaryAssetList(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game+0x3c809d0>
+	struct Unknown AsyncLoadPrimaryAssetList(struct Unknown WorldContextObject, struct TArray<Unknown>& PrimaryAssetList, struct TArray<Unknown>& LoadBundles); // Function Engine.AsyncActionLoadPrimaryAssetList.AsyncLoadPrimaryAssetList(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game+0x3c8c900>
 };
 
 // Class Engine.AsyncActionLoadPrimaryAssetClassList
 struct UAsyncActionLoadPrimaryAssetClassList : UAsyncActionLoadPrimaryAssetBase {
 	struct FMulticastInlineDelegate Completed; //  0x78 Size(10)
 
-	Unknown AsyncLoadPrimaryAssetClassList(Unknown WorldContextObject, Unknown& PrimaryAssetList, Unknown& LoadBundles); // Function Engine.AsyncActionLoadPrimaryAssetClassList.AsyncLoadPrimaryAssetClassList(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game+0x3c80870>
+	struct Unknown AsyncLoadPrimaryAssetClassList(struct Unknown WorldContextObject, struct TArray<Unknown>& PrimaryAssetList, struct TArray<Unknown>& LoadBundles); // Function Engine.AsyncActionLoadPrimaryAssetClassList.AsyncLoadPrimaryAssetClassList(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game+0x3c8c7a0>
 };
 
-// Class Engine.AsyncActionChangePrimaryAssetBundles
-struct UAsyncActionChangePrimaryAssetBundles : UAsyncActionLoadPrimaryAssetBase {
+// Class Engine.AsyncActionChangePrimaryAssisti
+struct UAsyncActionChangePrimaryAssisti : UAsyncActionLoadPrimaryAssetBase {
 	struct FMulticastInlineDelegate Completed; //  0x78 Size(10)
 
-	Unknown AsyncChangeBundleStateForPrimaryAssetList(Unknown WorldContextObject, Unknown& PrimaryAssetList, Unknown& AddBundles, Unknown& RemoveBundles); // Function Engine.AsyncActionChangePrimaryAssetBundles.AsyncChangeBundleStateForPrimaryAssetList(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game+0x3c80310>
+	struct Unknown AsyncChangeBundleStateForPrimaryAssetLi(struct Unknown WorldContextObject, struct TArray<Unknown>& PrimaryAssetList, struct TArray<Unknown>& AddBundles, struct TArray<Unknown>& RemoveBundles); // Function Engine.AsyncActionChangePrimaryAss.AsyncChangeBundleStateForPrimaryAssetLi(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game+0x3c8c240>
 };
 
 // Class Engine.AtmosphericFog
 struct AAtmosphericFog : AInfo {
-	Unknown AtmosphericFogComponent; //  0x310 Size(8)
+	struct Unknown AtmosphericFogComponent; //  0x310 Size(8)
 };
 
 // Class Engine.AtmosphericFogComponent
@@ -6805,39 +6805,39 @@ struct UAtmosphericFogComponent : USceneComponent {
 	float StartDistance; //  0x258 Size(4)
 	float SunDiscScale; //  0x25c Size(4)
 	float DefaultBrightness; //  0x260 Size(4)
-	Unknown DefaultLightColor; //  0x264 Size(4)
+	struct Unknown DefaultLightColor; //  0x264 Size(4)
 	char bDisableSunDisk; //  0x268 Size(1)
 	char bAtmosphereAffectsSunIlluminance; //  0x268 Size(1)
 	char bDisableGroundScattering; //  0x268 Size(1)
-	Unknown PrecomputeParams; //  0x26c Size(2c)
-	Unknown TransmittanceTexture; //  0x298 Size(8)
-	Unknown IrradianceTexture; //  0x2a0 Size(8)
+	struct Unknown PrecomputeParams; //  0x26c Size(2c)
+	struct Unknown TransmittanceTexture; //  0x298 Size(8)
+	struct Unknown IrradianceTexture; //  0x2a0 Size(8)
 
-	void StartPrecompute(); // Function Engine.AtmosphericFogComponent.StartPrecompute(Final|Native|Public|BlueprintCallable) // <Game+0x151a800>
+	void StartPrecompute(); // Function Engine.AtmosphericFogComponent.StartPrecompute(Final|Native|Public|BlueprintCallable) // <Game+0x151af10>
 };
 
 // Class Engine.AudioSettings
 struct UAudioSettings : UDeveloperSettings {
-	Unknown DefaultSoundClassName; //  0x38 Size(18)
-	Unknown DefaultMediaSoundClassName; //  0x50 Size(18)
-	Unknown DefaultSoundConcurrencyName; //  0x68 Size(18)
-	Unknown DefaultBaseSoundMix; //  0x80 Size(18)
-	Unknown VoiPSoundClass; //  0x98 Size(18)
-	Unknown MasterSubmix; //  0xb0 Size(18)
-	Unknown ReverbSubmix; //  0xc8 Size(18)
-	Unknown EQSubmix; //  0xe0 Size(18)
-	Unknown VoiPSampleRate; //  0xf8 Size(4)
+	struct Unknown DefaultSoundClassName; //  0x38 Size(18)
+	struct Unknown DefaultMediaSoundClassName; //  0x50 Size(18)
+	struct Unknown DefaultSoundConcurrencyName; //  0x68 Size(18)
+	struct Unknown DefaultBaseSoundMix; //  0x80 Size(18)
+	struct Unknown VoiPSoundClass; //  0x98 Size(18)
+	struct Unknown MasterSubmix; //  0xb0 Size(18)
+	struct Unknown ReverbSubmix; //  0xc8 Size(18)
+	struct Unknown EQSubmix; //  0xe0 Size(18)
+	enum class Unknow VoiPSampleRate; //  0xf8 Size(4)
 	float DefaultReverbSendLevel; //  0xfc Size(4)
 	int32_t MaximumConcurrentStreams; //  0x100 Size(4)
-	float Glob; //  0x104 Size(4)
-	float GlobmumConcurrentSt; //  0x108 Size(4)
-	Unknown QualityLevels; //  0x110 Size(10)
+	float GlobalMinPitchScale; //  0x104 Size(4)
+	float GlobalMaxPitchScale; //  0x108 Size(4)
+	struct TArray<Unknown> QualityLevels; //  0x110 Size(10)
 	char bAllowPlayWhenSilent; //  0x120 Size(1)
 	char bDisableMasterEQ; //  0x120 Size(1)
-	char bAllowCenterChannel3DPanning; //  0x120 Size(1)
+	char bAllowCenterChannel3; //  0x120 Size(1)
 	uint32_t NumStoppingSources; //  0x124 Size(4)
-	Unknown PanningMethod; //  0x128 Size(1)
-	Unknown MonoChannelUpmixMethod; //  0x129 Size(1)
+	enum class Unknow PanningMethod; //  0x128 Size(1)
+	enum class Unknow MonoChannelUpmixMethod; //  0x129 Size(1)
 	struct FString DialogueFilenameFormat; //  0x130 Size(10)
 };
 
@@ -6845,35 +6845,35 @@ struct UAudioSettings : UDeveloperSettings {
 struct AAudioVolume : AVolume {
 	float Priority; //  0x348 Size(4)
 	char bEnabled; //  0x34c Size(1)
-	Unknown Settings; //  0x350 Size(20)
-	Unknown AmbientZoneSettings; //  0x370 Size(24)
+	struct Unknown Settings; //  0x350 Size(20)
+	struct Unknown AmbientZoneSettings; //  0x370 Size(24)
 
-	void SetReverbSettings(Unknown& NewReverbSettings); // Function Engine.AudioVolume.SetReverbSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x3c84a70>
+	void SetReverbSettings(struct Unknown& NewReverbSettings); // Function Engine.AudioVolume.SetReverbSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x3c909e0>
 };
 
-// Class Engine.AutoDestroySubsystem
-struct UAutoDestroySubsystem : UWorldSubsystem {
-	Unknown ActorsToPoll; //  0x38 Size(10)
+// Class Engine.Auto
+struct UAuto : UWorldSubsystem {
+	struct TArray<Unknown> ActorsToPoll; //  0x38 Size(10)
 
-	void OnActorEndPlay(Unknown Actor, Unknown EndPlayReason); // Function Engine.AutoDestroySubsystem.OnActorEndPlay(Final|Native|Private) // <Game+0x3c8b230>
+	void OnActorEndPlay(struct Unknown Actor, char EndPlayReason); // Function Engine.Auto.OnActorEndPlay(Final|Native|Private) // <Game+0x3c97220>
 };
 
 // Class Engine.AutomationTestSettings
 struct UAutomationTestSettings : Object {
-	Unknown EngineTestModules; //  0x28 Size(10)
-	Unknown EditorTestModules; //  0x38 Size(10)
-	Unknown AutomationTestmap; //  0x48 Size(18)
-	Unknown EditorPerformanceTestMaps; //  0x60 Size(10)
-	Unknown AssetsToOpen; //  0x70 Size(10)
-	Unknown BuildPromotionTest; //  0x80 Size(1f0)
-	Unknown MaterialEditorPromotionTest; //  0x270 Size(30)
-	Unknown ParticleEditorPromotionTest; //  0x2a0 Size(10)
-	Unknown BlueprintEditorPromotionTest; //  0x2b0 Size(30)
-	Unknown TestLevelFolders; //  0x2e0 Size(10)
-	Unknown ExternalTools; //  0x2f0 Size(10)
-	Unknown ImportExportTestDefinitions; //  0x300 Size(10)
-	Unknown LaunchOnSettings; //  0x310 Size(10)
-	Unknown DefaultScreenshotResolution; //  0x320 Size(8)
+	struct TArray<Unknown> EngineTestModules; //  0x28 Size(10)
+	struct TArray<Unknown> EditorTestModules; //  0x38 Size(10)
+	struct Unknown AutomationTestmap; //  0x48 Size(18)
+	struct TArray<Unknown> EditorPerformanceTestMaps; //  0x60 Size(10)
+	struct TArray<Unknown> AssetsToOpen; //  0x70 Size(10)
+	struct Unknown BuildPromotionTest; //  0x80 Size(1f0)
+	struct Unknown MaterialEditorPromotionTest; //  0x270 Size(30)
+	struct Unknown ParticleEditorPromotionTest; //  0x2a0 Size(10)
+	struct Unknown BlueprintEditorPromotionTes; //  0x2b0 Size(30)
+	struct TArray<Unknown> TestLevelFolders; //  0x2e0 Size(10)
+	struct TArray<Unknown> ExternalTools; //  0x2f0 Size(10)
+	struct TArray<Unknown> ImportExportTestDefinitions; //  0x300 Size(10)
+	struct TArray<Unknown> LaunchOnSettings; //  0x310 Size(10)
+	struct Unknown DefaultScreenshotResolution; //  0x320 Size(8)
 };
 
 // Class Engine.AvoidanceManager
@@ -6886,17 +6886,17 @@ struct UAvoidanceManager : Object {
 	float TestHeightDifference; //  0x44 Size(4)
 	float HeightCheckMargin; //  0x48 Size(4)
 
-	char RegisterMovementComponent(Unknown MovementComp, float AvoidanceWeight); // Function Engine.AvoidanceManager.RegisterMovementComponent(Final|Native|Public|BlueprintCallable) // <Game+0x3c8b2f0>
+	char RegisterMovementComponent(struct Unknown MovementComp, float AvoidanceWeight); // Function Engine.AvoidanceManager.RegisterMovementComponent(Final|Native|Public|BlueprintCallable) // <Game+0x3c972e0>
 };
 
 // Class Engine.BandwidthTestActor
 struct ABandwidthTestActor : UActor {
-	Unknown BandwidthGenerator; //  0x310 Size(20)
+	struct Unknown BandwidthGenerator; //  0x310 Size(20)
 };
 
 // Class Engine.BillboardComponent
 struct UBillboardComponent : UPrimitiveComponent {
-	Unknown Sprite; //  0x4b8 Size(8)
+	struct Unknown Sprite; //  0x4b8 Size(8)
 	char bIsScreenSizeScaled; //  0x4c0 Size(1)
 	float ScreenSize; //  0x4c4 Size(4)
 	float U; //  0x4c8 Size(4)
@@ -6904,50 +6904,50 @@ struct UBillboardComponent : UPrimitiveComponent {
 	float V; //  0x4d0 Size(4)
 	float VL; //  0x4d4 Size(4)
 
-	void SetUV(int32_t NewU, int32_t NewUL, int32_t NewV, int32_t NewVL); // Function Engine.BillboardComponent.SetUV(Native|Public|BlueprintCallable) // <Game+0x3c8b5d0>
+	void SetUV(int32_t NewU, int32_t NewUL, int32_t NewV, int32_t NewVL); // Function Engine.BillboardComponent.SetUV(Native|Public|BlueprintCallable) // <Game+0x3c975c0>
 };
 
 // Class Engine.Skeleton
 struct USkeleton : Object {
-	Unknown BoneTree; //  0x38 Size(10)
-	Unknown RefLocalPoses; //  0x48 Size(10)
-	Unknown VirtualBoneGuid; //  0x170 Size(10)
-	Unknown VirtualBones; //  0x180 Size(10)
-	Unknown Sockets; //  0x190 Size(10)
-	Unknown SmartNames; //  0x1f0 Size(50)
-	Unknown BlendProfiles; //  0x270 Size(10)
-	Unknown SlotGroups; //  0x280 Size(10)
-	Unknown AssetUserData; //  0x358 Size(10)
+	struct TArray<Unknown> BoneTree; //  0x38 Size(10)
+	struct TArray<Unknown> RefLocalPoses; //  0x48 Size(10)
+	struct Unknown VirtualBoneGuid; //  0x170 Size(10)
+	struct TArray<Unknown> VirtualBones; //  0x180 Size(10)
+	struct TArray<Unknown> Sockets; //  0x190 Size(10)
+	struct Unknown SmartNames; //  0x1f0 Size(50)
+	struct TArray<Unknown> BlendProfiles; //  0x270 Size(10)
+	struct TArray<Unknown> SlotGroups; //  0x280 Size(10)
+	struct TArray<Unknown> AssetUserData; //  0x358 Size(10)
 };
 
 // Class Engine.BlendProfile
 struct UBlendProfile : Object {
-	Unknown OwningSkeleton; //  0x30 Size(8)
-	Unknown ProfileEntries; //  0x38 Size(10)
+	struct Unknown OwningSkeleton; //  0x30 Size(8)
+	struct TArray<Unknown> ProfileEntries; //  0x38 Size(10)
 };
 
 // Class Engine.PlatformGameInstance
 struct UPlatformGameInstance : UGameInstance {
 	struct FMulticastInlineDelegate ApplicationWillDeactivateDelegate; //  0x218 Size(10)
 	struct FMulticastInlineDelegate ApplicationHasReactivatedDelegate; //  0x228 Size(10)
-	struct FMulticastInlineDelegate ApplicationWillEnterBackgro; //  0x238 Size(10)
+	struct FMulticastInlineDelegate ApplicationWillEnterBackgroundDelegate; //  0x238 Size(10)
 	struct FMulticastInlineDelegate ApplicationHasEnteredForegroundDelegate; //  0x248 Size(10)
 	struct FMulticastInlineDelegate ApplicationWillTerminateDelegate; //  0x258 Size(10)
-	struct FMulticastInlineDelegate ApplicationShouldUnloadReso; //  0x268 Size(10)
+	struct FMulticastInlineDelegate ApplicationShouldUnloadResourcesDelegate; //  0x268 Size(10)
 	struct FMulticastInlineDelegate ApplicationReceivedStartupArgumentsDelegate; //  0x278 Size(10)
-	struct FMulticastInlineDelegate ApplicationRegisteredForRemoteNotificationsDelegate; //  0x288 Size(10)
+	struct FMulticastInlineDelegate ApplicationRegisteredForRemoteNotificationsDelegat; //  0x288 Size(10)
 	struct FMulticastInlineDelegate ApplicationRegisteredForUserNotificationsDelegate; //  0x298 Size(10)
 	struct FMulticastInlineDelegate ApplicationFailedToRegisterForRemoteNotificationsDelegate; //  0x2a8 Size(10)
-	struct FMulticastInlineDelegate ApplicationReceivedRemoteNo; //  0x2b8 Size(10)
+	struct FMulticastInlineDelegate ApplicationReceivedRemoteNotifi; //  0x2b8 Size(10)
 	struct FMulticastInlineDelegate ApplicationReceivedLocalNotificationDelegate; //  0x2c8 Size(10)
-	struct FMulticastInlineDelegate ApplicationReceivedScreenOrientationChangedNotificationDelegate; //  0x2d8 Size(10)
+	struct FMulticastInlineDelegate ApplicationReceivedScreenOrientationChangedNoti; //  0x2d8 Size(10)
 };
 
 // Class Engine.BodySetup
 struct UBodySetup : Object {
-	Unknown AggGeom; //  0x28 Size(58)
+	struct Unknown AggG; //  0x28 Size(58)
 	struct FName BoneName; //  0x80 Size(8)
-	Unknown PhysicsType; //  0x88 Size(1)
+	char PhysicsType; //  0x88 Size(1)
 	char bAlwaysFullAnimWeight; //  0x89 Size(1)
 	char bConsiderForBounds; //  0x89 Size(1)
 	char bMeshCollideAll; //  0x89 Size(1)
@@ -6956,61 +6956,61 @@ struct UBodySetup : Object {
 	char bSharedCookedData; //  0x89 Size(1)
 	char bGenerateMirroredCollision; //  0x89 Size(1)
 	char bSupportUVsAndFaceRemap; //  0x89 Size(1)
-	Unknown CollisionReponse; //  0x8b Size(1)
-	Unknown CollisionTraceFlag; //  0x8c Size(1)
-	Unknown PhysMaterial; //  0x90 Size(8)
-	Unknown WalkableSlopeOverride; //  0x98 Size(10)
-	Unknown DefaultInstance; //  0x120 Size(190)
-	Unknown BuildScale3D; //  0x2b8 Size(c)
+	char CollisionReponse; //  0x8b Size(1)
+	char CollisionTraceFlag; //  0x8c Size(1)
+	struct Unknown PhysMaterial; //  0x90 Size(8)
+	struct Unknown WalkableSlopeOverride; //  0x98 Size(10)
+	struct Unknown DefaultInstance; //  0x120 Size(190)
+	struct Unknown BuildScale3D; //  0x2b8 Size(c)
 };
 
 // Class Engine.BoneMaskFilter
 struct UBoneMaskFilter : Object {
-	Unknown BlendPoses; //  0x28 Size(10)
+	struct TArray<Unknown> BlendPoses; //  0x28 Size(10)
 };
 
 // Class Engine.BookMark
 struct UBookMark : UBookmarkBase {
-	Unknown Location; //  0x28 Size(c)
-	Unknown Rotation; //  0x34 Size(c)
-	Unknown HiddenLevels; //  0x40 Size(10)
+	struct Unknown Location; //  0x28 Size(c)
+	struct Unknown Rotation; //  0x34 Size(c)
+	struct TArray<Unknown> HiddenLevels; //  0x40 Size(10)
 };
 
 // Class Engine.BookMark2D
 struct UBookMark2D : UBookmarkBase {
 	float Zoom2D; //  0x28 Size(4)
-	Unknown Location; //  0x2c Size(8)
+	struct Unknown Location; //  0x2c Size(8)
 };
 
 // Class Engine.ReflectionCapture
 struct AReflectionCapture : UActor {
-	Unknown CaptureComponent; //  0x310 Size(8)
+	struct Unknown CaptureComponent; //  0x310 Size(8)
 };
 
 // Class Engine.ReflectionCaptureComponent
 struct UReflectionCaptureComponent : USceneComponent {
-	Unknown VisualizationMesh; //  0x238 Size(8)
-	Unknown CaptureOffsetComponent; //  0x240 Size(8)
-	Unknown ReflectionSourceType; //  0x248 Size(1)
-	Unknown Cubemap; //  0x250 Size(8)
+	struct Unknown VisualizationMesh; //  0x238 Size(8)
+	struct Unknown CaptureOffsetComponent; //  0x240 Size(8)
+	enum class Unknow ReflectionSourceType; //  0x248 Size(1)
+	struct Unknown Cubemap; //  0x250 Size(8)
 	float SourceCubemapAngle; //  0x258 Size(4)
 	float Brightness; //  0x25c Size(4)
 	float DiffuseRadiance; //  0x260 Size(4)
-	Unknown CaptureOffset; //  0x264 Size(c)
-	Unknown MapBuildDataId; //  0x270 Size(10)
+	struct Unknown CaptureOffset; //  0x264 Size(c)
+	struct Unknown MapBuildDataId; //  0x270 Size(10)
 };
 
 // Class Engine.BoxReflectionCaptureComponent
 struct UBoxReflectionCaptureComponent : UReflectionCaptureComponent {
 	float BoxTransitionDistance; //  0x2c0 Size(4)
-	Unknown PreviewInfluenceBox; //  0x2c8 Size(8)
-	Unknown PreviewCaptureBox; //  0x2d0 Size(8)
+	struct Unknown PreviewInfluenceBox; //  0x2c8 Size(8)
+	struct Unknown PreviewCaptureBox; //  0x2d0 Size(8)
 };
 
 // Class Engine.Breakpoint
 struct UBreakpoint : Object {
 	char bEnabled; //  0x28 Size(1)
-	Unknown Node; //  0x30 Size(8)
+	struct Unknown Node; //  0x30 Size(8)
 	char bStepOnce; //  0x38 Size(1)
 	char bStepOnce_WasPreviouslyDisabled; //  0x38 Size(1)
 	char bStepOnce_RemoveAfterHit; //  0x38 Size(1)
@@ -7021,51 +7021,51 @@ struct UBrushBuilder : Object {
 	struct FString BitmapFilename; //  0x28 Size(10)
 	struct FString Tooltip; //  0x38 Size(10)
 	char NotifyBadParams; //  0x48 Size(1)
-	Unknown Vertices; //  0x50 Size(10)
-	Unknown Polys; //  0x60 Size(10)
+	struct TArray<Unknown> Vertices; //  0x50 Size(10)
+	struct TArray<Unknown> Polys; //  0x60 Size(10)
 	struct FName Layer; //  0x70 Size(8)
 	char MergeCoplanars; //  0x78 Size(1)
 };
 
 // Class Engine.BrushComponent
 struct UBrushComponent : UPrimitiveComponent {
-	Unknown Brush; //  0x4b8 Size(8)
-	Unknown BrushBodySetup; //  0x4c0 Size(8)
+	struct Unknown Brush; //  0x4b8 Size(8)
+	struct Unknown BrushBodySetup; //  0x4c0 Size(8)
 };
 
 // Class Engine.ButtonStyleAsset
 struct UButtonStyleAsset : Object {
-	Unknown ButtonStyle; //  0x28 Size(278)
+	struct Unknown ButtonStyle; //  0x28 Size(278)
 };
 
 // Class Engine.CameraAnim
 struct UCameraAnim : Object {
-	Unknown CameraInterpGroup; //  0x28 Size(8)
+	struct Unknown CameraInterpGroup; //  0x28 Size(8)
 	float AnimLength; //  0x30 Size(4)
-	Unknown BoundingBox; //  0x34 Size(1c)
+	struct Unknown BoundingBox; //  0x34 Size(1c)
 	char bRelativeToInitialTransform; //  0x50 Size(1)
 	char bRelativeToInitialFOV; //  0x50 Size(1)
 	float BaseFOV; //  0x54 Size(4)
-	Unknown BasePostProcessSettings; //  0x60 Size(5c0)
+	struct Unknown BasePostProcessSettings; //  0x60 Size(5c0)
 	float BasePostProcessBlendWeight; //  0x620 Size(4)
 };
 
 // Class Engine.CameraAnimInst
 struct UCameraAnimInst : Object {
-	Unknown CamAnim; //  0x28 Size(8)
-	Unknown InterpGroupInst; //  0x30 Size(8)
+	struct Unknown CamAnim; //  0x28 Size(8)
+	struct Unknown InterpGroupInst; //  0x30 Size(8)
 	float PlayRate; //  0x50 Size(4)
-	Unknown MoveTrack; //  0x68 Size(8)
-	Unknown MoveInst; //  0x70 Size(8)
-	Unknown PlaySpace; //  0x78 Size(1)
+	struct Unknown MoveTrack; //  0x68 Size(8)
+	struct Unknown MoveInst; //  0x70 Size(8)
+	char PlaySpace; //  0x78 Size(1)
 
-	void Stop(char bImmediate); // Function Engine.CameraAnimInst.Stop(Final|Native|Public|BlueprintCallable) // <Game+0x3c9d7a0>
+	void Stop(char bImmediate); // Function Engine.CameraAnimInst.Stop(Final|Native|Public|BlueprintCallable) // <Game+0x3ca9900>
 };
 
 // Class Engine.CameraModifier_CameraShake
 struct UCameraModifier_CameraShake : UCameraModifier {
-	Unknown ActiveShakes; //  0x48 Size(10)
-	Unknown ExpiredPooledShakesMap; //  0x58 Size(50)
+	struct TArray<Unknown> ActiveShakes; //  0x48 Size(10)
+	struct TMap<{}, {}>Unknown ExpiredPooledShakesMap; //  0x58 Size(50)
 	float SplitScreenShakeScale; //  0xa8 Size(4)
 };
 
@@ -7075,38 +7075,38 @@ struct UCameraShake : Object {
 	float OscillationDuration; //  0x2c Size(4)
 	float OscillationBlendInTime; //  0x30 Size(4)
 	float OscillationBlendOutTime; //  0x34 Size(4)
-	Unknown RotOscillation; //  0x38 Size(24)
-	Unknown LocOscillation; //  0x5c Size(24)
-	Unknown FOVOscillation; //  0x80 Size(c)
+	struct Unknown RotOscillation; //  0x38 Size(24)
+	struct Unknown LocOscillation; //  0x5c Size(24)
+	struct Unknown FOVOscillation; //  0x80 Size(c)
 	float AnimPlayRate; //  0x8c Size(4)
 	float AnimScale; //  0x90 Size(4)
 	float AnimBlendInTime; //  0x94 Size(4)
 	float AnimBlendOutTime; //  0x98 Size(4)
 	float RandomAnimSegmentDuration; //  0x9c Size(4)
-	Unknown Anim; //  0xa0 Size(8)
+	struct Unknown Anim; //  0xa0 Size(8)
 	char bRandomAnimSegment; //  0xa8 Size(1)
-	Unknown CameraOwner; //  0xc0 Size(8)
+	struct Unknown CameraOwner; //  0xc0 Size(8)
 	float ShakeScale; //  0x148 Size(4)
 	float OscillatorTimeRemaining; //  0x14c Size(4)
-	Unknown AnimInst; //  0x150 Size(8)
+	struct Unknown AnimInst; //  0x150 Size(8)
 
-	void ReceiveStopShake(char bImmediately); // Function Engine.CameraShake.ReceiveStopShake(Event|Public|BlueprintEvent) // <Game+0x23a73f0>
+	void ReceiveStopShake(char bImmediately); // Function Engine.CameraShake.ReceiveStopShake(Event|Public|BlueprintEvent) // <Game+0x23b1e70>
 };
 
 // Class Engine.CameraShakeSourceActor
 struct ACameraShakeSourceActor : UActor {
-	Unknown CameraShakeSourceComponent; //  0x310 Size(8)
+	struct Unknown CameraShakeSourceComponent; //  0x310 Size(8)
 };
 
 // Class Engine.CameraShakeSourceComponent
 struct UCameraShakeSourceComponent : USceneComponent {
-	Unknown Attenuation; //  0x238 Size(1)
+	enum class Unknow Attenuation; //  0x238 Size(1)
 	float InnerAttenuationRadius; //  0x23c Size(4)
 	float OuterAttenuationRadius; //  0x240 Size(4)
-	Unknown CameraShake; //  0x248 Size(8)
+	struct Unknown* CameraShake; //  0x248 Size(8)
 	char bAutoPlay; //  0x250 Size(1)
 
-	void StopAllCameraShakes(char bImmediately); // Function Engine.CameraShakeSourceComponent.StopAllCameraShakes(Final|Native|Public|BlueprintCallable) // <Game+0x3ca1cb0>
+	void StopAllCameraShakes(char bImmediately); // Function Engine.CameraShakeSourceComponent.StopAllCameraShakes(Final|Native|Public|BlueprintCallable) // <Game+0x3cade50>
 };
 
 // Class Engine.Canvas
@@ -7115,18 +7115,18 @@ struct UCanvas : Object {
 	float OrgY; //  0x2c Size(4)
 	float ClipX; //  0x30 Size(4)
 	float ClipY; //  0x34 Size(4)
-	Unknown DrawColor; //  0x38 Size(4)
+	struct Unknown DrawColor; //  0x38 Size(4)
 	char bCenterX; //  0x3c Size(1)
 	char bCenterY; //  0x3c Size(1)
 	char bNoSmooth; //  0x3c Size(1)
 	int32_t SizeX; //  0x40 Size(4)
 	int32_t SizeY; //  0x44 Size(4)
-	Unknown ColorModulate; //  0x50 Size(10)
-	Unknown DefaultTexture; //  0x60 Size(8)
-	Unknown GradientTexture0; //  0x68 Size(8)
-	Unknown ReporterGraph; //  0x70 Size(8)
+	struct Unknown ColorModulate; //  0x50 Size(10)
+	struct Unknown DefaultTexture; //  0x60 Size(8)
+	struct Unknown GradientTexture0; //  0x68 Size(8)
+	struct Unknown ReporterGraph; //  0x70 Size(8)
 
-	Unknown K2_TextSize(Unknown RenderFont, struct FString RenderText, Unknown Scale); // Function Engine.Canvas.K2_TextSize(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game+0x3ca1ae0>
+	struct Unknown K2_TextSize(struct Unknown RenderFont, struct FString RenderText, struct Unknown Scale); // Function Engine.Canvas.K2_TextSize(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game+0x3cadc80>
 };
 
 // Class Engine.TextureRenderTarget
@@ -7138,27 +7138,27 @@ struct UTextureRenderTarget : UTexture {
 struct UTextureRenderTarget2D : UTextureRenderTarget {
 	int32_t SizeX; //  0xc0 Size(4)
 	int32_t SizeY; //  0xc4 Size(4)
-	Unknown ClearColor; //  0xc8 Size(10)
-	Unknown AddressX; //  0xd8 Size(1)
-	Unknown AddressY; //  0xd9 Size(1)
+	struct Unknown ClearColor; //  0xc8 Size(10)
+	char AddressX; //  0xd8 Size(1)
+	char AddressY; //  0xd9 Size(1)
 	char bForceLinearGamma; //  0xda Size(1)
 	char bHDR; //  0xda Size(1)
 	char bGPUSharedFlag; //  0xda Size(1)
-	Unknown RenderTargetFormat; //  0xdb Size(1)
+	char RenderTargetFormat; //  0xdb Size(1)
 	char bAutoGenerateMips; //  0xdc Size(1)
-	Unknown MipsSamplerFilter; //  0xdd Size(1)
-	Unknown MipsAddressU; //  0xde Size(1)
-	Unknown MipsAddressV; //  0xdf Size(1)
-	Unknown OverrideFormat; //  0xe0 Size(1)
+	char MipsSamplerFilter; //  0xdd Size(1)
+	char MipsAddressU; //  0xde Size(1)
+	char MipsAddressV; //  0xdf Size(1)
+	char OverrideFormat; //  0xe0 Size(1)
 };
 
 // Class Engine.CanvasRenderTarget2D
 struct UCanvasRenderTarget2D : UTextureRenderTarget2D {
 	struct FMulticastInlineDelegate OnCanvasRenderTargetUpdate; //  0xe8 Size(10)
-	Unknown World; //  0xf8 Size(8)
-	char bShouldClearRenderTargetOnReceiveUpdate; //  0x100 Size(1)
+	struct TWeakObjectPtr<struct Unknown> World; //  0xf8 Size(8)
+	char bShouldClearRenderTargetOnRecei; //  0x100 Size(1)
 
-	void UpdateResource(); // Function Engine.CanvasRenderTarget2D.UpdateResource(Native|Public|BlueprintCallable) // <Game+0x3ca8ea0>
+	void UpdateResource(); // Function Engine.CanvasRenderTarget2D.UpdateResource(Native|Public|BlueprintCallable) // <Game+0x3cb5050>
 };
 
 // Class Engine.ChaosPhysicalMaterial
@@ -7167,64 +7167,64 @@ struct UChaosPhysicalMaterial : Object {
 	float StaticFriction; //  0x2c Size(4)
 	float Restitution; //  0x30 Size(4)
 	float LinearEtherDrag; //  0x34 Size(4)
-	float AngularEtherDrag; //  0x38 Size(4)
-	float SleepingLinearVelocityThreshold; //  0x3c Size(4)
+	float AngularEther; //  0x38 Size(4)
+	float SleepingLinearVelocityThres; //  0x3c Size(4)
 	float SleepingAngularVelocityThreshold; //  0x40 Size(4)
 };
 
 // Class Engine.CheckBoxStyleAsset
 struct UCheckBoxStyleAsset : Object {
-	Unknown CheckBoxStyle; //  0x28 Size(580)
+	struct Unknown CheckBoxStyle; //  0x28 Size(580)
 };
 
 // Class Engine.ChildActorComponent
 struct UChildActorComponent : USceneComponent {
-	Unknown ChildActorClass; //  0x238 Size(8)
-	Unknown ChildActor; //  0x240 Size(8)
-	Unknown ChildActorTemplate; //  0x248 Size(8)
+	struct Unknown* ChildActorClass; //  0x238 Size(8)
+	struct Unknown ChildActor; //  0x240 Size(8)
+	struct Unknown ChildActorTemplate; //  0x248 Size(8)
 
-	void SetChildActorClass(Unknown InClass); // Function Engine.ChildActorComponent.SetChildActorClass(Final|Native|Public|BlueprintCallable) // <Game+0x3cb04c0>
+	void SetChildActorClass(struct Unknown* InClass); // Function Engine.ChildActorComponent.SetChildActorClass(Final|Native|Public|BlueprintCallable) // <Game+0x3cbc720>
 };
 
 // Class Engine.ChildConnection
 struct UChildConnection : UNetConnection {
-	Unknown Parent; //  0x1aa0 Size(8)
+	struct Unknown Parent; //  0x1aa0 Size(8)
 };
 
 // Class Engine.PlatformInterfaceBase
 struct UPlatformInterfaceBase : Object {
-	Unknown AllDelegates; //  0x28 Size(10)
+	struct TArray<Unknown> AllDelegates; //  0x28 Size(10)
 };
 
 // Class Engine.CloudStorageBase
 struct UCloudStorageBase : UPlatformInterfaceBase {
-	Unknown LocalCloudFiles; //  0x38 Size(10)
+	struct TArray<Unknown> LocalCloudFiles; //  0x38 Size(10)
 	char bSuppressDelegateCalls; //  0x48 Size(1)
 };
 
 // Class Engine.CollisionProfile
 struct UCollisionProfile : UDeveloperSettings {
-	Unknown Profiles; //  0x38 Size(10)
-	Unknown DefaultChannelResponses; //  0x48 Size(10)
-	Unknown EditProfiles; //  0x58 Size(10)
-	Unknown ProfileRedirects; //  0x68 Size(10)
-	Unknown CollisionChannelRedirects; //  0x78 Size(10)
+	struct TArray<Unknown> Profiles; //  0x38 Size(10)
+	struct TArray<Unknown> DefaultChannelResponses; //  0x48 Size(10)
+	struct TArray<Unknown> EditProfiles; //  0x58 Size(10)
+	struct TArray<Unknown> ProfileRedirects; //  0x68 Size(10)
+	struct TArray<Unknown> CollisionChannelRedirects; //  0x78 Size(10)
 };
 
 // Class Engine.ComponentDelegateBinding
 struct UComponentDelegateBinding : UDynamicBlueprintBinding {
-	Unknown ComponentDelegateBindings; //  0x28 Size(10)
+	struct TArray<Unknown> ComponentDelegateBindings; //  0x28 Size(10)
 };
 
 // Class Engine.CompositeCurveTable
 struct UCompositeCurveTable : UCurveTable {
-	Unknown ParentTables; //  0xa0 Size(10)
-	Unknown OldParentTables; //  0xb0 Size(10)
+	struct TArray<Unknown> ParentTables; //  0xa0 Size(10)
+	struct TArray<Unknown> OldParentTables; //  0xb0 Size(10)
 };
 
 // Class Engine.DataTable
 struct UDataTable : Object {
-	Unknown RowStruct; //  0x28 Size(8)
+	struct Unknown RowStruct; //  0x28 Size(8)
 	char bStripFromClientBuilds; //  0x80 Size(1)
 	char bIgnoreExtraFields; //  0x80 Size(1)
 	char bIgnoreMissingFields; //  0x80 Size(1)
@@ -7233,16 +7233,16 @@ struct UDataTable : Object {
 
 // Class Engine.CompositeDataTable
 struct UCompositeDataTable : UDataTable {
-	Unknown ParentTables; //  0xc8 Size(10)
-	Unknown OldParentTables; //  0xd8 Size(10)
+	struct TArray<Unknown> ParentTables; //  0xc8 Size(10)
+	struct TArray<Unknown> OldParentTables; //  0xd8 Size(10)
 };
 
 // Class Engine.Console
 struct UConsole : Object {
-	Unknown ConsoleTargetPlayer; //  0x38 Size(8)
-	Unknown DefaultTexture_Black; //  0x40 Size(8)
-	Unknown DefaultTexture_White; //  0x48 Size(8)
-	Unknown HistoryBuffer; //  0x68 Size(10)
+	struct Unknown ConsoleTargetPlayer; //  0x38 Size(8)
+	struct Unknown DefaultTexture_Black; //  0x40 Size(8)
+	struct Unknown DefaultTexture_White; //  0x48 Size(8)
+	struct TArray<Unknown> HistoryBuffer; //  0x68 Size(10)
 };
 
 // Class Engine.StreamingSettings
@@ -7261,13 +7261,13 @@ struct UStreamingSettings : UDeveloperSettings {
 	float PriorityLevelStreamingActorsUpdateExtraTime; //  0x58 Size(4)
 	int32_t LevelStreamingComponentsRegistrationGranularity; //  0x5c Size(4)
 	float LevelStreamingUnregisterComponentsTimeLimit; //  0x60 Size(4)
-	int32_t LevelStreamingComponentsUnregistrationGranularity; //  0x64 Size(4)
+	int32_t LevelStreamingComponentsUnregistrationGranulari; //  0x64 Size(4)
 	char FlushStreamingOnExit; //  0x68 Size(1)
 	char EventDrivenLoaderEnabled; //  0x68 Size(1)
 };
 
-// Class Engine.Garb
-struct UGarb : UDeveloperSettings {
+// Class Engine.GarbageCollectionSettings
+struct UGarbageCollectionSettings : UDeveloperSettings {
 	float TimeBetweenPurgingPendingKillObjects; //  0x38 Size(4)
 	char FlushStreamingOnGC; //  0x3c Size(1)
 	char AllowParallelGC; //  0x3c Size(1)
@@ -7278,7 +7278,7 @@ struct UGarb : UDeveloperSettings {
 	char ActorClusteringEnabled; //  0x3c Size(1)
 	char BlueprintClusteringEnabled; //  0x3c Size(1)
 	char UseDisregardForGCOnDedicatedServers; //  0x3d Size(1)
-	int32_t MinGCClusterSize; //  0x40 Size(4)
+	int32_t MinG; //  0x40 Size(4)
 	int32_t NumRetriesBeforeForcingGC; //  0x44 Size(4)
 	int32_t MaxObjectsNotConsideredByGC; //  0x48 Size(4)
 	int32_t SizeOfPermanentObjectPool; //  0x4c Size(4)
@@ -7286,23 +7286,23 @@ struct UGarb : UDeveloperSettings {
 	int32_t MaxObjectsInEditor; //  0x54 Size(4)
 };
 
-// Class Engine.CullDistanceVolume
-struct ACullDistanceVolume : AVolume {
-	Unknown CullDistances; //  0x348 Size(10)
+// Class Engine.Cull
+struct ACull : AVolume {
+	struct TArray<Unknown> Cull; //  0x348 Size(10)
 	char bEnabled; //  0x358 Size(1)
 };
 
 // Class Engine.CurveFloat
 struct UCurveFloat : UCurveBase {
-	Unknown FloatCurve; //  0x30 Size(80)
+	struct Unknown FloatCurve; //  0x30 Size(80)
 	char bIsEventCurve; //  0xb0 Size(1)
 
-	float GetFloatValue(float InTime); // Function Engine.CurveFloat.GetFloatValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x3cb8960>
+	float GetFloatValue(float InTime); // Function Engine.CurveFloat.GetFloatValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x3cc4cb0>
 };
 
 // Class Engine.CurveLinearColor
 struct UCurveLinearColor : UCurveBase {
-	Unknown FloatCurves; //  0x30 Size(200)
+	struct Unknown FloatCurves; //  0x30 Size(200)
 	float AdjustHue; //  0x230 Size(4)
 	float AdjustSaturation; //  0x234 Size(4)
 	float AdjustBrightness; //  0x238 Size(4)
@@ -7311,34 +7311,34 @@ struct UCurveLinearColor : UCurveBase {
 	float AdjustMinAlpha; //  0x244 Size(4)
 	float AdjustMaxAlpha; //  0x248 Size(4)
 
-	Unknown GetLinearColorValue(float InTime); // Function Engine.CurveLinearColor.GetLinearColorValue(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game+0x3cb89f0>
+	struct Unknown GetLinearColorValue(float InTime); // Function Engine.CurveLinearColor.GetLinearColorValue(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game+0x3cc4d40>
 };
 
 // Class Engine.Texture2D
 struct UTexture2D : UTexture {
 	int32_t LevelIndex; //  0xb8 Size(4)
 	int32_t FirstResourceMemMip; //  0xbc Size(4)
-	char bTemporarilyDisableStreaming; //  0xc0 Size(1)
-	Unknown AddressX; //  0xc1 Size(1)
-	Unknown AddressY; //  0xc2 Size(1)
-	Unknown ImportedSize; //  0xc4 Size(8)
+	char bTemporarily; //  0xc0 Size(1)
+	char AddressX; //  0xc1 Size(1)
+	char AddressY; //  0xc2 Size(1)
+	struct Unknown ImportedSize; //  0xc4 Size(8)
 
-	int32_t Blueprint_GetSizeY(); // Function Engine.Texture2D.Blueprint_GetSizeY(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x3e15b40>
+	int32_t Blueprint_GetSizeY(); // Function Engine.Texture2D.Blueprint_GetSizeY(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x3e23030>
 };
 
 // Class Engine.CurveLinearColorAtlas
 struct UCurveLinearColorAtlas : UTexture2D {
 	uint32_t TextureSize; //  0xe8 Size(4)
-	Unknown GradientCurves; //  0xf0 Size(10)
+	struct TArray<Unknown> GradientCurves; //  0xf0 Size(10)
 
-	char GetCurvePosition(Unknown InCurve, float& Position); // Function Engine.CurveLinearColorAtlas.GetCurvePosition(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x3cb8090>
+	char GetCurvePosition(struct Unknown InCurve, float& Position); // Function Engine.CurveLinearColorAtlas.GetCurvePosition(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x3cc43e0>
 };
 
 // Class Engine.CurveVector
 struct UCurveVector : UCurveBase {
-	Unknown FloatCurves; //  0x30 Size(180)
+	struct Unknown FloatCurves; //  0x30 Size(180)
 
-	Unknown GetVectorValue(float InTime); // Function Engine.CurveVector.GetVectorValue(Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game+0x3cb8c80>
+	struct Unknown GetVectorValue(float InTime); // Function Engine.CurveVector.GetVectorValue(Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game+0x3cc4fd0>
 };
 
 // Class Engine.DebugCameraController
@@ -7348,86 +7348,86 @@ struct ADebugCameraController : APlayerController {
 	char bOverrideInitialMaxSpeed; //  0x6f0 Size(1)
 	float OverrideInitialMaxSpeed; //  0x6f4 Size(4)
 	char bIsOrbitingSelectedActor; //  0x6f8 Size(1)
-	char bOrb; //  0x6f8 Size(1)
+	char bOrbitPivotUseCenter; //  0x6f8 Size(1)
 	char bEnableBufferVisualization; //  0x6f8 Size(1)
 	char bEnableBufferVisualizationFullMode; //  0x6f8 Size(1)
 	char bIsBufferVisualizationInputSetup; //  0x6f8 Size(1)
 	char bLastDisplayEnabled; //  0x6f8 Size(1)
-	Unknown DrawFrustum; //  0x700 Size(8)
-	Unknown SelectedActor; //  0x708 Size(8)
-	Unknown SelectedComponent; //  0x710 Size(8)
-	Unknown SelectedHitPoint; //  0x718 Size(88)
-	Unknown OriginalControllerRef; //  0x7a0 Size(8)
-	Unknown OriginalPlayer; //  0x7a8 Size(8)
+	struct Unknown DrawFrustum; //  0x700 Size(8)
+	struct Unknown SelectedActor; //  0x708 Size(8)
+	struct Unknown SelectedComponent; //  0x710 Size(8)
+	struct Unknown SelectedHitPoint; //  0x718 Size(88)
+	struct Unknown OriginalControllerRef; //  0x7a0 Size(8)
+	struct Unknown OriginalPlayer; //  0x7a8 Size(8)
 	float SpeedScale; //  0x7b0 Size(4)
 	float InitialMaxSpeed; //  0x7b4 Size(4)
 	float InitialAccel; //  0x7b8 Size(4)
 	float InitialDecel; //  0x7bc Size(4)
 
-	void ToggleDisplay(); // Function Engine.DebugCameraController.ToggleDisplay(Final|Native|Public|BlueprintCallable) // <Game+0x3cb8dc0>
+	void ToggleDisplay(); // Function Engine.DebugCameraController.ToggleDisplay(Final|Native|Public|BlueprintCallable) // <Game+0x3cc5110>
 };
 
 // Class Engine.DebugCameraControllerSettings
 struct UDebugCameraControllerSettings : UDeveloperSettings {
-	Unknown CycleViewModes; //  0x38 Size(10)
+	struct TArray<Unknown> CycleViewModes; //  0x38 Size(10)
 };
 
 // Class Engine.DecalActor
 struct ADecalActor : UActor {
-	Unknown Decal; //  0x310 Size(8)
+	struct Unknown Decal; //  0x310 Size(8)
 
-	void SetDecalMaterial(Unknown NewDecalMaterial); // Function Engine.DecalActor.SetDecalMaterial(Final|Native|Public|BlueprintCallable) // <Game+0x3cbca40>
+	void SetDecalMaterial(struct Unknown NewDecalMaterial); // Function Engine.DecalActor.SetDecalMaterial(Final|Native|Public|BlueprintCallable) // <Game+0x3cc8de0>
 };
 
 // Class Engine.DecalComponent
 struct UDecalComponent : USceneComponent {
-	Unknown DecalMaterial; //  0x238 Size(8)
+	struct Unknown DecalMaterial; //  0x238 Size(8)
 	int32_t SortOrder; //  0x240 Size(4)
 	float FadeScreenSize; //  0x244 Size(4)
 	float FadeStartDelay; //  0x248 Size(4)
-	float FadeDuration; //  0x24c Size(4)
+	float Fade; //  0x24c Size(4)
 	float FadeInDuration; //  0x250 Size(4)
 	float FadeInStartDelay; //  0x254 Size(4)
 	char bDestroyOwnerAfterFade; //  0x258 Size(1)
-	Unknown DecalSize; //  0x25c Size(c)
+	struct Unknown DecalSize; //  0x25c Size(c)
 
-	void SetSortOrder(int32_t Value); // Function Engine.DecalComponent.SetSortOrder(Final|Native|Public|BlueprintCallable) // <Game+0x3cbd1b0>
+	void SetSortOrder(int32_t Value); // Function Engine.DecalComponent.SetSortOrder(Final|Native|Public|BlueprintCallable) // <Game+0x3cc9550>
 };
 
 // Class Engine.MKDemoNetConnectionEx
 struct UMKDemoNetConnectionEx : UNetConnection {
-	Unknown SelfDemoNetConnection; //  0x1be8 Size(8)
+	struct Unknown Self; //  0x1be8 Size(8)
 };
 
 // Class Engine.PendingNetGame
 struct UPendingNetGame : Object {
-	Unknown NetDriver; //  0x30 Size(8)
-	Unknown DemoNetDriver; //  0x38 Size(8)
+	struct Unknown NetDriver; //  0x30 Size(8)
+	struct Unknown DemoNetDriver; //  0x38 Size(8)
 };
 
 // Class Engine.TextureLODSettings
 struct UTextureLODSettings : Object {
-	Unknown TextureLODGroups; //  0x28 Size(10)
+	struct TArray<Unknown> TextureLODGroups; //  0x28 Size(10)
 };
 
 // Class Engine.DeviceProfile
 struct UDeviceProfile : UTextureLODSettings {
 	struct FString DeviceType; //  0x38 Size(10)
 	struct FString BaseProfileName; //  0x48 Size(10)
-	Unknown Parent; //  0x58 Size(8)
-	Unknown CVars; //  0x78 Size(10)
+	struct Unknown Parent; //  0x58 Size(8)
+	struct TArray<Unknown> CVars; //  0x78 Size(10)
 };
 
 // Class Engine.DeviceProfileManager
 struct UDeviceProfileManager : Object {
-	Unknown Profiles; //  0x28 Size(10)
+	struct TArray<Unknown> Profiles; //  0x28 Size(10)
 };
 
 // Class Engine.DialogueVoice
 struct UDialogueVoice : Object {
-	Unknown gender; //  0x28 Size(1)
-	Unknown Plurality; //  0x29 Size(1)
-	Unknown LocalizationGUID; //  0x2c Size(10)
+	enum class Unknown gender; //  0x28 Size(1)
+	char Plurality; //  0x29 Size(1)
+	struct Unknown LocalizationGUID; //  0x2c Size(10)
 };
 
 // Class Engine.DialogueWave
@@ -7436,28 +7436,28 @@ struct UDialogueWave : Object {
 	char bOverride_SubtitleOverride; //  0x28 Size(1)
 	struct FString SpokenText; //  0x30 Size(10)
 	struct FString SubtitleOverride; //  0x40 Size(10)
-	Unknown ContextMappings; //  0x50 Size(10)
-	Unknown LocalizationGUID; //  0x60 Size(10)
+	struct TArray<Unknown> ContextMappings; //  0x50 Size(10)
+	struct Unknown LocalizationGUID; //  0x60 Size(10)
 };
 
 // Class Engine.Light
 struct ALight : UActor {
-	Unknown LightComponent; //  0x310 Size(8)
+	struct Unknown LightComponent; //  0x310 Size(8)
 	char bEnabled; //  0x318 Size(1)
 
-	void ToggleEnabled(); // Function Engine.Light.ToggleEnabled(Final|Native|Public|BlueprintCallable) // <Game+0x3d62050>
+	void ToggleEnabled(); // Function Engine.Light.ToggleEnabled(Final|Native|Public|BlueprintCallable) // <Game+0x3d6e8b0>
 };
 
 // Class Engine.LightComponentBase
 struct ULightComponentBase : USceneComponent {
-	Unknown LightGuid; //  0x238 Size(10)
+	struct Unknown LightGuid; //  0x238 Size(10)
 	float Brightness; //  0x248 Size(4)
 	float Intensity; //  0x24c Size(4)
-	Unknown LightColor; //  0x250 Size(4)
+	struct Unknown LightColor; //  0x250 Size(4)
 	char bAffectsWorld; //  0x254 Size(1)
 	char CastShadows; //  0x254 Size(1)
 	char CastStaticShadows; //  0x254 Size(1)
-	char CastDynamicShadows; //  0x254 Size(1)
+	char Cast; //  0x254 Size(1)
 	char bAffectTranslucentLighting; //  0x254 Size(1)
 	char bTransmission; //  0x254 Size(1)
 	char bCastVolumetricShadow; //  0x254 Size(1)
@@ -7471,7 +7471,7 @@ struct ULightComponentBase : USceneComponent {
 	float VolumetricSourceRadiusScale; //  0x264 Size(4)
 	int32_t SamplesPerPixel; //  0x268 Size(4)
 
-	void SetSamplesPerPixel(int32_t NewValue); // Function Engine.LightComponentBase.SetSamplesPerPixel(Final|Native|Public|BlueprintCallable) // <Game+0x3d64ca0>
+	void SetSamplesPerPixel(int32_t NewValue); // Function Engine.LightComponentBase.SetSamplesPerPixel(Final|Native|Public|BlueprintCallable) // <Game+0x3d71530>
 };
 
 // Class Engine.LightComponent
@@ -7497,12 +7497,12 @@ struct ULightComponent : ULightComponentBase {
 	char CastTranslucentShadows; //  0x2b8 Size(1)
 	char bCastShadowsFromCinematicObjectsOnly; //  0x2b8 Size(1)
 	char bAffectDynamicIndirectLighting; //  0x2b8 Size(1)
-	char bForceCachedShadowsFromMovablePrimitivesAsStatic; //  0x2b8 Size(1)
+	char bForceCachedShadowsFromMovablePrimitivesAsStati; //  0x2b8 Size(1)
 	char bForceCachedShadowsForMovablePrimitives; //  0x2b8 Size(1)
-	Unknown LightingChannels; //  0x2bc Size(1)
-	Unknown LightFunctionMaterial; //  0x2c0 Size(8)
-	Unknown LightFunctionScale; //  0x2c8 Size(c)
-	Unknown IESTexture; //  0x2d8 Size(8)
+	struct Unknown LightingChannels; //  0x2bc Size(1)
+	struct Unknown LightFunctionMaterial; //  0x2c0 Size(8)
+	struct Unknown LightFunctionScale; //  0x2c8 Size(c)
+	struct Unknown IESTexture; //  0x2d8 Size(8)
 	char bUseIESBrightness; //  0x2e0 Size(1)
 	float IESBrightnessScale; //  0x2e4 Size(4)
 	float LightFunctionFadeDistance; //  0x2e8 Size(4)
@@ -7511,12 +7511,12 @@ struct ULightComponent : ULightComponentBase {
 	float BloomScale; //  0x2f4 Size(4)
 	float BloomThreshold; //  0x2f8 Size(4)
 	float BloomMaxBrightness; //  0x2fc Size(4)
-	Unknown BloomTint; //  0x300 Size(4)
+	struct Unknown BloomTint; //  0x300 Size(4)
 	char bUseFoliageLighting; //  0x304 Size(1)
 	char bUseRayTracedDistanceFieldShadows; //  0x305 Size(1)
 	float RayStartOffsetDepthScale; //  0x308 Size(4)
 
-	void SetVolumetricScatteringIntensity(float NewIntensity); // Function Engine.LightComponent.SetVolumetricScatteringIntensity(Final|Native|Public|BlueprintCallable) // <Game+0x3d61fd0>
+	void SetVolumetricScatteringIntensity(float NewIntensity); // Function Engine.LightComponent.SetVolumetricScatteringIntensity(Final|Native|Public|BlueprintCallable) // <Game+0x3d6e830>
 };
 
 // Class Engine.DirectionalLightComponent
@@ -7525,15 +7525,15 @@ struct UDirectionalLightComponent : ULightComponent {
 	char bEnableLightShaftOcclusion; //  0x384 Size(1)
 	float OcclusionMaskDarkness; //  0x388 Size(4)
 	float OcclusionDepthRange; //  0x38c Size(4)
-	Unknown LightShaftOverrideDirection; //  0x390 Size(c)
+	struct Unknown LightShaftOverrideDirection; //  0x390 Size(c)
 	float WholeSceneDynamicShadowRadius; //  0x39c Size(4)
 	float DynamicShadowDistanceMovableLight; //  0x3a0 Size(4)
-	float DynamicShadowDistanceStatio; //  0x3a4 Size(4)
+	float DynamicShadowDistanceStationaryLight; //  0x3a4 Size(4)
 	int32_t DynamicShadowCascades; //  0x3a8 Size(4)
 	float CascadeDistributionExponent; //  0x3ac Size(4)
 	float CascadeTransitionFraction; //  0x3b0 Size(4)
 	float ShadowDistanceFadeoutFraction; //  0x3b4 Size(4)
-	char bUseInsetShadowsForMovableObjects; //  0x3b8 Size(1)
+	char bUseInsetShadowsForMovableObj; //  0x3b8 Size(1)
 	int32_t FarShadowCascadeCount; //  0x3bc Size(4)
 	float FarShadowDistance; //  0x3c0 Size(4)
 	char bUseFarShadowAsStaticWorldShadow; //  0x3c4 Size(1)
@@ -7541,14 +7541,14 @@ struct UDirectionalLightComponent : ULightComponent {
 	float LightSourceAngle; //  0x3cc Size(4)
 	float LightSourceSoftAngle; //  0x3d0 Size(4)
 	float TraceDistance; //  0x3d4 Size(4)
-	Unknown LightmassSettings; //  0x3d8 Size(10)
+	struct Unknown LightmassSettings; //  0x3d8 Size(10)
 	char bCastModulatedShadows; //  0x3e8 Size(1)
-	Unknown ModulatedShadowColor; //  0x3ec Size(4)
+	struct Unknown ModulatedShadowColor; //  0x3ec Size(4)
 	float ShadowAmount; //  0x3f0 Size(4)
 	char bUsedAsAtmosphereSunLight; //  0x3f4 Size(1)
 	int32_t AtmosphereSunLightIndex; //  0x3f8 Size(4)
 
-	void SetShadowDistanceFadeoutFraction(float NewValue); // Function Engine.DirectionalLightComponent.SetShadowDistanceFadeoutFraction(Final|Native|Public|BlueprintCallable) // <Game+0x3cbd130>
+	void SetShadowDistanceFadeoutFraction(float NewValue); // Function Engine.DirectionalLightComponent.SetShadowDistanceFadeoutFraction(Final|Native|Public|BlueprintCallable) // <Game+0x3cc94d0>
 };
 
 // Class Engine.DistributionFloat
@@ -7564,7 +7564,7 @@ struct UDistributionFloatConstant : UDistributionFloat {
 
 // Class Engine.DistributionFloatConstantCurve
 struct UDistributionFloatConstantCurve : UDistributionFloat {
-	Unknown ConstantCurve; //  0x38 Size(18)
+	struct Unknown ConstantCurve; //  0x38 Size(18)
 };
 
 // Class Engine.DistributionFloatParameterBase
@@ -7574,7 +7574,7 @@ struct UDistributionFloatParameterBase : UDistributionFloatConstant {
 	float MaxInput; //  0x4c Size(4)
 	float MinOutput; //  0x50 Size(4)
 	float MaxOutput; //  0x54 Size(4)
-	Unknown ParamMode; //  0x58 Size(1)
+	char ParamMode; //  0x58 Size(1)
 };
 
 // Class Engine.DistributionFloatUniform
@@ -7585,7 +7585,7 @@ struct UDistributionFloatUniform : UDistributionFloat {
 
 // Class Engine.DistributionFloatUniformCurve
 struct UDistributionFloatUniformCurve : UDistributionFloat {
-	Unknown ConstantCurve; //  0x38 Size(18)
+	struct Unknown ConstantCurve; //  0x38 Size(18)
 };
 
 // Class Engine.DistributionVector
@@ -7597,69 +7597,69 @@ struct UDistributionVector : UDistribution {
 
 // Class Engine.DistributionVectorConstant
 struct UDistributionVectorConstant : UDistributionVector {
-	Unknown Constant; //  0x38 Size(c)
+	struct Unknown Constant; //  0x38 Size(c)
 	char bLockAxes; //  0x44 Size(1)
-	Unknown LockedAxes; //  0x48 Size(1)
+	char LockedAxes; //  0x48 Size(1)
 };
 
 // Class Engine.DistributionVectorConstantCurve
 struct UDistributionVectorConstantCurve : UDistributionVector {
-	Unknown ConstantCurve; //  0x38 Size(18)
+	struct Unknown ConstantCurve; //  0x38 Size(18)
 	char bLockAxes; //  0x50 Size(1)
-	Unknown LockedAxes; //  0x54 Size(1)
+	char LockedAxes; //  0x54 Size(1)
 };
 
 // Class Engine.DistributionVectorParameterBase
 struct UDistributionVectorParameterBase : UDistributionVectorConstant {
 	struct FName ParameterName; //  0x50 Size(8)
-	Unknown MinInput; //  0x58 Size(c)
-	Unknown MaxInput; //  0x64 Size(c)
-	Unknown MinOutput; //  0x70 Size(c)
-	Unknown MaxOutput; //  0x7c Size(c)
-	Unknown ParamModes; //  0x88 Size(3)
+	struct Unknown MinInput; //  0x58 Size(c)
+	struct Unknown MaxInput; //  0x64 Size(c)
+	struct Unknown MinOutput; //  0x70 Size(c)
+	struct Unknown MaxOutput; //  0x7c Size(c)
+	char ParamModes; //  0x88 Size(3)
 };
 
 // Class Engine.DistributionVectorUniform
 struct UDistributionVectorUniform : UDistributionVector {
-	Unknown MAX; //  0x38 Size(c)
-	Unknown Min; //  0x44 Size(c)
+	struct Unknown MAX; //  0x38 Size(c)
+	struct Unknown Min; //  0x44 Size(c)
 	char bLockAxes; //  0x50 Size(1)
-	Unknown LockedAxes; //  0x54 Size(1)
-	Unknown MirrorFlags; //  0x55 Size(3)
+	char LockedAxes; //  0x54 Size(1)
+	char MirrorFlags; //  0x55 Size(3)
 	char bUseExtremes; //  0x58 Size(1)
 };
 
 // Class Engine.DistributionVectorUniformCurve
 struct UDistributionVectorUniformCurve : UDistributionVector {
-	Unknown ConstantCurve; //  0x38 Size(18)
+	struct Unknown ConstantCurve; //  0x38 Size(18)
 	char bLockAxes1; //  0x50 Size(1)
 	char bLockAxes2; //  0x50 Size(1)
-	Unknown LockedAxes; //  0x54 Size(2)
-	Unknown MirrorFlags; //  0x56 Size(3)
+	char LockedAxes; //  0x54 Size(2)
+	char MirrorFlags; //  0x56 Size(3)
 	char bUseExtremes; //  0x5c Size(1)
 };
 
 // Class Engine.DrawFrustumComponent
 struct UDrawFrustumComponent : UPrimitiveComponent {
-	Unknown FrustumColor; //  0x4b8 Size(4)
+	struct Unknown FrustumColor; //  0x4b8 Size(4)
 	float FrustumAngle; //  0x4bc Size(4)
 	float FrustumAspectRatio; //  0x4c0 Size(4)
-	float FrustumStartDist; //  0x4c4 Size(4)
+	float FrustumStart; //  0x4c4 Size(4)
 	float FrustumEndDist; //  0x4c8 Size(4)
-	Unknown Texture; //  0x4d0 Size(8)
+	struct Unknown Texture; //  0x4d0 Size(8)
 };
 
 // Class Engine.SphereComponent
 struct USphereComponent : UShapeComponent {
 	float SphereRadius; //  0x4d0 Size(4)
 
-	void SetSphereRadius(float InSphereRadius, char bUpdateOverlaps); // Function Engine.SphereComponent.SetSphereRadius(Final|Native|Public|BlueprintCallable) // <Game+0x3e03bd0>
+	void SetSphereRadius(float InSphereRadius, char bUpdateOverlaps); // Function Engine.SphereComponent.SetSphereRadius(Final|Native|Public|BlueprintCallable) // <Game+0x3e10f30>
 };
 
 // Class Engine.EdGraph
 struct UEdGraph : Object {
-	Unknown Schema; //  0x28 Size(8)
-	Unknown Nodes; //  0x30 Size(10)
+	struct Unknown* Schema; //  0x28 Size(8)
+	struct TArray<Unknown> Nodes; //  0x30 Size(10)
 	char bEditable; //  0x40 Size(1)
 	char bAllowDeletion; //  0x40 Size(1)
 	char bAllowRenaming; //  0x40 Size(1)
@@ -7667,21 +7667,21 @@ struct UEdGraph : Object {
 
 // Class Engine.GraphNodeContextMenuContext
 struct UGraphNodeContextMenuContext : Object {
-	Unknown Blueprint; //  0x28 Size(8)
-	Unknown Graph; //  0x30 Size(8)
-	Unknown Node; //  0x38 Size(8)
+	struct Unknown Blueprint; //  0x28 Size(8)
+	struct Unknown Graph; //  0x30 Size(8)
+	struct Unknown Node; //  0x38 Size(8)
 	char bIsDebugging; //  0x48 Size(1)
 };
 
 // Class Engine.EdGraphNode
 struct UEdGraphNode : Object {
-	Unknown DeprecatedPins; //  0x38 Size(10)
+	struct TArray<Unknown> DeprecatedPins; //  0x38 Size(10)
 	int32_t NodePosX; //  0x48 Size(4)
 	int32_t NodePosY; //  0x4c Size(4)
 	int32_t NodeWidth; //  0x50 Size(4)
 	int32_t NodeHeight; //  0x54 Size(4)
-	Unknown AdvancedPinDisplay; //  0x58 Size(1)
-	Unknown Enab; //  0x59 Size(1)
+	char AdvancedPinDisplay; //  0x58 Size(1)
+	enum class Unknow EnabledState; //  0x59 Size(1)
 	char bDisplayAsDisabled; //  0x5b Size(1)
 	char bUserSetEnabledState; //  0x5b Size(1)
 	char bIsNodeEnabled; //  0x5b Size(1)
@@ -7689,11 +7689,11 @@ struct UEdGraphNode : Object {
 	struct FString NodeComment; //  0x60 Size(10)
 	int32_t ErrorType; //  0x70 Size(4)
 	struct FString ErrorMsg; //  0x78 Size(10)
-	Unknown NodeGuid; //  0x88 Size(10)
+	struct Unknown NodeGuid; //  0x88 Size(10)
 };
 
-// Class Engine.EdGraphNode_Documentation
-struct UEdGraphNode_Documentation : UEdGraphNode {
+// Class Engine.EdGraphNode_De
+struct UEdGraphNode_ : UEdGraphNode {
 	struct FString Link; //  0x98 Size(10)
 	struct FString Excerpt; //  0xa8 Size(10)
 };
@@ -7702,21 +7702,21 @@ struct UEdGraphNode_Documentation : UEdGraphNode {
 struct UEdGraphPin_Deprecated : Object {
 	struct FString PinName; //  0x28 Size(10)
 	struct FString PinToolTip; //  0x38 Size(10)
-	Unknown Direction; //  0x48 Size(1)
-	Unknown PinType; //  0x50 Size(58)
+	char Direction; //  0x48 Size(1)
+	struct Unknown PinType; //  0x50 Size(58)
 	struct FString DefaultValue; //  0xa8 Size(10)
 	struct FString AutogeneratedDefaultValue; //  0xb8 Size(10)
-	Unknown DefaultObject; //  0xc8 Size(8)
+	struct Unknown DefaultObject; //  0xc8 Size(8)
 	struct FText DefaultTextValue; //  0xd0 Size(18)
-	Unknown LinkedTo; //  0xe8 Size(10)
-	Unknown SubPins; //  0xf8 Size(10)
-	Unknown ParentPin; //  0x108 Size(8)
-	Unknown ReferencePassThroughConnection; //  0x110 Size(8)
+	struct TArray<Unknown> LinkedTo; //  0xe8 Size(10)
+	struct TArray<Unknown> SubPins; //  0xf8 Size(10)
+	struct Unknown ParentPin; //  0x108 Size(8)
+	struct Unknown ReferencePassThroughConnection; //  0x110 Size(8)
 };
 
 // Class Engine.Emitter
 struct AEmitter : UActor {
-	Unknown ParticleSystemComponent; //  0x310 Size(8)
+	struct Unknown ParticleSystemComponent; //  0x310 Size(8)
 	char bDestroyOnSystemFinish; //  0x318 Size(1)
 	char bPostUpdateTickGroup; //  0x318 Size(1)
 	char bCurrentlyActive; //  0x318 Size(1)
@@ -7725,19 +7725,19 @@ struct AEmitter : UActor {
 	struct FMulticastInlineDelegate OnParticleDeath; //  0x340 Size(10)
 	struct FMulticastInlineDelegate OnParticleCollide; //  0x350 Size(10)
 
-	void ToggleActive(); // Function Engine.Emitter.ToggleActive(Final|Native|Public|BlueprintCallable) // <Game+0x3cc5720>
+	void ToggleActive(); // Function Engine.Emitter.ToggleActive(Final|Native|Public|BlueprintCallable) // <Game+0x3cd1bf0>
 };
 
 // Class Engine.EmitterCameraLensEffectBase
 struct AEmitterCameraLensEffectBase : AEmitter {
-	Unknown PS_CameraEffect; //  0x360 Size(8)
-	Unknown PS_CameraEffectNonExtremeCo; //  0x368 Size(8)
-	Unknown BaseCamera; //  0x370 Size(8)
-	Unknown RelativeTransform; //  0x380 Size(30)
+	struct Unknown PS_CameraEffect; //  0x360 Size(8)
+	struct Unknown PS_CameraEffectNonExtremeContent; //  0x368 Size(8)
+	struct Unknown BaseCamera; //  0x370 Size(8)
+	struct Unknown RelativeTransform; //  0x380 Size(30)
 	float BaseFOV; //  0x3b0 Size(4)
 	char bAllowMultipleInstances; //  0x3b4 Size(1)
 	char bResetWhenRetriggered; //  0x3b4 Size(1)
-	Unknown EmittersToTreatAsSame; //  0x3b8 Size(10)
+	struct TArray<Unknown> EmittersToTreatAsSame; //  0x3b8 Size(10)
 	float DistFromCamera; //  0x3c8 Size(4)
 };
 
@@ -7747,7 +7747,7 @@ struct UEngineMessage : ULocalMessage {
 	struct FString MaxedOutMessage; //  0x38 Size(10)
 	struct FString EnteredMessage; //  0x48 Size(10)
 	struct FString LeftMessage; //  0x58 Size(10)
-	struct FString Glob; //  0x68 Size(10)
+	struct FString GlobalNameChange; //  0x68 Size(10)
 	struct FString SpecEnteredMessage; //  0x78 Size(10)
 	struct FString NewPlayerMessage; //  0x88 Size(10)
 	struct FString NewSpecMessage; //  0x98 Size(10)
@@ -7755,39 +7755,39 @@ struct UEngineMessage : ULocalMessage {
 
 // Class Engine.ExponentialHeightFog
 struct AExponentialHeightFog : AInfo {
-	Unknown Component; //  0x310 Size(8)
+	struct Unknown Component; //  0x310 Size(8)
 	char bEnabled; //  0x318 Size(1)
 
-	void OnRep_bEnabled(); // Function Engine.ExponentialHeightFog.OnRep_bEnabled(Native|Public) // <Game+0x1e4be10>
+	void OnRep_bEnabled(); // Function Engine.ExponentialHeightFog.OnRep_bEnabled(Native|Public) // <Game+0x1e52540>
 };
 
 // Class Engine.ExponentialHeightFogComponent
 struct UExponentialHeightFogComponent : USceneComponent {
 	float FogDensity; //  0x238 Size(4)
 	float FogHeightFalloff; //  0x23c Size(4)
-	Unknown SecondFogData; //  0x240 Size(c)
-	Unknown FogInscatteringColor; //  0x24c Size(10)
-	Unknown InscatteringColorCubemap; //  0x260 Size(8)
+	struct Unknown SecondFogData; //  0x240 Size(c)
+	struct Unknown FogInscatteringColor; //  0x24c Size(10)
+	struct Unknown InscatteringColorCubemap; //  0x260 Size(8)
 	float InscatteringColorCubemapAngle; //  0x268 Size(4)
-	Unknown InscatteringTextureTint; //  0x26c Size(10)
+	struct Unknown InscatteringTextureTint; //  0x26c Size(10)
 	float FullyDirectionalInscatteringColorDistance; //  0x27c Size(4)
 	float NonDirectionalInscatteringColorDistance; //  0x280 Size(4)
-	float DirectionalInscatteringExpo; //  0x284 Size(4)
+	float DirectionalInscatteringExponent; //  0x284 Size(4)
 	float DirectionalInscatteringStartDistance; //  0x288 Size(4)
-	Unknown DirectionalInscatteringColo; //  0x28c Size(10)
+	struct Unknown DirectionalInscatteringColor; //  0x28c Size(10)
 	float FogMaxOpacity; //  0x29c Size(4)
 	float StartDistance; //  0x2a0 Size(4)
 	float FogCutoffDistance; //  0x2a4 Size(4)
 	char bEnableVolumetricFog; //  0x2a8 Size(1)
 	float VolumetricFogScatteringDistribution; //  0x2ac Size(4)
-	Unknown VolumetricFogAlbedo; //  0x2b0 Size(4)
-	Unknown VolumetricFogEmissive; //  0x2b4 Size(10)
+	struct Unknown VolumetricFogAlbedo; //  0x2b0 Size(4)
+	struct Unknown VolumetricFogEmissive; //  0x2b4 Size(10)
 	float VolumetricFogExtinctionScale; //  0x2c4 Size(4)
 	float VolumetricFogDistance; //  0x2c8 Size(4)
 	float VolumetricFogStaticLightingScatteringIntensity; //  0x2cc Size(4)
 	char bOverrideLightColorsWithFogInscatteringColors; //  0x2d0 Size(1)
 
-	void SetVolumetricFogScatteringDistribution(float NewValue); // Function Engine.ExponentialHeightFogComponent.SetVolumetricFogScatteringDistribution(Final|Native|Public|BlueprintCallable) // <Game+0x3cd77f0>
+	void SetVolumetricFogScatteringDistribution(float NewValue); // Function Engine.ExponentialHeightFogComponent.SetVolumetricFogScatteringDistribution(Final|Native|Public|BlueprintCallable) // <Game+0x3ce3da0>
 };
 
 // Class Engine.FloatingPawnMovement
@@ -7801,61 +7801,61 @@ struct UFloatingPawnMovement : UPawnMovementComponent {
 
 // Class Engine.Font
 struct UFont : Object {
-	Unknown FontCacheType; //  0x30 Size(1)
-	Unknown Characters; //  0x38 Size(10)
-	Unknown Textures; //  0x48 Size(10)
+	enum class Unknow FontCacheType; //  0x30 Size(1)
+	struct TArray<Unknown> Characters; //  0x38 Size(10)
+	struct TArray<Unknown> Textures; //  0x48 Size(10)
 	int32_t IsRemapped; //  0x58 Size(4)
 	float EmScale; //  0x5c Size(4)
 	float Ascent; //  0x60 Size(4)
 	float Descent; //  0x64 Size(4)
 	float Leading; //  0x68 Size(4)
 	int32_t Kerning; //  0x6c Size(4)
-	Unknown ImportOptions; //  0x70 Size(b0)
+	struct Unknown ImportOptions; //  0x70 Size(b0)
 	int32_t NumCharacters; //  0x120 Size(4)
-	Unknown MaxCharHeight; //  0x128 Size(10)
+	struct TArray<Unknown> MaxCharHeight; //  0x128 Size(10)
 	float ScalingFactor; //  0x138 Size(4)
 	int32_t LegacyFontSize; //  0x13c Size(4)
 	struct FName LegacyFontName; //  0x140 Size(8)
-	Unknown CompositeFont; //  0x148 Size(38)
+	struct Unknown CompositeFont; //  0x148 Size(38)
 };
 
 // Class Engine.FontFace
 struct UFontFace : Object {
 	struct FString SourceFilename; //  0x30 Size(10)
-	Unknown Hinting; //  0x40 Size(1)
-	Unknown LoadingPolicy; //  0x41 Size(1)
-	Unknown LayoutMethod; //  0x42 Size(1)
+	enum class Unknow Hinting; //  0x40 Size(1)
+	enum class Unknow LoadingPolicy; //  0x41 Size(1)
+	enum class Unknow LayoutMethod; //  0x42 Size(1)
 };
 
 // Class Engine.FontImportOptions
 struct UFontImportOptions : Object {
-	Unknown Data; //  0x28 Size(b0)
+	struct Unknown Data; //  0x28 Size(b0)
 };
 
 // Class Engine.ForceFeedbackAttenuation
 struct UForceFeedbackAttenuation : Object {
-	Unknown Attenuation; //  0x28 Size(b0)
+	struct Unknown Attenuation; //  0x28 Size(b0)
 };
 
 // Class Engine.ForceFeedbackComponent
 struct UForceFeedbackComponent : USceneComponent {
-	Unknown ForceFeedbackEffect; //  0x238 Size(8)
+	struct Unknown ForceFeedbackEffect; //  0x238 Size(8)
 	char bAutoDestroy; //  0x240 Size(1)
 	char bStopWhenOwnerDestroyed; //  0x240 Size(1)
 	char bLooping; //  0x240 Size(1)
 	char bIgnoreTimeDilation; //  0x240 Size(1)
 	char bOverrideAttenuation; //  0x240 Size(1)
 	float IntensityMultiplier; //  0x244 Size(4)
-	Unknown AttenuationSettings; //  0x248 Size(8)
-	Unknown AttenuationOverrides; //  0x250 Size(b0)
+	struct Unknown AttenuationSettings; //  0x248 Size(8)
+	struct Unknown AttenuationOverrides; //  0x250 Size(b0)
 	struct FMulticastInlineDelegate OnForceFeedbackFinished; //  0x300 Size(10)
 
-	void Stop(); // Function Engine.ForceFeedbackComponent.Stop(Native|Public|BlueprintCallable) // <Game+0x3cd7870>
+	void Stop(); // Function Engine.ForceFeedbackComponent.Stop(Native|Public|BlueprintCallable) // <Game+0x3ce3e20>
 };
 
 // Class Engine.ForceFeedbackEffect
 struct UForceFeedbackEffect : Object {
-	Unknown ChannelDetails; //  0x28 Size(10)
+	struct TArray<Unknown> ChannelDetails; //  0x28 Size(10)
 	float Duration; //  0x38 Size(4)
 };
 
@@ -7890,94 +7890,94 @@ struct AGameNetworkManager : AInfo {
 	float MaxClientSmoothingDeltaTime; //  0x374 Size(4)
 	float ClientNetSendMoveDeltaTime; //  0x378 Size(4)
 	float ClientNetSendMoveDeltaTimeThrottled; //  0x37c Size(4)
-	float ClientNetSendMoveDeltaTimeStationary; //  0x380 Size(4)
+	float ClientNetSendMoveDeltaTimeStati; //  0x380 Size(4)
 	int32_t ClientNetSendMoveThrottleAtNetSpeed; //  0x384 Size(4)
 	int32_t ClientNetSendMoveThrottleOverPlayerCount; //  0x388 Size(4)
 	char ClientAuthorativePosition; //  0x38c Size(1)
 	float ClientErrorUpdateRateLimit; //  0x390 Size(4)
 	float ClientNetCamUpdateDeltaTime; //  0x394 Size(4)
 	float ClientNetCamUpdatePositionLimit; //  0x398 Size(4)
-	char bMovementTimeDiscrepancyDetection; //  0x39c Size(1)
-	char bMovementTimeDiscrepancyResolution; //  0x39d Size(1)
-	float MovementTimeDiscrepancyMaxTimeMargin; //  0x3a0 Size(4)
-	float MovementTimeDiscrepancyMinTimeMargin; //  0x3a4 Size(4)
-	float MovementTimeDiscrepancyReso; //  0x3a8 Size(4)
-	float MovementTimeDiscrepancyDriftAllowance; //  0x3ac Size(4)
+	char bMovementTimeDiscrepancyDetecti; //  0x39c Size(1)
+	char bMovementTimeDiscrepancyRes; //  0x39d Size(1)
+	float MovementTime; //  0x3a0 Size(4)
+	float MovementTime; //  0x3a4 Size(4)
+	float MovementTime; //  0x3a8 Size(4)
+	float MovementTime; //  0x3ac Size(4)
 	char bMovementTimeDiscrepancyForceCorrectionsDuringResolution; //  0x3b0 Size(1)
-	char bUseDistanceBasedRelevancy; //  0x3b1 Size(1)
+	char bUse; //  0x3b1 Size(1)
 };
 
 // Class Engine.SpotLight
 struct ASpotLight : ALight {
-	Unknown SpotLightComponent; //  0x320 Size(8)
+	struct Unknown SpotLightComponent; //  0x320 Size(8)
 
-	void SetOuterConeAngle(float NewOuterConeAngle); // Function Engine.SpotLight.SetOuterConeAngle(Final|Native|Public|BlueprintCallable) // <Game+0x3e08920>
+	void SetOuterConeAngle(float NewOuterConeAngle); // Function Engine.SpotLight.SetOuterConeAngle(Final|Native|Public|BlueprintCallable) // <Game+0x3e15ce0>
 };
 
 // Class Engine.HapticFeedbackEffect_Buffer
 struct UHapticFeedbackEffect_Buffer : UHapticFeedbackEffect_Base {
-	Unknown Amplitudes; //  0x28 Size(10)
+	struct TArray<Unknown> Amplitudes; //  0x28 Size(10)
 	int32_t SampleRate; //  0x38 Size(4)
 };
 
 // Class Engine.HapticFeedbackEffect_Curve
 struct UHapticFeedbackEffect_Curve : UHapticFeedbackEffect_Base {
-	Unknown HapticDetails; //  0x28 Size(110)
+	struct Unknown HapticDetails; //  0x28 Size(110)
 };
 
 // Class Engine.HapticFeedbackEffect_SoundWave
 struct UHapticFeedbackEffect_SoundWave : UHapticFeedbackEffect_Base {
-	Unknown SoundWave; //  0x28 Size(8)
+	struct Unknown SoundWave; //  0x28 Size(8)
 };
 
 // Class Engine.HLODProxy
 struct UHLODProxy : Object {
-	Unknown ProxyMeshes; //  0x28 Size(10)
+	struct TArray<Unknown> ProxyMeshes; //  0x28 Size(10)
 };
 
 // Class Engine.InGameAdManager
 struct UInGameAdManager : UPlatformInterfaceBase {
 	char bShouldPauseWhileAdOpen; //  0x38 Size(1)
-	Unknown ClickedBannerDelegates; //  0x40 Size(10)
-	Unknown ClosedAdDelegates; //  0x50 Size(10)
+	struct TArray<Unknown> ClickedBannerDelegates; //  0x40 Size(10)
+	struct TArray<Unknown> ClosedAdDelegates; //  0x50 Size(10)
 };
 
 // Class Engine.InheritableComponentHandler
 struct UInheritableComponentHandler : Object {
-	Unknown Records; //  0x28 Size(10)
-	Unknown UnnecessaryComponents; //  0x38 Size(10)
+	struct TArray<Unknown> Records; //  0x28 Size(10)
+	struct TArray<Unknown> UnnecessaryComponents; //  0x38 Size(10)
 };
 
 // Class Engine.InputActionDelegateBinding
 struct UInputActionDelegateBinding : UInputDelegateBinding {
-	Unknown InputActionDelegateBindings; //  0x28 Size(10)
+	struct TArray<Unknown> InputActionDelegateBindings; //  0x28 Size(10)
 };
 
 // Class Engine.InputAxisDelegateBinding
 struct UInputAxisDelegateBinding : UInputDelegateBinding {
-	Unknown InputAxisDelegateBindings; //  0x28 Size(10)
+	struct TArray<Unknown> InputAxisDelegateBindings; //  0x28 Size(10)
 };
 
-// Class Engine.InputAxisKeyDelegateBinding
-struct UInputAxisKeyDelegateBinding : UInputDelegateBinding {
-	Unknown InputAxisKeyDelegateBindings; //  0x28 Size(10)
+// Class Engine.InputAxisKeyDe
+struct UInputAxisKey : UInputDelegateBinding {
+	struct TArray<Unknown> InputAxisKey; //  0x28 Size(10)
 };
 
 // Class Engine.InputComponent
 struct UInputComponent : UActorComponent {
-	Unknown CachedKeyToActionInfo; //  0x120 Size(10)
+	struct TArray<Unknown> CachedKeyToActionInfo; //  0x120 Size(10)
 
-	char WasControllerKeyJustReleased(Unknown Key); // Function Engine.InputComponent.WasControllerKeyJustReleased(Final|Native|Private|BlueprintCallable|BlueprintPure|Const) // <Game+0x3cf5db0>
+	char WasControllerKeyJustReleased(struct Unknown Key); // Function Engine.InputComponent.WasControllerKeyJustReleased(Final|Native|Private|BlueprintCallable|BlueprintPure|Const) // <Game+0x3d02480>
 };
 
 // Class Engine.InputKeyDelegateBinding
 struct UInputKeyDelegateBinding : UInputDelegateBinding {
-	Unknown InputKeyDelegateBindings; //  0x28 Size(10)
+	struct TArray<Unknown> InputKeyDelegateBindings; //  0x28 Size(10)
 };
 
 // Class Engine.InputSettings
 struct UInputSettings : Object {
-	Unknown AxisConfig; //  0x28 Size(10)
+	struct TArray<Unknown> AxisConfig; //  0x28 Size(10)
 	char bAltEnterTogglesFullscreen; //  0x38 Size(1)
 	char bF11TogglesFullscreen; //  0x38 Size(1)
 	char bUseMouseForTouch; //  0x38 Size(1)
@@ -7989,42 +7989,42 @@ struct UInputSettings : Object {
 	char bShowConsoleOnFourFingerTap; //  0x39 Size(1)
 	char bEnableGestureRecognizer; //  0x39 Size(1)
 	char bUseAutocorrect; //  0x3a Size(1)
-	Unknown ExcludedAutocorrectOS; //  0x40 Size(10)
-	Unknown ExcludedAutocorrectCultures; //  0x50 Size(10)
-	Unknown ExcludedAutocorrectDeviceMo; //  0x60 Size(10)
-	Unknown DefaultViewportMouseCaptureMode; //  0x70 Size(1)
-	Unknown DefaultViewportMouseLockMode; //  0x71 Size(1)
+	struct TArray<Unknown> ExcludedAutocorrectOS; //  0x40 Size(10)
+	struct TArray<Unknown> ExcludedAutocorrectCultures; //  0x50 Size(10)
+	struct TArray<Unknown> ExcludedAutocorrectDeviceModels; //  0x60 Size(10)
+	enum class Unknow DefaultViewportMouseCaptureMode; //  0x70 Size(1)
+	enum class Unknow DefaultViewportMouseLockMode; //  0x71 Size(1)
 	float FOVScale; //  0x74 Size(4)
-	float Doub; //  0x78 Size(4)
-	Unknown ActionMappings; //  0x80 Size(10)
-	Unknown AxisMappings; //  0x90 Size(10)
-	Unknown SpeechMappings; //  0xa0 Size(10)
-	Unknown DefaultTouchInterface; //  0xb0 Size(18)
-	Unknown ConsoleKey; //  0xc8 Size(18)
-	Unknown ConsoleKeys; //  0xe0 Size(10)
+	float DoubleClickTime; //  0x78 Size(4)
+	struct TArray<Unknown> ActionMappings; //  0x80 Size(10)
+	struct TArray<Unknown> AxisMappings; //  0x90 Size(10)
+	struct TArray<Unknown> SpeechMappings; //  0xa0 Size(10)
+	struct Unknown DefaultTouchInterface; //  0xb0 Size(18)
+	struct Unknown ConsoleKey; //  0xc8 Size(18)
+	struct TArray<Unknown> ConsoleKeys; //  0xe0 Size(10)
 
-	void SaveKeyMappings(); // Function Engine.InputSettings.SaveKeyMappings(Final|Native|Public|BlueprintCallable) // <Game+0x3cf6aa0>
+	void SaveKeyMappings(); // Function Engine.InputSettings.SaveKeyMappings(Final|Native|Public|BlueprintCallable) // <Game+0x3d03170>
 };
 
 // Class Engine.InputTouchDelegateBinding
 struct UInputTouchDelegateBinding : UInputDelegateBinding {
-	Unknown InputTouchDelegateBindings; //  0x28 Size(10)
+	struct TArray<Unknown> InputTouchDelegateBindings; //  0x28 Size(10)
 };
 
 // Class Engine.InstancedCollisionComponent
 struct UInstancedCollisionComponent : UActorComponent {
-	Unknown StaticMeshComponents; //  0xb0 Size(10)
-	Unknown StaticMeshComponent; //  0xd0 Size(8)
+	struct TArray<Unknown> StaticMeshComponents; //  0xb0 Size(10)
+	struct Unknown StaticMeshComponent; //  0xd0 Size(8)
 };
 
 // Class Engine.InstancedStaticCollisionActor
 struct AInstancedStaticCollisionActor : UActor {
-	Unknown InstancedCollisionComponentMap; //  0x310 Size(50)
+	struct TMap<{}, {}>Unknown InstancedCollisionComponentMap; //  0x310 Size(50)
 };
 
 // Class Engine.InterpCurveEdSetup
 struct UInterpCurveEdSetup : Object {
-	Unknown Tabs; //  0x28 Size(10)
+	struct TArray<Unknown> Tabs; //  0x28 Size(10)
 	int32_t ActiveTab; //  0x38 Size(4)
 };
 
@@ -8032,13 +8032,13 @@ struct UInterpCurveEdSetup : Object {
 struct UInterpData : Object {
 	float InterpLength; //  0x28 Size(4)
 	float PathBuildTime; //  0x2c Size(4)
-	Unknown InterpGroups; //  0x30 Size(10)
-	Unknown CurveEdSetup; //  0x40 Size(8)
+	struct TArray<Unknown> InterpGroups; //  0x30 Size(10)
+	struct Unknown CurveEdSetup; //  0x40 Size(8)
 	float EdSectionStart; //  0x48 Size(4)
 	float EdSectionEnd; //  0x4c Size(4)
 	char bShouldBakeAndPrune; //  0x50 Size(1)
-	Unknown CachedDirectorGroup; //  0x58 Size(8)
-	Unknown AllEventNames; //  0x60 Size(10)
+	struct Unknown CachedDirectorGroup; //  0x58 Size(8)
+	struct TArray<Unknown> AllEventNames; //  0x60 Size(10)
 };
 
 // Class Engine.InterpFilter
@@ -8048,9 +8048,9 @@ struct UInterpFilter : Object {
 
 // Class Engine.InterpGroup
 struct UInterpGroup : Object {
-	Unknown InterpTracks; //  0x30 Size(10)
+	struct TArray<Unknown> InterpTracks; //  0x30 Size(10)
 	struct FName GroupName; //  0x40 Size(8)
-	Unknown GroupColor; //  0x48 Size(4)
+	struct Unknown GroupColor; //  0x48 Size(4)
 	char bCollapsed; //  0x4c Size(1)
 	char bVisible; //  0x4c Size(1)
 	char bIsFolder; //  0x4c Size(1)
@@ -8060,15 +8060,15 @@ struct UInterpGroup : Object {
 
 // Class Engine.InterpGroupCamera
 struct UInterpGroupCamera : UInterpGroup {
-	Unknown CameraAnimInst; //  0x50 Size(8)
+	struct Unknown CameraAnimInst; //  0x50 Size(8)
 	float CompressTolerance; //  0x58 Size(4)
 };
 
 // Class Engine.InterpGroupInst
 struct UInterpGroupInst : Object {
-	Unknown Group; //  0x28 Size(8)
-	Unknown GroupActor; //  0x30 Size(8)
-	Unknown TrackInst; //  0x38 Size(10)
+	struct Unknown Group; //  0x28 Size(8)
+	struct Unknown GroupActor; //  0x30 Size(8)
+	struct TArray<Unknown> TrackInst; //  0x38 Size(10)
 };
 
 // Class Engine.InterpToMovementComponent
@@ -8076,8 +8076,8 @@ struct UInterpToMovementComponent : UMovementComponent {
 	float Duration; //  0xf0 Size(4)
 	char bPauseOnImpact; //  0xf4 Size(1)
 	char bSweep; //  0xf8 Size(1)
-	Unknown TeleportType; //  0xf9 Size(1)
-	Unknown BehaviourType; //  0xfa Size(1)
+	enum class Unknow TeleportType; //  0xf9 Size(1)
+	enum class Unknow BehaviourType; //  0xfa Size(1)
 	char bCheckIfStillInWorld; //  0xfb Size(1)
 	char bForceSubStepping; //  0xfc Size(1)
 	struct FMulticastInlineDelegate OnInterpToReverse; //  0x100 Size(10)
@@ -8087,21 +8087,21 @@ struct UInterpToMovementComponent : UMovementComponent {
 	struct FMulticastInlineDelegate OnResetDelegate; //  0x140 Size(10)
 	float MaxSimulationTimeStep; //  0x150 Size(4)
 	int32_t MaxSimulationIterations; //  0x154 Size(4)
-	Unknown ControlPoints; //  0x158 Size(10)
+	struct TArray<Unknown> ControlPoints; //  0x158 Size(10)
 
-	void StopSimulating(Unknown& HitResult); // Function Engine.InterpToMovementComponent.StopSimulating(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x3cffa40>
+	void StopSimulating(struct Unknown& HitResult); // Function Engine.InterpToMovementComponent.StopSimulating(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x3d0c1b0>
 };
 
 // Class Engine.InterpTrackAnimControl
 struct UInterpTrackAnimControl : UInterpTrackFloatBase {
 	struct FName SlotName; //  0x90 Size(8)
-	Unknown AnimSeqs; //  0x98 Size(10)
+	struct TArray<Unknown> AnimSeqs; //  0x98 Size(10)
 	char bSkipAnimNotifiers; //  0xa8 Size(1)
 };
 
 // Class Engine.InterpTrackBoolProp
 struct UInterpTrackBoolProp : UInterpTrack {
-	Unknown BoolTrack; //  0x70 Size(10)
+	struct TArray<Unknown> BoolTrack; //  0x70 Size(10)
 	struct FName PropertyName; //  0x80 Size(8)
 };
 
@@ -8112,13 +8112,13 @@ struct UInterpTrackColorProp : UInterpTrackVectorBase {
 
 // Class Engine.InterpTrackDirector
 struct UInterpTrackDirector : UInterpTrack {
-	Unknown CutTrack; //  0x70 Size(10)
+	struct TArray<Unknown> CutTrack; //  0x70 Size(10)
 	char bSimulateCameraCutsOnClients; //  0x80 Size(1)
 };
 
 // Class Engine.InterpTrackEvent
 struct UInterpTrackEvent : UInterpTrack {
-	Unknown EventTrack; //  0x70 Size(10)
+	struct TArray<Unknown> EventTrack; //  0x70 Size(10)
 	char bFireEventsWhenForwards; //  0x80 Size(1)
 	char bFireEventsWhenBackwards; //  0x80 Size(1)
 	char bFireEventsWhenJumpingForwards; //  0x80 Size(1)
@@ -8129,19 +8129,19 @@ struct UInterpTrackEvent : UInterpTrack {
 struct UInterpTrackFade : UInterpTrackFloatBase {
 	char bPersistFade; //  0x90 Size(1)
 	char bFadeAudio; //  0x90 Size(1)
-	Unknown FadeColor; //  0x94 Size(10)
+	struct Unknown FadeColor; //  0x94 Size(10)
 };
 
 // Class Engine.InterpTrackFloatAnimBPParam
 struct UInterpTrackFloatAnimBPParam : UInterpTrackFloatBase {
-	Unknown AnimBlueprintClass; //  0x90 Size(8)
-	Unknown AnimClass; //  0x98 Size(8)
+	struct Unknown* AnimBlueprintClass; //  0x90 Size(8)
+	struct Unknown* AnimClass; //  0x98 Size(8)
 	struct FName ParamName; //  0xa0 Size(8)
 };
 
 // Class Engine.InterpTrackFloatMaterialParam
 struct UInterpTrackFloatMaterialParam : UInterpTrackFloatBase {
-	Unknown TargetMaterials; //  0x90 Size(10)
+	struct TArray<Unknown> TargetMaterials; //  0x90 Size(10)
 	struct FName ParamName; //  0xa0 Size(8)
 };
 
@@ -8162,8 +8162,8 @@ struct UInterpTrackInstAnimControl : UInterpTrackInst {
 
 // Class Engine.InterpTrackInstProperty
 struct UInterpTrackInstProperty : UInterpTrackInst {
-	Unknown InterpProperty; //  0x28 Size(20)
-	Unknown PropertyOuterObjectInst; //  0x48 Size(8)
+	struct TFieldPath<FUnknown> InterpProperty; //  0x28 Size(20)
+	struct Unknown PropertyOuterObjectInst; //  0x48 Size(8)
 };
 
 // Class Engine.InterpTrackInstBoolProp
@@ -8173,12 +8173,12 @@ struct UInterpTrackInstBoolProp : UInterpTrackInstProperty {
 
 // Class Engine.InterpTrackInstColorProp
 struct UInterpTrackInstColorProp : UInterpTrackInstProperty {
-	Unknown ResetColor; //  0x58 Size(4)
+	struct Unknown ResetColor; //  0x58 Size(4)
 };
 
 // Class Engine.InterpTrackInstDirector
 struct UInterpTrackInstDirector : UInterpTrackInst {
-	Unknown OldViewTarget; //  0x28 Size(8)
+	struct Unknown OldViewTarget; //  0x28 Size(8)
 };
 
 // Class Engine.InterpTrackInstEvent
@@ -8188,16 +8188,16 @@ struct UInterpTrackInstEvent : UInterpTrackInst {
 
 // Class Engine.InterpTrackInstFloatAnimBPParam
 struct UInterpTrackInstFloatAnimBPParam : UInterpTrackInst {
-	Unknown AnimScriptInstance; //  0x28 Size(8)
+	struct Unknown AnimScriptInstance; //  0x28 Size(8)
 	float ResetFloat; //  0x30 Size(4)
 };
 
 // Class Engine.InterpTrackInstFloatMaterialParam
 struct UInterpTrackInstFloatMaterialParam : UInterpTrackInst {
-	Unknown MaterialInstances; //  0x28 Size(10)
-	Unknown ResetFloats; //  0x38 Size(10)
-	Unknown PrimitiveMaterialRefs; //  0x48 Size(10)
-	Unknown InstancedTrack; //  0x58 Size(8)
+	struct TArray<Unknown> MaterialInstances; //  0x28 Size(10)
+	struct TArray<Unknown> ResetFloats; //  0x38 Size(10)
+	struct TArray<Unknown> PrimitiveMaterialRefs; //  0x48 Size(10)
+	struct Unknown InstancedTrack; //  0x58 Size(8)
 };
 
 // Class Engine.InterpTrackInstFloatParticleParam
@@ -8212,13 +8212,13 @@ struct UInterpTrackInstFloatProp : UInterpTrackInstProperty {
 
 // Class Engine.InterpTrackInstLinearColorProp
 struct UInterpTrackInstLinearColorProp : UInterpTrackInstProperty {
-	Unknown ResetColor; //  0x58 Size(10)
+	struct Unknown ResetColor; //  0x58 Size(10)
 };
 
 // Class Engine.InterpTrackInstMove
 struct UInterpTrackInstMove : UInterpTrackInst {
-	Unknown ResetLocation; //  0x28 Size(c)
-	Unknown ResetRotation; //  0x34 Size(c)
+	struct Unknown ResetLocation; //  0x28 Size(c)
+	struct Unknown ResetRotation; //  0x34 Size(c)
 };
 
 // Class Engine.InterpTrackInstParticleReplay
@@ -8234,38 +8234,38 @@ struct UInterpTrackInstSlomo : UInterpTrackInst {
 // Class Engine.InterpTrackInstSound
 struct UInterpTrackInstSound : UInterpTrackInst {
 	float LastUpdatePosition; //  0x28 Size(4)
-	Unknown PlayAudioComp; //  0x30 Size(8)
+	struct Unknown PlayAudioComp; //  0x30 Size(8)
 };
 
 // Class Engine.InterpTrackInstToggle
 struct UInterpTrackInstToggle : UInterpTrackInst {
-	Unknown Action; //  0x28 Size(1)
+	char Action; //  0x28 Size(1)
 	float LastUpdatePosition; //  0x2c Size(4)
 	char bSavedActiveState; //  0x30 Size(1)
 };
 
 // Class Engine.InterpTrackInstVectorMaterialParam
 struct UInterpTrackInstVectorMaterialParam : UInterpTrackInst {
-	Unknown MaterialInstances; //  0x28 Size(10)
-	Unknown ResetVectors; //  0x38 Size(10)
-	Unknown PrimitiveMaterialRefs; //  0x48 Size(10)
-	Unknown InstancedTrack; //  0x58 Size(8)
+	struct TArray<Unknown> MaterialInstances; //  0x28 Size(10)
+	struct TArray<Unknown> ResetVectors; //  0x38 Size(10)
+	struct TArray<Unknown> PrimitiveMaterialRefs; //  0x48 Size(10)
+	struct Unknown InstancedTrack; //  0x58 Size(8)
 };
 
 // Class Engine.InterpTrackInstVectorProp
 struct UInterpTrackInstVectorProp : UInterpTrackInstProperty {
-	Unknown ResetVector; //  0x58 Size(c)
+	struct Unknown ResetVector; //  0x58 Size(c)
 };
 
 // Class Engine.InterpTrackInstVisibility
 struct UInterpTrackInstVisibility : UInterpTrackInst {
-	Unknown Action; //  0x28 Size(1)
+	char Action; //  0x28 Size(1)
 	float LastUpdatePosition; //  0x2c Size(4)
 };
 
 // Class Engine.InterpTrackLinearColorBase
 struct UInterpTrackLinearColorBase : UInterpTrack {
-	Unknown LinearColorTrack; //  0x70 Size(18)
+	struct Unknown LinearColorTrack; //  0x70 Size(18)
 	float CurveTension; //  0x88 Size(4)
 };
 
@@ -8276,9 +8276,9 @@ struct UInterpTrackLinearColorProp : UInterpTrackLinearColorBase {
 
 // Class Engine.InterpTrackMove
 struct UInterpTrackMove : UInterpTrack {
-	Unknown PosTrack; //  0x70 Size(18)
-	Unknown EulerTrack; //  0x88 Size(18)
-	Unknown LookupTrack; //  0xa0 Size(10)
+	struct Unknown PosTrack; //  0x70 Size(18)
+	struct Unknown EulerTrack; //  0x88 Size(18)
+	struct Unknown LookupTrack; //  0xa0 Size(10)
 	struct FName LookAtGroupName; //  0xb0 Size(8)
 	float LinCurveTension; //  0xb8 Size(4)
 	float AngCurveTension; //  0xbc Size(4)
@@ -8286,25 +8286,25 @@ struct UInterpTrackMove : UInterpTrack {
 	char bShowArrowAtKeys; //  0xc0 Size(1)
 	char bDisableMovement; //  0xc0 Size(1)
 	char bShowTranslationOnCurveEd; //  0xc0 Size(1)
-	char bShowRotationOnCurv; //  0xc0 Size(1)
+	char bShowRotationOnCurvon; //  0xc0 Size(1)
 	char bHide3DTrack; //  0xc0 Size(1)
-	Unknown RotMode; //  0xc4 Size(1)
+	char RotMode; //  0xc4 Size(1)
 };
 
 // Class Engine.InterpTrackMoveAxis
 struct UInterpTrackMoveAxis : UInterpTrackFloatBase {
-	Unknown MoveAxis; //  0x90 Size(1)
-	Unknown LookupTrack; //  0x98 Size(10)
+	char MoveAxis; //  0x90 Size(1)
+	struct Unknown LookupTrack; //  0x98 Size(10)
 };
 
 // Class Engine.InterpTrackParticleReplay
 struct UInterpTrackParticleReplay : UInterpTrack {
-	Unknown TrackKeys; //  0x70 Size(10)
+	struct TArray<Unknown> TrackKeys; //  0x70 Size(10)
 };
 
 // Class Engine.InterpTrackSound
 struct UInterpTrackSound : UInterpTrackVectorBase {
-	Unknown Sounds; //  0x90 Size(10)
+	struct TArray<Unknown> Sounds; //  0x90 Size(10)
 	char bPlayOnReverse; //  0xa0 Size(1)
 	char bContinueSoundOnMatineeEnd; //  0xa0 Size(1)
 	char bSuppressSubtitles; //  0xa0 Size(1)
@@ -8314,7 +8314,7 @@ struct UInterpTrackSound : UInterpTrackVectorBase {
 
 // Class Engine.InterpTrackToggle
 struct UInterpTrackToggle : UInterpTrack {
-	Unknown ToggleTrack; //  0x70 Size(10)
+	struct TArray<Unknown> ToggleTrack; //  0x70 Size(10)
 	char bActivateSystemEachUpdate; //  0x80 Size(1)
 	char bActivateWithJustAttachedFlag; //  0x80 Size(1)
 	char bFireEventsWhenForwards; //  0x80 Size(1)
@@ -8324,7 +8324,7 @@ struct UInterpTrackToggle : UInterpTrack {
 
 // Class Engine.InterpTrackVectorMaterialParam
 struct UInterpTrackVectorMaterialParam : UInterpTrackVectorBase {
-	Unknown TargetMaterials; //  0x90 Size(10)
+	struct TArray<Unknown> TargetMaterials; //  0x90 Size(10)
 	struct FName ParamName; //  0xa0 Size(8)
 };
 
@@ -8335,7 +8335,7 @@ struct UInterpTrackVectorProp : UInterpTrackVectorBase {
 
 // Class Engine.InterpTrackVisibility
 struct UInterpTrackVisibility : UInterpTrack {
-	Unknown VisibilityTrack; //  0x70 Size(10)
+	struct TArray<Unknown> VisibilityTrack; //  0x70 Size(10)
 	char bFireEventsWhenForwards; //  0x80 Size(1)
 	char bFireEventsWhenBackwards; //  0x80 Size(1)
 	char bFireEventsWhenJumpingForwards; //  0x80 Size(1)
@@ -8349,7 +8349,7 @@ struct UIntSerialization : Object {
 	int8_t SignedInt8Variable; //  0x38 Size(1)
 	int16_t SignedInt16Variable; //  0x3a Size(2)
 	int64_t SignedInt64Variable; //  0x40 Size(8)
-	Unknown UnsignedInt8Variable; //  0x48 Size(1)
+	char UnsignedInt8Variable; //  0x48 Size(1)
 	int32_t SignedInt32Variable; //  0x4c Size(4)
 };
 
@@ -8357,54 +8357,54 @@ struct UIntSerialization : Object {
 struct ULayer : Object {
 	struct FName LayerName; //  0x28 Size(8)
 	char bIsVisible; //  0x30 Size(1)
-	Unknown ActorStats; //  0x38 Size(10)
+	struct TArray<Unknown> ActorStats; //  0x38 Size(10)
 };
 
 // Class Engine.Level
 struct ULevel : Object {
-	Unknown OwningWorld; //  0xb8 Size(8)
-	Unknown Model; //  0xc0 Size(8)
-	Unknown ModelComponents; //  0xc8 Size(10)
-	Unknown ActorCluster; //  0xd8 Size(8)
+	struct Unknown OwningWorld; //  0xb8 Size(8)
+	struct Unknown Model; //  0xc0 Size(8)
+	struct TArray<Unknown> ModelComponents; //  0xc8 Size(10)
+	struct Unknown ActorCluster; //  0xd8 Size(8)
 	int32_t NumTextureStreamingUnbuiltComponents; //  0xe0 Size(4)
-	int32_t NumTextureStreamingDirtyResources; //  0xe4 Size(4)
-	Unknown LevelScriptActor; //  0xe8 Size(8)
-	Unknown NavListStart; //  0xf0 Size(8)
-	Unknown NavListEnd; //  0xf8 Size(8)
-	Unknown NavDataChunks; //  0x100 Size(10)
+	int32_t NumTextureStreamingDirtyRes; //  0xe4 Size(4)
+	struct Unknown LevelScriptActor; //  0xe8 Size(8)
+	struct Unknown NavListStart; //  0xf0 Size(8)
+	struct Unknown NavListEnd; //  0xf8 Size(8)
+	struct TArray<Unknown> NavDataChunks; //  0x100 Size(10)
 	float LightmapTotalSize; //  0x110 Size(4)
 	float ShadowmapTotalSize; //  0x114 Size(4)
-	Unknown StaticNavigableGeometry; //  0x118 Size(10)
-	Unknown StreamingTextureGuids; //  0x128 Size(10)
-	Unknown LevelBuildDataId; //  0x1d0 Size(10)
-	Unknown MapBuildData; //  0x1e0 Size(8)
-	Unknown LightBuildLevelOffset; //  0x1e8 Size(c)
+	struct TArray<Unknown> StaticNavigableGeometry; //  0x118 Size(10)
+	struct TArray<Unknown> StreamingTextureGuids; //  0x128 Size(10)
+	struct Unknown LevelBuildDataId; //  0x1d0 Size(10)
+	struct Unknown MapBuildData; //  0x1e0 Size(8)
+	struct Unknown LightBuildLevelOffset; //  0x1e8 Size(c)
 	char bIsLightingScenario; //  0x1f4 Size(1)
 	char bTextureStreamingRotationChanged; //  0x1f4 Size(1)
 	char bStaticComponentsRegisteredInStreamingManager; //  0x1f4 Size(1)
 	char bIsVisible; //  0x1f4 Size(1)
-	Unknown WorldSettings; //  0x240 Size(8)
-	Unknown AssetUserData; //  0x250 Size(10)
-	Unknown DestroyedReplicatedStaticActors; //  0x270 Size(10)
+	struct Unknown WorldSettings; //  0x240 Size(8)
+	struct TArray<Unknown> AssetUserData; //  0x250 Size(10)
+	struct TArray<Unknown> DestroyedReplicatedStaticActors; //  0x270 Size(10)
 };
 
 // Class Engine.LevelActorContainer
 struct ULevelActorContainer : Object {
-	Unknown Actors; //  0x28 Size(10)
+	struct TArray<Unknown> Actors; //  0x28 Size(10)
 };
 
 // Class Engine.LevelBounds
 struct ALevelBounds : UActor {
-	Unknown BoxComponent; //  0x310 Size(8)
+	struct Unknown BoxComponent; //  0x310 Size(8)
 	char bAutoUpdateBounds; //  0x318 Size(1)
 };
 
 // Class Engine.LevelStreaming
 struct ULevelStreaming : Object {
-	Unknown WorldAsset; //  0x28 Size(28)
+	struct TSoftObjectPtr<Unknown> WorldAsset; //  0x28 Size(28)
 	struct FName PackageNameToLoad; //  0x50 Size(8)
-	Unknown LODPackageNames; //  0x58 Size(10)
-	Unknown LevelTransform; //  0x80 Size(30)
+	struct TArray<Unknown> LODPackageNames; //  0x58 Size(10)
+	struct Unknown LevelTransform; //  0x80 Size(30)
 	int32_t LevelLODIndex; //  0xb0 Size(4)
 	int32_t StreamingPriority; //  0xb4 Size(4)
 	char bShouldBeVisible; //  0xc0 Size(1)
@@ -8415,17 +8415,17 @@ struct ULevelStreaming : Object {
 	char bShouldBlockOnUnload; //  0xc0 Size(1)
 	char bDisableDistanceStreaming; //  0xc0 Size(1)
 	char bDrawOnLevelStatusMap; //  0xc0 Size(1)
-	Unknown LevelColor; //  0xc4 Size(10)
-	Unknown EditorStreamingVolumes; //  0xd8 Size(10)
+	struct Unknown LevelColor; //  0xc4 Size(10)
+	struct TArray<Unknown> EditorStreamingVolumes; //  0xd8 Size(10)
 	float MinTimeBetweenVolumeUnloadRequests; //  0xe8 Size(4)
 	struct FMulticastInlineDelegate OnLevelLoaded; //  0xf0 Size(10)
 	struct FMulticastInlineDelegate OnLevelUnloaded; //  0x100 Size(10)
 	struct FMulticastInlineDelegate OnLevelShown; //  0x110 Size(10)
 	struct FMulticastInlineDelegate OnLevelHidden; //  0x120 Size(10)
-	Unknown LoadedLevel; //  0x130 Size(8)
-	Unknown PendingUnloadLevel; //  0x138 Size(8)
+	struct Unknown LoadedLevel; //  0x130 Size(8)
+	struct Unknown PendingUnloadLevel; //  0x138 Size(8)
 
-	char ShouldBeLoaded(); // Function Engine.LevelStreaming.ShouldBeLoaded(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x34e8900>
+	char ShouldBeLoaded(); // Function Engine.LevelStreaming.ShouldBeLoaded(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x34f41f0>
 };
 
 // Class Engine.LevelStreamingDynamic
@@ -8433,89 +8433,89 @@ struct ULevelStreamingDynamic : ULevelStreaming {
 	char bInitiallyLoaded; //  0x158 Size(1)
 	char bInitiallyVisible; //  0x158 Size(1)
 
-	Unknown LoadLevelInstanceBySoftObjectPtr(Unknown WorldContextObject, Unknown Level, Unknown Location, Unknown Rotation, char& bOutSuccess); // Function Engine.LevelStreamingDynamic.LoadLevelInstanceBySoftObjectPtr(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game+0x3d607a0>
+	struct Unknown LoadLevelInstanceBySoftObjectPtr(struct Unknown WorldContextObject, struct TSoftObjectPtr<Unknown> Level, struct Unknown Location, struct Unknown Rotation, char& bOutSuccess); // Function Engine.LevelStreamingDynamic.LoadLevelInstanceBySoftObjectPtr(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game+0x3d6d000>
 };
 
 // Class Engine.LevelStreamingVolume
 struct ALevelStreamingVolume : AVolume {
-	Unknown StreamingLevelNames; //  0x348 Size(10)
+	struct TArray<Unknown> StreamingLevelNames; //  0x348 Size(10)
 	char bEditorPreVisOnly; //  0x358 Size(1)
 	char bDisabled; //  0x358 Size(1)
-	Unknown StreamingUsage; //  0x35c Size(1)
+	char StreamingUsage; //  0x35c Size(1)
 };
 
-// Class Engine.LightmappedSurfaceCollectio
-struct ULightmappedSurfaceCollectiot : Object {
-	Unknown SourceModel; //  0x28 Size(8)
-	Unknown Surfaces; //  0x30 Size(10)
+// Class Engine.LightmappedSurfaceCollection
+struct ULightmappedSurfaceCollection : Object {
+	struct Unknown SourceModel; //  0x28 Size(8)
+	struct TArray<Unknown> Surfaces; //  0x30 Size(10)
 };
 
 // Class Engine.LightmassPortal
 struct ALightmassPortal : UActor {
-	Unknown PortalComponent; //  0x310 Size(8)
+	struct Unknown PortalComponent; //  0x310 Size(8)
 };
 
 // Class Engine.LightmassPortalComponent
 struct ULightmassPortalComponent : USceneComponent {
-	Unknown PreviewBox; //  0x238 Size(8)
+	struct Unknown PreviewBox; //  0x238 Size(8)
 };
 
-// Class Engine.LightmassPrimitiveSettingsObject
-struct ULightmassPrimitiveSettingsObject : Object {
-	Unknown LightmassSettings; //  0x28 Size(18)
+// Class Engine.LightmassPrimitiveSettingsObj
+struct ULightmassPrimitiveSettingsObj : Object {
+	struct Unknown LightmassSettings; //  0x28 Size(18)
 };
 
 // Class Engine.LocalLightComponent
 struct ULocalLightComponent : ULightComponent {
-	Unknown IntensityUnits; //  0x380 Size(1)
+	enum class Unknow IntensityUnits; //  0x380 Size(1)
 	float Radius; //  0x384 Size(4)
 	float AttenuationRadius; //  0x388 Size(4)
-	Unknown LightmassSettings; //  0x38c Size(c)
+	struct Unknown LightmassSettings; //  0x38c Size(c)
 
-	void SetIntensityUnits(Unknown NewIntensityUnits); // Function Engine.LocalLightComponent.SetIntensityUnits(Final|Native|Public|BlueprintCallable) // <Game+0x3d64c20>
+	void SetIntensityUnits(enum class Unknow NewIntensityUnits); // Function Engine.LocalLightComponent.SetIntensityUnits(Final|Native|Public|BlueprintCallable) // <Game+0x3d714b0>
 };
 
 // Class Engine.LODActor
 struct ALODActor : UActor {
-	Unknown StaticMeshComponent; //  0x310 Size(8)
-	Unknown ImpostersStaticMeshComponents; //  0x318 Size(50)
-	Unknown Proxy; //  0x368 Size(8)
+	struct Unknown StaticMeshComponent; //  0x310 Size(8)
+	struct TMap<{}, {}>Unknown ImpostersStaticMeshComponents; //  0x318 Size(50)
+	struct Unknown Proxy; //  0x368 Size(8)
 	struct FName Key; //  0x370 Size(8)
 	float LODDrawDistance; //  0x378 Size(4)
 	int32_t LODLevel; //  0x37c Size(4)
-	Unknown SubActors; //  0x380 Size(10)
-	Unknown CachedNumHLODLevels; //  0x390 Size(1)
+	struct TArray<Unknown> SubActors; //  0x380 Size(10)
+	char CachedNumHLO; //  0x390 Size(1)
 };
 
 // Class Engine.MapBuildDataRegistry
 struct UMapBuildDataRegistry : Object {
-	Unknown LevelLightingQuality; //  0x28 Size(1)
+	char LevelLightingQuality; //  0x28 Size(1)
 };
 
 // Class Engine.Material
 struct UMaterial : UMaterialInterface {
-	Unknown PhysMaterial; //  0x88 Size(8)
-	Unknown PhysMaterialMask; //  0x90 Size(8)
-	Unknown PhysicalMaterialMap; //  0x98 Size(40)
-	Unknown Metallic; //  0xd8 Size(c)
-	Unknown Specular; //  0xec Size(c)
-	Unknown Anisotropy; //  0x100 Size(c)
-	Unknown Normal; //  0x114 Size(c)
-	Unknown Tangent; //  0x128 Size(c)
-	Unknown EmissiveColor; //  0x13c Size(c)
-	Unknown MaterialDomain; //  0x150 Size(1)
-	Unknown BlendMode; //  0x151 Size(1)
-	Unknown DecalBlendMode; //  0x152 Size(1)
-	Unknown MaterialDecalResponse; //  0x153 Size(1)
-	Unknown ShadingModel; //  0x154 Size(1)
+	struct Unknown PhysMaterial; //  0x88 Size(8)
+	struct Unknown PhysMaterialMask; //  0x90 Size(8)
+	struct Unknown PhysicalMaterialMap; //  0x98 Size(40)
+	struct Unknown Metallic; //  0xd8 Size(c)
+	struct Unknown Specular; //  0xec Size(c)
+	struct Unknown Anisotropy; //  0x100 Size(c)
+	struct Unknown Normal; //  0x114 Size(c)
+	struct Unknown Tangent; //  0x128 Size(c)
+	struct Unknown EmissiveColor; //  0x13c Size(c)
+	char MaterialDomain; //  0x150 Size(1)
+	char BlendMode; //  0x151 Size(1)
+	char DecalBlendMode; //  0x152 Size(1)
+	char MaterialDecalResponse; //  0x153 Size(1)
+	char ShadingModel; //  0x154 Size(1)
 	char bCastDynamicShadowAsMasked; //  0x155 Size(1)
-	Unknown ShadingModels; //  0x156 Size(2)
+	struct Unknown ShadingModels; //  0x156 Size(2)
 	float OpacityMaskClipValue; //  0x158 Size(4)
-	Unknown WorldPositionOffset; //  0x15c Size(c)
-	Unknown Refraction; //  0x170 Size(c)
-	Unknown MaterialAttributes; //  0x184 Size(10)
-	Unknown PixelDepthOffset; //  0x19c Size(c)
-	Unknown ShadingModelFromMaterialExpression; //  0x1b0 Size(c)
+	struct Unknown WorldPositionOffset; //  0x15c Size(c)
+	struct Unknown Refraction; //  0x170 Size(c)
+	struct Unknown MaterialAttributes; //  0x184 Size(10)
+	struct Unknown PixelDepthOffset; //  0x19c Size(c)
+	struct Unknown ShadingModelFromMaterialExpression; //  0x1b0 Size(c)
 	char bEnableSeparateTranslucency; //  0x1c4 Size(1)
 	char bEnableResponsiveAA; //  0x1c4 Size(1)
 	char bEnableTranslucentVelocity; //  0x1c8 Size(1)
@@ -8525,16 +8525,16 @@ struct UMaterial : UMaterialInterface {
 	char DitheredLODTransition; //  0x1cc Size(1)
 	char DitherOpacityMask; //  0x1cc Size(1)
 	char bAllowNegativeEmissiveColor; //  0x1cc Size(1)
-	Unknown TranslucencyLightingMode; //  0x1cd Size(1)
+	char TranslucencyLightingMode; //  0x1cd Size(1)
 	char bEnableMobileSeparateTranslucency; //  0x1ce Size(1)
 	int32_t NumCustomizedUVs; //  0x1d0 Size(4)
-	float TranslucencyDirectionalLightingIntensity; //  0x1d4 Size(4)
+	float Translucency; //  0x1d4 Size(4)
 	float TranslucentShadowDensityScale; //  0x1d8 Size(4)
 	float TranslucentSelfShadowDensityScale; //  0x1dc Size(4)
 	float TranslucentSelfShadowSecondDensityScale; //  0x1e0 Size(4)
 	float TranslucentSelfShadowSecondOpacity; //  0x1e4 Size(4)
 	float TranslucentBackscatteringExponent; //  0x1e8 Size(4)
-	Unknown TranslucentMultipleScatteringExtinction; //  0x1ec Size(10)
+	struct Unknown TranslucentMultipleScatteringExtinction; //  0x1ec Size(10)
 	float TranslucentShadowStartOffset; //  0x1fc Size(4)
 	char bDisableDepthTest; //  0x200 Size(1)
 	char bWriteOnlyAlpha; //  0x200 Size(1)
@@ -8555,7 +8555,7 @@ struct UMaterial : UMaterialInterface {
 	char bUsedWithStaticLighting; //  0x202 Size(1)
 	char bUsedWithMorphTargets; //  0x202 Size(1)
 	char bUsedWithSplineMeshes; //  0x202 Size(1)
-	char bUsedWithInstancedStaticMeshes; //  0x202 Size(1)
+	char bUsedWithInstancedStaticMes; //  0x202 Size(1)
 	char bUsedWithGeometryCollections; //  0x202 Size(1)
 	char bUsesDistortion; //  0x202 Size(1)
 	char bUsedWithClothing; //  0x202 Size(1)
@@ -8566,12 +8566,12 @@ struct UMaterial : UMaterialInterface {
 	char bAutomaticallySetUsageInEditor; //  0x208 Size(1)
 	char bFullyRough; //  0x208 Size(1)
 	char bUseFullPrecision; //  0x208 Size(1)
-	char bUseLightmapDirectionality; //  0x208 Size(1)
+	char bUseLightmap; //  0x208 Size(1)
 	char bForwardRenderUsePreintegratedGFForSimpleIBL; //  0x20c Size(1)
 	char bUseHQForwardReflections; //  0x210 Size(1)
 	char bUsePlanarForwardReflections; //  0x210 Size(1)
 	char bNormalCurvatureToRoughness; //  0x210 Size(1)
-	Unknown D3D11TessellationMode; //  0x211 Size(1)
+	char D3D11TessellationMode; //  0x211 Size(1)
 	char bEnableCrackFreeDisplacement; //  0x212 Size(1)
 	char bEnableAdaptiveTessellation; //  0x212 Size(1)
 	char AllowTranslucentCustomDepthWrites; //  0x212 Size(1)
@@ -8588,129 +8588,129 @@ struct UMaterial : UMaterialInterface {
 	char bOutputTranslucentVelocity; //  0x213 Size(1)
 	char bAllowDevelopmentShaderCompile; //  0x213 Size(1)
 	char bIsMaterialEditorStatsMaterial; //  0x213 Size(1)
-	Unknown BlendableLocation; //  0x214 Size(1)
+	char BlendableLocation; //  0x214 Size(1)
 	char BlendableOutputAlpha; //  0x215 Size(1)
 	char bEnableStencilTest; //  0x215 Size(1)
-	Unknown StencilCompare; //  0x216 Size(1)
-	Unknown StencilRefValue; //  0x217 Size(1)
-	Unknown RefractionMode; //  0x218 Size(1)
+	char StencilCompare; //  0x216 Size(1)
+	char StencilRefValue; //  0x217 Size(1)
+	char RefractionMode; //  0x218 Size(1)
 	int32_t BlendablePriority; //  0x21c Size(4)
 	char bIsBlendable; //  0x220 Size(1)
 	uint32_t UsageFlagWarnings; //  0x224 Size(4)
 	float RefractionDepthBias; //  0x228 Size(4)
-	Unknown StateID; //  0x22c Size(10)
+	struct Unknown StateID; //  0x22c Size(10)
 	float MaxDisplacement; //  0x23c Size(4)
-	Unknown CachedExpressionData; //  0x2c8 Size(228)
+	struct Unknown CachedExpressionData; //  0x2c8 Size(228)
 };
 
 // Class Engine.MaterialBillboardComponent
 struct UMaterialBillboardComponent : UPrimitiveComponent {
-	Unknown Elements; //  0x4b8 Size(10)
+	struct TArray<Unknown> Elements; //  0x4b8 Size(10)
 
-	void SetElements(Unknown& NewElements); // Function Engine.MaterialBillboardComponent.SetElements(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x3d69620>
+	void SetElements(struct TArray<Unknown>& NewElements); // Function Engine.MaterialBillboardComponent.SetElements(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x3d75ee0>
 };
 
 // Class Engine.MaterialExpressionAbs
 struct UMaterialExpressionAbs : UMaterialExpression {
-	Unknown Input; //  0x40 Size(c)
+	struct Unknown Input; //  0x40 Size(c)
 };
 
 // Class Engine.MaterialExpressionAdd
 struct UMaterialExpressionAdd : UMaterialExpression {
-	Unknown A; //  0x40 Size(c)
-	Unknown B; //  0x54 Size(c)
+	struct Unknown A; //  0x40 Size(c)
+	struct Unknown B; //  0x54 Size(c)
 	float ConstA; //  0x68 Size(4)
 	float ConstB; //  0x6c Size(4)
 };
 
-// Class Engine.MaterialExpressionAntialiasedTextureMask
-struct UMaterialExpressionAntialiasedTextureMask : UMaterialExpressionTextureSampleParameter2D {
+// Class Engine.MaterialExpressionAntialias
+struct UMaterialExpressionAntialias : UMaterialExpressionTextureSampleParameter2D {
 	float threshold; //  0xf0 Size(4)
-	Unknown Channel; //  0xf4 Size(1)
+	char Channel; //  0xf4 Size(1)
 };
 
 // Class Engine.MaterialExpressionAppendVector
 struct UMaterialExpressionAppendVector : UMaterialExpression {
-	Unknown A; //  0x40 Size(c)
-	Unknown B; //  0x54 Size(c)
+	struct Unknown A; //  0x40 Size(c)
+	struct Unknown B; //  0x54 Size(c)
 };
 
 // Class Engine.MaterialExpressionArccosine
 struct UMaterialExpressionArccosine : UMaterialExpression {
-	Unknown Input; //  0x40 Size(c)
+	struct Unknown Input; //  0x40 Size(c)
 };
 
 // Class Engine.MaterialExpressionArccosineFast
 struct UMaterialExpressionArccosineFast : UMaterialExpression {
-	Unknown Input; //  0x40 Size(c)
+	struct Unknown Input; //  0x40 Size(c)
 };
 
 // Class Engine.MaterialExpressionArcsine
 struct UMaterialExpressionArcsine : UMaterialExpression {
-	Unknown Input; //  0x40 Size(c)
+	struct Unknown Input; //  0x40 Size(c)
 };
 
 // Class Engine.MaterialExpressionArcsineFast
 struct UMaterialExpressionArcsineFast : UMaterialExpression {
-	Unknown Input; //  0x40 Size(c)
+	struct Unknown Input; //  0x40 Size(c)
 };
 
 // Class Engine.MaterialExpressionArctangent
 struct UMaterialExpressionArctangent : UMaterialExpression {
-	Unknown Input; //  0x40 Size(c)
+	struct Unknown Input; //  0x40 Size(c)
 };
 
 // Class Engine.MaterialExpressionArctangent2
 struct UMaterialExpressionArctangent2 : UMaterialExpression {
-	Unknown Y; //  0x40 Size(c)
-	Unknown X; //  0x54 Size(c)
+	struct Unknown Y; //  0x40 Size(c)
+	struct Unknown X; //  0x54 Size(c)
 };
 
 // Class Engine.MaterialExpressionArctangent2Fast
 struct UMaterialExpressionArctangent2Fast : UMaterialExpression {
-	Unknown Y; //  0x40 Size(c)
-	Unknown X; //  0x54 Size(c)
+	struct Unknown Y; //  0x40 Size(c)
+	struct Unknown X; //  0x54 Size(c)
 };
 
 // Class Engine.MaterialExpressionArctangentFast
 struct UMaterialExpressionArctangentFast : UMaterialExpression {
-	Unknown Input; //  0x40 Size(c)
+	struct Unknown Input; //  0x40 Size(c)
 };
 
-// Class Engine.MaterialExpressionAtmosphericFog
-struct UMaterialExpressionAtmosphericFog : UMaterialExpression {
-	Unknown WorldPosition; //  0x40 Size(c)
+// Class Engine.MaterialExpressionAtmosphericFogColor
+struct UMaterialExpressionAtmosphericFogColor : UMaterialExpression {
+	struct Unknown WorldPosition; //  0x40 Size(c)
 };
 
 // Class Engine.MaterialExpressionBentNormalCustomOutput
 struct UMaterialExpressionBentNormalCustomOutput : UMaterialExpressionCustomOutput {
-	Unknown Input; //  0x40 Size(c)
+	struct Unknown Input; //  0x40 Size(c)
 };
 
 // Class Engine.MaterialExpressionBlackBody
 struct UMaterialExpressionBlackBody : UMaterialExpression {
-	Unknown Temp; //  0x40 Size(c)
+	struct Unknown Temp; //  0x40 Size(c)
 };
 
 // Class Engine.MaterialExpressionBlendMaterialAttributes
 struct UMaterialExpressionBlendMaterialAttributes : UMaterialExpression {
-	Unknown A; //  0x40 Size(10)
-	Unknown B; //  0x58 Size(10)
-	Unknown ALPHA; //  0x70 Size(c)
-	Unknown PixelAttributeBlendType; //  0x84 Size(1)
-	Unknown VertexAttributeBlendType; //  0x85 Size(1)
+	struct Unknown A; //  0x40 Size(10)
+	struct Unknown B; //  0x58 Size(10)
+	struct Unknown ALPHA; //  0x70 Size(c)
+	char PixelAttributeBlendType; //  0x84 Size(1)
+	char VertexAttributeBlendType; //  0x85 Size(1)
 };
 
 // Class Engine.MaterialExpressionBreakMaterialAttributes
 struct UMaterialExpressionBreakMaterialAttributes : UMaterialExpression {
-	Unknown MaterialAttributes; //  0x40 Size(10)
+	struct Unknown MaterialAttributes; //  0x40 Size(10)
 };
 
 // Class Engine.MaterialExpressionBumpOffset
 struct UMaterialExpressionBumpOffset : UMaterialExpression {
-	Unknown Coordinate; //  0x40 Size(c)
-	Unknown Height; //  0x54 Size(c)
-	Unknown HeightRatioInput; //  0x68 Size(c)
+	struct Unknown Coordinate; //  0x40 Size(c)
+	struct Unknown Height; //  0x54 Size(c)
+	struct Unknown HeightRatioInput; //  0x68 Size(c)
 	float HeightRatio; //  0x7c Size(4)
 	float ReferencePlane; //  0x80 Size(4)
 	uint32_t ConstCoordinate; //  0x84 Size(4)
@@ -8718,48 +8718,48 @@ struct UMaterialExpressionBumpOffset : UMaterialExpression {
 
 // Class Engine.MaterialExpressionCeil
 struct UMaterialExpressionCeil : UMaterialExpression {
-	Unknown Input; //  0x40 Size(c)
+	struct Unknown Input; //  0x40 Size(c)
 };
 
 // Class Engine.MaterialExpressionParameter
 struct UMaterialExpressionParameter : UMaterialExpression {
 	struct FName ParameterName; //  0x40 Size(8)
-	Unknown ExpressionGUID; //  0x48 Size(10)
+	struct Unknown ExpressionGUID; //  0x48 Size(10)
 };
 
 // Class Engine.MaterialExpressionVectorParameter
 struct UMaterialExpressionVectorParameter : UMaterialExpressionParameter {
-	Unknown DefaultValue; //  0x58 Size(10)
+	struct Unknown DefaultValue; //  0x58 Size(10)
 	char bUseCustomPrimitiveData; //  0x68 Size(1)
-	Unknown PrimitiveDataIndex; //  0x69 Size(1)
+	char PrimitiveDataIndex; //  0x69 Size(1)
 };
 
 // Class Engine.MaterialExpressionChannelMaskParameter
 struct UMaterialExpressionChannelMaskParameter : UMaterialExpressionVectorParameter {
-	Unknown MaskChannel; //  0x70 Size(1)
-	Unknown Input; //  0x74 Size(c)
+	char MaskChannel; //  0x70 Size(1)
+	struct Unknown Input; //  0x74 Size(c)
 };
 
 // Class Engine.MaterialExpressionClamp
 struct UMaterialExpressionClamp : UMaterialExpression {
-	Unknown Input; //  0x40 Size(c)
-	Unknown Min; //  0x54 Size(c)
-	Unknown MAX; //  0x68 Size(c)
-	Unknown ClampMode; //  0x7c Size(1)
+	struct Unknown Input; //  0x40 Size(c)
+	struct Unknown Min; //  0x54 Size(c)
+	struct Unknown MAX; //  0x68 Size(c)
+	char ClampMode; //  0x7c Size(1)
 	float MinDefault; //  0x80 Size(4)
 	float MaxDefault; //  0x84 Size(4)
 };
 
 // Class Engine.MaterialExpressionClearCoatNormalCustomOutput
 struct UMaterialExpressionClearCoatNormalCustomOutput : UMaterialExpressionCustomOutput {
-	Unknown Input; //  0x40 Size(c)
+	struct Unknown Input; //  0x40 Size(c)
 };
 
-// Class Engine.MaterialExpressionCollectio
-struct UMaterialExpressionCollectiot : UMaterialExpression {
-	Unknown Collection; //  0x40 Size(8)
+// Class Engine.MaterialExpressionCollectionParameter
+struct UMaterialExpressionCollectionParameter : UMaterialExpression {
+	struct Unknown Collection; //  0x40 Size(8)
 	struct FName ParameterName; //  0x48 Size(8)
-	Unknown ParameterId; //  0x50 Size(10)
+	struct Unknown ParameterId; //  0x50 Size(10)
 };
 
 // Class Engine.MaterialExpressionComment
@@ -8767,13 +8767,13 @@ struct UMaterialExpressionComment : UMaterialExpression {
 	int32_t SizeX; //  0x40 Size(4)
 	int32_t SizeY; //  0x44 Size(4)
 	struct FString Text; //  0x48 Size(10)
-	Unknown CommentColor; //  0x58 Size(10)
+	struct Unknown CommentColor; //  0x58 Size(10)
 	int32_t FontSize; //  0x68 Size(4)
 };
 
 // Class Engine.MaterialExpressionComponentMask
 struct UMaterialExpressionComponentMask : UMaterialExpression {
-	Unknown Input; //  0x40 Size(c)
+	struct Unknown Input; //  0x40 Size(c)
 	char R; //  0x54 Size(1)
 	char G; //  0x54 Size(1)
 	char B; //  0x54 Size(1)
@@ -8793,189 +8793,189 @@ struct UMaterialExpressionConstant2Vector : UMaterialExpression {
 
 // Class Engine.MaterialExpressionConstant3Vector
 struct UMaterialExpressionConstant3Vector : UMaterialExpression {
-	Unknown Constant; //  0x40 Size(10)
+	struct Unknown Constant; //  0x40 Size(10)
 };
 
 // Class Engine.MaterialExpressionConstant4Vector
 struct UMaterialExpressionConstant4Vector : UMaterialExpression {
-	Unknown Constant; //  0x40 Size(10)
+	struct Unknown Constant; //  0x40 Size(10)
 };
 
 // Class Engine.MaterialExpressionConstantBiasScale
 struct UMaterialExpressionConstantBiasScale : UMaterialExpression {
-	Unknown Input; //  0x40 Size(c)
+	struct Unknown Input; //  0x40 Size(c)
 	float Bias; //  0x54 Size(4)
 	float Scale; //  0x58 Size(4)
 };
 
 // Class Engine.MaterialExpressionCosine
 struct UMaterialExpressionCosine : UMaterialExpression {
-	Unknown Input; //  0x40 Size(c)
+	struct Unknown Input; //  0x40 Size(c)
 	float Period; //  0x54 Size(4)
 };
 
 // Class Engine.MaterialExpressionCrossProduct
 struct UMaterialExpressionCrossProduct : UMaterialExpression {
-	Unknown A; //  0x40 Size(c)
-	Unknown B; //  0x54 Size(c)
+	struct Unknown A; //  0x40 Size(c)
+	struct Unknown B; //  0x54 Size(c)
 };
 
 // Class Engine.MaterialExpressionScalarParameter
 struct UMaterialExpressionScalarParameter : UMaterialExpressionParameter {
 	float DefaultValue; //  0x58 Size(4)
 	char bUseCustomPrimitiveData; //  0x5c Size(1)
-	Unknown PrimitiveDataIndex; //  0x5d Size(1)
+	char PrimitiveDataIndex; //  0x5d Size(1)
 };
 
 // Class Engine.MaterialExpressionCurveAtlasRowParameter
 struct UMaterialExpressionCurveAtlasRowParameter : UMaterialExpressionScalarParameter {
-	Unknown Curve; //  0x60 Size(8)
-	Unknown Atlas; //  0x68 Size(8)
-	Unknown InputTime; //  0x70 Size(c)
+	struct Unknown Curve; //  0x60 Size(8)
+	struct Unknown Atlas; //  0x68 Size(8)
+	struct Unknown InputTime; //  0x70 Size(c)
 };
 
 // Class Engine.MaterialExpressionCustom
 struct UMaterialExpressionCustom : UMaterialExpression {
 	struct FString Code; //  0x40 Size(10)
-	Unknown OutputType; //  0x50 Size(1)
+	char OutputType; //  0x50 Size(1)
 	struct FString Description; //  0x58 Size(10)
-	Unknown Inputs; //  0x68 Size(10)
-	Unknown AdditionalDefines; //  0x78 Size(10)
-	Unknown IncludeFilePaths; //  0x88 Size(10)
+	struct TArray<Unknown> Inputs; //  0x68 Size(10)
+	struct TArray<Unknown> AdditionalDefines; //  0x78 Size(10)
+	struct TArray<Unknown> IncludeFilePaths; //  0x88 Size(10)
 };
 
 // Class Engine.MaterialExpressionDDX
 struct UMaterialExpressionDDX : UMaterialExpression {
-	Unknown Value; //  0x40 Size(c)
+	struct Unknown Value; //  0x40 Size(c)
 };
 
 // Class Engine.MaterialExpressionDDY
 struct UMaterialExpressionDDY : UMaterialExpression {
-	Unknown Value; //  0x40 Size(c)
+	struct Unknown Value; //  0x40 Size(c)
 };
 
 // Class Engine.MaterialExpressionDecalMipmapLevel
 struct UMaterialExpressionDecalMipmapLevel : UMaterialExpression {
-	Unknown TextureSize; //  0x40 Size(c)
+	struct Unknown TextureSize; //  0x40 Size(c)
 	float ConstWidth; //  0x54 Size(4)
 	float ConstHeight; //  0x58 Size(4)
 };
 
 // Class Engine.MaterialExpressionDepthFade
 struct UMaterialExpressionDepthFade : UMaterialExpression {
-	Unknown InOpacity; //  0x40 Size(c)
-	Unknown FadeDistance; //  0x54 Size(c)
+	struct Unknown InOpacity; //  0x40 Size(c)
+	struct Unknown Fade; //  0x54 Size(c)
 	float OpacityDefault; //  0x68 Size(4)
-	float FadeDistanceDefault; //  0x6c Size(4)
+	float Fade; //  0x6c Size(4)
 };
 
 // Class Engine.MaterialExpressionDepthOfFieldFunction
 struct UMaterialExpressionDepthOfFieldFunction : UMaterialExpression {
-	Unknown FunctionValue; //  0x40 Size(1)
-	Unknown Depth; //  0x44 Size(c)
+	char FunctionValue; //  0x40 Size(1)
+	struct Unknown Depth; //  0x44 Size(c)
 };
 
 // Class Engine.MaterialExpressionDeriveNormalZ
 struct UMaterialExpressionDeriveNormalZ : UMaterialExpression {
-	Unknown InXY; //  0x40 Size(c)
+	struct Unknown InXY; //  0x40 Size(c)
 };
 
 // Class Engine.MaterialExpressionDesaturation
 struct UMaterialExpressionDesaturation : UMaterialExpression {
-	Unknown Input; //  0x40 Size(c)
-	Unknown Fraction; //  0x54 Size(c)
-	Unknown LuminanceFactors; //  0x68 Size(10)
+	struct Unknown Input; //  0x40 Size(c)
+	struct Unknown Fraction; //  0x54 Size(c)
+	struct Unknown LuminanceFactors; //  0x68 Size(10)
 };
 
 // Class Engine.MaterialExpressionDistance
 struct UMaterialExpressionDistance : UMaterialExpression {
-	Unknown A; //  0x40 Size(c)
-	Unknown B; //  0x54 Size(c)
+	struct Unknown A; //  0x40 Size(c)
+	struct Unknown B; //  0x54 Size(c)
 };
 
 // Class Engine.MaterialExpressionDistanceFieldGradient
 struct UMaterialExpressionDistanceFieldGradient : UMaterialExpression {
-	Unknown Position; //  0x40 Size(c)
+	struct Unknown Position; //  0x40 Size(c)
 };
 
 // Class Engine.MaterialExpressionDistanceToNearestSurface
 struct UMaterialExpressionDistanceToNearestSurface : UMaterialExpression {
-	Unknown Position; //  0x40 Size(c)
+	struct Unknown Position; //  0x40 Size(c)
 };
 
 // Class Engine.MaterialExpressionDivide
 struct UMaterialExpressionDivide : UMaterialExpression {
-	Unknown A; //  0x40 Size(c)
-	Unknown B; //  0x54 Size(c)
+	struct Unknown A; //  0x40 Size(c)
+	struct Unknown B; //  0x54 Size(c)
 	float ConstA; //  0x68 Size(4)
 	float ConstB; //  0x6c Size(4)
 };
 
 // Class Engine.MaterialExpressionDotProduct
 struct UMaterialExpressionDotProduct : UMaterialExpression {
-	Unknown A; //  0x40 Size(c)
-	Unknown B; //  0x54 Size(c)
+	struct Unknown A; //  0x40 Size(c)
+	struct Unknown B; //  0x54 Size(c)
 };
 
 // Class Engine.MaterialExpressionDynamicParameter
 struct UMaterialExpressionDynamicParameter : UMaterialExpression {
-	Unknown ParamNames; //  0x40 Size(10)
-	Unknown DefaultValue; //  0x50 Size(10)
+	struct TArray<Unknown> ParamNames; //  0x40 Size(10)
+	struct Unknown DefaultValue; //  0x50 Size(10)
 	uint32_t ParameterIndex; //  0x60 Size(4)
 };
 
 // Class Engine.MaterialExpressionFeatureLevelSwitch
 struct UMaterialExpressionFeatureLevelSwitch : UMaterialExpression {
-	Unknown Default; //  0x40 Size(c)
-	Unknown Inputs; //  0x54 Size(30)
+	struct Unknown Default; //  0x40 Size(c)
+	struct Unknown Inputs; //  0x54 Size(30)
 };
 
 // Class Engine.MaterialExpressionFloor
 struct UMaterialExpressionFloor : UMaterialExpression {
-	Unknown Input; //  0x40 Size(c)
+	struct Unknown Input; //  0x40 Size(c)
 };
 
 // Class Engine.MaterialExpressionFmod
 struct UMaterialExpressionFmod : UMaterialExpression {
-	Unknown A; //  0x40 Size(c)
-	Unknown B; //  0x54 Size(c)
+	struct Unknown A; //  0x40 Size(c)
+	struct Unknown B; //  0x54 Size(c)
 };
 
 // Class Engine.MaterialExpressionFontSample
 struct UMaterialExpressionFontSample : UMaterialExpression {
-	Unknown Font; //  0x40 Size(8)
+	struct Unknown Font; //  0x40 Size(8)
 	int32_t FontTexturePage; //  0x48 Size(4)
 };
 
 // Class Engine.MaterialExpressionFontSampleParameter
 struct UMaterialExpressionFontSampleParameter : UMaterialExpressionFontSample {
 	struct FName ParameterName; //  0x50 Size(8)
-	Unknown ExpressionGUID; //  0x58 Size(10)
+	struct Unknown ExpressionGUID; //  0x58 Size(10)
 	struct FName Group; //  0x68 Size(8)
 };
 
 // Class Engine.MaterialExpressionFrac
 struct UMaterialExpressionFrac : UMaterialExpression {
-	Unknown Input; //  0x40 Size(c)
+	struct Unknown Input; //  0x40 Size(c)
 };
 
 // Class Engine.MaterialExpressionFresnel
 struct UMaterialExpressionFresnel : UMaterialExpression {
-	Unknown ExponentIn; //  0x40 Size(c)
+	struct Unknown ExponentIn; //  0x40 Size(c)
 	float Exponent; //  0x54 Size(4)
-	Unknown BaseReflectFractionIn; //  0x58 Size(c)
+	struct Unknown BaseReflectFractionIn; //  0x58 Size(c)
 	float BaseReflectFraction; //  0x6c Size(4)
-	Unknown Normal; //  0x70 Size(c)
+	struct Unknown Normal; //  0x70 Size(c)
 };
 
 // Class Engine.MaterialExpressionFunctionInput
 struct UMaterialExpressionFunctionInput : UMaterialExpression {
-	Unknown Preview; //  0x40 Size(c)
+	struct Unknown Preview; //  0x40 Size(c)
 	struct FName InputName; //  0x54 Size(8)
 	struct FString Description; //  0x60 Size(10)
-	Unknown ID; //  0x70 Size(10)
-	Unknown InputType; //  0x80 Size(1)
-	Unknown PreviewValue; //  0x90 Size(10)
+	struct Unknown ID; //  0x70 Size(10)
+	char InputType; //  0x80 Size(1)
+	struct Unknown PreviewValue; //  0x90 Size(10)
 	char bUsePreviewValueAsDefault; //  0xa0 Size(1)
 	int32_t SortPriority; //  0xa4 Size(4)
 	char bCompilingFunctionPreview; //  0xa8 Size(1)
@@ -8986,47 +8986,47 @@ struct UMaterialExpressionFunctionOutput : UMaterialExpression {
 	struct FName OutputName; //  0x40 Size(8)
 	struct FString Description; //  0x48 Size(10)
 	int32_t SortPriority; //  0x58 Size(4)
-	Unknown A; //  0x5c Size(c)
+	struct Unknown A; //  0x5c Size(c)
 	char bLastPreviewed; //  0x70 Size(1)
-	Unknown ID; //  0x74 Size(10)
+	struct Unknown ID; //  0x74 Size(10)
 };
 
 // Class Engine.MaterialExpressionGetMaterialAttributes
 struct UMaterialExpressionGetMaterialAttributes : UMaterialExpression {
-	Unknown MaterialAttributes; //  0x40 Size(10)
-	Unknown AttributeGetTypes; //  0x58 Size(10)
+	struct Unknown MaterialAttributes; //  0x40 Size(10)
+	struct TArray<Unknown> AttributeGetTypes; //  0x58 Size(10)
 };
 
 // Class Engine.MaterialExpressionGIReplace
 struct UMaterialExpressionGIReplace : UMaterialExpression {
-	Unknown Default; //  0x40 Size(c)
-	Unknown StaticIndirect; //  0x54 Size(c)
-	Unknown DynamicIndirect; //  0x68 Size(c)
+	struct Unknown Default; //  0x40 Size(c)
+	struct Unknown StaticIndirect; //  0x54 Size(c)
+	struct Unknown DynamicIndirect; //  0x68 Size(c)
 };
 
 // Class Engine.MaterialExpressionIf
 struct UMaterialExpressionIf : UMaterialExpression {
-	Unknown A; //  0x40 Size(c)
-	Unknown B; //  0x54 Size(c)
-	Unknown AGreaterThanB; //  0x68 Size(c)
-	Unknown AEqualsB; //  0x7c Size(c)
-	Unknown ALessThanB; //  0x90 Size(c)
+	struct Unknown A; //  0x40 Size(c)
+	struct Unknown B; //  0x54 Size(c)
+	struct Unknown AGreaterThanB; //  0x68 Size(c)
+	struct Unknown AEqualsB; //  0x7c Size(c)
+	struct Unknown ALessThanB; //  0x90 Size(c)
 	float EqualsThreshold; //  0xa4 Size(4)
 	float ConstB; //  0xa8 Size(4)
 	float ConstAEqualsB; //  0xac Size(4)
 };
 
-// Class Engine.MaterialExpressionLightmassReplace
-struct UMaterialExpressionLightmassReplace : UMaterialExpression {
-	Unknown Realtime; //  0x40 Size(c)
-	Unknown Lightmass; //  0x54 Size(c)
+// Class Engine.MaterialExpressionLightmass
+struct UMaterialExpressionLightmass : UMaterialExpression {
+	struct Unknown Realtime; //  0x40 Size(c)
+	struct Unknown Lightmass; //  0x54 Size(c)
 };
 
 // Class Engine.MaterialExpressionLinearInterpolate
 struct UMaterialExpressionLinearInterpolate : UMaterialExpression {
-	Unknown A; //  0x40 Size(c)
-	Unknown B; //  0x54 Size(c)
-	Unknown ALPHA; //  0x68 Size(c)
+	struct Unknown A; //  0x40 Size(c)
+	struct Unknown B; //  0x54 Size(c)
+	struct Unknown ALPHA; //  0x68 Size(c)
 	float ConstA; //  0x7c Size(4)
 	float ConstB; //  0x80 Size(4)
 	float ConstAlpha; //  0x84 Size(4)
@@ -9034,100 +9034,100 @@ struct UMaterialExpressionLinearInterpolate : UMaterialExpression {
 
 // Class Engine.MaterialExpressionLogarithm10
 struct UMaterialExpressionLogarithm10 : UMaterialExpression {
-	Unknown X; //  0x40 Size(c)
+	struct Unknown X; //  0x40 Size(c)
 };
 
 // Class Engine.MaterialExpressionLogarithm2
 struct UMaterialExpressionLogarithm2 : UMaterialExpression {
-	Unknown X; //  0x40 Size(c)
+	struct Unknown X; //  0x40 Size(c)
 };
 
 // Class Engine.MaterialExpressionMakeMaterialAttributes
 struct UMaterialExpressionMakeMaterialAttributes : UMaterialExpression {
-	Unknown BaseColor; //  0x40 Size(c)
-	Unknown Metallic; //  0x54 Size(c)
-	Unknown Specular; //  0x68 Size(c)
-	Unknown Roughness; //  0x7c Size(c)
-	Unknown Anisotropy; //  0x90 Size(c)
-	Unknown EmissiveColor; //  0xa4 Size(c)
-	Unknown Opacity; //  0xb8 Size(c)
-	Unknown OpacityMask; //  0xcc Size(c)
-	Unknown Normal; //  0xe0 Size(c)
-	Unknown Tangent; //  0xf4 Size(c)
-	Unknown WorldPositionOffset; //  0x108 Size(c)
-	Unknown WorldDisplacement; //  0x11c Size(c)
-	Unknown TessellationMultiplier; //  0x130 Size(c)
-	Unknown SubsurfaceColor; //  0x144 Size(c)
-	Unknown ClearCoat; //  0x158 Size(c)
-	Unknown ClearCoatRoughness; //  0x16c Size(c)
-	Unknown AmbientOcclusion; //  0x180 Size(c)
-	Unknown Refraction; //  0x194 Size(c)
-	Unknown CustomizedUVs; //  0x1a8 Size(60)
-	Unknown PixelDepthOffset; //  0x248 Size(c)
-	Unknown ShadingModel; //  0x25c Size(c)
+	struct Unknown BaseColor; //  0x40 Size(c)
+	struct Unknown Metallic; //  0x54 Size(c)
+	struct Unknown Specular; //  0x68 Size(c)
+	struct Unknown Roughness; //  0x7c Size(c)
+	struct Unknown Anisotropy; //  0x90 Size(c)
+	struct Unknown EmissiveColor; //  0xa4 Size(c)
+	struct Unknown Opacity; //  0xb8 Size(c)
+	struct Unknown OpacityMask; //  0xcc Size(c)
+	struct Unknown Normal; //  0xe0 Size(c)
+	struct Unknown Tangent; //  0xf4 Size(c)
+	struct Unknown WorldPositionOffset; //  0x108 Size(c)
+	struct Unknown WorldDisplacement; //  0x11c Size(c)
+	struct Unknown TessellationMultiplier; //  0x130 Size(c)
+	struct Unknown SubsurfaceColor; //  0x144 Size(c)
+	struct Unknown ClearCoat; //  0x158 Size(c)
+	struct Unknown ClearCoatRoughness; //  0x16c Size(c)
+	struct Unknown AmbientOcclusion; //  0x180 Size(c)
+	struct Unknown Refraction; //  0x194 Size(c)
+	struct Unknown CustomizedUVs; //  0x1a8 Size(60)
+	struct Unknown PixelDepthOffset; //  0x248 Size(c)
+	struct Unknown ShadingModel; //  0x25c Size(c)
 };
 
-// Class Engine.MaterialExpressionMapARPassthroughCameraUV
-struct UMaterialExpressionMapARPassthroughCameraUV : UMaterialExpression {
-	Unknown Coordinates; //  0x40 Size(c)
+// Class Engine.MaterialExpressionMapARPass
+struct UMaterialExpressionMapARPasssjri : UMaterialExpression {
+	struct Unknown Coordinates; //  0x40 Size(c)
 };
 
-// Class Engine.MaterialExpressionMaterialAttributeLayers
-struct UMaterialExpressionMaterialAttributeLayers : UMaterialExpression {
+// Class Engine.MaterialExpressionMaterialAttri
+struct UMaterialExpressionMaterialAttri : UMaterialExpression {
 	struct FName ParameterName; //  0x40 Size(8)
-	Unknown ExpressionGUID; //  0x48 Size(10)
-	Unknown Input; //  0x58 Size(10)
-	Unknown DefaultLayers; //  0x70 Size(40)
-	Unknown LayerCallers; //  0xb0 Size(10)
+	struct Unknown ExpressionGUID; //  0x48 Size(10)
+	struct Unknown Input; //  0x58 Size(10)
+	struct Unknown DefaultLayers; //  0x70 Size(40)
+	struct TArray<Unknown> LayerCallers; //  0xb0 Size(10)
 	int32_t NumActiveLayerCallers; //  0xc0 Size(4)
-	Unknown BlendCallers; //  0xc8 Size(10)
+	struct TArray<Unknown> BlendCallers; //  0xc8 Size(10)
 	int32_t NumActiveBlendCallers; //  0xd8 Size(4)
 	char bIsLayerGraphBuilt; //  0xdc Size(1)
 };
 
 // Class Engine.MaterialExpressionMaterialFunctionCall
 struct UMaterialExpressionMaterialFunctionCall : UMaterialExpression {
-	Unknown MaterialFunction; //  0x40 Size(8)
-	Unknown FunctionParameterInfo; //  0x48 Size(10)
+	struct Unknown MaterialFunction; //  0x40 Size(8)
+	struct Unknown FunctionParameterInfo; //  0x48 Size(10)
 };
 
 // Class Engine.MaterialExpressionMaterialProxyReplace
 struct UMaterialExpressionMaterialProxyReplace : UMaterialExpression {
-	Unknown Realtime; //  0x40 Size(c)
-	Unknown MaterialProxy; //  0x54 Size(c)
+	struct Unknown Realtime; //  0x40 Size(c)
+	struct Unknown MaterialProxy; //  0x54 Size(c)
 };
 
 // Class Engine.MaterialExpressionMax
 struct UMaterialExpressionMax : UMaterialExpression {
-	Unknown A; //  0x40 Size(c)
-	Unknown B; //  0x54 Size(c)
+	struct Unknown A; //  0x40 Size(c)
+	struct Unknown B; //  0x54 Size(c)
 	float ConstA; //  0x68 Size(4)
 	float ConstB; //  0x6c Size(4)
 };
 
 // Class Engine.MaterialExpressionMin
 struct UMaterialExpressionMin : UMaterialExpression {
-	Unknown A; //  0x40 Size(c)
-	Unknown B; //  0x54 Size(c)
+	struct Unknown A; //  0x40 Size(c)
+	struct Unknown B; //  0x54 Size(c)
 	float ConstA; //  0x68 Size(4)
 	float ConstB; //  0x6c Size(4)
 };
 
 // Class Engine.MaterialExpressionMultiply
 struct UMaterialExpressionMultiply : UMaterialExpression {
-	Unknown A; //  0x40 Size(c)
-	Unknown B; //  0x54 Size(c)
+	struct Unknown A; //  0x40 Size(c)
+	struct Unknown B; //  0x54 Size(c)
 	float ConstA; //  0x68 Size(4)
 	float ConstB; //  0x6c Size(4)
 };
 
 // Class Engine.MaterialExpressionNoise
 struct UMaterialExpressionNoise : UMaterialExpression {
-	Unknown Position; //  0x40 Size(c)
-	Unknown FilterWidth; //  0x54 Size(c)
+	struct Unknown Position; //  0x40 Size(c)
+	struct Unknown FilterWidth; //  0x54 Size(c)
 	float Scale; //  0x68 Size(4)
 	int32_t Quality; //  0x6c Size(4)
-	Unknown NoiseFunction; //  0x70 Size(1)
+	char NoiseFunction; //  0x70 Size(1)
 	char bTurbulence; //  0x74 Size(1)
 	int32_t Levels; //  0x78 Size(4)
 	float OutputMin; //  0x7c Size(4)
@@ -9139,19 +9139,19 @@ struct UMaterialExpressionNoise : UMaterialExpression {
 
 // Class Engine.MaterialExpressionNormalize
 struct UMaterialExpressionNormalize : UMaterialExpression {
-	Unknown VectorInput; //  0x40 Size(c)
+	struct Unknown VectorInput; //  0x40 Size(c)
 };
 
 // Class Engine.MaterialExpressionOneMinus
 struct UMaterialExpressionOneMinus : UMaterialExpression {
-	Unknown Input; //  0x40 Size(c)
+	struct Unknown Input; //  0x40 Size(c)
 };
 
 // Class Engine.MaterialExpressionPanner
 struct UMaterialExpressionPanner : UMaterialExpression {
-	Unknown Coordinate; //  0x40 Size(c)
-	Unknown Time; //  0x54 Size(c)
-	Unknown Speed; //  0x68 Size(c)
+	struct Unknown Coordinate; //  0x40 Size(c)
+	struct Unknown Time; //  0x54 Size(c)
+	struct Unknown Speed; //  0x68 Size(c)
 	float SpeedX; //  0x7c Size(4)
 	float SpeedY; //  0x80 Size(4)
 	uint32_t ConstCoordinate; //  0x84 Size(4)
@@ -9165,65 +9165,65 @@ struct UMaterialExpressionParticleSubUV : UMaterialExpressionTextureSample {
 
 // Class Engine.MaterialExpressionPerInstanceCustomData
 struct UMaterialExpressionPerInstanceCustomData : UMaterialExpression {
-	Unknown DefaultValue; //  0x40 Size(c)
+	struct Unknown DefaultValue; //  0x40 Size(c)
 	float ConstDefaultValue; //  0x54 Size(4)
 	uint32_t DataIndex; //  0x58 Size(4)
 };
 
 // Class Engine.MaterialExpressionPower
 struct UMaterialExpressionPower : UMaterialExpression {
-	Unknown Base; //  0x40 Size(c)
-	Unknown Exponent; //  0x54 Size(c)
+	struct Unknown Base; //  0x40 Size(c)
+	struct Unknown Exponent; //  0x54 Size(c)
 	float ConstExponent; //  0x68 Size(4)
 };
 
 // Class Engine.MaterialExpressionPreviousFrameSwitch
 struct UMaterialExpressionPreviousFrameSwitch : UMaterialExpression {
-	Unknown CurrentFrame; //  0x40 Size(c)
-	Unknown PreviousFrame; //  0x54 Size(c)
+	struct Unknown CurrentFrame; //  0x40 Size(c)
+	struct Unknown PreviousFrame; //  0x54 Size(c)
 };
 
 // Class Engine.MaterialExpressionQualitySwitch
 struct UMaterialExpressionQualitySwitch : UMaterialExpression {
-	Unknown Default; //  0x40 Size(c)
-	Unknown Inputs; //  0x54 Size(24)
+	struct Unknown Default; //  0x40 Size(c)
+	struct Unknown Inputs; //  0x54 Size(24)
 };
 
 // Class Engine.MaterialExpressionRayTracingQualitySwitch
 struct UMaterialExpressionRayTracingQualitySwitch : UMaterialExpression {
-	Unknown Normal; //  0x40 Size(c)
-	Unknown RayTraced; //  0x54 Size(c)
+	struct Unknown Normal; //  0x40 Size(c)
+	struct Unknown RayTraced; //  0x54 Size(c)
 };
 
 // Class Engine.MaterialExpressionRebaseToZeroOrigin
 struct UMaterialExpressionRebaseToZeroOrigin : UMaterialExpression {
-	Unknown InputVector; //  0x40 Size(c)
+	struct Unknown InputVector; //  0x40 Size(c)
 };
 
-// Class Engine.MaterialExpressionReflectio
-struct UMaterialExpressionReflectiot : UMaterialExpression {
-	Unknown CustomWorldNormal; //  0x40 Size(c)
+// Class Engine.MaterialExpressionReflectionVectorWS
+struct UMaterialExpressionReflectionVectorWS : UMaterialExpression {
+	struct Unknown CustomWorldNormal; //  0x40 Size(c)
 	char bNormalizeCustomWorldNormal; //  0x54 Size(1)
 };
 
 // Class Engine.MaterialExpressionReroute
 struct UMaterialExpressionReroute : UMaterialExpression {
-	Unknown Input; //  0x40 Size(c)
+	struct Unknown Input; //  0x40 Size(c)
 };
 
-// Class Engine.MaterialExpressionRotateAbo
-struct UMaterialExpressionRotateAbot : UMaterialExpression {
-	Unknown NormalizedRotationAxis; //  0x40 Size(c)
-	Unknown RotationAngle; //  0x54 Size(c)
-	Unknown PivotPoint; //  0x68 Size(c)
-	Unknown Position; //  0x7c Size(c)
+// Class Engine.MaterialExpressionRotateAboutAxis
+struct UMaterialExpressionRotateAboutAxis : UMaterialExpression {
+	struct Unknown NormalizedRotationAxis; //  0x40 Size(c)
+	struct Unknown RotationAngle; //  0x54 Size(c)
+	struct Unknown PivotPoint; //  0x68 Size(c)
+	struct Unknown Position; //  0x7c Size(c)
 	float Period; //  0x90 Size(4)
 };
 
 // Class Engine.MaterialExpressionRotator
 struct UMaterialExpressionRotator : UMaterialExpression {
-	Unknown Coordinate; //  0x40 Size(c)
-	Unknown Time; //  0x54 Size(c)
+	struct Unknown Coordinate; //  0x40 Size(c)
+	struct Unknown Time; //  0x54 Size(c)
 	float CenterX; //  0x68 Size(4)
 	float CenterY; //  0x6c Size(4)
 	float Speed; //  0x70 Size(4)
@@ -9232,117 +9232,117 @@ struct UMaterialExpressionRotator : UMaterialExpression {
 
 // Class Engine.MaterialExpressionRound
 struct UMaterialExpressionRound : UMaterialExpression {
-	Unknown Input; //  0x40 Size(c)
+	struct Unknown Input; //  0x40 Size(c)
 };
 
 // Class Engine.MaterialExpressionRuntimeVirtualTextureOutput
 struct UMaterialExpressionRuntimeVirtualTextureOutput : UMaterialExpressionCustomOutput {
-	Unknown BaseColor; //  0x40 Size(c)
-	Unknown Specular; //  0x54 Size(c)
-	Unknown Roughness; //  0x68 Size(c)
-	Unknown Normal; //  0x7c Size(c)
-	Unknown WorldHeight; //  0x90 Size(c)
-	Unknown Opacity; //  0xa4 Size(c)
-	Unknown Mask; //  0xb8 Size(c)
+	struct Unknown BaseColor; //  0x40 Size(c)
+	struct Unknown Specular; //  0x54 Size(c)
+	struct Unknown Roughness; //  0x68 Size(c)
+	struct Unknown Normal; //  0x7c Size(c)
+	struct Unknown WorldHeight; //  0x90 Size(c)
+	struct Unknown Opacity; //  0xa4 Size(c)
+	struct Unknown Mask; //  0xb8 Size(c)
 };
 
 // Class Engine.MaterialExpressionRuntimeVirtualTextureReplace
 struct UMaterialExpressionRuntimeVirtualTextureReplace : UMaterialExpression {
-	Unknown Default; //  0x40 Size(c)
-	Unknown VirtualTextureOutput; //  0x54 Size(c)
+	struct Unknown Default; //  0x40 Size(c)
+	struct Unknown VirtualTextureOutput; //  0x54 Size(c)
 };
 
 // Class Engine.MaterialExpressionRuntimeVirtualTextureSample
 struct UMaterialExpressionRuntimeVirtualTextureSample : UMaterialExpression {
-	Unknown Coordinates; //  0x40 Size(c)
-	Unknown WorldPosition; //  0x54 Size(c)
-	Unknown MipValue; //  0x68 Size(c)
-	Unknown VirtualTexture; //  0x80 Size(8)
-	Unknown MaterialType; //  0x88 Size(1)
+	struct Unknown Coordinates; //  0x40 Size(c)
+	struct Unknown WorldPosition; //  0x54 Size(c)
+	struct Unknown MipValue; //  0x68 Size(c)
+	struct Unknown VirtualTexture; //  0x80 Size(8)
+	enum class Unknow MaterialType; //  0x88 Size(1)
 	char bSinglePhysicalSpace; //  0x89 Size(1)
-	Unknown MipValueMode; //  0x8a Size(1)
+	char MipValueMode; //  0x8a Size(1)
 };
 
 // Class Engine.MaterialExpressionRuntimeVirtualTextureSampleParameter
 struct UMaterialExpressionRuntimeVirtualTextureSampleParameter : UMaterialExpressionRuntimeVirtualTextureSample {
 	struct FName ParameterName; //  0x90 Size(8)
-	Unknown ExpressionGUID; //  0x98 Size(10)
+	struct Unknown ExpressionGUID; //  0x98 Size(10)
 	struct FName Group; //  0xa8 Size(8)
 };
 
 // Class Engine.MaterialExpressionSaturate
 struct UMaterialExpressionSaturate : UMaterialExpression {
-	Unknown Input; //  0x40 Size(c)
+	struct Unknown Input; //  0x40 Size(c)
 };
 
-// Class Engine.MaterialExpressionSceneColo
-struct UMaterialExpressionSceneColot : UMaterialExpression {
-	Unknown InputMode; //  0x40 Size(1)
-	Unknown Input; //  0x44 Size(c)
-	Unknown OffsetFraction; //  0x58 Size(c)
-	Unknown ConstInput; //  0x6c Size(8)
+// Class Engine.MaterialExpressionSceneColor
+struct UMaterialExpressionSceneColor : UMaterialExpression {
+	char InputMode; //  0x40 Size(1)
+	struct Unknown Input; //  0x44 Size(c)
+	struct Unknown OffsetFraction; //  0x58 Size(c)
+	struct Unknown ConstInput; //  0x6c Size(8)
 };
 
 // Class Engine.MaterialExpressionSceneDepth
 struct UMaterialExpressionSceneDepth : UMaterialExpression {
-	Unknown InputMode; //  0x40 Size(1)
-	Unknown Input; //  0x44 Size(c)
-	Unknown Coordinates; //  0x58 Size(c)
-	Unknown ConstInput; //  0x6c Size(8)
+	char InputMode; //  0x40 Size(1)
+	struct Unknown Input; //  0x44 Size(c)
+	struct Unknown Coordinates; //  0x58 Size(c)
+	struct Unknown ConstInput; //  0x6c Size(8)
 };
 
 // Class Engine.MaterialExpressionSceneTexture
 struct UMaterialExpressionSceneTexture : UMaterialExpression {
-	Unknown Coordinates; //  0x40 Size(c)
-	Unknown SceneTextureId; //  0x54 Size(1)
+	struct Unknown Coordinates; //  0x40 Size(c)
+	char SceneTextureId; //  0x54 Size(1)
 	char bFiltered; //  0x55 Size(1)
 };
 
 // Class Engine.MaterialExpressionSetMaterialAttributes
 struct UMaterialExpressionSetMaterialAttributes : UMaterialExpression {
-	Unknown Inputs; //  0x40 Size(10)
-	Unknown AttributeSetTypes; //  0x50 Size(10)
+	struct TArray<Unknown> Inputs; //  0x40 Size(10)
+	struct TArray<Unknown> AttributeSetTypes; //  0x50 Size(10)
 };
 
 // Class Engine.MaterialExpressionShaderStageSwitch
 struct UMaterialExpressionShaderStageSwitch : UMaterialExpression {
-	Unknown PixelShader; //  0x40 Size(c)
-	Unknown VertexShader; //  0x54 Size(c)
+	struct Unknown PixelShader; //  0x40 Size(c)
+	struct Unknown VertexShader; //  0x54 Size(c)
 };
 
-// Class Engine.MaterialExpressionShadingMo
-struct UMaterialExpressionShadingMot : UMaterialExpression {
-	Unknown ShadingModel; //  0x40 Size(1)
+// Class Engine.MaterialExpressionShadingModel
+struct UMaterialExpressionShadingModel : UMaterialExpression {
+	char ShadingModel; //  0x40 Size(1)
 };
 
 // Class Engine.MaterialExpressionShadingPathSwitch
 struct UMaterialExpressionShadingPathSwitch : UMaterialExpression {
-	Unknown Default; //  0x40 Size(c)
-	Unknown Inputs; //  0x54 Size(24)
+	struct Unknown Default; //  0x40 Size(c)
+	struct Unknown Inputs; //  0x54 Size(24)
 };
 
 // Class Engine.MaterialExpressionShadowReplace
 struct UMaterialExpressionShadowReplace : UMaterialExpression {
-	Unknown Default; //  0x40 Size(c)
-	Unknown Shadow; //  0x54 Size(c)
+	struct Unknown Default; //  0x40 Size(c)
+	struct Unknown Shadow; //  0x54 Size(c)
 };
 
 // Class Engine.MaterialExpressionSign
 struct UMaterialExpressionSign : UMaterialExpression {
-	Unknown Input; //  0x40 Size(c)
+	struct Unknown Input; //  0x40 Size(c)
 };
 
 // Class Engine.MaterialExpressionSine
 struct UMaterialExpressionSine : UMaterialExpression {
-	Unknown Input; //  0x40 Size(c)
+	struct Unknown Input; //  0x40 Size(c)
 	float Period; //  0x54 Size(4)
 };
 
 // Class Engine.MaterialExpressionSingleLayerWaterMaterialOutput
 struct UMaterialExpressionSingleLayerWaterMaterialOutput : UMaterialExpressionCustomOutput {
-	Unknown ScatteringCoefficients; //  0x40 Size(c)
-	Unknown AbsorptionCoefficients; //  0x54 Size(c)
-	Unknown PhaseG; //  0x68 Size(c)
+	struct Unknown ScatteringCoefficients; //  0x40 Size(c)
+	struct Unknown AbsorptionCoefficients; //  0x54 Size(c)
+	struct Unknown PhaseG; //  0x68 Size(c)
 };
 
 // Class Engine.MaterialExpressionSkyAtmosphereLightDirection
@@ -9353,7 +9353,7 @@ struct UMaterialExpressionSkyAtmosphereLightDirection : UMaterialExpression {
 // Class Engine.MaterialExpressionSkyAtmosphereLightIlluminance
 struct UMaterialExpressionSkyAtmosphereLightIlluminance : UMaterialExpression {
 	int32_t LightIndex; //  0x40 Size(4)
-	Unknown WorldPosition; //  0x44 Size(c)
+	struct Unknown WorldPosition; //  0x44 Size(c)
 };
 
 // Class Engine.MaterialExpressionSkyAtmosphereLightDiskLuminance
@@ -9363,65 +9363,65 @@ struct UMaterialExpressionSkyAtmosphereLightDiskLuminance : UMaterialExpression 
 
 // Class Engine.MaterialExpressionSkyAtmosphereAerialPerspective
 struct UMaterialExpressionSkyAtmosphereAerialPerspective : UMaterialExpression {
-	Unknown WorldPosition; //  0x40 Size(c)
+	struct Unknown WorldPosition; //  0x40 Size(c)
 };
 
 // Class Engine.MaterialExpressionSobol
 struct UMaterialExpressionSobol : UMaterialExpression {
-	Unknown cell; //  0x40 Size(c)
-	Unknown Index; //  0x54 Size(c)
-	Unknown Seed; //  0x68 Size(c)
+	struct Unknown cell; //  0x40 Size(c)
+	struct Unknown Index; //  0x54 Size(c)
+	struct Unknown Seed; //  0x68 Size(c)
 	uint32_t ConstIndex; //  0x7c Size(4)
-	Unknown ConstSeed; //  0x80 Size(8)
+	struct Unknown ConstSeed; //  0x80 Size(8)
 };
 
 // Class Engine.MaterialExpressionSpeedTree
 struct UMaterialExpressionSpeedTree : UMaterialExpression {
-	Unknown GeometryInput; //  0x40 Size(c)
-	Unknown WindInput; //  0x54 Size(c)
-	Unknown LODInput; //  0x68 Size(c)
-	Unknown ExtraBendWS; //  0x7c Size(c)
-	Unknown GeometryType; //  0x90 Size(1)
-	Unknown WindType; //  0x91 Size(1)
-	Unknown LODType; //  0x92 Size(1)
+	struct Unknown GeometryInput; //  0x40 Size(c)
+	struct Unknown WindInput; //  0x54 Size(c)
+	struct Unknown LODInput; //  0x68 Size(c)
+	struct Unknown ExtraBendWS; //  0x7c Size(c)
+	char GeometryType; //  0x90 Size(1)
+	char WindType; //  0x91 Size(1)
+	char LODType; //  0x92 Size(1)
 	float BillboardThreshold; //  0x94 Size(4)
 	char bAccurateWindVelocities; //  0x98 Size(1)
 };
 
-// Class Engine.MaterialExpressionSphereMask
-struct UMaterialExpressionSphereMask : UMaterialExpression {
-	Unknown A; //  0x40 Size(c)
-	Unknown B; //  0x54 Size(c)
-	Unknown Radius; //  0x68 Size(c)
-	Unknown Hardness; //  0x7c Size(c)
+// Class Engine.MaterialExpressionSphereMas
+struct UMaterialExpressionSphereMas : UMaterialExpression {
+	struct Unknown A; //  0x40 Size(c)
+	struct Unknown B; //  0x54 Size(c)
+	struct Unknown Radius; //  0x68 Size(c)
+	struct Unknown Hardness; //  0x7c Size(c)
 	float AttenuationRadius; //  0x90 Size(4)
 	float HardnessPercent; //  0x94 Size(4)
 };
 
 // Class Engine.MaterialExpressionSphericalParticleOpacity
 struct UMaterialExpressionSphericalParticleOpacity : UMaterialExpression {
-	Unknown Density; //  0x40 Size(c)
+	struct Unknown Density; //  0x40 Size(c)
 	float ConstantDensity; //  0x54 Size(4)
 };
 
-// Class Engine.MaterialExpressionSquareRoo
+// Class Engine.MaterialExpressionSquareRoot
 struct UMaterialExpressionSquareRoot : UMaterialExpression {
-	Unknown Input; //  0x40 Size(c)
+	struct Unknown Input; //  0x40 Size(c)
 };
 
-// Class Engine.MaterialExpressionStaticBoo
-struct UMaterialExpressionStaticBoot : UMaterialExpression {
+// Class Engine.MaterialExpressionStaticBool
+struct UMaterialExpressionStaticBool : UMaterialExpression {
 	char Value; //  0x40 Size(1)
 };
 
-// Class Engine.MaterialExpressionStaticBoo
-struct UMaterialExpressionStaticBoot : UMaterialExpressionParameter {
+// Class Engine.MaterialExpressionStaticBoolParameter
+struct UMaterialExpressionStaticBoolParameter : UMaterialExpressionParameter {
 	char DefaultValue; //  0x58 Size(1)
 };
 
 // Class Engine.MaterialExpressionStaticComponentMaskParameter
 struct UMaterialExpressionStaticComponentMaskParameter : UMaterialExpressionParameter {
-	Unknown Input; //  0x58 Size(c)
+	struct Unknown Input; //  0x58 Size(c)
 	char DefaultR; //  0x6c Size(1)
 	char DefaultG; //  0x6c Size(1)
 	char DefaultB; //  0x6c Size(1)
@@ -9431,46 +9431,46 @@ struct UMaterialExpressionStaticComponentMaskParameter : UMaterialExpressionPara
 // Class Engine.MaterialExpressionStaticSwitch
 struct UMaterialExpressionStaticSwitch : UMaterialExpression {
 	char DefaultValue; //  0x40 Size(1)
-	Unknown A; //  0x44 Size(c)
-	Unknown B; //  0x58 Size(c)
-	Unknown Value; //  0x6c Size(c)
+	struct Unknown A; //  0x44 Size(c)
+	struct Unknown B; //  0x58 Size(c)
+	struct Unknown Value; //  0x6c Size(c)
 };
 
 // Class Engine.MaterialExpressionStaticSwitchParameter
-struct UMaterialExpressionStaticSwitchParameter : UMaterialExpressionStaticBoo {
-	Unknown A; //  0x60 Size(c)
-	Unknown B; //  0x74 Size(c)
+struct UMaterialExpressionStaticSwitchParameter : UMaterialExpressionStaticBoolParameter {
+	struct Unknown A; //  0x60 Size(c)
+	struct Unknown B; //  0x74 Size(c)
 };
 
 // Class Engine.MaterialExpressionSubtract
 struct UMaterialExpressionSubtract : UMaterialExpression {
-	Unknown A; //  0x40 Size(c)
-	Unknown B; //  0x54 Size(c)
+	struct Unknown A; //  0x40 Size(c)
+	struct Unknown B; //  0x54 Size(c)
 	float ConstA; //  0x68 Size(4)
 	float ConstB; //  0x6c Size(4)
 };
 
 // Class Engine.MaterialExpressionTangent
 struct UMaterialExpressionTangent : UMaterialExpression {
-	Unknown Input; //  0x40 Size(c)
+	struct Unknown Input; //  0x40 Size(c)
 	float Period; //  0x54 Size(4)
 };
 
 // Class Engine.MaterialExpressionTangentOutput
 struct UMaterialExpressionTangentOutput : UMaterialExpressionCustomOutput {
-	Unknown Input; //  0x40 Size(c)
+	struct Unknown Input; //  0x40 Size(c)
 };
 
 // Class Engine.MaterialExpressionTemporalSobol
 struct UMaterialExpressionTemporalSobol : UMaterialExpression {
-	Unknown Index; //  0x40 Size(c)
-	Unknown Seed; //  0x54 Size(c)
+	struct Unknown Index; //  0x40 Size(c)
+	struct Unknown Seed; //  0x54 Size(c)
 	uint32_t ConstIndex; //  0x68 Size(4)
-	Unknown ConstSeed; //  0x6c Size(8)
+	struct Unknown ConstSeed; //  0x6c Size(8)
 };
 
-// Class Engine.MaterialExpressionTextureCo
-struct UMaterialExpressionTextureCot : UMaterialExpression {
+// Class Engine.MaterialExpressionTextureCoordi
+struct UMaterialExpressionTextureCoordi : UMaterialExpression {
 	int32_t CoordinateIndex; //  0x40 Size(4)
 	float UTiling; //  0x44 Size(4)
 	float VTiling; //  0x48 Size(4)
@@ -9480,8 +9480,8 @@ struct UMaterialExpressionTextureCot : UMaterialExpression {
 
 // Class Engine.MaterialExpressionTextureProperty
 struct UMaterialExpressionTextureProperty : UMaterialExpression {
-	Unknown TextureObject; //  0x40 Size(c)
-	Unknown Property; //  0x54 Size(1)
+	struct Unknown TextureObject; //  0x40 Size(c)
+	char Property; //  0x54 Size(1)
 };
 
 // Class Engine.MaterialExpressionTextureSampleParameterSubUV
@@ -9489,9 +9489,9 @@ struct UMaterialExpressionTextureSampleParameterSubUV : UMaterialExpressionTextu
 	char bBlend; //  0xf0 Size(1)
 };
 
-// Class Engine.MaterialExpressionThinTranslucentMaterialOutput
-struct UMaterialExpressionThinTranslucentMaterialOutput : UMaterialExpressionCustomOutput {
-	Unknown TransmittanceColor; //  0x40 Size(c)
+// Class Engine.MaterialExpressionThinTransobol
+struct UMaterialExpressionThinTrans : UMaterialExpressionCustomOutput {
+	struct Unknown TransmittanceColor; //  0x40 Size(c)
 };
 
 // Class Engine.MaterialExpressionTime
@@ -9503,27 +9503,27 @@ struct UMaterialExpressionTime : UMaterialExpression {
 
 // Class Engine.MaterialExpressionTransform
 struct UMaterialExpressionTransform : UMaterialExpression {
-	Unknown Input; //  0x40 Size(c)
-	Unknown TransformSourceType; //  0x54 Size(1)
-	Unknown TransformType; //  0x55 Size(1)
+	struct Unknown Input; //  0x40 Size(c)
+	char TransformSourceType; //  0x54 Size(1)
+	char TransformType; //  0x55 Size(1)
 };
 
-// Class Engine.MaterialExpressionTransformPosition
-struct UMaterialExpressionTransformPosition : UMaterialExpression {
-	Unknown Input; //  0x40 Size(c)
-	Unknown TransformSourceType; //  0x54 Size(1)
-	Unknown TransformType; //  0x55 Size(1)
+// Class Engine.MaterialExpressionTransformPosi
+struct UMaterialExpressionTransformPosi : UMaterialExpression {
+	struct Unknown Input; //  0x40 Size(c)
+	char TransformSourceType; //  0x54 Size(1)
+	char TransformType; //  0x55 Size(1)
 };
 
 // Class Engine.MaterialExpressionTruncate
 struct UMaterialExpressionTruncate : UMaterialExpression {
-	Unknown Input; //  0x40 Size(c)
+	struct Unknown Input; //  0x40 Size(c)
 };
 
 // Class Engine.MaterialExpressionVectorNoise
 struct UMaterialExpressionVectorNoise : UMaterialExpression {
-	Unknown Position; //  0x40 Size(c)
-	Unknown NoiseFunction; //  0x54 Size(1)
+	struct Unknown Position; //  0x40 Size(c)
+	char NoiseFunction; //  0x54 Size(1)
 	int32_t Quality; //  0x58 Size(4)
 	char bTiling; //  0x5c Size(1)
 	uint32_t TileSize; //  0x60 Size(4)
@@ -9531,29 +9531,29 @@ struct UMaterialExpressionVectorNoise : UMaterialExpression {
 
 // Class Engine.MaterialExpressionVertexInterpolator
 struct UMaterialExpressionVertexInterpolator : UMaterialExpressionCustomOutput {
-	Unknown Input; //  0x40 Size(c)
+	struct Unknown Input; //  0x40 Size(c)
 };
 
 // Class Engine.MaterialExpressionViewProperty
 struct UMaterialExpressionViewProperty : UMaterialExpression {
-	Unknown Property; //  0x40 Size(1)
+	char Property; //  0x40 Size(1)
 };
 
 // Class Engine.MaterialExpressionVirtualTextureFeatureSwitch
 struct UMaterialExpressionVirtualTextureFeatureSwitch : UMaterialExpression {
-	Unknown No; //  0x40 Size(c)
-	Unknown Yes; //  0x54 Size(c)
+	struct Unknown No; //  0x40 Size(c)
+	struct Unknown Yes; //  0x54 Size(c)
 };
 
 // Class Engine.MaterialExpressionWorldPosition
 struct UMaterialExpressionWorldPosition : UMaterialExpression {
-	Unknown WorldPositionShaderOffset; //  0x40 Size(1)
+	char WorldPositionShaderOffset; //  0x40 Size(1)
 };
 
 // Class Engine.MaterialFunctionInterface
 struct UMaterialFunctionInterface : Object {
-	Unknown StateID; //  0x28 Size(10)
-	Unknown MaterialFunctionUsage; //  0x38 Size(1)
+	struct Unknown StateID; //  0x28 Size(10)
+	enum class Unknow MaterialFunctionUsage; //  0x38 Size(1)
 };
 
 // Class Engine.MaterialFunction
@@ -9566,37 +9566,37 @@ struct UMaterialFunction : UMaterialFunctionInterface {
 
 // Class Engine.MaterialFunctionInstance
 struct UMaterialFunctionInstance : UMaterialFunctionInterface {
-	Unknown Parent; //  0x40 Size(8)
-	Unknown Base; //  0x48 Size(8)
-	Unknown ScalarParameterValues; //  0x50 Size(10)
-	Unknown VectorParameterValues; //  0x60 Size(10)
-	Unknown TextureParameterValues; //  0x70 Size(10)
-	Unknown FontParameterValues; //  0x80 Size(10)
-	Unknown StaticSwitchParameterValues; //  0x90 Size(10)
-	Unknown StaticComponentMaskParameterValues; //  0xa0 Size(10)
-	Unknown RuntimeVirtualTextureParameterValues; //  0xb0 Size(10)
+	struct Unknown Parent; //  0x40 Size(8)
+	struct Unknown Base; //  0x48 Size(8)
+	struct TArray<Unknown> ScalarParameterValues; //  0x50 Size(10)
+	struct TArray<Unknown> VectorParameterValues; //  0x60 Size(10)
+	struct TArray<Unknown> TextureParameterValues; //  0x70 Size(10)
+	struct TArray<Unknown> FontParameterValues; //  0x80 Size(10)
+	struct TArray<Unknown> StaticSwitchParameterValues; //  0x90 Size(10)
+	struct TArray<Unknown> StaticComponentMaskParameterValues; //  0xa0 Size(10)
+	struct TArray<Unknown> RuntimeVirtualTextureParameterValues; //  0xb0 Size(10)
 };
 
 // Class Engine.MaterialInstanceActor
 struct AMaterialInstanceActor : UActor {
-	Unknown TargetActors; //  0x310 Size(10)
+	struct TArray<Unknown> TargetActors; //  0x310 Size(10)
 };
 
 // Class Engine.MaterialParameterCollection
 struct UMaterialParameterCollection : Object {
-	Unknown StateID; //  0x28 Size(10)
-	Unknown ScalarParameters; //  0x38 Size(10)
-	Unknown VectorParameters; //  0x48 Size(10)
+	struct Unknown StateID; //  0x28 Size(10)
+	struct TArray<Unknown> ScalarParameters; //  0x38 Size(10)
+	struct TArray<Unknown> VectorParameters; //  0x48 Size(10)
 };
 
 // Class Engine.MaterialParameterCollectionInstance
 struct UMaterialParameterCollectionInstance : Object {
-	Unknown Collection; //  0x30 Size(8)
+	struct Unknown Collection; //  0x30 Size(8)
 };
 
 // Class Engine.MatineeActor
 struct AMatineeActor : UActor {
-	Unknown MatineeData; //  0x310 Size(8)
+	struct Unknown MatineeData; //  0x310 Size(8)
 	struct FName MatineeControllerName; //  0x318 Size(8)
 	float PlayRate; //  0x320 Size(4)
 	char bPlayOnLevelLoad; //  0x324 Size(1)
@@ -9615,26 +9615,26 @@ struct AMatineeActor : UActor {
 	char bDisableLookAtInput; //  0x334 Size(1)
 	char bHidePlayer; //  0x334 Size(1)
 	char bHideHud; //  0x334 Size(1)
-	Unknown GroupActorInfos; //  0x338 Size(10)
+	struct TArray<Unknown> GroupActorInfos; //  0x338 Size(10)
 	char bShouldShowGore; //  0x348 Size(1)
-	Unknown GroupInst; //  0x350 Size(10)
-	Unknown CameraCuts; //  0x360 Size(10)
+	struct TArray<Unknown> GroupInst; //  0x350 Size(10)
+	struct TArray<Unknown> CameraCuts; //  0x360 Size(10)
 	char bIsPlaying; //  0x370 Size(1)
 	char bReversePlayback; //  0x370 Size(1)
 	char bPaused; //  0x370 Size(1)
 	char bPendingStop; //  0x370 Size(1)
 	float InterpPosition; //  0x374 Size(4)
-	Unknown ReplicationForceIsPlaying; //  0x37c Size(1)
+	char ReplicationForceIsPlaying; //  0x37c Size(1)
 	struct FMulticastInlineDelegate OnPlay; //  0x380 Size(10)
 	struct FMulticastInlineDelegate OnStop; //  0x390 Size(10)
 	struct FMulticastInlineDelegate OnPause; //  0x3a0 Size(10)
 
-	void Stop(); // Function Engine.MatineeActor.Stop(Native|Public|BlueprintCallable) // <Game+0x1f16020>
+	void Stop(); // Function Engine.MatineeActor.Stop(Native|Public|BlueprintCallable) // <Game+0x1f1cd70>
 };
 
 // Class Engine.MatineeActorCameraAnim
 struct AMatineeActorCameraAnim : AMatineeActor {
-	Unknown CameraAnim; //  0x3b8 Size(8)
+	struct Unknown CameraAnim; //  0x3b8 Size(8)
 };
 
 // Class Engine.MeshSimplificationSettings
@@ -9644,7 +9644,7 @@ struct UMeshSimplificationSettings : UDeveloperSettings {
 
 // Class Engine.MicroTransactionBase
 struct UMicroTransactionBase : UPlatformInterfaceBase {
-	Unknown AvailableProducts; //  0x38 Size(10)
+	struct TArray<Unknown> AvailableProducts; //  0x38 Size(10)
 	struct FString LastError; //  0x48 Size(10)
 	struct FString LastErrorSolution; //  0x58 Size(10)
 };
@@ -9652,42 +9652,42 @@ struct UMicroTransactionBase : UPlatformInterfaceBase {
 // Class Engine.MK3DKillcamComponent
 struct UMK3DKillcamComponent : UActorComponent {
 	struct FMulticastInlineDelegate OnMK3DKillcamCompleteEvent; //  0xb0 Size(10)
-	Unknown MK3DKillEvents; //  0xd8 Size(10)
+	struct TArray<Unknown> MK3DKillEvents; //  0xd8 Size(10)
 	float KillcamBeforeSec; //  0xe8 Size(4)
 	float KillcamAfterSec; //  0xec Size(4)
 
-	void OnJumpCompleteForKillcam(char bSuccess); // Function Engine.MK3DKillcamComponent.OnJumpCompleteForKillcam(Final|Native|Public) // <Game+0x3d840e0>
+	void OnJumpCompleteForKillcam(char bSuccess); // Function Engine.MK3DKillcamComponent.OnJumpCompleteForKillcam(Final|Native|Public) // <Game+0x3d90ad0>
 };
 
 // Class Engine.MK3DTargetcamComponent
 struct UMK3DTargetcamComponent : UActorComponent {
 	struct FMulticastInlineDelegate OnMK3DTargetcamCompleteEvent; //  0xb0 Size(10)
-	Unknown MK3DTargetEvents; //  0xd8 Size(10)
+	struct TArray<Unknown> MK3DTargetEvents; //  0xd8 Size(10)
 
-	void EnumerateMK3DTargetEvents(Unknown World); // Function Engine.MK3DTargetcamComponent.EnumerateMK3DTargetEvents(Final|Native|Public) // <Game+0x3d87a40>
+	void EnumerateMK3(struct Unknown World); // Function Engine.MK3DTargetcamComponent.EnumerateMK3(Final|Native|Public) // <Game+0x3d94480>
 };
 
 // Class Engine.MKDemoActorChannel
 struct UMKDemoActorChannel : UActorChannel {
-	Unknown PendingNetObjectsHolder; //  0x2f0 Size(10)
+	struct TArray<Unknown> PendingNetObjectsHolder; //  0x2f0 Size(10)
 };
 
 // Class Engine.ReplaySampleBase
 struct UReplaySampleBase : Object {
-	Unknown DataVersion; //  0x30 Size(1)
+	char DataVersion; //  0x30 Size(1)
 	float Time; //  0x34 Size(4)
 
-	Unknown MakeReplaySample(Unknown Actor); // Function Engine.ReplaySampleBase.MakeReplaySample(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <Game+0x3d88bc0>
+	struct Unknown MakeReplaySample(struct Unknown Actor); // Function Engine.ReplaySampleBase.MakeReplaySample(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <Game+0x3d95600>
 };
 
 // Class Engine.ModelComponent
 struct UModelComponent : UPrimitiveComponent {
-	Unknown ModelBodySetup; //  0x4d0 Size(8)
+	struct Unknown ModelBodySetup; //  0x4d0 Size(8)
 };
 
 // Class Engine.MorphTarget
 struct UMorphTarget : Object {
-	Unknown BaseSkelMesh; //  0x28 Size(8)
+	struct Unknown BaseSkelMesh; //  0x28 Size(8)
 };
 
 // Class Engine.NavCollisionBase
@@ -9702,16 +9702,16 @@ struct UNavigationDataChunk : Object {
 
 // Class Engine.NavigationSystemConfig
 struct UNavigationSystemConfig : Object {
-	Unknown NavigationSystemClass; //  0x28 Size(18)
-	Unknown SupportedAgentsMask; //  0x40 Size(4)
+	struct Unknown NavigationSystemClass; //  0x28 Size(18)
+	struct Unknown SupportedAgentsMask; //  0x40 Size(4)
 	struct FName DefaultAgentName; //  0x44 Size(8)
 	char bIsOverriden; //  0x4c Size(1)
 };
 
 // Class Engine.NavLinkDefinition
 struct UNavLinkDefinition : Object {
-	Unknown LINKS; //  0x28 Size(10)
-	Unknown SegmentLinks; //  0x38 Size(10)
+	struct TArray<Unknown> LINKS; //  0x28 Size(10)
+	struct TArray<Unknown> SegmentLinks; //  0x38 Size(10)
 };
 
 // Class Engine.NetworkSettings
@@ -9720,57 +9720,57 @@ struct UNetworkSettings : UDeveloperSettings {
 	char bEnableMultiplayerWorldOriginRebasing; //  0x38 Size(1)
 	int32_t MaxRepArraySize; //  0x3c Size(4)
 	int32_t MaxRepArrayMemory; //  0x40 Size(4)
-	Unknown NetworkEmulationProfiles; //  0x48 Size(10)
+	struct TArray<Unknown> NetworkEmulationProfiles; //  0x48 Size(10)
 };
 
 // Class Engine.NodeMappingContainer
 struct UNodeMappingContainer : Object {
-	Unknown SourceItems; //  0x28 Size(50)
-	Unknown TargetItems; //  0x78 Size(50)
-	Unknown SourceToTarget; //  0xc8 Size(50)
-	Unknown SourceAsset; //  0x118 Size(28)
-	Unknown TargetAsset; //  0x140 Size(28)
+	struct TMap<{}, {}>Unknown SourceItems; //  0x28 Size(50)
+	struct TMap<{}, {}>Unknown TargetItems; //  0x78 Size(50)
+	struct TMap<{}, {}>Unknown SourceToTarget; //  0xc8 Size(50)
+	struct TSoftObjectPtr<Unknown> SourceAsset; //  0x118 Size(28)
+	struct TSoftObjectPtr<Unknown> TargetAsset; //  0x140 Size(28)
 };
 
 // Class Engine.ObjectLibrary
 struct UObjectLibrary : Object {
-	Unknown ObjectBaseClass; //  0x28 Size(8)
+	struct Unknown* ObjectBaseClass; //  0x28 Size(8)
 	char bHasBlueprintClasses; //  0x30 Size(1)
-	Unknown Objects; //  0x38 Size(10)
-	Unknown WeakObjects; //  0x48 Size(10)
+	struct TArray<Unknown> Objects; //  0x38 Size(10)
+	struct TArray<Unknown> WeakObjects; //  0x48 Size(10)
 	char bUseWeakReferences; //  0x58 Size(1)
 	char bIsFullyLoaded; //  0x59 Size(1)
 };
 
 // Class Engine.ObjectReferencer
 struct UObjectReferencer : Object {
-	Unknown ReferencedObjects; //  0x28 Size(10)
+	struct TArray<Unknown> ReferencedObjects; //  0x28 Size(10)
 };
 
 // Class Engine.PainCausingVolume
 struct APainCausingVolume : APhysicsVolume {
 	char bPainCausing; //  0x358 Size(1)
 	float DamagePerSec; //  0x35c Size(4)
-	Unknown DamageType; //  0x360 Size(8)
+	struct Unknown* DamageType; //  0x360 Size(8)
 	float PainInterval; //  0x368 Size(4)
 	char bEntryPain; //  0x36c Size(1)
 	char BACKUP_bPainCausing; //  0x36c Size(1)
-	Unknown DamageInstigator; //  0x370 Size(8)
+	struct Unknown DamageInstigator; //  0x370 Size(8)
 };
 
 // Class Engine.ParticleEmitter
 struct UParticleEmitter : Object {
 	struct FName EmitterName; //  0x28 Size(8)
 	int32_t SubUVDataOffset; //  0x30 Size(4)
-	Unknown EmitterRenderMode; //  0x34 Size(1)
-	Unknown SignificanceLevel; //  0x35 Size(1)
+	char EmitterRenderMode; //  0x34 Size(1)
+	enum class Unknow SignificanceLevel; //  0x35 Size(1)
 	char bUseLegacySpawningBehavior; //  0x37 Size(1)
 	char ConvertedModules; //  0x37 Size(1)
 	char bIsSoloing; //  0x37 Size(1)
 	char bCookedOut; //  0x37 Size(1)
 	char bDisabledLODsKeepEmitterAlive; //  0x37 Size(1)
 	char bDisableWhenInsignficant; //  0x38 Size(1)
-	Unknown LODLevels; //  0x40 Size(10)
+	struct TArray<Unknown> LODLevels; //  0x40 Size(10)
 	int32_t PeakActiveParticles; //  0x50 Size(4)
 	int32_t InitialAllocationCount; //  0x54 Size(4)
 	float QualityLevelSpawnRateScale; //  0x58 Size(4)
@@ -9781,16 +9781,16 @@ struct UParticleEmitter : Object {
 struct UParticleLODLevel : Object {
 	int32_t Level; //  0x28 Size(4)
 	char bEnabled; //  0x2c Size(1)
-	Unknown RequiredModule; //  0x30 Size(8)
-	Unknown Modules; //  0x38 Size(10)
-	Unknown TypeDataModule; //  0x48 Size(8)
-	Unknown SpawnModule; //  0x50 Size(8)
-	Unknown EventGenerator; //  0x58 Size(8)
-	Unknown SpawningModules; //  0x60 Size(10)
-	Unknown SpawnModules; //  0x70 Size(10)
-	Unknown UpdateModules; //  0x80 Size(10)
-	Unknown OrbitModules; //  0x90 Size(10)
-	Unknown EventReceiverModules; //  0xa0 Size(10)
+	struct Unknown RequiredModule; //  0x30 Size(8)
+	struct TArray<Unknown> Modules; //  0x38 Size(10)
+	struct Unknown Type; //  0x48 Size(8)
+	struct Unknown SpawnModule; //  0x50 Size(8)
+	struct Unknown EventGenerator; //  0x58 Size(8)
+	struct TArray<Unknown> SpawningModules; //  0x60 Size(10)
+	struct TArray<Unknown> SpawnModules; //  0x70 Size(10)
+	struct TArray<Unknown> UpdateModules; //  0x80 Size(10)
+	struct TArray<Unknown> OrbitModules; //  0x90 Size(10)
+	struct TArray<Unknown> EventReceiverModules; //  0xa0 Size(10)
 	char ConvertedModules; //  0xb0 Size(1)
 	int32_t PeakActiveParticles; //  0xb4 Size(4)
 };
@@ -9803,13 +9803,13 @@ struct UParticleModule : Object {
 	char bUpdateForGPUEmitter; //  0x28 Size(1)
 	char bCurvesAsColor; //  0x28 Size(1)
 	char b3DDrawMode; //  0x28 Size(1)
-	char bSupported3DDrawMode; //  0x28 Size(1)
+	char bSupported3D; //  0x28 Size(1)
 	char bEnabled; //  0x28 Size(1)
 	char bEditable; //  0x29 Size(1)
 	char LODDuplicate; //  0x29 Size(1)
 	char bSupportsRandomSeed; //  0x29 Size(1)
-	char bRequiresLoopingNotificatio; //  0x29 Size(1)
-	Unknown LODValidity; //  0x2a Size(1)
+	char bRequiresLoopingNotification; //  0x29 Size(1)
+	char LODValidity; //  0x2a Size(1)
 };
 
 // Class Engine.ParticleModuleAccelerationBase
@@ -9819,48 +9819,48 @@ struct UParticleModuleAccelerationBase : UParticleModule {
 
 // Class Engine.ParticleModuleAcceleration
 struct UParticleModuleAcceleration : UParticleModuleAccelerationBase {
-	Unknown Acceleration; //  0x38 Size(48)
+	struct Unknown Acceleration; //  0x38 Size(48)
 	char bApplyOwnerScale; //  0x80 Size(1)
 };
 
 // Class Engine.ParticleModuleAccelerationConstant
 struct UParticleModuleAccelerationConstant : UParticleModuleAccelerationBase {
-	Unknown Acceleration; //  0x38 Size(c)
+	struct Unknown Acceleration; //  0x38 Size(c)
 };
 
 // Class Engine.ParticleModuleAccelerationDrag
 struct UParticleModuleAccelerationDrag : UParticleModuleAccelerationBase {
-	Unknown DragCoefficient; //  0x38 Size(8)
-	Unknown DragCoefficientRaw; //  0x40 Size(30)
+	struct Unknown DragCoefficient; //  0x38 Size(8)
+	struct Unknown DragCoefficientRaw; //  0x40 Size(30)
 };
 
 // Class Engine.ParticleModuleAccelerationDragScaleOverLife
 struct UParticleModuleAccelerationDragScaleOverLife : UParticleModuleAccelerationBase {
-	Unknown DragScale; //  0x38 Size(8)
-	Unknown DragScaleRaw; //  0x40 Size(30)
+	struct Unknown DragScale; //  0x38 Size(8)
+	struct Unknown DragScaleRaw; //  0x40 Size(30)
 };
 
 // Class Engine.ParticleModuleAccelerationOverLifetime
 struct UParticleModuleAccelerationOverLifetime : UParticleModuleAccelerationBase {
-	Unknown AccelOverLife; //  0x38 Size(48)
+	struct Unknown AccelOverLife; //  0x38 Size(48)
 };
 
 // Class Engine.ParticleModuleAttractorLine
 struct UParticleModuleAttractorLine : UParticleModuleAttractorBase {
-	Unknown EndPoint0; //  0x30 Size(c)
-	Unknown EndPoint1; //  0x3c Size(c)
-	Unknown Range; //  0x48 Size(30)
-	Unknown Strength; //  0x78 Size(30)
+	struct Unknown EndPoint0; //  0x30 Size(c)
+	struct Unknown EndPoint1; //  0x3c Size(c)
+	struct Unknown Range; //  0x48 Size(30)
+	struct Unknown Strength; //  0x78 Size(30)
 };
 
 // Class Engine.ParticleModuleAttractorParticle
 struct UParticleModuleAttractorParticle : UParticleModuleAttractorBase {
 	struct FName EmitterName; //  0x30 Size(8)
-	Unknown Range; //  0x38 Size(30)
+	struct Unknown Range; //  0x38 Size(30)
 	char bStrengthByDistance; //  0x68 Size(1)
-	Unknown Strength; //  0x70 Size(30)
+	struct Unknown Strength; //  0x70 Size(30)
 	char bAffectBaseVelocity; //  0xa0 Size(1)
-	Unknown SelectionMethod; //  0xa4 Size(1)
+	char SelectionMethod; //  0xa4 Size(1)
 	char bRenewSource; //  0xa8 Size(1)
 	char bInheritSourceVel; //  0xa8 Size(1)
 	int32_t LastSelIndex; //  0xac Size(4)
@@ -9868,9 +9868,9 @@ struct UParticleModuleAttractorParticle : UParticleModuleAttractorBase {
 
 // Class Engine.ParticleModuleAttractorPoint
 struct UParticleModuleAttractorPoint : UParticleModuleAttractorBase {
-	Unknown Position; //  0x30 Size(48)
-	Unknown Range; //  0x78 Size(30)
-	Unknown Strength; //  0xa8 Size(30)
+	struct Unknown Position; //  0x30 Size(48)
+	struct Unknown Range; //  0x78 Size(30)
+	struct Unknown Strength; //  0xa8 Size(30)
 	char StrengthByDistance; //  0xd8 Size(1)
 	char bAffectBaseVelocity; //  0xd8 Size(1)
 	char bOverrideVelocity; //  0xd8 Size(1)
@@ -9885,22 +9885,22 @@ struct UParticleModuleAttractorPoint : UParticleModuleAttractorBase {
 
 // Class Engine.ParticleModuleAttractorPointGravity
 struct UParticleModuleAttractorPointGravity : UParticleModuleAttractorBase {
-	Unknown Position; //  0x30 Size(c)
+	struct Unknown Position; //  0x30 Size(c)
 	float Radius; //  0x3c Size(4)
-	Unknown Strength; //  0x40 Size(8)
-	Unknown StrengthRaw; //  0x48 Size(30)
+	struct Unknown Strength; //  0x40 Size(8)
+	struct Unknown StrengthRaw; //  0x48 Size(30)
 };
 
 // Class Engine.ParticleModuleBeamModifier
 struct UParticleModuleBeamModifier : UParticleModuleBeamBase {
-	Unknown ModifierType; //  0x30 Size(1)
-	Unknown PositionOptions; //  0x34 Size(4)
-	Unknown Position; //  0x38 Size(48)
-	Unknown TangentOptions; //  0x80 Size(4)
-	Unknown Tangent; //  0x88 Size(48)
+	char ModifierType; //  0x30 Size(1)
+	struct Unknown PositionOptions; //  0x34 Size(4)
+	struct Unknown Position; //  0x38 Size(48)
+	struct Unknown TangentOptions; //  0x80 Size(4)
+	struct Unknown Tangent; //  0x88 Size(48)
 	char bAbsoluteTangent; //  0xd0 Size(1)
-	Unknown StrengthOptions; //  0xd4 Size(4)
-	Unknown Strength; //  0xd8 Size(30)
+	struct Unknown StrengthOptions; //  0xd4 Size(4)
+	struct Unknown Strength; //  0xd8 Size(30)
 };
 
 // Class Engine.ParticleModuleBeamNoise
@@ -9908,10 +9908,10 @@ struct UParticleModuleBeamNoise : UParticleModuleBeamBase {
 	char bLowFreq_Enabled; //  0x30 Size(1)
 	int32_t Frequency; //  0x34 Size(4)
 	int32_t Frequency_LowRange; //  0x38 Size(4)
-	Unknown NoiseRange; //  0x40 Size(48)
-	Unknown NoiseRangeScale; //  0x88 Size(30)
+	struct Unknown NoiseRange; //  0x40 Size(48)
+	struct Unknown NoiseRangeScale; //  0x88 Size(30)
 	char bNRScaleEmitterTime; //  0xb8 Size(1)
-	Unknown NoiseSpeed; //  0xc0 Size(48)
+	struct Unknown NoiseSpeed; //  0xc0 Size(48)
 	char bSmooth; //  0x108 Size(1)
 	float NoiseLockRadius; //  0x10c Size(4)
 	char bNoiseLock; //  0x110 Size(1)
@@ -9919,118 +9919,118 @@ struct UParticleModuleBeamNoise : UParticleModuleBeamBase {
 	float NoiseLockTime; //  0x114 Size(4)
 	float NoiseTension; //  0x118 Size(4)
 	char bUseNoiseTangents; //  0x11c Size(1)
-	Unknown NoiseTangentStrength; //  0x120 Size(30)
+	struct Unknown NoiseTangentStrength; //  0x120 Size(30)
 	int32_t NoiseTessellation; //  0x150 Size(4)
 	char bTargetNoise; //  0x154 Size(1)
 	float FrequencyDistance; //  0x158 Size(4)
 	char bApplyNoiseScale; //  0x15c Size(1)
-	Unknown NoiseScale; //  0x160 Size(30)
+	struct Unknown NoiseScale; //  0x160 Size(30)
 };
 
 // Class Engine.ParticleModuleBeamSource
 struct UParticleModuleBeamSource : UParticleModuleBeamBase {
-	Unknown SourceMethod; //  0x30 Size(1)
+	char SourceMethod; //  0x30 Size(1)
 	struct FName SourceName; //  0x34 Size(8)
 	char bSourceAbsolute; //  0x3c Size(1)
-	Unknown Source; //  0x40 Size(48)
+	struct Unknown Source; //  0x40 Size(48)
 	char bLockSource; //  0x88 Size(1)
-	Unknown SourceTangentMethod; //  0x8c Size(1)
-	Unknown SourceTangent; //  0x90 Size(48)
+	char SourceTangentMethod; //  0x8c Size(1)
+	struct Unknown SourceTangent; //  0x90 Size(48)
 	char bLockSourceTangent; //  0xd8 Size(1)
-	Unknown SourceStrength; //  0xe0 Size(30)
+	struct Unknown SourceStrength; //  0xe0 Size(30)
 	char bLockSourceStength; //  0x110 Size(1)
 };
 
 // Class Engine.ParticleModuleBeamTarget
 struct UParticleModuleBeamTarget : UParticleModuleBeamBase {
-	Unknown TargetMethod; //  0x30 Size(1)
+	char TargetMethod; //  0x30 Size(1)
 	struct FName TargetName; //  0x34 Size(8)
-	Unknown Target; //  0x40 Size(48)
+	struct Unknown Target; //  0x40 Size(48)
 	char bTargetAbsolute; //  0x88 Size(1)
 	char bLockTarget; //  0x88 Size(1)
-	Unknown TargetTangentMethod; //  0x8c Size(1)
-	Unknown TargetTangent; //  0x90 Size(48)
+	char TargetTangentMethod; //  0x8c Size(1)
+	struct Unknown TargetTangent; //  0x90 Size(48)
 	char bLockTargetTangent; //  0xd8 Size(1)
-	Unknown TargetStrength; //  0xe0 Size(30)
+	struct Unknown TargetStrength; //  0xe0 Size(30)
 	char bLockTargetStength; //  0x110 Size(1)
 	float LockRadius; //  0x114 Size(4)
 };
 
 // Class Engine.ParticleModuleCameraOffset
 struct UParticleModuleCameraOffset : UParticleModuleCameraBase {
-	Unknown CameraOffset; //  0x30 Size(30)
+	struct Unknown CameraOffset; //  0x30 Size(30)
 	char bSpawnTimeOnly; //  0x60 Size(1)
-	Unknown UpdateMethod; //  0x64 Size(1)
+	char UpdateMethod; //  0x64 Size(1)
 };
 
 // Class Engine.ParticleModuleCollision
 struct UParticleModuleCollision : UParticleModuleCollisionBase {
-	Unknown DampingFactor; //  0x30 Size(48)
-	Unknown DampingFactorRotation; //  0x78 Size(48)
-	Unknown MaxCollisions; //  0xc0 Size(30)
-	Unknown CollisionCompletionOption; //  0xf0 Size(1)
-	Unknown CollisionTypes; //  0xf8 Size(10)
+	struct Unknown DampingFactor; //  0x30 Size(48)
+	struct Unknown DampingFactorRotation; //  0x78 Size(48)
+	struct Unknown MaxCollisions; //  0xc0 Size(30)
+	char CollisionCompletionOption; //  0xf0 Size(1)
+	struct TArray<Unknown> CollisionTypes; //  0xf8 Size(10)
 	char bApplyPhysics; //  0x110 Size(1)
 	char bIgnoreTriggerVolumes; //  0x110 Size(1)
-	Unknown ParticleMass; //  0x118 Size(30)
+	struct Unknown ParticleMass; //  0x118 Size(30)
 	float DirScalar; //  0x148 Size(4)
 	char bPawnsDoNotDecrementCount; //  0x14c Size(1)
-	char bOnlyVerticalNormalsDecrementCount; //  0x14c Size(1)
+	char bOnlyVerticalNormals; //  0x14c Size(1)
 	float VerticalFudgeFactor; //  0x150 Size(4)
-	Unknown DelayAmount; //  0x158 Size(30)
+	struct Unknown DelayAmount; //  0x158 Size(30)
 	char bDropDetail; //  0x188 Size(1)
 	char bCollideOnlyIfVisible; //  0x188 Size(1)
 	char bIgnoreSourceActor; //  0x188 Size(1)
-	float MaxCollisionDistance; //  0x18c Size(4)
+	float MaxCollision; //  0x18c Size(4)
 };
 
 // Class Engine.ParticleModuleCollisionGPU
 struct UParticleModuleCollisionGPU : UParticleModuleCollisionBase {
-	Unknown Resilience; //  0x30 Size(30)
-	Unknown ResilienceScaleOverLife; //  0x60 Size(30)
+	struct Unknown Resilience; //  0x30 Size(30)
+	struct Unknown ResilienceScaleOverLife; //  0x60 Size(30)
 	float Friction; //  0x90 Size(4)
 	float RandomSpread; //  0x94 Size(4)
 	float RandomDistribution; //  0x98 Size(4)
 	float RadiusScale; //  0x9c Size(4)
 	float RadiusBias; //  0xa0 Size(4)
-	Unknown Response; //  0xa4 Size(1)
-	Unknown CollisionMode; //  0xa5 Size(1)
+	char Response; //  0xa4 Size(1)
+	char CollisionMode; //  0xa5 Size(1)
 };
 
 // Class Engine.ParticleModuleColor
 struct UParticleModuleColor : UParticleModuleColorBase {
-	Unknown StartColor; //  0x30 Size(48)
-	Unknown StartAlpha; //  0x78 Size(30)
+	struct Unknown StartColor; //  0x30 Size(48)
+	struct Unknown StartAlpha; //  0x78 Size(30)
 	char bClampAlpha; //  0xa8 Size(1)
 };
 
 // Class Engine.ParticleModuleColor_Seeded
 struct UParticleModuleColor_Seeded : UParticleModuleColor {
-	Unknown RandomSeedInfo; //  0xb0 Size(20)
+	struct Unknown RandomSeedInfo; //  0xb0 Size(20)
 };
 
 // Class Engine.ParticleModuleColorOverLife
 struct UParticleModuleColorOverLife : UParticleModuleColorBase {
-	Unknown ColorOverLife; //  0x30 Size(48)
-	Unknown AlphaOverLife; //  0x78 Size(30)
+	struct Unknown ColorOverLife; //  0x30 Size(48)
+	struct Unknown AlphaOverLife; //  0x78 Size(30)
 	char bClampAlpha; //  0xa8 Size(1)
 };
 
 // Class Engine.ParticleModuleColorScaleOverLife
 struct UParticleModuleColorScaleOverLife : UParticleModuleColorBase {
-	Unknown ColorScaleOverLife; //  0x30 Size(48)
-	Unknown AlphaScaleOverLife; //  0x78 Size(30)
+	struct Unknown ColorScaleOverLife; //  0x30 Size(48)
+	struct Unknown AlphaScaleOverLife; //  0x78 Size(30)
 	char bEmitterTime; //  0xa8 Size(1)
 };
 
-// Class Engine.ParticleModuleEventGenerato
-struct UParticleModuleEventGeneratot : UParticleModuleEventBase {
-	Unknown Events; //  0x30 Size(10)
+// Class Engine.ParticleModuleEventGenerator
+struct UParticleModuleEventGenerator : UParticleModuleEventBase {
+	struct TArray<Unknown> Events; //  0x30 Size(10)
 };
 
 // Class Engine.ParticleModuleEventReceiverBase
 struct UParticleModuleEventReceiverBase : UParticleModuleEventBase {
-	Unknown EventGeneratorType; //  0x30 Size(1)
+	char EventGeneratorType; //  0x30 Size(1)
 	struct FName EventName; //  0x34 Size(8)
 };
 
@@ -10041,19 +10041,19 @@ struct UParticleModuleEventReceiverKillParticles : UParticleModuleEventReceiverB
 
 // Class Engine.ParticleModuleEventReceiverSpawn
 struct UParticleModuleEventReceiverSpawn : UParticleModuleEventReceiverBase {
-	Unknown SpawnCount; //  0x40 Size(30)
+	struct Unknown SpawnCount; //  0x40 Size(30)
 	char bUseParticleTime; //  0x70 Size(1)
 	char bUsePSysLocation; //  0x70 Size(1)
 	char bInheritVelocity; //  0x70 Size(1)
-	Unknown InheritVelocityScale; //  0x78 Size(48)
-	Unknown PhysicalMaterials; //  0xc0 Size(10)
+	struct Unknown InheritVelocityScale; //  0x78 Size(48)
+	struct TArray<Unknown> PhysicalMaterials; //  0xc0 Size(10)
 	char bBanPhysicalMaterials; //  0xd0 Size(1)
 };
 
 // Class Engine.ParticleModuleKillBox
 struct UParticleModuleKillBox : UParticleModuleKillBase {
-	Unknown LowerLeftCorner; //  0x30 Size(48)
-	Unknown UpperRightCorner; //  0x78 Size(48)
+	struct Unknown LowerLeftCorner; //  0x30 Size(48)
+	struct Unknown UpperRightCorner; //  0x78 Size(48)
 	char bAbsolute; //  0xc0 Size(1)
 	char bKillInside; //  0xc0 Size(1)
 	char bAxisAlignedAndFixedSize; //  0xc0 Size(1)
@@ -10061,7 +10061,7 @@ struct UParticleModuleKillBox : UParticleModuleKillBase {
 
 // Class Engine.ParticleModuleKillHeight
 struct UParticleModuleKillHeight : UParticleModuleKillBase {
-	Unknown Height; //  0x30 Size(30)
+	struct Unknown Height; //  0x30 Size(30)
 	char bAbsolute; //  0x60 Size(1)
 	char bFloor; //  0x60 Size(1)
 	char bApplyPSysScale; //  0x60 Size(1)
@@ -10069,12 +10069,12 @@ struct UParticleModuleKillHeight : UParticleModuleKillBase {
 
 // Class Engine.ParticleModuleLifetime
 struct UParticleModuleLifetime : UParticleModuleLifetimeBase {
-	Unknown LifeTime; //  0x30 Size(30)
+	struct Unknown LifeTime; //  0x30 Size(30)
 };
 
 // Class Engine.ParticleModuleLifetime_Seeded
 struct UParticleModuleLifetime_Seeded : UParticleModuleLifetime {
-	Unknown RandomSeedInfo; //  0x60 Size(20)
+	struct Unknown RandomSeedInfo; //  0x60 Size(20)
 };
 
 // Class Engine.ParticleModuleLight
@@ -10083,11 +10083,11 @@ struct UParticleModuleLight : UParticleModuleLightBase {
 	char bAffectsTranslucency; //  0x31 Size(1)
 	char bPreviewLightRadius; //  0x32 Size(1)
 	float SpawnFraction; //  0x34 Size(4)
-	Unknown ColorScaleOverLife; //  0x38 Size(48)
-	Unknown BrightnessOverLife; //  0x80 Size(30)
-	Unknown RadiusScale; //  0xb0 Size(30)
-	Unknown LightExponent; //  0xe0 Size(30)
-	Unknown LightingChannels; //  0x110 Size(1)
+	struct Unknown ColorScaleOverLife; //  0x38 Size(48)
+	struct Unknown BrightnessOverLife; //  0x80 Size(30)
+	struct Unknown RadiusScale; //  0xb0 Size(30)
+	struct Unknown LightExponent; //  0xe0 Size(30)
+	struct Unknown LightingChannels; //  0x110 Size(1)
 	float VolumetricScatteringIntensity; //  0x114 Size(4)
 	char bHighQualityLights; //  0x118 Size(1)
 	char bShadowCastingLights; //  0x119 Size(1)
@@ -10095,27 +10095,27 @@ struct UParticleModuleLight : UParticleModuleLightBase {
 
 // Class Engine.ParticleModuleLight_Seeded
 struct UParticleModuleLight_Seeded : UParticleModuleLight {
-	Unknown RandomSeedInfo; //  0x120 Size(20)
+	struct Unknown RandomSeedInfo; //  0x120 Size(20)
 };
 
 // Class Engine.ParticleModuleLocation
 struct UParticleModuleLocation : UParticleModuleLocationBase {
-	Unknown StartLocation; //  0x30 Size(48)
+	struct Unknown StartLocation; //  0x30 Size(48)
 	float DistributeOverNPoints; //  0x78 Size(4)
 	float DistributeThreshold; //  0x7c Size(4)
 };
 
 // Class Engine.ParticleModuleLocation_Seeded
 struct UParticleModuleLocation_Seeded : UParticleModuleLocation {
-	Unknown RandomSeedInfo; //  0x80 Size(20)
+	struct Unknown RandomSeedInfo; //  0x80 Size(20)
 };
 
 // Class Engine.ParticleModuleLocationBoneSocket
 struct UParticleModuleLocationBoneSocket : UParticleModuleLocationBase {
-	Unknown SourceType; //  0x30 Size(1)
-	Unknown UniversalOffset; //  0x34 Size(c)
-	Unknown SourceLocations; //  0x40 Size(10)
-	Unknown SelectionMethod; //  0x50 Size(1)
+	char SourceType; //  0x30 Size(1)
+	struct Unknown UniversalOffset; //  0x34 Size(c)
+	struct TArray<Unknown> SourceLocations; //  0x40 Size(10)
+	char SelectionMethod; //  0x50 Size(1)
 	char bUpdatePositionEachFrame; //  0x54 Size(1)
 	char bOrientMeshEmitters; //  0x54 Size(1)
 	char bInheritBoneVelocity; //  0x54 Size(1)
@@ -10126,24 +10126,24 @@ struct UParticleModuleLocationBoneSocket : UParticleModuleLocationBase {
 
 // Class Engine.ParticleModuleLocationDirect
 struct UParticleModuleLocationDirect : UParticleModuleLocationBase {
-	Unknown Location; //  0x30 Size(48)
-	Unknown LocationOffset; //  0x78 Size(48)
-	Unknown ScaleFactor; //  0xc0 Size(48)
-	Unknown Direction; //  0x108 Size(48)
+	struct Unknown Location; //  0x30 Size(48)
+	struct Unknown LocationOffset; //  0x78 Size(48)
+	struct Unknown ScaleFactor; //  0xc0 Size(48)
+	struct Unknown Direction; //  0x108 Size(48)
 };
 
 // Class Engine.ParticleModuleLocationEmitter
 struct UParticleModuleLocationEmitter : UParticleModuleLocationBase {
 	struct FName EmitterName; //  0x30 Size(8)
-	Unknown SelectionMethod; //  0x38 Size(1)
+	char SelectionMethod; //  0x38 Size(1)
 	char InheritSourceVelocity; //  0x3c Size(1)
 	float InheritSourceVelocityScale; //  0x40 Size(4)
 	char bInheritSourceRotation; //  0x44 Size(1)
 	float InheritSourceRotationScale; //  0x48 Size(4)
 };
 
-// Class Engine.ParticleModuleLocationEmitterDirect
-struct UParticleModuleLocationEmitterDirect : UParticleModuleLocationBase {
+// Class Engine.ParticleModuleLocationEmitterDi
+struct UParticleModuleLocationEmitterDi : UParticleModuleLocationBase {
 	struct FName EmitterName; //  0x30 Size(8)
 };
 
@@ -10157,56 +10157,56 @@ struct UParticleModuleLocationPrimitiveBase : UParticleModuleLocationBase {
 	char Negative_Z; //  0x30 Size(1)
 	char SurfaceOnly; //  0x30 Size(1)
 	char Velocity; //  0x30 Size(1)
-	Unknown VelocityScale; //  0x38 Size(30)
-	Unknown StartLocation; //  0x68 Size(48)
+	struct Unknown VelocityScale; //  0x38 Size(30)
+	struct Unknown StartLocation; //  0x68 Size(48)
 };
 
 // Class Engine.ParticleModuleLocationPrimitiveCylinder
 struct UParticleModuleLocationPrimitiveCylinder : UParticleModuleLocationPrimitiveBase {
 	char RadialVelocity; //  0xb0 Size(1)
-	Unknown StartRadius; //  0xb8 Size(30)
-	Unknown StartHeight; //  0xe8 Size(30)
-	Unknown HeightAxis; //  0x118 Size(1)
+	struct Unknown StartRadius; //  0xb8 Size(30)
+	struct Unknown StartHeight; //  0xe8 Size(30)
+	char HeightAxis; //  0x118 Size(1)
 };
 
 // Class Engine.ParticleModuleLocationPrimitiveCylinder_Seeded
 struct UParticleModuleLocationPrimitiveCylinder_Seeded : UParticleModuleLocationPrimitiveCylinder {
-	Unknown RandomSeedInfo; //  0x120 Size(20)
+	struct Unknown RandomSeedInfo; //  0x120 Size(20)
 };
 
 // Class Engine.ParticleModuleLocationPrimitiveSphere
 struct UParticleModuleLocationPrimitiveSphere : UParticleModuleLocationPrimitiveBase {
-	Unknown StartRadius; //  0xb0 Size(30)
+	struct Unknown StartRadius; //  0xb0 Size(30)
 };
 
 // Class Engine.ParticleModuleLocationPrimitiveSphere_Seeded
 struct UParticleModuleLocationPrimitiveSphere_Seeded : UParticleModuleLocationPrimitiveSphere {
-	Unknown RandomSeedInfo; //  0xe0 Size(20)
+	struct Unknown RandomSeedInfo; //  0xe0 Size(20)
 };
 
 // Class Engine.ParticleModuleLocationPrimitiveTriangle
 struct UParticleModuleLocationPrimitiveTriangle : UParticleModuleLocationBase {
-	Unknown StartOffset; //  0x30 Size(48)
-	Unknown Height; //  0x78 Size(30)
-	Unknown Angle; //  0xa8 Size(30)
-	Unknown Thickness; //  0xd8 Size(30)
+	struct Unknown StartOffset; //  0x30 Size(48)
+	struct Unknown Height; //  0x78 Size(30)
+	struct Unknown Angle; //  0xa8 Size(30)
+	struct Unknown Thickness; //  0xd8 Size(30)
 };
 
 // Class Engine.ParticleModuleLocationSkelVertSurface
 struct UParticleModuleLocationSkelVertSurface : UParticleModuleLocationBase {
-	Unknown SourceType; //  0x30 Size(1)
-	Unknown UniversalOffset; //  0x34 Size(c)
+	char SourceType; //  0x30 Size(1)
+	struct Unknown UniversalOffset; //  0x34 Size(c)
 	char bUpdatePositionEachFrame; //  0x40 Size(1)
 	char bOrientMeshEmitters; //  0x40 Size(1)
 	char bInheritBoneVelocity; //  0x40 Size(1)
 	float InheritVelocityScale; //  0x44 Size(4)
 	struct FName SkelMeshActorParamName; //  0x48 Size(8)
-	Unknown ValidAssociatedBones; //  0x50 Size(10)
+	struct TArray<Unknown> ValidAssociatedBones; //  0x50 Size(10)
 	char bEnforceNormalCheck; //  0x60 Size(1)
-	Unknown NormalToCompare; //  0x64 Size(c)
-	float NormalCheckToleranceDegrees; //  0x70 Size(4)
+	struct Unknown NormalToCompare; //  0x64 Size(c)
+	float NormalCheckToleranceDndToGa; //  0x70 Size(4)
 	float NormalCheckTolerance; //  0x74 Size(4)
-	Unknown ValidMaterialIndices; //  0x78 Size(10)
+	struct TArray<Unknown> ValidMaterialIndices; //  0x78 Size(10)
 	char bInheritVertexColor; //  0x88 Size(1)
 	char bInheritUV; //  0x88 Size(1)
 	uint32_t InheritUVChannel; //  0x8c Size(4)
@@ -10214,43 +10214,43 @@ struct UParticleModuleLocationSkelVertSurface : UParticleModuleLocationBase {
 
 // Class Engine.ParticleModuleLocationWorldOffset_Seeded
 struct UParticleModuleLocationWorldOffset_Seeded : UParticleModuleLocationWorldOffset {
-	Unknown RandomSeedInfo; //  0x80 Size(20)
+	struct Unknown RandomSeedInfo; //  0x80 Size(20)
 };
 
 // Class Engine.ParticleModuleMeshMaterial
 struct UParticleModuleMeshMaterial : UParticleModuleMaterialBase {
-	Unknown MeshMaterials; //  0x30 Size(10)
+	struct TArray<Unknown> MeshMaterials; //  0x30 Size(10)
 };
 
 // Class Engine.ParticleModuleMeshRotation
 struct UParticleModuleMeshRotation : UParticleModuleRotationBase {
-	Unknown StartRotation; //  0x30 Size(48)
+	struct Unknown StartRotation; //  0x30 Size(48)
 	char bInheritParent; //  0x78 Size(1)
 };
 
 // Class Engine.ParticleModuleMeshRotation_Seeded
 struct UParticleModuleMeshRotation_Seeded : UParticleModuleMeshRotation {
-	Unknown RandomSeedInfo; //  0x80 Size(20)
+	struct Unknown RandomSeedInfo; //  0x80 Size(20)
 };
 
 // Class Engine.ParticleModuleMeshRotationRate
 struct UParticleModuleMeshRotationRate : UParticleModuleRotationRateBase {
-	Unknown StartRotationRate; //  0x30 Size(48)
+	struct Unknown StartRotationRate; //  0x30 Size(48)
 };
 
 // Class Engine.ParticleModuleMeshRotationRate_Seeded
 struct UParticleModuleMeshRotationRate_Seeded : UParticleModuleMeshRotationRate {
-	Unknown RandomSeedInfo; //  0x78 Size(20)
+	struct Unknown RandomSeedInfo; //  0x78 Size(20)
 };
 
 // Class Engine.ParticleModuleMeshRotationRateMultiplyLife
 struct UParticleModuleMeshRotationRateMultiplyLife : UParticleModuleRotationRateBase {
-	Unknown LifeMultiplier; //  0x30 Size(48)
+	struct Unknown LifeMultiplier; //  0x30 Size(48)
 };
 
 // Class Engine.ParticleModuleMeshRotationRateOverLife
 struct UParticleModuleMeshRotationRateOverLife : UParticleModuleRotationRateBase {
-	Unknown RotRate; //  0x30 Size(48)
+	struct Unknown RotRate; //  0x30 Size(48)
 	char bScaleRotRate; //  0x78 Size(1)
 };
 
@@ -10261,130 +10261,130 @@ struct UParticleModuleOrbitBase : UParticleModule {
 
 // Class Engine.ParticleModuleOrbit
 struct UParticleModuleOrbit : UParticleModuleOrbitBase {
-	Unknown ChainMode; //  0x38 Size(1)
-	Unknown OffsetAmount; //  0x40 Size(48)
-	Unknown OffsetOptions; //  0x88 Size(4)
-	Unknown RotationAmount; //  0x90 Size(48)
-	Unknown RotationOptions; //  0xd8 Size(4)
-	Unknown RotationRateAmount; //  0xe0 Size(48)
-	Unknown RotationRateOptions; //  0x128 Size(4)
+	char ChainMode; //  0x38 Size(1)
+	struct Unknown OffsetAmount; //  0x40 Size(48)
+	struct Unknown OffsetOptions; //  0x88 Size(4)
+	struct Unknown RotationAmount; //  0x90 Size(48)
+	struct Unknown RotationOptions; //  0xd8 Size(4)
+	struct Unknown RotationRateAmount; //  0xe0 Size(48)
+	struct Unknown RotationRateOptions; //  0x128 Size(4)
 };
 
 // Class Engine.ParticleModuleOrientationAxisLock
 struct UParticleModuleOrientationAxisLock : UParticleModuleOrientationBase {
-	Unknown LockAxisFlags; //  0x30 Size(1)
+	char LockAxisFlags; //  0x30 Size(1)
 };
 
 // Class Engine.ParticleModuleParameterDynamic
 struct UParticleModuleParameterDynamic : UParticleModuleParameterBase {
-	Unknown DynamicParams; //  0x30 Size(10)
+	struct TArray<Unknown> DynamicParams; //  0x30 Size(10)
 	int32_t UpdateFlags; //  0x40 Size(4)
 	char bUsesVelocity; //  0x44 Size(1)
 };
 
 // Class Engine.ParticleModuleParameterDynamic_Seeded
 struct UParticleModuleParameterDynamic_Seeded : UParticleModuleParameterDynamic {
-	Unknown RandomSeedInfo; //  0x48 Size(20)
+	struct Unknown RandomSeedInfo; //  0x48 Size(20)
 };
 
 // Class Engine.ParticleModulePivotOffset
 struct UParticleModulePivotOffset : UParticleModuleLocationBase {
-	Unknown PivotOffset; //  0x30 Size(8)
+	struct Unknown PivotOffset; //  0x30 Size(8)
 };
 
 // Class Engine.ParticleModuleRequired
 struct UParticleModuleRequired : UParticleModule {
-	Unknown Material; //  0x30 Size(8)
-	float MinFacingCameraBlendDistance; //  0x38 Size(4)
-	float MaxFacingCameraBlendDistance; //  0x3c Size(4)
-	Unknown EmitterOrigin; //  0x40 Size(c)
-	Unknown EmitterRotation; //  0x4c Size(c)
-	Unknown ScreenAlignment; //  0x58 Size(1)
+	struct Unknown Material; //  0x30 Size(8)
+	float MinFacingCameraBlend; //  0x38 Size(4)
+	float MaxFacingCameraBlend; //  0x3c Size(4)
+	struct Unknown EmitterOrigin; //  0x40 Size(c)
+	struct Unknown EmitterRotation; //  0x4c Size(c)
+	char ScreenAlignment; //  0x58 Size(1)
 	char bUseLocalSpace; //  0x59 Size(1)
 	char bKillOnDeactivate; //  0x59 Size(1)
 	char bKillOnCompleted; //  0x59 Size(1)
-	Unknown SortMode; //  0x5a Size(1)
+	char SortMode; //  0x5a Size(1)
 	char bUseLegacyEmitterTime; //  0x5b Size(1)
 	char bRemoveHMDRoll; //  0x5b Size(1)
 	char bEmitterDurationUseRange; //  0x5b Size(1)
 	float EmitterDuration; //  0x5c Size(4)
-	Unknown SpawnRate; //  0x60 Size(30)
-	Unknown BurstList; //  0x90 Size(10)
+	struct Unknown SpawnRate; //  0x60 Size(30)
+	struct TArray<Unknown> BurstList; //  0x90 Size(10)
 	float EmitterDelay; //  0xa0 Size(4)
 	float EmitterDelayLow; //  0xa4 Size(4)
 	char bDelayFirstLoopOnly; //  0xa8 Size(1)
-	Unknown InterpolationMethod; //  0xa9 Size(1)
+	char InterpolationMethod; //  0xa9 Size(1)
 	char bScaleUV; //  0xaa Size(1)
 	char bEmitterDelayUseRange; //  0xaa Size(1)
-	Unknown ParticleBurstMethod; //  0xab Size(1)
+	char ParticleBurstMethod; //  0xab Size(1)
 	char bOverrideSystemMacroUV; //  0xac Size(1)
 	char bUseMaxDrawCount; //  0xac Size(1)
-	Unknown OpacitySourceMode; //  0xad Size(1)
-	Unknown EmitterNormalsMode; //  0xae Size(1)
-	char bOrb; //  0xaf Size(1)
+	char OpacitySourceMode; //  0xad Size(1)
+	char EmitterNormalsMode; //  0xae Size(1)
+	char bOrbitModuleAffectsVelocityAlignment; //  0xaf Size(1)
 	int32_t SubImages_Horizontal; //  0xb0 Size(4)
 	int32_t SubImages_Vertical; //  0xb4 Size(4)
 	float RandomImageTime; //  0xb8 Size(4)
 	int32_t RandomImageChanges; //  0xbc Size(4)
-	Unknown MacroUVPosition; //  0xc0 Size(c)
+	struct Unknown MacroUVPosition; //  0xc0 Size(c)
 	float MacroUVRadius; //  0xcc Size(4)
-	Unknown UVFlippingMode; //  0xd0 Size(1)
-	Unknown BoundingMode; //  0xd1 Size(1)
+	enum class Unknow UVFlippingMode; //  0xd0 Size(1)
+	char BoundingMode; //  0xd1 Size(1)
 	char bDurationRecalcEachLoop; //  0xd2 Size(1)
-	Unknown NormalsSphereCenter; //  0xd4 Size(c)
+	struct Unknown NormalsSphereCenter; //  0xd4 Size(c)
 	float AlphaThreshold; //  0xe0 Size(4)
 	int32_t EmitterLoops; //  0xe4 Size(4)
-	Unknown CutoutTexture; //  0xe8 Size(8)
+	struct Unknown CutoutTexture; //  0xe8 Size(8)
 	int32_t MaxDrawCount; //  0xf0 Size(4)
 	float EmitterDurationLow; //  0xf4 Size(4)
-	Unknown NormalsCylinderDirection; //  0xf8 Size(c)
-	Unknown NamedMaterialOverrides; //  0x108 Size(10)
+	struct Unknown NormalsCylinderDirection; //  0xf8 Size(c)
+	struct TArray<Unknown> NamedMaterialOverrides; //  0x108 Size(10)
 };
 
 // Class Engine.ParticleModuleRotation
 struct UParticleModuleRotation : UParticleModuleRotationBase {
-	Unknown StartRotation; //  0x30 Size(30)
+	struct Unknown StartRotation; //  0x30 Size(30)
 };
 
 // Class Engine.ParticleModuleRotation_Seeded
 struct UParticleModuleRotation_Seeded : UParticleModuleRotation {
-	Unknown RandomSeedInfo; //  0x60 Size(20)
+	struct Unknown RandomSeedInfo; //  0x60 Size(20)
 };
 
 // Class Engine.ParticleModuleRotationOverLifetime
 struct UParticleModuleRotationOverLifetime : UParticleModuleRotationBase {
-	Unknown RotationOverLife; //  0x30 Size(30)
+	struct Unknown RotationOverLife; //  0x30 Size(30)
 	char Scale; //  0x60 Size(1)
 };
 
 // Class Engine.ParticleModuleRotationRate
 struct UParticleModuleRotationRate : UParticleModuleRotationRateBase {
-	Unknown StartRotationRate; //  0x30 Size(30)
+	struct Unknown StartRotationRate; //  0x30 Size(30)
 };
 
 // Class Engine.ParticleModuleRotationRate_Seeded
 struct UParticleModuleRotationRate_Seeded : UParticleModuleRotationRate {
-	Unknown RandomSeedInfo; //  0x60 Size(20)
+	struct Unknown RandomSeedInfo; //  0x60 Size(20)
 };
 
-// Class Engine.ParticleModuleRotationRateMultiplyLife
-struct UParticleModuleRotationRateMultiplyLife : UParticleModuleRotationRateBase {
-	Unknown LifeMultiplier; //  0x30 Size(30)
+// Class Engine.ParticleModuleRotationRateMulti
+struct UParticleModuleRotationRateMulti : UParticleModuleRotationRateBase {
+	struct Unknown LifeMultiplier; //  0x30 Size(30)
 };
 
 // Class Engine.ParticleModuleSize
 struct UParticleModuleSize : UParticleModuleSizeBase {
-	Unknown StartSize; //  0x30 Size(48)
+	struct Unknown StartSize; //  0x30 Size(48)
 };
 
 // Class Engine.ParticleModuleSize_Seeded
 struct UParticleModuleSize_Seeded : UParticleModuleSize {
-	Unknown RandomSeedInfo; //  0x78 Size(20)
+	struct Unknown RandomSeedInfo; //  0x78 Size(20)
 };
 
 // Class Engine.ParticleModuleSizeMultiplyLife
 struct UParticleModuleSizeMultiplyLife : UParticleModuleSizeBase {
-	Unknown LifeMultiplier; //  0x30 Size(48)
+	struct Unknown LifeMultiplier; //  0x30 Size(48)
 	char MultiplyX; //  0x78 Size(1)
 	char MultiplyY; //  0x78 Size(1)
 	char MultiplyZ; //  0x78 Size(1)
@@ -10392,21 +10392,21 @@ struct UParticleModuleSizeMultiplyLife : UParticleModuleSizeBase {
 
 // Class Engine.ParticleModuleSizeScale
 struct UParticleModuleSizeScale : UParticleModuleSizeBase {
-	Unknown SizeScale; //  0x30 Size(48)
-	char Enab; //  0x78 Size(1)
-	char EnabSca; //  0x78 Size(1)
-	char Enab; //  0x78 Size(1)
+	struct Unknown SizeScale; //  0x30 Size(48)
+	char EnableX; //  0x78 Size(1)
+	char EnableY; //  0x78 Size(1)
+	char EnableZ; //  0x78 Size(1)
 };
 
 // Class Engine.ParticleModuleSizeScaleBySpeed
 struct UParticleModuleSizeScaleBySpeed : UParticleModuleSizeBase {
-	Unknown SpeedScale; //  0x30 Size(8)
-	Unknown MaxScale; //  0x38 Size(8)
+	struct Unknown SpeedScale; //  0x30 Size(8)
+	struct Unknown MaxScale; //  0x38 Size(8)
 };
 
 // Class Engine.ParticleModuleSourceMovement
 struct UParticleModuleSourceMovement : UParticleModuleLocationBase {
-	Unknown SourceMovementScale; //  0x30 Size(48)
+	struct Unknown SourceMovementScale; //  0x30 Size(48)
 };
 
 // Class Engine.ParticleModuleSpawnBase
@@ -10417,11 +10417,11 @@ struct UParticleModuleSpawnBase : UParticleModule {
 
 // Class Engine.ParticleModuleSpawn
 struct UParticleModuleSpawn : UParticleModuleSpawnBase {
-	Unknown Rate; //  0x38 Size(30)
-	Unknown RateScale; //  0x68 Size(30)
-	Unknown ParticleBurstMethod; //  0x98 Size(1)
-	Unknown BurstList; //  0xa0 Size(10)
-	Unknown BurstScale; //  0xb0 Size(30)
+	struct Unknown Rate; //  0x38 Size(30)
+	struct Unknown RateScale; //  0x68 Size(30)
+	char ParticleBurstMethod; //  0x98 Size(1)
+	struct TArray<Unknown> BurstList; //  0xa0 Size(10)
+	struct Unknown BurstScale; //  0xb0 Size(30)
 	char bApplyGlobalSpawnRateScale; //  0xe0 Size(1)
 };
 
@@ -10429,7 +10429,7 @@ struct UParticleModuleSpawn : UParticleModuleSpawnBase {
 struct UParticleModuleSpawnPerUnit : UParticleModuleSpawnBase {
 	float UnitScalar; //  0x38 Size(4)
 	float MovementTolerance; //  0x3c Size(4)
-	Unknown SpawnPerUnit; //  0x40 Size(30)
+	struct Unknown SpawnPerUnit; //  0x40 Size(30)
 	float MaxFrameDistance; //  0x70 Size(4)
 	char bIgnoreSpawnRateWhenMoving; //  0x74 Size(1)
 	char bIgnoreMovementAlongX; //  0x74 Size(1)
@@ -10439,27 +10439,27 @@ struct UParticleModuleSpawnPerUnit : UParticleModuleSpawnBase {
 
 // Class Engine.ParticleModuleSubUV
 struct UParticleModuleSubUV : UParticleModuleSubUVBase {
-	Unknown Animation; //  0x30 Size(8)
-	Unknown SubImageIndex; //  0x38 Size(30)
+	struct Unknown Animation; //  0x30 Size(8)
+	struct Unknown SubImageIndex; //  0x38 Size(30)
 	char bUseRealTime; //  0x68 Size(1)
 };
 
 // Class Engine.ParticleModuleSubUVMovie
 struct UParticleModuleSubUVMovie : UParticleModuleSubUV {
 	char bUseEmitterTime; //  0x70 Size(1)
-	Unknown FrameRate; //  0x78 Size(30)
+	struct Unknown FrameRate; //  0x78 Size(30)
 	int32_t StartingFrame; //  0xa8 Size(4)
 };
 
 // Class Engine.ParticleModuleTrailSource
 struct UParticleModuleTrailSource : UParticleModuleTrailBase {
-	Unknown SourceMethod; //  0x30 Size(1)
+	char SourceMethod; //  0x30 Size(1)
 	struct FName SourceName; //  0x34 Size(8)
-	Unknown SourceStrength; //  0x40 Size(30)
+	struct Unknown SourceStrength; //  0x40 Size(30)
 	char bLockSourceStength; //  0x70 Size(1)
 	int32_t SourceOffsetCount; //  0x74 Size(4)
-	Unknown SourceOffsetDefaults; //  0x78 Size(10)
-	Unknown SelectionMethod; //  0x88 Size(1)
+	struct TArray<Unknown> SourceOffset; //  0x78 Size(10)
+	char SelectionMethod; //  0x88 Size(1)
 	char bInheritRotation; //  0x8c Size(1)
 };
 
@@ -10476,7 +10476,7 @@ struct UParticleModuleTypeDataAnimTrail : UParticleModuleTypeDataBase {
 
 // Class Engine.ParticleModuleTypeDataBeam2
 struct UParticleModuleTypeDataBeam2 : UParticleModuleTypeDataBase {
-	Unknown BeamMethod; //  0x30 Size(1)
+	char BeamMethod; //  0x30 Size(1)
 	int32_t TextureTile; //  0x34 Size(4)
 	float TextureTileDistance; //  0x38 Size(4)
 	int32_t Sheets; //  0x3c Size(4)
@@ -10486,10 +10486,10 @@ struct UParticleModuleTypeDataBeam2 : UParticleModuleTypeDataBase {
 	char bAlwaysOn; //  0x4c Size(1)
 	int32_t UpVectorStepSize; //  0x50 Size(4)
 	struct FName BranchParentName; //  0x54 Size(8)
-	Unknown Distance; //  0x60 Size(30)
-	Unknown TaperMethod; //  0x90 Size(1)
-	Unknown TaperFactor; //  0x98 Size(30)
-	Unknown TaperScale; //  0xc8 Size(30)
+	struct Unknown Distance; //  0x60 Size(30)
+	char TaperMethod; //  0x90 Size(1)
+	struct Unknown TaperFactor; //  0x98 Size(30)
+	struct Unknown TaperScale; //  0xc8 Size(30)
 	char RenderGeometry; //  0xf8 Size(1)
 	char RenderDirectLine; //  0xf8 Size(1)
 	char RenderLines; //  0xf8 Size(1)
@@ -10498,35 +10498,35 @@ struct UParticleModuleTypeDataBeam2 : UParticleModuleTypeDataBase {
 
 // Class Engine.ParticleModuleTypeDataGpu
 struct UParticleModuleTypeDataGpu : UParticleModuleTypeDataBase {
-	Unknown EmitterInfo; //  0x30 Size(280)
-	Unknown ResourceData; //  0x2b0 Size(160)
+	struct Unknown EmitterInfo; //  0x30 Size(280)
+	struct Unknown ResourceData; //  0x2b0 Size(160)
 	float CameraMotionBlurAmount; //  0x410 Size(4)
 	char bClearExistingParticlesOnInit; //  0x414 Size(1)
 };
 
 // Class Engine.ParticleModuleTypeDataMesh
 struct UParticleModuleTypeDataMesh : UParticleModuleTypeDataBase {
-	Unknown Mesh; //  0x30 Size(8)
+	struct Unknown Mesh; //  0x30 Size(8)
 	float LODSizeScale; //  0x40 Size(4)
 	char bUseStaticMeshLODs; //  0x44 Size(1)
 	char CastShadows; //  0x44 Size(1)
 	char DoCollisions; //  0x44 Size(1)
-	Unknown MeshAlignment; //  0x45 Size(1)
+	char MeshAlignment; //  0x45 Size(1)
 	char bOverrideMaterial; //  0x46 Size(1)
-	char bOverrideDefaultMotionBlurSettings; //  0x46 Size(1)
+	char bOverrideDefaultMotionBlurSetti; //  0x46 Size(1)
 	char bEnableMotionBlur; //  0x46 Size(1)
-	Unknown RollPitchYawRange; //  0x48 Size(48)
-	Unknown AxisLockOption; //  0x90 Size(1)
+	struct Unknown RollPitchYawRange; //  0x48 Size(48)
+	char AxisLockOption; //  0x90 Size(1)
 	char bCameraFacing; //  0x91 Size(1)
-	Unknown CameraFacingUpAxisOption; //  0x92 Size(1)
-	Unknown CameraFacingOption; //  0x93 Size(1)
+	char CameraFacingUpAxisOption; //  0x92 Size(1)
+	char CameraFacingOption; //  0x93 Size(1)
 	char bApplyParticleRotationAsSpin; //  0x94 Size(1)
 	char bFaceCameraDirectionRatherThanPosition; //  0x94 Size(1)
 	char bCollisionsConsiderPartilceSize; //  0x94 Size(1)
 };
 
-// Class Engine.ParticleModuleTypeDataRibbo
-struct UParticleModuleTypeDataRibbot : UParticleModuleTypeDataBase {
+// Class Engine.ParticleModuleTypeDataRibbon
+struct UParticleModuleTypeDataRibbon : UParticleModuleTypeDataBase {
 	int32_t MaxTessellationBetweenParticles; //  0x30 Size(4)
 	int32_t SheetsPerTrail; //  0x34 Size(4)
 	int32_t MaxTrailCount; //  0x38 Size(4)
@@ -10537,7 +10537,7 @@ struct UParticleModuleTypeDataRibbot : UParticleModuleTypeDataBase {
 	char bEnablePreviousTangentRecalculation; //  0x40 Size(1)
 	char bTangentRecalculationEveryFrame; //  0x40 Size(1)
 	char bSpawnInitialParticle; //  0x40 Size(1)
-	Unknown RenderAxis; //  0x44 Size(1)
+	char RenderAxis; //  0x44 Size(1)
 	float TangentSpawningScalar; //  0x48 Size(4)
 	char bRenderGeometry; //  0x4c Size(1)
 	char bRenderSpawnPoints; //  0x4c Size(1)
@@ -10552,16 +10552,16 @@ struct UParticleModuleTypeDataRibbot : UParticleModuleTypeDataBase {
 // Class Engine.ParticleModuleVectorFieldGlobal
 struct UParticleModuleVectorFieldGlobal : UParticleModuleVectorFieldBase {
 	char bOverrideGlobalVectorFieldTightness; //  0x30 Size(1)
-	float Glob; //  0x34 Size(4)
-	float GlobrrideGlobalVectorFn; //  0x38 Size(4)
+	float GlobalVectorFieldScale; //  0x34 Size(4)
+	float GlobalVectorFieldTightness; //  0x38 Size(4)
 };
 
-// Class Engine.ParticleModuleVectorFieldLo
-struct UParticleModuleVectorFieldLot : UParticleModuleVectorFieldBase {
-	Unknown VectorField; //  0x30 Size(8)
-	Unknown RelativeTranslation; //  0x38 Size(c)
-	Unknown RelativeRotation; //  0x44 Size(c)
-	Unknown RelativeScale3D; //  0x50 Size(c)
+// Class Engine.ParticleModuleVectorFieldLocal
+struct UParticleModuleVectorFieldLocal : UParticleModuleVectorFieldBase {
+	struct Unknown VectorField; //  0x30 Size(8)
+	struct Unknown RelativeTranslation; //  0x38 Size(c)
+	struct Unknown RelativeRotation; //  0x44 Size(c)
+	struct Unknown RelativeScale3D; //  0x50 Size(c)
 	float Intensity; //  0x5c Size(4)
 	float Tightness; //  0x60 Size(4)
 	char bIgnoreComponentTransform; //  0x64 Size(1)
@@ -10571,27 +10571,27 @@ struct UParticleModuleVectorFieldLot : UParticleModuleVectorFieldBase {
 	char bUseFixDT; //  0x64 Size(1)
 };
 
-// Class Engine.ParticleModuleVectorFieldRo
-struct UParticleModuleVectorFieldRot : UParticleModuleVectorFieldBase {
-	Unknown MinInitialRotation; //  0x30 Size(c)
-	Unknown MaxInitialRotation; //  0x3c Size(c)
+// Class Engine.ParticleModuleVectorFieldRotati
+struct UParticleModuleVectorFieldRotati : UParticleModuleVectorFieldBase {
+	struct Unknown MinInitialRotation; //  0x30 Size(c)
+	struct Unknown MaxInitialRotation; //  0x3c Size(c)
 };
 
-// Class Engine.ParticleModuleVectorFieldRo
-struct UParticleModuleVectorFieldRot : UParticleModuleVectorFieldBase {
-	Unknown RotationRate; //  0x30 Size(c)
+// Class Engine.ParticleModuleVectorFieldRotati
+struct UParticleModuleVectorFieldRotati : UParticleModuleVectorFieldBase {
+	struct Unknown RotationRate; //  0x30 Size(c)
 };
 
 // Class Engine.ParticleModuleVectorFieldScale
 struct UParticleModuleVectorFieldScale : UParticleModuleVectorFieldBase {
-	Unknown VectorFieldScale; //  0x30 Size(8)
-	Unknown VectorFieldScaleRaw; //  0x38 Size(30)
+	struct Unknown VectorFieldScale; //  0x30 Size(8)
+	struct Unknown VectorFieldScaleRaw; //  0x38 Size(30)
 };
 
 // Class Engine.ParticleModuleVectorFieldScaleOverLife
 struct UParticleModuleVectorFieldScaleOverLife : UParticleModuleVectorFieldBase {
-	Unknown VectorFieldScaleOverLife; //  0x30 Size(8)
-	Unknown VectorFieldScaleOverLifeRaw; //  0x38 Size(30)
+	struct Unknown VectorFieldScaleOverLife; //  0x30 Size(8)
+	struct Unknown VectorFieldScaleOverLifeRaw; //  0x38 Size(30)
 };
 
 // Class Engine.ParticleModuleVelocityBase
@@ -10602,30 +10602,30 @@ struct UParticleModuleVelocityBase : UParticleModule {
 
 // Class Engine.ParticleModuleVelocity
 struct UParticleModuleVelocity : UParticleModuleVelocityBase {
-	Unknown StartVelocity; //  0x38 Size(48)
-	Unknown StartVelocityRadial; //  0x80 Size(30)
+	struct Unknown StartVelocity; //  0x38 Size(48)
+	struct Unknown StartVelocityRadial; //  0x80 Size(30)
 };
 
 // Class Engine.ParticleModuleVelocity_Seeded
 struct UParticleModuleVelocity_Seeded : UParticleModuleVelocity {
-	Unknown RandomSeedInfo; //  0xb0 Size(20)
+	struct Unknown RandomSeedInfo; //  0xb0 Size(20)
 };
 
 // Class Engine.ParticleModuleVelocityCone
 struct UParticleModuleVelocityCone : UParticleModuleVelocityBase {
-	Unknown Angle; //  0x38 Size(30)
-	Unknown Velocity; //  0x68 Size(30)
-	Unknown Direction; //  0x98 Size(c)
+	struct Unknown Angle; //  0x38 Size(30)
+	struct Unknown Velocity; //  0x68 Size(30)
+	struct Unknown Direction; //  0x98 Size(c)
 };
 
 // Class Engine.ParticleModuleVelocityInheritParent
 struct UParticleModuleVelocityInheritParent : UParticleModuleVelocityBase {
-	Unknown Scale; //  0x38 Size(48)
+	struct Unknown Scale; //  0x38 Size(48)
 };
 
 // Class Engine.ParticleModuleVelocityOverLifetime
 struct UParticleModuleVelocityOverLifetime : UParticleModuleVelocityBase {
-	Unknown VelOverLife; //  0x38 Size(48)
+	struct Unknown VelOverLife; //  0x38 Size(48)
 	char Absolute; //  0x80 Size(1)
 };
 
@@ -10635,47 +10635,47 @@ struct UParticleSystem : UFXSystemAsset {
 	float UpdateTime_Delta; //  0x34 Size(4)
 	float WarmupTime; //  0x38 Size(4)
 	float WarmupTickRate; //  0x3c Size(4)
-	Unknown Emitters; //  0x40 Size(10)
-	Unknown PreviewComponent; //  0x50 Size(8)
-	Unknown CurveEdSetup; //  0x58 Size(8)
+	struct TArray<Unknown> Emitters; //  0x40 Size(10)
+	struct Unknown PreviewComponent; //  0x50 Size(8)
+	struct Unknown CurveEdSetup; //  0x58 Size(8)
 	float LODDistanceCheckTime; //  0x60 Size(4)
 	float MacroUVRadius; //  0x64 Size(4)
-	Unknown LODDistances; //  0x68 Size(10)
-	Unknown LODSettings; //  0x78 Size(10)
-	Unknown FixedRelativeBoundingBox; //  0x88 Size(1c)
+	struct TArray<Unknown> LODDistances; //  0x68 Size(10)
+	struct TArray<Unknown> LODSettings; //  0x78 Size(10)
+	struct Unknown FixedRelativeBoundingBox; //  0x88 Size(1c)
 	float SecondsBeforeInactive; //  0xa4 Size(4)
 	float Delay; //  0xa8 Size(4)
 	float DelayLow; //  0xac Size(4)
 	char bOrientZAxisTowardCamera; //  0xb0 Size(1)
-	char bUseFixedRelativeBoundingBo; //  0xb0 Size(1)
+	char bUseFixedRelativeBoundingBox; //  0xb0 Size(1)
 	char bShouldResetPeakCounts; //  0xb0 Size(1)
 	char bHasPhysics; //  0xb0 Size(1)
 	char bUseRealtimeThumbnail; //  0xb0 Size(1)
 	char ThumbnailImageOutOfDate; //  0xb0 Size(1)
-	char bUseDelayRange; //  0xb1 Size(1)
+	char bUse; //  0xb1 Size(1)
 	char bAllowManagedTicking; //  0xb1 Size(1)
 	char bAutoDeactivate; //  0xb1 Size(1)
 	char bRegenerateLODDuplicate; //  0xb1 Size(1)
-	Unknown SystemUpdateMode; //  0xb2 Size(1)
-	Unknown LODMethod; //  0xb3 Size(1)
-	Unknown InsignificantReaction; //  0xb4 Size(1)
-	Unknown OcclusionBoundsMethod; //  0xb5 Size(1)
-	Unknown MaxSignificanceLevel; //  0xb7 Size(1)
+	char SystemUpdateMode; //  0xb2 Size(1)
+	char LODMethod; //  0xb3 Size(1)
+	enum class Unknow InsignificantReaction; //  0xb4 Size(1)
+	char OcclusionBoundsMethod; //  0xb5 Size(1)
+	enum class Unknow MaxSignificanceLevel; //  0xb7 Size(1)
 	uint32_t MinTimeBetweenTicks; //  0xb8 Size(4)
 	float InsignificanceDelay; //  0xbc Size(4)
-	Unknown MacroUVPosition; //  0xc0 Size(c)
-	Unknown CustomOcclusionBounds; //  0xcc Size(1c)
-	Unknown SoloTracking; //  0xe8 Size(10)
-	Unknown NamedMaterialSlots; //  0xf8 Size(10)
+	struct Unknown MacroUVPosition; //  0xc0 Size(c)
+	struct Unknown CustomOcclusionBounds; //  0xcc Size(1c)
+	struct TArray<Unknown> SoloTracking; //  0xe8 Size(10)
+	struct TArray<Unknown> NamedMaterialSlots; //  0xf8 Size(10)
 
-	char ContainsEmitterType(Unknown TypeData); // Function Engine.ParticleSystem.ContainsEmitterType(Final|Native|Public|BlueprintCallable) // <Game+0x3da16e0>
+	char ContainsEmitterType(struct Unknown* Type); // Function Engine.ParticleSystem.ContainsEmitterType(Final|Native|Public|BlueprintCallable) // <Game+0x3dae3a0>
 };
 
 // Class Engine.ParticleSystemComponent
 struct UParticleSystemComponent : UFXSystemComponent {
-	Unknown Template; //  0x4b8 Size(8)
-	Unknown EmitterMaterials; //  0x4c0 Size(10)
-	Unknown SkelMeshComponents; //  0x4d0 Size(10)
+	struct Unknown Template; //  0x4b8 Size(8)
+	struct TArray<Unknown> EmitterMaterials; //  0x4c0 Size(10)
+	struct TArray<Unknown> SkelMeshComponents; //  0x4d0 Size(10)
 	char bResetOnDetach; //  0x4e1 Size(1)
 	char bUpdateOnDedicatedServer; //  0x4e1 Size(1)
 	char bAllowRecycling; //  0x4e1 Size(1)
@@ -10684,30 +10684,30 @@ struct UParticleSystemComponent : UFXSystemComponent {
 	char bWarmingUp; //  0x4e2 Size(1)
 	char bOverrideLODMethod; //  0x4e2 Size(1)
 	char bSkipUpdateDynamicDataDuringTick; //  0x4e2 Size(1)
-	Unknown LODMethod; //  0x4ed Size(1)
-	Unknown RequiredSignificance; //  0x4ee Size(1)
-	Unknown InstanceParameters; //  0x4f0 Size(10)
+	char LODMethod; //  0x4ed Size(1)
+	enum class Unknow RequiredSignificance; //  0x4ee Size(1)
+	struct TArray<Unknown> InstanceParameters; //  0x4f0 Size(10)
 	struct FMulticastInlineDelegate OnParticleSpawn; //  0x500 Size(10)
 	struct FMulticastInlineDelegate OnParticleBurst; //  0x510 Size(10)
 	struct FMulticastInlineDelegate OnParticleDeath; //  0x520 Size(10)
 	struct FMulticastInlineDelegate OnParticleCollide; //  0x530 Size(10)
 	char bOldPositionValid; //  0x540 Size(1)
-	Unknown OldPosition; //  0x544 Size(c)
-	Unknown PartSysVelocity; //  0x550 Size(c)
+	struct Unknown OldPosition; //  0x544 Size(c)
+	struct Unknown PartSysVelocity; //  0x550 Size(c)
 	float WarmupTime; //  0x55c Size(4)
 	float WarmupTickRate; //  0x560 Size(4)
 	float SecondsBeforeInactive; //  0x578 Size(4)
 	float MaxTimeBeforeForceUpdateTransform; //  0x580 Size(4)
-	Unknown ReplayClips; //  0x5a0 Size(10)
+	struct TArray<Unknown> ReplayClips; //  0x5a0 Size(10)
 	float CustomTimeDilation; //  0x5b8 Size(4)
-	Unknown AutoAttachParent; //  0x610 Size(8)
+	struct TWeakObjectPtr<struct Unknown> AutoAttachParent; //  0x610 Size(8)
 	struct FName AutoAttachSocketName; //  0x618 Size(8)
-	Unknown AutoAttachLocationRule; //  0x620 Size(1)
-	Unknown AutoAttachRotationRule; //  0x621 Size(1)
-	Unknown AutoAttachScaleRule; //  0x622 Size(1)
+	enum class Unknow AutoAttachLocationRule; //  0x620 Size(1)
+	enum class Unknow AutoAttachRotationRule; //  0x621 Size(1)
+	enum class Unknow AutoAttachScaleRule; //  0x622 Size(1)
 	struct FMulticastInlineDelegate OnSystemFinished; //  0x650 Size(10)
 
-	void SetTrailSourceData(struct FName InFirstSocketName, struct FName InSecondSocketName, Unknown InWidthMode, float InWidth); // Function Engine.ParticleSystemComponent.SetTrailSourceData(Final|Native|Public|BlueprintCallable) // <Game+0x3da3190>
+	void SetTrailSourceData(struct FName InFirstSocketName, struct FName InSecondSocketName, char InWidthMode, float InWidth); // Function Engine.ParticleSystemComponent.SetTrailSourceData(Final|Native|Public|BlueprintCallable) // <Game+0x3dafe50>
 };
 
 // Class Engine.ParticleSystemReplay
@@ -10718,87 +10718,87 @@ struct UParticleSystemReplay : Object {
 // Class Engine.PawnNoiseEmitterComponent
 struct UPawnNoiseEmitterComponent : UActorComponent {
 	char bAIPerceptionSystemCompatibilityMode; //  0xb0 Size(1)
-	Unknown LastRemoteNoisePosition; //  0xb4 Size(c)
+	struct Unknown LastRemoteNoisePosition; //  0xb4 Size(c)
 	float NoiseLifetime; //  0xc0 Size(4)
 	float LastRemoteNoiseVolume; //  0xc4 Size(4)
 	float LastRemoteNoiseTime; //  0xc8 Size(4)
 	float LastLocalNoiseVolume; //  0xcc Size(4)
 	float LastLocalNoiseTime; //  0xd0 Size(4)
 
-	void MakeNoise(Unknown NoiseMaker, float Loudness, Unknown& NoiseLocation); // Function Engine.PawnNoiseEmitterComponent.MakeNoise(BlueprintAuthorityOnly|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game+0x3da7610>
+	void MakeNoise(struct Unknown NoiseMaker, float Loudness, struct Unknown& NoiseLocation); // Function Engine.PawnNoiseEmitterComponent.MakeNoise(BlueprintAuthorityOnly|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game+0x3db4340>
 };
 
 // Class Engine.PhysicalAnimationComponent
 struct UPhysicalAnimationComponent : UActorComponent {
 	float StrengthMultiplyer; //  0xb0 Size(4)
-	Unknown SkeletalMeshComponent; //  0xb8 Size(8)
+	struct Unknown SkeletalMeshComponent; //  0xb8 Size(8)
 
-	void SetStrengthMultiplyer(float InStrengthMultiplyer); // Function Engine.PhysicalAnimationComponent.SetStrengthMultiplyer(Final|Native|Public|BlueprintCallable) // <Game+0x3da79f0>
+	void SetStrengthMultiplyer(float InStrengthMultiplyer); // Function Engine.PhysicalAnimationComponent.SetStrengthMultiplyer(Final|Native|Public|BlueprintCallable) // <Game+0x3db4720>
 };
 
 // Class Engine.PhysicalMaterialMask
 struct UPhysicalMaterialMask : Object {
 	int32_t UVChannelIndex; //  0x28 Size(4)
-	Unknown AddressX; //  0x2c Size(1)
-	Unknown AddressY; //  0x2d Size(1)
+	char AddressX; //  0x2c Size(1)
+	char AddressY; //  0x2d Size(1)
 };
 
 // Class Engine.PhysicsAsset
 struct UPhysicsAsset : Object {
-	Unknown BoundsBodies; //  0x30 Size(10)
-	Unknown SkeletalBodySetups; //  0x40 Size(10)
-	Unknown ConstraintSetup; //  0x50 Size(10)
-	Unknown SolverIterations; //  0x60 Size(18)
+	struct TArray<Unknown> BoundsBodies; //  0x30 Size(10)
+	struct TArray<Unknown> SkeletalBodySetups; //  0x40 Size(10)
+	struct TArray<Unknown> ConstraintSetup; //  0x50 Size(10)
+	struct Unknown SolverIterations; //  0x60 Size(18)
 	char bNotForDedicatedServer; //  0x78 Size(1)
-	Unknown ThumbnailInfo; //  0x120 Size(8)
-	Unknown BodySetup; //  0x128 Size(10)
+	struct Unknown ThumbnailInfo; //  0x120 Size(8)
+	struct TArray<Unknown> BodySetup; //  0x128 Size(10)
 };
 
 // Class Engine.SkeletalBodySetup
 struct USkeletalBodySetup : UBodySetup {
 	char bSkipScaleFromAnimation; //  0x2d0 Size(1)
-	Unknown PhysicalAnimationData; //  0x2d8 Size(10)
+	struct TArray<Unknown> PhysicalAnimationData; //  0x2d8 Size(10)
 };
 
 // Class Engine.PhysicsCollisionHandler
 struct UPhysicsCollisionHandler : Object {
 	float ImpactThreshold; //  0x28 Size(4)
-	float ImpactReFireDelay; //  0x2c Size(4)
-	Unknown DefaultImpactSound; //  0x30 Size(8)
+	float ImpactReFire; //  0x2c Size(4)
+	struct Unknown DefaultImpactSound; //  0x30 Size(8)
 	float LastImpactSoundTime; //  0x38 Size(4)
 };
 
 // Class Engine.PhysicsConstraintActor
 struct APhysicsConstraintActor : ARigidBodyBase {
-	Unknown ConstraintComp; //  0x310 Size(8)
-	Unknown ConstraintActor1; //  0x318 Size(8)
-	Unknown ConstraintActor2; //  0x320 Size(8)
+	struct Unknown ConstraintComp; //  0x310 Size(8)
+	struct Unknown ConstraintActor1; //  0x318 Size(8)
+	struct Unknown ConstraintActor2; //  0x320 Size(8)
 	char bDisableCollision; //  0x328 Size(1)
 };
 
 // Class Engine.PhysicsConstraintComponent
 struct UPhysicsConstraintComponent : USceneComponent {
-	Unknown ConstraintActor1; //  0x238 Size(8)
-	Unknown ComponentName1; //  0x240 Size(8)
-	Unknown ConstraintActor2; //  0x248 Size(8)
-	Unknown ComponentName2; //  0x250 Size(8)
-	Unknown ConstraintSetup; //  0x268 Size(8)
+	struct Unknown ConstraintActor1; //  0x238 Size(8)
+	struct Unknown ComponentName1; //  0x240 Size(8)
+	struct Unknown ConstraintActor2; //  0x248 Size(8)
+	struct Unknown ComponentName2; //  0x250 Size(8)
+	struct Unknown ConstraintSetup; //  0x268 Size(8)
 	struct FMulticastInlineDelegate OnConstraintBroken; //  0x270 Size(10)
-	Unknown ConstraintInstance; //  0x280 Size(1b8)
+	struct Unknown ConstraintInstance; //  0x280 Size(1b8)
 
-	void SetOrientationDriveTwistAndSwing(char bEnableTwistDrive, char bEnableSwingDrive); // Function Engine.PhysicsConstraintComponent.SetOrientationDriveTwistAndSwing(Final|Native|Public|BlueprintCallable) // <Game+0x3dab410>
+	void SetOrientationDriveTwistAndSwing(char bEnableTwist, char bEnableSwing); // Function Engine.PhysicsConstraintComponent.SetOrientationDriveTwistAndSwing(Final|Native|Public|BlueprintCallable) // <Game+0x3db8160>
 };
 
 // Class Engine.PhysicsConstraintTemplate
 struct UPhysicsConstraintTemplate : Object {
-	Unknown DefaultInstance; //  0x28 Size(1b8)
-	Unknown ProfileHandles; //  0x1e0 Size(10)
-	Unknown DefaultProfile; //  0x1f0 Size(104)
+	struct Unknown DefaultInstance; //  0x28 Size(1b8)
+	struct TArray<Unknown> ProfileHandles; //  0x1e0 Size(10)
+	struct Unknown DefaultProfile; //  0x1f0 Size(104)
 };
 
 // Class Engine.PhysicsHandleComponent
 struct UPhysicsHandleComponent : UActorComponent {
-	Unknown Grab; //  0xb0 Size(8)
+	struct Unknown GrabbedComponent; //  0xb0 Size(8)
 	char bSoftAngularConstraint; //  0xc0 Size(1)
 	char bSoftLinearConstraint; //  0xc0 Size(1)
 	char bInterpolateTarget; //  0xc0 Size(1)
@@ -10808,7 +10808,7 @@ struct UPhysicsHandleComponent : UActorComponent {
 	float AngularStiffness; //  0xd0 Size(4)
 	float InterpolationSpeed; //  0x140 Size(4)
 
-	void SetTargetRotation(Unknown NewRotation); // Function Engine.PhysicsHandleComponent.SetTargetRotation(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game+0x3dab650>
+	void SetTargetRotation(struct Unknown NewRotation); // Function Engine.PhysicsHandleComponent.SetTargetRotation(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game+0x3db83a0>
 };
 
 // Class Engine.PhysicsSettings
@@ -10824,19 +10824,19 @@ struct UPhysicsSettings : UDeveloperSettings {
 	char bEnableStabilization; //  0x52 Size(1)
 	char bWarnMissingLocks; //  0x53 Size(1)
 	char bEnable2DPhysics; //  0x54 Size(1)
-	Unknown PhysicErrorCorrection; //  0x58 Size(34)
-	Unknown LockedAxis; //  0x8c Size(1)
-	Unknown DefaultDegreesOfFreedom; //  0x8d Size(1)
+	struct Unknown PhysicErrorCorrection; //  0x58 Size(34)
+	char LockedAxis; //  0x8c Size(1)
+	char DefaultDegreesOfFreedom; //  0x8d Size(1)
 	float BounceThresholdVelocity; //  0x90 Size(4)
-	Unknown FrictionCombineMode; //  0x94 Size(1)
-	Unknown RestitutionCombineMode; //  0x95 Size(1)
+	char FrictionCombineMode; //  0x94 Size(1)
+	char RestitutionCombineMode; //  0x95 Size(1)
 	float MaxAngularVelocity; //  0x98 Size(4)
 	float MaxDepenetrationVelocity; //  0x9c Size(4)
 	float ContactOffsetMultiplier; //  0xa0 Size(4)
 	float MinContactOffset; //  0xa4 Size(4)
 	float MaxContactOffset; //  0xa8 Size(4)
 	char bSimulateSkeletalMeshOnDedicatedServer; //  0xac Size(1)
-	Unknown DefaultShapeComplexity; //  0xad Size(1)
+	char DefaultShapeComplexity; //  0xad Size(1)
 	char bDefaultHasComplexCollision; //  0xae Size(1)
 	char bSuppressFaceRemapTable; //  0xaf Size(1)
 	char bSupportUVFromHitResults; //  0xb0 Size(1)
@@ -10848,16 +10848,16 @@ struct UPhysicsSettings : UDeveloperSettings {
 	float AnimPhysicsMinDeltaTime; //  0xb8 Size(4)
 	char bSimulateAnimPhysicsAfterReset; //  0xbc Size(1)
 	float MaxPhysicsDeltaTime; //  0xc0 Size(4)
-	char bSub; //  0xc4 Size(1)
-	char bSubhysicsDe; //  0xc5 Size(1)
+	char bSubstepping; //  0xc4 Size(1)
+	char bSubsteppingAsync; //  0xc5 Size(1)
 	float MaxSubstepDeltaTime; //  0xc8 Size(4)
 	int32_t MaxSubsteps; //  0xcc Size(4)
 	float SyncSceneSmoothingFactor; //  0xd0 Size(4)
 	float InitialAverageFrameRate; //  0xd4 Size(4)
 	int32_t PhysXTreeRebuildRate; //  0xd8 Size(4)
-	Unknown PhysicalSurfaces; //  0xe0 Size(10)
-	Unknown DefaultBroadphaseSettings; //  0xf0 Size(40)
-	Unknown ChaosSettings; //  0x130 Size(3)
+	struct TArray<Unknown> PhysicalSurfaces; //  0xe0 Size(10)
+	struct Unknown DefaultBroadphaseSettings; //  0xf0 Size(40)
+	struct Unknown ChaosSettings; //  0x130 Size(3)
 };
 
 // Class Engine.PhysicsSpringComponent
@@ -10866,16 +10866,16 @@ struct UPhysicsSpringComponent : USceneComponent {
 	float SpringDamping; //  0x23c Size(4)
 	float SpringLengthAtRest; //  0x240 Size(4)
 	float SpringRadius; //  0x244 Size(4)
-	Unknown SpringChannel; //  0x248 Size(1)
+	char SpringChannel; //  0x248 Size(1)
 	char bIgnoreSelf; //  0x249 Size(1)
 	float SpringCompression; //  0x24c Size(4)
 
-	Unknown GetSpringRestingPoint(); // Function Engine.PhysicsSpringComponent.GetSpringRestingPoint(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game+0x3daf480>
+	struct Unknown GetSpringRestingPoint(); // Function Engine.PhysicsSpringComponent.GetSpringRestingPoint(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game+0x3dbc220>
 };
 
 // Class Engine.PhysicsThruster
 struct APhysicsThruster : ARigidBodyBase {
-	Unknown ThrusterComponent; //  0x310 Size(8)
+	struct Unknown ThrusterComponent; //  0x310 Size(8)
 };
 
 // Class Engine.PhysicsThrusterComponent
@@ -10885,15 +10885,15 @@ struct UPhysicsThrusterComponent : USceneComponent {
 
 // Class Engine.PlanarReflection
 struct APlanarReflection : ASceneCapture {
-	Unknown PlanarReflectionComponent; //  0x320 Size(8)
+	struct Unknown PlanarReflectionComponent; //  0x320 Size(8)
 	char bShowPreviewPlane; //  0x328 Size(1)
 
-	void OnInterpToggle(char bEnable); // Function Engine.PlanarReflection.OnInterpToggle(Final|Native|Public|BlueprintCallable) // <Game+0x3daf520>
+	void OnInterpToggle(char bEnable); // Function Engine.PlanarReflection.OnInterpToggle(Final|Native|Public|BlueprintCallable) // <Game+0x3dbc2c0>
 };
 
 // Class Engine.PlanarReflectionComponent
 struct UPlanarReflectionComponent : USceneCaptureComponent {
-	Unknown PreviewBox; //  0x2d0 Size(8)
+	struct Unknown PreviewBox; //  0x2d0 Size(8)
 	float NormalDistortionStrength; //  0x2d8 Size(4)
 	float PrefilterRoughness; //  0x2dc Size(4)
 	float PrefilterRoughnessDistance; //  0x2e0 Size(4)
@@ -10909,11 +10909,11 @@ struct UPlanarReflectionComponent : USceneCaptureComponent {
 	char bRenderSceneTwoSided; //  0x305 Size(1)
 };
 
-// Class Engine.PlaneReflectionCaptureCompo
-struct UPlaneReflectionCaptureCompot : UReflectionCaptureComponent {
+// Class Engine.PlaneReflectionCaptureComponent
+struct UPlaneReflectionCaptureComponent : UReflectionCaptureComponent {
 	float InfluenceRadiusScale; //  0x2c0 Size(4)
-	Unknown PreviewInfluenceRadius; //  0x2c8 Size(8)
-	Unknown PreviewCaptureBox; //  0x2d0 Size(8)
+	struct Unknown PreviewInfluenceRadius; //  0x2c8 Size(8)
+	struct Unknown PreviewCaptureBox; //  0x2d0 Size(8)
 };
 
 // Class Engine.PlatformEventsComponent
@@ -10921,33 +10921,33 @@ struct UPlatformEventsComponent : UActorComponent {
 	struct FMulticastInlineDelegate PlatformChangedToLaptopModeDelegate; //  0xb0 Size(10)
 	struct FMulticastInlineDelegate PlatformChangedToTabletModeDelegate; //  0xc0 Size(10)
 
-	char SupportsConvertibleLaptops(); // Function Engine.PlatformEventsComponent.SupportsConvertibleLaptops(Final|Native|Public|BlueprintCallable) // <Game+0x3db0530>
+	char SupportsConvertibleLaptops(); // Function Engine.PlatformEventsComponent.SupportsConvertibleLaptops(Final|Native|Public|BlueprintCallable) // <Game+0x3dbd2d0>
 };
 
-// Class Engine.PlatformInterfaceWebResponse
-struct UPlatformInterfaceWebResponse : Object {
+// Class Engine.PlatformInterfaceWebRespons
+struct UPlatformInterfaceWebRespons : Object {
 	struct FString OriginalURL; //  0x28 Size(10)
 	int32_t responsecode; //  0x38 Size(4)
 	int32_t Tag; //  0x3c Size(4)
 	struct FString StringResponse; //  0x40 Size(10)
-	Unknown BinaryResponse; //  0x50 Size(10)
+	struct TArray<Unknown> BinaryResponse; //  0x50 Size(10)
 
-	int32_t GetNumHeaders(); // Function Engine.PlatformInterfaceWebResponse.GetNumHeaders(Native|Public) // <Game+0x151a7d0>
+	int32_t GetNumHeaders(); // Function Engine.PlatformInterfaceWebRespons.GetNumHeaders(Native|Public) // <Game+0x151aee0>
 };
 
 // Class Engine.PlayerInput
 struct UPlayerInput : Object {
-	Unknown DebugExecBindings; //  0x120 Size(10)
-	Unknown InvertedAxis; //  0x160 Size(10)
+	struct TArray<Unknown> DebugExecBindings; //  0x120 Size(10)
+	struct TArray<Unknown> InvertedAxis; //  0x160 Size(10)
 
-	void SetMouseSensitivity(float Sensitivity); // Function Engine.PlayerInput.SetMouseSensitivity(Final|Exec|Native|Public) // <Game+0x3dbfd40>
+	void SetMouseSensitivity(float Sensitivity); // Function Engine.PlayerInput.SetMouseSensitivity(Final|Exec|Native|Public) // <Game+0x3dccbb0>
 };
 
 // Class Engine.PointLight
 struct APointLight : ALight {
-	Unknown PointLightComponent; //  0x320 Size(8)
+	struct Unknown PointLightComponent; //  0x320 Size(8)
 
-	void SetRadius(float NewRadius); // Function Engine.PointLight.SetRadius(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game+0x3dbfdc0>
+	void SetRadius(float NewRadius); // Function Engine.PointLight.SetRadius(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game+0x3dccc30>
 };
 
 // Class Engine.PointLightComponent
@@ -10958,12 +10958,12 @@ struct UPointLightComponent : ULocalLightComponent {
 	float SoftSourceRadius; //  0x3a4 Size(4)
 	float SourceLength; //  0x3a8 Size(4)
 
-	void SetSourceRadius(float bNewValue); // Function Engine.PointLightComponent.SetSourceRadius(Final|Native|Public|BlueprintCallable) // <Game+0x3dbff40>
+	void SetSourceRadius(float bNewValue); // Function Engine.PointLightComponent.SetSourceRadius(Final|Native|Public|BlueprintCallable) // <Game+0x3dccdb0>
 };
 
 // Class Engine.PoseAsset
 struct UPoseAsset : UAnimationAsset {
-	Unknown PoseContainer; //  0x80 Size(90)
+	struct Unknown PoseContainer; //  0x80 Size(90)
 	char bAdditivePose; //  0x110 Size(1)
 	int32_t BasePoseIndex; //  0x114 Size(4)
 	struct FName RetargetSource; //  0x118 Size(8)
@@ -10971,180 +10971,180 @@ struct UPoseAsset : UAnimationAsset {
 
 // Class Engine.PoseWatch
 struct UPoseWatch : Object {
-	Unknown Node; //  0x28 Size(8)
-	Unknown PoseWatchColour; //  0x30 Size(4)
+	struct Unknown Node; //  0x28 Size(8)
+	struct Unknown PoseWatchColour; //  0x30 Size(4)
 };
 
 // Class Engine.PostProcessComponent
 struct UPostProcessComponent : USceneComponent {
-	Unknown Settings; //  0x240 Size(5c0)
+	struct Unknown Settings; //  0x240 Size(5c0)
 	float Priority; //  0x800 Size(4)
 	float BlendRadius; //  0x804 Size(4)
 	float BlendWeight; //  0x808 Size(4)
 	char bEnabled; //  0x80c Size(1)
-	char bUnb; //  0x80c Size(1)
+	char bUnbound; //  0x80c Size(1)
 
-	void AddOrUpdateBlendable(Unknown InBlendableObject, float InWeight); // Function Engine.PostProcessComponent.AddOrUpdateBlendable(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game+0x3dbef10>
+	void AddOrUpdateBlendable(struct TScriptInterface<IUnknown> InBlendableObject, float InWeight); // Function Engine.PostProcessComponent.AddOrUpdateBlendable(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game+0x3dcbd80>
 };
 
 // Class Engine.PostProcessVolume
 struct APostProcessVolume : AVolume {
-	Unknown Settings; //  0x350 Size(5c0)
+	struct Unknown Settings; //  0x350 Size(5c0)
 	float Priority; //  0x910 Size(4)
 	float BlendRadius; //  0x914 Size(4)
 	float BlendWeight; //  0x918 Size(4)
 	char bEnabled; //  0x91c Size(1)
-	char bUnb; //  0x91c Size(1)
+	char bUnbound; //  0x91c Size(1)
 
-	void AddOrUpdateBlendable(Unknown InBlendableObject, float InWeight); // Function Engine.PostProcessVolume.AddOrUpdateBlendable(Final|Native|Public|BlueprintCallable) // <Game+0x3dbedc0>
+	void AddOrUpdateBlendable(struct TScriptInterface<IUnknown> InBlendableObject, float InWeight); // Function Engine.PostProcessVolume.AddOrUpdateBlendable(Final|Native|Public|BlueprintCallable) // <Game+0x3dcbc30>
 };
 
 // Class Engine.PrecomputedVisibilityOverrideVolume
 struct APrecomputedVisibilityOverrideVolume : AVolume {
-	Unknown OverrideVisibleActors; //  0x348 Size(10)
-	Unknown OverrideInvisibleActors; //  0x358 Size(10)
-	Unknown OverrideInvisibleLevels; //  0x368 Size(10)
+	struct TArray<Unknown> OverrideVisibleActors; //  0x348 Size(10)
+	struct TArray<Unknown> OverrideInvisibleActors; //  0x358 Size(10)
+	struct TArray<Unknown> OverrideInvisibleLevels; //  0x368 Size(10)
 };
 
 // Class Engine.PreviewMeshCollection
 struct UPreviewMeshCollection : UDataAsset {
-	Unknown Skeleton; //  0x38 Size(8)
-	Unknown SkeletalMeshes; //  0x40 Size(10)
+	struct Unknown Skeleton; //  0x38 Size(8)
+	struct TArray<Unknown> SkeletalMeshes; //  0x40 Size(10)
 };
 
 // Class Engine.PrimaryAssetLabel
 struct UPrimaryAssetLabel : UPrimaryDataAsset {
-	Unknown Rules; //  0x30 Size(c)
-	char bLab; //  0x3c Size(1)
+	struct Unknown Rules; //  0x30 Size(c)
+	char bLabelAssetsInMyDirectory; //  0x3c Size(1)
 	char bIsRuntimeLabel; //  0x3c Size(1)
-	Unknown ExplicitAssets; //  0x40 Size(10)
-	Unknown ExplicitBlueprints; //  0x50 Size(10)
-	Unknown AssetCollection; //  0x60 Size(8)
+	struct TArray<Unknown> ExplicitAssets; //  0x40 Size(10)
+	struct TArray<Unknown> ExplicitBlueprints; //  0x50 Size(10)
+	struct Unknown AssetCollection; //  0x60 Size(8)
 };
 
-// Class Engine.ProxyLODMeshSimplificationSettings
-struct UProxyLODMeshSimplificationSettings : UDeveloperSettings {
+// Class Engine.ProxyLODMeshSimplificationSetti
+struct UProxyLODMeshSimplificationSetti : UDeveloperSettings {
 	struct FName ProxyLODMeshReductionModuleName; //  0x38 Size(8)
 };
 
 // Class Engine.RadialForceActor
 struct ARadialForceActor : ARigidBodyBase {
-	Unknown ForceComponent; //  0x310 Size(8)
+	struct Unknown ForceComponent; //  0x310 Size(8)
 
-	void ToggleForce(); // Function Engine.RadialForceActor.ToggleForce(Native|Public|BlueprintCallable) // <Game+0x1f14780>
+	void ToggleForce(); // Function Engine.RadialForceActor.ToggleForce(Native|Public|BlueprintCallable) // <Game+0x1f1b4e0>
 };
 
 // Class Engine.RadialForceComponent
 struct URadialForceComponent : USceneComponent {
 	float Radius; //  0x238 Size(4)
-	Unknown Falloff; //  0x23c Size(1)
+	char Falloff; //  0x23c Size(1)
 	float ImpulseStrength; //  0x240 Size(4)
 	char bImpulseVelChange; //  0x244 Size(1)
 	char bIgnoreOwningActor; //  0x244 Size(1)
 	float ForceStrength; //  0x248 Size(4)
-	float DestructibleDamage; //  0x24c Size(4)
-	Unknown ObjectTypesToAffect; //  0x250 Size(10)
+	float Destructible; //  0x24c Size(4)
+	struct TArray<Unknown> ObjectTypesToAffect; //  0x250 Size(10)
 
-	void RemoveObjectTypeToAffect(Unknown ObjectType); // Function Engine.RadialForceComponent.RemoveObjectTypeToAffect(Native|Public|BlueprintCallable) // <Game+0x3dcb260>
+	void RemoveObjectTypeToAffect(char ObjectType); // Function Engine.RadialForceComponent.RemoveObjectTypeToAffect(Native|Public|BlueprintCallable) // <Game+0x3dd8110>
 };
 
 // Class Engine.RectLight
 struct ARectLight : ALight {
-	Unknown RectLightComponent; //  0x320 Size(8)
+	struct Unknown RectLightComponent; //  0x320 Size(8)
 };
 
 // Class Engine.RectLightComponent
 struct URectLightComponent : ULocalLightComponent {
 	float SourceWidth; //  0x398 Size(4)
 	float SourceHeight; //  0x39c Size(4)
-	float BarnDoorAngle; //  0x3a0 Size(4)
-	float BarnDoorLength; //  0x3a4 Size(4)
-	Unknown SourceTexture; //  0x3a8 Size(8)
+	float Barn; //  0x3a0 Size(4)
+	float Barn; //  0x3a4 Size(4)
+	struct Unknown SourceTexture; //  0x3a8 Size(8)
 
-	void SetSourceWidth(float bNewValue); // Function Engine.RectLightComponent.SetSourceWidth(Final|Native|Public|BlueprintCallable) // <Game+0x3dcb510>
+	void SetSourceWidth(float bNewValue); // Function Engine.RectLightComponent.SetSourceWidth(Final|Native|Public|BlueprintCallable) // <Game+0x3dd83c0>
 };
 
 // Class Engine.RendererSettings
 struct URendererSettings : UDeveloperSettings {
-	char bMob; //  0x38 Size(1)
+	char bMobileDisableVertexFog; //  0x38 Size(1)
 	int32_t MaxMobileCascades; //  0x3c Size(4)
-	Unknown MobileMSAASampleCount; //  0x40 Size(1)
-	char bMob; //  0x44 Size(1)
-	char bMobleMSAASampleCount; //  0x44 Size(1)
-	char bMob; //  0x44 Size(1)
-	char bMobleMSAASampleCount; //  0x44 Size(1)
+	char MobileMSAASampleCount; //  0x40 Size(1)
+	char bMobileUseLegacyShadingModel; //  0x44 Size(1)
+	char bMobileAllow; //  0x44 Size(1)
+	char bMobileAllowSoftwareOcclusionCulling; //  0x44 Size(1)
+	char bMobileVirtualTextures; //  0x44 Size(1)
 	char bDiscardUnusedQualityLevels; //  0x44 Size(1)
 	char bOcclusionCulling; //  0x44 Size(1)
 	float MinScreenRadiusForLights; //  0x48 Size(4)
-	float MinScreenRadiusForEarlyZPass; //  0x4c Size(4)
+	float MinScreenRadiusForEarlyZPas; //  0x4c Size(4)
 	float MinScreenRadiusForCSMdepth; //  0x50 Size(4)
 	char bPrecomputedVisibilityWarning; //  0x54 Size(1)
 	char bUseCullDistanceVolumes; //  0x54 Size(1)
 	char bTextureStreaming; //  0x54 Size(1)
-	char bUseDXT5NormalMaps; //  0x54 Size(1)
+	char bUse; //  0x54 Size(1)
 	char bVirtualTextures; //  0x54 Size(1)
 	char bVirtualTexturedLightmaps; //  0x54 Size(1)
 	uint32_t VirtualTextureTileSize; //  0x58 Size(4)
 	uint32_t VirtualTextureTileBorderSize; //  0x5c Size(4)
-	uint32_t VirtualTextureFeedbackFacto; //  0x60 Size(4)
+	uint32_t VirtualTextureFeedbackFactor; //  0x60 Size(4)
 	char bVirtualTextureEnableCompressZlib; //  0x64 Size(1)
 	char bVirtualTextureEnableCompressCrunch; //  0x64 Size(1)
 	char bClearCoatEnableSecondNormal; //  0x64 Size(1)
-	char bPreIntegratedSkinBRDF; //  0x64 Size(1)
+	char bPreIntegratedSkinBR; //  0x64 Size(1)
 	char bAnisotropicBRDF; //  0x64 Size(1)
 	int32_t ReflectionCaptureResolution; //  0x68 Size(4)
-	char ReflectionEnvironmentLightmapMixBasedOnRoughness; //  0x6c Size(1)
+	char ReflectionEnvironmentLightmapMi; //  0x6c Size(1)
 	char bForwardShading; //  0x6c Size(1)
 	char bVertexFoggingForOpaque; //  0x6c Size(1)
 	char bAllowStaticLighting; //  0x6c Size(1)
 	char bUseNormalMapsForStaticLighting; //  0x6c Size(1)
 	char bGenerateMeshDistanceFields; //  0x6c Size(1)
 	char bEightBitMeshDistanceFields; //  0x6c Size(1)
-	char bGenerateLandscapeGIData; //  0x6c Size(1)
+	char bGenerateLandscapeGI; //  0x6c Size(1)
 	char bCompressMeshDistanceFields; //  0x6d Size(1)
 	float TessellationAdaptiv; //  0x70 Size(4)
 	char bSeparateTranslucency; //  0x74 Size(1)
-	Unknown TranslucentSortPolicy; //  0x78 Size(1)
-	Unknown TranslucentSortAxis; //  0x7c Size(c)
-	Unknown CustomDepthStencil; //  0x88 Size(1)
+	char TranslucentSortPolicy; //  0x78 Size(1)
+	struct Unknown TranslucentSortAxis; //  0x7c Size(c)
+	char CustomDepthStencil; //  0x88 Size(1)
 	char bCustomDepthTaaJitter; //  0x8c Size(1)
-	Unknown bEnableAlphaChannelInPostProcessing; //  0x90 Size(1)
+	char bEnableAlphaChannelInPostProcessing; //  0x90 Size(1)
 	char bDefaultFeatureBloom; //  0x94 Size(1)
 	char bDefaultFeatureAmbientOcclusion; //  0x94 Size(1)
 	char bDefaultFeatureAmbientOcclusionStaticFraction; //  0x94 Size(1)
 	char bDefaultFeatureAutoExposure; //  0x94 Size(1)
-	Unknown DefaultFeatureAutoExposure; //  0x98 Size(1)
+	char DefaultFeatureAutoExposure; //  0x98 Size(1)
 	float DefaultFeatureAutoExposureBias; //  0x9c Size(4)
-	char bExtendDefaultLuminanceRangeInAutoExposureSettings; //  0xa0 Size(1)
+	char bExtendDefaultLuminanceRangeInAutoExposureSetti; //  0xa0 Size(1)
 	char bUsePreExposure; //  0xa0 Size(1)
 	char bEnablePreExposureOnlyInTheEditor; //  0xa0 Size(1)
 	char bDefaultFeatureMotionBlur; //  0xa0 Size(1)
 	char bDefaultFeatureLensFlare; //  0xa0 Size(1)
 	char bTemporalUpsampling; //  0xa0 Size(1)
-	char bSSGI; //  0xa0 Size(1)
-	Unknown DefaultFeatureAntiAliasing; //  0xa4 Size(1)
-	Unknown DefaultLightUnits; //  0xa5 Size(1)
-	Unknown DefaultBackBufferPixelFormat; //  0xa6 Size(1)
+	char bSSGD; //  0xa0 Size(1)
+	char DefaultFeatureAntiAliasing; //  0xa4 Size(1)
+	enum class Unknow DefaultLightUnits; //  0xa5 Size(1)
+	char DefaultBackBufferPixelFormat; //  0xa6 Size(1)
 	char bRenderUnbuiltPreviewShadowsInGame; //  0xa8 Size(1)
 	char bStencilForLODDither; //  0xa8 Size(1)
-	Unknown EarlyZPass; //  0xac Size(1)
+	char EarlyZPass; //  0xac Size(1)
 	char bEarlyZPassOnlyMaterialMasking; //  0xb0 Size(1)
 	char bDBuffer; //  0xb0 Size(1)
-	Unknown ClearSceneMethod; //  0xb4 Size(1)
+	char ClearSceneMethod; //  0xb4 Size(1)
 	char bBasePassOutputsVelocity; //  0xb8 Size(1)
-	char bVertexDeformationOutputsVelocity; //  0xb8 Size(1)
+	char bVertexDeformationOutputsVeloci; //  0xb8 Size(1)
 	char bSelectiveBasePassOutputs; //  0xb8 Size(1)
 	char bDefaultParticleCutouts; //  0xb8 Size(1)
 	int32_t GPUSimulationTextureSizeX; //  0xbc Size(4)
 	int32_t GPUSimulationTextureSizeY; //  0xc0 Size(4)
 	char bGlobalClipPlane; //  0xc4 Size(1)
-	Unknown GBufferFormat; //  0xc8 Size(1)
+	char GBufferFormat; //  0xc8 Size(1)
 	char bUseGPUMorphTargets; //  0xcc Size(1)
 	char bNvidiaAftermathEnabled; //  0xcc Size(1)
 	char bMultiView; //  0xcc Size(1)
-	char bMob; //  0xcc Size(1)
-	char bMobtiView; //  0xcc Size(1)
-	char bMob; //  0xcc Size(1)
+	char bMobilePostProcessing; //  0xcc Size(1)
+	char bMobileMultiView; //  0xcc Size(1)
+	char bMobileUseHWsRGBEncoding; //  0xcc Size(1)
 	char bRoundRobinOcclusion; //  0xcc Size(1)
 	char bODSCapture; //  0xcc Size(1)
 	char bMeshStreaming; //  0xcd Size(1)
@@ -11156,17 +11156,17 @@ struct URendererSettings : UDeveloperSettings {
 	char bSupportPointLightWholeSceneShadows; //  0xd4 Size(1)
 	char bSupportAtmosphericFog; //  0xd4 Size(1)
 	char bSupportSkyAtmosphere; //  0xd4 Size(1)
-	char bSupportSkyAtmosphereAffectsHeightFog; //  0xd4 Size(1)
+	char bSupportSkyAtmosphereAffectsHei; //  0xd4 Size(1)
 	char bSupportSkinCacheShaders; //  0xd5 Size(1)
-	Unknown DefaultSkinCacheBehavior; //  0xd8 Size(1)
+	enum class Unknow DefaultSkinCacheBehavior; //  0xd8 Size(1)
 	float SkinCacheSceneMemoryLimitInMB; //  0xdc Size(4)
-	char bMob; //  0xe0 Size(1)
-	char bMobCacheSceneMemoryLimitInMB; //  0xe0 Size(1)
-	char bMob; //  0xe0 Size(1)
-	char bMobCacheSceneMemoryLimitInMB; //  0xe0 Size(1)
+	char bMobileEnableStaticAndCSMShadowReceivers; //  0xe0 Size(1)
+	char bMobileEnableMovableLightCSMShaderCulliac; //  0xe0 Size(1)
+	char bMobileAllow; //  0xe0 Size(1)
+	char bMobileAllowMovableDirectionalLights; //  0xe0 Size(1)
 	uint32_t MobileNumDynamicPointLights; //  0xe4 Size(4)
-	char bMob; //  0xe8 Size(1)
-	char bMobleNumDynamicPointLights; //  0xe8 Size(1)
+	char bMobileDynamicPointLightsUs; //  0xe8 Size(1)
+	char bMobileAllowMovableSpotlights; //  0xe8 Size(1)
 	char bSupport16BitBoneIndex; //  0xe8 Size(1)
 	char bGPUSkinLimit2BoneInfluences; //  0xe8 Size(1)
 	char bSupportDepthOnlyIndexBuffers; //  0xe8 Size(1)
@@ -11177,7 +11177,7 @@ struct URendererSettings : UDeveloperSettings {
 
 // Class Engine.RendererOverrideSettings
 struct URendererOverrideSettings : UDeveloperSettings {
-	char bSupportAllShaderPermutatio; //  0x38 Size(1)
+	char bSupportAllShaderPermutations; //  0x38 Size(1)
 	char bForceRecomputeTangents; //  0x38 Size(1)
 };
 
@@ -11192,27 +11192,27 @@ struct UReverbEffect : Object {
 	float ReflectionsGain; //  0x40 Size(4)
 	float ReflectionsDelay; //  0x44 Size(4)
 	float LateGain; //  0x48 Size(4)
-	float LateDelay; //  0x4c Size(4)
+	float Late; //  0x4c Size(4)
 	float AirAbsorptionGainHF; //  0x50 Size(4)
 	float RoomRolloffFactor; //  0x54 Size(4)
 };
 
 // Class Engine.Rig
 struct URig : Object {
-	Unknown TransformBases; //  0x30 Size(10)
-	Unknown Nodes; //  0x40 Size(10)
+	struct TArray<Unknown> TransformBases; //  0x30 Size(10)
+	struct TArray<Unknown> Nodes; //  0x40 Size(10)
 };
 
 // Class Engine.RotatingMovementComponent
 struct URotatingMovementComponent : UMovementComponent {
-	Unknown RotationRate; //  0xf0 Size(c)
-	Unknown PivotTranslation; //  0xfc Size(c)
+	struct Unknown RotationRate; //  0xf0 Size(c)
+	struct Unknown PivotTranslation; //  0xfc Size(c)
 	char bRotationInLocalSpace; //  0x108 Size(1)
 };
 
 // Class Engine.RuntimeVirtualTexture
 struct URuntimeVirtualTexture : Object {
-	Unknown MaterialType; //  0x28 Size(1)
+	enum class Unknow MaterialType; //  0x28 Size(1)
 	char bCompressTextures; //  0x29 Size(1)
 	char bEnable; //  0x2a Size(1)
 	char bClearTextures; //  0x2b Size(1)
@@ -11224,65 +11224,65 @@ struct URuntimeVirtualTexture : Object {
 	int32_t TileSize; //  0x38 Size(4)
 	int32_t TileBorderSize; //  0x3c Size(4)
 	int32_t StreamLowMips; //  0x40 Size(4)
-	Unknown StreamingTexture; //  0x48 Size(8)
+	struct Unknown StreamingTexture; //  0x48 Size(8)
 	char bEnableCompressCrunch; //  0x50 Size(1)
 	int32_t RemoveLowMips; //  0x54 Size(4)
 
-	int32_t GetTileSize(); // Function Engine.RuntimeVirtualTexture.GetTileSize(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x3dd13e0>
+	int32_t GetTileSize(); // Function Engine.RuntimeVirtualTexture.GetTileSize(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x3dde330>
 };
 
 // Class Engine.RuntimeVirtualTextureComponent
 struct URuntimeVirtualTextureComponent : USceneComponent {
-	Unknown VirtualTexture; //  0x238 Size(8)
-	char bUseStreamingLowMipsInEdito; //  0x240 Size(1)
-	Unknown BoundsSourceActor; //  0x248 Size(8)
+	struct Unknown VirtualTexture; //  0x238 Size(8)
+	char bUseStreamingLowMipsInEditor; //  0x240 Size(1)
+	struct Unknown BoundsSourceActor; //  0x248 Size(8)
 
-	Unknown GetVirtualTextureTransform(); // Function Engine.RuntimeVirtualTextureComponent.GetVirtualTextureTransform(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game+0x3dd1430>
+	struct Unknown GetVirtualTextureTransform(); // Function Engine.RuntimeVirtualTextureComponent.GetVirtualTextureTransform(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game+0x3dde380>
 };
 
 // Class Engine.RuntimeVirtualTextureStreamingProxy
 struct URuntimeVirtualTextureStreamingProxy : UTexture2D {
-	Unknown Settings; //  0xe8 Size(c)
+	struct Unknown Settings; //  0xe8 Size(c)
 	char bSinglePhysicalSpace; //  0xf4 Size(1)
 	uint32_t BuildHash; //  0xf8 Size(4)
 };
 
 // Class Engine.RuntimeVirtualTextureVolume
 struct ARuntimeVirtualTextureVolume : UActor {
-	Unknown VirtualTextureComponent; //  0x310 Size(8)
+	struct Unknown VirtualTextureComponent; //  0x310 Size(8)
 };
 
 // Class Engine.SceneCaptureComponentCube
 struct USceneCaptureComponentCube : USceneCaptureComponent {
-	Unknown TextureTarget; //  0x2d0 Size(8)
+	struct Unknown TextureTarget; //  0x2d0 Size(8)
 	char bCaptureRotation; //  0x2d8 Size(1)
-	Unknown TextureTargetLeft; //  0x2e0 Size(8)
-	Unknown TextureTargetRight; //  0x2e8 Size(8)
-	Unknown TextureTargetODS; //  0x2f0 Size(8)
+	struct Unknown TextureTargetLeft; //  0x2e0 Size(8)
+	struct Unknown TextureTargetRight; //  0x2e8 Size(8)
+	struct Unknown TextureTargetODS; //  0x2f0 Size(8)
 	float IPD; //  0x2f8 Size(4)
 
-	void CaptureScene(); // Function Engine.SceneCaptureComponentCube.CaptureScene(Final|Native|Public|BlueprintCallable) // <Game+0x3dd80d0>
+	void CaptureScene(); // Function Engine.SceneCaptureComponentCube.CaptureScene(Final|Native|Public|BlueprintCallable) // <Game+0x3de5100>
 };
 
 // Class Engine.SceneCaptureCube
 struct ASceneCaptureCube : ASceneCapture {
-	Unknown CaptureComponentCube; //  0x320 Size(8)
+	struct Unknown CaptureComponentCube; //  0x320 Size(8)
 
-	void OnInterpToggle(char bEnable); // Function Engine.SceneCaptureCube.OnInterpToggle(Final|Native|Public|BlueprintCallable) // <Game+0x3daf520>
+	void OnInterpToggle(char bEnable); // Function Engine.SceneCaptureCube.OnInterpToggle(Final|Native|Public|BlueprintCallable) // <Game+0x3dbc2c0>
 };
 
 // Class Engine.SCS_Node
 struct USCS_Node : Object {
-	Unknown ComponentClass; //  0x28 Size(8)
-	Unknown ComponentTemplate; //  0x30 Size(8)
-	Unknown CookedComponentInstancingData; //  0x38 Size(48)
+	struct Unknown* ComponentClass; //  0x28 Size(8)
+	struct Unknown ComponentTemplate; //  0x30 Size(8)
+	struct Unknown CookedComponentInstancingData; //  0x38 Size(48)
 	struct FName AttachToName; //  0x80 Size(8)
 	struct FName ParentComponentOrVariableName; //  0x88 Size(8)
 	struct FName ParentComponentOwnerClassName; //  0x90 Size(8)
 	char bIsParentComponentNative; //  0x98 Size(1)
-	Unknown ChildNodes; //  0xa0 Size(10)
-	Unknown MetaDataArray; //  0xb0 Size(10)
-	Unknown VariableGuid; //  0xc0 Size(10)
+	struct TArray<Unknown> ChildNodes; //  0xa0 Size(10)
+	struct TArray<Unknown> Meta; //  0xb0 Size(10)
+	struct Unknown VariableGuid; //  0xc0 Size(10)
 	struct FName InternalVariableName; //  0xd0 Size(8)
 };
 
@@ -11329,40 +11329,40 @@ struct AServerStatReplicator : AInfo {
 	uint32_t NumActors; //  0x3a8 Size(4)
 	uint32_t NumNetActors; //  0x3ac Size(4)
 	uint32_t NumDormantActors; //  0x3b0 Size(4)
-	uint32_t NumInitiallyDormantActors; //  0x3b4 Size(4)
+	uint32_t NumInitially; //  0x3b4 Size(4)
 	uint32_t NumNetGUIDsAckd; //  0x3b8 Size(4)
 	uint32_t NumNetGUIDsPending; //  0x3bc Size(4)
 	uint32_t NumNetGUIDsUnAckd; //  0x3c0 Size(4)
 	uint32_t ObjPathBytes; //  0x3c4 Size(4)
-	uint32_t NetGUIDOutRate; //  0x3c8 Size(4)
-	uint32_t NetGUIDInRate; //  0x3cc Size(4)
+	uint32_t NetG; //  0x3c8 Size(4)
+	uint32_t NetG; //  0x3cc Size(4)
 	uint32_t NetSaturated; //  0x3d0 Size(4)
 };
 
 // Class Engine.ShadowMapTexture2D
 struct UShadowMapTexture2D : UTexture2D {
-	Unknown ShadowmapFlags; //  0xe8 Size(1)
+	char ShadowmapFlags; //  0xe8 Size(1)
 };
 
 // Class Engine.SimpleConstructionScript
 struct USimpleConstructionScript : Object {
-	Unknown RootNodes; //  0x28 Size(10)
-	Unknown AllNodes; //  0x38 Size(10)
-	Unknown DefaultSceneRootNode; //  0x48 Size(8)
+	struct TArray<Unknown> RootNodes; //  0x28 Size(10)
+	struct TArray<Unknown> AllNodes; //  0x38 Size(10)
+	struct Unknown DefaultSceneRootNode; //  0x48 Size(8)
 };
 
 // Class Engine.SkeletalMeshLODSettings
 struct USkeletalMeshLODSettings : UDataAsset {
-	Unknown MinLOD; //  0x30 Size(4)
-	Unknown DisableBelowMinLodStripping; //  0x34 Size(1)
-	Unknown bSupportLODStreaming; //  0x35 Size(1)
-	Unknown MaxNumStreamedLODs; //  0x38 Size(4)
-	Unknown MaxNumOptionalLODs; //  0x3c Size(4)
-	Unknown LODGroups; //  0x40 Size(10)
+	struct Unknown MinLOD; //  0x30 Size(4)
+	struct Unknown DisableBelowMinLodStripping; //  0x34 Size(1)
+	struct Unknown bSupportLODStreaming; //  0x35 Size(1)
+	struct Unknown MaxNumStreamedLODs; //  0x38 Size(4)
+	struct Unknown MaxNumOptionalLODs; //  0x3c Size(4)
+	struct TArray<Unknown> LODG; //  0x40 Size(10)
 };
 
-// Class Engine.SkeletalMeshSimplificationSettings
-struct USkeletalMeshSimplificationSettings : UDeveloperSettings {
+// Class Engine.SkeletalMeshSimplificationSetti
+struct USkeletalMeshSimplificationSetti : UDeveloperSettings {
 	struct FName SkeletalMeshReductionModuleName; //  0x38 Size(8)
 };
 
@@ -11370,106 +11370,106 @@ struct USkeletalMeshSimplificationSettings : UDeveloperSettings {
 struct USkeletalMeshSocket : Object {
 	struct FName SocketName; //  0x28 Size(8)
 	struct FName BoneName; //  0x30 Size(8)
-	Unknown RelativeLocation; //  0x38 Size(c)
-	Unknown RelativeRotation; //  0x44 Size(c)
-	Unknown RelativeScale; //  0x50 Size(c)
+	struct Unknown RelativeLocation; //  0x38 Size(c)
+	struct Unknown RelativeRotation; //  0x44 Size(c)
+	struct Unknown RelativeScale; //  0x50 Size(c)
 	char bForceAlwaysAnimated; //  0x5c Size(1)
 
-	void InitializeSocketFromLocatio(Unknown SkelComp, Unknown WorldLocation, Unknown WorldNormal); // Function Engine.SkeletalMeshSocket.InitializeSocketFromLocatiot(Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable) // <Game+0x3dee1e0>
+	void InitializeSocketFromLocation(struct Unknown SkelComp, struct Unknown WorldLocation, struct Unknown WorldNormal); // Function Engine.SkeletalMeshSocket.InitializeSocketFromLocation(Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable) // <Game+0x3dfb390>
 };
 
 // Class Engine.SkyAtmosphereComponent
 struct USkyAtmosphereComponent : USceneComponent {
-	Unknown TransformMode; //  0x238 Size(1)
+	enum class Unknow TransformMode; //  0x238 Size(1)
 	float BottomRadius; //  0x23c Size(4)
-	Unknown GroundAlbedo; //  0x240 Size(4)
+	struct Unknown GroundAlbedo; //  0x240 Size(4)
 	float AtmosphereHeight; //  0x244 Size(4)
 	float MultiScatteringFactor; //  0x248 Size(4)
 	float RayleighScatteringScale; //  0x24c Size(4)
-	Unknown RayleighScattering; //  0x250 Size(10)
+	struct Unknown RayleighScattering; //  0x250 Size(10)
 	float RayleighExponentialDistribution; //  0x260 Size(4)
 	float MieScatteringScale; //  0x264 Size(4)
-	Unknown MieScattering; //  0x268 Size(10)
+	struct Unknown MieScattering; //  0x268 Size(10)
 	float MieAbsorptionScale; //  0x278 Size(4)
-	Unknown MieAbsorption; //  0x27c Size(10)
+	struct Unknown MieAbsorption; //  0x27c Size(10)
 	float MieAnisotropy; //  0x28c Size(4)
 	float MieExponentialDistribution; //  0x290 Size(4)
 	float OtherAbsorptionScale; //  0x294 Size(4)
-	Unknown OtherAbsorption; //  0x298 Size(10)
-	Unknown OtherTentDistribution; //  0x2a8 Size(c)
-	Unknown SkyLuminanceFactor; //  0x2b4 Size(10)
-	float AerialPespectiveViewDistanceScale; //  0x2c4 Size(4)
+	struct Unknown OtherAbsorption; //  0x298 Size(10)
+	struct Unknown OtherTentDistribution; //  0x2a8 Size(c)
+	struct Unknown SkyLuminanceFactor; //  0x2b4 Size(10)
+	float AerialPespectiveView; //  0x2c4 Size(4)
 	float HeightFogContribution; //  0x2c8 Size(4)
 	float TransmittanceMinLightElevationAngle; //  0x2cc Size(4)
-	Unknown bStaticLightingBuiltGUID; //  0x2f4 Size(10)
+	struct Unknown bStaticLightingBuiltGUID; //  0x2f4 Size(10)
 
-	void SetSkyLuminanceFactor(Unknown NewValue); // Function Engine.SkyAtmosphereComponent.SetSkyLuminanceFactor(Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable) // <Game+0x3df4210>
+	void SetSkyLuminanceFactor(struct Unknown NewValue); // Function Engine.SkyAtmosphereComponent.SetSkyLuminanceFactor(Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable) // <Game+0x3e01430>
 };
 
 // Class Engine.SkyAtmosphere
 struct ASkyAtmosphere : AInfo {
-	Unknown SkyAtmosphereComponent; //  0x310 Size(8)
+	struct Unknown SkyAtmosphereComponent; //  0x310 Size(8)
 };
 
 // Class Engine.SkyLightComponent
 struct USkyLightComponent : ULightComponentBase {
-	Unknown SourceType; //  0x270 Size(1)
-	Unknown Cubemap; //  0x278 Size(8)
+	char SourceType; //  0x270 Size(1)
+	struct Unknown Cubemap; //  0x278 Size(8)
 	float SourceCubemapAngle; //  0x280 Size(4)
 	int32_t CubemapResolution; //  0x284 Size(4)
 	float SkyDistanceThreshold; //  0x288 Size(4)
 	char bCaptureEmissiveOnly; //  0x28c Size(1)
 	char bLowerHemisphereIsBlack; //  0x28d Size(1)
-	Unknown LowerHemisphereColor; //  0x290 Size(10)
+	struct Unknown LowerHemisphereColor; //  0x290 Size(10)
 	char bAffectDynamicIndirectLighting; //  0x2a0 Size(1)
-	float OcclusionMaxDistance; //  0x2a4 Size(4)
+	float OcclusionMax; //  0x2a4 Size(4)
 	float Contrast; //  0x2a8 Size(4)
 	float OcclusionExponent; //  0x2ac Size(4)
-	Unknown OcclusionFoliageTint; //  0x2b0 Size(4)
+	struct Unknown OcclusionFoliageTint; //  0x2b0 Size(4)
 	float MinOcclusion; //  0x2b4 Size(4)
-	Unknown OcclusionBarkTint; //  0x2b8 Size(4)
-	Unknown OcclusionTint; //  0x2bc Size(4)
-	Unknown OcclusionCombineMode; //  0x2c0 Size(1)
-	Unknown SpecularOcclusionMode; //  0x2c1 Size(1)
+	struct Unknown OcclusionBarkTint; //  0x2b8 Size(4)
+	struct Unknown OcclusionTint; //  0x2bc Size(4)
+	char OcclusionCombineMode; //  0x2c0 Size(1)
+	char SpecularOcclusionMode; //  0x2c1 Size(1)
 	float SpecularOcclusionStrength; //  0x2c4 Size(4)
 	float SelfShadowBiasForObjectAO; //  0x2c8 Size(4)
-	float OcclusionTranslucencyForTwo; //  0x2cc Size(4)
-	Unknown BlendDestinationCubemap; //  0x388 Size(8)
+	float OcclusionTranslucencyForTwoSidedFoliages; //  0x2cc Size(4)
+	struct Unknown BlendDestinationCubemap; //  0x388 Size(8)
 
-	void SetVolumetricScatteringIntensity(float NewIntensity); // Function Engine.SkyLightComponent.SetVolumetricScatteringIntensity(Final|Native|Public|BlueprintCallable) // <Game+0x3df4290>
+	void SetVolumetricScatteringIntensity(float NewIntensity); // Function Engine.SkyLightComponent.SetVolumetricScatteringIntensity(Final|Native|Public|BlueprintCallable) // <Game+0x3e014b0>
 };
 
 // Class Engine.SlateBrushAsset
 struct USlateBrushAsset : Object {
-	Unknown Brush; //  0x28 Size(88)
+	struct Unknown Brush; //  0x28 Size(88)
 };
 
 // Class Engine.SoundAttenuation
 struct USoundAttenuation : Object {
-	Unknown Attenuation; //  0x28 Size(3a0)
+	struct Unknown Attenuation; //  0x28 Size(3a0)
 };
 
 // Class Engine.SoundClass
 struct USoundClass : Object {
-	Unknown Properties; //  0x28 Size(58)
-	Unknown ChildClasses; //  0x80 Size(10)
-	Unknown PassiveSoundMixModifiers; //  0x90 Size(10)
-	Unknown Modulation; //  0xa0 Size(10)
-	Unknown ParentClass; //  0xb0 Size(8)
+	struct Unknown Properties; //  0x28 Size(58)
+	struct TArray<Unknown> ChildClasses; //  0x80 Size(10)
+	struct TArray<Unknown> PassiveSoundMixModifiers; //  0x90 Size(10)
+	struct Unknown Modulation; //  0xa0 Size(10)
+	struct Unknown ParentClass; //  0xb0 Size(8)
 };
 
 // Class Engine.SoundConcurrency
 struct USoundConcurrency : Object {
-	Unknown Concurrency; //  0x28 Size(20)
+	struct Unknown Concurrency; //  0x28 Size(20)
 };
 
 // Class Engine.SoundCue
 struct USoundCue : USoundBase {
 	char bPrimeOnLoad; //  0x160 Size(1)
-	Unknown FirstNode; //  0x168 Size(8)
+	struct Unknown FirstNode; //  0x168 Size(8)
 	float VolumeMultiplier; //  0x170 Size(4)
 	float PitchMultiplier; //  0x174 Size(4)
-	Unknown AttenuationOverrides; //  0x178 Size(3a0)
+	struct Unknown AttenuationOverrides; //  0x178 Size(3a0)
 	float SubtitlePriority; //  0x518 Size(4)
 	char bOverrideAttenuation; //  0x520 Size(1)
 	char bExcludeFromRandomNodeBranchCulling; //  0x520 Size(1)
@@ -11479,21 +11479,21 @@ struct USoundCue : USoundBase {
 
 // Class Engine.SoundEffectSourcePresetChain
 struct USoundEffectSourcePresetChain : Object {
-	Unknown Chain; //  0x28 Size(10)
+	struct TArray<Unknown> Chain; //  0x28 Size(10)
 	char bPlayEffectChainTails; //  0x38 Size(1)
 };
 
 // Class Engine.SoundGroups
 struct USoundGroups : Object {
-	Unknown SoundGroupProfiles; //  0x28 Size(10)
+	struct TArray<Unknown> SoundGroupProfiles; //  0x28 Size(10)
 };
 
 // Class Engine.SoundMix
 struct USoundMix : Object {
 	char bApplyEQ; //  0x28 Size(1)
 	float EQPriority; //  0x2c Size(4)
-	Unknown EQSettings; //  0x30 Size(40)
-	Unknown SoundClassEffects; //  0x70 Size(10)
+	struct Unknown EQSettings; //  0x30 Size(40)
+	struct TArray<Unknown> SoundClassEffects; //  0x70 Size(10)
 	float InitialDelay; //  0x80 Size(4)
 	float FadeInTime; //  0x84 Size(4)
 	float Duration; //  0x88 Size(4)
@@ -11502,13 +11502,13 @@ struct USoundMix : Object {
 
 // Class Engine.SoundNode
 struct USoundNode : Object {
-	Unknown ChildNodes; //  0x28 Size(10)
+	struct TArray<Unknown> ChildNodes; //  0x28 Size(10)
 };
 
 // Class Engine.SoundNodeAttenuation
 struct USoundNodeAttenuation : USoundNode {
-	Unknown AttenuationSettings; //  0x48 Size(8)
-	Unknown AttenuationOverrides; //  0x50 Size(3a0)
+	struct Unknown AttenuationSettings; //  0x48 Size(8)
+	struct Unknown AttenuationOverrides; //  0x50 Size(3a0)
 	char bOverrideAttenuation; //  0x3f0 Size(1)
 };
 
@@ -11519,7 +11519,7 @@ struct USoundNodeBranch : USoundNode {
 
 // Class Engine.SoundNodeConcatenator
 struct USoundNodeConcatenator : USoundNode {
-	Unknown InputVolume; //  0x48 Size(10)
+	struct TArray<Unknown> InputVolume; //  0x48 Size(10)
 };
 
 // Class Engine.SoundNodeDelay
@@ -11530,13 +11530,13 @@ struct USoundNodeDelay : USoundNode {
 
 // Class Engine.SoundNodeDialoguePlayer
 struct USoundNodeDialoguePlayer : USoundNode {
-	Unknown DialogueWaveParameter; //  0x48 Size(20)
+	struct Unknown DialogueWaveParameter; //  0x48 Size(20)
 	char bLooping; //  0x68 Size(1)
 };
 
 // Class Engine.SoundNodeDistanceCrossFade
 struct USoundNodeDistanceCrossFade : USoundNode {
-	Unknown CrossFadeInput; //  0x48 Size(10)
+	struct TArray<Unknown> CrossFadeInput; //  0x48 Size(10)
 };
 
 // Class Engine.SoundNodeDoppler
@@ -11554,10 +11554,10 @@ struct USoundNodeEnveloper : USoundNode {
 	int32_t LoopCount; //  0x54 Size(4)
 	char bLoopIndefinitely; //  0x58 Size(1)
 	char bLoop; //  0x58 Size(1)
-	Unknown VolumeInterpCurve; //  0x60 Size(8)
-	Unknown PitchInterpCurve; //  0x68 Size(8)
-	Unknown VolumeCurve; //  0x70 Size(88)
-	Unknown PitchCurve; //  0xf8 Size(88)
+	struct Unknown VolumeInterpCurve; //  0x60 Size(8)
+	struct Unknown PitchInterpCurve; //  0x68 Size(8)
+	struct Unknown VolumeCurve; //  0x70 Size(88)
+	struct Unknown PitchCurve; //  0xf8 Size(88)
 	float PitchMin; //  0x180 Size(4)
 	float PitchMax; //  0x184 Size(4)
 	float VolumeMin; //  0x188 Size(4)
@@ -11566,7 +11566,7 @@ struct USoundNodeEnveloper : USoundNode {
 
 // Class Engine.SoundNodeGroupControl
 struct USoundNodeGroupControl : USoundNode {
-	Unknown GroupSizes; //  0x48 Size(10)
+	struct TArray<Unknown> GroupSizes; //  0x48 Size(10)
 };
 
 // Class Engine.SoundNodeLooping
@@ -11577,7 +11577,7 @@ struct USoundNodeLooping : USoundNode {
 
 // Class Engine.SoundNodeMixer
 struct USoundNodeMixer : USoundNode {
-	Unknown InputVolume; //  0x48 Size(10)
+	struct TArray<Unknown> InputVolume; //  0x48 Size(10)
 };
 
 // Class Engine.SoundNodeModulator
@@ -11590,8 +11590,8 @@ struct USoundNodeModulator : USoundNode {
 
 // Class Engine.SoundNodeModulatorContinuous
 struct USoundNodeModulatorContinuous : USoundNode {
-	Unknown PitchModulationParams; //  0x48 Size(20)
-	Unknown VolumeModulationParams; //  0x68 Size(20)
+	struct Unknown PitchModulationParams; //  0x48 Size(20)
+	struct Unknown VolumeModulationParams; //  0x68 Size(20)
 };
 
 // Class Engine.SoundNodeOscillator
@@ -11615,8 +11615,8 @@ struct USoundNodeParamCrossFade : USoundNodeDistanceCrossFade {
 
 // Class Engine.SoundNodeRandom
 struct USoundNodeRandom : USoundNode {
-	Unknown Weights; //  0x48 Size(10)
-	Unknown HasBeenUsed; //  0x58 Size(10)
+	struct TArray<Unknown> Weights; //  0x48 Size(10)
+	struct TArray<Unknown> HasBeenUsed; //  0x58 Size(10)
 	int32_t NumRandomUsed; //  0x68 Size(4)
 	int32_t PreselectAtLevelLoad; //  0x6c Size(4)
 	char bShouldExcludeFromBranchCulling; //  0x70 Size(1)
@@ -11626,7 +11626,7 @@ struct USoundNodeRandom : USoundNode {
 
 // Class Engine.SoundNodeSoundClass
 struct USoundNodeSoundClass : USoundNode {
-	Unknown SoundClassOverride; //  0x48 Size(8)
+	struct Unknown SoundClassOverride; //  0x48 Size(8)
 };
 
 // Class Engine.SoundNodeSwitch
@@ -11641,64 +11641,64 @@ struct USoundNodeWaveParam : USoundNode {
 
 // Class Engine.SoundNodeWavePlayer
 struct USoundNodeWavePlayer : USoundNodeAssetReferencer {
-	Unknown SoundWaveAssetPtr; //  0x48 Size(28)
-	Unknown SoundWave; //  0x70 Size(8)
+	struct TSoftObjectPtr<Unknown> SoundWaveAssetPtr; //  0x48 Size(28)
+	struct Unknown SoundWave; //  0x70 Size(8)
 	char bLooping; //  0x78 Size(1)
 };
 
 // Class Engine.SoundSourceBus
 struct USoundSourceBus : USoundWave {
-	Unknown SourceBusChannels; //  0x308 Size(1)
+	enum class Unknow SourceBusChannels; //  0x308 Size(1)
 	float SourceBusDuration; //  0x30c Size(4)
 	char bAutoDeactivateWhenSilent; //  0x310 Size(1)
 };
 
 // Class Engine.SoundSubmixBase
 struct USoundSubmixBase : Object {
-	Unknown ChildSubmixes; //  0x28 Size(10)
+	struct TArray<Unknown> ChildSubmixes; //  0x28 Size(10)
 };
 
 // Class Engine.SoundSubmixWithParentBase
 struct USoundSubmixWithParentBase : USoundSubmixBase {
-	Unknown ParentSubmix; //  0x38 Size(8)
+	struct Unknown ParentSubmix; //  0x38 Size(8)
 };
 
 // Class Engine.SoundSubmix
 struct USoundSubmix : USoundSubmixWithParentBase {
 	char bMuteWhenBackgrounded; //  0x40 Size(1)
-	Unknown SubmixEffectChain; //  0x48 Size(10)
-	Unknown AmbisonicsPluginSettings; //  0x58 Size(8)
+	struct TArray<Unknown> SubmixEffectChain; //  0x48 Size(10)
+	struct Unknown AmbisonicsPluginSettings; //  0x58 Size(8)
 	int32_t EnvelopeFollowerAttackTime; //  0x60 Size(4)
 	int32_t EnvelopeFollowerReleaseTime; //  0x64 Size(4)
 	float OutputVolume; //  0x68 Size(4)
-	struct FMulticastInlineDelegate OnSubmixRecordedFileDone; //  0x70 Size(10)
+	struct FMulticastInlineDelegate OnSubmixRecordedFile; //  0x70 Size(10)
 
-	void StopRecordingOutput(Unknown WorldContextObject, Unknown ExportType, struct FString Name, struct FString Path, Unknown ExistingSoundWaveToOverwrite); // Function Engine.SoundSubmix.StopRecordingOutput(Final|Native|Public|BlueprintCallable) // <Game+0x3dfc130>
+	void StopRecordingOutput(struct Unknown WorldContextObject, enum class Unknow ExportType, struct FString Name, struct FString Path, struct Unknown ExistingSoundWaveToOverwrite); // Function Engine.SoundSubmix.StopRecordingOutput(Final|Native|Public|BlueprintCallable) // <Game+0x3e09460>
 };
 
 // Class Engine.SoundfieldSubmix
 struct USoundfieldSubmix : USoundSubmixWithParentBase {
 	struct FName SoundfieldEncodingFormat; //  0x40 Size(8)
-	Unknown EncodingSettings; //  0x48 Size(8)
-	Unknown SoundfieldEffectChain; //  0x50 Size(10)
-	Unknown EncodingSettingsClass; //  0x60 Size(8)
+	struct Unknown EncodingSettings; //  0x48 Size(8)
+	struct TArray<Unknown> SoundfieldEffectChain; //  0x50 Size(10)
+	struct Unknown* EncodingSettingsClass; //  0x60 Size(8)
 };
 
 // Class Engine.EndpointSubmix
 struct UEndpointSubmix : USoundSubmixBase {
 	struct FName EndpointType; //  0x38 Size(8)
-	Unknown EndpointSettingsClass; //  0x40 Size(8)
-	Unknown EndpointSettings; //  0x48 Size(8)
+	struct Unknown* EndpointSettingsClass; //  0x40 Size(8)
+	struct Unknown EndpointSettings; //  0x48 Size(8)
 };
 
 // Class Engine.SoundfieldEndpointSubmix
 struct USoundfieldEndpointSubmix : USoundSubmixBase {
 	struct FName SoundfieldEndpointType; //  0x38 Size(8)
-	Unknown EndpointSettingsClass; //  0x40 Size(8)
-	Unknown EndpointSettings; //  0x48 Size(8)
-	Unknown EncodingSettingsClass; //  0x50 Size(8)
-	Unknown EncodingSettings; //  0x58 Size(8)
-	Unknown SoundfieldEffectChain; //  0x60 Size(10)
+	struct Unknown* EndpointSettingsClass; //  0x40 Size(8)
+	struct Unknown EndpointSettings; //  0x48 Size(8)
+	struct Unknown* EncodingSettingsClass; //  0x50 Size(8)
+	struct Unknown EncodingSettings; //  0x58 Size(8)
+	struct TArray<Unknown> SoundfieldEffectChain; //  0x60 Size(10)
 };
 
 // Class Engine.SpectatorPawnMovement
@@ -11708,36 +11708,36 @@ struct USpectatorPawnMovement : UFloatingPawnMovement {
 
 // Class Engine.SphereReflectionCapture
 struct ASphereReflectionCapture : AReflectionCapture {
-	Unknown DrawCaptureRadius; //  0x318 Size(8)
+	struct Unknown DrawCaptureRadius; //  0x318 Size(8)
 };
 
 // Class Engine.SphereReflectionCaptureComponent
 struct USphereReflectionCaptureComponent : UReflectionCaptureComponent {
 	float InfluenceRadius; //  0x2c0 Size(4)
 	float CaptureDistanceScale; //  0x2c4 Size(4)
-	Unknown PreviewInfluenceRadius; //  0x2c8 Size(8)
+	struct Unknown PreviewInfluenceRadius; //  0x2c8 Size(8)
 };
 
 // Class Engine.SplineMeshActor
 struct ASplineMeshActor : UActor {
-	Unknown SplineMeshComponent; //  0x310 Size(8)
+	struct Unknown SplineMeshComponent; //  0x310 Size(8)
 };
 
 // Class Engine.SplineMeshComponent
 struct USplineMeshComponent : UStaticMeshComponent {
-	Unknown SplineParams; //  0x558 Size(58)
-	Unknown SplineUpDir; //  0x5b0 Size(c)
+	struct Unknown SplineParams; //  0x558 Size(58)
+	struct Unknown SplineUpDir; //  0x5b0 Size(c)
 	float SplineBoundaryMin; //  0x5bc Size(4)
-	Unknown CachedMeshBodySetupGuid; //  0x5c0 Size(10)
-	Unknown BodySetup; //  0x5d0 Size(8)
+	struct Unknown CachedMeshBodySetupGuid; //  0x5c0 Size(10)
+	struct Unknown BodySetup; //  0x5d0 Size(8)
 	float SplineBoundaryMax; //  0x5d8 Size(4)
 	char bAllowSplineEditingPerInstance; //  0x5dc Size(1)
 	char bSmoothInterpRollScale; //  0x5dc Size(1)
 	char bMeshDirty; //  0x5dc Size(1)
-	Unknown ForwardAxis; //  0x5dd Size(1)
-	float VirtualTextureMainPassMaxDrawDistance; //  0x5e0 Size(4)
+	char ForwardAxis; //  0x5dd Size(1)
+	float VirtualTextureMainPassMaxDrawDi; //  0x5e0 Size(4)
 
-	void UpdateMesh(); // Function Engine.SplineMeshComponent.UpdateMesh(Final|Native|Public|BlueprintCallable) // <Game+0x3e090d0>
+	void UpdateMesh(); // Function Engine.SplineMeshComponent.UpdateMesh(Final|Native|Public|BlueprintCallable) // <Game+0x3e16490>
 };
 
 // Class Engine.SpotLightComponent
@@ -11749,16 +11749,16 @@ struct USpotLightComponent : UPointLightComponent {
 	float PCSSSharpness; //  0x3c0 Size(4)
 	float PCSSContrast; //  0x3c4 Size(4)
 
-	void SetOuterConeAngle(float NewOuterConeAngle); // Function Engine.SpotLightComponent.SetOuterConeAngle(Final|Native|Public|BlueprintCallable) // <Game+0x3e089a0>
+	void SetOuterConeAngle(float NewOuterConeAngle); // Function Engine.SpotLightComponent.SetOuterConeAngle(Final|Native|Public|BlueprintCallable) // <Game+0x3e15d60>
 };
 
 // Class Engine.SpringArmComponent
 struct USpringArmComponent : USceneComponent {
 	float TargetArmLength; //  0x238 Size(4)
-	Unknown SocketOffset; //  0x23c Size(c)
-	Unknown TargetOffset; //  0x248 Size(c)
-	float Prob; //  0x254 Size(4)
-	Unknown ProbetOff; //  0x258 Size(1)
+	struct Unknown SocketOffset; //  0x23c Size(c)
+	struct Unknown TargetOffset; //  0x248 Size(c)
+	float ProbeSize; //  0x254 Size(4)
+	char ProbeChannel; //  0x258 Size(1)
 	char bDoCollisionTest; //  0x25c Size(1)
 	char bUsePawnControlRotation; //  0x25c Size(1)
 	char bInheritPitch; //  0x25c Size(1)
@@ -11771,51 +11771,51 @@ struct USpringArmComponent : USceneComponent {
 	float CameraLagSpeed; //  0x260 Size(4)
 	float CameraRotationLagSpeed; //  0x264 Size(4)
 	float CameraLagMaxTimeStep; //  0x268 Size(4)
-	float CameraLagMaxDistance; //  0x26c Size(4)
+	float CameraLagMax; //  0x26c Size(4)
 
-	char IsCollisionFixApplied(); // Function Engine.SpringArmComponent.IsCollisionFixApplied(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x3e08170>
+	char IsCollisionFixApplied(); // Function Engine.SpringArmComponent.IsCollisionFixApplied(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x3e15530>
 };
 
 // Class Engine.StaticMesh
 struct UStaticMesh : UStreamableRenderAsset {
 	char bUseAsOccluderForSoftwareOcclusion; //  0x60 Size(1)
-	struct FName LODGroup; //  0x64 Size(8)
+	struct FName LODG; //  0x64 Size(8)
 	struct FName MeshStreamingGroup; //  0x6c Size(8)
-	Unknown MinLOD; //  0x80 Size(4)
+	struct Unknown MinLOD; //  0x80 Size(4)
 	float LpvBiasMultiplier; //  0x84 Size(4)
-	Unknown StaticMaterials; //  0x88 Size(10)
+	struct TArray<Unknown> StaticMaterials; //  0x88 Size(10)
 	float LightmapUVDensity; //  0x98 Size(4)
 	int32_t LightMapResolution; //  0x9c Size(4)
 	int32_t LightMapCoordinateIndex; //  0xa0 Size(4)
 	float DistanceFieldSelfShadowBias; //  0xa4 Size(4)
-	Unknown BodySetup; //  0xa8 Size(8)
+	struct Unknown BodySetup; //  0xa8 Size(8)
 	int32_t LODForCollision; //  0xb0 Size(4)
 	char bGenerateMeshDistanceField; //  0xb4 Size(1)
-	char bStripComplexCollisionForCo; //  0xb4 Size(1)
+	char bStripComplexCollisionForConsole; //  0xb4 Size(1)
 	char bHasNavigationData; //  0xb4 Size(1)
 	char bSupportUniformlyDistributedSampling; //  0xb4 Size(1)
-	char bSupportPhysicalMaterialMasks; //  0xb4 Size(1)
+	char bSupportPhysicalMaterialMas; //  0xb4 Size(1)
 	char bIsBuiltAtRuntime; //  0xb4 Size(1)
 	char bAllowCPUAccess; //  0xb4 Size(1)
-	char bSupportGpuUniformlyDistributedSampling; //  0xb5 Size(1)
-	Unknown Sockets; //  0xd8 Size(10)
-	Unknown PositiveBoundsExtension; //  0xf8 Size(c)
-	Unknown NegativeBoundsExtension; //  0x104 Size(c)
-	Unknown ExtendedBounds; //  0x110 Size(1c)
+	char bSupportGpuUniformly; //  0xb5 Size(1)
+	struct TArray<Unknown> Sockets; //  0xd8 Size(10)
+	struct Unknown PositiveBoundsExtension; //  0xf8 Size(c)
+	struct Unknown NegativeBoundsExtension; //  0x104 Size(c)
+	struct Unknown ExtendedBounds; //  0x110 Size(1c)
 	int32_t ElementToIgnoreForTexFactor; //  0x12c Size(4)
-	Unknown AssetUserData; //  0x130 Size(10)
-	Unknown EditableMesh; //  0x148 Size(8)
-	Unknown NavCollision; //  0x150 Size(8)
+	struct TArray<Unknown> AssetUserData; //  0x130 Size(10)
+	struct Unknown EditableMesh; //  0x148 Size(8)
+	struct Unknown NavCollision; //  0x150 Size(8)
 
-	void RemoveSocket(Unknown Socket); // Function Engine.StaticMesh.RemoveSocket(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game+0x1f7b670>
+	void RemoveSocket(struct Unknown Socket); // Function Engine.StaticMesh.RemoveSocket(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game+0x1f83180>
 };
 
 // Class Engine.StaticMeshSocket
 struct UStaticMeshSocket : Object {
 	struct FName SocketName; //  0x28 Size(8)
-	Unknown RelativeLocation; //  0x30 Size(c)
-	Unknown RelativeRotation; //  0x3c Size(c)
-	Unknown RelativeScale; //  0x48 Size(c)
+	struct Unknown RelativeLocation; //  0x30 Size(c)
+	struct Unknown RelativeRotation; //  0x3c Size(c)
+	struct Unknown RelativeScale; //  0x48 Size(c)
 	struct FString Tag; //  0x58 Size(10)
 };
 
@@ -11824,21 +11824,21 @@ struct UStereoLayerComponent : USceneComponent {
 	char bLiveTexture; //  0x238 Size(1)
 	char bSupportsDepth; //  0x238 Size(1)
 	char bNoAlphaChannel; //  0x238 Size(1)
-	Unknown Texture; //  0x240 Size(8)
-	Unknown LeftTexture; //  0x248 Size(8)
+	struct Unknown Texture; //  0x240 Size(8)
+	struct Unknown LeftTexture; //  0x248 Size(8)
 	char bQuadPreserveTextureRatio; //  0x250 Size(1)
-	Unknown QuadSize; //  0x254 Size(8)
-	Unknown UVRect; //  0x25c Size(14)
+	struct Unknown QuadSize; //  0x254 Size(8)
+	struct Unknown UVRect; //  0x25c Size(14)
 	float CylinderRadius; //  0x270 Size(4)
 	float CylinderOverlayArc; //  0x274 Size(4)
 	int32_t CylinderHeight; //  0x278 Size(4)
-	Unknown EquirectProps; //  0x27c Size(48)
-	Unknown StereoLayerType; //  0x2c4 Size(1)
-	Unknown StereoLayerShape; //  0x2c5 Size(1)
-	Unknown Shape; //  0x2c8 Size(8)
+	struct Unknown EquirectProps; //  0x27c Size(48)
+	char StereoLayerType; //  0x2c4 Size(1)
+	char StereoLayerShape; //  0x2c5 Size(1)
+	struct Unknown Shape; //  0x2c8 Size(8)
 	int32_t Priority; //  0x2d0 Size(4)
 
-	void SetUVRect(Unknown InUVRect); // Function Engine.StereoLayerComponent.SetUVRect(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game+0x3e0dc70>
+	void SetUVRect(struct Unknown InUVRect); // Function Engine.StereoLayerComponent.SetUVRect(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game+0x3e1b090>
 };
 
 // Class Engine.StereoLayerShapeCylinder
@@ -11847,33 +11847,33 @@ struct UStereoLayerShapeCylinder : UStereoLayerShape {
 	float OverlayArc; //  0x2c Size(4)
 	int32_t Height; //  0x30 Size(4)
 
-	void SetRadius(float InRadius); // Function Engine.StereoLayerShapeCylinder.SetRadius(Final|Native|Public|BlueprintCallable) // <Game+0x3e0d940>
+	void SetRadius(float InRadius); // Function Engine.StereoLayerShapeCylinder.SetRadius(Final|Native|Public|BlueprintCallable) // <Game+0x3e1ad60>
 };
 
 // Class Engine.StereoLayerShapeEquirect
 struct UStereoLayerShapeEquirect : UStereoLayerShape {
-	Unknown LeftUVRect; //  0x28 Size(14)
-	Unknown RightUVRect; //  0x3c Size(14)
-	Unknown LeftScale; //  0x50 Size(8)
-	Unknown RightScale; //  0x58 Size(8)
-	Unknown LeftBias; //  0x60 Size(8)
-	Unknown RightBias; //  0x68 Size(8)
+	struct Unknown LeftUVRect; //  0x28 Size(14)
+	struct Unknown RightUVRect; //  0x3c Size(14)
+	struct Unknown LeftScale; //  0x50 Size(8)
+	struct Unknown RightScale; //  0x58 Size(8)
+	struct Unknown LeftBias; //  0x60 Size(8)
+	struct Unknown RightBias; //  0x68 Size(8)
 
-	void SetEquirectProps(Unknown InScaleBiases); // Function Engine.StereoLayerShapeEquirect.SetEquirectProps(Final|Native|Public|BlueprintCallable) // <Game+0x3e0d540>
+	void SetEquirectProps(struct Unknown InScaleBiases); // Function Engine.StereoLayerShapeEquirect.SetEquirectProps(Final|Native|Public|BlueprintCallable) // <Game+0x3e1a960>
 };
 
 // Class Engine.SubsurfaceProfile
 struct USubsurfaceProfile : Object {
-	Unknown Settings; //  0x28 Size(8c)
+	struct Unknown Settings; //  0x28 Size(8c)
 };
 
 // Class Engine.SubUVAnimation
 struct USubUVAnimation : Object {
-	Unknown SubUVTexture; //  0x28 Size(8)
+	struct Unknown SubUVTexture; //  0x28 Size(8)
 	int32_t SubImages_Horizontal; //  0x30 Size(4)
 	int32_t SubImages_Vertical; //  0x34 Size(4)
-	Unknown BoundingMode; //  0x38 Size(1)
-	Unknown OpacitySourceMode; //  0x39 Size(1)
+	char BoundingMode; //  0x38 Size(1)
+	char OpacitySourceMode; //  0x39 Size(1)
 	float AlphaThreshold; //  0x3c Size(4)
 };
 
@@ -11881,12 +11881,12 @@ struct USubUVAnimation : Object {
 struct UTimecodeProvider : Object {
 	float FrameDelay; //  0x28 Size(4)
 
-	Unknown GetTimecode(); // Function Engine.TimecodeProvider.GetTimecode(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x3e15d30>
+	struct Unknown GetTimecode(); // Function Engine.TimecodeProvider.GetTimecode(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x3e23220>
 };
 
 // Class Engine.SystemTimeTimecodeProvider
 struct USystemTimeTimecodeProvider : UTimecodeProvider {
-	Unknown FrameRate; //  0x30 Size(8)
+	struct Unknown FrameRate; //  0x30 Size(8)
 	char bGenerateFullFrame; //  0x38 Size(1)
 	char bUseHighPerformanceClock; //  0x39 Size(1)
 };
@@ -11900,17 +11900,17 @@ struct UTextPropertyTestObject : Object {
 
 // Class Engine.TextRenderActor
 struct ATextRenderActor : UActor {
-	Unknown TextRender; //  0x310 Size(8)
+	struct Unknown TextRender; //  0x310 Size(8)
 };
 
 // Class Engine.TextRenderComponent
 struct UTextRenderComponent : UPrimitiveComponent {
 	struct FText Text; //  0x4b8 Size(18)
-	Unknown TextMaterial; //  0x4d0 Size(8)
-	Unknown Font; //  0x4d8 Size(8)
-	Unknown HorizontalAlignment; //  0x4e0 Size(1)
-	Unknown VerticalAlignment; //  0x4e1 Size(1)
-	Unknown TextRenderColor; //  0x4e4 Size(4)
+	struct Unknown TextMaterial; //  0x4d0 Size(8)
+	struct Unknown Font; //  0x4d8 Size(8)
+	char HorizontalAlignment; //  0x4e0 Size(1)
+	char VerticalAlignment; //  0x4e1 Size(1)
+	struct Unknown TextRenderColor; //  0x4e4 Size(4)
 	float XScale; //  0x4e8 Size(4)
 	float YScale; //  0x4ec Size(4)
 	float WorldSize; //  0x4f0 Size(4)
@@ -11919,7 +11919,7 @@ struct UTextRenderComponent : UPrimitiveComponent {
 	float VertSpacingAdjust; //  0x4fc Size(4)
 	char bAlwaysRenderAsText; //  0x500 Size(1)
 
-	void SetYScale(float Value); // Function Engine.TextRenderComponent.SetYScale(Final|Native|Public|BlueprintCallable) // <Game+0x3e121d0>
+	void SetYScale(float Value); // Function Engine.TextRenderComponent.SetYScale(Final|Native|Public|BlueprintCallable) // <Game+0x3e1f660>
 };
 
 // Class Engine.TextureLightProfile
@@ -11931,34 +11931,34 @@ struct UTextureLightProfile : UTexture2D {
 // Class Engine.TextureRenderTargetCube
 struct UTextureRenderTargetCube : UTextureRenderTarget {
 	int32_t SizeX; //  0xc0 Size(4)
-	Unknown ClearColor; //  0xc4 Size(10)
-	Unknown OverrideFormat; //  0xd4 Size(1)
+	struct Unknown ClearColor; //  0xc4 Size(10)
+	char OverrideFormat; //  0xd4 Size(1)
 	char bHDR; //  0xd5 Size(1)
 	char bForceLinearGamma; //  0xd5 Size(1)
 };
 
 // Class Engine.TimelineComponent
 struct UTimelineComponent : UActorComponent {
-	Unknown TheTimeline; //  0xb0 Size(98)
+	struct Unknown TheTimeline; //  0xb0 Size(98)
 	char bIgnoreTimeDilation; //  0x148 Size(1)
 
-	void Stop(); // Function Engine.TimelineComponent.Stop(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game+0x3e16540>
+	void Stop(); // Function Engine.TimelineComponent.Stop(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game+0x3e23a30>
 };
 
 // Class Engine.TimelineTemplate
 struct UTimelineTemplate : Object {
 	float TimelineLength; //  0x28 Size(4)
-	Unknown LengthMode; //  0x2c Size(1)
+	char LengthMode; //  0x2c Size(1)
 	char bAutoPlay; //  0x2d Size(1)
 	char bLoop; //  0x2d Size(1)
 	char bReplicated; //  0x2d Size(1)
 	char bIgnoreTimeDilation; //  0x2d Size(1)
-	Unknown EventTracks; //  0x30 Size(10)
-	Unknown FloatTracks; //  0x40 Size(10)
-	Unknown VectorTracks; //  0x50 Size(10)
-	Unknown LinearColorTracks; //  0x60 Size(10)
-	Unknown MetaDataArray; //  0x70 Size(10)
-	Unknown TimelineGuid; //  0x80 Size(10)
+	struct TArray<Unknown> EventTracks; //  0x30 Size(10)
+	struct TArray<Unknown> FloatTracks; //  0x40 Size(10)
+	struct TArray<Unknown> VectorTracks; //  0x50 Size(10)
+	struct TArray<Unknown> LinearColorTracks; //  0x60 Size(10)
+	struct TArray<Unknown> Meta; //  0x70 Size(10)
+	struct Unknown TimelineGuid; //  0x80 Size(10)
 	struct FName VariableName; //  0x90 Size(8)
 	struct FName DirectionPropertyName; //  0x98 Size(8)
 	struct FName UpdateFunctionName; //  0xa0 Size(8)
@@ -11972,7 +11972,7 @@ struct UTireType : UDataAsset {
 
 // Class Engine.TouchInterface
 struct UTouchInterface : Object {
-	Unknown Controls; //  0x28 Size(10)
+	struct TArray<Unknown> Controls; //  0x28 Size(10)
 	float ActiveOpacity; //  0x38 Size(4)
 	float InactiveOpacity; //  0x3c Size(4)
 	float TimeUntilDeactive; //  0x40 Size(4)
@@ -11984,53 +11984,53 @@ struct UTouchInterface : Object {
 
 // Class Engine.TriggerBase
 struct ATriggerBase : UActor {
-	Unknown CollisionComponent; //  0x310 Size(8)
+	struct Unknown CollisionComponent; //  0x310 Size(8)
 };
 
-// Class Engine.UserDefinedEnum
-struct UUserDefinedEnum : UEnum {
-	Unknown DisplayNameMap; //  0x60 Size(50)
+// Class Engine.User
+struct UUser : UEnum {
+	struct TMap<{}, {}>Unknown DisplayNameMap; //  0x60 Size(50)
 };
 
-// Class Engine.UserDefinedStruct
-struct UUserDefinedStruct : UScriptStruct {
-	Unknown status; //  0xc0 Size(1)
-	Unknown Guid; //  0xc4 Size(10)
+// Class Engine.User
+struct UUser : UScriptStruct {
+	enum class Unknown status; //  0xc0 Size(1)
+	struct Unknown Guid; //  0xc4 Size(10)
 };
 
 // Class Engine.UserInterfaceSettings
 struct UUserInterfaceSettings : UDeveloperSettings {
-	Unknown RenderFocusRule; //  0x38 Size(1)
-	Unknown HardwareCursors; //  0x40 Size(50)
-	Unknown SoftwareCursors; //  0x90 Size(50)
-	Unknown DefaultCursor; //  0xe0 Size(18)
-	Unknown TextEditBeamCursor; //  0xf8 Size(18)
-	Unknown CrosshairsCursor; //  0x110 Size(18)
-	Unknown HandCursor; //  0x128 Size(18)
-	Unknown Grab; //  0x140 Size(18)
-	Unknown GrabCursor; //  0x158 Size(18)
-	Unknown SlashedCircleCursor; //  0x170 Size(18)
+	enum class Unknow RenderFocusRule; //  0x38 Size(1)
+	struct TMap<{}, {}>Unknown HardwareCursors; //  0x40 Size(50)
+	struct TMap<{}, {}>Unknown SoftwareCursors; //  0x90 Size(50)
+	struct Unknown DefaultCursor; //  0xe0 Size(18)
+	struct Unknown TextEditBeamCursor; //  0xf8 Size(18)
+	struct Unknown CrosshairsCursor; //  0x110 Size(18)
+	struct Unknown HandCursor; //  0x128 Size(18)
+	struct Unknown GrabHandCursor; //  0x140 Size(18)
+	struct Unknown GrabHandClosedCursor; //  0x158 Size(18)
+	struct Unknown SlashedCircleCursor; //  0x170 Size(18)
 	float ApplicationScale; //  0x188 Size(4)
-	Unknown UIScaleRule; //  0x18c Size(1)
-	Unknown CustomScalingRuleClass; //  0x190 Size(18)
-	Unknown UIScaleCurve; //  0x1a8 Size(88)
+	enum class Unknow UIScaleRule; //  0x18c Size(1)
+	struct Unknown CustomScalingRuleClass; //  0x190 Size(18)
+	struct Unknown UIScaleCurve; //  0x1a8 Size(88)
 	char bAllowHighDPIInGameMode; //  0x230 Size(1)
 	char bLoadWidgetsOnDedicatedServer; //  0x231 Size(1)
-	Unknown CursorClasses; //  0x238 Size(10)
-	Unknown CustomScalingRuleClassInstance; //  0x248 Size(8)
-	Unknown CustomScalingRule; //  0x250 Size(8)
+	struct TArray<Unknown> CursorClasses; //  0x238 Size(10)
+	struct Unknown* CustomScalingRuleClassInstance; //  0x248 Size(8)
+	struct Unknown CustomScalingRule; //  0x250 Size(8)
 };
 
 // Class Engine.VectorField
 struct UVectorField : Object {
-	Unknown Bounds; //  0x28 Size(1c)
+	struct Unknown Bounds; //  0x28 Size(1c)
 	float Intensity; //  0x44 Size(4)
 };
 
 // Class Engine.VectorFieldAnimated
 struct UVectorFieldAnimated : UVectorField {
-	Unknown Texture; //  0x48 Size(8)
-	Unknown ConstructionOp; //  0x50 Size(1)
+	struct Unknown Texture; //  0x48 Size(8)
+	char ConstructionOp; //  0x50 Size(1)
 	int32_t VolumeSizeX; //  0x54 Size(4)
 	int32_t VolumeSizeY; //  0x58 Size(4)
 	int32_t VolumeSizeZ; //  0x5c Size(4)
@@ -12039,19 +12039,19 @@ struct UVectorFieldAnimated : UVectorField {
 	int32_t FrameCount; //  0x68 Size(4)
 	float FramesPerSecond; //  0x6c Size(4)
 	char bLoop; //  0x70 Size(1)
-	Unknown NoiseField; //  0x78 Size(8)
+	struct Unknown NoiseField; //  0x78 Size(8)
 	float NoiseScale; //  0x80 Size(4)
 	float NoiseMax; //  0x84 Size(4)
 };
 
 // Class Engine.VectorFieldComponent
 struct UVectorFieldComponent : UPrimitiveComponent {
-	Unknown VectorField; //  0x4b8 Size(8)
+	struct Unknown VectorField; //  0x4b8 Size(8)
 	float Intensity; //  0x4c0 Size(4)
 	float Tightness; //  0x4c4 Size(4)
 	char bPreviewVectorField; //  0x4c8 Size(1)
 
-	void SetIntensity(float NewIntensity); // Function Engine.VectorFieldComponent.SetIntensity(Native|Public|BlueprintCallable) // <Game+0x3e1a7c0>
+	void SetIntensity(float NewIntensity); // Function Engine.VectorFieldComponent.SetIntensity(Native|Public|BlueprintCallable) // <Game+0x3e27d40>
 };
 
 // Class Engine.VectorFieldStatic
@@ -12060,78 +12060,78 @@ struct UVectorFieldStatic : UVectorField {
 	int32_t SizeY; //  0x4c Size(4)
 	int32_t SizeZ; //  0x50 Size(4)
 	char bAllowCPUAccess; //  0x54 Size(1)
-	Unknown CPUData; //  0x80 Size(10)
+	struct TArray<Unknown> CPUData; //  0x80 Size(10)
 };
 
 // Class Engine.VectorFieldVolume
 struct AVectorFieldVolume : UActor {
-	Unknown VectorFieldComponent; //  0x310 Size(8)
+	struct Unknown VectorFieldComponent; //  0x310 Size(8)
 };
 
 // Class Engine.LightMapVirtualTexture2D
 struct ULightMapVirtualTexture2D : UTexture2D {
-	Unknown TypeToLayer; //  0xe8 Size(10)
+	struct TArray<Unknown> TypeToLayer; //  0xe8 Size(10)
 };
 
 // Class Engine.VirtualTexturePoolConfig
 struct UVirtualTexturePoolConfig : Object {
 	int32_t DefaultSizeInMegabyte; //  0x28 Size(4)
-	Unknown Pools; //  0x30 Size(10)
+	struct TArray<Unknown> Pools; //  0x30 Size(10)
 };
 
 // Class Engine.VOIPTalker
 struct UVOIPTalker : UActorComponent {
-	Unknown Settings; //  0xb0 Size(18)
+	struct Unknown Settings; //  0xb0 Size(18)
 
-	void RegisterWithPlayerState(Unknown OwningState); // Function Engine.VOIPTalker.RegisterWithPlayerState(Final|Native|Public|BlueprintCallable) // <Game+0x3e21350>
+	void RegisterWithPlayerState(struct Unknown OwningState); // Function Engine.VOIPTalker.RegisterWithPlayerState(Final|Native|Public|BlueprintCallable) // <Game+0x3e2e9b0>
 };
 
-// Class Engine.VolumetricLightmapDensityVo
-struct AVolumetricLightmapDensityVot : AVolume {
-	Unknown AllowedMipLevelRange; //  0x348 Size(8)
+// Class Engine.VolumetricLightmapDensityVolume
+struct AVolumetricLightmapDensityVolume : AVolume {
+	struct Unknown AllowedMipLevelRange; //  0x348 Size(8)
 };
 
-// Class Engine.WindDirectionalSource
-struct AWindDirectionalSource : AInfo {
-	Unknown Component; //  0x310 Size(8)
+// Class Engine.Wind
+struct AWind : AInfo {
+	struct Unknown Component; //  0x310 Size(8)
 };
 
-// Class Engine.WindDirectionalSourceComponent
-struct UWindDirectionalSourceComponent : USceneComponent {
+// Class Engine.Wind
+struct UWind : USceneComponent {
 	float Strength; //  0x238 Size(4)
 	float Speed; //  0x23c Size(4)
-	float MinGustAmount; //  0x240 Size(4)
-	float MaxGustAmount; //  0x244 Size(4)
+	float MinG; //  0x240 Size(4)
+	float MaxG; //  0x244 Size(4)
 	float Radius; //  0x248 Size(4)
 	char bPointWind; //  0x24c Size(1)
 
-	void SetWindType(Unknown InNewType); // Function Engine.WindDirectionalSourceComponent.SetWindType(Final|Native|Public|BlueprintCallable) // <Game+0x3e216c0>
+	void SetWindType(enum class Unknow InNewType); // Function Engine.Wind.SetWindType(Final|Native|Public|BlueprintCallable) // <Game+0x3e2ed20>
 };
 
 // Class Engine.WorldComposition
 struct UWorldComposition : Object {
-	Unknown TilesStreaming; //  0x130 Size(10)
-	Unknown TilesStreamingTimeThreshold; //  0x140 Size(8)
+	struct TArray<Unknown> TilesStreaming; //  0x130 Size(10)
+	double TilesStreamingTimeThreshold; //  0x140 Size(8)
 	char bLoadAllTilesDuringCinematic; //  0x148 Size(1)
-	char bReb; //  0x149 Size(1)
-	float RebaseOriginDistance; //  0x14c Size(4)
+	char bRebaseOriginIn3DSpace; //  0x149 Size(1)
+	float RebaseOrigin; //  0x14c Size(4)
 	char bApplyMinStreamingPriorityToLOD; //  0x150 Size(1)
 	char bApplyStreamingDistanceScaleToLOD; //  0x151 Size(1)
-	Unknown DevFilterRule; //  0x158 Size(10)
+	struct TArray<Unknown> DevFilterRule; //  0x158 Size(10)
 };
 
 // Class Engine.HierarchicalLODSetup
 struct UHierarchicalLODSetup : Object {
-	Unknown HierarchicalLODSetup; //  0x28 Size(10)
-	Unknown OverrideBaseMaterial; //  0x38 Size(28)
+	struct TArray<Unknown> HierarchicalLODSetup; //  0x28 Size(10)
+	struct TSoftObjectPtr<Unknown> OverrideBaseMaterial; //  0x38 Size(28)
 };
 
 // Class Engine.WorldTileLODSetup
 struct UWorldTileLODSetup : Object {
 	int32_t NumLOD; //  0x28 Size(4)
-	Unknown LOD1; //  0x2c Size(13c)
-	Unknown LOD2; //  0x168 Size(13c)
-	Unknown LOD3; //  0x2a4 Size(13c)
-	Unknown LOD4; //  0x3e0 Size(13c)
+	struct Unknown LOD1; //  0x2c Size(13c)
+	struct Unknown LOD2; //  0x168 Size(13c)
+	struct Unknown LOD3; //  0x2a4 Size(13c)
+	struct Unknown LOD4; //  0x3e0 Size(13c)
 };
 

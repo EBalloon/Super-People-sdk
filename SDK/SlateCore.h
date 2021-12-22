@@ -94,13 +94,13 @@ enum class EFlowDirectionPreference : uint8 {
 	EFlowDirectionPreference = 4
 };
 
-// Enum SlateCore.EColorVisionDeficiency
-enum class EColorVisionDeficiency : uint8 {
-	EColorVisionDeficiency = 0,
-	EColorVisionDeficiency = 1,
-	EColorVisionDeficiency = 2,
-	EColorVisionDeficiency = 3,
-	EColorVisionDeficiency = 4
+// Enum SlateCore.EColorVision
+enum class EColorVision : uint8 {
+	EColorVision = 0,
+	EColorVision = 1,
+	EColorVision = 2,
+	EColorVision = 3,
+	EColorVision = 4
 };
 
 // Enum SlateCore.ESelectInfo
@@ -340,6 +340,6 @@ enum class EConsumeMouseWheel : uint8 {
 
 // Class SlateCore.SlateWidgetStyleAsset
 struct USlateWidgetStyleAsset : Object {
-	Unknown CustomStyle; //  0x28 Size(8)
+	struct Unknown CustomStyle; //  0x28 Size(8)
 };
 

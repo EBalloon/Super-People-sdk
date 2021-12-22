@@ -1,4 +1,4 @@
-// UserDefinedEnum EIntTypes.EIntTypes
+// User EIntTypes.EIntTypes
 enum class EIntTypes : uint8 {
 	EIntTypes = 0,
 	EIntTypes = 1,

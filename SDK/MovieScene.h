@@ -122,22 +122,22 @@ enum class ESpawnOwnership : uint8 {
 
 // Class MovieScene.MovieSceneSignedObject
 struct UMovieSceneSignedObject : Object {
-	Unknown Signature; //  0x28 Size(10)
+	struct Unknown Signature; //  0x28 Size(10)
 };
 
 // Class MovieScene.MovieSceneTrack
 struct UMovieSceneTrack : UMovieSceneSignedObject {
-	Unknown EvalOptions; //  0x50 Size(4)
+	struct Unknown EvalOptions; //  0x50 Size(4)
 	char bIsEvalDisabled; //  0x55 Size(1)
 };
 
 // Class MovieScene.MovieSceneSection
 struct UMovieSceneSection : UMovieSceneSignedObject {
-	Unknown EvalOptions; //  0x50 Size(2)
-	Unknown Easing; //  0x58 Size(38)
-	Unknown SectionRange; //  0x90 Size(10)
-	Unknown PreRollFrames; //  0xa0 Size(4)
-	Unknown PostRollFrames; //  0xa4 Size(4)
+	struct Unknown EvalOptions; //  0x50 Size(2)
+	struct Unknown Easing; //  0x58 Size(38)
+	struct Unknown SectionRange; //  0x90 Size(10)
+	struct Unknown PreRollFrames; //  0xa0 Size(4)
+	struct Unknown PostRollFrames; //  0xa4 Size(4)
 	int32_t rowIndex; //  0xa8 Size(4)
 	int32_t OverlapPriority; //  0xac Size(4)
 	char bIsActive; //  0xb0 Size(1)
@@ -148,19 +148,19 @@ struct UMovieSceneSection : UMovieSceneSignedObject {
 	float PostrollTime; //  0xc0 Size(4)
 	char bIsInfinite; //  0xc4 Size(1)
 	char bSupportsInfiniteRange; //  0xc8 Size(1)
-	Unknown BlendType; //  0xc9 Size(2)
+	struct Unknown BlendType; //  0xc9 Size(2)
 
-	void SetRowIndex(int32_t NewRowIndex); // Function MovieScene.MovieSceneSection.SetRowIndex(Final|Native|Public|BlueprintCallable) // <Game+0x31b2860>
+	void SetRowIndex(int32_t NewRowIndex); // Function MovieScene.MovieSceneSection.SetRowIndex(Final|Native|Public|BlueprintCallable) // <Game+0x31bd850>
 };
 
 // Class MovieScene.MovieSceneSequence
 struct UMovieSceneSequence : UMovieSceneSignedObject {
-	Unknown PrecompiledEvaluationTemplate; //  0x50 Size(2f0)
-	Unknown DefaultCompletionMode; //  0x340 Size(1)
+	struct Unknown PrecompiledEvaluationTemplate; //  0x50 Size(2f0)
+	enum class Unknow DefaultCompletionMode; //  0x340 Size(1)
 	char bParentContextsAreSignificant; //  0x341 Size(1)
 	char bPlayableDirectly; //  0x342 Size(1)
 
-	Unknown FindBindingsByTag(struct FName InBindingName); // Function MovieScene.MovieSceneSequence.FindBindingsByTag(Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x31b6840>
+	struct TArray<Unknown> FindBindingsByTag(struct FName InBindingName); // Function MovieScene.MovieSceneSequence.FindBindingsByTag(Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x31c1870>
 };
 
 // Class MovieScene.MovieSceneSequencePlayer
@@ -170,93 +170,93 @@ struct UMovieSceneSequencePlayer : Object {
 	struct FMulticastInlineDelegate OnStop; //  0x428 Size(10)
 	struct FMulticastInlineDelegate OnPause; //  0x438 Size(10)
 	struct FMulticastInlineDelegate OnFinished; //  0x448 Size(10)
-	Unknown status; //  0x458 Size(1)
+	enum class Unknown status; //  0x458 Size(1)
 	char bReversePlayback; //  0x45c Size(1)
-	Unknown Sequence; //  0x460 Size(8)
-	Unknown StartTime; //  0x468 Size(4)
+	struct Unknown Sequence; //  0x460 Size(8)
+	struct Unknown StartTime; //  0x468 Size(4)
 	int32_t DurationFrames; //  0x46c Size(4)
 	int32_t CurrentNumLoops; //  0x470 Size(4)
-	Unknown PlaybackSettings; //  0x488 Size(14)
-	Unknown RootTemplateInstance; //  0x4a0 Size(320)
-	Unknown NetSyncProps; //  0x828 Size(10)
-	Unknown PlaybackClient; //  0x838 Size(10)
+	struct Unknown PlaybackSettings; //  0x488 Size(14)
+	struct Unknown RootTemplateInstance; //  0x4a0 Size(320)
+	struct Unknown NetSyncProps; //  0x828 Size(10)
+	struct TScriptInterface<IUnknown> PlaybackClient; //  0x838 Size(10)
 
-	void StopAtCurrentTime(); // Function MovieScene.MovieSceneSequencePlayer.StopAtCurrentTime(Final|Native|Public|BlueprintCallable) // <Game+0x31b7d20>
+	void StopAtCurrentTime(); // Function MovieScene.MovieSceneSequencePlayer.StopAtCurrentTime(Final|Native|Public|BlueprintCallable) // <Game+0x31c2d50>
 };
 
 // Class MovieScene.MovieSceneSubSection
 struct UMovieSceneSubSection : UMovieSceneSection {
-	Unknown Parameters; //  0xe0 Size(24)
+	struct Unknown Parameters; //  0xe0 Size(24)
 	float StartOffset; //  0x104 Size(4)
 	float TimeScale; //  0x108 Size(4)
 	float PrerollTime; //  0x10c Size(4)
-	Unknown SubSequence; //  0x110 Size(8)
+	struct Unknown SubSequence; //  0x110 Size(8)
 	Unknown ActorToRecord; //  0x118 Size(1c)
 	struct FString TargetSequenceName; //  0x138 Size(10)
-	Unknown TargetPathToRecordTo; //  0x148 Size(10)
+	struct Unknown TargetPathToRecordTo; //  0x148 Size(10)
 
-	void SetSequence(Unknown Sequence); // Function MovieScene.MovieSceneSubSection.SetSequence(Final|Native|Public|BlueprintCallable) // <Game+0x31ba9f0>
+	void SetSequence(struct Unknown Sequence); // Function MovieScene.MovieSceneSubSection.SetSequence(Final|Native|Public|BlueprintCallable) // <Game+0x31c5a80>
 };
 
 // Class MovieScene.MovieSceneSubTrack
 struct UMovieSceneSubTrack : UMovieSceneNameableTrack {
-	Unknown Sections; //  0x58 Size(10)
+	struct TArray<Unknown> Sections; //  0x58 Size(10)
 };
 
 // Class MovieScene.MovieScene
 struct UMovieScene : UMovieSceneSignedObject {
-	Unknown Spawnables; //  0x50 Size(10)
-	Unknown Possessables; //  0x60 Size(10)
-	Unknown ObjectBindings; //  0x70 Size(10)
-	Unknown BindingGroups; //  0x80 Size(50)
-	Unknown MasterTracks; //  0xd0 Size(10)
-	Unknown CameraCutTrack; //  0xe0 Size(8)
-	Unknown SelectionRange; //  0xe8 Size(10)
-	Unknown PlaybackRange; //  0xf8 Size(10)
-	Unknown TickResolution; //  0x108 Size(8)
-	Unknown DisplayRate; //  0x110 Size(8)
-	Unknown EvaluationType; //  0x118 Size(1)
-	Unknown ClockSource; //  0x119 Size(1)
-	Unknown CustomClockSourcePath; //  0x120 Size(18)
-	Unknown MarkedFrames; //  0x138 Size(10)
+	struct TArray<Unknown> Spawnables; //  0x50 Size(10)
+	struct TArray<Unknown> Possessables; //  0x60 Size(10)
+	struct TArray<Unknown> ObjectBindings; //  0x70 Size(10)
+	struct TMap<{}, {}>Unknown BindingGroups; //  0x80 Size(50)
+	struct TArray<Unknown> MasterTracks; //  0xd0 Size(10)
+	struct Unknown CameraCutTrack; //  0xe0 Size(8)
+	struct Unknown SelectionRange; //  0xe8 Size(10)
+	struct Unknown PlaybackRange; //  0xf8 Size(10)
+	struct Unknown TickResolution; //  0x108 Size(8)
+	struct Unknown DisplayRate; //  0x110 Size(8)
+	enum class Unknow EvaluationType; //  0x118 Size(1)
+	enum class Unknow ClockSource; //  0x119 Size(1)
+	struct Unknown CustomClockSourcePath; //  0x120 Size(18)
+	struct TArray<Unknown> MarkedFrames; //  0x138 Size(10)
 };
 
 // Class MovieScene.MovieSceneBindingOv
-struct UMovieSceneBindingOv : Object {
-	Unknown BindingData; //  0x28 Size(10)
+struct UMovieSceneBindingOvvieScen : Object {
+	struct TArray<Unknown> BindingData; //  0x28 Size(10)
 };
 
 // Class MovieScene.MovieSceneBuiltInEasingFunction
 struct UMovieSceneBuiltInEasingFunction : Object {
-	Unknown Type; //  0x30 Size(1)
+	enum class Unknow Type; //  0x30 Size(1)
 };
 
 // Class MovieScene.MovieSceneEasingExternalCurve
 struct UMovieSceneEasingExternalCurve : Object {
-	Unknown Curve; //  0x30 Size(8)
+	struct Unknown Curve; //  0x30 Size(8)
 };
 
 // Class MovieScene.MovieSceneFolder
 struct UMovieSceneFolder : Object {
 	struct FName FolderName; //  0x28 Size(8)
-	Unknown ChildFolders; //  0x30 Size(10)
-	Unknown ChildMasterTracks; //  0x40 Size(10)
-	Unknown ChildObjectBindingStrings; //  0x50 Size(10)
+	struct TArray<Unknown> ChildFolders; //  0x30 Size(10)
+	struct TArray<Unknown> ChildMasterTracks; //  0x40 Size(10)
+	struct TArray<Unknown> ChildObjectBindingStrings; //  0x50 Size(10)
 };
 
 // Class MovieScene.TestMovieSceneTrack
 struct UTestMovieSceneTrack : UMovieSceneTrack {
 	char bHighPassFilter; //  0x58 Size(1)
-	Unknown SectionArray; //  0x60 Size(10)
+	struct TArray<Unknown> SectionArray; //  0x60 Size(10)
 };
 
 // Class MovieScene.TestMovieSceneSequence
 struct UTestMovieSceneSequence : UMovieSceneSequence {
-	Unknown MovieScene; //  0x348 Size(8)
+	struct Unknown MovieScene; //  0x348 Size(8)
 };
 
 // Class MovieScene.TestMovieSceneSubTrack
 struct UTestMovieSceneSubTrack : UMovieSceneSubTrack {
-	Unknown SectionArray; //  0x68 Size(10)
+	struct TArray<Unknown> SectionArray; //  0x68 Size(10)
 };
 

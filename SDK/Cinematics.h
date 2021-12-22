@@ -1,11 +1,11 @@
-// BlueprintGeneratedClass BP_AreaRectLight.BP_AreaRectLight_C
+// BlueprintGeneratedClass Cinematics.BP_AreaRectLight_C
 struct ABP_AreaRectLight_C : UActor {
-	Unknown UberGraphFrame; //  0x310 Size(8)
-	Unknown Arrow; //  0x318 Size(8)
-	Unknown DefaultSceneRoot; //  0x320 Size(8)
-	Unknown LightList; //  0x328 Size(10)
+	struct Unknown UberGraphFrame; //  0x310 Size(8)
+	struct Unknown Arrow; //  0x318 Size(8)
+	struct Unknown DefaultSceneRoot; //  0x320 Size(8)
+	struct TArray<Unknown> LightList; //  0x328 Size(10)
 	float Intensity; //  0x338 Size(4)
-	Unknown Color; //  0x33c Size(10)
+	struct Unknown Color; //  0x33c Size(10)
 	float FocalAngleOuter; //  0x34c Size(4)
 	float FocalAngleInner; //  0x350 Size(4)
 	float AttenuationDistance; //  0x354 Size(4)
@@ -15,14 +15,14 @@ struct ABP_AreaRectLight_C : UActor {
 	int32_t LightSamplesSquared; //  0x364 Size(4)
 	float SourceRadiusMult; //  0x368 Size(4)
 	float CenterOfInterestLength; //  0x36c Size(4)
-	char Enab; //  0x370 Size(1)
-	Unknown Channels; //  0x371 Size(1)
+	char Enabled; //  0x370 Size(1)
+	struct Unknown Channels; //  0x371 Size(1)
 	float SoftRadius; //  0x374 Size(4)
 	float ShadowBias; //  0x378 Size(4)
 	float ShadowResolutionScale; //  0x37c Size(4)
-	Unknown LightSet01; //  0x380 Size(10)
-	Unknown LightSet02; //  0x390 Size(10)
-	Unknown LightSet03; //  0x3a0 Size(10)
+	struct TArray<Unknown> LightSet01; //  0x380 Size(10)
+	struct TArray<Unknown> LightSet02; //  0x390 Size(10)
+	struct TArray<Unknown> LightSet03; //  0x3a0 Size(10)
 	char LightVisibility01; //  0x3b0 Size(1)
 	char LightVisibility02; //  0x3b1 Size(1)
 	char LightVisibility03; //  0x3b2 Size(1)
@@ -33,6 +33,6 @@ struct ABP_AreaRectLight_C : UActor {
 	char LightVisibility08; //  0x3b7 Size(1)
 	char LightVisibility09; //  0x3b8 Size(1)
 
-	void NewFunction_1(); // Function BP_AreaRectLight.BP_AreaRectLight_C.NewFunction_1(Public|BlueprintCallable|BlueprintEvent) // <Game+0x23a73f0>
+	void NewFunction_1(); // Function Cinematics.BP_AreaRectLight_C.NewFunction_1(Public|BlueprintCallable|BlueprintEvent) // <Game+0x23b1e70>
 };
 

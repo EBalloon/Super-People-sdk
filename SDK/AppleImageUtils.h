@@ -17,12 +17,12 @@ enum class ETextureRotationDirection : uint8 {
 	ETextureRotationDirection = 4
 };
 
-// Class AppleImageUtils.AppleImageUtilsBaseAsyncTaskBlueprintProxy
-struct UAppleImageUtilsBaseAsyncTaskBlueprintProxy : Object {
+// Class AppleImageUtils.AppleImageUtilsBaseAsyncTasoxyi
+struct UAppleImageUtilsBaseAsyncTasoxyi : Object {
 	struct FMulticastInlineDelegate OnSuccess; //  0x30 Size(10)
 	struct FMulticastInlineDelegate OnFailure; //  0x40 Size(10)
-	Unknown ConversionResult; //  0x60 Size(20)
+	struct Unknown ConversionResult; //  0x60 Size(20)
 
-	Unknown CreateProxyObjectForConvertToTIFF(Unknown SourceImage, char bWantColor, char bUseGpu, float Scale, Unknown Rotate); // Function AppleImageUtils.AppleImageUtilsBaseAsyncTaskBlueprintProxy.CreateProxyObjectForConvertToTIFF(Final|Native|Static|Public|BlueprintCallable) // <Game+0x184e740>
+	struct Unknown CreateProxyObjectForConvertToTIFF(struct Unknown SourceImage, char bWantColor, char bUseGpu, float Scale, enum class Unknow Rotate); // Function AppleImageUtils.AppleImageUtilsBaseAsyncTas.CreateProxyObjectForConvertToTIFF(Final|Native|Static|Public|BlueprintCallable) // <Game+0x184f510>
 };
 

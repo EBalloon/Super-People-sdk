@@ -10,8 +10,8 @@ enum class EPatchServiceError : uint8 {
 
 // Class BravoHotelPatch.BravoHotelPatchWidget
 struct UBravoHotelPatchWidget : UUserWidget {
-	Unknown PatchService; //  0x268 Size(8)
+	struct Unknown PatchService; //  0x268 Size(8)
 
-	void StartPatchService(); // Function BravoHotelPatch.BravoHotelPatchWidget.StartPatchService(Final|Native|Public|BlueprintCallable) // <Game+0x205be40>
+	void StartPatchService(); // Function BravoHotelPatch.BravoHotelPatchWidget.StartPatchService(Final|Native|Public|BlueprintCallable) // <Game+0x2065aa0>
 };
 

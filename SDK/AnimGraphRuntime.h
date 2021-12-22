@@ -205,14 +205,14 @@ enum class ERBFNormalizeMethod : uint8 {
 	ERBFNormalizeMethod = 4
 };
 
-// Enum AnimGraphRuntime.ERBFDistanceMethod
-enum class ERBFDistanceMethod : uint8 {
-	ERBFDistanceMethod = 0,
-	ERBFDistanceMethod = 1,
-	ERBFDistanceMethod = 2,
-	ERBFDistanceMethod = 3,
-	ERBFDistanceMethod = 4,
-	ERBFDistanceMethod = 5
+// Enum AnimGraphRuntime.ERBF
+enum class ERBF : uint8 {
+	ERBF = 0,
+	ERBF = 1,
+	ERBF = 2,
+	ERBF = 3,
+	ERBF = 4,
+	ERBF = 5
 };
 
 // Enum AnimGraphRuntime.ERBFFunctionType
@@ -251,6 +251,6 @@ struct UPlayMontageCallbackProxy : Object {
 	struct FMulticastInlineDelegate OnNotifyBegin; //  0x58 Size(10)
 	struct FMulticastInlineDelegate OnNotifyEnd; //  0x68 Size(10)
 
-	void OnNotifyEndReceived(struct FName NotifyName, Unknown& BranchingPointNotifyPayload); // Function AnimGraphRuntime.PlayMontageCallbackProxy.OnNotifyEndReceived(Final|Native|Protected|HasOutParms) // <Game+0x3230030>
+	void OnNotifyEndReceived(struct FName NotifyName, struct Unknown& BranchingPointNotifyPayload); // Function AnimGraphRuntime.PlayMontageCallbackProxy.OnNotifyEndReceived(Final|Native|Protected|HasOutParms) // <Game+0x323b490>
 };
 

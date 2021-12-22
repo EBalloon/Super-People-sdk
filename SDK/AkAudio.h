@@ -438,36 +438,36 @@ enum class EAkWindowsAudioAPI : uint8 {
 
 // Class AkAudio.AkAcousticPortal
 struct AAkAcousticPortal : AVolume {
-	Unknown InitialState; //  0x348 Size(1)
+	enum class Unknow InitialState; //  0x348 Size(1)
 	float ObstructionRefreshInterval; //  0x34c Size(4)
-	Unknown ObstructionCollisionChannel; //  0x350 Size(1)
+	char ObstructionCollisionChannel; //  0x350 Size(1)
 
-	void OpenPortal(); // Function AkAudio.AkAcousticPortal.OpenPortal(Final|Native|Public|BlueprintCallable) // <Game+0x15fa3e0>
+	void OpenPortal(); // Function AkAudio.AkAcousticPortal.OpenPortal(Final|Native|Public|BlueprintCallable) // <Game+0x15fac20>
 };
 
 // Class AkAudio.AkAudioType
 struct UAkAudioType : Object {
 	uint32_t ShortID; //  0x28 Size(4)
-	Unknown UserData; //  0x30 Size(10)
+	struct TArray<Unknown> User; //  0x30 Size(10)
 };
 
 // Class AkAudio.AkAmbientSound
 struct AAkAmbientSound : UActor {
-	Unknown AkAudioEvent; //  0x310 Size(8)
-	Unknown AkComponent; //  0x318 Size(8)
+	struct Unknown AkAudioEvent; //  0x310 Size(8)
+	struct Unknown AkComponent; //  0x318 Size(8)
 	char StopWhenOwnerIsDestroyed; //  0x320 Size(1)
 	char AutoPost; //  0x321 Size(1)
 
-	void StopAmbientSound(); // Function AkAudio.AkAmbientSound.StopAmbientSound(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game+0x15fb620>
+	void StopAmbientSound(); // Function AkAudio.AkAmbientSound.StopAmbientSound(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game+0x15fbe60>
 };
 
 // Class AkAudio.AkAndroidInitializationSettings
 struct UAkAndroidInitializationSettings : Object {
-	Unknown CommonSettings; //  0x28 Size(68)
-	Unknown CommunicationSettings; //  0x90 Size(28)
-	Unknown AdvancedSettings; //  0xb8 Size(40)
+	struct Unknown CommonSettings; //  0x28 Size(68)
+	struct Unknown CommunicationSettings; //  0x90 Size(28)
+	struct Unknown AdvancedSettings; //  0xb8 Size(40)
 
-	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkAndroidInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <Game+0x15fa360>
+	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkAndroidInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <Game+0x15faba0>
 };
 
 // Class AkAudio.AkAssetData
@@ -477,82 +477,82 @@ struct UAkAssetData : Object {
 
 // Class AkAudio.AkAssetDataWithMedia
 struct UAkAssetDataWithMedia : UAkAssetData {
-	Unknown MediaList; //  0x60 Size(10)
+	struct TArray<Unknown> MediaList; //  0x60 Size(10)
 };
 
 // Class AkAudio.AkAssetPlatformData
 struct UAkAssetPlatformData : Object {
-	Unknown CurrentAssetData; //  0x28 Size(8)
+	struct Unknown CurrentAsset; //  0x28 Size(8)
 };
 
 // Class AkAudio.AkAssetBase
 struct UAkAssetBase : UAkAudioType {
-	Unknown PlatformAssetData; //  0x40 Size(8)
+	struct Unknown PlatformAssetData; //  0x40 Size(8)
 };
 
 // Class AkAudio.AkAudioBank
 struct UAkAudioBank : UAkAssetBase {
 	char AutoLoad; //  0x50 Size(1)
-	Unknown LocalizedPlatformAssetDataMap; //  0x58 Size(50)
-	Unknown LinkedAkEvents; //  0xa8 Size(50)
-	Unknown CurrentLocalizedPlatformAssetData; //  0xf8 Size(8)
+	struct TMap<{}, {}>Unknown LocalizedPlatformAssetDataMap; //  0x58 Size(50)
+	struct TSet<Unknown> LinkedAkEvents; //  0xa8 Size(50)
+	struct Unknown CurrentLocalizedPlatformAss; //  0xf8 Size(8)
 };
 
 // Class AkAudio.AkAssetDataSwitchContainerData
 struct UAkAssetDataSwitchContainerData : Object {
-	Unknown GroupValue; //  0x28 Size(28)
-	Unknown DefaultGroupValue; //  0x50 Size(8)
-	Unknown MediaList; //  0x58 Size(10)
-	Unknown Children; //  0x68 Size(10)
+	struct TSoftObjectPtr<Unknown> GroupValue; //  0x28 Size(28)
+	struct Unknown DefaultGroupValue; //  0x50 Size(8)
+	struct TArray<Unknown> MediaList; //  0x58 Size(10)
+	struct TArray<Unknown> Children; //  0x68 Size(10)
 };
 
 // Class AkAudio.AkAssetDataSwitchContainer
 struct UAkAssetDataSwitchContainer : UAkAssetDataWithMedia {
-	Unknown SwitchContainers; //  0x70 Size(10)
-	Unknown DefaultGroupValue; //  0x80 Size(8)
+	struct TArray<Unknown> SwitchContainers; //  0x70 Size(10)
+	struct Unknown DefaultGroupValue; //  0x80 Size(8)
 };
 
-// Class AkAudio.AkAudioEventData
-struct UAkAudioEventData : UAkAssetDataSwitchContainer {
+// Class AkAudio.AkAudioEventDio
+struct UAkAudioEvent : UAkAssetDataSwitchContainer {
 	float MaxAttenuationRadius; //  0x88 Size(4)
 	char IsInfinite; //  0x8c Size(1)
 	float MinimumDuration; //  0x90 Size(4)
 	float MaximumDuration; //  0x94 Size(4)
-	Unknown LocalizedMedia; //  0x98 Size(50)
-	Unknown PostedEvents; //  0xe8 Size(50)
-	Unknown UserDefinedSends; //  0x138 Size(50)
-	Unknown PostedTriggers; //  0x188 Size(50)
-	Unknown GroupValues; //  0x1d8 Size(50)
+	struct TMap<{}, {}>Unknown LocalizedMedia; //  0x98 Size(50)
+	struct TSet<Unknown> PostedEvents; //  0xe8 Size(50)
+	struct TSet<Unknown> User; //  0x138 Size(50)
+	struct TSet<Unknown> PostedTriggers; //  0x188 Size(50)
+	struct TSet<Unknown> GroupValues; //  0x1d8 Size(50)
 };
 
 // Class AkAudio.AkAudioEvent
 struct UAkAudioEvent : UAkAssetBase {
-	Unknown LocalizedPlatformAssetDataMap; //  0x50 Size(50)
-	Unknown RequiredBank; //  0xa0 Size(8)
-	Unknown CurrentLocalizedPlatformData; //  0xb0 Size(8)
+	struct TMap<{}, {}>Unknown LocalizedPlatformAssetDataMap; //  0x50 Size(50)
+	struct Unknown RequiredBank; //  0xa0 Size(8)
+	struct Unknown CurrentLocalizedPlatformData; //  0xb0 Size(8)
 	float MaxAttenuationRadius; //  0xb8 Size(4)
 	char IsInfinite; //  0xbc Size(1)
 	float MinimumDuration; //  0xc0 Size(4)
 	float MaximumDuration; //  0xc4 Size(4)
 
-	float GetMinimumDuration(); // Function AkAudio.AkAudioEvent.GetMinimumDuration(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x15fa070>
+	float GetMinimumDuration(); // Function AkAudio.AkAudioEvent.GetMinimumDuration(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x15fa8b0>
 };
 
 // Class AkAudio.AkGameObject
 struct UAkGameObject : USceneComponent {
-	Unknown AkAudioEvent; //  0x238 Size(8)
+	struct Unknown AkAudioEvent; //  0x238 Size(8)
 	struct FString EventName; //  0x240 Size(10)
 	char bAutoRegisterWithWwise; //  0x250 Size(1)
 
-	void Stop(); // Function AkAudio.AkGameObject.Stop(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game+0x1600640>
+	void Stop(); // Function AkAudio.AkGameObject.Stop(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game+0x1600e80>
 };
 
 // Class AkAudio.AkComponent
 struct UAkComponent : UAkGameObject {
 	char bUseSpatialAudio; //  0x258 Size(1)
-	Unknown OcclusionCollisionChannel; //  0x260 Size(1)
-	char Enab; //  0x264 Size(1)
-	Unknown EarlyReflectionAuxBus; //  0x268 Size(8)
+	char OcclusionCollisionChannel; //  0x260 Size(1)
+	char EnableSpotReflectors; //  0x264 Size(1)
+	struct Unknown EarlyReflectionAuxBus; //  0x268 Size(8)
 	struct FString EarlyReflectionAuxBusName; //  0x270 Size(10)
 	int32_t EarlyReflectionOrder; //  0x280 Size(4)
 	float EarlyReflectionBusSendGain; //  0x284 Size(4)
@@ -564,37 +564,37 @@ struct UAkComponent : UAkGameObject {
 	char DrawFirstOrderReflections; //  0x29c Size(1)
 	char DrawSecondOrderReflections; //  0x29c Size(1)
 	char DrawHigherOrderReflections; //  0x29c Size(1)
-	char DrawDiffraction; //  0x29c Size(1)
+	char Draw; //  0x29c Size(1)
 	char StopWhenOwnerDestroyed; //  0x2a0 Size(1)
-	float RoomIterationInterv; //  0x2a4 Size(4)
+	float RoomIterationIntervye; //  0x2a4 Size(4)
 	float AttenuationScalingFactor; //  0x2a8 Size(4)
 	float OcclusionRefreshInterval; //  0x2ac Size(4)
 	char bUseReverbVolumes; //  0x2b0 Size(1)
-	Unknown Listeners; //  0x3a0 Size(50)
-	Unknown Emitters; //  0x3f0 Size(50)
+	struct TSet<Unknown> Listeners; //  0x3a0 Size(50)
+	struct TSet<Unknown> Emitters; //  0x3f0 Size(50)
 
-	void UseReverbVolumes(char inUseReverbVolumes); // Function AkAudio.AkComponent.UseReverbVolumes(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game+0x15fb820>
+	void UseReverbVolumes(char inUseReverbVolumes); // Function AkAudio.AkComponent.UseReverbVolumes(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game+0x15fc060>
 };
 
 // Class AkAudio.AkAuxBus
 struct UAkAuxBus : UAkAssetBase {
-	Unknown RequiredBank; //  0x50 Size(8)
+	struct Unknown RequiredBank; //  0x50 Size(8)
 };
 
 // Class AkAudio.AkCheckBox
 struct UAkCheckBox : UContentWidget {
-	Unknown CheckedState; //  0x4d0 Size(1)
-	struct FDelegate CheckedStateDelegate; //  0x4d4 Size(10)
-	Unknown WidgetStyle; //  0x4e8 Size(580)
-	Unknown HorizontalAlignment; //  0xa68 Size(1)
+	enum class Unknow CheckedState; //  0x4d0 Size(1)
+	struct FDelegate CheckedState; //  0x4d4 Size(10)
+	struct Unknown WidgetStyle; //  0x4e8 Size(580)
+	char HorizontalAlignment; //  0xa68 Size(1)
 	char IsFocusable; //  0xa69 Size(1)
-	Unknown ThePropertyToControl; //  0xa70 Size(10)
-	Unknown ItemToControl; //  0xa80 Size(40)
+	struct Unknown ThePropertyToControl; //  0xa70 Size(10)
+	struct Unknown ItemToControl; //  0xa80 Size(40)
 	struct FMulticastInlineDelegate AkOnCheckStateChanged; //  0xac0 Size(10)
 	struct FMulticastInlineDelegate OnItemDropped; //  0xad0 Size(10)
 	struct FMulticastInlineDelegate OnPropertyDropped; //  0xae0 Size(10)
 
-	void SetIsChecked(char InIsChecked); // Function AkAudio.AkCheckBox.SetIsChecked(Final|Native|Public|BlueprintCallable) // <Game+0x15fb030>
+	void SetIsChecked(char InIsChecked); // Function AkAudio.AkCheckBox.SetIsChecked(Final|Native|Public|BlueprintCallable) // <Game+0x15fb870>
 };
 
 // Class AkAudio.AkFolder
@@ -605,7 +605,7 @@ struct UAkFolder : UAkAudioType {
 
 // Class AkAudio.AkCallbackInfo
 struct UAkCallbackInfo : Object {
-	Unknown AkComponent; //  0x28 Size(8)
+	struct Unknown AkComponent; //  0x28 Size(8)
 };
 
 // Class AkAudio.AkEventCallbackInfo
@@ -633,58 +633,58 @@ struct UAkDurationCallbackInfo : UAkEventCallbackInfo {
 // Class AkAudio.AkMusicSyncCallbackInfo
 struct UAkMusicSyncCallbackInfo : UAkCallbackInfo {
 	int32_t PlayingID; //  0x30 Size(4)
-	Unknown SegmentInfo; //  0x34 Size(24)
-	Unknown MusicSyncType; //  0x58 Size(1)
+	struct Unknown SegmentInfo; //  0x34 Size(24)
+	enum class Unknow MusicSyncType; //  0x58 Size(1)
 	struct FString UserCueName; //  0x60 Size(10)
 };
 
 // Class AkAudio.AkGeometryComponent
 struct UAkGeometryComponent : USceneComponent {
-	Unknown MeshType; //  0x238 Size(1)
+	enum class Unknow MeshType; //  0x238 Size(1)
 	int32_t LOD; //  0x23c Size(4)
 	float WeldingThreshold; //  0x240 Size(4)
-	Unknown StaticMeshSurfaceOv; //  0x248 Size(50)
-	Unknown CollisionMeshSurfaceOverride; //  0x298 Size(10)
+	struct TMap<{}, {}>Unknown StaticMeshSurfaceOv; //  0x248 Size(50)
+	struct Unknown CollisionMeshSurfaceOverride; //  0x298 Size(10)
 	char bEnableDiffraction; //  0x2a8 Size(1)
 	char bEnableDiffractionOnBoundaryEdges; //  0x2a8 Size(1)
-	Unknown AssociatedRoom; //  0x2b0 Size(8)
-	Unknown GeometryData; //  0x2c8 Size(50)
+	struct Unknown AssociatedRoom; //  0x2b0 Size(8)
+	struct Unknown GeometryData; //  0x2c8 Size(50)
 
-	void UpdateGeometry(); // Function AkAudio.AkGeometryComponent.UpdateGeometry(Final|Native|Public|BlueprintCallable) // <Game+0x1605e80>
+	void UpdateGeometry(); // Function AkAudio.AkGeometryComponent.UpdateGeometry(Final|Native|Public|BlueprintCallable) // <Game+0x1606760>
 };
 
 // Class AkAudio.AkGroupValue
 struct UAkGroupValue : UAkAudioType {
-	Unknown MediaDependencies; //  0x40 Size(10)
+	struct TArray<Unknown> MediaDependencies; //  0x40 Size(10)
 	uint32_t GroupShortID; //  0x50 Size(4)
 };
 
 // Class AkAudio.AkHololensInitializationSettings
 struct UAkHololensInitializationSettings : Object {
-	Unknown CommonSettings; //  0x28 Size(68)
-	Unknown CommunicationSettings; //  0x90 Size(28)
-	Unknown AdvancedSettings; //  0xb8 Size(40)
+	struct Unknown CommonSettings; //  0x28 Size(68)
+	struct Unknown CommunicationSettings; //  0x90 Size(28)
+	struct Unknown AdvancedSettings; //  0xb8 Size(40)
 
-	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkHololensInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <Game+0x15fa360>
+	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkHololensInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <Game+0x15faba0>
 };
 
 // Class AkAudio.AkInitBankAssetData
 struct UAkInitBankAssetData : UAkAssetDataWithMedia {
-	Unknown PluginInfos; //  0x70 Size(10)
+	struct TArray<Unknown> PluginInfos; //  0x70 Size(10)
 };
 
 // Class AkAudio.AkInitBank
 struct UAkInitBank : UAkAssetBase {
-	Unknown AvailableAudioCultures; //  0x50 Size(10)
+	struct TArray<Unknown> AvailableAudioCultures; //  0x50 Size(10)
 	struct FString DefaultLanguage; //  0x60 Size(10)
 };
 
 // Class AkAudio.AkIOSInitializationSettings
 struct UAkIOSInitializationSettings : Object {
-	Unknown CommonSettings; //  0x28 Size(68)
-	Unknown AudioSession; //  0x90 Size(c)
-	Unknown CommunicationSettings; //  0xa0 Size(28)
-	Unknown AdvancedSettings; //  0xc8 Size(34)
+	struct Unknown CommonSettings; //  0x28 Size(68)
+	struct Unknown AudioSession; //  0x90 Size(c)
+	struct Unknown CommunicationSettings; //  0xa0 Size(28)
+	struct Unknown AdvancedSettings; //  0xc8 Size(34)
 };
 
 // Class AkAudio.AkItemBoolProperties
@@ -692,7 +692,7 @@ struct UAkItemBoolProperties : UWidget {
 	struct FMulticastInlineDelegate OnSelectionChanged; //  0x108 Size(10)
 	struct FMulticastInlineDelegate OnPropertyDragged; //  0x118 Size(10)
 
-	void SetSearchText(struct FString newText); // Function AkAudio.AkItemBoolProperties.SetSearchText(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game+0x160ca70>
+	void SetSearchText(struct FString newText); // Function AkAudio.AkItemBoolProperties.SetSearchText(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game+0x160d3a0>
 };
 
 // Class AkAudio.AkItemProperties
@@ -700,49 +700,49 @@ struct UAkItemProperties : UWidget {
 	struct FMulticastInlineDelegate OnSelectionChanged; //  0x108 Size(10)
 	struct FMulticastInlineDelegate OnPropertyDragged; //  0x118 Size(10)
 
-	void SetSearchText(struct FString newText); // Function AkAudio.AkItemProperties.SetSearchText(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game+0x160ca70>
+	void SetSearchText(struct FString newText); // Function AkAudio.AkItemProperties.SetSearchText(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game+0x160d3a0>
 };
 
 // Class AkAudio.AkLateReverbComponent
 struct UAkLateReverbComponent : USceneComponent {
 	char bEnable; //  0x238 Size(1)
-	Unknown AuxBus; //  0x240 Size(8)
+	struct Unknown AuxBus; //  0x240 Size(8)
 	struct FString AuxBusName; //  0x248 Size(10)
 	float SendLevel; //  0x258 Size(4)
 	float FadeRate; //  0x25c Size(4)
 	float Priority; //  0x260 Size(4)
-	Unknown NextLowerPriorityComponent; //  0x268 Size(8)
+	struct Unknown NextLowerPriorityComponent; //  0x268 Size(8)
 };
 
 // Class AkAudio.AkLinuxInitializationSettings
 struct UAkLinuxInitializationSettings : Object {
-	Unknown CommonSettings; //  0x28 Size(68)
-	Unknown CommunicationSettings; //  0x90 Size(28)
-	Unknown AdvancedSettings; //  0xb8 Size(38)
+	struct Unknown CommonSettings; //  0x28 Size(68)
+	struct Unknown CommunicationSettings; //  0x90 Size(28)
+	struct Unknown AdvancedSettings; //  0xb8 Size(38)
 
-	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkLinuxInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <Game+0x15fa360>
+	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkLinuxInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <Game+0x15faba0>
 };
 
 // Class AkAudio.AkLuminInitializationSettings
 struct UAkLuminInitializationSettings : Object {
-	Unknown CommonSettings; //  0x28 Size(68)
-	Unknown CommunicationSettings; //  0x90 Size(28)
-	Unknown AdvancedSettings; //  0xb8 Size(38)
+	struct Unknown CommonSettings; //  0x28 Size(68)
+	struct Unknown CommunicationSettings; //  0x90 Size(28)
+	struct Unknown AdvancedSettings; //  0xb8 Size(38)
 
-	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkLuminInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <Game+0x15fa360>
+	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkLuminInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <Game+0x15faba0>
 };
 
 // Class AkAudio.AkMacInitializationSettings
 struct UAkMacInitializationSettings : Object {
-	Unknown CommonSettings; //  0x28 Size(68)
-	Unknown CommunicationSettings; //  0x90 Size(28)
-	Unknown AdvancedSettings; //  0xb8 Size(38)
+	struct Unknown CommonSettings; //  0x28 Size(68)
+	struct Unknown CommunicationSettings; //  0x90 Size(28)
+	struct Unknown AdvancedSettings; //  0xb8 Size(38)
 
-	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkMacInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <Game+0x15fa360>
+	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkMacInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <Game+0x15faba0>
 };
 
-// Class AkAudio.AkMediaAssetData
-struct UAkMediaAssetData : Object {
+// Class AkAudio.AkMediaAssetDio
+struct UAkMediaAsset : Object {
 	char IsStreamed; //  0x28 Size(1)
 	char UseDeviceMemory; //  0x29 Size(1)
 };
@@ -751,34 +751,34 @@ struct UAkMediaAssetData : Object {
 struct UAkMediaAsset : Object {
 	uint32_t ID; //  0x28 Size(4)
 	char AutoLoad; //  0x2c Size(1)
-	Unknown UserData; //  0x30 Size(10)
-	Unknown CurrentMediaAssetData; //  0x40 Size(8)
+	struct TArray<Unknown> User; //  0x30 Size(10)
+	struct Unknown CurrentMediaAssetData; //  0x40 Size(8)
 };
 
 // Class AkAudio.AkPS4InitializationSettings
 struct UAkPS4InitializationSettings : Object {
-	Unknown CommonSettings; //  0x28 Size(60)
-	Unknown CommunicationSettings; //  0x88 Size(28)
-	Unknown AdvancedSettings; //  0xb0 Size(40)
+	struct Unknown CommonSettings; //  0x28 Size(60)
+	struct Unknown CommunicationSettings; //  0x88 Size(28)
+	struct Unknown AdvancedSettings; //  0xb0 Size(40)
 
-	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkPS4InitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <Game+0x160c9f0>
+	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkPS4InitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <Game+0x160d320>
 };
 
 // Class AkAudio.AkReverbVolume
 struct AAkReverbVolume : AVolume {
 	char bEnabled; //  0x348 Size(1)
-	Unknown AuxBus; //  0x350 Size(8)
+	struct Unknown AuxBus; //  0x350 Size(8)
 	struct FString AuxBusName; //  0x358 Size(10)
 	float SendLevel; //  0x368 Size(4)
 	float FadeRate; //  0x36c Size(4)
 	float Priority; //  0x370 Size(4)
-	Unknown LateReverbComponent; //  0x378 Size(8)
+	struct Unknown LateReverbComponent; //  0x378 Size(8)
 };
 
 // Class AkAudio.AkRoomComponent
 struct UAkRoomComponent : UAkGameObject {
 	char bEnable; //  0x258 Size(1)
-	Unknown NextLowerPriorityComponent; //  0x260 Size(8)
+	struct Unknown NextLowerPriorityComponent; //  0x260 Size(8)
 	float Priority; //  0x268 Size(4)
 	float WallOcclusion; //  0x26c Size(4)
 	float AuxSendLevel; //  0x270 Size(4)
@@ -787,33 +787,33 @@ struct UAkRoomComponent : UAkGameObject {
 
 // Class AkAudio.AkSettings
 struct UAkSettings : Object {
-	Unknown MaxSimultaneousReverbVolumes; //  0x28 Size(1)
-	Unknown WwiseProjectPath; //  0x30 Size(10)
-	Unknown WwiseSoundDataFolder; //  0x40 Size(10)
+	char MaxSimultaneousReverbVolumes; //  0x28 Size(1)
+	struct Unknown WwiseProjectPath; //  0x30 Size(10)
+	struct Unknown WwiseSoundDataFolder; //  0x40 Size(10)
 	char bAutoConnectToWAAPI; //  0x50 Size(1)
-	Unknown DefaultOcclusionCollisionChannel; //  0x51 Size(1)
-	Unknown AkGeometryMap; //  0x58 Size(50)
+	char DefaultOcclusionCollisionChannel; //  0x51 Size(1)
+	struct TMap<{}, {}>Unknown AkGeometryMap; //  0x58 Size(50)
 	char SplitSwitchContainerMedia; //  0xa8 Size(1)
 	char SplitMediaPerFolder; //  0xa9 Size(1)
 	char UseEventBasedPackaging; //  0xaa Size(1)
-	char Enab; //  0xab Size(1)
+	char EnableAutomaticAssetSynchronization; //  0xab Size(1)
 	struct TSoftClassPtr<UObject> ComponentClass; //  0xb0 Size(28)
 	struct FString CommandletCommitMessage; //  0xd8 Size(10)
-	Unknown UnrealCultureToWwiseCulture; //  0xe8 Size(50)
+	struct TMap<{}, {}>Unknown UnrealCultureToWwiseCulture; //  0xe8 Size(50)
 	char AskedToUseNewAssetManagement; //  0x138 Size(1)
 	char bEnableMultiCoreRendering; //  0x139 Size(1)
 	char MigratedEnableMultiCoreRendering; //  0x13a Size(1)
 	char FixupRedirectorsDuringMigration; //  0x13b Size(1)
-	Unknown WwiseWindowsInstallationPath; //  0x140 Size(10)
-	Unknown WwiseMacInstallationPath; //  0x150 Size(10)
+	struct Unknown WwiseWindowsInstallationPath; //  0x140 Size(10)
+	struct Unknown WwiseMacInstallationPath; //  0x150 Size(10)
 };
 
 // Class AkAudio.AkSettingsPerUser
 struct UAkSettingsPerUser : Object {
-	Unknown WwiseProjectPath; //  0x28 Size(10)
-	Unknown WwiseWindowsInstallationPath; //  0x38 Size(10)
-	Unknown WwiseMacInstallationPath; //  0x48 Size(10)
-	char Enab; //  0x58 Size(1)
+	struct Unknown WwiseProjectPath; //  0x28 Size(10)
+	struct Unknown WwiseWindowsInstallationPath; //  0x38 Size(10)
+	struct Unknown WwiseMacInstallationPath; //  0x48 Size(10)
+	char EnableAutomaticAssetSynchronization; //  0x58 Size(1)
 	struct FString WaapiIPAddress; //  0x60 Size(10)
 	uint32_t WaapiPort; //  0x70 Size(4)
 	char bAutoConnectToWAAPI; //  0x74 Size(1)
@@ -826,35 +826,35 @@ struct UAkSettingsPerUser : Object {
 struct UAkSlider : UWidget {
 	float Value; //  0x108 Size(4)
 	struct FDelegate ValueDelegate; //  0x10c Size(10)
-	Unknown WidgetStyle; //  0x120 Size(340)
-	Unknown Orientation; //  0x460 Size(1)
-	Unknown SliderBarColor; //  0x464 Size(10)
-	Unknown SliderHandleColor; //  0x474 Size(10)
+	struct Unknown WidgetStyle; //  0x120 Size(340)
+	char Orientation; //  0x460 Size(1)
+	struct Unknown SliderBarColor; //  0x464 Size(10)
+	struct Unknown SliderHandleColor; //  0x474 Size(10)
 	char IndentHandle; //  0x484 Size(1)
 	char Locked; //  0x485 Size(1)
 	float StepSize; //  0x488 Size(4)
 	char IsFocusable; //  0x48c Size(1)
-	Unknown ThePropertyToControl; //  0x490 Size(10)
-	Unknown ItemToControl; //  0x4a0 Size(40)
+	struct Unknown ThePropertyToControl; //  0x490 Size(10)
+	struct Unknown ItemToControl; //  0x4a0 Size(40)
 	struct FMulticastInlineDelegate OnValueChanged; //  0x4e0 Size(10)
 	struct FMulticastInlineDelegate OnItemDropped; //  0x4f0 Size(10)
 	struct FMulticastInlineDelegate OnPropertyDropped; //  0x500 Size(10)
 
-	void SetValue(float InValue); // Function AkAudio.AkSlider.SetValue(Final|Native|Public|BlueprintCallable) // <Game+0x1610c40>
+	void SetValue(float InValue); // Function AkAudio.AkSlider.SetValue(Final|Native|Public|BlueprintCallable) // <Game+0x16115a0>
 };
 
 // Class AkAudio.AkSpatialAudioVolume
 struct AAkSpatialAudioVolume : AVolume {
-	Unknown SurfaceReflectorSet; //  0x348 Size(8)
-	Unknown LateReverb; //  0x350 Size(8)
-	Unknown Room; //  0x358 Size(8)
+	struct Unknown SurfaceReflectorSet; //  0x348 Size(8)
+	struct Unknown LateReverb; //  0x350 Size(8)
+	struct Unknown Room; //  0x358 Size(8)
 };
 
 // Class AkAudio.AkSpotReflector
 struct AAkSpotReflector : UActor {
-	Unknown EarlyReflectionAuxBus; //  0x310 Size(8)
+	struct Unknown EarlyReflectionAuxBus; //  0x310 Size(8)
 	struct FString EarlyReflectionAuxBusName; //  0x318 Size(10)
-	Unknown AcousticTexture; //  0x328 Size(8)
+	struct Unknown AcousticTexture; //  0x328 Size(8)
 	float DistanceScalingFactor; //  0x330 Size(4)
 	float Level; //  0x334 Size(4)
 };
@@ -862,38 +862,38 @@ struct AAkSpotReflector : UActor {
 // Class AkAudio.AkSurfaceReflectorSetComponent
 struct UAkSurfaceReflectorSetComponent : USceneComponent {
 	char bEnableSurfaceReflectors; //  0x238 Size(1)
-	Unknown AcousticPolys; //  0x240 Size(10)
+	struct TArray<Unknown> AcousticPolys; //  0x240 Size(10)
 	char bEnableDiffraction; //  0x250 Size(1)
 	char bEnableDiffractionOnBoundaryEdges; //  0x250 Size(1)
-	Unknown AssociatedRoom; //  0x258 Size(8)
+	struct Unknown AssociatedRoom; //  0x258 Size(8)
 
-	void UpdateSurfaceReflectorSet(); // Function AkAudio.AkSurfaceReflectorSetComponent.UpdateSurfaceReflectorSet(Final|Native|Public|BlueprintCallable) // <Game+0x1611060>
+	void UpdateSurfaceReflectorSet(); // Function AkAudio.AkSurfaceReflectorSetComponent.UpdateSurfaceReflectorSet(Final|Native|Public|BlueprintCallable) // <Game+0x16119c0>
 };
 
 // Class AkAudio.AkSwitchInitializationSettings
 struct UAkSwitchInitializationSettings : Object {
-	Unknown CommonSettings; //  0x28 Size(68)
-	Unknown CommunicationSettings; //  0x90 Size(28)
-	Unknown AdvancedSettings; //  0xb8 Size(38)
+	struct Unknown CommonSettings; //  0x28 Size(68)
+	struct Unknown CommunicationSettings; //  0x90 Size(28)
+	struct Unknown AdvancedSettings; //  0xb8 Size(38)
 
-	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkSwitchInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <Game+0x15fa360>
+	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkSwitchInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <Game+0x15faba0>
 };
 
 // Class AkAudio.AkTVOSInitializationSettings
 struct UAkTVOSInitializationSettings : Object {
-	Unknown CommonSettings; //  0x28 Size(68)
-	Unknown AudioSession; //  0x90 Size(c)
-	Unknown CommunicationSettings; //  0xa0 Size(28)
-	Unknown AdvancedSettings; //  0xc8 Size(34)
+	struct Unknown CommonSettings; //  0x28 Size(68)
+	struct Unknown AudioSession; //  0x90 Size(c)
+	struct Unknown CommunicationSettings; //  0xa0 Size(28)
+	struct Unknown AdvancedSettings; //  0xc8 Size(34)
 };
 
 // Class AkAudio.AkWindowsInitializationSettings
 struct UAkWindowsInitializationSettings : Object {
-	Unknown CommonSettings; //  0x28 Size(68)
-	Unknown CommunicationSettings; //  0x90 Size(28)
-	Unknown AdvancedSettings; //  0xb8 Size(40)
+	struct Unknown CommonSettings; //  0x28 Size(68)
+	struct Unknown CommunicationSettings; //  0x90 Size(28)
+	struct Unknown AdvancedSettings; //  0xb8 Size(40)
 
-	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkWindowsInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <Game+0x15fa360>
+	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkWindowsInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <Game+0x15faba0>
 };
 
 // Class AkAudio.AkWwiseTree
@@ -901,7 +901,7 @@ struct UAkWwiseTree : UWidget {
 	struct FMulticastInlineDelegate OnSelectionChanged; //  0x108 Size(10)
 	struct FMulticastInlineDelegate OnItemDragged; //  0x118 Size(10)
 
-	void SetSearchText(struct FString newText); // Function AkAudio.AkWwiseTree.SetSearchText(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game+0x160ca70>
+	void SetSearchText(struct FString newText); // Function AkAudio.AkWwiseTree.SetSearchText(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game+0x160d3a0>
 };
 
 // Class AkAudio.AkWwiseTreeSelector
@@ -910,19 +910,19 @@ struct UAkWwiseTreeSelector : UWidget {
 	struct FMulticastInlineDelegate OnItemDragged; //  0x118 Size(10)
 };
 
-// Class AkAudio.AkXb
-struct UAkXb : Object {
-	Unknown CommonSettings; //  0x28 Size(60)
-	Unknown ApuHeapSettings; //  0x88 Size(8)
-	Unknown CommunicationSettings; //  0x90 Size(28)
-	Unknown AdvancedSettings; //  0xb8 Size(3c)
+// Class AkAudio.AkXboxOneInitializationSettings
+struct UAkXboxOneInitializationSettings : Object {
+	struct Unknown CommonSettings; //  0x28 Size(60)
+	struct Unknown ApuHeapSettings; //  0x88 Size(8)
+	struct Unknown CommunicationSettings; //  0x90 Size(28)
+	struct Unknown AdvancedSettings; //  0xb8 Size(3c)
 
-	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkXb.MigrateMultiCoreRendering(Final|Native|Public) // <Game+0x15fa360>
+	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkXboxOneInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <Game+0x15faba0>
 };
 
 // Class AkAudio.InterpTrackAkAudioEvent
 struct UInterpTrackAkAudioEvent : UInterpTrackVectorBase {
-	Unknown Events; //  0x90 Size(10)
+	struct TArray<Unknown> Events; //  0x90 Size(10)
 	char bContinueEventOnMatineeEnd; //  0xa0 Size(1)
 };
 
@@ -945,7 +945,7 @@ struct UInterpTrackInstAkAudioRTPC : UInterpTrackInst {
 
 // Class AkAudio.MovieSceneAkAudioEv
 struct UMovieSceneAkAudioEv : UMovieSceneSection {
-	Unknown Event; //  0x120 Size(8)
+	struct Unknown Event; //  0x120 Size(8)
 	char RetriggerEvent; //  0x128 Size(1)
 	int32_t ScrubTailLengthMs; //  0x12c Size(4)
 	char StopAtSectionEnd; //  0x130 Size(1)
@@ -956,30 +956,30 @@ struct UMovieSceneAkAudioEv : UMovieSceneSection {
 
 // Class AkAudio.MovieSceneAkTrack
 struct UMovieSceneAkTrack : UMovieSceneTrack {
-	Unknown Sections; //  0x58 Size(10)
+	struct TArray<Unknown> Sections; //  0x58 Size(10)
 	char bIsAMasterTrack; //  0x68 Size(1)
 };
 
-// Class AkAudio.MovieSceneAkAudioRTPCSectio
-struct UMovieSceneAkAudioRTPCSectiot : UMovieSceneSection {
-	Unknown RTPC; //  0xe0 Size(8)
+// Class AkAudio.MovieSceneAkAudioRTPCSection
+struct UMovieSceneAkAudioRTPCSection : UMovieSceneSection {
+	struct Unknown RTPC; //  0xe0 Size(8)
 	struct FString Name; //  0xe8 Size(10)
-	Unknown FloatCurve; //  0xf8 Size(80)
-	Unknown FloatChannelSerializationHelper; //  0x178 Size(30)
-	Unknown RTPCChannel; //  0x1a8 Size(a0)
+	struct Unknown FloatCurve; //  0xf8 Size(80)
+	struct Unknown FloatChannelSerializationHelper; //  0x178 Size(30)
+	struct Unknown RTPCChannel; //  0x1a8 Size(a0)
 };
 
 // Class AkAudio.PostEventAsync
 struct UPostEventAsync : UBlueprintAsyncActionBase {
 	struct FMulticastInlineDelegate Completed; //  0x30 Size(10)
 
-	Unknown PostEventAsync(Unknown WorldContextObject, Unknown AkEvent, Unknown Actor, int32_t CallbackMask, struct FDelegate& PostEventCallback, Unknown& ExternalSources, char bStopWhenAttachedToDestroyed); // Function AkAudio.PostEventAsync.PostEventAsync(Final|BlueprintCosmetic|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game+0x16175e0>
+	struct Unknown PostEventAsync(struct Unknown WorldContextObject, struct Unknown AkEvent, struct Unknown Actor, int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<Unknown>& ExternalSources, char bStopWhenAttachedToDestroyed); // Function AkAudio.PostEventAsync.PostEventAsync(Final|BlueprintCosmetic|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game+0x1617f60>
 };
 
 // Class AkAudio.PostEventAtLocationAsync
 struct UPostEventAtLocationAsync : UBlueprintAsyncActionBase {
 	struct FMulticastInlineDelegate Completed; //  0x30 Size(10)
 
-	Unknown PostEventAtLocationAsync(Unknown WorldContextObject, Unknown AkEvent, Unknown Location, Unknown Orientation); // Function AkAudio.PostEventAtLocationAsync.PostEventAtLocationAsync(Final|BlueprintCosmetic|Native|Static|Public|HasDefaults|BlueprintCallable) // <Game+0x16186d0>
+	struct Unknown PostEventAtLocationAsync(struct Unknown WorldContextObject, struct Unknown AkEvent, struct Unknown Location, struct Unknown Orientation); // Function AkAudio.PostEventAtLocationAsync.PostEventAtLocationAsync(Final|BlueprintCosmetic|Native|Static|Public|HasDefaults|BlueprintCallable) // <Game+0x1619050>
 };
 

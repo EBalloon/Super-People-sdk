@@ -16,6 +16,6 @@ enum class EConstraintType : uint8 {
 
 // Class AnimationCore.AnimationDataSourceRegistry
 struct UAnimationDataSourceRegistry : Object {
-	Unknown DataSources; //  0x28 Size(50)
+	struct TMap<{}, {}>Unknown DataSources; //  0x28 Size(50)
 };
 

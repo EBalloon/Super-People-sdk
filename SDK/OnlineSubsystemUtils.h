@@ -9,13 +9,13 @@ enum class EInAppPurchaseStatus : uint8 {
 	EInAppPurchaseStatus = 6
 };
 
-// Enum OnlineSubsystemUtils.EOnlineProxyStoreOfferDisco
-enum class EOnlineProxyStoreOfferDiscos : uint8 {
-	EOnlineProxyStoreOfferDisco = 0,
-	EOnlineProxyStoreOfferDiscos = 1,
-	EOnlineProxyStoreOfferDisco = 2,
-	EOnlineProxyStoreOfferDiscos = 3,
-	EOnlineProxyStoreOfferDisco = 4
+// Enum OnlineSubsystemUtils.EOnlineProxyStoreOfferDiscountType
+enum class EOnlineProxyStoreOfferDiscountType : uint8 {
+	EOnlineProxyStoreOfferDiscountType = 0,
+	EOnlineProxyStoreOfferDiscountType = 1,
+	EOnlineProxyStoreOfferDiscountType = 2,
+	EOnlineProxyStoreOfferDiscountType = 3,
+	EOnlineProxyStoreOfferDiscountType = 4
 };
 
 // Enum OnlineSubsystemUtils.EBeaconConnectionState
@@ -106,81 +106,81 @@ struct UIpNetDriver : UNetDriver {
 	uint32_t ServerDesiredSocketSendBufferBytes; //  0x760 Size(4)
 	uint32_t ClientDesiredSocketReceiveBufferBytes; //  0x764 Size(4)
 	uint32_t ClientDesiredSocketSendBufferBytes; //  0x768 Size(4)
-	Unknown MaxSecondsInReceive; //  0x770 Size(8)
+	double MaxSecondsInReceive; //  0x770 Size(8)
 	int32_t NbPacketsBetweenReceiveTimeTest; //  0x778 Size(4)
 	float ResolutionConnectionTimeout; //  0x77c Size(4)
 };
 
-// Class OnlineSubsystemUtils.AchievementQueryCallbackPro
-struct UAchievementQueryCallbackProt : UOnlineBlueprintCallProxyBase {
+// Class OnlineSubsystemUtils.AchievementQueryCallbackProxy
+struct UAchievementQueryCallbackProxy : UOnlineBlueprintCallProxyBas {
 	struct FMulticastInlineDelegate OnSuccess; //  0x30 Size(10)
 	struct FMulticastInlineDelegate OnFailure; //  0x40 Size(10)
 
-	Unknown CacheAchievements(Unknown WorldContextObject, Unknown PlayerController); // Function OnlineSubsystemUtils.AchievementQueryCallbackProt.CacheAchievements(Final|Native|Static|Public|BlueprintCallable) // <Game+0x11c7130>
+	struct Unknown CacheAchievements(struct Unknown WorldContextObject, struct Unknown PlayerController); // Function OnlineSubsystemUtils.AchievementQueryCallbackProxy.CacheAchievements(Final|Native|Static|Public|BlueprintCallable) // <Game+0x11c75f0>
 };
 
-// Class OnlineSubsystemUtils.AchievementWriteCallbackPro
-struct UAchievementWriteCallbackProt : UOnlineBlueprintCallProxyBase {
+// Class OnlineSubsystemUtils.AchievementWriteCallbackProxy
+struct UAchievementWriteCallbackProxy : UOnlineBlueprintCallProxyBas {
 	struct FMulticastInlineDelegate OnSuccess; //  0x30 Size(10)
 	struct FMulticastInlineDelegate OnFailure; //  0x40 Size(10)
 
-	Unknown WriteAchievementProgress(Unknown WorldContextObject, Unknown PlayerController, struct FName AchievementName, float progress, int32_t UserTag); // Function OnlineSubsystemUtils.AchievementWriteCallbackProt.WriteAchievementProgress(Final|Native|Static|Public|BlueprintCallable) // <Game+0x11c8d60>
+	struct Unknown WriteAchievementProgress(struct Unknown WorldContextObject, struct Unknown PlayerController, struct FName AchievementName, float progress, int32_t UserTag); // Function OnlineSubsystemUtils.AchievementWriteCallbackProxy.WriteAchievementProgress(Final|Native|Static|Public|BlueprintCallable) // <Game+0x11c9220>
 };
 
 // Class OnlineSubsystemUtils.ConnectionCallbackProxy
-struct UConnectionCallbackProxy : UOnlineBlueprintCallProxyBase {
+struct UConnectionCallbackProxy : UOnlineBlueprintCallProxyBas {
 	struct FMulticastInlineDelegate OnSuccess; //  0x30 Size(10)
 	struct FMulticastInlineDelegate OnFailure; //  0x40 Size(10)
 
-	Unknown ConnectToService(Unknown WorldContextObject, Unknown PlayerController); // Function OnlineSubsystemUtils.ConnectionCallbackProxy.ConnectToService(Final|Native|Static|Public|BlueprintCallable) // <Game+0x11c71f0>
+	struct Unknown ConnectToService(struct Unknown WorldContextObject, struct Unknown PlayerController); // Function OnlineSubsystemUtils.ConnectionCallbackProxy.ConnectToService(Final|Native|Static|Public|BlueprintCallable) // <Game+0x11c76b0>
 };
 
 // Class OnlineSubsystemUtils.CreateSessionCallbackProxy
-struct UCreateSessionCallbackProxy : UOnlineBlueprintCallProxyBase {
+struct UCreateSessionCallbackProxy : UOnlineBlueprintCallProxyBass {
 	struct FMulticastInlineDelegate OnSuccess; //  0x30 Size(10)
 	struct FMulticastInlineDelegate OnFailure; //  0x40 Size(10)
 
-	Unknown CreateSession(Unknown WorldContextObject, Unknown PlayerController, int32_t PublicConnections, char bUseLAN); // Function OnlineSubsystemUtils.CreateSessionCallbackProxy.CreateSession(Final|Native|Static|Public|BlueprintCallable) // <Game+0x11c77b0>
+	struct Unknown CreateSession(struct Unknown WorldContextObject, struct Unknown PlayerController, int32_t PublicConnections, char bUseLAN); // Function OnlineSubsystemUtils.CreateSessionCallbackProxy.CreateSession(Final|Native|Static|Public|BlueprintCallable) // <Game+0x11c7c70>
 };
 
 // Class OnlineSubsystemUtils.DestroySessionCallbackProxy
-struct UDestroySessionCallbackProxy : UOnlineBlueprintCallProxyBase {
+struct UDestroySessionCallbackProxy : UOnlineBlueprintCallProxyBas {
 	struct FMulticastInlineDelegate OnSuccess; //  0x30 Size(10)
 	struct FMulticastInlineDelegate OnFailure; //  0x40 Size(10)
 
-	Unknown DestroySession(Unknown WorldContextObject, Unknown PlayerController); // Function OnlineSubsystemUtils.DestroySessionCallbackProxy.DestroySession(Final|Native|Static|Public|BlueprintCallable) // <Game+0x11c78e0>
+	struct Unknown DestroySession(struct Unknown WorldContextObject, struct Unknown PlayerController); // Function OnlineSubsystemUtils.DestroySessionCallbackProxy.DestroySession(Final|Native|Static|Public|BlueprintCallable) // <Game+0x11c7da0>
 };
 
 // Class OnlineSubsystemUtils.EndMatchCallbackProxy
-struct UEndMatchCallbackProxy : UOnlineBlueprintCallProxyBase {
+struct UEndMatchCallbackProxy : UOnlineBlueprintCallProxyBas {
 	struct FMulticastInlineDelegate OnSuccess; //  0x30 Size(10)
 	struct FMulticastInlineDelegate OnFailure; //  0x40 Size(10)
 
-	Unknown EndMatch(Unknown WorldContextObject, Unknown PlayerController, Unknown MatchActor, struct FString MatchID, Unknown LocalPlayerOutcome, Unknown OtherPlayersOutcome); // Function OnlineSubsystemUtils.EndMatchCallbackProxy.EndMatch(Final|Native|Static|Public|BlueprintCallable) // <Game+0x11c79a0>
+	struct Unknown EndMatch(struct Unknown WorldContextObject, struct Unknown PlayerController, struct TScriptInterface<IUnknown> MatchActor, struct FString MatchID, char LocalPlayerOutcome, char OtherPlayersOutcome); // Function OnlineSubsystemUtils.EndMatchCallbackProxy.EndMatch(Final|Native|Static|Public|BlueprintCallable) // <Game+0x11c7e60>
 };
 
 // Class OnlineSubsystemUtils.EndTurnCallbackProxy
-struct UEndTurnCallbackProxy : UOnlineBlueprintCallProxyBase {
+struct UEndTurnCallbackProxy : UOnlineBlueprintCallProxyBass {
 	struct FMulticastInlineDelegate OnSuccess; //  0x30 Size(10)
 	struct FMulticastInlineDelegate OnFailure; //  0x40 Size(10)
 
-	Unknown EndTurn(Unknown WorldContextObject, Unknown PlayerController, struct FString MatchID, Unknown TurnBasedMatchInterface); // Function OnlineSubsystemUtils.EndTurnCallbackProxy.EndTurn(Final|Native|Static|Public|BlueprintCallable) // <Game+0x11c7bd0>
+	struct Unknown EndTurn(struct Unknown WorldContextObject, struct Unknown PlayerController, struct FString MatchID, struct TScriptInterface<IUnknown> TurnBasedMatchInterface); // Function OnlineSubsystemUtils.EndTurnCallbackProxy.EndTurn(Final|Native|Static|Public|BlueprintCallable) // <Game+0x11c8090>
 };
 
 // Class OnlineSubsystemUtils.FindSessionsCallbackProxy
-struct UFindSessionsCallbackProxy : UOnlineBlueprintCallProxyBase {
+struct UFindSessionsCallbackProxy : UOnlineBlueprintCallProxyBas {
 	struct FMulticastInlineDelegate OnSuccess; //  0x30 Size(10)
 	struct FMulticastInlineDelegate OnFailure; //  0x40 Size(10)
 
-	struct FString GetServerName(Unknown& Result); // Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetServerName(Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure) // <Game+0x11c8b40>
+	struct FString GetServerName(struct Unknown& Result); // Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetServerName(Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure) // <Game+0x11c9000>
 };
 
 // Class OnlineSubsystemUtils.FindTurnBasedMatchCallbackProxy
-struct UFindTurnBasedMatchCallbackProxy : UOnlineBlueprintCallProxyBase {
+struct UFindTurnBasedMatchCallbackProxy : UOnlineBlueprintCallProxyBasr {
 	struct FMulticastInlineDelegate OnSuccess; //  0x30 Size(10)
 	struct FMulticastInlineDelegate OnFailure; //  0x40 Size(10)
 
-	Unknown FindTurnBasedMatch(Unknown WorldContextObject, Unknown PlayerController, Unknown MatchActor, int32_t MinPlayers, int32_t MaxPlayers, int32_t PlayerGroup, char ShowExistingMatches); // Function OnlineSubsystemUtils.FindTurnBasedMatchCallbackProxy.FindTurnBasedMatch(Final|Native|Static|Public|BlueprintCallable) // <Game+0x11c7ea0>
+	struct Unknown FindTurnBasedMatch(struct Unknown WorldContextObject, struct Unknown PlayerController, struct TScriptInterface<IUnknown> MatchActor, int32_t MinPlayers, int32_t MaxPlayers, int32_t PlayerGroup, char ShowExistingMatches); // Function OnlineSubsystemUtils.FindTurnBasedMatchCallbackProxy.FindTurnBasedMatch(Final|Native|Static|Public|BlueprintCallable) // <Game+0x11c8360>
 };
 
 // Class OnlineSubsystemUtils.InAppPurchaseCallbackProxy
@@ -188,7 +188,7 @@ struct UInAppPurchaseCallbackProxy : Object {
 	struct FMulticastInlineDelegate OnSuccess; //  0x28 Size(10)
 	struct FMulticastInlineDelegate OnFailure; //  0x38 Size(10)
 
-	Unknown CreateProxyObjectForInAppPurchase(Unknown PlayerController, Unknown& ProductRequest); // Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy.CreateProxyObjectForInAppPurchase(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game+0x11c73a0>
+	struct Unknown CreateProxyObjectForInAppPurchase(struct Unknown PlayerController, struct Unknown& ProductRequest); // Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy.CreateProxyObjectForInAppPurchase(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game+0x11c7860>
 };
 
 // Class OnlineSubsystemUtils.InAppPurchaseCallbackProxy2
@@ -196,7 +196,7 @@ struct UInAppPurchaseCallbackProxy2 : Object {
 	struct FMulticastInlineDelegate OnSuccess; //  0x28 Size(10)
 	struct FMulticastInlineDelegate OnFailure; //  0x38 Size(10)
 
-	Unknown CreateProxyObjectForInAppPurchaseUnprocessedPurchases(Unknown PlayerController); // Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy2.CreateProxyObjectForInAppPurchaseUnprocessedPurchases(Final|Native|Static|Public|BlueprintCallable) // <Game+0x11c7730>
+	struct Unknown CreateProxyObjectForInAppPurchaseUnprocessedPurchases(struct Unknown PlayerController); // Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy2.CreateProxyObjectForInAppPurchaseUnprocessedPurchases(Final|Native|Static|Public|BlueprintCallable) // <Game+0x11c7bf0>
 };
 
 // Class OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy
@@ -204,7 +204,7 @@ struct UInAppPurchaseQueryCallbackProxy : Object {
 	struct FMulticastInlineDelegate OnSuccess; //  0x28 Size(10)
 	struct FMulticastInlineDelegate OnFailure; //  0x38 Size(10)
 
-	Unknown CreateProxyObjectForInAppPurchaseQuery(Unknown PlayerController, Unknown& ProductIdentifiers); // Function OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy.CreateProxyObjectForInAppPurchaseQuery(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game+0x11c75a0>
+	struct Unknown CreateProxyObjectForInAppPurchaseQuery(struct Unknown PlayerController, struct TArray<Unknown>& ProductIdentifiers); // Function OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy.CreateProxyObjectForInAppPurchaseQuery(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game+0x11c7a60>
 };
 
 // Class OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy2
@@ -212,7 +212,7 @@ struct UInAppPurchaseQueryCallbackProxy2 : Object {
 	struct FMulticastInlineDelegate OnSuccess; //  0x28 Size(10)
 	struct FMulticastInlineDelegate OnFailure; //  0x38 Size(10)
 
-	Unknown CreateProxyObjectForInAppPurchaseQuery(Unknown PlayerController, Unknown& ProductIdentifiers); // Function OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy2.CreateProxyObjectForInAppPurchaseQuery(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game+0x11c7490>
+	struct Unknown CreateProxyObjectForInAppPurchaseQuery(struct Unknown PlayerController, struct TArray<Unknown>& ProductIdentifiers); // Function OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy2.CreateProxyObjectForInAppPurchaseQuery(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game+0x11c7950>
 };
 
 // Class OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy
@@ -220,7 +220,7 @@ struct UInAppPurchaseRestoreCallbackProxy : Object {
 	struct FMulticastInlineDelegate OnSuccess; //  0x28 Size(10)
 	struct FMulticastInlineDelegate OnFailure; //  0x38 Size(10)
 
-	Unknown CreateProxyObjectForInAppPurchaseRestore(Unknown& ConsumableProductFlags, Unknown PlayerController); // Function OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy.CreateProxyObjectForInAppPurchaseRestore(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game+0x11cca40>
+	struct Unknown CreateProxyObjectForInAppPurchaseRestore(struct TArray<Unknown>& ConsumableProductFlags, struct Unknown PlayerController); // Function OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy.CreateProxyObjectForInAppPurchaseRestore(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game+0x11ccf20>
 };
 
 // Class OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy2
@@ -228,31 +228,31 @@ struct UInAppPurchaseRestoreCallbackProxy2 : Object {
 	struct FMulticastInlineDelegate OnSuccess; //  0x28 Size(10)
 	struct FMulticastInlineDelegate OnFailure; //  0x38 Size(10)
 
-	Unknown CreateProxyObjectForInAppPurchaseRestore(Unknown& ConsumableProductFlags, Unknown PlayerController); // Function OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy2.CreateProxyObjectForInAppPurchaseRestore(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game+0x11cc920>
+	struct Unknown CreateProxyObjectForInAppPurchaseRestore(struct TArray<Unknown>& ConsumableProductFlags, struct Unknown PlayerController); // Function OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy2.CreateProxyObjectForInAppPurchaseRestore(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game+0x11cce00>
 };
 
 // Class OnlineSubsystemUtils.JoinSessionCallbackProxy
-struct UJoinSessionCallbackProxy : UOnlineBlueprintCallProxyBase {
+struct UJoinSessionCallbackProxy : UOnlineBlueprintCallProxyBas {
 	struct FMulticastInlineDelegate OnSuccess; //  0x30 Size(10)
 	struct FMulticastInlineDelegate OnFailure; //  0x40 Size(10)
 
-	Unknown JoinSession(Unknown WorldContextObject, Unknown PlayerController, Unknown& SearchResult); // Function OnlineSubsystemUtils.JoinSessionCallbackProxy.JoinSession(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game+0x11ccc20>
+	struct Unknown JoinSession(struct Unknown WorldContextObject, struct Unknown PlayerController, struct Unknown& SearchResult); // Function OnlineSubsystemUtils.JoinSessionCallbackProxy.JoinSession(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game+0x11cd100>
 };
 
-// Class OnlineSubsystemUtils.LeaderboardFlushCallbackPro
-struct ULeaderboardFlushCallbackProt : Object {
+// Class OnlineSubsystemUtils.LeaderboardFlushCallbackProxy
+struct ULeaderboardFlushCallbackProxy : Object {
 	struct FMulticastInlineDelegate OnSuccess; //  0x28 Size(10)
 	struct FMulticastInlineDelegate OnFailure; //  0x38 Size(10)
 
-	Unknown CreateProxyObjectForFlush(Unknown PlayerController, struct FName SessionName); // Function OnlineSubsystemUtils.LeaderboardFlushCallbackProt.CreateProxyObjectForFlush(Final|Native|Static|Public|BlueprintCallable) // <Game+0x11cc860>
+	struct Unknown CreateProxyObjectForFlush(struct Unknown PlayerController, struct FName SessionName); // Function OnlineSubsystemUtils.LeaderboardFlushCallbackProxy.CreateProxyObjectForFlush(Final|Native|Static|Public|BlueprintCallable) // <Game+0x11ccd40>
 };
 
-// Class OnlineSubsystemUtils.LeaderboardQueryCallbackPro
-struct ULeaderboardQueryCallbackProt : Object {
+// Class OnlineSubsystemUtils.LeaderboardQueryCallbackProxy
+struct ULeaderboardQueryCallbackProxy : Object {
 	struct FMulticastInlineDelegate OnSuccess; //  0x28 Size(10)
 	struct FMulticastInlineDelegate OnFailure; //  0x38 Size(10)
 
-	Unknown CreateProxyObjectForIntQuery(Unknown PlayerController, struct FName StatName); // Function OnlineSubsystemUtils.LeaderboardQueryCallbackProt.CreateProxyObjectForIntQuery(Final|Native|Static|Public|BlueprintCallable) // <Game+0x11ccb60>
+	struct Unknown CreateProxyObjectForIntQuery(struct Unknown PlayerController, struct FName StatName); // Function OnlineSubsystemUtils.LeaderboardQueryCallbackProxy.CreateProxyObjectForIntQuery(Final|Native|Static|Public|BlueprintCallable) // <Game+0x11cd040>
 };
 
 // Class OnlineSubsystemUtils.LogoutCallbackProxy
@@ -260,36 +260,36 @@ struct ULogoutCallbackProxy : UBlueprintAsyncActionBase {
 	struct FMulticastInlineDelegate OnSuccess; //  0x30 Size(10)
 	struct FMulticastInlineDelegate OnFailure; //  0x40 Size(10)
 
-	Unknown Logout(Unknown WorldContextObject, Unknown PlayerController); // Function OnlineSubsystemUtils.LogoutCallbackProxy.Logout(Final|Native|Static|Public|BlueprintCallable) // <Game+0x11cce80>
+	struct Unknown Logout(struct Unknown WorldContextObject, struct Unknown PlayerController); // Function OnlineSubsystemUtils.LogoutCallbackProxy.Logout(Final|Native|Static|Public|BlueprintCallable) // <Game+0x11cd360>
 };
 
 // Class OnlineSubsystemUtils.OnlineBeacon
 struct AOnlineBeacon : UActor {
 	float BeaconConnectionInitialTimeout; //  0x318 Size(4)
 	float BeaconConnectionTimeout; //  0x31c Size(4)
-	Unknown NetDriver; //  0x320 Size(8)
+	struct Unknown NetDriver; //  0x320 Size(8)
 };
 
 // Class OnlineSubsystemUtils.OnlineBeaconClient
 struct AOnlineBeaconClient : AOnlineBeacon {
-	Unknown BeaconOwner; //  0x340 Size(8)
-	Unknown BeaconConnection; //  0x348 Size(8)
-	Unknown ConnectionState; //  0x350 Size(1)
+	struct Unknown BeaconOwner; //  0x340 Size(8)
+	struct Unknown BeaconConnection; //  0x348 Size(8)
+	enum class Unknow ConnectionState; //  0x350 Size(1)
 
-	void ClientOnConnected(); // Function OnlineSubsystemUtils.OnlineBeaconClient.ClientOnConnected(Final|Net|NetReliableNative|Event|Private|NetClient) // <Game+0x11cc710>
+	void ClientOnConnected(); // Function OnlineSubsystemUtils.OnlineBeaconClient.ClientOnConnected(Final|Net|NetReliableNative|Event|Private|NetClient) // <Game+0x11ccbf0>
 };
 
 // Class OnlineSubsystemUtils.OnlineBeaconHost
 struct AOnlineBeaconHost : AOnlineBeacon {
 	int32_t ListenPort; //  0x340 Size(4)
-	Unknown ClientActors; //  0x348 Size(10)
+	struct TArray<Unknown> ClientActors; //  0x348 Size(10)
 };
 
 // Class OnlineSubsystemUtils.OnlineBeaconHostObject
 struct AOnlineBeaconHostObject : UActor {
 	struct FString BeaconTypeName; //  0x310 Size(10)
-	Unknown ClientBeaconActorClass; //  0x320 Size(8)
-	Unknown ClientActors; //  0x328 Size(10)
+	struct Unknown* ClientBeaconActorClass; //  0x320 Size(8)
+	struct TArray<Unknown> ClientActors; //  0x328 Size(10)
 };
 
 // Class OnlineSubsystemUtils.OnlineEngineInterfaceImpl
@@ -300,7 +300,7 @@ struct UOnlineEngineInterfaceImpl : UOnlineEngineInterface {
 // Class OnlineSubsystemUtils.OnlinePIESettings
 struct UOnlinePIESettings : UDeveloperSettings {
 	char bOnlinePIEEnabled; //  0x38 Size(1)
-	Unknown Logins; //  0x40 Size(10)
+	struct TArray<Unknown> Logins; //  0x40 Size(10)
 };
 
 // Class OnlineSubsystemUtils.OnlineSessionClient
@@ -312,17 +312,17 @@ struct UOnlineSessionClient : UOnlineSession {
 // Class OnlineSubsystemUtils.PartyBeaconClient
 struct APartyBeaconClient : AOnlineBeaconClient {
 	struct FString DestSessionId; //  0x3d0 Size(10)
-	Unknown PendingReservation; //  0x3e0 Size(50)
-	Unknown RequestType; //  0x430 Size(1)
+	struct Unknown PendingReservation; //  0x3e0 Size(50)
+	enum class Unknow RequestType; //  0x430 Size(1)
 	char bPendingReservationSent; //  0x431 Size(1)
 	char bCancelReservation; //  0x432 Size(1)
 
-	void ServerUpdateReservationRequest(struct FString SessionID, Unknown ReservationUpdate); // Function OnlineSubsystemUtils.PartyBeaconClient.ServerUpdateReservationRequest(Net|NetReliableNative|Event|Protected|NetServer|NetValidate) // <Game+0x11cd760>
+	void ServerUpdateReservationRequest(struct FString SessionID, struct Unknown ReservationUpdate); // Function OnlineSubsystemUtils.PartyBeaconClient.ServerUpdateReservationRequest(Net|NetReliableNative|Event|Protected|NetServer|NetValidate) // <Game+0x11cdc40>
 };
 
 // Class OnlineSubsystemUtils.PartyBeaconHost
 struct APartyBeaconHost : AOnlineBeaconHostObject {
-	Unknown State; //  0x338 Size(8)
+	struct Unknown State; //  0x338 Size(8)
 	char bLogoutOnSessionTimeout; //  0x3a0 Size(1)
 	float SessionTimeoutSecs; //  0x3a4 Size(4)
 	float TravelSessionTimeoutSecs; //  0x3a8 Size(4)
@@ -340,15 +340,15 @@ struct UPartyBeaconState : Object {
 	int32_t ForceTeamNum; //  0x4c Size(4)
 	char bRestrictCrossConsole; //  0x50 Size(1)
 	char bEnableRemovalRequests; //  0x51 Size(1)
-	Unknown Reservations; //  0x58 Size(10)
+	struct TArray<Unknown> Reservations; //  0x58 Size(10)
 };
 
 // Class OnlineSubsystemUtils.QuitMatchCallbackProxy
-struct UQuitMatchCallbackProxy : UOnlineBlueprintCallProxyBase {
+struct UQuitMatchCallbackProxy : UOnlineBlueprintCallProxyBas {
 	struct FMulticastInlineDelegate OnSuccess; //  0x30 Size(10)
 	struct FMulticastInlineDelegate OnFailure; //  0x40 Size(10)
 
-	Unknown QuitMatch(Unknown WorldContextObject, Unknown PlayerController, struct FString MatchID, Unknown Outcome, int32_t TurnTimeoutInSeconds); // Function OnlineSubsystemUtils.QuitMatchCallbackProxy.QuitMatch(Final|Native|Static|Public|BlueprintCallable) // <Game+0x11ccf40>
+	struct Unknown QuitMatch(struct Unknown WorldContextObject, struct Unknown PlayerController, struct FString MatchID, char Outcome, int32_t TurnTimeoutInSeconds); // Function OnlineSubsystemUtils.QuitMatchCallbackProxy.QuitMatch(Final|Native|Static|Public|BlueprintCallable) // <Game+0x11cd420>
 };
 
 // Class OnlineSubsystemUtils.ShowLoginUICallbackProxy
@@ -356,23 +356,23 @@ struct UShowLoginUICallbackProxy : UBlueprintAsyncActionBase {
 	struct FMulticastInlineDelegate OnSuccess; //  0x30 Size(10)
 	struct FMulticastInlineDelegate OnFailure; //  0x40 Size(10)
 
-	Unknown ShowExternalLoginUI(Unknown WorldContextObject, Unknown InPlayerController); // Function OnlineSubsystemUtils.ShowLoginUICallbackProxy.ShowExternalLoginUI(Final|Native|Static|Public|BlueprintCallable) // <Game+0x11cfcc0>
+	struct Unknown ShowExternalLoginUI(struct Unknown WorldContextObject, struct Unknown InPlayerController); // Function OnlineSubsystemUtils.ShowLoginUICallbackProxy.ShowExternalLoginUI(Final|Native|Static|Public|BlueprintCallable) // <Game+0x11d01a0>
 };
 
 // Class OnlineSubsystemUtils.SpectatorBeaconClient
 struct ASpectatorBeaconClient : AOnlineBeaconClient {
 	struct FString DestSessionId; //  0x3d0 Size(10)
-	Unknown PendingReservation; //  0x3e0 Size(78)
-	Unknown RequestType; //  0x458 Size(1)
+	struct Unknown PendingReservation; //  0x3e0 Size(78)
+	enum class Unknow RequestType; //  0x458 Size(1)
 	char bPendingReservationSent; //  0x459 Size(1)
 	char bCancelReservation; //  0x45a Size(1)
 
-	void ServerReservationRequest(struct FString SessionID, Unknown Reservation); // Function OnlineSubsystemUtils.SpectatorBeaconClient.ServerReservationRequest(Net|NetReliableNative|Event|Protected|NetServer|NetValidate) // <Game+0x11cfac0>
+	void ServerReservationRequest(struct FString SessionID, struct Unknown Reservation); // Function OnlineSubsystemUtils.SpectatorBeaconClient.ServerReservationRequest(Net|NetReliableNative|Event|Protected|NetServer|NetValidate) // <Game+0x11cffa0>
 };
 
 // Class OnlineSubsystemUtils.SpectatorBeaconHost
 struct ASpectatorBeaconHost : AOnlineBeaconHostObject {
-	Unknown State; //  0x338 Size(8)
+	struct Unknown State; //  0x338 Size(8)
 	char bLogoutOnSessionTimeout; //  0x3a0 Size(1)
 	float SessionTimeoutSecs; //  0x3a4 Size(4)
 	float TravelSessionTimeoutSecs; //  0x3a8 Size(4)
@@ -384,6 +384,6 @@ struct USpectatorBeaconState : Object {
 	int32_t NumConsumedReservations; //  0x30 Size(4)
 	int32_t MaxReservations; //  0x34 Size(4)
 	char bRestrictCrossConsole; //  0x38 Size(1)
-	Unknown Reservations; //  0x40 Size(10)
+	struct TArray<Unknown> Reservations; //  0x40 Size(10)
 };
 

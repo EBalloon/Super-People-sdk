@@ -1,4 +1,4 @@
-// UserDefinedEnum ENiagaraExpansionMode.ENiagaraExpansionMode
+// User ENiagaraExpansionMode.ENiagaraExpansionMode
 enum class ENiagaraExpansionMode : uint8 {
 	ENiagaraExpansionMode = 0,
 	ENiagaraExpansionMode = 1,

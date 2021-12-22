@@ -7,6 +7,6 @@ struct UCustomizedChara_DataAsset_C : UPrimaryDataAsset {
 	float CameraZoomVelocity; //  0x40 Size(4)
 	float CameraInterpSpeed; //  0x44 Size(4)
 	float CharacterRotationInterpSpeed; //  0x48 Size(4)
-	Unknown CameraMove; //  0x50 Size(8)
+	struct Unknown CameraMove; //  0x50 Size(8)
 };
 

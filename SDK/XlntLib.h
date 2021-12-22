@@ -85,13 +85,13 @@ enum class ExcelBorderSideType : uint8 {
 	ExcelBorderSideType = 7
 };
 
-// Enum XlntLib.ExcelBorderDiagonalDirectioD
-enum class ExcelBorderDiagonalDirectioo : uint8 {
-	ExcelBorderDiagonalDirectio = 0,
-	ExcelBorderDiagonalDirectioorder = 1,
-	ExcelBorderDiagonalDirectio = 2,
-	ExcelBorderDiagonalDirectioorder = 3,
-	ExcelBorderDiagonalDirectio = 4
+// Enum XlntLib.ExcelBorderDiagonalDirection
+enum class ExcelBorderDiagonalDirection : uint8 {
+	ExcelBorderDiagonalDirection = 0,
+	ExcelBorderDiagonalDirection = 1,
+	ExcelBorderDiagonalDirection = 2,
+	ExcelBorderDiagonalDirection = 3,
+	ExcelBorderDiagonalDirection = 4
 };
 
 // Enum XlntLib.ExcelVerticalAlignment
@@ -210,9 +210,9 @@ enum class ExcelSortType : uint8 {
 
 // Class XlntLib.ExcelWorkbook
 struct UExcelWorkbook : Object {
-	Unknown mSheets; //  0x28 Size(10)
-	Unknown mActiveSheet; //  0x38 Size(8)
+	struct TArray<Unknown> mSheets; //  0x28 Size(10)
+	struct Unknown mActiveSheet; //  0x38 Size(8)
 
-	struct FString Title(); // Function XlntLib.ExcelWorkbook.Title(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x1351370>
+	struct FString Title(); // Function XlntLib.ExcelWorkbook.Title(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x1351970>
 };
 

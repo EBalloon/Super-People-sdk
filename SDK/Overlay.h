@@ -1,11 +1,11 @@
 // Class Overlay.BasicOverlays
 struct UBasicOverlays : UOverlays {
-	Unknown Overlays; //  0x28 Size(10)
+	struct TArray<Unknown> Overlays; //  0x28 Size(10)
 };
 
 // Class Overlay.LocalizedOverlays
 struct ULocalizedOverlays : UOverlays {
-	Unknown DefaultOverlays; //  0x28 Size(8)
-	Unknown LocaleToOverlaysMap; //  0x30 Size(50)
+	struct Unknown DefaultOverlays; //  0x28 Size(8)
+	struct TMap<{}, {}>Unknown LocaleToOverlaysMap; //  0x30 Size(50)
 };
 

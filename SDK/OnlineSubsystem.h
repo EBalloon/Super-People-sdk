@@ -28,7 +28,7 @@ enum class EMPMatchOutcome : uint8 {
 
 // Class OnlineSubsystem.NamedInterfaces
 struct UNamedInterfaces : Object {
-	Unknown NamedInterfaces; //  0x28 Size(10)
-	Unknown NamedInterfaceDefs; //  0x38 Size(10)
+	struct TArray<Unknown> NamedInterfaces; //  0x28 Size(10)
+	struct TArray<Unknown> NamedInterfaceDefs; //  0x38 Size(10)
 };
 

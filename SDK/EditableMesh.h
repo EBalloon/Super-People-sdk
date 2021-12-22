@@ -52,25 +52,25 @@ enum class EMeshModificationType : uint8 {
 
 // Class EditableMesh.EditableGeometryCollectionAdapter
 struct UEditableGeometryCollectionAdapter : UEditableMeshAdapter {
-	Unknown GeometryCollection; //  0x28 Size(8)
-	Unknown OriginalGeometryCollection; //  0x30 Size(8)
-	int32_t GeometryCollectionLODIndex; //  0x38 Size(4)
+	struct Unknown GeometryCollection; //  0x28 Size(8)
+	struct Unknown OriginalGeometryCollection; //  0x30 Size(8)
+	int32_t GeometryCollectionLO; //  0x38 Size(4)
 };
 
 // Class EditableMesh.EditableMesh
 struct UEditableMesh : Object {
-	Unknown Adapters; //  0x3b8 Size(10)
+	struct TArray<Unknown> Adapters; //  0x3b8 Size(10)
 	int32_t TextureCoordinateCount; //  0x3d0 Size(4)
 	int32_t PendingCompactCounter; //  0x51c Size(4)
 	int32_t SubdivisionCount; //  0x520 Size(4)
 
-	void WeldVertices(Unknown& VertexIDs, Unknown& OutNewVertexID); // Function EditableMesh.EditableMesh.WeldVertices(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x176f9f0>
+	void WeldVertices(struct TArray<Unknown>& VertexIDs, struct Unknown& OutNewVertexID); // Function EditableMesh.EditableMesh.WeldVertices(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x1770630>
 };
 
 // Class EditableMesh.EditableStaticMeshAdapter
 struct UEditableStaticMeshAdapter : UEditableMeshAdapter {
-	Unknown StaticMesh; //  0x28 Size(8)
-	Unknown OriginalStaticMesh; //  0x30 Size(8)
-	int32_t StaticMeshLODIndex; //  0x38 Size(4)
+	struct Unknown StaticMesh; //  0x28 Size(8)
+	struct Unknown OriginalStaticMesh; //  0x30 Size(8)
+	int32_t StaticMeshLO; //  0x38 Size(4)
 };
 

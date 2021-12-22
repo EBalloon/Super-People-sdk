@@ -6,20 +6,20 @@ enum class EMagicLeapGestureTransformSpace : uint8 {
 	EMagicLeapGestureTransformSpace = 3
 };
 
-// Enum MagicLeapHandTracking.EMagicLeapHandTrackingGestureFilterLevel
-enum class EMagicLeapHandTrackingGestureFilterLevel : uint8 {
-	EMagicLeapHandTrackingGestureFilterLevel = 0,
-	EMagicLeapHandTrackingGestureFilterLevel = 1,
-	EMagicLeapHandTrackingGestureFilterLevel = 2,
-	EMagicLeapHandTrackingGestureFilterLevel = 3
+// Enum MagicLeapHandTracking.EMagicLeapHandTrackingGestureFi
+enum class EMagicLeapHandTrackingGestureFi : uint8 {
+	EMagicLeapHandTrackingGestureFi = 0,
+	EMagicLeapHandTrackingGestureFi = 1,
+	EMagicLeapHandTrackingGestureFi = 2,
+	EMagicLeapHandTrackingGestureFi = 3
 };
 
-// Enum MagicLeapHandTracking.EMagicLeapHandTrackingKeypo
-enum class EMagicLeapHandTrackingKeypo : uint8 {
-	EMagicLeapHandTrackingKeypo = 0,
-	EMagicLeapHandTrackingKeypong = 1,
-	EMagicLeapHandTrackingKeypo = 2,
-	EMagicLeapHandTrackingKeypong = 3
+// Enum MagicLeapHandTracking.EMagicLeapHandTrackingKeypointFilterLevel
+enum class EMagicLeapHandTrackingKeypointFilterLevel : uint8 {
+	EMagicLeapHandTrackingKeypointFilterLevel = 0,
+	EMagicLeapHandTrackingKeypointFilterLevel = 1,
+	EMagicLeapHandTrackingKeypointFilterLevel = 2,
+	EMagicLeapHandTrackingKeypointFilterLevel = 3
 };
 
 // Enum MagicLeapHandTracking.EMagicLeapHandTrackingGesture
@@ -38,32 +38,32 @@ enum class EMagicLeapHandTrackingGesture : uint8 {
 	EMagicLeapHandTrackingGesture = 10
 };
 
-// Enum MagicLeapHandTracking.EMagicLeapHandTrackingKeypo
-enum class EMagicLeapHandTrackingKeypong : uint8 {
-	EMagicLeapHandTrackingKeypo = 0,
-	EMagicLeapHandTrackingKeypong = 1,
-	EMagicLeapHandTrackingKeypo = 2,
-	EMagicLeapHandTrackingKeypong = 3,
-	EMagicLeapHandTrackingKeypo = 4,
-	EMagicLeapHandTrackingKeypong = 5,
-	EMagicLeapHandTrackingKeypo = 6,
-	EMagicLeapHandTrackingKeypong = 7,
-	EMagicLeapHandTrackingKeypo = 8,
-	EMagicLeapHandTrackingKeypong = 9,
-	EMagicLeapHandTrackingKeypo = 10,
-	EMagicLeapHandTrackingKeypong = 11,
-	EMagicLeapHandTrackingKeypo = 12,
-	EMagicLeapHandTrackingKeypong = 13,
-	EMagicLeapHandTrackingKeypo = 14,
-	EMagicLeapHandTrackingKeypong = 15,
-	EMagicLeapHandTrackingKeypo = 16,
-	EMagicLeapHandTrackingKeypong = 17,
-	EMagicLeapHandTrackingKeypo = 18,
-	EMagicLeapHandTrackingKeypong = 19,
-	EMagicLeapHandTrackingKeypo = 20,
-	EMagicLeapHandTrackingKeypong = 21,
-	EMagicLeapHandTrackingKeypo = 22,
-	EMagicLeapHandTrackingKeypong = 23,
-	EMagicLeapHandTrackingKeypo = 24
+// Enum MagicLeapHandTracking.EMagicLeapHandTrackingKeypoint
+enum class EMagicLeapHandTrackingKeypoint : uint8 {
+	EMagicLeapHandTrackingKeypoint = 0,
+	EMagicLeapHandTrackingKeypoint = 1,
+	EMagicLeapHandTrackingKeypoint = 2,
+	EMagicLeapHandTrackingKeypoint = 3,
+	EMagicLeapHandTrackingKeypoint = 4,
+	EMagicLeapHandTrackingKeypoint = 5,
+	EMagicLeapHandTrackingKeypoint = 6,
+	EMagicLeapHandTrackingKeypoint = 7,
+	EMagicLeapHandTrackingKeypoint = 8,
+	EMagicLeapHandTrackingKeypoint = 9,
+	EMagicLeapHandTrackingKeypoint = 10,
+	EMagicLeapHandTrackingKeypoint = 11,
+	EMagicLeapHandTrackingKeypoint = 12,
+	EMagicLeapHandTrackingKeypoint = 13,
+	EMagicLeapHandTrackingKeypoint = 14,
+	EMagicLeapHandTrackingKeypoint = 15,
+	EMagicLeapHandTrackingKeypoint = 16,
+	EMagicLeapHandTrackingKeypoint = 17,
+	EMagicLeapHandTrackingKeypoint = 18,
+	EMagicLeapHandTrackingKeypoint = 19,
+	EMagicLeapHandTrackingKeypoint = 20,
+	EMagicLeapHandTrackingKeypoint = 21,
+	EMagicLeapHandTrackingKeypoint = 22,
+	EMagicLeapHandTrackingKeypoint = 23,
+	EMagicLeapHandTrackingKeypoint = 24
 };
 

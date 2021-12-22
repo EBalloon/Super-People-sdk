@@ -1,4 +1,4 @@
-// UserDefinedEnum Command_Returns.Command_Returns
+// User Command_Returns.Command_Returns
 enum class Command_Returns : uint8 {
 	Command_Returns = 0,
 	Command_Returns = 1,

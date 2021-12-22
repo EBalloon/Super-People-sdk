@@ -1,13 +1,13 @@
-// BlueprintGeneratedClass BP_GameSettings.BP_GameSettings_C
-struct UBP_GameSettings_C : UBravoHotelLocalSavedSettings {
+// BlueprintGeneratedClass BP_GameSettings.BP_G
+struct UBP_G : UBravoHotelLocalSavedSettings {
 	float Look; //  0x120 Size(4)
 	float Look; //  0x124 Size(4)
 	char Look; //  0x128 Size(1)
 	char Look; //  0x129 Size(1)
-	Unknown Game; //  0x130 Size(10)
+	struct TScriptInterface<IUnknown> Game; //  0x130 Size(10)
 	struct FString Save; //  0x140 Size(10)
 	int32_t Save; //  0x150 Size(4)
-	Unknown AudioEmittors; //  0x158 Size(10)
+	struct TArray<Unknown> AudioEmittors; //  0x158 Size(10)
 	float Audio; //  0x168 Size(4)
 	float Audio; //  0x16c Size(4)
 	float Audio; //  0x170 Size(4)
@@ -21,8 +21,8 @@ struct UBP_GameSettings_C : UBravoHotelLocalSavedSettings {
 	float Volume; //  0x190 Size(4)
 	int32_t Video; //  0x194 Size(4)
 	int32_t Video; //  0x198 Size(4)
-	Unknown Camera; //  0x1a0 Size(10)
-	Unknown Screen; //  0x1b0 Size(1)
+	struct TArray<Unknown> Camera; //  0x1a0 Size(10)
+	char Screen; //  0x1b0 Size(1)
 	int32_t Resolution; //  0x1b4 Size(4)
 	float View; //  0x1b8 Size(4)
 	int32_t Anti; //  0x1bc Size(4)
@@ -40,14 +40,14 @@ struct UBP_GameSettings_C : UBravoHotelLocalSavedSettings {
 	float Bloom; //  0x1e8 Size(4)
 	float Gamma; //  0x1ec Size(4)
 	float Gain; //  0x1f0 Size(4)
-	Unknown Previous; //  0x1f8 Size(8)
+	struct Unknown Previous; //  0x1f8 Size(8)
 	struct FString My; //  0x200 Size(10)
 	float Current; //  0x210 Size(4)
-	Unknown Key; //  0x218 Size(10)
-	Unknown Input; //  0x228 Size(10)
-	Unknown Saved; //  0x238 Size(10)
+	struct TArray<Unknown> Key; //  0x218 Size(10)
+	struct TArray<Unknown> Input; //  0x228 Size(10)
+	struct TArray<Unknown> Saved; //  0x238 Size(10)
 	float Volume; //  0x248 Size(4)
-	Unknown Old; //  0x24c Size(1)
+	char Old; //  0x24c Size(1)
 	float TemporalAAFilterSize; //  0x250 Size(4)
 	char TemporalAACatmullRom; //  0x254 Size(1)
 	char TemporalAAPauseCorrect; //  0x255 Size(1)
@@ -62,20 +62,12 @@ struct UBP_GameSettings_C : UBravoHotelLocalSavedSettings {
 	char FilmToe; //  0x272 Size(1)
 	float ColorGrading; //  0x274 Size(4)
 	char ClearFog; //  0x278 Size(1)
-	int32_t ViewDistanceQuality; //  0x27c Size(4)
+	int32_t View; //  0x27c Size(4)
 	int32_t ScalabilityQuality; //  0x280 Size(4)
 	int32_t CurrentFileVersion; //  0x284 Size(4)
 	int32_t UpdateFileVersion; //  0x288 Size(4)
 	char Smooth; //  0x28c Size(1)
 
-	void SetAutoReloadSetting(char Value, char Apply, char& Result); // Function BP_GameSettings.BP_GameSettings_C.SetAutoReloadSetting(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game+0x23a73f0>
-};
-
-// BlueprintGeneratedClass BP_GameSettings.BP_GameSettingsWrapper_C
-struct UBP_GameSettingsWrapper_C : Object {
-	Unknown UberGraphFrame; //  0x28 Size(8)
-	Unknown Game; //  0x30 Size(8)
-
-	void ExecuteUbergraph_BP_GameSettingsWrapper(int32_t EntryPoint); // Function BP_GameSettings.BP_GameSettingsWrapper_C.ExecuteUbergraph_BP_GameSettingsWrapper(Final|UbergraphFunction) // <Game+0x23a73f0>
+	void SetAutoReloadSetting(char Value, char Apply, char& Result); // Function BP_GameSettings.BP_G.SetAutoReloadSetting(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game+0x23b1e70>
 };
 

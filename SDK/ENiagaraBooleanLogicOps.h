@@ -1,4 +1,4 @@
-// UserDefinedEnum ENiagaraBooleanLogicOps.ENiagaraBooleanLogicOps
+// User ENiagaraBooleanLogicOps.ENiagaraBooleanLogicOps
 enum class ENiagaraBooleanLogicOps : uint8 {
 	ENiagaraBooleanLogicOps = 0,
 	ENiagaraBooleanLogicOps = 1,

@@ -30,7 +30,7 @@ enum class ETrackedDeviceType : uint8 {
 // Class OculusHMD.OculusHMDRuntimeSettings
 struct UOculusHMDRuntimeSettings : Object {
 	char bAutoEnabled; //  0x28 Size(1)
-	Unknown SplashDescs; //  0x30 Size(10)
+	struct TArray<Unknown> SplashDescs; //  0x30 Size(10)
 	char bSupportsDash; //  0x40 Size(1)
 	char bCompositesDepth; //  0x41 Size(1)
 	char bHQDistortion; //  0x42 Size(1)
@@ -38,13 +38,13 @@ struct UOculusHMDRuntimeSettings : Object {
 	float PixelDensityMax; //  0x48 Size(4)
 	int32_t CPULevel; //  0x4c Size(4)
 	int32_t GPULevel; //  0x50 Size(4)
-	Unknown FFRLevel; //  0x54 Size(1)
+	enum class Unknow FFRLevel; //  0x54 Size(1)
 	char bChromaCorrection; //  0x55 Size(1)
 	char bRecenterHMDWithController; //  0x56 Size(1)
 };
 
 // Class OculusHMD.OculusSceneCaptureCubemap
 struct UOculusSceneCaptureCubemap : Object {
-	Unknown CaptureComponents; //  0x38 Size(10)
+	struct TArray<Unknown> CaptureComponents; //  0x38 Size(10)
 };
 

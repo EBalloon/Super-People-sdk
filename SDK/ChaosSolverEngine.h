@@ -11,8 +11,8 @@ enum class EClusterConnectionTypeEnum : uint8 {
 
 // Class ChaosSolverEngine.ChaosGameplayEventDispatcher
 struct UChaosGameplayEventDispatcher : UChaosEventListenerComponent {
-	Unknown CollisionEventRegistrations; //  0x1c8 Size(50)
-	Unknown BreakEventRegistrations; //  0x218 Size(50)
+	struct TMap<{}, {}>Unknown CollisionEventRegistrations; //  0x1c8 Size(50)
+	struct TMap<{}, {}>Unknown BreakEventRegistrations; //  0x218 Size(50)
 };
 
 // Class ChaosSolverEngine.ChaosSolverActor
@@ -22,26 +22,26 @@ struct AChaosSolverActor : UActor {
 	int32_t PushOutIterations; //  0x318 Size(4)
 	int32_t PushOutPairIterations; //  0x31c Size(4)
 	float ClusterConnectionFactor; //  0x320 Size(4)
-	Unknown ClusterUnionConnectionType; //  0x324 Size(1)
+	enum class Unknow ClusterUnionConnectionType; //  0x324 Size(1)
 	char DoGenerateCollisionData; //  0x325 Size(1)
-	Unknown CollisionFilterSettings; //  0x328 Size(10)
+	struct Unknown CollisionFilterSettings; //  0x328 Size(10)
 	char DoGenerateBreakingData; //  0x338 Size(1)
-	Unknown BreakingFilterSettings; //  0x33c Size(10)
+	struct Unknown BreakingFilterSettings; //  0x33c Size(10)
 	char DoGenerateTrailingData; //  0x34c Size(1)
-	Unknown TrailingFilterSettings; //  0x350 Size(10)
+	struct Unknown TrailingFilterSettings; //  0x350 Size(10)
 	char bHasFloor; //  0x360 Size(1)
 	float FloorHeight; //  0x364 Size(4)
 	float MassScale; //  0x368 Size(4)
 	char bGenerateContactGraph; //  0x36c Size(1)
-	Unknown ChaosDebugSubstepControl; //  0x36d Size(3)
-	Unknown SpriteComponent; //  0x370 Size(8)
-	Unknown GameplayEventDispatcherComponent; //  0x390 Size(8)
+	struct Unknown ChaosDebugSubstepControl; //  0x36d Size(3)
+	struct Unknown SpriteComponent; //  0x370 Size(8)
+	struct Unknown GameplayEventDispatcherComponent; //  0x390 Size(8)
 
-	void SetSolverActive(char bActive); // Function ChaosSolverEngine.ChaosSolverActor.SetSolverActive(Native|Public|BlueprintCallable) // <Game+0x3ffdb40>
+	void SetSolverActive(char bActive); // Function ChaosSolverEngine.ChaosSolverActor.SetSolverActive(Native|Public|BlueprintCallable) // <Game+0x400b4b0>
 };
 
 // Class ChaosSolverEngine.ChaosSolverSettings
 struct UChaosSolverSettings : UDeveloperSettings {
-	Unknown DefaultChaosSolverActorClass; //  0x40 Size(18)
+	struct Unknown DefaultChaosSolverActorClas; //  0x40 Size(18)
 };
 

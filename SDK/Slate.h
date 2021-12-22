@@ -37,12 +37,12 @@ enum class ETextWrappingPolicy : uint8 {
 	ETextWrappingPolicy = 3
 };
 
-// Enum Slate.ETab
-enum class ETabd : uint8 {
-	ETab = 0,
-	ETabd = 1,
-	ETabd = 2,
-	ETabd = 3
+// Enum Slate.ETableViewMode
+enum class ETableViewMode : uint8 {
+	ETableViewMode = 0,
+	ETableViewMode = 1,
+	ETableViewMode = 2,
+	ETableViewMode = 3
 };
 
 // Enum Slate.ESelectionMode
@@ -120,12 +120,12 @@ enum class EScrollWhenFocusChanges : uint8 {
 	EScrollWhenFocusChanges = 3
 };
 
-// Enum Slate.EDescendantScrollDestinatioD
-enum class EDescendantScrollDestinatio : uint8 {
-	EDescendantScrollDestinatio = 0,
-	EDescendantScrollDestinatiocrollWhenFo = 1,
-	EDescendantScrollDestinatio = 2,
-	EDescendantScrollDestinatiocrollWhen = 3
+// Enum Slate.EDescendantScrollDestination
+enum class EDescendantScrollDestination : uint8 {
+	EDescendantScrollDestination = 0,
+	EDescendantScrollDestination = 1,
+	EDescendantScrollDestination = 2,
+	EDescendantScrollDestination = 3
 };
 
 // Enum Slate.EListItemAlignment
@@ -169,47 +169,47 @@ enum class EUserInterfaceActionType : uint8 {
 
 // Class Slate.ButtonWidgetStyle
 struct UButtonWidgetStyle : USlateWidgetStyleContainerBase {
-	Unknown ButtonStyle; //  0x30 Size(278)
+	struct Unknown ButtonStyle; //  0x30 Size(278)
 };
 
 // Class Slate.CheckBoxWidgetStyle
 struct UCheckBoxWidgetStyle : USlateWidgetStyleContainerBase {
-	Unknown CheckBoxStyle; //  0x30 Size(580)
+	struct Unknown CheckBoxStyle; //  0x30 Size(580)
 };
 
-// Class Slate.Comb
-struct UComb : USlateWidgetStyleContainerBase {
-	Unknown Comb; //  0x30 Size(3f0)
+// Class Slate.ComboBoxWidgetStyle
+struct UComboBoxWidgetStyle : USlateWidgetStyleContainerBase {
+	struct Unknown ComboBoxStyle; //  0x30 Size(3f0)
 };
 
-// Class Slate.Comb
-struct UComb : USlateWidgetStyleContainerBase {
-	Unknown Comb; //  0x30 Size(3b8)
+// Class Slate.ComboButtonWidgetStyle
+struct UComboButtonWidgetStyle : USlateWidgetStyleContainerBase {
+	struct Unknown ComboButtonStyle; //  0x30 Size(3b8)
 };
 
 // Class Slate.EditableTextBoxWidgetStyle
 struct UEditableTextBoxWidgetStyle : USlateWidgetStyleContainerBase {
-	Unknown EditableTextBoxStyle; //  0x30 Size(7f0)
+	struct Unknown EditableTextBoxStyle; //  0x30 Size(7f0)
 };
 
 // Class Slate.EditableTextWidgetStyle
 struct UEditableTextWidgetStyle : USlateWidgetStyleContainerBase {
-	Unknown EditableTextStyle; //  0x30 Size(218)
+	struct Unknown EditableTextStyle; //  0x30 Size(218)
 };
 
 // Class Slate.ProgressWidgetStyle
 struct UProgressWidgetStyle : USlateWidgetStyleContainerBase {
-	Unknown ProgressBarStyle; //  0x30 Size(1a0)
+	struct Unknown ProgressBarStyle; //  0x30 Size(1a0)
 };
 
 // Class Slate.ScrollBarWidgetStyle
 struct UScrollBarWidgetStyle : USlateWidgetStyleContainerBase {
-	Unknown ScrollBarStyle; //  0x30 Size(4d0)
+	struct Unknown ScrollBarStyle; //  0x30 Size(4d0)
 };
 
 // Class Slate.ScrollBoxWidgetStyle
 struct UScrollBoxWidgetStyle : USlateWidgetStyleContainerBase {
-	Unknown ScrollBoxStyle; //  0x30 Size(228)
+	struct Unknown ScrollBoxStyle; //  0x30 Size(228)
 };
 
 // Class Slate.SlateSettings
@@ -219,11 +219,11 @@ struct USlateSettings : Object {
 
 // Class Slate.SpinBoxWidgetStyle
 struct USpinBoxWidgetStyle : USlateWidgetStyleContainerBase {
-	Unknown SpinBoxStyle; //  0x30 Size(2e8)
+	struct Unknown SpinBoxStyle; //  0x30 Size(2e8)
 };
 
 // Class Slate.TextBlockWidgetStyle
 struct UTextBlockWidgetStyle : USlateWidgetStyleContainerBase {
-	Unknown TextBlockStyle; //  0x30 Size(268)
+	struct Unknown TextBlockStyle; //  0x30 Size(268)
 };
 

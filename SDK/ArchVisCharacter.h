@@ -12,9 +12,9 @@ struct AArchVisCharacter : ACharacter {
 
 // Class ArchVisCharacter.ArchVisCharMovementComponent
 struct UArchVisCharMovementComponent : UCharacterMovementComponent {
-	Unknown RotationalAcceleration; //  0x6e8 Size(c)
-	Unknown RotationalDeceleration; //  0x6f4 Size(c)
-	Unknown MaxRotationalVelocity; //  0x700 Size(c)
+	struct Unknown RotationalAcceleration; //  0x6e8 Size(c)
+	struct Unknown RotationalDeceleration; //  0x6f4 Size(c)
+	struct Unknown MaxRotationalVelocity; //  0x700 Size(c)
 	float MinPitch; //  0x70c Size(4)
 	float MaxPitch; //  0x710 Size(4)
 	float WalkingFriction; //  0x714 Size(4)

@@ -32,11 +32,11 @@ enum class EZipUtilityCompletionState : uint8 {
 
 // Class ZipUtility.ZipFileFunctionInternalCallback
 struct UZipFileFunctionInternalCallback : Object {
-	Unknown CompressionFormat; //  0x30 Size(1)
+	enum class Unknow CompressionFormat; //  0x30 Size(1)
 	struct FString File; //  0x38 Size(10)
 	struct FString DestinationFolder; //  0x48 Size(10)
 	int32_t FileIndex; //  0x58 Size(4)
-	Unknown Callback; //  0x60 Size(8)
+	struct Unknown Callback; //  0x60 Size(8)
 	char bSingleFile; //  0x68 Size(1)
 	char bFileFound; //  0x69 Size(1)
 	char bUnzipto; //  0x6a Size(1)

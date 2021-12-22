@@ -1,8 +1,8 @@
-// Enum EngineSettings.ESub
-enum class ESubd : uint8 {
-	ESub = 0,
-	ESubd = 1,
-	ESubd = 2
+// Enum EngineSettings.ESubLevelStripMode
+enum class ESubLevelStripMode : uint8 {
+	ESubLevelStripMode = 0,
+	ESubLevelStripMode = 1,
+	ESubLevelStripMode = 2
 };
 
 // Enum EngineSettings.EFourPlayerSplitScreenType
@@ -32,37 +32,37 @@ enum class ETwoPlayerSplitScreenType : uint8 {
 // Class EngineSettings.ConsoleSettings
 struct UConsoleSettings : Object {
 	int32_t MaxScrollbackSize; //  0x28 Size(4)
-	Unknown ManualAutoCompleteList; //  0x30 Size(10)
-	Unknown AutoCompleteMapPaths; //  0x40 Size(10)
+	struct TArray<Unknown> ManualAutoCompleteList; //  0x30 Size(10)
+	struct TArray<Unknown> AutoCompleteMapPaths; //  0x40 Size(10)
 	float BackgroundOpacityPercentage; //  0x50 Size(4)
 	char bOrderTopToBottom; //  0x54 Size(1)
 	char bDisplayHelpInAutoComplete; //  0x55 Size(1)
-	Unknown InputColor; //  0x58 Size(4)
-	Unknown HistoryColor; //  0x5c Size(4)
-	Unknown AutoCompleteCommandColor; //  0x60 Size(4)
-	Unknown AutoCompleteCVarColor; //  0x64 Size(4)
-	Unknown AutoCompleteFadedColor; //  0x68 Size(4)
+	struct Unknown InputColor; //  0x58 Size(4)
+	struct Unknown HistoryColor; //  0x5c Size(4)
+	struct Unknown AutoCompleteCommandColor; //  0x60 Size(4)
+	struct Unknown AutoCompleteCVarColor; //  0x64 Size(4)
+	struct Unknown AutoCompleteFadedColor; //  0x68 Size(4)
 };
 
 // Class EngineSettings.GameMapsSettings
 struct UGameMapsSettings : Object {
 	struct FString LocalMapOptions; //  0x28 Size(10)
-	Unknown TransitionMap; //  0x38 Size(18)
+	struct Unknown TransitionMap; //  0x38 Size(18)
 	char bUseSplitscreen; //  0x50 Size(1)
-	Unknown TwoPlayerSplitscreenLayout; //  0x51 Size(1)
-	Unknown ThreePlayerSplitscreenLayout; //  0x52 Size(1)
-	Unknown FourPlayerSplitscreenLayout; //  0x53 Size(1)
+	char TwoPlayerSplitscreenLayout; //  0x51 Size(1)
+	char ThreePlayerSplitscreenLayout; //  0x52 Size(1)
+	enum class Unknow FourPlayerSplitscreenLayout; //  0x53 Size(1)
 	char bOffsetPlayerGamepadIds; //  0x54 Size(1)
-	Unknown GameInstanceClass; //  0x58 Size(18)
-	Unknown ServerGameInstanceClass; //  0x70 Size(18)
-	Unknown GameDefaultMap; //  0x88 Size(18)
-	Unknown ServerDefaultMap; //  0xa0 Size(18)
-	Unknown Glob; //  0xb8 Size(18)
-	Unknown GloberDefaultMap; //  0xd0 Size(18)
-	Unknown GameModeMapPrefixes; //  0xe8 Size(10)
-	Unknown GameModeClassAliases; //  0xf8 Size(10)
+	struct Unknown GameInstanceClass; //  0x58 Size(18)
+	struct Unknown ServerGameInstanceClass; //  0x70 Size(18)
+	struct Unknown Game; //  0x88 Size(18)
+	struct Unknown ServerDefaultMap; //  0xa0 Size(18)
+	struct Unknown GlobalDefaultGameMode; //  0xb8 Size(18)
+	struct Unknown GlobalDefaultServerGameMode; //  0xd0 Size(18)
+	struct TArray<Unknown> GameModeMapPrefixes; //  0xe8 Size(10)
+	struct TArray<Unknown> GameModeClassAliases; //  0xf8 Size(10)
 
-	void SetSkipAssigningGamepadToPlayer1(char bSkipFirstPlayer); // Function EngineSettings.GameMapsSettings.SetSkipAssigningGamepadToPlayer1(Final|Native|Public|BlueprintCallable) // <Game+0x2c1ea90>
+	void SetSkipAssigningGamepadToPlayer1(char bSkipFirstPlayer); // Function EngineSettings.GameMapsSettings.SetSkipAssigningGamepadToPlayer1(Final|Native|Public|BlueprintCallable) // <Game+0x2c297e0>
 };
 
 // Class EngineSettings.GameNetworkManagerSettings
@@ -96,13 +96,13 @@ struct UGeneralProjectSettings : Object {
 	struct FString Homepage; //  0x68 Size(10)
 	struct FString LicensingTerms; //  0x78 Size(10)
 	struct FString PrivacyPolicy; //  0x88 Size(10)
-	Unknown ProjectID; //  0x98 Size(10)
+	struct Unknown ProjectID; //  0x98 Size(10)
 	struct FString ProjectName; //  0xa8 Size(10)
 	struct FString ProjectVersion; //  0xb8 Size(10)
 	struct FString SupportContact; //  0xc8 Size(10)
 	struct FText ProjectDisplayedTitle; //  0xd8 Size(18)
 	struct FText ProjectDebugTitleInfo; //  0xf0 Size(18)
-	char bShouldWindowPreserveAspectRatio; //  0x108 Size(1)
+	char bShouldWindowPreserveAspectRati; //  0x108 Size(1)
 	char bUseBorderlessWindow; //  0x109 Size(1)
 	char bStartInVR; //  0x10a Size(1)
 	char bStartInAR; //  0x10b Size(1)
@@ -116,6 +116,6 @@ struct UGeneralProjectSettings : Object {
 // Class EngineSettings.HudSettings
 struct UHudSettings : Object {
 	char bShowHUD; //  0x28 Size(1)
-	Unknown DebugDisplay; //  0x30 Size(10)
+	struct TArray<Unknown> DebugDisplay; //  0x30 Size(10)
 };
 

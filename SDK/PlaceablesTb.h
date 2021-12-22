@@ -1,4 +1,4 @@
-// UserDefinedEnum CollisionTypeEnum.CollisionTypeEnum
+// User PlaceablesTb.CollisionTypeEnum
 enum class CollisionTypeEnum : uint8 {
 	CollisionTypeEnum = 0,
 	CollisionTypeEnum = 1,

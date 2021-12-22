@@ -19,21 +19,21 @@ enum class ELuminARTrackingState : uint8 {
 
 // Class MagicLeapAR.LuminARSessionConfig
 struct ULuminARSessionConfig : UARSessionConfig {
-	Unknown PlanesQuery; //  0xb0 Size(60)
+	struct Unknown PlanesQuery; //  0xb0 Size(60)
 	int32_t MaxPlaneQueryResults; //  0x110 Size(4)
 	int32_t MinPlaneArea; //  0x114 Size(4)
-	char bArb; //  0x118 Size(1)
-	Unknown PlaneSearchExtents; //  0x11c Size(c)
-	Unknown PlaneQueryFlags; //  0x128 Size(10)
+	char bArbitraryOrientationPlaneDetection; //  0x118 Size(1)
+	struct Unknown PlaneSearchExtents; //  0x11c Size(c)
+	struct TArray<Unknown> PlaneQueryFlags; //  0x128 Size(10)
 	char bDiscardZeroExtentPlanes; //  0x138 Size(1)
 	char bDefaultUseUnreliablePose; //  0x139 Size(1)
 };
 
 // Class MagicLeapAR.LuminARLightEstimate
 struct ULuminARLightEstimate : UARBasicLightEstimate {
-	Unknown AmbientIntensityNits; //  0x40 Size(10)
+	struct TArray<Unknown> AmbientIntensityNits; //  0x40 Size(10)
 
-	Unknown GetAmbientIntensityNits(); // Function MagicLeapAR.LuminARLightEstimate.GetAmbientIntensityNits(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x17cd820>
+	struct TArray<Unknown> GetAmbientIntensityNits(); // Function MagicLeapAR.LuminARLightEstimate.GetAmbientIntensityNits(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x17ce590>
 };
 
 // Class MagicLeapAR.LuminARCandidateImage
@@ -41,6 +41,6 @@ struct ULuminARCandidateImage : UARCandidateImage {
 	char bUseUnreliablePose; //  0x58 Size(1)
 	char bImageIsStationary; //  0x59 Size(1)
 
-	char GetUseUnreliablePose(); // Function MagicLeapAR.LuminARCandidateImage.GetUseUnreliablePose(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x17cd930>
+	char GetUseUnreliablePose(); // Function MagicLeapAR.LuminARCandidateImage.GetUseUnreliablePose(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game+0x17ce6a0>
 };
 

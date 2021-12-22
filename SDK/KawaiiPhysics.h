@@ -29,8 +29,8 @@ enum class EPlanarConstraint : uint8 {
 
 // Class KawaiiPhysics.KawaiiPhysicsLimitsDataAsset
 struct UKawaiiPhysicsLimitsDataAsset : UDataAsset {
-	Unknown SphericalLimits; //  0x30 Size(10)
-	Unknown CapsuleLimits; //  0x40 Size(10)
-	Unknown PlanarLimits; //  0x50 Size(10)
+	struct TArray<Unknown> SphericalLimits; //  0x30 Size(10)
+	struct TArray<Unknown> CapsuleLimits; //  0x40 Size(10)
+	struct TArray<Unknown> PlanarLimits; //  0x50 Size(10)
 };
 

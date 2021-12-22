@@ -7,9 +7,9 @@ enum class EMagicLeapLightEstimationCamera : uint8 {
 	EMagicLeapLightEstimationCamera = 4
 };
 
-// Class MagicLeapLightEstimation.MagicLeapLightingTrackingCo
-struct UMagicLeapLightingTrackingCot : UActorComponent {
-	char UseGlobalAmbience; //  0xb0 Size(1)
+// Class MagicLeapLightEstimation.MagicLeapLightingTrackingComponent
+struct UMagicLeapLightingTrackingComponent : UActorComponent {
+	char UseG; //  0xb0 Size(1)
 	char UseColorTemp; //  0xb1 Size(1)
 };
 
