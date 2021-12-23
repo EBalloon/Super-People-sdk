@@ -5,7 +5,7 @@
     Uworld: 0x695E880
     UObjects: 0x6815E20
     Gnames: 0x67FD440
-    DescNames: 0x67FCF50 (thx to #Rng Uziii & #PhysXCore) (https://www.unknowncheats.me/forum/3321945-post156.html)
+    DescNames: 0x67FCF50 (thx to #Rng Uziii & #PhysXCore) # (https://www.unknowncheats.me/forum/3321945-post156.html)
     BoneMatrix: 0x3704280
     WorldToScreen: 0x37348D0
     LineOfSightTo: 0x37E7370
