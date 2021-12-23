@@ -1,29 +1,38 @@
 // WidgetBlueprintGeneratedClass WB.WB
 struct UWB : UUserWidget {
-	struct Unknown UberGraphFrame; //  0x248 Size(8)
-	struct Unknown HeartBeat; //  0x250 Size(8)
-	struct Unknown FadeOut; //  0x258 Size(8)
-	struct Unknown FadeIn; //  0x260 Size(8)
-	struct Unknown Image; //  0x268 Size(8)
-	struct Unknown Image_95; //  0x270 Size(8)
-	struct Unknown Image_140; //  0x278 Size(8)
-	struct Unknown NewVar_1; //  0x280 Size(8)
-	char IsFadeInOutEvent; //  0x288 Size(1)
-	float CurrentFade; //  0x28c Size(4)
+	struct Unknown UberGraphFrame; // 0x248 (8)
+	struct Unknown HeartBeat; // 0x250 (8)
+	struct Unknown FadeOut; // 0x258 (8)
+	struct Unknown FadeIn; // 0x260 (8)
+	struct Unknown Image; // 0x268 (8)
+	struct Unknown Image_95; // 0x270 (8)
+	struct Unknown Image_140; // 0x278 (8)
+	struct Unknown NewVar_1; // 0x280 (8)
+	char IsFadeInOutEvent : 0; // 0x288 (1)
+	float CurrentFade; // 0x28C (4)
 
-	void Construct(); // Function WB.WB.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game+0x23b1e70>
+	void Construct(); // Function WB.WB.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function WB.WB.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void ExecuteUbergraph_WB(int32_t EntryPoint); // Function WB.WB.ExecuteUbergraph_WB(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 };
 
 // WidgetBlueprintGeneratedClass WB.WB
 struct UWB : UUserWidget {
-	struct Unknown UberGraphFrame; //  0x248 Size(8)
-	struct Unknown FadeOut; //  0x250 Size(8)
-	struct Unknown FadeIn; //  0x258 Size(8)
-	struct Unknown Image_Effect; //  0x260 Size(8)
-	struct Unknown NewVar_1; //  0x268 Size(8)
-	char IsFadeInOutEvent; //  0x270 Size(1)
-	float CurrentFade; //  0x274 Size(4)
+	struct Unknown UberGraphFrame; // 0x248 (8)
+	struct Unknown FadeOut; // 0x250 (8)
+	struct Unknown FadeIn; // 0x258 (8)
+	struct Unknown Image_Effect; // 0x260 (8)
+	struct Unknown NewVar_1; // 0x268 (8)
+	char IsFadeInOutEvent : 0; // 0x270 (1)
+	float CurrentFade; // 0x274 (4)
 
-	void SetMaterialParameter(float Opacity, float Speed, float Scale); // Function WB.WB.SetMaterialParameter(BlueprintCallable|BlueprintEvent) // <Game+0x23b1e70>
+	void SetMaterialParameter(float Opacity, float Speed, float Scale); // Function WB.WB.SetMaterialParameter(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void EndAniEvent(); // Function WB.WB.EndAniEvent(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void FadeOutEvent(); // Function WB.WB.FadeOutEvent(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function WB.WB.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void Construct(); // Function WB.WB.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void FadeInEvent(); // Function WB.WB.FadeInEvent(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void AmplifierEffectTikcEvent(float DeltaTime); // Function WB.WB.AmplifierEffectTikcEvent(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void ExecuteUbergraph_WB(int32_t EntryPoint); // Function WB.WB.ExecuteUbergraph_WB(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 };
 

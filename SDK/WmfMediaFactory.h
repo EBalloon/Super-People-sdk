@@ -1,8 +1,8 @@
 // Class WmfMediaFactory.WmfMediaSettings
 struct UWmfMediaSettings : Object {
-	char AllowNonStandardCodecs; //  0x28 Size(1)
-	char LowLatency; //  0x29 Size(1)
-	char NativeAudioOut; //  0x2a Size(1)
-	char HardwareAcceleratedVideoDecoding; //  0x2b Size(1)
+	char AllowNonStandardCodecs : 0; // 0x28 (1)
+	char LowLatency : 0; // 0x29 (1)
+	char NativeAudioOut : 0; // 0x2A (1)
+	char HardwareAcceleratedVideoDecoding : 0; // 0x2B (1)
 };
 

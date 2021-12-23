@@ -1,5 +1,5 @@
-// Class AndroidPermission.AndroidPermissionCallbackProxy
-struct UAndroidPermissionCallbackProxy : Object {
-	struct FMulticastInlineDelegate OnPermissionsGranted; //  0x28 Size(10)
+// Class AndroidPermission.AndroidPermissionCallbackPS_
+struct UAndroidPermissionCallback : Object {
+	struct FMulticastInlineDelegate OnPermissionsGrantedDynamicDelegate; // 0x28 (16)
 };
 

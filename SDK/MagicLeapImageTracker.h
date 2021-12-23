@@ -1,16 +1,17 @@
 // Class MagicLeapImageTracker.MagicLeapImageTrackerComponent
 struct UMagicLeapImageTrackerComponent : USceneComponent {
-	struct Unknown TargetImageTexture; //  0x238 Size(8)
-	struct FString Name; //  0x240 Size(10)
-	float LongerDimension; //  0x250 Size(4)
-	char bIsStationary; //  0x254 Size(1)
-	char bUseUnreliablePose; //  0x255 Size(1)
-	struct FMulticastInlineDelegate OnSetImageTargetSucceeded; //  0x258 Size(10)
-	struct FMulticastInlineDelegate OnSetImageTargetFailed; //  0x268 Size(10)
-	struct FMulticastInlineDelegate OnImageTargetFound; //  0x278 Size(10)
-	struct FMulticastInlineDelegate OnImageTargetLost; //  0x288 Size(10)
-	struct FMulticastInlineDelegate OnImageTargetUnreliableTracking; //  0x298 Size(10)
+	struct Unknown TargetImageTexture; // 0x238 (8)
+	struct FString Name; // 0x240 (16)
+	float LongerDimension; // 0x250 (4)
+	char bIsStationary : 0; // 0x254 (1)
+	char bUseUnreliablePose : 0; // 0x255 (1)
+	struct FMulticastInlineDelegate OnSetImageTargetSucceeded; // 0x258 (16)
+	struct FMulticastInlineDelegate OnSetImageTargetFailed; // 0x268 (16)
+	struct FMulticastInlineDelegate OnImageTargetFound; // 0x278 (16)
+	struct FMulticastInlineDelegate OnImageTargetLost; // 0x288 (16)
+	struct FMulticastInlineDelegate OnImageTargetUnreliableTracking; // 0x298 (16)
 
-	char SetTargetAsync(struct Unknown ImageTarget); // Function MagicLeapImageTracker.MagicLeapImageTrackerComponent.SetTargetAsync(Final|Native|Public|BlueprintCallable) // <Game+0x17ebb00>
+	char SetTargetAsync(struct Unknown ImageTarget); // Function MagicLeapImageTracker.MagicLeapImageTrackerComponent.SetTargetAsync(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17EBB00>
+	char RemoveTargetAsync(); // Function MagicLeapImageTracker.MagicLeapImageTrackerComponent.RemoveTargetAsync(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17EBA60>
 };
 

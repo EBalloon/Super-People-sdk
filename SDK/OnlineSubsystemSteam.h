@@ -1,5 +1,5 @@
 // Class OnlineSubsystemSteam.SteamNetConnection
 struct USteamNetConnection : UIpConnection {
-	char bIsPassthrough; //  0x1b40 Size(1)
+	char bIsPassthrough : 0; // 0x1B40 (1)
 };
 

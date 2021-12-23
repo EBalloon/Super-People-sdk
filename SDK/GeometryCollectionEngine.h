@@ -1,273 +1,292 @@
 // Enum GeometryCollectionEngine.EChaosBreakingSortMethod
 enum class EChaosBreakingSortMethod : uint8 {
-	EChaosBreakingSortMethod = 0,
-	EChaosBreakingSortMethod = 1,
-	EChaosBreakingSortMethod = 2,
-	EChaosBreakingSortMethod = 3,
-	EChaosBreakingSortMethod = 4,
+	EChaosBreakingSortMethod = 0
+	EChaosBreakingSortMethod = 1
+	EChaosBreakingSortMethod = 2
+	EChaosBreakingSortMethod = 3
+	EChaosBreakingSortMethod = 4
 	EChaosBreakingSortMethod = 5
 };
 
 // Enum GeometryCollectionEngine.EChaosCollisionSortMethod
 enum class EChaosCollisionSortMethod : uint8 {
-	EChaosCollisionSortMethod = 0,
-	EChaosCollisionSortMethod = 1,
-	EChaosCollisionSortMethod = 2,
-	EChaosCollisionSortMethod = 3,
-	EChaosCollisionSortMethod = 4,
-	EChaosCollisionSortMethod = 5,
+	EChaosCollisionSortMethod = 0
+	EChaosCollisionSortMethod = 1
+	EChaosCollisionSortMethod = 2
+	EChaosCollisionSortMethod = 3
+	EChaosCollisionSortMethod = 4
+	EChaosCollisionSortMethod = 5
 	EChaosCollisionSortMethod = 6
 };
 
 // Enum GeometryCollectionEngine.EChaosTrailingSortMethod
 enum class EChaosTrailingSortMethod : uint8 {
-	EChaosTrailingSortMethod = 0,
-	EChaosTrailingSortMethod = 1,
-	EChaosTrailingSortMethod = 2,
-	EChaosTrailingSortMethod = 3,
-	EChaosTrailingSortMethod = 4,
+	EChaosTrailingSortMethod = 0
+	EChaosTrailingSortMethod = 1
+	EChaosTrailingSortMethod = 2
+	EChaosTrailingSortMethod = 3
+	EChaosTrailingSortMethod = 4
 	EChaosTrailingSortMethod = 5
 };
 
 // Enum GeometryCollectionEngine.EGeometryCollectionDebugDrawActorHideGeometry
 enum class EGeometryCollectionDebugDrawActorHideGeometry : uint8 {
-	EGeometryCollectionDebugDrawActorHideGeometry = 0,
-	EGeometryCollectionDebugDrawActorHideGeometry = 1,
-	EGeometryCollectionDebugDrawActorHideGeometry = 2,
-	EGeometryCollectionDebugDrawActorHideGeometry = 3,
-	EGeometryCollectionDebugDrawActorHideGeometry = 4,
+	EGeometryCollectionDebugDrawActorHideGeometry = 0
+	EGeometryCollectionDebugDrawActorHideGeometry = 1
+	EGeometryCollectionDebugDrawActorHideGeometry = 2
+	EGeometryCollectionDebugDrawActorHideGeometry = 3
+	EGeometryCollectionDebugDrawActorHideGeometry = 4
 	EGeometryCollectionDebugDrawActorHideGeometry = 5
 };
 
 // Enum GeometryCollectionEngine.ECollectionGroupEnum
 enum class ECollectionGroupEnum : uint8 {
-	ECollectionGroupEnum = 0,
+	ECollectionGroupEnum = 0
 	ECollectionGroupEnum = 1
 };
 
 // Enum GeometryCollectionEngine.ECollectionAttributeEnum
 enum class ECollectionAttributeEnum : uint8 {
-	ECollectionAttributeEnum = 0,
-	ECollectionAttributeEnum = 1,
-	ECollectionAttributeEnum = 2,
+	ECollectionAttributeEnum = 0
+	ECollectionAttributeEnum = 1
+	ECollectionAttributeEnum = 2
 	ECollectionAttributeEnum = 3
 };
 
 // Class GeometryCollectionEngine.ChaosDestructionListener
 struct UChaosDestructionListener : USceneComponent {
-	char bIsCollisionEventListeningEnabled; //  0x238 Size(1)
-	char bIsBreakingEventListeningEnabled; //  0x238 Size(1)
-	char bIsTrailingEventListeningEnabled; //  0x238 Size(1)
-	struct Unknown CollisionEventRequestSettings; //  0x23c Size(18)
-	struct Unknown BreakingEventRequestSettings; //  0x254 Size(18)
-	struct Unknown TrailingEventRequestSettings; //  0x26c Size(18)
-	struct TSet<Unknown> ChaosSolverActors; //  0x288 Size(50)
-	struct TSet<Unknown> GeometryCollectionActors; //  0x2d8 Size(50)
-	struct FMulticastInlineDelegate OnCollisionEvents; //  0x328 Size(10)
-	struct FMulticastInlineDelegate OnBreakingEvents; //  0x338 Size(10)
-	struct FMulticastInlineDelegate OnTrailingEvents; //  0x348 Size(10)
+	char bIsCollisionEventListeningEnabled : 0; // 0x238 (1)
+	char bIsBreakingEventListeningEnabled : 0; // 0x238 (1)
+	char bIsTrailingEventListeningEnabled : 0; // 0x238 (1)
+	struct Unknown CollisionEventRequestSettings; // 0x23C (24)
+	struct Unknown BreakingEventRequestSettings; // 0x254 (24)
+	struct Unknown TrailingEventRequestSettings; // 0x26C (24)
+	struct TSet<Unknown> ChaosSolverActors; // 0x288 (80)
+	struct TSet<Unknown> GeometryCollectionActors; // 0x2D8 (80)
+	struct FMulticastInlineDelegate OnCollisionEvents; // 0x328 (16)
+	struct FMulticastInlineDelegate OnBreakingEvents; // 0x338 (16)
+	struct FMulticastInlineDelegate OnTrailingEvents; // 0x348 (16)
 
-	void SortTrailingEvents(struct TArray<Unknown>& TrailingEvents, enum class Unknow SortMethod); // Function GeometryCollectionEngine.ChaosDestructionListener.SortTrailingEvents(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x4030ec0>
+	void SortTrailingEvents(struct TArray<Unknown>& TrailingEvents, enum class Unknow SortMethod); // Function GeometryCollectionEngine.ChaosDestructionListener.SortTrailingEvents(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4030EC0>
+	void SortCollisionEvents(struct TArray<Unknown>& CollisionEvents, enum class Unknow SortMethod); // Function GeometryCollectionEngine.ChaosDestructionListener.SortCollisionEvents(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4030DC0>
+	void SortBreakingEvents(struct TArray<Unknown>& BreakingEvents, enum class Unknow SortMethod); // Function GeometryCollectionEngine.ChaosDestructionListener.SortBreakingEvents(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4030CC0>
+	void SetTrailingEventRequestSettings(struct Unknown& InSettings); // Function GeometryCollectionEngine.ChaosDestructionListener.SetTrailingEventRequestSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4030C20>
+	void SetTrailingEventEnabled(char bIsEnabled); // Function GeometryCollectionEngine.ChaosDestructionListener.SetTrailingEventEnabled(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4030B90>
+	void SetCollisionEventRequestSettings(struct Unknown& InSettings); // Function GeometryCollectionEngine.ChaosDestructionListener.SetCollisionEventRequestSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4030A60>
+	void SetCollisionEventEnabled(char bIsEnabled); // Function GeometryCollectionEngine.ChaosDestructionListener.SetCollisionEventEnabled(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x40309D0>
+	void SetBreakingEventRequestSettings(struct Unknown& InSettings); // Function GeometryCollectionEngine.ChaosDestructionListener.SetBreakingEventRequestSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4030930>
+	void SetBreakingEventEnabled(char bIsEnabled); // Function GeometryCollectionEngine.ChaosDestructionListener.SetBreakingEventEnabled(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x40308A0>
+	void RemoveGeometryCollectionActor(struct Unknown GeometryCollectionActor); // Function GeometryCollectionEngine.ChaosDestructionListener.RemoveGeometryCollectionActor(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4030820>
+	void RemoveChaosSolverActor(struct Unknown ChaosSolverActor); // Function GeometryCollectionEngine.ChaosDestructionListener.RemoveChaosSolverActor(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16B4710>
+	char IsEventListening(); // Function GeometryCollectionEngine.ChaosDestructionListener.IsEventListening(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4030670>
+	void AddGeometryCollectionActor(struct Unknown GeometryCollectionActor); // Function GeometryCollectionEngine.ChaosDestructionListener.AddGeometryCollectionActor(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x40303B0>
+	void AddChaosSolverActor(struct Unknown ChaosSolverActor); // Function GeometryCollectionEngine.ChaosDestructionListener.AddChaosSolverActor(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16B4710>
 };
 
 // Class GeometryCollectionEngine.GeometryCollectionActor
 struct AGeometryCollectionActor : UActor {
-	struct Unknown GeometryCollectionComponent; //  0x310 Size(8)
-	struct Unknown GeometryCollectionDebugDrawComponent; //  0x318 Size(8)
+	struct Unknown GeometryCollectionComponent; // 0x310 (8)
+	struct Unknown GeometryCollectionDebugDrawComponent; // 0x318 (8)
 
-	char RaycastSingle(struct Unknown Start, struct Unknown End, struct Unknown& OutHit); // Function GeometryCollectionEngine.GeometryCollectionActor.RaycastSingle(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game+0x40306a0>
+	char RaycastSingle(struct Unknown Start, struct Unknown End, struct Unknown& OutHit); // Function GeometryCollectionEngine.GeometryCollectionActor.RaycastSingle(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x40306A0>
 };
 
 // Class GeometryCollectionEngine.GeometryCollectionCache
 struct UGeometryCollectionCache : Object {
-	struct Unknown RecordedData; //  0x28 Size(10)
-	struct Unknown SupportedCollection; //  0x38 Size(8)
-	struct Unknown CompatibleCollectionState; //  0x40 Size(10)
+	struct Unknown RecordedData; // 0x28 (16)
+	struct Unknown SupportedCollection; // 0x38 (8)
+	struct Unknown CompatibleCollectionState; // 0x40 (16)
 };
 
 // Class GeometryCollectionEngine.GeometryCollectionComponent
 struct UGeometryCollectionComponent : UMeshComponent {
-	struct Unknown ChaosSolverActor; //  0x4f0 Size(8)
-	struct Unknown RestCollection; //  0x5d8 Size(8)
-	struct TArray<Unknown> InitializationFields; //  0x5e0 Size(10)
-	char Simulating; //  0x5f0 Size(1)
-	enum class Unknow ObjectType; //  0x5f8 Size(1)
-	char EnableClustering; //  0x5f9 Size(1)
-	int32_t ClusterGroupIndex; //  0x5fc Size(4)
-	int32_t MaxClusterLevel; //  0x600 Size(4)
-	struct TArray<Unknown> DamageThreshold; //  0x608 Size(10)
-	enum class Unknow ClusterConnectionType; //  0x618 Size(1)
-	int32_t CollisionGroup; //  0x61c Size(4)
-	float CollisionSampleFraction; //  0x620 Size(4)
-	float LinearEtherDrag; //  0x624 Size(4)
-	float AngularEther; //  0x628 Size(4)
-	struct Unknown PhysicalMaterial; //  0x630 Size(8)
-	enum class Unknow InitialVelocityType; //  0x638 Size(1)
-	struct Unknown InitialLinearVelocity; //  0x63c Size(c)
-	struct Unknown InitialAngularVelocity; //  0x648 Size(c)
-	struct Unknown CacheParameters; //  0x658 Size(50)
-	struct FMulticastInlineDelegate NotifyGeometryCollectionPhysicsStateChange; //  0x6a8 Size(10)
-	struct FMulticastInlineDelegate NotifyGeometryCollectionPhysicsLoadingStateChange; //  0x6b8 Size(10)
-	struct FMulticastInlineDelegate OnChaosBreakEvent; //  0x6e0 Size(10)
-	float DesiredCacheTime; //  0x6f0 Size(4)
-	char CachePlayback; //  0x6f4 Size(1)
-	struct FMulticastInlineDelegate OnChaosPhysicsCollision; //  0x6f8 Size(10)
-	char bNotifyBreaks; //  0x708 Size(1)
-	char bNotifyCollisions; //  0x709 Size(1)
-	struct Unknown DummyBodySetup; //  0x968 Size(8)
+	struct Unknown ChaosSolverActor; // 0x4F0 (8)
+	struct Unknown RestCollection; // 0x5D8 (8)
+	struct TArray<Unknown> InitializationFields; // 0x5E0 (16)
+	char Simulating : 0; // 0x5F0 (1)
+	enum class Unknow ObjectType; // 0x5F8 (1)
+	char EnableClustering : 0; // 0x5F9 (1)
+	int32_t ClusterGroupIndex; // 0x5FC (4)
+	int32_t MaxClusterLevel; // 0x600 (4)
+	struct TArray<Unknown> DamageThreshold; // 0x608 (16)
+	enum class Unknow ClusterConnectionType; // 0x618 (1)
+	int32_t CollisionGroup; // 0x61C (4)
+	float CollisionSampleFraction; // 0x620 (4)
+	float LinearEtherDrag; // 0x624 (4)
+	float AngularEtherDrag; // 0x628 (4)
+	struct Unknown PhysicalMaterial; // 0x630 (8)
+	enum class Unknow InitialVelocityType; // 0x638 (1)
+	struct Unknown InitialLinearVelocity; // 0x63C (12)
+	struct Unknown InitialAngularVelocity; // 0x648 (12)
+	struct Unknown CacheParameters; // 0x658 (80)
+	struct FMulticastInlineDelegate NotifyGeometryCollectionPhysicsStateChange; // 0x6A8 (16)
+	struct FMulticastInlineDelegate NotifyGeometryCollectionPhysicsLoadingStateChange; // 0x6B8 (16)
+	struct FMulticastInlineDelegate OnChaosBreakEvent; // 0x6E0 (16)
+	float DesiredCacheTime; // 0x6F0 (4)
+	char CachePlayback : 0; // 0x6F4 (1)
+	struct FMulticastInlineDelegate OnChaosPhysicsCollision; // 0x6F8 (16)
+	char bNotifyBreaks : 0; // 0x708 (1)
+	char bNotifyCollisions : 0; // 0x709 (1)
+	struct Unknown DummyBodySetup; // 0x968 (8)
 
-	void SetNotifyBreaks(char bNewNotifyBreaks); // Function GeometryCollectionEngine.GeometryCollectionComponent.SetNotifyBreaks(Final|Native|Public|BlueprintCallable) // <Game+0x4030b00>
+	void SetNotifyBreaks(char bNewNotifyBreaks); // Function GeometryCollectionEngine.GeometryCollectionComponent.SetNotifyBreaks(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4030B00>
+	void ReceivePhysicsCollision(struct Unknown& CollisionInfo); // Function GeometryCollectionEngine.GeometryCollectionComponent.ReceivePhysicsCollision(Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void NotifyGeometryCollectionPhysicsStateChange__DelegateSignature(struct Unknown FracturedComponent); // DelegateFunction GeometryCollectionEngine.GeometryCollectionComponent.NotifyGeometryCollectionPhysicsStateChange__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void NotifyGeometryCollectionPhysicsLoadingStateChange__DelegateSignature(struct Unknown FracturedComponent); // DelegateFunction GeometryCollectionEngine.GeometryCollectionComponent.NotifyGeometryCollectionPhysicsLoadingStateChange__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void ApplyPhysicsField(char Enabled, enum class Unknow Target, struct Unknown MetaData, struct Unknown Field); // Function GeometryCollectionEngine.GeometryCollectionComponent.ApplyPhysicsField(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4030500>
+	void ApplyKinematicField(float Radius, struct Unknown Position); // Function GeometryCollectionEngine.GeometryCollectionComponent.ApplyKinematicField(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4030430>
 };
 
 // Class GeometryCollectionEngine.GeometryCollectionDebugDrawActor
 struct AGeometryCollectionDebugDrawActor : UActor {
-	struct Unknown WarningMessage; //  0x310 Size(1)
-	struct Unknown SelectedRigidBody; //  0x318 Size(18)
-	char bDebugDrawWholeCollection; //  0x330 Size(1)
-	char bDebugDrawHierarchy; //  0x331 Size(1)
-	char bDebugDrawClustering; //  0x332 Size(1)
-	enum class Unknow HideGeometry; //  0x333 Size(1)
-	char bShowRigidBodyId; //  0x334 Size(1)
-	char bShowRigidBodyCollision; //  0x335 Size(1)
-	char bCollisionAtOrigin; //  0x336 Size(1)
-	char bShowRigidBodyTransform; //  0x337 Size(1)
-	char bShowRigidBodyInertia; //  0x338 Size(1)
-	char bShowRigidBodyVelocity; //  0x339 Size(1)
-	char bShowRigidBodyForce; //  0x33a Size(1)
-	char bShowRigidBodyInfos; //  0x33b Size(1)
-	char bShowTransformIndex; //  0x33c Size(1)
-	char bShowTransform; //  0x33d Size(1)
-	char bShowParent; //  0x33e Size(1)
-	char bShowLevel; //  0x33f Size(1)
-	char bShowConnectivityEdges; //  0x340 Size(1)
-	char bShowGeometryIndex; //  0x341 Size(1)
-	char bShowGeometryTransform; //  0x342 Size(1)
-	char bShowBoundingBox; //  0x343 Size(1)
-	char bShowFaces; //  0x344 Size(1)
-	char bShowFaceIndices; //  0x345 Size(1)
-	char bShowFaceNormals; //  0x346 Size(1)
-	char bShowSingleFace; //  0x347 Size(1)
-	int32_t SingleFaceIndex; //  0x348 Size(4)
-	char bShowVertices; //  0x34c Size(1)
-	char bShowVertexIndices; //  0x34d Size(1)
-	char bShowVertexNormals; //  0x34e Size(1)
-	char bUseActiveVisualization; //  0x34f Size(1)
-	float PointThickness; //  0x350 Size(4)
-	float LineThickness; //  0x354 Size(4)
-	char bTextShadow; //  0x358 Size(1)
-	float TextScale; //  0x35c Size(4)
-	float NormalScale; //  0x360 Size(4)
-	float AxisScale; //  0x364 Size(4)
-	float ArrowScale; //  0x368 Size(4)
-	struct Unknown RigidBodyIdColor; //  0x36c Size(4)
-	float RigidBodyTransformScale; //  0x370 Size(4)
-	struct Unknown RigidBodyCollisionColor; //  0x374 Size(4)
-	struct Unknown RigidBodyInertiaColor; //  0x378 Size(4)
-	struct Unknown RigidBodyVelocityColor; //  0x37c Size(4)
-	struct Unknown RigidBodyForceColor; //  0x380 Size(4)
-	struct Unknown RigidBodyInfoColor; //  0x384 Size(4)
-	struct Unknown TransformIndexColor; //  0x388 Size(4)
-	float TransformScale; //  0x38c Size(4)
-	struct Unknown LevelColor; //  0x390 Size(4)
-	struct Unknown ParentColor; //  0x394 Size(4)
-	float ConnectivityEdgeThickness; //  0x398 Size(4)
-	struct Unknown GeometryIndexColor; //  0x39c Size(4)
-	float GeometryTransformScale; //  0x3a0 Size(4)
-	struct Unknown BoundingBoxColor; //  0x3a4 Size(4)
-	struct Unknown FaceColor; //  0x3a8 Size(4)
-	struct Unknown FaceIndexColor; //  0x3ac Size(4)
-	struct Unknown FaceNormalColor; //  0x3b0 Size(4)
-	struct Unknown SingleFaceColor; //  0x3b4 Size(4)
-	struct Unknown VertexColor; //  0x3b8 Size(4)
-	struct Unknown VertexIndexColor; //  0x3bc Size(4)
-	struct Unknown VertexNormalColor; //  0x3c0 Size(4)
-	struct Unknown SpriteComponent; //  0x3c8 Size(8)
+	struct Unknown WarningMessage; // 0x310 (1)
+	struct Unknown SelectedRigidBody; // 0x318 (24)
+	char bDebugDrawWholeCollection : 0; // 0x330 (1)
+	char bDebugDrawHierarchy : 0; // 0x331 (1)
+	char bDebugDrawClustering : 0; // 0x332 (1)
+	enum class Unknow HideGeometry; // 0x333 (1)
+	char bShowRigidBodyId : 0; // 0x334 (1)
+	char bShowRigidBodyCollision : 0; // 0x335 (1)
+	char bCollisionAtOrigin : 0; // 0x336 (1)
+	char bShowRigidBodyTransform : 0; // 0x337 (1)
+	char bShowRigidBodyInertia : 0; // 0x338 (1)
+	char bShowRigidBodyVelocity : 0; // 0x339 (1)
+	char bShowRigidBodyForce : 0; // 0x33A (1)
+	char bShowRigidBodyInfos : 0; // 0x33B (1)
+	char bShowTransformIndex : 0; // 0x33C (1)
+	char bShowTransform : 0; // 0x33D (1)
+	char bShowParent : 0; // 0x33E (1)
+	char bShowLevel : 0; // 0x33F (1)
+	char bShowConnectivityEdges : 0; // 0x340 (1)
+	char bShowGeometryIndex : 0; // 0x341 (1)
+	char bShowGeometryTransform : 0; // 0x342 (1)
+	char bShowBoundingBox : 0; // 0x343 (1)
+	char bShowFaces : 0; // 0x344 (1)
+	char bShowFaceIndices : 0; // 0x345 (1)
+	char bShowFaceNormals : 0; // 0x346 (1)
+	char bShowSingleFace : 0; // 0x347 (1)
+	int32_t SingleFaceIndex; // 0x348 (4)
+	char bShowVertices : 0; // 0x34C (1)
+	char bShowVertexIndices : 0; // 0x34D (1)
+	char bShowVertexNormals : 0; // 0x34E (1)
+	char bUseActiveVisualization : 0; // 0x34F (1)
+	float PointThickness; // 0x350 (4)
+	float LineThickness; // 0x354 (4)
+	char bTextShadow : 0; // 0x358 (1)
+	float TextScale; // 0x35C (4)
+	float NormalScale; // 0x360 (4)
+	float AxisScale; // 0x364 (4)
+	float ArrowScale; // 0x368 (4)
+	struct Unknown RigidBodyIdColor; // 0x36C (4)
+	float RigidBodyTransformScale; // 0x370 (4)
+	struct Unknown RigidBodyCollisionColor; // 0x374 (4)
+	struct Unknown RigidBodyInertiaColor; // 0x378 (4)
+	struct Unknown RigidBodyVelocityColor; // 0x37C (4)
+	struct Unknown RigidBodyForceColor; // 0x380 (4)
+	struct Unknown RigidBodyInfoColor; // 0x384 (4)
+	struct Unknown TransformIndexColor; // 0x388 (4)
+	float TransformScale; // 0x38C (4)
+	struct Unknown LevelColor; // 0x390 (4)
+	struct Unknown ParentColor; // 0x394 (4)
+	float ConnectivityEdgeThickness; // 0x398 (4)
+	struct Unknown GeometryIndexColor; // 0x39C (4)
+	float GeometryTransformScale; // 0x3A0 (4)
+	struct Unknown BoundingBoxColor; // 0x3A4 (4)
+	struct Unknown FaceColor; // 0x3A8 (4)
+	struct Unknown FaceIndexColor; // 0x3AC (4)
+	struct Unknown FaceNormalColor; // 0x3B0 (4)
+	struct Unknown SingleFaceColor; // 0x3B4 (4)
+	struct Unknown VertexColor; // 0x3B8 (4)
+	struct Unknown VertexIndexColor; // 0x3BC (4)
+	struct Unknown VertexNormalColor; // 0x3C0 (4)
+	struct Unknown SpriteComponent; // 0x3C8 (8)
 };
 
 // Class GeometryCollectionEngine.GeometryCollectionDebugDrawComponent
 struct UGeometryCollectionDebugDrawComponent : UActorComponent {
-	struct Unknown GeometryCollectionDebugDrawActor; //  0xb0 Size(8)
-	struct Unknown GeometryCollectionRenderLevelSetActor; //  0xb8 Size(8)
+	struct Unknown GeometryCollectionDebugDrawActor; // 0xB0 (8)
+	struct Unknown GeometryCollectionRenderLevelSetActor; // 0xB8 (8)
 };
 
 // Class GeometryCollectionEngine.GeometryCollection
 struct UGeometryCollection : Object {
-	struct TArray<Unknown> Materials; //  0x30 Size(10)
-	enum class Unknow CollisionType; //  0x40 Size(1)
-	enum class Unknow ImplicitType; //  0x41 Size(1)
-	int32_t MinLevelSetResolution; //  0x44 Size(4)
-	int32_t MaxLevelSetResolution; //  0x48 Size(4)
-	int32_t MinClusterLevelSetResolution; //  0x4c Size(4)
-	int32_t MaxClusterLevelSetResolution; //  0x50 Size(4)
-	float CollisionObjectReductionPercentage; //  0x54 Size(4)
-	char bMassAsDensity; //  0x58 Size(1)
-	float Mass; //  0x5c Size(4)
-	float MinimumMassClamp; //  0x60 Size(4)
-	float CollisionParticlesFraction; //  0x64 Size(4)
-	int32_t MaximumCollisionParticles; //  0x68 Size(4)
-	struct TArray<Unknown> SizeSpecific; //  0x70 Size(10)
-	char EnableRemovePiecesOnFracture; //  0x80 Size(1)
-	struct TArray<Unknown> RemoveOnFractureMaterials; //  0x88 Size(10)
-	struct Unknown PersistentGuid; //  0x98 Size(10)
-	struct Unknown StateGuid; //  0xa8 Size(10)
-	int32_t BoneSelectedMaterialIndex; //  0xb8 Size(4)
+	struct TArray<Unknown> Materials; // 0x30 (16)
+	enum class Unknow CollisionType; // 0x40 (1)
+	enum class Unknow ImplicitType; // 0x41 (1)
+	int32_t MinLevelSetResolution; // 0x44 (4)
+	int32_t MaxLevelSetResolution; // 0x48 (4)
+	int32_t MinClusterLevelSetResolution; // 0x4C (4)
+	int32_t MaxClusterLevelSetResolution; // 0x50 (4)
+	float CollisionObjectReductionPercentage; // 0x54 (4)
+	char bMassAsDensity : 0; // 0x58 (1)
+	float Mass; // 0x5C (4)
+	float MinimumMassClamp; // 0x60 (4)
+	float CollisionParticlesFraction; // 0x64 (4)
+	int32_t MaximumCollisionParticles; // 0x68 (4)
+	struct TArray<Unknown> SizeSpecificData; // 0x70 (16)
+	char EnableRemovePiecesOnFracture : 0; // 0x80 (1)
+	struct TArray<Unknown> RemoveOnFractureMaterials; // 0x88 (16)
+	struct Unknown PersistentGuid; // 0x98 (16)
+	struct Unknown StateGuid; // 0xA8 (16)
+	int32_t BoneSelectedMaterialIndex; // 0xB8 (4)
 };
 
 // Class GeometryCollectionEngine.GeometryCollectionRenderLevelSetActor
 struct AGeometryCollectionRenderLevelSetActor : UActor {
-	struct Unknown TargetVolumeTexture; //  0x310 Size(8)
-	struct Unknown RayMarchMaterial; //  0x318 Size(8)
-	float SurfaceTolerance; //  0x320 Size(4)
-	float Isovalue; //  0x324 Size(4)
-	char Enabled; //  0x328 Size(1)
-	char RenderVolumeBoundingBox; //  0x329 Size(1)
+	struct Unknown TargetVolumeTexture; // 0x310 (8)
+	struct Unknown RayMarchMaterial; // 0x318 (8)
+	float SurfaceTolerance; // 0x320 (4)
+	float Isovalue; // 0x324 (4)
+	char Enabled : 0; // 0x328 (1)
+	char RenderVolumeBoundingBox : 0; // 0x329 (1)
 };
 
 // Class GeometryCollectionEngine.SkeletalMeshSimulationComponent
 struct USkeletalMeshSimulationComponent : UActorComponent {
-	struct Unknown PhysicalMaterial; //  0xb8 Size(8)
-	struct Unknown ChaosSolverActor; //  0xc0 Size(8)
-	struct Unknown OverridePhysicsAsset; //  0xc8 Size(8)
-	char bSimulating; //  0xd0 Size(1)
-	char bNotifyCollisions; //  0xd1 Size(1)
-	enum class Unknow ObjectType; //  0xd2 Size(1)
-	float Density; //  0xd4 Size(4)
-	float MinMass; //  0xd8 Size(4)
-	float MaxMass; //  0xdc Size(4)
-	enum class Unknow CollisionType; //  0xe0 Size(1)
-	float ImplicitShapeParticlesPerUnitArea; //  0xe4 Size(4)
-	int32_t ImplicitShapeMinNumParticles; //  0xe8 Size(4)
-	int32_t ImplicitShapeMaxNumParticles; //  0xec Size(4)
-	int32_t MinLevelSetResolution; //  0xf0 Size(4)
-	int32_t MaxLevelSetResolution; //  0xf4 Size(4)
-	int32_t CollisionGroup; //  0xf8 Size(4)
-	enum class Unknow InitialVelocityType; //  0xfc Size(1)
-	struct Unknown InitialLinearVelocity; //  0x100 Size(c)
-	struct Unknown InitialAngularVelocity; //  0x10c Size(c)
-	struct FMulticastInlineDelegate OnChaosPhysicsCollision; //  0x118 Size(10)
+	struct Unknown PhysicalMaterial; // 0xB8 (8)
+	struct Unknown ChaosSolverActor; // 0xC0 (8)
+	struct Unknown OverridePhysicsAsset; // 0xC8 (8)
+	char bSimulating : 0; // 0xD0 (1)
+	char bNotifyCollisions : 0; // 0xD1 (1)
+	enum class Unknow ObjectType; // 0xD2 (1)
+	float Density; // 0xD4 (4)
+	float MinMass; // 0xD8 (4)
+	float MaxMass; // 0xDC (4)
+	enum class Unknow CollisionType; // 0xE0 (1)
+	float ImplicitShapeParticlesPerUnitArea; // 0xE4 (4)
+	int32_t ImplicitShapeMinNumParticles; // 0xE8 (4)
+	int32_t ImplicitShapeMaxNumParticles; // 0xEC (4)
+	int32_t MinLevelSetResolution; // 0xF0 (4)
+	int32_t MaxLevelSetResolution; // 0xF4 (4)
+	int32_t CollisionGroup; // 0xF8 (4)
+	enum class Unknow InitialVelocityType; // 0xFC (1)
+	struct Unknown InitialLinearVelocity; // 0x100 (12)
+	struct Unknown InitialAngularVelocity; // 0x10C (12)
+	struct FMulticastInlineDelegate OnChaosPhysicsCollision; // 0x118 (16)
 
-	void ReceivePhysicsCollision(struct Unknown& CollisionInfo); // Function GeometryCollectionEngine.SkeletalMeshSimulationComponent.ReceivePhysicsCollision(Event|Public|HasOutParms|BlueprintEvent) // <Game+0x23b1e70>
+	void ReceivePhysicsCollision(struct Unknown& CollisionInfo); // Function GeometryCollectionEngine.SkeletalMeshSimulationComponent.ReceivePhysicsCollision(Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 };
 
 // Class GeometryCollectionEngine.StaticMeshSimulationComponent
 struct UStaticMeshSimulationComponent : UActorComponent {
-	char Simulating; //  0xb8 Size(1)
-	char bNotifyCollisions; //  0xb9 Size(1)
-	enum class Unknow ObjectType; //  0xba Size(1)
-	float Mass; //  0xbc Size(4)
-	enum class Unknow CollisionType; //  0xc0 Size(1)
-	enum class Unknow ImplicitType; //  0xc1 Size(1)
-	int32_t MinLevelSetResolution; //  0xc4 Size(4)
-	int32_t MaxLevelSetResolution; //  0xc8 Size(4)
-	enum class Unknow InitialVelocityType; //  0xcc Size(1)
-	struct Unknown InitialLinearVelocity; //  0xd0 Size(c)
-	struct Unknown InitialAngularVelocity; //  0xdc Size(c)
-	float DamageThreshold; //  0xe8 Size(4)
-	struct Unknown PhysicalMaterial; //  0xf0 Size(8)
-	struct Unknown ChaosSolverActor; //  0xf8 Size(8)
-	struct FMulticastInlineDelegate OnChaosPhysicsCollision; //  0x100 Size(10)
-	struct TArray<Unknown> SimulatedComponents; //  0x120 Size(10)
+	char Simulating : 0; // 0xB8 (1)
+	char bNotifyCollisions : 0; // 0xB9 (1)
+	enum class Unknow ObjectType; // 0xBA (1)
+	float Mass; // 0xBC (4)
+	enum class Unknow CollisionType; // 0xC0 (1)
+	enum class Unknow ImplicitType; // 0xC1 (1)
+	int32_t MinLevelSetResolution; // 0xC4 (4)
+	int32_t MaxLevelSetResolution; // 0xC8 (4)
+	enum class Unknow InitialVelocityType; // 0xCC (1)
+	struct Unknown InitialLinearVelocity; // 0xD0 (12)
+	struct Unknown InitialAngularVelocity; // 0xDC (12)
+	float DamageThreshold; // 0xE8 (4)
+	struct Unknown PhysicalMaterial; // 0xF0 (8)
+	struct Unknown ChaosSolverActor; // 0xF8 (8)
+	struct FMulticastInlineDelegate OnChaosPhysicsCollision; // 0x100 (16)
+	struct TArray<Unknown> SimulatedComponents; // 0x120 (16)
 
-	void ReceivePhysicsCollision(struct Unknown& CollisionInfo); // Function GeometryCollectionEngine.StaticMeshSimulationComponent.ReceivePhysicsCollision(Event|Public|HasOutParms|BlueprintEvent) // <Game+0x23b1e70>
+	void ReceivePhysicsCollision(struct Unknown& CollisionInfo); // Function GeometryCollectionEngine.StaticMeshSimulationComponent.ReceivePhysicsCollision(Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void ForceRecreatePhysicsState(); // Function GeometryCollectionEngine.StaticMeshSimulationComponent.ForceRecreatePhysicsState(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4030650>
 };
 

@@ -1,1223 +1,1763 @@
 // Enum UMG.ESlateAccessibleBehavior
 enum class ESlateAccessibleBehavior : uint8 {
-	ESlateAccessibleBehavior = 0,
-	ESlateAccessibleBehavior = 1,
-	ESlateAccessibleBehavior = 2,
-	ESlateAccessibleBehavior = 3,
-	ESlateAccessibleBehavior = 4,
+	ESlateAccessibleBehavior = 0
+	ESlateAccessibleBehavior = 1
+	ESlateAccessibleBehavior = 2
+	ESlateAccessibleBehavior = 3
+	ESlateAccessibleBehavior = 4
 	ESlateAccessibleBehavior = 5
 };
 
 // Enum UMG.ESlateVisibility
 enum class ESlateVisibility : uint8 {
-	ESlateVisibility = 0,
-	ESlateVisibility = 1,
-	ESlateVisibility = 2,
-	ESlateVisibility = 3,
-	ESlateVisibility = 4,
+	ESlateVisibility = 0
+	ESlateVisibility = 1
+	ESlateVisibility = 2
+	ESlateVisibility = 3
+	ESlateVisibility = 4
 	ESlateVisibility = 5
 };
 
 // Enum UMG.EVirtualKeyboardType
 enum class EVirtualKeyboardType : uint8 {
-	EVirtualKeyboardType = 0,
-	EVirtualKeyboardType = 1,
-	EVirtualKeyboardType = 2,
-	EVirtualKeyboardType = 3,
-	EVirtualKeyboardType = 4,
-	EVirtualKeyboardType = 5,
+	EVirtualKeyboardType = 0
+	EVirtualKeyboardType = 1
+	EVirtualKeyboardType = 2
+	EVirtualKeyboardType = 3
+	EVirtualKeyboardType = 4
+	EVirtualKeyboardType = 5
 	EVirtualKeyboardType = 6
 };
 
 // Enum UMG.EWidgetAnimationEvent
 enum class EWidgetAnimationEvent : uint8 {
-	EWidgetAnimationEvent = 0,
-	EWidgetAnimationEvent = 1,
+	EWidgetAnimationEvent = 0
+	EWidgetAnimationEvent = 1
 	EWidgetAnimationEvent = 2
 };
 
-// Enum UMG.EUMG
-enum class EUMG : uint8 {
-	EUMG = 0,
-	EUMG = 1,
-	EUMG = 2,
-	EUMG = 3
+// Enum UMG.EUMGSequencePlayMode
+enum class EUMGSequencePlayMode : uint8 {
+	EUMGSequencePlayMode = 0
+	EUMGSequencePlayMode = 1
+	EUMGSequencePlayMode = 2
+	EUMGSequencePlayMode = 3
 };
 
 // Enum UMG.EWidgetTickFrequency
 enum class EWidgetTickFrequency : uint8 {
-	EWidgetTickFrequency = 0,
-	EWidgetTickFrequency = 1,
+	EWidgetTickFrequency = 0
+	EWidgetTickFrequency = 1
 	EWidgetTickFrequency = 2
 };
 
 // Enum UMG.EDragPivot
 enum class EDragPivot : uint8 {
-	EDragPivot = 0,
-	EDragPivot = 1,
-	EDragPivot = 2,
-	EDragPivot = 3,
-	EDragPivot = 4,
-	EDragPivot = 5,
-	EDragPivot = 6,
-	EDragPivot = 7,
-	EDragPivot = 8,
-	EDragPivot = 9,
+	EDragPivot = 0
+	EDragPivot = 1
+	EDragPivot = 2
+	EDragPivot = 3
+	EDragPivot = 4
+	EDragPivot = 5
+	EDragPivot = 6
+	EDragPivot = 7
+	EDragPivot = 8
+	EDragPivot = 9
 	EDragPivot = 10
 };
 
 // Enum UMG.EDynamicBoxType
 enum class EDynamicBoxType : uint8 {
-	EDynamicBoxType = 0,
-	EDynamicBoxType = 1,
-	EDynamicBoxType = 2,
-	EDynamicBoxType = 3,
+	EDynamicBoxType = 0
+	EDynamicBoxType = 1
+	EDynamicBoxType = 2
+	EDynamicBoxType = 3
 	EDynamicBoxType = 4
 };
 
 // Enum UMG.ESlateSizeRule
 enum class ESlateSizeRule : uint8 {
-	ESlateSizeRule = 0,
-	ESlateSizeRule = 1,
+	ESlateSizeRule = 0
+	ESlateSizeRule = 1
 	ESlateSizeRule = 2
 };
 
 // Enum UMG.EWidgetDesignFlags
 enum class EWidgetDesignFlags : uint8 {
-	EWidgetDesignFlags = 0,
-	EWidgetDesignFlags = 1,
-	EWidgetDesignFlags = 2,
-	EWidgetDesignFlags = 4,
+	EWidgetDesignFlags = 0
+	EWidgetDesignFlags = 1
+	EWidgetDesignFlags = 2
+	EWidgetDesignFlags = 4
 	EWidgetDesignFlags = 5
 };
 
 // Enum UMG.EBindingKind
 enum class EBindingKind : uint8 {
-	EBindingKind = 0,
-	EBindingKind = 1,
+	EBindingKind = 0
+	EBindingKind = 1
 	EBindingKind = 2
 };
 
 // Enum UMG.EWindowVisibility
 enum class EWindowVisibility : uint8 {
-	EWindowVisibility = 0,
-	EWindowVisibility = 1,
+	EWindowVisibility = 0
+	EWindowVisibility = 1
 	EWindowVisibility = 2
 };
 
 // Enum UMG.EWidgetGeometryMode
 enum class EWidgetGeometryMode : uint8 {
-	EWidgetGeometryMode = 0,
-	EWidgetGeometryMode = 1,
+	EWidgetGeometryMode = 0
+	EWidgetGeometryMode = 1
 	EWidgetGeometryMode = 2
 };
 
 // Enum UMG.EWidgetBlendMode
 enum class EWidgetBlendMode : uint8 {
-	EWidgetBlendMode = 0,
-	EWidgetBlendMode = 1,
-	EWidgetBlendMode = 2,
+	EWidgetBlendMode = 0
+	EWidgetBlendMode = 1
+	EWidgetBlendMode = 2
 	EWidgetBlendMode = 3
 };
 
 // Enum UMG.EWidgetTimingPolicy
 enum class EWidgetTimingPolicy : uint8 {
-	EWidgetTimingPolicy = 0,
-	EWidgetTimingPolicy = 1,
+	EWidgetTimingPolicy = 0
+	EWidgetTimingPolicy = 1
 	EWidgetTimingPolicy = 2
 };
 
 // Enum UMG.EWidgetSpace
 enum class EWidgetSpace : uint8 {
-	EWidgetSpace = 0,
-	EWidgetSpace = 1,
+	EWidgetSpace = 0
+	EWidgetSpace = 1
 	EWidgetSpace = 2
 };
 
 // Enum UMG.EWidgetInteractionSource
 enum class EWidgetInteractionSource : uint8 {
-	EWidgetInteractionSource = 0,
-	EWidgetInteractionSource = 1,
-	EWidgetInteractionSource = 2,
-	EWidgetInteractionSource = 3,
+	EWidgetInteractionSource = 0
+	EWidgetInteractionSource = 1
+	EWidgetInteractionSource = 2
+	EWidgetInteractionSource = 3
 	EWidgetInteractionSource = 4
 };
 
 // Class UMG.Widget
 struct UWidget : UVisual {
-	struct Unknown Slot; //  0x28 Size(8)
-	struct FDelegate bIsEnabledDelegate; //  0x30 Size(10)
-	struct FText ToolTipText; //  0x40 Size(18)
-	struct FDelegate ToolTipTextDelegate; //  0x58 Size(10)
-	struct Unknown ToolTipWidget; //  0x68 Size(8)
-	struct FDelegate ToolTipWidgetDelegate; //  0x70 Size(10)
-	struct FDelegate VisibilityDelegate; //  0x80 Size(10)
-	struct Unknown RenderTransform; //  0x90 Size(1c)
-	struct Unknown RenderTransformPivot; //  0xac Size(8)
-	char bIsVariable; //  0xb4 Size(1)
-	char bCreatedByConstructionScript; //  0xb4 Size(1)
-	char bIsEnabled; //  0xb4 Size(1)
-	char bOverride_Cursor; //  0xb4 Size(1)
-	struct Unknown AccessibleWidgetData; //  0xb8 Size(8)
-	char bIsVolatile; //  0xc0 Size(1)
-	char Cursor; //  0xc1 Size(1)
-	enum class Unknow Clipping; //  0xc2 Size(1)
-	enum class Unknow Visibility; //  0xc3 Size(1)
-	float RenderOpacity; //  0xc4 Size(4)
-	struct Unknown Navigation; //  0xc8 Size(8)
-	enum class Unknow Flow; //  0xd0 Size(1)
-	struct TArray<Unknown> NativeBindings; //  0xf8 Size(10)
+	struct Unknown Slot; // 0x28 (8)
+	struct FDelegate bIsEnabledDelegate; // 0x30 (16)
+	struct FText ToolTipText; // 0x40 (24)
+	struct FDelegate ToolTipTextDelegate; // 0x58 (16)
+	struct Unknown ToolTipWidget; // 0x68 (8)
+	struct FDelegate ToolTipWidgetDelegate; // 0x70 (16)
+	struct FDelegate VisibilityDelegate; // 0x80 (16)
+	struct Unknown RenderTransform; // 0x90 (28)
+	struct Unknown RenderTransformPivot; // 0xAC (8)
+	char bIsVariable : 0; // 0xB4 (1)
+	char bCreatedByConstructionScript : 0; // 0xB4 (1)
+	char bIsEnabled : 0; // 0xB4 (1)
+	char bOverride_Cursor : 0; // 0xB4 (1)
+	struct Unknown AccessibleWidgetData; // 0xB8 (8)
+	char bIsVolatile : 0; // 0xC0 (1)
+	char Cursor; // 0xC1 (1)
+	enum class Unknow Clipping; // 0xC2 (1)
+	enum class Unknow Visibility; // 0xC3 (1)
+	float RenderOpacity; // 0xC4 (4)
+	struct Unknown Navigation; // 0xC8 (8)
+	enum class Unknow FlowDirectionPreference; // 0xD0 (1)
+	struct TArray<Unknown> NativeBindings; // 0xF8 (16)
 
-	void SetVisibility(enum class Unknow InVisibility); // Function UMG.Widget.SetVisibility(Native|Public|BlueprintCallable) // <Game+0x338b6e0>
+	void SetVisibility(enum class Unknow InVisibility); // Function UMG.Widget.SetVisibility(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338B6E0>
+	void SetUserFocus(struct Unknown PlayerController); // Function UMG.Widget.SetUserFocus(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338B4C0>
+	void SetToolTipText(struct FText& InToolTipText); // Function UMG.Widget.SetToolTipText(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338B3F0>
+	void SetToolTip(struct Unknown Widget); // Function UMG.Widget.SetToolTip(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338B370>
+	void SetRenderTranslation(struct Unknown Translation); // Function UMG.Widget.SetRenderTranslation(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338B260>
+	void SetRenderTransformPivot(struct Unknown Pivot); // Function UMG.Widget.SetRenderTransformPivot(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338B1E0>
+	void SetRenderTransformAngle(float Angle); // Function UMG.Widget.SetRenderTransformAngle(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338B160>
+	void SetRenderTransform(struct Unknown InTransform); // Function UMG.Widget.SetRenderTransform(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338B080>
+	void SetRenderShear(struct Unknown Shear); // Function UMG.Widget.SetRenderShear(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338B000>
+	void SetRenderScale(struct Unknown Scale); // Function UMG.Widget.SetRenderScale(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338AF80>
+	void SetRenderOpacity(float InOpacity); // Function UMG.Widget.SetRenderOpacity(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338AF00>
+	void SetNavigationRuleExplicit(enum class Unknow Direction, struct Unknown InWidget); // Function UMG.Widget.SetNavigationRuleExplicit(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338ADB0>
+	void SetNavigationRuleCustomBoundary(enum class Unknow Direction, struct FDelegate InCustomDelegate); // Function UMG.Widget.SetNavigationRuleCustomBoundary(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338ACD0>
+	void SetNavigationRuleCustom(enum class Unknow Direction, struct FDelegate InCustomDelegate); // Function UMG.Widget.SetNavigationRuleCustom(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338ABF0>
+	void SetNavigationRuleBase(enum class Unknow Direction, enum class Unknow Rule); // Function UMG.Widget.SetNavigationRuleBase(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338AB30>
+	void SetNavigationRule(enum class Unknow Direction, enum class Unknow Rule, struct FName WidgetToFocus); // Function UMG.Widget.SetNavigationRule(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338AA20>
+	void SetKeyboardFocus(); // Function UMG.Widget.SetKeyboardFocus(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338AA00>
+	void SetIsEnabled(char bInIsEnabled); // Function UMG.Widget.SetIsEnabled(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338A970>
+	void SetFocus(); // Function UMG.Widget.SetFocus(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338A8D0>
+	void SetCursor(char InCursor); // Function UMG.Widget.SetCursor(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338A850>
+	void SetClipping(enum class Unknow InClipping); // Function UMG.Widget.SetClipping(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338A7D0>
+	void SetAllNavigationRules(enum class Unknow Rule, struct FName WidgetToFocus); // Function UMG.Widget.SetAllNavigationRules(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338A710>
+	void ResetCursor(); // Function UMG.Widget.ResetCursor(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338A6F0>
+	void RemoveFromParent(); // Function UMG.Widget.RemoveFromParent(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338A6D0>
+	struct Unknown OnReply__DelegateSignature(); // DelegateFunction UMG.Widget.OnReply__DelegateSignature(Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	struct Unknown OnPointerEvent__DelegateSignature(struct Unknown MyGeometry, struct Unknown& MouseEvent); // DelegateFunction UMG.Widget.OnPointerEvent__DelegateSignature(Public|Delegate|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	char IsVisible(); // Function UMG.Widget.IsVisible(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338A6A0>
+	char IsHovered(); // Function UMG.Widget.IsHovered(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EE1B50>
+	void InvalidateLayoutAndVolatility(); // Function UMG.Widget.InvalidateLayoutAndVolatility(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338A680>
+	char HasUserFocusedDescendants(struct Unknown PlayerController); // Function UMG.Widget.HasUserFocusedDescendants(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338A5F0>
+	char HasUserFocus(struct Unknown PlayerController); // Function UMG.Widget.HasUserFocus(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338A560>
+	char HasMouseCaptureByUser(int32_t UserIndex, int32_t PointerIndex); // Function UMG.Widget.HasMouseCaptureByUser(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338A4A0>
+	char HasMouseCapture(); // Function UMG.Widget.HasMouseCapture(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338A470>
+	char HasKeyboardFocus(); // Function UMG.Widget.HasKeyboardFocus(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338A440>
+	char HasFocusedDescendants(); // Function UMG.Widget.HasFocusedDescendants(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338A410>
+	char HasAnyUserFocus(); // Function UMG.Widget.HasAnyUserFocus(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338A3E0>
+	struct Unknown GetWidget__DelegateSignature(); // DelegateFunction UMG.Widget.GetWidget__DelegateSignature(Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	enum class Unknow GetVisibility(); // Function UMG.Widget.GetVisibility(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338A3B0>
+	struct Unknown GetTickSpaceGeometry(); // Function UMG.Widget.GetTickSpaceGeometry(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338A290>
+	struct FText GetText__DelegateSignature(); // DelegateFunction UMG.Widget.GetText__DelegateSignature(Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	enum class Unknow GetSlateVisibility__DelegateSignature(); // DelegateFunction UMG.Widget.GetSlateVisibility__DelegateSignature(Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	struct Unknown GetSlateColor__DelegateSignature(); // DelegateFunction UMG.Widget.GetSlateColor__DelegateSignature(Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	struct Unknown GetSlateBrush__DelegateSignature(); // DelegateFunction UMG.Widget.GetSlateBrush__DelegateSignature(Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	float GetRenderTransformAngle(); // Function UMG.Widget.GetRenderTransformAngle(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338A260>
+	float GetRenderOpacity(); // Function UMG.Widget.GetRenderOpacity(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338A230>
+	struct Unknown GetParent(); // Function UMG.Widget.GetParent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338A200>
+	struct Unknown GetPaintSpaceGeometry(); // Function UMG.Widget.GetPaintSpaceGeometry(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338A1C0>
+	struct Unknown GetOwningPlayer(); // Function UMG.Widget.GetOwningPlayer(BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338A190>
+	struct Unknown GetOwningLocalPlayer(); // Function UMG.Widget.GetOwningLocalPlayer(BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338A160>
+	char GetMouseCursor__DelegateSignature(); // DelegateFunction UMG.Widget.GetMouseCursor__DelegateSignature(Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	struct Unknown GetLinearColor__DelegateSignature(); // DelegateFunction UMG.Widget.GetLinearColor__DelegateSignature(Public|Delegate|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	char GetIsEnabled(); // Function UMG.Widget.GetIsEnabled(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338A130>
+	int32_t GetInt32__DelegateSignature(); // DelegateFunction UMG.Widget.GetInt32__DelegateSignature(Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	struct Unknown GetGameInstance(); // Function UMG.Widget.GetGameInstance(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338A100>
+	float GetFloat__DelegateSignature(); // DelegateFunction UMG.Widget.GetFloat__DelegateSignature(Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	struct Unknown GetDesiredSize(); // Function UMG.Widget.GetDesiredSize(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338A0C0>
+	enum class Unknow GetClipping(); // Function UMG.Widget.GetClipping(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338A090>
+	enum class Unknow GetCheckBoxState__DelegateSignature(); // DelegateFunction UMG.Widget.GetCheckBoxState__DelegateSignature(Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	struct Unknown GetCachedGeometry(); // Function UMG.Widget.GetCachedGeometry(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338A050>
+	char GetBool__DelegateSignature(); // DelegateFunction UMG.Widget.GetBool__DelegateSignature(Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	struct Unknown GenerateWidgetForString__DelegateSignature(struct FString Item); // DelegateFunction UMG.Widget.GenerateWidgetForString__DelegateSignature(Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	struct Unknown GenerateWidgetForObject__DelegateSignature(struct Unknown Item); // DelegateFunction UMG.Widget.GenerateWidgetForObject__DelegateSignature(Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void ForceVolatile(char bForce); // Function UMG.Widget.ForceVolatile(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3389FC0>
+	void ForceLayoutPrepass(); // Function UMG.Widget.ForceLayoutPrepass(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3389FA0>
 };
 
 // Class UMG.UserWidget
 struct UUserWidget : UWidget {
-	struct Unknown ColorAndOpacity; //  0x110 Size(10)
-	struct FDelegate ColorAndOpacityDelegate; //  0x120 Size(10)
-	struct Unknown ForegroundColor; //  0x130 Size(28)
-	struct FDelegate ForegroundColorDelegate; //  0x158 Size(10)
-	struct Unknown Padding; //  0x168 Size(10)
-	struct TArray<Unknown> ActiveSequencePlayers; //  0x178 Size(10)
-	struct TArray<Unknown> StoppedSequencePlayers; //  0x188 Size(10)
-	char NoPixelSnapping; //  0x198 Size(1)
-	struct FDelegate NoPixelSnappingDelegate; //  0x19c Size(10)
-	struct TArray<Unknown> NamedSlotBindings; //  0x1b0 Size(10)
-	struct Unknown WidgetTree; //  0x1c0 Size(8)
-	int32_t Priority; //  0x1c8 Size(4)
-	char bSupportsKeyboardFocus; //  0x1cc Size(1)
-	char bIsFocusable; //  0x1cc Size(1)
-	char bStopAction; //  0x1cc Size(1)
-	char bHasScriptImplementedTick; //  0x1cc Size(1)
-	char bHasScriptImplementedPaint; //  0x1cc Size(1)
-	char bCookedWidgetTree; //  0x1cc Size(1)
-	enum class Unknow TickFrequency; //  0x1d8 Size(1)
-	struct Unknown InputComponent; //  0x1e0 Size(8)
-	struct TArray<Unknown> AnimationCallbacks; //  0x1e8 Size(10)
+	struct Unknown ColorAndOpacity; // 0x110 (16)
+	struct FDelegate ColorAndOpacityDelegate; // 0x120 (16)
+	struct Unknown ForegroundColor; // 0x130 (40)
+	struct FDelegate ForegroundColorDelegate; // 0x158 (16)
+	struct Unknown Padding; // 0x168 (16)
+	struct TArray<Unknown> ActiveSequencePlayers; // 0x178 (16)
+	struct TArray<Unknown> StoppedSequencePlayers; // 0x188 (16)
+	char NoPixelSnapping : 0; // 0x198 (1)
+	struct FDelegate NoPixelSnappingDelegate; // 0x19C (16)
+	struct TArray<Unknown> NamedSlotBindings; // 0x1B0 (16)
+	struct Unknown WidgetTree; // 0x1C0 (8)
+	int32_t Priority; // 0x1C8 (4)
+	char bSupportsKeyboardFocus : 0; // 0x1CC (1)
+	char bIsFocusable : 0; // 0x1CC (1)
+	char bStopAction : 0; // 0x1CC (1)
+	char bHasScriptImplementedTick : 0; // 0x1CC (1)
+	char bHasScriptImplementedPaint : 0; // 0x1CC (1)
+	char bCookedWidgetTree : 0; // 0x1CC (1)
+	enum class Unknow TickFrequency; // 0x1D8 (1)
+	struct Unknown InputComponent; // 0x1E0 (8)
+	struct TArray<Unknown> AnimationCallbacks; // 0x1E8 (16)
 
-	void UnregisterInputComponent(); // Function UMG.UserWidget.UnregisterInputComponent(Final|Native|Protected|BlueprintCallable) // <Game+0x33883f0>
+	void UnregisterInputComponent(); // Function UMG.UserWidget.UnregisterInputComponent(Final|Native|Protected|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33883F0>
+	void UnbindFromAnimationStarted(struct Unknown Animation, struct FDelegate Delegate); // Function UMG.UserWidget.UnbindFromAnimationStarted(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3388310>
+	void UnbindFromAnimationFinished(struct Unknown Animation, struct FDelegate Delegate); // Function UMG.UserWidget.UnbindFromAnimationFinished(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3388230>
+	void UnbindAllFromAnimationStarted(struct Unknown Animation); // Function UMG.UserWidget.UnbindAllFromAnimationStarted(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33881B0>
+	void UnbindAllFromAnimationFinished(struct Unknown Animation); // Function UMG.UserWidget.UnbindAllFromAnimationFinished(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3388130>
+	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UMG.UserWidget.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void StopListeningForInputAction(struct FName ActionName, char EventType); // Function UMG.UserWidget.StopListeningForInputAction(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3388070>
+	void StopListeningForAllInputActions(); // Function UMG.UserWidget.StopListeningForAllInputActions(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3388050>
+	void StopAnimationsAndLatentActions(); // Function UMG.UserWidget.StopAnimationsAndLatentActions(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3388030>
+	void StopAnimation(struct Unknown InAnimation); // Function UMG.UserWidget.StopAnimation(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3387FB0>
+	void StopAllAnimations(); // Function UMG.UserWidget.StopAllAnimations(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3387F90>
+	void SetPositionInViewport(struct Unknown Position, char b); // Function UMG.UserWidget.SetPositionInViewport(Final|BlueprintCosmetic|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33878B0>
+	void SetPlaybackSpeed(struct Unknown InAnimation, float PlaybackSpeed); // Function UMG.UserWidget.SetPlaybackSpeed(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33877E0>
+	void SetPadding(struct Unknown InPadding); // Function UMG.UserWidget.SetPadding(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3387750>
+	void SetOwningPlayer(struct Unknown LocalPlayerController); // Function UMG.UserWidget.SetOwningPlayer(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33876D0>
+	void SetNumLoopsToPlay(struct Unknown InAnimation, int32_t NumLoopsToPlay); // Function UMG.UserWidget.SetNumLoopsToPlay(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3387510>
+	void SetNoPixelSnapping(char InNoSnapping); // Function UMG.UserWidget.SetNoPixelSnapping(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3387480>
+	void SetInputActionPriority(int32_t NewPriority); // Function UMG.UserWidget.SetInputActionPriority(Final|Native|Protected|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3387130>
+	void SetInputActionBlocking(char bShouldBlock); // Function UMG.UserWidget.SetInputActionBlocking(Final|Native|Protected|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33870A0>
+	void SetForegroundColor(struct Unknown InForegroundColor); // Function UMG.UserWidget.SetForegroundColor(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3386F30>
+	void SetDesiredSizeInViewport(struct Unknown Size); // Function UMG.UserWidget.SetDesiredSizeInViewport(Final|BlueprintCosmetic|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3386CA0>
+	void SetColorAndOpacity(struct Unknown InColorAndOpacity); // Function UMG.UserWidget.SetColorAndOpacity(Final|BlueprintCosmetic|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3386BA0>
+	void SetAnchorsInViewport(struct Unknown Anchors); // Function UMG.UserWidget.SetAnchorsInViewport(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33867E0>
+	void SetAlignmentInViewport(struct Unknown Alignment); // Function UMG.UserWidget.SetAlignmentInViewport(Final|BlueprintCosmetic|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3386760>
+	void ReverseAnimation(struct Unknown InAnimation); // Function UMG.UserWidget.ReverseAnimation(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33866E0>
+	void RemoveFromViewport(); // Function UMG.UserWidget.RemoveFromViewport(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2048530>
+	void RegisterInputComponent(); // Function UMG.UserWidget.RegisterInputComponent(Final|Native|Protected|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33866C0>
+	void PreConstruct(char IsDesignTime); // Function UMG.UserWidget.PreConstruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void PlaySound(struct Unknown SoundToPlay); // Function UMG.UserWidget.PlaySound(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3386640>
+	struct Unknown PlayAnimationTimeRange(struct Unknown InAnimation, float StartAtTime, float EndAtTime, int32_t NumLoopsToPlay, char PlayMode, float PlaybackSpeed, char b); // Function UMG.UserWidget.PlayAnimationTimeRange(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3386450>
+	struct Unknown PlayAnimationReverse(struct Unknown InAnimation, float PlaybackSpeed, char b); // Function UMG.UserWidget.PlayAnimationReverse(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3386340>
+	struct Unknown PlayAnimationForward(struct Unknown InAnimation, float PlaybackSpeed, char b); // Function UMG.UserWidget.PlayAnimationForward(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3386230>
+	struct Unknown PlayAnimation(struct Unknown InAnimation, float StartAtTime, int32_t NumLoopsToPlay, char PlayMode, float PlaybackSpeed, char b); // Function UMG.UserWidget.PlayAnimation(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3386070>
+	float PauseAnimation(struct Unknown InAnimation); // Function UMG.UserWidget.PauseAnimation(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3385FD0>
+	struct Unknown OnTouchStarted(struct Unknown MyGeometry, struct Unknown& InTouchEvent); // Function UMG.UserWidget.OnTouchStarted(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	struct Unknown OnTouchMoved(struct Unknown MyGeometry, struct Unknown& InTouchEvent); // Function UMG.UserWidget.OnTouchMoved(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	struct Unknown OnTouchGesture(struct Unknown MyGeometry, struct Unknown& GestureEvent); // Function UMG.UserWidget.OnTouchGesture(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	struct Unknown OnTouchForceChanged(struct Unknown MyGeometry, struct Unknown& InTouchEvent); // Function UMG.UserWidget.OnTouchForceChanged(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	struct Unknown OnTouchEnded(struct Unknown MyGeometry, struct Unknown& InTouchEvent); // Function UMG.UserWidget.OnTouchEnded(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void OnRemovedFromFocusPath(struct Unknown InFocusEvent); // Function UMG.UserWidget.OnRemovedFromFocusPath(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	struct Unknown OnPreviewMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UMG.UserWidget.OnPreviewMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	struct Unknown OnPreviewKeyDown(struct Unknown MyGeometry, struct Unknown InKeyEvent); // Function UMG.UserWidget.OnPreviewKeyDown(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void OnPaint(struct Unknown& Context); // Function UMG.UserWidget.OnPaint(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	struct Unknown OnMouseWheel(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UMG.UserWidget.OnMouseWheel(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	struct Unknown OnMouseMove(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UMG.UserWidget.OnMouseMove(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void OnMouseLeave(struct Unknown& MouseEvent); // Function UMG.UserWidget.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UMG.UserWidget.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void OnMouseCaptureLost(); // Function UMG.UserWidget.OnMouseCaptureLost(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	struct Unknown OnMouseButtonUp(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UMG.UserWidget.OnMouseButtonUp(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	struct Unknown OnMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UMG.UserWidget.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	struct Unknown OnMouseButtonDoubleClick(struct Unknown InMyGeometry, struct Unknown& InMouseEvent); // Function UMG.UserWidget.OnMouseButtonDoubleClick(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	struct Unknown OnMotionDetected(struct Unknown MyGeometry, struct Unknown InMotionEvent); // Function UMG.UserWidget.OnMotionDetected(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	struct Unknown OnKeyUp(struct Unknown MyGeometry, struct Unknown InKeyEvent); // Function UMG.UserWidget.OnKeyUp(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	struct Unknown OnKeyDown(struct Unknown MyGeometry, struct Unknown InKeyEvent); // Function UMG.UserWidget.OnKeyDown(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	struct Unknown OnKeyChar(struct Unknown MyGeometry, struct Unknown InCharacterEvent); // Function UMG.UserWidget.OnKeyChar(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void OnInitialized(); // Function UMG.UserWidget.OnInitialized(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	struct Unknown OnFocusReceived(struct Unknown MyGeometry, struct Unknown InFocusEvent); // Function UMG.UserWidget.OnFocusReceived(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void OnFocusLost(struct Unknown InFocusEvent); // Function UMG.UserWidget.OnFocusLost(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	char OnDrop(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation); // Function UMG.UserWidget.OnDrop(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	char OnDragOver(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation); // Function UMG.UserWidget.OnDragOver(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void OnDragLeave(struct Unknown PointerEvent, struct Unknown Operation); // Function UMG.UserWidget.OnDragLeave(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void OnDragEnter(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation); // Function UMG.UserWidget.OnDragEnter(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void OnDragDetected(struct Unknown MyGeometry, struct Unknown& PointerEvent, struct Unknown& Operation); // Function UMG.UserWidget.OnDragDetected(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void OnDragCancelled(struct Unknown& PointerEvent, struct Unknown Operation); // Function UMG.UserWidget.OnDragCancelled(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void OnAnimationStarted(struct Unknown Animation); // Function UMG.UserWidget.OnAnimationStarted(BlueprintCosmetic|Native|Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3385F40>
+	void OnAnimationFinished(struct Unknown Animation); // Function UMG.UserWidget.OnAnimationFinished(BlueprintCosmetic|Native|Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3385EB0>
+	struct Unknown OnAnalogValueChanged(struct Unknown MyGeometry, struct Unknown InAnalogInputEvent); // Function UMG.UserWidget.OnAnalogValueChanged(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void OnAddedToFocusPath(struct Unknown InFocusEvent); // Function UMG.UserWidget.OnAddedToFocusPath(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void ListenForInputAction(struct FName ActionName, char EventType, char bConsume, struct FDelegate Callback); // Function UMG.UserWidget.ListenForInputAction(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3385D30>
+	char IsPlayingAnimation(); // Function UMG.UserWidget.IsPlayingAnimation(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3385D00>
+	char IsListeningForInputAction(struct FName ActionName); // Function UMG.UserWidget.IsListeningForInputAction(Final|Native|Protected|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3385C70>
+	char IsInViewport(); // Function UMG.UserWidget.IsInViewport(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33858E0>
+	char IsInteractable(); // Function UMG.UserWidget.IsInteractable(BlueprintCosmetic|Event|Public|BlueprintEvent|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	char IsAnyAnimationPlaying(); // Function UMG.UserWidget.IsAnyAnimationPlaying(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3385C40>
+	char IsAnimationPlayingForward(struct Unknown InAnimation); // Function UMG.UserWidget.IsAnimationPlayingForward(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3385BB0>
+	char IsAnimationPlaying(struct Unknown InAnimation); // Function UMG.UserWidget.IsAnimationPlaying(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3385B20>
+	struct Unknown GetOwningPlayerPawn(); // Function UMG.UserWidget.GetOwningPlayerPawn(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3385910>
+	char GetIsVisible(); // Function UMG.UserWidget.GetIsVisible(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33858E0>
+	float GetAnimationCurrentTime(struct Unknown InAnimation); // Function UMG.UserWidget.GetAnimationCurrentTime(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33857E0>
+	struct Unknown GetAnchorsInViewport(); // Function UMG.UserWidget.GetAnchorsInViewport(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33857A0>
+	struct Unknown GetAlignmentInViewport(); // Function UMG.UserWidget.GetAlignmentInViewport(Final|BlueprintCosmetic|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3385760>
+	void Destruct(); // Function UMG.UserWidget.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void Construct(); // Function UMG.UserWidget.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void CancelLatentActions(); // Function UMG.UserWidget.CancelLatentActions(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3385700>
+	void BindToAnimationStarted(struct Unknown Animation, struct FDelegate Delegate); // Function UMG.UserWidget.BindToAnimationStarted(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3385620>
+	void BindToAnimationFinished(struct Unknown Animation, struct FDelegate Delegate); // Function UMG.UserWidget.BindToAnimationFinished(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3385540>
+	void BindToAnimationEvent(struct Unknown Animation, struct FDelegate Delegate, enum class Unknow AnimationEvent, struct FName UserTag); // Function UMG.UserWidget.BindToAnimationEvent(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33853D0>
+	void AddToViewport(int32_t ZOrder); // Function UMG.UserWidget.AddToViewport(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3385350>
+	char AddToPlayerScreen(int32_t ZOrder); // Function UMG.UserWidget.AddToPlayerScreen(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33852C0>
 };
 
 // Class UMG.PanelWidget
 struct UPanelWidget : UWidget {
-	struct TArray<Unknown> Slots; //  0x108 Size(10)
+	struct TArray<Unknown> Slots; // 0x108 (16)
 
-	char RemoveChildAt(int32_t Index); // Function UMG.PanelWidget.RemoveChildAt(Final|Native|Public|BlueprintCallable) // <Game+0x3375dd0>
+	char RemoveChildAt(int32_t Index); // Function UMG.PanelWidget.RemoveChildAt(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3375DD0>
+	char RemoveChild(struct Unknown Content); // Function UMG.PanelWidget.RemoveChild(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3375D40>
+	char HasChild(struct Unknown Content); // Function UMG.PanelWidget.HasChild(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3375BA0>
+	char HasAnyChildren(); // Function UMG.PanelWidget.HasAnyChildren(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3375B70>
+	int32_t GetChildrenCount(); // Function UMG.PanelWidget.GetChildrenCount(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33757C0>
+	int32_t GetChildIndex(struct Unknown Content); // Function UMG.PanelWidget.GetChildIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3375730>
+	struct Unknown GetChildAt(int32_t Index); // Function UMG.PanelWidget.GetChildAt(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33756A0>
+	struct TArray<Unknown> GetAllChildren(); // Function UMG.PanelWidget.GetAllChildren(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3375620>
+	void ClearChildren(); // Function UMG.PanelWidget.ClearChildren(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EA7970>
+	struct Unknown AddChild(struct Unknown Content); // Function UMG.PanelWidget.AddChild(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3375450>
 };
 
 // Class UMG.Border
 struct UBorder : UContentWidget {
-	char HorizontalAlignment; //  0x120 Size(1)
-	char VerticalAlignment; //  0x121 Size(1)
-	char bShowEffectWhenDisabled; //  0x122 Size(1)
-	struct Unknown ContentColorAndOpacity; //  0x124 Size(10)
-	struct FDelegate ContentColorAndOpacityDelegate; //  0x134 Size(10)
-	struct Unknown Padding; //  0x144 Size(10)
-	struct Unknown Background; //  0x158 Size(88)
-	struct FDelegate BackgroundDelegate; //  0x1e0 Size(10)
-	struct Unknown BrushColor; //  0x1f0 Size(10)
-	struct FDelegate BrushColorDelegate; //  0x200 Size(10)
-	struct Unknown DesiredSizeScale; //  0x210 Size(8)
-	char bFlipForRightToLeftFlowDirection; //  0x218 Size(1)
-	struct FDelegate OnMouseButtonDownEv; //  0x21c Size(10)
-	struct FDelegate OnMouseButtonUpEvent; //  0x22c Size(10)
-	struct FDelegate OnMouseMoveEvent; //  0x23c Size(10)
-	struct FDelegate OnMouseDoubleClickEvent; //  0x24c Size(10)
+	char HorizontalAlignment; // 0x120 (1)
+	char VerticalAlignment; // 0x121 (1)
+	char bShowEffectWhenDisabled : 0; // 0x122 (1)
+	struct Unknown ContentColorAndOpacity; // 0x124 (16)
+	struct FDelegate ContentColorAndOpacityDelegate; // 0x134 (16)
+	struct Unknown Padding; // 0x144 (16)
+	struct Unknown Background; // 0x158 (136)
+	struct FDelegate BackgroundDelegate; // 0x1E0 (16)
+	struct Unknown BrushColor; // 0x1F0 (16)
+	struct FDelegate BrushColorDelegate; // 0x200 (16)
+	struct Unknown DesiredSizeScale; // 0x210 (8)
+	char bFlipForRightToLeftFlowDirection : 0; // 0x218 (1)
+	struct FDelegate OnMouseButtonDownEv; // 0x21C (16)
+	struct FDelegate OnMouseButtonUpEvent; // 0x22C (16)
+	struct FDelegate OnMouseMoveEvent; // 0x23C (16)
+	struct FDelegate OnMouseDoubleClickEvent; // 0x24C (16)
 
-	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.Border.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game+0x3369260>
+	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.Border.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3369260>
+	void SetPadding(struct Unknown InPadding); // Function UMG.Border.SetPadding(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3368CD0>
+	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.Border.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33685F0>
+	void SetDesiredSizeScale(struct Unknown InScale); // Function UMG.Border.SetDesiredSizeScale(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3368470>
+	void SetContentColorAndOpacity(struct Unknown InContentColorAndOpacity); // Function UMG.Border.SetContentColorAndOpacity(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33683F0>
+	void SetBrushFromTexture(struct Unknown Texture); // Function UMG.Border.SetBrushFromTexture(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33681F0>
+	void SetBrushFromMaterial(struct Unknown Material); // Function UMG.Border.SetBrushFromMaterial(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33681F0>
+	void SetBrushFromAsset(struct Unknown Asset); // Function UMG.Border.SetBrushFromAsset(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3368170>
+	void SetBrushColor(struct Unknown InBrushColor); // Function UMG.Border.SetBrushColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33680F0>
+	void SetBrush(struct Unknown& InBrush); // Function UMG.Border.SetBrush(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3367F70>
+	struct Unknown GetDynamicMaterial(); // Function UMG.Border.GetDynamicMaterial(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33678E0>
 };
 
 // Class UMG.AsyncTaskDownloadImage
 struct UAsyncTaskDownloadImage : UBlueprintAsyncActionBase {
-	struct FMulticastInlineDelegate OnSuccess; //  0x30 Size(10)
-	struct FMulticastInlineDelegate OnFail; //  0x40 Size(10)
+	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
+	struct FMulticastInlineDelegate OnFail; // 0x40 (16)
 
-	struct Unknown DownloadImage(struct FString URL); // Function UMG.AsyncTaskDownloadImage.DownloadImage(Final|Native|Static|Public|BlueprintCallable) // <Game+0x3367710>
+	struct Unknown DownloadImage(struct FString U); // Function UMG.AsyncTaskDownloadImage.DownloadImage(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3367710>
 };
 
 // Class UMG.BackgroundBlur
 struct UBackgroundBlur : UContentWidget {
-	struct Unknown Padding; //  0x120 Size(10)
-	char HorizontalAlignment; //  0x130 Size(1)
-	char VerticalAlignment; //  0x131 Size(1)
-	char bApplyAlphaToBlur; //  0x132 Size(1)
-	float BlurStrength; //  0x134 Size(4)
-	char bOverrideAutoRadiusCalculation; //  0x138 Size(1)
-	int32_t BlurRadius; //  0x13c Size(4)
-	struct Unknown LowQualityFallbackBrush; //  0x140 Size(88)
+	struct Unknown Padding; // 0x120 (16)
+	char HorizontalAlignment; // 0x130 (1)
+	char VerticalAlignment; // 0x131 (1)
+	char bApplyAlphaToBlur : 0; // 0x132 (1)
+	float BlurStrength; // 0x134 (4)
+	char bOverrideAutoRadiusCalculation : 0; // 0x138 (1)
+	int32_t BlurRadius; // 0x13C (4)
+	struct Unknown LowQualityFallbackBrush; // 0x140 (136)
 
-	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.BackgroundBlur.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game+0x3369160>
+	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.BackgroundBlur.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3369160>
+	void SetPadding(struct Unknown InPadding); // Function UMG.BackgroundBlur.SetPadding(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3368BB0>
+	void SetLowQualityFallbackBrush(struct Unknown& InBrush); // Function UMG.BackgroundBlur.SetLowQualityFallbackBrush(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33688A0>
+	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.BackgroundBlur.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33684F0>
+	void SetBlurStrength(float InStrength); // Function UMG.BackgroundBlur.SetBlurStrength(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3367EF0>
+	void SetBlurRadius(int32_t InBlurRadius); // Function UMG.BackgroundBlur.SetBlurRadius(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3367E70>
+	void SetApplyAlphaToBlur(char bInApplyAlphaToBlur); // Function UMG.BackgroundBlur.SetApplyAlphaToBlur(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3367CD0>
 };
 
 // Class UMG.PanelSlot
 struct UPanelSlot : UVisual {
-	struct Unknown Parent; //  0x28 Size(8)
-	struct Unknown Content; //  0x30 Size(8)
+	struct Unknown Parent; // 0x28 (8)
+	struct Unknown Content; // 0x30 (8)
 };
 
 // Class UMG.BackgroundBlurSlot
 struct UBackgroundBlurSlot : UPanelSlot {
-	struct Unknown Padding; //  0x38 Size(10)
-	char HorizontalAlignment; //  0x48 Size(1)
-	char VerticalAlignment; //  0x49 Size(1)
+	struct Unknown Padding; // 0x38 (16)
+	char HorizontalAlignment; // 0x48 (1)
+	char VerticalAlignment; // 0x49 (1)
 
-	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.BackgroundBlurSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game+0x33691e0>
+	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.BackgroundBlurSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33691E0>
+	void SetPadding(struct Unknown InPadding); // Function UMG.BackgroundBlurSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3368C40>
+	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.BackgroundBlurSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3368570>
 };
 
 // Class UMG.PropertyBinding
 struct UPropertyBinding : Object {
-	struct TWeakObjectPtr<struct Unknown> SourceObject; //  0x28 Size(8)
-	struct Unknown SourcePath; //  0x30 Size(28)
-	struct FName DestinationProperty; //  0x58 Size(8)
+	struct TWeakObjectPtr<struct Unknown> SourceObject; // 0x28 (8)
+	struct Unknown SourcePath; // 0x30 (40)
+	struct FName DestinationProperty; // 0x58 (8)
 };
 
 // Class UMG.BorderSlot
 struct UBorderSlot : UPanelSlot {
-	struct Unknown Padding; //  0x38 Size(10)
-	char HorizontalAlignment; //  0x48 Size(1)
-	char VerticalAlignment; //  0x49 Size(1)
+	struct Unknown Padding; // 0x38 (16)
+	char HorizontalAlignment; // 0x48 (1)
+	char VerticalAlignment; // 0x49 (1)
 
-	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.BorderSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game+0x33692e0>
+	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.BorderSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33692E0>
+	void SetPadding(struct Unknown InPadding); // Function UMG.BorderSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3368D60>
+	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.BorderSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3368670>
 };
 
 // Class UMG.Button
 struct UButton : UContentWidget {
-	struct Unknown Style; //  0x160 Size(8)
-	struct Unknown WidgetStyle; //  0x168 Size(278)
-	struct Unknown ColorAndOpacity; //  0x3e0 Size(10)
-	struct Unknown BackgroundColor; //  0x3f0 Size(10)
-	char ClickMethod; //  0x400 Size(1)
-	char TouchMethod; //  0x401 Size(1)
-	char PressMethod; //  0x402 Size(1)
-	char IsFocusable; //  0x403 Size(1)
-	struct FMulticastInlineDelegate OnClicked; //  0x408 Size(10)
-	struct FMulticastInlineDelegate OnPressed; //  0x418 Size(10)
-	struct FMulticastInlineDelegate OnReleased; //  0x428 Size(10)
-	struct FMulticastInlineDelegate OnHovered; //  0x438 Size(10)
-	struct FMulticastInlineDelegate OnUnhovered; //  0x448 Size(10)
+	struct Unknown Style; // 0x160 (8)
+	struct Unknown WidgetStyle; // 0x168 (632)
+	struct Unknown ColorAndOpacity; // 0x3E0 (16)
+	struct Unknown BackgroundColor; // 0x3F0 (16)
+	char ClickMethod; // 0x400 (1)
+	char TouchMethod; // 0x401 (1)
+	char PressMethod; // 0x402 (1)
+	char IsFocusable : 0; // 0x403 (1)
+	struct FMulticastInlineDelegate OnClicked; // 0x408 (16)
+	struct FMulticastInlineDelegate OnPressed; // 0x418 (16)
+	struct FMulticastInlineDelegate OnReleased; // 0x428 (16)
+	struct FMulticastInlineDelegate OnHovered; // 0x438 (16)
+	struct FMulticastInlineDelegate OnUnhovered; // 0x448 (16)
 
-	void SetTouchMethod(char InTouchMethod); // Function UMG.Button.SetTouchMethod(Final|Native|Public|BlueprintCallable) // <Game+0x33690e0>
+	void SetTouchMethod(char InTouchMethod); // Function UMG.Button.SetTouchMethod(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33690E0>
+	void SetStyle(struct Unknown& InStyle); // Function UMG.Button.SetStyle(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3369000>
+	void SetPressMethod(char InPressMethod); // Function UMG.Button.SetPressMethod(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3368F00>
+	void SetColorAndOpacity(struct Unknown InColorAndOpacity); // Function UMG.Button.SetColorAndOpacity(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3368370>
+	void SetClickMethod(char InClickMethod); // Function UMG.Button.SetClickMethod(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33682F0>
+	void SetBackgroundColor(struct Unknown InBackgroundColor); // Function UMG.Button.SetBackgroundColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3367DF0>
+	char IsPressed(); // Function UMG.Button.IsPressed(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3367B60>
 };
 
 // Class UMG.ButtonSlot
 struct UButtonSlot : UPanelSlot {
-	struct Unknown Padding; //  0x38 Size(10)
-	char HorizontalAlignment; //  0x48 Size(1)
-	char VerticalAlignment; //  0x49 Size(1)
+	struct Unknown Padding; // 0x38 (16)
+	char HorizontalAlignment; // 0x48 (1)
+	char VerticalAlignment; // 0x49 (1)
 
-	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.ButtonSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game+0x3369360>
+	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.ButtonSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3369360>
+	void SetPadding(struct Unknown InPadding); // Function UMG.ButtonSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3368DF0>
+	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.ButtonSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33686F0>
 };
 
 // Class UMG.CanvasPanelSlot
 struct UCanvasPanelSlot : UPanelSlot {
-	struct Unknown LayoutData; //  0x38 Size(28)
-	char bAutoSize; //  0x60 Size(1)
-	int32_t ZOrder; //  0x64 Size(4)
+	struct Unknown LayoutData; // 0x38 (40)
+	char bAutoSize : 0; // 0x60 (1)
+	int32_t ZOrder; // 0x64 (4)
 
-	void SetZOrder(int32_t InZOrder); // Function UMG.CanvasPanelSlot.SetZOrder(Final|Native|Public|BlueprintCallable) // <Game+0x33693e0>
+	void SetZOrder(int32_t InZOrder); // Function UMG.CanvasPanelSlot.SetZOrder(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33693E0>
+	void SetSize(struct Unknown InSize); // Function UMG.CanvasPanelSlot.SetSize(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3368F80>
+	void SetPosition(struct Unknown InPosition); // Function UMG.CanvasPanelSlot.SetPosition(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3368E80>
+	void SetOffsets(struct Unknown InOffset); // Function UMG.CanvasPanelSlot.SetOffsets(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3368B20>
+	void SetMinimum(struct Unknown InMinimumAnchors); // Function UMG.CanvasPanelSlot.SetMinimum(Final|Native|Public|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3368AA0>
+	void SetMaximum(struct Unknown InMaximumAnchors); // Function UMG.CanvasPanelSlot.SetMaximum(Final|Native|Public|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3368A20>
+	void SetLayout(struct Unknown& InLayoutData); // Function UMG.CanvasPanelSlot.SetLayout(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3368800>
+	void SetAutoSize(char InbAutoSize); // Function UMG.CanvasPanelSlot.SetAutoSize(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3367D60>
+	void SetAnchors(struct Unknown InAnchors); // Function UMG.CanvasPanelSlot.SetAnchors(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3367C40>
+	void SetAlignment(struct Unknown InAlignment); // Function UMG.CanvasPanelSlot.SetAlignment(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3367BC0>
+	int32_t GetZOrder(); // Function UMG.CanvasPanelSlot.GetZOrder(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3367B00>
+	struct Unknown GetSize(); // Function UMG.CanvasPanelSlot.GetSize(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33679E0>
+	struct Unknown GetPosition(); // Function UMG.CanvasPanelSlot.GetPosition(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33679A0>
+	struct Unknown GetOffsets(); // Function UMG.CanvasPanelSlot.GetOffsets(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3367960>
+	struct Unknown GetLayout(); // Function UMG.CanvasPanelSlot.GetLayout(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3367910>
+	char GetAutoSize(); // Function UMG.CanvasPanelSlot.GetAutoSize(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3367880>
+	struct Unknown GetAnchors(); // Function UMG.CanvasPanelSlot.GetAnchors(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3367840>
+	struct Unknown GetAlignment(); // Function UMG.CanvasPanelSlot.GetAlignment(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3367800>
 };
 
 // Class UMG.CheckBox
 struct UCheckBox : UContentWidget {
-	enum class Unknow CheckedState; //  0x120 Size(1)
-	struct FDelegate CheckedState; //  0x124 Size(10)
-	struct Unknown WidgetStyle; //  0x138 Size(580)
-	struct Unknown Style; //  0x6b8 Size(8)
-	struct Unknown UncheckedImage; //  0x6c0 Size(8)
-	struct Unknown UncheckedHoveredImage; //  0x6c8 Size(8)
-	struct Unknown UncheckedPressedImage; //  0x6d0 Size(8)
-	struct Unknown CheckedImage; //  0x6d8 Size(8)
-	struct Unknown CheckedHoveredImage; //  0x6e0 Size(8)
-	struct Unknown CheckedPressedImage; //  0x6e8 Size(8)
-	struct Unknown UndeterminedImage; //  0x6f0 Size(8)
-	struct Unknown UndeterminedHoveredImage; //  0x6f8 Size(8)
-	struct Unknown UndeterminedPressedImage; //  0x700 Size(8)
-	char HorizontalAlignment; //  0x708 Size(1)
-	struct Unknown Padding; //  0x70c Size(10)
-	struct Unknown BorderBackgroundColor; //  0x720 Size(28)
-	char IsFocusable; //  0x748 Size(1)
-	struct FMulticastInlineDelegate OnCheckStateChanged; //  0x750 Size(10)
+	enum class Unknow CheckedState; // 0x120 (1)
+	struct FDelegate CheckedStateDelegate; // 0x124 (16)
+	struct Unknown WidgetStyle; // 0x138 (1408)
+	struct Unknown Style; // 0x6B8 (8)
+	struct Unknown UncheckedImage; // 0x6C0 (8)
+	struct Unknown UncheckedHoveredImage; // 0x6C8 (8)
+	struct Unknown UncheckedPressedImage; // 0x6D0 (8)
+	struct Unknown CheckedImage; // 0x6D8 (8)
+	struct Unknown CheckedHoveredImage; // 0x6E0 (8)
+	struct Unknown CheckedPressedImage; // 0x6E8 (8)
+	struct Unknown UndeterminedImage; // 0x6F0 (8)
+	struct Unknown UndeterminedHoveredImage; // 0x6F8 (8)
+	struct Unknown UndeterminedPressedImage; // 0x700 (8)
+	char HorizontalAlignment; // 0x708 (1)
+	struct Unknown Padding; // 0x70C (16)
+	struct Unknown BorderBackgroundColor; // 0x720 (40)
+	char IsFocusable : 0; // 0x748 (1)
+	struct FMulticastInlineDelegate OnCheckStateChanged; // 0x750 (16)
 
-	void SetIsChecked(char InIsChecked); // Function UMG.CheckBox.SetIsChecked(Final|Native|Public|BlueprintCallable) // <Game+0x3368770>
+	void SetIsChecked(char InIsChecked); // Function UMG.CheckBox.SetIsChecked(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3368770>
+	void SetCheckedState(enum class Unknow InCheckedState); // Function UMG.CheckBox.SetCheckedState(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3368270>
+	char IsPressed(); // Function UMG.CheckBox.IsPressed(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3367B90>
+	char IsChecked(); // Function UMG.CheckBox.IsChecked(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3367B30>
+	enum class Unknow GetCheckedState(); // Function UMG.CheckBox.GetCheckedState(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33678B0>
 };
 
 // Class UMG.CircularThrobber
 struct UCircularThrobber : UWidget {
-	int32_t NumberOfPieces; //  0x108 Size(4)
-	float Period; //  0x10c Size(4)
-	float Radius; //  0x110 Size(4)
-	struct Unknown PieceImage; //  0x118 Size(8)
-	struct Unknown Image; //  0x120 Size(88)
-	char bEnableRadius; //  0x1a8 Size(1)
+	int32_t NumberOfPieces; // 0x108 (4)
+	float Period; // 0x10C (4)
+	float Radius; // 0x110 (4)
+	struct Unknown PieceImage; // 0x118 (8)
+	struct Unknown Image; // 0x120 (136)
+	char bEnableRadius : 0; // 0x1A8 (1)
 
-	void SetRadius(float InRadius); // Function UMG.CircularThrobber.SetRadius(Final|Native|Public|BlueprintCallable) // <Game+0x336cb20>
+	void SetRadius(float InRadius); // Function UMG.CircularThrobber.SetRadius(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336CB20>
+	void SetPeriod(float InPeriod); // Function UMG.CircularThrobber.SetPeriod(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336CAA0>
+	void SetNumberOfPieces(int32_t InNumberOfPieces); // Function UMG.CircularThrobber.SetNumberOfPieces(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336CA20>
 };
 
 // Class UMG.ComboBox
 struct UComboBox : UWidget {
-	struct TArray<Unknown> Items; //  0x108 Size(10)
-	struct FDelegate OnGenerateWidgetEvent; //  0x118 Size(10)
-	char bIsFocusable; //  0x128 Size(1)
+	struct TArray<Unknown> Items; // 0x108 (16)
+	struct FDelegate OnGenerateWidgetEvent; // 0x118 (16)
+	char bIsFocusable : 0; // 0x128 (1)
 };
 
 // Class UMG.ComboBoxString
 struct UComboBoxString : UWidget {
-	struct TArray<Unknown> DefaultOptions; //  0x108 Size(10)
-	struct FString SelectedOption; //  0x118 Size(10)
-	struct Unknown WidgetStyle; //  0x128 Size(3f0)
-	struct Unknown ItemStyle; //  0x518 Size(7c8)
-	struct Unknown ContentPadding; //  0xce0 Size(10)
-	float MaxListHeight; //  0xcf0 Size(4)
-	char HasDownArrow; //  0xcf4 Size(1)
-	char EnableGamepadNavigationMode; //  0xcf5 Size(1)
-	struct Unknown Font; //  0xcf8 Size(50)
-	struct Unknown ForegroundColor; //  0xd48 Size(28)
-	char bIsFocusable; //  0xd70 Size(1)
-	struct FDelegate OnGenerateWidgetEvent; //  0xd74 Size(10)
-	struct FMulticastInlineDelegate OnSelectionChanged; //  0xd88 Size(10)
-	struct FMulticastInlineDelegate OnOpening; //  0xd98 Size(10)
+	struct TArray<Unknown> DefaultOptions; // 0x108 (16)
+	struct FString SelectedOption; // 0x118 (16)
+	struct Unknown WidgetStyle; // 0x128 (1008)
+	struct Unknown ItemStyle; // 0x518 (1992)
+	struct Unknown ContentPadding; // 0xCE0 (16)
+	float MaxListHeight; // 0xCF0 (4)
+	char HasDownArrow : 0; // 0xCF4 (1)
+	char EnableGamepadNavigationMode : 0; // 0xCF5 (1)
+	struct Unknown Font; // 0xCF8 (80)
+	struct Unknown ForegroundColor; // 0xD48 (40)
+	char bIsFocusable : 0; // 0xD70 (1)
+	struct FDelegate OnGenerateWidgetEvent; // 0xD74 (16)
+	struct FMulticastInlineDelegate OnSelectionChanged; // 0xD88 (16)
+	struct FMulticastInlineDelegate OnOpening; // 0xD98 (16)
 
-	void SetSelectedOption(struct FString Option); // Function UMG.ComboBoxString.SetSelectedOption(Final|Native|Public|BlueprintCallable) // <Game+0x336cc20>
+	void SetSelectedOption(struct FString Option); // Function UMG.ComboBoxString.SetSelectedOption(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336CC20>
+	void SetSelectedIndex(int32_t Index); // Function UMG.ComboBoxString.SetSelectedIndex(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336CBA0>
+	char RemoveOption(struct FString Option); // Function UMG.ComboBoxString.RemoveOption(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336C1C0>
+	void RefreshOptions(); // Function UMG.ComboBoxString.RefreshOptions(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336C120>
+	void OnSelectionChangedEvent__DelegateSignature(struct FString SelectedItem, char SelectionType); // DelegateFunction UMG.ComboBoxString.OnSelectionChangedEvent__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void OnOpeningEvent__DelegateSignature(); // DelegateFunction UMG.ComboBoxString.OnOpeningEvent__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	char IsOpen(); // Function UMG.ComboBoxString.IsOpen(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336C0F0>
+	struct FString GetSelectedOption(); // Function UMG.ComboBoxString.GetSelectedOption(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336BE60>
+	int32_t GetSelectedIndex(); // Function UMG.ComboBoxString.GetSelectedIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336BE30>
+	int32_t GetOptionCount(); // Function UMG.ComboBoxString.GetOptionCount(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336BE00>
+	struct FString GetOptionAtIndex(int32_t Index); // Function UMG.ComboBoxString.GetOptionAtIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336BD20>
+	int32_t FindOptionIndex(struct FString Option); // Function UMG.ComboBoxString.FindOptionIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336BB10>
+	void ClearSelection(); // Function UMG.ComboBoxString.ClearSelection(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336B760>
+	void ClearOptions(); // Function UMG.ComboBoxString.ClearOptions(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336B740>
+	void AddOption(struct FString Option); // Function UMG.ComboBoxString.AddOption(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336B5C0>
 };
 
-// Class UMG.Drag
-struct UDrag : Object {
-	struct FString Tag; //  0x28 Size(10)
-	struct Unknown payload; //  0x38 Size(8)
-	struct Unknown DefaultDragVisual; //  0x40 Size(8)
-	enum class Unknow Pivot; //  0x48 Size(1)
-	struct Unknown Offset; //  0x4c Size(8)
-	char bUseMoveAnimation; //  0x54 Size(1)
-	struct FMulticastInlineDelegate OnDrop; //  0x58 Size(10)
-	struct FMulticastInlineDelegate OnDragCancelled; //  0x68 Size(10)
-	struct FMulticastInlineDelegate OnDragged; //  0x78 Size(10)
+// Class UMG.DragDropOperation
+struct UDragDropOperation : Object {
+	struct FString Tag; // 0x28 (16)
+	struct Unknown payload; // 0x38 (8)
+	struct Unknown DefaultDragVisual; // 0x40 (8)
+	enum class Unknow Pivot; // 0x48 (1)
+	struct Unknown Offset; // 0x4C (8)
+	char bUseMoveAnimation : 0; // 0x54 (1)
+	struct FMulticastInlineDelegate OnDrop; // 0x58 (16)
+	struct FMulticastInlineDelegate OnDragCancelled; // 0x68 (16)
+	struct FMulticastInlineDelegate OnDragged; // 0x78 (16)
 
-	void Drop(struct Unknown& PointerEvent); // Function UMG.Drag.Drop(Native|Event|Public|HasOutParms|BlueprintEvent) // <Game+0x336b9e0>
+	void Drop(struct Unknown& PointerEvent); // Function UMG.DragDropOperation.Drop(Native|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336B9E0>
+	void Dragged(struct Unknown& PointerEvent); // Function UMG.DragDropOperation.Dragged(Native|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336B8B0>
+	void DragCancelled(struct Unknown& PointerEvent); // Function UMG.DragDropOperation.DragCancelled(Native|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336B780>
 };
 
 // Class UMG.DynamicEntryBoxBase
 struct UDynamicEntryBoxBase : UWidget {
-	enum class Unknow EntryBoxType; //  0x108 Size(1)
-	struct Unknown EntrySpacing; //  0x10c Size(8)
-	struct TArray<Unknown> SpacingPattern; //  0x118 Size(10)
-	struct Unknown EntrySizeRule; //  0x128 Size(8)
-	char EntryHorizontalAlignment; //  0x130 Size(1)
-	char EntryVerticalAlignment; //  0x131 Size(1)
-	int32_t MaxElementSize; //  0x134 Size(4)
-	struct Unknown EntryWidgetPool; //  0x148 Size(80)
+	enum class Unknow EntryBoxType; // 0x108 (1)
+	struct Unknown EntrySpacing; // 0x10C (8)
+	struct TArray<Unknown> SpacingPattern; // 0x118 (16)
+	struct Unknown EntrySizeRule; // 0x128 (8)
+	char EntryHorizontalAlignment; // 0x130 (1)
+	char EntryVerticalAlignment; // 0x131 (1)
+	int32_t MaxElementSize; // 0x134 (4)
+	struct Unknown EntryWidgetPool; // 0x148 (128)
 
-	void SetEntrySpacing(struct Unknown& InEntrySpacing); // Function UMG.DynamicEntryBoxBase.SetEntrySpacing(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game+0x336c3b0>
+	void SetEntrySpacing(struct Unknown& InEntrySpacing); // Function UMG.DynamicEntryBoxBase.SetEntrySpacing(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336C3B0>
+	int32_t GetNumEntries(); // Function UMG.DynamicEntryBoxBase.GetNumEntries(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336BCF0>
+	struct TArray<Unknown> GetAllEntries(); // Function UMG.DynamicEntryBoxBase.GetAllEntries(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336BBC0>
 };
 
 // Class UMG.DynamicEntryBox
 struct UDynamicEntryBox : UDynamicEntryBoxBase {
-	struct Unknown* EntryWidgetClass; //  0x1c8 Size(8)
+	struct Unknown* EntryWidgetClass; // 0x1C8 (8)
 
-	void Reset(char bDeleteWidgets); // Function UMG.DynamicEntryBox.Reset(Final|Native|Public|BlueprintCallable) // <Game+0x336c270>
+	void Reset(char bDeleteWidgets); // Function UMG.DynamicEntryBox.Reset(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336C270>
+	void RemoveEntry(struct Unknown EntryWidget); // Function UMG.DynamicEntryBox.RemoveEntry(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336C140>
+	struct Unknown BP_CreateEntryOfClass(struct Unknown* EntryClass); // Function UMG.DynamicEntryBox.BP_CreateEntryOfClass(Final|Native|Private|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336B690>
+	struct Unknown BP_CreateEntry(); // Function UMG.DynamicEntryBox.BP_CreateEntry(Final|Native|Private|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336B660>
 };
 
 // Class UMG.EditableText
 struct UEditableText : UWidget {
-	struct FText Text; //  0x108 Size(18)
-	struct FDelegate Text; //  0x120 Size(10)
-	struct FText HintText; //  0x130 Size(18)
-	struct FDelegate HintTextDelegate; //  0x148 Size(10)
-	struct Unknown WidgetStyle; //  0x158 Size(218)
-	struct Unknown Style; //  0x370 Size(8)
-	struct Unknown BackgroundImageSelected; //  0x378 Size(8)
-	struct Unknown BackgroundImageComposing; //  0x380 Size(8)
-	struct Unknown CaretImage; //  0x388 Size(8)
-	struct Unknown Font; //  0x390 Size(50)
-	struct Unknown ColorAndOpacity; //  0x3e0 Size(28)
-	char IsReadOnly; //  0x408 Size(1)
-	char IsPassword; //  0x409 Size(1)
-	float MinimumDesiredWidth; //  0x40c Size(4)
-	char IsCaretMovedWhenGainFocus; //  0x410 Size(1)
-	char SelectAllTextWhenFocused; //  0x411 Size(1)
-	char RevertTextOnEscape; //  0x412 Size(1)
-	char ClearKeyboardFocusOnCommit; //  0x413 Size(1)
-	char SelectAllTextOnCommit; //  0x414 Size(1)
-	char AllowContextMenu; //  0x415 Size(1)
-	char KeyboardType; //  0x416 Size(1)
-	struct Unknown VirtualKeyboardOptions; //  0x417 Size(1)
-	enum class Unknow VirtualKeyboardTrigger; //  0x418 Size(1)
-	enum class Unknow VirtualKeyboardDismissAction; //  0x419 Size(1)
-	char Justification; //  0x41a Size(1)
-	struct Unknown ShapedTextOptions; //  0x41b Size(3)
-	struct FMulticastInlineDelegate OnTextChanged; //  0x420 Size(10)
-	struct FMulticastInlineDelegate OnTextCommitted; //  0x430 Size(10)
+	struct FText Text; // 0x108 (24)
+	struct FDelegate TextDelegate; // 0x120 (16)
+	struct FText HintText; // 0x130 (24)
+	struct FDelegate HintTextDelegate; // 0x148 (16)
+	struct Unknown WidgetStyle; // 0x158 (536)
+	struct Unknown Style; // 0x370 (8)
+	struct Unknown BackgroundImageSelected; // 0x378 (8)
+	struct Unknown BackgroundImageComposing; // 0x380 (8)
+	struct Unknown CaretImage; // 0x388 (8)
+	struct Unknown Font; // 0x390 (80)
+	struct Unknown ColorAndOpacity; // 0x3E0 (40)
+	char IsReadOnly : 0; // 0x408 (1)
+	char IsPassword : 0; // 0x409 (1)
+	float MinimumDesiredWidth; // 0x40C (4)
+	char IsCaretMovedWhenGainFocus : 0; // 0x410 (1)
+	char SelectAllTextWhenFocused : 0; // 0x411 (1)
+	char RevertTextOnEscape : 0; // 0x412 (1)
+	char ClearKeyboardFocusOnCommit : 0; // 0x413 (1)
+	char SelectAllTextOnCommit : 0; // 0x414 (1)
+	char AllowContextMenu : 0; // 0x415 (1)
+	char KeyboardType; // 0x416 (1)
+	struct Unknown VirtualKeyboardOptions; // 0x417 (1)
+	enum class Unknow VirtualKeyboardTrigger; // 0x418 (1)
+	enum class Unknow VirtualKeyboardDismissAction; // 0x419 (1)
+	char Justification; // 0x41A (1)
+	struct Unknown ShapedTextOptions; // 0x41B (3)
+	struct FMulticastInlineDelegate OnTextChanged; // 0x420 (16)
+	struct FMulticastInlineDelegate OnTextCommitted; // 0x430 (16)
 
-	void SetText(struct FText InText); // Function UMG.EditableText.SetText(Final|Native|Public|BlueprintCallable) // <Game+0x336cd10>
+	void SetText(struct FText InText); // Function UMG.EditableText.SetText(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336CD10>
+	void SetJustification(char InJustification); // Function UMG.EditableText.SetJustification(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336C920>
+	void SetIsReadOnly(char InbIsReadyOnly); // Function UMG.EditableText.SetIsReadOnly(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336C800>
+	void SetIsPassword(char InbIsPassword); // Function UMG.EditableText.SetIsPassword(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336C6E0>
+	void SetHintText(struct FText InHintText); // Function UMG.EditableText.SetHintText(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336C520>
+	void OnEditableTextCommittedEvent__DelegateSignature(struct FText& Text, char CommitMethod); // DelegateFunction UMG.EditableText.OnEditableTextCommittedEvent__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void OnEditableTextChangedEvent__DelegateSignature(struct FText& Text); // DelegateFunction UMG.EditableText.OnEditableTextChangedEvent__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	struct FText GetText(); // Function UMG.EditableText.GetText(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336BF50>
 };
 
 // Class UMG.EditableTextBox
 struct UEditableTextBox : UWidget {
-	struct FText Text; //  0x108 Size(18)
-	struct FDelegate Text; //  0x120 Size(10)
-	struct Unknown WidgetStyle; //  0x130 Size(7f0)
-	struct Unknown Style; //  0x920 Size(8)
-	struct FText HintText; //  0x928 Size(18)
-	struct FDelegate HintTextDelegate; //  0x940 Size(10)
-	struct Unknown Font; //  0x950 Size(50)
-	struct Unknown ForegroundColor; //  0x9a0 Size(10)
-	struct Unknown BackgroundColor; //  0x9b0 Size(10)
-	struct Unknown ReadOnlyForegroundColor; //  0x9c0 Size(10)
-	char IsReadOnly; //  0x9d0 Size(1)
-	char IsPassword; //  0x9d1 Size(1)
-	float MinimumDesiredWidth; //  0x9d4 Size(4)
-	struct Unknown Padding; //  0x9d8 Size(10)
-	char IsCaretMovedWhenGainFocus; //  0x9e8 Size(1)
-	char SelectAllTextWhenFocused; //  0x9e9 Size(1)
-	char RevertTextOnEscape; //  0x9ea Size(1)
-	char ClearKeyboardFocusOnCommit; //  0x9eb Size(1)
-	char SelectAllTextOnCommit; //  0x9ec Size(1)
-	char AllowContextMenu; //  0x9ed Size(1)
-	char KeyboardType; //  0x9ee Size(1)
-	struct Unknown VirtualKeyboardOptions; //  0x9ef Size(1)
-	enum class Unknow VirtualKeyboardTrigger; //  0x9f0 Size(1)
-	enum class Unknow VirtualKeyboardDismissAction; //  0x9f1 Size(1)
-	char Justification; //  0x9f2 Size(1)
-	struct Unknown ShapedTextOptions; //  0x9f3 Size(3)
-	struct FMulticastInlineDelegate OnTextChanged; //  0x9f8 Size(10)
-	struct FMulticastInlineDelegate OnTextCommitted; //  0xa08 Size(10)
+	struct FText Text; // 0x108 (24)
+	struct FDelegate TextDelegate; // 0x120 (16)
+	struct Unknown WidgetStyle; // 0x130 (2032)
+	struct Unknown Style; // 0x920 (8)
+	struct FText HintText; // 0x928 (24)
+	struct FDelegate HintTextDelegate; // 0x940 (16)
+	struct Unknown Font; // 0x950 (80)
+	struct Unknown ForegroundColor; // 0x9A0 (16)
+	struct Unknown BackgroundColor; // 0x9B0 (16)
+	struct Unknown ReadOnlyForegroundColor; // 0x9C0 (16)
+	char IsReadOnly : 0; // 0x9D0 (1)
+	char IsPassword : 0; // 0x9D1 (1)
+	float MinimumDesiredWidth; // 0x9D4 (4)
+	struct Unknown Padding; // 0x9D8 (16)
+	char IsCaretMovedWhenGainFocus : 0; // 0x9E8 (1)
+	char SelectAllTextWhenFocused : 0; // 0x9E9 (1)
+	char RevertTextOnEscape : 0; // 0x9EA (1)
+	char ClearKeyboardFocusOnCommit : 0; // 0x9EB (1)
+	char SelectAllTextOnCommit : 0; // 0x9EC (1)
+	char AllowContextMenu : 0; // 0x9ED (1)
+	char KeyboardType; // 0x9EE (1)
+	struct Unknown VirtualKeyboardOptions; // 0x9EF (1)
+	enum class Unknow VirtualKeyboardTrigger; // 0x9F0 (1)
+	enum class Unknow VirtualKeyboardDismissAction; // 0x9F1 (1)
+	char Justification; // 0x9F2 (1)
+	struct Unknown ShapedTextOptions; // 0x9F3 (3)
+	struct FMulticastInlineDelegate OnTextChanged; // 0x9F8 (16)
+	struct FMulticastInlineDelegate OnTextCommitted; // 0xA08 (16)
 
-	void SetText(struct FText InText); // Function UMG.EditableTextBox.SetText(Final|Native|Public|BlueprintCallable) // <Game+0x336cdf0>
+	void SetText(struct FText InText); // Function UMG.EditableTextBox.SetText(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336CDF0>
+	void SetJustification(char InJustification); // Function UMG.EditableTextBox.SetJustification(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336C9A0>
+	void SetIsReadOnly(char b); // Function UMG.EditableTextBox.SetIsReadOnly(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336C890>
+	void SetIsPassword(char bIsPassword); // Function UMG.EditableTextBox.SetIsPassword(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336C770>
+	void SetHintText(struct FText InText); // Function UMG.EditableTextBox.SetHintText(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336C600>
+	void SetError(struct FText InError); // Function UMG.EditableTextBox.SetError(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336C440>
+	void SelectWordAt(); // Function UMG.EditableTextBox.SelectWordAt(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336C300>
+	void OnEditableTextBoxCommittedEvent__DelegateSignature(struct FText& Text, char CommitMethod); // DelegateFunction UMG.EditableTextBox.OnEditableTextBoxCommittedEvent__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void OnEditableTextBoxChangedEvent__DelegateSignature(struct FText& Text); // DelegateFunction UMG.EditableTextBox.OnEditableTextBoxChangedEvent__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	char HasError(); // Function UMG.EditableTextBox.HasError(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336C0C0>
+	struct FText GetText(); // Function UMG.EditableTextBox.GetText(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336BFF0>
+	void ClearError(); // Function UMG.EditableTextBox.ClearError(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336B720>
 };
 
 // Class UMG.ExpandableArea
 struct UExpandableArea : UWidget {
-	struct Unknown Style; //  0x110 Size(120)
-	struct Unknown BorderBrush; //  0x230 Size(88)
-	struct Unknown BorderColor; //  0x2b8 Size(28)
-	char bIsExpanded; //  0x2e0 Size(1)
-	float MaxHeight; //  0x2e4 Size(4)
-	struct Unknown HeaderPadding; //  0x2e8 Size(10)
-	struct Unknown AreaPadding; //  0x2f8 Size(10)
-	struct FMulticastInlineDelegate OnExpansionChanged; //  0x308 Size(10)
-	struct Unknown HeaderContent; //  0x318 Size(8)
-	struct Unknown BodyContent; //  0x320 Size(8)
+	struct Unknown Style; // 0x110 (288)
+	struct Unknown BorderBrush; // 0x230 (136)
+	struct Unknown BorderColor; // 0x2B8 (40)
+	char bIsExpanded : 0; // 0x2E0 (1)
+	float MaxHeight; // 0x2E4 (4)
+	struct Unknown HeaderPadding; // 0x2E8 (16)
+	struct Unknown AreaPadding; // 0x2F8 (16)
+	struct FMulticastInlineDelegate OnExpansionChanged; // 0x308 (16)
+	struct Unknown HeaderContent; // 0x318 (8)
+	struct Unknown BodyContent; // 0x320 (8)
 
-	void SetIsExpanded_Animated(char IsExpanded); // Function UMG.ExpandableArea.SetIsExpanded_Animated(Final|Native|Public|BlueprintCallable) // <Game+0x3371160>
+	void SetIsExpanded_Animated(char IsExpanded); // Function UMG.ExpandableArea.SetIsExpanded_Animated(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3371160>
+	void SetIsExpanded(char IsExpanded); // Function UMG.ExpandableArea.SetIsExpanded(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33710D0>
+	char GetIsExpanded(); // Function UMG.ExpandableArea.GetIsExpanded(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336FB40>
 };
 
 // Class UMG.GridPanel
 struct UGridPanel : UPanelWidget {
-	struct TArray<Unknown> ColumnFill; //  0x120 Size(10)
-	struct TArray<Unknown> RowFill; //  0x130 Size(10)
+	struct TArray<Unknown> ColumnFill; // 0x120 (16)
+	struct TArray<Unknown> RowFill; // 0x130 (16)
 
-	void SetRowFill(int32_t columnIndex, float Coefficient); // Function UMG.GridPanel.SetRowFill(Final|Native|Public|BlueprintCallable) // <Game+0x33716d0>
+	void SetRowFill(int32_t columnIndex, float Coefficient); // Function UMG.GridPanel.SetRowFill(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33716D0>
+	void SetColumnFill(int32_t columnIndex, float Coefficient); // Function UMG.GridPanel.SetColumnFill(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3370D70>
+	struct Unknown AddChildToGrid(struct Unknown Content, int32_t InRow, int32_t InColumn); // Function UMG.GridPanel.AddChildToGrid(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336F330>
 };
 
 // Class UMG.GridSlot
 struct UGridSlot : UPanelSlot {
-	struct Unknown Padding; //  0x38 Size(10)
-	char HorizontalAlignment; //  0x48 Size(1)
-	char VerticalAlignment; //  0x49 Size(1)
-	int32_t Row; //  0x4c Size(4)
-	int32_t RowSpan; //  0x50 Size(4)
-	int32_t Column; //  0x54 Size(4)
-	int32_t ColumnSpan; //  0x58 Size(4)
-	int32_t Layer; //  0x5c Size(4)
-	struct Unknown Nudge; //  0x60 Size(8)
+	struct Unknown Padding; // 0x38 (16)
+	char HorizontalAlignment; // 0x48 (1)
+	char VerticalAlignment; // 0x49 (1)
+	int32_t Row; // 0x4C (4)
+	int32_t RowSpan; // 0x50 (4)
+	int32_t Column; // 0x54 (4)
+	int32_t ColumnSpan; // 0x58 (4)
+	int32_t Layer; // 0x5C (4)
+	struct Unknown Nudge; // 0x60 (8)
 
-	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.GridSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game+0x3371b20>
+	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.GridSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3371B20>
+	void SetRowSpan(int32_t InRowSpan); // Function UMG.GridSlot.SetRowSpan(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33717A0>
+	void SetRow(int32_t InRow); // Function UMG.GridSlot.SetRow(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3371650>
+	void SetPadding(struct Unknown InPadding); // Function UMG.GridSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3371530>
+	void SetNudge(struct Unknown InNudge); // Function UMG.GridSlot.SetNudge(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3371430>
+	void SetLayer(int32_t InLayer); // Function UMG.GridSlot.SetLayer(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33712D0>
+	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.GridSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3370FD0>
+	void SetColumnSpan(int32_t InColumnSpan); // Function UMG.GridSlot.SetColumnSpan(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3370E40>
+	void SetColumn(int32_t InColumn); // Function UMG.GridSlot.SetColumn(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3370CF0>
 };
 
 // Class UMG.HorizontalBoxSlot
 struct UHorizontalBoxSlot : UPanelSlot {
-	struct Unknown Padding; //  0x40 Size(10)
-	struct Unknown Size; //  0x50 Size(8)
-	char HorizontalAlignment; //  0x58 Size(1)
-	char VerticalAlignment; //  0x59 Size(1)
+	struct Unknown Padding; // 0x40 (16)
+	struct Unknown Size; // 0x50 (8)
+	char HorizontalAlignment; // 0x58 (1)
+	char VerticalAlignment; // 0x59 (1)
 
-	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.HorizontalBoxSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game+0x3371ba0>
+	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.HorizontalBoxSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3371BA0>
+	void SetSize(struct Unknown InSize); // Function UMG.HorizontalBoxSlot.SetSize(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3371A10>
+	void SetPadding(struct Unknown InPadding); // Function UMG.HorizontalBoxSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33715C0>
+	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.HorizontalBoxSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3371050>
 };
 
 // Class UMG.Image
 struct UImage : UWidget {
-	struct Unknown Brush; //  0x108 Size(88)
-	struct FDelegate BrushDelegate; //  0x190 Size(10)
-	struct Unknown ColorAndOpacity; //  0x1a0 Size(10)
-	struct FDelegate ColorAndOpacityDelegate; //  0x1b0 Size(10)
-	char bFlipForRightToLeftFlowDirection; //  0x1c0 Size(1)
-	struct FDelegate OnMouseButtonDownEv; //  0x1c4 Size(10)
+	struct Unknown Brush; // 0x108 (136)
+	struct FDelegate BrushDelegate; // 0x190 (16)
+	struct Unknown ColorAndOpacity; // 0x1A0 (16)
+	struct FDelegate ColorAndOpacityDelegate; // 0x1B0 (16)
+	char bFlipForRightToLeftFlowDirection : 0; // 0x1C0 (1)
+	struct FDelegate OnMouseButtonDownEv; // 0x1C4 (16)
 
-	void SetOpacity(float InOpacity); // Function UMG.Image.SetOpacity(Final|Native|Public|BlueprintCallable) // <Game+0x33714b0>
+	void SetOpacity(float InOpacity); // Function UMG.Image.SetOpacity(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33714B0>
+	void SetGammaCorrect(); // Function UMG.Image.SetGammaCorrect(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3370FB0>
+	void SetColorAndOpacity(struct Unknown InColorAndOpacity); // Function UMG.Image.SetColorAndOpacity(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3370C70>
+	void SetBrushTintColor(struct Unknown TintColor); // Function UMG.Image.SetBrushTintColor(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3370AF0>
+	void SetBrushSize(struct Unknown DesiredSize); // Function UMG.Image.SetBrushSize(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3370A70>
+	void SetBrushResourceObject(struct Unknown ResourceObject); // Function UMG.Image.SetBrushResourceObject(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33709F0>
+	void SetBrushFromTextureDynamic(struct Unknown Texture, char bMatchSize); // Function UMG.Image.SetBrushFromTextureDynamic(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3370920>
+	void SetBrushFromTexture(struct Unknown Texture, char bMatchSize); // Function UMG.Image.SetBrushFromTexture(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3370850>
+	void SetBrushFromSoftTexture(struct TSoftObjectPtr<Unknown> SoftTexture, char bMatchSize); // Function UMG.Image.SetBrushFromSoftTexture(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33706F0>
+	void SetBrushFromSoftMaterial(struct TSoftObjectPtr<Unknown> SoftMaterial); // Function UMG.Image.SetBrushFromSoftMaterial(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33705D0>
+	void SetBrushFromMaterial(struct Unknown Material); // Function UMG.Image.SetBrushFromMaterial(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3370540>
+	void SetBrushFromAtlasInterface(struct TScriptInterface<IUnknown> AtlasRegion, char bMatchSize); // Function UMG.Image.SetBrushFromAtlasInterface(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3370450>
+	void SetBrushFromAsset(struct Unknown Asset); // Function UMG.Image.SetBrushFromAsset(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33703C0>
+	void SetBrush(struct Unknown& InBrush); // Function UMG.Image.SetBrush(Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3370240>
+	struct Unknown GetDynamicMaterial(); // Function UMG.Image.GetDynamicMaterial(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336FA80>
 };
 
 // Class UMG.InputKeySelector
 struct UInputKeySelector : UWidget {
-	struct Unknown WidgetStyle; //  0x108 Size(278)
-	struct Unknown TextStyle; //  0x380 Size(268)
-	struct Unknown SelectedKey; //  0x5e8 Size(20)
-	struct Unknown Font; //  0x608 Size(50)
-	struct Unknown Margin; //  0x658 Size(10)
-	struct Unknown ColorAndOpacity; //  0x668 Size(10)
-	struct FText KeySelectionText; //  0x678 Size(18)
-	struct FText NoKeySpecifiedText; //  0x690 Size(18)
-	char bAllowModifierKeys; //  0x6a8 Size(1)
-	char bAllowGamepadKeys; //  0x6a9 Size(1)
-	struct TArray<Unknown> EscapeKeys; //  0x6b0 Size(10)
-	struct FMulticastInlineDelegate OnKeySelected; //  0x6c0 Size(10)
-	struct FMulticastInlineDelegate OnIsSelectingKeyChanged; //  0x6d0 Size(10)
+	struct Unknown WidgetStyle; // 0x108 (632)
+	struct Unknown TextStyle; // 0x380 (616)
+	struct Unknown SelectedKey; // 0x5E8 (32)
+	struct Unknown Font; // 0x608 (80)
+	struct Unknown Margin; // 0x658 (16)
+	struct Unknown ColorAndOpacity; // 0x668 (16)
+	struct FText KeySelectionText; // 0x678 (24)
+	struct FText NoKeySpecifiedText; // 0x690 (24)
+	char bAllowModifierKeys : 0; // 0x6A8 (1)
+	char bAllowGamepadKeys : 0; // 0x6A9 (1)
+	struct TArray<Unknown> EscapeKeys; // 0x6B0 (16)
+	struct FMulticastInlineDelegate OnKeySelected; // 0x6C0 (16)
+	struct FMulticastInlineDelegate OnIsSelectingKeyChanged; // 0x6D0 (16)
 
-	void SetTextBlockVisibility(enum class Unknow InVisibility); // Function UMG.InputKeySelector.SetTextBlockVisibility(Final|Native|Public|BlueprintCallable) // <Game+0x3371aa0>
+	void SetTextBlockVisibility(enum class Unknow InVisibility); // Function UMG.InputKeySelector.SetTextBlockVisibility(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3371AA0>
+	void SetSelectedKey(struct Unknown& InSelectedKey); // Function UMG.InputKeySelector.SetSelectedKey(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33718A0>
+	void SetNoKeySpecifiedText(struct FText InNoKeySpecifiedText); // Function UMG.InputKeySelector.SetNoKeySpecifiedText(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3371350>
+	void SetKeySelectionText(struct FText InKeySelectionText); // Function UMG.InputKeySelector.SetKeySelectionText(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33711F0>
+	void SetEscapeKeys(struct TArray<Unknown>& InKeys); // Function UMG.InputKeySelector.SetEscapeKeys(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3370EC0>
+	void SetAllowModifierKeys(char bInAllowModifierKeys); // Function UMG.InputKeySelector.SetAllowModifierKeys(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33701B0>
+	void SetAllowGamepadKeys(char bInAllowGamepadKeys); // Function UMG.InputKeySelector.SetAllowGamepadKeys(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3370120>
+	void OnKeySelected__DelegateSignature(struct Unknown SelectedKey); // DelegateFunction UMG.InputKeySelector.OnKeySelected__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void OnIsSelectingKeyChanged__DelegateSignature(); // DelegateFunction UMG.InputKeySelector.OnIsSelectingKeyChanged__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	char GetIsSelectingKey(); // Function UMG.InputKeySelector.GetIsSelectingKey(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336FB70>
 };
 
 // Class UMG.InvalidationBox
 struct UInvalidationBox : UContentWidget {
-	char bCanCache; //  0x120 Size(1)
-	char CacheRelativeTransforms; //  0x121 Size(1)
+	char bCanCache : 0; // 0x120 (1)
+	char CacheRelativeTransforms : 0; // 0x121 (1)
 
-	void SetCanCache(char CanCache); // Function UMG.InvalidationBox.SetCanCache(Final|Native|Public|BlueprintCallable) // <Game+0x3370be0>
+	void SetCanCache(char CanCache); // Function UMG.InvalidationBox.SetCanCache(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3370BE0>
+	void InvalidateCache(); // Function UMG.InvalidationBox.InvalidateCache(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151AF10>
+	char GetCanCache(); // Function UMG.InvalidationBox.GetCanCache(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336FA50>
 };
 
 // Class UMG.ListViewBase
 struct UListViewBase : UWidget {
-	struct Unknown* EntryWidgetClass; //  0x108 Size(8)
-	float WheelScrollMultiplier; //  0x110 Size(4)
-	char bEnableScrollAnimation; //  0x114 Size(1)
-	char bEnableFixedLineOffset; //  0x115 Size(1)
-	float FixedLineScrollOffset; //  0x118 Size(4)
-	struct FMulticastInlineDelegate BP_OnEntryGenerated; //  0x120 Size(10)
-	struct FMulticastInlineDelegate BP_OnEntryReleased; //  0x130 Size(10)
-	struct Unknown EntryWidgetPool; //  0x140 Size(80)
+	struct Unknown* EntryWidgetClass; // 0x108 (8)
+	float WheelScrollMultiplier; // 0x110 (4)
+	char bEnableScrollAnimation : 0; // 0x114 (1)
+	char bEnableFixedLineOffset : 0; // 0x115 (1)
+	float FixedLineScrollOffset; // 0x118 (4)
+	struct FMulticastInlineDelegate BP_OnEntryGenerated; // 0x120 (16)
+	struct FMulticastInlineDelegate BP_OnEntryReleased; // 0x130 (16)
+	struct Unknown EntryWidgetPool; // 0x140 (128)
 
-	void SetWheelScrollMultiplier(float NewWheelScrollMultiplier); // Function UMG.ListViewBase.SetWheelScrollMultiplier(Final|Native|Public|BlueprintCallable) // <Game+0x3376800>
+	void SetWheelScrollMultiplier(float NewWheelScrollMultiplier); // Function UMG.ListViewBase.SetWheelScrollMultiplier(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3376800>
+	void SetScrollOffset(float InScrollOffset); // Function UMG.ListViewBase.SetScrollOffset(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3376410>
+	void SetScrollbarVisibility(enum class Unknow InVisibility); // Function UMG.ListViewBase.SetScrollbarVisibility(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3376490>
+	void ScrollToTop(); // Function UMG.ListViewBase.ScrollToTop(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3375EA0>
+	void ScrollToBottom(); // Function UMG.ListViewBase.ScrollToBottom(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3375E80>
+	void RequestRefresh(); // Function UMG.ListViewBase.RequestRefresh(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3375E60>
+	void RegenerateAllEntries(); // Function UMG.ListViewBase.RegenerateAllEntries(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3375D20>
+	struct TArray<Unknown> GetDisplayedEntryWidgets(); // Function UMG.ListViewBase.GetDisplayedEntryWidgets(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33757F0>
 };
 
 // Class UMG.ListView
 struct UListView : UListViewBase {
-	char Orientation; //  0x2d8 Size(1)
-	char SelectionMode; //  0x2d9 Size(1)
-	enum class Unknow ConsumeMouseWheel; //  0x2da Size(1)
-	char bClearSelectionOnClick; //  0x2db Size(1)
-	char bIsFocusable; //  0x2dc Size(1)
-	float EntrySpacing; //  0x2e0 Size(4)
-	char bReturnFocusToSelection; //  0x2e4 Size(1)
-	struct TArray<Unknown> ListItems; //  0x2e8 Size(10)
-	struct FMulticastInlineDelegate BP_OnEntryInitialized; //  0x308 Size(10)
-	struct FMulticastInlineDelegate BP_OnItemClicked; //  0x318 Size(10)
-	struct FMulticastInlineDelegate BP_OnItemDoubleClicked; //  0x328 Size(10)
-	struct FMulticastInlineDelegate BP_OnItemIsHoveredChanged; //  0x338 Size(10)
-	struct FMulticastInlineDelegate BP_OnItemSelectionChanged; //  0x348 Size(10)
-	struct FMulticastInlineDelegate BP_OnItemScrolledIntoView; //  0x358 Size(10)
+	char Orientation; // 0x2D8 (1)
+	char SelectionMode; // 0x2D9 (1)
+	enum class Unknow ConsumeMouseWheel; // 0x2DA (1)
+	char bClearSelectionOnClick : 0; // 0x2DB (1)
+	char bIsFocusable : 0; // 0x2DC (1)
+	float EntrySpacing; // 0x2E0 (4)
+	char b : 0; // 0x2E4 (1)
+	struct TArray<Unknown> ListItems; // 0x2E8 (16)
+	struct FMulticastInlineDelegate BP_OnEntryInitialized; // 0x308 (16)
+	struct FMulticastInlineDelegate BP_OnItemClicked; // 0x318 (16)
+	struct FMulticastInlineDelegate BP_OnItemDoubleClicked; // 0x328 (16)
+	struct FMulticastInlineDelegate BP_OnItemIsHoveredChanged; // 0x338 (16)
+	struct FMulticastInlineDelegate BP_OnItemSelectionChanged; // 0x348 (16)
+	struct FMulticastInlineDelegate BP_OnItemScrolledIntoView; // 0x358 (16)
 
-	void SetSelectionMode(char SelectionMode); // Function UMG.ListView.SetSelectionMode(Final|Native|Public|BlueprintCallable) // <Game+0x3371990>
+	void SetSelectionMode(char SelectionMode); // Function UMG.ListView.SetSelectionMode(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3371990>
+	void SetSelectedIndex(int32_t Index); // Function UMG.ListView.SetSelectedIndex(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3371820>
+	void ScrollIndexIntoView(int32_t Index); // Function UMG.ListView.ScrollIndexIntoView(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33700A0>
+	void RemoveItem(struct Unknown Item); // Function UMG.ListView.RemoveItem(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3370020>
+	void NavigateToIndex(int32_t Index); // Function UMG.ListView.NavigateToIndex(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336FFA0>
+	char IsRefreshPending(); // Function UMG.ListView.IsRefreshPending(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336FF70>
+	int32_t GetNumItems(); // Function UMG.ListView.GetNumItems(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336FD00>
+	struct TArray<Unknown> GetListItems(); // Function UMG.ListView.GetListItems(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336FCD0>
+	struct Unknown GetItemAt(int32_t Index); // Function UMG.ListView.GetItemAt(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336FBA0>
+	int32_t GetIndexForItem(struct Unknown Item); // Function UMG.ListView.GetIndexForItem(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336FAB0>
+	void ClearListItems(); // Function UMG.ListView.ClearListItems(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336FA30>
+	void BP_SetSelectedItem(struct Unknown Item); // Function UMG.ListView.BP_SetSelectedItem(Final|Native|Private|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336F9B0>
+	void BP_SetListItems(struct TArray<Unknown>& InListItems); // Function UMG.ListView.BP_SetListItems(Final|Native|Private|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336F900>
+	void BP_SetItemSelection(struct Unknown Item, char bSelected); // Function UMG.ListView.BP_SetItemSelection(Final|Native|Private|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336F830>
+	void BP_ScrollItemIntoView(struct Unknown Item); // Function UMG.ListView.BP_ScrollItemIntoView(Final|Native|Private|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336F7B0>
+	void BP_NavigateToItem(struct Unknown Item); // Function UMG.ListView.BP_NavigateToItem(Final|Native|Private|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336F730>
+	char BP_IsItemVisible(struct Unknown Item); // Function UMG.ListView.BP_IsItemVisible(Final|Native|Private|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336F6A0>
+	char BP_GetSelectedItems(struct TArray<Unknown>& Items); // Function UMG.ListView.BP_GetSelectedItems(Final|Native|Private|HasOutParms|BlueprintCallable|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336F5E0>
+	struct Unknown BP_GetSelectedItem(); // Function UMG.ListView.BP_GetSelectedItem(Final|Native|Private|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336F5B0>
+	int32_t BP_GetNumItemsSelected(); // Function UMG.ListView.BP_GetNumItemsSelected(Final|Native|Private|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336F580>
+	void BP_ClearSelection(); // Function UMG.ListView.BP_ClearSelection(Final|Native|Private|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336F560>
+	void BP_CancelScrollIntoView(); // Function UMG.ListView.BP_CancelScrollIntoView(Final|Native|Private|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336F540>
+	void AddItem(struct Unknown Item); // Function UMG.ListView.AddItem(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336F4C0>
 };
 
 // Class UMG.MenuAnchor
 struct UMenuAnchor : UContentWidget {
-	struct Unknown* MenuClass; //  0x120 Size(8)
-	struct FDelegate OnGetMenuContentEvent; //  0x128 Size(10)
-	char Placement; //  0x138 Size(1)
-	char bFitInWindow; //  0x139 Size(1)
-	char ShouldDeferPaintingAfterWindowContent; //  0x13a Size(1)
-	char UseApplicationMenuStack; //  0x13b Size(1)
-	struct FMulticastInlineDelegate OnMenuOpenChanged; //  0x140 Size(10)
+	struct Unknown* MenuClass; // 0x120 (8)
+	struct FDelegate OnGetMenuContentEvent; // 0x128 (16)
+	char Placement; // 0x138 (1)
+	char bFitInWindow : 0; // 0x139 (1)
+	char ShouldDeferPaintingAfterWindowContent : 0; // 0x13A (1)
+	char UseApplicationMenuStack : 0; // 0x13B (1)
+	struct FMulticastInlineDelegate OnMenuOpenChanged; // 0x140 (16)
 
-	void ToggleOpen(char bFocusOnOpen); // Function UMG.MenuAnchor.ToggleOpen(Final|Native|Public|BlueprintCallable) // <Game+0x3376960>
+	void ToggleOpen(char bFocusOnOpen); // Function UMG.MenuAnchor.ToggleOpen(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3376960>
+	char ShouldOpenDueToClick(); // Function UMG.MenuAnchor.ShouldOpenDueToClick(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3376930>
+	void SetPlacement(char InPlacement); // Function UMG.MenuAnchor.SetPlacement(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3376390>
+	void Open(char bFocusMenu); // Function UMG.MenuAnchor.Open(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3375C90>
+	char IsOpen(); // Function UMG.MenuAnchor.IsOpen(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3375C60>
+	char HasOpenSubMenus(); // Function UMG.MenuAnchor.HasOpenSubMenus(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3375C30>
+	struct Unknown GetMenuPosition(); // Function UMG.MenuAnchor.GetMenuPosition(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33759C0>
+	void FitInWindow(char bFit); // Function UMG.MenuAnchor.FitInWindow(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3375590>
+	void Close(); // Function UMG.MenuAnchor.Close(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3375570>
 };
 
 // Class UMG.MovieScene2DTransformSection
 struct UMovieScene2DTransformSection : UMovieSceneSection {
-	struct Unknown TransformMask; //  0xe0 Size(4)
-	struct Unknown Translation; //  0xe8 Size(140)
-	struct Unknown Rotation; //  0x228 Size(a0)
-	struct Unknown Scale; //  0x2c8 Size(140)
-	struct Unknown Shear; //  0x408 Size(140)
+	struct Unknown TransformMask; // 0xE0 (4)
+	struct Unknown Translation[0x2]; // 0xE8 (320)
+	struct Unknown Rotation; // 0x228 (160)
+	struct Unknown Scale[0x2]; // 0x2C8 (320)
+	struct Unknown Shear[0x2]; // 0x408 (320)
 };
 
 // Class UMG.MovieSceneMarginSection
 struct UMovieSceneMarginSection : UMovieSceneSection {
-	struct Unknown TopCurve; //  0xe0 Size(a0)
-	struct Unknown LeftCurve; //  0x180 Size(a0)
-	struct Unknown RightCurve; //  0x220 Size(a0)
-	struct Unknown BottomCurve; //  0x2c0 Size(a0)
+	struct Unknown TopCurve; // 0xE0 (160)
+	struct Unknown LeftCurve; // 0x180 (160)
+	struct Unknown RightCurve; // 0x220 (160)
+	struct Unknown BottomCurve; // 0x2C0 (160)
 };
 
 // Class UMG.MovieSceneWidgetMaterialTrack
 struct UMovieSceneWidgetMaterialTrack : UMovieSceneMaterialTrack {
-	struct TArray<Unknown> BrushPropertyNamePath; //  0x68 Size(10)
-	struct FName TrackName; //  0x78 Size(8)
+	struct TArray<Unknown> BrushPropertyNamePath; // 0x68 (16)
+	struct FName TrackName; // 0x78 (8)
 };
 
 // Class UMG.TextLayoutWidget
 struct UTextLayoutWidget : UWidget {
-	struct Unknown ShapedTextOptions; //  0x108 Size(3)
-	char Justification; //  0x10b Size(1)
-	enum class Unknow WrappingPolicy; //  0x10c Size(1)
-	char AutoWrapText; //  0x10d Size(1)
-	float WrapTextAt; //  0x110 Size(4)
-	struct Unknown Margin; //  0x114 Size(10)
-	float LineHeightPercentage; //  0x124 Size(4)
+	struct Unknown ShapedTextOptions; // 0x108 (3)
+	char Justification; // 0x10B (1)
+	enum class Unknow WrappingPolicy; // 0x10C (1)
+	char AutoWrapText : 0; // 0x10D (1)
+	float WrapTextAt; // 0x110 (4)
+	struct Unknown Margin; // 0x114 (16)
+	float LineHeightPercentage; // 0x124 (4)
 
-	void SetJustification(char InJustification); // Function UMG.TextLayoutWidget.SetJustification(Native|Public|BlueprintCallable) // <Game+0x3387280>
+	void SetJustification(char InJustification); // Function UMG.TextLayoutWidget.SetJustification(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3387280>
 };
 
 // Class UMG.MultiLineEditableText
 struct UMultiLineEditableText : UTextLayoutWidget {
-	struct FText Text; //  0x128 Size(18)
-	struct FText HintText; //  0x140 Size(18)
-	struct FDelegate HintTextDelegate; //  0x158 Size(10)
-	struct Unknown WidgetStyle; //  0x168 Size(268)
-	char bIsReadOnly; //  0x3d0 Size(1)
-	struct Unknown Font; //  0x3d8 Size(50)
-	char SelectAllTextWhenFocused; //  0x428 Size(1)
-	char ClearTextSelectionOnFocusLoss; //  0x429 Size(1)
-	char RevertTextOnEscape; //  0x42a Size(1)
-	char ClearKeyboardFocusOnCommit; //  0x42b Size(1)
-	char AllowContextMenu; //  0x42c Size(1)
-	struct Unknown VirtualKeyboardOptions; //  0x42d Size(1)
-	enum class Unknow VirtualKeyboardDismissAction; //  0x42e Size(1)
-	struct FMulticastInlineDelegate OnTextChanged; //  0x430 Size(10)
-	struct FMulticastInlineDelegate OnTextCommitted; //  0x440 Size(10)
+	struct FText Text; // 0x128 (24)
+	struct FText HintText; // 0x140 (24)
+	struct FDelegate HintTextDelegate; // 0x158 (16)
+	struct Unknown WidgetStyle; // 0x168 (616)
+	char bIsReadOnly : 0; // 0x3D0 (1)
+	struct Unknown Font; // 0x3D8 (80)
+	char SelectAllTextWhenFocused : 0; // 0x428 (1)
+	char ClearTextSelectionOnFocusLoss : 0; // 0x429 (1)
+	char RevertTextOnEscape : 0; // 0x42A (1)
+	char ClearKeyboardFocusOnCommit : 0; // 0x42B (1)
+	char AllowContextMenu : 0; // 0x42C (1)
+	struct Unknown VirtualKeyboardOptions; // 0x42D (1)
+	enum class Unknow VirtualKeyboardDismissAction; // 0x42E (1)
+	struct FMulticastInlineDelegate OnTextChanged; // 0x430 (16)
+	struct FMulticastInlineDelegate OnTextCommitted; // 0x440 (16)
 
-	void SetWidgetStyle(struct Unknown& InWidgetStyle); // Function UMG.MultiLineEditableText.SetWidgetStyle(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x3376880>
+	void SetWidgetStyle(struct Unknown& InWidgetStyle); // Function UMG.MultiLineEditableText.SetWidgetStyle(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3376880>
+	void SetText(struct FText InText); // Function UMG.MultiLineEditableText.SetText(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3376510>
+	void SetIsReadOnly(char b); // Function UMG.MultiLineEditableText.SetIsReadOnly(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33761E0>
+	void SetHintText(struct FText InHintText); // Function UMG.MultiLineEditableText.SetHintText(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3375FA0>
+	void OnMultiLineEditableTextCommittedEvent__DelegateSignature(struct FText& Text, char CommitMethod); // DelegateFunction UMG.MultiLineEditableText.OnMultiLineEditableTextCommittedEvent__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void OnMultiLineEditableTextChangedEvent__DelegateSignature(struct FText& Text); // DelegateFunction UMG.MultiLineEditableText.OnMultiLineEditableTextChangedEvent__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	struct FText GetText(); // Function UMG.MultiLineEditableText.GetText(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3375A00>
+	struct FText GetHintText(); // Function UMG.MultiLineEditableText.GetHintText(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3375880>
 };
 
 // Class UMG.MultiLineEditableTextBox
 struct UMultiLineEditableTextBox : UTextLayoutWidget {
-	struct FText Text; //  0x128 Size(18)
-	struct FText HintText; //  0x140 Size(18)
-	struct FDelegate HintTextDelegate; //  0x158 Size(10)
-	struct Unknown WidgetStyle; //  0x168 Size(7f0)
-	struct Unknown TextStyle; //  0x958 Size(268)
-	char bIsReadOnly; //  0xbc0 Size(1)
-	char AllowContextMenu; //  0xbc1 Size(1)
-	struct Unknown VirtualKeyboardOptions; //  0xbc2 Size(1)
-	enum class Unknow VirtualKeyboardDismissAction; //  0xbc3 Size(1)
-	struct Unknown Style; //  0xbc8 Size(8)
-	struct Unknown Font; //  0xbd0 Size(50)
-	struct Unknown ForegroundColor; //  0xc20 Size(10)
-	struct Unknown BackgroundColor; //  0xc30 Size(10)
-	struct Unknown ReadOnlyForegroundColor; //  0xc40 Size(10)
-	struct FMulticastInlineDelegate OnTextChanged; //  0xc50 Size(10)
-	struct FMulticastInlineDelegate OnTextCommitted; //  0xc60 Size(10)
+	struct FText Text; // 0x128 (24)
+	struct FText HintText; // 0x140 (24)
+	struct FDelegate HintTextDelegate; // 0x158 (16)
+	struct Unknown WidgetStyle; // 0x168 (2032)
+	struct Unknown TextStyle; // 0x958 (616)
+	char bIsReadOnly : 0; // 0xBC0 (1)
+	char AllowContextMenu : 0; // 0xBC1 (1)
+	struct Unknown VirtualKeyboardOptions; // 0xBC2 (1)
+	enum class Unknow VirtualKeyboardDismissAction; // 0xBC3 (1)
+	struct Unknown Style; // 0xBC8 (8)
+	struct Unknown Font; // 0xBD0 (80)
+	struct Unknown ForegroundColor; // 0xC20 (16)
+	struct Unknown BackgroundColor; // 0xC30 (16)
+	struct Unknown ReadOnlyForegroundColor; // 0xC40 (16)
+	struct FMulticastInlineDelegate OnTextChanged; // 0xC50 (16)
+	struct FMulticastInlineDelegate OnTextCommitted; // 0xC60 (16)
 
-	void SetTextStyle(struct Unknown& InTextStyle); // Function UMG.MultiLineEditableTextBox.SetTextStyle(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game+0x33766d0>
+	void SetTextStyle(struct Unknown& InTextStyle); // Function UMG.MultiLineEditableTextBox.SetTextStyle(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33766D0>
+	void SetText(struct FText InText); // Function UMG.MultiLineEditableTextBox.SetText(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33765F0>
+	void SetIsReadOnly(char b); // Function UMG.MultiLineEditableTextBox.SetIsReadOnly(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3376270>
+	void SetHintText(struct FText InHintText); // Function UMG.MultiLineEditableTextBox.SetHintText(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3376080>
+	void SetError(struct FText InError); // Function UMG.MultiLineEditableTextBox.SetError(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3375EC0>
+	void OnMultiLineEditableTextBoxCommittedEvent__DelegateSignature(struct FText& Text, char CommitMethod); // DelegateFunction UMG.MultiLineEditableTextBox.OnMultiLineEditableTextBoxCommittedEvent__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void OnMultiLineEditableTextBoxChangedEvent__DelegateSignature(struct FText& Text); // DelegateFunction UMG.MultiLineEditableTextBox.OnMultiLineEditableTextBoxChangedEvent__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	struct FText GetText(); // Function UMG.MultiLineEditableTextBox.GetText(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3375AA0>
+	struct FText GetHintText(); // Function UMG.MultiLineEditableTextBox.GetHintText(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3375920>
 };
 
 // Class UMG.OverlaySlot
 struct UOverlaySlot : UPanelSlot {
-	struct Unknown Padding; //  0x40 Size(10)
-	char HorizontalAlignment; //  0x50 Size(1)
-	char VerticalAlignment; //  0x51 Size(1)
+	struct Unknown Padding; // 0x40 (16)
+	char HorizontalAlignment; // 0x50 (1)
+	char VerticalAlignment; // 0x51 (1)
 
-	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.OverlaySlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game+0x3376780>
+	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.OverlaySlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3376780>
+	void SetPadding(struct Unknown InPadding); // Function UMG.OverlaySlot.SetPadding(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3376300>
+	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.OverlaySlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3376160>
 };
 
 // Class UMG.ProgressBar
 struct UProgressBar : UWidget {
-	struct Unknown WidgetStyle; //  0x108 Size(1a0)
-	struct Unknown Style; //  0x2a8 Size(8)
-	struct Unknown BackgroundImage; //  0x2b0 Size(8)
-	struct Unknown FillImage; //  0x2b8 Size(8)
-	struct Unknown MarqueeImage; //  0x2c0 Size(8)
-	float Percent; //  0x2c8 Size(4)
-	char BarFillType; //  0x2cc Size(1)
-	char bIsMarquee; //  0x2cd Size(1)
-	struct Unknown BorderPadding; //  0x2d0 Size(8)
-	struct FDelegate PercentDelegate; //  0x2d8 Size(10)
-	struct Unknown FillColorAndOpacity; //  0x2e8 Size(10)
-	struct FDelegate FillColorAndOpacityDelegate; //  0x2f8 Size(10)
+	struct Unknown WidgetStyle; // 0x108 (416)
+	struct Unknown Style; // 0x2A8 (8)
+	struct Unknown BackgroundImage; // 0x2B0 (8)
+	struct Unknown FillImage; // 0x2B8 (8)
+	struct Unknown MarqueeImage; // 0x2C0 (8)
+	float Percent; // 0x2C8 (4)
+	char BarFillType; // 0x2CC (1)
+	char bIsMarquee : 0; // 0x2CD (1)
+	struct Unknown BorderPadding; // 0x2D0 (8)
+	struct FDelegate PercentDelegate; // 0x2D8 (16)
+	struct Unknown FillColorAndOpacity; // 0x2E8 (16)
+	struct FDelegate FillColorAndOpacityDelegate; // 0x2F8 (16)
 
-	void SetPercent(float InPercent); // Function UMG.ProgressBar.SetPercent(Final|Native|Public|BlueprintCallable) // <Game+0x337a620>
+	void SetPercent(float InPercent); // Function UMG.ProgressBar.SetPercent(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337A620>
+	void SetIsMarquee(char InbIsMarquee); // Function UMG.ProgressBar.SetIsMarquee(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337A070>
+	void SetFillColorAndOpacity(struct Unknown InColor); // Function UMG.ProgressBar.SetFillColorAndOpacity(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3379E60>
 };
 
 // Class UMG.RetainerBox
 struct URetainerBox : UContentWidget {
-	char RenderOnInvalidation; //  0x120 Size(1)
-	char RenderOnPhase; //  0x121 Size(1)
-	int32_t Phase; //  0x124 Size(4)
-	int32_t PhaseCount; //  0x128 Size(4)
-	struct Unknown EffectMaterial; //  0x130 Size(8)
-	struct FName TextureParameter; //  0x138 Size(8)
+	char RenderOnInvalidation : 0; // 0x120 (1)
+	char RenderOnPhase : 0; // 0x121 (1)
+	int32_t Phase; // 0x124 (4)
+	int32_t PhaseCount; // 0x128 (4)
+	struct Unknown EffectMaterial; // 0x130 (8)
+	struct FName TextureParameter; // 0x138 (8)
 
-	void SetTextureParameter(struct FName TextureParameter); // Function UMG.RetainerBox.SetTextureParameter(Final|Native|Public|BlueprintCallable) // <Game+0x337ae20>
+	void SetTextureParameter(struct FName TextureParameter); // Function UMG.RetainerBox.SetTextureParameter(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337AE20>
+	void SetRenderingPhase(int32_t RenderPhase, int32_t TotalPhases); // Function UMG.RetainerBox.SetRenderingPhase(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337A6A0>
+	void SetEffectMaterial(struct Unknown EffectMaterial); // Function UMG.RetainerBox.SetEffectMaterial(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3379DE0>
+	void RequestRender(); // Function UMG.RetainerBox.RequestRender(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3379440>
+	struct Unknown GetEffectMaterial(); // Function UMG.RetainerBox.GetEffectMaterial(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33792E0>
 };
 
 // Class UMG.RichTextBlock
 struct URichTextBlock : UTextLayoutWidget {
-	struct FText Text; //  0x128 Size(18)
-	struct Unknown TextStyleSet; //  0x140 Size(8)
-	struct TArray<Unknown> DecoratorClasses; //  0x148 Size(10)
-	char bOverrideDefaultStyle; //  0x158 Size(1)
-	struct Unknown DefaultTextStyleOverride; //  0x160 Size(268)
-	float MinDesiredWidth; //  0x3c8 Size(4)
-	struct TArray<Unknown> InstanceDecorators; //  0x638 Size(10)
+	struct FText Text; // 0x128 (24)
+	struct Unknown TextStyleSet; // 0x140 (8)
+	struct TArray<Unknown> DecoratorClasses; // 0x148 (16)
+	char bOverrideDefaultStyle : 0; // 0x158 (1)
+	struct Unknown DefaultTextStyleOverride; // 0x160 (616)
+	float MinDesiredWidth; // 0x3C8 (4)
+	struct TArray<Unknown> InstanceDecorators; // 0x638 (16)
 
-	void SetTextStyleSet(struct Unknown NewTextStyleSet); // Function UMG.RichTextBlock.SetTextStyleSet(Final|Native|Public|BlueprintCallable) // <Game+0x337ada0>
+	void SetTextStyleSet(struct Unknown NewTextStyleSet); // Function UMG.RichTextBlock.SetTextStyleSet(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337ADA0>
+	void SetText(struct FText& InText); // Function UMG.RichTextBlock.SetText(Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337ACC0>
+	void SetMinDesiredWidth(float InMinDesiredWidth); // Function UMG.RichTextBlock.SetMinDesiredWidth(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337A380>
+	void SetDefaultTextStyle(struct Unknown& InDefaultTextStyle); // Function UMG.RichTextBlock.SetDefaultTextStyle(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3379D30>
+	void SetDefaultStrikeBrush(struct Unknown& InStrikeBrush); // Function UMG.RichTextBlock.SetDefaultStrikeBrush(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3379BB0>
+	void SetDefaultShadowOffset(struct Unknown InShadowOffset); // Function UMG.RichTextBlock.SetDefaultShadowOffset(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3379B30>
+	void SetDefaultShadowColorAndOpacity(struct Unknown InShadowColorAndOpacity); // Function UMG.RichTextBlock.SetDefaultShadowColorAndOpacity(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3379AB0>
+	void SetDefaultFont(struct Unknown InFontInfo); // Function UMG.RichTextBlock.SetDefaultFont(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33799A0>
+	void SetDefaultColorAndOpacity(struct Unknown InColorAndOpacity); // Function UMG.RichTextBlock.SetDefaultColorAndOpacity(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33798B0>
+	void SetAutoWrapText(char InAutoTextWrap); // Function UMG.RichTextBlock.SetAutoWrapText(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33797A0>
+	struct FText GetText(); // Function UMG.RichTextBlock.GetText(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3379370>
+	struct Unknown GetDecoratorByClass(struct Unknown* DecoratorClass); // Function UMG.RichTextBlock.GetDecoratorByClass(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3379250>
+	void ClearAllDefaultStyleOverrides(); // Function UMG.RichTextBlock.ClearAllDefaultStyleOverrides(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3379110>
 };
 
 // Class UMG.RichTextBlockImageDecorator
 struct URichTextBlockImageDecorator : URichTextBlockDecorator {
-	struct Unknown ImageSet; //  0x28 Size(8)
+	struct Unknown ImageSet; // 0x28 (8)
 };
 
 // Class UMG.SafeZone
 struct USafeZone : UContentWidget {
-	char PadLeft; //  0x120 Size(1)
-	char PadRight; //  0x121 Size(1)
-	char PadTop; //  0x122 Size(1)
-	char PadBottom; //  0x123 Size(1)
+	char PadLeft : 0; // 0x120 (1)
+	char PadRight : 0; // 0x121 (1)
+	char PadTop : 0; // 0x122 (1)
+	char PadBottom : 0; // 0x123 (1)
 
-	void SetSidesToPad(char InPadLeft, char InPadRight, char InPadTop, char InPadBottom); // Function UMG.SafeZone.SetSidesToPad(Final|Native|Public|BlueprintCallable) // <Game+0x337a990>
+	void SetSidesToPad(char InPadLeft, char InPadRight, char InPadTop, char InPadBottom); // Function UMG.SafeZone.SetSidesToPad(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337A990>
 };
 
 // Class UMG.SafeZoneSlot
 struct USafeZoneSlot : UPanelSlot {
-	char bIsTitleSafe; //  0x38 Size(1)
-	struct Unknown SafeAreaScale; //  0x3c Size(10)
-	char HAlign; //  0x4c Size(1)
-	char VAlign; //  0x4d Size(1)
-	struct Unknown Padding; //  0x50 Size(10)
+	char bIsTitleSafe : 0; // 0x38 (1)
+	struct Unknown SafeAreaScale; // 0x3C (16)
+	char HAlign; // 0x4C (1)
+	char VAlign; // 0x4D (1)
+	struct Unknown Padding; // 0x50 (16)
 };
 
 // Class UMG.ScaleBox
 struct UScaleBox : UContentWidget {
-	char Stretch; //  0x120 Size(1)
-	char StretchDirection; //  0x121 Size(1)
-	float UserSpecifiedScale; //  0x124 Size(4)
-	char IgnoreInheritedScale; //  0x128 Size(1)
+	char Stretch; // 0x120 (1)
+	char StretchDirection; // 0x121 (1)
+	float UserSpecifiedScale; // 0x124 (4)
+	char IgnoreInheritedScale : 0; // 0x128 (1)
 
-	void SetUserSpecifiedScale(float InUserSpecifiedScale); // Function UMG.ScaleBox.SetUserSpecifiedScale(Final|Native|Public|BlueprintCallable) // <Game+0x337aea0>
+	void SetUserSpecifiedScale(float InUserSpecifiedScale); // Function UMG.ScaleBox.SetUserSpecifiedScale(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337AEA0>
+	void SetStretchDirection(char InStretchDirection); // Function UMG.ScaleBox.SetStretchDirection(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337AC40>
+	void SetStretch(char InStretch); // Function UMG.ScaleBox.SetStretch(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337ABC0>
+	void SetIgnoreInheritedScale(char bInIgnoreInheritedScale); // Function UMG.ScaleBox.SetIgnoreInheritedScale(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3379FE0>
 };
 
 // Class UMG.ScaleBoxSlot
 struct UScaleBoxSlot : UPanelSlot {
-	struct Unknown Padding; //  0x38 Size(10)
-	char HorizontalAlignment; //  0x48 Size(1)
-	char VerticalAlignment; //  0x49 Size(1)
+	struct Unknown Padding; // 0x38 (16)
+	char HorizontalAlignment; // 0x48 (1)
+	char VerticalAlignment; // 0x49 (1)
 
-	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.ScaleBoxSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game+0x3369360>
+	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.ScaleBoxSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3369360>
+	void SetPadding(struct Unknown InPadding); // Function UMG.ScaleBoxSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337A500>
+	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.ScaleBoxSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33686F0>
 };
 
 // Class UMG.ScrollBar
 struct UScrollBar : UWidget {
-	struct Unknown WidgetStyle; //  0x108 Size(4d0)
-	struct Unknown Style; //  0x5d8 Size(8)
-	char bAlwaysShowScrollbar; //  0x5e0 Size(1)
-	char bAlwaysShowScrollbarTrack; //  0x5e1 Size(1)
-	char Orientation; //  0x5e2 Size(1)
-	struct Unknown Thickness; //  0x5e4 Size(8)
-	struct Unknown Padding; //  0x5ec Size(10)
+	struct Unknown WidgetStyle; // 0x108 (1232)
+	struct Unknown Style; // 0x5D8 (8)
+	char bAlwaysShowScrollbar : 0; // 0x5E0 (1)
+	char bAlwaysShowScrollbarTrack : 0; // 0x5E1 (1)
+	char Orientation; // 0x5E2 (1)
+	struct Unknown Thickness; // 0x5E4 (8)
+	struct Unknown Padding; // 0x5EC (16)
 
-	void SetState(float InOffsetFraction, float InThumbSizeFraction); // Function UMG.ScrollBar.SetState(Final|Native|Public|BlueprintCallable) // <Game+0x337ab00>
+	void SetState(float InOffsetFraction, float InThumbSizeFraction); // Function UMG.ScrollBar.SetState(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337AB00>
 };
 
 // Class UMG.ScrollBox
 struct UScrollBox : UPanelWidget {
-	struct Unknown WidgetStyle; //  0x120 Size(228)
-	struct Unknown WidgetBarStyle; //  0x348 Size(4d0)
-	struct Unknown Style; //  0x818 Size(8)
-	struct Unknown BarStyle; //  0x820 Size(8)
-	char Orientation; //  0x828 Size(1)
-	enum class Unknow ScrollBarVisibility; //  0x829 Size(1)
-	enum class Unknow ConsumeMouseWheel; //  0x82a Size(1)
-	struct Unknown ScrollbarThickness; //  0x82c Size(8)
-	struct Unknown ScrollbarPadding; //  0x834 Size(10)
-	char AlwaysShowScrollbar; //  0x844 Size(1)
-	char AlwaysShowScrollbarTrack; //  0x845 Size(1)
-	char AllowOverscroll; //  0x846 Size(1)
-	char bAnimateWheelScrolling; //  0x847 Size(1)
-	enum class Unknow NavigationDestination; //  0x848 Size(1)
-	float NavigationScrollPadding; //  0x84c Size(4)
-	enum class Unknow ScrollWhenFocusChanges; //  0x850 Size(1)
-	char bAllowRightClickDragScrolling; //  0x851 Size(1)
-	float WheelScrollMultiplier; //  0x854 Size(4)
-	struct FMulticastInlineDelegate OnUserScrolled; //  0x858 Size(10)
+	struct Unknown WidgetStyle; // 0x120 (552)
+	struct Unknown WidgetBarStyle; // 0x348 (1232)
+	struct Unknown Style; // 0x818 (8)
+	struct Unknown BarStyle; // 0x820 (8)
+	char Orientation; // 0x828 (1)
+	enum class Unknow ScrollBarVisibility; // 0x829 (1)
+	enum class Unknow ConsumeMouseWheel; // 0x82A (1)
+	struct Unknown ScrollbarThickness; // 0x82C (8)
+	struct Unknown ScrollbarPadding; // 0x834 (16)
+	char AlwaysShowScrollbar : 0; // 0x844 (1)
+	char AlwaysShowScrollbarTrack : 0; // 0x845 (1)
+	char AllowOverscroll : 0; // 0x846 (1)
+	char bAnimateWheelScrolling : 0; // 0x847 (1)
+	enum class Unknow NavigationDestination; // 0x848 (1)
+	float NavigationScrollPadding; // 0x84C (4)
+	enum class Unknow ScrollWhenFocusChanges; // 0x850 (1)
+	char bAllowRightClickDragScrolling : 0; // 0x851 (1)
+	float WheelScrollMultiplier; // 0x854 (4)
+	struct FMulticastInlineDelegate OnUserScrolled; // 0x858 (16)
 
-	void SetWheelScrollMultiplier(float NewWheelScrollMultiplier); // Function UMG.ScrollBox.SetWheelScrollMultiplier(Final|Native|Public|BlueprintCallable) // <Game+0x337afa0>
+	void SetWheelScrollMultiplier(float NewWheelScrollMultiplier); // Function UMG.ScrollBox.SetWheelScrollMultiplier(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337AFA0>
+	void SetScrollOffset(float NewScrollOffset); // Function UMG.ScrollBox.SetScrollOffset(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337A7E0>
+	void SetScrollbarVisibility(enum class Unknow NewScrollBarVisibility); // Function UMG.ScrollBox.SetScrollbarVisibility(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337A760>
+	void SetScrollbarThickness(struct Unknown& NewScrollbarThickness); // Function UMG.ScrollBox.SetScrollbarThickness(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337A900>
+	void SetScrollbarPadding(struct Unknown& NewScrollbarPadding); // Function UMG.ScrollBox.SetScrollbarPadding(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337A860>
+	void SetOrientation(char NewOrientation); // Function UMG.ScrollBox.SetOrientation(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337A480>
+	void SetConsumeMouseWheel(enum class Unknow NewConsumeMouseWheel); // Function UMG.ScrollBox.SetConsumeMouseWheel(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3379830>
+	void SetAnimateWheelScrolling(char bShouldAnimateWheelScrolling); // Function UMG.ScrollBox.SetAnimateWheelScrolling(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3379710>
+	void SetAlwaysShowScrollbar(char NewAlwaysShowScrollbar); // Function UMG.ScrollBox.SetAlwaysShowScrollbar(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3379680>
+	void SetAllowOverscroll(char NewAllowOverscroll); // Function UMG.ScrollBox.SetAllowOverscroll(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33795F0>
+	void ScrollWidgetIntoView(struct Unknown WidgetToFind, char AnimateScroll, enum class Unknow ScrollDestination, float Padding); // Function UMG.ScrollBox.ScrollWidgetIntoView(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33794A0>
+	void ScrollToStart(); // Function UMG.ScrollBox.ScrollToStart(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3379480>
+	void ScrollToEnd(); // Function UMG.ScrollBox.ScrollToEnd(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3379460>
+	float GetViewOffsetFraction(); // Function UMG.ScrollBox.GetViewOffsetFraction(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3379410>
+	float GetScrollOffsetOfEnd(); // Function UMG.ScrollBox.GetScrollOffsetOfEnd(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3379340>
+	float GetScrollOffset(); // Function UMG.ScrollBox.GetScrollOffset(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3379310>
+	void EndInertialScrolling(); // Function UMG.ScrollBox.EndInertialScrolling(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3379230>
 };
 
 // Class UMG.ScrollBoxSlot
 struct UScrollBoxSlot : UPanelSlot {
-	struct Unknown Padding; //  0x38 Size(10)
-	char HorizontalAlignment; //  0x48 Size(1)
-	char VerticalAlignment; //  0x49 Size(1)
+	struct Unknown Padding; // 0x38 (16)
+	char HorizontalAlignment; // 0x48 (1)
+	char VerticalAlignment; // 0x49 (1)
 
-	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.ScrollBoxSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game+0x337af20>
+	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.ScrollBoxSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337AF20>
+	void SetPadding(struct Unknown InPadding); // Function UMG.ScrollBoxSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337A590>
+	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.ScrollBoxSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3379F60>
 };
 
 // Class UMG.SizeBox
 struct USizeBox : UContentWidget {
-	float WidthOverride; //  0x130 Size(4)
-	float HeightOverride; //  0x134 Size(4)
-	float MinDesiredWidth; //  0x138 Size(4)
-	float MinDesiredHeight; //  0x13c Size(4)
-	float MaxDesiredWidth; //  0x140 Size(4)
-	float MaxDesiredHeight; //  0x144 Size(4)
-	float MinAspectRatio; //  0x148 Size(4)
-	float MaxAspectRatio; //  0x14c Size(4)
-	char bOverride_WidthOverride; //  0x150 Size(1)
-	char bOverride_HeightOverride; //  0x150 Size(1)
-	char bOverride_MinDesiredWidth; //  0x150 Size(1)
-	char bOverride_MinDesiredHeight; //  0x150 Size(1)
-	char bOverride_MaxDesiredWidth; //  0x150 Size(1)
-	char bOverride_MaxDesiredHeight; //  0x150 Size(1)
-	char bOverride_MinAspectRatio; //  0x150 Size(1)
-	char bOverride_MaxAspectRatio; //  0x150 Size(1)
+	float WidthOverride; // 0x130 (4)
+	float HeightOverride; // 0x134 (4)
+	float MinDesiredWidth; // 0x138 (4)
+	float MinDesiredHeight; // 0x13C (4)
+	float MaxDesiredWidth; // 0x140 (4)
+	float MaxDesiredHeight; // 0x144 (4)
+	float MinAspectRatio; // 0x148 (4)
+	float MaxAspectRatio; // 0x14C (4)
+	char bOverride_WidthOverride : 0; // 0x150 (1)
+	char bOverride_HeightOverride : 0; // 0x150 (1)
+	char bOverride_MinDesiredWidth : 0; // 0x150 (1)
+	char bOverride_MinDesiredHeight : 0; // 0x150 (1)
+	char bOverride_MaxDesiredWidth : 0; // 0x150 (1)
+	char bOverride_MaxDesiredHeight : 0; // 0x150 (1)
+	char bOverride_MinAspectRatio : 0; // 0x150 (1)
+	char bOverride_MaxAspectRatio : 0; // 0x150 (1)
 
-	void SetWidthOverride(float InWidthOverride); // Function UMG.SizeBox.SetWidthOverride(Final|Native|Public|BlueprintCallable) // <Game+0x337b020>
+	void SetWidthOverride(float InWidthOverride); // Function UMG.SizeBox.SetWidthOverride(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337B020>
+	void SetMinDesiredWidth(float InMinDesiredWidth); // Function UMG.SizeBox.SetMinDesiredWidth(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337A400>
+	void SetMinDesiredHeight(float InMinDesiredHeight); // Function UMG.SizeBox.SetMinDesiredHeight(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337A300>
+	void SetMinAspectRatio(float InMinAspectRatio); // Function UMG.SizeBox.SetMinAspectRatio(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337A280>
+	void SetMaxDesiredWidth(float InMaxDesiredWidth); // Function UMG.SizeBox.SetMaxDesiredWidth(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337A200>
+	void SetMaxDesiredHeight(float InMaxDesiredHeight); // Function UMG.SizeBox.SetMaxDesiredHeight(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337A180>
+	void SetMaxAspectRatio(float InMaxAspectRatio); // Function UMG.SizeBox.SetMaxAspectRatio(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337A100>
+	void SetHeightOverride(float InHeightOverride); // Function UMG.SizeBox.SetHeightOverride(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3379EE0>
+	void ClearWidthOverride(); // Function UMG.SizeBox.ClearWidthOverride(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3379210>
+	void ClearMinDesiredWidth(); // Function UMG.SizeBox.ClearMinDesiredWidth(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33791F0>
+	void ClearMinDesiredHeight(); // Function UMG.SizeBox.ClearMinDesiredHeight(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33791D0>
+	void ClearMinAspectRatio(); // Function UMG.SizeBox.ClearMinAspectRatio(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33791B0>
+	void ClearMaxDesiredWidth(); // Function UMG.SizeBox.ClearMaxDesiredWidth(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3379190>
+	void ClearMaxDesiredHeight(); // Function UMG.SizeBox.ClearMaxDesiredHeight(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3379170>
+	void ClearMaxAspectRatio(); // Function UMG.SizeBox.ClearMaxAspectRatio(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3379150>
+	void ClearHeightOverride(); // Function UMG.SizeBox.ClearHeightOverride(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3379130>
 };
 
 // Class UMG.SizeBoxSlot
 struct USizeBoxSlot : UPanelSlot {
-	struct Unknown Padding; //  0x38 Size(10)
-	char HorizontalAlignment; //  0x58 Size(1)
-	char VerticalAlignment; //  0x59 Size(1)
+	struct Unknown Padding; // 0x38 (16)
+	char HorizontalAlignment; // 0x58 (1)
+	char VerticalAlignment; // 0x59 (1)
 
-	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.SizeBoxSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game+0x337f020>
+	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.SizeBoxSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337F020>
+	void SetPadding(struct Unknown InPadding); // Function UMG.SizeBoxSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337EC90>
+	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.SizeBoxSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337E6F0>
 };
 
 // Class UMG.SlateVectorArtData
 struct USlateVectorArtData : Object {
-	struct TArray<Unknown> VertexData; //  0x28 Size(10)
-	struct TArray<Unknown> IndexData; //  0x38 Size(10)
-	struct Unknown Material; //  0x48 Size(8)
-	struct Unknown ExtentMin; //  0x50 Size(8)
-	struct Unknown ExtentMax; //  0x58 Size(8)
+	struct TArray<Unknown> VertexData; // 0x28 (16)
+	struct TArray<Unknown> IndexData; // 0x38 (16)
+	struct Unknown Material; // 0x48 (8)
+	struct Unknown ExtentMin; // 0x50 (8)
+	struct Unknown ExtentMax; // 0x58 (8)
 };
 
 // Class UMG.SlateAccessibleWidgetData
 struct USlateAccessibleWidgetData : Object {
-	char bCanChildrenBeAccessible; //  0x28 Size(1)
-	enum class Unknow AccessibleBehavior; //  0x29 Size(1)
-	enum class Unknow AccessibleSummaryBehavior; //  0x2a Size(1)
-	struct FText AccessibleText; //  0x30 Size(18)
-	struct FDelegate AccessibleTextDelegate; //  0x48 Size(10)
-	struct FText AccessibleSummaryText; //  0x58 Size(18)
-	struct FDelegate AccessibleSummaryTextDelegate; //  0x70 Size(10)
+	char bCanChildrenBeAccessible : 0; // 0x28 (1)
+	enum class Unknow AccessibleBehavior; // 0x29 (1)
+	enum class Unknow AccessibleSummaryBehavior; // 0x2A (1)
+	struct FText AccessibleText; // 0x30 (24)
+	struct FDelegate AccessibleTextDelegate; // 0x48 (16)
+	struct FText AccessibleSummaryText; // 0x58 (24)
+	struct FDelegate AccessibleSummaryTextDelegate; // 0x70 (16)
 };
 
 // Class UMG.Slider
 struct USlider : UWidget {
-	float Value; //  0x108 Size(4)
-	struct FDelegate ValueDelegate; //  0x10c Size(10)
-	float MinValue; //  0x11c Size(4)
-	float MaxValue; //  0x120 Size(4)
-	struct Unknown WidgetStyle; //  0x128 Size(340)
-	char Orientation; //  0x468 Size(1)
-	struct Unknown SliderBarColor; //  0x46c Size(10)
-	struct Unknown SliderHandleColor; //  0x47c Size(10)
-	char IndentHandle; //  0x48c Size(1)
-	char Locked; //  0x48d Size(1)
-	char MouseUsesStep; //  0x48e Size(1)
-	char RequiresControllerLock; //  0x48f Size(1)
-	float StepSize; //  0x490 Size(4)
-	char IsFocusable; //  0x494 Size(1)
-	struct FMulticastInlineDelegate OnMouseCaptureBegin; //  0x498 Size(10)
-	struct FMulticastInlineDelegate OnMouseCaptureEnd; //  0x4a8 Size(10)
-	struct FMulticastInlineDelegate OnControllerCaptureBegin; //  0x4b8 Size(10)
-	struct FMulticastInlineDelegate OnControllerCaptureEnd; //  0x4c8 Size(10)
-	struct FMulticastInlineDelegate OnValueChanged; //  0x4d8 Size(10)
+	float Value; // 0x108 (4)
+	struct FDelegate ValueDelegate; // 0x10C (16)
+	float MinValue; // 0x11C (4)
+	float MaxValue; // 0x120 (4)
+	struct Unknown WidgetStyle; // 0x128 (832)
+	char Orientation; // 0x468 (1)
+	struct Unknown SliderBarColor; // 0x46C (16)
+	struct Unknown SliderHandleColor; // 0x47C (16)
+	char IndentHandle : 0; // 0x48C (1)
+	char Locked : 0; // 0x48D (1)
+	char MouseUsesStep : 0; // 0x48E (1)
+	char RequiresControllerLock : 0; // 0x48F (1)
+	float StepSize; // 0x490 (4)
+	char IsFocusable : 0; // 0x494 (1)
+	struct FMulticastInlineDelegate OnMouseCaptureBegin; // 0x498 (16)
+	struct FMulticastInlineDelegate OnMouseCaptureEnd; // 0x4A8 (16)
+	struct FMulticastInlineDelegate OnControllerCaptureBegin; // 0x4B8 (16)
+	struct FMulticastInlineDelegate OnControllerCaptureEnd; // 0x4C8 (16)
+	struct FMulticastInlineDelegate OnValueChanged; // 0x4D8 (16)
 
-	void SetValue(float InValue); // Function UMG.Slider.SetValue(Final|Native|Public|BlueprintCallable) // <Game+0x337ef20>
+	void SetValue(float InValue); // Function UMG.Slider.SetValue(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337EF20>
+	void SetStepSize(float InValue); // Function UMG.Slider.SetStepSize(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337EEA0>
+	void SetSliderHandleColor(struct Unknown InValue); // Function UMG.Slider.SetSliderHandleColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337EE20>
+	void SetSliderBarColor(struct Unknown InValue); // Function UMG.Slider.SetSliderBarColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337EDA0>
+	void SetMinValue(float InValue); // Function UMG.Slider.SetMinValue(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337EB90>
+	void SetMaxValue(float InValue); // Function UMG.Slider.SetMaxValue(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337E990>
+	void SetLocked(char InValue); // Function UMG.Slider.SetLocked(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337E800>
+	void SetIndentHandle(char InValue); // Function UMG.Slider.SetIndentHandle(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337E770>
+	float GetValue(); // Function UMG.Slider.GetValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337DC90>
+	float GetNormalizedValue(); // Function UMG.Slider.GetNormalizedValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337DC60>
 };
 
 // Class UMG.Spacer
 struct USpacer : UWidget {
-	struct Unknown Size; //  0x108 Size(8)
+	struct Unknown Size; // 0x108 (8)
 
-	void SetSize(struct Unknown InSize); // Function UMG.Spacer.SetSize(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game+0x337ed20>
+	void SetSize(struct Unknown InSize); // Function UMG.Spacer.SetSize(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337ED20>
 };
 
 // Class UMG.SpinBox
 struct USpinBox : UWidget {
-	float Value; //  0x108 Size(4)
-	struct FDelegate ValueDelegate; //  0x10c Size(10)
-	struct Unknown WidgetStyle; //  0x120 Size(2e8)
-	struct Unknown Style; //  0x408 Size(8)
-	int32_t MinFractionalDigits; //  0x410 Size(4)
-	int32_t MaxFractionalDigits; //  0x414 Size(4)
-	char bAlwaysUsesDeltaSnap; //  0x418 Size(1)
-	float Delta; //  0x41c Size(4)
-	float SliderExponent; //  0x420 Size(4)
-	struct Unknown Font; //  0x428 Size(50)
-	char Justification; //  0x478 Size(1)
-	float MinDesiredWidth; //  0x47c Size(4)
-	char ClearKeyboardFocusOnCommit; //  0x480 Size(1)
-	char SelectAllTextOnCommit; //  0x481 Size(1)
-	struct Unknown ForegroundColor; //  0x488 Size(28)
-	struct FMulticastInlineDelegate OnValueChanged; //  0x4b0 Size(10)
-	struct FMulticastInlineDelegate OnValueCommitted; //  0x4c0 Size(10)
-	struct FMulticastInlineDelegate OnBeginSliderMovement; //  0x4d0 Size(10)
-	struct FMulticastInlineDelegate OnEndSliderMovement; //  0x4e0 Size(10)
-	char bOverride_MinValue; //  0x4f0 Size(1)
-	char bOverride_MaxValue; //  0x4f0 Size(1)
-	char bOverride_MinSliderValue; //  0x4f0 Size(1)
-	char bOverride_MaxSliderValue; //  0x4f0 Size(1)
-	float MinValue; //  0x4f4 Size(4)
-	float MaxValue; //  0x4f8 Size(4)
-	float MinSliderValue; //  0x4fc Size(4)
-	float MaxSliderValue; //  0x500 Size(4)
+	float Value; // 0x108 (4)
+	struct FDelegate ValueDelegate; // 0x10C (16)
+	struct Unknown WidgetStyle; // 0x120 (744)
+	struct Unknown Style; // 0x408 (8)
+	int32_t MinFractionalDigits; // 0x410 (4)
+	int32_t MaxFractionalDigits; // 0x414 (4)
+	char bAlwaysUsesDeltaSnap : 0; // 0x418 (1)
+	float Delta; // 0x41C (4)
+	float SliderExponent; // 0x420 (4)
+	struct Unknown Font; // 0x428 (80)
+	char Justification; // 0x478 (1)
+	float MinDesiredWidth; // 0x47C (4)
+	char ClearKeyboardFocusOnCommit : 0; // 0x480 (1)
+	char SelectAllTextOnCommit : 0; // 0x481 (1)
+	struct Unknown ForegroundColor; // 0x488 (40)
+	struct FMulticastInlineDelegate OnValueChanged; // 0x4B0 (16)
+	struct FMulticastInlineDelegate OnValueCommitted; // 0x4C0 (16)
+	struct FMulticastInlineDelegate OnBeginSliderMovement; // 0x4D0 (16)
+	struct FMulticastInlineDelegate OnEndSliderMovement; // 0x4E0 (16)
+	char bOverride_MinValue : 0; // 0x4F0 (1)
+	char bOverride_MaxValue : 0; // 0x4F0 (1)
+	char bOverride_MinSliderValue : 0; // 0x4F0 (1)
+	char bOverride_MaxSliderValue : 0; // 0x4F0 (1)
+	float MinValue; // 0x4F4 (4)
+	float MaxValue; // 0x4F8 (4)
+	float MinSliderValue; // 0x4FC (4)
+	float MaxSliderValue; // 0x500 (4)
 
-	void SetValue(float NewValue); // Function UMG.SpinBox.SetValue(Final|Native|Public|BlueprintCallable) // <Game+0x337efa0>
+	void SetValue(float NewValue); // Function UMG.SpinBox.SetValue(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337EFA0>
+	void SetMinValue(float NewValue); // Function UMG.SpinBox.SetMinValue(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337EC10>
+	void SetMinSliderValue(float NewValue); // Function UMG.SpinBox.SetMinSliderValue(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337EB10>
+	void SetMinFractionalDigits(int32_t NewValue); // Function UMG.SpinBox.SetMinFractionalDigits(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337EA90>
+	void SetMaxValue(float NewValue); // Function UMG.SpinBox.SetMaxValue(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337EA10>
+	void SetMaxSliderValue(float NewValue); // Function UMG.SpinBox.SetMaxSliderValue(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337E910>
+	void SetMaxFractionalDigits(int32_t NewValue); // Function UMG.SpinBox.SetMaxFractionalDigits(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337E890>
+	void SetForegroundColor(struct Unknown InForegroundColor); // Function UMG.SpinBox.SetForegroundColor(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337E600>
+	void SetDelta(float NewValue); // Function UMG.SpinBox.SetDelta(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337E580>
+	void SetAlwaysUsesDeltaSnap(char bNewValue); // Function UMG.SpinBox.SetAlwaysUsesDeltaSnap(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337E4F0>
+	void OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, char CommitMethod); // DelegateFunction UMG.SpinBox.OnSpinBoxValueCommittedEvent__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void OnSpinBoxValueChangedEvent__DelegateSignature(float InValue); // DelegateFunction UMG.SpinBox.OnSpinBoxValueChangedEvent__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void OnSpinBoxBeginSliderMovement__DelegateSignature(); // DelegateFunction UMG.SpinBox.OnSpinBoxBeginSliderMovement__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	float GetValue(); // Function UMG.SpinBox.GetValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337DCC0>
+	float GetMinValue(); // Function UMG.SpinBox.GetMinValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337DC30>
+	float GetMinSliderValue(); // Function UMG.SpinBox.GetMinSliderValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337DC00>
+	int32_t GetMinFractionalDigits(); // Function UMG.SpinBox.GetMinFractionalDigits(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337DBD0>
+	float GetMaxValue(); // Function UMG.SpinBox.GetMaxValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337DBA0>
+	float GetMaxSliderValue(); // Function UMG.SpinBox.GetMaxSliderValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337DB70>
+	int32_t GetMaxFractionalDigits(); // Function UMG.SpinBox.GetMaxFractionalDigits(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337DB40>
+	float GetDelta(); // Function UMG.SpinBox.GetDelta(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337D990>
+	char GetAlwaysUsesDeltaSnap(); // Function UMG.SpinBox.GetAlwaysUsesDeltaSnap(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337D960>
+	void ClearMinValue(); // Function UMG.SpinBox.ClearMinValue(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337D5D0>
+	void ClearMinSliderValue(); // Function UMG.SpinBox.ClearMinSliderValue(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337D5B0>
+	void ClearMaxValue(); // Function UMG.SpinBox.ClearMaxValue(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337D590>
+	void ClearMaxSliderValue(); // Function UMG.SpinBox.ClearMaxSliderValue(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337D570>
 };
 
 // Class UMG.TextBlock
 struct UTextBlock : UTextLayoutWidget {
-	struct FText Text; //  0x128 Size(18)
-	struct FDelegate Text; //  0x140 Size(10)
-	struct Unknown ColorAndOpacity; //  0x150 Size(28)
-	struct FDelegate ColorAndOpacityDelegate; //  0x178 Size(10)
-	struct Unknown Font; //  0x188 Size(50)
-	struct Unknown StrikeBrush; //  0x1d8 Size(88)
-	struct Unknown ShadowOffset; //  0x260 Size(8)
-	struct Unknown ShadowColorAndOpacity; //  0x268 Size(10)
-	struct FDelegate ShadowColorAndOpacityDelegate; //  0x278 Size(10)
-	float MinDesiredWidth; //  0x288 Size(4)
-	char bWrapWithInvalidationPanel; //  0x28c Size(1)
-	char bAutoWrapText; //  0x28d Size(1)
-	char bSimpleTextMode; //  0x28e Size(1)
+	struct FText Text; // 0x128 (24)
+	struct FDelegate TextDelegate; // 0x140 (16)
+	struct Unknown ColorAndOpacity; // 0x150 (40)
+	struct FDelegate ColorAndOpacityDelegate; // 0x178 (16)
+	struct Unknown Font; // 0x188 (80)
+	struct Unknown StrikeBrush; // 0x1D8 (136)
+	struct Unknown ShadowOffset; // 0x260 (8)
+	struct Unknown ShadowColorAndOpacity; // 0x268 (16)
+	struct FDelegate ShadowColorAndOpacityDelegate; // 0x278 (16)
+	float MinDesiredWidth; // 0x288 (4)
+	char bWrapWithInvalidationPanel : 0; // 0x28C (1)
+	char bAutoWrapText : 0; // 0x28D (1)
+	char bSimpleTextMode : 0; // 0x28E (1)
 
-	void SetText(struct FText InText); // Function UMG.TextBlock.SetText(Native|Public|BlueprintCallable) // <Game+0x3387db0>
+	void SetText(struct FText InText); // Function UMG.TextBlock.SetText(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3387DB0>
+	void SetStrikeBrush(struct Unknown InStrikeBrush); // Function UMG.TextBlock.SetStrikeBrush(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3387B80>
+	void SetShadowOffset(struct Unknown InShadowOffset); // Function UMG.TextBlock.SetShadowOffset(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3387A70>
+	void SetShadowColorAndOpacity(struct Unknown InShadowColorAndOpacity); // Function UMG.TextBlock.SetShadowColorAndOpacity(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33879F0>
+	void SetOpacity(float InOpacity); // Function UMG.TextBlock.SetOpacity(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3387650>
+	void SetMinDesiredWidth(float InMinDesiredWidth); // Function UMG.TextBlock.SetMinDesiredWidth(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3387400>
+	void SetFont(struct Unknown InFontInfo); // Function UMG.TextBlock.SetFont(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3386E20>
+	void SetColorAndOpacity(struct Unknown InColorAndOpacity); // Function UMG.TextBlock.SetColorAndOpacity(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3386AB0>
+	void SetAutoWrapText(char InAutoTextWrap); // Function UMG.TextBlock.SetAutoWrapText(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3386A20>
+	struct FText GetText(); // Function UMG.TextBlock.GetText(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33859C0>
+	struct Unknown GetDynamicOutlineMaterial(); // Function UMG.TextBlock.GetDynamicOutlineMaterial(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33858B0>
+	struct Unknown GetDynamicFontMaterial(); // Function UMG.TextBlock.GetDynamicFontMaterial(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3385880>
 };
 
 // Class UMG.Throbber
 struct UThrobber : UWidget {
-	int32_t NumberOfPieces; //  0x108 Size(4)
-	char bAnimateHorizontally; //  0x10c Size(1)
-	char bAnimateVertically; //  0x10d Size(1)
-	char bAnimateOpacity; //  0x10e Size(1)
-	struct Unknown PieceImage; //  0x110 Size(8)
-	struct Unknown Image; //  0x118 Size(88)
+	int32_t NumberOfPieces; // 0x108 (4)
+	char bAnimateHorizontally : 0; // 0x10C (1)
+	char bAnimateVertically : 0; // 0x10D (1)
+	char bAnimateOpacity : 0; // 0x10E (1)
+	struct Unknown PieceImage; // 0x110 (8)
+	struct Unknown Image; // 0x118 (136)
 
-	void SetNumberOfPieces(int32_t InNumberOfPieces); // Function UMG.Throbber.SetNumberOfPieces(Final|Native|Public|BlueprintCallable) // <Game+0x33875d0>
+	void SetNumberOfPieces(int32_t InNumberOfPieces); // Function UMG.Throbber.SetNumberOfPieces(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33875D0>
+	void SetAnimateVertically(char bInAnimateVertically); // Function UMG.Throbber.SetAnimateVertically(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3386990>
+	void SetAnimateOpacity(char bInAnimateOpacity); // Function UMG.Throbber.SetAnimateOpacity(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3386900>
+	void SetAnimateHorizontally(char bInAnimateHorizontally); // Function UMG.Throbber.SetAnimateHorizontally(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3386870>
 };
 
 // Class UMG.TileView
 struct UTileView : UListView {
-	float EntryHeight; //  0x368 Size(4)
-	float EntryWidth; //  0x36c Size(4)
-	enum class Unknow TileAlignment; //  0x370 Size(1)
-	char bWrapHorizontalNavigation; //  0x371 Size(1)
+	float EntryHeight; // 0x368 (4)
+	float EntryWidth; // 0x36C (4)
+	enum class Unknow TileAlignment; // 0x370 (1)
+	char bWrapHorizontalNavigation : 0; // 0x371 (1)
 
-	void SetEntryWidth(float NewWidth); // Function UMG.TileView.SetEntryWidth(Final|Native|Public|BlueprintCallable) // <Game+0x3386da0>
+	void SetEntryWidth(float NewWidth); // Function UMG.TileView.SetEntryWidth(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3386DA0>
+	void SetEntryHeight(float NewHeight); // Function UMG.TileView.SetEntryHeight(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3386D20>
 };
 
 // Class UMG.TreeView
 struct UTreeView : UListView {
-	struct FDelegate BP_OnGetItemChildren; //  0x378 Size(10)
-	struct FMulticastInlineDelegate BP_OnItemExpansionChanged; //  0x388 Size(10)
+	struct FDelegate BP_OnGetItemChildren; // 0x378 (16)
+	struct FMulticastInlineDelegate BP_OnItemExpansionChanged; // 0x388 (16)
 
-	void SetItemExpansion(struct Unknown Item, char bExpandItem); // Function UMG.TreeView.SetItemExpansion(Final|Native|Public|BlueprintCallable) // <Game+0x33871b0>
+	void SetItemExpansion(struct Unknown Item, char bExpandItem); // Function UMG.TreeView.SetItemExpansion(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33871B0>
+	void ExpandAll(); // Function UMG.TreeView.ExpandAll(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3385740>
+	void CollapseAll(); // Function UMG.TreeView.CollapseAll(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3385720>
 };
 
 // Class UMG.UMGSequencePlayer
 struct UUMGSequencePlayer : Object {
-	struct Unknown Animation; //  0x408 Size(8)
+	struct Unknown Animation; // 0x408 (8)
 
-	void SetUserTag(struct FName InUserTag); // Function UMG.UMGSequencePlayer.SetUserTag(Final|Native|Public|BlueprintCallable) // <Game+0x3387e90>
+	void SetUserTag(struct FName InUserTag); // Function UMG.UMGSequencePlayer.SetUserTag(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3387E90>
+	struct FName GetUserTag(); // Function UMG.UMGSequencePlayer.GetUserTag(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3385B00>
 };
 
 // Class UMG.UniformGridPanel
 struct UUniformGridPanel : UPanelWidget {
-	struct Unknown SlotPadding; //  0x120 Size(10)
-	float MinDesiredSlotWidth; //  0x130 Size(4)
-	float MinDesiredSlotHeight; //  0x134 Size(4)
+	struct Unknown SlotPadding; // 0x120 (16)
+	float MinDesiredSlotWidth; // 0x130 (4)
+	float MinDesiredSlotHeight; // 0x134 (4)
 
-	void SetSlotPadding(struct Unknown InSlotPadding); // Function UMG.UniformGridPanel.SetSlotPadding(Final|Native|Public|BlueprintCallable) // <Game+0x3387af0>
+	void SetSlotPadding(struct Unknown InSlotPadding); // Function UMG.UniformGridPanel.SetSlotPadding(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3387AF0>
+	void SetMinDesiredSlotWidth(float InMinDesiredSlotWidth); // Function UMG.UniformGridPanel.SetMinDesiredSlotWidth(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3387380>
+	void SetMinDesiredSlotHeight(float InMinDesiredSlotHeight); // Function UMG.UniformGridPanel.SetMinDesiredSlotHeight(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3387300>
+	struct Unknown AddChildToUniformGrid(struct Unknown Content, int32_t InRow, int32_t InColumn); // Function UMG.UniformGridPanel.AddChildToUniformGrid(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33851C0>
 };
 
 // Class UMG.UniformGridSlot
 struct UUniformGridSlot : UPanelSlot {
-	char HorizontalAlignment; //  0x38 Size(1)
-	char VerticalAlignment; //  0x39 Size(1)
-	int32_t Row; //  0x3c Size(4)
-	int32_t Column; //  0x40 Size(4)
+	char HorizontalAlignment; // 0x38 (1)
+	char VerticalAlignment; // 0x39 (1)
+	int32_t Row; // 0x3C (4)
+	int32_t Column; // 0x40 (4)
 
-	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.UniformGridSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game+0x3387f10>
+	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.UniformGridSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3387F10>
+	void SetRow(int32_t InRow); // Function UMG.UniformGridSlot.SetRow(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3387970>
+	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.UniformGridSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3387020>
+	void SetColumn(int32_t InColumn); // Function UMG.UniformGridSlot.SetColumn(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3386C20>
 };
 
 // Class UMG.VerticalBoxSlot
 struct UVerticalBoxSlot : UPanelSlot {
-	struct Unknown Size; //  0x38 Size(8)
-	struct Unknown Padding; //  0x40 Size(10)
-	char HorizontalAlignment; //  0x58 Size(1)
-	char VerticalAlignment; //  0x59 Size(1)
+	struct Unknown Size; // 0x38 (8)
+	struct Unknown Padding; // 0x40 (16)
+	char HorizontalAlignment; // 0x58 (1)
+	char VerticalAlignment; // 0x59 (1)
 
-	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.VerticalBoxSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game+0x338b540>
+	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.VerticalBoxSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338B540>
+	void SetSize(struct Unknown InSize); // Function UMG.VerticalBoxSlot.SetSize(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338B2E0>
+	void SetPadding(struct Unknown InPadding); // Function UMG.VerticalBoxSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338AE70>
+	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.VerticalBoxSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338A8F0>
 };
 
 // Class UMG.Viewport
 struct UViewport : UContentWidget {
-	struct Unknown BackgroundColor; //  0x120 Size(10)
+	struct Unknown BackgroundColor; // 0x120 (16)
 
-	struct Unknown Spawn(struct Unknown* ActorClass); // Function UMG.Viewport.Spawn(Final|Native|Public|BlueprintCallable) // <Game+0x338b760>
+	struct Unknown Spawn(struct Unknown* ActorClass); // Function UMG.Viewport.Spawn(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338B760>
+	void SetViewRotation(struct Unknown Rotation); // Function UMG.Viewport.SetViewRotation(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338B650>
+	void SetViewLocation(struct Unknown Location); // Function UMG.Viewport.SetViewLocation(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338B5C0>
+	struct Unknown GetViewRotation(); // Function UMG.Viewport.GetViewRotation(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338A340>
+	struct Unknown GetViewportWorld(); // Function UMG.Viewport.GetViewportWorld(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338A380>
+	struct Unknown GetViewLocation(); // Function UMG.Viewport.GetViewLocation(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338A300>
 };
 
 // Class UMG.WidgetAnimation
 struct UWidgetAnimation : UMovieSceneSequence {
-	struct Unknown MovieScene; //  0x348 Size(8)
-	struct TArray<Unknown> AnimationBindings; //  0x350 Size(10)
-	char bLegacyFinishOnStop; //  0x360 Size(1)
-	struct FString DisplayLabel; //  0x368 Size(10)
+	struct Unknown MovieScene; // 0x348 (8)
+	struct TArray<Unknown> AnimationBindings; // 0x350 (16)
+	char bLegacyFinishOnStop : 0; // 0x360 (1)
+	struct FString DisplayLabel; // 0x368 (16)
 
-	void UnbindFromAnimationStarted(struct Unknown Widget, struct FDelegate Delegate); // Function UMG.WidgetAnimation.UnbindFromAnimationStarted(Final|Native|Public|BlueprintCallable) // <Game+0x3391cf0>
+	void UnbindFromAnimationStarted(struct Unknown Widget, struct FDelegate Delegate); // Function UMG.WidgetAnimation.UnbindFromAnimationStarted(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3391CF0>
+	void UnbindFromAnimationFinished(struct Unknown Widget, struct FDelegate Delegate); // Function UMG.WidgetAnimation.UnbindFromAnimationFinished(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3391C10>
+	void UnbindAllFromAnimationStarted(struct Unknown Widget); // Function UMG.WidgetAnimation.UnbindAllFromAnimationStarted(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3391B90>
+	void UnbindAllFromAnimationFinished(struct Unknown Widget); // Function UMG.WidgetAnimation.UnbindAllFromAnimationFinished(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3391B10>
+	float GetStartTime(); // Function UMG.WidgetAnimation.GetStartTime(Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33905D0>
+	float GetEndTime(); // Function UMG.WidgetAnimation.GetEndTime(Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338FD80>
+	void BindToAnimationStarted(struct Unknown Widget, struct FDelegate Delegate); // Function UMG.WidgetAnimation.BindToAnimationStarted(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338DB40>
+	void BindToAnimationFinished(struct Unknown Widget, struct FDelegate Delegate); // Function UMG.WidgetAnimation.BindToAnimationFinished(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338DA60>
 };
 
 // Class UMG.WidgetAnimationDelegateBinding
 struct UWidgetAnimationDelegateBinding : UDynamicBlueprintBinding {
-	struct TArray<Unknown> WidgetAnimationDelegateBindings; //  0x28 Size(10)
+	struct TArray<Unknown> WidgetAnimationDelegateBindings; // 0x28 (16)
 };
 
 // Class UMG.WidgetAnimationPlayCallbackProxy
 struct UWidgetAnimationPlayCallbackProxy : Object {
-	struct FMulticastInlineDelegate Finished; //  0x28 Size(10)
+	struct FMulticastInlineDelegate Finished; // 0x28 (16)
 
-	struct Unknown CreatePlayAnimationTimeRangeProxyObject(struct Unknown& Result, struct Unknown Widget, struct Unknown InAnimation, float StartAtTime, float EndAtTime, int32_t NumLoopsToPlay, char PlayMode, float PlaybackSpeed); // Function UMG.WidgetAnimationPlayCallbackProxy.CreatePlayAnimationTimeRangeProxyObject(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game+0x338e380>
+	struct Unknown CreatePlayAnimationTimeRangeProxyObject(struct Unknown& Result, struct Unknown Widget, struct Unknown InAnimation, float StartAtTime, float EndAtTime, int32_t NumLoopsToPlay, char PlayMode, float PlaybackSpeed); // Function UMG.WidgetAnimationPlayCallbackProxy.CreatePlayAnimationTimeRangeProxyObject(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338E380>
+	struct Unknown CreatePlayAnimationProxyObject(struct Unknown& Result, struct Unknown Widget, struct Unknown InAnimation, float StartAtTime, int32_t NumLoopsToPlay, char PlayMode, float PlaybackSpeed); // Function UMG.WidgetAnimationPlayCallbackProxy.CreatePlayAnimationProxyObject(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338E180>
 };
 
 // Class UMG.WidgetBlueprintGeneratedClass
 struct UWidgetBlueprintGeneratedClass : UBlueprintGeneratedClass {
-	struct Unknown WidgetTree; //  0x3c8 Size(8)
-	char bAllowTemplate; //  0x3d0 Size(1)
-	char bAllowDynamicCreation; //  0x3d0 Size(1)
-	char bValidTemplate; //  0x3d0 Size(1)
-	char bTemplateInitialized; //  0x3d0 Size(1)
-	char bCookedTemplate; //  0x3d0 Size(1)
-	char bClassRequiresNativd; //  0x3d0 Size(1)
-	struct TArray<Unknown> Bindings; //  0x3d8 Size(10)
-	struct TArray<Unknown> Animations; //  0x3e8 Size(10)
-	struct TArray<Unknown> NamedSlots; //  0x3f8 Size(10)
-	struct TSoftObjectPtr<Unknown> TemplateAsset; //  0x408 Size(28)
-	struct Unknown Template; //  0x430 Size(8)
+	struct Unknown WidgetTree; // 0x3C8 (8)
+	char bAllowTemplate : 0; // 0x3D0 (1)
+	char bAllowDynamicCreation : 0; // 0x3D0 (1)
+	char bValidTemplate : 0; // 0x3D0 (1)
+	char bTemplateInitialized : 0; // 0x3D0 (1)
+	char bCookedTemplate : 0; // 0x3D0 (1)
+	char bClassRequiresNativ : 0; // 0x3D0 (1)
+	struct TArray<Unknown> Bindings; // 0x3D8 (16)
+	struct TArray<Unknown> Animations; // 0x3E8 (16)
+	struct TArray<Unknown> NamedSlots; // 0x3F8 (16)
+	struct TSoftObjectPtr<Unknown> TemplateAsset; // 0x408 (40)
+	struct Unknown Template; // 0x430 (8)
 };
 
 // Class UMG.WidgetComponent
 struct UWidgetComponent : UMeshComponent {
-	enum class Unknow Space; //  0x4e8 Size(1)
-	enum class Unknow TimingPolicy; //  0x4e9 Size(1)
-	struct Unknown* WidgetClass; //  0x4f0 Size(8)
-	struct Unknown DrawSize; //  0x4f8 Size(8)
-	char bManuallyRedraw; //  0x500 Size(1)
-	char bRedrawRequested; //  0x501 Size(1)
-	float RedrawTime; //  0x504 Size(4)
-	struct Unknown CurrentDrawSize; //  0x510 Size(8)
-	char bDrawAtDesiredSize; //  0x518 Size(1)
-	struct Unknown Pivot; //  0x51c Size(8)
-	char bReceiveHardwareInput; //  0x524 Size(1)
-	char bWindowFocusable; //  0x525 Size(1)
-	enum class Unknow WindowVisibility; //  0x526 Size(1)
-	char bApplyGammaCorrection; //  0x527 Size(1)
-	struct Unknown OwnerPlayer; //  0x528 Size(8)
-	struct Unknown BackgroundColor; //  0x530 Size(10)
-	struct Unknown TintColorAndOpacity; //  0x540 Size(10)
-	float OpacityFromTexture; //  0x550 Size(4)
-	enum class Unknow BlendMode; //  0x554 Size(1)
-	char bIsTwoSided; //  0x555 Size(1)
-	char TickWhenOffscreen; //  0x556 Size(1)
-	struct Unknown Widget; //  0x558 Size(8)
-	struct Unknown BodySetup; //  0x580 Size(8)
-	struct Unknown TranslucentMaterial; //  0x588 Size(8)
-	struct Unknown TranslucentMaterial_OneSided; //  0x590 Size(8)
-	struct Unknown OpaqueMaterial; //  0x598 Size(8)
-	struct Unknown OpaqueMaterial_OneSided; //  0x5a0 Size(8)
-	struct Unknown MaskedMaterial; //  0x5a8 Size(8)
-	struct Unknown MaskedMaterial_OneSided; //  0x5b0 Size(8)
-	struct Unknown RenderTarget; //  0x5b8 Size(8)
-	struct Unknown MaterialInstance; //  0x5c0 Size(8)
-	char bAddedToScreen; //  0x5c8 Size(1)
-	char bEditTimeUsable; //  0x5c9 Size(1)
-	struct FName SharedLayerName; //  0x5cc Size(8)
-	int32_t LayerZOrder; //  0x5d4 Size(4)
-	enum class Unknow GeometryMode; //  0x5d8 Size(1)
-	float CylinderArcAngle; //  0x5dc Size(4)
+	enum class Unknow Space; // 0x4E8 (1)
+	enum class Unknow TimingPolicy; // 0x4E9 (1)
+	struct Unknown* WidgetClass; // 0x4F0 (8)
+	struct Unknown DrawSize; // 0x4F8 (8)
+	char bManuallyRedraw : 0; // 0x500 (1)
+	char b : 0; // 0x501 (1)
+	float RedrawTime; // 0x504 (4)
+	struct Unknown CurrentDrawSize; // 0x510 (8)
+	char bDrawAtDesiredSize : 0; // 0x518 (1)
+	struct Unknown Pivot; // 0x51C (8)
+	char b : 0; // 0x524 (1)
+	char bWindowFocusable : 0; // 0x525 (1)
+	enum class Unknow WindowVisibility; // 0x526 (1)
+	char bApplyGammaCorrection : 0; // 0x527 (1)
+	struct Unknown OwnerPlayer; // 0x528 (8)
+	struct Unknown BackgroundColor; // 0x530 (16)
+	struct Unknown TintColorAndOpacity; // 0x540 (16)
+	float OpacityFromTexture; // 0x550 (4)
+	enum class Unknow BlendMode; // 0x554 (1)
+	char bIsTwoSided : 0; // 0x555 (1)
+	char TickWhenOffscreen : 0; // 0x556 (1)
+	struct Unknown Widget; // 0x558 (8)
+	struct Unknown BodySetup; // 0x580 (8)
+	struct Unknown TranslucentMaterial; // 0x588 (8)
+	struct Unknown TranslucentMaterial_OneSided; // 0x590 (8)
+	struct Unknown OpaqueMaterial; // 0x598 (8)
+	struct Unknown OpaqueMaterial_OneSided; // 0x5A0 (8)
+	struct Unknown MaskedMaterial; // 0x5A8 (8)
+	struct Unknown MaskedMaterial_OneSided; // 0x5B0 (8)
+	struct Unknown RenderTarget; // 0x5B8 (8)
+	struct Unknown MaterialInstance; // 0x5C0 (8)
+	char bAddedToScreen : 0; // 0x5C8 (1)
+	char bEditTimeUsable : 0; // 0x5C9 (1)
+	struct FName SharedLayerName; // 0x5CC (8)
+	int32_t LayerZOrder; // 0x5D4 (4)
+	enum class Unknow GeometryMode; // 0x5D8 (1)
+	float CylinderArcAngle; // 0x5DC (4)
 
-	void SetWindowVisibility(enum class Unknow InVisibility); // Function UMG.WidgetComponent.SetWindowVisibility(Final|Native|Public|BlueprintCallable) // <Game+0x33959a0>
+	void SetWindowVisibility(enum class Unknow InVisibility); // Function UMG.WidgetComponent.SetWindowVisibility(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33959A0>
+	void SetWindowFocusable(char bInWindowFocusable); // Function UMG.WidgetComponent.SetWindowFocusable(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3395910>
+	void SetWidgetSpace(enum class Unknow NewSpace); // Function UMG.WidgetComponent.SetWidgetSpace(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3395890>
+	void SetWidget(struct Unknown Widget); // Function UMG.WidgetComponent.SetWidget(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3395800>
+	void SetTwoSided(char bWantTwoSided); // Function UMG.WidgetComponent.SetTwoSided(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3395770>
+	void SetTintColorAndOpacity(struct Unknown NewTintColorAndOpacity); // Function UMG.WidgetComponent.SetTintColorAndOpacity(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33956F0>
+	void SetTickWhenOffscreen(char bWantTickWhenOffscreen); // Function UMG.WidgetComponent.SetTickWhenOffscreen(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3395670>
+	void SetRedrawTime(float InRedrawTime); // Function UMG.WidgetComponent.SetRedrawTime(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33955F0>
+	void SetPivot(struct Unknown& InPivot); // Function UMG.WidgetComponent.SetPivot(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3395560>
+	void SetOwnerPlayer(struct Unknown LocalPlayer); // Function UMG.WidgetComponent.SetOwnerPlayer(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33954E0>
+	void SetManuallyRedraw(char bUseManualRedraw); // Function UMG.WidgetComponent.SetManuallyRedraw(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3395450>
+	void SetGeometryMode(enum class Unknow InGeometryMode); // Function UMG.WidgetComponent.SetGeometryMode(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33953D0>
+	void SetDrawSize(struct Unknown Size); // Function UMG.WidgetComponent.SetDrawSize(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33952D0>
+	void SetDrawAtDesiredSize(char bInDrawAtDesiredSize); // Function UMG.WidgetComponent.SetDrawAtDesiredSize(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3395250>
+	void SetCylinderArcAngle(float InCylinderArcAngle); // Function UMG.WidgetComponent.SetCylinderArcAngle(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33951D0>
+	void SetBackgroundColor(struct Unknown NewBackgroundColor); // Function UMG.WidgetComponent.SetBackgroundColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3395070>
+	void RequestRedraw(); // Function UMG.WidgetComponent.RequestRedraw(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3394E80>
+	enum class Unknow GetWindowVisiblility(); // Function UMG.WidgetComponent.GetWindowVisiblility(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3394590>
+	char GetWindowFocusable(); // Function UMG.WidgetComponent.GetWindowFocusable(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3394570>
+	enum class Unknow GetWidgetSpace(); // Function UMG.WidgetComponent.GetWidgetSpace(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3394550>
+	struct Unknown GetUserWidgetObject(); // Function UMG.WidgetComponent.GetUserWidgetObject(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3394350>
+	char GetTwoSided(); // Function UMG.WidgetComponent.GetTwoSided(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3394330>
+	char GetTickWhenOffscreen(); // Function UMG.WidgetComponent.GetTickWhenOffscreen(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3394310>
+	struct Unknown GetRenderTarget(); // Function UMG.WidgetComponent.GetRenderTarget(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33942E0>
+	float GetRedrawTime(); // Function UMG.WidgetComponent.GetRedrawTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33942C0>
+	struct Unknown GetPivot(); // Function UMG.WidgetComponent.GetPivot(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33941E0>
+	struct Unknown GetOwnerPlayer(); // Function UMG.WidgetComponent.GetOwnerPlayer(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33941B0>
+	struct Unknown GetMaterialInstance(); // Function UMG.WidgetComponent.GetMaterialInstance(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3393F90>
+	char GetManuallyRedraw(); // Function UMG.WidgetComponent.GetManuallyRedraw(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3393F70>
+	enum class Unknow GetGeometryMode(); // Function UMG.WidgetComponent.GetGeometryMode(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3393EA0>
+	struct Unknown GetDrawSize(); // Function UMG.WidgetComponent.GetDrawSize(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3393E60>
+	char GetDrawAtDesiredSize(); // Function UMG.WidgetComponent.GetDrawAtDesiredSize(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3393E40>
+	float GetCylinderArcAngle(); // Function UMG.WidgetComponent.GetCylinderArcAngle(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3393E20>
+	struct Unknown GetCurrentDrawSize(); // Function UMG.WidgetComponent.GetCurrentDrawSize(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3393DE0>
 };
 
 // Class UMG.WidgetInteractionComponent
 struct UWidgetInteractionComponent : USceneComponent {
-	struct FMulticastInlineDelegate OnHoveredWidgetChanged; //  0x238 Size(10)
-	int32_t VirtualUserIndex; //  0x258 Size(4)
-	float PointerIndex; //  0x25c Size(4)
-	char TraceChannel; //  0x260 Size(1)
-	float InteractionDistance; //  0x264 Size(4)
-	enum class Unknow InteractionSource; //  0x268 Size(1)
-	char bEnableHitTesting; //  0x269 Size(1)
-	char bShowDebug; //  0x26a Size(1)
-	struct Unknown DebugColor; //  0x26c Size(10)
-	struct Unknown CustomHitResult; //  0x2f8 Size(88)
-	struct Unknown LocalHitLocation; //  0x380 Size(8)
-	struct Unknown LastLocalHitLocation; //  0x388 Size(8)
-	struct Unknown HoveredWidgetComponent; //  0x390 Size(8)
-	struct Unknown LastHitResult; //  0x398 Size(88)
-	char bIsHoveredWidgetInteractable; //  0x420 Size(1)
-	char bIsHoveredWidgetFocusable; //  0x421 Size(1)
-	char bIsHoveredWidgetHitTestVisible; //  0x422 Size(1)
+	struct FMulticastInlineDelegate OnHoveredWidgetChanged; // 0x238 (16)
+	int32_t VirtualUserIndex; // 0x258 (4)
+	float PointerIndex; // 0x25C (4)
+	char TraceChannel; // 0x260 (1)
+	float InteractionDistance; // 0x264 (4)
+	enum class Unknow InteractionSource; // 0x268 (1)
+	char bEnableHitTesting : 0; // 0x269 (1)
+	char bShowDebug : 0; // 0x26A (1)
+	struct Unknown DebugColor; // 0x26C (16)
+	struct Unknown CustomHitResult; // 0x2F8 (136)
+	struct Unknown LocalHitLocation; // 0x380 (8)
+	struct Unknown LastLocalHitLocation; // 0x388 (8)
+	struct Unknown HoveredWidgetComponent; // 0x390 (8)
+	struct Unknown LastHitResult; // 0x398 (136)
+	char bIsHoveredWidgetInteractable : 0; // 0x420 (1)
+	char bIsHoveredWidgetFocusable : 0; // 0x421 (1)
+	char bIsHoveredWidgetHitTestVisible : 0; // 0x422 (1)
 
-	void SetFocus(struct Unknown FocusWidget); // Function UMG.WidgetInteractionComponent.SetFocus(Final|Native|Public|BlueprintCallable) // <Game+0x3395350>
+	void SetFocus(struct Unknown FocusWidget); // Function UMG.WidgetInteractionComponent.SetFocus(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3395350>
+	void SetCustomHitResult(struct Unknown& HitResult); // Function UMG.WidgetInteractionComponent.SetCustomHitResult(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33950F0>
+	char SendKeyChar(struct FString Characters, char b); // Function UMG.WidgetInteractionComponent.SendKeyChar(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3394F20>
+	void ScrollWheel(float ScrollDelta); // Function UMG.WidgetInteractionComponent.ScrollWheel(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3394EA0>
+	void ReleasePointerKey(struct Unknown Key); // Function UMG.WidgetInteractionComponent.ReleasePointerKey(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3394D20>
+	char ReleaseKey(struct Unknown Key); // Function UMG.WidgetInteractionComponent.ReleaseKey(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3394C20>
+	void PressPointerKey(struct Unknown Key); // Function UMG.WidgetInteractionComponent.PressPointerKey(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3394870>
+	char PressKey(struct Unknown Key, char b); // Function UMG.WidgetInteractionComponent.PressKey(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3394740>
+	char PressAndReleaseKey(struct Unknown Key); // Function UMG.WidgetInteractionComponent.PressAndReleaseKey(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3394640>
+	char IsOverInteractableWidget(); // Function UMG.WidgetInteractionComponent.IsOverInteractableWidget(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3394610>
+	char IsOverHitTestVisibleWidget(); // Function UMG.WidgetInteractionComponent.IsOverHitTestVisibleWidget(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33945E0>
+	char IsOverFocusableWidget(); // Function UMG.WidgetInteractionComponent.IsOverFocusableWidget(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33945B0>
+	struct Unknown GetLastHitResult(); // Function UMG.WidgetInteractionComponent.GetLastHitResult(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3393EF0>
+	struct Unknown GetHoveredWidgetComponent(); // Function UMG.WidgetInteractionComponent.GetHoveredWidgetComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3393EC0>
+	struct Unknown Get2DHitLocation(); // Function UMG.WidgetInteractionComponent.Get2DHitLocation(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3393DA0>
 };
 
 // Class UMG.WidgetNavigation
 struct UWidgetNavigation : Object {
-	struct Unknown Up; //  0x28 Size(24)
-	struct Unknown Down; //  0x4c Size(24)
-	struct Unknown Left; //  0x70 Size(24)
-	struct Unknown Right; //  0x94 Size(24)
-	struct Unknown Next; //  0xb8 Size(24)
-	struct Unknown Previous; //  0xdc Size(24)
+	struct Unknown Up; // 0x28 (36)
+	struct Unknown Down; // 0x4C (36)
+	struct Unknown Left; // 0x70 (36)
+	struct Unknown Right; // 0x94 (36)
+	struct Unknown Next; // 0xB8 (36)
+	struct Unknown Previous; // 0xDC (36)
 };
 
 // Class UMG.WidgetSwitcher
 struct UWidgetSwitcher : UPanelWidget {
-	int32_t ActiveWidgetIndex; //  0x120 Size(4)
+	int32_t ActiveWidgetIndex; // 0x120 (4)
 
-	void SetActiveWidgetIndex(int32_t Index); // Function UMG.WidgetSwitcher.SetActiveWidgetIndex(Native|Public|BlueprintCallable) // <Game+0x33976b0>
+	void SetActiveWidgetIndex(int32_t Index); // Function UMG.WidgetSwitcher.SetActiveWidgetIndex(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33976B0>
+	void SetActiveWidget(struct Unknown Widget); // Function UMG.WidgetSwitcher.SetActiveWidget(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3370540>
+	struct Unknown GetWidgetAtIndex(int32_t Index); // Function UMG.WidgetSwitcher.GetWidgetAtIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3397620>
+	int32_t GetNumWidgets(); // Function UMG.WidgetSwitcher.GetNumWidgets(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33975F0>
+	int32_t GetActiveWidgetIndex(); // Function UMG.WidgetSwitcher.GetActiveWidgetIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33975C0>
+	struct Unknown GetActiveWidget(); // Function UMG.WidgetSwitcher.GetActiveWidget(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3397590>
 };
 
 // Class UMG.WidgetSwitcherSlot
 struct UWidgetSwitcherSlot : UPanelSlot {
-	struct Unknown Padding; //  0x40 Size(10)
-	char HorizontalAlignment; //  0x50 Size(1)
-	char VerticalAlignment; //  0x51 Size(1)
+	struct Unknown Padding; // 0x40 (16)
+	char HorizontalAlignment; // 0x50 (1)
+	char VerticalAlignment; // 0x51 (1)
 
-	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.WidgetSwitcherSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game+0x3397d00>
+	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.WidgetSwitcherSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3397D00>
+	void SetPadding(struct Unknown InPadding); // Function UMG.WidgetSwitcherSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3376300>
+	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.WidgetSwitcherSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3397850>
 };
 
 // Class UMG.WidgetTree
 struct UWidgetTree : Object {
-	struct Unknown RootWidget; //  0x28 Size(8)
+	struct Unknown RootWidget; // 0x28 (8)
 };
 
 // Class UMG.WindowTitleBarArea
 struct UWindowTitleBarArea : UContentWidget {
-	char bWindowButtonsEnabled; //  0x120 Size(1)
-	char bDoubleClickTogglesFullscreen; //  0x121 Size(1)
+	char bWindowButtonsEnabled : 0; // 0x120 (1)
+	char bDoubleClickTogglesFullscreen : 0; // 0x121 (1)
 
-	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.WindowTitleBarArea.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game+0x3397d80>
+	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.WindowTitleBarArea.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3397D80>
+	void SetPadding(struct Unknown InPadding); // Function UMG.WindowTitleBarArea.SetPadding(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3397B50>
+	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.WindowTitleBarArea.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33978D0>
 };
 
 // Class UMG.WindowTitleBarAreaSlot
 struct UWindowTitleBarAreaSlot : UPanelSlot {
-	struct Unknown Padding; //  0x38 Size(10)
-	char HorizontalAlignment; //  0x48 Size(1)
-	char VerticalAlignment; //  0x49 Size(1)
+	struct Unknown Padding; // 0x38 (16)
+	char HorizontalAlignment; // 0x48 (1)
+	char VerticalAlignment; // 0x49 (1)
 
-	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.WindowTitleBarAreaSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game+0x3397e00>
+	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.WindowTitleBarAreaSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3397E00>
+	void SetPadding(struct Unknown InPadding); // Function UMG.WindowTitleBarAreaSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3397BE0>
+	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.WindowTitleBarAreaSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3397950>
 };
 
 // Class UMG.WrapBox
 struct UWrapBox : UPanelWidget {
-	struct Unknown InnerSlotPadding; //  0x120 Size(8)
-	float WrapWidth; //  0x128 Size(4)
-	char bExplicitWrapWidth; //  0x12c Size(1)
-	char HorizontalAlignment; //  0x12d Size(1)
+	struct Unknown InnerSlotPadding; // 0x120 (8)
+	float WrapWidth; // 0x128 (4)
+	char bExplicitWrapWidth : 0; // 0x12C (1)
+	char HorizontalAlignment; // 0x12D (1)
 
-	void SetInnerSlotPadding(struct Unknown InPadding); // Function UMG.WrapBox.SetInnerSlotPadding(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game+0x3397ad0>
+	void SetInnerSlotPadding(struct Unknown InPadding); // Function UMG.WrapBox.SetInnerSlotPadding(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3397AD0>
+	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.WrapBox.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33979D0>
+	struct Unknown AddChildToWrapBox(struct Unknown Content); // Function UMG.WrapBox.AddChildToWrapBox(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3397500>
 };
 
 // Class UMG.WrapBoxSlot
 struct UWrapBoxSlot : UPanelSlot {
-	struct Unknown Padding; //  0x38 Size(10)
-	char bFillEmptySpace; //  0x48 Size(1)
-	float FillSpanWhenLessThan; //  0x4c Size(4)
-	char HorizontalAlignment; //  0x50 Size(1)
-	char VerticalAlignment; //  0x51 Size(1)
+	struct Unknown Padding; // 0x38 (16)
+	char bFillEmptySpace : 0; // 0x48 (1)
+	float FillSpanWhenLessThan; // 0x4C (4)
+	char HorizontalAlignment; // 0x50 (1)
+	char VerticalAlignment; // 0x51 (1)
 
-	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.WrapBoxSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game+0x3397e80>
+	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.WrapBoxSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3397E80>
+	void SetPadding(struct Unknown InPadding); // Function UMG.WrapBoxSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3397C70>
+	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.WrapBoxSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3397A50>
+	void SetFillSpanWhenLessThan(float InFillSpanWhenLessThan); // Function UMG.WrapBoxSlot.SetFillSpanWhenLessThan(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33977D0>
+	void SetFillEmptySpace(char InbFillEmptySpace); // Function UMG.WrapBoxSlot.SetFillEmptySpace(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3397740>
 };
 

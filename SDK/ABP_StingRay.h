@@ -1,16 +1,18 @@
 // AnimBlueprintGeneratedClass ABP_StingRay.ABP_StingRay_C
 struct UABP_StingRay_C : UBravoHotelVehicleAnimInstance {
-	struct Unknown UberGraphFrame; //  0xa20 Size(8)
-	struct Unknown AnimGraphNode_ModifyBone; //  0xa28 Size(108)
-	struct Unknown AnimGraphNode_BlendListByBool; //  0xb30 Size(a0)
-	struct Unknown AnimGraphNode_MeshRefPose_2; //  0xbd0 Size(10)
-	struct Unknown AnimGraphNode_RotationMultiplier; //  0xbe0 Size(f0)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace_2; //  0xcd0 Size(20)
-	struct Unknown AnimGraphNode_WheelHandler; //  0xcf0 Size(e0)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace; //  0xdd0 Size(20)
-	struct Unknown AnimGraphNode_MeshRefPose; //  0xdf0 Size(10)
-	struct Unknown AnimGraphNode_Root; //  0xe00 Size(30)
+	struct Unknown UberGraphFrame; // 0xA20 (8)
+	struct Unknown AnimGraphNode_ModifyBone; // 0xA28 (264)
+	struct Unknown AnimGraphNode_BlendListByBool; // 0xB30 (160)
+	struct Unknown AnimGraphNode_MeshRefPose_2; // 0xBD0 (16)
+	struct Unknown AnimGraphNode_RotationMultiplier; // 0xBE0 (240)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace_2; // 0xCD0 (32)
+	struct Unknown AnimGraphNode_WheelHandler; // 0xCF0 (224)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace; // 0xDD0 (32)
+	struct Unknown AnimGraphNode_MeshRefPose; // 0xDF0 (16)
+	struct Unknown AnimGraphNode_Root; // 0xE00 (48)
 
-	void AnimGraph(struct Unknown& AnimGraph); // Function ABP_StingRay.ABP_StingRay_C.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <Game+0x23b1e70>
+	void AnimGraph(struct Unknown& AnimGraph); // Function ABP_StingRay.ABP_StingRay_C.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void BlueprintUpdateAnimation(float DeltaTimeX); // Function ABP_StingRay.ABP_StingRay_C.BlueprintUpdateAnimation(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void ExecuteUbergraph_ABP_StingRay(int32_t EntryPoint); // Function ABP_StingRay.ABP_StingRay_C.ExecuteUbergraph_ABP_StingRay(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 };
 

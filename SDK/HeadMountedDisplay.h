@@ -1,94 +1,105 @@
 // Enum HeadMountedDisplay.EXRTrackedDeviceType
 enum class EXRTrackedDeviceType : uint8 {
-	EXRTrackedDeviceType = 0,
-	EXRTrackedDeviceType = 1,
-	EXRTrackedDeviceType = 2,
-	EXRTrackedDeviceType = 3,
-	EXRTrackedDeviceType = 254,
-	EXRTrackedDeviceType = 255,
+	EXRTrackedDeviceType = 0
+	EXRTrackedDeviceType = 1
+	EXRTrackedDeviceType = 2
+	EXRTrackedDeviceType = 3
+	EXRTrackedDeviceType = 254
+	EXRTrackedDeviceType = 255
 	EXRTrackedDeviceType = 256
 };
 
 // Enum HeadMountedDisplay.ESpectatorScreenMode
 enum class ESpectatorScreenMode : uint8 {
-	ESpectatorScreenMode = 0,
-	ESpectatorScreenMode = 1,
-	ESpectatorScreenMode = 2,
-	ESpectatorScreenMode = 3,
-	ESpectatorScreenMode = 4,
-	ESpectatorScreenMode = 5,
-	ESpectatorScreenMode = 6,
-	ESpectatorScreenMode = 7,
+	ESpectatorScreenMode = 0
+	ESpectatorScreenMode = 1
+	ESpectatorScreenMode = 2
+	ESpectatorScreenMode = 3
+	ESpectatorScreenMode = 4
+	ESpectatorScreenMode = 5
+	ESpectatorScreenMode = 6
+	ESpectatorScreenMode = 7
 	ESpectatorScreenMode = 8
 };
 
 // Enum HeadMountedDisplay.EHMDWornState
 enum class EHMDWornState : uint8 {
-	EHMDWornState = 0,
-	EHMDWornState = 1,
-	EHMDWornState = 2,
+	EHMDWornState = 0
+	EHMDWornState = 1
+	EHMDWornState = 2
 	EHMDWornState = 3
 };
 
 // Enum HeadMountedDisplay.EHMDTrackingOrigin
 enum class EHMDTrackingOrigin : uint8 {
-	EHMDTrackingOrigin = 0,
-	EHMDTrackingOrigin = 1,
-	EHMDTrackingOrigin = 2,
+	EHMDTrackingOrigin = 0
+	EHMDTrackingOrigin = 1
+	EHMDTrackingOrigin = 2
 	EHMDTrackingOrigin = 3
 };
 
 // Enum HeadMountedDisplay.EOrientPositionSelector
 enum class EOrientPositionSelector : uint8 {
-	EOrientPositionSelector = 0,
-	EOrientPositionSelector = 1,
-	EOrientPositionSelector = 2,
+	EOrientPositionSelector = 0
+	EOrientPositionSelector = 1
+	EOrientPositionSelector = 2
 	EOrientPositionSelector = 3
 };
 
 // Enum HeadMountedDisplay.ETrackingStatus
 enum class ETrackingStatus : uint8 {
-	ETrackingStatus = 0,
-	ETrackingStatus = 1,
-	ETrackingStatus = 2,
+	ETrackingStatus = 0
+	ETrackingStatus = 1
+	ETrackingStatus = 2
 	ETrackingStatus = 3
 };
 
-// Class HeadMountedDisplay.VRNotificationsComponent
-struct UVRNotificationsComponent : UActorComponent {
-	struct FMulticastInlineDelegate HMDTrackingInitializingAndNeedsHMDToBeTrackedDelegate; //  0xb0 Size(10)
-	struct FMulticastInlineDelegate HMDTrackingInitializedDelegate; //  0xc0 Size(10)
-	struct FMulticastInlineDelegate HMDRecenteredDelegate; //  0xd0 Size(10)
-	struct FMulticastInlineDelegate HMDLostDelegate; //  0xe0 Size(10)
-	struct FMulticastInlineDelegate HMDReconnectedDelegate; //  0xf0 Size(10)
-	struct FMulticastInlineDelegate HMDConnectCanceledDelegate; //  0x100 Size(10)
-	struct FMulticastInlineDelegate HMDPutOnHead; //  0x110 Size(10)
-	struct FMulticastInlineDelegate HMDRemovedFromHeadDelegate; //  0x120 Size(10)
-	struct FMulticastInlineDelegate VRControllerRecenteredDelegate; //  0x130 Size(10)
+// Class HeadMountedDisplay.V
+struct UV : UActorComponent {
+	struct FMulticastInlineDelegate HMDTrackingInitializingAndNeedsHMDToBeTrackedDelegate; // 0xB0 (16)
+	struct FMulticastInlineDelegate HMDTrackingInitializedDelegate; // 0xC0 (16)
+	struct FMulticastInlineDelegate HMDRecenteredDelegate; // 0xD0 (16)
+	struct FMulticastInlineDelegate HMDLostDelegate; // 0xE0 (16)
+	struct FMulticastInlineDelegate HMDReconnectedDelegate; // 0xF0 (16)
+	struct FMulticastInlineDelegate HMDConnectCanceledDelegate; // 0x100 (16)
+	struct FMulticastInlineDelegate HMDPutOnHeadDelegate; // 0x110 (16)
+	struct FMulticastInlineDelegate HMDRemovedFromHeadDelegate; // 0x120 (16)
+	struct FMulticastInlineDelegate V; // 0x130 (16)
 };
 
 // Class HeadMountedDisplay.MotionControllerComponent
 struct UMotionControllerComponent : UPrimitiveComponent {
-	int32_t PlayerIndex; //  0x4b8 Size(4)
-	enum class Unknow Hand; //  0x4bc Size(1)
-	struct FName MotionSource; //  0x4c0 Size(8)
-	char bDisableLowLatencyUpdate; //  0x4c8 Size(1)
-	enum class Unknow CurrentTrackingStatus; //  0x4cc Size(1)
-	char bDisplayDeviceModel; //  0x4cd Size(1)
-	struct FName DisplayModelSource; //  0x4d0 Size(8)
-	struct Unknown CustomDisplayMesh; //  0x4d8 Size(8)
-	struct TArray<Unknown> DisplayMeshMaterialOverrides; //  0x4e0 Size(10)
-	struct Unknown DisplayComponent; //  0x550 Size(8)
+	int32_t PlayerIndex; // 0x4B8 (4)
+	enum class Unknow Hand; // 0x4BC (1)
+	struct FName MotionSource; // 0x4C0 (8)
+	char bDisableLowLatencyUpdate : 0; // 0x4C8 (1)
+	enum class Unknow CurrentTrackingStatus; // 0x4CC (1)
+	char bDisplayDeviceModel : 0; // 0x4CD (1)
+	struct FName DisplayModelSource; // 0x4D0 (8)
+	struct Unknown CustomDisplayMesh; // 0x4D8 (8)
+	struct TArray<Unknown> DisplayMeshMaterialOverrides; // 0x4E0 (16)
+	struct Unknown DisplayComponent; // 0x550 (8)
 
-	void SetTrackingSource(enum class Unknow NewSource); // Function HeadMountedDisplay.MotionControllerComponent.SetTrackingSource(Final|Native|Public|BlueprintCallable) // <Game+0x2f14fe0>
+	void SetTrackingSource(enum class Unknow NewSource); // Function HeadMountedDisplay.MotionControllerComponent.SetTrackingSource(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2F14FE0>
+	void SetTrackingMotionSource(struct FName NewSource); // Function HeadMountedDisplay.MotionControllerComponent.SetTrackingMotionSource(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2F14EF0>
+	void SetShowDeviceModel(char bShowControllerModel); // Function HeadMountedDisplay.MotionControllerComponent.SetShowDeviceModel(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2F14B90>
+	void SetDisplayModelSource(struct FName NewDisplayModelSource); // Function HeadMountedDisplay.MotionControllerComponent.SetDisplayModelSource(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2F148F0>
+	void SetCustomDisplayMesh(struct Unknown NewDisplayMesh); // Function HeadMountedDisplay.MotionControllerComponent.SetCustomDisplayMesh(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2F14870>
+	void SetAssociatedPlayerIndex(int32_t NewPlayer); // Function HeadMountedDisplay.MotionControllerComponent.SetAssociatedPlayerIndex(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2F14740>
+	void OnMotionControllerUpdated(); // Function HeadMountedDisplay.MotionControllerComponent.OnMotionControllerUpdated(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	char IsTracked(); // Function HeadMountedDisplay.MotionControllerComponent.IsTracked(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2F14670>
+	enum class Unknow GetTrackingSource(); // Function HeadMountedDisplay.MotionControllerComponent.GetTrackingSource(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2F13FA0>
+	float GetParameterValue(struct FName InName, char& bValueFound); // Function HeadMountedDisplay.MotionControllerComponent.GetParameterValue(Final|Native|Protected|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2F13810>
+	struct Unknown GetHandJointPosition(int32_t jointIndex, char& bValueFound); // Function HeadMountedDisplay.MotionControllerComponent.GetHandJointPosition(Final|Native|Protected|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2F135D0>
 };
 
-// Class HeadMountedDisplay.AsyncTask_LoadXRDevDisplayssj
+// Class HeadMountedDisplay.AsyncTask_LoadXRDevDisplay
 struct UAsyncTask_LoadXRDev : UBlueprintAsyncActionBase {
-	struct FMulticastInlineDelegate OnModelLoaded; //  0x30 Size(10)
-	struct FMulticastInlineDelegate OnLoadFailure; //  0x40 Size(10)
-	struct Unknown SpawnedComponent; //  0x58 Size(8)
+	struct FMulticastInlineDelegate OnModelLoaded; // 0x30 (16)
+	struct FMulticastInlineDelegate OnLoadFailure; // 0x40 (16)
+	struct Unknown SpawnedComponent; // 0x58 (8)
 
-	struct Unknown AddNamedDeviceVisualizationComponentAsync(struct Unknown Target, struct FName SystemName, struct FName DeviceName, char bManualAttachment, struct Unknown& RelativeTransform, struct Unknown& XRDeviceId, struct Unknown& NewComponent); // Function HeadMountedDisplay.AsyncTask_LoadXRDevgateProperty.AddNamedDeviceVisualizationComponentAsync(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game+0x2f12470>
+	struct Unknown AddNamedDeviceVisualizationComponentAsync(struct Unknown Target, struct FName SystemName, struct FName DeviceName, char bManualAttachment, struct Unknown& RelativeTransform, struct Unknown& X, struct Unknown& NewComponent); // Function HeadMountedDisplay.AsyncTask_LoadXRDev.AddNamedDeviceVisualizationComponentAsync(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2F12470>
+	struct Unknown AddDeviceVisualizationComponentAsync(struct Unknown Target, struct Unknown& X, char bManualAttachment, struct Unknown& RelativeTransform, struct Unknown& NewComponent); // Function HeadMountedDisplay.AsyncTask_LoadXRDev.AddDeviceVisualizationComponentAsync(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2F11EB0>
 };
 
