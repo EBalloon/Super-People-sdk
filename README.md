@@ -1,6 +1,6 @@
 # Super People sdk
 
-Offsets
+###Offsets
 
     Uworld: 0x695E880
     UObjects: 0x6815E20
@@ -26,7 +26,7 @@ Offsets
     TeamIndex: 0x598 + 0xe8
 
 
-Check Team
+###Check Team
 
     auto CurUHReplicatedPlayerInfo = Read<uintptr_t>(LocalPlayerState + 0x598);
     auto currentindex = Read<char>(CurUHReplicatedPlayerInfo + 0xe8);
@@ -41,11 +41,11 @@ Check Team
          //your code  
     };
 
-Actor ID
+###Actor ID
     
     BP-BattleRoyalePawn_C
     
-Bones ID
+###Bones ID
 
     Backpack = 120
     Backpack = 132
@@ -544,4 +544,4 @@ Bones ID
     upperarm_twist_01_r = 31
     upperarm_twist_01_r = 36
 
-PS: They use an anticheat called WonderTrust. WonderTrust + Battleye
+###PS: They use an anticheat called WonderTrust. WonderTrust + Battleye
