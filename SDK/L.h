@@ -1,5 +1,5 @@
 // BlueprintGeneratedClass L.L
-struct AL : ALevelScriptActor {
+class AL : ALevelScriptActor {
 	struct Unknown UberGraphFrame; // 0x318 (8)
 	struct Unknown TitleWidgetRef; // 0x320 (8)
 	struct Unknown LobbyWidgetRef; // 0x328 (8)
@@ -37,7 +37,7 @@ struct AL : ALevelScriptActor {
 	struct Unknown ANI; // 0x458 (8)
 	struct Unknown ANI; // 0x460 (8)
 	struct Unknown S; // 0x468 (8)
-	struct Unknown Title_TowerBridge_Squard_5_ExecuteUbergraph_L; // 0x470 (8)
+	struct Unknown Title_TowerBridge_Squard_5_Exec; // 0x470 (8)
 	struct Unknown S; // 0x478 (8)
 	struct Unknown Ak; // 0x480 (8)
 	struct Unknown Title_TowerBridge_Endgame_2_ExecuteUbergraph_L; // 0x488 (8)
@@ -130,7 +130,7 @@ struct AL : ALevelScriptActor {
 	void MoveSceneCompanyLogo(); // Function L.L.MoveSceneCompanyLogo(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void MoveSceneSupportProgram(); // Function L.L.MoveSceneSupportProgram(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void MoveSceneLogin(); // Function L.L.MoveSceneLogin(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
-	void MoveSceneOpeningMov(); // Function L.L.MoveSceneOpeningMovo(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void MoveSceneOpeningMov(); // Function L.L.MoveSceneOpeningMove_(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void MoveSceneTermsConditions(); // Function L.L.MoveSceneTermsConditions(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void MoveSceneCreateCharacter(); // Function L.L.MoveSceneCreateCharacter(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void MoveSceneTutorialMovie(); // Function L.L.MoveSceneTutorialMovie(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>

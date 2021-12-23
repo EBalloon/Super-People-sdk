@@ -10,7 +10,7 @@ enum class EClassRepNodeMapping : uint8 {
 };
 
 // Class ReplicationOptimizer.RealReplicationGraph
-struct URealReplicationGraph : UReplicationGraph {
+class URealReplicationGraph : UReplicationGraph {
 	struct Unknown GridNode; // 0x5C8 (8)
 	struct TArray<Unknown> SpatializedClasses; // 0x5D0 (16)
 	struct TArray<Unknown> NonSpatializedChildClasses; // 0x5E0 (16)
@@ -19,13 +19,13 @@ struct URealReplicationGraph : UReplicationGraph {
 };
 
 // Class ReplicationOptimizer.RealRepGraphNode_AlwaysRelevant_ForConnection
-struct URealRepGraphNode_AlwaysRelevant_ForConnection : UReplicationGraphNode {
+class URealRepGraphNode_AlwaysRelevant_ForConnection : UReplicationGraphNode {
 	struct Unknown LastViewer; // 0x50 (8)
 	struct Unknown LastViewTarget; // 0x58 (8)
 };
 
 // Class ReplicationOptimizer.ReplicationPingComponet
-struct UReplicationPingComponet : UActorComponent {
+class UReplicationPingComponet : UActorComponent {
 	int32_t PingCounter; // 0xB0 (4)
 	char bEnabled : 0; // 0xB4 (1)
 	struct Unknown PlayerState; // 0xB8 (8)

@@ -200,14 +200,14 @@ enum class EPhaserLFOType : uint8 {
 	EPhaserLFOType = 8
 };
 
-// Enum Synthesis.E
-enum class E : uint8 {
-	E = 0
-	E = 1
-	E = 2
-	E = 3
-	E = 4
-	E = 5
+// Enum Synthesis.ERingModulatorTypeSourceEffect
+enum class ERingModulatorTypeSourceEffect : uint8 {
+	ERingModulatorTypeSourceEffect = 0
+	ERingModulatorTypeSourceEffect = 1
+	ERingModulatorTypeSourceEffect = 2
+	ERingModulatorTypeSourceEffect = 3
+	ERingModulatorTypeSourceEffect = 4
+	ERingModulatorTypeSourceEffect = 5
 };
 
 // Enum Synthesis.EStereoDelaySourceEffect
@@ -325,12 +325,12 @@ enum class ESynthSlateSizeType : uint8 {
 };
 
 // Class Synthesis.ModularSynthPresetBank
-struct UModularSynthPresetBank : Object {
+class UModularSynthPresetBank : Object {
 	struct TArray<Unknown> Presets; // 0x28 (16)
 };
 
 // Class Synthesis.ModularSynthComponent
-struct UModularSynthComponent : USynthComponent {
+class UModularSynthComponent : USynthComponent {
 	int32_t VoiceCount; // 0x710 (4)
 
 	void SetSynthPreset(struct Unknown& SynthPreset); // Function Synthesis.ModularSynthComponent.SetSynthPreset(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18D8510>
@@ -395,33 +395,33 @@ struct UModularSynthComponent : USynthComponent {
 };
 
 // Class Synthesis.SourceEffectBitCrusherPreset
-struct USourceEffectBitCrusherPreset : USoundEffectSourcePreset {
+class USourceEffectBitCrusherPreset : USoundEffectSourcePreset {
 	struct Unknown Settings; // 0x70 (8)
 
 	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SourceEffectBitCrusherPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18E0120>
 };
 
 // Class Synthesis.SourceEffectChorusPreset
-struct USourceEffectChorusPreset : USoundEffectSourcePreset {
+class USourceEffectChorusPreset : USoundEffectSourcePreset {
 	struct Unknown Settings; // 0x80 (24)
 
 	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SourceEffectChorusPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18E01D0>
 };
 
 // Class Synthesis.SourceEffectDynamicsProcessorPreset
-struct USourceEffectDynamicsProcessorPreset : USoundEffectSourcePreset {
+class USourceEffectDynamicsProcessorPreset : USoundEffectSourcePreset {
 	struct Unknown Settings; // 0x90 (40)
 
 	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SourceEffectDynamicsProcessorPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18E0280>
 };
 
 // Class Synthesis.EnvelopeFollowerListener
-struct UEnvelopeFollowerListener : UActorComponent {
+class UEnvelopeFollowerListener : UActorComponent {
 	struct FMulticastInlineDelegate OnEnvelopeFollowerUpdate; // 0xB0 (16)
 };
 
 // Class Synthesis.SourceEffectEnvelopeFollowerPreset
-struct USourceEffectEnvelopeFollowerPreset : USoundEffectSourcePreset {
+class USourceEffectEnvelopeFollowerPreset : USoundEffectSourcePreset {
 	struct Unknown Settings; // 0x74 (12)
 
 	void UnregisterEnvelopeFollowerListener(struct Unknown EnvelopeFollowerListener); // Function Synthesis.SourceEffectEnvelopeFollowerPreset.UnregisterEnvelopeFollowerListener(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18E0A00>
@@ -430,86 +430,86 @@ struct USourceEffectEnvelopeFollowerPreset : USoundEffectSourcePreset {
 };
 
 // Class Synthesis.SourceEffectEQPreset
-struct USourceEffectEQPreset : USoundEffectSourcePreset {
+class USourceEffectEQPreset : USoundEffectSourcePreset {
 	struct Unknown Settings; // 0x78 (16)
 
 	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SourceEffectEQPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18E0330>
 };
 
 // Class Synthesis.SourceEffectFilterPreset
-struct USourceEffectFilterPreset : USoundEffectSourcePreset {
+class USourceEffectFilterPreset : USoundEffectSourcePreset {
 	struct Unknown Settings; // 0x74 (12)
 
 	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SourceEffectFilterPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18E0490>
 };
 
 // Class Synthesis.SourceEffectFoldbackDistortionPreset
-struct USourceEffectFoldbackDistortionPreset : USoundEffectSourcePreset {
+class USourceEffectFoldbackDistortionPreset : USoundEffectSourcePreset {
 	struct Unknown Settings; // 0x74 (12)
 
 	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SourceEffectFoldbackDistortionPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18E0540>
 };
 
 // Class Synthesis.SourceEffectMidSideSpreaderPreset
-struct USourceEffectMidSideSpreaderPreset : USoundEffectSourcePreset {
+class USourceEffectMidSideSpreaderPreset : USoundEffectSourcePreset {
 	struct Unknown Settings; // 0x74 (12)
 
 	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SourceEffectMidSideSpreaderPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18E05F0>
 };
 
 // Class Synthesis.SourceEffectPannerPreset
-struct USourceEffectPannerPreset : USoundEffectSourcePreset {
+class USourceEffectPannerPreset : USoundEffectSourcePreset {
 	struct Unknown Settings; // 0x70 (8)
 
 	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SourceEffectPannerPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18E06A0>
 };
 
 // Class Synthesis.SourceEffectPhaserPreset
-struct USourceEffectPhaserPreset : USoundEffectSourcePreset {
+class USourceEffectPhaserPreset : USoundEffectSourcePreset {
 	struct Unknown Settings; // 0x78 (16)
 
 	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SourceEffectPhaserPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18E0750>
 };
 
 // Class Synthesis.SourceEffectRingModulationPreset
-struct USourceEffectRingModulationPreset : USoundEffectSourcePreset {
+class USourceEffectRingModulationPreset : USoundEffectSourcePreset {
 	struct Unknown Settings; // 0x7C (20)
 
 	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SourceEffectRingModulationPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18E0810>
 };
 
 // Class Synthesis.SourceEffectSimpleDelayPreset
-struct USourceEffectSimpleDelayPreset : USoundEffectSourcePreset {
+class USourceEffectSimpleDelayPreset : USoundEffectSourcePreset {
 	struct Unknown Settings; // 0x80 (24)
 
 	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SourceEffectSimpleDelayPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18E08B0>
 };
 
 // Class Synthesis.SourceEffectStereoDelayPreset
-struct USourceEffectStereoDelayPreset : USoundEffectSourcePreset {
+class USourceEffectStereoDelayPreset : USoundEffectSourcePreset {
 	struct Unknown Settings; // 0x7C (20)
 
 	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SourceEffectStereoDelayPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18E0960>
 };
 
 // Class Synthesis.SourceEffectWaveShaperPreset
-struct USourceEffectWaveShaperPreset : USoundEffectSourcePreset {
+class USourceEffectWaveShaperPreset : USoundEffectSourcePreset {
 	struct Unknown Settings; // 0x70 (8)
 
 	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SourceEffectWaveShaperPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18E06A0>
 };
 
 // Class Synthesis.AudioImpulseResponse
-struct UAudioImpulseResponse : Object {
+class UAudioImpulseResponse : Object {
 	struct TArray<Unknown> ImpulseResponse; // 0x28 (16)
 	int32_t NumChannels; // 0x38 (4)
 	int32_t SampleRate; // 0x3C (4)
 	float NormalizationVolumeDb; // 0x40 (4)
-	struct TArray<Unknown> I; // 0x48 (16)
+	struct TArray<Unknown> IRData; // 0x48 (16)
 };
 
 // Class Synthesis.SubmixEffectConvolutionReverbPreset
-struct USubmixEffectConvolutionReverbPreset : USoundEffectSubmixPreset {
+class USubmixEffectConvolutionReverbPreset : USoundEffectSubmixPreset {
 	struct Unknown Settings; // 0x40 (32)
 	struct Unknown ImpulseResponse; // 0x60 (8)
 	enum class Unknow BlockSize; // 0x68 (1)
@@ -520,7 +520,7 @@ struct USubmixEffectConvolutionReverbPreset : USoundEffectSubmixPreset {
 };
 
 // Class Synthesis.SubmixEffectDelayPreset
-struct USubmixEffectDelayPreset : USoundEffectSubmixPreset {
+class USubmixEffectDelayPreset : USoundEffectSubmixPreset {
 	struct Unknown Settings; // 0x74 (12)
 	struct Unknown DynamicSettings; // 0x80 (12)
 
@@ -531,7 +531,7 @@ struct USubmixEffectDelayPreset : USoundEffectSubmixPreset {
 };
 
 // Class Synthesis.SubmixEffectFilterPreset
-struct USubmixEffectFilterPreset : USoundEffectSubmixPreset {
+class USubmixEffectFilterPreset : USoundEffectSubmixPreset {
 	struct Unknown Settings; // 0x74 (12)
 
 	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SubmixEffectFilterPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18E5CB0>
@@ -544,14 +544,14 @@ struct USubmixEffectFilterPreset : USoundEffectSubmixPreset {
 };
 
 // Class Synthesis.SubmixEffectFlexiverbPreset
-struct USubmixEffectFlexiverbPreset : USoundEffectSubmixPreset {
+class USubmixEffectFlexiverbPreset : USoundEffectSubmixPreset {
 	struct Unknown Settings; // 0x78 (16)
 
 	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SubmixEffectFlexiverbPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18E5D60>
 };
 
 // Class Synthesis.SubmixEffectTapDelayPreset
-struct USubmixEffectTapDelayPreset : USoundEffectSubmixPreset {
+class USubmixEffectTapDelayPreset : USoundEffectSubmixPreset {
 	struct Unknown Settings; // 0x80 (24)
 
 	void SetTap(int32_t TapId, struct Unknown& TapInfo); // Function Synthesis.SubmixEffectTapDelayPreset.SetTap(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18E60E0>
@@ -565,7 +565,7 @@ struct USubmixEffectTapDelayPreset : USoundEffectSubmixPreset {
 };
 
 // Class Synthesis.Synth2DSlider
-struct USynth2DSlider : UWidget {
+class USynth2DSlider : UWidget {
 	float ValueX; // 0x108 (4)
 	float ValueY; // 0x10C (4)
 	struct FDelegate ValueXDelegate; // 0x110 (16)
@@ -592,7 +592,7 @@ struct USynth2DSlider : UWidget {
 };
 
 // Class Synthesis.GranularSynth
-struct UGranularSynth : USynthComponent {
+class UGranularSynth : USynthComponent {
 	struct Unknown GranulatedSoundWave; // 0x710 (8)
 
 	void SetSustainGain(float SustainGain); // Function Synthesis.GranularSynth.SetSustainGain(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18E6060>
@@ -618,7 +618,7 @@ struct UGranularSynth : USynthComponent {
 };
 
 // Class Synthesis.MonoWaveTableSynthPreset
-struct UMonoWaveTableSynthPreset : Object {
+class UMonoWaveTableSynthPreset : Object {
 	struct FString PresetName; // 0x28 (16)
 	char bLockKeyframesToGridBool : 0; // 0x38 (1)
 	int32_t LockKeyframesToGrid; // 0x3C (4)
@@ -628,7 +628,7 @@ struct UMonoWaveTableSynthPreset : Object {
 };
 
 // Class Synthesis.SynthComponentMonoWaveTable
-struct USynthComponentMonoWaveTable : USynthComponent {
+class USynthComponentMonoWaveTable : USynthComponent {
 	struct FMulticastInlineDelegate OnTableAltered; // 0x710 (16)
 	struct FMulticastInlineDelegate OnNumTablesChanged; // 0x720 (16)
 	struct Unknown CurrentPreset; // 0x730 (8)
@@ -681,7 +681,7 @@ struct USynthComponentMonoWaveTable : USynthComponent {
 };
 
 // Class Synthesis.SynthSamplePlayer
-struct USynthSamplePlayer : USynthComponent {
+class USynthSamplePlayer : USynthComponent {
 	struct Unknown SoundWave; // 0x710 (8)
 	struct FMulticastInlineDelegate OnSampleLoaded; // 0x718 (16)
 	struct FMulticastInlineDelegate OnSamplePlaybackProgress; // 0x728 (16)
@@ -698,7 +698,7 @@ struct USynthSamplePlayer : USynthComponent {
 };
 
 // Class Synthesis.SynthKnob
-struct USynthKnob : UWidget {
+class USynthKnob : UWidget {
 	float Value; // 0x108 (4)
 	float StepSize; // 0x10C (4)
 	float MouseSpeed; // 0x110 (4)
@@ -720,5 +720,295 @@ struct USynthKnob : UWidget {
 	void SetStepSize(float InValue); // Function Synthesis.SynthKnob.SetStepSize(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18E96B0>
 	void SetLocked(char InValue); // Function Synthesis.SynthKnob.SetLocked(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18E8D30>
 	float GetValue(); // Function Synthesis.SynthKnob.GetValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18E7D90>
+};
+
+// ScriptStruct Synthesis.ModularSynthPresetBankEntry
+struct FModularSynthPresetBankEntry {
+	struct FString PresetName; // 0x0 (16)
+	struct Unknown Preset; // 0x10 (224)
+};
+
+// ScriptStruct Synthesis.ModularSynthPreset
+struct FModularSynthPreset : FTableRowBase {
+	char bEnablePolyphony : 0; // 0x8 (1)
+	enum class Unknow Osc1Type; // 0xC (1)
+	float Osc1Gain; // 0x10 (4)
+	float Osc1Octave; // 0x14 (4)
+	float Osc1Semitones; // 0x18 (4)
+	float Osc1Cents; // 0x1C (4)
+	float Osc1PulseWidth; // 0x20 (4)
+	enum class Unknow Osc2Type; // 0x24 (1)
+	float Osc2Gain; // 0x28 (4)
+	float Osc2Octave; // 0x2C (4)
+	float Osc2Semitones; // 0x30 (4)
+	float Osc2Cents; // 0x34 (4)
+	float Osc2PulseWidth; // 0x38 (4)
+	float Portamento; // 0x3C (4)
+	char bEnableUnison : 0; // 0x40 (1)
+	char bEnableOscillatorSync : 0; // 0x40 (1)
+	float Spread; // 0x44 (4)
+	float Pan; // 0x48 (4)
+	float LFO1Frequency; // 0x4C (4)
+	float LFO1Gain; // 0x50 (4)
+	enum class Unknow LFO1Type; // 0x54 (1)
+	enum class Unknow LFO1Mode; // 0x55 (1)
+	enum class Unknow LFO1PatchType; // 0x56 (1)
+	float LFO2Frequency; // 0x58 (4)
+	float LFO2Gain; // 0x5C (4)
+	enum class Unknow LFO2Type; // 0x60 (1)
+	enum class Unknow LFO2Mode; // 0x61 (1)
+	enum class Unknow LFO2PatchType; // 0x62 (1)
+	float GainDb; // 0x64 (4)
+	float AttackTime; // 0x68 (4)
+	float DecayTime; // 0x6C (4)
+	float SustainGain; // 0x70 (4)
+	float ReleaseTime; // 0x74 (4)
+	enum class Unknow ModEnvPatchType; // 0x78 (1)
+	enum class Unknow ModEnvBiasPatchType; // 0x79 (1)
+	char bInvertModulationEnvelope : 0; // 0x7C (1)
+	char bInvertModulationEnvelopeBias : 0; // 0x7C (1)
+	float ModulationEnvelopeDepth; // 0x80 (4)
+	float ModulationEnvelopeAttackTime; // 0x84 (4)
+	float ModulationEnvelopeDecayTime; // 0x88 (4)
+	float ModulationEnvelopeSustainGain; // 0x8C (4)
+	float ModulationEnvelopeReleaseTime; // 0x90 (4)
+	char bLegato : 0; // 0x94 (1)
+	char bRetrigger : 0; // 0x94 (1)
+	float FilterFrequency; // 0x98 (4)
+	float FilterQ; // 0x9C (4)
+	enum class Unknow FilterType; // 0xA0 (1)
+	enum class Unknow FilterAlgorithm; // 0xA1 (1)
+	char bStereoDelayEnabled : 0; // 0xA4 (1)
+	enum class Unknow StereoDelayMode; // 0xA8 (1)
+	float StereoDelayTime; // 0xAC (4)
+	float StereoDelayFeedback; // 0xB0 (4)
+	float StereoDelayWetlevel; // 0xB4 (4)
+	float StereoDelayRatio; // 0xB8 (4)
+	char bChorusEnabled : 0; // 0xBC (1)
+	float ChorusDepth; // 0xC0 (4)
+	float ChorusFeedback; // 0xC4 (4)
+	float ChorusFrequency; // 0xC8 (4)
+	struct TArray<Unknown> Patches; // 0xD0 (16)
+};
+
+// ScriptStruct Synthesis.EpicSynth1Patch
+struct FEpicSynth1Patch {
+	enum class Unknow PatchSource; // 0x0 (1)
+	struct TArray<Unknown> PatchCables; // 0x8 (16)
+};
+
+// ScriptStruct Synthesis.Synth1PatchCable
+struct FSynth1PatchCable {
+	float Depth; // 0x0 (4)
+	enum class Unknow Destination; // 0x4 (1)
+};
+
+// ScriptStruct Synthesis.PatchId
+struct FPatchId {
+	int32_t ID; // 0x0 (4)
+};
+
+// ScriptStruct Synthesis.SourceEffectBitCrusherSettings
+struct FSourceEffectBitCrusherSettings {
+	float CrushedSampleRate; // 0x0 (4)
+	float CrushedBits; // 0x4 (4)
+};
+
+// ScriptStruct Synthesis.SourceEffectChorusSettings
+struct FSourceEffectChorusSettings {
+	float Depth; // 0x0 (4)
+	float Frequency; // 0x4 (4)
+	float Feedback; // 0x8 (4)
+	float WetLevel; // 0xC (4)
+	float DryLevel; // 0x10 (4)
+	float Spread; // 0x14 (4)
+};
+
+// ScriptStruct Synthesis.SourceEffectDynamicsProcessorSettings
+struct FSourceEffectDynamicsProcessorSettings {
+	enum class Unknow DynamicsProcessorType; // 0x0 (1)
+	enum class Unknow PeakMode; // 0x1 (1)
+	float LookAheadMsec; // 0x4 (4)
+	float AttackTimeMsec; // 0x8 (4)
+	float ReleaseTimeMsec; // 0xC (4)
+	float ThresholdDb; // 0x10 (4)
+	float Ratio; // 0x14 (4)
+	float KneeBandwidthDb; // 0x18 (4)
+	float InputGainDb; // 0x1C (4)
+	float OutputGainDb; // 0x20 (4)
+	char bStereoLinked : 0; // 0x24 (1)
+	char bAnalogMode : 0; // 0x24 (1)
+};
+
+// ScriptStruct Synthesis.SourceEffectEnvelopeFollowerSettings
+struct FSourceEffectEnvelopeFollowerSettings {
+	float AttackTime; // 0x0 (4)
+	float ReleaseTime; // 0x4 (4)
+	enum class Unknow PeakMode; // 0x8 (1)
+	char bIsAnalogMode : 0; // 0x9 (1)
+};
+
+// ScriptStruct Synthesis.SourceEffectEQSettings
+struct FSourceEffectEQSettings {
+	struct TArray<Unknown> EQBands; // 0x0 (16)
+};
+
+// ScriptStruct Synthesis.SourceEffectEQBand
+struct FSourceEffectEQBand {
+	float Frequency; // 0x0 (4)
+	float Bandwidth; // 0x4 (4)
+	float GainDb; // 0x8 (4)
+	char bEnabled : 0; // 0xC (1)
+};
+
+// ScriptStruct Synthesis.SourceEffectFilterSettings
+struct FSourceEffectFilterSettings {
+	enum class Unknow FilterCircuit; // 0x0 (1)
+	enum class Unknow FilterType; // 0x1 (1)
+	float CutoffFrequency; // 0x4 (4)
+	float FilterQ; // 0x8 (4)
+};
+
+// ScriptStruct Synthesis.SourceEffectFoldbackDistortionSettings
+struct FSourceEffectFoldbackDistortionSettings {
+	float InputGainDb; // 0x0 (4)
+	float ThresholdDb; // 0x4 (4)
+	float OutputGainDb; // 0x8 (4)
+};
+
+// ScriptStruct Synthesis.SourceEffectMidSideSpreaderSettings
+struct FSourceEffectMidSideSpreaderSettings {
+	enum class Unknow InputMode; // 0x0 (1)
+	float SpreadAmount; // 0x4 (4)
+	enum class Unknow OutputMode; // 0x8 (1)
+	char bEqualPower : 0; // 0x9 (1)
+};
+
+// ScriptStruct Synthesis.SourceEffectPannerSettings
+struct FSourceEffectPannerSettings {
+	float Spread; // 0x0 (4)
+	float Pan; // 0x4 (4)
+};
+
+// ScriptStruct Synthesis.SourceEffectPhaserSettings
+struct FSourceEffectPhaserSettings {
+	float WetLevel; // 0x0 (4)
+	float Frequency; // 0x4 (4)
+	float Feedback; // 0x8 (4)
+	enum class Unknow LFOType; // 0xC (1)
+	char UseQuadraturePhase : 0; // 0xD (1)
+};
+
+// ScriptStruct Synthesis.SourceEffectRingModulationSettings
+struct FSourceEffectRingModulationSettings {
+	enum class Unknow ModulatorType; // 0x0 (1)
+	float Frequency; // 0x4 (4)
+	float Depth; // 0x8 (4)
+	float DryLevel; // 0xC (4)
+	float WetLevel; // 0x10 (4)
+};
+
+// ScriptStruct Synthesis.SourceEffectSimpleDelaySettings
+struct FSourceEffectSimpleDelaySettings {
+	float SpeedOfSound; // 0x0 (4)
+	float DelayAmount; // 0x4 (4)
+	float DryAmount; // 0x8 (4)
+	float WetAmount; // 0xC (4)
+	float Feedback; // 0x10 (4)
+	char bDelayBasedOnDistance : 0; // 0x14 (1)
+};
+
+// ScriptStruct Synthesis.SourceEffectStereoDelaySettings
+struct FSourceEffectStereoDelaySettings {
+	enum class Unknow DelayMode; // 0x0 (1)
+	float DelayTimeMsec; // 0x4 (4)
+	float Feedback; // 0x8 (4)
+	float DelayRatio; // 0xC (4)
+	float WetLevel; // 0x10 (4)
+};
+
+// ScriptStruct Synthesis.SourceEffectWaveShaperSettings
+struct FSourceEffectWaveShaperSettings {
+	float Amount; // 0x0 (4)
+	float OutputGainDb; // 0x4 (4)
+};
+
+// ScriptStruct Synthesis.SubmixEffectConvolutionReverbSettings
+struct FSubmixEffectConvolutionReverbSettings {
+	float NormalizationVolumeDb; // 0x0 (4)
+	float SurroundRearChannelBleedDb; // 0x4 (4)
+	char bInvertRearChannelBleedPhase : 0; // 0x8 (1)
+	char bSurroundRearChannelFlip : 0; // 0x9 (1)
+	float SurroundRearChannelBleedAmount; // 0xC (4)
+	struct Unknown ImpulseResponse; // 0x10 (8)
+	char pad_14_0 : 6; // 0x14 (1)
+	char AllowHArdwareAcceleration : 1; // 0x18 (1)
+};
+
+// ScriptStruct Synthesis.SubmixEffectDelaySettings
+struct FSubmixEffectDelaySettings {
+	float MaximumDelayLength; // 0x0 (4)
+	float InterpolationTime; // 0x4 (4)
+	float DelayLength; // 0x8 (4)
+};
+
+// ScriptStruct Synthesis.SubmixEffectFilterSettings
+struct FSubmixEffectFilterSettings {
+	enum class Unknow FilterType; // 0x0 (1)
+	enum class Unknow FilterAlgorithm; // 0x1 (1)
+	float FilterFrequency; // 0x4 (4)
+	float FilterQ; // 0x8 (4)
+};
+
+// ScriptStruct Synthesis.SubmixEffectFlexiverbSettings
+struct FSubmixEffectFlexiverbSettings {
+	float PreDelay; // 0x0 (4)
+	float DecayTime; // 0x4 (4)
+	float RoomDampening; // 0x8 (4)
+	int32_t Complexity; // 0xC (4)
+};
+
+// ScriptStruct Synthesis.SubmixEffectTapDelaySettings
+struct FSubmixEffectTapDelaySettings {
+	float MaximumDelayLength; // 0x0 (4)
+	float InterpolationTime; // 0x4 (4)
+	struct TArray<Unknown> Taps; // 0x8 (16)
+};
+
+// ScriptStruct Synthesis.TapDelayInfo
+struct FTapDelayInfo {
+	enum class Unknow TapLineMode; // 0x0 (1)
+	float DelayLength; // 0x4 (4)
+	float Gain; // 0x8 (4)
+	int32_t OutputChannel; // 0xC (4)
+	float PanInDegrees; // 0x10 (4)
+	int32_t TapId; // 0x14 (4)
+};
+
+// ScriptStruct Synthesis.Synth2DSliderStyle
+struct FSynth2DSliderStyle : FSlateWidgetStyle {
+	struct Unknown NormalThumbImage; // 0x8 (136)
+	struct Unknown DisabledThumbImage; // 0x90 (136)
+	struct Unknown NormalBarImage; // 0x118 (136)
+	struct Unknown DisabledBarImage; // 0x1A0 (136)
+	struct Unknown BackgroundImage; // 0x228 (136)
+	float BarThickness; // 0x2B0 (4)
+};
+
+// ScriptStruct Synthesis.SynthKnobStyle
+struct FSynthKnobStyle : FSlateWidgetStyle {
+	struct Unknown LargeKnob; // 0x8 (136)
+	struct Unknown LargeKnobOverlay; // 0x90 (136)
+	struct Unknown MediumKnob; // 0x118 (136)
+	struct Unknown MediumKnobOverlay; // 0x1A0 (136)
+	float MinValueAngle; // 0x228 (4)
+	float MaxValueAngle; // 0x22C (4)
+	enum class Unknow KnobSize; // 0x230 (1)
+};
+
+// ScriptStruct Synthesis.SynthSlateStyle
+struct FSynthSlateStyle : FSlateWidgetStyle {
+	enum class Unknow SizeType; // 0x8 (1)
+	enum class Unknow ColorStyle; // 0x9 (1)
 };
 

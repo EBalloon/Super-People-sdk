@@ -343,11 +343,11 @@ enum class ESpawnActorCollisionHandlingMethod : uint8 {
 	ESpawnActorCollisionHandlingMethod = 5
 };
 
-// Enum Engine.E
-enum class E : uint8 {
-	E = 0
-	E = 1
-	E = 2
+// Enum Engine.ERotatorQuantization
+enum class ERotatorQuantization : uint8 {
+	ERotatorQuantization = 0
+	ERotatorQuantization = 1
+	ERotatorQuantization = 2
 };
 
 // Enum Engine.EVectorQuantization
@@ -388,10 +388,10 @@ enum class EViewTargetBlendFunction : uint8 {
 
 // Enum Engine.ETravelType
 enum class ETravelType : uint8 {
-	T = 0
-	T = 1
-	T = 2
-	T = 3
+	TRAVEL_Absolute = 0
+	TRAVEL_Partial = 1
+	TRAVEL_Relative = 2
+	TRAVEL_MAX = 3
 };
 
 // Enum Engine.ECollisionChannel
@@ -454,12 +454,12 @@ enum class ECameraType : uint8 {
 	ECameraType = 2
 };
 
-// Enum Engine.E
-enum class E : uint8 {
-	E = 0
-	E = 1
-	E = 2
-	E = 3
+// Enum Engine.EReplayViewMode
+enum class EReplayViewMode : uint8 {
+	EReplayViewMode = 0
+	EReplayViewMode = 1
+	EReplayViewMode = 2
+	EReplayViewMode = 3
 };
 
 // Enum Engine.EFractureSoundType
@@ -508,8 +508,8 @@ enum class EInputEvent : uint8 {
 	IE_MAX = 5
 };
 
-// Enum Engine.E
-enum class E : uint8 {
+// Enum Engine.ERelativeTransformSpace
+enum class ERelativeTransformSpace : uint8 {
 	RTS_World = 0
 	RTS_Actor = 1
 	RTS_Component = 2
@@ -558,12 +558,12 @@ enum class ENetworkSmoothingMode : uint8 {
 	ENetworkSmoothingMode = 4
 };
 
-// Enum Engine.E
-enum class E : uint8 {
-	E = 0
-	E = 1
-	E = 2
-	E = 3
+// Enum Engine.EReflectedAndRefractedRayTracedShadows
+enum class EReflectedAndRefractedRayTracedShadows : uint8 {
+	EReflectedAndRefractedRayTracedShadows = 0
+	EReflectedAndRefractedRayTracedShadows = 1
+	EReflectedAndRefractedRayTracedShadows = 2
+	EReflectedAndRefractedRayTracedShadows = 3
 };
 
 // Enum Engine.ETranslucencyType
@@ -573,19 +573,19 @@ enum class ETranslucencyType : uint8 {
 	ETranslucencyType = 2
 };
 
-// Enum Engine.E
-enum class E : uint8 {
-	E = 0
-	E = 1
-	E = 2
+// Enum Engine.EReflectionsType
+enum class EReflectionsType : uint8 {
+	EReflectionsType = 0
+	EReflectionsType = 1
+	EReflectionsType = 2
 };
 
-// Enum Engine.E
-enum class E : uint8 {
-	E = 0
-	E = 1
-	E = 2
-	E = 3
+// Enum Engine.ERayTracingGlobalIlluminationType
+enum class ERayTracingGlobalIlluminationType : uint8 {
+	ERayTracingGlobalIlluminationType = 0
+	ERayTracingGlobalIlluminationType = 1
+	ERayTracingGlobalIlluminationType = 2
+	ERayTracingGlobalIlluminationType = 3
 };
 
 // Enum Engine.EFilmicTonemapperType
@@ -689,8 +689,8 @@ enum class EFastArraySerializerDeltaFlags : uint8 {
 	EFastArraySerializerDeltaFlags = 5
 };
 
-// Enum Engine.E
-enum class E : uint8 {
+// Enum Engine.ERadialImpulseFalloff
+enum class ERadialImpulseFalloff : uint8 {
 	RIF_Constant = 0
 	RIF_Linear = 1
 	RIF_MAX = 2
@@ -708,8 +708,8 @@ enum class EBlendMode : uint8 {
 	BLEND_MAX = 7
 };
 
-// Enum Engine.E
-enum class E : uint8 {
+// Enum Engine.ERichCurveExtrapolation
+enum class ERichCurveExtrapolation : uint8 {
 	RCCE_Cycle = 0
 	RCCE_CycleWithOffset = 1
 	RCCE_Oscillate = 2
@@ -719,17 +719,17 @@ enum class E : uint8 {
 	RCCE_MAX = 6
 };
 
-// Enum Engine.E
-enum class E : uint8 {
+// Enum Engine.ERichCurveTangentWeightMode
+enum class ERichCurveTangentWeightMode : uint8 {
 	RCTWM_WeightedNone = 0
-	RCTWM_WeightedArrivt = 1
+	RCTWM_WeightedArriv = 1
 	RCTWM_WeightedLeave = 2
 	RCTWM_WeightedBoth = 3
 	RCTWM_MAX = 4
 };
 
-// Enum Engine.E
-enum class E : uint8 {
+// Enum Engine.ERichCurveTangentMode
+enum class ERichCurveTangentMode : uint8 {
 	RCTM_Auto = 0
 	RCTM_User = 1
 	RCTM_Break = 2
@@ -737,8 +737,8 @@ enum class E : uint8 {
 	RCTM_MAX = 4
 };
 
-// Enum Engine.E
-enum class E : uint8 {
+// Enum Engine.ERichCurveInterpMode
+enum class ERichCurveInterpMode : uint8 {
 	RCIM_Linear = 0
 	RCIM_Constant = 1
 	RCIM_Cubic = 2
@@ -784,19 +784,19 @@ enum class EDOFMode : uint8 {
 	EDOFMode = 7
 };
 
-// Enum Engine.E
-enum class E : uint8 {
-	E = 0
-	E_256 = 1
-	E_2 = 2
-	E_3 = 3
-	E_5 = 4
-	E_9 = 5
-	E_17 = 6
-	E_33 = 7
-	E_65 = 8
-	E_129 = 9
-	E = 10
+// Enum Engine.ERendererStencilMask
+enum class ERendererStencilMask : uint8 {
+	ERendererStencilMask = 0
+	ERendererStencilMask_256 = 1
+	ERendererStencilMask_2 = 2
+	ERendererStencilMask_3 = 3
+	ERendererStencilMask_5 = 4
+	ERendererStencilMask_9 = 5
+	ERendererStencilMask_17 = 6
+	ERendererStencilMask_33 = 7
+	ERendererStencilMask_65 = 8
+	ERendererStencilMask_129 = 9
+	ERendererStencilMask = 10
 };
 
 // Enum Engine.ESleepFamily
@@ -807,12 +807,12 @@ enum class ESleepFamily : uint8 {
 	ESleepFamily = 3
 };
 
-// Enum Engine.E
-enum class E : uint8 {
-	E = 0
-	E = 1
-	E = 2
-	E = 3
+// Enum Engine.ERuntimeVirtualTextureMainPassType
+enum class ERuntimeVirtualTextureMainPassType : uint8 {
+	ERuntimeVirtualTextureMainPassType = 0
+	ERuntimeVirtualTextureMainPassType = 1
+	ERuntimeVirtualTextureMainPassType = 2
+	ERuntimeVirtualTextureMainPassType = 3
 };
 
 // Enum Engine.ECanBeCharacterBase
@@ -900,12 +900,12 @@ enum class AnimationKeyFormat : uint8 {
 	AKF_MAX = 3
 };
 
-// Enum Engine.E
-enum class E : uint8 {
-	E = 0
-	E = 1
-	E = 2
-	E = 3
+// Enum Engine.ERawCurveTrackTypes
+enum class ERawCurveTrackTypes : uint8 {
+	ERawCurveTrackTypes = 0
+	ERawCurveTrackTypes = 1
+	ERawCurveTrackTypes = 2
+	ERawCurveTrackTypes = 3
 };
 
 // Enum Engine.EAnimAssetCurveFlags
@@ -942,21 +942,21 @@ enum class EAdditiveBasePoseType : uint8 {
 	ABPT_MAX = 4
 };
 
-// Enum Engine.E
-enum class E : uint8 {
-	E = 0
-	E = 1
-	E = 2
-	E = 3
-	E = 4
+// Enum Engine.ERootMotionMode
+enum class ERootMotionMode : uint8 {
+	ERootMotionMode = 0
+	ERootMotionMode = 1
+	ERootMotionMode = 2
+	ERootMotionMode = 3
+	ERootMotionMode = 4
 };
 
-// Enum Engine.E
-enum class E : uint8 {
-	E = 0
-	E = 1
-	E = 2
-	E = 3
+// Enum Engine.ERootMotionRootLock
+enum class ERootMotionRootLock : uint8 {
+	ERootMotionRootLock = 0
+	ERootMotionRootLock = 1
+	ERootMotionRootLock = 2
+	ERootMotionRootLock = 3
 };
 
 // Enum Engine.EMontagePlayReturnType
@@ -1176,10 +1176,10 @@ enum class EMontageNotifyTickType : uint8 {
 
 // Enum Engine.EBoneRotationSource
 enum class EBoneRotationSource : uint8 {
-	B = 0
-	B = 1
-	B = 2
-	B = 3
+	BRS_KeepComponentSpaceRotation = 0
+	BRS_KeepLocalSpaceRotation = 1
+	BRS_CopyFromTarget = 2
+	BRS_MAX = 3
 };
 
 // Enum Engine.EBoneControlSpace
@@ -1630,7 +1630,7 @@ enum class EViewModeIndex : uint8 {
 	VMI_ShaderComplexityWithQuadOverdraw = 22
 	VMI_HLODColoration = 23
 	VMI_GroupLODColoration = 24
-	VMI_MaterialTextureScaleAccuracy = 25
+	VMI_MaterialTextureScaleAccurac = 25
 	VMI_RequiredTextureResolution = 26
 	VMI_PathTracing = 27
 	VMI_RayTracingDebug = 28
@@ -1815,7 +1815,7 @@ enum class EMaterialSamplerType : uint8 {
 	SAMPLERTYPE_VirtualNormal = 13
 	SAMPLERTYPE_VirtualMasks = 14
 	SAMPLERTYPE_VirtualLinearColor = 15
-	SAMPLERTYPE_VirtualLinearGrayscale = 16
+	SAMPLERTYPE_VirtualLinearGraysc = 16
 	SAMPLERTYPE_MAX = 17
 };
 
@@ -1902,8 +1902,8 @@ enum class ETranslucentSortPolicy : uint8 {
 	ETranslucentSortPolicy = 3
 };
 
-// Enum Engine.E
-enum class E : uint8 {
+// Enum Engine.ERefractionMode
+enum class ERefractionMode : uint8 {
 	RM_IndexOfRefraction = 0
 	RM_PixelNormalOffset = 1
 	RM_MAX = 2
@@ -1913,7 +1913,7 @@ enum class E : uint8 {
 enum class ETranslucencyLightingMode : uint8 {
 	TLM_VolumetricNonDirectional = 0
 	TLM_VolumetricDirectional = 1
-	TLM_VolumetricPerVertexNonDirectional = 2
+	TLM_VolumetricPerVertexNonDirec = 2
 	TLM_VolumetricPerVertexDirectional = 3
 	TLM_Surface = 4
 	TLM_SurfacePerPixelLighting = 5
@@ -2115,8 +2115,8 @@ enum class EEasingFunc : uint8 {
 	EEasingFunc = 14
 };
 
-// Enum Engine.E
-enum class E : uint8 {
+// Enum Engine.ERoundingMode
+enum class ERoundingMode : uint8 {
 	HalfToEven = 0
 	HalfFromZero = 1
 	HalfToZero = 2
@@ -2124,7 +2124,7 @@ enum class E : uint8 {
 	ToZero = 4
 	ToNegativeInfinity = 5
 	ToPositiveInfinity = 6
-	E = 7
+	ERoundingMode_MAX = 7
 };
 
 // Enum Engine.EStreamingVolumeUsage
@@ -2163,7 +2163,7 @@ enum class EDecalBlendMode : uint8 {
 	DBM_DBuffer_Normal = 8
 	DBM_DBuffer_NormalRoughness = 9
 	DBM_DBuffer_Roughness = 10
-	DBM_DBuffer_Emissivs = 11
+	DBM_DBuffer_Emissiv = 11
 	DBM_DBuffer_AlphaComposite = 12
 	DBM_DBuffer_Emissiv = 13
 	DBM_Volumetric_DistanceFunction = 14
@@ -2251,8 +2251,8 @@ enum class ENoiseFunction : uint8 {
 	NOISEFUNCTION_MAX = 6
 };
 
-// Enum Engine.E
-enum class E : uint8 {
+// Enum Engine.ERuntimeVirtualTextureMipValueMode
+enum class ERuntimeVirtualTextureMipValueMode : uint8 {
 	RVTMVM_None = 0
 	RVTMVM_MipLevel = 1
 	RVTMVM_MipBias = 2
@@ -2313,35 +2313,35 @@ enum class ETextureMipValueMode : uint8 {
 
 // Enum Engine.EMaterialVectorCoordTransform
 enum class EMaterialVectorCoordTransform : uint8 {
-	T = 0
-	T = 1
-	T = 2
-	T = 3
-	T = 4
-	T = 5
-	T = 6
+	TRANSFORM_Tangent = 0
+	TRANSFORM_Local = 1
+	TRANSFORM_World = 2
+	TRANSFORM_View = 3
+	TRANSFORM_Camera = 4
+	TRANSFORM_ParticleWorld = 5
+	TRANSFORM_MAX = 6
 };
 
 // Enum Engine.EMaterialVectorCoordTransformSource
 enum class EMaterialVectorCoordTransformSource : uint8 {
-	T = 0
-	T = 1
-	T = 2
-	T = 3
-	T = 4
-	T = 5
-	T = 6
+	TRANSFORMSOURCE_Tangent = 0
+	TRANSFORMSOURCE_Local = 1
+	TRANSFORMSOURCE_World = 2
+	TRANSFORMSOURCE_View = 3
+	TRANSFORMSOURCE_Camera = 4
+	TRANSFORMSOURCE_ParticleWorld = 5
+	TRANSFORMSOURCE_MAX = 6
 };
 
-// Enum Engine.EMaterialPositionTransformSource
-enum class EMaterialPositionTransformSource : uint8 {
-	T = 0
-	T = 1
-	T = 2
-	T = 3
-	T = 4
-	T = 5
-	T = 6
+// Enum Engine.EMaterialPositionTransformSourc
+enum class EMaterialPositionTransformSourc : uint8 {
+	TRANSFORMPOSSOURCE_Local = 0
+	TRANSFORMPOSSOURCE_World = 1
+	TRANSFORMPOSSOURCE_TranslatedWorld = 2
+	TRANSFORMPOSSOURCE_View = 3
+	TRANSFORMPOSSOURCE_Camera = 4
+	TRANSFORMPOSSOURCE_Particle = 5
+	TRANSFORMPOSSOURCE_MAX = 6
 };
 
 // Enum Engine.EVectorNoiseFunction
@@ -2431,7 +2431,7 @@ enum class ETextureSizingType : uint8 {
 	TextureSizingType_UseSingleTextureSize = 0
 	TextureSizingType_UseAutomaticBiasedSizes = 1
 	TextureSizingType_UseManualOverrideTextureSize = 2
-	TextureSizingType_UseSimplygonAutomaticSizing = 3
+	TextureSizingType_UseSimplygonAutomatic = 3
 	TextureSizingType_MAX = 4
 };
 
@@ -2581,76 +2581,76 @@ enum class EKillType : uint8 {
 	EKillType = 4
 };
 
-// Enum Engine.E
-enum class E : uint8 {
-	E = 0
-	E = 1
-	E = 2
-	E = 3
-	E = 4
-	E = 5
-	E = 6
-	E = 7
-	E = 8
-	E = 9
-	E = 10
-	E = 11
-	E = 12
-	E = 13
-	E = 14
-	E = 15
-	E = 16
-	E = 17
-	E = 18
-	E = 19
-	E = 20
-	E = 21
-	E = 22
-	E = 23
-	E = 24
-	E = 25
-	E = 26
-	E = 27
-	E = 28
-	E = 29
-	E = 30
-	E = 31
-	E = 32
-	E = 33
-	E = 34
-	E = 35
-	E = 36
-	E = 37
-	E = 38
-	E = 39
-	E = 40
-	E = 41
-	E = 42
-	E = 43
-	E = 44
-	E = 45
-	E = 46
-	E = 47
-	E = 48
-	E = 49
-	E = 50
-	E = 51
-	E = 52
-	E = 53
-	E = 54
-	E = 55
-	E = 56
-	E = 57
-	E = 58
-	E = 59
-	E = 60
-	E = 61
-	E = 62
-	E = 63
-	E = 64
-	E = 65
-	E = 66
-	E = 67
+// Enum Engine.EReplayFailure
+enum class EReplayFailure : uint8 {
+	EReplayFailure = 0
+	EReplayFailure = 1
+	EReplayFailure = 2
+	EReplayFailure = 3
+	EReplayFailure = 4
+	EReplayFailure = 5
+	EReplayFailure = 6
+	EReplayFailure = 7
+	EReplayFailure = 8
+	EReplayFailure = 9
+	EReplayFailure = 10
+	EReplayFailure = 11
+	EReplayFailure = 12
+	EReplayFailure = 13
+	EReplayFailure = 14
+	EReplayFailure = 15
+	EReplayFailure = 16
+	EReplayFailure = 17
+	EReplayFailure = 18
+	EReplayFailure = 19
+	EReplayFailure = 20
+	EReplayFailure = 21
+	EReplayFailure = 22
+	EReplayFailure = 23
+	EReplayFailure = 24
+	EReplayFailure = 25
+	EReplayFailure = 26
+	EReplayFailure = 27
+	EReplayFailure = 28
+	EReplayFailure = 29
+	EReplayFailure = 30
+	EReplayFailure = 31
+	EReplayFailure = 32
+	EReplayFailure = 33
+	EReplayFailure = 34
+	EReplayFailure = 35
+	EReplayFailure = 36
+	EReplayFailure = 37
+	EReplayFailure = 38
+	EReplayFailure = 39
+	EReplayFailure = 40
+	EReplayFailure = 41
+	EReplayFailure = 42
+	EReplayFailure = 43
+	EReplayFailure = 44
+	EReplayFailure = 45
+	EReplayFailure = 46
+	EReplayFailure = 47
+	EReplayFailure = 48
+	EReplayFailure = 49
+	EReplayFailure = 50
+	EReplayFailure = 51
+	EReplayFailure = 52
+	EReplayFailure = 53
+	EReplayFailure = 54
+	EReplayFailure = 55
+	EReplayFailure = 56
+	EReplayFailure = 57
+	EReplayFailure = 58
+	EReplayFailure = 59
+	EReplayFailure = 60
+	EReplayFailure = 61
+	EReplayFailure = 62
+	EReplayFailure = 63
+	EReplayFailure = 64
+	EReplayFailure = 65
+	EReplayFailure = 66
+	EReplayFailure = 67
 };
 
 // Enum Engine.FNavigationSystemRunMode
@@ -2719,12 +2719,12 @@ enum class ENavLinkDirection : uint8 {
 
 // Enum Engine.EEmitterRenderMode
 enum class EEmitterRenderMode : uint8 {
-	E = 0
-	E = 1
-	E = 2
-	E = 3
-	E = 4
-	E = 5
+	ERM_Normal = 0
+	ERM_Point = 1
+	ERM_Cross = 2
+	ERM_LightsOnly = 3
+	ERM_None = 4
+	ERM_MAX = 5
 };
 
 // Enum Engine.EParticleSubUVInterpMethod
@@ -3070,10 +3070,10 @@ enum class EParticleEventType : uint8 {
 
 // Enum Engine.ParticleReplayState
 enum class ParticleReplayState : uint8 {
-	P = 0
-	P = 1
-	P = 2
-	P = 3
+	PRS_Disabled = 0
+	PRS_Capturing = 1
+	PRS_Replaying = 2
+	PRS_MAX = 3
 };
 
 // Enum Engine.EParticleSysParamType
@@ -3117,11 +3117,11 @@ enum class EFrictionCombineMode : uint8 {
 	EFrictionCombineMode = 3
 };
 
-// Enum Engine.E
-enum class E : uint8 {
-	E = 0
-	E = 1
-	E = 2
+// Enum Engine.EReflectionSourceType
+enum class EReflectionSourceType : uint8 {
+	EReflectionSourceType = 0
+	EReflectionSourceType = 1
+	EReflectionSourceType = 2
 };
 
 // Enum Engine.EDefaultBackBufferPixelFormat
@@ -3194,11 +3194,11 @@ enum class EClearSceneOptions : uint8 {
 	EClearSceneOptions = 3
 };
 
-// Enum Engine.E
-enum class E : uint8 {
-	E = 0
-	E = 1
-	E = 2
+// Enum Engine.EReporterLineStyle
+enum class EReporterLineStyle : uint8 {
+	EReporterLineStyle = 0
+	EReporterLineStyle = 1
+	EReporterLineStyle = 2
 };
 
 // Enum Engine.ELegendPosition
@@ -3251,15 +3251,15 @@ enum class ReverbPreset : uint8 {
 	REVERB_MAX = 23
 };
 
-// Enum Engine.E
-enum class E : uint8 {
+// Enum Engine.ERichCurveKeyTimeCompressionFormat
+enum class ERichCurveKeyTimeCompressionFormat : uint8 {
 	RCKTCF_uint16 = 0
 	RCKTCF_float32 = 1
 	RCKTCF_MAX = 2
 };
 
-// Enum Engine.E
-enum class E : uint8 {
+// Enum Engine.ERichCurveCompressionFormat
+enum class ERichCurveCompressionFormat : uint8 {
 	RCCF_Empty = 0
 	RCCF_Constant = 1
 	RCCF_Linear = 2
@@ -3282,47 +3282,47 @@ enum class EControlConstraint : uint8 {
 	EControlConstraint = 2
 };
 
-// Enum Engine.E
-enum class E : uint8 {
-	E = 0
-	E = 1
-	E = 2
-	E = 3
+// Enum Engine.ERootMotionFinishVelocityMode
+enum class ERootMotionFinishVelocityMode : uint8 {
+	ERootMotionFinishVelocityMode = 0
+	ERootMotionFinishVelocityMode = 1
+	ERootMotionFinishVelocityMode = 2
+	ERootMotionFinishVelocityMode = 3
 };
 
-// Enum Engine.E
-enum class E : uint8 {
-	E = 1
-	E = 2
-	E = 4
-	E = 5
+// Enum Engine.ERootMotionSourceSettingsFlags
+enum class ERootMotionSourceSettingsFlags : uint8 {
+	ERootMotionSourceSettingsFlags = 1
+	ERootMotionSourceSettingsFlags = 2
+	ERootMotionSourceSettingsFlags = 4
+	ERootMotionSourceSettingsFlags = 5
 };
 
-// Enum Engine.E
-enum class E : uint8 {
-	E = 1
-	E = 2
-	E = 4
-	E = 5
+// Enum Engine.ERootMotionSourceStatusFlags
+enum class ERootMotionSourceStatusFlags : uint8 {
+	ERootMotionSourceStatusFlags = 1
+	ERootMotionSourceStatusFlags = 2
+	ERootMotionSourceStatusFlags = 4
+	ERootMotionSourceStatusFlags = 5
 };
 
-// Enum Engine.E
-enum class E : uint8 {
-	E = 0
-	E = 1
-	E = 2
+// Enum Engine.ERootMotionAccumulateMode
+enum class ERootMotionAccumulateMode : uint8 {
+	ERootMotionAccumulateMode = 0
+	ERootMotionAccumulateMode = 1
+	ERootMotionAccumulateMode = 2
 };
 
-// Enum Engine.E
-enum class E : uint8 {
-	E = 0
-	E = 1
-	E = 2
-	E = 3
-	E = 4
-	E = 5
-	E = 6
-	E = 7
+// Enum Engine.ERuntimeVirtualTextureMaterialType
+enum class ERuntimeVirtualTextureMaterialType : uint8 {
+	ERuntimeVirtualTextureMaterialType = 0
+	ERuntimeVirtualTextureMaterialType = 1
+	ERuntimeVirtualTextureMaterialType = 2
+	ERuntimeVirtualTextureMaterialType = 3
+	ERuntimeVirtualTextureMaterialType = 4
+	ERuntimeVirtualTextureMaterialType = 5
+	ERuntimeVirtualTextureMaterialType = 6
+	ERuntimeVirtualTextureMaterialType = 7
 };
 
 // Enum Engine.ELightUnits
@@ -3587,12 +3587,12 @@ enum class ESubmixSendMethod : uint8 {
 	ESubmixSendMethod = 3
 };
 
-// Enum Engine.E
-enum class E : uint8 {
-	E = 0
-	E = 1
-	E = 2
-	E = 3
+// Enum Engine.EReverbSendMethod
+enum class EReverbSendMethod : uint8 {
+	EReverbSendMethod = 0
+	EReverbSendMethod = 1
+	EReverbSendMethod = 2
+	EReverbSendMethod = 3
 };
 
 // Enum Engine.EAirAbsorptionMethod
@@ -4090,10 +4090,10 @@ enum class ETwitterIntegrationDelegate : uint8 {
 
 // Enum Engine.ETwitterRequestMethod
 enum class ETwitterRequestMethod : uint8 {
-	T = 0
-	T = 1
-	T = 2
-	T = 3
+	TRM_Get = 0
+	TRM_Post = 1
+	TRM_Delete = 2
+	TRM_MAX = 3
 };
 
 // Enum Engine.EUserDefinedStructureStatus
@@ -4115,13 +4115,13 @@ enum class EUIScalingRule : uint8 {
 	EUIScalingRule = 5
 };
 
-// Enum Engine.E
-enum class E : uint8 {
-	E = 0
-	E = 1
-	E = 2
-	E = 3
-	E = 4
+// Enum Engine.ERenderFocusRule
+enum class ERenderFocusRule : uint8 {
+	ERenderFocusRule = 0
+	ERenderFocusRule = 1
+	ERenderFocusRule = 2
+	ERenderFocusRule = 3
+	ERenderFocusRule = 4
 };
 
 // Enum Engine.EVectorFieldConstructionOp
@@ -4178,13 +4178,13 @@ enum class EVisibilityAggressiveness : uint8 {
 };
 
 // Class Engine.ActorComponent
-struct UActorComponent : Object {
+class UActorComponent : Object {
 	struct Unknown PrimaryComponentTick; // 0x30 (48)
 	struct TArray<Unknown> ComponentTags; // 0x60 (16)
 	struct TArray<Unknown> AssetUserData; // 0x70 (16)
 	int32_t UCSSerializationIndex; // 0x84 (4)
 	char bNetAddressable : 0; // 0x88 (1)
-	char b : 0; // 0x88 (1)
+	char bReplicates : 0; // 0x88 (1)
 	char bAutoActivate : 0; // 0x89 (1)
 	char bIsActive : 0; // 0x8A (1)
 	char bEditableWhenInherited : 0; // 0x8A (1)
@@ -4202,7 +4202,7 @@ struct UActorComponent : Object {
 	void SetComponentTickInterval(float TickInterval); // Function Engine.ActorComponent.SetComponentTickInterval(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C68EA0>
 	void SetComponentTickEnabled(char bEnabled); // Function Engine.ActorComponent.SetComponentTickEnabled(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C63CB0>
 	void SetAutoActivate(char bNewAutoActivate); // Function Engine.ActorComponent.SetAutoActivate(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C68E10>
-	void SetActive(char bNewActive, char b); // Function Engine.ActorComponent.SetActive(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C68D40>
+	void SetActive(char bNewActive, char bReset); // Function Engine.ActorComponent.SetActive(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C68D40>
 	void RemoveTickPrerequisiteComponent(struct Unknown PrerequisiteComponent); // Function Engine.ActorComponent.RemoveTickPrerequisiteComponent(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C68CB0>
 	void RemoveTickPrerequisiteActor(struct Unknown PrerequisiteActor); // Function Engine.ActorComponent.RemoveTickPrerequisiteActor(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C68C20>
 	void ReceiveTick(float DeltaSeconds); // Function Engine.ActorComponent.ReceiveTick(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
@@ -4219,11 +4219,11 @@ struct UActorComponent : Object {
 	char ComponentHasTag(struct FName Tag); // Function Engine.ActorComponent.ComponentHasTag(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C68830>
 	void AddTickPrerequisiteComponent(struct Unknown PrerequisiteComponent); // Function Engine.ActorComponent.AddTickPrerequisiteComponent(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C686E0>
 	void AddTickPrerequisiteActor(struct Unknown PrerequisiteActor); // Function Engine.ActorComponent.AddTickPrerequisiteActor(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C68650>
-	void Activate(char b); // Function Engine.ActorComponent.Activate(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338A970>
+	void Activate(char bReset); // Function Engine.ActorComponent.Activate(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338A970>
 };
 
 // Class Engine.SceneComponent
-struct USceneComponent : UActorComponent {
+class USceneComponent : UActorComponent {
 	struct TWeakObjectPtr<struct Unknown> PhysicsVolume; // 0x144 (8)
 	struct Unknown AttachParent; // 0x1D0 (8)
 	struct FName AttachSocketName; // 0x1DC (8)
@@ -4313,12 +4313,12 @@ struct USceneComponent : UActorComponent {
 };
 
 // Class Engine.MKActorEx
-struct UMKActorEx : Object {
+class UMKActorEx : Object {
 	char ReplaySamplable; // 0x28 (1)
 	struct Unknown* ReplaySampleClass; // 0x30 (8)
 	float ReplaySamplingFrequency; // 0x38 (4)
 	uint32_t ClientReplaySamplingGUID; // 0x3C (4)
-	char b : 0; // 0x44 (1)
+	char bReplayLevelAttached : 0; // 0x44 (1)
 	struct TArray<Unknown> ReplaySamplesForPlayback; // 0x68 (16)
 	struct Unknown SelfActor; // 0x88 (8)
 
@@ -4333,21 +4333,21 @@ struct UMKActorEx : Object {
 };
 
 // Class Engine.Actor
-struct UActor : UMKActorEx {
+class UActor : UMKActorEx {
 	struct Unknown PrimaryActorTick; // 0x1D8 (48)
 	char bNetTemporary : 0; // 0x284 (1)
 	char bNetStartup : 0; // 0x248 (1)
 	char bOnlyRelevantToOwner : 0; // 0x1C4 (1)
 	char bAlwaysRelevant : 0; // 0xA1 (1)
-	char b : 0; // 0x260 (1)
+	char bReplicateMovement : 0; // 0x260 (1)
 	char bHidden : 0; // 0x222 (1)
 	char bTearOff : 0; // 0x284 (1)
 	char bExchangedRoles : 0; // 0x120 (1)
 	char bNetLoadOnClient : 0; // 0x138 (1)
 	char bNetUseOwnerRelevancy : 0; // 0xE8 (1)
-	char b : 0; // 0x170 (1)
-	char b : 0; // 0x138 (1)
-	char b : 0; // 0x9F (1)
+	char bRelevantForNetworkReplays : 0; // 0x170 (1)
+	char bRelevantForLevelBounds : 0; // 0x138 (1)
+	char bReplayRewindable : 0; // 0x9F (1)
 	char bAllowTickBeforeBeginPlay : 0; // 0x1C4 (1)
 	char bAutoDestroyWhenFinished : 0; // 0x1C4 (1)
 	char bCanBeDamaged : 0; // 0x1A0 (1)
@@ -4359,7 +4359,7 @@ struct UActor : UMKActorEx {
 	char bEnableAutoLODGeneration : 0; // 0x251 (1)
 	char bIsEditorOnlyActor : 0; // 0x120 (1)
 	char bActorSeamlessTraveled : 0; // 0xEA (1)
-	char b : 0; // 0x9D (1)
+	char bReplicates : 0; // 0x9D (1)
 	char bCanBeInCluster : 0; // 0x90 (1)
 	char bAllowReceiveTickEv : 0; // 0x198 (1)
 	char bActorEnableCollision : 0; // 0x1B8 (1)
@@ -4452,7 +4452,7 @@ struct UActor : UMKActorEx {
 	void ReceiveActorBeginCursorOver(); // Function Engine.Actor.ReceiveActorBeginCursorOver(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void PrestreamTextures(float Seconds, char bEnableStreaming, int32_t CinematicTextureGroups); // Function Engine.Actor.PrestreamTextures(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C639F0>
 	void OnRep_ReplicateMovement(); // Function Engine.Actor.OnRep_ReplicateMovement(Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EA7FD0>
-	void OnRep_ReplicatedMov(); // Function Engine.Actor.OnRep_ReplicatedMov(Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C639D0>
+	void OnRep_ReplicatedMovment(); // Function Engine.Actor.OnRep_ReplicatedMovment(Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C639D0>
 	void OnRep_Owner(); // Function Engine.Actor.OnRep_Owner(Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EA7990>
 	void OnRep_Instigator(); // Function Engine.Actor.OnRep_Instigator(Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C639B0>
 	void OnRep_AttachmentReplication(); // Function Engine.Actor.OnRep_AttachmentReplication(Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EA7B30>
@@ -4522,7 +4522,7 @@ struct UActor : UMKActorEx {
 	struct Unknown GetAttachParentActorMost(); // Function Engine.Actor.GetAttachParentActorMost(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C604B0>
 	struct Unknown GetAttachParentActor(); // Function Engine.Actor.GetAttachParentActor(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C60480>
 	void GetAttachedActorsRecursive(struct TArray<Unknown>& OutActors, char bIncludeChildActor); // Function Engine.Actor.GetAttachedActorsRecursive(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C60710>
-	void GetAttachedActors(struct TArray<Unknown>& OutActors, char b, char bIncludeChildActor); // Function Engine.Actor.GetAttachedActors(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C605D0>
+	void GetAttachedActors(struct TArray<Unknown>& OutActors, char bResetArray, char bIncludeChildActor); // Function Engine.Actor.GetAttachedActors(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C605D0>
 	void GetAllChildActors(struct TArray<Unknown>& ChildActors, char bIncludeDescendants); // Function Engine.Actor.GetAllChildActors(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C60380>
 	struct Unknown GetActorUpVector(); // Function Engine.Actor.GetActorUpVector(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C60310>
 	float GetActorTimeDilation(); // Function Engine.Actor.GetActorTimeDilation(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C602E0>
@@ -4546,7 +4546,7 @@ struct UActor : UMKActorEx {
 };
 
 // Class Engine.SkeletalMeshActor
-struct ASkeletalMeshActor : UActor {
+class ASkeletalMeshActor : UActor {
 	char bShouldDoAnimNotifies : 0; // 0x318 (1)
 	char bWakeOnLevelStart : 0; // 0x318 (1)
 	struct Unknown SkeletalMeshComponent; // 0x320 (8)
@@ -4562,7 +4562,7 @@ struct ASkeletalMeshActor : UActor {
 };
 
 // Class Engine.PrimitiveComponent
-struct UPrimitiveComponent : USceneComponent {
+class UPrimitiveComponent : USceneComponent {
 	float MinDrawDistance; // 0x240 (4)
 	float LDMaxDrawDistance; // 0x244 (4)
 	float CachedMaxDrawDistance; // 0x248 (4)
@@ -4577,15 +4577,15 @@ struct UPrimitiveComponent : USceneComponent {
 	char bGenerateOverlapEvents : 0; // 0x251 (1)
 	char bMultiBodyOverlap : 0; // 0x251 (1)
 	char bTraceComplexOnMove : 0; // 0x251 (1)
-	char b : 0; // 0x251 (1)
+	char bReturnMaterialOnMove : 0; // 0x251 (1)
 	char bUseViewOwnerDepthPriorityGroup : 0; // 0x251 (1)
 	char bAllowCullDistanceVolume : 0; // 0x251 (1)
 	char bHasMotionBlurVelocityMeshes : 0; // 0x251 (1)
 	char bVisibleInReflectionCaptures : 0; // 0x251 (1)
 	char bVisibleInRayTracing : 0; // 0x252 (1)
-	char b : 0; // 0x252 (1)
-	char b : 0; // 0x252 (1)
-	char b : 0; // 0x252 (1)
+	char bRenderInMainPass : 0; // 0x252 (1)
+	char bRenderInDepthPass : 0; // 0x252 (1)
+	char bReceivesDecals : 0; // 0x252 (1)
 	char bOwnerNoSee : 0; // 0x252 (1)
 	char bOnlyOwnerSee : 0; // 0x252 (1)
 	char bIgnoreNearClippingForOcclusion : 0; // 0x252 (1)
@@ -4610,17 +4610,17 @@ struct UPrimitiveComponent : USceneComponent {
 	char bLightAsIfStatic : 0; // 0x255 (1)
 	char bLightAttachmentsAsGroup : 0; // 0x255 (1)
 	char bExcludeFromLightAttachmentGroup : 0; // 0x255 (1)
-	char b : 0; // 0x255 (1)
+	char bReceiveMobileCSMShadows : 0; // 0x255 (1)
 	char bSingleSampleShadowFromStationaryLights : 0; // 0x255 (1)
 	char bIgnoreRadialImpulse : 0; // 0x255 (1)
 	char bIgnoreRadialForce : 0; // 0x255 (1)
 	char bApplyImpulseOnDamage : 0; // 0x256 (1)
-	char b : 0; // 0x256 (1)
+	char bReplicatePhysicsToAutonomousProxy : 0; // 0x256 (1)
 	char bFillCollisionUnderneathForNavmesh : 0; // 0x256 (1)
 	char AlwaysLoadOnClient : 0; // 0x256 (1)
 	char AlwaysLoadOnServer : 0; // 0x256 (1)
 	char bUseEditorCompositing : 0; // 0x256 (1)
-	char b : 0; // 0x256 (1)
+	char bRenderCustomDepth : 0; // 0x256 (1)
 	char bHasNoStreamableTextures : 0; // 0x257 (1)
 	char bHasCustomNavigableGeometry; // 0x258 (1)
 	char CanCharacterStepUpOn; // 0x25A (1)
@@ -4773,7 +4773,7 @@ struct UPrimitiveComponent : USceneComponent {
 };
 
 // Class Engine.MeshComponent
-struct UMeshComponent : UPrimitiveComponent {
+class UMeshComponent : UPrimitiveComponent {
 	float MipStreamingScale; // 0x4B8 (4)
 	struct TArray<Unknown> OverrideMaterials; // 0x4C0 (16)
 	char bEnableMaterialParameterCaching : 0; // 0x4E0 (1)
@@ -4789,7 +4789,7 @@ struct UMeshComponent : UPrimitiveComponent {
 };
 
 // Class Engine.SkinnedMeshComponent
-struct USkinnedMeshComponent : UMeshComponent {
+class USkinnedMeshComponent : UMeshComponent {
 	struct Unknown SkeletalMesh; // 0x4E8 (8)
 	struct TWeakObjectPtr<struct Unknown> MasterPoseComponent; // 0x4F0 (8)
 	struct TArray<Unknown> SkinCacheUsage; // 0x4F8 (16)
@@ -4810,13 +4810,13 @@ struct USkinnedMeshComponent : UMeshComponent {
 	char bConsiderAllBodiesForBounds : 0; // 0x65F (1)
 	char bSyncAttachParentLOD : 0; // 0x65F (1)
 	char bCanHighlightSelectedSections : 0; // 0x65F (1)
-	char b : 0; // 0x65F (1)
+	char bRecentlyRendered : 0; // 0x65F (1)
 	char bCastCapsuleDirectShadow : 0; // 0x65F (1)
 	char bCastCapsuleIndirectShadow : 0; // 0x65F (1)
 	char bCPUSkinning : 0; // 0x660 (1)
 	char bEnableUpdateRateOptimizations : 0; // 0x660 (1)
 	char bDisplayDebugUpdateRateOptimizations : 0; // 0x660 (1)
-	char b : 0; // 0x660 (1)
+	char bRenderStatic : 0; // 0x660 (1)
 	char bIgnoreMasterPoseComponentLOD : 0; // 0x660 (1)
 	char bCachedLocalBoundsUpToDate : 0; // 0x660 (1)
 	char bForceMeshObjectUpdate : 0; // 0x661 (1)
@@ -4833,7 +4833,7 @@ struct USkinnedMeshComponent : UMeshComponent {
 	void SetVertexColorOverride_LinearColor(int32_t LODIndex, struct TArray<Unknown>& VertexColors); // Function Engine.SkinnedMeshComponent.SetVertexColorOverride_LinearColor(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DFBD50>
 	char SetSkinWeightProfile(struct FName InProfileName); // Function Engine.SkinnedMeshComponent.SetSkinWeightProfile(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DFBCC0>
 	void SetSkinWeightOverride(int32_t LODIndex, struct TArray<Unknown>& SkinWeights); // Function Engine.SkinnedMeshComponent.SetSkinWeightOverride(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DFBBD0>
-	void SetSkeletalMesh(struct Unknown NewMesh, char b); // Function Engine.SkinnedMeshComponent.SetSkeletalMesh(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DFBB00>
+	void SetSkeletalMesh(struct Unknown NewMesh, char bReinitPose); // Function Engine.SkinnedMeshComponent.SetSkeletalMesh(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DFBB00>
 	void SetRenderStatic(char bNewValue); // Function Engine.SkinnedMeshComponent.SetRenderStatic(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DFBA70>
 	void SetPhysicsAsset(struct Unknown NewPhysicsAsset, char bForceReInit); // Function Engine.SkinnedMeshComponent.SetPhysicsAsset(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DFB9A0>
 	void SetMinLOD(int32_t InNewMinLOD); // Function Engine.SkinnedMeshComponent.SetMinLOD(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DFB920>
@@ -4857,7 +4857,7 @@ struct USkinnedMeshComponent : UMeshComponent {
 	struct FName GetCurrentSkinWeightProfileName(); // Function Engine.SkinnedMeshComponent.GetCurrentSkinWeightProfileName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DFADA0>
 	struct FName GetBoneName(int32_t BoneIndex); // Function Engine.SkinnedMeshComponent.GetBoneName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DFAD10>
 	int32_t GetBoneIndex(struct FName BoneName); // Function Engine.SkinnedMeshComponent.GetBoneIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DFAC80>
-	struct FName FindClosestBone_K2(struct Unknown TestLocation, struct Unknown& BoneLocation, float IgnoreScale, char b); // Function Engine.SkinnedMeshComponent.FindClosestBone_K2(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DFAAF0>
+	struct FName FindClosestBone_K2(struct Unknown TestLocation, struct Unknown& BoneLocation, float IgnoreScale, char bRequirePhysicsAsset); // Function Engine.SkinnedMeshComponent.FindClosestBone_K2(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DFAAF0>
 	void ClearVertexColorOverride(int32_t LODIndex); // Function Engine.SkinnedMeshComponent.ClearVertexColorOverride(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DFAA70>
 	void ClearSkinWeightProfile(); // Function Engine.SkinnedMeshComponent.ClearSkinWeightProfile(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DFAA50>
 	void ClearSkinWeightOverride(int32_t LODIndex); // Function Engine.SkinnedMeshComponent.ClearSkinWeightOverride(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DFA9D0>
@@ -4865,7 +4865,7 @@ struct USkinnedMeshComponent : UMeshComponent {
 };
 
 // Class Engine.StreamableRenderAsset
-struct UStreamableRenderAsset : Object {
+class UStreamableRenderAsset : Object {
 	double ForceMipLevelsToBeResidentTimestamp; // 0x28 (8)
 	int32_t NumCinematicMipLevels; // 0x30 (4)
 	int32_t StreamingIndex; // 0x34 (4)
@@ -4878,11 +4878,11 @@ struct UStreamableRenderAsset : Object {
 	char bHasStreamingUpdatePending : 0; // 0x3D (1)
 	char bForceMiplevelsToBeResident : 0; // 0x3D (1)
 	char bIgnoreStreamingMipBias : 0; // 0x3D (1)
-	char bUseCinematicMipLev : 0; // 0x3D (1)
+	char bUseCinematicMipLevBia : 0; // 0x3D (1)
 };
 
 // Class Engine.SkeletalMesh
-struct USkeletalMesh : UStreamableRenderAsset {
+class USkeletalMesh : UStreamableRenderAsset {
 	struct Unknown Skeleton; // 0x60 (8)
 	struct Unknown ImportedBounds; // 0x68 (28)
 	struct Unknown ExtendedBounds; // 0x84 (28)
@@ -4926,7 +4926,7 @@ struct USkeletalMesh : UStreamableRenderAsset {
 };
 
 // Class Engine.StaticMeshActor
-struct AStaticMeshActor : UActor {
+class AStaticMeshActor : UActor {
 	struct Unknown StaticMeshComponent; // 0x310 (8)
 	char bStaticMeshReplicateMovement : 0; // 0x318 (1)
 	enum class Unknow NavigationGeometryGatheringMode; // 0x319 (1)
@@ -4935,14 +4935,14 @@ struct AStaticMeshActor : UActor {
 };
 
 // Class Engine.Texture
-struct UTexture : UStreamableRenderAsset {
+class UTexture : UStreamableRenderAsset {
 	struct Unknown LightingGuid; // 0x48 (16)
 	int32_t LODBias; // 0x58 (4)
 	char CompressionSettings; // 0x5C (1)
 	char Filter; // 0x5D (1)
 	enum class Unknow MipLoadOptions; // 0x5E (1)
 	char LODGroup; // 0x5F (1)
-	char S : 0; // 0x60 (1)
+	char SRGB : 0; // 0x60 (1)
 	char bNoTiling : 0; // 0x60 (1)
 	char VirtualTextureStreaming : 0; // 0x60 (1)
 	char CompressionYCoCg : 0; // 0x60 (1)
@@ -4951,12 +4951,12 @@ struct UTexture : UStreamableRenderAsset {
 };
 
 // Class Engine.Texture2DDynamic
-struct UTexture2DDynamic : UTexture {
+class UTexture2DDynamic : UTexture {
 	char Format; // 0xC0 (1)
 };
 
 // Class Engine.HUD
-struct AHUD : UActor {
+class AHUD : UActor {
 	struct Unknown PlayerOwner; // 0x310 (8)
 	char bLostFocusPaused : 0; // 0x318 (1)
 	char bShowHUD : 0; // 0x318 (1)
@@ -5006,7 +5006,7 @@ struct AHUD : UActor {
 };
 
 // Class Engine.Player
-struct UPlayer : Object {
+class UPlayer : Object {
 	struct Unknown PlayerController; // 0x30 (8)
 	int32_t CurrentNetSpeed; // 0x38 (4)
 	int32_t ConfiguredInternetSpeed; // 0x3C (4)
@@ -5014,12 +5014,12 @@ struct UPlayer : Object {
 };
 
 // Class Engine.MKNetConnectionEx
-struct UMKNetConnectionEx : UPlayer {
+class UMKNetConnectionEx : UPlayer {
 	struct Unknown SelfNetConnection; // 0xB0 (8)
 };
 
 // Class Engine.NetConnection
-struct UNetConnection : UMKNetConnectionEx {
+class UNetConnection : UMKNetConnectionEx {
 	struct TArray<Unknown> Children; // 0xB8 (16)
 	struct Unknown Driver; // 0xC8 (8)
 	struct Unknown* PackageMapClass; // 0xD0 (8)
@@ -5036,7 +5036,7 @@ struct UNetConnection : UMKNetConnectionEx {
 };
 
 // Class Engine.NetDriver
-struct UNetDriver : Object {
+class UNetDriver : Object {
 	struct FString NetConnectionClassName; // 0x30 (16)
 	struct FString ReplicationDriverClassName; // 0x40 (16)
 	int32_t MaxDownloadSize; // 0x50 (4)
@@ -5070,7 +5070,7 @@ struct UNetDriver : Object {
 };
 
 // Class Engine.Engine
-struct UEngine : Object {
+class UEngine : Object {
 	struct Unknown TinyFont; // 0x30 (8)
 	struct Unknown TinyFontName; // 0x38 (24)
 	struct Unknown SmallFont; // 0x50 (8)
@@ -5181,7 +5181,7 @@ struct UEngine : Object {
 	float MinLightMapDensity; // 0x638 (4)
 	float IdealLightMapDensity; // 0x63C (4)
 	float MaxLightMapDensity; // 0x640 (4)
-	char b : 0; // 0x644 (1)
+	char bRenderLightMapDensityGrayscale : 0; // 0x644 (1)
 	float RenderLightMapDensityGrayscaleScale; // 0x648 (4)
 	float RenderLightMapDensityColorScale; // 0x64C (4)
 	struct Unknown LightMapDensityVertexMappedColor; // 0x650 (16)
@@ -5216,7 +5216,7 @@ struct UEngine : Object {
 	char bSubtitlesForcedOff : 0; // 0x7B8 (1)
 	int32_t MaximumLoopIterationCount; // 0x7BC (4)
 	char bCanBlueprintsTickByDefault : 0; // 0x7C0 (1)
-	char bOptimizeAnimBlueprintMemberVariableAccess : 0; // 0x7C0 (1)
+	char bOptimizeAnimBlueprintMemberVariableAccays : 0; // 0x7C0 (1)
 	char bAllowMultiThreadedAnimationUpdate : 0; // 0x7C0 (1)
 	char bEnableEditorPSysRealtimeLOD : 0; // 0x7C0 (1)
 	char bSmoothFrameRate : 0; // 0x7C0 (1)
@@ -5277,7 +5277,7 @@ struct UEngine : Object {
 	uint32_t bEnableVisualLogRecordingOnStart; // 0x984 (4)
 	int32_t ScreenSaverInhibitorSemaphore; // 0x98C (4)
 	char bLockReadOnlyLevels : 0; // 0x990 (1)
-	struct FString ParticleEventManagerClass; // 0x998 (16)
+	struct FString ParticleEventManagerClassPath; // 0x998 (16)
 	float SelectionHighlightIntensity; // 0x9A8 (4)
 	float BSPSelectionHighlightIntensity; // 0x9AC (4)
 	float SelectionHighlightIntensityBillboards; // 0x9B0 (4)
@@ -5290,7 +5290,7 @@ struct UEngine : Object {
 };
 
 // Class Engine.LocalPlayer
-struct ULocalPlayer : UPlayer {
+class ULocalPlayer : UPlayer {
 	struct Unknown ViewportClient; // 0x70 (8)
 	char AspectRatioAxisConstraint; // 0x94 (1)
 	struct Unknown* PendingLevelPlayerControllerClass; // 0x98 (8)
@@ -5299,7 +5299,7 @@ struct ULocalPlayer : UPlayer {
 };
 
 // Class Engine.SkeletalMeshComponent
-struct USkeletalMeshComponent : USkinnedMeshComponent {
+class USkeletalMeshComponent : USkinnedMeshComponent {
 	struct Unknown* AnimBlueprintGeneratedClass; // 0x700 (8)
 	struct Unknown* AnimClass; // 0x708 (8)
 	struct Unknown AnimScriptInstance; // 0x710 (8)
@@ -5327,7 +5327,7 @@ struct USkeletalMeshComponent : USkinnedMeshComponent {
 	char bCollideWithEnvironment : 0; // 0x7E1 (1)
 	char bCollideWithAttachedChildren : 0; // 0x7E1 (1)
 	char bLocalSpaceSimulation : 0; // 0x7E1 (1)
-	char b : 0; // 0x7E1 (1)
+	char bResetAfterTeleport : 0; // 0x7E1 (1)
 	char bDeferKinematicBoneUpdate : 0; // 0x7E1 (1)
 	char bNoSkeletonUpdate : 0; // 0x7E1 (1)
 	char bPauseAnims : 0; // 0x7E1 (1)
@@ -5338,7 +5338,7 @@ struct USkeletalMeshComponent : USkinnedMeshComponent {
 	char bIsAutonomousTickPose : 0; // 0x7E2 (1)
 	char bOldForceRefPose : 0; // 0x7E2 (1)
 	char bShowPrePhysBones : 0; // 0x7E2 (1)
-	char b : 0; // 0x7E2 (1)
+	char bRequiredBonesUpToDate : 0; // 0x7E2 (1)
 	char bAnimTreeInitialised : 0; // 0x7E3 (1)
 	char bIncludeComponentLocationIntoBounds : 0; // 0x7E3 (1)
 	char bEnableLineCheckWithBounds : 0; // 0x7E3 (1)
@@ -5375,7 +5375,7 @@ struct USkeletalMeshComponent : USkinnedMeshComponent {
 	struct FMulticastInlineDelegate OnAnimInitialized; // 0xA50 (16)
 
 	void UnlinkAnimClassLayers(struct Unknown* InClass); // Function Engine.SkeletalMeshComponent.UnlinkAnimClassLayers(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DF3F90>
-	void UnbindClothFromMasterPoseComponent(char b); // Function Engine.SkeletalMeshComponent.UnbindClothFromMasterPoseComponent(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DF3F00>
+	void UnbindClothFromMasterPoseComponent(char bRestoreSimulationSpace); // Function Engine.SkeletalMeshComponent.UnbindClothFromMasterPoseComponent(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DF3F00>
 	void ToggleDisablePostProcessBlueprint(); // Function Engine.SkeletalMeshComponent.ToggleDisablePostProcessBlueprint(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DF3EE0>
 	void TermBodiesBelow(struct FName ParentBoneName); // Function Engine.SkeletalMeshComponent.TermBodiesBelow(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DF3E60>
 	void SuspendClothingSimulation(); // Function Engine.SkeletalMeshComponent.SuspendClothingSimulation(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DF3E40>
@@ -5388,7 +5388,7 @@ struct USkeletalMeshComponent : USkinnedMeshComponent {
 	void SetPlayRate(float Rate); // Function Engine.SkeletalMeshComponent.SetPlayRate(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DF3B00>
 	void SetPhysicsBlendWeight(float PhysicsBlendWeight); // Function Engine.SkeletalMeshComponent.SetPhysicsBlendWeight(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DF3A80>
 	void SetNotifyRigidBodyCollisionBelow(char bNewNotifyRigidBodyCollision, struct FName BoneName, char bIncludeSelf); // Function Engine.SkeletalMeshComponent.SetNotifyRigidBodyCollisionBelow(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DF3970>
-	void SetMorphTarget(struct FName MorphTargetName, float Value, char b); // Function Engine.SkeletalMeshComponent.SetMorphTarget(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DF3860>
+	void SetMorphTarget(struct FName MorphTargetName, float Value, char bRemoveZeroWeight); // Function Engine.SkeletalMeshComponent.SetMorphTarget(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DF3860>
 	void SetEnablePhysicsBlending(char bNewBlendPhysics); // Function Engine.SkeletalMeshComponent.SetEnablePhysicsBlending(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DF37D0>
 	void SetEnableGravityOnAllBodiesBelow(char bEnableGravity, struct FName BoneName, char bIncludeSelf); // Function Engine.SkeletalMeshComponent.SetEnableGravityOnAllBodiesBelow(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DF36C0>
 	void SetEnableBodyGravity(char bEnableGravity, struct FName BoneName); // Function Engine.SkeletalMeshComponent.SetEnableBodyGravity(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DF3600>
@@ -5402,15 +5402,15 @@ struct USkeletalMeshComponent : USkinnedMeshComponent {
 	void SetAnimationMode(char InAnimationMode); // Function Engine.SkeletalMeshComponent.SetAnimationMode(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DF3130>
 	void SetAnimation(struct Unknown NewAnimToPlay); // Function Engine.SkeletalMeshComponent.SetAnimation(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DF30B0>
 	void SetAngularLimits(struct FName InBoneName, float Swing1LimitAngle, float TwistLimitAngle, float Swing2LimitAngle); // Function Engine.SkeletalMeshComponent.SetAngularLimits(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DF2ED0>
-	void SetAllowRigidBodyAnimNode(char bInAllow, char b); // Function Engine.SkeletalMeshComponent.SetAllowRigidBodyAnimNode(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DF2D00>
+	void SetAllowRigidBodyAnimNode(char bInAllow, char bReinitAnim); // Function Engine.SkeletalMeshComponent.SetAllowRigidBodyAnimNode(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DF2D00>
 	void SetAllowedAnimCurvesEvaluation(struct TArray<Unknown>& List, char bAllow); // Function Engine.SkeletalMeshComponent.SetAllowedAnimCurvesEvaluation(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DF2DD0>
-	void SetAllowAnimCurveEvnt(char bInAllow); // Function Engine.SkeletalMeshComponent.SetAllowAnimCurveEvnt(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DF2C70>
+	void SetAllowAnimCurveEv(char bInAllow); // Function Engine.SkeletalMeshComponent.SetAllowAnimCurveEv(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DF2C70>
 	void SetAllMotorsAngularVelocityDrive(char bEnableSwingDrive, char bEnableTwistDrive, char bSkipCustomPhysicsType); // Function Engine.SkeletalMeshComponent.SetAllMotorsAngularVelocityDrive(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DF2B50>
 	void SetAllMotorsAngularPositionDrive(char bEnableSwingDrive, char bEnableTwistDrive, char bSkipCustomPhysicsType); // Function Engine.SkeletalMeshComponent.SetAllMotorsAngularPositionDrive(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DF2A30>
 	void SetAllMotorsAngularDriveParams(float InSpring, float InDamping, float InForceLimit, char bSkipCustomPhysicsType); // Function Engine.SkeletalMeshComponent.SetAllMotorsAngularDriveParams(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DF28D0>
 	void SetAllBodiesSimulatePhysics(char bNewSimulate); // Function Engine.SkeletalMeshComponent.SetAllBodiesSimulatePhysics(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DF2840>
 	void SetAllBodiesPhysicsBlendWeight(float PhysicsBlendWeight, char bSkipCustomPhysicsType); // Function Engine.SkeletalMeshComponent.SetAllBodiesPhysicsBlendWeight(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DF2770>
-	void SetAllBodiesBelowSimulate(struct FName& InBoneName, char bNewSimulate, char bIncludeSelf); // Function Engine.SkeletalMeshComponent.SetAllBodiesBelowSimulate(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DF2650>
+	void SetAllBodiesBelowSimulatePhysic(struct FName& InBoneName, char bNewSimulate, char bIncludeSelf); // Function Engine.SkeletalMeshComponent.SetAllBodiesBelowSimulatePhysic(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DF2650>
 	void SetAllBodiesBelowPhysicsBlendWeight(struct FName& InBoneName, float PhysicsBlendWeight, char bSkipCustomPhysicsType, char bIncludeSelf); // Function Engine.SkeletalMeshComponent.SetAllBodiesBelowPhysicsBlendWeight(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DF24E0>
 	void ResumeClothingSimulation(); // Function Engine.SkeletalMeshComponent.ResumeClothingSimulation(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DF24C0>
 	void ResetClothTeleportMode(); // Function Engine.SkeletalMeshComponent.ResetClothTeleportMode(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DF24A0>
@@ -5462,12 +5462,12 @@ struct USkeletalMeshComponent : USkinnedMeshComponent {
 };
 
 // Class Engine.AnimInstance
-struct UAnimInstance : Object {
+class UAnimInstance : Object {
 	struct Unknown CurrentSkeleton; // 0x28 (8)
 	char RootMotionMode; // 0x30 (1)
 	char bUseMultiThreadedAnimationUpdate : 0; // 0x31 (1)
 	char bUsingCopyPoseFromMesh : 0; // 0x31 (1)
-	char b : 0; // 0x31 (1)
+	char bReceiveNotifiesFromLinkedInstances : 0; // 0x31 (1)
 	char bPropagateNotifiesToLinkedInstances : 0; // 0x31 (1)
 	char bQueueMontageEvents : 0; // 0x31 (1)
 	struct FMulticastInlineDelegate OnMontageBlendingOut; // 0x38 (16)
@@ -5510,7 +5510,7 @@ struct UAnimInstance : Object {
 	void LockAIResources(char bLockMovement, char LockAILogic); // Function Engine.AnimInstance.LockAIResources(Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EDF3B0>
 	void LinkAnimGraphByTag(struct FName InTag, struct Unknown* InClass); // Function Engine.AnimInstance.LinkAnimGraphByTag(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C72EB0>
 	void LinkAnimClassLayers(struct Unknown* InClass); // Function Engine.AnimInstance.LinkAnimClassLayers(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C72E30>
-	char IsSyncGroupBetweenMarkers(struct FName InSyncGroupName, struct FName PreviousMarker, struct FName NextMarker, char b); // Function Engine.AnimInstance.IsSyncGroupBetweenMarkers(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C72CE0>
+	char IsSyncGroupBetweenMarkers(struct FName InSyncGroupName, struct FName PreviousMarker, struct FName NextMarker, char bRespectMarkerOrder); // Function Engine.AnimInstance.IsSyncGroupBetweenMarkers(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C72CE0>
 	char IsPlayingSlotAnimation(struct Unknown Asset, struct FName SlotNodeName); // Function Engine.AnimInstance.IsPlayingSlotAnimation(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C72C20>
 	char IsAnyMontagePlaying(); // Function Engine.AnimInstance.IsAnyMontagePlaying(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C72BF0>
 	char HasMarkerBeenHitThisFrame(struct FName SyncGroup, struct FName MarkerName); // Function Engine.AnimInstance.HasMarkerBeenHitThisFrame(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C72B30>
@@ -5555,7 +5555,7 @@ struct UAnimInstance : Object {
 };
 
 // Class Engine.Exporter
-struct UExporter : Object {
+class UExporter : Object {
 	struct Unknown* SupportedClass; // 0x28 (8)
 	struct Unknown ExportRootScope; // 0x30 (8)
 	struct TArray<Unknown> FormatExtension; // 0x38 (16)
@@ -5573,7 +5573,7 @@ struct UExporter : Object {
 };
 
 // Class Engine.LevelScriptActor
-struct ALevelScriptActor : UActor {
+class ALevelScriptActor : UActor {
 	char bInputEnabled : 0; // 0x310 (1)
 
 	void WorldOriginLocationChanged(struct Unknown OldOriginLocation, struct Unknown NewOriginLocation); // Function Engine.LevelScriptActor.WorldOriginLocationChanged(Event|Public|HasDefaults|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
@@ -5583,12 +5583,12 @@ struct ALevelScriptActor : UActor {
 };
 
 // Class Engine.FXSystemAsset
-struct UFXSystemAsset : Object {
+class UFXSystemAsset : Object {
 	uint32_t MaxPoolSize; // 0x28 (4)
 };
 
 // Class Engine.Brush
-struct ABrush : UActor {
+class ABrush : UActor {
 	char BrushType; // 0x310 (1)
 	struct Unknown BrushColor; // 0x314 (4)
 	int32_t PolyFlags; // 0x318 (4)
@@ -5603,12 +5603,12 @@ struct ABrush : UActor {
 };
 
 // Class Engine.MKWorldEx
-struct UMKWorldEx : Object {
+class UMKWorldEx : Object {
 	struct Unknown SelfWorld; // 0x38 (8)
 };
 
 // Class Engine.World
-struct UWorld : UMKWorldEx {
+class UWorld : UMKWorldEx {
 	struct Unknown PersistentLevel; // 0x48 (8)
 	struct Unknown NetDriver; // 0x50 (8)
 	struct Unknown LineBatcher; // 0x58 (8)
@@ -5649,7 +5649,7 @@ struct UWorld : UMKWorldEx {
 };
 
 // Class Engine.InterpTrack
-struct UInterpTrack : Object {
+class UInterpTrack : Object {
 	struct TArray<Unknown> SubTracks; // 0x38 (16)
 	struct Unknown* TrackInstClass; // 0x48 (8)
 	char ActiveCondition; // 0x50 (1)
@@ -5665,38 +5665,38 @@ struct UInterpTrack : Object {
 };
 
 // Class Engine.InterpTrackVectorBase
-struct UInterpTrackVectorBase : UInterpTrack {
+class UInterpTrackVectorBase : UInterpTrack {
 	struct Unknown VectorTrack; // 0x70 (24)
 	float CurveTension; // 0x88 (4)
 };
 
 // Class Engine.InterpTrackFloatBase
-struct UInterpTrackFloatBase : UInterpTrack {
+class UInterpTrackFloatBase : UInterpTrack {
 	struct Unknown FloatTrack; // 0x70 (24)
 	float CurveTension; // 0x88 (4)
 };
 
 // Class Engine.DataAsset
-struct UDataAsset : Object {
+class UDataAsset : Object {
 	struct Unknown* NativeClass; // 0x28 (8)
 };
 
 // Class Engine.MaterialExpression
-struct UMaterialExpression : Object {
+class UMaterialExpression : Object {
 	struct Unknown Material; // 0x28 (8)
 	struct Unknown Function; // 0x30 (8)
 	char bIsParameterExpression : 0; // 0x38 (1)
 };
 
 // Class Engine.MaterialExpressionTextureBase
-struct UMaterialExpressionTextureBase : UMaterialExpression {
+class UMaterialExpressionTextureBase : UMaterialExpression {
 	struct Unknown Texture; // 0x40 (8)
 	char SamplerType; // 0x48 (1)
 	char IsDefaultMeshpaintTexture : 0; // 0x49 (1)
 };
 
 // Class Engine.MaterialExpressionTextureSample
-struct UMaterialExpressionTextureSample : UMaterialExpressionTextureBase {
+class UMaterialExpressionTextureSample : UMaterialExpressionTextureBase {
 	struct Unknown Coordinates; // 0x50 (12)
 	struct Unknown TextureObject; // 0x64 (12)
 	struct Unknown MipValue; // 0x78 (12)
@@ -5711,21 +5711,21 @@ struct UMaterialExpressionTextureSample : UMaterialExpressionTextureBase {
 };
 
 // Class Engine.MaterialExpressionTextureSampleParameter
-struct UMaterialExpressionTextureSampleParameter : UMaterialExpressionTextureSample {
+class UMaterialExpressionTextureSampleParameter : UMaterialExpressionTextureSample {
 	struct FName ParameterName; // 0xD0 (8)
 	struct Unknown ExpressionGUID; // 0xD8 (16)
 	struct FName Group; // 0xE8 (8)
 };
 
 // Class Engine.MKPawnEx
-struct AMKPawnEx : UActor {
+class AMKPawnEx : UActor {
 	struct Unknown SelfPawn; // 0x318 (8)
 
 	void OnChangedViewMode(); // Function Engine.MKPawnEx.OnChangedViewMode(Native|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1E52540>
 };
 
 // Class Engine.Pawn
-struct APawn : AMKPawnEx {
+class APawn : AMKPawnEx {
 	char bUseControllerRotationPitch : 0; // 0x328 (1)
 	char bUseControllerRotationYaw : 0; // 0x328 (1)
 	char bUseControllerRotationRoll : 0; // 0x328 (1)
@@ -5774,12 +5774,12 @@ struct APawn : AMKPawnEx {
 };
 
 // Class Engine.MKCharacterEx
-struct AMKCharacterEx : APawn {
+class AMKCharacterEx : APawn {
 	struct Unknown SelfCharacter; // 0x388 (8)
 };
 
 // Class Engine.Character
-struct ACharacter : AMKCharacterEx {
+class ACharacter : AMKCharacterEx {
 	struct Unknown Mesh; // 0x398 (8)
 	struct Unknown CharacterMovement; // 0x3A0 (8)
 	struct Unknown CapsuleComponent; // 0x3A8 (8)
@@ -5868,7 +5868,7 @@ struct ACharacter : AMKCharacterEx {
 };
 
 // Class Engine.SplineComponent
-struct USplineComponent : UPrimitiveComponent {
+class USplineComponent : UPrimitiveComponent {
 	struct Unknown SplineCurves; // 0x4B8 (104)
 	struct Unknown SplineInfo; // 0x520 (24)
 	struct Unknown SplineRotInfo; // 0x538 (24)
@@ -5913,7 +5913,7 @@ struct USplineComponent : UPrimitiveComponent {
 	struct Unknown GetWorldLocationAtDistanceAlongSpline(float Distance); // Function Engine.SplineComponent.GetWorldLocationAtDistanceAlongSpline(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3E10460>
 	struct Unknown GetWorldDirectionAtTime(float Time, char bUseConstantVelocity); // Function Engine.SplineComponent.GetWorldDirectionAtTime(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3E10370>
 	struct Unknown GetWorldDirectionAtDistanceAlongSpline(float Distance); // Function Engine.SplineComponent.GetWorldDirectionAtDistanceAlongSpline(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3E102C0>
-	struct Unknown GetVectorPropertyAtSplinePint(int32_t Index, struct FName PropertyName); // Function Engine.SplineComponent.GetVectorPropertyAtSpline(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3E101F0>
+	struct Unknown GetVectorPropertyAtSplinePoint(int32_t Index, struct FName PropertyName); // Function Engine.SplineComponent.GetVectorPropertyAtSplinePoint(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3E101F0>
 	struct Unknown GetVectorPropertyAtSplineInputKey(float InKey, struct FName PropertyName); // Function Engine.SplineComponent.GetVectorPropertyAtSplineInputKey(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3E10110>
 	struct Unknown GetUpVectorAtTime(float Time, char CoordinateSpace, char bUseConstantVelocity); // Function Engine.SplineComponent.GetUpVectorAtTime(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3E0FFF0>
 	struct Unknown GetUpVectorAtSplinePoint(int32_t PointIndex, char CoordinateSpace); // Function Engine.SplineComponent.GetUpVectorAtSplinePoint(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3E0FF20>
@@ -5984,7 +5984,7 @@ struct USplineComponent : UPrimitiveComponent {
 };
 
 // Class Engine.Commandlet
-struct UCommandlet : Object {
+class UCommandlet : Object {
 	struct FString HelpDescription; // 0x28 (16)
 	struct FString HelpUsage; // 0x38 (16)
 	struct FString HelpWebLink; // 0x48 (16)
@@ -5999,7 +5999,7 @@ struct UCommandlet : Object {
 };
 
 // Class Engine.AudioComponent
-struct UAudioComponent : USceneComponent {
+class UAudioComponent : USceneComponent {
 	struct Unknown Sound; // 0x238 (8)
 	struct TArray<Unknown> InstanceParameters; // 0x240 (16)
 	struct Unknown SoundClassOverride; // 0x250 (8)
@@ -6076,7 +6076,7 @@ struct UAudioComponent : USceneComponent {
 };
 
 // Class Engine.GameModeBase
-struct AGameModeBase : AInfo {
+class AGameModeBase : AInfo {
 	struct FString OptionsString; // 0x310 (16)
 	struct Unknown* GameSessionClass; // 0x320 (8)
 	struct Unknown* GameStateClass; // 0x328 (8)
@@ -6126,7 +6126,7 @@ struct AGameModeBase : AInfo {
 };
 
 // Class Engine.GameMode
-struct AGameMode : AGameModeBase {
+class AGameMode : AGameModeBase {
 	struct FName MatchState; // 0x3B0 (8)
 	char bDelayedStart : 0; // 0x3B8 (1)
 	int32_t NumSpectators; // 0x3BC (4)
@@ -6155,12 +6155,12 @@ struct AGameMode : AGameModeBase {
 };
 
 // Class Engine.GameStateBase
-struct AGameStateBase : AInfo {
+class AGameStateBase : AInfo {
 	struct Unknown* GameModeClass; // 0x310 (8)
 	struct Unknown AuthorityGameMode; // 0x318 (8)
 	struct Unknown* SpectatorClass; // 0x320 (8)
 	struct TArray<Unknown> PlayerArray; // 0x328 (16)
-	char b : 0; // 0x338 (1)
+	char bReplicatedHasBegunPlay : 0; // 0x338 (1)
 	float ReplicatedWorldTimeSeconds; // 0x33C (4)
 	float ServerWorldTimeSecondsDelta; // 0x340 (4)
 	float ServerWorldTimeSecondsUpdateFrequency; // 0x344 (4)
@@ -6177,7 +6177,7 @@ struct AGameStateBase : AInfo {
 };
 
 // Class Engine.GameState
-struct AGameState : AGameStateBase {
+class AGameState : AGameStateBase {
 	struct FName MatchState; // 0x360 (8)
 	struct FName PreviousMatchState; // 0x368 (8)
 	int32_t ElapsedTime; // 0x370 (4)
@@ -6187,7 +6187,7 @@ struct AGameState : AGameStateBase {
 };
 
 // Class Engine.Controller
-struct AController : UActor {
+class AController : UActor {
 	struct Unknown PlayerState; // 0x348 (8)
 	struct FMulticastInlineDelegate OnInstigatedAnyDamage; // 0x388 (16)
 	struct FName StateName; // 0x324 (8)
@@ -6222,18 +6222,18 @@ struct AController : UActor {
 	struct Unknown GetViewTarget(); // Function Engine.Controller.GetViewTarget(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CBFEC0>
 	struct Unknown GetDesiredRotation(); // Function Engine.Controller.GetDesiredRotation(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CBFE80>
 	struct Unknown GetControlRotation(); // Function Engine.Controller.GetControlRotation(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CBFE40>
-	void ClientSetRotation(struct Unknown NewRotation, char b); // Function Engine.Controller.ClientSetRotation(Net|NetReliableNative|Event|Public|HasDefaults|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CBFD60>
+	void ClientSetRotation(struct Unknown NewRotation, char bResetCamera); // Function Engine.Controller.ClientSetRotation(Net|NetReliableNative|Event|Public|HasDefaults|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CBFD60>
 	void ClientSetLocation(struct Unknown NewLocation, struct Unknown NewRotation); // Function Engine.Controller.ClientSetLocation(Net|NetReliableNative|Event|Public|HasDefaults|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CBFC80>
 	struct Unknown CastToPlayerController(); // Function Engine.Controller.CastToPlayerController(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CBFC50>
 };
 
 // Class Engine.MKPlayerControllerEx
-struct AMKPlayerControllerEx : AController {
+class AMKPlayerControllerEx : AController {
 	struct Unknown SelfPlayerController; // 0x3B0 (8)
 };
 
 // Class Engine.PlayerController
-struct APlayerController : AMKPlayerControllerEx {
+class APlayerController : AMKPlayerControllerEx {
 	struct Unknown Player; // 0x510 (8)
 	struct Unknown AcknowledgedPawn; // 0x428 (8)
 	struct Unknown ControllingDirTrackInst; // 0x4F8 (8)
@@ -6286,7 +6286,7 @@ struct APlayerController : AMKPlayerControllerEx {
 	char WasInputKeyJustPressed(struct Unknown Key); // Function Engine.PlayerController.WasInputKeyJustPressed(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC7620>
 	void ToggleSpeaking(char bInSpeaking); // Function Engine.PlayerController.ToggleSpeaking(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC7590>
 	void TestServerLevelVisibilityChange(struct FName PackageName, struct FName Filename); // Function Engine.PlayerController.TestServerLevelVisibilityChange(Final|Exec|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F70B30>
-	void SwitchLevel(struct FString U); // Function Engine.PlayerController.SwitchLevel(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC74E0>
+	void SwitchLevel(struct FString URL); // Function Engine.PlayerController.SwitchLevel(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC74E0>
 	void StopHapticEffect(enum class Unknow Hand); // Function Engine.PlayerController.StopHapticEffect(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC7460>
 	void StartFire(char FireModeNum); // Function Engine.PlayerController.StartFire(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC73E0>
 	void SetVirtualJoystickVisibility(char bVisible); // Function Engine.PlayerController.SetVirtualJoystickVisibility(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC7350>
@@ -6332,7 +6332,7 @@ struct APlayerController : AMKPlayerControllerEx {
 	void PlayDynamicForceFeedback(float Intensity, float Duration, char bAffectsLeftLarge, char bAffectsLeftSmall, char bAffectsRightLarge, char bAffectsRightSmall, char Action, struct Unknown LatentInfo); // Function Engine.PlayerController.PlayDynamicForceFeedback(Final|Native|Private|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC5500>
 	void Pause(); // Function Engine.PlayerController.Pause(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC54E0>
 	void OnServerStartedVisualLogger(char bIsLogging); // Function Engine.PlayerController.OnServerStartedVisualLogger(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC5450>
-	void LocalTravel(struct FString U); // Function Engine.PlayerController.LocalTravel(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC53A0>
+	void LocalTravel(struct FString URL); // Function Engine.PlayerController.LocalTravel(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC53A0>
 	void K2_ClientPlayForceFeedback(struct Unknown ForceFeedbackEffect, struct FName Tag, char bLooping, char bIgnoreTimeDilation, char bPlayWhilePaused); // Function Engine.PlayerController.K2_ClientPlayForceFeedback(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC51F0>
 	char IsInputKeyDown(struct Unknown Key); // Function Engine.PlayerController.IsInputKeyDown(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC5100>
 	void GetViewportSize(int32_t& SizeX, int32_t& SizeY); // Function Engine.PlayerController.GetViewportSize(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC5020>
@@ -6346,10 +6346,10 @@ struct APlayerController : AMKPlayerControllerEx {
 	void GetInputAnalogStickState(char WhichStick, float& StickX, float& StickY); // Function Engine.PlayerController.GetInputAnalogStickState(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC4810>
 	float GetInputAnalogKeyState(struct Unknown Key); // Function Engine.PlayerController.GetInputAnalogKeyState(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC4720>
 	struct Unknown GetHUD(); // Function Engine.PlayerController.GetHUD(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC3D50>
-	char GetHitResultUnderFingerForObjects(char FingerIndex, struct TArray<Unknown>& ObjectTypes, char bTraceComplex, struct Unknown& HitResult); // Function Engine.PlayerController.GetHitResultUnderFingerForObjects(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC4550>
+	char GetHitResultUnderFingerForObjec(char FingerIndex, struct TArray<Unknown>& ObjectTypes, char bTraceComplex, struct Unknown& HitResult); // Function Engine.PlayerController.GetHitResultUnderFingerForObjec(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC4550>
 	char GetHitResultUnderFingerByChannel(char FingerIndex, char TraceChannel, char bTraceComplex, struct Unknown& HitResult); // Function Engine.PlayerController.GetHitResultUnderFingerByChannel(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC43B0>
 	char GetHitResultUnderFinger(char FingerIndex, char TraceChannel, char bTraceComplex, struct Unknown& HitResult); // Function Engine.PlayerController.GetHitResultUnderFinger(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC4210>
-	char GetHitResultUnderCursorForObjects(struct TArray<Unknown>& ObjectTypes, char bTraceComplex, struct Unknown& HitResult); // Function Engine.PlayerController.GetHitResultUnderCursorForObjects(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC4080>
+	char GetHitResultUnderCursorForObjec(struct TArray<Unknown>& ObjectTypes, char bTraceComplex, struct Unknown& HitResult); // Function Engine.PlayerController.GetHitResultUnderCursorForObjec(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC4080>
 	char GetHitResultUnderCursorByChannel(char TraceChannel, char bTraceComplex, struct Unknown& HitResult); // Function Engine.PlayerController.GetHitResultUnderCursorByChannel(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC3F00>
 	char GetHitResultUnderCursor(char TraceChannel, char bTraceComplex, struct Unknown& HitResult); // Function Engine.PlayerController.GetHitResultUnderCursor(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC3D80>
 	struct Unknown GetFocalLocation(); // Function Engine.PlayerController.GetFocalLocation(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC3D10>
@@ -6363,11 +6363,11 @@ struct APlayerController : AMKPlayerControllerEx {
 	void ClientUpdateMultipleLevelsStreamingStatus(struct TArray<Unknown> LevelStatuses); // Function Engine.PlayerController.ClientUpdateMultipleLevelsStreamingStatus(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC3780>
 	void ClientUpdateLevelStreamingStatus(struct FName PackageName, char bNewShouldBeLoaded, char bNewShouldBeVisible, char bNewShouldBlockOnLoad, int32_t LODIndex); // Function Engine.PlayerController.ClientUpdateLevelStreamingStatus(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC35D0>
 	void ClientUnmutePlayer(struct Unknown PlayerId); // Function Engine.PlayerController.ClientUnmutePlayer(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC34B0>
-	void ClientTravelInternal(struct FString U, char TravelType, char bSeamless, struct Unknown MapPackageGuid); // Function Engine.PlayerController.ClientTravelInternal(Net|NetReliableNative|Event|Public|HasDefaults|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC3330>
-	void ClientTravel(struct FString U, char TravelType, char bSeamless, struct Unknown MapPackageGuid); // Function Engine.PlayerController.ClientTravel(Final|Native|Public|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC31C0>
+	void ClientTravelInternal(struct FString URL, char TravelType, char bSeamless, struct Unknown MapPackageGuid); // Function Engine.PlayerController.ClientTravelInternal(Net|NetReliableNative|Event|Public|HasDefaults|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC3330>
+	void ClientTravel(struct FString URL, char TravelType, char bSeamless, struct Unknown MapPackageGuid); // Function Engine.PlayerController.ClientTravel(Final|Native|Public|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC31C0>
 	void ClientTeamMessage(struct Unknown SenderPlayerState, struct FString S, struct FName Type, float MsgLifeTime); // Function Engine.PlayerController.ClientTeamMessage(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC3060>
 	void ClientStopForceFeedback(struct Unknown ForceFeedbackEffect, struct FName Tag); // Function Engine.PlayerController.ClientStopForceFeedback(Net|NetReliableNative|Event|Public|NetClient|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC2F90>
-	void ClientStopCameraShakesFromSource(struct Unknown SourceComponent, char bImmediately); // Function Engine.PlayerController.ClientStopCameraShakesFromSource(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC2EC0>
+	void ClientStopCameraShakesFromSourc(struct Unknown SourceComponent, char bImmediately); // Function Engine.PlayerController.ClientStopCameraShakesFromSourc(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC2EC0>
 	void ClientStopCameraShake(struct Unknown* Shake, char bImmediately); // Function Engine.PlayerController.ClientStopCameraShake(Net|NetReliableNative|Event|Public|NetClient|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC2DF0>
 	void ClientStopCameraAnim(struct Unknown AnimToStop); // Function Engine.PlayerController.ClientStopCameraAnim(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC2D60>
 	void ClientStartOnlineSession(); // Function Engine.PlayerController.ClientStartOnlineSession(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC2D40>
@@ -6394,7 +6394,7 @@ struct APlayerController : AMKPlayerControllerEx {
 	void ClientPlayForceFeedback_Internal(struct Unknown ForceFeedbackEffect, struct Unknown Params); // Function Engine.PlayerController.ClientPlayForceFeedback_Internal(Final|Net|Native|Event|Private|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC1B90>
 	void ClientPlayCameraShakeFromSource(struct Unknown* Shake, struct Unknown SourceComponent); // Function Engine.PlayerController.ClientPlayCameraShakeFromSource(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC1AD0>
 	void ClientPlayCameraShake(struct Unknown* Shake, float Scale, char PlaySpace, struct Unknown UserPlaySpaceRot); // Function Engine.PlayerController.ClientPlayCameraShake(Net|Native|Event|Public|HasDefaults|NetClient|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC1970>
-	void ClientPlayCameraAnim(struct Unknown AnimToPlay, float Scale, float Rate, float BlendInTime, float BlendOutTime, char bLoop, char b, char Space, struct Unknown CustomPlaySpace); // Function Engine.PlayerController.ClientPlayCameraAnim(Net|Native|Event|Public|HasDefaults|NetClient|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC16D0>
+	void ClientPlayCameraAnim(struct Unknown AnimToPlay, float Scale, float Rate, float BlendInTime, float BlendOutTime, char bLoop, char bRandomStartTime, char Space, struct Unknown CustomPlaySpace); // Function Engine.PlayerController.ClientPlayCameraAnim(Net|Native|Event|Public|HasDefaults|NetClient|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC16D0>
 	void ClientMutePlayer(struct Unknown PlayerId); // Function Engine.PlayerController.ClientMutePlayer(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC15B0>
 	void ClientMessage(struct FString S, struct FName Type, float MsgLifeTime); // Function Engine.PlayerController.ClientMessage(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC1480>
 	void ClientIgnoreMoveInput(char bIgnore); // Function Engine.PlayerController.ClientIgnoreMoveInput(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DC13F0>
@@ -6421,7 +6421,7 @@ struct APlayerController : AMKPlayerControllerEx {
 };
 
 // Class Engine.ApplicationLifecycleComponent
-struct UApplicationLifecycleComponent : UActorComponent {
+class UApplicationLifecycleComponent : UActorComponent {
 	struct FMulticastInlineDelegate ApplicationWillDeactivateDelegate; // 0xB0 (16)
 	struct FMulticastInlineDelegate ApplicationHasReactivatedDelegate; // 0xC0 (16)
 	struct FMulticastInlineDelegate ApplicationWillEnterBackgroundDelegate; // 0xD0 (16)
@@ -6434,7 +6434,7 @@ struct UApplicationLifecycleComponent : UActorComponent {
 };
 
 // Class Engine.MovementComponent
-struct UMovementComponent : UActorComponent {
+class UMovementComponent : UActorComponent {
 	struct Unknown UpdatedComponent; // 0xB0 (8)
 	struct Unknown UpdatedPrimitive; // 0xB8 (8)
 	struct Unknown Velocity; // 0xC4 (12)
@@ -6475,7 +6475,7 @@ struct UMovementComponent : UActorComponent {
 };
 
 // Class Engine.NavMovementComponent
-struct UNavMovementComponent : UMovementComponent {
+class UNavMovementComponent : UMovementComponent {
 	struct Unknown NavAgentProps; // 0xF0 (48)
 	float FixedPathBrakingDistance; // 0x120 (4)
 	char bUpdateNavAgentWithOwnersCollision : 0; // 0x124 (1)
@@ -6494,7 +6494,7 @@ struct UNavMovementComponent : UMovementComponent {
 };
 
 // Class Engine.PawnMovementComponent
-struct UPawnMovementComponent : UNavMovementComponent {
+class UPawnMovementComponent : UNavMovementComponent {
 	struct Unknown PawnOwner; // 0x130 (8)
 
 	struct Unknown K2_GetInputVector(); // Function Engine.PawnMovementComponent.K2_GetInputVector(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DB4050>
@@ -6507,7 +6507,7 @@ struct UPawnMovementComponent : UNavMovementComponent {
 };
 
 // Class Engine.CharacterMovementComponent
-struct UCharacterMovementComponent : UPawnMovementComponent {
+class UCharacterMovementComponent : UPawnMovementComponent {
 	struct Unknown CharacterOwner; // 0x2B0 (8)
 	float GravityScale; // 0x2EC (4)
 	float MaxStepHeight; // 0x468 (4)
@@ -6551,7 +6551,7 @@ struct UCharacterMovementComponent : UPawnMovementComponent {
 	char bEnableScopedMovementUpdates : 0; // 0x5D0 (1)
 	char bEnableServerDualMoveScopedMovementUpdates : 0; // 0x4E4 (1)
 	char bForceMaxAccel : 0; // 0x4B8 (1)
-	char b : 0; // 0x2F3 (1)
+	char bRunPhysicsWithNoController : 0; // 0x2F3 (1)
 	char bForceNextFloorCheck : 0; // 0x490 (1)
 	char bShrinkProxyCapsule : 0; // 0x2FC (1)
 	char bCanWalkOffLedges : 0; // 0x2E4 (1)
@@ -6632,11 +6632,11 @@ struct UCharacterMovementComponent : UPawnMovementComponent {
 	char bPerformingJumpOff : 0; // 0x2F1 (1)
 	char bWantsToLeaveNavWalking : 0; // 0x46C (1)
 	char bUseRVOAvoidance : 0; // 0x6C0 (1)
-	char b : 0; // 0x498 (1)
+	char bRequestedMoveUseAcceleration : 0; // 0x498 (1)
 	char bWasSimulatingRootMotion : 0; // 0x478 (1)
 	char bAllowPhysicsRotationDuringAnimRootMotion : 0; // 0x44C (1)
 	char bHasRequestedVelocity : 0; // 0x304 (1)
-	char b : 0; // 0x52C (1)
+	char bRequestedMoveWithMaxSpeed : 0; // 0x52C (1)
 	char bWasAvoidanceUpdated : 0; // 0x2FC (1)
 	char bProjectNavMeshWalking : 0; // 0x508 (1)
 	char bProjectNavMeshOnBothWorldChannels : 0; // 0x228 (1)
@@ -6704,20 +6704,20 @@ struct UCharacterMovementComponent : UPawnMovementComponent {
 };
 
 // Class Engine.SceneCapture
-struct ASceneCapture : UActor {
+class ASceneCapture : UActor {
 	struct Unknown MeshComp; // 0x310 (8)
 	struct Unknown SceneComponent; // 0x318 (8)
 };
 
 // Class Engine.SceneCapture2D
-struct ASceneCapture2D : ASceneCapture {
+class ASceneCapture2D : ASceneCapture {
 	struct Unknown CaptureComponent2D; // 0x320 (8)
 
 	void OnInterpToggle(char bEnable); // Function Engine.SceneCapture2D.OnInterpToggle(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DBC2C0>
 };
 
 // Class Engine.AssetManager
-struct UAssetManager : Object {
+class UAssetManager : Object {
 	struct TArray<Unknown> ObjectReferenceList; // 0x2C0 (16)
 	char bIsGlobalAsyncScanEnvironment : 0; // 0x2D0 (1)
 	char bShouldGuessTypeAndName : 0; // 0x2D1 (1)
@@ -6734,7 +6734,7 @@ struct UAssetManager : Object {
 };
 
 // Class Engine.ShapeComponent
-struct UShapeComponent : UPrimitiveComponent {
+class UShapeComponent : UPrimitiveComponent {
 	struct Unknown ShapeBodySetup; // 0x4B8 (8)
 	struct Unknown* AreaClass; // 0x4C0 (8)
 	struct Unknown ShapeColor; // 0x4C8 (4)
@@ -6744,7 +6744,7 @@ struct UShapeComponent : UPrimitiveComponent {
 };
 
 // Class Engine.BoxComponent
-struct UBoxComponent : UShapeComponent {
+class UBoxComponent : UShapeComponent {
 	struct Unknown BoxExtent; // 0x4D0 (12)
 	float LineThickness; // 0x4DC (4)
 
@@ -6754,7 +6754,7 @@ struct UBoxComponent : UShapeComponent {
 };
 
 // Class Engine.CameraComponent
-struct UCameraComponent : USceneComponent {
+class UCameraComponent : USceneComponent {
 	float FieldOfView; // 0x238 (4)
 	float OrthoWidth; // 0x23C (4)
 	float OrthoNearClipPlane; // 0x240 (4)
@@ -6784,7 +6784,7 @@ struct UCameraComponent : USceneComponent {
 };
 
 // Class Engine.CheatManager
-struct UCheatManager : Object {
+class UCheatManager : Object {
 	struct Unknown DebugCameraControllerRef; // 0x28 (8)
 	struct Unknown* DebugCameraControllerClass; // 0x30 (8)
 
@@ -6828,9 +6828,9 @@ struct UCheatManager : Object {
 	void DisableDebugCamera(); // Function Engine.CheatManager.DisableDebugCamera(Native|Protected|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11F7880>
 	void DestroyTarget(); // Function Engine.CheatManager.DestroyTarget(Exec|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EA7F00>
 	void DestroyServerStatReplicator(); // Function Engine.CheatManager.DestroyServerStatReplicator(Final|Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CBC4C0>
-	void DestroyPawns(struct Unknown* a); // Function Engine.CheatManager.DestroyPawns(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CBC430>
+	void DestroyPawns(struct Unknown* aClass); // Function Engine.CheatManager.DestroyPawns(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CBC430>
 	void DestroyAllPawnsExceptTarget(); // Function Engine.CheatManager.DestroyAllPawnsExceptTarget(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EA7990>
-	void DestroyAll(struct Unknown* a); // Function Engine.CheatManager.DestroyAll(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CBC3A0>
+	void DestroyAll(struct Unknown* aClass); // Function Engine.CheatManager.DestroyAll(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CBC3A0>
 	void DebugCapsuleSweepSize(float HalfHeight, float Radius); // Function Engine.CheatManager.DebugCapsuleSweepSize(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CBC2D0>
 	void DebugCapsuleSweepPawn(); // Function Engine.CheatManager.DebugCapsuleSweepPawn(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CBC2B0>
 	void DebugCapsuleSweepComplex(char bTraceComplex); // Function Engine.CheatManager.DebugCapsuleSweepComplex(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CBC220>
@@ -6847,10 +6847,10 @@ struct UCheatManager : Object {
 };
 
 // Class Engine.DamageType
-struct UDamageType : Object {
+class UDamageType : Object {
 	char bCausedByWorld : 0; // 0x28 (1)
 	char bScaleMomentumByMass : 0; // 0x28 (1)
-	char b : 0; // 0x28 (1)
+	char bRadialDamageVelChange : 0; // 0x28 (1)
 	float DamageImpulse; // 0x2C (4)
 	float DestructibleImpulse; // 0x30 (4)
 	float DestructibleDamageSpreadScale; // 0x34 (4)
@@ -6858,7 +6858,7 @@ struct UDamageType : Object {
 };
 
 // Class Engine.MKDemoNetDriverEx
-struct UMKDemoNetDriverEx : UNetDriver {
+class UMKDemoNetDriverEx : UNetDriver {
 	struct Unknown* SpectatorControllerClass; // 0x928 (8)
 	struct Unknown SelfDemoNetDriver; // 0x930 (8)
 
@@ -6867,7 +6867,7 @@ struct UMKDemoNetDriverEx : UNetDriver {
 };
 
 // Class Engine.DemoNetDriver
-struct UDemoNetDriver : UMKDemoNetDriverEx {
+class UDemoNetDriver : UMKDemoNetDriverEx {
 	struct TMap<Unknown, Unknown>Unknown RollbackNetStartupActors; // 0xA50 (80)
 	float CheckpointSaveMaxMSPerFrame; // 0xECC (4)
 	struct TArray<Unknown> MulticastRecordOptions; // 0xF00 (16)
@@ -6876,7 +6876,7 @@ struct UDemoNetDriver : UMKDemoNetDriverEx {
 };
 
 // Class Engine.StaticMeshComponent
-struct UStaticMeshComponent : UMeshComponent {
+class UStaticMeshComponent : UMeshComponent {
 	int32_t ForcedLodModel; // 0x4E8 (4)
 	int32_t PreviousLODLevel; // 0x4EC (4)
 	int32_t MinLOD; // 0x4F0 (4)
@@ -6885,7 +6885,7 @@ struct UStaticMeshComponent : UMeshComponent {
 	struct Unknown WireframeColorOverride; // 0x500 (4)
 	char bEvaluateWorldPositionOffset : 0; // 0x504 (1)
 	char bOverrideWireframeColor : 0; // 0x504 (1)
-	char pad_50C_0 : 7; // 0x50C (1)
+	char pad_50C_0 : 6; // 0x50C (1)
 	char bOverrideMinLod : 1; // 0x504 (1)
 	char bOverrideNavigationExport : 0; // 0x504 (1)
 	char bForceNavigationObstacle : 0; // 0x504 (1)
@@ -6896,7 +6896,7 @@ struct UStaticMeshComponent : UMeshComponent {
 	char bOverrideDistanceFieldSelfShadowBias : 0; // 0x505 (1)
 	char bUseSubDivisions : 0; // 0x505 (1)
 	char bUseDefaultCollision : 0; // 0x505 (1)
-	char b : 0; // 0x505 (1)
+	char bReverseCulling : 0; // 0x505 (1)
 	int32_t OverriddenLightMapRes; // 0x508 (4)
 	float DistanceFieldIndirectShadowMinVisibility; // 0x50C (4)
 	float DistanceFieldSelfShadowBias; // 0x510 (4)
@@ -6914,14 +6914,14 @@ struct UStaticMeshComponent : UMeshComponent {
 };
 
 // Class Engine.GameEngine
-struct UGameEngine : UEngine {
+class UGameEngine : UEngine {
 	float MaxDeltaTime; // 0xDE8 (4)
 	float ServerFlushLogInterval; // 0xDEC (4)
 	struct Unknown GameInstance; // 0xDF0 (8)
 };
 
 // Class Engine.MKGameInstanceEx
-struct UMKGameInstanceEx : Object {
+class UMKGameInstanceEx : Object {
 	struct TArray<Unknown> ReplayListItemInfos; // 0x28 (16)
 	struct FMulticastInlineDelegate OnEnumerateReplayListCompleteEvent; // 0x38 (16)
 	struct FMulticastInlineDelegate OnDeleteReplayCompleteEvent; // 0x48 (16)
@@ -6934,7 +6934,7 @@ struct UMKGameInstanceEx : Object {
 	void PlayReplayCommand(struct FString DemoName); // Function Engine.MKGameInstanceEx.PlayReplayCommand(Final|Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3D95A30>
 	char PlayReplay(struct Unknown LocalPlayer, struct FString DemoName); // Function Engine.MKGameInstanceEx.PlayReplay(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3D95940>
 	void OnKeepAndDeleteOldVersionReplaysCompleteEvent__DelegateSignature(); // DelegateFunction Engine.MKGameInstanceEx.OnKeepAndDeleteOldVersionReplaysCompleteEvent__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
-	void OnKeepAndDeleteOldestReplaysCompleteEvent__DelegateSignature(int32_t n, char bSuccess); // DelegateFunction Engine.MKGameInstanceEx.OnKeepAndDeleteOldestReplaysCompleteEvent__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void OnKeepAndDeleteOldestReplaysCompleteEvent__DelegateSignature(int32_t nRemainedReplays, char bSuccess); // DelegateFunction Engine.MKGameInstanceEx.OnKeepAndDeleteOldestReplaysCompleteEvent__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void OnEnumerateStreamsCompleteEvent__DelegateSignature(int32_t OutPageIndex, int32_t OutPageSize); // DelegateFunction Engine.MKGameInstanceEx.OnEnumerateStreamsCompleteEvent__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void OnDeleteStreamCompleteEvent__DelegateSignature(struct FString StreamName, char bSuccess); // DelegateFunction Engine.MKGameInstanceEx.OnDeleteStreamCompleteEvent__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void GetNumOfReplays(int32_t& TotalReplays, int32_t& ReplaysToKeep); // Function Engine.MKGameInstanceEx.GetNumOfReplays(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3D94CB0>
@@ -6942,7 +6942,7 @@ struct UMKGameInstanceEx : Object {
 };
 
 // Class Engine.GameInstance
-struct UGameInstance : UMKGameInstanceEx {
+class UGameInstance : UMKGameInstanceEx {
 	struct TArray<Unknown> LocalPlayers; // 0xB8 (16)
 	struct Unknown OnlineSession; // 0xC8 (8)
 	struct TArray<Unknown> ReferencedObjects; // 0xD0 (16)
@@ -6956,17 +6956,17 @@ struct UGameInstance : UMKGameInstanceEx {
 };
 
 // Class Engine.GameSession
-struct AGameSession : AInfo {
+class AGameSession : AInfo {
 	int32_t MaxSpectators; // 0x310 (4)
 	int32_t MaxPlayers; // 0x314 (4)
 	int32_t MaxPartySize; // 0x318 (4)
 	char MaxSplitscreensPerConnection; // 0x31C (1)
-	char b : 0; // 0x31D (1)
+	char bRequiresPushToTalk : 0; // 0x31D (1)
 	struct FName SessionName; // 0x320 (8)
 };
 
 // Class Engine.InstancedStaticMeshComponent
-struct UInstancedStaticMeshComponent : UStaticMeshComponent {
+class UInstancedStaticMeshComponent : UStaticMeshComponent {
 	struct TArray<Unknown> PerInstanceSMData; // 0x550 (16)
 	int32_t NumCustomDataFloats; // 0x560 (4)
 	struct TArray<Unknown> PerInstanceSMCustomData; // 0x568 (16)
@@ -6997,7 +6997,7 @@ struct UInstancedStaticMeshComponent : UStaticMeshComponent {
 };
 
 // Class Engine.HierarchicalInstancedStaticMeshComponent
-struct UHierarchicalInstancedStaticMeshComponent : UInstancedStaticMeshComponent {
+class UHierarchicalInstancedStaticMeshComponent : UInstancedStaticMeshComponent {
 	struct TArray<Unknown> SortedInstances; // 0x628 (16)
 	int32_t NumBuiltInstances; // 0x638 (4)
 	struct Unknown BuiltInstanceBounds; // 0x640 (28)
@@ -7014,7 +7014,7 @@ struct UHierarchicalInstancedStaticMeshComponent : UInstancedStaticMeshComponent
 };
 
 // Class Engine.MK3DReplayController
-struct AMK3DReplayController : APlayerController {
+class AMK3DReplayController : APlayerController {
 	struct FMulticastInlineDelegate OnReplayPauseEvent; // 0x6F0 (16)
 	struct FMulticastInlineDelegate OnReplayJumpEvent; // 0x700 (16)
 	struct FMulticastInlineDelegate OnReplayJumpCompleteEvent; // 0x710 (16)
@@ -7086,7 +7086,7 @@ struct AMK3DReplayController : APlayerController {
 };
 
 // Class Engine.DefaultPawn
-struct ADefaultPawn : APawn {
+class ADefaultPawn : APawn {
 	float BaseTurnRate; // 0x380 (4)
 	float BaseLookUpRate; // 0x384 (4)
 	struct Unknown MovementComponent; // 0x388 (8)
@@ -7102,7 +7102,7 @@ struct ADefaultPawn : APawn {
 };
 
 // Class Engine.PhysicalMaterial
-struct UPhysicalMaterial : Object {
+class UPhysicalMaterial : Object {
 	float Friction; // 0x28 (4)
 	char FrictionCombineMode; // 0x2C (1)
 	char bOverrideFrictionCombineMode : 0; // 0x2D (1)
@@ -7119,7 +7119,7 @@ struct UPhysicalMaterial : Object {
 };
 
 // Class Engine.PlayerCameraManager
-struct APlayerCameraManager : UActor {
+class APlayerCameraManager : UActor {
 	struct Unknown PCOwner; // 0x310 (8)
 	struct Unknown TransformComponent; // 0x318 (8)
 	float DefaultFOV; // 0x328 (4)
@@ -7171,7 +7171,7 @@ struct APlayerCameraManager : UActor {
 	void RemoveCameraLensEffect(struct Unknown Emitter); // Function Engine.PlayerCameraManager.RemoveCameraLensEffect(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CE6D00>
 	struct Unknown PlayCameraShakeFromSource(struct Unknown* ShakeClass, struct Unknown SourceComponent); // Function Engine.PlayerCameraManager.PlayCameraShakeFromSource(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DBC920>
 	struct Unknown PlayCameraShake(struct Unknown* ShakeClass, float Scale, char PlaySpace, struct Unknown UserPlaySpaceRot); // Function Engine.PlayerCameraManager.PlayCameraShake(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DBC7B0>
-	struct Unknown PlayCameraAnim(struct Unknown Anim, float Rate, float Scale, float BlendInTime, float BlendOutTime, char bLoop, char b, float Duration, char PlaySpace, struct Unknown UserPlaySpaceRot); // Function Engine.PlayerCameraManager.PlayCameraAnim(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DBC4D0>
+	struct Unknown PlayCameraAnim(struct Unknown Anim, float Rate, float Scale, float BlendInTime, float BlendOutTime, char bLoop, char bRandomStartTime, float Duration, char PlaySpace, struct Unknown UserPlaySpaceRot); // Function Engine.PlayerCameraManager.PlayCameraAnim(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DBC4D0>
 	void PhotographyCameraModify(struct Unknown NewCameraLocation, struct Unknown PreviousCameraLocation, struct Unknown OriginalCameraLocation, struct Unknown& ResultCameraLocation); // Function Engine.PlayerCameraManager.PhotographyCameraModify(BlueprintCosmetic|Native|Event|Public|HasOutParms|HasDefaults|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DBC350>
 	void OnPhotographySessionStart(); // Function Engine.PlayerCameraManager.OnPhotographySessionStart(BlueprintCosmetic|Native|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F1B4E0>
 	void OnPhotographySessionEnd(); // Function Engine.PlayerCameraManager.OnPhotographySessionEnd(BlueprintCosmetic|Native|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F1CD70>
@@ -7189,12 +7189,12 @@ struct APlayerCameraManager : UActor {
 };
 
 // Class Engine.MKPlayerStateEx
-struct AMKPlayerStateEx : AInfo {
+class AMKPlayerStateEx : AInfo {
 	struct Unknown SelfPlayerState; // 0x310 (8)
 };
 
 // Class Engine.PlayerState
-struct APlayerState : AMKPlayerStateEx {
+class APlayerState : AMKPlayerStateEx {
 	float Score; // 0x318 (4)
 	int32_t PlayerId; // 0x31C (4)
 	char Ping; // 0x320 (1)
@@ -7222,7 +7222,7 @@ struct APlayerState : AMKPlayerStateEx {
 };
 
 // Class Engine.SceneCaptureComponent
-struct USceneCaptureComponent : USceneComponent {
+class USceneCaptureComponent : USceneComponent {
 	enum class Unknow PrimitiveRenderMode; // 0x238 (1)
 	char bTonemapPropagateAlpha : 0; // 0x239 (1)
 	char bUsePostProcessMaterial : 0; // 0x239 (1)
@@ -7254,7 +7254,7 @@ struct USceneCaptureComponent : USceneComponent {
 };
 
 // Class Engine.SceneCaptureComponent2D
-struct USceneCaptureComponent2D : USceneCaptureComponent {
+class USceneCaptureComponent2D : USceneCaptureComponent {
 	char ProjectionType; // 0x2D0 (1)
 	float FOVAngle; // 0x2D4 (4)
 	float OrthoWidth; // 0x2D8 (4)
@@ -7270,7 +7270,7 @@ struct USceneCaptureComponent2D : USceneCaptureComponent {
 	struct Unknown ClipPlaneBase; // 0x904 (12)
 	struct Unknown ClipPlaneNormal; // 0x910 (12)
 	char bCameraCutThisFrame : 0; // 0x91C (1)
-	char bConsiderUnrenderedOpaque : 0; // 0x91C (1)
+	char bConsiderUnrenderedOpaquePixelAsFullyTranslucent : 0; // 0x91C (1)
 	char bDisableFlipCopyGLES : 0; // 0x920 (1)
 
 	void CaptureScene(); // Function Engine.SceneCaptureComponent2D.CaptureScene(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DE5100>
@@ -7278,7 +7278,7 @@ struct USceneCaptureComponent2D : USceneCaptureComponent {
 };
 
 // Class Engine.ArrowComponent
-struct UArrowComponent : UPrimitiveComponent {
+class UArrowComponent : UPrimitiveComponent {
 	struct Unknown ArrowColor; // 0x4B8 (4)
 	float ArrowSize; // 0x4BC (4)
 	float ScreenSize; // 0x4C0 (4)
@@ -7289,7 +7289,7 @@ struct UArrowComponent : UPrimitiveComponent {
 };
 
 // Class Engine.NavigationObjectBase
-struct ANavigationObjectBase : UActor {
+class ANavigationObjectBase : UActor {
 	struct Unknown CapsuleComponent; // 0x318 (8)
 	struct Unknown GoodSprite; // 0x320 (8)
 	struct Unknown BadSprite; // 0x328 (8)
@@ -7297,16 +7297,16 @@ struct ANavigationObjectBase : UActor {
 };
 
 // Class Engine.PlayerStart
-struct APlayerStart : ANavigationObjectBase {
+class APlayerStart : ANavigationObjectBase {
 	struct FName PlayerStartTag; // 0x338 (8)
 };
 
 // Class Engine.ProjectileMovementComponent
-struct UProjectileMovementComponent : UMovementComponent {
+class UProjectileMovementComponent : UMovementComponent {
 	float InitialSpeed; // 0xF0 (4)
 	float MaxSpeed; // 0xF4 (4)
-	char b : 0; // 0xF8 (1)
-	char b : 0; // 0xF8 (1)
+	char bRotationFollowsVelocity : 0; // 0xF8 (1)
+	char bRotationRemainsVertical : 0; // 0xF8 (1)
 	char bShouldBounce : 0; // 0xF8 (1)
 	char bInitialVelocityInLocalSpace : 0; // 0xF8 (1)
 	char bForceSubStepping : 0; // 0xF8 (1)
@@ -7350,7 +7350,7 @@ struct UProjectileMovementComponent : UMovementComponent {
 };
 
 // Class Engine.GameUserSettings
-struct UGameUserSettings : Object {
+class UGameUserSettings : Object {
 	char bUseVSync : 0; // 0x28 (1)
 	char bIsSmoothFrameRate : 0; // 0x29 (1)
 	char bUseDynamicResolution : 0; // 0x2A (1)
@@ -7468,7 +7468,7 @@ struct UGameUserSettings : Object {
 };
 
 // Class Engine.CapsuleComponent
-struct UCapsuleComponent : UShapeComponent {
+class UCapsuleComponent : UShapeComponent {
 	float CapsuleHalfHeight; // 0x4D0 (4)
 	float CapsuleRadius; // 0x4D4 (4)
 
@@ -7489,7 +7489,7 @@ struct UCapsuleComponent : UShapeComponent {
 };
 
 // Class Engine.GameViewportClient
-struct UGameViewportClient : UScriptViewportClient {
+class UGameViewportClient : UScriptViewportClient {
 	struct Unknown ViewportConsole; // 0x40 (8)
 	struct TArray<Unknown> DebugProperties; // 0x48 (16)
 	int32_t MaxSplitscreenPlayers; // 0x68 (4)
@@ -7502,7 +7502,7 @@ struct UGameViewportClient : UScriptViewportClient {
 };
 
 // Class Engine.PhysicsVolume
-struct APhysicsVolume : AVolume {
+class APhysicsVolume : AVolume {
 	float TerminalVelocity; // 0x348 (4)
 	int32_t Priority; // 0x34C (4)
 	float FluidFriction; // 0x350 (4)
@@ -7511,7 +7511,7 @@ struct APhysicsVolume : AVolume {
 };
 
 // Class Engine.WorldSettings
-struct AWorldSettings : AInfo {
+class AWorldSettings : AInfo {
 	int32_t VisibilityCellSize; // 0x318 (4)
 	char VisibilityAggressiv; // 0x31C (1)
 	char bPrecomputeVisibility : 0; // 0x31D (1)
@@ -7571,7 +7571,7 @@ struct AWorldSettings : AInfo {
 };
 
 // Class Engine.CameraModifier
-struct UCameraModifier : Object {
+class UCameraModifier : Object {
 	char bDebug : 0; // 0x28 (1)
 	char bExclusive : 0; // 0x28 (1)
 	char Priority; // 0x2C (1)
@@ -7589,7 +7589,7 @@ struct UCameraModifier : Object {
 };
 
 // Class Engine.SkyLight
-struct ASkyLight : AInfo {
+class ASkyLight : AInfo {
 	struct Unknown LightComponent; // 0x310 (8)
 	char bEnabled : 0; // 0x318 (1)
 
@@ -7597,7 +7597,7 @@ struct ASkyLight : AInfo {
 };
 
 // Class Engine.MaterialInterface
-struct UMaterialInterface : Object {
+class UMaterialInterface : Object {
 	struct Unknown SubsurfaceProfile; // 0x38 (8)
 	struct Unknown LightmassSettings; // 0x50 (16)
 	struct TArray<Unknown> TextureStreamingData; // 0x60 (16)
@@ -7612,7 +7612,7 @@ struct UMaterialInterface : Object {
 };
 
 // Class Engine.MaterialInstance
-struct UMaterialInstance : UMaterialInterface {
+class UMaterialInstance : UMaterialInterface {
 	struct Unknown PhysMaterial; // 0x88 (8)
 	struct Unknown PhysicalMaterialMap[0x8]; // 0x90 (64)
 	struct Unknown Parent; // 0xD0 (8)
@@ -7630,7 +7630,7 @@ struct UMaterialInstance : UMaterialInterface {
 };
 
 // Class Engine.MaterialInstanceConstant
-struct UMaterialInstanceConstant : UMaterialInstance {
+class UMaterialInstanceConstant : UMaterialInstance {
 	struct Unknown PhysMaterialMask; // 0x408 (8)
 
 	struct Unknown K2_GetVectorParameterValue(struct FName ParameterName); // Function Engine.MaterialInstanceConstant.K2_GetVectorParameterValue(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3D88C70>
@@ -7639,7 +7639,7 @@ struct UMaterialInstanceConstant : UMaterialInstance {
 };
 
 // Class Engine.BlueprintGeneratedClass
-struct UBlueprintGeneratedClass : UClass {
+class UBlueprintGeneratedClass : UClass {
 	int32_t NumReplicatedProperties; // 0x2D0 (4)
 	char bHasNativizedParent : 0; // 0x2D4 (1)
 	char bHasCookedComponentInstancingData : 0; // 0x2D4 (1)
@@ -7655,7 +7655,7 @@ struct UBlueprintGeneratedClass : UClass {
 };
 
 // Class Engine.CameraActor
-struct ACameraActor : UActor {
+class ACameraActor : UActor {
 	char AutoActivateForPlayer; // 0x310 (1)
 	struct Unknown CameraComponent; // 0x318 (8)
 	struct Unknown SceneComponent; // 0x320 (8)
@@ -7669,7 +7669,7 @@ struct ACameraActor : UActor {
 };
 
 // Class Engine.SoundBase
-struct USoundBase : Object {
+class USoundBase : Object {
 	struct Unknown SoundClassObject; // 0x28 (8)
 	char bDebug : 0; // 0x30 (1)
 	char bOverrideConcurrency : 0; // 0x30 (1)
@@ -7694,7 +7694,7 @@ struct USoundBase : Object {
 };
 
 // Class Engine.SoundWave
-struct USoundWave : USoundBase {
+class USoundWave : USoundBase {
 	int32_t CompressionQuality; // 0x160 (4)
 	int32_t StreamingPriority; // 0x164 (4)
 	enum class Unknow SampleRateQuality; // 0x168 (1)
@@ -7723,7 +7723,7 @@ struct USoundWave : USoundBase {
 };
 
 // Class Engine.BlueprintCore
-struct UBlueprintCore : Object {
+class UBlueprintCore : Object {
 	struct Unknown* SkeletonGeneratedClass; // 0x28 (8)
 	struct Unknown* GeneratedClass; // 0x30 (8)
 	char bLegacyNeedToPurgeSkelRefs : 0; // 0x38 (1)
@@ -7731,10 +7731,10 @@ struct UBlueprintCore : Object {
 };
 
 // Class Engine.Blueprint
-struct UBlueprint : UBlueprintCore {
+class UBlueprint : UBlueprintCore {
 	struct Unknown* ParentClass; // 0x50 (8)
 	char BlueprintType; // 0x58 (1)
-	char b : 0; // 0x59 (1)
+	char bRecompileOnLoad : 0; // 0x59 (1)
 	char bHasBeenRegenerated : 0; // 0x59 (1)
 	char bIsRegeneratingOnLoad : 0; // 0x59 (1)
 	int32_t BlueprintSystemVersion; // 0x5C (4)
@@ -7746,36 +7746,36 @@ struct UBlueprint : UBlueprintCore {
 };
 
 // Class Engine.MKChannelEx
-struct UMKChannelEx : Object {
+class UMKChannelEx : Object {
 	struct Unknown SelfChannel; // 0x30 (8)
 };
 
 // Class Engine.Channel
-struct UChannel : UMKChannelEx {
+class UChannel : UMKChannelEx {
 	struct Unknown Connection; // 0x38 (8)
 };
 
 // Class Engine.MKActorChannelEx
-struct UMKActorChannelEx : UChannel {
+class UMKActorChannelEx : UChannel {
 	struct Unknown SelfActorChannel; // 0xA0 (8)
 };
 
 // Class Engine.ActorChannel
-struct UActorChannel : UMKActorChannelEx {
+class UActorChannel : UMKActorChannelEx {
 	struct Unknown Actor; // 0xA8 (8)
 	struct TArray<Unknown> CreateSubObjects; // 0x198 (16)
 };
 
 // Class Engine.AnimationAsset
-struct UAnimationAsset : Object {
+class UAnimationAsset : Object {
 	struct Unknown Skeleton; // 0x38 (8)
 	struct TArray<Unknown> MetaData; // 0x60 (16)
 	struct TArray<Unknown> AssetUserData; // 0x70 (16)
 };
 
 // Class Engine.BlendSpaceBase
-struct UBlendSpaceBase : UAnimationAsset {
-	char b : 0; // 0x88 (1)
+class UBlendSpaceBase : UAnimationAsset {
+	char bRotationBlendInMeshSpace : 0; // 0x88 (1)
 	float AnimLength; // 0x8C (4)
 	struct Unknown InterpolationParam[0x3]; // 0x90 (24)
 	float TargetWeightInterpolationSpeedPerSec; // 0xA8 (4)
@@ -7788,24 +7788,24 @@ struct UBlendSpaceBase : UAnimationAsset {
 };
 
 // Class Engine.BlendSpace
-struct UBlendSpace : UBlendSpaceBase {
+class UBlendSpace : UBlendSpaceBase {
 	char AxisToScaleAnimation; // 0x148 (1)
 };
 
 // Class Engine.BlendSpace1D
-struct UBlendSpace1D : UBlendSpaceBase {
+class UBlendSpace1D : UBlendSpaceBase {
 	char bScaleAnimation : 0; // 0x148 (1)
 };
 
 // Class Engine.AISystemBase
-struct UAISystemBase : Object {
+class UAISystemBase : Object {
 	struct Unknown AISystemClassName; // 0x28 (24)
 	struct FName AISystemModuleName; // 0x40 (8)
 	char bInstantiateAISystemOnClient : 0; // 0x50 (1)
 };
 
 // Class Engine.AmbientSound
-struct AAmbientSound : UActor {
+class AAmbientSound : UActor {
 	struct Unknown AudioComponent; // 0x310 (8)
 
 	void Stop(); // Function Engine.AmbientSound.Stop(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C690C0>
@@ -7816,21 +7816,21 @@ struct AAmbientSound : UActor {
 };
 
 // Class Engine.AnimationSettings
-struct UAnimationSettings : UDeveloperSettings {
+class UAnimationSettings : UDeveloperSettings {
 	int32_t CompressCommandletVersion; // 0x38 (4)
 	struct TArray<Unknown> KeyEndEffectorsMatchNameArray; // 0x40 (16)
 	char ForceRecompression : 0; // 0x50 (1)
 	char bOnlyCheckForMissingSkeletalMeshes : 0; // 0x51 (1)
 	char bForceBelowThreshold : 0; // 0x52 (1)
 	char bFirstRecompressUsingCurrentOrDefault : 0; // 0x53 (1)
-	char b : 0; // 0x54 (1)
+	char bRaiseMaxErrorToExisting : 0; // 0x54 (1)
 	char bEnablePerformanceLog : 0; // 0x55 (1)
 	char bStripAnimationDataOnDedicatedServer : 0; // 0x56 (1)
 	char bTickAnimationOnSkeletalMeshInit : 0; // 0x57 (1)
 };
 
 // Class Engine.AnimBlueprint
-struct UAnimBlueprint : UBlueprint {
+class UAnimBlueprint : UBlueprint {
 	struct Unknown TargetSkeleton; // 0xA8 (8)
 	struct TArray<Unknown> Groups; // 0xB0 (16)
 	char bUseMultiThreadedAnimationUpdate : 0; // 0xC0 (1)
@@ -7838,7 +7838,7 @@ struct UAnimBlueprint : UBlueprint {
 };
 
 // Class Engine.AnimBlueprintGeneratedClass
-struct UAnimBlueprintGeneratedClass : UBlueprintGeneratedClass {
+class UAnimBlueprintGeneratedClass : UBlueprintGeneratedClass {
 	struct TArray<Unknown> BakedStateMachines; // 0x3D0 (16)
 	struct Unknown TargetSkeleton; // 0x3E0 (8)
 	struct TArray<Unknown> AnimNotifies; // 0x3E8 (16)
@@ -7850,17 +7850,17 @@ struct UAnimBlueprintGeneratedClass : UBlueprintGeneratedClass {
 };
 
 // Class Engine.AnimBoneCompressionCodec
-struct UAnimBoneCompressionCodec : Object {
+class UAnimBoneCompressionCodec : Object {
 	struct FString Description; // 0x28 (16)
 };
 
 // Class Engine.AnimBoneCompressionSettings
-struct UAnimBoneCompressionSettings : Object {
+class UAnimBoneCompressionSettings : Object {
 	struct TArray<Unknown> Codecs; // 0x28 (16)
 };
 
 // Class Engine.AnimClassData
-struct UAnimClassData : Object {
+class UAnimClassData : Object {
 	struct TArray<Unknown> BakedStateMachines; // 0x30 (16)
 	struct Unknown TargetSkeleton; // 0x40 (8)
 	struct TArray<Unknown> AnimNotifies; // 0x48 (16)
@@ -7881,7 +7881,7 @@ struct UAnimClassData : Object {
 };
 
 // Class Engine.AnimSequenceBase
-struct UAnimSequenceBase : UAnimationAsset {
+class UAnimSequenceBase : UAnimationAsset {
 	struct TArray<Unknown> Notifies; // 0x80 (16)
 	float SequenceLength; // 0x90 (4)
 	float RateScale; // 0x94 (4)
@@ -7891,12 +7891,12 @@ struct UAnimSequenceBase : UAnimationAsset {
 };
 
 // Class Engine.AnimComposite
-struct UAnimComposite : UAnimCompositeBase {
+class UAnimComposite : UAnimCompositeBase {
 	struct Unknown AnimationTrack; // 0xA8 (16)
 };
 
 // Class Engine.AnimCompress
-struct UAnimCompress : UAnimBoneCompressionCodec {
+class UAnimCompress : UAnimBoneCompressionCodec {
 	char bNeedsSkeleton : 0; // 0x38 (1)
 	char TranslationCompressionFormat; // 0x3C (1)
 	char RotationCompressionFormat; // 0x3D (1)
@@ -7904,7 +7904,7 @@ struct UAnimCompress : UAnimBoneCompressionCodec {
 };
 
 // Class Engine.AnimCompress_RemoveLinearKeys
-struct UAnimCompress_RemoveLinearKeys : UAnimCompress {
+class UAnimCompress_RemoveLinearKeys : UAnimCompress {
 	float MaxPosDiff; // 0x40 (4)
 	float MaxAngleDiff; // 0x44 (4)
 	float MaxScaleDiff; // 0x48 (4)
@@ -7912,12 +7912,12 @@ struct UAnimCompress_RemoveLinearKeys : UAnimCompress {
 	float MinEffectorDiff; // 0x50 (4)
 	float EffectorDiffSocket; // 0x54 (4)
 	float ParentKeyScale; // 0x58 (4)
-	char b : 0; // 0x5C (1)
+	char bRetarget : 0; // 0x5C (1)
 	char bActuallyFilterLinearKeys : 0; // 0x5C (1)
 };
 
 // Class Engine.AnimCompress_PerTrackCompression
-struct UAnimCompress_PerTrackCompression : UAnimCompress_RemoveLinearKeys {
+class UAnimCompress_PerTrackCompression : UAnimCompress_RemoveLinearKeys {
 	float MaxZeroingThreshold; // 0x60 (4)
 	float MaxPosDiffBitwise; // 0x64 (4)
 	float MaxAngleDiffBitwise; // 0x68 (4)
@@ -7925,7 +7925,7 @@ struct UAnimCompress_PerTrackCompression : UAnimCompress_RemoveLinearKeys {
 	struct TArray<Unknown> AllowedRotationFormats; // 0x70 (16)
 	struct TArray<Unknown> AllowedTranslationFormats; // 0x80 (16)
 	struct TArray<Unknown> AllowedScaleFormats; // 0x90 (16)
-	char b : 0; // 0xA0 (1)
+	char bResampleAnimation : 0; // 0xA0 (1)
 	float ResampledFramerate; // 0xA4 (4)
 	int32_t MinKeysForResampling; // 0xA8 (4)
 	char bUseAdaptiveError : 0; // 0xAC (1)
@@ -7942,25 +7942,25 @@ struct UAnimCompress_PerTrackCompression : UAnimCompress_RemoveLinearKeys {
 };
 
 // Class Engine.AnimCompress_RemoveEverySecondKey
-struct UAnimCompress_RemoveEverySecondKey : UAnimCompress {
+class UAnimCompress_RemoveEverySecondKey : UAnimCompress {
 	int32_t MinKeys; // 0x40 (4)
 	char bStartAtSecondKey : 0; // 0x44 (1)
 };
 
 // Class Engine.AnimCompress_RemoveTrivialKeys
-struct UAnimCompress_RemoveTrivialKeys : UAnimCompress {
+class UAnimCompress_RemoveTrivialKeys : UAnimCompress {
 	float MaxPosDiff; // 0x40 (4)
 	float MaxAngleDiff; // 0x44 (4)
 	float MaxScaleDiff; // 0x48 (4)
 };
 
 // Class Engine.AnimCurveCompressionSettings
-struct UAnimCurveCompressionSettings : Object {
+class UAnimCurveCompressionSettings : Object {
 	struct Unknown Codec; // 0x28 (8)
 };
 
 // Class Engine.AnimMontage
-struct UAnimMontage : UAnimCompositeBase {
+class UAnimMontage : UAnimCompositeBase {
 	struct Unknown BlendIn; // 0xA8 (48)
 	float BlendInTime; // 0xD8 (4)
 	struct Unknown BlendOut; // 0xE0 (48)
@@ -7985,7 +7985,7 @@ struct UAnimMontage : UAnimCompositeBase {
 };
 
 // Class Engine.AnimNotify_PlayParticleEffect
-struct UAnimNotify_PlayParticleEffect : UAnimNotify {
+class UAnimNotify_PlayParticleEffect : UAnimNotify {
 	struct Unknown PSTemplate; // 0x38 (8)
 	struct Unknown LocationOffset; // 0x40 (12)
 	struct Unknown RotationOffset; // 0x4C (12)
@@ -7995,7 +7995,7 @@ struct UAnimNotify_PlayParticleEffect : UAnimNotify {
 };
 
 // Class Engine.AnimNotify_PlaySound
-struct UAnimNotify_PlaySound : UAnimNotify {
+class UAnimNotify_PlaySound : UAnimNotify {
 	struct Unknown Sound; // 0x38 (8)
 	float VolumeMultiplier; // 0x40 (4)
 	float PitchMultiplier; // 0x44 (4)
@@ -8004,7 +8004,7 @@ struct UAnimNotify_PlaySound : UAnimNotify {
 };
 
 // Class Engine.AnimNotifyState_TimedParticleEffect
-struct UAnimNotifyState_TimedParticleEffect : UAnimNotifyState {
+class UAnimNotifyState_TimedParticleEffect : UAnimNotifyState {
 	struct Unknown PSTemplate; // 0x30 (8)
 	struct FName SocketName; // 0x38 (8)
 	struct Unknown LocationOffset; // 0x40 (12)
@@ -8013,19 +8013,19 @@ struct UAnimNotifyState_TimedParticleEffect : UAnimNotifyState {
 };
 
 // Class Engine.AnimNotifyState_Trail
-struct UAnimNotifyState_Trail : UAnimNotifyState {
+class UAnimNotifyState_Trail : UAnimNotifyState {
 	struct Unknown PSTemplate; // 0x30 (8)
 	struct FName FirstSocketName; // 0x38 (8)
 	struct FName SecondSocketName; // 0x40 (8)
 	char WidthScaleMode; // 0x48 (1)
 	struct FName WidthScaleCurve; // 0x4C (8)
-	char b : 0; // 0x54 (1)
+	char bRecycleSpawnedSystems : 0; // 0x54 (1)
 
 	struct Unknown OverridePSTemplate(struct Unknown MeshComp, struct Unknown Animation); // Function Engine.AnimNotifyState_Trail.OverridePSTemplate(Event|Public|BlueprintEvent|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 };
 
 // Class Engine.AnimSequence
-struct UAnimSequence : UAnimSequenceBase {
+class UAnimSequence : UAnimSequenceBase {
 	int32_t NumFrames; // 0xA8 (4)
 	struct TArray<Unknown> TrackToSkeletonMapTable; // 0xB0 (16)
 	struct Unknown BoneCompressionSettings; // 0xD0 (8)
@@ -8040,12 +8040,12 @@ struct UAnimSequence : UAnimSequenceBase {
 	char RootMotionRootLock; // 0x16E (1)
 	char bForceRootLock : 0; // 0x16F (1)
 	char bUseNormalizedRootMotionScale : 0; // 0x170 (1)
-	char b : 0; // 0x171 (1)
+	char bRootMotionSettingsCopiedFromMontage : 0; // 0x171 (1)
 	struct TArray<Unknown> AuthoredSyncMarkers; // 0x178 (16)
 };
 
 // Class Engine.AnimSet
-struct UAnimSet : Object {
+class UAnimSet : Object {
 	char bAnimRotationOnly : 0; // 0x28 (1)
 	struct TArray<Unknown> TrackBoneNames; // 0x30 (16)
 	struct TArray<Unknown> LinkupCache; // 0x40 (16)
@@ -8058,14 +8058,14 @@ struct UAnimSet : Object {
 };
 
 // Class Engine.AnimSingleNodeInstance
-struct UAnimSingleNodeInstance : UAnimInstance {
+class UAnimSingleNodeInstance : UAnimInstance {
 	struct Unknown CurrentAsset; // 0x268 (8)
 	struct FDelegate PostEvaluateAnimEvent; // 0x270 (16)
 
 	void StopAnim(); // Function Engine.AnimSingleNodeInstance.StopAnim(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C83340>
 	void SetReverse(char bInReverse); // Function Engine.AnimSingleNodeInstance.SetReverse(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C832B0>
-	void SetPreviewCurveOverride(struct FName& PoseName, float Value, char b); // Function Engine.AnimSingleNodeInstance.SetPreviewCurveOverride(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C83190>
-	void SetPositionWithPrev(float InPosition, float InPreviousTime, char bFireNotifies); // Function Engine.AnimSingleNodeInstance.SetPositionWithPrev(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C83080>
+	void SetPreviewCurveOverride(struct FName& PoseName, float Value, char bRemoveIfZero); // Function Engine.AnimSingleNodeInstance.SetPreviewCurveOverride(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C83190>
+	void SetPositionWithPrev(float InPosition, float InPreviousTime, char bFireNotifies); // Function Engine.AnimSingleNodeInstance.SetPositionWithPrevnce(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C83080>
 	void SetPosition(float InPosition, char bFireNotifies); // Function Engine.AnimSingleNodeInstance.SetPosition(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C82FB0>
 	void SetPlayRate(float InPlayRate); // Function Engine.AnimSingleNodeInstance.SetPlayRate(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C82EA0>
 	void SetPlaying(char bIsPlaying); // Function Engine.AnimSingleNodeInstance.SetPlaying(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C82F20>
@@ -8078,7 +8078,7 @@ struct UAnimSingleNodeInstance : UAnimInstance {
 };
 
 // Class Engine.AnimStreamable
-struct UAnimStreamable : UAnimSequenceBase {
+class UAnimStreamable : UAnimSequenceBase {
 	int32_t NumFrames; // 0xA8 (4)
 	enum class Unknow Interpolation; // 0xAC (1)
 	struct FName RetargetSource; // 0xB0 (8)
@@ -8091,12 +8091,12 @@ struct UAnimStreamable : UAnimSequenceBase {
 };
 
 // Class Engine.AssetExportTask
-struct UAssetExportTask : Object {
+class UAssetExportTask : Object {
 	struct Unknown Object; // 0x28 (8)
 	struct Unknown Exporter; // 0x30 (8)
 	struct FString Filename; // 0x38 (16)
 	char bSelected : 0; // 0x48 (1)
-	char b : 0; // 0x49 (1)
+	char bReplaceIdentical : 0; // 0x49 (1)
 	char bPrompt : 0; // 0x4A (1)
 	char bAutomated : 0; // 0x4B (1)
 	char bUseFileArchive : 0; // 0x4C (1)
@@ -8107,7 +8107,7 @@ struct UAssetExportTask : Object {
 };
 
 // Class Engine.AssetManagerSettings
-struct UAssetManagerSettings : UDeveloperSettings {
+class UAssetManagerSettings : UDeveloperSettings {
 	struct TArray<Unknown> PrimaryAssetTypesToScan; // 0x38 (16)
 	struct TArray<Unknown> DirectoriesToExclude; // 0x48 (16)
 	struct TArray<Unknown> PrimaryAssetRules; // 0x58 (16)
@@ -8121,16 +8121,16 @@ struct UAssetManagerSettings : UDeveloperSettings {
 	struct TArray<Unknown> AssetPathRedirects; // 0xA0 (16)
 	struct TSet<Unknown> MetaDataTagsForAssetRegistry; // 0xB0 (80)
 	char bUsePathExcludedFromScan : 0; // 0x100 (1)
-	char b : 0; // 0x101 (1)
+	char bRemoveRedundantDirectroyChunks : 0; // 0x101 (1)
 };
 
 // Class Engine.AssetMappingTable
-struct UAssetMappingTable : Object {
+class UAssetMappingTable : Object {
 	struct TArray<Unknown> MappedAssets; // 0x28 (16)
 };
 
 // Class Engine.AsyncActionHandleSaveGame
-struct UAsyncActionHandleSaveGame : UBlueprintAsyncActionBase {
+class UAsyncActionHandleSaveGame : UBlueprintAsyncActionBase {
 	struct FMulticastInlineDelegate Completed; // 0x30 (16)
 	struct Unknown SaveGameObject; // 0x60 (8)
 
@@ -8139,48 +8139,48 @@ struct UAsyncActionHandleSaveGame : UBlueprintAsyncActionBase {
 };
 
 // Class Engine.AsyncActionLoadPrimaryAsset
-struct UAsyncActionLoadPrimaryAsset : UAsyncActionLoadPrimaryAssetBase {
+class UAsyncActionLoadPrimaryAsset : UAsyncActionLoadPrimaryAssetBase {
 	struct FMulticastInlineDelegate Completed; // 0x78 (16)
 
 	struct Unknown AsyncLoadPrimaryAsset(struct Unknown WorldContextObject, struct Unknown PrimaryAsset, struct TArray<Unknown>& LoadBundles); // Function Engine.AsyncActionLoadPrimaryAsset.AsyncLoadPrimaryAsset(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C8C520>
 };
 
 // Class Engine.AsyncActionLoadPrimaryAssetClass
-struct UAsyncActionLoadPrimaryAssetClass : UAsyncActionLoadPrimaryAssetBase {
+class UAsyncActionLoadPrimaryAssetClass : UAsyncActionLoadPrimaryAssetBase {
 	struct FMulticastInlineDelegate Completed; // 0x78 (16)
 
 	struct Unknown AsyncLoadPrimaryAssetClass(struct Unknown WorldContextObject, struct Unknown PrimaryAsset, struct TArray<Unknown>& LoadBundles); // Function Engine.AsyncActionLoadPrimaryAssetClass.AsyncLoadPrimaryAssetClass(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C8C660>
 };
 
 // Class Engine.AsyncActionLoadPrimaryAssetList
-struct UAsyncActionLoadPrimaryAssetList : UAsyncActionLoadPrimaryAssetBase {
+class UAsyncActionLoadPrimaryAssetList : UAsyncActionLoadPrimaryAssetBase {
 	struct FMulticastInlineDelegate Completed; // 0x78 (16)
 
 	struct Unknown AsyncLoadPrimaryAssetList(struct Unknown WorldContextObject, struct TArray<Unknown>& PrimaryAssetList, struct TArray<Unknown>& LoadBundles); // Function Engine.AsyncActionLoadPrimaryAssetList.AsyncLoadPrimaryAssetList(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C8C900>
 };
 
 // Class Engine.AsyncActionLoadPrimaryAssetClassList
-struct UAsyncActionLoadPrimaryAssetClassList : UAsyncActionLoadPrimaryAssetBase {
+class UAsyncActionLoadPrimaryAssetClassList : UAsyncActionLoadPrimaryAssetBase {
 	struct FMulticastInlineDelegate Completed; // 0x78 (16)
 
 	struct Unknown AsyncLoadPrimaryAssetClassList(struct Unknown WorldContextObject, struct TArray<Unknown>& PrimaryAssetList, struct TArray<Unknown>& LoadBundles); // Function Engine.AsyncActionLoadPrimaryAssetClassList.AsyncLoadPrimaryAssetClassList(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C8C7A0>
 };
 
 // Class Engine.AsyncActionChangePrimaryAssetBundles
-struct UAsyncActionChangePrimaryAssetBundles : UAsyncActionLoadPrimaryAssetBase {
+class UAsyncActionChangePrimaryAssetBundles : UAsyncActionLoadPrimaryAssetBase {
 	struct FMulticastInlineDelegate Completed; // 0x78 (16)
 
-	struct Unknown AsyncChangeBundleStateFor(struct Unknown WorldContextObject, struct TArray<Unknown>& PrimaryAssetList, struct TArray<Unknown>& AddBundles, struct TArray<Unknown>& RemoveBundles); // Function Engine.AsyncActionChangePrimaryAssetBundles.AsyncChangeBundleStateFor(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C8C240>
+	struct Unknown AsyncChangeBundleStateForPrimaryAssetList(struct Unknown WorldContextObject, struct TArray<Unknown>& PrimaryAssetList, struct TArray<Unknown>& AddBundles, struct TArray<Unknown>& RemoveBundles); // Function Engine.AsyncActionChangePrimaryAssetBundles.AsyncChangeBundleStateForPrimaryAssetList(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C8C240>
 	struct Unknown AsyncChangeBundleStateForMatchingPrimaryAssets(struct Unknown WorldContextObject, struct TArray<Unknown>& NewBundles, struct TArray<Unknown>& OldBundles); // Function Engine.AsyncActionChangePrimaryAssetBundles.AsyncChangeBundleStateForMatchingPrimaryAssets(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C8C0E0>
 };
 
 // Class Engine.AtmosphericFog
-struct AAtmosphericFog : AInfo {
+class AAtmosphericFog : AInfo {
 	struct Unknown AtmosphericFogComponent; // 0x310 (8)
 };
 
 // Class Engine.AtmosphericFogComponent
-struct UAtmosphericFogComponent : USceneComponent {
+class UAtmosphericFogComponent : USceneComponent {
 	float SunMultiplier; // 0x238 (4)
 	float FogMultiplier; // 0x23C (4)
 	float DensityMultiplier; // 0x240 (4)
@@ -8194,7 +8194,7 @@ struct UAtmosphericFogComponent : USceneComponent {
 	float DefaultBrightness; // 0x260 (4)
 	struct Unknown DefaultLightColor; // 0x264 (4)
 	char bDisableSunDisk : 0; // 0x268 (1)
-	char bAtmosphereAffectsSunIlluminance : 0; // 0x268 (1)
+	char bAtmosphereAffectsSunIlluminanc : 0; // 0x268 (1)
 	char bDisableGroundScattering : 0; // 0x268 (1)
 	struct Unknown PrecomputeParams; // 0x26C (44)
 	struct Unknown TransmittanceTexture; // 0x298 (8)
@@ -8217,7 +8217,7 @@ struct UAtmosphericFogComponent : USceneComponent {
 };
 
 // Class Engine.AudioSettings
-struct UAudioSettings : UDeveloperSettings {
+class UAudioSettings : UDeveloperSettings {
 	struct Unknown DefaultSoundClassName; // 0x38 (24)
 	struct Unknown DefaultMediaSoundClassName; // 0x50 (24)
 	struct Unknown DefaultSoundConcurrencyName; // 0x68 (24)
@@ -8242,7 +8242,7 @@ struct UAudioSettings : UDeveloperSettings {
 };
 
 // Class Engine.AudioVolume
-struct AAudioVolume : AVolume {
+class AAudioVolume : AVolume {
 	float Priority; // 0x348 (4)
 	char bEnabled : 0; // 0x34C (1)
 	struct Unknown Settings; // 0x350 (32)
@@ -8256,14 +8256,14 @@ struct AAudioVolume : AVolume {
 };
 
 // Class Engine.AutoDestroySubsystem
-struct UAutoDestroySubsystem : UWorldSubsystem {
+class UAutoDestroySubsystem : UWorldSubsystem {
 	struct TArray<Unknown> ActorsToPoll; // 0x38 (16)
 
 	void OnActorEndPlay(struct Unknown Actor, char EndPlayReason); // Function Engine.AutoDestroySubsystem.OnActorEndPlay(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3C97220>
 };
 
 // Class Engine.AutomationTestSettings
-struct UAutomationTestSettings : Object {
+class UAutomationTestSettings : Object {
 	struct TArray<Unknown> EngineTestModules; // 0x28 (16)
 	struct TArray<Unknown> EditorTestModules; // 0x38 (16)
 	struct Unknown AutomationTestmap; // 0x48 (24)
@@ -8281,7 +8281,7 @@ struct UAutomationTestSettings : Object {
 };
 
 // Class Engine.AvoidanceManager
-struct UAvoidanceManager : Object {
+class UAvoidanceManager : Object {
 	float DefaultTimeToLive; // 0x30 (4)
 	float LockTimeAfterAvoid; // 0x34 (4)
 	float LockTimeAfterClean; // 0x38 (4)
@@ -8297,12 +8297,12 @@ struct UAvoidanceManager : Object {
 };
 
 // Class Engine.BandwidthTestActor
-struct ABandwidthTestActor : UActor {
+class ABandwidthTestActor : UActor {
 	struct Unknown BandwidthGenerator; // 0x310 (32)
 };
 
 // Class Engine.BillboardComponent
-struct UBillboardComponent : UPrimitiveComponent {
+class UBillboardComponent : UPrimitiveComponent {
 	struct Unknown Sprite; // 0x4B8 (8)
 	char bIsScreenSizeScaled : 0; // 0x4C0 (1)
 	float ScreenSize; // 0x4C4 (4)
@@ -8317,7 +8317,7 @@ struct UBillboardComponent : UPrimitiveComponent {
 };
 
 // Class Engine.Skeleton
-struct USkeleton : Object {
+class USkeleton : Object {
 	struct TArray<Unknown> BoneTree; // 0x38 (16)
 	struct TArray<Unknown> RefLocalPoses; // 0x48 (16)
 	struct Unknown VirtualBoneGuid; // 0x170 (16)
@@ -8330,13 +8330,13 @@ struct USkeleton : Object {
 };
 
 // Class Engine.BlendProfile
-struct UBlendProfile : Object {
+class UBlendProfile : Object {
 	struct Unknown OwningSkeleton; // 0x30 (8)
 	struct TArray<Unknown> ProfileEntries; // 0x38 (16)
 };
 
 // Class Engine.PlatformGameInstance
-struct UPlatformGameInstance : UGameInstance {
+class UPlatformGameInstance : UGameInstance {
 	struct FMulticastInlineDelegate ApplicationWillDeactivateDelegate; // 0x218 (16)
 	struct FMulticastInlineDelegate ApplicationHasReactivatedDelegate; // 0x228 (16)
 	struct FMulticastInlineDelegate ApplicationWillEnterBackgroundDelegate; // 0x238 (16)
@@ -8346,14 +8346,14 @@ struct UPlatformGameInstance : UGameInstance {
 	struct FMulticastInlineDelegate ApplicationReceivedStartupArgumentsDelegate; // 0x278 (16)
 	struct FMulticastInlineDelegate ApplicationRegisteredForRemoteNotificationsDelegate; // 0x288 (16)
 	struct FMulticastInlineDelegate ApplicationRegisteredForUserNotificationsDelegate; // 0x298 (16)
-	struct FMulticastInlineDelegate ApplicationFailedToRegister; // 0x2A8 (16)
+	struct FMulticastInlineDelegate ApplicationFailedToRegisterForRemoteNotificationsDelegate; // 0x2A8 (16)
 	struct FMulticastInlineDelegate ApplicationReceivedRemoteNotificationDelegate; // 0x2B8 (16)
-	struct FMulticastInlineDelegate ApplicationReceivedLocalNotificationDelegate; // 0x2C8 (16)
+	struct FMulticastInlineDelegate ApplicationReceivedLocalNotific; // 0x2C8 (16)
 	struct FMulticastInlineDelegate ApplicationReceivedScreenOrientationChangedNotificationDelegate; // 0x2D8 (16)
 };
 
 // Class Engine.BodySetup
-struct UBodySetup : Object {
+class UBodySetup : Object {
 	struct Unknown AggGeom; // 0x28 (88)
 	struct FName BoneName; // 0x80 (8)
 	char PhysicsType; // 0x88 (1)
@@ -8374,30 +8374,30 @@ struct UBodySetup : Object {
 };
 
 // Class Engine.BoneMaskFilter
-struct UBoneMaskFilter : Object {
+class UBoneMaskFilter : Object {
 	struct TArray<Unknown> BlendPoses; // 0x28 (16)
 };
 
 // Class Engine.BookMark
-struct UBookMark : UBookmarkBase {
+class UBookMark : UBookmarkBase {
 	struct Unknown Location; // 0x28 (12)
 	struct Unknown Rotation; // 0x34 (12)
 	struct TArray<Unknown> HiddenLevels; // 0x40 (16)
 };
 
 // Class Engine.BookMark2D
-struct UBookMark2D : UBookmarkBase {
+class UBookMark2D : UBookmarkBase {
 	float Zoom2D; // 0x28 (4)
 	struct Unknown Location; // 0x2C (8)
 };
 
 // Class Engine.ReflectionCapture
-struct AReflectionCapture : UActor {
+class AReflectionCapture : UActor {
 	struct Unknown CaptureComponent; // 0x310 (8)
 };
 
 // Class Engine.ReflectionCaptureComponent
-struct UReflectionCaptureComponent : USceneComponent {
+class UReflectionCaptureComponent : USceneComponent {
 	struct Unknown VisualizationMesh; // 0x238 (8)
 	struct Unknown CaptureOffsetComponent; // 0x240 (8)
 	enum class Unknow ReflectionSourceType; // 0x248 (1)
@@ -8410,14 +8410,14 @@ struct UReflectionCaptureComponent : USceneComponent {
 };
 
 // Class Engine.BoxReflectionCaptureComponent
-struct UBoxReflectionCaptureComponent : UReflectionCaptureComponent {
+class UBoxReflectionCaptureComponent : UReflectionCaptureComponent {
 	float BoxTransitionDistance; // 0x2C0 (4)
 	struct Unknown PreviewInfluenceBox; // 0x2C8 (8)
 	struct Unknown PreviewCaptureBox; // 0x2D0 (8)
 };
 
 // Class Engine.Breakpoint
-struct UBreakpoint : Object {
+class UBreakpoint : Object {
 	char bEnabled : 0; // 0x28 (1)
 	struct Unknown Node; // 0x30 (8)
 	char bStepOnce : 0; // 0x38 (1)
@@ -8426,7 +8426,7 @@ struct UBreakpoint : Object {
 };
 
 // Class Engine.BrushBuilder
-struct UBrushBuilder : Object {
+class UBrushBuilder : Object {
 	struct FString BitmapFilename; // 0x28 (16)
 	struct FString Tooltip; // 0x38 (16)
 	char NotifyBadParams : 0; // 0x48 (1)
@@ -8437,30 +8437,30 @@ struct UBrushBuilder : Object {
 };
 
 // Class Engine.BrushComponent
-struct UBrushComponent : UPrimitiveComponent {
+class UBrushComponent : UPrimitiveComponent {
 	struct Unknown Brush; // 0x4B8 (8)
 	struct Unknown BrushBodySetup; // 0x4C0 (8)
 };
 
 // Class Engine.ButtonStyleAsset
-struct UButtonStyleAsset : Object {
+class UButtonStyleAsset : Object {
 	struct Unknown ButtonStyle; // 0x28 (632)
 };
 
 // Class Engine.CameraAnim
-struct UCameraAnim : Object {
+class UCameraAnim : Object {
 	struct Unknown CameraInterpGroup; // 0x28 (8)
 	float AnimLength; // 0x30 (4)
 	struct Unknown BoundingBox; // 0x34 (28)
-	char b : 0; // 0x50 (1)
-	char b : 0; // 0x50 (1)
+	char bRelativeToInitialTransform : 0; // 0x50 (1)
+	char bRelativeToInitialFOV : 0; // 0x50 (1)
 	float BaseFOV; // 0x54 (4)
 	struct Unknown BasePostProcessSettings; // 0x60 (1472)
 	float BasePostProcessBlendWeight; // 0x620 (4)
 };
 
 // Class Engine.CameraAnimInst
-struct UCameraAnimInst : Object {
+class UCameraAnimInst : Object {
 	struct Unknown CamAnim; // 0x28 (8)
 	struct Unknown InterpGroupInst; // 0x30 (8)
 	float PlayRate; // 0x50 (4)
@@ -8474,14 +8474,14 @@ struct UCameraAnimInst : Object {
 };
 
 // Class Engine.CameraModifier_CameraShake
-struct UCameraModifier_CameraShake : UCameraModifier {
+class UCameraModifier_CameraShake : UCameraModifier {
 	struct TArray<Unknown> ActiveShakes; // 0x48 (16)
 	struct TMap<Unknown, Unknown>Unknown ExpiredPooledShakesMap; // 0x58 (80)
 	float SplitScreenShakeScale; // 0xA8 (4)
 };
 
 // Class Engine.CameraShake
-struct UCameraShake : Object {
+class UCameraShake : Object {
 	char bSingleInstance : 0; // 0x28 (1)
 	float OscillationDuration; // 0x2C (4)
 	float OscillationBlendInTime; // 0x30 (4)
@@ -8495,7 +8495,7 @@ struct UCameraShake : Object {
 	float AnimBlendOutTime; // 0x98 (4)
 	float RandomAnimSegmentDuration; // 0x9C (4)
 	struct Unknown Anim; // 0xA0 (8)
-	char b : 0; // 0xA8 (1)
+	char bRandomAnimSegment : 0; // 0xA8 (1)
 	struct Unknown CameraOwner; // 0xC0 (8)
 	float ShakeScale; // 0x148 (4)
 	float OscillatorTimeRemaining; // 0x14C (4)
@@ -8508,12 +8508,12 @@ struct UCameraShake : Object {
 };
 
 // Class Engine.CameraShakeSourceActor
-struct ACameraShakeSourceActor : UActor {
+class ACameraShakeSourceActor : UActor {
 	struct Unknown CameraShakeSourceComponent; // 0x310 (8)
 };
 
 // Class Engine.CameraShakeSourceComponent
-struct UCameraShakeSourceComponent : USceneComponent {
+class UCameraShakeSourceComponent : USceneComponent {
 	enum class Unknow Attenuation; // 0x238 (1)
 	float InnerAttenuationRadius; // 0x23C (4)
 	float OuterAttenuationRadius; // 0x240 (4)
@@ -8527,7 +8527,7 @@ struct UCameraShakeSourceComponent : USceneComponent {
 };
 
 // Class Engine.Canvas
-struct UCanvas : Object {
+class UCanvas : Object {
 	float OrgX; // 0x28 (4)
 	float OrgY; // 0x2C (4)
 	float ClipX; // 0x30 (4)
@@ -8559,12 +8559,12 @@ struct UCanvas : Object {
 };
 
 // Class Engine.TextureRenderTarget
-struct UTextureRenderTarget : UTexture {
+class UTextureRenderTarget : UTexture {
 	float TargetGamma; // 0xB8 (4)
 };
 
 // Class Engine.TextureRenderTarget2D
-struct UTextureRenderTarget2D : UTextureRenderTarget {
+class UTextureRenderTarget2D : UTextureRenderTarget {
 	int32_t SizeX; // 0xC0 (4)
 	int32_t SizeY; // 0xC4 (4)
 	struct Unknown ClearColor; // 0xC8 (16)
@@ -8582,7 +8582,7 @@ struct UTextureRenderTarget2D : UTextureRenderTarget {
 };
 
 // Class Engine.CanvasRenderTarget2D
-struct UCanvasRenderTarget2D : UTextureRenderTarget2D {
+class UCanvasRenderTarget2D : UTextureRenderTarget2D {
 	struct FMulticastInlineDelegate OnCanvasRenderTargetUpdate; // 0xE8 (16)
 	struct TWeakObjectPtr<struct Unknown> World; // 0xF8 (8)
 	char bShouldClearRenderTargetOnReceiveUpdate : 0; // 0x100 (1)
@@ -8594,7 +8594,7 @@ struct UCanvasRenderTarget2D : UTextureRenderTarget2D {
 };
 
 // Class Engine.ChaosPhysicalMaterial
-struct UChaosPhysicalMaterial : Object {
+class UChaosPhysicalMaterial : Object {
 	float Friction; // 0x28 (4)
 	float StaticFriction; // 0x2C (4)
 	float Restitution; // 0x30 (4)
@@ -8605,12 +8605,12 @@ struct UChaosPhysicalMaterial : Object {
 };
 
 // Class Engine.CheckBoxStyleAsset
-struct UCheckBoxStyleAsset : Object {
+class UCheckBoxStyleAsset : Object {
 	struct Unknown CheckBoxStyle; // 0x28 (1408)
 };
 
 // Class Engine.ChildActorComponent
-struct UChildActorComponent : USceneComponent {
+class UChildActorComponent : USceneComponent {
 	struct Unknown* ChildActorClass; // 0x238 (8)
 	struct Unknown ChildActor; // 0x240 (8)
 	struct Unknown ChildActorTemplate; // 0x248 (8)
@@ -8619,23 +8619,23 @@ struct UChildActorComponent : USceneComponent {
 };
 
 // Class Engine.ChildConnection
-struct UChildConnection : UNetConnection {
+class UChildConnection : UNetConnection {
 	struct Unknown Parent; // 0x1AA0 (8)
 };
 
 // Class Engine.PlatformInterfaceBase
-struct UPlatformInterfaceBase : Object {
+class UPlatformInterfaceBase : Object {
 	struct TArray<Unknown> AllDelegates; // 0x28 (16)
 };
 
 // Class Engine.CloudStorageBase
-struct UCloudStorageBase : UPlatformInterfaceBase {
+class UCloudStorageBase : UPlatformInterfaceBase {
 	struct TArray<Unknown> LocalCloudFiles; // 0x38 (16)
 	char bSuppressDelegateCalls : 0; // 0x48 (1)
 };
 
 // Class Engine.CollisionProfile
-struct UCollisionProfile : UDeveloperSettings {
+class UCollisionProfile : UDeveloperSettings {
 	struct TArray<Unknown> Profiles; // 0x38 (16)
 	struct TArray<Unknown> DefaultChannelResponses; // 0x48 (16)
 	struct TArray<Unknown> EditProfiles; // 0x58 (16)
@@ -8644,18 +8644,18 @@ struct UCollisionProfile : UDeveloperSettings {
 };
 
 // Class Engine.ComponentDelegateBinding
-struct UComponentDelegateBinding : UDynamicBlueprintBinding {
+class UComponentDelegateBinding : UDynamicBlueprintBinding {
 	struct TArray<Unknown> ComponentDelegateBindings; // 0x28 (16)
 };
 
 // Class Engine.CompositeCurveTable
-struct UCompositeCurveTable : UCurveTable {
+class UCompositeCurveTable : UCurveTable {
 	struct TArray<Unknown> ParentTables; // 0xA0 (16)
 	struct TArray<Unknown> OldParentTables; // 0xB0 (16)
 };
 
 // Class Engine.DataTable
-struct UDataTable : Object {
+class UDataTable : Object {
 	struct Unknown RowStruct; // 0x28 (8)
 	char bStripFromClientBuilds : 0; // 0x80 (1)
 	char bIgnoreExtraFields : 0; // 0x80 (1)
@@ -8664,13 +8664,13 @@ struct UDataTable : Object {
 };
 
 // Class Engine.CompositeDataTable
-struct UCompositeDataTable : UDataTable {
+class UCompositeDataTable : UDataTable {
 	struct TArray<Unknown> ParentTables; // 0xC8 (16)
 	struct TArray<Unknown> OldParentTables; // 0xD8 (16)
 };
 
 // Class Engine.Console
-struct UConsole : Object {
+class UConsole : Object {
 	struct Unknown ConsoleTargetPlayer; // 0x38 (8)
 	struct Unknown DefaultTexture_Black; // 0x40 (8)
 	struct Unknown DefaultTexture_White; // 0x48 (8)
@@ -8678,7 +8678,7 @@ struct UConsole : Object {
 };
 
 // Class Engine.StreamingSettings
-struct UStreamingSettings : UDeveloperSettings {
+class UStreamingSettings : UDeveloperSettings {
 	char AsyncLoadingThreadEnabled : 0; // 0x38 (1)
 	char AsyncPostLoadEnabled : 0; // 0x38 (1)
 	char WarnIfTimeLimitExceeded : 0; // 0x38 (1)
@@ -8699,7 +8699,7 @@ struct UStreamingSettings : UDeveloperSettings {
 };
 
 // Class Engine.GarbageCollectionSettings
-struct UGarbageCollectionSettings : UDeveloperSettings {
+class UGarbageCollectionSettings : UDeveloperSettings {
 	float TimeBetweenPurgingPendingKillObjects; // 0x38 (4)
 	char FlushStreamingOnGC : 0; // 0x3C (1)
 	char AllowParallelGC : 0; // 0x3C (1)
@@ -8719,13 +8719,13 @@ struct UGarbageCollectionSettings : UDeveloperSettings {
 };
 
 // Class Engine.CullDistanceVolume
-struct ACullDistanceVolume : AVolume {
+class ACullDistanceVolume : AVolume {
 	struct TArray<Unknown> CullDistances; // 0x348 (16)
 	char bEnabled : 0; // 0x358 (1)
 };
 
 // Class Engine.CurveFloat
-struct UCurveFloat : UCurveBase {
+class UCurveFloat : UCurveBase {
 	struct Unknown FloatCurve; // 0x30 (128)
 	char bIsEventCurve : 0; // 0xB0 (1)
 
@@ -8733,7 +8733,7 @@ struct UCurveFloat : UCurveBase {
 };
 
 // Class Engine.CurveLinearColor
-struct UCurveLinearColor : UCurveBase {
+class UCurveLinearColor : UCurveBase {
 	struct Unknown FloatCurves[0x4]; // 0x30 (512)
 	float AdjustHue; // 0x230 (4)
 	float AdjustSaturation; // 0x234 (4)
@@ -8748,7 +8748,7 @@ struct UCurveLinearColor : UCurveBase {
 };
 
 // Class Engine.Texture2D
-struct UTexture2D : UTexture {
+class UTexture2D : UTexture {
 	int32_t LevelIndex; // 0xB8 (4)
 	int32_t FirstResourceMemMip; // 0xBC (4)
 	char bTemporarilyDisableStreaming : 0; // 0xC0 (1)
@@ -8761,7 +8761,7 @@ struct UTexture2D : UTexture {
 };
 
 // Class Engine.CurveLinearColorAtlas
-struct UCurveLinearColorAtlas : UTexture2D {
+class UCurveLinearColorAtlas : UTexture2D {
 	uint32_t TextureSize; // 0xE8 (4)
 	struct TArray<Unknown> GradientCurves; // 0xF0 (16)
 
@@ -8769,14 +8769,14 @@ struct UCurveLinearColorAtlas : UTexture2D {
 };
 
 // Class Engine.CurveVector
-struct UCurveVector : UCurveBase {
+class UCurveVector : UCurveBase {
 	struct Unknown FloatCurves[0x3]; // 0x30 (384)
 
 	struct Unknown GetVectorValue(float InTime); // Function Engine.CurveVector.GetVectorValue(Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CC4FD0>
 };
 
 // Class Engine.DebugCameraController
-struct ADebugCameraController : APlayerController {
+class ADebugCameraController : APlayerController {
 	char bShowSelectedInfo : 0; // 0x6F0 (1)
 	char bIsFrozenRendering : 0; // 0x6F0 (1)
 	char bOverrideInitialMaxSpeed : 0; // 0x6F0 (1)
@@ -8808,12 +8808,12 @@ struct ADebugCameraController : APlayerController {
 };
 
 // Class Engine.DebugCameraControllerSettings
-struct UDebugCameraControllerSettings : UDeveloperSettings {
+class UDebugCameraControllerSettings : UDeveloperSettings {
 	struct TArray<Unknown> CycleViewModes; // 0x38 (16)
 };
 
 // Class Engine.DecalActor
-struct ADecalActor : UActor {
+class ADecalActor : UActor {
 	struct Unknown Decal; // 0x310 (8)
 
 	void SetDecalMaterial(struct Unknown NewDecalMaterial); // Function Engine.DecalActor.SetDecalMaterial(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CC8DE0>
@@ -8822,7 +8822,7 @@ struct ADecalActor : UActor {
 };
 
 // Class Engine.DecalComponent
-struct UDecalComponent : USceneComponent {
+class UDecalComponent : USceneComponent {
 	struct Unknown DecalMaterial; // 0x238 (8)
 	int32_t SortOrder; // 0x240 (4)
 	float FadeScreenSize; // 0x244 (4)
@@ -8847,23 +8847,23 @@ struct UDecalComponent : USceneComponent {
 };
 
 // Class Engine.MKDemoNetConnectionEx
-struct UMKDemoNetConnectionEx : UNetConnection {
+class UMKDemoNetConnectionEx : UNetConnection {
 	struct Unknown SelfDemoNetConnection; // 0x1BE8 (8)
 };
 
 // Class Engine.PendingNetGame
-struct UPendingNetGame : Object {
+class UPendingNetGame : Object {
 	struct Unknown NetDriver; // 0x30 (8)
 	struct Unknown DemoNetDriver; // 0x38 (8)
 };
 
 // Class Engine.TextureLODSettings
-struct UTextureLODSettings : Object {
+class UTextureLODSettings : Object {
 	struct TArray<Unknown> TextureLODGroups; // 0x28 (16)
 };
 
 // Class Engine.DeviceProfile
-struct UDeviceProfile : UTextureLODSettings {
+class UDeviceProfile : UTextureLODSettings {
 	struct FString DeviceType; // 0x38 (16)
 	struct FString BaseProfileName; // 0x48 (16)
 	struct Unknown Parent; // 0x58 (8)
@@ -8871,19 +8871,19 @@ struct UDeviceProfile : UTextureLODSettings {
 };
 
 // Class Engine.DeviceProfileManager
-struct UDeviceProfileManager : Object {
+class UDeviceProfileManager : Object {
 	struct TArray<Unknown> Profiles; // 0x28 (16)
 };
 
 // Class Engine.DialogueVoice
-struct UDialogueVoice : Object {
+class UDialogueVoice : Object {
 	enum class Unknown gender; // 0x28 (1)
 	char Plurality; // 0x29 (1)
 	struct Unknown LocalizationGUID; // 0x2C (16)
 };
 
 // Class Engine.DialogueWave
-struct UDialogueWave : Object {
+class UDialogueWave : Object {
 	char bMature : 0; // 0x28 (1)
 	char bOverride_SubtitleOverride : 0; // 0x28 (1)
 	struct FString SpokenText; // 0x30 (16)
@@ -8893,7 +8893,7 @@ struct UDialogueWave : Object {
 };
 
 // Class Engine.Light
-struct ALight : UActor {
+class ALight : UActor {
 	struct Unknown LightComponent; // 0x310 (8)
 	char bEnabled : 0; // 0x318 (1)
 
@@ -8913,7 +8913,7 @@ struct ALight : UActor {
 };
 
 // Class Engine.LightComponentBase
-struct ULightComponentBase : USceneComponent {
+class ULightComponentBase : USceneComponent {
 	struct Unknown LightGuid; // 0x238 (16)
 	float Brightness; // 0x248 (4)
 	float Intensity; // 0x24C (4)
@@ -8946,7 +8946,7 @@ struct ULightComponentBase : USceneComponent {
 };
 
 // Class Engine.LightComponent
-struct ULightComponent : ULightComponentBase {
+class ULightComponent : ULightComponentBase {
 	float Temperature; // 0x270 (4)
 	float MaxDrawDistance; // 0x274 (4)
 	float MaxDistanceFadeRange; // 0x278 (4)
@@ -9016,7 +9016,7 @@ struct ULightComponent : ULightComponentBase {
 };
 
 // Class Engine.DirectionalLightComponent
-struct UDirectionalLightComponent : ULightComponent {
+class UDirectionalLightComponent : ULightComponent {
 	float ShadowCascadeBiasDistribution; // 0x380 (4)
 	char bEnableLightShaftOcclusion : 0; // 0x384 (1)
 	float OcclusionMaskDarkness; // 0x388 (4)
@@ -9029,7 +9029,7 @@ struct UDirectionalLightComponent : ULightComponent {
 	float CascadeDistributionExponent; // 0x3AC (4)
 	float CascadeTransitionFraction; // 0x3B0 (4)
 	float ShadowDistanceFadeoutFraction; // 0x3B4 (4)
-	char bUseInsetShadowsForMovableObjects : 0; // 0x3B8 (1)
+	char bUseInsetShadowsForMovableObjec : 0; // 0x3B8 (1)
 	int32_t FarShadowCascadeCount; // 0x3BC (4)
 	float FarShadowDistance; // 0x3C0 (4)
 	char bUseFarShadowAsStaticWorldShadow : 0; // 0x3C4 (1)
@@ -9057,23 +9057,23 @@ struct UDirectionalLightComponent : ULightComponent {
 };
 
 // Class Engine.DistributionFloat
-struct UDistributionFloat : UDistribution {
+class UDistributionFloat : UDistribution {
 	char bCanBeBaked : 0; // 0x30 (1)
 	char bBakedDataSuccesfully : 0; // 0x30 (1)
 };
 
 // Class Engine.DistributionFloatConstant
-struct UDistributionFloatConstant : UDistributionFloat {
+class UDistributionFloatConstant : UDistributionFloat {
 	float Constant; // 0x38 (4)
 };
 
 // Class Engine.DistributionFloatConstantCurve
-struct UDistributionFloatConstantCurve : UDistributionFloat {
+class UDistributionFloatConstantCurve : UDistributionFloat {
 	struct Unknown ConstantCurve; // 0x38 (24)
 };
 
 // Class Engine.DistributionFloatParameterBase
-struct UDistributionFloatParameterBase : UDistributionFloatConstant {
+class UDistributionFloatParameterBase : UDistributionFloatConstant {
 	struct FName ParameterName; // 0x40 (8)
 	float MinInput; // 0x48 (4)
 	float MaxInput; // 0x4C (4)
@@ -9083,39 +9083,39 @@ struct UDistributionFloatParameterBase : UDistributionFloatConstant {
 };
 
 // Class Engine.DistributionFloatUniform
-struct UDistributionFloatUniform : UDistributionFloat {
+class UDistributionFloatUniform : UDistributionFloat {
 	float Min; // 0x38 (4)
 	float MAX; // 0x3C (4)
 };
 
 // Class Engine.DistributionFloatUniformCurve
-struct UDistributionFloatUniformCurve : UDistributionFloat {
+class UDistributionFloatUniformCurve : UDistributionFloat {
 	struct Unknown ConstantCurve; // 0x38 (24)
 };
 
 // Class Engine.DistributionVector
-struct UDistributionVector : UDistribution {
+class UDistributionVector : UDistribution {
 	char bCanBeBaked : 0; // 0x30 (1)
 	char bIsDirty : 0; // 0x30 (1)
 	char bBakedDataSuccesfully : 0; // 0x30 (1)
 };
 
 // Class Engine.DistributionVectorConstant
-struct UDistributionVectorConstant : UDistributionVector {
+class UDistributionVectorConstant : UDistributionVector {
 	struct Unknown Constant; // 0x38 (12)
 	char bLockAxes : 0; // 0x44 (1)
 	char LockedAxes; // 0x48 (1)
 };
 
 // Class Engine.DistributionVectorConstantCurve
-struct UDistributionVectorConstantCurve : UDistributionVector {
+class UDistributionVectorConstantCurve : UDistributionVector {
 	struct Unknown ConstantCurve; // 0x38 (24)
 	char bLockAxes : 0; // 0x50 (1)
 	char LockedAxes; // 0x54 (1)
 };
 
 // Class Engine.DistributionVectorParameterBase
-struct UDistributionVectorParameterBase : UDistributionVectorConstant {
+class UDistributionVectorParameterBase : UDistributionVectorConstant {
 	struct FName ParameterName; // 0x50 (8)
 	struct Unknown MinInput; // 0x58 (12)
 	struct Unknown MaxInput; // 0x64 (12)
@@ -9125,7 +9125,7 @@ struct UDistributionVectorParameterBase : UDistributionVectorConstant {
 };
 
 // Class Engine.DistributionVectorUniform
-struct UDistributionVectorUniform : UDistributionVector {
+class UDistributionVectorUniform : UDistributionVector {
 	struct Unknown MAX; // 0x38 (12)
 	struct Unknown Min; // 0x44 (12)
 	char bLockAxes : 0; // 0x50 (1)
@@ -9135,7 +9135,7 @@ struct UDistributionVectorUniform : UDistributionVector {
 };
 
 // Class Engine.DistributionVectorUniformCurve
-struct UDistributionVectorUniformCurve : UDistributionVector {
+class UDistributionVectorUniformCurve : UDistributionVector {
 	struct Unknown ConstantCurve; // 0x38 (24)
 	char bLockAxes1 : 0; // 0x50 (1)
 	char bLockAxes2 : 0; // 0x50 (1)
@@ -9145,7 +9145,7 @@ struct UDistributionVectorUniformCurve : UDistributionVector {
 };
 
 // Class Engine.DrawFrustumComponent
-struct UDrawFrustumComponent : UPrimitiveComponent {
+class UDrawFrustumComponent : UPrimitiveComponent {
 	struct Unknown FrustumColor; // 0x4B8 (4)
 	float FrustumAngle; // 0x4BC (4)
 	float FrustumAspectRatio; // 0x4C0 (4)
@@ -9155,7 +9155,7 @@ struct UDrawFrustumComponent : UPrimitiveComponent {
 };
 
 // Class Engine.SphereComponent
-struct USphereComponent : UShapeComponent {
+class USphereComponent : UShapeComponent {
 	float SphereRadius; // 0x4D0 (4)
 
 	void SetSphereRadius(float InSphereRadius, char bUpdateOverlaps); // Function Engine.SphereComponent.SetSphereRadius(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3E10F30>
@@ -9165,7 +9165,7 @@ struct USphereComponent : UShapeComponent {
 };
 
 // Class Engine.EdGraph
-struct UEdGraph : Object {
+class UEdGraph : Object {
 	struct Unknown* Schema; // 0x28 (8)
 	struct TArray<Unknown> Nodes; // 0x30 (16)
 	char bEditable : 0; // 0x40 (1)
@@ -9174,7 +9174,7 @@ struct UEdGraph : Object {
 };
 
 // Class Engine.GraphNodeContextMenuContext
-struct UGraphNodeContextMenuContext : Object {
+class UGraphNodeContextMenuContext : Object {
 	struct Unknown Blueprint; // 0x28 (8)
 	struct Unknown Graph; // 0x30 (8)
 	struct Unknown Node; // 0x38 (8)
@@ -9182,7 +9182,7 @@ struct UGraphNodeContextMenuContext : Object {
 };
 
 // Class Engine.EdGraphNode
-struct UEdGraphNode : Object {
+class UEdGraphNode : Object {
 	struct TArray<Unknown> DeprecatedPins; // 0x38 (16)
 	int32_t NodePosX; // 0x48 (4)
 	int32_t NodePosY; // 0x4C (4)
@@ -9201,13 +9201,13 @@ struct UEdGraphNode : Object {
 };
 
 // Class Engine.EdGraphNode_Documentation
-struct UEdGraphNode_Documentation : UEdGraphNode {
+class UEdGraphNode_Documentation : UEdGraphNode {
 	struct FString Link; // 0x98 (16)
 	struct FString Excerpt; // 0xA8 (16)
 };
 
 // Class Engine.EdGraphPin_Deprecated
-struct UEdGraphPin_Deprecated : Object {
+class UEdGraphPin_Deprecated : Object {
 	struct FString PinName; // 0x28 (16)
 	struct FString PinToolTip; // 0x38 (16)
 	char Direction; // 0x48 (1)
@@ -9223,7 +9223,7 @@ struct UEdGraphPin_Deprecated : Object {
 };
 
 // Class Engine.Emitter
-struct AEmitter : UActor {
+class AEmitter : UActor {
 	struct Unknown ParticleSystemComponent; // 0x310 (8)
 	char bDestroyOnSystemFinish : 0; // 0x318 (1)
 	char bPostUpdateTickGroup : 0; // 0x318 (1)
@@ -9248,20 +9248,20 @@ struct AEmitter : UActor {
 };
 
 // Class Engine.EmitterCameraLensEffectBase
-struct AEmitterCameraLensEffectBase : AEmitter {
+class AEmitterCameraLensEffectBase : AEmitter {
 	struct Unknown PS_CameraEffect; // 0x360 (8)
 	struct Unknown PS_CameraEffectNonExtremeContent; // 0x368 (8)
 	struct Unknown BaseCamera; // 0x370 (8)
 	struct Unknown RelativeTransform; // 0x380 (48)
 	float BaseFOV; // 0x3B0 (4)
 	char bAllowMultipleInstances : 0; // 0x3B4 (1)
-	char b : 0; // 0x3B4 (1)
+	char bResetWhenRetriggered : 0; // 0x3B4 (1)
 	struct TArray<Unknown> EmittersToTreatAsSame; // 0x3B8 (16)
 	float DistFromCamera; // 0x3C8 (4)
 };
 
 // Class Engine.EngineMessage
-struct UEngineMessage : ULocalMessage {
+class UEngineMessage : ULocalMessage {
 	struct FString FailedPlaceMessage; // 0x28 (16)
 	struct FString MaxedOutMessage; // 0x38 (16)
 	struct FString EnteredMessage; // 0x48 (16)
@@ -9273,7 +9273,7 @@ struct UEngineMessage : ULocalMessage {
 };
 
 // Class Engine.ExponentialHeightFog
-struct AExponentialHeightFog : AInfo {
+class AExponentialHeightFog : AInfo {
 	struct Unknown Component; // 0x310 (8)
 	char bEnabled : 0; // 0x318 (1)
 
@@ -9281,7 +9281,7 @@ struct AExponentialHeightFog : AInfo {
 };
 
 // Class Engine.ExponentialHeightFogComponent
-struct UExponentialHeightFogComponent : USceneComponent {
+class UExponentialHeightFogComponent : USceneComponent {
 	float FogDensity; // 0x238 (4)
 	float FogHeightFalloff; // 0x23C (4)
 	struct Unknown SecondFogData; // 0x240 (12)
@@ -9304,7 +9304,7 @@ struct UExponentialHeightFogComponent : USceneComponent {
 	float VolumetricFogExtinctionScale; // 0x2C4 (4)
 	float VolumetricFogDistance; // 0x2C8 (4)
 	float VolumetricFogStaticLightingScatteringIntensity; // 0x2CC (4)
-	char bOverrideLightColorsWithFogInscatteringColors : 0; // 0x2D0 (1)
+	char bOverrideLightColorsWithFogInsc : 0; // 0x2D0 (1)
 
 	void SetVolumetricFogScatteringDistribution(float NewValue); // Function Engine.ExponentialHeightFogComponent.SetVolumetricFogScatteringDistribution(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CE3DA0>
 	void SetVolumetricFogExtinctionScale(float NewValue); // Function Engine.ExponentialHeightFogComponent.SetVolumetricFogExtinctionScale(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CE3D20>
@@ -9329,7 +9329,7 @@ struct UExponentialHeightFogComponent : USceneComponent {
 };
 
 // Class Engine.FloatingPawnMovement
-struct UFloatingPawnMovement : UPawnMovementComponent {
+class UFloatingPawnMovement : UPawnMovementComponent {
 	float MaxSpeed; // 0x138 (4)
 	float Acceleration; // 0x13C (4)
 	float Deceleration; // 0x140 (4)
@@ -9338,7 +9338,7 @@ struct UFloatingPawnMovement : UPawnMovementComponent {
 };
 
 // Class Engine.Font
-struct UFont : Object {
+class UFont : Object {
 	enum class Unknow FontCacheType; // 0x30 (1)
 	struct TArray<Unknown> Characters; // 0x38 (16)
 	struct TArray<Unknown> Textures; // 0x48 (16)
@@ -9358,7 +9358,7 @@ struct UFont : Object {
 };
 
 // Class Engine.FontFace
-struct UFontFace : Object {
+class UFontFace : Object {
 	struct FString SourceFilename; // 0x30 (16)
 	enum class Unknow Hinting; // 0x40 (1)
 	enum class Unknow LoadingPolicy; // 0x41 (1)
@@ -9366,17 +9366,17 @@ struct UFontFace : Object {
 };
 
 // Class Engine.FontImportOptions
-struct UFontImportOptions : Object {
+class UFontImportOptions : Object {
 	struct Unknown Data; // 0x28 (176)
 };
 
 // Class Engine.ForceFeedbackAttenuation
-struct UForceFeedbackAttenuation : Object {
+class UForceFeedbackAttenuation : Object {
 	struct Unknown Attenuation; // 0x28 (176)
 };
 
 // Class Engine.ForceFeedbackComponent
-struct UForceFeedbackComponent : USceneComponent {
+class UForceFeedbackComponent : USceneComponent {
 	struct Unknown ForceFeedbackEffect; // 0x238 (8)
 	char bAutoDestroy : 0; // 0x240 (1)
 	char bStopWhenOwnerDestroyed : 0; // 0x240 (1)
@@ -9397,13 +9397,13 @@ struct UForceFeedbackComponent : USceneComponent {
 };
 
 // Class Engine.ForceFeedbackEffect
-struct UForceFeedbackEffect : Object {
+class UForceFeedbackEffect : Object {
 	struct TArray<Unknown> ChannelDetails; // 0x28 (16)
 	float Duration; // 0x38 (4)
 };
 
 // Class Engine.GameNetworkManager
-struct AGameNetworkManager : AInfo {
+class AGameNetworkManager : AInfo {
 	float BadPacketLossThreshold; // 0x310 (4)
 	float SeverePacketLossThreshold; // 0x314 (4)
 	int32_t BadPingThreshold; // 0x318 (4)
@@ -9451,7 +9451,7 @@ struct AGameNetworkManager : AInfo {
 };
 
 // Class Engine.SpotLight
-struct ASpotLight : ALight {
+class ASpotLight : ALight {
 	struct Unknown SpotLightComponent; // 0x320 (8)
 
 	void SetOuterConeAngle(float NewOuterConeAngle); // Function Engine.SpotLight.SetOuterConeAngle(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3E15CE0>
@@ -9459,56 +9459,56 @@ struct ASpotLight : ALight {
 };
 
 // Class Engine.HapticFeedbackEffect_Buffer
-struct UHapticFeedbackEffect_Buffer : UHapticFeedbackEffect_Base {
+class UHapticFeedbackEffect_Buffer : UHapticFeedbackEffect_Base {
 	struct TArray<Unknown> Amplitudes; // 0x28 (16)
 	int32_t SampleRate; // 0x38 (4)
 };
 
 // Class Engine.HapticFeedbackEffect_Curve
-struct UHapticFeedbackEffect_Curve : UHapticFeedbackEffect_Base {
+class UHapticFeedbackEffect_Curve : UHapticFeedbackEffect_Base {
 	struct Unknown HapticDetails; // 0x28 (272)
 };
 
 // Class Engine.HapticFeedbackEffect_SoundWave
-struct UHapticFeedbackEffect_SoundWave : UHapticFeedbackEffect_Base {
+class UHapticFeedbackEffect_SoundWave : UHapticFeedbackEffect_Base {
 	struct Unknown SoundWave; // 0x28 (8)
 };
 
 // Class Engine.HLODProxy
-struct UHLODProxy : Object {
+class UHLODProxy : Object {
 	struct TArray<Unknown> ProxyMeshes; // 0x28 (16)
 };
 
 // Class Engine.InGameAdManager
-struct UInGameAdManager : UPlatformInterfaceBase {
+class UInGameAdManager : UPlatformInterfaceBase {
 	char bShouldPauseWhileAdOpen : 0; // 0x38 (1)
 	struct TArray<Unknown> ClickedBannerDelegates; // 0x40 (16)
 	struct TArray<Unknown> ClosedAdDelegates; // 0x50 (16)
 };
 
 // Class Engine.InheritableComponentHandler
-struct UInheritableComponentHandler : Object {
+class UInheritableComponentHandler : Object {
 	struct TArray<Unknown> Records; // 0x28 (16)
 	struct TArray<Unknown> UnnecessaryComponents; // 0x38 (16)
 };
 
 // Class Engine.InputActionDelegateBinding
-struct UInputActionDelegateBinding : UInputDelegateBinding {
+class UInputActionDelegateBinding : UInputDelegateBinding {
 	struct TArray<Unknown> InputActionDelegateBindings; // 0x28 (16)
 };
 
 // Class Engine.InputAxisDelegateBinding
-struct UInputAxisDelegateBinding : UInputDelegateBinding {
+class UInputAxisDelegateBinding : UInputDelegateBinding {
 	struct TArray<Unknown> InputAxisDelegateBindings; // 0x28 (16)
 };
 
 // Class Engine.InputAxisKeyDelegateBinding
-struct UInputAxisKeyDelegateBinding : UInputDelegateBinding {
+class UInputAxisKeyDelegateBinding : UInputDelegateBinding {
 	struct TArray<Unknown> InputAxisKeyDelegateBindings; // 0x28 (16)
 };
 
 // Class Engine.InputComponent
-struct UInputComponent : UActorComponent {
+class UInputComponent : UActorComponent {
 	struct TArray<Unknown> CachedKeyToActionInfo; // 0x120 (16)
 
 	char WasControllerKeyJustReleased(struct Unknown Key); // Function Engine.InputComponent.WasControllerKeyJustReleased(Final|Native|Private|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3D02480>
@@ -9523,12 +9523,12 @@ struct UInputComponent : UActorComponent {
 };
 
 // Class Engine.InputKeyDelegateBinding
-struct UInputKeyDelegateBinding : UInputDelegateBinding {
+class UInputKeyDelegateBinding : UInputDelegateBinding {
 	struct TArray<Unknown> InputKeyDelegateBindings; // 0x28 (16)
 };
 
 // Class Engine.InputSettings
-struct UInputSettings : Object {
+class UInputSettings : Object {
 	struct TArray<Unknown> AxisConfig; // 0x28 (16)
 	char bAltEnterTogglesFullscreen : 0; // 0x38 (1)
 	char bF11TogglesFullscreen : 0; // 0x38 (1)
@@ -9569,29 +9569,29 @@ struct UInputSettings : Object {
 };
 
 // Class Engine.InputTouchDelegateBinding
-struct UInputTouchDelegateBinding : UInputDelegateBinding {
+class UInputTouchDelegateBinding : UInputDelegateBinding {
 	struct TArray<Unknown> InputTouchDelegateBindings; // 0x28 (16)
 };
 
 // Class Engine.InstancedCollisionComponent
-struct UInstancedCollisionComponent : UActorComponent {
+class UInstancedCollisionComponent : UActorComponent {
 	struct TArray<Unknown> StaticMeshComponents; // 0xB0 (16)
 	struct Unknown StaticMeshComponent; // 0xD0 (8)
 };
 
 // Class Engine.InstancedStaticCollisionActor
-struct AInstancedStaticCollisionActor : UActor {
+class AInstancedStaticCollisionActor : UActor {
 	struct TMap<Unknown, Unknown>Unknown InstancedCollisionComponentMap; // 0x310 (80)
 };
 
 // Class Engine.InterpCurveEdSetup
-struct UInterpCurveEdSetup : Object {
+class UInterpCurveEdSetup : Object {
 	struct TArray<Unknown> Tabs; // 0x28 (16)
 	int32_t ActiveTab; // 0x38 (4)
 };
 
 // Class Engine.InterpData
-struct UInterpData : Object {
+class UInterpData : Object {
 	float InterpLength; // 0x28 (4)
 	float PathBuildTime; // 0x2C (4)
 	struct TArray<Unknown> InterpGroups; // 0x30 (16)
@@ -9604,12 +9604,12 @@ struct UInterpData : Object {
 };
 
 // Class Engine.InterpFilter
-struct UInterpFilter : Object {
+class UInterpFilter : Object {
 	struct FString Caption; // 0x28 (16)
 };
 
 // Class Engine.InterpGroup
-struct UInterpGroup : Object {
+class UInterpGroup : Object {
 	struct TArray<Unknown> InterpTracks; // 0x30 (16)
 	struct FName GroupName; // 0x40 (8)
 	struct Unknown GroupColor; // 0x48 (4)
@@ -9621,20 +9621,20 @@ struct UInterpGroup : Object {
 };
 
 // Class Engine.InterpGroupCamera
-struct UInterpGroupCamera : UInterpGroup {
+class UInterpGroupCamera : UInterpGroup {
 	struct Unknown CameraAnimInst; // 0x50 (8)
 	float CompressTolerance; // 0x58 (4)
 };
 
 // Class Engine.InterpGroupInst
-struct UInterpGroupInst : Object {
+class UInterpGroupInst : Object {
 	struct Unknown Group; // 0x28 (8)
 	struct Unknown GroupActor; // 0x30 (8)
 	struct TArray<Unknown> TrackInst; // 0x38 (16)
 };
 
 // Class Engine.InterpToMovementComponent
-struct UInterpToMovementComponent : UMovementComponent {
+class UInterpToMovementComponent : UMovementComponent {
 	float Duration; // 0xF0 (4)
 	char bPauseOnImpact : 0; // 0xF4 (1)
 	char bSweep : 0; // 0xF8 (1)
@@ -9662,31 +9662,31 @@ struct UInterpToMovementComponent : UMovementComponent {
 };
 
 // Class Engine.InterpTrackAnimControl
-struct UInterpTrackAnimControl : UInterpTrackFloatBase {
+class UInterpTrackAnimControl : UInterpTrackFloatBase {
 	struct FName SlotName; // 0x90 (8)
 	struct TArray<Unknown> AnimSeqs; // 0x98 (16)
 	char bSkipAnimNotifiers : 0; // 0xA8 (1)
 };
 
 // Class Engine.InterpTrackBoolProp
-struct UInterpTrackBoolProp : UInterpTrack {
+class UInterpTrackBoolProp : UInterpTrack {
 	struct TArray<Unknown> BoolTrack; // 0x70 (16)
 	struct FName PropertyName; // 0x80 (8)
 };
 
 // Class Engine.InterpTrackColorProp
-struct UInterpTrackColorProp : UInterpTrackVectorBase {
+class UInterpTrackColorProp : UInterpTrackVectorBase {
 	struct FName PropertyName; // 0x90 (8)
 };
 
 // Class Engine.InterpTrackDirector
-struct UInterpTrackDirector : UInterpTrack {
+class UInterpTrackDirector : UInterpTrack {
 	struct TArray<Unknown> CutTrack; // 0x70 (16)
 	char bSimulateCameraCutsOnClients : 0; // 0x80 (1)
 };
 
 // Class Engine.InterpTrackEvent
-struct UInterpTrackEvent : UInterpTrack {
+class UInterpTrackEvent : UInterpTrack {
 	struct TArray<Unknown> EventTrack; // 0x70 (16)
 	char bFireEventsWhenForwards : 0; // 0x80 (1)
 	char bFireEventsWhenBackwards : 0; // 0x80 (1)
@@ -9695,74 +9695,74 @@ struct UInterpTrackEvent : UInterpTrack {
 };
 
 // Class Engine.InterpTrackFade
-struct UInterpTrackFade : UInterpTrackFloatBase {
+class UInterpTrackFade : UInterpTrackFloatBase {
 	char bPersistFade : 0; // 0x90 (1)
 	char bFadeAudio : 0; // 0x90 (1)
 	struct Unknown FadeColor; // 0x94 (16)
 };
 
 // Class Engine.InterpTrackFloatAnimBPParam
-struct UInterpTrackFloatAnimBPParam : UInterpTrackFloatBase {
+class UInterpTrackFloatAnimBPParam : UInterpTrackFloatBase {
 	struct Unknown* AnimBlueprintClass; // 0x90 (8)
 	struct Unknown* AnimClass; // 0x98 (8)
 	struct FName ParamName; // 0xA0 (8)
 };
 
 // Class Engine.InterpTrackFloatMaterialParam
-struct UInterpTrackFloatMaterialParam : UInterpTrackFloatBase {
+class UInterpTrackFloatMaterialParam : UInterpTrackFloatBase {
 	struct TArray<Unknown> TargetMaterials; // 0x90 (16)
 	struct FName ParamName; // 0xA0 (8)
 };
 
 // Class Engine.InterpTrackFloatParticleParam
-struct UInterpTrackFloatParticleParam : UInterpTrackFloatBase {
+class UInterpTrackFloatParticleParam : UInterpTrackFloatBase {
 	struct FName ParamName; // 0x90 (8)
 };
 
 // Class Engine.InterpTrackFloatProp
-struct UInterpTrackFloatProp : UInterpTrackFloatBase {
+class UInterpTrackFloatProp : UInterpTrackFloatBase {
 	struct FName PropertyName; // 0x90 (8)
 };
 
 // Class Engine.InterpTrackInstAnimControl
-struct UInterpTrackInstAnimControl : UInterpTrackInst {
+class UInterpTrackInstAnimControl : UInterpTrackInst {
 	float LastUpdatePosition; // 0x28 (4)
 };
 
 // Class Engine.InterpTrackInstProperty
-struct UInterpTrackInstProperty : UInterpTrackInst {
+class UInterpTrackInstProperty : UInterpTrackInst {
 	struct TFieldPath<FUnknown> InterpProperty; // 0x28 (32)
 	struct Unknown PropertyOuterObjectInst; // 0x48 (8)
 };
 
 // Class Engine.InterpTrackInstBoolProp
-struct UInterpTrackInstBoolProp : UInterpTrackInstProperty {
+class UInterpTrackInstBoolProp : UInterpTrackInstProperty {
 	char ResetBool : 0; // 0x60 (1)
 };
 
 // Class Engine.InterpTrackInstColorProp
-struct UInterpTrackInstColorProp : UInterpTrackInstProperty {
+class UInterpTrackInstColorProp : UInterpTrackInstProperty {
 	struct Unknown ResetColor; // 0x58 (4)
 };
 
 // Class Engine.InterpTrackInstDirector
-struct UInterpTrackInstDirector : UInterpTrackInst {
+class UInterpTrackInstDirector : UInterpTrackInst {
 	struct Unknown OldViewTarget; // 0x28 (8)
 };
 
 // Class Engine.InterpTrackInstEvent
-struct UInterpTrackInstEvent : UInterpTrackInst {
+class UInterpTrackInstEvent : UInterpTrackInst {
 	float LastUpdatePosition; // 0x28 (4)
 };
 
-// Class Engine.InterpTrackInstFloatAnimB
-struct UInterpTrackInstFloatAnimBPParam : UInterpTrackInst {
+// Class Engine.InterpTrackInstFloatAnimBPParam
+class UInterpTrackInstFloatAnimBPParam : UInterpTrackInst {
 	struct Unknown AnimScriptInstance; // 0x28 (8)
 	float ResetFloat; // 0x30 (4)
 };
 
 // Class Engine.InterpTrackInstFloatMaterialParam
-struct UInterpTrackInstFloatMaterialParam : UInterpTrackInst {
+class UInterpTrackInstFloatMaterialParam : UInterpTrackInst {
 	struct TArray<Unknown> MaterialInstances; // 0x28 (16)
 	struct TArray<Unknown> ResetFloats; // 0x38 (16)
 	struct TArray<Unknown> PrimitiveMaterialRefs; // 0x48 (16)
@@ -9770,51 +9770,51 @@ struct UInterpTrackInstFloatMaterialParam : UInterpTrackInst {
 };
 
 // Class Engine.InterpTrackInstFloatParticleParam
-struct UInterpTrackInstFloatParticleParam : UInterpTrackInst {
+class UInterpTrackInstFloatParticleParam : UInterpTrackInst {
 	float ResetFloat; // 0x28 (4)
 };
 
 // Class Engine.InterpTrackInstFloatProp
-struct UInterpTrackInstFloatProp : UInterpTrackInstProperty {
+class UInterpTrackInstFloatProp : UInterpTrackInstProperty {
 	float ResetFloat; // 0x58 (4)
 };
 
 // Class Engine.InterpTrackInstLinearColorProp
-struct UInterpTrackInstLinearColorProp : UInterpTrackInstProperty {
+class UInterpTrackInstLinearColorProp : UInterpTrackInstProperty {
 	struct Unknown ResetColor; // 0x58 (16)
 };
 
 // Class Engine.InterpTrackInstMove
-struct UInterpTrackInstMove : UInterpTrackInst {
+class UInterpTrackInstMove : UInterpTrackInst {
 	struct Unknown ResetLocation; // 0x28 (12)
 	struct Unknown ResetRotation; // 0x34 (12)
 };
 
 // Class Engine.InterpTrackInstParticleReplay
-struct UInterpTrackInstParticleReplay : UInterpTrackInst {
+class UInterpTrackInstParticleReplay : UInterpTrackInst {
 	float LastUpdatePosition; // 0x28 (4)
 };
 
 // Class Engine.InterpTrackInstSlomo
-struct UInterpTrackInstSlomo : UInterpTrackInst {
+class UInterpTrackInstSlomo : UInterpTrackInst {
 	float OldTimeDilation; // 0x28 (4)
 };
 
 // Class Engine.InterpTrackInstSound
-struct UInterpTrackInstSound : UInterpTrackInst {
+class UInterpTrackInstSound : UInterpTrackInst {
 	float LastUpdatePosition; // 0x28 (4)
 	struct Unknown PlayAudioComp; // 0x30 (8)
 };
 
 // Class Engine.InterpTrackInstToggle
-struct UInterpTrackInstToggle : UInterpTrackInst {
+class UInterpTrackInstToggle : UInterpTrackInst {
 	char Action; // 0x28 (1)
 	float LastUpdatePosition; // 0x2C (4)
 	char bSavedActiveState : 0; // 0x30 (1)
 };
 
 // Class Engine.InterpTrackInstVectorMaterialParam
-struct UInterpTrackInstVectorMaterialParam : UInterpTrackInst {
+class UInterpTrackInstVectorMaterialParam : UInterpTrackInst {
 	struct TArray<Unknown> MaterialInstances; // 0x28 (16)
 	struct TArray<Unknown> ResetVectors; // 0x38 (16)
 	struct TArray<Unknown> PrimitiveMaterialRefs; // 0x48 (16)
@@ -9822,29 +9822,29 @@ struct UInterpTrackInstVectorMaterialParam : UInterpTrackInst {
 };
 
 // Class Engine.InterpTrackInstVectorProp
-struct UInterpTrackInstVectorProp : UInterpTrackInstProperty {
+class UInterpTrackInstVectorProp : UInterpTrackInstProperty {
 	struct Unknown ResetVector; // 0x58 (12)
 };
 
 // Class Engine.InterpTrackInstVisibility
-struct UInterpTrackInstVisibility : UInterpTrackInst {
+class UInterpTrackInstVisibility : UInterpTrackInst {
 	char Action; // 0x28 (1)
 	float LastUpdatePosition; // 0x2C (4)
 };
 
 // Class Engine.InterpTrackLinearColorBase
-struct UInterpTrackLinearColorBase : UInterpTrack {
+class UInterpTrackLinearColorBase : UInterpTrack {
 	struct Unknown LinearColorTrack; // 0x70 (24)
 	float CurveTension; // 0x88 (4)
 };
 
 // Class Engine.InterpTrackLinearColorProp
-struct UInterpTrackLinearColorProp : UInterpTrackLinearColorBase {
+class UInterpTrackLinearColorProp : UInterpTrackLinearColorBase {
 	struct FName PropertyName; // 0x90 (8)
 };
 
 // Class Engine.InterpTrackMove
-struct UInterpTrackMove : UInterpTrack {
+class UInterpTrackMove : UInterpTrack {
 	struct Unknown PosTrack; // 0x70 (24)
 	struct Unknown EulerTrack; // 0x88 (24)
 	struct Unknown LookupTrack; // 0xA0 (16)
@@ -9855,24 +9855,24 @@ struct UInterpTrackMove : UInterpTrack {
 	char bShowArrowAtKeys : 0; // 0xC0 (1)
 	char bDisableMovement : 0; // 0xC0 (1)
 	char bShowTranslationOnCurveEd : 0; // 0xC0 (1)
-	char bShowRotationOnCurv : 0; // 0xC0 (1)
+	char bShowRotationOnCurvfs : 0; // 0xC0 (1)
 	char bHide3DTrack : 0; // 0xC0 (1)
 	char RotMode; // 0xC4 (1)
 };
 
 // Class Engine.InterpTrackMoveAxis
-struct UInterpTrackMoveAxis : UInterpTrackFloatBase {
+class UInterpTrackMoveAxis : UInterpTrackFloatBase {
 	char MoveAxis; // 0x90 (1)
 	struct Unknown LookupTrack; // 0x98 (16)
 };
 
 // Class Engine.InterpTrackParticleReplay
-struct UInterpTrackParticleReplay : UInterpTrack {
+class UInterpTrackParticleReplay : UInterpTrack {
 	struct TArray<Unknown> TrackKeys; // 0x70 (16)
 };
 
 // Class Engine.InterpTrackSound
-struct UInterpTrackSound : UInterpTrackVectorBase {
+class UInterpTrackSound : UInterpTrackVectorBase {
 	struct TArray<Unknown> Sounds; // 0x90 (16)
 	char bPlayOnReverse : 0; // 0xA0 (1)
 	char bContinueSoundOnMatineeEnd : 0; // 0xA0 (1)
@@ -9882,7 +9882,7 @@ struct UInterpTrackSound : UInterpTrackVectorBase {
 };
 
 // Class Engine.InterpTrackToggle
-struct UInterpTrackToggle : UInterpTrack {
+class UInterpTrackToggle : UInterpTrack {
 	struct TArray<Unknown> ToggleTrack; // 0x70 (16)
 	char bActivateSystemEachUpdate : 0; // 0x80 (1)
 	char bActivateWithJustAttachedFlag : 0; // 0x80 (1)
@@ -9891,19 +9891,19 @@ struct UInterpTrackToggle : UInterpTrack {
 	char bFireEventsWhenJumpingForwards : 0; // 0x80 (1)
 };
 
-// Class Engine.InterpTrackVectorMaterial
-struct UInterpTrackVectorMaterialPlag : UInterpTrackVectorBase {
+// Class Engine.InterpTrackVectorMaterialParam
+class UInterpTrackVectorMaterialParam : UInterpTrackVectorBase {
 	struct TArray<Unknown> TargetMaterials; // 0x90 (16)
 	struct FName ParamName; // 0xA0 (8)
 };
 
 // Class Engine.InterpTrackVectorProp
-struct UInterpTrackVectorProp : UInterpTrackVectorBase {
+class UInterpTrackVectorProp : UInterpTrackVectorBase {
 	struct FName PropertyName; // 0x90 (8)
 };
 
 // Class Engine.InterpTrackVisibility
-struct UInterpTrackVisibility : UInterpTrack {
+class UInterpTrackVisibility : UInterpTrack {
 	struct TArray<Unknown> VisibilityTrack; // 0x70 (16)
 	char bFireEventsWhenForwards : 0; // 0x80 (1)
 	char bFireEventsWhenBackwards : 0; // 0x80 (1)
@@ -9911,7 +9911,7 @@ struct UInterpTrackVisibility : UInterpTrack {
 };
 
 // Class Engine.IntSerialization
-struct UIntSerialization : Object {
+class UIntSerialization : Object {
 	uint16_t UnsignedInt16Variable; // 0x28 (2)
 	uint32_t UnsignedInt32Variable; // 0x2C (4)
 	uint64_t UnsignedInt64Variable; // 0x30 (8)
@@ -9923,20 +9923,20 @@ struct UIntSerialization : Object {
 };
 
 // Class Engine.Layer
-struct ULayer : Object {
+class ULayer : Object {
 	struct FName LayerName; // 0x28 (8)
 	char bIsVisible : 0; // 0x30 (1)
 	struct TArray<Unknown> ActorStats; // 0x38 (16)
 };
 
 // Class Engine.Level
-struct ULevel : Object {
+class ULevel : Object {
 	struct Unknown OwningWorld; // 0xB8 (8)
 	struct Unknown Model; // 0xC0 (8)
 	struct TArray<Unknown> ModelComponents; // 0xC8 (16)
 	struct Unknown ActorCluster; // 0xD8 (8)
 	int32_t NumTextureStreamingUnbuiltComponents; // 0xE0 (4)
-	int32_t NumTextureStreamingDirtyResources; // 0xE4 (4)
+	int32_t NumTextureStreamingDirtyResourc; // 0xE4 (4)
 	struct Unknown LevelScriptActor; // 0xE8 (8)
 	struct Unknown NavListStart; // 0xF0 (8)
 	struct Unknown NavListEnd; // 0xF8 (8)
@@ -9958,18 +9958,18 @@ struct ULevel : Object {
 };
 
 // Class Engine.LevelActorContainer
-struct ULevelActorContainer : Object {
+class ULevelActorContainer : Object {
 	struct TArray<Unknown> Actors; // 0x28 (16)
 };
 
 // Class Engine.LevelBounds
-struct ALevelBounds : UActor {
+class ALevelBounds : UActor {
 	struct Unknown BoxComponent; // 0x310 (8)
 	char bAutoUpdateBounds : 0; // 0x318 (1)
 };
 
 // Class Engine.LevelStreaming
-struct ULevelStreaming : Object {
+class ULevelStreaming : Object {
 	struct TSoftObjectPtr<Unknown> WorldAsset; // 0x28 (40)
 	struct FName PackageNameToLoad; // 0x50 (8)
 	struct TArray<Unknown> LODPackageNames; // 0x58 (16)
@@ -10009,7 +10009,7 @@ struct ULevelStreaming : Object {
 };
 
 // Class Engine.LevelStreamingDynamic
-struct ULevelStreamingDynamic : ULevelStreaming {
+class ULevelStreamingDynamic : ULevelStreaming {
 	char bInitiallyLoaded : 0; // 0x158 (1)
 	char bInitiallyVisible : 0; // 0x158 (1)
 
@@ -10018,7 +10018,7 @@ struct ULevelStreamingDynamic : ULevelStreaming {
 };
 
 // Class Engine.LevelStreamingVolume
-struct ALevelStreamingVolume : AVolume {
+class ALevelStreamingVolume : AVolume {
 	struct TArray<Unknown> StreamingLevelNames; // 0x348 (16)
 	char bEditorPreVisOnly : 0; // 0x358 (1)
 	char bDisabled : 0; // 0x358 (1)
@@ -10026,28 +10026,28 @@ struct ALevelStreamingVolume : AVolume {
 };
 
 // Class Engine.LightmappedSurfaceCollection
-struct ULightmappedSurfaceCollection : Object {
+class ULightmappedSurfaceCollection : Object {
 	struct Unknown SourceModel; // 0x28 (8)
 	struct TArray<Unknown> Surfaces; // 0x30 (16)
 };
 
 // Class Engine.LightmassPortal
-struct ALightmassPortal : UActor {
+class ALightmassPortal : UActor {
 	struct Unknown PortalComponent; // 0x310 (8)
 };
 
 // Class Engine.LightmassPortalComponent
-struct ULightmassPortalComponent : USceneComponent {
+class ULightmassPortalComponent : USceneComponent {
 	struct Unknown PreviewBox; // 0x238 (8)
 };
 
-// Class Engine.LightmassPrimitiveSettingsObject
-struct ULightmassPrimitiveSettingsObject : Object {
+// Class Engine.LightmassPrimitiveSettingsObjec
+class ULightmassPrimitiveSettingsObjec : Object {
 	struct Unknown LightmassSettings; // 0x28 (24)
 };
 
 // Class Engine.LocalLightComponent
-struct ULocalLightComponent : ULightComponent {
+class ULocalLightComponent : ULightComponent {
 	enum class Unknow IntensityUnits; // 0x380 (1)
 	float Radius; // 0x384 (4)
 	float AttenuationRadius; // 0x388 (4)
@@ -10059,7 +10059,7 @@ struct ULocalLightComponent : ULightComponent {
 };
 
 // Class Engine.LODActor
-struct ALODActor : UActor {
+class ALODActor : UActor {
 	struct Unknown StaticMeshComponent; // 0x310 (8)
 	struct TMap<Unknown, Unknown>Unknown ImpostersStaticMeshComponents; // 0x318 (80)
 	struct Unknown Proxy; // 0x368 (8)
@@ -10071,12 +10071,12 @@ struct ALODActor : UActor {
 };
 
 // Class Engine.MapBuildDataRegistry
-struct UMapBuildDataRegistry : Object {
+class UMapBuildDataRegistry : Object {
 	char LevelLightingQuality; // 0x28 (1)
 };
 
 // Class Engine.Material
-struct UMaterial : UMaterialInterface {
+class UMaterial : UMaterialInterface {
 	struct Unknown PhysMaterial; // 0x88 (8)
 	struct Unknown PhysMaterialMask; // 0x90 (8)
 	struct Unknown PhysicalMaterialMap[0x8]; // 0x98 (64)
@@ -10115,7 +10115,7 @@ struct UMaterial : UMaterialInterface {
 	float TranslucentShadowDensityScale; // 0x1D8 (4)
 	float TranslucentSelfShadowDensityScale; // 0x1DC (4)
 	float TranslucentSelfShadowSecondDensityScale; // 0x1E0 (4)
-	float TranslucentSelfShadowSecondOpacity; // 0x1E4 (4)
+	float TranslucentSelfShadowSecondOpac; // 0x1E4 (4)
 	float TranslucentBackscatteringExponent; // 0x1E8 (4)
 	struct Unknown TranslucentMultipleScatteringExtinction; // 0x1EC (16)
 	float TranslucentShadowStartOffset; // 0x1FC (4)
@@ -10187,7 +10187,7 @@ struct UMaterial : UMaterialInterface {
 };
 
 // Class Engine.MaterialBillboardComponent
-struct UMaterialBillboardComponent : UPrimitiveComponent {
+class UMaterialBillboardComponent : UPrimitiveComponent {
 	struct TArray<Unknown> Elements; // 0x4B8 (16)
 
 	void SetElements(struct TArray<Unknown>& NewElements); // Function Engine.MaterialBillboardComponent.SetElements(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3D75EE0>
@@ -10195,12 +10195,12 @@ struct UMaterialBillboardComponent : UPrimitiveComponent {
 };
 
 // Class Engine.MaterialExpressionAbs
-struct UMaterialExpressionAbs : UMaterialExpression {
+class UMaterialExpressionAbs : UMaterialExpression {
 	struct Unknown Input; // 0x40 (12)
 };
 
 // Class Engine.MaterialExpressionAdd
-struct UMaterialExpressionAdd : UMaterialExpression {
+class UMaterialExpressionAdd : UMaterialExpression {
 	struct Unknown A; // 0x40 (12)
 	struct Unknown B; // 0x54 (12)
 	float ConstA; // 0x68 (4)
@@ -10208,76 +10208,76 @@ struct UMaterialExpressionAdd : UMaterialExpression {
 };
 
 // Class Engine.MaterialExpressionAntialiasedTextureMask
-struct UMaterialExpressionAntialiasedTextureMask : UMaterialExpressionTextureSampleParameter2D {
+class UMaterialExpressionAntialiasedTextureMask : UMaterialExpressionTextureSampleParameter2D {
 	float threshold; // 0xF0 (4)
 	char Channel; // 0xF4 (1)
 };
 
 // Class Engine.MaterialExpressionAppendVector
-struct UMaterialExpressionAppendVector : UMaterialExpression {
+class UMaterialExpressionAppendVector : UMaterialExpression {
 	struct Unknown A; // 0x40 (12)
 	struct Unknown B; // 0x54 (12)
 };
 
 // Class Engine.MaterialExpressionArccosine
-struct UMaterialExpressionArccosine : UMaterialExpression {
+class UMaterialExpressionArccosine : UMaterialExpression {
 	struct Unknown Input; // 0x40 (12)
 };
 
-// Class Engine.MaterialExpressionArccosine
-struct UMaterialExpressionArccosine : UMaterialExpression {
+// Class Engine.MaterialExpressionArccosineFast
+class UMaterialExpressionArccosineFast : UMaterialExpression {
 	struct Unknown Input; // 0x40 (12)
 };
 
 // Class Engine.MaterialExpressionArcsine
-struct UMaterialExpressionArcsine : UMaterialExpression {
+class UMaterialExpressionArcsine : UMaterialExpression {
 	struct Unknown Input; // 0x40 (12)
 };
 
 // Class Engine.MaterialExpressionArcsineFast
-struct UMaterialExpressionArcsineFast : UMaterialExpression {
+class UMaterialExpressionArcsineFast : UMaterialExpression {
 	struct Unknown Input; // 0x40 (12)
 };
 
 // Class Engine.MaterialExpressionArctangent
-struct UMaterialExpressionArctangent : UMaterialExpression {
+class UMaterialExpressionArctangent : UMaterialExpression {
 	struct Unknown Input; // 0x40 (12)
 };
 
 // Class Engine.MaterialExpressionArctangent2
-struct UMaterialExpressionArctangent2 : UMaterialExpression {
+class UMaterialExpressionArctangent2 : UMaterialExpression {
 	struct Unknown Y; // 0x40 (12)
 	struct Unknown X; // 0x54 (12)
 };
 
 // Class Engine.MaterialExpressionArctangent2Fast
-struct UMaterialExpressionArctangent2Fast : UMaterialExpression {
+class UMaterialExpressionArctangent2Fast : UMaterialExpression {
 	struct Unknown Y; // 0x40 (12)
 	struct Unknown X; // 0x54 (12)
 };
 
 // Class Engine.MaterialExpressionArctangentFast
-struct UMaterialExpressionArctangentFast : UMaterialExpression {
+class UMaterialExpressionArctangentFast : UMaterialExpression {
 	struct Unknown Input; // 0x40 (12)
 };
 
 // Class Engine.MaterialExpressionAtmosphericFogColor
-struct UMaterialExpressionAtmosphericFogColor : UMaterialExpression {
+class UMaterialExpressionAtmosphericFogColor : UMaterialExpression {
 	struct Unknown WorldPosition; // 0x40 (12)
 };
 
 // Class Engine.MaterialExpressionBentNormalCustomOutput
-struct UMaterialExpressionBentNormalCustomOutput : UMaterialExpressionCustomOutput {
+class UMaterialExpressionBentNormalCustomOutput : UMaterialExpressionCustomOutput {
 	struct Unknown Input; // 0x40 (12)
 };
 
 // Class Engine.MaterialExpressionBlackBody
-struct UMaterialExpressionBlackBody : UMaterialExpression {
+class UMaterialExpressionBlackBody : UMaterialExpression {
 	struct Unknown Temp; // 0x40 (12)
 };
 
 // Class Engine.MaterialExpressionBlendMaterialAttributes
-struct UMaterialExpressionBlendMaterialAttributes : UMaterialExpression {
+class UMaterialExpressionBlendMaterialAttributes : UMaterialExpression {
 	struct Unknown A; // 0x40 (16)
 	struct Unknown B; // 0x58 (16)
 	struct Unknown ALPHA; // 0x70 (12)
@@ -10286,12 +10286,12 @@ struct UMaterialExpressionBlendMaterialAttributes : UMaterialExpression {
 };
 
 // Class Engine.MaterialExpressionBreakMaterialAttributes
-struct UMaterialExpressionBreakMaterialAttributes : UMaterialExpression {
+class UMaterialExpressionBreakMaterialAttributes : UMaterialExpression {
 	struct Unknown MaterialAttributes; // 0x40 (16)
 };
 
 // Class Engine.MaterialExpressionBumpOffset
-struct UMaterialExpressionBumpOffset : UMaterialExpression {
+class UMaterialExpressionBumpOffset : UMaterialExpression {
 	struct Unknown Coordinate; // 0x40 (12)
 	struct Unknown Height; // 0x54 (12)
 	struct Unknown HeightRatioInput; // 0x68 (12)
@@ -10301,31 +10301,31 @@ struct UMaterialExpressionBumpOffset : UMaterialExpression {
 };
 
 // Class Engine.MaterialExpressionCeil
-struct UMaterialExpressionCeil : UMaterialExpression {
+class UMaterialExpressionCeil : UMaterialExpression {
 	struct Unknown Input; // 0x40 (12)
 };
 
 // Class Engine.MaterialExpressionParameter
-struct UMaterialExpressionParameter : UMaterialExpression {
+class UMaterialExpressionParameter : UMaterialExpression {
 	struct FName ParameterName; // 0x40 (8)
 	struct Unknown ExpressionGUID; // 0x48 (16)
 };
 
 // Class Engine.MaterialExpressionVectorParameter
-struct UMaterialExpressionVectorParameter : UMaterialExpressionParameter {
+class UMaterialExpressionVectorParameter : UMaterialExpressionParameter {
 	struct Unknown DefaultValue; // 0x58 (16)
 	char bUseCustomPrimitiveData : 0; // 0x68 (1)
 	char PrimitiveDataIndex; // 0x69 (1)
 };
 
 // Class Engine.MaterialExpressionChannelMaskParameter
-struct UMaterialExpressionChannelMaskParameter : UMaterialExpressionVectorParameter {
+class UMaterialExpressionChannelMaskParameter : UMaterialExpressionVectorParameter {
 	char MaskChannel; // 0x70 (1)
 	struct Unknown Input; // 0x74 (12)
 };
 
 // Class Engine.MaterialExpressionClamp
-struct UMaterialExpressionClamp : UMaterialExpression {
+class UMaterialExpressionClamp : UMaterialExpression {
 	struct Unknown Input; // 0x40 (12)
 	struct Unknown Min; // 0x54 (12)
 	struct Unknown MAX; // 0x68 (12)
@@ -10335,19 +10335,19 @@ struct UMaterialExpressionClamp : UMaterialExpression {
 };
 
 // Class Engine.MaterialExpressionClearCoatNormalCustomOutput
-struct UMaterialExpressionClearCoatNormalCustomOutput : UMaterialExpressionCustomOutput {
+class UMaterialExpressionClearCoatNormalCustomOutput : UMaterialExpressionCustomOutput {
 	struct Unknown Input; // 0x40 (12)
 };
 
 // Class Engine.MaterialExpressionCollectionParameter
-struct UMaterialExpressionCollectionParameter : UMaterialExpression {
+class UMaterialExpressionCollectionParameter : UMaterialExpression {
 	struct Unknown Collection; // 0x40 (8)
 	struct FName ParameterName; // 0x48 (8)
 	struct Unknown ParameterId; // 0x50 (16)
 };
 
 // Class Engine.MaterialExpressionComment
-struct UMaterialExpressionComment : UMaterialExpression {
+class UMaterialExpressionComment : UMaterialExpression {
 	int32_t SizeX; // 0x40 (4)
 	int32_t SizeY; // 0x44 (4)
 	struct FString Text; // 0x48 (16)
@@ -10356,7 +10356,7 @@ struct UMaterialExpressionComment : UMaterialExpression {
 };
 
 // Class Engine.MaterialExpressionComponentMask
-struct UMaterialExpressionComponentMask : UMaterialExpression {
+class UMaterialExpressionComponentMask : UMaterialExpression {
 	struct Unknown Input; // 0x40 (12)
 	char R : 0; // 0x54 (1)
 	char G : 0; // 0x54 (1)
@@ -10365,61 +10365,61 @@ struct UMaterialExpressionComponentMask : UMaterialExpression {
 };
 
 // Class Engine.MaterialExpressionConstant
-struct UMaterialExpressionConstant : UMaterialExpression {
+class UMaterialExpressionConstant : UMaterialExpression {
 	float R; // 0x40 (4)
 };
 
 // Class Engine.MaterialExpressionConstant2Vector
-struct UMaterialExpressionConstant2Vector : UMaterialExpression {
+class UMaterialExpressionConstant2Vector : UMaterialExpression {
 	float R; // 0x40 (4)
 	float G; // 0x44 (4)
 };
 
 // Class Engine.MaterialExpressionConstant3Vector
-struct UMaterialExpressionConstant3Vector : UMaterialExpression {
+class UMaterialExpressionConstant3Vector : UMaterialExpression {
 	struct Unknown Constant; // 0x40 (16)
 };
 
 // Class Engine.MaterialExpressionConstant4Vector
-struct UMaterialExpressionConstant4Vector : UMaterialExpression {
+class UMaterialExpressionConstant4Vector : UMaterialExpression {
 	struct Unknown Constant; // 0x40 (16)
 };
 
 // Class Engine.MaterialExpressionConstantBiasScale
-struct UMaterialExpressionConstantBiasScale : UMaterialExpression {
+class UMaterialExpressionConstantBiasScale : UMaterialExpression {
 	struct Unknown Input; // 0x40 (12)
 	float Bias; // 0x54 (4)
 	float Scale; // 0x58 (4)
 };
 
 // Class Engine.MaterialExpressionCosine
-struct UMaterialExpressionCosine : UMaterialExpression {
+class UMaterialExpressionCosine : UMaterialExpression {
 	struct Unknown Input; // 0x40 (12)
 	float Period; // 0x54 (4)
 };
 
 // Class Engine.MaterialExpressionCrossProduct
-struct UMaterialExpressionCrossProduct : UMaterialExpression {
+class UMaterialExpressionCrossProduct : UMaterialExpression {
 	struct Unknown A; // 0x40 (12)
 	struct Unknown B; // 0x54 (12)
 };
 
 // Class Engine.MaterialExpressionScalarParameter
-struct UMaterialExpressionScalarParameter : UMaterialExpressionParameter {
+class UMaterialExpressionScalarParameter : UMaterialExpressionParameter {
 	float DefaultValue; // 0x58 (4)
 	char bUseCustomPrimitiveData : 0; // 0x5C (1)
 	char PrimitiveDataIndex; // 0x5D (1)
 };
 
 // Class Engine.MaterialExpressionCurveAtlasRowParameter
-struct UMaterialExpressionCurveAtlasRowParameter : UMaterialExpressionScalarParameter {
+class UMaterialExpressionCurveAtlasRowParameter : UMaterialExpressionScalarParameter {
 	struct Unknown Curve; // 0x60 (8)
 	struct Unknown Atlas; // 0x68 (8)
 	struct Unknown InputTime; // 0x70 (12)
 };
 
 // Class Engine.MaterialExpressionCustom
-struct UMaterialExpressionCustom : UMaterialExpression {
+class UMaterialExpressionCustom : UMaterialExpression {
 	struct FString Code; // 0x40 (16)
 	char OutputType; // 0x50 (1)
 	struct FString Description; // 0x58 (16)
@@ -10429,24 +10429,24 @@ struct UMaterialExpressionCustom : UMaterialExpression {
 };
 
 // Class Engine.MaterialExpressionDDX
-struct UMaterialExpressionDDX : UMaterialExpression {
+class UMaterialExpressionDDX : UMaterialExpression {
 	struct Unknown Value; // 0x40 (12)
 };
 
 // Class Engine.MaterialExpressionDDY
-struct UMaterialExpressionDDY : UMaterialExpression {
+class UMaterialExpressionDDY : UMaterialExpression {
 	struct Unknown Value; // 0x40 (12)
 };
 
 // Class Engine.MaterialExpressionDecalMipmapLevel
-struct UMaterialExpressionDecalMipmapLevel : UMaterialExpression {
+class UMaterialExpressionDecalMipmapLevel : UMaterialExpression {
 	struct Unknown TextureSize; // 0x40 (12)
 	float ConstWidth; // 0x54 (4)
 	float ConstHeight; // 0x58 (4)
 };
 
 // Class Engine.MaterialExpressionDepthFade
-struct UMaterialExpressionDepthFade : UMaterialExpression {
+class UMaterialExpressionDepthFade : UMaterialExpression {
 	struct Unknown InOpacity; // 0x40 (12)
 	struct Unknown FadeDistance; // 0x54 (12)
 	float OpacityDefault; // 0x68 (4)
@@ -10454,41 +10454,41 @@ struct UMaterialExpressionDepthFade : UMaterialExpression {
 };
 
 // Class Engine.MaterialExpressionDepthOfFieldFunction
-struct UMaterialExpressionDepthOfFieldFunction : UMaterialExpression {
+class UMaterialExpressionDepthOfFieldFunction : UMaterialExpression {
 	char FunctionValue; // 0x40 (1)
 	struct Unknown Depth; // 0x44 (12)
 };
 
 // Class Engine.MaterialExpressionDeriveNormalZ
-struct UMaterialExpressionDeriveNormalZ : UMaterialExpression {
+class UMaterialExpressionDeriveNormalZ : UMaterialExpression {
 	struct Unknown InXY; // 0x40 (12)
 };
 
 // Class Engine.MaterialExpressionDesaturation
-struct UMaterialExpressionDesaturation : UMaterialExpression {
+class UMaterialExpressionDesaturation : UMaterialExpression {
 	struct Unknown Input; // 0x40 (12)
 	struct Unknown Fraction; // 0x54 (12)
 	struct Unknown LuminanceFactors; // 0x68 (16)
 };
 
 // Class Engine.MaterialExpressionDistance
-struct UMaterialExpressionDistance : UMaterialExpression {
+class UMaterialExpressionDistance : UMaterialExpression {
 	struct Unknown A; // 0x40 (12)
 	struct Unknown B; // 0x54 (12)
 };
 
 // Class Engine.MaterialExpressionDistanceFieldGradient
-struct UMaterialExpressionDistanceFieldGradient : UMaterialExpression {
+class UMaterialExpressionDistanceFieldGradient : UMaterialExpression {
 	struct Unknown Position; // 0x40 (12)
 };
 
 // Class Engine.MaterialExpressionDistanceToNearestSurface
-struct UMaterialExpressionDistanceToNearestSurface : UMaterialExpression {
+class UMaterialExpressionDistanceToNearestSurface : UMaterialExpression {
 	struct Unknown Position; // 0x40 (12)
 };
 
 // Class Engine.MaterialExpressionDivide
-struct UMaterialExpressionDivide : UMaterialExpression {
+class UMaterialExpressionDivide : UMaterialExpression {
 	struct Unknown A; // 0x40 (12)
 	struct Unknown B; // 0x54 (12)
 	float ConstA; // 0x68 (4)
@@ -10496,55 +10496,55 @@ struct UMaterialExpressionDivide : UMaterialExpression {
 };
 
 // Class Engine.MaterialExpressionDotProduct
-struct UMaterialExpressionDotProduct : UMaterialExpression {
+class UMaterialExpressionDotProduct : UMaterialExpression {
 	struct Unknown A; // 0x40 (12)
 	struct Unknown B; // 0x54 (12)
 };
 
-// Class Engine.MaterialExpressionDynamicPct
-struct UMaterialExpressionDynamic : UMaterialExpression {
+// Class Engine.MaterialExpressionDynamicParameter
+class UMaterialExpressionDynamicParameter : UMaterialExpression {
 	struct TArray<Unknown> ParamNames; // 0x40 (16)
 	struct Unknown DefaultValue; // 0x50 (16)
 	uint32_t ParameterIndex; // 0x60 (4)
 };
 
 // Class Engine.MaterialExpressionFeatureLevelSwitch
-struct UMaterialExpressionFeatureLevelSwitch : UMaterialExpression {
+class UMaterialExpressionFeatureLevelSwitch : UMaterialExpression {
 	struct Unknown Default; // 0x40 (12)
 	struct Unknown Inputs[0x4]; // 0x54 (48)
 };
 
 // Class Engine.MaterialExpressionFloor
-struct UMaterialExpressionFloor : UMaterialExpression {
+class UMaterialExpressionFloor : UMaterialExpression {
 	struct Unknown Input; // 0x40 (12)
 };
 
 // Class Engine.MaterialExpressionFmod
-struct UMaterialExpressionFmod : UMaterialExpression {
+class UMaterialExpressionFmod : UMaterialExpression {
 	struct Unknown A; // 0x40 (12)
 	struct Unknown B; // 0x54 (12)
 };
 
 // Class Engine.MaterialExpressionFontSample
-struct UMaterialExpressionFontSample : UMaterialExpression {
+class UMaterialExpressionFontSample : UMaterialExpression {
 	struct Unknown Font; // 0x40 (8)
 	int32_t FontTexturePage; // 0x48 (4)
 };
 
 // Class Engine.MaterialExpressionFontSampleParameter
-struct UMaterialExpressionFontSampleParameter : UMaterialExpressionFontSample {
+class UMaterialExpressionFontSampleParameter : UMaterialExpressionFontSample {
 	struct FName ParameterName; // 0x50 (8)
 	struct Unknown ExpressionGUID; // 0x58 (16)
 	struct FName Group; // 0x68 (8)
 };
 
 // Class Engine.MaterialExpressionFrac
-struct UMaterialExpressionFrac : UMaterialExpression {
+class UMaterialExpressionFrac : UMaterialExpression {
 	struct Unknown Input; // 0x40 (12)
 };
 
 // Class Engine.MaterialExpressionFresnel
-struct UMaterialExpressionFresnel : UMaterialExpression {
+class UMaterialExpressionFresnel : UMaterialExpression {
 	struct Unknown ExponentIn; // 0x40 (12)
 	float Exponent; // 0x54 (4)
 	struct Unknown BaseReflectFractionIn; // 0x58 (12)
@@ -10553,7 +10553,7 @@ struct UMaterialExpressionFresnel : UMaterialExpression {
 };
 
 // Class Engine.MaterialExpressionFunctionInput
-struct UMaterialExpressionFunctionInput : UMaterialExpression {
+class UMaterialExpressionFunctionInput : UMaterialExpression {
 	struct Unknown Preview; // 0x40 (12)
 	struct FName InputName; // 0x54 (8)
 	struct FString Description; // 0x60 (16)
@@ -10566,7 +10566,7 @@ struct UMaterialExpressionFunctionInput : UMaterialExpression {
 };
 
 // Class Engine.MaterialExpressionFunctionOutput
-struct UMaterialExpressionFunctionOutput : UMaterialExpression {
+class UMaterialExpressionFunctionOutput : UMaterialExpression {
 	struct FName OutputName; // 0x40 (8)
 	struct FString Description; // 0x48 (16)
 	int32_t SortPriority; // 0x58 (4)
@@ -10576,20 +10576,20 @@ struct UMaterialExpressionFunctionOutput : UMaterialExpression {
 };
 
 // Class Engine.MaterialExpressionGetMaterialAttributes
-struct UMaterialExpressionGetMaterialAttributes : UMaterialExpression {
+class UMaterialExpressionGetMaterialAttributes : UMaterialExpression {
 	struct Unknown MaterialAttributes; // 0x40 (16)
 	struct TArray<Unknown> AttributeGetTypes; // 0x58 (16)
 };
 
 // Class Engine.MaterialExpressionGIReplace
-struct UMaterialExpressionGIReplace : UMaterialExpression {
+class UMaterialExpressionGIReplace : UMaterialExpression {
 	struct Unknown Default; // 0x40 (12)
 	struct Unknown StaticIndirect; // 0x54 (12)
 	struct Unknown DynamicIndirect; // 0x68 (12)
 };
 
 // Class Engine.MaterialExpressionIf
-struct UMaterialExpressionIf : UMaterialExpression {
+class UMaterialExpressionIf : UMaterialExpression {
 	struct Unknown A; // 0x40 (12)
 	struct Unknown B; // 0x54 (12)
 	struct Unknown AGreaterThanB; // 0x68 (12)
@@ -10601,13 +10601,13 @@ struct UMaterialExpressionIf : UMaterialExpression {
 };
 
 // Class Engine.MaterialExpressionLightmassReplace
-struct UMaterialExpressionLightmassReplace : UMaterialExpression {
+class UMaterialExpressionLightmassReplace : UMaterialExpression {
 	struct Unknown Realtime; // 0x40 (12)
 	struct Unknown Lightmass; // 0x54 (12)
 };
 
 // Class Engine.MaterialExpressionLinearInterpolate
-struct UMaterialExpressionLinearInterpolate : UMaterialExpression {
+class UMaterialExpressionLinearInterpolate : UMaterialExpression {
 	struct Unknown A; // 0x40 (12)
 	struct Unknown B; // 0x54 (12)
 	struct Unknown ALPHA; // 0x68 (12)
@@ -10617,17 +10617,17 @@ struct UMaterialExpressionLinearInterpolate : UMaterialExpression {
 };
 
 // Class Engine.MaterialExpressionLogarithm10
-struct UMaterialExpressionLogarithm10 : UMaterialExpression {
+class UMaterialExpressionLogarithm10 : UMaterialExpression {
 	struct Unknown X; // 0x40 (12)
 };
 
 // Class Engine.MaterialExpressionLogarithm2
-struct UMaterialExpressionLogarithm2 : UMaterialExpression {
+class UMaterialExpressionLogarithm2 : UMaterialExpression {
 	struct Unknown X; // 0x40 (12)
 };
 
 // Class Engine.MaterialExpressionMakeMaterialAttributes
-struct UMaterialExpressionMakeMaterialAttributes : UMaterialExpression {
+class UMaterialExpressionMakeMaterialAttributes : UMaterialExpression {
 	struct Unknown BaseColor; // 0x40 (12)
 	struct Unknown Metallic; // 0x54 (12)
 	struct Unknown Specular; // 0x68 (12)
@@ -10652,12 +10652,12 @@ struct UMaterialExpressionMakeMaterialAttributes : UMaterialExpression {
 };
 
 // Class Engine.MaterialExpressionMapARPassthroughCameraUV
-struct UMaterialExpressionMapARPassthroughCameraUV : UMaterialExpression {
+class UMaterialExpressionMapARPassthroughCameraUV : UMaterialExpression {
 	struct Unknown Coordinates; // 0x40 (12)
 };
 
 // Class Engine.MaterialExpressionMaterialAttributeLayers
-struct UMaterialExpressionMaterialAttributeLayers : UMaterialExpression {
+class UMaterialExpressionMaterialAttributeLayers : UMaterialExpression {
 	struct FName ParameterName; // 0x40 (8)
 	struct Unknown ExpressionGUID; // 0x48 (16)
 	struct Unknown Input; // 0x58 (16)
@@ -10670,19 +10670,19 @@ struct UMaterialExpressionMaterialAttributeLayers : UMaterialExpression {
 };
 
 // Class Engine.MaterialExpressionMaterialFunctionCall
-struct UMaterialExpressionMaterialFunctionCall : UMaterialExpression {
+class UMaterialExpressionMaterialFunctionCall : UMaterialExpression {
 	struct Unknown MaterialFunction; // 0x40 (8)
 	struct Unknown FunctionParameterInfo; // 0x48 (16)
 };
 
 // Class Engine.MaterialExpressionMaterialProxyReplace
-struct UMaterialExpressionMaterialProxyReplace : UMaterialExpression {
+class UMaterialExpressionMaterialProxyReplace : UMaterialExpression {
 	struct Unknown Realtime; // 0x40 (12)
 	struct Unknown MaterialProxy; // 0x54 (12)
 };
 
 // Class Engine.MaterialExpressionMax
-struct UMaterialExpressionMax : UMaterialExpression {
+class UMaterialExpressionMax : UMaterialExpression {
 	struct Unknown A; // 0x40 (12)
 	struct Unknown B; // 0x54 (12)
 	float ConstA; // 0x68 (4)
@@ -10690,7 +10690,7 @@ struct UMaterialExpressionMax : UMaterialExpression {
 };
 
 // Class Engine.MaterialExpressionMin
-struct UMaterialExpressionMin : UMaterialExpression {
+class UMaterialExpressionMin : UMaterialExpression {
 	struct Unknown A; // 0x40 (12)
 	struct Unknown B; // 0x54 (12)
 	float ConstA; // 0x68 (4)
@@ -10698,7 +10698,7 @@ struct UMaterialExpressionMin : UMaterialExpression {
 };
 
 // Class Engine.MaterialExpressionMultiply
-struct UMaterialExpressionMultiply : UMaterialExpression {
+class UMaterialExpressionMultiply : UMaterialExpression {
 	struct Unknown A; // 0x40 (12)
 	struct Unknown B; // 0x54 (12)
 	float ConstA; // 0x68 (4)
@@ -10706,7 +10706,7 @@ struct UMaterialExpressionMultiply : UMaterialExpression {
 };
 
 // Class Engine.MaterialExpressionNoise
-struct UMaterialExpressionNoise : UMaterialExpression {
+class UMaterialExpressionNoise : UMaterialExpression {
 	struct Unknown Position; // 0x40 (12)
 	struct Unknown FilterWidth; // 0x54 (12)
 	float Scale; // 0x68 (4)
@@ -10722,17 +10722,17 @@ struct UMaterialExpressionNoise : UMaterialExpression {
 };
 
 // Class Engine.MaterialExpressionNormalize
-struct UMaterialExpressionNormalize : UMaterialExpression {
+class UMaterialExpressionNormalize : UMaterialExpression {
 	struct Unknown VectorInput; // 0x40 (12)
 };
 
 // Class Engine.MaterialExpressionOneMinus
-struct UMaterialExpressionOneMinus : UMaterialExpression {
+class UMaterialExpressionOneMinus : UMaterialExpression {
 	struct Unknown Input; // 0x40 (12)
 };
 
 // Class Engine.MaterialExpressionPanner
-struct UMaterialExpressionPanner : UMaterialExpression {
+class UMaterialExpressionPanner : UMaterialExpression {
 	struct Unknown Coordinate; // 0x40 (12)
 	struct Unknown Time; // 0x54 (12)
 	struct Unknown Speed; // 0x68 (12)
@@ -10743,60 +10743,60 @@ struct UMaterialExpressionPanner : UMaterialExpression {
 };
 
 // Class Engine.MaterialExpressionParticleSubUV
-struct UMaterialExpressionParticleSubUV : UMaterialExpressionTextureSample {
+class UMaterialExpressionParticleSubUV : UMaterialExpressionTextureSample {
 	char bBlend : 0; // 0xD0 (1)
 };
 
 // Class Engine.MaterialExpressionPerInstanceCustomData
-struct UMaterialExpressionPerInstanceCustomData : UMaterialExpression {
+class UMaterialExpressionPerInstanceCustomData : UMaterialExpression {
 	struct Unknown DefaultValue; // 0x40 (12)
 	float ConstDefaultValue; // 0x54 (4)
 	uint32_t DataIndex; // 0x58 (4)
 };
 
 // Class Engine.MaterialExpressionPower
-struct UMaterialExpressionPower : UMaterialExpression {
+class UMaterialExpressionPower : UMaterialExpression {
 	struct Unknown Base; // 0x40 (12)
 	struct Unknown Exponent; // 0x54 (12)
 	float ConstExponent; // 0x68 (4)
 };
 
 // Class Engine.MaterialExpressionPreviousFrameSwitch
-struct UMaterialExpressionPreviousFrameSwitch : UMaterialExpression {
+class UMaterialExpressionPreviousFrameSwitch : UMaterialExpression {
 	struct Unknown CurrentFrame; // 0x40 (12)
 	struct Unknown PreviousFrame; // 0x54 (12)
 };
 
 // Class Engine.MaterialExpressionQualitySwitch
-struct UMaterialExpressionQualitySwitch : UMaterialExpression {
+class UMaterialExpressionQualitySwitch : UMaterialExpression {
 	struct Unknown Default; // 0x40 (12)
 	struct Unknown Inputs[0x3]; // 0x54 (36)
 };
 
 // Class Engine.MaterialExpressionRayTracingQualitySwitch
-struct UMaterialExpressionRayTracingQualitySwitch : UMaterialExpression {
+class UMaterialExpressionRayTracingQualitySwitch : UMaterialExpression {
 	struct Unknown Normal; // 0x40 (12)
 	struct Unknown RayTraced; // 0x54 (12)
 };
 
 // Class Engine.MaterialExpressionRebaseToZeroOrigin
-struct UMaterialExpressionRebaseToZeroOrigin : UMaterialExpression {
+class UMaterialExpressionRebaseToZeroOrigin : UMaterialExpression {
 	struct Unknown InputVector; // 0x40 (12)
 };
 
-// Class Engine.MaterialExpressionReflectionVectorWS
-struct UMaterialExpressionReflectionVectorWS : UMaterialExpression {
+// Class Engine.MaterialExpressionReflectionVec
+class UMaterialExpressionReflectionVec : UMaterialExpression {
 	struct Unknown CustomWorldNormal; // 0x40 (12)
 	char bNormalizeCustomWorldNormal : 0; // 0x54 (1)
 };
 
 // Class Engine.MaterialExpressionReroute
-struct UMaterialExpressionReroute : UMaterialExpression {
+class UMaterialExpressionReroute : UMaterialExpression {
 	struct Unknown Input; // 0x40 (12)
 };
 
 // Class Engine.MaterialExpressionRotateAboutAxis
-struct UMaterialExpressionRotateAboutAxis : UMaterialExpression {
+class UMaterialExpressionRotateAboutAxis : UMaterialExpression {
 	struct Unknown NormalizedRotationAxis; // 0x40 (12)
 	struct Unknown RotationAngle; // 0x54 (12)
 	struct Unknown PivotPoint; // 0x68 (12)
@@ -10805,7 +10805,7 @@ struct UMaterialExpressionRotateAboutAxis : UMaterialExpression {
 };
 
 // Class Engine.MaterialExpressionRotator
-struct UMaterialExpressionRotator : UMaterialExpression {
+class UMaterialExpressionRotator : UMaterialExpression {
 	struct Unknown Coordinate; // 0x40 (12)
 	struct Unknown Time; // 0x54 (12)
 	float CenterX; // 0x68 (4)
@@ -10815,12 +10815,12 @@ struct UMaterialExpressionRotator : UMaterialExpression {
 };
 
 // Class Engine.MaterialExpressionRound
-struct UMaterialExpressionRound : UMaterialExpression {
+class UMaterialExpressionRound : UMaterialExpression {
 	struct Unknown Input; // 0x40 (12)
 };
 
 // Class Engine.MaterialExpressionRuntimeVirtualTextureOutput
-struct UMaterialExpressionRuntimeVirtualTextureOutput : UMaterialExpressionCustomOutput {
+class UMaterialExpressionRuntimeVirtualTextureOutput : UMaterialExpressionCustomOutput {
 	struct Unknown BaseColor; // 0x40 (12)
 	struct Unknown Specular; // 0x54 (12)
 	struct Unknown Roughness; // 0x68 (12)
@@ -10831,13 +10831,13 @@ struct UMaterialExpressionRuntimeVirtualTextureOutput : UMaterialExpressionCusto
 };
 
 // Class Engine.MaterialExpressionRuntimeVirtualTextureReplace
-struct UMaterialExpressionRuntimeVirtualTextureReplace : UMaterialExpression {
+class UMaterialExpressionRuntimeVirtualTextureReplace : UMaterialExpression {
 	struct Unknown Default; // 0x40 (12)
 	struct Unknown VirtualTextureOutput; // 0x54 (12)
 };
 
 // Class Engine.MaterialExpressionRuntimeVirtualTextureSample
-struct UMaterialExpressionRuntimeVirtualTextureSample : UMaterialExpression {
+class UMaterialExpressionRuntimeVirtualTextureSample : UMaterialExpression {
 	struct Unknown Coordinates; // 0x40 (12)
 	struct Unknown WorldPosition; // 0x54 (12)
 	struct Unknown MipValue; // 0x68 (12)
@@ -10848,19 +10848,19 @@ struct UMaterialExpressionRuntimeVirtualTextureSample : UMaterialExpression {
 };
 
 // Class Engine.MaterialExpressionRuntimeVirtualTextureSampleParameter
-struct UMaterialExpressionRuntimeVirtualTextureSampleParameter : UMaterialExpressionRuntimeVirtualTextureSample {
+class UMaterialExpressionRuntimeVirtualTextureSampleParameter : UMaterialExpressionRuntimeVirtualTextureSample {
 	struct FName ParameterName; // 0x90 (8)
 	struct Unknown ExpressionGUID; // 0x98 (16)
 	struct FName Group; // 0xA8 (8)
 };
 
 // Class Engine.MaterialExpressionSaturate
-struct UMaterialExpressionSaturate : UMaterialExpression {
+class UMaterialExpressionSaturate : UMaterialExpression {
 	struct Unknown Input; // 0x40 (12)
 };
 
 // Class Engine.MaterialExpressionSceneColor
-struct UMaterialExpressionSceneColor : UMaterialExpression {
+class UMaterialExpressionSceneColor : UMaterialExpression {
 	char InputMode; // 0x40 (1)
 	struct Unknown Input; // 0x44 (12)
 	struct Unknown OffsetFraction; // 0x58 (12)
@@ -10868,7 +10868,7 @@ struct UMaterialExpressionSceneColor : UMaterialExpression {
 };
 
 // Class Engine.MaterialExpressionSceneDepth
-struct UMaterialExpressionSceneDepth : UMaterialExpression {
+class UMaterialExpressionSceneDepth : UMaterialExpression {
 	char InputMode; // 0x40 (1)
 	struct Unknown Input; // 0x44 (12)
 	struct Unknown Coordinates; // 0x58 (12)
@@ -10876,82 +10876,82 @@ struct UMaterialExpressionSceneDepth : UMaterialExpression {
 };
 
 // Class Engine.MaterialExpressionSceneTexture
-struct UMaterialExpressionSceneTexture : UMaterialExpression {
+class UMaterialExpressionSceneTexture : UMaterialExpression {
 	struct Unknown Coordinates; // 0x40 (12)
 	char SceneTextureId; // 0x54 (1)
 	char bFiltered : 0; // 0x55 (1)
 };
 
 // Class Engine.MaterialExpressionSetMaterialAttributes
-struct UMaterialExpressionSetMaterialAttributes : UMaterialExpression {
+class UMaterialExpressionSetMaterialAttributes : UMaterialExpression {
 	struct TArray<Unknown> Inputs; // 0x40 (16)
 	struct TArray<Unknown> AttributeSetTypes; // 0x50 (16)
 };
 
 // Class Engine.MaterialExpressionShaderStageSwitch
-struct UMaterialExpressionShaderStageSwitch : UMaterialExpression {
+class UMaterialExpressionShaderStageSwitch : UMaterialExpression {
 	struct Unknown PixelShader; // 0x40 (12)
 	struct Unknown VertexShader; // 0x54 (12)
 };
 
 // Class Engine.MaterialExpressionShadingModel
-struct UMaterialExpressionShadingModel : UMaterialExpression {
+class UMaterialExpressionShadingModel : UMaterialExpression {
 	char ShadingModel; // 0x40 (1)
 };
 
-// Class Engine.MaterialExpressionShading
-struct UMaterialExpressionShadingPodel : UMaterialExpression {
+// Class Engine.MaterialExpressionShadingPathSwitch
+class UMaterialExpressionShadingPathSwitch : UMaterialExpression {
 	struct Unknown Default; // 0x40 (12)
 	struct Unknown Inputs[0x3]; // 0x54 (36)
 };
 
 // Class Engine.MaterialExpressionShadowReplace
-struct UMaterialExpressionShadowReplace : UMaterialExpression {
+class UMaterialExpressionShadowReplace : UMaterialExpression {
 	struct Unknown Default; // 0x40 (12)
 	struct Unknown Shadow; // 0x54 (12)
 };
 
 // Class Engine.MaterialExpressionSign
-struct UMaterialExpressionSign : UMaterialExpression {
+class UMaterialExpressionSign : UMaterialExpression {
 	struct Unknown Input; // 0x40 (12)
 };
 
 // Class Engine.MaterialExpressionSine
-struct UMaterialExpressionSine : UMaterialExpression {
+class UMaterialExpressionSine : UMaterialExpression {
 	struct Unknown Input; // 0x40 (12)
 	float Period; // 0x54 (4)
 };
 
 // Class Engine.MaterialExpressionSingleLayerWaterMaterialOutput
-struct UMaterialExpressionSingleLayerWaterMaterialOutput : UMaterialExpressionCustomOutput {
+class UMaterialExpressionSingleLayerWaterMaterialOutput : UMaterialExpressionCustomOutput {
 	struct Unknown ScatteringCoefficients; // 0x40 (12)
 	struct Unknown AbsorptionCoefficients; // 0x54 (12)
 	struct Unknown PhaseG; // 0x68 (12)
 };
 
 // Class Engine.MaterialExpressionSkyAtmosphereLightDirection
-struct UMaterialExpressionSkyAtmosphereLightDirection : UMaterialExpression {
+class UMaterialExpressionSkyAtmosphereLightDirection : UMaterialExpression {
 	int32_t LightIndex; // 0x40 (4)
 };
 
 // Class Engine.MaterialExpressionSkyAtmosphereLightIlluminance
-struct UMaterialExpressionSkyAtmosphereLightIlluminance : UMaterialExpression {
+class UMaterialExpressionSkyAtmosphereLightIlluminance : UMaterialExpression {
 	int32_t LightIndex; // 0x40 (4)
 	struct Unknown WorldPosition; // 0x44 (12)
 };
 
 // Class Engine.MaterialExpressionSkyAtmosphereLightDiskLuminance
-struct UMaterialExpressionSkyAtmosphereLightDiskLuminance : UMaterialExpression {
+class UMaterialExpressionSkyAtmosphereLightDiskLuminance : UMaterialExpression {
 	int32_t LightIndex; // 0x40 (4)
 };
 
 // Class Engine.MaterialExpressionSkyAtmosphereAerialPerspective
-struct UMaterialExpressionSkyAtmosphereAerialPerspective : UMaterialExpression {
+class UMaterialExpressionSkyAtmosphereAerialPerspective : UMaterialExpression {
 	struct Unknown WorldPosition; // 0x40 (12)
 };
 
 // Class Engine.MaterialExpressionSobol
-struct UMaterialExpressionSobol : UMaterialExpression {
+class UMaterialExpressionSobol : UMaterialExpression {
 	struct Unknown cell; // 0x40 (12)
 	struct Unknown Index; // 0x54 (12)
 	struct Unknown Seed; // 0x68 (12)
@@ -10960,7 +10960,7 @@ struct UMaterialExpressionSobol : UMaterialExpression {
 };
 
 // Class Engine.MaterialExpressionSpeedTree
-struct UMaterialExpressionSpeedTree : UMaterialExpression {
+class UMaterialExpressionSpeedTree : UMaterialExpression {
 	struct Unknown GeometryInput; // 0x40 (12)
 	struct Unknown WindInput; // 0x54 (12)
 	struct Unknown LODInput; // 0x68 (12)
@@ -10973,7 +10973,7 @@ struct UMaterialExpressionSpeedTree : UMaterialExpression {
 };
 
 // Class Engine.MaterialExpressionSphereMask
-struct UMaterialExpressionSphereMask : UMaterialExpression {
+class UMaterialExpressionSphereMask : UMaterialExpression {
 	struct Unknown A; // 0x40 (12)
 	struct Unknown B; // 0x54 (12)
 	struct Unknown Radius; // 0x68 (12)
@@ -10982,29 +10982,29 @@ struct UMaterialExpressionSphereMask : UMaterialExpression {
 	float HardnessPercent; // 0x94 (4)
 };
 
-// Class Engine.MaterialExpressionSphericalParticleOpacity
-struct UMaterialExpressionSphericalParticleOpacity : UMaterialExpression {
+// Class Engine.MaterialExpressionSphericalParticleOpac
+class UMaterialExpressionSphericalParticleOpacumi : UMaterialExpression {
 	struct Unknown Density; // 0x40 (12)
 	float ConstantDensity; // 0x54 (4)
 };
 
 // Class Engine.MaterialExpressionSquareRoot
-struct UMaterialExpressionSquareRoot : UMaterialExpression {
+class UMaterialExpressionSquareRoot : UMaterialExpression {
 	struct Unknown Input; // 0x40 (12)
 };
 
 // Class Engine.MaterialExpressionStaticBool
-struct UMaterialExpressionStaticBool : UMaterialExpression {
+class UMaterialExpressionStaticBool : UMaterialExpression {
 	char Value : 0; // 0x40 (1)
 };
 
 // Class Engine.MaterialExpressionStaticBoolParameter
-struct UMaterialExpressionStaticBoolParameter : UMaterialExpressionParameter {
+class UMaterialExpressionStaticBoolParameter : UMaterialExpressionParameter {
 	char DefaultValue : 0; // 0x58 (1)
 };
 
 // Class Engine.MaterialExpressionStaticComponentMaskParameter
-struct UMaterialExpressionStaticComponentMaskParameter : UMaterialExpressionParameter {
+class UMaterialExpressionStaticComponentMaskParameter : UMaterialExpressionParameter {
 	struct Unknown Input; // 0x58 (12)
 	char DefaultR : 0; // 0x6C (1)
 	char DefaultG : 0; // 0x6C (1)
@@ -11013,7 +11013,7 @@ struct UMaterialExpressionStaticComponentMaskParameter : UMaterialExpressionPara
 };
 
 // Class Engine.MaterialExpressionStaticSwitch
-struct UMaterialExpressionStaticSwitch : UMaterialExpression {
+class UMaterialExpressionStaticSwitch : UMaterialExpression {
 	char DefaultValue : 0; // 0x40 (1)
 	struct Unknown A; // 0x44 (12)
 	struct Unknown B; // 0x58 (12)
@@ -11021,13 +11021,13 @@ struct UMaterialExpressionStaticSwitch : UMaterialExpression {
 };
 
 // Class Engine.MaterialExpressionStaticSwitchParameter
-struct UMaterialExpressionStaticSwitchParameter : UMaterialExpressionStaticBoolParameter {
+class UMaterialExpressionStaticSwitchParameter : UMaterialExpressionStaticBoolParameter {
 	struct Unknown A; // 0x60 (12)
 	struct Unknown B; // 0x74 (12)
 };
 
 // Class Engine.MaterialExpressionSubtract
-struct UMaterialExpressionSubtract : UMaterialExpression {
+class UMaterialExpressionSubtract : UMaterialExpression {
 	struct Unknown A; // 0x40 (12)
 	struct Unknown B; // 0x54 (12)
 	float ConstA; // 0x68 (4)
@@ -11035,18 +11035,18 @@ struct UMaterialExpressionSubtract : UMaterialExpression {
 };
 
 // Class Engine.MaterialExpressionTangent
-struct UMaterialExpressionTangent : UMaterialExpression {
+class UMaterialExpressionTangent : UMaterialExpression {
 	struct Unknown Input; // 0x40 (12)
 	float Period; // 0x54 (4)
 };
 
 // Class Engine.MaterialExpressionTangentOutput
-struct UMaterialExpressionTangentOutput : UMaterialExpressionCustomOutput {
+class UMaterialExpressionTangentOutput : UMaterialExpressionCustomOutput {
 	struct Unknown Input; // 0x40 (12)
 };
 
 // Class Engine.MaterialExpressionTemporalSobol
-struct UMaterialExpressionTemporalSobol : UMaterialExpression {
+class UMaterialExpressionTemporalSobol : UMaterialExpression {
 	struct Unknown Index; // 0x40 (12)
 	struct Unknown Seed; // 0x54 (12)
 	uint32_t ConstIndex; // 0x68 (4)
@@ -11054,7 +11054,7 @@ struct UMaterialExpressionTemporalSobol : UMaterialExpression {
 };
 
 // Class Engine.MaterialExpressionTextureCoordinate
-struct UMaterialExpressionTextureCoordinate : UMaterialExpression {
+class UMaterialExpressionTextureCoordinate : UMaterialExpression {
 	int32_t CoordinateIndex; // 0x40 (4)
 	float UTiling; // 0x44 (4)
 	float VTiling; // 0x48 (4)
@@ -11062,50 +11062,50 @@ struct UMaterialExpressionTextureCoordinate : UMaterialExpression {
 	char UnMirrorV : 0; // 0x4C (1)
 };
 
-// Class Engine.MaterialExpressionTexture
-struct UMaterialExpressionTexture : UMaterialExpression {
+// Class Engine.MaterialExpressionTextureProperty
+class UMaterialExpressionTextureProperty : UMaterialExpression {
 	struct Unknown TextureObject; // 0x40 (12)
 	char Property; // 0x54 (1)
 };
 
 // Class Engine.MaterialExpressionTextureSampleParameterSubUV
-struct UMaterialExpressionTextureSampleParameterSubUV : UMaterialExpressionTextureSampleParameter2D {
+class UMaterialExpressionTextureSampleParameterSubUV : UMaterialExpressionTextureSampleParameter2D {
 	char bBlend : 0; // 0xF0 (1)
 };
 
 // Class Engine.MaterialExpressionThinTranslucentMaterialOutput
-struct UMaterialExpressionThinTranslucentMaterialOutput : UMaterialExpressionCustomOutput {
+class UMaterialExpressionThinTranslucentMaterialOutput : UMaterialExpressionCustomOutput {
 	struct Unknown TransmittanceColor; // 0x40 (12)
 };
 
 // Class Engine.MaterialExpressionTime
-struct UMaterialExpressionTime : UMaterialExpression {
+class UMaterialExpressionTime : UMaterialExpression {
 	char bIgnorePause : 0; // 0x40 (1)
 	char bOverride_Period : 0; // 0x40 (1)
 	float Period; // 0x44 (4)
 };
 
 // Class Engine.MaterialExpressionTransform
-struct UMaterialExpressionTransform : UMaterialExpression {
+class UMaterialExpressionTransform : UMaterialExpression {
 	struct Unknown Input; // 0x40 (12)
 	char TransformSourceType; // 0x54 (1)
 	char TransformType; // 0x55 (1)
 };
 
 // Class Engine.MaterialExpressionTransformPosition
-struct UMaterialExpressionTransformPosition : UMaterialExpression {
+class UMaterialExpressionTransformPosition : UMaterialExpression {
 	struct Unknown Input; // 0x40 (12)
 	char TransformSourceType; // 0x54 (1)
 	char TransformType; // 0x55 (1)
 };
 
 // Class Engine.MaterialExpressionTruncate
-struct UMaterialExpressionTruncate : UMaterialExpression {
+class UMaterialExpressionTruncate : UMaterialExpression {
 	struct Unknown Input; // 0x40 (12)
 };
 
 // Class Engine.MaterialExpressionVectorNoise
-struct UMaterialExpressionVectorNoise : UMaterialExpression {
+class UMaterialExpressionVectorNoise : UMaterialExpression {
 	struct Unknown Position; // 0x40 (12)
 	char NoiseFunction; // 0x54 (1)
 	int32_t Quality; // 0x58 (4)
@@ -11114,42 +11114,42 @@ struct UMaterialExpressionVectorNoise : UMaterialExpression {
 };
 
 // Class Engine.MaterialExpressionVertexInterpolator
-struct UMaterialExpressionVertexInterpolator : UMaterialExpressionCustomOutput {
+class UMaterialExpressionVertexInterpolator : UMaterialExpressionCustomOutput {
 	struct Unknown Input; // 0x40 (12)
 };
 
 // Class Engine.MaterialExpressionViewProperty
-struct UMaterialExpressionViewProperty : UMaterialExpression {
+class UMaterialExpressionViewProperty : UMaterialExpression {
 	char Property; // 0x40 (1)
 };
 
 // Class Engine.MaterialExpressionVirtualTextureFeatureSwitch
-struct UMaterialExpressionVirtualTextureFeatureSwitch : UMaterialExpression {
+class UMaterialExpressionVirtualTextureFeatureSwitch : UMaterialExpression {
 	struct Unknown No; // 0x40 (12)
 	struct Unknown Yes; // 0x54 (12)
 };
 
 // Class Engine.MaterialExpressionWorldPosition
-struct UMaterialExpressionWorldPosition : UMaterialExpression {
+class UMaterialExpressionWorldPosition : UMaterialExpression {
 	char WorldPositionShaderOffset; // 0x40 (1)
 };
 
 // Class Engine.MaterialFunctionInterface
-struct UMaterialFunctionInterface : Object {
+class UMaterialFunctionInterface : Object {
 	struct Unknown StateID; // 0x28 (16)
 	enum class Unknow MaterialFunctionUsage; // 0x38 (1)
 };
 
 // Class Engine.MaterialFunction
-struct UMaterialFunction : UMaterialFunctionInterface {
+class UMaterialFunction : UMaterialFunctionInterface {
 	struct FString Description; // 0x40 (16)
 	char bExposeToLibrary : 0; // 0x50 (1)
 	char bPrefixParameterNames : 0; // 0x50 (1)
-	char b : 0; // 0x50 (1)
+	char bReentrantFlag : 0; // 0x50 (1)
 };
 
 // Class Engine.MaterialFunctionInstance
-struct UMaterialFunctionInstance : UMaterialFunctionInterface {
+class UMaterialFunctionInstance : UMaterialFunctionInterface {
 	struct Unknown Parent; // 0x40 (8)
 	struct Unknown Base; // 0x48 (8)
 	struct TArray<Unknown> ScalarParameterValues; // 0x50 (16)
@@ -11162,24 +11162,24 @@ struct UMaterialFunctionInstance : UMaterialFunctionInterface {
 };
 
 // Class Engine.MaterialInstanceActor
-struct AMaterialInstanceActor : UActor {
+class AMaterialInstanceActor : UActor {
 	struct TArray<Unknown> TargetActors; // 0x310 (16)
 };
 
 // Class Engine.MaterialParameterCollection
-struct UMaterialParameterCollection : Object {
+class UMaterialParameterCollection : Object {
 	struct Unknown StateID; // 0x28 (16)
 	struct TArray<Unknown> ScalarParameters; // 0x38 (16)
 	struct TArray<Unknown> VectorParameters; // 0x48 (16)
 };
 
 // Class Engine.MaterialParameterCollectionInstance
-struct UMaterialParameterCollectionInstance : Object {
+class UMaterialParameterCollectionInstance : Object {
 	struct Unknown Collection; // 0x30 (8)
 };
 
 // Class Engine.MatineeActor
-struct AMatineeActor : UActor {
+class AMatineeActor : UActor {
 	struct Unknown MatineeData; // 0x310 (8)
 	struct FName MatineeControllerName; // 0x318 (8)
 	float PlayRate; // 0x320 (4)
@@ -11187,9 +11187,9 @@ struct AMatineeActor : UActor {
 	char bForceStartPos : 0; // 0x324 (1)
 	float ForceStartPosition; // 0x328 (4)
 	char bLooping : 0; // 0x32C (1)
-	char b : 0; // 0x32C (1)
+	char bRewindOnPlay : 0; // 0x32C (1)
 	char bNoResetOnRewind : 0; // 0x32C (1)
-	char b : 0; // 0x32C (1)
+	char bRewindIfAlreadyPlaying : 0; // 0x32C (1)
 	char bDisableRadioFilter : 0; // 0x32C (1)
 	char bClientSideOnly : 0; // 0x32C (1)
 	char bSkipUpdateIfNotVisible : 0; // 0x32C (1)
@@ -11204,7 +11204,7 @@ struct AMatineeActor : UActor {
 	struct TArray<Unknown> GroupInst; // 0x350 (16)
 	struct TArray<Unknown> CameraCuts; // 0x360 (16)
 	char bIsPlaying : 0; // 0x370 (1)
-	char b : 0; // 0x370 (1)
+	char bReversePlayback : 0; // 0x370 (1)
 	char bPaused : 0; // 0x370 (1)
 	char bPendingStop : 0; // 0x370 (1)
 	float InterpPosition; // 0x374 (4)
@@ -11224,24 +11224,24 @@ struct AMatineeActor : UActor {
 };
 
 // Class Engine.MatineeActorCameraAnim
-struct AMatineeActorCameraAnim : AMatineeActor {
+class AMatineeActorCameraAnim : AMatineeActor {
 	struct Unknown CameraAnim; // 0x3B8 (8)
 };
 
 // Class Engine.MeshSimplificationSettings
-struct UMeshSimplificationSettings : UDeveloperSettings {
+class UMeshSimplificationSettings : UDeveloperSettings {
 	struct FName MeshReductionModuleName; // 0x38 (8)
 };
 
 // Class Engine.MicroTransactionBase
-struct UMicroTransactionBase : UPlatformInterfaceBase {
+class UMicroTransactionBase : UPlatformInterfaceBase {
 	struct TArray<Unknown> AvailableProducts; // 0x38 (16)
 	struct FString LastError; // 0x48 (16)
 	struct FString LastErrorSolution; // 0x58 (16)
 };
 
 // Class Engine.MK3DKillcamComponent
-struct UMK3DKillcamComponent : UActorComponent {
+class UMK3DKillcamComponent : UActorComponent {
 	struct FMulticastInlineDelegate OnMK3DKillcamCompleteEvent; // 0xB0 (16)
 	struct TArray<Unknown> MK3DKillEvents; // 0xD8 (16)
 	float KillcamBeforeSec; // 0xE8 (4)
@@ -11251,7 +11251,7 @@ struct UMK3DKillcamComponent : UActorComponent {
 };
 
 // Class Engine.MK3DTargetcamComponent
-struct UMK3DTargetcamComponent : UActorComponent {
+class UMK3DTargetcamComponent : UActorComponent {
 	struct FMulticastInlineDelegate OnMK3DTargetcamCompleteEvent; // 0xB0 (16)
 	struct TArray<Unknown> MK3DTargetEvents; // 0xD8 (16)
 
@@ -11259,12 +11259,12 @@ struct UMK3DTargetcamComponent : UActorComponent {
 };
 
 // Class Engine.MKDemoActorChannel
-struct UMKDemoActorChannel : UActorChannel {
+class UMKDemoActorChannel : UActorChannel {
 	struct TArray<Unknown> PendingNetObjectsHolder; // 0x2F0 (16)
 };
 
 // Class Engine.ReplaySampleBase
-struct UReplaySampleBase : Object {
+class UReplaySampleBase : Object {
 	char DataVersion; // 0x30 (1)
 	float Time; // 0x34 (4)
 
@@ -11272,27 +11272,27 @@ struct UReplaySampleBase : Object {
 };
 
 // Class Engine.ModelComponent
-struct UModelComponent : UPrimitiveComponent {
+class UModelComponent : UPrimitiveComponent {
 	struct Unknown ModelBodySetup; // 0x4D0 (8)
 };
 
 // Class Engine.MorphTarget
-struct UMorphTarget : Object {
+class UMorphTarget : Object {
 	struct Unknown BaseSkelMesh; // 0x28 (8)
 };
 
 // Class Engine.NavCollisionBase
-struct UNavCollisionBase : Object {
+class UNavCollisionBase : Object {
 	char bIsDynamicObstacle : 0; // 0x28 (1)
 };
 
 // Class Engine.NavigationDataChunk
-struct UNavigationDataChunk : Object {
+class UNavigationDataChunk : Object {
 	struct FName NavigationDataName; // 0x28 (8)
 };
 
 // Class Engine.NavigationSystemConfig
-struct UNavigationSystemConfig : Object {
+class UNavigationSystemConfig : Object {
 	struct Unknown NavigationSystemClass; // 0x28 (24)
 	struct Unknown SupportedAgentsMask; // 0x40 (4)
 	struct FName DefaultAgentName; // 0x44 (8)
@@ -11300,13 +11300,13 @@ struct UNavigationSystemConfig : Object {
 };
 
 // Class Engine.NavLinkDefinition
-struct UNavLinkDefinition : Object {
+class UNavLinkDefinition : Object {
 	struct TArray<Unknown> LINKS; // 0x28 (16)
 	struct TArray<Unknown> SegmentLinks; // 0x38 (16)
 };
 
 // Class Engine.NetworkSettings
-struct UNetworkSettings : UDeveloperSettings {
+class UNetworkSettings : UDeveloperSettings {
 	char bVerifyPeer : 0; // 0x38 (1)
 	char bEnableMultiplayerWorldOriginRebasing : 0; // 0x38 (1)
 	int32_t MaxRepArraySize; // 0x3C (4)
@@ -11315,7 +11315,7 @@ struct UNetworkSettings : UDeveloperSettings {
 };
 
 // Class Engine.NodeMappingContainer
-struct UNodeMappingContainer : Object {
+class UNodeMappingContainer : Object {
 	struct TMap<Unknown, Unknown>Unknown SourceItems; // 0x28 (80)
 	struct TMap<Unknown, Unknown>Unknown TargetItems; // 0x78 (80)
 	struct TMap<Unknown, Unknown>Unknown SourceToTarget; // 0xC8 (80)
@@ -11324,7 +11324,7 @@ struct UNodeMappingContainer : Object {
 };
 
 // Class Engine.ObjectLibrary
-struct UObjectLibrary : Object {
+class UObjectLibrary : Object {
 	struct Unknown* ObjectBaseClass; // 0x28 (8)
 	char bHasBlueprintClasses : 0; // 0x30 (1)
 	struct TArray<Unknown> Objects; // 0x38 (16)
@@ -11334,12 +11334,12 @@ struct UObjectLibrary : Object {
 };
 
 // Class Engine.ObjectReferencer
-struct UObjectReferencer : Object {
+class UObjectReferencer : Object {
 	struct TArray<Unknown> ReferencedObjects; // 0x28 (16)
 };
 
 // Class Engine.PainCausingVolume
-struct APainCausingVolume : APhysicsVolume {
+class APainCausingVolume : APhysicsVolume {
 	char bPainCausing : 0; // 0x358 (1)
 	float DamagePerSec; // 0x35C (4)
 	struct Unknown* DamageType; // 0x360 (8)
@@ -11350,7 +11350,7 @@ struct APainCausingVolume : APhysicsVolume {
 };
 
 // Class Engine.ParticleEmitter
-struct UParticleEmitter : Object {
+class UParticleEmitter : Object {
 	struct FName EmitterName; // 0x28 (8)
 	int32_t SubUVDataOffset; // 0x30 (4)
 	char EmitterRenderMode; // 0x34 (1)
@@ -11369,7 +11369,7 @@ struct UParticleEmitter : Object {
 };
 
 // Class Engine.ParticleLODLevel
-struct UParticleLODLevel : Object {
+class UParticleLODLevel : Object {
 	int32_t Level; // 0x28 (4)
 	char bEnabled : 0; // 0x2C (1)
 	struct Unknown RequiredModule; // 0x30 (8)
@@ -11387,7 +11387,7 @@ struct UParticleLODLevel : Object {
 };
 
 // Class Engine.ParticleModule
-struct UParticleModule : Object {
+class UParticleModule : Object {
 	char bSpawnModule : 0; // 0x28 (1)
 	char bUpdateModule : 0; // 0x28 (1)
 	char bFinalUpdateModule : 0; // 0x28 (1)
@@ -11399,45 +11399,45 @@ struct UParticleModule : Object {
 	char bEditable : 0; // 0x29 (1)
 	char LODDuplicate : 0; // 0x29 (1)
 	char bSupportsRandomSeed : 0; // 0x29 (1)
-	char b : 0; // 0x29 (1)
+	char bRequiresLoopingNotification : 0; // 0x29 (1)
 	char LODValidity; // 0x2A (1)
 };
 
 // Class Engine.ParticleModuleAccelerationBase
-struct UParticleModuleAccelerationBase : UParticleModule {
+class UParticleModuleAccelerationBase : UParticleModule {
 	char bAlwaysInWorldSpace : 0; // 0x30 (1)
 };
 
 // Class Engine.ParticleModuleAcceleration
-struct UParticleModuleAcceleration : UParticleModuleAccelerationBase {
+class UParticleModuleAcceleration : UParticleModuleAccelerationBase {
 	struct Unknown Acceleration; // 0x38 (72)
 	char bApplyOwnerScale : 0; // 0x80 (1)
 };
 
 // Class Engine.ParticleModuleAccelerationConstant
-struct UParticleModuleAccelerationConstant : UParticleModuleAccelerationBase {
+class UParticleModuleAccelerationConstant : UParticleModuleAccelerationBase {
 	struct Unknown Acceleration; // 0x38 (12)
 };
 
 // Class Engine.ParticleModuleAccelerationDrag
-struct UParticleModuleAccelerationDrag : UParticleModuleAccelerationBase {
+class UParticleModuleAccelerationDrag : UParticleModuleAccelerationBase {
 	struct Unknown DragCoefficient; // 0x38 (8)
 	struct Unknown DragCoefficientRaw; // 0x40 (48)
 };
 
 // Class Engine.ParticleModuleAccelerationDragScaleOverLife
-struct UParticleModuleAccelerationDragScaleOverLife : UParticleModuleAccelerationBase {
+class UParticleModuleAccelerationDragScaleOverLife : UParticleModuleAccelerationBase {
 	struct Unknown DragScale; // 0x38 (8)
 	struct Unknown DragScaleRaw; // 0x40 (48)
 };
 
 // Class Engine.ParticleModuleAccelerationOverLifetime
-struct UParticleModuleAccelerationOverLifetime : UParticleModuleAccelerationBase {
+class UParticleModuleAccelerationOverLifetime : UParticleModuleAccelerationBase {
 	struct Unknown AccelOverLife; // 0x38 (72)
 };
 
 // Class Engine.ParticleModuleAttractorLine
-struct UParticleModuleAttractorLine : UParticleModuleAttractorBase {
+class UParticleModuleAttractorLine : UParticleModuleAttractorBase {
 	struct Unknown EndPoint0; // 0x30 (12)
 	struct Unknown EndPoint1; // 0x3C (12)
 	struct Unknown Range; // 0x48 (48)
@@ -11445,20 +11445,20 @@ struct UParticleModuleAttractorLine : UParticleModuleAttractorBase {
 };
 
 // Class Engine.ParticleModuleAttractorParticle
-struct UParticleModuleAttractorParticle : UParticleModuleAttractorBase {
+class UParticleModuleAttractorParticle : UParticleModuleAttractorBase {
 	struct FName EmitterName; // 0x30 (8)
 	struct Unknown Range; // 0x38 (48)
 	char bStrengthByDistance : 0; // 0x68 (1)
 	struct Unknown Strength; // 0x70 (48)
 	char bAffectBaseVelocity : 0; // 0xA0 (1)
 	char SelectionMethod; // 0xA4 (1)
-	char b : 0; // 0xA8 (1)
+	char bRenewSource : 0; // 0xA8 (1)
 	char bInheritSourceVel : 0; // 0xA8 (1)
 	int32_t LastSelIndex; // 0xAC (4)
 };
 
 // Class Engine.ParticleModuleAttractorPoint
-struct UParticleModuleAttractorPoint : UParticleModuleAttractorBase {
+class UParticleModuleAttractorPoint : UParticleModuleAttractorBase {
 	struct Unknown Position; // 0x30 (72)
 	struct Unknown Range; // 0x78 (48)
 	struct Unknown Strength; // 0xA8 (48)
@@ -11475,7 +11475,7 @@ struct UParticleModuleAttractorPoint : UParticleModuleAttractorBase {
 };
 
 // Class Engine.ParticleModuleAttractorPointGravity
-struct UParticleModuleAttractorPointGravity : UParticleModuleAttractorBase {
+class UParticleModuleAttractorPointGravity : UParticleModuleAttractorBase {
 	struct Unknown Position; // 0x30 (12)
 	float Radius; // 0x3C (4)
 	struct Unknown Strength; // 0x40 (8)
@@ -11483,7 +11483,7 @@ struct UParticleModuleAttractorPointGravity : UParticleModuleAttractorBase {
 };
 
 // Class Engine.ParticleModuleBeamModifier
-struct UParticleModuleBeamModifier : UParticleModuleBeamBase {
+class UParticleModuleBeamModifier : UParticleModuleBeamBase {
 	char ModifierType; // 0x30 (1)
 	struct Unknown PositionOptions; // 0x34 (4)
 	struct Unknown Position; // 0x38 (72)
@@ -11495,7 +11495,7 @@ struct UParticleModuleBeamModifier : UParticleModuleBeamBase {
 };
 
 // Class Engine.ParticleModuleBeamNoise
-struct UParticleModuleBeamNoise : UParticleModuleBeamBase {
+class UParticleModuleBeamNoise : UParticleModuleBeamBase {
 	char bLowFreq_Enabled : 0; // 0x30 (1)
 	int32_t Frequency; // 0x34 (4)
 	int32_t Frequency_LowRange; // 0x38 (4)
@@ -11519,7 +11519,7 @@ struct UParticleModuleBeamNoise : UParticleModuleBeamBase {
 };
 
 // Class Engine.ParticleModuleBeamSource
-struct UParticleModuleBeamSource : UParticleModuleBeamBase {
+class UParticleModuleBeamSource : UParticleModuleBeamBase {
 	char SourceMethod; // 0x30 (1)
 	struct FName SourceName; // 0x34 (8)
 	char bSourceAbsolute : 0; // 0x3C (1)
@@ -11533,7 +11533,7 @@ struct UParticleModuleBeamSource : UParticleModuleBeamBase {
 };
 
 // Class Engine.ParticleModuleBeamTarget
-struct UParticleModuleBeamTarget : UParticleModuleBeamBase {
+class UParticleModuleBeamTarget : UParticleModuleBeamBase {
 	char TargetMethod; // 0x30 (1)
 	struct FName TargetName; // 0x34 (8)
 	struct Unknown Target; // 0x40 (72)
@@ -11548,14 +11548,14 @@ struct UParticleModuleBeamTarget : UParticleModuleBeamBase {
 };
 
 // Class Engine.ParticleModuleCameraOffset
-struct UParticleModuleCameraOffset : UParticleModuleCameraBase {
+class UParticleModuleCameraOffset : UParticleModuleCameraBase {
 	struct Unknown CameraOffset; // 0x30 (48)
 	char bSpawnTimeOnly : 0; // 0x60 (1)
 	char UpdateMethod; // 0x64 (1)
 };
 
 // Class Engine.ParticleModuleCollision
-struct UParticleModuleCollision : UParticleModuleCollisionBase {
+class UParticleModuleCollision : UParticleModuleCollisionBase {
 	struct Unknown DampingFactor; // 0x30 (72)
 	struct Unknown DampingFactorRotation; // 0x78 (72)
 	struct Unknown MaxCollisions; // 0xC0 (48)
@@ -11576,7 +11576,7 @@ struct UParticleModuleCollision : UParticleModuleCollisionBase {
 };
 
 // Class Engine.ParticleModuleCollisionGPU
-struct UParticleModuleCollisionGPU : UParticleModuleCollisionBase {
+class UParticleModuleCollisionGPU : UParticleModuleCollisionBase {
 	struct Unknown Resilience; // 0x30 (48)
 	struct Unknown ResilienceScaleOverLife; // 0x60 (48)
 	float Friction; // 0x90 (4)
@@ -11589,49 +11589,49 @@ struct UParticleModuleCollisionGPU : UParticleModuleCollisionBase {
 };
 
 // Class Engine.ParticleModuleColor
-struct UParticleModuleColor : UParticleModuleColorBase {
+class UParticleModuleColor : UParticleModuleColorBase {
 	struct Unknown StartColor; // 0x30 (72)
 	struct Unknown StartAlpha; // 0x78 (48)
 	char bClampAlpha : 0; // 0xA8 (1)
 };
 
 // Class Engine.ParticleModuleColor_Seeded
-struct UParticleModuleColor_Seeded : UParticleModuleColor {
+class UParticleModuleColor_Seeded : UParticleModuleColor {
 	struct Unknown RandomSeedInfo; // 0xB0 (32)
 };
 
 // Class Engine.ParticleModuleColorOverLife
-struct UParticleModuleColorOverLife : UParticleModuleColorBase {
+class UParticleModuleColorOverLife : UParticleModuleColorBase {
 	struct Unknown ColorOverLife; // 0x30 (72)
 	struct Unknown AlphaOverLife; // 0x78 (48)
 	char bClampAlpha : 0; // 0xA8 (1)
 };
 
 // Class Engine.ParticleModuleColorScaleOverLife
-struct UParticleModuleColorScaleOverLife : UParticleModuleColorBase {
+class UParticleModuleColorScaleOverLife : UParticleModuleColorBase {
 	struct Unknown ColorScaleOverLife; // 0x30 (72)
 	struct Unknown AlphaScaleOverLife; // 0x78 (48)
 	char bEmitterTime : 0; // 0xA8 (1)
 };
 
 // Class Engine.ParticleModuleEventGenerator
-struct UParticleModuleEventGenerator : UParticleModuleEventBase {
+class UParticleModuleEventGenerator : UParticleModuleEventBase {
 	struct TArray<Unknown> Events; // 0x30 (16)
 };
 
 // Class Engine.ParticleModuleEventReceiverBase
-struct UParticleModuleEventReceiverBase : UParticleModuleEventBase {
+class UParticleModuleEventReceiverBase : UParticleModuleEventBase {
 	char EventGeneratorType; // 0x30 (1)
 	struct FName EventName; // 0x34 (8)
 };
 
 // Class Engine.ParticleModuleEventReceiverKillParticles
-struct UParticleModuleEventReceiverKillParticles : UParticleModuleEventReceiverBase {
+class UParticleModuleEventReceiverKillParticles : UParticleModuleEventReceiverBase {
 	char bStopSpawning : 0; // 0x40 (1)
 };
 
 // Class Engine.ParticleModuleEventReceiverSpawn
-struct UParticleModuleEventReceiverSpawn : UParticleModuleEventReceiverBase {
+class UParticleModuleEventReceiverSpawn : UParticleModuleEventReceiverBase {
 	struct Unknown SpawnCount; // 0x40 (48)
 	char bUseParticleTime : 0; // 0x70 (1)
 	char bUsePSysLocation : 0; // 0x70 (1)
@@ -11642,7 +11642,7 @@ struct UParticleModuleEventReceiverSpawn : UParticleModuleEventReceiverBase {
 };
 
 // Class Engine.ParticleModuleKillBox
-struct UParticleModuleKillBox : UParticleModuleKillBase {
+class UParticleModuleKillBox : UParticleModuleKillBase {
 	struct Unknown LowerLeftCorner; // 0x30 (72)
 	struct Unknown UpperRightCorner; // 0x78 (72)
 	char bAbsolute : 0; // 0xC0 (1)
@@ -11651,7 +11651,7 @@ struct UParticleModuleKillBox : UParticleModuleKillBase {
 };
 
 // Class Engine.ParticleModuleKillHeight
-struct UParticleModuleKillHeight : UParticleModuleKillBase {
+class UParticleModuleKillHeight : UParticleModuleKillBase {
 	struct Unknown Height; // 0x30 (48)
 	char bAbsolute : 0; // 0x60 (1)
 	char bFloor : 0; // 0x60 (1)
@@ -11659,17 +11659,17 @@ struct UParticleModuleKillHeight : UParticleModuleKillBase {
 };
 
 // Class Engine.ParticleModuleLifetime
-struct UParticleModuleLifetime : UParticleModuleLifetimeBase {
+class UParticleModuleLifetime : UParticleModuleLifetimeBase {
 	struct Unknown LifeTime; // 0x30 (48)
 };
 
 // Class Engine.ParticleModuleLifetime_Seeded
-struct UParticleModuleLifetime_Seeded : UParticleModuleLifetime {
+class UParticleModuleLifetime_Seeded : UParticleModuleLifetime {
 	struct Unknown RandomSeedInfo; // 0x60 (32)
 };
 
 // Class Engine.ParticleModuleLight
-struct UParticleModuleLight : UParticleModuleLightBase {
+class UParticleModuleLight : UParticleModuleLightBase {
 	char bUseInverseSquaredFalloff : 0; // 0x30 (1)
 	char bAffectsTranslucency : 0; // 0x31 (1)
 	char bPreviewLightRadius : 0; // 0x32 (1)
@@ -11685,24 +11685,24 @@ struct UParticleModuleLight : UParticleModuleLightBase {
 };
 
 // Class Engine.ParticleModuleLight_Seeded
-struct UParticleModuleLight_Seeded : UParticleModuleLight {
+class UParticleModuleLight_Seeded : UParticleModuleLight {
 	struct Unknown RandomSeedInfo; // 0x120 (32)
 };
 
 // Class Engine.ParticleModuleLocation
-struct UParticleModuleLocation : UParticleModuleLocationBase {
+class UParticleModuleLocation : UParticleModuleLocationBase {
 	struct Unknown StartLocation; // 0x30 (72)
 	float DistributeOverNPoints; // 0x78 (4)
 	float DistributeThreshold; // 0x7C (4)
 };
 
 // Class Engine.ParticleModuleLocation_Seeded
-struct UParticleModuleLocation_Seeded : UParticleModuleLocation {
+class UParticleModuleLocation_Seeded : UParticleModuleLocation {
 	struct Unknown RandomSeedInfo; // 0x80 (32)
 };
 
 // Class Engine.ParticleModuleLocationBoneSocket
-struct UParticleModuleLocationBoneSocket : UParticleModuleLocationBase {
+class UParticleModuleLocationBoneSocket : UParticleModuleLocationBase {
 	char SourceType; // 0x30 (1)
 	struct Unknown UniversalOffset; // 0x34 (12)
 	struct TArray<Unknown> SourceLocations; // 0x40 (16)
@@ -11716,7 +11716,7 @@ struct UParticleModuleLocationBoneSocket : UParticleModuleLocationBase {
 };
 
 // Class Engine.ParticleModuleLocationDirect
-struct UParticleModuleLocationDirect : UParticleModuleLocationBase {
+class UParticleModuleLocationDirect : UParticleModuleLocationBase {
 	struct Unknown Location; // 0x30 (72)
 	struct Unknown LocationOffset; // 0x78 (72)
 	struct Unknown ScaleFactor; // 0xC0 (72)
@@ -11724,7 +11724,7 @@ struct UParticleModuleLocationDirect : UParticleModuleLocationBase {
 };
 
 // Class Engine.ParticleModuleLocationEmitter
-struct UParticleModuleLocationEmitter : UParticleModuleLocationBase {
+class UParticleModuleLocationEmitter : UParticleModuleLocationBase {
 	struct FName EmitterName; // 0x30 (8)
 	char SelectionMethod; // 0x38 (1)
 	char InheritSourceVelocity : 0; // 0x3C (1)
@@ -11734,12 +11734,12 @@ struct UParticleModuleLocationEmitter : UParticleModuleLocationBase {
 };
 
 // Class Engine.ParticleModuleLocationEmitterDirect
-struct UParticleModuleLocationEmitterDirect : UParticleModuleLocationBase {
+class UParticleModuleLocationEmitterDirect : UParticleModuleLocationBase {
 	struct FName EmitterName; // 0x30 (8)
 };
 
 // Class Engine.ParticleModuleLocationPrimitiveBase
-struct UParticleModuleLocationPrimitiveBase : UParticleModuleLocationBase {
+class UParticleModuleLocationPrimitiveBase : UParticleModuleLocationBase {
 	char Positive_X : 0; // 0x30 (1)
 	char Positive_Y : 0; // 0x30 (1)
 	char Positive_Z : 0; // 0x30 (1)
@@ -11753,7 +11753,7 @@ struct UParticleModuleLocationPrimitiveBase : UParticleModuleLocationBase {
 };
 
 // Class Engine.ParticleModuleLocationPrimitiveCylinder
-struct UParticleModuleLocationPrimitiveCylinder : UParticleModuleLocationPrimitiveBase {
+class UParticleModuleLocationPrimitiveCylinder : UParticleModuleLocationPrimitiveBase {
 	char RadialVelocity : 0; // 0xB0 (1)
 	struct Unknown StartRadius; // 0xB8 (48)
 	struct Unknown StartHeight; // 0xE8 (48)
@@ -11761,22 +11761,22 @@ struct UParticleModuleLocationPrimitiveCylinder : UParticleModuleLocationPrimiti
 };
 
 // Class Engine.ParticleModuleLocationPrimitiveCylinder_Seeded
-struct UParticleModuleLocationPrimitiveCylinder_Seeded : UParticleModuleLocationPrimitiveCylinder {
+class UParticleModuleLocationPrimitiveCylinder_Seeded : UParticleModuleLocationPrimitiveCylinder {
 	struct Unknown RandomSeedInfo; // 0x120 (32)
 };
 
 // Class Engine.ParticleModuleLocationPrimitiveSphere
-struct UParticleModuleLocationPrimitiveSphere : UParticleModuleLocationPrimitiveBase {
+class UParticleModuleLocationPrimitiveSphere : UParticleModuleLocationPrimitiveBase {
 	struct Unknown StartRadius; // 0xB0 (48)
 };
 
 // Class Engine.ParticleModuleLocationPrimitiveSphere_Seeded
-struct UParticleModuleLocationPrimitiveSphere_Seeded : UParticleModuleLocationPrimitiveSphere {
+class UParticleModuleLocationPrimitiveSphere_Seeded : UParticleModuleLocationPrimitiveSphere {
 	struct Unknown RandomSeedInfo; // 0xE0 (32)
 };
 
 // Class Engine.ParticleModuleLocationPrimitiveTriangle
-struct UParticleModuleLocationPrimitiveTriangle : UParticleModuleLocationBase {
+class UParticleModuleLocationPrimitiveTriangle : UParticleModuleLocationBase {
 	struct Unknown StartOffset; // 0x30 (72)
 	struct Unknown Height; // 0x78 (48)
 	struct Unknown Angle; // 0xA8 (48)
@@ -11784,7 +11784,7 @@ struct UParticleModuleLocationPrimitiveTriangle : UParticleModuleLocationBase {
 };
 
 // Class Engine.ParticleModuleLocationSkelVertSurface
-struct UParticleModuleLocationSkelVertSurface : UParticleModuleLocationBase {
+class UParticleModuleLocationSkelVertSurface : UParticleModuleLocationBase {
 	char SourceType; // 0x30 (1)
 	struct Unknown UniversalOffset; // 0x34 (12)
 	char bUpdatePositionEachFrame : 0; // 0x40 (1)
@@ -11804,54 +11804,54 @@ struct UParticleModuleLocationSkelVertSurface : UParticleModuleLocationBase {
 };
 
 // Class Engine.ParticleModuleLocationWorldOffset_Seeded
-struct UParticleModuleLocationWorldOffset_Seeded : UParticleModuleLocationWorldOffset {
+class UParticleModuleLocationWorldOffset_Seeded : UParticleModuleLocationWorldOffset {
 	struct Unknown RandomSeedInfo; // 0x80 (32)
 };
 
 // Class Engine.ParticleModuleMeshMaterial
-struct UParticleModuleMeshMaterial : UParticleModuleMaterialBase {
+class UParticleModuleMeshMaterial : UParticleModuleMaterialBase {
 	struct TArray<Unknown> MeshMaterials; // 0x30 (16)
 };
 
 // Class Engine.ParticleModuleMeshRotation
-struct UParticleModuleMeshRotation : UParticleModuleRotationBase {
+class UParticleModuleMeshRotation : UParticleModuleRotationBase {
 	struct Unknown StartRotation; // 0x30 (72)
 	char bInheritParent : 0; // 0x78 (1)
 };
 
 // Class Engine.ParticleModuleMeshRotation_Seeded
-struct UParticleModuleMeshRotation_Seeded : UParticleModuleMeshRotation {
+class UParticleModuleMeshRotation_Seeded : UParticleModuleMeshRotation {
 	struct Unknown RandomSeedInfo; // 0x80 (32)
 };
 
 // Class Engine.ParticleModuleMeshRotationRate
-struct UParticleModuleMeshRotationRate : UParticleModuleRotationRateBase {
+class UParticleModuleMeshRotationRate : UParticleModuleRotationRateBase {
 	struct Unknown StartRotationRate; // 0x30 (72)
 };
 
 // Class Engine.ParticleModuleMeshRotationRate_Seeded
-struct UParticleModuleMeshRotationRate_Seeded : UParticleModuleMeshRotationRate {
+class UParticleModuleMeshRotationRate_Seeded : UParticleModuleMeshRotationRate {
 	struct Unknown RandomSeedInfo; // 0x78 (32)
 };
 
 // Class Engine.ParticleModuleMeshRotationRateMultiplyLife
-struct UParticleModuleMeshRotationRateMultiplyLife : UParticleModuleRotationRateBase {
+class UParticleModuleMeshRotationRateMultiplyLife : UParticleModuleRotationRateBase {
 	struct Unknown LifeMultiplier; // 0x30 (72)
 };
 
 // Class Engine.ParticleModuleMeshRotationRateOverLife
-struct UParticleModuleMeshRotationRateOverLife : UParticleModuleRotationRateBase {
+class UParticleModuleMeshRotationRateOverLife : UParticleModuleRotationRateBase {
 	struct Unknown RotRate; // 0x30 (72)
 	char bScaleRotRate : 0; // 0x78 (1)
 };
 
 // Class Engine.ParticleModuleOrbitBase
-struct UParticleModuleOrbitBase : UParticleModule {
+class UParticleModuleOrbitBase : UParticleModule {
 	char bUseEmitterTime : 0; // 0x30 (1)
 };
 
 // Class Engine.ParticleModuleOrbit
-struct UParticleModuleOrbit : UParticleModuleOrbitBase {
+class UParticleModuleOrbit : UParticleModuleOrbitBase {
 	char ChainMode; // 0x38 (1)
 	struct Unknown OffsetAmount; // 0x40 (72)
 	struct Unknown OffsetOptions; // 0x88 (4)
@@ -11862,29 +11862,29 @@ struct UParticleModuleOrbit : UParticleModuleOrbitBase {
 };
 
 // Class Engine.ParticleModuleOrientationAxisLock
-struct UParticleModuleOrientationAxisLock : UParticleModuleOrientationBase {
+class UParticleModuleOrientationAxisLock : UParticleModuleOrientationBase {
 	char LockAxisFlags; // 0x30 (1)
 };
 
 // Class Engine.ParticleModuleParameterDynamic
-struct UParticleModuleParameterDynamic : UParticleModuleParameterBase {
+class UParticleModuleParameterDynamic : UParticleModuleParameterBase {
 	struct TArray<Unknown> DynamicParams; // 0x30 (16)
 	int32_t UpdateFlags; // 0x40 (4)
 	char bUsesVelocity : 0; // 0x44 (1)
 };
 
 // Class Engine.ParticleModuleParameterDynamic_Seeded
-struct UParticleModuleParameterDynamic_Seeded : UParticleModuleParameterDynamic {
+class UParticleModuleParameterDynamic_Seeded : UParticleModuleParameterDynamic {
 	struct Unknown RandomSeedInfo; // 0x48 (32)
 };
 
 // Class Engine.ParticleModulePivotOffset
-struct UParticleModulePivotOffset : UParticleModuleLocationBase {
+class UParticleModulePivotOffset : UParticleModuleLocationBase {
 	struct Unknown PivotOffset; // 0x30 (8)
 };
 
 // Class Engine.ParticleModuleRequired
-struct UParticleModuleRequired : UParticleModule {
+class UParticleModuleRequired : UParticleModule {
 	struct Unknown Material; // 0x30 (8)
 	float MinFacingCameraBlendDistance; // 0x38 (4)
 	float MaxFacingCameraBlendDistance; // 0x3C (4)
@@ -11896,7 +11896,7 @@ struct UParticleModuleRequired : UParticleModule {
 	char bKillOnCompleted : 0; // 0x59 (1)
 	char SortMode; // 0x5A (1)
 	char bUseLegacyEmitterTime : 0; // 0x5B (1)
-	char b : 0; // 0x5B (1)
+	char bRemoveHMDRoll : 0; // 0x5B (1)
 	char bEmitterDurationUseRange : 0; // 0x5B (1)
 	float EmitterDuration; // 0x5C (4)
 	struct Unknown SpawnRate; // 0x60 (48)
@@ -11933,48 +11933,48 @@ struct UParticleModuleRequired : UParticleModule {
 };
 
 // Class Engine.ParticleModuleRotation
-struct UParticleModuleRotation : UParticleModuleRotationBase {
+class UParticleModuleRotation : UParticleModuleRotationBase {
 	struct Unknown StartRotation; // 0x30 (48)
 };
 
 // Class Engine.ParticleModuleRotation_Seeded
-struct UParticleModuleRotation_Seeded : UParticleModuleRotation {
+class UParticleModuleRotation_Seeded : UParticleModuleRotation {
 	struct Unknown RandomSeedInfo; // 0x60 (32)
 };
 
 // Class Engine.ParticleModuleRotationOverLifetime
-struct UParticleModuleRotationOverLifetime : UParticleModuleRotationBase {
+class UParticleModuleRotationOverLifetime : UParticleModuleRotationBase {
 	struct Unknown RotationOverLife; // 0x30 (48)
 	char Scale : 0; // 0x60 (1)
 };
 
 // Class Engine.ParticleModuleRotationRate
-struct UParticleModuleRotationRate : UParticleModuleRotationRateBase {
+class UParticleModuleRotationRate : UParticleModuleRotationRateBase {
 	struct Unknown StartRotationRate; // 0x30 (48)
 };
 
 // Class Engine.ParticleModuleRotationRate_Seeded
-struct UParticleModuleRotationRate_Seeded : UParticleModuleRotationRate {
+class UParticleModuleRotationRate_Seeded : UParticleModuleRotationRate {
 	struct Unknown RandomSeedInfo; // 0x60 (32)
 };
 
 // Class Engine.ParticleModuleRotationRateMultiplyLife
-struct UParticleModuleRotationRateMultiplyLife : UParticleModuleRotationRateBase {
+class UParticleModuleRotationRateMultiplyLife : UParticleModuleRotationRateBase {
 	struct Unknown LifeMultiplier; // 0x30 (48)
 };
 
 // Class Engine.ParticleModuleSize
-struct UParticleModuleSize : UParticleModuleSizeBase {
+class UParticleModuleSize : UParticleModuleSizeBase {
 	struct Unknown StartSize; // 0x30 (72)
 };
 
 // Class Engine.ParticleModuleSize_Seeded
-struct UParticleModuleSize_Seeded : UParticleModuleSize {
+class UParticleModuleSize_Seeded : UParticleModuleSize {
 	struct Unknown RandomSeedInfo; // 0x78 (32)
 };
 
 // Class Engine.ParticleModuleSizeMultiplyLife
-struct UParticleModuleSizeMultiplyLife : UParticleModuleSizeBase {
+class UParticleModuleSizeMultiplyLife : UParticleModuleSizeBase {
 	struct Unknown LifeMultiplier; // 0x30 (72)
 	char MultiplyX : 0; // 0x78 (1)
 	char MultiplyY : 0; // 0x78 (1)
@@ -11982,7 +11982,7 @@ struct UParticleModuleSizeMultiplyLife : UParticleModuleSizeBase {
 };
 
 // Class Engine.ParticleModuleSizeScale
-struct UParticleModuleSizeScale : UParticleModuleSizeBase {
+class UParticleModuleSizeScale : UParticleModuleSizeBase {
 	struct Unknown SizeScale; // 0x30 (72)
 	char EnableX : 0; // 0x78 (1)
 	char EnableY : 0; // 0x78 (1)
@@ -11990,24 +11990,24 @@ struct UParticleModuleSizeScale : UParticleModuleSizeBase {
 };
 
 // Class Engine.ParticleModuleSizeScaleBySpeed
-struct UParticleModuleSizeScaleBySpeed : UParticleModuleSizeBase {
+class UParticleModuleSizeScaleBySpeed : UParticleModuleSizeBase {
 	struct Unknown SpeedScale; // 0x30 (8)
 	struct Unknown MaxScale; // 0x38 (8)
 };
 
 // Class Engine.ParticleModuleSourceMovement
-struct UParticleModuleSourceMovement : UParticleModuleLocationBase {
+class UParticleModuleSourceMovement : UParticleModuleLocationBase {
 	struct Unknown SourceMovementScale; // 0x30 (72)
 };
 
 // Class Engine.ParticleModuleSpawnBase
-struct UParticleModuleSpawnBase : UParticleModule {
+class UParticleModuleSpawnBase : UParticleModule {
 	char bProcessSpawnRate : 0; // 0x30 (1)
 	char bProcessBurstList : 0; // 0x30 (1)
 };
 
 // Class Engine.ParticleModuleSpawn
-struct UParticleModuleSpawn : UParticleModuleSpawnBase {
+class UParticleModuleSpawn : UParticleModuleSpawnBase {
 	struct Unknown Rate; // 0x38 (48)
 	struct Unknown RateScale; // 0x68 (48)
 	char ParticleBurstMethod; // 0x98 (1)
@@ -12017,7 +12017,7 @@ struct UParticleModuleSpawn : UParticleModuleSpawnBase {
 };
 
 // Class Engine.ParticleModuleSpawnPerUnit
-struct UParticleModuleSpawnPerUnit : UParticleModuleSpawnBase {
+class UParticleModuleSpawnPerUnit : UParticleModuleSpawnBase {
 	float UnitScalar; // 0x38 (4)
 	float MovementTolerance; // 0x3C (4)
 	struct Unknown SpawnPerUnit; // 0x40 (48)
@@ -12029,21 +12029,21 @@ struct UParticleModuleSpawnPerUnit : UParticleModuleSpawnBase {
 };
 
 // Class Engine.ParticleModuleSubUV
-struct UParticleModuleSubUV : UParticleModuleSubUVBase {
+class UParticleModuleSubUV : UParticleModuleSubUVBase {
 	struct Unknown Animation; // 0x30 (8)
 	struct Unknown SubImageIndex; // 0x38 (48)
 	char bUseRealTime : 0; // 0x68 (1)
 };
 
 // Class Engine.ParticleModuleSubUVMovie
-struct UParticleModuleSubUVMovie : UParticleModuleSubUV {
+class UParticleModuleSubUVMovie : UParticleModuleSubUV {
 	char bUseEmitterTime : 0; // 0x70 (1)
 	struct Unknown FrameRate; // 0x78 (48)
 	int32_t StartingFrame; // 0xA8 (4)
 };
 
 // Class Engine.ParticleModuleTrailSource
-struct UParticleModuleTrailSource : UParticleModuleTrailBase {
+class UParticleModuleTrailSource : UParticleModuleTrailBase {
 	char SourceMethod; // 0x30 (1)
 	struct FName SourceName; // 0x34 (8)
 	struct Unknown SourceStrength; // 0x40 (48)
@@ -12055,7 +12055,7 @@ struct UParticleModuleTrailSource : UParticleModuleTrailBase {
 };
 
 // Class Engine.ParticleModuleTypeDataAnimTrail
-struct UParticleModuleTypeDataAnimTrail : UParticleModuleTypeDataBase {
+class UParticleModuleTypeDataAnimTrail : UParticleModuleTypeDataBase {
 	char bDeadTrailsOnDeactivate : 0; // 0x30 (1)
 	char bEnablePreviousTangentRecalculation : 0; // 0x30 (1)
 	char bTangentRecalculationEveryFrame : 0; // 0x30 (1)
@@ -12066,7 +12066,7 @@ struct UParticleModuleTypeDataAnimTrail : UParticleModuleTypeDataBase {
 };
 
 // Class Engine.ParticleModuleTypeDataBeam2
-struct UParticleModuleTypeDataBeam2 : UParticleModuleTypeDataBase {
+class UParticleModuleTypeDataBeam2 : UParticleModuleTypeDataBase {
 	char BeamMethod; // 0x30 (1)
 	int32_t TextureTile; // 0x34 (4)
 	float TextureTileDistance; // 0x38 (4)
@@ -12088,7 +12088,7 @@ struct UParticleModuleTypeDataBeam2 : UParticleModuleTypeDataBase {
 };
 
 // Class Engine.ParticleModuleTypeDataGpu
-struct UParticleModuleTypeDataGpu : UParticleModuleTypeDataBase {
+class UParticleModuleTypeDataGpu : UParticleModuleTypeDataBase {
 	struct Unknown EmitterInfo; // 0x30 (640)
 	struct Unknown ResourceData; // 0x2B0 (352)
 	float CameraMotionBlurAmount; // 0x410 (4)
@@ -12096,7 +12096,7 @@ struct UParticleModuleTypeDataGpu : UParticleModuleTypeDataBase {
 };
 
 // Class Engine.ParticleModuleTypeDataMesh
-struct UParticleModuleTypeDataMesh : UParticleModuleTypeDataBase {
+class UParticleModuleTypeDataMesh : UParticleModuleTypeDataBase {
 	struct Unknown Mesh; // 0x30 (8)
 	float LODSizeScale; // 0x40 (4)
 	char bUseStaticMeshLODs : 0; // 0x44 (1)
@@ -12117,7 +12117,7 @@ struct UParticleModuleTypeDataMesh : UParticleModuleTypeDataBase {
 };
 
 // Class Engine.ParticleModuleTypeDataRibbon
-struct UParticleModuleTypeDataRibbon : UParticleModuleTypeDataBase {
+class UParticleModuleTypeDataRibbon : UParticleModuleTypeDataBase {
 	int32_t MaxTessellationBetweenParticles; // 0x30 (4)
 	int32_t SheetsPerTrail; // 0x34 (4)
 	int32_t MaxTrailCount; // 0x38 (4)
@@ -12130,10 +12130,10 @@ struct UParticleModuleTypeDataRibbon : UParticleModuleTypeDataBase {
 	char bSpawnInitialParticle : 0; // 0x40 (1)
 	char RenderAxis; // 0x44 (1)
 	float TangentSpawningScalar; // 0x48 (4)
-	char b : 0; // 0x4C (1)
-	char b : 0; // 0x4C (1)
-	char b : 0; // 0x4C (1)
-	char b : 0; // 0x4C (1)
+	char bRenderGeometry : 0; // 0x4C (1)
+	char bRenderSpawnPoints : 0; // 0x4C (1)
+	char bRenderTangents : 0; // 0x4C (1)
+	char bRenderTessellation : 0; // 0x4C (1)
 	float TilingDistance; // 0x50 (4)
 	float DistanceTessellationStepSize; // 0x54 (4)
 	char bEnableTangentDiffInterpScale : 0; // 0x58 (1)
@@ -12141,14 +12141,14 @@ struct UParticleModuleTypeDataRibbon : UParticleModuleTypeDataBase {
 };
 
 // Class Engine.ParticleModuleVectorFieldGlobal
-struct UParticleModuleVectorFieldGlobal : UParticleModuleVectorFieldBase {
+class UParticleModuleVectorFieldGlobal : UParticleModuleVectorFieldBase {
 	char bOverrideGlobalVectorFieldTightness : 0; // 0x30 (1)
 	float GlobalVectorFieldScale; // 0x34 (4)
 	float GlobalVectorFieldTightness; // 0x38 (4)
 };
 
 // Class Engine.ParticleModuleVectorFieldLocal
-struct UParticleModuleVectorFieldLocal : UParticleModuleVectorFieldBase {
+class UParticleModuleVectorFieldLocal : UParticleModuleVectorFieldBase {
 	struct Unknown VectorField; // 0x30 (8)
 	struct Unknown RelativeTranslation; // 0x38 (12)
 	struct Unknown RelativeRotation; // 0x44 (12)
@@ -12163,65 +12163,65 @@ struct UParticleModuleVectorFieldLocal : UParticleModuleVectorFieldBase {
 };
 
 // Class Engine.ParticleModuleVectorFieldRotation
-struct UParticleModuleVectorFieldRotation : UParticleModuleVectorFieldBase {
+class UParticleModuleVectorFieldRotation : UParticleModuleVectorFieldBase {
 	struct Unknown MinInitialRotation; // 0x30 (12)
 	struct Unknown MaxInitialRotation; // 0x3C (12)
 };
 
 // Class Engine.ParticleModuleVectorFieldRotationRate
-struct UParticleModuleVectorFieldRotationRate : UParticleModuleVectorFieldBase {
+class UParticleModuleVectorFieldRotationRate : UParticleModuleVectorFieldBase {
 	struct Unknown RotationRate; // 0x30 (12)
 };
 
 // Class Engine.ParticleModuleVectorFieldScale
-struct UParticleModuleVectorFieldScale : UParticleModuleVectorFieldBase {
+class UParticleModuleVectorFieldScale : UParticleModuleVectorFieldBase {
 	struct Unknown VectorFieldScale; // 0x30 (8)
 	struct Unknown VectorFieldScaleRaw; // 0x38 (48)
 };
 
 // Class Engine.ParticleModuleVectorFieldScaleOverLife
-struct UParticleModuleVectorFieldScaleOverLife : UParticleModuleVectorFieldBase {
+class UParticleModuleVectorFieldScaleOverLife : UParticleModuleVectorFieldBase {
 	struct Unknown VectorFieldScaleOverLife; // 0x30 (8)
 	struct Unknown VectorFieldScaleOverLifeRaw; // 0x38 (48)
 };
 
 // Class Engine.ParticleModuleVelocityBase
-struct UParticleModuleVelocityBase : UParticleModule {
+class UParticleModuleVelocityBase : UParticleModule {
 	char bInWorldSpace : 0; // 0x30 (1)
 	char bApplyOwnerScale : 0; // 0x30 (1)
 };
 
 // Class Engine.ParticleModuleVelocity
-struct UParticleModuleVelocity : UParticleModuleVelocityBase {
+class UParticleModuleVelocity : UParticleModuleVelocityBase {
 	struct Unknown StartVelocity; // 0x38 (72)
 	struct Unknown StartVelocityRadial; // 0x80 (48)
 };
 
 // Class Engine.ParticleModuleVelocity_Seeded
-struct UParticleModuleVelocity_Seeded : UParticleModuleVelocity {
+class UParticleModuleVelocity_Seeded : UParticleModuleVelocity {
 	struct Unknown RandomSeedInfo; // 0xB0 (32)
 };
 
 // Class Engine.ParticleModuleVelocityCone
-struct UParticleModuleVelocityCone : UParticleModuleVelocityBase {
+class UParticleModuleVelocityCone : UParticleModuleVelocityBase {
 	struct Unknown Angle; // 0x38 (48)
 	struct Unknown Velocity; // 0x68 (48)
 	struct Unknown Direction; // 0x98 (12)
 };
 
 // Class Engine.ParticleModuleVelocityInheritParent
-struct UParticleModuleVelocityInheritParent : UParticleModuleVelocityBase {
+class UParticleModuleVelocityInheritParent : UParticleModuleVelocityBase {
 	struct Unknown Scale; // 0x38 (72)
 };
 
 // Class Engine.ParticleModuleVelocityOverLifetime
-struct UParticleModuleVelocityOverLifetime : UParticleModuleVelocityBase {
+class UParticleModuleVelocityOverLifetime : UParticleModuleVelocityBase {
 	struct Unknown VelOverLife; // 0x38 (72)
 	char Absolute : 0; // 0x80 (1)
 };
 
 // Class Engine.ParticleSystem
-struct UParticleSystem : UFXSystemAsset {
+class UParticleSystem : UFXSystemAsset {
 	float UpdateTime_FPS; // 0x30 (4)
 	float UpdateTime_Delta; // 0x34 (4)
 	float WarmupTime; // 0x38 (4)
@@ -12246,7 +12246,7 @@ struct UParticleSystem : UFXSystemAsset {
 	char bUseDelayRange : 0; // 0xB1 (1)
 	char bAllowManagedTicking : 0; // 0xB1 (1)
 	char bAutoDeactivate : 0; // 0xB1 (1)
-	char b : 0; // 0xB1 (1)
+	char bRegenerateLODDuplicate : 0; // 0xB1 (1)
 	char SystemUpdateMode; // 0xB2 (1)
 	char LODMethod; // 0xB3 (1)
 	enum class Unknow InsignificantReaction; // 0xB4 (1)
@@ -12263,18 +12263,18 @@ struct UParticleSystem : UFXSystemAsset {
 };
 
 // Class Engine.ParticleSystemComponent
-struct UParticleSystemComponent : UFXSystemComponent {
+class UParticleSystemComponent : UFXSystemComponent {
 	struct Unknown Template; // 0x4B8 (8)
 	struct TArray<Unknown> EmitterMaterials; // 0x4C0 (16)
 	struct TArray<Unknown> SkelMeshComponents; // 0x4D0 (16)
-	char b : 0; // 0x4E1 (1)
+	char bResetOnDetach : 0; // 0x4E1 (1)
 	char bUpdateOnDedicatedServer : 0; // 0x4E1 (1)
 	char bAllowRecycling : 0; // 0x4E1 (1)
 	char bAutoManageAttachment : 0; // 0x4E1 (1)
 	char bAutoAttachWeldSimulatedBodies : 0; // 0x4E1 (1)
 	char bWarmingUp : 0; // 0x4E2 (1)
 	char bOverrideLODMethod : 0; // 0x4E2 (1)
-	char bSkipUpdateDynamicDataDuringTick : 0; // 0x4E2 (1)
+	char bSkipUpdateDynamicDataDuringTic : 0; // 0x4E2 (1)
 	char LODMethod; // 0x4ED (1)
 	enum class Unknow RequiredSignificance; // 0x4EE (1)
 	struct TArray<Unknown> InstanceParameters; // 0x4F0 (16)
@@ -12325,12 +12325,12 @@ struct UParticleSystemComponent : UFXSystemComponent {
 };
 
 // Class Engine.ParticleSystemReplay
-struct UParticleSystemReplay : Object {
+class UParticleSystemReplay : Object {
 	int32_t ClipIDNumber; // 0x28 (4)
 };
 
 // Class Engine.PawnNoiseEmitterComponent
-struct UPawnNoiseEmitterComponent : UActorComponent {
+class UPawnNoiseEmitterComponent : UActorComponent {
 	char bAIPerceptionSystemCompatibilityMode : 0; // 0xB0 (1)
 	struct Unknown LastRemoteNoisePosition; // 0xB4 (12)
 	float NoiseLifetime; // 0xC0 (4)
@@ -12343,7 +12343,7 @@ struct UPawnNoiseEmitterComponent : UActorComponent {
 };
 
 // Class Engine.PhysicalAnimationComponent
-struct UPhysicalAnimationComponent : UActorComponent {
+class UPhysicalAnimationComponent : UActorComponent {
 	float StrengthMultiplyer; // 0xB0 (4)
 	struct Unknown SkeletalMeshComponent; // 0xB8 (8)
 
@@ -12356,14 +12356,14 @@ struct UPhysicalAnimationComponent : UActorComponent {
 };
 
 // Class Engine.PhysicalMaterialMask
-struct UPhysicalMaterialMask : Object {
+class UPhysicalMaterialMask : Object {
 	int32_t UVChannelIndex; // 0x28 (4)
 	char AddressX; // 0x2C (1)
 	char AddressY; // 0x2D (1)
 };
 
 // Class Engine.PhysicsAsset
-struct UPhysicsAsset : Object {
+class UPhysicsAsset : Object {
 	struct TArray<Unknown> BoundsBodies; // 0x30 (16)
 	struct TArray<Unknown> SkeletalBodySetups; // 0x40 (16)
 	struct TArray<Unknown> ConstraintSetup; // 0x50 (16)
@@ -12374,13 +12374,13 @@ struct UPhysicsAsset : Object {
 };
 
 // Class Engine.SkeletalBodySetup
-struct USkeletalBodySetup : UBodySetup {
+class USkeletalBodySetup : UBodySetup {
 	char bSkipScaleFromAnimation : 0; // 0x2D0 (1)
 	struct TArray<Unknown> PhysicalAnimationData; // 0x2D8 (16)
 };
 
 // Class Engine.PhysicsCollisionHandler
-struct UPhysicsCollisionHandler : Object {
+class UPhysicsCollisionHandler : Object {
 	float ImpactThreshold; // 0x28 (4)
 	float ImpactReFireDelay; // 0x2C (4)
 	struct Unknown DefaultImpactSound; // 0x30 (8)
@@ -12388,7 +12388,7 @@ struct UPhysicsCollisionHandler : Object {
 };
 
 // Class Engine.PhysicsConstraintActor
-struct APhysicsConstraintActor : ARigidBodyBase {
+class APhysicsConstraintActor : ARigidBodyBase {
 	struct Unknown ConstraintComp; // 0x310 (8)
 	struct Unknown ConstraintActor1; // 0x318 (8)
 	struct Unknown ConstraintActor2; // 0x320 (8)
@@ -12396,7 +12396,7 @@ struct APhysicsConstraintActor : ARigidBodyBase {
 };
 
 // Class Engine.PhysicsConstraintComponent
-struct UPhysicsConstraintComponent : USceneComponent {
+class UPhysicsConstraintComponent : USceneComponent {
 	struct Unknown ConstraintActor1; // 0x238 (8)
 	struct Unknown ComponentName1; // 0x240 (8)
 	struct Unknown ConstraintActor2; // 0x248 (8)
@@ -12442,14 +12442,14 @@ struct UPhysicsConstraintComponent : USceneComponent {
 };
 
 // Class Engine.PhysicsConstraintTemplate
-struct UPhysicsConstraintTemplate : Object {
+class UPhysicsConstraintTemplate : Object {
 	struct Unknown DefaultInstance; // 0x28 (440)
 	struct TArray<Unknown> ProfileHandles; // 0x1E0 (16)
 	struct Unknown DefaultProfile; // 0x1F0 (260)
 };
 
 // Class Engine.PhysicsHandleComponent
-struct UPhysicsHandleComponent : UActorComponent {
+class UPhysicsHandleComponent : UActorComponent {
 	struct Unknown GrabbedComponent; // 0xB0 (8)
 	char bSoftAngularConstraint : 0; // 0xC0 (1)
 	char bSoftLinearConstraint : 0; // 0xC0 (1)
@@ -12477,7 +12477,7 @@ struct UPhysicsHandleComponent : UActorComponent {
 };
 
 // Class Engine.PhysicsSettings
-struct UPhysicsSettings : UDeveloperSettings {
+class UPhysicsSettings : UDeveloperSettings {
 	float DefaultGravityZ; // 0x38 (4)
 	float DefaultTerminalVelocity; // 0x3C (4)
 	float DefaultFluidFriction; // 0x40 (4)
@@ -12526,7 +12526,7 @@ struct UPhysicsSettings : UDeveloperSettings {
 };
 
 // Class Engine.PhysicsSpringComponent
-struct UPhysicsSpringComponent : USceneComponent {
+class UPhysicsSpringComponent : USceneComponent {
 	float SpringStiffness; // 0x238 (4)
 	float SpringDamping; // 0x23C (4)
 	float SpringLengthAtRest; // 0x240 (4)
@@ -12542,17 +12542,17 @@ struct UPhysicsSpringComponent : USceneComponent {
 };
 
 // Class Engine.PhysicsThruster
-struct APhysicsThruster : ARigidBodyBase {
+class APhysicsThruster : ARigidBodyBase {
 	struct Unknown ThrusterComponent; // 0x310 (8)
 };
 
 // Class Engine.PhysicsThrusterComponent
-struct UPhysicsThrusterComponent : USceneComponent {
+class UPhysicsThrusterComponent : USceneComponent {
 	float ThrustStrength; // 0x238 (4)
 };
 
 // Class Engine.PlanarReflection
-struct APlanarReflection : ASceneCapture {
+class APlanarReflection : ASceneCapture {
 	struct Unknown PlanarReflectionComponent; // 0x320 (8)
 	char bShowPreviewPlane : 0; // 0x328 (1)
 
@@ -12560,7 +12560,7 @@ struct APlanarReflection : ASceneCapture {
 };
 
 // Class Engine.PlanarReflectionComponent
-struct UPlanarReflectionComponent : USceneCaptureComponent {
+class UPlanarReflectionComponent : USceneCaptureComponent {
 	struct Unknown PreviewBox; // 0x2D0 (8)
 	float NormalDistortionStrength; // 0x2D8 (4)
 	float PrefilterRoughness; // 0x2DC (4)
@@ -12574,18 +12574,18 @@ struct UPlanarReflectionComponent : USceneCaptureComponent {
 	float AngleFromPlaneFadeStart; // 0x2FC (4)
 	float AngleFromPlaneFadeEnd; // 0x300 (4)
 	char bShowPreviewPlane : 0; // 0x304 (1)
-	char b : 0; // 0x305 (1)
+	char bRenderSceneTwoSided : 0; // 0x305 (1)
 };
 
 // Class Engine.PlaneReflectionCaptureComponent
-struct UPlaneReflectionCaptureComponent : UReflectionCaptureComponent {
+class UPlaneReflectionCaptureComponent : UReflectionCaptureComponent {
 	float InfluenceRadiusScale; // 0x2C0 (4)
 	struct Unknown PreviewInfluenceRadius; // 0x2C8 (8)
 	struct Unknown PreviewCaptureBox; // 0x2D0 (8)
 };
 
 // Class Engine.PlatformEventsComponent
-struct UPlatformEventsComponent : UActorComponent {
+class UPlatformEventsComponent : UActorComponent {
 	struct FMulticastInlineDelegate PlatformChangedToLaptopModeDelegate; // 0xB0 (16)
 	struct FMulticastInlineDelegate PlatformChangedToTabletModeDelegate; // 0xC0 (16)
 
@@ -12596,7 +12596,7 @@ struct UPlatformEventsComponent : UActorComponent {
 };
 
 // Class Engine.PlatformInterfaceWebResponse
-struct UPlatformInterfaceWebResponse : Object {
+class UPlatformInterfaceWebResponse : Object {
 	struct FString OriginalURL; // 0x28 (16)
 	int32_t responsecode; // 0x38 (4)
 	int32_t Tag; // 0x3C (4)
@@ -12609,7 +12609,7 @@ struct UPlatformInterfaceWebResponse : Object {
 };
 
 // Class Engine.PlayerInput
-struct UPlayerInput : Object {
+class UPlayerInput : Object {
 	struct TArray<Unknown> DebugExecBindings; // 0x120 (16)
 	struct TArray<Unknown> InvertedAxis; // 0x160 (16)
 
@@ -12621,7 +12621,7 @@ struct UPlayerInput : Object {
 };
 
 // Class Engine.PointLight
-struct APointLight : ALight {
+class APointLight : ALight {
 	struct Unknown PointLightComponent; // 0x320 (8)
 
 	void SetRadius(float NewRadius); // Function Engine.PointLight.SetRadius(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DCCC30>
@@ -12629,7 +12629,7 @@ struct APointLight : ALight {
 };
 
 // Class Engine.PointLightComponent
-struct UPointLightComponent : ULocalLightComponent {
+class UPointLightComponent : ULocalLightComponent {
 	char bUseInverseSquaredFalloff : 0; // 0x398 (1)
 	float LightFalloffExponent; // 0x39C (4)
 	float SourceRadius; // 0x3A0 (4)
@@ -12643,7 +12643,7 @@ struct UPointLightComponent : ULocalLightComponent {
 };
 
 // Class Engine.PoseAsset
-struct UPoseAsset : UAnimationAsset {
+class UPoseAsset : UAnimationAsset {
 	struct Unknown PoseContainer; // 0x80 (144)
 	char bAdditivePose : 0; // 0x110 (1)
 	int32_t BasePoseIndex; // 0x114 (4)
@@ -12651,13 +12651,13 @@ struct UPoseAsset : UAnimationAsset {
 };
 
 // Class Engine.PoseWatch
-struct UPoseWatch : Object {
+class UPoseWatch : Object {
 	struct Unknown Node; // 0x28 (8)
 	struct Unknown PoseWatchColour; // 0x30 (4)
 };
 
 // Class Engine.PostProcessComponent
-struct UPostProcessComponent : USceneComponent {
+class UPostProcessComponent : USceneComponent {
 	struct Unknown Settings; // 0x240 (1472)
 	float Priority; // 0x800 (4)
 	float BlendRadius; // 0x804 (4)
@@ -12669,7 +12669,7 @@ struct UPostProcessComponent : USceneComponent {
 };
 
 // Class Engine.PostProcessVolume
-struct APostProcessVolume : AVolume {
+class APostProcessVolume : AVolume {
 	struct Unknown Settings; // 0x350 (1472)
 	float Priority; // 0x910 (4)
 	float BlendRadius; // 0x914 (4)
@@ -12681,20 +12681,20 @@ struct APostProcessVolume : AVolume {
 };
 
 // Class Engine.PrecomputedVisibilityOverrideVolume
-struct APrecomputedVisibilityOverrideVolume : AVolume {
+class APrecomputedVisibilityOverrideVolume : AVolume {
 	struct TArray<Unknown> OverrideVisibleActors; // 0x348 (16)
 	struct TArray<Unknown> OverrideInvisibleActors; // 0x358 (16)
 	struct TArray<Unknown> OverrideInvisibleLevels; // 0x368 (16)
 };
 
 // Class Engine.PreviewMeshCollection
-struct UPreviewMeshCollection : UDataAsset {
+class UPreviewMeshCollection : UDataAsset {
 	struct Unknown Skeleton; // 0x38 (8)
 	struct TArray<Unknown> SkeletalMeshes; // 0x40 (16)
 };
 
 // Class Engine.PrimaryAssetLabel
-struct UPrimaryAssetLabel : UPrimaryDataAsset {
+class UPrimaryAssetLabel : UPrimaryDataAsset {
 	struct Unknown Rules; // 0x30 (12)
 	char bLabelAssetsInMyDirectory : 0; // 0x3C (1)
 	char bIsRuntimeLabel : 0; // 0x3C (1)
@@ -12704,12 +12704,12 @@ struct UPrimaryAssetLabel : UPrimaryDataAsset {
 };
 
 // Class Engine.ProxyLODMeshSimplificationSettings
-struct UProxyLODMeshSimplificationSettings : UDeveloperSettings {
+class UProxyLODMeshSimplificationSettings : UDeveloperSettings {
 	struct FName ProxyLODMeshReductionModuleName; // 0x38 (8)
 };
 
 // Class Engine.RadialForceActor
-struct ARadialForceActor : ARigidBodyBase {
+class ARadialForceActor : ARigidBodyBase {
 	struct Unknown ForceComponent; // 0x310 (8)
 
 	void ToggleForce(); // Function Engine.RadialForceActor.ToggleForce(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F1B4E0>
@@ -12719,7 +12719,7 @@ struct ARadialForceActor : ARigidBodyBase {
 };
 
 // Class Engine.RadialForceComponent
-struct URadialForceComponent : USceneComponent {
+class URadialForceComponent : USceneComponent {
 	float Radius; // 0x238 (4)
 	char Falloff; // 0x23C (1)
 	float ImpulseStrength; // 0x240 (4)
@@ -12735,12 +12735,12 @@ struct URadialForceComponent : USceneComponent {
 };
 
 // Class Engine.RectLight
-struct ARectLight : ALight {
+class ARectLight : ALight {
 	struct Unknown RectLightComponent; // 0x320 (8)
 };
 
 // Class Engine.RectLightComponent
-struct URectLightComponent : ULocalLightComponent {
+class URectLightComponent : ULocalLightComponent {
 	float SourceWidth; // 0x398 (4)
 	float SourceHeight; // 0x39C (4)
 	float BarnDoorAngle; // 0x3A0 (4)
@@ -12755,7 +12755,7 @@ struct URectLightComponent : ULocalLightComponent {
 };
 
 // Class Engine.RendererSettings
-struct URendererSettings : UDeveloperSettings {
+class URendererSettings : UDeveloperSettings {
 	char bMobileDisableVertexFog : 0; // 0x38 (1)
 	int32_t MaxMobileCascades; // 0x3C (4)
 	char MobileMSAASampleCount; // 0x40 (1)
@@ -12798,7 +12798,7 @@ struct URendererSettings : UDeveloperSettings {
 	struct Unknown TranslucentSortAxis; // 0x7C (12)
 	char CustomDepthStencil; // 0x88 (1)
 	char bCustomDepthTaaJitter : 0; // 0x8C (1)
-	char bEnableAlphaChannelInPost; // 0x90 (1)
+	char bEnableAlphaChannelInPostProcessing; // 0x90 (1)
 	char bDefaultFeatureBloom : 0; // 0x94 (1)
 	char bDefaultFeatureAmbientOcclusion : 0; // 0x94 (1)
 	char bDefaultFeatureAmbientOcclusionStaticFraction : 0; // 0x94 (1)
@@ -12815,7 +12815,7 @@ struct URendererSettings : UDeveloperSettings {
 	char DefaultFeatureAntiAliasing; // 0xA4 (1)
 	enum class Unknow DefaultLightUnits; // 0xA5 (1)
 	char DefaultBackBufferPixelFormat; // 0xA6 (1)
-	char b : 0; // 0xA8 (1)
+	char bRenderUnbuiltPreviewShadowsInGame : 0; // 0xA8 (1)
 	char bStencilForLODDither : 0; // 0xA8 (1)
 	char EarlyZPass; // 0xAC (1)
 	char bEarlyZPassOnlyMaterialMasking : 0; // 0xB0 (1)
@@ -12835,7 +12835,7 @@ struct URendererSettings : UDeveloperSettings {
 	char bMobilePostProcessing : 0; // 0xCC (1)
 	char bMobileMultiView : 0; // 0xCC (1)
 	char bMobileUseHWsRGBEncoding : 0; // 0xCC (1)
-	char b : 0; // 0xCC (1)
+	char bRoundRobinOcclusion : 0; // 0xCC (1)
 	char bODSCapture : 0; // 0xCC (1)
 	char bMeshStreaming : 0; // 0xCD (1)
 	float WireframeCullThreshold; // 0xD0 (4)
@@ -12855,7 +12855,7 @@ struct URendererSettings : UDeveloperSettings {
 	char bMobileAllowDistanceFieldShadows : 0; // 0xE0 (1)
 	char bMobileAllowMovableDirectionalLights : 0; // 0xE0 (1)
 	uint32_t MobileNumDynamicPointLights; // 0xE4 (4)
-	char bMobileDynamicPointLightsUseStaticBranch : 0; // 0xE8 (1)
+	char bMobileDynamicPointLightsUseStaticBranc : 0; // 0xE8 (1)
 	char bMobileAllowMovableSpotlights : 0; // 0xE8 (1)
 	char bSupport16BitBoneIndex : 0; // 0xE8 (1)
 	char bGPUSkinLimit2BoneInfluences : 0; // 0xE8 (1)
@@ -12866,13 +12866,13 @@ struct URendererSettings : UDeveloperSettings {
 };
 
 // Class Engine.RendererOverrideSettings
-struct URendererOverrideSettings : UDeveloperSettings {
+class URendererOverrideSettings : UDeveloperSettings {
 	char bSupportAllShaderPermutations : 0; // 0x38 (1)
 	char bForceRecomputeTangents : 0; // 0x38 (1)
 };
 
 // Class Engine.ReverbEffect
-struct UReverbEffect : Object {
+class UReverbEffect : Object {
 	float Density; // 0x28 (4)
 	float Diffusion; // 0x2C (4)
 	float Gain; // 0x30 (4)
@@ -12888,20 +12888,20 @@ struct UReverbEffect : Object {
 };
 
 // Class Engine.Rig
-struct URig : Object {
+class URig : Object {
 	struct TArray<Unknown> TransformBases; // 0x30 (16)
 	struct TArray<Unknown> Nodes; // 0x40 (16)
 };
 
 // Class Engine.RotatingMovementComponent
-struct URotatingMovementComponent : UMovementComponent {
+class URotatingMovementComponent : UMovementComponent {
 	struct Unknown RotationRate; // 0xF0 (12)
 	struct Unknown PivotTranslation; // 0xFC (12)
-	char b : 0; // 0x108 (1)
+	char bRotationInLocalSpace : 0; // 0x108 (1)
 };
 
 // Class Engine.RuntimeVirtualTexture
-struct URuntimeVirtualTexture : Object {
+class URuntimeVirtualTexture : Object {
 	enum class Unknow MaterialType; // 0x28 (1)
 	char bCompressTextures : 0; // 0x29 (1)
 	char bEnable : 0; // 0x2A (1)
@@ -12925,7 +12925,7 @@ struct URuntimeVirtualTexture : Object {
 };
 
 // Class Engine.RuntimeVirtualTextureComponent
-struct URuntimeVirtualTextureComponent : USceneComponent {
+class URuntimeVirtualTextureComponent : USceneComponent {
 	struct Unknown VirtualTexture; // 0x238 (8)
 	char bUseStreamingLowMipsInEditor : 0; // 0x240 (1)
 	struct Unknown BoundsSourceActor; // 0x248 (8)
@@ -12934,19 +12934,19 @@ struct URuntimeVirtualTextureComponent : USceneComponent {
 };
 
 // Class Engine.RuntimeVirtualTextureStreamingProxy
-struct URuntimeVirtualTextureStreamingProxy : UTexture2D {
+class URuntimeVirtualTextureStreamingProxy : UTexture2D {
 	struct Unknown Settings; // 0xE8 (12)
 	char bSinglePhysicalSpace : 0; // 0xF4 (1)
 	uint32_t BuildHash; // 0xF8 (4)
 };
 
 // Class Engine.RuntimeVirtualTextureVolume
-struct ARuntimeVirtualTextureVolume : UActor {
+class ARuntimeVirtualTextureVolume : UActor {
 	struct Unknown VirtualTextureComponent; // 0x310 (8)
 };
 
 // Class Engine.SceneCaptureComponentCube
-struct USceneCaptureComponentCube : USceneCaptureComponent {
+class USceneCaptureComponentCube : USceneCaptureComponent {
 	struct Unknown TextureTarget; // 0x2D0 (8)
 	char bCaptureRotation : 0; // 0x2D8 (1)
 	struct Unknown TextureTargetLeft; // 0x2E0 (8)
@@ -12958,14 +12958,14 @@ struct USceneCaptureComponentCube : USceneCaptureComponent {
 };
 
 // Class Engine.SceneCaptureCube
-struct ASceneCaptureCube : ASceneCapture {
+class ASceneCaptureCube : ASceneCapture {
 	struct Unknown CaptureComponentCube; // 0x320 (8)
 
 	void OnInterpToggle(char bEnable); // Function Engine.SceneCaptureCube.OnInterpToggle(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DBC2C0>
 };
 
 // Class Engine.SCS_Node
-struct USCS_Node : Object {
+class USCS_Node : Object {
 	struct Unknown* ComponentClass; // 0x28 (8)
 	struct Unknown ComponentTemplate; // 0x30 (8)
 	struct Unknown CookedComponentInstancingData; // 0x38 (72)
@@ -12980,7 +12980,7 @@ struct USCS_Node : Object {
 };
 
 // Class Engine.ServerStatReplicator
-struct AServerStatReplicator : AInfo {
+class AServerStatReplicator : AInfo {
 	char bUpdateStatNet : 0; // 0x310 (1)
 	char bOverwriteClientStats : 0; // 0x311 (1)
 	uint32_t Channels; // 0x314 (4)
@@ -13033,19 +13033,19 @@ struct AServerStatReplicator : AInfo {
 };
 
 // Class Engine.ShadowMapTexture2D
-struct UShadowMapTexture2D : UTexture2D {
+class UShadowMapTexture2D : UTexture2D {
 	char ShadowmapFlags; // 0xE8 (1)
 };
 
 // Class Engine.SimpleConstructionScript
-struct USimpleConstructionScript : Object {
+class USimpleConstructionScript : Object {
 	struct TArray<Unknown> RootNodes; // 0x28 (16)
 	struct TArray<Unknown> AllNodes; // 0x38 (16)
 	struct Unknown DefaultSceneRootNode; // 0x48 (8)
 };
 
 // Class Engine.SkeletalMeshLODSettings
-struct USkeletalMeshLODSettings : UDataAsset {
+class USkeletalMeshLODSettings : UDataAsset {
 	struct Unknown MinLOD; // 0x30 (4)
 	struct Unknown DisableBelowMinLodStripping; // 0x34 (1)
 	struct Unknown bSupportLODStreaming; // 0x35 (1)
@@ -13055,12 +13055,12 @@ struct USkeletalMeshLODSettings : UDataAsset {
 };
 
 // Class Engine.SkeletalMeshSimplificationSettings
-struct USkeletalMeshSimplificationSettings : UDeveloperSettings {
+class USkeletalMeshSimplificationSettings : UDeveloperSettings {
 	struct FName SkeletalMeshReductionModuleName; // 0x38 (8)
 };
 
 // Class Engine.SkeletalMeshSocket
-struct USkeletalMeshSocket : Object {
+class USkeletalMeshSocket : Object {
 	struct FName SocketName; // 0x28 (8)
 	struct FName BoneName; // 0x30 (8)
 	struct Unknown RelativeLocation; // 0x38 (12)
@@ -13073,7 +13073,7 @@ struct USkeletalMeshSocket : Object {
 };
 
 // Class Engine.SkyAtmosphereComponent
-struct USkyAtmosphereComponent : USceneComponent {
+class USkyAtmosphereComponent : USceneComponent {
 	enum class Unknow TransformMode; // 0x238 (1)
 	float BottomRadius; // 0x23C (4)
 	struct Unknown GroundAlbedo; // 0x240 (4)
@@ -13115,12 +13115,12 @@ struct USkyAtmosphereComponent : USceneComponent {
 };
 
 // Class Engine.SkyAtmosphere
-struct ASkyAtmosphere : AInfo {
+class ASkyAtmosphere : AInfo {
 	struct Unknown SkyAtmosphereComponent; // 0x310 (8)
 };
 
 // Class Engine.SkyLightComponent
-struct USkyLightComponent : ULightComponentBase {
+class USkyLightComponent : ULightComponentBase {
 	char SourceType; // 0x270 (1)
 	struct Unknown Cubemap; // 0x278 (8)
 	float SourceCubemapAngle; // 0x280 (4)
@@ -13162,17 +13162,17 @@ struct USkyLightComponent : ULightComponentBase {
 };
 
 // Class Engine.SlateBrushAsset
-struct USlateBrushAsset : Object {
+class USlateBrushAsset : Object {
 	struct Unknown Brush; // 0x28 (136)
 };
 
 // Class Engine.SoundAttenuation
-struct USoundAttenuation : Object {
+class USoundAttenuation : Object {
 	struct Unknown Attenuation; // 0x28 (928)
 };
 
 // Class Engine.SoundClass
-struct USoundClass : Object {
+class USoundClass : Object {
 	struct Unknown Properties; // 0x28 (88)
 	struct TArray<Unknown> ChildClasses; // 0x80 (16)
 	struct TArray<Unknown> PassiveSoundMixModifiers; // 0x90 (16)
@@ -13181,12 +13181,12 @@ struct USoundClass : Object {
 };
 
 // Class Engine.SoundConcurrency
-struct USoundConcurrency : Object {
+class USoundConcurrency : Object {
 	struct Unknown Concurrency; // 0x28 (32)
 };
 
 // Class Engine.SoundCue
-struct USoundCue : USoundBase {
+class USoundCue : USoundBase {
 	char bPrimeOnLoad : 0; // 0x160 (1)
 	struct Unknown FirstNode; // 0x168 (8)
 	float VolumeMultiplier; // 0x170 (4)
@@ -13200,18 +13200,18 @@ struct USoundCue : USoundBase {
 };
 
 // Class Engine.SoundEffectSourcePresetChain
-struct USoundEffectSourcePresetChain : Object {
+class USoundEffectSourcePresetChain : Object {
 	struct TArray<Unknown> Chain; // 0x28 (16)
 	char bPlayEffectChainTails : 0; // 0x38 (1)
 };
 
 // Class Engine.SoundGroups
-struct USoundGroups : Object {
+class USoundGroups : Object {
 	struct TArray<Unknown> SoundGroupProfiles; // 0x28 (16)
 };
 
 // Class Engine.SoundMix
-struct USoundMix : Object {
+class USoundMix : Object {
 	char bApplyEQ : 0; // 0x28 (1)
 	float EQPriority; // 0x2C (4)
 	struct Unknown EQSettings; // 0x30 (64)
@@ -13223,53 +13223,53 @@ struct USoundMix : Object {
 };
 
 // Class Engine.SoundNode
-struct USoundNode : Object {
+class USoundNode : Object {
 	struct TArray<Unknown> ChildNodes; // 0x28 (16)
 };
 
 // Class Engine.SoundNodeAttenuation
-struct USoundNodeAttenuation : USoundNode {
+class USoundNodeAttenuation : USoundNode {
 	struct Unknown AttenuationSettings; // 0x48 (8)
 	struct Unknown AttenuationOverrides; // 0x50 (928)
 	char bOverrideAttenuation : 0; // 0x3F0 (1)
 };
 
 // Class Engine.SoundNodeBranch
-struct USoundNodeBranch : USoundNode {
+class USoundNodeBranch : USoundNode {
 	struct FName BoolParameterName; // 0x48 (8)
 };
 
 // Class Engine.SoundNodeConcatenator
-struct USoundNodeConcatenator : USoundNode {
+class USoundNodeConcatenator : USoundNode {
 	struct TArray<Unknown> InputVolume; // 0x48 (16)
 };
 
 // Class Engine.SoundNodeDelay
-struct USoundNodeDelay : USoundNode {
+class USoundNodeDelay : USoundNode {
 	float DelayMin; // 0x48 (4)
 	float DelayMax; // 0x4C (4)
 };
 
 // Class Engine.SoundNodeDialoguePlayer
-struct USoundNodeDialoguePlayer : USoundNode {
+class USoundNodeDialoguePlayer : USoundNode {
 	struct Unknown DialogueWaveParameter; // 0x48 (32)
 	char bLooping : 0; // 0x68 (1)
 };
 
 // Class Engine.SoundNodeDistanceCrossFade
-struct USoundNodeDistanceCrossFade : USoundNode {
+class USoundNodeDistanceCrossFade : USoundNode {
 	struct TArray<Unknown> CrossFadeInput; // 0x48 (16)
 };
 
 // Class Engine.SoundNodeDoppler
-struct USoundNodeDoppler : USoundNode {
+class USoundNodeDoppler : USoundNode {
 	float DopplerIntensity; // 0x48 (4)
 	char bUseSmoothing : 0; // 0x4C (1)
 	float SmoothingInterpSpeed; // 0x50 (4)
 };
 
 // Class Engine.SoundNodeEnveloper
-struct USoundNodeEnveloper : USoundNode {
+class USoundNodeEnveloper : USoundNode {
 	float LoopStart; // 0x48 (4)
 	float LoopEnd; // 0x4C (4)
 	float DurationAfterLoop; // 0x50 (4)
@@ -13287,23 +13287,23 @@ struct USoundNodeEnveloper : USoundNode {
 };
 
 // Class Engine.SoundNodeGroupControl
-struct USoundNodeGroupControl : USoundNode {
+class USoundNodeGroupControl : USoundNode {
 	struct TArray<Unknown> GroupSizes; // 0x48 (16)
 };
 
 // Class Engine.SoundNodeLooping
-struct USoundNodeLooping : USoundNode {
+class USoundNodeLooping : USoundNode {
 	int32_t LoopCount; // 0x48 (4)
 	char bLoopIndefinitely : 0; // 0x4C (1)
 };
 
 // Class Engine.SoundNodeMixer
-struct USoundNodeMixer : USoundNode {
+class USoundNodeMixer : USoundNode {
 	struct TArray<Unknown> InputVolume; // 0x48 (16)
 };
 
 // Class Engine.SoundNodeModulator
-struct USoundNodeModulator : USoundNode {
+class USoundNodeModulator : USoundNode {
 	float PitchMin; // 0x48 (4)
 	float PitchMax; // 0x4C (4)
 	float VolumeMin; // 0x50 (4)
@@ -13311,13 +13311,13 @@ struct USoundNodeModulator : USoundNode {
 };
 
 // Class Engine.SoundNodeModulatorContinuous
-struct USoundNodeModulatorContinuous : USoundNode {
+class USoundNodeModulatorContinuous : USoundNode {
 	struct Unknown PitchModulationParams; // 0x48 (32)
 	struct Unknown VolumeModulationParams; // 0x68 (32)
 };
 
 // Class Engine.SoundNodeOscillator
-struct USoundNodeOscillator : USoundNode {
+class USoundNodeOscillator : USoundNode {
 	char bModulateVolume : 0; // 0x48 (1)
 	char bModulatePitch : 0; // 0x48 (1)
 	float AmplitudeMin; // 0x4C (4)
@@ -13331,62 +13331,62 @@ struct USoundNodeOscillator : USoundNode {
 };
 
 // Class Engine.SoundNodeParamCrossFade
-struct USoundNodeParamCrossFade : USoundNodeDistanceCrossFade {
+class USoundNodeParamCrossFade : USoundNodeDistanceCrossFade {
 	struct FName ParamName; // 0x58 (8)
 };
 
 // Class Engine.SoundNodeRandom
-struct USoundNodeRandom : USoundNode {
+class USoundNodeRandom : USoundNode {
 	struct TArray<Unknown> Weights; // 0x48 (16)
 	struct TArray<Unknown> HasBeenUsed; // 0x58 (16)
 	int32_t NumRandomUsed; // 0x68 (4)
 	int32_t PreselectAtLevelLoad; // 0x6C (4)
 	char bShouldExcludeFromBranchCulling : 0; // 0x70 (1)
 	char bSoundCueExcludedFromBranchCulling : 0; // 0x70 (1)
-	char b : 0; // 0x70 (1)
+	char bRandomizeWithoutReplacement : 0; // 0x70 (1)
 };
 
 // Class Engine.SoundNodeSoundClass
-struct USoundNodeSoundClass : USoundNode {
+class USoundNodeSoundClass : USoundNode {
 	struct Unknown SoundClassOverride; // 0x48 (8)
 };
 
 // Class Engine.SoundNodeSwitch
-struct USoundNodeSwitch : USoundNode {
+class USoundNodeSwitch : USoundNode {
 	struct FName IntParameterName; // 0x48 (8)
 };
 
 // Class Engine.SoundNodeWaveParam
-struct USoundNodeWaveParam : USoundNode {
+class USoundNodeWaveParam : USoundNode {
 	struct FName WaveParameterName; // 0x48 (8)
 };
 
 // Class Engine.SoundNodeWavePlayer
-struct USoundNodeWavePlayer : USoundNodeAssetReferencer {
+class USoundNodeWavePlayer : USoundNodeAssetReferencer {
 	struct TSoftObjectPtr<Unknown> SoundWaveAssetPtr; // 0x48 (40)
 	struct Unknown SoundWave; // 0x70 (8)
 	char bLooping : 0; // 0x78 (1)
 };
 
 // Class Engine.SoundSourceBus
-struct USoundSourceBus : USoundWave {
+class USoundSourceBus : USoundWave {
 	enum class Unknow SourceBusChannels; // 0x308 (1)
 	float SourceBusDuration; // 0x30C (4)
 	char bAutoDeactivateWhenSilent : 0; // 0x310 (1)
 };
 
 // Class Engine.SoundSubmixBase
-struct USoundSubmixBase : Object {
+class USoundSubmixBase : Object {
 	struct TArray<Unknown> ChildSubmixes; // 0x28 (16)
 };
 
 // Class Engine.SoundSubmixWithParentBase
-struct USoundSubmixWithParentBase : USoundSubmixBase {
+class USoundSubmixWithParentBase : USoundSubmixBase {
 	struct Unknown ParentSubmix; // 0x38 (8)
 };
 
 // Class Engine.SoundSubmix
-struct USoundSubmix : USoundSubmixWithParentBase {
+class USoundSubmix : USoundSubmixWithParentBase {
 	char bMuteWhenBackgrounded : 0; // 0x40 (1)
 	struct TArray<Unknown> SubmixEffectChain; // 0x48 (16)
 	struct Unknown AmbisonicsPluginSettings; // 0x58 (8)
@@ -13404,7 +13404,7 @@ struct USoundSubmix : USoundSubmixWithParentBase {
 };
 
 // Class Engine.SoundfieldSubmix
-struct USoundfieldSubmix : USoundSubmixWithParentBase {
+class USoundfieldSubmix : USoundSubmixWithParentBase {
 	struct FName SoundfieldEncodingFormat; // 0x40 (8)
 	struct Unknown EncodingSettings; // 0x48 (8)
 	struct TArray<Unknown> SoundfieldEffectChain; // 0x50 (16)
@@ -13412,14 +13412,14 @@ struct USoundfieldSubmix : USoundSubmixWithParentBase {
 };
 
 // Class Engine.EndpointSubmix
-struct UEndpointSubmix : USoundSubmixBase {
+class UEndpointSubmix : USoundSubmixBase {
 	struct FName EndpointType; // 0x38 (8)
 	struct Unknown* EndpointSettingsClass; // 0x40 (8)
 	struct Unknown EndpointSettings; // 0x48 (8)
 };
 
 // Class Engine.SoundfieldEndpointSubmix
-struct USoundfieldEndpointSubmix : USoundSubmixBase {
+class USoundfieldEndpointSubmix : USoundSubmixBase {
 	struct FName SoundfieldEndpointType; // 0x38 (8)
 	struct Unknown* EndpointSettingsClass; // 0x40 (8)
 	struct Unknown EndpointSettings; // 0x48 (8)
@@ -13429,29 +13429,29 @@ struct USoundfieldEndpointSubmix : USoundSubmixBase {
 };
 
 // Class Engine.SpectatorPawnMovement
-struct USpectatorPawnMovement : UFloatingPawnMovement {
+class USpectatorPawnMovement : UFloatingPawnMovement {
 	char bIgnoreTimeDilation : 0; // 0x150 (1)
 };
 
 // Class Engine.SphereReflectionCapture
-struct ASphereReflectionCapture : AReflectionCapture {
+class ASphereReflectionCapture : AReflectionCapture {
 	struct Unknown DrawCaptureRadius; // 0x318 (8)
 };
 
 // Class Engine.SphereReflectionCaptureComponent
-struct USphereReflectionCaptureComponent : UReflectionCaptureComponent {
+class USphereReflectionCaptureComponent : UReflectionCaptureComponent {
 	float InfluenceRadius; // 0x2C0 (4)
 	float CaptureDistanceScale; // 0x2C4 (4)
 	struct Unknown PreviewInfluenceRadius; // 0x2C8 (8)
 };
 
 // Class Engine.SplineMeshActor
-struct ASplineMeshActor : UActor {
+class ASplineMeshActor : UActor {
 	struct Unknown SplineMeshComponent; // 0x310 (8)
 };
 
 // Class Engine.SplineMeshComponent
-struct USplineMeshComponent : UStaticMeshComponent {
+class USplineMeshComponent : UStaticMeshComponent {
 	struct Unknown SplineParams; // 0x558 (88)
 	struct Unknown SplineUpDir; // 0x5B0 (12)
 	float SplineBoundaryMin; // 0x5BC (4)
@@ -13497,7 +13497,7 @@ struct USplineMeshComponent : UStaticMeshComponent {
 };
 
 // Class Engine.SpotLightComponent
-struct USpotLightComponent : UPointLightComponent {
+class USpotLightComponent : UPointLightComponent {
 	float InnerConeAngle; // 0x3B0 (4)
 	float OuterConeAngle; // 0x3B4 (4)
 	float LightShaftConeAngle; // 0x3B8 (4)
@@ -13510,7 +13510,7 @@ struct USpotLightComponent : UPointLightComponent {
 };
 
 // Class Engine.SpringArmComponent
-struct USpringArmComponent : USceneComponent {
+class USpringArmComponent : USceneComponent {
 	float TargetArmLength; // 0x238 (4)
 	struct Unknown SocketOffset; // 0x23C (12)
 	struct Unknown TargetOffset; // 0x248 (12)
@@ -13536,7 +13536,7 @@ struct USpringArmComponent : USceneComponent {
 };
 
 // Class Engine.StaticMesh
-struct UStaticMesh : UStreamableRenderAsset {
+class UStaticMesh : UStreamableRenderAsset {
 	char bUseAsOccluderForSoftwareOcclusion : 0; // 0x60 (1)
 	struct FName LODGroup; // 0x64 (8)
 	struct FName MeshStreamingGroup; // 0x6C (8)
@@ -13585,7 +13585,7 @@ struct UStaticMesh : UStreamableRenderAsset {
 };
 
 // Class Engine.StaticMeshSocket
-struct UStaticMeshSocket : Object {
+class UStaticMeshSocket : Object {
 	struct FName SocketName; // 0x28 (8)
 	struct Unknown RelativeLocation; // 0x30 (12)
 	struct Unknown RelativeRotation; // 0x3C (12)
@@ -13594,7 +13594,7 @@ struct UStaticMeshSocket : Object {
 };
 
 // Class Engine.StereoLayerComponent
-struct UStereoLayerComponent : USceneComponent {
+class UStereoLayerComponent : USceneComponent {
 	char bLiveTexture : 0; // 0x238 (1)
 	char bSupportsDepth : 0; // 0x238 (1)
 	char bNoAlphaChannel : 0; // 0x238 (1)
@@ -13627,7 +13627,7 @@ struct UStereoLayerComponent : USceneComponent {
 };
 
 // Class Engine.StereoLayerShapeCylinder
-struct UStereoLayerShapeCylinder : UStereoLayerShape {
+class UStereoLayerShapeCylinder : UStereoLayerShape {
 	float Radius; // 0x28 (4)
 	float OverlayArc; // 0x2C (4)
 	int32_t Height; // 0x30 (4)
@@ -13638,7 +13638,7 @@ struct UStereoLayerShapeCylinder : UStereoLayerShape {
 };
 
 // Class Engine.StereoLayerShapeEquirect
-struct UStereoLayerShapeEquirect : UStereoLayerShape {
+class UStereoLayerShapeEquirect : UStereoLayerShape {
 	struct Unknown LeftUVRect; // 0x28 (20)
 	struct Unknown RightUVRect; // 0x3C (20)
 	struct Unknown LeftScale; // 0x50 (8)
@@ -13650,12 +13650,12 @@ struct UStereoLayerShapeEquirect : UStereoLayerShape {
 };
 
 // Class Engine.SubsurfaceProfile
-struct USubsurfaceProfile : Object {
+class USubsurfaceProfile : Object {
 	struct Unknown Settings; // 0x28 (140)
 };
 
 // Class Engine.SubUVAnimation
-struct USubUVAnimation : Object {
+class USubUVAnimation : Object {
 	struct Unknown SubUVTexture; // 0x28 (8)
 	int32_t SubImages_Horizontal; // 0x30 (4)
 	int32_t SubImages_Vertical; // 0x34 (4)
@@ -13665,7 +13665,7 @@ struct USubUVAnimation : Object {
 };
 
 // Class Engine.TimecodeProvider
-struct UTimecodeProvider : Object {
+class UTimecodeProvider : Object {
 	float FrameDelay; // 0x28 (4)
 
 	struct Unknown GetTimecode(); // Function Engine.TimecodeProvider.GetTimecode(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3E23220>
@@ -13677,26 +13677,26 @@ struct UTimecodeProvider : Object {
 };
 
 // Class Engine.SystemTimeTimecodeProvider
-struct USystemTimeTimecodeProvider : UTimecodeProvider {
+class USystemTimeTimecodeProvider : UTimecodeProvider {
 	struct Unknown FrameRate; // 0x30 (8)
 	char bGenerateFullFrame : 0; // 0x38 (1)
 	char bUseHighPerformanceClock : 0; // 0x39 (1)
 };
 
 // Class Engine.TextPropertyTestObject
-struct UTextPropertyTestObject : Object {
+class UTextPropertyTestObject : Object {
 	struct FText DefaultedText; // 0x28 (24)
 	struct FText UndefaultedText; // 0x40 (24)
 	struct FText TransientText; // 0x58 (24)
 };
 
 // Class Engine.TextRenderActor
-struct ATextRenderActor : UActor {
+class ATextRenderActor : UActor {
 	struct Unknown TextRender; // 0x310 (8)
 };
 
 // Class Engine.TextRenderComponent
-struct UTextRenderComponent : UPrimitiveComponent {
+class UTextRenderComponent : UPrimitiveComponent {
 	struct FText Text; // 0x4B8 (24)
 	struct Unknown TextMaterial; // 0x4D0 (8)
 	struct Unknown Font; // 0x4D8 (8)
@@ -13728,13 +13728,13 @@ struct UTextRenderComponent : UPrimitiveComponent {
 };
 
 // Class Engine.TextureLightProfile
-struct UTextureLightProfile : UTexture2D {
+class UTextureLightProfile : UTexture2D {
 	float Brightness; // 0xE8 (4)
 	float TextureMultiplier; // 0xEC (4)
 };
 
 // Class Engine.TextureRenderTargetCube
-struct UTextureRenderTargetCube : UTextureRenderTarget {
+class UTextureRenderTargetCube : UTextureRenderTarget {
 	int32_t SizeX; // 0xC0 (4)
 	struct Unknown ClearColor; // 0xC4 (16)
 	char OverrideFormat; // 0xD4 (1)
@@ -13743,7 +13743,7 @@ struct UTextureRenderTargetCube : UTextureRenderTarget {
 };
 
 // Class Engine.TimelineComponent
-struct UTimelineComponent : UActorComponent {
+class UTimelineComponent : UActorComponent {
 	struct Unknown TheTimeline; // 0xB0 (152)
 	char bIgnoreTimeDilation : 0; // 0x148 (1)
 
@@ -13773,12 +13773,12 @@ struct UTimelineComponent : UActorComponent {
 };
 
 // Class Engine.TimelineTemplate
-struct UTimelineTemplate : Object {
+class UTimelineTemplate : Object {
 	float TimelineLength; // 0x28 (4)
 	char LengthMode; // 0x2C (1)
 	char bAutoPlay : 0; // 0x2D (1)
 	char bLoop : 0; // 0x2D (1)
-	char b : 0; // 0x2D (1)
+	char bReplicated : 0; // 0x2D (1)
 	char bIgnoreTimeDilation : 0; // 0x2D (1)
 	struct TArray<Unknown> EventTracks; // 0x30 (16)
 	struct TArray<Unknown> FloatTracks; // 0x40 (16)
@@ -13793,12 +13793,12 @@ struct UTimelineTemplate : Object {
 };
 
 // Class Engine.TireType
-struct UTireType : UDataAsset {
+class UTireType : UDataAsset {
 	float FrictionScale; // 0x30 (4)
 };
 
 // Class Engine.TouchInterface
-struct UTouchInterface : Object {
+class UTouchInterface : Object {
 	struct TArray<Unknown> Controls; // 0x28 (16)
 	float ActiveOpacity; // 0x38 (4)
 	float InactiveOpacity; // 0x3C (4)
@@ -13810,23 +13810,23 @@ struct UTouchInterface : Object {
 };
 
 // Class Engine.TriggerBase
-struct ATriggerBase : UActor {
+class ATriggerBase : UActor {
 	struct Unknown CollisionComponent; // 0x310 (8)
 };
 
 // Class Engine.UserDefinedEnum
-struct UUserDefinedEnum : UEnum {
+class UUserDefinedEnum : UEnum {
 	struct TMap<Unknown, Unknown>Unknown DisplayNameMap; // 0x60 (80)
 };
 
 // Class Engine.UserDefinedStruct
-struct UUserDefinedStruct : UScriptStruct {
+class UUserDefinedStruct : UScriptStruct {
 	enum class Unknown status; // 0xC0 (1)
 	struct Unknown Guid; // 0xC4 (16)
 };
 
 // Class Engine.UserInterfaceSettings
-struct UUserInterfaceSettings : UDeveloperSettings {
+class UUserInterfaceSettings : UDeveloperSettings {
 	enum class Unknow RenderFocusRule; // 0x38 (1)
 	struct TMap<Unknown, Unknown>Unknown HardwareCursors; // 0x40 (80)
 	struct TMap<Unknown, Unknown>Unknown SoftwareCursors; // 0x90 (80)
@@ -13849,13 +13849,13 @@ struct UUserInterfaceSettings : UDeveloperSettings {
 };
 
 // Class Engine.VectorField
-struct UVectorField : Object {
+class UVectorField : Object {
 	struct Unknown Bounds; // 0x28 (28)
 	float Intensity; // 0x44 (4)
 };
 
 // Class Engine.VectorFieldAnimated
-struct UVectorFieldAnimated : UVectorField {
+class UVectorFieldAnimated : UVectorField {
 	struct Unknown Texture; // 0x48 (8)
 	char ConstructionOp; // 0x50 (1)
 	int32_t VolumeSizeX; // 0x54 (4)
@@ -13872,7 +13872,7 @@ struct UVectorFieldAnimated : UVectorField {
 };
 
 // Class Engine.VectorFieldComponent
-struct UVectorFieldComponent : UPrimitiveComponent {
+class UVectorFieldComponent : UPrimitiveComponent {
 	struct Unknown VectorField; // 0x4B8 (8)
 	float Intensity; // 0x4C0 (4)
 	float Tightness; // 0x4C4 (4)
@@ -13882,7 +13882,7 @@ struct UVectorFieldComponent : UPrimitiveComponent {
 };
 
 // Class Engine.VectorFieldStatic
-struct UVectorFieldStatic : UVectorField {
+class UVectorFieldStatic : UVectorField {
 	int32_t SizeX; // 0x48 (4)
 	int32_t SizeY; // 0x4C (4)
 	int32_t SizeZ; // 0x50 (4)
@@ -13891,23 +13891,23 @@ struct UVectorFieldStatic : UVectorField {
 };
 
 // Class Engine.VectorFieldVolume
-struct AVectorFieldVolume : UActor {
+class AVectorFieldVolume : UActor {
 	struct Unknown VectorFieldComponent; // 0x310 (8)
 };
 
 // Class Engine.LightMapVirtualTexture2D
-struct ULightMapVirtualTexture2D : UTexture2D {
+class ULightMapVirtualTexture2D : UTexture2D {
 	struct TArray<Unknown> TypeToLayer; // 0xE8 (16)
 };
 
 // Class Engine.VirtualTexturePoolConfig
-struct UVirtualTexturePoolConfig : Object {
+class UVirtualTexturePoolConfig : Object {
 	int32_t DefaultSizeInMegabyte; // 0x28 (4)
 	struct TArray<Unknown> Pools; // 0x30 (16)
 };
 
 // Class Engine.VOIPTalker
-struct UVOIPTalker : UActorComponent {
+class UVOIPTalker : UActorComponent {
 	struct Unknown Settings; // 0xB0 (24)
 
 	void RegisterWithPlayerState(struct Unknown OwningState); // Function Engine.VOIPTalker.RegisterWithPlayerState(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3E2E9B0>
@@ -13918,17 +13918,17 @@ struct UVOIPTalker : UActorComponent {
 };
 
 // Class Engine.VolumetricLightmapDensityVolume
-struct AVolumetricLightmapDensityVolume : AVolume {
+class AVolumetricLightmapDensityVolume : AVolume {
 	struct Unknown AllowedMipLevelRange; // 0x348 (8)
 };
 
 // Class Engine.WindDirectionalSource
-struct AWindDirectionalSource : AInfo {
+class AWindDirectionalSource : AInfo {
 	struct Unknown Component; // 0x310 (8)
 };
 
 // Class Engine.WindDirectionalSourceComponent
-struct UWindDirectionalSourceComponent : USceneComponent {
+class UWindDirectionalSourceComponent : USceneComponent {
 	float Strength; // 0x238 (4)
 	float Speed; // 0x23C (4)
 	float MinGustAmount; // 0x240 (4)
@@ -13945,11 +13945,11 @@ struct UWindDirectionalSourceComponent : USceneComponent {
 };
 
 // Class Engine.WorldComposition
-struct UWorldComposition : Object {
+class UWorldComposition : Object {
 	struct TArray<Unknown> TilesStreaming; // 0x130 (16)
 	double TilesStreamingTimeThreshold; // 0x140 (8)
 	char bLoadAllTilesDuringCinematic : 0; // 0x148 (1)
-	char b : 0; // 0x149 (1)
+	char bRebaseOriginIn3DSpace : 0; // 0x149 (1)
 	float RebaseOriginDistance; // 0x14C (4)
 	char bApplyMinStreamingPriorityToLOD : 0; // 0x150 (1)
 	char bApplyStreamingDistanceScaleToLOD : 0; // 0x151 (1)
@@ -13957,17 +13957,5592 @@ struct UWorldComposition : Object {
 };
 
 // Class Engine.HierarchicalLODSetup
-struct UHierarchicalLODSetup : Object {
+class UHierarchicalLODSetup : Object {
 	struct TArray<Unknown> HierarchicalLODSetup; // 0x28 (16)
 	struct TSoftObjectPtr<Unknown> OverrideBaseMaterial; // 0x38 (40)
 };
 
 // Class Engine.WorldTileLODSetup
-struct UWorldTileLODSetup : Object {
+class UWorldTileLODSetup : Object {
 	int32_t NumLOD; // 0x28 (4)
 	struct Unknown LOD1; // 0x2C (316)
 	struct Unknown LOD2; // 0x168 (316)
 	struct Unknown LOD3; // 0x2A4 (316)
 	struct Unknown LOD4; // 0x3E0 (316)
+};
+
+// ScriptStruct Engine.DistributionLookupTable
+struct FDistributionLookupTable {
+	float TimeScale; // 0x0 (4)
+	float TimeBias; // 0x4 (4)
+	struct TArray<Unknown> Values; // 0x8 (16)
+	char Op; // 0x18 (1)
+	char EntryCount; // 0x19 (1)
+	char EntryStride; // 0x1A (1)
+	char SubEntryStride; // 0x1B (1)
+	char LockFlag; // 0x1C (1)
+};
+
+// ScriptStruct Engine.RawDistribution
+struct FRawDistribution {
+	struct Unknown Table; // 0x0 (32)
+};
+
+// ScriptStruct Engine.FloatDistribution
+struct FFloatDistribution {
+	struct Unknown Table; // 0x0 (32)
+};
+
+// ScriptStruct Engine.VectorDistribution
+struct FVectorDistribution {
+	struct Unknown Table; // 0x0 (32)
+};
+
+// ScriptStruct Engine.Vector4Distribution
+struct FVector4Distribution {
+	struct Unknown Table; // 0x0 (32)
+};
+
+// ScriptStruct Engine.FloatRK4SpringInterpolator
+struct FFloatRK4SpringInterpolator {
+	float StiffnessConstant; // 0x0 (4)
+	float DampeningRatio; // 0x4 (4)
+};
+
+// ScriptStruct Engine.VectorRK4SpringInterpolator
+struct FVectorRK4SpringInterpolator {
+	float StiffnessConstant; // 0x0 (4)
+	float DampeningRatio; // 0x4 (4)
+};
+
+// ScriptStruct Engine.FormatArgumentData
+struct FFormatArgumentData {
+	struct FString ArgumentName; // 0x0 (16)
+	char ArgumentValueType; // 0x10 (1)
+	struct FText ArgumentValue; // 0x18 (24)
+	int32_t ArgumentValueInt; // 0x30 (4)
+	float ArgumentValueFloat; // 0x34 (4)
+	enum class Unknow ArgumentValueGender; // 0x38 (1)
+};
+
+// ScriptStruct Engine.ExpressionInput
+struct FExpressionInput {
+	int32_t OutputIndex; // 0x0 (4)
+	struct FName ExpressionName; // 0x4 (8)
+};
+
+// ScriptStruct Engine.MaterialAttributesInput
+struct FMaterialAttributesInput : FExpressionInput {
+	int32_t PropertyConnectedBitmask; // 0xC (4)
+};
+
+// ScriptStruct Engine.ExpressionOutput
+struct FExpressionOutput {
+	struct FName OutputName; // 0x0 (8)
+};
+
+// ScriptStruct Engine.MaterialInput
+struct FMaterialInput {
+	int32_t OutputIndex; // 0x0 (4)
+	struct FName ExpressionName; // 0x4 (8)
+};
+
+// ScriptStruct Engine.HitResult
+struct FHitResult {
+	char bBlockingHit : 0; // 0x0 (1)
+	char bStartPenetrating : 0; // 0x0 (1)
+	int32_t FaceIndex; // 0x4 (4)
+	float Time; // 0x8 (4)
+	float Distance; // 0xC (4)
+	struct Unknown Location; // 0x10 (12)
+	struct Unknown ImpactPoint; // 0x1C (12)
+	struct Unknown Normal; // 0x28 (12)
+	struct Unknown ImpactNormal; // 0x34 (12)
+	struct Unknown TraceStart; // 0x40 (12)
+	struct Unknown TraceEnd; // 0x4C (12)
+	float PenetrationDepth; // 0x58 (4)
+	int32_t Item; // 0x5C (4)
+	struct TWeakObjectPtr<struct Unknown> PhysMaterial; // 0x60 (8)
+	struct TWeakObjectPtr<struct Unknown> Actor; // 0x68 (8)
+	struct TWeakObjectPtr<struct Unknown> Component; // 0x70 (8)
+	struct FName BoneName; // 0x78 (8)
+	struct FName MyBoneName; // 0x80 (8)
+};
+
+// ScriptStruct Engine.MKReplayListItemInfo
+struct FMKReplayListItemInfo {
+	struct FString Name; // 0x0 (16)
+	struct FString FriendlyName; // 0x10 (16)
+	struct Unknown Timestamp; // 0x20 (8)
+	int32_t SizeInBytes; // 0x28 (4)
+	int32_t LengthInMS; // 0x2C (4)
+	int32_t NumViewers; // 0x30 (4)
+	char bIsLive : 0; // 0x34 (1)
+	int32_t ChangeList; // 0x38 (4)
+	char bSouldKeep : 0; // 0x3C (1)
+	char bIncomplete : 0; // 0x3D (1)
+	char bIsVersionCompatible : 0; // 0x3E (1)
+	char bIsCorrupted : 0; // 0x3F (1)
+	struct FString GameVersion; // 0x40 (16)
+	struct FString RecordUserId; // 0x50 (16)
+	struct FString RecordUserNickName; // 0x60 (16)
+	struct FString MapName; // 0x70 (16)
+	int32_t BattleMode; // 0x80 (4)
+	char FPP : 0; // 0x84 (1)
+	int32_t TotalTeamCount; // 0x88 (4)
+	int32_t FinalRank; // 0x8C (4)
+	int32_t Kill; // 0x90 (4)
+	float LifeTime; // 0x94 (4)
+	float TotalDamage; // 0x98 (4)
+	struct FString BlueZoneTitle; // 0xA0 (16)
+	int32_t BlueZoneMaxPlayerCount; // 0xB0 (4)
+	struct TArray<Unknown> TeamInfos; // 0xB8 (16)
+	float KillcamStartTime; // 0xC8 (4)
+	float KillcamEndTime; // 0xCC (4)
+	char bHaveCameraEvent : 0; // 0xD0 (1)
+	struct FString AdditionalInfo; // 0xD8 (16)
+	int32_t MK3DReplayVersion; // 0xE8 (4)
+	int32_t NetworkVersion; // 0xEC (4)
+	struct TArray<Unknown> KillEvent; // 0xF0 (16)
+	struct Unknown ReportInfo; // 0x100 (40)
+};
+
+// ScriptStruct Engine.MKReplayReportInfo
+struct FMKReplayReportInfo {
+	struct FString ReporterName; // 0x0 (16)
+	struct FString SuspectName; // 0x10 (16)
+	int32_t ReportType; // 0x20 (4)
+	int32_t ReplayTime; // 0x24 (4)
+};
+
+// ScriptStruct Engine.ReplayKillEvent
+struct FReplayKillEvent {
+	struct FString KillerName; // 0x0 (16)
+	struct FString VictimName; // 0x10 (16)
+	int32_t TimeSeconds; // 0x20 (4)
+};
+
+// ScriptStruct Engine.MKReplayTeamInfo
+struct FMKReplayTeamInfo {
+	struct FString NickName; // 0x0 (16)
+	struct FString DeckName; // 0x10 (16)
+	struct FString WeaponName; // 0x20 (16)
+	int32_t ClassLevel; // 0x30 (4)
+};
+
+// ScriptStruct Engine.SimpleMemberReference
+struct FSimpleMemberReference {
+	struct Unknown MemberParent; // 0x0 (8)
+	struct FName MemberName; // 0x8 (8)
+	struct Unknown MemberGuid; // 0x10 (16)
+};
+
+// ScriptStruct Engine.TickFunction
+struct FTickFunction {
+	char TickGroup; // 0x8 (1)
+	char EndTickGroup; // 0x9 (1)
+	char bTickEvenWhenPaused : 0; // 0xA (1)
+	char bCanEverTick : 0; // 0xA (1)
+	char bStartWithTickEnabled : 0; // 0xA (1)
+	char bAllowTickOnDedicatedServer : 0; // 0xA (1)
+	float TickInterval; // 0xC (4)
+};
+
+// ScriptStruct Engine.SubtitleCue
+struct FSubtitleCue {
+	struct FText Text; // 0x0 (24)
+	float Time; // 0x18 (4)
+};
+
+// ScriptStruct Engine.InterpControlPoint
+struct FInterpControlPoint {
+	struct Unknown PositionControlPoint; // 0x0 (12)
+	char bPositionIsRelative : 0; // 0xC (1)
+};
+
+// ScriptStruct Engine.PlatformInterfaceDelegateResult
+struct FPlatformInterfaceDelegateResult {
+	char bSuccessful : 0; // 0x0 (1)
+	struct Unknown Data; // 0x8 (48)
+};
+
+// ScriptStruct Engine.PlatformInterfaceData
+struct FPlatformInterfaceData {
+	struct FName DataName; // 0x0 (8)
+	char Type; // 0x8 (1)
+	int32_t IntValue; // 0xC (4)
+	float FloatValue; // 0x10 (4)
+	struct FString StringValue; // 0x18 (16)
+	struct Unknown ObjectValue; // 0x28 (8)
+};
+
+// ScriptStruct Engine.DebugFloatHistory
+struct FDebugFloatHistory {
+	struct TArray<Unknown> Samples; // 0x0 (16)
+	float MaxSamples; // 0x10 (4)
+	float MinValue; // 0x14 (4)
+	float MaxValue; // 0x18 (4)
+	char bAutoAdjustMinMax : 0; // 0x1C (1)
+};
+
+// ScriptStruct Engine.LatentActionInfo
+struct FLatentActionInfo {
+	int32_t Linkage; // 0x0 (4)
+	int32_t UUID; // 0x4 (4)
+	struct FName ExecutionFunction; // 0x8 (8)
+	struct Unknown CallbackTarget; // 0x10 (8)
+};
+
+// ScriptStruct Engine.TimerHandle
+struct FTimerHandle {
+	uint64_t Handle; // 0x0 (8)
+};
+
+// ScriptStruct Engine.CollisionProfileName
+struct FCollisionProfileName {
+	struct FName Name; // 0x0 (8)
+};
+
+// ScriptStruct Engine.GenericStruct
+struct FGenericStruct {
+	int32_t Data; // 0x0 (4)
+};
+
+// ScriptStruct Engine.UserActivity
+struct FUserActivity {
+	struct FString ActionName; // 0x0 (16)
+};
+
+// ScriptStruct Engine.URL
+struct FURL {
+	struct FString Protocol; // 0x0 (16)
+	struct FString Host; // 0x10 (16)
+	int32_t Port; // 0x20 (4)
+	int32_t Valid; // 0x24 (4)
+	struct FString Map; // 0x28 (16)
+	struct FString RedirectURL; // 0x38 (16)
+	struct TArray<Unknown> Op; // 0x48 (16)
+	struct FString Portal; // 0x58 (16)
+};
+
+// ScriptStruct Engine.RepAttachment
+struct FRepAttachment {
+	struct Unknown AttachParent; // 0x0 (8)
+	struct Unknown LocationOffset; // 0x8 (12)
+	struct Unknown RelativeScale3D; // 0x14 (12)
+	struct Unknown RotationOffset; // 0x20 (12)
+	struct FName AttachSocket; // 0x2C (8)
+	struct Unknown AttachComponent; // 0x38 (8)
+};
+
+// ScriptStruct Engine.RepMovement
+struct FRepMovement {
+	struct Unknown LinearVelocity; // 0x0 (12)
+	struct Unknown AngularVelocity; // 0xC (12)
+	struct Unknown Location; // 0x18 (12)
+	struct Unknown Rotation; // 0x24 (12)
+	char bSimulatedPhysicSleep : 0; // 0x30 (1)
+	char bRepPhysics : 0; // 0x30 (1)
+	enum class Unknow LocationQuantizationLevel; // 0x31 (1)
+	enum class Unknow VelocityQuantizationLevel; // 0x32 (1)
+	enum class Unknow RotationQuantizationLevel; // 0x33 (1)
+};
+
+// ScriptStruct Engine.UniqueNetIdRepl
+struct FUniqueNetIdRepl : FUniqueNetIdWrapper {
+	struct TArray<Unknown> ReplicationBytes; // 0x18 (16)
+};
+
+// ScriptStruct Engine.ForceFeedbackParameters
+struct FForceFeedbackParameters {
+	struct FName Tag; // 0x0 (8)
+	char bLooping : 0; // 0x8 (1)
+	char bIgnoreTimeDilation : 0; // 0x9 (1)
+	char bPlayWhilePaused : 0; // 0xA (1)
+};
+
+// ScriptStruct Engine.ViewTargetTransitionParams
+struct FViewTargetTransitionParams {
+	float BlendTime; // 0x0 (4)
+	char BlendFunction; // 0x4 (1)
+	float BlendExp; // 0x8 (4)
+	char bLockOutgoing : 0; // 0xC (1)
+};
+
+// ScriptStruct Engine.UpdateLevelStreamingLevelStatus
+struct FUpdateLevelStreamingLevelStatus {
+	struct FName PackageName; // 0x0 (8)
+	int32_t LODIndex; // 0x8 (4)
+	char bNewShouldBeLoaded : 0; // 0xC (1)
+	char bNewShouldBeVisible : 0; // 0xC (1)
+	char bNewShouldBlockOnLoad : 0; // 0xC (1)
+};
+
+// ScriptStruct Engine.UpdateLevelVisibilityLevelInfo
+struct FUpdateLevelVisibilityLevelInfo {
+	struct FName PackageName; // 0x0 (8)
+	struct FName Filename; // 0x8 (8)
+	char bIsVisible : 0; // 0x10 (1)
+};
+
+// ScriptStruct Engine.ActiveForceFeedbackEffect
+struct FActiveForceFeedbackEffect {
+	struct Unknown ForceFeedbackEffect; // 0x0 (8)
+};
+
+// ScriptStruct Engine.UserWidgetInfoForReplay
+struct FUserWidgetInfoForReplay {
+	struct FString KeyName; // 0x0 (16)
+	struct FString FilePath; // 0x10 (16)
+};
+
+// ScriptStruct Engine.FractureEffect
+struct FFractureEffect {
+	struct Unknown ParticleSystem; // 0x0 (8)
+	struct Unknown Sound; // 0x8 (8)
+	enum class Unknow SoundType; // 0x10 (1)
+};
+
+// ScriptStruct Engine.RootMotionSourceGroup
+struct FRootMotionSourceGroup {
+	char bHasAdditiveSources : 0; // 0x28 (1)
+	char bHasOverrideSources : 0; // 0x28 (1)
+	char bHasOverrideSourcesWithIgnoreZAccumulate : 0; // 0x28 (1)
+	char bIsAdditiveVelocityApplied : 0; // 0x28 (1)
+	struct Unknown LastAccumulatedSettings; // 0x29 (1)
+	struct Unknown LastPreAdditiveVelocity; // 0x2C (12)
+};
+
+// ScriptStruct Engine.RootMotionSourceSettings
+struct FRootMotionSourceSettings {
+	char Flags; // 0x0 (1)
+};
+
+// ScriptStruct Engine.RepRootMotionMontage
+struct FRepRootMotionMontage {
+	char bIsActive : 0; // 0x0 (1)
+	struct Unknown AnimMontage; // 0x8 (8)
+	float Position; // 0x10 (4)
+	struct Unknown Location; // 0x14 (12)
+	struct Unknown Rotation; // 0x20 (12)
+	struct Unknown MovementBase; // 0x30 (8)
+	struct FName MovementBaseBoneName; // 0x38 (8)
+	char bRelativePosition : 0; // 0x40 (1)
+	char bRelativeRotation : 0; // 0x41 (1)
+	struct Unknown AuthoritativeRootMotion; // 0x48 (56)
+	struct Unknown Acceleration; // 0x80 (12)
+	struct Unknown LinearVelocity; // 0x8C (12)
+};
+
+// ScriptStruct Engine.SimulatedRootMotionReplicatedMove
+struct FSimulatedRootMotionReplicatedMove {
+	float Time; // 0x0 (4)
+	struct Unknown RootMotion; // 0x8 (152)
+};
+
+// ScriptStruct Engine.RootMotionMovementParams
+struct FRootMotionMovementParams {
+	char bHasRootMotion : 0; // 0x0 (1)
+	float BlendWeight; // 0x4 (4)
+	struct Unknown RootMotionTransform; // 0x10 (48)
+};
+
+// ScriptStruct Engine.BasedMovementInfo
+struct FBasedMovementInfo {
+	struct Unknown MovementBase; // 0x0 (8)
+	struct FName BoneName; // 0x8 (8)
+	struct Unknown Location; // 0x10 (12)
+	struct Unknown Rotation; // 0x1C (12)
+	char bServerHasBaseComponent : 0; // 0x28 (1)
+	char bRelativeRotation : 0; // 0x29 (1)
+	char bServerHasVelocity : 0; // 0x2A (1)
+};
+
+// ScriptStruct Engine.Timeline
+struct FTimeline {
+	char LengthMode; // 0x0 (1)
+	char bLooping : 0; // 0x1 (1)
+	char bReversePlayback : 0; // 0x1 (1)
+	char bPlaying : 0; // 0x1 (1)
+	float Length; // 0x4 (4)
+	float PlayRate; // 0x8 (4)
+	float Position; // 0xC (4)
+	struct TArray<Unknown> Events; // 0x10 (16)
+	struct TArray<Unknown> InterpVectors; // 0x20 (16)
+	struct TArray<Unknown> InterpFloats; // 0x30 (16)
+	struct TArray<Unknown> InterpLinearColors; // 0x40 (16)
+	struct FDelegate TimelinePostUpdateFunc; // 0x50 (16)
+	struct FDelegate TimelineFinishedFunc; // 0x60 (16)
+	struct TWeakObjectPtr<struct Unknown> PropertySetObject; // 0x70 (8)
+	struct FName DirectionPropertyName; // 0x78 (8)
+};
+
+// ScriptStruct Engine.TimelineLinearColorTrack
+struct FTimelineLinearColorTrack {
+	struct Unknown LinearColorCurve; // 0x0 (8)
+	struct FDelegate InterpFunc; // 0x8 (16)
+	struct FName TrackName; // 0x18 (8)
+	struct FName LinearColorPropertyName; // 0x20 (8)
+};
+
+// ScriptStruct Engine.TimelineFloatTrack
+struct FTimelineFloatTrack {
+	struct Unknown FloatCurve; // 0x0 (8)
+	struct FDelegate InterpFunc; // 0x8 (16)
+	struct FName TrackName; // 0x18 (8)
+	struct FName FloatPropertyName; // 0x20 (8)
+};
+
+// ScriptStruct Engine.TimelineVectorTrack
+struct FTimelineVectorTrack {
+	struct Unknown VectorCurve; // 0x0 (8)
+	struct FDelegate InterpFunc; // 0x8 (16)
+	struct FName TrackName; // 0x18 (8)
+	struct FName VectorPropertyName; // 0x20 (8)
+};
+
+// ScriptStruct Engine.TimelineEventEntry
+struct FTimelineEventEntry {
+	float Time; // 0x0 (4)
+	struct FDelegate EventFunc; // 0x4 (16)
+};
+
+// ScriptStruct Engine.DataTableRowHandle
+struct FDataTableRowHandle {
+	struct Unknown DataTable; // 0x0 (8)
+	struct FName RowName; // 0x8 (8)
+};
+
+// ScriptStruct Engine.DamageEvent
+struct FDamageEvent {
+	struct Unknown* DamageTypeClass; // 0x8 (8)
+};
+
+// ScriptStruct Engine.RadialDamageEvent
+struct FRadialDamageEvent : FDamageEvent {
+	struct Unknown Params; // 0x10 (20)
+	struct Unknown Origin; // 0x24 (12)
+	struct TArray<Unknown> ComponentHits; // 0x30 (16)
+};
+
+// ScriptStruct Engine.RadialDamageParams
+struct FRadialDamageParams {
+	float BaseDamage; // 0x0 (4)
+	float MinimumDamage; // 0x4 (4)
+	float InnerRadius; // 0x8 (4)
+	float OuterRadius; // 0xC (4)
+	float DamageFalloff; // 0x10 (4)
+};
+
+// ScriptStruct Engine.PointDamageEvent
+struct FPointDamageEvent : FDamageEvent {
+	float Damage; // 0x10 (4)
+	struct Unknown ShotDirection; // 0x14 (12)
+	struct Unknown HitInfo; // 0x20 (136)
+};
+
+// ScriptStruct Engine.PostProcessSettings
+struct FPostProcessSettings {
+	char bOverride_WhiteTemp : 0; // 0x0 (1)
+	char bOverride_WhiteTint : 0; // 0x0 (1)
+	char bOverride_ColorSaturation : 0; // 0x0 (1)
+	char bOverride_ColorContrast : 0; // 0x0 (1)
+	char bOverride_ColorGamma : 0; // 0x0 (1)
+	char bOverride_ColorGain : 0; // 0x0 (1)
+	char bOverride_ColorOffset : 0; // 0x0 (1)
+	char bOverride_ColorSaturationShadows : 0; // 0x0 (1)
+	char bOverride_ColorContrastShadows : 0; // 0x1 (1)
+	char bOverride_ColorGammaShadows : 0; // 0x1 (1)
+	char bOverride_ColorGainShadows : 0; // 0x1 (1)
+	char bOverride_ColorOffsetShadows : 0; // 0x1 (1)
+	char bOverride_ColorSaturationMidtones : 0; // 0x1 (1)
+	char bOverride_ColorContrastMidtones : 0; // 0x1 (1)
+	char bOverride_ColorGammaMidtones : 0; // 0x1 (1)
+	char bOverride_ColorGainMidtones : 0; // 0x1 (1)
+	char bOverride_ColorOffsetMidtones : 0; // 0x2 (1)
+	char bOverride_ColorSaturationHighlights : 0; // 0x2 (1)
+	char bOverride_ColorContrastHighlights : 0; // 0x2 (1)
+	char bOverride_ColorGammaHighlights : 0; // 0x2 (1)
+	char bOverride_ColorGainHighlights : 0; // 0x2 (1)
+	char bOverride_ColorOffsetHighlights : 0; // 0x2 (1)
+	char bOverride_ColorCorrectionShadowsMax : 0; // 0x2 (1)
+	char bOverride_ColorCorrectionHighlightsMin : 0; // 0x2 (1)
+	char bOverride_BlueCorrection : 0; // 0x3 (1)
+	char bOverride_ExpandGamut : 0; // 0x3 (1)
+	char bOverride_FilmWhitePoint : 0; // 0x3 (1)
+	char bOverride_FilmSaturation : 0; // 0x3 (1)
+	char bOverride_FilmChannelMixerRed : 0; // 0x3 (1)
+	char bOverride_FilmChannelMixerGreen : 0; // 0x3 (1)
+	char bOverride_FilmChannelMixerBlue : 0; // 0x3 (1)
+	char bOverride_FilmContrast : 0; // 0x3 (1)
+	char bOverride_FilmDynamicRange : 0; // 0x4 (1)
+	char bOverride_FilmHealAmount : 0; // 0x4 (1)
+	char bOverride_FilmToeAmount : 0; // 0x4 (1)
+	char bOverride_FilmShadowTint : 0; // 0x4 (1)
+	char bOverride_FilmShadowTintBlend : 0; // 0x4 (1)
+	char bOverride_FilmShadowTintAmount : 0; // 0x4 (1)
+	char bOverride_FilmSlope : 0; // 0x4 (1)
+	char bOverride_FilmToe : 0; // 0x4 (1)
+	char bOverride_FilmShoulder : 0; // 0x5 (1)
+	char bOverride_FilmBlackClip : 0; // 0x5 (1)
+	char bOverride_FilmWhiteClip : 0; // 0x5 (1)
+	char bOverride_FilmicTonemapper : 0; // 0x5 (1)
+	char bOverride_TonemapperSharpen : 0; // 0x5 (1)
+	char bOverride_UseVolumetricFogEmissive : 0; // 0x5 (1)
+	char bOverride_VolumetricFogEmissive : 0; // 0x5 (1)
+	char bOverride_SceneColorTint : 0; // 0x5 (1)
+	char bOverride_SceneFringeIntensity : 0; // 0x6 (1)
+	char bOverride_ChromaticAberrationStartOffset : 0; // 0x6 (1)
+	char bOverride_AmbientCubemapTint : 0; // 0x6 (1)
+	char bOverride_AmbientCubemapIntensity : 0; // 0x6 (1)
+	char bOverride_BloomMethod : 0; // 0x6 (1)
+	char bOverride_BloomIntensity : 0; // 0x6 (1)
+	char bOverride_BloomThreshold : 0; // 0x6 (1)
+	char bOverride_Bloom1Tint : 0; // 0x6 (1)
+	char bOverride_Bloom1Size : 0; // 0x7 (1)
+	char bOverride_Bloom2Size : 0; // 0x7 (1)
+	char bOverride_Bloom2Tint : 0; // 0x7 (1)
+	char bOverride_Bloom3Tint : 0; // 0x7 (1)
+	char bOverride_Bloom3Size : 0; // 0x7 (1)
+	char bOverride_Bloom4Tint : 0; // 0x7 (1)
+	char bOverride_Bloom4Size : 0; // 0x7 (1)
+	char bOverride_Bloom5Tint : 0; // 0x7 (1)
+	char bOverride_Bloom5Size : 0; // 0x8 (1)
+	char bOverride_Bloom6Tint : 0; // 0x8 (1)
+	char bOverride_Bloom6Size : 0; // 0x8 (1)
+	char bOverride_BloomSizeScale : 0; // 0x8 (1)
+	char bOverride_BloomConve : 0; // 0x8 (1)
+	char bOverride_BloomConvt : 0; // 0x8 (1)
+	char bOverride_BloomConv : 0; // 0x8 (1)
+	char bOverride_BloomConvolutionSizec : 0; // 0x8 (1)
+	char bOverride_BloomConv : 0; // 0x9 (1)
+	char bOverride_BloomConv : 0; // 0x9 (1)
+	char bOverride_BloomConve : 0; // 0x9 (1)
+	char bOverride_BloomConv : 0; // 0x9 (1)
+	char bOverride_BloomDirtMaskIntensity : 0; // 0x9 (1)
+	char bOverride_BloomDirtMaskTint : 0; // 0x9 (1)
+	char bOverride_BloomDirtMask : 0; // 0x9 (1)
+	char bOverride_CameraShutterSpeed : 0; // 0x9 (1)
+	char bOverride_CameraISO : 0; // 0xA (1)
+	char bOverride_AutoExposureMethod : 0; // 0xA (1)
+	char bOverride_AutoExposureLowPercent : 0; // 0xA (1)
+	char bOverride_AutoExposureHighPercent : 0; // 0xA (1)
+	char bOverride_AutoExposureMinBrightness : 0; // 0xA (1)
+	char bOverride_AutoExposureMaxBrightness : 0; // 0xA (1)
+	char bOverride_AutoExposureCalibrationConstant : 0; // 0xA (1)
+	char bOverride_AutoExposureSpeedUp : 0; // 0xA (1)
+	char bOverride_AutoExposureSpeedDown : 0; // 0xB (1)
+	char bOverride_AutoExposureBias : 0; // 0xB (1)
+	char bOverride_AutoExposureBiasCurve : 0; // 0xB (1)
+	char bOverride_AutoExposureMeterMask : 0; // 0xB (1)
+	char bOverride_AutoExposureApplyPhysicalCameraExposure : 0; // 0xB (1)
+	char bOverride_HistogramLogMin : 0; // 0xB (1)
+	char bOverride_HistogramLogMax : 0; // 0xB (1)
+	char bOverride_LensFlareIntensity : 0; // 0xB (1)
+	char bOverride_LensFlareTint : 0; // 0xC (1)
+	char bOverride_LensFlareTints : 0; // 0xC (1)
+	char bOverride_LensFlareBokehSize : 0; // 0xC (1)
+	char bOverride_LensFlareBokehShape : 0; // 0xC (1)
+	char bOverride_LensFlareThreshold : 0; // 0xC (1)
+	char bOverride_VignetteIntensity : 0; // 0xC (1)
+	char bOverride_GrainIntensity : 0; // 0xC (1)
+	char bOverride_GrainJitter : 0; // 0xC (1)
+	char bOverride_AmbientOcclusionIntensity : 0; // 0xD (1)
+	char bOverride_AmbientOcclusionIntensitySubsurfaceProfile : 0; // 0xD (1)
+	char bOverride_AmbientOcclusionStaticFraction : 0; // 0xD (1)
+	char bOverride_AmbientOcclusionRadius : 0; // 0xD (1)
+	char bOverride_AmbientOcclusionFadeDistance : 0; // 0xD (1)
+	char bOverride_AmbientOcclusionFadeRadius : 0; // 0xD (1)
+	char bOverride_AmbientOcclusionDistance : 0; // 0xD (1)
+	char bOverride_AmbientOcclusionRadiusInWS : 0; // 0xD (1)
+	char bOverride_AmbientOcclusionPower : 0; // 0xE (1)
+	char bOverride_AmbientOcclusionBias : 0; // 0xE (1)
+	char bOverride_AmbientOcclusionQuality : 0; // 0xE (1)
+	char bOverride_AmbientOcclusionMipBlend : 0; // 0xE (1)
+	char bOverride_AmbientOcclusionMipSc : 0; // 0xE (1)
+	char bOverride_AmbientOcclusionMipThreshold : 0; // 0xE (1)
+	char bOverride_RayTracingAO : 0; // 0x10 (1)
+	char bOverride_RayTracingAOSamplesPerPixel : 0; // 0x10 (1)
+	char bOverride_LPVIntensity : 0; // 0x14 (1)
+	char bOverride_LPVDirectionalOcclusionIntensity : 0; // 0x14 (1)
+	char bOverride_LPVDirectionalOcclusionRadius : 0; // 0x14 (1)
+	char bOverride_LPVDiffuseOcclusionExponent : 0; // 0x14 (1)
+	char bOverride_LPVSpecularOcclusionExponent : 0; // 0x14 (1)
+	char bOverride_LPVDiffuseOcclusionIntensity : 0; // 0x14 (1)
+	char bOverride_LPVSpecularOcclusionIntensity : 0; // 0x14 (1)
+	char bOverride_LPVSize : 0; // 0x14 (1)
+	char bOverride_LPVSecondaryOcclusionIntensity : 0; // 0x15 (1)
+	char bOverride_LPVSecondaryBounceIntensity : 0; // 0x15 (1)
+	char bOverride_LPVGeometryVolumeBias : 0; // 0x15 (1)
+	char bOverride_LPVVplInjectionBias : 0; // 0x15 (1)
+	char bOverride_LPVEmissiveInjectionIntensity : 0; // 0x15 (1)
+	char bOverride_LPVFadeRange : 0; // 0x15 (1)
+	char bOverride_LPVDirectionalOcclusionFadeRange : 0; // 0x15 (1)
+	char bOverride_LPVReflectionIntensity : 0; // 0x18 (1)
+	char bOverride_LPVReflectionLength : 0; // 0x18 (1)
+	char bOverride_LPVReflectionOcclusion : 0; // 0x18 (1)
+	char bOverride_LPVHairSpecularLightingIntensity : 0; // 0x18 (1)
+	char bOverride_LPVHairSpecularOcclusionIntensity : 0; // 0x18 (1)
+	char bOverride_LPVHairRoughnessOverride : 0; // 0x18 (1)
+	char bOverride_LPVDistantLightingIntensity : 0; // 0x18 (1)
+	char bOverride_LPVEnvironmentColor : 0; // 0x18 (1)
+	char bOverride_UseSeparateAOVolume : 0; // 0x19 (1)
+	char bOverride_IndirectLightingColor : 0; // 0x1C (1)
+	char bOverride_IndirectLightingIntensity : 0; // 0x1C (1)
+	char bOverride_SkyLightingIntensity : 0; // 0x1C (1)
+	char bOverride_DiffuseIBLIntensity : 0; // 0x1C (1)
+	char bOverride_TwoSidedFoliageSpecularReflec : 0; // 0x1C (1)
+	char bOverride_IndirectSpecularIntensity : 0; // 0x1C (1)
+	char bOverride_IndirectSpecularBlendFactor : 0; // 0x1C (1)
+	char bOverride_IndirectLightingDirec : 0; // 0x1C (1)
+	char bOverride_IndirectLightingDirec : 0; // 0x1D (1)
+	char bOverride_IndirectLightingDirec : 0; // 0x1D (1)
+	char bOverride_ColorGradingIntensity : 0; // 0x1D (1)
+	char bOverride_ColorGradingLUT : 0; // 0x1D (1)
+	char bOverride_DepthOfFieldFocalDistance : 0; // 0x1D (1)
+	char bOverride_DepthOfFieldFstop : 0; // 0x1D (1)
+	char bOverride_DepthOfFieldMinFstop : 0; // 0x1D (1)
+	char bOverride_DepthOfFieldBladeCount : 0; // 0x1D (1)
+	char bOverride_DepthOfFieldSensorWidth : 0; // 0x1E (1)
+	char bOverride_DepthOfFieldDepthBlurRadius : 0; // 0x1E (1)
+	char bOverride_DepthOfFieldDepthBlurAmount : 0; // 0x1E (1)
+	char bOverride_DepthOfFieldFocalRegion : 0; // 0x1E (1)
+	char bOverride_DepthOfFieldNearTransitionRegion : 0; // 0x1E (1)
+	char bOverride_DepthOfFieldFarTransitionRegion : 0; // 0x1E (1)
+	char bOverride_DepthOfFieldEnabled : 0; // 0x1E (1)
+	char bOverride_DepthOfFieldScale : 0; // 0x1E (1)
+	char bOverride_DepthOfFieldNearBlurSize : 0; // 0x1F (1)
+	char bOverride_DepthOfFieldFarBlurSize : 0; // 0x1F (1)
+	char bOverride_MobileHQGaussian : 0; // 0x1F (1)
+	char bOverride_DepthOfFieldOcclusion : 0; // 0x1F (1)
+	char bOverride_DepthOfFieldSkyFocusDistance : 0; // 0x1F (1)
+	char bOverride_DepthOfFieldVignetteSize : 0; // 0x1F (1)
+	char bOverride_MotionBlurAmount : 0; // 0x1F (1)
+	char bOverride_MotionBlurMax : 0; // 0x1F (1)
+	char bOverride_MotionBlurTargetFPS : 0; // 0x20 (1)
+	char bOverride_MotionBlurPerObjectSize : 0; // 0x20 (1)
+	char bOverride_ScreenPercentage : 0; // 0x20 (1)
+	char bOverride_ScreenSpaceReflectionIntensity : 0; // 0x20 (1)
+	char bOverride_ScreenSpaceReflectionQuality : 0; // 0x20 (1)
+	char bOverride_ScreenSpaceReflectionMaxRoughness : 0; // 0x20 (1)
+	char bOverride_ScreenSpaceReflectionRoughnessScale : 0; // 0x20 (1)
+	char bOverride_ReflectionsType : 0; // 0x24 (1)
+	char bOverride_RayTracingReflectionsMaxRoughness : 0; // 0x24 (1)
+	char bOverride_RayTracingReflectionsMaxBounc : 0; // 0x24 (1)
+	char bOverride_RayTracingReflectionsSamplesPerPixel : 0; // 0x24 (1)
+	char bOverride_RayTracingReflectionsShadows : 0; // 0x24 (1)
+	char bOverride_RayTracingReflectionsTransluc : 0; // 0x24 (1)
+	char bOverride_TranslucencyType : 0; // 0x24 (1)
+	char bOverride_RayTracingTranslucenc : 0; // 0x24 (1)
+	char bOverride_RayTracingTranslucenc : 0; // 0x25 (1)
+	char bOverride_RayTracingTranslucenc : 0; // 0x25 (1)
+	char bOverride_RayTracingTranslucenc : 0; // 0x25 (1)
+	char bOverride_RayTracingTranslucenc : 0; // 0x25 (1)
+	char bOverride_RayTracingGI : 0; // 0x25 (1)
+	char bOverride_RayTracingGIMaxBounces : 0; // 0x25 (1)
+	char bOverride_RayTracingGISamplesPerPixel : 0; // 0x25 (1)
+	char bOverride_PathTracingMaxBounces : 0; // 0x25 (1)
+	char bOverride_PathTracingSamplesPerPixel : 0; // 0x26 (1)
+	char bMobileHQGaussian : 0; // 0x28 (1)
+	char BloomMethod; // 0x29 (1)
+	char AutoExposureMethod; // 0x2A (1)
+	float WhiteTemp; // 0x2C (4)
+	float WhiteTint; // 0x30 (4)
+	struct Unknown ColorSaturation; // 0x40 (16)
+	struct Unknown ColorContrast; // 0x50 (16)
+	struct Unknown ColorGamma; // 0x60 (16)
+	struct Unknown ColorGain; // 0x70 (16)
+	struct Unknown ColorOffset; // 0x80 (16)
+	struct Unknown ColorSaturationShadows; // 0x90 (16)
+	struct Unknown ColorContrastShadows; // 0xA0 (16)
+	struct Unknown ColorGammaShadows; // 0xB0 (16)
+	struct Unknown ColorGainShadows; // 0xC0 (16)
+	struct Unknown ColorOffsetShadows; // 0xD0 (16)
+	struct Unknown ColorSaturationMidtones; // 0xE0 (16)
+	struct Unknown ColorContrastMidtones; // 0xF0 (16)
+	struct Unknown ColorGammaMidtones; // 0x100 (16)
+	struct Unknown ColorGainMidtones; // 0x110 (16)
+	struct Unknown ColorOffsetMidtones; // 0x120 (16)
+	struct Unknown ColorSaturationHighlights; // 0x130 (16)
+	struct Unknown ColorContrastHighlights; // 0x140 (16)
+	struct Unknown ColorGammaHighlights; // 0x150 (16)
+	struct Unknown ColorGainHighlights; // 0x160 (16)
+	struct Unknown ColorOffsetHighlights; // 0x170 (16)
+	float ColorCorrectionHighlightsMin; // 0x180 (4)
+	float ColorCorrectionShadowsMax; // 0x184 (4)
+	float BlueCorrection; // 0x188 (4)
+	float ExpandGamut; // 0x18C (4)
+	float FilmSlope; // 0x190 (4)
+	float FilmToe; // 0x194 (4)
+	float FilmShoulder; // 0x198 (4)
+	float FilmBlackClip; // 0x19C (4)
+	float FilmWhiteClip; // 0x1A0 (4)
+	struct Unknown FilmWhitePoint; // 0x1A4 (16)
+	struct Unknown FilmShadowTint; // 0x1B4 (16)
+	float FilmShadowTintBlend; // 0x1C4 (4)
+	float FilmShadowTintAmount; // 0x1C8 (4)
+	float FilmSaturation; // 0x1CC (4)
+	struct Unknown FilmChannelMixerRed; // 0x1D0 (16)
+	struct Unknown FilmChannelMixerGreen; // 0x1E0 (16)
+	struct Unknown FilmChannelMixerBlue; // 0x1F0 (16)
+	float FilmContrast; // 0x200 (4)
+	float FilmToeAmount; // 0x204 (4)
+	float FilmHealAmount; // 0x208 (4)
+	float FilmDynamicRange; // 0x20C (4)
+	enum class Unknow FilmicTonemapper; // 0x210 (1)
+	float TonemapperSharpen; // 0x214 (4)
+	char UseVolumetricFogEmissive : 0; // 0x218 (1)
+	struct Unknown VolumetricFogEmissive; // 0x21C (16)
+	struct Unknown SceneColorTint; // 0x22C (16)
+	float SceneFringeIntensity; // 0x23C (4)
+	float ChromaticAberrationStartOffset; // 0x240 (4)
+	float BloomIntensity; // 0x244 (4)
+	float BloomThreshold; // 0x248 (4)
+	float BloomSizeScale; // 0x24C (4)
+	float Bloom1Size; // 0x250 (4)
+	float Bloom2Size; // 0x254 (4)
+	float Bloom3Size; // 0x258 (4)
+	float Bloom4Size; // 0x25C (4)
+	float Bloom5Size; // 0x260 (4)
+	float Bloom6Size; // 0x264 (4)
+	struct Unknown Bloom1Tint; // 0x268 (16)
+	struct Unknown Bloom2Tint; // 0x278 (16)
+	struct Unknown Bloom3Tint; // 0x288 (16)
+	struct Unknown Bloom4Tint; // 0x298 (16)
+	struct Unknown Bloom5Tint; // 0x2A8 (16)
+	struct Unknown Bloom6Tint; // 0x2B8 (16)
+	float BloomConvolutionSize; // 0x2C8 (4)
+	struct Unknown BloomConvolutionTexture; // 0x2D0 (8)
+	struct Unknown BloomConvolutionCenterUV; // 0x2D8 (8)
+	float BloomConvolutionPreFilterMin; // 0x2E0 (4)
+	float BloomConvolutionPreFilterMax; // 0x2E4 (4)
+	float BloomConvolutionPreFilterMult; // 0x2E8 (4)
+	float BloomConvolutionBufferScale; // 0x2EC (4)
+	struct Unknown BloomDirtMask; // 0x2F0 (8)
+	float BloomDirtMaskIntensity; // 0x2F8 (4)
+	struct Unknown BloomDirtMaskTint; // 0x2FC (16)
+	struct Unknown AmbientCubemapTint; // 0x30C (16)
+	float AmbientCubemapIntensity; // 0x31C (4)
+	struct Unknown AmbientCubemap; // 0x320 (8)
+	float CameraShutterSpeed; // 0x328 (4)
+	float CameraISO; // 0x32C (4)
+	float DepthOfFieldFstop; // 0x330 (4)
+	float DepthOfFieldMinFstop; // 0x334 (4)
+	int32_t DepthOfFieldBladeCount; // 0x338 (4)
+	float AutoExposureBias; // 0x33C (4)
+	float AutoExposureBiasBackup; // 0x340 (4)
+	char bOverride_AutoExposureBiasBackup : 0; // 0x344 (1)
+	char AutoExposureApplyPhysicalCameraExposure : 0; // 0x348 (1)
+	struct Unknown AutoExposureBiasCurve; // 0x350 (8)
+	struct Unknown AutoExposureMeterMask; // 0x358 (8)
+	float AutoExposureLowPercent; // 0x360 (4)
+	float AutoExposureHighPercent; // 0x364 (4)
+	float AutoExposureMinBrightness; // 0x368 (4)
+	float AutoExposureMaxBrightness; // 0x36C (4)
+	float AutoExposureSpeedUp; // 0x370 (4)
+	float AutoExposureSpeedDown; // 0x374 (4)
+	float HistogramLogMin; // 0x378 (4)
+	float HistogramLogMax; // 0x37C (4)
+	float AutoExposureCalibrationConstant; // 0x380 (4)
+	float LensFlareIntensity; // 0x384 (4)
+	struct Unknown LensFlareTint; // 0x388 (16)
+	float LensFlareBokehSize; // 0x398 (4)
+	float LensFlareThreshold; // 0x39C (4)
+	struct Unknown LensFlareBokehShape; // 0x3A0 (8)
+	struct Unknown LensFlareTints[0x8]; // 0x3A8 (128)
+	float VignetteIntensity; // 0x428 (4)
+	float GrainJitter; // 0x42C (4)
+	float GrainIntensity; // 0x430 (4)
+	float AmbientOcclusionIntensity; // 0x434 (4)
+	float AmbientOcclusionIntensitySubsurfaceProfile; // 0x438 (4)
+	float AmbientOcclusionStaticFraction; // 0x43C (4)
+	float AmbientOcclusionRadius; // 0x440 (4)
+	char AmbientOcclusionRadiusInWS : 0; // 0x444 (1)
+	float AmbientOcclusionFadeDistance; // 0x448 (4)
+	float AmbientOcclusionFadeRadius; // 0x44C (4)
+	float AmbientOcclusionDistance; // 0x450 (4)
+	float AmbientOcclusionPower; // 0x454 (4)
+	float AmbientOcclusionBias; // 0x458 (4)
+	float AmbientOcclusionQuality; // 0x45C (4)
+	float AmbientOcclusionMipBlend; // 0x460 (4)
+	float AmbientOcclusionMipScale; // 0x464 (4)
+	float AmbientOcclusionMipThreshold; // 0x468 (4)
+	char RayTracingAO : 0; // 0x46C (1)
+	int32_t RayTracingAOSamplesPerPixel; // 0x470 (4)
+	struct Unknown IndirectLightingColor; // 0x474 (16)
+	float IndirectLightingIntensity; // 0x484 (4)
+	float SkyLightingIntensity; // 0x488 (4)
+	float DiffuseIBLIntensity; // 0x48C (4)
+	float TwoSidedFoliageSpecularReflectionIntensity; // 0x490 (4)
+	float IndirectSpecularIntensity; // 0x494 (4)
+	float IndirectSpecularBlendFactor; // 0x498 (4)
+	float IndirectLightingDirectionality; // 0x49C (4)
+	float IndirectLightingDirectionalSourceSize; // 0x4A0 (4)
+	float IndirectLightingDirectionalSpec; // 0x4A4 (4)
+	enum class Unknow RayTracingGIType; // 0x4A8 (1)
+	int32_t RayTracingGIMaxBounces; // 0x4AC (4)
+	int32_t RayTracingGISamplesPerPixel; // 0x4B0 (4)
+	float ColorGradingIntensity; // 0x4B4 (4)
+	struct Unknown ColorGradingLUT; // 0x4B8 (8)
+	float DepthOfFieldSensorWidth; // 0x4C0 (4)
+	float DepthOfFieldFocalDistance; // 0x4C4 (4)
+	float DepthOfFieldDepthBlurAmount; // 0x4C8 (4)
+	float DepthOfFieldDepthBlurRadius; // 0x4CC (4)
+	float DepthOfFieldFocalRegion; // 0x4D0 (4)
+	float DepthOfFieldNearTransitionRegion; // 0x4D4 (4)
+	float DepthOfFieldFarTransitionRegion; // 0x4D8 (4)
+	char bDepthOfFieldEnabled : 0; // 0x4DC (1)
+	float DepthOfFieldScale; // 0x4E0 (4)
+	float DepthOfFieldNearBlurSize; // 0x4E4 (4)
+	float DepthOfFieldFarBlurSize; // 0x4E8 (4)
+	float DepthOfFieldOcclusion; // 0x4EC (4)
+	float DepthOfFieldSkyFocusDistance; // 0x4F0 (4)
+	float DepthOfFieldVignetteSize; // 0x4F4 (4)
+	float MotionBlurAmount; // 0x4F8 (4)
+	float MotionBlurMax; // 0x4FC (4)
+	int32_t MotionBlurTargetFPS; // 0x500 (4)
+	float MotionBlurPerObjectSize; // 0x504 (4)
+	float LPVIntensity; // 0x508 (4)
+	float LPVVplInjectionBias; // 0x50C (4)
+	float LPVSize; // 0x510 (4)
+	float LPVSecondaryOcclusionIntensity; // 0x514 (4)
+	float LPVSecondaryBounceIntensity; // 0x518 (4)
+	float LPVGeometryVolumeBias; // 0x51C (4)
+	float LPVEmissiveInjectionIntensity; // 0x520 (4)
+	float LPVDirectionalOcclusionIntensity; // 0x524 (4)
+	float LPVDirectionalOcclusionRadius; // 0x528 (4)
+	float LPVDiffuseOcclusionExponent; // 0x52C (4)
+	float LPVSpecularOcclusionExponent; // 0x530 (4)
+	float LPVDiffuseOcclusionIntensity; // 0x534 (4)
+	float LPVSpecularOcclusionIntensity; // 0x538 (4)
+	float LPVReflectionIntensity; // 0x53C (4)
+	float LPVReflectionLength; // 0x540 (4)
+	char bLPVReflectionOcclusion : 0; // 0x544 (1)
+	float LPVHairSpecularLightingIntensity; // 0x548 (4)
+	float LPVHairSpecularOcclusionIntensity; // 0x54C (4)
+	float LPVHairRoughnessOverride; // 0x550 (4)
+	float LPVDistantLightingIntensity; // 0x554 (4)
+	struct Unknown LPVEnvironmentColor; // 0x558 (16)
+	char bUseSeparateAOVolume : 0; // 0x568 (1)
+	enum class Unknow ReflectionsType; // 0x569 (1)
+	float ScreenSpaceReflectionIntensity; // 0x56C (4)
+	float ScreenSpaceReflectionQuality; // 0x570 (4)
+	float ScreenSpaceReflectionMaxRoughness; // 0x574 (4)
+	float RayTracingReflectionsMaxRoughness; // 0x578 (4)
+	int32_t RayTracingReflectionsMaxBounces; // 0x57C (4)
+	int32_t RayTracingReflectionsSamplesPerPixel; // 0x580 (4)
+	enum class Unknow RayTracingReflectionsShadows; // 0x584 (1)
+	char RayTracingReflectionsTranslucency : 0; // 0x585 (1)
+	enum class Unknow TranslucencyType; // 0x586 (1)
+	float RayTracingTranslucencyMaxRoughness; // 0x588 (4)
+	int32_t RayTracingTranslucencyRefractionRays; // 0x58C (4)
+	int32_t RayTracingTranslucencySamplesPerPixel; // 0x590 (4)
+	enum class Unknow RayTracingTranslucencyShadows; // 0x594 (1)
+	char RayTracingTranslucencyRefraction : 0; // 0x595 (1)
+	int32_t PathTracingMaxBounces; // 0x598 (4)
+	int32_t PathTracingSamplesPerPixel; // 0x59C (4)
+	float LPVFadeRange; // 0x5A0 (4)
+	float LPVDirectionalOcclusionFadeRange; // 0x5A4 (4)
+	float ScreenPercentage; // 0x5A8 (4)
+	struct Unknown WeightedBlendables; // 0x5B0 (16)
+};
+
+// ScriptStruct Engine.WeightedBlendables
+struct FWeightedBlendables {
+	struct TArray<Unknown> Array; // 0x0 (16)
+};
+
+// ScriptStruct Engine.WeightedBlendable
+struct FWeightedBlendable {
+	float Weight; // 0x0 (4)
+	struct Unknown Object; // 0x8 (8)
+};
+
+// ScriptStruct Engine.FastArraySerializer
+struct FFastArraySerializer {
+	int32_t ArrayReplicationKey; // 0x54 (4)
+	enum class Unknow DeltaFlags; // 0x100 (1)
+};
+
+// ScriptStruct Engine.FastArraySerializerItem
+struct FFastArraySerializerItem {
+	int32_t ReplicationID; // 0x0 (4)
+	int32_t ReplicationKey; // 0x4 (4)
+	int32_t MostRecentArrayReplicationKey; // 0x8 (4)
+};
+
+// ScriptStruct Engine.InputActionKeyMapping
+struct FInputActionKeyMapping {
+	struct FName ActionName; // 0x0 (8)
+	char bShift : 0; // 0x8 (1)
+	char bCtrl : 0; // 0x8 (1)
+	char bAlt : 0; // 0x8 (1)
+	char bCmd : 0; // 0x8 (1)
+	struct Unknown Key; // 0x10 (24)
+};
+
+// ScriptStruct Engine.RigidBodyErrorCorrection
+struct FRigidBodyErrorCorrection {
+	float PingExtrapolation; // 0x0 (4)
+	float PingLimit; // 0x4 (4)
+	float ErrorPerLinearDifference; // 0x8 (4)
+	float ErrorPerAngularDifference; // 0xC (4)
+	float MaxRestoredStateError; // 0x10 (4)
+	float MaxLinearHardSnapDistance; // 0x14 (4)
+	float PositionLerp; // 0x18 (4)
+	float AngleLerp; // 0x1C (4)
+	float LinearVelocityCoefficient; // 0x20 (4)
+	float AngularVelocityCoefficient; // 0x24 (4)
+	float ErrorAccumulationSeconds; // 0x28 (4)
+	float ErrorAccumulationDistanceSq; // 0x2C (4)
+	float ErrorAccumulationSimilarity; // 0x30 (4)
+};
+
+// ScriptStruct Engine.DebugTextInfo
+struct FDebugTextInfo {
+	struct Unknown SrcActor; // 0x0 (8)
+	struct Unknown SrcActorOffset; // 0x8 (12)
+	struct Unknown SrcActorDesiredOffset; // 0x14 (12)
+	struct FString DebugText; // 0x20 (16)
+	float TimeRemaining; // 0x30 (4)
+	float Duration; // 0x34 (4)
+	struct Unknown TextColor; // 0x38 (4)
+	char bAbsoluteLocation : 0; // 0x3C (1)
+	char bKeepAttachedToActor : 0; // 0x3C (1)
+	char bDrawShadow : 0; // 0x3C (1)
+	struct Unknown OrigActorLocation; // 0x40 (12)
+	struct Unknown Font; // 0x50 (8)
+	float FontScale; // 0x58 (4)
+};
+
+// ScriptStruct Engine.MovementProperties
+struct FMovementProperties {
+	char bCanCrouch : 0; // 0x0 (1)
+	char bCanJump : 0; // 0x0 (1)
+	char bCanWalk : 0; // 0x0 (1)
+	char bCanSwim : 0; // 0x0 (1)
+	char bCanFly : 0; // 0x0 (1)
+};
+
+// ScriptStruct Engine.NavAgentProperties
+struct FNavAgentProperties : FMovementProperties {
+	float AgentRadius; // 0x4 (4)
+	float AgentHeight; // 0x8 (4)
+	float AgentStepHeight; // 0xC (4)
+	float NavWalkingSearchHeightScale; // 0x10 (4)
+	struct Unknown PreferredNavData; // 0x18 (24)
+};
+
+// ScriptStruct Engine.NavAvoidanceMask
+struct FNavAvoidanceMask {
+	char bGroup0 : 0; // 0x0 (1)
+	char bGroup1 : 0; // 0x0 (1)
+	char bGroup2 : 0; // 0x0 (1)
+	char bGroup3 : 0; // 0x0 (1)
+	char bGroup4 : 0; // 0x0 (1)
+	char bGroup5 : 0; // 0x0 (1)
+	char bGroup6 : 0; // 0x0 (1)
+	char bGroup7 : 0; // 0x0 (1)
+	char bGroup8 : 0; // 0x1 (1)
+	char bGroup9 : 0; // 0x1 (1)
+	char bGroup10 : 0; // 0x1 (1)
+	char bGroup11 : 0; // 0x1 (1)
+	char bGroup12 : 0; // 0x1 (1)
+	char bGroup13 : 0; // 0x1 (1)
+	char bGroup14 : 0; // 0x1 (1)
+	char bGroup15 : 0; // 0x1 (1)
+	char bGroup16 : 0; // 0x2 (1)
+	char bGroup17 : 0; // 0x2 (1)
+	char bGroup18 : 0; // 0x2 (1)
+	char bGroup19 : 0; // 0x2 (1)
+	char bGroup20 : 0; // 0x2 (1)
+	char bGroup21 : 0; // 0x2 (1)
+	char bGroup22 : 0; // 0x2 (1)
+	char bGroup23 : 0; // 0x2 (1)
+	char bGroup24 : 0; // 0x3 (1)
+	char bGroup25 : 0; // 0x3 (1)
+	char bGroup26 : 0; // 0x3 (1)
+	char bGroup27 : 0; // 0x3 (1)
+	char bGroup28 : 0; // 0x3 (1)
+	char bGroup29 : 0; // 0x3 (1)
+	char bGroup30 : 0; // 0x3 (1)
+	char bGroup31 : 0; // 0x3 (1)
+};
+
+// ScriptStruct Engine.RuntimeFloatCurve
+struct FRuntimeFloatCurve {
+	struct Unknown EditorCurveData; // 0x0 (128)
+	struct Unknown ExternalCurve; // 0x80 (8)
+};
+
+// ScriptStruct Engine.IndexedCurve
+struct FIndexedCurve {
+	struct Unknown KeyHandlesToIndices; // 0x8 (96)
+};
+
+// ScriptStruct Engine.RealCurve
+struct FRealCurve : FIndexedCurve {
+	float DefaultValue; // 0x68 (4)
+	char PreInfinityExtrap; // 0x6C (1)
+	char PostInfinityExtrap; // 0x6D (1)
+};
+
+// ScriptStruct Engine.RichCurve
+struct FRichCurve : FRealCurve {
+	struct TArray<Unknown> Keys; // 0x70 (16)
+};
+
+// ScriptStruct Engine.RichCurveKey
+struct FRichCurveKey {
+	char InterpMode; // 0x0 (1)
+	char TangentMode; // 0x1 (1)
+	char TangentWeightMode; // 0x2 (1)
+	float Time; // 0x4 (4)
+	float Value; // 0x8 (4)
+	float ArriveTangent; // 0xC (4)
+	float ArriveTangentWeight; // 0x10 (4)
+	float LeaveTangent; // 0x14 (4)
+	float LeaveTangentWeight; // 0x18 (4)
+};
+
+// ScriptStruct Engine.WalkableSlopeOverride
+struct FWalkableSlopeOverride {
+	char WalkableSlopeBehavior; // 0x0 (1)
+	float WalkableSlopeAngle; // 0x4 (4)
+};
+
+// ScriptStruct Engine.BodyInstance
+struct FBodyInstance {
+	char ObjectType; // 0x6 (1)
+	char CollisionEnabled; // 0x8 (1)
+	enum class Unknow SleepFamily; // 0xA (1)
+	char DOFMode; // 0xB (1)
+	char bUseCCD : 0; // 0xD (1)
+	char bIgnoreAnalyticCollisions : 0; // 0xD (1)
+	char bNotifyRigidBodyCollision : 0; // 0xD (1)
+	char bIgnoreCollisionsWithoutImpulse : 0; // 0xD (1)
+	char bContactModification : 0; // 0xD (1)
+	char bSimulatePhysics : 0; // 0xD (1)
+	char bOverrideMass : 0; // 0xD (1)
+	char bEnableGravity : 0; // 0xD (1)
+	char bAutoWeld : 0; // 0xE (1)
+	char bStartAwake : 0; // 0xE (1)
+	char bGenerateWakeEvents : 0; // 0xE (1)
+	char bUpdateMassWhenScaleChanges : 0; // 0xE (1)
+	char bLockTranslation : 0; // 0xE (1)
+	char bLockRotation : 0; // 0xE (1)
+	char bLockXTranslation : 0; // 0xE (1)
+	char bLockYTranslation : 0; // 0xE (1)
+	char bLockZTranslation : 0; // 0xF (1)
+	char bLockXRotation : 0; // 0xF (1)
+	char bLockYRotation : 0; // 0xF (1)
+	char bLockZRotation : 0; // 0xF (1)
+	char bOverrideMaxAngularVelocity : 0; // 0xF (1)
+	char bOverrideMaxDepenetrationVelocity : 0; // 0xF (1)
+	char bOverrideWalkableSlopeOnInstanc : 0; // 0x10 (1)
+	char bInterpolateWhenSubStepping : 0; // 0x10 (1)
+	struct FName CollisionProfileName; // 0x20 (8)
+	char PositionSolverIterationCount; // 0x28 (1)
+	char VelocitySolverIterationCount; // 0x29 (1)
+	struct Unknown CollisionResponses; // 0x30 (48)
+	float MaxDepenetrationVelocity; // 0x60 (4)
+	float MassInKgOverride; // 0x64 (4)
+	float LinearDamping; // 0x70 (4)
+	float AngularDamping; // 0x74 (4)
+	struct Unknown CustomDOFPlaneNormal; // 0x78 (12)
+	struct Unknown COMNudge; // 0x84 (12)
+	float MassScale; // 0x90 (4)
+	struct Unknown InertiaTensorScale; // 0x94 (12)
+	struct Unknown WalkableSlopeOverride; // 0xB0 (16)
+	struct Unknown PhysMaterialOverride; // 0xC0 (8)
+	float MaxAngularVelocity; // 0xC8 (4)
+	float CustomSleepThresholdMultiplier; // 0xCC (4)
+	float StabilizationThresholdMultiplier; // 0xD0 (4)
+	float PhysicsBlendWeight; // 0xD4 (4)
+};
+
+// ScriptStruct Engine.CollisionResponse
+struct FCollisionResponse {
+	struct Unknown ResponseToChannels; // 0x0 (32)
+	struct TArray<Unknown> ResponseArray; // 0x20 (16)
+};
+
+// ScriptStruct Engine.ResponseChannel
+struct FResponseChannel {
+	struct FName Channel; // 0x0 (8)
+	char Response; // 0x8 (1)
+};
+
+// ScriptStruct Engine.CollisionResponseContainer
+struct FCollisionResponseContainer {
+	char WorldStatic; // 0x0 (1)
+	char WorldDynamic; // 0x1 (1)
+	char Pawn; // 0x2 (1)
+	char Visibility; // 0x3 (1)
+	char Camera; // 0x4 (1)
+	char PhysicsBody; // 0x5 (1)
+	char Vehicle; // 0x6 (1)
+	char Destructible; // 0x7 (1)
+	char EngineTraceChannel1; // 0x8 (1)
+	char EngineTraceChannel2; // 0x9 (1)
+	char EngineTraceChannel3; // 0xA (1)
+	char EngineTraceChannel4; // 0xB (1)
+	char EngineTraceChannel5; // 0xC (1)
+	char EngineTraceChannel6; // 0xD (1)
+	char GameTraceChannel1; // 0xE (1)
+	char GameTraceChannel2; // 0xF (1)
+	char GameTraceChannel3; // 0x10 (1)
+	char GameTraceChannel4; // 0x11 (1)
+	char GameTraceChannel5; // 0x12 (1)
+	char GameTraceChannel6; // 0x13 (1)
+	char GameTraceChannel7; // 0x14 (1)
+	char GameTraceChannel8; // 0x15 (1)
+	char GameTraceChannel9; // 0x16 (1)
+	char GameTraceChannel10; // 0x17 (1)
+	char GameTraceChannel11; // 0x18 (1)
+	char GameTraceChannel12; // 0x19 (1)
+	char GameTraceChannel13; // 0x1A (1)
+	char GameTraceChannel14; // 0x1B (1)
+	char GameTraceChannel15; // 0x1C (1)
+	char GameTraceChannel16; // 0x1D (1)
+	char GameTraceChannel17; // 0x1E (1)
+	char GameTraceChannel18; // 0x1F (1)
+};
+
+// ScriptStruct Engine.CustomPrimitiveData
+struct FCustomPrimitiveData {
+	struct TArray<Unknown> Data; // 0x0 (16)
+};
+
+// ScriptStruct Engine.LightingChannels
+struct FLightingChannels {
+	char bChannel0 : 0; // 0x0 (1)
+	char bChannel1 : 0; // 0x0 (1)
+	char bChannel2 : 0; // 0x0 (1)
+};
+
+// ScriptStruct Engine.PoseLinkBase
+struct FPoseLinkBase {
+	int32_t LinkID; // 0x0 (4)
+};
+
+// ScriptStruct Engine.InputScaleBiasClamp
+struct FInputScaleBiasClamp {
+	char bMapRange : 0; // 0x0 (1)
+	char bClampResult : 0; // 0x1 (1)
+	char bInterpResult : 0; // 0x2 (1)
+	struct Unknown InRange; // 0x4 (8)
+	struct Unknown OutRange; // 0xC (8)
+	float Scale; // 0x14 (4)
+	float Bias; // 0x18 (4)
+	float ClampMin; // 0x1C (4)
+	float ClampMax; // 0x20 (4)
+	float InterpSpeedIncreasing; // 0x24 (4)
+	float InterpSpeedDecreasing; // 0x28 (4)
+};
+
+// ScriptStruct Engine.InputRange
+struct FInputRange {
+	float Min; // 0x0 (4)
+	float MAX; // 0x4 (4)
+};
+
+// ScriptStruct Engine.InputAlphaBoolBlend
+struct FInputAlphaBoolBlend {
+	float BlendInTime; // 0x0 (4)
+	float BlendOutTime; // 0x4 (4)
+	enum class Unknow BlendOption; // 0x8 (1)
+	char bInitialized : 0; // 0x9 (1)
+	struct Unknown CustomCurve; // 0x10 (8)
+	struct Unknown AlphaBlend; // 0x18 (48)
+};
+
+// ScriptStruct Engine.AlphaBlend
+struct FAlphaBlend {
+	struct Unknown CustomCurve; // 0x0 (8)
+	float BlendTime; // 0x8 (4)
+	enum class Unknow BlendOption; // 0x24 (1)
+};
+
+// ScriptStruct Engine.InputScaleBias
+struct FInputScaleBias {
+	float Scale; // 0x0 (4)
+	float Bias; // 0x4 (4)
+};
+
+// ScriptStruct Engine.BoneReference
+struct FBoneReference {
+	struct FName BoneName; // 0x0 (8)
+};
+
+// ScriptStruct Engine.PerPlatformFloat
+struct FPerPlatformFloat {
+	float Default; // 0x0 (4)
+};
+
+// ScriptStruct Engine.PerPlatformInt
+struct FPerPlatformInt {
+	int32_t Default; // 0x0 (4)
+};
+
+// ScriptStruct Engine.PerPlatformBool
+struct FPerPlatformBool {
+	char Default : 0; // 0x0 (1)
+};
+
+// ScriptStruct Engine.DirectoryPath
+struct FDirectoryPath {
+	struct FString Path; // 0x0 (16)
+};
+
+// ScriptStruct Engine.AnimNode_AssetPlayerBase
+struct FAnimNode_AssetPlayerBase : FAnimNode_Base {
+	int32_t GroupIndex; // 0x10 (4)
+	char GroupRole; // 0x14 (1)
+	char bIgnoreForRelevancyTest : 0; // 0x15 (1)
+	float BlendWeight; // 0x18 (4)
+	float InternalTimeAccumulator; // 0x1C (4)
+};
+
+// ScriptStruct Engine.PerBoneBlendWeight
+struct FPerBoneBlendWeight {
+	int32_t SourceIndex; // 0x0 (4)
+	float BlendWeight; // 0x4 (4)
+};
+
+// ScriptStruct Engine.InputBlendPose
+struct FInputBlendPose {
+	struct TArray<Unknown> BranchFilters; // 0x0 (16)
+};
+
+// ScriptStruct Engine.BranchFilter
+struct FBranchFilter {
+	struct FName BoneName; // 0x0 (8)
+	int32_t BlendDepth; // 0x8 (4)
+};
+
+// ScriptStruct Engine.PoseSnapshot
+struct FPoseSnapshot {
+	struct TArray<Unknown> LocalTransforms; // 0x0 (16)
+	struct TArray<Unknown> BoneNames; // 0x10 (16)
+	struct FName SkeletalMeshName; // 0x20 (8)
+	struct FName SnapshotName; // 0x28 (8)
+	char bIsValid : 0; // 0x30 (1)
+};
+
+// ScriptStruct Engine.SolverIterations
+struct FSolverIterations {
+	int32_t SolverIterations; // 0x0 (4)
+	int32_t JointIterations; // 0x4 (4)
+	int32_t CollisionIterations; // 0x8 (4)
+	int32_t SolverPushOutIterations; // 0xC (4)
+	int32_t JointPushOutIterations; // 0x10 (4)
+	int32_t CollisionPushOutIterations; // 0x14 (4)
+};
+
+// ScriptStruct Engine.AnimNode_Root
+struct FAnimNode_Root : FAnimNode_Base {
+	struct Unknown Result; // 0x10 (16)
+	struct FName Name; // 0x20 (8)
+	struct FName Group; // 0x28 (8)
+};
+
+// ScriptStruct Engine.AnimCurveParam
+struct FAnimCurveParam {
+	struct FName Name; // 0x0 (8)
+};
+
+// ScriptStruct Engine.ActorComponentInstanceData
+struct FActorComponentInstanceData {
+	struct Unknown SourceComponentTemplate; // 0x8 (8)
+	enum class Unknow SourceComponentCreationMethod; // 0x10 (1)
+	int32_t SourceComponentTypeSerializedIndex; // 0x14 (4)
+	struct TArray<Unknown> SavedProperties; // 0x18 (16)
+	struct TArray<Unknown> DuplicatedObjects; // 0x28 (16)
+	struct TArray<Unknown> ReferencedObjects; // 0x38 (16)
+	struct TArray<Unknown> ReferencedNames; // 0x48 (16)
+};
+
+// ScriptStruct Engine.SceneComponentInstanceData
+struct FSceneComponentInstanceData : FActorComponentInstanceData {
+	struct TMap<Unknown, Unknown>Unknown AttachedInstanceComponents; // 0x58 (80)
+};
+
+// ScriptStruct Engine.KAggregateGeom
+struct FKAggregateGeom {
+	struct TArray<Unknown> SphereElems; // 0x0 (16)
+	struct TArray<Unknown> BoxElems; // 0x10 (16)
+	struct TArray<Unknown> SphylElems; // 0x20 (16)
+	struct TArray<Unknown> ConvexElems; // 0x30 (16)
+	struct TArray<Unknown> TaperedCapsuleElems; // 0x40 (16)
+};
+
+// ScriptStruct Engine.KShapeElem
+struct FKShapeElem {
+	float RestOffset; // 0x8 (4)
+	struct FName Name; // 0xC (8)
+	char bContributeToMass : 0; // 0x18 (1)
+};
+
+// ScriptStruct Engine.KTaperedCapsuleElem
+struct FKTaperedCapsuleElem : FKShapeElem {
+	struct Unknown Center; // 0x30 (12)
+	struct Unknown Rotation; // 0x3C (12)
+	float Radius0; // 0x48 (4)
+	float Radius1; // 0x4C (4)
+	float Length; // 0x50 (4)
+};
+
+// ScriptStruct Engine.KConvexElem
+struct FKConvexElem : FKShapeElem {
+	struct TArray<Unknown> VertexData; // 0x30 (16)
+	struct TArray<Unknown> IndexData; // 0x40 (16)
+	struct Unknown ElemBox; // 0x50 (28)
+	struct Unknown Transform; // 0x70 (48)
+};
+
+// ScriptStruct Engine.KSphylElem
+struct FKSphylElem : FKShapeElem {
+	struct Unknown Center; // 0x30 (12)
+	struct Unknown Rotation; // 0x3C (12)
+	float Radius; // 0x48 (4)
+	float Length; // 0x4C (4)
+};
+
+// ScriptStruct Engine.KBoxElem
+struct FKBoxElem : FKShapeElem {
+	struct Unknown Center; // 0x30 (12)
+	struct Unknown Rotation; // 0x3C (12)
+	float X; // 0x48 (4)
+	float Y; // 0x4C (4)
+	float Z; // 0x50 (4)
+};
+
+// ScriptStruct Engine.KSphereElem
+struct FKSphereElem : FKShapeElem {
+	struct Unknown Center; // 0x30 (12)
+	float Radius; // 0x3C (4)
+};
+
+// ScriptStruct Engine.AnimationGroupReference
+struct FAnimationGroupReference {
+	struct FName GroupName; // 0x0 (8)
+	char GroupRole; // 0x8 (1)
+};
+
+// ScriptStruct Engine.AnimTickRecord
+struct FAnimTickRecord {
+	struct Unknown SourceAsset; // 0x0 (8)
+};
+
+// ScriptStruct Engine.MarkerSyncAnimPosition
+struct FMarkerSyncAnimPosition {
+	struct FName PreviousMarkerName; // 0x0 (8)
+	struct FName NextMarkerName; // 0x8 (8)
+	float PositionBetweenMarkers; // 0x10 (4)
+};
+
+// ScriptStruct Engine.BlendSampleData
+struct FBlendSampleData {
+	int32_t SampleDataIndex; // 0x0 (4)
+	struct Unknown Animation; // 0x8 (8)
+	float TotalWeight; // 0x10 (4)
+	float Time; // 0x14 (4)
+	float PreviousTime; // 0x18 (4)
+	float SamplePlayRate; // 0x1C (4)
+};
+
+// ScriptStruct Engine.AnimationRecordingSettings
+struct FAnimationRecordingSettings {
+	char bRecordInWorldSpace : 0; // 0x0 (1)
+	char bRemoveRootAnimation : 0; // 0x1 (1)
+	char bAutoSaveAsset : 0; // 0x2 (1)
+	float SampleRate; // 0x4 (4)
+	float Length; // 0x8 (4)
+	char InterpMode; // 0xC (1)
+	char TangentMode; // 0xD (1)
+};
+
+// ScriptStruct Engine.ComponentSpacePose
+struct FComponentSpacePose {
+	struct TArray<Unknown> Transforms; // 0x0 (16)
+	struct TArray<Unknown> Names; // 0x10 (16)
+};
+
+// ScriptStruct Engine.LocalSpacePose
+struct FLocalSpacePose {
+	struct TArray<Unknown> Transforms; // 0x0 (16)
+	struct TArray<Unknown> Names; // 0x10 (16)
+};
+
+// ScriptStruct Engine.NamedTransform
+struct FNamedTransform {
+	struct Unknown Value; // 0x0 (48)
+	struct FName Name; // 0x30 (8)
+};
+
+// ScriptStruct Engine.NamedColor
+struct FNamedColor {
+	struct Unknown Value; // 0x0 (4)
+	struct FName Name; // 0x4 (8)
+};
+
+// ScriptStruct Engine.NamedVector
+struct FNamedVector {
+	struct Unknown Value; // 0x0 (12)
+	struct FName Name; // 0xC (8)
+};
+
+// ScriptStruct Engine.NamedFloat
+struct FNamedFloat {
+	float Value; // 0x0 (4)
+	struct FName Name; // 0x4 (8)
+};
+
+// ScriptStruct Engine.AnimParentNodeAssetOverride
+struct FAnimParentNodeAssetOverride {
+	struct Unknown NewAsset; // 0x0 (8)
+	struct Unknown ParentNodeGuid; // 0x8 (16)
+};
+
+// ScriptStruct Engine.AnimGroupInfo
+struct FAnimGroupInfo {
+	struct FName Name; // 0x0 (8)
+	struct Unknown Color; // 0x8 (16)
+};
+
+// ScriptStruct Engine.AnimBlueprintFunctionData
+struct FAnimBlueprintFunctionData {
+	struct TFieldPath<FUnknown> OutputPoseNodeProperty; // 0x0 (32)
+	struct TArray<Unknown> InputPoseNodeProperties; // 0x20 (16)
+	struct TArray<Unknown> InputProperties; // 0x30 (16)
+};
+
+// ScriptStruct Engine.AnimGraphBlendOptions
+struct FAnimGraphBlendOptions {
+	float BlendInTime; // 0x0 (4)
+	float BlendOutTime; // 0x4 (4)
+};
+
+// ScriptStruct Engine.GraphAssetPlayerInformation
+struct FGraphAssetPlayerInformation {
+	struct TArray<Unknown> PlayerNodeIndices; // 0x0 (16)
+};
+
+// ScriptStruct Engine.CachedPoseIndices
+struct FCachedPoseIndices {
+	struct TArray<Unknown> OrderedSavedPoseNodeIndices; // 0x0 (16)
+};
+
+// ScriptStruct Engine.AnimBlueprintFunction
+struct FAnimBlueprintFunction {
+	struct FName Name; // 0x0 (8)
+	struct FName Group; // 0x8 (8)
+	int32_t OutputPoseNodeIndex; // 0x10 (4)
+	struct TArray<Unknown> InputPoseNames; // 0x18 (16)
+	struct TArray<Unknown> InputPoseNodeIndices; // 0x28 (16)
+	char bImplemented : 0; // 0x60 (1)
+};
+
+// ScriptStruct Engine.AnimTrack
+struct FAnimTrack {
+	struct TArray<Unknown> AnimSegments; // 0x0 (16)
+};
+
+// ScriptStruct Engine.AnimSegment
+struct FAnimSegment {
+	struct Unknown AnimReference; // 0x0 (8)
+	float StartPos; // 0x8 (4)
+	float AnimStartTime; // 0xC (4)
+	float AnimEndTime; // 0x10 (4)
+	float AnimPlayRate; // 0x14 (4)
+	int32_t LoopingCount; // 0x18 (4)
+};
+
+// ScriptStruct Engine.RootMotionExtractionStep
+struct FRootMotionExtractionStep {
+	struct Unknown AnimSequence; // 0x0 (8)
+	float StartPosition; // 0x8 (4)
+	float EndPosition; // 0xC (4)
+};
+
+// ScriptStruct Engine.RawCurveTracks
+struct FRawCurveTracks {
+	struct TArray<Unknown> FloatCurves; // 0x0 (16)
+};
+
+// ScriptStruct Engine.AnimCurveBase
+struct FAnimCurveBase {
+	struct FName LastObservedName; // 0x0 (8)
+	struct Unknown Name; // 0x8 (12)
+	int32_t CurveTypeFlags; // 0x14 (4)
+};
+
+// ScriptStruct Engine.SmartName
+struct FSmartName {
+	struct FName DisplayName; // 0x0 (8)
+};
+
+// ScriptStruct Engine.FloatCurve
+struct FFloatCurve : FAnimCurveBase {
+	struct Unknown FloatCurve; // 0x18 (128)
+};
+
+// ScriptStruct Engine.TransformCurve
+struct FTransformCurve : FAnimCurveBase {
+	struct Unknown TranslationCurve; // 0x18 (408)
+	struct Unknown RotationCurve; // 0x1B0 (408)
+	struct Unknown ScaleCurve; // 0x348 (408)
+};
+
+// ScriptStruct Engine.VectorCurve
+struct FVectorCurve : FAnimCurveBase {
+	struct Unknown FloatCurves[0x3]; // 0x18 (384)
+};
+
+// ScriptStruct Engine.SlotEvaluationPose
+struct FSlotEvaluationPose {
+	char AdditiveType; // 0x0 (1)
+	float Weight; // 0x4 (4)
+};
+
+// ScriptStruct Engine.A2Pose
+struct FA2Pose {
+	struct TArray<Unknown> Bones; // 0x0 (16)
+};
+
+// ScriptStruct Engine.A2CSPose
+struct FA2CSPose : FA2Pose {
+	struct TArray<Unknown> ComponentSpaceFlags; // 0x18 (16)
+};
+
+// ScriptStruct Engine.QueuedDrawDebugItem
+struct FQueuedDrawDebugItem {
+	char ItemType; // 0x0 (1)
+	struct Unknown StartLoc; // 0x4 (12)
+	struct Unknown EndLoc; // 0x10 (12)
+	struct Unknown Center; // 0x1C (12)
+	struct Unknown Rotation; // 0x28 (12)
+	float Radius; // 0x34 (4)
+	float Size; // 0x38 (4)
+	int32_t Segments; // 0x3C (4)
+	struct Unknown Color; // 0x40 (4)
+	char bPersistentLines : 0; // 0x44 (1)
+	float LifeTime; // 0x48 (4)
+	float Thickness; // 0x4C (4)
+	struct FString Message; // 0x50 (16)
+	struct Unknown TextScale; // 0x60 (8)
+};
+
+// ScriptStruct Engine.AnimLinkableElement
+struct FAnimLinkableElement {
+	struct Unknown LinkedMontage; // 0x8 (8)
+	int32_t SlotIndex; // 0x10 (4)
+	int32_t SegmentIndex; // 0x14 (4)
+	char LinkMethod; // 0x18 (1)
+	char CachedLinkMethod; // 0x19 (1)
+	float SegmentBeginTime; // 0x1C (4)
+	float SegmentLength; // 0x20 (4)
+	float LinkValue; // 0x24 (4)
+	struct Unknown LinkedSequence; // 0x28 (8)
+};
+
+// ScriptStruct Engine.AnimMontageInstance
+struct FAnimMontageInstance {
+	struct Unknown Montage; // 0x0 (8)
+	char bPlaying : 0; // 0x28 (1)
+	float DefaultBlendTimeMultiplier; // 0x2C (4)
+	struct TArray<Unknown> NextSections; // 0xE8 (16)
+	struct TArray<Unknown> PrevSections; // 0xF8 (16)
+	struct TArray<Unknown> ActiveStateBranchingPoints; // 0x118 (16)
+	float Position; // 0x128 (4)
+	float PlayRate; // 0x12C (4)
+	struct Unknown Blend; // 0x130 (48)
+	int32_t DisableRootMotionCount; // 0x188 (4)
+};
+
+// ScriptStruct Engine.AnimNotifyEvent
+struct FAnimNotifyEvent : FAnimLinkableElement {
+	float DisplayTime; // 0x30 (4)
+	float TriggerTimeOffset; // 0x34 (4)
+	float EndTriggerTimeOffset; // 0x38 (4)
+	float TriggerWeightThreshold; // 0x3C (4)
+	struct FName NotifyName; // 0x40 (8)
+	struct Unknown notify; // 0x48 (8)
+	struct Unknown NotifyStateClass; // 0x50 (8)
+	float Duration; // 0x58 (4)
+	struct Unknown EndLink; // 0x60 (48)
+	char bConvertedFromBranchingPoint : 0; // 0x90 (1)
+	char MontageTickType; // 0x91 (1)
+	float NotifyTriggerChance; // 0x94 (4)
+	char NotifyFilterType; // 0x98 (1)
+	int32_t NotifyFilterLOD; // 0x9C (4)
+	char bTriggerOnDedicatedServer : 0; // 0xA0 (1)
+	char bTriggerOnFollower : 0; // 0xA1 (1)
+	int32_t TrackIndex; // 0xA4 (4)
+};
+
+// ScriptStruct Engine.BranchingPointMarker
+struct FBranchingPointMarker {
+	int32_t NotifyIndex; // 0x0 (4)
+	float TriggerTime; // 0x4 (4)
+	char NotifyEventType; // 0x8 (1)
+};
+
+// ScriptStruct Engine.BranchingPoint
+struct FBranchingPoint : FAnimLinkableElement {
+	struct FName EventName; // 0x30 (8)
+	float DisplayTime; // 0x38 (4)
+	float TriggerTimeOffset; // 0x3C (4)
+};
+
+// ScriptStruct Engine.SlotAnimationTrack
+struct FSlotAnimationTrack {
+	struct FName SlotName; // 0x0 (8)
+	struct Unknown AnimTrack; // 0x8 (16)
+};
+
+// ScriptStruct Engine.CompositeSection
+struct FCompositeSection : FAnimLinkableElement {
+	struct FName SectionName; // 0x30 (8)
+	float StartTime; // 0x38 (4)
+	struct FName NextSectionName; // 0x3C (8)
+	struct TArray<Unknown> MetaData; // 0x48 (16)
+};
+
+// ScriptStruct Engine.AnimNode_ApplyMeshSpaceAdditive
+struct FAnimNode_ApplyMeshSpaceAdditive : FAnimNode_Base {
+	struct Unknown Base; // 0x10 (16)
+	struct Unknown Additive; // 0x20 (16)
+	enum class Unknow AlphaInputType; // 0x30 (1)
+	float ALPHA; // 0x34 (4)
+	char bAlphaBoolEnabled : 0; // 0x38 (1)
+	struct Unknown AlphaBoolBlend; // 0x40 (72)
+	struct FName AlphaCurveName; // 0x88 (8)
+	struct Unknown AlphaScaleBias; // 0x90 (8)
+	struct Unknown AlphaScaleBiasClamp; // 0x98 (48)
+	int32_t LODThreshold; // 0xC8 (4)
+};
+
+// ScriptStruct Engine.AnimNode_CustomProperty
+struct FAnimNode_CustomProperty : FAnimNode_Base {
+	struct TArray<Unknown> SourcePropertyNames; // 0x10 (16)
+	struct TArray<Unknown> DestPropertyNames; // 0x20 (16)
+	struct Unknown TargetInstance; // 0x30 (8)
+};
+
+// ScriptStruct Engine.AnimNode_Inertialization
+struct FAnimNode_Inertialization : FAnimNode_Base {
+	struct Unknown Source; // 0x10 (16)
+};
+
+// ScriptStruct Engine.AnimNode_LinkedAnimGraph
+struct FAnimNode_LinkedAnimGraph : FAnimNode_CustomProperty {
+	struct TArray<Unknown> InputPoses; // 0x58 (16)
+	struct TArray<Unknown> InputPoseNames; // 0x68 (16)
+	struct Unknown* InstanceClass; // 0x78 (8)
+	struct FName Tag; // 0x80 (8)
+	char bReceiveNotifiesFromLinkedInstances : 0; // 0x98 (1)
+	char bPropagateNotifiesToLinkedInstances : 0; // 0x98 (1)
+};
+
+// ScriptStruct Engine.AnimNode_LinkedAnimLayer
+struct FAnimNode_LinkedAnimLayer : FAnimNode_LinkedAnimGraph {
+	struct Unknown* Interface; // 0xA0 (8)
+	struct FName Layer; // 0xA8 (8)
+};
+
+// ScriptStruct Engine.AnimNode_LinkedInputPose
+struct FAnimNode_LinkedInputPose : FAnimNode_Base {
+	struct FName Name; // 0x10 (8)
+	struct FName Graph; // 0x18 (8)
+	struct Unknown InputPose; // 0x20 (16)
+};
+
+// ScriptStruct Engine.AnimNode_SaveCachedPose
+struct FAnimNode_SaveCachedPose : FAnimNode_Base {
+	struct Unknown pose; // 0x10 (16)
+	struct FName CachePoseName; // 0x20 (8)
+};
+
+// ScriptStruct Engine.AnimNode_SequencePlayer
+struct FAnimNode_SequencePlayer : FAnimNode_AssetPlayerBase {
+	struct Unknown Sequence; // 0x30 (8)
+	float PlayRateBasis; // 0x38 (4)
+	float PlayRate; // 0x3C (4)
+	struct Unknown PlayRateScaleBiasClamp; // 0x40 (48)
+	float StartPosition; // 0x70 (4)
+	char bLoopAnimation : 0; // 0x74 (1)
+};
+
+// ScriptStruct Engine.AnimNode_StateMachine
+struct FAnimNode_StateMachine : FAnimNode_Base {
+	int32_t StateMachineIndexInClass; // 0x10 (4)
+	int32_t MaxTransitionsPerFrame; // 0x14 (4)
+	char bSkipFirstUpdateTransition : 0; // 0x18 (1)
+	char bReinitializeOnBecomingRelevant : 0; // 0x19 (1)
+};
+
+// ScriptStruct Engine.AnimationActiveTransitionEntry
+struct FAnimationActiveTransitionEntry {
+	struct Unknown BlendProfile; // 0xB8 (8)
+};
+
+// ScriptStruct Engine.AnimNode_TransitionPoseEvaluator
+struct FAnimNode_TransitionPoseEvaluator : FAnimNode_Base {
+	int32_t FramesToCachePose; // 0x48 (4)
+	char DataSource; // 0x50 (1)
+	char EvaluatorMode; // 0x51 (1)
+};
+
+// ScriptStruct Engine.AnimNode_TransitionResult
+struct FAnimNode_TransitionResult : FAnimNode_Base {
+	char bCanEnterTransition : 0; // 0x10 (1)
+};
+
+// ScriptStruct Engine.AnimNode_UseCachedPose
+struct FAnimNode_UseCachedPose : FAnimNode_Base {
+	struct Unknown LinkToCachingNode; // 0x10 (16)
+	struct FName CachePoseName; // 0x20 (8)
+};
+
+// ScriptStruct Engine.ExposedValueHandler
+struct FExposedValueHandler {
+	struct FName BoundFunction; // 0x0 (8)
+	struct TArray<Unknown> CopyRecords; // 0x8 (16)
+	struct Unknown Function; // 0x18 (8)
+	struct TFieldPath<FUnknown> ValueHandlerNodeProperty; // 0x20 (32)
+};
+
+// ScriptStruct Engine.ExposedValueCopyRecord
+struct FExposedValueCopyRecord {
+	struct FName SourcePropertyName; // 0x0 (8)
+	struct FName SourceSubPropertyName; // 0x8 (8)
+	int32_t SourceArrayIndex; // 0x10 (4)
+	char bInstanceIsTarget : 0; // 0x14 (1)
+	enum class Unknow PostCopyOperation; // 0x15 (1)
+	enum class Unknow CopyType; // 0x16 (1)
+	struct TFieldPath<FUnknown> DestProperty; // 0x18 (32)
+	int32_t DestArrayIndex; // 0x38 (4)
+	int32_t Size; // 0x3C (4)
+	struct TFieldPath<FUnknown> CachedSourceProperty; // 0x40 (32)
+	struct TFieldPath<FUnknown> CachedSourceStructSubProperty; // 0x60 (32)
+};
+
+// ScriptStruct Engine.AnimNode_ConvertLocalToComponentSpace
+struct FAnimNode_ConvertLocalToComponentSpace : FAnimNode_Base {
+	struct Unknown LocalPose; // 0x10 (16)
+};
+
+// ScriptStruct Engine.AnimNode_ConvertComponentToLocalSpace
+struct FAnimNode_ConvertComponentToLocalSpace : FAnimNode_Base {
+	struct Unknown ComponentPose; // 0x10 (16)
+};
+
+// ScriptStruct Engine.AnimNotifyQueue
+struct FAnimNotifyQueue {
+	struct TArray<Unknown> AnimNotifies; // 0x10 (16)
+	struct TMap<Unknown, Unknown>Unknown UnfilteredMontageAnimNotifies; // 0x20 (80)
+};
+
+// ScriptStruct Engine.AnimNotifyArray
+struct FAnimNotifyArray {
+	struct TArray<Unknown> Notifies; // 0x0 (16)
+};
+
+// ScriptStruct Engine.AnimNotifyEventReference
+struct FAnimNotifyEventReference {
+	struct Unknown NotifySource; // 0x8 (8)
+};
+
+// ScriptStruct Engine.CompressedTrack
+struct FCompressedTrack {
+	struct TArray<Unknown> ByteStream; // 0x0 (16)
+	struct TArray<Unknown> Times; // 0x10 (16)
+	float Mins[0x3]; // 0x20 (12)
+	float Ranges[0x3]; // 0x2C (12)
+};
+
+// ScriptStruct Engine.CurveTrack
+struct FCurveTrack {
+	struct FName CurveName; // 0x0 (8)
+	struct TArray<Unknown> CurveWeights; // 0x8 (16)
+};
+
+// ScriptStruct Engine.ScaleTrack
+struct FScaleTrack {
+	struct TArray<Unknown> ScaleKeys; // 0x0 (16)
+	struct TArray<Unknown> Times; // 0x10 (16)
+};
+
+// ScriptStruct Engine.RotationTrack
+struct FRotationTrack {
+	struct TArray<Unknown> RotKeys; // 0x0 (16)
+	struct TArray<Unknown> Times; // 0x10 (16)
+};
+
+// ScriptStruct Engine.TranslationTrack
+struct FTranslationTrack {
+	struct TArray<Unknown> PosKeys; // 0x0 (16)
+	struct TArray<Unknown> Times; // 0x10 (16)
+};
+
+// ScriptStruct Engine.AnimSequenceTrackContainer
+struct FAnimSequenceTrackContainer {
+	struct TArray<Unknown> AnimationTracks; // 0x0 (16)
+	struct TArray<Unknown> TrackNames; // 0x10 (16)
+};
+
+// ScriptStruct Engine.RawAnimSequenceTrack
+struct FRawAnimSequenceTrack {
+	struct TArray<Unknown> PosKeys; // 0x0 (16)
+	struct TArray<Unknown> RotKeys; // 0x10 (16)
+	struct TArray<Unknown> ScaleKeys; // 0x20 (16)
+};
+
+// ScriptStruct Engine.AnimSetMeshLinkup
+struct FAnimSetMeshLinkup {
+	struct TArray<Unknown> BoneToTrackTable; // 0x0 (16)
+};
+
+// ScriptStruct Engine.AnimNode_SingleNode
+struct FAnimNode_SingleNode : FAnimNode_Base {
+	struct Unknown SourcePose; // 0x10 (16)
+};
+
+// ScriptStruct Engine.BakedAnimationStateMachine
+struct FBakedAnimationStateMachine {
+	struct FName MachineName; // 0x0 (8)
+	int32_t InitialState; // 0x8 (4)
+	struct TArray<Unknown> States; // 0x10 (16)
+	struct TArray<Unknown> Transitions; // 0x20 (16)
+};
+
+// ScriptStruct Engine.AnimationStateBase
+struct FAnimationStateBase {
+	struct FName StateName; // 0x0 (8)
+};
+
+// ScriptStruct Engine.AnimationTransitionBetweenStates
+struct FAnimationTransitionBetweenStates : FAnimationStateBase {
+	int32_t PreviousState; // 0x8 (4)
+	int32_t NextState; // 0xC (4)
+	float CrossfadeDuration; // 0x10 (4)
+	int32_t StartNotify; // 0x14 (4)
+	int32_t EndNotify; // 0x18 (4)
+	int32_t InterruptNotify; // 0x1C (4)
+	enum class Unknow BlendMode; // 0x20 (1)
+	struct Unknown CustomCurve; // 0x28 (8)
+	struct Unknown BlendProfile; // 0x30 (8)
+	char LogicType; // 0x38 (1)
+};
+
+// ScriptStruct Engine.BakedAnimationState
+struct FBakedAnimationState {
+	struct FName StateName; // 0x0 (8)
+	struct TArray<Unknown> Transitions; // 0x8 (16)
+	int32_t StateRootNodeIndex; // 0x18 (4)
+	int32_t StartNotify; // 0x1C (4)
+	int32_t EndNotify; // 0x20 (4)
+	int32_t FullyBlendedNotify; // 0x24 (4)
+	char bIsAConduit : 0; // 0x28 (1)
+	int32_t EntryRuleNodeIndex; // 0x2C (4)
+	struct TArray<Unknown> PlayerNodeIndices; // 0x30 (16)
+	struct TArray<Unknown> LayerNodeIndices; // 0x40 (16)
+	char bAlwaysResetOnEntry : 0; // 0x50 (1)
+};
+
+// ScriptStruct Engine.BakedStateExitTransition
+struct FBakedStateExitTransition {
+	int32_t CanTakeDelegateIndex; // 0x0 (4)
+	int32_t CustomResultNodeIndex; // 0x4 (4)
+	int32_t TransitionIndex; // 0x8 (4)
+	char bDesiredTransitionReturnValue : 0; // 0xC (1)
+	char bAutomaticRemainingTimeRule : 0; // 0xD (1)
+	struct TArray<Unknown> PoseEvaluatorLinks; // 0x10 (16)
+};
+
+// ScriptStruct Engine.AnimationState
+struct FAnimationState : FAnimationStateBase {
+	struct TArray<Unknown> Transitions; // 0x8 (16)
+	int32_t StateRootNodeIndex; // 0x18 (4)
+	int32_t StartNotify; // 0x1C (4)
+	int32_t EndNotify; // 0x20 (4)
+	int32_t FullyBlendedNotify; // 0x24 (4)
+};
+
+// ScriptStruct Engine.AnimationTransitionRule
+struct FAnimationTransitionRule {
+	struct FName RuleToExecute; // 0x0 (8)
+	char TransitionReturnVal : 0; // 0x8 (1)
+	int32_t TransitionIndex; // 0xC (4)
+};
+
+// ScriptStruct Engine.TrackToSkeletonMap
+struct FTrackToSkeletonMap {
+	int32_t BoneTreeIndex; // 0x0 (4)
+};
+
+// ScriptStruct Engine.MarkerSyncData
+struct FMarkerSyncData {
+	struct TArray<Unknown> AuthoredSyncMarkers; // 0x0 (16)
+};
+
+// ScriptStruct Engine.AnimSyncMarker
+struct FAnimSyncMarker {
+	struct FName MarkerName; // 0x0 (8)
+	float Time; // 0x8 (4)
+};
+
+// ScriptStruct Engine.AnimNotifyTrack
+struct FAnimNotifyTrack {
+	struct FName TrackName; // 0x0 (8)
+	struct Unknown TrackColor; // 0x8 (16)
+};
+
+// ScriptStruct Engine.PerBoneBlendWeights
+struct FPerBoneBlendWeights {
+	struct TArray<Unknown> BoneBlendWeights; // 0x0 (16)
+};
+
+// ScriptStruct Engine.PrimaryAssetRulesCustomOverride
+struct FPrimaryAssetRulesCustomOverride {
+	struct Unknown PrimaryAssetType; // 0x0 (8)
+	struct Unknown FilterDirectory; // 0x8 (16)
+	struct FString FilterString; // 0x18 (16)
+	struct Unknown Rules; // 0x28 (12)
+};
+
+// ScriptStruct Engine.PrimaryAssetRules
+struct FPrimaryAssetRules {
+	int32_t Priority; // 0x0 (4)
+	int32_t ChunkId; // 0x4 (4)
+	char bApplyRecursively : 0; // 0x8 (1)
+	enum class Unknow CookRule; // 0x9 (1)
+};
+
+// ScriptStruct Engine.PrimaryAssetRulesOv
+struct FPrimaryAssetRulesOverride {
+	struct Unknown PrimaryAssetId; // 0x0 (16)
+	struct Unknown Rules; // 0x10 (12)
+};
+
+// ScriptStruct Engine.AssetManagerRedirect
+struct FAssetManagerRedirect {
+	struct FString Old; // 0x0 (16)
+	struct FString New; // 0x10 (16)
+};
+
+// ScriptStruct Engine.PrimaryAssetTypeInfo
+struct FPrimaryAssetTypeInfo {
+	struct FName PrimaryAssetType; // 0x0 (8)
+	struct TSoftClassPtr<UObject> AssetBaseClass; // 0x8 (40)
+	struct Unknown* AssetBaseClassLoaded; // 0x30 (8)
+	char bHasBlueprintClasses : 0; // 0x38 (1)
+	char bIsEditorOnly : 0; // 0x39 (1)
+	struct TArray<Unknown> Directories; // 0x40 (16)
+	struct TArray<Unknown> SpecificAssets; // 0x50 (16)
+	struct Unknown Rules; // 0x60 (12)
+	struct TArray<Unknown> AssetScanPaths; // 0x70 (16)
+	char bIsDynamicAsset : 0; // 0x80 (1)
+	int32_t NumberOfAssets; // 0x84 (4)
+};
+
+// ScriptStruct Engine.AssetMapping
+struct FAssetMapping {
+	struct Unknown SourceAsset; // 0x0 (8)
+	struct Unknown TargetAsset; // 0x8 (8)
+};
+
+// ScriptStruct Engine.AtmospherePrecomputeParameters
+struct FAtmospherePrecomputeParameters {
+	float DensityHeight; // 0x0 (4)
+	float DecayHeight; // 0x4 (4)
+	int32_t MaxScatteringOrder; // 0x8 (4)
+	int32_t TransmittanceTexWidth; // 0xC (4)
+	int32_t TransmittanceTexHeight; // 0x10 (4)
+	int32_t IrradianceTexWidth; // 0x14 (4)
+	int32_t IrradianceTexHeight; // 0x18 (4)
+	int32_t InscatterAltitudeSampleNum; // 0x1C (4)
+	int32_t InscatterMuNum; // 0x20 (4)
+	int32_t InscatterMuSNum; // 0x24 (4)
+	int32_t InscatterNuNum; // 0x28 (4)
+};
+
+// ScriptStruct Engine.BaseAttenuationSettings
+struct FBaseAttenuationSettings {
+	enum class Unknow DistanceAlgorithm; // 0x8 (1)
+	char AttenuationShape; // 0x9 (1)
+	float dBAttenuationAtMax; // 0xC (4)
+	enum class Unknow FalloffMode; // 0x10 (1)
+	struct Unknown AttenuationShapeExtents; // 0x14 (12)
+	float ConeOffset; // 0x20 (4)
+	float FalloffDistance; // 0x24 (4)
+	struct Unknown CustomAttenuationCurve; // 0x28 (136)
+};
+
+// ScriptStruct Engine.AudioComponentParam
+struct FAudioComponentParam {
+	struct FName ParamName; // 0x0 (8)
+	float FloatParam; // 0x8 (4)
+	char BoolParam : 0; // 0xC (1)
+	int32_t IntParam; // 0x10 (4)
+	struct Unknown SoundWaveParam; // 0x18 (8)
+};
+
+// ScriptStruct Engine.AudioQualitySettings
+struct FAudioQualitySettings {
+	struct FText DisplayName; // 0x0 (24)
+	int32_t MaxChannels; // 0x18 (4)
+};
+
+// ScriptStruct Engine.InteriorSettings
+struct FInteriorSettings {
+	char bIsWorldSettings : 0; // 0x0 (1)
+	float ExteriorVolume; // 0x4 (4)
+	float ExteriorTime; // 0x8 (4)
+	float ExteriorLPF; // 0xC (4)
+	float ExteriorLPFTime; // 0x10 (4)
+	float InteriorVolume; // 0x14 (4)
+	float InteriorTime; // 0x18 (4)
+	float InteriorLPF; // 0x1C (4)
+	float InteriorLPFTime; // 0x20 (4)
+};
+
+// ScriptStruct Engine.LaunchOnTestSettings
+struct FLaunchOnTestSettings {
+	struct Unknown LaunchOnTestmap; // 0x0 (16)
+	struct FString DeviceID; // 0x10 (16)
+};
+
+// ScriptStruct Engine.FilePath
+struct FFilePath {
+	struct FString FilePath; // 0x0 (16)
+};
+
+// ScriptStruct Engine.EditorMapPerformanceTestDefinition
+struct FEditorMapPerformanceTestDefinition {
+	struct Unknown PerformanceTestmap; // 0x0 (24)
+	int32_t TestTimer; // 0x18 (4)
+};
+
+// ScriptStruct Engine.BuildPromotionTestSettings
+struct FBuildPromotionTestSettings {
+	struct Unknown DefaultStaticMeshAsset; // 0x0 (16)
+	struct Unknown ImportWorkflow; // 0x10 (336)
+	struct Unknown OpenAssets; // 0x160 (96)
+	struct Unknown NewProjectSettings; // 0x1C0 (32)
+	struct Unknown SourceControlMaterial; // 0x1E0 (16)
+};
+
+// ScriptStruct Engine.BuildPromotionNewProjectSettings
+struct FBuildPromotionNewProjectSettings {
+	struct Unknown NewProjectFolderOverride; // 0x0 (16)
+	struct FString NewProjectNameOverride; // 0x10 (16)
+};
+
+// ScriptStruct Engine.BuildPromotionOpenAssetSettings
+struct FBuildPromotionOpenAssetSettings {
+	struct Unknown BlueprintAsset; // 0x0 (16)
+	struct Unknown MaterialAsset; // 0x10 (16)
+	struct Unknown ParticleSystemAsset; // 0x20 (16)
+	struct Unknown SkeletalMeshAsset; // 0x30 (16)
+	struct Unknown StaticMeshAsset; // 0x40 (16)
+	struct Unknown TextureAsset; // 0x50 (16)
+};
+
+// ScriptStruct Engine.BuildPromotionImportWorkflowSettings
+struct FBuildPromotionImportWorkflowSettings {
+	struct Unknown Diffuse; // 0x0 (32)
+	struct Unknown Normal; // 0x20 (32)
+	struct Unknown StaticMesh; // 0x40 (32)
+	struct Unknown ReimportStaticMesh; // 0x60 (32)
+	struct Unknown BlendShapeMesh; // 0x80 (32)
+	struct Unknown MorphMesh; // 0xA0 (32)
+	struct Unknown SkeletalMesh; // 0xC0 (32)
+	struct Unknown Animation; // 0xE0 (32)
+	struct Unknown Sound; // 0x100 (32)
+	struct Unknown SurroundSound; // 0x120 (32)
+	struct TArray<Unknown> OtherAssetsToImport; // 0x140 (16)
+};
+
+// ScriptStruct Engine.EditorImportWorkflowDefinition
+struct FEditorImportWorkflowDefinition {
+	struct Unknown ImportFilePath; // 0x0 (16)
+	struct TArray<Unknown> FactorySettings; // 0x10 (16)
+};
+
+// ScriptStruct Engine.ImportFactorySettingValues
+struct FImportFactorySettingValues {
+	struct FString SettingName; // 0x0 (16)
+	struct FString Value; // 0x10 (16)
+};
+
+// ScriptStruct Engine.BlueprintEditorPromotionSettings
+struct FBlueprintEditorPromotionSettings {
+	struct Unknown FirstMeshPath; // 0x0 (16)
+	struct Unknown SecondMeshPath; // 0x10 (16)
+	struct Unknown DefaultParticleAsset; // 0x20 (16)
+};
+
+// ScriptStruct Engine.ParticleEditorPromotionSettings
+struct FParticleEditorPromotionSettings {
+	struct Unknown DefaultParticleAsset; // 0x0 (16)
+};
+
+// ScriptStruct Engine.MaterialEditorPromotionSettings
+struct FMaterialEditorPromotionSettings {
+	struct Unknown DefaultMaterialAsset; // 0x0 (16)
+	struct Unknown DefaultDiffuseTexture; // 0x10 (16)
+	struct Unknown DefaultNormalTexture; // 0x20 (16)
+};
+
+// ScriptStruct Engine.EditorImportExportTestDefinition
+struct FEditorImportExportTestDefinition {
+	struct Unknown ImportFilePath; // 0x0 (16)
+	struct FString ExportFileExtension; // 0x10 (16)
+	char bSkipExport : 0; // 0x20 (1)
+	struct TArray<Unknown> FactorySettings; // 0x28 (16)
+};
+
+// ScriptStruct Engine.ExternalToolDefinition
+struct FExternalToolDefinition {
+	struct FString ToolName; // 0x0 (16)
+	struct Unknown ExecutablePath; // 0x10 (16)
+	struct FString CommandLineOptions; // 0x20 (16)
+	struct Unknown WorkingDirectory; // 0x30 (16)
+	struct FString ScriptExtension; // 0x40 (16)
+	struct Unknown ScriptDirectory; // 0x50 (16)
+};
+
+// ScriptStruct Engine.BandwidthTestGenerator
+struct FBandwidthTestGenerator {
+	struct TArray<Unknown> ReplicatedBuffers; // 0x0 (16)
+};
+
+// ScriptStruct Engine.BandwidthTestItem
+struct FBandwidthTestItem {
+	struct TArray<Unknown> Kilobyte; // 0x0 (16)
+};
+
+// ScriptStruct Engine.BlendProfileBoneEntry
+struct FBlendProfileBoneEntry {
+	struct Unknown BoneReference; // 0x0 (16)
+	float BlendScale; // 0x10 (4)
+};
+
+// ScriptStruct Engine.PerBoneInterpolation
+struct FPerBoneInterpolation {
+	struct Unknown BoneReference; // 0x0 (16)
+	float InterpolationSpeedPerSec; // 0x10 (4)
+};
+
+// ScriptStruct Engine.GridBlendSample
+struct FGridBlendSample {
+	struct Unknown GridElement; // 0x0 (24)
+	float BlendWeight; // 0x18 (4)
+};
+
+// ScriptStruct Engine.EditorElement
+struct FEditorElement {
+	int32_t Indices[0x3]; // 0x0 (12)
+	float Weights[0x3]; // 0xC (12)
+};
+
+// ScriptStruct Engine.BlendSample
+struct FBlendSample {
+	struct Unknown Animation; // 0x0 (8)
+	struct Unknown SampleValue; // 0x8 (12)
+	float RateScale; // 0x14 (4)
+};
+
+// ScriptStruct Engine.BlendParameter
+struct FBlendParameter {
+	struct FString DisplayName; // 0x0 (16)
+	float Min; // 0x10 (4)
+	float MAX; // 0x14 (4)
+	int32_t GridNum; // 0x18 (4)
+};
+
+// ScriptStruct Engine.InterpolationParameter
+struct FInterpolationParameter {
+	float InterpolationTime; // 0x0 (4)
+	char InterpolationType; // 0x4 (1)
+};
+
+// ScriptStruct Engine.BPEditorBookmarkNode
+struct FBPEditorBookmarkNode {
+	struct Unknown NodeGuid; // 0x0 (16)
+	struct Unknown ParentGuid; // 0x10 (16)
+	struct FText DisplayName; // 0x20 (24)
+};
+
+// ScriptStruct Engine.EditedDocumentInfo
+struct FEditedDocumentInfo {
+	struct Unknown EditedObjectPath; // 0x0 (24)
+	struct Unknown SavedViewOffset; // 0x18 (8)
+	float SavedZoomAmount; // 0x20 (4)
+	struct Unknown EditedObject; // 0x28 (8)
+};
+
+// ScriptStruct Engine.BPInterfaceDescription
+struct FBPInterfaceDescription {
+	struct Unknown* Interface; // 0x0 (8)
+	struct TArray<Unknown> Graphs; // 0x8 (16)
+};
+
+// ScriptStruct Engine.BPVariableDescription
+struct FBPVariableDescription {
+	struct FName VarName; // 0x0 (8)
+	struct Unknown VarGuid; // 0x8 (16)
+	struct Unknown VarType; // 0x18 (88)
+	struct FString FriendlyName; // 0x70 (16)
+	struct FText Category; // 0x80 (24)
+	uint64_t PropertyFlags; // 0x98 (8)
+	struct FName RepNotifyFunc; // 0xA0 (8)
+	char ReplicationCondition; // 0xA8 (1)
+	struct TArray<Unknown> MetaDataArray; // 0xB0 (16)
+	struct FString DefaultValue; // 0xC0 (16)
+};
+
+// ScriptStruct Engine.BPVariableMetaDataEntry
+struct FBPVariableMetaDataEntry {
+	struct FName DataKey; // 0x0 (8)
+	struct FString DataValue; // 0x8 (16)
+};
+
+// ScriptStruct Engine.EdGraphPinType
+struct FEdGraphPinType {
+	struct FName PinCategory; // 0x0 (8)
+	struct FName PinSubCategory; // 0x8 (8)
+	struct TWeakObjectPtr<struct Unknown> PinSubCategoryObject; // 0x10 (8)
+	struct Unknown PinSubCategoryMemberReference; // 0x18 (32)
+	struct Unknown PinValueType; // 0x38 (28)
+	enum class Unknow ContainerType; // 0x54 (1)
+	char bIsArray : 0; // 0x55 (1)
+	char bIsReference : 0; // 0x55 (1)
+	char bIsConst : 0; // 0x55 (1)
+	char bIsWeakPointer : 0; // 0x55 (1)
+};
+
+// ScriptStruct Engine.EdGraphTerminalType
+struct FEdGraphTerminalType {
+	struct FName TerminalCategory; // 0x0 (8)
+	struct FName TerminalSubCategory; // 0x8 (8)
+	struct TWeakObjectPtr<struct Unknown> TerminalSubCategoryObject; // 0x10 (8)
+	char bTerminalIsConst : 0; // 0x18 (1)
+	char bTerminalIsWeakPointer : 0; // 0x19 (1)
+};
+
+// ScriptStruct Engine.CompilerNativizationOptions
+struct FCompilerNativizationOptions {
+	struct FName PlatformName; // 0x0 (8)
+	char ServerOnlyPlatform : 0; // 0x8 (1)
+	char ClientOnlyPlatform : 0; // 0x9 (1)
+	char bExcludeMonolithicHeaders : 0; // 0xA (1)
+	struct TArray<Unknown> ExcludedModules; // 0x10 (16)
+	struct TSet<Unknown> ExcludedAssets; // 0x20 (80)
+	struct TArray<Unknown> ExcludedFolderPaths; // 0x70 (16)
+};
+
+// ScriptStruct Engine.BPComponentClassOverride
+struct FBPComponentClassOverride {
+	struct FName ComponentName; // 0x0 (8)
+	struct Unknown* ComponentClass; // 0x8 (8)
+};
+
+// ScriptStruct Engine.BlueprintCookedComponentInstanc
+struct FBlueprintCookedComponentInstanc {
+	struct TArray<Unknown> ChangedPropertyList; // 0x0 (16)
+	char bHasValidCookedData : 0; // 0x21 (1)
+};
+
+// ScriptStruct Engine.BlueprintComponentChangedPropertyInfo
+struct FBlueprintComponentChangedPropertyInfo {
+	struct FName PropertyName; // 0x0 (8)
+	int32_t ArrayIndex; // 0x8 (4)
+	struct Unknown PropertyScope; // 0x10 (8)
+};
+
+// ScriptStruct Engine.EventGraphFastCallPair
+struct FEventGraphFastCallPair {
+	struct Unknown FunctionToPatch; // 0x0 (8)
+	int32_t EventGraphCallOffset; // 0x8 (4)
+};
+
+// ScriptStruct Engine.GeomSelection
+struct FGeomSelection {
+	int32_t Type; // 0x0 (4)
+	int32_t Index; // 0x4 (4)
+	int32_t SelectionIndex; // 0x8 (4)
+};
+
+// ScriptStruct Engine.BuilderPoly
+struct FBuilderPoly {
+	struct TArray<Unknown> VertexIndices; // 0x0 (16)
+	int32_t Direction; // 0x10 (4)
+	struct FName ItemName; // 0x14 (8)
+	int32_t PolyFlags; // 0x1C (4)
+};
+
+// ScriptStruct Engine.CachedAnimTransitionData
+struct FCachedAnimTransitionData {
+	struct FName StateMachineName; // 0x0 (8)
+	struct FName FromStateName; // 0x8 (8)
+	struct FName ToStateName; // 0x10 (8)
+};
+
+// ScriptStruct Engine.CachedAnimRelevancyData
+struct FCachedAnimRelevancyData {
+	struct FName StateMachineName; // 0x0 (8)
+	struct FName StateName; // 0x8 (8)
+};
+
+// ScriptStruct Engine.CachedAnimAssetPlayerData
+struct FCachedAnimAssetPlayerData {
+	struct FName StateMachineName; // 0x0 (8)
+	struct FName StateName; // 0x8 (8)
+};
+
+// ScriptStruct Engine.CachedAnimStateArray
+struct FCachedAnimStateArray {
+	struct TArray<Unknown> States; // 0x0 (16)
+};
+
+// ScriptStruct Engine.CachedAnimStateData
+struct FCachedAnimStateData {
+	struct FName StateMachineName; // 0x0 (8)
+	struct FName StateName; // 0x8 (8)
+};
+
+// ScriptStruct Engine.ActiveCameraShakeInfo
+struct FActiveCameraShakeInfo {
+	struct Unknown ShakeInstance; // 0x0 (8)
+	struct TWeakObjectPtr<struct Unknown> ShakeSource; // 0x8 (8)
+};
+
+// ScriptStruct Engine.PooledCameraShakes
+struct FPooledCameraShakes {
+	struct TArray<Unknown> PooledShakes; // 0x0 (16)
+};
+
+// ScriptStruct Engine.VOscillator
+struct FVOscillator {
+	struct Unknown X; // 0x0 (12)
+	struct Unknown Y; // 0xC (12)
+	struct Unknown Z; // 0x18 (12)
+};
+
+// ScriptStruct Engine.FOscillator
+struct FFOscillator {
+	float Amplitude; // 0x0 (4)
+	float Frequency; // 0x4 (4)
+	char InitialOffset; // 0x8 (1)
+	enum class Unknow Waveform; // 0x9 (1)
+};
+
+// ScriptStruct Engine.ROscillator
+struct FROscillator {
+	struct Unknown Pitch; // 0x0 (12)
+	struct Unknown Yaw; // 0xC (12)
+	struct Unknown Roll; // 0x18 (12)
+};
+
+// ScriptStruct Engine.MinimalViewInfo
+struct FMinimalViewInfo {
+	struct Unknown Location; // 0x0 (12)
+	struct Unknown Rotation; // 0xC (12)
+	float FOV; // 0x18 (4)
+	float DesiredFOV; // 0x1C (4)
+	float OrthoWidth; // 0x24 (4)
+	float OrthoNearClipPlane; // 0x28 (4)
+	float OrthoFarClipPlane; // 0x2C (4)
+	float AspectRatio; // 0x30 (4)
+	char bConstrainAspectRatio : 0; // 0x34 (1)
+	char bUseFieldOfViewForLOD : 0; // 0x34 (1)
+	char ProjectionMode; // 0x38 (1)
+	float PostProcessBlendWeight; // 0x3C (4)
+	struct Unknown PostProcessSettings; // 0x40 (1472)
+	struct Unknown OffCenterProjectionOffset; // 0x600 (8)
+};
+
+// ScriptStruct Engine.CanvasIcon
+struct FCanvasIcon {
+	struct Unknown Texture; // 0x0 (8)
+	float U; // 0x8 (4)
+	float V; // 0xC (4)
+	float UL; // 0x10 (4)
+	float VL; // 0x14 (4)
+};
+
+// ScriptStruct Engine.WrappedStringElement
+struct FWrappedStringElement {
+	struct FString Value; // 0x0 (16)
+	struct Unknown LineExtent; // 0x10 (8)
+};
+
+// ScriptStruct Engine.TextSizingParameters
+struct FTextSizingParameters {
+	float DrawX; // 0x0 (4)
+	float DrawY; // 0x4 (4)
+	float DrawXL; // 0x8 (4)
+	float DrawYL; // 0xC (4)
+	struct Unknown Scaling; // 0x10 (8)
+	struct Unknown DrawFont; // 0x18 (8)
+	struct Unknown SpacingAdjust; // 0x20 (8)
+};
+
+// ScriptStruct Engine.FindFloorResult
+struct FFindFloorResult {
+	char bBlockingHit : 0; // 0x0 (1)
+	char bWalkableFloor : 0; // 0x0 (1)
+	char bLineTrace : 0; // 0x0 (1)
+	float FloorDist; // 0x4 (4)
+	float LineDist; // 0x8 (4)
+	struct Unknown HitResult; // 0xC (136)
+};
+
+// ScriptStruct Engine.ChildActorComponentInstanceData
+struct FChildActorComponentInstanceData : FSceneComponentInstanceData {
+	struct Unknown* ChildActorClass; // 0xA8 (8)
+	struct FName ChildActorName; // 0xB0 (8)
+	struct TArray<Unknown> AttachedActors; // 0xB8 (16)
+};
+
+// ScriptStruct Engine.ChildActorAttachedActorInfo
+struct FChildActorAttachedActorInfo {
+	struct TWeakObjectPtr<struct Unknown> Actor; // 0x0 (8)
+	struct FName SocketName; // 0x8 (8)
+	struct Unknown RelativeTransform; // 0x10 (48)
+};
+
+// ScriptStruct Engine.CustomProfile
+struct FCustomProfile {
+	struct FName Name; // 0x0 (8)
+	struct TArray<Unknown> CustomResponses; // 0x8 (16)
+};
+
+// ScriptStruct Engine.CustomChannelSetup
+struct FCustomChannelSetup {
+	char Channel; // 0x0 (1)
+	char DefaultResponse; // 0x1 (1)
+	char bTraceType : 0; // 0x2 (1)
+	char bStaticObject : 0; // 0x3 (1)
+	struct FName Name; // 0x4 (8)
+};
+
+// ScriptStruct Engine.CollisionResponseTemplate
+struct FCollisionResponseTemplate {
+	struct FName Name; // 0x0 (8)
+	char CollisionEnabled; // 0x8 (1)
+	char bCanModify : 0; // 0xA (1)
+	struct FName ObjectTypeName; // 0x2C (8)
+	struct TArray<Unknown> CustomResponses; // 0x38 (16)
+};
+
+// ScriptStruct Engine.BlueprintComponentDelegateBinding
+struct FBlueprintComponentDelegateBinding {
+	struct FName ComponentPropertyName; // 0x0 (8)
+	struct FName DelegatePropertyName; // 0x8 (8)
+	struct FName FunctionNameToBind; // 0x10 (8)
+};
+
+// ScriptStruct Engine.MeshUVChannelInfo
+struct FMeshUVChannelInfo {
+	char bInitialized : 0; // 0x0 (1)
+	char bOverrideDensities : 0; // 0x1 (1)
+	float LocalUVDensities[0x4]; // 0x4 (16)
+};
+
+// ScriptStruct Engine.AutoCompleteNode
+struct FAutoCompleteNode {
+	int32_t IndexChar; // 0x0 (4)
+	struct TArray<Unknown> AutoCompleteListIndices; // 0x8 (16)
+};
+
+// ScriptStruct Engine.AngularDriveConstraint
+struct FAngularDriveConstraint {
+	struct Unknown TwistDrive; // 0x0 (16)
+	struct Unknown SwingDrive; // 0x10 (16)
+	struct Unknown SlerpDrive; // 0x20 (16)
+	struct Unknown OrientationTarget; // 0x30 (12)
+	struct Unknown AngularVelocityTarget; // 0x3C (12)
+	char AngularDriveMode; // 0x48 (1)
+};
+
+// ScriptStruct Engine.ConstraintDrive
+struct FConstraintDrive {
+	float Stiffness; // 0x0 (4)
+	float Damping; // 0x4 (4)
+	float MaxForce; // 0x8 (4)
+	char bEnablePositionDriv : 0; // 0xC (1)
+	char bEnableVelocityDrive : 0; // 0xC (1)
+};
+
+// ScriptStruct Engine.LinearDriveConstraint
+struct FLinearDriveConstraint {
+	struct Unknown PositionTarget; // 0x0 (12)
+	struct Unknown VelocityTarget; // 0xC (12)
+	struct Unknown XDrive; // 0x18 (16)
+	struct Unknown YDrive; // 0x28 (16)
+	struct Unknown ZDrive; // 0x38 (16)
+	char bEnablePositionDriv : 0; // 0x48 (1)
+};
+
+// ScriptStruct Engine.ConstraintInstance
+struct FConstraintInstance {
+	struct FName JointName; // 0x18 (8)
+	struct FName ConstraintBone1; // 0x20 (8)
+	struct FName ConstraintBone2; // 0x28 (8)
+	struct Unknown Pos1; // 0x30 (12)
+	struct Unknown PriAxis1; // 0x3C (12)
+	struct Unknown SecAxis1; // 0x48 (12)
+	struct Unknown Pos2; // 0x54 (12)
+	struct Unknown PriAxis2; // 0x60 (12)
+	struct Unknown SecAxis2; // 0x6C (12)
+	struct Unknown AngularRotationOffset; // 0x78 (12)
+	char bScaleLinearLimits : 0; // 0x84 (1)
+	struct Unknown ProfileInstance; // 0x8C (260)
+};
+
+// ScriptStruct Engine.ConstraintProfileProperties
+struct FConstraintProfileProperties {
+	float ProjectionLinearTolerance; // 0x0 (4)
+	float ProjectionAngularTolerance; // 0x4 (4)
+	float LinearBreakThreshold; // 0x8 (4)
+	float AngularBreakThreshold; // 0xC (4)
+	struct Unknown LinearLimit; // 0x10 (28)
+	struct Unknown ConeLimit; // 0x2C (32)
+	struct Unknown TwistLimit; // 0x4C (28)
+	struct Unknown LinearDrive; // 0x68 (76)
+	struct Unknown AngularDrive; // 0xB4 (76)
+	char bDisableCollision : 0; // 0x100 (1)
+	char bParentDominates : 0; // 0x100 (1)
+	char bEnableProjection : 0; // 0x100 (1)
+	char bAngularBreakable : 0; // 0x100 (1)
+	char bLinearBreakable : 0; // 0x100 (1)
+};
+
+// ScriptStruct Engine.ConstraintBaseParams
+struct FConstraintBaseParams {
+	float Stiffness; // 0x0 (4)
+	float Damping; // 0x4 (4)
+	float Restitution; // 0x8 (4)
+	float ContactDistance; // 0xC (4)
+	char bSoftConstraint : 0; // 0x10 (1)
+};
+
+// ScriptStruct Engine.TwistConstraint
+struct FTwistConstraint : FConstraintBaseParams {
+	float TwistLimitDegrees; // 0x14 (4)
+	char TwistMotion; // 0x18 (1)
+};
+
+// ScriptStruct Engine.ConeConstraint
+struct FConeConstraint : FConstraintBaseParams {
+	float Swing1LimitDegrees; // 0x14 (4)
+	float Swing2LimitDegrees; // 0x18 (4)
+	char Swing1Motion; // 0x1C (1)
+	char Swing2Motion; // 0x1D (1)
+};
+
+// ScriptStruct Engine.LinearConstraint
+struct FLinearConstraint : FConstraintBaseParams {
+	float Limit; // 0x14 (4)
+	char XMotion; // 0x18 (1)
+	char YMotion; // 0x19 (1)
+	char ZMotion; // 0x1A (1)
+};
+
+// ScriptStruct Engine.CullDistanceSizePair
+struct FCullDistanceSizePair {
+	float Size; // 0x0 (4)
+	float CullDistance; // 0x4 (4)
+};
+
+// ScriptStruct Engine.RuntimeCurveLinearColor
+struct FRuntimeCurveLinearColor {
+	struct Unknown ColorCurves[0x4]; // 0x0 (512)
+	struct Unknown ExternalCurve; // 0x200 (8)
+};
+
+// ScriptStruct Engine.NamedCurveValue
+struct FNamedCurveValue {
+	struct FName Name; // 0x0 (8)
+	float Value; // 0x8 (4)
+};
+
+// ScriptStruct Engine.CurveTableRowHandle
+struct FCurveTableRowHandle {
+	struct Unknown CurveTable; // 0x0 (8)
+	struct FName RowName; // 0x8 (8)
+};
+
+// ScriptStruct Engine.DataTableCategoryHandle
+struct FDataTableCategoryHandle {
+	struct Unknown DataTable; // 0x0 (8)
+	struct FName ColumnName; // 0x8 (8)
+	struct FName RowContents; // 0x10 (8)
+};
+
+// ScriptStruct Engine.DebugCameraControllerSettingsViewModeIndex
+struct FDebugCameraControllerSettingsViewModeIndex {
+	char ViewModeIndex; // 0x8 (1)
+};
+
+// ScriptStruct Engine.DebugDisplayProperty
+struct FDebugDisplayProperty {
+	struct Unknown Obj; // 0x0 (8)
+	struct Unknown* WithinClass; // 0x8 (8)
+};
+
+// ScriptStruct Engine.MulticastRecordOptions
+struct FMulticastRecordOptions {
+	struct FString FuncPathName; // 0x0 (16)
+	char bServerSkip : 0; // 0x10 (1)
+	char bClientSkip : 0; // 0x11 (1)
+};
+
+// ScriptStruct Engine.RollbackNetStartupActorInfo
+struct FRollbackNetStartupActorInfo {
+	struct Unknown Archetype; // 0x8 (8)
+	struct Unknown Level; // 0x38 (8)
+	struct TArray<Unknown> ObjReferences; // 0xA0 (16)
+};
+
+// ScriptStruct Engine.LevelNameAndTime
+struct FLevelNameAndTime {
+	struct FString LevelName; // 0x0 (16)
+	uint32_t LevelChangeTimeInMS; // 0x10 (4)
+};
+
+// ScriptStruct Engine.DialogueWaveParameter
+struct FDialogueWaveParameter {
+	struct Unknown DialogueWave; // 0x0 (8)
+	struct Unknown Context; // 0x8 (24)
+};
+
+// ScriptStruct Engine.DialogueContext
+struct FDialogueContext {
+	struct Unknown Speaker; // 0x0 (8)
+	struct TArray<Unknown> Targets; // 0x8 (16)
+};
+
+// ScriptStruct Engine.DialogueContextMapping
+struct FDialogueContextMapping {
+	struct Unknown Context; // 0x0 (24)
+	struct Unknown SoundWave; // 0x18 (8)
+	struct FString LocalizationKeyFormat; // 0x20 (16)
+	struct Unknown Proxy; // 0x30 (8)
+};
+
+// ScriptStruct Engine.RawDistributionFloat
+struct FRawDistributionFloat : FRawDistribution {
+	float MinValue; // 0x20 (4)
+	float MaxValue; // 0x24 (4)
+	struct Unknown Distribution; // 0x28 (8)
+};
+
+// ScriptStruct Engine.RawDistributionVector
+struct FRawDistributionVector : FRawDistribution {
+	float MinValue; // 0x20 (4)
+	float MaxValue; // 0x24 (4)
+	struct Unknown MinValueVec; // 0x28 (12)
+	struct Unknown MaxValueVec; // 0x34 (12)
+	struct Unknown Distribution; // 0x40 (8)
+};
+
+// ScriptStruct Engine.GraphReference
+struct FGraphReference {
+	struct Unknown MacroGraph; // 0x0 (8)
+	struct Unknown GraphBlueprint; // 0x8 (8)
+	struct Unknown GraphGuid; // 0x10 (16)
+};
+
+// ScriptStruct Engine.EdGraphPinReference
+struct FEdGraphPinReference {
+	struct TWeakObjectPtr<struct Unknown> OwningNode; // 0x0 (8)
+	struct Unknown PinID; // 0x8 (16)
+};
+
+// ScriptStruct Engine.EdGraphSchemaAction
+struct FEdGraphSchemaAction {
+	struct FText MenuDescription; // 0x8 (24)
+	struct FText TooltipDescription; // 0x20 (24)
+	struct FText Category; // 0x38 (24)
+	struct FText Keywords; // 0x50 (24)
+	int32_t Grouping; // 0x68 (4)
+	int32_t SectionID; // 0x6C (4)
+	struct TArray<Unknown> MenuDescriptionArray; // 0x70 (16)
+	struct TArray<Unknown> FullSearchTitlesArray; // 0x80 (16)
+	struct TArray<Unknown> FullSearchKeywordsArray; // 0x90 (16)
+	struct TArray<Unknown> FullSearchCategoryArray; // 0xA0 (16)
+	struct TArray<Unknown> LocalizedMenuDescriptionArray; // 0xB0 (16)
+	struct TArray<Unknown> LocalizedFullSearchTitlesArray; // 0xC0 (16)
+	struct TArray<Unknown> LocalizedFullSearchKeywordsArray; // 0xD0 (16)
+	struct TArray<Unknown> LocalizedFullSearchCategoryArray; // 0xE0 (16)
+	struct FString SearchText; // 0xF0 (16)
+};
+
+// ScriptStruct Engine.EdGraphSchemaAction_NewNode
+struct FEdGraphSchemaAction_NewNode : FEdGraphSchemaAction {
+	struct Unknown NodeTemplate; // 0x100 (8)
+};
+
+// ScriptStruct Engine.PluginRedirect
+struct FPluginRedirect {
+	struct FString OldPluginName; // 0x0 (16)
+	struct FString NewPluginName; // 0x10 (16)
+};
+
+// ScriptStruct Engine.StructRedirect
+struct FStructRedirect {
+	struct FName OldStructName; // 0x0 (8)
+	struct FName NewStructName; // 0x8 (8)
+};
+
+// ScriptStruct Engine.ClassRedirect
+struct FClassRedirect {
+	struct FName ObjectName; // 0x0 (8)
+	struct FName OldClassName; // 0x8 (8)
+	struct FName NewClassName; // 0x10 (8)
+	struct FName OldSubobjName; // 0x18 (8)
+	struct FName NewSubobjName; // 0x20 (8)
+	struct FName NewClassClass; // 0x28 (8)
+	struct FName NewClassPackage; // 0x30 (8)
+	char InstanceOnly : 0; // 0x38 (1)
+};
+
+// ScriptStruct Engine.GameNameRedirect
+struct FGameNameRedirect {
+	struct FName OldGameName; // 0x0 (8)
+	struct FName NewGameName; // 0x8 (8)
+};
+
+// ScriptStruct Engine.ScreenMessageString
+struct FScreenMessageString {
+	uint64_t Key; // 0x0 (8)
+	struct FString ScreenMessage; // 0x8 (16)
+	struct Unknown DisplayColor; // 0x18 (4)
+	float TimeToDisplay; // 0x1C (4)
+	float CurrentTimeDisplayed; // 0x20 (4)
+	struct Unknown TextScale; // 0x24 (8)
+};
+
+// ScriptStruct Engine.DropNoteInfo
+struct FDropNoteInfo {
+	struct Unknown Location; // 0x0 (12)
+	struct Unknown Rotation; // 0xC (12)
+	struct FString Comment; // 0x18 (16)
+};
+
+// ScriptStruct Engine.StatColorMapping
+struct FStatColorMapping {
+	struct FString StatName; // 0x0 (16)
+	struct TArray<Unknown> ColorMap; // 0x10 (16)
+	char DisableBlend : 0; // 0x20 (1)
+};
+
+// ScriptStruct Engine.StatColorMapEntry
+struct FStatColorMapEntry {
+	float In; // 0x0 (4)
+	struct Unknown Out; // 0x4 (4)
+};
+
+// ScriptStruct Engine.WorldContext
+struct FWorldContext {
+	struct Unknown LastURL; // 0xD0 (104)
+	struct Unknown LastRemoteURL; // 0x138 (104)
+	struct Unknown PendingNetGame; // 0x1A0 (8)
+	struct TArray<Unknown> PackagesToFullyLoad; // 0x1A8 (16)
+	struct TArray<Unknown> LoadedLevelsForPendingMapChange; // 0x1C8 (16)
+	struct TArray<Unknown> ObjectReferencers; // 0x1F0 (16)
+	struct TArray<Unknown> PendingLevelStreamingStatusUpdates; // 0x200 (16)
+	struct Unknown GameViewport; // 0x210 (8)
+	struct Unknown OwningGameInstance; // 0x218 (8)
+	struct TArray<Unknown> ActiveNetDrivers; // 0x220 (16)
+};
+
+// ScriptStruct Engine.NamedNetDriver
+struct FNamedNetDriver {
+	struct Unknown NetDriver; // 0x0 (8)
+};
+
+// ScriptStruct Engine.LevelStreamingStatus
+struct FLevelStreamingStatus {
+	struct FName PackageName; // 0x0 (8)
+	char bShouldBeLoaded : 0; // 0x8 (1)
+	char bShouldBeVisible : 0; // 0x8 (1)
+	uint32_t LODIndex; // 0xC (4)
+};
+
+// ScriptStruct Engine.FullyLoadedPackagesInfo
+struct FFullyLoadedPackagesInfo {
+	char FullyLoadType; // 0x0 (1)
+	struct FString Tag; // 0x8 (16)
+	struct TArray<Unknown> PackagesToLoad; // 0x18 (16)
+	struct TArray<Unknown> LoadedObjects; // 0x28 (16)
+};
+
+// ScriptStruct Engine.NetDriverDefinition
+struct FNetDriverDefinition {
+	struct FName DefName; // 0x0 (8)
+	struct FName DriverClassName; // 0x8 (8)
+	struct FName DriverClassNameFallback; // 0x10 (8)
+};
+
+// ScriptStruct Engine.ExposureSettings
+struct FExposureSettings {
+	float FixedEV100; // 0x0 (4)
+	char bFixed : 0; // 0x4 (1)
+};
+
+// ScriptStruct Engine.CanvasUVTri
+struct FCanvasUVTri {
+	struct Unknown V0_Pos; // 0x0 (8)
+	struct Unknown V0_UV; // 0x8 (8)
+	struct Unknown V0_Color; // 0x10 (16)
+	struct Unknown V1_Pos; // 0x20 (8)
+	struct Unknown V1_UV; // 0x28 (8)
+	struct Unknown V1_Color; // 0x30 (16)
+	struct Unknown V2_Pos; // 0x40 (8)
+	struct Unknown V2_UV; // 0x48 (8)
+	struct Unknown V2_Color; // 0x50 (16)
+};
+
+// ScriptStruct Engine.FontRenderInfo
+struct FFontRenderInfo {
+	char bClipText : 0; // 0x0 (1)
+	char bEnableShadow : 0; // 0x0 (1)
+	struct Unknown GlowInfo; // 0x4 (36)
+};
+
+// ScriptStruct Engine.DepthFieldGlowInfo
+struct FDepthFieldGlowInfo {
+	char bEnableGlow : 0; // 0x0 (1)
+	struct Unknown GlowColor; // 0x4 (16)
+	struct Unknown GlowOuterRadius; // 0x14 (8)
+	struct Unknown GlowInnerRadius; // 0x1C (8)
+};
+
+// ScriptStruct Engine.Redirector
+struct FRedirector {
+	struct FName OldName; // 0x0 (8)
+	struct FName NewName; // 0x8 (8)
+};
+
+// ScriptStruct Engine.CollectionReference
+struct FCollectionReference {
+	struct FName CollectionName; // 0x0 (8)
+};
+
+// ScriptStruct Engine.ComponentReference
+struct FComponentReference {
+	struct Unknown OtherActor; // 0x0 (8)
+	struct FName ComponentProperty; // 0x8 (8)
+	struct FString PathToComponent; // 0x10 (16)
+};
+
+// ScriptStruct Engine.ConstrainComponentPropName
+struct FConstrainComponentPropName {
+	struct FName ComponentName; // 0x0 (8)
+};
+
+// ScriptStruct Engine.SkeletalMeshBuildSettings
+struct FSkeletalMeshBuildSettings {
+	char bRecomputeNormals : 0; // 0x0 (1)
+	char bRecomputeTangents : 0; // 0x0 (1)
+	char bUseMikkTSpace : 0; // 0x0 (1)
+	char bComputeWeightedNormals : 0; // 0x0 (1)
+	char bRemoveDegenerates : 0; // 0x0 (1)
+	char bUseHighPrecisionTangentBasis : 0; // 0x0 (1)
+	char bUseFullPrecisionUVs : 0; // 0x0 (1)
+	char bBuildAdjacencyBuffer : 0; // 0x0 (1)
+	float ThresholdPosition; // 0x4 (4)
+	float ThresholdTangentNormal; // 0x8 (4)
+	float ThresholdUV; // 0xC (4)
+	float MorphThresholdPosition; // 0x10 (4)
+};
+
+// ScriptStruct Engine.MeshBuildSettings
+struct FMeshBuildSettings {
+	char bUseMikkTSpace : 0; // 0x0 (1)
+	char bRecomputeNormals : 0; // 0x0 (1)
+	char bRecomputeTangents : 0; // 0x0 (1)
+	char bComputeWeightedNormals : 0; // 0x0 (1)
+	char bRemoveDegenerates : 0; // 0x0 (1)
+	char bBuildAdjacencyBuffer : 0; // 0x0 (1)
+	char bBuildReversedIndexBuffer : 0; // 0x0 (1)
+	char bUseHighPrecisionTangentBasis : 0; // 0x0 (1)
+	char bUseFullPrecisionUVs : 0; // 0x1 (1)
+	char bGenerateLightmapUVs : 0; // 0x1 (1)
+	char bGenerateDistanceFieldAsIfTwoSided : 0; // 0x1 (1)
+	char bSupportFaceRemap : 0; // 0x1 (1)
+	int32_t MinLightmapResolution; // 0x4 (4)
+	int32_t SrcLightmapIndex; // 0x8 (4)
+	int32_t DstLightmapIndex; // 0xC (4)
+	float BuildScale; // 0x10 (4)
+	struct Unknown BuildScale3D; // 0x14 (12)
+	float DistanceFieldResolutionScale; // 0x20 (4)
+	struct Unknown DistanceFieldReplacementMesh; // 0x28 (8)
+};
+
+// ScriptStruct Engine.POV
+struct FPOV {
+	struct Unknown Location; // 0x0 (12)
+	struct Unknown Rotation; // 0xC (12)
+	float FOV; // 0x18 (4)
+};
+
+// ScriptStruct Engine.AnimUpdateRateParameters
+struct FAnimUpdateRateParameters {
+	enum class Unknow ShiftBucket; // 0x1 (1)
+	char bInterpolateSkippedFrames : 0; // 0x2 (1)
+	char bShouldUseLodMap : 0; // 0x2 (1)
+	char bShouldUseMinLod : 0; // 0x2 (1)
+	char bSkipUpdate : 0; // 0x2 (1)
+	char bSkipEvaluation : 0; // 0x2 (1)
+	int32_t UpdateRate; // 0x4 (4)
+	int32_t EvaluationRate; // 0x8 (4)
+	float TickedPoseOffestTime; // 0xC (4)
+	float AdditionalTime; // 0x10 (4)
+	int32_t BaseNonRenderedUpdateRate; // 0x18 (4)
+	int32_t MaxEvalRateForInterpolation; // 0x1C (4)
+	struct TArray<Unknown> BaseVisibleDistanceFactorThesholds; // 0x20 (16)
+	struct TMap<Unknown, Unknown>Unknown LODToFrameSkipMap; // 0x30 (80)
+	int32_t SkippedUpdateFrames; // 0x80 (4)
+	int32_t SkippedEvalFrames; // 0x84 (4)
+};
+
+// ScriptStruct Engine.AnimSlotDesc
+struct FAnimSlotDesc {
+	struct FName SlotName; // 0x0 (8)
+	int32_t NumChannels; // 0x8 (4)
+};
+
+// ScriptStruct Engine.AnimSlotInfo
+struct FAnimSlotInfo {
+	struct FName SlotName; // 0x0 (8)
+	struct TArray<Unknown> ChannelWeights; // 0x8 (16)
+};
+
+// ScriptStruct Engine.MTDResult
+struct FMTDResult {
+	struct Unknown Direction; // 0x0 (12)
+	float Distance; // 0xC (4)
+};
+
+// ScriptStruct Engine.OverlapResult
+struct FOverlapResult {
+	struct TWeakObjectPtr<struct Unknown> Actor; // 0x0 (8)
+	struct TWeakObjectPtr<struct Unknown> Component; // 0x8 (8)
+	char bBlockingHit : 0; // 0x14 (1)
+};
+
+// ScriptStruct Engine.PrimitiveMaterialRef
+struct FPrimitiveMaterialRef {
+	struct Unknown Primitive; // 0x0 (8)
+	struct Unknown Decal; // 0x8 (8)
+	int32_t ElementIndex; // 0x10 (4)
+};
+
+// ScriptStruct Engine.SwarmDebugOptions
+struct FSwarmDebugOptions {
+	char bDistributionEnabled : 0; // 0x0 (1)
+	char bForceContentExport : 0; // 0x0 (1)
+	char bInitialized : 0; // 0x0 (1)
+};
+
+// ScriptStruct Engine.LightmassDebugOptions
+struct FLightmassDebugOptions {
+	char bDebugMode : 0; // 0x0 (1)
+	char bStatsEnabled : 0; // 0x0 (1)
+	char bGatherBSPSurfacesAcrossComponents : 0; // 0x0 (1)
+	float CoplanarTolerance; // 0x4 (4)
+	char bUseImmediateImport : 0; // 0x8 (1)
+	char bImmediateProcessMappings : 0; // 0x8 (1)
+	char bSortMappings : 0; // 0x8 (1)
+	char bDumpBinaryFiles : 0; // 0x8 (1)
+	char bDebugMaterials : 0; // 0x8 (1)
+	char bPadMappings : 0; // 0x8 (1)
+	char bDebugPaddings : 0; // 0x8 (1)
+	char bOnlyCalcDebugTexelMappings : 0; // 0x8 (1)
+	char bUseRandomColors : 0; // 0x9 (1)
+	char bColorBordersGreen : 0; // 0x9 (1)
+	char bColorByExecutionTime : 0; // 0x9 (1)
+	float ExecutionTimeDivisor; // 0xC (4)
+};
+
+// ScriptStruct Engine.LightmassPrimitiveSettings
+struct FLightmassPrimitiveSettings {
+	char bUseTwoSidedLighting : 0; // 0x0 (1)
+	char bShadowIndirectOnly : 0; // 0x0 (1)
+	char bUseEmissiveForStaticLighting : 0; // 0x0 (1)
+	char bUseVertexNormalForHemisphereGather : 0; // 0x0 (1)
+	float EmissiveLightFalloffExponent; // 0x4 (4)
+	float EmissiveLightExplicitInfluenceRadius; // 0x8 (4)
+	float EmissiveBoost; // 0xC (4)
+	float DiffuseBoost; // 0x10 (4)
+	float FullyOccludedSamplesFraction; // 0x14 (4)
+};
+
+// ScriptStruct Engine.LightmassLightSettings
+struct FLightmassLightSettings {
+	float IndirectLightingSaturation; // 0x0 (4)
+	float ShadowExponent; // 0x4 (4)
+	char bUseAreaShadowsForStationaryLight : 0; // 0x8 (1)
+};
+
+// ScriptStruct Engine.LightmassDirectionalLightSettings
+struct FLightmassDirectionalLightSettings : FLightmassLightSettings {
+	float LightSourceAngle; // 0xC (4)
+};
+
+// ScriptStruct Engine.BasedPosition
+struct FBasedPosition {
+	struct Unknown Base; // 0x0 (8)
+	struct Unknown Position; // 0x8 (12)
+	struct Unknown CachedBaseLocation; // 0x14 (12)
+	struct Unknown CachedBaseRotation; // 0x20 (12)
+	struct Unknown CachedTransPosition; // 0x2C (12)
+};
+
+// ScriptStruct Engine.CollisionImpactData
+struct FCollisionImpactData {
+	struct TArray<Unknown> ContactInfos; // 0x0 (16)
+	struct Unknown TotalNormalImpulse; // 0x10 (12)
+	struct Unknown TotalFrictionImpulse; // 0x1C (12)
+};
+
+// ScriptStruct Engine.RigidBodyContactInfo
+struct FRigidBodyContactInfo {
+	struct Unknown ContactPosition; // 0x0 (12)
+	struct Unknown ContactNormal; // 0xC (12)
+	float ContactPenetration; // 0x18 (4)
+	struct Unknown PhysMaterial[0x2]; // 0x20 (16)
+};
+
+// ScriptStruct Engine.RigidBodyState
+struct FRigidBodyState {
+	struct Unknown Position; // 0x0 (12)
+	struct Unknown Quaternion; // 0x10 (16)
+	struct Unknown LinVel; // 0x20 (12)
+	struct Unknown AngVel; // 0x2C (12)
+	char Flags; // 0x38 (1)
+};
+
+// ScriptStruct Engine.MaterialShadingModelField
+struct FMaterialShadingModelField {
+	uint16_t ShadingModelField; // 0x0 (2)
+};
+
+// ScriptStruct Engine.ExponentialHeightFogData
+struct FExponentialHeightFogData {
+	float FogDensity; // 0x0 (4)
+	float FogHeightFalloff; // 0x4 (4)
+	float FogHeightOffset; // 0x8 (4)
+};
+
+// ScriptStruct Engine.FontCharacter
+struct FFontCharacter {
+	int32_t StartU; // 0x0 (4)
+	int32_t StartV; // 0x4 (4)
+	int32_t USize; // 0x8 (4)
+	int32_t VSize; // 0xC (4)
+	char TextureIndex; // 0x10 (1)
+	int32_t VerticalOffset; // 0x14 (4)
+};
+
+// ScriptStruct Engine.FontImportOptionsData
+struct FFontImportOptionsData {
+	struct FString FontName; // 0x0 (16)
+	float Height; // 0x10 (4)
+	char bEnableAntialiasing : 0; // 0x14 (1)
+	char bEnableBold : 0; // 0x14 (1)
+	char bEnableItalic : 0; // 0x14 (1)
+	char bEnableUnderline : 0; // 0x14 (1)
+	char bAlphaOnly : 0; // 0x14 (1)
+	char CharacterSet; // 0x18 (1)
+	struct FString Chars; // 0x20 (16)
+	struct FString UnicodeRange; // 0x30 (16)
+	struct FString CharsFilePath; // 0x40 (16)
+	struct FString CharsFileWildcard; // 0x50 (16)
+	char bCreatePrintableOnly : 0; // 0x60 (1)
+	char bIncludeASCIIRange : 0; // 0x60 (1)
+	struct Unknown ForegroundColor; // 0x64 (16)
+	char bEnableDropShadow : 0; // 0x74 (1)
+	int32_t TexturePageWidth; // 0x78 (4)
+	int32_t TexturePageMaxHeight; // 0x7C (4)
+	int32_t XPadding; // 0x80 (4)
+	int32_t YPadding; // 0x84 (4)
+	int32_t ExtendBoxTop; // 0x88 (4)
+	int32_t ExtendBoxBottom; // 0x8C (4)
+	int32_t ExtendBoxRight; // 0x90 (4)
+	int32_t ExtendBoxLeft; // 0x94 (4)
+	char bEnableLegacyMode : 0; // 0x98 (1)
+	int32_t Kerning; // 0x9C (4)
+	char bUseDistanceFieldAlpha : 0; // 0xA0 (1)
+	int32_t DistanceFieldScaleFactor; // 0xA4 (4)
+	float DistanceFieldScanRadiusScale; // 0xA8 (4)
+};
+
+// ScriptStruct Engine.ForceFeedbackChannelDetails
+struct FForceFeedbackChannelDetails {
+	char bAffectsLeftLarge : 0; // 0x0 (1)
+	char bAffectsLeftSmall : 0; // 0x0 (1)
+	char bAffectsRightLarge : 0; // 0x0 (1)
+	char bAffectsRightSmall : 0; // 0x0 (1)
+	struct Unknown Curve; // 0x8 (136)
+};
+
+// ScriptStruct Engine.PredictProjectilePathResult
+struct FPredictProjectilePathResult {
+	struct TArray<Unknown> PathData; // 0x0 (16)
+	struct Unknown LastTraceDestination; // 0x10 (28)
+	struct Unknown HitResult; // 0x2C (136)
+};
+
+// ScriptStruct Engine.PredictProjectilePathPointData
+struct FPredictProjectilePathPointData {
+	struct Unknown Location; // 0x0 (12)
+	struct Unknown Velocity; // 0xC (12)
+	float Time; // 0x18 (4)
+};
+
+// ScriptStruct Engine.PredictProjectilePathParams
+struct FPredictProjectilePathParams {
+	struct Unknown StartLocation; // 0x0 (12)
+	struct Unknown LaunchVelocity; // 0xC (12)
+	char bTraceWithCollision : 0; // 0x18 (1)
+	float ProjectileRadius; // 0x1C (4)
+	float MaxSimTime; // 0x20 (4)
+	char bTraceWithChannel : 0; // 0x24 (1)
+	char TraceChannel; // 0x25 (1)
+	struct TArray<Unknown> ObjectTypes; // 0x28 (16)
+	struct TArray<Unknown> ActorsToIgnore; // 0x38 (16)
+	float SimFrequency; // 0x48 (4)
+	float OverrideGravityZ; // 0x4C (4)
+	char DrawDebugType; // 0x50 (1)
+	float DrawDebugTime; // 0x54 (4)
+	char bTraceComplex : 0; // 0x58 (1)
+};
+
+// ScriptStruct Engine.ActiveHapticFeedbackEffect
+struct FActiveHapticFeedbackEffect {
+	struct Unknown HapticEffect; // 0x0 (8)
+};
+
+// ScriptStruct Engine.HapticFeedbackDetails_Curve
+struct FHapticFeedbackDetails_Curve {
+	struct Unknown Frequency; // 0x0 (136)
+	struct Unknown Amplitude; // 0x88 (136)
+};
+
+// ScriptStruct Engine.ClusterNode
+struct FClusterNode {
+	struct Unknown BoundMin; // 0x0 (12)
+	int32_t FirstChild; // 0xC (4)
+	struct Unknown BoundMax; // 0x10 (12)
+	int32_t LastChild; // 0x1C (4)
+	int32_t FirstInstance; // 0x20 (4)
+	int32_t LastInstance; // 0x24 (4)
+	struct Unknown MinInstanceScale; // 0x28 (12)
+	struct Unknown MaxInstanceScale; // 0x34 (12)
+};
+
+// ScriptStruct Engine.ClusterNode_DEPRECATED
+struct FClusterNode_DEPRECATED {
+	struct Unknown BoundMin; // 0x0 (12)
+	int32_t FirstChild; // 0xC (4)
+	struct Unknown BoundMax; // 0x10 (12)
+	int32_t LastChild; // 0x1C (4)
+	int32_t FirstInstance; // 0x20 (4)
+	int32_t LastInstance; // 0x24 (4)
+};
+
+// ScriptStruct Engine.HLODProxyMesh
+struct FHLODProxyMesh {
+	Unknown LODActor; // 0x0 (28)
+	struct Unknown StaticMesh; // 0x20 (8)
+	struct FName Key; // 0x28 (8)
+};
+
+// ScriptStruct Engine.ImportanceTexture
+struct FImportanceTexture {
+	struct Unknown Size; // 0x0 (8)
+	int32_t NumMips; // 0x8 (4)
+	struct TArray<Unknown> MarginalCDF; // 0x10 (16)
+	struct TArray<Unknown> ConditionalCDF; // 0x20 (16)
+	struct TArray<Unknown> TextureData; // 0x30 (16)
+	struct TWeakObjectPtr<struct Unknown> Texture; // 0x40 (8)
+	char Weighting; // 0x48 (1)
+};
+
+// ScriptStruct Engine.ComponentOverrideRecord
+struct FComponentOverrideRecord {
+	struct Unknown* ComponentClass; // 0x0 (8)
+	struct Unknown ComponentTemplate; // 0x8 (8)
+	struct Unknown ComponentKey; // 0x10 (32)
+	struct Unknown CookedComponentInstancingData; // 0x30 (72)
+};
+
+// ScriptStruct Engine.ComponentKey
+struct FComponentKey {
+	struct Unknown* OwnerClass; // 0x0 (8)
+	struct FName SCSVariableName; // 0x8 (8)
+	struct Unknown AssociatedGuid; // 0x10 (16)
+};
+
+// ScriptStruct Engine.BlueprintInputDelegateBinding
+struct FBlueprintInputDelegateBinding {
+	char bConsumeInput : 0; // 0x0 (1)
+	char bExecuteWhenPaused : 0; // 0x0 (1)
+	char bOverrideParentBinding : 0; // 0x0 (1)
+};
+
+// ScriptStruct Engine.BlueprintInputActionDelegateBinding
+struct FBlueprintInputActionDelegateBinding : FBlueprintInputDelegateBinding {
+	struct FName InputActionName; // 0x4 (8)
+	char InputKeyEvent; // 0xC (1)
+	struct FName FunctionNameToBind; // 0x10 (8)
+};
+
+// ScriptStruct Engine.BlueprintInputAxisDelegateBinding
+struct FBlueprintInputAxisDelegateBinding : FBlueprintInputDelegateBinding {
+	struct FName InputAxisName; // 0x4 (8)
+	struct FName FunctionNameToBind; // 0xC (8)
+};
+
+// ScriptStruct Engine.BlueprintInputAxisKeyDelegateBinding
+struct FBlueprintInputAxisKeyDelegateBinding : FBlueprintInputDelegateBinding {
+	struct Unknown AxisKey; // 0x8 (24)
+	struct FName FunctionNameToBind; // 0x20 (8)
+};
+
+// ScriptStruct Engine.CachedKeyToActionInfo
+struct FCachedKeyToActionInfo {
+	struct Unknown PlayerInput; // 0x0 (8)
+};
+
+// ScriptStruct Engine.BlueprintInputKeyDelegateBinding
+struct FBlueprintInputKeyDelegateBinding : FBlueprintInputDelegateBinding {
+	struct Unknown InputChord; // 0x8 (32)
+	char InputKeyEvent; // 0x28 (1)
+	struct FName FunctionNameToBind; // 0x2C (8)
+};
+
+// ScriptStruct Engine.BlueprintInputTouchDelegateBinding
+struct FBlueprintInputTouchDelegateBinding : FBlueprintInputDelegateBinding {
+	char InputKeyEvent; // 0x4 (1)
+	struct FName FunctionNameToBind; // 0x8 (8)
+};
+
+// ScriptStruct Engine.InstancedStaticMeshComponentInstanceData
+struct FInstancedStaticMeshComponentInstanceData : FSceneComponentInstanceData {
+	struct Unknown StaticMesh; // 0xA8 (8)
+	struct Unknown CachedStaticLighting; // 0xB0 (64)
+	struct TArray<Unknown> PerInstanceSMData; // 0xF0 (16)
+	struct TArray<Unknown> PerInstanceSMCustomData; // 0x100 (16)
+	int32_t InstancingRandomSeed; // 0x130 (4)
+};
+
+// ScriptStruct Engine.InstancedStaticMeshInstanceData
+struct FInstancedStaticMeshInstanceData {
+	struct Unknown Transform; // 0x0 (64)
+};
+
+// ScriptStruct Engine.InstancedStaticMeshLightMapInstanceData
+struct FInstancedStaticMeshLightMapInstanceData {
+	struct Unknown Transform; // 0x0 (48)
+	struct TArray<Unknown> MapBuildDataIds; // 0x30 (16)
+};
+
+// ScriptStruct Engine.IntegralCurve
+struct FIntegralCurve : FIndexedCurve {
+	struct TArray<Unknown> Keys; // 0x68 (16)
+	int32_t DefaultValue; // 0x78 (4)
+	char bUseDefaultValueBeforeFirstKey : 0; // 0x7C (1)
+};
+
+// ScriptStruct Engine.IntegralKey
+struct FIntegralKey {
+	float Time; // 0x0 (4)
+	int32_t Value; // 0x4 (4)
+};
+
+// ScriptStruct Engine.CurveEdTab
+struct FCurveEdTab {
+	struct FString TabName; // 0x0 (16)
+	struct TArray<Unknown> Curves; // 0x10 (16)
+	float ViewStartInput; // 0x20 (4)
+	float ViewEndInput; // 0x24 (4)
+	float ViewStartOutput; // 0x28 (4)
+	float ViewEndOutput; // 0x2C (4)
+};
+
+// ScriptStruct Engine.CurveEdEntry
+struct FCurveEdEntry {
+	struct Unknown CurveObject; // 0x0 (8)
+	struct Unknown CurveColor; // 0x8 (4)
+	struct FString CurveName; // 0x10 (16)
+	int32_t bHideCurve; // 0x20 (4)
+	int32_t bColorCurve; // 0x24 (4)
+	int32_t bFloatingPointColorCurve; // 0x28 (4)
+	int32_t bClamp; // 0x2C (4)
+	float ClampLow; // 0x30 (4)
+	float ClampHigh; // 0x34 (4)
+};
+
+// ScriptStruct Engine.InterpEdSelKey
+struct FInterpEdSelKey {
+	struct Unknown Group; // 0x0 (8)
+	struct Unknown Track; // 0x8 (8)
+	int32_t KeyIndex; // 0x10 (4)
+	float UnsnappedPosition; // 0x14 (4)
+};
+
+// ScriptStruct Engine.CameraPreviewInfo
+struct FCameraPreviewInfo {
+	struct Unknown* PawnClass; // 0x0 (8)
+	struct Unknown AnimSeq; // 0x8 (8)
+	struct Unknown Location; // 0x10 (12)
+	struct Unknown Rotation; // 0x1C (12)
+	struct Unknown PawnInst; // 0x28 (8)
+};
+
+// ScriptStruct Engine.SubTrackGroup
+struct FSubTrackGroup {
+	struct FString GroupName; // 0x0 (16)
+	struct TArray<Unknown> TrackIndices; // 0x10 (16)
+	char bIsCollapsed : 0; // 0x20 (1)
+	char bIsSelected : 0; // 0x20 (1)
+};
+
+// ScriptStruct Engine.SupportedSubTrackInfo
+struct FSupportedSubTrackInfo {
+	struct Unknown* SupportedClass; // 0x0 (8)
+	struct FString SubTrackName; // 0x8 (16)
+	int32_t GroupIndex; // 0x18 (4)
+};
+
+// ScriptStruct Engine.AnimControlTrackKey
+struct FAnimControlTrackKey {
+	float StartTime; // 0x0 (4)
+	struct Unknown AnimSeq; // 0x8 (8)
+	float AnimStartOffset; // 0x10 (4)
+	float AnimEndOffset; // 0x14 (4)
+	float AnimPlayRate; // 0x18 (4)
+	char bLooping : 0; // 0x1C (1)
+	char bReverse : 0; // 0x1C (1)
+};
+
+// ScriptStruct Engine.BoolTrackKey
+struct FBoolTrackKey {
+	float Time; // 0x0 (4)
+	char Value : 0; // 0x4 (1)
+};
+
+// ScriptStruct Engine.DirectorTrackCut
+struct FDirectorTrackCut {
+	float Time; // 0x0 (4)
+	float TransitionTime; // 0x4 (4)
+	struct FName TargetCamGroup; // 0x8 (8)
+	int32_t ShotNumber; // 0x10 (4)
+};
+
+// ScriptStruct Engine.EventTrackKey
+struct FEventTrackKey {
+	float Time; // 0x0 (4)
+	struct FName EventName; // 0x4 (8)
+};
+
+// ScriptStruct Engine.InterpLookupTrack
+struct FInterpLookupTrack {
+	struct TArray<Unknown> Points; // 0x0 (16)
+};
+
+// ScriptStruct Engine.InterpLookupPoint
+struct FInterpLookupPoint {
+	struct FName GroupName; // 0x0 (8)
+	float Time; // 0x8 (4)
+};
+
+// ScriptStruct Engine.ParticleReplayTrackKey
+struct FParticleReplayTrackKey {
+	float Time; // 0x0 (4)
+	float Duration; // 0x4 (4)
+	int32_t ClipIDNumber; // 0x8 (4)
+};
+
+// ScriptStruct Engine.SoundTrackKey
+struct FSoundTrackKey {
+	float Time; // 0x0 (4)
+	float Volume; // 0x4 (4)
+	float Pitch; // 0x8 (4)
+	struct Unknown Sound; // 0x10 (8)
+};
+
+// ScriptStruct Engine.ToggleTrackKey
+struct FToggleTrackKey {
+	float Time; // 0x0 (4)
+	char ToggleAction; // 0x4 (1)
+};
+
+// ScriptStruct Engine.VisibilityTrackKey
+struct FVisibilityTrackKey {
+	float Time; // 0x0 (4)
+	char Action; // 0x4 (1)
+	char ActiveCondition; // 0x5 (1)
+};
+
+// ScriptStruct Engine.DrawToRenderTargetContext
+struct FDrawToRenderTargetContext {
+	struct Unknown RenderTarget; // 0x0 (8)
+};
+
+// ScriptStruct Engine.LayerActorStats
+struct FLayerActorStats {
+	struct Unknown* Type; // 0x0 (8)
+	int32_t Total; // 0x8 (4)
+};
+
+// ScriptStruct Engine.ReplicatedStaticActorDestructionInfo
+struct FReplicatedStaticActorDestructionInfo {
+	struct Unknown* ObjClass; // 0x30 (8)
+};
+
+// ScriptStruct Engine.LevelSimplificationDetails
+struct FLevelSimplificationDetails {
+	char bCreatePackagePerAsset : 0; // 0x0 (1)
+	float DetailsPercentage; // 0x4 (4)
+	struct Unknown StaticMeshMaterialSettings; // 0x8 (140)
+	char bOverrideLandscapeExportLOD : 0; // 0x94 (1)
+	int32_t LandscapeExportLOD; // 0x98 (4)
+	struct Unknown LandscapeMaterialSettings; // 0x9C (140)
+	char bBakeFoliageToLandscape : 0; // 0x128 (1)
+	char bBakeGrassToLandscape : 0; // 0x129 (1)
+	char bAllowDistanceField : 0; // 0x12A (1)
+	char bSimplifiedMeshMerge : 0; // 0x12B (1)
+	char bGenerateMeshNormalMap : 0; // 0x12C (1)
+	char bGenerateMeshMetallicMap : 0; // 0x12D (1)
+	char bGenerateMeshRoughnessMap : 0; // 0x12E (1)
+	char bGenerateMeshSpecularMap : 0; // 0x12F (1)
+	char bGenerateLandscapeNormalMap : 0; // 0x130 (1)
+	char bGenerateLandscapeMetallicMap : 0; // 0x131 (1)
+	char bGenerateLandscapeRoughnessMap : 0; // 0x132 (1)
+	char bGenerateLandscapeSpecularMap : 0; // 0x133 (1)
+};
+
+// ScriptStruct Engine.MaterialProxySettings
+struct FMaterialProxySettings {
+	struct Unknown TextureSize; // 0x0 (8)
+	float GutterSpace; // 0x8 (4)
+	float MetallicConstant; // 0xC (4)
+	float RoughnessConstant; // 0x10 (4)
+	float AnisotropyConstant; // 0x14 (4)
+	float SpecularConstant; // 0x18 (4)
+	float OpacityConstant; // 0x1C (4)
+	float OpacityMaskConstant; // 0x20 (4)
+	float AmbientOcclusionConstant; // 0x24 (4)
+	char TextureSizingType; // 0x28 (1)
+	char MaterialMergeType; // 0x29 (1)
+	char BlendMode; // 0x2A (1)
+	char bAllowTwoSidedMaterial : 0; // 0x2B (1)
+	char bNormalMap : 0; // 0x2B (1)
+	char bTangentMap : 0; // 0x2B (1)
+	char bMetallicMap : 0; // 0x2B (1)
+	char bRoughnessMap : 0; // 0x2B (1)
+	char bAnisotropyMap : 0; // 0x2B (1)
+	char bSpecularMap : 0; // 0x2B (1)
+	char bEmissiveMap : 0; // 0x2B (1)
+	char bOpacityMap : 0; // 0x2C (1)
+	char bOpacityMaskMap : 0; // 0x2C (1)
+	char bAmbientOcclusionMap : 0; // 0x2C (1)
+	struct Unknown DiffuseTextureSize; // 0x30 (8)
+	struct Unknown NormalTextureSize; // 0x38 (8)
+	struct Unknown TangentTextureSize; // 0x40 (8)
+	struct Unknown MetallicTextureSize; // 0x48 (8)
+	struct Unknown RoughnessTextureSize; // 0x50 (8)
+	struct Unknown AnisotropyTextureSize; // 0x58 (8)
+	struct Unknown SpecularTextureSize; // 0x60 (8)
+	struct Unknown EmissiveTextureSize; // 0x68 (8)
+	struct Unknown OpacityTextureSize; // 0x70 (8)
+	struct Unknown OpacityMaskTextureSize; // 0x78 (8)
+	struct Unknown AmbientOcclusionTextureSize; // 0x80 (8)
+	char bHLODMaterial : 0; // 0x88 (1)
+	char bWorldCompositionMaterial : 0; // 0x89 (1)
+};
+
+// ScriptStruct Engine.DynamicTextureInstance
+struct FDynamicTextureInstance : FStreamableTextureInstance {
+	struct Unknown Texture; // 0x28 (8)
+	char bAttached : 0; // 0x30 (1)
+	float OriginalRadius; // 0x34 (4)
+};
+
+// ScriptStruct Engine.PrecomputedLightInstanceData
+struct FPrecomputedLightInstanceData : FSceneComponentInstanceData {
+	struct Unknown Transform; // 0xB0 (48)
+	struct Unknown LightGuid; // 0xE0 (16)
+	int32_t PreviewShadowMapChannel; // 0xF0 (4)
+};
+
+// ScriptStruct Engine.BatchedPoint
+struct FBatchedPoint {
+	struct Unknown Position; // 0x0 (12)
+	struct Unknown Color; // 0xC (16)
+	float PointSize; // 0x1C (4)
+	float RemainingLifeTime; // 0x20 (4)
+	char DepthPriority; // 0x24 (1)
+};
+
+// ScriptStruct Engine.BatchedLine
+struct FBatchedLine {
+	struct Unknown Start; // 0x0 (12)
+	struct Unknown End; // 0xC (12)
+	struct Unknown Color; // 0x18 (16)
+	float Thickness; // 0x28 (4)
+	float RemainingLifeTime; // 0x2C (4)
+	char DepthPriority; // 0x30 (1)
+};
+
+// ScriptStruct Engine.ClientReceiveData
+struct FClientReceiveData {
+	struct Unknown LocalPC; // 0x0 (8)
+	struct FName MessageType; // 0x8 (8)
+	int32_t MessageIndex; // 0x10 (4)
+	struct FString MessageString; // 0x18 (16)
+	struct Unknown RelatedPlayerState_2; // 0x28 (8)
+	struct Unknown RelatedPlayerState_3; // 0x30 (8)
+	struct Unknown OptionalObject; // 0x38 (8)
+};
+
+// ScriptStruct Engine.ParameterGroupData
+struct FParameterGroupData {
+	struct FString GroupName; // 0x0 (16)
+	int32_t GroupSortPriority; // 0x10 (4)
+};
+
+// ScriptStruct Engine.MaterialSpriteElement
+struct FMaterialSpriteElement {
+	struct Unknown Material; // 0x0 (8)
+	struct Unknown DistanceToOpacityCurve; // 0x8 (8)
+	char bSizeIsInScreenSpace : 0; // 0x10 (1)
+	float BaseSizeX; // 0x14 (4)
+	float BaseSizeY; // 0x18 (4)
+	struct Unknown DistanceToSizeCurve; // 0x20 (8)
+};
+
+// ScriptStruct Engine.MaterialCachedExpressionData
+struct FMaterialCachedExpressionData {
+	struct Unknown Parameters; // 0x0 (416)
+	struct TArray<Unknown> ReferencedTextures; // 0x1A0 (16)
+	struct TArray<Unknown> FunctionInfos; // 0x1B0 (16)
+	struct TArray<Unknown> ParameterCollectionInfos; // 0x1C0 (16)
+	struct TArray<Unknown> DefaultLayers; // 0x1D0 (16)
+	struct TArray<Unknown> DefaultLayerBlends; // 0x1E0 (16)
+	struct TArray<Unknown> GrassTypes; // 0x1F0 (16)
+	struct TArray<Unknown> DynamicParameterNames; // 0x200 (16)
+	struct TArray<Unknown> QualityLevelsUsed; // 0x210 (16)
+	char bHasRuntimeVirtualTextureOutput : 0; // 0x220 (1)
+	char bHasSceneColor : 0; // 0x220 (1)
+};
+
+// ScriptStruct Engine.MaterialParameterCollectionInfo
+struct FMaterialParameterCollectionInfo {
+	struct Unknown StateID; // 0x0 (16)
+	struct Unknown ParameterCollection; // 0x10 (8)
+};
+
+// ScriptStruct Engine.MaterialFunctionInfo
+struct FMaterialFunctionInfo {
+	struct Unknown StateID; // 0x0 (16)
+	struct Unknown Function; // 0x10 (8)
+};
+
+// ScriptStruct Engine.MaterialCachedParameters
+struct FMaterialCachedParameters {
+	struct Unknown Entries[0x5]; // 0x0 (320)
+	struct TArray<Unknown> ScalarValues; // 0x140 (16)
+	struct TArray<Unknown> VectorValues; // 0x150 (16)
+	struct TArray<Unknown> TextureValues; // 0x160 (16)
+	struct TArray<Unknown> FontValues; // 0x170 (16)
+	struct TArray<Unknown> FontPageValues; // 0x180 (16)
+	struct TArray<Unknown> RuntimeVirtualTextureValues; // 0x190 (16)
+};
+
+// ScriptStruct Engine.MaterialCachedParameterEntry
+struct FMaterialCachedParameterEntry {
+	struct TArray<Unknown> NameHashes; // 0x0 (16)
+	struct TArray<Unknown> ParameterInfos; // 0x10 (16)
+	struct TArray<Unknown> ExpressionGuids; // 0x20 (16)
+	struct TArray<Unknown> Overrides; // 0x30 (16)
+};
+
+// ScriptStruct Engine.MaterialParameterInfo
+struct FMaterialParameterInfo {
+	struct FName Name; // 0x0 (8)
+	char Association; // 0x8 (1)
+	int32_t Index; // 0xC (4)
+};
+
+// ScriptStruct Engine.ParameterChannelNames
+struct FParameterChannelNames {
+	struct FText R; // 0x0 (24)
+	struct FText G; // 0x18 (24)
+	struct FText B; // 0x30 (24)
+	struct FText A; // 0x48 (24)
+};
+
+// ScriptStruct Engine.CustomDefine
+struct FCustomDefine {
+	struct FString DefineName; // 0x0 (16)
+	struct FString DefineValue; // 0x10 (16)
+};
+
+// ScriptStruct Engine.CustomInput
+struct FCustomInput {
+	struct FName InputName; // 0x0 (8)
+	struct Unknown Input; // 0x8 (12)
+};
+
+// ScriptStruct Engine.FunctionExpressionOutput
+struct FFunctionExpressionOutput {
+	struct Unknown ExpressionOutput; // 0x0 (8)
+	struct Unknown ExpressionOutputId; // 0x8 (16)
+	struct Unknown Output; // 0x18 (8)
+};
+
+// ScriptStruct Engine.FunctionExpressionInput
+struct FFunctionExpressionInput {
+	struct Unknown ExpressionInput; // 0x0 (8)
+	struct Unknown ExpressionInputId; // 0x8 (16)
+	struct Unknown Input; // 0x18 (12)
+};
+
+// ScriptStruct Engine.FontParameterValue
+struct FFontParameterValue {
+	struct Unknown ParameterInfo; // 0x0 (16)
+	struct Unknown FontValue; // 0x10 (8)
+	int32_t FontPage; // 0x18 (4)
+	struct Unknown ExpressionGUID; // 0x1C (16)
+};
+
+// ScriptStruct Engine.RuntimeVirtualTextureParameterValue
+struct FRuntimeVirtualTextureParameterValue {
+	struct Unknown ParameterInfo; // 0x0 (16)
+	struct Unknown ParameterValue; // 0x10 (8)
+	struct Unknown ExpressionGUID; // 0x18 (16)
+};
+
+// ScriptStruct Engine.TextureParameterValue
+struct FTextureParameterValue {
+	struct Unknown ParameterInfo; // 0x0 (16)
+	struct Unknown ParameterValue; // 0x10 (8)
+	struct Unknown ExpressionGUID; // 0x18 (16)
+};
+
+// ScriptStruct Engine.VectorParameterValue
+struct FVectorParameterValue {
+	struct Unknown ParameterInfo; // 0x0 (16)
+	struct Unknown ParameterValue; // 0x10 (16)
+	struct Unknown ExpressionGUID; // 0x20 (16)
+};
+
+// ScriptStruct Engine.ScalarParameterValue
+struct FScalarParameterValue {
+	struct Unknown ParameterInfo; // 0x0 (16)
+	float ParameterValue; // 0x10 (4)
+	struct Unknown ExpressionGUID; // 0x14 (16)
+};
+
+// ScriptStruct Engine.ScalarParameterAtlasInstanceData
+struct FScalarParameterAtlasInstanceData {
+	char bIsUsedAsAtlasPosition : 0; // 0x0 (1)
+	struct TSoftObjectPtr<Unknown> Curve; // 0x8 (40)
+	struct TSoftObjectPtr<Unknown> Atlas; // 0x30 (40)
+};
+
+// ScriptStruct Engine.MaterialInstanceBasePropertyOverrides
+struct FMaterialInstanceBasePropertyOverrides {
+	char bOverride_OpacityMaskClipValue : 0; // 0x0 (1)
+	char bOverride_BlendMode : 0; // 0x0 (1)
+	char bOverride_ShadingModel : 0; // 0x0 (1)
+	char bOverride_DitheredLODTransition : 0; // 0x0 (1)
+	char bOverride_CastDynamicShadowAsMasked : 0; // 0x0 (1)
+	char bOverride_TwoSided : 0; // 0x0 (1)
+	char TwoSided : 0; // 0x0 (1)
+	char DitheredLODTransition : 0; // 0x0 (1)
+	char bCastDynamicShadowAsMasked : 0; // 0x1 (1)
+	char BlendMode; // 0x2 (1)
+	char ShadingModel; // 0x3 (1)
+	float OpacityMaskClipValue; // 0x4 (4)
+};
+
+// ScriptStruct Engine.MaterialTextureInfo
+struct FMaterialTextureInfo {
+	float SamplingScale; // 0x0 (4)
+	int32_t UVChannelIndex; // 0x4 (4)
+	struct FName TextureName; // 0x8 (8)
+};
+
+// ScriptStruct Engine.LightmassMaterialInterfaceSettings
+struct FLightmassMaterialInterfaceSettings {
+	float EmissiveBoost; // 0x0 (4)
+	float DiffuseBoost; // 0x4 (4)
+	float ExportResolutionScale; // 0x8 (4)
+	char bCastShadowAsMasked : 0; // 0xC (1)
+	char bOverrideCastShadowAsMasked : 0; // 0xC (1)
+	char bOverrideEmissiveBoost : 0; // 0xC (1)
+	char bOverrideDiffuseBoost : 0; // 0xC (1)
+	char bOverrideExportResolutionScale : 0; // 0xC (1)
+};
+
+// ScriptStruct Engine.MaterialLayersFunctions
+struct FMaterialLayersFunctions {
+	struct TArray<Unknown> Layers; // 0x0 (16)
+	struct TArray<Unknown> Blends; // 0x10 (16)
+	struct TArray<Unknown> LayerStates; // 0x20 (16)
+	struct FString KeyString; // 0x30 (16)
+};
+
+// ScriptStruct Engine.CollectionParameterBase
+struct FCollectionParameterBase {
+	struct FName ParameterName; // 0x0 (8)
+	struct Unknown ID; // 0x8 (16)
+};
+
+// ScriptStruct Engine.CollectionVectorParameter
+struct FCollectionVectorParameter : FCollectionParameterBase {
+	struct Unknown DefaultValue; // 0x18 (16)
+};
+
+// ScriptStruct Engine.CollectionScalarParameter
+struct FCollectionScalarParameter : FCollectionParameterBase {
+	float DefaultValue; // 0x18 (4)
+};
+
+// ScriptStruct Engine.InterpGroupActorInfo
+struct FInterpGroupActorInfo {
+	struct FName ObjectName; // 0x0 (8)
+	struct TArray<Unknown> Actors; // 0x8 (16)
+};
+
+// ScriptStruct Engine.CameraCutInfo
+struct FCameraCutInfo {
+	struct Unknown Location; // 0x0 (12)
+	float Timestamp; // 0xC (4)
+};
+
+// ScriptStruct Engine.MemberReference
+struct FMemberReference {
+	struct Unknown MemberParent; // 0x0 (8)
+	struct FString MemberScope; // 0x8 (16)
+	struct FName MemberName; // 0x18 (8)
+	struct Unknown MemberGuid; // 0x20 (16)
+	char bSelfContext : 0; // 0x30 (1)
+	char bWasDeprecated : 0; // 0x31 (1)
+};
+
+// ScriptStruct Engine.MeshInstancingSettings
+struct FMeshInstancingSettings {
+	struct Unknown* ActorClassToUse; // 0x0 (8)
+	int32_t InstanceReplacementThreshold; // 0x8 (4)
+	enum class Unknow MeshReplacementMethod; // 0xC (1)
+	char bSkipMeshesWithVertexColors : 0; // 0xD (1)
+	char bUseHLODVolumes : 0; // 0xE (1)
+	struct Unknown* ISMComponentToUse; // 0x10 (8)
+};
+
+// ScriptStruct Engine.MeshMergingSettings
+struct FMeshMergingSettings {
+	int32_t TargetLightMapResolution; // 0x0 (4)
+	enum class Unknow OutputUVs[0x8]; // 0x4 (8)
+	struct Unknown MaterialSettings; // 0xC (140)
+	int32_t GutterSize; // 0x98 (4)
+	int32_t SpecificLOD; // 0x9C (4)
+	enum class Unknow LODSelectionType; // 0xA0 (1)
+	char bGenerateLightMapUV : 0; // 0xA1 (1)
+	char bComputedLightMapResolution : 0; // 0xA1 (1)
+	char bPivotPointAtZero : 0; // 0xA1 (1)
+	char bMergePhysicsData : 0; // 0xA1 (1)
+	char bMergeMaterials : 0; // 0xA1 (1)
+	char bCreateMergedMaterial : 0; // 0xA1 (1)
+	char bBakeVertexDataToMesh : 0; // 0xA1 (1)
+	char bUseVertexDataForBakingMaterial : 0; // 0xA1 (1)
+	char bUseTextureBinning : 0; // 0xA2 (1)
+	char bReuseMeshLightmapUVs : 0; // 0xA2 (1)
+	char bMergeEquivalentMaterials : 0; // 0xA2 (1)
+	char bUseLandscapeCulling : 0; // 0xA2 (1)
+	char bIncludeImposters : 0; // 0xA2 (1)
+	char bAllowDistanceField : 0; // 0xA2 (1)
+};
+
+// ScriptStruct Engine.MeshProxySettings
+struct FMeshProxySettings {
+	int32_t ScreenSize; // 0x0 (4)
+	float VoxelSize; // 0x4 (4)
+	struct Unknown MaterialSettings; // 0x8 (140)
+	float MergeDistance; // 0x94 (4)
+	struct Unknown UnresolvedGeometryColor; // 0x98 (4)
+	float MaxRayCastDist; // 0x9C (4)
+	float HardAngleThreshold; // 0xA0 (4)
+	int32_t LightMapResolution; // 0xA4 (4)
+	char NormalCalculationMethod; // 0xA8 (1)
+	char LandscapeCullingPrecision; // 0xA9 (1)
+	char bCalculateCorrectLODModel : 0; // 0xAA (1)
+	char bOverrideVoxelSize : 0; // 0xAA (1)
+	char bOverrideTransferDistance : 0; // 0xAA (1)
+	char bUseHardAngleThreshold : 0; // 0xAA (1)
+	char bComputeLightMapResolution : 0; // 0xAA (1)
+	char bRecalculateNormals : 0; // 0xAA (1)
+	char bUseLandscapeCulling : 0; // 0xAA (1)
+	char bAllowAdjacency : 0; // 0xAA (1)
+	char bAllowDistanceField : 0; // 0xAB (1)
+	char bReuseMeshLightmapUVs : 0; // 0xAB (1)
+	char bCreateCollision : 0; // 0xAB (1)
+	char bAllowVertexColors : 0; // 0xAB (1)
+	char bGenerateLightmapUVs : 0; // 0xAB (1)
+};
+
+// ScriptStruct Engine.MeshReductionSettings
+struct FMeshReductionSettings {
+	float PercentTriangles; // 0x0 (4)
+	float PercentVertices; // 0x4 (4)
+	float MaxDeviation; // 0x8 (4)
+	float PixelError; // 0xC (4)
+	float WeldingThreshold; // 0x10 (4)
+	float HardAngleThreshold; // 0x14 (4)
+	int32_t BaseLODModel; // 0x18 (4)
+	char SilhouetteImportance; // 0x1C (1)
+	char TextureImportance; // 0x1D (1)
+	char ShadingImportance; // 0x1E (1)
+	char bRecalculateNormals : 0; // 0x1F (1)
+	char bGenerateUniqueLightmapUVs : 0; // 0x1F (1)
+	char bKeepSymmetry : 0; // 0x1F (1)
+	char bVisibilityAided : 0; // 0x1F (1)
+	char bCullOccluded : 0; // 0x1F (1)
+	enum class Unknow TerminationCriterion; // 0x20 (1)
+	char VisibilityAggressiv; // 0x21 (1)
+	char VertexColorImportance; // 0x22 (1)
+};
+
+// ScriptStruct Engine.PurchaseInfo
+struct FPurchaseInfo {
+	struct FString Identifier; // 0x0 (16)
+	struct FString DisplayName; // 0x10 (16)
+	struct FString DisplayDescription; // 0x20 (16)
+	struct FString DisplayPrice; // 0x30 (16)
+};
+
+// ScriptStruct Engine.MK3DHighlightTargetEvent
+struct FMK3DHighlightTargetEvent {
+	struct FString ID; // 0x0 (16)
+	struct FString Group; // 0x10 (16)
+	struct FString MetaData; // 0x20 (16)
+	int32_t Time1; // 0x30 (4)
+	int32_t Time2; // 0x34 (4)
+	struct FString TargetNetGUID; // 0x38 (16)
+	struct FString TargetId; // 0x48 (16)
+	struct FString TargetName; // 0x58 (16)
+};
+
+// ScriptStruct Engine.MK3DTargetData
+struct FMK3DTargetData {
+	struct FString TargetNetGUID; // 0x0 (16)
+	struct FString TargetId; // 0x10 (16)
+	struct FString TargetName; // 0x20 (16)
+};
+
+// ScriptStruct Engine.MK3DHighlightKillEv
+struct FMK3DHighlightKillEv {
+	int32_t Time1; // 0x0 (4)
+	struct FString KillerName; // 0x8 (16)
+	float KillerAppearanceTime; // 0x18 (4)
+	struct FString VictimName; // 0x20 (16)
+};
+
+// ScriptStruct Engine.MK3DKillData
+struct FMK3DKillData {
+	struct FString VictimNetId; // 0x0 (16)
+	struct FString KillerName; // 0x10 (16)
+	float KillerAppearanceTime; // 0x20 (4)
+	struct FString VictimName; // 0x28 (16)
+};
+
+// ScriptStruct Engine.NameCurve
+struct FNameCurve : FIndexedCurve {
+	struct TArray<Unknown> Keys; // 0x68 (16)
+};
+
+// ScriptStruct Engine.NameCurveKey
+struct FNameCurveKey {
+	float Time; // 0x0 (4)
+	struct FName Value; // 0x4 (8)
+};
+
+// ScriptStruct Engine.NavDataConfig
+struct FNavDataConfig : FNavAgentProperties {
+	struct FName Name; // 0x30 (8)
+	struct Unknown Color; // 0x38 (4)
+	struct Unknown DefaultQueryExtent; // 0x3C (12)
+	struct Unknown* NavigationDataClass; // 0x48 (8)
+	struct TSoftClassPtr<UObject> NavDataClass; // 0x50 (40)
+};
+
+// ScriptStruct Engine.NavAgentSelector
+struct FNavAgentSelector {
+	char bSupportsAgent0 : 0; // 0x0 (1)
+	char bSupportsAgent1 : 0; // 0x0 (1)
+	char bSupportsAgent2 : 0; // 0x0 (1)
+	char bSupportsAgent3 : 0; // 0x0 (1)
+	char bSupportsAgent4 : 0; // 0x0 (1)
+	char bSupportsAgent5 : 0; // 0x0 (1)
+	char bSupportsAgent6 : 0; // 0x0 (1)
+	char bSupportsAgent7 : 0; // 0x0 (1)
+	char bSupportsAgent8 : 0; // 0x1 (1)
+	char bSupportsAgent9 : 0; // 0x1 (1)
+	char bSupportsAgent10 : 0; // 0x1 (1)
+	char bSupportsAgent11 : 0; // 0x1 (1)
+	char bSupportsAgent12 : 0; // 0x1 (1)
+	char bSupportsAgent13 : 0; // 0x1 (1)
+	char bSupportsAgent14 : 0; // 0x1 (1)
+	char bSupportsAgent15 : 0; // 0x1 (1)
+};
+
+// ScriptStruct Engine.NavigationLinkBase
+struct FNavigationLinkBase {
+	float LeftProjectHeight; // 0x0 (4)
+	float MaxFallDownLength; // 0x4 (4)
+	float SnapRadius; // 0xC (4)
+	float SnapHeight; // 0x10 (4)
+	struct Unknown SupportedAgents; // 0x14 (4)
+	char bSupportsAgent0 : 0; // 0x18 (1)
+	char bSupportsAgent1 : 0; // 0x18 (1)
+	char bSupportsAgent2 : 0; // 0x18 (1)
+	char bSupportsAgent3 : 0; // 0x18 (1)
+	char bSupportsAgent4 : 0; // 0x18 (1)
+	char bSupportsAgent5 : 0; // 0x18 (1)
+	char bSupportsAgent6 : 0; // 0x18 (1)
+	char bSupportsAgent7 : 0; // 0x18 (1)
+	char bSupportsAgent8 : 0; // 0x19 (1)
+	char bSupportsAgent9 : 0; // 0x19 (1)
+	char bSupportsAgent10 : 0; // 0x19 (1)
+	char bSupportsAgent11 : 0; // 0x19 (1)
+	char bSupportsAgent12 : 0; // 0x19 (1)
+	char bSupportsAgent13 : 0; // 0x19 (1)
+	char bSupportsAgent14 : 0; // 0x19 (1)
+	char bSupportsAgent15 : 0; // 0x19 (1)
+	char Direction; // 0x1C (1)
+	char bUseSnapHeight : 0; // 0x1D (1)
+	char bSnapToCheapestArea : 0; // 0x1D (1)
+	char bCustomFlag0 : 0; // 0x1D (1)
+	char bCustomFlag1 : 0; // 0x1D (1)
+	char bCustomFlag2 : 0; // 0x1D (1)
+	char bCustomFlag3 : 0; // 0x1D (1)
+	char bCustomFlag4 : 0; // 0x1D (1)
+	char bCustomFlag5 : 0; // 0x1D (1)
+	char bCustomFlag6 : 0; // 0x1E (1)
+	char bCustomFlag7 : 0; // 0x1E (1)
+	struct Unknown* AreaClass; // 0x20 (8)
+};
+
+// ScriptStruct Engine.NavigationSegmentLink
+struct FNavigationSegmentLink : FNavigationLinkBase {
+	struct Unknown LeftStart; // 0x30 (12)
+	struct Unknown LeftEnd; // 0x3C (12)
+	struct Unknown RightStart; // 0x48 (12)
+	struct Unknown RightEnd; // 0x54 (12)
+};
+
+// ScriptStruct Engine.NavigationLink
+struct FNavigationLink : FNavigationLinkBase {
+	struct Unknown Left; // 0x30 (12)
+	struct Unknown Right; // 0x3C (12)
+};
+
+// ScriptStruct Engine.ChannelDefinition
+struct FChannelDefinition {
+	struct FName ChannelName; // 0x0 (8)
+	struct FName ClassName; // 0x8 (8)
+	struct Unknown* ChannelClass; // 0x10 (8)
+	int32_t StaticChannelIndex; // 0x18 (4)
+	char bTickOnCreate : 0; // 0x1C (1)
+	char bServerOpen : 0; // 0x1D (1)
+	char bClientOpen : 0; // 0x1E (1)
+	char bInitialServer : 0; // 0x1F (1)
+	char bInitialClient : 0; // 0x20 (1)
+};
+
+// ScriptStruct Engine.PacketSimulationSettings
+struct FPacketSimulationSettings {
+	int32_t PktLoss; // 0x0 (4)
+	int32_t PktLossMaxSize; // 0x4 (4)
+	int32_t PktLossMinSize; // 0x8 (4)
+	int32_t PktOrder; // 0xC (4)
+	int32_t PktDup; // 0x10 (4)
+	int32_t PktLag; // 0x14 (4)
+	int32_t PktLagVariance; // 0x18 (4)
+	int32_t PktLagMin; // 0x1C (4)
+	int32_t PktLagMax; // 0x20 (4)
+	int32_t PktIncomingLagMin; // 0x24 (4)
+	int32_t PktIncomingLagMax; // 0x28 (4)
+	int32_t PktIncomingLoss; // 0x2C (4)
+	int32_t PktJitter; // 0x30 (4)
+};
+
+// ScriptStruct Engine.NetworkEmulationProfileDescription
+struct FNetworkEmulationProfileDescription {
+	struct FString ProfileName; // 0x0 (16)
+	struct FString Tooltip; // 0x10 (16)
+};
+
+// ScriptStruct Engine.NodeItem
+struct FNodeItem {
+	struct FName ParentName; // 0x0 (8)
+	struct Unknown Transform; // 0x10 (48)
+};
+
+// ScriptStruct Engine.ParticleBurst
+struct FParticleBurst {
+	int32_t Count; // 0x0 (4)
+	int32_t CountLow; // 0x4 (4)
+	float Time; // 0x8 (4)
+};
+
+// ScriptStruct Engine.ParticleRandomSeedInfo
+struct FParticleRandomSeedInfo {
+	struct FName ParameterName; // 0x0 (8)
+	char bGetSeedFromInstance : 0; // 0x8 (1)
+	char bInstanceSeedIsIndex : 0; // 0x8 (1)
+	char bResetSeedOnEmitterLooping : 0; // 0x8 (1)
+	char bRandomlySelectSeedArray : 0; // 0x8 (1)
+	struct TArray<Unknown> RandomSeeds; // 0x10 (16)
+};
+
+// ScriptStruct Engine.ParticleCurvePair
+struct FParticleCurvePair {
+	struct FString CurveName; // 0x0 (16)
+	struct Unknown CurveObject; // 0x10 (8)
+};
+
+// ScriptStruct Engine.BeamModifierOptions
+struct FBeamModifierOptions {
+	char bModify : 0; // 0x0 (1)
+	char bScale : 0; // 0x0 (1)
+	char bLock : 0; // 0x0 (1)
+};
+
+// ScriptStruct Engine.ParticleEvent_GenerateInfo
+struct FParticleEvent_GenerateInfo {
+	char Type; // 0x0 (1)
+	int32_t Frequency; // 0x4 (4)
+	int32_t ParticleFrequency; // 0x8 (4)
+	char FirstTimeOnly : 0; // 0xC (1)
+	char LastTimeOnly : 0; // 0xC (1)
+	char UseReflectedImpactVector : 0; // 0xC (1)
+	char bUseOrbitOffset : 0; // 0xC (1)
+	struct FName CustomName; // 0x10 (8)
+	struct TArray<Unknown> ParticleModuleEventsToSendToGame; // 0x18 (16)
+};
+
+// ScriptStruct Engine.LocationBoneSocketInfo
+struct FLocationBoneSocketInfo {
+	struct FName BoneSocketName; // 0x0 (8)
+	struct Unknown Offset; // 0x8 (12)
+};
+
+// ScriptStruct Engine.OrbitOptions
+struct FOrbitOptions {
+	char bProcessDuringSpawn : 0; // 0x0 (1)
+	char bProcessDuringUpdate : 0; // 0x0 (1)
+	char bUseEmitterTime : 0; // 0x0 (1)
+};
+
+// ScriptStruct Engine.EmitterDynamicParameter
+struct FEmitterDynamicParameter {
+	struct FName ParamName; // 0x0 (8)
+	char bUseEmitterTime : 0; // 0x8 (1)
+	char bSpawnTimeOnly : 0; // 0x8 (1)
+	char ValueMethod; // 0xC (1)
+	char bScaleVelocityByParamValue : 0; // 0x10 (1)
+	struct Unknown ParamValue; // 0x18 (48)
+};
+
+// ScriptStruct Engine.BeamTargetData
+struct FBeamTargetData {
+	struct FName TargetName; // 0x0 (8)
+	float TargetPercentage; // 0x8 (4)
+};
+
+// ScriptStruct Engine.GPUSpriteResourceData
+struct FGPUSpriteResourceData {
+	struct TArray<Unknown> QuantizedColorSamples; // 0x0 (16)
+	struct TArray<Unknown> QuantizedMiscSamples; // 0x10 (16)
+	struct TArray<Unknown> QuantizedSimulationAttrSamples; // 0x20 (16)
+	struct Unknown ColorScale; // 0x30 (16)
+	struct Unknown ColorBias; // 0x40 (16)
+	struct Unknown MiscScale; // 0x50 (16)
+	struct Unknown MiscBias; // 0x60 (16)
+	struct Unknown SimulationAttrCurveScale; // 0x70 (16)
+	struct Unknown SimulationAttrCurveBias; // 0x80 (16)
+	struct Unknown SubImageSize; // 0x90 (16)
+	struct Unknown SizeBySpeed; // 0xA0 (16)
+	struct Unknown ConstantAcceleration; // 0xB0 (12)
+	struct Unknown OrbitOffsetBase; // 0xBC (12)
+	struct Unknown OrbitOffsetRange; // 0xC8 (12)
+	struct Unknown OrbitFrequencyBase; // 0xD4 (12)
+	struct Unknown OrbitFrequencyRange; // 0xE0 (12)
+	struct Unknown OrbitPhaseBase; // 0xEC (12)
+	struct Unknown OrbitPhaseRange; // 0xF8 (12)
+	float GlobalVectorFieldScale; // 0x104 (4)
+	float GlobalVectorFieldTightness; // 0x108 (4)
+	float PerParticleVectorFieldScale; // 0x10C (4)
+	float PerParticleVectorFieldBias; // 0x110 (4)
+	float DragCoefficientScale; // 0x114 (4)
+	float DragCoefficientBias; // 0x118 (4)
+	float ResilienceScale; // 0x11C (4)
+	float ResilienceBias; // 0x120 (4)
+	float CollisionRadiusScale; // 0x124 (4)
+	float CollisionRadiusBias; // 0x128 (4)
+	float CollisionTimeBias; // 0x12C (4)
+	float CollisionRandomSpread; // 0x130 (4)
+	float CollisionRandomDistribution; // 0x134 (4)
+	float OneMinusFriction; // 0x138 (4)
+	float RotationRateScale; // 0x13C (4)
+	float CameraMotionBlurAmount; // 0x140 (4)
+	char ScreenAlignment; // 0x144 (1)
+	char LockAxisFlag; // 0x145 (1)
+	struct Unknown PivotOffset; // 0x148 (8)
+	char bRemoveHMDRoll : 0; // 0x150 (1)
+	float MinFacingCameraBlendDistance; // 0x154 (4)
+	float MaxFacingCameraBlendDistance; // 0x158 (4)
+};
+
+// ScriptStruct Engine.GPUSpriteEmitterInfo
+struct FGPUSpriteEmitterInfo {
+	struct Unknown RequiredModule; // 0x0 (8)
+	struct Unknown SpawnModule; // 0x8 (8)
+	struct Unknown SpawnPerUnitModule; // 0x10 (8)
+	struct TArray<Unknown> SpawnModules; // 0x18 (16)
+	struct Unknown LocalVectorField; // 0x30 (112)
+	struct Unknown VectorFieldScale; // 0xA0 (32)
+	struct Unknown DragCoefficient; // 0xC0 (32)
+	struct Unknown PointAttractorStrength; // 0xE0 (32)
+	struct Unknown Resilience; // 0x100 (32)
+	struct Unknown ConstantAcceleration; // 0x120 (12)
+	struct Unknown PointAttractorPosition; // 0x12C (12)
+	float PointAttractorRadiusSq; // 0x138 (4)
+	struct Unknown OrbitOffsetBase; // 0x13C (12)
+	struct Unknown OrbitOffsetRange; // 0x148 (12)
+	struct Unknown InvMaxSize; // 0x154 (8)
+	float InvRotationRateScale; // 0x15C (4)
+	float MaxLifetime; // 0x160 (4)
+	int32_t MaxParticleCount; // 0x164 (4)
+	char ScreenAlignment; // 0x168 (1)
+	char LockAxisFlag; // 0x169 (1)
+	char bEnableCollision : 0; // 0x16C (1)
+	char CollisionMode; // 0x170 (1)
+	char bRemoveHMDRoll : 0; // 0x174 (1)
+	float MinFacingCameraBlendDistance; // 0x178 (4)
+	float MaxFacingCameraBlendDistance; // 0x17C (4)
+	struct Unknown DynamicColor; // 0x180 (72)
+	struct Unknown DynamicAlpha; // 0x1C8 (48)
+	struct Unknown DynamicColorScale; // 0x1F8 (72)
+	struct Unknown DynamicAlphaScale; // 0x240 (48)
+};
+
+// ScriptStruct Engine.GPUSpriteLocalVectorFieldInfo
+struct FGPUSpriteLocalVectorFieldInfo {
+	struct Unknown Field; // 0x0 (8)
+	struct Unknown Transform; // 0x10 (48)
+	struct Unknown MinInitialRotation; // 0x40 (12)
+	struct Unknown MaxInitialRotation; // 0x4C (12)
+	struct Unknown RotationRate; // 0x58 (12)
+	float Intensity; // 0x64 (4)
+	float Tightness; // 0x68 (4)
+	char bIgnoreComponentTransform : 0; // 0x6C (1)
+	char bTileX : 0; // 0x6C (1)
+	char bTileY : 0; // 0x6C (1)
+	char bTileZ : 0; // 0x6C (1)
+	char bUseFixDT : 0; // 0x6C (1)
+};
+
+// ScriptStruct Engine.NamedEmitterMaterial
+struct FNamedEmitterMaterial {
+	struct FName Name; // 0x0 (8)
+	struct Unknown Material; // 0x8 (8)
+};
+
+// ScriptStruct Engine.LODSoloTrack
+struct FLODSoloTrack {
+	struct TArray<Unknown> SoloEnableSetting; // 0x0 (16)
+};
+
+// ScriptStruct Engine.ParticleSysParam
+struct FParticleSysParam {
+	struct FName Name; // 0x0 (8)
+	char ParamType; // 0x8 (1)
+	float Scalar; // 0xC (4)
+	float Scalar_Low; // 0x10 (4)
+	struct Unknown Vector; // 0x14 (12)
+	struct Unknown Vector_Low; // 0x20 (12)
+	struct Unknown Color; // 0x2C (4)
+	struct Unknown Actor; // 0x30 (8)
+	struct Unknown Material; // 0x38 (8)
+};
+
+// ScriptStruct Engine.PhysicalAnimationData
+struct FPhysicalAnimationData {
+	struct FName BodyName; // 0x0 (8)
+	char bIsLocalSimulation : 0; // 0x8 (1)
+	float OrientationStrength; // 0xC (4)
+	float AngularVelocityStrength; // 0x10 (4)
+	float PositionStrength; // 0x14 (4)
+	float VelocityStrength; // 0x18 (4)
+	float MaxLinearForce; // 0x1C (4)
+	float MaxAngularForce; // 0x20 (4)
+};
+
+// ScriptStruct Engine.TireFrictionScalePair
+struct FTireFrictionScalePair {
+	struct Unknown TireType; // 0x0 (8)
+	float FrictionScale; // 0x8 (4)
+};
+
+// ScriptStruct Engine.PhysicalAnimationProfile
+struct FPhysicalAnimationProfile {
+	struct FName ProfileName; // 0x0 (8)
+	struct Unknown PhysicalAnimationData; // 0x8 (36)
+};
+
+// ScriptStruct Engine.PhysicsConstraintProfileHandle
+struct FPhysicsConstraintProfileHandle {
+	struct Unknown ProfileProperties; // 0x0 (260)
+	struct FName ProfileName; // 0x104 (8)
+};
+
+// ScriptStruct Engine.ChaosPhysicsSettings
+struct FChaosPhysicsSettings {
+	enum class Unknow DefaultThreadingModel; // 0x0 (1)
+	enum class Unknow DedicatedThreadTickMode; // 0x1 (1)
+	enum class Unknow DedicatedThreadBufferMode; // 0x2 (1)
+};
+
+// ScriptStruct Engine.PhysicalSurfaceName
+struct FPhysicalSurfaceName {
+	char Type; // 0x0 (1)
+	struct FName Name; // 0x4 (8)
+};
+
+// ScriptStruct Engine.DelegateArray
+struct FDelegateArray {
+	struct TArray<Unknown> Delegates; // 0x0 (16)
+};
+
+// ScriptStruct Engine.TViewTarget
+struct FTViewTarget {
+	struct Unknown Target; // 0x0 (8)
+	struct Unknown POV; // 0x10 (1616)
+	struct Unknown PlayerState; // 0x660 (8)
+};
+
+// ScriptStruct Engine.CameraCacheEntry
+struct FCameraCacheEntry {
+	float Timestamp; // 0x0 (4)
+	struct Unknown POV; // 0x10 (1616)
+};
+
+// ScriptStruct Engine.InputActionSpeechMapping
+struct FInputActionSpeechMapping {
+	struct FName ActionName; // 0x0 (8)
+	struct FName SpeechKeyword; // 0x8 (8)
+};
+
+// ScriptStruct Engine.InputAxisKeyMapping
+struct FInputAxisKeyMapping {
+	struct FName AxisActionName; // 0x0 (8)
+	struct FName AxisName; // 0x8 (8)
+	float Scale; // 0x10 (4)
+	struct Unknown Key; // 0x18 (24)
+};
+
+// ScriptStruct Engine.InputAxisConfigEntry
+struct FInputAxisConfigEntry {
+	struct FName AxisKeyName; // 0x0 (8)
+	struct Unknown AxisProperties; // 0x8 (16)
+};
+
+// ScriptStruct Engine.InputAxisProperties
+struct FInputAxisProperties {
+	float DeadZone; // 0x0 (4)
+	float Sensitivity; // 0x4 (4)
+	float Exponent; // 0x8 (4)
+	char bInvert : 0; // 0xC (1)
+};
+
+// ScriptStruct Engine.KeyBind
+struct FKeyBind {
+	struct Unknown Key; // 0x0 (24)
+	struct FString Command; // 0x18 (16)
+	char Control : 0; // 0x28 (1)
+	char Shift : 0; // 0x28 (1)
+	char Alt : 0; // 0x28 (1)
+	char Cmd : 0; // 0x28 (1)
+	char bIgnoreCtrl : 0; // 0x28 (1)
+	char bIgnoreShift : 0; // 0x28 (1)
+	char bIgnoreAlt : 0; // 0x28 (1)
+	char bIgnoreCmd : 0; // 0x28 (1)
+	char bDisabled : 0; // 0x29 (1)
+};
+
+// ScriptStruct Engine.PlayerMuteList
+struct FPlayerMuteList {
+	char bHasVoiceHandshakeCompleted : 0; // 0x30 (1)
+	int32_t VoiceChannelIdx; // 0x34 (4)
+};
+
+// ScriptStruct Engine.PoseDataContainer
+struct FPoseDataContainer {
+	struct TArray<Unknown> PoseNames; // 0x0 (16)
+	struct TArray<Unknown> Tracks; // 0x10 (16)
+	struct TMap<Unknown, Unknown>Unknown TrackMap; // 0x20 (80)
+	struct TArray<Unknown> Poses; // 0x70 (16)
+	struct TArray<Unknown> Curves; // 0x80 (16)
+};
+
+// ScriptStruct Engine.PoseData
+struct FPoseData {
+	struct TArray<Unknown> LocalSpacePose; // 0x0 (16)
+	struct TMap<Unknown, Unknown>Unknown TrackToBufferIndex; // 0x10 (80)
+	struct TArray<Unknown> CurveData; // 0x60 (16)
+};
+
+// ScriptStruct Engine.PreviewAssetAttachContainer
+struct FPreviewAssetAttachContainer {
+	struct TArray<Unknown> AttachedObjects; // 0x0 (16)
+};
+
+// ScriptStruct Engine.PreviewAttachedObjectPair
+struct FPreviewAttachedObjectPair {
+	struct TSoftObjectPtr<Unknown> AttachedObject; // 0x0 (40)
+	struct Unknown Object; // 0x28 (8)
+	struct FName AttachedTo; // 0x30 (8)
+};
+
+// ScriptStruct Engine.PreviewMeshCollectionEntry
+struct FPreviewMeshCollectionEntry {
+	struct TSoftObjectPtr<Unknown> SkeletalMesh; // 0x0 (40)
+};
+
+// ScriptStruct Engine.PrimitiveComponentInstanceData
+struct FPrimitiveComponentInstanceData : FSceneComponentInstanceData {
+	struct Unknown ComponentTransform; // 0xB0 (48)
+	int32_t VisibilityId; // 0xE0 (4)
+	struct Unknown LODParent; // 0xE8 (8)
+};
+
+// ScriptStruct Engine.SpriteCategoryInfo
+struct FSpriteCategoryInfo {
+	struct FName Category; // 0x0 (8)
+	struct FText DisplayName; // 0x8 (24)
+	struct FText Description; // 0x20 (24)
+};
+
+// ScriptStruct Engine.ReverbSettings
+struct FReverbSettings {
+	char bApplyReverb : 0; // 0x0 (1)
+	struct Unknown ReverbEffect; // 0x8 (8)
+	struct Unknown ReverbPluginEffect; // 0x10 (8)
+	float Volume; // 0x18 (4)
+	float FadeTime; // 0x1C (4)
+};
+
+// ScriptStruct Engine.TransformBase
+struct FTransformBase {
+	struct FName Node; // 0x0 (8)
+	struct Unknown Constraints[0x2]; // 0x8 (32)
+};
+
+// ScriptStruct Engine.TransformBaseConstraint
+struct FTransformBaseConstraint {
+	struct TArray<Unknown> TransformConstraints; // 0x0 (16)
+};
+
+// ScriptStruct Engine.RigTransformConstraint
+struct FRigTransformConstraint {
+	char TranformType; // 0x0 (1)
+	struct FName ParentSpace; // 0x4 (8)
+	float Weight; // 0xC (4)
+};
+
+// ScriptStruct Engine.Node
+struct FNode {
+	struct FName Name; // 0x0 (8)
+	struct FName ParentName; // 0x8 (8)
+	struct Unknown Transform; // 0x10 (48)
+	struct FString DisplayName; // 0x40 (16)
+	char bAdvanced : 0; // 0x50 (1)
+};
+
+// ScriptStruct Engine.RootMotionSource
+struct FRootMotionSource {
+	uint16_t Priority; // 0x10 (2)
+	uint16_t LocalID; // 0x12 (2)
+	enum class Unknow AccumulateMode; // 0x14 (1)
+	struct FName InstanceName; // 0x18 (8)
+	float StartTime; // 0x20 (4)
+	float CurrentTime; // 0x24 (4)
+	float PreviousTime; // 0x28 (4)
+	float Duration; // 0x2C (4)
+	struct Unknown status; // 0x30 (1)
+	struct Unknown Settings; // 0x31 (1)
+	char bInLocalSpace : 0; // 0x32 (1)
+	struct Unknown RootMotionParams; // 0x40 (64)
+	struct Unknown FinishVelocityParams; // 0x80 (20)
+};
+
+// ScriptStruct Engine.RootMotionFinishVelocitySettings
+struct FRootMotionFinishVelocitySettings {
+	enum class Unknow Mode; // 0x0 (1)
+	struct Unknown SetVelocity; // 0x4 (12)
+	float ClampVelocity; // 0x10 (4)
+};
+
+// ScriptStruct Engine.RootMotionSourceStatus
+struct FRootMotionSourceStatus {
+	char Flags; // 0x0 (1)
+};
+
+// ScriptStruct Engine.RootMotionSource_JumpForce
+struct FRootMotionSource_JumpForce : FRootMotionSource {
+	struct Unknown Rotation; // 0x98 (12)
+	float Distance; // 0xA4 (4)
+	float Height; // 0xA8 (4)
+	char bDisableTimeout : 0; // 0xAC (1)
+	struct Unknown PathOffsetCurve; // 0xB0 (8)
+	struct Unknown TimeMappingCurve; // 0xB8 (8)
+};
+
+// ScriptStruct Engine.RootMotionSource_MoveToDynamicForce
+struct FRootMotionSource_MoveToDynamicForce : FRootMotionSource {
+	struct Unknown StartLocation; // 0x98 (12)
+	struct Unknown InitialTargetLocation; // 0xA4 (12)
+	struct Unknown TargetLocation; // 0xB0 (12)
+	char bRestrictSpeedToExpected : 0; // 0xBC (1)
+	struct Unknown PathOffsetCurve; // 0xC0 (8)
+	struct Unknown TimeMappingCurve; // 0xC8 (8)
+};
+
+// ScriptStruct Engine.RootMotionSource_MoveToForce
+struct FRootMotionSource_MoveToForce : FRootMotionSource {
+	struct Unknown StartLocation; // 0x98 (12)
+	struct Unknown TargetLocation; // 0xA4 (12)
+	char bRestrictSpeedToExpected : 0; // 0xB0 (1)
+	struct Unknown PathOffsetCurve; // 0xB8 (8)
+};
+
+// ScriptStruct Engine.RootMotionSource_RadialForce
+struct FRootMotionSource_RadialForce : FRootMotionSource {
+	struct Unknown Location; // 0x98 (12)
+	struct Unknown LocationActor; // 0xA8 (8)
+	float Radius; // 0xB0 (4)
+	float Strength; // 0xB4 (4)
+	char bIsPush : 0; // 0xB8 (1)
+	char bNoZForce : 0; // 0xB9 (1)
+	struct Unknown StrengthDistanceFalloff; // 0xC0 (8)
+	struct Unknown StrengthOverTime; // 0xC8 (8)
+	char bUseFixedWorldDirection : 0; // 0xD0 (1)
+	struct Unknown FixedWorldDirection; // 0xD4 (12)
+};
+
+// ScriptStruct Engine.RootMotionSource_ConstantForce
+struct FRootMotionSource_ConstantForce : FRootMotionSource {
+	struct Unknown Force; // 0x98 (12)
+	struct Unknown StrengthOverTime; // 0xA8 (8)
+};
+
+// ScriptStruct Engine.CameraExposureSettings
+struct FCameraExposureSettings {
+	char Method; // 0x0 (1)
+	float LowPercent; // 0x4 (4)
+	float HighPercent; // 0x8 (4)
+	float MinBrightness; // 0xC (4)
+	float MaxBrightness; // 0x10 (4)
+	float SpeedUp; // 0x14 (4)
+	float SpeedDown; // 0x18 (4)
+	float Bias; // 0x1C (4)
+	struct Unknown BiasCurve; // 0x20 (8)
+	struct Unknown MeterMask; // 0x28 (8)
+	float HistogramLogMin; // 0x30 (4)
+	float HistogramLogMax; // 0x34 (4)
+	float CalibrationConstant; // 0x38 (4)
+	char ApplyPhysicalCameraExposure : 0; // 0x3C (1)
+};
+
+// ScriptStruct Engine.LensSettings
+struct FLensSettings {
+	struct Unknown Bloom; // 0x0 (184)
+	struct Unknown Imperfections; // 0xB8 (32)
+	float ChromaticAberration; // 0xD8 (4)
+};
+
+// ScriptStruct Engine.LensImperfectionSettings
+struct FLensImperfectionSettings {
+	struct Unknown DirtMask; // 0x0 (8)
+	float DirtMaskIntensity; // 0x8 (4)
+	struct Unknown DirtMaskTint; // 0xC (16)
+};
+
+// ScriptStruct Engine.LensBloomSettings
+struct FLensBloomSettings {
+	struct Unknown GaussianSum; // 0x0 (132)
+	struct Unknown Convolution; // 0x88 (40)
+	char Method; // 0xB0 (1)
+};
+
+// ScriptStruct Engine.ConvolutionBloomSettings
+struct FConvolutionBloomSettings {
+	struct Unknown Texture; // 0x0 (8)
+	float Size; // 0x8 (4)
+	struct Unknown CenterUV; // 0xC (8)
+	float PreFilterMin; // 0x14 (4)
+	float PreFilterMax; // 0x18 (4)
+	float PreFilterMult; // 0x1C (4)
+	float BufferScale; // 0x20 (4)
+};
+
+// ScriptStruct Engine.GaussianSumBloomSettings
+struct FGaussianSumBloomSettings {
+	float Intensity; // 0x0 (4)
+	float threshold; // 0x4 (4)
+	float SizeScale; // 0x8 (4)
+	float Filter1Size; // 0xC (4)
+	float Filter2Size; // 0x10 (4)
+	float Filter3Size; // 0x14 (4)
+	float Filter4Size; // 0x18 (4)
+	float Filter5Size; // 0x1C (4)
+	float Filter6Size; // 0x20 (4)
+	struct Unknown Filter1Tint; // 0x24 (16)
+	struct Unknown Filter2Tint; // 0x34 (16)
+	struct Unknown Filter3Tint; // 0x44 (16)
+	struct Unknown Filter4Tint; // 0x54 (16)
+	struct Unknown Filter5Tint; // 0x64 (16)
+	struct Unknown Filter6Tint; // 0x74 (16)
+};
+
+// ScriptStruct Engine.FilmStockSettings
+struct FFilmStockSettings {
+	float Slope; // 0x0 (4)
+	float Toe; // 0x4 (4)
+	float Shoulder; // 0x8 (4)
+	float BlackClip; // 0xC (4)
+	float WhiteClip; // 0x10 (4)
+};
+
+// ScriptStruct Engine.ColorGradingSettings
+struct FColorGradingSettings {
+	struct Unknown Global; // 0x0 (80)
+	struct Unknown Shadows; // 0x50 (80)
+	struct Unknown Midtones; // 0xA0 (80)
+	struct Unknown Highlights; // 0xF0 (80)
+	float ShadowsMax; // 0x140 (4)
+	float HighlightsMin; // 0x144 (4)
+};
+
+// ScriptStruct Engine.ColorGradePerRangeSettings
+struct FColorGradePerRangeSettings {
+	struct Unknown Saturation; // 0x0 (16)
+	struct Unknown Contrast; // 0x10 (16)
+	struct Unknown Gamma; // 0x20 (16)
+	struct Unknown Gain; // 0x30 (16)
+	struct Unknown Offset; // 0x40 (16)
+};
+
+// ScriptStruct Engine.EngineShowFlagsSetting
+struct FEngineShowFlagsSetting {
+	struct FString ShowFlagName; // 0x0 (16)
+	char Enabled : 0; // 0x10 (1)
+};
+
+// ScriptStruct Engine.SimpleCurve
+struct FSimpleCurve : FRealCurve {
+	char InterpMode; // 0x70 (1)
+	struct TArray<Unknown> Keys; // 0x78 (16)
+};
+
+// ScriptStruct Engine.SimpleCurveKey
+struct FSimpleCurveKey {
+	float Time; // 0x0 (4)
+	float Value; // 0x4 (4)
+};
+
+// ScriptStruct Engine.SingleAnimationPlayData
+struct FSingleAnimationPlayData {
+	struct Unknown AnimToPlay; // 0x0 (8)
+	char bSavedLooping : 0; // 0x8 (1)
+	char bSavedPlaying : 0; // 0x8 (1)
+	float SavedPosition; // 0xC (4)
+	float SavedPlayRate; // 0x10 (4)
+};
+
+// ScriptStruct Engine.SkeletalMaterial
+struct FSkeletalMaterial {
+	struct Unknown MaterialInterface; // 0x0 (8)
+	struct FName MaterialSlotName; // 0x8 (8)
+	struct Unknown UVChannelData; // 0x10 (20)
+};
+
+// ScriptStruct Engine.ClothingAssetData_Legacy
+struct FClothingAssetData_Legacy {
+	struct FName AssetName; // 0x0 (8)
+	struct FString ApexFileName; // 0x8 (16)
+	char bClothPropertiesChanged : 0; // 0x18 (1)
+	struct Unknown PhysicsProperties; // 0x1C (80)
+};
+
+// ScriptStruct Engine.ClothPhysicsProperties_Legacy
+struct FClothPhysicsProperties_Legacy {
+	float VerticalResistance; // 0x0 (4)
+	float HorizontalResistance; // 0x4 (4)
+	float BendResistance; // 0x8 (4)
+	float ShearResistance; // 0xC (4)
+	float Friction; // 0x10 (4)
+	float Damping; // 0x14 (4)
+	float TetherStiffness; // 0x18 (4)
+	float TetherLimit; // 0x1C (4)
+	float Drag; // 0x20 (4)
+	float StiffnessFrequency; // 0x24 (4)
+	float GravityScale; // 0x28 (4)
+	float MassScale; // 0x2C (4)
+	float InertiaBlend; // 0x30 (4)
+	float SelfCollisionThickness; // 0x34 (4)
+	float SelfCollisionSquashScale; // 0x38 (4)
+	float SelfCollisionStiffness; // 0x3C (4)
+	float SolverFrequency; // 0x40 (4)
+	float FiberCompression; // 0x44 (4)
+	float FiberExpansion; // 0x48 (4)
+	float FiberResistance; // 0x4C (4)
+};
+
+// ScriptStruct Engine.SkeletalMeshLODInfo
+struct FSkeletalMeshLODInfo {
+	struct Unknown ScreenSize; // 0x0 (4)
+	float LODHysteresis; // 0x4 (4)
+	struct TArray<Unknown> LODMaterialMap; // 0x8 (16)
+	struct Unknown BuildSettings; // 0x18 (20)
+	struct Unknown ReductionSettings; // 0x2C (60)
+	struct TArray<Unknown> BonesToRemove; // 0x68 (16)
+	struct TArray<Unknown> BonesToPrioritize; // 0x78 (16)
+	float WeightOfPrioritization; // 0x88 (4)
+	struct Unknown BakePose; // 0x90 (8)
+	struct Unknown BakePoseOverride; // 0x98 (8)
+	struct FString SourceImportFilename; // 0xA0 (16)
+	enum class Unknow SkinCacheUsage; // 0xB0 (1)
+	char bHasBeenSimplified : 0; // 0xB1 (1)
+	char bHasPerLODVertexColors : 0; // 0xB1 (1)
+	char bAllowCPUAccess : 0; // 0xB1 (1)
+	char bSupportUniformlyDistributedSampling : 0; // 0xB1 (1)
+};
+
+// ScriptStruct Engine.SkeletalMeshOptimizationSettings
+struct FSkeletalMeshOptimizationSettings {
+	char TerminationCriterion; // 0x0 (1)
+	float NumOfTrianglesPercentage; // 0x4 (4)
+	float NumOfVertPercentage; // 0x8 (4)
+	uint32_t MaxNumOfTriangles; // 0xC (4)
+	uint32_t MaxNumOfVerts; // 0x10 (4)
+	float MaxDeviationPercentage; // 0x14 (4)
+	char ReductionMethod; // 0x18 (1)
+	char SilhouetteImportance; // 0x19 (1)
+	char TextureImportance; // 0x1A (1)
+	char ShadingImportance; // 0x1B (1)
+	char SkinningImportance; // 0x1C (1)
+	char bRemapMorphTargets : 0; // 0x1D (1)
+	char bRecalcNormals : 0; // 0x1D (1)
+	float WeldingThreshold; // 0x20 (4)
+	float NormalsThreshold; // 0x24 (4)
+	int32_t MaxBonesPerVertex; // 0x28 (4)
+	char bEnforceBoneBoundaries : 0; // 0x2C (1)
+	float VolumeImportance; // 0x30 (4)
+	char bLockEdges : 0; // 0x34 (1)
+	char bLockColorBounaries : 0; // 0x34 (1)
+	int32_t BaseLOD; // 0x38 (4)
+};
+
+// ScriptStruct Engine.SkeletalMeshClothBuildParams
+struct FSkeletalMeshClothBuildParams {
+	struct TWeakObjectPtr<struct Unknown> TargetAsset; // 0x0 (8)
+	int32_t TargetLod; // 0x8 (4)
+	char bRemapParameters : 0; // 0xC (1)
+	struct FString AssetName; // 0x10 (16)
+	int32_t LODIndex; // 0x20 (4)
+	int32_t SourceSection; // 0x24 (4)
+	char bRemoveFromMesh : 0; // 0x28 (1)
+	struct TSoftObjectPtr<Unknown> PhysicsAsset; // 0x30 (40)
+};
+
+// ScriptStruct Engine.BoneMirrorExport
+struct FBoneMirrorExport {
+	struct FName BoneName; // 0x0 (8)
+	struct FName SourceBoneName; // 0x8 (8)
+	char BoneFlipAxis; // 0x10 (1)
+};
+
+// ScriptStruct Engine.BoneMirrorInfo
+struct FBoneMirrorInfo {
+	int32_t SourceIndex; // 0x0 (4)
+	char BoneFlipAxis; // 0x4 (1)
+};
+
+// ScriptStruct Engine.SkeletalMeshLODGroupSettings
+struct FSkeletalMeshLODGroupSettings {
+	struct Unknown ScreenSize; // 0x0 (4)
+	float LODHysteresis; // 0x4 (4)
+	enum class Unknow BoneFilterActionOption; // 0x8 (1)
+	struct TArray<Unknown> BoneList; // 0x10 (16)
+	struct TArray<Unknown> BonesToPrioritize; // 0x20 (16)
+	float WeightOfPrioritization; // 0x30 (4)
+	struct Unknown BakePose; // 0x38 (8)
+	struct Unknown ReductionSettings; // 0x40 (60)
+};
+
+// ScriptStruct Engine.BoneFilter
+struct FBoneFilter {
+	char bExcludeSelf : 0; // 0x0 (1)
+	struct FName BoneName; // 0x4 (8)
+};
+
+// ScriptStruct Engine.SkeletalMeshSamplingInfo
+struct FSkeletalMeshSamplingInfo {
+	struct TArray<Unknown> Regions; // 0x0 (16)
+	struct Unknown BuiltData; // 0x10 (32)
+};
+
+// ScriptStruct Engine.SkeletalMeshSamplingBuiltData
+struct FSkeletalMeshSamplingBuiltData {
+	struct TArray<Unknown> WholeMeshBuiltData; // 0x0 (16)
+	struct TArray<Unknown> RegionBuiltData; // 0x10 (16)
+};
+
+// ScriptStruct Engine.SkeletalMeshSamplingRegion
+struct FSkeletalMeshSamplingRegion {
+	struct FName Name; // 0x0 (8)
+	int32_t LODIndex; // 0x8 (4)
+	char bSupportUniformlyDistributedSampling : 0; // 0xC (1)
+	struct TArray<Unknown> MaterialFilters; // 0x10 (16)
+	struct TArray<Unknown> BoneFilters; // 0x20 (16)
+};
+
+// ScriptStruct Engine.SkeletalMeshSamplingRegionBoneFilter
+struct FSkeletalMeshSamplingRegionBoneFilter {
+	struct FName BoneName; // 0x0 (8)
+	char bIncludeOrExclude : 0; // 0x8 (1)
+	char bApplyToChildren : 0; // 0x8 (1)
+};
+
+// ScriptStruct Engine.SkeletalMeshSamplingRegionMaterialFilter
+struct FSkeletalMeshSamplingRegionMaterialFilter {
+	struct FName MaterialName; // 0x0 (8)
+};
+
+// ScriptStruct Engine.VirtualBone
+struct FVirtualBone {
+	struct FName SourceBoneName; // 0x0 (8)
+	struct FName TargetBoneName; // 0x8 (8)
+	struct FName VirtualBoneName; // 0x10 (8)
+};
+
+// ScriptStruct Engine.AnimSlotGroup
+struct FAnimSlotGroup {
+	struct FName GroupName; // 0x0 (8)
+	struct TArray<Unknown> SlotNames; // 0x8 (16)
+};
+
+// ScriptStruct Engine.RigConfiguration
+struct FRigConfiguration {
+	struct Unknown Rig; // 0x0 (8)
+	struct TArray<Unknown> BoneMappingTable; // 0x8 (16)
+};
+
+// ScriptStruct Engine.NameMapping
+struct FNameMapping {
+	struct FName NodeName; // 0x0 (8)
+	struct FName BoneName; // 0x8 (8)
+};
+
+// ScriptStruct Engine.BoneReductionSetting
+struct FBoneReductionSetting {
+	struct TArray<Unknown> BonesToRemove; // 0x0 (16)
+};
+
+// ScriptStruct Engine.ReferencePose
+struct FReferencePose {
+	struct FName PoseName; // 0x0 (8)
+	struct TArray<Unknown> ReferencePose; // 0x8 (16)
+};
+
+// ScriptStruct Engine.BoneNode
+struct FBoneNode {
+	struct FName Name; // 0x0 (8)
+	int32_t ParentIndex; // 0x8 (4)
+	char TranslationRetargetingMode; // 0xC (1)
+};
+
+// ScriptStruct Engine.SkeletonToMeshLinkup
+struct FSkeletonToMeshLinkup {
+	struct TArray<Unknown> SkeletonToMeshTable; // 0x0 (16)
+	struct TArray<Unknown> MeshToSkeletonTable; // 0x10 (16)
+};
+
+// ScriptStruct Engine.SkelMeshComponentLODInfo
+struct FSkelMeshComponentLODInfo {
+	struct TArray<Unknown> HiddenMaterials; // 0x0 (16)
+};
+
+// ScriptStruct Engine.SkelMeshSkinWeightInfo
+struct FSkelMeshSkinWeightInfo {
+	int32_t Bones[0xc]; // 0x0 (48)
+	char Weights[0xc]; // 0x30 (12)
+};
+
+// ScriptStruct Engine.SkinWeightProfileInfo
+struct FSkinWeightProfileInfo {
+	struct FName Name; // 0x0 (8)
+	struct Unknown DefaultProfile; // 0x8 (1)
+	struct Unknown DefaultProfileFromLODIndex; // 0xC (4)
+};
+
+// ScriptStruct Engine.TentDistribution
+struct FTentDistribution {
+	float TipAltitude; // 0x0 (4)
+	float TipValue; // 0x4 (4)
+	float Width; // 0x8 (4)
+};
+
+// ScriptStruct Engine.PrecomputedSkyLightInstanceData
+struct FPrecomputedSkyLightInstanceData : FSceneComponentInstanceData {
+	struct Unknown LightGuid; // 0xA8 (16)
+	float AverageBrightness; // 0xB8 (4)
+};
+
+// ScriptStruct Engine.SoundAttenuationSettings
+struct FSoundAttenuationSettings : FBaseAttenuationSettings {
+	char bAttenuate : 0; // 0xB0 (1)
+	char bSpatialize : 0; // 0xB0 (1)
+	char bAttenuateWithLPF : 0; // 0xB0 (1)
+	char bEnableListenerFocus : 0; // 0xB0 (1)
+	char bEnableFocusInterpolation : 0; // 0xB0 (1)
+	char bEnableOcclusion : 0; // 0xB0 (1)
+	char bUseComplexCollisionForOcclusion : 0; // 0xB0 (1)
+	char bEnableReverbSend : 0; // 0xB0 (1)
+	char bEnablePriorityAttenuation : 0; // 0xB1 (1)
+	char bApplyNormalizationToStereoSounds : 0; // 0xB1 (1)
+	char bEnableLogFrequencyScaling : 0; // 0xB1 (1)
+	char bEnableSubmixSends : 0; // 0xB1 (1)
+	char SpatializationAlgorithm; // 0xB2 (1)
+	float BinauralRadius; // 0xB4 (4)
+	enum class Unknow AbsorptionMethod; // 0xB8 (1)
+	char OcclusionTraceChannel; // 0xB9 (1)
+	enum class Unknow ReverbSendMethod; // 0xBA (1)
+	enum class Unknow PriorityAttenuationMethod; // 0xBB (1)
+	float OmniRadius; // 0xBC (4)
+	float StereoSpread; // 0xC0 (4)
+	float LPFRadiusMin; // 0xC4 (4)
+	float LPFRadiusMax; // 0xC8 (4)
+	struct Unknown CustomLowpassAirAbsorptionCurve; // 0xD0 (136)
+	struct Unknown CustomHighpassAirAbsorptionCurve; // 0x158 (136)
+	float LPFFrequencyAtMin; // 0x1E0 (4)
+	float LPFFrequencyAtMax; // 0x1E4 (4)
+	float HPFFrequencyAtMin; // 0x1E8 (4)
+	float HPFFrequencyAtMax; // 0x1EC (4)
+	float FocusAzimuth; // 0x1F0 (4)
+	float NonFocusAzimuth; // 0x1F4 (4)
+	float FocusDistanceScale; // 0x1F8 (4)
+	float NonFocusDistanceScale; // 0x1FC (4)
+	float FocusPriorityScale; // 0x200 (4)
+	float NonFocusPriorityScale; // 0x204 (4)
+	float FocusVolumeAttenuation; // 0x208 (4)
+	float NonFocusVolumeAttenuation; // 0x20C (4)
+	float FocusAttackInterpSpeed; // 0x210 (4)
+	float FocusReleaseInterpSpeed; // 0x214 (4)
+	float OcclusionLowPassFilterFrequency; // 0x218 (4)
+	float OcclusionVolumeAttenuation; // 0x21C (4)
+	float OcclusionInterpolationTime; // 0x220 (4)
+	float ReverbWetLevelMin; // 0x224 (4)
+	float ReverbWetLevelMax; // 0x228 (4)
+	float ReverbDistanceMin; // 0x22C (4)
+	float ReverbDistanceMax; // 0x230 (4)
+	float ManualReverbSendLev; // 0x234 (4)
+	struct Unknown CustomReverbSendCurve; // 0x238 (136)
+	struct TArray<Unknown> SubmixSendSettings; // 0x2C0 (16)
+	float PriorityAttenuationMin; // 0x2D0 (4)
+	float PriorityAttenuationMax; // 0x2D4 (4)
+	float PriorityAttenuationDistanceMin; // 0x2D8 (4)
+	float PriorityAttenuationDistanceMax; // 0x2DC (4)
+	float ManualPriorityAttenuation; // 0x2E0 (4)
+	struct Unknown CustomPriorityAttenuationCurve; // 0x2E8 (136)
+	struct Unknown PluginSettings; // 0x370 (48)
+};
+
+// ScriptStruct Engine.SoundAttenuationPluginSettings
+struct FSoundAttenuationPluginSettings {
+	struct TArray<Unknown> SpatializationPluginSettingsArray; // 0x0 (16)
+	struct TArray<Unknown> OcclusionPluginSettingsArray; // 0x10 (16)
+	struct TArray<Unknown> ReverbPluginSettingsArray; // 0x20 (16)
+};
+
+// ScriptStruct Engine.AttenuationSubmixSendSettings
+struct FAttenuationSubmixSendSettings {
+	struct Unknown Submix; // 0x0 (8)
+	enum class Unknow SubmixSendMethod; // 0x8 (1)
+	float SubmixSendLevelMin; // 0xC (4)
+	float SubmixSendLevelMax; // 0x10 (4)
+	float SubmixSendDistanceMin; // 0x14 (4)
+	float SubmixSendDistanceMax; // 0x18 (4)
+	float ManualSubmixSendLev; // 0x1C (4)
+	struct Unknown CustomSubmixSendCurve; // 0x20 (136)
+};
+
+// ScriptStruct Engine.PassiveSoundMixModifier
+struct FPassiveSoundMixModifier {
+	struct Unknown SoundMix; // 0x0 (8)
+	float MinVolumeThreshold; // 0x8 (4)
+	float MaxVolumeThreshold; // 0xC (4)
+};
+
+// ScriptStruct Engine.SoundClassProperties
+struct FSoundClassProperties {
+	float Volume; // 0x0 (4)
+	float Pitch; // 0x4 (4)
+	float LowPassFilterFrequency; // 0x8 (4)
+	float AttenuationDistanceScale; // 0xC (4)
+	float StereoBleed; // 0x10 (4)
+	float LFEBleed; // 0x14 (4)
+	float VoiceCenterChannelVolume; // 0x18 (4)
+	float RadioFilterVolume; // 0x1C (4)
+	float RadioFilterVolumeThreshold; // 0x20 (4)
+	char bApplyEffects : 0; // 0x24 (1)
+	char bAlwaysPlay : 0; // 0x24 (1)
+	char bIsUISound : 0; // 0x24 (1)
+	char bIsMusic : 0; // 0x24 (1)
+	char bCenterChannelOnly : 0; // 0x24 (1)
+	char bApplyAmbientVolumes : 0; // 0x24 (1)
+	char bReverb : 0; // 0x24 (1)
+	float Default2DReverbSendAmount; // 0x28 (4)
+	char OutputTarget; // 0x2C (1)
+	enum class Unknow LoadingBehavior; // 0x2D (1)
+	struct Unknown DefaultSubmix; // 0x30 (8)
+};
+
+// ScriptStruct Engine.SoundConcurrencySettings
+struct FSoundConcurrencySettings {
+	int32_t MaxCount; // 0x0 (4)
+	char bLimitToOwner : 0; // 0x4 (1)
+	char ResolutionRule; // 0x8 (1)
+	float VolumeScale; // 0xC (4)
+	float VolumeScaleAttackTime; // 0x10 (4)
+	char bVolumeScaleCanRelease : 0; // 0x14 (1)
+	float VolumeScaleReleaseTime; // 0x18 (4)
+	float VoiceStealReleaseTime; // 0x1C (4)
+};
+
+// ScriptStruct Engine.SourceEffectChainEntry
+struct FSourceEffectChainEntry {
+	struct Unknown Preset; // 0x0 (8)
+	char bBypass : 0; // 0x8 (1)
+};
+
+// ScriptStruct Engine.SoundGroup
+struct FSoundGroup {
+	char SoundGroup; // 0x0 (1)
+	struct FString DisplayName; // 0x8 (16)
+	char bAlwaysDecompressOnLoad : 0; // 0x18 (1)
+	float DecompressedDuration; // 0x1C (4)
+};
+
+// ScriptStruct Engine.SoundClassAdjuster
+struct FSoundClassAdjuster {
+	struct Unknown SoundClassObject; // 0x0 (8)
+	float VolumeAdjuster; // 0x8 (4)
+	float PitchAdjuster; // 0xC (4)
+	float LowPassFilterFrequency; // 0x10 (4)
+	char bApplyToChildren : 0; // 0x14 (1)
+	float VoiceCenterChannelVolumeAdjuster; // 0x18 (4)
+};
+
+// ScriptStruct Engine.AudioEQEffect
+struct FAudioEQEffect : FAudioEffectParameters {
+	float FrequencyCenter0; // 0x10 (4)
+	float Gain0; // 0x14 (4)
+	float Bandwidth0; // 0x18 (4)
+	float FrequencyCenter1; // 0x1C (4)
+	float Gain1; // 0x20 (4)
+	float Bandwidth1; // 0x24 (4)
+	float FrequencyCenter2; // 0x28 (4)
+	float Gain2; // 0x2C (4)
+	float Bandwidth2; // 0x30 (4)
+	float FrequencyCenter3; // 0x34 (4)
+	float Gain3; // 0x38 (4)
+	float Bandwidth3; // 0x3C (4)
+};
+
+// ScriptStruct Engine.DistanceDatum
+struct FDistanceDatum {
+	float FadeInDistanceStart; // 0x0 (4)
+	float FadeInDistanceEnd; // 0x4 (4)
+	float FadeOutDistanceStart; // 0x8 (4)
+	float FadeOutDistanceEnd; // 0xC (4)
+	float Volume; // 0x10 (4)
+};
+
+// ScriptStruct Engine.ModulatorContinuousParams
+struct FModulatorContinuousParams {
+	struct FName ParameterName; // 0x0 (8)
+	float Default; // 0x8 (4)
+	float MinInput; // 0xC (4)
+	float MaxInput; // 0x10 (4)
+	float MinOutput; // 0x14 (4)
+	float MaxOutput; // 0x18 (4)
+	char ParamMode; // 0x1C (1)
+};
+
+// ScriptStruct Engine.SoundSourceBusSendInfo
+struct FSoundSourceBusSendInfo {
+	enum class Unknow SourceBusSendLevelControlMethod; // 0x0 (1)
+	struct Unknown SoundSourceBus; // 0x8 (8)
+	float SendLevel; // 0x10 (4)
+	float MinSendLevel; // 0x14 (4)
+	float MaxSendLevel; // 0x18 (4)
+	float MinSendDistance; // 0x1C (4)
+	float MaxSendDistance; // 0x20 (4)
+	struct Unknown CustomSendLevelCurv; // 0x28 (136)
+};
+
+// ScriptStruct Engine.SoundSubmixSendInfo
+struct FSoundSubmixSendInfo {
+	enum class Unknow SendLevelControlMethod; // 0x0 (1)
+	struct Unknown SoundSubmix; // 0x8 (8)
+	float SendLevel; // 0x10 (4)
+	float MinSendLevel; // 0x14 (4)
+	float MaxSendLevel; // 0x18 (4)
+	float MinSendDistance; // 0x1C (4)
+	float MaxSendDistance; // 0x20 (4)
+	struct Unknown CustomSendLevelCurv; // 0x28 (136)
+};
+
+// ScriptStruct Engine.SoundWaveEnvelopeTimeData
+struct FSoundWaveEnvelopeTimeData {
+	float Amplitude; // 0x0 (4)
+	float TimeSec; // 0x4 (4)
+};
+
+// ScriptStruct Engine.SoundWaveSpectralTimeData
+struct FSoundWaveSpectralTimeData {
+	struct TArray<Unknown> Data; // 0x0 (16)
+	float TimeSec; // 0x10 (4)
+};
+
+// ScriptStruct Engine.SoundWaveSpectralDataEntry
+struct FSoundWaveSpectralDataEntry {
+	float Magnitude; // 0x0 (4)
+	float NormalizedMagnitude; // 0x4 (4)
+};
+
+// ScriptStruct Engine.SoundWaveEnvelopeDataPerSound
+struct FSoundWaveEnvelopeDataPerSound {
+	float Envelope; // 0x0 (4)
+	float PlaybackTime; // 0x4 (4)
+	struct Unknown SoundWave; // 0x8 (8)
+};
+
+// ScriptStruct Engine.SoundWaveSpectralDataPerSound
+struct FSoundWaveSpectralDataPerSound {
+	struct TArray<Unknown> SpectralData; // 0x0 (16)
+	float PlaybackTime; // 0x10 (4)
+	struct Unknown SoundWave; // 0x18 (8)
+};
+
+// ScriptStruct Engine.SoundWaveSpectralData
+struct FSoundWaveSpectralData {
+	float FrequencyHz; // 0x0 (4)
+	float Magnitude; // 0x4 (4)
+	float NormalizedMagnitude; // 0x8 (4)
+};
+
+// ScriptStruct Engine.SplineInstanceData
+struct FSplineInstanceData : FSceneComponentInstanceData {
+	char bSplineHasBeenEdited : 0; // 0xA8 (1)
+	struct Unknown SplineCurves; // 0xB0 (104)
+	struct Unknown SplineCurvesPreUCS; // 0x118 (104)
+};
+
+// ScriptStruct Engine.SplineCurves
+struct FSplineCurves {
+	struct Unknown Position; // 0x0 (24)
+	struct Unknown Rotation; // 0x18 (24)
+	struct Unknown Scale; // 0x30 (24)
+	struct Unknown ReparamTable; // 0x48 (24)
+	struct Unknown MetaData; // 0x60 (8)
+};
+
+// ScriptStruct Engine.SplinePoint
+struct FSplinePoint {
+	float InputKey; // 0x0 (4)
+	struct Unknown Position; // 0x4 (12)
+	struct Unknown ArriveTangent; // 0x10 (12)
+	struct Unknown LeaveTangent; // 0x1C (12)
+	struct Unknown Rotation; // 0x28 (12)
+	struct Unknown Scale; // 0x34 (12)
+	char Type; // 0x40 (1)
+};
+
+// ScriptStruct Engine.SplineMeshInstanceData
+struct FSplineMeshInstanceData : FSceneComponentInstanceData {
+	struct Unknown StartPos; // 0xA8 (12)
+	struct Unknown EndPos; // 0xB4 (12)
+	struct Unknown StartTangent; // 0xC0 (12)
+	struct Unknown EndTangent; // 0xCC (12)
+};
+
+// ScriptStruct Engine.SplineMeshParams
+struct FSplineMeshParams {
+	struct Unknown StartPos; // 0x0 (12)
+	struct Unknown StartTangent; // 0xC (12)
+	struct Unknown StartScale; // 0x18 (8)
+	float StartRoll; // 0x20 (4)
+	struct Unknown StartOffset; // 0x24 (8)
+	struct Unknown EndPos; // 0x2C (12)
+	struct Unknown EndScale; // 0x38 (8)
+	struct Unknown EndTangent; // 0x40 (12)
+	float EndRoll; // 0x4C (4)
+	struct Unknown EndOffset; // 0x50 (8)
+};
+
+// ScriptStruct Engine.MaterialRemapIndex
+struct FMaterialRemapIndex {
+	uint32_t ImportVersionKey; // 0x0 (4)
+	struct TArray<Unknown> MaterialRemap; // 0x8 (16)
+};
+
+// ScriptStruct Engine.StaticMaterial
+struct FStaticMaterial {
+	struct Unknown MaterialInterface; // 0x0 (8)
+	struct FName MaterialSlotName; // 0x8 (8)
+	struct FName ImportedMaterialSlotName; // 0x10 (8)
+	struct Unknown UVChannelData; // 0x18 (20)
+};
+
+// ScriptStruct Engine.AssetEditorOrbitCameraPosition
+struct FAssetEditorOrbitCameraPosition {
+	char bIsSet : 0; // 0x0 (1)
+	struct Unknown CamOrbitPoint; // 0x4 (12)
+	struct Unknown CamOrbitZoom; // 0x10 (12)
+	struct Unknown CamOrbitRotation; // 0x1C (12)
+};
+
+// ScriptStruct Engine.MeshSectionInfoMap
+struct FMeshSectionInfoMap {
+	struct TMap<Unknown, Unknown>Unknown Map; // 0x0 (80)
+};
+
+// ScriptStruct Engine.MeshSectionInfo
+struct FMeshSectionInfo {
+	int32_t MaterialIndex; // 0x0 (4)
+	char bEnableCollision : 0; // 0x4 (1)
+	char bCastShadow : 0; // 0x5 (1)
+	char bForceOpaque : 0; // 0x6 (1)
+	char bHidden : 0; // 0x7 (1)
+};
+
+// ScriptStruct Engine.StaticMeshSourceModel
+struct FStaticMeshSourceModel {
+	struct Unknown BuildSettings; // 0x0 (48)
+	struct Unknown ReductionSettings; // 0x30 (36)
+	float LODDistance; // 0x54 (4)
+	struct Unknown ScreenSize; // 0x58 (4)
+	struct FString SourceImportFilename; // 0x60 (16)
+};
+
+// ScriptStruct Engine.StaticMeshOptimizationSettings
+struct FStaticMeshOptimizationSettings {
+	char ReductionMethod; // 0x0 (1)
+	float NumOfTrianglesPercentage; // 0x4 (4)
+	float MaxDeviationPercentage; // 0x8 (4)
+	float WeldingThreshold; // 0xC (4)
+	char bRecalcNormals : 0; // 0x10 (1)
+	float NormalsThreshold; // 0x14 (4)
+	char SilhouetteImportance; // 0x18 (1)
+	char TextureImportance; // 0x19 (1)
+	char ShadingImportance; // 0x1A (1)
+};
+
+// ScriptStruct Engine.StaticMeshComponentInstanceData
+struct FStaticMeshComponentInstanceData : FPrimitiveComponentInstanceData {
+	struct Unknown StaticMesh; // 0xF0 (8)
+	struct TArray<Unknown> VertexColorLODs; // 0xF8 (16)
+	struct TArray<Unknown> CachedStaticLighting; // 0x108 (16)
+	struct TArray<Unknown> StreamingTextureData; // 0x118 (16)
+};
+
+// ScriptStruct Engine.StreamingTextureBuildInfo
+struct FStreamingTextureBuildInfo {
+	uint32_t PackedRelativeBox; // 0x0 (4)
+	int32_t TextureLevelIndex; // 0x4 (4)
+	float TexelFactor; // 0x8 (4)
+};
+
+// ScriptStruct Engine.StaticMeshVertexColorLODData
+struct FStaticMeshVertexColorLODData {
+	struct TArray<Unknown> PaintedVertices; // 0x0 (16)
+	struct TArray<Unknown> VertexBufferColors; // 0x10 (16)
+	uint32_t LODIndex; // 0x20 (4)
+};
+
+// ScriptStruct Engine.PaintedVertex
+struct FPaintedVertex {
+	struct Unknown Position; // 0x0 (12)
+	struct Unknown Color; // 0xC (4)
+	struct Unknown Normal; // 0x10 (16)
+};
+
+// ScriptStruct Engine.StaticParameterSet
+struct FStaticParameterSet {
+	struct TArray<Unknown> StaticSwitchParameters; // 0x0 (16)
+	struct TArray<Unknown> StaticComponentMaskParameters; // 0x10 (16)
+	struct TArray<Unknown> TerrainLayerWeightParameters; // 0x20 (16)
+	struct TArray<Unknown> MaterialLayersParameters; // 0x30 (16)
+};
+
+// ScriptStruct Engine.StaticParameterBase
+struct FStaticParameterBase {
+	struct Unknown ParameterInfo; // 0x0 (16)
+	char bOverride : 0; // 0x10 (1)
+	struct Unknown ExpressionGUID; // 0x14 (16)
+};
+
+// ScriptStruct Engine.StaticMaterialLayersParameter
+struct FStaticMaterialLayersParameter : FStaticParameterBase {
+	struct Unknown Value; // 0x28 (64)
+};
+
+// ScriptStruct Engine.StaticTerrainLayerWeightParameter
+struct FStaticTerrainLayerWeightParameter : FStaticParameterBase {
+	int32_t WeightmapIndex; // 0x24 (4)
+	char bWeightBasedBlend : 0; // 0x28 (1)
+};
+
+// ScriptStruct Engine.StaticComponentMaskParameter
+struct FStaticComponentMaskParameter : FStaticParameterBase {
+	char R : 0; // 0x24 (1)
+	char G : 0; // 0x25 (1)
+	char B : 0; // 0x26 (1)
+	char A : 0; // 0x27 (1)
+};
+
+// ScriptStruct Engine.StaticSwitchParameter
+struct FStaticSwitchParameter : FStaticParameterBase {
+	char Value : 0; // 0x24 (1)
+};
+
+// ScriptStruct Engine.EquirectProps
+struct FEquirectProps {
+	struct Unknown LeftUVRect; // 0x0 (20)
+	struct Unknown RightUVRect; // 0x14 (20)
+	struct Unknown LeftScale; // 0x28 (8)
+	struct Unknown RightScale; // 0x30 (8)
+	struct Unknown LeftBias; // 0x38 (8)
+	struct Unknown RightBias; // 0x40 (8)
+};
+
+// ScriptStruct Engine.StringCurve
+struct FStringCurve : FIndexedCurve {
+	struct FString DefaultValue; // 0x68 (16)
+	struct TArray<Unknown> Keys; // 0x78 (16)
+};
+
+// ScriptStruct Engine.StringCurveKey
+struct FStringCurveKey {
+	float Time; // 0x0 (4)
+	struct FString Value; // 0x8 (16)
+};
+
+// ScriptStruct Engine.SubsurfaceProfileStruct
+struct FSubsurfaceProfileStruct {
+	struct Unknown SurfaceAlbedo; // 0x0 (16)
+	struct Unknown MeanFreePathColor; // 0x10 (16)
+	float MeanFreePathDistance; // 0x20 (4)
+	float WorldUnitScale; // 0x24 (4)
+	char bEnableBurley : 0; // 0x28 (1)
+	float ScatterRadius; // 0x2C (4)
+	struct Unknown SubsurfaceColor; // 0x30 (16)
+	struct Unknown FalloffColor; // 0x40 (16)
+	struct Unknown BoundaryColorBleed; // 0x50 (16)
+	float ExtinctionScale; // 0x60 (4)
+	float NormalScale; // 0x64 (4)
+	float ScatteringDistribution; // 0x68 (4)
+	float IOR; // 0x6C (4)
+	float Roughness0; // 0x70 (4)
+	float Roughness1; // 0x74 (4)
+	float LobeMix; // 0x78 (4)
+	struct Unknown TransmissionTintColor; // 0x7C (16)
+};
+
+// ScriptStruct Engine.TextureFormatSettings
+struct FTextureFormatSettings {
+	char CompressionSettings; // 0x0 (1)
+	char CompressionNoAlpha : 0; // 0x1 (1)
+	char CompressionNone : 0; // 0x1 (1)
+	char CompressionYCoCg : 0; // 0x1 (1)
+	char SRGB : 0; // 0x1 (1)
+};
+
+// ScriptStruct Engine.TextureSourceBlock
+struct FTextureSourceBlock {
+	int32_t BlockX; // 0x0 (4)
+	int32_t BlockY; // 0x4 (4)
+	int32_t SizeX; // 0x8 (4)
+	int32_t SizeY; // 0xC (4)
+	int32_t NumSlices; // 0x10 (4)
+	int32_t NumMips; // 0x14 (4)
+};
+
+// ScriptStruct Engine.TextureLODGroup
+struct FTextureLODGroup {
+	char Group; // 0x0 (1)
+	int32_t LODBias; // 0xC (4)
+	int32_t LODBias_Smaller; // 0x10 (4)
+	int32_t LODBias_Smallest; // 0x14 (4)
+	int32_t NumStreamedMips; // 0x1C (4)
+	char MipGenSettings; // 0x20 (1)
+	int32_t MinLODSize; // 0x24 (4)
+	int32_t MaxLODSize; // 0x28 (4)
+	int32_t MaxLODSize_Smaller; // 0x2C (4)
+	int32_t MaxLODSize_Smallest; // 0x30 (4)
+	int32_t OptionalLODBias; // 0x34 (4)
+	int32_t OptionalMaxLODSize; // 0x38 (4)
+	struct FName MinMagFilter; // 0x40 (8)
+	struct FName MipFilter; // 0x48 (8)
+	enum class Unknow MipLoadOptions; // 0x50 (1)
+	char DuplicateNonOptionalMips : 0; // 0x51 (1)
+	char bNeedsPrimaryStreaming : 0; // 0x52 (1)
+};
+
+// ScriptStruct Engine.StreamingRenderAssetPrimitiveInfo
+struct FStreamingRenderAssetPrimitiveInfo {
+	struct Unknown RenderAsset; // 0x0 (8)
+	struct Unknown Bounds; // 0x8 (28)
+	float TexelFactor; // 0x24 (4)
+	uint32_t PackedRelativeBox; // 0x28 (4)
+	char bAllowInvalidTexelFactorWhenUnregistered : 0; // 0x2C (1)
+};
+
+// ScriptStruct Engine.TTTrackBase
+struct FTTTrackBase {
+	struct FName TrackName; // 0x8 (8)
+	char bIsExternalCurve : 0; // 0x10 (1)
+};
+
+// ScriptStruct Engine.TTPropertyTrack
+struct FTTPropertyTrack : FTTTrackBase {
+	struct FName PropertyName; // 0x18 (8)
+};
+
+// ScriptStruct Engine.TTLinearColorTrack
+struct FTTLinearColorTrack : FTTPropertyTrack {
+	struct Unknown CurveLinearColor; // 0x20 (8)
+};
+
+// ScriptStruct Engine.TTVectorTrack
+struct FTTVectorTrack : FTTPropertyTrack {
+	struct Unknown CurveVector; // 0x20 (8)
+};
+
+// ScriptStruct Engine.TTFloatTrack
+struct FTTFloatTrack : FTTPropertyTrack {
+	struct Unknown CurveFloat; // 0x20 (8)
+};
+
+// ScriptStruct Engine.TTEventTrack
+struct FTTEventTrack : FTTTrackBase {
+	struct FName FunctionName; // 0x18 (8)
+	struct Unknown CurveKeys; // 0x20 (8)
+};
+
+// ScriptStruct Engine.TimeStretchCurveInstance
+struct FTimeStretchCurveInstance {
+	char bHasValidData : 0; // 0x0 (1)
+};
+
+// ScriptStruct Engine.TimeStretchCurve
+struct FTimeStretchCurve {
+	float SamplingRate; // 0x0 (4)
+	float CurveValueMinPrecision; // 0x4 (4)
+	struct TArray<Unknown> Markers; // 0x8 (16)
+	float Sum_dT_i_by_C_i[0x3]; // 0x18 (12)
+};
+
+// ScriptStruct Engine.TimeStretchCurveMarker
+struct FTimeStretchCurveMarker {
+	float Time[0x3]; // 0x0 (12)
+	float ALPHA; // 0xC (4)
+};
+
+// ScriptStruct Engine.TouchInputControl
+struct FTouchInputControl {
+	struct Unknown Image1; // 0x0 (8)
+	struct Unknown Image2; // 0x8 (8)
+	struct Unknown Center; // 0x10 (8)
+	struct Unknown VisualSize; // 0x18 (8)
+	struct Unknown ThumbSize; // 0x20 (8)
+	struct Unknown InteractionSize; // 0x28 (8)
+	struct Unknown InputScale; // 0x30 (8)
+	struct Unknown MainInputKey; // 0x38 (24)
+	struct Unknown AltInputKey; // 0x50 (24)
+};
+
+// ScriptStruct Engine.HardwareCursorReference
+struct FHardwareCursorReference {
+	struct FName CursorPath; // 0x0 (8)
+	struct Unknown HotSpot; // 0x8 (8)
+};
+
+// ScriptStruct Engine.VirtualTextureBuildSettings
+struct FVirtualTextureBuildSettings {
+	int32_t TileSize; // 0x0 (4)
+	int32_t TileBorderSize; // 0x4 (4)
+	char bEnableCompressCrunch : 0; // 0x8 (1)
+	char bEnableCompressZlib : 0; // 0x9 (1)
+};
+
+// ScriptStruct Engine.VirtualTextureSpacePoolConfig
+struct FVirtualTextureSpacePoolConfig {
+	int32_t MinTileSize; // 0x0 (4)
+	int32_t MaxTileSize; // 0x4 (4)
+	struct TArray<Unknown> Formats; // 0x8 (16)
+	int32_t SizeInMegabyte; // 0x18 (4)
+	char bAllowSizeScale : 0; // 0x1C (1)
+};
+
+// ScriptStruct Engine.VoiceSettings
+struct FVoiceSettings {
+	struct Unknown ComponentToAttachTo; // 0x0 (8)
+	struct Unknown AttenuationSettings; // 0x8 (8)
+	struct Unknown SourceEffectChain; // 0x10 (8)
+};
+
+// ScriptStruct Engine.StreamingLevelsToConsider
+struct FStreamingLevelsToConsider {
+	struct TArray<Unknown> StreamingLevels; // 0x0 (16)
+};
+
+// ScriptStruct Engine.LevelStreamingWrapper
+struct FLevelStreamingWrapper {
+	struct Unknown StreamingLevel; // 0x0 (8)
+};
+
+// ScriptStruct Engine.LevelCollection
+struct FLevelCollection {
+	struct Unknown GameState; // 0x8 (8)
+	struct Unknown NetDriver; // 0x10 (8)
+	struct Unknown DemoNetDriver; // 0x18 (8)
+	struct Unknown PersistentLevel; // 0x20 (8)
+	struct TSet<Unknown> Levels; // 0x28 (80)
+	struct TArray<Unknown> CachedLevels; // 0x78 (16)
+};
+
+// ScriptStruct Engine.LevelViewportInfo
+struct FLevelViewportInfo {
+	struct Unknown CamPosition; // 0x0 (12)
+	struct Unknown CamRotation; // 0xC (12)
+	float CamOrthoZoom; // 0x18 (4)
+	char CamUpdated : 0; // 0x1C (1)
+};
+
+// ScriptStruct Engine.WorldPSCPool
+struct FWorldPSCPool {
+	struct TMap<Unknown, Unknown>Unknown WorldParticleSystemPools; // 0x0 (80)
+};
+
+// ScriptStruct Engine.PSCPool
+struct FPSCPool {
+	struct TArray<Unknown> FreeElements; // 0x0 (16)
+	struct TArray<Unknown> InUseComponents_Auto; // 0x10 (16)
+	struct TArray<Unknown> InUseComponents_Manual; // 0x20 (16)
+};
+
+// ScriptStruct Engine.PSCPoolElem
+struct FPSCPoolElem {
+	struct Unknown PSC; // 0x0 (8)
+};
+
+// ScriptStruct Engine.BroadphaseSettings
+struct FBroadphaseSettings {
+	char bUseMBPOnClient : 0; // 0x0 (1)
+	char bUseMBPOnServer : 0; // 0x1 (1)
+	char bUseMBPOuterBounds : 0; // 0x2 (1)
+	struct Unknown MBPBounds; // 0x4 (28)
+	struct Unknown MBPOuterBounds; // 0x20 (28)
+	uint32_t MBPNumSubdivs; // 0x3C (4)
+};
+
+// ScriptStruct Engine.TileLODEntry
+struct FTileLODEntry {
+	int32_t LODIndex; // 0x0 (4)
+	int32_t Distance; // 0x4 (4)
+	struct Unknown SimplificationDetails; // 0x8 (308)
+};
+
+// ScriptStruct Engine.HierarchicalSimplification
+struct FHierarchicalSimplification {
+	float TransitionScreenSize; // 0x0 (4)
+	float OverrideDrawDistance; // 0x4 (4)
+	char bUseOverrideDrawDistance : 0; // 0x8 (1)
+	char bAllowSpecificExclusion : 0; // 0x8 (1)
+	char bSimplifyMesh : 0; // 0x8 (1)
+	char bOnlyGenerateClustersForVolumes : 0; // 0x8 (1)
+	char bReusePreviousLevelClusters : 0; // 0x8 (1)
+	struct Unknown ProxySetting; // 0xC (172)
+	struct Unknown MergeSetting; // 0xB8 (164)
+	float DesiredBoundRadius; // 0x15C (4)
+	float DesiredFillingPercentage; // 0x160 (4)
+	int32_t MinNumberOfActorsToBuild; // 0x164 (4)
+};
+
+// ScriptStruct Engine.NetViewer
+struct FNetViewer {
+	struct Unknown Connection; // 0x0 (8)
+	struct Unknown InViewer; // 0x8 (8)
+	struct Unknown ViewTarget; // 0x10 (8)
+	struct Unknown ViewLocation; // 0x18 (12)
+	struct Unknown ViewDir; // 0x24 (12)
+};
+
+// ScriptStruct Engine.LightmassWorldInfoSettings
+struct FLightmassWorldInfoSettings {
+	float StaticLightingLevelScale; // 0x0 (4)
+	int32_t NumIndirectLightingBounces; // 0x4 (4)
+	int32_t NumSkyLightingBounces; // 0x8 (4)
+	float IndirectLightingQuality; // 0xC (4)
+	float IndirectLightingSmoothness; // 0x10 (4)
+	struct Unknown EnvironmentColor; // 0x14 (4)
+	float EnvironmentIntensity; // 0x18 (4)
+	float EmissiveBoost; // 0x1C (4)
+	float DiffuseBoost; // 0x20 (4)
+	char VolumeLightingMethod; // 0x24 (1)
+	char bUseAmbientOcclusion : 0; // 0x25 (1)
+	char bGenerateAmbientOcclusionMaterialMask : 0; // 0x25 (1)
+	char bVisualizeMaterialDiffuse : 0; // 0x25 (1)
+	char bVisualizeAmbientOcclusion : 0; // 0x25 (1)
+	char bCompressLightmaps : 0; // 0x25 (1)
+	float VolumetricLightmapDetailCellSize; // 0x28 (4)
+	float VolumetricLightmapMaximumBrickMemoryMb; // 0x2C (4)
+	float VolumetricLightmapSphericalHarmonicSmoothing; // 0x30 (4)
+	float VolumeLightSamplePlacementScale; // 0x34 (4)
+	float DirectIlluminationOcclusionFrac; // 0x38 (4)
+	float IndirectIlluminationOcclusionFraction; // 0x3C (4)
+	float OcclusionExponent; // 0x40 (4)
+	float FullyOccludedSamplesFraction; // 0x44 (4)
+	float MaxOcclusionDistance; // 0x48 (4)
 };
 

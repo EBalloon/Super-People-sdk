@@ -155,12 +155,12 @@ enum class EInventoryItemState : uint8 {
 	EInventoryItemState = 8
 };
 
-// Enum BravoHotelGame.E
-enum class E : uint8 {
-	E = 0
-	E = 1
-	E = 2
-	E = 3
+// Enum BravoHotelGame.EReplicationItemListType
+enum class EReplicationItemListType : uint8 {
+	EReplicationItemListType = 0
+	EReplicationItemListType = 1
+	EReplicationItemListType = 2
+	EReplicationItemListType = 3
 };
 
 // Enum BravoHotelGame.EAbilityCase
@@ -1120,12 +1120,12 @@ enum class EPresenceState : uint8 {
 	EPresenceState = 3
 };
 
-// Enum BravoHotelGame.E
-enum class E : uint8 {
-	E = 0
-	E = 1
-	E = 2
-	E = 3
+// Enum BravoHotelGame.ERandomType
+enum class ERandomType : uint8 {
+	ERandomType = 0
+	ERandomType = 1
+	ERandomType = 2
+	ERandomType = 3
 };
 
 // Enum BravoHotelGame.EKeySettingSubType
@@ -1388,14 +1388,14 @@ enum class ELobbyExitType : uint8 {
 	ELobbyExitType = 5
 };
 
-// Enum BravoHotelGame.E
-enum class E : uint8 {
-	E = 0
-	E = 1
-	E = 2
-	E = 3
-	E = 4
-	E = 5
+// Enum BravoHotelGame.EReportType
+enum class EReportType : uint8 {
+	EReportType = 0
+	EReportType = 1
+	EReportType = 2
+	EReportType = 3
+	EReportType = 4
+	EReportType = 5
 };
 
 // Enum BravoHotelGame.ENormalType
@@ -1428,11 +1428,11 @@ enum class EDevelopmentStatus : uint8 {
 	EDevelopmentStatus = 3
 };
 
-// Enum BravoHotelGame.E
-enum class E : uint8 {
-	E = 0
-	E = 1
-	E = 2
+// Enum BravoHotelGame.ERewardChangeType
+enum class ERewardChangeType : uint8 {
+	ERewardChangeType = 0
+	ERewardChangeType = 1
+	ERewardChangeType = 2
 };
 
 // Enum BravoHotelGame.EItemRarity
@@ -1508,12 +1508,12 @@ enum class EItemType : uint8 {
 	EItemType = 13
 };
 
-// Enum BravoHotelGame.E
-enum class E : uint8 {
-	E = 0
-	E = 1
-	E = 2
-	E = 3
+// Enum BravoHotelGame.EResultUIType
+enum class EResultUIType : uint8 {
+	EResultUIType = 0
+	EResultUIType = 1
+	EResultUIType = 2
+	EResultUIType = 3
 };
 
 // Enum BravoHotelGame.EPlayerState
@@ -2013,22 +2013,22 @@ enum class EContentsType : uint8 {
 	EContentsType = 16
 };
 
-// Enum BravoHotelGame.E
-enum class E : uint8 {
-	E = 0
-	E = 1
-	E = 2
-	E = 3
-	E = 4
-	E = 5
+// Enum BravoHotelGame.EReportIndex
+enum class EReportIndex : uint8 {
+	EReportIndex = 0
+	EReportIndex = 1
+	EReportIndex = 2
+	EReportIndex = 3
+	EReportIndex = 4
+	EReportIndex = 5
 };
 
-// Enum BravoHotelGame.E
-enum class E : uint8 {
-	E = 0
-	E = 1
-	E = 2
-	E = 3
+// Enum BravoHotelGame.ERecipeSearchType
+enum class ERecipeSearchType : uint8 {
+	ERecipeSearchType = 0
+	ERecipeSearchType = 1
+	ERecipeSearchType = 2
+	ERecipeSearchType = 3
 };
 
 // Enum BravoHotelGame.EItemLogType
@@ -2782,12 +2782,12 @@ enum class EAchievementType : uint8 {
 	EAchievementType = 4
 };
 
-// Enum BravoHotelGame.E
-enum class E : uint8 {
-	E = 0
-	E = 1
-	E = 2
-	E = 3
+// Enum BravoHotelGame.ERemoteControlState
+enum class ERemoteControlState : uint8 {
+	ERemoteControlState = 0
+	ERemoteControlState = 1
+	ERemoteControlState = 2
+	ERemoteControlState = 3
 };
 
 // Enum BravoHotelGame.EDropBoxState
@@ -3088,13 +3088,13 @@ enum class EVehicleEffect : uint8 {
 	EVehicleEffect = 4
 };
 
-// Enum BravoHotelGame.E
-enum class E : uint8 {
-	E = 0
-	E = 1
-	E = 2
-	E = 3
-	E = 4
+// Enum BravoHotelGame.ERedZoneSelectType
+enum class ERedZoneSelectType : uint8 {
+	ERedZoneSelectType = 0
+	ERedZoneSelectType = 1
+	ERedZoneSelectType = 2
+	ERedZoneSelectType = 3
+	ERedZoneSelectType = 4
 };
 
 // Enum BravoHotelGame.EPerkSpawnType
@@ -3289,7 +3289,7 @@ enum class EParkourDebugType : uint8 {
 };
 
 // Class BravoHotelGame.AmbientSoundVolume
-struct AAmbientSoundVolume : AVolume {
+class AAmbientSoundVolume : AVolume {
 	struct FString Ambience; // 0x348 (16)
 	int32_t Priority; // 0x358 (4)
 
@@ -3298,7 +3298,7 @@ struct AAmbientSoundVolume : AVolume {
 };
 
 // Class BravoHotelGame.AnimNotifyState_PlaySound
-struct UAnimNotifyState_PlaySound : UAnimNotifyState {
+class UAnimNotifyState_PlaySound : UAnimNotifyState {
 	struct Unknown Sound; // 0x30 (8)
 	float VolumeMultiplier; // 0x38 (4)
 	float PitchMultiplier; // 0x3C (4)
@@ -3307,7 +3307,7 @@ struct UAnimNotifyState_PlaySound : UAnimNotifyState {
 };
 
 // Class BravoHotelGame.BravoHotelGameMode
-struct ABravoHotelGameMode : ABravoHotelGameModeBase {
+class ABravoHotelGameMode : ABravoHotelGameModeBase {
 	char bFriendlyFire : 0; // 0x3FC (1)
 	struct Unknown PoolingActorComponent; // 0x400 (8)
 	struct Unknown MapDataTableHandle; // 0x408 (16)
@@ -3325,7 +3325,7 @@ struct ABravoHotelGameMode : ABravoHotelGameModeBase {
 };
 
 // Class BravoHotelGame.BattleRoyaleGameMode
-struct ABattleRoyaleGameMode : ABravoHotelGameMode {
+class ABattleRoyaleGameMode : ABravoHotelGameMode {
 	struct TArray<Unknown> RemovePendingPlayerArray; // 0x578 (16)
 	enum class Unknow GameViewType; // 0x588 (1)
 	enum class Unknow MatchingType; // 0x589 (1)
@@ -3370,7 +3370,7 @@ struct ABattleRoyaleGameMode : ABravoHotelGameMode {
 	struct Unknown CustomVehicleBlueZoneSpawnRateInfo; // 0xD10 (40)
 	struct TMap<Unknown, Unknown>Unknown CustomVehicleAreaSpawnRateList; // 0xD38 (80)
 	float ItemDivisionDelay; // 0xD90 (4)
-	char UsingWorldItemSpawnTalbeInBlue : 0; // 0xD94 (1)
+	char UsingWorldItemSpawnTalbeInBlueZone : 0; // 0xD94 (1)
 	char ItemSpawnInBlueZone : 0; // 0xD95 (1)
 	char UnlimitItemSpawnCnt : 0; // 0xD96 (1)
 	int32_t MaxItemDivisionCountAtOnce; // 0xD98 (4)
@@ -3411,7 +3411,7 @@ struct ABattleRoyaleGameMode : ABravoHotelGameMode {
 };
 
 // Class BravoHotelGame.BattleRoyaleGameMode_Login
-struct ABattleRoyaleGameMode_Login : ABravoHotelGameModeBase {
+class ABattleRoyaleGameMode_Login : ABravoHotelGameModeBase {
 	float MatchingTimeout; // 0x3F8 (4)
 	struct TArray<Unknown> PlayerPawnList; // 0x400 (16)
 	struct Unknown CustomizeCharacter; // 0x410 (8)
@@ -3470,7 +3470,7 @@ struct ABattleRoyaleGameMode_Login : ABravoHotelGameModeBase {
 };
 
 // Class BravoHotelGame.BravoHotelGameState
-struct ABravoHotelGameState : AGameState {
+class ABravoHotelGameState : AGameState {
 	char MatchWinnerTeam; // 0x380 (1)
 	struct Unknown WinnerPlayerState; // 0x388 (8)
 	int32_t TimeRemaining; // 0x390 (4)
@@ -3478,7 +3478,7 @@ struct ABravoHotelGameState : AGameState {
 	int32_t PerkMode; // 0x39C (4)
 	int32_t RecipeMode; // 0x3A0 (4)
 	int32_t MaxPerkCount; // 0x3A4 (4)
-	int32_t OverrideUltimateLev; // 0x3A8 (4)
+	int32_t OverrideUltimateLeve_; // 0x3A8 (4)
 	struct TMap<Unknown, Unknown>Unknown PerkClassNumCap; // 0x3B0 (80)
 	struct TMap<Unknown, Unknown>Unknown PerkClassWeightModifier; // 0x400 (80)
 	struct TArray<Unknown> PerkClassBlock; // 0x450 (16)
@@ -3527,7 +3527,7 @@ struct ABravoHotelGameState : AGameState {
 };
 
 // Class BravoHotelGame.BattleRoyaleGameState
-struct ABattleRoyaleGameState : ABravoHotelGameState {
+class ABattleRoyaleGameState : ABravoHotelGameState {
 	char IsNewItemSpawnMode : 0; // 0x668 (1)
 	int32_t TeamSize; // 0x66C (4)
 	enum class Unknow GameRule; // 0x670 (1)
@@ -3592,7 +3592,7 @@ struct ABattleRoyaleGameState : ABravoHotelGameState {
 };
 
 // Class BravoHotelGame.BHPersonalSupplyBox
-struct ABHPersonalSupplyBox : UActor {
+class ABHPersonalSupplyBox : UActor {
 	char NeedInit : 0; // 0x310 (1)
 	struct Unknown RootBoxComponent; // 0x320 (8)
 	struct Unknown InteractiveSphereComponent; // 0x328 (8)
@@ -3624,7 +3624,7 @@ struct ABHPersonalSupplyBox : UActor {
 };
 
 // Class BravoHotelGame.BravoHotelDropBoxActor
-struct ABravoHotelDropBoxActor : UActor {
+class ABravoHotelDropBoxActor : UActor {
 	enum class Unknow RootType; // 0x310 (1)
 	struct Unknown RootBoxComponent; // 0x318 (8)
 	struct Unknown InventoryComponent; // 0x320 (8)
@@ -3645,12 +3645,12 @@ struct ABravoHotelDropBoxActor : UActor {
 };
 
 // Class BravoHotelGame.BHPersonalSupplyBoxDummy
-struct ABHPersonalSupplyBoxDummy : ABravoHotelDropBoxActor {
+class ABHPersonalSupplyBoxDummy : ABravoHotelDropBoxActor {
 	int32_t playerGUID; // 0x390 (4)
 };
 
 // Class BravoHotelGame.BHPersonalSupplyBoxManager
-struct ABHPersonalSupplyBoxManager : AInfo {
+class ABHPersonalSupplyBoxManager : AInfo {
 	struct Unknown* SupplyBoxClass; // 0x310 (8)
 	struct TArray<Unknown> ListPhaseInfo; // 0x318 (16)
 	int32_t CurrentPhaseNum; // 0x328 (4)
@@ -3667,7 +3667,7 @@ struct ABHPersonalSupplyBoxManager : AInfo {
 };
 
 // Class BravoHotelGame.BravoHotelCharacter
-struct ABravoHotelCharacter : ACharacter {
+class ABravoHotelCharacter : ACharacter {
 	struct Unknown AudioComponent; // 0x30E8 (8)
 	struct Unknown CameraBase; // 0x2E40 (8)
 	struct Unknown CameraAssistant3P; // 0x1390 (8)
@@ -3722,7 +3722,7 @@ struct ABravoHotelCharacter : ACharacter {
 	float ForwardAxisValue; // 0x36B8 (4)
 	float RightAxisValue; // 0x2250 (4)
 	float InputMovementAttenuationTime; // 0x281C (4)
-	float InputMovementAttenuationTimeIdleToCrouch; // 0x30D0 (4)
+	float InputMovementAttenuationTimeIdleToCrouc; // 0x30D0 (4)
 	float InputMovementAttenuationTimeIdleToProne; // 0xC98 (4)
 	float InputMovementAttenuationTimeProneToIdle; // 0xE30 (4)
 	float InputMovementAttenuationValueIdleToCrouch; // 0x9B8 (4)
@@ -3742,9 +3742,9 @@ struct ABravoHotelCharacter : ACharacter {
 	struct Unknown PistolsDamageTable; // 0x1AE8 (8)
 	struct Unknown ShotgunsDamageTable; // 0x2848 (8)
 	struct Unknown SMGsDamageTable; // 0x1718 (8)
-	struct Unknown A; // 0x1460 (8)
+	struct Unknown ARsDamageTable; // 0x1460 (8)
 	struct Unknown DMRsDamageTable; // 0xDC8 (8)
-	struct Unknown S; // 0x3668 (8)
+	struct Unknown SRsDamageTable; // 0x3668 (8)
 	struct Unknown* BrokenHelmetClass; // 0xBD0 (8)
 	char bNeedToSpawnBrokenEquipment : 0; // 0x1AC8 (1)
 	float BrokenEquipmentLevel; // 0x1064 (4)
@@ -3973,7 +3973,7 @@ struct ABravoHotelCharacter : ACharacter {
 	char bShouldAdjustOverHead : 0; // 0x33D8 (1)
 	float UpdateAnimationDistance; // 0x1538 (4)
 	char bIsDisarming : 0; // 0x658 (1)
-	struct Unknown ResuscitationStopEv; // 0xA88 (8)
+	struct Unknown ResuscitationStopEvad; // 0xA88 (8)
 	struct Unknown ResuscitatingCharacter; // 0x1FE8 (8)
 	float RequestResuscitationCoolTime; // 0xF20 (4)
 	struct Unknown CurrentResuscitationAnimSlot; // 0xF88 (16)
@@ -4019,7 +4019,7 @@ struct ABravoHotelCharacter : ACharacter {
 	float ParachuteTurnChangeSpeedPitch; // 0x2178 (4)
 	float ParachuteTurnChangeSpeedRoll; // 0x386C (4)
 	float HeightToGetInParachuteFromLand; // 0x2FA0 (4)
-	float ForceHeightToGetInParachute; // 0x2A34 (4)
+	float ForceHeightToGetInParachuteFromLand; // 0x2A34 (4)
 	struct Unknown ReplicatedParachuteVelocity; // 0x12D0 (12)
 	struct Unknown ParachutePitchCurve; // 0x14B8 (8)
 	struct TArray<Unknown> ParachuteSkinMaterials; // 0x1868 (16)
@@ -4127,7 +4127,7 @@ struct ABravoHotelCharacter : ACharacter {
 	float MaxVehicleEscapeSpeed; // 0x9A0 (4)
 	struct Unknown PreviousVehicleSeat; // 0x2720 (8)
 	struct TArray<Unknown> ProjectileGrenades; // 0x2268 (16)
-	struct FMulticastInlineDelegate OnChangeProjectilePredict; // 0x2D50 (16)
+	struct FMulticastInlineDelegate OnChangeProjectilePredictPath; // 0x2D50 (16)
 	char IsBlind : 0; // 0x141C (1)
 	struct FMulticastInlineDelegate OnAirCraftDelegate; // 0x21E0 (16)
 	struct FMulticastInlineDelegate OnCharacterGroundStateChangeDelegate; // 0x15F8 (16)
@@ -4179,7 +4179,7 @@ struct ABravoHotelCharacter : ACharacter {
 	struct Unknown PostProcessDust; // 0x15B0 (8)
 	float DustDissolveAnimaitionMaxTime; // 0x17AC (4)
 	float DustDissolveDelayTime; // 0xB88 (4)
-	float InternalDustDissolv; // 0xB14 (4)
+	float InternalDustDissolvHit; // 0xB14 (4)
 	float DustDissolveAnimationValue; // 0x9D4 (4)
 	char IsOnDust : 0; // 0x2B7C (1)
 	char IsDustDissolve : 0; // 0x23E0 (1)
@@ -4257,7 +4257,7 @@ struct ABravoHotelCharacter : ACharacter {
 	char bIsInsideBlueZone : 0; // 0x178D (1)
 	char bIsSpectated : 0; // 0x1A58 (1)
 	struct TMap<Unknown, Unknown>Unknown Camera3P_DeltaTargetOffsets; // 0x1980 (80)
-	char b : 0; // 0x924 (1)
+	char bReplaceFreeLook : 0; // 0x924 (1)
 	char bUpdateDeathRotation : 0; // 0x2A58 (1)
 	struct Unknown RagdollLocation; // 0xD68 (12)
 	struct Unknown RagdollVelocity; // 0x8F0 (12)
@@ -4373,7 +4373,7 @@ struct ABravoHotelCharacter : ACharacter {
 	struct Unknown FPSK_ADS_DefaultWeaponTransform; // 0x34B0 (48)
 	struct Unknown FPSK_ADS_TargetWeaponTransform; // 0xDF0 (48)
 	struct Unknown FPSK_ADS_DefaultWeaponTransform_BasicSightCache; // 0x2B20 (48)
-	struct Unknown FPSK_ADS_DefaultWeaponTransform_CurrentSightCache; // 0x1D90 (48)
+	struct Unknown FPSK_ADS_DefaultWeaponTransform_CurrentSightCac; // 0x1D90 (48)
 	struct Unknown FPSK_ADS_WeaponTransform; // 0x2CC0 (48)
 	float FPSK_ADSFOV; // 0x2BD4 (4)
 	float FPSK_AOSFOV; // 0x3434 (4)
@@ -4390,10 +4390,10 @@ struct ABravoHotelCharacter : ACharacter {
 	struct Unknown FPSK_Timeline_Sway_Idle; // 0x2338 (152)
 	struct Unknown FPSK_Timeline_Sway_Move; // 0x3038 (152)
 	struct Unknown FPSK_Curve_Sway_Idle_Default; // 0x1770 (8)
-	struct Unknown FPSK_Curve_Sway_Move_Default; // 0x11F0 (8)
-	struct Unknown FPSK_Curve_Sway_Scale_With_; // 0x20D8 (8)
+	struct Unknown FPSK_Curve_Sway_Mov; // 0x11F0 (8)
+	struct Unknown FPSK_Curve_Sway_Scale_With_Fov; // 0x20D8 (8)
 	struct Unknown FPSK_Curve_Sway_Idle; // 0x2A28 (8)
-	struct Unknown FPSK_Curve_Sway_Mov; // 0xD40 (8)
+	struct Unknown FPSK_Curve_Sway_MovR; // 0xD40 (8)
 	char bUseFPSK_Sway : 0; // 0x1238 (1)
 	float FPSK_SwayAlpha; // 0x22D0 (4)
 	float FPSK_SwayAlphaMin; // 0x3820 (4)
@@ -4421,7 +4421,7 @@ struct ABravoHotelCharacter : ACharacter {
 	struct Unknown BlueZoneFreezeEvent; // 0x3170 (8)
 	struct Unknown BlueZoneFreezeStopEvent; // 0x1768 (8)
 	struct Unknown BlueZoneDroneEvent; // 0x7F8 (8)
-	struct Unknown BlueZoneDroneStopEvd; // 0x2298 (8)
+	struct Unknown BlueZoneDroneStopEv; // 0x2298 (8)
 	struct Unknown SupplyBoxNotifyAlertMe; // 0xB18 (8)
 	struct Unknown SupplyBoxNotifyAlertOther; // 0x30D8 (8)
 	float CheckFreezeDistance; // 0xBF4 (4)
@@ -4684,7 +4684,7 @@ struct ABravoHotelCharacter : ACharacter {
 	void SetTeamInfoVisibility(char IsVisible); // Function BravoHotelGame.BravoHotelCharacter.SetTeamInfoVisibility(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void SetTargetHealth(enum class Unknow Type, float InTargetHealth, float InUsableHealth); // Function BravoHotelGame.BravoHotelCharacter.SetTargetHealth(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1ED6A70>
 	void SetSteadyAim(char SteadyAim); // Function BravoHotelGame.BravoHotelCharacter.SetSteadyAim(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1ED69E0>
-	void SetState(enum class Unknow NewState, char b); // Function BravoHotelGame.BravoHotelCharacter.SetState(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1ED6910>
+	void SetState(enum class Unknow NewState, char bReplicated); // Function BravoHotelGame.BravoHotelCharacter.SetState(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1ED6910>
 	void SetSavedPlayerState(struct Unknown PState); // Function BravoHotelGame.BravoHotelCharacter.SetSavedPlayerState(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1ED6870>
 	void SetReplicatedAnimMontage(struct Unknown NewAnimMontageTPP, struct Unknown NewAnimMontageFPP); // Function BravoHotelGame.BravoHotelCharacter.SetReplicatedAnimMontage(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1ED67B0>
 	void SetRecordingCharacterTickRate(float TickRate); // Function BravoHotelGame.BravoHotelCharacter.SetRecordingCharacterTickRate(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
@@ -4873,7 +4873,7 @@ struct ABravoHotelCharacter : ACharacter {
 	void RequestAllBuildingItemSpawnInfo(int32_t RequestSize, float IntervalTime, char ToJson); // Function BravoHotelGame.BravoHotelCharacter.RequestAllBuildingItemSpawnInfo(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1ECEE20>
 	void ReplaceFreeLookImmediately(); // Function BravoHotelGame.BravoHotelCharacter.ReplaceFreeLookImmediately(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1ECEE00>
 	void RemoveWearableItem(enum class Unknow Slot, char bUpdateSkeletalMesh); // Function BravoHotelGame.BravoHotelCharacter.RemoveWearableItem(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1ECED30>
-	void RemoveThrownMolotov(struct Unknown MolotovCocktail); // Function BravoHotelGame.BravoHotelCharacter.RemoveThrownMolotovame(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1ECECB0>
+	void RemoveThrownMolotovCocktail(struct Unknown MolotovCocktail); // Function BravoHotelGame.BravoHotelCharacter.RemoveThrownMolotovame(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1ECECB0>
 	void RemoveThrownFlashbang(struct Unknown Flashbang); // Function BravoHotelGame.BravoHotelCharacter.RemoveThrownFlashbang(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1ECEC30>
 	void RemoveTargetHealth(enum class Unknow Type); // Function BravoHotelGame.BravoHotelCharacter.RemoveTargetHealth(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1ECEBB0>
 	void RemoveShortTimeHealth(struct Unknown HealthOwner); // Function BravoHotelGame.BravoHotelCharacter.RemoveShortTimeHealth(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1ECEB30>
@@ -4911,8 +4911,8 @@ struct ABravoHotelCharacter : ACharacter {
 	void PickableItemDetected__DelegateSignature(); // DelegateFunction BravoHotelGame.BravoHotelCharacter.PickableItemDetected__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void PhysicsImpulse_OnServer(struct Unknown PhysicsActor, struct Unknown Impulse, struct FName BoneName); // Function BravoHotelGame.BravoHotelCharacter.PhysicsImpulse_OnServer(Net|NetReliableNative|Event|Public|NetServer|HasDefaults|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1ECDE40>
 	void PhysicsImpulse_Multicast(struct Unknown PhysicsActor, struct Unknown Impulse, struct FName BoneName); // Function BravoHotelGame.BravoHotelCharacter.PhysicsImpulse_Multicast(Net|NetReliableNative|Event|NetMulticast|Public|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1ECDD20>
-	void PhysicsActor_OnServ(struct Unknown PhysicsActor, struct Unknown a); // Function BravoHotelGame.BravoHotelCharacter.PhysicsActor_OnServam(Net|NetReliableNative|Event|Public|NetServer|HasDefaults|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1ECDBC0>
-	void PhysicsActor_Multicast(struct Unknown PhysicsActor, struct Unknown a); // Function BravoHotelGame.BravoHotelCharacter.PhysicsActor_Multicast(Net|NetReliableNative|Event|NetMulticast|Public|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1ECDA80>
+	void PhysicsActor_OnServ(struct Unknown PhysicsActor, struct Unknown actorTransform); // Function BravoHotelGame.BravoHotelCharacter.PhysicsActor_OnServ(Net|NetReliableNative|Event|Public|NetServer|HasDefaults|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1ECDBC0>
+	void PhysicsActor_Multicast(struct Unknown PhysicsActor, struct Unknown actorTransform); // Function BravoHotelGame.BravoHotelCharacter.PhysicsActor_Multicast(Net|NetReliableNative|Event|NetMulticast|Public|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1ECDA80>
 	void PhasePerkLevelUpTimer(float DelayTime, int32_t UpCount); // Function BravoHotelGame.BravoHotelCharacter.PhasePerkLevelUpTimer(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1ECD9B0>
 	void PhasePerkLevelUpReady(); // Function BravoHotelGame.BravoHotelCharacter.PhasePerkLevelUpReady(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1ECD990>
 	void PhasePerkLevelUp(int32_t UpCount); // Function BravoHotelGame.BravoHotelCharacter.PhasePerkLevelUp(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1ECD910>
@@ -5018,7 +5018,7 @@ struct ABravoHotelCharacter : ACharacter {
 	void OnCharacterGroundStateChange__DelegateSignature(enum class Unknow State); // DelegateFunction BravoHotelGame.BravoHotelCharacter.OnCharacterGroundStateChange__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void OnChangeWeaponAttachments(); // Function BravoHotelGame.BravoHotelCharacter.OnChangeWeaponAttachments(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1ECB410>
 	void OnChangeTeleportState(char IsStart); // Function BravoHotelGame.BravoHotelCharacter.OnChangeTeleportState(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1ECB380>
-	void OnChangeProjectilePredict(); // DelegateFunction BravoHotelGame.BravoHotelCharacter.OnChangeProjectilePredict(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void OnChangeProjectilePredictPath__DelegateSignature(); // DelegateFunction BravoHotelGame.BravoHotelCharacter.OnChangeProjectilePredictPath__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void OnChangeFireType__DelegateSignature(enum class Unknow PreFireType, enum class Unknow NewFireType); // DelegateFunction BravoHotelGame.BravoHotelCharacter.OnChangeFireType__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void OnChangeEquipWeaponStateIntheWater(char bState); // Function BravoHotelGame.BravoHotelCharacter.OnChangeEquipWeaponStateIntheWater(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1ECB2F0>
 	void OnChangeDetectedItems__DelegateSignature(); // DelegateFunction BravoHotelGame.BravoHotelCharacter.OnChangeDetectedItems__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
@@ -5274,7 +5274,7 @@ struct ABravoHotelCharacter : ACharacter {
 	struct Unknown GetCurrentWeapon(); // Function BravoHotelGame.BravoHotelCharacter.GetCurrentWeapon(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC5B60>
 	int32_t GetCurrentUltimateLevel(); // Function BravoHotelGame.BravoHotelCharacter.GetCurrentUltimateLevel(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC5B30>
 	enum class Unknow GetCurrentThrowingWeaponState(); // Function BravoHotelGame.BravoHotelCharacter.GetCurrentThrowingWeaponState(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC5B00>
-	int32_t GetCurrentSelfResuscitationPrice(); // Function BravoHotelGame.BravoHotelCharacter.GetCurrentSelfResuscitationPrice(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC5AD0>
+	int32_t GetCurrentSelfResuscitationPric(); // Function BravoHotelGame.BravoHotelCharacter.GetCurrentSelfResuscitationPric(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC5AD0>
 	int32_t GetCurrentResuscitationPrice(); // Function BravoHotelGame.BravoHotelCharacter.GetCurrentResuscitationPrice(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC5AA0>
 	struct Unknown GetCurrentRangedWeapon(); // Function BravoHotelGame.BravoHotelCharacter.GetCurrentRangedWeapon(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC5A70>
 	struct Unknown GetCurrentPerkDeckSelectInfo(); // Function BravoHotelGame.BravoHotelCharacter.GetCurrentPerkDeckSelectInfo(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC5950>
@@ -5315,12 +5315,12 @@ struct ABravoHotelCharacter : ACharacter {
 	void FPSK_UpdateADSReady(); // Function BravoHotelGame.BravoHotelCharacter.FPSK_UpdateADSReady(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC46B0>
 	void FPSK_UpdateADSFOV(float DeltaTime); // Function BravoHotelGame.BravoHotelCharacter.FPSK_UpdateADSFOV(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC4630>
 	void FPSK_SetWeaponShadowVisible(char bVisible); // Function BravoHotelGame.BravoHotelCharacter.FPSK_SetWeaponShadowVisible(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC45A0>
-	void FPSK_SetADSReady(char b, char bImmediately); // Function BravoHotelGame.BravoHotelCharacter.FPSK_SetADSReady(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC43B0>
+	void FPSK_SetADSReady(char bReady, char bImmediately); // Function BravoHotelGame.BravoHotelCharacter.FPSK_SetADSReady(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC43B0>
 	void FPSK_SetADSFOV(float TargetFOV, char bImmediately); // Function BravoHotelGame.BravoHotelCharacter.FPSK_SetADSFOV(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC42E0>
 	void FPSK_SetActiveMutableClipping(char bNewActive); // Function BravoHotelGame.BravoHotelCharacter.FPSK_SetActiveMutableClipping(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC4510>
 	void FPSK_SetActive(char bNewActive); // Function BravoHotelGame.BravoHotelCharacter.FPSK_SetActive(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC4480>
 	void FPSK_ServerSetTargetFovMagnifier(float CurrentMagnifier, float NewMagnifier); // Function BravoHotelGame.BravoHotelCharacter.FPSK_ServerSetTargetFovMagnifier(Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC41E0>
-	void FPSK_KeepBoltActionCallbackF(); // Function BravoHotelGame.BravoHotelCharacter.FPSK_KeepBoltActionCallback(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC41C0>
+	void FPSK_KeepBoltActionCallbackFunc(); // Function BravoHotelGame.BravoHotelCharacter.FPSK_KeepBoltActionCallbackFunc(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC41C0>
 	struct Unknown FPSK_GetCamera(); // Function BravoHotelGame.BravoHotelCharacter.FPSK_GetCamera(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC4190>
 	void FPSK_DoSetTargetFov(float NewMagnifier); // Function BravoHotelGame.BravoHotelCharacter.FPSK_DoSetTargetFov(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC4110>
 	void FPSK_CreateWeaponshadowComponents(); // Function BravoHotelGame.BravoHotelCharacter.FPSK_CreateWeaponshadowComponents(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC40F0>
@@ -5359,7 +5359,7 @@ struct ABravoHotelCharacter : ACharacter {
 	void DoWalking(char bNewWalking); // Function BravoHotelGame.BravoHotelCharacter.DoWalking(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC3080>
 	void DoTryUseBackpackItem(int32_t& BackpackItemIndex); // Function BravoHotelGame.BravoHotelCharacter.DoTryUseBackpackItem(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC2FF0>
 	void DoTryExitVehicle(char bForceExit); // Function BravoHotelGame.BravoHotelCharacter.DoTryExitVehicle(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC2F60>
-	void DoTryEnterVehicle(struct Unknown TargetVehicleSeat, char b); // Function BravoHotelGame.BravoHotelCharacter.DoTryEnterVehicle(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC2E90>
+	void DoTryEnterVehicle(struct Unknown TargetVehicleSeat, char bRetryToVacantSeat); // Function BravoHotelGame.BravoHotelCharacter.DoTryEnterVehicle(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC2E90>
 	void DoToggleCamera(); // Function BravoHotelGame.BravoHotelCharacter.DoToggleCamera(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC2E70>
 	void DoThrowWeaponReady(); // Function BravoHotelGame.BravoHotelCharacter.DoThrowWeaponReady(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC2E50>
 	void DoThrowWeaponFire(); // Function BravoHotelGame.BravoHotelCharacter.DoThrowWeaponFire(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC2E30>
@@ -5450,7 +5450,7 @@ struct ABravoHotelCharacter : ACharacter {
 	void ClientQuickLanding(); // Function BravoHotelGame.BravoHotelCharacter.ClientQuickLanding(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC0520>
 	void ClientPrepareLanding(enum class Unknow InLandingReason); // Function BravoHotelGame.BravoHotelCharacter.ClientPrepareLanding(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC04A0>
 	void ClientPlayVoice(struct FName Idx); // Function BravoHotelGame.BravoHotelCharacter.ClientPlayVoice(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC0410>
-	void ClientPlaySequence(struct Unknown Sequnce, char b); // Function BravoHotelGame.BravoHotelCharacter.ClientPlaySequence(Net|Native|Event|Public|NetClient|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC0340>
+	void ClientPlaySequence(struct Unknown Sequnce, char bReverse); // Function BravoHotelGame.BravoHotelCharacter.ClientPlaySequence(Net|Native|Event|Public|NetClient|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC0340>
 	void ClientPickupDefaultTime(float IntervalTime); // Function BravoHotelGame.BravoHotelCharacter.ClientPickupDefaultTime(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC02C0>
 	void ClientPhasePerkLevelUpReady(); // Function BravoHotelGame.BravoHotelCharacter.ClientPhasePerkLevelUpReady(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC02A0>
 	void ClientPerkSpinEvent(char bShow, int32_t Count, enum class Unknow Slot); // Function BravoHotelGame.BravoHotelCharacter.ClientPerkSpinEvent(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC0190>
@@ -5464,7 +5464,7 @@ struct ABravoHotelCharacter : ACharacter {
 	void ClientExitLadder(); // Function BravoHotelGame.BravoHotelCharacter.ClientExitLadder(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EBFC50>
 	void ClientEndRevive(struct Unknown InRevivedActor, int32_t InRevivedTime); // Function BravoHotelGame.BravoHotelCharacter.ClientEndRevive(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EBFB80>
 	void ClientEndResuscitated(struct Unknown InRevivedPlayerState, struct Unknown InSaviorPlayerState, struct Unknown InLogData); // Function BravoHotelGame.BravoHotelCharacter.ClientEndResuscitated(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EBFA70>
-	void ClientDoAbortCastingBackpackItemInVehicle(); // Function BravoHotelGame.BravoHotelCharacter.ClientDoAbortCastingBackpackItemInVehicle(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EBFA50>
+	void ClientDoAbortCastingBackpackItemInVehic(); // Function BravoHotelGame.BravoHotelCharacter.ClientDoAbortCastingBackpackItemInVehic(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EBFA50>
 	void ClientDebugBoxTrace(struct Unknown TraceStart, struct Unknown TraceEnd, struct Unknown HalfSize); // Function BravoHotelGame.BravoHotelCharacter.ClientDebugBoxTrace(Net|NetReliableNative|Event|Public|HasDefaults|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EBF960>
 	void ClientClearCastingUI(); // Function BravoHotelGame.BravoHotelCharacter.ClientClearCastingUI(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EBF940>
 	void ClientChoosePerkDeck(int32_t ChooseIndex, char bSuccess); // Function BravoHotelGame.BravoHotelCharacter.ClientChoosePerkDeck(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EBF870>
@@ -5565,7 +5565,7 @@ struct ABravoHotelCharacter : ACharacter {
 };
 
 // Class BravoHotelGame.BHPersonalSupplySystemComponent
-struct UBHPersonalSupplySystemComponent : UActorComponent {
+class UBHPersonalSupplySystemComponent : UActorComponent {
 	struct Unknown CurrentSupplyBox; // 0xC0 (8)
 	struct Unknown CurrentSupplyBoxDummy; // 0xC8 (8)
 	struct Unknown* SupplyBoxClass; // 0xD0 (8)
@@ -5597,7 +5597,7 @@ struct UBHPersonalSupplySystemComponent : UActorComponent {
 };
 
 // Class BravoHotelGame.BravoHotelAbilityComponent
-struct UBravoHotelAbilityComponent : UActorComponent {
+class UBravoHotelAbilityComponent : UActorComponent {
 	struct Unknown DefaultBalanceData; // 0x298 (120)
 	struct TMap<Unknown, Unknown>Unknown CharacterBuffDataKeys; // 0x3F8 (80)
 	struct Unknown* DefaultFireCell; // 0x660 (8)
@@ -5662,7 +5662,7 @@ struct UBravoHotelAbilityComponent : UActorComponent {
 };
 
 // Class BravoHotelGame.BuffControlState
-struct UBuffControlState : Object {
+class UBuffControlState : Object {
 	struct TArray<Unknown> ActiveBuffs; // 0x70 (16)
 	struct Unknown BravoHotelCharacter; // 0x80 (8)
 	struct Unknown BravoHotelAbilityComponent; // 0x88 (8)
@@ -5679,7 +5679,7 @@ struct UBuffControlState : Object {
 };
 
 // Class BravoHotelGame.BravoHotelActionComponent
-struct UBravoHotelActionComponent : UActorComponent {
+class UBravoHotelActionComponent : UActorComponent {
 	char bWalking : 0; // 0xC8 (1)
 	char bSprinting : 0; // 0xC8 (1)
 	char bIsProned : 0; // 0xC8 (1)
@@ -5714,7 +5714,7 @@ struct UBravoHotelActionComponent : UActorComponent {
 };
 
 // Class BravoHotelGame.BravoHotelAIPlayerController
-struct ABravoHotelAIPlayerController : AAIController {
+class ABravoHotelAIPlayerController : AAIController {
 	float AutoRotateSpeed; // 0x440 (4)
 	struct FName DefaultWeaponName; // 0x444 (8)
 	struct Unknown NearPlayerController; // 0x468 (8)
@@ -5759,7 +5759,7 @@ struct ABravoHotelAIPlayerController : AAIController {
 };
 
 // Class BravoHotelGame.BravoHotelAircraftBomber
-struct ABravoHotelAircraftBomber : UActor {
+class ABravoHotelAircraftBomber : UActor {
 	struct Unknown MovementComponent; // 0x310 (8)
 	int32_t LoopCount; // 0x318 (4)
 
@@ -5767,7 +5767,7 @@ struct ABravoHotelAircraftBomber : UActor {
 };
 
 // Class BravoHotelGame.BravoHotelAircraftFlight
-struct ABravoHotelAircraftFlight : ACharacter {
+class ABravoHotelAircraftFlight : ACharacter {
 	struct Unknown FixedStartingPoint; // 0x5D8 (8)
 	char bScrambled : 0; // 0x5E0 (1)
 	struct Unknown AudioEmitter; // 0x5E8 (8)
@@ -5775,7 +5775,7 @@ struct ABravoHotelAircraftFlight : ACharacter {
 	struct Unknown StopFlyingEvent; // 0x5F8 (8)
 	struct Unknown FlyingSoundHandle; // 0x600 (4)
 	struct TArray<Unknown> Aircrafts; // 0x608 (16)
-	struct TArray<Unknown> AircraftOrdersForEv; // 0x618 (16)
+	struct TArray<Unknown> AircraftOrdersForEvame; // 0x618 (16)
 	struct TArray<Unknown> AircraftOrdersForOddFormation; // 0x628 (16)
 	enum class Unknow MovementMethod; // 0x638 (1)
 	float ScramblingDuration; // 0x63C (4)
@@ -5834,14 +5834,14 @@ struct ABravoHotelAircraftFlight : ACharacter {
 };
 
 // Class BravoHotelGame.BravoHotelAircraftPoint
-struct ABravoHotelAircraftPoint : ATargetPoint {
+class ABravoHotelAircraftPoint : ATargetPoint {
 	struct Unknown NextPoint; // 0x310 (8)
 
 	void StartFromHere(struct Unknown AircraftFlight, int32_t AircraftCount); // Function BravoHotelGame.BravoHotelAircraftPoint.StartFromHere(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1E6D9E0>
 };
 
 // Class BravoHotelGame.BravoHotelAircraftRouteWidget
-struct UBravoHotelAircraftRouteWidget : UUserWidget {
+class UBravoHotelAircraftRouteWidget : UUserWidget {
 	struct Unknown AirCraftRef; // 0x2A8 (8)
 
 	void UpdateAircraftPosition(struct Unknown MapCompWidget); // Function BravoHotelGame.BravoHotelAircraftRouteWidget.UpdateAircraftPosition(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1E6E3B0>
@@ -5851,7 +5851,7 @@ struct UBravoHotelAircraftRouteWidget : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelAircraftViewer
-struct ABravoHotelAircraftViewer : APawn {
+class ABravoHotelAircraftViewer : APawn {
 	struct Unknown SpringArm; // 0x380 (8)
 	struct Unknown Camera; // 0x388 (8)
 	float StartYaw; // 0x390 (4)
@@ -5863,7 +5863,7 @@ struct ABravoHotelAircraftViewer : APawn {
 };
 
 // Class BravoHotelGame.BravoHotelAliveInfoWidget
-struct UBravoHotelAliveInfoWidget : UUserWidget {
+class UBravoHotelAliveInfoWidget : UUserWidget {
 	struct Unknown Canvas_Aircraft; // 0x250 (8)
 	struct Unknown T_BoardingCount; // 0x258 (8)
 	struct Unknown T_MaxBoardingCount; // 0x260 (8)
@@ -5884,7 +5884,7 @@ struct UBravoHotelAliveInfoWidget : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelAmbientSound
-struct ABravoHotelAmbientSound : AAkAmbientSound {
+class ABravoHotelAmbientSound : AAkAmbientSound {
 	char bUseMultiplePositions : 0; // 0x350 (1)
 	struct TArray<Unknown> RelativeMultiplePositions; // 0x358 (16)
 	char bUseSynchronization : 0; // 0x368 (1)
@@ -5895,7 +5895,7 @@ struct ABravoHotelAmbientSound : AAkAmbientSound {
 };
 
 // Class BravoHotelGame.BravoHotelEquippableActor
-struct ABravoHotelEquippableActor : UActor {
+class ABravoHotelEquippableActor : UActor {
 	struct Unknown ReplicatedComponent; // 0x310 (8)
 	struct Unknown StaticMesh; // 0x318 (8)
 	struct Unknown SkelMesh; // 0x320 (8)
@@ -5911,7 +5911,7 @@ struct ABravoHotelEquippableActor : UActor {
 	struct FName OverrideAttachSocketName; // 0x7F8 (8)
 	struct FName OverrideAttachSocketName_Backpack; // 0x800 (8)
 	struct Unknown OverrideEquipAnimMontage_StandSlot; // 0x808 (16)
-	struct Unknown OverrideEquipAnimMontage_; // 0x818 (16)
+	struct Unknown OverrideEquipAnimMontage_ProneSlot; // 0x818 (16)
 	struct Unknown OverrideUnequipAnimMontage_StandSlot; // 0x828 (16)
 	struct Unknown OverrideUnequipAnimMontage_ProneSlot; // 0x838 (16)
 	char bIsEquipped : 0; // 0x850 (1)
@@ -5934,7 +5934,7 @@ struct ABravoHotelEquippableActor : UActor {
 };
 
 // Class BravoHotelGame.BravoHotelWeaponBase
-struct ABravoHotelWeaponBase : ABravoHotelEquippableActor {
+class ABravoHotelWeaponBase : ABravoHotelEquippableActor {
 	struct Unknown WeaponReplicatedComponent; // 0x948 (8)
 	struct Unknown SkelMesh1P; // 0xAB8 (8)
 	struct Unknown WeaponDataTable; // 0x8C8 (16)
@@ -5975,7 +5975,7 @@ struct ABravoHotelWeaponBase : ABravoHotelEquippableActor {
 	struct Unknown ShiningEffectComponent; // 0x8B0 (8)
 	struct Unknown ShiningEffect; // 0xE78 (8)
 	float LastFireTime; // 0x8E8 (4)
-	int32_t magazine; // 0x1030 (4)
+	int32_t m; // 0x1030 (4)
 	int32_t BackPackInTotalAmmoCount; // 0xFE4 (4)
 	int32_t MagazineCapacity; // 0xAD8 (4)
 	float UI_CurrentDamage; // 0xF28 (4)
@@ -5998,7 +5998,7 @@ struct ABravoHotelWeaponBase : ABravoHotelEquippableActor {
 	float AOSPositionInterpSpeed_FPP; // 0xB7C (4)
 	char bVisibleAbsolutely : 0; // 0xF18 (1)
 
-	void UpdateActorHiddenInGame_T(); // Function BravoHotelGame.BravoHotelWeaponBase.UpdateActorHiddenInGame_T(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x202F6B0>
+	void UpdateActorHiddenInGame_TPPOnly(); // Function BravoHotelGame.BravoHotelWeaponBase.UpdateActorHiddenInGame_TPPOnly(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x202F6B0>
 	void StopCurrentPlayingMontage(); // Function BravoHotelGame.BravoHotelWeaponBase.StopCurrentPlayingMontage(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x202F690>
 	void StopAllAction(); // Function BravoHotelGame.BravoHotelWeaponBase.StopAllAction(Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x202F670>
 	void SetWeaponVisibilityAbsolutely(char bNewVisibleAbsolutely); // Function BravoHotelGame.BravoHotelWeaponBase.SetWeaponVisibilityAbsolutely(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x202F5E0>
@@ -6053,7 +6053,7 @@ struct ABravoHotelWeaponBase : ABravoHotelEquippableActor {
 };
 
 // Class BravoHotelGame.BravoHotelAmplifier
-struct ABravoHotelAmplifier : ABravoHotelWeaponBase {
+class ABravoHotelAmplifier : ABravoHotelWeaponBase {
 	float AmplifierLength; // 0x1BD4 (4)
 	struct Unknown TimerHandle_OnStartEffectEvent; // 0x1BD8 (8)
 	struct TArray<Unknown> DetectedCharacters; // 0x1BE0 (16)
@@ -6068,7 +6068,7 @@ struct ABravoHotelAmplifier : ABravoHotelWeaponBase {
 };
 
 // Class BravoHotelGame.BravoHotelAnimInstance
-struct UBravoHotelAnimInstance : UAnimInstance {
+class UBravoHotelAnimInstance : UAnimInstance {
 	struct Unknown Character; // 0x2C0 (8)
 	struct Unknown CharacterMovementComponent; // 0x658 (8)
 	char bIsAccelerating : 0; // 0x784 (1)
@@ -6109,7 +6109,7 @@ struct UBravoHotelAnimInstance : UAnimInstance {
 	struct Unknown VehicleUnarmedAnimStand; // 0x708 (8)
 	struct Unknown VehicleAnimIdle; // 0x500 (8)
 	struct Unknown VehicleAnimAOS; // 0x378 (8)
-	struct Unknown VehicleAnimIdleForMontage; // 0x5F8 (8)
+	struct Unknown VehicleAnimIdleForMontagePlay; // 0x5F8 (8)
 	struct Unknown VehicleAimingAimOffset; // 0xC30 (8)
 	struct Unknown VehicleIdleAimOffset; // 0x608 (8)
 	struct Unknown VehicleUnderThrowAimOffset; // 0x7C8 (8)
@@ -6229,7 +6229,7 @@ struct UBravoHotelAnimInstance : UAnimInstance {
 	struct Unknown JumpAnim_Rifle_NotMoving; // 0x668 (8)
 	struct Unknown JumpAnim_Rifle_Moving; // 0x320 (8)
 	struct Unknown JumpAnim_Pistol_NotMoving; // 0x528 (8)
-	struct Unknown JumpAnim_Pistol_Mov; // 0x6F0 (8)
+	struct Unknown JumpAnim_Pistol_Movovi; // 0x6F0 (8)
 	struct Unknown ToCriticalTime; // 0x7B8 (8)
 	struct Unknown CriticalTimeIdle; // 0x5E8 (8)
 	struct Unknown Resuscitated; // 0x678 (8)
@@ -6276,7 +6276,7 @@ struct UBravoHotelAnimInstance : UAnimInstance {
 
 	char Transition_Swim_ToMovementModeConduit(); // Function BravoHotelGame.BravoHotelAnimInstance.Transition_Swim_ToMovementModeConduit(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1E73710>
 	char Transition_Swim_NotMovingToMoving(); // Function BravoHotelGame.BravoHotelAnimInstance.Transition_Swim_NotMovingToMoving(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1E736E0>
-	char Transition_Swim_Mov(); // Function BravoHotelGame.BravoHotelAnimInstance.Transition_Swim_Mov(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1E736B0>
+	char Transition_Swim_Movage(); // Function BravoHotelGame.BravoHotelAnimInstance.Transition_Swim_Mov(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1E736B0>
 	char Transition_StandToProne_ToProne_4(); // Function BravoHotelGame.BravoHotelAnimInstance.Transition_StandToProne_ToProne_4(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1E72780>
 	char Transition_StandToProne_ToProne_3(int32_t MachineIndex, int32_t StateIndex); // Function BravoHotelGame.BravoHotelAnimInstance.Transition_StandToProne_ToProne_3(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1E72FC0>
 	char Transition_StandToProne_ToProne_2(int32_t MachineIndex, int32_t StateIndex); // Function BravoHotelGame.BravoHotelAnimInstance.Transition_StandToProne_ToProne_2(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1E72F00>
@@ -6285,7 +6285,7 @@ struct UBravoHotelAnimInstance : UAnimInstance {
 	char Transition_StandToCrouch_ToCrouch_3(); // Function BravoHotelGame.BravoHotelAnimInstance.Transition_StandToCrouch_ToCrouch_3(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1E71DF0>
 	char Transition_StandToCrouch_ToCrouch_2(int32_t MachineIndex, int32_t StateIndex); // Function BravoHotelGame.BravoHotelAnimInstance.Transition_StandToCrouch_ToCrouch_2(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1E72E10>
 	char Transition_Stand_ToStandToProne(); // Function BravoHotelGame.BravoHotelAnimInstance.Transition_Stand_ToStandToProne(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1E71FA0>
-	char Transition_Stand_ToStandToCrouch(); // Function BravoHotelGame.BravoHotelAnimInstance.Transition_Stand_ToStandToCrouch(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1E73680>
+	char Transition_Stand_ToStandToCrouc(); // Function BravoHotelGame.BravoHotelAnimInstance.Transition_Stand_ToStandToCrouc(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1E73680>
 	char Transition_Stand_ToMoveToLadder(); // Function BravoHotelGame.BravoHotelAnimInstance.Transition_Stand_ToMoveToLadder(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1E73650>
 	char Transition_Stand_ToCrouch_4(); // Function BravoHotelGame.BravoHotelAnimInstance.Transition_Stand_ToCrouch_4(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1E73620>
 	char Transition_Stand_ToCrouch_3(); // Function BravoHotelGame.BravoHotelAnimInstance.Transition_Stand_ToCrouch_3(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1E735F0>
@@ -6384,7 +6384,7 @@ struct UBravoHotelAnimInstance : UAnimInstance {
 };
 
 // Class BravoHotelGame.BravoHotelAnimInstanceFPP
-struct UBravoHotelAnimInstanceFPP : UAnimInstance {
+class UBravoHotelAnimInstanceFPP : UAnimInstance {
 	struct Unknown CharacterRef; // 0x268 (8)
 	struct Unknown CurrentWeaponRef; // 0x270 (8)
 	struct Unknown AnimInstanceRef; // 0x278 (8)
@@ -6458,7 +6458,7 @@ struct UBravoHotelAnimInstanceFPP : UAnimInstance {
 	struct Unknown AttachWeaponToLHandTransform; // 0x3B0 (48)
 	struct Unknown AttachLHandIK_Location; // 0x3E0 (12)
 	struct Unknown AttachLHandIK_Rotation; // 0x3EC (12)
-	char b : 0; // 0x3F8 (1)
+	char bReloading : 0; // 0x3F8 (1)
 	char bBoltAction : 0; // 0x3F9 (1)
 	char MovementMode; // 0x3FA (1)
 	char bIsInVehicle : 0; // 0x3FB (1)
@@ -6559,7 +6559,7 @@ struct UBravoHotelAnimInstanceFPP : UAnimInstance {
 };
 
 // Class BravoHotelGame.BravoHotelAnimInstanceParachute
-struct UBravoHotelAnimInstanceParachute : UAnimInstance {
+class UBravoHotelAnimInstanceParachute : UAnimInstance {
 	struct Unknown CharacterRef; // 0x268 (8)
 	float DeltaTime; // 0x270 (4)
 	float InputForward; // 0x274 (4)
@@ -6588,7 +6588,7 @@ struct UBravoHotelAnimInstanceParachute : UAnimInstance {
 };
 
 // Class BravoHotelGame.BravoHotelAnimInstancePostprocess
-struct UBravoHotelAnimInstancePostprocess : UAnimInstance {
+class UBravoHotelAnimInstancePostprocess : UAnimInstance {
 	struct Unknown Character; // 0x268 (8)
 	struct Unknown CharacterMovementComponent; // 0x270 (8)
 	float DeltaTime; // 0x278 (4)
@@ -6710,7 +6710,7 @@ struct UBravoHotelAnimInstancePostprocess : UAnimInstance {
 };
 
 // Class BravoHotelGame.BravoHotelAnimInstanceUsableItem
-struct UBravoHotelAnimInstanceUsableItem : UAnimInstance {
+class UBravoHotelAnimInstanceUsableItem : UAnimInstance {
 	struct Unknown OwningActorRef; // 0x268 (8)
 	struct Unknown CharacterRef; // 0x270 (8)
 	float DeltaTime; // 0x278 (4)
@@ -6723,7 +6723,7 @@ struct UBravoHotelAnimInstanceUsableItem : UAnimInstance {
 };
 
 // Class BravoHotelGame.BravoHotelAnimInstanceWeapon
-struct UBravoHotelAnimInstanceWeapon : UAnimInstance {
+class UBravoHotelAnimInstanceWeapon : UAnimInstance {
 	struct Unknown CharacterRef; // 0x268 (8)
 	struct Unknown WeaponRef; // 0x270 (8)
 	struct Unknown CharacterAnimInstance1PRef; // 0x278 (8)
@@ -6745,20 +6745,20 @@ struct UBravoHotelAnimInstanceWeapon : UAnimInstance {
 	char bIsAimingDownside : 0; // 0x321 (1)
 };
 
-// Class BravoHotelGame.BravoHotelAnimNotifyState_AttachWeaponToLHand
-struct UBravoHotelAnimNotifyState_AttachWeaponToLHand : UAnimNotifyState {
+// Class BravoHotelGame.BravoHotelAnimNotifyState_Attac
+class UBravoHotelAnimNotifyState_Attac : UAnimNotifyState {
 	struct FName WeaponBone; // 0x30 (8)
 };
 
 // Class BravoHotelGame.BravoHotelAnimNotifyState_BreakDestructable
-struct UBravoHotelAnimNotifyState_BreakDestructable : UAnimNotifyState {
+class UBravoHotelAnimNotifyState_BreakDestructable : UAnimNotifyState {
 	float UpdateFrequency; // 0x30 (4)
 	struct FName CheckBoneName; // 0x34 (8)
 	float TraceRadius; // 0x3C (4)
 };
 
 // Class BravoHotelGame.BravoHotelAnimNotifyState_Melee
-struct UBravoHotelAnimNotifyState_Melee : UAnimNotifyState {
+class UBravoHotelAnimNotifyState_Melee : UAnimNotifyState {
 	float UpdateFrequency; // 0x30 (4)
 	struct FName TraceStartSocketName; // 0x34 (8)
 	struct FName TraceEndSocketName; // 0x3C (8)
@@ -6767,7 +6767,7 @@ struct UBravoHotelAnimNotifyState_Melee : UAnimNotifyState {
 };
 
 // Class BravoHotelGame.BravoHotelAnimNotifyState_TimedParticle
-struct UBravoHotelAnimNotifyState_TimedParticle : UAnimNotifyState {
+class UBravoHotelAnimNotifyState_TimedParticle : UAnimNotifyState {
 	struct Unknown PSTemplate; // 0x30 (8)
 	struct Unknown PSTemplate_OnlyOtherPlayerSee; // 0x38 (8)
 	struct FName SocketName; // 0x40 (8)
@@ -6778,7 +6778,7 @@ struct UBravoHotelAnimNotifyState_TimedParticle : UAnimNotifyState {
 };
 
 // Class BravoHotelGame.BravoHotelAnimNotify_AttachMesh
-struct UBravoHotelAnimNotify_AttachMesh : UAnimNotify {
+class UBravoHotelAnimNotify_AttachMesh : UAnimNotify {
 	struct TSoftObjectPtr<Unknown> StaticMesh; // 0x38 (40)
 	struct TSoftObjectPtr<Unknown> SkeletalMesh; // 0x60 (40)
 	char bUsePhysics : 0; // 0x88 (1)
@@ -6788,13 +6788,13 @@ struct UBravoHotelAnimNotify_AttachMesh : UAnimNotify {
 };
 
 // Class BravoHotelGame.BravoHotelAnimNotify_DropMagazine
-struct UBravoHotelAnimNotify_DropMagazine : UAnimNotify {
+class UBravoHotelAnimNotify_DropMagazine : UAnimNotify {
 	struct FName WeaponSlotNameForSpawn; // 0x38 (8)
 	struct Unknown* MagazineClass; // 0x40 (8)
 };
 
 // Class BravoHotelGame.BravoHotelAnimNotify_PlayConditionedSound
-struct UBravoHotelAnimNotify_PlayConditionedSound : UAnimNotify {
+class UBravoHotelAnimNotify_PlayConditionedSound : UAnimNotify {
 	struct Unknown ConditionedSound; // 0x38 (16)
 	char bFollow : 0; // 0x48 (1)
 	char bPlayOnServer : 0; // 0x49 (1)
@@ -6806,31 +6806,31 @@ struct UBravoHotelAnimNotify_PlayConditionedSound : UAnimNotify {
 };
 
 // Class BravoHotelGame.BravoHotelAnimNotify_PlayMontageOnInteractedTarget
-struct UBravoHotelAnimNotify_PlayMontageOnInteractedTarget : UAnimNotify {
+class UBravoHotelAnimNotify_PlayMontageOnInteractedTarget : UAnimNotify {
 	struct Unknown TargetMontage; // 0x38 (8)
 	float PlayRate; // 0x40 (4)
 	struct FName StartSectionName; // 0x44 (8)
 };
 
 // Class BravoHotelGame.BravoHotelAnimNotify_TimedPostProcess
-struct UBravoHotelAnimNotify_TimedPostProcess : UAnimNotify {
+class UBravoHotelAnimNotify_TimedPostProcess : UAnimNotify {
 	struct FName EffectRowName; // 0x38 (8)
 	float Duration; // 0x40 (4)
 	char bFPPOnly : 0; // 0x44 (1)
 };
 
 // Class BravoHotelGame.BravoHotelAnimNotify_Voice
-struct UBravoHotelAnimNotify_Voice : UAnimNotify {
+class UBravoHotelAnimNotify_Voice : UAnimNotify {
 	struct FName SoundIdx; // 0x38 (8)
 };
 
 // Class BravoHotelGame.BravoHotelAppAudioStateManager
-struct UBravoHotelAppAudioStateManager : Object {
+class UBravoHotelAppAudioStateManager : Object {
 	struct TMap<Unknown, Unknown>Unknown StateConditionMap; // 0x28 (80)
 };
 
 // Class BravoHotelGame.BravoHotelAreaSkillZone
-struct ABravoHotelAreaSkillZone : UActor {
+class ABravoHotelAreaSkillZone : UActor {
 	struct Unknown SphereCollision; // 0x310 (8)
 	struct Unknown AreaParticle; // 0x318 (8)
 	struct Unknown AreaParticleOwner; // 0x320 (8)
@@ -6851,7 +6851,7 @@ struct ABravoHotelAreaSkillZone : UActor {
 };
 
 // Class BravoHotelGame.BravoHotelAreaSkillZoneWetFog
-struct ABravoHotelAreaSkillZoneWetFog : ABravoHotelAreaSkillZone {
+class ABravoHotelAreaSkillZoneWetFog : ABravoHotelAreaSkillZone {
 	struct Unknown WetFogZoneInfo; // 0x368 (12)
 	struct TArray<Unknown> EffectActiveCharacters; // 0x378 (16)
 
@@ -6859,12 +6859,12 @@ struct ABravoHotelAreaSkillZoneWetFog : ABravoHotelAreaSkillZone {
 };
 
 // Class BravoHotelGame.BravoHotelCoherentObject
-struct UBravoHotelCoherentObject : Object {
+class UBravoHotelCoherentObject : Object {
 	struct Unknown CoherentWidget; // 0x28 (8)
 };
 
 // Class BravoHotelGame.BravoHotelArmory
-struct UBravoHotelArmory : UBravoHotelCoherentObject {
+class UBravoHotelArmory : UBravoHotelCoherentObject {
 	struct TMap<Unknown, Unknown>Unknown ArmoryMeshMap; // 0x30 (80)
 	struct FMulticastInlineDelegate ChangeSceneDelegate; // 0x80 (16)
 	struct FMulticastInlineDelegate MouseEventDelegate; // 0x90 (16)
@@ -6894,7 +6894,7 @@ struct UBravoHotelArmory : UBravoHotelCoherentObject {
 };
 
 // Class BravoHotelGame.BravoHotelArmoryMeshActor
-struct ABravoHotelArmoryMeshActor : UActor {
+class ABravoHotelArmoryMeshActor : UActor {
 	struct Unknown ArmoryMesh; // 0x310 (8)
 	struct Unknown DefaultTransform; // 0x320 (48)
 	struct Unknown LocationOffset; // 0x350 (12)
@@ -6903,7 +6903,7 @@ struct ABravoHotelArmoryMeshActor : UActor {
 };
 
 // Class BravoHotelGame.BravoHotelAttachedUsableItem
-struct ABravoHotelAttachedUsableItem : UActor {
+class ABravoHotelAttachedUsableItem : UActor {
 	struct Unknown WorldStaticMesh; // 0x310 (8)
 	struct Unknown WorldSkelMesh; // 0x318 (8)
 	struct Unknown ShadowStaticMesh; // 0x320 (8)
@@ -6916,7 +6916,7 @@ struct ABravoHotelAttachedUsableItem : UActor {
 };
 
 // Class BravoHotelGame.BravoHotelAttackDamageWidget
-struct UBravoHotelAttackDamageWidget : UUserWidget {
+class UBravoHotelAttackDamageWidget : UUserWidget {
 	struct Unknown Enemy_DamageFadeIn; // 0x248 (8)
 	struct Unknown Enemy_DamageFadeOut; // 0x250 (8)
 	struct Unknown Enemy_DamageBroken; // 0x258 (8)
@@ -6949,7 +6949,7 @@ struct UBravoHotelAttackDamageWidget : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelAttackUserWidget
-struct UBravoHotelAttackUserWidget : UUserWidget {
+class UBravoHotelAttackUserWidget : UUserWidget {
 	struct Unknown Enemy_Lv_Motion_FadeIn; // 0x248 (8)
 	struct Unknown Enemy_Lv_Motion_FadeOut; // 0x250 (8)
 	struct Unknown TimerHandle_EventRemoveWidget; // 0x258 (8)
@@ -6966,7 +6966,7 @@ struct UBravoHotelAttackUserWidget : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelAudioAmbientMapData
-struct UBravoHotelAudioAmbientMapData : UDataAsset {
+class UBravoHotelAudioAmbientMapData : UDataAsset {
 	struct TMap<Unknown, Unknown>Unknown StateColors; // 0x30 (80)
 	struct TMap<Unknown, Unknown>Unknown NewStateColors; // 0x80 (80)
 	struct Unknown WorldSize; // 0xD0 (8)
@@ -6976,7 +6976,7 @@ struct UBravoHotelAudioAmbientMapData : UDataAsset {
 };
 
 // Class BravoHotelGame.BravoHotelAudioEmitterComponent
-struct UBravoHotelAudioEmitterComponent : UAkComponent {
+class UBravoHotelAudioEmitterComponent : UAkComponent {
 	char bUseEventRadiusAsMinBounds : 0; // 0x488 (1)
 	float MinBoundsRadius; // 0x48C (4)
 	struct FMulticastInlineDelegate EmitterRegisteredEv; // 0x4A0 (16)
@@ -6984,17 +6984,17 @@ struct UBravoHotelAudioEmitterComponent : UAkComponent {
 };
 
 // Class BravoHotelGame.BravoHotelAudioEventDescription
-struct UBravoHotelAudioEventDescription : UDataAsset {
+class UBravoHotelAudioEventDescription : UDataAsset {
 	struct TMap<Unknown, Unknown>Unknown EventAssetDataMap; // 0x30 (80)
 };
 
 // Class BravoHotelGame.BravoHotelAudioListenerComponent
-struct UBravoHotelAudioListenerComponent : UAkComponent {
+class UBravoHotelAudioListenerComponent : UAkComponent {
 	struct Unknown AmbientMapData; // 0x4C0 (8)
 };
 
 // Class BravoHotelGame.BravoHotelAudioPortalComponent
-struct UBravoHotelAudioPortalComponent : UBoxComponent {
+class UBravoHotelAudioPortalComponent : UBoxComponent {
 	char bEnable : 0; // 0x4F0 (1)
 	enum class Unknow InitialState; // 0x4F1 (1)
 
@@ -7004,7 +7004,7 @@ struct UBravoHotelAudioPortalComponent : UBoxComponent {
 };
 
 // Class BravoHotelGame.BravoHotelAudioRoomComponent
-struct UBravoHotelAudioRoomComponent : UAkRoomComponent {
+class UBravoHotelAudioRoomComponent : UAkRoomComponent {
 	struct Unknown ParentMeshComponent; // 0x290 (8)
 	enum class Unknow OcclusionMethod; // 0x298 (4)
 	struct FString AmbienceState; // 0x2A0 (16)
@@ -7032,7 +7032,7 @@ struct UBravoHotelAudioRoomComponent : UAkRoomComponent {
 };
 
 // Class BravoHotelGame.BravoHotelAutoMoveSaveGame
-struct UBravoHotelAutoMoveSaveGame : USaveGame {
+class UBravoHotelAutoMoveSaveGame : USaveGame {
 	struct Unknown StartPos; // 0x28 (12)
 	struct TArray<Unknown> RotationKeyTime; // 0x38 (16)
 	struct TArray<Unknown> RotationData; // 0x48 (16)
@@ -7046,7 +7046,7 @@ struct UBravoHotelAutoMoveSaveGame : USaveGame {
 };
 
 // Class BravoHotelGame.BravoHotelBaseHUD
-struct ABravoHotelBaseHUD : AHUD {
+class ABravoHotelBaseHUD : AHUD {
 	struct Unknown* MainWidgetClass; // 0x400 (8)
 	struct Unknown MainWidget; // 0x408 (8)
 
@@ -7054,7 +7054,7 @@ struct ABravoHotelBaseHUD : AHUD {
 };
 
 // Class BravoHotelGame.BravoHotelBlueZone
-struct ABravoHotelBlueZone : UActor {
+class ABravoHotelBlueZone : UActor {
 	struct Unknown BlueZoneMesh; // 0x310 (8)
 	struct Unknown PainCausingComponent; // 0x318 (8)
 	struct Unknown* TransportPawnClass; // 0x320 (8)
@@ -7105,12 +7105,12 @@ struct ABravoHotelBlueZone : UActor {
 };
 
 // Class BravoHotelGame.GameRuleInvokerComponent
-struct UGameRuleInvokerComponent : UActorComponent {
+class UGameRuleInvokerComponent : UActorComponent {
 	char bIsFollowingRule : 0; // 0xB0 (1)
 };
 
 // Class BravoHotelGame.BravoHotelBlueZoneGameRule
-struct UBravoHotelBlueZoneGameRule : UGameRuleInvokerComponent {
+class UBravoHotelBlueZoneGameRule : UGameRuleInvokerComponent {
 	struct Unknown BluezoneStartEvent; // 0xD0 (8)
 	struct Unknown BluezoneEndEvent; // 0xD8 (8)
 
@@ -7119,18 +7119,18 @@ struct UBravoHotelBlueZoneGameRule : UGameRuleInvokerComponent {
 };
 
 // Class BravoHotelGame.BravoHotelBootyBoxActor
-struct ABravoHotelBootyBoxActor : ABravoHotelDropBoxActor {
+class ABravoHotelBootyBoxActor : ABravoHotelDropBoxActor {
 	struct Unknown RarityParticle; // 0x390 (8)
 	struct Unknown RarityParticleComponent; // 0x398 (8)
 	enum class Unknow HighestRarityOfCurrentItems; // 0x3A0 (1)
-	struct Unknown TimerHandle_Deactiv; // 0x3B0 (8)
+	struct Unknown TimerHandle_Deactivnen; // 0x3B0 (8)
 
 	void RefreshHighestRarityOfCurrentItems(); // Function BravoHotelGame.BravoHotelBootyBoxActor.RefreshHighestRarityOfCurrentItems(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1E8E990>
 	void OnRep_HighestRarityOfCurrentItems(enum class Unknow& PrevRarity); // Function BravoHotelGame.BravoHotelBootyBoxActor.OnRep_HighestRarityOfCurrentItems(Final|Native|Protected|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1E8E900>
 };
 
 // Class BravoHotelGame.BravoHotelBrokenEquipment
-struct ABravoHotelBrokenEquipment : UActor {
+class ABravoHotelBrokenEquipment : UActor {
 	struct Unknown WorldStaticMesh; // 0x310 (8)
 	struct Unknown WorldSkelMesh; // 0x318 (8)
 	int32_t Equipmentlevel; // 0x320 (4)
@@ -7138,12 +7138,12 @@ struct ABravoHotelBrokenEquipment : UActor {
 };
 
 // Class BravoHotelGame.BravoHotelBTServiceDetectTarget
-struct UBravoHotelBTServiceDetectTarget : UBTService {
+class UBravoHotelBTServiceDetectTarget : UBTService {
 	struct Unknown BlackboardComponent; // 0x70 (8)
 };
 
 // Class BravoHotelGame.BravoHotelBuffBase
-struct UBravoHotelBuffBase : Object {
+class UBravoHotelBuffBase : Object {
 	struct Unknown BravoHotelCharacter; // 0x240 (8)
 	struct Unknown BravoHotelAbilityComponent; // 0x248 (8)
 	struct TArray<Unknown> TimerHandles; // 0x280 (16)
@@ -7157,45 +7157,45 @@ struct UBravoHotelBuffBase : Object {
 };
 
 // Class BravoHotelGame.BHBHeadBanging
-struct UBHBHeadBanging : UBHBAddConditionBase {
+class UBHBHeadBanging : UBHBAddConditionBase {
 	float HeadBangingStartTime; // 0x2C8 (4)
 	float HeadBangingEndTime; // 0x2CC (4)
 };
 
 // Class BravoHotelGame.BHBDoorBreaching
-struct UBHBDoorBreaching : UBravoHotelBuffBase {
+class UBHBDoorBreaching : UBravoHotelBuffBase {
 	struct Unknown TimerHandle_EndBuff; // 0x2B8 (8)
 };
 
 // Class BravoHotelGame.BHBWindowBreaching
-struct UBHBWindowBreaching : UBravoHotelBuffBase {
+class UBHBWindowBreaching : UBravoHotelBuffBase {
 	struct Unknown TimerHandle_EndBuff; // 0x2B8 (8)
 };
 
 // Class BravoHotelGame.BHBForceField
-struct UBHBForceField : UBravoHotelBuffBase {
+class UBHBForceField : UBravoHotelBuffBase {
 	struct TArray<Unknown> AnimInstanceArray; // 0x2B8 (16)
 
 	void OnExitForceField(); // Function BravoHotelGame.BHBForceField.OnExitForceField(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EA7BE0>
 };
 
 // Class BravoHotelGame.BHBReadyToSnipe
-struct UBHBReadyToSnipe : UBHBConditionedAbilityModify {
+class UBHBReadyToSnipe : UBHBConditionedAbilityModify {
 	float MaxReadyToSnipeTime; // 0x3A0 (4)
 };
 
 // Class BravoHotelGame.BHBCamouflage
-struct UBHBCamouflage : UBravoHotelBuffBase {
+class UBHBCamouflage : UBravoHotelBuffBase {
 	struct FString BuffMutableString; // 0x2B8 (16)
 };
 
 // Class BravoHotelGame.BHBWaterGhillie
-struct UBHBWaterGhillie : UBravoHotelBuffBase {
+class UBHBWaterGhillie : UBravoHotelBuffBase {
 	struct FString BuffMutableString; // 0x2B8 (16)
 };
 
 // Class BravoHotelGame.BHBMaterialEffectBase
-struct UBHBMaterialEffectBase : UBravoHotelBuffBase {
+class UBHBMaterialEffectBase : UBravoHotelBuffBase {
 	struct Unknown CameraPostProcessPreset; // 0x380 (8)
 	struct TArray<Unknown> TargetMeshs; // 0x388 (16)
 
@@ -7203,25 +7203,25 @@ struct UBHBMaterialEffectBase : UBravoHotelBuffBase {
 };
 
 // Class BravoHotelGame.BHBWeaponUpgradeEffectBase
-struct UBHBWeaponUpgradeEffectBase : UBHBUpgradeMaterialEffectBase {
+class UBHBWeaponUpgradeEffectBase : UBHBUpgradeMaterialEffectBase {
 	struct Unknown TargetWeapon; // 0x420 (8)
 };
 
 // Class BravoHotelGame.BHBAdditiveCrosshairBase
-struct UBHBAdditiveCrosshairBase : UBravoHotelBuffBase {
+class UBHBAdditiveCrosshairBase : UBravoHotelBuffBase {
 	struct FName CrosshairTableRow; // 0x2B8 (8)
 
 	char IsNeedToDrawAdditiv(); // Function BravoHotelGame.BHBAdditiveCrosshairBase.IsNeedToDrawAdditiv(Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EA78B0>
 };
 
 // Class BravoHotelGame.BHBUltimate_Recon
-struct UBHBUltimate_Recon : UBHBActiveBuffBase {
+class UBHBUltimate_Recon : UBHBActiveBuffBase {
 	int32_t CurrentActiveCount; // 0x2C0 (4)
 	int32_t MaxActiveCount; // 0x2C4 (4)
 };
 
 // Class BravoHotelGame.BravoHotelBuilding
-struct ABravoHotelBuilding : UActor {
+class ABravoHotelBuilding : UActor {
 	float ExteriorMaxDrawDistance; // 0x310 (4)
 	float InteriorMaxDrawDistance; // 0x314 (4)
 	int32_t ItemWorldSpawnTableIndex; // 0x318 (4)
@@ -7241,7 +7241,7 @@ struct ABravoHotelBuilding : UActor {
 };
 
 // Class BravoHotelGame.BravoHotelRemoteController
-struct ABravoHotelRemoteController : ABravoHotelWeaponBase {
+class ABravoHotelRemoteController : ABravoHotelWeaponBase {
 	struct Unknown ActiveAnim; // 0x1BD0 (16)
 	struct Unknown ActiveSound; // 0x1BE0 (8)
 	enum class Unknow RemoteControlState; // 0x1BE8 (1)
@@ -7255,7 +7255,7 @@ struct ABravoHotelRemoteController : ABravoHotelWeaponBase {
 };
 
 // Class BravoHotelGame.BravoHotelC4RemoteController
-struct ABravoHotelC4RemoteController : ABravoHotelRemoteController {
+class ABravoHotelC4RemoteController : ABravoHotelRemoteController {
 	struct Unknown ThrownC4; // 0x1BF0 (8)
 	float EnableDistance; // 0x1BF8 (4)
 	float UpdateCheckTime; // 0x1C08 (4)
@@ -7269,12 +7269,12 @@ struct ABravoHotelC4RemoteController : ABravoHotelRemoteController {
 };
 
 // Class BravoHotelGame.BravoHotelCameraComponent
-struct UBravoHotelCameraComponent : UCineCameraComponent {
+class UBravoHotelCameraComponent : UCineCameraComponent {
 	float ResetCameraMovementFOVThreshold; // 0x978 (4)
 };
 
 // Class BravoHotelGame.BravoHotelCarKey
-struct ABravoHotelCarKey : ABravoHotelRemoteController {
+class ABravoHotelCarKey : ABravoHotelRemoteController {
 	struct TArray<Unknown> FindVehicles; // 0x1BF0 (16)
 	struct Unknown CarKeySound; // 0x1C00 (8)
 	struct Unknown TimerHandle_Deactiv; // 0x1C08 (8)
@@ -7304,7 +7304,7 @@ struct ABravoHotelCarKey : ABravoHotelRemoteController {
 };
 
 // Class BravoHotelGame.BHStationaryCharInfo
-struct UBHStationaryCharInfo : UActorComponent {
+class UBHStationaryCharInfo : UActorComponent {
 	char bLocalCharacterInReplay : 0; // 0xC0 (1)
 	struct Unknown CurrentPerkDeckSelectInfo; // 0xC8 (24)
 	struct Unknown SavedPlayerState; // 0xE0 (8)
@@ -7318,7 +7318,7 @@ struct UBHStationaryCharInfo : UActorComponent {
 };
 
 // Class BravoHotelGame.BHCharacterReplication
-struct UBHCharacterReplication : UActorComponent {
+class UBHCharacterReplication : UActorComponent {
 	char bIsFreeLook : 0; // 0xC0 (1)
 	char bFPSK_WantToFPSMode : 0; // 0xC0 (1)
 	char bIsFlameDamaged : 0; // 0xC0 (1)
@@ -7346,7 +7346,7 @@ struct UBHCharacterReplication : UActorComponent {
 };
 
 // Class BravoHotelGame.BravoHotelCharacterMovementComponent
-struct UBravoHotelCharacterMovementComponent : UCharacterMovementComponent {
+class UBravoHotelCharacterMovementComponent : UCharacterMovementComponent {
 	float MoveRightSpeedModifier; // 0x7D0 (4)
 	float MoveBackSpeedModifier; // 0x724 (4)
 	float WalkInNoProneWaterSpeedModifier; // 0x80C (4)
@@ -7393,13 +7393,13 @@ struct UBravoHotelCharacterMovementComponent : UCharacterMovementComponent {
 	void ServerSendTimeStampFromClient(float Timestamp); // Function BravoHotelGame.BravoHotelCharacterMovementComponent.ServerSendTimeStampFromClient(Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EDA5E0>
 	void ServerScaleByMoveDeltaTime(float Scale); // Function BravoHotelGame.BravoHotelCharacterMovementComponent.ServerScaleByMoveDeltaTime(Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EDA530>
 	void ServerApplyNetworkMovementMode(char NewMovementMode); // Function BravoHotelGame.BravoHotelCharacterMovementComponent.ServerApplyNetworkMovementMode(Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EDA480>
-	void SendTimeStampToServ(); // Function BravoHotelGame.BravoHotelCharacterMovementComponent.SendTimeStampToServ(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EDA460>
-	void MulticastScaleByMov(float Scale); // Function BravoHotelGame.BravoHotelCharacterMovementComponent.MulticastScaleByMov(Net|NetReliableNative|Event|NetMulticast|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EDA3E0>
+	void SendTimeStampToServ(); // Function BravoHotelGame.BravoHotelCharacterMovementComponent.SendTimeStampToServov(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EDA460>
+	void MulticastScaleByMovame(float Scale); // Function BravoHotelGame.BravoHotelCharacterMovementComponent.MulticastScaleByMovame(Net|NetReliableNative|Event|NetMulticast|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EDA3E0>
 	void ClientResetPredictionDataSaveMove(); // Function BravoHotelGame.BravoHotelCharacterMovementComponent.ClientResetPredictionDataSaveMove(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EDA3C0>
 };
 
 // Class BravoHotelGame.BravoHotelCheatManager
-struct UBravoHotelCheatManager : UCheatManagerEx {
+class UBravoHotelCheatManager : UCheatManagerEx {
 	struct Unknown OpenedWidget; // 0x78 (8)
 
 	void WeaponDebugText(); // Function BravoHotelGame.BravoHotelCheatManager.WeaponDebugText(Final|Exec|Native|Public|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151AF10>
@@ -7465,7 +7465,7 @@ struct UBravoHotelCheatManager : UCheatManagerEx {
 	void SetLightLevelOrigin(); // Function BravoHotelGame.BravoHotelCheatManager.SetLightLevelOrigin(Final|Exec|Native|Public|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151AF10>
 	void SetLightLevelDefault(); // Function BravoHotelGame.BravoHotelCheatManager.SetLightLevelDefault(Final|Exec|Native|Public|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151AF10>
 	void SetLightLevel(int32_t ArrayIndex); // Function BravoHotelGame.BravoHotelCheatManager.SetLightLevel(Final|Exec|Native|Public|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1ED6670>
-	void SetItemSpawnRule(char UsingWorldItemSpawnTalbeInBlue, char ItemSpawnInBlueZone, char UnlimitItemSpawnCnt, char UsingMaxPickUpItemSpawnCount, int32_t MaxPickUpItemSpawnCount); // Function BravoHotelGame.BravoHotelCheatManager.SetItemSpawnRule(Final|Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EDF8B0>
+	void SetItemSpawnRule(char UsingWorldItemSpawnTalbeInBlueZone, char ItemSpawnInBlueZone, char UnlimitItemSpawnCnt, char UsingMaxPickUpItemSpawnCount, int32_t MaxPickUpItemSpawnCount); // Function BravoHotelGame.BravoHotelCheatManager.SetItemSpawnRule(Final|Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EDF8B0>
 	void SetInGameHUDVisible(char bState); // Function BravoHotelGame.BravoHotelCheatManager.SetInGameHUDVisible(Final|Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124CBC0>
 	void SetGold(int32_t Count); // Function BravoHotelGame.BravoHotelCheatManager.SetGold(Final|Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1ED6670>
 	void SetGlobalItemSpawnRate(float Rate); // Function BravoHotelGame.BravoHotelCheatManager.SetGlobalItemSpawnRate(Final|Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1ECD610>
@@ -7550,7 +7550,7 @@ struct UBravoHotelCheatManager : UCheatManagerEx {
 	void HideAllObjectByTag(struct FString Tag, char bActor, char bComponent, char bDestroy); // Function BravoHotelGame.BravoHotelCheatManager.HideAllObjectByTag(Final|Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EDF0E0>
 	void HideAllObjectByName(struct FString Name, char bActor, char bComponent, char bDestroy); // Function BravoHotelGame.BravoHotelCheatManager.HideAllObjectByName(Final|Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EDF0E0>
 	void HideAllObjectByClass(struct FString ClassName, char bDestroy); // Function BravoHotelGame.BravoHotelCheatManager.HideAllObjectByClass(Final|Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EDDB40>
-	void HideAllLandscapeLevame(); // Function BravoHotelGame.BravoHotelCheatManager.HideAllLandscapeLevame(Final|Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151AF10>
+	void HideAllLandscapeLev(); // Function BravoHotelGame.BravoHotelCheatManager.HideAllLandscapeLev(Final|Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151AF10>
 	void HardwareBenchmark(int32_t WorkScale, float CPUMultiplier, float GPUMultiplier); // Function BravoHotelGame.BravoHotelCheatManager.HardwareBenchmark(Final|Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EDEFE0>
 	void GodAll(char bGod); // Function BravoHotelGame.BravoHotelCheatManager.GodAll(Final|Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124CBC0>
 	void Go(struct FName& AreaName, char IsEnableCharacterRotate); // Function BravoHotelGame.BravoHotelCheatManager.Go(Final|Exec|Native|Public|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EDEF10>
@@ -7580,7 +7580,7 @@ struct UBravoHotelCheatManager : UCheatManagerEx {
 	void EnableCharacterVoice(char bState); // Function BravoHotelGame.BravoHotelCheatManager.EnableCharacterVoice(Final|Exec|Native|Public|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124CBC0>
 	void EnableAutoBot(char bEnable); // Function BravoHotelGame.BravoHotelCheatManager.EnableAutoBot(Final|Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124CBC0>
 	void ElevatorSpeed(float Speed); // Function BravoHotelGame.BravoHotelCheatManager.ElevatorSpeed(Final|Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1ECD610>
-	void DumpAllAreaRenderOvame(); // Function BravoHotelGame.BravoHotelCheatManager.DumpAllAreaRenderOvame(Final|Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EDE9B0>
+	void DumpAllAreaRenderOv(); // Function BravoHotelGame.BravoHotelCheatManager.DumpAllAreaRenderOv(Final|Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EDE9B0>
 	void DropTransportBox(float Height, struct FName& TableKey); // Function BravoHotelGame.BravoHotelCheatManager.DropTransportBox(Final|Exec|Native|Public|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EDE8D0>
 	void DisableVehicleSpawner(char bInDisabled); // Function BravoHotelGame.BravoHotelCheatManager.DisableVehicleSpawner(Final|Exec|Native|Public|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124CBC0>
 	void DefaultCameraLag(float cameraLag); // Function BravoHotelGame.BravoHotelCheatManager.DefaultCameraLag(Final|Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1ECD610>
@@ -7653,7 +7653,7 @@ struct UBravoHotelCheatManager : UCheatManagerEx {
 };
 
 // Class BravoHotelGame.BravoHotelCoherentBaseWidget
-struct UBravoHotelCoherentBaseWidget : UUserWidget {
+class UBravoHotelCoherentBaseWidget : UUserWidget {
 	struct Unknown CoherentWidget; // 0x248 (8)
 	struct Unknown AudioEvent; // 0x250 (8)
 	struct TArray<Unknown> ObjectArray; // 0x258 (16)
@@ -7673,7 +7673,7 @@ struct UBravoHotelCoherentBaseWidget : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelCoherentTestHUD
-struct ABravoHotelCoherentTestHUD : ABravoHotelBaseHUD {
+class ABravoHotelCoherentTestHUD : ABravoHotelBaseHUD {
 	struct Unknown* MyWidgetClass; // 0x418 (8)
 	struct FMulticastInlineDelegate ChangeCloseInvenDelegate; // 0x430 (16)
 	struct FMulticastInlineDelegate ChangeWeaponDelegate; // 0x440 (16)
@@ -7690,12 +7690,12 @@ struct ABravoHotelCoherentTestHUD : ABravoHotelBaseHUD {
 };
 
 // Class BravoHotelGame.BravoHotelCompassUnitWidget
-struct UBravoHotelCompassUnitWidget : UUserWidget {
+class UBravoHotelCompassUnitWidget : UUserWidget {
 	float Angle; // 0x248 (4)
 };
 
 // Class BravoHotelGame.BravoHotelCompassWidget
-struct UBravoHotelCompassWidget : UUserWidget {
+class UBravoHotelCompassWidget : UUserWidget {
 	float Length; // 0x250 (4)
 	float ArragnedAngle; // 0x254 (4)
 	float AngleBetweenUnits; // 0x258 (4)
@@ -7753,12 +7753,12 @@ struct UBravoHotelCompassWidget : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelConfirmPopupWidget
-struct UBravoHotelConfirmPopupWidget : UUserWidget {
+class UBravoHotelConfirmPopupWidget : UUserWidget {
 	struct Unknown ParantWidget; // 0x248 (8)
 };
 
 // Class BravoHotelGame.BravoHotelConversationComponent
-struct UBravoHotelConversationComponent : UActorComponent {
+class UBravoHotelConversationComponent : UActorComponent {
 	struct Unknown* ConversationWidgetClass; // 0xC8 (8)
 	struct Unknown CurrentConversationWidget; // 0xD0 (8)
 	struct FName CurrentConversationKey; // 0xD8 (8)
@@ -7774,7 +7774,7 @@ struct UBravoHotelConversationComponent : UActorComponent {
 };
 
 // Class BravoHotelGame.BravoHotelCreateCharacterWidget
-struct UBravoHotelCreateCharacterWidget : UBravoHotelCoherentBaseWidget {
+class UBravoHotelCreateCharacterWidget : UBravoHotelCoherentBaseWidget {
 	struct Unknown CustomizedCharacterComponent; // 0x298 (8)
 
 	void OnReceiveCharacterTab(struct FString ReceiveTab); // Function BravoHotelGame.BravoHotelCreateCharacterWidget.OnReceiveCharacterTab(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EE73D0>
@@ -7787,7 +7787,7 @@ struct UBravoHotelCreateCharacterWidget : UBravoHotelCoherentBaseWidget {
 };
 
 // Class BravoHotelGame.BravoHotelCrosshair
-struct UBravoHotelCrosshair : Object {
+class UBravoHotelCrosshair : Object {
 	struct Unknown CrosshairDataMap; // 0x40 (80)
 	struct Unknown CrosshairDataMap_ADS; // 0x90 (80)
 
@@ -7795,7 +7795,7 @@ struct UBravoHotelCrosshair : Object {
 };
 
 // Class BravoHotelGame.BravoHotelCrosshairManager
-struct UBravoHotelCrosshairManager : Object {
+class UBravoHotelCrosshairManager : Object {
 	struct TMap<Unknown, Unknown>Unknown Map; // 0x28 (80)
 	struct TMap<Unknown, Unknown>Unknown AdditiveMap; // 0x78 (80)
 	struct TArray<Unknown> ActiveAdditiveCroshairList; // 0xC8 (16)
@@ -7808,7 +7808,7 @@ struct UBravoHotelCrosshairManager : Object {
 };
 
 // Class BravoHotelGame.BravoHotelCustomizedCharacter
-struct UBravoHotelCustomizedCharacter : UBravoHotelCoherentObject {
+class UBravoHotelCustomizedCharacter : UBravoHotelCoherentObject {
 	struct FMulticastInlineDelegate MoveLobbyCharacterWearableDelegate; // 0x30 (16)
 	struct FMulticastInlineDelegate MoveLobbyCharacterAppearanceDelegate; // 0x40 (16)
 	struct FMulticastInlineDelegate MouseEventDelegate; // 0x50 (16)
@@ -7823,12 +7823,12 @@ struct UBravoHotelCustomizedCharacter : UBravoHotelCoherentObject {
 };
 
 // Class BravoHotelGame.BravoHotelCustomizeWardrobeWidget
-struct UBravoHotelCustomizeWardrobeWidget : UUserWidget {
+class UBravoHotelCustomizeWardrobeWidget : UUserWidget {
 	struct TArray<Unknown> WearableList; // 0x248 (16)
 };
 
 // Class BravoHotelGame.BravoHotelCustomMatchWidget
-struct UBravoHotelCustomMatchWidget : UUserWidget {
+class UBravoHotelCustomMatchWidget : UUserWidget {
 	struct Unknown Data; // 0x248 (424)
 	struct TArray<Unknown> PhaseInfo; // 0x3F0 (16)
 
@@ -7838,7 +7838,7 @@ struct UBravoHotelCustomMatchWidget : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelDamageType
-struct UBravoHotelDamageType : UDamageType {
+class UBravoHotelDamageType : UDamageType {
 	struct FName Name; // 0x40 (8)
 	struct TArray<Unknown> Names; // 0x48 (16)
 	char bApplyHurtCondition : 0; // 0x58 (1)
@@ -7858,18 +7858,18 @@ struct UBravoHotelDamageType : UDamageType {
 };
 
 // Class BravoHotelGame.BravoHotelDataManager
-struct UBravoHotelDataManager : Object {
+class UBravoHotelDataManager : Object {
 	struct Unknown BattleRoyalGameMode; // 0x3E0 (8)
 	struct Unknown ClientLogCharacter; // 0x5B8 (8)
 };
 
 // Class BravoHotelGame.BravoHotelDebugWidget
-struct UBravoHotelDebugWidget : UUserWidget {
+class UBravoHotelDebugWidget : UUserWidget {
 	struct FString DebugString; // 0x248 (16)
 };
 
 // Class BravoHotelGame.BravoHotelDestructibleComponent
-struct UBravoHotelDestructibleComponent : UBravoHotelStaticMeshComponent {
+class UBravoHotelDestructibleComponent : UBravoHotelStaticMeshComponent {
 	struct TArray<Unknown> AllowedDamageType; // 0x570 (16)
 	char bForceDestructionByVehicleDamage : 0; // 0x580 (1)
 	float ImpulseStrength; // 0x584 (4)
@@ -7893,17 +7893,17 @@ struct UBravoHotelDestructibleComponent : UBravoHotelStaticMeshComponent {
 };
 
 // Class BravoHotelGame.BravoHotelDestructibleEx
-struct ABravoHotelDestructibleEx : UActor {
+class ABravoHotelDestructibleEx : UActor {
 	char bHiddenInReplay : 0; // 0x318 (1)
 
 	void HandleInReplay(char bState); // Function BravoHotelGame.BravoHotelDestructibleEx.HandleInReplay(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F18190>
 };
 
 // Class BravoHotelGame.BravoHotelDetectItemSpawnBoxComponent
-struct UBravoHotelDetectItemSpawnBoxComponent : UBoxComponent {
+class UBravoHotelDetectItemSpawnBoxComponent : UBoxComponent {
 	struct TArray<Unknown> SpawnItemList; // 0x4E0 (16)
 	float CheckItemSpawnDistance; // 0x504 (4)
-	float CheckUnImportanttemSpawnDistance; // 0x508 (4)
+	float CheckUnImportanttemSpawnDistanc; // 0x508 (4)
 
 	void SpawnItems(struct Unknown Box, struct TArray<Unknown>& ItemsToSpawn); // Function BravoHotelGame.BravoHotelDetectItemSpawnBoxComponent.SpawnItems(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F18C10>
 	void CheckItemSpawnMode(); // Function BravoHotelGame.BravoHotelDetectItemSpawnBoxComponent.CheckItemSpawnMode(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F18BF0>
@@ -7911,7 +7911,7 @@ struct UBravoHotelDetectItemSpawnBoxComponent : UBoxComponent {
 };
 
 // Class BravoHotelGame.BravoHotelDevelopmentBlackMarket
-struct UBravoHotelDevelopmentBlackMarket : UUserWidget {
+class UBravoHotelDevelopmentBlackMarket : UUserWidget {
 	struct TArray<Unknown> WeaponList; // 0x248 (16)
 	struct TArray<Unknown> AmmoList; // 0x258 (16)
 	struct TArray<Unknown> AttachmentList; // 0x268 (16)
@@ -7938,7 +7938,7 @@ struct UBravoHotelDevelopmentBlackMarket : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelDoor
-struct ABravoHotelDoor : UActor {
+class ABravoHotelDoor : UActor {
 	struct Unknown RootNode; // 0x318 (8)
 	struct Unknown MoveNode; // 0x320 (8)
 	struct Unknown StaticMesh; // 0x328 (8)
@@ -8007,7 +8007,7 @@ struct ABravoHotelDoor : UActor {
 	struct TArray<Unknown> GetOverlappingCharactersInPushBox(); // Function BravoHotelGame.BravoHotelDoor.GetOverlappingCharactersInPushBox(Final|Native|Protected|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F1B5E0>
 	struct Unknown GetOriginalCenterVector(); // Function BravoHotelGame.BravoHotelDoor.GetOriginalCenterVector(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F1B5A0>
 	float GetCurrentOpenCurveValue(); // Function BravoHotelGame.BravoHotelDoor.GetCurrentOpenCurveValue(Final|Native|Protected|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F1B570>
-	float GetCurrentCloseCurveValue(); // Function BravoHotelGame.BravoHotelDoor.GetCurrentCloseCurvame(Final|Native|Protected|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F1B540>
+	float GetCurrentCloseCurv(); // Function BravoHotelGame.BravoHotelDoor.GetCurrentCloseCurvame(Final|Native|Protected|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F1B540>
 	struct Unknown GetCenterVector(); // Function BravoHotelGame.BravoHotelDoor.GetCenterVector(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F1B500>
 	void FinishOpenDoor(); // Function BravoHotelGame.BravoHotelDoor.FinishOpenDoor(Native|Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F1B4E0>
 	void FinishFade(); // Function BravoHotelGame.BravoHotelDoor.FinishFade(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F1B4C0>
@@ -8023,7 +8023,7 @@ struct ABravoHotelDoor : UActor {
 };
 
 // Class BravoHotelGame.BravoHotelShellCasing
-struct ABravoHotelShellCasing : UActor {
+class ABravoHotelShellCasing : UActor {
 	struct Unknown StaticMeshComponent; // 0x310 (8)
 	enum class Unknow ProjectileType; // 0x318 (1)
 	struct Unknown HitSurfaceEvent; // 0x320 (8)
@@ -8035,12 +8035,12 @@ struct ABravoHotelShellCasing : UActor {
 };
 
 // Class BravoHotelGame.BravoHotelEjectingClip
-struct ABravoHotelEjectingClip : ABravoHotelShellCasing {
+class ABravoHotelEjectingClip : ABravoHotelShellCasing {
 	struct Unknown EjectingSound; // 0x330 (8)
 };
 
 // Class BravoHotelGame.BravoHotelElevator
-struct ABravoHotelElevator : UActor {
+class ABravoHotelElevator : UActor {
 	struct Unknown ElevatorBody; // 0x310 (8)
 	struct TArray<Unknown> DoorList; // 0x318 (16)
 	struct TArray<Unknown> InnerDoorList; // 0x328 (16)
@@ -8062,7 +8062,7 @@ struct ABravoHotelElevator : UActor {
 };
 
 // Class BravoHotelGame.BravoHotelElevatorDoor
-struct ABravoHotelElevatorDoor : UActor {
+class ABravoHotelElevatorDoor : UActor {
 	char bDoorUIEnable : 0; // 0x358 (1)
 	struct Unknown BoxTrigger; // 0x360 (8)
 	struct Unknown PushBox; // 0x368 (8)
@@ -8093,19 +8093,19 @@ struct ABravoHotelElevatorDoor : UActor {
 };
 
 // Class BravoHotelGame.BravoHotelWebSocket
-struct UBravoHotelWebSocket : Object {
+class UBravoHotelWebSocket : Object {
 	struct Unknown ParentGameInstance; // 0x28 (8)
 };
 
 // Class BravoHotelGame.BravoHotelFence
-struct ABravoHotelFence : ABravoHotelDestructibleEx {
+class ABravoHotelFence : ABravoHotelDestructibleEx {
 	struct TMap<Unknown, Unknown>Unknown DamageCorrectValues; // 0x328 (80)
 
 	char ShouldReplicate(); // Function BravoHotelGame.BravoHotelFence.ShouldReplicate(Event|Protected|BlueprintEvent|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 };
 
 // Class BravoHotelGame.BravoHotelGameBuffSlot
-struct UBravoHotelGameBuffSlot : UUserWidget {
+class UBravoHotelGameBuffSlot : UUserWidget {
 	struct Unknown Image_Buff; // 0x248 (8)
 	struct Unknown ProgressBar_Slot; // 0x250 (8)
 	struct Unknown BuffUIInfo; // 0x258 (152)
@@ -8119,7 +8119,7 @@ struct UBravoHotelGameBuffSlot : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelGameInstance
-struct UBravoHotelGameInstance : UBravoHotelAppInstance {
+class UBravoHotelGameInstance : UBravoHotelAppInstance {
 	char CharacterTeleport : 0; // 0x250 (1)
 	char EnableChatting : 0; // 0x251 (1)
 	char AllowReconnect : 0; // 0x252 (1)
@@ -8190,13 +8190,13 @@ struct UBravoHotelGameInstance : UBravoHotelAppInstance {
 };
 
 // Class BravoHotelGame.BravoHotelLayerBase
-struct UBravoHotelLayerBase : Object {
+class UBravoHotelLayerBase : Object {
 	int32_t ZOrder; // 0x28 (4)
 	struct TArray<Unknown> WidgetList; // 0x30 (16)
 };
 
 // Class BravoHotelGame.BravoHotelGameMatchEndWidget
-struct UBravoHotelGameMatchEndWidget : UUserWidget {
+class UBravoHotelGameMatchEndWidget : UUserWidget {
 	enum class Unknow CurrentGameResultWidgetMode; // 0x250 (1)
 	char bIsShowingSimpleResult : 0; // 0x251 (1)
 	struct Unknown TimerHandle_ShowSimpleResult; // 0x258 (8)
@@ -8229,7 +8229,7 @@ struct UBravoHotelGameMatchEndWidget : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelGamePlayStatistics
-struct UBravoHotelGamePlayStatistics : Object {
+class UBravoHotelGamePlayStatistics : Object {
 	uint16_t HitScore; // 0x28 (2)
 	int32_t PickUpCoin; // 0x2C (4)
 	struct Unknown ExpPoint; // 0x30 (16)
@@ -8253,7 +8253,7 @@ struct UBravoHotelGamePlayStatistics : Object {
 };
 
 // Class BravoHotelGame.BravoHotelGameSingleton
-struct UBravoHotelGameSingleton : Object {
+class UBravoHotelGameSingleton : Object {
 	struct Unknown BravoHotelNetworkManager; // 0x28 (8)
 	struct Unknown BravoHotelItemSpawnStatisticManager; // 0x30 (8)
 	struct Unknown BravoHotelDataManager; // 0x128 (8)
@@ -8266,7 +8266,7 @@ struct UBravoHotelGameSingleton : Object {
 };
 
 // Class BravoHotelGame.BravoHotelGrenadeWeapon
-struct ABravoHotelGrenadeWeapon : ABravoHotelThrowingWeapon {
+class ABravoHotelGrenadeWeapon : ABravoHotelThrowingWeapon {
 	struct Unknown* GrenadeProjectileClass; // 0x1BD0 (8)
 	char bNeedAssistantWeapon : 0; // 0x1BD8 (1)
 	struct FName StartFireBoneName; // 0x1BDC (8)
@@ -8314,7 +8314,7 @@ struct ABravoHotelGrenadeWeapon : ABravoHotelThrowingWeapon {
 	struct Unknown Crouch_UnderThrowGrenade; // 0x1D18 (16)
 	struct Unknown Crouch_PinOffGrenade; // 0x1D28 (16)
 	struct Unknown Crouch_UnderThrow_LeverOffGrenade; // 0x1D38 (16)
-	struct Unknown Prone_OverThrow_Lev; // 0x1D48 (16)
+	struct Unknown Prone_OverThrow_Levame; // 0x1D48 (16)
 	struct Unknown Prone_UnderThrow_LeverOffGrenade; // 0x1D58 (16)
 	struct Unknown Prone_OverThrow; // 0x1D68 (16)
 	struct Unknown Prone_UnderThrow; // 0x1D78 (16)
@@ -8399,7 +8399,7 @@ struct ABravoHotelGrenadeWeapon : ABravoHotelThrowingWeapon {
 };
 
 // Class BravoHotelGame.BravoHotelHeartBeatSensor
-struct ABravoHotelHeartBeatSensor : ABravoHotelWeaponBase {
+class ABravoHotelHeartBeatSensor : ABravoHotelWeaponBase {
 	float HeartBeatSensorLength; // 0x1BD4 (4)
 	struct Unknown TimerHandle_OnStartEffectEvent; // 0x1BD8 (8)
 	struct TArray<Unknown> DetectedCharacters; // 0x1BE0 (16)
@@ -8414,7 +8414,7 @@ struct ABravoHotelHeartBeatSensor : ABravoHotelWeaponBase {
 };
 
 // Class BravoHotelGame.BravoHotelHIDestructibleComponent
-struct UBravoHotelHIDestructibleComponent : UHierarchicalInstancedStaticMeshComponent {
+class UBravoHotelHIDestructibleComponent : UHierarchicalInstancedStaticMeshComponent {
 	struct FName MeshClassType; // 0x730 (8)
 	struct TArray<Unknown> AllowedDamageType; // 0x738 (16)
 	float ImpulseStrength; // 0x748 (4)
@@ -8445,13 +8445,13 @@ struct UBravoHotelHIDestructibleComponent : UHierarchicalInstancedStaticMeshComp
 };
 
 // Class BravoHotelGame.BravoHotelHISMMesh
-struct ABravoHotelHISMMesh : UActor {
+class ABravoHotelHISMMesh : UActor {
 	struct Unknown RootNode; // 0x310 (8)
 	char ActionLink : 0; // 0x318 (1)
 };
 
 // Class BravoHotelGame.BravoHotelIconImageWidget
-struct UBravoHotelIconImageWidget : UUserWidget {
+class UBravoHotelIconImageWidget : UUserWidget {
 	struct Unknown Image_133; // 0x248 (8)
 	struct Unknown Icon; // 0x250 (8)
 	struct Unknown Bg; // 0x258 (8)
@@ -8463,7 +8463,7 @@ struct UBravoHotelIconImageWidget : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelInventoryCharacter
-struct ABravoHotelInventoryCharacter : UActor {
+class ABravoHotelInventoryCharacter : UActor {
 	struct Unknown MutableComponent; // 0x310 (8)
 	struct Unknown InventoryCharacterMesh; // 0x318 (8)
 	struct Unknown BackgroundWidgetComponent; // 0x320 (8)
@@ -8499,7 +8499,7 @@ struct ABravoHotelInventoryCharacter : UActor {
 };
 
 // Class BravoHotelGame.BravoHotelInventoryHoverWidget
-struct UBravoHotelInventoryHoverWidget : UUserWidget {
+class UBravoHotelInventoryHoverWidget : UUserWidget {
 	struct Unknown CanvasItemSlotHover; // 0x248 (8)
 	struct Unknown CanvasWeaponItemSlotHover; // 0x250 (8)
 	struct Unknown CanvasPerkSlotHover; // 0x258 (8)
@@ -8514,7 +8514,7 @@ struct UBravoHotelInventoryHoverWidget : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelInventoryPerkSlotWidget
-struct UBravoHotelInventoryPerkSlotWidget : UUserWidget {
+class UBravoHotelInventoryPerkSlotWidget : UUserWidget {
 	struct Unknown PlayerCharacter; // 0x248 (8)
 	struct Unknown PerkInfo; // 0x250 (44)
 	char bIsJustVisual : 0; // 0x27C (1)
@@ -8525,7 +8525,7 @@ struct UBravoHotelInventoryPerkSlotWidget : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelInventoryPerkWidget
-struct UBravoHotelInventoryPerkWidget : UUserWidget {
+class UBravoHotelInventoryPerkWidget : UUserWidget {
 	struct Unknown PlayerCharacter; // 0x248 (8)
 	struct Unknown UltimatePerkInfo; // 0x250 (44)
 	struct Unknown LastHoverWidget; // 0x280 (8)
@@ -8547,7 +8547,7 @@ struct UBravoHotelInventoryPerkWidget : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelInventoryWidget
-struct UBravoHotelInventoryWidget : UUserWidget {
+class UBravoHotelInventoryWidget : UUserWidget {
 	struct FMulticastInlineDelegate WeaponAmmoDelegate; // 0x250 (16)
 
 	float WeightGauge(struct FString ItemName, int32_t Quantity, char Ground); // Function BravoHotelGame.BravoHotelInventoryWidget.WeightGauge(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F4D750>
@@ -8556,7 +8556,7 @@ struct UBravoHotelInventoryWidget : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelPickup
-struct ABravoHotelPickup : UActor {
+class ABravoHotelPickup : UActor {
 	struct Unknown BoxComponent; // 0x318 (8)
 	struct Unknown SphereComponent; // 0x320 (8)
 	struct Unknown WorldStaticMesh; // 0x328 (8)
@@ -8602,14 +8602,14 @@ struct ABravoHotelPickup : UActor {
 };
 
 // Class BravoHotelGame.BravoHotelItemRecipeTreeWidget
-struct UBravoHotelItemRecipeTreeWidget : UUserWidget {
+class UBravoHotelItemRecipeTreeWidget : UUserWidget {
 	struct TArray<Unknown> ItemRecipeTreeInfo; // 0x248 (16)
 
 	void SetTreeInfo(struct FName TopRecipe); // Function BravoHotelGame.BravoHotelItemRecipeTreeWidget.SetTreeInfo(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16B4710>
 };
 
 // Class BravoHotelGame.BravoHotelItemSpawnBoxComponent
-struct UBravoHotelItemSpawnBoxComponent : UBoxComponent {
+class UBravoHotelItemSpawnBoxComponent : UBoxComponent {
 	int32_t BoxID; // 0x4E0 (4)
 	char UsingRandomRotation : 0; // 0x4E4 (1)
 	char IsCompleteSpawn : 0; // 0x4E5 (1)
@@ -8623,7 +8623,7 @@ struct UBravoHotelItemSpawnBoxComponent : UBoxComponent {
 };
 
 // Class BravoHotelGame.BravoHotelItemSpawnDebugWidget
-struct UBravoHotelItemSpawnDebugWidget : UUserWidget {
+class UBravoHotelItemSpawnDebugWidget : UUserWidget {
 	struct Unknown WorldCenter; // 0x248 (12)
 	struct Unknown WorldSize; // 0x254 (8)
 	struct Unknown BaseMapSize; // 0x25C (8)
@@ -8658,7 +8658,7 @@ struct UBravoHotelItemSpawnDebugWidget : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelItemSpawnRateWidget
-struct UBravoHotelItemSpawnRateWidget : UUserWidget {
+class UBravoHotelItemSpawnRateWidget : UUserWidget {
 	struct FName SelectAreaKey; // 0x248 (8)
 	char IsBlueZoneSpawnRate : 0; // 0x250 (1)
 	struct TMap<Unknown, Unknown>Unknown AreaSpawnRateList; // 0x258 (80)
@@ -8673,7 +8673,7 @@ struct UBravoHotelItemSpawnRateWidget : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelItemSpawnSimulationBox
-struct ABravoHotelItemSpawnSimulationBox : UActor {
+class ABravoHotelItemSpawnSimulationBox : UActor {
 	struct Unknown SpawnPerkData; // 0x310 (96)
 	struct FMulticastInlineDelegate OnEndSimulationDelegate; // 0x370 (16)
 	struct Unknown PreLocation; // 0x380 (12)
@@ -8686,25 +8686,25 @@ struct ABravoHotelItemSpawnSimulationBox : UActor {
 };
 
 // Class BravoHotelGame.BravoHotelItemStandardGroupBoxComponent
-struct UBravoHotelItemStandardGroupBoxComponent : UBoxComponent {
+class UBravoHotelItemStandardGroupBoxComponent : UBoxComponent {
 	struct Unknown ItemStandardGroupInfo; // 0x4E0 (16)
 	struct Unknown AllBoxInfos; // 0x4F0 (16)
 };
 
 // Class BravoHotelGame.BravoHotelJetpackWidget
-struct UBravoHotelJetpackWidget : UUserWidget {
+class UBravoHotelJetpackWidget : UUserWidget {
 	struct Unknown GauageProgress; // 0x248 (8)
 	struct Unknown GauageText; // 0x250 (8)
 };
 
 // Class BravoHotelGame.BravoHotelKillcamPlayback
-struct UBravoHotelKillcamPlayback : Object {
+class UBravoHotelKillcamPlayback : Object {
 	struct Unknown KillcamWorld; // 0x28 (8)
 	struct Unknown KillcamWorldPackage; // 0x30 (8)
 };
 
 // Class BravoHotelGame.BravoHotelKillInfoSlotWidget
-struct UBravoHotelKillInfoSlotWidget : UUserWidget {
+class UBravoHotelKillInfoSlotWidget : UUserWidget {
 	float HideTime; // 0x248 (4)
 	int32_t ArrayIndex; // 0x24C (4)
 	struct Unknown ParentWidget; // 0x250 (8)
@@ -8713,7 +8713,7 @@ struct UBravoHotelKillInfoSlotWidget : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelKillInfoWidget
-struct UBravoHotelKillInfoWidget : UUserWidget {
+class UBravoHotelKillInfoWidget : UUserWidget {
 	struct Unknown* SlotWidgetClass; // 0x248 (8)
 	int32_t MaxSlotCount; // 0x250 (4)
 	int32_t MaxVisibleCount; // 0x254 (4)
@@ -8729,7 +8729,7 @@ struct UBravoHotelKillInfoWidget : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelLadder
-struct ABravoHotelLadder : UActor {
+class ABravoHotelLadder : UActor {
 	struct Unknown RootScene; // 0x310 (8)
 	struct Unknown InteractiveCheckBox; // 0x318 (8)
 	struct Unknown UpStart; // 0x320 (8)
@@ -8779,7 +8779,7 @@ struct ABravoHotelLadder : UActor {
 };
 
 // Class BravoHotelGame.BravoHotelLightPropActor
-struct ABravoHotelLightPropActor : UActor {
+class ABravoHotelLightPropActor : UActor {
 	char bLightOn : 0; // 0x310 (1)
 	char bLightFlicker : 0; // 0x311 (1)
 	float LightOnIntensity; // 0x314 (4)
@@ -8792,7 +8792,7 @@ struct ABravoHotelLightPropActor : UActor {
 };
 
 // Class BravoHotelGame.BravoHotelLoadingWidget
-struct UBravoHotelLoadingWidget : UUserWidget {
+class UBravoHotelLoadingWidget : UUserWidget {
 	int32_t LoadingScreenIndex; // 0x248 (4)
 	int32_t LoadingScreenCount; // 0x24C (4)
 	struct FString FromLoading; // 0x250 (16)
@@ -8810,7 +8810,7 @@ struct UBravoHotelLoadingWidget : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelLobbyPlayerController
-struct ABravoHotelLobbyPlayerController : APlayerController {
+class ABravoHotelLobbyPlayerController : APlayerController {
 	int32_t CurrentLobbyPawnIndex; // 0x6F8 (4)
 	struct Unknown ParachuteActor; // 0x700 (8)
 
@@ -8824,14 +8824,14 @@ struct ABravoHotelLobbyPlayerController : APlayerController {
 };
 
 // Class BravoHotelGame.BravoHotelLobbyWidget
-struct UBravoHotelLobbyWidget : UUserWidget {
+class UBravoHotelLobbyWidget : UUserWidget {
 	struct Unknown DefaultMapSetting; // 0x248 (16)
 
 	void Logout(); // Function BravoHotelGame.BravoHotelLobbyWidget.Logout(Native|Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EE2240>
 };
 
 // Class BravoHotelGame.BravoHotelLobbyWidget_Web
-struct UBravoHotelLobbyWidget_Web : UBravoHotelCoherentBaseWidget {
+class UBravoHotelLobbyWidget_Web : UBravoHotelCoherentBaseWidget {
 	struct Unknown MousePos; // 0x364 (8)
 	char CheckPreLoad : 0; // 0x36C (1)
 	char bShowReconnectAlarm : 0; // 0x36D (1)
@@ -8909,16 +8909,16 @@ struct UBravoHotelLobbyWidget_Web : UBravoHotelCoherentBaseWidget {
 };
 
 // Class BravoHotelGame.BravoHotelLocalPlayer
-struct UBravoHotelLocalPlayer : ULocalPlayer {
+class UBravoHotelLocalPlayer : ULocalPlayer {
 	int32_t UniquePlayerId; // 0x258 (4)
 	struct Unknown KillcamPlayback; // 0x260 (8)
 };
 
 // Class BravoHotelGame.BravoHotelLocalSavedSettings
-struct UBravoHotelLocalSavedSettings : UBravoHotelLocalSaveBase {
+class UBravoHotelLocalSavedSettings : UBravoHotelLocalSaveBase {
 	struct FName UserName; // 0x28 (8)
 	struct TMap<Unknown, Unknown>Unknown MouseSensitivityStates; // 0x30 (80)
-	char b : 0; // 0x80 (1)
+	char bRememberMe : 0; // 0x80 (1)
 	struct Unknown MatchingSettings; // 0x88 (32)
 	struct TMap<Unknown, Unknown>Unknown FireModeSettings; // 0xA8 (80)
 	char bAutoReload : 0; // 0xF8 (1)
@@ -8930,7 +8930,7 @@ struct UBravoHotelLocalSavedSettings : UBravoHotelLocalSaveBase {
 };
 
 // Class BravoHotelGame.BravoHotelMagazineForDrop
-struct ABravoHotelMagazineForDrop : UActor {
+class ABravoHotelMagazineForDrop : UActor {
 	struct Unknown MagazineMeshComponent; // 0x310 (8)
 	struct Unknown SpawnedSocketTransform; // 0x320 (48)
 	struct Unknown OwnerWeaponRef; // 0x350 (8)
@@ -8940,7 +8940,7 @@ struct ABravoHotelMagazineForDrop : UActor {
 };
 
 // Class BravoHotelGame.BravoHotelMainWidget
-struct UBravoHotelMainWidget : UUserWidget {
+class UBravoHotelMainWidget : UUserWidget {
 	struct Unknown WorldCenter; // 0x260 (12)
 	struct Unknown WorldSize; // 0x26C (8)
 	struct Unknown BaseMapSize; // 0x274 (8)
@@ -9022,7 +9022,7 @@ struct UBravoHotelMainWidget : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelMapCompWidget
-struct UBravoHotelMapCompWidget : UUserWidget {
+class UBravoHotelMapCompWidget : UUserWidget {
 	struct Unknown BattleRoyaleGameState; // 0x248 (8)
 	struct Unknown BravoHotelGameState; // 0x250 (8)
 	int32_t TeamSize; // 0x258 (4)
@@ -9129,7 +9129,7 @@ struct UBravoHotelMapCompWidget : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelMapDrawWidget
-struct UBravoHotelMapDrawWidget : UUserWidget {
+class UBravoHotelMapDrawWidget : UUserWidget {
 	struct Unknown MapCompRef; // 0x248 (8)
 	int32_t CircleClicedCount; // 0x250 (4)
 	struct Unknown CurrentCircleColor; // 0x254 (16)
@@ -9144,7 +9144,7 @@ struct UBravoHotelMapDrawWidget : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelMaterialEffectActor
-struct ABravoHotelMaterialEffectActor : UActor {
+class ABravoHotelMaterialEffectActor : UActor {
 	float DestructTime; // 0x310 (4)
 	struct TMap<Unknown, Unknown>Unknown ColorValues; // 0x318 (80)
 	struct TMap<Unknown, Unknown>Unknown FloatValues; // 0x368 (80)
@@ -9153,14 +9153,14 @@ struct ABravoHotelMaterialEffectActor : UActor {
 };
 
 // Class BravoHotelGame.BravoHotelMediaPlayerWidget
-struct UBravoHotelMediaPlayerWidget : UUserWidget {
+class UBravoHotelMediaPlayerWidget : UUserWidget {
 	struct FMulticastInlineDelegate DelegateMediaState; // 0x248 (16)
 
 	void ShowMovie(); // Function BravoHotelGame.BravoHotelMediaPlayerWidget.ShowMovie(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 };
 
 // Class BravoHotelGame.BravoHotelMeleeWeapon
-struct ABravoHotelMeleeWeapon : ABravoHotelWeaponBase {
+class ABravoHotelMeleeWeapon : ABravoHotelWeaponBase {
 	struct TArray<Unknown> MeleeAttack_Stand; // 0x1BD0 (16)
 	struct TArray<Unknown> MeleeAttack_Crouch; // 0x1BE0 (16)
 	struct Unknown MeleeAttach_Jump; // 0x1BF0 (16)
@@ -9173,7 +9173,7 @@ struct ABravoHotelMeleeWeapon : ABravoHotelWeaponBase {
 };
 
 // Class BravoHotelGame.BravoHotelMiniMapWidget
-struct UBravoHotelMiniMapWidget : UUserWidget {
+class UBravoHotelMiniMapWidget : UUserWidget {
 	struct Unknown RemaingTimeToActivate; // 0x250 (8)
 
 	char UpdatePlayerIcon_Impl(float DeltaSeconds, float MapWidth, struct Unknown PlayerIconGroup); // Function BravoHotelGame.BravoHotelMiniMapWidget.UpdatePlayerIcon_Impl(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F6EBB0>
@@ -9187,7 +9187,7 @@ struct UBravoHotelMiniMapWidget : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelMK3DReplayController
-struct ABravoHotelMK3DReplayController : AMK3DReplayController {
+class ABravoHotelMK3DReplayController : AMK3DReplayController {
 	struct Unknown MaxViewportSize; // 0x930 (8)
 	char bIsShowingTimelineWidget : 0; // 0x938 (1)
 	char bIsShowingPlayerListWidget : 0; // 0x939 (1)
@@ -9236,7 +9236,7 @@ struct ABravoHotelMK3DReplayController : AMK3DReplayController {
 };
 
 // Class BravoHotelGame.BravoHotelMK3DSpectatorPawn
-struct ABravoHotelMK3DSpectatorPawn : AMK3DSpectatorPawn {
+class ABravoHotelMK3DSpectatorPawn : AMK3DSpectatorPawn {
 	struct Unknown ReplayController; // 0x3A8 (8)
 	float DefaultSpeed; // 0x3B0 (4)
 	float CurrentSpeedLevel; // 0x3B4 (4)
@@ -9250,7 +9250,7 @@ struct ABravoHotelMK3DSpectatorPawn : AMK3DSpectatorPawn {
 };
 
 // Class BravoHotelGame.BravoHotelMoveElevator
-struct ABravoHotelMoveElevator : UActor {
+class ABravoHotelMoveElevator : UActor {
 	enum class Unknow CurrentStateType; // 0x318 (1)
 	float CurrentMovingTime; // 0x31C (4)
 
@@ -9262,7 +9262,7 @@ struct ABravoHotelMoveElevator : UActor {
 };
 
 // Class BravoHotelGame.BravoHotelMutiplayerPhysicsActor
-struct ABravoHotelMutiplayerPhysicsActor : UActor {
+class ABravoHotelMutiplayerPhysicsActor : UActor {
 	struct Unknown RootNode; // 0x310 (8)
 	struct Unknown SendController; // 0x318 (8)
 	struct Unknown BoxMesh; // 0x360 (8)
@@ -9277,7 +9277,7 @@ struct ABravoHotelMutiplayerPhysicsActor : UActor {
 };
 
 // Class BravoHotelGame.BravoHotelMuzzleEffectComponent
-struct UBravoHotelMuzzleEffectComponent : UActorComponent {
+class UBravoHotelMuzzleEffectComponent : UActorComponent {
 	struct FName MuzzleAttachPoint; // 0xB0 (8)
 	struct TArray<Unknown> ChancePool; // 0xB8 (16)
 	int32_t BulletCountToSpawnMultiFireEffect; // 0xC8 (4)
@@ -9307,7 +9307,7 @@ struct UBravoHotelMuzzleEffectComponent : UActorComponent {
 };
 
 // Class BravoHotelGame.BravohotelNetSyncComponent
-struct UBravohotelNetSyncComponent : USceneComponent {
+class UBravohotelNetSyncComponent : USceneComponent {
 	char IsParentsSync : 0; // 0x238 (1)
 	char IsSimulatePhysics : 0; // 0x239 (1)
 	char IsCollisionEnabled : 0; // 0x23A (1)
@@ -9315,13 +9315,13 @@ struct UBravohotelNetSyncComponent : USceneComponent {
 };
 
 // Class BravoHotelGame.BravoHotelNetworkDelayWidget
-struct UBravoHotelNetworkDelayWidget : UUserWidget {
+class UBravoHotelNetworkDelayWidget : UUserWidget {
 	int32_t DefaultTableIndex; // 0x250 (4)
 	struct Unknown T_DelayMessage; // 0x258 (8)
 };
 
 // Class BravoHotelGame.BravoHotelNetworkManager
-struct UBravoHotelNetworkManager : Object {
+class UBravoHotelNetworkManager : Object {
 	struct Unknown NetworkSocket; // 0x28 (16)
 	struct Unknown NetworkWebSocket; // 0x38 (32)
 	struct Unknown HttpService; // 0x58 (8)
@@ -9337,18 +9337,18 @@ struct UBravoHotelNetworkManager : Object {
 	char IsHttpServiceAlive(); // Function BravoHotelGame.BravoHotelNetworkManager.IsHttpServiceAlive(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F7AF40>
 	char InitClientHttpService(); // Function BravoHotelGame.BravoHotelNetworkManager.InitClientHttpService(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F7AF10>
 	void DisconnectSocket(); // Function BravoHotelGame.BravoHotelNetworkManager.DisconnectSocket(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F7AEF0>
-	int32_t ConnectToClientWebSocket(struct FString InSessionID, struct FString InAuthToken, struct FString matchMakingTag); // Function BravoHotelGame.BravoHotelNetworkManager.ConnectToClientWebSocket(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F7AD90>
+	int32_t ConnectToClientWebSocket(struct FString InSessionID, struct FString InAuthToken, struct FString m); // Function BravoHotelGame.BravoHotelNetworkManager.ConnectToClientWebSocket(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F7AD90>
 	char ConnectToClientSocket(); // Function BravoHotelGame.BravoHotelNetworkManager.ConnectToClientSocket(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC7C30>
 };
 
 // Class BravoHotelGame.BravoHotelObjectSyncMannagerBase
-struct ABravoHotelObjectSyncMannagerBase : UActor {
+class ABravoHotelObjectSyncMannagerBase : UActor {
 	struct Unknown SyncInfo; // 0x310 (4)
 	struct TSet<Unknown> MannagedPool; // 0x318 (80)
 };
 
 // Class BravoHotelGame.BravoHotelPainCausingComponent
-struct UBravoHotelPainCausingComponent : UActorComponent {
+class UBravoHotelPainCausingComponent : UActorComponent {
 	float DamagePerSec; // 0xB0 (4)
 	struct Unknown* DamageType; // 0xB8 (8)
 	float PainInterval; // 0xC0 (4)
@@ -9364,7 +9364,7 @@ struct UBravoHotelPainCausingComponent : UActorComponent {
 };
 
 // Class BravoHotelGame.BravoHotelParachuteTriggerBox
-struct ABravoHotelParachuteTriggerBox : UActor {
+class ABravoHotelParachuteTriggerBox : UActor {
 	struct Unknown BoxComponent; // 0x310 (8)
 	struct Unknown ArrowComponent; // 0x318 (8)
 	char bLaunch : 0; // 0x320 (1)
@@ -9376,7 +9376,7 @@ struct ABravoHotelParachuteTriggerBox : UActor {
 };
 
 // Class BravoHotelGame.BravoHotelPerkComponent
-struct UBravoHotelPerkComponent : UActorComponent {
+class UBravoHotelPerkComponent : UActorComponent {
 	struct Unknown RepPerkInfos; // 0xC0 (280)
 	struct FMulticastInlineDelegate OnPerkInfoChanged; // 0x1D8 (16)
 
@@ -9385,7 +9385,7 @@ struct UBravoHotelPerkComponent : UActorComponent {
 };
 
 // Class BravoHotelGame.BravoHotelPersonalSupplyBoxSlotItemWidget
-struct UBravoHotelPersonalSupplyBoxSlotItemWidget : UUserWidget {
+class UBravoHotelPersonalSupplyBoxSlotItemWidget : UUserWidget {
 	char IsWeaponData : 0; // 0x248 (1)
 	char IsConsumableItemData : 0; // 0x249 (1)
 	struct Unknown WeaponItemData; // 0x250 (152)
@@ -9397,7 +9397,7 @@ struct UBravoHotelPersonalSupplyBoxSlotItemWidget : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelPersonalSupplyBoxWidget
-struct UBravoHotelPersonalSupplyBoxWidget : UUserWidget {
+class UBravoHotelPersonalSupplyBoxWidget : UUserWidget {
 	struct TArray<Unknown> HaveWeaponList; // 0x248 (16)
 	struct TArray<Unknown> ConsumableItemList; // 0x258 (16)
 	enum class Unknow CurSortType; // 0x268 (1)
@@ -9426,7 +9426,7 @@ struct UBravoHotelPersonalSupplyBoxWidget : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelPhysicalMaterial
-struct UBravoHotelPhysicalMaterial : UPhysicalMaterial {
+class UBravoHotelPhysicalMaterial : UPhysicalMaterial {
 	float Friction_OutBlueZone; // 0x80 (4)
 	char AllowPenetration : 0; // 0x84 (1)
 	char bAllowPenetrationToThrowWeapon : 0; // 0x85 (1)
@@ -9461,14 +9461,14 @@ struct UBravoHotelPhysicalMaterial : UPhysicalMaterial {
 };
 
 // Class BravoHotelGame.BravoHotelPlayerCameraManager
-struct ABravoHotelPlayerCameraManager : APlayerCameraManager {
+class ABravoHotelPlayerCameraManager : APlayerCameraManager {
 	float ServerUpdateCameraInterval; // 0x2B28 (4)
 	struct TArray<Unknown> TimedCameraPostProcessDatas; // 0x2B50 (16)
 	struct TArray<Unknown> TimedCameraEffectDatas; // 0x2B60 (16)
 
 	void UpdateTimedCameraPostProcess(struct Unknown& TargetData); // Function BravoHotelGame.BravoHotelPlayerCameraManager.UpdateTimedCameraPostProcess(Final|Native|Public|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F895B0>
 	void UpdateTimedCameraEffect(struct Unknown& TargetData); // Function BravoHotelGame.BravoHotelPlayerCameraManager.UpdateTimedCameraEffect(Final|Native|Public|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F89500>
-	char UpdateBlendOutTimedCamera(struct Unknown& TargetData); // Function BravoHotelGame.BravoHotelPlayerCameraManager.UpdateBlendOutTimedCamera(Final|Native|Public|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F89450>
+	char UpdateBlendOutTimedCameraPostProcess(struct Unknown& TargetData); // Function BravoHotelGame.BravoHotelPlayerCameraManager.UpdateBlendOutTimedCameraPostProcess(Final|Native|Public|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F89450>
 	void DeactivateTimedPostProcess(struct FName& TableRowName); // Function BravoHotelGame.BravoHotelPlayerCameraManager.DeactivateTimedPostProcess(Final|Native|Public|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F893C0>
 	void DeactivateTimedCameraEffect(struct FName& TableRowName); // Function BravoHotelGame.BravoHotelPlayerCameraManager.DeactivateTimedCameraEffect(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F89330>
 	void DeactivatePostProcessByInstance(struct Unknown PresetInstance); // Function BravoHotelGame.BravoHotelPlayerCameraManager.DeactivatePostProcessByInstance(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F892B0>
@@ -9482,7 +9482,7 @@ struct ABravoHotelPlayerCameraManager : APlayerCameraManager {
 };
 
 // Class BravoHotelGame.BravoHotelPlayerController
-struct ABravoHotelPlayerController : APlayerController {
+class ABravoHotelPlayerController : APlayerController {
 	struct Unknown ConversationComponent; // 0x6F8 (8)
 	struct Unknown QuestComponent; // 0x700 (8)
 	struct Unknown SavedCharacterPawn; // 0xBD0 (8)
@@ -9584,21 +9584,21 @@ struct ABravoHotelPlayerController : APlayerController {
 	float ReSearchWaitingTime; // 0xC54 (4)
 	float MaterialItemPingLifeTime; // 0x134C (4)
 	char ImmediatelyRemovePing : 0; // 0x1059 (1)
-	float EquipItemMaterialItemAutorSearchTime; // 0xC50 (4)
+	float EquipItemMaterialItemAutorSearc; // 0xC50 (4)
 	float LastEquipItemLifeTime; // 0x1070 (4)
 	char IgnoreStartStateSearchMaterial : 0; // 0x1131 (1)
 	float SearchDelayTime; // 0x125C (4)
 	struct Unknown TimeHandle_MaterialSearchDelay; // 0x1248 (8)
-	struct Unknown TimeHandle_RemoveMaterialPela; // 0xDA0 (8)
-	struct Unknown TimeHandle_SearchMaterial; // 0x13C8 (8)
-	struct Unknown TimeHandle_CheckEquipItemMaterialItemAutorSearch; // 0x10A0 (8)
+	struct Unknown TimeHandle_RemoveMaterialPing; // 0xDA0 (8)
+	struct Unknown TimeHandle_SearchMaterialPing; // 0x13C8 (8)
+	struct Unknown TimeHandle_CheckEquipItemMaterialItemAutorSearc; // 0x10A0 (8)
 	struct Unknown TimeHandle_CheckLastEquipItemInit; // 0xC90 (8)
 	struct FName LastEquipItem; // 0x13B8 (8)
 	struct Unknown SelectRecipeItem; // 0xF60 (16)
 	char bForceCheckSearchMaterialItems : 0; // 0x1290 (1)
 	struct FMulticastInlineDelegate DelegateSelectSearchMaterialItem; // 0xDD8 (16)
 	struct FMulticastInlineDelegate DelegateEnableMaterialSearch; // 0xCC8 (16)
-	struct FMulticastInlineDelegate DelegateEnableExpertWeaponMaterialSearch; // 0x1040 (16)
+	struct FMulticastInlineDelegate DelegateEnableExpertWeaponMaterialSearc; // 0x1040 (16)
 	struct FMulticastInlineDelegate DelegateMaterialSearchNoti; // 0x11C0 (16)
 	struct FMulticastInlineDelegate DelegateShowWeightMap; // 0xB78 (16)
 	struct FMulticastInlineDelegate DelegateInventoryState; // 0xB88 (16)
@@ -9752,7 +9752,7 @@ struct ABravoHotelPlayerController : APlayerController {
 	void OnViewPointEnteredBlueZone(); // Function BravoHotelGame.BravoHotelPlayerController.OnViewPointEnteredBlueZone(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F976C0>
 	void OnStartRocketLaunch(); // Function BravoHotelGame.BravoHotelPlayerController.OnStartRocketLaunch(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F976A0>
 	void OnRep_Resuscitater(); // Function BravoHotelGame.BravoHotelPlayerController.OnRep_Resuscitater(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F97680>
-	void OnRep_LastSpectatorTarget(); // Function BravoHotelGame.BravoHotelPlayerController.OnRep_LastSpectatorTarget(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F97660>
+	void OnRep_LastSpectatorTargetPawn(); // Function BravoHotelGame.BravoHotelPlayerController.OnRep_LastSpectatorTargetPawn(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F97660>
 	void OnRep_AccountGold(); // Function BravoHotelGame.BravoHotelPlayerController.OnRep_AccountGold(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F97640>
 	void OnPackageLoadingFailed(struct FString InReason); // Function BravoHotelGame.BravoHotelPlayerController.OnPackageLoadingFailed(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F975A0>
 	void OnMasterVolumeUp(); // Function BravoHotelGame.BravoHotelPlayerController.OnMasterVolumeUp(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F5CAE0>
@@ -9941,7 +9941,7 @@ struct ABravoHotelPlayerController : APlayerController {
 };
 
 // Class BravoHotelGame.BravoHotelPlayerHUD
-struct ABravoHotelPlayerHUD : ABravoHotelBaseHUD {
+class ABravoHotelPlayerHUD : ABravoHotelBaseHUD {
 	struct Unknown CrosshairMgr; // 0x418 (8)
 	struct Unknown LastTargetPawn; // 0x420 (8)
 	struct TArray<Unknown> PlayerInfos; // 0x428 (16)
@@ -9949,11 +9949,11 @@ struct ABravoHotelPlayerHUD : ABravoHotelBaseHUD {
 	struct Unknown BravoHotelGameState; // 0x440 (8)
 	struct FMulticastInlineDelegate OnChangedPlayerInfosDelegate; // 0x450 (16)
 	float CurrentSkillRadius; // 0x46C (4)
-	char b : 0; // 0x470 (1)
-	char b : 0; // 0x471 (1)
-	char b : 0; // 0x472 (1)
-	char b : 0; // 0x473 (1)
-	char b : 0; // 0x474 (1)
+	char bReplayOptionFireDirection : 0; // 0x470 (1)
+	char bReplayOptionHitted : 0; // 0x471 (1)
+	char bReplayOptionDeathPosition : 0; // 0x472 (1)
+	char bReplayOptionPersonalSupplyBox : 0; // 0x473 (1)
+	char bReplayOptionTransportDropBox : 0; // 0x474 (1)
 	struct FMulticastInlineDelegate OnToggleWidgetDelegate; // 0x478 (16)
 	struct Unknown FireModeSound; // 0x490 (8)
 	struct Unknown PlayerKillSound; // 0x498 (8)
@@ -10008,7 +10008,7 @@ struct ABravoHotelPlayerHUD : ABravoHotelBaseHUD {
 	void UpdateKillCount(); // Function BravoHotelGame.BravoHotelPlayerHUD.UpdateKillCount(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FA04C0>
 	void UpdateAssistCount(); // Function BravoHotelGame.BravoHotelPlayerHUD.UpdateAssistCount(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FA04A0>
 	void ShowWorldMapWidget(); // Function BravoHotelGame.BravoHotelPlayerHUD.ShowWorldMapWidget(Final|Native|Protected|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FA0480>
-	void ShowStatupAnimInInv(struct Unknown& StatupParams, enum class Unknow& StatupAnimType); // Function BravoHotelGame.BravoHotelPlayerHUD.ShowStatupAnimInInv(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FA0380>
+	void ShowStatupAnimInInvame(struct Unknown& StatupParams, enum class Unknow& StatupAnimType); // Function BravoHotelGame.BravoHotelPlayerHUD.ShowStatupAnimInInv(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FA0380>
 	void ShowStatupAnimByItem(struct Unknown& NewStatupAnimData); // Function BravoHotelGame.BravoHotelPlayerHUD.ShowStatupAnimByItem(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FA02C0>
 	void ShowStatupAnimAtCharacter(struct Unknown& StatupParams); // Function BravoHotelGame.BravoHotelPlayerHUD.ShowStatupAnimAtCharacter(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FA0210>
 	struct Unknown ShowSpectatorWidget(); // Function BravoHotelGame.BravoHotelPlayerHUD.ShowSpectatorWidget(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FA01E0>
@@ -10104,7 +10104,7 @@ struct ABravoHotelPlayerHUD : ABravoHotelBaseHUD {
 };
 
 // Class BravoHotelGame.BravoHotelPlayerIconWidget
-struct UBravoHotelPlayerIconWidget : UUserWidget {
+class UBravoHotelPlayerIconWidget : UUserWidget {
 	struct Unknown Canvas_Main; // 0x248 (8)
 	struct Unknown RotationGroup; // 0x250 (8)
 	struct Unknown Canvas_Replay; // 0x258 (8)
@@ -10146,7 +10146,7 @@ struct UBravoHotelPlayerIconWidget : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelPlayerInfoProgressSlotWidget
-struct UBravoHotelPlayerInfoProgressSlotWidget : UUserWidget {
+class UBravoHotelPlayerInfoProgressSlotWidget : UUserWidget {
 	struct Unknown SizeBox_main; // 0x248 (8)
 	struct Unknown Image_bg; // 0x250 (8)
 	struct Unknown MainProgressBar; // 0x258 (8)
@@ -10172,7 +10172,7 @@ struct UBravoHotelPlayerInfoProgressSlotWidget : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelPlayerInfoProgressWidget
-struct UBravoHotelPlayerInfoProgressWidget : UUserWidget {
+class UBravoHotelPlayerInfoProgressWidget : UUserWidget {
 	struct Unknown TargetPawn; // 0x248 (8)
 	float CurrentHealthIncreaseSpeed; // 0x250 (4)
 	float CurrentHealthDecreaseSpeed; // 0x254 (4)
@@ -10206,7 +10206,7 @@ struct UBravoHotelPlayerInfoProgressWidget : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelPlayerInfoWidget
-struct UBravoHotelPlayerInfoWidget : UUserWidget {
+class UBravoHotelPlayerInfoWidget : UUserWidget {
 	struct Unknown WidgetSwitcher_Lung; // 0x248 (8)
 	struct Unknown ProgressBar_Lung; // 0x250 (8)
 	struct Unknown BuffListPanel; // 0x2B0 (8)
@@ -10224,14 +10224,14 @@ struct UBravoHotelPlayerInfoWidget : UUserWidget {
 	void ResetCurrentWeaponInfo(int32_t SlotIndex); // Function BravoHotelGame.BravoHotelPlayerInfoWidget.ResetCurrentWeaponInfo(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void OnChangeWearableItem(); // Function BravoHotelGame.BravoHotelPlayerInfoWidget.OnChangeWearableItem(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FA3420>
 	void OnChangeWeaponAttachments(); // Function BravoHotelGame.BravoHotelPlayerInfoWidget.OnChangeWeaponAttachments(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151AF10>
-	void OnChangePawnResetEvame(); // Function BravoHotelGame.BravoHotelPlayerInfoWidget.OnChangePawnResetEvame(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FA3440>
+	void OnChangePawnResetEvm(); // Function BravoHotelGame.BravoHotelPlayerInfoWidget.OnChangePawnResetEv(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FA3440>
 	void OnChangeCurrentWeapon(); // Function BravoHotelGame.BravoHotelPlayerInfoWidget.OnChangeCurrentWeapon(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FA3420>
 	void OnChangeBackpackItem(); // Function BravoHotelGame.BravoHotelPlayerInfoWidget.OnChangeBackpackItem(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151AF10>
 	void AddBuff(struct Unknown AddBuffs); // Function BravoHotelGame.BravoHotelPlayerInfoWidget.AddBuff(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 };
 
 // Class BravoHotelGame.BHReplicatedPlayerInfo
-struct UBHReplicatedPlayerInfo : UActorComponent {
+class UBHReplicatedPlayerInfo : UActorComponent {
 	struct FName UID; // 0xC0 (8)
 	int32_t UniquePlayerId; // 0xC8 (4)
 	struct Unknown SeasonInfo; // 0xCC (24)
@@ -10253,15 +10253,15 @@ struct UBHReplicatedPlayerInfo : UActorComponent {
 };
 
 // Class BravoHotelGame.BHReplicatedPlayStat
-struct UBHReplicatedPlayStat : UActorComponent {
+class UBHReplicatedPlayStat : UActorComponent {
 	char bAlive : 0; // 0xC0 (1)
 	char InOuterArea : 0; // 0xC1 (1)
 	uint16_t kills; // 0xC2 (2)
-	uint16_t a; // 0xC4 (2)
+	uint16_t assists; // 0xC4 (2)
 	uint16_t Deaths; // 0xC6 (2)
 	uint16_t Revives; // 0xC8 (2)
 	uint16_t Resuscitates; // 0xCA (2)
-	int32_t CurrentPerkClassLev; // 0xCC (4)
+	int32_t CurrentPerkClassLevam; // 0xCC (4)
 	char WatchedCount; // 0xD0 (1)
 
 	void OnRep_Kills(); // Function BravoHotelGame.BHReplicatedPlayStat.OnRep_Kills(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FA6FA0>
@@ -10271,17 +10271,18 @@ struct UBHReplicatedPlayStat : UActorComponent {
 };
 
 // Class BravoHotelGame.BHReplicatedAppearanceInfo
-struct UBHReplicatedAppearanceInfo : UActorComponent {
+class UBHReplicatedAppearanceInfo : UActorComponent {
 	struct Unknown AppearanceInfo; // 0xC0 (20)
-	struct Unknown TimerHandle_ReplicatedAppearanceInfo; // 0xD8 (8)
+	struct Unknown TimerHandle_ReplicatedAppearanc; // 0xD8 (8)
 
 	void OnRep_ReplicatedAppearanceInfo(); // Function BravoHotelGame.BHReplicatedAppearanceInfo.OnRep_ReplicatedAppearanceInfo(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FA6FE0>
 };
 
 // Class BravoHotelGame.BravoHotelPlayerState
-struct ABravoHotelPlayerState : APlayerState {
-	char pad_418_0 : 7; // 0x418 (1)
+class ABravoHotelPlayerState : APlayerState {
+	char pad_418_0 : 6; // 0x418 (1)
 	char bCriticalTime : 1; // 0x418 (1)
+	char pad_418_7 : 1; // 0x418 (1)
 	struct FString MatchingTeamID; // 0x420 (16)
 	uint32_t MatchingTeamIdHash; // 0x430 (4)
 	char MatchableCountByDS; // 0x434 (1)
@@ -10371,7 +10372,7 @@ struct ABravoHotelPlayerState : APlayerState {
 };
 
 // Class BravoHotelGame.BravoHotelPlayerSubState
-struct ABravoHotelPlayerSubState : UActor {
+class ABravoHotelPlayerSubState : UActor {
 	struct Unknown PingInfo; // 0x310 (56)
 	struct Unknown PingLocalLocation; // 0x348 (12)
 	struct TArray<Unknown> RoutePingInfo; // 0x358 (16)
@@ -10388,7 +10389,7 @@ struct ABravoHotelPlayerSubState : UActor {
 	char bIsFireWeapon : 0; // 0x3A8 (1)
 	int32_t RemainGoldentime; // 0x3AC (4)
 	int32_t MaxGoldentime; // 0x3B0 (4)
-	char b : 0; // 0x3B4 (1)
+	char bRequestResuscitation : 0; // 0x3B4 (1)
 	char VoiceTeamTalk : 0; // 0x3B5 (1)
 	char VoiceAreaTalk : 0; // 0x3B6 (1)
 
@@ -10398,19 +10399,19 @@ struct ABravoHotelPlayerSubState : UActor {
 };
 
 // Class BravoHotelGame.BravoHotelPoolingActorComponent
-struct UBravoHotelPoolingActorComponent : UActorComponent {
+class UBravoHotelPoolingActorComponent : UActorComponent {
 	struct TMap<Unknown, Unknown>Unknown DefaultPoolingActor; // 0xB0 (80)
 	struct TMap<Unknown, Unknown>Unknown ActorPoolInfos; // 0x100 (80)
 };
 
 // Class BravoHotelGame.BravoHotelPopupManager
-struct UBravoHotelPopupManager : Object {
+class UBravoHotelPopupManager : Object {
 	struct TArray<Unknown> WidgetLayer; // 0x30 (16)
 	struct Unknown NetworkDelayPopupWidgetRef; // 0x40 (8)
 };
 
 // Class BravoHotelGame.BravoHotelProjectile
-struct ABravoHotelProjectile : ABravoHotelProjectileBase {
+class ABravoHotelProjectile : ABravoHotelProjectileBase {
 	struct Unknown SphereCollision; // 0x310 (8)
 	struct Unknown Projectile; // 0x318 (8)
 	struct Unknown RealisticProjectile; // 0x320 (8)
@@ -10441,14 +10442,14 @@ struct ABravoHotelProjectile : ABravoHotelProjectileBase {
 	void OnProjectileStop(struct Unknown& ImpactResult); // Function BravoHotelGame.BravoHotelProjectile.OnProjectileStop(Native|Protected|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FAA080>
 	void OnProjectilePenetrate(struct Unknown& ImpactResult, struct Unknown& ImpactVelocity); // Function BravoHotelGame.BravoHotelProjectile.OnProjectilePenetrate(Native|Protected|HasOutParms|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FA9F50>
 	void OnProjectileBounce(struct Unknown& ImpactResult, struct Unknown& ImpactVelocity); // Function BravoHotelGame.BravoHotelProjectile.OnProjectileBounce(Native|Protected|HasOutParms|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FA9E20>
-	void OnProjectileBeginOv(struct Unknown& HitResult, int32_t TrajectoryNum, float StartTime, float EndTime); // Function BravoHotelGame.BravoHotelProjectile.OnProjectileBeginOv(Native|Protected|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FA9CA0>
+	void OnProjectileBeginOvame(struct Unknown& HitResult, int32_t TrajectoryNum, float StartTime, float EndTime); // Function BravoHotelGame.BravoHotelProjectile.OnProjectileBeginOv(Native|Protected|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FA9CA0>
 	void OnProjectileAnyHit(struct Unknown& HitDetails, struct Unknown& ImpactVelocity); // Function BravoHotelGame.BravoHotelProjectile.OnProjectileAnyHit(Native|Protected|HasOutParms|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FA9B70>
 	void OnPenetrationExit(struct Unknown& ImpactResult, struct Unknown& ImpactVelocity); // Function BravoHotelGame.BravoHotelProjectile.OnPenetrationExit(Native|Protected|HasOutParms|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FA9A40>
 	void ChangeBulletEffect(); // Function BravoHotelGame.BravoHotelProjectile.ChangeBulletEffect(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FA9A20>
 };
 
 // Class BravoHotelGame.BravoHotelProjectileBullet
-struct ABravoHotelProjectileBullet : ABravoHotelProjectile {
+class ABravoHotelProjectileBullet : ABravoHotelProjectile {
 	struct TArray<Unknown> BeginOverlapHitResults; // 0x4A8 (16)
 	struct TArray<Unknown> HitActors; // 0x4C0 (16)
 	float ImpulsePowerRate; // 0x4D0 (4)
@@ -10469,7 +10470,7 @@ struct ABravoHotelProjectileBullet : ABravoHotelProjectile {
 };
 
 // Class BravoHotelGame.BravoHotelProjectileGrenade
-struct ABravoHotelProjectileGrenade : ABravoHotelProjectileBase {
+class ABravoHotelProjectileGrenade : ABravoHotelProjectileBase {
 	char bIgnoreOwner : 0; // 0x310 (1)
 	float Damage; // 0x314 (4)
 	float MinimumDamage; // 0x318 (4)
@@ -10577,9 +10578,9 @@ struct ABravoHotelProjectileGrenade : ABravoHotelProjectileBase {
 	void GrenadeExplosion(); // Function BravoHotelGame.BravoHotelProjectileGrenade.GrenadeExplosion(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FAC240>
 	float GetDistanceToViewTarget(); // Function BravoHotelGame.BravoHotelProjectileGrenade.GetDistanceToViewTarget(Final|Native|Public|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FAC210>
 	void DoSetProjectileGrenadeState(enum class Unknow NewState, struct Unknown NewTriggerActor); // Function BravoHotelGame.BravoHotelProjectileGrenade.DoSetProjectileGrenadeState(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FAC150>
-	void DestroyWithoutActiva(); // Function BravoHotelGame.BravoHotelProjectileGrenade.DestroyWithoutActiv(Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FAC130>
+	void DestroyWithoutActiva(); // Function BravoHotelGame.BravoHotelProjectileGrenade.DestroyWithoutActiva(Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FAC130>
 	void ClientSetProjectileGrenadeState(enum class Unknow NewState, struct Unknown NewTriggerActor); // Function BravoHotelGame.BravoHotelProjectileGrenade.ClientSetProjectileGrenadeState(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FAC060>
-	void CheckWarningVoiceEveGr(); // Function BravoHotelGame.BravoHotelProjectileGrenade.CheckWarningVoiceEv(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FAC040>
+	void CheckWarningVoiceEv(); // Function BravoHotelGame.BravoHotelProjectileGrenade.CheckWarningVoiceEvame(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FAC040>
 	void ActiveThrowingProjectileMainEffect(); // Function BravoHotelGame.BravoHotelProjectileGrenade.ActiveThrowingProjectileMainEffect(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	char ActiveGrenade(); // Function BravoHotelGame.BravoHotelProjectileGrenade.ActiveGrenade(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FAC010>
 	void ActivateSuperTrail(float TargetViewDistance); // Function BravoHotelGame.BravoHotelProjectileGrenade.ActivateSuperTrail(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FABF90>
@@ -10587,7 +10588,7 @@ struct ABravoHotelProjectileGrenade : ABravoHotelProjectileBase {
 };
 
 // Class BravoHotelGame.BravoHotelProjectileFireAx
-struct ABravoHotelProjectileFireAx : ABravoHotelProjectileGrenade {
+class ABravoHotelProjectileFireAx : ABravoHotelProjectileGrenade {
 	struct Unknown* SimulationActorClass; // 0x638 (8)
 	char bAttachAbsolutely : 0; // 0x640 (1)
 	struct Unknown FlybyEvent; // 0x648 (8)
@@ -10598,7 +10599,7 @@ struct ABravoHotelProjectileFireAx : ABravoHotelProjectileGrenade {
 };
 
 // Class BravoHotelGame.BravoHotelProjectileFlame
-struct ABravoHotelProjectileFlame : ABravoHotelProjectile {
+class ABravoHotelProjectileFlame : ABravoHotelProjectile {
 	struct TSet<Unknown> OverlappedVehicles; // 0x4A8 (80)
 	struct Unknown FlameParticle; // 0x4F8 (8)
 	struct Unknown FlameEndParticle; // 0x500 (8)
@@ -10620,7 +10621,7 @@ struct ABravoHotelProjectileFlame : ABravoHotelProjectile {
 };
 
 // Class BravoHotelGame.BravoHotelProjectileGrenadeBomb
-struct ABravoHotelProjectileGrenadeBomb : ABravoHotelProjectileGrenade {
+class ABravoHotelProjectileGrenadeBomb : ABravoHotelProjectileGrenade {
 	float LandHeight; // 0x638 (4)
 	char bUsingActiveGrenadeByTick : 0; // 0x63C (1)
 	char DamageCollisionType; // 0x63D (1)
@@ -10634,7 +10635,7 @@ struct ABravoHotelProjectileGrenadeBomb : ABravoHotelProjectileGrenade {
 };
 
 // Class BravoHotelGame.BravoHotelProjectileGrenadeC4
-struct ABravoHotelProjectileGrenadeC4 : ABravoHotelProjectileGrenade {
+class ABravoHotelProjectileGrenadeC4 : ABravoHotelProjectileGrenade {
 	struct Unknown ExplosionGroundDecalMaterial; // 0x638 (8)
 	struct Unknown ExplosionGroundDecalSize; // 0x640 (12)
 	struct Unknown ExplosionGroundDecalComponent; // 0x650 (8)
@@ -10659,7 +10660,7 @@ struct ABravoHotelProjectileGrenadeC4 : ABravoHotelProjectileGrenade {
 };
 
 // Class BravoHotelGame.BravoHotelProjectileGrenadeDynamite
-struct ABravoHotelProjectileGrenadeDynamite : ABravoHotelProjectileGrenade {
+class ABravoHotelProjectileGrenadeDynamite : ABravoHotelProjectileGrenade {
 	struct Unknown ExplosionGroundDecalMaterial; // 0x638 (8)
 	struct Unknown ExplosionGroundDecalSize; // 0x640 (12)
 	struct Unknown ExplosionGroundDecalComponent; // 0x650 (8)
@@ -10667,8 +10668,8 @@ struct ABravoHotelProjectileGrenadeDynamite : ABravoHotelProjectileGrenade {
 	void AddExplosionDecalEffect(); // Function BravoHotelGame.BravoHotelProjectileGrenadeDynamite.AddExplosionDecalEffect(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FAD050>
 };
 
-// Class BravoHotelGame.BravoHotelProjectileGrenade
-struct ABravoHotelProjectileGrenadeF : ABravoHotelProjectileGrenade {
+// Class BravoHotelGame.BravoHotelProjectileGrenadeFlashbang
+class ABravoHotelProjectileGrenadeFlashbang : ABravoHotelProjectileGrenade {
 	struct Unknown AngleCurve; // 0x638 (8)
 	struct Unknown TimeCurve; // 0x640 (8)
 	struct Unknown* PostProcessFlashBangClass; // 0x648 (8)
@@ -10684,13 +10685,13 @@ struct ABravoHotelProjectileGrenadeF : ABravoHotelProjectileGrenade {
 	struct Unknown BoobyTrapTriggerEvent; // 0x6A8 (8)
 	struct Unknown BoobyTrapLoopSoundHandle; // 0x6B0 (4)
 
-	void PlayFlashbangGrenade(); // Function BravoHotelGame.BravoHotelProjectileGrenade.PlayFlashbangGrenade(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FAD510>
-	void OnAudioEmitterUnregistered(); // Function BravoHotelGame.BravoHotelProjectileGrenade.OnAudioEmitterUnregistered(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FAD4F0>
-	void OnAudioEmitterRegistered(); // Function BravoHotelGame.BravoHotelProjectileGrenade.OnAudioEmitterRegistered(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FAD4D0>
+	void PlayFlashbangGrenade(); // Function BravoHotelGame.BravoHotelProjectileGrenadeFlashbang.PlayFlashbangGrenade(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FAD510>
+	void OnAudioEmitterUnregistered(); // Function BravoHotelGame.BravoHotelProjectileGrenadeFlashbang.OnAudioEmitterUnregistered(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FAD4F0>
+	void OnAudioEmitterRegistered(); // Function BravoHotelGame.BravoHotelProjectileGrenadeFlashbang.OnAudioEmitterRegistered(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FAD4D0>
 };
 
-// Class BravoHotelGame.BravoHotelProjectileGrenade
-struct ABravoHotelProjectileGrenade : ABravoHotelProjectileGrenade {
+// Class BravoHotelGame.BravoHotelProjectileGrenadeFragment
+class ABravoHotelProjectileGrenadeFragment : ABravoHotelProjectileGrenade {
 	struct Unknown ExplosionGroundDecalMaterial; // 0x638 (8)
 	struct Unknown ExplosionGroundDecalSize; // 0x640 (12)
 	struct Unknown ExplosionGroundDecalComponent; // 0x650 (8)
@@ -10698,11 +10699,11 @@ struct ABravoHotelProjectileGrenade : ABravoHotelProjectileGrenade {
 	struct Unknown FlybyEvent; // 0x668 (8)
 	struct Unknown FlybySoundHandle; // 0x670 (4)
 
-	void AddExplosionDecalEffect(); // Function BravoHotelGame.BravoHotelProjectileGrenadeF.AddExplosionDecalEffect(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FAD6A0>
+	void AddExplosionDecalEffect(); // Function BravoHotelGame.BravoHotelProjectileGrenadeFragment.AddExplosionDecalEffect(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FAD6A0>
 };
 
 // Class BravoHotelGame.BravoHotelProjectileGrenadeMolotovCocktail
-struct ABravoHotelProjectileGrenadeMolotovCocktail : ABravoHotelProjectileGrenade {
+class ABravoHotelProjectileGrenadeMolotovCocktail : ABravoHotelProjectileGrenade {
 	struct Unknown FireStartSound; // 0x638 (8)
 	struct Unknown FireEndSound; // 0x640 (8)
 	struct Unknown FireLoopSoundHandle; // 0x648 (4)
@@ -10751,7 +10752,7 @@ struct ABravoHotelProjectileGrenadeMolotovCocktail : ABravoHotelProjectileGrenad
 };
 
 // Class BravoHotelGame.BravoHotelProjectileGrenadeNuclear
-struct ABravoHotelProjectileGrenadeNuclear : ABravoHotelProjectileGrenade {
+class ABravoHotelProjectileGrenadeNuclear : ABravoHotelProjectileGrenade {
 	struct Unknown ExplosionGroundDecalMaterial; // 0x638 (8)
 	struct Unknown ExplosionGroundDecalSize; // 0x640 (12)
 	struct Unknown FallingEvent; // 0x650 (8)
@@ -10762,7 +10763,7 @@ struct ABravoHotelProjectileGrenadeNuclear : ABravoHotelProjectileGrenade {
 };
 
 // Class BravoHotelGame.BravoHotelProjectileGrenadeSmoke
-struct ABravoHotelProjectileGrenadeSmoke : ABravoHotelProjectileGrenade {
+class ABravoHotelProjectileGrenadeSmoke : ABravoHotelProjectileGrenade {
 	struct Unknown SmokeTrailEffectComponent; // 0x638 (8)
 	struct Unknown SpawnedSmokeFxComponent; // 0x640 (8)
 	float SmokeLifeTime; // 0x648 (4)
@@ -10791,8 +10792,8 @@ struct ABravoHotelProjectileGrenadeSmoke : ABravoHotelProjectileGrenade {
 	void CheckApplyDamageInSmoke(float DeltaSeconds); // Function BravoHotelGame.BravoHotelProjectileGrenadeSmoke.CheckApplyDamageInSmoke(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FAE3C0>
 };
 
-// Class BravoHotelGame.BravoHotelProjectileMolotov
-struct ABravoHotelProjectileMolotovF : UActor {
+// Class BravoHotelGame.BravoHotelProjectileMolotovFireCell
+class ABravoHotelProjectileMolotovFireCell : UActor {
 	struct Unknown FireRoot; // 0x310 (8)
 	struct Unknown FireEffect; // 0x318 (8)
 	float LifeTime; // 0x320 (4)
@@ -10810,16 +10811,16 @@ struct ABravoHotelProjectileMolotovF : UActor {
 	struct Unknown* DamageTypeClass; // 0x378 (8)
 	struct TWeakObjectPtr<struct Unknown> LocalPlayingCharacter; // 0x384 (8)
 
-	void OnOverlapEnd(struct Unknown OverlappedComponent, struct Unknown OtherActor, struct Unknown OtherComp, int32_t OtherBodyIndex); // Function BravoHotelGame.BravoHotelProjectileMolotovF.OnOverlapEnd(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FAED60>
-	void OnOverlapBegin(struct Unknown OverlappedComponent, struct Unknown OtherActor, struct Unknown OtherComp, int32_t OtherBodyIndex, char bFromSweep, struct Unknown& SweepResult); // Function BravoHotelGame.BravoHotelProjectileMolotovF.OnOverlapBegin(Final|Native|Protected|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FAEB50>
-	struct Unknown GetOwnerProjectileGrenade(); // Function BravoHotelGame.BravoHotelProjectileMolotovF.GetOwnerProjectileGrenade(Final|Native|Public|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FAEB30>
-	void EndFireEffect(); // Function BravoHotelGame.BravoHotelProjectileMolotov.EndFireEffect(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FAEB10>
-	void CheckHitComponent(); // Function BravoHotelGame.BravoHotelProjectileMolotov.CheckHitComponent(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FAEAF0>
-	void CheckDistanceToLocalPlayer(); // Function BravoHotelGame.BravoHotelProjectileMolotov.CheckDistanceToLocalPlayer(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FAEAD0>
+	void OnOverlapEnd(struct Unknown OverlappedComponent, struct Unknown OtherActor, struct Unknown OtherComp, int32_t OtherBodyIndex); // Function BravoHotelGame.BravoHotelProjectileMolotovFireCell.OnOverlapEnd(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FAED60>
+	void OnOverlapBegin(struct Unknown OverlappedComponent, struct Unknown OtherActor, struct Unknown OtherComp, int32_t OtherBodyIndex, char bFromSweep, struct Unknown& SweepResult); // Function BravoHotelGame.BravoHotelProjectileMolotovFireCell.OnOverlapBegin(Final|Native|Protected|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FAEB50>
+	struct Unknown GetOwnerProjectileGrenade(); // Function BravoHotelGame.BravoHotelProjectileMolotovFireCell.GetOwnerProjectileGrenade(Final|Native|Public|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FAEB30>
+	void EndFireEffect(); // Function BravoHotelGame.BravoHotelProjectileMolotovFireCell.EndFireEffect(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FAEB10>
+	void CheckHitComponent(); // Function BravoHotelGame.BravoHotelProjectileMolotovFireCell.CheckHitComponent(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FAEAF0>
+	void CheckDistanceToLocalPlayer(); // Function BravoHotelGame.BravoHotelProjectileMolotovFireCell.CheckDistanceToLocalPlayer(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FAEAD0>
 };
 
 // Class BravoHotelGame.BravoHotelQuestComponent
-struct UBravoHotelQuestComponent : UActorComponent {
+class UBravoHotelQuestComponent : UActorComponent {
 	struct TArray<Unknown> SeasonQuestInfos; // 0xB0 (16)
 	struct FMulticastInlineDelegate OnScenarioQuestStartDelegate; // 0xC0 (16)
 	struct FMulticastInlineDelegate OnScenarioQuestUpdateDelegate; // 0xD0 (16)
@@ -10843,12 +10844,12 @@ struct UBravoHotelQuestComponent : UActorComponent {
 };
 
 // Class BravoHotelGame.BravoHotelQuestManager
-struct UBravoHotelQuestManager : Object {
+class UBravoHotelQuestManager : Object {
 	struct TMap<Unknown, Unknown>Unknown AddQuestEventDelegates; // 0xA8 (80)
 };
 
 // Class BravoHotelGame.BravoHotelRangedWeapon
-struct ABravoHotelRangedWeapon : ABravoHotelWeaponBase {
+class ABravoHotelRangedWeapon : ABravoHotelWeaponBase {
 	struct Unknown AttachmentComponent; // 0x2130 (8)
 	struct Unknown MainWidgetRef; // 0x1FB8 (8)
 	char bLoopedFireAnim : 0; // 0x1D9C (1)
@@ -10943,7 +10944,7 @@ struct ABravoHotelRangedWeapon : ABravoHotelWeaponBase {
 	float WarmupTime; // 0x1F8C (4)
 	char bIsHeatScanActive : 0; // 0x1D88 (1)
 	char bWarmingUp : 0; // 0x1D18 (1)
-	char b : 0; // 0x1E88 (1)
+	char bReady : 0; // 0x1E88 (1)
 
 	void UpdateOneByOneReload(float Delay); // Function BravoHotelGame.BravoHotelRangedWeapon.UpdateOneByOneReload(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FB71F0>
 	void UpdateCollideState(); // Function BravoHotelGame.BravoHotelRangedWeapon.UpdateCollideState(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FB71D0>
@@ -11025,7 +11026,7 @@ struct ABravoHotelRangedWeapon : ABravoHotelWeaponBase {
 };
 
 // Class BravoHotelGame.BravoHotelRecoilComponent
-struct UBravoHotelRecoilComponent : UActorComponent {
+class UBravoHotelRecoilComponent : UActorComponent {
 	struct Unknown OwningWeaponRef; // 0xB0 (8)
 	struct Unknown CharacterRef; // 0xB8 (8)
 	struct Unknown GameStateRef; // 0xC0 (8)
@@ -11040,7 +11041,7 @@ struct UBravoHotelRecoilComponent : UActorComponent {
 	char bIsOnHold : 0; // 0xF8 (1)
 	char bNeedToInterp_BackRecoilLocation : 0; // 0xF9 (1)
 	struct Unknown Timeline_BackRecoilLocation; // 0x100 (152)
-	char bNeedToInterp_VerticalRecoilLocation : 0; // 0x198 (1)
+	char bNeedToInterp_VerticalRecoilLoc : 0; // 0x198 (1)
 	char bNeedToInterp_VerticalRecoilRotation : 0; // 0x199 (1)
 	struct Unknown Timeline_VerticalRecoilLocation; // 0x1A0 (152)
 	struct Unknown Timeline_VerticalRecoilRotation; // 0x238 (152)
@@ -11067,7 +11068,7 @@ struct UBravoHotelRecoilComponent : UActorComponent {
 };
 
 // Class BravoHotelGame.BravoHotelRedZone
-struct ABravoHotelRedZone : UActor {
+class ABravoHotelRedZone : UActor {
 	struct Unknown BombData; // 0x310 (64)
 	char ResetAndStart : 0; // 0x350 (1)
 	float RemainingWarningTime; // 0x354 (4)
@@ -11085,7 +11086,7 @@ struct ABravoHotelRedZone : UActor {
 };
 
 // Class BravoHotelGame.BravoHotelRedZoneManager
-struct ABravoHotelRedZoneManager : UActor {
+class ABravoHotelRedZoneManager : UActor {
 	char Usable : 0; // 0x310 (1)
 	struct FName TableRedZoneID; // 0x314 (8)
 	struct Unknown DefaultRedZoneData; // 0x320 (88)
@@ -11098,7 +11099,7 @@ struct ABravoHotelRedZoneManager : UActor {
 };
 
 // Class BravoHotelGame.BravoHotelReplayListWidget
-struct UBravoHotelReplayListWidget : UUserWidget {
+class UBravoHotelReplayListWidget : UUserWidget {
 	int32_t TotalPages; // 0x248 (4)
 	int32_t CurrentPage; // 0x24C (4)
 	int32_t PageSize; // 0x250 (4)
@@ -11120,13 +11121,13 @@ struct UBravoHotelReplayListWidget : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelReplayPlayerListGroup
-struct UBravoHotelReplayPlayerListGroup : UUserWidget {
+class UBravoHotelReplayPlayerListGroup : UUserWidget {
 	struct Unknown PlayerState; // 0x250 (8)
 	struct Unknown VBPlayerList; // 0x258 (8)
 };
 
 // Class BravoHotelGame.BravoHotelReplayPlayerListItem
-struct UBravoHotelReplayPlayerListItem : UUserWidget {
+class UBravoHotelReplayPlayerListItem : UUserWidget {
 	struct Unknown ReplayController; // 0x250 (8)
 	struct Unknown PlayerState; // 0x258 (8)
 	struct FString playerName; // 0x260 (16)
@@ -11136,7 +11137,7 @@ struct UBravoHotelReplayPlayerListItem : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelReplayPlayerListWidget
-struct UBravoHotelReplayPlayerListWidget : UUserWidget {
+class UBravoHotelReplayPlayerListWidget : UUserWidget {
 	struct Unknown ReplayController; // 0x248 (8)
 	struct Unknown SB_PlayerList; // 0x250 (8)
 	enum class Unknow PlayerListSortType; // 0x258 (1)
@@ -11154,7 +11155,7 @@ struct UBravoHotelReplayPlayerListWidget : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelReplayTimelineEventMarker
-struct UBravoHotelReplayTimelineEventMarker : UUserWidget {
+class UBravoHotelReplayTimelineEventMarker : UUserWidget {
 	struct Unknown ReplayController; // 0x248 (8)
 	struct Unknown KillEvent; // 0x250 (48)
 
@@ -11167,7 +11168,7 @@ struct UBravoHotelReplayTimelineEventMarker : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelReplayTimelineWidget
-struct UBravoHotelReplayTimelineWidget : UUserWidget {
+class UBravoHotelReplayTimelineWidget : UUserWidget {
 	int32_t CurrentTimeMS; // 0x248 (4)
 	int32_t TotalTimeMS; // 0x24C (4)
 	float SliderValue; // 0x250 (4)
@@ -11195,7 +11196,7 @@ struct UBravoHotelReplayTimelineWidget : UUserWidget {
 	struct TArray<Unknown> MK3DReportedEvents; // 0x310 (16)
 
 	void UpdateTimelineScale(); // Function BravoHotelGame.BravoHotelReplayTimelineWidget.UpdateTimelineScale(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FBBF40>
-	void UpdateAllKillEventMarkersP(); // Function BravoHotelGame.BravoHotelReplayTimelineWidget.UpdateAllKillEventMarkers(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FBBF20>
+	void UpdateAllKillEventMarkersPos(); // Function BravoHotelGame.BravoHotelReplayTimelineWidget.UpdateAllKillEventMarkersPos(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FBBF20>
 	struct FString TimeToStringMMSS(float InTime); // Function BravoHotelGame.BravoHotelReplayTimelineWidget.TimeToStringMMSS(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FBBDE0>
 	void Timer_EnumerateMK3DResuscitatedEvents(); // Function BravoHotelGame.BravoHotelReplayTimelineWidget.Timer_EnumerateMK3DResuscitatedEvents(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FBBF00>
 	void Timer_EnumerateMK3DKnockoutEvents(); // Function BravoHotelGame.BravoHotelReplayTimelineWidget.Timer_EnumerateMK3DKnockoutEvents(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FBBEE0>
@@ -11203,7 +11204,7 @@ struct UBravoHotelReplayTimelineWidget : UUserWidget {
 	struct FString TimeMSToStringMMSS(int32_t InTimeMS); // Function BravoHotelGame.BravoHotelReplayTimelineWidget.TimeMSToStringMMSS(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FBBD00>
 	void RemoveAllResuscitatedEventMarkers(); // Function BravoHotelGame.BravoHotelReplayTimelineWidget.RemoveAllResuscitatedEventMarkers(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FBBCE0>
 	void RemoveAllReportedEv(); // Function BravoHotelGame.BravoHotelReplayTimelineWidget.RemoveAllReportedEv(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FBBCC0>
-	void RemoveAllKnockoutEvelineWidge(); // Function BravoHotelGame.BravoHotelReplayTimelineWidget.RemoveAllKnockoutEvame(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FBBCA0>
+	void RemoveAllKnockoutEv(); // Function BravoHotelGame.BravoHotelReplayTimelineWidget.RemoveAllKnockoutEv(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FBBCA0>
 	void RemoveAllKillEventMarkers(); // Function BravoHotelGame.BravoHotelReplayTimelineWidget.RemoveAllKillEventMarkers(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FBBC80>
 	void RefreshAllKillEventMarkers(); // Function BravoHotelGame.BravoHotelReplayTimelineWidget.RefreshAllKillEventMarkers(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FBBC60>
 	void OnValueChangedTimeSlider(float InValue); // Function BravoHotelGame.BravoHotelReplayTimelineWidget.OnValueChangedTimeSlider(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FBBBE0>
@@ -11214,7 +11215,7 @@ struct UBravoHotelReplayTimelineWidget : UUserWidget {
 	void OnCheckStateChangedShowKnockout(); // Function BravoHotelGame.BravoHotelReplayTimelineWidget.OnCheckStateChangedShowKnockout(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FBBB80>
 	void OnCheckStateChangedShowKill(); // Function BravoHotelGame.BravoHotelReplayTimelineWidget.OnCheckStateChangedShowKill(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FBBB60>
 	struct Unknown GetTimelineToolTipPosition(struct FString& ToolTipTime); // Function BravoHotelGame.BravoHotelReplayTimelineWidget.GetTimelineToolTipPosition(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FBBA90>
-	void EnumerateMK3DKillEv(enum class Unknow killType); // Function BravoHotelGame.BravoHotelReplayTimelineWidget.EnumerateMK3DKillEv(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FBBA10>
+	void EnumerateMK3DKillEv(enum class Unknow killType); // Function BravoHotelGame.BravoHotelReplayTimelineWidget.EnumerateMK3DKillEvelin(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FBBA10>
 	struct Unknown CreateEventMarker(enum class Unknow killType); // Function BravoHotelGame.BravoHotelReplayTimelineWidget.CreateEventMarker(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void CalcurateNormalizedMousePos(float SlierThumbImageWidth, struct Unknown SliderGeom); // Function BravoHotelGame.BravoHotelReplayTimelineWidget.CalcurateNormalizedMousePos(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FBB8F0>
 	void BPUpdateTimelineScale(); // Function BravoHotelGame.BravoHotelReplayTimelineWidget.BPUpdateTimelineScale(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
@@ -11222,19 +11223,19 @@ struct UBravoHotelReplayTimelineWidget : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelReportDataManager
-struct UBravoHotelReportDataManager : Object {
+class UBravoHotelReportDataManager : Object {
 	struct Unknown CurrWorldContext; // 0x368 (8)
 };
 
 // Class BravoHotelGame.BravoHotelReportUserCompletedWidget
-struct UBravoHotelReportUserCompletedWidget : UUserWidget {
+class UBravoHotelReportUserCompletedWidget : UUserWidget {
 	struct Unknown ConfirmButton; // 0x248 (8)
 
 	void OnClickedConfirm(); // Function BravoHotelGame.BravoHotelReportUserCompletedWidget.OnClickedConfirm(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FBC920>
 };
 
 // Class BravoHotelGame.BravoHotelReportUserConfirmWidget
-struct UBravoHotelReportUserConfirmWidget : UUserWidget {
+class UBravoHotelReportUserConfirmWidget : UUserWidget {
 	struct Unknown ConfirmButton; // 0x248 (8)
 	struct Unknown CancelButton; // 0x250 (8)
 
@@ -11244,7 +11245,7 @@ struct UBravoHotelReportUserConfirmWidget : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelReportUserProgramWidget
-struct UBravoHotelReportUserProgramWidget : UUserWidget {
+class UBravoHotelReportUserProgramWidget : UUserWidget {
 	struct Unknown ReportButton; // 0x248 (8)
 	struct Unknown CancelButton; // 0x250 (8)
 	struct Unknown SelectedUserNickName; // 0x258 (8)
@@ -11259,7 +11260,7 @@ struct UBravoHotelReportUserProgramWidget : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelReportUserWidget
-struct UBravoHotelReportUserWidget : UUserWidget {
+class UBravoHotelReportUserWidget : UUserWidget {
 	struct Unknown ReportButton; // 0x248 (8)
 	struct Unknown CancelButton; // 0x250 (8)
 	struct Unknown SelectedUserNickName; // 0x258 (8)
@@ -11272,14 +11273,14 @@ struct UBravoHotelReportUserWidget : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelRotorRunner
-struct ABravoHotelRotorRunner : ABravoHotelActor {
+class ABravoHotelRotorRunner : ABravoHotelActor {
 	struct Unknown RotorActor; // 0x310 (8)
 	float RotorSpeed; // 0x318 (4)
 	float TickEnableDistance; // 0x31C (4)
 };
 
 // Class BravoHotelGame.BravoHotelScenarioBase
-struct UBravoHotelScenarioBase : Object {
+class UBravoHotelScenarioBase : Object {
 	struct Unknown OwnerActor; // 0x28 (8)
 
 	void K2_StopScenario(); // Function BravoHotelGame.BravoHotelScenarioBase.K2_StopScenario(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
@@ -11287,7 +11288,7 @@ struct UBravoHotelScenarioBase : Object {
 };
 
 // Class BravoHotelGame.BravoHotelScenarioActor
-struct ABravoHotelScenarioActor : UActor {
+class ABravoHotelScenarioActor : UActor {
 	char bActiveOnStart : 0; // 0x338 (1)
 
 	void OnActorActived__DelegateSignature(struct Unknown ChangedActor); // DelegateFunction BravoHotelGame.BravoHotelScenarioActor.OnActorActived__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
@@ -11297,7 +11298,7 @@ struct ABravoHotelScenarioActor : UActor {
 };
 
 // Class BravoHotelGame.BravoHotelScenarioCallbackProxy
-struct UBravoHotelScenarioCallbackProxy : Object {
+class UBravoHotelScenarioCallbackProxy : Object {
 	struct FMulticastInlineDelegate Finished; // 0x28 (16)
 
 	void OnTriggerFinished(struct Unknown OverlappedComponent, struct Unknown OtherActor, struct Unknown OtherComp, int32_t OtherBodyIndex, char bFromSweep, struct Unknown& SweepResult); // Function BravoHotelGame.BravoHotelScenarioCallbackProxy.OnTriggerFinished(Final|Native|Private|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FBE860>
@@ -11310,7 +11311,7 @@ struct UBravoHotelScenarioCallbackProxy : Object {
 };
 
 // Class BravoHotelGame.BravoHotelScenarioComponent
-struct UBravoHotelScenarioComponent : UActorComponent {
+class UBravoHotelScenarioComponent : UActorComponent {
 	struct Unknown* StartScenarioClass; // 0xB0 (8)
 	struct Unknown CurrentScenario; // 0xB8 (8)
 	struct Unknown TimeHandle_ForceStart; // 0x118 (8)
@@ -11329,14 +11330,14 @@ struct UBravoHotelScenarioComponent : UActorComponent {
 };
 
 // Class BravoHotelGame.BravoHotelSceneCaptureComponent2D
-struct UBravoHotelSceneCaptureComponent2D : USceneCaptureComponent2D {
+class UBravoHotelSceneCaptureComponent2D : USceneCaptureComponent2D {
 	float TickRate; // 0x938 (4)
 
 	void ResizeTextureTarget(int32_t InSizeX, int32_t InSizeY); // Function BravoHotelGame.BravoHotelSceneCaptureComponent2D.ResizeTextureTarget(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FC06F0>
 };
 
 // Class BravoHotelGame.SightInfoData
-struct USightInfoData : UDataAsset {
+class USightInfoData : UDataAsset {
 	struct Unknown DefaultSightViewRatio; // 0x30 (8)
 	struct Unknown HoloSightViewRatio; // 0x38 (8)
 	struct Unknown ReddotViewRatio; // 0x40 (8)
@@ -11348,12 +11349,12 @@ struct USightInfoData : UDataAsset {
 };
 
 // Class BravoHotelGame.BravoHotelSeason
-struct UBravoHotelSeason : UBravoHotelCoherentObject {
+class UBravoHotelSeason : UBravoHotelCoherentObject {
 	struct FMulticastInlineDelegate OnSeasonChangedSubTabDelegate; // 0x30 (16)
 };
 
 // Class BravoHotelGame.BravoHotelSettingBaseWidget
-struct UBravoHotelSettingBaseWidget : UUserWidget {
+class UBravoHotelSettingBaseWidget : UUserWidget {
 	struct FMulticastInlineDelegate DelegateShowInfo; // 0x248 (16)
 	struct FMulticastInlineDelegate DelegateChangeValue; // 0x258 (16)
 	struct FMulticastInlineDelegate DelegateChangeValueDirect; // 0x268 (16)
@@ -11368,7 +11369,7 @@ struct UBravoHotelSettingBaseWidget : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelSettingSlotWidget
-struct UBravoHotelSettingSlotWidget : UBravoHotelSettingBaseWidget {
+class UBravoHotelSettingSlotWidget : UBravoHotelSettingBaseWidget {
 	struct Unknown ParentWidget; // 0x298 (8)
 	struct FName ActionName; // 0x2A0 (8)
 	struct FName AxisActionName; // 0x2A8 (8)
@@ -11417,7 +11418,7 @@ struct UBravoHotelSettingSlotWidget : UBravoHotelSettingBaseWidget {
 };
 
 // Class BravoHotelGame.BravoHotelSettingWidget
-struct UBravoHotelSettingWidget : UBravoHotelSettingBaseWidget {
+class UBravoHotelSettingWidget : UBravoHotelSettingBaseWidget {
 	struct TArray<Unknown> BackupSlots; // 0x298 (16)
 	struct TMap<Unknown, Unknown>Unknown SettingList; // 0x2B0 (80)
 	struct TMap<Unknown, Unknown>Unknown ChangeSettingList; // 0x300 (80)
@@ -11448,7 +11449,7 @@ struct UBravoHotelSettingWidget : UBravoHotelSettingBaseWidget {
 };
 
 // Class BravoHotelGame.BravoHotelShellCasingArrowComponent
-struct UBravoHotelShellCasingArrowComponent : UClientArrowComponent {
+class UBravoHotelShellCasingArrowComponent : UClientArrowComponent {
 	struct Unknown* ShellCasingClass; // 0x4C8 (8)
 	float SpawnPowerMin; // 0x4D0 (4)
 	float SpawnPowerMax; // 0x4D4 (4)
@@ -11462,7 +11463,7 @@ struct UBravoHotelShellCasingArrowComponent : UClientArrowComponent {
 };
 
 // Class BravoHotelGame.BravoHotelSightAttachment
-struct ABravoHotelSightAttachment : UActor {
+class ABravoHotelSightAttachment : UActor {
 	struct Unknown WeaponSight; // 0x310 (8)
 	char bUpdateScopeWidgetScaling : 0; // 0x318 (1)
 	enum class Unknow SightType; // 0x319 (1)
@@ -11515,21 +11516,21 @@ struct ABravoHotelSightAttachment : UActor {
 };
 
 // Class BravoHotelGame.BravoHotelSignificanceManager
-struct UBravoHotelSignificanceManager : USignificanceManager {
+class UBravoHotelSignificanceManager : USignificanceManager {
 	struct Unknown DefaultCriteriaSetup; // 0x170 (40)
 	char bIsEnabled : 0; // 0x198 (1)
 	struct Unknown CachedCameraManager; // 0x1A0 (8)
 };
 
 // Class BravoHotelGame.BravoHotelSimulationActor
-struct ABravoHotelSimulationActor : ABravoHotelActor {
+class ABravoHotelSimulationActor : ABravoHotelActor {
 	struct Unknown Root; // 0x310 (8)
 	struct Unknown SimulationStaticMesh; // 0x318 (8)
 	float LifeTime; // 0x320 (4)
 };
 
 // Class BravoHotelGame.BravoHotelSkillTargetingBase
-struct ABravoHotelSkillTargetingBase : UActor {
+class ABravoHotelSkillTargetingBase : UActor {
 	struct Unknown MissileLineParticle; // 0x310 (8)
 	struct Unknown MissileParticle; // 0x318 (8)
 	struct Unknown TargetDecal; // 0x320 (8)
@@ -11542,12 +11543,12 @@ struct ABravoHotelSkillTargetingBase : UActor {
 };
 
 // Class BravoHotelGame.BravoHotelSkillTargetingBombing
-struct ABravoHotelSkillTargetingBombing : ABravoHotelSkillTargetingBase {
+class ABravoHotelSkillTargetingBombing : ABravoHotelSkillTargetingBase {
 	struct Unknown BombingSound; // 0x330 (8)
 };
 
 // Class BravoHotelGame.BravoHotelSkillTargetingNuclear
-struct ABravoHotelSkillTargetingNuclear : ABravoHotelSkillTargetingBase {
+class ABravoHotelSkillTargetingNuclear : ABravoHotelSkillTargetingBase {
 	struct Unknown NuclearInfo; // 0x330 (12)
 	struct Unknown NuclearWarningEvent; // 0x340 (8)
 	float BroadcastDelayTime; // 0x348 (4)
@@ -11559,7 +11560,7 @@ struct ABravoHotelSkillTargetingNuclear : ABravoHotelSkillTargetingBase {
 };
 
 // Class BravoHotelGame.BravoHotelSmartPingActor
-struct ABravoHotelSmartPingActor : UActor {
+class ABravoHotelSmartPingActor : UActor {
 	struct Unknown LocationActor; // 0x310 (8)
 	struct Unknown LightPoleMesh; // 0x318 (8)
 	char IsBook : 0; // 0x320 (1)
@@ -11634,7 +11635,7 @@ struct ABravoHotelSmartPingActor : UActor {
 };
 
 // Class BravoHotelGame.BravoHotelSmartPingIconWidget
-struct UBravoHotelSmartPingIconWidget : UUserWidget {
+class UBravoHotelSmartPingIconWidget : UUserWidget {
 	enum class Unknow WidgetSpace; // 0x248 (1)
 	struct Unknown SmartPingScaleWorld; // 0x250 (8)
 	struct Unknown SmartPingScale; // 0x258 (8)
@@ -11651,7 +11652,7 @@ struct UBravoHotelSmartPingIconWidget : UUserWidget {
 	struct Unknown ParentPingActor; // 0x2B0 (8)
 	float PingDistance; // 0x2B8 (4)
 	struct Unknown TimerHandle_Update; // 0x2C0 (8)
-	struct Unknown TimerHandle_OnActiva; // 0x2C8 (8)
+	struct Unknown TimerHandle_OnActiv; // 0x2C8 (8)
 	struct Unknown PingIconSettings; // 0x2D0 (184)
 	struct Unknown MaterialItemPingInfo; // 0x388 (48)
 	struct Unknown ExpertWeaponItemPingInfo; // 0x3B8 (40)
@@ -11679,7 +11680,7 @@ struct UBravoHotelSmartPingIconWidget : UUserWidget {
 	void SetIconAlpha(float NewAlpha); // Function BravoHotelGame.BravoHotelSmartPingIconWidget.SetIconAlpha(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void SetIcon(int32_t TeamPlayerIndex, enum class Unknow ItemPingIconType, char IgnoreTeamIndex); // Function BravoHotelGame.BravoHotelSmartPingIconWidget.SetIcon(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	char SetExpertWeaponPing(struct Unknown& PingInfo); // Function BravoHotelGame.BravoHotelSmartPingIconWidget.SetExpertWeaponPing(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
-	void OnMaterialPingActive(struct Unknown& PingInfo, struct Unknown& Settings); // Function BravoHotelGame.BravoHotelSmartPingIconWidget.OnMaterialPingActiv(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FC9B20>
+	void OnMaterialPingActiv(struct Unknown& PingInfo, struct Unknown& Settings); // Function BravoHotelGame.BravoHotelSmartPingIconWidget.OnMaterialPingActivI(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FC9B20>
 	void OnLocalPingActive(struct Unknown& PingInfo, struct Unknown& Settings); // Function BravoHotelGame.BravoHotelSmartPingIconWidget.OnLocalPingActive(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FC9920>
 	void OnExpertWeaponPingActive(struct Unknown& PingInfo, struct Unknown& Settings); // Function BravoHotelGame.BravoHotelSmartPingIconWidget.OnExpertWeaponPingActive(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FC9720>
 	void OnDeActive(); // Function BravoHotelGame.BravoHotelSmartPingIconWidget.OnDeActive(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FC9700>
@@ -11687,7 +11688,7 @@ struct UBravoHotelSmartPingIconWidget : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelSmartPingSystem
-struct UBravoHotelSmartPingSystem : UActorComponent {
+class UBravoHotelSmartPingSystem : UActorComponent {
 	struct TArray<Unknown> PingActorList; // 0xB0 (16)
 	struct Unknown PersonalSupplyBoxActor; // 0xC0 (8)
 	struct Unknown GuideActor; // 0xC8 (8)
@@ -11751,7 +11752,7 @@ struct UBravoHotelSmartPingSystem : UActorComponent {
 };
 
 // Class BravoHotelGame.BravoHotelSpectatorPawn
-struct ABravoHotelSpectatorPawn : ASpectatorPawn {
+class ABravoHotelSpectatorPawn : ASpectatorPawn {
 	struct Unknown TargetPawn; // 0x3A8 (8)
 
 	void SetTargetVehicle(struct Unknown Vehicle, char bDrive); // Function BravoHotelGame.BravoHotelSpectatorPawn.SetTargetVehicle(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FCCE30>
@@ -11762,7 +11763,7 @@ struct ABravoHotelSpectatorPawn : ASpectatorPawn {
 };
 
 // Class BravoHotelGame.BravoHotelSuperBarrier
-struct ABravoHotelSuperBarrier : UActor {
+class ABravoHotelSuperBarrier : UActor {
 	struct Unknown StaticMeshComponent; // 0x310 (8)
 	struct Unknown CreationEffectMeshComponent; // 0x318 (8)
 	char bIsLifeSpanExpired : 0; // 0x320 (1)
@@ -11785,7 +11786,7 @@ struct ABravoHotelSuperBarrier : UActor {
 };
 
 // Class BravoHotelGame.BravoHotelSupplyBox
-struct UBravoHotelSupplyBox : UBravoHotelCoherentObject {
+class UBravoHotelSupplyBox : UBravoHotelCoherentObject {
 	struct Unknown SupplyBoxSpawnEffect; // 0x38 (8)
 	struct Unknown* PP_Preset_PickupOutline; // 0x40 (8)
 	struct FMulticastInlineDelegate EffectEquipmentTransitionDelegate; // 0x48 (16)
@@ -11800,7 +11801,7 @@ struct UBravoHotelSupplyBox : UBravoHotelCoherentObject {
 };
 
 // Class BravoHotelGame.BravoHotelSupplyBoxSpawnComponent
-struct UBravoHotelSupplyBoxSpawnComponent : UBoxComponent {
+class UBravoHotelSupplyBoxSpawnComponent : UBoxComponent {
 	char TraceLand : 0; // 0x4E0 (1)
 	int32_t CustomIndex; // 0x4E8 (4)
 
@@ -11808,7 +11809,7 @@ struct UBravoHotelSupplyBoxSpawnComponent : UBoxComponent {
 };
 
 // Class BravoHotelGame.BravoHotelTeamInfoSlotWidget
-struct UBravoHotelTeamInfoSlotWidget : UUserWidget {
+class UBravoHotelTeamInfoSlotWidget : UUserWidget {
 	struct Unknown TimerHandle_CheckValue; // 0x248 (8)
 	int32_t SlotIndex; // 0x2DC (4)
 	struct Unknown PlayerState; // 0x2E0 (8)
@@ -11843,7 +11844,7 @@ struct UBravoHotelTeamInfoSlotWidget : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelTeamInfoWidget
-struct UBravoHotelTeamInfoWidget : UUserWidget {
+class UBravoHotelTeamInfoWidget : UUserWidget {
 	struct TArray<Unknown> SlotList; // 0x248 (16)
 
 	void Init(); // Function BravoHotelGame.BravoHotelTeamInfoWidget.Init(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FCF2C0>
@@ -11851,7 +11852,7 @@ struct UBravoHotelTeamInfoWidget : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelTeamPlayerStart
-struct ABravoHotelTeamPlayerStart : APlayerStart {
+class ABravoHotelTeamPlayerStart : APlayerStart {
 	struct Unknown SpawnLocationBoxComponent; // 0x340 (8)
 	float CharacterHalfHeight; // 0x348 (4)
 	char bUseAreaSystem : 0; // 0x34C (1)
@@ -11870,7 +11871,7 @@ struct ABravoHotelTeamPlayerStart : APlayerStart {
 };
 
 // Class BravoHotelGame.BravoHotelTeamPositionWidget
-struct UBravoHotelTeamPositionWidget : UUserWidget {
+class UBravoHotelTeamPositionWidget : UUserWidget {
 	struct Unknown PlayerState; // 0x248 (8)
 	struct Unknown Canvas_Main; // 0x250 (8)
 	struct Unknown Canvas_Rot; // 0x258 (8)
@@ -11888,7 +11889,7 @@ struct UBravoHotelTeamPositionWidget : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelTestWidget
-struct UBravoHotelTestWidget : UUserWidget {
+class UBravoHotelTestWidget : UUserWidget {
 	struct TArray<Unknown> SpawnResultInfo; // 0x248 (16)
 	struct TArray<Unknown> SpawnResultData; // 0x258 (16)
 	struct TArray<Unknown> SpawnActorInfos; // 0x268 (16)
@@ -11921,7 +11922,7 @@ struct UBravoHotelTestWidget : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelThrowingWeaponMovementComponent
-struct UBravoHotelThrowingWeaponMovementComponent : UProjectileMovementComponent {
+class UBravoHotelThrowingWeaponMovementComponent : UProjectileMovementComponent {
 	struct FMulticastInlineDelegate OnProjectilePenetrate; // 0x1D0 (16)
 	char bIsFluidFriction : 0; // 0x1E0 (1)
 	char bInFluid : 0; // 0x1E1 (1)
@@ -11933,7 +11934,7 @@ struct UBravoHotelThrowingWeaponMovementComponent : UProjectileMovementComponent
 };
 
 // Class BravoHotelGame.BravoHotelTimeOfDay
-struct ABravoHotelTimeOfDay : UActor {
+class ABravoHotelTimeOfDay : UActor {
 	enum class Unknow CurrentTimeOfDayType; // 0x310 (1)
 	char bUseClearFog : 0; // 0x311 (1)
 	float PostSimulationAlpha; // 0x314 (4)
@@ -11956,14 +11957,14 @@ struct ABravoHotelTimeOfDay : UActor {
 
 	void UpdateSimulation(); // Function BravoHotelGame.BravoHotelTimeOfDay.UpdateSimulation(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FD2840>
 	void UpdateRenderState(); // Function BravoHotelGame.BravoHotelTimeOfDay.UpdateRenderState(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FD2820>
-	void ChangeTimeOfDaySettings(struct Unknown& TargetSetting, char b); // Function BravoHotelGame.BravoHotelTimeOfDay.ChangeTimeOfDaySettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FD2460>
+	void ChangeTimeOfDaySettings(struct Unknown& TargetSetting, char bResetUnchecked); // Function BravoHotelGame.BravoHotelTimeOfDay.ChangeTimeOfDaySettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FD2460>
 	void ChangeTimeOfDay_Simulate(enum class Unknow Begin, enum class Unknow End, float RotationTransition, float PostTransitionDelay, float PostTransition); // Function BravoHotelGame.BravoHotelTimeOfDay.ChangeTimeOfDay_Simulate(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FD2690>
 	void ChangeTimeOfDay_InterpTo(enum class Unknow TOD_Begin, enum class Unknow TOD_End); // Function BravoHotelGame.BravoHotelTimeOfDay.ChangeTimeOfDay_InterpTo(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FD25D0>
 	void ChangeTimeOfDay_Immediately(enum class Unknow TimeOfDayType); // Function BravoHotelGame.BravoHotelTimeOfDay.ChangeTimeOfDay_Immediately(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FD2550>
 };
 
 // Class BravoHotelGame.BravoHotelTitleHUD
-struct ABravoHotelTitleHUD : ABravoHotelBaseHUD {
+class ABravoHotelTitleHUD : ABravoHotelBaseHUD {
 	struct Unknown* LobbyWidgetClass; // 0x420 (8)
 	struct Unknown* CreateCharacterWidgetClass; // 0x428 (8)
 	struct Unknown LobbyWidget; // 0x430 (8)
@@ -11987,7 +11988,7 @@ struct ABravoHotelTitleHUD : ABravoHotelBaseHUD {
 };
 
 // Class BravoHotelGame.BravoHotelTopInfoWidget
-struct UBravoHotelTopInfoWidget : UUserWidget {
+class UBravoHotelTopInfoWidget : UUserWidget {
 	enum class Unknow CharacterState; // 0x250 (1)
 	enum class Unknow PreCharacterState; // 0x251 (1)
 	struct Unknown FallingWidget; // 0x258 (8)
@@ -12001,7 +12002,7 @@ struct UBravoHotelTopInfoWidget : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelTrajectoryComponent
-struct UBravoHotelTrajectoryComponent : UActorComponent {
+class UBravoHotelTrajectoryComponent : UActorComponent {
 	char bCanDrawTrajectory : 0; // 0xB0 (1)
 	char bUseDebugLine : 0; // 0xB1 (1)
 	char bIsTrajectorySegmentsCreated : 0; // 0xB2 (1)
@@ -12031,7 +12032,7 @@ struct UBravoHotelTrajectoryComponent : UActorComponent {
 };
 
 // Class BravoHotelGame.BravoHotelTransportDropBoxActor
-struct ABravoHotelTransportDropBoxActor : ABravoHotelDropBoxActor {
+class ABravoHotelTransportDropBoxActor : ABravoHotelDropBoxActor {
 	enum class Unknow PrevDropBoxState; // 0x390 (1)
 	enum class Unknow CurrentDropBoxState; // 0x391 (1)
 	char bLandedOnWater : 0; // 0x392 (1)
@@ -12066,7 +12067,7 @@ struct ABravoHotelTransportDropBoxActor : ABravoHotelDropBoxActor {
 };
 
 // Class BravoHotelGame.ArmoryDataAsset
-struct UArmoryDataAsset : UDataAsset {
+class UArmoryDataAsset : UDataAsset {
 	struct TSoftObjectPtr<Unknown> StaticMesh; // 0x30 (40)
 	struct Unknown LocationOffset; // 0x58 (12)
 	struct Unknown RotationOffset; // 0x64 (12)
@@ -12074,13 +12075,13 @@ struct UArmoryDataAsset : UDataAsset {
 };
 
 // Class BravoHotelGame.LoadTableAsset
-struct ULoadTableAsset : UPrimaryDataAsset {
+class ULoadTableAsset : UPrimaryDataAsset {
 	struct TArray<Unknown> ItemTables; // 0x30 (16)
 	struct TArray<Unknown> ItemValueTables; // 0x40 (16)
 };
 
 // Class BravoHotelGame.BravoHotelUserSettings
-struct UBravoHotelUserSettings : UGameUserSettings {
+class UBravoHotelUserSettings : UGameUserSettings {
 	int32_t TotalGraphicQuality; // 0x154 (4)
 	char MasterVolumeOnOff : 0; // 0x158 (1)
 	int32_t PreMasterVolume; // 0x15C (4)
@@ -12104,12 +12105,13 @@ struct UBravoHotelUserSettings : UGameUserSettings {
 	int32_t ADS6xSensitivity; // 0x1A4 (4)
 	int32_t ADS8xSensitivity; // 0x1A8 (4)
 	int32_t ADS15xSensitivity; // 0x1AC (4)
-	char b : 0; // 0x1B0 (1)
-	char b : 0; // 0x1B1 (1)
+	char bReverseLeftAndRight : 0; // 0x1B0 (1)
+	char bReverseUpAndDown : 0; // 0x1B1 (1)
 	int32_t CrossHairIndex; // 0x1B4 (4)
 	struct TMap<Unknown, Unknown>Unknown FireModeSettings; // 0x1B8 (80)
-	char pad_1F8_0 : 7; // 0x1F8 (1)
-	char a : 1; // 0x208 (1)
+	char pad_1F8_0 : 5; // 0x1F8 (1)
+	char autoReload : 1; // 0x208 (1)
+	char pad_1F8_6 : 2; // 0x1F8 (1)
 	char ImmediateAttachment : 0; // 0x209 (1)
 	char InheritAttachment : 0; // 0x20A (1)
 	char ShowPerkSlot : 0; // 0x20B (1)
@@ -12190,7 +12192,7 @@ struct UBravoHotelUserSettings : UGameUserSettings {
 };
 
 // Class BravoHotelGame.BravoHotelVehicle
-struct ABravoHotelVehicle : AWheeledVehicle {
+class ABravoHotelVehicle : AWheeledVehicle {
 	struct Unknown TeamInfoUpdaterComponentRef; // 0x3A0 (8)
 	struct Unknown SpringArm; // 0x3A8 (8)
 	struct Unknown RearCamera; // 0x3B0 (8)
@@ -12235,7 +12237,7 @@ struct ABravoHotelVehicle : AWheeledVehicle {
 	float CurrentInputMoveRight; // 0x5DC (4)
 	struct TMap<Unknown, Unknown>Unknown AnimRate_LODToFrameSkipMap; // 0x5E8 (80)
 	int32_t AnimRate_BaseNonRenderedUpdateRate; // 0x638 (4)
-	char b : 0; // 0x649 (1)
+	char bResetPhysicsOnWater : 0; // 0x649 (1)
 	char bIsOnTheWater : 0; // 0x64A (1)
 	char bAllOfWheelsInTheWater : 0; // 0x64B (1)
 	float ModeChangingTime; // 0x660 (4)
@@ -12259,7 +12261,7 @@ struct ABravoHotelVehicle : AWheeledVehicle {
 	struct Unknown EngineStartEvent; // 0x760 (8)
 	struct Unknown EngineStopEvent; // 0x768 (8)
 	struct Unknown TiringPauseAudioEvent; // 0x770 (8)
-	struct Unknown TiringResumeAudioEvnt; // 0x778 (8)
+	struct Unknown TiringResumeAudioEv; // 0x778 (8)
 	struct Unknown VehicleHorn; // 0x780 (8)
 	struct Unknown VehicleHornStop; // 0x788 (8)
 	struct Unknown VehicleHornMute; // 0x790 (8)
@@ -12444,7 +12446,7 @@ struct ABravoHotelVehicle : AWheeledVehicle {
 };
 
 // Class BravoHotelGame.BravoHotelVehicleAnimInstance
-struct UBravoHotelVehicleAnimInstance : UVehicleAnimInstance {
+class UBravoHotelVehicleAnimInstance : UVehicleAnimInstance {
 	struct Unknown Vehicle; // 0x978 (8)
 	struct Unknown VehicleMovementComponent; // 0x980 (8)
 	float DeltaTime; // 0x988 (4)
@@ -12477,7 +12479,7 @@ struct UBravoHotelVehicleAnimInstance : UVehicleAnimInstance {
 };
 
 // Class BravoHotelGame.BravoHotelVehicleData
-struct UBravoHotelVehicleData : UDataAsset {
+class UBravoHotelVehicleData : UDataAsset {
 	struct FText DisplayName; // 0x30 (24)
 	float MaxHealthPoint; // 0x48 (4)
 	struct TArray<Unknown> AllowedWeaponTypes; // 0x50 (16)
@@ -12524,7 +12526,7 @@ struct UBravoHotelVehicleData : UDataAsset {
 };
 
 // Class BravoHotelGame.BravoHotelVehicleMovementComponent
-struct UBravoHotelVehicleMovementComponent : UWheeledVehicleMovementComponentMotor {
+class UBravoHotelVehicleMovementComponent : UWheeledVehicleMovementComponentMotor {
 	struct FMulticastInlineDelegate OnWheelFloated; // 0x3F8 (16)
 	struct FMulticastInlineDelegate OnWheelLanded; // 0x408 (16)
 	struct FMulticastInlineDelegate OnFloatingInAirChanged; // 0x418 (16)
@@ -12572,7 +12574,7 @@ struct UBravoHotelVehicleMovementComponent : UWheeledVehicleMovementComponentMot
 	void StopMovementSmoothly(char SetStop); // Function BravoHotelGame.BravoHotelVehicleMovementComponent.StopMovementSmoothly(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2029510>
 	void SteeringInputChanged__DelegateSignature(float PreviousInput, float CurrentInput); // DelegateFunction BravoHotelGame.BravoHotelVehicleMovementComponent.SteeringInputChanged__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void SetSideBrake(char SetSide); // Function BravoHotelGame.BravoHotelVehicleMovementComponent.SetSideBrake(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2029480>
-	void SetInwaterState(char bSetInWater, char b); // Function BravoHotelGame.BravoHotelVehicleMovementComponent.SetInwaterState(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x20293B0>
+	void SetInwaterState(char bSetInWater, char bResetPhysics); // Function BravoHotelGame.BravoHotelVehicleMovementComponent.SetInwaterState(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x20293B0>
 	void ServerUpdateRigidBodyReplicated(struct Unknown Movement); // Function BravoHotelGame.BravoHotelVehicleMovementComponent.ServerUpdateRigidBodyReplicated(Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x20292F0>
 	void ServerUpdateControlStates(struct Unknown InRepControlState); // Function BravoHotelGame.BravoHotelVehicleMovementComponent.ServerUpdateControlStates(Net|NetReliableNative|Event|Protected|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2029240>
 	void ServerEnableBooster(char bEnable); // Function BravoHotelGame.BravoHotelVehicleMovementComponent.ServerEnableBooster(Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2029180>
@@ -12605,21 +12607,21 @@ struct UBravoHotelVehicleMovementComponent : UWheeledVehicleMovementComponentMot
 };
 
 // Class BravoHotelGame.BravoHotelVehicleMovementComponent4W
-struct UBravoHotelVehicleMovementComponent4W : UBravoHotelVehicleMovementComponent {
+class UBravoHotelVehicleMovementComponent4W : UBravoHotelVehicleMovementComponent {
 	struct Unknown DifferentialSetup; // 0x618 (28)
 	struct TArray<Unknown> WreckedDifferentialLateralWeights; // 0x638 (16)
 	float AckermannAccuracy; // 0x648 (4)
 };
 
 // Class BravoHotelGame.BravoHotelVehicleSeatCollisionComponent
-struct UBravoHotelVehicleSeatCollisionComponent : UCapsuleComponent {
+class UBravoHotelVehicleSeatCollisionComponent : UCapsuleComponent {
 	int32_t SeatNum; // 0x4D8 (4)
 
 	int32_t GetSeatNum(); // Function BravoHotelGame.BravoHotelVehicleSeatCollisionComponent.GetSeatNum(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x20298B0>
 };
 
 // Class BravoHotelGame.VehicleSeatData
-struct UVehicleSeatData : UDataAsset {
+class UVehicleSeatData : UDataAsset {
 	char bShouldUseTwoHandIK : 0; // 0x30 (1)
 	struct Unknown IdleAimOffset; // 0x38 (8)
 	struct Unknown UnarmedIdleAnim; // 0x40 (8)
@@ -12664,7 +12666,7 @@ struct UVehicleSeatData : UDataAsset {
 };
 
 // Class BravoHotelGame.BravoHotelVehicleSeatComponent
-struct UBravoHotelVehicleSeatComponent : UBoxComponent {
+class UBravoHotelVehicleSeatComponent : UBoxComponent {
 	struct FName SeatSocketName; // 0x4E0 (8)
 	char bIsForDriver : 0; // 0x4E8 (1)
 	int32_t Index; // 0x4EC (4)
@@ -12690,13 +12692,13 @@ struct UBravoHotelVehicleSeatComponent : UBoxComponent {
 };
 
 // Class BravoHotelGame.BravoHotelVehicleSpawnActor
-struct ABravoHotelVehicleSpawnActor : UActor {
+class ABravoHotelVehicleSpawnActor : UActor {
 	float CheckVehicleSpawnDistance; // 0x310 (4)
 	struct FName VehicleAreaSpawnRateTableKey; // 0x314 (8)
 };
 
 // Class BravoHotelGame.BravoHotelVehicleSpawnBoxComponent
-struct UBravoHotelVehicleSpawnBoxComponent : UBoxComponent {
+class UBravoHotelVehicleSpawnBoxComponent : UBoxComponent {
 	float SpawnProbability; // 0x4E0 (4)
 	struct TArray<Unknown> SpawnVehiclesInBoxList; // 0x4E8 (16)
 	struct FName StandardGroupName; // 0x4F8 (8)
@@ -12711,7 +12713,7 @@ struct UBravoHotelVehicleSpawnBoxComponent : UBoxComponent {
 };
 
 // Class BravoHotelGame.BravoHotelVehicleSpawner
-struct ABravoHotelVehicleSpawner : UActor {
+class ABravoHotelVehicleSpawner : UActor {
 	struct Unknown SpawnedVehicle; // 0x310 (8)
 	char bActivated : 0; // 0x318 (1)
 
@@ -12720,7 +12722,7 @@ struct ABravoHotelVehicleSpawner : UActor {
 };
 
 // Class BravoHotelGame.BravoHotelVehicleStandardGroupBoxComponent
-struct UBravoHotelVehicleStandardGroupBoxComponent : UBoxComponent {
+class UBravoHotelVehicleStandardGroupBoxComponent : UBoxComponent {
 	struct Unknown VehicleStandardGroupInfo; // 0x4E0 (16)
 	struct Unknown EmptyBoxInfos; // 0x4F0 (16)
 	struct Unknown DivisionBoxInfos; // 0x500 (16)
@@ -12728,7 +12730,7 @@ struct UBravoHotelVehicleStandardGroupBoxComponent : UBoxComponent {
 };
 
 // Class BravoHotelGame.BravoHotelVehicleTireComponent
-struct UBravoHotelVehicleTireComponent : UStaticMeshComponent {
+class UBravoHotelVehicleTireComponent : UStaticMeshComponent {
 	struct TArray<Unknown> ConnectedWheelIndices; // 0x550 (16)
 	struct FName OriginalAttachBoneName; // 0x560 (8)
 	struct FName SurfaceFxBoneName; // 0x568 (8)
@@ -12741,7 +12743,7 @@ struct UBravoHotelVehicleTireComponent : UStaticMeshComponent {
 };
 
 // Class BravoHotelGame.BravoHotelVehicleWheel
-struct UBravoHotelVehicleWheel : UVehicleWheel {
+class UBravoHotelVehicleWheel : UVehicleWheel {
 	struct Unknown DriftingLatStiffMaxLoadCurve; // 0xF0 (8)
 	struct Unknown DriftingLatStiffValueCurve; // 0xF8 (8)
 	struct Unknown DriftingLongStiffValueCurve; // 0x100 (8)
@@ -12751,7 +12753,7 @@ struct UBravoHotelVehicleWheel : UVehicleWheel {
 };
 
 // Class BravoHotelGame.BravoHotelVehicleWidget
-struct UBravoHotelVehicleWidget : UUserWidget {
+class UBravoHotelVehicleWidget : UUserWidget {
 	char IsShow : 0; // 0x248 (1)
 	float Fuel; // 0x24C (4)
 	float hp; // 0x250 (4)
@@ -12768,7 +12770,7 @@ struct UBravoHotelVehicleWidget : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelVoiceComponent
-struct UBravoHotelVoiceComponent : UActorComponent {
+class UBravoHotelVoiceComponent : UActorComponent {
 	struct Unknown Table; // 0x1A0 (8)
 
 	void ServerTeamPlayerVoice(struct Unknown pController, struct FName Idx); // Function BravoHotelGame.BravoHotelVoiceComponent.ServerTeamPlayerVoice(Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x202C350>
@@ -12777,12 +12779,12 @@ struct UBravoHotelVoiceComponent : UActorComponent {
 };
 
 // Class BravoHotelGame.BravoHotelWaterPhysicsVolume
-struct ABravoHotelWaterPhysicsVolume : APhysicsVolume {
+class ABravoHotelWaterPhysicsVolume : APhysicsVolume {
 	struct Unknown InWaterParticle; // 0x358 (8)
 };
 
 // Class BravoHotelGame.BravoHotelWeightMapData
-struct UBravoHotelWeightMapData : UDataAsset {
+class UBravoHotelWeightMapData : UDataAsset {
 	struct TArray<Unknown> BitDataArray; // 0x30 (16)
 	struct Unknown WorldSize; // 0x40 (8)
 	struct Unknown WorldCenter; // 0x48 (8)
@@ -12795,7 +12797,7 @@ struct UBravoHotelWeightMapData : UDataAsset {
 };
 
 // Class BravoHotelGame.BravoHotelWindow
-struct ABravoHotelWindow : ABravoHotelDestructibleEx {
+class ABravoHotelWindow : ABravoHotelDestructibleEx {
 	struct TArray<Unknown> HIWindowComponents; // 0x320 (16)
 	struct TArray<Unknown> WindowComponents; // 0x330 (16)
 	char bCreateAudioPortal : 0; // 0x340 (1)
@@ -12803,7 +12805,7 @@ struct ABravoHotelWindow : ABravoHotelDestructibleEx {
 };
 
 // Class BravoHotelGame.BravoHotelWorldMapAreaWidget
-struct UBravoHotelWorldMapAreaWidget : UUserWidget {
+class UBravoHotelWorldMapAreaWidget : UUserWidget {
 	struct Unknown redzone; // 0x248 (8)
 	struct Unknown Nuclear; // 0x250 (8)
 	struct Unknown FindLandingPosition; // 0x258 (8)
@@ -12901,7 +12903,7 @@ struct UBravoHotelWorldMapAreaWidget : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelWorldMapWidget
-struct UBravoHotelWorldMapWidget : UUserWidget {
+class UBravoHotelWorldMapWidget : UUserWidget {
 	struct FMulticastInlineDelegate OnChangeWorldMapZoomLevelDelegate; // 0x250 (16)
 	struct Unknown ServerTestPoint; // 0x260 (88)
 
@@ -12918,7 +12920,7 @@ struct UBravoHotelWorldMapWidget : UUserWidget {
 };
 
 // Class BravoHotelGame.BravoHotelWorldSettings
-struct ABravoHotelWorldSettings : AWorldSettings {
+class ABravoHotelWorldSettings : AWorldSettings {
 	char bUseRedZone : 0; // 0x498 (1)
 	float SeaLevelZ; // 0x49C (4)
 	float ProjectileHeightLimit; // 0x4A0 (4)
@@ -12928,7 +12930,7 @@ struct ABravoHotelWorldSettings : AWorldSettings {
 };
 
 // Class BravoHotelGame.BravoHotelWorldTeleportWidget
-struct UBravoHotelWorldTeleportWidget : UUserWidget {
+class UBravoHotelWorldTeleportWidget : UUserWidget {
 	struct Unknown WorldCenter; // 0x248 (12)
 	struct Unknown WorldSize; // 0x254 (8)
 	struct Unknown BaseMapSize; // 0x25C (8)
@@ -12938,12 +12940,12 @@ struct UBravoHotelWorldTeleportWidget : UUserWidget {
 };
 
 // Class BravoHotelGame.CameraModifier_PostProcess
-struct UCameraModifier_PostProcess : UCameraModifier {
+class UCameraModifier_PostProcess : UCameraModifier {
 	struct TArray<Unknown> PresetInstances; // 0x48 (16)
 };
 
 // Class BravoHotelGame.CameraPostProcessPreset
-struct UCameraPostProcessPreset : Object {
+class UCameraPostProcessPreset : Object {
 	struct TArray<Unknown> Materials; // 0x28 (16)
 	struct Unknown Settings; // 0x40 (1472)
 	struct TArray<Unknown> MaterialControllers; // 0x600 (16)
@@ -12953,7 +12955,7 @@ struct UCameraPostProcessPreset : Object {
 };
 
 // Class BravoHotelGame.InventoryComponent
-struct UInventoryComponent : UActorComponent {
+class UInventoryComponent : UActorComponent {
 	char bBindItem : 0; // 0xC0 (1)
 	char bKeepItem : 0; // 0xC1 (1)
 	int32_t NumInventorySlots; // 0xC4 (4)
@@ -13019,7 +13021,7 @@ struct UInventoryComponent : UActorComponent {
 };
 
 // Class BravoHotelGame.EquippableComponent
-struct UEquippableComponent : UActorComponent {
+class UEquippableComponent : UActorComponent {
 	struct Unknown OwningPawn; // 0xC0 (8)
 	struct Unknown ItemInfo; // 0xC8 (152)
 	uint16_t OriginItemIndex; // 0x160 (2)
@@ -13032,7 +13034,7 @@ struct UEquippableComponent : UActorComponent {
 };
 
 // Class BravoHotelGame.HUDInteractionComponent
-struct UHUDInteractionComponent : UActorComponent {
+class UHUDInteractionComponent : UActorComponent {
 	struct Unknown PopupManager; // 0xB0 (8)
 	char MoveWorldMapToPlayer : 0; // 0xB8 (1)
 	struct TArray<Unknown> SaveIgnoredWidgets; // 0xC0 (16)
@@ -13051,7 +13053,7 @@ struct UHUDInteractionComponent : UActorComponent {
 };
 
 // Class BravoHotelGame.InDoorVolumeComponent
-struct UInDoorVolumeComponent : UBoxComponent {
+class UInDoorVolumeComponent : UBoxComponent {
 	char AdjustmentTargets; // 0x4E0 (1)
 
 	void EndInDoorVolume(struct Unknown OverlappedComponent, struct Unknown OtherActor, struct Unknown OtherComp, int32_t OtherBodyIndex); // Function BravoHotelGame.InDoorVolumeComponent.EndInDoorVolume(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x204CC10>
@@ -13059,17 +13061,17 @@ struct UInDoorVolumeComponent : UBoxComponent {
 };
 
 // Class BravoHotelGame.SavedInventorySettings
-struct USavedInventorySettings : UBravoHotelLocalSaveBase {
+class USavedInventorySettings : UBravoHotelLocalSaveBase {
 	struct Unknown Data; // 0x28 (5)
 };
 
 // Class BravoHotelGame.ItemSortOrder
-struct UItemSortOrder : UDataAsset {
+class UItemSortOrder : UDataAsset {
 	struct TMap<Unknown, Unknown>Unknown SortOrder; // 0x30 (80)
 };
 
 // Class BravoHotelGame.LadderComponent
-struct ULadderComponent : UActorComponent {
+class ULadderComponent : UActorComponent {
 	struct Unknown OwnerPawn; // 0xC0 (8)
 	enum class Unknow LadderState; // 0xC8 (1)
 	struct Unknown UsingLadder; // 0xD0 (8)
@@ -13148,7 +13150,7 @@ struct ULadderComponent : UActorComponent {
 };
 
 // Class BravoHotelGame.MaterialController
-struct UMaterialController : Object {
+class UMaterialController : Object {
 	struct TWeakObjectPtr<struct Unknown> RelatedMID; // 0x30 (8)
 
 	void SetVectorParameter(struct FName Name, struct Unknown Value); // Function BravoHotelGame.MaterialController.SetVectorParameter(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2052100>
@@ -13161,12 +13163,12 @@ struct UMaterialController : Object {
 };
 
 // Class BravoHotelGame.NetDormantComponent
-struct UNetDormantComponent : UActorComponent {
+class UNetDormantComponent : UActorComponent {
 	float DelayTimeToSleep; // 0xB0 (4)
 };
 
 // Class BravoHotelGame.ParkourComponent
-struct UParkourComponent : UActorComponent {
+class UParkourComponent : UActorComponent {
 	char DrawDebugTrace : 0; // 0xB1 (1)
 	char ShowLog : 0; // 0xB2 (1)
 	char ParkourDebugTypes; // 0xB3 (1)
@@ -13214,7 +13216,7 @@ struct UParkourComponent : UActorComponent {
 	struct Unknown ClimbWallNormal; // 0x1A4 (12)
 	float LastWallThickness; // 0x1B0 (4)
 	char bClimbing : 0; // 0x1B4 (1)
-	char b : 0; // 0x1B5 (1)
+	char bRevertingClimb : 0; // 0x1B5 (1)
 	char bCanRevertClimb : 0; // 0x1B6 (1)
 	char bBreakWindow : 0; // 0x1B7 (1)
 	char bCanJump : 0; // 0x1B8 (1)
@@ -13257,7 +13259,7 @@ struct UParkourComponent : UActorComponent {
 };
 
 // Class BravoHotelGame.ParkourWindowComponent
-struct UParkourWindowComponent : USceneComponent {
+class UParkourWindowComponent : USceneComponent {
 	struct TArray<Unknown> ClimbOverDatas; // 0x238 (16)
 	struct TArray<Unknown> ClimbUpDatas; // 0x248 (16)
 	struct TArray<Unknown> SprintOverDatas; // 0x258 (16)
@@ -13266,7 +13268,7 @@ struct UParkourWindowComponent : USceneComponent {
 };
 
 // Class BravoHotelGame.PlayerInventoryComponent
-struct UPlayerInventoryComponent : UInventoryComponent {
+class UPlayerInventoryComponent : UInventoryComponent {
 	struct FMulticastInlineDelegate OnChangeCurrentWeaponDelegate; // 0x2B0 (16)
 	struct FMulticastInlineDelegate OnChangeWeaponAttachmentsDelgate; // 0x2C0 (16)
 	struct FMulticastInlineDelegate OnChangeWeaponsDelegate; // 0x2D0 (16)
@@ -13330,7 +13332,7 @@ struct UPlayerInventoryComponent : UInventoryComponent {
 	void ServerPickUpMaterialItemByPickUp(int32_t MaterialSlotIndex, struct Unknown NewPickup); // Function BravoHotelGame.PlayerInventoryComponent.ServerPickUpMaterialItemByPickUp(Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x205B570>
 	void ServerKeepItemByWeaponSlot(int32_t KeepedSlotIndex, int32_t WeaponSlotIndex, char bFromWeapon); // Function BravoHotelGame.PlayerInventoryComponent.ServerKeepItemByWeaponSlot(Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x205B430>
 	void ServerKeepItemByPickUp(int32_t KeepedSlotIndex, struct Unknown NewPickup); // Function BravoHotelGame.PlayerInventoryComponent.ServerKeepItemByPickUp(Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x205B330>
-	void ServerEquipWeaponAttachment(int32_t WeaponSlotIndex, int32_t BackpackItemIndex); // Function BravoHotelGame.PlayerInventoryComponent.ServerEquipWeaponAttachment(Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x205B230>
+	void ServerEquipWeaponAttachmentFromBackpack(int32_t WeaponSlotIndex, int32_t BackpackItemIndex); // Function BravoHotelGame.PlayerInventoryComponent.ServerEquipWeaponAttachmentFromBackpack(Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x205B230>
 	void ServerEquipWeaponAttachmentByInfo(int32_t WeaponSlotIndex, struct Unknown Owner, struct Unknown RepItemInfo); // Function BravoHotelGame.PlayerInventoryComponent.ServerEquipWeaponAttachmentByInfo(Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x205B090>
 	void ServerEquipWeaponAttachmentByDropBox(struct Unknown DropBoxActor, int32_t WeaponSlotIndex, char SlotIndex, struct Unknown RepItemInfo); // Function BravoHotelGame.PlayerInventoryComponent.ServerEquipWeaponAttachmentByDropBox(Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x205AED0>
 	void ServerEquipWeaponAttachment(int32_t WeaponSlotIndex, struct Unknown NewAttachmentItem); // Function BravoHotelGame.PlayerInventoryComponent.ServerEquipWeaponAttachment(Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x205ADD0>
@@ -13430,7 +13432,7 @@ struct UPlayerInventoryComponent : UInventoryComponent {
 };
 
 // Class BravoHotelGame.RealisticProjectileComponent
-struct URealisticProjectileComponent : UMovementComponent {
+class URealisticProjectileComponent : UMovementComponent {
 	struct TSoftObjectPtr<Unknown> MaterialPropertiesTable; // 0xF0 (40)
 	struct Unknown InitialConditions; // 0x118 (76)
 	struct TArray<Unknown> InitialConditionHistory; // 0x168 (16)
@@ -13447,7 +13449,7 @@ struct URealisticProjectileComponent : UMovementComponent {
 	float InitialSpeed; // 0x1C4 (4)
 	float MaxSpeed; // 0x1C8 (4)
 	float PenetrationModifier; // 0x1CC (4)
-	char b : 0; // 0x1D0 (1)
+	char bRotationFollowsVelocity : 0; // 0x1D0 (1)
 	struct Unknown AngularVelocityMin; // 0x1D4 (12)
 	struct Unknown AngularVelocityMax; // 0x1E0 (12)
 	enum class Unknow ProjectileBehavior; // 0x1EC (1)
@@ -13492,13 +13494,13 @@ struct URealisticProjectileComponent : UMovementComponent {
 };
 
 // Class BravoHotelGame.ScenarioGameMode
-struct AScenarioGameMode : ABravoHotelGameMode {
+class AScenarioGameMode : ABravoHotelGameMode {
 	struct Unknown ScenarioComponent; // 0x578 (8)
 	struct FName DefaultCharacterDeck; // 0x580 (8)
 };
 
 // Class BravoHotelGame.SteamGetFriendsCallbackProxy
-struct USteamGetFriendsCallbackProxy : UOnlineBlueprintCallProxyBase {
+class USteamGetFriendsCallbackProxy : UOnlineBlueprintCallProxyBase {
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x40 (16)
 
@@ -13506,7 +13508,7 @@ struct USteamGetFriendsCallbackProxy : UOnlineBlueprintCallProxyBase {
 };
 
 // Class BravoHotelGame.TeamInfoUpdaterComponent
-struct UTeamInfoUpdaterComponent : UActorComponent {
+class UTeamInfoUpdaterComponent : UActorComponent {
 	struct FMulticastInlineDelegate OnTeamPlayerIndexChanged; // 0xB0 (16)
 	struct FMulticastInlineDelegate OnWidgetUpdateDelegate; // 0xC0 (16)
 	int32_t TeamPlayerIndex; // 0xD0 (4)
@@ -13514,7 +13516,7 @@ struct UTeamInfoUpdaterComponent : UActorComponent {
 };
 
 // Class BravoHotelGame.TransportAircraftPawn
-struct ATransportAircraftPawn : ACharacter {
+class ATransportAircraftPawn : ACharacter {
 	float HealthPoint; // 0x5D8 (4)
 	float MaxHealthPoint; // 0x5DC (4)
 	struct Unknown* DropBoxActorClass; // 0x5E0 (8)
@@ -13541,7 +13543,7 @@ struct ATransportAircraftPawn : ACharacter {
 };
 
 // Class BravoHotelGame.AsyncStaticMeshComponent
-struct UAsyncStaticMeshComponent : UStaticMeshComponent {
+class UAsyncStaticMeshComponent : UStaticMeshComponent {
 	struct TSoftObjectPtr<Unknown> SoftMeshPtr; // 0x550 (40)
 
 	void OnCompleteAsyncLoad(); // Function BravoHotelGame.AsyncStaticMeshComponent.OnCompleteAsyncLoad(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x205FE10>
@@ -13549,7 +13551,7 @@ struct UAsyncStaticMeshComponent : UStaticMeshComponent {
 };
 
 // Class BravoHotelGame.AsyncSkeletalMeshComponent
-struct UAsyncSkeletalMeshComponent : USkeletalMeshComponent {
+class UAsyncSkeletalMeshComponent : USkeletalMeshComponent {
 	struct TSoftObjectPtr<Unknown> SoftMeshPtr; // 0xB90 (40)
 
 	void OnCompleteAsyncLoad(); // Function BravoHotelGame.AsyncSkeletalMeshComponent.OnCompleteAsyncLoad(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x205FDF0>
@@ -13557,15 +13559,15 @@ struct UAsyncSkeletalMeshComponent : USkeletalMeshComponent {
 };
 
 // Class BravoHotelGame.WeaponAttachmentComponent
-struct UWeaponAttachmentComponent : UActorComponent {
+class UWeaponAttachmentComponent : UActorComponent {
 	struct Unknown OwningWeapon; // 0xB0 (8)
 	struct Unknown FrontSight; // 0xB8 (8)
 	struct Unknown Rail; // 0xC0 (8)
 	struct Unknown grip; // 0xC8 (8)
-	struct Unknown magazine; // 0xD0 (8)
+	struct Unknown m; // 0xD0 (8)
 	struct Unknown ButtStock; // 0xD8 (8)
 	struct Unknown Tactical; // 0xE0 (8)
-	struct Unknown muzzledevice; // 0xE8 (8)
+	struct Unknown m; // 0xE8 (8)
 	struct Unknown Barrel; // 0xF0 (8)
 	char bIsInitialized : 0; // 0x258 (1)
 	enum class Unknow GripType; // 0x259 (1)
@@ -13599,9 +13601,8099 @@ struct UWeaponAttachmentComponent : UActorComponent {
 };
 
 // Class BravoHotelGame.WeaponReplicatedComponent
-struct UWeaponReplicatedComponent : UEquippableComponent {
+class UWeaponReplicatedComponent : UEquippableComponent {
 	struct TArray<Unknown> AttachmentIndices; // 0x170 (16)
 
 	void OnRep_ChangeAttachments(); // Function BravoHotelGame.WeaponReplicatedComponent.OnRep_ChangeAttachments(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11F7880>
+};
+
+// ScriptStruct BravoHotelGame.ConditionedWeaponInfo
+struct FConditionedWeaponInfo {
+	struct TArray<Unknown> TargetItemIDs; // 0x0 (16)
+	struct TArray<Unknown> WeaponTypes; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.AircraftCinematic
+struct FAircraftCinematic {
+	struct Unknown LevelSequence; // 0x0 (8)
+	struct Unknown LevelSequenceBGM; // 0x8 (8)
+};
+
+// ScriptStruct BravoHotelGame.InventoryItemInfo
+struct FInventoryItemInfo {
+	struct Unknown Item; // 0x0 (16)
+	int32_t Quantity; // 0x10 (4)
+	int32_t Index; // 0x14 (4)
+	struct Unknown ContainedInventory; // 0x18 (8)
+	struct Unknown Owner; // 0x20 (8)
+	enum class Unknow State; // 0x28 (1)
+	float PickedTimeSeconds; // 0x2C (4)
+	float Durability; // 0x30 (4)
+	float MaxDurability; // 0x34 (4)
+	struct TArray<Unknown> AdditionalBuffs; // 0x38 (16)
+	struct TArray<Unknown> ItemOptions; // 0x48 (16)
+	enum class Unknow ItemBindType; // 0x58 (1)
+	int32_t BindedPlayerUniqueID; // 0x5C (4)
+	struct FName ItemWeaponID; // 0x60 (8)
+	struct FString DivisionParent; // 0x68 (16)
+	enum class Unknow PickupRoot; // 0x78 (1)
+	struct FString ItemUID; // 0x80 (16)
+	float ServerWorldTime; // 0x90 (4)
+};
+
+// ScriptStruct BravoHotelGame.DisplayAbility
+struct FDisplayAbility {
+	int32_t DisplayPower; // 0x0 (4)
+	int32_t DisplaySpeed; // 0x4 (4)
+	int32_t DisplayDefense; // 0x8 (4)
+};
+
+// ScriptStruct BravoHotelGame.PerkInfo
+struct FPerkInfo {
+	enum class Unknow Slot; // 0x0 (1)
+	struct FName PerkName; // 0x4 (8)
+	int32_t PerkID; // 0xC (4)
+	int32_t InGamelevel; // 0x10 (4)
+	int32_t CurrentExp; // 0x14 (4)
+};
+
+// ScriptStruct BravoHotelGame.CastingInfo
+struct FCastingInfo {
+	char IsActive : 0; // 0x0 (1)
+	enum class Unknow CastingUIType; // 0x1 (1)
+	struct FName SourceName; // 0x4 (8)
+	float MaxTime; // 0xC (4)
+	struct Unknown Target; // 0x10 (8)
+};
+
+// ScriptStruct BravoHotelGame.GoldenTimeLogData
+struct FGoldenTimeLogData {
+	int32_t RevivedTime; // 0x0 (4)
+	int32_t GoldRequest; // 0x4 (4)
+	int32_t RevivedUseGold; // 0x8 (4)
+	int32_t RevivedRemainGold; // 0xC (4)
+	int32_t SaviorUseGold; // 0x10 (4)
+	int32_t SaviorRemainGold; // 0x14 (4)
+};
+
+// ScriptStruct BravoHotelGame.SpawnBaseInfo
+struct FSpawnBaseInfo {
+	int32_t MinDistance; // 0x0 (4)
+	int32_t MaxDistance; // 0x4 (4)
+	char UsingRate : 0; // 0x8 (1)
+	float MinDistanceRate; // 0xC (4)
+	float MaxDistanceRate; // 0x10 (4)
+	float Degree; // 0x14 (4)
+	float BuildingSpawnRate; // 0x18 (4)
+	float LocalDeviation; // 0x1C (4)
+	int32_t DistanceCheckCount; // 0x20 (4)
+};
+
+// ScriptStruct BravoHotelGame.HitRateWeaponLogData
+struct FHitRateWeaponLogData {
+	int32_t ShotCount; // 0x0 (4)
+	int32_t HitShotCount; // 0x4 (4)
+	int32_t HeadShotCount; // 0x8 (4)
+	int32_t KillCount; // 0xC (4)
+	int32_t HeadShotKillCount; // 0x10 (4)
+};
+
+// ScriptStruct BravoHotelGame.RepClientCharacterReconnectInfo
+struct FRepClientCharacterReconnectInfo {
+	char bRepIsCrouched : 0; // 0x0 (1)
+	char bRepIsProned : 0; // 0x0 (1)
+	char bRepNeedOwnerStopLadder : 0; // 0x0 (1)
+};
+
+// ScriptStruct BravoHotelGame.LogBuildCountData
+struct FLogBuildCountData {
+	int32_t BuildingCount; // 0x0 (4)
+	int32_t DetectiongBoxCount; // 0x4 (4)
+	int32_t StandardBoxCount; // 0x8 (4)
+	int32_t ItemBoxCount; // 0xC (4)
+};
+
+// ScriptStruct BravoHotelGame.RepSimulatedHittedDamage
+struct FRepSimulatedHittedDamage {
+	struct TArray<Unknown> DamageInfoList; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.RepHitDamageInfo
+struct FRepHitDamageInfo {
+	int16_t Damage; // 0x0 (2)
+	struct Unknown* DamageTypeClass; // 0x8 (8)
+	struct TWeakObjectPtr<struct Unknown> Instigator; // 0x10 (8)
+	char bTaskScheduler : 0; // 0x18 (1)
+	int16_t HitPointIdx; // 0x1A (2)
+	uint16_t WeaponId; // 0x1C (2)
+	uint16_t ProjectileId; // 0x1E (2)
+};
+
+// ScriptStruct BravoHotelGame.CommonMessageInfo
+struct FCommonMessageInfo {
+	struct FString Message; // 0x0 (16)
+	float HideTime; // 0x10 (4)
+};
+
+// ScriptStruct BravoHotelGame.AnimSlot
+struct FAnimSlot {
+	struct Unknown Anim1P; // 0x0 (8)
+	struct Unknown Anim3P; // 0x8 (8)
+};
+
+// ScriptStruct BravoHotelGame.SpawnPerkData
+struct FSpawnPerkData {
+	struct Unknown Building; // 0x0 (8)
+	int32_t Count; // 0x8 (4)
+	struct Unknown Transform; // 0x10 (48)
+	float SpawnDelay; // 0x40 (4)
+	struct Unknown BookColorRate; // 0x44 (20)
+};
+
+// ScriptStruct BravoHotelGame.SpawnPerkColorRate
+struct FSpawnPerkColorRate {
+	float RedBookRate; // 0x0 (4)
+	float GreenBookRate; // 0x4 (4)
+	float BlueBookRate; // 0x8 (4)
+	float WhiteBookRate; // 0xC (4)
+	float BlackBookRate; // 0x10 (4)
+};
+
+// ScriptStruct BravoHotelGame.ConditionGroup
+struct FConditionGroup {
+	enum class Unknow Type; // 0x0 (1)
+	struct FString Name; // 0x8 (16)
+};
+
+// ScriptStruct BravoHotelGame.PerkDeckSelectInfo
+struct FPerkDeckSelectInfo {
+	char bSelectOpen : 0; // 0x0 (1)
+	int32_t SelectChangeCount; // 0x4 (4)
+	struct TArray<Unknown> PerkDeckClassInfos; // 0x8 (16)
+};
+
+// ScriptStruct BravoHotelGame.PerkDeckClassInfo
+struct FPerkDeckClassInfo {
+	struct FName DeckName; // 0x0 (8)
+	struct TArray<Unknown> PerkCards; // 0x8 (16)
+	struct TArray<Unknown> ExpertWeapons; // 0x18 (16)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelDefaultBalanceData
+struct FBravoHotelDefaultBalanceData : FTableRowBase {
+	float BaseHealth; // 0x8 (4)
+	float BaseBreath; // 0xC (4)
+	float UseBreath; // 0x10 (4)
+	float RegainBreath; // 0x14 (4)
+	float NoBreathDamage; // 0x18 (4)
+	float BaseCarryWeight; // 0x1C (4)
+	float SteadySecond; // 0x20 (4)
+	float NoSteadySecond; // 0x24 (4)
+	float KnockDamage; // 0x28 (4)
+	float ReviveTime; // 0x2C (4)
+	float RevivedHealth; // 0x30 (4)
+	float ResuscitationTime; // 0x34 (4)
+	float ResuscitatedHealthModify; // 0x38 (4)
+	float CoinDropMin; // 0x3C (4)
+	float CoinDropMax; // 0x40 (4)
+	float CoinDropHeadShotMin; // 0x44 (4)
+	float CoinDropHeadShotMax; // 0x48 (4)
+	float FrontAngle; // 0x4C (4)
+	float BackAngle; // 0x50 (4)
+	float FarDitanceOfDamageReduce; // 0x54 (4)
+	float CloseDitanceOfDamageReduce; // 0x58 (4)
+	struct Unknown BlueZoneBorderCurve; // 0x60 (8)
+	float OverHealLimitValue; // 0x68 (4)
+	float OverHealTime; // 0x6C (4)
+	float UpperOverHealRate; // 0x70 (4)
+	float LowerOverHealRate; // 0x74 (4)
+};
+
+// ScriptStruct BravoHotelGame.DamageInstigatorInfo
+struct FDamageInstigatorInfo {
+	struct Unknown PlayerState; // 0x0 (8)
+	struct Unknown DamageEvent; // 0x8 (16)
+	struct Unknown DamageCauser; // 0x18 (8)
+	int32_t HitPointIdx; // 0x20 (4)
+	float DamageAmount; // 0x24 (4)
+	float Distance; // 0x28 (4)
+	struct TArray<Unknown> AssistPSArray; // 0x30 (16)
+};
+
+// ScriptStruct BravoHotelGame.RepSimulatedTakeDamageInfo
+struct FRepSimulatedTakeDamageInfo {
+	char bHeadShot : 0; // 0x0 (1)
+	float Damage; // 0x4 (4)
+	struct Unknown* DamageTypeClass; // 0x8 (8)
+	struct Unknown ImpactPoint; // 0x10 (12)
+	struct Unknown ShotDirection; // 0x1C (12)
+	struct TWeakObjectPtr<struct Unknown> Instigator; // 0x28 (8)
+	int16_t HitPointIdx; // 0x30 (2)
+	uint16_t WeaponId; // 0x32 (2)
+	uint16_t ProjectileId; // 0x34 (2)
+};
+
+// ScriptStruct BravoHotelGame.PerkLevelUpElement
+struct FPerkLevelUpElement {
+	int32_t Level; // 0x0 (4)
+	int32_t MaxLevel; // 0x4 (4)
+	struct FText DisplayName; // 0x8 (24)
+	struct FText DisplayDesc; // 0x20 (24)
+	int32_t DisplayPower; // 0x38 (4)
+	int32_t DisplaySpeed; // 0x3C (4)
+	int32_t DisplayDefense; // 0x40 (4)
+	struct TArray<Unknown> BuffNames; // 0x48 (16)
+};
+
+// ScriptStruct BravoHotelGame.PerkDeckData
+struct FPerkDeckData : FTableRowBase {
+	int32_t ID; // 0x420 (4)
+	struct FText DisplayName; // 0x298 (24)
+	struct FText DisplayClassName; // 0x258 (24)
+	struct FText DisplayWeaponName; // 0x180 (24)
+	struct FText Description; // 0x390 (24)
+	int32_t ClassType; // 0x38C (4)
+	enum class Unknow ClassEnum; // 0x2D8 (1)
+	struct FName BoostTypeKey; // 0x248 (8)
+	struct FName WeaponKey; // 0x250 (8)
+	struct FText WeaponDescription; // 0x2B0 (24)
+	struct TSoftObjectPtr<Unknown> CohIcon; // 0x270 (40)
+	struct TSoftObjectPtr<Unknown> TitleImage; // 0x3F8 (40)
+	struct TSoftObjectPtr<Unknown> ClassIcon; // 0x2F0 (40)
+	struct TSoftObjectPtr<Unknown> ClassIcon_Widget; // 0x328 (40)
+	struct TSoftObjectPtr<Unknown> TeamInfoClassIcon; // 0x360 (40)
+	struct TSoftObjectPtr<Unknown> ClassSelectIcon; // 0x1B8 (40)
+	struct TSoftObjectPtr<Unknown> NoClassWeaponImage; // 0x428 (40)
+	int32_t PerkDeckWeight; // 0x388 (4)
+	struct Unknown Beginner_Advantage; // 0x198 (32)
+	struct TArray<Unknown> Defeat_Advantage; // 0x2E0 (16)
+	struct TArray<Unknown> ClassBuffNames; // 0x350 (16)
+	struct TArray<Unknown> CraftedWeaponIDs; // 0x1E8 (16)
+	struct TArray<Unknown> WeaponItems; // 0x318 (16)
+	struct TArray<Unknown> SupplyItems; // 0x2C8 (16)
+	struct TMap<Unknown, Unknown>Unknown FirstExpertWeapon; // 0x1F8 (80)
+	struct TMap<Unknown, Unknown>Unknown SecondExpertWeapon; // 0x3A8 (80)
+	struct TMap<Unknown, Unknown>Unknown ExpertWeaponModifier; // 0x450 (80)
+	char bNotKeepClass : 0; // 0x1E0 (1)
+	struct TArray<Unknown> PerkCards; // 0x4A0 (16)
+	struct Unknown PerkLevelUpData; // 0x8 (376)
+};
+
+// ScriptStruct BravoHotelGame.PerkLevelUpData
+struct FPerkLevelUpData : FTableRowBase {
+	int32_t ID; // 0x8 (4)
+	struct FText UltimateName; // 0x10 (24)
+	struct FText UltimateDesc; // 0x28 (24)
+	struct FText DisplayUltimateName; // 0x40 (24)
+	struct FText DisplayUltimateDesc; // 0x58 (24)
+	struct TSoftObjectPtr<Unknown> UltimateImage; // 0x70 (40)
+	struct TSoftObjectPtr<Unknown> UltimateIcon; // 0x98 (40)
+	struct TSoftObjectPtr<Unknown> UltimateGainSound; // 0xC0 (40)
+	struct FName UlimatePerkName; // 0xE8 (8)
+	struct TArray<Unknown> UlimateLevels; // 0xF0 (16)
+	struct FName UlimateNecessaryPerk; // 0x100 (8)
+	struct TArray<Unknown> GetUltimateEffects; // 0x108 (16)
+	struct TMap<Unknown, Unknown>Unknown AddLevelByKill; // 0x118 (80)
+	struct TArray<Unknown> PerkLevels; // 0x168 (16)
+};
+
+// ScriptStruct BravoHotelGame.PerkDeckElement
+struct FPerkDeckElement {
+	int32_t Weight; // 0x0 (4)
+	int32_t LevelUpWeight; // 0x4 (4)
+	struct FName PerkID; // 0x8 (8)
+	struct TMap<Unknown, Unknown>Unknown RandomList; // 0x10 (80)
+	int32_t PerkPhase; // 0x60 (4)
+	int32_t PerkPhaseMaxCount; // 0x64 (4)
+	int32_t PerkGroup; // 0x68 (4)
+	int32_t MinLevel; // 0x6C (4)
+};
+
+// ScriptStruct BravoHotelGame.PerkDeckNewbieAdvantage
+struct FPerkDeckNewbieAdvantage {
+	float PerkDeckWeightModifier; // 0x0 (4)
+	char bRecommend : 0; // 0x18 (1)
+	struct TArray<Unknown> ExpertWeaponOverride; // 0x8 (16)
+};
+
+// ScriptStruct BravoHotelGame.ExpertWeaponSimpleElement
+struct FExpertWeaponSimpleElement {
+	struct FName WeaponDataID; // 0x0 (8)
+	float Weight; // 0x8 (4)
+};
+
+// ScriptStruct BravoHotelGame.RepPointDamageInfo
+struct FRepPointDamageInfo {
+	struct Unknown DamageTarget; // 0x0 (8)
+	struct Unknown DamageCauser; // 0x8 (8)
+	struct Unknown Instigator; // 0x10 (8)
+	struct Unknown* DamageTypeClass; // 0x18 (8)
+	struct Unknown HitComponent; // 0x20 (8)
+	struct Unknown ShotDirection; // 0x28 (12)
+	struct Unknown ImpactPoint; // 0x34 (12)
+	int16_t BoneIndex; // 0x40 (2)
+	int16_t ExtraIndex; // 0x42 (2)
+	float ImpulsePower; // 0x44 (4)
+	float Damage; // 0x48 (4)
+	float ProjectileGravity; // 0x4C (4)
+	uint16_t ProjectileId; // 0x50 (2)
+	struct Unknown FireLocation; // 0x54 (12)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelDamageEvent_Point
+struct FBravoHotelDamageEvent_Point : FPointDamageEvent {
+	struct Unknown AttackerPC; // 0xA8 (8)
+	struct Unknown AttackerActor; // 0xB0 (8)
+	struct TArray<Unknown> AdditionalBuffIndexes; // 0xB8 (16)
+	struct Unknown FireLocation; // 0xC8 (12)
+	float ProjectileGravity; // 0xD4 (4)
+	uint16_t ProjectileId; // 0xD8 (2)
+};
+
+// ScriptStruct BravoHotelGame.MolotovFlameDotDamageInfo
+struct FMolotovFlameDotDamageInfo {
+	int32_t DamageTime; // 0x0 (4)
+	float DamageAmount; // 0x4 (4)
+	struct Unknown DamageEvent; // 0x8 (16)
+	struct Unknown EventInstigator; // 0x18 (8)
+	struct Unknown DamageCauser; // 0x20 (8)
+	int32_t InFlameCount; // 0x28 (4)
+};
+
+// ScriptStruct BravoHotelGame.NuclearInfo
+struct FNuclearInfo {
+	float TargetingRadius; // 0x0 (4)
+	float AreaRadius; // 0x4 (4)
+	float AnnounceRadius; // 0x8 (4)
+};
+
+// ScriptStruct BravoHotelGame.RepInvalidHitInfo
+struct FRepInvalidHitInfo {
+	float Distance; // 0x0 (4)
+	float Dot; // 0x4 (4)
+	int32_t PlayerId; // 0x8 (4)
+	uint16_t ProjectileId; // 0xC (2)
+	float DoubtScore; // 0x10 (4)
+	float LevelLoadingProgress; // 0x14 (4)
+};
+
+// ScriptStruct BravoHotelGame.DebugSupplyBoxInfo
+struct FDebugSupplyBoxInfo {
+	int32_t UserID; // 0x0 (4)
+	struct FString UserName; // 0x8 (16)
+	struct FString OverlapUserName; // 0x18 (16)
+	struct FString OverlapHitActorName; // 0x28 (16)
+	int32_t SpawnMode; // 0x38 (4)
+	int32_t Phase; // 0x3C (4)
+	struct Unknown CharacterPos; // 0x40 (12)
+	struct Unknown Rule; // 0x4C (36)
+	char IsBuildingSpawn : 0; // 0x70 (1)
+	struct FString BuildigName; // 0x78 (16)
+	struct Unknown BuidingBoxPos; // 0x88 (12)
+	struct Unknown AfterBuidingBoxPos; // 0x94 (12)
+	struct Unknown SpawnedPos; // 0xA0 (12)
+	struct Unknown FindWeightMapPos; // 0xAC (12)
+	char UsingSimulationBox : 0; // 0xB8 (1)
+	struct Unknown StartSimulationPos; // 0xBC (12)
+	struct Unknown EndSimulationPos; // 0xC8 (12)
+	char RePosition : 0; // 0xD4 (1)
+	struct Unknown RePositionSpawnedPos; // 0xD8 (12)
+	int32_t ReFindCount; // 0xE4 (4)
+	struct TArray<Unknown> ReFindReason; // 0xE8 (16)
+	struct FString Msg; // 0xF8 (16)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelDamageEvent_Radial
+struct FBravoHotelDamageEvent_Radial : FRadialDamageEvent {
+	struct Unknown AttackerPC; // 0x48 (8)
+	struct Unknown AttackerActor; // 0x50 (8)
+	struct TMap<Unknown, Unknown>Unknown AdditionalBuffIndexes; // 0x58 (80)
+	struct Unknown FireLocation; // 0xA8 (12)
+};
+
+// ScriptStruct BravoHotelGame.RepCameraInfo
+struct FRepCameraInfo {
+	float CameraDistanceDelta; // 0x0 (4)
+	struct Unknown CameraLocation_Idle; // 0x4 (12)
+	struct Unknown CameraLocation_ADS; // 0x10 (12)
+	float CameraHeight_Stand; // 0x1C (4)
+	float CameraHeight_Crouch; // 0x20 (4)
+	float CameraHeight_Prone; // 0x24 (4)
+};
+
+// ScriptStruct BravoHotelGame.CarScanUIInfo
+struct FCarScanUIInfo {
+	struct TArray<Unknown> VehicleLocations; // 0x0 (16)
+	struct Unknown TryLocation; // 0x10 (12)
+	float ScanTime; // 0x1C (4)
+};
+
+// ScriptStruct BravoHotelGame.Interaction
+struct FInteraction {
+	enum class Unknow InteractionType; // 0x0 (1)
+	enum class Unknow KeyType; // 0x1 (1)
+	char Visibility : 0; // 0x2 (1)
+	char bIsAble : 0; // 0x3 (1)
+	struct FText Message; // 0x8 (24)
+	struct FText MessageDesc; // 0x20 (24)
+};
+
+// ScriptStruct BravoHotelGame.StatupAnimParameters
+struct FStatupAnimParameters {
+	float Damage; // 0x0 (4)
+	float Decrement; // 0x4 (4)
+	float Capacity; // 0x8 (4)
+	float Attack; // 0xC (4)
+	float Speed; // 0x10 (4)
+	float Health; // 0x14 (4)
+	float Rarity; // 0x18 (4)
+};
+
+// ScriptStruct BravoHotelGame.AreaSkillZoneInfo
+struct FAreaSkillZoneInfo {
+	float StartValue; // 0x0 (4)
+	float TargetValue; // 0x4 (4)
+	float OwnerTargetRatio; // 0x8 (4)
+	float InTime; // 0xC (4)
+	float OutTime; // 0x10 (4)
+	struct Unknown OwnerPawn; // 0x18 (8)
+};
+
+// ScriptStruct BravoHotelGame.SecuredVariablesCache
+struct FSecuredVariablesCache {
+	float LeanDegreeMax; // 0x0 (4)
+};
+
+// ScriptStruct BravoHotelGame.BombingInfo
+struct FBombingInfo {
+	float BombDamage; // 0x0 (4)
+	float BombDistance; // 0x4 (4)
+	float BombRange; // 0x8 (4)
+	float BombHeight; // 0xC (4)
+	float BombDelayTime; // 0x10 (4)
+	float BombTargetDelayTime; // 0x14 (4)
+	struct Unknown Location; // 0x18 (12)
+};
+
+// ScriptStruct BravoHotelGame.WetFogZoneInfo
+struct FWetFogZoneInfo {
+	float VisibleDistance; // 0x0 (4)
+	float VisibleDistanceOwner; // 0x4 (4)
+	float AdditionalSeeThroughSmokeRatio; // 0x8 (4)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelPostProcessSettings
+struct FBravoHotelPostProcessSettings : FTableRowBase {
+	char bEnable : 0; // 0x8 (1)
+	struct Unknown PostProcessSettings; // 0x10 (1472)
+	float Priority; // 0x5D0 (4)
+	struct Unknown BlendCurve; // 0x5D8 (8)
+	char bUseSkyLightSettings : 0; // 0x5E0 (1)
+	float SkyLightIntensity; // 0x5E4 (4)
+	struct Unknown SkyLightOcclusionTint; // 0x5E8 (4)
+	struct Unknown PostProcess; // 0x5F0 (8)
+	struct Unknown BlendTimeline; // 0x5F8 (152)
+	char bIsReversing : 0; // 0x690 (1)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelItemPresetForBlackMarket
+struct FBravoHotelItemPresetForBlackMarket {
+	struct FName PresetName; // 0x0 (8)
+	struct TArray<Unknown> ItemList; // 0x8 (16)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelDefaultWearableSetting
+struct FBravoHotelDefaultWearableSetting {
+	char bUse : 0; // 0x0 (1)
+	struct TArray<Unknown> WearableTableRowList; // 0x8 (16)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelDefaultItemSetting
+struct FBravoHotelDefaultItemSetting {
+	char bIsUsingIncludeMapList : 0; // 0x0 (1)
+	struct TArray<Unknown> IncludeMapList; // 0x8 (16)
+	struct TArray<Unknown> ExcludeMapList; // 0x18 (16)
+	struct TArray<Unknown> DefaultItemList; // 0x28 (16)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelTakeDamageInfo
+struct FBravoHotelTakeDamageInfo {
+	char bHeadShot : 0; // 0x0 (1)
+	float Damage; // 0x4 (4)
+	struct Unknown* DamageTypeClass; // 0x8 (8)
+	struct Unknown ImpactPoint; // 0x10 (12)
+	struct Unknown ImpactNormal; // 0x1C (12)
+	struct Unknown ShotDirection; // 0x28 (12)
+	struct TWeakObjectPtr<struct Unknown> Instigator; // 0x34 (8)
+	int16_t HitPointIdx; // 0x3C (2)
+	uint16_t WeaponId; // 0x3E (2)
+	uint16_t ProjectileId; // 0x40 (2)
+};
+
+// ScriptStruct BravoHotelGame.MutableData
+struct FMutableData {
+	enum class Unknow MutableSlot; // 0x0 (1)
+	struct FString MutableKey; // 0x8 (16)
+};
+
+// ScriptStruct BravoHotelGame.PerkUIInfo
+struct FPerkUIInfo {
+	enum class Unknow Slot; // 0x0 (1)
+	struct FName PerkName; // 0x4 (8)
+	int32_t PerkID; // 0xC (4)
+	int32_t InGamelevel; // 0x10 (4)
+	int32_t CurrentExp; // 0x14 (4)
+	int32_t ActiveSkillIndex; // 0x18 (4)
+	char bActive : 0; // 0x1C (1)
+	char bCanActive : 0; // 0x1D (1)
+	char bCoolTime : 0; // 0x1E (1)
+	float Timer; // 0x20 (4)
+	float MaxTime; // 0x24 (4)
+	enum class Unknow KeySettingType; // 0x28 (1)
+};
+
+// ScriptStruct BravoHotelGame.CompletedCasting
+struct FCompletedCasting {
+	int32_t BackpackSlotIndex; // 0x0 (4)
+	int32_t ID; // 0x4 (4)
+};
+
+// ScriptStruct BravoHotelGame.AssistInfo
+struct FAssistInfo {
+	struct Unknown TargetPS; // 0x0 (8)
+	float HitTime; // 0x8 (4)
+	float DamageAmount; // 0xC (4)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelArmsLag
+struct FBravoHotelArmsLag {
+	float ArmsLagRotationMax; // 0x0 (4)
+	float ArmsLagRotationSpeed; // 0x4 (4)
+};
+
+// ScriptStruct BravoHotelGame.ResuscitationAnimSet
+struct FResuscitationAnimSet {
+	struct Unknown ToCriticalTime; // 0x0 (8)
+	struct Unknown CriticalTimeIdle; // 0x8 (8)
+	struct Unknown Resuscitated; // 0x10 (8)
+	struct Unknown Resuscitation; // 0x18 (16)
+};
+
+// ScriptStruct BravoHotelGame.TargetHealthInfo
+struct FTargetHealthInfo {
+	float TargetHealth; // 0x0 (4)
+	float Usablehealth; // 0x4 (4)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelConditionState
+struct FBravoHotelConditionState {
+	enum class Unknow ConditionType; // 0x0 (1)
+	float CheckTimer; // 0x4 (4)
+	float CheckDepth; // 0x8 (4)
+	struct TArray<Unknown> Keys; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.MaterialEffectInfo
+struct FMaterialEffectInfo {
+	float EffectTimer; // 0x0 (4)
+	char EffectIndex; // 0x4 (1)
+	struct TArray<Unknown> MaterialEffectBuffs; // 0x8 (16)
+};
+
+// ScriptStruct BravoHotelGame.BuffHandleArray
+struct FBuffHandleArray : FFastArraySerializer {
+	struct TArray<Unknown> Items; // 0x108 (16)
+};
+
+// ScriptStruct BravoHotelGame.BuffHandle
+struct FBuffHandle : FFastArraySerializerItem {
+	uint16_t Key; // 0xC (2)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelBuffUIInfo
+struct FBravoHotelBuffUIInfo {
+	int32_t Key; // 0x0 (4)
+	struct TSoftObjectPtr<Unknown> CohIcon; // 0x8 (40)
+	char bCoolTime : 0; // 0x30 (1)
+	char bActive : 0; // 0x31 (1)
+	float Timer; // 0x34 (4)
+	float MaxTime; // 0x38 (4)
+	struct Unknown BorderColor; // 0x3C (4)
+	struct Unknown BGColor; // 0x40 (4)
+	struct FText DisplayName; // 0x48 (24)
+	struct FText Description; // 0x60 (24)
+	int32_t DisplayLevel; // 0x78 (4)
+	struct FString Param; // 0x80 (16)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelConditionedAbilityState
+struct FBravoHotelConditionedAbilityState {
+	struct Unknown OwnerObject; // 0x58 (8)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelPartyInvitation
+struct FBravoHotelPartyInvitation {
+	struct FString FromUID; // 0x0 (16)
+	struct FString FromName; // 0x10 (16)
+	struct FString Ticket; // 0x20 (16)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelLocalPingInfo
+struct FBravoHotelLocalPingInfo {
+	int32_t PingIndex; // 0x0 (4)
+	struct Unknown WorldLocation; // 0x4 (12)
+	struct Unknown PingColor; // 0x10 (16)
+	enum class Unknow PingType; // 0x20 (1)
+	struct Unknown IconImage; // 0x28 (8)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelMapTableRow
+struct FBravoHotelMapTableRow : FTableRowBase {
+	int32_t ID; // 0x8 (4)
+	struct FString DisplayName; // 0x10 (16)
+	struct FString Mode; // 0x20 (16)
+	int32_t BattleRoyaleWaitingTime; // 0x30 (4)
+	int32_t BattleRoyaleReadyTime; // 0x34 (4)
+	float ParachuteAvailableDistance; // 0x38 (4)
+	float ForcingParachuteDistance; // 0x3C (4)
+	struct TSoftObjectPtr<Unknown> PlayZoneDataTable; // 0x40 (40)
+	struct TArray<Unknown> DefaultPlayZoneImageList; // 0x68 (16)
+	struct TSoftObjectPtr<Unknown> UIResource; // 0x78 (40)
+	struct TSoftObjectPtr<Unknown> WeightMapResource; // 0xA0 (40)
+	struct TSoftObjectPtr<Unknown> WeightmapData; // 0xC8 (40)
+	struct TSoftObjectPtr<Unknown> AudioAmbientMap; // 0xF0 (40)
+	int32_t WeightMapRadiusCheckCount; // 0x118 (4)
+	struct Unknown CenterPosOfWorld; // 0x11C (8)
+	struct Unknown SizeOfWorld; // 0x124 (8)
+	float DisableDescentDistance; // 0x12C (4)
+	struct Unknown WorldCenterForAircraft; // 0x130 (8)
+	struct Unknown WorldSizeForAircraft; // 0x138 (8)
+	int32_t MiniMapZoomLevel; // 0x140 (4)
+	float TimeBeforeLoading; // 0x144 (4)
+	int32_t Map_Mode_Reward_Solo; // 0x148 (4)
+	int32_t Map_Mode_Reward_Duo; // 0x14C (4)
+	int32_t Map_Mode_Reward_Squad; // 0x150 (4)
+	struct FString PackageName; // 0x158 (16)
+	char IgnoreArea_MakeAirCraftLine : 0; // 0x168 (1)
+	struct Unknown AreaLocation; // 0x16C (12)
+	float AreaRadius; // 0x178 (4)
+	enum class Unknow LoadingScreenType; // 0x17C (1)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelHUDMessageRow
+struct FBravoHotelHUDMessageRow : FTableRowBase {
+	enum class Unknow MessageType; // 0x8 (1)
+	struct FString Description; // 0x10 (16)
+	struct FText Message; // 0x20 (24)
+	int32_t Priority; // 0x38 (4)
+	struct TSoftObjectPtr<Unknown> Sound; // 0x40 (40)
+};
+
+// ScriptStruct BravoHotelGame.SpawnItems_DEBUG
+struct FSpawnItems_DEBUG {
+	struct FString ActorName; // 0x0 (16)
+	struct FString BPName; // 0x10 (16)
+	int32_t GroupID; // 0x20 (4)
+	struct TArray<Unknown> ItemList; // 0x28 (16)
+};
+
+// ScriptStruct BravoHotelGame.WorldSpawnItemStatisticInfo
+struct FWorldSpawnItemStatisticInfo {
+	int32_t SpawnBoxID; // 0x0 (4)
+	struct FString SpawnItemName; // 0x8 (16)
+	int32_t SpawnItemCount; // 0x18 (4)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelUserInfo
+struct FBravoHotelUserInfo {
+	struct FString UID; // 0x0 (16)
+	struct FString Name; // 0x10 (16)
+	struct Unknown LoggedInTime; // 0x20 (8)
+	struct Unknown PCInfo; // 0x28 (104)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelPartyPCInfo
+struct FBravoHotelPartyPCInfo {
+	struct FString pc_id; // 0x0 (16)
+	int32_t class_type_index; // 0x10 (4)
+	int32_t class_data_index; // 0x14 (4)
+	struct Unknown looks; // 0x18 (24)
+	struct TArray<Unknown> wear_item; // 0x30 (16)
+	struct TArray<Unknown> Weapon; // 0x40 (16)
+	struct TArray<Unknown> perk; // 0x50 (16)
+	int32_t exp; // 0x60 (4)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelEquippedSlotInfo
+struct FBravoHotelEquippedSlotInfo {
+	int32_t Key; // 0x0 (4)
+	int32_t table_index; // 0x4 (4)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelPCLooks
+struct FBravoHotelPCLooks {
+	int32_t gender; // 0x0 (4)
+	int32_t face; // 0x4 (4)
+	int32_t face_color; // 0x8 (4)
+	int32_t hair; // 0xC (4)
+	int32_t hair_color; // 0x10 (4)
+	int32_t m; // 0x14 (4)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelFriendInfo
+struct FBravoHotelFriendInfo : FBravoHotelUserInfo {
+	enum class Unknow State; // 0x90 (1)
+};
+
+// ScriptStruct BravoHotelGame.SpawnItemResult
+struct FSpawnItemResult {
+	struct Unknown Item; // 0x0 (16)
+	struct TArray<Unknown> BuffNames; // 0x10 (16)
+	int32_t Count; // 0x20 (4)
+	struct FString DivisionParent; // 0x28 (16)
+	char bAmmoItemFromWeapon : 0; // 0x38 (1)
+	struct FName TargetWeaponItemKey; // 0x3C (8)
+};
+
+// ScriptStruct BravoHotelGame.RandomSpawn
+struct FRandomSpawn : FTableRowBase {
+	enum class Unknow RandomType; // 0x8 (1)
+	struct TArray<Unknown> Items; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.RandomProbability
+struct FRandomProbability {
+	float Weight; // 0x0 (4)
+	int32_t BundleItemAmount; // 0x4 (4)
+	struct Unknown ItemRowHandle; // 0x8 (16)
+	struct TArray<Unknown> BuffNames; // 0x18 (16)
+	struct TSet<Unknown> Types; // 0x28 (80)
+};
+
+// ScriptStruct BravoHotelGame.DamageTypeTable
+struct FDamageTypeTable : FTableRowBase {
+	int32_t ID; // 0x8 (4)
+	struct Unknown* StaticClass; // 0x10 (8)
+	struct TSoftObjectPtr<Unknown> IconTexture_PaperSprite; // 0x18 (40)
+	struct FText CauserText; // 0x40 (24)
+	struct Unknown HitedMontage; // 0x58 (8)
+	char IsClassSkill : 0; // 0x60 (1)
+};
+
+// ScriptStruct BravoHotelGame.SettingInfo
+struct FSettingInfo : FTableRowBase {
+	char bIsDevelopmentData : 0; // 0x8 (1)
+	enum class Unknow ParentType; // 0x9 (1)
+	enum class Unknow Type; // 0xA (1)
+	enum class Unknow KeyType; // 0xB (1)
+	enum class Unknow SlotType; // 0xC (1)
+	struct FText Title; // 0x10 (24)
+	struct FText Desc; // 0x28 (24)
+	struct TArray<Unknown> DescImageList; // 0x40 (16)
+	char ImmediatelyApply : 0; // 0x50 (1)
+	enum class Unknow KeySettingSubType; // 0x51 (1)
+	char EnableChangeKey : 0; // 0x52 (1)
+	char EnableDuplicatekeys : 0; // 0x53 (1)
+	char IsAxisKey : 0; // 0x54 (1)
+	char UseKeyMapping : 0; // 0x55 (1)
+	float Min; // 0x58 (4)
+	float MAX; // 0x5C (4)
+	char bIsSubType : 0; // 0x60 (1)
+	float Unit; // 0x64 (4)
+	char bIsFloatValue : 0; // 0x68 (1)
+	char bEditableText : 0; // 0x69 (1)
+	struct TArray<Unknown> ValueList; // 0x70 (16)
+	float Default; // 0x80 (4)
+};
+
+// ScriptStruct BravoHotelGame.SettingSlotListInfo
+struct FSettingSlotListInfo {
+	struct FText Title; // 0x0 (24)
+	float SettingValue; // 0x18 (4)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelPartyInfo
+struct FBravoHotelPartyInfo {
+	struct FString PartyID; // 0x0 (16)
+	int32_t LeaderIndex; // 0x10 (4)
+	struct TArray<Unknown> Members; // 0x18 (16)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelPartyMemberInfo
+struct FBravoHotelPartyMemberInfo : FBravoHotelFriendInfo {
+	char bIsReady : 0; // 0x98 (1)
+	char bIsVoiceChat : 0; // 0x99 (1)
+	char bIsLeader : 0; // 0x9A (1)
+	struct FString clientStatus; // 0xA0 (16)
+	int32_t SeasonTierID; // 0xB0 (4)
+	struct FString AccessRegion; // 0xB8 (16)
+	int32_t Ping; // 0xC8 (4)
+	struct FString steamID; // 0xD0 (16)
+};
+
+// ScriptStruct BravoHotelGame.PersonalSupplyBoxPingInfo
+struct FPersonalSupplyBoxPingInfo {
+	char IsSpawned : 0; // 0x0 (1)
+	struct Unknown Location; // 0x4 (12)
+	enum class Unknow PingType; // 0x10 (1)
+};
+
+// ScriptStruct BravoHotelGame.SettingData
+struct FSettingData {
+	char ImmediateAttachment : 0; // 0x0 (1)
+	char InheritAttachment : 0; // 0x1 (1)
+	char ShowPerkSlot : 0; // 0x2 (1)
+	char pad_0_0 : 6; // 0x0 (1)
+	char SupplyBox : 1; // 0x3 (1)
+	char pad_0_7 : 1; // 0x0 (1)
+	char SmartPing : 0; // 0x4 (1)
+};
+
+// ScriptStruct BravoHotelGame.SettingValue
+struct FSettingValue {
+	enum class Unknow SettingType; // 0x0 (1)
+	enum class Unknow Type; // 0x1 (1)
+	struct TArray<Unknown> ValueList; // 0x8 (16)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelPingInfo
+struct FBravoHotelPingInfo {
+	char HasMarker : 0; // 0x0 (1)
+	struct Unknown TargetActor; // 0x8 (8)
+	struct Unknown OwnerActor; // 0x10 (8)
+	struct Unknown WorldLocation; // 0x18 (12)
+	int32_t IconTableID; // 0x24 (4)
+	char IsDirectPing : 0; // 0x28 (1)
+	enum class Unknow PingType; // 0x29 (1)
+	int32_t TargetTableIndex; // 0x2C (4)
+	enum class Unknow ItemPingType; // 0x30 (1)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelWeaponInfo
+struct FBravoHotelWeaponInfo : FTableRowBase {
+	struct FName WeaponKey; // 0x838 (8)
+	struct FText DisplayName; // 0x88 (24)
+	struct FText DisplayDesc; // 0xA98 (24)
+	struct FString AK_EventKey; // 0x288 (16)
+	struct FName CrosshairRowName; // 0xB20 (8)
+	float CrosshairIncrease; // 0x850 (4)
+	float CrosshairDecreaseSpeed; // 0x5D8 (4)
+	float CrosshairInterpSpeed; // 0x5C4 (4)
+	struct TSoftObjectPtr<Unknown> SilhouetteIconTexture_PaperSprite; // 0x858 (40)
+	enum class Unknow WeaponType; // 0x5C8 (1)
+	enum class Unknow ThrowingWeaponType; // 0x48 (1)
+	struct FText DisplayWeaponType; // 0x880 (24)
+	struct FText DisplayRangeType; // 0x5F0 (24)
+	float Display_Damage; // 0x89C (4)
+	int32_t Display_EffectiveRange; // 0xB1C (4)
+	float Display_Accuracy; // 0xA90 (4)
+	int32_t Display_RateofFire; // 0xB28 (4)
+	struct FName Display_AmmoInfo; // 0x840 (8)
+	struct Unknown ADS_Info; // 0x8A0 (496)
+	struct Unknown FPSK_Info; // 0x610 (544)
+	struct Unknown Attachment_Info; // 0x2A0 (792)
+	struct Unknown Curve_Sway_Idle; // 0x50 (8)
+	struct Unknown Curve_Sway_Move; // 0xB10 (8)
+	struct FName AllowedAmmoName; // 0x5D0 (8)
+	float MinDamage; // 0xA94 (4)
+	float MaxDamage; // 0xB18 (4)
+	float Accuracy; // 0x5CC (4)
+	float FireRateSingle; // 0x5C0 (4)
+	float FireRateBurst; // 0x29C (4)
+	float FireRateAuto; // 0x608 (4)
+	float FireIntervalBurst; // 0x298 (4)
+	float Weight; // 0x848 (4)
+	int32_t NormalMagSize; // 0x84C (4)
+	int32_t LargeMagSize; // 0x5BC (4)
+	struct Unknown ReloadInfo; // 0x1C8 (184)
+	struct TArray<Unknown> AllowedFireModes; // 0x5E0 (16)
+	float ProjectileVelocity; // 0x5B8 (4)
+	float TerminalVelocity; // 0x898 (4)
+	int32_t BurstCount; // 0x280 (4)
+	int32_t BulletsPerShot; // 0xAB0 (4)
+	char bIsBoltAction : 0; // 0x1C0 (1)
+	float BoltActionTime; // 0x830 (4)
+	float ADSToReloadDelayTime; // 0x834 (4)
+	float MoveSpeedModifier; // 0x4C (4)
+	struct Unknown Spread; // 0x8 (64)
+	struct Unknown Deviation; // 0x58 (44)
+	struct Unknown Recoil; // 0xA0 (288)
+	struct Unknown DepthOfField; // 0xAB8 (80)
+	struct Unknown ArmsLag; // 0xB08 (8)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelDepthOfFieldBaseInfo
+struct FBravoHotelDepthOfFieldBaseInfo {
+	struct TMap<Unknown, Unknown>Unknown DetailInfo; // 0x0 (80)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelDepthOfFieldDetailInfo
+struct FBravoHotelDepthOfFieldDetailInfo {
+	char bUseDepthOfField : 0; // 0x0 (1)
+	float FocalDistance; // 0x4 (4)
+	float CircleDOF_Fstop; // 0x8 (4)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelRecoilInfo
+struct FBravoHotelRecoilInfo {
+	float VertClampMin; // 0x0 (4)
+	float VertClampMax; // 0x4 (4)
+	float VertSpeed; // 0x8 (4)
+	float VertRecoveryClamp; // 0xC (4)
+	float VertRecoveryModifier; // 0x10 (4)
+	float HorSpeed; // 0x14 (4)
+	float HorTendency; // 0x18 (4)
+	float HorLeftMax; // 0x1C (4)
+	float HorRightMax; // 0x20 (4)
+	float Speed; // 0x24 (4)
+	float RecoverySpeed; // 0x28 (4)
+	float PatternScale; // 0x2C (4)
+	struct Unknown BulletCountFallingCurve; // 0x30 (8)
+	float CrouchModifier; // 0x38 (4)
+	float ProneModifier; // 0x3C (4)
+	struct Unknown HorizonControlRecoilCurve; // 0x40 (8)
+	struct TMap<Unknown, Unknown>Unknown OverrideVisualRecoil; // 0x48 (80)
+	struct Unknown VisualRecoil; // 0x98 (104)
+	struct Unknown FireCameraShakeInfo; // 0x100 (32)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelFireCameraShakeInfo
+struct FBravoHotelFireCameraShakeInfo {
+	int32_t BulletCountForMultiFire; // 0x0 (4)
+	struct Unknown* FireCameraShake; // 0x8 (8)
+	struct Unknown* FireCameraShake_ADS_SingleFire; // 0x10 (8)
+	struct Unknown* FireCameraShake_ADS_MultiFire; // 0x18 (8)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelVisualRecoilInfo
+struct FBravoHotelVisualRecoilInfo {
+	struct Unknown VisualShake; // 0x0 (12)
+	float VisualShakeSpeed; // 0xC (4)
+	struct Unknown VisualRecoilAngle; // 0x10 (12)
+	struct Unknown VisualRecoil; // 0x1C (12)
+	float VisualRecoilSpeed; // 0x28 (4)
+	float VisualRecoilRecoverySpeed; // 0x2C (4)
+	float BackAnimation; // 0x30 (4)
+	float BackAnimationSpeed; // 0x34 (4)
+	float BackAnimationRecoverySpeed; // 0x38 (4)
+	float HorizonWeight; // 0x3C (4)
+	struct Unknown BackRecoilPositionCurve; // 0x40 (8)
+	struct Unknown VerticalRecoilPositionCurve; // 0x48 (8)
+	struct Unknown VerticalRecoilRotationCurve; // 0x50 (8)
+	struct Unknown HorizonRecoilPositionCurve; // 0x58 (8)
+	struct Unknown HorizonRecoilRotationCurve; // 0x60 (8)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelDeviation
+struct FBravoHotelDeviation {
+	float Base; // 0x0 (4)
+	float BaseAOS; // 0x4 (4)
+	float BaseADS; // 0x8 (4)
+	float RecoilGain; // 0xC (4)
+	float RecoilGainAOS; // 0x10 (4)
+	float RecoilGainADS; // 0x14 (4)
+	float MaxLimit; // 0x18 (4)
+	float MoveModifierLimit; // 0x1C (4)
+	float MoveVelocityClamp; // 0x20 (4)
+	float CrouchModifier; // 0x24 (4)
+	float ProneModifier; // 0x28 (4)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelSpreadInfo
+struct FBravoHotelSpreadInfo {
+	float ShotSpread; // 0x0 (4)
+	float Base; // 0x4 (4)
+	float AOSModifier; // 0x8 (4)
+	float ADSModifier; // 0xC (4)
+	float FiringBase; // 0x10 (4)
+	float CrouchModifier; // 0x14 (4)
+	float ProneModifier; // 0x18 (4)
+	float WalkModifier; // 0x1C (4)
+	float RunModifier; // 0x20 (4)
+	float JumpModifier; // 0x24 (4)
+	float MaxLimit; // 0x28 (4)
+	char bUseShotPattern : 0; // 0x2C (1)
+	struct TArray<Unknown> PatternDivideList; // 0x30 (16)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelReloadInfo
+struct FBravoHotelReloadInfo {
+	enum class Unknow LoadingType; // 0x0 (1)
+	char bNeedBoltActionAfterReload : 0; // 0x1 (1)
+	char bUseTacticalReload : 0; // 0x2 (1)
+	float ReloadTime; // 0x4 (4)
+	float TacticalReloadTime; // 0x8 (4)
+	float StripperClipReloadTime; // 0xC (4)
+	float SingleBulletInitialTime; // 0x10 (4)
+	float SingleBulletRepeatTime; // 0x14 (4)
+	struct Unknown ReloadPlayerAnim; // 0x18 (16)
+	struct Unknown ReloadWeaponAnim; // 0x28 (16)
+	struct Unknown ReloadPronePlayerAnim; // 0x38 (16)
+	struct Unknown ReloadProneWeaponAnim; // 0x48 (16)
+	struct Unknown ReloadVehiclePlayerAnim; // 0x58 (16)
+	struct Unknown TacticalReloadPlayerAnim; // 0x68 (16)
+	struct Unknown TacticalReloadWeaponAnim; // 0x78 (16)
+	struct Unknown TacticalReloadPronePlayerAnim; // 0x88 (16)
+	struct Unknown TacticalReloadProneWeaponAnim; // 0x98 (16)
+	struct Unknown TacticalReloadVehiclePlayerAnim; // 0xA8 (16)
+};
+
+// ScriptStruct BravoHotelGame.WeaponAttachmentInfo
+struct FWeaponAttachmentInfo {
+	struct TMap<Unknown, Unknown>Unknown AttachmentSlotUseInfo; // 0x0 (80)
+	struct TMap<Unknown, Unknown>Unknown AllowedAttachmentList; // 0x50 (80)
+	struct FName Socket_WeaponSight; // 0xA0 (8)
+	struct FName Socket_FrontSightWithScope; // 0xA8 (8)
+	struct FName Socket_Rail; // 0xB0 (8)
+	struct FName Socket_Grip; // 0xB8 (8)
+	struct FName Socket_Magazine; // 0xC0 (8)
+	struct FName Socket_ButtStock; // 0xC8 (8)
+	struct FName Socket_MuzzleDevice; // 0xD0 (8)
+	struct FName Socket_Barrel; // 0xD8 (8)
+	struct FName Socket_TacticalAttachment; // 0xE0 (8)
+	struct TSoftObjectPtr<Unknown> Sight_FrontSightWithScope; // 0xE8 (40)
+	struct TSoftObjectPtr<Unknown> Sight_Rail; // 0x110 (40)
+	struct TMap<Unknown, Unknown>Unknown Meshes_Grip; // 0x138 (80)
+	struct TMap<Unknown, Unknown>Unknown Meshes_Magazine; // 0x188 (80)
+	struct TMap<Unknown, Unknown>Unknown Meshes_Stock; // 0x1D8 (80)
+	struct TMap<Unknown, Unknown>Unknown Meshes_MuzzleDevice; // 0x228 (80)
+	struct TMap<Unknown, Unknown>Unknown Meshes_Barrel; // 0x278 (80)
+	struct TMap<Unknown, Unknown>Unknown OverrideReloadInfos; // 0x2C8 (80)
+};
+
+// ScriptStruct BravoHotelGame.WeaponAttachmentUseInfoMap
+struct FWeaponAttachmentUseInfoMap {
+	struct TMap<Unknown, Unknown>Unknown AttachmentUseInfo; // 0x0 (80)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelWeaponInfoFPSK
+struct FBravoHotelWeaponInfoFPSK : FTableRowBase {
+	struct TSoftObjectPtr<Unknown> FPSK_SkelMesh_FPP; // 0x8 (40)
+	struct TArray<Unknown> FPSK_Materials_FPP; // 0x30 (16)
+	struct Unknown* FPSK_AnimInstance_FPP; // 0x40 (8)
+	struct TSoftObjectPtr<Unknown> FPSK_SkelMesh_TPP; // 0x48 (40)
+	struct TArray<Unknown> FPSK_Materials_TPP; // 0x70 (16)
+	struct Unknown* FPSK_AnimInstance_TPP; // 0x80 (8)
+	struct TMap<Unknown, Unknown>Unknown FPSK_GripAnims; // 0x88 (80)
+	float FPSK_ADSSpeed; // 0xD8 (4)
+	struct TMap<Unknown, Unknown>Unknown FPSK_CameraDistance; // 0xE0 (80)
+	struct TMap<Unknown, Unknown>Unknown FPSK_ScopeAngleOnMove; // 0x130 (80)
+	struct TMap<Unknown, Unknown>Unknown FPSK_ClippingDistance; // 0x180 (80)
+	struct TMap<Unknown, Unknown>Unknown FPSK_SightClasses; // 0x1D0 (80)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelWeaponInfoADS
+struct FBravoHotelWeaponInfoADS : FTableRowBase {
+	char bEnableADS : 0; // 0x8 (1)
+	struct TMap<Unknown, Unknown>Unknown WeaponLocationList; // 0x10 (80)
+	struct TMap<Unknown, Unknown>Unknown WeaponRotationList; // 0x60 (80)
+	struct TMap<Unknown, Unknown>Unknown WeaponScaleList; // 0xB0 (80)
+	struct TMap<Unknown, Unknown>Unknown FieldOfViewList; // 0x100 (80)
+	struct TMap<Unknown, Unknown>Unknown SightRotationList; // 0x150 (80)
+	struct TMap<Unknown, Unknown>Unknown SightScaleList; // 0x1A0 (80)
+};
+
+// ScriptStruct BravoHotelGame.S_ReplayInfo
+struct FS_ReplayInfo {
+	struct FString ReplayName; // 0x0 (16)
+	struct FString FriendlyName; // 0x10 (16)
+	struct Unknown Timestamp; // 0x20 (8)
+	int32_t LengthInMS; // 0x28 (4)
+	char bIsValid : 0; // 0x2C (1)
+};
+
+// ScriptStruct BravoHotelGame.RewardItemInfo
+struct FRewardItemInfo {
+	int32_t table_index; // 0x0 (4)
+	int32_t Count; // 0x4 (4)
+};
+
+// ScriptStruct BravoHotelGame.MatchResultUIInfo
+struct FMatchResultUIInfo {
+	int32_t FinalRank; // 0x0 (4)
+	int32_t GainedRP; // 0x4 (4)
+	struct Unknown GoldPoint; // 0x8 (16)
+	struct TArray<Unknown> RewardItemList; // 0x18 (16)
+	struct TArray<Unknown> DropedItemList; // 0x28 (16)
+	struct TArray<Unknown> Message; // 0x38 (16)
+	float TotalDamage; // 0x48 (4)
+	float LifeTime; // 0x4C (4)
+};
+
+// ScriptStruct BravoHotelGame.ResultMessageInfo
+struct FResultMessageInfo {
+	int32_t Amount; // 0x0 (4)
+	enum class Unknow Type; // 0x4 (1)
+};
+
+// ScriptStruct BravoHotelGame.RewardPoint
+struct FRewardPoint {
+	int32_t RankPoint; // 0x0 (4)
+	int32_t KillPoint; // 0x4 (4)
+	int32_t HitPoint; // 0x8 (4)
+	int32_t SurvivalPoint; // 0xC (4)
+};
+
+// ScriptStruct BravoHotelGame.InventoryItemDetailInfo
+struct FInventoryItemDetailInfo : FTableRowBase {
+	int32_t ID; // 0x8 (4)
+	enum class Unknow ItemType; // 0xC (1)
+	char bIsEquippable : 0; // 0xD (1)
+	char bIsMultiSlotWearable : 0; // 0xD (1)
+	enum class Unknow WearableItemType; // 0xE (1)
+	struct TArray<Unknown> AdditionalWearableSlot; // 0x10 (16)
+	enum class Unknow ConsumablesItemType; // 0x20 (1)
+	enum class Unknow SuperPeopleClassType; // 0x21 (1)
+	int32_t ParentItemID; // 0x24 (4)
+	enum class Unknow LifeTimeType; // 0x28 (1)
+	int32_t LimitOfTime; // 0x2C (4)
+	int32_t LimitOfCount; // 0x30 (4)
+	enum class Unknow GenderType; // 0x34 (1)
+	float Weight; // 0x38 (4)
+	enum class Unknow Rarity; // 0x3C (1)
+	int32_t CompareRating; // 0x40 (4)
+	struct FString ItemSubType; // 0x48 (16)
+	enum class Unknow ItemPingType; // 0x58 (1)
+	char bIsBackpackPuttable : 0; // 0x59 (1)
+	char bIsDroppable : 0; // 0x59 (1)
+	char bIsDropToFloor : 0; // 0x59 (1)
+	char bIsBindable : 0; // 0x59 (1)
+	int32_t MaxStack; // 0x5C (4)
+	float PickupIntervalTime; // 0x60 (4)
+	char CorpseDrop : 0; // 0x64 (1)
+	struct FName LimitedCollectionType; // 0x68 (8)
+	enum class Unknow RewardType; // 0x70 (1)
+	char bInStrongbox : 0; // 0x71 (1)
+	int32_t RandomPackageID; // 0x74 (4)
+	int32_t PickupOutlineStencilValue; // 0x78 (4)
+	struct TArray<Unknown> TypeTags; // 0x80 (16)
+	enum class Unknow DevelopmentStatus; // 0x90 (1)
+	struct FText DisplayName; // 0x98 (24)
+	struct FText DisplayShortName; // 0xB0 (24)
+	struct FText Description; // 0xC8 (24)
+	struct TMap<Unknown, Unknown>Unknown DescriptionValues; // 0xE0 (80)
+	struct FName ItemSortType; // 0x130 (8)
+	int32_t SortOrder; // 0x138 (4)
+	struct FText DisplayItemType; // 0x140 (24)
+	struct FName TopRecipe; // 0x158 (8)
+	struct TSoftObjectPtr<Unknown> SlotIconTexture_PaperSprite; // 0x160 (40)
+	struct TSoftObjectPtr<Unknown> DragIconTexture_PaperSprite; // 0x188 (40)
+	struct TSoftObjectPtr<Unknown> EnableItemTexture_PaperSprite; // 0x1B0 (40)
+	struct Unknown MaterialPingIcon; // 0x1D8 (8)
+	char IsBundleItem : 0; // 0x1E0 (1)
+	struct FName ItemEffectID; // 0x1E4 (8)
+	char bOverridePickupScale : 0; // 0x1EC (1)
+	struct Unknown OverlapBoxExtent; // 0x1F0 (12)
+	float TraceSphereRadius; // 0x1FC (4)
+	struct Unknown WorldStaticMeshLoc; // 0x200 (12)
+	struct Unknown WorldStaticMeshRot; // 0x20C (12)
+	struct Unknown WorldStaticMeshScale; // 0x218 (12)
+	struct Unknown WorldSkelMeshLoc; // 0x224 (12)
+	struct Unknown WorldSkelMeshRot; // 0x230 (12)
+	struct Unknown WorldSkelMeshScale; // 0x23C (12)
+	char bUseStaticMesh : 0; // 0x248 (1)
+	struct TSoftObjectPtr<Unknown> WorldStaticMesh; // 0x250 (40)
+	struct TSoftObjectPtr<Unknown> WorldSkeletalMesh; // 0x278 (40)
+	float NetCullDistanceSquared; // 0x2A0 (4)
+	float DrawDistance; // 0x2A4 (4)
+	struct TSoftObjectPtr<Unknown> AudioEvent; // 0x2A8 (40)
+	struct TSoftClassPtr<UObject> EquippableItemClass; // 0x2D0 (40)
+	struct FName MutableUniqueKey; // 0x2F8 (8)
+	char bUseEquippedStaticMesh : 0; // 0x300 (1)
+	struct TSoftObjectPtr<Unknown> EquippedStaticMesh; // 0x308 (40)
+	struct TSoftObjectPtr<Unknown> EquippedSkeletalMesh; // 0x330 (40)
+	struct TArray<Unknown> OverrideMeshMaterials; // 0x358 (16)
+	struct FName WeaponId; // 0x368 (8)
+	enum class Unknow WeaponType; // 0x370 (1)
+	enum class Unknow ThrowingWeaponType; // 0x371 (1)
+	enum class Unknow WeaponAttachmentType; // 0x372 (1)
+	enum class Unknow WeaponAttachmentItem; // 0x373 (1)
+	struct Unknown Ability; // 0x378 (168)
+	struct Unknown AttachmentInfo; // 0x420 (72)
+	struct TArray<Unknown> EquipedBuffName; // 0x468 (16)
+	struct TArray<Unknown> UsingBuffName; // 0x478 (16)
+	char bMovableDuringUse : 0; // 0x488 (1)
+	char bIsImportant : 0; // 0x489 (1)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelAttachmentInfo
+struct FBravoHotelAttachmentInfo {
+	float ReloadDurationMultiplier; // 0x0 (4)
+	float ADSSpeedMultiplier; // 0x4 (4)
+	float AmmoSpeedMultiplier; // 0x8 (4)
+	float AutoFireRateMultiplier; // 0xC (4)
+	float BaseSpreadMultiplier; // 0x10 (4)
+	float FiringBaseSpreadMultiplier; // 0x14 (4)
+	float DeviationMultiplier; // 0x18 (4)
+	float RecoilHorizontalMultiplier; // 0x1C (4)
+	float RecoilVerticalMultiplier; // 0x20 (4)
+	float RecoilRecoveryMultiplier; // 0x24 (4)
+	float DecreaseRecoilPatternScale; // 0x28 (4)
+	float AnimationKickMultiplier; // 0x2C (4)
+	float SwayMultiplier; // 0x30 (4)
+	struct TArray<Unknown> ZeroingDistance; // 0x38 (16)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelAbilityModifier
+struct FBravoHotelAbilityModifier {
+	float Health; // 0x0 (4)
+	float Usablehealth; // 0x4 (4)
+	float Bandage; // 0x8 (4)
+	float Adrenaline; // 0xC (4)
+	int32_t Capacity; // 0x10 (4)
+	float Fuel; // 0x14 (4)
+	float DereaseReloadTimePercent; // 0x18 (4)
+	float MoveSpeedPercent; // 0x1C (4)
+	struct Unknown ArmorInfo; // 0x20 (88)
+	struct Unknown Detail; // 0x78 (48)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelAbilityModifierDetail
+struct FBravoHotelAbilityModifierDetail {
+	float CastingSeconds; // 0x0 (4)
+	struct FName UseableMeshAttachSlotName; // 0x4 (8)
+	struct Unknown AnimSlot_Stand; // 0x10 (16)
+	struct Unknown AnimSlot_Prone; // 0x20 (16)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelAbilityModifierArmor
+struct FBravoHotelAbilityModifierArmor {
+	float Durability; // 0x0 (4)
+	float Armor; // 0x4 (4)
+	struct TSet<Unknown> CoverBones; // 0x8 (80)
+};
+
+// ScriptStruct BravoHotelGame.SelecteSearchMaterialItemInfo
+struct FSelecteSearchMaterialItemInfo {
+	struct FName TopRecipeItem; // 0x0 (8)
+	struct FName SelectRecipeItem; // 0x8 (8)
+};
+
+// ScriptStruct BravoHotelGame.TestPoint
+struct FTestPoint {
+	struct Unknown StartPoint; // 0x0 (8)
+	struct Unknown EndPoint; // 0x8 (8)
+	struct Unknown CenterPos; // 0x10 (8)
+	struct Unknown StartStartPos; // 0x18 (8)
+	struct Unknown StartEndPos; // 0x20 (8)
+	struct Unknown EndStartPos; // 0x28 (8)
+	struct Unknown EndEndPos; // 0x30 (8)
+	struct Unknown WorldStartPoint; // 0x38 (8)
+	struct Unknown WorldEndPoint; // 0x40 (8)
+	struct Unknown WorldSize; // 0x48 (8)
+	struct Unknown WorldCenter; // 0x50 (8)
+};
+
+// ScriptStruct BravoHotelGame.DediDataCharacterInfo
+struct FDediDataCharacterInfo : FDediDataInfoBase {
+	struct Unknown KeyInfo; // 0x0 (40)
+	int32_t ClassIndex; // 0x28 (4)
+	int32_t CurrentWeaponID; // 0x2C (4)
+	int32_t FinalRank; // 0x30 (4)
+	int32_t GainRP; // 0x34 (4)
+	struct Unknown TotalData; // 0x38 (112)
+};
+
+// ScriptStruct BravoHotelGame.CharacterBaseInfo
+struct FCharacterBaseInfo {
+	int32_t KillCount; // 0x0 (4)
+	int32_t AIKillCount; // 0x4 (4)
+	int32_t SequenceKillCount; // 0x8 (4)
+	int32_t TempSequenceKillCount; // 0xC (4)
+	int32_t DeathCount; // 0x10 (4)
+	struct Unknown DeathTime; // 0x18 (8)
+	struct Unknown LastKillTime; // 0x20 (8)
+	float LifeTime; // 0x28 (4)
+	float MoveDistance; // 0x2C (4)
+	int32_t HeadShotKillCount; // 0x30 (4)
+	int32_t BeHeadShotedCount; // 0x34 (4)
+	int32_t BeKnockOutedCount; // 0x38 (4)
+	int32_t KnockOutCount; // 0x3C (4)
+	int32_t KnockOutHeadShotCount; // 0x40 (4)
+	int32_t BeKnockOutedHeadShotCount; // 0x44 (4)
+	int32_t RecoveryCount; // 0x48 (4)
+	int32_t BeRecoveryedCount; // 0x4C (4)
+	int32_t TeamKillCount; // 0x50 (4)
+	int32_t SelfKillCount; // 0x54 (4)
+	float Damage; // 0x58 (4)
+	float BeDamaged; // 0x5C (4)
+	int32_t UseSkillBookItemCount; // 0x60 (4)
+	int32_t UseHealItemCount; // 0x64 (4)
+	int32_t UseBoostItemCount; // 0x68 (4)
+};
+
+// ScriptStruct BravoHotelGame.DataKeyInfo
+struct FDataKeyInfo {
+	struct FString CharacterIndex; // 0x0 (16)
+	struct FString NickName; // 0x10 (16)
+	char bIsAI : 0; // 0x20 (1)
+};
+
+// ScriptStruct BravoHotelGame.ReplayReportVictimAndSuspectLogData
+struct FReplayReportVictimAndSuspectLogData {
+	struct Unknown* VictimDamageTypeClass; // 0x0 (8)
+	struct FString VictimHitBone; // 0x8 (16)
+	struct FString SuspectIpAddress; // 0x18 (16)
+	struct FString SuspectMaxItemID; // 0x28 (16)
+	int32_t SuspectDistance; // 0x38 (4)
+	int32_t SuspectMaxDistance; // 0x3C (4)
+	int32_t SuspectDamageCount; // 0x40 (4)
+	int32_t SuspectHeadShotDamageCount; // 0x44 (4)
+};
+
+// ScriptStruct BravoHotelGame.RepDiedInfo
+struct FRepDiedInfo {
+	struct Unknown Attacker; // 0x0 (24)
+	struct Unknown KnockOut; // 0x18 (24)
+	struct Unknown Killer; // 0x30 (8)
+	struct Unknown SubKiller; // 0x38 (8)
+	struct Unknown Died; // 0x40 (8)
+	struct TArray<Unknown> Assist; // 0x48 (16)
+	char IsFinallyKill : 0; // 0x58 (1)
+	uint16_t KillCount; // 0x5A (2)
+	uint16_t AliveCount; // 0x5C (2)
+	uint16_t KillDistance; // 0x5E (2)
+};
+
+// ScriptStruct BravoHotelGame.RepCharacterInfo
+struct FRepCharacterInfo {
+	struct Unknown PlayerState; // 0x0 (8)
+	int32_t DamageTypeID; // 0x8 (4)
+	uint16_t WeaponIndex; // 0xC (2)
+	uint16_t HitPointIdx; // 0xE (2)
+	float DamageAmount; // 0x10 (4)
+};
+
+// ScriptStruct BravoHotelGame.DataEventClientGameIllegalUsers
+struct FDataEventClientGameIllegalUsers : FDataEventBase {
+	struct Unknown ReportUserData; // 0x58 (640)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameIllegalReportUserData
+struct FAnalysisClientGameIllegalReportUserData {
+	struct Unknown report_info; // 0x0 (56)
+	struct Unknown victim_info; // 0x38 (296)
+	struct Unknown suspect_info; // 0x160 (288)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameIllegalSuspec
+struct FAnalysisClientGameIllegalSuspec {
+	int32_t loc_x; // 0x0 (4)
+	int32_t loc_y; // 0x4 (4)
+	int32_t loc_z; // 0x8 (4)
+	struct FString UserID; // 0x10 (16)
+	struct FString NickName; // 0x20 (16)
+	int32_t ClassIndex; // 0x30 (4)
+	int32_t Level; // 0x34 (4)
+	int32_t m; // 0x38 (4)
+	int32_t current_hp; // 0x3C (4)
+	int32_t current_max_hp; // 0x40 (4)
+	struct TArray<Unknown> skill_perk_id; // 0x48 (16)
+	struct TArray<Unknown> skill_perk_cooltime_id; // 0x58 (16)
+	struct Unknown Weapon; // 0x68 (96)
+	struct FString equip_helmet; // 0xC8 (16)
+	int32_t helmet_durability; // 0xD8 (4)
+	struct FString equip_armour; // 0xE0 (16)
+	int32_t armour_durability; // 0xF0 (4)
+	int32_t fire_type; // 0xF4 (4)
+	int32_t zoom_type; // 0xF8 (4)
+	int32_t Distance; // 0xFC (4)
+	int32_t m; // 0x100 (4)
+	int32_t damage_count; // 0x104 (4)
+	int32_t headshot_damage_count; // 0x108 (4)
+	struct FString ip; // 0x110 (16)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameIllegalSuspec
+struct FAnalysisClientGameIllegalSuspec {
+	int32_t item_id; // 0x0 (4)
+	struct FString item_name; // 0x8 (16)
+	char is_expert_weapon : 0; // 0x18 (1)
+	struct FString m; // 0x20 (16)
+	int32_t grade; // 0x30 (4)
+	int32_t enchant; // 0x34 (4)
+	int32_t perk_id_2; // 0x38 (4)
+	int32_t perk_id_3; // 0x3C (4)
+	int32_t perk_id_4; // 0x40 (4)
+	int32_t perk_id_5; // 0x44 (4)
+	struct Unknown parts_id; // 0x48 (20)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisPartsData
+struct FAnalysisPartsData {
+	int32_t grip; // 0x0 (4)
+	int32_t m; // 0x4 (4)
+	int32_t m; // 0x8 (4)
+	int32_t sight; // 0xC (4)
+	int32_t stock; // 0x10 (4)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameIllegalVictimCharacterData
+struct FAnalysisClientGameIllegalVictimCharacterData {
+	int32_t team_id; // 0x0 (4)
+	int32_t team_cnt; // 0x4 (4)
+	int32_t current_rank; // 0x8 (4)
+	struct FString UserID; // 0x10 (16)
+	struct FString NickName; // 0x20 (16)
+	int32_t ClassIndex; // 0x30 (4)
+	int32_t Level; // 0x34 (4)
+	int32_t current_hp; // 0x38 (4)
+	int32_t m; // 0x3C (4)
+	int32_t loc_x; // 0x40 (4)
+	int32_t loc_y; // 0x44 (4)
+	int32_t loc_z; // 0x48 (4)
+	int32_t isinbluezone; // 0x4C (4)
+	int32_t isinredzone; // 0x50 (4)
+	struct FString damage_type; // 0x58 (16)
+	int32_t current_max_hp; // 0x68 (4)
+	struct FString hit_bone; // 0x70 (16)
+	int32_t Damage; // 0x80 (4)
+	struct TArray<Unknown> skill_perk_id; // 0x88 (16)
+	struct TArray<Unknown> skill_perk_cooltime_id; // 0x98 (16)
+	struct Unknown Weapon; // 0xA8 (72)
+	struct FString equip_helmet; // 0xF0 (16)
+	int32_t helmet_durability; // 0x100 (4)
+	struct FString equip_armour; // 0x108 (16)
+	int32_t armour_durability; // 0x118 (4)
+	int32_t fire_type; // 0x11C (4)
+	int32_t zoom_type; // 0x120 (4)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameIllegalVictimWeaponData
+struct FAnalysisClientGameIllegalVictimWeaponData {
+	int32_t item_id; // 0x0 (4)
+	struct FString item_name; // 0x8 (16)
+	char is_expert_weapon : 0; // 0x18 (1)
+	int32_t grade; // 0x1C (4)
+	int32_t enchant; // 0x20 (4)
+	int32_t perk_id_2; // 0x24 (4)
+	int32_t perk_id_3; // 0x28 (4)
+	int32_t perk_id_4; // 0x2C (4)
+	int32_t perk_id_5; // 0x30 (4)
+	struct Unknown parts_id; // 0x34 (20)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameIllegalReportData
+struct FAnalysisClientGameIllegalReportData {
+	int32_t report_type; // 0x0 (4)
+	int32_t report_index; // 0x4 (4)
+	struct TArray<Unknown> illegal_program_index; // 0x8 (16)
+	struct FString replay_version; // 0x18 (16)
+	struct FString replay_filename; // 0x28 (16)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelMovePoint
+struct FBravoHotelMovePoint {
+	struct FName AreaName; // 0x0 (8)
+	struct Unknown TargetPoint; // 0x8 (12)
+	struct Unknown TargetRotate; // 0x14 (12)
+};
+
+// ScriptStruct BravoHotelGame.MatchEndSimpleResult
+struct FMatchEndSimpleResult {
+	char bAllDead : 0; // 0x0 (1)
+	struct Unknown Killer; // 0x8 (8)
+	char IsWeaponKill : 0; // 0x10 (1)
+	struct FText WeaponName; // 0x18 (24)
+	int32_t WeaponLevel; // 0x30 (4)
+	int32_t WeaponRarity; // 0x34 (4)
+	struct Unknown DamageTypeRow; // 0x38 (104)
+	char bDeathByHeadshot : 0; // 0xA0 (1)
+	char Replicate : 0; // 0xA1 (1)
+};
+
+// ScriptStruct BravoHotelGame.EquipmentInfo
+struct FEquipmentInfo {
+	char slot_num; // 0x0 (1)
+	uint32_t table_index; // 0x4 (4)
+	uint32_t Count; // 0x8 (4)
+};
+
+// ScriptStruct BravoHotelGame.RepRadialDamageInfo
+struct FRepRadialDamageInfo {
+	float BaseDamage; // 0x0 (4)
+	float MinDamage; // 0x4 (4)
+	float DamageInnerRadius; // 0x8 (4)
+	float DamageOuterRadius; // 0xC (4)
+	float DamageFalloff; // 0x10 (4)
+	float ImpulsePower; // 0x14 (4)
+	char ImpulseFalloff; // 0x18 (1)
+	struct Unknown* DamageTypeClass; // 0x20 (8)
+	struct Unknown Origin; // 0x28 (12)
+	struct Unknown DamageCauser; // 0x38 (8)
+	struct Unknown Instigator; // 0x40 (8)
+	struct TArray<Unknown> RepHitResults; // 0x48 (16)
+};
+
+// ScriptStruct BravoHotelGame.RepHitResultInfo
+struct FRepHitResultInfo {
+	struct Unknown DamageTarget; // 0x0 (8)
+	struct Unknown HitComponent; // 0x8 (8)
+	int16_t BoneIndex; // 0x10 (2)
+	int16_t ExtraIndex; // 0x12 (2)
+	struct Unknown ImpactPoint; // 0x14 (12)
+	float PenetrationDepth; // 0x20 (4)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelBlueZoneInfo
+struct FBravoHotelBlueZoneInfo : FTableRowBase {
+	struct Unknown PlayZoneData; // 0x8 (392)
+	struct TArray<Unknown> BattleRoyalePhaseInfo; // 0x190 (16)
+	struct FName RowName_AddPerkInfos; // 0x1A0 (8)
+};
+
+// ScriptStruct BravoHotelGame.BattleRoyalPhaseInfo
+struct FBattleRoyalPhaseInfo {
+	float DelayTime; // 0x68 (4)
+	float WaitingTime; // 0x1C (4)
+	float ShrinkTime; // 0x8 (4)
+	float TargetCircleRate; // 0xB0 (4)
+	float DamagePerSecondOutOfCircle; // 0x90 (4)
+	float CriticalTimeLimitTime; // 0x7C (4)
+	struct TArray<Unknown> TransportProbabilities; // 0x28 (16)
+	float TransportStartingAddValue; // 0xB4 (4)
+	char UsingFixTransportAltitude : 0; // 0x20 (1)
+	float FixTransportAltitude; // 0x4 (4)
+	float TransportAltitude; // 0x70 (4)
+	int32_t TransportMinCount; // 0x0 (4)
+	int32_t TransportMaxCount; // 0xB8 (4)
+	struct FName TransportRandomItemKey; // 0x74 (8)
+	char bUsingWeightMap : 0; // 0x6C (1)
+	float LocalDeviation; // 0xC (4)
+	struct Unknown PersonalSupplyPhaseInfo; // 0x38 (48)
+	char EnableUsingDelayAddPerk : 0; // 0xA8 (1)
+	struct TArray<Unknown> AddPerkInfos; // 0x80 (16)
+	float SurvivalCircleRaidus; // 0xAC (4)
+	struct Unknown SurvivalCirclePos; // 0x10 (12)
+	struct TArray<Unknown> TransportAircraftInfos; // 0x98 (16)
+};
+
+// ScriptStruct BravoHotelGame.TransportAircraftInfo
+struct FTransportAircraftInfo {
+	struct Unknown Start; // 0x28 (12)
+	struct Unknown End; // 0x4C (12)
+	struct Unknown StartBlueZone; // 0x58 (12)
+	struct Unknown EndBlueZone; // 0x70 (12)
+	struct Unknown Target; // 0x40 (12)
+	struct Unknown SecondTarget; // 0x64 (12)
+	struct FName RandomItemKey; // 0x20 (8)
+	struct Unknown DropBoxCurrentPos; // 0x34 (12)
+	struct TArray<Unknown> DropDistances; // 0x0 (16)
+	struct TArray<Unknown> DropBoxes; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.AddPerkInfo
+struct FAddPerkInfo {
+	float MinTime; // 0x0 (4)
+	float MaxTime; // 0x4 (4)
+	struct TArray<Unknown> LevelUpWeights; // 0x8 (16)
+};
+
+// ScriptStruct BravoHotelGame.PerkLevelUpWeight
+struct FPerkLevelUpWeight {
+	int32_t LevelCount; // 0x0 (4)
+	float Weight; // 0x4 (4)
+	float Beginner_Weight; // 0x8 (4)
+	struct TArray<Unknown> Defeat_Weight; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.PersonalSupplyPhaseInfo
+struct FPersonalSupplyPhaseInfo {
+	float Probability; // 0x0 (4)
+	float ProbabilityWithTeam; // 0x4 (4)
+	float MinAssignmentDelayTime; // 0x8 (4)
+	float AddAssignmentDelayTime; // 0xC (4)
+	float AssignmentRange; // 0x10 (4)
+	float MaxAssignmentRange; // 0x14 (4)
+	float Degree; // 0x18 (4)
+	char UsingDistanceRate : 0; // 0x1C (1)
+	float MinAssignmentRangeRate; // 0x20 (4)
+	float MaxAssignmentRangeRate; // 0x24 (4)
+	char IndividualAssignmentDelayTime : 0; // 0x28 (1)
+	float ItemSpawnVolume; // 0x2C (4)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelPlayZoneData
+struct FBravoHotelPlayZoneData {
+	int32_t ID; // 0x0 (4)
+	struct FName MapKey; // 0x4 (8)
+	struct FString DisplayName; // 0x10 (16)
+	struct FString AdditionalOption; // 0x20 (16)
+	char bCustomSetting : 0; // 0x30 (1)
+	char bDev : 0; // 0x31 (1)
+	struct FString CQRKey; // 0x38 (16)
+	int32_t MaxPlayerCount; // 0x48 (4)
+	int32_t AutoStartPlayerCount; // 0x4C (4)
+	struct Unknown CircleCenterPos; // 0x50 (8)
+	float CircleRadius; // 0x58 (4)
+	float DamagePerSecondOutOfCircle; // 0x5C (4)
+	char UsingInitialRandomCircle : 0; // 0x60 (1)
+	float InitialRandomCircleRadius; // 0x64 (4)
+	float InitialRandomCircleDeviation; // 0x68 (4)
+	float InitialRandomCircleMinAngle; // 0x6C (4)
+	float InitialRandomCircleMaxAngle; // 0x70 (4)
+	char bShowFirstTarget : 0; // 0x74 (1)
+	char UsingWidgetMapDataForAircraft : 0; // 0x75 (1)
+	char ShowMessage : 0; // 0x76 (1)
+	struct TArray<Unknown> PlayZoneImageList; // 0x78 (16)
+	struct FText BlueZoneTitle; // 0x88 (24)
+	struct FText BlueZoneDesc; // 0xA0 (24)
+	struct TArray<Unknown> PlayZoneInfos; // 0xB8 (16)
+	int32_t SelectedPlayZoneInfoIndex; // 0xC8 (4)
+	struct FName RedZoneTableID; // 0xCC (8)
+	struct FName ExpertWeaponTableID; // 0xD4 (8)
+	float AircraftAltitude; // 0xDC (4)
+	float AircrafSpeed; // 0xE0 (4)
+	int32_t OverrideUltimateLev; // 0xE4 (4)
+	struct FName PerkClassRuleKey; // 0xE8 (8)
+	struct FName ResuscitationTypeKey; // 0xF0 (8)
+	struct FName AIItemSettingType; // 0xF8 (8)
+	char LastPhaseBlueZonePositionIsCenter : 0; // 0x100 (1)
+	struct TArray<Unknown> ItemWorldSpawnDataTableList; // 0x108 (16)
+	char UsingOuterCircle : 0; // 0x118 (1)
+	struct Unknown OuterCircleCenterPos; // 0x11C (8)
+	float OuterCircleRadius; // 0x124 (4)
+	float OuterCircleDamageDelay; // 0x128 (4)
+	float OuterCircleDamagePerSecond; // 0x12C (4)
+	struct Unknown AreaItemSpawnList; // 0x130 (16)
+	struct Unknown AreaOverrideStandardGroupDataList; // 0x140 (16)
+	struct TArray<Unknown> AreaSpawnRateKeyList; // 0x150 (16)
+	struct FName BlueZoneSpawnRateKey; // 0x160 (8)
+	struct TArray<Unknown> VehicleAreaSpawnRateKeyList; // 0x168 (16)
+	struct FName VehicleBlueZoneSpawnRateKey; // 0x178 (8)
+	char bNotUseForceParachuteSeaLevelZ : 0; // 0x180 (1)
+};
+
+// ScriptStruct BravoHotelGame.AreaOverrideStandardGroupDataList
+struct FAreaOverrideStandardGroupDataList {
+	struct TArray<Unknown> List; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.AreaOverrideStandardGroupData
+struct FAreaOverrideStandardGroupData {
+	struct Unknown CenterLocation; // 0x0 (8)
+	float Radius; // 0x8 (4)
+	struct TMap<Unknown, Unknown>Unknown ExchangeInfos; // 0x10 (80)
+	struct TMap<Unknown, Unknown>Unknown Items; // 0x60 (80)
+};
+
+// ScriptStruct BravoHotelGame.AreaItemSpawnDataList
+struct FAreaItemSpawnDataList {
+	struct TArray<Unknown> List; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.AreaItemSpawnData
+struct FAreaItemSpawnData {
+	struct Unknown CenterLocation; // 0x0 (8)
+	float Radius; // 0x8 (4)
+	struct TArray<Unknown> List; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.ItemStandardGroupInfo
+struct FItemStandardGroupInfo {
+	struct FName RandomSpawnItemID; // 0x0 (8)
+	int32_t MinCnt; // 0x8 (4)
+	int32_t MaxCnt; // 0xC (4)
+};
+
+// ScriptStruct BravoHotelGame.PlayZoneInfo
+struct FPlayZoneInfo {
+	struct TSoftObjectPtr<Unknown> PlayZoneImage; // 0x0 (40)
+	struct FText PlayZoneTitle; // 0x28 (24)
+	struct FText PlayZoneDesc; // 0x40 (24)
+};
+
+// ScriptStruct BravoHotelGame.RepVehicleMovement
+struct FRepVehicleMovement : FRepMovement {
+	char bHasLinearVelocity : 0; // 0x34 (1)
+	char bHasAngularVelocity : 0; // 0x34 (1)
+};
+
+// ScriptStruct BravoHotelGame.RepWCLevelVisibilityInfo
+struct FRepWCLevelVisibilityInfo {
+	int32_t TileIndex; // 0x0 (4)
+	char bIsVisible : 0; // 0x4 (1)
+};
+
+// ScriptStruct BravoHotelGame.MaterialItemList
+struct FMaterialItemList {
+	struct TArray<Unknown> MaterialItemList; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.HideObjectInfo
+struct FHideObjectInfo {
+	struct TArray<Unknown> Objects; // 0x0 (16)
+	struct FString TagName; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.LevelStreamimgPriorityByZ
+struct FLevelStreamimgPriorityByZ {
+	float DistanceZ; // 0x0 (4)
+	int32_t MinPriority; // 0x4 (4)
+};
+
+// ScriptStruct BravoHotelGame.DummyInfo
+struct FDummyInfo {
+	struct Unknown PingInfo; // 0x0 (56)
+	struct Unknown PingLocalLocation; // 0x38 (12)
+	struct TArray<Unknown> RouteInfo; // 0x48 (16)
+};
+
+// ScriptStruct BravoHotelGame.SeasonTierUpElement
+struct FSeasonTierUpElement {
+	int32_t TierID; // 0x0 (4)
+	int32_t NextTierID; // 0x4 (4)
+	struct FText DisplayName; // 0x8 (24)
+	struct TSoftObjectPtr<Unknown> UMGIcon; // 0x20 (40)
+	struct TSoftObjectPtr<Unknown> CohIcon; // 0x48 (40)
+	int32_t Point; // 0x70 (4)
+	int32_t Rank; // 0x74 (4)
+	int32_t PromotePoint; // 0x78 (4)
+	enum class Unknow PromoteCondition; // 0x7C (1)
+	float TargetValueToPromote; // 0x80 (4)
+	int32_t PromoteRewardRP; // 0x84 (4)
+	int32_t PromotePenaltyRP; // 0x88 (4)
+	int32_t DemotePoint; // 0x8C (4)
+	enum class Unknow DemoteCondition; // 0x90 (1)
+	float TargetValueToDemote; // 0x94 (4)
+	int32_t DemoteRewardRP; // 0x98 (4)
+	int32_t DemotePenaltyRP; // 0x9C (4)
+	int32_t NextSeasonStartPoint; // 0xA0 (4)
+	float FirstKillRP; // 0xA4 (4)
+	float KillRP; // 0xA8 (4)
+	float AIKillRP; // 0xAC (4)
+	float FirstResurrectionRP; // 0xB0 (4)
+	float ResurrectionRP; // 0xB4 (4)
+	float AssistRP; // 0xB8 (4)
+	float SaveRP; // 0xBC (4)
+	float MatchRankMinRP; // 0xC0 (4)
+	float MatchRankMaxRP; // 0xC4 (4)
+	float MatchRankRPZeroRate; // 0xC8 (4)
+	float TotalMaxRP; // 0xCC (4)
+};
+
+// ScriptStruct BravoHotelGame.ExpertWeaponPingInfo
+struct FExpertWeaponPingInfo {
+	int32_t PingIndex; // 0x0 (4)
+	struct Unknown ExpertWeaponItem; // 0x8 (8)
+	struct Unknown LocationActor; // 0x10 (8)
+	struct Unknown Image; // 0x18 (8)
+	char Rarity; // 0x20 (1)
+	char EffectReinforce : 0; // 0x21 (1)
+	char bSetData : 0; // 0x22 (1)
+};
+
+// ScriptStruct BravoHotelGame.MaterialItemPingInfo
+struct FMaterialItemPingInfo {
+	int32_t PingIndex; // 0x0 (4)
+	struct FName MaterialKey; // 0x4 (8)
+	struct Unknown MaterialItem; // 0x10 (8)
+	struct Unknown LocationActor; // 0x18 (8)
+	struct Unknown Image; // 0x20 (8)
+	char Rarity; // 0x28 (1)
+	char EffectReinforce : 0; // 0x29 (1)
+};
+
+// ScriptStruct BravoHotelGame.PerkVechicleInfo
+struct FPerkVechicleInfo {
+	char NeedUpdate : 0; // 0x0 (1)
+	struct TArray<Unknown> VehicleList; // 0x8 (16)
+	struct TArray<Unknown> VehicleLocationList; // 0x18 (16)
+};
+
+// ScriptStruct BravoHotelGame.TrajectoryInitialConditions
+struct FTrajectoryInitialConditions {
+	struct Unknown InitialVelocity; // 0x0 (12)
+	struct Unknown InitialWorldLocation; // 0xC (12)
+	struct Unknown InitialRotation; // 0x18 (12)
+	float t0; // 0x24 (4)
+	struct Unknown v0direction; // 0x28 (12)
+	float v0length; // 0x34 (4)
+	float PenRestDeltaTime; // 0x38 (4)
+	struct Unknown PenRestLocation; // 0x3C (12)
+	float PenDeceleration; // 0x48 (4)
+};
+
+// ScriptStruct BravoHotelGame.QuestEventInfo
+struct FQuestEventInfo {
+	struct FString PlayerUID; // 0x0 (16)
+	enum class Unknow QuestTaskType; // 0x10 (1)
+	struct Unknown Condition; // 0x18 (112)
+	int32_t AddValue; // 0x88 (4)
+};
+
+// ScriptStruct BravoHotelGame.QuestTaskCondition
+struct FQuestTaskCondition {
+	struct TArray<Unknown> TargetItemIndex; // 0x0 (16)
+	struct TArray<Unknown> EquipedItemIndex; // 0x10 (16)
+	struct TArray<Unknown> WeaponType; // 0x20 (16)
+	struct TArray<Unknown> BoneName; // 0x30 (16)
+	struct TArray<Unknown> State; // 0x40 (16)
+	struct TArray<Unknown> Action; // 0x50 (16)
+	struct TArray<Unknown> ETC; // 0x60 (16)
+};
+
+// ScriptStruct BravoHotelGame.RepVehicleCollisionEvent
+struct FRepVehicleCollisionEvent {
+	struct Unknown HitComponent; // 0x0 (8)
+	int16_t InstanceIndex; // 0x8 (2)
+	struct Unknown ImpactPoint; // 0xC (12)
+	struct Unknown ImpactNormal; // 0x18 (12)
+	float ForwardSpeedKmH; // 0x24 (4)
+};
+
+// ScriptStruct BravoHotelGame.RepVehicleSeatInfo
+struct FRepVehicleSeatInfo {
+	char bIsOccupied : 0; // 0x0 (1)
+	struct Unknown Occupant; // 0x8 (8)
+};
+
+// ScriptStruct BravoHotelGame.QuestData
+struct FQuestData : FTableRowBase {
+	int32_t ID; // 0x8 (4)
+	struct FName NextQuestKey; // 0xC (8)
+	struct FText QuestTitle; // 0x18 (24)
+	struct FText QuestDesc; // 0x30 (24)
+	struct TArray<Unknown> Tasks; // 0x48 (16)
+};
+
+// ScriptStruct BravoHotelGame.QuestTaskElement
+struct FQuestTaskElement {
+	enum class Unknow QuestTaskType; // 0x0 (1)
+	int32_t GoalValue; // 0x4 (4)
+	int32_t ProgressRate; // 0x8 (4)
+	struct FText TaskTitle; // 0x10 (24)
+	struct FText TaskDesc; // 0x28 (24)
+	struct Unknown Condition; // 0x40 (112)
+};
+
+// ScriptStruct BravoHotelGame.QuestInfo
+struct FQuestInfo {
+	struct FName QuestKey; // 0x0 (8)
+	int32_t ID; // 0x8 (4)
+	enum class Unknow State; // 0xC (1)
+	int32_t CurrentProgress; // 0x10 (4)
+	int32_t GoalProgress; // 0x14 (4)
+	struct TArray<Unknown> Tasks; // 0x18 (16)
+};
+
+// ScriptStruct BravoHotelGame.QuestTaskInfo
+struct FQuestTaskInfo {
+	struct FName QuestKey; // 0x0 (8)
+	int32_t Index; // 0x8 (4)
+	enum class Unknow State; // 0xC (1)
+	int32_t CurrentValue; // 0x10 (4)
+};
+
+// ScriptStruct BravoHotelGame.SeasonQuestInfo
+struct FSeasonQuestInfo {
+	int32_t QuestIndex; // 0x0 (4)
+	int32_t CurrentScore; // 0x4 (4)
+	int32_t MaxScore; // 0x8 (4)
+};
+
+// ScriptStruct BravoHotelGame.LoadBuildingInfo
+struct FLoadBuildingInfo {
+	struct FString BuildingName; // 0x0 (16)
+	struct Unknown Location; // 0x10 (12)
+	char pad_1C_0 : 6; // 0x1C (1)
+	char isinbluezone : 1; // 0x1C (1)
+};
+
+// ScriptStruct BravoHotelGame.ItemSpawnLimitInfo
+struct FItemSpawnLimitInfo {
+	int32_t MaxLimitCnt; // 0x0 (4)
+	int32_t UserCnt1; // 0x4 (4)
+	int32_t LimitCnt1; // 0x8 (4)
+	int32_t UserCnt2; // 0xC (4)
+	int32_t LimitCnt2; // 0x10 (4)
+};
+
+// ScriptStruct BravoHotelGame.LocalSpawnRate
+struct FLocalSpawnRate : FTableRowBase {
+	struct Unknown CenterLocation; // 0x8 (12)
+	float Radius; // 0x14 (4)
+	struct TArray<Unknown> highTypeList; // 0x18 (16)
+};
+
+// ScriptStruct BravoHotelGame.HighTypeSpawnRate
+struct FHighTypeSpawnRate {
+	struct FString highTypeName; // 0x0 (16)
+	struct TArray<Unknown> m; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.MidTypeSpawnRate
+struct FMidTypeSpawnRate {
+	struct FString m; // 0x0 (16)
+	float SpawnRate; // 0x10 (4)
+	struct TArray<Unknown> ItemList; // 0x18 (16)
+};
+
+// ScriptStruct BravoHotelGame.ItemSpawnRate
+struct FItemSpawnRate {
+	struct FString ItemName; // 0x0 (16)
+	float SpawnRate; // 0x10 (4)
+};
+
+// ScriptStruct BravoHotelGame.VehicleAreaSpawnRateInfo
+struct FVehicleAreaSpawnRateInfo {
+	struct Unknown Data; // 0x0 (40)
+	struct TMap<Unknown, Unknown>Unknown AreaList; // 0x28 (80)
+};
+
+// ScriptStruct BravoHotelGame.VehicleAreaSpawnDetailInfo
+struct FVehicleAreaSpawnDetailInfo {
+	struct TArray<Unknown> StandardGroupList; // 0x0 (16)
+	struct TArray<Unknown> VehicleBoxList; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.VehicleBoxDetailInfo
+struct FVehicleBoxDetailInfo {
+	struct Unknown Box; // 0x0 (8)
+	int32_t Count; // 0x8 (4)
+};
+
+// ScriptStruct BravoHotelGame.AreaSpawnRateInfo
+struct FAreaSpawnRateInfo {
+	struct Unknown Data; // 0x0 (40)
+	struct TArray<Unknown> StandardGroupList; // 0x28 (16)
+	struct TMap<Unknown, Unknown>Unknown AreaList; // 0x38 (80)
+};
+
+// ScriptStruct BravoHotelGame.AreaSpawnDetailInfo
+struct FAreaSpawnDetailInfo {
+	struct TArray<Unknown> ItemBoxList; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.StandardGroupKeyCountInfo
+struct FStandardGroupKeyCountInfo {
+	struct TMap<Unknown, Unknown>Unknown StandardGroupKeyCountList; // 0x0 (80)
+	int32_t TotalBoxCount; // 0x50 (4)
+};
+
+// ScriptStruct BravoHotelGame.DamageInfo
+struct FDamageInfo {
+	struct Unknown Instigator; // 0x0 (8)
+	float DamageAmount; // 0x8 (4)
+};
+
+// ScriptStruct BravoHotelGame.TeamInfo
+struct FTeamInfo {
+	struct TArray<Unknown> MemberStates; // 0x8 (16)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelMatchingSettings
+struct FBravoHotelMatchingSettings {
+	char bPerson : 0; // 0x0 (1)
+	struct FString Map; // 0x8 (16)
+	enum class Unknow Type; // 0x18 (1)
+	char bNeedMoreMember : 0; // 0x19 (1)
+};
+
+// ScriptStruct BravoHotelGame.PlayerPawnList
+struct FPlayerPawnList {
+	struct Unknown Pawn; // 0x0 (8)
+	struct Unknown PartyInfo; // 0x8 (224)
+};
+
+// ScriptStruct BravoHotelGame.GameSettingInfo
+struct FGameSettingInfo {
+	struct TArray<Unknown> classindex_activeinfos; // 0x0 (16)
+	char redzone_active : 0; // 0x10 (1)
+	char vehicle_active : 0; // 0x11 (1)
+	int32_t ultimate_unlocklevel; // 0x14 (4)
+	int32_t standby_timer; // 0x18 (4)
+	int32_t ready_timer; // 0x1C (4)
+	struct TArray<Unknown> cqr_quickstartinfos; // 0x20 (16)
+	struct TArray<Unknown> class_select_info; // 0x30 (16)
+	struct TArray<Unknown> class_change_info; // 0x40 (16)
+	int32_t newbie_play_count; // 0x50 (4)
+	struct TArray<Unknown> loser_level_score; // 0x58 (16)
+	struct TArray<Unknown> loser_scores; // 0x68 (16)
+	struct TArray<Unknown> user_score_test_uid; // 0x78 (16)
+};
+
+// ScriptStruct BravoHotelGame.LoserScoreElement
+struct FLoserScoreElement {
+	int32_t m; // 0x0 (4)
+	int32_t loser_level; // 0x4 (4)
+	float m; // 0x8 (4)
+	float score_by_rank; // 0xC (4)
+	float score_on_defeat; // 0x10 (4)
+	float score_on_zero_kill; // 0x14 (4)
+	float score_on_zero_assist; // 0x18 (4)
+	float score_on_win; // 0x1C (4)
+	float score_per_kill; // 0x20 (4)
+	float score_per_assist; // 0x24 (4)
+};
+
+// ScriptStruct BravoHotelGame.GameSettingClassChangeInfoElement
+struct FGameSettingClassChangeInfoElement {
+	struct FString battle_mode; // 0x0 (16)
+	int32_t class_select_mode_price; // 0x10 (4)
+	int32_t random_change_refresh_max_count; // 0x14 (4)
+	struct TArray<Unknown> random_change_price; // 0x18 (16)
+	int32_t scope_select_refresh_max_count; // 0x28 (4)
+	struct TArray<Unknown> scope_select_price; // 0x30 (16)
+	int32_t scope_select_count; // 0x40 (4)
+};
+
+// ScriptStruct BravoHotelGame.GameSettingClassSelectInfoElement
+struct FGameSettingClassSelectInfoElement {
+	struct FString battle_mode; // 0x0 (16)
+	int32_t class_select_mode; // 0x10 (4)
+	int32_t current_status; // 0x14 (4)
+	int32_t current_status_view; // 0x18 (4)
+	int32_t current_status_party; // 0x1C (4)
+	int32_t duplicate_select_possible; // 0x20 (4)
+	int32_t random_possible; // 0x24 (4)
+};
+
+// ScriptStruct BravoHotelGame.GameSettingCQRElement
+struct FGameSettingCQRElement {
+	struct FString cqr; // 0x0 (16)
+	int32_t Value; // 0x10 (4)
+};
+
+// ScriptStruct BravoHotelGame.DeckBlockElement
+struct FDeckBlockElement {
+	int32_t Index; // 0x0 (4)
+	char pad_4_0 : 5; // 0x4 (1)
+	char Value : 1; // 0x4 (1)
+};
+
+// ScriptStruct BravoHotelGame.AirCraftBoardingPlayerList
+struct FAirCraftBoardingPlayerList {
+	struct TArray<Unknown> AirCraftBoardingPlayerList; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.AirCraftBoardingPlayerInfo
+struct FAirCraftBoardingPlayerInfo {
+	int32_t PlayerUniqueID; // 0x0 (4)
+	char IsDescent : 0; // 0x4 (1)
+	char AirCraftID; // 0x5 (1)
+	char SeatID; // 0x6 (1)
+};
+
+// ScriptStruct BravoHotelGame.TeamEndInfo
+struct FTeamEndInfo {
+	int32_t TeamUID; // 0x0 (4)
+	int32_t LastKillerTeamUID; // 0x4 (4)
+	int32_t Rank; // 0x8 (4)
+	struct TArray<Unknown> DiedInfos; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.CharacterDiedInfo
+struct FCharacterDiedInfo {
+	int32_t DiedUID; // 0x0 (4)
+	int32_t KillerUID; // 0x4 (4)
+	int32_t KnockUID; // 0x8 (4)
+	struct Unknown DiedDamageEvent; // 0x10 (16)
+	float EventTime; // 0x20 (4)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelGameData
+struct FBravoHotelGameData {
+	struct Unknown MapData; // 0x0 (384)
+	struct Unknown PlayZoneBaseData; // 0x180 (392)
+	struct TArray<Unknown> PlayZonePhaseList; // 0x308 (16)
+	struct Unknown WeightMapInfo; // 0x318 (8)
+};
+
+// ScriptStruct BravoHotelGame.SentenceData
+struct FSentenceData : FTableRowBase {
+	struct FText SpeakerName; // 0x8 (24)
+	struct FText SentenceText; // 0x20 (24)
+	int32_t FaceIndex; // 0x38 (4)
+	char bNeedInput : 0; // 0x3C (1)
+	char bHoldOnVoicePlay : 0; // 0x3D (1)
+	float NextTime; // 0x40 (4)
+	struct Unknown VoiceEvent; // 0x48 (8)
+	struct TMap<Unknown, Unknown>Unknown ChannelVoiceEvent; // 0x50 (80)
+	struct TArray<Unknown> AdditionalEvents; // 0xA0 (16)
+};
+
+// ScriptStruct BravoHotelGame.AreaWidgetInfo
+struct FAreaWidgetInfo {
+	struct Unknown ServerLocation; // 0x0 (12)
+	float Radius; // 0xC (4)
+	struct Unknown TargetActor; // 0x10 (8)
+	char bIsAutoRemove : 0; // 0x18 (1)
+	float AutoRemoveTime; // 0x1C (4)
+	struct Unknown PingInfo; // 0x20 (48)
+	struct Unknown ExpertWeaponPingInfo; // 0x50 (40)
+	struct Unknown Image; // 0x78 (8)
+	int32_t LocalPingIndex; // 0x80 (4)
+};
+
+// ScriptStruct BravoHotelGame.KillBroadcastKillerInfo
+struct FKillBroadcastKillerInfo {
+	struct Unknown PlayerState; // 0x0 (8)
+	char IsHeadShot : 0; // 0x8 (1)
+	char IsSelfKill : 0; // 0x9 (1)
+	char IsTeamKill : 0; // 0xA (1)
+	char IsWeaponKill : 0; // 0xB (1)
+	struct Unknown WeaponInfo; // 0x10 (2864)
+	struct Unknown DamageTypeRow; // 0xB40 (104)
+};
+
+// ScriptStruct BravoHotelGame.KillBroadcastUIInfo
+struct FKillBroadcastUIInfo {
+	struct Unknown Attacker; // 0x0 (2984)
+	struct Unknown KnockOut; // 0xBA8 (2984)
+	struct Unknown Killer; // 0x1750 (8)
+	struct Unknown SubKiller; // 0x1758 (8)
+	struct Unknown Died; // 0x1760 (8)
+	struct TArray<Unknown> Assist; // 0x1768 (16)
+	char IsFinallyKill : 0; // 0x1778 (1)
+	int32_t KillCount; // 0x177C (4)
+	enum class Unknow BroadCastKillMessageType; // 0x1780 (1)
+};
+
+// ScriptStruct BravoHotelGame.StatupAnimData
+struct FStatupAnimData {
+	struct FName PreItemKey; // 0x0 (8)
+	struct FName NewItemKey; // 0x8 (8)
+	int32_t SlotIndex; // 0x10 (4)
+};
+
+// ScriptStruct BravoHotelGame.Coh_ResultInfo
+struct FCoh_ResultInfo {
+	int32_t TableIndex; // 0x0 (4)
+	int32_t NewTableIndex; // 0x4 (4)
+	struct FString Identified; // 0x8 (16)
+	float fatigue; // 0x18 (4)
+	int32_t beforeDurability; // 0x1C (4)
+	float beforeFatigue; // 0x20 (4)
+	struct TArray<Unknown> Rewards; // 0x28 (16)
+};
+
+// ScriptStruct BravoHotelGame.Coh_Reward
+struct FCoh_Reward {
+	int32_t TableIndex; // 0x0 (4)
+	int32_t Count; // 0x4 (4)
+};
+
+// ScriptStruct BravoHotelGame.Coh_Query
+struct FCoh_Query {
+	struct FName TableName; // 0x0 (8)
+	char AllRows : 0; // 0x8 (1)
+	char ArrayType : 0; // 0x9 (1)
+	char LocalizationKey : 0; // 0xA (1)
+	struct TArray<Unknown> RowNames; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.Coh_ForceMatching
+struct FCoh_ForceMatching {
+	struct FString HostIP; // 0x0 (16)
+	int32_t Port; // 0x10 (4)
+	struct FString Token; // 0x18 (16)
+	struct FString Key; // 0x28 (16)
+	int32_t MatchNum; // 0x38 (4)
+	struct FString Map; // 0x40 (16)
+	char SpectatorOnly : 0; // 0x50 (1)
+	struct FString AddOptions; // 0x58 (16)
+};
+
+// ScriptStruct BravoHotelGame.Response_MaterialList_Data
+struct FResponse_MaterialList_Data {
+	int32_t table_index; // 0x0 (4)
+	struct FString item_id; // 0x8 (16)
+	int32_t stack_count; // 0x18 (4)
+	struct FString created; // 0x20 (16)
+};
+
+// ScriptStruct BravoHotelGame.Response_Weapon_List_Data
+struct FResponse_Weapon_List_Data {
+	int32_t base_index; // 0x0 (4)
+	struct FString item_id; // 0x8 (16)
+	int32_t table_index; // 0x18 (4)
+	int32_t Durability; // 0x1C (4)
+	char pad_1C_0 : 6; // 0x1C (1)
+	char Identified : 1; // 0x20 (1)
+	char pad_1C_7 : 1; // 0x1C (1)
+	char supplied : 0; // 0x21 (1)
+	struct TMap<Unknown, Unknown>Unknown options; // 0x28 (80)
+	struct FString created; // 0x78 (16)
+};
+
+// ScriptStruct BravoHotelGame.Response_CraftWeapon_Data
+struct FResponse_CraftWeapon_Data {
+	int32_t table_index; // 0x0 (4)
+	int32_t before_gold; // 0x4 (4)
+	int32_t after_gold; // 0x8 (4)
+	struct TArray<Unknown> removed_materials; // 0x10 (16)
+	struct TArray<Unknown> updated_materials; // 0x20 (16)
+	struct FString removed_weapon_item_id; // 0x30 (16)
+	struct Unknown crafted_weapon; // 0x40 (128)
+};
+
+// ScriptStruct BravoHotelGame.Response_CraftWeapon_Weapon
+struct FResponse_CraftWeapon_Weapon {
+	int32_t table_index; // 0x0 (4)
+	int32_t table_base_index; // 0x4 (4)
+	int32_t Durability; // 0x8 (4)
+	struct TMap<Unknown, Unknown>Unknown options; // 0x10 (80)
+	struct FString item_id; // 0x60 (16)
+	struct FString created; // 0x70 (16)
+};
+
+// ScriptStruct BravoHotelGame.Response_CraftWeapon_Material
+struct FResponse_CraftWeapon_Material {
+	int32_t table_index; // 0x0 (4)
+	struct FString item_id; // 0x8 (16)
+	int32_t stack_count; // 0x18 (4)
+};
+
+// ScriptStruct BravoHotelGame.Coh_MatchingSettings
+struct FCoh_MatchingSettings {
+	char bPerson : 0; // 0x0 (1)
+	struct FString Map; // 0x8 (16)
+	int32_t TypeNum; // 0x18 (4)
+	char NeedMoreMember : 0; // 0x1C (1)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelLobbyMapSetting
+struct FBravoHotelLobbyMapSetting {
+	struct TArray<Unknown> IncludeMapList; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.EffectTransitionInfo
+struct FEffectTransitionInfo {
+	struct Unknown Actor; // 0x0 (8)
+	struct Unknown SupplyActorRef; // 0x8 (8)
+	float ScalarParameterValue; // 0x10 (4)
+	char Visible : 0; // 0x14 (1)
+};
+
+// ScriptStruct BravoHotelGame.SupplySlotInfo
+struct FSupplySlotInfo {
+	int32_t Idx; // 0x0 (4)
+	struct Unknown Slot; // 0x8 (8)
+};
+
+// ScriptStruct BravoHotelGame.SupplyBoxItemInfo
+struct FSupplyBoxItemInfo {
+	struct FName Name; // 0x0 (8)
+	struct Unknown Actor; // 0x8 (8)
+	struct Unknown SupplyMeshParticle; // 0x10 (8)
+	int32_t Idx; // 0x18 (4)
+	struct TArray<Unknown> ToolTipOffset; // 0x20 (16)
+};
+
+// ScriptStruct BravoHotelGame.PerkInfoArray
+struct FPerkInfoArray : FFastArraySerializer {
+	struct TArray<Unknown> Items; // 0x108 (16)
+};
+
+// ScriptStruct BravoHotelGame.RepPerkInfo
+struct FRepPerkInfo : FFastArraySerializerItem {
+	uint16_t PerkIndex; // 0xC (2)
+	char InGamelevel; // 0xE (1)
+};
+
+// ScriptStruct BravoHotelGame.SteamFriendInfo
+struct FSteamFriendInfo {
+	struct Unknown UniqueNetId; // 0x0 (40)
+	struct FString DisplayName; // 0x28 (16)
+	struct FString RealName; // 0x38 (16)
+	enum class Unknow OnlineState; // 0x48 (1)
+	char bIsOnline : 0; // 0x49 (1)
+	char bIsPlaying : 0; // 0x4A (1)
+	char bIsPlayingThisGame : 0; // 0x4B (1)
+	char bIsJoinable : 0; // 0x4C (1)
+	char bHasVoiceSupport : 0; // 0x4D (1)
+};
+
+// ScriptStruct BravoHotelGame.RepVehicleControlStates
+struct FRepVehicleControlStates {
+	char bHasLeftSteeringInput : 0; // 0x0 (1)
+	char bHasRightSteeringInput : 0; // 0x1 (1)
+	char bHasThrottleInput : 0; // 0x2 (1)
+	char bHasBrakeInput : 0; // 0x3 (1)
+	char bIsIdleBraking : 0; // 0x4 (1)
+	char bHasHandbrakeInput : 0; // 0x5 (1)
+	char bUsingAirControlInput : 0; // 0x6 (1)
+	int8_t CurrentGear; // 0x7 (1)
+};
+
+// ScriptStruct BravoHotelGame.WeaponBaseData
+struct FWeaponBaseData : FTableRowBase {
+	struct FName WeaponKey; // 0x8 (8)
+	int32_t ID; // 0x10 (4)
+	enum class Unknow WeaponType; // 0x14 (1)
+	struct FText DisplayName; // 0x18 (24)
+	struct FText DisplayDesc; // 0x30 (24)
+	struct FText DisplayWeaponType; // 0x48 (24)
+	struct FText DisplayRangeType; // 0x60 (24)
+	int32_t Display_Damage; // 0x78 (4)
+	int32_t Display_EffectiveRange; // 0x7C (4)
+	int32_t Display_Accuracy; // 0x80 (4)
+	int32_t Display_RateofFire; // 0x84 (4)
+	struct FName Display_AmmoInfo; // 0x88 (8)
+	struct TSoftObjectPtr<Unknown> SlotIconTexture_PaperSprite; // 0x90 (40)
+	struct TSoftObjectPtr<Unknown> DragIconTexture_PaperSprite; // 0xB8 (40)
+	char IsArmoryWeapon : 0; // 0xE0 (1)
+	struct FName ItemKey; // 0xE4 (8)
+	struct FName TopRecipe; // 0xEC (8)
+	int32_t Display_MagSize; // 0xF4 (4)
+	struct Unknown DataAsset; // 0xF8 (8)
+	struct FName AmmoTableKey; // 0x100 (8)
+	struct Unknown PerBoneDamageTable; // 0x108 (8)
+};
+
+// ScriptStruct BravoHotelGame.ZeroPoint
+struct FZeroPoint {
+	int32_t Distance; // 0x0 (4)
+	float Angle; // 0x4 (4)
+};
+
+// ScriptStruct BravoHotelGame.RepProjectileInfo
+struct FRepProjectileInfo {
+	struct Unknown Location; // 0x0 (12)
+	struct Unknown OriginRotation; // 0xC (12)
+	struct TArray<Unknown> SpreadRotations; // 0x18 (16)
+	char NumBulletsAndSpreadBit; // 0x28 (1)
+	char bIsCharacterInfoData : 0; // 0x29 (1)
+	char CharacterInfoBit; // 0x2A (1)
+	char Index; // 0x2B (1)
+	float ShotFoV; // 0x2C (4)
+	enum class Unknow FireMode; // 0x30 (1)
+	float ProjectileVelocity; // 0x34 (4)
+	float TerminalVelocity; // 0x38 (4)
+	char bIsBoltAction : 0; // 0x3C (1)
+	struct Unknown RecoilInfo; // 0x40 (60)
+	float LeanDegreeMax; // 0x7C (4)
+	float ADSSpeed; // 0x80 (4)
+	float Deviation; // 0x84 (4)
+	uint16_t UniqueID; // 0x88 (2)
+	char bHasAuthority : 0; // 0x8A (1)
+	struct Unknown AuthorityController; // 0x90 (8)
+	float Time; // 0x98 (4)
+	float DamageRate; // 0x9C (4)
+	char LevelVisibleRate; // 0xA0 (1)
+};
+
+// ScriptStruct BravoHotelGame.RepRecoilInfo
+struct FRepRecoilInfo {
+	float VertClampMin; // 0x0 (4)
+	float VertClampMax; // 0x4 (4)
+	float VertSpeed; // 0x8 (4)
+	float VertRecoveryClamp; // 0xC (4)
+	float VertRecoveryModifier; // 0x10 (4)
+	float HorSpeed; // 0x14 (4)
+	float HorTendency; // 0x18 (4)
+	float HorLeftMax; // 0x1C (4)
+	float HorRightMax; // 0x20 (4)
+	float Speed; // 0x24 (4)
+	float RecoverySpeed; // 0x28 (4)
+	float PatternScale; // 0x2C (4)
+	float CrouchModifier; // 0x30 (4)
+	float ProneModifier; // 0x34 (4)
+	float DecreaseRecoilPatternScale; // 0x38 (4)
+};
+
+// ScriptStruct BravoHotelGame.ExplosionInfo
+struct FExplosionInfo {
+	char bActive : 0; // 0x0 (1)
+	float Damage; // 0x4 (4)
+	float EffectRange; // 0x8 (4)
+	float DamageFalloff; // 0xC (4)
+};
+
+// ScriptStruct BravoHotelGame.IncendiaryInfo
+struct FIncendiaryInfo {
+	char bActive : 0; // 0x0 (1)
+	float DamageTime; // 0x4 (4)
+	float FireDamage; // 0x8 (4)
+	float ActiveRange; // 0xC (4)
+	float FireShrinkTime; // 0x10 (4)
+};
+
+// ScriptStruct BravoHotelGame.RangedWeaponFireSound
+struct FRangedWeaponFireSound {
+	struct Unknown SingleFireEvent; // 0x0 (8)
+	struct Unknown LoopStartEvent; // 0x8 (8)
+	struct Unknown LoopStopEvent; // 0x10 (8)
+	struct Unknown WarmupStartEvent; // 0x18 (8)
+};
+
+// ScriptStruct BravoHotelGame.LoginInfo
+struct FLoginInfo {
+	struct TMap<Unknown, Unknown>Unknown AppIDs; // 0x0 (80)
+	struct TMap<Unknown, Unknown>Unknown Keys; // 0x50 (80)
+};
+
+// ScriptStruct BravoHotelGame.BoostTypeData
+struct FBoostTypeData : FTableRowBase {
+	float BoostMax; // 0x8 (4)
+	struct TArray<Unknown> BoostDefine; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.BoostTypeElement
+struct FBoostTypeElement {
+	float StepStart; // 0x0 (4)
+	float BoostDecreasePerSec; // 0x4 (4)
+	char bShowHealUI : 0; // 0x8 (1)
+	char bShowSpeedUI : 0; // 0x9 (1)
+	struct TArray<Unknown> BuffKeys; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.PerkDeckInfo
+struct FPerkDeckInfo {
+	struct Unknown ClassInfo; // 0x0 (40)
+	int32_t ChangeDeckCount; // 0x28 (4)
+	struct TArray<Unknown> ExpertSupplyItems; // 0x30 (16)
+	struct TArray<Unknown> ExpertSupplyWeaponItems; // 0x40 (16)
+	struct TArray<Unknown> ExpertFreeSupplyItems; // 0x50 (16)
+	struct TArray<Unknown> ExpertFreeSupplyWeaponItems; // 0x60 (16)
+};
+
+// ScriptStruct BravoHotelGame.CharacterAbilityData
+struct FCharacterAbilityData : FTableRowBase {
+	enum class Unknow AbilityType; // 0x8 (1)
+	enum class Unknow AbilityCase; // 0x9 (1)
+	float AbilityValue; // 0xC (4)
+};
+
+// ScriptStruct BravoHotelGame.ExpertWeaponListData
+struct FExpertWeaponListData : FTableRowBase {
+	struct TMap<Unknown, Unknown>Unknown ExpertWeaponType; // 0x8 (80)
+};
+
+// ScriptStruct BravoHotelGame.ExpertWeaponType
+struct FExpertWeaponType {
+	struct TArray<Unknown> WeaponList; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.ExpertWeaponElement
+struct FExpertWeaponElement {
+	struct FName WeaponDataID; // 0x0 (8)
+	float Weight; // 0x8 (4)
+	struct TArray<Unknown> SupplyWeaponItems; // 0x10 (16)
+	struct TArray<Unknown> SupplyItems; // 0x20 (16)
+	struct TMap<Unknown, Unknown>Unknown PerkNames; // 0x30 (80)
+	struct TArray<Unknown> FreeSupplyWeaponItems; // 0x80 (16)
+	struct TArray<Unknown> FreeSupplyItems; // 0x90 (16)
+};
+
+// ScriptStruct BravoHotelGame.CameraEffectData
+struct FCameraEffectData : FTableRowBase {
+	float Duration; // 0x8 (4)
+	struct Unknown Particle_TPP; // 0x10 (8)
+	struct Unknown Particle_FPP; // 0x18 (8)
+	struct Unknown ParticlePivot; // 0x20 (12)
+	struct TMap<Unknown, Unknown>Unknown EffectColor; // 0x30 (80)
+};
+
+// ScriptStruct BravoHotelGame.MaterialEffectData
+struct FMaterialEffectData : FTableRowBase {
+	float ActiveTime; // 0x8 (4)
+	float SleepTime; // 0xC (4)
+	struct TMap<Unknown, Unknown>Unknown StartMutableDatas; // 0x10 (80)
+	struct TMap<Unknown, Unknown>Unknown ChangeMutableDatas; // 0x60 (80)
+	float TargetChangeRate; // 0xB0 (4)
+	struct Unknown* CameraPostProcessClase; // 0xB8 (8)
+	struct TMap<Unknown, Unknown>Unknown ColorValues; // 0xC0 (80)
+	struct TMap<Unknown, Unknown>Unknown FloatValues; // 0x110 (80)
+	struct TMap<Unknown, Unknown>Unknown ColorCurves; // 0x160 (80)
+	struct TMap<Unknown, Unknown>Unknown FloatCurves; // 0x1B0 (80)
+	struct FName BlendOutParameterName; // 0x200 (8)
+	float BlendOutSpeed; // 0x208 (4)
+};
+
+// ScriptStruct BravoHotelGame.PerkData
+struct FPerkData : FTableRowBase {
+	struct Unknown BaseData; // 0x8 (200)
+	struct TArray<Unknown> InGameDatas; // 0xD0 (16)
+};
+
+// ScriptStruct BravoHotelGame.PerkInGameData
+struct FPerkInGameData : FTableRowBase {
+	struct FText DisplayName; // 0x8 (24)
+	struct TMap<Unknown, Unknown>Unknown DisplayNameValues; // 0x20 (80)
+	struct FText Description; // 0x70 (24)
+	struct TMap<Unknown, Unknown>Unknown DescriptionValues; // 0x88 (80)
+	struct FText PopupName; // 0xD8 (24)
+	struct FText PopupNewDesc; // 0xF0 (24)
+	struct FText PopupLevelUpDesc; // 0x108 (24)
+	struct TMap<Unknown, Unknown>Unknown PopupLevelUpDescValues; // 0x120 (80)
+	struct TSoftObjectPtr<Unknown> PopupNewSound; // 0x170 (40)
+	struct FName DisplayKey; // 0x198 (8)
+	int32_t DisplayPower; // 0x1A0 (4)
+	int32_t DisplaySpeed; // 0x1A4 (4)
+	int32_t DisplayDefense; // 0x1A8 (4)
+	int32_t Level; // 0x1AC (4)
+	int32_t MaxLevel; // 0x1B0 (4)
+	int32_t NextLevelExp; // 0x1B4 (4)
+	struct TArray<Unknown> BuffNames; // 0x1B8 (16)
+};
+
+// ScriptStruct BravoHotelGame.PerkBaseData
+struct FPerkBaseData : FTableRowBase {
+	int32_t ID; // 0x8 (4)
+	struct FText DisplayName; // 0x10 (24)
+	struct FText DisplayShortName; // 0x28 (24)
+	struct FText Description; // 0x40 (24)
+	struct FText Tooltip; // 0x58 (24)
+	struct TSoftObjectPtr<Unknown> SlotIconTexture; // 0x70 (40)
+	int32_t MaxGrade; // 0x98 (4)
+	int32_t grade; // 0x9C (4)
+	struct FName TextTableIndex; // 0xA0 (8)
+	struct TArray<Unknown> EquipableClass; // 0xA8 (16)
+	char EquipableSlot; // 0xB8 (1)
+	struct FName SpecialWeaponName; // 0xBC (8)
+};
+
+// ScriptStruct BravoHotelGame.NewbieBuff
+struct FNewbieBuff : FTableRowBase {
+	struct TArray<Unknown> CommonBuffNames; // 0x20 (16)
+	float SupplyProbabilityModifyer; // 0x18 (4)
+	struct FName ExpertWeaponTableID; // 0x30 (8)
+	struct TArray<Unknown> SuperPeopleClassBuffNames; // 0x8 (16)
+};
+
+// ScriptStruct BravoHotelGame.SpecificClassBuff
+struct FSpecificClassBuff {
+	enum class Unknow SpecificClass; // 0x0 (1)
+	struct TArray<Unknown> BuffNames; // 0x8 (16)
+};
+
+// ScriptStruct BravoHotelGame.BuffData
+struct FBuffData : FTableRowBase {
+	struct Unknown* BuffClass; // 0x8 (8)
+	enum class Unknow BuffTarget; // 0x10 (1)
+	struct TSoftObjectPtr<Unknown> CohIcon; // 0x18 (40)
+	struct FText DisplayName; // 0x40 (24)
+	struct FText Description; // 0x58 (24)
+	struct Unknown BorderColor; // 0x70 (4)
+	struct Unknown BGColor; // 0x74 (4)
+	int32_t DisplayLevel; // 0x78 (4)
+	struct FName EffectSet; // 0x7C (8)
+	float ReadyTime; // 0x84 (4)
+	float BuffTime; // 0x88 (4)
+	float CoolTime; // 0x8C (4)
+	float Chance; // 0x90 (4)
+	int32_t LimitCount; // 0x94 (4)
+	struct TArray<Unknown> SubBuffIndex; // 0x98 (16)
+	struct TArray<Unknown> StartBuffIndex; // 0xA8 (16)
+	struct TArray<Unknown> EndBuffIndex; // 0xB8 (16)
+	struct FString SpecialCondition; // 0xC8 (16)
+	float PlusValue; // 0xD8 (4)
+	float PercentValue; // 0xDC (4)
+	char bReverseCondition : 0; // 0xE0 (1)
+	char bUseableInVehicle : 0; // 0xE1 (1)
+	struct TArray<Unknown> TargetItemIndex; // 0xE8 (16)
+	struct TArray<Unknown> EquipedItemIndex; // 0xF8 (16)
+	struct TArray<Unknown> WeaponType; // 0x108 (16)
+	struct TArray<Unknown> BoneName; // 0x118 (16)
+	struct TArray<Unknown> State; // 0x128 (16)
+	struct TArray<Unknown> ETC; // 0x138 (16)
+	struct FString Param01; // 0x148 (16)
+	struct FString Param02; // 0x158 (16)
+	struct FString Param03; // 0x168 (16)
+	struct FString Param04; // 0x178 (16)
+};
+
+// ScriptStruct BravoHotelGame.BuffEffectSetData
+struct FBuffEffectSetData : FTableRowBase {
+	struct TMap<Unknown, Unknown>Unknown CharacterParticleStart; // 0x8 (80)
+	struct TMap<Unknown, Unknown>Unknown CharacterParticleIng; // 0x58 (80)
+	struct TMap<Unknown, Unknown>Unknown CharacterParticleEnd; // 0xA8 (80)
+	struct TArray<Unknown> Sound2DStart; // 0xF8 (16)
+	struct TArray<Unknown> Sound2DEnd; // 0x108 (16)
+	struct TArray<Unknown> Sound3DStart; // 0x118 (16)
+	struct TArray<Unknown> Sound3DEnd; // 0x128 (16)
+	struct TArray<Unknown> SoundFollowStart; // 0x138 (16)
+	struct TArray<Unknown> SoundFollowEnd; // 0x148 (16)
+};
+
+// ScriptStruct BravoHotelGame.AICharacterSettingData
+struct FAICharacterSettingData : FTableRowBase {
+	struct FString NickName; // 0x8 (16)
+	struct Unknown AppearanceInfo; // 0x18 (20)
+	struct TArray<Unknown> AddItems; // 0x30 (16)
+	struct TArray<Unknown> Buffs; // 0x40 (16)
+	struct FName ItemSettingType; // 0x50 (8)
+};
+
+// ScriptStruct BravoHotelGame.AICharacterAppearanceInfo
+struct FAICharacterAppearanceInfo {
+	int32_t FaceID; // 0x0 (4)
+	int32_t FaceColorID; // 0x4 (4)
+	int32_t HairID; // 0x8 (4)
+	int32_t HairColorID; // 0xC (4)
+	int32_t gender; // 0x10 (4)
+};
+
+// ScriptStruct BravoHotelGame.AIItemSettingData
+struct FAIItemSettingData : FTableRowBase {
+	struct TArray<Unknown> PhaseItemSettingInfo; // 0x8 (16)
+};
+
+// ScriptStruct BravoHotelGame.AIPhaseItemSettingInfo
+struct FAIPhaseItemSettingInfo {
+	int32_t Phase; // 0x0 (4)
+	struct TArray<Unknown> EquipItems; // 0x8 (16)
+	struct TArray<Unknown> DropItems; // 0x18 (16)
+};
+
+// ScriptStruct BravoHotelGame.DebugAircraftWorldInfo
+struct FDebugAircraftWorldInfo {
+	struct Unknown RightVectorStartWorldPos; // 0x0 (12)
+	struct Unknown RightVectorEndWorldPos; // 0xC (12)
+	struct Unknown ChangedStartWorldPos; // 0x18 (12)
+	struct Unknown ChangedEndWorldPos; // 0x24 (12)
+	struct Unknown IgnoreAreaWorldPos; // 0x30 (12)
+	float IgnoreAreaRadius; // 0x3C (4)
+};
+
+// ScriptStruct BravoHotelGame.AirCraftInfo
+struct FAirCraftInfo {
+	struct Unknown CurrentPos; // 0x0 (8)
+	struct Unknown StartPos; // 0x8 (8)
+	struct Unknown EndPos; // 0x10 (8)
+	struct Unknown DescentStartPos; // 0x18 (8)
+	struct Unknown DescentEndPos; // 0x20 (8)
+	struct Unknown DebugData; // 0x28 (44)
+	float Angle; // 0x54 (4)
+	int32_t FindDescentPointCnt; // 0x58 (4)
+};
+
+// ScriptStruct BravoHotelGame.DebugAirCraftInfo
+struct FDebugAirCraftInfo {
+	struct Unknown RightVectorStart; // 0x0 (8)
+	struct Unknown RightVectorEnd; // 0x8 (8)
+	struct Unknown ChangedStartPos; // 0x10 (8)
+	struct Unknown ChangedEndPos; // 0x18 (8)
+	struct Unknown IgnoreAreaPos; // 0x20 (8)
+	float IgnoreAreaRadius; // 0x28 (4)
+};
+
+// ScriptStruct BravoHotelGame.AirCraftBoardingInfo
+struct FAirCraftBoardingInfo {
+	char IsDescent : 0; // 0x0 (1)
+	char IsMyTeam : 0; // 0x1 (1)
+	int32_t PlayerUniqueID; // 0x4 (4)
+	char AirCraftID; // 0x8 (1)
+	char SeatID; // 0x9 (1)
+};
+
+// ScriptStruct BravoHotelGame.KillAliveInfo
+struct FKillAliveInfo {
+	char Visibility : 0; // 0x0 (1)
+	int32_t KillCount; // 0x4 (4)
+	int32_t AssistCount; // 0x8 (4)
+	int32_t AliveCount; // 0xC (4)
+	int32_t AliveTeamCount; // 0x10 (4)
+};
+
+// ScriptStruct BravoHotelGame.ConditionedSound
+struct FConditionedSound {
+	int32_t ConditionMask; // 0x0 (4)
+	struct Unknown Event; // 0x8 (8)
+};
+
+// ScriptStruct BravoHotelGame.AttachedUsableItem_ScalarParamData
+struct FAttachedUsableItem_ScalarParamData {
+	struct FName Key; // 0x0 (8)
+	float BeginValue; // 0x8 (4)
+	float EndValue; // 0xC (4)
+};
+
+// ScriptStruct BravoHotelGame.AudioEventAssetData
+struct FAudioEventAssetData {
+	char bLoadAsync : 0; // 0x0 (1)
+	char bPrepareAsset : 0; // 0x0 (1)
+	char bCleanUpPreparedAsset : 0; // 0x0 (1)
+	char bUnloadFromWwise : 0; // 0x0 (1)
+};
+
+// ScriptStruct BravoHotelGame.AudioGeometryData
+struct FAudioGeometryData : FAkGeometryData {
+	struct TArray<Unknown> WorldVertices; // 0x50 (16)
+};
+
+// ScriptStruct BravoHotelGame.CameraMoveData
+struct FCameraMoveData {
+	struct Unknown InCurve; // 0x18 (8)
+	struct Unknown InHeightCurve; // 0x20 (8)
+	struct Unknown SecondCurve; // 0x38 (8)
+	struct Unknown SecondHeightCurve; // 0x40 (8)
+	struct Unknown OutCurve; // 0x58 (8)
+	struct Unknown CurveFPP; // 0x60 (8)
+};
+
+// ScriptStruct BravoHotelGame.ReplicationMoveParameter
+struct FReplicationMoveParameter {
+	float SignificanceTickInterval; // 0x0 (4)
+	int32_t DynamicFrequency; // 0x4 (4)
+};
+
+// ScriptStruct BravoHotelGame.Coh_LocalizationTable
+struct FCoh_LocalizationTable {
+	struct TArray<Unknown> Tbl; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.Coh_LocalizationString
+struct FCoh_LocalizationString {
+	struct FString Key; // 0x0 (16)
+	struct FText SourceString; // 0x10 (24)
+};
+
+// ScriptStruct BravoHotelGame.ResuscitationMarkerInfo
+struct FResuscitationMarkerInfo {
+	struct Unknown Pos; // 0x0 (8)
+	struct Unknown PrePos; // 0x8 (8)
+	struct Unknown Widget; // 0x10 (8)
+	struct Unknown PlayerState; // 0x18 (8)
+};
+
+// ScriptStruct BravoHotelGame.LocalPingMarkerInfo
+struct FLocalPingMarkerInfo {
+	struct Unknown Pos; // 0x0 (8)
+	struct Unknown PrePos; // 0x8 (8)
+	struct Unknown Widget; // 0x10 (8)
+	struct Unknown PingInfo; // 0x18 (48)
+};
+
+// ScriptStruct BravoHotelGame.ExpertWeaponItemMarkerInfo
+struct FExpertWeaponItemMarkerInfo {
+	struct Unknown Pos; // 0x0 (8)
+	struct Unknown PrePos; // 0x8 (8)
+	struct Unknown Widget; // 0x10 (8)
+	struct Unknown PingInfo; // 0x18 (40)
+};
+
+// ScriptStruct BravoHotelGame.MaterialItemMarkerInfo
+struct FMaterialItemMarkerInfo {
+	struct Unknown Pos; // 0x0 (8)
+	struct Unknown PrePos; // 0x8 (8)
+	struct Unknown Widget; // 0x10 (8)
+	struct Unknown PingInfo; // 0x18 (48)
+};
+
+// ScriptStruct BravoHotelGame.MarkerInfo
+struct FMarkerInfo {
+	char PreVisibility : 0; // 0x0 (1)
+	char Visibility : 0; // 0x1 (1)
+	struct Unknown Pos; // 0x4 (8)
+	struct Unknown PrePos; // 0xC (8)
+	int32_t IconIdx; // 0x14 (4)
+	struct Unknown Widget; // 0x18 (8)
+	struct Unknown PlayerState; // 0x20 (8)
+};
+
+// ScriptStruct BravoHotelGame.CompassUnit
+struct FCompassUnit {
+	struct Unknown Widget; // 0x0 (8)
+	float Angle; // 0x8 (4)
+};
+
+// ScriptStruct BravoHotelGame.CrosshairDataMap
+struct FCrosshairDataMap {
+	struct TMap<Unknown, Unknown>Unknown Map; // 0x0 (80)
+};
+
+// ScriptStruct BravoHotelGame.CrosshairData
+struct FCrosshairData {
+	struct Unknown Texture; // 0x0 (8)
+	struct Unknown BasePosition; // 0x8 (8)
+	struct Unknown BaseSize; // 0x10 (8)
+	struct Unknown BeginUV; // 0x18 (8)
+	struct Unknown EndUV; // 0x20 (8)
+	struct Unknown TintColor; // 0x28 (16)
+	float SpreadScaleFactor; // 0x38 (4)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelWardrobeDataType
+struct FBravoHotelWardrobeDataType {
+	struct FName ItemRowName; // 0x0 (8)
+	struct TSoftObjectPtr<Unknown> ItemIconTexture; // 0x8 (40)
+	struct FText ItemName; // 0x30 (24)
+	enum class Unknow WearableType; // 0x48 (1)
+};
+
+// ScriptStruct BravoHotelGame.DataInfo
+struct FDataInfo {
+	struct Unknown CurrentGameInfo; // 0x0 (136)
+	struct TMap<Unknown, Unknown>Unknown CurrentCharacterInfos; // 0x88 (80)
+	struct TMap<Unknown, Unknown>Unknown CurrentPlayerInfos; // 0xD8 (80)
+	struct TMap<Unknown, Unknown>Unknown ItemSpawnInfos; // 0x128 (80)
+	struct TMap<Unknown, Unknown>Unknown GamePlayerInfo; // 0x178 (80)
+	struct TArray<Unknown> GamePlayerMatchingRPInfos; // 0x1C8 (16)
+	struct TArray<Unknown> BlueZoneEvents; // 0x1D8 (16)
+	struct TArray<Unknown> RedZoneEvents; // 0x1E8 (16)
+	struct TArray<Unknown> TransportEvents; // 0x1F8 (16)
+	struct TArray<Unknown> SupplyEvents; // 0x208 (16)
+};
+
+// ScriptStruct BravoHotelGame.GamePlayerMatchingRPInfo
+struct FGamePlayerMatchingRPInfo {
+	struct FString UserID; // 0x0 (16)
+	struct FString NickName; // 0x10 (16)
+	int32_t Rating; // 0x20 (4)
+	struct FString Training; // 0x28 (16)
+	struct FString TeamID; // 0x38 (16)
+	int32_t TeamRating; // 0x48 (4)
+	struct FString PartyID; // 0x50 (16)
+	int32_t PartyRating; // 0x60 (4)
+};
+
+// ScriptStruct BravoHotelGame.GamePlayerInfo
+struct FGamePlayerInfo {
+	struct Unknown GamePlayerInfo; // 0x0 (640)
+	struct TMap<Unknown, Unknown>Unknown TempWeapon; // 0x280 (80)
+	struct TMap<Unknown, Unknown>Unknown TempDamageType; // 0x2D0 (80)
+};
+
+// ScriptStruct BravoHotelGame.DamageInfoByDamageTypeInfo
+struct FDamageInfoByDamageTypeInfo {
+	int32_t damage_type_index; // 0x0 (4)
+	char is_class_skill : 0; // 0x4 (1)
+	int32_t kill_count; // 0x8 (4)
+	int32_t Damage; // 0xC (4)
+};
+
+// ScriptStruct BravoHotelGame.DamageInfoByWeaponInfo
+struct FDamageInfoByWeaponInfo {
+	int32_t base_weapon_index; // 0x0 (4)
+	int32_t shot_count; // 0x4 (4)
+	int32_t hitshot_count; // 0x8 (4)
+	int32_t headshot_count; // 0xC (4)
+	int32_t kill_count; // 0x10 (4)
+	int32_t Damage; // 0x14 (4)
+	int32_t far_distance; // 0x18 (4)
+};
+
+// ScriptStruct BravoHotelGame.GamePlayRecord
+struct FGamePlayRecord {
+	struct FString UserID; // 0x0 (16)
+	struct FString NickName; // 0x10 (16)
+	char bIsAI : 0; // 0x20 (1)
+	struct Unknown play_record_info; // 0x28 (600)
+};
+
+// ScriptStruct BravoHotelGame.PlayRecordInfo
+struct FPlayRecordInfo {
+	int32_t game_view_type; // 0x0 (4)
+	int32_t battle_mode; // 0x4 (4)
+	int32_t game_mode; // 0x8 (4)
+	struct FString m; // 0x10 (16)
+	int64_t start_time; // 0x20 (8)
+	int32_t reconnected_count; // 0x28 (4)
+	struct Unknown class_info; // 0x30 (40)
+	struct Unknown gold_info; // 0x58 (44)
+	struct Unknown m; // 0x84 (52)
+	struct Unknown battle_royal_info; // 0xB8 (36)
+	struct Unknown damage_info; // 0xE0 (32)
+	struct Unknown shot_info; // 0x100 (16)
+	struct Unknown weapon_durability_info; // 0x110 (48)
+	struct Unknown vehicle_info; // 0x140 (16)
+	struct Unknown flying_info; // 0x150 (52)
+	struct Unknown Equipment_info; // 0x188 (192)
+	struct FString extra_data; // 0x248 (16)
+};
+
+// ScriptStruct BravoHotelGame.Equipment_info
+struct FEquipment_info {
+	int32_t weapon_slot1_id; // 0x0 (4)
+	struct FString weapon_slot1_name; // 0x8 (16)
+	int32_t weapon_slot2_id; // 0x18 (4)
+	struct FString weapon_slot2_name; // 0x20 (16)
+	int32_t weapon_slot3_id; // 0x30 (4)
+	struct FString weapon_slot3_name; // 0x38 (16)
+	int32_t weapon_slot4_id; // 0x48 (4)
+	struct FString weapon_slot4_name; // 0x50 (16)
+	int32_t weapon_slot5_id; // 0x60 (4)
+	struct FString weapon_slot5_name; // 0x68 (16)
+	int32_t helmet_id; // 0x78 (4)
+	struct FString helmet_name; // 0x80 (16)
+	int32_t armor_id; // 0x90 (4)
+	struct FString armor_name; // 0x98 (16)
+	int32_t bag_id; // 0xA8 (4)
+	struct FString bag_name; // 0xB0 (16)
+};
+
+// ScriptStruct BravoHotelGame.FlyingInfo
+struct FFlyingInfo {
+	int32_t diving_time; // 0x0 (4)
+	int32_t diving_location_loc_x; // 0x4 (4)
+	int32_t diving_location_loc_y; // 0x8 (4)
+	int32_t diving_location_loc_z; // 0xC (4)
+	int32_t parachute_time; // 0x10 (4)
+	int32_t parachute_loc_x; // 0x14 (4)
+	int32_t parachute_loc_y; // 0x18 (4)
+	int32_t parachute_loc_z; // 0x1C (4)
+	int32_t landing_time; // 0x20 (4)
+	int32_t landing_loc_x; // 0x24 (4)
+	int32_t landing_loc_y; // 0x28 (4)
+	int32_t landing_loc_z; // 0x2C (4)
+	int32_t flying_distance; // 0x30 (4)
+};
+
+// ScriptStruct BravoHotelGame.VehicleInfo
+struct FVehicleInfo {
+	int32_t explosion_count; // 0x0 (4)
+	int32_t destroy_tire_count; // 0x4 (4)
+	int32_t total_damage; // 0x8 (4)
+	int32_t road_kill_count; // 0xC (4)
+};
+
+// ScriptStruct BravoHotelGame.WeaponDurabilityInfo
+struct FWeaponDurabilityInfo {
+	struct FString item_uid; // 0x0 (16)
+	int32_t item_id; // 0x10 (4)
+	struct FString item_name; // 0x18 (16)
+	int32_t before_durability; // 0x28 (4)
+	int32_t after_durability; // 0x2C (4)
+};
+
+// ScriptStruct BravoHotelGame.ShotInfo
+struct FShotInfo {
+	int32_t headshot_count; // 0x0 (4)
+	int32_t headshot_kill_count; // 0x4 (4)
+	int32_t hitshot_count; // 0x8 (4)
+	int32_t all_shot_count; // 0xC (4)
+};
+
+// ScriptStruct BravoHotelGame.DamageInfos
+struct FDamageInfos {
+	struct TArray<Unknown> by_weapon; // 0x0 (16)
+	struct TArray<Unknown> by_damage_type; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.BattelRoyalInfo
+struct FBattelRoyalInfo {
+	int32_t live_time; // 0x0 (4)
+	int32_t total_move_distance; // 0x4 (4)
+	int32_t open_invisible_drop_box_count; // 0x8 (4)
+	int32_t open_air_drop_box_count; // 0xC (4)
+	int32_t destory_supply_helicopter_count; // 0x10 (4)
+	float heal_amount; // 0x14 (4)
+	int32_t boost_amount; // 0x18 (4)
+	int32_t air_walk_distance; // 0x1C (4)
+	int32_t m; // 0x20 (4)
+};
+
+// ScriptStruct BravoHotelGame.MatchResultInfo
+struct FMatchResultInfo {
+	int32_t rp; // 0x0 (4)
+	int32_t Rank; // 0x4 (4)
+	int32_t team_count; // 0x8 (4)
+	char is_top_rank : 0; // 0xC (1)
+	int32_t kill_count; // 0x10 (4)
+	int32_t ai_kill_count; // 0x14 (4)
+	int32_t death; // 0x18 (4)
+	int32_t sequence_kill; // 0x1C (4)
+	int32_t team_alive_count; // 0x20 (4)
+	int32_t team_kill_count; // 0x24 (4)
+	int32_t assist_count; // 0x28 (4)
+	int32_t total_damage; // 0x2C (4)
+	int32_t loser_score; // 0x30 (4)
+};
+
+// ScriptStruct BravoHotelGame.GoldInfo
+struct FGoldInfo {
+	int32_t account_gold_game_start; // 0x0 (4)
+	int32_t account_gold_game_end; // 0x4 (4)
+	struct Unknown gain_gold_info; // 0x8 (12)
+	struct Unknown use_gold_info; // 0x14 (24)
+};
+
+// ScriptStruct BravoHotelGame.UseGold
+struct FUseGold {
+	int32_t paid_coin_gold; // 0x0 (4)
+	int32_t paid_account_gold; // 0x4 (4)
+	int32_t class_changed_gold; // 0x8 (4)
+	int32_t supplybox_opened_gold; // 0xC (4)
+	int32_t request_resuscitated_gold; // 0x10 (4)
+	int32_t resuscitated_gold; // 0x14 (4)
+};
+
+// ScriptStruct BravoHotelGame.GainGold
+struct FGainGold {
+	int32_t farming_gold; // 0x0 (4)
+	int32_t random_bonus_gold; // 0x4 (4)
+	int32_t remain_coin_gold; // 0x8 (4)
+};
+
+// ScriptStruct BravoHotelGame.ClassInfo
+struct FClassInfo {
+	uint32_t pc_class_type_index; // 0x0 (4)
+	uint32_t base_weapon_index; // 0x4 (4)
+	struct TArray<Unknown> ignore_pc_class_type_indexs; // 0x8 (16)
+	char is_get_ultimate_skill : 0; // 0x18 (1)
+	int32_t Level; // 0x1C (4)
+	int32_t level_up_by_book; // 0x20 (4)
+};
+
+// ScriptStruct BravoHotelGame.KickedUserInfoMap
+struct FKickedUserInfoMap {
+	struct TMap<Unknown, Unknown>Unknown UserAndReason; // 0x0 (80)
+};
+
+// ScriptStruct BravoHotelGame.DebugRecordInfo
+struct FDebugRecordInfo {
+	struct Unknown ItemData; // 0x0 (232)
+	struct TMap<Unknown, Unknown>Unknown PersonalSupplyBoxDebugList; // 0xE8 (80)
+	struct TMap<Unknown, Unknown>Unknown VehicleDebugList; // 0x138 (80)
+};
+
+// ScriptStruct BravoHotelGame.VehicleSpawnDebugDataList
+struct FVehicleSpawnDebugDataList {
+	struct TArray<Unknown> List; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.VehicleSpawnDebugData
+struct FVehicleSpawnDebugData {
+	struct Unknown SpawnedLoaction; // 0x0 (12)
+	struct FString ParentVehicleActorName; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.ItemDataInfo
+struct FItemDataInfo {
+	int32_t LastTotalSpawnedPickUpItemCount; // 0x0 (4)
+	struct TArray<Unknown> ItemSpawnStateList; // 0x8 (16)
+	struct TMap<Unknown, Unknown>Unknown ItemLogList; // 0x18 (80)
+	int32_t PickUpItemSpawnCount; // 0x68 (4)
+	int32_t TotalItemSpawnCount; // 0x6C (4)
+	int32_t MaxPickUpItemSpawnCount; // 0x70 (4)
+	char UnlimitItemSpawnCnt : 0; // 0x74 (1)
+	char ItemSpawnInBlueZone : 0; // 0x75 (1)
+	char UsingWorldItemSpawnTalbeInBlueZone : 0; // 0x76 (1)
+	char UsingMaxPickUpItemSpawnCount : 0; // 0x77 (1)
+	char UsingOuterBlueZone : 0; // 0x78 (1)
+	struct Unknown ItemSpawnDebugList; // 0x80 (104)
+};
+
+// ScriptStruct BravoHotelGame.ItemSpawnDebug
+struct FItemSpawnDebug {
+	struct FName WorldItemSpawnTableKey; // 0x0 (8)
+	struct Unknown OuterCenter; // 0x8 (8)
+	float OuterRadius; // 0x10 (4)
+	struct TMap<Unknown, Unknown>Unknown BuildingItemList; // 0x18 (80)
+};
+
+// ScriptStruct BravoHotelGame.ItemDebugInfo
+struct FItemDebugInfo {
+	struct Unknown BuuildingLocation; // 0x0 (12)
+	struct TMap<Unknown, Unknown>Unknown StandardGroupData; // 0x10 (80)
+};
+
+// ScriptStruct BravoHotelGame.BuildingDebug
+struct FBuildingDebug {
+	struct FName StandardGroupKey; // 0x0 (8)
+	struct TMap<Unknown, Unknown>Unknown ItemDivisionDebugList; // 0x8 (80)
+};
+
+// ScriptStruct BravoHotelGame.ItemDivisionDebugList
+struct FItemDivisionDebugList {
+	struct TArray<Unknown> List; // 0x0 (16)
+	struct TArray<Unknown> RateAddList; // 0x10 (16)
+	struct TArray<Unknown> RateRemoveList; // 0x20 (16)
+};
+
+// ScriptStruct BravoHotelGame.ItemDivisionDebug
+struct FItemDivisionDebug {
+	struct FName ItemName; // 0x0 (8)
+	int32_t DivisionCnt; // 0x8 (4)
+	int32_t SpawnCnt; // 0xC (4)
+	char CompleteDivision : 0; // 0x10 (1)
+	char CompleteSpawed : 0; // 0x11 (1)
+};
+
+// ScriptStruct BravoHotelGame.ItemCountInfo
+struct FItemCountInfo {
+	int32_t Division; // 0x0 (4)
+	int32_t RateDivision; // 0x4 (4)
+	int32_t RateDelete; // 0x8 (4)
+	int32_t Spawned; // 0xC (4)
+	int32_t Gained; // 0x10 (4)
+	int32_t TrySpawnPickUpCount; // 0x14 (4)
+	int32_t PickUpCount; // 0x18 (4)
+};
+
+// ScriptStruct BravoHotelGame.ItemSpawnState
+struct FItemSpawnState {
+	int32_t CurAliveUserCnt; // 0x0 (4)
+	int32_t MaxLimitSpawnCnt; // 0x4 (4)
+	int32_t EnableCurMaxSpawnCnt; // 0x8 (4)
+	int32_t CurSpawnedCnt; // 0xC (4)
+	int32_t TotalSpawnedCntFromBox; // 0x10 (4)
+};
+
+// ScriptStruct BravoHotelGame.ExtraDebugInfo
+struct FExtraDebugInfo {
+	struct Unknown ItemBox; // 0x0 (8)
+	struct FName RandomSpawnKey; // 0x8 (8)
+};
+
+// ScriptStruct BravoHotelGame.ItemDebugDetailInfo
+struct FItemDebugDetailInfo {
+	struct FString ItemName; // 0x0 (16)
+	int32_t Count; // 0x10 (4)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientPackageLoadingFailure
+struct FAnalysisClientPackageLoadingFailure {
+	struct FString reason; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameTechReportData
+struct FAnalysisClientGameTechReportData {
+	struct Unknown pc_data; // 0x0 (136)
+	struct Unknown fps_data; // 0x88 (80)
+	struct Unknown loading_data; // 0xD8 (12)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameLoadingData
+struct FAnalysisClientGameLoadingData {
+	char game_start : 0; // 0x0 (1)
+	int32_t loading_seconds; // 0x4 (4)
+	int32_t relative_loading_seconds; // 0x8 (4)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameTrackFPSData
+struct FAnalysisClientGameTrackFPSData {
+	struct FString start_record_time; // 0x0 (16)
+	struct FString stop_record_time; // 0x10 (16)
+	float avg_fps; // 0x20 (4)
+	float m; // 0x24 (4)
+	float m; // 0x28 (4)
+	float standard_deviation_fps; // 0x2C (4)
+	int32_t hitch_count; // 0x30 (4)
+	float under50_fps_percent; // 0x34 (4)
+	float inter50_60_fps_percent; // 0x38 (4)
+	float inter60_70_fps_percent; // 0x3C (4)
+	float inter70_80_fps_percent; // 0x40 (4)
+	float inter80_90_fps_percent; // 0x44 (4)
+	float over90_fps_percent; // 0x48 (4)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGamePCData
+struct FAnalysisClientGamePCData {
+	struct FString os_name; // 0x0 (16)
+	struct FString cpu_name; // 0x10 (16)
+	struct FString gpu_name; // 0x20 (16)
+	struct FString m; // 0x30 (16)
+	struct FString install_storage_type; // 0x40 (16)
+	float game_view_width; // 0x50 (4)
+	float game_view_height; // 0x54 (4)
+	uint64_t total_physical_memory; // 0x58 (8)
+	uint64_t used_physical_memory; // 0x60 (8)
+	uint64_t total_virtual_memory; // 0x68 (8)
+	uint64_t used_virtual_memory; // 0x70 (8)
+	int32_t texture_quality; // 0x78 (4)
+	int32_t view_distance_quality; // 0x7C (4)
+	float avg_graphics_quality; // 0x80 (4)
+	char is_blacklisted_graphics_driver : 0; // 0x84 (1)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameEarlyTechReportData
+struct FAnalysisClientGameEarlyTechReportData {
+	struct Unknown pc_data; // 0x0 (136)
+	struct Unknown fps_data; // 0x88 (80)
+	struct Unknown loading_data; // 0xD8 (12)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameNetwork
+struct FAnalysisClientGameNetwork {
+	int32_t spectated; // 0x0 (4)
+	int32_t avg_ping; // 0x4 (4)
+	int32_t m; // 0x8 (4)
+	int32_t m; // 0xC (4)
+	int32_t received_pkt_bytesec; // 0x10 (4)
+	int32_t received_num_pkt; // 0x14 (4)
+	int32_t received_loss_ratio; // 0x18 (4)
+	int32_t sended_pkt_bytesec; // 0x1C (4)
+	int32_t sended_num_pkt; // 0x20 (4)
+	int32_t sended_loss_ratio; // 0x24 (4)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameEscapeData
+struct FAnalysisClientGameEscapeData {
+	struct FString m; // 0x0 (16)
+	struct FString escape_time; // 0x10 (16)
+	int32_t escape_state; // 0x20 (4)
+	int32_t survive_state; // 0x24 (4)
+	int32_t spectated; // 0x28 (4)
+	int32_t spectator_time; // 0x2C (4)
+	int32_t reported; // 0x30 (4)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameExitData
+struct FAnalysisClientGameExitData {
+	int32_t exit_type; // 0x0 (4)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameStartData
+struct FAnalysisClientGameStartData {
+	struct FString m; // 0x0 (16)
+	struct FString game_start_time; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.ReplayReportInfo
+struct FReplayReportInfo {
+	struct FString reporter_nickname; // 0x0 (16)
+	struct FString victim_nickname; // 0x10 (16)
+	struct FString suspect_nickname; // 0x20 (16)
+	int32_t report_type; // 0x30 (4)
+	int32_t replay_time; // 0x34 (4)
+};
+
+// ScriptStruct BravoHotelGame.WeaponItemLogData
+struct FWeaponItemLogData {
+	struct FString MaxItemID; // 0x0 (16)
+	int32_t MaxItemDamageValue; // 0x10 (4)
+	int32_t MaxItemDamageCount; // 0x14 (4)
+	int32_t MaxItemHeadShotCount; // 0x18 (4)
+	float MaxItemDistance; // 0x1C (4)
+};
+
+// ScriptStruct BravoHotelGame.ReportVictimLogData
+struct FReportVictimLogData {
+	struct Unknown* DamageTypeClass; // 0x0 (8)
+	struct FString HitBone; // 0x8 (16)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameReporterDataHead
+struct FAnalysisClientGameReporterDataHead {
+	int32_t DateTime; // 0x0 (4)
+	struct FString m; // 0x8 (16)
+	struct FString game_server_id; // 0x18 (16)
+	struct FString MapName; // 0x28 (16)
+	int32_t GameViewType; // 0x38 (4)
+	int32_t GameMode; // 0x3C (4)
+	int32_t BattleMode; // 0x40 (4)
+	struct FString cqr_type; // 0x48 (16)
+	int32_t bluezone_id; // 0x58 (4)
+	int32_t phase_info; // 0x5C (4)
+	int32_t current_survival_player; // 0x60 (4)
+	int32_t current_survival_team; // 0x64 (4)
+	int32_t team_id; // 0x68 (4)
+	int32_t team_cnt; // 0x6C (4)
+	int32_t current_rank; // 0x70 (4)
+	struct FString UserID; // 0x78 (16)
+	struct FString NickName; // 0x88 (16)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientHeartBeatData
+struct FAnalysisClientHeartBeatData {
+	struct TArray<Unknown> skill_perk_id; // 0x0 (16)
+	struct Unknown primary_weapon_info; // 0x10 (72)
+	struct Unknown secondary_weapon_info; // 0x58 (72)
+	int32_t pistol_id; // 0xA0 (4)
+	int32_t helmet_id; // 0xA4 (4)
+	int32_t armor_id; // 0xA8 (4)
+	int32_t bag_id; // 0xAC (4)
+	struct FString State; // 0xB0 (16)
+	struct FString pose; // 0xC0 (16)
+	struct FString Direction; // 0xD0 (16)
+	int32_t Speed; // 0xE0 (4)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameWeaponData
+struct FAnalysisClientGameWeaponData {
+	int32_t item_id; // 0x0 (4)
+	struct FString item_name; // 0x8 (16)
+	char is_expert_weapon : 0; // 0x18 (1)
+	int32_t grade; // 0x1C (4)
+	int32_t enchant; // 0x20 (4)
+	int32_t perk_id_2; // 0x24 (4)
+	int32_t perk_id_3; // 0x28 (4)
+	int32_t perk_id_4; // 0x2C (4)
+	int32_t perk_id_5; // 0x30 (4)
+	struct Unknown parts_id; // 0x34 (20)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientActiv
+struct FAnalysisClientActiv {
+	struct TArray<Unknown> skill_perk_id; // 0x0 (16)
+	int32_t perk_id; // 0x10 (4)
+	struct FString perk_name; // 0x18 (16)
+	int32_t start_loc_x; // 0x28 (4)
+	int32_t start_loc_y; // 0x2C (4)
+	int32_t start_loc_z; // 0x30 (4)
+	int32_t end_loc_x; // 0x34 (4)
+	int32_t end_loc_y; // 0x38 (4)
+	int32_t end_loc_z; // 0x3C (4)
+	int32_t apply_user_cnt; // 0x40 (4)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientReactSkillData
+struct FAnalysisClientReactSkillData {
+	struct TArray<Unknown> skill_perk_id; // 0x0 (16)
+	int32_t perk_id; // 0x10 (4)
+	struct FString perk_name; // 0x18 (16)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientSupplyBoxChangeData
+struct FAnalysisClientSupplyBoxChangeData {
+	int32_t current_gold; // 0x0 (4)
+	int32_t setting_gold; // 0x4 (4)
+	struct Unknown supply_item_info; // 0x8 (80)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientSupplyItemInfoData
+struct FAnalysisClientSupplyItemInfoData {
+	struct FString slot1_item_id; // 0x0 (16)
+	struct FString slot2_item_id; // 0x10 (16)
+	struct FString slot3_item_id; // 0x20 (16)
+	struct FString slot4_item_id; // 0x30 (16)
+	struct FString slot5_item_id; // 0x40 (16)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientSupplyBoxOpenData
+struct FAnalysisClientSupplyBoxOpenData {
+	int32_t open_time; // 0x0 (4)
+	int32_t used_gold; // 0x4 (4)
+	int32_t remain_gold; // 0x8 (4)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientClassChangeData
+struct FAnalysisClientClassChangeData {
+	int32_t use_gold; // 0x0 (4)
+	int32_t after_gold; // 0x4 (4)
+	int32_t before_class; // 0x8 (4)
+	int32_t change_class; // 0xC (4)
+	int32_t class_select_mode; // 0x10 (4)
+	int32_t class_select_type; // 0x14 (4)
+	char is_recommended_select : 0; // 0x18 (1)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameVehicleSeatData
+struct FAnalysisClientGameVehicleSeatData {
+	int32_t targetseat_index; // 0x0 (4)
+	int32_t preseat_index; // 0x4 (4)
+	int32_t driving_time; // 0x8 (4)
+	int32_t driving_distance; // 0xC (4)
+	struct Unknown vehicle_info; // 0x10 (176)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameVehicleData
+struct FAnalysisClientGameVehicleData {
+	int32_t loc_x; // 0x0 (4)
+	int32_t loc_y; // 0x4 (4)
+	int32_t loc_z; // 0x8 (4)
+	struct FString vehicle_name; // 0x10 (16)
+	struct FString vehicle_uid; // 0x20 (16)
+	int32_t hp; // 0x30 (4)
+	int32_t Fuel; // 0x34 (4)
+	int32_t tire1_hp; // 0x38 (4)
+	int32_t tire2_hp; // 0x3C (4)
+	int32_t tire3_hp; // 0x40 (4)
+	int32_t tire4_hp; // 0x44 (4)
+	int32_t Speed; // 0x48 (4)
+	struct FString seat1_uid; // 0x50 (16)
+	struct FString seat2_uid; // 0x60 (16)
+	struct FString seat3_uid; // 0x70 (16)
+	struct FString seat4_uid; // 0x80 (16)
+	struct FString seat5_uid; // 0x90 (16)
+	struct FString seat6_uid; // 0xA0 (16)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameVehicleBattleData
+struct FAnalysisClientGameVehicleBattleData {
+	struct FString damage_type; // 0x0 (16)
+	int32_t damage_type_index; // 0x10 (4)
+	int32_t damage_weapon_id; // 0x14 (4)
+	struct FString damage_weapon_name; // 0x18 (16)
+	struct FString hit_bone; // 0x28 (16)
+	int32_t Damage; // 0x38 (4)
+	int32_t Distance; // 0x3C (4)
+	struct Unknown attacker_info; // 0x40 (208)
+	struct Unknown vehicle_info; // 0x110 (176)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameCharacterData
+struct FAnalysisClientGameCharacterData {
+	char bIsAI : 0; // 0x0 (1)
+	int32_t loc_x; // 0x4 (4)
+	int32_t loc_y; // 0x8 (4)
+	int32_t loc_z; // 0xC (4)
+	struct FString UserID; // 0x10 (16)
+	struct FString NickName; // 0x20 (16)
+	int32_t ClassIndex; // 0x30 (4)
+	int32_t Level; // 0x34 (4)
+	int32_t m; // 0x38 (4)
+	int32_t current_hp; // 0x3C (4)
+	struct TArray<Unknown> skill_perk_id; // 0x40 (16)
+	struct Unknown current_weapon; // 0x50 (72)
+	struct FString equip_helmet; // 0x98 (16)
+	int32_t helmet_durability; // 0xA8 (4)
+	struct FString equip_armour; // 0xB0 (16)
+	int32_t armour_durability; // 0xC0 (4)
+	int32_t fire_type; // 0xC4 (4)
+	int32_t zoom_type; // 0xC8 (4)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameGoldenTimeRevivalData
+struct FAnalysisClientGameGoldenTimeRevivalData {
+	int32_t revived_time; // 0x0 (4)
+	int32_t gold_request; // 0x4 (4)
+	struct Unknown savior_info; // 0x8 (64)
+	struct Unknown revived_info; // 0x48 (64)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameGoldenTimeRevivalCharacterData
+struct FAnalysisClientGameGoldenTimeRevivalCharacterData {
+	int32_t loc_x; // 0x0 (4)
+	int32_t loc_y; // 0x4 (4)
+	int32_t loc_z; // 0x8 (4)
+	struct FString UserID; // 0x10 (16)
+	struct FString NickName; // 0x20 (16)
+	int32_t ClassIndex; // 0x30 (4)
+	int32_t Level; // 0x34 (4)
+	int32_t use_gold; // 0x38 (4)
+	int32_t remain_gold; // 0x3C (4)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameRevivalData
+struct FAnalysisClientGameRevivalData {
+	int32_t revived_time; // 0x0 (4)
+	struct Unknown savior_info; // 0x8 (56)
+	struct Unknown revived_info; // 0x40 (56)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameRevivalCharac
+struct FAnalysisClientGameRevivalCharac {
+	int32_t loc_x; // 0x0 (4)
+	int32_t loc_y; // 0x4 (4)
+	int32_t loc_z; // 0x8 (4)
+	struct FString UserID; // 0x10 (16)
+	struct FString NickName; // 0x20 (16)
+	int32_t ClassIndex; // 0x30 (4)
+	int32_t Level; // 0x34 (4)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameDiedDeathData
+struct FAnalysisClientGameDiedDeathData {
+	struct FString damage_type; // 0x0 (16)
+	int32_t damage_type_index; // 0x10 (4)
+	int32_t damage_weapon_id; // 0x14 (4)
+	struct FString damage_weapon_name; // 0x18 (16)
+	struct FString hit_bone; // 0x28 (16)
+	int32_t Damage; // 0x38 (4)
+	int32_t Distance; // 0x3C (4)
+	int32_t team_kill; // 0x40 (4)
+	struct Unknown knockdown_attacker_info; // 0x48 (208)
+	struct Unknown killer_info; // 0x118 (208)
+	struct Unknown attacker_info; // 0x1E8 (208)
+	struct Unknown victim_info; // 0x2B8 (152)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameDiedVictimCharacterMiniData
+struct FAnalysisClientGameDiedVictimCharacterMiniData {
+	char bIsAI : 0; // 0x0 (1)
+	int32_t knockdowned; // 0x4 (4)
+	struct TArray<Unknown> skill_perk_id; // 0x8 (16)
+	struct Unknown current_weapon; // 0x18 (72)
+	struct FString equip_helmet; // 0x60 (16)
+	int32_t helmet_durability; // 0x70 (4)
+	struct FString equip_armour; // 0x78 (16)
+	int32_t armour_durability; // 0x88 (4)
+	int32_t fire_type; // 0x8C (4)
+	int32_t zoom_type; // 0x90 (4)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameDiedKillData
+struct FAnalysisClientGameDiedKillData {
+	struct FString damage_type; // 0x0 (16)
+	int32_t damage_type_index; // 0x10 (4)
+	int32_t damage_weapon_id; // 0x14 (4)
+	struct FString damage_weapon_name; // 0x18 (16)
+	struct FString hit_bone; // 0x28 (16)
+	int32_t Damage; // 0x38 (4)
+	int32_t Distance; // 0x3C (4)
+	int32_t team_kill; // 0x40 (4)
+	struct Unknown knockdown_attacker_info; // 0x48 (208)
+	struct Unknown killer_info; // 0x118 (208)
+	struct Unknown attacker_info; // 0x1E8 (152)
+	struct Unknown victim_info; // 0x280 (216)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameDiedVictimCharacterData
+struct FAnalysisClientGameDiedVictimCharacterData {
+	char bIsAI : 0; // 0x0 (1)
+	int32_t loc_x; // 0x4 (4)
+	int32_t loc_y; // 0x8 (4)
+	int32_t loc_z; // 0xC (4)
+	struct FString UserID; // 0x10 (16)
+	struct FString NickName; // 0x20 (16)
+	int32_t ClassIndex; // 0x30 (4)
+	int32_t Level; // 0x34 (4)
+	int32_t m; // 0x38 (4)
+	int32_t knockdowned; // 0x3C (4)
+	int32_t current_hp; // 0x40 (4)
+	struct TArray<Unknown> skill_perk_id; // 0x48 (16)
+	struct Unknown current_weapon; // 0x58 (72)
+	struct FString equip_helmet; // 0xA0 (16)
+	int32_t helmet_durability; // 0xB0 (4)
+	struct FString equip_armour; // 0xB8 (16)
+	int32_t armour_durability; // 0xC8 (4)
+	int32_t fire_type; // 0xCC (4)
+	int32_t zoom_type; // 0xD0 (4)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameCharacterMiniData
+struct FAnalysisClientGameCharacterMiniData {
+	char bIsAI : 0; // 0x0 (1)
+	struct TArray<Unknown> skill_perk_id; // 0x8 (16)
+	struct Unknown current_weapon; // 0x18 (72)
+	struct FString equip_helmet; // 0x60 (16)
+	int32_t helmet_durability; // 0x70 (4)
+	struct FString equip_armour; // 0x78 (16)
+	int32_t armour_durability; // 0x88 (4)
+	int32_t fire_type; // 0x8C (4)
+	int32_t zoom_type; // 0x90 (4)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameKnockDownedVictimData
+struct FAnalysisClientGameKnockDownedVictimData {
+	struct FString damage_type; // 0x0 (16)
+	int32_t damage_type_index; // 0x10 (4)
+	int32_t damage_weapon_id; // 0x14 (4)
+	struct FString damage_weapon_name; // 0x18 (16)
+	struct FString hit_bone; // 0x28 (16)
+	int32_t Damage; // 0x38 (4)
+	int32_t Distance; // 0x3C (4)
+	int32_t team_kill; // 0x40 (4)
+	struct Unknown attacker_info; // 0x48 (208)
+	struct Unknown victim_info; // 0x118 (152)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameKnockDownedAttackData
+struct FAnalysisClientGameKnockDownedAttackData {
+	struct FString damage_type; // 0x0 (16)
+	int32_t damage_type_index; // 0x10 (4)
+	int32_t damage_weapon_id; // 0x14 (4)
+	struct FString damage_weapon_name; // 0x18 (16)
+	struct FString hit_bone; // 0x28 (16)
+	int32_t Damage; // 0x38 (4)
+	int32_t Distance; // 0x3C (4)
+	int32_t team_kill; // 0x40 (4)
+	struct Unknown attacker_info; // 0x48 (152)
+	struct Unknown victim_info; // 0xE0 (208)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameBattleHitRateData
+struct FAnalysisClientGameBattleHitRateData {
+	struct TArray<Unknown> weapon_info; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameHitRateWeaponInfo
+struct FAnalysisClientGameHitRateWeaponInfo {
+	int32_t last_saved_time; // 0x0 (4)
+	int32_t item_id; // 0x4 (4)
+	struct FString item_name; // 0x8 (16)
+	int32_t shot_count; // 0x18 (4)
+	int32_t hitshot_count; // 0x1C (4)
+	int32_t headshot_count; // 0x20 (4)
+	int32_t kill_count; // 0x24 (4)
+	int32_t headshot_kill_count; // 0x28 (4)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameBattleVictimData
+struct FAnalysisClientGameBattleVictimData {
+	struct FString damage_type; // 0x0 (16)
+	int32_t damage_type_index; // 0x10 (4)
+	int32_t damage_weapon_id; // 0x14 (4)
+	struct FString damage_weapon_name; // 0x18 (16)
+	struct FString hit_bone; // 0x28 (16)
+	int32_t Damage; // 0x38 (4)
+	int32_t Distance; // 0x3C (4)
+	struct Unknown attacker_info; // 0x40 (208)
+	struct Unknown victim_info; // 0x110 (152)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameBattleAttackerData
+struct FAnalysisClientGameBattleAttackerData {
+	struct FString damage_type; // 0x0 (16)
+	int32_t damage_type_index; // 0x10 (4)
+	int32_t damage_weapon_id; // 0x14 (4)
+	struct FString damage_weapon_name; // 0x18 (16)
+	struct FString hit_bone; // 0x28 (16)
+	int32_t Damage; // 0x38 (4)
+	int32_t Distance; // 0x3C (4)
+	struct Unknown attacker_info; // 0x40 (152)
+	struct Unknown victim_info; // 0xD8 (208)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameThrowableUseData
+struct FAnalysisClientGameThrowableUseData {
+	int32_t item_id; // 0x0 (4)
+	struct FString item_name; // 0x8 (16)
+	int32_t item_count; // 0x18 (4)
+	struct TArray<Unknown> skill_perk_id; // 0x20 (16)
+	int32_t landing_distance; // 0x30 (4)
+	int32_t landing_loc_x; // 0x34 (4)
+	int32_t landing_loc_y; // 0x38 (4)
+	int32_t landing_loc_z; // 0x3C (4)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameIteractionData
+struct FAnalysisClientGameIteractionData {
+	struct FString Action; // 0x0 (16)
+	struct FString Target; // 0x10 (16)
+	int32_t loc_x; // 0x20 (4)
+	int32_t loc_y; // 0x24 (4)
+	int32_t loc_z; // 0x28 (4)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameItemWeaponData
+struct FAnalysisClientGameItemWeaponData {
+	int32_t loc_x; // 0x0 (4)
+	int32_t loc_y; // 0x4 (4)
+	int32_t loc_z; // 0x8 (4)
+	int32_t pickup_root; // 0xC (4)
+	int32_t slot_index; // 0x10 (4)
+	int32_t item_id; // 0x14 (4)
+	struct FString item_name; // 0x18 (16)
+	int32_t stack; // 0x28 (4)
+	int32_t Durability; // 0x2C (4)
+	struct Unknown Weapon; // 0x30 (72)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameItemData
+struct FAnalysisClientGameItemData {
+	int32_t loc_x; // 0x0 (4)
+	int32_t loc_y; // 0x4 (4)
+	int32_t loc_z; // 0x8 (4)
+	int32_t pickup_root; // 0xC (4)
+	int32_t slot_index; // 0x10 (4)
+	int32_t item_id; // 0x14 (4)
+	struct FString item_name; // 0x18 (16)
+	int32_t stack; // 0x28 (4)
+	int32_t Durability; // 0x2C (4)
+	int32_t item_type; // 0x30 (4)
+	int32_t WearableItemType; // 0x34 (4)
+	int32_t WeaponAttachmentType; // 0x38 (4)
+	int32_t current_weight; // 0x3C (4)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameItemCombineData
+struct FAnalysisClientGameItemCombineData {
+	struct TArray<Unknown> source_item_list; // 0x0 (16)
+	int32_t result_item_id; // 0x10 (4)
+	struct FString result_item_name; // 0x18 (16)
+};
+
+// ScriptStruct BravoHotelGame.CombineSourceItem
+struct FCombineSourceItem {
+	int32_t source_item_id; // 0x0 (4)
+	int32_t source_item_count; // 0x4 (4)
+	struct FString source_item_name; // 0x8 (16)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameItemSearchData
+struct FAnalysisClientGameItemSearchData {
+	int32_t search_type; // 0x0 (4)
+	int32_t select_item_id; // 0x4 (4)
+	struct TArray<Unknown> find_recipe_list; // 0x8 (16)
+};
+
+// ScriptStruct BravoHotelGame.ItemSearchLog
+struct FItemSearchLog {
+	int32_t item_id; // 0x0 (4)
+	struct Unknown Location; // 0x4 (12)
+};
+
+// ScriptStruct BravoHotelGame.IntLocation
+struct FIntLocation {
+	int32_t loc_x; // 0x0 (4)
+	int32_t loc_y; // 0x4 (4)
+	int32_t loc_z; // 0x8 (4)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameEnegyBarItemUseData
+struct FAnalysisClientGameEnegyBarItemUseData {
+	int32_t item_id; // 0x0 (4)
+	struct FString item_name; // 0x8 (16)
+	int32_t current_buff_id; // 0x18 (4)
+	int32_t current_buff_time; // 0x1C (4)
+	int32_t to_be_buff_id; // 0x20 (4)
+	int32_t to_be_buff_time; // 0x24 (4)
+	int32_t stack_cnt; // 0x28 (4)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameRecoveryItemUseData
+struct FAnalysisClientGameRecoveryItemUseData {
+	int32_t item_id; // 0x0 (4)
+	struct FString item_name; // 0x8 (16)
+	int32_t item_recovery_hp; // 0x18 (4)
+	int32_t stack_cnt; // 0x1C (4)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameExchangePartsData
+struct FAnalysisClientGameExchangePartsData {
+	int32_t weapon_slot_index; // 0x0 (4)
+	int32_t weapon_id; // 0x4 (4)
+	struct FString weapon_name; // 0x8 (16)
+	struct Unknown equip_parts_info; // 0x18 (24)
+	struct Unknown unequip_parts_info; // 0x30 (24)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameItemPartsData
+struct FAnalysisClientGameItemPartsData {
+	int32_t parts_slot_index; // 0x0 (4)
+	int32_t parts_id; // 0x4 (4)
+	struct FString parts_name; // 0x8 (16)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameData
+struct FAnalysisClientGameData {
+	enum class Unknow contentType; // 0x0 (1)
+	struct FString Base; // 0x8 (16)
+	struct FString Msg; // 0x18 (16)
+	struct FString nowDate; // 0x28 (16)
+	struct FString ApiPhase; // 0x38 (16)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientGameDataHead
+struct FAnalysisClientGameDataHead {
+	int32_t DateTime; // 0x0 (4)
+	struct FString m; // 0x8 (16)
+	struct FString game_server_id; // 0x18 (16)
+	struct FString MapName; // 0x28 (16)
+	int32_t GameViewType; // 0x38 (4)
+	int32_t GameMode; // 0x3C (4)
+	int32_t BattleMode; // 0x40 (4)
+	struct FString cqr_type; // 0x48 (16)
+	int32_t bluezone_id; // 0x58 (4)
+	int32_t phase_info; // 0x5C (4)
+	int32_t current_survival_player; // 0x60 (4)
+	int32_t current_survival_team; // 0x64 (4)
+	int32_t team_id; // 0x68 (4)
+	int32_t team_cnt; // 0x6C (4)
+	int32_t current_rank; // 0x70 (4)
+	struct FString UserID; // 0x78 (16)
+	struct FString NickName; // 0x88 (16)
+	int32_t ClassIndex; // 0x98 (4)
+	int32_t expert_weapon_id; // 0x9C (4)
+	struct FString expert_weapon_name; // 0xA0 (16)
+	int32_t Level; // 0xB0 (4)
+	struct FString Training; // 0xB8 (16)
+	int32_t loser_score; // 0xC8 (4)
+	int32_t current_hp; // 0xCC (4)
+	int32_t m; // 0xD0 (4)
+	int32_t overheal; // 0xD4 (4)
+	int32_t loc_x; // 0xD8 (4)
+	int32_t loc_y; // 0xDC (4)
+	int32_t loc_z; // 0xE0 (4)
+	int32_t isinbluezone; // 0xE4 (4)
+	int32_t isinredzone; // 0xE8 (4)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisDediItemSpawnData
+struct FAnalysisDediItemSpawnData {
+	int32_t total_box_count; // 0x0 (4)
+	int32_t spawn_box_count; // 0x4 (4)
+	struct TArray<Unknown> item_spawn_info; // 0x8 (16)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisDediItemData
+struct FAnalysisDediItemData {
+	int32_t item_id; // 0x0 (4)
+	struct FString item_name; // 0x8 (16)
+	int32_t item_count; // 0x18 (4)
+	int32_t item_stack_count; // 0x1C (4)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisDediVehicleSpawnData
+struct FAnalysisDediVehicleSpawnData {
+	int32_t spawner_cnt; // 0x0 (4)
+	struct TArray<Unknown> vehicle_spawn_info; // 0x8 (16)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisDediVehicleData
+struct FAnalysisDediVehicleData {
+	struct FString spawner_name; // 0x0 (16)
+	int32_t spawner_pos_x; // 0x10 (4)
+	int32_t spawner_pos_y; // 0x14 (4)
+	int32_t spawner_pos_z; // 0x18 (4)
+	struct FString vehicle_name; // 0x20 (16)
+	int32_t board; // 0x30 (4)
+	int32_t destroy; // 0x34 (4)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisDediRedZoneData
+struct FAnalysisDediRedZoneData {
+	int32_t event_time; // 0x0 (4)
+	int32_t phase_index; // 0x4 (4)
+	int32_t redzone_time; // 0x8 (4)
+	int32_t center_loc_x; // 0xC (4)
+	int32_t center_loc_y; // 0x10 (4)
+	int32_t center_loc_z; // 0x14 (4)
+	int32_t circle_radius; // 0x18 (4)
+	int32_t boom_count; // 0x1C (4)
+	int32_t boom_per_interval; // 0x20 (4)
+	int32_t indoor_cnt; // 0x24 (4)
+	int32_t outdoor_cnt; // 0x28 (4)
+	int32_t boom_damage; // 0x2C (4)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisDediTransportData
+struct FAnalysisDediTransportData {
+	int32_t event_time; // 0x0 (4)
+	int32_t phase_index; // 0x4 (4)
+	int32_t Turn; // 0x8 (4)
+	int32_t loc_x; // 0xC (4)
+	int32_t loc_y; // 0x10 (4)
+	int32_t loc_z; // 0x14 (4)
+	struct TArray<Unknown> transportitem; // 0x18 (16)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisDediBlueZoneData
+struct FAnalysisDediBlueZoneData {
+	int32_t event_time; // 0x0 (4)
+	int32_t phase_index; // 0x4 (4)
+	int32_t center_loc_x; // 0x8 (4)
+	int32_t center_loc_y; // 0xC (4)
+	int32_t center_loc_z; // 0x10 (4)
+	int32_t circle_radius; // 0x14 (4)
+	int32_t incircle_player; // 0x18 (4)
+	int32_t outcircle_player; // 0x1C (4)
+	int32_t death_player_cnt; // 0x20 (4)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisDediSupplyBoxData
+struct FAnalysisDediSupplyBoxData {
+	int32_t event_time; // 0x0 (4)
+	struct FString UserID; // 0x8 (16)
+	struct FString NickName; // 0x18 (16)
+	int32_t loc_x; // 0x28 (4)
+	int32_t loc_y; // 0x2C (4)
+	int32_t loc_z; // 0x30 (4)
+	int32_t box_loc_x; // 0x34 (4)
+	int32_t box_loc_y; // 0x38 (4)
+	int32_t box_loc_z; // 0x3C (4)
+	struct FString spawner_name; // 0x40 (16)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisDediMatchingRPInfoData
+struct FAnalysisDediMatchingRPInfoData {
+	struct TArray<Unknown> player_rp_info; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisDediPlayerRPInfoData
+struct FAnalysisDediPlayerRPInfoData {
+	struct FString UserID; // 0x0 (16)
+	struct FString NickName; // 0x10 (16)
+	int32_t Rating; // 0x20 (4)
+	struct FString Training; // 0x28 (16)
+	struct FString TeamID; // 0x38 (16)
+	int32_t team_rating; // 0x48 (4)
+	struct FString PartyID; // 0x50 (16)
+	int32_t party_rating; // 0x60 (4)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisDataGameInfo
+struct FAnalysisDataGameInfo {
+	int32_t flight_start_loc_x; // 0x0 (4)
+	int32_t flight_start_loc_y; // 0x4 (4)
+	int32_t flight_start_loc_z; // 0x8 (4)
+	int32_t flight_end_loc_x; // 0xC (4)
+	int32_t flight_end_loc_y; // 0x10 (4)
+	int32_t flight_end_loc_z; // 0x14 (4)
+	int32_t bluezone_circle_x; // 0x18 (4)
+	int32_t bluezone_circle_y; // 0x1C (4)
+	int32_t bluezone_radius; // 0x20 (4)
+	int32_t m; // 0x24 (4)
+	int32_t m; // 0x28 (4)
+	int32_t escape_player; // 0x2C (4)
+	struct FString start_game_time; // 0x30 (16)
+	struct FString end_game_time; // 0x40 (16)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisDataBase
+struct FAnalysisDataBase {
+	enum class Unknow contentType; // 0x0 (1)
+	struct Unknown Base; // 0x8 (136)
+	struct FString Msg; // 0x90 (16)
+	struct FString nowDate; // 0xA0 (16)
+	struct FString ApiPhase; // 0xB0 (16)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisDataBaseHead
+struct FAnalysisDataBaseHead {
+	int32_t DateTime; // 0x0 (4)
+	struct FString m; // 0x8 (16)
+	struct FString game_server_id; // 0x18 (16)
+	struct FString MapName; // 0x28 (16)
+	int32_t GameViewType; // 0x38 (4)
+	int32_t GameMode; // 0x3C (4)
+	int32_t BattleMode; // 0x40 (4)
+	struct FString cqr_type; // 0x48 (16)
+	int32_t bluezone_id; // 0x58 (4)
+	struct FString ip; // 0x60 (16)
+	struct FString Training; // 0x70 (16)
+	int32_t ai_grade; // 0x80 (4)
+	int32_t class_select_mode; // 0x84 (4)
+};
+
+// ScriptStruct BravoHotelGame.LogWeaponSlots
+struct FLogWeaponSlots {
+	struct TArray<Unknown> weapon_slots; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.LogEquippedWeaponInfo
+struct FLogEquippedWeaponInfo {
+	int32_t weapon_index; // 0x0 (4)
+	int32_t Level; // 0x4 (4)
+};
+
+// ScriptStruct BravoHotelGame.LogMapInfo
+struct FLogMapInfo {
+	int32_t m; // 0x0 (4)
+	int32_t m; // 0x4 (4)
+};
+
+// ScriptStruct BravoHotelGame.ItemLocationLog
+struct FItemLocationLog {
+	struct TArray<Unknown> Locations; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.DataEventClientGameWeapon
+struct FDataEventClientGameWeapon : FDataEventBase {
+	struct Unknown WeaponActor; // 0x60 (8)
+};
+
+// ScriptStruct BravoHotelGame.DataEventClientGameVehicle
+struct FDataEventClientGameVehicle : FDataEventBase {
+	struct Unknown VehicleActor; // 0x70 (8)
+};
+
+// ScriptStruct BravoHotelGame.DataEventClientGameRevival
+struct FDataEventClientGameRevival : FDataEventBase {
+	struct Unknown RevivedPlayerState; // 0x60 (8)
+	struct Unknown SaviorPlayerState; // 0x68 (8)
+};
+
+// ScriptStruct BravoHotelGame.DataEventClientGameDied
+struct FDataEventClientGameDied : FDataEventBase {
+	struct Unknown* DamageTypeClass; // 0x60 (8)
+	struct Unknown KnockDownAttackerPlayerState; // 0x68 (8)
+	struct Unknown KillerPlayerState; // 0x70 (8)
+	struct Unknown AttackerPlayerState; // 0x78 (8)
+	struct Unknown VictimPlayerState; // 0x80 (8)
+};
+
+// ScriptStruct BravoHotelGame.DataEventClientGameKnockDowned
+struct FDataEventClientGameKnockDowned : FDataEventBase {
+	struct Unknown* DamageTypeClass; // 0x60 (8)
+	struct Unknown AttackerActor; // 0x68 (8)
+	struct Unknown AttackerPlayerState; // 0x70 (8)
+	struct Unknown VictimActor; // 0x78 (8)
+	struct Unknown VictimPlayerState; // 0x80 (8)
+};
+
+// ScriptStruct BravoHotelGame.DataEventClientGameBattle
+struct FDataEventClientGameBattle : FDataEventBase {
+	struct Unknown* DamageTypeClass; // 0x60 (8)
+	struct Unknown AttackerActor; // 0x68 (8)
+	struct Unknown AttackerPlayerState; // 0x70 (8)
+	struct Unknown VictimActor; // 0x78 (8)
+	struct Unknown VictimPlayerState; // 0x80 (8)
+};
+
+// ScriptStruct BravoHotelGame.ItemRarityInfo
+struct FItemRarityInfo {
+	enum class Unknow Rarity; // 0x0 (1)
+	struct FName ItemName; // 0x4 (8)
+};
+
+// ScriptStruct BravoHotelGame.ItemTypeProb
+struct FItemTypeProb {
+	enum class Unknow ItemType; // 0x0 (1)
+	float ProbSum; // 0x4 (4)
+};
+
+// ScriptStruct BravoHotelGame.DetectBoxSpawnItemsInfo
+struct FDetectBoxSpawnItemsInfo {
+	enum class Unknow ItemType; // 0x0 (1)
+	float SpawnProbability; // 0x4 (4)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelBlackMarketDataType
+struct FBravoHotelBlackMarketDataType {
+	struct FName ItemRowName; // 0x0 (8)
+	struct TSoftObjectPtr<Unknown> ItemIconTextureEx; // 0x8 (40)
+	struct TSoftObjectPtr<Unknown> ItemIconImage; // 0x30 (40)
+	struct FText ItemName; // 0x58 (24)
+	float Weight; // 0x70 (4)
+	enum class Unknow TabType; // 0x74 (1)
+	enum class Unknow ItemType; // 0x75 (1)
+	enum class Unknow WeaponType; // 0x76 (1)
+	enum class Unknow AttachmentType; // 0x77 (1)
+	enum class Unknow WearableType; // 0x78 (1)
+	enum class Unknow DevelopmentStatus; // 0x79 (1)
+	struct FName CompatibleAmmoName; // 0x7C (8)
+	float Damage; // 0x84 (4)
+	float FireRate; // 0x88 (4)
+	int32_t NormalMagSize; // 0x8C (4)
+	struct TArray<Unknown> AllowedFireModes; // 0x90 (16)
+	float ReloadTime; // 0xA0 (4)
+	float ProjectileVelocity; // 0xA4 (4)
+	float MoveSpeedModifier; // 0xA8 (4)
+	int32_t AmmoCount; // 0xAC (4)
+	float TotalWeight; // 0xB0 (4)
+	float DecreaseReloadTime; // 0xB4 (4)
+	float VerticalReduce; // 0xB8 (4)
+	float HorizentalReduce; // 0xBC (4)
+	float IncreaseRateoffire; // 0xC0 (4)
+	float BurstSpeed; // 0xC4 (4)
+	float Armor; // 0xC8 (4)
+	int32_t Capacity; // 0xCC (4)
+	float Health; // 0xD0 (4)
+	float Adrenaline; // 0xD4 (4)
+	float Fuel; // 0xD8 (4)
+	enum class Unknow EquipableSlot; // 0xDC (1)
+	struct TArray<Unknown> EquipableClass; // 0xE0 (16)
+	struct FText Description; // 0xF0 (24)
+	struct TArray<Unknown> ItemList; // 0x108 (16)
+};
+
+// ScriptStruct BravoHotelGame.ProjectDirectoriesPath
+struct FProjectDirectoriesPath {
+	struct TArray<Unknown> DirectoriesPath; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.ProjectDirectoryPath
+struct FProjectDirectoryPath {
+	struct Unknown DirectoryPath; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.ParachuteInfo
+struct FParachuteInfo {
+	char Visibility : 0; // 0x0 (1)
+	char ParachuteImage : 0; // 0x1 (1)
+	char PlayerImage : 0; // 0x2 (1)
+	float ParachutePoint; // 0x4 (4)
+	float TerrainHeight; // 0x8 (4)
+	float Speed; // 0xC (4)
+	float Angle; // 0x10 (4)
+	struct Unknown ParachutePos; // 0x14 (8)
+};
+
+// ScriptStruct BravoHotelGame.CoherentWidgetInfo
+struct FCoherentWidgetInfo {
+	struct Unknown Widget; // 0x0 (8)
+	char FinishLoad : 0; // 0x8 (1)
+};
+
+// ScriptStruct BravoHotelGame.VivoxChanelInfo
+struct FVivoxChanelInfo {
+	enum class Unknow Type; // 0x0 (1)
+	char ShouldTransmitOnJoin : 0; // 0x1 (1)
+	struct FString ChannelName; // 0x8 (16)
+	enum class Unknow AssignChanneltoPTTKey; // 0x18 (1)
+};
+
+// ScriptStruct BravoHotelGame.GoogleCloud_PubSub
+struct FGoogleCloud_PubSub {
+	struct TArray<Unknown> m; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.PubSub_Message
+struct FPubSub_Message {
+	struct Unknown Attributes; // 0x0 (32)
+	struct FString Data; // 0x20 (16)
+};
+
+// ScriptStruct BravoHotelGame.PubSub_Attribute
+struct FPubSub_Attribute {
+	struct FString Key; // 0x0 (16)
+	struct FString Value; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.Request_WaitingTicket
+struct FRequest_WaitingTicket {
+	struct FString geegee_id; // 0x0 (16)
+	struct FString steam_id; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.Response_CraftWeapon
+struct FResponse_CraftWeapon {
+	uint32_t C; // 0x0 (4)
+	struct FString E; // 0x8 (16)
+	struct Unknown D; // 0x18 (192)
+};
+
+// ScriptStruct BravoHotelGame.Request_CraftWeapon
+struct FRequest_CraftWeapon {
+	int32_t crafting_id; // 0x0 (4)
+	struct Unknown base_weapon; // 0x8 (24)
+};
+
+// ScriptStruct BravoHotelGame.Request_CraftWeapon_BaseWeapon
+struct FRequest_CraftWeapon_BaseWeapon {
+	int32_t table_base_index; // 0x0 (4)
+	struct FString item_id; // 0x8 (16)
+};
+
+// ScriptStruct BravoHotelGame.Response_MaterialList
+struct FResponse_MaterialList {
+	uint32_t C; // 0x0 (4)
+	struct FString E; // 0x8 (16)
+	struct Unknown D; // 0x18 (16)
+};
+
+// ScriptStruct BravoHotelGame.Response_MaterialList_Array
+struct FResponse_MaterialList_Array {
+	struct TArray<Unknown> m; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.Response_Weapon_List
+struct FResponse_Weapon_List {
+	uint32_t C; // 0x0 (4)
+	struct FString E; // 0x8 (16)
+	struct Unknown D; // 0x18 (16)
+};
+
+// ScriptStruct BravoHotelGame.Response_Weapon_List_Array
+struct FResponse_Weapon_List_Array {
+	struct TArray<Unknown> weapon_list; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.Response_Google_JWT
+struct FResponse_Google_JWT {
+	struct FString access_token; // 0x0 (16)
+	int32_t expires_in; // 0x10 (4)
+	struct FString token_type; // 0x18 (16)
+};
+
+// ScriptStruct BravoHotelGame.RedisPubSub_Header
+struct FRedisPubSub_Header {
+	struct FString Cmd; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.RedisPubSub_LeaveGame
+struct FRedisPubSub_LeaveGame : FRedisPubSub_Header {
+	struct FString UID; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.RedisPubSub_StartPlay
+struct FRedisPubSub_StartPlay : FRedisPubSub_Header {
+	struct FString Mode; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.RedisPubSub_LoadMap
+struct FRedisPubSub_LoadMap : FRedisPubSub_Header {
+	struct FString m; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.Response_FriendPendingList
+struct FResponse_FriendPendingList {
+	uint32_t C; // 0x0 (4)
+	struct FString E; // 0x8 (16)
+	struct Unknown D; // 0x18 (16)
+};
+
+// ScriptStruct BravoHotelGame.Response_FriendPendingListArray
+struct FResponse_FriendPendingListArray {
+	struct TArray<Unknown> pendingInviteInfoList; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.Response_FriendInfo_Rec
+struct FResponse_FriendInfo_Rec {
+	struct FString UID; // 0x0 (16)
+	struct FString player_name; // 0x10 (16)
+	struct FString status; // 0x20 (16)
+};
+
+// ScriptStruct BravoHotelGame.Response_FriendList
+struct FResponse_FriendList {
+	uint32_t C; // 0x0 (4)
+	struct FString E; // 0x8 (16)
+	struct Unknown D; // 0x18 (16)
+};
+
+// ScriptStruct BravoHotelGame.Response_FriendListArray
+struct FResponse_FriendListArray {
+	struct TArray<Unknown> friendInfoList; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.Response_AcceptFriend
+struct FResponse_AcceptFriend {
+	uint32_t C; // 0x0 (4)
+	struct FString E; // 0x8 (16)
+	struct Unknown D; // 0x18 (1)
+};
+
+// ScriptStruct BravoHotelGame.Request_AcceptFriend
+struct FRequest_AcceptFriend {
+	struct FString user_id; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.Response_InviteFriend
+struct FResponse_InviteFriend {
+	uint32_t C; // 0x0 (4)
+	struct FString E; // 0x8 (16)
+	struct Unknown D; // 0x18 (16)
+};
+
+// ScriptStruct BravoHotelGame.Response_InviteFriend_Rec
+struct FResponse_InviteFriend_Rec {
+	struct FString invite_user_id; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.Request_InviteFriend
+struct FRequest_InviteFriend {
+	struct FString user_id; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.Response_SearchPlayer
+struct FResponse_SearchPlayer {
+	uint32_t C; // 0x0 (4)
+	struct FString E; // 0x8 (16)
+	struct Unknown D; // 0x18 (32)
+};
+
+// ScriptStruct BravoHotelGame.Response_SearchPlayer_Rec
+struct FResponse_SearchPlayer_Rec {
+	struct FString user_id; // 0x0 (16)
+	struct FString Name; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.Request_SearchPlayer
+struct FRequest_SearchPlayer {
+	struct FString player_name; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.Response_Equipitem
+struct FResponse_Equipitem {
+	uint32_t C; // 0x0 (4)
+	struct FString E; // 0x8 (16)
+	struct Unknown D; // 0x18 (32)
+};
+
+// ScriptStruct BravoHotelGame.Response_Equipitem_Rec
+struct FResponse_Equipitem_Rec {
+	uint32_t item_mid; // 0x0 (4)
+	struct FString item_name; // 0x8 (16)
+	int32_t inven_item_slot; // 0x18 (4)
+	int32_t equip_item_slot; // 0x1C (4)
+};
+
+// ScriptStruct BravoHotelGame.Request_EquipItem
+struct FRequest_EquipItem {
+	uint32_t item_mid; // 0x0 (4)
+	struct FString item_name; // 0x8 (16)
+	int32_t inven_item_slot; // 0x18 (4)
+	int32_t equip_item_slot; // 0x1C (4)
+};
+
+// ScriptStruct BravoHotelGame.Response_MoveItem
+struct FResponse_MoveItem {
+	uint32_t C; // 0x0 (4)
+	struct FString E; // 0x8 (16)
+	struct Unknown D; // 0x18 (32)
+};
+
+// ScriptStruct BravoHotelGame.Response_MoveItem_Rec
+struct FResponse_MoveItem_Rec {
+	uint32_t item_mid; // 0x0 (4)
+	struct FString item_name; // 0x8 (16)
+	int32_t inven_old_item_slot; // 0x18 (4)
+	int32_t inven_new_item_slot; // 0x1C (4)
+};
+
+// ScriptStruct BravoHotelGame.Request_MoveItem
+struct FRequest_MoveItem {
+	uint32_t item_mid; // 0x0 (4)
+	struct FString item_name; // 0x8 (16)
+	int32_t inven_old_item_slot; // 0x18 (4)
+	int32_t inven_new_item_slot; // 0x1C (4)
+};
+
+// ScriptStruct BravoHotelGame.Response_DelItem
+struct FResponse_DelItem {
+	uint32_t C; // 0x0 (4)
+	struct FString E; // 0x8 (16)
+	struct Unknown D; // 0x18 (32)
+};
+
+// ScriptStruct BravoHotelGame.Response_DelItem_Rec
+struct FResponse_DelItem_Rec {
+	uint32_t item_mid; // 0x0 (4)
+	struct FString item_name; // 0x8 (16)
+	uint32_t item_slot; // 0x18 (4)
+};
+
+// ScriptStruct BravoHotelGame.Request_DelItem
+struct FRequest_DelItem {
+	uint32_t item_mid; // 0x0 (4)
+	struct FString item_name; // 0x8 (16)
+	int32_t item_slot; // 0x18 (4)
+};
+
+// ScriptStruct BravoHotelGame.Response_AddItem
+struct FResponse_AddItem {
+	uint32_t C; // 0x0 (4)
+	struct FString E; // 0x8 (16)
+	struct Unknown D; // 0x18 (32)
+};
+
+// ScriptStruct BravoHotelGame.Response_AddItem_Rec
+struct FResponse_AddItem_Rec {
+	uint32_t item_mid; // 0x0 (4)
+	struct FString item_name; // 0x8 (16)
+	uint32_t item_slot; // 0x18 (4)
+};
+
+// ScriptStruct BravoHotelGame.Request_AddItem
+struct FRequest_AddItem {
+	uint32_t item_mid; // 0x0 (4)
+	struct FString item_name; // 0x8 (16)
+	int32_t item_slot; // 0x18 (4)
+};
+
+// ScriptStruct BravoHotelGame.Response_WeaponList
+struct FResponse_WeaponList {
+	uint32_t C; // 0x0 (4)
+	struct FString E; // 0x8 (16)
+	struct Unknown D; // 0x18 (16)
+};
+
+// ScriptStruct BravoHotelGame.Response_WeaponListArray
+struct FResponse_WeaponListArray {
+	struct TArray<Unknown> Weapon; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.Response_ItemList_Rec
+struct FResponse_ItemList_Rec {
+	uint32_t item_id; // 0x0 (4)
+	uint32_t item_slot; // 0x4 (4)
+	uint32_t item_mid; // 0x8 (4)
+	struct FString item_name; // 0x10 (16)
+	uint32_t item_count; // 0x20 (4)
+	uint32_t item_level; // 0x24 (4)
+};
+
+// ScriptStruct BravoHotelGame.Response_EquipList
+struct FResponse_EquipList {
+	uint32_t C; // 0x0 (4)
+	struct FString E; // 0x8 (16)
+	struct Unknown D; // 0x18 (16)
+};
+
+// ScriptStruct BravoHotelGame.Response_EquipListArray
+struct FResponse_EquipListArray {
+	struct TArray<Unknown> equipment; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.Response_invenList
+struct FResponse_invenList {
+	uint32_t C; // 0x0 (4)
+	struct FString E; // 0x8 (16)
+	struct Unknown D; // 0x18 (16)
+};
+
+// ScriptStruct BravoHotelGame.Response_InvenListArray
+struct FResponse_InvenListArray {
+	struct TArray<Unknown> inventory; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.Response_SeasonInfo
+struct FResponse_SeasonInfo {
+	uint32_t season_id; // 0x0 (4)
+	struct FString begin_time; // 0x8 (16)
+	struct FString play_end_time; // 0x18 (16)
+	struct FString end_time; // 0x28 (16)
+	uint32_t exp_table_index; // 0x38 (4)
+	uint32_t quest_table_index; // 0x3C (4)
+};
+
+// ScriptStruct BravoHotelGame.Response_GamePlayerInfo
+struct FResponse_GamePlayerInfo {
+	uint32_t selected_pc_class_type_index; // 0x0 (4)
+	struct TArray<Unknown> pc_list; // 0x8 (16)
+	struct TArray<Unknown> all_perk_list; // 0x18 (16)
+	struct Unknown supply_box; // 0x28 (72)
+	uint32_t Gold; // 0x70 (4)
+	struct Unknown player_season_info; // 0x74 (24)
+	struct TArray<Unknown> season_quest_list; // 0x90 (16)
+	double rating_point; // 0xA0 (8)
+	struct Unknown m; // 0xA8 (40)
+	struct Unknown play_info; // 0xD0 (32)
+	char is_suspicious_user : 0; // 0xF0 (1)
+};
+
+// ScriptStruct BravoHotelGame.Response_PlayInfo
+struct FResponse_PlayInfo {
+	uint32_t kill_count; // 0x0 (4)
+	uint32_t play_count; // 0x4 (4)
+	struct FString Training; // 0x8 (16)
+	uint32_t loser_score; // 0x18 (4)
+};
+
+// ScriptStruct BravoHotelGame.MatchClassInfo
+struct FMatchClassInfo {
+	uint32_t change_count; // 0x0 (4)
+	struct FString Info; // 0x8 (16)
+	struct FString selection_info; // 0x18 (16)
+};
+
+// ScriptStruct BravoHotelGame.SeasonQuestBaseInfo
+struct FSeasonQuestBaseInfo {
+	uint32_t quest_index; // 0x0 (4)
+	uint32_t Count; // 0x4 (4)
+};
+
+// ScriptStruct BravoHotelGame.PlayerSeasonInfo
+struct FPlayerSeasonInfo {
+	char is_bought_season_ticket : 0; // 0x0 (1)
+	uint32_t season_level; // 0x4 (4)
+	uint32_t season_exp; // 0x8 (4)
+	uint32_t season_rp; // 0xC (4)
+	char tier_game_mode; // 0x10 (1)
+	uint32_t tier_id; // 0x14 (4)
+};
+
+// ScriptStruct BravoHotelGame.SupplyBoxInfo
+struct FSupplyBoxInfo {
+	uint32_t table_index; // 0x0 (4)
+	struct FString item_id; // 0x8 (16)
+	struct TArray<Unknown> weapons; // 0x18 (16)
+	struct TArray<Unknown> equipments; // 0x28 (16)
+	char expanded : 0; // 0x38 (1)
+	uint32_t count_of_supply; // 0x3C (4)
+	uint32_t free_supply_ticket; // 0x40 (4)
+};
+
+// ScriptStruct BravoHotelGame.WeaponInfo
+struct FWeaponInfo {
+	char slot_num; // 0x0 (1)
+	uint32_t table_index; // 0x4 (4)
+	struct FString item_id; // 0x8 (16)
+	struct TArray<Unknown> options; // 0x18 (16)
+	uint32_t Durability; // 0x28 (4)
+	char supplied : 0; // 0x2C (1)
+};
+
+// ScriptStruct BravoHotelGame.OptionInfo
+struct FOptionInfo {
+	struct FString Type; // 0x0 (16)
+	uint32_t table_index; // 0x10 (4)
+};
+
+// ScriptStruct BravoHotelGame.BasePerkInfo
+struct FBasePerkInfo {
+	uint32_t Type; // 0x0 (4)
+	uint32_t table_index; // 0x4 (4)
+};
+
+// ScriptStruct BravoHotelGame.Response_PCInfo
+struct FResponse_PCInfo {
+	struct FString pc_id; // 0x0 (16)
+	uint32_t class_type_index; // 0x10 (4)
+	uint32_t class_data_index; // 0x14 (4)
+	struct Unknown looks; // 0x18 (24)
+	struct TArray<Unknown> wear_item; // 0x30 (16)
+	struct TArray<Unknown> Weapon; // 0x40 (16)
+	struct TArray<Unknown> perk; // 0x50 (16)
+	uint32_t exp; // 0x60 (4)
+};
+
+// ScriptStruct BravoHotelGame.EquippedSlotInfo
+struct FEquippedSlotInfo {
+	uint32_t Key; // 0x0 (4)
+	uint32_t table_index; // 0x4 (4)
+};
+
+// ScriptStruct BravoHotelGame.PCLooks
+struct FPCLooks {
+	uint32_t gender; // 0x0 (4)
+	uint32_t face; // 0x4 (4)
+	uint32_t face_color; // 0x8 (4)
+	uint32_t hair; // 0xC (4)
+	uint32_t hair_color; // 0x10 (4)
+	uint32_t m; // 0x14 (4)
+};
+
+// ScriptStruct BravoHotelGame.Response_Matching
+struct FResponse_Matching {
+	uint32_t C; // 0x0 (4)
+	struct FString E; // 0x8 (16)
+	struct Unknown D; // 0x18 (16)
+};
+
+// ScriptStruct BravoHotelGame.Response_Matching_Rec
+struct FResponse_Matching_Rec {
+	struct FString ipaddr; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.Request_Matching
+struct FRequest_Matching {
+	char battle_mode; // 0x0 (1)
+	struct FString m; // 0x8 (16)
+};
+
+// ScriptStruct BravoHotelGame.Request_DS_MatchRewardList
+struct FRequest_DS_MatchRewardList {
+	struct FString m; // 0x0 (16)
+	char game_mode; // 0x10 (1)
+	char battle_mode; // 0x11 (1)
+	struct TArray<Unknown> m; // 0x18 (16)
+};
+
+// ScriptStruct BravoHotelGame.PlayerMatchReward
+struct FPlayerMatchReward {
+	struct FString user_id; // 0x0 (16)
+	uint32_t pc_class_type_index; // 0x10 (4)
+	char reward_type; // 0x14 (1)
+	enum class Unknown Rank; // 0x15 (1)
+	char participants; // 0x16 (1)
+	uint32_t earned_gold; // 0x18 (4)
+	uint32_t earned_exp; // 0x1C (4)
+	struct TArray<Unknown> earned_items; // 0x20 (16)
+	struct Unknown supplied_weapon; // 0x30 (32)
+	char save_summary : 0; // 0x50 (1)
+};
+
+// ScriptStruct BravoHotelGame.SuppliedWeapon
+struct FSuppliedWeapon {
+	uint32_t table_index; // 0x0 (4)
+	struct FString item_id; // 0x8 (16)
+	uint32_t Durability; // 0x18 (4)
+};
+
+// ScriptStruct BravoHotelGame.RewardItem
+struct FRewardItem {
+	uint32_t table_index; // 0x0 (4)
+	uint32_t Count; // 0x4 (4)
+	struct TMap<Unknown, Unknown>Unknown options; // 0x8 (80)
+};
+
+// ScriptStruct BravoHotelGame.Request_DS_MatchReward
+struct FRequest_DS_MatchReward {
+	struct FString m; // 0x0 (16)
+	char game_mode; // 0x10 (1)
+	char battle_mode; // 0x11 (1)
+	struct Unknown m; // 0x18 (88)
+};
+
+// ScriptStruct BravoHotelGame.Request_DS_CurrencyGain
+struct FRequest_DS_CurrencyGain {
+	struct FString user_id; // 0x0 (16)
+	uint32_t currency_index; // 0x10 (4)
+	uint32_t Amount; // 0x14 (4)
+	uint32_t action_code; // 0x18 (4)
+};
+
+// ScriptStruct BravoHotelGame.Request_DS_CurrencyPay
+struct FRequest_DS_CurrencyPay {
+	struct FString user_id; // 0x0 (16)
+	uint32_t currency_index; // 0x10 (4)
+	uint32_t Amount; // 0x14 (4)
+	uint32_t action_code; // 0x18 (4)
+};
+
+// ScriptStruct BravoHotelGame.Request_DS_MakeSupplyBoxUsed
+struct FRequest_DS_MakeSupplyBoxUsed {
+	struct FString user_id; // 0x0 (16)
+	uint32_t table_index; // 0x10 (4)
+	struct FString item_id; // 0x18 (16)
+};
+
+// ScriptStruct BravoHotelGame.Response_MatchResultDataListArray
+struct FResponse_MatchResultDataListArray {
+	uint32_t C; // 0x0 (4)
+	struct FString E; // 0x8 (16)
+};
+
+// ScriptStruct BravoHotelGame.Request_MatchResultDataListArray
+struct FRequest_MatchResultDataListArray {
+	char battle_mode; // 0x0 (1)
+	char game_mode; // 0x1 (1)
+	struct FString m; // 0x8 (16)
+	struct FString m; // 0x18 (16)
+	struct FString start_time; // 0x28 (16)
+	struct FString end_time; // 0x38 (16)
+	struct FString dedi_ip; // 0x48 (16)
+	uint32_t dedi_port; // 0x58 (4)
+	struct TArray<Unknown> user_result; // 0x60 (16)
+};
+
+// ScriptStruct BravoHotelGame.Request_UserResultDataList_Rec
+struct FRequest_UserResultDataList_Rec {
+	struct FString user_id; // 0x0 (16)
+	struct FString player_name; // 0x10 (16)
+	uint16_t Rank; // 0x20 (2)
+	char team_id; // 0x22 (1)
+	double Weight; // 0x28 (8)
+};
+
+// ScriptStruct BravoHotelGame.Response_PlayerSaveScore
+struct FResponse_PlayerSaveScore {
+	uint32_t C; // 0x0 (4)
+	struct FString E; // 0x8 (16)
+	struct Unknown D; // 0x18 (16)
+};
+
+// ScriptStruct BravoHotelGame.Response_PlayerName_Rec
+struct FResponse_PlayerName_Rec {
+	struct FString player_name; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.Response_PlayerScoreList
+struct FResponse_PlayerScoreList {
+	uint32_t C; // 0x0 (4)
+	struct FString E; // 0x8 (16)
+	struct Unknown D; // 0x18 (16)
+};
+
+// ScriptStruct BravoHotelGame.Response_ScoreListArray
+struct FResponse_ScoreListArray {
+	struct TArray<Unknown> score_list; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.Response_PlayerScore_Rec
+struct FResponse_PlayerScore_Rec {
+	char battle_mode; // 0x0 (1)
+	double m; // 0x8 (8)
+	double sigma; // 0x10 (8)
+	double Rating; // 0x18 (8)
+	double win_rating; // 0x20 (8)
+	double kill_rating; // 0x28 (8)
+	uint32_t m; // 0x30 (4)
+	uint32_t top_10s; // 0x34 (4)
+	uint32_t wins; // 0x38 (4)
+	uint32_t tot_playtime; // 0x3C (4)
+	uint32_t survival_time; // 0x40 (4)
+	uint32_t kill_oneself; // 0x44 (4)
+	double tot_distance_travelled; // 0x48 (8)
+	double distance_foot; // 0x50 (8)
+	double distance_swimming; // 0x58 (8)
+	double distance_vehicle; // 0x60 (8)
+	double acquire_weapon; // 0x68 (8)
+	double recover; // 0x70 (8)
+	double boost; // 0x78 (8)
+	uint32_t kills; // 0x80 (4)
+	double kill_rate; // 0x88 (8)
+	double damage_add; // 0x90 (8)
+	uint32_t assists; // 0x98 (4)
+	double longest_kill; // 0xA0 (8)
+	uint32_t headshots; // 0xA8 (4)
+	uint32_t game_max_kills; // 0xAC (4)
+	uint32_t m; // 0xB0 (4)
+	uint32_t road_kills; // 0xB4 (4)
+	uint32_t distory_vehicles; // 0xB8 (4)
+	uint32_t faint; // 0xBC (4)
+	uint32_t team_kills; // 0xC0 (4)
+};
+
+// ScriptStruct BravoHotelGame.Request_PlayerScore
+struct FRequest_PlayerScore {
+	struct FString player_name; // 0x0 (16)
+	struct Unknown D; // 0x10 (200)
+};
+
+// ScriptStruct BravoHotelGame.Request_CheatCash
+struct FRequest_CheatCash {
+	struct FString Command; // 0x0 (16)
+	struct Unknown Parameter; // 0x10 (8)
+};
+
+// ScriptStruct BravoHotelGame.CheatParamCurrency
+struct FCheatParamCurrency {
+	char is_plus : 0; // 0x0 (1)
+	uint32_t Amount; // 0x4 (4)
+};
+
+// ScriptStruct BravoHotelGame.Request_CheatGold
+struct FRequest_CheatGold {
+	struct FString Command; // 0x0 (16)
+	struct Unknown Parameter; // 0x10 (8)
+};
+
+// ScriptStruct BravoHotelGame.Request_CheatCommand
+struct FRequest_CheatCommand {
+	struct FString Command; // 0x0 (16)
+	struct FString Parameter; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.Response_Language
+struct FResponse_Language {
+	uint32_t C; // 0x0 (4)
+	struct FString E; // 0x8 (16)
+};
+
+// ScriptStruct BravoHotelGame.Request_Language
+struct FRequest_Language {
+	struct FString Language; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.Response_PlayerInfo
+struct FResponse_PlayerInfo {
+	uint32_t C; // 0x0 (4)
+	struct FString E; // 0x8 (16)
+	struct Unknown D; // 0x18 (136)
+};
+
+// ScriptStruct BravoHotelGame.Response_PlayerInfo_Rec
+struct FResponse_PlayerInfo_Rec {
+	struct FString server_name; // 0x0 (16)
+	struct FString now; // 0x10 (16)
+	struct FString db; // 0x20 (16)
+	uint32_t uid_local; // 0x30 (4)
+	uint64_t uid_global; // 0x38 (8)
+	struct FString Name; // 0x40 (16)
+	uint32_t Level; // 0x50 (4)
+	uint32_t xp; // 0x54 (4)
+	uint32_t Gold; // 0x58 (4)
+	uint32_t energy; // 0x5C (4)
+	struct FString energy_updated_at; // 0x60 (16)
+	uint32_t buy_coin; // 0x70 (4)
+	uint32_t free_coin; // 0x74 (4)
+	uint32_t sex; // 0x78 (4)
+	uint32_t face; // 0x7C (4)
+	uint32_t hairstyle; // 0x80 (4)
+	uint32_t intro; // 0x84 (4)
+};
+
+// ScriptStruct BravoHotelGame.Response_ChangePName
+struct FResponse_ChangePName {
+	uint32_t C; // 0x0 (4)
+	struct FString E; // 0x8 (16)
+	struct Unknown D; // 0x18 (16)
+};
+
+// ScriptStruct BravoHotelGame.Request_PlayerName
+struct FRequest_PlayerName {
+	struct FString player_name; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.Response_CreateDefaultPC
+struct FResponse_CreateDefaultPC {
+	uint32_t C; // 0x0 (4)
+	struct FString E; // 0x8 (16)
+	struct Unknown D; // 0x18 (16)
+};
+
+// ScriptStruct BravoHotelGame.Response_CreateDefaultPC_Rec
+struct FResponse_CreateDefaultPC_Rec {
+	struct FString user_id; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.Request_CreateDefaultPC
+struct FRequest_CreateDefaultPC {
+	struct Unknown pc_looks; // 0x0 (24)
+};
+
+// ScriptStruct BravoHotelGame.Response_CreatePlayer
+struct FResponse_CreatePlayer {
+	uint32_t C; // 0x0 (4)
+	struct FString E; // 0x8 (16)
+	struct Unknown D; // 0x18 (32)
+};
+
+// ScriptStruct BravoHotelGame.Response_CreatePlayer_Rec
+struct FResponse_CreatePlayer_Rec {
+	struct FString user_id; // 0x0 (16)
+	struct FString auth_token; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.Request_CreatePlayer
+struct FRequest_CreatePlayer {
+	struct FString player_name; // 0x0 (16)
+	struct Unknown pc_looks; // 0x10 (24)
+	struct TArray<Unknown> equip_clothes; // 0x28 (16)
+};
+
+// ScriptStruct BravoHotelGame.Response_CheckPlayerName
+struct FResponse_CheckPlayerName {
+	uint32_t C; // 0x0 (4)
+	struct FString E; // 0x8 (16)
+	struct Unknown D; // 0x18 (1)
+};
+
+// ScriptStruct BravoHotelGame.Response_CheckPlayerName_Rec
+struct FResponse_CheckPlayerName_Rec {
+	char is_available : 0; // 0x0 (1)
+};
+
+// ScriptStruct BravoHotelGame.Request_CheckPlayerName
+struct FRequest_CheckPlayerName {
+	struct FString player_name; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.Response_DSList
+struct FResponse_DSList {
+	uint32_t C; // 0x0 (4)
+	struct FString E; // 0x8 (16)
+	struct Unknown D; // 0x18 (16)
+};
+
+// ScriptStruct BravoHotelGame.CustomMatchDSList
+struct FCustomMatchDSList {
+	struct TArray<Unknown> waiting_ds_info_list; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.CustomMatchDS
+struct FCustomMatchDS {
+	struct FString address; // 0x0 (16)
+	struct FString Token; // 0x10 (16)
+	struct FString encryption_key; // 0x20 (16)
+};
+
+// ScriptStruct BravoHotelGame.Request_LoginGeegeeWithSteam
+struct FRequest_LoginGeegeeWithSteam {
+	struct FString Client_version; // 0x0 (16)
+	int32_t os; // 0x10 (4)
+	struct FString ott; // 0x18 (16)
+	struct FString session_ticket; // 0x28 (16)
+	struct FString entry_code; // 0x38 (16)
+	struct FString hardware_info; // 0x48 (16)
+	struct FString geegee_project_id; // 0x58 (16)
+};
+
+// ScriptStruct BravoHotelGame.Request_LoginSteam
+struct FRequest_LoginSteam {
+	struct FString Client_version; // 0x0 (16)
+	int32_t os; // 0x10 (4)
+	struct FString session_ticket; // 0x18 (16)
+	struct FString entry_code; // 0x28 (16)
+	struct FString hardware_info; // 0x38 (16)
+};
+
+// ScriptStruct BravoHotelGame.Request_LoginGeegee
+struct FRequest_LoginGeegee {
+	struct FString Client_version; // 0x0 (16)
+	int32_t os; // 0x10 (4)
+	struct FString ott; // 0x18 (16)
+	struct FString entry_code; // 0x28 (16)
+	struct FString hardware_info; // 0x38 (16)
+	struct FString geegee_project_id; // 0x48 (16)
+};
+
+// ScriptStruct BravoHotelGame.Request_LoginAccount
+struct FRequest_LoginAccount {
+	struct FString Client_version; // 0x0 (16)
+	int32_t os; // 0x10 (4)
+	struct FString account; // 0x18 (16)
+	char allowed_only_if_exists : 0; // 0x28 (1)
+	struct FString entry_code; // 0x30 (16)
+	struct FString hardware_info; // 0x40 (16)
+};
+
+// ScriptStruct BravoHotelGame.Response_LoginName
+struct FResponse_LoginName {
+	uint32_t C; // 0x0 (4)
+	struct FString E; // 0x8 (16)
+	struct Unknown D; // 0x18 (96)
+};
+
+// ScriptStruct BravoHotelGame.Response_LoginName_Rec
+struct FResponse_LoginName_Rec {
+	char created : 0; // 0x0 (1)
+	struct FString SessionID; // 0x8 (16)
+	struct FString session_id; // 0x18 (16)
+	struct FString UID; // 0x28 (16)
+	char is_go_create_pc : 0; // 0x38 (1)
+	struct FString auth_token; // 0x40 (16)
+	struct FString m; // 0x50 (16)
+};
+
+// ScriptStruct BravoHotelGame.Request_LoginName
+struct FRequest_LoginName {
+	struct FString Client_version; // 0x0 (16)
+	int32_t os; // 0x10 (4)
+	struct FString player_name; // 0x18 (16)
+	char allowed_only_if_exists : 0; // 0x28 (1)
+	struct Unknown hardware_info; // 0x30 (80)
+};
+
+// ScriptStruct BravoHotelGame.HardWareInfo
+struct FHardWareInfo {
+	struct FString full_guid; // 0x0 (16)
+	struct FString grid; // 0x10 (16)
+	struct FString hardware_id; // 0x20 (16)
+	struct FString software_id; // 0x30 (16)
+	struct FString network_id; // 0x40 (16)
+};
+
+// ScriptStruct BravoHotelGame.Response_Login
+struct FResponse_Login {
+	uint32_t C; // 0x0 (4)
+	struct FString E; // 0x8 (16)
+	struct Unknown D; // 0x18 (104)
+};
+
+// ScriptStruct BravoHotelGame.Response_Login_Rec
+struct FResponse_Login_Rec {
+	char created : 0; // 0x0 (1)
+	struct FString UID; // 0x8 (16)
+	char go_to_create_pc : 0; // 0x18 (1)
+	struct FString auth_token; // 0x20 (16)
+	struct FString Language; // 0x30 (16)
+	char clean_campaign_joined : 0; // 0x40 (1)
+	struct FString Msg; // 0x48 (16)
+	struct FString m; // 0x58 (16)
+};
+
+// ScriptStruct BravoHotelGame.Request_Login
+struct FRequest_Login {
+	struct FString Client_version; // 0x0 (16)
+	int32_t os; // 0x10 (4)
+	struct FString guest_id; // 0x18 (16)
+};
+
+// ScriptStruct BravoHotelGame.Response_AskLoginAv
+struct FResponse_AskLoginAv {
+	uint32_t C; // 0x0 (4)
+	struct FString E; // 0x8 (16)
+	struct Unknown D; // 0x18 (32)
+};
+
+// ScriptStruct BravoHotelGame.Response_AskLoginAvame
+struct FResponse_AskLoginAv {
+	char approved : 0; // 0x0 (1)
+	struct FString entry_code; // 0x8 (16)
+	uint32_t waiting_user; // 0x18 (4)
+	char not_available : 0; // 0x1C (1)
+};
+
+// ScriptStruct BravoHotelGame.Request_AskLoginAvailable
+struct FRequest_AskLoginAvailable {
+	struct FString waiting_ticket; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.Response_GetWaitingTicket
+struct FResponse_GetWaitingTicket {
+	uint32_t C; // 0x0 (4)
+	struct FString E; // 0x8 (16)
+	struct Unknown D; // 0x18 (40)
+};
+
+// ScriptStruct BravoHotelGame.Response_GetWaitingTicket_Rec
+struct FResponse_GetWaitingTicket_Rec {
+	struct FString waiting_ticket; // 0x0 (16)
+	struct FString entry_code; // 0x10 (16)
+	char not_available : 0; // 0x20 (1)
+};
+
+// ScriptStruct BravoHotelGame.Response_Header
+struct FResponse_Header {
+	uint32_t C; // 0x0 (4)
+	struct FString E; // 0x8 (16)
+};
+
+// ScriptStruct BravoHotelGame.ConfigData
+struct FConfigData {
+	struct FString service_status; // 0x0 (16)
+	uint32_t client_version_least; // 0x10 (4)
+	uint32_t client_version_latest; // 0x14 (4)
+	struct FString ui_lobby; // 0x18 (16)
+	struct FString api_wait; // 0x28 (16)
+	struct FString api_auth; // 0x38 (16)
+	struct FString api_game; // 0x48 (16)
+	struct FString api_websocket; // 0x58 (16)
+	struct FString wait_status; // 0x68 (16)
+	struct TArray<Unknown> ping_display_by_region; // 0x78 (16)
+	struct FString log_target_for_client; // 0x88 (16)
+	struct Unknown log_target_for_client_to_kinesis; // 0x98 (128)
+	struct FString log_target_for_dedi; // 0x118 (16)
+	struct FString replay_min_supported_version; // 0x128 (16)
+	struct FString replay_transfer_bucket; // 0x138 (16)
+	struct FString evidential_data_bucket; // 0x148 (16)
+	struct Unknown log_target_for_client_to_google; // 0x158 (48)
+	char find_close_match_making_tag : 0; // 0x188 (1)
+	uint32_t first_match_try_timeout_seconds; // 0x18C (4)
+};
+
+// ScriptStruct BravoHotelGame.GoogleClientConfigData
+struct FGoogleClientConfigData {
+	struct FString privatekey; // 0x0 (16)
+	struct FString privateid; // 0x10 (16)
+	struct FString iss; // 0x20 (16)
+};
+
+// ScriptStruct BravoHotelGame.KinesisConfigData
+struct FKinesisConfigData {
+	struct FString cognito_kinesis_region; // 0x0 (16)
+	struct FString cognito_user_pool_id; // 0x10 (16)
+	struct FString cognito_user_pool_client_id; // 0x20 (16)
+	struct FString cognito_user_name; // 0x30 (16)
+	struct FString cognito_user_password; // 0x40 (16)
+	struct FString cognito_identity_pool_id; // 0x50 (16)
+	struct FString kinesis_data_stream_name; // 0x60 (16)
+	struct FString evidential_data_bucket; // 0x70 (16)
+};
+
+// ScriptStruct BravoHotelGame.RegionConfigData
+struct FRegionConfigData {
+	struct FString region; // 0x0 (16)
+	struct FString ec2_endpoint_url; // 0x10 (16)
+	struct TArray<Unknown> m; // 0x20 (16)
+};
+
+// ScriptStruct BravoHotelGame.WeaponCompare
+struct FWeaponCompare {
+	char CompareRating : 0; // 0x0 (1)
+	struct Unknown Power; // 0x8 (32)
+	struct Unknown EffectiveRange; // 0x28 (32)
+	struct Unknown Stability; // 0x48 (32)
+	struct Unknown Firingrate; // 0x68 (32)
+	struct Unknown Ammo; // 0x88 (32)
+	struct FText PickupWeaponText; // 0xA8 (24)
+	struct FText WeaponItemComparingName; // 0xC0 (24)
+	struct FString AmmoInfo; // 0xD8 (16)
+	struct TSoftObjectPtr<Unknown> TexturePtr; // 0xE8 (40)
+	enum class Unknow PickupRarity; // 0x110 (1)
+	struct FText Desc; // 0x118 (24)
+	char WeaponLockVisibility : 0; // 0x130 (1)
+	char IsMyWeapon : 0; // 0x131 (1)
+	char BindInfoVisibility : 0; // 0x132 (1)
+	struct FString BindInfoNickName; // 0x138 (16)
+	struct FString BindInfoDesc; // 0x148 (16)
+	int32_t BindLevel; // 0x158 (4)
+	struct TArray<Unknown> AbilitySlot; // 0x160 (16)
+};
+
+// ScriptStruct BravoHotelGame.AbilitySlot
+struct FAbilitySlot {
+	struct FString Icon; // 0x0 (16)
+	struct FString Value; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.ItemCompareInfo
+struct FItemCompareInfo {
+	int32_t Value; // 0x0 (4)
+	int32_t CompareValue; // 0x4 (4)
+	enum class Unknow CompareType; // 0x8 (1)
+	struct FString CompareString; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.ItemComparefloatInfo
+struct FItemComparefloatInfo {
+	float Value; // 0x0 (4)
+	float CompareValue; // 0x4 (4)
+	enum class Unknow CompareType; // 0x8 (1)
+	struct FString CompareString; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.WeaponItem
+struct FWeaponItem {
+	float Power; // 0x0 (4)
+	int32_t EffectiveRange; // 0x4 (4)
+	float Stability; // 0x8 (4)
+	int32_t Firingrate; // 0xC (4)
+	int32_t Ammo; // 0x10 (4)
+	struct FString PickupWeaponText; // 0x18 (16)
+	struct FString AmmoInfo; // 0x28 (16)
+	struct TSoftObjectPtr<Unknown> TexturePtr; // 0x38 (40)
+	enum class Unknow Rarity; // 0x60 (1)
+	struct FText Desc; // 0x68 (24)
+	char WeaponLockVisibility : 0; // 0x80 (1)
+	char IsMyWeapon : 0; // 0x81 (1)
+	char BindInfoVisibility : 0; // 0x82 (1)
+	struct FString BindInfoNickName; // 0x88 (16)
+	struct FString BindInfoDesc; // 0x98 (16)
+	int32_t BindLevel; // 0xA8 (4)
+	struct TArray<Unknown> AbilitySlot; // 0xB0 (16)
+};
+
+// ScriptStruct BravoHotelGame.PickupItem
+struct FPickupItem {
+	char Visibility : 0; // 0x0 (1)
+	char NotEnoughSpace : 0; // 0x1 (1)
+	char SeperateAmmo : 0; // 0x2 (1)
+	char bNeedItem : 0; // 0x3 (1)
+	char bFullNeedItem : 0; // 0x4 (1)
+	struct FText DisplayName; // 0x8 (24)
+	int32_t Quantity; // 0x20 (4)
+	struct FString ItemMessage; // 0x28 (16)
+	struct TSoftObjectPtr<Unknown> TexturePtr; // 0x38 (40)
+	enum class Unknow ItemType; // 0x60 (1)
+	enum class Unknow Rarity; // 0x61 (1)
+	struct FText Desc; // 0x68 (24)
+	struct FText CombineTargetText; // 0x80 (24)
+};
+
+// ScriptStruct BravoHotelGame.Action
+struct FAction {
+	char Visibility : 0; // 0x0 (1)
+	char State : 0; // 0x1 (1)
+	char Ladder : 0; // 0x2 (1)
+	char pad_0_0 : 6; // 0x0 (1)
+	char SpaceBar : 1; // 0x3 (1)
+	char pad_0_7 : 1; // 0x0 (1)
+	struct FString Message; // 0x8 (16)
+	struct FString SubMessage; // 0x18 (16)
+	struct FString BombingMessage; // 0x28 (16)
+};
+
+// ScriptStruct BravoHotelGame.RecipeTreeWidgetInfo
+struct FRecipeTreeWidgetInfo {
+	struct Unknown CurrentWidget; // 0x0 (8)
+	int32_t RepairWidgetInfoIndex; // 0x8 (4)
+	struct TArray<Unknown> MaterialWidgetInfoIndex; // 0x10 (16)
+	struct TArray<Unknown> TreeDecoWidgets; // 0x20 (16)
+};
+
+// ScriptStruct BravoHotelGame.SpawnedItemInfo
+struct FSpawnedItemInfo {
+	struct Unknown Loc; // 0x0 (12)
+	struct Unknown Rot; // 0xC (12)
+	struct Unknown ForwardVector; // 0x18 (12)
+};
+
+// ScriptStruct BravoHotelGame.ResultSpawnItemInfo
+struct FResultSpawnItemInfo {
+	int32_t SpawnBoxID; // 0x0 (4)
+	struct FName ItemId; // 0x4 (8)
+	struct Unknown SpawnItem; // 0x10 (8)
+	int32_t ItemCount; // 0x18 (4)
+};
+
+// ScriptStruct BravoHotelGame.SpawnItemsInBox
+struct FSpawnItemsInBox {
+	struct Unknown Item; // 0x0 (16)
+	enum class Unknow Rarity; // 0x10 (1)
+};
+
+// ScriptStruct BravoHotelGame.MustSpawnItemInfo
+struct FMustSpawnItemInfo {
+	int32_t ItemId; // 0x0 (4)
+	int32_t ItemCount; // 0x4 (4)
+};
+
+// ScriptStruct BravoHotelGame.SpawnItemInfo
+struct FSpawnItemInfo {
+	enum class Unknow ItemType; // 0x0 (1)
+	float ItemProbability; // 0x4 (4)
+};
+
+// ScriptStruct BravoHotelGame.SpawnBoxList
+struct FSpawnBoxList {
+	struct TArray<Unknown> List; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.StandardGroupInfo_UI
+struct FStandardGroupInfo_UI {
+	struct FString StandardGroupName; // 0x0 (16)
+	struct FString StandardGroupKey; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.BuildingInfo_UI
+struct FBuildingInfo_UI {
+	struct Unknown BuildingPosition; // 0x0 (8)
+	struct FString BuildingName; // 0x8 (16)
+};
+
+// ScriptStruct BravoHotelGame.BuildingData
+struct FBuildingData {
+	struct Unknown BuildingPosition; // 0x0 (12)
+	struct Unknown SlotWidget; // 0x10 (8)
+	struct TArray<Unknown> SpawnInfos; // 0x18 (16)
+	struct TArray<Unknown> DivisionInfos; // 0x28 (16)
+	struct TArray<Unknown> RateAddInfos; // 0x38 (16)
+	struct TArray<Unknown> RateRemoveInfos; // 0x48 (16)
+	struct TMap<Unknown, Unknown>Unknown StandardGroupData; // 0x58 (80)
+};
+
+// ScriptStruct BravoHotelGame.ItemRecipeTreeData
+struct FItemRecipeTreeData : FTableRowBase {
+	struct FName CurrentRecipe; // 0x8 (8)
+	struct FName CurrentItem; // 0x10 (8)
+	int32_t Count; // 0x18 (4)
+	struct FName RepairRecipe; // 0x1C (8)
+};
+
+// ScriptStruct BravoHotelGame.ItemRecipeData
+struct FItemRecipeData : FTableRowBase {
+	struct FName ResultItem; // 0x8 (8)
+	char RepairRecipe : 0; // 0x10 (1)
+	char TopRecipe : 0; // 0x11 (1)
+	float CombineTime; // 0x14 (4)
+	struct TArray<Unknown> GroupRewardIDs; // 0x18 (16)
+	struct TArray<Unknown> MaterialItems; // 0x28 (16)
+};
+
+// ScriptStruct BravoHotelGame.ItemRecipeMaterialElement
+struct FItemRecipeMaterialElement : FTableRowBase {
+	struct FName MaterialItem; // 0x8 (8)
+	int32_t Count; // 0x10 (4)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelThrowingWeaponItemInfo
+struct FBravoHotelThrowingWeaponItemInfo {
+	struct Unknown ItemInfo; // 0x0 (152)
+	struct Unknown ItemDetailInfo; // 0x98 (1168)
+	char PrevItem : 0; // 0x528 (1)
+};
+
+// ScriptStruct BravoHotelGame.ItemEffectData
+struct FItemEffectData : FTableRowBase {
+	struct Unknown RootParticle; // 0x8 (8)
+	struct Unknown RootParticleScale; // 0x10 (12)
+	struct Unknown OriginEffectInfo; // 0x20 (160)
+	struct Unknown WeakEffectInfo; // 0xC0 (160)
+	struct Unknown ActivateParticle; // 0x160 (8)
+	struct Unknown DeactivateParticle; // 0x168 (8)
+	struct TSoftObjectPtr<Unknown> MeshParticle; // 0x170 (40)
+	struct Unknown MeshParticleScale; // 0x198 (12)
+	struct Unknown MeshParticleTransform; // 0x1B0 (48)
+	struct FName MeshParticleAttachSocketName; // 0x1E0 (8)
+	struct TArray<Unknown> SubParticles; // 0x1E8 (16)
+};
+
+// ScriptStruct BravoHotelGame.ItemEffectSubParticleInfo
+struct FItemEffectSubParticleInfo {
+	struct Unknown Particle; // 0x0 (8)
+	enum class Unknow SpawnType; // 0x8 (1)
+	struct TMap<Unknown, Unknown>Unknown ParticleColor; // 0x10 (80)
+	struct Unknown Scale; // 0x60 (12)
+};
+
+// ScriptStruct BravoHotelGame.ItemEffectInfo
+struct FItemEffectInfo {
+	struct TMap<Unknown, Unknown>Unknown RootParticleColor; // 0x0 (80)
+	struct TMap<Unknown, Unknown>Unknown StaticMeshColor; // 0x50 (80)
+};
+
+// ScriptStruct BravoHotelGame.ItemAbilityData
+struct FItemAbilityData : FTableRowBase {
+	struct FName WeaponId; // 0x8 (8)
+	enum class Unknow WeaponType; // 0x10 (1)
+	enum class Unknow ThrowingWeaponType; // 0x11 (1)
+	enum class Unknow WeaponAttachmentType; // 0x12 (1)
+	enum class Unknow WeaponAttachmentItem; // 0x13 (1)
+	struct Unknown Ability; // 0x18 (168)
+	struct Unknown AttachmentInfo; // 0xC0 (72)
+	struct TArray<Unknown> EquipedBuffName; // 0x108 (16)
+	struct TArray<Unknown> UsingBuffName; // 0x118 (16)
+	char bMovableDuringUse : 0; // 0x128 (1)
+};
+
+// ScriptStruct BravoHotelGame.ItemEquipData
+struct FItemEquipData : FTableRowBase {
+	struct TSoftClassPtr<UObject> EquippableItemClass; // 0x8 (40)
+	struct FName MutableUniqueKey; // 0x30 (8)
+	char bUseEquippedStaticMesh : 0; // 0x38 (1)
+	struct TSoftObjectPtr<Unknown> EquippedStaticMesh; // 0x40 (40)
+	struct TSoftObjectPtr<Unknown> EquippedSkeletalMesh; // 0x68 (40)
+};
+
+// ScriptStruct BravoHotelGame.ItemPickUpData
+struct FItemPickUpData : FTableRowBase {
+	struct FName ItemEffectID; // 0x8 (8)
+	char bOverridePickupScale : 0; // 0x10 (1)
+	struct Unknown OverlapBoxExtent; // 0x14 (12)
+	float TraceSphereRadius; // 0x20 (4)
+	struct Unknown WorldStaticMeshLoc; // 0x24 (12)
+	struct Unknown WorldStaticMeshRot; // 0x30 (12)
+	struct Unknown WorldStaticMeshScale; // 0x3C (12)
+	struct Unknown WorldSkelMeshLoc; // 0x48 (12)
+	struct Unknown WorldSkelMeshRot; // 0x54 (12)
+	struct Unknown WorldSkelMeshScale; // 0x60 (12)
+	char bUseStaticMesh : 0; // 0x6C (1)
+	struct TSoftObjectPtr<Unknown> WorldStaticMesh; // 0x70 (40)
+	struct TSoftObjectPtr<Unknown> WorldSkeletalMesh; // 0x98 (40)
+	float NetCullDistanceSquared; // 0xC0 (4)
+	float DrawDistance; // 0xC4 (4)
+	struct TSoftObjectPtr<Unknown> AudioEvent; // 0xC8 (40)
+};
+
+// ScriptStruct BravoHotelGame.InventoryItemInfoArray
+struct FInventoryItemInfoArray {
+	struct TArray<Unknown> ItemInfos; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.DivisionItem
+struct FDivisionItem {
+	char DivisionComplete : 0; // 0x0 (1)
+	struct TArray<Unknown> Items; // 0x8 (16)
+};
+
+// ScriptStruct BravoHotelGame.KeepedItemInfo
+struct FKeepedItemInfo {
+	struct Unknown MainItemInfo; // 0x0 (152)
+	struct TArray<Unknown> AdditionalItemInfos; // 0x98 (16)
+};
+
+// ScriptStruct BravoHotelGame.ItemUse
+struct FItemUse {
+	char Visibility : 0; // 0x0 (1)
+	char SubInfo : 0; // 0x1 (1)
+	float Percent; // 0x4 (4)
+	float RemainTime; // 0x8 (4)
+	struct Unknown Color; // 0xC (4)
+	struct FString Message; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.PopupWidgetInfo
+struct FPopupWidgetInfo {
+	struct Unknown Widget; // 0x0 (8)
+	char IsGmaeAndUIMode : 0; // 0x8 (1)
+	char ShowMouseCursorCapture : 0; // 0x9 (1)
+	char bOnlyRemoveByObject : 0; // 0xA (1)
+};
+
+// ScriptStruct BravoHotelGame.Coh_Response_MaterialList
+struct FCoh_Response_MaterialList {
+	struct TArray<Unknown> m; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.Coh_Response_Weapon_List
+struct FCoh_Response_Weapon_List {
+	struct TArray<Unknown> weapon_list; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.Coh_InviteUser
+struct FCoh_InviteUser {
+	struct FString Name; // 0x0 (16)
+	struct FString UID; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.Coh_Error
+struct FCoh_Error {
+	int32_t Code; // 0x0 (4)
+	struct FString Desc; // 0x8 (16)
+};
+
+// ScriptStruct BravoHotelGame.Coh_PartyInfo
+struct FCoh_PartyInfo {
+	struct FString PartyID; // 0x0 (16)
+	struct FString LeaderUID; // 0x10 (16)
+	char IsInvite : 0; // 0x20 (1)
+	struct TArray<Unknown> Members; // 0x28 (16)
+};
+
+// ScriptStruct BravoHotelGame.Coh_PartyMemberInfo
+struct FCoh_PartyMemberInfo {
+	struct FString UID; // 0x0 (16)
+	struct FString Name; // 0x10 (16)
+	char IsReady : 0; // 0x20 (1)
+	char IsVoiceChat : 0; // 0x21 (1)
+	char IsLeader : 0; // 0x22 (1)
+	char IsOnline : 0; // 0x23 (1)
+	struct FString clientStatus; // 0x28 (16)
+	int32_t SeasonTierID; // 0x38 (4)
+	struct FString AccessRegion; // 0x40 (16)
+	int32_t Ping; // 0x50 (4)
+	struct FString steamID; // 0x58 (16)
+	struct Unknown Pos; // 0x68 (8)
+	int32_t ClassDataIndex; // 0x70 (4)
+	struct FString ClassName; // 0x78 (16)
+	int32_t ClassLevel; // 0x88 (4)
+};
+
+// ScriptStruct BravoHotelGame.Coh_LocalPlayerInfo
+struct FCoh_LocalPlayerInfo {
+	struct FString UID; // 0x0 (16)
+	struct FString Name; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.CoherentSavedSettings
+struct FCoherentSavedSettings {
+	struct FString UserID; // 0x0 (16)
+	char bArmory : 0; // 0x10 (1)
+	char bInventory : 0; // 0x11 (1)
+	char bSupplybox : 0; // 0x12 (1)
+	char bInviteBox : 0; // 0x13 (1)
+};
+
+// ScriptStruct BravoHotelGame.ReplayCircleInfo
+struct FReplayCircleInfo {
+	char IsReplayCircle : 0; // 0x0 (1)
+	struct Unknown ReplayCirclePos; // 0x4 (8)
+	float ReplayCircleRadius; // 0xC (4)
+};
+
+// ScriptStruct BravoHotelGame.MapCompBlueZoneInfo
+struct FMapCompBlueZoneInfo {
+	char IsBlueZone : 0; // 0x0 (1)
+	char IsVisibleBlueZone : 0; // 0x1 (1)
+	struct Unknown CurrentSurvivalCirclePos; // 0x4 (8)
+	float CurrentSurvivalCircleRadius; // 0xC (4)
+	char IsVisibleTargetCircle : 0; // 0x10 (1)
+	struct Unknown TargetSurvivalCirclePos; // 0x14 (8)
+	float TargetSurvivalCircleRadius; // 0x1C (4)
+	struct Unknown OuterCirclePos; // 0x20 (8)
+	float OuterCircleRadius; // 0x28 (4)
+};
+
+// ScriptStruct BravoHotelGame.PersonalSupplyBoxInfo
+struct FPersonalSupplyBoxInfo {
+	char IsSpawned : 0; // 0x0 (1)
+	struct Unknown Position; // 0x4 (8)
+	enum class Unknow PingType; // 0xC (1)
+};
+
+// ScriptStruct BravoHotelGame.MapPlayerInfo
+struct FMapPlayerInfo {
+	struct Unknown PlayerState; // 0x0 (8)
+	struct Unknown Position; // 0x8 (8)
+	float Angle; // 0x10 (4)
+	struct Unknown PlayerIconWidget; // 0x18 (8)
+	char HasMarker : 0; // 0x20 (1)
+	struct Unknown MarkerPosition; // 0x24 (8)
+	struct Unknown PlayerMarkerWidget; // 0x30 (8)
+	char HasRoutePing : 0; // 0x38 (1)
+	struct TArray<Unknown> RoutePositions; // 0x40 (16)
+	struct Unknown RoutePingWidget; // 0x50 (8)
+};
+
+// ScriptStruct BravoHotelGame.MuzzleEffect
+struct FMuzzleEffect {
+	struct Unknown MuzzleFlash_3P_SingleFire; // 0x0 (8)
+	struct Unknown MuzzleSmoke_3P_SingleFire; // 0x8 (8)
+	struct Unknown MuzzleFlash_3P_MultiFire; // 0x10 (8)
+	struct Unknown MuzzleSmoke_3P_MultiFire; // 0x18 (8)
+	struct Unknown MuzzleFlash_1P_SingleFire; // 0x20 (8)
+	struct Unknown MuzzleSmoke_1P_SingleFire; // 0x28 (8)
+	struct Unknown MuzzleFlash_1P_MultiFire; // 0x30 (8)
+	struct Unknown MuzzleSmoke_1P_MultiFire; // 0x38 (8)
+	struct Unknown MuzzleFlash_1P_HighMagnificationSight; // 0x40 (8)
+	struct Unknown MuzzleSmoke_1P_HighMagnificationSight; // 0x48 (8)
+};
+
+// ScriptStruct BravoHotelGame.RepNewbieData
+struct FRepNewbieData {
+	char bIsBeginner : 0; // 0x0 (1)
+	int32_t DefeatLevel; // 0x4 (4)
+	struct FString Training; // 0x8 (16)
+	int32_t LoserScore; // 0x18 (4)
+};
+
+// ScriptStruct BravoHotelGame.ReplayFireEvent
+struct FReplayFireEvent {
+	struct FString NetGUID; // 0x0 (16)
+	struct Unknown ProjectileInfo; // 0x10 (168)
+};
+
+// ScriptStruct BravoHotelGame.RepCharacterAppearanceInfo
+struct FRepCharacterAppearanceInfo {
+	int32_t FaceID; // 0x0 (4)
+	int32_t FaceColorID; // 0x4 (4)
+	int32_t HairID; // 0x8 (4)
+	int32_t HairColorID; // 0xC (4)
+	int8_t gender; // 0x10 (1)
+};
+
+// ScriptStruct BravoHotelGame.RepSimulatedDeathInfo
+struct FRepSimulatedDeathInfo {
+	char bRagdollStartForce : 0; // 0x0 (1)
+	struct Unknown RagdollStartForce; // 0x4 (12)
+	struct Unknown DeathRotation; // 0x10 (12)
+	struct Unknown Anim1P; // 0x20 (8)
+	struct Unknown Anim3P; // 0x28 (8)
+};
+
+// ScriptStruct BravoHotelGame.RepDestructComponentInfo
+struct FRepDestructComponentInfo {
+	float Damage; // 0x0 (4)
+	struct Unknown Direction; // 0x4 (12)
+	struct Unknown Location; // 0x10 (12)
+	struct Unknown Instigator; // 0x20 (8)
+	int16_t InstanceIndex; // 0x28 (2)
+};
+
+// ScriptStruct BravoHotelGame.BaseProtocolLog
+struct FBaseProtocolLog {
+	struct FString UserID; // 0x0 (16)
+	struct FString NickName; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.ReceiveHttpLog
+struct FReceiveHttpLog : FBaseProtocolLog {
+	struct FString URL; // 0x30 (16)
+	int32_t responsecode; // 0x40 (4)
+};
+
+// ScriptStruct BravoHotelGame.SendHttpLog
+struct FSendHttpLog : FBaseProtocolLog {
+	struct FString route; // 0x30 (16)
+};
+
+// ScriptStruct BravoHotelGame.NetworkWebSocket
+struct FNetworkWebSocket {
+	struct Unknown WebSocket; // 0x0 (8)
+	struct FString ip; // 0x8 (16)
+	int32_t Port; // 0x18 (4)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientOutGameCommonErrorData
+struct FAnalysisClientOutGameCommonErrorData {
+	struct FString m; // 0x0 (16)
+	int32_t error_code; // 0x10 (4)
+	struct FString error_message; // 0x18 (16)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientOutGameFirstClientRunData
+struct FAnalysisClientOutGameFirstClientRunData {
+	struct FString progress_name; // 0x0 (16)
+	int32_t tutorial_progress; // 0x10 (4)
+	int32_t tutorial_movie_skiptime; // 0x14 (4)
+	struct Unknown pc_data; // 0x18 (120)
+};
+
+// ScriptStruct BravoHotelGame.OutGamePCData
+struct FOutGamePCData {
+	struct FString os_name; // 0x0 (16)
+	struct FString cpu_name; // 0x10 (16)
+	struct FString gpu_name; // 0x20 (16)
+	struct FString m; // 0x30 (16)
+	struct FString ip_address; // 0x40 (16)
+	struct FString install_storage_type; // 0x50 (16)
+	float game_view_width; // 0x60 (4)
+	float game_view_height; // 0x64 (4)
+	struct FString Client_version; // 0x68 (16)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientOutGameTutorialMovieSkipData
+struct FAnalysisClientOutGameTutorialMovieSkipData {
+	int32_t skip_time; // 0x0 (4)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientOutGameTutorialPlayCompleteData
+struct FAnalysisClientOutGameTutorialPlayCompleteData {
+	int32_t play_time; // 0x0 (4)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientOutGameTutorialPlayExitData
+struct FAnalysisClientOutGameTutorialPlayExitData {
+	int32_t play_time; // 0x0 (4)
+	int32_t progress; // 0x4 (4)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientOutGameExitData
+struct FAnalysisClientOutGameExitData {
+	int32_t scene_type; // 0x0 (4)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientOutGameLobbyUIActionData
+struct FAnalysisClientOutGameLobbyUIActionData {
+	int32_t before_scene_type; // 0x0 (4)
+	int32_t after_scene_type; // 0x4 (4)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientOutGameLoginSucessData
+struct FAnalysisClientOutGameLoginSucessData {
+	struct Unknown pc_data; // 0x0 (120)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientOutGameLoginForbidData
+struct FAnalysisClientOutGameLoginForbidData {
+	struct FString forbid_reason; // 0x0 (16)
+	struct Unknown pc_data; // 0x10 (120)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientOutGameMatchingCancelData
+struct FAnalysisClientOutGameMatchingCancelData {
+	int32_t GameViewType; // 0x0 (4)
+	int32_t BattleMode; // 0x4 (4)
+	struct FString m; // 0x8 (16)
+	struct FString m; // 0x18 (16)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientOutGameMatchingSuccessData
+struct FAnalysisClientOutGameMatchingSuccessData {
+	struct FString game_server_id; // 0x0 (16)
+	struct FString m; // 0x10 (16)
+	int32_t GameViewType; // 0x20 (4)
+	int32_t BattleMode; // 0x24 (4)
+	struct FString m; // 0x28 (16)
+	struct FString m; // 0x38 (16)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisDSDisconnectData
+struct FAnalysisDSDisconnectData {
+	struct FString Error; // 0x0 (16)
+	struct FString reason; // 0x10 (16)
+	int32_t connected_duration; // 0x20 (4)
+	struct FString Version; // 0x28 (16)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisDSConnectFailData
+struct FAnalysisDSConnectFailData {
+	struct FString URL; // 0x0 (16)
+	enum class Unknow Type; // 0x10 (1)
+	struct FString Error; // 0x18 (16)
+	struct FString reason; // 0x28 (16)
+	int32_t retry; // 0x38 (4)
+	int32_t connecting_fail_time; // 0x3C (4)
+	struct FString Version; // 0x40 (16)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisDSConnectSuccessData
+struct FAnalysisDSConnectSuccessData {
+	struct FString URL; // 0x0 (16)
+	enum class Unknow Type; // 0x10 (1)
+	int32_t retry; // 0x14 (4)
+	int32_t connecting_success_time; // 0x18 (4)
+	struct FString Version; // 0x20 (16)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientOutGameData
+struct FAnalysisClientOutGameData {
+	enum class Unknow contentType; // 0x0 (1)
+	struct FString Base; // 0x8 (16)
+	struct FString Msg; // 0x18 (16)
+	struct FString nowDate; // 0x28 (16)
+	struct FString ApiPhase; // 0x38 (16)
+};
+
+// ScriptStruct BravoHotelGame.AnalysisClientOutGameDataHead
+struct FAnalysisClientOutGameDataHead {
+	int32_t DateTime; // 0x0 (4)
+	struct FString UserID; // 0x8 (16)
+	struct FString NickName; // 0x18 (16)
+	int32_t Level; // 0x28 (4)
+	int32_t exp; // 0x2C (4)
+};
+
+// ScriptStruct BravoHotelGame.OutGameAccountData
+struct FOutGameAccountData {
+	int32_t Level; // 0x0 (4)
+	int32_t exp; // 0x4 (4)
+};
+
+// ScriptStruct BravoHotelGame.TimedCameraEffectData
+struct FTimedCameraEffectData {
+	struct Unknown TargetCamera_TPP; // 0x8 (8)
+	struct Unknown TargetCamera_FPP; // 0x10 (8)
+	struct Unknown SpawnedParticle_TPP; // 0x18 (8)
+	struct Unknown SpawnedParticle_FPP; // 0x20 (8)
+};
+
+// ScriptStruct BravoHotelGame.TimedCameraPostProcessData
+struct FTimedCameraPostProcessData {
+	struct Unknown CameraPostProcess; // 0x18 (8)
+};
+
+// ScriptStruct BravoHotelGame.BuffSlot
+struct FBuffSlot {
+	struct TArray<Unknown> UIBuff; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.MyInfo
+struct FMyInfo {
+	int32_t CurrentAmmo; // 0x0 (4)
+	int32_t CapacityAmmo; // 0x4 (4)
+	int32_t TotalAmmo; // 0x8 (4)
+	enum class Unknow Mode; // 0xC (1)
+	int32_t CurrentEnergy; // 0x10 (4)
+	int32_t MaxEnergy; // 0x14 (4)
+	int32_t CurrentHealth; // 0x18 (4)
+	int32_t MaxHealth; // 0x1C (4)
+	int32_t ShortTimeHealth; // 0x20 (4)
+	int32_t TargetHealth; // 0x24 (4)
+	float BackpackPercent; // 0x28 (4)
+	char bIsFirstPerson : 0; // 0x2C (1)
+	int32_t Stance; // 0x30 (4)
+	char bIsHeadbanging : 0; // 0x34 (1)
+};
+
+// ScriptStruct BravoHotelGame.WeaponWidgetInfo
+struct FWeaponWidgetInfo {
+	char IsEquipped : 0; // 0x0 (1)
+	int32_t SlotIndex; // 0x4 (4)
+	struct FText Name; // 0x8 (24)
+	enum class Unknow WeaponLevel; // 0x20 (1)
+	struct TSoftObjectPtr<Unknown> Texture; // 0x28 (40)
+	struct FString AmmoName; // 0x50 (16)
+	int32_t Damage; // 0x60 (4)
+	int32_t AdditionalDamage; // 0x64 (4)
+	int32_t BulletsPerShot; // 0x68 (4)
+	enum class Unknow Mode; // 0x6C (1)
+	char IsFireMode : 0; // 0x6D (1)
+	struct FString CurrentAmmo; // 0x70 (16)
+	struct FString CapacityAmmo; // 0x80 (16)
+	struct FString TotalAmmo; // 0x90 (16)
+	enum class Unknow LoadingType; // 0xA0 (1)
+};
+
+// ScriptStruct BravoHotelGame.ActorPoolInfo
+struct FActorPoolInfo {
+	struct Unknown* ActorClass; // 0x0 (8)
+	struct TArray<Unknown> PoolingActors; // 0x8 (16)
+	struct TArray<Unknown> ActiveActors; // 0x18 (16)
+	struct Unknown CurrentWorld; // 0x28 (8)
+};
+
+// ScriptStruct BravoHotelGame.WaitingEvent
+struct FWaitingEvent {
+	float DelayTime; // 0x0 (4)
+	int32_t TrialCount; // 0x4 (4)
+};
+
+// ScriptStruct BravoHotelGame.BlindCharacter
+struct FBlindCharacter {
+	struct Unknown Character; // 0x0 (8)
+	struct Unknown ImpactNormal; // 0x8 (12)
+};
+
+// ScriptStruct BravoHotelGame.UpdateAchievementData
+struct FUpdateAchievementData {
+	struct FString PlayerUID; // 0x0 (16)
+	int32_t AchievementID; // 0x10 (4)
+	int32_t AddValue; // 0x14 (4)
+};
+
+// ScriptStruct BravoHotelGame.AchievementInfo
+struct FAchievementInfo {
+	int32_t ID; // 0x0 (4)
+	enum class Unknow State; // 0x4 (1)
+	int32_t CurrentValue; // 0x8 (4)
+	int32_t GoalValue; // 0xC (4)
+};
+
+// ScriptStruct BravoHotelGame.UpdateQuestData
+struct FUpdateQuestData {
+	struct FString PlayerUID; // 0x0 (16)
+	int32_t QuestID; // 0x10 (4)
+	int32_t AddValue; // 0x14 (4)
+};
+
+// ScriptStruct BravoHotelGame.AchievementData
+struct FAchievementData : FTableRowBase {
+	int32_t ID; // 0x8 (4)
+	enum class Unknow Type; // 0xC (1)
+	struct TArray<Unknown> GoalValues; // 0x10 (16)
+	struct TArray<Unknown> Steps; // 0x20 (16)
+	int32_t Point; // 0x30 (4)
+	struct FText Description; // 0x38 (24)
+};
+
+// ScriptStruct BravoHotelGame.ConversationData
+struct FConversationData : FTableRowBase {
+	struct TArray<Unknown> SentenceData; // 0x8 (16)
+};
+
+// ScriptStruct BravoHotelGame.BackupSlotData
+struct FBackupSlotData {
+	struct Unknown Slot; // 0x0 (8)
+	float OldValue; // 0x8 (4)
+};
+
+// ScriptStruct BravoHotelGame.SettingInfoList
+struct FSettingInfoList {
+	struct TArray<Unknown> List; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.SettingInfoData
+struct FSettingInfoData {
+	struct FName TableKey; // 0x0 (8)
+	struct Unknown Data; // 0x8 (136)
+};
+
+// ScriptStruct BravoHotelGame.ChangeKeySlotInfo
+struct FChangeKeySlotInfo {
+	char IsChangedMainKey : 0; // 0x0 (1)
+	char IsChangedSubKey : 0; // 0x1 (1)
+	struct Unknown Slot; // 0x8 (8)
+};
+
+// ScriptStruct BravoHotelGame.SignificanceCriteriaSetup
+struct FSignificanceCriteriaSetup {
+	char bCheckVisibility : 0; // 0x0 (1)
+	char bUseAsScreenSize : 0; // 0x1 (1)
+	struct TArray<Unknown> Criterias; // 0x8 (16)
+	struct TArray<Unknown> CriteriaWhenVisible; // 0x18 (16)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelLoserScore
+struct FBravoHotelLoserScore : FTableRowBase {
+	int32_t Level; // 0x8 (4)
+	float RankPoint; // 0xC (4)
+	float DefeatMaxPoint; // 0x10 (4)
+	float ScoreOnDefeat; // 0x14 (4)
+	float ScoreOnZeroKill; // 0x18 (4)
+	float ScoreOnZeroAssist; // 0x1C (4)
+	float ScoreOnWin; // 0x20 (4)
+	float ScorePerKill; // 0x24 (4)
+	float ScorePerAssist; // 0x28 (4)
+};
+
+// ScriptStruct BravoHotelGame.PlayMovieInfo
+struct FPlayMovieInfo {
+	struct TArray<Unknown> SoundList; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.VoiceTalkState
+struct FVoiceTalkState {
+	struct FString UserName; // 0x0 (16)
+	int32_t Volume; // 0x10 (4)
+	char bIsMute : 0; // 0x14 (1)
+	int32_t TeamPlayerIndex; // 0x18 (4)
+	int32_t Ping; // 0x1C (4)
+};
+
+// ScriptStruct BravoHotelGame.OnlineSubsystemFriends
+struct FOnlineSubsystemFriends {
+	struct FString NickName; // 0x0 (16)
+	struct FString PlayerAvatarIcon; // 0x10 (16)
+	struct TArray<Unknown> Friends; // 0x20 (16)
+};
+
+// ScriptStruct BravoHotelGame.OnlineSubsystemFriendInfo
+struct FOnlineSubsystemFriendInfo {
+	struct FString PlayerId; // 0x0 (16)
+	struct FString NickName; // 0x10 (16)
+	struct FString AvatarIcon; // 0x20 (16)
+	char IsOnline : 0; // 0x30 (1)
+	struct FString ServicePlatform; // 0x38 (16)
+};
+
+// ScriptStruct BravoHotelGame.ColorInfo
+struct FColorInfo : FTableRowBase {
+	struct Unknown ColorInfo; // 0x8 (16)
+	struct FString Desc; // 0x18 (16)
+};
+
+// ScriptStruct BravoHotelGame.ReplayCastingEvent
+struct FReplayCastingEvent {
+	struct FString NetGUID; // 0x0 (16)
+	float Time; // 0x10 (4)
+	int32_t ReplicateIndex; // 0x14 (4)
+};
+
+// ScriptStruct BravoHotelGame.CQRInfo
+struct FCQRInfo : FTableRowBase {
+	struct FText PlayerCountText; // 0x8 (24)
+};
+
+// ScriptStruct BravoHotelGame.AccountExpData
+struct FAccountExpData : FTableRowBase {
+	int32_t ID; // 0x8 (4)
+	struct FText DisplayName; // 0x10 (24)
+	struct FText Description; // 0x28 (24)
+	int32_t Level; // 0x40 (4)
+	int32_t MaxLevel; // 0x44 (4)
+	int32_t LevelUPExp; // 0x48 (4)
+	int32_t NextLevelExp; // 0x4C (4)
+	int32_t NextLevel; // 0x50 (4)
+	int32_t GroupRewardID; // 0x54 (4)
+};
+
+// ScriptStruct BravoHotelGame.SelectLoadingScreenData
+struct FSelectLoadingScreenData {
+	enum class Unknow LoadingType; // 0x0 (1)
+	struct Unknown Image; // 0x8 (8)
+	struct FText Title; // 0x10 (24)
+	struct FText Desc; // 0x28 (24)
+};
+
+// ScriptStruct BravoHotelGame.LoadingScreenData
+struct FLoadingScreenData : FTableRowBase {
+	enum class Unknow LoadingType; // 0x8 (1)
+	struct TArray<Unknown> ImageList; // 0x10 (16)
+	struct TArray<Unknown> TitleList; // 0x20 (16)
+	struct TArray<Unknown> DescList; // 0x30 (16)
+};
+
+// ScriptStruct BravoHotelGame.KickData
+struct FKickData : FTableRowBase {
+	struct FText Title; // 0x8 (24)
+	struct FText Desc; // 0x20 (24)
+	struct FText AdminDesc; // 0x38 (24)
+};
+
+// ScriptStruct BravoHotelGame.NoticeData
+struct FNoticeData : FTableRowBase {
+	struct FText Notice_String; // 0x8 (24)
+	struct FString AdminDesc; // 0x20 (16)
+};
+
+// ScriptStruct BravoHotelGame.MailMessage
+struct FMailMessage : FTableRowBase {
+	int32_t ID; // 0x8 (4)
+	int32_t Name; // 0xC (4)
+	struct FText DisplayName; // 0x10 (24)
+	struct FText DisplayDesc; // 0x28 (24)
+	enum class Unknow DefaultSender; // 0x40 (1)
+	enum class Unknow DefaultReceiver; // 0x41 (1)
+	enum class Unknow Type; // 0x42 (1)
+	enum class Unknow SaveOption; // 0x43 (1)
+	enum class Unknow Tag; // 0x44 (1)
+	struct FText TagString; // 0x48 (24)
+	enum class Unknow Tag_Additional; // 0x60 (1)
+	struct FText Tag_AdditionalString; // 0x68 (24)
+	char CustomMessage : 0; // 0x80 (1)
+	char Attached_Items : 0; // 0x81 (1)
+	int32_t LifeTime; // 0x84 (4)
+	int32_t LifeTime_AfterRead; // 0x88 (4)
+	struct FText TitleTemplate; // 0x90 (24)
+	struct FText TitleTemplate_Desc; // 0xA8 (24)
+	struct FString TitleTemplate_DataName; // 0xC0 (16)
+	struct FString TitleTemplate_DataField; // 0xD0 (16)
+	struct FText MessageTemplate; // 0xE0 (24)
+	struct FText MessageTemplate_Desc; // 0xF8 (24)
+	struct FString MessageTemplate_DataName; // 0x110 (16)
+	struct FString MessageTemplate_DataField; // 0x120 (16)
+};
+
+// ScriptStruct BravoHotelGame.RequestMessage
+struct FRequestMessage : FTableRowBase {
+	struct FText RequestMessage; // 0x8 (24)
+	char IsAmmoRequest : 0; // 0x20 (1)
+};
+
+// ScriptStruct BravoHotelGame.CustomMatchInfo
+struct FCustomMatchInfo {
+	struct Unknown PlayZoneBaseData; // 0x0 (392)
+};
+
+// ScriptStruct BravoHotelGame.MaterialItemDistanceInfo
+struct FMaterialItemDistanceInfo {
+	float Distance; // 0x0 (4)
+	struct Unknown MaterialItem; // 0x8 (8)
+};
+
+// ScriptStruct BravoHotelGame.ItemAmountInfo
+struct FItemAmountInfo : FTableRowBase {
+	int32_t Amount; // 0x8 (4)
+};
+
+// ScriptStruct BravoHotelGame.AmmoSpawnAmountInfo
+struct FAmmoSpawnAmountInfo : FTableRowBase {
+	int32_t Amount; // 0x8 (4)
+};
+
+// ScriptStruct BravoHotelGame.SimpleStringData
+struct FSimpleStringData : FTableRowBase {
+	struct FString MainString; // 0x8 (16)
+};
+
+// ScriptStruct BravoHotelGame.BlockData
+struct FBlockData : FTableRowBase {
+	int32_t Index; // 0x8 (4)
+	enum class Unknow Type; // 0xC (1)
+	char Period : 0; // 0xD (1)
+	struct FText Desc; // 0x10 (24)
+	struct FString Adm_Desc; // 0x28 (16)
+};
+
+// ScriptStruct BravoHotelGame.NoticeTextData
+struct FNoticeTextData : FTableRowBase {
+	int32_t ID; // 0x8 (4)
+	struct FText MainText; // 0x10 (24)
+};
+
+// ScriptStruct BravoHotelGame.ReplayReportUserDataInfo
+struct FReplayReportUserDataInfo {
+	struct Unknown VictimInfo; // 0x0 (48)
+	struct Unknown SuspectInfo; // 0x30 (64)
+};
+
+// ScriptStruct BravoHotelGame.ReplayReportSuspectInfo
+struct FReplayReportSuspectInfo {
+	struct FString SuspectNickName; // 0x0 (16)
+	struct FString SuspectIpAddress; // 0x10 (16)
+	struct FString MaxItemID; // 0x20 (16)
+	int32_t Distance; // 0x30 (4)
+	int32_t MaxDistance; // 0x34 (4)
+	int32_t DamageCount; // 0x38 (4)
+	int32_t HeadShotDamageCount; // 0x3C (4)
+};
+
+// ScriptStruct BravoHotelGame.ReplayReportVictimInfo
+struct FReplayReportVictimInfo {
+	struct FString VictimNickName; // 0x0 (16)
+	struct FString DamageType; // 0x10 (16)
+	struct FString HitBone; // 0x20 (16)
+};
+
+// ScriptStruct BravoHotelGame.ReplayDiedInfo
+struct FReplayDiedInfo {
+	struct Unknown Info; // 0x0 (176)
+	float Time; // 0xB0 (4)
+};
+
+// ScriptStruct BravoHotelGame.ReplayDiedSaveInfo
+struct FReplayDiedSaveInfo {
+	struct Unknown Attacker; // 0x0 (32)
+	struct Unknown KnockOut; // 0x20 (32)
+	struct Unknown Killer; // 0x40 (32)
+	struct Unknown SubKiller; // 0x60 (24)
+	struct Unknown Died; // 0x78 (24)
+	struct TArray<Unknown> Assist; // 0x90 (16)
+	char IsFinallyKill : 0; // 0xA0 (1)
+	int32_t KillCount; // 0xA4 (4)
+	enum class Unknow BroadCastKillMessageType; // 0xA8 (1)
+};
+
+// ScriptStruct BravoHotelGame.ReplayDiedPlayerInfo
+struct FReplayDiedPlayerInfo {
+	struct FString UserName; // 0x0 (16)
+	int32_t UniquePlayerId; // 0x10 (4)
+};
+
+// ScriptStruct BravoHotelGame.ReplayDiedKillerInfo
+struct FReplayDiedKillerInfo {
+	struct FString UserName; // 0x0 (16)
+	int32_t UniquePlayerId; // 0x10 (4)
+	char IsHeadShot : 0; // 0x14 (1)
+	int32_t WeaponIndex; // 0x18 (4)
+	int32_t DamageTypeID; // 0x1C (4)
+};
+
+// ScriptStruct BravoHotelGame.HitDamageLogInfo
+struct FHitDamageLogInfo {
+	struct Unknown TargetPlayerState; // 0xB40 (8)
+	char bIsWeaponKill : 0; // 0xB4C (1)
+	struct Unknown WeaponInfo; // 0x8 (2864)
+	int32_t DamageTypeRowID; // 0xB3C (4)
+	int32_t WeaponLevel; // 0xB38 (4)
+	int32_t HitCount; // 0xB48 (4)
+	float Damage; // 0x0 (4)
+	float OriginDamage; // 0xB50 (4)
+	char bIsHeadShot : 0; // 0xB54 (1)
+	enum class Unknow DamageResult; // 0xB4D (1)
+};
+
+// ScriptStruct BravoHotelGame.KillMessageInfo
+struct FKillMessageInfo {
+	int32_t Type; // 0x0 (4)
+	int32_t KillerTierID; // 0x4 (4)
+	struct FString Killer; // 0x8 (16)
+	int32_t VictimTierID; // 0x18 (4)
+	struct FString Victim; // 0x20 (16)
+	struct FString Block1; // 0x30 (16)
+	struct FString Block2; // 0x40 (16)
+	struct FString Weapon; // 0x50 (16)
+	struct FString AliveCount1; // 0x60 (16)
+	struct FString AliveCount2; // 0x70 (16)
+	int32_t FontColorIndex; // 0x80 (4)
+};
+
+// ScriptStruct BravoHotelGame.Coh_KillMessageInfo
+struct FCoh_KillMessageInfo {
+	int32_t Type; // 0x0 (4)
+	struct FString TYPE1_Killer; // 0x8 (16)
+	struct FString TYPE1_Block_01; // 0x18 (16)
+	struct FString TYPE1_Victim; // 0x28 (16)
+	struct FString TYPE1_Block_02; // 0x38 (16)
+	struct FString TYPE1_Weapon; // 0x48 (16)
+	struct FString TYPE1_AliverCount; // 0x58 (16)
+	struct FString TYPE2_Victim; // 0x68 (16)
+	struct FString TYPE2_Block_01; // 0x78 (16)
+	struct FString TYPE2_Block_02; // 0x88 (16)
+	struct FString TYPE2_AliveCount01; // 0x98 (16)
+	struct FString TYPE2_AliveCount02; // 0xA8 (16)
+	int32_t FontColorIndex; // 0xB8 (4)
+};
+
+// ScriptStruct BravoHotelGame.ItemSlotInfo
+struct FItemSlotInfo {
+	struct TArray<Unknown> StandardGroupItemInfos; // 0x0 (16)
+	struct TMap<Unknown, Unknown>Unknown BoxList; // 0x10 (80)
+	int32_t TotalDivisionCount; // 0x60 (4)
+};
+
+// ScriptStruct BravoHotelGame.BoxItemInfo
+struct FBoxItemInfo {
+	char IsDivision : 0; // 0x0 (1)
+	int32_t DivisionCount; // 0x4 (4)
+	int32_t SelectCount; // 0x8 (4)
+};
+
+// ScriptStruct BravoHotelGame.StandardGroupItemInfo
+struct FStandardGroupItemInfo {
+	struct FName StandardGroupItemKey; // 0x0 (8)
+	int32_t Count; // 0x8 (4)
+};
+
+// ScriptStruct BravoHotelGame.MatchRateData
+struct FMatchRateData : FTableRowBase {
+	enum class Unknow MatchRateCaseType; // 0x8 (1)
+	float Min; // 0xC (4)
+	float MAX; // 0x10 (4)
+	float PlusPoint; // 0x14 (4)
+	float MultiplyPoint; // 0x18 (4)
+};
+
+// ScriptStruct BravoHotelGame.ItemWeapon
+struct FItemWeapon : FTableRowBase {
+	struct FName WeaponName; // 0x8 (8)
+	int32_t Rarity; // 0x10 (4)
+	int32_t Level; // 0x14 (4)
+	int32_t MaxLevel; // 0x18 (4)
+	int32_t SupplyCost; // 0x1C (4)
+	int32_t LevelUpgradeCost; // 0x20 (4)
+	int32_t LevelUpgradeGroupItemID; // 0x24 (4)
+	int32_t RepairGroupItemID; // 0x28 (4)
+	struct TArray<Unknown> RepairFactor; // 0x30 (16)
+	struct FName WeaponFatigueKey; // 0x40 (8)
+	int32_t FatigueTableID; // 0x48 (4)
+	int32_t DurabilityMax; // 0x4C (4)
+	int32_t DurabilityRate; // 0x50 (4)
+	float Damage; // 0x54 (4)
+	float VertRecoil; // 0x58 (4)
+	float HorRecoil; // 0x5C (4)
+	float Spread; // 0x60 (4)
+	int32_t MagSize; // 0x64 (4)
+	int32_t ItemId; // 0x68 (4)
+	struct FName ItemName; // 0x6C (8)
+	struct FText DisplayName; // 0x78 (24)
+	struct FText Description; // 0x90 (24)
+	struct TSoftObjectPtr<Unknown> SlotIconTexture_PaperSprite; // 0xA8 (40)
+	struct TSoftObjectPtr<Unknown> DragIconTexture_PaperSprite; // 0xD0 (40)
+	struct Unknown DataAsset; // 0xF8 (8)
+	struct FText DisplayWeaponType; // 0x100 (24)
+	float DamageMod; // 0x118 (4)
+	float VertRecoilMod; // 0x11C (4)
+	float HorRecoilMod; // 0x120 (4)
+	float SpreadMod; // 0x124 (4)
+	float MagSizeMod; // 0x128 (4)
+};
+
+// ScriptStruct BravoHotelGame.WeaponFatigueData
+struct FWeaponFatigueData : FTableRowBase {
+	int32_t ID; // 0x8 (4)
+	struct TMap<Unknown, Unknown>Unknown FatigueMap; // 0x10 (80)
+};
+
+// ScriptStruct BravoHotelGame.ItemCrafting
+struct FItemCrafting : FTableRowBase {
+	struct FName ID; // 0x8 (8)
+	struct FText CategoryName; // 0x10 (24)
+	struct FText DisplayName; // 0x28 (24)
+	struct FText Description; // 0x40 (24)
+	int32_t BaseItemID; // 0x58 (4)
+	int32_t MaterialGroupItemID; // 0x5C (4)
+	int32_t GoldCost; // 0x60 (4)
+	int32_t ResultItemID; // 0x64 (4)
+	int32_t ItemId; // 0x68 (4)
+	struct FText RandomOptionDesc; // 0x70 (24)
+	struct TArray<Unknown> ResultOptionIDList; // 0x88 (16)
+	struct TSoftObjectPtr<Unknown> SlotIconTexture_PaperSprite; // 0x98 (40)
+	struct TSoftObjectPtr<Unknown> DragIconTexture_PaperSprite; // 0xC0 (40)
+	struct TSoftObjectPtr<Unknown> CategoryIconTexture_PaperSprite; // 0xE8 (40)
+	struct FText DisplayWeaponType; // 0x110 (24)
+};
+
+// ScriptStruct BravoHotelGame.PreLoadObjectsTable
+struct FPreLoadObjectsTable : FTableRowBase {
+	struct FString Desc; // 0x8 (16)
+	struct TSoftClassPtr<UObject> ClassPtr; // 0x18 (40)
+};
+
+// ScriptStruct BravoHotelGame.KeyImageTable
+struct FKeyImageTable : FTableRowBase {
+	struct Unknown Key; // 0x8 (24)
+	struct FName DisplayName; // 0x20 (8)
+};
+
+// ScriptStruct BravoHotelGame.BuildingItemSpawnLog
+struct FBuildingItemSpawnLog {
+	struct FString LevelName; // 0x0 (16)
+	struct FString ParentName; // 0x10 (16)
+	struct FString BuildingName; // 0x20 (16)
+	struct FString DetectingUserName; // 0x30 (16)
+	char DetectingBoxResult : 0; // 0x40 (1)
+	char StandardBoxTableComplete : 0; // 0x41 (1)
+	char IsValid : 0; // 0x42 (1)
+	struct Unknown Location; // 0x44 (12)
+	struct TMap<Unknown, Unknown>Unknown Items; // 0x50 (80)
+};
+
+// ScriptStruct BravoHotelGame.LogItemInfoData
+struct FLogItemInfoData {
+	struct TMap<Unknown, Unknown>Unknown Items; // 0x0 (80)
+};
+
+// ScriptStruct BravoHotelGame.LogItemInfo
+struct FLogItemInfo {
+	int32_t Index; // 0x0 (4)
+	char DataSet : 0; // 0x4 (1)
+	char RunAsyncLoad : 0; // 0x5 (1)
+	char CompleteAsyncLoad : 0; // 0x6 (1)
+	char RunTask : 0; // 0x7 (1)
+	char CompleteTask : 0; // 0x8 (1)
+	struct FName ItemName; // 0xC (8)
+	float Distance; // 0x14 (4)
+};
+
+// ScriptStruct BravoHotelGame.LevelUpInfo
+struct FLevelUpInfo {
+	int32_t UpCount; // 0x0 (4)
+	float SpawnDelay; // 0x4 (4)
+};
+
+// ScriptStruct BravoHotelGame.BookSpawnInfo
+struct FBookSpawnInfo {
+	struct Unknown SpawnPerkInfo; // 0x0 (76)
+	struct Unknown SpawnBookTimerHandle; // 0x50 (8)
+};
+
+// ScriptStruct BravoHotelGame.SpawnPerkInfo
+struct FSpawnPerkInfo : FSpawnBaseInfo {
+	struct Unknown BookColorRate; // 0x24 (20)
+	float MinTime; // 0x38 (4)
+	float MaxTime; // 0x3C (4)
+	int32_t MinCount; // 0x40 (4)
+	int32_t MaxCount; // 0x44 (4)
+	enum class Unknow SpawnType; // 0x48 (1)
+};
+
+// ScriptStruct BravoHotelGame.AttackDamageWidgetInfo
+struct FAttackDamageWidgetInfo {
+	struct Unknown DamageCauser; // 0x0 (8)
+	struct Unknown TargetPawn; // 0x8 (8)
+	float CurrentHitTimeSecond; // 0x10 (4)
+	struct Unknown Widget; // 0x18 (8)
+	float Damage; // 0x20 (4)
+	struct FString HitType; // 0x28 (16)
+	float LifeTime; // 0x38 (4)
+	char bRand : 0; // 0x3C (1)
+	struct Unknown ImpactPoint; // 0x40 (12)
+};
+
+// ScriptStruct BravoHotelGame.CarScanInfo
+struct FCarScanInfo {
+	float CarScanRange; // 0x0 (4)
+	float CarScanDuration; // 0x4 (4)
+	char bCarScanOutOfRange : 0; // 0x8 (1)
+};
+
+// ScriptStruct BravoHotelGame.SpatialSenseInfo
+struct FSpatialSenseInfo {
+	float SearchRadius; // 0x0 (4)
+	float ErrorDistRange; // 0x4 (4)
+	float FoundRadius; // 0x8 (4)
+	float Duration; // 0xC (4)
+};
+
+// ScriptStruct BravoHotelGame.SearchInstinctInfo
+struct FSearchInstinctInfo {
+	float CycleTime; // 0x0 (4)
+	float Radius; // 0x4 (4)
+	float ErrorDistRange; // 0x8 (4)
+	float FoundRadius; // 0xC (4)
+	float Duration; // 0x10 (4)
+};
+
+// ScriptStruct BravoHotelGame.AreaSkillInfo
+struct FAreaSkillInfo {
+	float Radius; // 0x0 (4)
+	float RemainTime; // 0x4 (4)
+};
+
+// ScriptStruct BravoHotelGame.ShootingInfo
+struct FShootingInfo {
+	struct Unknown StartPos; // 0x0 (12)
+	struct Unknown EndPos; // 0xC (12)
+	float ShootingLength; // 0x18 (4)
+	float HitTime; // 0x1C (4)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelTeamColorRow
+struct FBravoHotelTeamColorRow : FTableRowBase {
+	struct Unknown Color; // 0x8 (16)
+};
+
+// ScriptStruct BravoHotelGame.TeamColorRow
+struct FTeamColorRow : FTableRowBase {
+	struct FText Code; // 0x8 (24)
+	int32_t R; // 0x20 (4)
+	int32_t G; // 0x24 (4)
+	int32_t B; // 0x28 (4)
+};
+
+// ScriptStruct BravoHotelGame.LanguageInfo
+struct FLanguageInfo : FTableRowBase {
+	struct FString CultureCode; // 0x8 (16)
+	struct Unknown NativeB; // 0x18 (8)
+	struct Unknown NativeR; // 0x20 (8)
+	struct Unknown NativeEB; // 0x28 (8)
+	struct FString OpeningMediaPath; // 0x30 (16)
+	struct FString TutorialMediaPath; // 0x40 (16)
+};
+
+// ScriptStruct BravoHotelGame.SettingInputActionKeyMapping
+struct FSettingInputActionKeyMapping {
+	struct FName ActionName; // 0x0 (8)
+	char bShift : 0; // 0x8 (1)
+	char bCtrl : 0; // 0x9 (1)
+	char bAlt : 0; // 0xA (1)
+	char bCmd : 0; // 0xB (1)
+	struct Unknown Key; // 0x10 (24)
+};
+
+// ScriptStruct BravoHotelGame.SettingValueData
+struct FSettingValueData {
+	enum class Unknow Type; // 0x0 (1)
+	struct TArray<Unknown> ValueList; // 0x8 (16)
+};
+
+// ScriptStruct BravoHotelGame.JoinGameUserData
+struct FJoinGameUserData {
+	struct FName Name; // 0x0 (8)
+	int32_t UniqueID; // 0x8 (4)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelCheatTable
+struct FBravoHotelCheatTable : FTableRowBase {
+	enum class Unknow MainType; // 0x8 (1)
+	struct TArray<Unknown> SubCommandList; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.CheaCommandSubInfo
+struct FCheaCommandSubInfo {
+	enum class Unknow SubType; // 0x0 (1)
+	struct TArray<Unknown> CommandList; // 0x8 (16)
+};
+
+// ScriptStruct BravoHotelGame.CheaCommandInfo
+struct FCheaCommandInfo {
+	char IsHotKey : 0; // 0x0 (1)
+	struct FString Command; // 0x8 (16)
+	struct FString Desc; // 0x18 (16)
+	struct TArray<Unknown> ParamHintList; // 0x28 (16)
+};
+
+// ScriptStruct BravoHotelGame.CheatParamInfo
+struct FCheatParamInfo {
+	struct FString Hint; // 0x0 (16)
+	enum class Unknow ParamType; // 0x10 (1)
+};
+
+// ScriptStruct BravoHotelGame.MatchEndAnimation
+struct FMatchEndAnimation {
+	char bWin : 0; // 0x0 (1)
+	char bSecondPlace : 0; // 0x1 (1)
+};
+
+// ScriptStruct BravoHotelGame.MatchEndFinalResult
+struct FMatchEndFinalResult {
+	char bIsShowingSimpleResult : 0; // 0x0 (1)
+	char bIsMatchEnd : 0; // 0x1 (1)
+	char bGiveUp : 0; // 0x2 (1)
+	char bExitGame : 0; // 0x3 (1)
+};
+
+// ScriptStruct BravoHotelGame.PersonalSupplyBoxTransform
+struct FPersonalSupplyBoxTransform {
+	char TraceLand : 0; // 0x0 (1)
+	int32_t Index; // 0x4 (4)
+	struct Unknown Transform; // 0x10 (48)
+};
+
+// ScriptStruct BravoHotelGame.BuildMatchEnd
+struct FBuildMatchEnd {
+	char WinMessage : 0; // 0x0 (1)
+	char LooseMessage : 0; // 0x1 (1)
+	char bIsSpectated : 0; // 0x2 (1)
+	char WinningCam : 0; // 0x3 (1)
+};
+
+// ScriptStruct BravoHotelGame.PingNeedAnimationInfo
+struct FPingNeedAnimationInfo {
+	char WorldMap : 0; // 0x0 (1)
+	char MiniMap : 0; // 0x1 (1)
+	char PlayerInfo : 0; // 0x2 (1)
+	char Compass : 0; // 0x3 (1)
+};
+
+// ScriptStruct BravoHotelGame.ItemPingIcon
+struct FItemPingIcon : FTableRowBase {
+	enum class Unknow ItemPingType; // 0x8 (1)
+	struct Unknown Icon; // 0x10 (8)
+};
+
+// ScriptStruct BravoHotelGame.SeasonQuest
+struct FSeasonQuest : FTableRowBase {
+	int32_t ID; // 0x8 (4)
+	struct TArray<Unknown> Quests; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.SeasonQuestElement
+struct FSeasonQuestElement {
+	int32_t ID; // 0x0 (4)
+	struct FText DisplayName; // 0x8 (24)
+	struct FString QuestType; // 0x20 (16)
+	int32_t TargetCount; // 0x30 (4)
+	struct FString Value01; // 0x38 (16)
+	struct FString Value02; // 0x48 (16)
+	struct FString Value03; // 0x58 (16)
+	struct FString Value04; // 0x68 (16)
+	int32_t LevelUpRewardIndex; // 0x78 (4)
+	struct FString ClearType; // 0x80 (16)
+	struct FString RewardType; // 0x90 (16)
+	int32_t RewardAmount; // 0xA0 (4)
+};
+
+// ScriptStruct BravoHotelGame.SeasonEXP
+struct FSeasonEXP : FTableRowBase {
+	int32_t ID; // 0x8 (4)
+	struct FText DisplayName; // 0x10 (24)
+	struct TArray<Unknown> Levels; // 0x28 (16)
+};
+
+// ScriptStruct BravoHotelGame.SeasonEXPElement
+struct FSeasonEXPElement {
+	int32_t Level; // 0x0 (4)
+	int32_t LevelUPExp; // 0x4 (4)
+	int32_t LevelUpRewardIndex; // 0x8 (4)
+	int32_t LevelUpRewardCount; // 0xC (4)
+	char ShowInTitle : 0; // 0x10 (1)
+	struct FText DisplayName; // 0x18 (24)
+	struct TSoftObjectPtr<Unknown> CohIcon; // 0x30 (40)
+};
+
+// ScriptStruct BravoHotelGame.SeasonEndReward
+struct FSeasonEndReward : FTableRowBase {
+	int32_t ID; // 0x8 (4)
+	struct TArray<Unknown> Tiers; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.SeasonEndRewardElement
+struct FSeasonEndRewardElement {
+	int32_t Point; // 0x0 (4)
+	int32_t Rank; // 0x4 (4)
+	struct TArray<Unknown> SeasonEndRewards; // 0x8 (16)
+	int32_t index_01; // 0x18 (4)
+	int32_t count_01; // 0x1C (4)
+	int32_t index_02; // 0x20 (4)
+	int32_t count_02; // 0x24 (4)
+	int32_t index_03; // 0x28 (4)
+	int32_t count_03; // 0x2C (4)
+	int32_t index_04; // 0x30 (4)
+	int32_t count_04; // 0x34 (4)
+	int32_t index_05; // 0x38 (4)
+	int32_t count_05; // 0x3C (4)
+	int32_t index_06; // 0x40 (4)
+	int32_t count_06; // 0x44 (4)
+	int32_t index_07; // 0x48 (4)
+	int32_t count_07; // 0x4C (4)
+	int32_t index_08; // 0x50 (4)
+	int32_t count_08; // 0x54 (4)
+	int32_t index_09; // 0x58 (4)
+	int32_t count_09; // 0x5C (4)
+	int32_t Index_11; // 0x60 (4)
+	int32_t Count_11; // 0x64 (4)
+};
+
+// ScriptStruct BravoHotelGame.ItemCountData
+struct FItemCountData {
+	int32_t Index; // 0x0 (4)
+	int32_t Count; // 0x4 (4)
+};
+
+// ScriptStruct BravoHotelGame.SeasonTierUp
+struct FSeasonTierUp : FTableRowBase {
+	int32_t ID; // 0x8 (4)
+	struct TArray<Unknown> Tiers; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.SeasonTier
+struct FSeasonTier : FTableRowBase {
+	int32_t ID; // 0x8 (4)
+	int64_t StartTime; // 0x10 (8)
+	struct TArray<Unknown> Tiers; // 0x18 (16)
+};
+
+// ScriptStruct BravoHotelGame.SeasonTierElement
+struct FSeasonTierElement {
+	int32_t TierID; // 0x0 (4)
+	struct FText DisplayName; // 0x8 (24)
+	struct TSoftObjectPtr<Unknown> UMGIcon; // 0x20 (40)
+	struct TSoftObjectPtr<Unknown> CohIcon; // 0x48 (40)
+	struct TSoftObjectPtr<Unknown> SmallIcon; // 0x70 (40)
+};
+
+// ScriptStruct BravoHotelGame.SeasonPlan
+struct FSeasonPlan : FTableRowBase {
+	int32_t ID; // 0x8 (4)
+	struct FText DisplayName; // 0x10 (24)
+	int64_t StartTime; // 0x28 (8)
+	int64_t EndTime; // 0x30 (8)
+	int64_t GoldPrice; // 0x38 (8)
+	int64_t CashPrice; // 0x40 (8)
+	int32_t LastSeasonID; // 0x48 (4)
+	int32_t TierTableID; // 0x4C (4)
+	int32_t TierUpTableID; // 0x50 (4)
+	int32_t SeasonEndRewardTableID; // 0x54 (4)
+	int32_t MaxLevel; // 0x58 (4)
+	int32_t ExpTableID; // 0x5C (4)
+	int32_t QuestTableID; // 0x60 (4)
+};
+
+// ScriptStruct BravoHotelGame.GroupItem
+struct FGroupItem : FTableRowBase {
+	int32_t ID; // 0x8 (4)
+	struct FText DisplayName; // 0x10 (24)
+	struct TArray<Unknown> Items; // 0x28 (16)
+};
+
+// ScriptStruct BravoHotelGame.GroupItemElement
+struct FGroupItemElement {
+	int32_t ID; // 0x0 (4)
+	int32_t MinCount; // 0x4 (4)
+	int32_t MaxCount; // 0x8 (4)
+};
+
+// ScriptStruct BravoHotelGame.GroupReward
+struct FGroupReward : FTableRowBase {
+	int32_t ID; // 0x8 (4)
+	struct FText DisplayName; // 0x10 (24)
+	int32_t DrawCount; // 0x28 (4)
+	struct TArray<Unknown> Rewards; // 0x30 (16)
+};
+
+// ScriptStruct BravoHotelGame.GroupRewardElement
+struct FGroupRewardElement {
+	int32_t ID; // 0x0 (4)
+	int32_t MinCount; // 0x4 (4)
+	int32_t MaxCount; // 0x8 (4)
+	int32_t Rate; // 0xC (4)
+	int32_t DuplicateCount; // 0x10 (4)
+};
+
+// ScriptStruct BravoHotelGame.SupplyItem
+struct FSupplyItem : FTableRowBase {
+	int32_t ID; // 0x8 (4)
+	struct FText DisplayName; // 0x10 (24)
+	struct FText Description; // 0x28 (24)
+	struct TSoftObjectPtr<Unknown> SlotIconTexture_PaperSprite; // 0x40 (40)
+	struct FText ItemSortType; // 0x68 (24)
+	int32_t SupplyGoldCost; // 0x80 (4)
+	struct TArray<Unknown> Items; // 0x88 (16)
+	struct TSoftObjectPtr<Unknown> StaticMesh; // 0x98 (40)
+	struct TSoftObjectPtr<Unknown> SupplyMeshParticle; // 0xC0 (40)
+	struct FName SupplyMeshParticleSocketName; // 0xE8 (8)
+	struct TArray<Unknown> ToolTipLocationOffset; // 0xF0 (16)
+};
+
+// ScriptStruct BravoHotelGame.SupplyBox
+struct FSupplyBox : FTableRowBase {
+	int32_t ID; // 0x8 (4)
+	struct FText DisplayName; // 0x10 (24)
+	struct FText Description; // 0x28 (24)
+	struct TSoftObjectPtr<Unknown> CohIcon; // 0x40 (40)
+	int32_t CoolTime; // 0x68 (4)
+	int32_t CoolTimeResetGoldCost; // 0x6C (4)
+	int32_t CastingTime; // 0x70 (4)
+	int32_t DefaultWeaponSlotCount; // 0x74 (4)
+	int32_t MaxWeaponSlotCount; // 0x78 (4)
+	int32_t DefaultEquipSlotCount; // 0x7C (4)
+	int32_t MaxEquipSlotCount; // 0x80 (4)
+	int32_t SlotExpansionPrice; // 0x84 (4)
+	int32_t Price; // 0x88 (4)
+};
+
+// ScriptStruct BravoHotelGame.GenerateOption
+struct FGenerateOption : FTableRowBase {
+	int32_t ID; // 0x8 (4)
+	struct TArray<Unknown> GroupRewardIDs; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.ItemOption
+struct FItemOption : FTableRowBase {
+	int32_t ID; // 0x8 (4)
+	struct FText DisplayName; // 0x10 (24)
+	struct TArray<Unknown> BuffIDs; // 0x28 (16)
+	struct FText Description; // 0x38 (24)
+	struct TSoftObjectPtr<Unknown> SlotIconTexture_PaperSprite; // 0x50 (40)
+	struct TSoftObjectPtr<Unknown> DragIconTexture_PaperSprite; // 0x78 (40)
+	int32_t Rarity; // 0xA0 (4)
+	int32_t Display_Damage; // 0xA4 (4)
+	int32_t Display_EffectiveRange; // 0xA8 (4)
+	int32_t Display_Accuracy; // 0xAC (4)
+	int32_t Display_RateofFire; // 0xB0 (4)
+	int32_t NormalMagSize; // 0xB4 (4)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelSmartPingIconSettings
+struct FBravoHotelSmartPingIconSettings : FTableRowBase {
+	struct Unknown Icon; // 0x8 (8)
+	struct Unknown MenuIcon; // 0x10 (8)
+	struct FText DisplayName; // 0x18 (24)
+	struct Unknown Appearance; // 0x30 (28)
+	struct Unknown Animation; // 0x4C (24)
+	struct Unknown Sound; // 0x68 (24)
+	struct Unknown Advanced; // 0x80 (12)
+	struct FText Msg; // 0x90 (24)
+	enum class Unknow PingType; // 0xA8 (1)
+	float IconSize; // 0xAC (4)
+	char Rarity; // 0xB0 (1)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelSmartPingIconAdvancedSettings
+struct FBravoHotelSmartPingIconAdvancedSettings {
+	char ShowInSelectionMenu : 0; // 0x0 (1)
+	char ShowDistance : 0; // 0x1 (1)
+	char ShowPeripheral : 0; // 0x2 (1)
+	float PeripheralEdgePercent; // 0x4 (4)
+	char AllowLocalTintOverride : 0; // 0x8 (1)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelSmartPingIconSoundSettings
+struct FBravoHotelSmartPingIconSoundSettings {
+	struct Unknown Enter; // 0x0 (8)
+	struct Unknown Hold; // 0x8 (8)
+	struct Unknown Exit; // 0x10 (8)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelSmartPingIconAnimationSettings
+struct FBravoHotelSmartPingIconAnimationSettings {
+	enum class Unknow Enter; // 0x0 (1)
+	float EnterDuration; // 0x4 (4)
+	enum class Unknow Loop; // 0x8 (1)
+	float LoopDuration; // 0xC (4)
+	enum class Unknow Exit; // 0x10 (1)
+	float ExitDuration; // 0x14 (4)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelSmartPingIconAppearanceSettings
+struct FBravoHotelSmartPingIconAppearanceSettings {
+	float Scale; // 0x0 (4)
+	struct Unknown Anchor; // 0x4 (8)
+	struct Unknown Tint; // 0xC (16)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelFallingAnimParameters
+struct FBravoHotelFallingAnimParameters {
+	float StartTime; // 0x0 (4)
+	float ApexTime; // 0x4 (4)
+	float EndTime; // 0x8 (4)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelTimeOfDaySimulateInformation
+struct FBravoHotelTimeOfDaySimulateInformation {
+	enum class Unknow TOD_Begin; // 0x0 (1)
+	enum class Unknow TOD_End; // 0x1 (1)
+	float DL_Rotation_TransitionTime; // 0x4 (4)
+	float PostTransitionDelayTime; // 0x8 (4)
+	float PostTransitionTime; // 0xC (4)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelTimeOfDaySettings
+struct FBravoHotelTimeOfDaySettings {
+	char bOverride_DL_Rotation : 0; // 0x0 (1)
+	char bOverride_DL_Temperature : 0; // 0x0 (1)
+	char bOverride_DL_Intensity : 0; // 0x0 (1)
+	char bOverride_DL_DistanceFieldTrace : 0; // 0x0 (1)
+	char bOverride_DL_RayStartOffsetDepthScale : 0; // 0x0 (1)
+	char bOverride_DL_DistanceFieldShadowDistancg : 0; // 0x0 (1)
+	char bOverride_DL_DynamicShadowDistance : 0; // 0x0 (1)
+	char bOverride_DL_VolumetricScatteringIntensity : 0; // 0x0 (1)
+	char bOverride_DL_IndirectLightIntensity : 0; // 0x1 (1)
+	char bOverride_SkyLight_Intensity : 0; // 0x1 (1)
+	char bOverride_SkyLight_Color : 0; // 0x1 (1)
+	char bOverride_SkyLight_OcclusionTint : 0; // 0x1 (1)
+	char bOverride_SkyLight_OcclusionFoliageTint : 0; // 0x1 (1)
+	char bOverride_SkyLight_OcclusionBarkTint : 0; // 0x1 (1)
+	char bOverride_ExFog_Density : 0; // 0x1 (1)
+	char bOverride_ExFog_Density_Clear : 0; // 0x1 (1)
+	char bOverride_ExFog_Color : 0; // 0x2 (1)
+	char bOverride_ExFog_HeightFalloff : 0; // 0x2 (1)
+	char bOverride_ExFog_VolumetricFogSc : 0; // 0x2 (1)
+	char bOverride_AF_SunMultiplier : 0; // 0x2 (1)
+	char bOverride_PP_ExposureMin : 0; // 0x2 (1)
+	char bOverride_PP_ExposureMax : 0; // 0x2 (1)
+	char bOverride_PP_ExposureLowPercent : 0; // 0x2 (1)
+	char bOverride_PP_ExposureCompensation : 0; // 0x2 (1)
+	char bOverride_PP_BloomIntensity : 0; // 0x3 (1)
+	char bOverride_PP_BloomThreshold : 0; // 0x3 (1)
+	char bOverride_PP_LPVSize : 0; // 0x3 (1)
+	char bOverride_PP_LPVIntensity : 0; // 0x3 (1)
+	char bOverride_PP_LPVLightInjectionBias : 0; // 0x3 (1)
+	struct Unknown DL_Rotation; // 0x4 (12)
+	float DL_Temperature; // 0x10 (4)
+	float DL_Intensity; // 0x14 (4)
+	float DL_DistanceFieldTrace; // 0x18 (4)
+	float DL_RayStartOffsetDepthScale; // 0x1C (4)
+	float DL_DistanceFieldShadowDistance; // 0x20 (4)
+	float DL_DynamicShadowDistance; // 0x24 (4)
+	float DL_VolumetricScatteringIntensity; // 0x28 (4)
+	float DL_IndirectLightIntensity; // 0x2C (4)
+	float SkyLight_Intensity; // 0x30 (4)
+	struct Unknown SkyLight_Color; // 0x34 (16)
+	struct Unknown SkyLight_OcclusionTint; // 0x44 (4)
+	struct Unknown SkyLight_OcclusionFoliageTint; // 0x48 (4)
+	struct Unknown SkyLight_OcclusionBarkTint; // 0x4C (4)
+	float ExFog_Density; // 0x50 (4)
+	float ExFog_Density_Clear; // 0x54 (4)
+	struct Unknown ExFog_Color; // 0x58 (16)
+	float ExFog_HeightFalloff; // 0x68 (4)
+	float ExFog_VolumetricFogScatteringDistribution; // 0x6C (4)
+	float AF_SunMultiplier; // 0x70 (4)
+	float PP_ExposureMin; // 0x74 (4)
+	float PP_ExposureMax; // 0x78 (4)
+	float PP_ExposureLowPercent; // 0x7C (4)
+	float PP_ExposureCompensation; // 0x80 (4)
+	float PP_BloomIntensity; // 0x84 (4)
+	float PP_BloomThreshold; // 0x88 (4)
+	float PP_LPVSize; // 0x8C (4)
+	float PP_LPVIntensity; // 0x90 (4)
+	float PP_LPVLightInjectionBias; // 0x94 (4)
+};
+
+// ScriptStruct BravoHotelGame.SpawnActors_DEBUG
+struct FSpawnActors_DEBUG {
+	struct FString ActorName; // 0x0 (16)
+	struct TArray<Unknown> ActorList; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelRewardItem
+struct FBravoHotelRewardItem {
+	int32_t table_index; // 0x0 (4)
+	int32_t RandomPackageID; // 0x4 (4)
+	int32_t Count; // 0x8 (4)
+	int32_t SortType; // 0xC (4)
+	struct TArray<Unknown> ItemOptions; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelLevelStreamSettings
+struct FBravoHotelLevelStreamSettings : FTableRowBase {
+	char bEnable : 0; // 0x8 (1)
+	struct FString WorldDefault_LightLevelString; // 0x10 (16)
+	struct FString CustomDefault_LightLevelString; // 0x20 (16)
+	struct TArray<Unknown> AfterGameStart_LightLevelString; // 0x30 (16)
+};
+
+// ScriptStruct BravoHotelGame.ItemColorData
+struct FItemColorData : FTableRowBase {
+	int32_t ID; // 0x8 (4)
+	struct FText DisplayName; // 0x10 (24)
+	struct FText Description; // 0x28 (24)
+	enum class Unknow Slot; // 0x40 (1)
+	struct TSoftObjectPtr<Unknown> Icon; // 0x48 (40)
+};
+
+// ScriptStruct BravoHotelGame.ItemAppearanceData
+struct FItemAppearanceData : FTableRowBase {
+	int32_t ID; // 0x8 (4)
+	struct FText DisplayName; // 0x10 (24)
+	struct FText Description; // 0x28 (24)
+	enum class Unknow Slot; // 0x40 (1)
+	struct TArray<Unknown> Color; // 0x48 (16)
+};
+
+// ScriptStruct BravoHotelGame.ItemAppearanceColorData
+struct FItemAppearanceColorData {
+	struct FName ColorID; // 0x0 (8)
+	struct TSoftObjectPtr<Unknown> IconEx; // 0x8 (40)
+	struct FName MutableUniqueKey; // 0x30 (8)
+};
+
+// ScriptStruct BravoHotelGame.ClimbData
+struct FClimbData {
+	float TargetHeight; // 0x0 (4)
+	float MaxDistance; // 0x4 (4)
+	struct Unknown Montage; // 0x8 (8)
+	struct Unknown OneHandMontage; // 0x10 (8)
+	struct Unknown TwoHandMontage; // 0x18 (8)
+	float FallingRate; // 0x20 (4)
+	struct Unknown DettachLaunch; // 0x24 (12)
+	struct Unknown CameraPosition; // 0x30 (12)
+	struct Unknown CameraSecondPosition; // 0x3C (12)
+	float CameraTime; // 0x48 (4)
+	float CameraSecondTime; // 0x4C (4)
+	float CameraOutTime; // 0x50 (4)
+	struct Unknown StartPosition; // 0x54 (12)
+	char bWalkToStartPosition : 0; // 0x60 (1)
+	char bSlide : 0; // 0x61 (1)
+	char bUseHeightCurve : 0; // 0x62 (1)
+	struct FName CameraBone; // 0x64 (8)
+	char bHandToWeaponIK : 0; // 0x6C (1)
+	float PlaySpeed; // 0x70 (4)
+	struct FName OverrideKey; // 0x74 (8)
+	struct Unknown CurveFPP; // 0x80 (8)
+	float CameraYawLimit_FPP; // 0x88 (4)
+	float CameraPitchMax_FPP; // 0x8C (4)
+	float CameraPitchMin_FPP; // 0x90 (4)
+	char bFixCameraBaseLocation_FPP : 0; // 0x94 (1)
+};
+
+// ScriptStruct BravoHotelGame.UsableItemText
+struct FUsableItemText : FTableRowBase {
+	int32_t Using; // 0x8 (4)
+	int32_t Full; // 0xC (4)
+	int32_t NoTarget; // 0x10 (4)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelHitResults
+struct FBravoHotelHitResults {
+	struct TArray<Unknown> HitResults; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelMatchRewardTableRow
+struct FBravoHotelMatchRewardTableRow : FTableRowBase {
+	int32_t Reward_ID; // 0x8 (4)
+	struct FText m; // 0x10 (24)
+	struct FText Mode_Name; // 0x28 (24)
+	struct Unknown PersonalReward; // 0x40 (36)
+	struct Unknown RankReward; // 0x64 (28)
+	struct Unknown RandomReward; // 0x80 (168)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelRandomReward
+struct FBravoHotelRandomReward {
+	float RandomGoldMinRate; // 0x0 (4)
+	float RandomGoldMaxRate; // 0x4 (4)
+	struct TMap<Unknown, Unknown>Unknown BaseRandomGold; // 0x8 (80)
+	struct TMap<Unknown, Unknown>Unknown MaxRandomGold; // 0x58 (80)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelRankReward
+struct FBravoHotelRankReward {
+	int32_t TimeBase; // 0x0 (4)
+	float GoldPerTime; // 0x4 (4)
+	float ExpPerTime; // 0x8 (4)
+	float Ratio; // 0xC (4)
+	float Percentage; // 0x10 (4)
+	float ReduceCycle; // 0x14 (4)
+	float ReducePercentage; // 0x18 (4)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelPersonalReward
+struct FBravoHotelPersonalReward {
+	int32_t GoldPerkill; // 0x0 (4)
+	int32_t ExpPerKill; // 0x4 (4)
+	int32_t PerDMG_BaseDMG; // 0x8 (4)
+	int32_t GoldPerDMG; // 0xC (4)
+	int32_t ExpPerDMG; // 0x10 (4)
+	int32_t PerTime_BaseTime; // 0x14 (4)
+	int32_t PerTime_TimeLimit; // 0x18 (4)
+	int32_t GoldPerTime; // 0x1C (4)
+	int32_t ExpPerTime; // 0x20 (4)
+};
+
+// ScriptStruct BravoHotelGame.LimitedCollection
+struct FLimitedCollection : FTableRowBase {
+	int32_t StackableMaxCount; // 0x8 (4)
+	struct FText Notice; // 0x10 (24)
+};
+
+// ScriptStruct BravoHotelGame.CurrencyData
+struct FCurrencyData : FTableRowBase {
+	int32_t ID; // 0x8 (4)
+	struct FText DisplayName; // 0x10 (24)
+	struct FText Description; // 0x28 (24)
+	struct TSoftObjectPtr<Unknown> SlotIconTexture; // 0x40 (40)
+	int32_t Limit; // 0x68 (4)
+	int32_t Price; // 0x6C (4)
+};
+
+// ScriptStruct BravoHotelGame.ItemMaterialData
+struct FItemMaterialData : FTableRowBase {
+	int32_t ID; // 0x8 (4)
+	struct FText DisplayName; // 0x10 (24)
+	struct FText Description; // 0x28 (24)
+	int32_t Rarity; // 0x40 (4)
+	int32_t Slot; // 0x44 (4)
+	struct FName TargetIngameItem; // 0x48 (8)
+	int32_t CraftingID; // 0x50 (4)
+	struct TSoftObjectPtr<Unknown> SlotIconTexture; // 0x58 (40)
+	struct TSoftObjectPtr<Unknown> SlotIconTexture1024; // 0x80 (40)
+	struct Unknown DataAsset; // 0xA8 (8)
+	int32_t Limit; // 0xB0 (4)
+	int32_t Price; // 0xB4 (4)
+	struct FText Filter; // 0xB8 (24)
+};
+
+// ScriptStruct BravoHotelGame.CharacterClassData
+struct FCharacterClassData : FTableRowBase {
+	int32_t ID; // 0x8 (4)
+	struct FText DisplayName; // 0x10 (24)
+	struct FText Description; // 0x28 (24)
+	int32_t TypeID; // 0x40 (4)
+	int32_t Level; // 0x44 (4)
+	int32_t MaxLevel; // 0x48 (4)
+	int32_t NextLevelExp; // 0x4C (4)
+	struct FName Reward_01; // 0x50 (8)
+	int32_t Reward_Value_01; // 0x58 (4)
+	struct FName Reward_02; // 0x5C (8)
+	int32_t Reward_Value_02; // 0x64 (4)
+	struct FName Reward_03; // 0x68 (8)
+	int32_t Reward_Value_03; // 0x70 (4)
+	struct FName Reward_04; // 0x74 (8)
+	int32_t Reward_Value_04; // 0x7C (4)
+	struct TArray<Unknown> Reward; // 0x80 (16)
+};
+
+// ScriptStruct BravoHotelGame.MaterialUnit
+struct FMaterialUnit {
+	int32_t ID; // 0x0 (4)
+	int32_t Count; // 0x4 (4)
+};
+
+// ScriptStruct BravoHotelGame.CharacterClassTypeData
+struct FCharacterClassTypeData : FTableRowBase {
+	int32_t ID; // 0x8 (4)
+	struct FText DisplayName; // 0x10 (24)
+	struct FText Description; // 0x28 (24)
+	struct FName MaterialID; // 0x40 (8)
+	int32_t MaterialCount; // 0x48 (4)
+	struct TArray<Unknown> DefaultClothes; // 0x50 (16)
+	struct TArray<Unknown> EquipClothes; // 0x60 (16)
+	struct TArray<Unknown> RandomEquipClothes; // 0x70 (16)
+	struct Unknown LookInfo; // 0x80 (20)
+	struct TArray<Unknown> DefaultPerk; // 0x98 (16)
+	struct TArray<Unknown> MaleFace; // 0xA8 (16)
+	struct TArray<Unknown> MaleHair; // 0xB8 (16)
+	struct TArray<Unknown> FemaleFace; // 0xC8 (16)
+	struct TArray<Unknown> FemaleHair; // 0xD8 (16)
+};
+
+// ScriptStruct BravoHotelGame.LookInfo
+struct FLookInfo {
+	int32_t hair; // 0x0 (4)
+	int32_t hair_color; // 0x4 (4)
+	int32_t face; // 0x8 (4)
+	int32_t face_color; // 0xC (4)
+	int32_t gender; // 0x10 (4)
+};
+
+// ScriptStruct BravoHotelGame.RandomEquipClothesData
+struct FRandomEquipClothesData : FTableRowBase {
+	struct TArray<Unknown> EquipClothes; // 0x8 (16)
+};
+
+// ScriptStruct BravoHotelGame.CrosshairTableRow
+struct FCrosshairTableRow : FTableRowBase {
+	float SpreadDistance; // 0x8 (4)
+	struct Unknown TextureInfo; // 0x10 (328)
+	char bUseCrosshairOnADS : 0; // 0x158 (1)
+	float SpreadDistance_ADS; // 0x15C (4)
+	struct Unknown TextureInfo_ADS; // 0x160 (328)
+};
+
+// ScriptStruct BravoHotelGame.CrosshairTextureInfo
+struct FCrosshairTextureInfo {
+	struct TSoftObjectPtr<Unknown> CenterTexture; // 0x0 (40)
+	struct TSoftObjectPtr<Unknown> LeftTexture; // 0x28 (40)
+	struct TSoftObjectPtr<Unknown> TopTexture; // 0x50 (40)
+	struct TSoftObjectPtr<Unknown> RightTexture; // 0x78 (40)
+	struct TSoftObjectPtr<Unknown> BottomTexture; // 0xA0 (40)
+	struct Unknown CenterColor; // 0xC8 (16)
+	struct Unknown LeftColor; // 0xD8 (16)
+	struct Unknown TopColor; // 0xE8 (16)
+	struct Unknown RightColor; // 0xF8 (16)
+	struct Unknown BottomColor; // 0x108 (16)
+	struct Unknown CenterDeltaPosition; // 0x118 (8)
+	struct Unknown LeftDeltaPosition; // 0x120 (8)
+	struct Unknown TopDeltaPosition; // 0x128 (8)
+	struct Unknown RightDeltaPosition; // 0x130 (8)
+	struct Unknown BottomDeltaPosition; // 0x138 (8)
+	float TextureScale; // 0x140 (4)
+};
+
+// ScriptStruct BravoHotelGame.CharacterVoiceTableRow
+struct FCharacterVoiceTableRow : FTableRowBase {
+	int32_t PriorityOrder; // 0x8 (4)
+	enum class Unknow PriorityType; // 0xC (1)
+	struct TSoftObjectPtr<Unknown> AudioEvent; // 0x10 (40)
+	struct TSoftObjectPtr<Unknown> TeamAudioEvent; // 0x38 (40)
+	enum class Unknow RPCType; // 0x60 (1)
+	float IntervalTime; // 0x64 (4)
+	int32_t Repeat; // 0x68 (4)
+	float CoolTime; // 0x6C (4)
+};
+
+// ScriptStruct BravoHotelGame.TurnAnims
+struct FTurnAnims {
+	struct Unknown Unarmed_Stand_Turn_L_91; // 0x0 (32)
+	struct Unknown Unarmed_Stand_Turn_L_181; // 0x20 (32)
+	struct Unknown Unarmed_Stand_Turn_R_91; // 0x40 (32)
+	struct Unknown Unarmed_Stand_Turn_R_181; // 0x60 (32)
+	struct Unknown Unarmed_Crouch_Turn_L_91; // 0x80 (32)
+	struct Unknown Unarmed_Crouch_Turn_L_181; // 0xA0 (32)
+	struct Unknown Unarmed_Crouch_Turn_R_91; // 0xC0 (32)
+	struct Unknown Unarmed_Crouch_Turn_R_181; // 0xE0 (32)
+	struct Unknown Unarmed_Prone_Turn_L_46; // 0x100 (32)
+	struct Unknown Unarmed_Prone_Turn_R_46; // 0x120 (32)
+	struct Unknown Rifle_Stand_Turn_L_91; // 0x140 (32)
+	struct Unknown Rifle_Stand_Turn_L_181; // 0x160 (32)
+	struct Unknown Rifle_Stand_Turn_R_91; // 0x180 (32)
+	struct Unknown Rifle_Stand_Turn_R_181; // 0x1A0 (32)
+	struct Unknown Rifle_Crouch_Turn_L_91; // 0x1C0 (32)
+	struct Unknown Rifle_Crouch_Turn_L_181; // 0x1E0 (32)
+	struct Unknown Rifle_Crouch_Turn_R_91; // 0x200 (32)
+	struct Unknown Rifle_Crouch_Turn_R_181; // 0x220 (32)
+	struct Unknown Rifle_Prone_Turn_L_46; // 0x240 (32)
+	struct Unknown Rifle_Prone_Turn_R_46; // 0x260 (32)
+	struct Unknown Pistol_Stand_Turn_L_91; // 0x280 (32)
+	struct Unknown Pistol_Stand_Turn_L_181; // 0x2A0 (32)
+	struct Unknown Pistol_Stand_Turn_R_91; // 0x2C0 (32)
+	struct Unknown Pistol_Stand_Turn_R_181; // 0x2E0 (32)
+	struct Unknown Pistol_Crouch_Turn_L_91; // 0x300 (32)
+	struct Unknown Pistol_Crouch_Turn_L_181; // 0x320 (32)
+	struct Unknown Pistol_Crouch_Turn_R_91; // 0x340 (32)
+	struct Unknown Pistol_Crouch_Turn_R_181; // 0x360 (32)
+	struct Unknown Pistol_Prone_Turn_L_46; // 0x380 (32)
+	struct Unknown Pistol_Prone_Turn_R_46; // 0x3A0 (32)
+	struct Unknown Descent_Turn_L; // 0x3C0 (32)
+	struct Unknown Descent_Turn_R; // 0x3E0 (32)
+};
+
+// ScriptStruct BravoHotelGame.TurnInPlaceAnimInfo
+struct FTurnInPlaceAnimInfo {
+	struct Unknown DynamicMontageAnim; // 0x0 (8)
+	struct Unknown RepeatMontageAnim; // 0x8 (8)
+	float TurnTime; // 0x10 (4)
+	float TurnAngle; // 0x14 (4)
+	float TurnTriggerAngle; // 0x18 (4)
+	float PlayRate; // 0x1C (4)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelRenderSettings
+struct FBravoHotelRenderSettings : FTableRowBase {
+	struct Unknown TAA; // 0x8 (16)
+	struct Unknown Exposure; // 0x18 (24)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelExposureSettings
+struct FBravoHotelExposureSettings {
+	char bEnable : 0; // 0x0 (1)
+	float CustomDeltaHeight; // 0x4 (4)
+	float MinHeight; // 0x8 (4)
+	float MaxHeight; // 0xC (4)
+	float MinExposureCompensation; // 0x10 (4)
+	float MaxExposureCompensation; // 0x14 (4)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelTemporalAASettings
+struct FBravoHotelTemporalAASettings {
+	float IdleTemporalAA_Weight; // 0x0 (4)
+	float MovingTemporalAA_Weight; // 0x4 (4)
+	float ADSTemporalAA_Weight; // 0x8 (4)
+	float BlendSpeed; // 0xC (4)
+};
+
+// ScriptStruct BravoHotelGame.ItemWorldSpawn
+struct FItemWorldSpawn : FTableRowBase {
+	struct FText Desc; // 0x8 (24)
+	int32_t MaxItemSpawnCnt; // 0x20 (4)
+	struct TArray<Unknown> ItemWorldSpawnInfos; // 0x28 (16)
+};
+
+// ScriptStruct BravoHotelGame.ItemWorldSpawnInfo
+struct FItemWorldSpawnInfo {
+	struct FName ItemId; // 0x0 (8)
+	int32_t Cnt; // 0x8 (4)
+};
+
+// ScriptStruct BravoHotelGame.VehicleRandomSpawn
+struct FVehicleRandomSpawn : FTableRowBase {
+	struct TArray<Unknown> List; // 0x8 (16)
+};
+
+// ScriptStruct BravoHotelGame.VehicleSpawnRate
+struct FVehicleSpawnRate {
+	struct FName VehicleKey; // 0x0 (8)
+	float SpawnWeight; // 0x8 (4)
+};
+
+// ScriptStruct BravoHotelGame.VehicleStandardGroup
+struct FVehicleStandardGroup : FTableRowBase {
+	struct TArray<Unknown> VehicleStandardGroupInfos; // 0x8 (16)
+};
+
+// ScriptStruct BravoHotelGame.VehicleSpawnInfo
+struct FVehicleSpawnInfo {
+	struct FName RandomVehicleKey; // 0x0 (8)
+	int32_t SpawnCount; // 0x8 (4)
+};
+
+// ScriptStruct BravoHotelGame.ItemGroup
+struct FItemGroup : FTableRowBase {
+	struct TArray<Unknown> Items; // 0x8 (16)
+};
+
+// ScriptStruct BravoHotelGame.ItemGroupInfo
+struct FItemGroupInfo {
+	struct Unknown ItemRowHandle; // 0x0 (16)
+	struct FName SkinID; // 0x10 (8)
+	int32_t Count; // 0x18 (4)
+	float Probability; // 0x1C (4)
+};
+
+// ScriptStruct BravoHotelGame.RandomPackage
+struct FRandomPackage : FTableRowBase {
+	int32_t ID; // 0x8 (4)
+	struct FText DisplayName; // 0x10 (24)
+	int32_t No; // 0x28 (4)
+	int32_t TicketCount; // 0x2C (4)
+	struct TSoftObjectPtr<Unknown> UMGIcon; // 0x30 (40)
+	struct TSoftObjectPtr<Unknown> CohIcon; // 0x58 (40)
+	struct TArray<Unknown> Rewards; // 0x80 (16)
+};
+
+// ScriptStruct BravoHotelGame.RandomPackageProbability
+struct FRandomPackageProbability {
+	int32_t ID; // 0x0 (4)
+	int32_t Min; // 0x4 (4)
+	int32_t MAX; // 0x8 (4)
+	int32_t Rate; // 0xC (4)
+	int32_t DuplicateCount; // 0x10 (4)
+	struct FText DisplayName; // 0x18 (24)
+};
+
+// ScriptStruct BravoHotelGame.TeamMemberInfo
+struct FTeamMemberInfo {
+	int32_t TeamIndex; // 0x0 (4)
+	int32_t MemberIndex; // 0x4 (4)
+	struct Unknown Location; // 0x8 (12)
+};
+
+// ScriptStruct BravoHotelGame.BravoHotelErrorStringData
+struct FBravoHotelErrorStringData : FTableRowBase {
+	struct FText DisplayString; // 0x8 (24)
+	char bShowCode : 0; // 0x20 (1)
+	char bShowExtraDescription : 0; // 0x21 (1)
+	struct FText Desc; // 0x28 (24)
+};
+
+// ScriptStruct BravoHotelGame.ItemSpawingInfoTableRow
+struct FItemSpawingInfoTableRow : FTableRowBase {
+	struct Unknown Item; // 0x8 (16)
+	int32_t DefaultSpawnItemQuantiy; // 0x18 (4)
+	int32_t NumSpawnsMin; // 0x1C (4)
+	int32_t NumSpawnsMax; // 0x20 (4)
+	char bHasFollwingItem : 0; // 0x24 (1)
+	struct Unknown FollowingItem; // 0x28 (16)
+	int32_t DefaultFollowingItemSpawnQuantiy; // 0x38 (4)
+	int32_t NumFollowingSpawnsMin; // 0x3C (4)
+	int32_t NumFollowingSpawnsMax; // 0x40 (4)
+};
+
+// ScriptStruct BravoHotelGame.WorldSpawnItemInfo
+struct FWorldSpawnItemInfo {
+	int32_t SpawnBoxID; // 0x0 (4)
+	struct Unknown SpawnItem; // 0x8 (8)
+};
+
+// ScriptStruct BravoHotelGame.TableRedZoneData
+struct FTableRedZoneData : FTableRowBase {
+	int32_t BeginPhase; // 0x8 (4)
+	int32_t EndPhase; // 0xC (4)
+	struct Unknown DefaultRedZoneData; // 0x10 (88)
+	struct TArray<Unknown> ArrayRedZoneData; // 0x68 (16)
+};
+
+// ScriptStruct BravoHotelGame.RedZoneData
+struct FRedZoneData {
+	enum class Unknow RedZoneSelectType; // 0x0 (1)
+	float MinSpawnDelay; // 0x4 (4)
+	float MaxSpawnDelay; // 0x8 (4)
+	float SpawnRate; // 0xC (4)
+	int32_t AppearPhase; // 0x10 (4)
+	char isOverwriteBombData : 0; // 0x14 (1)
+	struct Unknown RedZoneBombData; // 0x18 (64)
+};
+
+// ScriptStruct BravoHotelGame.RedZoneBombData
+struct FRedZoneBombData {
+	float WarningTime; // 0x0 (4)
+	float MinRange; // 0x4 (4)
+	float MaxRange; // 0x8 (4)
+	float BombHeight; // 0xC (4)
+	float BombInterval; // 0x10 (4)
+	int32_t BombCount; // 0x14 (4)
+	float AircraftRandAngle; // 0x18 (4)
+	float AircraftRandWide; // 0x1C (4)
+	int32_t AircraftLoopCount; // 0x20 (4)
+	struct TArray<Unknown> AircraftSpawnPlan; // 0x28 (16)
+	int32_t MinBombPerInterval; // 0x38 (4)
+	int32_t MaxBombPerInterval; // 0x3C (4)
+};
+
+// ScriptStruct BravoHotelGame.ItemStandardGroup
+struct FItemStandardGroup : FTableRowBase {
+	struct TArray<Unknown> ItemStandardGroupInfos; // 0x8 (16)
+};
+
+// ScriptStruct BravoHotelGame.ResuscitationTypeData
+struct FResuscitationTypeData : FTableRowBase {
+	float ModifyPerCountSelf; // 0x8 (4)
+	float ModifyPerCountOther; // 0xC (4)
+	struct TMap<Unknown, Unknown>Unknown CostPerCountSelf; // 0x10 (80)
+	struct TMap<Unknown, Unknown>Unknown CostPerCountOther; // 0x60 (80)
+};
+
+// ScriptStruct BravoHotelGame.PerkClassRuleData
+struct FPerkClassRuleData : FTableRowBase {
+	struct TMap<Unknown, Unknown>Unknown PerkClassNumCap; // 0x8 (80)
+	struct TMap<Unknown, Unknown>Unknown PerkClassWeightModifier; // 0x58 (80)
+};
+
+// ScriptStruct BravoHotelGame.AddPerkInfos
+struct FAddPerkInfos : FTableRowBase {
+	struct TArray<Unknown> AddPerkInfos; // 0x8 (16)
+};
+
+// ScriptStruct BravoHotelGame.AddPerkInfoArray
+struct FAddPerkInfoArray {
+	struct TArray<Unknown> AddPerkInfoArray; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.SupplyBoxAssignmentInfo
+struct FSupplyBoxAssignmentInfo {
+	uint32_t Guid; // 0x0 (4)
+	struct Unknown Location; // 0x4 (12)
+	float AssignmentTime; // 0x10 (4)
+	float AssignmentDelayTime; // 0x14 (4)
+	struct Unknown AssignSupplyBox; // 0x18 (8)
+	struct Unknown Spawner; // 0x20 (8)
+	char IsTest : 0; // 0x28 (1)
+};
+
+// ScriptStruct BravoHotelGame.VehicleTableRow
+struct FVehicleTableRow : FTableRowBase {
+	struct TSoftClassPtr<UObject> VehicleClass; // 0x8 (40)
+	struct Unknown SpawnLocationOffset; // 0x30 (12)
+};
+
+// ScriptStruct BravoHotelGame.DamageModifierByWeapon
+struct FDamageModifierByWeapon {
+	enum class Unknow WeaponType; // 0x0 (1)
+	float Value; // 0x4 (4)
+};
+
+// ScriptStruct BravoHotelGame.BoneDamageStruct
+struct FBoneDamageStruct : FTableRowBase {
+	struct FName BoneName; // 0x8 (8)
+	float DamageFactor; // 0x10 (4)
+};
+
+// ScriptStruct BravoHotelGame.WeaponAssetData
+struct FWeaponAssetData : FTableRowBase {
+	struct Unknown ADS_Info; // 0x8 (496)
+	struct Unknown FPSK_Info; // 0x1F8 (544)
+	struct Unknown Attachment_Info; // 0x418 (792)
+	struct Unknown Curve_Sway_Idle; // 0x730 (8)
+	struct Unknown Curve_Sway_Move; // 0x738 (8)
+};
+
+// ScriptStruct BravoHotelGame.WeaponAbilityData
+struct FWeaponAbilityData : FTableRowBase {
+	struct FName WeaponKey; // 0x8 (8)
+	struct FText DisplayName; // 0x10 (24)
+	struct FText DisplayDesc; // 0x28 (24)
+	struct FName AK_EventKey; // 0x40 (8)
+	float CrosshairIncrease; // 0x48 (4)
+	float CrosshairDecreaseSpeed; // 0x4C (4)
+	float CrosshairInterpSpeed; // 0x50 (4)
+	struct Unknown SilhouetteIconTexture_PaperSprite; // 0x58 (8)
+	enum class Unknow WeaponType; // 0x60 (1)
+	enum class Unknow ThrowingWeaponType; // 0x61 (1)
+	struct FText DisplayWeaponType; // 0x68 (24)
+	struct FText DisplayRangeType; // 0x80 (24)
+	int32_t Display_Damage; // 0x98 (4)
+	int32_t Display_EffectiveRange; // 0x9C (4)
+	int32_t Display_Accuracy; // 0xA0 (4)
+	int32_t Display_RateofFire; // 0xA4 (4)
+	struct FName Display_AmmoInfo; // 0xA8 (8)
+	struct FName AllowedAmmoName; // 0xB0 (8)
+	float MinDamage; // 0xB8 (4)
+	float MaxDamage; // 0xBC (4)
+	float Accuracy; // 0xC0 (4)
+	float FireRate; // 0xC4 (4)
+	float FireRateBurst; // 0xC8 (4)
+	float Weight; // 0xCC (4)
+	int32_t NormalMagSize; // 0xD0 (4)
+	int32_t LargeMagSize; // 0xD4 (4)
+	struct Unknown ReloadInfo; // 0xD8 (184)
+	struct TArray<Unknown> AllowedFireModes; // 0x190 (16)
+	float ProjectileVelocity; // 0x1A0 (4)
+	float TerminalVelocity; // 0x1A4 (4)
+	int32_t BurstCount; // 0x1A8 (4)
+	int32_t BulletsPerShot; // 0x1AC (4)
+	char bIsBoltAction : 0; // 0x1B0 (1)
+	float BoltActionTime; // 0x1B4 (4)
+	float ADSToReloadDelayTime; // 0x1B8 (4)
+	float MoveSpeedModifier; // 0x1BC (4)
+	struct Unknown Spread; // 0x1C0 (64)
+	struct Unknown Deviation; // 0x200 (44)
+	struct Unknown Recoil; // 0x230 (288)
+	struct Unknown DepthOfField; // 0x350 (80)
+	struct Unknown ArmsLag; // 0x3A0 (8)
+};
+
+// ScriptStruct BravoHotelGame.WeaponSlot
+struct FWeaponSlot {
+	struct TArray<Unknown> AllowedWeaponTypes; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.CharacterMutableTagData
+struct FCharacterMutableTagData {
+	int16_t HelmetLevel; // 0x0 (2)
+	int16_t ArmorLevel; // 0x2 (2)
+	int16_t BackpackLevel; // 0x4 (2)
+	char bHoodOn : 0; // 0x6 (1)
+	char bPonyDynamicOn : 0; // 0x7 (1)
+	char bCoatDynamicOn : 0; // 0x8 (1)
+	char bSkirtDynamicOn : 0; // 0x9 (1)
+	char bSkirtDynamicOff : 0; // 0xA (1)
+	char bBackpackDynamicOff : 0; // 0xB (1)
+	struct FString TargetBackpackPhysicsBone; // 0x10 (16)
+	char bUseBack03_Slot : 0; // 0x20 (1)
+	char bUseRPG_Slot : 0; // 0x21 (1)
+	char bOuter : 0; // 0x22 (1)
+	char bGhillie : 0; // 0x23 (1)
+	char bHalfGhillie : 0; // 0x24 (1)
+};
+
+// ScriptStruct BravoHotelGame.VehicleCrashDamage
+struct FVehicleCrashDamage {
+	struct Unknown VelocityRange; // 0x0 (16)
+	float DamageToCharacter; // 0x10 (4)
+	float DamageToRigidBody; // 0x14 (4)
+	float DamageReductionToCharacter; // 0x18 (4)
+	float DamageReductionToRigidBody; // 0x1C (4)
+};
+
+// ScriptStruct BravoHotelGame.SpawnVehicleInfo
+struct FSpawnVehicleInfo {
+	struct Unknown* SpawnVehicleClass; // 0x0 (8)
+	float VehicleProbability; // 0x8 (4)
+};
+
+// ScriptStruct BravoHotelGame.VehicleSpawnBoxList
+struct FVehicleSpawnBoxList {
+	struct TArray<Unknown> List; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.WheelInfo
+struct FWheelInfo {
+	int32_t Index; // 0x0 (4)
+	char Show : 0; // 0x4 (1)
+};
+
+// ScriptStruct BravoHotelGame.SeatInfo
+struct FSeatInfo {
+	int32_t Index; // 0x0 (4)
+	char Show : 0; // 0x4 (1)
+	char Mine : 0; // 0x5 (1)
+};
+
+// ScriptStruct BravoHotelGame.G2C_TrainingModeOff
+struct FG2C_TrainingModeOff {
+	struct FString Type; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.C2G_TrainingModeOff
+struct FC2G_TrainingModeOff {
+	struct FString Type; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.G2C_Update_AuthToken
+struct FG2C_Update_AuthToken {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.G2C_Update_AuthToken_Data
+struct FG2C_Update_AuthToken_Data {
+	struct FString auth_token; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.G2C_Game_View_Type
+struct FG2C_Game_View_Type {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (2)
+};
+
+// ScriptStruct BravoHotelGame.G2C_Game_View_Type_Data
+struct FG2C_Game_View_Type_Data {
+	char isGameViewTypeFPP : 0; // 0x0 (1)
+	char isGameViewTypeTPP : 0; // 0x1 (1)
+};
+
+// ScriptStruct BravoHotelGame.G2C_Matching_On_Off
+struct FG2C_Matching_On_Off {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.G2C_Matching_On_Off_Data
+struct FG2C_Matching_On_Off_Data {
+	struct FString m; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.G2C_Battle_Mode_Possible
+struct FG2C_Battle_Mode_Possible {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (3)
+};
+
+// ScriptStruct BravoHotelGame.G2C_Battle_Mode_Possible_Data
+struct FG2C_Battle_Mode_Possible_Data {
+	char isBattleModeSoloPossible : 0; // 0x0 (1)
+	char isBattleModeDuoPossible : 0; // 0x1 (1)
+	char isBattleModeSquadPossible : 0; // 0x2 (1)
+};
+
+// ScriptStruct BravoHotelGame.G2C_Notify_Alarm
+struct FG2C_Notify_Alarm {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (4)
+};
+
+// ScriptStruct BravoHotelGame.G2C_Notify_Alarm_Data
+struct FG2C_Notify_Alarm_Data {
+	int32_t notify_alarm; // 0x0 (4)
+};
+
+// ScriptStruct BravoHotelGame.G2C_Notify_Emergency
+struct FG2C_Notify_Emergency {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.G2C_Notify_Emergency_Data
+struct FG2C_Notify_Emergency_Data {
+	struct TArray<Unknown> notify_emergency; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.G2C_Notify_Emergency_Array
+struct FG2C_Notify_Emergency_Array {
+	struct FString Language; // 0x0 (16)
+	struct FString notify; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.G2C_AllUserKick
+struct FG2C_AllUserKick {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (1)
+};
+
+// ScriptStruct BravoHotelGame.G2C_GoToDediWhenYouWerePlaying
+struct FG2C_GoToDediWhenYouWerePlaying {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (160)
+};
+
+// ScriptStruct BravoHotelGame.G2C_GoToDediWhenYouWerePlaying_Data
+struct FG2C_GoToDediWhenYouWerePlaying_Data {
+	uint32_t C; // 0x0 (4)
+	struct FString E; // 0x8 (16)
+	struct FString D; // 0x18 (16)
+	char is_go : 0; // 0x28 (1)
+	struct FString ds; // 0x30 (16)
+	struct FString Token; // 0x40 (16)
+	struct FString team_id; // 0x50 (16)
+	struct FString Key; // 0x60 (16)
+	int32_t how; // 0x70 (4)
+	struct FString player_session_id; // 0x78 (16)
+	char SpectatorOnly : 0; // 0x88 (1)
+	struct FString AddOptions; // 0x90 (16)
+};
+
+// ScriptStruct BravoHotelGame.G2C_SetCloseMatchMakingTag
+struct FG2C_SetCloseMatchMakingTag {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (40)
+};
+
+// ScriptStruct BravoHotelGame.G2C_SetCloseMatchMakingTag_Data
+struct FG2C_SetCloseMatchMakingTag_Data {
+	uint32_t C; // 0x0 (4)
+	struct FString E; // 0x8 (16)
+	struct FString D; // 0x18 (16)
+};
+
+// ScriptStruct BravoHotelGame.C2G_SetCloseMatchMakingTag
+struct FC2G_SetCloseMatchMakingTag {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.C2G_SetCloseMatchMakingTag_Data
+struct FC2G_SetCloseMatchMakingTag_Data {
+	struct FString m; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.C2G_GoToDediWhenYouWerePlaying
+struct FC2G_GoToDediWhenYouWerePlaying {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (1)
+};
+
+// ScriptStruct BravoHotelGame.C2G_GoToDediWhenYouWerePlaying_Data
+struct FC2G_GoToDediWhenYouWerePlaying_Data {
+	char is_go : 0; // 0x0 (1)
+};
+
+// ScriptStruct BravoHotelGame.G2C_PartyWhoUpdatedPCInfo
+struct FG2C_PartyWhoUpdatedPCInfo {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (120)
+};
+
+// ScriptStruct BravoHotelGame.G2C_PartyWhoUpdatedPCInfo_Data
+struct FG2C_PartyWhoUpdatedPCInfo_Data {
+	struct FString UID; // 0x0 (16)
+	struct Unknown pc_info; // 0x10 (104)
+};
+
+// ScriptStruct BravoHotelGame.PartyPCInfo
+struct FPartyPCInfo {
+	struct FString pc_id; // 0x0 (16)
+	uint32_t class_type_index; // 0x10 (4)
+	uint32_t class_data_index; // 0x14 (4)
+	struct Unknown looks; // 0x18 (24)
+	struct TArray<Unknown> wear_item; // 0x30 (16)
+	struct TArray<Unknown> Weapon; // 0x40 (16)
+	struct TArray<Unknown> perk; // 0x50 (16)
+	uint32_t exp; // 0x60 (4)
+};
+
+// ScriptStruct BravoHotelGame.G2C_FriendWhoAccept
+struct FG2C_FriendWhoAccept {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (32)
+};
+
+// ScriptStruct BravoHotelGame.G2C_FriendWhoAccept_Data
+struct FG2C_FriendWhoAccept_Data {
+	struct FString inviteUid; // 0x0 (16)
+	struct FString invitePlayerName; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.G2C_FriendWhoInvite
+struct FG2C_FriendWhoInvite {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (32)
+};
+
+// ScriptStruct BravoHotelGame.G2C_FriendWhoInvite_Data
+struct FG2C_FriendWhoInvite_Data {
+	struct FString FromUID; // 0x0 (16)
+	struct FString fromPlayerName; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.G2C_PartyWhoEnterLobby
+struct FG2C_PartyWhoEnterLobby {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.G2C_PartyWhoEnterLobby_Data
+struct FG2C_PartyWhoEnterLobby_Data {
+	struct FString UID; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.C2G_EnterLobby
+struct FC2G_EnterLobby {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (1)
+};
+
+// ScriptStruct BravoHotelGame.G2C_FriendList
+struct FG2C_FriendList {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.G2C_FriendList_Data
+struct FG2C_FriendList_Data {
+	struct TArray<Unknown> friendInfoList; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.FriendInfo
+struct FFriendInfo {
+	struct FString UID; // 0x0 (16)
+	struct FString player_name; // 0x10 (16)
+	struct FString status; // 0x20 (16)
+};
+
+// ScriptStruct BravoHotelGame.C2G_FriendList
+struct FC2G_FriendList {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (1)
+};
+
+// ScriptStruct BravoHotelGame.G2C_PartyWhoUpdateTierID
+struct FG2C_PartyWhoUpdateTierID {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.G2C_PartyWhoUpdateTierID_Data
+struct FG2C_PartyWhoUpdateTierID_Data {
+	struct TArray<Unknown> party_who_update_tier_id; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.G2C_PartyWhoUpdateTierID_Array
+struct FG2C_PartyWhoUpdateTierID_Array {
+	struct FString UID; // 0x0 (16)
+	uint32_t tier_id; // 0x10 (4)
+};
+
+// ScriptStruct BravoHotelGame.G2C_PartyWhoPing
+struct FG2C_PartyWhoPing {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (24)
+};
+
+// ScriptStruct BravoHotelGame.G2C_PartyWhoPing_Data
+struct FG2C_PartyWhoPing_Data {
+	struct FString UID; // 0x0 (16)
+	uint32_t Ping; // 0x10 (4)
+};
+
+// ScriptStruct BravoHotelGame.C2G_PartyWhoPing
+struct FC2G_PartyWhoPing {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (4)
+};
+
+// ScriptStruct BravoHotelGame.C2G_PartyWhoPing_Data
+struct FC2G_PartyWhoPing_Data {
+	uint32_t Ping; // 0x0 (4)
+};
+
+// ScriptStruct BravoHotelGame.G2C_PartyWhoVoiceChat
+struct FG2C_PartyWhoVoiceChat {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (24)
+};
+
+// ScriptStruct BravoHotelGame.G2C_PartyWhoVoiceChat_Data
+struct FG2C_PartyWhoVoiceChat_Data {
+	struct FString UID; // 0x0 (16)
+	char is_voice_chat : 0; // 0x10 (1)
+};
+
+// ScriptStruct BravoHotelGame.C2G_PartyWhoVoiceChat
+struct FC2G_PartyWhoVoiceChat {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (1)
+};
+
+// ScriptStruct BravoHotelGame.C2G_PartyWhoVoiceChat_Data
+struct FC2G_PartyWhoVoiceChat_Data {
+	char is_voice_chat : 0; // 0x0 (1)
+};
+
+// ScriptStruct BravoHotelGame.G2C_PartyWhoReady
+struct FG2C_PartyWhoReady {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (24)
+};
+
+// ScriptStruct BravoHotelGame.G2C_PartyWhoReady_Data
+struct FG2C_PartyWhoReady_Data {
+	struct FString UID; // 0x0 (16)
+	char is_ready : 0; // 0x10 (1)
+};
+
+// ScriptStruct BravoHotelGame.C2G_PartyWhoReady
+struct FC2G_PartyWhoReady {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (1)
+};
+
+// ScriptStruct BravoHotelGame.C2G_PartyWhoReady_Data
+struct FC2G_PartyWhoReady_Data {
+	char is_ready : 0; // 0x0 (1)
+};
+
+// ScriptStruct BravoHotelGame.G2C_PartySelectMap
+struct FG2C_PartySelectMap {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (56)
+};
+
+// ScriptStruct BravoHotelGame.G2C_PartySelectMap_Data
+struct FG2C_PartySelectMap_Data {
+	struct FString Mode; // 0x0 (16)
+	struct FString Map; // 0x10 (16)
+	char itself : 0; // 0x20 (1)
+	struct FString person; // 0x28 (16)
+};
+
+// ScriptStruct BravoHotelGame.C2G_PartySelectMap
+struct FC2G_PartySelectMap {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (56)
+};
+
+// ScriptStruct BravoHotelGame.C2G_PartySelectMap_Data
+struct FC2G_PartySelectMap_Data {
+	struct FString Mode; // 0x0 (16)
+	struct FString Map; // 0x10 (16)
+	char itself : 0; // 0x20 (1)
+	struct FString person; // 0x28 (16)
+};
+
+// ScriptStruct BravoHotelGame.G2C_MatchCancel
+struct FG2C_MatchCancel {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (24)
+};
+
+// ScriptStruct BravoHotelGame.G2C_MatchCancel_Data
+struct FG2C_MatchCancel_Data {
+	uint32_t C; // 0x0 (4)
+	struct FString E; // 0x8 (16)
+};
+
+// ScriptStruct BravoHotelGame.C2G_MatchCancel
+struct FC2G_MatchCancel {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (1)
+};
+
+// ScriptStruct BravoHotelGame.G2C_MatchSuccess
+struct FG2C_MatchSuccess {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (120)
+};
+
+// ScriptStruct BravoHotelGame.G2C_MatchSuccess_Data
+struct FG2C_MatchSuccess_Data {
+	struct FString ds; // 0x0 (16)
+	struct FString Token; // 0x10 (16)
+	struct FString team_id; // 0x20 (16)
+	struct FString Key; // 0x30 (16)
+	int32_t how; // 0x40 (4)
+	struct FString player_session_id; // 0x48 (16)
+	struct FString game_server_id; // 0x58 (16)
+	struct FString m; // 0x68 (16)
+};
+
+// ScriptStruct BravoHotelGame.G2C_MatchFail
+struct FG2C_MatchFail {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (24)
+};
+
+// ScriptStruct BravoHotelGame.G2C_MatchFail_Data
+struct FG2C_MatchFail_Data {
+	uint32_t C; // 0x0 (4)
+	struct FString E; // 0x8 (16)
+};
+
+// ScriptStruct BravoHotelGame.G2C_MatchRequest
+struct FG2C_MatchRequest {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (56)
+};
+
+// ScriptStruct BravoHotelGame.G2C_MatchRequest_Data
+struct FG2C_MatchRequest_Data {
+	struct FString person; // 0x0 (16)
+	struct FString Mode; // 0x10 (16)
+	struct FString Map; // 0x20 (16)
+	int32_t how; // 0x30 (4)
+};
+
+// ScriptStruct BravoHotelGame.C2G_MatchRequest
+struct FC2G_MatchRequest {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (56)
+};
+
+// ScriptStruct BravoHotelGame.C2G_MatchRequest_Data
+struct FC2G_MatchRequest_Data {
+	struct FString person; // 0x0 (16)
+	struct FString Mode; // 0x10 (16)
+	struct FString Map; // 0x20 (16)
+	int32_t how; // 0x30 (4)
+};
+
+// ScriptStruct BravoHotelGame.G2C_PartyWhoMatchMakingTag
+struct FG2C_PartyWhoMatchMakingTag {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (32)
+};
+
+// ScriptStruct BravoHotelGame.G2C_PartyWhoMatchMakingTag_Data
+struct FG2C_PartyWhoMatchMakingTag_Data {
+	struct FString UID; // 0x0 (16)
+	struct FString m; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.G2C_PartyWhoOnline
+struct FG2C_PartyWhoOnline {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (24)
+};
+
+// ScriptStruct BravoHotelGame.G2C_PartyWhoOnline_Data
+struct FG2C_PartyWhoOnline_Data {
+	struct FString UID; // 0x0 (16)
+	char is_online : 0; // 0x10 (1)
+};
+
+// ScriptStruct BravoHotelGame.G2C_PartyClientStatus
+struct FG2C_PartyClientStatus {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (56)
+};
+
+// ScriptStruct BravoHotelGame.G2C_PartyClientStatus_Data
+struct FG2C_PartyClientStatus_Data {
+	uint32_t C; // 0x0 (4)
+	struct FString E; // 0x8 (16)
+	struct FString uidStatus; // 0x18 (16)
+	struct FString clientStatus; // 0x28 (16)
+};
+
+// ScriptStruct BravoHotelGame.C2G_PartyClientStatus
+struct FC2G_PartyClientStatus {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.C2G_PartyClientStatus_Data
+struct FC2G_PartyClientStatus_Data {
+	struct FString clientStatus; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.G2C_PartyEntrustSomeone
+struct FG2C_PartyEntrustSomeone {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (40)
+};
+
+// ScriptStruct BravoHotelGame.G2C_PartyEntrustSomeone_Data
+struct FG2C_PartyEntrustSomeone_Data {
+	uint32_t C; // 0x0 (4)
+	struct FString E; // 0x8 (16)
+	struct FString uidEntrusted; // 0x18 (16)
+};
+
+// ScriptStruct BravoHotelGame.C2G_PartyEntrustSomeone
+struct FC2G_PartyEntrustSomeone {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.C2G_PartyEntrustSomeone_Data
+struct FC2G_PartyEntrustSomeone_Data {
+	struct FString uidEntrusted; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.G2C_PartyKickSomeone
+struct FG2C_PartyKickSomeone {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (40)
+};
+
+// ScriptStruct BravoHotelGame.G2C_PartyKickSomeone_Data
+struct FG2C_PartyKickSomeone_Data {
+	uint32_t C; // 0x0 (4)
+	struct FString E; // 0x8 (16)
+	struct FString D; // 0x18 (16)
+};
+
+// ScriptStruct BravoHotelGame.C2G_PartyKickSomeone
+struct FC2G_PartyKickSomeone {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.C2G_PartyKickSomeone_Data
+struct FC2G_PartyKickSomeone_Data {
+	struct FString uidKicked; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.G2C_PartyWhoLeaved
+struct FG2C_PartyWhoLeaved {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (32)
+};
+
+// ScriptStruct BravoHotelGame.G2C_PartyWhoLeaved_Data
+struct FG2C_PartyWhoLeaved_Data {
+	struct FString uidLeaved; // 0x0 (16)
+	struct FString uidBoss; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.G2C_PartyLeave
+struct FG2C_PartyLeave {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (24)
+};
+
+// ScriptStruct BravoHotelGame.G2C_PartyLeave_Data
+struct FG2C_PartyLeave_Data {
+	uint32_t C; // 0x0 (4)
+	struct FString E; // 0x8 (16)
+};
+
+// ScriptStruct BravoHotelGame.C2G_PartyLeave
+struct FC2G_PartyLeave {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (1)
+};
+
+// ScriptStruct BravoHotelGame.G2C_PartyWhoJoined
+struct FG2C_PartyWhoJoined {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (96)
+};
+
+// ScriptStruct BravoHotelGame.PartyUser
+struct FPartyUser {
+	struct FString UID; // 0x0 (16)
+	struct FString playerName; // 0x10 (16)
+	char pad_20_0 : 5; // 0x20 (1)
+	char IsReady : 1; // 0x20 (1)
+	char pad_20_6 : 2; // 0x20 (1)
+	char pad_21_0 : 6; // 0x21 (1)
+	char IsOnline : 1; // 0x21 (1)
+	char pad_21_7 : 1; // 0x21 (1)
+	char pad_22_0 : 6; // 0x22 (1)
+	char IsVoiceChat : 1; // 0x22 (1)
+	char pad_22_7 : 1; // 0x22 (1)
+	struct FString clientStatus; // 0x28 (16)
+	uint32_t SeasonTierID; // 0x38 (4)
+	struct FString m; // 0x40 (16)
+	struct FString steamID; // 0x50 (16)
+};
+
+// ScriptStruct BravoHotelGame.G2C_PartyYouJoined
+struct FG2C_PartyYouJoined {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (112)
+};
+
+// ScriptStruct BravoHotelGame.G2C_PartyYouJoined_Data
+struct FG2C_PartyYouJoined_Data {
+	struct Unknown PartyInfo; // 0x0 (104)
+	char is_invite : 0; // 0x68 (1)
+};
+
+// ScriptStruct BravoHotelGame.PartyInfo
+struct FPartyInfo {
+	struct FString PartyID; // 0x0 (16)
+	struct FString uidBoss; // 0x10 (16)
+	struct TArray<Unknown> partyUserList; // 0x20 (16)
+	struct Unknown SelectedMapInfo; // 0x30 (56)
+};
+
+// ScriptStruct BravoHotelGame.SelectedMapInfo
+struct FSelectedMapInfo {
+	struct FString Mode; // 0x0 (16)
+	struct FString Map; // 0x10 (16)
+	char itself : 0; // 0x20 (1)
+	struct FString person; // 0x28 (16)
+};
+
+// ScriptStruct BravoHotelGame.G2C_PartyAcceptFailed
+struct FG2C_PartyAcceptFailed {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (24)
+};
+
+// ScriptStruct BravoHotelGame.G2C_PartyAcceptFailed_Data
+struct FG2C_PartyAcceptFailed_Data {
+	uint32_t C; // 0x0 (4)
+	struct FString E; // 0x8 (16)
+};
+
+// ScriptStruct BravoHotelGame.C2G_PartyAccept
+struct FC2G_PartyAccept {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.C2G_PartyAccept_Data
+struct FC2G_PartyAccept_Data {
+	struct FString partyTicket; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.G2C_PartyInvited_From
+struct FG2C_PartyInvited_From {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (48)
+};
+
+// ScriptStruct BravoHotelGame.G2C_PartyInvited_From_Data
+struct FG2C_PartyInvited_From_Data {
+	struct FString partyTicket; // 0x0 (16)
+	struct FString FromUID; // 0x10 (16)
+	struct FString fromPlayerName; // 0x20 (16)
+};
+
+// ScriptStruct BravoHotelGame.G2C_PartyInvite
+struct FG2C_PartyInvite {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (40)
+};
+
+// ScriptStruct BravoHotelGame.G2C_PartyInvite_Data
+struct FG2C_PartyInvite_Data {
+	uint32_t C; // 0x0 (4)
+	struct FString E; // 0x8 (16)
+	struct FString toUid; // 0x18 (16)
+};
+
+// ScriptStruct BravoHotelGame.C2G_PartyInvite
+struct FC2G_PartyInvite {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (16)
+};
+
+// ScriptStruct BravoHotelGame.C2G_PartyInvite_Data
+struct FC2G_PartyInvite_Data {
+	struct FString toUid; // 0x0 (16)
+};
+
+// ScriptStruct BravoHotelGame.G2C_Login
+struct FG2C_Login {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (120)
+};
+
+// ScriptStruct BravoHotelGame.G2C_Login_Data
+struct FG2C_Login_Data {
+	uint32_t C; // 0x0 (4)
+	struct FString E; // 0x8 (16)
+	struct FString D; // 0x18 (16)
+	struct FString UID; // 0x28 (16)
+	struct FString playerName; // 0x38 (16)
+	struct FString URL; // 0x48 (16)
+	char isCanGoDedi : 0; // 0x58 (1)
+	struct FString m; // 0x60 (16)
+	char isBattleModeSoloPossible : 0; // 0x70 (1)
+	char isBattleModeDuoPossible : 0; // 0x71 (1)
+	char isBattleModeSquadPossible : 0; // 0x72 (1)
+	char isWhiteIP : 0; // 0x73 (1)
+	char isGameViewTypeFPP : 0; // 0x74 (1)
+	char isGameViewTypeTPP : 0; // 0x75 (1)
+};
+
+// ScriptStruct BravoHotelGame.C2G_Login
+struct FC2G_Login {
+	struct FString Type; // 0x0 (16)
+	struct Unknown Data; // 0x10 (48)
+};
+
+// ScriptStruct BravoHotelGame.C2G_Login_Data
+struct FC2G_Login_Data {
+	struct FString SessionID; // 0x0 (16)
+	struct FString AuthToken; // 0x10 (16)
+	struct FString m; // 0x20 (16)
+};
+
+// ScriptStruct BravoHotelGame.RepClimbInfo
+struct FRepClimbInfo {
+	struct Unknown TargetPosition; // 0x0 (12)
+	struct Unknown WallNormal; // 0xC (12)
+	float HitHeight; // 0x18 (4)
+	float WallThickness; // 0x1C (4)
+	struct Unknown PlayMontage; // 0x20 (8)
+	char bBreakWindow : 0; // 0x28 (1)
+	char bClimbOver : 0; // 0x29 (1)
+	char bSprint : 0; // 0x2A (1)
+	char bLedgeGrab : 0; // 0x2B (1)
+	char bLedgeGrabBlocked : 0; // 0x2C (1)
+	struct Unknown TargetComponent; // 0x30 (8)
+	int8_t ClimbDataIndex; // 0x38 (1)
+};
+
+// ScriptStruct BravoHotelGame.ChangeEquipResult
+struct FChangeEquipResult {
+	char Equip : 0; // 0x0 (1)
+	char UnEquip : 0; // 0x1 (1)
+	struct FName ItemKey; // 0x4 (8)
+};
+
+// ScriptStruct BravoHotelGame.MaterialProperties
+struct FMaterialProperties : FTableRowBase {
+	float Toughness; // 0x8 (4)
 };
 

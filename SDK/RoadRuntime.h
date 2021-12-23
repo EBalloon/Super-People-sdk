@@ -1,5 +1,5 @@
 // Class RoadRuntime.CrossActor
-struct ACrossActor : AStaticMeshActor {
+class ACrossActor : AStaticMeshActor {
 	struct FString UniqueKey; // 0x320 (16)
 	struct TArray<Unknown> SideActors; // 0x330 (16)
 	struct TArray<Unknown> SideMeshes; // 0x340 (16)
@@ -12,7 +12,7 @@ struct ACrossActor : AStaticMeshActor {
 };
 
 // Class RoadRuntime.RoadActor
-struct ARoadActor : UActor {
+class ARoadActor : UActor {
 	char SplineMeshAxis; // 0x310 (1)
 	struct Unknown LocalOffset; // 0x314 (12)
 	struct Unknown Father; // 0x320 (8)
@@ -40,5 +40,57 @@ struct ARoadActor : UActor {
 	void ClearSplineMeshes(); // Function RoadRuntime.RoadActor.ClearSplineMeshes(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x109AFB0>
 	float ApproxLength(struct Unknown& SplineInfo, float Start, float End, int32_t ApproxSections); // Function RoadRuntime.RoadActor.ApproxLength(Final|Native|Static|Public|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x109AE30>
 	void AddSplineMesh(int32_t MeshIndex); // Function RoadRuntime.RoadActor.AddSplineMesh(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x109ADB0>
+};
+
+// ScriptStruct RoadRuntime.CrossMeshManager
+struct FCrossMeshManager {
+	struct Unknown Prototype; // 0x0 (8)
+	struct Unknown Owner; // 0x8 (8)
+	struct Unknown SideMesh; // 0x10 (8)
+	int32_t SocketIndex; // 0x18 (4)
+};
+
+// ScriptStruct RoadRuntime.CrossActorManager
+struct FCrossActorManager {
+	struct Unknown* Prototype; // 0x0 (8)
+	struct Unknown SideActor; // 0x8 (8)
+	int32_t SocketIndex; // 0x10 (4)
+};
+
+// ScriptStruct RoadRuntime.SideMeshManager
+struct FSideMeshManager {
+	struct Unknown Prototype; // 0x0 (8)
+	struct Unknown Owner; // 0x8 (8)
+	struct Unknown SideMeshes; // 0x10 (8)
+	int32_t SocketIndex; // 0x18 (4)
+};
+
+// ScriptStruct RoadRuntime.CurbsManager
+struct FCurbsManager {
+	struct Unknown Owner; // 0x0 (8)
+	struct Unknown Prototype; // 0x8 (8)
+	struct Unknown StartPrototype; // 0x10 (8)
+	struct Unknown EndPrototype; // 0x18 (8)
+	struct TArray<Unknown> CurbsComp; // 0x20 (16)
+	struct Unknown Spline; // 0x30 (8)
+	int32_t SplineIndex; // 0x38 (4)
+	int32_t SocketIndex; // 0x3C (4)
+	int32_t Segmentation; // 0x40 (4)
+	int32_t StepGeneration; // 0x44 (4)
+	struct Unknown Offset; // 0x48 (12)
+	struct Unknown Scale; // 0x54 (12)
+	char CurbEnable : 0; // 0x60 (1)
+	char StartEnable : 0; // 0x61 (1)
+	char EndEnable : 0; // 0x62 (1)
+	struct Unknown SplineInfo; // 0x68 (24)
+	float StartRoll; // 0x80 (4)
+	float EndRoll; // 0x84 (4)
+};
+
+// ScriptStruct RoadRuntime.SideActorManager
+struct FSideActorManager {
+	struct Unknown* Prototype; // 0x0 (8)
+	struct TArray<Unknown> SideActors; // 0x8 (16)
+	int32_t SocketIndex; // 0x18 (4)
 };
 

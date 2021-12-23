@@ -1,5 +1,5 @@
 // WidgetBlueprintGeneratedClass KeyImageWidget.KeyImageWidget_C
-struct UKeyImageWidget_C : UUserWidget {
+class UKeyImageWidget_C : UUserWidget {
 	struct Unknown UberGraphFrame; // 0x248 (8)
 	struct Unknown Alt; // 0x250 (8)
 	struct Unknown Alt; // 0x258 (8)
@@ -21,7 +21,7 @@ struct UKeyImageWidget_C : UUserWidget {
 	int32_t FontSize; // 0x2D4 (4)
 
 	void SetFontSize(char Override); // Function KeyImageWidget.KeyImageWidget_C.SetFontSize(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
-	void GetKeyNameFromKey(struct Unknown Key, struct FString& Name, char& b); // Function KeyImageWidget.KeyImageWidget_C.GetKeyNameFromKey(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void GetKeyNameFromKey(struct Unknown Key, struct FString& Name, char& bRet); // Function KeyImageWidget.KeyImageWidget_C.GetKeyNameFromKey(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void Set(struct Unknown Key); // Function KeyImageWidget.KeyImageWidget_C.Set(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void Set(struct Unknown AxisKey); // Function KeyImageWidget.KeyImageWidget_C.Set(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void SetInfo(struct Unknown Key, char Shift, char Alt, char Ctrl); // Function KeyImageWidget.KeyImageWidget_C.SetInfo(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>

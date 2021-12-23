@@ -1,5 +1,5 @@
 // WidgetBlueprintGeneratedClass SettingDevWidget.SettingDevWidget_C
-struct USettingDevWidget_C : UBravoHotelSettingSubWidget {
+class USettingDevWidget_C : UBravoHotelSettingSubWidget {
 	struct Unknown UberGraphFrame; // 0x298 (8)
 	struct Unknown ButtonGod; // 0x2A0 (8)
 	struct Unknown DevWidget; // 0x2A8 (8)

@@ -1,5 +1,5 @@
 // BlueprintGeneratedClass BP_KeyCombination.BP_KeyCombination_C
-struct UBP_KeyCombination_C : Object {
+class UBP_KeyCombination_C : Object {
 	struct FString Name; // 0x28 (16)
 	struct TArray<Unknown> Key; // 0x38 (16)
 	struct TArray<Unknown> Default; // 0x48 (16)

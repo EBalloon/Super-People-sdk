@@ -1,5 +1,5 @@
 // WidgetBlueprintGeneratedClass WB_ClassicToolTipDesign.WB_ClassicToolTipDesign_C
-struct UWB_ClassicToolTipDesign_C : UWB_ToolTipDesign_C {
+class UWB_ClassicToolTipDesign_C : UWB_ToolTipDesign_C {
 	struct Unknown UberGraphFrame; // 0x268 (8)
 	struct Unknown ToolTipVerticalList; // 0x270 (8)
 

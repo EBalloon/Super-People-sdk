@@ -58,12 +58,12 @@ enum class EMediaSoundChannels : uint8 {
 };
 
 // Class MediaAssets.BaseMediaSource
-struct UBaseMediaSource : UMediaSource {
+class UBaseMediaSource : UMediaSource {
 	struct FName playerName; // 0x80 (8)
 };
 
 // Class MediaAssets.FileMediaSource
-struct UFileMediaSource : UBaseMediaSource {
+class UFileMediaSource : UBaseMediaSource {
 	struct FString FilePath; // 0x88 (16)
 	char PrecacheFile : 0; // 0x98 (1)
 
@@ -71,7 +71,7 @@ struct UFileMediaSource : UBaseMediaSource {
 };
 
 // Class MediaAssets.MediaComponent
-struct UMediaComponent : UActorComponent {
+class UMediaComponent : UActorComponent {
 	struct Unknown MediaTexture; // 0xB0 (8)
 	struct Unknown MediaPlayer; // 0xB8 (8)
 
@@ -80,7 +80,7 @@ struct UMediaComponent : UActorComponent {
 };
 
 // Class MediaAssets.MediaPlayer
-struct UMediaPlayer : Object {
+class UMediaPlayer : Object {
 	struct FMulticastInlineDelegate OnEndReached; // 0x28 (16)
 	struct FMulticastInlineDelegate OnMediaClosed; // 0x38 (16)
 	struct FMulticastInlineDelegate OnMediaOpened; // 0x48 (16)
@@ -127,7 +127,7 @@ struct UMediaPlayer : Object {
 	void PlayAndSeek(); // Function MediaAssets.MediaPlayer.PlayAndSeek(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x34F2D10>
 	char Play(); // Function MediaAssets.MediaPlayer.Play(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x34F2CE0>
 	char Pause(); // Function MediaAssets.MediaPlayer.Pause(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x34F2CB0>
-	char OpenUrl(struct FString U); // Function MediaAssets.MediaPlayer.OpenUrl(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x34F2C00>
+	char OpenUrl(struct FString URL); // Function MediaAssets.MediaPlayer.OpenUrl(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x34F2C00>
 	char OpenSourceWithOptions(struct Unknown MediaSource, struct Unknown& options); // Function MediaAssets.MediaPlayer.OpenSourceWithOptions(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x34F2B00>
 	void OpenSourceLatent(struct Unknown WorldContextObject, struct Unknown LatentInfo, struct Unknown MediaSource, struct Unknown& options, char& bSuccess); // Function MediaAssets.MediaPlayer.OpenSourceLatent(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x34F2920>
 	char OpenSourceForWidget(struct Unknown MediaSource, struct Unknown NewOwnerWidget); // Function MediaAssets.MediaPlayer.OpenSourceForWidget(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x34F2860>
@@ -176,13 +176,13 @@ struct UMediaPlayer : Object {
 	int32_t GetAudioTrackSampleRate(int32_t TrackIndex, int32_t FormatIndex); // Function MediaAssets.MediaPlayer.GetAudioTrackSampleRate(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x34F0FA0>
 	int32_t GetAudioTrackChannels(int32_t TrackIndex, int32_t FormatIndex); // Function MediaAssets.MediaPlayer.GetAudioTrackChannels(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x34F0EE0>
 	void Close(); // Function MediaAssets.MediaPlayer.Close(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x34F0AA0>
-	char CanPlayUrl(struct FString U); // Function MediaAssets.MediaPlayer.CanPlayUrl(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x34F09F0>
+	char CanPlayUrl(struct FString URL); // Function MediaAssets.MediaPlayer.CanPlayUrl(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x34F09F0>
 	char CanPlaySource(struct Unknown MediaSource); // Function MediaAssets.MediaPlayer.CanPlaySource(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x34F0960>
 	char CanPause(); // Function MediaAssets.MediaPlayer.CanPause(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x34F0930>
 };
 
 // Class MediaAssets.MediaPlaylist
-struct UMediaPlaylist : Object {
+class UMediaPlaylist : Object {
 	struct TArray<Unknown> Items; // 0x28 (16)
 
 	char Replace(int32_t Index, struct Unknown Replacement); // Function MediaAssets.MediaPlaylist.Replace(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x34F2EB0>
@@ -194,13 +194,13 @@ struct UMediaPlaylist : Object {
 	struct Unknown GetPrevious(int32_t& InOutIndex); // Function MediaAssets.MediaPlaylist.GetPrevious(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x34F1690>
 	struct Unknown GetNext(int32_t& InOutIndex); // Function MediaAssets.MediaPlaylist.GetNext(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x34F1420>
 	struct Unknown Get(int32_t Index); // Function MediaAssets.MediaPlaylist.Get(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1350C90>
-	char AddUrl(struct FString U); // Function MediaAssets.MediaPlaylist.AddUrl(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x34F0630>
+	char AddUrl(struct FString URL); // Function MediaAssets.MediaPlaylist.AddUrl(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x34F0630>
 	char AddFile(struct FString FilePath); // Function MediaAssets.MediaPlaylist.AddFile(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x34F0580>
 	char Add(struct Unknown MediaSource); // Function MediaAssets.MediaPlaylist.Add(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x34F04F0>
 };
 
 // Class MediaAssets.MediaSoundComponent
-struct UMediaSoundComponent : USynthComponent {
+class UMediaSoundComponent : USynthComponent {
 	enum class Unknow Channels; // 0x710 (4)
 	char DynamicRateAdjustment : 0; // 0x714 (1)
 	float RateAdjustmentFactor; // 0x718 (4)
@@ -219,7 +219,7 @@ struct UMediaSoundComponent : USynthComponent {
 };
 
 // Class MediaAssets.MediaTexture
-struct UMediaTexture : UTexture {
+class UMediaTexture : UTexture {
 	char AddressX; // 0xB8 (1)
 	char AddressY; // 0xB9 (1)
 	char AutoClear : 0; // 0xBA (1)
@@ -236,19 +236,31 @@ struct UMediaTexture : UTexture {
 };
 
 // Class MediaAssets.PlatformMediaSource
-struct UPlatformMediaSource : UMediaSource {
+class UPlatformMediaSource : UMediaSource {
 	struct Unknown MediaSource; // 0x80 (8)
 };
 
 // Class MediaAssets.StreamMediaSource
-struct UStreamMediaSource : UBaseMediaSource {
+class UStreamMediaSource : UBaseMediaSource {
 	struct FString StreamUrl; // 0x88 (16)
 };
 
 // Class MediaAssets.TimeSynchronizableMediaSource
-struct UTimeSynchronizableMediaSource : UBaseMediaSource {
+class UTimeSynchronizableMediaSource : UBaseMediaSource {
 	char bUseTimeSynchronization : 0; // 0x88 (1)
 	int32_t FrameDelay; // 0x8C (4)
 	double TimeDelay; // 0x90 (8)
+};
+
+// ScriptStruct MediaAssets.MediaCaptureDevice
+struct FMediaCaptureDevice {
+	struct FText DisplayName; // 0x0 (24)
+	struct FString URL; // 0x18 (16)
+};
+
+// ScriptStruct MediaAssets.MediaSoundComponentSpectralData
+struct FMediaSoundComponentSpectralData {
+	float FrequencyHz; // 0x0 (4)
+	float Magnitude; // 0x4 (4)
 };
 

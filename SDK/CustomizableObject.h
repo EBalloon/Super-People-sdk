@@ -45,7 +45,7 @@ enum class EMutableParameterType : uint8 {
 };
 
 // Class CustomizableObject.CustomizableInstancePrivateData
-struct UCustomizableInstancePrivateData : Object {
+class UCustomizableInstancePrivateData : Object {
 	struct TArray<Unknown> GeneratedMaterials; // 0x30 (16)
 	struct TArray<Unknown> GeneratedMeshes; // 0x40 (16)
 	struct TArray<Unknown> GeneratedTextures; // 0x50 (16)
@@ -56,13 +56,13 @@ struct UCustomizableInstancePrivateData : Object {
 };
 
 // Class CustomizableObject.MutableMaskOutCache
-struct UMutableMaskOutCache : Object {
+class UMutableMaskOutCache : Object {
 	struct TMap<Unknown, Unknown>Unknown Materials; // 0x28 (80)
 	struct TMap<Unknown, Unknown>Unknown Textures; // 0x78 (80)
 };
 
 // Class CustomizableObject.CustomizableObject
-struct UCustomizableObject : Object {
+class UCustomizableObject : Object {
 	struct Unknown ReferenceSkeletalMesh; // 0x28 (8)
 	struct Unknown ReferenceStaticMesh; // 0x30 (8)
 	enum class Unknow Relevancy; // 0x38 (1)
@@ -103,7 +103,7 @@ struct UCustomizableObject : Object {
 };
 
 // Class CustomizableObject.CustomizableObjectInstance
-struct UCustomizableObjectInstance : Object {
+class UCustomizableObjectInstance : Object {
 	struct Unknown CustomizableObject; // 0x28 (8)
 	struct Unknown SkeletalMesh; // 0x30 (8)
 	struct TArray<Unknown> BoolParameters; // 0x38 (16)
@@ -155,19 +155,19 @@ struct UCustomizableObjectInstance : Object {
 };
 
 // Class CustomizableObject.CustomizableObjectImageProviderArray
-struct UCustomizableObjectImageProviderArray : UCustomizableSystemImageProvider {
+class UCustomizableObjectImageProviderArray : UCustomizableSystemImageProvider {
 	struct TArray<Unknown> Textures; // 0x28 (16)
 };
 
 // Class CustomizableObject.CustomizableObjectSystem
-struct UCustomizableObjectSystem : Object {
+class UCustomizableObjectSystem : Object {
 	struct TArray<Unknown> PendingReleaseSkeletalMesh; // 0x28 (16)
 	struct Unknown PreviewExternalImageProvider; // 0x48 (8)
 	struct TArray<Unknown> ProtectedCachedTextures; // 0x150 (16)
 	struct Unknown DefaultInstanceLODManagement; // 0x170 (8)
 	struct Unknown CurrentInstanceLODManagement; // 0x178 (8)
 
-	void SetReleaseMutableTexturesImmediately(char b); // Function CustomizableObject.CustomizableObjectSystem.SetReleaseMutableTexturesImmediately(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x103C780>
+	void SetReleaseMutableTexturesImmediately(char bReleaseTextures); // Function CustomizableObject.CustomizableObjectSystem.SetReleaseMutableTexturesImmediately(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x103C780>
 	int32_t GetTotalInstances(); // Function CustomizableObject.CustomizableObjectSystem.GetTotalInstances(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x103C750>
 	int32_t GetTextureMemoryUsed(); // Function CustomizableObject.CustomizableObjectSystem.GetTextureMemoryUsed(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x103C720>
 	struct FString GetPluginVersion(); // Function CustomizableObject.CustomizableObjectSystem.GetPluginVersion(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x103C6A0>
@@ -179,7 +179,7 @@ struct UCustomizableObjectSystem : Object {
 };
 
 // Class CustomizableObject.CustomizableSkeletalComponent
-struct UCustomizableSkeletalComponent : USceneComponent {
+class UCustomizableSkeletalComponent : USceneComponent {
 	float SkippedLastRenderTime; // 0x23C (4)
 	struct Unknown CustomizableObjectInstance; // 0x240 (8)
 
@@ -187,7 +187,197 @@ struct UCustomizableSkeletalComponent : USceneComponent {
 };
 
 // Class CustomizableObject.CustomizableSkeletalMeshActor
-struct ACustomizableSkeletalMeshActor : ASkeletalMeshActor {
+class ACustomizableSkeletalMeshActor : ASkeletalMeshActor {
 	struct Unknown CustomizableSkeletalComponent; // 0x398 (8)
+};
+
+// ScriptStruct CustomizableObject.ParameterDecorations
+struct FParameterDecorations {
+	struct TArray<Unknown> Images; // 0x0 (16)
+};
+
+// ScriptStruct CustomizableObject.GeneratedMaterial
+struct FGeneratedMaterial {
+	struct TArray<Unknown> Textures; // 0x0 (16)
+};
+
+// ScriptStruct CustomizableObject.GeneratedTexture
+struct FGeneratedTexture {
+	int32_t ID; // 0x0 (4)
+	struct FString Name; // 0x8 (16)
+	struct Unknown Texture; // 0x18 (8)
+};
+
+// ScriptStruct CustomizableObject.GeneratedMesh
+struct FGeneratedMesh {
+	int32_t ID; // 0x0 (4)
+	struct Unknown Mesh; // 0x8 (8)
+};
+
+// ScriptStruct CustomizableObject.MorphTargetVertexIndex
+struct FMorphTargetVertexIndex {
+	int32_t MorphIndex; // 0x0 (4)
+	int32_t VertexIndex; // 0x4 (4)
+};
+
+// ScriptStruct CustomizableObject.MaskOutTexture
+struct FMaskOutTexture {
+	int32_t SizeX; // 0x0 (4)
+	int32_t SizeY; // 0x4 (4)
+	struct TArray<Unknown> Data; // 0x8 (16)
+};
+
+// ScriptStruct CustomizableObject.MutableModelParameterProperties
+struct FMutableModelParameterProperties {
+	struct FString Name; // 0x0 (16)
+	enum class Unknow Type; // 0x10 (1)
+	int32_t ImageDescriptionCount; // 0x14 (4)
+	struct TArray<Unknown> PossibleValues; // 0x18 (16)
+	struct Unknown ParamUIMetadata; // 0x28 (240)
+};
+
+// ScriptStruct CustomizableObject.MutableParamUIMetadata
+struct FMutableParamUIMetadata {
+	struct FString ObjectFriendlyName; // 0x0 (16)
+	struct FString UISectionName; // 0x10 (16)
+	int32_t UIOrder; // 0x20 (4)
+	struct TSoftObjectPtr<Unknown> UIThumbnail; // 0x28 (40)
+	struct TMap<Unknown, Unknown>Unknown ExtraInformation; // 0x50 (80)
+	struct TMap<Unknown, Unknown>Unknown ExtraAssets; // 0xA0 (80)
+};
+
+// ScriptStruct CustomizableObject.MutableModelParameterValue
+struct FMutableModelParameterValue {
+	struct FString Name; // 0x0 (16)
+	int32_t Value; // 0x10 (4)
+};
+
+// ScriptStruct CustomizableObject.MutableModelImageProperties
+struct FMutableModelImageProperties {
+	struct FString TextureParameterName; // 0x0 (16)
+	char Filter; // 0x10 (1)
+	char SRGB : 0; // 0x14 (1)
+	int32_t LODBias; // 0x18 (4)
+};
+
+// ScriptStruct CustomizableObject.CustomizableObjectExportOptions
+struct FCustomizableObjectExportOptions {
+	char bTextureCompression : 0; // 0x0 (1)
+	struct FString TargetPlatform; // 0x8 (16)
+};
+
+// ScriptStruct CustomizableObject.CompilationOptions
+struct FCompilationOptions {
+	char bTextureCompression : 0; // 0x0 (1)
+	int32_t OptimizationLevel; // 0x4 (4)
+	char bUseParallelCompilation : 0; // 0x8 (1)
+	char bUseDiskCompilation : 0; // 0x9 (1)
+};
+
+// ScriptStruct CustomizableObject.ProfileParameterDat
+struct FProfileParameterDat {
+	struct FString ProfileName; // 0x0 (16)
+	struct TArray<Unknown> BoolParameters; // 0x10 (16)
+	struct TArray<Unknown> IntParameters; // 0x20 (16)
+	struct TArray<Unknown> FloatParameters; // 0x30 (16)
+	struct TArray<Unknown> TextureParameters; // 0x40 (16)
+	struct TArray<Unknown> VectorParameters; // 0x50 (16)
+	struct TArray<Unknown> ProjectorParameters; // 0x60 (16)
+};
+
+// ScriptStruct CustomizableObject.CustomizableObjectProjectorParameterValue
+struct FCustomizableObjectProjectorParameterValue {
+	struct FString ParameterName; // 0x0 (16)
+	struct Unknown Value; // 0x10 (56)
+	struct FString UID; // 0x48 (16)
+	struct TArray<Unknown> RangeValues; // 0x58 (16)
+};
+
+// ScriptStruct CustomizableObject.CustomizableObjectProjector
+struct FCustomizableObjectProjector {
+	struct Unknown Position; // 0x0 (12)
+	struct Unknown Direction; // 0xC (12)
+	struct Unknown Up; // 0x18 (12)
+	struct Unknown Scale; // 0x24 (12)
+	enum class Unknow ProjectionType; // 0x30 (1)
+	float Angle; // 0x34 (4)
+};
+
+// ScriptStruct CustomizableObject.CustomizableObjectVectorParameterValue
+struct FCustomizableObjectVectorParameterValue {
+	struct FString ParameterName; // 0x0 (16)
+	struct Unknown ParameterValue; // 0x10 (16)
+	struct FString UID; // 0x20 (16)
+};
+
+// ScriptStruct CustomizableObject.CustomizableObjectTextureParameterValue
+struct FCustomizableObjectTextureParameterValue {
+	struct FString ParameterName; // 0x0 (16)
+	uint64_t ParameterValue; // 0x10 (8)
+	struct FString UID; // 0x18 (16)
+};
+
+// ScriptStruct CustomizableObject.CustomizableObjectFloatParameterValue
+struct FCustomizableObjectFloatParameterValue {
+	struct FString ParameterName; // 0x0 (16)
+	float ParameterValue; // 0x10 (4)
+	struct FString UID; // 0x18 (16)
+	struct TArray<Unknown> ParameterRangeValues; // 0x28 (16)
+};
+
+// ScriptStruct CustomizableObject.CustomizableObjectIntParameterValue
+struct FCustomizableObjectIntParameterValue {
+	struct FString ParameterName; // 0x0 (16)
+	struct FString ParameterValueName; // 0x10 (16)
+	struct FString UID; // 0x20 (16)
+	struct TArray<Unknown> ParameterRangeValueNames; // 0x30 (16)
+};
+
+// ScriptStruct CustomizableObject.CustomizableObjectBoolParameterValue
+struct FCustomizableObjectBoolParameterValue {
+	struct FString ParameterName; // 0x0 (16)
+	char ParameterValue : 0; // 0x10 (1)
+	struct FString UID; // 0x18 (16)
+};
+
+// ScriptStruct CustomizableObject.CustomizableObjectIdentifier
+struct FCustomizableObjectIdentifier {
+	struct FString CustomizableObjectGroupName; // 0x0 (16)
+	struct FString CustomizableObjectName; // 0x10 (16)
+	struct FString Guid; // 0x20 (16)
+};
+
+// ScriptStruct CustomizableObject.CustomizableObjectIdPair
+struct FCustomizableObjectIdPair {
+	struct FString CustomizableObjectGroupName; // 0x0 (16)
+	struct FString CustomizableObjectName; // 0x10 (16)
+};
+
+// ScriptStruct CustomizableObject.CustomizedMaterialTexture2D
+struct FCustomizedMaterialTexture2D {
+	struct FName Name; // 0x0 (8)
+	struct Unknown Texture; // 0x8 (8)
+};
+
+// ScriptStruct CustomizableObject.PendingReleaseSkeletalMeshInfo
+struct FPendingReleaseSkeletalMeshInfo {
+	struct Unknown SkeletalMesh; // 0x0 (8)
+	double Timestamp; // 0x8 (8)
+};
+
+// ScriptStruct CustomizableObject.ParameterUIData
+struct FParameterUIData {
+	struct FString Name; // 0x0 (16)
+	struct Unknown ParamUIMetadata; // 0x10 (240)
+	enum class Unknow Type; // 0x100 (1)
+	struct TArray<Unknown> ArrayIntegerParameterOption; // 0x108 (16)
+	enum class Unknow IntegerParameterGroupType; // 0x118 (1)
+	char bDontCompressRuntimeTextures : 0; // 0x119 (1)
+};
+
+// ScriptStruct CustomizableObject.IntegerParameterUIData
+struct FIntegerParameterUIData {
+	struct FString Name; // 0x0 (16)
+	struct Unknown ParamUIMetadata; // 0x10 (240)
 };
 

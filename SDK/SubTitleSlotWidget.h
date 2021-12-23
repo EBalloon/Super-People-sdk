@@ -1,5 +1,5 @@
 // WidgetBlueprintGeneratedClass SubTitleSlotWidget.SubTitleSlotWidget_C
-struct USubTitleSlotWidget_C : UUserWidget {
+class USubTitleSlotWidget_C : UUserWidget {
 	struct Unknown UberGraphFrame; // 0x248 (8)
 	struct Unknown Image; // 0x250 (8)
 	struct Unknown Image_2; // 0x258 (8)

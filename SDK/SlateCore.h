@@ -339,7 +339,372 @@ enum class EConsumeMouseWheel : uint8 {
 };
 
 // Class SlateCore.SlateWidgetStyleAsset
-struct USlateWidgetStyleAsset : Object {
+class USlateWidgetStyleAsset : Object {
 	struct Unknown CustomStyle; // 0x28 (8)
+};
+
+// ScriptStruct SlateCore.SlateBrush
+struct FSlateBrush {
+	struct Unknown ImageSize; // 0x8 (8)
+	struct Unknown Margin; // 0x10 (16)
+	struct Unknown TintColor; // 0x20 (40)
+	struct Unknown ResourceObject; // 0x48 (8)
+	struct FName ResourceName; // 0x50 (8)
+	struct Unknown UVRegion; // 0x58 (20)
+	char DrawAs; // 0x6C (1)
+	enum class Unknown tiling; // 0x6D (1)
+	char Mirroring; // 0x6E (1)
+	char ImageType; // 0x6F (1)
+	char bIsDynamicallyLoaded : 0; // 0x80 (1)
+	char bHasUObject : 0; // 0x80 (1)
+};
+
+// ScriptStruct SlateCore.SlateColor
+struct FSlateColor {
+	struct Unknown SpecifiedColor; // 0x0 (16)
+	char ColorUseRule; // 0x10 (1)
+};
+
+// ScriptStruct SlateCore.Margin
+struct FMargin {
+	float Left; // 0x0 (4)
+	float Top; // 0x4 (4)
+	float Right; // 0x8 (4)
+	float Bottom; // 0xC (4)
+};
+
+// ScriptStruct SlateCore.SlateFontInfo
+struct FSlateFontInfo {
+	struct Unknown FontObject; // 0x0 (8)
+	struct Unknown FontMaterial; // 0x8 (8)
+	struct Unknown OutlineSettings; // 0x10 (32)
+	struct FName TypefaceFontName; // 0x40 (8)
+	int32_t Size; // 0x48 (4)
+};
+
+// ScriptStruct SlateCore.FontOutlineSettings
+struct FFontOutlineSettings {
+	int32_t OutlineSize; // 0x0 (4)
+	char bSeparateFillAlpha : 0; // 0x4 (1)
+	char bApplyOutlineToDropShadows : 0; // 0x5 (1)
+	struct Unknown OutlineMaterial; // 0x8 (8)
+	struct Unknown OutlineColor; // 0x10 (16)
+};
+
+// ScriptStruct SlateCore.TableRowStyle
+struct FTableRowStyle : FSlateWidgetStyle {
+	struct Unknown SelectorFocusedBrush; // 0x8 (136)
+	struct Unknown ActiveHoveredBrush; // 0x90 (136)
+	struct Unknown ActiveBrush; // 0x118 (136)
+	struct Unknown InactiveHoveredBrush; // 0x1A0 (136)
+	struct Unknown InactiveBrush; // 0x228 (136)
+	struct Unknown EvenRowBackgroundHoveredBrush; // 0x2B0 (136)
+	struct Unknown EvenRowBackgroundBrush; // 0x338 (136)
+	struct Unknown OddRowBackgroundHov; // 0x3C0 (136)
+	struct Unknown OddRowBackgroundBrush; // 0x448 (136)
+	struct Unknown TextColor; // 0x4D0 (40)
+	struct Unknown SelectedTextColor; // 0x4F8 (40)
+	struct Unknown DropIndicator_Above; // 0x520 (136)
+	struct Unknown DropIndicator_Onto; // 0x5A8 (136)
+	struct Unknown DropIndicator_Below; // 0x630 (136)
+	struct Unknown ActiveHighlightedBrush; // 0x6B8 (136)
+	struct Unknown InactiveHighlightedBrush; // 0x740 (136)
+};
+
+// ScriptStruct SlateCore.ComboBoxStyle
+struct FComboBoxStyle : FSlateWidgetStyle {
+	struct Unknown ComboButtonStyle; // 0x8 (952)
+	struct Unknown PressedSlateSound; // 0x3C0 (24)
+	struct Unknown SelectionChangeSlateSound; // 0x3D8 (24)
+};
+
+// ScriptStruct SlateCore.SlateSound
+struct FSlateSound {
+	struct Unknown ResourceObject; // 0x0 (8)
+};
+
+// ScriptStruct SlateCore.ComboButtonStyle
+struct FComboButtonStyle : FSlateWidgetStyle {
+	struct Unknown ButtonStyle; // 0x8 (632)
+	struct Unknown DownArrowImage; // 0x280 (136)
+	struct Unknown ShadowOffset; // 0x308 (8)
+	struct Unknown ShadowColorAndOpacity; // 0x310 (16)
+	struct Unknown MenuBorderBrush; // 0x320 (136)
+	struct Unknown MenuBorderPadding; // 0x3A8 (16)
+};
+
+// ScriptStruct SlateCore.ButtonStyle
+struct FButtonStyle : FSlateWidgetStyle {
+	struct Unknown Normal; // 0x8 (136)
+	struct Unknown Hovered; // 0x90 (136)
+	struct Unknown Pressed; // 0x118 (136)
+	struct Unknown Disabled; // 0x1A0 (136)
+	struct Unknown NormalPadding; // 0x228 (16)
+	struct Unknown PressedPadding; // 0x238 (16)
+	struct Unknown PressedSlateSound; // 0x248 (24)
+	struct Unknown HoveredSlateSound; // 0x260 (24)
+};
+
+// ScriptStruct SlateCore.EditableTextStyle
+struct FEditableTextStyle : FSlateWidgetStyle {
+	struct Unknown Font; // 0x8 (80)
+	struct Unknown ColorAndOpacity; // 0x58 (40)
+	struct Unknown BackgroundImageSelected; // 0x80 (136)
+	struct Unknown BackgroundImageComposing; // 0x108 (136)
+	struct Unknown CaretImage; // 0x190 (136)
+};
+
+// ScriptStruct SlateCore.EditableTextBoxStyle
+struct FEditableTextBoxStyle : FSlateWidgetStyle {
+	struct Unknown BackgroundImageNormal; // 0x8 (136)
+	struct Unknown BackgroundImageHovered; // 0x90 (136)
+	struct Unknown BackgroundImageFocused; // 0x118 (136)
+	struct Unknown BackgroundImageReadOnly; // 0x1A0 (136)
+	struct Unknown Padding; // 0x228 (16)
+	struct Unknown Font; // 0x238 (80)
+	struct Unknown ForegroundColor; // 0x288 (40)
+	struct Unknown BackgroundColor; // 0x2B0 (40)
+	struct Unknown ReadOnlyForegroundColor; // 0x2D8 (40)
+	struct Unknown HScrollBarPadding; // 0x300 (16)
+	struct Unknown VScrollBarPadding; // 0x310 (16)
+	struct Unknown ScrollBarStyle; // 0x320 (1232)
+};
+
+// ScriptStruct SlateCore.ScrollBarStyle
+struct FScrollBarStyle : FSlateWidgetStyle {
+	struct Unknown HorizontalBackgroundImage; // 0x8 (136)
+	struct Unknown VerticalBackgroundImage; // 0x90 (136)
+	struct Unknown VerticalTopSlotImage; // 0x118 (136)
+	struct Unknown HorizontalTopSlotImage; // 0x1A0 (136)
+	struct Unknown VerticalBottomSlotImage; // 0x228 (136)
+	struct Unknown HorizontalBottomSlotImage; // 0x2B0 (136)
+	struct Unknown NormalThumbImage; // 0x338 (136)
+	struct Unknown HoveredThumbImage; // 0x3C0 (136)
+	struct Unknown DraggedThumbImage; // 0x448 (136)
+};
+
+// ScriptStruct SlateCore.TextBlockStyle
+struct FTextBlockStyle : FSlateWidgetStyle {
+	struct Unknown Font; // 0x8 (80)
+	struct Unknown ColorAndOpacity; // 0x58 (40)
+	struct Unknown ShadowOffset; // 0x80 (8)
+	struct Unknown ShadowColorAndOpacity; // 0x88 (16)
+	struct Unknown SelectedBackgroundColor; // 0x98 (40)
+	struct Unknown HighlightColor; // 0xC0 (16)
+	struct Unknown HighlightShape; // 0xD0 (136)
+	struct Unknown StrikeBrush; // 0x158 (136)
+	struct Unknown UnderlineBrush; // 0x1E0 (136)
+};
+
+// ScriptStruct SlateCore.SpinBoxStyle
+struct FSpinBoxStyle : FSlateWidgetStyle {
+	struct Unknown BackgroundBrush; // 0x8 (136)
+	struct Unknown HoveredBackgroundBrush; // 0x90 (136)
+	struct Unknown ActiveFillBrush; // 0x118 (136)
+	struct Unknown InactiveFillBrush; // 0x1A0 (136)
+	struct Unknown ArrowsImage; // 0x228 (136)
+	struct Unknown ForegroundColor; // 0x2B0 (40)
+	struct Unknown TextPadding; // 0x2D8 (16)
+};
+
+// ScriptStruct SlateCore.CompositeFont
+struct FCompositeFont {
+	struct Unknown DefaultTypeface; // 0x0 (16)
+	struct Unknown FallbackTypeface; // 0x10 (24)
+	struct TArray<Unknown> SubTypefaces; // 0x28 (16)
+};
+
+// ScriptStruct SlateCore.CompositeFallbackFont
+struct FCompositeFallbackFont {
+	struct Unknown Typeface; // 0x0 (16)
+	float ScalingFactor; // 0x10 (4)
+};
+
+// ScriptStruct SlateCore.Typeface
+struct FTypeface {
+	struct TArray<Unknown> Fonts; // 0x0 (16)
+};
+
+// ScriptStruct SlateCore.TypefaceEntry
+struct FTypefaceEntry {
+	struct FName Name; // 0x0 (8)
+	struct Unknown Font; // 0x8 (32)
+};
+
+// ScriptStruct SlateCore.FontData
+struct FFontData {
+	struct FString FontFilename; // 0x0 (16)
+	enum class Unknow Hinting; // 0x10 (1)
+	enum class Unknow LoadingPolicy; // 0x11 (1)
+	int32_t SubFaceIndex; // 0x14 (4)
+	struct Unknown FontFaceAsset; // 0x18 (8)
+};
+
+// ScriptStruct SlateCore.CompositeSubFont
+struct FCompositeSubFont : FCompositeFallbackFont {
+	struct TArray<Unknown> CharacterRanges; // 0x18 (16)
+	struct FString Cultures; // 0x28 (16)
+};
+
+// ScriptStruct SlateCore.WindowStyle
+struct FWindowStyle : FSlateWidgetStyle {
+	struct Unknown MinimizeButtonStyle; // 0x8 (632)
+	struct Unknown MaximizeButtonStyle; // 0x280 (632)
+	struct Unknown RestoreButtonStyle; // 0x4F8 (632)
+	struct Unknown CloseButtonStyle; // 0x770 (632)
+	struct Unknown TitleTextStyle; // 0x9E8 (616)
+	struct Unknown ActiveTitleBrush; // 0xC50 (136)
+	struct Unknown InactiveTitleBrush; // 0xCD8 (136)
+	struct Unknown FlashTitleBrush; // 0xD60 (136)
+	struct Unknown BackgroundColor; // 0xDE8 (40)
+	struct Unknown OutlineBrush; // 0xE10 (136)
+	struct Unknown OutlineColor; // 0xE98 (40)
+	struct Unknown BorderBrush; // 0xEC0 (136)
+	struct Unknown BackgroundBrush; // 0xF48 (136)
+	struct Unknown ChildBackgroundBrush; // 0xFD0 (136)
+};
+
+// ScriptStruct SlateCore.ScrollBorderStyle
+struct FScrollBorderStyle : FSlateWidgetStyle {
+	struct Unknown TopShadowBrush; // 0x8 (136)
+	struct Unknown BottomShadowBrush; // 0x90 (136)
+};
+
+// ScriptStruct SlateCore.ScrollBoxStyle
+struct FScrollBoxStyle : FSlateWidgetStyle {
+	struct Unknown TopShadowBrush; // 0x8 (136)
+	struct Unknown BottomShadowBrush; // 0x90 (136)
+	struct Unknown LeftShadowBrush; // 0x118 (136)
+	struct Unknown RightShadowBrush; // 0x1A0 (136)
+};
+
+// ScriptStruct SlateCore.DockTabStyle
+struct FDockTabStyle : FSlateWidgetStyle {
+	struct Unknown CloseButtonStyle; // 0x8 (632)
+	struct Unknown NormalBrush; // 0x280 (136)
+	struct Unknown ActiveBrush; // 0x308 (136)
+	struct Unknown ColorOverlayTabBrush; // 0x390 (136)
+	struct Unknown ColorOverlayIconBrush; // 0x418 (136)
+	struct Unknown ForegroundBrush; // 0x4A0 (136)
+	struct Unknown HoveredBrush; // 0x528 (136)
+	struct Unknown ContentAreaBrush; // 0x5B0 (136)
+	struct Unknown TabWellBrush; // 0x638 (136)
+	struct Unknown TabPadding; // 0x6C0 (16)
+	float OverlapWidth; // 0x6D0 (4)
+	struct Unknown FlashColor; // 0x6D8 (40)
+};
+
+// ScriptStruct SlateCore.HeaderRowStyle
+struct FHeaderRowStyle : FSlateWidgetStyle {
+	struct Unknown ColumnStyle; // 0x8 (1232)
+	struct Unknown LastColumnStyle; // 0x4D8 (1232)
+	struct Unknown ColumnSplitterStyle; // 0x9A8 (280)
+	struct Unknown BackgroundBrush; // 0xAC0 (136)
+	struct Unknown ForegroundColor; // 0xB48 (40)
+};
+
+// ScriptStruct SlateCore.SplitterStyle
+struct FSplitterStyle : FSlateWidgetStyle {
+	struct Unknown HandleNormalBrush; // 0x8 (136)
+	struct Unknown HandleHighlightBrush; // 0x90 (136)
+};
+
+// ScriptStruct SlateCore.TableColumnHeaderStyle
+struct FTableColumnHeaderStyle : FSlateWidgetStyle {
+	struct Unknown SortPrimaryAscendingImage; // 0x8 (136)
+	struct Unknown SortPrimaryDescendingImage; // 0x90 (136)
+	struct Unknown SortSecondaryAscendingImage; // 0x118 (136)
+	struct Unknown SortSecondaryDescendingImage; // 0x1A0 (136)
+	struct Unknown NormalBrush; // 0x228 (136)
+	struct Unknown HoveredBrush; // 0x2B0 (136)
+	struct Unknown MenuDropdownImage; // 0x338 (136)
+	struct Unknown MenuDropdownNormalBorderBrush; // 0x3C0 (136)
+	struct Unknown MenuDropdownHoveredBorderBrush; // 0x448 (136)
+};
+
+// ScriptStruct SlateCore.InlineTextImageStyle
+struct FInlineTextImageStyle : FSlateWidgetStyle {
+	struct Unknown Image; // 0x8 (136)
+	int16_t Baseline; // 0x90 (2)
+};
+
+// ScriptStruct SlateCore.VolumeControlStyle
+struct FVolumeControlStyle : FSlateWidgetStyle {
+	struct Unknown SliderStyle; // 0x8 (832)
+	struct Unknown HighVolumeImage; // 0x348 (136)
+	struct Unknown MidVolumeImage; // 0x3D0 (136)
+	struct Unknown LowVolumeImage; // 0x458 (136)
+	struct Unknown NoVolumeImage; // 0x4E0 (136)
+	struct Unknown MutedImage; // 0x568 (136)
+};
+
+// ScriptStruct SlateCore.SliderStyle
+struct FSliderStyle : FSlateWidgetStyle {
+	struct Unknown NormalBarImage; // 0x8 (136)
+	struct Unknown HoveredBarImage; // 0x90 (136)
+	struct Unknown DisabledBarImage; // 0x118 (136)
+	struct Unknown NormalThumbImage; // 0x1A0 (136)
+	struct Unknown HoveredThumbImage; // 0x228 (136)
+	struct Unknown DisabledThumbImage; // 0x2B0 (136)
+	float BarThickness; // 0x338 (4)
+};
+
+// ScriptStruct SlateCore.SearchBoxStyle
+struct FSearchBoxStyle : FSlateWidgetStyle {
+	struct Unknown TextBoxStyle; // 0x8 (2032)
+	struct Unknown ActiveFontInfo; // 0x7F8 (80)
+	struct Unknown UpArrowImage; // 0x848 (136)
+	struct Unknown DownArrowImage; // 0x8D0 (136)
+	struct Unknown GlassImage; // 0x958 (136)
+	struct Unknown ClearImage; // 0x9E0 (136)
+	struct Unknown ImagePadding; // 0xA68 (16)
+	char bLeftAlignButtons : 0; // 0xA78 (1)
+};
+
+// ScriptStruct SlateCore.ExpandableAreaStyle
+struct FExpandableAreaStyle : FSlateWidgetStyle {
+	struct Unknown CollapsedImage; // 0x8 (136)
+	struct Unknown ExpandedImage; // 0x90 (136)
+	float RolloutAnimationSeconds; // 0x118 (4)
+};
+
+// ScriptStruct SlateCore.ProgressBarStyle
+struct FProgressBarStyle : FSlateWidgetStyle {
+	struct Unknown BackgroundImage; // 0x8 (136)
+	struct Unknown FillImage; // 0x90 (136)
+	struct Unknown MarqueeImage; // 0x118 (136)
+};
+
+// ScriptStruct SlateCore.InlineEditableTextBlockStyle
+struct FInlineEditableTextBlockStyle : FSlateWidgetStyle {
+	struct Unknown EditableTextBoxStyle; // 0x8 (2032)
+	struct Unknown TextStyle; // 0x7F8 (616)
+};
+
+// ScriptStruct SlateCore.HyperlinkStyle
+struct FHyperlinkStyle : FSlateWidgetStyle {
+	struct Unknown UnderlineStyle; // 0x8 (632)
+	struct Unknown TextStyle; // 0x280 (616)
+	struct Unknown Padding; // 0x4E8 (16)
+};
+
+// ScriptStruct SlateCore.CheckBoxStyle
+struct FCheckBoxStyle : FSlateWidgetStyle {
+	char CheckBoxType; // 0x8 (1)
+	struct Unknown UncheckedImage; // 0x10 (136)
+	struct Unknown UncheckedHoveredImage; // 0x98 (136)
+	struct Unknown UncheckedPressedImage; // 0x120 (136)
+	struct Unknown CheckedImage; // 0x1A8 (136)
+	struct Unknown CheckedHoveredImage; // 0x230 (136)
+	struct Unknown CheckedPressedImage; // 0x2B8 (136)
+	struct Unknown UndeterminedImage; // 0x340 (136)
+	struct Unknown UndeterminedHoveredImage; // 0x3C8 (136)
+	struct Unknown UndeterminedPressedImage; // 0x450 (136)
+	struct Unknown Padding; // 0x4D8 (16)
+	struct Unknown ForegroundColor; // 0x4E8 (40)
+	struct Unknown BorderBackgroundColor; // 0x510 (40)
+	struct Unknown CheckedSlateSound; // 0x538 (24)
+	struct Unknown UncheckedSlateSound; // 0x550 (24)
+	struct Unknown HoveredSlateSound; // 0x568 (24)
 };
 

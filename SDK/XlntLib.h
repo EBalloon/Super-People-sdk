@@ -209,13 +209,13 @@ enum class ExcelSortType : uint8 {
 };
 
 // Class XlntLib.ExcelWorkbook
-struct UExcelWorkbook : Object {
-	struct TArray<Unknown> mSheets; // 0x28 (16)
-	struct Unknown mActiveSheet; // 0x38 (8)
+class UExcelWorkbook : Object {
+	struct TArray<Unknown> m; // 0x28 (16)
+	struct Unknown m; // 0x38 (8)
 
 	struct FString Title(); // Function XlntLib.ExcelWorkbook.Title(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1351970>
 	char StopWatch(struct Unknown WorldContextObject); // Function XlntLib.ExcelWorkbook.StopWatch(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x13510E0>
-	char StartWatch(struct Unknown WorldContextObject, struct FDelegate onChanged, char a, float Rate); // Function XlntLib.ExcelWorkbook.StartWatch(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1350F60>
+	char StartWatch(struct Unknown WorldContextObject, struct FDelegate onChanged, char autoReload, float Rate); // Function XlntLib.ExcelWorkbook.StartWatch(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1350F60>
 	struct Unknown SheetWithTitle(struct FString Title); // Function XlntLib.ExcelWorkbook.SheetWithTitle(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1350E60>
 	struct Unknown SheetWithId(int32_t ID); // Function XlntLib.ExcelWorkbook.SheetWithId(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1350DD0>
 	struct TArray<Unknown> SheetTitles(); // Function XlntLib.ExcelWorkbook.SheetTitles(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1350D50>
@@ -252,5 +252,105 @@ struct UExcelWorkbook : Object {
 	struct TArray<Unknown> AllCustomProperties(); // Function XlntLib.ExcelWorkbook.AllCustomProperties(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x134A6F0>
 	struct TArray<Unknown> AllCoreProperties(); // Function XlntLib.ExcelWorkbook.AllCoreProperties(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x134A670>
 	struct Unknown ActiveSheet(); // Function XlntLib.ExcelWorkbook.ActiveSheet(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x134A640>
+};
+
+// ScriptStruct XlntLib.ExcelAlignment
+struct FExcelAlignment {
+	char ShrinkToFit : 0; // 0x0 (1)
+	char WrapText : 0; // 0x1 (1)
+	int32_t Indent; // 0x4 (4)
+	int32_t TextRotation; // 0x8 (4)
+	enum class Unknow HorizontalAlignment; // 0xC (1)
+	enum class Unknow VerticalAlignment; // 0xD (1)
+};
+
+// ScriptStruct XlntLib.ExcelBorder
+struct FExcelBorder {
+	struct Unknown Start; // 0x0 (36)
+	struct Unknown End; // 0x24 (36)
+	struct Unknown Top; // 0x48 (36)
+	struct Unknown Bottom; // 0x6C (36)
+	struct Unknown Horizontal; // 0x90 (36)
+	struct Unknown Vertical; // 0xB4 (36)
+	struct Unknown Diagonal; // 0xD8 (36)
+	enum class Unknow DiagonalDirection; // 0xFC (1)
+};
+
+// ScriptStruct XlntLib.ExcelBorderSide
+struct FExcelBorderSide {
+	struct Unknown Color; // 0x0 (32)
+	enum class Unknow Style; // 0x20 (1)
+};
+
+// ScriptStruct XlntLib.ExcelColor
+struct FExcelColor {
+	enum class Unknow Type; // 0x0 (1)
+	int32_t ColorIndex; // 0x4 (4)
+	struct Unknown ColorValue; // 0x8 (16)
+	float Tint; // 0x18 (4)
+	char IsAutoColor : 0; // 0x1C (1)
+};
+
+// ScriptStruct XlntLib.ExcelCellRangeReference
+struct FExcelCellRangeReference {
+	struct Unknown TopLeft; // 0x0 (8)
+	struct Unknown BottomRight; // 0x8 (8)
+};
+
+// ScriptStruct XlntLib.ExcelCellReference
+struct FExcelCellReference {
+	int32_t Column; // 0x0 (4)
+	int32_t Row; // 0x4 (4)
+};
+
+// ScriptStruct XlntLib.ExcelFill
+struct FExcelFill {
+	enum class Unknow Type; // 0x0 (1)
+	struct Unknown PatternFill; // 0x4 (68)
+	struct Unknown GradientFill; // 0x48 (104)
+};
+
+// ScriptStruct XlntLib.ExcelGradientFill
+struct FExcelGradientFill {
+	enum class Unknow Type; // 0x0 (1)
+	float Degree; // 0x4 (4)
+	struct Unknown Distance; // 0x8 (16)
+	struct TMap<Unknown, Unknown>Unknown Stops; // 0x18 (80)
+};
+
+// ScriptStruct XlntLib.ExcelPatternFill
+struct FExcelPatternFill {
+	enum class Unknow Type; // 0x0 (1)
+	struct Unknown ForegroundColor; // 0x4 (32)
+	struct Unknown BackgroundColor; // 0x24 (32)
+};
+
+// ScriptStruct XlntLib.ExcelFont
+struct FExcelFont {
+	struct FString Name; // 0x0 (16)
+	float Size; // 0x10 (4)
+	char IsBold : 0; // 0x14 (1)
+	char IsItalic : 0; // 0x15 (1)
+	char IsSuperScript : 0; // 0x16 (1)
+	char IsStrikeThrough : 0; // 0x17 (1)
+	char IsOutline : 0; // 0x18 (1)
+	char IsShadow : 0; // 0x19 (1)
+	enum class Unknow UnderlineType; // 0x1A (1)
+	struct Unknown Color; // 0x1C (32)
+	int32_t Family; // 0x3C (4)
+	int32_t Charset; // 0x40 (4)
+	struct FString Scheme; // 0x48 (16)
+};
+
+// ScriptStruct XlntLib.ExcelNumberFormat
+struct FExcelNumberFormat {
+	int32_t ID; // 0x0 (4)
+	struct FString FormatString; // 0x8 (16)
+};
+
+// ScriptStruct XlntLib.ExcelProtection
+struct FExcelProtection {
+	char IsLocked : 0; // 0x0 (1)
+	char IsHidden : 0; // 0x1 (1)
 };
 

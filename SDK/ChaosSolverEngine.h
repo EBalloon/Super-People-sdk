@@ -10,13 +10,13 @@ enum class EClusterConnectionTypeEnum : uint8 {
 };
 
 // Class ChaosSolverEngine.ChaosGameplayEventDispatcher
-struct UChaosGameplayEventDispatcher : UChaosEventListenerComponent {
+class UChaosGameplayEventDispatcher : UChaosEventListenerComponent {
 	struct TMap<Unknown, Unknown>Unknown CollisionEventRegistrations; // 0x1C8 (80)
 	struct TMap<Unknown, Unknown>Unknown BreakEventRegistrations; // 0x218 (80)
 };
 
 // Class ChaosSolverEngine.ChaosSolverActor
-struct AChaosSolverActor : UActor {
+class AChaosSolverActor : UActor {
 	float TimeStepMultiplier; // 0x310 (4)
 	int32_t CollisionIterations; // 0x314 (4)
 	int32_t PushOutIterations; // 0x318 (4)
@@ -42,7 +42,43 @@ struct AChaosSolverActor : UActor {
 };
 
 // Class ChaosSolverEngine.ChaosSolverSettings
-struct UChaosSolverSettings : UDeveloperSettings {
+class UChaosSolverSettings : UDeveloperSettings {
 	struct Unknown DefaultChaosSolverActorClass; // 0x40 (24)
+};
+
+// ScriptStruct ChaosSolverEngine.ChaosPhysicsCollisionInfo
+struct FChaosPhysicsCollisionInfo {
+	struct Unknown Component; // 0x0 (8)
+	struct Unknown OtherComponent; // 0x8 (8)
+	struct Unknown Location; // 0x10 (12)
+	struct Unknown Normal; // 0x1C (12)
+	struct Unknown AccumulatedImpulse; // 0x28 (12)
+	struct Unknown Velocity; // 0x34 (12)
+	struct Unknown OtherVelocity; // 0x40 (12)
+	struct Unknown AngularVelocity; // 0x4C (12)
+	struct Unknown OtherAngularVelocity; // 0x58 (12)
+	float Mass; // 0x64 (4)
+	float OtherMass; // 0x68 (4)
+};
+
+// ScriptStruct ChaosSolverEngine.ChaosBreakEvent
+struct FChaosBreakEvent {
+	struct Unknown Component; // 0x0 (8)
+	struct Unknown Location; // 0x8 (12)
+	struct Unknown Velocity; // 0x14 (12)
+	struct Unknown AngularVelocity; // 0x20 (12)
+	float Mass; // 0x2C (4)
+};
+
+// ScriptStruct ChaosSolverEngine.ChaosHandlerSet
+struct FChaosHandlerSet {
+	struct TSet<Unknown> ChaosHandlers; // 0x8 (80)
+};
+
+// ScriptStruct ChaosSolverEngine.ChaosDebugSubstepControl
+struct FChaosDebugSubstepControl {
+	char bPause : 0; // 0x0 (1)
+	char bSubstep : 0; // 0x1 (1)
+	char bStep : 0; // 0x2 (1)
 };
 

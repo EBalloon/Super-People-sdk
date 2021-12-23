@@ -1,5 +1,5 @@
 // WidgetBlueprintGeneratedClass LineWidget.LineWidget_C
-struct ULineWidget_C : UUserWidget {
+class ULineWidget_C : UUserWidget {
 	struct Unknown UberGraphFrame; // 0x248 (8)
 	struct Unknown Image_51; // 0x250 (8)
 	float InitSize; // 0x258 (4)

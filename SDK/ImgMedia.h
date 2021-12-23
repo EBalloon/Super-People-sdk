@@ -1,5 +1,5 @@
 // Class ImgMedia.ImgMediaSource
-struct UImgMediaSource : UBaseMediaSource {
+class UImgMediaSource : UBaseMediaSource {
 	struct Unknown FrameRateOverride; // 0x88 (8)
 	struct FString ProxyOverride; // 0x90 (16)
 	struct Unknown SequencePath; // 0xA0 (16)

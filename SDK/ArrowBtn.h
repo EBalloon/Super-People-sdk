@@ -1,5 +1,5 @@
 // WidgetBlueprintGeneratedClass ArrowBtn.ArrowBtn_C
-struct UArrowBtn_C : UUserWidget {
+class UArrowBtn_C : UUserWidget {
 	struct Unknown UberGraphFrame; // 0x248 (8)
 	struct Unknown Button_68; // 0x250 (8)
 	struct Unknown Normal; // 0x258 (8)

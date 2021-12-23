@@ -1,5 +1,5 @@
 // WidgetBlueprintGeneratedClass HUD_Widget.HUD_Widget_C
-struct UHUD_Widget_C : UUserWidget {
+class UHUD_Widget_C : UUserWidget {
 	struct Unknown UberGraphFrame; // 0x248 (8)
 	struct Unknown ChatWidget; // 0x250 (8)
 	struct Unknown Chat; // 0x258 (8)

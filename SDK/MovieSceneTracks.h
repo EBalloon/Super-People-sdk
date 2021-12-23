@@ -33,7 +33,7 @@ enum class EParticleKey : uint8 {
 };
 
 // Class MovieSceneTracks.MovieScenePropertyTrack
-struct UMovieScenePropertyTrack : UMovieSceneNameableTrack {
+class UMovieScenePropertyTrack : UMovieSceneNameableTrack {
 	struct Unknown SectionToKey; // 0x58 (8)
 	struct FName PropertyName; // 0x60 (8)
 	struct FString PropertyPath; // 0x68 (16)
@@ -41,7 +41,7 @@ struct UMovieScenePropertyTrack : UMovieSceneNameableTrack {
 };
 
 // Class MovieSceneTracks.MovieScene3DConstraintSection
-struct UMovieScene3DConstraintSection : UMovieSceneSection {
+class UMovieScene3DConstraintSection : UMovieSceneSection {
 	struct Unknown ConstraintId; // 0xE0 (16)
 	struct Unknown ConstraintBindingID; // 0xF0 (24)
 
@@ -50,7 +50,7 @@ struct UMovieScene3DConstraintSection : UMovieSceneSection {
 };
 
 // Class MovieSceneTracks.MovieScene3DAttachSection
-struct UMovieScene3DAttachSection : UMovieScene3DConstraintSection {
+class UMovieScene3DAttachSection : UMovieScene3DConstraintSection {
 	struct FName AttachSocketName; // 0x108 (8)
 	struct FName AttachComponentName; // 0x110 (8)
 	enum class Unknow AttachmentLocationRule; // 0x118 (1)
@@ -62,22 +62,22 @@ struct UMovieScene3DAttachSection : UMovieScene3DConstraintSection {
 };
 
 // Class MovieSceneTracks.MovieScene3DConstraintTrack
-struct UMovieScene3DConstraintTrack : UMovieSceneTrack {
+class UMovieScene3DConstraintTrack : UMovieSceneTrack {
 	struct TArray<Unknown> ConstraintSections; // 0x58 (16)
 };
 
 // Class MovieSceneTracks.MovieScene3DPathSection
-struct UMovieScene3DPathSection : UMovieScene3DConstraintSection {
+class UMovieScene3DPathSection : UMovieScene3DConstraintSection {
 	struct Unknown TimingCurve; // 0x108 (160)
 	enum class Unknow FrontAxisEnum; // 0x1A8 (1)
 	enum class Unknow UpAxisEnum; // 0x1A9 (1)
 	char bFollow : 0; // 0x1AC (1)
-	char b : 0; // 0x1AC (1)
+	char bReverse : 0; // 0x1AC (1)
 	char bForceUpright : 0; // 0x1AC (1)
 };
 
 // Class MovieSceneTracks.MovieScene3DTransformSection
-struct UMovieScene3DTransformSection : UMovieSceneSection {
+class UMovieScene3DTransformSection : UMovieSceneSection {
 	struct Unknown TransformMask; // 0xE0 (4)
 	struct Unknown Translation[0x3]; // 0xE8 (480)
 	struct Unknown Rotation[0x3]; // 0x2C8 (480)
@@ -87,14 +87,14 @@ struct UMovieScene3DTransformSection : UMovieSceneSection {
 };
 
 // Class MovieSceneTracks.MovieSceneActorReferenceSection
-struct UMovieSceneActorReferenceSection : UMovieSceneSection {
+class UMovieSceneActorReferenceSection : UMovieSceneSection {
 	struct Unknown ActorReferenceData; // 0xE0 (176)
 	struct Unknown ActorGuidIndexCurve; // 0x190 (128)
 	struct TArray<Unknown> ActorGuidStrings; // 0x210 (16)
 };
 
 // Class MovieSceneTracks.MovieSceneAudioSection
-struct UMovieSceneAudioSection : UMovieSceneSection {
+class UMovieSceneAudioSection : UMovieSceneSection {
 	struct Unknown Sound; // 0xE0 (8)
 	struct Unknown StartFrameOffset; // 0xE8 (4)
 	float StartOffset; // 0xEC (4)
@@ -118,28 +118,28 @@ struct UMovieSceneAudioSection : UMovieSceneSection {
 };
 
 // Class MovieSceneTracks.MovieSceneAudioTrack
-struct UMovieSceneAudioTrack : UMovieSceneNameableTrack {
+class UMovieSceneAudioTrack : UMovieSceneNameableTrack {
 	struct TArray<Unknown> AudioSections; // 0x58 (16)
 };
 
 // Class MovieSceneTracks.MovieSceneBoolSection
-struct UMovieSceneBoolSection : UMovieSceneSection {
+class UMovieSceneBoolSection : UMovieSceneSection {
 	char DefaultValue : 0; // 0xE0 (1)
 	struct Unknown BoolCurve; // 0xE8 (144)
 };
 
 // Class MovieSceneTracks.MovieSceneByteSection
-struct UMovieSceneByteSection : UMovieSceneSection {
+class UMovieSceneByteSection : UMovieSceneSection {
 	struct Unknown ByteCurve; // 0xE0 (152)
 };
 
 // Class MovieSceneTracks.MovieSceneByteTrack
-struct UMovieSceneByteTrack : UMovieScenePropertyTrack {
+class UMovieSceneByteTrack : UMovieScenePropertyTrack {
 	struct Unknown Enum; // 0x88 (8)
 };
 
 // Class MovieSceneTracks.MovieSceneCameraAnimSection
-struct UMovieSceneCameraAnimSection : UMovieSceneSection {
+class UMovieSceneCameraAnimSection : UMovieSceneSection {
 	struct Unknown AnimData; // 0xE0 (32)
 	struct Unknown CameraAnim; // 0x100 (8)
 	float PlayRate; // 0x108 (4)
@@ -150,12 +150,12 @@ struct UMovieSceneCameraAnimSection : UMovieSceneSection {
 };
 
 // Class MovieSceneTracks.MovieSceneCameraAnimTrack
-struct UMovieSceneCameraAnimTrack : UMovieSceneNameableTrack {
+class UMovieSceneCameraAnimTrack : UMovieSceneNameableTrack {
 	struct TArray<Unknown> CameraAnimSections; // 0x58 (16)
 };
 
 // Class MovieSceneTracks.MovieSceneCameraCutSection
-struct UMovieSceneCameraCutSection : UMovieSceneSection {
+class UMovieSceneCameraCutSection : UMovieSceneSection {
 	struct Unknown CameraGuid; // 0xE0 (16)
 	struct Unknown CameraBindingID; // 0xF0 (24)
 
@@ -164,13 +164,13 @@ struct UMovieSceneCameraCutSection : UMovieSceneSection {
 };
 
 // Class MovieSceneTracks.MovieSceneCameraCutTrack
-struct UMovieSceneCameraCutTrack : UMovieSceneNameableTrack {
+class UMovieSceneCameraCutTrack : UMovieSceneNameableTrack {
 	char bCanBlend : 0; // 0x58 (1)
 	struct TArray<Unknown> Sections; // 0x60 (16)
 };
 
 // Class MovieSceneTracks.MovieSceneCameraShakeSection
-struct UMovieSceneCameraShakeSection : UMovieSceneSection {
+class UMovieSceneCameraShakeSection : UMovieSceneSection {
 	struct Unknown ShakeData; // 0xE0 (32)
 	struct Unknown* ShakeClass; // 0x100 (8)
 	float PlayScale; // 0x108 (4)
@@ -179,12 +179,12 @@ struct UMovieSceneCameraShakeSection : UMovieSceneSection {
 };
 
 // Class MovieSceneTracks.MovieSceneCameraShakeTrack
-struct UMovieSceneCameraShakeTrack : UMovieSceneNameableTrack {
+class UMovieSceneCameraShakeTrack : UMovieSceneNameableTrack {
 	struct TArray<Unknown> CameraShakeSections; // 0x58 (16)
 };
 
 // Class MovieSceneTracks.MovieSceneCinematicShotSection
-struct UMovieSceneCinematicShotSection : UMovieSceneSubSection {
+class UMovieSceneCinematicShotSection : UMovieSceneSubSection {
 	struct FString ShotDisplayName; // 0x158 (16)
 	struct FText DisplayName; // 0x168 (24)
 
@@ -193,7 +193,7 @@ struct UMovieSceneCinematicShotSection : UMovieSceneSubSection {
 };
 
 // Class MovieSceneTracks.MovieSceneColorSection
-struct UMovieSceneColorSection : UMovieSceneSection {
+class UMovieSceneColorSection : UMovieSceneSection {
 	struct Unknown RedCurve; // 0xE0 (160)
 	struct Unknown GreenCurve; // 0x180 (160)
 	struct Unknown BlueCurve; // 0x220 (160)
@@ -201,33 +201,33 @@ struct UMovieSceneColorSection : UMovieSceneSection {
 };
 
 // Class MovieSceneTracks.MovieSceneColorTrack
-struct UMovieSceneColorTrack : UMovieScenePropertyTrack {
+class UMovieSceneColorTrack : UMovieScenePropertyTrack {
 	char bIsSlateColor : 0; // 0x88 (1)
 };
 
 // Class MovieSceneTracks.MovieSceneEnumSection
-struct UMovieSceneEnumSection : UMovieSceneSection {
+class UMovieSceneEnumSection : UMovieSceneSection {
 	struct Unknown EnumCurve; // 0xE0 (152)
 };
 
 // Class MovieSceneTracks.MovieSceneEnumTrack
-struct UMovieSceneEnumTrack : UMovieScenePropertyTrack {
+class UMovieSceneEnumTrack : UMovieScenePropertyTrack {
 	struct Unknown Enum; // 0x88 (8)
 };
 
 // Class MovieSceneTracks.MovieSceneEventRepeaterSection
-struct UMovieSceneEventRepeaterSection : UMovieSceneEventSectionBase {
+class UMovieSceneEventRepeaterSection : UMovieSceneEventSectionBase {
 	struct Unknown Event; // 0xE0 (40)
 };
 
 // Class MovieSceneTracks.MovieSceneEventSection
-struct UMovieSceneEventSection : UMovieSceneSection {
+class UMovieSceneEventSection : UMovieSceneSection {
 	struct Unknown Events; // 0xE0 (120)
 	struct Unknown eventData; // 0x158 (136)
 };
 
 // Class MovieSceneTracks.MovieSceneEventTrack
-struct UMovieSceneEventTrack : UMovieSceneNameableTrack {
+class UMovieSceneEventTrack : UMovieSceneNameableTrack {
 	char bFireEventsWhenForwards : 0; // 0x58 (1)
 	char bFireEventsWhenBackwards : 0; // 0x58 (1)
 	enum class Unknow EventPosition; // 0x5C (1)
@@ -236,28 +236,28 @@ struct UMovieSceneEventTrack : UMovieSceneNameableTrack {
 };
 
 // Class MovieSceneTracks.MovieSceneEventTriggerSection
-struct UMovieSceneEventTriggerSection : UMovieSceneEventSectionBase {
+class UMovieSceneEventTriggerSection : UMovieSceneEventSectionBase {
 	struct Unknown EventChannel; // 0xE0 (136)
 };
 
 // Class MovieSceneTracks.MovieSceneFloatSection
-struct UMovieSceneFloatSection : UMovieSceneSection {
+class UMovieSceneFloatSection : UMovieSceneSection {
 	struct Unknown FloatCurve; // 0xE0 (160)
 };
 
 // Class MovieSceneTracks.MovieSceneFadeSection
-struct UMovieSceneFadeSection : UMovieSceneFloatSection {
+class UMovieSceneFadeSection : UMovieSceneFloatSection {
 	struct Unknown FadeColor; // 0x180 (16)
 	char bFadeAudio : 0; // 0x190 (1)
 };
 
 // Class MovieSceneTracks.MovieSceneIntegerSection
-struct UMovieSceneIntegerSection : UMovieSceneSection {
+class UMovieSceneIntegerSection : UMovieSceneSection {
 	struct Unknown IntegerCurve; // 0xE0 (144)
 };
 
 // Class MovieSceneTracks.MovieSceneLevelVisibilitySection
-struct UMovieSceneLevelVisibilitySection : UMovieSceneSection {
+class UMovieSceneLevelVisibilitySection : UMovieSceneSection {
 	enum class Unknow Visibility; // 0xE0 (1)
 	struct TArray<Unknown> LevelNames; // 0xE8 (16)
 
@@ -268,37 +268,37 @@ struct UMovieSceneLevelVisibilitySection : UMovieSceneSection {
 };
 
 // Class MovieSceneTracks.MovieSceneLevelVisibilityTrack
-struct UMovieSceneLevelVisibilityTrack : UMovieSceneNameableTrack {
+class UMovieSceneLevelVisibilityTrack : UMovieSceneNameableTrack {
 	struct TArray<Unknown> Sections; // 0x58 (16)
 };
 
 // Class MovieSceneTracks.MovieSceneMaterialTrack
-struct UMovieSceneMaterialTrack : UMovieSceneNameableTrack {
+class UMovieSceneMaterialTrack : UMovieSceneNameableTrack {
 	struct TArray<Unknown> Sections; // 0x58 (16)
 };
 
 // Class MovieSceneTracks.MovieSceneMaterialParameterCollectionTrack
-struct UMovieSceneMaterialParameterCollectionTrack : UMovieSceneMaterialTrack {
+class UMovieSceneMaterialParameterCollectionTrack : UMovieSceneMaterialTrack {
 	struct Unknown MPC; // 0x68 (8)
 };
 
-// Class MovieSceneTracks.MovieSceneComponentMaterialTrack
-struct UMovieSceneComponentMaterialTrack : UMovieSceneMaterialTrack {
+// Class MovieSceneTracks.MovieSceneComponentMaterialTrac
+class UMovieSceneComponentMaterialTrac : UMovieSceneMaterialTrack {
 	int32_t MaterialIndex; // 0x68 (4)
 };
 
 // Class MovieSceneTracks.MovieSceneObjectPropertySection
-struct UMovieSceneObjectPropertySection : UMovieSceneSection {
+class UMovieSceneObjectPropertySection : UMovieSceneSection {
 	struct Unknown ObjectChannel; // 0xE0 (192)
 };
 
 // Class MovieSceneTracks.MovieSceneObjectPropertyTrack
-struct UMovieSceneObjectPropertyTrack : UMovieScenePropertyTrack {
+class UMovieSceneObjectPropertyTrack : UMovieScenePropertyTrack {
 	struct Unknown* PropertyClass; // 0x88 (8)
 };
 
 // Class MovieSceneTracks.MovieSceneParameterSection
-struct UMovieSceneParameterSection : UMovieSceneSection {
+class UMovieSceneParameterSection : UMovieSceneSection {
 	struct TArray<Unknown> BoolParameterNamesAndCurves; // 0xE0 (16)
 	struct TArray<Unknown> ScalarParameterNamesAndCurves; // 0xF0 (16)
 	struct TArray<Unknown> Vector2DParameterNamesAndCurves; // 0x100 (16)
@@ -307,68 +307,477 @@ struct UMovieSceneParameterSection : UMovieSceneSection {
 	struct TArray<Unknown> TransformParameterNamesAndCurves; // 0x130 (16)
 };
 
-// Class MovieSceneTracks.MovieSceneParticleParameterTrack
-struct UMovieSceneParticleParameterTrack : UMovieSceneNameableTrack {
+// Class MovieSceneTracks.MovieSceneParticleParameterTrac
+class UMovieSceneParticleParameterTrac : UMovieSceneNameableTrack {
 	struct TArray<Unknown> Sections; // 0x58 (16)
 };
 
 // Class MovieSceneTracks.MovieSceneParticleSection
-struct UMovieSceneParticleSection : UMovieSceneSection {
+class UMovieSceneParticleSection : UMovieSceneSection {
 	struct Unknown ParticleKeys; // 0xE0 (152)
 };
 
 // Class MovieSceneTracks.MovieSceneParticleTrack
-struct UMovieSceneParticleTrack : UMovieSceneNameableTrack {
+class UMovieSceneParticleTrack : UMovieSceneNameableTrack {
 	struct TArray<Unknown> ParticleSections; // 0x58 (16)
 };
 
 // Class MovieSceneTracks.MovieScenePrimitiveMaterialSection
-struct UMovieScenePrimitiveMaterialSection : UMovieSceneSection {
+class UMovieScenePrimitiveMaterialSection : UMovieSceneSection {
 	struct Unknown MaterialChannel; // 0xE0 (192)
 };
 
-// Class MovieSceneTracks.MovieScenePrimitiveMaterialTrack
-struct UMovieScenePrimitiveMaterialTrack : UMovieScenePropertyTrack {
+// Class MovieSceneTracks.MovieScenePrimitiveMaterialTrac
+class UMovieScenePrimitiveMaterialTrac : UMovieScenePropertyTrack {
 	int32_t MaterialIndex; // 0x88 (4)
 };
 
 // Class MovieSceneTracks.MovieSceneSkeletalAnimationSection
-struct UMovieSceneSkeletalAnimationSection : UMovieSceneSection {
+class UMovieSceneSkeletalAnimationSection : UMovieSceneSection {
 	struct Unknown Params; // 0xE0 (216)
 	struct Unknown AnimSequence; // 0x1B8 (8)
 	struct Unknown Animation; // 0x1C0 (8)
 	float StartOffset; // 0x1C8 (4)
 	float EndOffset; // 0x1CC (4)
 	float PlayRate; // 0x1D0 (4)
-	char b : 0; // 0x1D4 (1)
+	char bReverse : 0; // 0x1D4 (1)
 	struct FName SlotName; // 0x1D8 (8)
 };
 
-// Class MovieSceneTracks.MovieSceneSkeletalAnimationTrack
-struct UMovieSceneSkeletalAnimationTrack : UMovieSceneNameableTrack {
+// Class MovieSceneTracks.MovieSceneSkeletalAnimationTrac
+class UMovieSceneSkeletalAnimationTrac : UMovieSceneNameableTrack {
 	struct TArray<Unknown> AnimationSections; // 0x58 (16)
 	char bUseLegacySectionIndexBlend : 0; // 0x68 (1)
 };
 
 // Class MovieSceneTracks.MovieSceneSpawnTrack
-struct UMovieSceneSpawnTrack : UMovieSceneTrack {
+class UMovieSceneSpawnTrack : UMovieSceneTrack {
 	struct TArray<Unknown> Sections; // 0x58 (16)
 	struct Unknown ObjectGuid; // 0x68 (16)
 };
 
 // Class MovieSceneTracks.MovieSceneStringSection
-struct UMovieSceneStringSection : UMovieSceneSection {
+class UMovieSceneStringSection : UMovieSceneSection {
 	struct Unknown StringCurve; // 0xE0 (160)
 };
 
 // Class MovieSceneTracks.MovieSceneVectorSection
-struct UMovieSceneVectorSection : UMovieSceneSection {
+class UMovieSceneVectorSection : UMovieSceneSection {
 	struct Unknown Curves[0x4]; // 0xE0 (640)
 	int32_t ChannelsUsed; // 0x360 (4)
 };
 
 // Class MovieSceneTracks.MovieSceneVectorTrack
-struct UMovieSceneVectorTrack : UMovieScenePropertyTrack {
+class UMovieSceneVectorTrack : UMovieScenePropertyTrack {
 	int32_t NumChannelsUsed; // 0x88 (4)
+};
+
+// ScriptStruct MovieSceneTracks.MovieScene3DAttachSectionTemplate
+struct FMovieScene3DAttachSectionTemplate : FMovieSceneEvalTemplate {
+	struct Unknown AttachBindingID; // 0x20 (24)
+	struct FName AttachSocketName; // 0x38 (8)
+	struct FName AttachComponentName; // 0x40 (8)
+	enum class Unknow AttachmentLocationRule; // 0x48 (1)
+	enum class Unknow AttachmentRotationRule; // 0x49 (1)
+	enum class Unknow AttachmentScaleRule; // 0x4A (1)
+	enum class Unknow DetachmentLocationRule; // 0x4B (1)
+	enum class Unknow DetachmentRotationRule; // 0x4C (1)
+	enum class Unknow DetachmentScaleRule; // 0x4D (1)
+};
+
+// ScriptStruct MovieSceneTracks.MovieScene3DPathSectionTemplate
+struct FMovieScene3DPathSectionTemplate : FMovieSceneEvalTemplate {
+	struct Unknown PathBindingID; // 0x20 (24)
+	struct Unknown TimingCurve; // 0x38 (160)
+	enum class Unknow FrontAxisEnum; // 0xD8 (1)
+	enum class Unknow UpAxisEnum; // 0xD9 (1)
+	char bFollow : 0; // 0xDC (1)
+	char bReverse : 0; // 0xDC (1)
+	char bForceUpright : 0; // 0xDC (1)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneTransformMask
+struct FMovieSceneTransformMask {
+	uint32_t Mask; // 0x0 (4)
+};
+
+// ScriptStruct MovieSceneTracks.MovieScene3DTransformKeyStruct
+struct FMovieScene3DTransformKeyStruct : FMovieSceneKeyStruct {
+	struct Unknown Location; // 0x8 (12)
+	struct Unknown Rotation; // 0x14 (12)
+	struct Unknown Scale; // 0x20 (12)
+	struct Unknown Time; // 0x2C (4)
+};
+
+// ScriptStruct MovieSceneTracks.MovieScene3DScaleKeyStruct
+struct FMovieScene3DScaleKeyStruct : FMovieSceneKeyStruct {
+	struct Unknown Scale; // 0x8 (12)
+	struct Unknown Time; // 0x14 (4)
+};
+
+// ScriptStruct MovieSceneTracks.MovieScene3DRotationKeyStruct
+struct FMovieScene3DRotationKeyStruct : FMovieSceneKeyStruct {
+	struct Unknown Rotation; // 0x8 (12)
+	struct Unknown Time; // 0x14 (4)
+};
+
+// ScriptStruct MovieSceneTracks.MovieScene3DLocationKeyStruct
+struct FMovieScene3DLocationKeyStruct : FMovieSceneKeyStruct {
+	struct Unknown Location; // 0x8 (12)
+	struct Unknown Time; // 0x14 (4)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneComponentTransformSec
+struct FMovieSceneComponentTransformSec : FMovieSceneEvalTemplate {
+	struct Unknown TemplateData; // 0x20 (1616)
+};
+
+// ScriptStruct MovieSceneTracks.MovieScene3DTransformTemplateData
+struct FMovieScene3DTransformTemplateData {
+	struct Unknown TranslationCurve[0x3]; // 0x0 (480)
+	struct Unknown RotationCurve[0x3]; // 0x1E0 (480)
+	struct Unknown ScaleCurve[0x3]; // 0x3C0 (480)
+	struct Unknown ManualWeight; // 0x5A0 (160)
+	enum class Unknow BlendType; // 0x640 (1)
+	struct Unknown Mask; // 0x644 (4)
+	char bUseQuaternionInterpolation : 0; // 0x648 (1)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneActorReferenceData
+struct FMovieSceneActorReferenceData : FMovieSceneChannel {
+	struct TArray<Unknown> KeyTimes; // 0x8 (16)
+	struct TArray<Unknown> KeyValues; // 0x40 (16)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneActorReferenceKey
+struct FMovieSceneActorReferenceKey {
+	struct Unknown Object; // 0x0 (24)
+	struct FName ComponentName; // 0x18 (8)
+	struct FName SocketName; // 0x20 (8)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneActorReferenceSectionTemplate
+struct FMovieSceneActorReferenceSectionTemplate : FMovieSceneEvalTemplate {
+	struct Unknown PropertyData; // 0x20 (40)
+	struct Unknown ActorReferenceData; // 0x48 (176)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneAudioSectionTemplate
+struct FMovieSceneAudioSectionTemplate : FMovieSceneEvalTemplate {
+	struct Unknown AudioSection; // 0x20 (8)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneCameraAnimSectionData
+struct FMovieSceneCameraAnimSectionData {
+	struct Unknown CameraAnim; // 0x0 (8)
+	float PlayRate; // 0x8 (4)
+	float PlayScale; // 0xC (4)
+	float BlendInTime; // 0x10 (4)
+	float BlendOutTime; // 0x14 (4)
+	char bLooping : 0; // 0x18 (1)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneCameraShakeSectionTemplate
+struct FMovieSceneCameraShakeSectionTemplate : FMovieSceneAdditiveCameraAnimationTemplate {
+	struct Unknown SourceData; // 0x20 (32)
+	struct Unknown SectionStartTime; // 0x40 (4)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneCameraShakeSectionData
+struct FMovieSceneCameraShakeSectionData {
+	struct Unknown* ShakeClass; // 0x0 (8)
+	float PlayScale; // 0x8 (4)
+	char PlaySpace; // 0xC (1)
+	struct Unknown UserDefinedPlaySpace; // 0x10 (12)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneCameraAnimSectionTemplate
+struct FMovieSceneCameraAnimSectionTemplate : FMovieSceneAdditiveCameraAnimationTemplate {
+	struct Unknown SourceData; // 0x20 (32)
+	struct Unknown SectionStartTime; // 0x40 (4)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneCameraCutSectionTemplate
+struct FMovieSceneCameraCutSectionTemplate : FMovieSceneEvalTemplate {
+	struct Unknown CameraBindingID; // 0x20 (24)
+	struct Unknown CutTransform; // 0x40 (48)
+	char bHasCutTransform : 0; // 0x70 (1)
+	char bIsFinalSection : 0; // 0x71 (1)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneColorKeyStruct
+struct FMovieSceneColorKeyStruct : FMovieSceneKeyStruct {
+	struct Unknown Color; // 0x8 (16)
+	struct Unknown Time; // 0x18 (4)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneColorSectionTemplate
+struct FMovieSceneColorSectionTemplate : FMovieScenePropertySectionTemplate {
+	struct Unknown Curves[0x4]; // 0x48 (640)
+	enum class Unknow BlendType; // 0x2C8 (1)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneEvent
+struct FMovieSceneEvent {
+	struct Unknown Ptrs; // 0x0 (40)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneEventPtrs
+struct FMovieSceneEventPtrs {
+	struct Unknown Function; // 0x0 (8)
+	struct TFieldPath<FUnknown> BoundObjectProperty; // 0x8 (32)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneEventPayloadVariable
+struct FMovieSceneEventPayloadVariable {
+	struct FString Value; // 0x0 (16)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneEventChannel
+struct FMovieSceneEventChannel : FMovieSceneChannel {
+	struct TArray<Unknown> KeyTimes; // 0x8 (16)
+	struct TArray<Unknown> KeyValues; // 0x18 (16)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneEventSectionData
+struct FMovieSceneEventSectionData : FMovieSceneChannel {
+	struct TArray<Unknown> Times; // 0x8 (16)
+	struct TArray<Unknown> KeyValues; // 0x18 (16)
+};
+
+// ScriptStruct MovieSceneTracks.EventPayload
+struct FEventPayload {
+	struct FName EventName; // 0x0 (8)
+	struct Unknown Parameters; // 0x8 (40)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneEventTemplateBase
+struct FMovieSceneEventTemplateBase : FMovieSceneEvalTemplate {
+	struct TArray<Unknown> EventReceivers; // 0x20 (16)
+	char bFireEventsWhenForwards : 0; // 0x30 (1)
+	char bFireEventsWhenBackwards : 0; // 0x30 (1)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneEventRepeaterTemplate
+struct FMovieSceneEventRepeaterTemplate : FMovieSceneEventTemplateBase {
+	struct Unknown EventToTrigger; // 0x38 (40)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneEventTriggerTemplate
+struct FMovieSceneEventTriggerTemplate : FMovieSceneEventTemplateBase {
+	struct TArray<Unknown> EventTimes; // 0x38 (16)
+	struct TArray<Unknown> Events; // 0x48 (16)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneEventSectionTemplate
+struct FMovieSceneEventSectionTemplate : FMovieSceneEventTemplateBase {
+	struct Unknown eventData; // 0x38 (136)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneFadeSectionTemplate
+struct FMovieSceneFadeSectionTemplate : FMovieSceneEvalTemplate {
+	struct Unknown FadeCurve; // 0x20 (160)
+	struct Unknown FadeColor; // 0xC0 (16)
+	char bFadeAudio : 0; // 0xD0 (1)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneLevelVisibilitySectionTemplate
+struct FMovieSceneLevelVisibilitySectionTemplate : FMovieSceneEvalTemplate {
+	enum class Unknow Visibility; // 0x20 (1)
+	struct TArray<Unknown> LevelNames; // 0x28 (16)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneParameterSectionTemplate
+struct FMovieSceneParameterSectionTemplate : FMovieSceneEvalTemplate {
+	struct TArray<Unknown> Scalars; // 0x20 (16)
+	struct TArray<Unknown> Bools; // 0x30 (16)
+	struct TArray<Unknown> Vector2Ds; // 0x40 (16)
+	struct TArray<Unknown> Vectors; // 0x50 (16)
+	struct TArray<Unknown> Colors; // 0x60 (16)
+	struct TArray<Unknown> Transforms; // 0x70 (16)
+};
+
+// ScriptStruct MovieSceneTracks.TransformParameterNameAndCurves
+struct FTransformParameterNameAndCurves {
+	struct FName ParameterName; // 0x0 (8)
+	struct Unknown Translation[0x3]; // 0x8 (480)
+	struct Unknown Rotation[0x3]; // 0x1E8 (480)
+	struct Unknown Scale[0x3]; // 0x3C8 (480)
+};
+
+// ScriptStruct MovieSceneTracks.ColorParameterNameAndCurves
+struct FColorParameterNameAndCurves {
+	struct FName ParameterName; // 0x0 (8)
+	struct Unknown RedCurve; // 0x8 (160)
+	struct Unknown GreenCurve; // 0xA8 (160)
+	struct Unknown BlueCurve; // 0x148 (160)
+	struct Unknown AlphaCurve; // 0x1E8 (160)
+};
+
+// ScriptStruct MovieSceneTracks.VectorParameterNameAndCurves
+struct FVectorParameterNameAndCurves {
+	struct FName ParameterName; // 0x0 (8)
+	struct Unknown XCurve; // 0x8 (160)
+	struct Unknown YCurve; // 0xA8 (160)
+	struct Unknown ZCurve; // 0x148 (160)
+};
+
+// ScriptStruct MovieSceneTracks.Vector2DParameterNameAndCurves
+struct FVector2DParameterNameAndCurves {
+	struct FName ParameterName; // 0x0 (8)
+	struct Unknown XCurve; // 0x8 (160)
+	struct Unknown YCurve; // 0xA8 (160)
+};
+
+// ScriptStruct MovieSceneTracks.BoolParameterNameAndCurve
+struct FBoolParameterNameAndCurve {
+	struct FName ParameterName; // 0x0 (8)
+	struct Unknown ParameterCurve; // 0x8 (144)
+};
+
+// ScriptStruct MovieSceneTracks.ScalarParameterNameAndCurve
+struct FScalarParameterNameAndCurve {
+	struct FName ParameterName; // 0x0 (8)
+	struct Unknown ParameterCurve; // 0x8 (160)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneMaterialParameterCollectionTemplate
+struct FMovieSceneMaterialParameterCollectionTemplate : FMovieSceneParameterSectionTemplate {
+	struct Unknown MPC; // 0x80 (8)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneObjectPropertyTemplate
+struct FMovieSceneObjectPropertyTemplate : FMovieScenePropertySectionTemplate {
+	struct Unknown ObjectChannel; // 0x48 (192)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneComponentMaterialSectionTemplate
+struct FMovieSceneComponentMaterialSectionTemplate : FMovieSceneParameterSectionTemplate {
+	int32_t MaterialIndex; // 0x80 (4)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneParticleSectionTemplate
+struct FMovieSceneParticleSectionTemplate : FMovieSceneEvalTemplate {
+	struct Unknown ParticleKeys; // 0x20 (152)
+};
+
+// ScriptStruct MovieSceneTracks.MovieScenePrimitiveMaterialTemplate
+struct FMovieScenePrimitiveMaterialTemplate : FMovieSceneEvalTemplate {
+	int32_t MaterialIndex; // 0x20 (4)
+	struct Unknown MaterialChannel; // 0x28 (192)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneEulerTransformPropertySectionTemplate
+struct FMovieSceneEulerTransformPropertySectionTemplate : FMovieScenePropertySectionTemplate {
+	struct Unknown TemplateData; // 0x48 (1616)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneTransformPropertySectionTemplate
+struct FMovieSceneTransformPropertySectionTemplate : FMovieScenePropertySectionTemplate {
+	struct Unknown TemplateData; // 0x48 (1616)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneVectorPropertySectionTemplate
+struct FMovieSceneVectorPropertySectionTemplate : FMovieScenePropertySectionTemplate {
+	struct Unknown ComponentCurves[0x4]; // 0x48 (640)
+	int32_t NumChannelsUsed; // 0x2C8 (4)
+	enum class Unknow BlendType; // 0x2CC (1)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneStringPropertySectionTemplate
+struct FMovieSceneStringPropertySectionTemplate : FMovieScenePropertySectionTemplate {
+	struct Unknown StringCurve; // 0x48 (160)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneStringChannel
+struct FMovieSceneStringChannel : FMovieSceneChannel {
+	struct TArray<Unknown> Times; // 0x8 (16)
+	struct TArray<Unknown> Values; // 0x18 (16)
+	struct FString DefaultValue; // 0x28 (16)
+	char bHasDefaultValue : 0; // 0x38 (1)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneIntegerPropertySectionTemplate
+struct FMovieSceneIntegerPropertySectionTemplate : FMovieScenePropertySectionTemplate {
+	struct Unknown IntegerCurve; // 0x48 (144)
+	enum class Unknow BlendType; // 0xD8 (1)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneEnumPropertySectionTemplate
+struct FMovieSceneEnumPropertySectionTemplate : FMovieScenePropertySectionTemplate {
+	struct Unknown EnumCurve; // 0x48 (152)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneBytePropertySectionTemplate
+struct FMovieSceneBytePropertySectionTemplate : FMovieScenePropertySectionTemplate {
+	struct Unknown ByteCurve; // 0x48 (152)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneFloatPropertySectionTemplate
+struct FMovieSceneFloatPropertySectionTemplate : FMovieScenePropertySectionTemplate {
+	struct Unknown FloatFunction; // 0x48 (160)
+	enum class Unknow BlendType; // 0xE8 (1)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneBoolPropertySectionTemplate
+struct FMovieSceneBoolPropertySectionTemplate : FMovieScenePropertySectionTemplate {
+	struct Unknown BoolCurve; // 0x48 (144)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneSkeletalAnimationParams
+struct FMovieSceneSkeletalAnimationParams {
+	struct Unknown Animation; // 0x0 (8)
+	struct Unknown FirstLoopStartFrameOffset; // 0x8 (4)
+	struct Unknown StartFrameOffset; // 0xC (4)
+	struct Unknown EndFrameOffset; // 0x10 (4)
+	float PlayRate; // 0x14 (4)
+	char bReverse : 0; // 0x18 (1)
+	struct FName SlotName; // 0x1C (8)
+	struct Unknown Weight; // 0x28 (160)
+	char bSkipAnimNotifiers : 0; // 0xC8 (1)
+	char bForceCustomMode : 0; // 0xC9 (1)
+	float StartOffset; // 0xCC (4)
+	float EndOffset; // 0xD0 (4)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneSkeletalAnimationSectionTemplate
+struct FMovieSceneSkeletalAnimationSectionTemplate : FMovieSceneEvalTemplate {
+	struct Unknown Params; // 0x20 (224)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneSkeletalAnimationSectionTemplateParameters
+struct FMovieSceneSkeletalAnimationSectionTemplateParameters : FMovieSceneSkeletalAnimationParams {
+	struct Unknown SectionStartTime; // 0xD8 (4)
+	struct Unknown SectionEndTime; // 0xDC (4)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneSlomoSectionTemplate
+struct FMovieSceneSlomoSectionTemplate : FMovieSceneEvalTemplate {
+	struct Unknown SlomoCurve; // 0x20 (160)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneSpawnSectionTemplate
+struct FMovieSceneSpawnSectionTemplate : FMovieSceneEvalTemplate {
+	struct Unknown Curve; // 0x20 (144)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneVectorKeyStructBase
+struct FMovieSceneVectorKeyStructBase : FMovieSceneKeyStruct {
+	struct Unknown Time; // 0x8 (4)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneVector4KeyStruct
+struct FMovieSceneVector4KeyStruct : FMovieSceneVectorKeyStructBase {
+	struct Unknown Vector; // 0x30 (16)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneVectorKeyStruct
+struct FMovieSceneVectorKeyStruct : FMovieSceneVectorKeyStructBase {
+	struct Unknown Vector; // 0x28 (12)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneVector2DKeyStruct
+struct FMovieSceneVector2DKeyStruct : FMovieSceneVectorKeyStructBase {
+	struct Unknown Vector; // 0x28 (8)
 };
 

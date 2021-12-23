@@ -105,7 +105,7 @@ enum class ELowEntrySplitScreenTypeTwoPlayers : uint8 {
 };
 
 // Class LowEntryExtendedStandardLibrary.LowEntryBitDataEntry
-struct ULowEntryBitDataEntry : Object {
+class ULowEntryBitDataEntry : Object {
 	char Type; // 0x28 (1)
 	char ByteValue; // 0x29 (1)
 	int32_t IntegerValue; // 0x2C (4)
@@ -124,7 +124,7 @@ struct ULowEntryBitDataEntry : Object {
 };
 
 // Class LowEntryExtendedStandardLibrary.LowEntryBitDataReader
-struct ULowEntryBitDataReader : Object {
+class ULowEntryBitDataReader : Object {
 	struct TArray<Unknown> Bytes; // 0x28 (16)
 	int32_t Position; // 0x38 (4)
 	char CurrentByte; // 0x3C (1)
@@ -169,7 +169,7 @@ struct ULowEntryBitDataReader : Object {
 };
 
 // Class LowEntryExtendedStandardLibrary.LowEntryBitDataWriter
-struct ULowEntryBitDataWriter : Object {
+class ULowEntryBitDataWriter : Object {
 	struct TArray<Unknown> Bytes; // 0x28 (16)
 	char CurrentByte; // 0x38 (1)
 	int32_t CurrentBytePosition; // 0x3C (4)
@@ -207,12 +207,12 @@ struct ULowEntryBitDataWriter : Object {
 };
 
 // Class LowEntryExtendedStandardLibrary.LowEntryByteArray
-struct ULowEntryByteArray : Object {
+class ULowEntryByteArray : Object {
 	struct TArray<Unknown> ByteArray; // 0x28 (16)
 };
 
 // Class LowEntryExtendedStandardLibrary.LowEntryByteDataEntry
-struct ULowEntryByteDataEntry : Object {
+class ULowEntryByteDataEntry : Object {
 	char Type; // 0x28 (1)
 	char ByteValue; // 0x29 (1)
 	int32_t IntegerValue; // 0x2C (4)
@@ -231,7 +231,7 @@ struct ULowEntryByteDataEntry : Object {
 };
 
 // Class LowEntryExtendedStandardLibrary.LowEntryByteDataReader
-struct ULowEntryByteDataReader : Object {
+class ULowEntryByteDataReader : Object {
 	struct TArray<Unknown> Bytes; // 0x28 (16)
 	int32_t Position; // 0x38 (4)
 
@@ -264,7 +264,7 @@ struct ULowEntryByteDataReader : Object {
 };
 
 // Class LowEntryExtendedStandardLibrary.LowEntryByteDataWriter
-struct ULowEntryByteDataWriter : Object {
+class ULowEntryByteDataWriter : Object {
 	struct TArray<Unknown> Bytes; // 0x28 (16)
 
 	void AddStringUtf8Array(struct TArray<Unknown>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddStringUtf8Array(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1066BF0>
@@ -290,7 +290,7 @@ struct ULowEntryByteDataWriter : Object {
 };
 
 // Class LowEntryExtendedStandardLibrary.LowEntryDouble
-struct ULowEntryDouble : Object {
+class ULowEntryDouble : Object {
 	struct TArray<Unknown> Bytes; // 0x28 (16)
 
 	void SetBytes(struct TArray<Unknown>& ByteArray, int32_t Index, int32_t Length); // Function LowEntryExtendedStandardLibrary.LowEntryDouble.SetBytes(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1076500>
@@ -315,13 +315,13 @@ struct ULowEntryDouble : Object {
 };
 
 // Class LowEntryExtendedStandardLibrary.LowEntryExecutionQueue
-struct ULowEntryExecutionQueue : Object {
+class ULowEntryExecutionQueue : Object {
 	int32_t Count; // 0x28 (4)
 	char Next : 0; // 0x2C (1)
 };
 
 // Class LowEntryExtendedStandardLibrary.LowEntryLatentActionBoolean
-struct ULowEntryLatentActionBoolean : Object {
+class ULowEntryLatentActionBoolean : Object {
 	char Finished : 0; // 0x28 (1)
 	char Result : 0; // 0x29 (1)
 	int32_t KeepAliveCount; // 0x2C (4)
@@ -333,7 +333,7 @@ struct ULowEntryLatentActionBoolean : Object {
 };
 
 // Class LowEntryExtendedStandardLibrary.LowEntryLatentActionFloat
-struct ULowEntryLatentActionFloat : Object {
+class ULowEntryLatentActionFloat : Object {
 	char Finished : 0; // 0x28 (1)
 	float Result; // 0x2C (4)
 	int32_t KeepAliveCount; // 0x30 (4)
@@ -345,7 +345,7 @@ struct ULowEntryLatentActionFloat : Object {
 };
 
 // Class LowEntryExtendedStandardLibrary.LowEntryLatentActionInteger
-struct ULowEntryLatentActionInteger : Object {
+class ULowEntryLatentActionInteger : Object {
 	char Finished : 0; // 0x28 (1)
 	int32_t Result; // 0x2C (4)
 	int32_t KeepAliveCount; // 0x30 (4)
@@ -357,7 +357,7 @@ struct ULowEntryLatentActionInteger : Object {
 };
 
 // Class LowEntryExtendedStandardLibrary.LowEntryLatentActionNone
-struct ULowEntryLatentActionNone : Object {
+class ULowEntryLatentActionNone : Object {
 	char Finished : 0; // 0x28 (1)
 	int32_t KeepAliveCount; // 0x2C (4)
 
@@ -367,7 +367,7 @@ struct ULowEntryLatentActionNone : Object {
 };
 
 // Class LowEntryExtendedStandardLibrary.LowEntryLatentActionObject
-struct ULowEntryLatentActionObject : Object {
+class ULowEntryLatentActionObject : Object {
 	char Finished : 0; // 0x28 (1)
 	struct Unknown Result; // 0x30 (8)
 	int32_t KeepAliveCount; // 0x38 (4)
@@ -379,7 +379,7 @@ struct ULowEntryLatentActionObject : Object {
 };
 
 // Class LowEntryExtendedStandardLibrary.LowEntryLatentActionString
-struct ULowEntryLatentActionString : Object {
+class ULowEntryLatentActionString : Object {
 	char Finished : 0; // 0x28 (1)
 	struct FString Result; // 0x30 (16)
 	int32_t KeepAliveCount; // 0x40 (4)
@@ -391,7 +391,7 @@ struct ULowEntryLatentActionString : Object {
 };
 
 // Class LowEntryExtendedStandardLibrary.LowEntryLong
-struct ULowEntryLong : Object {
+class ULowEntryLong : Object {
 	struct TArray<Unknown> Bytes; // 0x28 (16)
 
 	void SetBytes(struct TArray<Unknown>& ByteArray, int32_t Index, int32_t Length); // Function LowEntryExtendedStandardLibrary.LowEntryLong.SetBytes(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1076500>
@@ -416,7 +416,7 @@ struct ULowEntryLong : Object {
 };
 
 // Class LowEntryExtendedStandardLibrary.LowEntryParsedHashcash
-struct ULowEntryParsedHashcash : Object {
+class ULowEntryParsedHashcash : Object {
 	char Valid : 0; // 0x28 (1)
 	struct FString Resource; // 0x30 (16)
 	struct Unknown Date; // 0x40 (8)
@@ -426,5 +426,22 @@ struct ULowEntryParsedHashcash : Object {
 	struct FString GetResource(); // Function LowEntryExtendedStandardLibrary.LowEntryParsedHashcash.GetResource(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x107A9F0>
 	struct Unknown GetDate(); // Function LowEntryExtendedStandardLibrary.LowEntryParsedHashcash.GetDate(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x107A9B0>
 	int32_t GetBits(); // Function LowEntryExtendedStandardLibrary.LowEntryParsedHashcash.GetBits(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x107A980>
+};
+
+// ScriptStruct LowEntryExtendedStandardLibrary.LowEntryRegexCaptureGroup
+struct FLowEntryRegexCaptureGroup {
+	int32_t CaptureGroupNumber; // 0x0 (4)
+	int32_t BeginIndex; // 0x4 (4)
+	int32_t EndIndex; // 0x8 (4)
+	struct FString Match; // 0x10 (16)
+};
+
+// ScriptStruct LowEntryExtendedStandardLibrary.LowEntryRegexMatch
+struct FLowEntryRegexMatch {
+	int32_t MatchNumber; // 0x0 (4)
+	int32_t BeginIndex; // 0x4 (4)
+	int32_t EndIndex; // 0x8 (4)
+	struct FString Match; // 0x10 (16)
+	struct TArray<Unknown> CaptureGroups; // 0x20 (16)
 };
 

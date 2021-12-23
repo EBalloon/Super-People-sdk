@@ -1,5 +1,5 @@
 // WidgetBlueprintGeneratedClass Temp.Temp_C
-struct UTemp_C : UUserWidget {
+class UTemp_C : UUserWidget {
 	struct Unknown UberGraphFrame; // 0x248 (8)
 	struct Unknown Image_66; // 0x250 (8)
 	struct Unknown Image_113; // 0x258 (8)

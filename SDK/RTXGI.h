@@ -26,12 +26,12 @@ enum class EDDGIIrradianceBits : uint8 {
 };
 
 // Class RTXGI.DDGIVolume
-struct ADDGIVolume : UActor {
+class ADDGIVolume : UActor {
 	struct Unknown DDGIVolumeComponent; // 0x310 (8)
 };
 
 // Class RTXGI.DDGIVolumeComponent
-struct UDDGIVolumeComponent : USceneComponent {
+class UDDGIVolumeComponent : USceneComponent {
 	enum class Unknow RaysPerProbe; // 0x240 (1)
 	struct Unknown ProbeCounts; // 0x244 (12)
 	int32_t LightingPriority; // 0x250 (4)
@@ -66,7 +66,7 @@ struct UDDGIVolumeComponent : USceneComponent {
 };
 
 // Class RTXGI.RTXGIPluginSettings
-struct URTXGIPluginSettings : UDeveloperSettings {
+class URTXGIPluginSettings : UDeveloperSettings {
 	enum class Unknow IrradianceBits; // 0x38 (1)
 	enum class Unknow DistanceBits; // 0x39 (1)
 	float DebugProbeRadius; // 0x3C (4)

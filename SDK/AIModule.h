@@ -437,25 +437,25 @@ enum class EPawnActionMoveMode : uint8 {
 };
 
 // Class AIModule.BTNode
-struct UBTNode : Object {
+class UBTNode : Object {
 	struct FString NodeName; // 0x30 (16)
 	struct Unknown TreeAsset; // 0x40 (8)
 	struct Unknown ParentNode; // 0x48 (8)
 };
 
 // Class AIModule.BTTaskNode
-struct UBTTaskNode : UBTNode {
+class UBTTaskNode : UBTNode {
 	struct TArray<Unknown> Services; // 0x58 (16)
 	char bIgnoreRestartSelf : 0; // 0x68 (1)
 };
 
 // Class AIModule.BTTask_BlackboardBase
-struct UBTTask_BlackboardBase : UBTTaskNode {
+class UBTTask_BlackboardBase : UBTTaskNode {
 	struct Unknown BlackboardKey; // 0x70 (40)
 };
 
 // Class AIModule.AIController
-struct AAIController : AController {
+class AAIController : AController {
 	char bStartAILogicOnPossess : 0; // 0x3E8 (1)
 	char bStopAILogicOnUnposses : 0; // 0x3E8 (1)
 	char bLOSflag : 0; // 0x3E8 (1)
@@ -496,15 +496,15 @@ struct AAIController : AController {
 };
 
 // Class AIModule.BTService
-struct UBTService : UBTAuxiliaryNode {
+class UBTService : UBTAuxiliaryNode {
 	float Interval; // 0x60 (4)
 	float RandomDeviation; // 0x64 (4)
 	char bCallTickOnSearchStart : 0; // 0x68 (1)
-	char b : 0; // 0x68 (1)
+	char bRestartTimerOnEachActivation : 0; // 0x68 (1)
 };
 
 // Class AIModule.AIAsyncTaskBlueprintProxy
-struct UAIAsyncTaskBlueprintProxy : Object {
+class UAIAsyncTaskBlueprintProxy : Object {
 	struct FMulticastInlineDelegate OnSuccess; // 0x28 (16)
 	struct FMulticastInlineDelegate OnFail; // 0x38 (16)
 
@@ -512,7 +512,7 @@ struct UAIAsyncTaskBlueprintProxy : Object {
 };
 
 // Class AIModule.AIDataProvider_QueryParams
-struct UAIDataProvider_QueryParams : UAIDataProvider {
+class UAIDataProvider_QueryParams : UAIDataProvider {
 	struct FName ParamName; // 0x28 (8)
 	float FloatValue; // 0x30 (4)
 	int32_t IntValue; // 0x34 (4)
@@ -520,14 +520,14 @@ struct UAIDataProvider_QueryParams : UAIDataProvider {
 };
 
 // Class AIModule.AIDataProvider_Random
-struct UAIDataProvider_Random : UAIDataProvider_QueryParams {
+class UAIDataProvider_Random : UAIDataProvider_QueryParams {
 	float Min; // 0x40 (4)
 	float MAX; // 0x44 (4)
 	char bInteger : 0; // 0x48 (1)
 };
 
 // Class AIModule.AIPerceptionComponent
-struct UAIPerceptionComponent : UActorComponent {
+class UAIPerceptionComponent : UActorComponent {
 	struct TArray<Unknown> SensesConfig; // 0xB0 (16)
 	struct Unknown* DominantSense; // 0xC0 (8)
 	struct Unknown AIOwner; // 0xD8 (8)
@@ -540,13 +540,13 @@ struct UAIPerceptionComponent : UActorComponent {
 	void GetPerceivedHostileActors(struct TArray<Unknown>& OutActors); // Function AIModule.AIPerceptionComponent.GetPerceivedHostileActors(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3FAB1C0>
 	void GetPerceivedActors(struct Unknown* SenseToUse, struct TArray<Unknown>& OutActors); // Function AIModule.AIPerceptionComponent.GetPerceivedActors(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3FAB0D0>
 	void GetKnownPerceivedActors(struct Unknown* SenseToUse, struct TArray<Unknown>& OutActors); // Function AIModule.AIPerceptionComponent.GetKnownPerceivedActors(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3FAAF90>
-	void GetCurrentlyPerceiv(struct Unknown* SenseToUse, struct TArray<Unknown>& OutActors); // Function AIModule.AIPerceptionComponent.GetCurrentlyPerceivtors(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3FAAD40>
+	void GetCurrentlyPerceivedActors(struct Unknown* SenseToUse, struct TArray<Unknown>& OutActors); // Function AIModule.AIPerceptionComponent.GetCurrentlyPerceiv(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3FAAD40>
 	char GetActorsPerception(struct Unknown Actor, struct Unknown& Info); // Function AIModule.AIPerceptionComponent.GetActorsPerception(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3FAAB40>
 	void ForgetAll(); // Function AIModule.AIPerceptionComponent.ForgetAll(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3FAAA80>
 };
 
 // Class AIModule.AIPerceptionStimuliSourceComponent
-struct UAIPerceptionStimuliSourceComponent : UActorComponent {
+class UAIPerceptionStimuliSourceComponent : UActorComponent {
 	char bAutoRegisterAsSource : 0; // 0xB0 (1)
 	struct TArray<Unknown> RegisterAsSourceForSenses; // 0xB8 (16)
 
@@ -557,12 +557,12 @@ struct UAIPerceptionStimuliSourceComponent : UActorComponent {
 };
 
 // Class AIModule.AISubsystem
-struct UAISubsystem : Object {
+class UAISubsystem : Object {
 	struct Unknown AISystem; // 0x30 (8)
 };
 
 // Class AIModule.AIPerceptionSystem
-struct UAIPerceptionSystem : UAISubsystem {
+class UAIPerceptionSystem : UAISubsystem {
 	struct TArray<Unknown> Senses; // 0x88 (16)
 	float PerceptionAgingRate; // 0x98 (4)
 
@@ -574,7 +574,7 @@ struct UAIPerceptionSystem : UAISubsystem {
 };
 
 // Class AIModule.AISense
-struct UAISense : Object {
+class UAISense : Object {
 	float DefaultExpirationAge; // 0x28 (4)
 	enum class Unknow NotifyType; // 0x2C (1)
 	char bWantsNewPawnNotification : 0; // 0x30 (1)
@@ -583,7 +583,7 @@ struct UAISense : Object {
 };
 
 // Class AIModule.AISense_Blueprint
-struct UAISense_Blueprint : UAISense {
+class UAISense_Blueprint : UAISense {
 	struct Unknown* ListenerDataType; // 0x80 (8)
 	struct TArray<Unknown> ListenerContainer; // 0x88 (16)
 	struct TArray<Unknown> UnprocessedEvents; // 0x98 (16)
@@ -598,14 +598,14 @@ struct UAISense_Blueprint : UAISense {
 };
 
 // Class AIModule.AISense_Damage
-struct UAISense_Damage : UAISense {
+class UAISense_Damage : UAISense {
 	struct TArray<Unknown> RegisteredEvents; // 0x80 (16)
 
 	void ReportDamageEvent(struct Unknown WorldContextObject, struct Unknown DamagedActor, struct Unknown Instigator, float DamageAmount, struct Unknown EventLocation, struct Unknown HitLocation); // Function AIModule.AISense_Damage.ReportDamageEvent(Final|Native|Static|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3FB0960>
 };
 
 // Class AIModule.AISense_Hearing
-struct UAISense_Hearing : UAISense {
+class UAISense_Hearing : UAISense {
 	struct TArray<Unknown> NoiseEvents; // 0x80 (16)
 	float SpeedOfSoundSq; // 0x90 (4)
 
@@ -613,7 +613,7 @@ struct UAISense_Hearing : UAISense {
 };
 
 // Class AIModule.AISense_Prediction
-struct UAISense_Prediction : UAISense {
+class UAISense_Prediction : UAISense {
 	struct TArray<Unknown> RegisteredEvents; // 0x80 (16)
 
 	void RequestPawnPredictionEvent(struct Unknown Requestor, struct Unknown PredictedActor, float PredictionTime); // Function AIModule.AISense_Prediction.RequestPawnPredictionEvent(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3FB0F20>
@@ -621,7 +621,7 @@ struct UAISense_Prediction : UAISense {
 };
 
 // Class AIModule.AISense_Sight
-struct UAISense_Sight : UAISense {
+class UAISense_Sight : UAISense {
 	int32_t MaxTracesPerTick; // 0x148 (4)
 	int32_t MinQueriesPerTimeSliceCheck; // 0x14C (4)
 	double MaxTimeSlicePerTick; // 0x150 (8)
@@ -631,34 +631,34 @@ struct UAISense_Sight : UAISense {
 };
 
 // Class AIModule.AISense_Team
-struct UAISense_Team : UAISense {
+class UAISense_Team : UAISense {
 	struct TArray<Unknown> RegisteredEvents; // 0x80 (16)
 };
 
 // Class AIModule.AISense_Touch
-struct UAISense_Touch : UAISense {
+class UAISense_Touch : UAISense {
 	struct TArray<Unknown> RegisteredEvents; // 0x80 (16)
 };
 
 // Class AIModule.AISenseConfig
-struct UAISenseConfig : Object {
+class UAISenseConfig : Object {
 	struct Unknown DebugColor; // 0x28 (4)
 	float MaxAge; // 0x2C (4)
 	char bStartsEnabled : 0; // 0x30 (1)
 };
 
 // Class AIModule.AISenseConfig_Blueprint
-struct UAISenseConfig_Blueprint : UAISenseConfig {
+class UAISenseConfig_Blueprint : UAISenseConfig {
 	struct Unknown* Implementation; // 0x48 (8)
 };
 
 // Class AIModule.AISenseConfig_Damage
-struct UAISenseConfig_Damage : UAISenseConfig {
+class UAISenseConfig_Damage : UAISenseConfig {
 	struct Unknown* Implementation; // 0x48 (8)
 };
 
 // Class AIModule.AISenseConfig_Hearing
-struct UAISenseConfig_Hearing : UAISenseConfig {
+class UAISenseConfig_Hearing : UAISenseConfig {
 	struct Unknown* Implementation; // 0x48 (8)
 	float HearingRange; // 0x50 (4)
 	float LoSHearingRange; // 0x54 (4)
@@ -667,31 +667,31 @@ struct UAISenseConfig_Hearing : UAISenseConfig {
 };
 
 // Class AIModule.AISenseConfig_Sight
-struct UAISenseConfig_Sight : UAISenseConfig {
+class UAISenseConfig_Sight : UAISenseConfig {
 	struct Unknown* Implementation; // 0x48 (8)
 	float SightRadius; // 0x50 (4)
 	float LoseSightRadius; // 0x54 (4)
 	float PeripheralVisionAngleDegrees; // 0x58 (4)
 	struct Unknown DetectionByAffiliation; // 0x5C (4)
-	float AutoSuccessRangeFromLastSeenLocation; // 0x60 (4)
+	float AutoSuccessRangeFromLastSeenLoc; // 0x60 (4)
 };
 
 // Class AIModule.AISenseEvent_Damage
-struct UAISenseEvent_Damage : UAISenseEvent {
+class UAISenseEvent_Damage : UAISenseEvent {
 	struct Unknown Event; // 0x28 (48)
 };
 
 // Class AIModule.AISenseEvent_Hearing
-struct UAISenseEvent_Hearing : UAISenseEvent {
+class UAISenseEvent_Hearing : UAISenseEvent {
 	struct Unknown Event; // 0x28 (48)
 };
 
 // Class AIModule.AISystem
-struct UAISystem : UAISystemBase {
+class UAISystem : UAISystemBase {
 	struct Unknown PerceptionSystemClassName; // 0x58 (24)
 	struct Unknown HotSpotManagerClassName; // 0x70 (24)
 	float AcceptanceRadius; // 0x88 (4)
-	float PathfollowingRegularPathPointAcceptanceRadius; // 0x8C (4)
+	float PathfollowingRegularPathPointAc; // 0x8C (4)
 	float PathfollowingNavLinkAcceptanceRadius; // 0x90 (4)
 	char bFinishMoveOnGoalOv : 0; // 0x94 (1)
 	char bAcceptPartialPaths : 0; // 0x95 (1)
@@ -713,12 +713,12 @@ struct UAISystem : UAISystemBase {
 };
 
 // Class AIModule.AITask
-struct UAITask : UGameplayTask {
+class UAITask : UGameplayTask {
 	struct Unknown OwnerController; // 0x68 (8)
 };
 
 // Class AIModule.AITask_MoveTo
-struct UAITask_MoveTo : UAITask {
+class UAITask_MoveTo : UAITask {
 	struct FMulticastInlineDelegate OnRequestFailed; // 0x70 (16)
 	struct FMulticastInlineDelegate OnMoveFinished; // 0x80 (16)
 	struct Unknown MoveRequest; // 0x90 (64)
@@ -727,7 +727,7 @@ struct UAITask_MoveTo : UAITask {
 };
 
 // Class AIModule.BehaviorTree
-struct UBehaviorTree : Object {
+class UBehaviorTree : Object {
 	struct Unknown RootNode; // 0x30 (8)
 	struct Unknown BlackboardAsset; // 0x38 (8)
 	struct TArray<Unknown> RootDecorators; // 0x40 (16)
@@ -735,7 +735,7 @@ struct UBehaviorTree : Object {
 };
 
 // Class AIModule.BrainComponent
-struct UBrainComponent : UActorComponent {
+class UBrainComponent : UActorComponent {
 	struct Unknown BlackboardComp; // 0xB8 (8)
 	struct Unknown AIOwner; // 0xC0 (8)
 
@@ -747,7 +747,7 @@ struct UBrainComponent : UActorComponent {
 };
 
 // Class AIModule.BehaviorTreeComponent
-struct UBehaviorTreeComponent : UBrainComponent {
+class UBehaviorTreeComponent : UBrainComponent {
 	struct TArray<Unknown> NodeInstances; // 0x130 (16)
 	struct Unknown DefaultBehaviorTreeAsset; // 0x268 (8)
 
@@ -757,14 +757,14 @@ struct UBehaviorTreeComponent : UBrainComponent {
 };
 
 // Class AIModule.BehaviorTreeManager
-struct UBehaviorTreeManager : Object {
+class UBehaviorTreeManager : Object {
 	int32_t MaxDebuggerSteps; // 0x28 (4)
 	struct TArray<Unknown> LoadedTemplates; // 0x30 (16)
 	struct TArray<Unknown> ActiveComponents; // 0x40 (16)
 };
 
 // Class AIModule.BlackboardComponent
-struct UBlackboardComponent : UActorComponent {
+class UBlackboardComponent : UActorComponent {
 	struct Unknown BrainComp; // 0xB0 (8)
 	struct Unknown DefaultBlackboardAsset; // 0xB8 (8)
 	struct Unknown BlackboardAsset; // 0xC0 (8)
@@ -797,65 +797,65 @@ struct UBlackboardComponent : UActorComponent {
 };
 
 // Class AIModule.BlackboardData
-struct UBlackboardData : UDataAsset {
+class UBlackboardData : UDataAsset {
 	struct Unknown Parent; // 0x30 (8)
 	struct TArray<Unknown> Keys; // 0x38 (16)
 	char bHasSynchronizedKeys : 0; // 0x48 (1)
 };
 
 // Class AIModule.BlackboardKeyType_Class
-struct UBlackboardKeyType_Class : UBlackboardKeyType {
+class UBlackboardKeyType_Class : UBlackboardKeyType {
 	struct Unknown* BaseClass; // 0x30 (8)
 };
 
 // Class AIModule.BlackboardKeyType_Enum
-struct UBlackboardKeyType_Enum : UBlackboardKeyType {
+class UBlackboardKeyType_Enum : UBlackboardKeyType {
 	struct Unknown EnumType; // 0x30 (8)
 	struct FString EnumName; // 0x38 (16)
 	char bIsEnumNameValid : 0; // 0x48 (1)
 };
 
 // Class AIModule.BlackboardKeyType_NativeEnum
-struct UBlackboardKeyType_NativeEnum : UBlackboardKeyType {
+class UBlackboardKeyType_NativeEnum : UBlackboardKeyType {
 	struct FString EnumName; // 0x30 (16)
 	struct Unknown EnumType; // 0x40 (8)
 };
 
 // Class AIModule.BlackboardKeyType_Object
-struct UBlackboardKeyType_Object : UBlackboardKeyType {
+class UBlackboardKeyType_Object : UBlackboardKeyType {
 	struct Unknown* BaseClass; // 0x30 (8)
 };
 
 // Class AIModule.BlackboardKeyType_String
-struct UBlackboardKeyType_String : UBlackboardKeyType {
+class UBlackboardKeyType_String : UBlackboardKeyType {
 	struct FString StringValue; // 0x30 (16)
 };
 
 // Class AIModule.BTCompositeNode
-struct UBTCompositeNode : UBTNode {
+class UBTCompositeNode : UBTNode {
 	struct TArray<Unknown> Children; // 0x58 (16)
 	struct TArray<Unknown> Services; // 0x68 (16)
 	char bApplyDecoratorScope : 0; // 0x88 (1)
 };
 
 // Class AIModule.BTComposite_SimpleParallel
-struct UBTComposite_SimpleParallel : UBTCompositeNode {
+class UBTComposite_SimpleParallel : UBTCompositeNode {
 	char FinishMode; // 0x90 (1)
 };
 
 // Class AIModule.BTDecorator
-struct UBTDecorator : UBTAuxiliaryNode {
+class UBTDecorator : UBTAuxiliaryNode {
 	char bInverseCondition : 0; // 0x60 (1)
 	char FlowAbortMode; // 0x64 (1)
 };
 
 // Class AIModule.BTDecorator_BlackboardBase
-struct UBTDecorator_BlackboardBase : UBTDecorator {
+class UBTDecorator_BlackboardBase : UBTDecorator {
 	struct Unknown BlackboardKey; // 0x68 (40)
 };
 
 // Class AIModule.BTDecorator_Blackboard
-struct UBTDecorator_Blackboard : UBTDecorator_BlackboardBase {
+class UBTDecorator_Blackboard : UBTDecorator_BlackboardBase {
 	int32_t IntValue; // 0x90 (4)
 	float FloatValue; // 0x94 (4)
 	struct FString StringValue; // 0x98 (16)
@@ -865,7 +865,7 @@ struct UBTDecorator_Blackboard : UBTDecorator_BlackboardBase {
 };
 
 // Class AIModule.BTDecorator_BlueprintBase
-struct UBTDecorator_BlueprintBase : UBTDecorator {
+class UBTDecorator_BlueprintBase : UBTDecorator {
 	struct Unknown AIOwner; // 0x68 (8)
 	struct Unknown ActorOwner; // 0x70 (8)
 	struct TArray<Unknown> ObservedKeyNames; // 0x78 (16)
@@ -890,7 +890,7 @@ struct UBTDecorator_BlueprintBase : UBTDecorator {
 };
 
 // Class AIModule.BTDecorator_CheckGameplayTagsOnActor
-struct UBTDecorator_CheckGameplayTagsOnActor : UBTDecorator {
+class UBTDecorator_CheckGameplayTagsOnActor : UBTDecorator {
 	struct Unknown ActorToCheck; // 0x68 (40)
 	enum class Unknow TagsToMatch; // 0x90 (1)
 	struct Unknown GameplayTags; // 0x98 (32)
@@ -898,14 +898,14 @@ struct UBTDecorator_CheckGameplayTagsOnActor : UBTDecorator {
 };
 
 // Class AIModule.BTDecorator_CompareBBEntries
-struct UBTDecorator_CompareBBEntries : UBTDecorator {
+class UBTDecorator_CompareBBEntries : UBTDecorator {
 	char Operator; // 0x68 (1)
 	struct Unknown BlackboardKeyA; // 0x70 (40)
 	struct Unknown BlackboardKeyB; // 0x98 (40)
 };
 
 // Class AIModule.BTDecorator_ConeCheck
-struct UBTDecorator_ConeCheck : UBTDecorator {
+class UBTDecorator_ConeCheck : UBTDecorator {
 	float ConeHalfAngle; // 0x68 (4)
 	struct Unknown ConeOrigin; // 0x70 (40)
 	struct Unknown ConeDirection; // 0x98 (40)
@@ -913,12 +913,12 @@ struct UBTDecorator_ConeCheck : UBTDecorator {
 };
 
 // Class AIModule.BTDecorator_Cooldown
-struct UBTDecorator_Cooldown : UBTDecorator {
+class UBTDecorator_Cooldown : UBTDecorator {
 	float CoolDownTime; // 0x68 (4)
 };
 
 // Class AIModule.BTDecorator_DoesPathExist
-struct UBTDecorator_DoesPathExist : UBTDecorator {
+class UBTDecorator_DoesPathExist : UBTDecorator {
 	struct Unknown BlackboardKeyA; // 0x68 (40)
 	struct Unknown BlackboardKeyB; // 0x90 (40)
 	char bUseSelf : 0; // 0xB8 (1)
@@ -927,7 +927,7 @@ struct UBTDecorator_DoesPathExist : UBTDecorator {
 };
 
 // Class AIModule.BTDecorator_IsAtLocation
-struct UBTDecorator_IsAtLocation : UBTDecorator_BlackboardBase {
+class UBTDecorator_IsAtLocation : UBTDecorator_BlackboardBase {
 	float AcceptableRadius; // 0x90 (4)
 	struct Unknown ParametrizedAcceptableRadius; // 0x98 (56)
 	enum class Unknow GeometricDistanceType; // 0xD0 (1)
@@ -937,12 +937,12 @@ struct UBTDecorator_IsAtLocation : UBTDecorator_BlackboardBase {
 };
 
 // Class AIModule.BTDecorator_IsBBEntryOfClass
-struct UBTDecorator_IsBBEntryOfClass : UBTDecorator_BlackboardBase {
+class UBTDecorator_IsBBEntryOfClass : UBTDecorator_BlackboardBase {
 	struct Unknown* TestClass; // 0x90 (8)
 };
 
 // Class AIModule.BTDecorator_KeepInCone
-struct UBTDecorator_KeepInCone : UBTDecorator {
+class UBTDecorator_KeepInCone : UBTDecorator {
 	float ConeHalfAngle; // 0x68 (4)
 	struct Unknown ConeOrigin; // 0x70 (40)
 	struct Unknown Observed; // 0x98 (40)
@@ -951,21 +951,21 @@ struct UBTDecorator_KeepInCone : UBTDecorator {
 };
 
 // Class AIModule.BTDecorator_Loop
-struct UBTDecorator_Loop : UBTDecorator {
+class UBTDecorator_Loop : UBTDecorator {
 	int32_t NumLoops; // 0x68 (4)
 	char bInfiniteLoop : 0; // 0x6C (1)
 	float InfiniteLoopTimeoutTime; // 0x70 (4)
 };
 
 // Class AIModule.BTDecorator_SetTagCooldown
-struct UBTDecorator_SetTagCooldown : UBTDecorator {
+class UBTDecorator_SetTagCooldown : UBTDecorator {
 	struct Unknown CooldownTag; // 0x68 (8)
 	float CooldownDuration; // 0x70 (4)
 	char bAddToExistingDuration : 0; // 0x74 (1)
 };
 
 // Class AIModule.BTDecorator_TagCooldown
-struct UBTDecorator_TagCooldown : UBTDecorator {
+class UBTDecorator_TagCooldown : UBTDecorator {
 	struct Unknown CooldownTag; // 0x68 (8)
 	float CooldownDuration; // 0x70 (4)
 	char bAddToExistingDuration : 0; // 0x74 (1)
@@ -973,17 +973,17 @@ struct UBTDecorator_TagCooldown : UBTDecorator {
 };
 
 // Class AIModule.BTDecorator_TimeLimit
-struct UBTDecorator_TimeLimit : UBTDecorator {
+class UBTDecorator_TimeLimit : UBTDecorator {
 	float TimeLimit; // 0x68 (4)
 };
 
 // Class AIModule.BTService_BlackboardBase
-struct UBTService_BlackboardBase : UBTService {
+class UBTService_BlackboardBase : UBTService {
 	struct Unknown BlackboardKey; // 0x70 (40)
 };
 
 // Class AIModule.BTService_BlueprintBase
-struct UBTService_BlueprintBase : UBTService {
+class UBTService_BlueprintBase : UBTService {
 	struct Unknown AIOwner; // 0x70 (8)
 	struct Unknown ActorOwner; // 0x78 (8)
 	char bShowPropertyDetails : 0; // 0x90 (1)
@@ -1001,17 +1001,17 @@ struct UBTService_BlueprintBase : UBTService {
 };
 
 // Class AIModule.BTService_DefaultFocus
-struct UBTService_DefaultFocus : UBTService_BlackboardBase {
+class UBTService_DefaultFocus : UBTService_BlackboardBase {
 	char FocusPriority; // 0x98 (1)
 };
 
 // Class AIModule.BTService_RunEQS
-struct UBTService_RunEQS : UBTService_BlackboardBase {
+class UBTService_RunEQS : UBTService_BlackboardBase {
 	struct Unknown EQSRequest; // 0x98 (72)
 };
 
 // Class AIModule.BTTask_BlueprintBase
-struct UBTTask_BlueprintBase : UBTTaskNode {
+class UBTTask_BlueprintBase : UBTTaskNode {
 	struct Unknown AIOwner; // 0x70 (8)
 	struct Unknown ActorOwner; // 0x78 (8)
 	struct Unknown TickInterval; // 0x80 (8)
@@ -1032,45 +1032,45 @@ struct UBTTask_BlueprintBase : UBTTaskNode {
 };
 
 // Class AIModule.BTTask_FinishWithResult
-struct UBTTask_FinishWithResult : UBTTaskNode {
+class UBTTask_FinishWithResult : UBTTaskNode {
 	char Result; // 0x70 (1)
 };
 
 // Class AIModule.BTTask_GameplayTaskBase
-struct UBTTask_GameplayTaskBase : UBTTaskNode {
+class UBTTask_GameplayTaskBase : UBTTaskNode {
 	char bWaitForGameplayTask : 0; // 0x70 (1)
 };
 
 // Class AIModule.BTTask_MakeNoise
-struct UBTTask_MakeNoise : UBTTaskNode {
+class UBTTask_MakeNoise : UBTTaskNode {
 	float Loudnes; // 0x70 (4)
 };
 
 // Class AIModule.BTTask_MoveTo
-struct UBTTask_MoveTo : UBTTask_BlackboardBase {
+class UBTTask_MoveTo : UBTTask_BlackboardBase {
 	float AcceptableRadius; // 0x98 (4)
 	struct Unknown* FilterClass; // 0xA0 (8)
-	float ObservedBlackboardValueTolerance; // 0xA8 (4)
+	float ObservedBlackboardValueToleranc; // 0xA8 (4)
 	char bObserveBlackboardValue : 0; // 0xAC (1)
 	char bAllowStrafe : 0; // 0xAC (1)
 	char bAllowPartialPath : 0; // 0xAC (1)
 	char bTrackMovingGoal : 0; // 0xAC (1)
 	char bProjectGoalLocation : 0; // 0xAC (1)
-	char b : 0; // 0xAC (1)
-	char b : 0; // 0xAC (1)
+	char bReachTestIncludesAgentRadius : 0; // 0xAC (1)
+	char bReachTestIncludesGoalRadius : 0; // 0xAC (1)
 	char bStopOnOverlap : 0; // 0xAC (1)
 	char bStopOnOverlapNeedsUpdate : 0; // 0xAD (1)
 };
 
 // Class AIModule.BTTask_MoveDirectlyToward
-struct UBTTask_MoveDirectlyToward : UBTTask_MoveTo {
+class UBTTask_MoveDirectlyToward : UBTTask_MoveTo {
 	char bDisablePathUpdateOnGoalLocationChange : 0; // 0xB0 (1)
 	char bProjectVectorGoalToNavigation : 0; // 0xB0 (1)
 	char bUpdatedDeprecatedProperties : 0; // 0xB0 (1)
 };
 
 // Class AIModule.BTTask_PlayAnimation
-struct UBTTask_PlayAnimation : UBTTaskNode {
+class UBTTask_PlayAnimation : UBTTaskNode {
 	struct Unknown AnimationToPlay; // 0x70 (8)
 	char bLooping : 0; // 0x78 (1)
 	char bNonBlocking : 0; // 0x78 (1)
@@ -1079,34 +1079,34 @@ struct UBTTask_PlayAnimation : UBTTaskNode {
 };
 
 // Class AIModule.BTTask_PlaySound
-struct UBTTask_PlaySound : UBTTaskNode {
+class UBTTask_PlaySound : UBTTaskNode {
 	struct Unknown SoundToPlay; // 0x70 (8)
 };
 
 // Class AIModule.BTTask_PushPawnAction
-struct UBTTask_PushPawnAction : UBTTask_PawnActionBase {
+class UBTTask_PushPawnAction : UBTTask_PawnActionBase {
 	struct Unknown Action; // 0x70 (8)
 };
 
 // Class AIModule.BTTask_RotateToFaceBBEntry
-struct UBTTask_RotateToFaceBBEntry : UBTTask_BlackboardBase {
+class UBTTask_RotateToFaceBBEntry : UBTTask_BlackboardBase {
 	float Precision; // 0x98 (4)
 };
 
 // Class AIModule.BTTask_RunBehavior
-struct UBTTask_RunBehavior : UBTTaskNode {
+class UBTTask_RunBehavior : UBTTaskNode {
 	struct Unknown BehaviorAsset; // 0x70 (8)
 };
 
 // Class AIModule.BTTask_RunBehaviorDynamic
-struct UBTTask_RunBehaviorDynamic : UBTTaskNode {
+class UBTTask_RunBehaviorDynamic : UBTTaskNode {
 	struct Unknown InjectionTag; // 0x70 (8)
 	struct Unknown DefaultBehaviorAsset; // 0x78 (8)
 	struct Unknown BehaviorAsset; // 0x80 (8)
 };
 
 // Class AIModule.BTTask_RunEQSQuery
-struct UBTTask_RunEQSQuery : UBTTask_BlackboardBase {
+class UBTTask_RunEQSQuery : UBTTask_BlackboardBase {
 	struct Unknown QueryTemplate; // 0x98 (8)
 	struct TArray<Unknown> QueryParams; // 0xA0 (16)
 	struct TArray<Unknown> QueryConfig; // 0xB0 (16)
@@ -1117,25 +1117,25 @@ struct UBTTask_RunEQSQuery : UBTTask_BlackboardBase {
 };
 
 // Class AIModule.BTTask_SetTagCooldown
-struct UBTTask_SetTagCooldown : UBTTaskNode {
+class UBTTask_SetTagCooldown : UBTTaskNode {
 	struct Unknown CooldownTag; // 0x70 (8)
 	char bAddToExistingDuration : 0; // 0x78 (1)
 	float CooldownDuration; // 0x7C (4)
 };
 
 // Class AIModule.BTTask_Wait
-struct UBTTask_Wait : UBTTaskNode {
+class UBTTask_Wait : UBTTaskNode {
 	float WaitTime; // 0x70 (4)
 	float RandomDeviation; // 0x74 (4)
 };
 
 // Class AIModule.BTTask_WaitBlackboardTime
-struct UBTTask_WaitBlackboardTime : UBTTask_Wait {
+class UBTTask_WaitBlackboardTime : UBTTask_Wait {
 	struct Unknown BlackboardKey; // 0x78 (40)
 };
 
 // Class AIModule.PathFollowingComponent
-struct UPathFollowingComponent : UActorComponent {
+class UPathFollowingComponent : UActorComponent {
 	struct Unknown MovementComp; // 0xE8 (8)
 	struct Unknown MyNavData; // 0xF8 (8)
 
@@ -1146,7 +1146,7 @@ struct UPathFollowingComponent : UActorComponent {
 };
 
 // Class AIModule.CrowdFollowingComponent
-struct UCrowdFollowingComponent : UPathFollowingComponent {
+class UCrowdFollowingComponent : UPathFollowingComponent {
 	struct Unknown CharacterMovement; // 0x260 (8)
 	struct Unknown CrowdAgentMoveDirection; // 0x268 (12)
 
@@ -1154,7 +1154,7 @@ struct UCrowdFollowingComponent : UPathFollowingComponent {
 };
 
 // Class AIModule.CrowdManager
-struct UCrowdManager : UCrowdManagerBase {
+class UCrowdManager : UCrowdManagerBase {
 	struct Unknown MyNavData; // 0x28 (8)
 	struct TArray<Unknown> AvoidanceConfig; // 0x30 (16)
 	struct TArray<Unknown> SamplingPatterns; // 0x40 (16)
@@ -1166,29 +1166,29 @@ struct UCrowdManager : UCrowdManagerBase {
 	float PathOptimizationInterval; // 0x64 (4)
 	float SeparationDirClamp; // 0x68 (4)
 	float PathOffsetRadiusMultiplier; // 0x6C (4)
-	char b : 0; // 0x70 (1)
+	char bResolveCollisions : 0; // 0x70 (1)
 };
 
 // Class AIModule.EnvQuery
-struct UEnvQuery : UDataAsset {
+class UEnvQuery : UDataAsset {
 	struct FName QueryName; // 0x30 (8)
 	struct TArray<Unknown> options; // 0x38 (16)
 };
 
 // Class AIModule.EnvQueryNode
-struct UEnvQueryNode : Object {
+class UEnvQueryNode : Object {
 	int32_t VerNum; // 0x28 (4)
 };
 
 // Class AIModule.EnvQueryGenerator
-struct UEnvQueryGenerator : UEnvQueryNode {
+class UEnvQueryGenerator : UEnvQueryNode {
 	struct FString OptionName; // 0x30 (16)
 	struct Unknown* ItemType; // 0x40 (8)
 	char bAutoSortTests : 0; // 0x48 (1)
 };
 
 // Class AIModule.EnvQueryGenerator_ActorsOfClass
-struct UEnvQueryGenerator_ActorsOfClass : UEnvQueryGenerator {
+class UEnvQueryGenerator_ActorsOfClass : UEnvQueryGenerator {
 	struct Unknown* SearchedActorClass; // 0x50 (8)
 	struct Unknown GenerateOnlyActorsInRadius; // 0x58 (56)
 	struct Unknown SearchRadius; // 0x90 (56)
@@ -1196,7 +1196,7 @@ struct UEnvQueryGenerator_ActorsOfClass : UEnvQueryGenerator {
 };
 
 // Class AIModule.EnvQueryGenerator_BlueprintBase
-struct UEnvQueryGenerator_BlueprintBase : UEnvQueryGenerator {
+class UEnvQueryGenerator_BlueprintBase : UEnvQueryGenerator {
 	struct FText GeneratorsActionDescription; // 0x50 (24)
 	struct Unknown* Context; // 0x68 (8)
 	struct Unknown* GeneratedItemType; // 0x70 (8)
@@ -1208,7 +1208,7 @@ struct UEnvQueryGenerator_BlueprintBase : UEnvQueryGenerator {
 };
 
 // Class AIModule.EnvQueryGenerator_Composite
-struct UEnvQueryGenerator_Composite : UEnvQueryGenerator {
+class UEnvQueryGenerator_Composite : UEnvQueryGenerator {
 	struct TArray<Unknown> Generators; // 0x50 (16)
 	char bAllowDifferentItemTypes : 0; // 0x60 (1)
 	char bHasMatchingItemType : 0; // 0x60 (1)
@@ -1216,12 +1216,12 @@ struct UEnvQueryGenerator_Composite : UEnvQueryGenerator {
 };
 
 // Class AIModule.EnvQueryGenerator_ProjectedPoints
-struct UEnvQueryGenerator_ProjectedPoints : UEnvQueryGenerator {
+class UEnvQueryGenerator_ProjectedPoints : UEnvQueryGenerator {
 	struct Unknown ProjectionData; // 0x50 (48)
 };
 
 // Class AIModule.EnvQueryGenerator_Cone
-struct UEnvQueryGenerator_Cone : UEnvQueryGenerator_ProjectedPoints {
+class UEnvQueryGenerator_Cone : UEnvQueryGenerator_ProjectedPoints {
 	struct Unknown AlignedPointsDistance; // 0x80 (56)
 	struct Unknown ConeDegrees; // 0xB8 (56)
 	struct Unknown AngleStep; // 0xF0 (56)
@@ -1231,12 +1231,12 @@ struct UEnvQueryGenerator_Cone : UEnvQueryGenerator_ProjectedPoints {
 };
 
 // Class AIModule.EnvQueryGenerator_CurrentLocation
-struct UEnvQueryGenerator_CurrentLocation : UEnvQueryGenerator {
+class UEnvQueryGenerator_CurrentLocation : UEnvQueryGenerator {
 	struct Unknown* QueryContext; // 0x50 (8)
 };
 
 // Class AIModule.EnvQueryGenerator_Donut
-struct UEnvQueryGenerator_Donut : UEnvQueryGenerator_ProjectedPoints {
+class UEnvQueryGenerator_Donut : UEnvQueryGenerator_ProjectedPoints {
 	struct Unknown InnerRadius; // 0x80 (56)
 	struct Unknown OuterRadius; // 0xB8 (56)
 	struct Unknown NumberOfRings; // 0xF0 (56)
@@ -1249,7 +1249,7 @@ struct UEnvQueryGenerator_Donut : UEnvQueryGenerator_ProjectedPoints {
 };
 
 // Class AIModule.EnvQueryGenerator_OnCircle
-struct UEnvQueryGenerator_OnCircle : UEnvQueryGenerator_ProjectedPoints {
+class UEnvQueryGenerator_OnCircle : UEnvQueryGenerator_ProjectedPoints {
 	struct Unknown CircleRadius; // 0x80 (56)
 	struct Unknown SpaceBetween; // 0xB8 (56)
 	struct Unknown NumberOfPoints; // 0xF0 (56)
@@ -1265,21 +1265,21 @@ struct UEnvQueryGenerator_OnCircle : UEnvQueryGenerator_ProjectedPoints {
 };
 
 // Class AIModule.EnvQueryGenerator_SimpleGrid
-struct UEnvQueryGenerator_SimpleGrid : UEnvQueryGenerator_ProjectedPoints {
+class UEnvQueryGenerator_SimpleGrid : UEnvQueryGenerator_ProjectedPoints {
 	struct Unknown GridSize; // 0x80 (56)
 	struct Unknown SpaceBetween; // 0xB8 (56)
 	struct Unknown* GenerateAround; // 0xF0 (8)
 };
 
 // Class AIModule.EnvQueryGenerator_PathingGrid
-struct UEnvQueryGenerator_PathingGrid : UEnvQueryGenerator_SimpleGrid {
+class UEnvQueryGenerator_PathingGrid : UEnvQueryGenerator_SimpleGrid {
 	struct Unknown PathToItem; // 0xF8 (56)
 	struct Unknown* NavigationFilter; // 0x130 (8)
 	struct Unknown ScanRangeMultiplier; // 0x138 (56)
 };
 
 // Class AIModule.EnvQueryInstanceBlueprintWrapper
-struct UEnvQueryInstanceBlueprintWrapper : Object {
+class UEnvQueryInstanceBlueprintWrapper : Object {
 	int32_t QueryID; // 0x30 (4)
 	struct Unknown* ItemType; // 0x58 (8)
 	int32_t OptionIndex; // 0x60 (4)
@@ -1295,7 +1295,7 @@ struct UEnvQueryInstanceBlueprintWrapper : Object {
 };
 
 // Class AIModule.EnvQueryManager
-struct UEnvQueryManager : UAISubsystem {
+class UEnvQueryManager : UAISubsystem {
 	struct TArray<Unknown> InstanceCache; // 0xA8 (16)
 	struct TArray<Unknown> LocalContexts; // 0xB8 (16)
 	struct TArray<Unknown> GCShieldedWrappers; // 0xC8 (16)
@@ -1308,13 +1308,13 @@ struct UEnvQueryManager : UAISubsystem {
 };
 
 // Class AIModule.EnvQueryOption
-struct UEnvQueryOption : Object {
+class UEnvQueryOption : Object {
 	struct Unknown Generator; // 0x28 (8)
 	struct TArray<Unknown> Tests; // 0x30 (16)
 };
 
 // Class AIModule.EnvQueryTest
-struct UEnvQueryTest : UEnvQueryNode {
+class UEnvQueryTest : UEnvQueryNode {
 	int32_t TestOrder; // 0x30 (4)
 	char TestPurpose; // 0x34 (1)
 	struct FString TestComment; // 0x38 (16)
@@ -1337,13 +1337,13 @@ struct UEnvQueryTest : UEnvQueryNode {
 };
 
 // Class AIModule.EnvQueryTest_Distance
-struct UEnvQueryTest_Distance : UEnvQueryTest {
+class UEnvQueryTest_Distance : UEnvQueryTest {
 	char TestMode; // 0x1F8 (1)
 	struct Unknown* DistanceTo; // 0x200 (8)
 };
 
 // Class AIModule.EnvQueryTest_Dot
-struct UEnvQueryTest_Dot : UEnvQueryTest {
+class UEnvQueryTest_Dot : UEnvQueryTest {
 	struct Unknown LineA; // 0x1F8 (32)
 	struct Unknown LineB; // 0x218 (32)
 	enum class Unknow TestMode; // 0x238 (1)
@@ -1351,7 +1351,7 @@ struct UEnvQueryTest_Dot : UEnvQueryTest {
 };
 
 // Class AIModule.EnvQueryTest_GameplayTags
-struct UEnvQueryTest_GameplayTags : UEnvQueryTest {
+class UEnvQueryTest_GameplayTags : UEnvQueryTest {
 	struct Unknown TagQueryToMatch; // 0x1F8 (72)
 	char bUpdatedToUseQuery : 0; // 0x240 (1)
 	enum class Unknow TagsToMatch; // 0x241 (1)
@@ -1359,12 +1359,12 @@ struct UEnvQueryTest_GameplayTags : UEnvQueryTest {
 };
 
 // Class AIModule.EnvQueryTest_Overlap
-struct UEnvQueryTest_Overlap : UEnvQueryTest {
+class UEnvQueryTest_Overlap : UEnvQueryTest {
 	struct Unknown OverlapData; // 0x1F8 (32)
 };
 
 // Class AIModule.EnvQueryTest_Pathfinding
-struct UEnvQueryTest_Pathfinding : UEnvQueryTest {
+class UEnvQueryTest_Pathfinding : UEnvQueryTest {
 	char TestMode; // 0x1F8 (1)
 	struct Unknown* Context; // 0x200 (8)
 	struct Unknown PathFromContext; // 0x208 (56)
@@ -1373,17 +1373,17 @@ struct UEnvQueryTest_Pathfinding : UEnvQueryTest {
 };
 
 // Class AIModule.EnvQueryTest_PathfindingBatch
-struct UEnvQueryTest_PathfindingBatch : UEnvQueryTest_Pathfinding {
+class UEnvQueryTest_PathfindingBatch : UEnvQueryTest_Pathfinding {
 	struct Unknown ScanRangeMultiplier; // 0x280 (56)
 };
 
 // Class AIModule.EnvQueryTest_Project
-struct UEnvQueryTest_Project : UEnvQueryTest {
+class UEnvQueryTest_Project : UEnvQueryTest {
 	struct Unknown ProjectionData; // 0x1F8 (48)
 };
 
 // Class AIModule.EnvQueryTest_Trace
-struct UEnvQueryTest_Trace : UEnvQueryTest {
+class UEnvQueryTest_Trace : UEnvQueryTest {
 	struct Unknown TraceData; // 0x1F8 (48)
 	struct Unknown TraceFromContext; // 0x228 (56)
 	struct Unknown ItemHeightOffset; // 0x260 (56)
@@ -1392,14 +1392,14 @@ struct UEnvQueryTest_Trace : UEnvQueryTest {
 };
 
 // Class AIModule.EnvQueryTest_Volume
-struct UEnvQueryTest_Volume : UEnvQueryTest {
+class UEnvQueryTest_Volume : UEnvQueryTest {
 	struct Unknown* VolumeContext; // 0x1F8 (8)
 	struct Unknown* VolumeClass; // 0x200 (8)
 	char bDoComplexVolumeTest : 0; // 0x208 (1)
 };
 
 // Class AIModule.EQSTestingPawn
-struct AEQSTestingPawn : ACharacter {
+class AEQSTestingPawn : ACharacter {
 	struct Unknown QueryTemplate; // 0x5E0 (8)
 	struct TArray<Unknown> QueryParams; // 0x5E8 (16)
 	struct TArray<Unknown> QueryConfig; // 0x5F8 (16)
@@ -1408,7 +1408,7 @@ struct AEQSTestingPawn : ACharacter {
 	enum class Unknow HighlightMode; // 0x610 (1)
 	char bDrawLabels : 0; // 0x614 (1)
 	char bDrawFailedItems : 0; // 0x614 (1)
-	char b : 0; // 0x614 (1)
+	char bReRunQueryOnlyOnFinishedMove : 0; // 0x614 (1)
 	char bShouldBeVisibleInGame : 0; // 0x614 (1)
 	char bTickDuringGame : 0; // 0x614 (1)
 	char QueryingMode; // 0x618 (1)
@@ -1416,12 +1416,12 @@ struct AEQSTestingPawn : ACharacter {
 };
 
 // Class AIModule.GridPathFollowingComponent
-struct UGridPathFollowingComponent : UPathFollowingComponent {
+class UGridPathFollowingComponent : UPathFollowingComponent {
 	struct Unknown GridManager; // 0x258 (8)
 };
 
 // Class AIModule.NavLinkProxy
-struct ANavLinkProxy : UActor {
+class ANavLinkProxy : UActor {
 	struct TArray<Unknown> PointLinks; // 0x320 (16)
 	struct TArray<Unknown> SegmentLinks; // 0x330 (16)
 	struct Unknown SmartLinkComp; // 0x340 (8)
@@ -1436,14 +1436,14 @@ struct ANavLinkProxy : UActor {
 };
 
 // Class AIModule.PawnAction
-struct UPawnAction : Object {
+class UPawnAction : Object {
 	struct Unknown ChildAction; // 0x28 (8)
 	struct Unknown ParentAction; // 0x30 (8)
 	struct Unknown OwnerComponent; // 0x38 (8)
 	struct Unknown Instigator; // 0x40 (8)
 	struct Unknown BrainComp; // 0x48 (8)
 	char bAllowNewSameClassInstance : 0; // 0x80 (1)
-	char b : 0; // 0x80 (1)
+	char bReplaceActiveSameClassInstance : 0; // 0x80 (1)
 	char bShouldPauseMovement : 0; // 0x80 (1)
 	char bAlwaysNotifyOnFinished : 0; // 0x80 (1)
 
@@ -1453,7 +1453,7 @@ struct UPawnAction : Object {
 };
 
 // Class AIModule.PawnAction_Move
-struct UPawnAction_Move : UPawnAction {
+class UPawnAction_Move : UPawnAction {
 	struct Unknown GoalActor; // 0x98 (8)
 	struct Unknown GoalLocation; // 0xA0 (12)
 	float AcceptableRadius; // 0xAC (4)
@@ -1468,26 +1468,26 @@ struct UPawnAction_Move : UPawnAction {
 };
 
 // Class AIModule.PawnAction_Repeat
-struct UPawnAction_Repeat : UPawnAction {
+class UPawnAction_Repeat : UPawnAction {
 	struct Unknown ActionToRepeat; // 0x98 (8)
 	struct Unknown RecentActionCopy; // 0xA0 (8)
 	char ChildFailureHandlingMode; // 0xA8 (1)
 };
 
 // Class AIModule.PawnAction_Sequence
-struct UPawnAction_Sequence : UPawnAction {
+class UPawnAction_Sequence : UPawnAction {
 	struct TArray<Unknown> ActionSequence; // 0x98 (16)
 	char ChildFailureHandlingMode; // 0xA8 (1)
 	struct Unknown RecentActionCopy; // 0xB0 (8)
 };
 
 // Class AIModule.PawnAction_Wait
-struct UPawnAction_Wait : UPawnAction {
+class UPawnAction_Wait : UPawnAction {
 	float TimeToWait; // 0x98 (4)
 };
 
 // Class AIModule.PawnActionsComponent
-struct UPawnActionsComponent : UActorComponent {
+class UPawnActionsComponent : UActorComponent {
 	struct Unknown ControlledPawn; // 0xB0 (8)
 	struct TArray<Unknown> ActionStacks; // 0xB8 (16)
 	struct TArray<Unknown> ActionEvents; // 0xC8 (16)
@@ -1500,7 +1500,7 @@ struct UPawnActionsComponent : UActorComponent {
 };
 
 // Class AIModule.PawnSensingComponent
-struct UPawnSensingComponent : UActorComponent {
+class UPawnSensingComponent : UActorComponent {
 	float HearingThreshold; // 0xB0 (4)
 	float LOSHearingThreshold; // 0xB4 (4)
 	float SightRadius; // 0xB8 (4)
@@ -1522,5 +1522,270 @@ struct UPawnSensingComponent : UActorComponent {
 	void HearNoiseDelegate__DelegateSignature(struct Unknown Instigator, struct Unknown& Location, float Volume); // DelegateFunction AIModule.PawnSensingComponent.HearNoiseDelegate__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	float GetPeripheralVisionCosine(); // Function AIModule.PawnSensingComponent.GetPeripheralVisionCosine(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3FC9B40>
 	float GetPeripheralVisionAngle(); // Function AIModule.PawnSensingComponent.GetPeripheralVisionAngle(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3FC9B20>
+};
+
+// ScriptStruct AIModule.AIRequestID
+struct FAIRequestID {
+	uint32_t RequestID; // 0x0 (4)
+};
+
+// ScriptStruct AIModule.AIStimulus
+struct FAIStimulus {
+	float Age; // 0x0 (4)
+	float ExpirationAge; // 0x4 (4)
+	float Strength; // 0x8 (4)
+	struct Unknown StimulusLocation; // 0xC (12)
+	struct Unknown ReceiverLocation; // 0x18 (12)
+	struct FName Tag; // 0x24 (8)
+	char bSuccessfullySensed : 0; // 0x38 (1)
+};
+
+// ScriptStruct AIModule.AIDataProviderValue
+struct FAIDataProviderValue {
+	struct Unknown DataBinding; // 0x10 (8)
+	struct FName DataField; // 0x18 (8)
+};
+
+// ScriptStruct AIModule.AIDataProviderTypedValue
+struct FAIDataProviderTypedValue : FAIDataProviderValue {
+	struct Unknown* PropertyType; // 0x20 (8)
+};
+
+// ScriptStruct AIModule.AIDataProviderBoolValue
+struct FAIDataProviderBoolValue : FAIDataProviderTypedValue {
+	char DefaultValue : 0; // 0x30 (1)
+};
+
+// ScriptStruct AIModule.AIDataProviderFloatValue
+struct FAIDataProviderFloatValue : FAIDataProviderTypedValue {
+	float DefaultValue; // 0x30 (4)
+};
+
+// ScriptStruct AIModule.AIDataProviderIntValue
+struct FAIDataProviderIntValue : FAIDataProviderTypedValue {
+	int32_t DefaultValue; // 0x30 (4)
+};
+
+// ScriptStruct AIModule.ActorPerceptionBlueprintInfo
+struct FActorPerceptionBlueprintInfo {
+	struct Unknown Target; // 0x0 (8)
+	struct TArray<Unknown> LastSensedStimuli; // 0x8 (16)
+	char bIsHostile : 0; // 0x18 (1)
+};
+
+// ScriptStruct AIModule.AISenseAffiliationFilter
+struct FAISenseAffiliationFilter {
+	char bDetectEnemies : 0; // 0x0 (1)
+	char bDetectNeutrals : 0; // 0x0 (1)
+	char bDetectFriendlies : 0; // 0x0 (1)
+};
+
+// ScriptStruct AIModule.AIDamageEvent
+struct FAIDamageEvent {
+	float Amount; // 0x0 (4)
+	struct Unknown Location; // 0x4 (12)
+	struct Unknown HitLocation; // 0x10 (12)
+	struct Unknown DamagedActor; // 0x20 (8)
+	struct Unknown Instigator; // 0x28 (8)
+};
+
+// ScriptStruct AIModule.AINoiseEvent
+struct FAINoiseEvent {
+	struct Unknown NoiseLocation; // 0x4 (12)
+	float Loudness; // 0x10 (4)
+	float MaxRange; // 0x14 (4)
+	struct Unknown Instigator; // 0x18 (8)
+	struct FName Tag; // 0x20 (8)
+};
+
+// ScriptStruct AIModule.AIPredictionEvent
+struct FAIPredictionEvent {
+	struct Unknown Requestor; // 0x0 (8)
+	struct Unknown PredictedActor; // 0x8 (8)
+};
+
+// ScriptStruct AIModule.AISightEvent
+struct FAISightEvent {
+	struct Unknown SeenActor; // 0x8 (8)
+	struct Unknown Observer; // 0x10 (8)
+};
+
+// ScriptStruct AIModule.AITeamStimulusEvent
+struct FAITeamStimulusEvent {
+	struct Unknown Broadcaster; // 0x28 (8)
+	struct Unknown Enemy; // 0x30 (8)
+};
+
+// ScriptStruct AIModule.AITouchEvent
+struct FAITouchEvent {
+	struct Unknown TouchReceiver; // 0x10 (8)
+	struct Unknown OtherActor; // 0x18 (8)
+};
+
+// ScriptStruct AIModule.IntervalCountdown
+struct FIntervalCountdown {
+	float Interval; // 0x0 (4)
+};
+
+// ScriptStruct AIModule.AIMoveRequest
+struct FAIMoveRequest {
+	struct Unknown GoalActor; // 0x0 (8)
+};
+
+// ScriptStruct AIModule.BehaviorTreeTemplateInfo
+struct FBehaviorTreeTemplateInfo {
+	struct Unknown Asset; // 0x0 (8)
+	struct Unknown Template; // 0x8 (8)
+};
+
+// ScriptStruct AIModule.BlackboardKeySelector
+struct FBlackboardKeySelector {
+	struct TArray<Unknown> AllowedTypes; // 0x0 (16)
+	struct FName SelectedKeyName; // 0x10 (8)
+	struct Unknown* SelectedKeyType; // 0x18 (8)
+	char SelectedKeyID; // 0x20 (1)
+	char bNoneIsAllowedValue : 0; // 0x24 (1)
+};
+
+// ScriptStruct AIModule.BlackboardEntry
+struct FBlackboardEntry {
+	struct FName EntryName; // 0x0 (8)
+	struct Unknown KeyType; // 0x8 (8)
+	char bInstanceSynced : 0; // 0x10 (1)
+};
+
+// ScriptStruct AIModule.BTCompositeChild
+struct FBTCompositeChild {
+	struct Unknown ChildComposite; // 0x0 (8)
+	struct Unknown ChildTask; // 0x8 (8)
+	struct TArray<Unknown> Decorators; // 0x10 (16)
+	struct TArray<Unknown> DecoratorOps; // 0x20 (16)
+};
+
+// ScriptStruct AIModule.BTDecoratorLogic
+struct FBTDecoratorLogic {
+	char Operation; // 0x0 (1)
+	uint16_t Number; // 0x2 (2)
+};
+
+// ScriptStruct AIModule.CrowdAvoidanceSamplingPattern
+struct FCrowdAvoidanceSamplingPattern {
+	struct TArray<Unknown> Angles; // 0x0 (16)
+	struct TArray<Unknown> Radii; // 0x10 (16)
+};
+
+// ScriptStruct AIModule.CrowdAvoidanceConfig
+struct FCrowdAvoidanceConfig {
+	float VelocityBias; // 0x0 (4)
+	float DesiredVelocityWeight; // 0x4 (4)
+	float CurrentVelocityWeight; // 0x8 (4)
+	float SideBiasWeight; // 0xC (4)
+	float ImpactTimeWeight; // 0x10 (4)
+	float ImpactTimeRange; // 0x14 (4)
+	char CustomPatternIdx; // 0x18 (1)
+	char AdaptiveDivisions; // 0x19 (1)
+	char AdaptiveRings; // 0x1A (1)
+	char AdaptiveDepth; // 0x1B (1)
+};
+
+// ScriptStruct AIModule.EnvQueryInstanceCache
+struct FEnvQueryInstanceCache {
+	struct Unknown Template; // 0x0 (8)
+};
+
+// ScriptStruct AIModule.EnvQueryRequest
+struct FEnvQueryRequest {
+	struct Unknown QueryTemplate; // 0x0 (8)
+	struct Unknown Owner; // 0x8 (8)
+	struct Unknown World; // 0x10 (8)
+};
+
+// ScriptStruct AIModule.EQSParametrizedQueryExecutionRequest
+struct FEQSParametrizedQueryExecutionRequest {
+	struct Unknown QueryTemplate; // 0x0 (8)
+	struct TArray<Unknown> QueryConfig; // 0x8 (16)
+	struct Unknown EQSQueryBlackboardKey; // 0x18 (40)
+	char RunMode; // 0x40 (1)
+	char bUseBBKeyForQueryTemplate : 0; // 0x44 (1)
+};
+
+// ScriptStruct AIModule.AIDynamicParam
+struct FAIDynamicParam {
+	struct FName ParamName; // 0x0 (8)
+	enum class Unknow ParamType; // 0x8 (1)
+	float Value; // 0xC (4)
+	struct Unknown BBKey; // 0x10 (40)
+};
+
+// ScriptStruct AIModule.EnvQueryResult
+struct FEnvQueryResult {
+	struct Unknown* ItemType; // 0x10 (8)
+	int32_t OptionIndex; // 0x2C (4)
+	int32_t QueryID; // 0x30 (4)
+};
+
+// ScriptStruct AIModule.EnvOverlapData
+struct FEnvOverlapData {
+	float ExtentX; // 0x0 (4)
+	float ExtentY; // 0x4 (4)
+	float ExtentZ; // 0x8 (4)
+	struct Unknown ShapeOffset; // 0xC (12)
+	char OverlapChannel; // 0x18 (1)
+	char OverlapShape; // 0x19 (1)
+	char bOnlyBlockingHits : 0; // 0x1C (1)
+	char bOverlapComplex : 0; // 0x1C (1)
+	char bSkipOverlapQuerier : 0; // 0x1C (1)
+};
+
+// ScriptStruct AIModule.EnvTraceData
+struct FEnvTraceData {
+	int32_t VersionNum; // 0x0 (4)
+	struct Unknown* NavigationFilter; // 0x8 (8)
+	float ProjectDown; // 0x10 (4)
+	float ProjectUp; // 0x14 (4)
+	float ExtentX; // 0x18 (4)
+	float ExtentY; // 0x1C (4)
+	float ExtentZ; // 0x20 (4)
+	float PostProjectionVerticalOffset; // 0x24 (4)
+	char TraceChannel; // 0x28 (1)
+	char SerializedChannel; // 0x29 (1)
+	char TraceShape; // 0x2A (1)
+	char TraceMode; // 0x2B (1)
+	char bTraceComplex : 0; // 0x2C (1)
+	char bOnlyBlockingHits : 0; // 0x2C (1)
+	char bCanTraceOnNavMesh : 0; // 0x2C (1)
+	char bCanTraceOnGeometry : 0; // 0x2C (1)
+	char bCanDisableTrace : 0; // 0x2C (1)
+	char bCanProjectDown : 0; // 0x2C (1)
+};
+
+// ScriptStruct AIModule.EnvDirection
+struct FEnvDirection {
+	struct Unknown* LineFrom; // 0x0 (8)
+	struct Unknown* LineTo; // 0x8 (8)
+	struct Unknown* Rotation; // 0x10 (8)
+	char DirMode; // 0x18 (1)
+};
+
+// ScriptStruct AIModule.EnvNamedValue
+struct FEnvNamedValue {
+	struct FName ParamName; // 0x0 (8)
+	enum class Unknow ParamType; // 0x8 (1)
+	float Value; // 0xC (4)
+};
+
+// ScriptStruct AIModule.GenericTeamId
+struct FGenericTeamId {
+	char TeamID; // 0x0 (1)
+};
+
+// ScriptStruct AIModule.PawnActionStack
+struct FPawnActionStack {
+	struct Unknown TopAction; // 0x0 (8)
+};
+
+// ScriptStruct AIModule.PawnActionEvent
+struct FPawnActionEvent {
+	struct Unknown Action; // 0x0 (8)
 };
 

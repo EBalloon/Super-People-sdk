@@ -1,5 +1,5 @@
 // WidgetBlueprintGeneratedClass UW_ReplayUserNameTooltip.UW_ReplayUserNameTooltip_C
-struct UUW_ReplayUserNameTooltip_C : UBravoHotelItemUseWidget {
+class UUW_ReplayUserNameTooltip_C : UBravoHotelItemUseWidget {
 	struct Unknown UberGraphFrame; // 0x268 (8)
 	struct Unknown BT_UserName; // 0x270 (8)
 	struct Unknown CP_Main; // 0x278 (8)

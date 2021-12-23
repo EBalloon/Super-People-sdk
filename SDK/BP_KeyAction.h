@@ -1,5 +1,5 @@
 // BlueprintGeneratedClass BP_KeyAction.BP_KeyAction_C
-struct UBP_KeyAction_C : Object {
+class UBP_KeyAction_C : Object {
 	struct FString Action; // 0x28 (16)
 	struct FString Category; // 0x38 (16)
 	struct TArray<Unknown> Key; // 0x48 (16)

@@ -1,11 +1,11 @@
 // Class LevelSequence.DefaultLevelSequenceInstanceData
-struct UDefaultLevelSequenceInstanceData : Object {
+class UDefaultLevelSequenceInstanceData : Object {
 	struct Unknown TransformOriginActor; // 0x30 (8)
 	struct Unknown TransformOrigin; // 0x40 (48)
 };
 
 // Class LevelSequence.LevelSequence
-struct ULevelSequence : UMovieSceneSequence {
+class ULevelSequence : UMovieSceneSequence {
 	struct Unknown MovieScene; // 0x348 (8)
 	struct Unknown ObjectReferences; // 0x350 (80)
 	struct Unknown BindingReferences; // 0x3A0 (160)
@@ -19,7 +19,7 @@ struct ULevelSequence : UMovieSceneSequence {
 };
 
 // Class LevelSequence.LevelSequenceBurnInOptions
-struct ULevelSequenceBurnInOptions : Object {
+class ULevelSequenceBurnInOptions : Object {
 	char bUseBurnIn : 0; // 0x28 (1)
 	struct Unknown BurnInClass; // 0x30 (24)
 	struct Unknown Settings; // 0x48 (8)
@@ -28,7 +28,7 @@ struct ULevelSequenceBurnInOptions : Object {
 };
 
 // Class LevelSequence.LevelSequenceActor
-struct ALevelSequenceActor : UActor {
+class ALevelSequenceActor : UActor {
 	struct Unknown PlaybackSettings; // 0x320 (20)
 	struct Unknown SequencePlayer; // 0x338 (8)
 	struct Unknown LevelSequence; // 0x340 (24)
@@ -38,7 +38,7 @@ struct ALevelSequenceActor : UActor {
 	struct Unknown BindingOverrides; // 0x378 (8)
 	char bAutoPlay : 0; // 0x380 (1)
 	char bOverrideInstanceData : 0; // 0x380 (1)
-	char b : 0; // 0x380 (1)
+	char bReplicatePlayback : 0; // 0x380 (1)
 	struct Unknown DefaultInstanceData; // 0x388 (8)
 	struct Unknown BurnInInstance; // 0x390 (8)
 	char bShowBurnin : 0; // 0x398 (1)
@@ -65,7 +65,7 @@ struct ALevelSequenceActor : UActor {
 };
 
 // Class LevelSequence.LevelSequenceBurnIn
-struct ULevelSequenceBurnIn : UUserWidget {
+class ULevelSequenceBurnIn : UUserWidget {
 	struct Unknown FrameInformation; // 0x248 (184)
 	struct Unknown LevelSequenceActor; // 0x300 (8)
 
@@ -74,14 +74,14 @@ struct ULevelSequenceBurnIn : UUserWidget {
 };
 
 // Class LevelSequence.LevelSequenceDirector
-struct ULevelSequenceDirector : Object {
+class ULevelSequenceDirector : Object {
 	struct Unknown Player; // 0x28 (8)
 
 	void OnCreated(); // Function LevelSequence.LevelSequenceDirector.OnCreated(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 };
 
 // Class LevelSequence.LevelSequencePlayer
-struct ULevelSequencePlayer : UMovieSceneSequencePlayer {
+class ULevelSequencePlayer : UMovieSceneSequencePlayer {
 	struct FMulticastInlineDelegate OnCameraCut; // 0x890 (16)
 
 	struct Unknown GetActiveCameraComponent(); // Function LevelSequence.LevelSequencePlayer.GetActiveCameraComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3503440>
@@ -89,7 +89,7 @@ struct ULevelSequencePlayer : UMovieSceneSequencePlayer {
 };
 
 // Class LevelSequence.LevelSequenceMediaController
-struct ALevelSequenceMediaController : UActor {
+class ALevelSequenceMediaController : UActor {
 	struct Unknown Sequence; // 0x318 (8)
 	struct Unknown MediaComponent; // 0x320 (8)
 	float ServerStartTimeSeconds; // 0x328 (4)
@@ -99,5 +99,57 @@ struct ALevelSequenceMediaController : UActor {
 	void OnRep_ServerStartTimeSeconds(); // Function LevelSequence.LevelSequenceMediaController.OnRep_ServerStartTimeSeconds(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3503570>
 	struct Unknown GetSequence(); // Function LevelSequence.LevelSequenceMediaController.GetSequence(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x35034B0>
 	struct Unknown GetMediaComponent(); // Function LevelSequence.LevelSequenceMediaController.GetMediaComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x339C3A0>
+};
+
+// ScriptStruct LevelSequence.LevelSequenceCameraSettings
+struct FLevelSequenceCameraSettings {
+	char bOverrideAspectRatioAxisConstraint : 0; // 0x0 (1)
+	char AspectRatioAxisConstraint; // 0x1 (1)
+};
+
+// ScriptStruct LevelSequence.LevelSequenceBindingReferences
+struct FLevelSequenceBindingReferences {
+	struct TMap<Unknown, Unknown>Unknown BindingIdToReferences; // 0x0 (80)
+	struct TSet<Unknown> AnimSequenceInstances; // 0x50 (80)
+};
+
+// ScriptStruct LevelSequence.LevelSequenceBindingReferenceArray
+struct FLevelSequenceBindingReferenceArray {
+	struct TArray<Unknown> References; // 0x0 (16)
+};
+
+// ScriptStruct LevelSequence.LevelSequenceBindingReference
+struct FLevelSequenceBindingReference {
+	struct FString PackageName; // 0x0 (16)
+	struct Unknown ExternalObjectPath; // 0x10 (24)
+	struct FString ObjectPath; // 0x28 (16)
+};
+
+// ScriptStruct LevelSequence.LevelSequenceObject
+struct FLevelSequenceObject {
+	Unknown ObjectOrOwner; // 0x0 (28)
+	struct FString ComponentName; // 0x20 (16)
+	struct TWeakObjectPtr<struct Unknown> CachedComponent; // 0x30 (8)
+};
+
+// ScriptStruct LevelSequence.LevelSequencePlayerSnapshot
+struct FLevelSequencePlayerSnapshot {
+	struct FString MasterName; // 0x0 (16)
+	struct Unknown MasterTime; // 0x10 (16)
+	struct Unknown SourceTime; // 0x20 (16)
+	struct FString CurrentShotName; // 0x30 (16)
+	struct Unknown CurrentShotLocalTime; // 0x40 (16)
+	struct Unknown CurrentShotSourceTime; // 0x50 (16)
+	struct FString SourceTimecode; // 0x60 (16)
+	struct TSoftObjectPtr<Unknown> CameraComponent; // 0x70 (40)
+	struct Unknown Settings; // 0x98 (12)
+	struct Unknown ActiveShot; // 0xA8 (8)
+	struct Unknown ShotID; // 0xB0 (4)
+};
+
+// ScriptStruct LevelSequence.LevelSequenceSnapshotSettings
+struct FLevelSequenceSnapshotSettings {
+	char ZeroPadAmount; // 0x0 (1)
+	struct Unknown FrameRate; // 0x4 (8)
 };
 

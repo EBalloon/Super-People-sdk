@@ -1,5 +1,5 @@
 // WidgetBlueprintGeneratedClass SettingMainWidget.SettingMainWidget_C
-struct USettingMainWidget_C : UBravoHotelSettingWidget {
+class USettingMainWidget_C : UBravoHotelSettingWidget {
 	struct Unknown UberGraphFrame; // 0x3D8 (8)
 	struct Unknown ; // 0x3E0 (8)
 	struct Unknown ; // 0x3E8 (8)
@@ -75,7 +75,7 @@ struct USettingMainWidget_C : UBravoHotelSettingWidget {
 	void Select(int32_t Index, enum class Unknow Type); // Function SettingMainWidget.SettingMainWidget_C.Select(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void Binding(); // Function SettingMainWidget.SettingMainWidget_C.Binding(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void BndEvt__Apply_K2Node_ComponentBoundEvent_0_OnClickEventDispatcher__DelegateSignature(struct Unknown Widget); // Function SettingMainWidget.SettingMainWidget_C.BndEvt__Apply_K2Node_ComponentBoundEvent_0_OnClickEventDispatcher__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
-	void a_1(struct Unknown Value); // Function SettingMainWidget.SettingMainWidget_C.a_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void m_1(struct Unknown Value); // Function SettingMainWidget.SettingMainWidget_C.m_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void BndEvt__Default_K2Node_ComponentBoundEvent_1_OnClickEventDispatcher__DelegateSignature(struct Unknown Widget); // Function SettingMainWidget.SettingMainWidget_C.BndEvt__Default_K2Node_ComponentBoundEvent_1_OnClickEventDispatcher__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void BndEvt__GoBack_K2Node_ComponentBoundEvent_2_OnClickEventDispatcher__DelegateSignature(struct Unknown Widget); // Function SettingMainWidget.SettingMainWidget_C.BndEvt__GoBack_K2Node_ComponentBoundEvent_2_OnClickEventDispatcher__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void RefreshDeve(); // Function SettingMainWidget.SettingMainWidget_C.RefreshDeve(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
@@ -86,9 +86,9 @@ struct USettingMainWidget_C : UBravoHotelSettingWidget {
 	void CreateConfirmWidget(int32_t TabIdx, enum class Unknow SelectTabType, int32_t PopupType); // Function SettingMainWidget.SettingMainWidget_C.CreateConfirmWidget(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void ApplyImpl(char UseConfimPopup); // Function SettingMainWidget.SettingMainWidget_C.ApplyImpl(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void Set(struct Unknown Slot); // Function SettingMainWidget.SettingMainWidget_C.Set(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
-	void a_1(struct Unknown Value, char IsSubKey); // Function SettingMainWidget.SettingMainWidget_C.a_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void m_1(struct Unknown Value, char IsSubKey); // Function SettingMainWidget.SettingMainWidget_C.m_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void KeyNotiMessage(char IsDuplicate, struct Unknown Key, struct FText KeyName); // Function SettingMainWidget.SettingMainWidget_C.KeyNotiMessage(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
-	void a_2(); // Function SettingMainWidget.SettingMainWidget_C.a_2(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void m_2(); // Function SettingMainWidget.SettingMainWidget_C.m_2(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void Update(int32_t LanguageIndex); // Function SettingMainWidget.SettingMainWidget_C.Update(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void UpdateVideoMemoryUsageGraph(int32_t UsedVideoMemory, int32_t TotalVideoMemory, int32_t CurrentProcessUsage, int32_t OtherProcessUsage); // Function SettingMainWidget.SettingMainWidget_C.UpdateVideoMemoryUsageGraph(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void ExecuteUbergraph_SettingMainWidget(int32_t EntryPoint); // Function SettingMainWidget.SettingMainWidget_C.ExecuteUbergraph_SettingMainWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>

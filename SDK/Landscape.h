@@ -113,17 +113,17 @@ enum class ETerrainCoordMappingType : uint8 {
 };
 
 // Class Landscape.ControlPointMeshActor
-struct AControlPointMeshActor : UActor {
+class AControlPointMeshActor : UActor {
 	struct Unknown ControlPointMeshComponent; // 0x310 (8)
 };
 
 // Class Landscape.ControlPointMeshComponent
-struct UControlPointMeshComponent : UStaticMeshComponent {
+class UControlPointMeshComponent : UStaticMeshComponent {
 	float VirtualTextureMainPassMaxDrawDistance; // 0x550 (4)
 };
 
 // Class Landscape.LandscapeProxy
-struct ALandscapeProxy : UActor {
+class ALandscapeProxy : UActor {
 	struct Unknown SplineComponent; // 0x310 (8)
 	struct Unknown LandscapeGuid; // 0x318 (16)
 	struct Unknown LandscapeSectionOffset; // 0x338 (8)
@@ -163,7 +163,7 @@ struct ALandscapeProxy : UActor {
 	char bAffectDistanceFieldLighting : 0; // 0x490 (1)
 	struct Unknown LightingChannels; // 0x491 (1)
 	char bUseMaterialPositionOffsetInStaticLighting : 0; // 0x494 (1)
-	char b : 0; // 0x494 (1)
+	char bRenderCustomDepth : 0; // 0x494 (1)
 	int32_t CustomDepthStencilValue; // 0x498 (4)
 	float LDMaxDrawDistance; // 0x49C (4)
 	struct Unknown LightmassSettings; // 0x4A0 (24)
@@ -188,7 +188,7 @@ struct ALandscapeProxy : UActor {
 	void SetLandscapeMaterialTextureParameterValue(struct FName ParameterName, struct Unknown Value); // Function Landscape.LandscapeProxy.SetLandscapeMaterialTextureParameterValue(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x315C7B0>
 	void SetLandscapeMaterialScalarParameterValue(struct FName ParameterName, float Value); // Function Landscape.LandscapeProxy.SetLandscapeMaterialScalarParameterValue(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x315C6E0>
 	void EditorSetLandscapeMaterial(struct Unknown NewLandscapeMaterial); // Function Landscape.LandscapeProxy.EditorSetLandscapeMaterial(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16B4710>
-	void EditorApplySpline(struct Unknown InSplineComponent, float StartWidth, float EndWidth, float StartSideFalloff, float EndSideFalloff, float StartRoll, float EndRoll, int32_t NumSubdivisions, char b, char bLowerHeights, struct Unknown PaintLayer); // Function Landscape.LandscapeProxy.EditorApplySpline(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x315C3A0>
+	void EditorApplySpline(struct Unknown InSplineComponent, float StartWidth, float EndWidth, float StartSideFalloff, float EndSideFalloff, float StartRoll, float EndRoll, int32_t NumSubdivisions, char bRaiseHeights, char bLowerHeights, struct Unknown PaintLayer); // Function Landscape.LandscapeProxy.EditorApplySpline(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x315C3A0>
 	void ChangeUseTessellationComponentScreenSizeFalloff(char InComponentScreenSizeToUseSubSections); // Function Landscape.LandscapeProxy.ChangeUseTessellationComponentScreenSizeFalloff(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x315C310>
 	void ChangeTessellationComponentScreenSizeFalloff(float InUseTessellationComponentScreenSizeFalloff); // Function Landscape.LandscapeProxy.ChangeTessellationComponentScreenSizeFalloff(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F1C190>
 	void ChangeTessellationComponentScreenSize(float InTessellationComponentScreenSize); // Function Landscape.LandscapeProxy.ChangeTessellationComponentScreenSize(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x315C290>
@@ -197,7 +197,7 @@ struct ALandscapeProxy : UActor {
 };
 
 // Class Landscape.LandscapeComponent
-struct ULandscapeComponent : UPrimitiveComponent {
+class ULandscapeComponent : UPrimitiveComponent {
 	int32_t SectionBaseX; // 0x4B8 (4)
 	int32_t SectionBaseY; // 0x4BC (4)
 	int32_t ComponentSizeQuads; // 0x4C0 (4)
@@ -242,7 +242,7 @@ struct ULandscapeComponent : UPrimitiveComponent {
 };
 
 // Class Landscape.LandscapeGrassType
-struct ULandscapeGrassType : Object {
+class ULandscapeGrassType : Object {
 	struct TArray<Unknown> GrassVarieties; // 0x28 (16)
 	char bEnableDensityScaling : 0; // 0x38 (1)
 	struct Unknown GrassMesh; // 0x40 (8)
@@ -255,7 +255,7 @@ struct ULandscapeGrassType : Object {
 };
 
 // Class Landscape.LandscapeHeightfieldCollisionComponent
-struct ULandscapeHeightfieldCollisionComponent : UPrimitiveComponent {
+class ULandscapeHeightfieldCollisionComponent : UPrimitiveComponent {
 	struct TArray<Unknown> ComponentLayerInfos; // 0x4B8 (16)
 	int32_t SectionBaseX; // 0x4C8 (4)
 	int32_t SectionBaseY; // 0x4CC (4)
@@ -272,7 +272,7 @@ struct ULandscapeHeightfieldCollisionComponent : UPrimitiveComponent {
 };
 
 // Class Landscape.LandscapeInfo
-struct ULandscapeInfo : Object {
+class ULandscapeInfo : Object {
 	Unknown LandscapeActor; // 0x28 (28)
 	struct Unknown LandscapeGuid; // 0x44 (16)
 	int32_t ComponentSizeQuads; // 0x54 (4)
@@ -283,7 +283,7 @@ struct ULandscapeInfo : Object {
 };
 
 // Class Landscape.LandscapeLayerInfoObject
-struct ULandscapeLayerInfoObject : Object {
+class ULandscapeLayerInfoObject : Object {
 	struct FName LayerName; // 0x28 (8)
 	struct Unknown PhysMaterial; // 0x30 (8)
 	float Hardness; // 0x38 (4)
@@ -291,7 +291,7 @@ struct ULandscapeLayerInfoObject : Object {
 };
 
 // Class Landscape.LandscapeMaterialInstanceConstant
-struct ULandscapeMaterialInstanceConstant : UMaterialInstanceConstant {
+class ULandscapeMaterialInstanceConstant : UMaterialInstanceConstant {
 	struct TArray<Unknown> TextureStreamingInfo; // 0x410 (16)
 	char bIsLayerThumbnail : 0; // 0x420 (1)
 	char bDisableTessellation : 0; // 0x420 (1)
@@ -300,29 +300,29 @@ struct ULandscapeMaterialInstanceConstant : UMaterialInstanceConstant {
 };
 
 // Class Landscape.LandscapeMeshCollisionComponent
-struct ULandscapeMeshCollisionComponent : ULandscapeHeightfieldCollisionComponent {
+class ULandscapeMeshCollisionComponent : ULandscapeHeightfieldCollisionComponent {
 	struct Unknown MeshGuid; // 0x598 (16)
 };
 
 // Class Landscape.LandscapeMeshProxyActor
-struct ALandscapeMeshProxyActor : UActor {
+class ALandscapeMeshProxyActor : UActor {
 	struct Unknown LandscapeMeshProxyComponent; // 0x310 (8)
 };
 
 // Class Landscape.LandscapeMeshProxyComponent
-struct ULandscapeMeshProxyComponent : UStaticMeshComponent {
+class ULandscapeMeshProxyComponent : UStaticMeshComponent {
 	struct Unknown LandscapeGuid; // 0x550 (16)
 	struct TArray<Unknown> ProxyComponentBases; // 0x560 (16)
 	int8_t ProxyLOD; // 0x570 (1)
 };
 
 // Class Landscape.LandscapeSettings
-struct ULandscapeSettings : UDeveloperSettings {
+class ULandscapeSettings : UDeveloperSettings {
 	int32_t MaxNumberOfLayers; // 0x38 (4)
 };
 
 // Class Landscape.LandscapeSplinesComponent
-struct ULandscapeSplinesComponent : UPrimitiveComponent {
+class ULandscapeSplinesComponent : UPrimitiveComponent {
 	struct TArray<Unknown> ControlPoints; // 0x4B8 (16)
 	struct TArray<Unknown> Segments; // 0x4C8 (16)
 	struct TArray<Unknown> CookedForeignMeshComponents; // 0x4D8 (16)
@@ -331,7 +331,7 @@ struct ULandscapeSplinesComponent : UPrimitiveComponent {
 };
 
 // Class Landscape.LandscapeSplineControlPoint
-struct ULandscapeSplineControlPoint : Object {
+class ULandscapeSplineControlPoint : Object {
 	struct Unknown Location; // 0x28 (12)
 	struct Unknown Rotation; // 0x34 (12)
 	float Width; // 0x40 (4)
@@ -349,7 +349,7 @@ struct ULandscapeSplineControlPoint : Object {
 };
 
 // Class Landscape.LandscapeSplineSegment
-struct ULandscapeSplineSegment : Object {
+class ULandscapeSplineSegment : Object {
 	struct Unknown Connections[0x2]; // 0x28 (48)
 	struct Unknown SplineInfo; // 0x58 (24)
 	struct TArray<Unknown> Points; // 0x70 (16)
@@ -358,29 +358,29 @@ struct ULandscapeSplineSegment : Object {
 };
 
 // Class Landscape.LandscapeStreamingProxy
-struct ALandscapeStreamingProxy : ALandscapeProxy {
+class ALandscapeStreamingProxy : ALandscapeProxy {
 	Unknown LandscapeActor; // 0x6C0 (28)
 };
 
 // Class Landscape.LandscapeWeightmapUsage
-struct ULandscapeWeightmapUsage : Object {
+class ULandscapeWeightmapUsage : Object {
 	struct Unknown ChannelUsage[0x4]; // 0x28 (32)
 	struct Unknown LayerGuid; // 0x48 (16)
 };
 
 // Class Landscape.MaterialExpressionLandscapeGrassOutput
-struct UMaterialExpressionLandscapeGrassOutput : UMaterialExpressionCustomOutput {
+class UMaterialExpressionLandscapeGrassOutput : UMaterialExpressionCustomOutput {
 	struct TArray<Unknown> GrassTypes; // 0x40 (16)
 };
 
 // Class Landscape.MaterialExpressionLandscapeLayerBlend
-struct UMaterialExpressionLandscapeLayerBlend : UMaterialExpression {
+class UMaterialExpressionLandscapeLayerBlend : UMaterialExpression {
 	struct TArray<Unknown> Layers; // 0x40 (16)
 	struct Unknown ExpressionGUID; // 0x50 (16)
 };
 
 // Class Landscape.MaterialExpressionLandscapeLayerCoords
-struct UMaterialExpressionLandscapeLayerCoords : UMaterialExpression {
+class UMaterialExpressionLandscapeLayerCoords : UMaterialExpression {
 	char MappingType; // 0x40 (1)
 	char CustomUVType; // 0x41 (1)
 	float MappingScale; // 0x44 (4)
@@ -390,14 +390,14 @@ struct UMaterialExpressionLandscapeLayerCoords : UMaterialExpression {
 };
 
 // Class Landscape.MaterialExpressionLandscapeLayerSample
-struct UMaterialExpressionLandscapeLayerSample : UMaterialExpression {
+class UMaterialExpressionLandscapeLayerSample : UMaterialExpression {
 	struct FName ParameterName; // 0x40 (8)
 	float PreviewWeight; // 0x48 (4)
 	struct Unknown ExpressionGUID; // 0x4C (16)
 };
 
 // Class Landscape.MaterialExpressionLandscapeLayerSwitch
-struct UMaterialExpressionLandscapeLayerSwitch : UMaterialExpression {
+class UMaterialExpressionLandscapeLayerSwitch : UMaterialExpression {
 	struct Unknown LayerUsed; // 0x40 (12)
 	struct Unknown LayerNotUsed; // 0x54 (12)
 	struct FName ParameterName; // 0x68 (8)
@@ -406,7 +406,7 @@ struct UMaterialExpressionLandscapeLayerSwitch : UMaterialExpression {
 };
 
 // Class Landscape.MaterialExpressionLandscapeLayerWeight
-struct UMaterialExpressionLandscapeLayerWeight : UMaterialExpression {
+class UMaterialExpressionLandscapeLayerWeight : UMaterialExpression {
 	struct Unknown Base; // 0x40 (12)
 	struct Unknown Layer; // 0x54 (12)
 	struct FName ParameterName; // 0x68 (8)
@@ -416,7 +416,169 @@ struct UMaterialExpressionLandscapeLayerWeight : UMaterialExpression {
 };
 
 // Class Landscape.MaterialExpressionLandscapeVisibilityMask
-struct UMaterialExpressionLandscapeVisibilityMask : UMaterialExpression {
+class UMaterialExpressionLandscapeVisibilityMask : UMaterialExpression {
 	struct Unknown ExpressionGUID; // 0x40 (16)
+};
+
+// ScriptStruct Landscape.LandscapeLayer
+struct FLandscapeLayer {
+	struct Unknown Guid; // 0x0 (16)
+	struct FName Name; // 0x10 (8)
+	char bVisible : 0; // 0x18 (1)
+	char bLocked : 0; // 0x19 (1)
+	float HeightmapAlpha; // 0x1C (4)
+	float WeightmapAlpha; // 0x20 (4)
+	char BlendMode; // 0x24 (1)
+	struct TArray<Unknown> Brushes; // 0x28 (16)
+	struct TMap<Unknown, Unknown>Unknown WeightmapLayerAllocationBlend; // 0x38 (80)
+};
+
+// ScriptStruct Landscape.LandscapeLayerComponentData
+struct FLandscapeLayerComponentData {
+	struct Unknown HeightmapData; // 0x0 (8)
+	struct Unknown WeightmapData; // 0x8 (48)
+};
+
+// ScriptStruct Landscape.WeightmapData
+struct FWeightmapData {
+	struct TArray<Unknown> Textures; // 0x0 (16)
+	struct TArray<Unknown> LayerAllocations; // 0x10 (16)
+	struct TArray<Unknown> TextureUsages; // 0x20 (16)
+};
+
+// ScriptStruct Landscape.WeightmapLayerAllocationInfo
+struct FWeightmapLayerAllocationInfo {
+	struct Unknown LayerInfo; // 0x0 (8)
+	char WeightmapTextureIndex; // 0x8 (1)
+	char WeightmapTextureChannel; // 0x9 (1)
+};
+
+// ScriptStruct Landscape.HeightmapData
+struct FHeightmapData {
+	struct Unknown Texture; // 0x0 (8)
+};
+
+// ScriptStruct Landscape.LandscapeComponentMaterialOverride
+struct FLandscapeComponentMaterialOverride {
+	struct Unknown LODIndex; // 0x0 (4)
+	struct Unknown Material; // 0x8 (8)
+};
+
+// ScriptStruct Landscape.LandscapeEditToolRenderData
+struct FLandscapeEditToolRenderData {
+	struct Unknown ToolMaterial; // 0x0 (8)
+	struct Unknown GizmoMaterial; // 0x8 (8)
+	int32_t SelectedType; // 0x10 (4)
+	int32_t DebugChannelR; // 0x14 (4)
+	int32_t DebugChannelG; // 0x18 (4)
+	int32_t DebugChannelB; // 0x1C (4)
+	struct Unknown DataTexture; // 0x20 (8)
+	struct Unknown LayerContributionTexture; // 0x28 (8)
+	struct Unknown DirtyTexture; // 0x30 (8)
+};
+
+// ScriptStruct Landscape.GrassVariety
+struct FGrassVariety {
+	struct Unknown GrassMesh; // 0x0 (8)
+	struct Unknown GrassDensity; // 0x8 (4)
+	char bUseGrid : 0; // 0xC (1)
+	float PlacementJitter; // 0x10 (4)
+	enum class Unknow CullDistancePreset; // 0x14 (1)
+	char bOverrideCullDistance : 0; // 0x15 (1)
+	struct Unknown StartCullDistance; // 0x18 (4)
+	struct Unknown EndCullDistance; // 0x1C (4)
+	int32_t MinLOD; // 0x20 (4)
+	enum class Unknow Scaling; // 0x24 (1)
+	struct Unknown ScaleX; // 0x28 (8)
+	struct Unknown ScaleY; // 0x30 (8)
+	struct Unknown ScaleZ; // 0x38 (8)
+	char RandomRotation : 0; // 0x40 (1)
+	char AlignToSurface : 0; // 0x41 (1)
+	char bUseLandscapeLightmap : 0; // 0x42 (1)
+	struct Unknown LightingChannels; // 0x43 (1)
+	char bReceivesDecals : 0; // 0x44 (1)
+	char bCastDynamicShadow : 0; // 0x45 (1)
+	char bKeepInstanceBufferCPUCopy : 0; // 0x46 (1)
+};
+
+// ScriptStruct Landscape.LandscapeInfoLayerSettings
+struct FLandscapeInfoLayerSettings {
+	struct Unknown LayerInfoObj; // 0x0 (8)
+	struct FName LayerName; // 0x8 (8)
+};
+
+// ScriptStruct Landscape.LandscapeMaterialTextureStreamingInfo
+struct FLandscapeMaterialTextureStreamingInfo {
+	struct FName TextureName; // 0x0 (8)
+	float TexelFactor; // 0x8 (4)
+};
+
+// ScriptStruct Landscape.LandscapeProxyMaterialOverride
+struct FLandscapeProxyMaterialOverride {
+	struct Unknown LODIndex; // 0x0 (4)
+	struct Unknown Material; // 0x8 (8)
+};
+
+// ScriptStruct Landscape.LandscapeLayerStruct
+struct FLandscapeLayerStruct {
+	struct Unknown LayerInfoObj; // 0x0 (8)
+};
+
+// ScriptStruct Landscape.LandscapeSplineConnection
+struct FLandscapeSplineConnection {
+	struct Unknown Segment; // 0x0 (8)
+	char End : 0; // 0x8 (1)
+};
+
+// ScriptStruct Landscape.LandscapeSplineMeshEntry
+struct FLandscapeSplineMeshEntry {
+	struct Unknown Mesh; // 0x0 (8)
+	struct TArray<Unknown> MaterialOverrides; // 0x8 (16)
+	char bCenterH : 0; // 0x18 (1)
+	struct Unknown CenterAdjust; // 0x1C (8)
+	char bScaleToWidth : 0; // 0x24 (1)
+	struct Unknown Scale; // 0x28 (12)
+	char Orientation; // 0x34 (1)
+	char ForwardAxis; // 0x35 (1)
+	char UpAxis; // 0x36 (1)
+};
+
+// ScriptStruct Landscape.LandscapeSplineSegmentConnection
+struct FLandscapeSplineSegmentConnection {
+	struct Unknown ControlPoint; // 0x0 (8)
+	float TangentLen; // 0x8 (4)
+	struct FName SocketName; // 0xC (8)
+};
+
+// ScriptStruct Landscape.LandscapeSplineInterpPoint
+struct FLandscapeSplineInterpPoint {
+	struct Unknown Center; // 0x0 (12)
+	struct Unknown Left; // 0xC (12)
+	struct Unknown Right; // 0x18 (12)
+	struct Unknown FalloffLeft; // 0x24 (12)
+	struct Unknown FalloffRight; // 0x30 (12)
+	struct Unknown LayerLeft; // 0x3C (12)
+	struct Unknown LayerRight; // 0x48 (12)
+	struct Unknown LayerFalloffLeft; // 0x54 (12)
+	struct Unknown LayerFalloffRight; // 0x60 (12)
+	float StartEndFalloff; // 0x6C (4)
+};
+
+// ScriptStruct Landscape.GrassInput
+struct FGrassInput {
+	struct FName Name; // 0x0 (8)
+	struct Unknown GrassType; // 0x8 (8)
+	struct Unknown Input; // 0x10 (12)
+};
+
+// ScriptStruct Landscape.LayerBlendInput
+struct FLayerBlendInput {
+	struct FName LayerName; // 0x0 (8)
+	char BlendType; // 0x8 (1)
+	struct Unknown LayerInput; // 0xC (12)
+	struct Unknown HeightInput; // 0x20 (12)
+	float PreviewWeight; // 0x34 (4)
+	struct Unknown ConstLayerInput; // 0x38 (12)
+	float ConstHeightInput; // 0x44 (4)
 };
 

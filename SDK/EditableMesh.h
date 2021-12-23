@@ -51,14 +51,14 @@ enum class EMeshModificationType : uint8 {
 };
 
 // Class EditableMesh.EditableGeometryCollectionAdapter
-struct UEditableGeometryCollectionAdapter : UEditableMeshAdapter {
+class UEditableGeometryCollectionAdapter : UEditableMeshAdapter {
 	struct Unknown GeometryCollection; // 0x28 (8)
 	struct Unknown OriginalGeometryCollection; // 0x30 (8)
 	int32_t GeometryCollectionLODIndex; // 0x38 (4)
 };
 
 // Class EditableMesh.EditableMesh
-struct UEditableMesh : Object {
+class UEditableMesh : Object {
 	struct TArray<Unknown> Adapters; // 0x3B8 (16)
 	int32_t TextureCoordinateCount; // 0x3D0 (4)
 	int32_t PendingCompactCounter; // 0x51C (4)
@@ -161,7 +161,7 @@ struct UEditableMesh : Object {
 	void GeneratePolygonTangentsAndNormals(struct TArray<Unknown>& PolygonIDs); // Function EditableMesh.EditableMesh.GeneratePolygonTangentsAndNormals(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x176C830>
 	void FlipPolygons(struct TArray<Unknown>& PolygonIDs); // Function EditableMesh.EditableMesh.FlipPolygons(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x176C780>
 	int32_t FindPolygonPerimeterVertexNumberForVertex(struct Unknown PolygonID, struct Unknown VertexID); // Function EditableMesh.EditableMesh.FindPolygonPerimeterVertexNumberForVertex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x176C6B0>
-	int32_t FindPolygonPerimeterEdgeNumberForVertices(struct Unknown PolygonID, struct Unknown EdgeVertexID0, struct Unknown EdgeVertexID1); // Function EditableMesh.EditableMesh.FindPolygonPerimeterEdgeNumberForVertices(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x176C5A0>
+	int32_t FindPolygonPerimeterEdgeNumberForVertic(struct Unknown PolygonID, struct Unknown EdgeVertexID0, struct Unknown EdgeVertexID1); // Function EditableMesh.EditableMesh.FindPolygonPerimeterEdgeNumberForVertic(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x176C5A0>
 	void FindPolygonLoop(struct Unknown EdgeID, struct TArray<Unknown>& OutEdgeLoopEdgeIDs, struct TArray<Unknown>& OutFlippedEdgeIDs, struct TArray<Unknown>& OutReversedEdgeIDPathToTake, struct TArray<Unknown>& OutPolygonIDsToSplit); // Function EditableMesh.EditableMesh.FindPolygonLoop(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x176C380>
 	void ExtrudePolygons(struct TArray<Unknown>& Polygons, float ExtrudeDistance, char bKeepNeighborsTogether, struct TArray<Unknown>& OutNewExtrudedFrontPolygons); // Function EditableMesh.EditableMesh.ExtrudePolygons(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x176C1C0>
 	void ExtendVertices(struct TArray<Unknown>& VertexIDs, char bOnlyExtendClosestEdge, struct Unknown ReferencePosition, struct TArray<Unknown>& OutNewExtendedVertexIDs); // Function EditableMesh.EditableMesh.ExtendVertices(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x176C010>
@@ -196,9 +196,198 @@ struct UEditableMesh : Object {
 };
 
 // Class EditableMesh.EditableStaticMeshAdapter
-struct UEditableStaticMeshAdapter : UEditableMeshAdapter {
+class UEditableStaticMeshAdapter : UEditableMeshAdapter {
 	struct Unknown StaticMesh; // 0x28 (8)
 	struct Unknown OriginalStaticMesh; // 0x30 (8)
 	int32_t StaticMeshLODIndex; // 0x38 (4)
+};
+
+// ScriptStruct EditableMesh.AdaptorPolygon2Group
+struct FAdaptorPolygon2Group {
+	uint32_t RenderingSectionIndex; // 0x0 (4)
+	int32_t MaterialIndex; // 0x4 (4)
+	int32_t MaxTriangles; // 0x8 (4)
+};
+
+// ScriptStruct EditableMesh.AdaptorPolygon
+struct FAdaptorPolygon {
+	struct Unknown PolygonGroupID; // 0x0 (4)
+	struct TArray<Unknown> TriangulatedPolygonTriangleIndices; // 0x8 (16)
+};
+
+// ScriptStruct EditableMesh.PolygonGroupForPolygon
+struct FPolygonGroupForPolygon {
+	struct Unknown PolygonID; // 0x0 (4)
+	struct Unknown PolygonGroupID; // 0x4 (4)
+};
+
+// ScriptStruct EditableMesh.PolygonGroupToCreate
+struct FPolygonGroupToCreate {
+	struct Unknown PolygonGroupAttributes; // 0x0 (16)
+	struct Unknown OriginalPolygonGroupID; // 0x10 (4)
+};
+
+// ScriptStruct EditableMesh.MeshElementAttributeList
+struct FMeshElementAttributeList {
+	struct TArray<Unknown> Attributes; // 0x0 (16)
+};
+
+// ScriptStruct EditableMesh.MeshElementAttributeData
+struct FMeshElementAttributeData {
+	struct FName AttributeName; // 0x0 (8)
+	int32_t AttributeIndex; // 0x8 (4)
+	struct Unknown AttributeValue; // 0x10 (80)
+};
+
+// ScriptStruct EditableMesh.VertexToMove
+struct FVertexToMove {
+	struct Unknown VertexID; // 0x0 (4)
+	struct Unknown NewVertexPosition; // 0x4 (12)
+};
+
+// ScriptStruct EditableMesh.ChangeVertexInstancesForPolygon
+struct FChangeVertexInstancesForPolygon {
+	struct Unknown PolygonID; // 0x0 (4)
+	struct TArray<Unknown> PerimeterVertexIndicesAndInstanceIDs; // 0x8 (16)
+	struct TArray<Unknown> VertexIndicesAndInstanceIDsForEachHole; // 0x18 (16)
+};
+
+// ScriptStruct EditableMesh.VertexInstancesForPolygonHole
+struct FVertexInstancesForPolygonHole {
+	struct TArray<Unknown> VertexIndicesAndInstanceIDs; // 0x0 (16)
+};
+
+// ScriptStruct EditableMesh.VertexIndexAndInstanceID
+struct FVertexIndexAndInstanceID {
+	int32_t ContourIndex; // 0x0 (4)
+	struct Unknown VertexInstanceID; // 0x4 (4)
+};
+
+// ScriptStruct EditableMesh.VertexAttributesForPolygon
+struct FVertexAttributesForPolygon {
+	struct Unknown PolygonID; // 0x0 (4)
+	struct TArray<Unknown> PerimeterVertexAttributeLists; // 0x8 (16)
+	struct TArray<Unknown> VertexAttributeListsForEachHole; // 0x18 (16)
+};
+
+// ScriptStruct EditableMesh.VertexAttributesForPolygonHole
+struct FVertexAttributesForPolygonHole {
+	struct TArray<Unknown> VertexAttributeList; // 0x0 (16)
+};
+
+// ScriptStruct EditableMesh.AttributesForEdge
+struct FAttributesForEdge {
+	struct Unknown EdgeID; // 0x0 (4)
+	struct Unknown EdgeAttributes; // 0x8 (16)
+};
+
+// ScriptStruct EditableMesh.AttributesForVertexInstance
+struct FAttributesForVertexInstance {
+	struct Unknown VertexInstanceID; // 0x0 (4)
+	struct Unknown VertexInstanceAttributes; // 0x8 (16)
+};
+
+// ScriptStruct EditableMesh.AttributesForVertex
+struct FAttributesForVertex {
+	struct Unknown VertexID; // 0x0 (4)
+	struct Unknown VertexAttributes; // 0x8 (16)
+};
+
+// ScriptStruct EditableMesh.PolygonToSplit
+struct FPolygonToSplit {
+	struct Unknown PolygonID; // 0x0 (4)
+	struct TArray<Unknown> VertexPairsToSplitAt; // 0x8 (16)
+};
+
+// ScriptStruct EditableMesh.VertexPair
+struct FVertexPair {
+	struct Unknown VertexID0; // 0x0 (4)
+	struct Unknown VertexID1; // 0x4 (4)
+};
+
+// ScriptStruct EditableMesh.PolygonToCreate
+struct FPolygonToCreate {
+	struct Unknown PolygonGroupID; // 0x0 (4)
+	struct TArray<Unknown> PerimeterVertices; // 0x8 (16)
+	struct Unknown OriginalPolygonID; // 0x18 (4)
+	enum class Unknow PolygonEdgeHardness; // 0x1C (1)
+};
+
+// ScriptStruct EditableMesh.VertexAndAttributes
+struct FVertexAndAttributes {
+	struct Unknown VertexInstanceID; // 0x0 (4)
+	struct Unknown VertexID; // 0x4 (4)
+	struct Unknown PolygonVertexAttributes; // 0x8 (16)
+};
+
+// ScriptStruct EditableMesh.EdgeToCreate
+struct FEdgeToCreate {
+	struct Unknown VertexID0; // 0x0 (4)
+	struct Unknown VertexID1; // 0x4 (4)
+	struct Unknown EdgeAttributes; // 0x8 (16)
+	struct Unknown OriginalEdgeID; // 0x18 (4)
+};
+
+// ScriptStruct EditableMesh.VertexInstanceToCreate
+struct FVertexInstanceToCreate {
+	struct Unknown VertexID; // 0x0 (4)
+	struct Unknown VertexInstanceAttributes; // 0x8 (16)
+	struct Unknown OriginalVertexInstanceID; // 0x18 (4)
+};
+
+// ScriptStruct EditableMesh.VertexToCreate
+struct FVertexToCreate {
+	struct Unknown VertexAttributes; // 0x0 (16)
+	struct Unknown OriginalVertexID; // 0x10 (4)
+};
+
+// ScriptStruct EditableMesh.SubdivisionLimitData
+struct FSubdivisionLimitData {
+	struct TArray<Unknown> VertexPositions; // 0x0 (16)
+	struct TArray<Unknown> Sections; // 0x10 (16)
+	struct TArray<Unknown> SubdividedWireEdges; // 0x20 (16)
+};
+
+// ScriptStruct EditableMesh.SubdividedWireEdge
+struct FSubdividedWireEdge {
+	int32_t EdgeVertex0PositionIndex; // 0x0 (4)
+	int32_t EdgeVertex1PositionIndex; // 0x4 (4)
+};
+
+// ScriptStruct EditableMesh.SubdivisionLimitSection
+struct FSubdivisionLimitSection {
+	struct TArray<Unknown> SubdividedQuads; // 0x0 (16)
+};
+
+// ScriptStruct EditableMesh.SubdividedQuad
+struct FSubdividedQuad {
+	struct Unknown QuadVertex0; // 0x0 (52)
+	struct Unknown QuadVertex1; // 0x34 (52)
+	struct Unknown QuadVertex2; // 0x68 (52)
+	struct Unknown QuadVertex3; // 0x9C (52)
+};
+
+// ScriptStruct EditableMesh.SubdividedQuadVertex
+struct FSubdividedQuadVertex {
+	int32_t VertexPositionIndex; // 0x0 (4)
+	struct Unknown TextureCoordinate0; // 0x4 (8)
+	struct Unknown TextureCoordinate1; // 0xC (8)
+	struct Unknown VertexColor; // 0x14 (4)
+	struct Unknown VertexNormal; // 0x18 (12)
+	struct Unknown VertexTangent; // 0x24 (12)
+	float VertexBinormalSign; // 0x30 (4)
+};
+
+// ScriptStruct EditableMesh.RenderingPolygonGroup
+struct FRenderingPolygonGroup {
+	uint32_t RenderingSectionIndex; // 0x0 (4)
+	int32_t MaterialIndex; // 0x4 (4)
+	int32_t MaxTriangles; // 0x8 (4)
+};
+
+// ScriptStruct EditableMesh.RenderingPolygon
+struct FRenderingPolygon {
+	struct Unknown PolygonGroupID; // 0x0 (4)
+	struct TArray<Unknown> TriangulatedPolygonTriangleIndices; // 0x8 (16)
 };
 

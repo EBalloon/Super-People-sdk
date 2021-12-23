@@ -1,5 +1,5 @@
 // BlueprintGeneratedClass BP_SPS_WidgetActor.BP_SPS_WidgetActor_C
-struct ABP_SPS_WidgetActor_C : ABravoHotelSmartPingActor {
+class ABP_SPS_WidgetActor_C : ABravoHotelSmartPingActor {
 	struct Unknown UberGraphFrame; // 0x5B8 (8)
 	struct Unknown Widget_Screen; // 0x5C0 (8)
 	struct Unknown Widget_World; // 0x5C8 (8)
@@ -20,7 +20,7 @@ struct ABP_SPS_WidgetActor_C : ABravoHotelSmartPingActor {
 
 	void GetTeamColor(int32_t TeamIndex, struct Unknown& OutColor); // Function BP_SPS_WidgetActor.BP_SPS_WidgetActor_C.GetTeamColor(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	struct Unknown CreateLocationActor(struct Unknown& SpawnLocation); // Function BP_SPS_WidgetActor.BP_SPS_WidgetActor_C.CreateLocationActor(Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
-	void GetEnableShow(char IsPersonalBox, char& b); // Function BP_SPS_WidgetActor.BP_SPS_WidgetActor_C.GetEnableShow(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void GetEnableShow(char IsPersonalBox, char& bRet); // Function BP_SPS_WidgetActor.BP_SPS_WidgetActor_C.GetEnableShow(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void GetDurationFrompingType(enum class Unknow PingType, float& Time); // Function BP_SPS_WidgetActor.BP_SPS_WidgetActor_C.GetDurationFrompingType(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void ReceiveBeginPlay(); // Function BP_SPS_WidgetActor.BP_SPS_WidgetActor_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void Deactivate(char Force); // Function BP_SPS_WidgetActor.BP_SPS_WidgetActor_C.Deactivate(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>

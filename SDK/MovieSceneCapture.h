@@ -19,7 +19,7 @@ enum class EMovieSceneCaptureProtocolState : uint8 {
 };
 
 // Class MovieSceneCapture.MovieSceneCaptureProtocolBase
-struct UMovieSceneCaptureProtocolBase : Object {
+class UMovieSceneCaptureProtocolBase : Object {
 	enum class Unknow State; // 0x50 (1)
 
 	char IsCapturing(); // Function MovieSceneCapture.MovieSceneCaptureProtocolBase.IsCapturing(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x35174C0>
@@ -27,12 +27,12 @@ struct UMovieSceneCaptureProtocolBase : Object {
 };
 
 // Class MovieSceneCapture.MasterAudioSubmixCaptureProtocol
-struct UMasterAudioSubmixCaptureProtocol : UMovieSceneAudioCaptureProtocolBase {
+class UMasterAudioSubmixCaptureProtocol : UMovieSceneAudioCaptureProtocolBase {
 	struct FString Filename; // 0x58 (16)
 };
 
 // Class MovieSceneCapture.CompositionGraphCaptureProtocol
-struct UCompositionGraphCaptureProtocol : UMovieSceneImageCaptureProtocolBase {
+class UCompositionGraphCaptureProtocol : UMovieSceneImageCaptureProtocolBase {
 	struct Unknown IncludeRenderPasses; // 0x58 (16)
 	char bCaptureFramesInHDR : 0; // 0x68 (1)
 	int32_t HDRCompressionQuality; // 0x6C (4)
@@ -43,18 +43,18 @@ struct UCompositionGraphCaptureProtocol : UMovieSceneImageCaptureProtocolBase {
 };
 
 // Class MovieSceneCapture.CompressedImageSequenceProtocol
-struct UCompressedImageSequenceProtocol : UImageSequenceProtocol {
+class UCompressedImageSequenceProtocol : UImageSequenceProtocol {
 	int32_t CompressionQuality; // 0xD8 (4)
 };
 
 // Class MovieSceneCapture.ImageSequenceProtocol_EXR
-struct UImageSequenceProtocol_EXR : UImageSequenceProtocol {
+class UImageSequenceProtocol_EXR : UImageSequenceProtocol {
 	char bCompressed : 0; // 0xD8 (1)
 	char CaptureGamut; // 0xD9 (1)
 };
 
 // Class MovieSceneCapture.MovieSceneCapture
-struct UMovieSceneCapture : Object {
+class UMovieSceneCapture : Object {
 	struct Unknown ImageCaptureProtocolType; // 0x38 (24)
 	struct Unknown AudioCaptureProtocolType; // 0x50 (24)
 	struct Unknown ImageCaptureProtocol; // 0x68 (8)
@@ -72,13 +72,13 @@ struct UMovieSceneCapture : Object {
 };
 
 // Class MovieSceneCapture.LevelCapture
-struct ULevelCapture : UMovieSceneCapture {
+class ULevelCapture : UMovieSceneCapture {
 	char bAutoStartCapture : 0; // 0x220 (1)
 	struct Unknown PrerequisiteActorId; // 0x22C (16)
 };
 
 // Class MovieSceneCapture.UserDefinedCaptureProtocol
-struct UUserDefinedCaptureProtocol : UMovieSceneImageCaptureProtocolBase {
+class UUserDefinedCaptureProtocol : UMovieSceneImageCaptureProtocolBase {
 	struct Unknown World; // 0x58 (8)
 
 	void StopCapturingFinalPixels(); // Function MovieSceneCapture.UserDefinedCaptureProtocol.StopCapturingFinalPixels(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x35179C0>
@@ -100,7 +100,7 @@ struct UUserDefinedCaptureProtocol : UMovieSceneImageCaptureProtocolBase {
 };
 
 // Class MovieSceneCapture.UserDefinedImageCaptureProtocol
-struct UUserDefinedImageCaptureProtocol : UUserDefinedCaptureProtocol {
+class UUserDefinedImageCaptureProtocol : UUserDefinedCaptureProtocol {
 	enum class Unknow Format; // 0xD8 (1)
 	char bEnableCompression : 0; // 0xD9 (1)
 	int32_t CompressionQuality; // 0xDC (4)
@@ -111,8 +111,57 @@ struct UUserDefinedImageCaptureProtocol : UUserDefinedCaptureProtocol {
 };
 
 // Class MovieSceneCapture.VideoCaptureProtocol
-struct UVideoCaptureProtocol : UFrameGrabberProtocol {
+class UVideoCaptureProtocol : UFrameGrabberProtocol {
 	char bUseCompression : 0; // 0x68 (1)
 	float CompressionQuality; // 0x6C (4)
+};
+
+// ScriptStruct MovieSceneCapture.CompositionGraphCapturePasses
+struct FCompositionGraphCapturePasses {
+	struct TArray<Unknown> Value; // 0x0 (16)
+};
+
+// ScriptStruct MovieSceneCapture.FrameMetrics
+struct FFrameMetrics {
+	float TotalElapsedTime; // 0x0 (4)
+	float FrameDelta; // 0x4 (4)
+	int32_t FrameNumber; // 0x8 (4)
+	int32_t NumDroppedFrames; // 0xC (4)
+};
+
+// ScriptStruct MovieSceneCapture.MovieSceneCaptureSettings
+struct FMovieSceneCaptureSettings {
+	struct Unknown OutputDirectory; // 0x0 (16)
+	struct Unknown* GameModeOverride; // 0x10 (8)
+	struct FString OutputFormat; // 0x18 (16)
+	char bOverwriteExisting : 0; // 0x28 (1)
+	char bUseRelativeFrameNumbers : 0; // 0x29 (1)
+	int32_t HandleFrames; // 0x2C (4)
+	struct FString MovieExtension; // 0x30 (16)
+	char ZeroPadFrameNumbers; // 0x40 (1)
+	struct Unknown FrameRate; // 0x44 (8)
+	char bUseCustomFrameRate : 0; // 0x4C (1)
+	struct Unknown CustomFrameRate; // 0x50 (8)
+	struct Unknown Resolution; // 0x58 (8)
+	char bEnableTextureStreaming : 0; // 0x60 (1)
+	char bCinematicEngineScalability : 0; // 0x61 (1)
+	char bCinematicMode : 0; // 0x62 (1)
+	char bAllowMovement : 0; // 0x63 (1)
+	char bAllowTurning : 0; // 0x64 (1)
+	char bShowPlayer : 0; // 0x65 (1)
+	char bShowHUD : 0; // 0x66 (1)
+	char bUsePathTracer : 0; // 0x67 (1)
+	int32_t PathTracerSamplePerPixel; // 0x68 (4)
+};
+
+// ScriptStruct MovieSceneCapture.CaptureResolution
+struct FCaptureResolution {
+	int32_t ResX; // 0x0 (4)
+	int32_t ResY; // 0x4 (4)
+};
+
+// ScriptStruct MovieSceneCapture.CapturedPixelsID
+struct FCapturedPixelsID {
+	struct TMap<Unknown, Unknown>Unknown Identifiers; // 0x0 (80)
 };
 

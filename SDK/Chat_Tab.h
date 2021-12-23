@@ -1,5 +1,5 @@
 // WidgetBlueprintGeneratedClass Chat_Tab.Chat_Tab_C
-struct UChat_Tab_C : UUserWidget {
+class UChat_Tab_C : UUserWidget {
 	struct Unknown UberGraphFrame; // 0x248 (8)
 	struct Unknown Button; // 0x250 (8)
 	struct Unknown Button; // 0x258 (8)

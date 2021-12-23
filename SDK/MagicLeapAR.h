@@ -18,11 +18,11 @@ enum class ELuminARTrackingState : uint8 {
 };
 
 // Class MagicLeapAR.LuminARSessionConfig
-struct ULuminARSessionConfig : UA {
+class ULuminARSessionConfig : UARSessionConfig {
 	struct Unknown PlanesQuery; // 0xB0 (96)
 	int32_t MaxPlaneQueryResults; // 0x110 (4)
 	int32_t MinPlaneArea; // 0x114 (4)
-	char bArbitraryOrientationPlaneDetection : 0; // 0x118 (1)
+	char bArbitraryOrientationPlaneDetec : 0; // 0x118 (1)
 	struct Unknown PlaneSearchExtents; // 0x11C (12)
 	struct TArray<Unknown> PlaneQueryFlags; // 0x128 (16)
 	char bDiscardZeroExtentPlanes : 0; // 0x138 (1)
@@ -30,14 +30,14 @@ struct ULuminARSessionConfig : UA {
 };
 
 // Class MagicLeapAR.LuminARLightEstimate
-struct ULuminARLightEstimate : UA {
+class ULuminARLightEstimate : UARBasicLightEstimate {
 	struct TArray<Unknown> AmbientIntensityNits; // 0x40 (16)
 
 	struct TArray<Unknown> GetAmbientIntensityNits(); // Function MagicLeapAR.LuminARLightEstimate.GetAmbientIntensityNits(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17CE590>
 };
 
 // Class MagicLeapAR.LuminARCandidateImage
-struct ULuminARCandidateImage : UA {
+class ULuminARCandidateImage : UARCandidateImage {
 	char bUseUnreliablePose : 0; // 0x58 (1)
 	char bImageIsStationary : 0; // 0x59 (1)
 

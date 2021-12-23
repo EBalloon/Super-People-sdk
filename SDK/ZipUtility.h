@@ -31,7 +31,7 @@ enum class EZipUtilityCompletionState : uint8 {
 };
 
 // Class ZipUtility.ZipFileFunctionInternalCallback
-struct UZipFileFunctionInternalCallback : Object {
+class UZipFileFunctionInternalCallback : Object {
 	enum class Unknow CompressionFormat; // 0x30 (1)
 	struct FString File; // 0x38 (16)
 	struct FString DestinationFolder; // 0x48 (16)

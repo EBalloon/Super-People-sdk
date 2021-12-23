@@ -26,7 +26,7 @@ enum class EGameplayTaskRunResult : uint8 {
 };
 
 // Class GameplayTasks.GameplayTask
-struct UGameplayTask : Object {
+class UGameplayTask : Object {
 	struct FName InstanceName; // 0x30 (8)
 	enum class Unknow ResourceOverlapPolicy; // 0x3A (1)
 	struct Unknown ChildTask; // 0x60 (8)
@@ -37,7 +37,7 @@ struct UGameplayTask : Object {
 };
 
 // Class GameplayTasks.GameplayTask_SpawnActor
-struct UGameplayTask_SpawnActor : UGameplayTask {
+class UGameplayTask_SpawnActor : UGameplayTask {
 	struct FMulticastInlineDelegate SUCCESS; // 0x68 (16)
 	struct FMulticastInlineDelegate DidNotSpawn; // 0x78 (16)
 	struct Unknown* ClassToSpawn; // 0xA0 (8)
@@ -48,13 +48,13 @@ struct UGameplayTask_SpawnActor : UGameplayTask {
 };
 
 // Class GameplayTasks.GameplayTask_TimeLimitedExecution
-struct UGameplayTask_TimeLimitedExecution : UGameplayTask {
+class UGameplayTask_TimeLimitedExecution : UGameplayTask {
 	struct FMulticastInlineDelegate OnFinished; // 0x68 (16)
 	struct FMulticastInlineDelegate OnTimeExpired; // 0x78 (16)
 };
 
 // Class GameplayTasks.GameplayTask_WaitDelay
-struct UGameplayTask_WaitDelay : UGameplayTask {
+class UGameplayTask_WaitDelay : UGameplayTask {
 	struct FMulticastInlineDelegate OnFinish; // 0x68 (16)
 
 	struct Unknown TaskWaitDelay(struct TScriptInterface<IUnknown> TaskOwner, float Time, char Priority); // Function GameplayTasks.GameplayTask_WaitDelay.TaskWaitDelay(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3EB8F70>
@@ -62,14 +62,14 @@ struct UGameplayTask_WaitDelay : UGameplayTask {
 };
 
 // Class GameplayTasks.GameplayTaskResource
-struct UGameplayTaskResource : Object {
+class UGameplayTaskResource : Object {
 	int32_t ManualResourceID; // 0x28 (4)
 	int8_t AutoResourceID; // 0x2C (1)
 	char bManuallySetID : 0; // 0x30 (1)
 };
 
 // Class GameplayTasks.GameplayTasksComponent
-struct UGameplayTasksComponent : UActorComponent {
+class UGameplayTasksComponent : UActorComponent {
 	char bIsNetDirty : 0; // 0xBC (1)
 	struct TArray<Unknown> SimulatedTasks; // 0xC0 (16)
 	struct TArray<Unknown> TaskPriorityQueue; // 0xD0 (16)

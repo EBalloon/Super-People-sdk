@@ -131,9 +131,23 @@ enum class EMagicLeapControllerType : uint8 {
 };
 
 // Class MagicLeapController.MagicLeapTouchpadGesturesComponent
-struct UMagicLeapTouchpadGesturesComponent : UActorComponent {
+class UMagicLeapTouchpadGesturesComponent : UActorComponent {
 	struct FMulticastInlineDelegate OnTouchpadGestureStart; // 0xB8 (16)
 	struct FMulticastInlineDelegate OnTouchpadGestureContinue; // 0xC8 (16)
 	struct FMulticastInlineDelegate OnTouchpadGestureEnd; // 0xD8 (16)
+};
+
+// ScriptStruct MagicLeapController.MagicLeapTouchpadGesture
+struct FMagicLeapTouchpadGesture {
+	enum class Unknow Hand; // 0x0 (1)
+	struct FName MotionSource; // 0x4 (8)
+	enum class Unknow Type; // 0xC (1)
+	enum class Unknow Direction; // 0xD (1)
+	struct Unknown PositionAndForce; // 0x10 (12)
+	float Speed; // 0x1C (4)
+	float Distance; // 0x20 (4)
+	float FingerGap; // 0x24 (4)
+	float Radius; // 0x28 (4)
+	float Angle; // 0x2C (4)
 };
 

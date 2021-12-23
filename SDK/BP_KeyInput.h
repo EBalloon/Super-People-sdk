@@ -1,5 +1,5 @@
 // BlueprintGeneratedClass BP_KeyInput.BP_KeyInput_C
-struct UBP_KeyInput_C : Object {
+class UBP_KeyInput_C : Object {
 	struct Unknown Key; // 0x28 (24)
 	char Analog : 0; // 0x40 (1)
 	float Analog; // 0x44 (4)

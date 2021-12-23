@@ -1,5 +1,5 @@
 // BlueprintGeneratedClass BP_GameSettingsWrapper.BP_GameSettingsWrapper_C
-struct UBP_GameSettingsWrapper_C : Object {
+class UBP_GameSettingsWrapper_C : Object {
 	struct Unknown UberGraphFrame; // 0x28 (8)
 	struct Unknown Game; // 0x30 (8)
 

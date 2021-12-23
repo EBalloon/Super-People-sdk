@@ -1,5 +1,5 @@
 // Class GeometryCache.GeometryCache
-struct UGeometryCache : Object {
+class UGeometryCache : Object {
 	struct TArray<Unknown> Materials; // 0x30 (16)
 	struct TArray<Unknown> Tracks; // 0x40 (16)
 	int32_t StartFrame; // 0x60 (4)
@@ -7,26 +7,26 @@ struct UGeometryCache : Object {
 };
 
 // Class GeometryCache.GeometryCacheActor
-struct AGeometryCacheActor : UActor {
+class AGeometryCacheActor : UActor {
 	struct Unknown GeometryCacheComponent; // 0x310 (8)
 
 	struct Unknown GetGeometryCacheComponent(); // Function GeometryCache.GeometryCacheActor.GetGeometryCacheComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16D1E60>
 };
 
 // Class GeometryCache.GeometryCacheCodecBase
-struct UGeometryCacheCodecBase : Object {
+class UGeometryCacheCodecBase : Object {
 	struct TArray<Unknown> TopologyRanges; // 0x28 (16)
 };
 
 // Class GeometryCache.GeometryCacheCodecRaw
-struct UGeometryCacheCodecRaw : UGeometryCacheCodecBase {
+class UGeometryCacheCodecRaw : UGeometryCacheCodecBase {
 	int32_t DummyProperty; // 0x38 (4)
 };
 
 // Class GeometryCache.GeometryCacheComponent
-struct UGeometryCacheComponent : UMeshComponent {
+class UGeometryCacheComponent : UMeshComponent {
 	struct Unknown GeometryCache; // 0x4E8 (8)
-	char b : 0; // 0x4F0 (1)
+	char bRunning : 0; // 0x4F0 (1)
 	char bLooping : 0; // 0x4F1 (1)
 	float StartTimeOffset; // 0x4F4 (4)
 	float PlaybackSpeed; // 0x4F8 (4)
@@ -58,19 +58,19 @@ struct UGeometryCacheComponent : UMeshComponent {
 };
 
 // Class GeometryCache.GeometryCacheTrack
-struct UGeometryCacheTrack : Object {
+class UGeometryCacheTrack : Object {
 	float Duration; // 0x28 (4)
 };
 
 // Class GeometryCache.GeometryCacheTrack_FlipbookAnimation
-struct UGeometryCacheTrack_FlipbookAnimation : UGeometryCacheTrack {
+class UGeometryCacheTrack_FlipbookAnimation : UGeometryCacheTrack {
 	uint32_t NumMeshSamples; // 0x58 (4)
 
 	void AddMeshSample(struct Unknown& MeshData, float SampleTime); // Function GeometryCache.GeometryCacheTrack_FlipbookAnimation.AddMeshSample(Final|Native|Public|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16D1BA0>
 };
 
 // Class GeometryCache.GeometryCacheTrackStreamable
-struct UGeometryCacheTrackStreamable : UGeometryCacheTrack {
+class UGeometryCacheTrackStreamable : UGeometryCacheTrack {
 	struct Unknown Codec; // 0x58 (8)
 	float StartSampleTime; // 0xC8 (4)
 };

@@ -399,17 +399,17 @@ enum class ENiagaraVariantMode : uint8 {
 };
 
 // Class Niagara.MovieSceneNiagaraTrack
-struct UMovieSceneNiagaraTrack : UMovieSceneNameableTrack {
+class UMovieSceneNiagaraTrack : UMovieSceneNameableTrack {
 	struct TArray<Unknown> Sections; // 0x58 (16)
 };
 
 // Class Niagara.MovieSceneNiagaraParameterTrack
-struct UMovieSceneNiagaraParameterTrack : UMovieSceneNiagaraTrack {
+class UMovieSceneNiagaraParameterTrack : UMovieSceneNiagaraTrack {
 	struct Unknown Parameter; // 0x68 (40)
 };
 
-// Class Niagara.MovieSceneNiagaraSystemSpawnSection
-struct UMovieSceneNiagaraSystemSpawnSection : UMovieSceneSection {
+// Class Niagara.MovieSceneNiagaraSystemSpawnSec
+class UMovieSceneNiagaraSystemSpawnSec : UMovieSceneSection {
 	enum class Unknow SectionStartBehavior; // 0xE0 (4)
 	enum class Unknow SectionEvaluateBehavior; // 0xE4 (4)
 	enum class Unknow SectionEndBehavior; // 0xE8 (4)
@@ -417,12 +417,12 @@ struct UMovieSceneNiagaraSystemSpawnSection : UMovieSceneSection {
 };
 
 // Class Niagara.MovieSceneNiagaraVectorParameterTrack
-struct UMovieSceneNiagaraVectorParameterTrack : UMovieSceneNiagaraParameterTrack {
+class UMovieSceneNiagaraVectorParameterTrack : UMovieSceneNiagaraParameterTrack {
 	int32_t ChannelsUsed; // 0x90 (4)
 };
 
 // Class Niagara.NiagaraActor
-struct ANiagaraActor : UActor {
+class ANiagaraActor : UActor {
 	struct Unknown NiagaraComponent; // 0x310 (8)
 	char bDestroyOnSystemFinish : 0; // 0x318 (1)
 
@@ -431,13 +431,13 @@ struct ANiagaraActor : UActor {
 };
 
 // Class Niagara.NiagaraComponent
-struct UNiagaraComponent : UFXSystemComponent {
+class UNiagaraComponent : UFXSystemComponent {
 	struct Unknown Asset; // 0x4B8 (8)
 	enum class Unknow TickBehavior; // 0x4C0 (1)
 	struct Unknown OverrideParameters; // 0x4C8 (264)
 	char bForceSolo : 0; // 0x5D0 (1)
 	char bAutoDestroy : 0; // 0x5FC (1)
-	char b : 0; // 0x5FC (1)
+	char bRenderingEnabled : 0; // 0x5FC (1)
 	char bAutoManageAttachment : 0; // 0x5FC (1)
 	char bAutoAttachWeldSimulatedBodies : 0; // 0x5FC (1)
 	float MaxTimeBeforeForceUpdateTransform; // 0x600 (4)
@@ -502,24 +502,24 @@ struct UNiagaraComponent : UFXSystemComponent {
 };
 
 // Class Niagara.NiagaraComponentPool
-struct UNiagaraComponentPool : Object {
+class UNiagaraComponentPool : Object {
 	struct TMap<Unknown, Unknown>Unknown WorldParticleSystemPools; // 0x28 (80)
 };
 
 // Class Niagara.NiagaraDataInterfaceAudioSubmix
-struct UNiagaraDataInterfaceAudioSubmix : UNiagaraDataInterface {
+class UNiagaraDataInterfaceAudioSubmix : UNiagaraDataInterface {
 	struct Unknown Submix; // 0x30 (8)
 };
 
 // Class Niagara.NiagaraDataInterfaceAudioOscilloscope
-struct UNiagaraDataInterfaceAudioOscilloscope : UNiagaraDataInterface {
+class UNiagaraDataInterfaceAudioOscilloscope : UNiagaraDataInterface {
 	struct Unknown Submix; // 0x30 (8)
 	int32_t Resolution; // 0x38 (4)
 	float ScopeInMilliseconds; // 0x3C (4)
 };
 
 // Class Niagara.NiagaraDataInterfaceAudioSpectrum
-struct UNiagaraDataInterfaceAudioSpectrum : UNiagaraDataInterfaceAudioSubmix {
+class UNiagaraDataInterfaceAudioSpectrum : UNiagaraDataInterfaceAudioSubmix {
 	int32_t Resolution; // 0x38 (4)
 	float MinimumFrequency; // 0x3C (4)
 	float MaximumFrequency; // 0x40 (4)
@@ -527,12 +527,12 @@ struct UNiagaraDataInterfaceAudioSpectrum : UNiagaraDataInterfaceAudioSubmix {
 };
 
 // Class Niagara.NiagaraDataInterfaceCamera
-struct UNiagaraDataInterfaceCamera : UNiagaraDataInterface {
+class UNiagaraDataInterfaceCamera : UNiagaraDataInterface {
 	int32_t PlayerControllerIndex; // 0x30 (4)
 };
 
 // Class Niagara.NiagaraDataInterfaceCurveBase
-struct UNiagaraDataInterfaceCurveBase : UNiagaraDataInterface {
+class UNiagaraDataInterfaceCurveBase : UNiagaraDataInterface {
 	struct TArray<Unknown> ShaderLUT; // 0x30 (16)
 	float LUTMinTime; // 0x40 (4)
 	float LUTMaxTime; // 0x44 (4)
@@ -542,7 +542,7 @@ struct UNiagaraDataInterfaceCurveBase : UNiagaraDataInterface {
 };
 
 // Class Niagara.NiagaraDataInterfaceColorCurve
-struct UNiagaraDataInterfaceColorCurve : UNiagaraDataInterfaceCurveBase {
+class UNiagaraDataInterfaceColorCurve : UNiagaraDataInterfaceCurveBase {
 	struct Unknown RedCurve; // 0x58 (128)
 	struct Unknown GreenCurve; // 0xD8 (128)
 	struct Unknown BlueCurve; // 0x158 (128)
@@ -550,28 +550,28 @@ struct UNiagaraDataInterfaceColorCurve : UNiagaraDataInterfaceCurveBase {
 };
 
 // Class Niagara.NiagaraDataInterfaceCurlNoise
-struct UNiagaraDataInterfaceCurlNoise : UNiagaraDataInterface {
+class UNiagaraDataInterfaceCurlNoise : UNiagaraDataInterface {
 	uint32_t Seed; // 0x30 (4)
 };
 
 // Class Niagara.NiagaraDataInterfaceCurve
-struct UNiagaraDataInterfaceCurve : UNiagaraDataInterfaceCurveBase {
+class UNiagaraDataInterfaceCurve : UNiagaraDataInterfaceCurveBase {
 	struct Unknown Curve; // 0x58 (128)
 };
 
 // Class Niagara.NiagaraDataInterfaceExport
-struct UNiagaraDataInterfaceExport : UNiagaraDataInterface {
+class UNiagaraDataInterfaceExport : UNiagaraDataInterface {
 	struct Unknown CallbackHandlerParameter; // 0x30 (40)
 };
 
 // Class Niagara.NiagaraDataInterfaceRWBase
-struct UNiagaraDataInterfaceRWBase : UNiagaraDataInterface {
+class UNiagaraDataInterfaceRWBase : UNiagaraDataInterface {
 	struct TSet<Unknown> OutputShaderStages; // 0x30 (80)
 	struct TSet<Unknown> IterationShaderStages; // 0x80 (80)
 };
 
 // Class Niagara.NiagaraDataInterfaceGrid2D
-struct UNiagaraDataInterfaceGrid2D : UNiagaraDataInterfaceRWBase {
+class UNiagaraDataInterfaceGrid2D : UNiagaraDataInterfaceRWBase {
 	int32_t NumCellsX; // 0xD0 (4)
 	int32_t NumCellsY; // 0xD4 (4)
 	int32_t NumCellsMaxAxis; // 0xD8 (4)
@@ -581,7 +581,7 @@ struct UNiagaraDataInterfaceGrid2D : UNiagaraDataInterfaceRWBase {
 };
 
 // Class Niagara.NiagaraDataInterfaceGrid3D
-struct UNiagaraDataInterfaceGrid3D : UNiagaraDataInterfaceRWBase {
+class UNiagaraDataInterfaceGrid3D : UNiagaraDataInterfaceRWBase {
 	struct Unknown NumVoxels; // 0xD0 (12)
 	float VoxelSize; // 0xDC (4)
 	char SetGridFromVoxelSize : 0; // 0xE0 (1)
@@ -589,17 +589,17 @@ struct UNiagaraDataInterfaceGrid3D : UNiagaraDataInterfaceRWBase {
 };
 
 // Class Niagara.NiagaraDataInterfaceNeighborGrid3D
-struct UNiagaraDataInterfaceNeighborGrid3D : UNiagaraDataInterfaceGrid3D {
+class UNiagaraDataInterfaceNeighborGrid3D : UNiagaraDataInterfaceGrid3D {
 	uint32_t MaxNeighborsPerVoxel; // 0xF0 (4)
 };
 
 // Class Niagara.NiagaraDataInterfaceParticleRead
-struct UNiagaraDataInterfaceParticleRead : UNiagaraDataInterface {
+class UNiagaraDataInterfaceParticleRead : UNiagaraDataInterface {
 	struct FString EmitterName; // 0x30 (16)
 };
 
 // Class Niagara.NiagaraDataInterfaceSkeletalMesh
-struct UNiagaraDataInterfaceSkeletalMesh : UNiagaraDataInterface {
+class UNiagaraDataInterfaceSkeletalMesh : UNiagaraDataInterface {
 	struct Unknown Source; // 0x30 (8)
 	struct Unknown MeshUserParameter; // 0x38 (40)
 	struct Unknown SourceComponent; // 0x60 (8)
@@ -613,12 +613,12 @@ struct UNiagaraDataInterfaceSkeletalMesh : UNiagaraDataInterface {
 };
 
 // Class Niagara.NiagaraDataInterfaceSpline
-struct UNiagaraDataInterfaceSpline : UNiagaraDataInterface {
+class UNiagaraDataInterfaceSpline : UNiagaraDataInterface {
 	struct Unknown Source; // 0x30 (8)
 };
 
 // Class Niagara.NiagaraDataInterfaceStaticMesh
-struct UNiagaraDataInterfaceStaticMesh : UNiagaraDataInterface {
+class UNiagaraDataInterfaceStaticMesh : UNiagaraDataInterface {
 	struct Unknown DefaultMesh; // 0x30 (8)
 	struct Unknown Source; // 0x38 (8)
 	struct Unknown SourceComponent; // 0x40 (8)
@@ -626,18 +626,18 @@ struct UNiagaraDataInterfaceStaticMesh : UNiagaraDataInterface {
 };
 
 // Class Niagara.NiagaraDataInterfaceTexture
-struct UNiagaraDataInterfaceTexture : UNiagaraDataInterface {
+class UNiagaraDataInterfaceTexture : UNiagaraDataInterface {
 	struct Unknown Texture; // 0x30 (8)
 };
 
 // Class Niagara.NiagaraDataInterfaceVector2DCurve
-struct UNiagaraDataInterfaceVector2DCurve : UNiagaraDataInterfaceCurveBase {
+class UNiagaraDataInterfaceVector2DCurve : UNiagaraDataInterfaceCurveBase {
 	struct Unknown XCurve; // 0x58 (128)
 	struct Unknown YCurve; // 0xD8 (128)
 };
 
 // Class Niagara.NiagaraDataInterfaceVector4Curve
-struct UNiagaraDataInterfaceVector4Curve : UNiagaraDataInterfaceCurveBase {
+class UNiagaraDataInterfaceVector4Curve : UNiagaraDataInterfaceCurveBase {
 	struct Unknown XCurve; // 0x58 (128)
 	struct Unknown YCurve; // 0xD8 (128)
 	struct Unknown ZCurve; // 0x158 (128)
@@ -645,14 +645,14 @@ struct UNiagaraDataInterfaceVector4Curve : UNiagaraDataInterfaceCurveBase {
 };
 
 // Class Niagara.NiagaraDataInterfaceVectorCurve
-struct UNiagaraDataInterfaceVectorCurve : UNiagaraDataInterfaceCurveBase {
+class UNiagaraDataInterfaceVectorCurve : UNiagaraDataInterfaceCurveBase {
 	struct Unknown XCurve; // 0x58 (128)
 	struct Unknown YCurve; // 0xD8 (128)
 	struct Unknown ZCurve; // 0x158 (128)
 };
 
 // Class Niagara.NiagaraDataInterfaceVectorField
-struct UNiagaraDataInterfaceVectorField : UNiagaraDataInterface {
+class UNiagaraDataInterfaceVectorField : UNiagaraDataInterface {
 	struct Unknown Field; // 0x30 (8)
 	char bTileX : 0; // 0x38 (1)
 	char bTileY : 0; // 0x39 (1)
@@ -660,12 +660,12 @@ struct UNiagaraDataInterfaceVectorField : UNiagaraDataInterface {
 };
 
 // Class Niagara.NiagaraDataInterfaceVolumeTexture
-struct UNiagaraDataInterfaceVolumeTexture : UNiagaraDataInterface {
+class UNiagaraDataInterfaceVolumeTexture : UNiagaraDataInterface {
 	struct Unknown Texture; // 0x30 (8)
 };
 
 // Class Niagara.NiagaraEffectType
-struct UNiagaraEffectType : Object {
+class UNiagaraEffectType : Object {
 	enum class Unknow UpdateFrequency; // 0x28 (4)
 	enum class Unknow CullReaction; // 0x2C (4)
 	struct TArray<Unknown> DetailLevelScalabilitySettings; // 0x30 (16)
@@ -674,7 +674,7 @@ struct UNiagaraEffectType : Object {
 };
 
 // Class Niagara.NiagaraEmitter
-struct UNiagaraEmitter : Object {
+class UNiagaraEmitter : Object {
 	char bLocalSpace : 0; // 0x28 (1)
 	char bDeterminism : 0; // 0x29 (1)
 	int32_t RandomSeed; // 0x2C (4)
@@ -696,7 +696,7 @@ struct UNiagaraEmitter : Object {
 	char bUseMinDetailLevel : 0; // 0x148 (1)
 	char bUseMaxDetailLevel : 0; // 0x148 (1)
 	char bOverrideGlobalSpawnCountScale : 0; // 0x148 (1)
-	char b : 0; // 0x148 (1)
+	char bRequiresPersistentIDs : 0; // 0x148 (1)
 	float MaxDeltaTimePerTick; // 0x14C (4)
 	uint32_t DefaultShaderStageIndex; // 0x150 (4)
 	uint32_t MaxUpdateIterations; // 0x154 (4)
@@ -713,19 +713,19 @@ struct UNiagaraEmitter : Object {
 };
 
 // Class Niagara.NiagaraEventReceiverEmitterAction_SpawnParticles
-struct UNiagaraEventReceiverEmitterAction_SpawnParticles : UNiagaraEventReceiverEmitterAction {
+class UNiagaraEventReceiverEmitterAction_SpawnParticles : UNiagaraEventReceiverEmitterAction {
 	uint32_t NumParticles; // 0x28 (4)
 };
 
 // Class Niagara.NiagaraRendererProperties
-struct UNiagaraRendererProperties : UNiagaraMergeable {
+class UNiagaraRendererProperties : UNiagaraMergeable {
 	int32_t SortOrderHint; // 0x28 (4)
 	char bIsEnabled : 0; // 0x2C (1)
 	char bMotionBlurEnabled : 0; // 0x2D (1)
 };
 
 // Class Niagara.NiagaraLightRendererProperties
-struct UNiagaraLightRendererProperties : UNiagaraRendererProperties {
+class UNiagaraLightRendererProperties : UNiagaraRendererProperties {
 	char bUseInverseSquaredFalloff : 0; // 0x50 (1)
 	char bAffectsTranslucency : 0; // 0x50 (1)
 	char bOverrideRenderingEnabled : 0; // 0x50 (1)
@@ -740,7 +740,7 @@ struct UNiagaraLightRendererProperties : UNiagaraRendererProperties {
 };
 
 // Class Niagara.NiagaraMeshRendererProperties
-struct UNiagaraMeshRendererProperties : UNiagaraRendererProperties {
+class UNiagaraMeshRendererProperties : UNiagaraRendererProperties {
 	struct Unknown ParticleMesh; // 0x50 (8)
 	enum class Unknow SortMode; // 0x58 (1)
 	char bOverrideMaterials : 0; // 0x5C (1)
@@ -769,7 +769,7 @@ struct UNiagaraMeshRendererProperties : UNiagaraRendererProperties {
 };
 
 // Class Niagara.NiagaraParameterCollectionInstance
-struct UNiagaraParameterCollectionInstance : Object {
+class UNiagaraParameterCollectionInstance : Object {
 	struct Unknown Collection; // 0x28 (8)
 	struct TArray<Unknown> OverridenParameters; // 0x30 (16)
 	struct Unknown ParameterStorage; // 0x40 (184)
@@ -793,7 +793,7 @@ struct UNiagaraParameterCollectionInstance : Object {
 };
 
 // Class Niagara.NiagaraParameterCollection
-struct UNiagaraParameterCollection : Object {
+class UNiagaraParameterCollection : Object {
 	struct FName Namespace; // 0x28 (8)
 	struct TArray<Unknown> Parameters; // 0x30 (16)
 	struct Unknown DefaultInstance; // 0x40 (8)
@@ -801,55 +801,55 @@ struct UNiagaraParameterCollection : Object {
 };
 
 // Class Niagara.NiagaraPrecompileContainer
-struct UNiagaraPrecompileContainer : Object {
+class UNiagaraPrecompileContainer : Object {
 	struct TArray<Unknown> Scripts; // 0x28 (16)
 	struct Unknown System; // 0x38 (8)
 };
 
-// Class Niagara.NiagaraPreviewAxis_Interp
-struct UNiagaraPreviewAxis_Interp : UNiagaraPreviewAxis {
+// Class Niagara.NiagaraPreviewAxis_InterpParamBase
+class UNiagaraPreviewAxis_InterpParamBase : UNiagaraPreviewAxis {
 	struct FName Param; // 0x28 (8)
 	int32_t Count; // 0x30 (4)
 };
 
-// Class Niagara.NiagaraPreviewAxis_Interp
-struct UNiagaraPreviewAxis_Interp : UNiagaraPreviewAxis_Interp {
+// Class Niagara.NiagaraPreviewAxis_InterpParamInt32
+class UNiagaraPreviewAxis_InterpParamInt32 : UNiagaraPreviewAxis_InterpParamBase {
 	int32_t Min; // 0x38 (4)
 	int32_t MAX; // 0x3C (4)
 };
 
-// Class Niagara.NiagaraPreviewAxis_Interp
-struct UNiagaraPreviewAxis_Interp : UNiagaraPreviewAxis_Interp {
+// Class Niagara.NiagaraPreviewAxis_InterpParamFloat
+class UNiagaraPreviewAxis_InterpParamFloat : UNiagaraPreviewAxis_InterpParamBase {
 	float Min; // 0x38 (4)
 	float MAX; // 0x3C (4)
 };
 
-// Class Niagara.NiagaraPreviewAxis_Interp
-struct UNiagaraPreviewAxis_Interp : UNiagaraPreviewAxis_Interp {
+// Class Niagara.NiagaraPreviewAxis_InterpParamVector2D
+class UNiagaraPreviewAxis_InterpParamVector2D : UNiagaraPreviewAxis_InterpParamBase {
 	struct Unknown Min; // 0x38 (8)
 	struct Unknown MAX; // 0x40 (8)
 };
 
-// Class Niagara.NiagaraPreviewAxis_Interp
-struct UNiagaraPreviewAxis_Interp : UNiagaraPreviewAxis_Interp {
+// Class Niagara.NiagaraPreviewAxis_InterpParamVector
+class UNiagaraPreviewAxis_InterpParamVector : UNiagaraPreviewAxis_InterpParamBase {
 	struct Unknown Min; // 0x38 (12)
 	struct Unknown MAX; // 0x44 (12)
 };
 
-// Class Niagara.NiagaraPreviewAxis_Interp
-struct UNiagaraPreviewAxis_Interp : UNiagaraPreviewAxis_Interp {
+// Class Niagara.NiagaraPreviewAxis_InterpParamVector4
+class UNiagaraPreviewAxis_InterpParamVector4 : UNiagaraPreviewAxis_InterpParamBase {
 	struct Unknown Min; // 0x40 (16)
 	struct Unknown MAX; // 0x50 (16)
 };
 
-// Class Niagara.NiagaraPreviewAxis_Interp
-struct UNiagaraPreviewAxis_Interp : UNiagaraPreviewAxis_Interp {
+// Class Niagara.NiagaraPreviewAxis_InterpParamLinearColor
+class UNiagaraPreviewAxis_InterpParamLinearColor : UNiagaraPreviewAxis_InterpParamBase {
 	struct Unknown Min; // 0x38 (16)
 	struct Unknown MAX; // 0x48 (16)
 };
 
 // Class Niagara.NiagaraPreviewGrid
-struct ANiagaraPreviewGrid : UActor {
+class ANiagaraPreviewGrid : UActor {
 	struct Unknown System; // 0x310 (8)
 	enum class Unknow ResetMode; // 0x318 (1)
 	struct Unknown PreviewAxisX; // 0x320 (8)
@@ -864,11 +864,11 @@ struct ANiagaraPreviewGrid : UActor {
 	void SetPaused(char bPaused); // Function Niagara.NiagaraPreviewGrid.SetPaused(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151AF30>
 	void GetPreviews(struct TArray<Unknown>& OutPreviews); // Function Niagara.NiagaraPreviewGrid.GetPreviews(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151AE30>
 	void DeactivatePreviews(); // Function Niagara.NiagaraPreviewGrid.DeactivatePreviews(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151AE10>
-	void ActivatePreviews(char b); // Function Niagara.NiagaraPreviewGrid.ActivatePreviews(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151AC00>
+	void ActivatePreviews(char bReset); // Function Niagara.NiagaraPreviewGrid.ActivatePreviews(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151AC00>
 };
 
 // Class Niagara.NiagaraRibbonRendererProperties
-struct UNiagaraRibbonRendererProperties : UNiagaraRendererProperties {
+class UNiagaraRibbonRendererProperties : UNiagaraRendererProperties {
 	struct Unknown Material; // 0x50 (8)
 	struct Unknown MaterialUserParamBinding; // 0x58 (40)
 	enum class Unknow FacingMode; // 0x80 (1)
@@ -904,7 +904,7 @@ struct UNiagaraRibbonRendererProperties : UNiagaraRendererProperties {
 };
 
 // Class Niagara.NiagaraScript
-struct UNiagaraScript : Object {
+class UNiagaraScript : Object {
 	enum class Unknow Usage; // 0x28 (1)
 	int32_t UsageIndex; // 0x2C (4)
 	struct Unknown UsageId; // 0x30 (16)
@@ -920,7 +920,7 @@ struct UNiagaraScript : Object {
 };
 
 // Class Niagara.NiagaraSettings
-struct UNiagaraSettings : UDeveloperSettings {
+class UNiagaraSettings : UDeveloperSettings {
 	struct TArray<Unknown> AdditionalParameterTypes; // 0x38 (16)
 	struct TArray<Unknown> AdditionalPayloadTypes; // 0x48 (16)
 	struct TArray<Unknown> AdditionalParameterEnums; // 0x58 (16)
@@ -930,13 +930,13 @@ struct UNiagaraSettings : UDeveloperSettings {
 };
 
 // Class Niagara.NiagaraSimulationStageBase
-struct UNiagaraSimulationStageBase : UNiagaraMergeable {
+class UNiagaraSimulationStageBase : UNiagaraMergeable {
 	struct Unknown Script; // 0x28 (8)
 	struct FName SimulationStageName; // 0x30 (8)
 };
 
 // Class Niagara.NiagaraSimulationStageGeneric
-struct UNiagaraSimulationStageGeneric : UNiagaraSimulationStageBase {
+class UNiagaraSimulationStageGeneric : UNiagaraSimulationStageBase {
 	enum class Unknow IterationSource; // 0x38 (1)
 	int32_t Iterations; // 0x3C (4)
 	char bSpawnOnly : 0; // 0x40 (1)
@@ -944,7 +944,7 @@ struct UNiagaraSimulationStageGeneric : UNiagaraSimulationStageBase {
 };
 
 // Class Niagara.NiagaraSpriteRendererProperties
-struct UNiagaraSpriteRendererProperties : UNiagaraRendererProperties {
+class UNiagaraSpriteRendererProperties : UNiagaraRendererProperties {
 	struct Unknown Material; // 0x50 (8)
 	struct Unknown MaterialUserParamBinding; // 0x58 (40)
 	enum class Unknow Alignment; // 0x80 (1)
@@ -953,7 +953,7 @@ struct UNiagaraSpriteRendererProperties : UNiagaraRendererProperties {
 	enum class Unknow SortMode; // 0x8C (1)
 	struct Unknown SubImageSize; // 0x90 (8)
 	char bSubImageBlend : 0; // 0x98 (1)
-	char b : 0; // 0x98 (1)
+	char bRemoveHMDRollInVR : 0; // 0x98 (1)
 	char bSortOnlyWhenTranslucent : 0; // 0x98 (1)
 	float MinFacingCameraBlendDistance; // 0x9C (4)
 	float MaxFacingCameraBlendDistance; // 0xA0 (4)
@@ -977,7 +977,7 @@ struct UNiagaraSpriteRendererProperties : UNiagaraRendererProperties {
 };
 
 // Class Niagara.NiagaraSystem
-struct UNiagaraSystem : UFXSystemAsset {
+class UNiagaraSystem : UFXSystemAsset {
 	char bDumpDebugSystemInfo : 0; // 0x31 (1)
 	char bDumpDebugEmitterInfo : 0; // 0x32 (1)
 	char bFixedBounds : 0; // 0x34 (1)
@@ -998,5 +998,640 @@ struct UNiagaraSystem : UFXSystemAsset {
 	float WarmupTickDelta; // 0x430 (4)
 	char bHasSystemScriptDIsWithPerInstanceData : 0; // 0x434 (1)
 	struct TArray<Unknown> UserDINamesReadInSystemScripts; // 0x438 (16)
+};
+
+// ScriptStruct Niagara.MovieSceneNiagaraParameterSectionTemplate
+struct FMovieSceneNiagaraParameterSectionTemplate : FMovieSceneEvalTemplate {
+	struct Unknown Parameter; // 0x20 (40)
+};
+
+// ScriptStruct Niagara.NiagaraVariableBase
+struct FNiagaraVariableBase {
+	struct FName Name; // 0x0 (8)
+	struct Unknown TypeDef; // 0x8 (16)
+};
+
+// ScriptStruct Niagara.NiagaraTypeDefinition
+struct FNiagaraTypeDefinition {
+	struct Unknown ClassStructOrEnum; // 0x0 (8)
+	uint16_t UnderlyingType; // 0x8 (2)
+};
+
+// ScriptStruct Niagara.NiagaraVariable
+struct FNiagaraVariable : FNiagaraVariableBase {
+	struct TArray<Unknown> VarData; // 0x18 (16)
+};
+
+// ScriptStruct Niagara.MovieSceneNiagaraBoolParameterSectionTemplate
+struct FMovieSceneNiagaraBoolParameterSectionTemplate : FMovieSceneNiagaraParameterSectionTemplate {
+	struct Unknown BoolChannel; // 0x48 (144)
+};
+
+// ScriptStruct Niagara.MovieSceneNiagaraColorParameterSectionTemplate
+struct FMovieSceneNiagaraColorParameterSectionTemplate : FMovieSceneNiagaraParameterSectionTemplate {
+	struct Unknown RedChannel; // 0x48 (160)
+	struct Unknown GreenChannel; // 0xE8 (160)
+	struct Unknown BlueChannel; // 0x188 (160)
+	struct Unknown AlphaChannel; // 0x228 (160)
+};
+
+// ScriptStruct Niagara.MovieSceneNiagaraFloatParameterSectionTemplate
+struct FMovieSceneNiagaraFloatParameterSectionTemplate : FMovieSceneNiagaraParameterSectionTemplate {
+	struct Unknown FloatChannel; // 0x48 (160)
+};
+
+// ScriptStruct Niagara.MovieSceneNiagaraIntegerParameterSectionTemplate
+struct FMovieSceneNiagaraIntegerParameterSectionTemplate : FMovieSceneNiagaraParameterSectionTemplate {
+	struct Unknown IntegerChannel; // 0x48 (144)
+};
+
+// ScriptStruct Niagara.MovieSceneNiagaraSystemTrackImplementation
+struct FMovieSceneNiagaraSystemTrackImplementation : FMovieSceneTrackImplementation {
+	struct Unknown SpawnSectionStartFrame; // 0x10 (4)
+	struct Unknown SpawnSectionEndFrame; // 0x14 (4)
+	enum class Unknow SpawnSectionStartBehavior; // 0x18 (4)
+	enum class Unknow SpawnSectionEvaluateBehavior; // 0x1C (4)
+	enum class Unknow SpawnSectionEndBehavior; // 0x20 (4)
+	enum class Unknow AgeUpdateMode; // 0x24 (1)
+};
+
+// ScriptStruct Niagara.MovieSceneNiagaraVectorParameterSectionTemplate
+struct FMovieSceneNiagaraVectorParameterSectionTemplate : FMovieSceneNiagaraParameterSectionTemplate {
+	struct Unknown VectorChannels[0x4]; // 0x48 (640)
+	int32_t ChannelsUsed; // 0x2C8 (4)
+};
+
+// ScriptStruct Niagara.NiagaraRandInfo
+struct FNiagaraRandInfo {
+	int32_t Seed1; // 0x0 (4)
+	int32_t Seed2; // 0x4 (4)
+	int32_t Seed3; // 0x8 (4)
+};
+
+// ScriptStruct Niagara.NiagaraUserParameterBinding
+struct FNiagaraUserParameterBinding {
+	struct Unknown Parameter; // 0x0 (40)
+};
+
+// ScriptStruct Niagara.NiagaraScriptVariableBinding
+struct FNiagaraScriptVariableBinding {
+	struct FName Name; // 0x0 (8)
+};
+
+// ScriptStruct Niagara.NiagaraVariableDataInterfaceBinding
+struct FNiagaraVariableDataInterfaceBinding {
+	struct Unknown BoundVariable; // 0x0 (40)
+};
+
+// ScriptStruct Niagara.NiagaraVariableAttributeBinding
+struct FNiagaraVariableAttributeBinding {
+	struct Unknown BoundVariable; // 0x0 (40)
+	struct Unknown DataSetVariable; // 0x28 (40)
+	struct Unknown DefaultValueIfNonExistent; // 0x50 (40)
+};
+
+// ScriptStruct Niagara.NiagaraVariableInfo
+struct FNiagaraVariableInfo {
+	struct Unknown Variable; // 0x0 (40)
+	struct FText Definition; // 0x28 (24)
+	struct Unknown DataInterface; // 0x40 (8)
+};
+
+// ScriptStruct Niagara.NiagaraSystemUpdateContext
+struct FNiagaraSystemUpdateContext {
+	struct TArray<Unknown> ComponentsToReset; // 0x0 (16)
+	struct TArray<Unknown> ComponentsToReInit; // 0x10 (16)
+	struct TArray<Unknown> SystemSimsToDestroy; // 0x20 (16)
+};
+
+// ScriptStruct Niagara.VMExternalFunctionBindingInfo
+struct FVMExternalFunctionBindingInfo {
+	struct FName Name; // 0x0 (8)
+	struct FName OwnerName; // 0x8 (8)
+	struct TArray<Unknown> InputParamLocations; // 0x10 (16)
+	int32_t NumOutputs; // 0x20 (4)
+	struct TArray<Unknown> FunctionSpecifiers; // 0x28 (16)
+};
+
+// ScriptStruct Niagara.VMFunctionSpecifier
+struct FVMFunctionSpecifier {
+	struct FName Key; // 0x0 (8)
+	struct FName Value; // 0x8 (8)
+};
+
+// ScriptStruct Niagara.NiagaraStatScope
+struct FNiagaraStatScope {
+	struct FName FullName; // 0x0 (8)
+	struct FName FriendlyName; // 0x8 (8)
+};
+
+// ScriptStruct Niagara.NiagaraScriptDataInterfaceCompileInfo
+struct FNiagaraScriptDataInterfaceCompileInfo {
+	struct FName Name; // 0x0 (8)
+	int32_t UserPtrIdx; // 0x8 (4)
+	struct Unknown Type; // 0x10 (16)
+	struct FName RegisteredParameterMapRead; // 0x20 (8)
+	struct FName RegisteredParameterMapWrite; // 0x28 (8)
+	char bIsPlaceholder : 0; // 0x30 (1)
+};
+
+// ScriptStruct Niagara.NiagaraScriptDataInterfaceInfo
+struct FNiagaraScriptDataInterfaceInfo {
+	struct Unknown DataInterface; // 0x0 (8)
+	struct FName Name; // 0x8 (8)
+	int32_t UserPtrIdx; // 0x10 (4)
+	struct Unknown Type; // 0x18 (16)
+	struct FName RegisteredParameterMapRead; // 0x28 (8)
+	struct FName RegisteredParameterMapWrite; // 0x30 (8)
+};
+
+// ScriptStruct Niagara.NiagaraFunctionSignature
+struct FNiagaraFunctionSignature {
+	struct FName Name; // 0x0 (8)
+	struct TArray<Unknown> Inputs; // 0x8 (16)
+	struct TArray<Unknown> Outputs; // 0x18 (16)
+	struct FName OwnerName; // 0x28 (8)
+	char bRequiresContext : 0; // 0x30 (1)
+	char bMemberFunction : 0; // 0x30 (1)
+	char bExperimental : 0; // 0x30 (1)
+	char bSupportsCPU : 0; // 0x30 (1)
+	char bSupportsGPU : 0; // 0x30 (1)
+	char bWriteFunction : 0; // 0x30 (1)
+	struct TMap<Unknown, Unknown>Unknown FunctionSpecifiers; // 0x38 (80)
+};
+
+// ScriptStruct Niagara.NiagaraScriptDataUsageInfo
+struct FNiagaraScriptDataUsageInfo {
+	char bReadsAttributeData : 0; // 0x0 (1)
+};
+
+// ScriptStruct Niagara.NiagaraDataSetProperties
+struct FNiagaraDataSetProperties {
+	struct Unknown ID; // 0x0 (12)
+	struct TArray<Unknown> Variables; // 0x10 (16)
+};
+
+// ScriptStruct Niagara.NiagaraDataSetID
+struct FNiagaraDataSetID {
+	struct FName Name; // 0x0 (8)
+	enum class Unknow Type; // 0x8 (1)
+};
+
+// ScriptStruct Niagara.NCPool
+struct FNCPool {
+	struct TArray<Unknown> FreeElements; // 0x0 (16)
+	struct TArray<Unknown> InUseComponents_Auto; // 0x10 (16)
+	struct TArray<Unknown> InUseComponents_Manual; // 0x20 (16)
+};
+
+// ScriptStruct Niagara.NCPoolElement
+struct FNCPoolElement {
+	struct Unknown Component; // 0x0 (8)
+};
+
+// ScriptStruct Niagara.BasicParticleData
+struct FBasicParticleData {
+	struct Unknown Position; // 0x0 (12)
+	float Size; // 0xC (4)
+	struct Unknown Velocity; // 0x10 (12)
+};
+
+// ScriptStruct Niagara.MeshTriCoordinate
+struct FMeshTriCoordinate {
+	int32_t Tri; // 0x0 (4)
+	struct Unknown BaryCoord; // 0x4 (12)
+};
+
+// ScriptStruct Niagara.NDIStaticMeshSectionFilter
+struct FNDIStaticMeshSectionFilter {
+	struct TArray<Unknown> AllowedMaterialSlots; // 0x0 (16)
+};
+
+// ScriptStruct Niagara.NiagaraDataSetCompiledData
+struct FNiagaraDataSetCompiledData {
+	struct TArray<Unknown> Variables; // 0x0 (16)
+	struct TArray<Unknown> VariableLayouts; // 0x10 (16)
+	uint32_t TotalFloatComponents; // 0x20 (4)
+	uint32_t TotalInt32Components; // 0x24 (4)
+	char bRequiresPersistentIDs : 0; // 0x28 (1)
+	struct Unknown ID; // 0x2C (12)
+	enum class Unknow SimTarget; // 0x38 (1)
+};
+
+// ScriptStruct Niagara.NiagaraVariableLayoutInfo
+struct FNiagaraVariableLayoutInfo {
+	uint32_t FloatComponentStart; // 0x0 (4)
+	uint32_t Int32ComponentStart; // 0x4 (4)
+	struct Unknown LayoutInfo; // 0x8 (64)
+};
+
+// ScriptStruct Niagara.NiagaraTypeLayoutInfo
+struct FNiagaraTypeLayoutInfo {
+	struct TArray<Unknown> FloatComponentByteOffsets; // 0x0 (16)
+	struct TArray<Unknown> FloatComponentRegisterOffsets; // 0x10 (16)
+	struct TArray<Unknown> Int32ComponentByteOffsets; // 0x20 (16)
+	struct TArray<Unknown> Int32ComponentRegisterOffsets; // 0x30 (16)
+};
+
+// ScriptStruct Niagara.NiagaraGraphViewSettings
+struct FNiagaraGraphViewSettings {
+	struct Unknown Location; // 0x0 (8)
+	float Zoom; // 0x8 (4)
+	char bIsValid : 0; // 0xC (1)
+};
+
+// ScriptStruct Niagara.NiagaraEmitterScalabilityOverrides
+struct FNiagaraEmitterScalabilityOverrides {
+	struct TArray<Unknown> Overrides; // 0x0 (16)
+};
+
+// ScriptStruct Niagara.NiagaraEmitterScalabilitySettings
+struct FNiagaraEmitterScalabilitySettings {
+	struct Unknown Platforms; // 0x0 (32)
+	char bScaleSpawnCount : 0; // 0x20 (1)
+	float SpawnCountScale; // 0x24 (4)
+};
+
+// ScriptStruct Niagara.NiagaraPlatformSet
+struct FNiagaraPlatformSet {
+	int32_t QualityLevelMask; // 0x0 (4)
+	struct TArray<Unknown> DeviceProfileStates; // 0x8 (16)
+};
+
+// ScriptStruct Niagara.NiagaraDeviceProfileStateEntry
+struct FNiagaraDeviceProfileStateEntry {
+	struct FName ProfileName; // 0x0 (8)
+	uint32_t QualityLevelMask; // 0x8 (4)
+	uint32_t SetQualityLevelMask; // 0xC (4)
+};
+
+// ScriptStruct Niagara.NiagaraEmitterScalabilityOverride
+struct FNiagaraEmitterScalabilityOverride : FNiagaraEmitterScalabilitySettings {
+	char bOverrideSpawnCountScale : 0; // 0x28 (1)
+};
+
+// ScriptStruct Niagara.NiagaraEmitterScalabilitySettingsArray
+struct FNiagaraEmitterScalabilitySettingsArray {
+	struct TArray<Unknown> Settings; // 0x0 (16)
+};
+
+// ScriptStruct Niagara.NiagaraSystemScalabilityOverrides
+struct FNiagaraSystemScalabilityOverrides {
+	struct TArray<Unknown> Overrides; // 0x0 (16)
+};
+
+// ScriptStruct Niagara.NiagaraSystemScalabilitySettings
+struct FNiagaraSystemScalabilitySettings {
+	struct Unknown Platforms; // 0x0 (32)
+	char bCullByDistance : 0; // 0x20 (1)
+	char bCullMaxInstanceCount : 0; // 0x20 (1)
+	char bCullByMaxTimeWithoutRender : 0; // 0x20 (1)
+	float MaxDistance; // 0x24 (4)
+	float MaxInstances; // 0x28 (4)
+	float MaxTimeWithoutRender; // 0x2C (4)
+};
+
+// ScriptStruct Niagara.NiagaraSystemScalabilityOverride
+struct FNiagaraSystemScalabilityOverride : FNiagaraSystemScalabilitySettings {
+	char bOverrideDistanceSettings : 0; // 0x30 (1)
+	char bOverrideInstanceCountSettings : 0; // 0x30 (1)
+	char bOverrideTimeSinceRendererSettings : 0; // 0x30 (1)
+};
+
+// ScriptStruct Niagara.NiagaraSystemScalabilitySettingsArray
+struct FNiagaraSystemScalabilitySettingsArray {
+	struct TArray<Unknown> Settings; // 0x0 (16)
+};
+
+// ScriptStruct Niagara.NiagaraDetailsLevelScaleOverrides
+struct FNiagaraDetailsLevelScaleOverrides {
+	float Low; // 0x0 (4)
+	float Medium; // 0x4 (4)
+	float High; // 0x8 (4)
+	float Epic; // 0xC (4)
+	float Cine; // 0x10 (4)
+};
+
+// ScriptStruct Niagara.NiagaraEmitterScriptProperties
+struct FNiagaraEmitterScriptProperties {
+	struct Unknown Script; // 0x0 (8)
+	struct TArray<Unknown> EventReceivers; // 0x8 (16)
+	struct TArray<Unknown> EventGenerators; // 0x18 (16)
+};
+
+// ScriptStruct Niagara.NiagaraEventGeneratorProperties
+struct FNiagaraEventGeneratorProperties {
+	int32_t MaxEventsPerFrame; // 0x0 (4)
+	struct FName ID; // 0x4 (8)
+	struct Unknown DataSetCompiledData; // 0x10 (64)
+};
+
+// ScriptStruct Niagara.NiagaraEventReceiverProperties
+struct FNiagaraEventReceiverProperties {
+	struct FName Name; // 0x0 (8)
+	struct FName SourceEventGenerator; // 0x8 (8)
+	struct FName SourceEmitter; // 0x10 (8)
+};
+
+// ScriptStruct Niagara.NiagaraEventScriptProperties
+struct FNiagaraEventScriptProperties : FNiagaraEmitterScriptProperties {
+	enum class Unknow ExecutionMode; // 0x28 (1)
+	uint32_t SpawnNumber; // 0x2C (4)
+	uint32_t MaxEventsPerFrame; // 0x30 (4)
+	struct Unknown SourceEmitterID; // 0x34 (16)
+	struct FName SourceEventName; // 0x44 (8)
+	char bRandomSpawnNumber : 0; // 0x4C (1)
+	uint32_t MinSpawnNumber; // 0x50 (4)
+};
+
+// ScriptStruct Niagara.NiagaraEmitterHandle
+struct FNiagaraEmitterHandle {
+	struct Unknown ID; // 0x0 (16)
+	struct FName IdName; // 0x10 (8)
+	char bIsEnabled : 0; // 0x18 (1)
+	struct FName Name; // 0x1C (8)
+	struct Unknown Instance; // 0x28 (8)
+};
+
+// ScriptStruct Niagara.NiagaraCollisionEventPayload
+struct FNiagaraCollisionEventPayload {
+	struct Unknown CollisionPos; // 0x0 (12)
+	struct Unknown CollisionNormal; // 0xC (12)
+	struct Unknown CollisionVelocity; // 0x18 (12)
+	int32_t ParticleIndex; // 0x24 (4)
+	int32_t PhysicalMaterialIndex; // 0x28 (4)
+};
+
+// ScriptStruct Niagara.NiagaraMeshMaterialOverride
+struct FNiagaraMeshMaterialOverride {
+	struct Unknown ExplicitMat; // 0x0 (8)
+	struct Unknown UserParamBinding; // 0x8 (40)
+};
+
+// ScriptStruct Niagara.NiagaraParameters
+struct FNiagaraParameters {
+	struct TArray<Unknown> Parameters; // 0x0 (16)
+};
+
+// ScriptStruct Niagara.NiagaraParameterStore
+struct FNiagaraParameterStore {
+	struct Unknown Owner; // 0x8 (8)
+	struct TArray<Unknown> SortedParameterOffsets; // 0x10 (16)
+	struct TArray<Unknown> ParameterData; // 0x20 (16)
+	struct TArray<Unknown> DataInterfaces; // 0x30 (16)
+	struct TArray<Unknown> UObjects; // 0x40 (16)
+};
+
+// ScriptStruct Niagara.NiagaraVariableWithOffset
+struct FNiagaraVariableWithOffset : FNiagaraVariableBase {
+	int32_t Offset; // 0x18 (4)
+};
+
+// ScriptStruct Niagara.NiagaraBoundParameter
+struct FNiagaraBoundParameter {
+	struct Unknown Parameter; // 0x0 (40)
+	int32_t SrcOffset; // 0x28 (4)
+	int32_t DestOffset; // 0x2C (4)
+};
+
+// ScriptStruct Niagara.NiagaraPlatformSetConflictInfo
+struct FNiagaraPlatformSetConflictInfo {
+	int32_t SetAIndex; // 0x0 (4)
+	int32_t SetBIndex; // 0x4 (4)
+	struct TArray<Unknown> Conflicts; // 0x8 (16)
+};
+
+// ScriptStruct Niagara.NiagaraPlatformSetConflictEntry
+struct FNiagaraPlatformSetConflictEntry {
+	struct FName ProfileName; // 0x0 (8)
+	int32_t QualityLevelMask; // 0x8 (4)
+};
+
+// ScriptStruct Niagara.NiagaraScalabilityManager
+struct FNiagaraScalabilityManager {
+	struct Unknown EffectType; // 0x0 (8)
+	struct TArray<Unknown> ManagedComponents; // 0x8 (16)
+};
+
+// ScriptStruct Niagara.NiagaraVMExecutableData
+struct FNiagaraVMExecutableData {
+	struct TArray<Unknown> ByteCode; // 0x0 (16)
+	struct TArray<Unknown> OptimizedByteCode; // 0x10 (16)
+	int32_t NumTempRegisters; // 0x20 (4)
+	int32_t NumUserPtrs; // 0x24 (4)
+	struct Unknown Parameters; // 0x28 (16)
+	struct Unknown InternalParameters; // 0x38 (16)
+	struct TMap<Unknown, Unknown>Unknown DataSetToParameters; // 0x48 (80)
+	struct TArray<Unknown> Attributes; // 0x98 (16)
+	struct Unknown DataUsage; // 0xA8 (1)
+	struct TArray<Unknown> DataInterfaceInfo; // 0xB0 (16)
+	struct TArray<Unknown> CalledVMExternalFunctions; // 0xC0 (16)
+	struct TArray<Unknown> ReadDataSets; // 0xD0 (16)
+	struct TArray<Unknown> WriteDataSets; // 0xE0 (16)
+	struct TArray<Unknown> StatScopes; // 0xF0 (16)
+	struct TArray<Unknown> DIParamInfo; // 0x100 (16)
+	enum class Unknow LastCompileStatus; // 0x110 (1)
+	struct TArray<Unknown> SimulationStageMetaData; // 0x118 (16)
+};
+
+// ScriptStruct Niagara.SimulationStageMetaData
+struct FSimulationStageMetaData {
+	struct FName IterationSource; // 0x0 (8)
+	char bSpawnOnly : 0; // 0x8 (1)
+	char bWritesParticles : 0; // 0x8 (1)
+	struct TArray<Unknown> OutputDestinations; // 0x10 (16)
+	int32_t MinStage; // 0x20 (4)
+	int32_t MaxStage; // 0x24 (4)
+};
+
+// ScriptStruct Niagara.NiagaraVMExecutableDataId
+struct FNiagaraVMExecutableDataId {
+	struct Unknown CompilerVersionID; // 0x0 (16)
+	enum class Unknow ScriptUsageType; // 0x10 (1)
+	struct Unknown ScriptUsageTypeID; // 0x14 (16)
+	char bUsesRapidIterationParams : 0; // 0x24 (1)
+	char bInterpolatedSpawn : 0; // 0x24 (1)
+	char bRequiresPersistentIDs : 0; // 0x24 (1)
+	struct Unknown BaseScriptID; // 0x28 (16)
+	struct Unknown BaseScriptCompileHash; // 0x38 (16)
+};
+
+// ScriptStruct Niagara.NiagaraModuleDependency
+struct FNiagaraModuleDependency {
+	struct FName ID; // 0x0 (8)
+	enum class Unknow Type; // 0x8 (1)
+	enum class Unknow ScriptConstraint; // 0x9 (1)
+	struct FText Description; // 0x10 (24)
+};
+
+// ScriptStruct Niagara.NiagaraScriptExecutionParameterStore
+struct FNiagaraScriptExecutionParameterStore : FNiagaraParameterStore {
+	int32_t ParameterSize; // 0xB8 (4)
+	uint32_t PaddedParameterSize; // 0xBC (4)
+	struct TArray<Unknown> PaddingInfo; // 0xC0 (16)
+	char bInitialized : 0; // 0xD0 (1)
+};
+
+// ScriptStruct Niagara.NiagaraScriptExecutionPaddingInfo
+struct FNiagaraScriptExecutionPaddingInfo {
+	uint16_t SrcOffset; // 0x0 (2)
+	uint16_t DestOffset; // 0x2 (2)
+	uint16_t SrcSize; // 0x4 (2)
+	uint16_t DestSize; // 0x6 (2)
+};
+
+// ScriptStruct Niagara.NiagaraScriptHighlight
+struct FNiagaraScriptHighlight {
+	struct Unknown Color; // 0x0 (16)
+	struct FText DisplayName; // 0x10 (24)
+};
+
+// ScriptStruct Niagara.NiagaraSystemCompileRequest
+struct FNiagaraSystemCompileRequest {
+	struct TArray<Unknown> RootObjects; // 0x8 (16)
+};
+
+// ScriptStruct Niagara.NiagaraSystemCompiledData
+struct FNiagaraSystemCompiledData {
+	struct Unknown InstanceParamStore; // 0x0 (184)
+	struct Unknown DataSetCompiledData; // 0xB8 (64)
+	struct Unknown SpawnInstanceParamsDataSetCompiledData; // 0xF8 (64)
+	struct Unknown UpdateInstanceParamsDataSetCompiledData; // 0x138 (64)
+	struct Unknown SpawnInstanceGlobalBinding; // 0x178 (32)
+	struct Unknown SpawnInstanceSystemBinding; // 0x198 (32)
+	struct Unknown SpawnInstanceOwnerBinding; // 0x1B8 (32)
+	struct TArray<Unknown> SpawnInstanceEmitterBindings; // 0x1D8 (16)
+	struct Unknown UpdateInstanceGlobalBinding; // 0x1E8 (32)
+	struct Unknown UpdateInstanceSystemBinding; // 0x208 (32)
+	struct Unknown UpdateInstanceOwnerBinding; // 0x228 (32)
+	struct TArray<Unknown> UpdateInstanceEmitterBindings; // 0x248 (16)
+};
+
+// ScriptStruct Niagara.NiagaraParameterDataSetBindingCollection
+struct FNiagaraParameterDataSetBindingCollection {
+	struct TArray<Unknown> FloatOffsets; // 0x0 (16)
+	struct TArray<Unknown> Int32Offsets; // 0x10 (16)
+};
+
+// ScriptStruct Niagara.NiagaraParameterDataSetBinding
+struct FNiagaraParameterDataSetBinding {
+	int32_t ParameterOffset; // 0x0 (4)
+	int32_t DataSetComponentOffset; // 0x4 (4)
+};
+
+// ScriptStruct Niagara.NiagaraEmitterCompiledData
+struct FNiagaraEmitterCompiledData {
+	struct TArray<Unknown> SpawnAttributes; // 0x0 (16)
+	struct Unknown EmitterSpawnIntervalVar; // 0x10 (40)
+	struct Unknown EmitterInterpSpawnStartDTVar; // 0x38 (40)
+	struct Unknown EmitterSpawnGroupVar; // 0x60 (40)
+	struct Unknown EmitterAgeVar; // 0x88 (40)
+	struct Unknown EmitterRandomSeedVar; // 0xB0 (40)
+	struct Unknown EmitterTotalSpawnedParticlesVar; // 0xD8 (40)
+	struct Unknown DataSetCompiledData; // 0x100 (64)
+};
+
+// ScriptStruct Niagara.NiagaraVariableMetaData
+struct FNiagaraVariableMetaData {
+	struct FText Description; // 0x0 (24)
+	struct FText CategoryName; // 0x18 (24)
+	char bAdvancedDisplay : 0; // 0x30 (1)
+	int32_t EditorSortPriority; // 0x34 (4)
+	char bInlineEditConditionToggle : 0; // 0x38 (1)
+	struct Unknown EditCondition; // 0x40 (24)
+	struct Unknown VisibleCondition; // 0x58 (24)
+	struct TMap<Unknown, Unknown>Unknown PropertyMetaData; // 0x70 (80)
+	struct FName ScopeName; // 0xC0 (8)
+	enum class Unknow Usage; // 0xC8 (4)
+	char bIsStaticSwitch : 0; // 0xCC (1)
+	int32_t StaticSwitchDefaultValue; // 0xD0 (4)
+	char bAddedToNodeGraphDeepCopy : 0; // 0xD4 (1)
+	char bOutputIsPersistent : 0; // 0xD5 (1)
+	struct FName CachedNamespacelessVariableName; // 0xD8 (8)
+	char bCreatedInSystemEditor : 0; // 0xE0 (1)
+	char bUseLegacyNameString : 0; // 0xE1 (1)
+};
+
+// ScriptStruct Niagara.NiagaraInputConditionMetadata
+struct FNiagaraInputConditionMetadata {
+	struct FName InputName; // 0x0 (8)
+	struct TArray<Unknown> TargetValues; // 0x8 (16)
+};
+
+// ScriptStruct Niagara.NiagaraParameterScopeInfo
+struct FNiagaraParameterScopeInfo {
+	enum class Unknow Scope; // 0x0 (4)
+	struct FString NamespaceString; // 0x8 (16)
+};
+
+// ScriptStruct Niagara.NiagaraCompileHashVisitorDebugInfo
+struct FNiagaraCompileHashVisitorDebugInfo {
+	struct FString Object; // 0x0 (16)
+	struct TArray<Unknown> PropertyKeys; // 0x10 (16)
+	struct TArray<Unknown> PropertyValues; // 0x20 (16)
+};
+
+// ScriptStruct Niagara.NiagaraID
+struct FNiagaraID {
+	int32_t Index; // 0x0 (4)
+	int32_t AcquireTag; // 0x4 (4)
+};
+
+// ScriptStruct Niagara.NiagaraSpawnInfo
+struct FNiagaraSpawnInfo {
+	int32_t Count; // 0x0 (4)
+	float InterpStartDt; // 0x4 (4)
+	float IntervalDt; // 0x8 (4)
+	int32_t SpawnGroup; // 0xC (4)
+};
+
+// ScriptStruct Niagara.NiagaraMatrix
+struct FNiagaraMatrix {
+	struct Unknown Row0; // 0x0 (16)
+	struct Unknown Row1; // 0x10 (16)
+	struct Unknown Row2; // 0x20 (16)
+	struct Unknown Row3; // 0x30 (16)
+};
+
+// ScriptStruct Niagara.NiagaraTestStruct
+struct FNiagaraTestStruct {
+	struct Unknown Vector1; // 0x0 (12)
+	struct Unknown Vector2; // 0xC (12)
+	struct Unknown InnerStruct1; // 0x18 (24)
+	struct Unknown InnerStruct2; // 0x30 (24)
+};
+
+// ScriptStruct Niagara.NiagaraTestStructInner
+struct FNiagaraTestStructInner {
+	struct Unknown InnerVector1; // 0x0 (12)
+	struct Unknown InnerVector2; // 0xC (12)
+};
+
+// ScriptStruct Niagara.NiagaraBool
+struct FNiagaraBool {
+	int32_t Value; // 0x0 (4)
+};
+
+// ScriptStruct Niagara.NiagaraInt32
+struct FNiagaraInt32 {
+	int32_t Value; // 0x0 (4)
+};
+
+// ScriptStruct Niagara.NiagaraFloat
+struct FNiagaraFloat {
+	float Value; // 0x0 (4)
+};
+
+// ScriptStruct Niagara.NiagaraUserRedirectionParameterStore
+struct FNiagaraUserRedirectionParameterStore : FNiagaraParameterStore {
+	struct TMap<Unknown, Unknown>Unknown UserParameterRedirects; // 0xB8 (80)
+};
+
+// ScriptStruct Niagara.NiagaraVariant
+struct FNiagaraVariant {
+	struct Unknown Object; // 0x0 (8)
+	struct Unknown DataInterface; // 0x8 (8)
+	struct TArray<Unknown> Bytes; // 0x10 (16)
+	enum class Unknow CurrentMode; // 0x20 (4)
 };
 

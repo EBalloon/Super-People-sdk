@@ -8,7 +8,7 @@ enum class ECameraFocusMethod : uint8 {
 };
 
 // Class CinematicCamera.CineCameraComponent
-struct UCineCameraComponent : UCameraComponent {
+class UCineCameraComponent : UCameraComponent {
 	struct Unknown FilmbackSettings; // 0x880 (12)
 	struct Unknown Filmback; // 0x88C (12)
 	struct Unknown LensSettings; // 0x898 (24)
@@ -36,7 +36,7 @@ struct UCineCameraComponent : UCameraComponent {
 };
 
 // Class CinematicCamera.CameraRig_Crane
-struct ACameraRig_Crane : UActor {
+class ACameraRig_Crane : UActor {
 	float CranePitch; // 0x310 (4)
 	float CraneYaw; // 0x314 (4)
 	float CraneArmLength; // 0x318 (4)
@@ -49,7 +49,7 @@ struct ACameraRig_Crane : UActor {
 };
 
 // Class CinematicCamera.CameraRig_Rail
-struct ACameraRig_Rail : UActor {
+class ACameraRig_Rail : UActor {
 	float CurrentPositionOnRail; // 0x310 (4)
 	char bLockOrientationToRail : 0; // 0x314 (1)
 	struct Unknown TransformComponent; // 0x318 (8)
@@ -60,9 +60,67 @@ struct ACameraRig_Rail : UActor {
 };
 
 // Class CinematicCamera.CineCameraActor
-struct ACineCameraActor : ACameraActor {
+class ACineCameraActor : ACameraActor {
 	struct Unknown LookatTrackingSettings; // 0x900 (80)
 
 	struct Unknown GetCineCameraComponent(); // Function CinematicCamera.CineCameraActor.GetCineCameraComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x339C0A0>
+};
+
+// ScriptStruct CinematicCamera.CameraLookatTrackingSettings
+struct FCameraLookatTrackingSettings {
+	char bEnableLookAtTracking : 0; // 0x0 (1)
+	char bDrawDebugLookAtTrackingPosition : 0; // 0x0 (1)
+	float LookAtTrackingInterpSpeed; // 0x4 (4)
+	struct TSoftObjectPtr<Unknown> ActorToTrack; // 0x18 (40)
+	struct Unknown RelativeOffset; // 0x40 (12)
+	char bAllowRoll : 0; // 0x4C (1)
+};
+
+// ScriptStruct CinematicCamera.CameraFocusSettings
+struct FCameraFocusSettings {
+	enum class Unknow FocusMethod; // 0x0 (1)
+	float ManualFocusDistance; // 0x4 (4)
+	struct Unknown TrackingFocusSettings; // 0x8 (56)
+	char bDrawDebugFocusPlane : 0; // 0x40 (1)
+	struct Unknown DebugFocusPlaneColor; // 0x44 (4)
+	char bSmoothFocusChanges : 0; // 0x48 (1)
+	float FocusSmoothingInterpSpeed; // 0x4C (4)
+	float FocusOffset; // 0x50 (4)
+};
+
+// ScriptStruct CinematicCamera.CameraTrackingFocusSettings
+struct FCameraTrackingFocusSettings {
+	struct TSoftObjectPtr<Unknown> ActorToTrack; // 0x0 (40)
+	struct Unknown RelativeOffset; // 0x28 (12)
+	char bDrawDebugTrackingFocusPoint : 0; // 0x34 (1)
+};
+
+// ScriptStruct CinematicCamera.NamedLensPreset
+struct FNamedLensPreset {
+	struct FString Name; // 0x0 (16)
+	struct Unknown LensSettings; // 0x10 (24)
+};
+
+// ScriptStruct CinematicCamera.CameraLensSettings
+struct FCameraLensSettings {
+	float MinFocalLength; // 0x0 (4)
+	float MaxFocalLength; // 0x4 (4)
+	float MinFStop; // 0x8 (4)
+	float MaxFStop; // 0xC (4)
+	float MinimumFocusDistance; // 0x10 (4)
+	int32_t DiaphragmBladeCount; // 0x14 (4)
+};
+
+// ScriptStruct CinematicCamera.NamedFilmbackPreset
+struct FNamedFilmbackPreset {
+	struct FString Name; // 0x0 (16)
+	struct Unknown FilmbackSettings; // 0x10 (12)
+};
+
+// ScriptStruct CinematicCamera.CameraFilmbackSettings
+struct FCameraFilmbackSettings {
+	float SensorWidth; // 0x0 (4)
+	float SensorHeight; // 0x4 (4)
+	float SensorAspectRatio; // 0x8 (4)
 };
 

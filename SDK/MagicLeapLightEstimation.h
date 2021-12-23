@@ -8,8 +8,21 @@ enum class EMagicLeapLightEstimationCamera : uint8 {
 };
 
 // Class MagicLeapLightEstimation.MagicLeapLightingTrackingComponent
-struct UMagicLeapLightingTrackingComponent : UActorComponent {
+class UMagicLeapLightingTrackingComponent : UActorComponent {
 	char UseGlobalAmbience : 0; // 0xB0 (1)
 	char UseColorTemp : 0; // 0xB1 (1)
+};
+
+// ScriptStruct MagicLeapLightEstimation.MagicLeapLightEstimationColorTemperatureState
+struct FMagicLeapLightEstimationColorTemperatureState {
+	float ColorTemperatureKelvin; // 0x0 (4)
+	struct Unknown AmbientColor; // 0x4 (16)
+	struct Unknown Timestamp; // 0x18 (8)
+};
+
+// ScriptStruct MagicLeapLightEstimation.MagicLeapLightEstimationAmbientGlobalState
+struct FMagicLeapLightEstimationAmbientGlobalState {
+	struct TArray<Unknown> AmbientIntensityNits; // 0x0 (16)
+	struct Unknown Timestamp; // 0x10 (8)
 };
 

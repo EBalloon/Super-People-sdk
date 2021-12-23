@@ -1,5 +1,5 @@
 // BlueprintGeneratedClass BP_MoveElevator.BP_MoveElevator_C
-struct ABP_MoveElevator_C : ABravoHotelMoveElevator {
+class ABP_MoveElevator_C : ABravoHotelMoveElevator {
 	struct Unknown UberGraphFrame; // 0x320 (8)
 	struct Unknown Box2; // 0x328 (8)
 	struct Unknown Box1; // 0x330 (8)
@@ -101,7 +101,7 @@ struct ABP_MoveElevator_C : ABravoHotelMoveElevator {
 	void UserConstructionScript(); // Function BP_MoveElevator.BP_MoveElevator_C.UserConstructionScript(Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void UpperMoving__FinishedFunc(); // Function BP_MoveElevator.BP_MoveElevator_C.UpperMoving__FinishedFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void UpperMoving__UpdateFunc(); // Function BP_MoveElevator.BP_MoveElevator_C.UpperMoving__UpdateFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
-	void ElevatorCloseDoor__Finished(); // Function BP_MoveElevator.BP_MoveElevator_C.ElevatorCloseDoor__Finished(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void ElevatorCloseDoor__FinishedFunc(); // Function BP_MoveElevator.BP_MoveElevator_C.ElevatorCloseDoor__FinishedFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void ElevatorCloseDoor__UpdateFunc(); // Function BP_MoveElevator.BP_MoveElevator_C.ElevatorCloseDoor__UpdateFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void ElevatorOpenDoor__FinishedFunc(); // Function BP_MoveElevator.BP_MoveElevator_C.ElevatorOpenDoor__FinishedFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void ElevatorOpenDoor__UpdateFunc(); // Function BP_MoveElevator.BP_MoveElevator_C.ElevatorOpenDoor__UpdateFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
@@ -112,7 +112,7 @@ struct ABP_MoveElevator_C : ABravoHotelMoveElevator {
 	void InteractDoor(struct Unknown ElevatorComponet); // Function BP_MoveElevator.BP_MoveElevator_C.InteractDoor(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void OnMoveDown(); // Function BP_MoveElevator.BP_MoveElevator_C.OnMoveDown(Net|NetReliableNetMulticast|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void BndEvt__Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature(struct Unknown OverlappedComponent, struct Unknown OtherActor, struct Unknown OtherComp, int32_t OtherBodyIndex, char bFromSweep, struct Unknown& SweepResult); // Function BP_MoveElevator.BP_MoveElevator_C.BndEvt__Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature(HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
-	void BndEvt__Box_K2Node_ComponentBoundEvent_2_ComponentEndOv(struct Unknown OverlappedComponent, struct Unknown OtherActor, struct Unknown OtherComp, int32_t OtherBodyIndex); // Function BP_MoveElevator.BP_MoveElevator_C.BndEvt__Box_K2Node_ComponentBoundEvent_2_ComponentEndOv(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void BndEvt__Box_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature(struct Unknown OverlappedComponent, struct Unknown OtherActor, struct Unknown OtherComp, int32_t OtherBodyIndex); // Function BP_MoveElevator.BP_MoveElevator_C.BndEvt__Box_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void AttachItem(struct Unknown AttachActor); // Function BP_MoveElevator.BP_MoveElevator_C.AttachItem(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void OnChangeElevatorState(); // Function BP_MoveElevator.BP_MoveElevator_C.OnChangeElevatorState(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void MoveStartEvent(float StartTime, char IsInit); // Function BP_MoveElevator.BP_MoveElevator_C.MoveStartEvent(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>

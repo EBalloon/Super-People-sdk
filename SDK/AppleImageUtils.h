@@ -18,7 +18,7 @@ enum class ETextureRotationDirection : uint8 {
 };
 
 // Class AppleImageUtils.AppleImageUtilsBaseAsyncTaskBlueprintProxy
-struct UAppleImageUtilsBaseAsyncTaskBlueprintProxy : Object {
+class UAppleImageUtilsBaseAsyncTaskBlueprintProxy : Object {
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x40 (16)
 	struct Unknown ConversionResult; // 0x60 (32)
@@ -27,5 +27,11 @@ struct UAppleImageUtilsBaseAsyncTaskBlueprintProxy : Object {
 	struct Unknown CreateProxyObjectForConvertToPNG(struct Unknown SourceImage, char bWantColor, char bUseGpu, float Scale, enum class Unknow Rotate); // Function AppleImageUtils.AppleImageUtilsBaseAsyncTaskBlueprintProxy.CreateProxyObjectForConvertToPNG(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x184F370>
 	struct Unknown CreateProxyObjectForConvertToJPEG(struct Unknown SourceImage, int32_t Quality, char bWantColor, char bUseGpu, float Scale, enum class Unknow Rotate); // Function AppleImageUtils.AppleImageUtilsBaseAsyncTaskBlueprintProxy.CreateProxyObjectForConvertToJPEG(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x184F1A0>
 	struct Unknown CreateProxyObjectForConvertToHEIF(struct Unknown SourceImage, int32_t Quality, char bWantColor, char bUseGpu, float Scale, enum class Unknow Rotate); // Function AppleImageUtils.AppleImageUtilsBaseAsyncTaskBlueprintProxy.CreateProxyObjectForConvertToHEIF(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x184EFD0>
+};
+
+// ScriptStruct AppleImageUtils.AppleImageUtilsImageConversionResult
+struct FAppleImageUtilsImageConversionResult {
+	struct FString Error; // 0x0 (16)
+	struct TArray<Unknown> ImageData; // 0x10 (16)
 };
 

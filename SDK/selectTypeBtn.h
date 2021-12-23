@@ -1,5 +1,5 @@
 // WidgetBlueprintGeneratedClass selectTypeBtn.selectTypeBtn_C
-struct UselectTypeBtn_C : UUserWidget {
+class UselectTypeBtn_C : UUserWidget {
 	struct Unknown UberGraphFrame; // 0x248 (8)
 	struct Unknown Button_43; // 0x250 (8)
 	struct Unknown Image_43; // 0x258 (8)

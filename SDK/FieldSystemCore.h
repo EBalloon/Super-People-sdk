@@ -44,7 +44,7 @@ enum class EFieldFalloffType : uint8 {
 // Enum FieldSystemCore.EFieldResolutionType
 enum class EFieldResolutionType : uint8 {
 	Field_Resolution_Minimal = 0
-	Field_Resolution_Disabled = 1
+	Field_Resolution_DisabledParents = 1
 	Field_Resolution_Maximum = 2
 	Field_Resolution_Max = 3
 };

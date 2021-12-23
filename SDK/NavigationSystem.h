@@ -1,10 +1,10 @@
-// Enum NavigationSystem.E
-enum class E : uint8 {
-	E = 0
-	E = 1
-	E = 2
-	E = 3
-	E = 4
+// Enum NavigationSystem.ERuntimeGenerationType
+enum class ERuntimeGenerationType : uint8 {
+	ERuntimeGenerationType = 0
+	ERuntimeGenerationType = 1
+	ERuntimeGenerationType = 2
+	ERuntimeGenerationType = 3
+	ERuntimeGenerationType = 4
 };
 
 // Enum NavigationSystem.ENavCostDisplay
@@ -23,16 +23,16 @@ enum class ENavSystemOverridePolicy : uint8 {
 	ENavSystemOverridePolicy = 3
 };
 
-// Enum NavigationSystem.E
-enum class E : uint8 {
-	E = 0
-	E = 1
-	E = 2
-	E = 3
+// Enum NavigationSystem.ERecastPartitioning
+enum class ERecastPartitioning : uint8 {
+	ERecastPartitioning = 0
+	ERecastPartitioning = 1
+	ERecastPartitioning = 2
+	ERecastPartitioning = 3
 };
 
 // Class NavigationSystem.NavigationData
-struct ANavigationData : UActor {
+class ANavigationData : UActor {
 	struct Unknown RenderingComp; // 0x318 (8)
 	struct Unknown NavDataConfig; // 0x320 (120)
 	char bEnableDrawing : 0; // 0x398 (1)
@@ -40,7 +40,7 @@ struct ANavigationData : UActor {
 	char bAutoDestroyWhenNoNavigation : 0; // 0x398 (1)
 	char bCanBeMainNavData : 0; // 0x398 (1)
 	char bCanSpawnOnRebuild : 0; // 0x398 (1)
-	char b : 0; // 0x398 (1)
+	char bRebuildAtRuntime : 0; // 0x398 (1)
 	enum class Unknow RuntimeGeneration; // 0x39C (1)
 	float ObservedPathsTickInterval; // 0x3A0 (4)
 	uint32_t DataVersion; // 0x3A4 (4)
@@ -48,7 +48,7 @@ struct ANavigationData : UActor {
 };
 
 // Class NavigationSystem.NavArea
-struct UNavArea : UNavAreaBase {
+class UNavArea : UNavAreaBase {
 	float DefaultCost; // 0x30 (4)
 	float FixedAreaEnteringCost; // 0x34 (4)
 	struct Unknown DrawColor; // 0x38 (4)
@@ -72,7 +72,7 @@ struct UNavArea : UNavAreaBase {
 };
 
 // Class NavigationSystem.NavAreaMeta_SwitchByAgent
-struct UNavAreaMeta_SwitchByAgent : UNavAreaMeta {
+class UNavAreaMeta_SwitchByAgent : UNavAreaMeta {
 	struct Unknown* Agent0Area; // 0x48 (8)
 	struct Unknown* Agent1Area; // 0x50 (8)
 	struct Unknown* Agent2Area; // 0x58 (8)
@@ -92,7 +92,7 @@ struct UNavAreaMeta_SwitchByAgent : UNavAreaMeta {
 };
 
 // Class NavigationSystem.NavCollision
-struct UNavCollision : UNavCollisionBase {
+class UNavCollision : UNavCollisionBase {
 	struct TArray<Unknown> CylinderCollision; // 0x80 (16)
 	struct TArray<Unknown> BoxCollision; // 0x90 (16)
 	struct Unknown* AreaClass; // 0xA0 (8)
@@ -101,20 +101,20 @@ struct UNavCollision : UNavCollisionBase {
 };
 
 // Class NavigationSystem.NavigationGraphNodeComponent
-struct UNavigationGraphNodeComponent : USceneComponent {
+class UNavigationGraphNodeComponent : USceneComponent {
 	struct Unknown Node; // 0x238 (24)
 	struct Unknown NextNodeComponent; // 0x250 (8)
 	struct Unknown PrevNodeComponent; // 0x258 (8)
 };
 
 // Class NavigationSystem.NavigationInvokerComponent
-struct UNavigationInvokerComponent : UActorComponent {
+class UNavigationInvokerComponent : UActorComponent {
 	float TileGenerationRadius; // 0xB0 (4)
 	float TileRemovalRadius; // 0xB4 (4)
 };
 
 // Class NavigationSystem.NavigationPath
-struct UNavigationPath : Object {
+class UNavigationPath : Object {
 	struct FMulticastInlineDelegate PathUpdatedNotifier; // 0x28 (16)
 	struct TArray<Unknown> PathPoints; // 0x38 (16)
 	char RecalculateOnInvalidation; // 0x48 (1)
@@ -130,26 +130,26 @@ struct UNavigationPath : Object {
 };
 
 // Class NavigationSystem.NavigationQueryFilter
-struct UNavigationQueryFilter : Object {
+class UNavigationQueryFilter : Object {
 	struct TArray<Unknown> Areas; // 0x28 (16)
 	struct Unknown IncludeFlags; // 0x38 (4)
 	struct Unknown ExcludeFlags; // 0x3C (4)
 };
 
 // Class NavigationSystem.NavigationSystemV1
-struct UNavigationSystemV1 : UNavigationSystemBase {
+class UNavigationSystemV1 : UNavigationSystemBase {
 	struct Unknown MainNavData; // 0x28 (8)
 	struct Unknown AbstractNavData; // 0x30 (8)
 	struct FName DefaultAgentName; // 0x38 (8)
 	struct TSoftClassPtr<UObject> CrowdManagerClass; // 0x40 (40)
 	char bAutoCreateNavigationData : 0; // 0x68 (1)
 	char bSpawnNavDataInNavBoundsLevel : 0; // 0x68 (1)
-	char bAllowClientSideNav : 0; // 0x68 (1)
+	char bAllowClientSideNavoundsLe : 0; // 0x68 (1)
 	char bShouldDiscardSubLevelNavData : 0; // 0x68 (1)
 	char bTickWhilePaused : 0; // 0x68 (1)
 	char bSupportRebuilding : 0; // 0x68 (1)
 	char bInitialBuildingLocked : 0; // 0x68 (1)
-	char bSkipAgentHeightCheckWhen : 0; // 0x69 (1)
+	char bSkipAgentHeightCheckWhenPickingNavData : 0; // 0x69 (1)
 	enum class Unknow DataGatheringMode; // 0x6C (1)
 	char bGenerateNavigationOnlyAroundNavigationInvokers : 0; // 0x70 (1)
 	float ActiveTilesUpdateInterval; // 0x74 (4)
@@ -180,7 +180,7 @@ struct UNavigationSystemV1 : UNavigationSystemBase {
 	char IsNavigationBeingBuiltOrLocked(struct Unknown WorldContextObject); // Function NavigationSystem.NavigationSystemV1.IsNavigationBeingBuiltOrLocked(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1BC90>
 	char IsNavigationBeingBuilt(struct Unknown WorldContextObject); // Function NavigationSystem.NavigationSystemV1.IsNavigationBeingBuilt(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1BC10>
 	struct Unknown GetRandomReachablePointInRadius(struct Unknown WorldContextObject, struct Unknown& Origin, float Radius, struct Unknown NavData, struct Unknown* FilterClass); // Function NavigationSystem.NavigationSystemV1.GetRandomReachablePointInRadius(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1BA40>
-	struct Unknown GetRandomPointInNav(struct Unknown WorldContextObject, struct Unknown& Origin, float Radius, struct Unknown NavData, struct Unknown* FilterClass); // Function NavigationSystem.NavigationSystemV1.GetRandomPointInNav(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1B870>
+	struct Unknown GetRandomPointInNavigableRadius(struct Unknown WorldContextObject, struct Unknown& Origin, float Radius, struct Unknown NavData, struct Unknown* FilterClass); // Function NavigationSystem.NavigationSystemV1.GetRandomPointInNav(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1B870>
 	char GetPathLength(struct Unknown WorldContextObject, struct Unknown& PathStart, struct Unknown& PathEnd, float& PathLength, struct Unknown NavData, struct Unknown* FilterClass); // Function NavigationSystem.NavigationSystemV1.GetPathLength(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1B650>
 	char GetPathCost(struct Unknown WorldContextObject, struct Unknown& PathStart, struct Unknown& PathEnd, float& PathCost, struct Unknown NavData, struct Unknown* FilterClass); // Function NavigationSystem.NavigationSystemV1.GetPathCost(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1B400>
 	struct Unknown GetNavigationSystem(struct Unknown WorldContextObject); // Function NavigationSystem.NavigationSystemV1.GetNavigationSystem(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1B350>
@@ -189,7 +189,7 @@ struct UNavigationSystemV1 : UNavigationSystemBase {
 };
 
 // Class NavigationSystem.NavigationSystemModuleConfig
-struct UNavigationSystemModuleConfig : UNavigationSystemConfig {
+class UNavigationSystemModuleConfig : UNavigationSystemConfig {
 	char bStrictlyStatic : 0; // 0x50 (1)
 	char bCreateOnClient : 0; // 0x50 (1)
 	char bAutoSpawnMissingNavData : 0; // 0x50 (1)
@@ -197,7 +197,7 @@ struct UNavigationSystemModuleConfig : UNavigationSystemConfig {
 };
 
 // Class NavigationSystem.NavigationTestingActor
-struct ANavigationTestingActor : UActor {
+class ANavigationTestingActor : UActor {
 	struct Unknown CapsuleComponent; // 0x320 (8)
 	struct Unknown InvokerComponent; // 0x328 (8)
 	char bActAsNavigationInv : 0; // 0x330 (1)
@@ -232,20 +232,20 @@ struct ANavigationTestingActor : UActor {
 };
 
 // Class NavigationSystem.NavLinkComponent
-struct UNavLinkComponent : UPrimitiveComponent {
+class UNavLinkComponent : UPrimitiveComponent {
 	struct TArray<Unknown> LINKS; // 0x4C0 (16)
 };
 
 // Class NavigationSystem.NavRelevantComponent
-struct UNavRelevantComponent : UActorComponent {
+class UNavRelevantComponent : UActorComponent {
 	char bAttachToOwnersRoot : 0; // 0xD4 (1)
 	struct Unknown CachedNavParent; // 0xD8 (8)
 
-	void SetNavigationRelevancy(char b); // Function NavigationSystem.NavRelevantComponent.SetNavigationRelevancy(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1F230>
+	void SetNavigationRelevancy(char bRelevant); // Function NavigationSystem.NavRelevantComponent.SetNavigationRelevancy(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1F230>
 };
 
 // Class NavigationSystem.NavLinkCustomComponent
-struct UNavLinkCustomComponent : UNavRelevantComponent {
+class UNavLinkCustomComponent : UNavRelevantComponent {
 	uint32_t NavLinkUserId; // 0xE8 (4)
 	struct Unknown* EnabledAreaClass; // 0xF0 (8)
 	struct Unknown* DisabledAreaClass; // 0xF8 (8)
@@ -266,12 +266,12 @@ struct UNavLinkCustomComponent : UNavRelevantComponent {
 };
 
 // Class NavigationSystem.NavMeshBoundsVolume
-struct ANavMeshBoundsVolume : AVolume {
+class ANavMeshBoundsVolume : AVolume {
 	struct Unknown SupportedAgents; // 0x348 (4)
 };
 
 // Class NavigationSystem.NavModifierComponent
-struct UNavModifierComponent : UNavRelevantComponent {
+class UNavModifierComponent : UNavRelevantComponent {
 	struct Unknown* AreaClass; // 0xE0 (8)
 	struct Unknown FailsafeExtent; // 0xE8 (12)
 	char bIncludeAgentHeight : 0; // 0xF4 (1)
@@ -280,21 +280,21 @@ struct UNavModifierComponent : UNavRelevantComponent {
 };
 
 // Class NavigationSystem.NavModifierVolume
-struct ANavModifierVolume : AVolume {
+class ANavModifierVolume : AVolume {
 	struct Unknown* AreaClass; // 0x350 (8)
 
 	void SetAreaClass(struct Unknown* NewAreaClass); // Function NavigationSystem.NavModifierVolume.SetAreaClass(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1F130>
 };
 
 // Class NavigationSystem.NavSystemConfigOverride
-struct ANavSystemConfigOverride : UActor {
+class ANavSystemConfigOverride : UActor {
 	struct Unknown NavigationSystemConfig; // 0x310 (8)
 	enum class Unknow OverridePolicy; // 0x318 (1)
 	char bLoadOnClient : 0; // 0x319 (1)
 };
 
 // Class NavigationSystem.RecastNavMesh
-struct ARecastNavMesh : ANavigationData {
+class ARecastNavMesh : ANavigationData {
 	char bDrawTriangleEdges : 0; // 0x4F0 (1)
 	char bDrawPolyEdges : 0; // 0x4F0 (1)
 	char bDrawFilledPolys : 0; // 0x4F0 (1)
@@ -356,5 +356,91 @@ struct ARecastNavMesh : ANavigationData {
 	float VerticalDeviationFromGroundCompensation; // 0x570 (4)
 
 	char K2_ReplaceAreaInTileBounds(struct Unknown Bounds, struct Unknown* OldArea, struct Unknown* NewArea, char ReplaceLinks); // Function NavigationSystem.RecastNavMesh.K2_ReplaceAreaInTileBounds(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1EFA0>
+};
+
+// ScriptStruct NavigationSystem.NavCollisionBox
+struct FNavCollisionBox {
+	struct Unknown Offset; // 0x0 (12)
+	struct Unknown Extent; // 0xC (12)
+};
+
+// ScriptStruct NavigationSystem.NavCollisionCylinder
+struct FNavCollisionCylinder {
+	struct Unknown Offset; // 0x0 (12)
+	float Radius; // 0xC (4)
+	float Height; // 0x10 (4)
+};
+
+// ScriptStruct NavigationSystem.SupportedAreaData
+struct FSupportedAreaData {
+	struct FString AreaClassName; // 0x0 (16)
+	int32_t AreaID; // 0x10 (4)
+	struct Unknown* AreaClass; // 0x18 (8)
+};
+
+// ScriptStruct NavigationSystem.NavGraphNode
+struct FNavGraphNode {
+	struct Unknown Owner; // 0x0 (8)
+};
+
+// ScriptStruct NavigationSystem.NavigationFilterFlags
+struct FNavigationFilterFlags {
+	char bNavFlag0 : 0; // 0x0 (1)
+	char bNavFlag1 : 0; // 0x0 (1)
+	char bNavFlag2 : 0; // 0x0 (1)
+	char bNavFlag3 : 0; // 0x0 (1)
+	char bNavFlag4 : 0; // 0x0 (1)
+	char bNavFlag5 : 0; // 0x0 (1)
+	char bNavFlag6 : 0; // 0x0 (1)
+	char bNavFlag7 : 0; // 0x0 (1)
+	char bNavFlag8 : 0; // 0x1 (1)
+	char bNavFlag9 : 0; // 0x1 (1)
+	char bNavFlag10 : 0; // 0x1 (1)
+	char bNavFlag11 : 0; // 0x1 (1)
+	char bNavFlag12 : 0; // 0x1 (1)
+	char bNavFlag13 : 0; // 0x1 (1)
+	char bNavFlag14 : 0; // 0x1 (1)
+	char bNavFlag15 : 0; // 0x1 (1)
+};
+
+// ScriptStruct NavigationSystem.NavigationFilterArea
+struct FNavigationFilterArea {
+	struct Unknown* AreaClass; // 0x0 (8)
+	float TravelCostOverride; // 0x8 (4)
+	float EnteringCostOverride; // 0xC (4)
+	char bIsExcluded : 0; // 0x10 (1)
+	char bOverrideTravelCost : 0; // 0x10 (1)
+	char bOverrideEnteringCost : 0; // 0x10 (1)
+};
+
+// ScriptStruct NavigationSystem.NavLinkCustomInstanceData
+struct FNavLinkCustomInstanceData : FActorComponentInstanceData {
+	uint32_t NavLinkUserId; // 0x58 (4)
+};
+
+// ScriptStruct NavigationSystem.RecastNavMeshGenerationProperties
+struct FRecastNavMeshGenerationProperties {
+	int32_t TilePoolSize; // 0x0 (4)
+	float TileSizeUU; // 0x4 (4)
+	float CellSize; // 0x8 (4)
+	float CellHeight; // 0xC (4)
+	float AgentRadius; // 0x10 (4)
+	float AgentHeight; // 0x14 (4)
+	float AgentMaxSlope; // 0x18 (4)
+	float AgentMaxStepHeight; // 0x1C (4)
+	float MinRegionArea; // 0x20 (4)
+	float MergeRegionSize; // 0x24 (4)
+	float MaxSimplificationError; // 0x28 (4)
+	int32_t TileNumberHardLimit; // 0x2C (4)
+	char RegionPartitioning; // 0x30 (1)
+	char LayerPartitioning; // 0x31 (1)
+	int32_t RegionChunkSplits; // 0x34 (4)
+	int32_t LayerChunkSplits; // 0x38 (4)
+	char bSortNavigationAreasByCost : 0; // 0x3C (1)
+	char bPerformVoxelFiltering : 0; // 0x3C (1)
+	char bMarkLowHeightAreas : 0; // 0x3C (1)
+	char bFilterLowSpanSequences : 0; // 0x3C (1)
+	char bFilterLowSpanFromTileCache : 0; // 0x3C (1)
+	char bFixedTilePoolSize : 0; // 0x3C (1)
 };
 

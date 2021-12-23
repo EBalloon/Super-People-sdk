@@ -121,18 +121,18 @@ enum class ESpawnOwnership : uint8 {
 };
 
 // Class MovieScene.MovieSceneSignedObject
-struct UMovieSceneSignedObject : Object {
+class UMovieSceneSignedObject : Object {
 	struct Unknown Signature; // 0x28 (16)
 };
 
 // Class MovieScene.MovieSceneTrack
-struct UMovieSceneTrack : UMovieSceneSignedObject {
+class UMovieSceneTrack : UMovieSceneSignedObject {
 	struct Unknown EvalOptions; // 0x50 (4)
 	char bIsEvalDisabled : 0; // 0x55 (1)
 };
 
 // Class MovieScene.MovieSceneSection
-struct UMovieSceneSection : UMovieSceneSignedObject {
+class UMovieSceneSection : UMovieSceneSignedObject {
 	struct Unknown EvalOptions; // 0x50 (2)
 	struct Unknown Easing; // 0x58 (56)
 	struct Unknown SectionRange; // 0x90 (16)
@@ -169,7 +169,7 @@ struct UMovieSceneSection : UMovieSceneSignedObject {
 };
 
 // Class MovieScene.MovieSceneSequence
-struct UMovieSceneSequence : UMovieSceneSignedObject {
+class UMovieSceneSequence : UMovieSceneSignedObject {
 	struct Unknown PrecompiledEvaluationTemplate; // 0x50 (752)
 	enum class Unknow DefaultCompletionMode; // 0x340 (1)
 	char bParentContextsAreSignificant : 0; // 0x341 (1)
@@ -180,14 +180,14 @@ struct UMovieSceneSequence : UMovieSceneSignedObject {
 };
 
 // Class MovieScene.MovieSceneSequencePlayer
-struct UMovieSceneSequencePlayer : Object {
+class UMovieSceneSequencePlayer : Object {
 	struct FMulticastInlineDelegate OnPlay; // 0x408 (16)
 	struct FMulticastInlineDelegate OnPlayReverse; // 0x418 (16)
 	struct FMulticastInlineDelegate OnStop; // 0x428 (16)
 	struct FMulticastInlineDelegate OnPause; // 0x438 (16)
 	struct FMulticastInlineDelegate OnFinished; // 0x448 (16)
 	enum class Unknown status; // 0x458 (1)
-	char b : 0; // 0x45C (1)
+	char bReversePlayback : 0; // 0x45C (1)
 	struct Unknown Sequence; // 0x460 (8)
 	struct Unknown StartTime; // 0x468 (4)
 	int32_t DurationFrames; // 0x46C (4)
@@ -246,7 +246,7 @@ struct UMovieSceneSequencePlayer : Object {
 };
 
 // Class MovieScene.MovieSceneSubSection
-struct UMovieSceneSubSection : UMovieSceneSection {
+class UMovieSceneSubSection : UMovieSceneSection {
 	struct Unknown Parameters; // 0xE0 (36)
 	float StartOffset; // 0x104 (4)
 	float TimeScale; // 0x108 (4)
@@ -261,12 +261,12 @@ struct UMovieSceneSubSection : UMovieSceneSection {
 };
 
 // Class MovieScene.MovieSceneSubTrack
-struct UMovieSceneSubTrack : UMovieSceneNameableTrack {
+class UMovieSceneSubTrack : UMovieSceneNameableTrack {
 	struct TArray<Unknown> Sections; // 0x58 (16)
 };
 
 // Class MovieScene.MovieScene
-struct UMovieScene : UMovieSceneSignedObject {
+class UMovieScene : UMovieSceneSignedObject {
 	struct TArray<Unknown> Spawnables; // 0x50 (16)
 	struct TArray<Unknown> Possessables; // 0x60 (16)
 	struct TArray<Unknown> ObjectBindings; // 0x70 (16)
@@ -284,22 +284,22 @@ struct UMovieScene : UMovieSceneSignedObject {
 };
 
 // Class MovieScene.MovieSceneBindingOv
-struct UMovieSceneBindingOv : Object {
+class UMovieSceneBindingOv : Object {
 	struct TArray<Unknown> BindingData; // 0x28 (16)
 };
 
 // Class MovieScene.MovieSceneBuiltInEasingFunction
-struct UMovieSceneBuiltInEasingFunction : Object {
+class UMovieSceneBuiltInEasingFunction : Object {
 	enum class Unknow Type; // 0x30 (1)
 };
 
 // Class MovieScene.MovieSceneEasingExternalCurve
-struct UMovieSceneEasingExternalCurve : Object {
+class UMovieSceneEasingExternalCurve : Object {
 	struct Unknown Curve; // 0x30 (8)
 };
 
 // Class MovieScene.MovieSceneFolder
-struct UMovieSceneFolder : Object {
+class UMovieSceneFolder : Object {
 	struct FName FolderName; // 0x28 (8)
 	struct TArray<Unknown> ChildFolders; // 0x30 (16)
 	struct TArray<Unknown> ChildMasterTracks; // 0x40 (16)
@@ -307,18 +307,474 @@ struct UMovieSceneFolder : Object {
 };
 
 // Class MovieScene.TestMovieSceneTrack
-struct UTestMovieSceneTrack : UMovieSceneTrack {
+class UTestMovieSceneTrack : UMovieSceneTrack {
 	char bHighPassFilter : 0; // 0x58 (1)
 	struct TArray<Unknown> SectionArray; // 0x60 (16)
 };
 
 // Class MovieScene.TestMovieSceneSequence
-struct UTestMovieSceneSequence : UMovieSceneSequence {
+class UTestMovieSceneSequence : UMovieSceneSequence {
 	struct Unknown MovieScene; // 0x348 (8)
 };
 
 // Class MovieScene.TestMovieSceneSubTrack
-struct UTestMovieSceneSubTrack : UMovieSceneSubTrack {
+class UTestMovieSceneSubTrack : UMovieSceneSubTrack {
 	struct TArray<Unknown> SectionArray; // 0x68 (16)
+};
+
+// ScriptStruct MovieScene.MovieSceneEvalTemplate
+struct FMovieSceneEvalTemplate : FMovieSceneEvalTemplateBase {
+	enum class Unknow CompletionMode; // 0x10 (1)
+	struct TWeakObjectPtr<struct Unknown> SourceSectionPtr; // 0x14 (8)
+};
+
+// ScriptStruct MovieScene.MovieSceneBoolChannel
+struct FMovieSceneBoolChannel : FMovieSceneChannel {
+	struct TArray<Unknown> Times; // 0x8 (16)
+	char DefaultValue : 0; // 0x18 (1)
+	char bHasDefaultValue : 0; // 0x19 (1)
+	struct TArray<Unknown> Values; // 0x20 (16)
+};
+
+// ScriptStruct MovieScene.MovieSceneFloatChannel
+struct FMovieSceneFloatChannel : FMovieSceneChannel {
+	char PreInfinityExtrap; // 0x8 (1)
+	char PostInfinityExtrap; // 0x9 (1)
+	struct TArray<Unknown> Times; // 0x10 (16)
+	struct TArray<Unknown> Values; // 0x20 (16)
+	float DefaultValue; // 0x30 (4)
+	char bHasDefaultValue : 0; // 0x34 (1)
+	struct Unknown KeyHandles; // 0x38 (96)
+	struct Unknown TickResolution; // 0x98 (8)
+};
+
+// ScriptStruct MovieScene.MovieSceneFloatValue
+struct FMovieSceneFloatValue {
+	float Value; // 0x0 (4)
+	struct Unknown Tangent; // 0x4 (20)
+	char InterpMode; // 0x18 (1)
+	char TangentMode; // 0x19 (1)
+	char PaddingByte; // 0x1A (1)
+};
+
+// ScriptStruct MovieScene.MovieSceneTangentData
+struct FMovieSceneTangentData {
+	float ArriveTangent; // 0x0 (4)
+	float LeaveTangent; // 0x4 (4)
+	float ArriveTangentWeight; // 0x8 (4)
+	float LeaveTangentWeight; // 0xC (4)
+	char TangentWeightMode; // 0x10 (1)
+};
+
+// ScriptStruct MovieScene.MovieSceneIntegerChannel
+struct FMovieSceneIntegerChannel : FMovieSceneChannel {
+	struct TArray<Unknown> Times; // 0x8 (16)
+	int32_t DefaultValue; // 0x18 (4)
+	char bHasDefaultValue : 0; // 0x1C (1)
+	struct TArray<Unknown> Values; // 0x20 (16)
+};
+
+// ScriptStruct MovieScene.MovieScenePropertySectionTemplate
+struct FMovieScenePropertySectionTemplate : FMovieSceneEvalTemplate {
+	struct Unknown PropertyData; // 0x20 (40)
+};
+
+// ScriptStruct MovieScene.MovieScenePropertySectionData
+struct FMovieScenePropertySectionData {
+	struct FName PropertyName; // 0x0 (8)
+	struct FString PropertyPath; // 0x8 (16)
+	struct FName FunctionName; // 0x18 (8)
+	struct FName NotifyFunctionName; // 0x20 (8)
+};
+
+// ScriptStruct MovieScene.MovieSceneEvaluationOperand
+struct FMovieSceneEvaluationOperand {
+	struct Unknown ObjectBindingID; // 0x0 (16)
+	struct Unknown SequenceID; // 0x10 (4)
+};
+
+// ScriptStruct MovieScene.MovieSceneSequenceID
+struct FMovieSceneSequenceID {
+	uint32_t Value; // 0x0 (4)
+};
+
+// ScriptStruct MovieScene.MovieSceneSectionGroup
+struct FMovieSceneSectionGroup {
+	struct TArray<Unknown> Sections; // 0x0 (16)
+};
+
+// ScriptStruct MovieScene.MovieSceneObjectBindingIDs
+struct FMovieSceneObjectBindingIDs {
+	struct TArray<Unknown> IDs; // 0x0 (16)
+};
+
+// ScriptStruct MovieScene.MovieSceneObjectBindingID
+struct FMovieSceneObjectBindingID {
+	int32_t SequenceID; // 0x0 (4)
+	enum class Unknow Space; // 0x4 (1)
+	struct Unknown Guid; // 0x8 (16)
+};
+
+// ScriptStruct MovieScene.MovieSceneTrackLabels
+struct FMovieSceneTrackLabels {
+	struct TArray<Unknown> Strings; // 0x0 (16)
+};
+
+// ScriptStruct MovieScene.MovieSceneEditorData
+struct FMovieSceneEditorData {
+	struct TMap<Unknown, Unknown>Unknown ExpansionStates; // 0x0 (80)
+	struct TArray<Unknown> PinnedNodes; // 0x50 (16)
+	double ViewStart; // 0x60 (8)
+	double ViewEnd; // 0x68 (8)
+	double WorkStart; // 0x70 (8)
+	double WorkEnd; // 0x78 (8)
+	struct TSet<Unknown> MarkedFrames; // 0x80 (80)
+	struct Unknown WorkingRange; // 0xD0 (16)
+	struct Unknown ViewRange; // 0xE0 (16)
+};
+
+// ScriptStruct MovieScene.MovieSceneExpansionState
+struct FMovieSceneExpansionState {
+	char bExpanded : 0; // 0x0 (1)
+};
+
+// ScriptStruct MovieScene.MovieSceneMarkedFrame
+struct FMovieSceneMarkedFrame {
+	struct Unknown FrameNumber; // 0x0 (4)
+	struct FString Label; // 0x8 (16)
+};
+
+// ScriptStruct MovieScene.MovieSceneTimecodeSource
+struct FMovieSceneTimecodeSource {
+	struct Unknown Timecode; // 0x0 (20)
+	struct Unknown DeltaFrame; // 0x14 (4)
+};
+
+// ScriptStruct MovieScene.MovieSceneBinding
+struct FMovieSceneBinding {
+	struct Unknown ObjectGuid; // 0x0 (16)
+	struct FString BindingName; // 0x10 (16)
+	struct TArray<Unknown> Tracks; // 0x20 (16)
+};
+
+// ScriptStruct MovieScene.MovieSceneBindingOv
+struct FMovieSceneBindingOv {
+	struct Unknown ObjectBindingID; // 0x0 (24)
+	struct TWeakObjectPtr<struct Unknown> Object; // 0x18 (8)
+	char bOverridesDefault : 0; // 0x20 (1)
+};
+
+// ScriptStruct MovieScene.OptionalMovieSceneBlendType
+struct FOptionalMovieSceneBlendType {
+	enum class Unknow BlendType; // 0x0 (1)
+	char bIsValid : 0; // 0x1 (1)
+};
+
+// ScriptStruct MovieScene.MovieSceneByteChannel
+struct FMovieSceneByteChannel : FMovieSceneChannel {
+	struct TArray<Unknown> Times; // 0x8 (16)
+	char DefaultValue; // 0x18 (1)
+	char bHasDefaultValue : 0; // 0x19 (1)
+	struct TArray<Unknown> Values; // 0x20 (16)
+	struct Unknown Enum; // 0x30 (8)
+};
+
+// ScriptStruct MovieScene.MovieSceneEvaluationField
+struct FMovieSceneEvaluationField {
+	struct TArray<Unknown> Ranges; // 0x0 (16)
+	struct TArray<Unknown> Groups; // 0x10 (16)
+	struct TArray<Unknown> MetaData; // 0x20 (16)
+};
+
+// ScriptStruct MovieScene.MovieSceneEvaluationMetaData
+struct FMovieSceneEvaluationMetaData {
+	struct TArray<Unknown> ActiveSequences; // 0x0 (16)
+	struct TArray<Unknown> ActiveEntities; // 0x10 (16)
+	struct TMap<Unknown, Unknown>Unknown SubTemplateSerialNumbers; // 0x20 (80)
+};
+
+// ScriptStruct MovieScene.MovieSceneOrderedEv
+struct FMovieSceneOrderedEv {
+	struct Unknown Key; // 0x0 (12)
+	uint16_t SetupIndex; // 0xC (2)
+	uint16_t TearDownIndex; // 0xE (2)
+};
+
+// ScriptStruct MovieScene.MovieSceneEvaluationKey
+struct FMovieSceneEvaluationKey {
+	struct Unknown SequenceID; // 0x0 (4)
+	struct Unknown TrackIdentifier; // 0x4 (4)
+	uint32_t SectionIndex; // 0x8 (4)
+};
+
+// ScriptStruct MovieScene.MovieSceneTrackIdentifier
+struct FMovieSceneTrackIdentifier {
+	uint32_t Value; // 0x0 (4)
+};
+
+// ScriptStruct MovieScene.MovieSceneEvaluationGroup
+struct FMovieSceneEvaluationGroup {
+	struct TArray<Unknown> LUTIndices; // 0x0 (16)
+	struct TArray<Unknown> SegmentPtrLUT; // 0x10 (16)
+};
+
+// ScriptStruct MovieScene.MovieSceneEvaluationFieldTrackPtr
+struct FMovieSceneEvaluationFieldTrackPtr {
+	struct Unknown SequenceID; // 0x0 (4)
+	struct Unknown TrackIdentifier; // 0x4 (4)
+};
+
+// ScriptStruct MovieScene.MovieSceneEvaluationFieldSegmentPtr
+struct FMovieSceneEvaluationFieldSegmentPtr : FMovieSceneEvaluationFieldTrackPtr {
+	struct Unknown SegmentID; // 0x8 (4)
+};
+
+// ScriptStruct MovieScene.MovieSceneSegmentIdentifier
+struct FMovieSceneSegmentIdentifier {
+	int32_t IdentifierIndex; // 0x0 (4)
+};
+
+// ScriptStruct MovieScene.MovieSceneEvaluationGroupLUTIndex
+struct FMovieSceneEvaluationGroupLUTIndex {
+	int32_t LUTOffset; // 0x0 (4)
+	int32_t NumInitPtrs; // 0x4 (4)
+	int32_t NumEvalPtrs; // 0x8 (4)
+};
+
+// ScriptStruct MovieScene.MovieSceneEvaluationTemplate
+struct FMovieSceneEvaluationTemplate {
+	struct TMap<Unknown, Unknown>Unknown Tracks; // 0x0 (80)
+	struct Unknown EvaluationField; // 0xA0 (48)
+	struct Unknown Hierarchy; // 0xD0 (160)
+	struct Unknown SequenceSignature; // 0x170 (16)
+	struct Unknown TemplateSerialNumber; // 0x180 (4)
+	struct Unknown TemplateLedger; // 0x188 (168)
+	struct Unknown TrackFieldData; // 0x230 (96)
+	struct Unknown SubSectionFieldData; // 0x290 (96)
+};
+
+// ScriptStruct MovieScene.MovieSceneTemplateGenerationLedger
+struct FMovieSceneTemplateGenerationLedger {
+	struct Unknown LastTrackIdentifier; // 0x0 (4)
+	struct TMap<Unknown, Unknown>Unknown TrackSignatureToTrackIdentifier; // 0x8 (80)
+	struct TMap<Unknown, Unknown>Unknown SubSectionRanges; // 0x58 (80)
+};
+
+// ScriptStruct MovieScene.MovieSceneEvaluationTemplateSerialNumber
+struct FMovieSceneEvaluationTemplateSerialNumber {
+	uint32_t Value; // 0x0 (4)
+};
+
+// ScriptStruct MovieScene.MovieSceneSequenceHierarchy
+struct FMovieSceneSequenceHierarchy {
+	struct TMap<Unknown, Unknown>Unknown SubSequences; // 0x0 (80)
+	struct TMap<Unknown, Unknown>Unknown Hierarchy; // 0x50 (80)
+};
+
+// ScriptStruct MovieScene.MovieSceneSequenceHierarchyNode
+struct FMovieSceneSequenceHierarchyNode {
+	struct Unknown ParentID; // 0x0 (4)
+	struct TArray<Unknown> Children; // 0x8 (16)
+};
+
+// ScriptStruct MovieScene.MovieSceneSubSequenceData
+struct FMovieSceneSubSequenceData {
+	struct Unknown Sequence; // 0x0 (24)
+	struct Unknown RootToSequenceTransform; // 0x18 (32)
+	struct Unknown TickResolution; // 0x38 (8)
+	struct Unknown DeterministicSequenceID; // 0x40 (4)
+	struct Unknown PlayRange; // 0x44 (16)
+	struct Unknown FullPlayRange; // 0x54 (16)
+	struct Unknown UnwarpedPlayRange; // 0x64 (16)
+	struct Unknown PreRollRange; // 0x74 (16)
+	struct Unknown PostRollRange; // 0x84 (16)
+	int32_t HierarchicalBias; // 0x94 (4)
+	struct Unknown InstanceData; // 0x98 (24)
+	struct Unknown SubSectionSignature; // 0xB8 (16)
+	struct Unknown OuterToInnerTransform; // 0xC8 (32)
+};
+
+// ScriptStruct MovieScene.MovieSceneSequenceTransform
+struct FMovieSceneSequenceTransform {
+	struct Unknown LinearTransform; // 0x0 (12)
+	struct TArray<Unknown> NestedTransforms; // 0x10 (16)
+};
+
+// ScriptStruct MovieScene.MovieSceneNestedSequenceTransform
+struct FMovieSceneNestedSequenceTransform {
+	struct Unknown LinearTransform; // 0x0 (12)
+	struct Unknown Warping; // 0xC (8)
+};
+
+// ScriptStruct MovieScene.MovieSceneTimeWarping
+struct FMovieSceneTimeWarping {
+	struct Unknown Start; // 0x0 (4)
+	struct Unknown End; // 0x4 (4)
+};
+
+// ScriptStruct MovieScene.MovieSceneTimeTransform
+struct FMovieSceneTimeTransform {
+	float TimeScale; // 0x0 (4)
+	struct Unknown Offset; // 0x4 (8)
+};
+
+// ScriptStruct MovieScene.MovieSceneEvaluationTrack
+struct FMovieSceneEvaluationTrack {
+	struct Unknown ObjectBindingID; // 0x0 (16)
+	uint16_t EvaluationPriority; // 0x10 (2)
+	enum class Unknow EvaluationMethod; // 0x12 (1)
+	struct Unknown Segments; // 0x18 (32)
+	struct Unknown SourceTrack; // 0x38 (8)
+	struct Unknown EvaluationTree; // 0x40 (96)
+	struct TArray<Unknown> ChildTemplates; // 0xA0 (16)
+	struct Unknown TrackTemplate; // 0xB0 (56)
+	struct FName EvaluationGroup; // 0xE8 (8)
+	char bEvaluateInPreroll : 0; // 0xF0 (1)
+	char bEvaluateInPostroll : 0; // 0xF0 (1)
+	char bTearDownPriority : 0; // 0xF0 (1)
+};
+
+// ScriptStruct MovieScene.MovieSceneEvaluationTrackSegments
+struct FMovieSceneEvaluationTrackSegments {
+	struct TArray<Unknown> SegmentIdentifierToIndex; // 0x0 (16)
+	struct TArray<Unknown> SortedSegments; // 0x10 (16)
+};
+
+// ScriptStruct MovieScene.MovieSceneSubSectionData
+struct FMovieSceneSubSectionData {
+	struct TWeakObjectPtr<struct Unknown> Section; // 0x0 (8)
+	struct Unknown ObjectBindingID; // 0x8 (16)
+	enum class Unknow Flags; // 0x18 (1)
+};
+
+// ScriptStruct MovieScene.MovieSceneRootEvaluationTemplateInstanc
+struct FMovieSceneRootEvaluationTemplateInstanc {
+	struct TMap<Unknown, Unknown>Unknown DirectorInstances; // 0x18 (80)
+};
+
+// ScriptStruct MovieScene.MovieSceneKeyTimeStruct
+struct FMovieSceneKeyTimeStruct : FMovieSceneKeyStruct {
+	struct Unknown Time; // 0x8 (4)
+};
+
+// ScriptStruct MovieScene.MovieSceneObjectPathChannel
+struct FMovieSceneObjectPathChannel : FMovieSceneChannel {
+	struct Unknown* PropertyClass; // 0x8 (8)
+	struct TArray<Unknown> Times; // 0x10 (16)
+	struct TArray<Unknown> Values; // 0x20 (16)
+	struct Unknown DefaultValue; // 0x30 (48)
+};
+
+// ScriptStruct MovieScene.MovieSceneObjectPathChannelKeyValue
+struct FMovieSceneObjectPathChannelKeyValue {
+	struct TSoftObjectPtr<Unknown> SoftPtr; // 0x0 (40)
+	struct Unknown HardPtr; // 0x28 (8)
+};
+
+// ScriptStruct MovieScene.MovieScenePossessable
+struct FMovieScenePossessable {
+	struct TArray<Unknown> Tags; // 0x0 (16)
+	struct Unknown Guid; // 0x10 (16)
+	struct FString Name; // 0x20 (16)
+	struct Unknown* PossessedObjectClass; // 0x30 (8)
+	struct Unknown ParentGuid; // 0x38 (16)
+};
+
+// ScriptStruct MovieScene.MovieSceneEasingSettings
+struct FMovieSceneEasingSettings {
+	int32_t AutoEaseInDuration; // 0x0 (4)
+	int32_t AutoEaseOutDuration; // 0x4 (4)
+	struct TScriptInterface<IUnknown> EaseIn; // 0x8 (16)
+	char bManualEaseIn : 0; // 0x18 (1)
+	int32_t ManualEaseInDuration; // 0x1C (4)
+	struct TScriptInterface<IUnknown> EaseOut; // 0x20 (16)
+	char bManualEaseOut : 0; // 0x30 (1)
+	int32_t ManualEaseOutDuration; // 0x34 (4)
+};
+
+// ScriptStruct MovieScene.MovieSceneSectionEv
+struct FMovieSceneSectionEv {
+	char bCanEditCompletionMode : 0; // 0x0 (1)
+	enum class Unknow CompletionMode; // 0x1 (1)
+};
+
+// ScriptStruct MovieScene.MovieSceneSectionParameters
+struct FMovieSceneSectionParameters {
+	struct Unknown StartFrameOffset; // 0x0 (4)
+	char bCanLoop : 0; // 0x4 (1)
+	struct Unknown EndFrameOffset; // 0x8 (4)
+	struct Unknown FirstLoopStartFrameOffset; // 0xC (4)
+	float TimeScale; // 0x10 (4)
+	int32_t HierarchicalBias; // 0x14 (4)
+	float StartOffset; // 0x18 (4)
+	float PrerollTime; // 0x1C (4)
+	float PostrollTime; // 0x20 (4)
+};
+
+// ScriptStruct MovieScene.SectionEvaluationData
+struct FSectionEvaluationData {
+	int32_t ImplIndex; // 0x0 (4)
+	struct Unknown ForcedTime; // 0x4 (4)
+	enum class Unknow Flags; // 0x8 (1)
+};
+
+// ScriptStruct MovieScene.MovieSceneSequencePlaybackSettings
+struct FMovieSceneSequencePlaybackSettings {
+	char bAutoPlay : 0; // 0x0 (1)
+	struct Unknown LoopCount; // 0x4 (4)
+	float PlayRate; // 0x8 (4)
+	float StartTime; // 0xC (4)
+	char bRandomStartTime : 0; // 0x10 (1)
+	char bRestoreState : 0; // 0x10 (1)
+	char bDisableMovementInput : 0; // 0x10 (1)
+	char bDisableLookAtInput : 0; // 0x10 (1)
+	char bHidePlayer : 0; // 0x10 (1)
+	char bHideHud : 0; // 0x10 (1)
+	char bDisableCameraCuts : 0; // 0x10 (1)
+	char bPauseAtEnd : 0; // 0x10 (1)
+};
+
+// ScriptStruct MovieScene.MovieSceneSequenceLoopCount
+struct FMovieSceneSequenceLoopCount {
+	int32_t Value; // 0x0 (4)
+};
+
+// ScriptStruct MovieScene.MovieSceneSequenceReplProperties
+struct FMovieSceneSequenceReplProperties {
+	struct Unknown LastKnownPosition; // 0x0 (8)
+	char LastKnownStatus; // 0x8 (1)
+	int32_t LastKnownNumLoops; // 0xC (4)
+};
+
+// ScriptStruct MovieScene.MovieSceneWarpCounter
+struct FMovieSceneWarpCounter {
+	struct TArray<Unknown> WarpCounts; // 0x0 (16)
+};
+
+// ScriptStruct MovieScene.MovieSceneSpawnable
+struct FMovieSceneSpawnable {
+	struct Unknown SpawnTransform; // 0x0 (48)
+	struct TArray<Unknown> Tags; // 0x30 (16)
+	char bContinuouslyRespawn : 0; // 0x40 (1)
+	struct Unknown Guid; // 0x44 (16)
+	struct FString Name; // 0x58 (16)
+	struct Unknown ObjectTemplate; // 0x68 (8)
+	struct TArray<Unknown> ChildPossessables; // 0x70 (16)
+	enum class Unknow Ownership; // 0x80 (1)
+	struct FName LevelName; // 0x84 (8)
+};
+
+// ScriptStruct MovieScene.MovieSceneTrackDisplayOptions
+struct FMovieSceneTrackDisplayOptions {
+	char bShowVerticalFrames : 0; // 0x0 (1)
+};
+
+// ScriptStruct MovieScene.MovieSceneTrackEvalOptions
+struct FMovieSceneTrackEvalOptions {
+	char bCanEvaluateNearestSection : 0; // 0x0 (1)
+	char bEvalNearestSection : 0; // 0x0 (1)
+	char bEvaluateInPreroll : 0; // 0x0 (1)
+	char bEvaluateInPostroll : 0; // 0x0 (1)
+	char bEvaluateNearestSection : 0; // 0x0 (1)
 };
 

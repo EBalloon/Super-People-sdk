@@ -61,7 +61,7 @@ enum class ESubmixEffectDynamicsProcessorType : uint8 {
 };
 
 // Class AudioMixer.SynthComponent
-struct USynthComponent : USceneComponent {
+class USynthComponent : USceneComponent {
 	char bAutoDestroy : 0; // 0x238 (1)
 	char bStopWhenOwnerDestroyed : 0; // 0x238 (1)
 	char bAllowSpatialization : 0; // 0x238 (1)
@@ -94,7 +94,7 @@ struct USynthComponent : USceneComponent {
 };
 
 // Class AudioMixer.SubmixEffectDynamicsProcessorPreset
-struct USubmixEffectDynamicsProcessorPreset : USoundEffectSubmixPreset {
+class USubmixEffectDynamicsProcessorPreset : USoundEffectSubmixPreset {
 	struct Unknown Settings; // 0xB8 (80)
 
 	void SetSettings(struct Unknown& Settings); // Function AudioMixer.SubmixEffectDynamicsProcessorPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33FDCE0>
@@ -102,14 +102,14 @@ struct USubmixEffectDynamicsProcessorPreset : USoundEffectSubmixPreset {
 };
 
 // Class AudioMixer.SubmixEffectSubmixEQPreset
-struct USubmixEffectSubmixEQPreset : USoundEffectSubmixPreset {
+class USubmixEffectSubmixEQPreset : USoundEffectSubmixPreset {
 	struct Unknown Settings; // 0x78 (16)
 
 	void SetSettings(struct Unknown& InSettings); // Function AudioMixer.SubmixEffectSubmixEQPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18E0330>
 };
 
 // Class AudioMixer.SubmixEffectReverbPreset
-struct USubmixEffectReverbPreset : USoundEffectSubmixPreset {
+class USubmixEffectReverbPreset : USoundEffectSubmixPreset {
 	struct Unknown Settings; // 0x9C (52)
 
 	void SetSettingsWithReverbEffect(struct Unknown InReverbEffect, float WetLevel, float DryLevel); // Function AudioMixer.SubmixEffectReverbPreset.SetSettingsWithReverbEffect(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33FE070>
@@ -117,7 +117,7 @@ struct USubmixEffectReverbPreset : USoundEffectSubmixPreset {
 };
 
 // Class AudioMixer.SubmixEffectReverbFastPreset
-struct USubmixEffectReverbFastPreset : USoundEffectSubmixPreset {
+class USubmixEffectReverbFastPreset : USoundEffectSubmixPreset {
 	struct Unknown Settings; // 0xA0 (56)
 
 	void SetSettingsWithReverbEffect(struct Unknown InReverbEffect, float WetLevel, float DryLevel); // Function AudioMixer.SubmixEffectReverbFastPreset.SetSettingsWithReverbEffect(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33FDF70>
@@ -125,7 +125,84 @@ struct USubmixEffectReverbFastPreset : USoundEffectSubmixPreset {
 };
 
 // Class AudioMixer.SynthSound
-struct USynthSound : USoundWaveProcedural {
+class USynthSound : USoundWaveProcedural {
 	struct Unknown OwningSynthComponent; // 0x360 (8)
+};
+
+// ScriptStruct AudioMixer.SubmixEffectDynamicsProcessorSettings
+struct FSubmixEffectDynamicsProcessorSettings {
+	enum class Unknow DynamicsProcessorType; // 0x0 (1)
+	enum class Unknow PeakMode; // 0x1 (1)
+	enum class Unknow LinkMode; // 0x2 (1)
+	float InputGainDb; // 0x4 (4)
+	float ThresholdDb; // 0x8 (4)
+	float Ratio; // 0xC (4)
+	float KneeBandwidthDb; // 0x10 (4)
+	float LookAheadMsec; // 0x14 (4)
+	float AttackTimeMsec; // 0x18 (4)
+	float ReleaseTimeMsec; // 0x1C (4)
+	struct Unknown ExternalSubmix; // 0x20 (8)
+	char bChannelLinked : 0; // 0x28 (1)
+	char bAnalogMode : 0; // 0x28 (1)
+	char bKeyAudition : 0; // 0x28 (1)
+	float KeyGainDb; // 0x2C (4)
+	float OutputGainDb; // 0x30 (4)
+	struct Unknown KeyHighshelf; // 0x34 (12)
+	struct Unknown KeyLowshelf; // 0x40 (12)
+};
+
+// ScriptStruct AudioMixer.SubmixEffectDynamicProcessorFilterSettings
+struct FSubmixEffectDynamicProcessorFilterSettings {
+	char bEnabled : 0; // 0x0 (1)
+	float Cutoff; // 0x4 (4)
+	float GainDb; // 0x8 (4)
+};
+
+// ScriptStruct AudioMixer.SubmixEffectSubmixEQSettings
+struct FSubmixEffectSubmixEQSettings {
+	struct TArray<Unknown> EQBands; // 0x0 (16)
+};
+
+// ScriptStruct AudioMixer.SubmixEffectEQBand
+struct FSubmixEffectEQBand {
+	float Frequency; // 0x0 (4)
+	float Bandwidth; // 0x4 (4)
+	float GainDb; // 0x8 (4)
+	char bEnabled : 0; // 0xC (1)
+};
+
+// ScriptStruct AudioMixer.SubmixEffectReverbSettings
+struct FSubmixEffectReverbSettings {
+	float Density; // 0x0 (4)
+	float Diffusion; // 0x4 (4)
+	float Gain; // 0x8 (4)
+	float GainHF; // 0xC (4)
+	float DecayTime; // 0x10 (4)
+	float DecayHFRatio; // 0x14 (4)
+	float ReflectionsGain; // 0x18 (4)
+	float ReflectionsDelay; // 0x1C (4)
+	float LateGain; // 0x20 (4)
+	float LateDelay; // 0x24 (4)
+	float AirAbsorptionGainHF; // 0x28 (4)
+	float WetLevel; // 0x2C (4)
+	float DryLevel; // 0x30 (4)
+};
+
+// ScriptStruct AudioMixer.SubmixEffectReverbFastSettings
+struct FSubmixEffectReverbFastSettings {
+	char bBypass : 0; // 0x0 (1)
+	float Density; // 0x4 (4)
+	float Diffusion; // 0x8 (4)
+	float Gain; // 0xC (4)
+	float GainHF; // 0x10 (4)
+	float DecayTime; // 0x14 (4)
+	float DecayHFRatio; // 0x18 (4)
+	float ReflectionsGain; // 0x1C (4)
+	float ReflectionsDelay; // 0x20 (4)
+	float LateGain; // 0x24 (4)
+	float LateDelay; // 0x28 (4)
+	float AirAbsorptionGainHF; // 0x2C (4)
+	float WetLevel; // 0x30 (4)
+	float DryLevel; // 0x34 (4)
 };
 

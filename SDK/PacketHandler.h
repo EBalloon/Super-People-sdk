@@ -1,5 +1,5 @@
 // Class PacketHandler.PacketHandlerProfileConfig
-struct UPacketHandlerProfileConfig : Object {
+class UPacketHandlerProfileConfig : Object {
 	struct TArray<Unknown> Components; // 0x28 (16)
 };
 

@@ -43,21 +43,21 @@ enum class EOculusMR_ClippingReference : uint8 {
 };
 
 // Enum OculusMR.EOculusMR_CameraDev
-enum class EOculusMR_CameraDevy : uint8 {
-	EOculusMR_CameraDeveferenc = 0
+enum class EOculusMR_CameraDev : uint8 {
+	EOculusMR_CameraDev = 0
 	EOculusMR_CameraDev = 1
 	EOculusMR_CameraDev = 2
-	EOculusMR_CameraDev = 3
+	EOculusMR_CameraDevssEffects = 3
 	EOculusMR_CameraDev = 4
 };
 
 // Class OculusMR.OculusMR_BoundaryActor
-struct AOculusMR_BoundaryActor : UActor {
+class AOculusMR_BoundaryActor : UActor {
 	struct Unknown BoundaryMeshComponent; // 0x310 (8)
 };
 
 // Class OculusMR.OculusMR_BoundaryMeshComponent
-struct UOculusMR_BoundaryMeshComponent : UMeshComponent {
+class UOculusMR_BoundaryMeshComponent : UMeshComponent {
 	enum class Unknow BoundaryType; // 0x4E8 (1)
 	float BottomZ; // 0x4EC (4)
 	float TopZ; // 0x4F0 (4)
@@ -66,8 +66,8 @@ struct UOculusMR_BoundaryMeshComponent : UMeshComponent {
 };
 
 // Class OculusMR.OculusMR_CastingCameraActor
-struct AOculusMR_CastingCameraActor : ASceneCapture2D {
-	struct Unknown V; // 0x328 (8)
+class AOculusMR_CastingCameraActor : ASceneCapture2D {
+	struct Unknown VRNotificationComponent; // 0x328 (8)
 	struct Unknown CameraColorTexture; // 0x330 (8)
 	struct Unknown CameraDepthTexture; // 0x338 (8)
 	struct Unknown PlaneMeshComponent; // 0x340 (8)
@@ -84,12 +84,12 @@ struct AOculusMR_CastingCameraActor : ASceneCapture2D {
 	struct TArray<Unknown> BackgroundRenderTargets; // 0x3E8 (16)
 	struct Unknown ForegroundCaptureActor; // 0x3F8 (8)
 	struct TArray<Unknown> ForegroundRenderTargets; // 0x400 (16)
-	struct Unknown M; // 0x410 (8)
-	struct Unknown M; // 0x418 (8)
+	struct Unknown MRSettings; // 0x410 (8)
+	struct Unknown MRState; // 0x418 (8)
 };
 
 // Class OculusMR.OculusMR_Settings
-struct UOculusMR_Settings : Object {
+class UOculusMR_Settings : Object {
 	enum class Unknow ClippingReference; // 0x28 (1)
 	char bUseTrackedCameraResolution : 0; // 0x29 (1)
 	int32_t WidthPerView; // 0x2C (4)
@@ -128,11 +128,37 @@ struct UOculusMR_Settings : Object {
 };
 
 // Class OculusMR.OculusMR_State
-struct UOculusMR_State : Object {
+class UOculusMR_State : Object {
 	struct Unknown TrackedCamera; // 0x28 (112)
 	struct Unknown TrackingReferenceComponent; // 0x98 (8)
 	double ScalingFactor; // 0xA0 (8)
 	char ChangeCameraStateRequested : 0; // 0xAC (1)
 	char BindToTrackedCameraIndexRequested : 0; // 0xAD (1)
+};
+
+// ScriptStruct OculusMR.OculusMR_PlaneMeshTriangle
+struct FOculusMR_PlaneMeshTriangle {
+	struct Unknown Vertex0; // 0x0 (12)
+	struct Unknown UV0; // 0xC (8)
+	struct Unknown Vertex1; // 0x14 (12)
+	struct Unknown UV1; // 0x20 (8)
+	struct Unknown Vertex2; // 0x28 (12)
+	struct Unknown UV2; // 0x34 (8)
+};
+
+// ScriptStruct OculusMR.TrackedCamera
+struct FTrackedCamera {
+	int32_t Index; // 0x0 (4)
+	struct FString Name; // 0x8 (16)
+	float FieldOfView; // 0x18 (4)
+	int32_t SizeX; // 0x1C (4)
+	int32_t SizeY; // 0x20 (4)
+	enum class Unknow AttachedTrackedDevice; // 0x24 (1)
+	struct Unknown CalibratedRotation; // 0x28 (12)
+	struct Unknown CalibratedOffset; // 0x34 (12)
+	struct Unknown UserRotation; // 0x40 (12)
+	struct Unknown UserOffset; // 0x4C (12)
+	struct Unknown RawRotation; // 0x58 (12)
+	struct Unknown RawOffset; // 0x64 (12)
 };
 

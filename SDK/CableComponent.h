@@ -1,10 +1,10 @@
 // Class CableComponent.CableActor
-struct ACableActor : UActor {
+class ACableActor : UActor {
 	struct Unknown CableComponent; // 0x310 (8)
 };
 
 // Class CableComponent.CableComponent
-struct UCableComponent : UMeshComponent {
+class UCableComponent : UMeshComponent {
 	char bAttachStart : 0; // 0x4E8 (1)
 	char bAttachEnd : 0; // 0x4E9 (1)
 	struct Unknown AttachEndTo; // 0x4F0 (40)

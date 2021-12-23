@@ -1,5 +1,5 @@
 // Class MagicLeapImageTracker.MagicLeapImageTrackerComponent
-struct UMagicLeapImageTrackerComponent : USceneComponent {
+class UMagicLeapImageTrackerComponent : USceneComponent {
 	struct Unknown TargetImageTexture; // 0x238 (8)
 	struct FString Name; // 0x240 (16)
 	float LongerDimension; // 0x250 (4)

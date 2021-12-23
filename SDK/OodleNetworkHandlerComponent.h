@@ -6,7 +6,7 @@ enum class EOodleEnableMode : uint8 {
 };
 
 // Class OodleNetworkHandlerComponent.OodleNetworkTrainerCommandlet
-struct UOodleNetworkTrainerCommandlet : UCommandlet {
+class UOodleNetworkTrainerCommandlet : UCommandlet {
 	char bCompressionTest : 0; // 0x80 (1)
 	int32_t HashTableSize; // 0x84 (4)
 	int32_t DictionarySize; // 0x88 (4)

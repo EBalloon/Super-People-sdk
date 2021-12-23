@@ -1,5 +1,5 @@
 // WidgetBlueprintGeneratedClass SettingSubButtonWidget.SettingSubButtonWidget_C
-struct USettingSubButtonWidget_C : UUserWidget {
+class USettingSubButtonWidget_C : UUserWidget {
 	struct Unknown UberGraphFrame; // 0x248 (8)
 	struct Unknown Border; // 0x250 (8)
 	struct Unknown Button_222; // 0x258 (8)
@@ -17,8 +17,8 @@ struct USettingSubButtonWidget_C : UUserWidget {
 	void Click(int32_t Index, enum class Unknow Type); // Function SettingSubButtonWidget.SettingSubButtonWidget_C.Click(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void Construct(); // Function SettingSubButtonWidget.SettingSubButtonWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void BndEvt__Button_221_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function SettingSubButtonWidget.SettingSubButtonWidget_C.BndEvt__Button_221_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
-	void BndEvt__Button_221_K2Node_ComponentBoundEvent_1_OnButtonHoverEv(); // Function SettingSubButtonWidget.SettingSubButtonWidget_C.BndEvt__Button_221_K2Node_ComponentBoundEvent_1_OnButtonHoverEv(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
-	void BndEvt__Button_221_K2Node_ComponentBoundEvent_2_OnButtonHoverEv(); // Function SettingSubButtonWidget.SettingSubButtonWidget_C.BndEvt__Button_221_K2Node_ComponentBoundEvent_2_OnButtonHoverEv(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void BndEvt__Button_221_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature(); // Function SettingSubButtonWidget.SettingSubButtonWidget_C.BndEvt__Button_221_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void BndEvt__Button_221_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature(); // Function SettingSubButtonWidget.SettingSubButtonWidget_C.BndEvt__Button_221_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void UpdateText(); // Function SettingSubButtonWidget.SettingSubButtonWidget_C.UpdateText(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void ExecuteUbergraph_SettingSubButtonWidget(int32_t EntryPoint); // Function SettingSubButtonWidget.SettingSubButtonWidget_C.ExecuteUbergraph_SettingSubButtonWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void ClickEventDispatcher__DelegateSignature(int32_t Index, enum class Unknow Type); // Function SettingSubButtonWidget.SettingSubButtonWidget_C.ClickEventDispatcher__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>

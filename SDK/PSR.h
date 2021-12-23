@@ -1,5 +1,5 @@
 // AnimBlueprintGeneratedClass PSR.AB
-struct UAB : UBravoHotelAnimInstanceWeapon {
+class UAB : UBravoHotelAnimInstanceWeapon {
 	struct Unknown UberGraphFrame; // 0x330 (8)
 	struct Unknown AnimGraphNode_Root; // 0x338 (48)
 	struct Unknown AnimGraphNode_Slot_3; // 0x368 (72)

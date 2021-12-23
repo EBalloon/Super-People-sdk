@@ -266,13 +266,13 @@ enum class EARLineTraceChannels : uint8 {
 	EARLineTraceChannels = 9
 };
 
-// Class AugmentedReality.A
-struct UA : UDataAsset {
+// Class AugmentedReality.ARSessionConfig
+class UARSessionConfig : UDataAsset {
 	char bGenerateMeshDataFromTrackedGeometry : 0; // 0x30 (1)
 	char bGenerateCollisionForMeshData : 0; // 0x31 (1)
 	char bGenerateNavMeshForMeshData : 0; // 0x32 (1)
 	char bUseMeshDataForOcclusion : 0; // 0x33 (1)
-	char b : 0; // 0x34 (1)
+	char bRenderMeshDataInWireframe : 0; // 0x34 (1)
 	char bTrackSceneObjects : 0; // 0x35 (1)
 	char bUsePersonSegmentationForOcclusion : 0; // 0x36 (1)
 	enum class Unknow WorldAlignment; // 0x37 (1)
@@ -285,8 +285,8 @@ struct UA : UDataAsset {
 	enum class Unknow FrameSyncMode; // 0x3E (1)
 	char bEnableAutomaticCameraOverlay : 0; // 0x3F (1)
 	char bEnableAutomaticCameraTracking : 0; // 0x40 (1)
-	char b : 0; // 0x41 (1)
-	char b : 0; // 0x42 (1)
+	char bResetCameraTracking : 0; // 0x41 (1)
+	char bResetTrackedObjects : 0; // 0x42 (1)
 	struct TArray<Unknown> CandidateImages; // 0x48 (16)
 	int32_t MaxNumSimultaneousImagesTracked; // 0x58 (4)
 	enum class Unknow EnvironmentCaptureProbeType; // 0x5C (1)
@@ -298,82 +298,82 @@ struct UA : UDataAsset {
 	struct TArray<Unknown> SerializedARCandidateImageDatabase; // 0x90 (16)
 	enum class Unknow EnabledSessionTrackingFeature; // 0xA0 (1)
 
-	char ShouldResetTrackedObjects(); // Function AugmentedReality.A.ShouldResetTrackedObjects(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF1E10>
-	char ShouldResetCameraTracking(); // Function AugmentedReality.A.ShouldResetCameraTracking(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF1DE0>
-	char ShouldRenderCameraOverlay(); // Function AugmentedReality.A.ShouldRenderCameraOverlay(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF1DB0>
-	char ShouldEnableCameraTracking(); // Function AugmentedReality.A.ShouldEnableCameraTracking(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF1D80>
-	char ShouldEnableAutoFocus(); // Function AugmentedReality.A.ShouldEnableAutoFocus(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF1D50>
-	void SetWorldMapData(struct TArray<Unknown> WorldMapData); // Function AugmentedReality.A.SetWorldMapData(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF1C60>
-	void SetSessionTrackingFeatureToEnable(enum class Unknow InSessionTrackingFeature); // Function AugmentedReality.A.SetSessionTrackingFeatureToEnable(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF1BE0>
-	void SetResetTrackedObjects(char bNewValue); // Function AugmentedReality.A.SetResetTrackedObjects(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF1B50>
-	void SetResetCameraTracking(char bNewValue); // Function AugmentedReality.A.SetResetCameraTracking(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF1AC0>
-	void SetFaceTrackingUpdate(enum class Unknow InUpdate); // Function AugmentedReality.A.SetFaceTrackingUpdate(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF1A40>
-	void SetFaceTrackingDirection(enum class Unknow InDirection); // Function AugmentedReality.A.SetFaceTrackingDirection(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF19C0>
-	void SetEnableAutoFocus(char bNewValue); // Function AugmentedReality.A.SetEnableAutoFocus(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF1930>
-	void SetDesiredVideoFormat(struct Unknown NewFormat); // Function AugmentedReality.A.SetDesiredVideoFormat(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF1890>
-	void SetCandidateObjectList(struct TArray<Unknown>& InCandidateObjects); // Function AugmentedReality.A.SetCandidateObjectList(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF17E0>
-	struct TArray<Unknown> GetWorldMapData(); // Function AugmentedReality.A.GetWorldMapData(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF0D10>
-	enum class Unknow GetWorldAlignment(); // Function AugmentedReality.A.GetWorldAlignment(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF0CE0>
-	enum class Unknow GetSessionType(); // Function AugmentedReality.A.GetSessionType(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1606710>
-	enum class Unknow GetPlaneDetectionMode(); // Function AugmentedReality.A.GetPlaneDetectionMode(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF08E0>
-	int32_t GetMaxNumSimultaneousImagesTracked(); // Function AugmentedReality.A.GetMaxNumSimultaneousImagesTracked(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF0820>
-	enum class Unknow GetLightEstimationMode(); // Function AugmentedReality.A.GetLightEstimationMode(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF04F0>
-	enum class Unknow GetFrameSyncMode(); // Function AugmentedReality.A.GetFrameSyncMode(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF04C0>
-	enum class Unknow GetFaceTrackingUpdate(); // Function AugmentedReality.A.GetFaceTrackingUpdate(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF0490>
-	enum class Unknow GetFaceTrackingDirection(); // Function AugmentedReality.A.GetFaceTrackingDirection(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF0460>
-	enum class Unknow GetEnvironmentCaptureProbeType(); // Function AugmentedReality.A.GetEnvironmentCaptureProbeType(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF0430>
-	enum class Unknow GetEnabledSessionTrackingFeature(); // Function AugmentedReality.A.GetEnabledSessionTrackingFeature(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF0400>
-	struct Unknown GetDesiredVideoFormat(); // Function AugmentedReality.A.GetDesiredVideoFormat(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF02C0>
-	struct TArray<Unknown> GetCandidateObjectList(); // Function AugmentedReality.A.GetCandidateObjectList(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF01C0>
-	struct TArray<Unknown> GetCandidateImageList(); // Function AugmentedReality.A.GetCandidateImageList(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF0130>
-	void AddCandidateObject(struct Unknown CandidateObject); // Function AugmentedReality.A.AddCandidateObject(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EEF380>
-	void AddCandidateImage(struct Unknown NewCandidateImage); // Function AugmentedReality.A.AddCandidateImage(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EEF300>
+	char ShouldResetTrackedObjects(); // Function AugmentedReality.ARSessionConfig.ShouldResetTrackedObjects(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF1E10>
+	char ShouldResetCameraTracking(); // Function AugmentedReality.ARSessionConfig.ShouldResetCameraTracking(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF1DE0>
+	char ShouldRenderCameraOverlay(); // Function AugmentedReality.ARSessionConfig.ShouldRenderCameraOverlay(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF1DB0>
+	char ShouldEnableCameraTracking(); // Function AugmentedReality.ARSessionConfig.ShouldEnableCameraTracking(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF1D80>
+	char ShouldEnableAutoFocus(); // Function AugmentedReality.ARSessionConfig.ShouldEnableAutoFocus(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF1D50>
+	void SetWorldMapData(struct TArray<Unknown> WorldMapData); // Function AugmentedReality.ARSessionConfig.SetWorldMapData(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF1C60>
+	void SetSessionTrackingFeatureToEnable(enum class Unknow InSessionTrackingFeature); // Function AugmentedReality.ARSessionConfig.SetSessionTrackingFeatureToEnable(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF1BE0>
+	void SetResetTrackedObjects(char bNewValue); // Function AugmentedReality.ARSessionConfig.SetResetTrackedObjects(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF1B50>
+	void SetResetCameraTracking(char bNewValue); // Function AugmentedReality.ARSessionConfig.SetResetCameraTracking(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF1AC0>
+	void SetFaceTrackingUpdate(enum class Unknow InUpdate); // Function AugmentedReality.ARSessionConfig.SetFaceTrackingUpdate(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF1A40>
+	void SetFaceTrackingDirection(enum class Unknow InDirection); // Function AugmentedReality.ARSessionConfig.SetFaceTrackingDirection(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF19C0>
+	void SetEnableAutoFocus(char bNewValue); // Function AugmentedReality.ARSessionConfig.SetEnableAutoFocus(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF1930>
+	void SetDesiredVideoFormat(struct Unknown NewFormat); // Function AugmentedReality.ARSessionConfig.SetDesiredVideoFormat(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF1890>
+	void SetCandidateObjectList(struct TArray<Unknown>& InCandidateObjects); // Function AugmentedReality.ARSessionConfig.SetCandidateObjectList(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF17E0>
+	struct TArray<Unknown> GetWorldMapData(); // Function AugmentedReality.ARSessionConfig.GetWorldMapData(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF0D10>
+	enum class Unknow GetWorldAlignment(); // Function AugmentedReality.ARSessionConfig.GetWorldAlignment(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF0CE0>
+	enum class Unknow GetSessionType(); // Function AugmentedReality.ARSessionConfig.GetSessionType(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1606710>
+	enum class Unknow GetPlaneDetectionMode(); // Function AugmentedReality.ARSessionConfig.GetPlaneDetectionMode(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF08E0>
+	int32_t GetMaxNumSimultaneousImagesTrac(); // Function AugmentedReality.ARSessionConfig.GetMaxNumSimultaneousImagesTrac(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF0820>
+	enum class Unknow GetLightEstimationMode(); // Function AugmentedReality.ARSessionConfig.GetLightEstimationMode(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF04F0>
+	enum class Unknow GetFrameSyncMode(); // Function AugmentedReality.ARSessionConfig.GetFrameSyncMode(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF04C0>
+	enum class Unknow GetFaceTrackingUpdate(); // Function AugmentedReality.ARSessionConfig.GetFaceTrackingUpdate(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF0490>
+	enum class Unknow GetFaceTrackingDirection(); // Function AugmentedReality.ARSessionConfig.GetFaceTrackingDirection(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF0460>
+	enum class Unknow GetEnvironmentCaptureProbeType(); // Function AugmentedReality.ARSessionConfig.GetEnvironmentCaptureProbeType(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF0430>
+	enum class Unknow GetEnabledSessionTrackingFeature(); // Function AugmentedReality.ARSessionConfig.GetEnabledSessionTrackingFeature(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF0400>
+	struct Unknown GetDesiredVideoFormat(); // Function AugmentedReality.ARSessionConfig.GetDesiredVideoFormat(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF02C0>
+	struct TArray<Unknown> GetCandidateObjectList(); // Function AugmentedReality.ARSessionConfig.GetCandidateObjectList(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF01C0>
+	struct TArray<Unknown> GetCandidateImageList(); // Function AugmentedReality.ARSessionConfig.GetCandidateImageList(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF0130>
+	void AddCandidateObject(struct Unknown CandidateObject); // Function AugmentedReality.ARSessionConfig.AddCandidateObject(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EEF380>
+	void AddCandidateImage(struct Unknown NewCandidateImage); // Function AugmentedReality.ARSessionConfig.AddCandidateImage(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EEF300>
 };
 
-// Class AugmentedReality.A
-struct UA : UA {
+// Class AugmentedReality.ARBasicLightEstimate
+class UARBasicLightEstimate : UARLightEstimate {
 	float AmbientIntensityLumens; // 0x28 (4)
 	float AmbientColorTemperatureKelvin; // 0x2C (4)
 	struct Unknown AmbientColor; // 0x30 (16)
 
-	float GetAmbientIntensityLumens(); // Function AugmentedReality.A.GetAmbientIntensityLumens(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF00A0>
-	float GetAmbientColorTemperatureKelvin(); // Function AugmentedReality.A.GetAmbientColorTemperatureKelvin(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF0070>
-	struct Unknown GetAmbientColor(); // Function AugmentedReality.A.GetAmbientColor(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF0030>
+	float GetAmbientIntensityLumens(); // Function AugmentedReality.ARBasicLightEstimate.GetAmbientIntensityLumens(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF00A0>
+	float GetAmbientColorTemperatureKelvin(); // Function AugmentedReality.ARBasicLightEstimate.GetAmbientColorTemperatureKelvin(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF0070>
+	struct Unknown GetAmbientColor(); // Function AugmentedReality.ARBasicLightEstimate.GetAmbientColor(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF0030>
 };
 
-// Class AugmentedReality.A
-struct UA : UDataAsset {
+// Class AugmentedReality.ARCandidateImage
+class UARCandidateImage : UDataAsset {
 	struct Unknown CandidateTexture; // 0x30 (8)
 	struct FString FriendlyName; // 0x38 (16)
 	float Width; // 0x48 (4)
 	float Height; // 0x4C (4)
 	enum class Unknow Orientation; // 0x50 (1)
 
-	float GetPhysicalWidth(); // Function AugmentedReality.A.GetPhysicalWidth(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF86C0>
-	float GetPhysicalHeight(); // Function AugmentedReality.A.GetPhysicalHeight(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF86A0>
-	enum class Unknow GetOrientation(); // Function AugmentedReality.A.GetOrientation(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF8680>
-	struct FString GetFriendlyName(); // Function AugmentedReality.A.GetFriendlyName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF8620>
-	struct Unknown GetCandidateTexture(); // Function AugmentedReality.A.GetCandidateTexture(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF8600>
+	float GetPhysicalWidth(); // Function AugmentedReality.ARCandidateImage.GetPhysicalWidth(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF86C0>
+	float GetPhysicalHeight(); // Function AugmentedReality.ARCandidateImage.GetPhysicalHeight(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF86A0>
+	enum class Unknow GetOrientation(); // Function AugmentedReality.ARCandidateImage.GetOrientation(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF8680>
+	struct FString GetFriendlyName(); // Function AugmentedReality.ARCandidateImage.GetFriendlyName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF8620>
+	struct Unknown GetCandidateTexture(); // Function AugmentedReality.ARCandidateImage.GetCandidateTexture(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF8600>
 };
 
-// Class AugmentedReality.A
-struct UA : UA {
+// Class AugmentedReality.ARSaveWorldAsyncTaskBlueprintProxy
+class UARSaveWorldAsyncTaskBlueprintProxy : UARBaseAsyncTaskBlueprintProxy {
 	struct FMulticastInlineDelegate OnSuccess; // 0x50 (16)
 	struct FMulticastInlineDelegate OnFailed; // 0x60 (16)
 
-	struct Unknown A(struct Unknown WorldContextObject); // Function AugmentedReality.A.A(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EEF280>
+	struct Unknown ARSaveWorld(struct Unknown WorldContextObject); // Function AugmentedReality.ARSaveWorldAsyncTaskBlueprintProxy.ARSaveWorld(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EEF280>
 };
 
-// Class AugmentedReality.A
-struct UA : UA {
+// Class AugmentedReality.ARGetCandidateObjectAsyncTaskBlueprintProxy
+class UARGetCandidateObjectAsyncTaskBlueprintProxy : UARBaseAsyncTaskBlueprintProxy {
 	struct FMulticastInlineDelegate OnSuccess; // 0x50 (16)
 	struct FMulticastInlineDelegate OnFailed; // 0x60 (16)
 
-	struct Unknown A(struct Unknown WorldContextObject, struct Unknown Location, struct Unknown Extent); // Function AugmentedReality.A.A(Final|Native|Static|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EEF160>
+	struct Unknown ARGetCandidateObject(struct Unknown WorldContextObject, struct Unknown Location, struct Unknown Extent); // Function AugmentedReality.ARGetCandidateObjectAsyncTaskBlueprintProxy.ARGetCandidateObject(Final|Native|Static|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EEF160>
 };
 
-// Class AugmentedReality.A
-struct UA : Object {
+// Class AugmentedReality.ARPin
+class UARPin : Object {
 	struct Unknown TrackedGeometry; // 0x28 (8)
 	struct Unknown PinnedComponent; // 0x30 (8)
 	struct Unknown LocalToTrackingTransform; // 0x40 (48)
@@ -382,69 +382,69 @@ struct UA : Object {
 	struct FMulticastInlineDelegate OnARTrackingStateChanged; // 0xC0 (16)
 	struct FMulticastInlineDelegate OnARTransformUpdated; // 0xD0 (16)
 
-	enum class Unknow GetTrackingState(); // Function AugmentedReality.A.GetTrackingState(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF0400>
-	struct Unknown GetTrackedGeometry(); // Function AugmentedReality.A.GetTrackedGeometry(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF0B80>
-	struct Unknown GetPinnedComponent(); // Function AugmentedReality.A.GetPinnedComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF08B0>
-	struct Unknown GetLocalToWorldTransform(); // Function AugmentedReality.A.GetLocalToWorldTransform(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF06A0>
-	struct Unknown GetLocalToTrackingTransform(); // Function AugmentedReality.A.GetLocalToTrackingTransform(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF0520>
-	struct FName GetDebugName(); // Function AugmentedReality.A.GetDebugName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF0280>
-	void DebugDraw(struct Unknown World, struct Unknown& Color, float Scale, float PersistForSeconds); // Function AugmentedReality.A.DebugDraw(Native|Public|HasOutParms|HasDefaults|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EEF670>
+	enum class Unknow GetTrackingState(); // Function AugmentedReality.ARPin.GetTrackingState(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF0400>
+	struct Unknown GetTrackedGeometry(); // Function AugmentedReality.ARPin.GetTrackedGeometry(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF0B80>
+	struct Unknown GetPinnedComponent(); // Function AugmentedReality.ARPin.GetPinnedComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF08B0>
+	struct Unknown GetLocalToWorldTransform(); // Function AugmentedReality.ARPin.GetLocalToWorldTransform(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF06A0>
+	struct Unknown GetLocalToTrackingTransform(); // Function AugmentedReality.ARPin.GetLocalToTrackingTransform(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF0520>
+	struct FName GetDebugName(); // Function AugmentedReality.ARPin.GetDebugName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF0280>
+	void DebugDraw(struct Unknown World, struct Unknown& Color, float Scale, float PersistForSeconds); // Function AugmentedReality.ARPin.DebugDraw(Native|Public|HasOutParms|HasDefaults|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EEF670>
 };
 
-// Class AugmentedReality.A
-struct AA : AGameMode {
+// Class AugmentedReality.ARSharedWorldGameMode
+class AARSharedWorldGameMode : AGameMode {
 	int32_t BufferSizePerChunk; // 0x3F8 (4)
 
-	void SetPreviewImageData(struct TArray<Unknown> ImageData); // Function AugmentedReality.A.SetPreviewImageData(Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF61B0>
-	void SetARWorldSharingIsReady(); // Function AugmentedReality.A.SetARWorldSharingIsReady(Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF6110>
-	void SetARSharedWorldData(struct TArray<Unknown> A); // Function AugmentedReality.A.SetARSharedWorldData(Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF6020>
-	struct Unknown GetARSharedWorldGameState(); // Function AugmentedReality.A.GetARSharedWorldGameState(Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF57F0>
+	void SetPreviewImageData(struct TArray<Unknown> ImageData); // Function AugmentedReality.ARSharedWorldGameMode.SetPreviewImageData(Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF61B0>
+	void SetARWorldSharingIsReady(); // Function AugmentedReality.ARSharedWorldGameMode.SetARWorldSharingIsReady(Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF6110>
+	void SetARSharedWorldData(struct TArray<Unknown> ARWorldData); // Function AugmentedReality.ARSharedWorldGameMode.SetARSharedWorldData(Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF6020>
+	struct Unknown GetARSharedWorldGameState(); // Function AugmentedReality.ARSharedWorldGameMode.GetARSharedWorldGameState(Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF57F0>
 };
 
-// Class AugmentedReality.A
-struct AA : AGameState {
+// Class AugmentedReality.ARSharedWorldGameState
+class AARSharedWorldGameState : AGameState {
 	struct TArray<Unknown> PreviewImageData; // 0x380 (16)
-	struct TArray<Unknown> A; // 0x390 (16)
+	struct TArray<Unknown> ARWorldData; // 0x390 (16)
 	int32_t PreviewImageBytesTotal; // 0x3A0 (4)
-	int32_t A; // 0x3A4 (4)
+	int32_t ARWorldBytesTotal; // 0x3A4 (4)
 	int32_t PreviewImageBytesDelivered; // 0x3A8 (4)
-	int32_t A; // 0x3AC (4)
+	int32_t ARWorldBytesDelivered; // 0x3AC (4)
 
-	void K2_OnARWorldMapIsReady(); // Function AugmentedReality.A.K2_OnARWorldMapIsReady(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void K2_OnARWorldMapIsReady(); // Function AugmentedReality.ARSharedWorldGameState.K2_OnARWorldMapIsReady(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 };
 
-// Class AugmentedReality.A
-struct AA : ASkyLight {
+// Class AugmentedReality.ARSkyLight
+class AARSkyLight : ASkyLight {
 	struct Unknown CaptureProbe; // 0x320 (8)
 
-	void SetEnvironmentCaptureProbe(struct Unknown InCaptureProbe); // Function AugmentedReality.A.SetEnvironmentCaptureProbe(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF6130>
+	void SetEnvironmentCaptureProbe(struct Unknown InCaptureProbe); // Function AugmentedReality.ARSkyLight.SetEnvironmentCaptureProbe(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF6130>
 };
 
-// Class AugmentedReality.A
-struct UA : UTexture {
+// Class AugmentedReality.ARTexture
+class UARTexture : UTexture {
 	enum class Unknow TextureType; // 0xB8 (1)
 	float Timestamp; // 0xBC (4)
 	struct Unknown ExternalTextureGuid; // 0xC0 (16)
 	struct Unknown Size; // 0xD0 (8)
 };
 
-// Class AugmentedReality.A
-struct UA : UA {
+// Class AugmentedReality.ARTextureCameraDepth
+class UARTextureCameraDepth : UARTexture {
 	enum class Unknow DepthQuality; // 0xD8 (1)
 	enum class Unknow DepthAccuracy; // 0xD9 (1)
 	char bIsTemporallySmoothed : 0; // 0xDA (1)
 };
 
-// Class AugmentedReality.A
-struct UA : UTextureCube {
+// Class AugmentedReality.AREnvironmentCaptureProbeTexture
+class UAREnvironmentCaptureProbeTexture : UTextureCube {
 	enum class Unknow TextureType; // 0x110 (1)
 	float Timestamp; // 0x114 (4)
 	struct Unknown ExternalTextureGuid; // 0x118 (16)
 	struct Unknown Size; // 0x128 (8)
 };
 
-// Class AugmentedReality.A
-struct UA : Object {
+// Class AugmentedReality.ARTrackedGeometry
+class UARTrackedGeometry : Object {
 	struct Unknown UniqueID; // 0x28 (16)
 	struct Unknown LocalToTrackingTransform; // 0x40 (48)
 	struct Unknown LocalToAlignedTrackingTransform; // 0x70 (48)
@@ -454,75 +454,75 @@ struct UA : Object {
 	int32_t LastUpdateFrameNumber; // 0xD0 (4)
 	struct FName DebugName; // 0xE0 (8)
 
-	char IsTracked(); // Function AugmentedReality.A.IsTracked(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF5FA0>
-	struct Unknown GetUnderlyingMesh(); // Function AugmentedReality.A.GetUnderlyingMesh(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF5EC0>
-	enum class Unknow GetTrackingState(); // Function AugmentedReality.A.GetTrackingState(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF0400>
-	enum class Unknow GetObjectClassification(); // Function AugmentedReality.A.GetObjectClassification(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF5E30>
-	struct Unknown GetLocalToWorldTransform(); // Function AugmentedReality.A.GetLocalToWorldTransform(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF5DD0>
-	struct Unknown GetLocalToTrackingTransform(); // Function AugmentedReality.A.GetLocalToTrackingTransform(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF0520>
-	float GetLastUpdateTimestamp(); // Function AugmentedReality.A.GetLastUpdateTimestamp(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF5D00>
-	int32_t GetLastUpdateFrameNumber(); // Function AugmentedReality.A.GetLastUpdateFrameNumber(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF5CD0>
-	struct FName GetDebugName(); // Function AugmentedReality.A.GetDebugName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF5B90>
+	char IsTracked(); // Function AugmentedReality.ARTrackedGeometry.IsTracked(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF5FA0>
+	struct Unknown GetUnderlyingMesh(); // Function AugmentedReality.ARTrackedGeometry.GetUnderlyingMesh(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF5EC0>
+	enum class Unknow GetTrackingState(); // Function AugmentedReality.ARTrackedGeometry.GetTrackingState(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF0400>
+	enum class Unknow GetObjectClassification(); // Function AugmentedReality.ARTrackedGeometry.GetObjectClassification(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF5E30>
+	struct Unknown GetLocalToWorldTransform(); // Function AugmentedReality.ARTrackedGeometry.GetLocalToWorldTransform(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF5DD0>
+	struct Unknown GetLocalToTrackingTransform(); // Function AugmentedReality.ARTrackedGeometry.GetLocalToTrackingTransform(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF0520>
+	float GetLastUpdateTimestamp(); // Function AugmentedReality.ARTrackedGeometry.GetLastUpdateTimestamp(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF5D00>
+	int32_t GetLastUpdateFrameNumber(); // Function AugmentedReality.ARTrackedGeometry.GetLastUpdateFrameNumber(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF5CD0>
+	struct FName GetDebugName(); // Function AugmentedReality.ARTrackedGeometry.GetDebugName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF5B90>
 };
 
-// Class AugmentedReality.A
-struct UA : UA {
+// Class AugmentedReality.ARPlaneGeometry
+class UARPlaneGeometry : UARTrackedGeometry {
 	enum class Unknow Orientation; // 0xE8 (1)
 	struct Unknown Center; // 0xEC (12)
 	struct Unknown Extent; // 0xF8 (12)
 	struct Unknown SubsumedBy; // 0x118 (8)
 
-	struct Unknown GetSubsumedBy(); // Function AugmentedReality.A.GetSubsumedBy(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF5E70>
-	enum class Unknow GetOrientation(); // Function AugmentedReality.A.GetOrientation(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF5E50>
-	struct Unknown GetExtent(); // Function AugmentedReality.A.GetExtent(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF5CA0>
-	struct Unknown GetCenter(); // Function AugmentedReality.A.GetCenter(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF5B60>
-	struct TArray<Unknown> GetBoundaryPolygonInLocalSpace(); // Function AugmentedReality.A.GetBoundaryPolygonInLocalSpace(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF5A90>
+	struct Unknown GetSubsumedBy(); // Function AugmentedReality.ARPlaneGeometry.GetSubsumedBy(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF5E70>
+	enum class Unknow GetOrientation(); // Function AugmentedReality.ARPlaneGeometry.GetOrientation(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF5E50>
+	struct Unknown GetExtent(); // Function AugmentedReality.ARPlaneGeometry.GetExtent(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF5CA0>
+	struct Unknown GetCenter(); // Function AugmentedReality.ARPlaneGeometry.GetCenter(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF5B60>
+	struct TArray<Unknown> GetBoundaryPolygonInLocalSpace(); // Function AugmentedReality.ARPlaneGeometry.GetBoundaryPolygonInLocalSpace(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF5A90>
 };
 
-// Class AugmentedReality.A
-struct UA : UA {
+// Class AugmentedReality.ARTrackedImage
+class UARTrackedImage : UARTrackedGeometry {
 	struct Unknown DetectedImage; // 0xE8 (8)
 	struct Unknown EstimatedSize; // 0xF0 (8)
 
-	struct Unknown GetEstimateSize(); // Function AugmentedReality.A.GetEstimateSize(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF5C20>
-	struct Unknown GetDetectedImage(); // Function AugmentedReality.A.GetDetectedImage(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF5BD0>
+	struct Unknown GetEstimateSize(); // Function AugmentedReality.ARTrackedImage.GetEstimateSize(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF5C20>
+	struct Unknown GetDetectedImage(); // Function AugmentedReality.ARTrackedImage.GetDetectedImage(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF5BD0>
 };
 
-// Class AugmentedReality.A
-struct UA : UA {
-	struct FString Q; // 0xF8 (16)
+// Class AugmentedReality.ARTrackedQRCode
+class UARTrackedQRCode : UARTrackedImage {
+	struct FString QRCode; // 0xF8 (16)
 	int32_t Version; // 0x108 (4)
 };
 
-// Class AugmentedReality.A
-struct UA : UA {
+// Class AugmentedReality.ARFaceGeometry
+class UARFaceGeometry : UARTrackedGeometry {
 	struct Unknown LookAtTarget; // 0xE8 (12)
 	char bIsTracked : 0; // 0xF4 (1)
 	struct TMap<Unknown, Unknown>Unknown BlendShapes; // 0xF8 (80)
 
-	struct Unknown GetWorldSpaceEyeTransform(enum class Unknow Eye); // Function AugmentedReality.A.GetWorldSpaceEyeTransform(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF5EF0>
-	struct Unknown GetLocalSpaceEyeTransform(enum class Unknow Eye); // Function AugmentedReality.A.GetLocalSpaceEyeTransform(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF5D30>
-	float GetBlendShapeValue(enum class Unknow BlendShape); // Function AugmentedReality.A.GetBlendShapeValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF5820>
-	struct TMap<Unknown, Unknown>Unknown GetBlendShapes(); // Function AugmentedReality.A.GetBlendShapes(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF58B0>
+	struct Unknown GetWorldSpaceEyeTransform(enum class Unknow Eye); // Function AugmentedReality.ARFaceGeometry.GetWorldSpaceEyeTransform(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF5EF0>
+	struct Unknown GetLocalSpaceEyeTransform(enum class Unknow Eye); // Function AugmentedReality.ARFaceGeometry.GetLocalSpaceEyeTransform(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF5D30>
+	float GetBlendShapeValue(enum class Unknow BlendShape); // Function AugmentedReality.ARFaceGeometry.GetBlendShapeValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF5820>
+	struct TMap<Unknown, Unknown>Unknown GetBlendShapes(); // Function AugmentedReality.ARFaceGeometry.GetBlendShapes(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF58B0>
 };
 
-// Class AugmentedReality.A
-struct UA : UA {
+// Class AugmentedReality.AREnvironmentCaptureProbe
+class UAREnvironmentCaptureProbe : UARTrackedGeometry {
 	struct Unknown EnvironmentCaptureTexture; // 0xF8 (8)
 
-	struct Unknown GetExtent(); // Function AugmentedReality.A.GetExtent(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF5C60>
-	struct Unknown GetEnvironmentCaptureTexture(); // Function AugmentedReality.A.GetEnvironmentCaptureTexture(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF5BF0>
+	struct Unknown GetExtent(); // Function AugmentedReality.AREnvironmentCaptureProbe.GetExtent(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF5C60>
+	struct Unknown GetEnvironmentCaptureTexture(); // Function AugmentedReality.AREnvironmentCaptureProbe.GetEnvironmentCaptureTexture(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF5BF0>
 };
 
-// Class AugmentedReality.A
-struct UA : UA {
+// Class AugmentedReality.ARTrackedObject
+class UARTrackedObject : UARTrackedGeometry {
 	struct Unknown DetectedObject; // 0xE8 (8)
 
-	struct Unknown GetDetectedObject(); // Function AugmentedReality.A.GetDetectedObject(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF5BD0>
+	struct Unknown GetDetectedObject(); // Function AugmentedReality.ARTrackedObject.GetDetectedObject(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF5BD0>
 };
 
-// Class AugmentedReality.A
-struct UA : UActorComponent {
+// Class AugmentedReality.ARTrackableNotifyComponent
+class UARTrackableNotifyComponent : UActorComponent {
 	struct FMulticastInlineDelegate OnAddTrackedGeometry; // 0xB0 (16)
 	struct FMulticastInlineDelegate OnUpdateTrackedGeometry; // 0xC0 (16)
 	struct FMulticastInlineDelegate OnRemoveTrackedGeometry; // 0xD0 (16)
@@ -546,17 +546,66 @@ struct UA : UActorComponent {
 	struct FMulticastInlineDelegate OnRemoveTrackedObject; // 0x1F0 (16)
 };
 
-// Class AugmentedReality.A
-struct UA : UDataAsset {
+// Class AugmentedReality.ARCandidateObject
+class UARCandidateObject : UDataAsset {
 	struct TArray<Unknown> CandidateObjectData; // 0x30 (16)
 	struct FString FriendlyName; // 0x40 (16)
 	struct Unknown BoundingBox; // 0x50 (28)
 
-	void SetFriendlyName(struct FString NewName); // Function AugmentedReality.A.SetFriendlyName(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF8830>
-	void SetCandidateObjectData(struct TArray<Unknown>& InCandidateObject); // Function AugmentedReality.A.SetCandidateObjectData(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF8780>
-	void SetBoundingBox(struct Unknown& InBoundingBox); // Function AugmentedReality.A.SetBoundingBox(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF86E0>
-	struct FString GetFriendlyName(); // Function AugmentedReality.A.GetFriendlyName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF8650>
-	struct TArray<Unknown> GetCandidateObjectData(); // Function AugmentedReality.A.GetCandidateObjectData(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF85D0>
-	struct Unknown GetBoundingBox(); // Function AugmentedReality.A.GetBoundingBox(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF85A0>
+	void SetFriendlyName(struct FString NewName); // Function AugmentedReality.ARCandidateObject.SetFriendlyName(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF8830>
+	void SetCandidateObjectData(struct TArray<Unknown>& InCandidateObject); // Function AugmentedReality.ARCandidateObject.SetCandidateObjectData(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF8780>
+	void SetBoundingBox(struct Unknown& InBoundingBox); // Function AugmentedReality.ARCandidateObject.SetBoundingBox(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF86E0>
+	struct FString GetFriendlyName(); // Function AugmentedReality.ARCandidateObject.GetFriendlyName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF8650>
+	struct TArray<Unknown> GetCandidateObjectData(); // Function AugmentedReality.ARCandidateObject.GetCandidateObjectData(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF85D0>
+	struct Unknown GetBoundingBox(); // Function AugmentedReality.ARCandidateObject.GetBoundingBox(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF85A0>
+};
+
+// ScriptStruct AugmentedReality.ARSharedWorldReplicationState
+struct FARSharedWorldReplicationState {
+	int32_t PreviewImageOffset; // 0x0 (4)
+	int32_t ARWorldOffset; // 0x4 (4)
+};
+
+// ScriptStruct AugmentedReality.ARTraceResult
+struct FARTraceResult {
+	float DistanceFromCamera; // 0x0 (4)
+	enum class Unknow TraceChannel; // 0x4 (1)
+	struct Unknown LocalToTrackingTransform; // 0x10 (48)
+	struct Unknown TrackedGeometry; // 0x40 (8)
+};
+
+// ScriptStruct AugmentedReality.ARPose3D
+struct FARPose3D {
+	struct Unknown SkeletonDefinition; // 0x0 (40)
+	struct TArray<Unknown> JointTransforms; // 0x28 (16)
+	struct TArray<Unknown> IsJointTracked; // 0x38 (16)
+	enum class Unknow JointTransformSpace; // 0x48 (1)
+};
+
+// ScriptStruct AugmentedReality.ARSkeletonDefinition
+struct FARSkeletonDefinition {
+	int32_t NumJoints; // 0x0 (4)
+	struct TArray<Unknown> JointNames; // 0x8 (16)
+	struct TArray<Unknown> ParentIndices; // 0x18 (16)
+};
+
+// ScriptStruct AugmentedReality.ARPose2D
+struct FARPose2D {
+	struct Unknown SkeletonDefinition; // 0x0 (40)
+	struct TArray<Unknown> JointLocations; // 0x28 (16)
+	struct TArray<Unknown> IsJointTracked; // 0x38 (16)
+};
+
+// ScriptStruct AugmentedReality.ARVideoFormat
+struct FARVideoFormat {
+	int32_t FPS; // 0x0 (4)
+	int32_t Width; // 0x4 (4)
+	int32_t Height; // 0x8 (4)
+};
+
+// ScriptStruct AugmentedReality.ARSessionStatus
+struct FARSessionStatus {
+	struct FString AdditionalInfo; // 0x0 (16)
+	enum class Unknow status; // 0x10 (1)
 };
 

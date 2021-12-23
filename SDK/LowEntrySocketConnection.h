@@ -6,7 +6,7 @@ enum class ELowEntryLatentFunctionCallAction : uint8 {
 };
 
 // Class LowEntrySocketConnection.LowEntryRawSocketConnection
-struct ULowEntryRawSocketConnection : Object {
+class ULowEntryRawSocketConnection : Object {
 	struct Unknown ListenerCode; // 0x38 (8)
 	struct FString Host; // 0x40 (16)
 	int32_t Port; // 0x50 (4)
@@ -33,7 +33,7 @@ struct ULowEntryRawSocketConnection : Object {
 };
 
 // Class LowEntrySocketConnection.LowEntryRawSocketConnectionListenerCode
-struct ULowEntryRawSocketConnectionListenerCode : Object {
+class ULowEntryRawSocketConnectionListenerCode : Object {
 	char Stopped : 0; // 0x28 (1)
 	char RunExec : 0; // 0x29 (1)
 	char ConnectionSuccess : 0; // 0x2A (1)
@@ -44,7 +44,7 @@ struct ULowEntryRawSocketConnectionListenerCode : Object {
 };
 
 // Class LowEntrySocketConnection.LowEntrySocketConnection
-struct ULowEntrySocketConnection : Object {
+class ULowEntrySocketConnection : Object {
 	struct Unknown ListenerCode; // 0x38 (8)
 	struct FString Host; // 0x40 (16)
 	int32_t Port; // 0x50 (4)
@@ -89,7 +89,7 @@ struct ULowEntrySocketConnection : Object {
 };
 
 // Class LowEntrySocketConnection.LowEntrySocketConnectionListenerCode
-struct ULowEntrySocketConnectionListenerCode : Object {
+class ULowEntrySocketConnectionListenerCode : Object {
 	char Stopped : 0; // 0x28 (1)
 	char RunExec : 0; // 0x29 (1)
 	char ConnectionSuccess : 0; // 0x2A (1)

@@ -64,14 +64,14 @@ enum class ESimulationOverlap : uint8 {
 };
 
 // Class Foliage.FoliageInstancedStaticMeshComponent
-struct UFoliageInstancedStaticMeshComponent : UHierarchicalInstancedStaticMeshComponent {
+class UFoliageInstancedStaticMeshComponent : UHierarchicalInstancedStaticMeshComponent {
 	struct FMulticastInlineDelegate OnInstanceTakePointDamage; // 0x718 (16)
 	struct FMulticastInlineDelegate OnInstanceTakeRadialDamage; // 0x728 (16)
 	struct Unknown GenerationGuid; // 0x738 (16)
 };
 
 // Class Foliage.FoliageSettings
-struct UFoliageSettings : UDeveloperSettings {
+class UFoliageSettings : UDeveloperSettings {
 	struct TArray<Unknown> CullDistancePresets; // 0x38 (16)
 	int32_t DesiredMaxTrianglesToRender; // 0x48 (4)
 	float MinimumScreenSize; // 0x4C (4)
@@ -81,7 +81,7 @@ struct UFoliageSettings : UDeveloperSettings {
 };
 
 // Class Foliage.FoliageType
-struct UFoliageType : Object {
+class UFoliageType : Object {
 	struct Unknown UpdateGuid; // 0x28 (16)
 	float Density; // 0x38 (4)
 	float DensityAdjustmentFactor; // 0x3C (4)
@@ -124,7 +124,7 @@ struct UFoliageType : Object {
 	char bCastDynamicShadow : 0; // 0x14C (1)
 	char bCastStaticShadow : 0; // 0x14C (1)
 	char bCastShadowAsTwoSided : 0; // 0x14C (1)
-	char b : 0; // 0x14C (1)
+	char bReceivesDecals : 0; // 0x14C (1)
 	char bOverrideLightMapRes : 0; // 0x14D (1)
 	int32_t OverriddenLightMapRes; // 0x150 (4)
 	enum class Unknow LightmapType; // 0x154 (1)
@@ -133,7 +133,7 @@ struct UFoliageType : Object {
 	char CustomNavigableGeometry; // 0x2F0 (1)
 	char InstanceBodiesSplitRatio; // 0x2F1 (1)
 	struct Unknown LightingChannels; // 0x2F2 (1)
-	char b : 0; // 0x2F4 (1)
+	char bRenderCustomDepth : 0; // 0x2F4 (1)
 	int32_t CustomDepthStencilValue; // 0x2F8 (4)
 	int32_t TranslucencySortPriority; // 0x2FC (4)
 	float CollisionRadius; // 0x300 (4)
@@ -175,20 +175,20 @@ struct UFoliageType : Object {
 };
 
 // Class Foliage.FoliageType_Actor
-struct UFoliageType_Actor : UFoliageType {
+class UFoliageType_Actor : UFoliageType {
 	struct Unknown* ActorClass; // 0x3E8 (8)
 	char bShouldAttachToBaseComponent : 0; // 0x3F0 (1)
 };
 
 // Class Foliage.FoliageType_InstancedStaticMesh
-struct UFoliageType_InstancedStaticMesh : UFoliageType {
+class UFoliageType_InstancedStaticMesh : UFoliageType {
 	struct Unknown Mesh; // 0x3E8 (8)
 	struct TArray<Unknown> OverrideMaterials; // 0x3F0 (16)
 	struct Unknown* ComponentClass; // 0x400 (8)
 };
 
 // Class Foliage.InteractiveFoliageActor
-struct AInteractiveFoliageActor : AStaticMeshActor {
+class AInteractiveFoliageActor : AStaticMeshActor {
 	struct Unknown CapsuleComponent; // 0x320 (8)
 	struct Unknown TouchingActorEntryPosition; // 0x328 (12)
 	struct Unknown FoliageVelocity; // 0x334 (12)
@@ -208,12 +208,12 @@ struct AInteractiveFoliageActor : AStaticMeshActor {
 };
 
 // Class Foliage.ProceduralFoliageBlockingVolume
-struct AProceduralFoliageBlockingVolume : AVolume {
+class AProceduralFoliageBlockingVolume : AVolume {
 	struct Unknown ProceduralFoliageVolume; // 0x348 (8)
 };
 
 // Class Foliage.ProceduralFoliageComponent
-struct UProceduralFoliageComponent : UActorComponent {
+class UProceduralFoliageComponent : UActorComponent {
 	struct Unknown FoliageSpawner; // 0xB0 (8)
 	float TileOverlap; // 0xB8 (4)
 	struct Unknown SpawningVolume; // 0xC0 (8)
@@ -221,7 +221,7 @@ struct UProceduralFoliageComponent : UActorComponent {
 };
 
 // Class Foliage.ProceduralFoliageSpawner
-struct UProceduralFoliageSpawner : Object {
+class UProceduralFoliageSpawner : Object {
 	int32_t RandomSeed; // 0x28 (4)
 	float TileSize; // 0x2C (4)
 	int32_t NumUniqueTiles; // 0x30 (4)
@@ -232,13 +232,44 @@ struct UProceduralFoliageSpawner : Object {
 };
 
 // Class Foliage.ProceduralFoliageTile
-struct UProceduralFoliageTile : Object {
+class UProceduralFoliageTile : Object {
 	struct Unknown FoliageSpawner; // 0x28 (8)
 	struct TArray<Unknown> InstancesArray; // 0xD0 (16)
 };
 
 // Class Foliage.ProceduralFoliageVolume
-struct AProceduralFoliageVolume : AVolume {
+class AProceduralFoliageVolume : AVolume {
 	struct Unknown ProceduralComponent; // 0x348 (8)
+};
+
+// ScriptStruct Foliage.CullDistancePreset
+struct FCullDistancePreset {
+	struct FString Name; // 0x0 (16)
+	struct Unknown MinMax; // 0x10 (8)
+};
+
+// ScriptStruct Foliage.FoliageVertexColorChannelMask
+struct FFoliageVertexColorChannelMask {
+	char UseMask : 0; // 0x0 (1)
+	float MaskThreshold; // 0x4 (4)
+	char InvertMask : 0; // 0x8 (1)
+};
+
+// ScriptStruct Foliage.FoliageTypeObject
+struct FFoliageTypeObject {
+	struct Unknown FoliageTypeObject; // 0x0 (8)
+	struct Unknown TypeInstance; // 0x8 (8)
+	char bIsAsset : 0; // 0x10 (1)
+	struct Unknown* Type; // 0x18 (8)
+};
+
+// ScriptStruct Foliage.ProceduralFoliageInstance
+struct FProceduralFoliageInstance {
+	struct Unknown Location; // 0x0 (12)
+	struct Unknown Rotation; // 0x10 (16)
+	struct Unknown Normal; // 0x20 (12)
+	float Age; // 0x2C (4)
+	float Scale; // 0x30 (4)
+	struct Unknown Type; // 0x38 (8)
 };
 

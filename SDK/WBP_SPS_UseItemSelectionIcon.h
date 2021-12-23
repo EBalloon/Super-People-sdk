@@ -1,5 +1,5 @@
 // WidgetBlueprintGeneratedClass WBP_SPS_UseItemSelectionIcon.WBP_SPS_UseItemSelectionIcon_C
-struct UWBP_SPS_UseItemSelectionIcon_C : UUserWidget {
+class UWBP_SPS_UseItemSelectionIcon_C : UUserWidget {
 	struct Unknown UberGraphFrame; // 0x248 (8)
 	struct Unknown IconImage; // 0x250 (8)
 	struct FMulticastInlineDelegate Hovered; // 0x258 (16)

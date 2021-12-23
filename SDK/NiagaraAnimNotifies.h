@@ -1,5 +1,5 @@
 // Class NiagaraAnimNotifies.AnimNotify_PlayNiagaraEffect
-struct UAnimNotify_PlayNiagaraEffect : UAnimNotify {
+class UAnimNotify_PlayNiagaraEffect : UAnimNotify {
 	struct Unknown Template; // 0x38 (8)
 	struct Unknown LocationOffset; // 0x40 (12)
 	struct Unknown RotationOffset; // 0x4C (12)
@@ -11,7 +11,7 @@ struct UAnimNotify_PlayNiagaraEffect : UAnimNotify {
 };
 
 // Class NiagaraAnimNotifies.AnimNotifyState_TimedNiagaraEffect
-struct UAnimNotifyState_TimedNiagaraEffect : UAnimNotifyState {
+class UAnimNotifyState_TimedNiagaraEffect : UAnimNotifyState {
 	struct Unknown Template; // 0x30 (8)
 	struct FName SocketName; // 0x38 (8)
 	struct Unknown LocationOffset; // 0x40 (12)

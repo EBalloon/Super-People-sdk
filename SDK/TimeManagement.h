@@ -25,13 +25,19 @@ enum class ETimedDataInputEvaluationType : uint8 {
 };
 
 // Class TimeManagement.FixedFrameRateCustomTimeStep
-struct UFixedFrameRateCustomTimeStep : UEngineCustomTimeStep {
+class UFixedFrameRateCustomTimeStep : UEngineCustomTimeStep {
 	struct Unknown FixedFrameRate; // 0x28 (8)
 };
 
 // Class TimeManagement.TimeSynchronizationSource
-struct UTimeSynchronizationSource : Object {
+class UTimeSynchronizationSource : Object {
 	char bUseForSynchronization : 0; // 0x28 (1)
 	int32_t FrameOffset; // 0x2C (4)
+};
+
+// ScriptStruct TimeManagement.TimedDataInputEvaluationData
+struct FTimedDataInputEvaluationData {
+	float DistanceToNewestSampleSeconds; // 0x0 (4)
+	float DistanceToOldestSampleSeconds; // 0x4 (4)
 };
 

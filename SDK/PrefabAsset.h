@@ -19,7 +19,7 @@ enum class EPrefabVisualizerType : uint8 {
 };
 
 // Class PrefabAsset.PrefabToolActor
-struct APrefabToolActor : UActor {
+class APrefabToolActor : UActor {
 	struct Unknown PrefabComponent; // 0x310 (8)
 
 	void SetPrefab(struct Unknown NewPrefab, char bForceRevertEvenDisconnected); // Function PrefabAsset.PrefabToolActor.SetPrefab(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124CFD0>
@@ -31,9 +31,9 @@ struct APrefabToolActor : UActor {
 };
 
 // Class PrefabAsset.PrefabAsset
-struct UPrefabAsset : Object {
+class UPrefabAsset : Object {
 	struct TMap<Unknown, Unknown>Unknown AssetReferences; // 0x28 (80)
-	struct Unknown GeneratedBlueprintAssetReference; // 0x78 (24)
+	struct Unknown GeneratedBlueprintAssetReferenc; // 0x78 (24)
 	struct Unknown SimplifiedMeshAssetReference; // 0x90 (24)
 	struct Unknown PrefabId; // 0xA8 (16)
 	struct FString PrefabContent; // 0xB8 (16)
@@ -46,12 +46,12 @@ struct UPrefabAsset : Object {
 };
 
 // Class PrefabAsset.PrefabVariantAsset
-struct UPrefabVariantAsset : UPrefabAsset {
+class UPrefabVariantAsset : UPrefabAsset {
 	struct Unknown Parent; // 0xE8 (8)
 };
 
 // Class PrefabAsset.PrefabToolComponent
-struct UPrefabToolComponent : UPrimitiveComponent {
+class UPrefabToolComponent : UPrimitiveComponent {
 	char bConnected : 0; // 0x4B8 (1)
 	char bLockSelection : 0; // 0x4B8 (1)
 	struct Unknown Prefab; // 0x4C0 (8)
@@ -64,12 +64,12 @@ struct UPrefabToolComponent : UPrimitiveComponent {
 };
 
 // Class PrefabAsset.PrefabToolSettings
-struct UPrefabToolSettings : Object {
+class UPrefabToolSettings : Object {
 	char bInitialPivotToWorldOrigin : 0; // 0x28 (1)
-	char b : 0; // 0x29 (1)
+	char bReplaceActorsWithCreatedPrefab : 0; // 0x29 (1)
 	char bAutoIncludeAttachedActorsWhenCreateNewPrefab : 0; // 0x2A (1)
 	char bNestedPrefabSupport : 0; // 0x2B (1)
-	char b : 0; // 0x2C (1)
+	char bRestorePrefabActorCollapseStatusAfterPIE : 0; // 0x2C (1)
 	char bCollapseAllPrefabActorsAfterMapOpened : 0; // 0x2D (1)
 	char bMoveActorsInWorldAfterSetPrefabPivot : 0; // 0x2E (1)
 	char bDuplicateNoRevertWithOffset : 0; // 0x2F (1)
@@ -96,7 +96,7 @@ struct UPrefabToolSettings : Object {
 	struct Unknown PrefabMaterialPath; // 0x88 (24)
 	char bShadedPrefabViewVisualizer : 0; // 0xC8 (1)
 	char bLockPrefabSelectionByDefault : 0; // 0xC9 (1)
-	char bDisableLockPrefabSelection : 0; // 0xCA (1)
+	char bDisableLockPrefabSelectionFeature : 0; // 0xCA (1)
 	char bSupportGroupWhenPasting : 0; // 0xCB (1)
 	char bForceApplyPerInstanceVertexColor : 0; // 0xCC (1)
 	char bHideChildActorsInPIEIfHiddenInEditor : 0; // 0xCD (1)
@@ -113,7 +113,7 @@ struct UPrefabToolSettings : Object {
 	char bSupportGenerateBlueprint : 0; // 0x118 (1)
 	char bHarvestComponentsWhenGeneratingBlueprint : 0; // 0x119 (1)
 	char bUseActorNameAsVariableNameWhenGeneratingBlueprint : 0; // 0x11A (1)
-	char bForceMobilityToMov : 0; // 0x11B (1)
+	char bForceMobilityToMoveprint : 0; // 0x11B (1)
 	struct TArray<Unknown> IgnoreActorClassesWhenGeneratingBlueprint; // 0x120 (16)
 	struct TArray<Unknown> IgnoreActorTagsWhenGeneratingBlueprint; // 0x130 (16)
 	char bFlashPrefabWindowForTargetPrefabActor : 0; // 0x140 (1)
@@ -121,5 +121,13 @@ struct UPrefabToolSettings : Object {
 	char bDebugMode : 0; // 0x142 (1)
 	char bDisableThumbnailRender : 0; // 0x143 (1)
 	char bShowPrefabInstanceTagInPrefabToolWindow : 0; // 0x144 (1)
+};
+
+// ScriptStruct PrefabAsset.PrefabVariantRule
+struct FPrefabVariantRule {
+	struct FName Scope; // 0x0 (8)
+	struct FString Rule; // 0x8 (16)
+	char RuleType; // 0x18 (1)
+	char bEnable : 0; // 0x19 (1)
 };
 

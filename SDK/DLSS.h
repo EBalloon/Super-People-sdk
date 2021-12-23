@@ -7,7 +7,7 @@ enum class EDLSSSettingOverride : uint8 {
 };
 
 // Class DLSS.DLSSOverrideSettings
-struct UDLSSOverrideSettings : Object {
+class UDLSSOverrideSettings : Object {
 	enum class Unknow EnableDLSSInEditorViewportsOverride; // 0x28 (1)
 	enum class Unknow EnableScreenpercentageManipulationInDLSSEditorViewportsOverride; // 0x29 (1)
 	enum class Unknow EnableDLSSInPlayInEditorViewportsOverride; // 0x2A (1)
@@ -16,7 +16,7 @@ struct UDLSSOverrideSettings : Object {
 };
 
 // Class DLSS.DLSSSettings
-struct UDLSSSettings : Object {
+class UDLSSSettings : Object {
 	char bEnableDLSSD3D12 : 0; // 0x28 (1)
 	char bEnableDLSSD3D11 : 0; // 0x29 (1)
 	char bEnableDLSSVulkan : 0; // 0x2A (1)

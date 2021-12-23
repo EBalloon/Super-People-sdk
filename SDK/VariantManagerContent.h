@@ -13,7 +13,7 @@ enum class EPropertyValueCategory : uint8 {
 };
 
 // Class VariantManagerContent.LevelVariantSets
-struct ULevelVariantSets : Object {
+class ULevelVariantSets : Object {
 	struct Unknown* DirectorClass; // 0x28 (8)
 	struct TArray<Unknown> VariantSets; // 0x30 (16)
 
@@ -23,7 +23,7 @@ struct ULevelVariantSets : Object {
 };
 
 // Class VariantManagerContent.LevelVariantSetsActor
-struct ALevelVariantSetsActor : UActor {
+class ALevelVariantSetsActor : UActor {
 	struct Unknown LevelVariantSets; // 0x310 (24)
 
 	char SwitchOnVariantByName(struct FString VariantSetName, struct FString VariantName); // Function VariantManagerContent.LevelVariantSetsActor.SwitchOnVariantByName(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16BE840>
@@ -33,7 +33,7 @@ struct ALevelVariantSetsActor : UActor {
 };
 
 // Class VariantManagerContent.PropertyValue
-struct UPropertyValue : Object {
+class UPropertyValue : Object {
 	struct TArray<Unknown> Properties; // 0x88 (16)
 	struct TArray<Unknown> PropertyIndices; // 0x98 (16)
 	struct TArray<Unknown> CapturedPropSegments; // 0xA8 (16)
@@ -51,7 +51,7 @@ struct UPropertyValue : Object {
 };
 
 // Class VariantManagerContent.SwitchActor
-struct ASwitchActor : UActor {
+class ASwitchActor : UActor {
 	struct Unknown SceneComponent; // 0x328 (8)
 	int32_t LastSelectedOption; // 0x330 (4)
 
@@ -61,7 +61,7 @@ struct ASwitchActor : UActor {
 };
 
 // Class VariantManagerContent.Variant
-struct UVariant : Object {
+class UVariant : Object {
 	struct FText DisplayText; // 0x28 (24)
 	struct TArray<Unknown> ObjectBindings; // 0x58 (16)
 	struct Unknown Thumbnail; // 0x68 (8)
@@ -76,7 +76,7 @@ struct UVariant : Object {
 };
 
 // Class VariantManagerContent.VariantObjectBinding
-struct UVariantObjectBinding : Object {
+class UVariantObjectBinding : Object {
 	struct FString CachedActorLabel; // 0x28 (16)
 	struct Unknown ObjectPtr; // 0x38 (24)
 	Unknown LazyObjectPtr; // 0x50 (28)
@@ -85,7 +85,7 @@ struct UVariantObjectBinding : Object {
 };
 
 // Class VariantManagerContent.VariantSet
-struct UVariantSet : Object {
+class UVariantSet : Object {
 	struct FText DisplayText; // 0x28 (24)
 	char bExpanded : 0; // 0x58 (1)
 	struct TArray<Unknown> Variants; // 0x60 (16)
@@ -95,5 +95,17 @@ struct UVariantSet : Object {
 	struct Unknown GetVariant(int32_t VariantIndex); // Function VariantManagerContent.VariantSet.GetVariant(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16BE210>
 	int32_t GetNumVariants(); // Function VariantManagerContent.VariantSet.GetNumVariants(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16BE090>
 	struct FText GetDisplayText(); // Function VariantManagerContent.VariantSet.GetDisplayText(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16BDEE0>
+};
+
+// ScriptStruct VariantManagerContent.FunctionCaller
+struct FFunctionCaller {
+	struct FName FunctionName; // 0x0 (8)
+};
+
+// ScriptStruct VariantManagerContent.CapturedPropSegment
+struct FCapturedPropSegment {
+	struct FString PropertyName; // 0x0 (16)
+	int32_t PropertyIndex; // 0x10 (4)
+	struct FString ComponentName; // 0x18 (16)
 };
 

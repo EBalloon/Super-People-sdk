@@ -1,5 +1,5 @@
 // WidgetBlueprintGeneratedClass ButtomButtonWidget.ButtomButtonWidget_C
-struct UButtomButtonWidget_C : UUserWidget {
+class UButtomButtonWidget_C : UUserWidget {
 	struct Unknown UberGraphFrame; // 0x248 (8)
 	struct Unknown ApplyBtn; // 0x250 (8)
 	struct Unknown ApplyDisable; // 0x258 (8)
@@ -10,7 +10,7 @@ struct UButtomButtonWidget_C : UUserWidget {
 	struct Unknown Lock; // 0x280 (8)
 	struct Unknown NormalBg; // 0x288 (8)
 	struct Unknown NormalBtn; // 0x290 (8)
-	struct Unknown OverBg; // 0x298 (8)
+	struct Unknown OverBG; // 0x298 (8)
 	struct Unknown PressBg; // 0x2A0 (8)
 	struct Unknown Title_Text; // 0x2A8 (8)
 	struct FText Title; // 0x2B0 (24)

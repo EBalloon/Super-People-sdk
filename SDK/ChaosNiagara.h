@@ -48,12 +48,12 @@ enum class EDebugTypeEnum : uint8 {
 	EDebugTypeEnum = 3
 };
 
-// Enum ChaosNiagara.E
-enum class E : uint8 {
-	E = 0
-	E = 1
-	E = 2
-	E = 3
+// Enum ChaosNiagara.ERandomVelocityGenerationTypeEnum
+enum class ERandomVelocityGenerationTypeEnum : uint8 {
+	ERandomVelocityGenerationTypeEnum = 0
+	ERandomVelocityGenerationTypeEnum = 1
+	ERandomVelocityGenerationTypeEnum = 2
+	ERandomVelocityGenerationTypeEnum = 3
 };
 
 // Enum ChaosNiagara.EDataSortTypeEnum
@@ -66,7 +66,7 @@ enum class EDataSortTypeEnum : uint8 {
 };
 
 // Class ChaosNiagara.NiagaraDataInterfaceChaosDestruction
-struct UNiagaraDataInterfaceChaosDestruction : UNiagaraDataInterface {
+class UNiagaraDataInterfaceChaosDestruction : UNiagaraDataInterface {
 	struct TSet<Unknown> ChaosSolverActorSet; // 0x30 (80)
 	enum class Unknow DataSourceType; // 0x80 (1)
 	int32_t DataProcessFrequency; // 0x84 (4)
@@ -114,5 +114,18 @@ struct UNiagaraDataInterfaceChaosDestruction : UNiagaraDataInterface {
 	float LastSpawnTime; // 0x1CC (4)
 	float SolverTime; // 0x1E0 (4)
 	float TimeStampOfLastProcessedData; // 0x1E4 (4)
+};
+
+// ScriptStruct ChaosNiagara.ChaosDestructionEvent
+struct FChaosDestructionEvent {
+	struct Unknown Position; // 0x0 (12)
+	struct Unknown Normal; // 0xC (12)
+	struct Unknown Velocity; // 0x18 (12)
+	struct Unknown AngularVelocity; // 0x24 (12)
+	float ExtentMin; // 0x30 (4)
+	float ExtentMax; // 0x34 (4)
+	int32_t ParticleID; // 0x38 (4)
+	float Time; // 0x3C (4)
+	int32_t Type; // 0x40 (4)
 };
 

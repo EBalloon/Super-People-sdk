@@ -180,13 +180,13 @@ enum class EGTInputWidgetRaycastQuality : uint8 {
 };
 
 // Class CoherentUIGTPlugin.CoherentUIGTAudioWrapper
-struct UCoherentUIGTAudioWrapper : Object {
+class UCoherentUIGTAudioWrapper : Object {
 	struct Unknown Owner; // 0x28 (8)
 	struct TMap<Unknown, Unknown>Unknown Sounds; // 0x30 (80)
 };
 
 // Class CoherentUIGTPlugin.CoherentUIGTBaseComponent
-struct UCoherentUIGTBaseComponent : UActorComponent {
+class UCoherentUIGTBaseComponent : UActorComponent {
 	struct FMulticastInlineDelegate ReadyForBindings; // 0xB0 (16)
 	struct FMulticastInlineDelegate BindingsReleased; // 0xC0 (16)
 	struct FMulticastInlineDelegate FinishLoad; // 0xD0 (16)
@@ -198,8 +198,8 @@ struct UCoherentUIGTBaseComponent : UActorComponent {
 	struct FDelegate LiveViewSizeRequested; // 0x130 (16)
 	struct Unknown Texture; // 0x158 (8)
 	char Filter; // 0x160 (1)
-	char b : 0; // 0x161 (1)
-	char b : 0; // 0x162 (1)
+	char bReceiveInput : 0; // 0x161 (1)
+	char bReceiveInputWhenTransparent : 0; // 0x162 (1)
 	char AllowPerformanceWarnings : 0; // 0x163 (1)
 	float ExecuteJSTimersThresholdMs; // 0x164 (4)
 	float UpdateStylesAndLayoutThresholdMs; // 0x168 (4)
@@ -239,8 +239,8 @@ struct UCoherentUIGTBaseComponent : UActorComponent {
 };
 
 // Class CoherentUIGTPlugin.CoherentUIGTComponent
-struct UCoherentUIGTComponent : UCoherentUIGTBaseComponent {
-	struct FString U; // 0x230 (16)
+class UCoherentUIGTComponent : UCoherentUIGTBaseComponent {
+	struct FString URL; // 0x230 (16)
 	int32_t Width; // 0x240 (4)
 	int32_t Height; // 0x244 (4)
 	char ManualTexture : 0; // 0x248 (1)
@@ -249,7 +249,7 @@ struct UCoherentUIGTComponent : UCoherentUIGTBaseComponent {
 };
 
 // Class CoherentUIGTPlugin.CoherentUIGTGameHUD
-struct ACoherentUIGTGameHUD : AHUD {
+class ACoherentUIGTGameHUD : AHUD {
 	struct Unknown CoherentUIGTHUD; // 0x400 (8)
 
 	void SetupUIGTView(struct FString PageUrl, char bIsTransparent, float ClickThroughAlphaThreshold, float AnimationFrameDefer, char bDelayedUpdate); // Function CoherentUIGTPlugin.CoherentUIGTGameHUD.SetupUIGTView(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1103B70>
@@ -257,14 +257,14 @@ struct ACoherentUIGTGameHUD : AHUD {
 };
 
 // Class CoherentUIGTPlugin.CoherentUIGTHUD
-struct UCoherentUIGTHUD : UCoherentUIGTBaseComponent {
+class UCoherentUIGTHUD : UCoherentUIGTBaseComponent {
 	struct Unknown HUDMaterialName; // 0x230 (24)
 	struct Unknown HUDMaterial; // 0x248 (8)
 	struct Unknown HUDMaterialInstance; // 0x250 (8)
 };
 
 // Class CoherentUIGTPlugin.CoherentUIGTInputActor
-struct ACoherentUIGTInputActor : UActor {
+class ACoherentUIGTInputActor : UActor {
 	struct FMulticastInlineDelegate OnCoherentUIGTInputActorMouseButtonDown; // 0x310 (16)
 	struct FMulticastInlineDelegate OnCoherentUIGTInputActorMouseButtonUp; // 0x320 (16)
 	struct FMulticastInlineDelegate OnCoherentUIGTInputActorKeyDown; // 0x330 (16)
@@ -284,7 +284,7 @@ struct ACoherentUIGTInputActor : UActor {
 };
 
 // Class CoherentUIGTPlugin.CoherentUIGTJSEvent
-struct UCoherentUIGTJSEvent : Object {
+class UCoherentUIGTJSEvent : Object {
 	struct TArray<Unknown> StructTypes; // 0xA8 (16)
 
 	void AddText(struct FText& Text); // Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddText(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1106A70>
@@ -300,7 +300,7 @@ struct UCoherentUIGTJSEvent : Object {
 };
 
 // Class CoherentUIGTPlugin.CoherentUIGTJSPayload
-struct UCoherentUIGTJSPayload : Object {
+class UCoherentUIGTJSPayload : Object {
 	struct FString EventName; // 0x28 (16)
 
 	void ReadObject(int32_t Index, struct Unknown Object); // Function CoherentUIGTPlugin.CoherentUIGTJSPayload.ReadObject(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11073C0>
@@ -311,7 +311,7 @@ struct UCoherentUIGTJSPayload : Object {
 };
 
 // Class CoherentUIGTPlugin.CoherentUIGTLiveView
-struct UCoherentUIGTLiveView : UActorComponent {
+class UCoherentUIGTLiveView : UActorComponent {
 	struct FString LinkName; // 0xB0 (16)
 	struct Unknown Texture; // 0xC0 (8)
 
@@ -319,7 +319,7 @@ struct UCoherentUIGTLiveView : UActorComponent {
 };
 
 // Class CoherentUIGTPlugin.CoherentUIGTSettings
-struct UCoherentUIGTSettings : Object {
+class UCoherentUIGTSettings : Object {
 	char EnableLiveReload : 0; // 0x28 (1)
 	int32_t InspectorPort; // 0x2C (4)
 	int32_t WebdriverPort; // 0x30 (4)
@@ -330,8 +330,8 @@ struct UCoherentUIGTSettings : Object {
 	char ShowWarningsOnScreen : 0; // 0x38 (1)
 	enum class Unknow LogSeverity; // 0x39 (1)
 	char bPaintToBackBuffer : 0; // 0x3A (1)
-	char b : 0; // 0x3B (1)
-	char b : 0; // 0x3C (1)
+	char bRespectTitleSafeZone : 0; // 0x3B (1)
+	char bRespectLetterboxing : 0; // 0x3C (1)
 	struct FString HUDMaterialName; // 0x40 (16)
 	struct FString CoUIResourcesRoot; // 0x50 (16)
 	char TickWhileGameIsPaused : 0; // 0x60 (1)
@@ -344,7 +344,7 @@ struct UCoherentUIGTSettings : Object {
 };
 
 // Class CoherentUIGTPlugin.CoherentUIGTWidget
-struct UCoherentUIGTWidget : UWidget {
+class UCoherentUIGTWidget : UWidget {
 	struct Unknown Owner; // 0x120 (8)
 	struct FMulticastInlineDelegate ReadyForBindings; // 0x128 (16)
 	struct FMulticastInlineDelegate BindingsReleased; // 0x138 (16)
@@ -359,9 +359,9 @@ struct UCoherentUIGTWidget : UWidget {
 	struct FMulticastInlineDelegate KeyDownDelegate; // 0x1E0 (16)
 	struct FMulticastInlineDelegate MouseEventDelegate; // 0x1F0 (16)
 	char Filter; // 0x200 (1)
-	char b : 0; // 0x201 (1)
+	char bReceiveInput : 0; // 0x201 (1)
 	char InputPropagationBehaviour; // 0x202 (1)
-	char b : 0; // 0x203 (1)
+	char bReceiveInputWhenTransparent : 0; // 0x203 (1)
 	char bGammaCorrectedMaterial : 0; // 0x204 (1)
 	float TickPeriodInMinimizedGame; // 0x208 (4)
 	char AllowPerformanceWarnings : 0; // 0x20C (1)
@@ -374,7 +374,7 @@ struct UCoherentUIGTWidget : UWidget {
 	int32_t LayerHeightThreshold; // 0x228 (4)
 	char bEnableAdditionalDefaultStyles : 0; // 0x22C (1)
 	struct Unknown AudioWrapper; // 0x2A0 (8)
-	struct FString U; // 0x328 (16)
+	struct FString URL; // 0x328 (16)
 	float ClickThroughAlphaThreshold; // 0x338 (4)
 	char OffscreenCanvasRendering : 0; // 0x33C (1)
 	char Transparent : 0; // 0x33D (1)
@@ -418,5 +418,47 @@ struct UCoherentUIGTWidget : UWidget {
 	void CreateDataModelFromObject(struct FString Name, struct Unknown Model); // Function CoherentUIGTPlugin.CoherentUIGTWidget.CreateDataModelFromObject(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1106B60>
 	void BeginDebugFrameSave(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.BeginDebugFrameSave(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1106B40>
 	void AKAudioEventDelegate__DelegateSignature(struct FString EventName); // DelegateFunction CoherentUIGTPlugin.CoherentUIGTWidget.AKAudioEventDelegate__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+};
+
+// ScriptStruct CoherentUIGTPlugin.Coh_MouseEventData
+struct FCoh_MouseEventData {
+	enum class Unknow Type; // 0x0 (1)
+	enum class Unknow Button; // 0x1 (1)
+	int32_t X; // 0x4 (4)
+	int32_t Y; // 0x8 (4)
+	float WheelX; // 0xC (4)
+	float WheelY; // 0x10 (4)
+	struct FString InputGroupName; // 0x18 (16)
+	char bDoubleClick : 0; // 0x28 (1)
+};
+
+// ScriptStruct CoherentUIGTPlugin.CoherentSound
+struct FCoherentSound {
+	struct Unknown Component; // 0x0 (8)
+	struct Unknown Stream; // 0x8 (8)
+};
+
+// ScriptStruct CoherentUIGTPlugin.CoherentUIGTLoadingScreenSettings
+struct FCoherentUIGTLoadingScreenSettings {
+	float MinimumLoadingScreenDisplayTime; // 0x0 (4)
+	char bAutoCompleteWhenLoadingCompletes : 0; // 0x4 (1)
+	char bWaitForManualStop : 0; // 0x5 (1)
+	struct FString URL; // 0x8 (16)
+};
+
+// ScriptStruct CoherentUIGTPlugin.CoherentUIGTViewInfo
+struct FCoherentUIGTViewInfo {
+	int32_t Width; // 0x0 (4)
+	int32_t Height; // 0x4 (4)
+	char IsTransparent : 0; // 0x8 (1)
+	float ClickThroughAlphaThreshold; // 0xC (4)
+	float AnimationFrameDefer; // 0x10 (4)
+};
+
+// ScriptStruct CoherentUIGTPlugin.Coh_PrivateInfo
+struct FCoh_PrivateInfo {
+	struct FString SessionID; // 0x0 (16)
+	struct FString AuthToken; // 0x10 (16)
+	struct FString ApiGameUrl; // 0x20 (16)
 };
 

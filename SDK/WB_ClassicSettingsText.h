@@ -1,5 +1,5 @@
 // WidgetBlueprintGeneratedClass WB_ClassicSettingsText.WB_ClassicSettingsText_C
-struct UWB_ClassicSettingsText_C : UUserWidget {
+class UWB_ClassicSettingsText_C : UUserWidget {
 	struct Unknown UberGraphFrame; // 0x248 (8)
 	struct Unknown TextField; // 0x250 (8)
 	struct FText Text; // 0x258 (24)

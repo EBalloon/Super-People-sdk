@@ -1,10 +1,10 @@
 // Class FieldSystemEngine.FieldSystemActor
-struct AFieldSystemActor : UActor {
+class AFieldSystemActor : UActor {
 	struct Unknown FieldSystemComponent; // 0x310 (8)
 };
 
 // Class FieldSystemEngine.FieldSystemComponent
-struct UFieldSystemComponent : UPrimitiveComponent {
+class UFieldSystemComponent : UPrimitiveComponent {
 	struct Unknown FieldSystem; // 0x4B8 (8)
 	struct TArray<Unknown> SupportedSolvers; // 0x4D0 (16)
 
@@ -20,28 +20,28 @@ struct UFieldSystemComponent : UPrimitiveComponent {
 };
 
 // Class FieldSystemEngine.FieldSystemMetaDataIteration
-struct UFieldSystemMetaDataIteration : UFieldSystemMetaData {
+class UFieldSystemMetaDataIteration : UFieldSystemMetaData {
 	int32_t Iterations; // 0xB0 (4)
 
 	struct Unknown SetMetaDataIteration(int32_t Iterations); // Function FieldSystemEngine.FieldSystemMetaDataIteration.SetMetaDataIteration(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x40134D0>
 };
 
 // Class FieldSystemEngine.FieldSystemMetaDataProcessingResolution
-struct UFieldSystemMetaDataProcessingResolution : UFieldSystemMetaData {
+class UFieldSystemMetaDataProcessingResolution : UFieldSystemMetaData {
 	char ResolutionType; // 0xB0 (1)
 
 	struct Unknown SetMetaDataaProcessingResolutionType(char ResolutionType); // Function FieldSystemEngine.FieldSystemMetaDataProcessingResolution.SetMetaDataaProcessingResolutionType(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4013560>
 };
 
 // Class FieldSystemEngine.UniformInteger
-struct UUniformInteger : UFieldNodeInt {
+class UUniformInteger : UFieldNodeInt {
 	int32_t Magnitude; // 0xB0 (4)
 
 	struct Unknown SetUniformInteger(int32_t Magnitude); // Function FieldSystemEngine.UniformInteger.SetUniformInteger(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x40134D0>
 };
 
 // Class FieldSystemEngine.RadialIntMask
-struct URadialIntMask : UFieldNodeInt {
+class URadialIntMask : UFieldNodeInt {
 	float Radius; // 0xB0 (4)
 	struct Unknown Position; // 0xB4 (12)
 	int32_t InteriorValue; // 0xC0 (4)
@@ -52,14 +52,14 @@ struct URadialIntMask : UFieldNodeInt {
 };
 
 // Class FieldSystemEngine.UniformScalar
-struct UUniformScalar : UFieldNodeFloat {
+class UUniformScalar : UFieldNodeFloat {
 	float Magnitude; // 0xB0 (4)
 
 	struct Unknown SetUniformScalar(float Magnitude); // Function FieldSystemEngine.UniformScalar.SetUniformScalar(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4014000>
 };
 
 // Class FieldSystemEngine.RadialFalloff
-struct URadialFalloff : UFieldNodeFloat {
+class URadialFalloff : UFieldNodeFloat {
 	float Magnitude; // 0xB0 (4)
 	float MinRange; // 0xB4 (4)
 	float MaxRange; // 0xB8 (4)
@@ -72,7 +72,7 @@ struct URadialFalloff : UFieldNodeFloat {
 };
 
 // Class FieldSystemEngine.PlaneFalloff
-struct UPlaneFalloff : UFieldNodeFloat {
+class UPlaneFalloff : UFieldNodeFloat {
 	float Magnitude; // 0xB0 (4)
 	float MinRange; // 0xB4 (4)
 	float MaxRange; // 0xB8 (4)
@@ -86,7 +86,7 @@ struct UPlaneFalloff : UFieldNodeFloat {
 };
 
 // Class FieldSystemEngine.BoxFalloff
-struct UBoxFalloff : UFieldNodeFloat {
+class UBoxFalloff : UFieldNodeFloat {
 	float Magnitude; // 0xB0 (4)
 	float MinRange; // 0xB4 (4)
 	float MaxRange; // 0xB8 (4)
@@ -98,7 +98,7 @@ struct UBoxFalloff : UFieldNodeFloat {
 };
 
 // Class FieldSystemEngine.NoiseField
-struct UNoiseField : UFieldNodeFloat {
+class UNoiseField : UFieldNodeFloat {
 	float MinRange; // 0xB0 (4)
 	float MaxRange; // 0xB4 (4)
 	struct Unknown Transform; // 0xC0 (48)
@@ -107,7 +107,7 @@ struct UNoiseField : UFieldNodeFloat {
 };
 
 // Class FieldSystemEngine.UniformVector
-struct UUniformVector : UFieldNodeVector {
+class UUniformVector : UFieldNodeVector {
 	float Magnitude; // 0xB0 (4)
 	struct Unknown Direction; // 0xB4 (12)
 
@@ -115,7 +115,7 @@ struct UUniformVector : UFieldNodeVector {
 };
 
 // Class FieldSystemEngine.RadialVector
-struct URadialVector : UFieldNodeVector {
+class URadialVector : UFieldNodeVector {
 	float Magnitude; // 0xB0 (4)
 	struct Unknown Position; // 0xB4 (12)
 
@@ -123,14 +123,14 @@ struct URadialVector : UFieldNodeVector {
 };
 
 // Class FieldSystemEngine.RandomVector
-struct URandomVector : UFieldNodeVector {
+class URandomVector : UFieldNodeVector {
 	float Magnitude; // 0xB0 (4)
 
 	struct Unknown SetRandomVector(float Magnitude); // Function FieldSystemEngine.RandomVector.SetRandomVector(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4014000>
 };
 
 // Class FieldSystemEngine.OperatorField
-struct UOperatorField : UFieldNodeBase {
+class UOperatorField : UFieldNodeBase {
 	float Magnitude; // 0xB0 (4)
 	struct Unknown RightField; // 0xB8 (8)
 	struct Unknown LeftField; // 0xC0 (8)
@@ -140,21 +140,21 @@ struct UOperatorField : UFieldNodeBase {
 };
 
 // Class FieldSystemEngine.ToIntegerField
-struct UToIntegerField : UFieldNodeInt {
+class UToIntegerField : UFieldNodeInt {
 	struct Unknown FloatField; // 0xB0 (8)
 
 	struct Unknown SetToIntegerField(struct Unknown FloatField); // Function FieldSystemEngine.ToIntegerField.SetToIntegerField(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x40140C0>
 };
 
 // Class FieldSystemEngine.ToFloatField
-struct UToFloatField : UFieldNodeFloat {
+class UToFloatField : UFieldNodeFloat {
 	struct Unknown IntField; // 0xB0 (8)
 
 	struct Unknown SetToFloatField(struct Unknown IntegerField); // Function FieldSystemEngine.ToFloatField.SetToFloatField(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x40140C0>
 };
 
 // Class FieldSystemEngine.CullingField
-struct UCullingField : UFieldNodeBase {
+class UCullingField : UFieldNodeBase {
 	struct Unknown Culling; // 0xB0 (8)
 	struct Unknown Field; // 0xB8 (8)
 	char Operation; // 0xC0 (1)

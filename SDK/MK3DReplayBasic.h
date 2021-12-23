@@ -8,7 +8,7 @@ enum class EPlayerListSortMethod : uint8 {
 };
 
 // Class MK3DReplayBasic.MK3DUserInterfaceManager
-struct AMK3DUserInterfaceManager : UActor {
+class AMK3DUserInterfaceManager : UActor {
 	struct TArray<Unknown> WidgetInfoArray; // 0x310 (16)
 	struct TMap<Unknown, Unknown>Unknown ReplayWidgetMap; // 0x320 (80)
 
@@ -16,7 +16,7 @@ struct AMK3DUserInterfaceManager : UActor {
 };
 
 // Class MK3DReplayBasic.NativePlayerListItem
-struct UNativePlayerListItem : UUserWidget {
+class UNativePlayerListItem : UUserWidget {
 	struct Unknown Button_PlayerName; // 0x248 (8)
 	struct Unknown Text_PlayerName; // 0x250 (8)
 
@@ -24,7 +24,7 @@ struct UNativePlayerListItem : UUserWidget {
 };
 
 // Class MK3DReplayBasic.NativePlayerListWidget
-struct UNativePlayerListWidget : UUserWidget {
+class UNativePlayerListWidget : UUserWidget {
 	struct Unknown SortMethodTextBlock; // 0x248 (8)
 	struct Unknown PlayerListPrevButton; // 0x250 (8)
 	struct Unknown PlayerListNextButton; // 0x258 (8)
@@ -38,7 +38,7 @@ struct UNativePlayerListWidget : UUserWidget {
 };
 
 // Class MK3DReplayBasic.NativeReplayEventMarkerBasic
-struct UNativeReplayEventMarkerBasic : UUserWidget {
+class UNativeReplayEventMarkerBasic : UUserWidget {
 	struct Unknown EventBorder; // 0x248 (8)
 	struct Unknown VisualBorder; // 0x250 (8)
 	struct Unknown EventInform; // 0x258 (8)
@@ -47,12 +47,12 @@ struct UNativeReplayEventMarkerBasic : UUserWidget {
 	struct Unknown OnMouseLeaveEventBorder(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function MK3DReplayBasic.NativeReplayEventMarkerBasic.OnMouseLeaveEventBorder(Native|Public|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x13683A0>
 	struct Unknown OnMouseEnterEventBorder(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function MK3DReplayBasic.NativeReplayEventMarkerBasic.OnMouseEnterEventBorder(Native|Public|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1368000>
 	struct Unknown OnMouseButtonUpEventBorder(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function MK3DReplayBasic.NativeReplayEventMarkerBasic.OnMouseButtonUpEventBorder(Native|Public|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1367E30>
-	struct Unknown OnMouseButtonDownEv(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function MK3DReplayBasic.NativeReplayEventMarkerBasic.OnMouseButtonDownEvasic(Native|Public|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1367C60>
+	struct Unknown OnMouseButtonDownEv(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function MK3DReplayBasic.NativeReplayEventMarkerBasic.OnMouseButtonDownEv(Native|Public|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1367C60>
 	struct Unknown GetBorderSize(); // Function MK3DReplayBasic.NativeReplayEventMarkerBasic.GetBorderSize(Native|Public|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x13673F0>
 };
 
 // Class MK3DReplayBasic.NativeReplayKillEventMarker
-struct UNativeReplayKillEventMarker : UNativeReplayEventMarkerBasic {
+class UNativeReplayKillEventMarker : UNativeReplayEventMarkerBasic {
 	struct Unknown KillEvent; // 0x270 (48)
 	float ClickToJumpDeltaSec; // 0x2A8 (4)
 
@@ -62,7 +62,7 @@ struct UNativeReplayKillEventMarker : UNativeReplayEventMarkerBasic {
 };
 
 // Class MK3DReplayBasic.NativeReplayListItem
-struct UNativeReplayListItem : UUserWidget {
+class UNativeReplayListItem : UUserWidget {
 	struct Unknown ReplayListItemBtn; // 0x248 (8)
 	struct Unknown TextName; // 0x250 (8)
 	struct Unknown TextLive; // 0x258 (8)
@@ -75,17 +75,17 @@ struct UNativeReplayListItem : UUserWidget {
 	void OnClickedReplayListItemBtn(); // Function MK3DReplayBasic.NativeReplayListItem.OnClickedReplayListItemBtn(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1367980>
 };
 
-// Class MK3DReplayBasic.NativeReplayListLevIt
-struct ANativeReplayListLev : ALevelScriptActor {
+// Class MK3DReplayBasic.NativeReplayListLevas
+class ANativeReplayListLevas : ALevelScriptActor {
 	struct Unknown ReplayListWidget; // 0x318 (8)
 	struct Unknown* ReplayListWidgetClass; // 0x320 (8)
 
-	void ShowMouseCursor(); // Function MK3DReplayBasic.NativeReplayListLevas.ShowMouseCursor(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x13695C0>
+	void ShowMouseCursor(); // Function MK3DReplayBasic.NativeReplayListLev.ShowMouseCursor(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x13695C0>
 	void AddListWidgetToViewPort(); // Function MK3DReplayBasic.NativeReplayListLev.AddListWidgetToViewPort(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1366F70>
 };
 
 // Class MK3DReplayBasic.NativeReplayListWidget
-struct UNativeReplayListWidget : UUserWidget {
+class UNativeReplayListWidget : UUserWidget {
 	struct Unknown PageSizeTB; // 0x248 (8)
 	struct Unknown CurrentPageTB; // 0x250 (8)
 	struct Unknown ScrollBoxReplayList; // 0x258 (8)
@@ -120,7 +120,7 @@ struct UNativeReplayListWidget : UUserWidget {
 	void OnTextCommitedPageSize(struct FText& Text, char CommitMethod); // Function MK3DReplayBasic.NativeReplayListWidget.OnTextCommitedPageSize(Final|Native|Public|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1368DA0>
 	void OnTextCommitedCurrentPage(struct FText& Text, char CommitMethod); // Function MK3DReplayBasic.NativeReplayListWidget.OnTextCommitedCurrentPage(Final|Native|Public|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1368C80>
 	void OnSelectedReplayListItem(struct FString ReplayName); // Function MK3DReplayBasic.NativeReplayListWidget.OnSelectedReplayListItem(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1368B90>
-	void OnKeepAndDeleteOldReplaysComplete(int32_t n, char bSuccess); // Function MK3DReplayBasic.NativeReplayListWidget.OnKeepAndDeleteOldReplaysComplete(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1367BA0>
+	void OnKeepAndDeleteOldReplaysComplete(int32_t nRemainedReplays, char bSuccess); // Function MK3DReplayBasic.NativeReplayListWidget.OnKeepAndDeleteOldReplaysComplete(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1367BA0>
 	void OnEnumerateReplayListComplete(int32_t RetPageIndex, int32_t RetPageSize); // Function MK3DReplayBasic.NativeReplayListWidget.OnEnumerateReplayListComplete(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1367AE0>
 	void OnDeleteReplayComplete(struct FString ReplayName, char bSuccess); // Function MK3DReplayBasic.NativeReplayListWidget.OnDeleteReplayComplete(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x13679A0>
 	void OnClickedRefreshBtn(); // Function MK3DReplayBasic.NativeReplayListWidget.OnClickedRefreshBtn(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x13674A0>
@@ -141,7 +141,7 @@ struct UNativeReplayListWidget : UUserWidget {
 };
 
 // Class MK3DReplayBasic.NativeReplayTimelineBasicWidget
-struct UNativeReplayTimelineBasicWidget : UUserWidget {
+class UNativeReplayTimelineBasicWidget : UUserWidget {
 	struct Unknown ReplayTimelineScrollBox; // 0x248 (8)
 	struct Unknown ReplayTimelineSizeBox; // 0x250 (8)
 	struct Unknown ReplayTimelineBorder; // 0x258 (8)
@@ -168,11 +168,11 @@ struct UNativeReplayTimelineBasicWidget : UUserWidget {
 	struct TArray<Unknown> MK3DKnockoutEvents; // 0x330 (16)
 
 	void UpdateTimelineScale(); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.UpdateTimelineScale(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1369930>
-	void UpdateNativeReplaySpeedTextBlock(); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.UpdateNativeReplaySpeedTextBlock(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1369750>
+	void UpdateNativeReplaySpeedTextBloc(); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.UpdateNativeReplaySpeedTextBloc(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1369750>
 	void Timer_EnumerateMK3DKnockoutEvents(); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.Timer_EnumerateMK3DKnockoutEvents(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1369710>
 	void Timer_EnumerateMK3DKillEvents(); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.Timer_EnumerateMK3DKillEvents(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x13696F0>
 	void SetTimelineScale(float InScale); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.SetTimelineScale(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1369540>
-	void RemoveAllKnockoutEv(); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.RemoveAllKnockoutEvasic(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x13692E0>
+	void RemoveAllKnockoutEvasic(); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.RemoveAllKnockoutEvasic(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x13692E0>
 	void RemoveAllKillEventMarkers(); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.RemoveAllKillEventMarkers(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x13692C0>
 	void RefreshKillEventMarkers(enum class Unknow killType); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.RefreshKillEventMarkers(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1369240>
 	void OnValueChangedTimeSlider(float InValue); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnValueChangedTimeSlider(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1369060>
@@ -191,20 +191,26 @@ struct UNativeReplayTimelineBasicWidget : UUserWidget {
 	void OnCheckStateChangedShowKill(char bIsChecked); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnCheckStateChangedShowKill(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1367650>
 	void OnChangeCameraType(enum class Unknow CameraType, struct FString TargetPlayerName); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnChangeCameraType(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1367520>
 	float GetTimelineScale(); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.GetTimelineScale(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x13674C0>
-	void EnumerateMK3DKillEv(enum class Unknow killType); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.EnumerateMK3DKillEv(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1367340>
+	void EnumerateMK3DKillEv(enum class Unknow killType); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.EnumerateMK3DKillEvasic(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1367340>
 	struct Unknown CreateEventMarker(enum class Unknow killType); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.CreateEventMarker(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void BPUpdateTimelineScale(); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.BPUpdateTimelineScale(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void BPUpdateKillEventMarkersPos(enum class Unknow killType, float TotalTime); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.BPUpdateKillEventMarkersPos(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 };
 
 // Class MK3DReplayBasic.ReplayEventBorder
-struct UReplayEventBorder : UBorder {
+class UReplayEventBorder : UBorder {
 	struct FDelegate OnMouseEnterEvent; // 0x270 (16)
 };
 
 // Class MK3DReplayBasic.TimelineBorder
-struct UTimelineBorder : UBorder {
+class UTimelineBorder : UBorder {
 	struct FDelegate OnMouseEnterEvent; // 0x270 (16)
 	struct FDelegate OnMouseLeaveEvent; // 0x280 (16)
+};
+
+// ScriptStruct MK3DReplayBasic.UserWidgetInfoForReplay_T
+struct FUserWidgetInfoForReplay_T {
+	struct FString KeyName; // 0x0 (16)
+	struct FString FilePath; // 0x10 (16)
 };
 

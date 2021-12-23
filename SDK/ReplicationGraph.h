@@ -1,5 +1,5 @@
 // Class ReplicationGraph.ReplicationGraph
-struct UReplicationGraph : UReplicationDriver {
+class UReplicationGraph : UReplicationDriver {
 	struct Unknown* ReplicationConnectionManagerClass; // 0x28 (8)
 	struct Unknown NetDriver; // 0x30 (8)
 	struct TArray<Unknown> Connections; // 0x38 (16)
@@ -9,12 +9,12 @@ struct UReplicationGraph : UReplicationDriver {
 };
 
 // Class ReplicationGraph.ReplicationGraphNode
-struct UReplicationGraphNode : Object {
+class UReplicationGraphNode : Object {
 	struct TArray<Unknown> AllChildNodes; // 0x28 (16)
 };
 
 // Class ReplicationGraph.BasicReplicationGraph
-struct UBasicReplicationGraph : UReplicationGraph {
+class UBasicReplicationGraph : UReplicationGraph {
 	struct Unknown GridNode; // 0x578 (8)
 	struct Unknown AlwaysRelevantNode; // 0x580 (8)
 	struct TArray<Unknown> AlwaysRelevantForConnectionList; // 0x588 (16)
@@ -22,31 +22,31 @@ struct UBasicReplicationGraph : UReplicationGraph {
 };
 
 // Class ReplicationGraph.ReplicationGraphNode_GridCell
-struct UReplicationGraphNode_GridCell : UReplicationGraphNode_ActorList {
+class UReplicationGraphNode_GridCell : UReplicationGraphNode_ActorList {
 	struct Unknown StaticNode; // 0x140 (8)
 	struct Unknown DynamicNode; // 0x1D0 (8)
 	struct Unknown DormancyNode; // 0x1D8 (8)
 };
 
 // Class ReplicationGraph.ReplicationGraphNode_AlwaysRelevant
-struct UReplicationGraphNode_AlwaysRelevant : UReplicationGraphNode {
+class UReplicationGraphNode_AlwaysRelevant : UReplicationGraphNode {
 	struct Unknown ChildNode; // 0x50 (8)
 };
 
 // Class ReplicationGraph.ReplicationGraphNode_AlwaysRelevant_ForConnection
-struct UReplicationGraphNode_AlwaysRelevant_ForConnection : UReplicationGraphNode_ActorList {
+class UReplicationGraphNode_AlwaysRelevant_ForConnection : UReplicationGraphNode_ActorList {
 	struct TArray<Unknown> PastRelevantActors; // 0x110 (16)
 	struct Unknown LastViewer; // 0x120 (8)
 	struct Unknown LastViewTarget; // 0x128 (8)
 };
 
 // Class ReplicationGraph.ReplicationGraphNode_TearOff_ForConnection
-struct UReplicationGraphNode_TearOff_ForConnection : UReplicationGraphNode {
+class UReplicationGraphNode_TearOff_ForConnection : UReplicationGraphNode {
 	struct TArray<Unknown> TearOffActors; // 0x50 (16)
 };
 
 // Class ReplicationGraph.NetReplicationGraphConnection
-struct UNetReplicationGraphConnection : UReplicationConnectionDriver {
+class UNetReplicationGraphConnection : UReplicationConnectionDriver {
 	struct Unknown NetConnection; // 0x28 (8)
 	struct Unknown DebugActor; // 0x180 (8)
 	struct TArray<Unknown> LastGatherLocations; // 0x1A0 (16)
@@ -55,7 +55,7 @@ struct UNetReplicationGraphConnection : UReplicationConnectionDriver {
 };
 
 // Class ReplicationGraph.ReplicationGraphDebugActor
-struct AReplicationGraphDebugActor : UActor {
+class AReplicationGraphDebugActor : UActor {
 	struct Unknown ReplicationGraph; // 0x310 (8)
 	struct Unknown ConnectionManager; // 0x318 (8)
 
@@ -68,5 +68,30 @@ struct AReplicationGraphDebugActor : UActor {
 	void ServerPrintAllActorInfo(struct FString Str); // Function ReplicationGraph.ReplicationGraphDebugActor.ServerPrintAllActorInfo(Net|NetReliableNative|Event|Public|NetServer) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1237200>
 	void ServerCellInfo(); // Function ReplicationGraph.ReplicationGraphDebugActor.ServerCellInfo(Net|NetReliableNative|Event|Public|NetServer) // <BravoHotelClient-Win64-Shipping.protected.exe+0x12371E0>
 	void ClientCellInfo(struct Unknown CellLocation, struct Unknown CellExtent, struct TArray<Unknown> Actors); // Function ReplicationGraph.ReplicationGraphDebugActor.ClientCellInfo(Net|NetReliableNative|Event|Public|HasDefaults|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x12370A0>
+};
+
+// ScriptStruct ReplicationGraph.ConnectionAlwaysRelevantNodePair
+struct FConnectionAlwaysRelevantNodePair {
+	struct Unknown NetConnection; // 0x0 (8)
+	struct Unknown Node; // 0x8 (8)
+};
+
+// ScriptStruct ReplicationGraph.LastLocationGatherInfo
+struct FLastLocationGatherInfo {
+	struct Unknown Connection; // 0x0 (8)
+	struct Unknown LastLocation; // 0x8 (12)
+	struct Unknown LastOutOfRangeLocationCheck; // 0x14 (12)
+};
+
+// ScriptStruct ReplicationGraph.TearOffActorInfo
+struct FTearOffActorInfo {
+	struct Unknown Actor; // 0x8 (8)
+};
+
+// ScriptStruct ReplicationGraph.AlwaysRelevantActorInfo
+struct FAlwaysRelevantActorInfo {
+	struct Unknown Connection; // 0x0 (8)
+	struct Unknown LastViewer; // 0x8 (8)
+	struct Unknown LastViewTarget; // 0x10 (8)
 };
 

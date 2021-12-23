@@ -132,12 +132,12 @@ enum class ESceneSnapQueryType : uint8 {
 };
 
 // Class InteractiveToolsFramework.InteractiveGizmo
-struct UInteractiveGizmo : Object {
+class UInteractiveGizmo : Object {
 	struct Unknown InputBehaviors; // 0x30 (8)
 };
 
 // Class InteractiveToolsFramework.AxisAngleGizmo
-struct UAxisAngleGizmo : UInteractiveGizmo {
+class UAxisAngleGizmo : UInteractiveGizmo {
 	struct TScriptInterface<IUnknown> AxisSource; // 0x48 (16)
 	struct TScriptInterface<IUnknown> AngleSource; // 0x58 (16)
 	struct TScriptInterface<IUnknown> HitTarget; // 0x68 (16)
@@ -154,7 +154,7 @@ struct UAxisAngleGizmo : UInteractiveGizmo {
 };
 
 // Class InteractiveToolsFramework.AxisPositionGizmo
-struct UAxisPositionGizmo : UInteractiveGizmo {
+class UAxisPositionGizmo : UInteractiveGizmo {
 	struct TScriptInterface<IUnknown> AxisSource; // 0x48 (16)
 	struct TScriptInterface<IUnknown> ParameterSource; // 0x58 (16)
 	struct TScriptInterface<IUnknown> HitTarget; // 0x68 (16)
@@ -171,13 +171,13 @@ struct UAxisPositionGizmo : UInteractiveGizmo {
 };
 
 // Class InteractiveToolsFramework.GizmoConstantAxisSource
-struct UGizmoConstantAxisSource : Object {
+class UGizmoConstantAxisSource : Object {
 	struct Unknown Origin; // 0x30 (12)
 	struct Unknown Direction; // 0x3C (12)
 };
 
 // Class InteractiveToolsFramework.GizmoConstantFrameAxisSource
-struct UGizmoConstantFrameAxisSource : Object {
+class UGizmoConstantFrameAxisSource : Object {
 	struct Unknown Origin; // 0x30 (12)
 	struct Unknown Direction; // 0x3C (12)
 	struct Unknown TangentX; // 0x48 (12)
@@ -185,26 +185,26 @@ struct UGizmoConstantFrameAxisSource : Object {
 };
 
 // Class InteractiveToolsFramework.GizmoWorldAxisSource
-struct UGizmoWorldAxisSource : Object {
+class UGizmoWorldAxisSource : Object {
 	struct Unknown Origin; // 0x30 (12)
 	int32_t AxisIndex; // 0x3C (4)
 };
 
 // Class InteractiveToolsFramework.GizmoComponentAxisSource
-struct UGizmoComponentAxisSource : Object {
+class UGizmoComponentAxisSource : Object {
 	struct Unknown Component; // 0x30 (8)
 	int32_t AxisIndex; // 0x38 (4)
 	char bLocalAxes : 0; // 0x3C (1)
 };
 
 // Class InteractiveToolsFramework.InteractiveToolPropertySet
-struct UInteractiveToolPropertySet : Object {
+class UInteractiveToolPropertySet : Object {
 	struct Unknown CachedProperties; // 0x40 (8)
 	char bIsPropertySetEnabled : 0; // 0x48 (1)
 };
 
 // Class InteractiveToolsFramework.BrushBaseProperties
-struct UBrushBaseProperties : UInteractiveToolPropertySet {
+class UBrushBaseProperties : UInteractiveToolPropertySet {
 	float BrushSize; // 0x50 (4)
 	char bSpecifyRadius : 0; // 0x54 (1)
 	float BrushRadius; // 0x58 (4)
@@ -215,13 +215,13 @@ struct UBrushBaseProperties : UInteractiveToolPropertySet {
 };
 
 // Class InteractiveToolsFramework.InteractiveTool
-struct UInteractiveTool : Object {
+class UInteractiveTool : Object {
 	struct Unknown InputBehaviors; // 0x48 (8)
 	struct TArray<Unknown> ToolPropertyObjects; // 0x50 (16)
 };
 
 // Class InteractiveToolsFramework.BaseBrushTool
-struct UBaseBrushTool : UMeshSurfacePointTool {
+class UBaseBrushTool : UMeshSurfacePointTool {
 	struct Unknown BrushProperties; // 0xC0 (8)
 	char bInBrushStroke : 0; // 0xC8 (1)
 	struct Unknown LastBrushStamp; // 0xCC (168)
@@ -230,7 +230,7 @@ struct UBaseBrushTool : UMeshSurfacePointTool {
 };
 
 // Class InteractiveToolsFramework.BrushStampIndicator
-struct UBrushStampIndicator : UInteractiveGizmo {
+class UBrushStampIndicator : UInteractiveGizmo {
 	float BrushRadius; // 0x38 (4)
 	float BrushFalloff; // 0x3C (4)
 	struct Unknown BrushPosition; // 0x40 (12)
@@ -249,12 +249,12 @@ struct UBrushStampIndicator : UInteractiveGizmo {
 };
 
 // Class InteractiveToolsFramework.ClickDragInputBehav
-struct UClickDragInputBehavess : UAnyButtonInputBehav {
+class UClickDragInputBehav : UAnyButtonInputBehav {
 	char bUpdateModifiersDuringDrag : 0; // 0x120 (1)
 };
 
 // Class InteractiveToolsFramework.GizmoBaseComponent
-struct UGizmoBaseComponent : UPrimitiveComponent {
+class UGizmoBaseComponent : UPrimitiveComponent {
 	struct Unknown Color; // 0x4B8 (16)
 	float HoverSizeMultiplier; // 0x4C8 (4)
 	float PixelHitDistanceThreshold; // 0x4CC (4)
@@ -264,7 +264,7 @@ struct UGizmoBaseComponent : UPrimitiveComponent {
 };
 
 // Class InteractiveToolsFramework.GizmoArrowComponent
-struct UGizmoArrowComponent : UGizmoBaseComponent {
+class UGizmoArrowComponent : UGizmoBaseComponent {
 	struct Unknown Direction; // 0x4D8 (12)
 	float Gap; // 0x4E4 (4)
 	float Length; // 0x4E8 (4)
@@ -272,17 +272,17 @@ struct UGizmoArrowComponent : UGizmoBaseComponent {
 };
 
 // Class InteractiveToolsFramework.GizmoBoxComponent
-struct UGizmoBoxComponent : UGizmoBaseComponent {
+class UGizmoBoxComponent : UGizmoBaseComponent {
 	struct Unknown Origin; // 0x4D8 (12)
 	struct Unknown Rotation; // 0x4F0 (16)
 	struct Unknown Dimensions; // 0x500 (12)
 	float LineThickness; // 0x50C (4)
-	char b : 0; // 0x510 (1)
+	char bRemoveHiddenLines : 0; // 0x510 (1)
 	char bEnableAxisFlip : 0; // 0x511 (1)
 };
 
 // Class InteractiveToolsFramework.GizmoCircleComponent
-struct UGizmoCircleComponent : UGizmoBaseComponent {
+class UGizmoCircleComponent : UGizmoBaseComponent {
 	struct Unknown Normal; // 0x4D8 (12)
 	float Radius; // 0x4E4 (4)
 	float Thickness; // 0x4E8 (4)
@@ -292,7 +292,7 @@ struct UGizmoCircleComponent : UGizmoBaseComponent {
 };
 
 // Class InteractiveToolsFramework.GizmoLineHandleComponent
-struct UGizmoLineHandleComponent : UGizmoBaseComponent {
+class UGizmoLineHandleComponent : UGizmoBaseComponent {
 	struct Unknown Normal; // 0x4D8 (12)
 	float HandleSize; // 0x4E4 (4)
 	float Thickness; // 0x4E8 (4)
@@ -302,7 +302,7 @@ struct UGizmoLineHandleComponent : UGizmoBaseComponent {
 };
 
 // Class InteractiveToolsFramework.GizmoRectangleComponent
-struct UGizmoRectangleComponent : UGizmoBaseComponent {
+class UGizmoRectangleComponent : UGizmoBaseComponent {
 	struct Unknown DirectionX; // 0x4D8 (12)
 	struct Unknown DirectionY; // 0x4E4 (12)
 	float OffsetX; // 0x4F0 (4)
@@ -314,37 +314,37 @@ struct UGizmoRectangleComponent : UGizmoBaseComponent {
 };
 
 // Class InteractiveToolsFramework.GizmoComponentHitTarget
-struct UGizmoComponentHitTarget : Object {
+class UGizmoComponentHitTarget : Object {
 	struct Unknown Component; // 0x30 (8)
 };
 
 // Class InteractiveToolsFramework.InputBehaviorSet
-struct UInputBehaviorSet : Object {
+class UInputBehaviorSet : Object {
 	struct TArray<Unknown> Behaviors; // 0x28 (16)
 };
 
 // Class InteractiveToolsFramework.InputRouter
-struct UInputRouter : Object {
+class UInputRouter : Object {
 	char bAutoInvalidateOnHover : 0; // 0x28 (1)
 	char bAutoInvalidateOnCapture : 0; // 0x29 (1)
 	struct Unknown ActiveInputBehaviors; // 0x38 (8)
 };
 
 // Class InteractiveToolsFramework.InteractiveGizmoManager
-struct UInteractiveGizmoManager : Object {
+class UInteractiveGizmoManager : Object {
 	struct TArray<Unknown> ActiveGizmos; // 0x30 (16)
 	struct TMap<Unknown, Unknown>Unknown GizmoBuilders; // 0x58 (80)
 };
 
 // Class InteractiveToolsFramework.InteractiveToolManager
-struct UInteractiveToolManager : Object {
+class UInteractiveToolManager : Object {
 	struct Unknown ActiveLeftTool; // 0x30 (8)
 	struct Unknown ActiveRightTool; // 0x38 (8)
 	struct TMap<Unknown, Unknown>Unknown ToolBuilders; // 0x90 (80)
 };
 
 // Class InteractiveToolsFramework.InteractiveToolsContext
-struct UInteractiveToolsContext : Object {
+class UInteractiveToolsContext : Object {
 	struct Unknown InputRouter; // 0x58 (8)
 	struct Unknown ToolManager; // 0x60 (8)
 	struct Unknown GizmoManager; // 0x68 (8)
@@ -352,14 +352,14 @@ struct UInteractiveToolsContext : Object {
 };
 
 // Class InteractiveToolsFramework.IntervalGizmoActor
-struct AIntervalGizmoActor : AGizmoActor {
+class AIntervalGizmoActor : AGizmoActor {
 	struct Unknown UpIntervalComponent; // 0x310 (8)
 	struct Unknown DownIntervalComponent; // 0x318 (8)
 	struct Unknown ForwardIntervalComponent; // 0x320 (8)
 };
 
 // Class InteractiveToolsFramework.IntervalGizmo
-struct UIntervalGizmo : UInteractiveGizmo {
+class UIntervalGizmo : UInteractiveGizmo {
 	struct Unknown StateTarget; // 0x38 (8)
 	struct Unknown TransformProxy; // 0x50 (8)
 	struct TArray<Unknown> ActiveComponents; // 0x58 (16)
@@ -368,27 +368,27 @@ struct UIntervalGizmo : UInteractiveGizmo {
 	struct Unknown AxisZSource; // 0x98 (8)
 };
 
-// Class InteractiveToolsFramework.GizmoAxisIntervalParameterSource
-struct UGizmoAxisIntervalParameterSource : UGizmoBaseFloatParameterSource {
+// Class InteractiveToolsFramework.GizmoAxisIntervalParameterSourc
+class UGizmoAxisIntervalParameterSourc : UGizmoBaseFloatParameterSource {
 	struct TScriptInterface<IUnknown> FloatParameterSource; // 0x48 (16)
 	float MinParameter; // 0x58 (4)
 	float MaxParameter; // 0x5C (4)
 };
 
 // Class InteractiveToolsFramework.GizmoLocalFloatParameterSource
-struct UGizmoLocalFloatParameterSource : UGizmoBaseFloatParameterSource {
+class UGizmoLocalFloatParameterSource : UGizmoBaseFloatParameterSource {
 	float Value; // 0x48 (4)
 	struct Unknown LastChange; // 0x4C (8)
 };
 
 // Class InteractiveToolsFramework.GizmoLocalVec2ParameterSource
-struct UGizmoLocalVec2ParameterSource : UGizmoBaseVec2ParameterSource {
+class UGizmoLocalVec2ParameterSource : UGizmoBaseVec2ParameterSource {
 	struct Unknown Value; // 0x48 (8)
 	struct Unknown LastChange; // 0x50 (16)
 };
 
 // Class InteractiveToolsFramework.GizmoAxisTranslationParameterSource
-struct UGizmoAxisTranslationParameterSource : UGizmoBaseFloatParameterSource {
+class UGizmoAxisTranslationParameterSource : UGizmoBaseFloatParameterSource {
 	struct TScriptInterface<IUnknown> AxisSource; // 0x90 (16)
 	struct TScriptInterface<IUnknown> TransformSource; // 0xA0 (16)
 	float Parameter; // 0xB0 (4)
@@ -399,7 +399,7 @@ struct UGizmoAxisTranslationParameterSource : UGizmoBaseFloatParameterSource {
 };
 
 // Class InteractiveToolsFramework.GizmoPlaneTranslationParameterSource
-struct UGizmoPlaneTranslationParameterSource : UGizmoBaseVec2ParameterSource {
+class UGizmoPlaneTranslationParameterSource : UGizmoBaseVec2ParameterSource {
 	struct TScriptInterface<IUnknown> AxisSource; // 0x90 (16)
 	struct TScriptInterface<IUnknown> TransformSource; // 0xA0 (16)
 	struct Unknown Parameter; // 0xB0 (8)
@@ -411,8 +411,8 @@ struct UGizmoPlaneTranslationParameterSource : UGizmoBaseVec2ParameterSource {
 	struct Unknown InitialTransform; // 0x100 (48)
 };
 
-// Class InteractiveToolsFramework.GizmoAxisRotationParameterSource
-struct UGizmoAxisRotationParameterSource : UGizmoBaseFloatParameterSource {
+// Class InteractiveToolsFramework.GizmoAxisRotationParameterSourc
+class UGizmoAxisRotationParameterSourc : UGizmoBaseFloatParameterSource {
 	struct TScriptInterface<IUnknown> AxisSource; // 0x48 (16)
 	struct TScriptInterface<IUnknown> TransformSource; // 0x58 (16)
 	float Angle; // 0x68 (4)
@@ -422,8 +422,8 @@ struct UGizmoAxisRotationParameterSource : UGizmoBaseFloatParameterSource {
 	struct Unknown InitialTransform; // 0x90 (48)
 };
 
-// Class InteractiveToolsFramework.GizmoUniformScaleParameterSource
-struct UGizmoUniformScaleParameterSource : UGizmoBaseVec2ParameterSource {
+// Class InteractiveToolsFramework.GizmoUniformScaleParameterSourc
+class UGizmoUniformScaleParameterSourc : UGizmoBaseVec2ParameterSource {
 	struct TScriptInterface<IUnknown> AxisSource; // 0x48 (16)
 	struct TScriptInterface<IUnknown> TransformSource; // 0x58 (16)
 	float ScaleMultiplier; // 0x68 (4)
@@ -437,7 +437,7 @@ struct UGizmoUniformScaleParameterSource : UGizmoBaseVec2ParameterSource {
 };
 
 // Class InteractiveToolsFramework.GizmoAxisScaleParameterSource
-struct UGizmoAxisScaleParameterSource : UGizmoBaseFloatParameterSource {
+class UGizmoAxisScaleParameterSource : UGizmoBaseFloatParameterSource {
 	struct TScriptInterface<IUnknown> AxisSource; // 0x48 (16)
 	struct TScriptInterface<IUnknown> TransformSource; // 0x58 (16)
 	float ScaleMultiplier; // 0x68 (4)
@@ -449,7 +449,7 @@ struct UGizmoAxisScaleParameterSource : UGizmoBaseFloatParameterSource {
 };
 
 // Class InteractiveToolsFramework.GizmoPlaneScaleParameterSource
-struct UGizmoPlaneScaleParameterSource : UGizmoBaseVec2ParameterSource {
+class UGizmoPlaneScaleParameterSource : UGizmoBaseVec2ParameterSource {
 	struct TScriptInterface<IUnknown> AxisSource; // 0x90 (16)
 	struct TScriptInterface<IUnknown> TransformSource; // 0xA0 (16)
 	float ScaleMultiplier; // 0xB0 (4)
@@ -463,7 +463,7 @@ struct UGizmoPlaneScaleParameterSource : UGizmoBaseVec2ParameterSource {
 };
 
 // Class InteractiveToolsFramework.PlanePositionGizmo
-struct UPlanePositionGizmo : UInteractiveGizmo {
+class UPlanePositionGizmo : UInteractiveGizmo {
 	struct TScriptInterface<IUnknown> AxisSource; // 0x48 (16)
 	struct TScriptInterface<IUnknown> ParameterSource; // 0x58 (16)
 	struct TScriptInterface<IUnknown> HitTarget; // 0x68 (16)
@@ -484,7 +484,7 @@ struct UPlanePositionGizmo : UInteractiveGizmo {
 };
 
 // Class InteractiveToolsFramework.MeshSelectionSet
-struct UMeshSelectionSet : USelectionSet {
+class UMeshSelectionSet : USelectionSet {
 	struct TArray<Unknown> Vertices; // 0x40 (16)
 	struct TArray<Unknown> Edges; // 0x50 (16)
 	struct TArray<Unknown> Faces; // 0x60 (16)
@@ -492,17 +492,17 @@ struct UMeshSelectionSet : USelectionSet {
 };
 
 // Class InteractiveToolsFramework.SingleClickInputBehavior
-struct USingleClickInputBehavior : UAnyButtonInputBehavavi {
+class USingleClickInputBehavior : UAnyButtonInputBehav {
 	char HitTestOnRelease : 0; // 0xC0 (1)
 };
 
 // Class InteractiveToolsFramework.GizmoTransformChangeStateTarget
-struct UGizmoTransformChangeStateTarget : Object {
+class UGizmoTransformChangeStateTarget : Object {
 	struct TScriptInterface<IUnknown> TransactionManager; // 0x50 (16)
 };
 
 // Class InteractiveToolsFramework.TransformGizmoActor
-struct ATransformGizmoActor : AGizmoActor {
+class ATransformGizmoActor : AGizmoActor {
 	struct Unknown TranslateX; // 0x310 (8)
 	struct Unknown TranslateY; // 0x318 (8)
 	struct Unknown TranslateZ; // 0x320 (8)
@@ -522,7 +522,7 @@ struct ATransformGizmoActor : AGizmoActor {
 };
 
 // Class InteractiveToolsFramework.TransformGizmo
-struct UTransformGizmo : UInteractiveGizmo {
+class UTransformGizmo : UInteractiveGizmo {
 	struct Unknown ActiveTarget; // 0x40 (8)
 	char bSnapToWorldGrid : 0; // 0x48 (1)
 	char bUseContextCoordinateSystem : 0; // 0x49 (1)
@@ -542,26 +542,43 @@ struct UTransformGizmo : UInteractiveGizmo {
 };
 
 // Class InteractiveToolsFramework.TransformProxy
-struct UTransformProxy : Object {
-	char b : 0; // 0x70 (1)
+class UTransformProxy : Object {
+	char bRotatePerObject : 0; // 0x70 (1)
 	char bSetPivotMode : 0; // 0x71 (1)
 	struct Unknown SharedTransform; // 0x90 (48)
 	struct Unknown InitialSharedTransform; // 0xC0 (48)
 };
 
 // Class InteractiveToolsFramework.GizmoComponentWorldTransformSource
-struct UGizmoComponentWorldTransformSource : UGizmoBaseTransformSource {
+class UGizmoComponentWorldTransformSource : UGizmoBaseTransformSource {
 	struct Unknown Component; // 0x48 (8)
 	char bModifyComponentOnTransform : 0; // 0x50 (1)
 };
 
 // Class InteractiveToolsFramework.GizmoScaledTransformSource
-struct UGizmoScaledTransformSource : UGizmoBaseTransformSource {
+class UGizmoScaledTransformSource : UGizmoBaseTransformSource {
 	struct TScriptInterface<IUnknown> ChildTransformSource; // 0x48 (16)
 };
 
 // Class InteractiveToolsFramework.GizmoTransformProxyTransformSource
-struct UGizmoTransformProxyTransformSource : UGizmoBaseTransformSource {
+class UGizmoTransformProxyTransformSource : UGizmoBaseTransformSource {
 	struct Unknown Proxy; // 0x48 (8)
+};
+
+// ScriptStruct InteractiveToolsFramework.BehaviorInfo
+struct FBehaviorInfo {
+	struct Unknown Behavior; // 0x0 (8)
+};
+
+// ScriptStruct InteractiveToolsFramework.GizmoFloatParameterChange
+struct FGizmoFloatParameterChange {
+	float InitialValue; // 0x0 (4)
+	float CurrentValue; // 0x4 (4)
+};
+
+// ScriptStruct InteractiveToolsFramework.GizmoVec2ParameterChange
+struct FGizmoVec2ParameterChange {
+	struct Unknown InitialValue; // 0x0 (8)
+	struct Unknown CurrentValue; // 0x8 (8)
 };
 

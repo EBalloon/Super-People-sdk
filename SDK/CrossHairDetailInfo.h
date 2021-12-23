@@ -1,5 +1,5 @@
 // WidgetBlueprintGeneratedClass CrossHairDetailInfo.CrossHairDetailInfo_C
-struct UCrossHairDetailInfo_C : UUserWidget {
+class UCrossHairDetailInfo_C : UUserWidget {
 	struct Unknown UberGraphFrame; // 0x248 (8)
 	struct Unknown ; // 0x250 (8)
 	struct Unknown CurDesc; // 0x258 (8)

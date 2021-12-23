@@ -49,21 +49,21 @@ enum class ESubstanceEngineType : uint8 {
 
 // Enum SubstanceCore.ESubstanceTextureSize
 enum class ESubstanceTextureSize : uint8 {
-	E_17 = 0
-	E_33 = 1
-	E_65 = 2
-	E_129 = 3
-	E_257 = 4
-	E_513 = 5
-	E_1025 = 6
-	E_2049 = 7
-	E_4097 = 8
-	E_8193 = 9
-	E = 10
+	ERL_17 = 0
+	ERL_33 = 1
+	ERL_65 = 2
+	ERL_129 = 3
+	ERL_257 = 4
+	ERL_513 = 5
+	ERL_1025 = 6
+	ERL_2049 = 7
+	ERL_4097 = 8
+	ERL_8193 = 9
+	ERL_MAX = 10
 };
 
 // Class SubstanceCore.SubstanceGraphInstance
-struct USubstanceGraphInstance : Object {
+class USubstanceGraphInstance : Object {
 	struct FString PackageURL; // 0x38 (16)
 	struct Unknown ParentFactory; // 0x48 (8)
 	struct TMap<Unknown, Unknown>Unknown ImageSources; // 0x50 (80)
@@ -94,8 +94,8 @@ struct USubstanceGraphInstance : Object {
 };
 
 // Class SubstanceCore.SubstanceInstanceFactory
-struct USubstanceInstanceFactory : Object {
-	struct TArray<Unknown> mGraphInstances; // 0x28 (16)
+class USubstanceInstanceFactory : Object {
+	struct TArray<Unknown> m; // 0x28 (16)
 	struct FString RelativeSourceFilePath; // 0x50 (16)
 	struct FString AbsoluteSourceFilePath; // 0x60 (16)
 	struct FString SourceFileTimestamp; // 0x70 (16)
@@ -103,7 +103,7 @@ struct USubstanceInstanceFactory : Object {
 };
 
 // Class SubstanceCore.SubstanceOutputData
-struct USubstanceOutputData : Object {
+class USubstanceOutputData : Object {
 	struct Unknown ConnectedObject; // 0x28 (8)
 	struct Unknown ParamInfo; // 0x30 (16)
 	struct Unknown ParentInstance; // 0x40 (8)
@@ -111,7 +111,7 @@ struct USubstanceOutputData : Object {
 };
 
 // Class SubstanceCore.SubstanceSettings
-struct USubstanceSettings : Object {
+class USubstanceSettings : Object {
 	int32_t MemoryBudgetMb; // 0x28 (4)
 	int32_t CPUCores; // 0x2C (4)
 	int32_t AsyncLoadMipClip; // 0x30 (4)
@@ -123,10 +123,42 @@ struct USubstanceSettings : Object {
 };
 
 // Class SubstanceCore.SubstanceTexture2D
-struct USubstanceTexture2D : UTexture2DDynamic {
+class USubstanceTexture2D : UTexture2DDynamic {
 	struct Unknown ParentInstance; // 0x100 (8)
 	char AddressX; // 0x108 (1)
 	char AddressY; // 0x109 (1)
 	char bCooked : 0; // 0x10A (1)
+};
+
+// ScriptStruct SubstanceCore.SubstanceInstanceDesc
+struct FSubstanceInstanceDesc {
+	struct FString Name; // 0x0 (16)
+	struct TArray<Unknown> Inputs; // 0x10 (16)
+};
+
+// ScriptStruct SubstanceCore.SubstanceInputDesc
+struct FSubstanceInputDesc {
+	struct FString Name; // 0x0 (16)
+	char Type; // 0x10 (1)
+};
+
+// ScriptStruct SubstanceCore.SubstanceFloatInputDesc
+struct FSubstanceFloatInputDesc : FSubstanceInputDesc {
+	struct TArray<Unknown> Min; // 0x18 (16)
+	struct TArray<Unknown> MAX; // 0x28 (16)
+	struct TArray<Unknown> Default; // 0x38 (16)
+};
+
+// ScriptStruct SubstanceCore.SubstanceIntInputDesc
+struct FSubstanceIntInputDesc : FSubstanceInputDesc {
+	struct TArray<Unknown> Min; // 0x18 (16)
+	struct TArray<Unknown> MAX; // 0x28 (16)
+	struct TArray<Unknown> Default; // 0x38 (16)
+};
+
+// ScriptStruct SubstanceCore.SubstanceConnection
+struct FSubstanceConnection {
+	struct FString OutputIdentifier; // 0x0 (16)
+	struct FString InputImageIdentifier; // 0x10 (16)
 };
 

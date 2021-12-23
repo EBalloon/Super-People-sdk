@@ -93,12 +93,12 @@ enum class ESpectatorReservationResult : uint8 {
 };
 
 // Class OnlineSubsystemUtils.IpConnection
-struct UIpConnection : UNetConnection {
+class UIpConnection : UNetConnection {
 	float SocketErrorDisconnectDelay; // 0x1AF0 (4)
 };
 
 // Class OnlineSubsystemUtils.IpNetDriver
-struct UIpNetDriver : UNetDriver {
+class UIpNetDriver : UNetDriver {
 	char LogPortUnreach : 0; // 0x748 (1)
 	char AllowPlayerPortUnreach : 0; // 0x748 (1)
 	uint32_t MaxPortCountToTry; // 0x74C (4)
@@ -112,7 +112,7 @@ struct UIpNetDriver : UNetDriver {
 };
 
 // Class OnlineSubsystemUtils.AchievementQueryCallbackProxy
-struct UAchievementQueryCallbackProxy : UOnlineBlueprintCallProxyBase {
+class UAchievementQueryCallbackProxy : UOnlineBlueprintCallProxyBase {
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x40 (16)
 
@@ -121,7 +121,7 @@ struct UAchievementQueryCallbackProxy : UOnlineBlueprintCallProxyBase {
 };
 
 // Class OnlineSubsystemUtils.AchievementWriteCallbackProxy
-struct UAchievementWriteCallbackProxy : UOnlineBlueprintCallProxyBase {
+class UAchievementWriteCallbackProxy : UOnlineBlueprintCallProxyBase {
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x40 (16)
 
@@ -129,7 +129,7 @@ struct UAchievementWriteCallbackProxy : UOnlineBlueprintCallProxyBase {
 };
 
 // Class OnlineSubsystemUtils.ConnectionCallbackProxy
-struct UConnectionCallbackProxy : UOnlineBlueprintCallProxyBase {
+class UConnectionCallbackProxy : UOnlineBlueprintCallProxyBase {
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x40 (16)
 
@@ -137,7 +137,7 @@ struct UConnectionCallbackProxy : UOnlineBlueprintCallProxyBase {
 };
 
 // Class OnlineSubsystemUtils.CreateSessionCallbackProxy
-struct UCreateSessionCallbackProxy : UOnlineBlueprintCallProxyBase {
+class UCreateSessionCallbackProxy : UOnlineBlueprintCallProxyBase {
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x40 (16)
 
@@ -145,7 +145,7 @@ struct UCreateSessionCallbackProxy : UOnlineBlueprintCallProxyBase {
 };
 
 // Class OnlineSubsystemUtils.DestroySessionCallbackProxy
-struct UDestroySessionCallbackProxy : UOnlineBlueprintCallProxyBase {
+class UDestroySessionCallbackProxy : UOnlineBlueprintCallProxyBase {
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x40 (16)
 
@@ -153,7 +153,7 @@ struct UDestroySessionCallbackProxy : UOnlineBlueprintCallProxyBase {
 };
 
 // Class OnlineSubsystemUtils.EndMatchCallbackProxy
-struct UEndMatchCallbackProxy : UOnlineBlueprintCallProxyBase {
+class UEndMatchCallbackProxy : UOnlineBlueprintCallProxyBase {
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x40 (16)
 
@@ -161,7 +161,7 @@ struct UEndMatchCallbackProxy : UOnlineBlueprintCallProxyBase {
 };
 
 // Class OnlineSubsystemUtils.EndTurnCallbackProxy
-struct UEndTurnCallbackProxy : UOnlineBlueprintCallProxyBase {
+class UEndTurnCallbackProxy : UOnlineBlueprintCallProxyBase {
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x40 (16)
 
@@ -169,7 +169,7 @@ struct UEndTurnCallbackProxy : UOnlineBlueprintCallProxyBase {
 };
 
 // Class OnlineSubsystemUtils.FindSessionsCallbackProxy
-struct UFindSessionsCallbackProxy : UOnlineBlueprintCallProxyBase {
+class UFindSessionsCallbackProxy : UOnlineBlueprintCallProxyBase {
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x40 (16)
 
@@ -181,7 +181,7 @@ struct UFindSessionsCallbackProxy : UOnlineBlueprintCallProxyBase {
 };
 
 // Class OnlineSubsystemUtils.FindTurnBasedMatchCallbackProxy
-struct UFindTurnBasedMatchCallbackProxy : UOnlineBlueprintCallProxyBase {
+class UFindTurnBasedMatchCallbackProxy : UOnlineBlueprintCallProxyBase {
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x40 (16)
 
@@ -189,57 +189,57 @@ struct UFindTurnBasedMatchCallbackProxy : UOnlineBlueprintCallProxyBase {
 };
 
 // Class OnlineSubsystemUtils.InAppPurchaseCallbackProxy
-struct UInAppPurchaseCallbackProxy : Object {
+class UInAppPurchaseCallbackProxy : Object {
 	struct FMulticastInlineDelegate OnSuccess; // 0x28 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x38 (16)
 
-	struct Unknown CreateProxyObjectForInAppPls(struct Unknown PlayerController, struct Unknown& ProductRequest); // Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy.CreateProxyObjectForInAppPls(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11C7860>
+	struct Unknown CreateProxyObjectForInAppPurchase(struct Unknown PlayerController, struct Unknown& ProductRequest); // Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy.CreateProxyObjectForInAppPurchase(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11C7860>
 };
 
 // Class OnlineSubsystemUtils.InAppPurchaseCallbackProxy2
-struct UInAppPurchaseCallbackProxy2 : Object {
+class UInAppPurchaseCallbackProxy2 : Object {
 	struct FMulticastInlineDelegate OnSuccess; // 0x28 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x38 (16)
 
-	struct Unknown CreateProxyObjectForInAppP2F(struct Unknown PlayerController); // Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy2.CreateProxyObjectForInApp(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11C7BF0>
-	struct Unknown CreateProxyObjectForInApp(struct Unknown PlayerController); // Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy2.CreateProxyObjectForInApp(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11C7B70>
-	struct Unknown CreateProxyObjectForInApp(struct Unknown PlayerController, struct Unknown& ProductRequest); // Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy2.CreateProxyObjectForInAppPls(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11C7770>
+	struct Unknown CreateProxyObjectForInAppPurchaseUnproc(struct Unknown PlayerController); // Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy2.CreateProxyObjectForInAppPurchaseUnproc(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11C7BF0>
+	struct Unknown CreateProxyObjectForInAppPurchaseQueryOwned(struct Unknown PlayerController); // Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy2.CreateProxyObjectForInAppPurchaseQueryOwned(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11C7B70>
+	struct Unknown CreateProxyObjectForInAppPurchase(struct Unknown PlayerController, struct Unknown& ProductRequest); // Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy2.CreateProxyObjectForInAppPurchase(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11C7770>
 };
 
 // Class OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy
-struct UInAppPurchaseQueryCallbackProxy : Object {
+class UInAppPurchaseQueryCallbackProxy : Object {
 	struct FMulticastInlineDelegate OnSuccess; // 0x28 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x38 (16)
 
-	struct Unknown CreateProxyObjectForInApp(struct Unknown PlayerController, struct TArray<Unknown>& ProductIdentifiers); // Function OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy.CreateProxyObjectForInAppPls(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11C7A60>
+	struct Unknown CreateProxyObjectForInAppPurchaseQuery(struct Unknown PlayerController, struct TArray<Unknown>& ProductIdentifiers); // Function OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy.CreateProxyObjectForInAppPurchaseQuery(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11C7A60>
 };
 
 // Class OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy2
-struct UInAppPurchaseQueryCallbackProxy2 : Object {
+class UInAppPurchaseQueryCallbackProxy2 : Object {
 	struct FMulticastInlineDelegate OnSuccess; // 0x28 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x38 (16)
 
-	struct Unknown CreateProxyObjectForInApp(struct Unknown PlayerController, struct TArray<Unknown>& ProductIdentifiers); // Function OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy2.CreateProxyObjectForInAppPls(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11C7950>
+	struct Unknown CreateProxyObjectForInAppPurchaseQuery(struct Unknown PlayerController, struct TArray<Unknown>& ProductIdentifiers); // Function OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy2.CreateProxyObjectForInAppPurchaseQuery(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11C7950>
 };
 
 // Class OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy
-struct UInAppPurchaseRestoreCallbackProxy : Object {
+class UInAppPurchaseRestoreCallbackProxy : Object {
 	struct FMulticastInlineDelegate OnSuccess; // 0x28 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x38 (16)
 
-	struct Unknown CreateProxyObjectForInAppPz(struct TArray<Unknown>& ConsumableProductFlags, struct Unknown PlayerController); // Function OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy.CreateProxyObjectForInAppPls(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11CCF20>
+	struct Unknown CreateProxyObjectForInAppPurchaseRestore(struct TArray<Unknown>& ConsumableProductFlags, struct Unknown PlayerController); // Function OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy.CreateProxyObjectForInAppPurchaseRestore(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11CCF20>
 };
 
 // Class OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy2
-struct UInAppPurchaseRestoreCallbackProxy2 : Object {
+class UInAppPurchaseRestoreCallbackProxy2 : Object {
 	struct FMulticastInlineDelegate OnSuccess; // 0x28 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x38 (16)
 
-	struct Unknown CreateProxyObjectForInAppPv(struct TArray<Unknown>& ConsumableProductFlags, struct Unknown PlayerController); // Function OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy2.CreateProxyObjectForInAppPls(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11CCE00>
+	struct Unknown CreateProxyObjectForInAppPurchaseRestore(struct TArray<Unknown>& ConsumableProductFlags, struct Unknown PlayerController); // Function OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy2.CreateProxyObjectForInAppPurchaseRestore(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11CCE00>
 };
 
 // Class OnlineSubsystemUtils.JoinSessionCallbackProxy
-struct UJoinSessionCallbackProxy : UOnlineBlueprintCallProxyBase {
+class UJoinSessionCallbackProxy : UOnlineBlueprintCallProxyBase {
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x40 (16)
 
@@ -247,7 +247,7 @@ struct UJoinSessionCallbackProxy : UOnlineBlueprintCallProxyBase {
 };
 
 // Class OnlineSubsystemUtils.LeaderboardFlushCallbackProxy
-struct ULeaderboardFlushCallbackProxy : Object {
+class ULeaderboardFlushCallbackProxy : Object {
 	struct FMulticastInlineDelegate OnSuccess; // 0x28 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x38 (16)
 
@@ -255,7 +255,7 @@ struct ULeaderboardFlushCallbackProxy : Object {
 };
 
 // Class OnlineSubsystemUtils.LeaderboardQueryCallbackProxy
-struct ULeaderboardQueryCallbackProxy : Object {
+class ULeaderboardQueryCallbackProxy : Object {
 	struct FMulticastInlineDelegate OnSuccess; // 0x28 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x38 (16)
 
@@ -263,7 +263,7 @@ struct ULeaderboardQueryCallbackProxy : Object {
 };
 
 // Class OnlineSubsystemUtils.LogoutCallbackProxy
-struct ULogoutCallbackProxy : UBlueprintAsyncActionBase {
+class ULogoutCallbackProxy : UBlueprintAsyncActionBase {
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x40 (16)
 
@@ -271,14 +271,14 @@ struct ULogoutCallbackProxy : UBlueprintAsyncActionBase {
 };
 
 // Class OnlineSubsystemUtils.OnlineBeacon
-struct AOnlineBeacon : UActor {
+class AOnlineBeacon : UActor {
 	float BeaconConnectionInitialTimeout; // 0x318 (4)
 	float BeaconConnectionTimeout; // 0x31C (4)
 	struct Unknown NetDriver; // 0x320 (8)
 };
 
 // Class OnlineSubsystemUtils.OnlineBeaconClient
-struct AOnlineBeaconClient : AOnlineBeacon {
+class AOnlineBeaconClient : AOnlineBeacon {
 	struct Unknown BeaconOwner; // 0x340 (8)
 	struct Unknown BeaconConnection; // 0x348 (8)
 	enum class Unknow ConnectionState; // 0x350 (1)
@@ -287,37 +287,37 @@ struct AOnlineBeaconClient : AOnlineBeacon {
 };
 
 // Class OnlineSubsystemUtils.OnlineBeaconHost
-struct AOnlineBeaconHost : AOnlineBeacon {
+class AOnlineBeaconHost : AOnlineBeacon {
 	int32_t ListenPort; // 0x340 (4)
 	struct TArray<Unknown> ClientActors; // 0x348 (16)
 };
 
 // Class OnlineSubsystemUtils.OnlineBeaconHostObject
-struct AOnlineBeaconHostObject : UActor {
+class AOnlineBeaconHostObject : UActor {
 	struct FString BeaconTypeName; // 0x310 (16)
 	struct Unknown* ClientBeaconActorClass; // 0x320 (8)
 	struct TArray<Unknown> ClientActors; // 0x328 (16)
 };
 
 // Class OnlineSubsystemUtils.OnlineEngineInterfaceImpl
-struct UOnlineEngineInterfaceImpl : UOnlineEngineInterface {
+class UOnlineEngineInterfaceImpl : UOnlineEngineInterface {
 	struct FName VoiceSubsystemNameOverride; // 0x28 (8)
 };
 
 // Class OnlineSubsystemUtils.OnlinePIESettings
-struct UOnlinePIESettings : UDeveloperSettings {
+class UOnlinePIESettings : UDeveloperSettings {
 	char bOnlinePIEEnabled : 0; // 0x38 (1)
 	struct TArray<Unknown> Logins; // 0x40 (16)
 };
 
 // Class OnlineSubsystemUtils.OnlineSessionClient
-struct UOnlineSessionClient : UOnlineSession {
+class UOnlineSessionClient : UOnlineSession {
 	char bIsFromInvite : 0; // 0x188 (1)
 	char bHandlingDisconnect : 0; // 0x189 (1)
 };
 
 // Class OnlineSubsystemUtils.PartyBeaconClient
-struct APartyBeaconClient : AOnlineBeaconClient {
+class APartyBeaconClient : AOnlineBeaconClient {
 	struct FString DestSessionId; // 0x3D0 (16)
 	struct Unknown PendingReservation; // 0x3E0 (80)
 	enum class Unknow RequestType; // 0x430 (1)
@@ -335,7 +335,7 @@ struct APartyBeaconClient : AOnlineBeaconClient {
 };
 
 // Class OnlineSubsystemUtils.PartyBeaconHost
-struct APartyBeaconHost : AOnlineBeaconHostObject {
+class APartyBeaconHost : AOnlineBeaconHostObject {
 	struct Unknown State; // 0x338 (8)
 	char bLogoutOnSessionTimeout : 0; // 0x3A0 (1)
 	float SessionTimeoutSecs; // 0x3A4 (4)
@@ -343,7 +343,7 @@ struct APartyBeaconHost : AOnlineBeaconHostObject {
 };
 
 // Class OnlineSubsystemUtils.PartyBeaconState
-struct UPartyBeaconState : Object {
+class UPartyBeaconState : Object {
 	struct FName SessionName; // 0x28 (8)
 	int32_t NumConsumedReservations; // 0x30 (4)
 	int32_t MaxReservations; // 0x34 (4)
@@ -352,13 +352,13 @@ struct UPartyBeaconState : Object {
 	struct FName TeamAssignmentMethod; // 0x40 (8)
 	int32_t ReservedHostTeamNum; // 0x48 (4)
 	int32_t ForceTeamNum; // 0x4C (4)
-	char b : 0; // 0x50 (1)
+	char bRestrictCrossConsole : 0; // 0x50 (1)
 	char bEnableRemovalRequests : 0; // 0x51 (1)
 	struct TArray<Unknown> Reservations; // 0x58 (16)
 };
 
 // Class OnlineSubsystemUtils.QuitMatchCallbackProxy
-struct UQuitMatchCallbackProxy : UOnlineBlueprintCallProxyBase {
+class UQuitMatchCallbackProxy : UOnlineBlueprintCallProxyBase {
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x40 (16)
 
@@ -366,7 +366,7 @@ struct UQuitMatchCallbackProxy : UOnlineBlueprintCallProxyBase {
 };
 
 // Class OnlineSubsystemUtils.ShowLoginUICallbackProxy
-struct UShowLoginUICallbackProxy : UBlueprintAsyncActionBase {
+class UShowLoginUICallbackProxy : UBlueprintAsyncActionBase {
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x40 (16)
 
@@ -374,7 +374,7 @@ struct UShowLoginUICallbackProxy : UBlueprintAsyncActionBase {
 };
 
 // Class OnlineSubsystemUtils.SpectatorBeaconClient
-struct ASpectatorBeaconClient : AOnlineBeaconClient {
+class ASpectatorBeaconClient : AOnlineBeaconClient {
 	struct FString DestSessionId; // 0x3D0 (16)
 	struct Unknown PendingReservation; // 0x3E0 (120)
 	enum class Unknow RequestType; // 0x458 (1)
@@ -390,7 +390,7 @@ struct ASpectatorBeaconClient : AOnlineBeaconClient {
 };
 
 // Class OnlineSubsystemUtils.SpectatorBeaconHost
-struct ASpectatorBeaconHost : AOnlineBeaconHostObject {
+class ASpectatorBeaconHost : AOnlineBeaconHostObject {
 	struct Unknown State; // 0x338 (8)
 	char bLogoutOnSessionTimeout : 0; // 0x3A0 (1)
 	float SessionTimeoutSecs; // 0x3A4 (4)
@@ -398,11 +398,102 @@ struct ASpectatorBeaconHost : AOnlineBeaconHostObject {
 };
 
 // Class OnlineSubsystemUtils.SpectatorBeaconState
-struct USpectatorBeaconState : Object {
+class USpectatorBeaconState : Object {
 	struct FName SessionName; // 0x28 (8)
 	int32_t NumConsumedReservations; // 0x30 (4)
 	int32_t MaxReservations; // 0x34 (4)
-	char b : 0; // 0x38 (1)
+	char bRestrictCrossConsole : 0; // 0x38 (1)
 	struct TArray<Unknown> Reservations; // 0x40 (16)
+};
+
+// ScriptStruct OnlineSubsystemUtils.InAppPurchaseReceiptInfo2
+struct FInAppPurchaseReceiptInfo2 {
+	struct FString ItemName; // 0x0 (16)
+	struct FString ItemId; // 0x10 (16)
+	struct FString ValidationInfo; // 0x20 (16)
+};
+
+// ScriptStruct OnlineSubsystemUtils.OnlineProxyStoreOffer
+struct FOnlineProxyStoreOffer {
+	struct FString OfferId; // 0x0 (16)
+	struct FText Title; // 0x10 (24)
+	struct FText Description; // 0x28 (24)
+	struct FText LongDescription; // 0x40 (24)
+	struct FText RegularPriceText; // 0x58 (24)
+	int32_t RegularPrice; // 0x70 (4)
+	struct FText PriceText; // 0x78 (24)
+	int32_t NumericPrice; // 0x90 (4)
+	struct FString CurrencyCode; // 0x98 (16)
+	struct Unknown ReleaseDate; // 0xA8 (8)
+	struct Unknown ExpirationDate; // 0xB0 (8)
+	enum class Unknow DiscountType; // 0xB8 (1)
+	struct TMap<Unknown, Unknown>Unknown DynamicFields; // 0xC0 (80)
+};
+
+// ScriptStruct OnlineSubsystemUtils.InAppPurchaseRestoreInfo2
+struct FInAppPurchaseRestoreInfo2 {
+	struct FString ItemName; // 0x0 (16)
+	struct FString ItemId; // 0x10 (16)
+	struct FString ValidationInfo; // 0x20 (16)
+};
+
+// ScriptStruct OnlineSubsystemUtils.InAppPurchaseReceiptInfo
+struct FInAppPurchaseReceiptInfo {
+	struct FString ItemName; // 0x0 (16)
+	struct FString ItemId; // 0x10 (16)
+	struct FString ValidationInfo; // 0x20 (16)
+};
+
+// ScriptStruct OnlineSubsystemUtils.InAppPurchaseProductInfo2
+struct FInAppPurchaseProductInfo2 {
+	struct FString Identifier; // 0x0 (16)
+	struct FString TransactionIdentifier; // 0x10 (16)
+	struct FString DisplayName; // 0x20 (16)
+	struct FString DisplayDescription; // 0x30 (16)
+	struct FString DisplayPrice; // 0x40 (16)
+	float RawPrice; // 0x50 (4)
+	struct FString CurrencyCode; // 0x58 (16)
+	struct FString CurrencySymbol; // 0x68 (16)
+	struct FString DecimalSeparator; // 0x78 (16)
+	struct FString GroupingSeparator; // 0x88 (16)
+	struct FString ReceiptData; // 0x98 (16)
+	struct TMap<Unknown, Unknown>Unknown DynamicFields; // 0xA8 (80)
+};
+
+// ScriptStruct OnlineSubsystemUtils.InAppPurchaseProductRequest2
+struct FInAppPurchaseProductRequest2 {
+	struct FString ProductIdentifier; // 0x0 (16)
+	char bIsConsumable : 0; // 0x10 (1)
+};
+
+// ScriptStruct OnlineSubsystemUtils.PlayerReservation
+struct FPlayerReservation {
+	struct Unknown UniqueID; // 0x0 (40)
+	struct FString ValidationStr; // 0x28 (16)
+	struct FString Platform; // 0x38 (16)
+	char bAllowCrossplay : 0; // 0x48 (1)
+	float ElapsedTime; // 0x4C (4)
+};
+
+// ScriptStruct OnlineSubsystemUtils.PIELoginSettingsInternal
+struct FPIELoginSettingsInternal {
+	struct FString ID; // 0x0 (16)
+	struct FString Token; // 0x10 (16)
+	struct FString Type; // 0x20 (16)
+	struct TArray<Unknown> TokenBytes; // 0x30 (16)
+};
+
+// ScriptStruct OnlineSubsystemUtils.PartyReservation
+struct FPartyReservation {
+	int32_t TeamNum; // 0x0 (4)
+	struct Unknown PartyLeader; // 0x8 (40)
+	struct TArray<Unknown> PartyMembers; // 0x30 (16)
+	struct TArray<Unknown> RemovedPartyMembers; // 0x40 (16)
+};
+
+// ScriptStruct OnlineSubsystemUtils.SpectatorReservation
+struct FSpectatorReservation {
+	struct Unknown SpectatorId; // 0x0 (40)
+	struct Unknown Spectator; // 0x28 (80)
 };
 

@@ -20,7 +20,7 @@ enum class EMagicLeapPlaneQueryType : uint8 {
 };
 
 // Class MagicLeapPlanes.MagicLeapPlanesComponent
-struct UMagicLeapPlanesComponent : USceneComponent {
+class UMagicLeapPlanesComponent : USceneComponent {
 	struct TArray<Unknown> QueryFlags; // 0x238 (16)
 	struct Unknown SearchVolume; // 0x248 (8)
 	int32_t MaxResults; // 0x250 (4)
@@ -32,5 +32,48 @@ struct UMagicLeapPlanesComponent : USceneComponent {
 	struct FMulticastInlineDelegate OnPersistentPlanesQueryResult; // 0x278 (16)
 
 	char RequestPlanesAsync(); // Function MagicLeapPlanes.MagicLeapPlanesComponent.RequestPlanesAsync(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17EF500>
+};
+
+// ScriptStruct MagicLeapPlanes.MagicLeapPlaneBoundaries
+struct FMagicLeapPlaneBoundaries {
+	struct Unknown ID; // 0x0 (16)
+	struct TArray<Unknown> Boundaries; // 0x10 (16)
+};
+
+// ScriptStruct MagicLeapPlanes.MagicLeapPlaneBoundary
+struct FMagicLeapPlaneBoundary {
+	struct Unknown Polygon; // 0x0 (16)
+	struct TArray<Unknown> Holes; // 0x10 (16)
+};
+
+// ScriptStruct MagicLeapPlanes.MagicLeapPolygon
+struct FMagicLeapPolygon {
+	struct TArray<Unknown> Vertices; // 0x0 (16)
+};
+
+// ScriptStruct MagicLeapPlanes.MagicLeapPlaneResult
+struct FMagicLeapPlaneResult {
+	struct Unknown PlanePosition; // 0x0 (12)
+	struct Unknown PlaneOrientation; // 0xC (12)
+	struct Unknown ContentOrientation; // 0x18 (12)
+	struct Unknown PlaneDimensions; // 0x24 (8)
+	struct TArray<Unknown> PlaneFlags; // 0x30 (16)
+	struct Unknown ID; // 0x40 (16)
+	struct Unknown InnerID; // 0x50 (16)
+};
+
+// ScriptStruct MagicLeapPlanes.MagicLeapPlanesQuery
+struct FMagicLeapPlanesQuery {
+	struct TArray<Unknown> Flags; // 0x0 (16)
+	struct Unknown SearchVolume; // 0x10 (8)
+	int32_t MaxResults; // 0x18 (4)
+	float MinHoleLength; // 0x1C (4)
+	float MinPlaneArea; // 0x20 (4)
+	struct Unknown SearchVolumePosition; // 0x24 (12)
+	struct Unknown SearchVolumeOrientation; // 0x30 (16)
+	struct Unknown SearchVolumeExtents; // 0x40 (12)
+	float SimilarityThreshold; // 0x4C (4)
+	char bSearchVolumeTrackingSpace : 0; // 0x50 (1)
+	char bResultTrackingSpace : 0; // 0x51 (1)
 };
 

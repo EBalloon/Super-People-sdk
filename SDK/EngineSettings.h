@@ -30,7 +30,7 @@ enum class ETwoPlayerSplitScreenType : uint8 {
 };
 
 // Class EngineSettings.ConsoleSettings
-struct UConsoleSettings : Object {
+class UConsoleSettings : Object {
 	int32_t MaxScrollbackSize; // 0x28 (4)
 	struct TArray<Unknown> ManualAutoCompleteList; // 0x30 (16)
 	struct TArray<Unknown> AutoCompleteMapPaths; // 0x40 (16)
@@ -45,7 +45,7 @@ struct UConsoleSettings : Object {
 };
 
 // Class EngineSettings.GameMapsSettings
-struct UGameMapsSettings : Object {
+class UGameMapsSettings : Object {
 	struct FString LocalMapOptions; // 0x28 (16)
 	struct Unknown TransitionMap; // 0x38 (24)
 	char bUseSplitscreen : 0; // 0x50 (1)
@@ -62,13 +62,13 @@ struct UGameMapsSettings : Object {
 	struct TArray<Unknown> GameModeMapPrefixes; // 0xE8 (16)
 	struct TArray<Unknown> GameModeClassAliases; // 0xF8 (16)
 
-	void SetSkipAssigningGamepadTo(char bSkipFirstPlayer); // Function EngineSettings.GameMapsSettings.SetSkipAssigningGamepadToPe(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2C297E0>
-	char GetSkipAssigningGamepadTo(); // Function EngineSettings.GameMapsSettings.GetSkipAssigningGamepadTo(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2C297B0>
+	void SetSkipAssigningGamepadToPlayer1(char bSkipFirstPlayer); // Function EngineSettings.GameMapsSettings.SetSkipAssigningGamepadToPlayer1(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2C297E0>
+	char GetSkipAssigningGamepadToPlayer1(); // Function EngineSettings.GameMapsSettings.GetSkipAssigningGamepadToPlayer1(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2C297B0>
 	struct Unknown GetGameMapsSettings(); // Function EngineSettings.GameMapsSettings.GetGameMapsSettings(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2C29780>
 };
 
 // Class EngineSettings.GameNetworkManagerSettings
-struct UGameNetworkManagerSettings : Object {
+class UGameNetworkManagerSettings : Object {
 	int32_t MinDynamicBandwidth; // 0x28 (4)
 	int32_t MaxDynamicBandwidth; // 0x2C (4)
 	int32_t TotalNetBandwidth; // 0x30 (4)
@@ -83,14 +83,14 @@ struct UGameNetworkManagerSettings : Object {
 };
 
 // Class EngineSettings.GameSessionSettings
-struct UGameSessionSettings : Object {
+class UGameSessionSettings : Object {
 	int32_t MaxSpectators; // 0x28 (4)
 	int32_t MaxPlayers; // 0x2C (4)
-	char b : 0; // 0x30 (1)
+	char bRequiresPushToTalk : 0; // 0x30 (1)
 };
 
 // Class EngineSettings.GeneralProjectSettings
-struct UGeneralProjectSettings : Object {
+class UGeneralProjectSettings : Object {
 	struct FString CompanyName; // 0x28 (16)
 	struct FString CompanyDistinguishedName; // 0x38 (16)
 	struct FString CopyrightNotice; // 0x48 (16)
@@ -116,8 +116,20 @@ struct UGeneralProjectSettings : Object {
 };
 
 // Class EngineSettings.HudSettings
-struct UHudSettings : Object {
+class UHudSettings : Object {
 	char bShowHUD : 0; // 0x28 (1)
 	struct TArray<Unknown> DebugDisplay; // 0x30 (16)
+};
+
+// ScriptStruct EngineSettings.AutoCompleteCommand
+struct FAutoCompleteCommand {
+	struct FString Command; // 0x0 (16)
+	struct FString Desc; // 0x10 (16)
+};
+
+// ScriptStruct EngineSettings.GameModeName
+struct FGameModeName {
+	struct FString Name; // 0x0 (16)
+	struct Unknown GameMode; // 0x10 (24)
 };
 

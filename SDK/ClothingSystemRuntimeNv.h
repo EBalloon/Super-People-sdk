@@ -6,7 +6,7 @@ enum class EClothingWindMethodNv : uint8 {
 };
 
 // Class ClothingSystemRuntimeNv.ClothConfigNv
-struct UClothConfigNv : UClothConfigCommon {
+class UClothConfigNv : UClothConfigCommon {
 	enum class Unknow ClothingWindMethod; // 0x28 (1)
 	struct Unknown VerticalConstraint; // 0x2C (16)
 	struct Unknown HorizontalConstraint; // 0x3C (16)
@@ -42,10 +42,18 @@ struct UClothConfigNv : UClothConfigCommon {
 };
 
 // Class ClothingSystemRuntimeNv.ClothPhysicalMeshDataNv_Legacy
-struct UClothPhysicalMeshDataNv_Legacy : UClothPhysicalMeshDataBase_Legacy {
+class UClothPhysicalMeshDataNv_Legacy : UClothPhysicalMeshDataBase_Legac {
 	struct TArray<Unknown> MaxDistances; // 0xE0 (16)
 	struct TArray<Unknown> BackstopDistances; // 0xF0 (16)
 	struct TArray<Unknown> BackstopRadiuses; // 0x100 (16)
 	struct TArray<Unknown> AnimDriveMultipliers; // 0x110 (16)
+};
+
+// ScriptStruct ClothingSystemRuntimeNv.ClothConstraintSetupNv
+struct FClothConstraintSetupNv {
+	float Stiffness; // 0x0 (4)
+	float StiffnessMultiplier; // 0x4 (4)
+	float StretchLimit; // 0x8 (4)
+	float CompressionLimit; // 0xC (4)
 };
 

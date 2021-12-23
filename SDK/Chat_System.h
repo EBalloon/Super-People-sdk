@@ -1,5 +1,5 @@
 // BlueprintGeneratedClass Chat_System.Chat_System_C
-struct AChat_System_C : UActor {
+class AChat_System_C : UActor {
 	struct Unknown UberGraphFrame; // 0x310 (8)
 	struct Unknown DefaultSceneRoot; // 0x318 (8)
 	struct TArray<Unknown> Muted; // 0x320 (16)

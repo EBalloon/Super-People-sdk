@@ -1,5 +1,5 @@
 // BlueprintGeneratedClass BP_AreaRectLight.BP_AreaRectLight_C
-struct ABP_AreaRectLight_C : UActor {
+class ABP_AreaRectLight_C : UActor {
 	struct Unknown UberGraphFrame; // 0x310 (8)
 	struct Unknown Arrow; // 0x318 (8)
 	struct Unknown DefaultSceneRoot; // 0x320 (8)

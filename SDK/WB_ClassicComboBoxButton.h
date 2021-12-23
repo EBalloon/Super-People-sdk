@@ -1,5 +1,5 @@
 // WidgetBlueprintGeneratedClass WB_ClassicComboBoxButton.WB_ClassicComboBoxButton_C
-struct UWB_ClassicComboBoxButton_C : UUserWidget {
+class UWB_ClassicComboBoxButton_C : UUserWidget {
 	struct Unknown UberGraphFrame; // 0x248 (8)
 	struct Unknown VisualNoninteractButton; // 0x250 (8)
 	struct Unknown Original; // 0x258 (632)

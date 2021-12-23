@@ -9,7 +9,7 @@ enum class EPatchServiceError : uint8 {
 };
 
 // Class BravoHotelPatch.BravoHotelPatchWidget
-struct UBravoHotelPatchWidget : UUserWidget {
+class UBravoHotelPatchWidget : UUserWidget {
 	struct Unknown PatchService; // 0x268 (8)
 
 	void StartPatchService(); // Function BravoHotelPatch.BravoHotelPatchWidget.StartPatchService(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2065AA0>

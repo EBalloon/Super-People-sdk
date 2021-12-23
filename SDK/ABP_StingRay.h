@@ -1,5 +1,5 @@
 // AnimBlueprintGeneratedClass ABP_StingRay.ABP_StingRay_C
-struct UABP_StingRay_C : UBravoHotelVehicleAnimInstance {
+class UABP_StingRay_C : UBravoHotelVehicleAnimInstance {
 	struct Unknown UberGraphFrame; // 0xA20 (8)
 	struct Unknown AnimGraphNode_ModifyBone; // 0xA28 (264)
 	struct Unknown AnimGraphNode_BlendListByBool; // 0xB30 (160)

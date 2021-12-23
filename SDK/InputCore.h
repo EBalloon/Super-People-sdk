@@ -58,3 +58,8 @@ enum class EConsoleForGamepadLabels : uint8 {
 	EConsoleForGamepadLabels = 3
 };
 
+// ScriptStruct InputCore.Key
+struct FKey {
+	struct FName KeyName; // 0x0 (8)
+};
+

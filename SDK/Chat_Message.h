@@ -1,5 +1,5 @@
 // WidgetBlueprintGeneratedClass Chat_Message.Chat_Message_C
-struct UChat_Message_C : UUserWidget {
+class UChat_Message_C : UUserWidget {
 	struct Unknown UberGraphFrame; // 0x248 (8)
 	struct Unknown Message; // 0x250 (8)
 	struct Unknown Username; // 0x258 (8)

@@ -9,7 +9,7 @@ enum class EChaosWeightMapTarget : uint8 {
 };
 
 // Class ChaosCloth.ChaosClothConfig
-struct UChaosClothConfig : UClothConfigCommon {
+class UChaosClothConfig : UClothConfigCommon {
 	enum class Unknow MassMode; // 0x28 (1)
 	float UniformMass; // 0x2C (4)
 	float TotalMass; // 0x30 (4)
@@ -38,7 +38,7 @@ struct UChaosClothConfig : UClothConfigCommon {
 };
 
 // Class ChaosCloth.ChaosClothSharedSimConfig
-struct UChaosClothSharedSimConfig : UClothSharedConfigCommon {
+class UChaosClothSharedSimConfig : UClothSharedConfigCommon {
 	int32_t IterationCount; // 0x28 (4)
 	int32_t SubdivisionCount; // 0x2C (4)
 	float SelfCollisionThickness; // 0x30 (4)

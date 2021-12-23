@@ -1,5 +1,5 @@
 // WidgetBlueprintGeneratedClass GraphicWidget.GraphicWidget_C
-struct UGraphicWidget_C : UBravoHotelSettingSubWidget {
+class UGraphicWidget_C : UBravoHotelSettingSubWidget {
 	struct Unknown UberGraphFrame; // 0x298 (8)
 	struct Unknown Anti; // 0x2A0 (8)
 	struct Unknown display; // 0x2A8 (8)
@@ -27,8 +27,8 @@ struct UGraphicWidget_C : UBravoHotelSettingSubWidget {
 	struct Unknown Texture; // 0x358 (8)
 	struct Unknown v; // 0x360 (8)
 	struct Unknown ViewDistance; // 0x368 (8)
-	struct Unknown a; // 0x370 (8)
-	struct Unknown a; // 0x378 (8)
+	struct Unknown m; // 0x370 (8)
+	struct Unknown m; // 0x378 (8)
 	float OldDisplayModeValue; // 0x380 (4)
 	float OldDisplayResolutionValue; // 0x384 (4)
 	struct Unknown ScrollBarTimer; // 0x388 (8)

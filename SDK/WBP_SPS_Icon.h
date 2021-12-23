@@ -1,5 +1,5 @@
 // WidgetBlueprintGeneratedClass WBP_SPS_Icon.WBP_SPS_Icon_C
-struct UWBP_SPS_Icon_C : UBravoHotelSmartPingIconWidget {
+class UWBP_SPS_Icon_C : UBravoHotelSmartPingIconWidget {
 	struct Unknown UberGraphFrame; // 0x440 (8)
 	struct Unknown BgIcon; // 0x448 (8)
 	struct Unknown Icon; // 0x450 (8)

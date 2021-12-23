@@ -7,3 +7,8 @@ enum class EComputeNTBsOptions : uint8 {
 	EComputeNTBsOptions = 5
 };
 
+// ScriptStruct MeshDescription.ElementID
+struct FElementID {
+	int32_t IDValue; // 0x0 (4)
+};
+

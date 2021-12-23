@@ -64,19 +64,19 @@ enum class ESpriteCollisionMode : uint8 {
 };
 
 // Class Paper2D.MaterialExpressionSpriteTextureSampler
-struct UMaterialExpressionSpriteTextureSampler : UMaterialExpressionTextureSampleParameter2D {
+class UMaterialExpressionSpriteTextureSampler : UMaterialExpressionTextureSampleParameter2D {
 	char bSampleAdditionalTextures : 0; // 0xF0 (1)
 	int32_t AdditionalSlotIndex; // 0xF4 (4)
 	struct FText SlotDisplayName; // 0xF8 (24)
 };
 
 // Class Paper2D.PaperCharacter
-struct APaperCharacter : ACharacter {
+class APaperCharacter : ACharacter {
 	struct Unknown Sprite; // 0x5D8 (8)
 };
 
 // Class Paper2D.PaperFlipbook
-struct UPaperFlipbook : Object {
+class UPaperFlipbook : Object {
 	float FramesPerSecond; // 0x28 (4)
 	struct TArray<Unknown> KeyFrames; // 0x30 (16)
 	struct Unknown DefaultMaterial; // 0x40 (8)
@@ -92,17 +92,17 @@ struct UPaperFlipbook : Object {
 };
 
 // Class Paper2D.PaperFlipbookActor
-struct APaperFlipbookActor : UActor {
+class APaperFlipbookActor : UActor {
 	struct Unknown RenderComponent; // 0x310 (8)
 };
 
 // Class Paper2D.PaperFlipbookComponent
-struct UPaperFlipbookComponent : UMeshComponent {
+class UPaperFlipbookComponent : UMeshComponent {
 	struct Unknown SourceFlipbook; // 0x4E8 (8)
 	struct Unknown Material; // 0x4F0 (8)
 	float PlayRate; // 0x4F8 (4)
 	char bLooping : 0; // 0x4FC (1)
-	char b : 0; // 0x4FC (1)
+	char bReversePlayback : 0; // 0x4FC (1)
 	char bPlaying : 0; // 0x4FC (1)
 	float AccumulatedTime; // 0x500 (4)
 	int32_t CachedFrameIndex; // 0x504 (4)
@@ -136,12 +136,12 @@ struct UPaperFlipbookComponent : UMeshComponent {
 };
 
 // Class Paper2D.PaperGroupedSpriteActor
-struct APaperGroupedSpriteActor : UActor {
+class APaperGroupedSpriteActor : UActor {
 	struct Unknown RenderComponent; // 0x310 (8)
 };
 
 // Class Paper2D.PaperGroupedSpriteComponent
-struct UPaperGroupedSpriteComponent : UMeshComponent {
+class UPaperGroupedSpriteComponent : UMeshComponent {
 	struct TArray<Unknown> InstanceMaterials; // 0x4E8 (16)
 	struct TArray<Unknown> PerInstanceSpriteData; // 0x4F8 (16)
 
@@ -156,14 +156,14 @@ struct UPaperGroupedSpriteComponent : UMeshComponent {
 };
 
 // Class Paper2D.PaperRuntimeSettings
-struct UPaperRuntimeSettings : Object {
+class UPaperRuntimeSettings : Object {
 	char bEnableSpriteAtlasGroups : 0; // 0x28 (1)
 	char bEnableTerrainSplineEditing : 0; // 0x29 (1)
-	char b : 0; // 0x2A (1)
+	char bResizeSpriteDataToMatchTextures : 0; // 0x2A (1)
 };
 
 // Class Paper2D.PaperSprite
-struct UPaperSprite : Object {
+class UPaperSprite : Object {
 	struct TArray<Unknown> AdditionalSourceTextures; // 0x38 (16)
 	struct Unknown BakedSourceUV; // 0x48 (8)
 	struct Unknown BakedSourceDimension; // 0x50 (8)
@@ -179,12 +179,12 @@ struct UPaperSprite : Object {
 };
 
 // Class Paper2D.PaperSpriteActor
-struct APaperSpriteActor : UActor {
+class APaperSpriteActor : UActor {
 	struct Unknown RenderComponent; // 0x310 (8)
 };
 
 // Class Paper2D.PaperSpriteComponent
-struct UPaperSpriteComponent : UMeshComponent {
+class UPaperSpriteComponent : UMeshComponent {
 	struct Unknown SourceSprite; // 0x4E8 (8)
 	struct Unknown MaterialOverride; // 0x4F0 (8)
 	struct Unknown SpriteColor; // 0x4F8 (16)
@@ -195,14 +195,14 @@ struct UPaperSpriteComponent : UMeshComponent {
 };
 
 // Class Paper2D.PaperTerrainActor
-struct APaperTerrainActor : UActor {
+class APaperTerrainActor : UActor {
 	struct Unknown DummyRoot; // 0x310 (8)
 	struct Unknown SplineComponent; // 0x318 (8)
 	struct Unknown RenderComponent; // 0x320 (8)
 };
 
 // Class Paper2D.PaperTerrainComponent
-struct UPaperTerrainComponent : UPrimitiveComponent {
+class UPaperTerrainComponent : UPrimitiveComponent {
 	struct Unknown TerrainMaterial; // 0x4B8 (8)
 	char bClosedSpline : 0; // 0x4C0 (1)
 	char bFilledSpline : 0; // 0x4C1 (1)
@@ -219,13 +219,13 @@ struct UPaperTerrainComponent : UPrimitiveComponent {
 };
 
 // Class Paper2D.PaperTerrainMaterial
-struct UPaperTerrainMaterial : UDataAsset {
+class UPaperTerrainMaterial : UDataAsset {
 	struct TArray<Unknown> Rules; // 0x30 (16)
 	struct Unknown InteriorFill; // 0x40 (8)
 };
 
 // Class Paper2D.PaperTileLayer
-struct UPaperTileLayer : Object {
+class UPaperTileLayer : Object {
 	struct FText LayerName; // 0x28 (24)
 	int32_t LayerWidth; // 0x40 (4)
 	int32_t LayerHeight; // 0x44 (4)
@@ -244,7 +244,7 @@ struct UPaperTileLayer : Object {
 };
 
 // Class Paper2D.PaperTileMap
-struct UPaperTileMap : Object {
+class UPaperTileMap : Object {
 	int32_t MapWidth; // 0x28 (4)
 	int32_t MapHeight; // 0x2C (4)
 	int32_t TileWidth; // 0x30 (4)
@@ -265,12 +265,12 @@ struct UPaperTileMap : Object {
 };
 
 // Class Paper2D.PaperTileMapActor
-struct APaperTileMapActor : UActor {
+class APaperTileMapActor : UActor {
 	struct Unknown RenderComponent; // 0x310 (8)
 };
 
 // Class Paper2D.PaperTileMapComponent
-struct UPaperTileMapComponent : UMeshComponent {
+class UPaperTileMapComponent : UMeshComponent {
 	int32_t MapWidth; // 0x4E8 (4)
 	int32_t MapHeight; // 0x4EC (4)
 	int32_t TileWidth; // 0x4F0 (4)
@@ -287,8 +287,8 @@ struct UPaperTileMapComponent : UMeshComponent {
 	char SetTileMap(struct Unknown NewTileMap); // Function Paper2D.PaperTileMapComponent.SetTileMap(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x168DBB0>
 	void SetTile(int32_t X, int32_t Y, int32_t Layer, struct Unknown NewValue); // Function Paper2D.PaperTileMapComponent.SetTile(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1691680>
 	void SetLayerColor(struct Unknown NewColor, int32_t Layer); // Function Paper2D.PaperTileMapComponent.SetLayerColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16914B0>
-	void SetLayerCollision(int32_t Layer, char bHasCollision, char bOverrideThickness, float CustomThickness, char bOverrideOffset, float CustomOffset, char b); // Function Paper2D.PaperTileMapComponent.SetLayerCollision(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1691290>
-	void SetDefaultCollisionThickness(float Thickness, char b); // Function Paper2D.PaperTileMapComponent.SetDefaultCollisionThickness(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16911C0>
+	void SetLayerCollision(int32_t Layer, char bHasCollision, char bOverrideThickness, float CustomThickness, char bOverrideOffset, float CustomOffset, char bRebuildCollision); // Function Paper2D.PaperTileMapComponent.SetLayerCollision(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1691290>
+	void SetDefaultCollisionThickness(float Thickness, char bRebuildCollision); // Function Paper2D.PaperTileMapComponent.SetDefaultCollisionThickness(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16911C0>
 	void ResizeMap(int32_t NewWidthInTiles, int32_t NewHeightInTiles); // Function Paper2D.PaperTileMapComponent.ResizeMap(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1691100>
 	void RebuildCollision(); // Function Paper2D.PaperTileMapComponent.RebuildCollision(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16910E0>
 	char OwnsTileMap(); // Function Paper2D.PaperTileMapComponent.OwnsTileMap(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16910B0>
@@ -305,7 +305,7 @@ struct UPaperTileMapComponent : UMeshComponent {
 };
 
 // Class Paper2D.PaperTileSet
-struct UPaperTileSet : Object {
+class UPaperTileSet : Object {
 	struct Unknown TileSize; // 0x28 (8)
 	struct Unknown TileSheet; // 0x30 (8)
 	struct TArray<Unknown> AdditionalSourceTextures; // 0x38 (16)
@@ -322,5 +322,103 @@ struct UPaperTileSet : Object {
 	int32_t TileHeight; // 0x9C (4)
 	int32_t Margin; // 0xA0 (4)
 	int32_t Spacing; // 0xA4 (4)
+};
+
+// ScriptStruct Paper2D.IntMargin
+struct FIntMargin {
+	int32_t Left; // 0x0 (4)
+	int32_t Top; // 0x4 (4)
+	int32_t Right; // 0x8 (4)
+	int32_t Bottom; // 0xC (4)
+};
+
+// ScriptStruct Paper2D.PaperFlipbookKeyFrame
+struct FPaperFlipbookKeyFrame {
+	struct Unknown Sprite; // 0x0 (8)
+	int32_t FrameRun; // 0x8 (4)
+};
+
+// ScriptStruct Paper2D.SpriteInstanceData
+struct FSpriteInstanceData {
+	struct Unknown Transform; // 0x0 (64)
+	struct Unknown SourceSprite; // 0x40 (8)
+	struct Unknown VertexColor; // 0x48 (4)
+	int32_t MaterialIndex; // 0x4C (4)
+};
+
+// ScriptStruct Paper2D.PaperSpriteSocket
+struct FPaperSpriteSocket {
+	struct Unknown LocalTransform; // 0x0 (48)
+	struct FName SocketName; // 0x30 (8)
+};
+
+// ScriptStruct Paper2D.PaperSpriteAtlasSlot
+struct FPaperSpriteAtlasSlot {
+	struct TSoftObjectPtr<Unknown> SpriteRef; // 0x0 (40)
+	int32_t AtlasIndex; // 0x28 (4)
+	int32_t X; // 0x2C (4)
+	int32_t Y; // 0x30 (4)
+	int32_t Width; // 0x34 (4)
+	int32_t Height; // 0x38 (4)
+};
+
+// ScriptStruct Paper2D.PaperTerrainMaterialRule
+struct FPaperTerrainMaterialRule {
+	struct Unknown StartCap; // 0x0 (8)
+	struct TArray<Unknown> Body; // 0x8 (16)
+	struct Unknown EndCap; // 0x18 (8)
+	float MinimumAngle; // 0x20 (4)
+	float MaximumAngle; // 0x24 (4)
+	char bEnableCollision : 0; // 0x28 (1)
+	float CollisionOffset; // 0x2C (4)
+	int32_t DrawOrder; // 0x30 (4)
+};
+
+// ScriptStruct Paper2D.PaperTileInfo
+struct FPaperTileInfo {
+	struct Unknown TileSet; // 0x0 (8)
+	int32_t PackedTileIndex; // 0x8 (4)
+};
+
+// ScriptStruct Paper2D.PaperTileSetTerrain
+struct FPaperTileSetTerrain {
+	struct FString TerrainName; // 0x0 (16)
+	int32_t CenterTileIndex; // 0x10 (4)
+};
+
+// ScriptStruct Paper2D.PaperTileMetadata
+struct FPaperTileMetadata {
+	struct FName UserDataName; // 0x0 (8)
+	struct Unknown CollisionData; // 0x8 (48)
+	char TerrainMembership[0x4]; // 0x38 (4)
+};
+
+// ScriptStruct Paper2D.SpriteGeometryCollection
+struct FSpriteGeometryCollection {
+	struct TArray<Unknown> Shapes; // 0x0 (16)
+	char GeometryType; // 0x10 (1)
+	int32_t PixelsPerSubdivisionX; // 0x14 (4)
+	int32_t PixelsPerSubdivisionY; // 0x18 (4)
+	char bAvoidVertexMerging : 0; // 0x1C (1)
+	float AlphaThreshold; // 0x20 (4)
+	float DetailAmount; // 0x24 (4)
+	float SimplifyEpsilon; // 0x28 (4)
+};
+
+// ScriptStruct Paper2D.SpriteGeometryShape
+struct FSpriteGeometryShape {
+	enum class Unknow ShapeType; // 0x0 (1)
+	struct TArray<Unknown> Vertices; // 0x8 (16)
+	struct Unknown BoxSize; // 0x18 (8)
+	struct Unknown BoxPosition; // 0x20 (8)
+	float Rotation; // 0x28 (4)
+	char bNegativeWinding : 0; // 0x2C (1)
+};
+
+// ScriptStruct Paper2D.SpriteDrawCallRecord
+struct FSpriteDrawCallRecord {
+	struct Unknown Destination; // 0x0 (12)
+	struct Unknown BaseTexture; // 0x10 (8)
+	struct Unknown Color; // 0x48 (4)
 };
 

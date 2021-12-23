@@ -16,3 +16,9 @@ enum class EMagicLeapEyeTrackingStatus : uint8 {
 	EMagicLeapEyeTrackingStatus = 5
 };
 
+// ScriptStruct MagicLeapEyeTracker.MagicLeapEyeBlinkState
+struct FMagicLeapEyeBlinkState {
+	char LeftEyeBlinked : 0; // 0x0 (1)
+	char RightEyeBlinked : 0; // 0x1 (1)
+};
+

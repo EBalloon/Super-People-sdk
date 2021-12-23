@@ -1,5 +1,5 @@
 // WidgetBlueprintGeneratedClass WB_ToolTipDesign.WB_ToolTipDesign_C
-struct UWB_ToolTipDesign_C : UUserWidget {
+class UWB_ToolTipDesign_C : UUserWidget {
 	struct Unknown UberGraphFrame; // 0x248 (8)
 	struct FText My; // 0x250 (24)
 

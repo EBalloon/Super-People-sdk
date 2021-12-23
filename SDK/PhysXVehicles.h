@@ -18,13 +18,13 @@ enum class EWheelSweepType : uint8 {
 };
 
 // Class PhysXVehicles.WheeledVehicleMovementComponent
-struct UWheeledVehicleMovementComponent : UPawnMovementComponent {
+class UWheeledVehicleMovementComponent : UPawnMovementComponent {
 	char bDeprecatedSpringOffsetMode : 0; // 0x140 (1)
-	char b : 0; // 0x140 (1)
+	char bReverseAsBrake : 0; // 0x140 (1)
 	char bUseRVOAvoidance : 0; // 0x140 (1)
-	char b : 0; // 0x140 (1)
-	char b : 0; // 0x140 (1)
-	char b : 0; // 0x140 (1)
+	char bRawHandbrakeInput : 0; // 0x140 (1)
+	char bRawGearUpInput : 0; // 0x140 (1)
+	char bRawGearDownInput : 0; // 0x140 (1)
 	char bWasAvoidanceUpdated : 0; // 0x144 (1)
 	float Mass; // 0x148 (4)
 	struct TArray<Unknown> WheelSetups; // 0x150 (16)
@@ -99,20 +99,20 @@ struct UWheeledVehicleMovementComponent : UPawnMovementComponent {
 };
 
 // Class PhysXVehicles.TireConfig
-struct UTireConfig : UDataAsset {
+class UTireConfig : UDataAsset {
 	float FrictionScale; // 0x30 (4)
 	struct TArray<Unknown> TireFrictionScales; // 0x38 (16)
 };
 
 // Class PhysXVehicles.VehicleAnimInstance
-struct UVehicleAnimInstance : UAnimInstance {
+class UVehicleAnimInstance : UAnimInstance {
 	struct Unknown WheeledVehicleMovementComponent; // 0x970 (8)
 
 	struct Unknown GetVehicle(); // Function PhysXVehicles.VehicleAnimInstance.GetVehicle(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18AB720>
 };
 
 // Class PhysXVehicles.VehicleWheel
-struct UVehicleWheel : Object {
+class UVehicleWheel : Object {
 	struct Unknown CollisionMesh; // 0x28 (8)
 	char bDontCreateShape : 0; // 0x30 (1)
 	char bAutoAdjustCollisionSize : 0; // 0x31 (1)
@@ -155,13 +155,13 @@ struct UVehicleWheel : Object {
 };
 
 // Class PhysXVehicles.WheeledVehicle
-struct AWheeledVehicle : APawn {
+class AWheeledVehicle : APawn {
 	struct Unknown Mesh; // 0x380 (8)
 	struct Unknown VehicleMovement; // 0x388 (8)
 };
 
 // Class PhysXVehicles.WheeledVehicleMovementComponent4W
-struct UWheeledVehicleMovementComponent4W : UWheeledVehicleMovementComponent {
+class UWheeledVehicleMovementComponent4W : UWheeledVehicleMovementComponent {
 	struct Unknown EngineSetup; // 0x290 (160)
 	struct Unknown DifferentialSetup; // 0x330 (28)
 	float AckermannAccuracy; // 0x34C (4)
@@ -170,9 +170,79 @@ struct UWheeledVehicleMovementComponent4W : UWheeledVehicleMovementComponent {
 };
 
 // Class PhysXVehicles.WheeledVehicleMovementComponentMotor
-struct UWheeledVehicleMovementComponentMotor : UWheeledVehicleMovementComponent {
+class UWheeledVehicleMovementComponentMotor : UWheeledVehicleMovementComponent {
 	struct Unknown EngineSetup; // 0x290 (160)
 	struct Unknown TransmissionSetup; // 0x330 (48)
 	struct Unknown SteeringCurve; // 0x360 (136)
+};
+
+// ScriptStruct PhysXVehicles.VehicleInputRate
+struct FVehicleInputRate {
+	float RiseRate; // 0x0 (4)
+	float FallRate; // 0x4 (4)
+};
+
+// ScriptStruct PhysXVehicles.ReplicatedVehicleState
+struct FReplicatedVehicleState {
+	float SteeringInput; // 0x0 (4)
+	float ThrottleInput; // 0x4 (4)
+	float BrakeInput; // 0x8 (4)
+	float HandbrakeInput; // 0xC (4)
+	int32_t CurrentGear; // 0x10 (4)
+};
+
+// ScriptStruct PhysXVehicles.WheelSetup
+struct FWheelSetup {
+	struct Unknown* WheelClass; // 0x0 (8)
+	struct FName BoneName; // 0x8 (8)
+	struct Unknown AdditionalOffset; // 0x10 (12)
+	char bDisableSteering : 0; // 0x1C (1)
+};
+
+// ScriptStruct PhysXVehicles.VehicleTransmissionData
+struct FVehicleTransmissionData {
+	char bUseGearAutoBox : 0; // 0x0 (1)
+	float GearSwitchTime; // 0x4 (4)
+	float GearAutoBoxLatency; // 0x8 (4)
+	float FinalRatio; // 0xC (4)
+	struct TArray<Unknown> ForwardGears; // 0x10 (16)
+	float ReverseGearRatio; // 0x20 (4)
+	float NeutralGearUpRatio; // 0x24 (4)
+	float ClutchStrength; // 0x28 (4)
+};
+
+// ScriptStruct PhysXVehicles.VehicleGearData
+struct FVehicleGearData {
+	float Ratio; // 0x0 (4)
+	float DownRatio; // 0x4 (4)
+	float UpRatio; // 0x8 (4)
+};
+
+// ScriptStruct PhysXVehicles.VehicleEngineData
+struct FVehicleEngineData {
+	struct Unknown TorqueCurve; // 0x0 (136)
+	float MaxRPM; // 0x88 (4)
+	float MOI; // 0x8C (4)
+	float TorqueScale; // 0x90 (4)
+	float DampingRateFullThrottle; // 0x94 (4)
+	float DampingRateZeroThrottleClutchEngaged; // 0x98 (4)
+	float DampingRateZeroThrottleClutchDisengaged; // 0x9C (4)
+};
+
+// ScriptStruct PhysXVehicles.TireConfigMaterialFriction
+struct FTireConfigMaterialFriction {
+	struct Unknown PhysicalMaterial; // 0x0 (8)
+	float FrictionScale; // 0x8 (4)
+};
+
+// ScriptStruct PhysXVehicles.VehicleDifferential4WData
+struct FVehicleDifferential4WData {
+	char DifferentialType; // 0x0 (1)
+	float FrontRearSplit; // 0x4 (4)
+	float FrontLeftRightSplit; // 0x8 (4)
+	float RearLeftRightSplit; // 0xC (4)
+	float CentreBias; // 0x10 (4)
+	float FrontBias; // 0x14 (4)
+	float RearBias; // 0x18 (4)
 };
 

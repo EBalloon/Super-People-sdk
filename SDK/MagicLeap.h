@@ -89,7 +89,7 @@ enum class EMagicLeapHeadTrackingError : uint8 {
 };
 
 // Class MagicLeap.InAppPurchaseComponent
-struct UInAppPurchaseComponent : UActorComponent {
+class UInAppPurchaseComponent : UActorComponent {
 	struct FMulticastInlineDelegate InAppPurchaseLogMessage; // 0xB0 (16)
 	struct FMulticastInlineDelegate GetItemsDetailsSuccess; // 0xC0 (16)
 	struct FMulticastInlineDelegate GetItemsDetailsFailure; // 0xD0 (16)
@@ -111,7 +111,7 @@ struct UInAppPurchaseComponent : UActorComponent {
 };
 
 // Class MagicLeap.LuminApplicationLifecycleComponent
-struct ULuminApplicationLifecycleComponent : UApplicationLifecycleComponent {
+class ULuminApplicationLifecycleComponent : UApplicationLifecycleComponent {
 	struct FMulticastInlineDelegate DeviceHasReactivatedDelegate; // 0x140 (16)
 	struct FMulticastInlineDelegate DeviceWillEnterRealityModeDelegate; // 0x150 (16)
 	struct FMulticastInlineDelegate DeviceWillGoInStandbyDelegate; // 0x160 (16)
@@ -120,15 +120,15 @@ struct ULuminApplicationLifecycleComponent : UApplicationLifecycleComponent {
 };
 
 // Class MagicLeap.MagicLeapHeadTrackingNotificationsComponent
-struct UMagicLeapHeadTrackingNotificationsComponent : UV {
+class UMagicLeapHeadTrackingNotificationsComponent : UVRNotificationsComponent {
 	struct FMulticastInlineDelegate OnHeadTrackingLost; // 0x140 (16)
-	struct FMulticastInlineDelegate OnHeadTrackingRecov; // 0x150 (16)
+	struct FMulticastInlineDelegate OnHeadTrackingRecovonen; // 0x150 (16)
 	struct FMulticastInlineDelegate OnHeadTrackingRecov; // 0x160 (16)
 	struct FMulticastInlineDelegate OnHeadTrackingNewSessionStarted; // 0x170 (16)
 };
 
 // Class MagicLeap.MagicLeapMeshTrackerComponent
-struct UMagicLeapMeshTrackerComponent : USceneComponent {
+class UMagicLeapMeshTrackerComponent : USceneComponent {
 	struct FMulticastInlineDelegate OnMeshTrackerUpdated; // 0x240 (16)
 	char ScanWorld : 0; // 0x250 (1)
 	enum class Unknow MeshType; // 0x251 (1)
@@ -144,7 +144,7 @@ struct UMagicLeapMeshTrackerComponent : USceneComponent {
 	struct Unknown VertexColorFromConfidenceZero; // 0x288 (16)
 	struct Unknown VertexColorFromConfidenceOne; // 0x298 (16)
 	char RemoveOverlappingTriangles : 0; // 0x2A8 (1)
-	struct Unknown M; // 0x2B0 (8)
+	struct Unknown MRMesh; // 0x2B0 (8)
 	int32_t BricksPerFrame; // 0x2B8 (4)
 
 	void SelectMeshBlocks(struct Unknown& NewMeshInfo, struct TArray<Unknown>& RequestedMesh); // Function MagicLeap.MagicLeapMeshTrackerComponent.SelectMeshBlocks(Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17CA3E0>
@@ -157,9 +157,83 @@ struct UMagicLeapMeshTrackerComponent : USceneComponent {
 };
 
 // Class MagicLeap.MagicLeapSettings
-struct UMagicLeapSettings : Object {
+class UMagicLeapSettings : Object {
 	char bEnableZI : 0; // 0x28 (1)
 	char bUseVulkanForZI : 0; // 0x29 (1)
 	char bUseMLAudioForZI : 0; // 0x2A (1)
+};
+
+// ScriptStruct MagicLeap.PurchaseItemDetails
+struct FPurchaseItemDetails {
+	struct FString Price; // 0x10 (16)
+	struct FString Name; // 0x20 (16)
+	enum class Unknow Type; // 0x30 (1)
+};
+
+// ScriptStruct MagicLeap.PurchaseConfirmation
+struct FPurchaseConfirmation {
+	struct FString PackageName; // 0x10 (16)
+	enum class Unknow Type; // 0x48 (1)
+};
+
+// ScriptStruct MagicLeap.MagicLeapMeshBlockRequest
+struct FMagicLeapMeshBlockRequest {
+	struct Unknown BlockID; // 0x0 (16)
+	enum class Unknow LevelOfDetail; // 0x10 (1)
+};
+
+// ScriptStruct MagicLeap.MagicLeapTrackingMeshInfo
+struct FMagicLeapTrackingMeshInfo {
+	struct Unknown Timestamp; // 0x0 (8)
+	struct TArray<Unknown> BlockData; // 0x8 (16)
+};
+
+// ScriptStruct MagicLeap.MagicLeapMeshBlockInfo
+struct FMagicLeapMeshBlockInfo {
+	struct Unknown BlockID; // 0x0 (16)
+	struct Unknown BlockPosition; // 0x10 (12)
+	struct Unknown BlockOrientation; // 0x1C (12)
+	struct Unknown BlockDimensions; // 0x28 (12)
+	struct Unknown Timestamp; // 0x38 (8)
+	enum class Unknow BlockState; // 0x40 (1)
+};
+
+// ScriptStruct MagicLeap.MagicLeapRaycastHitResult
+struct FMagicLeapRaycastHitResult {
+	enum class Unknow HitState; // 0x0 (1)
+	struct Unknown HitPoint; // 0x4 (12)
+	struct Unknown Normal; // 0x10 (12)
+	float Confidence; // 0x1C (4)
+	int32_t UserData; // 0x20 (4)
+};
+
+// ScriptStruct MagicLeap.MagicLeapRaycastQueryParams
+struct FMagicLeapRaycastQueryParams {
+	struct Unknown Position; // 0x0 (12)
+	struct Unknown Direction; // 0xC (12)
+	struct Unknown UpVector; // 0x18 (12)
+	int32_t Width; // 0x24 (4)
+	int32_t Height; // 0x28 (4)
+	float HorizontalFovDegrees; // 0x2C (4)
+	char CollideWithUnobservnf : 0; // 0x30 (1)
+	int32_t UserData; // 0x34 (4)
+};
+
+// ScriptStruct MagicLeap.MagicLeapGraphicsClientPerformanceInfo
+struct FMagicLeapGraphicsClientPerformanceInfo {
+	float FrameStartCPUCompAcquireCPUTimeMs; // 0x0 (4)
+	float FrameStartCPUFrameEndGPUTimeMs; // 0x4 (4)
+	float FrameStartCPUFrameStartCPUTimeMs; // 0x8 (4)
+	float FrameDurationCPUTimeMs; // 0xC (4)
+	float FrameDurationGPUTimeMs; // 0x10 (4)
+	float FrameInternalDurationCPUTimeMs; // 0x14 (4)
+	float FrameInternalDurationGPUTimeMs; // 0x18 (4)
+};
+
+// ScriptStruct MagicLeap.MagicLeapHeadTrackingState
+struct FMagicLeapHeadTrackingState {
+	enum class Unknow Mode; // 0x0 (1)
+	enum class Unknow Error; // 0x1 (1)
+	float Confidence; // 0x4 (4)
 };
 

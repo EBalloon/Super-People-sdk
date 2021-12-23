@@ -18,7 +18,7 @@ enum class EHoudiniAttributes : uint8 {
 };
 
 // Class HoudiniNiagara.HoudiniCSV
-struct UHoudiniCSV : Object {
+class UHoudiniCSV : Object {
 	struct FString Filename; // 0x28 (16)
 	int32_t NumberOfRows; // 0x38 (4)
 	int32_t NumberOfColumns; // 0x3C (4)
@@ -59,9 +59,27 @@ struct UHoudiniCSV : Object {
 };
 
 // Class HoudiniNiagara.NiagaraDataInterfaceHoudiniCSV
-struct UNiagaraDataInterfaceHoudiniCSV : UNiagaraDataInterface {
+class UNiagaraDataInterfaceHoudiniCSV : UNiagaraDataInterface {
 	struct Unknown HoudiniCSVAsset; // 0x30 (8)
 	int32_t LastSpawnedPointID; // 0x38 (4)
 	float LastSpawnTime; // 0x3C (4)
+};
+
+// ScriptStruct HoudiniNiagara.PointIndexes
+struct FPointIndexes {
+	struct TArray<Unknown> RowIndexes; // 0x0 (16)
+};
+
+// ScriptStruct HoudiniNiagara.HoudiniEvent
+struct FHoudiniEvent {
+	struct Unknown Position; // 0x0 (12)
+	struct Unknown Normal; // 0xC (12)
+	float Impulse; // 0x18 (4)
+	struct Unknown Velocity; // 0x1C (12)
+	int32_t POINTID; // 0x28 (4)
+	float Time; // 0x2C (4)
+	float LIFE; // 0x30 (4)
+	struct Unknown Color; // 0x34 (16)
+	int32_t Type; // 0x44 (4)
 };
 

@@ -1,5 +1,5 @@
 // BlueprintGeneratedClass BP_KeyMapping.BP_KeyMapping_C
-struct UBP_KeyMapping_C : Object {
+class UBP_KeyMapping_C : Object {
 	struct FString Name; // 0x28 (16)
 	float Scale; // 0x38 (4)
 	struct Unknown Primary; // 0x40 (8)

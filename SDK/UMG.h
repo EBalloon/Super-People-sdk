@@ -144,7 +144,7 @@ enum class EWidgetInteractionSource : uint8 {
 };
 
 // Class UMG.Widget
-struct UWidget : UVisual {
+class UWidget : UVisual {
 	struct Unknown Slot; // 0x28 (8)
 	struct FDelegate bIsEnabledDelegate; // 0x30 (16)
 	struct FText ToolTipText; // 0x40 (24)
@@ -235,7 +235,7 @@ struct UWidget : UVisual {
 };
 
 // Class UMG.UserWidget
-struct UUserWidget : UWidget {
+class UUserWidget : UWidget {
 	struct Unknown ColorAndOpacity; // 0x110 (16)
 	struct FDelegate ColorAndOpacityDelegate; // 0x120 (16)
 	struct Unknown ForegroundColor; // 0x130 (40)
@@ -269,7 +269,7 @@ struct UUserWidget : UWidget {
 	void StopAnimationsAndLatentActions(); // Function UMG.UserWidget.StopAnimationsAndLatentActions(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3388030>
 	void StopAnimation(struct Unknown InAnimation); // Function UMG.UserWidget.StopAnimation(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3387FB0>
 	void StopAllAnimations(); // Function UMG.UserWidget.StopAllAnimations(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3387F90>
-	void SetPositionInViewport(struct Unknown Position, char b); // Function UMG.UserWidget.SetPositionInViewport(Final|BlueprintCosmetic|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33878B0>
+	void SetPositionInViewport(struct Unknown Position, char bRemoveDPIScale); // Function UMG.UserWidget.SetPositionInViewport(Final|BlueprintCosmetic|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33878B0>
 	void SetPlaybackSpeed(struct Unknown InAnimation, float PlaybackSpeed); // Function UMG.UserWidget.SetPlaybackSpeed(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33877E0>
 	void SetPadding(struct Unknown InPadding); // Function UMG.UserWidget.SetPadding(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3387750>
 	void SetOwningPlayer(struct Unknown LocalPlayerController); // Function UMG.UserWidget.SetOwningPlayer(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33876D0>
@@ -287,10 +287,10 @@ struct UUserWidget : UWidget {
 	void RegisterInputComponent(); // Function UMG.UserWidget.RegisterInputComponent(Final|Native|Protected|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33866C0>
 	void PreConstruct(char IsDesignTime); // Function UMG.UserWidget.PreConstruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void PlaySound(struct Unknown SoundToPlay); // Function UMG.UserWidget.PlaySound(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3386640>
-	struct Unknown PlayAnimationTimeRange(struct Unknown InAnimation, float StartAtTime, float EndAtTime, int32_t NumLoopsToPlay, char PlayMode, float PlaybackSpeed, char b); // Function UMG.UserWidget.PlayAnimationTimeRange(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3386450>
-	struct Unknown PlayAnimationReverse(struct Unknown InAnimation, float PlaybackSpeed, char b); // Function UMG.UserWidget.PlayAnimationReverse(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3386340>
-	struct Unknown PlayAnimationForward(struct Unknown InAnimation, float PlaybackSpeed, char b); // Function UMG.UserWidget.PlayAnimationForward(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3386230>
-	struct Unknown PlayAnimation(struct Unknown InAnimation, float StartAtTime, int32_t NumLoopsToPlay, char PlayMode, float PlaybackSpeed, char b); // Function UMG.UserWidget.PlayAnimation(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3386070>
+	struct Unknown PlayAnimationTimeRange(struct Unknown InAnimation, float StartAtTime, float EndAtTime, int32_t NumLoopsToPlay, char PlayMode, float PlaybackSpeed, char bRestoreState); // Function UMG.UserWidget.PlayAnimationTimeRange(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3386450>
+	struct Unknown PlayAnimationReverse(struct Unknown InAnimation, float PlaybackSpeed, char bRestoreState); // Function UMG.UserWidget.PlayAnimationReverse(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3386340>
+	struct Unknown PlayAnimationForward(struct Unknown InAnimation, float PlaybackSpeed, char bRestoreState); // Function UMG.UserWidget.PlayAnimationForward(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3386230>
+	struct Unknown PlayAnimation(struct Unknown InAnimation, float StartAtTime, int32_t NumLoopsToPlay, char PlayMode, float PlaybackSpeed, char bRestoreState); // Function UMG.UserWidget.PlayAnimation(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3386070>
 	float PauseAnimation(struct Unknown InAnimation); // Function UMG.UserWidget.PauseAnimation(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3385FD0>
 	struct Unknown OnTouchStarted(struct Unknown MyGeometry, struct Unknown& InTouchEvent); // Function UMG.UserWidget.OnTouchStarted(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	struct Unknown OnTouchMoved(struct Unknown MyGeometry, struct Unknown& InTouchEvent); // Function UMG.UserWidget.OnTouchMoved(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
@@ -350,7 +350,7 @@ struct UUserWidget : UWidget {
 };
 
 // Class UMG.PanelWidget
-struct UPanelWidget : UWidget {
+class UPanelWidget : UWidget {
 	struct TArray<Unknown> Slots; // 0x108 (16)
 
 	char RemoveChildAt(int32_t Index); // Function UMG.PanelWidget.RemoveChildAt(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3375DD0>
@@ -366,7 +366,7 @@ struct UPanelWidget : UWidget {
 };
 
 // Class UMG.Border
-struct UBorder : UContentWidget {
+class UBorder : UContentWidget {
 	char HorizontalAlignment; // 0x120 (1)
 	char VerticalAlignment; // 0x121 (1)
 	char bShowEffectWhenDisabled : 0; // 0x122 (1)
@@ -398,15 +398,15 @@ struct UBorder : UContentWidget {
 };
 
 // Class UMG.AsyncTaskDownloadImage
-struct UAsyncTaskDownloadImage : UBlueprintAsyncActionBase {
+class UAsyncTaskDownloadImage : UBlueprintAsyncActionBase {
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFail; // 0x40 (16)
 
-	struct Unknown DownloadImage(struct FString U); // Function UMG.AsyncTaskDownloadImage.DownloadImage(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3367710>
+	struct Unknown DownloadImage(struct FString URL); // Function UMG.AsyncTaskDownloadImage.DownloadImage(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3367710>
 };
 
 // Class UMG.BackgroundBlur
-struct UBackgroundBlur : UContentWidget {
+class UBackgroundBlur : UContentWidget {
 	struct Unknown Padding; // 0x120 (16)
 	char HorizontalAlignment; // 0x130 (1)
 	char VerticalAlignment; // 0x131 (1)
@@ -426,13 +426,13 @@ struct UBackgroundBlur : UContentWidget {
 };
 
 // Class UMG.PanelSlot
-struct UPanelSlot : UVisual {
+class UPanelSlot : UVisual {
 	struct Unknown Parent; // 0x28 (8)
 	struct Unknown Content; // 0x30 (8)
 };
 
 // Class UMG.BackgroundBlurSlot
-struct UBackgroundBlurSlot : UPanelSlot {
+class UBackgroundBlurSlot : UPanelSlot {
 	struct Unknown Padding; // 0x38 (16)
 	char HorizontalAlignment; // 0x48 (1)
 	char VerticalAlignment; // 0x49 (1)
@@ -443,14 +443,14 @@ struct UBackgroundBlurSlot : UPanelSlot {
 };
 
 // Class UMG.PropertyBinding
-struct UPropertyBinding : Object {
+class UPropertyBinding : Object {
 	struct TWeakObjectPtr<struct Unknown> SourceObject; // 0x28 (8)
 	struct Unknown SourcePath; // 0x30 (40)
 	struct FName DestinationProperty; // 0x58 (8)
 };
 
 // Class UMG.BorderSlot
-struct UBorderSlot : UPanelSlot {
+class UBorderSlot : UPanelSlot {
 	struct Unknown Padding; // 0x38 (16)
 	char HorizontalAlignment; // 0x48 (1)
 	char VerticalAlignment; // 0x49 (1)
@@ -461,7 +461,7 @@ struct UBorderSlot : UPanelSlot {
 };
 
 // Class UMG.Button
-struct UButton : UContentWidget {
+class UButton : UContentWidget {
 	struct Unknown Style; // 0x160 (8)
 	struct Unknown WidgetStyle; // 0x168 (632)
 	struct Unknown ColorAndOpacity; // 0x3E0 (16)
@@ -486,7 +486,7 @@ struct UButton : UContentWidget {
 };
 
 // Class UMG.ButtonSlot
-struct UButtonSlot : UPanelSlot {
+class UButtonSlot : UPanelSlot {
 	struct Unknown Padding; // 0x38 (16)
 	char HorizontalAlignment; // 0x48 (1)
 	char VerticalAlignment; // 0x49 (1)
@@ -497,7 +497,7 @@ struct UButtonSlot : UPanelSlot {
 };
 
 // Class UMG.CanvasPanelSlot
-struct UCanvasPanelSlot : UPanelSlot {
+class UCanvasPanelSlot : UPanelSlot {
 	struct Unknown LayoutData; // 0x38 (40)
 	char bAutoSize : 0; // 0x60 (1)
 	int32_t ZOrder; // 0x64 (4)
@@ -523,7 +523,7 @@ struct UCanvasPanelSlot : UPanelSlot {
 };
 
 // Class UMG.CheckBox
-struct UCheckBox : UContentWidget {
+class UCheckBox : UContentWidget {
 	enum class Unknow CheckedState; // 0x120 (1)
 	struct FDelegate CheckedStateDelegate; // 0x124 (16)
 	struct Unknown WidgetStyle; // 0x138 (1408)
@@ -551,7 +551,7 @@ struct UCheckBox : UContentWidget {
 };
 
 // Class UMG.CircularThrobber
-struct UCircularThrobber : UWidget {
+class UCircularThrobber : UWidget {
 	int32_t NumberOfPieces; // 0x108 (4)
 	float Period; // 0x10C (4)
 	float Radius; // 0x110 (4)
@@ -565,14 +565,14 @@ struct UCircularThrobber : UWidget {
 };
 
 // Class UMG.ComboBox
-struct UComboBox : UWidget {
+class UComboBox : UWidget {
 	struct TArray<Unknown> Items; // 0x108 (16)
 	struct FDelegate OnGenerateWidgetEvent; // 0x118 (16)
 	char bIsFocusable : 0; // 0x128 (1)
 };
 
 // Class UMG.ComboBoxString
-struct UComboBoxString : UWidget {
+class UComboBoxString : UWidget {
 	struct TArray<Unknown> DefaultOptions; // 0x108 (16)
 	struct FString SelectedOption; // 0x118 (16)
 	struct Unknown WidgetStyle; // 0x128 (1008)
@@ -606,7 +606,7 @@ struct UComboBoxString : UWidget {
 };
 
 // Class UMG.DragDropOperation
-struct UDragDropOperation : Object {
+class UDragDropOperation : Object {
 	struct FString Tag; // 0x28 (16)
 	struct Unknown payload; // 0x38 (8)
 	struct Unknown DefaultDragVisual; // 0x40 (8)
@@ -623,7 +623,7 @@ struct UDragDropOperation : Object {
 };
 
 // Class UMG.DynamicEntryBoxBase
-struct UDynamicEntryBoxBase : UWidget {
+class UDynamicEntryBoxBase : UWidget {
 	enum class Unknow EntryBoxType; // 0x108 (1)
 	struct Unknown EntrySpacing; // 0x10C (8)
 	struct TArray<Unknown> SpacingPattern; // 0x118 (16)
@@ -639,7 +639,7 @@ struct UDynamicEntryBoxBase : UWidget {
 };
 
 // Class UMG.DynamicEntryBox
-struct UDynamicEntryBox : UDynamicEntryBoxBase {
+class UDynamicEntryBox : UDynamicEntryBoxBase {
 	struct Unknown* EntryWidgetClass; // 0x1C8 (8)
 
 	void Reset(char bDeleteWidgets); // Function UMG.DynamicEntryBox.Reset(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336C270>
@@ -649,7 +649,7 @@ struct UDynamicEntryBox : UDynamicEntryBoxBase {
 };
 
 // Class UMG.EditableText
-struct UEditableText : UWidget {
+class UEditableText : UWidget {
 	struct FText Text; // 0x108 (24)
 	struct FDelegate TextDelegate; // 0x120 (16)
 	struct FText HintText; // 0x130 (24)
@@ -690,7 +690,7 @@ struct UEditableText : UWidget {
 };
 
 // Class UMG.EditableTextBox
-struct UEditableTextBox : UWidget {
+class UEditableTextBox : UWidget {
 	struct FText Text; // 0x108 (24)
 	struct FDelegate TextDelegate; // 0x120 (16)
 	struct Unknown WidgetStyle; // 0x130 (2032)
@@ -722,7 +722,7 @@ struct UEditableTextBox : UWidget {
 
 	void SetText(struct FText InText); // Function UMG.EditableTextBox.SetText(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336CDF0>
 	void SetJustification(char InJustification); // Function UMG.EditableTextBox.SetJustification(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336C9A0>
-	void SetIsReadOnly(char b); // Function UMG.EditableTextBox.SetIsReadOnly(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336C890>
+	void SetIsReadOnly(char bReadOnly); // Function UMG.EditableTextBox.SetIsReadOnly(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336C890>
 	void SetIsPassword(char bIsPassword); // Function UMG.EditableTextBox.SetIsPassword(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336C770>
 	void SetHintText(struct FText InText); // Function UMG.EditableTextBox.SetHintText(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336C600>
 	void SetError(struct FText InError); // Function UMG.EditableTextBox.SetError(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x336C440>
@@ -735,7 +735,7 @@ struct UEditableTextBox : UWidget {
 };
 
 // Class UMG.ExpandableArea
-struct UExpandableArea : UWidget {
+class UExpandableArea : UWidget {
 	struct Unknown Style; // 0x110 (288)
 	struct Unknown BorderBrush; // 0x230 (136)
 	struct Unknown BorderColor; // 0x2B8 (40)
@@ -753,7 +753,7 @@ struct UExpandableArea : UWidget {
 };
 
 // Class UMG.GridPanel
-struct UGridPanel : UPanelWidget {
+class UGridPanel : UPanelWidget {
 	struct TArray<Unknown> ColumnFill; // 0x120 (16)
 	struct TArray<Unknown> RowFill; // 0x130 (16)
 
@@ -763,7 +763,7 @@ struct UGridPanel : UPanelWidget {
 };
 
 // Class UMG.GridSlot
-struct UGridSlot : UPanelSlot {
+class UGridSlot : UPanelSlot {
 	struct Unknown Padding; // 0x38 (16)
 	char HorizontalAlignment; // 0x48 (1)
 	char VerticalAlignment; // 0x49 (1)
@@ -786,7 +786,7 @@ struct UGridSlot : UPanelSlot {
 };
 
 // Class UMG.HorizontalBoxSlot
-struct UHorizontalBoxSlot : UPanelSlot {
+class UHorizontalBoxSlot : UPanelSlot {
 	struct Unknown Padding; // 0x40 (16)
 	struct Unknown Size; // 0x50 (8)
 	char HorizontalAlignment; // 0x58 (1)
@@ -799,7 +799,7 @@ struct UHorizontalBoxSlot : UPanelSlot {
 };
 
 // Class UMG.Image
-struct UImage : UWidget {
+class UImage : UWidget {
 	struct Unknown Brush; // 0x108 (136)
 	struct FDelegate BrushDelegate; // 0x190 (16)
 	struct Unknown ColorAndOpacity; // 0x1A0 (16)
@@ -825,7 +825,7 @@ struct UImage : UWidget {
 };
 
 // Class UMG.InputKeySelector
-struct UInputKeySelector : UWidget {
+class UInputKeySelector : UWidget {
 	struct Unknown WidgetStyle; // 0x108 (632)
 	struct Unknown TextStyle; // 0x380 (616)
 	struct Unknown SelectedKey; // 0x5E8 (32)
@@ -853,7 +853,7 @@ struct UInputKeySelector : UWidget {
 };
 
 // Class UMG.InvalidationBox
-struct UInvalidationBox : UContentWidget {
+class UInvalidationBox : UContentWidget {
 	char bCanCache : 0; // 0x120 (1)
 	char CacheRelativeTransforms : 0; // 0x121 (1)
 
@@ -863,7 +863,7 @@ struct UInvalidationBox : UContentWidget {
 };
 
 // Class UMG.ListViewBase
-struct UListViewBase : UWidget {
+class UListViewBase : UWidget {
 	struct Unknown* EntryWidgetClass; // 0x108 (8)
 	float WheelScrollMultiplier; // 0x110 (4)
 	char bEnableScrollAnimation : 0; // 0x114 (1)
@@ -884,14 +884,14 @@ struct UListViewBase : UWidget {
 };
 
 // Class UMG.ListView
-struct UListView : UListViewBase {
+class UListView : UListViewBase {
 	char Orientation; // 0x2D8 (1)
 	char SelectionMode; // 0x2D9 (1)
 	enum class Unknow ConsumeMouseWheel; // 0x2DA (1)
 	char bClearSelectionOnClick : 0; // 0x2DB (1)
 	char bIsFocusable : 0; // 0x2DC (1)
 	float EntrySpacing; // 0x2E0 (4)
-	char b : 0; // 0x2E4 (1)
+	char bReturnFocusToSelection : 0; // 0x2E4 (1)
 	struct TArray<Unknown> ListItems; // 0x2E8 (16)
 	struct FMulticastInlineDelegate BP_OnEntryInitialized; // 0x308 (16)
 	struct FMulticastInlineDelegate BP_OnItemClicked; // 0x318 (16)
@@ -926,7 +926,7 @@ struct UListView : UListViewBase {
 };
 
 // Class UMG.MenuAnchor
-struct UMenuAnchor : UContentWidget {
+class UMenuAnchor : UContentWidget {
 	struct Unknown* MenuClass; // 0x120 (8)
 	struct FDelegate OnGetMenuContentEvent; // 0x128 (16)
 	char Placement; // 0x138 (1)
@@ -947,7 +947,7 @@ struct UMenuAnchor : UContentWidget {
 };
 
 // Class UMG.MovieScene2DTransformSection
-struct UMovieScene2DTransformSection : UMovieSceneSection {
+class UMovieScene2DTransformSection : UMovieSceneSection {
 	struct Unknown TransformMask; // 0xE0 (4)
 	struct Unknown Translation[0x2]; // 0xE8 (320)
 	struct Unknown Rotation; // 0x228 (160)
@@ -956,7 +956,7 @@ struct UMovieScene2DTransformSection : UMovieSceneSection {
 };
 
 // Class UMG.MovieSceneMarginSection
-struct UMovieSceneMarginSection : UMovieSceneSection {
+class UMovieSceneMarginSection : UMovieSceneSection {
 	struct Unknown TopCurve; // 0xE0 (160)
 	struct Unknown LeftCurve; // 0x180 (160)
 	struct Unknown RightCurve; // 0x220 (160)
@@ -964,13 +964,13 @@ struct UMovieSceneMarginSection : UMovieSceneSection {
 };
 
 // Class UMG.MovieSceneWidgetMaterialTrack
-struct UMovieSceneWidgetMaterialTrack : UMovieSceneMaterialTrack {
+class UMovieSceneWidgetMaterialTrack : UMovieSceneMaterialTrack {
 	struct TArray<Unknown> BrushPropertyNamePath; // 0x68 (16)
 	struct FName TrackName; // 0x78 (8)
 };
 
 // Class UMG.TextLayoutWidget
-struct UTextLayoutWidget : UWidget {
+class UTextLayoutWidget : UWidget {
 	struct Unknown ShapedTextOptions; // 0x108 (3)
 	char Justification; // 0x10B (1)
 	enum class Unknow WrappingPolicy; // 0x10C (1)
@@ -983,7 +983,7 @@ struct UTextLayoutWidget : UWidget {
 };
 
 // Class UMG.MultiLineEditableText
-struct UMultiLineEditableText : UTextLayoutWidget {
+class UMultiLineEditableText : UTextLayoutWidget {
 	struct FText Text; // 0x128 (24)
 	struct FText HintText; // 0x140 (24)
 	struct FDelegate HintTextDelegate; // 0x158 (16)
@@ -1002,7 +1002,7 @@ struct UMultiLineEditableText : UTextLayoutWidget {
 
 	void SetWidgetStyle(struct Unknown& InWidgetStyle); // Function UMG.MultiLineEditableText.SetWidgetStyle(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3376880>
 	void SetText(struct FText InText); // Function UMG.MultiLineEditableText.SetText(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3376510>
-	void SetIsReadOnly(char b); // Function UMG.MultiLineEditableText.SetIsReadOnly(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33761E0>
+	void SetIsReadOnly(char bReadOnly); // Function UMG.MultiLineEditableText.SetIsReadOnly(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33761E0>
 	void SetHintText(struct FText InHintText); // Function UMG.MultiLineEditableText.SetHintText(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3375FA0>
 	void OnMultiLineEditableTextCommittedEvent__DelegateSignature(struct FText& Text, char CommitMethod); // DelegateFunction UMG.MultiLineEditableText.OnMultiLineEditableTextCommittedEvent__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void OnMultiLineEditableTextChangedEvent__DelegateSignature(struct FText& Text); // DelegateFunction UMG.MultiLineEditableText.OnMultiLineEditableTextChangedEvent__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
@@ -1011,7 +1011,7 @@ struct UMultiLineEditableText : UTextLayoutWidget {
 };
 
 // Class UMG.MultiLineEditableTextBox
-struct UMultiLineEditableTextBox : UTextLayoutWidget {
+class UMultiLineEditableTextBox : UTextLayoutWidget {
 	struct FText Text; // 0x128 (24)
 	struct FText HintText; // 0x140 (24)
 	struct FDelegate HintTextDelegate; // 0x158 (16)
@@ -1031,7 +1031,7 @@ struct UMultiLineEditableTextBox : UTextLayoutWidget {
 
 	void SetTextStyle(struct Unknown& InTextStyle); // Function UMG.MultiLineEditableTextBox.SetTextStyle(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33766D0>
 	void SetText(struct FText InText); // Function UMG.MultiLineEditableTextBox.SetText(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33765F0>
-	void SetIsReadOnly(char b); // Function UMG.MultiLineEditableTextBox.SetIsReadOnly(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3376270>
+	void SetIsReadOnly(char bReadOnly); // Function UMG.MultiLineEditableTextBox.SetIsReadOnly(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3376270>
 	void SetHintText(struct FText InHintText); // Function UMG.MultiLineEditableTextBox.SetHintText(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3376080>
 	void SetError(struct FText InError); // Function UMG.MultiLineEditableTextBox.SetError(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3375EC0>
 	void OnMultiLineEditableTextBoxCommittedEvent__DelegateSignature(struct FText& Text, char CommitMethod); // DelegateFunction UMG.MultiLineEditableTextBox.OnMultiLineEditableTextBoxCommittedEvent__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
@@ -1041,7 +1041,7 @@ struct UMultiLineEditableTextBox : UTextLayoutWidget {
 };
 
 // Class UMG.OverlaySlot
-struct UOverlaySlot : UPanelSlot {
+class UOverlaySlot : UPanelSlot {
 	struct Unknown Padding; // 0x40 (16)
 	char HorizontalAlignment; // 0x50 (1)
 	char VerticalAlignment; // 0x51 (1)
@@ -1052,7 +1052,7 @@ struct UOverlaySlot : UPanelSlot {
 };
 
 // Class UMG.ProgressBar
-struct UProgressBar : UWidget {
+class UProgressBar : UWidget {
 	struct Unknown WidgetStyle; // 0x108 (416)
 	struct Unknown Style; // 0x2A8 (8)
 	struct Unknown BackgroundImage; // 0x2B0 (8)
@@ -1072,7 +1072,7 @@ struct UProgressBar : UWidget {
 };
 
 // Class UMG.RetainerBox
-struct URetainerBox : UContentWidget {
+class URetainerBox : UContentWidget {
 	char RenderOnInvalidation : 0; // 0x120 (1)
 	char RenderOnPhase : 0; // 0x121 (1)
 	int32_t Phase; // 0x124 (4)
@@ -1088,7 +1088,7 @@ struct URetainerBox : UContentWidget {
 };
 
 // Class UMG.RichTextBlock
-struct URichTextBlock : UTextLayoutWidget {
+class URichTextBlock : UTextLayoutWidget {
 	struct FText Text; // 0x128 (24)
 	struct Unknown TextStyleSet; // 0x140 (8)
 	struct TArray<Unknown> DecoratorClasses; // 0x148 (16)
@@ -1113,12 +1113,12 @@ struct URichTextBlock : UTextLayoutWidget {
 };
 
 // Class UMG.RichTextBlockImageDecorator
-struct URichTextBlockImageDecorator : URichTextBlockDecorator {
+class URichTextBlockImageDecorator : URichTextBlockDecorator {
 	struct Unknown ImageSet; // 0x28 (8)
 };
 
 // Class UMG.SafeZone
-struct USafeZone : UContentWidget {
+class USafeZone : UContentWidget {
 	char PadLeft : 0; // 0x120 (1)
 	char PadRight : 0; // 0x121 (1)
 	char PadTop : 0; // 0x122 (1)
@@ -1128,7 +1128,7 @@ struct USafeZone : UContentWidget {
 };
 
 // Class UMG.SafeZoneSlot
-struct USafeZoneSlot : UPanelSlot {
+class USafeZoneSlot : UPanelSlot {
 	char bIsTitleSafe : 0; // 0x38 (1)
 	struct Unknown SafeAreaScale; // 0x3C (16)
 	char HAlign; // 0x4C (1)
@@ -1137,7 +1137,7 @@ struct USafeZoneSlot : UPanelSlot {
 };
 
 // Class UMG.ScaleBox
-struct UScaleBox : UContentWidget {
+class UScaleBox : UContentWidget {
 	char Stretch; // 0x120 (1)
 	char StretchDirection; // 0x121 (1)
 	float UserSpecifiedScale; // 0x124 (4)
@@ -1150,7 +1150,7 @@ struct UScaleBox : UContentWidget {
 };
 
 // Class UMG.ScaleBoxSlot
-struct UScaleBoxSlot : UPanelSlot {
+class UScaleBoxSlot : UPanelSlot {
 	struct Unknown Padding; // 0x38 (16)
 	char HorizontalAlignment; // 0x48 (1)
 	char VerticalAlignment; // 0x49 (1)
@@ -1161,7 +1161,7 @@ struct UScaleBoxSlot : UPanelSlot {
 };
 
 // Class UMG.ScrollBar
-struct UScrollBar : UWidget {
+class UScrollBar : UWidget {
 	struct Unknown WidgetStyle; // 0x108 (1232)
 	struct Unknown Style; // 0x5D8 (8)
 	char bAlwaysShowScrollbar : 0; // 0x5E0 (1)
@@ -1174,7 +1174,7 @@ struct UScrollBar : UWidget {
 };
 
 // Class UMG.ScrollBox
-struct UScrollBox : UPanelWidget {
+class UScrollBox : UPanelWidget {
 	struct Unknown WidgetStyle; // 0x120 (552)
 	struct Unknown WidgetBarStyle; // 0x348 (1232)
 	struct Unknown Style; // 0x818 (8)
@@ -1215,7 +1215,7 @@ struct UScrollBox : UPanelWidget {
 };
 
 // Class UMG.ScrollBoxSlot
-struct UScrollBoxSlot : UPanelSlot {
+class UScrollBoxSlot : UPanelSlot {
 	struct Unknown Padding; // 0x38 (16)
 	char HorizontalAlignment; // 0x48 (1)
 	char VerticalAlignment; // 0x49 (1)
@@ -1226,7 +1226,7 @@ struct UScrollBoxSlot : UPanelSlot {
 };
 
 // Class UMG.SizeBox
-struct USizeBox : UContentWidget {
+class USizeBox : UContentWidget {
 	float WidthOverride; // 0x130 (4)
 	float HeightOverride; // 0x134 (4)
 	float MinDesiredWidth; // 0x138 (4)
@@ -1263,7 +1263,7 @@ struct USizeBox : UContentWidget {
 };
 
 // Class UMG.SizeBoxSlot
-struct USizeBoxSlot : UPanelSlot {
+class USizeBoxSlot : UPanelSlot {
 	struct Unknown Padding; // 0x38 (16)
 	char HorizontalAlignment; // 0x58 (1)
 	char VerticalAlignment; // 0x59 (1)
@@ -1274,7 +1274,7 @@ struct USizeBoxSlot : UPanelSlot {
 };
 
 // Class UMG.SlateVectorArtData
-struct USlateVectorArtData : Object {
+class USlateVectorArtData : Object {
 	struct TArray<Unknown> VertexData; // 0x28 (16)
 	struct TArray<Unknown> IndexData; // 0x38 (16)
 	struct Unknown Material; // 0x48 (8)
@@ -1283,7 +1283,7 @@ struct USlateVectorArtData : Object {
 };
 
 // Class UMG.SlateAccessibleWidgetData
-struct USlateAccessibleWidgetData : Object {
+class USlateAccessibleWidgetData : Object {
 	char bCanChildrenBeAccessible : 0; // 0x28 (1)
 	enum class Unknow AccessibleBehavior; // 0x29 (1)
 	enum class Unknow AccessibleSummaryBehavior; // 0x2A (1)
@@ -1294,7 +1294,7 @@ struct USlateAccessibleWidgetData : Object {
 };
 
 // Class UMG.Slider
-struct USlider : UWidget {
+class USlider : UWidget {
 	float Value; // 0x108 (4)
 	struct FDelegate ValueDelegate; // 0x10C (16)
 	float MinValue; // 0x11C (4)
@@ -1328,14 +1328,14 @@ struct USlider : UWidget {
 };
 
 // Class UMG.Spacer
-struct USpacer : UWidget {
+class USpacer : UWidget {
 	struct Unknown Size; // 0x108 (8)
 
 	void SetSize(struct Unknown InSize); // Function UMG.Spacer.SetSize(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x337ED20>
 };
 
 // Class UMG.SpinBox
-struct USpinBox : UWidget {
+class USpinBox : UWidget {
 	float Value; // 0x108 (4)
 	struct FDelegate ValueDelegate; // 0x10C (16)
 	struct Unknown WidgetStyle; // 0x120 (744)
@@ -1393,7 +1393,7 @@ struct USpinBox : UWidget {
 };
 
 // Class UMG.TextBlock
-struct UTextBlock : UTextLayoutWidget {
+class UTextBlock : UTextLayoutWidget {
 	struct FText Text; // 0x128 (24)
 	struct FDelegate TextDelegate; // 0x140 (16)
 	struct Unknown ColorAndOpacity; // 0x150 (40)
@@ -1423,7 +1423,7 @@ struct UTextBlock : UTextLayoutWidget {
 };
 
 // Class UMG.Throbber
-struct UThrobber : UWidget {
+class UThrobber : UWidget {
 	int32_t NumberOfPieces; // 0x108 (4)
 	char bAnimateHorizontally : 0; // 0x10C (1)
 	char bAnimateVertically : 0; // 0x10D (1)
@@ -1438,7 +1438,7 @@ struct UThrobber : UWidget {
 };
 
 // Class UMG.TileView
-struct UTileView : UListView {
+class UTileView : UListView {
 	float EntryHeight; // 0x368 (4)
 	float EntryWidth; // 0x36C (4)
 	enum class Unknow TileAlignment; // 0x370 (1)
@@ -1449,7 +1449,7 @@ struct UTileView : UListView {
 };
 
 // Class UMG.TreeView
-struct UTreeView : UListView {
+class UTreeView : UListView {
 	struct FDelegate BP_OnGetItemChildren; // 0x378 (16)
 	struct FMulticastInlineDelegate BP_OnItemExpansionChanged; // 0x388 (16)
 
@@ -1459,7 +1459,7 @@ struct UTreeView : UListView {
 };
 
 // Class UMG.UMGSequencePlayer
-struct UUMGSequencePlayer : Object {
+class UUMGSequencePlayer : Object {
 	struct Unknown Animation; // 0x408 (8)
 
 	void SetUserTag(struct FName InUserTag); // Function UMG.UMGSequencePlayer.SetUserTag(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3387E90>
@@ -1467,7 +1467,7 @@ struct UUMGSequencePlayer : Object {
 };
 
 // Class UMG.UniformGridPanel
-struct UUniformGridPanel : UPanelWidget {
+class UUniformGridPanel : UPanelWidget {
 	struct Unknown SlotPadding; // 0x120 (16)
 	float MinDesiredSlotWidth; // 0x130 (4)
 	float MinDesiredSlotHeight; // 0x134 (4)
@@ -1479,7 +1479,7 @@ struct UUniformGridPanel : UPanelWidget {
 };
 
 // Class UMG.UniformGridSlot
-struct UUniformGridSlot : UPanelSlot {
+class UUniformGridSlot : UPanelSlot {
 	char HorizontalAlignment; // 0x38 (1)
 	char VerticalAlignment; // 0x39 (1)
 	int32_t Row; // 0x3C (4)
@@ -1492,7 +1492,7 @@ struct UUniformGridSlot : UPanelSlot {
 };
 
 // Class UMG.VerticalBoxSlot
-struct UVerticalBoxSlot : UPanelSlot {
+class UVerticalBoxSlot : UPanelSlot {
 	struct Unknown Size; // 0x38 (8)
 	struct Unknown Padding; // 0x40 (16)
 	char HorizontalAlignment; // 0x58 (1)
@@ -1505,7 +1505,7 @@ struct UVerticalBoxSlot : UPanelSlot {
 };
 
 // Class UMG.Viewport
-struct UViewport : UContentWidget {
+class UViewport : UContentWidget {
 	struct Unknown BackgroundColor; // 0x120 (16)
 
 	struct Unknown Spawn(struct Unknown* ActorClass); // Function UMG.Viewport.Spawn(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338B760>
@@ -1517,7 +1517,7 @@ struct UViewport : UContentWidget {
 };
 
 // Class UMG.WidgetAnimation
-struct UWidgetAnimation : UMovieSceneSequence {
+class UWidgetAnimation : UMovieSceneSequence {
 	struct Unknown MovieScene; // 0x348 (8)
 	struct TArray<Unknown> AnimationBindings; // 0x350 (16)
 	char bLegacyFinishOnStop : 0; // 0x360 (1)
@@ -1534,12 +1534,12 @@ struct UWidgetAnimation : UMovieSceneSequence {
 };
 
 // Class UMG.WidgetAnimationDelegateBinding
-struct UWidgetAnimationDelegateBinding : UDynamicBlueprintBinding {
+class UWidgetAnimationDelegateBinding : UDynamicBlueprintBinding {
 	struct TArray<Unknown> WidgetAnimationDelegateBindings; // 0x28 (16)
 };
 
 // Class UMG.WidgetAnimationPlayCallbackProxy
-struct UWidgetAnimationPlayCallbackProxy : Object {
+class UWidgetAnimationPlayCallbackProxy : Object {
 	struct FMulticastInlineDelegate Finished; // 0x28 (16)
 
 	struct Unknown CreatePlayAnimationTimeRangeProxyObject(struct Unknown& Result, struct Unknown Widget, struct Unknown InAnimation, float StartAtTime, float EndAtTime, int32_t NumLoopsToPlay, char PlayMode, float PlaybackSpeed); // Function UMG.WidgetAnimationPlayCallbackProxy.CreatePlayAnimationTimeRangeProxyObject(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x338E380>
@@ -1547,7 +1547,7 @@ struct UWidgetAnimationPlayCallbackProxy : Object {
 };
 
 // Class UMG.WidgetBlueprintGeneratedClass
-struct UWidgetBlueprintGeneratedClass : UBlueprintGeneratedClass {
+class UWidgetBlueprintGeneratedClass : UBlueprintGeneratedClass {
 	struct Unknown WidgetTree; // 0x3C8 (8)
 	char bAllowTemplate : 0; // 0x3D0 (1)
 	char bAllowDynamicCreation : 0; // 0x3D0 (1)
@@ -1563,18 +1563,18 @@ struct UWidgetBlueprintGeneratedClass : UBlueprintGeneratedClass {
 };
 
 // Class UMG.WidgetComponent
-struct UWidgetComponent : UMeshComponent {
+class UWidgetComponent : UMeshComponent {
 	enum class Unknow Space; // 0x4E8 (1)
 	enum class Unknow TimingPolicy; // 0x4E9 (1)
 	struct Unknown* WidgetClass; // 0x4F0 (8)
 	struct Unknown DrawSize; // 0x4F8 (8)
 	char bManuallyRedraw : 0; // 0x500 (1)
-	char b : 0; // 0x501 (1)
+	char bRedrawRequested : 0; // 0x501 (1)
 	float RedrawTime; // 0x504 (4)
 	struct Unknown CurrentDrawSize; // 0x510 (8)
 	char bDrawAtDesiredSize : 0; // 0x518 (1)
 	struct Unknown Pivot; // 0x51C (8)
-	char b : 0; // 0x524 (1)
+	char bReceiveHardwareInput : 0; // 0x524 (1)
 	char bWindowFocusable : 0; // 0x525 (1)
 	enum class Unknow WindowVisibility; // 0x526 (1)
 	char bApplyGammaCorrection : 0; // 0x527 (1)
@@ -1639,7 +1639,7 @@ struct UWidgetComponent : UMeshComponent {
 };
 
 // Class UMG.WidgetInteractionComponent
-struct UWidgetInteractionComponent : USceneComponent {
+class UWidgetInteractionComponent : USceneComponent {
 	struct FMulticastInlineDelegate OnHoveredWidgetChanged; // 0x238 (16)
 	int32_t VirtualUserIndex; // 0x258 (4)
 	float PointerIndex; // 0x25C (4)
@@ -1660,12 +1660,12 @@ struct UWidgetInteractionComponent : USceneComponent {
 
 	void SetFocus(struct Unknown FocusWidget); // Function UMG.WidgetInteractionComponent.SetFocus(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3395350>
 	void SetCustomHitResult(struct Unknown& HitResult); // Function UMG.WidgetInteractionComponent.SetCustomHitResult(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33950F0>
-	char SendKeyChar(struct FString Characters, char b); // Function UMG.WidgetInteractionComponent.SendKeyChar(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3394F20>
+	char SendKeyChar(struct FString Characters, char bRepeat); // Function UMG.WidgetInteractionComponent.SendKeyChar(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3394F20>
 	void ScrollWheel(float ScrollDelta); // Function UMG.WidgetInteractionComponent.ScrollWheel(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3394EA0>
 	void ReleasePointerKey(struct Unknown Key); // Function UMG.WidgetInteractionComponent.ReleasePointerKey(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3394D20>
 	char ReleaseKey(struct Unknown Key); // Function UMG.WidgetInteractionComponent.ReleaseKey(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3394C20>
 	void PressPointerKey(struct Unknown Key); // Function UMG.WidgetInteractionComponent.PressPointerKey(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3394870>
-	char PressKey(struct Unknown Key, char b); // Function UMG.WidgetInteractionComponent.PressKey(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3394740>
+	char PressKey(struct Unknown Key, char bRepeat); // Function UMG.WidgetInteractionComponent.PressKey(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3394740>
 	char PressAndReleaseKey(struct Unknown Key); // Function UMG.WidgetInteractionComponent.PressAndReleaseKey(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3394640>
 	char IsOverInteractableWidget(); // Function UMG.WidgetInteractionComponent.IsOverInteractableWidget(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3394610>
 	char IsOverHitTestVisibleWidget(); // Function UMG.WidgetInteractionComponent.IsOverHitTestVisibleWidget(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33945E0>
@@ -1676,7 +1676,7 @@ struct UWidgetInteractionComponent : USceneComponent {
 };
 
 // Class UMG.WidgetNavigation
-struct UWidgetNavigation : Object {
+class UWidgetNavigation : Object {
 	struct Unknown Up; // 0x28 (36)
 	struct Unknown Down; // 0x4C (36)
 	struct Unknown Left; // 0x70 (36)
@@ -1686,7 +1686,7 @@ struct UWidgetNavigation : Object {
 };
 
 // Class UMG.WidgetSwitcher
-struct UWidgetSwitcher : UPanelWidget {
+class UWidgetSwitcher : UPanelWidget {
 	int32_t ActiveWidgetIndex; // 0x120 (4)
 
 	void SetActiveWidgetIndex(int32_t Index); // Function UMG.WidgetSwitcher.SetActiveWidgetIndex(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33976B0>
@@ -1698,7 +1698,7 @@ struct UWidgetSwitcher : UPanelWidget {
 };
 
 // Class UMG.WidgetSwitcherSlot
-struct UWidgetSwitcherSlot : UPanelSlot {
+class UWidgetSwitcherSlot : UPanelSlot {
 	struct Unknown Padding; // 0x40 (16)
 	char HorizontalAlignment; // 0x50 (1)
 	char VerticalAlignment; // 0x51 (1)
@@ -1709,12 +1709,12 @@ struct UWidgetSwitcherSlot : UPanelSlot {
 };
 
 // Class UMG.WidgetTree
-struct UWidgetTree : Object {
+class UWidgetTree : Object {
 	struct Unknown RootWidget; // 0x28 (8)
 };
 
 // Class UMG.WindowTitleBarArea
-struct UWindowTitleBarArea : UContentWidget {
+class UWindowTitleBarArea : UContentWidget {
 	char bWindowButtonsEnabled : 0; // 0x120 (1)
 	char bDoubleClickTogglesFullscreen : 0; // 0x121 (1)
 
@@ -1724,7 +1724,7 @@ struct UWindowTitleBarArea : UContentWidget {
 };
 
 // Class UMG.WindowTitleBarAreaSlot
-struct UWindowTitleBarAreaSlot : UPanelSlot {
+class UWindowTitleBarAreaSlot : UPanelSlot {
 	struct Unknown Padding; // 0x38 (16)
 	char HorizontalAlignment; // 0x48 (1)
 	char VerticalAlignment; // 0x49 (1)
@@ -1735,7 +1735,7 @@ struct UWindowTitleBarAreaSlot : UPanelSlot {
 };
 
 // Class UMG.WrapBox
-struct UWrapBox : UPanelWidget {
+class UWrapBox : UPanelWidget {
 	struct Unknown InnerSlotPadding; // 0x120 (8)
 	float WrapWidth; // 0x128 (4)
 	char bExplicitWrapWidth : 0; // 0x12C (1)
@@ -1747,7 +1747,7 @@ struct UWrapBox : UPanelWidget {
 };
 
 // Class UMG.WrapBoxSlot
-struct UWrapBoxSlot : UPanelSlot {
+class UWrapBoxSlot : UPanelSlot {
 	struct Unknown Padding; // 0x38 (16)
 	char bFillEmptySpace : 0; // 0x48 (1)
 	float FillSpanWhenLessThan; // 0x4C (4)
@@ -1759,5 +1759,138 @@ struct UWrapBoxSlot : UPanelSlot {
 	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.WrapBoxSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3397A50>
 	void SetFillSpanWhenLessThan(float InFillSpanWhenLessThan); // Function UMG.WrapBoxSlot.SetFillSpanWhenLessThan(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33977D0>
 	void SetFillEmptySpace(char InbFillEmptySpace); // Function UMG.WrapBoxSlot.SetFillEmptySpace(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3397740>
+};
+
+// ScriptStruct UMG.WidgetTransform
+struct FWidgetTransform {
+	struct Unknown Translation; // 0x0 (8)
+	struct Unknown Scale; // 0x8 (8)
+	struct Unknown Shear; // 0x10 (8)
+	float Angle; // 0x18 (4)
+};
+
+// ScriptStruct UMG.ShapedTextOptions
+struct FShapedTextOptions {
+	char bOverride_TextShapingMethod : 0; // 0x0 (1)
+	char bOverride_TextFlowDirection : 0; // 0x0 (1)
+	enum class Unknow TextShapingMethod; // 0x1 (1)
+	enum class Unknow TextFlowDirection; // 0x2 (1)
+};
+
+// ScriptStruct UMG.AnimationEventBinding
+struct FAnimationEventBinding {
+	struct Unknown Animation; // 0x0 (8)
+	struct FDelegate Delegate; // 0x8 (16)
+	enum class Unknow AnimationEvent; // 0x18 (1)
+	struct FName UserTag; // 0x1C (8)
+};
+
+// ScriptStruct UMG.NamedSlotBinding
+struct FNamedSlotBinding {
+	struct FName Name; // 0x0 (8)
+	struct Unknown Content; // 0x8 (8)
+};
+
+// ScriptStruct UMG.AnchorData
+struct FAnchorData {
+	struct Unknown Offsets; // 0x0 (16)
+	struct Unknown Anchors; // 0x10 (16)
+	struct Unknown Alignment; // 0x20 (8)
+};
+
+// ScriptStruct UMG.MovieScene2DTransformMask
+struct FMovieScene2DTransformMask {
+	uint32_t Mask; // 0x0 (4)
+};
+
+// ScriptStruct UMG.MovieScene2DTransformSectionTemplate
+struct FMovieScene2DTransformSectionTemplate : FMovieScenePropertySectionTemplate {
+	struct Unknown Translation[0x2]; // 0x48 (320)
+	struct Unknown Rotation; // 0x188 (160)
+	struct Unknown Scale[0x2]; // 0x228 (320)
+	struct Unknown Shear[0x2]; // 0x368 (320)
+	enum class Unknow BlendType; // 0x4A8 (1)
+	struct Unknown Mask; // 0x4AC (4)
+};
+
+// ScriptStruct UMG.MovieSceneMarginSectionTemplate
+struct FMovieSceneMarginSectionTemplate : FMovieScenePropertySectionTemplate {
+	struct Unknown TopCurve; // 0x48 (160)
+	struct Unknown LeftCurve; // 0xE8 (160)
+	struct Unknown RightCurve; // 0x188 (160)
+	struct Unknown BottomCurve; // 0x228 (160)
+	enum class Unknow BlendType; // 0x2C8 (1)
+};
+
+// ScriptStruct UMG.MovieSceneWidgetMaterialSectionTemplate
+struct FMovieSceneWidgetMaterialSectionTemplate : FMovieSceneParameterSectionTemplate {
+	struct TArray<Unknown> BrushPropertyNamePath; // 0x80 (16)
+};
+
+// ScriptStruct UMG.RichTextStyleRow
+struct FRichTextStyleRow : FTableRowBase {
+	struct Unknown TextStyle; // 0x8 (616)
+};
+
+// ScriptStruct UMG.RichImageRow
+struct FRichImageRow : FTableRowBase {
+	struct Unknown Brush; // 0x8 (136)
+};
+
+// ScriptStruct UMG.SlateMeshVertex
+struct FSlateMeshVertex {
+	struct Unknown Position; // 0x0 (8)
+	struct Unknown Color; // 0x8 (4)
+	struct Unknown UV0; // 0xC (8)
+	struct Unknown UV1; // 0x14 (8)
+	struct Unknown UV2; // 0x1C (8)
+	struct Unknown UV3; // 0x24 (8)
+	struct Unknown UV4; // 0x2C (8)
+	struct Unknown UV5; // 0x34 (8)
+};
+
+// ScriptStruct UMG.SlateChildSize
+struct FSlateChildSize {
+	float Value; // 0x0 (4)
+	char SizeRule; // 0x4 (1)
+};
+
+// ScriptStruct UMG.UserWidgetPool
+struct FUserWidgetPool {
+	struct TArray<Unknown> ActiveWidgets; // 0x0 (16)
+	struct TArray<Unknown> InactiveWidgets; // 0x10 (16)
+};
+
+// ScriptStruct UMG.WidgetAnimationBinding
+struct FWidgetAnimationBinding {
+	struct FName WidgetName; // 0x0 (8)
+	struct FName SlotWidgetName; // 0x8 (8)
+	struct Unknown AnimationGuid; // 0x10 (16)
+	char bIsRootWidget : 0; // 0x20 (1)
+};
+
+// ScriptStruct UMG.BlueprintWidgetAnimationDelegateBinding
+struct FBlueprintWidgetAnimationDelegateBinding {
+	enum class Unknow Action; // 0x0 (1)
+	struct FName AnimationToBind; // 0x4 (8)
+	struct FName FunctionNameToBind; // 0xC (8)
+	struct FName UserTag; // 0x14 (8)
+};
+
+// ScriptStruct UMG.DelegateRuntimeBinding
+struct FDelegateRuntimeBinding {
+	struct FString ObjectName; // 0x0 (16)
+	struct FName PropertyName; // 0x10 (8)
+	struct FName FunctionName; // 0x18 (8)
+	struct Unknown SourcePath; // 0x20 (40)
+	enum class Unknow Kind; // 0x48 (1)
+};
+
+// ScriptStruct UMG.WidgetNavigationData
+struct FWidgetNavigationData {
+	enum class Unknow Rule; // 0x0 (1)
+	struct FName WidgetToFocus; // 0x4 (8)
+	struct TWeakObjectPtr<struct Unknown> Widget; // 0xC (8)
+	struct FDelegate CustomDelegate; // 0x14 (16)
 };
 

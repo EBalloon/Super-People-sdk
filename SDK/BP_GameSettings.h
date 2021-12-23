@@ -1,5 +1,5 @@
 // BlueprintGeneratedClass BP_GameSettings.BP_GameSettings_C
-struct UBP_GameSettings_C : UBravoHotelLocalSavedSettings {
+class UBP_GameSettings_C : UBravoHotelLocalSavedSettings {
 	float Look; // 0x120 (4)
 	float Look; // 0x124 (4)
 	char Look : 0; // 0x128 (1)
@@ -69,7 +69,7 @@ struct UBP_GameSettings_C : UBravoHotelLocalSavedSettings {
 	char Smooth : 0; // 0x28C (1)
 
 	void SetAutoReloadSetting(char Value, char Apply, char& Result); // Function BP_GameSettings.BP_GameSettings_C.SetAutoReloadSetting(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
-	void GetAutoReloadSetting(char& a); // Function BP_GameSettings.BP_GameSettings_C.GetAutoReloadSetting(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void GetAutoReloadSetting(char& autoReload); // Function BP_GameSettings.BP_GameSettings_C.GetAutoReloadSetting(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void ModifyAutoReloadSetting(char Modify); // Function BP_GameSettings.BP_GameSettings_C.ModifyAutoReloadSetting(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void Get(char& Value); // Function BP_GameSettings.BP_GameSettings_C.Get(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void Set(char Value, char Apply, char& Result); // Function BP_GameSettings.BP_GameSettings_C.Set(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>

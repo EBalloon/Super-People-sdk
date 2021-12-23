@@ -1,10 +1,10 @@
 // WidgetBlueprintGeneratedClass GamePlayWidget.GamePlayWidget_C
-struct UGamePlayWidget_C : UBravoHotelSettingSubWidget {
+class UGamePlayWidget_C : UBravoHotelSettingSubWidget {
 	struct Unknown UberGraphFrame; // 0x298 (8)
 	struct Unknown AmmoEffect; // 0x2A0 (8)
 	struct Unknown AR; // 0x2A8 (8)
 	struct Unknown AutoLadder; // 0x2B0 (8)
-	struct Unknown a; // 0x2B8 (8)
+	struct Unknown autoReload; // 0x2B8 (8)
 	struct Unknown AutoUseMedicalLv1; // 0x2C0 (8)
 	struct Unknown AutoUseMedicalLv2; // 0x2C8 (8)
 	struct Unknown AutoUseMedicalLv3; // 0x2D0 (8)
@@ -44,12 +44,12 @@ struct UGamePlayWidget_C : UBravoHotelSettingSubWidget {
 	struct Unknown UseItem7; // 0x3E0 (8)
 	struct Unknown UseItem8; // 0x3E8 (8)
 	struct Unknown VerticalBox_154; // 0x3F0 (8)
-	struct Unknown a; // 0x3F8 (8)
-	struct Unknown a; // 0x400 (8)
-	struct Unknown a; // 0x408 (8)
+	struct Unknown m; // 0x3F8 (8)
+	struct Unknown m; // 0x400 (8)
+	struct Unknown m; // 0x408 (8)
 	struct Unknown ScrollBarTimer; // 0x410 (8)
 
-	void a_1(enum class Unknow Type); // Function GamePlayWidget.GamePlayWidget_C.a_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void m_1(enum class Unknow Type); // Function GamePlayWidget.GamePlayWidget_C.m_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void DelegateChangeValue_Event_1(struct Unknown Value); // Function GamePlayWidget.GamePlayWidget_C.DelegateChangeValue_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void Construct(); // Function GamePlayWidget.GamePlayWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
 	void BndEvt__ScrollBox_54_K2Node_ComponentBoundEvent_0_OnUserScrolledEvent__DelegateSignature(float CurrentOffset); // Function GamePlayWidget.GamePlayWidget_C.BndEvt__ScrollBox_54_K2Node_ComponentBoundEvent_0_OnUserScrolledEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
