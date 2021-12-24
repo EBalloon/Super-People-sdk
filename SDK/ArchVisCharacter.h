@@ -1,5 +1,8 @@
 // Class ArchVisCharacter.ArchVisCharacter
-class AArchVisCharacter : ACharacter {
+class AArchVisCharacter : public ACharacter {
+
+public:
+
 	struct FString LookUpAxisName; // 0x5D8 (16)
 	struct FString LookUpAtRateAxisName; // 0x5E8 (16)
 	struct FString TurnAxisName; // 0x5F8 (16)
@@ -11,7 +14,10 @@ class AArchVisCharacter : ACharacter {
 };
 
 // Class ArchVisCharacter.ArchVisCharMovementComponent
-class UArchVisCharMovementComponent : UCharacterMovementComponent {
+class UArchVisCharMovementComponent : public UCharacterMovementComponent {
+
+public:
+
 	struct Unknown RotationalAcceleration; // 0x6E8 (12)
 	struct Unknown RotationalDeceleration; // 0x6F4 (12)
 	struct Unknown MaxRotationalVelocity; // 0x700 (12)

@@ -1,10 +1,16 @@
-// Class GeometryCollectionTracks.MovieSceneGeometryCollectionSec
-class UMovieSceneGeometryCollectionSec : UMovieSceneSection {
+// Class GeometryCollectionTracks.MovieSceneGeometryCollectionSection
+class UMovieSceneGeometryCollectionSection : public UMovieSceneSection {
+
+public:
+
 	struct Unknown Params; // 0xE0 (48)
 };
 
 // Class GeometryCollectionTracks.MovieSceneGeometryCollectionTrack
-class UMovieSceneGeometryCollectionTrack : UMovieSceneNameableTrack {
+class UMovieSceneGeometryCollectionTrack : public UMovieSceneNameableTrack {
+
+public:
+
 	struct TArray<Unknown> AnimationSections; // 0x58 (16)
 };
 
@@ -16,13 +22,13 @@ struct FMovieSceneGeometryCollectionParams {
 	float PlayRate; // 0x28 (4)
 };
 
-// ScriptStruct GeometryCollectionTracks.MovieSceneGeometryCollectionSec
-struct FMovieSceneGeometryCollectionSec : FMovieSceneEvalTemplate {
+// ScriptStruct GeometryCollectionTracks.MovieSceneGeometryCollectionSectionTemplate
+struct FMovieSceneGeometryCollectionSectionTemplate : FMovieSceneEvalTemplate {
 	struct Unknown Params; // 0x20 (56)
 };
 
-// ScriptStruct GeometryCollectionTracks.MovieSceneGeometryCollectionSec
-struct FMovieSceneGeometryCollectionSec : FMovieSceneGeometryCollectionParams {
+// ScriptStruct GeometryCollectionTracks.MovieSceneGeometryCollectionSectionTemplateParameters
+struct FMovieSceneGeometryCollectionSectionTemplateParameters : FMovieSceneGeometryCollectionParams {
 	struct Unknown SectionStartTime; // 0x30 (4)
 	struct Unknown SectionEndTime; // 0x34 (4)
 };

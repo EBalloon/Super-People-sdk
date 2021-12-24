@@ -1,16 +1,22 @@
 // Class AnimationSharing.AnimSharingStateInstance
-class UAnimSharingStateInstance : UAnimInstance {
+class UAnimSharingStateInstance : public UAnimInstance {
+
+public:
+
 	struct Unknown AnimationToPlay; // 0x268 (8)
 	float PermutationTimeOffset; // 0x270 (4)
 	float PlayRate; // 0x274 (4)
 	char bStateBool : 0; // 0x278 (1)
 	struct Unknown Instance; // 0x280 (8)
 
-	void GetInstancedActors(struct TArray<Unknown>& Actors); // Function AnimationSharing.AnimSharingStateInstance.GetInstancedActors(Final|Native|Protected|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A6090>
+	void GetInstancedActors(struct TArray<Unknown>& Actors); // Function AnimationSharing.AnimSharingStateInstance.GetInstancedActors(Final|Native|Protected|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A7500>
 };
 
 // Class AnimationSharing.AnimSharingTransitionInstance
-class UAnimSharingTransitionInstance : UAnimInstance {
+class UAnimSharingTransitionInstance : public UAnimInstance {
+
+public:
+
 	struct TWeakObjectPtr<struct Unknown> FromComponent; // 0x268 (8)
 	struct TWeakObjectPtr<struct Unknown> ToComponent; // 0x270 (8)
 	float BlendTime; // 0x278 (4)
@@ -18,7 +24,10 @@ class UAnimSharingTransitionInstance : UAnimInstance {
 };
 
 // Class AnimationSharing.AnimSharingAdditiveInstance
-class UAnimSharingAdditiveInstance : UAnimInstance {
+class UAnimSharingAdditiveInstance : public UAnimInstance {
+
+public:
+
 	struct TWeakObjectPtr<struct Unknown> baseComponent; // 0x268 (8)
 	struct TWeakObjectPtr<struct Unknown> AdditiveAnimation; // 0x270 (8)
 	float ALPHA; // 0x278 (4)
@@ -26,7 +35,10 @@ class UAnimSharingAdditiveInstance : UAnimInstance {
 };
 
 // Class AnimationSharing.AnimSharingInstance
-class UAnimSharingInstance : Object {
+class UAnimSharingInstance : public Object {
+
+public:
+
 	struct TArray<Unknown> RegisteredActors; // 0x28 (16)
 	struct Unknown StateProcessor; // 0xA8 (8)
 	struct TArray<Unknown> UsedAnimationSequences; // 0xE8 (16)
@@ -35,28 +47,37 @@ class UAnimSharingInstance : Object {
 };
 
 // Class AnimationSharing.AnimationSharingManager
-class UAnimationSharingManager : Object {
+class UAnimationSharingManager : public Object {
+
+public:
+
 	struct TArray<Unknown> Skeletons; // 0x28 (16)
 	struct TArray<Unknown> PerSkeletonData; // 0x38 (16)
 
-	void RegisterActorWithSkeletonBP(struct Unknown InActor, struct Unknown SharingSkeleton); // Function AnimationSharing.AnimationSharingManager.RegisterActorWithSkeletonBP(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A62F0>
-	struct Unknown GetAnimationSharingManager(struct Unknown WorldContextObject); // Function AnimationSharing.AnimationSharingManager.GetAnimationSharingManager(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A5FE0>
-	char CreateAnimationSharingManager(struct Unknown WorldContextObject, struct Unknown Setup); // Function AnimationSharing.AnimationSharingManager.CreateAnimationSharingManager(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A5F20>
-	char AnimationSharingEnabled(); // Function AnimationSharing.AnimationSharingManager.AnimationSharingEnabled(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A5EF0>
+	void RegisterActorWithSkeletonBP(struct Unknown InActor, struct Unknown SharingSkeleton); // Function AnimationSharing.AnimationSharingManager.RegisterActorWithSkeletonBP(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A7760>
+	struct Unknown GetAnimationSharingManager(struct Unknown WorldContextObject); // Function AnimationSharing.AnimationSharingManager.GetAnimationSharingManager(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A7450>
+	char CreateAnimationSharingManager(struct Unknown WorldContextObject, struct Unknown Setup); // Function AnimationSharing.AnimationSharingManager.CreateAnimationSharingManager(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A7390>
+	char AnimationSharingEnabled(); // Function AnimationSharing.AnimationSharingManager.AnimationSharingEnabled(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A7360>
 };
 
 // Class AnimationSharing.AnimationSharingSetup
-class UAnimationSharingSetup : Object {
+class UAnimationSharingSetup : public Object {
+
+public:
+
 	struct TArray<Unknown> SkeletonSetups; // 0x28 (16)
 	struct Unknown ScalabilitySettings; // 0x38 (16)
 };
 
 // Class AnimationSharing.AnimationSharingStateProcessor
-class UAnimationSharingStateProcessor : Object {
-	struct TSoftObjectPtr<Unknown> AnimationStateEnum; // 0x28 (40)
+class UAnimationSharingStateProcessor : public Object {
 
-	void ProcessActorState(int32_t& OutState, struct Unknown InActor, char CurrentState, char OnDemandState, char& bShouldProcess); // Function AnimationSharing.AnimationSharingStateProcessor.ProcessActorState(Native|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A6140>
-	struct Unknown GetAnimationStateEnum(); // Function AnimationSharing.AnimationSharingStateProcessor.GetAnimationStateEnum(Native|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A6060>
+public:
+
+	struct Unknown AnimationStateEnum; // 0x28 (40)
+
+	void ProcessActorState(int32_t& OutState, struct Unknown InActor, char CurrentState, char OnDemandState, char& bShouldProcess); // Function AnimationSharing.AnimationSharingStateProcessor.ProcessActorState(Native|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A75B0>
+	struct Unknown GetAnimationStateEnum(); // Function AnimationSharing.AnimationSharingStateProcessor.GetAnimationStateEnum(Native|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A74D0>
 };
 
 // ScriptStruct AnimationSharing.AnimationSharingScalability

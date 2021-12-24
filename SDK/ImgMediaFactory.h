@@ -1,5 +1,8 @@
 // Class ImgMediaFactory.ImgMediaSettings
-class UImgMediaSettings : Object {
+class UImgMediaSettings : public Object {
+
+public:
+
 	struct Unknown DefaultFrameRate; // 0x28 (8)
 	float CacheBehindPercentage; // 0x30 (4)
 	float CacheSizeGB; // 0x34 (4)

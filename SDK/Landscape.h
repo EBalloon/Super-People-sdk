@@ -1,129 +1,138 @@
 // Enum Landscape.ELandscapeBlendMode
-enum class ELandscapeBlendMode : uint8 {
-	LSBM_AdditiveBlend = 0
-	LSBM_AlphaBlend = 1
-	LSBM_MAX = 2
+enum class ELandscapeBlendMode : uint8_t {
+	LSBM_AdditiveBlend = 0,
+	LSBM_AlphaBlend = 1,
+	LSBM_MAX = 2,
 };
 
 // Enum Landscape.ELandscapeSetupErrors
-enum class ELandscapeSetupErrors : uint8 {
-	LSE_None = 0
-	LSE_NoLandscapeInfo = 1
-	LSE_CollsionXY = 2
-	LSE_NoLayerInfo = 3
-	LSE_MAX = 4
+enum class ELandscapeSetupErrors : uint8_t {
+	LSE_None = 0,
+	LSE_NoLandscapeInfo = 1,
+	LSE_CollsionXY = 2,
+	LSE_NoLayerInfo = 3,
+	LSE_MAX = 4,
 };
 
 // Enum Landscape.ELandscapeClearMode
-enum class ELandscapeClearMode : uint8 {
-	Clear_Weightmap = 1
-	Clear_Heightmap = 2
-	Clear_All = 3
-	Clear_MAX = 4
+enum class ELandscapeClearMode : uint8_t {
+	Clear_Weightmap = 1,
+	Clear_Heightmap = 2,
+	Clear_All = 3,
+	Clear_MAX = 4,
 };
 
 // Enum Landscape.ELandscapeGizmoType
-enum class ELandscapeGizmoType : uint8 {
-	LGT_None = 0
-	LGT_Height = 1
-	LGT_Weight = 2
-	LGT_MAX = 3
+enum class ELandscapeGizmoType : uint8_t {
+	LGT_None = 0,
+	LGT_Height = 1,
+	LGT_Weight = 2,
+	LGT_MAX = 3,
 };
 
 // Enum Landscape.EGrassScaling
-enum class EGrassScaling : uint8 {
-	EGrassScaling = 0
-	EGrassScaling = 1
-	EGrassScaling = 2
-	EGrassScaling = 3
+enum class EGrassScaling : uint8_t {
+	EGrassScaling = 0,
+	EGrassScaling = 1,
+	EGrassScaling = 2,
+	EGrassScaling = 3,
 };
 
 // Enum Landscape.ESplineModulationColorMask
-enum class ESplineModulationColorMask : uint8 {
-	ESplineModulationColorMask = 0
-	ESplineModulationColorMask = 1
-	ESplineModulationColorMask = 2
-	ESplineModulationColorMask = 3
-	ESplineModulationColorMask = 4
+enum class ESplineModulationColorMask : uint8_t {
+	ESplineModulationColorMask = 0,
+	ESplineModulationColorMaskity = 1,
+	ESplineModulationColorMask = 2,
+	ESplineModulationColorMask = 3,
+	ESplineModulationColorMask = 4,
 };
 
 // Enum Landscape.ELandscapeLODFalloff
-enum class ELandscapeLODFalloff : uint8 {
-	ELandscapeLODFalloff = 0
-	ELandscapeLODFalloff = 1
-	ELandscapeLODFalloff = 2
+enum class ELandscapeLODFalloff : uint8_t {
+	ELandscapeLODFalloff = 0,
+	ELandscapeLODFalloff = 1,
+	ELandscapeLODFalloff = 2,
 };
 
 // Enum Landscape.ELandscapeLayerDisplayMode
-enum class ELandscapeLayerDisplayMode : uint8 {
-	ELandscapeLayerDisplayMode = 0
-	ELandscapeLayerDisplayMode = 1
-	ELandscapeLayerDisplayMode = 2
-	ELandscapeLayerDisplayMode = 3
+enum class ELandscapeLayerDisplayMode : uint8_t {
+	ELandscapeLayerDisplayMode = 0,
+	ELandscapeLayerDisplayMode = 1,
+	ELandscapeLayerDisplayMode = 2,
+	ELandscapeLayerDisplayMode = 3,
 };
 
 // Enum Landscape.ELandscapeLayerPaintingRestriction
-enum class ELandscapeLayerPaintingRestriction : uint8 {
-	ELandscapeLayerPaintingRestriction = 0
-	ELandscapeLayerPaintingRestriction = 1
-	ELandscapeLayerPaintingRestriction = 2
-	ELandscapeLayerPaintingRestriction = 3
-	ELandscapeLayerPaintingRestriction = 4
+enum class ELandscapeLayerPaintingRestriction : uint8_t {
+	ELandscapeLayerPaintingRestriction = 0,
+	ELandscapeLayerPaintingRestriction = 1,
+	ELandscapeLayerPaintingRestriction = 2,
+	ELandscapeLayerPaintingRestriction = 3,
+	ELandscapeLayerPaintingRestriction = 4,
 };
 
 // Enum Landscape.ELandscapeImportAlphamapType
-enum class ELandscapeImportAlphamapType : uint8 {
-	ELandscapeImportAlphamapType = 0
-	ELandscapeImportAlphamapType = 1
-	ELandscapeImportAlphamapType = 2
+enum class ELandscapeImportAlphamapType : uint8_t {
+	ELandscapeImportAlphamapType = 0,
+	ELandscapeImportAlphamapType = 1,
+	ELandscapeImportAlphamapType = 2,
 };
 
 // Enum Landscape.LandscapeSplineMeshOrientation
-enum class LandscapeSplineMeshOrientation : uint8 {
-	LSMO_XUp = 0
-	LSMO_YUp = 1
-	LSMO_MAX = 2
+enum class LandscapeSplineMeshOrientation : uint8_t {
+	LSMO_XUp = 0,
+	LSMO_YUp = 1,
+	LSMO_MAX = 2,
 };
 
 // Enum Landscape.ELandscapeLayerBlendType
-enum class ELandscapeLayerBlendType : uint8 {
-	LB_WeightBlend = 0
-	LB_AlphaBlend = 1
-	LB_HeightBlend = 2
-	LB_MAX = 3
+enum class ELandscapeLayerBlendType : uint8_t {
+	LB_WeightBlend = 0,
+	LB_AlphaBlend = 1,
+	LB_HeightBlend = 2,
+	LB_MAX = 3,
 };
 
 // Enum Landscape.ELandscapeCustomizedCoordType
-enum class ELandscapeCustomizedCoordType : uint8 {
-	LCCT_None = 0
-	LCCT_CustomUV0 = 1
-	LCCT_CustomUV1 = 2
-	LCCT_CustomUV2 = 3
-	LCCT_WeightMapUV = 4
-	LCCT_MAX = 5
+enum class ELandscapeCustomizedCoordType : uint8_t {
+	LCCT_None = 0,
+	LCCT_CustomUV0 = 1,
+	LCCT_CustomUV1 = 2,
+	LCCT_CustomUV2 = 3,
+	LCCT_WeightMapUV = 4,
+	LCCT_MAX = 5,
 };
 
 // Enum Landscape.ETerrainCoordMappingType
-enum class ETerrainCoordMappingType : uint8 {
-	TCMT_Auto = 0
-	TCMT_XY = 1
-	TCMT_XZ = 2
-	TCMT_YZ = 3
-	TCMT_MAX = 4
+enum class ETerrainCoordMappingType : uint8_t {
+	TCMT_Auto = 0,
+	TCMT_XY = 1,
+	TCMT_XZ = 2,
+	TCMT_YZ = 3,
+	TCMT_MAX = 4,
 };
 
 // Class Landscape.ControlPointMeshActor
-class AControlPointMeshActor : UActor {
+class AControlPointMeshActor : public UActor {
+
+public:
+
 	struct Unknown ControlPointMeshComponent; // 0x310 (8)
 };
 
 // Class Landscape.ControlPointMeshComponent
-class UControlPointMeshComponent : UStaticMeshComponent {
+class UControlPointMeshComponent : public UStaticMeshComponent {
+
+public:
+
 	float VirtualTextureMainPassMaxDrawDistance; // 0x550 (4)
 };
 
 // Class Landscape.LandscapeProxy
-class ALandscapeProxy : UActor {
+class ALandscapeProxy : public UActor {
+
+public:
+
 	struct Unknown SplineComponent; // 0x310 (8)
 	struct Unknown LandscapeGuid; // 0x318 (16)
 	struct Unknown LandscapeSectionOffset; // 0x338 (8)
@@ -182,22 +191,25 @@ class ALandscapeProxy : UActor {
 	enum class Unknow NavigationGeometryGatheringMode; // 0x66D (1)
 	char bUseLandscapeForCullingInvisibleHLODVertices : 0; // 0x66E (1)
 	char bHasLayersContent : 0; // 0x66F (1)
-	struct TMap<Unknown, Unknown>Unknown WeightmapUsageMap; // 0x670 (80)
+	struct TMap<Unknown, Unknown> WeightmapUsageMap; // 0x670 (80)
 
-	void SetLandscapeMaterialVectorParameterValue(struct FName ParameterName, struct Unknown Value); // Function Landscape.LandscapeProxy.SetLandscapeMaterialVectorParameterValue(Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x315C870>
-	void SetLandscapeMaterialTextureParameterValue(struct FName ParameterName, struct Unknown Value); // Function Landscape.LandscapeProxy.SetLandscapeMaterialTextureParameterValue(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x315C7B0>
-	void SetLandscapeMaterialScalarParameterValue(struct FName ParameterName, float Value); // Function Landscape.LandscapeProxy.SetLandscapeMaterialScalarParameterValue(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x315C6E0>
-	void EditorSetLandscapeMaterial(struct Unknown NewLandscapeMaterial); // Function Landscape.LandscapeProxy.EditorSetLandscapeMaterial(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16B4710>
-	void EditorApplySpline(struct Unknown InSplineComponent, float StartWidth, float EndWidth, float StartSideFalloff, float EndSideFalloff, float StartRoll, float EndRoll, int32_t NumSubdivisions, char bRaiseHeights, char bLowerHeights, struct Unknown PaintLayer); // Function Landscape.LandscapeProxy.EditorApplySpline(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x315C3A0>
-	void ChangeUseTessellationComponentScreenSizeFalloff(char InComponentScreenSizeToUseSubSections); // Function Landscape.LandscapeProxy.ChangeUseTessellationComponentScreenSizeFalloff(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x315C310>
-	void ChangeTessellationComponentScreenSizeFalloff(float InUseTessellationComponentScreenSizeFalloff); // Function Landscape.LandscapeProxy.ChangeTessellationComponentScreenSizeFalloff(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F1C190>
-	void ChangeTessellationComponentScreenSize(float InTessellationComponentScreenSize); // Function Landscape.LandscapeProxy.ChangeTessellationComponentScreenSize(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x315C290>
-	void ChangeLODDistanceFactor(float InLODDistanceFactor); // Function Landscape.LandscapeProxy.ChangeLODDistanceFactor(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x315C210>
-	void ChangeComponentScreenSizeToUseSubSections(float InComponentScreenSizeToUseSubSections); // Function Landscape.LandscapeProxy.ChangeComponentScreenSizeToUseSubSections(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F1C0F0>
+	void SetLandscapeMaterialVectorParam(struct FName ParameterName, struct Unknown Value); // Function Landscape.LandscapeProxy.SetLandscapeMaterialVectorParam(Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x315DB80>
+	void SetLandscapeMaterialTexture(struct FName ParameterName, struct Unknown Value); // Function Landscape.LandscapeProxy.SetLandscapeMaterialTexture(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x315DAC0>
+	void SetLandscapeMaterialScalarParam(struct FName ParameterName, float Value); // Function Landscape.LandscapeProxy.SetLandscapeMaterialScalarParam(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x315D9F0>
+	void EditorSetLandscapeMaterial(struct Unknown NewLandscapeMaterial); // Function Landscape.LandscapeProxy.EditorSetLandscapeMaterial(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16B5B80>
+	void EditorApplySpline(struct Unknown InSplineComponent, float StartWidth, float EndWidth, float StartSideFalloff, float EndSideFalloff, float StartRoll, float EndRoll, int32_t NumSubdivisions, char bRaiseHeights, char bLowerHeights, struct Unknown PaintLayer); // Function Landscape.LandscapeProxy.EditorApplySpline(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x315D6B0>
+	void ChangeUseTessellationComponentScreenSizeFalloff(char InComponentScreenSizeToUseSubSections); // Function Landscape.LandscapeProxy.ChangeUseTessellationComponentScreenSizeFalloff(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x315D620>
+	void ChangeTessellationComponentScreenSizeFalloff(float InUseTessellationComponentScreenSizeFalloff); // Function Landscape.LandscapeProxy.ChangeTessellationComponentScreenSizeFalloff(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F1D3E0>
+	void ChangeTessellationComponentScreenSize(float InTessellationComponentScreenSize); // Function Landscape.LandscapeProxy.ChangeTessellationComponentScreenSize(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x315D5A0>
+	void ChangeLODDistanceFactor(float InLODDistanceFactor); // Function Landscape.LandscapeProxy.ChangeLODDistanceFactor(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x315D520>
+	void ChangeComponentScreenSizeToUseSubSections(float InComponentScreenSizeToUseSubSections); // Function Landscape.LandscapeProxy.ChangeComponentScreenSizeToUseSubSections(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F1D340>
 };
 
 // Class Landscape.LandscapeComponent
-class ULandscapeComponent : UPrimitiveComponent {
+class ULandscapeComponent : public UPrimitiveComponent {
+
+public:
+
 	int32_t SectionBaseX; // 0x4B8 (4)
 	int32_t SectionBaseY; // 0x4BC (4)
 	int32_t ComponentSizeQuads; // 0x4C0 (4)
@@ -209,13 +221,13 @@ class ULandscapeComponent : UPrimitiveComponent {
 	struct TArray<Unknown> MaterialInstances; // 0x4F0 (16)
 	struct TArray<Unknown> MaterialInstancesDynamic; // 0x500 (16)
 	struct TArray<Unknown> LODIndexToMaterialIndex; // 0x510 (16)
-	struct TArray<Unknown> MaterialIndexToDisabledTessellationMaterial; // 0x520 (16)
+	struct TArray<Unknown> MaterialIndexToDisabledTessellation; // 0x520 (16)
 	struct Unknown XYOffsetmapTexture; // 0x530 (8)
 	struct Unknown WeightmapScaleBias; // 0x540 (16)
 	float WeightmapSubsectionOffset; // 0x550 (4)
 	struct Unknown HeightmapScaleBias; // 0x560 (16)
 	struct Unknown CachedLocalBox; // 0x570 (28)
-	Unknown CollisionComponent; // 0x58C (28)
+	LazyObjectProperty CollisionComponent; // 0x58C (28)
 	struct Unknown HeightmapTexture; // 0x5A8 (8)
 	struct TArray<Unknown> WeightmapLayerAllocations; // 0x5B0 (16)
 	struct TArray<Unknown> WeightmapTextures; // 0x5C0 (16)
@@ -236,13 +248,16 @@ class ULandscapeComponent : UPrimitiveComponent {
 	struct TArray<Unknown> MobileMaterialInterfaces; // 0x648 (16)
 	struct TArray<Unknown> MobileWeightmapTextures; // 0x658 (16)
 
-	struct Unknown GetMaterialInstanceDynamic(int32_t InIndex); // Function Landscape.LandscapeComponent.GetMaterialInstanceDynamic(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3159DA0>
-	float EditorGetPaintLayerWeightByNameAtLocation(struct Unknown& InLocation, struct FName InPaintLayerName); // Function Landscape.LandscapeComponent.EditorGetPaintLayerWeightByNameAtLocation(Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3159CC0>
-	float EditorGetPaintLayerWeightAtLocation(struct Unknown& InLocation, struct Unknown PaintLayer); // Function Landscape.LandscapeComponent.EditorGetPaintLayerWeightAtLocation(Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3159CC0>
+	struct Unknown GetMaterialInstanceDynamic(int32_t InIndex); // Function Landscape.LandscapeComponent.GetMaterialInstanceDynamic(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x315B0B0>
+	float EditorGetPaintLayerWeightByNameAtLocation(struct Unknown& InLocation, struct FName InPaintLayerName); // Function Landscape.LandscapeComponent.EditorGetPaintLayerWeightByNameAtLocation(Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x315AFD0>
+	float EditorGetPaintLayerWeightAtLocation(struct Unknown& InLocation, struct Unknown PaintLayer); // Function Landscape.LandscapeComponent.EditorGetPaintLayerWeightAtLocation(Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x315AFD0>
 };
 
 // Class Landscape.LandscapeGrassType
-class ULandscapeGrassType : Object {
+class ULandscapeGrassType : public Object {
+
+public:
+
 	struct TArray<Unknown> GrassVarieties; // 0x28 (16)
 	char bEnableDensityScaling : 0; // 0x38 (1)
 	struct Unknown GrassMesh; // 0x40 (8)
@@ -255,7 +270,10 @@ class ULandscapeGrassType : Object {
 };
 
 // Class Landscape.LandscapeHeightfieldCollisionComponent
-class ULandscapeHeightfieldCollisionComponent : UPrimitiveComponent {
+class ULandscapeHeightfieldCollisionComponent : public UPrimitiveComponent {
+
+public:
+
 	struct TArray<Unknown> ComponentLayerInfos; // 0x4B8 (16)
 	int32_t SectionBaseX; // 0x4C8 (4)
 	int32_t SectionBaseY; // 0x4CC (4)
@@ -265,15 +283,18 @@ class ULandscapeHeightfieldCollisionComponent : UPrimitiveComponent {
 	struct TArray<Unknown> CollisionQuadFlags; // 0x4E0 (16)
 	struct Unknown HeightfieldGuid; // 0x4F0 (16)
 	struct Unknown CachedLocalBox; // 0x500 (28)
-	Unknown RenderComponent; // 0x51C (28)
+	LazyObjectProperty RenderComponent; // 0x51C (28)
 	struct TArray<Unknown> CookedPhysicalMaterials; // 0x548 (16)
 
-	struct Unknown GetRenderComponent(); // Function Landscape.LandscapeHeightfieldCollisionComponent.GetRenderComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x315C6B0>
+	struct Unknown GetRenderComponent(); // Function Landscape.LandscapeHeightfieldCollisionComponent.GetRenderComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x315D9C0>
 };
 
 // Class Landscape.LandscapeInfo
-class ULandscapeInfo : Object {
-	Unknown LandscapeActor; // 0x28 (28)
+class ULandscapeInfo : public Object {
+
+public:
+
+	LazyObjectProperty LandscapeActor; // 0x28 (28)
 	struct Unknown LandscapeGuid; // 0x44 (16)
 	int32_t ComponentSizeQuads; // 0x54 (4)
 	int32_t SubsectionSizeQuads; // 0x58 (4)
@@ -283,7 +304,10 @@ class ULandscapeInfo : Object {
 };
 
 // Class Landscape.LandscapeLayerInfoObject
-class ULandscapeLayerInfoObject : Object {
+class ULandscapeLayerInfoObject : public Object {
+
+public:
+
 	struct FName LayerName; // 0x28 (8)
 	struct Unknown PhysMaterial; // 0x30 (8)
 	float Hardness; // 0x38 (4)
@@ -291,7 +315,10 @@ class ULandscapeLayerInfoObject : Object {
 };
 
 // Class Landscape.LandscapeMaterialInstanceConstant
-class ULandscapeMaterialInstanceConstant : UMaterialInstanceConstant {
+class ULandscapeMaterialInstanceConstant : public UMaterialInstanceConstant {
+
+public:
+
 	struct TArray<Unknown> TextureStreamingInfo; // 0x410 (16)
 	char bIsLayerThumbnail : 0; // 0x420 (1)
 	char bDisableTessellation : 0; // 0x420 (1)
@@ -300,38 +327,56 @@ class ULandscapeMaterialInstanceConstant : UMaterialInstanceConstant {
 };
 
 // Class Landscape.LandscapeMeshCollisionComponent
-class ULandscapeMeshCollisionComponent : ULandscapeHeightfieldCollisionComponent {
+class ULandscapeMeshCollisionComponent : public ULandscapeHeightfieldCollisionComponent {
+
+public:
+
 	struct Unknown MeshGuid; // 0x598 (16)
 };
 
 // Class Landscape.LandscapeMeshProxyActor
-class ALandscapeMeshProxyActor : UActor {
+class ALandscapeMeshProxyActor : public UActor {
+
+public:
+
 	struct Unknown LandscapeMeshProxyComponent; // 0x310 (8)
 };
 
 // Class Landscape.LandscapeMeshProxyComponent
-class ULandscapeMeshProxyComponent : UStaticMeshComponent {
+class ULandscapeMeshProxyComponent : public UStaticMeshComponent {
+
+public:
+
 	struct Unknown LandscapeGuid; // 0x550 (16)
 	struct TArray<Unknown> ProxyComponentBases; // 0x560 (16)
 	int8_t ProxyLOD; // 0x570 (1)
 };
 
 // Class Landscape.LandscapeSettings
-class ULandscapeSettings : UDeveloperSettings {
+class ULandscapeSettings : public UDeveloperSettings {
+
+public:
+
 	int32_t MaxNumberOfLayers; // 0x38 (4)
 };
 
 // Class Landscape.LandscapeSplinesComponent
-class ULandscapeSplinesComponent : UPrimitiveComponent {
+class ULandscapeSplinesComponent : public UPrimitiveComponent {
+
+public:
+
 	struct TArray<Unknown> ControlPoints; // 0x4B8 (16)
 	struct TArray<Unknown> Segments; // 0x4C8 (16)
 	struct TArray<Unknown> CookedForeignMeshComponents; // 0x4D8 (16)
 
-	struct TArray<Unknown> GetSplineMeshComponents(); // Function Landscape.LandscapeSplinesComponent.GetSplineMeshComponents(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x315F8A0>
+	struct TArray<Unknown> GetSplineMeshComponents(); // Function Landscape.LandscapeSplinesComponent.GetSplineMeshComponents(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3160BB0>
 };
 
 // Class Landscape.LandscapeSplineControlPoint
-class ULandscapeSplineControlPoint : Object {
+class ULandscapeSplineControlPoint : public Object {
+
+public:
+
 	struct Unknown Location; // 0x28 (12)
 	struct Unknown Rotation; // 0x34 (12)
 	float Width; // 0x40 (4)
@@ -349,7 +394,10 @@ class ULandscapeSplineControlPoint : Object {
 };
 
 // Class Landscape.LandscapeSplineSegment
-class ULandscapeSplineSegment : Object {
+class ULandscapeSplineSegment : public Object {
+
+public:
+
 	struct Unknown Connections[0x2]; // 0x28 (48)
 	struct Unknown SplineInfo; // 0x58 (24)
 	struct TArray<Unknown> Points; // 0x70 (16)
@@ -358,29 +406,44 @@ class ULandscapeSplineSegment : Object {
 };
 
 // Class Landscape.LandscapeStreamingProxy
-class ALandscapeStreamingProxy : ALandscapeProxy {
-	Unknown LandscapeActor; // 0x6C0 (28)
+class ALandscapeStreamingProxy : public ALandscapeProxy {
+
+public:
+
+	LazyObjectProperty LandscapeActor; // 0x6C0 (28)
 };
 
 // Class Landscape.LandscapeWeightmapUsage
-class ULandscapeWeightmapUsage : Object {
+class ULandscapeWeightmapUsage : public Object {
+
+public:
+
 	struct Unknown ChannelUsage[0x4]; // 0x28 (32)
 	struct Unknown LayerGuid; // 0x48 (16)
 };
 
 // Class Landscape.MaterialExpressionLandscapeGrassOutput
-class UMaterialExpressionLandscapeGrassOutput : UMaterialExpressionCustomOutput {
+class UMaterialExpressionLandscapeGrassOutput : public UMaterialExpressionCustomOutput {
+
+public:
+
 	struct TArray<Unknown> GrassTypes; // 0x40 (16)
 };
 
 // Class Landscape.MaterialExpressionLandscapeLayerBlend
-class UMaterialExpressionLandscapeLayerBlend : UMaterialExpression {
+class UMaterialExpressionLandscapeLayerBlend : public UMaterialExpression {
+
+public:
+
 	struct TArray<Unknown> Layers; // 0x40 (16)
 	struct Unknown ExpressionGUID; // 0x50 (16)
 };
 
 // Class Landscape.MaterialExpressionLandscapeLayerCoords
-class UMaterialExpressionLandscapeLayerCoords : UMaterialExpression {
+class UMaterialExpressionLandscapeLayerCoords : public UMaterialExpression {
+
+public:
+
 	char MappingType; // 0x40 (1)
 	char CustomUVType; // 0x41 (1)
 	float MappingScale; // 0x44 (4)
@@ -390,14 +453,20 @@ class UMaterialExpressionLandscapeLayerCoords : UMaterialExpression {
 };
 
 // Class Landscape.MaterialExpressionLandscapeLayerSample
-class UMaterialExpressionLandscapeLayerSample : UMaterialExpression {
+class UMaterialExpressionLandscapeLayerSample : public UMaterialExpression {
+
+public:
+
 	struct FName ParameterName; // 0x40 (8)
 	float PreviewWeight; // 0x48 (4)
 	struct Unknown ExpressionGUID; // 0x4C (16)
 };
 
 // Class Landscape.MaterialExpressionLandscapeLayerSwitch
-class UMaterialExpressionLandscapeLayerSwitch : UMaterialExpression {
+class UMaterialExpressionLandscapeLayerSwitch : public UMaterialExpression {
+
+public:
+
 	struct Unknown LayerUsed; // 0x40 (12)
 	struct Unknown LayerNotUsed; // 0x54 (12)
 	struct FName ParameterName; // 0x68 (8)
@@ -406,7 +475,10 @@ class UMaterialExpressionLandscapeLayerSwitch : UMaterialExpression {
 };
 
 // Class Landscape.MaterialExpressionLandscapeLayerWeight
-class UMaterialExpressionLandscapeLayerWeight : UMaterialExpression {
+class UMaterialExpressionLandscapeLayerWeight : public UMaterialExpression {
+
+public:
+
 	struct Unknown Base; // 0x40 (12)
 	struct Unknown Layer; // 0x54 (12)
 	struct FName ParameterName; // 0x68 (8)
@@ -416,7 +488,10 @@ class UMaterialExpressionLandscapeLayerWeight : UMaterialExpression {
 };
 
 // Class Landscape.MaterialExpressionLandscapeVisibilityMask
-class UMaterialExpressionLandscapeVisibilityMask : UMaterialExpression {
+class UMaterialExpressionLandscapeVisibilityMask : public UMaterialExpression {
+
+public:
+
 	struct Unknown ExpressionGUID; // 0x40 (16)
 };
 
@@ -430,7 +505,7 @@ struct FLandscapeLayer {
 	float WeightmapAlpha; // 0x20 (4)
 	char BlendMode; // 0x24 (1)
 	struct TArray<Unknown> Brushes; // 0x28 (16)
-	struct TMap<Unknown, Unknown>Unknown WeightmapLayerAllocationBlend; // 0x38 (80)
+	struct TMap<Unknown, Unknown> WeightmapLayerAllocationBlend; // 0x38 (80)
 };
 
 // ScriptStruct Landscape.LandscapeLayerComponentData

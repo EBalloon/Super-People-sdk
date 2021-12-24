@@ -1,5 +1,8 @@
 // Class BuildPatchServices.BuildPatchManifest
-class UBuildPatchManifest : Object {
+class UBuildPatchManifest : public Object {
+
+public:
+
 	char ManifestFileVersion; // 0x28 (1)
 	char bIsFileData : 0; // 0x29 (1)
 	uint32_t AppID; // 0x2C (4)

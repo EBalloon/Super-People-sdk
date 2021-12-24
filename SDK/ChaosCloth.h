@@ -1,15 +1,18 @@
 // Enum ChaosCloth.EChaosWeightMapTarget
-enum class EChaosWeightMapTarget : uint8 {
-	EChaosWeightMapTarget = 0
-	EChaosWeightMapTarget = 1
-	EChaosWeightMapTarget = 2
-	EChaosWeightMapTarget = 3
-	EChaosWeightMapTarget = 4
-	EChaosWeightMapTarget = 5
+enum class EChaosWeightMapTarget : uint8_t {
+	EChaosWeightMapTarget = 0,
+	EChaosWeightMapTarget = 1,
+	EChaosWeightMapTarget = 2,
+	EChaosWeightMapTarget = 3,
+	EChaosWeightMapTarget = 4,
+	EChaosWeightMapTarget = 5,
 };
 
 // Class ChaosCloth.ChaosClothConfig
-class UChaosClothConfig : UClothConfigCommon {
+class UChaosClothConfig : public UClothConfigCommon {
+
+public:
+
 	enum class Unknow MassMode; // 0x28 (1)
 	float UniformMass; // 0x2C (4)
 	float TotalMass; // 0x30 (4)
@@ -38,7 +41,10 @@ class UChaosClothConfig : UClothConfigCommon {
 };
 
 // Class ChaosCloth.ChaosClothSharedSimConfig
-class UChaosClothSharedSimConfig : UClothSharedConfigCommon {
+class UChaosClothSharedSimConfig : public UClothSharedConfigCommon {
+
+public:
+
 	int32_t IterationCount; // 0x28 (4)
 	int32_t SubdivisionCount; // 0x2C (4)
 	float SelfCollisionThickness; // 0x30 (4)

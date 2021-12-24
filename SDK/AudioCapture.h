@@ -1,5 +1,8 @@
 // Class AudioCapture.AudioCaptureComponent
-class UAudioCaptureComponent : USynthComponent {
+class UAudioCaptureComponent : public USynthComponent {
+
+public:
+
 	int32_t JitterLatencyFrames; // 0x710 (4)
 };
 

@@ -1,5 +1,8 @@
 // Class NiagaraAnimNotifies.AnimNotify_PlayNiagaraEffect
-class UAnimNotify_PlayNiagaraEffect : UAnimNotify {
+class UAnimNotify_PlayNiagaraEffect : public UAnimNotify {
+
+public:
+
 	struct Unknown Template; // 0x38 (8)
 	struct Unknown LocationOffset; // 0x40 (12)
 	struct Unknown RotationOffset; // 0x4C (12)
@@ -7,11 +10,14 @@ class UAnimNotify_PlayNiagaraEffect : UAnimNotify {
 	char Attached : 0; // 0x80 (1)
 	struct FName SocketName; // 0x84 (8)
 
-	struct Unknown GetSpawnedEffect(); // Function NiagaraAnimNotifies.AnimNotify_PlayNiagaraEffect.GetSpawnedEffect(Final|Native|Public|BlueprintCallable|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1523FB0>
+	struct Unknown GetSpawnedEffect(); // Function NiagaraAnimNotifies.AnimNotify_PlayNiagaraEffect.GetSpawnedEffect(Final|Native|Public|BlueprintCallable|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1525400>
 };
 
 // Class NiagaraAnimNotifies.AnimNotifyState_TimedNiagaraEffect
-class UAnimNotifyState_TimedNiagaraEffect : UAnimNotifyState {
+class UAnimNotifyState_TimedNiagaraEffect : public UAnimNotifyState {
+
+public:
+
 	struct Unknown Template; // 0x30 (8)
 	struct FName SocketName; // 0x38 (8)
 	struct Unknown LocationOffset; // 0x40 (12)

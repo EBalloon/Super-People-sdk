@@ -1,39 +1,45 @@
 // Enum PrefabAsset.EPrefabVariantRuleType
-enum class EPrefabVariantRuleType : uint8 {
-	SkipProp = 0
-	EPrefabVariantRuleType_MAX = 1
+enum class EPrefabVariantRuleType : uint8_t {
+	SkipProp = 0,
+	EPrefabVariantRuleType_MAX = 1,
 };
 
 // Enum PrefabAsset.EPTUITheme
-enum class EPTUITheme : uint8 {
-	EPTUITheme = 0
-	EPTUITheme = 1
-	EPTUITheme = 2
+enum class EPTUITheme : uint8_t {
+	EPTUITheme = 0,
+	EPTUITheme = 1,
+	EPTUITheme = 2,
 };
 
 // Enum PrefabAsset.EPrefabVisualizerType
-enum class EPrefabVisualizerType : uint8 {
-	EPrefabVisualizerType = 0
-	EPrefabVisualizerType = 1
-	EPrefabVisualizerType = 2
+enum class EPrefabVisualizerType : uint8_t {
+	EPrefabVisualizerType = 0,
+	EPrefabVisualizerType = 1,
+	EPrefabVisualizerType = 2,
 };
 
 // Class PrefabAsset.PrefabToolActor
-class APrefabToolActor : UActor {
+class APrefabToolActor : public UActor {
+
+public:
+
 	struct Unknown PrefabComponent; // 0x310 (8)
 
-	void SetPrefab(struct Unknown NewPrefab, char bForceRevertEvenDisconnected); // Function PrefabAsset.PrefabToolActor.SetPrefab(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124CFD0>
-	void SetMobility(char InMobility); // Function PrefabAsset.PrefabToolActor.SetMobility(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124CF50>
-	char IsConnected(); // Function PrefabAsset.PrefabToolActor.IsConnected(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124CF20>
-	struct FString GetPrefabAssetName(); // Function PrefabAsset.PrefabToolActor.GetPrefabAssetName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124CC80>
-	struct Unknown GetPrefab(); // Function PrefabAsset.PrefabToolActor.GetPrefab(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124CC50>
-	void DestroyPrefabActor(char bDestroyAttachedChildren); // Function PrefabAsset.PrefabToolActor.DestroyPrefabActor(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124CBC0>
+	void SetPrefab(struct Unknown NewPrefab, char bForceRevertEvenDisconnected); // Function PrefabAsset.PrefabToolActor.SetPrefab(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124E410>
+	void SetMobility(char InMobility); // Function PrefabAsset.PrefabToolActor.SetMobility(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124E390>
+	char IsConnected(); // Function PrefabAsset.PrefabToolActor.IsConnected(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124E360>
+	struct FString GetPrefabAssetName(); // Function PrefabAsset.PrefabToolActor.GetPrefabAssetName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124E0C0>
+	struct Unknown GetPrefab(); // Function PrefabAsset.PrefabToolActor.GetPrefab(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124E090>
+	void DestroyPrefabActor(char bDestroyAttachedChildren); // Function PrefabAsset.PrefabToolActor.DestroyPrefabActor(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124E000>
 };
 
 // Class PrefabAsset.PrefabAsset
-class UPrefabAsset : Object {
-	struct TMap<Unknown, Unknown>Unknown AssetReferences; // 0x28 (80)
-	struct Unknown GeneratedBlueprintAssetReferenc; // 0x78 (24)
+class UPrefabAsset : public Object {
+
+public:
+
+	struct TMap<Unknown, Unknown> AssetReferences; // 0x28 (80)
+	struct Unknown GeneratedBlueprintAssetReference; // 0x78 (24)
 	struct Unknown SimplifiedMeshAssetReference; // 0x90 (24)
 	struct Unknown PrefabId; // 0xA8 (16)
 	struct FString PrefabContent; // 0xB8 (16)
@@ -41,30 +47,39 @@ class UPrefabAsset : Object {
 	int32_t NumActors; // 0xD8 (4)
 	struct Unknown PrefabPivot; // 0xDC (12)
 
-	void SetSimplifiedMeshAssetReference(struct Unknown& InAssetReference); // Function PrefabAsset.PrefabAsset.SetSimplifiedMeshAssetReference(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124D0A0>
-	struct FString GetPrefabHash(); // Function PrefabAsset.PrefabAsset.GetPrefabHash(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124CD00>
+	void SetSimplifiedMeshAssetReference(struct Unknown& InAssetReference); // Function PrefabAsset.PrefabAsset.SetSimplifiedMeshAssetReference(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124E4E0>
+	struct FString GetPrefabHash(); // Function PrefabAsset.PrefabAsset.GetPrefabHash(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124E140>
 };
 
 // Class PrefabAsset.PrefabVariantAsset
-class UPrefabVariantAsset : UPrefabAsset {
+class UPrefabVariantAsset : public UPrefabAsset {
+
+public:
+
 	struct Unknown Parent; // 0xE8 (8)
 };
 
 // Class PrefabAsset.PrefabToolComponent
-class UPrefabToolComponent : UPrimitiveComponent {
+class UPrefabToolComponent : public UPrimitiveComponent {
+
+public:
+
 	char bConnected : 0; // 0x4B8 (1)
 	char bLockSelection : 0; // 0x4B8 (1)
 	struct Unknown Prefab; // 0x4C0 (8)
 	struct Unknown GeneratedBlueprint; // 0x4C8 (8)
 	struct Unknown SimplifiedMesh; // 0x4D0 (8)
-	struct TMap<Unknown, Unknown>Unknown PrefabInstancesMap; // 0x4D8 (80)
+	struct TMap<Unknown, Unknown> PrefabInstancesMap; // 0x4D8 (80)
 	struct TArray<Unknown> VariantRulesOverwrite; // 0x528 (16)
 	char bTransient : 0; // 0x538 (1)
 	struct Unknown* ParentClass; // 0x540 (8)
 };
 
 // Class PrefabAsset.PrefabToolSettings
-class UPrefabToolSettings : Object {
+class UPrefabToolSettings : public Object {
+
+public:
+
 	char bInitialPivotToWorldOrigin : 0; // 0x28 (1)
 	char bReplaceActorsWithCreatedPrefab : 0; // 0x29 (1)
 	char bAutoIncludeAttachedActorsWhenCreateNewPrefab : 0; // 0x2A (1)
@@ -113,10 +128,10 @@ class UPrefabToolSettings : Object {
 	char bSupportGenerateBlueprint : 0; // 0x118 (1)
 	char bHarvestComponentsWhenGeneratingBlueprint : 0; // 0x119 (1)
 	char bUseActorNameAsVariableNameWhenGeneratingBlueprint : 0; // 0x11A (1)
-	char bForceMobilityToMoveprint : 0; // 0x11B (1)
+	char bForceMobilityToMovr : 0; // 0x11B (1)
 	struct TArray<Unknown> IgnoreActorClassesWhenGeneratingBlueprint; // 0x120 (16)
 	struct TArray<Unknown> IgnoreActorTagsWhenGeneratingBlueprint; // 0x130 (16)
-	char bFlashPrefabWindowForTargetPrefabActor : 0; // 0x140 (1)
+	char bFlashPrefabWindowForTarget : 0; // 0x140 (1)
 	char bEnablePrefabTextEditor : 0; // 0x141 (1)
 	char bDebugMode : 0; // 0x142 (1)
 	char bDisableThumbnailRender : 0; // 0x143 (1)

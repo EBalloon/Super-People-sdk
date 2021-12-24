@@ -1,5 +1,8 @@
 // Class MagicLeapImageTracker.MagicLeapImageTrackerComponent
-class UMagicLeapImageTrackerComponent : USceneComponent {
+class UMagicLeapImageTrackerComponent : public USceneComponent {
+
+public:
+
 	struct Unknown TargetImageTexture; // 0x238 (8)
 	struct FString Name; // 0x240 (16)
 	float LongerDimension; // 0x250 (4)
@@ -11,7 +14,7 @@ class UMagicLeapImageTrackerComponent : USceneComponent {
 	struct FMulticastInlineDelegate OnImageTargetLost; // 0x288 (16)
 	struct FMulticastInlineDelegate OnImageTargetUnreliableTracking; // 0x298 (16)
 
-	char SetTargetAsync(struct Unknown ImageTarget); // Function MagicLeapImageTracker.MagicLeapImageTrackerComponent.SetTargetAsync(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17EBB00>
-	char RemoveTargetAsync(); // Function MagicLeapImageTracker.MagicLeapImageTrackerComponent.RemoveTargetAsync(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17EBA60>
+	char SetTargetAsync(struct Unknown ImageTarget); // Function MagicLeapImageTracker.MagicLeapImageTrackerComponent.SetTargetAsync(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17ECF70>
+	char RemoveTargetAsync(); // Function MagicLeapImageTracker.MagicLeapImageTrackerComponent.RemoveTargetAsync(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17ECED0>
 };
 

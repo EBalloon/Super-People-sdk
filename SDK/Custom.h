@@ -1,5 +1,8 @@
-// BlueprintGeneratedClass CustomizedChara_DataAsset.CustomizedChara_DataAsset_C
-class UCustomizedChara_DataAsset_C : UPrimaryDataAsset {
+// BlueprintGeneratedClass Custom.CustomizedChara_DataAsset_C
+class UCustomizedChara_DataAsset_C : public UPrimaryDataAsset {
+
+public:
+
 	float CharacterRotationVelocity; // 0x30 (4)
 	float CameraMoveVelocity; // 0x34 (4)
 	float CameraTop; // 0x38 (4)

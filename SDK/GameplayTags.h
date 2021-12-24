@@ -1,106 +1,139 @@
 // Enum GameplayTags.EGameplayTagQueryExprType
-enum class EGameplayTagQueryExprType : uint8 {
-	EGameplayTagQueryExprType = 0
-	EGameplayTagQueryExprType = 1
-	EGameplayTagQueryExprType = 2
-	EGameplayTagQueryExprType = 3
-	EGameplayTagQueryExprType = 4
-	EGameplayTagQueryExprType = 5
-	EGameplayTagQueryExprType = 6
-	EGameplayTagQueryExprType = 7
+enum class EGameplayTagQueryExprType : uint8_t {
+	EGameplayTagQueryExprType = 0,
+	EGameplayTagQueryExprType = 1,
+	EGameplayTagQueryExprType = 2,
+	EGameplayTagQueryExprType = 3,
+	EGameplayTagQueryExprType = 4,
+	EGameplayTagQueryExprType = 5,
+	EGameplayTagQueryExprType = 6,
+	EGameplayTagQueryExprType = 7,
 };
 
 // Enum GameplayTags.EGameplayContainerMatchType
-enum class EGameplayContainerMatchType : uint8 {
-	EGameplayContainerMatchType = 0
-	EGameplayContainerMatchType = 1
-	EGameplayContainerMatchType = 2
+enum class EGameplayContainerMatchType : uint8_t {
+	EGameplayContainerMatchType = 0,
+	EGameplayContainerMatchType = 1,
+	EGameplayContainerMatchType = 2,
 };
 
 // Enum GameplayTags.EGameplayTagMatchType
-enum class EGameplayTagMatchType : uint8 {
-	EGameplayTagMatchType = 0
-	EGameplayTagMatchType = 1
-	EGameplayTagMatchType = 2
+enum class EGameplayTagMatchType : uint8_t {
+	EGameplayTagMatchType = 0,
+	EGameplayTagMatchType = 1,
+	EGameplayTagMatchType = 2,
 };
 
 // Enum GameplayTags.EGameplayTagSelectionType
-enum class EGameplayTagSelectionType : uint8 {
-	EGameplayTagSelectionType = 0
-	EGameplayTagSelectionType = 1
-	EGameplayTagSelectionType = 2
-	EGameplayTagSelectionType = 3
-	EGameplayTagSelectionType = 4
+enum class EGameplayTagSelectionType : uint8_t {
+	EGameplayTagSelectionType = 0,
+	EGameplayTagSelectionType = 1,
+	EGameplayTagSelectionType = 2,
+	EGameplayTagSelectionType = 3,
+	EGameplayTagSelectionType = 4,
 };
 
 // Enum GameplayTags.EGameplayTagSourceType
-enum class EGameplayTagSourceType : uint8 {
-	EGameplayTagSourceType = 0
-	EGameplayTagSourceType = 1
-	EGameplayTagSourceType = 2
-	EGameplayTagSourceType = 3
-	EGameplayTagSourceType = 4
-	EGameplayTagSourceType = 5
-	EGameplayTagSourceType = 6
+enum class EGameplayTagSourceType : uint8_t {
+	EGameplayTagSourceType = 0,
+	EGameplayTagSourceType = 1,
+	EGameplayTagSourceType = 2,
+	EGameplayTagSourceType = 3,
+	EGameplayTagSourceType = 4,
+	EGameplayTagSourceType = 5,
+	EGameplayTagSourceType = 6,
 };
 
 // Class GameplayTags.EditableGameplayTagQuery
-class UEditableGameplayTagQuery : Object {
+class UEditableGameplayTagQuery : public Object {
+
+public:
+
 	struct FString UserDescription; // 0x28 (16)
 	struct Unknown RootExpression; // 0x48 (8)
 	struct Unknown TagQueryExportText_Helper; // 0x50 (72)
 };
 
 // Class GameplayTags.EditableGameplayTagQueryExpression_AnyTagsMatch
-class UEditableGameplayTagQueryExpression_AnyTagsMatch : UEditableGameplayTagQueryExpression {
+class UEditableGameplayTagQueryExpression_AnyTagsMatch : public UEditableGameplayTagQueryExpression {
+
+public:
+
 	struct Unknown Tags; // 0x28 (32)
 };
 
 // Class GameplayTags.EditableGameplayTagQueryExpression_AllTagsMatch
-class UEditableGameplayTagQueryExpression_AllTagsMatch : UEditableGameplayTagQueryExpression {
+class UEditableGameplayTagQueryExpression_AllTagsMatch : public UEditableGameplayTagQueryExpression {
+
+public:
+
 	struct Unknown Tags; // 0x28 (32)
 };
 
 // Class GameplayTags.EditableGameplayTagQueryExpression_NoTagsMatch
-class UEditableGameplayTagQueryExpression_NoTagsMatch : UEditableGameplayTagQueryExpression {
+class UEditableGameplayTagQueryExpression_NoTagsMatch : public UEditableGameplayTagQueryExpression {
+
+public:
+
 	struct Unknown Tags; // 0x28 (32)
 };
 
 // Class GameplayTags.EditableGameplayTagQueryExpression_AnyExprMatch
-class UEditableGameplayTagQueryExpression_AnyExprMatch : UEditableGameplayTagQueryExpression {
+class UEditableGameplayTagQueryExpression_AnyExprMatch : public UEditableGameplayTagQueryExpression {
+
+public:
+
 	struct TArray<Unknown> Expressions; // 0x28 (16)
 };
 
 // Class GameplayTags.EditableGameplayTagQueryExpression_AllExprMatch
-class UEditableGameplayTagQueryExpression_AllExprMatch : UEditableGameplayTagQueryExpression {
+class UEditableGameplayTagQueryExpression_AllExprMatch : public UEditableGameplayTagQueryExpression {
+
+public:
+
 	struct TArray<Unknown> Expressions; // 0x28 (16)
 };
 
 // Class GameplayTags.EditableGameplayTagQueryExpression_NoExprMatch
-class UEditableGameplayTagQueryExpression_NoExprMatch : UEditableGameplayTagQueryExpression {
+class UEditableGameplayTagQueryExpression_NoExprMatch : public UEditableGameplayTagQueryExpression {
+
+public:
+
 	struct TArray<Unknown> Expressions; // 0x28 (16)
 };
 
 // Class GameplayTags.GameplayTagsManager
-class UGameplayTagsManager : Object {
+class UGameplayTagsManager : public Object {
+
+public:
+
 	struct TArray<Unknown> TagSources; // 0xC0 (16)
 	struct TArray<Unknown> GameplayTagTables; // 0x1B0 (16)
 };
 
 // Class GameplayTags.GameplayTagsList
-class UGameplayTagsList : Object {
+class UGameplayTagsList : public Object {
+
+public:
+
 	struct FString ConfigFileName; // 0x28 (16)
 	struct TArray<Unknown> GameplayTagList; // 0x38 (16)
 };
 
 // Class GameplayTags.RestrictedGameplayTagsList
-class URestrictedGameplayTagsList : Object {
+class URestrictedGameplayTagsList : public Object {
+
+public:
+
 	struct FString ConfigFileName; // 0x28 (16)
 	struct TArray<Unknown> RestrictedGameplayTagList; // 0x38 (16)
 };
 
 // Class GameplayTags.GameplayTagsSettings
-class UGameplayTagsSettings : UGameplayTagsList {
+class UGameplayTagsSettings : public UGameplayTagsList {
+
+public:
+
 	char ImportTagsFromConfig : 0; // 0x48 (1)
 	char WarnOnInvalidTags : 0; // 0x49 (1)
 	char FastReplication : 0; // 0x4A (1)
@@ -115,7 +148,10 @@ class UGameplayTagsSettings : UGameplayTagsList {
 };
 
 // Class GameplayTags.GameplayTagsDeveloperSettings
-class UGameplayTagsDeveloperSettings : Object {
+class UGameplayTagsDeveloperSettings : public Object {
+
+public:
+
 	struct FString DeveloperConfigName; // 0x28 (16)
 };
 

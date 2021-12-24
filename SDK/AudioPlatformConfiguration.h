@@ -1,11 +1,11 @@
 // Enum AudioPlatformConfiguration.ESoundwaveSampleRateSettings
-enum class ESoundwaveSampleRateSettings : uint8 {
-	ESoundwaveSampleRateSettings = 0
-	ESoundwaveSampleRateSettings = 1
-	ESoundwaveSampleRateSettings = 2
-	ESoundwaveSampleRateSettings = 3
-	ESoundwaveSampleRateSettings = 4
-	ESoundwaveSampleRateSettings = 5
+enum class ESoundwaveSampleRateSettings : uint8_t {
+	ESoundwaveSampleRateSettings = 0,
+	ESoundwaveSampleRateSettings = 1,
+	ESoundwaveSampleRateSettings = 2,
+	ESoundwaveSampleRateSettings = 3,
+	ESoundwaveSampleRateSettings = 4,
+	ESoundwaveSampleRateSettings = 5,
 };
 
 // ScriptStruct AudioPlatformConfiguration.PlatformRuntimeAudioCompressionOverrides

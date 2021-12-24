@@ -1,22 +1,25 @@
 // Enum AnimationCore.ETransformConstraintType
-enum class ETransformConstraintType : uint8 {
-	ETransformConstraintType = 0
-	ETransformConstraintType = 1
-	ETransformConstraintType = 2
-	ETransformConstraintType = 3
-	ETransformConstraintType = 4
+enum class ETransformConstraintType : uint8_t {
+	ETransformConstraintType = 0,
+	ETransformConstraintType = 1,
+	ETransformConstraintType = 2,
+	ETransformConstraintType = 3,
+	ETransformConstraintType = 4,
 };
 
 // Enum AnimationCore.EConstraintType
-enum class EConstraintType : uint8 {
-	EConstraintType = 0
-	EConstraintType = 1
-	EConstraintType = 2
+enum class EConstraintType : uint8_t {
+	EConstraintType = 0,
+	EConstraintType = 1,
+	EConstraintType = 2,
 };
 
 // Class AnimationCore.AnimationDataSourceRegistry
-class UAnimationDataSourceRegistry : Object {
-	struct TMap<Unknown, Unknown>Unknown DataSources; // 0x28 (80)
+class UAnimationDataSourceRegistry : public Object {
+
+public:
+
+	struct TMap<Unknown, Unknown> DataSources; // 0x28 (80)
 };
 
 // ScriptStruct AnimationCore.Axis
@@ -120,7 +123,7 @@ struct FNodeHierarchyWithUserData {
 struct FNodeHierarchyData {
 	struct TArray<Unknown> Nodes; // 0x0 (16)
 	struct TArray<Unknown> Transforms; // 0x10 (16)
-	struct TMap<Unknown, Unknown>Unknown NodeNameToIndexMapping; // 0x20 (80)
+	struct TMap<Unknown, Unknown> NodeNameToIndexMapping; // 0x20 (80)
 };
 
 // ScriptStruct AnimationCore.NodeObject

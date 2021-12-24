@@ -1,22 +1,28 @@
 // Enum ChaosSolverEngine.EClusterConnectionTypeEnum
-enum class EClusterConnectionTypeEnum : uint8 {
-	EClusterConnectionTypeEnum = 0
-	EClusterConnectionTypeEnum = 1
-	EClusterConnectionTypeEnum = 2
-	EClusterConnectionTypeEnum = 3
-	EClusterConnectionTypeEnum = 4
-	EClusterConnectionTypeEnum = 5
-	EClusterConnectionTypeEnum = 6
+enum class EClusterConnectionTypeEnum : uint8_t {
+	EClusterConnectionTypeEnum = 0,
+	EClusterConnectionTypeEnum = 1,
+	EClusterConnectionTypeEnum = 2,
+	EClusterConnectionTypeEnum = 3,
+	EClusterConnectionTypeEnum = 4,
+	EClusterConnectionTypeEnum = 5,
+	EClusterConnectionTypeEnum = 6,
 };
 
 // Class ChaosSolverEngine.ChaosGameplayEventDispatcher
-class UChaosGameplayEventDispatcher : UChaosEventListenerComponent {
-	struct TMap<Unknown, Unknown>Unknown CollisionEventRegistrations; // 0x1C8 (80)
-	struct TMap<Unknown, Unknown>Unknown BreakEventRegistrations; // 0x218 (80)
+class UChaosGameplayEventDispatcher : public UChaosEventListenerComponent {
+
+public:
+
+	struct TMap<Unknown, Unknown> CollisionEventRegistrations; // 0x1C8 (80)
+	struct TMap<Unknown, Unknown> BreakEventRegistrations; // 0x218 (80)
 };
 
 // Class ChaosSolverEngine.ChaosSolverActor
-class AChaosSolverActor : UActor {
+class AChaosSolverActor : public UActor {
+
+public:
+
 	float TimeStepMultiplier; // 0x310 (4)
 	int32_t CollisionIterations; // 0x314 (4)
 	int32_t PushOutIterations; // 0x318 (4)
@@ -37,12 +43,15 @@ class AChaosSolverActor : UActor {
 	struct Unknown SpriteComponent; // 0x370 (8)
 	struct Unknown GameplayEventDispatcherComponent; // 0x390 (8)
 
-	void SetSolverActive(char bActive); // Function ChaosSolverEngine.ChaosSolverActor.SetSolverActive(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x400B4B0>
-	void SetAsCurrentWorldSolver(); // Function ChaosSolverEngine.ChaosSolverActor.SetAsCurrentWorldSolver(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x400B490>
+	void SetSolverActive(char bActive); // Function ChaosSolverEngine.ChaosSolverActor.SetSolverActive(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x400C6E0>
+	void SetAsCurrentWorldSolver(); // Function ChaosSolverEngine.ChaosSolverActor.SetAsCurrentWorldSolver(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x400C6C0>
 };
 
 // Class ChaosSolverEngine.ChaosSolverSettings
-class UChaosSolverSettings : UDeveloperSettings {
+class UChaosSolverSettings : public UDeveloperSettings {
+
+public:
+
 	struct Unknown DefaultChaosSolverActorClass; // 0x40 (24)
 };
 

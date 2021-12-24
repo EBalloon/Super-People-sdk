@@ -1,37 +1,43 @@
 // Enum RTXGI.EDDGIRaysPerProbe
-enum class EDDGIRaysPerProbe : uint8 {
-	EDDGIRaysPerProbe = 0
-	EDDGIRaysPerProbe = 1
-	EDDGIRaysPerProbe = 2
-	EDDGIRaysPerProbe = 3
-	EDDGIRaysPerProbe = 4
-	EDDGIRaysPerProbe = 5
-	EDDGIRaysPerProbe = 6
-	EDDGIRaysPerProbe = 7
-	EDDGIRaysPerProbe = 8
+enum class EDDGIRaysPerProbe : uint8_t {
+	EDDGIRaysPerProbe = 0,
+	EDDGIRaysPerProbe = 1,
+	EDDGIRaysPerProbe = 2,
+	EDDGIRaysPerProbe = 3,
+	EDDGIRaysPerProbe = 4,
+	EDDGIRaysPerProbe = 5,
+	EDDGIRaysPerProbe = 6,
+	EDDGIRaysPerProbe = 7,
+	EDDGIRaysPerProbe = 8,
 };
 
 // Enum RTXGI.EDDGIDistanceBits
-enum class EDDGIDistanceBits : uint8 {
-	EDDGIDistanceBits = 0
-	EDDGIDistanceBits = 1
-	EDDGIDistanceBits = 2
+enum class EDDGIDistanceBits : uint8_t {
+	EDDGIDistanceBits = 0,
+	EDDGIDistanceBits = 1,
+	EDDGIDistanceBits = 2,
 };
 
 // Enum RTXGI.EDDGIIrradianceBits
-enum class EDDGIIrradianceBits : uint8 {
-	EDDGIIrradianceBits = 0
-	EDDGIIrradianceBits = 1
-	EDDGIIrradianceBits = 2
+enum class EDDGIIrradianceBits : uint8_t {
+	EDDGIIrradianceBits = 0,
+	EDDGIIrradianceBits = 1,
+	EDDGIIrradianceBits = 2,
 };
 
 // Class RTXGI.DDGIVolume
-class ADDGIVolume : UActor {
+class ADDGIVolume : public UActor {
+
+public:
+
 	struct Unknown DDGIVolumeComponent; // 0x310 (8)
 };
 
 // Class RTXGI.DDGIVolumeComponent
-class UDDGIVolumeComponent : USceneComponent {
+class UDDGIVolumeComponent : public USceneComponent {
+
+public:
+
 	enum class Unknow RaysPerProbe; // 0x240 (1)
 	struct Unknown ProbeCounts; // 0x244 (12)
 	int32_t LightingPriority; // 0x250 (4)
@@ -62,11 +68,14 @@ class UDDGIVolumeComponent : USceneComponent {
 	struct Unknown LastOrigin; // 0x2A8 (12)
 	struct Unknown ProbeScrollOffset; // 0x2B4 (12)
 
-	void DDGIClearVolumes(); // Function RTXGI.DDGIVolumeComponent.DDGIClearVolumes(Final|Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x164E2C0>
+	void DDGIClearVolumes(); // Function RTXGI.DDGIVolumeComponent.DDGIClearVolumes(Final|Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x164F730>
 };
 
 // Class RTXGI.RTXGIPluginSettings
-class URTXGIPluginSettings : UDeveloperSettings {
+class URTXGIPluginSettings : public UDeveloperSettings {
+
+public:
+
 	enum class Unknow IrradianceBits; // 0x38 (1)
 	enum class Unknow DistanceBits; // 0x39 (1)
 	float DebugProbeRadius; // 0x3C (4)

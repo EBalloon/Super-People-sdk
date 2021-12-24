@@ -1,11 +1,17 @@
 // Class MediaCompositing.MovieSceneMediaPlayerPropertySection
-class UMovieSceneMediaPlayerPropertySection : UMovieSceneSection {
+class UMovieSceneMediaPlayerPropertySection : public UMovieSceneSection {
+
+public:
+
 	struct Unknown MediaSource; // 0xE0 (8)
 	char bLoop : 0; // 0xE8 (1)
 };
 
 // Class MediaCompositing.MovieSceneMediaSection
-class UMovieSceneMediaSection : UMovieSceneSection {
+class UMovieSceneMediaSection : public UMovieSceneSection {
+
+public:
+
 	struct Unknown MediaSource; // 0xE0 (8)
 	char bLooping : 0; // 0xE8 (1)
 	struct Unknown StartFrameOffset; // 0xEC (4)
@@ -16,12 +22,15 @@ class UMovieSceneMediaSection : UMovieSceneSection {
 };
 
 // Class MediaCompositing.MovieSceneMediaTrack
-class UMovieSceneMediaTrack : UMovieSceneNameableTrack {
+class UMovieSceneMediaTrack : public UMovieSceneNameableTrack {
+
+public:
+
 	struct TArray<Unknown> MediaSections; // 0x58 (16)
 };
 
-// ScriptStruct MediaCompositing.MovieSceneMediaPlayerPropertySectionTemplate
-struct FMovieSceneMediaPlayerPropertySectionTemplate : FMovieScenePropertySectionTemplate {
+// ScriptStruct MediaCompositing.MovieSceneMediaPlayerPropertySectionTem
+struct FMovieSceneMediaPlayerPropertySectionTem : FMovieScenePropertySectionTemplate {
 	struct Unknown MediaSource; // 0x48 (8)
 	struct Unknown SectionStartFrame; // 0x50 (4)
 	char bLoop : 0; // 0x54 (1)

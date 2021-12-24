@@ -1,5 +1,8 @@
 // Class NetCore.NetAnalyticsAggregatorConfig
-class UNetAnalyticsAggregatorConfig : Object {
+class UNetAnalyticsAggregatorConfig : public Object {
+
+public:
+
 	struct TArray<Unknown> NetAnalyticsData; // 0x28 (16)
 };
 

@@ -1,248 +1,284 @@
 // Enum SimplygonUObjects.EGeometryDataFieldType
-enum class EGeometryDataFieldType : uint8 {
-	EGeometryDataFieldType = 0
-	EGeometryDataFieldType = 1
-	EGeometryDataFieldType = 2
-	EGeometryDataFieldType = 3
-	EGeometryDataFieldType = 4
-	EGeometryDataFieldType = 5
-	EGeometryDataFieldType = 6
-	EGeometryDataFieldType = 7
-	EGeometryDataFieldType = 8
+enum class EGeometryDataFieldType : uint8_t {
+	EGeometryDataFieldType = 0,
+	EGeometryDataFieldType = 1,
+	EGeometryDataFieldType = 2,
+	EGeometryDataFieldType = 3,
+	EGeometryDataFieldType = 4,
+	EGeometryDataFieldType = 5,
+	EGeometryDataFieldType = 6,
+	EGeometryDataFieldType = 7,
+	EGeometryDataFieldType = 8,
 };
 
 // Enum SimplygonUObjects.EOutputPixelFormat
-enum class EOutputPixelFormat : uint8 {
-	EOutputPixelFormat = 0
-	EOutputPixelFormat = 1
-	EOutputPixelFormat = 2
-	EOutputPixelFormat = 3
-	EOutputPixelFormat = 4
-	EOutputPixelFormat = 5
-	EOutputPixelFormat = 6
+enum class EOutputPixelFormat : uint8_t {
+	EOutputPixelFormat = 0,
+	EOutputPixelFormat = 1,
+	EOutputPixelFormat = 2,
+	EOutputPixelFormat = 3,
+	EOutputPixelFormat = 4,
+	EOutputPixelFormat = 5,
+	EOutputPixelFormat = 6,
 };
 
 // Enum SimplygonUObjects.EOutputOpacityType
-enum class EOutputOpacityType : uint8 {
-	EOutputOpacityType = 0
-	EOutputOpacityType = 1
-	EOutputOpacityType = 2
+enum class EOutputOpacityType : uint8_t {
+	EOutputOpacityType = 0,
+	EOutputOpacityType = 1,
+	EOutputOpacityType = 2,
 };
 
 // Enum SimplygonUObjects.EOutputDDSCompressionType
-enum class EOutputDDSCompressionType : int32 {
-	EOutputDDSCompressionType = -1
-	EOutputDDSCompressionType = 0
-	EOutputDDSCompressionType = 1
-	EOutputDDSCompressionType = 2
-	EOutputDDSCompressionType = 3
-	EOutputDDSCompressionType = 4
-	EOutputDDSCompressionType = 5
+enum class EOutputDDSCompressionType : int32_t {
+	EOutputDDSCompressionType = -1,
+	EOutputDDSCompressionType = 0,
+	EOutputDDSCompressionType = 1,
+	EOutputDDSCompressionType = 2,
+	EOutputDDSCompressionType = 3,
+	EOutputDDSCompressionType = 4,
+	EOutputDDSCompressionType = 5,
 };
 
 // Enum SimplygonUObjects.EOutputImageFileFormat
-enum class EOutputImageFileFormat : uint8 {
-	EOutputImageFileFormat = 0
-	EOutputImageFileFormat = 1
-	EOutputImageFileFormat = 2
-	EOutputImageFileFormat = 3
-	EOutputImageFileFormat = 4
-	EOutputImageFileFormat = 5
-	EOutputImageFileFormat = 6
+enum class EOutputImageFileFormat : uint8_t {
+	EOutputImageFileFormat = 0,
+	EOutputImageFileFormat = 1,
+	EOutputImageFileFormat = 2,
+	EOutputImageFileFormat = 3,
+	EOutputImageFileFormat = 4,
+	EOutputImageFileFormat = 5,
+	EOutputImageFileFormat = 6,
 };
 
 // Enum SimplygonUObjects.EFillMode
-enum class EFillMode : uint8 {
-	EFillMode = 0
-	EFillMode = 1
-	EFillMode = 2
-	EFillMode = 3
+enum class EFillMode : uint8_t {
+	EFillMode = 0,
+	EFillMode = 1,
+	EFillMode = 2,
+	EFillMode = 3,
 };
 
 // Enum SimplygonUObjects.EDitherType
-enum class EDitherType : uint8 {
-	EDitherType = 0
-	EDitherType = 1
-	EDitherType = 2
-	EDitherType = 3
-	EDitherType = 4
+enum class EDitherType : uint8_t {
+	EDitherType = 0,
+	EDitherType = 1,
+	EDitherType = 2,
+	EDitherType = 3,
+	EDitherType = 4,
 };
 
 // Enum SimplygonUObjects.EOpacityChannelComponent
-enum class EOpacityChannelComponent : uint8 {
-	EOpacityChannelComponent = 0
-	EOpacityChannelComponent = 1
-	EOpacityChannelComponent = 2
-	EOpacityChannelComponent = 3
-	EOpacityChannelComponent = 4
+enum class EOpacityChannelComponent : uint8_t {
+	EOpacityChannelComponent = 0,
+	EOpacityChannelComponent = 1,
+	EOpacityChannelComponent = 2,
+	EOpacityChannelComponent = 3,
+	EOpacityChannelComponent = 4,
 };
 
 // Enum SimplygonUObjects.ESurfaceTransferMode
-enum class ESurfaceTransferMode : uint8 {
-	ESurfaceTransferMode = 0
-	ESurfaceTransferMode = 1
-	ESurfaceTransferMode = 2
+enum class ESurfaceTransferMode : uint8_t {
+	ESurfaceTransferMode = 0,
+	ESurfaceTransferMode = 1,
+	ESurfaceTransferMode = 2,
 };
 
 // Enum SimplygonUObjects.ERemeshingMode
-enum class ERemeshingMode : uint8 {
-	ERemeshingMode = 0
-	ERemeshingMode = 1
-	ERemeshingMode = 2
-	ERemeshingMode = 3
+enum class ERemeshingMode : uint8_t {
+	ERemeshingMode = 0,
+	ERemeshingMode = 1,
+	ERemeshingMode = 2,
+	ERemeshingMode = 3,
 };
 
 // Enum SimplygonUObjects.EHoleFilling
-enum class EHoleFilling : uint8 {
-	EHoleFilling = 0
-	EHoleFilling = 1
-	EHoleFilling = 2
-	EHoleFilling = 3
-	EHoleFilling = 4
+enum class EHoleFilling : uint8_t {
+	EHoleFilling = 0,
+	EHoleFilling = 1,
+	EHoleFilling = 2,
+	EHoleFilling = 3,
+	EHoleFilling = 4,
 };
 
 // Enum SimplygonUObjects.ESurfaceAreaScale
-enum class ESurfaceAreaScale : uint8 {
-	ESurfaceAreaScale = 0
-	ESurfaceAreaScale = 1
-	ESurfaceAreaScale = 2
-	ESurfaceAreaScale = 3
+enum class ESurfaceAreaScale : uint8_t {
+	ESurfaceAreaScale = 0,
+	ESurfaceAreaScale = 1,
+	ESurfaceAreaScale = 2,
+	ESurfaceAreaScale = 3,
 };
 
 // Enum SimplygonUObjects.EChartAggregatorMode
-enum class EChartAggregatorMode : uint8 {
-	EChartAggregatorMode = 0
-	EChartAggregatorMode = 1
-	EChartAggregatorMode = 2
-	EChartAggregatorMode = 3
-	EChartAggregatorMode = 4
+enum class EChartAggregatorMode : uint8_t {
+	EChartAggregatorMode = 0,
+	EChartAggregatorMode = 1,
+	EChartAggregatorMode = 2,
+	EChartAggregatorMode = 3,
+	EChartAggregatorMode = 4,
 };
 
 // Enum SimplygonUObjects.ETexCoordGeneratorType
-enum class ETexCoordGeneratorType : uint8 {
-	ETexCoordGeneratorType = 0
-	ETexCoordGeneratorType = 1
-	ETexCoordGeneratorType = 2
+enum class ETexCoordGeneratorType : uint8_t {
+	ETexCoordGeneratorType = 0,
+	ETexCoordGeneratorType = 1,
+	ETexCoordGeneratorType = 2,
 };
 
 // Enum SimplygonUObjects.EWeightsFromColorMode
-enum class EWeightsFromColorMode : uint8 {
-	EWeightsFromColorMode = 0
-	EWeightsFromColorMode = 1
-	EWeightsFromColorMode = 2
-	EWeightsFromColorMode = 3
+enum class EWeightsFromColorMode : uint8_t {
+	EWeightsFromColorMode = 0,
+	EWeightsFromColorMode = 1,
+	EWeightsFromColorMode = 2,
+	EWeightsFromColorMode = 3,
 };
 
 // Enum SimplygonUObjects.EWeightsFromColorComponent
-enum class EWeightsFromColorComponent : uint8 {
-	EWeightsFromColorComponent = 0
-	EWeightsFromColorComponent = 1
-	EWeightsFromColorComponent = 2
-	EWeightsFromColorComponent = 3
-	EWeightsFromColorComponent = 4
+enum class EWeightsFromColorComponent : uint8_t {
+	EWeightsFromColorComponent = 0,
+	EWeightsFromColorComponent = 1,
+	EWeightsFromColorComponent = 2,
+	EWeightsFromColorComponent = 3,
+	EWeightsFromColorComponent = 4,
 };
 
 // Enum SimplygonUObjects.EBoneReductionTargetStopCondition
-enum class EBoneReductionTargetStopCondition : uint8 {
-	EBoneReductionTargetStopCondition = 0
-	EBoneReductionTargetStopCondition = 1
-	EBoneReductionTargetStopCondition = 2
+enum class EBoneReductionTargetStopCondition : uint8_t {
+	EBoneReductionTargetStopCondition = 0,
+	EBoneReductionTargetStopCondition = 1,
+	EBoneReductionTargetStopCondition = 2,
 };
 
 // Enum SimplygonUObjects.EComputeVisibilityMode
-enum class EComputeVisibilityMode : uint8 {
-	EComputeVisibilityMode = 0
-	EComputeVisibilityMode = 1
-	EComputeVisibilityMode = 2
+enum class EComputeVisibilityMode : uint8_t {
+	EComputeVisibilityMode = 0,
+	EComputeVisibilityMode = 1,
+	EComputeVisibilityMode = 2,
 };
 
 // Enum SimplygonUObjects.EDataCreationPreferences
-enum class EDataCreationPreferences : uint8 {
-	EDataCreationPreferences = 0
-	EDataCreationPreferences = 1
-	EDataCreationPreferences = 2
-	EDataCreationPreferences = 3
+enum class EDataCreationPreferences : uint8_t {
+	EDataCreationPreferences = 0,
+	EDataCreationPreferences = 1,
+	EDataCreationPreferences = 2,
+	EDataCreationPreferences = 3,
 };
 
 // Enum SimplygonUObjects.ESymmetryAxis
-enum class ESymmetryAxis : uint8 {
-	ESymmetryAxis = 0
-	ESymmetryAxis = 1
-	ESymmetryAxis = 2
-	ESymmetryAxis = 3
+enum class ESymmetryAxis : uint8_t {
+	ESymmetryAxis = 0,
+	ESymmetryAxis = 1,
+	ESymmetryAxis = 2,
+	ESymmetryAxis = 3,
 };
 
 // Enum SimplygonUObjects.EReductionHeuristics
-enum class EReductionHeuristics : uint8 {
-	EReductionHeuristics = 0
-	EReductionHeuristics = 1
-	EReductionHeuristics = 2
+enum class EReductionHeuristics : uint8_t {
+	EReductionHeuristics = 0,
+	EReductionHeuristics = 1,
+	EReductionHeuristics = 2,
 };
 
 // Enum SimplygonUObjects.EReductionTargetStopCondition
-enum class EReductionTargetStopCondition : uint8 {
-	EReductionTargetStopCondition = 0
-	EReductionTargetStopCondition = 1
-	EReductionTargetStopCondition = 2
+enum class EReductionTargetStopCondition : uint8_t {
+	EReductionTargetStopCondition = 0,
+	EReductionTargetStopCondition = 1,
+	EReductionTargetStopCondition = 2,
 };
 
 // Class SimplygonUObjects.StandinNearPipeline
-class UStandinNearPipeline : USimplygonStandinPipeline {
+class UStandinNearPipeline : public USimplygonStandinPipeline {
+
+public:
+
 	struct Unknown Settings; // 0x28 (432)
 };
 
 // Class SimplygonUObjects.StandinFarPipeline
-class UStandinFarPipeline : USimplygonStandinPipeline {
+class UStandinFarPipeline : public USimplygonStandinPipeline {
+
+public:
+
 	struct Unknown Settings; // 0x28 (448)
 };
 
 // Class SimplygonUObjects.SimplygonColorCaster
-class USimplygonColorCaster : USimplygonMaterialCaster {
+class USimplygonColorCaster : public USimplygonMaterialCaster {
+
+public:
+
 	struct Unknown ColorCasterSettings; // 0x28 (80)
 };
 
 // Class SimplygonUObjects.SimplygonNormalCaster
-class USimplygonNormalCaster : USimplygonMaterialCaster {
+class USimplygonNormalCaster : public USimplygonMaterialCaster {
+
+public:
+
 	struct Unknown NormalCasterSettings; // 0x28 (80)
 };
 
 // Class SimplygonUObjects.ReductionPipeline
-class UReductionPipeline : USimplygonPipeline {
+class UReductionPipeline : public USimplygonPipeline {
+
+public:
+
 	struct Unknown Settings; // 0x28 (560)
 };
 
 // Class SimplygonUObjects.RemeshingPipeline
-class URemeshingPipeline : USimplygonPipeline {
+class URemeshingPipeline : public USimplygonPipeline {
+
+public:
+
 	struct Unknown Settings; // 0x28 (448)
 };
 
 // Class SimplygonUObjects.AggregationPipeline
-class UAggregationPipeline : USimplygonPipeline {
+class UAggregationPipeline : public USimplygonPipeline {
+
+public:
+
 	struct Unknown Settings; // 0x28 (432)
 };
 
 // Class SimplygonUObjects.SimplygonOpacityCaster
-class USimplygonOpacityCaster : USimplygonMaterialCaster {
+class USimplygonOpacityCaster : public USimplygonMaterialCaster {
+
+public:
+
 	struct Unknown OpacityCasterSettings; // 0x28 (72)
 };
 
 // Class SimplygonUObjects.SimplygonDisplacementCaster
-class USimplygonDisplacementCaster : USimplygonMaterialCaster {
+class USimplygonDisplacementCaster : public USimplygonMaterialCaster {
+
+public:
+
 	struct Unknown DisplacementCasterSettings; // 0x28 (88)
 };
 
 // Class SimplygonUObjects.SimplygonAmbientOcclusionCaster
-class USimplygonAmbientOcclusionCaster : USimplygonMaterialCaster {
+class USimplygonAmbientOcclusionCaster : public USimplygonMaterialCaster {
+
+public:
+
 	struct Unknown AmbientOcclusionCasterSettings; // 0x28 (88)
 };
 
 // Class SimplygonUObjects.SimplygonGeometryDataCaster
-class USimplygonGeometryDataCaster : USimplygonMaterialCaster {
+class USimplygonGeometryDataCaster : public USimplygonMaterialCaster {
+
+public:
+
 	struct Unknown GeometryDataCasterSettings; // 0x30 (144)
 };
 
 // Class SimplygonUObjects.SimplygonVertexColorCaster
-class USimplygonVertexColorCaster : USimplygonMaterialCaster {
+class USimplygonVertexColorCaster : public USimplygonMaterialCaster {
+
+public:
+
 	struct Unknown VertexColorCasterSettings; // 0x28 (96)
 };
 
@@ -303,7 +339,7 @@ struct FParameterizerSettings {
 struct FChartAggregatorSettings {
 	enum class Unknow ChartAggregatorMode; // 0x0 (4)
 	enum class Unknow SurfaceAreaScale; // 0x4 (4)
-	int32_t OriginalTexCoordLevin; // 0x8 (4)
+	int32_t OriginalTexCoordLevbj; // 0x8 (4)
 	struct FString OriginalTexCoordName; // 0x10 (16)
 	char SeparateOverlappingCharts : 0; // 0x20 (1)
 	struct FString OriginalChartProportionsChannel; // 0x28 (16)
@@ -341,7 +377,7 @@ struct FGeometryCullingSettings {
 	struct FString ClippingPlaneSelectionSetName; // 0x8 (16)
 	char UseClippingGeometry : 0; // 0x18 (1)
 	int32_t ClippingGeometrySelectionSetID; // 0x1C (4)
-	struct FString ClippingGeometrySelectionSetName; // 0x20 (16)
+	struct FString ClippingGeometrySelectionSetNam; // 0x20 (16)
 };
 
 // ScriptStruct SimplygonUObjects.VisibilitySettings

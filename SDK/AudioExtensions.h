@@ -1,5 +1,8 @@
 // Class AudioExtensions.SoundfieldEffectBase
-class USoundfieldEffectBase : Object {
+class USoundfieldEffectBase : public Object {
+
+public:
+
 	struct Unknown Settings; // 0x28 (8)
 };
 

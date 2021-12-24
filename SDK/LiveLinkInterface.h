@@ -1,20 +1,23 @@
 // Enum LiveLinkInterface.ELiveLinkCameraProjectionMode
-enum class ELiveLinkCameraProjectionMode : uint8 {
-	ELiveLinkCameraProjectionMode = 0
-	ELiveLinkCameraProjectionMode = 1
-	ELiveLinkCameraProjectionMode = 2
+enum class ELiveLinkCameraProjectionMode : uint8_t {
+	ELiveLinkCameraProjectionMode = 0,
+	ELiveLinkCameraProjectionMode = 1,
+	ELiveLinkCameraProjectionMode = 2,
 };
 
 // Enum LiveLinkInterface.ELiveLinkSourceMode
-enum class ELiveLinkSourceMode : uint8 {
-	ELiveLinkSourceMode = 0
-	ELiveLinkSourceMode = 1
-	ELiveLinkSourceMode = 2
-	ELiveLinkSourceMode = 3
+enum class ELiveLinkSourceMode : uint8_t {
+	ELiveLinkSourceMode = 0,
+	ELiveLinkSourceMode = 1,
+	ELiveLinkSourceMode = 2,
+	ELiveLinkSourceMode = 3,
 };
 
 // Class LiveLinkInterface.LiveLinkSourceSettings
-class ULiveLinkSourceSettings : Object {
+class ULiveLinkSourceSettings : public Object {
+
+public:
+
 	enum class Unknow Mode; // 0x28 (1)
 	struct Unknown BufferSettings; // 0x30 (80)
 	struct FString ConnectionString; // 0x80 (16)
@@ -22,12 +25,18 @@ class ULiveLinkSourceSettings : Object {
 };
 
 // Class LiveLinkInterface.LiveLinkCurveRemapSettings
-class ULiveLinkCurveRemapSettings : ULiveLinkSourceSettings {
+class ULiveLinkCurveRemapSettings : public ULiveLinkSourceSettings {
+
+public:
+
 	struct Unknown CurveConversionSettings; // 0x98 (80)
 };
 
 // Class LiveLinkInterface.LiveLinkSubjectSettings
-class ULiveLinkSubjectSettings : Object {
+class ULiveLinkSubjectSettings : public Object {
+
+public:
+
 	struct TArray<Unknown> PreProcessors; // 0x28 (16)
 	struct Unknown InterpolationProcessor; // 0x38 (8)
 	struct TArray<Unknown> Translators; // 0x40 (16)
@@ -35,7 +44,10 @@ class ULiveLinkSubjectSettings : Object {
 };
 
 // Class LiveLinkInterface.LiveLinkVirtualSubject
-class ULiveLinkVirtualSubject : Object {
+class ULiveLinkVirtualSubject : public Object {
+
+public:
+
 	struct Unknown* Role; // 0x30 (8)
 	struct TArray<Unknown> Subjects; // 0x38 (16)
 	struct TArray<Unknown> FrameTranslators; // 0x48 (16)
@@ -43,7 +55,7 @@ class ULiveLinkVirtualSubject : Object {
 
 // ScriptStruct LiveLinkInterface.SubjectMetadata
 struct FSubjectMetadata {
-	struct TMap<Unknown, Unknown>Unknown StringMetadata; // 0x0 (80)
+	struct TMap<Unknown, Unknown> StringMetadata; // 0x0 (80)
 	struct Unknown SceneTimecode; // 0x50 (20)
 	struct Unknown SceneFramerate; // 0x64 (8)
 };
@@ -57,7 +69,7 @@ struct FLiveLinkBaseFrameData {
 
 // ScriptStruct LiveLinkInterface.LiveLinkMetaData
 struct FLiveLinkMetaData {
-	struct TMap<Unknown, Unknown>Unknown StringMetadata; // 0x0 (80)
+	struct TMap<Unknown, Unknown> StringMetadata; // 0x0 (80)
 	struct Unknown SceneTime; // 0x50 (16)
 };
 
@@ -124,7 +136,7 @@ struct FLiveLinkCameraStaticData : FLiveLinkTransformStaticData {
 
 // ScriptStruct LiveLinkInterface.LiveLinkCurveConversionSettings
 struct FLiveLinkCurveConversionSettings {
-	struct TMap<Unknown, Unknown>Unknown CurveConversionAssetMap; // 0x0 (80)
+	struct TMap<Unknown, Unknown> CurveConversionAssetMap; // 0x0 (80)
 };
 
 // ScriptStruct LiveLinkInterface.LiveLinkLightBlueprintData

@@ -1,77 +1,83 @@
 // Enum Foliage.ECullDistancePreset
-enum class ECullDistancePreset : uint8 {
-	ECullDistancePreset = 0
-	ECullDistancePreset = 1
-	ECullDistancePreset = 2
-	ECullDistancePreset = 3
-	ECullDistancePreset = 4
-	ECullDistancePreset = 5
-	ECullDistancePreset = 6
-	ECullDistancePreset = 7
-	ECullDistancePreset = 8
-	ECullDistancePreset = 9
-	ECullDistancePreset = 10
-	ECullDistancePreset = 1
-	ECullDistancePreset = 10
-	ECullDistancePreset = 11
+enum class ECullDistancePreset : uint8_t {
+	ECullDistancePreset = 0,
+	ECullDistancePreset = 1,
+	ECullDistancePreset = 2,
+	ECullDistancePreset = 3,
+	ECullDistancePreset = 4,
+	ECullDistancePreset = 5,
+	ECullDistancePreset = 6,
+	ECullDistancePreset = 7,
+	ECullDistancePreset = 8,
+	ECullDistancePreset = 9,
+	ECullDistancePreset = 10,
+	ECullDistancePreset = 1,
+	ECullDistancePreset = 10,
+	ECullDistancePreset = 11,
 };
 
 // Enum Foliage.EFoliageScaling
-enum class EFoliageScaling : uint8 {
-	EFoliageScaling = 0
-	EFoliageScaling = 1
-	EFoliageScaling = 2
-	EFoliageScaling = 3
-	EFoliageScaling = 4
-	EFoliageScaling = 5
+enum class EFoliageScaling : uint8_t {
+	EFoliageScaling = 0,
+	EFoliageScaling = 1,
+	EFoliageScaling = 2,
+	EFoliageScaling = 3,
+	EFoliageScaling = 4,
+	EFoliageScaling = 5,
 };
 
 // Enum Foliage.EVertexColorMaskChannel
-enum class EVertexColorMaskChannel : uint8 {
-	EVertexColorMaskChannel = 0
-	EVertexColorMaskChannel = 1
-	EVertexColorMaskChannel = 2
-	EVertexColorMaskChannel = 3
-	EVertexColorMaskChannel = 4
-	EVertexColorMaskChannel = 5
+enum class EVertexColorMaskChannel : uint8_t {
+	EVertexColorMaskChannel = 0,
+	EVertexColorMaskChannel = 1,
+	EVertexColorMaskChannel = 2,
+	EVertexColorMaskChannel = 3,
+	EVertexColorMaskChannel = 4,
+	EVertexColorMaskChannel = 5,
 };
 
 // Enum Foliage.FoliageVertexColorMask
-enum class FoliageVertexColorMask : uint8 {
-	FOLIAGEVERTEXCOLORMASK_Disabled = 0
-	FOLIAGEVERTEXCOLORMASK_Red = 1
-	FOLIAGEVERTEXCOLORMASK_Green = 2
-	FOLIAGEVERTEXCOLORMASK_Blue = 3
-	FOLIAGEVERTEXCOLORMASK_Alpha = 4
-	FOLIAGEVERTEXCOLORMASK_MAX = 5
+enum class FoliageVertexColorMask : uint8_t {
+	FOLIAGEVERTEXCOLORMASK_Disabled = 0,
+	FOLIAGEVERTEXCOLORMASK_Red = 1,
+	FOLIAGEVERTEXCOLORMASK_Green = 2,
+	FOLIAGEVERTEXCOLORMASK_Blue = 3,
+	FOLIAGEVERTEXCOLORMASK_Alpha = 4,
+	FOLIAGEVERTEXCOLORMASK_MAX = 5,
 };
 
 // Enum Foliage.ESimulationQuery
-enum class ESimulationQuery : uint8 {
-	ESimulationQuery = 0
-	ESimulationQuery = 1
-	ESimulationQuery = 2
-	ESimulationQuery = 3
-	ESimulationQuery = 4
+enum class ESimulationQuery : uint8_t {
+	ESimulationQuery = 0,
+	ESimulationQuery = 1,
+	ESimulationQuery = 2,
+	ESimulationQuery = 3,
+	ESimulationQuery = 4,
 };
 
 // Enum Foliage.ESimulationOverlap
-enum class ESimulationOverlap : uint8 {
-	ESimulationOverlap = 0
-	ESimulationOverlap = 1
-	ESimulationOverlap = 2
-	ESimulationOverlap = 3
+enum class ESimulationOverlap : uint8_t {
+	ESimulationOverlap = 0,
+	ESimulationOverlap = 1,
+	ESimulationOverlap = 2,
+	ESimulationOverlap = 3,
 };
 
 // Class Foliage.FoliageInstancedStaticMeshComponent
-class UFoliageInstancedStaticMeshComponent : UHierarchicalInstancedStaticMeshComponent {
+class UFoliageInstancedStaticMeshComponent : public UHierarchicalInstancedStaticMeshComponent {
+
+public:
+
 	struct FMulticastInlineDelegate OnInstanceTakePointDamage; // 0x718 (16)
 	struct FMulticastInlineDelegate OnInstanceTakeRadialDamage; // 0x728 (16)
 	struct Unknown GenerationGuid; // 0x738 (16)
 };
 
 // Class Foliage.FoliageSettings
-class UFoliageSettings : UDeveloperSettings {
+class UFoliageSettings : public UDeveloperSettings {
+
+public:
+
 	struct TArray<Unknown> CullDistancePresets; // 0x38 (16)
 	int32_t DesiredMaxTrianglesToRender; // 0x48 (4)
 	float MinimumScreenSize; // 0x4C (4)
@@ -81,7 +87,10 @@ class UFoliageSettings : UDeveloperSettings {
 };
 
 // Class Foliage.FoliageType
-class UFoliageType : Object {
+class UFoliageType : public Object {
+
+public:
+
 	struct Unknown UpdateGuid; // 0x28 (16)
 	float Density; // 0x38 (4)
 	float DensityAdjustmentFactor; // 0x3C (4)
@@ -175,20 +184,29 @@ class UFoliageType : Object {
 };
 
 // Class Foliage.FoliageType_Actor
-class UFoliageType_Actor : UFoliageType {
+class UFoliageType_Actor : public UFoliageType {
+
+public:
+
 	struct Unknown* ActorClass; // 0x3E8 (8)
 	char bShouldAttachToBaseComponent : 0; // 0x3F0 (1)
 };
 
 // Class Foliage.FoliageType_InstancedStaticMesh
-class UFoliageType_InstancedStaticMesh : UFoliageType {
+class UFoliageType_InstancedStaticMesh : public UFoliageType {
+
+public:
+
 	struct Unknown Mesh; // 0x3E8 (8)
 	struct TArray<Unknown> OverrideMaterials; // 0x3F0 (16)
 	struct Unknown* ComponentClass; // 0x400 (8)
 };
 
 // Class Foliage.InteractiveFoliageActor
-class AInteractiveFoliageActor : AStaticMeshActor {
+class AInteractiveFoliageActor : public AStaticMeshActor {
+
+public:
+
 	struct Unknown CapsuleComponent; // 0x320 (8)
 	struct Unknown TouchingActorEntryPosition; // 0x328 (12)
 	struct Unknown FoliageVelocity; // 0x334 (12)
@@ -204,16 +222,22 @@ class AInteractiveFoliageActor : AStaticMeshActor {
 	float MaxForce; // 0x374 (4)
 	float Mass; // 0x378 (4)
 
-	void CapsuleTouched(struct Unknown OverlappedComp, struct Unknown Other, struct Unknown OtherComp, int32_t OtherBodyIndex, char bFromSweep, struct Unknown& OverlapInfo); // Function Foliage.InteractiveFoliageActor.CapsuleTouched(Final|Native|Protected|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x311C3A0>
+	void CapsuleTouched(struct Unknown OverlappedComp, struct Unknown Other, struct Unknown OtherComp, int32_t OtherBodyIndex, char bFromSweep, struct Unknown& OverlapInfo); // Function Foliage.InteractiveFoliageActor.CapsuleTouched(Final|Native|Protected|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x311D6B0>
 };
 
 // Class Foliage.ProceduralFoliageBlockingVolume
-class AProceduralFoliageBlockingVolume : AVolume {
+class AProceduralFoliageBlockingVolume : public AVolume {
+
+public:
+
 	struct Unknown ProceduralFoliageVolume; // 0x348 (8)
 };
 
 // Class Foliage.ProceduralFoliageComponent
-class UProceduralFoliageComponent : UActorComponent {
+class UProceduralFoliageComponent : public UActorComponent {
+
+public:
+
 	struct Unknown FoliageSpawner; // 0xB0 (8)
 	float TileOverlap; // 0xB8 (4)
 	struct Unknown SpawningVolume; // 0xC0 (8)
@@ -221,24 +245,33 @@ class UProceduralFoliageComponent : UActorComponent {
 };
 
 // Class Foliage.ProceduralFoliageSpawner
-class UProceduralFoliageSpawner : Object {
+class UProceduralFoliageSpawner : public Object {
+
+public:
+
 	int32_t RandomSeed; // 0x28 (4)
 	float TileSize; // 0x2C (4)
 	int32_t NumUniqueTiles; // 0x30 (4)
 	float MinimumQuadTreeSize; // 0x34 (4)
 	struct TArray<Unknown> FoliageTypes; // 0x40 (16)
 
-	void Simulate(int32_t NumSteps); // Function Foliage.ProceduralFoliageSpawner.Simulate(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x311C820>
+	void Simulate(int32_t NumSteps); // Function Foliage.ProceduralFoliageSpawner.Simulate(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x311DB30>
 };
 
 // Class Foliage.ProceduralFoliageTile
-class UProceduralFoliageTile : Object {
+class UProceduralFoliageTile : public Object {
+
+public:
+
 	struct Unknown FoliageSpawner; // 0x28 (8)
 	struct TArray<Unknown> InstancesArray; // 0xD0 (16)
 };
 
 // Class Foliage.ProceduralFoliageVolume
-class AProceduralFoliageVolume : AVolume {
+class AProceduralFoliageVolume : public AVolume {
+
+public:
+
 	struct Unknown ProceduralComponent; // 0x348 (8)
 };
 

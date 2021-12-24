@@ -1,12 +1,18 @@
 // Class Overlay.BasicOverlays
-class UBasicOverlays : UOverlays {
+class UBasicOverlays : public UOverlays {
+
+public:
+
 	struct TArray<Unknown> Overlays; // 0x28 (16)
 };
 
 // Class Overlay.LocalizedOverlays
-class ULocalizedOverlays : UOverlays {
+class ULocalizedOverlays : public UOverlays {
+
+public:
+
 	struct Unknown DefaultOverlays; // 0x28 (8)
-	struct TMap<Unknown, Unknown>Unknown LocaleToOverlaysMap; // 0x30 (80)
+	struct TMap<Unknown, Unknown> LocaleToOverlaysMap; // 0x30 (80)
 };
 
 // ScriptStruct Overlay.OverlayItem

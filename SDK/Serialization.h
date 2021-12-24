@@ -32,10 +32,10 @@ struct FStructSerializerBuiltinTestStruct {
 
 // ScriptStruct Serialization.StructSerializerMapTestStruct
 struct FStructSerializerMapTestStruct {
-	struct TMap<Unknown, Unknown>Unknown IntToStr; // 0x0 (80)
-	struct TMap<Unknown, Unknown>Unknown StrToStr; // 0x50 (80)
-	struct TMap<Unknown, Unknown>Unknown StrToVec; // 0xA0 (80)
-	struct TMap<Unknown, Unknown>Unknown StrToStruct; // 0xF0 (80)
+	struct TMap<Unknown, Unknown> IntToStr; // 0x0 (80)
+	struct TMap<Unknown, Unknown> StrToStr; // 0x50 (80)
+	struct TMap<Unknown, Unknown> StrToVec; // 0xA0 (80)
+	struct TMap<Unknown, Unknown> StrToStruct; // 0xF0 (80)
 };
 
 // ScriptStruct Serialization.StructSerializerArrayTestStruct
@@ -49,14 +49,14 @@ struct FStructSerializerArrayTestStruct {
 	struct TArray<Unknown> StructArray; // 0x50 (16)
 };
 
-// ScriptStruct Serialization.StructSerializerObjectTestStruc
-struct FStructSerializerObjectTestStruc {
+// ScriptStruct Serialization.StructSerializerObjectTestStruct
+struct FStructSerializerObjectTestStruct {
 	struct Unknown* Class; // 0x0 (8)
 	struct Unknown* SubClass; // 0x8 (8)
 	struct TSoftClassPtr<UObject> SoftClass; // 0x10 (40)
 	struct Unknown Object; // 0x38 (8)
 	struct TWeakObjectPtr<struct Unknown> WeakObject; // 0x40 (8)
-	struct TSoftObjectPtr<Unknown> SoftObject; // 0x48 (40)
+	struct Unknown SoftObject; // 0x48 (40)
 	struct Unknown ClassPath; // 0x70 (24)
 	struct Unknown ObjectPath; // 0x88 (24)
 };

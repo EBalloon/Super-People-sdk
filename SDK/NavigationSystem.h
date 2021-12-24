@@ -1,38 +1,41 @@
 // Enum NavigationSystem.ERuntimeGenerationType
-enum class ERuntimeGenerationType : uint8 {
-	ERuntimeGenerationType = 0
-	ERuntimeGenerationType = 1
-	ERuntimeGenerationType = 2
-	ERuntimeGenerationType = 3
-	ERuntimeGenerationType = 4
+enum class ERuntimeGenerationType : uint8_t {
+	ERuntimeGenerationType = 0,
+	ERuntimeGenerationType = 1,
+	ERuntimeGenerationType = 2,
+	ERuntimeGenerationType = 3,
+	ERuntimeGenerationType = 4,
 };
 
 // Enum NavigationSystem.ENavCostDisplay
-enum class ENavCostDisplay : uint8 {
-	ENavCostDisplay = 0
-	ENavCostDisplay = 1
-	ENavCostDisplay = 2
-	ENavCostDisplay = 3
+enum class ENavCostDisplay : uint8_t {
+	ENavCostDisplay = 0,
+	ENavCostDisplay = 1,
+	ENavCostDisplay = 2,
+	ENavCostDisplay = 3,
 };
 
 // Enum NavigationSystem.ENavSystemOverridePolicy
-enum class ENavSystemOverridePolicy : uint8 {
-	ENavSystemOverridePolicy = 0
-	ENavSystemOverridePolicy = 1
-	ENavSystemOverridePolicy = 2
-	ENavSystemOverridePolicy = 3
+enum class ENavSystemOverridePolicy : uint8_t {
+	ENavSystemOverridePolicy = 0,
+	ENavSystemOverridePolicy = 1,
+	ENavSystemOverridePolicy = 2,
+	ENavSystemOverridePolicy = 3,
 };
 
 // Enum NavigationSystem.ERecastPartitioning
-enum class ERecastPartitioning : uint8 {
-	ERecastPartitioning = 0
-	ERecastPartitioning = 1
-	ERecastPartitioning = 2
-	ERecastPartitioning = 3
+enum class ERecastPartitioning : uint8_t {
+	ERecastPartitioning = 0,
+	ERecastPartitioning = 1,
+	ERecastPartitioning = 2,
+	ERecastPartitioning = 3,
 };
 
 // Class NavigationSystem.NavigationData
-class ANavigationData : UActor {
+class ANavigationData : public UActor {
+
+public:
+
 	struct Unknown RenderingComp; // 0x318 (8)
 	struct Unknown NavDataConfig; // 0x320 (120)
 	char bEnableDrawing : 0; // 0x398 (1)
@@ -48,7 +51,10 @@ class ANavigationData : UActor {
 };
 
 // Class NavigationSystem.NavArea
-class UNavArea : UNavAreaBase {
+class UNavArea : public UNavAreaBase {
+
+public:
+
 	float DefaultCost; // 0x30 (4)
 	float FixedAreaEnteringCost; // 0x34 (4)
 	struct Unknown DrawColor; // 0x38 (4)
@@ -72,7 +78,10 @@ class UNavArea : UNavAreaBase {
 };
 
 // Class NavigationSystem.NavAreaMeta_SwitchByAgent
-class UNavAreaMeta_SwitchByAgent : UNavAreaMeta {
+class UNavAreaMeta_SwitchByAgent : public UNavAreaMeta {
+
+public:
+
 	struct Unknown* Agent0Area; // 0x48 (8)
 	struct Unknown* Agent1Area; // 0x50 (8)
 	struct Unknown* Agent2Area; // 0x58 (8)
@@ -92,7 +101,10 @@ class UNavAreaMeta_SwitchByAgent : UNavAreaMeta {
 };
 
 // Class NavigationSystem.NavCollision
-class UNavCollision : UNavCollisionBase {
+class UNavCollision : public UNavCollisionBase {
+
+public:
+
 	struct TArray<Unknown> CylinderCollision; // 0x80 (16)
 	struct TArray<Unknown> BoxCollision; // 0x90 (16)
 	struct Unknown* AreaClass; // 0xA0 (8)
@@ -101,43 +113,58 @@ class UNavCollision : UNavCollisionBase {
 };
 
 // Class NavigationSystem.NavigationGraphNodeComponent
-class UNavigationGraphNodeComponent : USceneComponent {
+class UNavigationGraphNodeComponent : public USceneComponent {
+
+public:
+
 	struct Unknown Node; // 0x238 (24)
 	struct Unknown NextNodeComponent; // 0x250 (8)
 	struct Unknown PrevNodeComponent; // 0x258 (8)
 };
 
 // Class NavigationSystem.NavigationInvokerComponent
-class UNavigationInvokerComponent : UActorComponent {
+class UNavigationInvokerComponent : public UActorComponent {
+
+public:
+
 	float TileGenerationRadius; // 0xB0 (4)
 	float TileRemovalRadius; // 0xB4 (4)
 };
 
 // Class NavigationSystem.NavigationPath
-class UNavigationPath : Object {
+class UNavigationPath : public Object {
+
+public:
+
 	struct FMulticastInlineDelegate PathUpdatedNotifier; // 0x28 (16)
 	struct TArray<Unknown> PathPoints; // 0x38 (16)
 	char RecalculateOnInvalidation; // 0x48 (1)
 
-	char IsValid(); // Function NavigationSystem.NavigationPath.IsValid(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1BD40>
-	char IsStringPulled(); // Function NavigationSystem.NavigationPath.IsStringPulled(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC7C30>
-	char IsPartial(); // Function NavigationSystem.NavigationPath.IsPartial(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1BD10>
-	float GetPathLength(); // Function NavigationSystem.NavigationPath.GetPathLength(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1B620>
-	float GetPathCost(); // Function NavigationSystem.NavigationPath.GetPathCost(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1B3D0>
-	struct FString GetDebugString(); // Function NavigationSystem.NavigationPath.GetDebugString(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1B2D0>
-	void EnableRecalculationOnInvalidation(char DoRecalculation); // Function NavigationSystem.NavigationPath.EnableRecalculationOnInvalidation(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1AEB0>
-	void EnableDebugDrawing(char bShouldDrawDebugData, struct Unknown PathColor); // Function NavigationSystem.NavigationPath.EnableDebugDrawing(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1ADD0>
+	char IsValid(); // Function NavigationSystem.NavigationPath.IsValid(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1CFA0>
+	char IsStringPulled(); // Function NavigationSystem.NavigationPath.IsStringPulled(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC8E70>
+	char IsPartial(); // Function NavigationSystem.NavigationPath.IsPartial(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1CF70>
+	float GetPathLength(); // Function NavigationSystem.NavigationPath.GetPathLength(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1C880>
+	float GetPathCost(); // Function NavigationSystem.NavigationPath.GetPathCost(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1C630>
+	struct FString GetDebugString(); // Function NavigationSystem.NavigationPath.GetDebugString(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1C530>
+	void EnableRecalculationOnInvalidation(char DoRecalculation); // Function NavigationSystem.NavigationPath.EnableRecalculationOnInvalidation(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1C110>
+	void EnableDebugDrawing(char bShouldDrawDebugData, struct Unknown PathColor); // Function NavigationSystem.NavigationPath.EnableDebugDrawing(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1C030>
 };
 
 // Class NavigationSystem.NavigationQueryFilter
-class UNavigationQueryFilter : Object {
+class UNavigationQueryFilter : public Object {
+
+public:
+
 	struct TArray<Unknown> Areas; // 0x28 (16)
 	struct Unknown IncludeFlags; // 0x38 (4)
 	struct Unknown ExcludeFlags; // 0x3C (4)
 };
 
 // Class NavigationSystem.NavigationSystemV1
-class UNavigationSystemV1 : UNavigationSystemBase {
+class UNavigationSystemV1 : public UNavigationSystemBase {
+
+public:
+
 	struct Unknown MainNavData; // 0x28 (8)
 	struct Unknown AbstractNavData; // 0x30 (8)
 	struct FName DefaultAgentName; // 0x38 (8)
@@ -149,7 +176,7 @@ class UNavigationSystemV1 : UNavigationSystemBase {
 	char bTickWhilePaused : 0; // 0x68 (1)
 	char bSupportRebuilding : 0; // 0x68 (1)
 	char bInitialBuildingLocked : 0; // 0x68 (1)
-	char bSkipAgentHeightCheckWhenPickingNavData : 0; // 0x69 (1)
+	char  : 0; // 0x69 (1)
 	enum class Unknow DataGatheringMode; // 0x6C (1)
 	char bGenerateNavigationOnlyAroundNavigationInvokers : 0; // 0x70 (1)
 	float ActiveTilesUpdateInterval; // 0x74 (4)
@@ -162,34 +189,37 @@ class UNavigationSystemV1 : UNavigationSystemBase {
 	enum class Unknow OperationMode; // 0x1BC (1)
 	float DirtyAreasUpdateFreq; // 0x514 (4)
 
-	void UnregisterNavigationInvoker(struct Unknown Invoker); // Function NavigationSystem.NavigationSystemV1.UnregisterNavigationInvoker(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1CB90>
-	void SimpleMoveToLocation(struct Unknown Controller, struct Unknown& Goal); // Function NavigationSystem.NavigationSystemV1.SimpleMoveToLocation(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1CAD0>
-	void SimpleMoveToActor(struct Unknown Controller, struct Unknown Goal); // Function NavigationSystem.NavigationSystemV1.SimpleMoveToActor(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3D9EFE0>
-	void SetMaxSimultaneousTileGenerationJobsCount(int32_t MaxNumberOfJobs); // Function NavigationSystem.NavigationSystemV1.SetMaxSimultaneousTileGenerationJobsCount(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1CA50>
-	void SetGeometryGatheringMode(enum class Unknow NewMode); // Function NavigationSystem.NavigationSystemV1.SetGeometryGatheringMode(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1C9D0>
-	void ResetMaxSimultaneousTileGenerationJobsCount(); // Function NavigationSystem.NavigationSystemV1.ResetMaxSimultaneousTileGenerationJobsCount(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1C9B0>
-	void RegisterNavigationInvoker(struct Unknown Invoker, float TileGenerationRadius, float TileRemovalRadius); // Function NavigationSystem.NavigationSystemV1.RegisterNavigationInvoker(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1C8B0>
-	struct Unknown ProjectPointToNavigation(struct Unknown WorldContextObject, struct Unknown& Point, struct Unknown NavData, struct Unknown* FilterClass, struct Unknown QueryExtent); // Function NavigationSystem.NavigationSystemV1.ProjectPointToNavigation(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1C6E0>
-	void OnNavigationBoundsUpdated(struct Unknown NavVolume); // Function NavigationSystem.NavigationSystemV1.OnNavigationBoundsUpdated(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1C660>
-	char NavigationRaycast(struct Unknown WorldContextObject, struct Unknown& RayStart, struct Unknown& RayEnd, struct Unknown& HitLocation, struct Unknown* FilterClass, struct Unknown Querier); // Function NavigationSystem.NavigationSystemV1.NavigationRaycast(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1C450>
-	char K2_ReplaceAreaInOctreeData(struct Unknown Object, struct Unknown* OldArea, struct Unknown* NewArea); // Function NavigationSystem.NavigationSystemV1.K2_ReplaceAreaInOctreeData(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1C350>
-	char K2_ProjectPointToNavigation(struct Unknown WorldContextObject, struct Unknown& Point, struct Unknown& ProjectedLocation, struct Unknown NavData, struct Unknown* FilterClass, struct Unknown QueryExtent); // Function NavigationSystem.NavigationSystemV1.K2_ProjectPointToNavigation(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1C170>
-	char K2_GetRandomReachablePointInRadius(struct Unknown WorldContextObject, struct Unknown& Origin, struct Unknown& RandomLocation, float Radius, struct Unknown NavData, struct Unknown* FilterClass); // Function NavigationSystem.NavigationSystemV1.K2_GetRandomReachablePointInRadius(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1BF70>
-	char K2_GetRandomPointInNavigableRadius(struct Unknown WorldContextObject, struct Unknown& Origin, struct Unknown& RandomLocation, float Radius, struct Unknown NavData, struct Unknown* FilterClass); // Function NavigationSystem.NavigationSystemV1.K2_GetRandomPointInNavigableRadius(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1BD70>
-	char K2_GetRandomLocationInNavigableRadius(struct Unknown WorldContextObject, struct Unknown& Origin, struct Unknown& RandomLocation, float Radius, struct Unknown NavData, struct Unknown* FilterClass); // Function NavigationSystem.NavigationSystemV1.K2_GetRandomLocationInNavigableRadius(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1BD70>
-	char IsNavigationBeingBuiltOrLocked(struct Unknown WorldContextObject); // Function NavigationSystem.NavigationSystemV1.IsNavigationBeingBuiltOrLocked(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1BC90>
-	char IsNavigationBeingBuilt(struct Unknown WorldContextObject); // Function NavigationSystem.NavigationSystemV1.IsNavigationBeingBuilt(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1BC10>
-	struct Unknown GetRandomReachablePointInRadius(struct Unknown WorldContextObject, struct Unknown& Origin, float Radius, struct Unknown NavData, struct Unknown* FilterClass); // Function NavigationSystem.NavigationSystemV1.GetRandomReachablePointInRadius(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1BA40>
-	struct Unknown GetRandomPointInNavigableRadius(struct Unknown WorldContextObject, struct Unknown& Origin, float Radius, struct Unknown NavData, struct Unknown* FilterClass); // Function NavigationSystem.NavigationSystemV1.GetRandomPointInNav(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1B870>
-	char GetPathLength(struct Unknown WorldContextObject, struct Unknown& PathStart, struct Unknown& PathEnd, float& PathLength, struct Unknown NavData, struct Unknown* FilterClass); // Function NavigationSystem.NavigationSystemV1.GetPathLength(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1B650>
-	char GetPathCost(struct Unknown WorldContextObject, struct Unknown& PathStart, struct Unknown& PathEnd, float& PathCost, struct Unknown NavData, struct Unknown* FilterClass); // Function NavigationSystem.NavigationSystemV1.GetPathCost(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1B400>
-	struct Unknown GetNavigationSystem(struct Unknown WorldContextObject); // Function NavigationSystem.NavigationSystemV1.GetNavigationSystem(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1B350>
-	struct Unknown FindPathToLocationSynchronously(struct Unknown WorldContextObject, struct Unknown& PathStart, struct Unknown& PathEnd, struct Unknown PathfindingContext, struct Unknown* FilterClass); // Function NavigationSystem.NavigationSystemV1.FindPathToLocationSynchronously(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1B120>
-	struct Unknown FindPathToActorSynchronously(struct Unknown WorldContextObject, struct Unknown& PathStart, struct Unknown GoalActor, float TetherDistance, struct Unknown PathfindingContext, struct Unknown* FilterClass); // Function NavigationSystem.NavigationSystemV1.FindPathToActorSynchronously(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1AF30>
+	void UnregisterNavigationInvoker(struct Unknown Invoker); // Function NavigationSystem.NavigationSystemV1.UnregisterNavigationInvoker(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1DDF0>
+	void SimpleMoveToLocation(struct Unknown Controller, struct Unknown& Goal); // Function NavigationSystem.NavigationSystemV1.SimpleMoveToLocation(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1DD30>
+	void SimpleMoveToActor(struct Unknown Controller, struct Unknown Goal); // Function NavigationSystem.NavigationSystemV1.SimpleMoveToActor(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3DA0240>
+	void SetMaxSimultaneousTileGenerationJobsCount(int32_t MaxNumberOfJobs); // Function NavigationSystem.NavigationSystemV1.SetMaxSimultaneousTileGenerationJobsCount(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1DCB0>
+	void SetGeometryGatheringMode(enum class Unknow NewMode); // Function NavigationSystem.NavigationSystemV1.SetGeometryGatheringMode(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1DC30>
+	void ResetMaxSimultaneousTileGenerationJobsCount(); // Function NavigationSystem.NavigationSystemV1.ResetMaxSimultaneousTileGenerationJobsCount(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1DC10>
+	void RegisterNavigationInvoker(struct Unknown Invoker, float TileGenerationRadius, float TileRemovalRadius); // Function NavigationSystem.NavigationSystemV1.RegisterNavigationInvoker(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1DB10>
+	struct Unknown ProjectPointToNavigation(struct Unknown WorldContextObject, struct Unknown& Point, struct Unknown NavData, struct Unknown* FilterClass, struct Unknown QueryExtent); // Function NavigationSystem.NavigationSystemV1.ProjectPointToNavigation(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1D940>
+	void OnNavigationBoundsUpdated(struct Unknown NavVolume); // Function NavigationSystem.NavigationSystemV1.OnNavigationBoundsUpdated(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1D8C0>
+	char NavigationRaycast(struct Unknown WorldContextObject, struct Unknown& RayStart, struct Unknown& RayEnd, struct Unknown& HitLocation, struct Unknown* FilterClass, struct Unknown Querier); // Function NavigationSystem.NavigationSystemV1.NavigationRaycast(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1D6B0>
+	char K2_ReplaceAreaInOctreeData(struct Unknown Object, struct Unknown* OldArea, struct Unknown* NewArea); // Function NavigationSystem.NavigationSystemV1.K2_ReplaceAreaInOctreeData(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1D5B0>
+	char K2_ProjectPointToNavigation(struct Unknown WorldContextObject, struct Unknown& Point, struct Unknown& ProjectedLocation, struct Unknown NavData, struct Unknown* FilterClass, struct Unknown QueryExtent); // Function NavigationSystem.NavigationSystemV1.K2_ProjectPointToNavigation(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1D3D0>
+	char K2_GetRandomReachablePointInRadius(struct Unknown WorldContextObject, struct Unknown& Origin, struct Unknown& RandomLocation, float Radius, struct Unknown NavData, struct Unknown* FilterClass); // Function NavigationSystem.NavigationSystemV1.K2_GetRandomReachablePointInRadius(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1D1D0>
+	char K2_GetRandomPointInNavigableRadius(struct Unknown WorldContextObject, struct Unknown& Origin, struct Unknown& RandomLocation, float Radius, struct Unknown NavData, struct Unknown* FilterClass); // Function NavigationSystem.NavigationSystemV1.K2_GetRandomPointInNavigableRadius(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1CFD0>
+	char K2_GetRandomLocationInNavigableRadius(struct Unknown WorldContextObject, struct Unknown& Origin, struct Unknown& RandomLocation, float Radius, struct Unknown NavData, struct Unknown* FilterClass); // Function NavigationSystem.NavigationSystemV1.K2_GetRandomLocationInNavigableRadius(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1CFD0>
+	char IsNavigationBeingBuiltOrLocked(struct Unknown WorldContextObject); // Function NavigationSystem.NavigationSystemV1.IsNavigationBeingBuiltOrLocked(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1CEF0>
+	char IsNavigationBeingBuilt(struct Unknown WorldContextObject); // Function NavigationSystem.NavigationSystemV1.IsNavigationBeingBuilt(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1CE70>
+	struct Unknown GetRandomReachablePointInRadius(struct Unknown WorldContextObject, struct Unknown& Origin, float Radius, struct Unknown NavData, struct Unknown* FilterClass); // Function NavigationSystem.NavigationSystemV1.GetRandomReachablePointInRadius(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1CCA0>
+	struct Unknown GetRandomPointInNavystemMon(struct Unknown WorldContextObject, struct Unknown& Origin, float Radius, struct Unknown NavData, struct Unknown* FilterClass); // Function NavigationSystem.NavigationSystemV1.GetRandomPointInNavystemMon(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1CAD0>
+	char GetPathLength(struct Unknown WorldContextObject, struct Unknown& PathStart, struct Unknown& PathEnd, float& PathLength, struct Unknown NavData, struct Unknown* FilterClass); // Function NavigationSystem.NavigationSystemV1.GetPathLength(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1C8B0>
+	char GetPathCost(struct Unknown WorldContextObject, struct Unknown& PathStart, struct Unknown& PathEnd, float& PathCost, struct Unknown NavData, struct Unknown* FilterClass); // Function NavigationSystem.NavigationSystemV1.GetPathCost(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1C660>
+	struct Unknown GetNavigationSystem(struct Unknown WorldContextObject); // Function NavigationSystem.NavigationSystemV1.GetNavigationSystem(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1C5B0>
+	struct Unknown FindPathToLocationSynchronously(struct Unknown WorldContextObject, struct Unknown& PathStart, struct Unknown& PathEnd, struct Unknown PathfindingContext, struct Unknown* FilterClass); // Function NavigationSystem.NavigationSystemV1.FindPathToLocationSynchronously(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1C380>
+	struct Unknown FindPathToActorSynchronously(struct Unknown WorldContextObject, struct Unknown& PathStart, struct Unknown GoalActor, float TetherDistance, struct Unknown PathfindingContext, struct Unknown* FilterClass); // Function NavigationSystem.NavigationSystemV1.FindPathToActorSynchronously(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1C190>
 };
 
 // Class NavigationSystem.NavigationSystemModuleConfig
-class UNavigationSystemModuleConfig : UNavigationSystemConfig {
+class UNavigationSystemModuleConfig : public UNavigationSystemConfig {
+
+public:
+
 	char bStrictlyStatic : 0; // 0x50 (1)
 	char bCreateOnClient : 0; // 0x50 (1)
 	char bAutoSpawnMissingNavData : 0; // 0x50 (1)
@@ -197,10 +227,13 @@ class UNavigationSystemModuleConfig : UNavigationSystemConfig {
 };
 
 // Class NavigationSystem.NavigationTestingActor
-class ANavigationTestingActor : UActor {
+class ANavigationTestingActor : public UActor {
+
+public:
+
 	struct Unknown CapsuleComponent; // 0x320 (8)
 	struct Unknown InvokerComponent; // 0x328 (8)
-	char bActAsNavigationInv : 0; // 0x330 (1)
+	char bActAsNavigationInvtor : 0; // 0x330 (1)
 	struct Unknown NavAgentProps; // 0x338 (48)
 	struct Unknown QueryingExtent; // 0x368 (12)
 	struct Unknown MyNavData; // 0x378 (8)
@@ -232,20 +265,29 @@ class ANavigationTestingActor : UActor {
 };
 
 // Class NavigationSystem.NavLinkComponent
-class UNavLinkComponent : UPrimitiveComponent {
+class UNavLinkComponent : public UPrimitiveComponent {
+
+public:
+
 	struct TArray<Unknown> LINKS; // 0x4C0 (16)
 };
 
 // Class NavigationSystem.NavRelevantComponent
-class UNavRelevantComponent : UActorComponent {
+class UNavRelevantComponent : public UActorComponent {
+
+public:
+
 	char bAttachToOwnersRoot : 0; // 0xD4 (1)
 	struct Unknown CachedNavParent; // 0xD8 (8)
 
-	void SetNavigationRelevancy(char bRelevant); // Function NavigationSystem.NavRelevantComponent.SetNavigationRelevancy(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1F230>
+	void SetNavigationRelevancy(char bRelevant); // Function NavigationSystem.NavRelevantComponent.SetNavigationRelevancy(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F20490>
 };
 
 // Class NavigationSystem.NavLinkCustomComponent
-class UNavLinkCustomComponent : UNavRelevantComponent {
+class UNavLinkCustomComponent : public UNavRelevantComponent {
+
+public:
+
 	uint32_t NavLinkUserId; // 0xE8 (4)
 	struct Unknown* EnabledAreaClass; // 0xF0 (8)
 	struct Unknown* DisabledAreaClass; // 0xF8 (8)
@@ -266,35 +308,50 @@ class UNavLinkCustomComponent : UNavRelevantComponent {
 };
 
 // Class NavigationSystem.NavMeshBoundsVolume
-class ANavMeshBoundsVolume : AVolume {
+class ANavMeshBoundsVolume : public AVolume {
+
+public:
+
 	struct Unknown SupportedAgents; // 0x348 (4)
 };
 
 // Class NavigationSystem.NavModifierComponent
-class UNavModifierComponent : UNavRelevantComponent {
+class UNavModifierComponent : public UNavRelevantComponent {
+
+public:
+
 	struct Unknown* AreaClass; // 0xE0 (8)
 	struct Unknown FailsafeExtent; // 0xE8 (12)
 	char bIncludeAgentHeight : 0; // 0xF4 (1)
 
-	void SetAreaClass(struct Unknown* NewAreaClass); // Function NavigationSystem.NavModifierComponent.SetAreaClass(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1F1B0>
+	void SetAreaClass(struct Unknown* NewAreaClass); // Function NavigationSystem.NavModifierComponent.SetAreaClass(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F20410>
 };
 
 // Class NavigationSystem.NavModifierVolume
-class ANavModifierVolume : AVolume {
+class ANavModifierVolume : public AVolume {
+
+public:
+
 	struct Unknown* AreaClass; // 0x350 (8)
 
-	void SetAreaClass(struct Unknown* NewAreaClass); // Function NavigationSystem.NavModifierVolume.SetAreaClass(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1F130>
+	void SetAreaClass(struct Unknown* NewAreaClass); // Function NavigationSystem.NavModifierVolume.SetAreaClass(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F20390>
 };
 
 // Class NavigationSystem.NavSystemConfigOverride
-class ANavSystemConfigOverride : UActor {
+class ANavSystemConfigOverride : public UActor {
+
+public:
+
 	struct Unknown NavigationSystemConfig; // 0x310 (8)
 	enum class Unknow OverridePolicy; // 0x318 (1)
 	char bLoadOnClient : 0; // 0x319 (1)
 };
 
 // Class NavigationSystem.RecastNavMesh
-class ARecastNavMesh : ANavigationData {
+class ARecastNavMesh : public ANavigationData {
+
+public:
+
 	char bDrawTriangleEdges : 0; // 0x4F0 (1)
 	char bDrawPolyEdges : 0; // 0x4F0 (1)
 	char bDrawFilledPolys : 0; // 0x4F0 (1)
@@ -351,11 +408,11 @@ class ARecastNavMesh : ANavigationData {
 	char bUseVirtualFilters : 0; // 0x565 (1)
 	char bAllowNavLinkAsPathEnd : 0; // 0x565 (1)
 	char bUseVoxelCache : 0; // 0x565 (1)
-	float TileSetUpdateInterv; // 0x568 (4)
+	float TileSetUpdateIntervti; // 0x568 (4)
 	float HeuristicScale; // 0x56C (4)
 	float VerticalDeviationFromGroundCompensation; // 0x570 (4)
 
-	char K2_ReplaceAreaInTileBounds(struct Unknown Bounds, struct Unknown* OldArea, struct Unknown* NewArea, char ReplaceLinks); // Function NavigationSystem.RecastNavMesh.K2_ReplaceAreaInTileBounds(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1EFA0>
+	char K2_ReplaceAreaInTileBounds(struct Unknown Bounds, struct Unknown* OldArea, struct Unknown* NewArea, char ReplaceLinks); // Function NavigationSystem.RecastNavMesh.K2_ReplaceAreaInTileBounds(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F20200>
 };
 
 // ScriptStruct NavigationSystem.NavCollisionBox

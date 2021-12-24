@@ -1,19 +1,25 @@
 // Enum MaterialShaderQualitySettings.EMobileCSMQuality
-enum class EMobileCSMQuality : uint8 {
-	EMobileCSMQuality = 0
-	EMobileCSMQuality = 1
-	EMobileCSMQuality = 2
-	EMobileCSMQuality = 3
-	EMobileCSMQuality = 4
+enum class EMobileCSMQuality : uint8_t {
+	EMobileCSMQuality = 0,
+	EMobileCSMQuality = 1,
+	EMobileCSMQuality = 2,
+	EMobileCSMQuality = 3,
+	EMobileCSMQuality = 4,
 };
 
 // Class MaterialShaderQualitySettings.MaterialShaderQualitySettings
-class UMaterialShaderQualitySettings : Object {
-	struct TMap<Unknown, Unknown>Unknown ForwardSettingMap; // 0x28 (80)
+class UMaterialShaderQualitySettings : public Object {
+
+public:
+
+	struct TMap<Unknown, Unknown> ForwardSettingMap; // 0x28 (80)
 };
 
 // Class MaterialShaderQualitySettings.ShaderPlatformQualitySettings
-class UShaderPlatformQualitySettings : Object {
+class UShaderPlatformQualitySettings : public Object {
+
+public:
+
 	struct Unknown QualityOverrides[0x3]; // 0x28 (27)
 };
 

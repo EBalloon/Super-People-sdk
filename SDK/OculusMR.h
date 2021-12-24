@@ -1,63 +1,69 @@
 // Enum OculusMR.EOculusMR_BoundaryType
-enum class EOculusMR_BoundaryType : uint8 {
-	EOculusMR_BoundaryType = 0
-	EOculusMR_BoundaryType = 1
-	EOculusMR_BoundaryType = 2
+enum class EOculusMR_BoundaryType : uint8_t {
+	EOculusMR_BoundaryType = 0,
+	EOculusMR_BoundaryType = 1,
+	EOculusMR_BoundaryType = 2,
 };
 
 // Enum OculusMR.EOculusMR_CompositionMethod
-enum class EOculusMR_CompositionMethod : uint8 {
-	EOculusMR_CompositionMethod = 0
-	EOculusMR_CompositionMethod = 1
-	EOculusMR_CompositionMethod = 2
+enum class EOculusMR_CompositionMethod : uint8_t {
+	EOculusMR_CompositionMethod = 0,
+	EOculusMR_CompositionMethod = 1,
+	EOculusMR_CompositionMethod = 2,
 };
 
 // Enum OculusMR.EOculusMR_DepthQuality
-enum class EOculusMR_DepthQuality : uint8 {
-	EOculusMR_DepthQuality = 0
-	EOculusMR_DepthQuality = 1
-	EOculusMR_DepthQuality = 2
-	EOculusMR_DepthQuality = 3
+enum class EOculusMR_DepthQuality : uint8_t {
+	EOculusMR_DepthQuality = 0,
+	EOculusMR_DepthQuality = 1,
+	EOculusMR_DepthQuality = 2,
+	EOculusMR_DepthQuality = 3,
 };
 
 // Enum OculusMR.EOculusMR_PostProcessEffects
-enum class EOculusMR_PostProcessEffects : uint8 {
-	EOculusMR_PostProcessEffects = 0
-	EOculusMR_PostProcessEffects = 1
-	EOculusMR_PostProcessEffects = 2
+enum class EOculusMR_PostProcessEffects : uint8_t {
+	EOculusMR_PostProcessEffects = 0,
+	EOculusMR_PostProcessEffects = 1,
+	EOculusMR_PostProcessEffects = 2,
 };
 
 // Enum OculusMR.EOculusMR_VirtualGreenScreenType
-enum class EOculusMR_VirtualGreenScreenType : uint8 {
-	EOculusMR_VirtualGreenScreenType = 0
-	EOculusMR_VirtualGreenScreenType = 1
-	EOculusMR_VirtualGreenScreenType = 2
-	EOculusMR_VirtualGreenScreenType = 3
+enum class EOculusMR_VirtualGreenScreenType : uint8_t {
+	EOculusMR_VirtualGreenScreenType = 0,
+	EOculusMR_VirtualGreenScreenType = 1,
+	EOculusMR_VirtualGreenScreenType = 2,
+	EOculusMR_VirtualGreenScreenType = 3,
 };
 
 // Enum OculusMR.EOculusMR_ClippingReference
-enum class EOculusMR_ClippingReference : uint8 {
-	EOculusMR_ClippingReference = 0
-	EOculusMR_ClippingReference = 1
-	EOculusMR_ClippingReference = 2
+enum class EOculusMR_ClippingReference : uint8_t {
+	EOculusMR_ClippingReference = 0,
+	EOculusMR_ClippingReference = 1,
+	EOculusMR_ClippingReference = 2,
 };
 
 // Enum OculusMR.EOculusMR_CameraDev
-enum class EOculusMR_CameraDev : uint8 {
-	EOculusMR_CameraDev = 0
-	EOculusMR_CameraDev = 1
-	EOculusMR_CameraDev = 2
-	EOculusMR_CameraDevssEffects = 3
-	EOculusMR_CameraDev = 4
+enum class EOculusMR_CameraDev : uint8_t {
+	EOculusMR_CameraDeveference = 0,
+	EOculusMR_CameraDeveference = 1,
+	EOculusMR_CameraDev = 2,
+	EOculusMR_CameraDev = 3,
+	EOculusMR_CameraDev = 4,
 };
 
 // Class OculusMR.OculusMR_BoundaryActor
-class AOculusMR_BoundaryActor : UActor {
+class AOculusMR_BoundaryActor : public UActor {
+
+public:
+
 	struct Unknown BoundaryMeshComponent; // 0x310 (8)
 };
 
 // Class OculusMR.OculusMR_BoundaryMeshComponent
-class UOculusMR_BoundaryMeshComponent : UMeshComponent {
+class UOculusMR_BoundaryMeshComponent : public UMeshComponent {
+
+public:
+
 	enum class Unknow BoundaryType; // 0x4E8 (1)
 	float BottomZ; // 0x4EC (4)
 	float TopZ; // 0x4F0 (4)
@@ -66,7 +72,10 @@ class UOculusMR_BoundaryMeshComponent : UMeshComponent {
 };
 
 // Class OculusMR.OculusMR_CastingCameraActor
-class AOculusMR_CastingCameraActor : ASceneCapture2D {
+class AOculusMR_CastingCameraActor : public ASceneCapture2D {
+
+public:
+
 	struct Unknown VRNotificationComponent; // 0x328 (8)
 	struct Unknown CameraColorTexture; // 0x330 (8)
 	struct Unknown CameraDepthTexture; // 0x338 (8)
@@ -89,7 +98,10 @@ class AOculusMR_CastingCameraActor : ASceneCapture2D {
 };
 
 // Class OculusMR.OculusMR_Settings
-class UOculusMR_Settings : Object {
+class UOculusMR_Settings : public Object {
+
+public:
+
 	enum class Unknow ClippingReference; // 0x28 (1)
 	char bUseTrackedCameraResolution : 0; // 0x29 (1)
 	int32_t WidthPerView; // 0x2C (4)
@@ -111,24 +123,27 @@ class UOculusMR_Settings : Object {
 	char bUseDynamicLighting : 0; // 0x60 (1)
 	enum class Unknow DepthQuality; // 0x61 (1)
 
-	void SetUseDynamicLighting(char Val); // Function OculusMR.OculusMR_Settings.SetUseDynamicLighting(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1896010>
-	void SetIsCasting(char Val); // Function OculusMR.OculusMR_Settings.SetIsCasting(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1895E80>
-	void SetDepthQuality(enum class Unknow Val); // Function OculusMR.OculusMR_Settings.SetDepthQuality(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1895E00>
-	void SetCompositionMethod(enum class Unknow Val); // Function OculusMR.OculusMR_Settings.SetCompositionMethod(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1895CC0>
-	void SetCapturingCamera(enum class Unknow Val); // Function OculusMR.OculusMR_Settings.SetCapturingCamera(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1895C40>
-	void SaveToIni(); // Function OculusMR.OculusMR_Settings.SaveToIni(Final|Native|Public|BlueprintCallable|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1895C20>
-	void LoadFromIni(); // Function OculusMR.OculusMR_Settings.LoadFromIni(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1895C00>
-	char GetUseDynamicLighting(); // Function OculusMR.OculusMR_Settings.GetUseDynamicLighting(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1895B80>
-	char GetIsCasting(); // Function OculusMR.OculusMR_Settings.GetIsCasting(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1895AD0>
-	enum class Unknow GetDepthQuality(); // Function OculusMR.OculusMR_Settings.GetDepthQuality(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1895AB0>
-	enum class Unknow GetCompositionMethod(); // Function OculusMR.OculusMR_Settings.GetCompositionMethod(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1895A90>
-	enum class Unknow GetCapturingCamera(); // Function OculusMR.OculusMR_Settings.GetCapturingCamera(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1895A70>
-	int32_t GetBindToTrackedCameraIndex(); // Function OculusMR.OculusMR_Settings.GetBindToTrackedCameraIndex(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1895A50>
-	void BindToTrackedCameraIndexIfAvailable(int32_t InTrackedCameraIndex); // Function OculusMR.OculusMR_Settings.BindToTrackedCameraIndexIfAvailable(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18959B0>
+	void SetUseDynamicLighting(char Val); // Function OculusMR.OculusMR_Settings.SetUseDynamicLighting(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1897480>
+	void SetIsCasting(char Val); // Function OculusMR.OculusMR_Settings.SetIsCasting(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18972F0>
+	void SetDepthQuality(enum class Unknow Val); // Function OculusMR.OculusMR_Settings.SetDepthQuality(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1897270>
+	void SetCompositionMethod(enum class Unknow Val); // Function OculusMR.OculusMR_Settings.SetCompositionMethod(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1897130>
+	void SetCapturingCamera(enum class Unknow Val); // Function OculusMR.OculusMR_Settings.SetCapturingCamera(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18970B0>
+	void SaveToIni(); // Function OculusMR.OculusMR_Settings.SaveToIni(Final|Native|Public|BlueprintCallable|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1897090>
+	void LoadFromIni(); // Function OculusMR.OculusMR_Settings.LoadFromIni(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1897070>
+	char GetUseDynamicLighting(); // Function OculusMR.OculusMR_Settings.GetUseDynamicLighting(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1896FF0>
+	char GetIsCasting(); // Function OculusMR.OculusMR_Settings.GetIsCasting(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1896F40>
+	enum class Unknow GetDepthQuality(); // Function OculusMR.OculusMR_Settings.GetDepthQuality(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1896F20>
+	enum class Unknow GetCompositionMethod(); // Function OculusMR.OculusMR_Settings.GetCompositionMethod(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1896F00>
+	enum class Unknow GetCapturingCamera(); // Function OculusMR.OculusMR_Settings.GetCapturingCamera(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1896EE0>
+	int32_t GetBindToTrackedCameraIndex(); // Function OculusMR.OculusMR_Settings.GetBindToTrackedCameraIndex(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1896EC0>
+	void BindToTrackedCameraIndexIfAvailable(int32_t InTrackedCameraIndex); // Function OculusMR.OculusMR_Settings.BindToTrackedCameraIndexIfAvailable(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1896E20>
 };
 
 // Class OculusMR.OculusMR_State
-class UOculusMR_State : Object {
+class UOculusMR_State : public Object {
+
+public:
+
 	struct Unknown TrackedCamera; // 0x28 (112)
 	struct Unknown TrackingReferenceComponent; // 0x98 (8)
 	double ScalingFactor; // 0xA0 (8)

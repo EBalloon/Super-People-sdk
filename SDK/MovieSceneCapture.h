@@ -1,38 +1,47 @@
 // Enum MovieSceneCapture.EHDRCaptureGamut
-enum class EHDRCaptureGamut : uint8 {
-	HCGM_Rec709 = 0
-	HCGM_P3DCI = 1
-	HCGM_Rec2020 = 2
-	HCGM_ACES = 3
-	HCGM_ACEScg = 4
-	HCGM_Linear = 5
-	HCGM_MAX = 6
+enum class EHDRCaptureGamut : uint8_t {
+	HCGM_Rec709 = 0,
+	HCGM_P3DCI = 1,
+	HCGM_Rec2020 = 2,
+	HCGM_ACES = 3,
+	HCGM_ACEScg = 4,
+	HCGM_Linear = 5,
+	HCGM_MAX = 6,
 };
 
 // Enum MovieSceneCapture.EMovieSceneCaptureProtocolState
-enum class EMovieSceneCaptureProtocolState : uint8 {
-	EMovieSceneCaptureProtocolState = 0
-	EMovieSceneCaptureProtocolState = 1
-	EMovieSceneCaptureProtocolState = 2
-	EMovieSceneCaptureProtocolState = 3
-	EMovieSceneCaptureProtocolState = 4
+enum class EMovieSceneCaptureProtocolState : uint8_t {
+	EMovieSceneCaptureProtocolState = 0,
+	EMovieSceneCaptureProtocolState = 1,
+	EMovieSceneCaptureProtocolState = 2,
+	EMovieSceneCaptureProtocolState = 3,
+	EMovieSceneCaptureProtocolState = 4,
 };
 
 // Class MovieSceneCapture.MovieSceneCaptureProtocolBase
-class UMovieSceneCaptureProtocolBase : Object {
+class UMovieSceneCaptureProtocolBase : public Object {
+
+public:
+
 	enum class Unknow State; // 0x50 (1)
 
-	char IsCapturing(); // Function MovieSceneCapture.MovieSceneCaptureProtocolBase.IsCapturing(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x35174C0>
-	enum class Unknow GetState(); // Function MovieSceneCapture.MovieSceneCaptureProtocolBase.GetState(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF8680>
+	char IsCapturing(); // Function MovieSceneCapture.MovieSceneCaptureProtocolBase.IsCapturing(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x35187C0>
+	enum class Unknow GetState(); // Function MovieSceneCapture.MovieSceneCaptureProtocolBase.GetState(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EF9990>
 };
 
 // Class MovieSceneCapture.MasterAudioSubmixCaptureProtocol
-class UMasterAudioSubmixCaptureProtocol : UMovieSceneAudioCaptureProtocolBase {
+class UMasterAudioSubmixCaptureProtocol : public UMovieSceneAudioCaptureProtocolBase {
+
+public:
+
 	struct FString Filename; // 0x58 (16)
 };
 
 // Class MovieSceneCapture.CompositionGraphCaptureProtocol
-class UCompositionGraphCaptureProtocol : UMovieSceneImageCaptureProtocolBase {
+class UCompositionGraphCaptureProtocol : public UMovieSceneImageCaptureProtocolBase {
+
+public:
+
 	struct Unknown IncludeRenderPasses; // 0x58 (16)
 	char bCaptureFramesInHDR : 0; // 0x68 (1)
 	int32_t HDRCompressionQuality; // 0x6C (4)
@@ -43,18 +52,27 @@ class UCompositionGraphCaptureProtocol : UMovieSceneImageCaptureProtocolBase {
 };
 
 // Class MovieSceneCapture.CompressedImageSequenceProtocol
-class UCompressedImageSequenceProtocol : UImageSequenceProtocol {
+class UCompressedImageSequenceProtocol : public UImageSequenceProtocol {
+
+public:
+
 	int32_t CompressionQuality; // 0xD8 (4)
 };
 
 // Class MovieSceneCapture.ImageSequenceProtocol_EXR
-class UImageSequenceProtocol_EXR : UImageSequenceProtocol {
+class UImageSequenceProtocol_EXR : public UImageSequenceProtocol {
+
+public:
+
 	char bCompressed : 0; // 0xD8 (1)
 	char CaptureGamut; // 0xD9 (1)
 };
 
 // Class MovieSceneCapture.MovieSceneCapture
-class UMovieSceneCapture : Object {
+class UMovieSceneCapture : public Object {
+
+public:
+
 	struct Unknown ImageCaptureProtocolType; // 0x38 (24)
 	struct Unknown AudioCaptureProtocolType; // 0x50 (24)
 	struct Unknown ImageCaptureProtocol; // 0x68 (8)
@@ -65,53 +83,65 @@ class UMovieSceneCapture : Object {
 	struct FString AdditionalCommandLineArguments; // 0xF0 (16)
 	struct FString InheritedCommandLineArguments; // 0x100 (16)
 
-	void SetImageCaptureProtocolType(struct Unknown* ProtocolType); // Function MovieSceneCapture.MovieSceneCapture.SetImageCaptureProtocolType(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x35177B0>
-	void SetAudioCaptureProtocolType(struct Unknown* ProtocolType); // Function MovieSceneCapture.MovieSceneCapture.SetAudioCaptureProtocolType(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3517730>
-	struct Unknown GetImageCaptureProtocol(); // Function MovieSceneCapture.MovieSceneCapture.GetImageCaptureProtocol(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3517470>
-	struct Unknown GetAudioCaptureProtocol(); // Function MovieSceneCapture.MovieSceneCapture.GetAudioCaptureProtocol(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x35173D0>
+	void SetImageCaptureProtocolType(struct Unknown* ProtocolType); // Function MovieSceneCapture.MovieSceneCapture.SetImageCaptureProtocolType(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3518AB0>
+	void SetAudioCaptureProtocolType(struct Unknown* ProtocolType); // Function MovieSceneCapture.MovieSceneCapture.SetAudioCaptureProtocolType(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3518A30>
+	struct Unknown GetImageCaptureProtocol(); // Function MovieSceneCapture.MovieSceneCapture.GetImageCaptureProtocol(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3518770>
+	struct Unknown GetAudioCaptureProtocol(); // Function MovieSceneCapture.MovieSceneCapture.GetAudioCaptureProtocol(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x35186D0>
 };
 
 // Class MovieSceneCapture.LevelCapture
-class ULevelCapture : UMovieSceneCapture {
+class ULevelCapture : public UMovieSceneCapture {
+
+public:
+
 	char bAutoStartCapture : 0; // 0x220 (1)
 	struct Unknown PrerequisiteActorId; // 0x22C (16)
 };
 
 // Class MovieSceneCapture.UserDefinedCaptureProtocol
-class UUserDefinedCaptureProtocol : UMovieSceneImageCaptureProtocolBase {
+class UUserDefinedCaptureProtocol : public UMovieSceneImageCaptureProtocolBase {
+
+public:
+
 	struct Unknown World; // 0x58 (8)
 
-	void StopCapturingFinalPixels(); // Function MovieSceneCapture.UserDefinedCaptureProtocol.StopCapturingFinalPixels(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x35179C0>
-	void StartCapturingFinalPixels(struct Unknown& StreamID); // Function MovieSceneCapture.UserDefinedCaptureProtocol.StartCapturingFinalPixels(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3517830>
-	void ResolveBuffer(struct Unknown Buffer, struct Unknown& BufferID); // Function MovieSceneCapture.UserDefinedCaptureProtocol.ResolveBuffer(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3517560>
-	void OnWarmUp(); // Function MovieSceneCapture.UserDefinedCaptureProtocol.OnWarmUp(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
-	void OnTick(); // Function MovieSceneCapture.UserDefinedCaptureProtocol.OnTick(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
-	void OnStartCapture(); // Function MovieSceneCapture.UserDefinedCaptureProtocol.OnStartCapture(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
-	char OnSetup(); // Function MovieSceneCapture.UserDefinedCaptureProtocol.OnSetup(Native|Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3517530>
-	void OnPreTick(); // Function MovieSceneCapture.UserDefinedCaptureProtocol.OnPreTick(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
-	void OnPixelsReceived(struct Unknown& Pixels, struct Unknown& ID, struct Unknown FrameMetrics); // Function MovieSceneCapture.UserDefinedCaptureProtocol.OnPixelsReceived(Event|Protected|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
-	void OnPauseCapture(); // Function MovieSceneCapture.UserDefinedCaptureProtocol.OnPauseCapture(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
-	void OnFinalize(); // Function MovieSceneCapture.UserDefinedCaptureProtocol.OnFinalize(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
-	void OnCaptureFrame(); // Function MovieSceneCapture.UserDefinedCaptureProtocol.OnCaptureFrame(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
-	char OnCanFinalize(); // Function MovieSceneCapture.UserDefinedCaptureProtocol.OnCanFinalize(Native|Event|Protected|BlueprintEvent|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3517500>
-	void OnBeginFinalize(); // Function MovieSceneCapture.UserDefinedCaptureProtocol.OnBeginFinalize(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
-	struct Unknown GetCurrentFrameMetrics(); // Function MovieSceneCapture.UserDefinedCaptureProtocol.GetCurrentFrameMetrics(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3517450>
-	struct FString GenerateFilename(struct Unknown& InFrameMetrics); // Function MovieSceneCapture.UserDefinedCaptureProtocol.GenerateFilename(Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3517050>
+	void StopCapturingFinalPixels(); // Function MovieSceneCapture.UserDefinedCaptureProtocol.StopCapturingFinalPixels(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3518CC0>
+	void StartCapturingFinalPixels(struct Unknown& StreamID); // Function MovieSceneCapture.UserDefinedCaptureProtocol.StartCapturingFinalPixels(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3518B30>
+	void ResolveBuffer(struct Unknown Buffer, struct Unknown& BufferID); // Function MovieSceneCapture.UserDefinedCaptureProtocol.ResolveBuffer(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3518860>
+	void OnWarmUp(); // Function MovieSceneCapture.UserDefinedCaptureProtocol.OnWarmUp(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void OnTick(); // Function MovieSceneCapture.UserDefinedCaptureProtocol.OnTick(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void OnStartCapture(); // Function MovieSceneCapture.UserDefinedCaptureProtocol.OnStartCapture(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	char OnSetup(); // Function MovieSceneCapture.UserDefinedCaptureProtocol.OnSetup(Native|Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3518830>
+	void OnPreTick(); // Function MovieSceneCapture.UserDefinedCaptureProtocol.OnPreTick(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void OnPixelsReceived(struct Unknown& Pixels, struct Unknown& ID, struct Unknown FrameMetrics); // Function MovieSceneCapture.UserDefinedCaptureProtocol.OnPixelsReceived(Event|Protected|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void OnPauseCapture(); // Function MovieSceneCapture.UserDefinedCaptureProtocol.OnPauseCapture(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void OnFinalize(); // Function MovieSceneCapture.UserDefinedCaptureProtocol.OnFinalize(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void OnCaptureFrame(); // Function MovieSceneCapture.UserDefinedCaptureProtocol.OnCaptureFrame(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	char OnCanFinalize(); // Function MovieSceneCapture.UserDefinedCaptureProtocol.OnCanFinalize(Native|Event|Protected|BlueprintEvent|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3518800>
+	void OnBeginFinalize(); // Function MovieSceneCapture.UserDefinedCaptureProtocol.OnBeginFinalize(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	struct Unknown GetCurrentFrameMetrics(); // Function MovieSceneCapture.UserDefinedCaptureProtocol.GetCurrentFrameMetrics(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3518750>
+	struct FString GenerateFilename(struct Unknown& InFrameMetrics); // Function MovieSceneCapture.UserDefinedCaptureProtocol.GenerateFilename(Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3518350>
 };
 
 // Class MovieSceneCapture.UserDefinedImageCaptureProtocol
-class UUserDefinedImageCaptureProtocol : UUserDefinedCaptureProtocol {
+class UUserDefinedImageCaptureProtocol : public UUserDefinedCaptureProtocol {
+
+public:
+
 	enum class Unknow Format; // 0xD8 (1)
 	char bEnableCompression : 0; // 0xD9 (1)
 	int32_t CompressionQuality; // 0xDC (4)
 
-	void WriteImageToDisk(struct Unknown& PixelData, struct Unknown& StreamID, struct Unknown& FrameMetrics, char bCopyImageData); // Function MovieSceneCapture.UserDefinedImageCaptureProtocol.WriteImageToDisk(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x35179E0>
-	struct FString GenerateFilenameForCurrentFrame(); // Function MovieSceneCapture.UserDefinedImageCaptureProtocol.GenerateFilenameForCurrentFrame(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3517350>
-	struct FString GenerateFilenameForBuffer(struct Unknown Buffer, struct Unknown& StreamID); // Function MovieSceneCapture.UserDefinedImageCaptureProtocol.GenerateFilenameForBuffer(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3517140>
+	void WriteImageToDisk(struct Unknown& PixelData, struct Unknown& StreamID, struct Unknown& FrameMetrics, char bCopyImageData); // Function MovieSceneCapture.UserDefinedImageCaptureProtocol.WriteImageToDisk(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3518CE0>
+	struct FString GenerateFilenameForCurrentFrame(); // Function MovieSceneCapture.UserDefinedImageCaptureProtocol.GenerateFilenameForCurrentFrame(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3518650>
+	struct FString GenerateFilenameForBuffer(struct Unknown Buffer, struct Unknown& StreamID); // Function MovieSceneCapture.UserDefinedImageCaptureProtocol.GenerateFilenameForBuffer(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3518440>
 };
 
 // Class MovieSceneCapture.VideoCaptureProtocol
-class UVideoCaptureProtocol : UFrameGrabberProtocol {
+class UVideoCaptureProtocol : public UFrameGrabberProtocol {
+
+public:
+
 	char bUseCompression : 0; // 0x68 (1)
 	float CompressionQuality; // 0x6C (4)
 };
@@ -162,6 +192,6 @@ struct FCaptureResolution {
 
 // ScriptStruct MovieSceneCapture.CapturedPixelsID
 struct FCapturedPixelsID {
-	struct TMap<Unknown, Unknown>Unknown Identifiers; // 0x0 (80)
+	struct TMap<Unknown, Unknown> Identifiers; // 0x0 (80)
 };
 

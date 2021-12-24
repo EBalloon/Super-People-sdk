@@ -1,5 +1,8 @@
 // AnimBlueprintGeneratedClass ABP_PlatedJeep.ABP_PlatedJeep_C
-class UABP_PlatedJeep_C : UBravoHotelVehicleAnimInstance {
+class UABP_PlatedJeep_C : public UBravoHotelVehicleAnimInstance {
+
+public:
+
 	struct Unknown UberGraphFrame; // 0xA20 (8)
 	struct Unknown AnimGraphNode_ComponentToLocalSpace_3; // 0xA28 (32)
 	struct Unknown AnimGraphNode_CopyBone_16; // 0xA48 (240)
@@ -65,22 +68,22 @@ class UABP_PlatedJeep_C : UBravoHotelVehicleAnimInstance {
 	struct Unknown AnimGraphNode_ComponentToLocalSpace; // 0x2A28 (32)
 	struct Unknown AnimGraphNode_LayeredBoneBlend; // 0x2A48 (192)
 
-	void AnimGraph(struct Unknown& AnimGraph); // Function ABP_PlatedJeep.ABP_PlatedJeep_C.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
-	void EvaluateGraphExposedInputs_Exec(); // Function ABP_PlatedJeep.ABP_PlatedJeep_C.EvaluateGraphExposedInputs_Exec(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
-	void EvaluateGraphExposedInputs_Exec(); // Function ABP_PlatedJeep.ABP_PlatedJeep_C.EvaluateGraphExposedInputs_Exec(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
-	void EvaluateGraphExposedInputs_Exec(); // Function ABP_PlatedJeep.ABP_PlatedJeep_C.EvaluateGraphExposedInputs_Exec(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
-	void EvaluateGraphExposedInputs_Exec(); // Function ABP_PlatedJeep.ABP_PlatedJeep_C.EvaluateGraphExposedInputs_Exec(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
-	void EvaluateGraphExposedInputs_Exec(); // Function ABP_PlatedJeep.ABP_PlatedJeep_C.EvaluateGraphExposedInputs_Exec(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
-	void EvaluateGraphExposedInputs_Exec(); // Function ABP_PlatedJeep.ABP_PlatedJeep_C.EvaluateGraphExposedInputs_Exec(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
-	void EvaluateGraphExposedInputs_Exec(); // Function ABP_PlatedJeep.ABP_PlatedJeep_C.EvaluateGraphExposedInputs_Exec(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
-	void EvaluateGraphExposedInputs_Exec(); // Function ABP_PlatedJeep.ABP_PlatedJeep_C.EvaluateGraphExposedInputs_Exec(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
-	void EvaluateGraphExposedInputs_Exec(); // Function ABP_PlatedJeep.ABP_PlatedJeep_C.EvaluateGraphExposedInputs_Exec(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
-	void EvaluateGraphExposedInputs_Exec(); // Function ABP_PlatedJeep.ABP_PlatedJeep_C.EvaluateGraphExposedInputs_Exec(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
-	void EvaluateGraphExposedInputs_Exec(); // Function ABP_PlatedJeep.ABP_PlatedJeep_C.EvaluateGraphExposedInputs_Exec(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
-	void EvaluateGraphExposedInputs_Exec(); // Function ABP_PlatedJeep.ABP_PlatedJeep_C.EvaluateGraphExposedInputs_Exec(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
-	void BlueprintUpdateAnimation(float DeltaTimeX); // Function ABP_PlatedJeep.ABP_PlatedJeep_C.BlueprintUpdateAnimation(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
-	void AnimNotify_FPP_Entered_Idle(); // Function ABP_PlatedJeep.ABP_PlatedJeep_C.AnimNotify_FPP_Entered_Idle(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
-	void AnimNotify_FPP_Left_Idle(); // Function ABP_PlatedJeep.ABP_PlatedJeep_C.AnimNotify_FPP_Left_Idle(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
-	void ExecuteUbergraph_ABP_PlatedJeep(int32_t EntryPoint); // Function ABP_PlatedJeep.ABP_PlatedJeep_C.ExecuteUbergraph_ABP_PlatedJeep(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void AnimGraph(struct Unknown& AnimGraph); // Function ABP_PlatedJeep.ABP_PlatedJeep_C.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlatedJeep_AnimGraphNode_TransitionResult_5735A6E94E8A1EAB2639F08C907A9CFF(); // Function ABP_PlatedJeep.ABP_PlatedJeep_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlatedJeep_AnimGraphNode_TransitionResult_5735A6E94E8A1EAB2639F08C907A9CFF(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlatedJeep_AnimGraphNode_TransitionResult_9A78FECE47813364C3FDD694B3984F8F(); // Function ABP_PlatedJeep.ABP_PlatedJeep_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlatedJeep_AnimGraphNode_TransitionResult_9A78FECE47813364C3FDD694B3984F8F(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlatedJeep_AnimGraphNode_TransitionResult_E830D5EA43DF6FE27137B8BC1052A00B(); // Function ABP_PlatedJeep.ABP_PlatedJeep_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlatedJeep_AnimGraphNode_TransitionResult_E830D5EA43DF6FE27137B8BC1052A00B(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlatedJeep_AnimGraphNode_TransitionResult_F96C80574229B65107F70C97161243DA(); // Function ABP_PlatedJeep.ABP_PlatedJeep_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlatedJeep_AnimGraphNode_TransitionResult_F96C80574229B65107F70C97161243DA(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlatedJeep_AnimGraphNode_TransitionResult_5589D46843597AB5B47ACC9BC26D0FC1(); // Function ABP_PlatedJeep.ABP_PlatedJeep_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlatedJeep_AnimGraphNode_TransitionResult_5589D46843597AB5B47ACC9BC26D0FC1(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlatedJeep_AnimGraphNode_TransitionResult_70765FEE42073036F57DCCBFDB62BB26(); // Function ABP_PlatedJeep.ABP_PlatedJeep_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlatedJeep_AnimGraphNode_TransitionResult_70765FEE42073036F57DCCBFDB62BB26(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlatedJeep_AnimGraphNode_TransitionResult_E17226244C5E52A4311F7BB60D26BDE0(); // Function ABP_PlatedJeep.ABP_PlatedJeep_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlatedJeep_AnimGraphNode_TransitionResult_E17226244C5E52A4311F7BB60D26BDE0(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlatedJeep_AnimGraphNode_TransitionResult_C13210FA46B5E3B688BFF198B4375FC0(); // Function ABP_PlatedJeep.ABP_PlatedJeep_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlatedJeep_AnimGraphNode_TransitionResult_C13210FA46B5E3B688BFF198B4375FC0(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlatedJeep_AnimGraphNode_TransitionResult_2978F3D148FFA6C43A28B1A95671198C(); // Function ABP_PlatedJeep.ABP_PlatedJeep_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlatedJeep_AnimGraphNode_TransitionResult_2978F3D148FFA6C43A28B1A95671198C(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlatedJeep_AnimGraphNode_TransitionResult_D03DD7FC4663B57292AA9891C581826C(); // Function ABP_PlatedJeep.ABP_PlatedJeep_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlatedJeep_AnimGraphNode_TransitionResult_D03DD7FC4663B57292AA9891C581826C(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlatedJeep_AnimGraphNode_TransitionResult_998504DC4FD39C23DC9DD29930162666(); // Function ABP_PlatedJeep.ABP_PlatedJeep_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlatedJeep_AnimGraphNode_TransitionResult_998504DC4FD39C23DC9DD29930162666(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlatedJeep_AnimGraphNode_TransitionResult_EF3AC6144C592F1FA2CC08BF7381CB66(); // Function ABP_PlatedJeep.ABP_PlatedJeep_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlatedJeep_AnimGraphNode_TransitionResult_EF3AC6144C592F1FA2CC08BF7381CB66(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void BlueprintUpdateAnimation(float DeltaTimeX); // Function ABP_PlatedJeep.ABP_PlatedJeep_C.BlueprintUpdateAnimation(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void AnimNotify_FPP_Entered_Idle(); // Function ABP_PlatedJeep.ABP_PlatedJeep_C.AnimNotify_FPP_Entered_Idle(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void AnimNotify_FPP_Left_Idle(); // Function ABP_PlatedJeep.ABP_PlatedJeep_C.AnimNotify_FPP_Left_Idle(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void ExecuteUbergraph_ABP_PlatedJeep(int32_t EntryPoint); // Function ABP_PlatedJeep.ABP_PlatedJeep_C.ExecuteUbergraph_ABP_PlatedJeep(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 };
 

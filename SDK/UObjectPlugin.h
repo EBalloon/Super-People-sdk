@@ -1,5 +1,8 @@
 // Class UObjectPlugin.MyPluginObject
-class UMyPluginObject : Object {
+class UMyPluginObject : public Object {
+
+public:
+
 	struct Unknown MyStruct; // 0x28 (16)
 };
 

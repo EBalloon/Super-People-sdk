@@ -1,5 +1,8 @@
 // WidgetBlueprintGeneratedClass ControlWidget.ControlWidget_C
-class UControlWidget_C : UBravoHotelSettingSubWidget {
+class UControlWidget_C : public UBravoHotelSettingSubWidget {
+
+public:
+
 	struct Unknown UberGraphFrame; // 0x298 (8)
 	struct Unknown 15XSensitivity; // 0x2A0 (8)
 	struct Unknown 2XSensitivity; // 0x2A8 (8)
@@ -25,15 +28,15 @@ class UControlWidget_C : UBravoHotelSettingSubWidget {
 	struct Unknown VehicleDriverSensitivity; // 0x348 (8)
 	struct Unknown VerticalBox_1; // 0x350 (8)
 	struct Unknown VerticlaModifier; // 0x358 (8)
-	struct Unknown m; // 0x360 (8)
-	struct Unknown m; // 0x368 (8)
-	struct Unknown m; // 0x370 (8)
+	struct Unknown ; // 0x360 (8)
+	struct Unknown ; // 0x368 (8)
+	struct Unknown ; // 0x370 (8)
 	struct Unknown ScrollBarTimer; // 0x378 (8)
 
-	void Construct(); // Function ControlWidget.ControlWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
-	void DelegateChangeValue_Event_1(struct Unknown Value); // Function ControlWidget.ControlWidget_C.DelegateChangeValue_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
-	void BndEvt__ScrollBox_54_K2Node_ComponentBoundEvent_0_OnUserScrolledEvent__DelegateSignature(float CurrentOffset); // Function ControlWidget.ControlWidget_C.BndEvt__ScrollBox_54_K2Node_ComponentBoundEvent_0_OnUserScrolledEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
-	void m_1(); // Function ControlWidget.ControlWidget_C.m_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
-	void ExecuteUbergraph_ControlWidget(int32_t EntryPoint); // Function ControlWidget.ControlWidget_C.ExecuteUbergraph_ControlWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void Construct(); // Function ControlWidget.ControlWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void DelegateChangeValue_Event_1(struct Unknown Value); // Function ControlWidget.ControlWidget_C.DelegateChangeValue_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void BndEvt__ScrollBox_54_K2Node_Com(float CurrentOffset); // Function ControlWidget.ControlWidget_C.BndEvt__ScrollBox_54_K2Node_Com(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void (); // Function ControlWidget.ControlWidget_C.(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void ExecuteUbergraph_ControlWidget(int32_t EntryPoint); // Function ControlWidget.ControlWidget_C.ExecuteUbergraph_ControlWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 };
 

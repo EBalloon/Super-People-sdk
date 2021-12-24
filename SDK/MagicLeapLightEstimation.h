@@ -1,14 +1,17 @@
 // Enum MagicLeapLightEstimation.EMagicLeapLightEstimationCamera
-enum class EMagicLeapLightEstimationCamera : uint8 {
-	EMagicLeapLightEstimationCamera = 0
-	EMagicLeapLightEstimationCamera = 1
-	EMagicLeapLightEstimationCamera = 2
-	EMagicLeapLightEstimationCamera = 3
-	EMagicLeapLightEstimationCamera = 4
+enum class EMagicLeapLightEstimationCamera : uint8_t {
+	EMagicLeapLightEstimationCamera = 0,
+	EMagicLeapLightEstimationCamera = 1,
+	EMagicLeapLightEstimationCamera = 2,
+	EMagicLeapLightEstimationCamera = 3,
+	EMagicLeapLightEstimationCamera = 4,
 };
 
 // Class MagicLeapLightEstimation.MagicLeapLightingTrackingComponent
-class UMagicLeapLightingTrackingComponent : UActorComponent {
+class UMagicLeapLightingTrackingComponent : public UActorComponent {
+
+public:
+
 	char UseGlobalAmbience : 0; // 0xB0 (1)
 	char UseColorTemp : 0; // 0xB1 (1)
 };

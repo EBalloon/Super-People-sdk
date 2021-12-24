@@ -1,15 +1,18 @@
 // Enum UdpMessaging.EUdpMessageFormat
-enum class EUdpMessageFormat : uint8 {
-	EUdpMessageFormat = 0
-	EUdpMessageFormat = 1
-	EUdpMessageFormat = 2
-	EUdpMessageFormat = 3
-	EUdpMessageFormat = 4
-	EUdpMessageFormat = 5
+enum class EUdpMessageFormat : uint8_t {
+	EUdpMessageFormat = 0,
+	EUdpMessageFormat = 1,
+	EUdpMessageFormat = 2,
+	EUdpMessageFormat = 3,
+	EUdpMessageFormat = 4,
+	EUdpMessageFormat = 5,
 };
 
 // Class UdpMessaging.UdpMessagingSettings
-class UUdpMessagingSettings : Object {
+class UUdpMessagingSettings : public Object {
+
+public:
+
 	char EnableTransport : 0; // 0x28 (1)
 	char bAutoRepair : 0; // 0x29 (1)
 	char bStopServiceWhenAppDeactivates : 0; // 0x2A (1)

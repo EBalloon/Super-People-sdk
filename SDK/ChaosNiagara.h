@@ -1,72 +1,75 @@
 // Enum ChaosNiagara.ELocationZToSpawnEnum
-enum class ELocationZToSpawnEnum : uint8 {
-	ELocationZToSpawnEnum = 0
-	ELocationZToSpawnEnum = 1
-	ELocationZToSpawnEnum = 2
-	ELocationZToSpawnEnum = 3
-	ELocationZToSpawnEnum = 4
+enum class ELocationZToSpawnEnum : uint8_t {
+	ELocationZToSpawnEnum = 0,
+	ELocationZToSpawnEnum = 1,
+	ELocationZToSpawnEnum = 2,
+	ELocationZToSpawnEnum = 3,
+	ELocationZToSpawnEnum = 4,
 };
 
 // Enum ChaosNiagara.ELocationYToSpawnEnum
-enum class ELocationYToSpawnEnum : uint8 {
-	ELocationYToSpawnEnum = 0
-	ELocationYToSpawnEnum = 1
-	ELocationYToSpawnEnum = 2
-	ELocationYToSpawnEnum = 3
-	ELocationYToSpawnEnum = 4
+enum class ELocationYToSpawnEnum : uint8_t {
+	ELocationYToSpawnEnum = 0,
+	ELocationYToSpawnEnum = 1,
+	ELocationYToSpawnEnum = 2,
+	ELocationYToSpawnEnum = 3,
+	ELocationYToSpawnEnum = 4,
 };
 
 // Enum ChaosNiagara.ELocationXToSpawnEnum
-enum class ELocationXToSpawnEnum : uint8 {
-	ELocationXToSpawnEnum = 0
-	ELocationXToSpawnEnum = 1
-	ELocationXToSpawnEnum = 2
-	ELocationXToSpawnEnum = 3
-	ELocationXToSpawnEnum = 4
+enum class ELocationXToSpawnEnum : uint8_t {
+	ELocationXToSpawnEnum = 0,
+	ELocationXToSpawnEnum = 1,
+	ELocationXToSpawnEnum = 2,
+	ELocationXToSpawnEnum = 3,
+	ELocationXToSpawnEnum = 4,
 };
 
 // Enum ChaosNiagara.ELocationFilteringModeEnum
-enum class ELocationFilteringModeEnum : uint8 {
-	ELocationFilteringModeEnum = 0
-	ELocationFilteringModeEnum = 1
-	ELocationFilteringModeEnum = 2
+enum class ELocationFilteringModeEnum : uint8_t {
+	ELocationFilteringModeEnum = 0,
+	ELocationFilteringModeEnum = 1,
+	ELocationFilteringModeEnum = 2,
 };
 
 // Enum ChaosNiagara.EDataSourceTypeEnum
-enum class EDataSourceTypeEnum : uint8 {
-	EDataSourceTypeEnum = 0
-	EDataSourceTypeEnum = 1
-	EDataSourceTypeEnum = 2
-	EDataSourceTypeEnum = 3
+enum class EDataSourceTypeEnum : uint8_t {
+	EDataSourceTypeEnum = 0,
+	EDataSourceTypeEnum = 1,
+	EDataSourceTypeEnum = 2,
+	EDataSourceTypeEnum = 3,
 };
 
 // Enum ChaosNiagara.EDebugTypeEnum
-enum class EDebugTypeEnum : uint8 {
-	EDebugTypeEnum = 0
-	EDebugTypeEnum = 1
-	EDebugTypeEnum = 2
-	EDebugTypeEnum = 3
+enum class EDebugTypeEnum : uint8_t {
+	EDebugTypeEnum = 0,
+	EDebugTypeEnum = 1,
+	EDebugTypeEnum = 2,
+	EDebugTypeEnum = 3,
 };
 
 // Enum ChaosNiagara.ERandomVelocityGenerationTypeEnum
-enum class ERandomVelocityGenerationTypeEnum : uint8 {
-	ERandomVelocityGenerationTypeEnum = 0
-	ERandomVelocityGenerationTypeEnum = 1
-	ERandomVelocityGenerationTypeEnum = 2
-	ERandomVelocityGenerationTypeEnum = 3
+enum class ERandomVelocityGenerationTypeEnum : uint8_t {
+	ERandomVelocityGenerationTypeEnum = 0,
+	ERandomVelocityGenerationTypeEnum = 1,
+	ERandomVelocityGenerationTypeEnum = 2,
+	ERandomVelocityGenerationTypeEnum = 3,
 };
 
 // Enum ChaosNiagara.EDataSortTypeEnum
-enum class EDataSortTypeEnum : uint8 {
-	EDataSortTypeEnum = 0
-	EDataSortTypeEnum = 1
-	EDataSortTypeEnum = 2
-	EDataSortTypeEnum = 3
-	EDataSortTypeEnum = 4
+enum class EDataSortTypeEnum : uint8_t {
+	EDataSortTypeEnum = 0,
+	EDataSortTypeEnum = 1,
+	EDataSortTypeEnum = 2,
+	EDataSortTypeEnum = 3,
+	EDataSortTypeEnum = 4,
 };
 
 // Class ChaosNiagara.NiagaraDataInterfaceChaosDestruction
-class UNiagaraDataInterfaceChaosDestruction : UNiagaraDataInterface {
+class UNiagaraDataInterfaceChaosDestruction : public UNiagaraDataInterface {
+
+public:
+
 	struct TSet<Unknown> ChaosSolverActorSet; // 0x30 (80)
 	enum class Unknow DataSourceType; // 0x80 (1)
 	int32_t DataProcessFrequency; // 0x84 (4)

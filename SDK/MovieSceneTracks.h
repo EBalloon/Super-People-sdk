@@ -1,39 +1,42 @@
 // Enum MovieSceneTracks.MovieScene3DPathSection_Axis
-enum class MovieScene3DPathSection_Axis : uint8 {
-	MovieScene3DPathSection_Axis = 0
-	MovieScene3DPathSection_Axis = 1
-	MovieScene3DPathSection_Axis = 2
-	MovieScene3DPathSection_Axis = 3
-	MovieScene3DPathSection_Axis = 4
-	MovieScene3DPathSection_Axis = 5
-	MovieScene3DPathSection_Axis = 6
+enum class MovieScene3DPathSection_Axis : uint8_t {
+	MovieScene3DPathSection_Axis = 0,
+	MovieScene3DPathSection_Axis = 1,
+	MovieScene3DPathSection_Axis = 2,
+	MovieScene3DPathSection_Axis = 3,
+	MovieScene3DPathSection_Axis = 4,
+	MovieScene3DPathSection_Axis = 5,
+	MovieScene3DPathSection_Axis = 6,
 };
 
 // Enum MovieSceneTracks.EFireEventsAtPosition
-enum class EFireEventsAtPosition : uint8 {
-	EFireEventsAtPosition = 0
-	EFireEventsAtPosition = 1
-	EFireEventsAtPosition = 2
-	EFireEventsAtPosition = 3
+enum class EFireEventsAtPosition : uint8_t {
+	EFireEventsAtPosition = 0,
+	EFireEventsAtPosition = 1,
+	EFireEventsAtPosition = 2,
+	EFireEventsAtPosition = 3,
 };
 
 // Enum MovieSceneTracks.ELevelVisibility
-enum class ELevelVisibility : uint8 {
-	ELevelVisibility = 0
-	ELevelVisibility = 1
-	ELevelVisibility = 2
+enum class ELevelVisibility : uint8_t {
+	ELevelVisibility = 0,
+	ELevelVisibility = 1,
+	ELevelVisibility = 2,
 };
 
 // Enum MovieSceneTracks.EParticleKey
-enum class EParticleKey : uint8 {
-	EParticleKey = 0
-	EParticleKey = 1
-	EParticleKey = 2
-	EParticleKey = 3
+enum class EParticleKey : uint8_t {
+	EParticleKey = 0,
+	EParticleKey = 1,
+	EParticleKey = 2,
+	EParticleKey = 3,
 };
 
 // Class MovieSceneTracks.MovieScenePropertyTrack
-class UMovieScenePropertyTrack : UMovieSceneNameableTrack {
+class UMovieScenePropertyTrack : public UMovieSceneNameableTrack {
+
+public:
+
 	struct Unknown SectionToKey; // 0x58 (8)
 	struct FName PropertyName; // 0x60 (8)
 	struct FString PropertyPath; // 0x68 (16)
@@ -41,16 +44,22 @@ class UMovieScenePropertyTrack : UMovieSceneNameableTrack {
 };
 
 // Class MovieSceneTracks.MovieScene3DConstraintSection
-class UMovieScene3DConstraintSection : UMovieSceneSection {
+class UMovieScene3DConstraintSection : public UMovieSceneSection {
+
+public:
+
 	struct Unknown ConstraintId; // 0xE0 (16)
 	struct Unknown ConstraintBindingID; // 0xF0 (24)
 
-	void SetConstraintBindingID(struct Unknown& InConstraintBindingID); // Function MovieSceneTracks.MovieScene3DConstraintSection.SetConstraintBindingID(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x328FCA0>
-	struct Unknown GetConstraintBindingID(); // Function MovieSceneTracks.MovieScene3DConstraintSection.GetConstraintBindingID(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x328FC20>
+	void SetConstraintBindingID(struct Unknown& InConstraintBindingID); // Function MovieSceneTracks.MovieScene3DConstraintSection.SetConstraintBindingID(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3290FB0>
+	struct Unknown GetConstraintBindingID(); // Function MovieSceneTracks.MovieScene3DConstraintSection.GetConstraintBindingID(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3290F30>
 };
 
 // Class MovieSceneTracks.MovieScene3DAttachSection
-class UMovieScene3DAttachSection : UMovieScene3DConstraintSection {
+class UMovieScene3DAttachSection : public UMovieScene3DConstraintSection {
+
+public:
+
 	struct FName AttachSocketName; // 0x108 (8)
 	struct FName AttachComponentName; // 0x110 (8)
 	enum class Unknow AttachmentLocationRule; // 0x118 (1)
@@ -62,12 +71,18 @@ class UMovieScene3DAttachSection : UMovieScene3DConstraintSection {
 };
 
 // Class MovieSceneTracks.MovieScene3DConstraintTrack
-class UMovieScene3DConstraintTrack : UMovieSceneTrack {
+class UMovieScene3DConstraintTrack : public UMovieSceneTrack {
+
+public:
+
 	struct TArray<Unknown> ConstraintSections; // 0x58 (16)
 };
 
 // Class MovieSceneTracks.MovieScene3DPathSection
-class UMovieScene3DPathSection : UMovieScene3DConstraintSection {
+class UMovieScene3DPathSection : public UMovieScene3DConstraintSection {
+
+public:
+
 	struct Unknown TimingCurve; // 0x108 (160)
 	enum class Unknow FrontAxisEnum; // 0x1A8 (1)
 	enum class Unknow UpAxisEnum; // 0x1A9 (1)
@@ -77,7 +92,10 @@ class UMovieScene3DPathSection : UMovieScene3DConstraintSection {
 };
 
 // Class MovieSceneTracks.MovieScene3DTransformSection
-class UMovieScene3DTransformSection : UMovieSceneSection {
+class UMovieScene3DTransformSection : public UMovieSceneSection {
+
+public:
+
 	struct Unknown TransformMask; // 0xE0 (4)
 	struct Unknown Translation[0x3]; // 0xE8 (480)
 	struct Unknown Rotation[0x3]; // 0x2C8 (480)
@@ -87,14 +105,20 @@ class UMovieScene3DTransformSection : UMovieSceneSection {
 };
 
 // Class MovieSceneTracks.MovieSceneActorReferenceSection
-class UMovieSceneActorReferenceSection : UMovieSceneSection {
+class UMovieSceneActorReferenceSection : public UMovieSceneSection {
+
+public:
+
 	struct Unknown ActorReferenceData; // 0xE0 (176)
 	struct Unknown ActorGuidIndexCurve; // 0x190 (128)
 	struct TArray<Unknown> ActorGuidStrings; // 0x210 (16)
 };
 
 // Class MovieSceneTracks.MovieSceneAudioSection
-class UMovieSceneAudioSection : UMovieSceneSection {
+class UMovieSceneAudioSection : public UMovieSceneSection {
+
+public:
+
 	struct Unknown Sound; // 0xE0 (8)
 	struct Unknown StartFrameOffset; // 0xE8 (4)
 	float StartOffset; // 0xEC (4)
@@ -111,35 +135,50 @@ class UMovieSceneAudioSection : UMovieSceneSection {
 	struct FMulticastInlineDelegate OnAudioFinished; // 0x310 (16)
 	struct FMulticastInlineDelegate OnAudioPlaybackPercent; // 0x320 (16)
 
-	void SetStartOffset(struct Unknown InStartOffset); // Function MovieSceneTracks.MovieSceneAudioSection.SetStartOffset(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x328FDE0>
-	void SetSound(struct Unknown InSound); // Function MovieSceneTracks.MovieSceneAudioSection.SetSound(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x328FD60>
-	struct Unknown GetStartOffset(); // Function MovieSceneTracks.MovieSceneAudioSection.GetStartOffset(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x328FC80>
-	struct Unknown GetSound(); // Function MovieSceneTracks.MovieSceneAudioSection.GetSound(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x328FC60>
+	void SetStartOffset(struct Unknown InStartOffset); // Function MovieSceneTracks.MovieSceneAudioSection.SetStartOffset(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x32910F0>
+	void SetSound(struct Unknown InSound); // Function MovieSceneTracks.MovieSceneAudioSection.SetSound(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3291070>
+	struct Unknown GetStartOffset(); // Function MovieSceneTracks.MovieSceneAudioSection.GetStartOffset(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3290F90>
+	struct Unknown GetSound(); // Function MovieSceneTracks.MovieSceneAudioSection.GetSound(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3290F70>
 };
 
 // Class MovieSceneTracks.MovieSceneAudioTrack
-class UMovieSceneAudioTrack : UMovieSceneNameableTrack {
+class UMovieSceneAudioTrack : public UMovieSceneNameableTrack {
+
+public:
+
 	struct TArray<Unknown> AudioSections; // 0x58 (16)
 };
 
 // Class MovieSceneTracks.MovieSceneBoolSection
-class UMovieSceneBoolSection : UMovieSceneSection {
+class UMovieSceneBoolSection : public UMovieSceneSection {
+
+public:
+
 	char DefaultValue : 0; // 0xE0 (1)
 	struct Unknown BoolCurve; // 0xE8 (144)
 };
 
 // Class MovieSceneTracks.MovieSceneByteSection
-class UMovieSceneByteSection : UMovieSceneSection {
+class UMovieSceneByteSection : public UMovieSceneSection {
+
+public:
+
 	struct Unknown ByteCurve; // 0xE0 (152)
 };
 
 // Class MovieSceneTracks.MovieSceneByteTrack
-class UMovieSceneByteTrack : UMovieScenePropertyTrack {
+class UMovieSceneByteTrack : public UMovieScenePropertyTrack {
+
+public:
+
 	struct Unknown Enum; // 0x88 (8)
 };
 
 // Class MovieSceneTracks.MovieSceneCameraAnimSection
-class UMovieSceneCameraAnimSection : UMovieSceneSection {
+class UMovieSceneCameraAnimSection : public UMovieSceneSection {
+
+public:
+
 	struct Unknown AnimData; // 0xE0 (32)
 	struct Unknown CameraAnim; // 0x100 (8)
 	float PlayRate; // 0x108 (4)
@@ -150,27 +189,39 @@ class UMovieSceneCameraAnimSection : UMovieSceneSection {
 };
 
 // Class MovieSceneTracks.MovieSceneCameraAnimTrack
-class UMovieSceneCameraAnimTrack : UMovieSceneNameableTrack {
+class UMovieSceneCameraAnimTrack : public UMovieSceneNameableTrack {
+
+public:
+
 	struct TArray<Unknown> CameraAnimSections; // 0x58 (16)
 };
 
 // Class MovieSceneTracks.MovieSceneCameraCutSection
-class UMovieSceneCameraCutSection : UMovieSceneSection {
+class UMovieSceneCameraCutSection : public UMovieSceneSection {
+
+public:
+
 	struct Unknown CameraGuid; // 0xE0 (16)
 	struct Unknown CameraBindingID; // 0xF0 (24)
 
-	void SetCameraBindingID(struct Unknown& InCameraBindingID); // Function MovieSceneTracks.MovieSceneCameraCutSection.SetCameraBindingID(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3297570>
-	struct Unknown GetCameraBindingID(); // Function MovieSceneTracks.MovieSceneCameraCutSection.GetCameraBindingID(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x328FC20>
+	void SetCameraBindingID(struct Unknown& InCameraBindingID); // Function MovieSceneTracks.MovieSceneCameraCutSection.SetCameraBindingID(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3298880>
+	struct Unknown GetCameraBindingID(); // Function MovieSceneTracks.MovieSceneCameraCutSection.GetCameraBindingID(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3290F30>
 };
 
 // Class MovieSceneTracks.MovieSceneCameraCutTrack
-class UMovieSceneCameraCutTrack : UMovieSceneNameableTrack {
+class UMovieSceneCameraCutTrack : public UMovieSceneNameableTrack {
+
+public:
+
 	char bCanBlend : 0; // 0x58 (1)
 	struct TArray<Unknown> Sections; // 0x60 (16)
 };
 
 // Class MovieSceneTracks.MovieSceneCameraShakeSection
-class UMovieSceneCameraShakeSection : UMovieSceneSection {
+class UMovieSceneCameraShakeSection : public UMovieSceneSection {
+
+public:
+
 	struct Unknown ShakeData; // 0xE0 (32)
 	struct Unknown* ShakeClass; // 0x100 (8)
 	float PlayScale; // 0x108 (4)
@@ -179,21 +230,30 @@ class UMovieSceneCameraShakeSection : UMovieSceneSection {
 };
 
 // Class MovieSceneTracks.MovieSceneCameraShakeTrack
-class UMovieSceneCameraShakeTrack : UMovieSceneNameableTrack {
+class UMovieSceneCameraShakeTrack : public UMovieSceneNameableTrack {
+
+public:
+
 	struct TArray<Unknown> CameraShakeSections; // 0x58 (16)
 };
 
 // Class MovieSceneTracks.MovieSceneCinematicShotSection
-class UMovieSceneCinematicShotSection : UMovieSceneSubSection {
+class UMovieSceneCinematicShotSection : public UMovieSceneSubSection {
+
+public:
+
 	struct FString ShotDisplayName; // 0x158 (16)
 	struct FText DisplayName; // 0x168 (24)
 
-	void SetShotDisplayName(struct FString InShotDisplayName); // Function MovieSceneTracks.MovieSceneCinematicShotSection.SetShotDisplayName(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x32976E0>
-	struct FString GetShotDisplayName(); // Function MovieSceneTracks.MovieSceneCinematicShotSection.GetShotDisplayName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3297470>
+	void SetShotDisplayName(struct FString InShotDisplayName); // Function MovieSceneTracks.MovieSceneCinematicShotSection.SetShotDisplayName(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x32989F0>
+	struct FString GetShotDisplayName(); // Function MovieSceneTracks.MovieSceneCinematicShotSection.GetShotDisplayName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3298780>
 };
 
 // Class MovieSceneTracks.MovieSceneColorSection
-class UMovieSceneColorSection : UMovieSceneSection {
+class UMovieSceneColorSection : public UMovieSceneSection {
+
+public:
+
 	struct Unknown RedCurve; // 0xE0 (160)
 	struct Unknown GreenCurve; // 0x180 (160)
 	struct Unknown BlueCurve; // 0x220 (160)
@@ -201,33 +261,51 @@ class UMovieSceneColorSection : UMovieSceneSection {
 };
 
 // Class MovieSceneTracks.MovieSceneColorTrack
-class UMovieSceneColorTrack : UMovieScenePropertyTrack {
+class UMovieSceneColorTrack : public UMovieScenePropertyTrack {
+
+public:
+
 	char bIsSlateColor : 0; // 0x88 (1)
 };
 
 // Class MovieSceneTracks.MovieSceneEnumSection
-class UMovieSceneEnumSection : UMovieSceneSection {
+class UMovieSceneEnumSection : public UMovieSceneSection {
+
+public:
+
 	struct Unknown EnumCurve; // 0xE0 (152)
 };
 
 // Class MovieSceneTracks.MovieSceneEnumTrack
-class UMovieSceneEnumTrack : UMovieScenePropertyTrack {
+class UMovieSceneEnumTrack : public UMovieScenePropertyTrack {
+
+public:
+
 	struct Unknown Enum; // 0x88 (8)
 };
 
 // Class MovieSceneTracks.MovieSceneEventRepeaterSection
-class UMovieSceneEventRepeaterSection : UMovieSceneEventSectionBase {
+class UMovieSceneEventRepeaterSection : public UMovieSceneEventSectionBase {
+
+public:
+
 	struct Unknown Event; // 0xE0 (40)
 };
 
 // Class MovieSceneTracks.MovieSceneEventSection
-class UMovieSceneEventSection : UMovieSceneSection {
+class UMovieSceneEventSection : public UMovieSceneSection {
+
+public:
+
 	struct Unknown Events; // 0xE0 (120)
 	struct Unknown eventData; // 0x158 (136)
 };
 
 // Class MovieSceneTracks.MovieSceneEventTrack
-class UMovieSceneEventTrack : UMovieSceneNameableTrack {
+class UMovieSceneEventTrack : public UMovieSceneNameableTrack {
+
+public:
+
 	char bFireEventsWhenForwards : 0; // 0x58 (1)
 	char bFireEventsWhenBackwards : 0; // 0x58 (1)
 	enum class Unknow EventPosition; // 0x5C (1)
@@ -236,69 +314,105 @@ class UMovieSceneEventTrack : UMovieSceneNameableTrack {
 };
 
 // Class MovieSceneTracks.MovieSceneEventTriggerSection
-class UMovieSceneEventTriggerSection : UMovieSceneEventSectionBase {
+class UMovieSceneEventTriggerSection : public UMovieSceneEventSectionBase {
+
+public:
+
 	struct Unknown EventChannel; // 0xE0 (136)
 };
 
 // Class MovieSceneTracks.MovieSceneFloatSection
-class UMovieSceneFloatSection : UMovieSceneSection {
+class UMovieSceneFloatSection : public UMovieSceneSection {
+
+public:
+
 	struct Unknown FloatCurve; // 0xE0 (160)
 };
 
 // Class MovieSceneTracks.MovieSceneFadeSection
-class UMovieSceneFadeSection : UMovieSceneFloatSection {
+class UMovieSceneFadeSection : public UMovieSceneFloatSection {
+
+public:
+
 	struct Unknown FadeColor; // 0x180 (16)
 	char bFadeAudio : 0; // 0x190 (1)
 };
 
 // Class MovieSceneTracks.MovieSceneIntegerSection
-class UMovieSceneIntegerSection : UMovieSceneSection {
+class UMovieSceneIntegerSection : public UMovieSceneSection {
+
+public:
+
 	struct Unknown IntegerCurve; // 0xE0 (144)
 };
 
 // Class MovieSceneTracks.MovieSceneLevelVisibilitySection
-class UMovieSceneLevelVisibilitySection : UMovieSceneSection {
+class UMovieSceneLevelVisibilitySection : public UMovieSceneSection {
+
+public:
+
 	enum class Unknow Visibility; // 0xE0 (1)
 	struct TArray<Unknown> LevelNames; // 0xE8 (16)
 
-	void SetVisibility(enum class Unknow InVisibility); // Function MovieSceneTracks.MovieSceneLevelVisibilitySection.SetVisibility(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x32977E0>
-	void SetLevelNames(struct TArray<Unknown>& InLevelNames); // Function MovieSceneTracks.MovieSceneLevelVisibilitySection.SetLevelNames(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3297630>
-	enum class Unknow GetVisibility(); // Function MovieSceneTracks.MovieSceneLevelVisibilitySection.GetVisibility(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3297540>
-	struct TArray<Unknown> GetLevelNames(); // Function MovieSceneTracks.MovieSceneLevelVisibilitySection.GetLevelNames(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3297440>
+	void SetVisibility(enum class Unknow InVisibility); // Function MovieSceneTracks.MovieSceneLevelVisibilitySection.SetVisibility(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3298AF0>
+	void SetLevelNames(struct TArray<Unknown>& InLevelNames); // Function MovieSceneTracks.MovieSceneLevelVisibilitySection.SetLevelNames(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3298940>
+	enum class Unknow GetVisibility(); // Function MovieSceneTracks.MovieSceneLevelVisibilitySection.GetVisibility(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3298850>
+	struct TArray<Unknown> GetLevelNames(); // Function MovieSceneTracks.MovieSceneLevelVisibilitySection.GetLevelNames(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3298750>
 };
 
 // Class MovieSceneTracks.MovieSceneLevelVisibilityTrack
-class UMovieSceneLevelVisibilityTrack : UMovieSceneNameableTrack {
+class UMovieSceneLevelVisibilityTrack : public UMovieSceneNameableTrack {
+
+public:
+
 	struct TArray<Unknown> Sections; // 0x58 (16)
 };
 
 // Class MovieSceneTracks.MovieSceneMaterialTrack
-class UMovieSceneMaterialTrack : UMovieSceneNameableTrack {
+class UMovieSceneMaterialTrack : public UMovieSceneNameableTrack {
+
+public:
+
 	struct TArray<Unknown> Sections; // 0x58 (16)
 };
 
 // Class MovieSceneTracks.MovieSceneMaterialParameterCollectionTrack
-class UMovieSceneMaterialParameterCollectionTrack : UMovieSceneMaterialTrack {
+class UMovieSceneMaterialParameterCollectionTrack : public UMovieSceneMaterialTrack {
+
+public:
+
 	struct Unknown MPC; // 0x68 (8)
 };
 
-// Class MovieSceneTracks.MovieSceneComponentMaterialTrac
-class UMovieSceneComponentMaterialTrac : UMovieSceneMaterialTrack {
+// Class MovieSceneTracks.MovieSceneComponentMaterialTrack
+class UMovieSceneComponentMaterialTrack : public UMovieSceneMaterialTrack {
+
+public:
+
 	int32_t MaterialIndex; // 0x68 (4)
 };
 
 // Class MovieSceneTracks.MovieSceneObjectPropertySection
-class UMovieSceneObjectPropertySection : UMovieSceneSection {
+class UMovieSceneObjectPropertySection : public UMovieSceneSection {
+
+public:
+
 	struct Unknown ObjectChannel; // 0xE0 (192)
 };
 
 // Class MovieSceneTracks.MovieSceneObjectPropertyTrack
-class UMovieSceneObjectPropertyTrack : UMovieScenePropertyTrack {
+class UMovieSceneObjectPropertyTrack : public UMovieScenePropertyTrack {
+
+public:
+
 	struct Unknown* PropertyClass; // 0x88 (8)
 };
 
 // Class MovieSceneTracks.MovieSceneParameterSection
-class UMovieSceneParameterSection : UMovieSceneSection {
+class UMovieSceneParameterSection : public UMovieSceneSection {
+
+public:
+
 	struct TArray<Unknown> BoolParameterNamesAndCurves; // 0xE0 (16)
 	struct TArray<Unknown> ScalarParameterNamesAndCurves; // 0xF0 (16)
 	struct TArray<Unknown> Vector2DParameterNamesAndCurves; // 0x100 (16)
@@ -307,33 +421,51 @@ class UMovieSceneParameterSection : UMovieSceneSection {
 	struct TArray<Unknown> TransformParameterNamesAndCurves; // 0x130 (16)
 };
 
-// Class MovieSceneTracks.MovieSceneParticleParameterTrac
-class UMovieSceneParticleParameterTrac : UMovieSceneNameableTrack {
+// Class MovieSceneTracks.MovieSceneParticleParameterTrack
+class UMovieSceneParticleParameterTrack : public UMovieSceneNameableTrack {
+
+public:
+
 	struct TArray<Unknown> Sections; // 0x58 (16)
 };
 
 // Class MovieSceneTracks.MovieSceneParticleSection
-class UMovieSceneParticleSection : UMovieSceneSection {
+class UMovieSceneParticleSection : public UMovieSceneSection {
+
+public:
+
 	struct Unknown ParticleKeys; // 0xE0 (152)
 };
 
 // Class MovieSceneTracks.MovieSceneParticleTrack
-class UMovieSceneParticleTrack : UMovieSceneNameableTrack {
+class UMovieSceneParticleTrack : public UMovieSceneNameableTrack {
+
+public:
+
 	struct TArray<Unknown> ParticleSections; // 0x58 (16)
 };
 
 // Class MovieSceneTracks.MovieScenePrimitiveMaterialSection
-class UMovieScenePrimitiveMaterialSection : UMovieSceneSection {
+class UMovieScenePrimitiveMaterialSection : public UMovieSceneSection {
+
+public:
+
 	struct Unknown MaterialChannel; // 0xE0 (192)
 };
 
-// Class MovieSceneTracks.MovieScenePrimitiveMaterialTrac
-class UMovieScenePrimitiveMaterialTrac : UMovieScenePropertyTrack {
+// Class MovieSceneTracks.MovieScenePrimitiveMaterialTrack
+class UMovieScenePrimitiveMaterialTrack : public UMovieScenePropertyTrack {
+
+public:
+
 	int32_t MaterialIndex; // 0x88 (4)
 };
 
 // Class MovieSceneTracks.MovieSceneSkeletalAnimationSection
-class UMovieSceneSkeletalAnimationSection : UMovieSceneSection {
+class UMovieSceneSkeletalAnimationSection : public UMovieSceneSection {
+
+public:
+
 	struct Unknown Params; // 0xE0 (216)
 	struct Unknown AnimSequence; // 0x1B8 (8)
 	struct Unknown Animation; // 0x1C0 (8)
@@ -344,31 +476,46 @@ class UMovieSceneSkeletalAnimationSection : UMovieSceneSection {
 	struct FName SlotName; // 0x1D8 (8)
 };
 
-// Class MovieSceneTracks.MovieSceneSkeletalAnimationTrac
-class UMovieSceneSkeletalAnimationTrac : UMovieSceneNameableTrack {
+// Class MovieSceneTracks.MovieSceneSkeletalAnimationTrack
+class UMovieSceneSkeletalAnimationTrack : public UMovieSceneNameableTrack {
+
+public:
+
 	struct TArray<Unknown> AnimationSections; // 0x58 (16)
 	char bUseLegacySectionIndexBlend : 0; // 0x68 (1)
 };
 
 // Class MovieSceneTracks.MovieSceneSpawnTrack
-class UMovieSceneSpawnTrack : UMovieSceneTrack {
+class UMovieSceneSpawnTrack : public UMovieSceneTrack {
+
+public:
+
 	struct TArray<Unknown> Sections; // 0x58 (16)
 	struct Unknown ObjectGuid; // 0x68 (16)
 };
 
 // Class MovieSceneTracks.MovieSceneStringSection
-class UMovieSceneStringSection : UMovieSceneSection {
+class UMovieSceneStringSection : public UMovieSceneSection {
+
+public:
+
 	struct Unknown StringCurve; // 0xE0 (160)
 };
 
 // Class MovieSceneTracks.MovieSceneVectorSection
-class UMovieSceneVectorSection : UMovieSceneSection {
+class UMovieSceneVectorSection : public UMovieSceneSection {
+
+public:
+
 	struct Unknown Curves[0x4]; // 0xE0 (640)
 	int32_t ChannelsUsed; // 0x360 (4)
 };
 
 // Class MovieSceneTracks.MovieSceneVectorTrack
-class UMovieSceneVectorTrack : UMovieScenePropertyTrack {
+class UMovieSceneVectorTrack : public UMovieScenePropertyTrack {
+
+public:
+
 	int32_t NumChannelsUsed; // 0x88 (4)
 };
 
@@ -427,8 +574,8 @@ struct FMovieScene3DLocationKeyStruct : FMovieSceneKeyStruct {
 	struct Unknown Time; // 0x14 (4)
 };
 
-// ScriptStruct MovieSceneTracks.MovieSceneComponentTransformSec
-struct FMovieSceneComponentTransformSec : FMovieSceneEvalTemplate {
+// ScriptStruct MovieSceneTracks.MovieSceneComponentTransformSectionTemplate
+struct FMovieSceneComponentTransformSectionTemplate : FMovieSceneEvalTemplate {
 	struct Unknown TemplateData; // 0x20 (1616)
 };
 
@@ -477,8 +624,8 @@ struct FMovieSceneCameraAnimSectionData {
 	char bLooping : 0; // 0x18 (1)
 };
 
-// ScriptStruct MovieSceneTracks.MovieSceneCameraShakeSectionTemplate
-struct FMovieSceneCameraShakeSectionTemplate : FMovieSceneAdditiveCameraAnimationTemplate {
+// ScriptStruct MovieSceneTracks.MovieSceneCameraShakeSectionTem
+struct FMovieSceneCameraShakeSectionTem : FMovieSceneAdditiveCameraAnimationTemplate {
 	struct Unknown SourceData; // 0x20 (32)
 	struct Unknown SectionStartTime; // 0x40 (4)
 };
@@ -724,8 +871,8 @@ struct FMovieSceneBoolPropertySectionTemplate : FMovieScenePropertySectionTempla
 	struct Unknown BoolCurve; // 0x48 (144)
 };
 
-// ScriptStruct MovieSceneTracks.MovieSceneSkeletalAnimationParams
-struct FMovieSceneSkeletalAnimationParams {
+// ScriptStruct MovieSceneTracks.MovieSceneSkeletalAnimation
+struct FMovieSceneSkeletalAnimation {
 	struct Unknown Animation; // 0x0 (8)
 	struct Unknown FirstLoopStartFrameOffset; // 0x8 (4)
 	struct Unknown StartFrameOffset; // 0xC (4)
@@ -745,8 +892,8 @@ struct FMovieSceneSkeletalAnimationSectionTemplate : FMovieSceneEvalTemplate {
 	struct Unknown Params; // 0x20 (224)
 };
 
-// ScriptStruct MovieSceneTracks.MovieSceneSkeletalAnimationSectionTemplateParameters
-struct FMovieSceneSkeletalAnimationSectionTemplateParameters : FMovieSceneSkeletalAnimationParams {
+// ScriptStruct MovieSceneTracks.MovieSceneSkeletalAnimationSectionTemplateParam
+struct FMovieSceneSkeletalAnimationSectionTemplateParam : FMovieSceneSkeletalAnimation {
 	struct Unknown SectionStartTime; // 0xD8 (4)
 	struct Unknown SectionEndTime; // 0xDC (4)
 };

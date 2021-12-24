@@ -1,19 +1,25 @@
 // Enum ActorSequence.EActorSequenceObjectReferenceType
-enum class EActorSequenceObjectReferenceType : uint8 {
-	EActorSequenceObjectReferenceType = 0
-	EActorSequenceObjectReferenceType = 1
-	EActorSequenceObjectReferenceType = 2
-	EActorSequenceObjectReferenceType = 3
+enum class EActorSequenceObjectReferenceType : uint8_t {
+	EActorSequenceObjectReferenceType = 0,
+	EActorSequenceObjectReferenceType = 1,
+	EActorSequenceObjectReferenceType = 2,
+	EActorSequenceObjectReferenceType = 3,
 };
 
 // Class ActorSequence.ActorSequence
-class UActorSequence : UMovieSceneSequence {
+class UActorSequence : public UMovieSceneSequence {
+
+public:
+
 	struct Unknown MovieScene; // 0x348 (8)
 	struct Unknown ObjectReferences; // 0x350 (32)
 };
 
 // Class ActorSequence.ActorSequenceComponent
-class UActorSequenceComponent : UActorComponent {
+class UActorSequenceComponent : public UActorComponent {
+
+public:
+
 	struct Unknown PlaybackSettings; // 0xB0 (20)
 	struct Unknown Sequence; // 0xC8 (8)
 	struct Unknown SequencePlayer; // 0xD0 (8)

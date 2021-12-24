@@ -1,5 +1,8 @@
 // AnimBlueprintGeneratedClass PPSh.AB
-class UAB : UBravoHotelAnimInstanceWeapon {
+class UAB : public UBravoHotelAnimInstanceWeapon {
+
+public:
+
 	struct Unknown UberGraphFrame; // 0x330 (8)
 	struct Unknown AnimGraphNode_Root; // 0x338 (48)
 	struct Unknown AnimGraphNode_BlendListByEnum; // 0x368 (176)
@@ -17,7 +20,7 @@ class UAB : UBravoHotelAnimInstanceWeapon {
 	struct Unknown AnimGraphNode_LocalRefPose; // 0x858 (24)
 	struct Unknown AnimGraphNode_BlendListByBool; // 0x870 (160)
 
-	void AnimGraph(struct Unknown& AnimGraph); // Function PPSh.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
-	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function PPSh.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B1E70>
+	void AnimGraph(struct Unknown& AnimGraph); // Function PPSh.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function PPSh.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 };
 

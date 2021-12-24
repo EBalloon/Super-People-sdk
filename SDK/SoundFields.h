@@ -1,5 +1,8 @@
 // Class SoundFields.AmbisonicsEncodingSettings
-class UAmbisonicsEncodingSettings : USoundfieldEncodingSettingsBase {
+class UAmbisonicsEncodingSettings : public USoundfieldEncodingSettingsBase {
+
+public:
+
 	int32_t AmbisonicsOrder; // 0x28 (4)
 };
 

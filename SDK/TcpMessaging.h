@@ -1,5 +1,8 @@
 // Class TcpMessaging.TcpMessagingSettings
-class UTcpMessagingSettings : Object {
+class UTcpMessagingSettings : public Object {
+
+public:
+
 	char EnableTransport : 0; // 0x28 (1)
 	struct FString ListenEndpoint; // 0x30 (16)
 	struct TArray<Unknown> ConnectToEndpoints; // 0x40 (16)

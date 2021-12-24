@@ -1,24 +1,27 @@
 // Enum ClothingSystemRuntimeCommon.EClothingWindMethod_Legacy
-enum class EClothingWindMethod_Legacy : uint8 {
-	EClothingWindMethod_Legacy = 0
-	EClothingWindMethod_Legacy = 1
-	EClothingWindMethod_Legacy = 2
+enum class EClothingWindMethod_Legacy : uint8_t {
+	EClothingWindMethod_Legacy = 0,
+	EClothingWindMethod_Legacy = 1,
+	EClothingWindMethod_Legacy = 2,
 };
 
 // Enum ClothingSystemRuntimeCommon.EWeightMapTargetCommon
-enum class EWeightMapTargetCommon : uint8 {
-	EWeightMapTargetCommon = 0
-	EWeightMapTargetCommon = 1
-	EWeightMapTargetCommon = 2
-	EWeightMapTargetCommon = 3
-	EWeightMapTargetCommon = 4
-	EWeightMapTargetCommon = 5
+enum class EWeightMapTargetCommon : uint8_t {
+	EWeightMapTargetCommon = 0,
+	EWeightMapTargetCommon = 1,
+	EWeightMapTargetCommon = 2,
+	EWeightMapTargetCommon = 3,
+	EWeightMapTargetCommon = 4,
+	EWeightMapTargetCommon = 5,
 };
 
 // Class ClothingSystemRuntimeCommon.ClothingAssetCommon
-class UClothingAssetCommon : UClothingAssetBase {
+class UClothingAssetCommon : public UClothingAssetBase {
+
+public:
+
 	struct Unknown PhysicsAsset; // 0x48 (8)
-	struct TMap<Unknown, Unknown>Unknown ClothConfigs; // 0x50 (80)
+	struct TMap<Unknown, Unknown> ClothConfigs; // 0x50 (80)
 	struct Unknown ClothSharedSimConfig; // 0xA0 (8)
 	struct Unknown ClothSimConfig; // 0xA8 (8)
 	struct Unknown ChaosClothSimConfig; // 0xB0 (8)
@@ -33,7 +36,10 @@ class UClothingAssetCommon : UClothingAssetBase {
 };
 
 // Class ClothingSystemRuntimeCommon.ClothLODDataCommon_Legacy
-class UClothLODDataCommon_Legacy : Object {
+class UClothLODDataCommon_Legacy : public Object {
+
+public:
+
 	struct Unknown PhysicalMeshData; // 0x28 (8)
 	struct Unknown ClothPhysicalMeshData; // 0x30 (248)
 	struct Unknown CollisionData; // 0x128 (64)
@@ -89,7 +95,7 @@ struct FClothPhysicalMeshData {
 	struct TArray<Unknown> Vertices; // 0x0 (16)
 	struct TArray<Unknown> Normals; // 0x10 (16)
 	struct TArray<Unknown> Indices; // 0x20 (16)
-	struct TMap<Unknown, Unknown>Unknown WeightMaps; // 0x30 (80)
+	struct TMap<Unknown, Unknown> WeightMaps; // 0x30 (80)
 	struct TArray<Unknown> InverseMasses; // 0x80 (16)
 	struct TArray<Unknown> BoneData; // 0x90 (16)
 	int32_t MaxBoneWeights; // 0xA0 (4)

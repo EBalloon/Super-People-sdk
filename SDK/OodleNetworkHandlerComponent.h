@@ -1,12 +1,15 @@
 // Enum OodleNetworkHandlerComponent.EOodleEnableMode
-enum class EOodleEnableMode : uint8 {
-	EOodleEnableMode = 0
-	EOodleEnableMode = 1
-	EOodleEnableMode = 2
+enum class EOodleEnableMode : uint8_t {
+	EOodleEnableMode = 0,
+	EOodleEnableMode = 1,
+	EOodleEnableMode = 2,
 };
 
 // Class OodleNetworkHandlerComponent.OodleNetworkTrainerCommandlet
-class UOodleNetworkTrainerCommandlet : UCommandlet {
+class UOodleNetworkTrainerCommandlet : public UCommandlet {
+
+public:
+
 	char bCompressionTest : 0; // 0x80 (1)
 	int32_t HashTableSize; // 0x84 (4)
 	int32_t DictionarySize; // 0x88 (4)

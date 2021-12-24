@@ -1,11 +1,17 @@
 // Class ClothingSystemRuntimeInterface.ClothingAssetBase
-class UClothingAssetBase : Object {
+class UClothingAssetBase : public Object {
+
+public:
+
 	struct FString ImportedFilePath; // 0x28 (16)
 	struct Unknown AssetGuid; // 0x38 (16)
 };
 
-// Class ClothingSystemRuntimeInterface.ClothPhysicalMeshDataBase_Legac
-class UClothPhysicalMeshDataBase_Legac : Object {
+// Class ClothingSystemRuntimeInterface.ClothPhysicalMeshDataBase_Legacy
+class UClothPhysicalMeshDataBase_Legacy : public Object {
+
+public:
+
 	struct TArray<Unknown> Vertices; // 0x28 (16)
 	struct TArray<Unknown> Normals; // 0x38 (16)
 	struct TArray<Unknown> Indices; // 0x48 (16)
@@ -39,8 +45,8 @@ struct FClothCollisionPrim_Convex {
 	int32_t BoneIndex; // 0x20 (4)
 };
 
-// ScriptStruct ClothingSystemRuntimeInterface.ClothCollisionPrim_SphereConnec
-struct FClothCollisionPrim_SphereConnec {
+// ScriptStruct ClothingSystemRuntimeInterface.ClothCollisionPrim_SphereConnection
+struct FClothCollisionPrim_SphereConnection {
 	int32_t SphereIndices[0x2]; // 0x0 (8)
 };
 
