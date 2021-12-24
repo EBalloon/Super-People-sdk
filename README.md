@@ -2,13 +2,13 @@
 
 ### Offsets
 
-    Uworld: 0x695E880
-    UObjects: 0x6815E20
-    Gnames: 0x67FD440
-    DescNames: 0x67FCF50 (thx to #Rng Uziii & #PhysXCore)(www.unknowncheats.me/forum/3321945-post156.html)
-    BoneMatrix: 0x3704280
-    WorldToScreen: 0x37348D0
-    LineOfSightTo: 0x37E7370
+    Uworld: 0x695F880
+    UObjects: 0x6816E20
+    Gnames: 0x67FE440
+    DescNames: 0x67FDF50 (thx to #Rng Uziii & #PhysXCore)(www.unknowncheats.me/forum/3321945-post156.html)
+    BoneMatrix: 0x3705580
+    WorldToScreen: 0x3735BD0
+    LineOfSightTo: 0x37E8670
 
     LocalPlayers: 0xb8  
     GameInstance: 0x1d8 
