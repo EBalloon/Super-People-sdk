@@ -1,481 +1,4 @@
 // AnimBlueprintGeneratedClass AB.AB
-class UAB : public UBravoHotelAnimInstanceFPP {
-
-public:
-
-	struct Unknown UberGraphFrame; // 0x700 (8)
-	struct Unknown AnimGraphNode_Root; // 0x708 (48)
-	struct Unknown AnimGraphNode_LocalToComponentSpace_11; // 0x738 (32)
-	struct Unknown AnimGraphNode_TransitionResult_59; // 0x758 (40)
-	struct Unknown AnimGraphNode_TransitionResult_58; // 0x780 (40)
-	struct Unknown AnimGraphNode_TransitionResult_57; // 0x7A8 (40)
-	struct Unknown AnimGraphNode_TransitionResult_56; // 0x7D0 (40)
-	struct Unknown AnimGraphNode_TransitionResult_55; // 0x7F8 (40)
-	struct Unknown AnimGraphNode_TransitionResult_54; // 0x820 (40)
-	struct Unknown AnimGraphNode_TransitionResult_53; // 0x848 (40)
-	struct Unknown AnimGraphNode_TransitionResult_52; // 0x870 (40)
-	struct Unknown AnimGraphNode_TransitionResult_51; // 0x898 (40)
-	struct Unknown AnimGraphNode_TransitionResult_50; // 0x8C0 (40)
-	struct Unknown AnimGraphNode_TransitionResult_49; // 0x8E8 (40)
-	struct Unknown AnimGraphNode_TransitionResult_48; // 0x910 (40)
-	struct Unknown AnimGraphNode_TransitionResult_47; // 0x938 (40)
-	struct Unknown AnimGraphNode_TransitionResult_46; // 0x960 (40)
-	struct Unknown AnimGraphNode_TransitionResult_45; // 0x988 (40)
-	struct Unknown AnimGraphNode_TransitionResult_44; // 0x9B0 (40)
-	struct Unknown AnimGraphNode_TransitionResult_43; // 0x9D8 (40)
-	struct Unknown AnimGraphNode_TransitionResult_42; // 0xA00 (40)
-	struct Unknown AnimGraphNode_TransitionResult_41; // 0xA28 (40)
-	struct Unknown AnimGraphNode_TransitionResult_40; // 0xA50 (40)
-	struct Unknown AnimGraphNode_SequencePlayer_129; // 0xA78 (120)
-	struct Unknown AnimGraphNode_StateResult_36; // 0xAF0 (48)
-	struct Unknown AnimGraphNode_SequencePlayer_128; // 0xB20 (120)
-	struct Unknown AnimGraphNode_StateResult_35; // 0xB98 (48)
-	struct Unknown AnimGraphNode_SequencePlayer_127; // 0xBC8 (120)
-	struct Unknown AnimGraphNode_StateResult_34; // 0xC40 (48)
-	struct Unknown AnimGraphNode_StateMachine_9; // 0xC70 (176)
-	struct Unknown AnimGraphNode_StateResult_33; // 0xD20 (48)
-	struct Unknown AnimGraphNode_TransitionResult_39; // 0xD50 (40)
-	struct Unknown AnimGraphNode_TransitionResult_38; // 0xD78 (40)
-	struct Unknown AnimGraphNode_BlendSpacePlayer_27; // 0xDA0 (224)
-	struct Unknown AnimGraphNode_SequencePlayer_126; // 0xE80 (120)
-	struct Unknown AnimGraphNode_ApplyAdditive_4; // 0xEF8 (200)
-	struct Unknown AnimGraphNode_SequencePlayer_125; // 0xFC0 (120)
-	struct Unknown AnimGraphNode_BlendListByEnum_26; // 0x1038 (176)
-	struct Unknown AnimGraphNode_BlendSpacePlayer_26; // 0x10E8 (224)
-	struct Unknown AnimGraphNode_BlendSpacePlayer_25; // 0x11C8 (224)
-	struct Unknown AnimGraphNode_BlendListByEnum_25; // 0x12A8 (176)
-	struct Unknown AnimGraphNode_BlendSpacePlayer_24; // 0x1358 (224)
-	struct Unknown AnimGraphNode_StateResult_32; // 0x1438 (48)
-	struct Unknown AnimGraphNode_BlendSpacePlayer_23; // 0x1468 (224)
-	struct Unknown AnimGraphNode_BlendListByBool_24; // 0x1548 (160)
-	struct Unknown AnimGraphNode_RotationOffsetBlendSpace; // 0x15E8 (392)
-	struct Unknown AnimGraphNode_ModifyBone_15; // 0x1770 (264)
-	struct Unknown AnimGraphNode_ModifyBone_14; // 0x1878 (264)
-	struct Unknown AnimGraphNode_TwoBoneIK_9; // 0x1980 (480)
-	struct Unknown AnimGraphNode_TwoBoneIK_8; // 0x1B60 (480)
-	struct Unknown AnimGraphNode_SequencePlayer_124; // 0x1D40 (120)
-	struct Unknown AnimGraphNode_LayeredBoneBlend_7; // 0x1DB8 (192)
-	struct Unknown AnimGraphNode_TransitionResult_37; // 0x1E78 (40)
-	struct Unknown AnimGraphNode_TransitionResult_36; // 0x1EA0 (40)
-	struct Unknown AnimGraphNode_TransitionResult_35; // 0x1EC8 (40)
-	struct Unknown AnimGraphNode_TransitionResult_34; // 0x1EF0 (40)
-	struct Unknown AnimGraphNode_TransitionResult_33; // 0x1F18 (40)
-	struct Unknown AnimGraphNode_TransitionResult_32; // 0x1F40 (40)
-	struct Unknown AnimGraphNode_SequencePlayer_123; // 0x1F68 (120)
-	struct Unknown AnimGraphNode_StateResult_31; // 0x1FE0 (48)
-	struct Unknown AnimGraphNode_SequencePlayer_122; // 0x2010 (120)
-	struct Unknown AnimGraphNode_StateResult_30; // 0x2088 (48)
-	struct Unknown AnimGraphNode_SequencePlayer_121; // 0x20B8 (120)
-	struct Unknown AnimGraphNode_StateResult_29; // 0x2130 (48)
-	struct Unknown AnimGraphNode_StateMachine_8; // 0x2160 (176)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace_11; // 0x2210 (32)
-	struct Unknown AnimGraphNode_LocalToComponentSpace_10; // 0x2230 (32)
-	struct Unknown AnimGraphNode_Fabrik_2; // 0x2250 (400)
-	struct Unknown AnimGraphNode_Fabrik; // 0x23E0 (400)
-	struct Unknown AnimGraphNode_StateResult_28; // 0x2570 (48)
-	struct Unknown AnimGraphNode_StateMachine_7; // 0x25A0 (176)
-	struct Unknown AnimGraphNode_StateResult_27; // 0x2650 (48)
-	struct Unknown AnimGraphNode_TransitionResult_31; // 0x2680 (40)
-	struct Unknown AnimGraphNode_TransitionResult_30; // 0x26A8 (40)
-	struct Unknown AnimGraphNode_TransitionResult_29; // 0x26D0 (40)
-	struct Unknown AnimGraphNode_SequencePlayer_120; // 0x26F8 (120)
-	struct Unknown AnimGraphNode_StateResult_26; // 0x2770 (48)
-	struct Unknown AnimGraphNode_BlendSpacePlayer_22; // 0x27A0 (224)
-	struct Unknown AnimGraphNode_StateResult_25; // 0x2880 (48)
-	struct Unknown AnimGraphNode_SequencePlayer_119; // 0x28B0 (120)
-	struct Unknown AnimGraphNode_StateResult_24; // 0x2928 (48)
-	struct Unknown AnimGraphNode_StateMachine_6; // 0x2958 (176)
-	struct Unknown AnimGraphNode_StateResult_23; // 0x2A08 (48)
-	struct Unknown AnimGraphNode_TransitionResult_28; // 0x2A38 (40)
-	struct Unknown AnimGraphNode_TransitionResult_27; // 0x2A60 (40)
-	struct Unknown AnimGraphNode_TransitionResult_26; // 0x2A88 (40)
-	struct Unknown AnimGraphNode_TransitionResult_25; // 0x2AB0 (40)
-	struct Unknown AnimGraphNode_BlendSpacePlayer_21; // 0x2AD8 (224)
-	struct Unknown AnimGraphNode_StateResult_22; // 0x2BB8 (48)
-	struct Unknown AnimGraphNode_BlendSpacePlayer_20; // 0x2BE8 (224)
-	struct Unknown AnimGraphNode_StateResult_21; // 0x2CC8 (48)
-	struct Unknown AnimGraphNode_StateMachine_5; // 0x2CF8 (176)
-	struct Unknown AnimGraphNode_StateResult_20; // 0x2DA8 (48)
-	struct Unknown AnimGraphNode_TransitionResult_24; // 0x2DD8 (40)
-	struct Unknown AnimGraphNode_TransitionResult_23; // 0x2E00 (40)
-	struct Unknown AnimGraphNode_SequencePlayer_118; // 0x2E28 (120)
-	struct Unknown AnimGraphNode_StateResult_19; // 0x2EA0 (48)
-	struct Unknown AnimGraphNode_SequencePlayer_117; // 0x2ED0 (120)
-	struct Unknown AnimGraphNode_StateResult_18; // 0x2F48 (48)
-	struct Unknown AnimGraphNode_StateMachine_4; // 0x2F78 (176)
-	struct Unknown AnimGraphNode_StateResult_17; // 0x3028 (48)
-	struct Unknown AnimGraphNode_StateMachine_3; // 0x3058 (176)
-	struct Unknown AnimGraphNode_StateResult_16; // 0x3108 (48)
-	struct Unknown AnimGraphNode_TransitionResult_22; // 0x3138 (40)
-	struct Unknown AnimGraphNode_SequencePlayer_116; // 0x3160 (120)
-	struct Unknown AnimGraphNode_BlendListByBool_23; // 0x31D8 (160)
-	struct Unknown AnimGraphNode_SequencePlayer_115; // 0x3278 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_114; // 0x32F0 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_113; // 0x3368 (120)
-	struct Unknown AnimGraphNode_BlendListByEnum_24; // 0x33E0 (176)
-	struct Unknown AnimGraphNode_SequencePlayer_112; // 0x3490 (120)
-	struct Unknown AnimGraphNode_StateResult_15; // 0x3508 (48)
-	struct Unknown AnimGraphNode_SequencePlayer_111; // 0x3538 (120)
-	struct Unknown AnimGraphNode_BlendListByBool_22; // 0x35B0 (160)
-	struct Unknown AnimGraphNode_SequencePlayer_110; // 0x3650 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_109; // 0x36C8 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_108; // 0x3740 (120)
-	struct Unknown AnimGraphNode_BlendListByEnum_23; // 0x37B8 (176)
-	struct Unknown AnimGraphNode_SequencePlayer_107; // 0x3868 (120)
-	struct Unknown AnimGraphNode_StateResult_14; // 0x38E0 (48)
-	struct Unknown AnimGraphNode_SequencePlayer_106; // 0x3910 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_105; // 0x3988 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_104; // 0x3A00 (120)
-	struct Unknown AnimGraphNode_BlendListByEnum_22; // 0x3A78 (176)
-	struct Unknown AnimGraphNode_SequencePlayer_103; // 0x3B28 (120)
-	struct Unknown AnimGraphNode_StateResult_13; // 0x3BA0 (48)
-	struct Unknown AnimGraphNode_ApplyAdditive_3; // 0x3BD0 (200)
-	struct Unknown AnimGraphNode_SequencePlayer_102; // 0x3C98 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_101; // 0x3D10 (120)
-	struct Unknown AnimGraphNode_Slot_13; // 0x3D88 (72)
-	struct Unknown AnimGraphNode_Slot_12; // 0x3DD0 (72)
-	struct Unknown AnimGraphNode_BlendListByEnum_21; // 0x3E18 (176)
-	struct Unknown AnimGraphNode_SequencePlayer_100; // 0x3EC8 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_99; // 0x3F40 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_98; // 0x3FB8 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_97; // 0x4030 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_96; // 0x40A8 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_95; // 0x4120 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_94; // 0x4198 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_93; // 0x4210 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_92; // 0x4288 (120)
-	struct Unknown AnimGraphNode_BlendListByEnum_20; // 0x4300 (176)
-	struct Unknown AnimGraphNode_TwoWayBlend_6; // 0x43B0 (200)
-	struct Unknown AnimGraphNode_ApplyAdditive_2; // 0x4478 (200)
-	struct Unknown AnimGraphNode_SequencePlayer_91; // 0x4540 (120)
-	struct Unknown AnimGraphNode_TransitionResult_21; // 0x45B8 (40)
-	struct Unknown AnimGraphNode_TransitionResult_20; // 0x45E0 (40)
-	struct Unknown AnimGraphNode_TransitionResult_19; // 0x4608 (40)
-	struct Unknown AnimGraphNode_TransitionResult_18; // 0x4630 (40)
-	struct Unknown AnimGraphNode_TransitionResult_17; // 0x4658 (40)
-	struct Unknown AnimGraphNode_TransitionResult_16; // 0x4680 (40)
-	struct Unknown AnimGraphNode_TransitionResult_15; // 0x46A8 (40)
-	struct Unknown AnimGraphNode_TransitionResult_14; // 0x46D0 (40)
-	struct Unknown AnimGraphNode_TransitionResult_13; // 0x46F8 (40)
-	struct Unknown AnimGraphNode_TransitionResult_12; // 0x4720 (40)
-	struct Unknown AnimGraphNode_TransitionResult_11; // 0x4748 (40)
-	struct Unknown AnimGraphNode_TransitionResult_10; // 0x4770 (40)
-	struct Unknown AnimGraphNode_TransitionResult_9; // 0x4798 (40)
-	struct Unknown AnimGraphNode_TransitionResult_8; // 0x47C0 (40)
-	struct Unknown AnimGraphNode_TransitionResult_7; // 0x47E8 (40)
-	struct Unknown AnimGraphNode_TransitionResult_6; // 0x4810 (40)
-	struct Unknown AnimGraphNode_TransitionResult_5; // 0x4838 (40)
-	struct Unknown AnimGraphNode_TransitionResult_4; // 0x4860 (40)
-	struct Unknown AnimGraphNode_TransitionResult_3; // 0x4888 (40)
-	struct Unknown AnimGraphNode_TransitionResult_2; // 0x48B0 (40)
-	struct Unknown AnimGraphNode_TransitionResult; // 0x48D8 (40)
-	struct Unknown AnimGraphNode_SequencePlayer_90; // 0x4900 (120)
-	struct Unknown AnimGraphNode_StateResult_12; // 0x4978 (48)
-	struct Unknown AnimGraphNode_SequencePlayer_89; // 0x49A8 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_88; // 0x4A20 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_87; // 0x4A98 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_86; // 0x4B10 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_85; // 0x4B88 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_84; // 0x4C00 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_83; // 0x4C78 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_82; // 0x4CF0 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_81; // 0x4D68 (120)
-	struct Unknown AnimGraphNode_BlendListByEnum_19; // 0x4DE0 (176)
-	struct Unknown AnimGraphNode_StateResult_11; // 0x4E90 (48)
-	struct Unknown AnimGraphNode_SequencePlayer_80; // 0x4EC0 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_79; // 0x4F38 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_78; // 0x4FB0 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_77; // 0x5028 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_76; // 0x50A0 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_75; // 0x5118 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_74; // 0x5190 (120)
-	struct Unknown AnimGraphNode_BlendListByEnum_18; // 0x5208 (176)
-	struct Unknown AnimGraphNode_SequencePlayer_73; // 0x52B8 (120)
-	struct Unknown AnimGraphNode_StateResult_10; // 0x5330 (48)
-	struct Unknown AnimGraphNode_SequencePlayer_72; // 0x5360 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_71; // 0x53D8 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_70; // 0x5450 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_69; // 0x54C8 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_68; // 0x5540 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_67; // 0x55B8 (120)
-	struct Unknown AnimGraphNode_BlendListByEnum_17; // 0x5630 (176)
-	struct Unknown AnimGraphNode_SequencePlayer_66; // 0x56E0 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_65; // 0x5758 (120)
-	struct Unknown AnimGraphNode_StateResult_9; // 0x57D0 (48)
-	struct Unknown AnimGraphNode_SequencePlayer_64; // 0x5800 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_63; // 0x5878 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_62; // 0x58F0 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_61; // 0x5968 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_60; // 0x59E0 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_59; // 0x5A58 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_58; // 0x5AD0 (120)
-	struct Unknown AnimGraphNode_BlendListByEnum_16; // 0x5B48 (176)
-	struct Unknown AnimGraphNode_SequencePlayer_57; // 0x5BF8 (120)
-	struct Unknown AnimGraphNode_StateResult_8; // 0x5C70 (48)
-	struct Unknown AnimGraphNode_SequencePlayer_56; // 0x5CA0 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_55; // 0x5D18 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_54; // 0x5D90 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_53; // 0x5E08 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_52; // 0x5E80 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_51; // 0x5EF8 (120)
-	struct Unknown AnimGraphNode_BlendListByEnum_15; // 0x5F70 (176)
-	struct Unknown AnimGraphNode_SequencePlayer_50; // 0x6020 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_49; // 0x6098 (120)
-	struct Unknown AnimGraphNode_StateResult_7; // 0x6110 (48)
-	struct Unknown AnimGraphNode_SequencePlayer_48; // 0x6140 (120)
-	struct Unknown AnimGraphNode_BlendListByBool_21; // 0x61B8 (160)
-	struct Unknown AnimGraphNode_SequencePlayer_47; // 0x6258 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_46; // 0x62D0 (120)
-	struct Unknown AnimGraphNode_BlendListByEnum_14; // 0x6348 (176)
-	struct Unknown AnimGraphNode_SequencePlayer_45; // 0x63F8 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_44; // 0x6470 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_43; // 0x64E8 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_42; // 0x6560 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_41; // 0x65D8 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_40; // 0x6650 (120)
-	struct Unknown AnimGraphNode_BlendListByEnum_13; // 0x66C8 (176)
-	struct Unknown AnimGraphNode_SequencePlayer_39; // 0x6778 (120)
-	struct Unknown AnimGraphNode_StateResult_6; // 0x67F0 (48)
-	struct Unknown AnimGraphNode_SequencePlayer_38; // 0x6820 (120)
-	struct Unknown AnimGraphNode_BlendListByBool_20; // 0x6898 (160)
-	struct Unknown AnimGraphNode_SequencePlayer_37; // 0x6938 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_36; // 0x69B0 (120)
-	struct Unknown AnimGraphNode_BlendListByEnum_12; // 0x6A28 (176)
-	struct Unknown AnimGraphNode_SequencePlayer_35; // 0x6AD8 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_34; // 0x6B50 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_33; // 0x6BC8 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_32; // 0x6C40 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_31; // 0x6CB8 (120)
-	struct Unknown AnimGraphNode_BlendListByEnum_11; // 0x6D30 (176)
-	struct Unknown AnimGraphNode_SequencePlayer_30; // 0x6DE0 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_29; // 0x6E58 (120)
-	struct Unknown AnimGraphNode_StateResult_5; // 0x6ED0 (48)
-	struct Unknown AnimGraphNode_SequencePlayer_28; // 0x6F00 (120)
-	struct Unknown AnimGraphNode_BlendListByBool_19; // 0x6F78 (160)
-	struct Unknown AnimGraphNode_BlendSpacePlayer_19; // 0x7018 (224)
-	struct Unknown AnimGraphNode_BlendListByBool_18; // 0x70F8 (160)
-	struct Unknown AnimGraphNode_LayeredBoneBlend_6; // 0x7198 (192)
-	struct Unknown AnimGraphNode_SequencePlayer_27; // 0x7258 (120)
-	struct Unknown AnimGraphNode_BlendSpacePlayer_18; // 0x72D0 (224)
-	struct Unknown AnimGraphNode_SequencePlayer_26; // 0x73B0 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_25; // 0x7428 (120)
-	struct Unknown AnimGraphNode_BlendListByEnum_10; // 0x74A0 (176)
-	struct Unknown AnimGraphNode_TwoWayBlend_5; // 0x7550 (200)
-	struct Unknown AnimGraphNode_BlendSpacePlayer_17; // 0x7618 (224)
-	struct Unknown AnimGraphNode_SequencePlayer_24; // 0x76F8 (120)
-	struct Unknown AnimGraphNode_BlendListByEnum_9; // 0x7770 (176)
-	struct Unknown AnimGraphNode_BlendSpacePlayer_16; // 0x7820 (224)
-	struct Unknown AnimGraphNode_BlendSpacePlayer_15; // 0x7900 (224)
-	struct Unknown AnimGraphNode_BlendListByEnum_8; // 0x79E0 (176)
-	struct Unknown AnimGraphNode_BlendSpacePlayer_14; // 0x7A90 (224)
-	struct Unknown AnimGraphNode_StateResult_4; // 0x7B70 (48)
-	struct Unknown AnimGraphNode_SequencePlayer_23; // 0x7BA0 (120)
-	struct Unknown AnimGraphNode_BlendListByBool_17; // 0x7C18 (160)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace_10; // 0x7CB8 (32)
-	struct Unknown AnimGraphNode_LocalToComponentSpace_9; // 0x7CD8 (32)
-	struct Unknown AnimGraphNode_ModifyBone_13; // 0x7CF8 (264)
-	struct Unknown AnimGraphNode_BlendSpacePlayer_13; // 0x7E00 (224)
-	struct Unknown AnimGraphNode_BlendListByBool_16; // 0x7EE0 (160)
-	struct Unknown AnimGraphNode_BlendSpacePlayer_12; // 0x7F80 (224)
-	struct Unknown AnimGraphNode_SequencePlayer_22; // 0x8060 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_21; // 0x80D8 (120)
-	struct Unknown AnimGraphNode_BlendListByEnum_7; // 0x8150 (176)
-	struct Unknown AnimGraphNode_TwoWayBlend_4; // 0x8200 (200)
-	struct Unknown AnimGraphNode_BlendSpacePlayer_11; // 0x82C8 (224)
-	struct Unknown AnimGraphNode_BlendListByBool_15; // 0x83A8 (160)
-	struct Unknown AnimGraphNode_BlendSpacePlayer_10; // 0x8448 (224)
-	struct Unknown AnimGraphNode_SequencePlayer_20; // 0x8528 (120)
-	struct Unknown AnimGraphNode_BlendListByEnum_6; // 0x85A0 (176)
-	struct Unknown AnimGraphNode_BlendSpacePlayer_9; // 0x8650 (224)
-	struct Unknown AnimGraphNode_BlendSpacePlayer_8; // 0x8730 (224)
-	struct Unknown AnimGraphNode_BlendListByEnum_5; // 0x8810 (176)
-	struct Unknown AnimGraphNode_BlendSpacePlayer_7; // 0x88C0 (224)
-	struct Unknown AnimGraphNode_StateResult_3; // 0x89A0 (48)
-	struct Unknown AnimGraphNode_SequencePlayer_19; // 0x89D0 (120)
-	struct Unknown AnimGraphNode_BlendListByBool_14; // 0x8A48 (160)
-	struct Unknown AnimGraphNode_BlendSpacePlayer_6; // 0x8AE8 (224)
-	struct Unknown AnimGraphNode_BlendListByBool_13; // 0x8BC8 (160)
-	struct Unknown AnimGraphNode_LayeredBoneBlend_5; // 0x8C68 (192)
-	struct Unknown AnimGraphNode_SequencePlayer_18; // 0x8D28 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_17; // 0x8DA0 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_16; // 0x8E18 (120)
-	struct Unknown AnimGraphNode_BlendSpacePlayer_5; // 0x8E90 (224)
-	struct Unknown AnimGraphNode_BlendListByInt; // 0x8F70 (160)
-	struct Unknown AnimGraphNode_BlendSpacePlayer_4; // 0x9010 (224)
-	struct Unknown AnimGraphNode_SequencePlayer_15; // 0x90F0 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_14; // 0x9168 (120)
-	struct Unknown AnimGraphNode_BlendListByEnum_4; // 0x91E0 (176)
-	struct Unknown AnimGraphNode_TwoWayBlend_3; // 0x9290 (200)
-	struct Unknown AnimGraphNode_SequencePlayer_13; // 0x9358 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_12; // 0x93D0 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_11; // 0x9448 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_10; // 0x94C0 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_9; // 0x9538 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_8; // 0x95B0 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_7; // 0x9628 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_6; // 0x96A0 (120)
-	struct Unknown AnimGraphNode_BlendListByEnum_3; // 0x9718 (176)
-	struct Unknown AnimGraphNode_BlendListByBool_12; // 0x97C8 (160)
-	struct Unknown AnimGraphNode_BlendSpacePlayer_3; // 0x9868 (224)
-	struct Unknown AnimGraphNode_SequencePlayer_5; // 0x9948 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_4; // 0x99C0 (120)
-	struct Unknown AnimGraphNode_BlendListByEnum_2; // 0x9A38 (176)
-	struct Unknown AnimGraphNode_BlendSpacePlayer_2; // 0x9AE8 (224)
-	struct Unknown AnimGraphNode_BlendSpacePlayer; // 0x9BC8 (224)
-	struct Unknown AnimGraphNode_BlendListByEnum; // 0x9CA8 (176)
-	struct Unknown AnimGraphNode_StateResult_2; // 0x9D58 (48)
-	struct Unknown AnimGraphNode_StateMachine_2; // 0x9D88 (176)
-	struct Unknown AnimGraphNode_StateResult; // 0x9E38 (48)
-	struct Unknown AnimGraphNode_StateMachine; // 0x9E68 (176)
-	struct Unknown AnimGraphNode_SaveCachedPose_14; // 0x9F18 (184)
-	struct Unknown AnimGraphNode_CopyPoseFromMesh; // 0x9FD0 (320)
-	struct Unknown AnimGraphNode_LayeredBoneBlend_4; // 0xA110 (192)
-	struct Unknown AnimGraphNode_SaveCachedPose_13; // 0xA1D0 (184)
-	struct Unknown AnimGraphNode_UseCachedPose_27; // 0xA288 (40)
-	struct Unknown AnimGraphNode_SaveCachedPose_12; // 0xA2B0 (184)
-	struct Unknown AnimGraphNode_UseCachedPose_26; // 0xA368 (40)
-	struct Unknown AnimGraphNode_ModifyBone_12; // 0xA390 (264)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace_9; // 0xA498 (32)
-	struct Unknown AnimGraphNode_SaveCachedPose_11; // 0xA4B8 (184)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace_8; // 0xA570 (32)
-	struct Unknown AnimGraphNode_LocalToComponentSpace_8; // 0xA590 (32)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace_7; // 0xA5B0 (32)
-	struct Unknown AnimGraphNode_SaveCachedPose_10; // 0xA5D0 (184)
-	struct Unknown AnimGraphNode_SaveCachedPose_9; // 0xA688 (184)
-	struct Unknown AnimGraphNode_LocalToComponentSpace_7; // 0xA740 (32)
-	struct Unknown AnimGraphNode_TwoBoneIK_7; // 0xA760 (480)
-	struct Unknown AnimGraphNode_TwoBoneIK_6; // 0xA940 (480)
-	struct Unknown AnimGraphNode_UseCachedPose_25; // 0xAB20 (40)
-	struct Unknown AnimGraphNode_ModifyBone_11; // 0xAB48 (264)
-	struct Unknown AnimGraphNode_BlendListByBool_11; // 0xAC50 (160)
-	struct Unknown AnimGraphNode_TwoWayBlend_2; // 0xACF0 (200)
-	struct Unknown AnimGraphNode_SaveCachedPose_8; // 0xADB8 (184)
-	struct Unknown AnimGraphNode_ModifyBone_10; // 0xAE70 (264)
-	struct Unknown AnimGraphNode_BlendListByBool_10; // 0xAF78 (160)
-	struct Unknown AnimGraphNode_LayeredBoneBlend_3; // 0xB018 (192)
-	struct Unknown AnimGraphNode_UseCachedPose_24; // 0xB0D8 (40)
-	struct Unknown AnimGraphNode_CopyBone_2; // 0xB100 (240)
-	struct Unknown AnimGraphNode_ApplyAdditive; // 0xB1F0 (200)
-	struct Unknown AnimGraphNode_SequencePlayer_3; // 0xB2B8 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_2; // 0xB330 (120)
-	struct Unknown AnimGraphNode_SaveCachedPose_7; // 0xB3A8 (184)
-	struct Unknown AnimGraphNode_UseCachedPose_23; // 0xB460 (40)
-	struct Unknown AnimGraphNode_SaveCachedPose_6; // 0xB488 (184)
-	struct Unknown AnimGraphNode_ModifyBone_9; // 0xB540 (264)
-	struct Unknown AnimGraphNode_BlendListByBool_9; // 0xB648 (160)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace_6; // 0xB6E8 (32)
-	struct Unknown AnimGraphNode_LocalToComponentSpace_6; // 0xB708 (32)
-	struct Unknown AnimGraphNode_SaveCachedPose_5; // 0xB728 (184)
-	struct Unknown AnimGraphNode_UseCachedPose_22; // 0xB7E0 (40)
-	struct Unknown AnimGraphNode_CopyBone; // 0xB808 (240)
-	struct Unknown AnimGraphNode_ModifyBone_8; // 0xB8F8 (264)
-	struct Unknown AnimGraphNode_BlendListByBool_8; // 0xBA00 (160)
-	struct Unknown AnimGraphNode_Slot_11; // 0xBAA0 (72)
-	struct Unknown AnimGraphNode_Slot_10; // 0xBAE8 (72)
-	struct Unknown AnimGraphNode_Slot_9; // 0xBB30 (72)
-	struct Unknown AnimGraphNode_Slot_8; // 0xBB78 (72)
-	struct Unknown AnimGraphNode_BlendListByBool_7; // 0xBBC0 (160)
-	struct Unknown AnimGraphNode_UseCachedPose_21; // 0xBC60 (40)
-	struct Unknown AnimGraphNode_Slot_7; // 0xBC88 (72)
-	struct Unknown AnimGraphNode_Slot_6; // 0xBCD0 (72)
-	struct Unknown AnimGraphNode_ModifyBone_7; // 0xBD18 (264)
-	struct Unknown AnimGraphNode_ModifyBone_6; // 0xBE20 (264)
-	struct Unknown AnimGraphNode_UseCachedPose_20; // 0xBF28 (40)
-	struct Unknown AnimGraphNode_ModifyBone_5; // 0xBF50 (264)
-	struct Unknown AnimGraphNode_LocalToComponentSpace_5; // 0xC058 (32)
-	struct Unknown AnimGraphNode_SaveCachedPose_4; // 0xC078 (184)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace_5; // 0xC130 (32)
-	struct Unknown AnimGraphNode_UseCachedPose_19; // 0xC150 (40)
-	struct Unknown AnimGraphNode_LocalToComponentSpace_4; // 0xC178 (32)
-	struct Unknown AnimGraphNode_TwoBoneIK_5; // 0xC1A0 (480)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace_4; // 0xC380 (32)
-	struct Unknown AnimGraphNode_Slot_5; // 0xC3A0 (72)
-	struct Unknown AnimGraphNode_LayeredBoneBlend_2; // 0xC3E8 (192)
-	struct Unknown AnimGraphNode_UseCachedPose_18; // 0xC4A8 (40)
-	struct Unknown AnimGraphNode_Slot_4; // 0xC4D0 (72)
-	struct Unknown AnimGraphNode_LayeredBoneBlend; // 0xC518 (192)
-	struct Unknown AnimGraphNode_UseCachedPose_17; // 0xC5D8 (40)
-	struct Unknown AnimGraphNode_UseCachedPose_16; // 0xC600 (40)
-	struct Unknown AnimGraphNode_BlendListByBool_6; // 0xC628 (160)
-	struct Unknown AnimGraphNode_UseCachedPose_15; // 0xC6C8 (40)
-	struct Unknown AnimGraphNode_TwoWayBlend; // 0xC6F0 (200)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace_3; // 0xC7B8 (32)
-	struct Unknown AnimGraphNode_LocalToComponentSpace_3; // 0xC7D8 (32)
-	struct Unknown AnimGraphNode_SaveCachedPose_3; // 0xC7F8 (184)
-	struct Unknown AnimGraphNode_BlendListByBool_5; // 0xC8B0 (160)
-	struct Unknown AnimGraphNode_UseCachedPose_14; // 0xC950 (40)
-	struct Unknown AnimGraphNode_TwoBoneIK_4; // 0xC980 (480)
-	struct Unknown AnimGraphNode_TwoBoneIK_3; // 0xCB60 (480)
-	struct Unknown AnimGraphNode_ModifyBone_4; // 0xCD40 (264)
-	struct Unknown AnimGraphNode_ModifyBone_3; // 0xCE48 (264)
-	struct Unknown AnimGraphNode_Slot_3; // 0xCF50 (72)
-	struct Unknown AnimGraphNode_TwoBoneIK_2; // 0xCFA0 (480)
-	struct Unknown AnimGraphNode_BlendListByBool_4; // 0xD180 (160)
-	struct Unknown AnimGraphNode_ModifyBone_2; // 0xD220 (264)
-	struct Unknown AnimGraphNode_LocalToComponentSpace_2; // 0xD328 (32)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace_2; // 0xD348 (32)
-	struct Unknown AnimGraphNode_BlendListByBool_3; // 0xD368 (160)
-	struct Unknown AnimGraphNode_Slot_2; // 0xD408 (72)
-	struct Unknown AnimGraphNode_Slot; // 0xD450 (72)
-	struct Unknown AnimGraphNode_SaveCachedPose_2; // 0xD498 (184)
-	struct Unknown AnimGraphNode_UseCachedPose_13; // 0xD550 (40)
-	struct Unknown AnimGraphNode_UseCachedPose_12; // 0xD578 (40)
-	struct Unknown AnimGraphNode_UseCachedPose_11; // 0xD5A0 (40)
-	struct Unknown AnimGraphNode_UseCachedPose_10; // 0xD5C8 (40)
-	struct Unknown AnimGraphNode_UseCachedPose_9; // 0xD5F0 (40)
-	struct Unknown AnimGraphNode_UseCachedPose_8; // 0xD618 (40)
-	struct Unknown AnimGraphNode_UseCachedPose_7; // 0xD640 (40)
-	struct Unknown AnimGraphNode_UseCachedPose_6; // 0xD668 (40)
-	struct Unknown AnimGraphNode_UseCachedPose_5; // 0xD690 (40)
-	struct Unknown AnimGraphNode_UseCachedPose_4; // 0xD6B8 (40)
-	struct Unknown AnimGraphNode_BlendListByBool_2; // 0xD6E0 (160)
-	struct Unknown AnimGraphNode_SequencePlayer; // 0xD780 (120)
-	struct Unknown AnimGraphNode_ModifyBone; // 0xD7F8 (264)
-	struct Unknown AnimGraphNode_TwoBoneIK; // 0xD900 (480)
-	struct Unknown AnimGraphNode_LocalToComponentSpace; // 0xDAE0 (32)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace; // 0xDB00 (32)
-	struct Unknown AnimGraphNode_SaveCachedPose; // 0xDB20 (184)
-	struct Unknown AnimGraphNode_UseCachedPose_3; // 0xDBD8 (40)
-	struct Unknown AnimGraphNode_UseCachedPose_2; // 0xDC00 (40)
-	struct Unknown AnimGraphNode_BlendListByBool; // 0xDC28 (160)
-	struct Unknown AnimGraphNode_UseCachedPose; // 0xDCC8 (40)
-
-	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-};
-
-// AnimBlueprintGeneratedClass AB.AB
 class UAB : public UBravoHotelAnimInstanceWeapon {
 
 public:
@@ -568,6 +91,25 @@ public:
 };
 
 // AnimBlueprintGeneratedClass AB.AB
+class UAB : public UBravoHotelVehicleAnimInstance {
+
+public:
+
+	struct Unknown UberGraphFrame; // 0xA20 (8)
+	struct Unknown AnimGraphNode_Root; // 0xA28 (48)
+	struct Unknown AnimGraphNode_MeshRefPose_2; // 0xA58 (16)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace_2; // 0xA68 (32)
+	struct Unknown AnimGraphNode_ModifyBone; // 0xA88 (264)
+	struct Unknown AnimGraphNode_BlendListByBool; // 0xB90 (160)
+	struct Unknown AnimGraphNode_MeshRefPose; // 0xC30 (16)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace; // 0xC40 (32)
+
+	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void BlueprintUpdateAnimation(float DeltaTimeX); // Function AB.AB.BlueprintUpdateAnimation(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+};
+
+// AnimBlueprintGeneratedClass AB.AB
 class UAB : public UBravoHotelAnimInstanceWeapon {
 
 public:
@@ -577,10 +119,10 @@ public:
 	struct Unknown AnimGraphNode_Slot_3; // 0x368 (72)
 	struct Unknown AnimGraphNode_TwoWayBlend; // 0x3B0 (200)
 	struct Unknown AnimGraphNode_LocalRefPose_3; // 0x478 (24)
-	struct Unknown AnimGraphNode_LocalRefPose_2; // 0x490 (24)
-	struct Unknown AnimGraphNode_Slot_2; // 0x4A8 (72)
-	struct Unknown AnimGraphNode_Slot; // 0x4F0 (72)
-	struct Unknown AnimGraphNode_LocalRefPose; // 0x538 (24)
+	struct Unknown AnimGraphNode_Slot_2; // 0x490 (72)
+	struct Unknown AnimGraphNode_LocalRefPose_2; // 0x4D8 (24)
+	struct Unknown AnimGraphNode_LocalRefPose; // 0x4F0 (24)
+	struct Unknown AnimGraphNode_Slot; // 0x508 (72)
 	struct Unknown AnimGraphNode_BlendListByBool; // 0x550 (160)
 
 	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
@@ -593,21 +135,21 @@ class UAB : public UBravoHotelAnimInstanceWeapon {
 public:
 
 	struct Unknown UberGraphFrame; // 0x330 (8)
-	struct Unknown AnimGraphNode_Root; // 0x338 (48)
-	struct Unknown AnimGraphNode_Slot_4; // 0x368 (72)
-	struct Unknown AnimGraphNode_BlendListByEnum; // 0x3B0 (176)
-	struct Unknown AnimGraphNode_SequencePlayer_3; // 0x460 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_2; // 0x4D8 (120)
-	struct Unknown AnimGraphNode_SequencePlayer; // 0x550 (120)
-	struct Unknown AnimGraphNode_TwoWayBlend; // 0x5C8 (200)
-	struct Unknown AnimGraphNode_LayeredBoneBlend; // 0x690 (192)
-	struct Unknown AnimGraphNode_LocalRefPose_3; // 0x750 (24)
+	struct Unknown AnimGraphNode_BlendListByEnum; // 0x338 (176)
+	struct Unknown AnimGraphNode_SequencePlayer_3; // 0x3E8 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_2; // 0x460 (120)
+	struct Unknown AnimGraphNode_SequencePlayer; // 0x4D8 (120)
+	struct Unknown AnimGraphNode_Slot_4; // 0x550 (72)
+	struct Unknown AnimGraphNode_TwoWayBlend; // 0x598 (200)
+	struct Unknown AnimGraphNode_LayeredBoneBlend; // 0x660 (192)
+	struct Unknown AnimGraphNode_LocalRefPose_3; // 0x720 (24)
+	struct Unknown AnimGraphNode_Root; // 0x738 (48)
 	struct Unknown AnimGraphNode_Slot_3; // 0x768 (72)
 	struct Unknown AnimGraphNode_Slot_2; // 0x7B0 (72)
 	struct Unknown AnimGraphNode_LocalRefPose_2; // 0x7F8 (24)
-	struct Unknown AnimGraphNode_BlendListByBool; // 0x810 (160)
-	struct Unknown AnimGraphNode_Slot; // 0x8B0 (72)
-	struct Unknown AnimGraphNode_LocalRefPose; // 0x8F8 (24)
+	struct Unknown AnimGraphNode_LocalRefPose; // 0x810 (24)
+	struct Unknown AnimGraphNode_Slot; // 0x828 (72)
+	struct Unknown AnimGraphNode_BlendListByBool; // 0x870 (160)
 
 	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
@@ -619,69 +161,71 @@ class UAB : public UBravoHotelVehicleAnimInstance {
 public:
 
 	struct Unknown UberGraphFrame; // 0xA20 (8)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace_3; // 0xA28 (32)
-	struct Unknown AnimGraphNode_CopyBone_12; // 0xA48 (240)
-	struct Unknown AnimGraphNode_LookAt_4; // 0xB40 (432)
-	struct Unknown AnimGraphNode_CopyBone_11; // 0xCF0 (240)
-	struct Unknown AnimGraphNode_LookAt_3; // 0xDE0 (432)
-	struct Unknown AnimGraphNode_CopyBone_10; // 0xF90 (240)
-	struct Unknown AnimGraphNode_MeshRefPose_2; // 0x1080 (16)
-	struct Unknown AnimGraphNode_CopyBone_9; // 0x1090 (240)
-	struct Unknown AnimGraphNode_BlendListByBool_2; // 0x1180 (160)
-	struct Unknown AnimGraphNode_CopyBone_8; // 0x1220 (240)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace_2; // 0x1310 (32)
-	struct Unknown AnimGraphNode_CopyBone_7; // 0x1330 (240)
-	struct Unknown AnimGraphNode_Root; // 0x1420 (48)
-	struct Unknown AnimGraphNode_CopyBone_6; // 0x1450 (240)
-	struct Unknown AnimGraphNode_CopyBone_5; // 0x1540 (240)
-	struct Unknown AnimGraphNode_CopyBone_4; // 0x1630 (240)
-	struct Unknown AnimGraphNode_CopyBone_3; // 0x1720 (240)
-	struct Unknown AnimGraphNode_CopyBone_2; // 0x1810 (240)
-	struct Unknown AnimGraphNode_CopyBone; // 0x1900 (240)
-	struct Unknown AnimGraphNode_RotationMultiplier_2; // 0x19F0 (240)
-	struct Unknown AnimGraphNode_LookAt_2; // 0x1AE0 (432)
-	struct Unknown AnimGraphNode_RotationMultiplier; // 0x1C90 (240)
-	struct Unknown AnimGraphNode_LookAt; // 0x1D80 (432)
-	struct Unknown AnimGraphNode_TransitionResult_12; // 0x1F30 (40)
-	struct Unknown AnimGraphNode_TransitionResult_11; // 0x1F58 (40)
-	struct Unknown AnimGraphNode_TransitionResult_10; // 0x1F80 (40)
-	struct Unknown AnimGraphNode_TransitionResult_9; // 0x1FA8 (40)
-	struct Unknown AnimGraphNode_TransitionResult_8; // 0x1FD0 (40)
-	struct Unknown AnimGraphNode_TransitionResult_7; // 0x1FF8 (40)
-	struct Unknown AnimGraphNode_SequencePlayer_6; // 0x2020 (120)
-	struct Unknown AnimGraphNode_StateResult_6; // 0x2098 (48)
-	struct Unknown AnimGraphNode_SequencePlayer_5; // 0x20C8 (120)
-	struct Unknown AnimGraphNode_StateResult_5; // 0x2140 (48)
-	struct Unknown AnimGraphNode_SequencePlayer_4; // 0x2170 (120)
-	struct Unknown AnimGraphNode_StateResult_4; // 0x21E8 (48)
-	struct Unknown AnimGraphNode_StateMachine_2; // 0x2218 (176)
-	struct Unknown AnimGraphNode_SaveCachedPose_2; // 0x22C8 (184)
-	struct Unknown AnimGraphNode_LocalToComponentSpace; // 0x2380 (32)
-	struct Unknown AnimGraphNode_LayeredBoneBlend_2; // 0x23A0 (192)
-	struct Unknown AnimGraphNode_UseCachedPose_4; // 0x2460 (40)
-	struct Unknown AnimGraphNode_TransitionResult_6; // 0x2488 (40)
-	struct Unknown AnimGraphNode_TransitionResult_5; // 0x24B0 (40)
-	struct Unknown AnimGraphNode_TransitionResult_4; // 0x24D8 (40)
-	struct Unknown AnimGraphNode_TransitionResult_3; // 0x2500 (40)
-	struct Unknown AnimGraphNode_TransitionResult_2; // 0x2528 (40)
-	struct Unknown AnimGraphNode_TransitionResult; // 0x2550 (40)
-	struct Unknown AnimGraphNode_SequencePlayer_3; // 0x2578 (120)
-	struct Unknown AnimGraphNode_StateResult_3; // 0x25F0 (48)
-	struct Unknown AnimGraphNode_SequencePlayer_2; // 0x2620 (120)
-	struct Unknown AnimGraphNode_StateResult_2; // 0x2698 (48)
-	struct Unknown AnimGraphNode_SequencePlayer; // 0x26C8 (120)
-	struct Unknown AnimGraphNode_StateResult; // 0x2740 (48)
-	struct Unknown AnimGraphNode_StateMachine; // 0x2770 (176)
-	struct Unknown AnimGraphNode_BlendListByBool; // 0x2820 (160)
-	struct Unknown AnimGraphNode_TwoWayBlend; // 0x28C0 (200)
-	struct Unknown AnimGraphNode_SaveCachedPose; // 0x2988 (184)
-	struct Unknown AnimGraphNode_UseCachedPose_3; // 0x2A40 (40)
-	struct Unknown AnimGraphNode_UseCachedPose_2; // 0x2A68 (40)
-	struct Unknown AnimGraphNode_UseCachedPose; // 0x2A90 (40)
-	struct Unknown AnimGraphNode_WheelHandler; // 0x2AB8 (224)
-	struct Unknown AnimGraphNode_MeshRefPose; // 0x2B98 (16)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace; // 0x2BA8 (32)
-	struct Unknown AnimGraphNode_LayeredBoneBlend; // 0x2BC8 (192)
+	struct Unknown AnimGraphNode_LookAt_6; // 0xA30 (432)
+	struct Unknown AnimGraphNode_CopyBone_12; // 0xBE0 (240)
+	struct Unknown AnimGraphNode_LookAt_5; // 0xCD0 (432)
+	struct Unknown AnimGraphNode_CopyBone_11; // 0xE80 (240)
+	struct Unknown AnimGraphNode_LookAt_4; // 0xF70 (432)
+	struct Unknown AnimGraphNode_CopyBone_10; // 0x1120 (240)
+	struct Unknown AnimGraphNode_CopyBone_9; // 0x1210 (240)
+	struct Unknown AnimGraphNode_LookAt_3; // 0x1300 (432)
+	struct Unknown AnimGraphNode_CopyBone_8; // 0x14B0 (240)
+	struct Unknown AnimGraphNode_CopyBone_7; // 0x15A0 (240)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace_3; // 0x1690 (32)
+	struct Unknown AnimGraphNode_MeshRefPose_2; // 0x16B0 (16)
+	struct Unknown AnimGraphNode_BlendListByBool_2; // 0x16C0 (160)
+	struct Unknown AnimGraphNode_CopyBone_6; // 0x1760 (240)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace_2; // 0x1850 (32)
+	struct Unknown AnimGraphNode_CopyBone_5; // 0x1870 (240)
+	struct Unknown AnimGraphNode_Root; // 0x1960 (48)
+	struct Unknown AnimGraphNode_CopyBone_4; // 0x1990 (240)
+	struct Unknown AnimGraphNode_CopyBone_3; // 0x1A80 (240)
+	struct Unknown AnimGraphNode_CopyBone_2; // 0x1B70 (240)
+	struct Unknown AnimGraphNode_CopyBone; // 0x1C60 (240)
+	struct Unknown AnimGraphNode_RotationMultiplier_2; // 0x1D50 (240)
+	struct Unknown AnimGraphNode_LookAt_2; // 0x1E40 (432)
+	struct Unknown AnimGraphNode_RotationMultiplier; // 0x1FF0 (240)
+	struct Unknown AnimGraphNode_LookAt; // 0x20E0 (432)
+	struct Unknown AnimGraphNode_TransitionResult_12; // 0x2290 (40)
+	struct Unknown AnimGraphNode_TransitionResult_11; // 0x22B8 (40)
+	struct Unknown AnimGraphNode_TransitionResult_10; // 0x22E0 (40)
+	struct Unknown AnimGraphNode_TransitionResult_9; // 0x2308 (40)
+	struct Unknown AnimGraphNode_TransitionResult_8; // 0x2330 (40)
+	struct Unknown AnimGraphNode_TransitionResult_7; // 0x2358 (40)
+	struct Unknown AnimGraphNode_SequencePlayer_6; // 0x2380 (120)
+	struct Unknown AnimGraphNode_StateResult_6; // 0x23F8 (48)
+	struct Unknown AnimGraphNode_SequencePlayer_5; // 0x2428 (120)
+	struct Unknown AnimGraphNode_StateResult_5; // 0x24A0 (48)
+	struct Unknown AnimGraphNode_SequencePlayer_4; // 0x24D0 (120)
+	struct Unknown AnimGraphNode_StateResult_4; // 0x2548 (48)
+	struct Unknown AnimGraphNode_StateMachine_2; // 0x2578 (176)
+	struct Unknown AnimGraphNode_LocalToComponentSpace; // 0x2628 (32)
+	struct Unknown AnimGraphNode_SaveCachedPose_2; // 0x2648 (184)
+	struct Unknown AnimGraphNode_TransitionResult_6; // 0x2700 (40)
+	struct Unknown AnimGraphNode_TransitionResult_5; // 0x2728 (40)
+	struct Unknown AnimGraphNode_TransitionResult_4; // 0x2750 (40)
+	struct Unknown AnimGraphNode_TransitionResult_3; // 0x2778 (40)
+	struct Unknown AnimGraphNode_TransitionResult_2; // 0x27A0 (40)
+	struct Unknown AnimGraphNode_TransitionResult; // 0x27C8 (40)
+	struct Unknown AnimGraphNode_SequencePlayer_3; // 0x27F0 (120)
+	struct Unknown AnimGraphNode_StateResult_3; // 0x2868 (48)
+	struct Unknown AnimGraphNode_SequencePlayer_2; // 0x2898 (120)
+	struct Unknown AnimGraphNode_StateResult_2; // 0x2910 (48)
+	struct Unknown AnimGraphNode_SequencePlayer; // 0x2940 (120)
+	struct Unknown AnimGraphNode_StateResult; // 0x29B8 (48)
+	struct Unknown AnimGraphNode_StateMachine; // 0x29E8 (176)
+	struct Unknown AnimGraphNode_SaveCachedPose; // 0x2A98 (184)
+	struct Unknown AnimGraphNode_LayeredBoneBlend_2; // 0x2B50 (192)
+	struct Unknown AnimGraphNode_UseCachedPose_4; // 0x2C10 (40)
+	struct Unknown AnimGraphNode_BlendListByBool; // 0x2C38 (160)
+	struct Unknown AnimGraphNode_TwoWayBlend; // 0x2CD8 (200)
+	struct Unknown AnimGraphNode_UseCachedPose_3; // 0x2DA0 (40)
+	struct Unknown AnimGraphNode_UseCachedPose_2; // 0x2DC8 (40)
+	struct Unknown AnimGraphNode_UseCachedPose; // 0x2DF0 (40)
+	struct Unknown AnimGraphNode_WheelHandler; // 0x2E18 (224)
+	struct Unknown AnimGraphNode_MeshRefPose; // 0x2EF8 (16)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace; // 0x2F08 (32)
+	struct Unknown AnimGraphNode_LayeredBoneBlend; // 0x2F28 (192)
 
 	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
@@ -699,19 +243,6 @@ public:
 	void BlueprintUpdateAnimation(float DeltaTimeX); // Function AB.AB.BlueprintUpdateAnimation(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 	void AnimNotify_FPP_Entered_Idle(); // Function AB.AB.AnimNotify_FPP_Entered_Idle(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 	void AnimNotify_FPP_Left_Idle(); // Function AB.AB.AnimNotify_FPP_Left_Idle(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-};
-
-// AnimBlueprintGeneratedClass AB.AB
-class UAB : public UAnimInstance {
-
-public:
-
-	struct Unknown UberGraphFrame; // 0x270 (8)
-	struct Unknown AnimGraphNode_Root; // 0x278 (48)
-	struct Unknown AnimGraphNode_SequencePlayer; // 0x2A8 (120)
-
-	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 };
 
@@ -830,359 +361,6 @@ public:
 
 	struct Unknown UberGraphFrame; // 0x330 (8)
 	struct Unknown AnimGraphNode_Root; // 0x338 (48)
-	struct Unknown AnimGraphNode_LocalToComponentSpace; // 0x368 (32)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace; // 0x388 (32)
-	struct Unknown AnimGraphNode_ModifyBone_3; // 0x3A8 (264)
-	struct Unknown AnimGraphNode_BlendListByBool; // 0x4B0 (160)
-	struct Unknown AnimGraphNode_ModifyBone_2; // 0x550 (264)
-	struct Unknown AnimGraphNode_Slot_5; // 0x658 (72)
-	struct Unknown AnimGraphNode_ModifyBone; // 0x6A0 (264)
-	struct Unknown AnimGraphNode_TwoWayBlend_2; // 0x7A8 (200)
-	struct Unknown AnimGraphNode_Slot_4; // 0x870 (72)
-	struct Unknown AnimGraphNode_Slot_3; // 0x8B8 (72)
-	struct Unknown AnimGraphNode_LayeredBoneBlend; // 0x900 (192)
-	struct Unknown AnimGraphNode_Slot_2; // 0x9C0 (72)
-	struct Unknown AnimGraphNode_LocalRefPose_2; // 0xA08 (24)
-	struct Unknown AnimGraphNode_TwoWayBlend; // 0xA20 (200)
-	struct Unknown AnimGraphNode_Slot; // 0xAE8 (72)
-	struct Unknown AnimGraphNode_LocalRefPose; // 0xB30 (24)
-	struct Unknown AnimGraphNode_SaveCachedPose_3; // 0xB48 (184)
-	struct Unknown AnimGraphNode_UseCachedPose_6; // 0xC00 (40)
-	struct Unknown AnimGraphNode_UseCachedPose_5; // 0xC28 (40)
-	struct Unknown AnimGraphNode_UseCachedPose_4; // 0xC50 (40)
-	struct Unknown AnimGraphNode_SaveCachedPose_2; // 0xC78 (184)
-	struct Unknown AnimGraphNode_UseCachedPose_3; // 0xD30 (40)
-	struct Unknown AnimGraphNode_SaveCachedPose; // 0xD58 (184)
-	struct Unknown AnimGraphNode_UseCachedPose_2; // 0xE10 (40)
-	struct Unknown AnimGraphNode_UseCachedPose; // 0xE38 (40)
-
-	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-};
-
-// AnimBlueprintGeneratedClass AB.AB
-class UAB : public UBravoHotelAnimInstanceParachute {
-
-public:
-
-	struct Unknown UberGraphFrame; // 0x2D0 (8)
-	struct Unknown AnimGraphNode_Root; // 0x2D8 (48)
-	struct Unknown AnimGraphNode_TransitionResult_5; // 0x308 (40)
-	struct Unknown AnimGraphNode_TransitionResult_4; // 0x330 (40)
-	struct Unknown AnimGraphNode_TransitionResult_3; // 0x358 (40)
-	struct Unknown AnimGraphNode_TransitionResult_2; // 0x380 (40)
-	struct Unknown AnimGraphNode_TransitionResult; // 0x3A8 (40)
-	struct Unknown AnimGraphNode_SequencePlayer_3; // 0x3D0 (120)
-	struct Unknown AnimGraphNode_StateResult_4; // 0x448 (48)
-	struct Unknown AnimGraphNode_BlendSpacePlayer; // 0x478 (224)
-	struct Unknown AnimGraphNode_StateResult_3; // 0x558 (48)
-	struct Unknown AnimGraphNode_SequencePlayer_2; // 0x588 (120)
-	struct Unknown AnimGraphNode_StateResult_2; // 0x600 (48)
-	struct Unknown AnimGraphNode_SequencePlayer; // 0x630 (120)
-	struct Unknown AnimGraphNode_StateResult; // 0x6A8 (48)
-	struct Unknown AnimGraphNode_StateMachine; // 0x6D8 (176)
-	struct Unknown AnimGraphNode_LocalToComponentSpace; // 0x788 (32)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace; // 0x7A8 (32)
-	struct Unknown AnimGraphNode_ModifyBone_2; // 0x7C8 (264)
-	struct Unknown AnimGraphNode_ModifyBone; // 0x8D0 (264)
-	struct Unknown RightHandleLocation; // 0x9D8 (12)
-	struct Unknown LeftHandleLocation; // 0x9E4 (12)
-
-	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void AnimNotify_ResetSkipTransitionFlag(); // Function AB.AB.AnimNotify_ResetSkipTransitionFlag(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-};
-
-// AnimBlueprintGeneratedClass AB.AB
-class UAB : public UBravoHotelAnimInstancePostprocess {
-
-public:
-
-	struct Unknown UberGraphFrame; // 0x520 (8)
-	struct Unknown AnimGraphNode_BlendListByBool_21; // 0x528 (160)
-	struct Unknown AnimGraphNode_ModifyBone_21; // 0x5C8 (264)
-	struct Unknown AnimGraphNode_TwoBoneIK_11; // 0x6D0 (480)
-	struct Unknown AnimGraphNode_ModifyBone_20; // 0x8B0 (264)
-	struct Unknown AnimGraphNode_TwoBoneIK_10; // 0x9C0 (480)
-	struct Unknown AnimGraphNode_LocalToComponentSpace_20; // 0xBA0 (32)
-	struct Unknown AnimGraphNode_ModifyBone_19; // 0xBC0 (264)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace_20; // 0xCC8 (32)
-	struct Unknown AnimGraphNode_SaveCachedPose_20; // 0xCE8 (184)
-	struct Unknown AnimGraphNode_SaveCachedPose_19; // 0xDA0 (184)
-	struct Unknown AnimGraphNode_ModifyBone_18; // 0xE58 (264)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace_19; // 0xF60 (32)
-	struct Unknown AnimGraphNode_BlendListByBool_20; // 0xF80 (160)
-	struct Unknown AnimGraphNode_SaveCachedPose_18; // 0x1020 (184)
-	struct Unknown AnimGraphNode_LocalToComponentSpace_19; // 0x10D8 (32)
-	struct Unknown AnimGraphNode_UseCachedPose_43; // 0x10F8 (40)
-	struct Unknown AnimGraphNode_UseCachedPose_42; // 0x1120 (40)
-	struct Unknown AnimGraphNode_UseCachedPose_41; // 0x1148 (40)
-	struct Unknown AnimGraphNode_BlendListByBool_19; // 0x1170 (160)
-	struct Unknown AnimGraphNode_UseCachedPose_40; // 0x1210 (40)
-	struct Unknown AnimGraphNode_LocalToComponentSpace_18; // 0x1238 (32)
-	struct Unknown AnimGraphNode_ModifyBone_17; // 0x1258 (264)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace_18; // 0x1360 (32)
-	struct Unknown AnimGraphNode_ModifyBone_16; // 0x1380 (264)
-	struct Unknown AnimGraphNode_ModifyBone_15; // 0x1488 (264)
-	struct Unknown AnimGraphNode_ModifyBone_14; // 0x1590 (264)
-	struct Unknown AnimGraphNode_SaveCachedPose_17; // 0x1698 (184)
-	struct Unknown AnimGraphNode_UseCachedPose_39; // 0x1750 (40)
-	struct Unknown AnimGraphNode_LocalToComponentSpace_17; // 0x1778 (32)
-	struct Unknown AnimGraphNode_BlendListByBool_18; // 0x1798 (160)
-	struct Unknown AnimGraphNode_BlendListByBool_17; // 0x1838 (160)
-	struct Unknown AnimGraphNode_UseCachedPose_38; // 0x18D8 (40)
-	struct Unknown AnimGraphNode_ModifyBone_13; // 0x1900 (264)
-	struct Unknown AnimGraphNode_BlendListByBool_16; // 0x1A08 (160)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace_17; // 0x1AA8 (32)
-	struct Unknown AnimGraphNode_LocalToComponentSpace_16; // 0x1AC8 (32)
-	struct Unknown AnimGraphNode_UseCachedPose_37; // 0x1AE8 (40)
-	struct Unknown AnimGraphNode_ModifyBone_12; // 0x1B10 (264)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace_16; // 0x1C18 (32)
-	struct Unknown AnimGraphNode_LocalToComponentSpace_15; // 0x1C38 (32)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace_15; // 0x1C58 (32)
-	struct Unknown AnimGraphNode_UseCachedPose_36; // 0x1C78 (40)
-	struct Unknown AnimGraphNode_LocalToComponentSpace_14; // 0x1CA0 (32)
-	struct Unknown AnimGraphNode_AnimDynamics_13; // 0x1CC0 (1088)
-	struct Unknown AnimGraphNode_AnimDynamics_12; // 0x2100 (1088)
-	struct Unknown AnimGraphNode_SaveCachedPose_16; // 0x2540 (184)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace_14; // 0x25F8 (32)
-	struct Unknown AnimGraphNode_ModifyBone_11; // 0x2618 (264)
-	struct Unknown AnimGraphNode_ModifyBone_10; // 0x2720 (264)
-	struct Unknown AnimGraphNode_ModifyBone_9; // 0x2828 (264)
-	struct Unknown AnimGraphNode_LocalToComponentSpace_13; // 0x2930 (32)
-	struct Unknown AnimGraphNode_SubInput; // 0x2950 (120)
-	struct Unknown AnimGraphNode_Root; // 0x29C8 (48)
-	struct Unknown AnimGraphNode_UseCachedPose_35; // 0x29F8 (40)
-	struct Unknown AnimGraphNode_UseCachedPose_34; // 0x2A20 (40)
-	struct Unknown AnimGraphNode_HandIKRetargeting_3; // 0x2A48 (288)
-	struct Unknown AnimGraphNode_TwoBoneIK_9; // 0x2B70 (480)
-	struct Unknown AnimGraphNode_LocalToComponentSpace_12; // 0x2D50 (32)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace_13; // 0x2D70 (32)
-	struct Unknown AnimGraphNode_SaveCachedPose_15; // 0x2D90 (184)
-	struct Unknown AnimGraphNode_BlendListByBool_15; // 0x2E48 (160)
-	struct Unknown AnimGraphNode_SaveCachedPose_14; // 0x2EE8 (184)
-	struct Unknown AnimGraphNode_TwoBoneIK_8; // 0x2FA0 (480)
-	struct Unknown AnimGraphNode_LocalToComponentSpace_11; // 0x3180 (32)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace_12; // 0x31A0 (32)
-	struct Unknown AnimGraphNode_ModifyBone_8; // 0x31C0 (264)
-	struct Unknown AnimGraphNode_ModifyBone_7; // 0x32C8 (264)
-	struct Unknown AnimGraphNode_LocalToComponentSpace_10; // 0x33D0 (32)
-	struct Unknown AnimGraphNode_TwoBoneIK_7; // 0x33F0 (480)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace_11; // 0x35D0 (32)
-	struct Unknown AnimGraphNode_HandIKRetargeting_2; // 0x35F0 (288)
-	struct Unknown AnimGraphNode_BlendListByBool_14; // 0x3710 (160)
-	struct Unknown AnimGraphNode_UseCachedPose_33; // 0x37B0 (40)
-	struct Unknown AnimGraphNode_UseCachedPose_32; // 0x37D8 (40)
-	struct Unknown AnimGraphNode_SaveCachedPose_13; // 0x3800 (184)
-	struct Unknown AnimGraphNode_ModifyBone_6; // 0x38B8 (264)
-	struct Unknown AnimGraphNode_UseCachedPose_31; // 0x39C0 (40)
-	struct Unknown AnimGraphNode_UseCachedPose_30; // 0x39E8 (40)
-	struct Unknown AnimGraphNode_LayeredBoneBlend_2; // 0x3A10 (192)
-	struct Unknown AnimGraphNode_SequencePlayer_2; // 0x3AD0 (120)
-	struct Unknown AnimGraphNode_SaveCachedPose_12; // 0x3B48 (184)
-	struct Unknown AnimGraphNode_UseCachedPose_29; // 0x3C00 (40)
-	struct Unknown AnimGraphNode_UseCachedPose_28; // 0x3C28 (40)
-	struct Unknown AnimGraphNode_LayeredBoneBlend; // 0x3C50 (192)
-	struct Unknown AnimGraphNode_SequencePlayer; // 0x3D10 (120)
-	struct Unknown AnimGraphNode_BlendListByBool_13; // 0x3D88 (160)
-	struct Unknown AnimGraphNode_SaveCachedPose_11; // 0x3E28 (184)
-	struct Unknown AnimGraphNode_BlendListByEnum; // 0x3EE0 (176)
-	struct Unknown AnimGraphNode_UseCachedPose_27; // 0x3F90 (40)
-	struct Unknown AnimGraphNode_UseCachedPose_26; // 0x3FB8 (40)
-	struct Unknown AnimGraphNode_UseCachedPose_25; // 0x3FE0 (40)
-	struct Unknown AnimGraphNode_UseCachedPose_24; // 0x4008 (40)
-	struct Unknown AnimGraphNode_AnimDynamics_11; // 0x4030 (1088)
-	struct Unknown AnimGraphNode_AnimDynamics_10; // 0x4470 (1088)
-	struct Unknown AnimGraphNode_AnimDynamics_9; // 0x48B0 (1088)
-	struct Unknown AnimGraphNode_AnimDynamics_8; // 0x4CF0 (1088)
-	struct Unknown AnimGraphNode_AnimDynamics_7; // 0x5130 (1088)
-	struct Unknown AnimGraphNode_AnimDynamics_6; // 0x5570 (1088)
-	struct Unknown AnimGraphNode_AnimDynamics_5; // 0x59B0 (1088)
-	struct Unknown AnimGraphNode_ModifyBone_5; // 0x5DF0 (264)
-	struct Unknown AnimGraphNode_HandIKRetargeting; // 0x5EF8 (288)
-	struct Unknown AnimGraphNode_TwoBoneIK_6; // 0x6020 (480)
-	struct Unknown AnimGraphNode_LocalToComponentSpace_9; // 0x6200 (32)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace_10; // 0x6220 (32)
-	struct Unknown AnimGraphNode_SaveCachedPose_10; // 0x6240 (184)
-	struct Unknown AnimGraphNode_TwoBoneIK_5; // 0x6300 (480)
-	struct Unknown AnimGraphNode_LocalToComponentSpace_8; // 0x64E0 (32)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace_9; // 0x6500 (32)
-	struct Unknown AnimGraphNode_SaveCachedPose_9; // 0x6520 (184)
-	struct Unknown AnimGraphNode_UseCachedPose_23; // 0x65D8 (40)
-	struct Unknown AnimGraphNode_UseCachedPose_22; // 0x6600 (40)
-	struct Unknown AnimGraphNode_BlendListByBool_12; // 0x6628 (160)
-	struct Unknown AnimGraphNode_UseCachedPose_21; // 0x66C8 (40)
-	struct Unknown AnimGraphNode_BlendListByBool_11; // 0x66F0 (160)
-	struct Unknown AnimGraphNode_UseCachedPose_20; // 0x6790 (40)
-	struct Unknown AnimGraphNode_UseCachedPose_19; // 0x67B8 (40)
-	struct Unknown AnimGraphNode_LocalToComponentSpace_7; // 0x67E0 (32)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace_8; // 0x6800 (32)
-	struct Unknown AnimGraphNode_SaveCachedPose_8; // 0x6820 (184)
-	struct Unknown AnimGraphNode_TwoBoneIK_4; // 0x68E0 (480)
-	struct Unknown AnimGraphNode_TwoBoneIK_3; // 0x6AC0 (480)
-	struct Unknown AnimGraphNode_TwoBoneIK_2; // 0x6CA0 (480)
-	struct Unknown AnimGraphNode_TwoBoneIK; // 0x6E80 (480)
-	struct Unknown AnimGraphNode_ModifyBone_4; // 0x7060 (264)
-	struct Unknown AnimGraphNode_ModifyBone_3; // 0x7168 (264)
-	struct Unknown AnimGraphNode_ModifyBone_2; // 0x7270 (264)
-	struct Unknown AnimGraphNode_ModifyBone; // 0x7378 (264)
-	struct Unknown AnimGraphNode_AnimDynamics_4; // 0x7480 (1088)
-	struct Unknown AnimGraphNode_AnimDynamics_3; // 0x78C0 (1088)
-	struct Unknown AnimGraphNode_KawaiiPhysics_26; // 0x7D00 (592)
-	struct Unknown AnimGraphNode_KawaiiPhysics_25; // 0x7F50 (592)
-	struct Unknown AnimGraphNode_KawaiiPhysics_24; // 0x81A0 (592)
-	struct Unknown AnimGraphNode_KawaiiPhysics_23; // 0x83F0 (592)
-	struct Unknown AnimGraphNode_KawaiiPhysics_22; // 0x8640 (592)
-	struct Unknown AnimGraphNode_KawaiiPhysics_21; // 0x8890 (592)
-	struct Unknown AnimGraphNode_BoneDrivenController_20; // 0x8AE0 (280)
-	struct Unknown AnimGraphNode_BoneDrivenController_19; // 0x8BF8 (280)
-	struct Unknown AnimGraphNode_BoneDrivenController_18; // 0x8D10 (280)
-	struct Unknown AnimGraphNode_BoneDrivenController_17; // 0x8E28 (280)
-	struct Unknown AnimGraphNode_BoneDrivenController_16; // 0x8F40 (280)
-	struct Unknown AnimGraphNode_BoneDrivenController_15; // 0x9058 (280)
-	struct Unknown AnimGraphNode_BoneDrivenController_14; // 0x9170 (280)
-	struct Unknown AnimGraphNode_BoneDrivenController_13; // 0x9288 (280)
-	struct Unknown AnimGraphNode_KawaiiPhysics_20; // 0x93A0 (592)
-	struct Unknown AnimGraphNode_KawaiiPhysics_19; // 0x95F0 (592)
-	struct Unknown AnimGraphNode_KawaiiPhysics_18; // 0x9840 (592)
-	struct Unknown AnimGraphNode_KawaiiPhysics_17; // 0x9A90 (592)
-	struct Unknown AnimGraphNode_KawaiiPhysics_16; // 0x9CE0 (592)
-	struct Unknown AnimGraphNode_BoneDrivenController_12; // 0x9F30 (280)
-	struct Unknown AnimGraphNode_BoneDrivenController_11; // 0xA048 (280)
-	struct Unknown AnimGraphNode_KawaiiPhysics_15; // 0xA160 (592)
-	struct Unknown AnimGraphNode_BoneDrivenController_10; // 0xA3B0 (280)
-	struct Unknown AnimGraphNode_BoneDrivenController_9; // 0xA4C8 (280)
-	struct Unknown AnimGraphNode_BoneDrivenController_8; // 0xA5E0 (280)
-	struct Unknown AnimGraphNode_BoneDrivenController_7; // 0xA6F8 (280)
-	struct Unknown AnimGraphNode_BoneDrivenController_6; // 0xA810 (280)
-	struct Unknown AnimGraphNode_BoneDrivenController_5; // 0xA928 (280)
-	struct Unknown AnimGraphNode_BoneDrivenController_4; // 0xAA40 (280)
-	struct Unknown AnimGraphNode_BoneDrivenController_3; // 0xAB58 (280)
-	struct Unknown AnimGraphNode_BoneDrivenController_2; // 0xAC70 (280)
-	struct Unknown AnimGraphNode_BoneDrivenController; // 0xAD88 (280)
-	struct Unknown AnimGraphNode_KawaiiPhysics_14; // 0xAEA0 (592)
-	struct Unknown AnimGraphNode_KawaiiPhysics_13; // 0xB0F0 (592)
-	struct Unknown AnimGraphNode_KawaiiPhysics_12; // 0xB340 (592)
-	struct Unknown AnimGraphNode_KawaiiPhysics_11; // 0xB590 (592)
-	struct Unknown AnimGraphNode_KawaiiPhysics_10; // 0xB7E0 (592)
-	struct Unknown AnimGraphNode_KawaiiPhysics_9; // 0xBA30 (592)
-	struct Unknown AnimGraphNode_KawaiiPhysics_8; // 0xBC80 (592)
-	struct Unknown AnimGraphNode_KawaiiPhysics_7; // 0xBED0 (592)
-	struct Unknown AnimGraphNode_KawaiiPhysics_6; // 0xC120 (592)
-	struct Unknown AnimGraphNode_KawaiiPhysics_5; // 0xC370 (592)
-	struct Unknown AnimGraphNode_KawaiiPhysics_4; // 0xC5C0 (592)
-	struct Unknown AnimGraphNode_KawaiiPhysics_3; // 0xC810 (592)
-	struct Unknown AnimGraphNode_KawaiiPhysics_2; // 0xCA60 (592)
-	struct Unknown AnimGraphNode_KawaiiPhysics; // 0xCCB0 (592)
-	struct Unknown AnimGraphNode_AnimDynamics_2; // 0xCF00 (1088)
-	struct Unknown AnimGraphNode_AnimDynamics; // 0xD340 (1088)
-	struct Unknown AnimGraphNode_BlendListByBool_10; // 0xD780 (160)
-	struct Unknown AnimGraphNode_UseCachedPose_18; // 0xD820 (40)
-	struct Unknown AnimGraphNode_BlendListByBool_9; // 0xD848 (160)
-	struct Unknown AnimGraphNode_UseCachedPose_17; // 0xD8E8 (40)
-	struct Unknown AnimGraphNode_UseCachedPose_16; // 0xD910 (40)
-	struct Unknown AnimGraphNode_BlendListByBool_8; // 0xD938 (160)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace_7; // 0xD9D8 (32)
-	struct Unknown AnimGraphNode_UseCachedPose_15; // 0xD9F8 (40)
-	struct Unknown AnimGraphNode_SaveCachedPose_7; // 0xDA20 (184)
-	struct Unknown AnimGraphNode_UseCachedPose_14; // 0xDAD8 (40)
-	struct Unknown AnimGraphNode_LocalToComponentSpace_6; // 0xDB00 (32)
-	struct Unknown AnimGraphNode_BlendListByBool_7; // 0xDB20 (160)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace_6; // 0xDBC0 (32)
-	struct Unknown AnimGraphNode_UseCachedPose_13; // 0xDBE0 (40)
-	struct Unknown AnimGraphNode_SaveCachedPose_6; // 0xDC08 (184)
-	struct Unknown AnimGraphNode_UseCachedPose_12; // 0xDCC0 (40)
-	struct Unknown AnimGraphNode_LocalToComponentSpace_5; // 0xDCE8 (32)
-	struct Unknown AnimGraphNode_BlendListByBool_6; // 0xDD08 (160)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace_5; // 0xDDA8 (32)
-	struct Unknown AnimGraphNode_UseCachedPose_11; // 0xDDC8 (40)
-	struct Unknown AnimGraphNode_SaveCachedPose_5; // 0xDDF0 (184)
-	struct Unknown AnimGraphNode_BlendListByBool_5; // 0xDEA8 (160)
-	struct Unknown AnimGraphNode_UseCachedPose_10; // 0xDF48 (40)
-	struct Unknown AnimGraphNode_UseCachedPose_9; // 0xDF70 (40)
-	struct Unknown AnimGraphNode_LocalToComponentSpace_4; // 0xDF98 (32)
-	struct Unknown AnimGraphNode_BlendListByBool_4; // 0xDFB8 (160)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace_4; // 0xE058 (32)
-	struct Unknown AnimGraphNode_UseCachedPose_8; // 0xE078 (40)
-	struct Unknown AnimGraphNode_SaveCachedPose_4; // 0xE0A0 (184)
-	struct Unknown AnimGraphNode_UseCachedPose_7; // 0xE158 (40)
-	struct Unknown AnimGraphNode_UseCachedPose_6; // 0xE180 (40)
-	struct Unknown AnimGraphNode_BlendListByBool_3; // 0xE1A8 (160)
-	struct Unknown AnimGraphNode_SaveCachedPose_3; // 0xE248 (184)
-	struct Unknown AnimGraphNode_LocalToComponentSpace_3; // 0xE300 (32)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace_3; // 0xE320 (32)
-	struct Unknown AnimGraphNode_BlendListByBool_2; // 0xE340 (160)
-	struct Unknown AnimGraphNode_UseCachedPose_5; // 0xE3E0 (40)
-	struct Unknown AnimGraphNode_SaveCachedPose_2; // 0xE408 (184)
-	struct Unknown AnimGraphNode_UseCachedPose_4; // 0xE4C0 (40)
-	struct Unknown AnimGraphNode_LocalToComponentSpace_2; // 0xE4E8 (32)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace_2; // 0xE508 (32)
-	struct Unknown AnimGraphNode_BlendListByBool; // 0xE528 (160)
-	struct Unknown AnimGraphNode_SaveCachedPose; // 0xE5C8 (184)
-	struct Unknown AnimGraphNode_UseCachedPose_3; // 0xE680 (40)
-	struct Unknown AnimGraphNode_UseCachedPose_2; // 0xE6A8 (40)
-	struct Unknown AnimGraphNode_LocalToComponentSpace; // 0xE6D0 (32)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace; // 0xE6F0 (32)
-	struct Unknown AnimGraphNode_UseCachedPose; // 0xE710 (40)
-
-	void AnimGraph(struct Unknown InPose, struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-};
-
-// AnimBlueprintGeneratedClass AB.AB
-class UAB : public UBravoHotelAnimInstanceWeapon {
-
-public:
-
-	struct Unknown UberGraphFrame; // 0x330 (8)
-	struct Unknown AnimGraphNode_Root; // 0x338 (48)
-	struct Unknown AnimGraphNode_BlendListByEnum; // 0x368 (176)
-	struct Unknown AnimGraphNode_SequencePlayer_3; // 0x418 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_2; // 0x490 (120)
-	struct Unknown AnimGraphNode_SequencePlayer; // 0x508 (120)
-	struct Unknown AnimGraphNode_Slot_4; // 0x580 (72)
-	struct Unknown AnimGraphNode_Slot_3; // 0x5C8 (72)
-	struct Unknown AnimGraphNode_TwoWayBlend; // 0x610 (200)
-	struct Unknown AnimGraphNode_LayeredBoneBlend; // 0x6D8 (192)
-	struct Unknown AnimGraphNode_LocalRefPose_3; // 0x798 (24)
-	struct Unknown AnimGraphNode_LocalRefPose_2; // 0x7B0 (24)
-	struct Unknown AnimGraphNode_Slot_2; // 0x7C8 (72)
-	struct Unknown AnimGraphNode_Slot; // 0x810 (72)
-	struct Unknown AnimGraphNode_LocalRefPose; // 0x858 (24)
-	struct Unknown AnimGraphNode_BlendListByBool; // 0x870 (160)
-
-	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-};
-
-// AnimBlueprintGeneratedClass AB.AB
-class UAB : public UBravoHotelAnimInstanceWeapon {
-
-public:
-
-	struct Unknown UberGraphFrame; // 0x330 (8)
-	struct Unknown AnimGraphNode_Root; // 0x338 (48)
-	struct Unknown AnimGraphNode_Slot_3; // 0x368 (72)
-	struct Unknown AnimGraphNode_TwoWayBlend; // 0x3B0 (200)
-	struct Unknown AnimGraphNode_LocalRefPose_3; // 0x478 (24)
-	struct Unknown AnimGraphNode_LocalRefPose_2; // 0x490 (24)
-	struct Unknown AnimGraphNode_Slot_2; // 0x4A8 (72)
-	struct Unknown AnimGraphNode_Slot; // 0x4F0 (72)
-	struct Unknown AnimGraphNode_LocalRefPose; // 0x538 (24)
-	struct Unknown AnimGraphNode_BlendListByBool; // 0x550 (160)
-
-	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-};
-
-// AnimBlueprintGeneratedClass AB.AB
-class UAB : public UBravoHotelAnimInstanceWeapon {
-
-public:
-
-	struct Unknown UberGraphFrame; // 0x330 (8)
-	struct Unknown AnimGraphNode_Root; // 0x338 (48)
 	struct Unknown AnimGraphNode_BlendListByEnum; // 0x368 (176)
 	struct Unknown AnimGraphNode_SequencePlayer_3; // 0x418 (120)
 	struct Unknown AnimGraphNode_SequencePlayer_2; // 0x490 (120)
@@ -1191,32 +369,12 @@ public:
 	struct Unknown AnimGraphNode_TwoWayBlend; // 0x5C8 (200)
 	struct Unknown AnimGraphNode_LayeredBoneBlend; // 0x690 (192)
 	struct Unknown AnimGraphNode_LocalRefPose_3; // 0x750 (24)
-	struct Unknown AnimGraphNode_Slot_3; // 0x768 (72)
-	struct Unknown AnimGraphNode_LocalRefPose_2; // 0x7B0 (24)
-	struct Unknown AnimGraphNode_LocalRefPose; // 0x7C8 (24)
-	struct Unknown AnimGraphNode_Slot_2; // 0x7E0 (72)
-	struct Unknown AnimGraphNode_Slot; // 0x828 (72)
+	struct Unknown AnimGraphNode_LocalRefPose_2; // 0x768 (24)
+	struct Unknown AnimGraphNode_Slot_3; // 0x780 (72)
+	struct Unknown AnimGraphNode_Slot_2; // 0x7C8 (72)
+	struct Unknown AnimGraphNode_Slot; // 0x810 (72)
+	struct Unknown AnimGraphNode_LocalRefPose; // 0x858 (24)
 	struct Unknown AnimGraphNode_BlendListByBool; // 0x870 (160)
-
-	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-};
-
-// AnimBlueprintGeneratedClass AB.AB
-class UAB : public UBravoHotelAnimInstanceWeapon {
-
-public:
-
-	struct Unknown UberGraphFrame; // 0x330 (8)
-	struct Unknown AnimGraphNode_Root; // 0x338 (48)
-	struct Unknown AnimGraphNode_Slot_3; // 0x368 (72)
-	struct Unknown AnimGraphNode_TwoWayBlend; // 0x3B0 (200)
-	struct Unknown AnimGraphNode_LocalRefPose_3; // 0x478 (24)
-	struct Unknown AnimGraphNode_Slot_2; // 0x490 (72)
-	struct Unknown AnimGraphNode_LocalRefPose_2; // 0x4D8 (24)
-	struct Unknown AnimGraphNode_BlendListByBool; // 0x4F0 (160)
-	struct Unknown AnimGraphNode_Slot; // 0x590 (72)
-	struct Unknown AnimGraphNode_LocalRefPose; // 0x5D8 (24)
 
 	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
@@ -2449,6 +1607,466 @@ public:
 };
 
 // AnimBlueprintGeneratedClass AB.AB
+class UAB : public UBravoHotelAnimInstanceWeapon {
+
+public:
+
+	struct Unknown UberGraphFrame; // 0x330 (8)
+	struct Unknown AnimGraphNode_Root; // 0x338 (48)
+	struct Unknown AnimGraphNode_Slot_3; // 0x368 (72)
+	struct Unknown AnimGraphNode_TwoWayBlend; // 0x3B0 (200)
+	struct Unknown AnimGraphNode_LocalRefPose_3; // 0x478 (24)
+	struct Unknown AnimGraphNode_LocalRefPose_2; // 0x490 (24)
+	struct Unknown AnimGraphNode_Slot_2; // 0x4A8 (72)
+	struct Unknown AnimGraphNode_Slot; // 0x4F0 (72)
+	struct Unknown AnimGraphNode_LocalRefPose; // 0x538 (24)
+	struct Unknown AnimGraphNode_BlendListByBool; // 0x550 (160)
+
+	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+};
+
+// AnimBlueprintGeneratedClass AB.AB
+class UAB : public UBravoHotelVehicleAnimInstance {
+
+public:
+
+	struct Unknown UberGraphFrame; // 0xA20 (8)
+	struct Unknown AnimGraphNode_Root; // 0xA28 (48)
+	struct Unknown AnimGraphNode_TransitionResult_9; // 0xA58 (40)
+	struct Unknown AnimGraphNode_TransitionResult_8; // 0xA80 (40)
+	struct Unknown AnimGraphNode_TransitionResult_7; // 0xAA8 (40)
+	struct Unknown AnimGraphNode_TransitionResult_6; // 0xAD0 (40)
+	struct Unknown AnimGraphNode_TransitionResult_5; // 0xAF8 (40)
+	struct Unknown AnimGraphNode_TransitionResult_4; // 0xB20 (40)
+	struct Unknown AnimGraphNode_TransitionResult_3; // 0xB48 (40)
+	struct Unknown AnimGraphNode_TransitionResult_2; // 0xB70 (40)
+	struct Unknown AnimGraphNode_SequencePlayer_6; // 0xB98 (120)
+	struct Unknown AnimGraphNode_StateResult_5; // 0xC10 (48)
+	struct Unknown AnimGraphNode_SequencePlayer_5; // 0xC40 (120)
+	struct Unknown AnimGraphNode_StateResult_4; // 0xCB8 (48)
+	struct Unknown AnimGraphNode_SequencePlayer_4; // 0xCE8 (120)
+	struct Unknown AnimGraphNode_StateResult_3; // 0xD60 (48)
+	struct Unknown AnimGraphNode_TransitionResult; // 0xD90 (40)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace_4; // 0xDB8 (32)
+	struct Unknown AnimGraphNode_MeshRefPose_2; // 0xDD8 (16)
+	struct Unknown AnimGraphNode_BlendListByBool_2; // 0xDE8 (160)
+	struct Unknown AnimGraphNode_SequencePlayer_3; // 0xE88 (120)
+	struct Unknown AnimGraphNode_LayeredBoneBlend; // 0xF00 (192)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace_3; // 0xFC0 (32)
+	struct Unknown AnimGraphNode_LocalToComponentSpace_2; // 0xFE0 (32)
+	struct Unknown AnimGraphNode_ModifyBone_2; // 0x1000 (264)
+	struct Unknown AnimGraphNode_WheelHandler_2; // 0x1108 (224)
+	struct Unknown AnimGraphNode_SequencePlayer_2; // 0x11E8 (120)
+	struct Unknown AnimGraphNode_StateResult_2; // 0x1260 (48)
+	struct Unknown AnimGraphNode_CopyBone_12; // 0x1290 (240)
+	struct Unknown AnimGraphNode_CopyBone_11; // 0x1380 (240)
+	struct Unknown AnimGraphNode_CopyBone_10; // 0x1470 (240)
+	struct Unknown AnimGraphNode_CopyBone_9; // 0x1560 (240)
+	struct Unknown AnimGraphNode_CopyBone_8; // 0x1650 (240)
+	struct Unknown AnimGraphNode_CopyBone_7; // 0x1740 (240)
+	struct Unknown AnimGraphNode_CopyBone_6; // 0x1830 (240)
+	struct Unknown AnimGraphNode_CopyBone_5; // 0x1920 (240)
+	struct Unknown AnimGraphNode_CopyBone_4; // 0x1A10 (240)
+	struct Unknown AnimGraphNode_CopyBone_3; // 0x1B00 (240)
+	struct Unknown AnimGraphNode_CopyBone_2; // 0x1BF0 (240)
+	struct Unknown AnimGraphNode_CopyBone; // 0x1CE0 (240)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace_2; // 0x1DD0 (32)
+	struct Unknown AnimGraphNode_MeshRefPose; // 0x1DF0 (16)
+	struct Unknown AnimGraphNode_BlendListByBool; // 0x1E00 (160)
+	struct Unknown AnimGraphNode_AnimDynamics; // 0x1EA0 (1088)
+	struct Unknown AnimGraphNode_LocalToComponentSpace; // 0x22E0 (32)
+	struct Unknown AnimGraphNode_ModifyBone; // 0x2300 (264)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace; // 0x2408 (32)
+	struct Unknown AnimGraphNode_WheelHandler; // 0x2428 (224)
+	struct Unknown AnimGraphNode_SequencePlayer; // 0x2508 (120)
+	struct Unknown AnimGraphNode_StateResult; // 0x2580 (48)
+	struct Unknown AnimGraphNode_StateMachine; // 0x25B0 (176)
+	char bIsAmphibiousMode : 0; // 0x2660 (1)
+
+	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void BlueprintUpdateAnimation(float DeltaTimeX); // Function AB.AB.BlueprintUpdateAnimation(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+};
+
+// AnimBlueprintGeneratedClass AB.AB
+class UAB : public UBravoHotelAnimInstanceWeapon {
+
+public:
+
+	struct Unknown UberGraphFrame; // 0x330 (8)
+	struct Unknown AnimGraphNode_Root; // 0x338 (48)
+	struct Unknown AnimGraphNode_BlendListByEnum; // 0x368 (176)
+	struct Unknown AnimGraphNode_SequencePlayer_3; // 0x418 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_2; // 0x490 (120)
+	struct Unknown AnimGraphNode_SequencePlayer; // 0x508 (120)
+	struct Unknown AnimGraphNode_Slot_4; // 0x580 (72)
+	struct Unknown AnimGraphNode_TwoWayBlend; // 0x5C8 (200)
+	struct Unknown AnimGraphNode_LayeredBoneBlend; // 0x690 (192)
+	struct Unknown AnimGraphNode_LocalRefPose_3; // 0x750 (24)
+	struct Unknown AnimGraphNode_Slot_3; // 0x768 (72)
+	struct Unknown AnimGraphNode_LocalRefPose_2; // 0x7B0 (24)
+	struct Unknown AnimGraphNode_LocalRefPose; // 0x7C8 (24)
+	struct Unknown AnimGraphNode_Slot_2; // 0x7E0 (72)
+	struct Unknown AnimGraphNode_Slot; // 0x828 (72)
+	struct Unknown AnimGraphNode_BlendListByBool; // 0x870 (160)
+
+	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+};
+
+// AnimBlueprintGeneratedClass AB.AB
+class UAB : public UBravoHotelVehicleAnimInstance {
+
+public:
+
+	struct Unknown UberGraphFrame; // 0xA20 (8)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace_3; // 0xA28 (32)
+	struct Unknown AnimGraphNode_CopyBone_14; // 0xA48 (240)
+	struct Unknown AnimGraphNode_LookAt_6; // 0xB40 (432)
+	struct Unknown AnimGraphNode_CopyBone_13; // 0xCF0 (240)
+	struct Unknown AnimGraphNode_MeshRefPose_2; // 0xDE0 (16)
+	struct Unknown AnimGraphNode_CopyBone_12; // 0xDF0 (240)
+	struct Unknown AnimGraphNode_LookAt_5; // 0xEE0 (432)
+	struct Unknown AnimGraphNode_CopyBone_11; // 0x1090 (240)
+	struct Unknown AnimGraphNode_BlendListByBool_2; // 0x1180 (160)
+	struct Unknown AnimGraphNode_CopyBone_10; // 0x1220 (240)
+	struct Unknown AnimGraphNode_LookAt_4; // 0x1310 (432)
+	struct Unknown AnimGraphNode_CopyBone_9; // 0x14C0 (240)
+	struct Unknown AnimGraphNode_CopyBone_8; // 0x15B0 (240)
+	struct Unknown AnimGraphNode_LookAt_3; // 0x16A0 (432)
+	struct Unknown AnimGraphNode_CopyBone_7; // 0x1850 (240)
+	struct Unknown AnimGraphNode_CopyBone_6; // 0x1940 (240)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace_2; // 0x1A30 (32)
+	struct Unknown AnimGraphNode_CopyBone_5; // 0x1A50 (240)
+	struct Unknown AnimGraphNode_Root; // 0x1B40 (48)
+	struct Unknown AnimGraphNode_CopyBone_4; // 0x1B70 (240)
+	struct Unknown AnimGraphNode_CopyBone_3; // 0x1C60 (240)
+	struct Unknown AnimGraphNode_CopyBone_2; // 0x1D50 (240)
+	struct Unknown AnimGraphNode_CopyBone; // 0x1E40 (240)
+	struct Unknown AnimGraphNode_RotationMultiplier_2; // 0x1F30 (240)
+	struct Unknown AnimGraphNode_LookAt_2; // 0x2020 (432)
+	struct Unknown AnimGraphNode_RotationMultiplier; // 0x21D0 (240)
+	struct Unknown AnimGraphNode_LookAt; // 0x22C0 (432)
+	struct Unknown AnimGraphNode_TransitionResult_12; // 0x2470 (40)
+	struct Unknown AnimGraphNode_TransitionResult_11; // 0x2498 (40)
+	struct Unknown AnimGraphNode_TransitionResult_10; // 0x24C0 (40)
+	struct Unknown AnimGraphNode_TransitionResult_9; // 0x24E8 (40)
+	struct Unknown AnimGraphNode_TransitionResult_8; // 0x2510 (40)
+	struct Unknown AnimGraphNode_TransitionResult_7; // 0x2538 (40)
+	struct Unknown AnimGraphNode_SequencePlayer_6; // 0x2560 (120)
+	struct Unknown AnimGraphNode_StateResult_6; // 0x25D8 (48)
+	struct Unknown AnimGraphNode_SequencePlayer_5; // 0x2608 (120)
+	struct Unknown AnimGraphNode_StateResult_5; // 0x2680 (48)
+	struct Unknown AnimGraphNode_SequencePlayer_4; // 0x26B0 (120)
+	struct Unknown AnimGraphNode_StateResult_4; // 0x2728 (48)
+	struct Unknown AnimGraphNode_StateMachine_2; // 0x2758 (176)
+	struct Unknown AnimGraphNode_SaveCachedPose_2; // 0x2808 (184)
+	struct Unknown AnimGraphNode_LocalToComponentSpace; // 0x28C0 (32)
+	struct Unknown AnimGraphNode_TransitionResult_6; // 0x28E0 (40)
+	struct Unknown AnimGraphNode_TransitionResult_5; // 0x2908 (40)
+	struct Unknown AnimGraphNode_TransitionResult_4; // 0x2930 (40)
+	struct Unknown AnimGraphNode_TransitionResult_3; // 0x2958 (40)
+	struct Unknown AnimGraphNode_TransitionResult_2; // 0x2980 (40)
+	struct Unknown AnimGraphNode_TransitionResult; // 0x29A8 (40)
+	struct Unknown AnimGraphNode_SequencePlayer_3; // 0x29D0 (120)
+	struct Unknown AnimGraphNode_StateResult_3; // 0x2A48 (48)
+	struct Unknown AnimGraphNode_SequencePlayer_2; // 0x2A78 (120)
+	struct Unknown AnimGraphNode_StateResult_2; // 0x2AF0 (48)
+	struct Unknown AnimGraphNode_SequencePlayer; // 0x2B20 (120)
+	struct Unknown AnimGraphNode_StateResult; // 0x2B98 (48)
+	struct Unknown AnimGraphNode_StateMachine; // 0x2BC8 (176)
+	struct Unknown AnimGraphNode_SaveCachedPose; // 0x2C78 (184)
+	struct Unknown AnimGraphNode_LayeredBoneBlend_2; // 0x2D30 (192)
+	struct Unknown AnimGraphNode_UseCachedPose_4; // 0x2DF0 (40)
+	struct Unknown AnimGraphNode_BlendListByBool; // 0x2E18 (160)
+	struct Unknown AnimGraphNode_TwoWayBlend; // 0x2EB8 (200)
+	struct Unknown AnimGraphNode_UseCachedPose_3; // 0x2F80 (40)
+	struct Unknown AnimGraphNode_UseCachedPose_2; // 0x2FA8 (40)
+	struct Unknown AnimGraphNode_UseCachedPose; // 0x2FD0 (40)
+	struct Unknown AnimGraphNode_WheelHandler; // 0x2FF8 (224)
+	struct Unknown AnimGraphNode_MeshRefPose; // 0x30D8 (16)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace; // 0x30E8 (32)
+	struct Unknown AnimGraphNode_LayeredBoneBlend; // 0x3108 (192)
+
+	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void BlueprintUpdateAnimation(float DeltaTimeX); // Function AB.AB.BlueprintUpdateAnimation(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void AnimNotify_FPP_Entered_Idle(); // Function AB.AB.AnimNotify_FPP_Entered_Idle(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void AnimNotify_FPP_Left_Idle(); // Function AB.AB.AnimNotify_FPP_Left_Idle(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+};
+
+// AnimBlueprintGeneratedClass AB.AB
+class UAB : public UBravoHotelAnimInstancePostprocess {
+
+public:
+
+	struct Unknown UberGraphFrame; // 0x520 (8)
+	struct Unknown AnimGraphNode_BlendListByBool_21; // 0x528 (160)
+	struct Unknown AnimGraphNode_ModifyBone_21; // 0x5C8 (264)
+	struct Unknown AnimGraphNode_TwoBoneIK_11; // 0x6D0 (480)
+	struct Unknown AnimGraphNode_ModifyBone_20; // 0x8B0 (264)
+	struct Unknown AnimGraphNode_TwoBoneIK_10; // 0x9C0 (480)
+	struct Unknown AnimGraphNode_LocalToComponentSpace_20; // 0xBA0 (32)
+	struct Unknown AnimGraphNode_ModifyBone_19; // 0xBC0 (264)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace_20; // 0xCC8 (32)
+	struct Unknown AnimGraphNode_SaveCachedPose_20; // 0xCE8 (184)
+	struct Unknown AnimGraphNode_SaveCachedPose_19; // 0xDA0 (184)
+	struct Unknown AnimGraphNode_ModifyBone_18; // 0xE58 (264)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace_19; // 0xF60 (32)
+	struct Unknown AnimGraphNode_BlendListByBool_20; // 0xF80 (160)
+	struct Unknown AnimGraphNode_SaveCachedPose_18; // 0x1020 (184)
+	struct Unknown AnimGraphNode_LocalToComponentSpace_19; // 0x10D8 (32)
+	struct Unknown AnimGraphNode_UseCachedPose_43; // 0x10F8 (40)
+	struct Unknown AnimGraphNode_UseCachedPose_42; // 0x1120 (40)
+	struct Unknown AnimGraphNode_UseCachedPose_41; // 0x1148 (40)
+	struct Unknown AnimGraphNode_BlendListByBool_19; // 0x1170 (160)
+	struct Unknown AnimGraphNode_UseCachedPose_40; // 0x1210 (40)
+	struct Unknown AnimGraphNode_LocalToComponentSpace_18; // 0x1238 (32)
+	struct Unknown AnimGraphNode_ModifyBone_17; // 0x1258 (264)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace_18; // 0x1360 (32)
+	struct Unknown AnimGraphNode_ModifyBone_16; // 0x1380 (264)
+	struct Unknown AnimGraphNode_ModifyBone_15; // 0x1488 (264)
+	struct Unknown AnimGraphNode_ModifyBone_14; // 0x1590 (264)
+	struct Unknown AnimGraphNode_SaveCachedPose_17; // 0x1698 (184)
+	struct Unknown AnimGraphNode_UseCachedPose_39; // 0x1750 (40)
+	struct Unknown AnimGraphNode_LocalToComponentSpace_17; // 0x1778 (32)
+	struct Unknown AnimGraphNode_BlendListByBool_18; // 0x1798 (160)
+	struct Unknown AnimGraphNode_BlendListByBool_17; // 0x1838 (160)
+	struct Unknown AnimGraphNode_UseCachedPose_38; // 0x18D8 (40)
+	struct Unknown AnimGraphNode_ModifyBone_13; // 0x1900 (264)
+	struct Unknown AnimGraphNode_BlendListByBool_16; // 0x1A08 (160)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace_17; // 0x1AA8 (32)
+	struct Unknown AnimGraphNode_LocalToComponentSpace_16; // 0x1AC8 (32)
+	struct Unknown AnimGraphNode_UseCachedPose_37; // 0x1AE8 (40)
+	struct Unknown AnimGraphNode_ModifyBone_12; // 0x1B10 (264)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace_16; // 0x1C18 (32)
+	struct Unknown AnimGraphNode_LocalToComponentSpace_15; // 0x1C38 (32)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace_15; // 0x1C58 (32)
+	struct Unknown AnimGraphNode_UseCachedPose_36; // 0x1C78 (40)
+	struct Unknown AnimGraphNode_LocalToComponentSpace_14; // 0x1CA0 (32)
+	struct Unknown AnimGraphNode_AnimDynamics_13; // 0x1CC0 (1088)
+	struct Unknown AnimGraphNode_AnimDynamics_12; // 0x2100 (1088)
+	struct Unknown AnimGraphNode_SaveCachedPose_16; // 0x2540 (184)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace_14; // 0x25F8 (32)
+	struct Unknown AnimGraphNode_ModifyBone_11; // 0x2618 (264)
+	struct Unknown AnimGraphNode_ModifyBone_10; // 0x2720 (264)
+	struct Unknown AnimGraphNode_ModifyBone_9; // 0x2828 (264)
+	struct Unknown AnimGraphNode_LocalToComponentSpace_13; // 0x2930 (32)
+	struct Unknown AnimGraphNode_SubInput; // 0x2950 (120)
+	struct Unknown AnimGraphNode_Root; // 0x29C8 (48)
+	struct Unknown AnimGraphNode_UseCachedPose_35; // 0x29F8 (40)
+	struct Unknown AnimGraphNode_UseCachedPose_34; // 0x2A20 (40)
+	struct Unknown AnimGraphNode_HandIKRetargeting_3; // 0x2A48 (288)
+	struct Unknown AnimGraphNode_TwoBoneIK_9; // 0x2B70 (480)
+	struct Unknown AnimGraphNode_LocalToComponentSpace_12; // 0x2D50 (32)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace_13; // 0x2D70 (32)
+	struct Unknown AnimGraphNode_SaveCachedPose_15; // 0x2D90 (184)
+	struct Unknown AnimGraphNode_BlendListByBool_15; // 0x2E48 (160)
+	struct Unknown AnimGraphNode_SaveCachedPose_14; // 0x2EE8 (184)
+	struct Unknown AnimGraphNode_TwoBoneIK_8; // 0x2FA0 (480)
+	struct Unknown AnimGraphNode_LocalToComponentSpace_11; // 0x3180 (32)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace_12; // 0x31A0 (32)
+	struct Unknown AnimGraphNode_ModifyBone_8; // 0x31C0 (264)
+	struct Unknown AnimGraphNode_ModifyBone_7; // 0x32C8 (264)
+	struct Unknown AnimGraphNode_LocalToComponentSpace_10; // 0x33D0 (32)
+	struct Unknown AnimGraphNode_TwoBoneIK_7; // 0x33F0 (480)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace_11; // 0x35D0 (32)
+	struct Unknown AnimGraphNode_HandIKRetargeting_2; // 0x35F0 (288)
+	struct Unknown AnimGraphNode_BlendListByBool_14; // 0x3710 (160)
+	struct Unknown AnimGraphNode_UseCachedPose_33; // 0x37B0 (40)
+	struct Unknown AnimGraphNode_UseCachedPose_32; // 0x37D8 (40)
+	struct Unknown AnimGraphNode_SaveCachedPose_13; // 0x3800 (184)
+	struct Unknown AnimGraphNode_ModifyBone_6; // 0x38B8 (264)
+	struct Unknown AnimGraphNode_UseCachedPose_31; // 0x39C0 (40)
+	struct Unknown AnimGraphNode_UseCachedPose_30; // 0x39E8 (40)
+	struct Unknown AnimGraphNode_LayeredBoneBlend_2; // 0x3A10 (192)
+	struct Unknown AnimGraphNode_SequencePlayer_2; // 0x3AD0 (120)
+	struct Unknown AnimGraphNode_SaveCachedPose_12; // 0x3B48 (184)
+	struct Unknown AnimGraphNode_UseCachedPose_29; // 0x3C00 (40)
+	struct Unknown AnimGraphNode_UseCachedPose_28; // 0x3C28 (40)
+	struct Unknown AnimGraphNode_LayeredBoneBlend; // 0x3C50 (192)
+	struct Unknown AnimGraphNode_SequencePlayer; // 0x3D10 (120)
+	struct Unknown AnimGraphNode_BlendListByBool_13; // 0x3D88 (160)
+	struct Unknown AnimGraphNode_SaveCachedPose_11; // 0x3E28 (184)
+	struct Unknown AnimGraphNode_BlendListByEnum; // 0x3EE0 (176)
+	struct Unknown AnimGraphNode_UseCachedPose_27; // 0x3F90 (40)
+	struct Unknown AnimGraphNode_UseCachedPose_26; // 0x3FB8 (40)
+	struct Unknown AnimGraphNode_UseCachedPose_25; // 0x3FE0 (40)
+	struct Unknown AnimGraphNode_UseCachedPose_24; // 0x4008 (40)
+	struct Unknown AnimGraphNode_AnimDynamics_11; // 0x4030 (1088)
+	struct Unknown AnimGraphNode_AnimDynamics_10; // 0x4470 (1088)
+	struct Unknown AnimGraphNode_AnimDynamics_9; // 0x48B0 (1088)
+	struct Unknown AnimGraphNode_AnimDynamics_8; // 0x4CF0 (1088)
+	struct Unknown AnimGraphNode_AnimDynamics_7; // 0x5130 (1088)
+	struct Unknown AnimGraphNode_AnimDynamics_6; // 0x5570 (1088)
+	struct Unknown AnimGraphNode_AnimDynamics_5; // 0x59B0 (1088)
+	struct Unknown AnimGraphNode_ModifyBone_5; // 0x5DF0 (264)
+	struct Unknown AnimGraphNode_HandIKRetargeting; // 0x5EF8 (288)
+	struct Unknown AnimGraphNode_TwoBoneIK_6; // 0x6020 (480)
+	struct Unknown AnimGraphNode_LocalToComponentSpace_9; // 0x6200 (32)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace_10; // 0x6220 (32)
+	struct Unknown AnimGraphNode_SaveCachedPose_10; // 0x6240 (184)
+	struct Unknown AnimGraphNode_TwoBoneIK_5; // 0x6300 (480)
+	struct Unknown AnimGraphNode_LocalToComponentSpace_8; // 0x64E0 (32)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace_9; // 0x6500 (32)
+	struct Unknown AnimGraphNode_SaveCachedPose_9; // 0x6520 (184)
+	struct Unknown AnimGraphNode_UseCachedPose_23; // 0x65D8 (40)
+	struct Unknown AnimGraphNode_UseCachedPose_22; // 0x6600 (40)
+	struct Unknown AnimGraphNode_BlendListByBool_12; // 0x6628 (160)
+	struct Unknown AnimGraphNode_UseCachedPose_21; // 0x66C8 (40)
+	struct Unknown AnimGraphNode_BlendListByBool_11; // 0x66F0 (160)
+	struct Unknown AnimGraphNode_UseCachedPose_20; // 0x6790 (40)
+	struct Unknown AnimGraphNode_UseCachedPose_19; // 0x67B8 (40)
+	struct Unknown AnimGraphNode_LocalToComponentSpace_7; // 0x67E0 (32)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace_8; // 0x6800 (32)
+	struct Unknown AnimGraphNode_SaveCachedPose_8; // 0x6820 (184)
+	struct Unknown AnimGraphNode_TwoBoneIK_4; // 0x68E0 (480)
+	struct Unknown AnimGraphNode_TwoBoneIK_3; // 0x6AC0 (480)
+	struct Unknown AnimGraphNode_TwoBoneIK_2; // 0x6CA0 (480)
+	struct Unknown AnimGraphNode_TwoBoneIK; // 0x6E80 (480)
+	struct Unknown AnimGraphNode_ModifyBone_4; // 0x7060 (264)
+	struct Unknown AnimGraphNode_ModifyBone_3; // 0x7168 (264)
+	struct Unknown AnimGraphNode_ModifyBone_2; // 0x7270 (264)
+	struct Unknown AnimGraphNode_ModifyBone; // 0x7378 (264)
+	struct Unknown AnimGraphNode_AnimDynamics_4; // 0x7480 (1088)
+	struct Unknown AnimGraphNode_AnimDynamics_3; // 0x78C0 (1088)
+	struct Unknown AnimGraphNode_KawaiiPhysics_26; // 0x7D00 (592)
+	struct Unknown AnimGraphNode_KawaiiPhysics_25; // 0x7F50 (592)
+	struct Unknown AnimGraphNode_KawaiiPhysics_24; // 0x81A0 (592)
+	struct Unknown AnimGraphNode_KawaiiPhysics_23; // 0x83F0 (592)
+	struct Unknown AnimGraphNode_KawaiiPhysics_22; // 0x8640 (592)
+	struct Unknown AnimGraphNode_KawaiiPhysics_21; // 0x8890 (592)
+	struct Unknown AnimGraphNode_BoneDrivenController_20; // 0x8AE0 (280)
+	struct Unknown AnimGraphNode_BoneDrivenController_19; // 0x8BF8 (280)
+	struct Unknown AnimGraphNode_BoneDrivenController_18; // 0x8D10 (280)
+	struct Unknown AnimGraphNode_BoneDrivenController_17; // 0x8E28 (280)
+	struct Unknown AnimGraphNode_BoneDrivenController_16; // 0x8F40 (280)
+	struct Unknown AnimGraphNode_BoneDrivenController_15; // 0x9058 (280)
+	struct Unknown AnimGraphNode_BoneDrivenController_14; // 0x9170 (280)
+	struct Unknown AnimGraphNode_BoneDrivenController_13; // 0x9288 (280)
+	struct Unknown AnimGraphNode_KawaiiPhysics_20; // 0x93A0 (592)
+	struct Unknown AnimGraphNode_KawaiiPhysics_19; // 0x95F0 (592)
+	struct Unknown AnimGraphNode_KawaiiPhysics_18; // 0x9840 (592)
+	struct Unknown AnimGraphNode_KawaiiPhysics_17; // 0x9A90 (592)
+	struct Unknown AnimGraphNode_KawaiiPhysics_16; // 0x9CE0 (592)
+	struct Unknown AnimGraphNode_BoneDrivenController_12; // 0x9F30 (280)
+	struct Unknown AnimGraphNode_BoneDrivenController_11; // 0xA048 (280)
+	struct Unknown AnimGraphNode_KawaiiPhysics_15; // 0xA160 (592)
+	struct Unknown AnimGraphNode_BoneDrivenController_10; // 0xA3B0 (280)
+	struct Unknown AnimGraphNode_BoneDrivenController_9; // 0xA4C8 (280)
+	struct Unknown AnimGraphNode_BoneDrivenController_8; // 0xA5E0 (280)
+	struct Unknown AnimGraphNode_BoneDrivenController_7; // 0xA6F8 (280)
+	struct Unknown AnimGraphNode_BoneDrivenController_6; // 0xA810 (280)
+	struct Unknown AnimGraphNode_BoneDrivenController_5; // 0xA928 (280)
+	struct Unknown AnimGraphNode_BoneDrivenController_4; // 0xAA40 (280)
+	struct Unknown AnimGraphNode_BoneDrivenController_3; // 0xAB58 (280)
+	struct Unknown AnimGraphNode_BoneDrivenController_2; // 0xAC70 (280)
+	struct Unknown AnimGraphNode_BoneDrivenController; // 0xAD88 (280)
+	struct Unknown AnimGraphNode_KawaiiPhysics_14; // 0xAEA0 (592)
+	struct Unknown AnimGraphNode_KawaiiPhysics_13; // 0xB0F0 (592)
+	struct Unknown AnimGraphNode_KawaiiPhysics_12; // 0xB340 (592)
+	struct Unknown AnimGraphNode_KawaiiPhysics_11; // 0xB590 (592)
+	struct Unknown AnimGraphNode_KawaiiPhysics_10; // 0xB7E0 (592)
+	struct Unknown AnimGraphNode_KawaiiPhysics_9; // 0xBA30 (592)
+	struct Unknown AnimGraphNode_KawaiiPhysics_8; // 0xBC80 (592)
+	struct Unknown AnimGraphNode_KawaiiPhysics_7; // 0xBED0 (592)
+	struct Unknown AnimGraphNode_KawaiiPhysics_6; // 0xC120 (592)
+	struct Unknown AnimGraphNode_KawaiiPhysics_5; // 0xC370 (592)
+	struct Unknown AnimGraphNode_KawaiiPhysics_4; // 0xC5C0 (592)
+	struct Unknown AnimGraphNode_KawaiiPhysics_3; // 0xC810 (592)
+	struct Unknown AnimGraphNode_KawaiiPhysics_2; // 0xCA60 (592)
+	struct Unknown AnimGraphNode_KawaiiPhysics; // 0xCCB0 (592)
+	struct Unknown AnimGraphNode_AnimDynamics_2; // 0xCF00 (1088)
+	struct Unknown AnimGraphNode_AnimDynamics; // 0xD340 (1088)
+	struct Unknown AnimGraphNode_BlendListByBool_10; // 0xD780 (160)
+	struct Unknown AnimGraphNode_UseCachedPose_18; // 0xD820 (40)
+	struct Unknown AnimGraphNode_BlendListByBool_9; // 0xD848 (160)
+	struct Unknown AnimGraphNode_UseCachedPose_17; // 0xD8E8 (40)
+	struct Unknown AnimGraphNode_UseCachedPose_16; // 0xD910 (40)
+	struct Unknown AnimGraphNode_BlendListByBool_8; // 0xD938 (160)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace_7; // 0xD9D8 (32)
+	struct Unknown AnimGraphNode_UseCachedPose_15; // 0xD9F8 (40)
+	struct Unknown AnimGraphNode_SaveCachedPose_7; // 0xDA20 (184)
+	struct Unknown AnimGraphNode_UseCachedPose_14; // 0xDAD8 (40)
+	struct Unknown AnimGraphNode_LocalToComponentSpace_6; // 0xDB00 (32)
+	struct Unknown AnimGraphNode_BlendListByBool_7; // 0xDB20 (160)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace_6; // 0xDBC0 (32)
+	struct Unknown AnimGraphNode_UseCachedPose_13; // 0xDBE0 (40)
+	struct Unknown AnimGraphNode_SaveCachedPose_6; // 0xDC08 (184)
+	struct Unknown AnimGraphNode_UseCachedPose_12; // 0xDCC0 (40)
+	struct Unknown AnimGraphNode_LocalToComponentSpace_5; // 0xDCE8 (32)
+	struct Unknown AnimGraphNode_BlendListByBool_6; // 0xDD08 (160)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace_5; // 0xDDA8 (32)
+	struct Unknown AnimGraphNode_UseCachedPose_11; // 0xDDC8 (40)
+	struct Unknown AnimGraphNode_SaveCachedPose_5; // 0xDDF0 (184)
+	struct Unknown AnimGraphNode_BlendListByBool_5; // 0xDEA8 (160)
+	struct Unknown AnimGraphNode_UseCachedPose_10; // 0xDF48 (40)
+	struct Unknown AnimGraphNode_UseCachedPose_9; // 0xDF70 (40)
+	struct Unknown AnimGraphNode_LocalToComponentSpace_4; // 0xDF98 (32)
+	struct Unknown AnimGraphNode_BlendListByBool_4; // 0xDFB8 (160)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace_4; // 0xE058 (32)
+	struct Unknown AnimGraphNode_UseCachedPose_8; // 0xE078 (40)
+	struct Unknown AnimGraphNode_SaveCachedPose_4; // 0xE0A0 (184)
+	struct Unknown AnimGraphNode_UseCachedPose_7; // 0xE158 (40)
+	struct Unknown AnimGraphNode_UseCachedPose_6; // 0xE180 (40)
+	struct Unknown AnimGraphNode_BlendListByBool_3; // 0xE1A8 (160)
+	struct Unknown AnimGraphNode_SaveCachedPose_3; // 0xE248 (184)
+	struct Unknown AnimGraphNode_LocalToComponentSpace_3; // 0xE300 (32)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace_3; // 0xE320 (32)
+	struct Unknown AnimGraphNode_BlendListByBool_2; // 0xE340 (160)
+	struct Unknown AnimGraphNode_UseCachedPose_5; // 0xE3E0 (40)
+	struct Unknown AnimGraphNode_SaveCachedPose_2; // 0xE408 (184)
+	struct Unknown AnimGraphNode_UseCachedPose_4; // 0xE4C0 (40)
+	struct Unknown AnimGraphNode_LocalToComponentSpace_2; // 0xE4E8 (32)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace_2; // 0xE508 (32)
+	struct Unknown AnimGraphNode_BlendListByBool; // 0xE528 (160)
+	struct Unknown AnimGraphNode_SaveCachedPose; // 0xE5C8 (184)
+	struct Unknown AnimGraphNode_UseCachedPose_3; // 0xE680 (40)
+	struct Unknown AnimGraphNode_UseCachedPose_2; // 0xE6A8 (40)
+	struct Unknown AnimGraphNode_LocalToComponentSpace; // 0xE6D0 (32)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace; // 0xE6F0 (32)
+	struct Unknown AnimGraphNode_UseCachedPose; // 0xE710 (40)
+
+	void AnimGraph(struct Unknown InPose, struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+};
+
+// AnimBlueprintGeneratedClass AB.AB
+class UAB : public UBravoHotelAnimInstanceWeapon {
+
+public:
+
+	struct Unknown UberGraphFrame; // 0x330 (8)
+	struct Unknown AnimGraphNode_Root; // 0x338 (48)
+	struct Unknown AnimGraphNode_Slot_3; // 0x368 (72)
+	struct Unknown AnimGraphNode_TwoWayBlend; // 0x3B0 (200)
+	struct Unknown AnimGraphNode_LocalRefPose_3; // 0x478 (24)
+	struct Unknown AnimGraphNode_Slot_2; // 0x490 (72)
+	struct Unknown AnimGraphNode_LocalRefPose_2; // 0x4D8 (24)
+	struct Unknown AnimGraphNode_BlendListByBool; // 0x4F0 (160)
+	struct Unknown AnimGraphNode_Slot; // 0x590 (72)
+	struct Unknown AnimGraphNode_LocalRefPose; // 0x5D8 (24)
+
+	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+};
+
+// AnimBlueprintGeneratedClass AB.AB
 class UAB : public UAnimInstance {
 
 public:
@@ -2619,26 +2237,641 @@ public:
 };
 
 // AnimBlueprintGeneratedClass AB.AB
+class UAB : public UAnimInstance {
+
+public:
+
+	struct Unknown UberGraphFrame; // 0x270 (8)
+	struct Unknown AnimGraphNode_Root; // 0x278 (48)
+	struct Unknown AnimGraphNode_SequencePlayer; // 0x2A8 (120)
+
+	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+};
+
+// AnimBlueprintGeneratedClass AB.AB
+class UAB : public UBravoHotelAnimInstanceParachute {
+
+public:
+
+	struct Unknown UberGraphFrame; // 0x2D0 (8)
+	struct Unknown AnimGraphNode_Root; // 0x2D8 (48)
+	struct Unknown AnimGraphNode_TransitionResult_5; // 0x308 (40)
+	struct Unknown AnimGraphNode_TransitionResult_4; // 0x330 (40)
+	struct Unknown AnimGraphNode_TransitionResult_3; // 0x358 (40)
+	struct Unknown AnimGraphNode_TransitionResult_2; // 0x380 (40)
+	struct Unknown AnimGraphNode_TransitionResult; // 0x3A8 (40)
+	struct Unknown AnimGraphNode_SequencePlayer_3; // 0x3D0 (120)
+	struct Unknown AnimGraphNode_StateResult_4; // 0x448 (48)
+	struct Unknown AnimGraphNode_BlendSpacePlayer; // 0x478 (224)
+	struct Unknown AnimGraphNode_StateResult_3; // 0x558 (48)
+	struct Unknown AnimGraphNode_SequencePlayer_2; // 0x588 (120)
+	struct Unknown AnimGraphNode_StateResult_2; // 0x600 (48)
+	struct Unknown AnimGraphNode_SequencePlayer; // 0x630 (120)
+	struct Unknown AnimGraphNode_StateResult; // 0x6A8 (48)
+	struct Unknown AnimGraphNode_StateMachine; // 0x6D8 (176)
+	struct Unknown AnimGraphNode_LocalToComponentSpace; // 0x788 (32)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace; // 0x7A8 (32)
+	struct Unknown AnimGraphNode_ModifyBone_2; // 0x7C8 (264)
+	struct Unknown AnimGraphNode_ModifyBone; // 0x8D0 (264)
+	struct Unknown RightHandleLocation; // 0x9D8 (12)
+	struct Unknown LeftHandleLocation; // 0x9E4 (12)
+
+	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void AnimNotify_ResetSkipTransitionFlag(); // Function AB.AB.AnimNotify_ResetSkipTransitionFlag(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+};
+
+// AnimBlueprintGeneratedClass AB.AB
+class UAB : public UBravoHotelAnimInstanceFPP {
+
+public:
+
+	struct Unknown UberGraphFrame; // 0x700 (8)
+	struct Unknown AnimGraphNode_Root; // 0x708 (48)
+	struct Unknown AnimGraphNode_LocalToComponentSpace_11; // 0x738 (32)
+	struct Unknown AnimGraphNode_TransitionResult_59; // 0x758 (40)
+	struct Unknown AnimGraphNode_TransitionResult_58; // 0x780 (40)
+	struct Unknown AnimGraphNode_TransitionResult_57; // 0x7A8 (40)
+	struct Unknown AnimGraphNode_TransitionResult_56; // 0x7D0 (40)
+	struct Unknown AnimGraphNode_TransitionResult_55; // 0x7F8 (40)
+	struct Unknown AnimGraphNode_TransitionResult_54; // 0x820 (40)
+	struct Unknown AnimGraphNode_TransitionResult_53; // 0x848 (40)
+	struct Unknown AnimGraphNode_TransitionResult_52; // 0x870 (40)
+	struct Unknown AnimGraphNode_TransitionResult_51; // 0x898 (40)
+	struct Unknown AnimGraphNode_TransitionResult_50; // 0x8C0 (40)
+	struct Unknown AnimGraphNode_TransitionResult_49; // 0x8E8 (40)
+	struct Unknown AnimGraphNode_TransitionResult_48; // 0x910 (40)
+	struct Unknown AnimGraphNode_TransitionResult_47; // 0x938 (40)
+	struct Unknown AnimGraphNode_TransitionResult_46; // 0x960 (40)
+	struct Unknown AnimGraphNode_TransitionResult_45; // 0x988 (40)
+	struct Unknown AnimGraphNode_TransitionResult_44; // 0x9B0 (40)
+	struct Unknown AnimGraphNode_TransitionResult_43; // 0x9D8 (40)
+	struct Unknown AnimGraphNode_TransitionResult_42; // 0xA00 (40)
+	struct Unknown AnimGraphNode_TransitionResult_41; // 0xA28 (40)
+	struct Unknown AnimGraphNode_TransitionResult_40; // 0xA50 (40)
+	struct Unknown AnimGraphNode_SequencePlayer_129; // 0xA78 (120)
+	struct Unknown AnimGraphNode_StateResult_36; // 0xAF0 (48)
+	struct Unknown AnimGraphNode_SequencePlayer_128; // 0xB20 (120)
+	struct Unknown AnimGraphNode_StateResult_35; // 0xB98 (48)
+	struct Unknown AnimGraphNode_SequencePlayer_127; // 0xBC8 (120)
+	struct Unknown AnimGraphNode_StateResult_34; // 0xC40 (48)
+	struct Unknown AnimGraphNode_StateMachine_9; // 0xC70 (176)
+	struct Unknown AnimGraphNode_StateResult_33; // 0xD20 (48)
+	struct Unknown AnimGraphNode_TransitionResult_39; // 0xD50 (40)
+	struct Unknown AnimGraphNode_TransitionResult_38; // 0xD78 (40)
+	struct Unknown AnimGraphNode_BlendSpacePlayer_27; // 0xDA0 (224)
+	struct Unknown AnimGraphNode_SequencePlayer_126; // 0xE80 (120)
+	struct Unknown AnimGraphNode_ApplyAdditive_4; // 0xEF8 (200)
+	struct Unknown AnimGraphNode_SequencePlayer_125; // 0xFC0 (120)
+	struct Unknown AnimGraphNode_BlendListByEnum_26; // 0x1038 (176)
+	struct Unknown AnimGraphNode_BlendSpacePlayer_26; // 0x10E8 (224)
+	struct Unknown AnimGraphNode_BlendSpacePlayer_25; // 0x11C8 (224)
+	struct Unknown AnimGraphNode_BlendListByEnum_25; // 0x12A8 (176)
+	struct Unknown AnimGraphNode_BlendSpacePlayer_24; // 0x1358 (224)
+	struct Unknown AnimGraphNode_StateResult_32; // 0x1438 (48)
+	struct Unknown AnimGraphNode_BlendSpacePlayer_23; // 0x1468 (224)
+	struct Unknown AnimGraphNode_BlendListByBool_24; // 0x1548 (160)
+	struct Unknown AnimGraphNode_RotationOffsetBlendSpace; // 0x15E8 (392)
+	struct Unknown AnimGraphNode_ModifyBone_15; // 0x1770 (264)
+	struct Unknown AnimGraphNode_ModifyBone_14; // 0x1878 (264)
+	struct Unknown AnimGraphNode_TwoBoneIK_9; // 0x1980 (480)
+	struct Unknown AnimGraphNode_TwoBoneIK_8; // 0x1B60 (480)
+	struct Unknown AnimGraphNode_SequencePlayer_124; // 0x1D40 (120)
+	struct Unknown AnimGraphNode_LayeredBoneBlend_7; // 0x1DB8 (192)
+	struct Unknown AnimGraphNode_TransitionResult_37; // 0x1E78 (40)
+	struct Unknown AnimGraphNode_TransitionResult_36; // 0x1EA0 (40)
+	struct Unknown AnimGraphNode_TransitionResult_35; // 0x1EC8 (40)
+	struct Unknown AnimGraphNode_TransitionResult_34; // 0x1EF0 (40)
+	struct Unknown AnimGraphNode_TransitionResult_33; // 0x1F18 (40)
+	struct Unknown AnimGraphNode_TransitionResult_32; // 0x1F40 (40)
+	struct Unknown AnimGraphNode_SequencePlayer_123; // 0x1F68 (120)
+	struct Unknown AnimGraphNode_StateResult_31; // 0x1FE0 (48)
+	struct Unknown AnimGraphNode_SequencePlayer_122; // 0x2010 (120)
+	struct Unknown AnimGraphNode_StateResult_30; // 0x2088 (48)
+	struct Unknown AnimGraphNode_SequencePlayer_121; // 0x20B8 (120)
+	struct Unknown AnimGraphNode_StateResult_29; // 0x2130 (48)
+	struct Unknown AnimGraphNode_StateMachine_8; // 0x2160 (176)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace_11; // 0x2210 (32)
+	struct Unknown AnimGraphNode_LocalToComponentSpace_10; // 0x2230 (32)
+	struct Unknown AnimGraphNode_Fabrik_2; // 0x2250 (400)
+	struct Unknown AnimGraphNode_Fabrik; // 0x23E0 (400)
+	struct Unknown AnimGraphNode_StateResult_28; // 0x2570 (48)
+	struct Unknown AnimGraphNode_StateMachine_7; // 0x25A0 (176)
+	struct Unknown AnimGraphNode_StateResult_27; // 0x2650 (48)
+	struct Unknown AnimGraphNode_TransitionResult_31; // 0x2680 (40)
+	struct Unknown AnimGraphNode_TransitionResult_30; // 0x26A8 (40)
+	struct Unknown AnimGraphNode_TransitionResult_29; // 0x26D0 (40)
+	struct Unknown AnimGraphNode_SequencePlayer_120; // 0x26F8 (120)
+	struct Unknown AnimGraphNode_StateResult_26; // 0x2770 (48)
+	struct Unknown AnimGraphNode_BlendSpacePlayer_22; // 0x27A0 (224)
+	struct Unknown AnimGraphNode_StateResult_25; // 0x2880 (48)
+	struct Unknown AnimGraphNode_SequencePlayer_119; // 0x28B0 (120)
+	struct Unknown AnimGraphNode_StateResult_24; // 0x2928 (48)
+	struct Unknown AnimGraphNode_StateMachine_6; // 0x2958 (176)
+	struct Unknown AnimGraphNode_StateResult_23; // 0x2A08 (48)
+	struct Unknown AnimGraphNode_TransitionResult_28; // 0x2A38 (40)
+	struct Unknown AnimGraphNode_TransitionResult_27; // 0x2A60 (40)
+	struct Unknown AnimGraphNode_TransitionResult_26; // 0x2A88 (40)
+	struct Unknown AnimGraphNode_TransitionResult_25; // 0x2AB0 (40)
+	struct Unknown AnimGraphNode_BlendSpacePlayer_21; // 0x2AD8 (224)
+	struct Unknown AnimGraphNode_StateResult_22; // 0x2BB8 (48)
+	struct Unknown AnimGraphNode_BlendSpacePlayer_20; // 0x2BE8 (224)
+	struct Unknown AnimGraphNode_StateResult_21; // 0x2CC8 (48)
+	struct Unknown AnimGraphNode_StateMachine_5; // 0x2CF8 (176)
+	struct Unknown AnimGraphNode_StateResult_20; // 0x2DA8 (48)
+	struct Unknown AnimGraphNode_TransitionResult_24; // 0x2DD8 (40)
+	struct Unknown AnimGraphNode_TransitionResult_23; // 0x2E00 (40)
+	struct Unknown AnimGraphNode_SequencePlayer_118; // 0x2E28 (120)
+	struct Unknown AnimGraphNode_StateResult_19; // 0x2EA0 (48)
+	struct Unknown AnimGraphNode_SequencePlayer_117; // 0x2ED0 (120)
+	struct Unknown AnimGraphNode_StateResult_18; // 0x2F48 (48)
+	struct Unknown AnimGraphNode_StateMachine_4; // 0x2F78 (176)
+	struct Unknown AnimGraphNode_StateResult_17; // 0x3028 (48)
+	struct Unknown AnimGraphNode_StateMachine_3; // 0x3058 (176)
+	struct Unknown AnimGraphNode_StateResult_16; // 0x3108 (48)
+	struct Unknown AnimGraphNode_TransitionResult_22; // 0x3138 (40)
+	struct Unknown AnimGraphNode_SequencePlayer_116; // 0x3160 (120)
+	struct Unknown AnimGraphNode_BlendListByBool_23; // 0x31D8 (160)
+	struct Unknown AnimGraphNode_SequencePlayer_115; // 0x3278 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_114; // 0x32F0 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_113; // 0x3368 (120)
+	struct Unknown AnimGraphNode_BlendListByEnum_24; // 0x33E0 (176)
+	struct Unknown AnimGraphNode_SequencePlayer_112; // 0x3490 (120)
+	struct Unknown AnimGraphNode_StateResult_15; // 0x3508 (48)
+	struct Unknown AnimGraphNode_SequencePlayer_111; // 0x3538 (120)
+	struct Unknown AnimGraphNode_BlendListByBool_22; // 0x35B0 (160)
+	struct Unknown AnimGraphNode_SequencePlayer_110; // 0x3650 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_109; // 0x36C8 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_108; // 0x3740 (120)
+	struct Unknown AnimGraphNode_BlendListByEnum_23; // 0x37B8 (176)
+	struct Unknown AnimGraphNode_SequencePlayer_107; // 0x3868 (120)
+	struct Unknown AnimGraphNode_StateResult_14; // 0x38E0 (48)
+	struct Unknown AnimGraphNode_SequencePlayer_106; // 0x3910 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_105; // 0x3988 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_104; // 0x3A00 (120)
+	struct Unknown AnimGraphNode_BlendListByEnum_22; // 0x3A78 (176)
+	struct Unknown AnimGraphNode_SequencePlayer_103; // 0x3B28 (120)
+	struct Unknown AnimGraphNode_StateResult_13; // 0x3BA0 (48)
+	struct Unknown AnimGraphNode_ApplyAdditive_3; // 0x3BD0 (200)
+	struct Unknown AnimGraphNode_SequencePlayer_102; // 0x3C98 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_101; // 0x3D10 (120)
+	struct Unknown AnimGraphNode_Slot_13; // 0x3D88 (72)
+	struct Unknown AnimGraphNode_Slot_12; // 0x3DD0 (72)
+	struct Unknown AnimGraphNode_BlendListByEnum_21; // 0x3E18 (176)
+	struct Unknown AnimGraphNode_SequencePlayer_100; // 0x3EC8 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_99; // 0x3F40 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_98; // 0x3FB8 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_97; // 0x4030 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_96; // 0x40A8 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_95; // 0x4120 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_94; // 0x4198 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_93; // 0x4210 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_92; // 0x4288 (120)
+	struct Unknown AnimGraphNode_BlendListByEnum_20; // 0x4300 (176)
+	struct Unknown AnimGraphNode_TwoWayBlend_6; // 0x43B0 (200)
+	struct Unknown AnimGraphNode_ApplyAdditive_2; // 0x4478 (200)
+	struct Unknown AnimGraphNode_SequencePlayer_91; // 0x4540 (120)
+	struct Unknown AnimGraphNode_TransitionResult_21; // 0x45B8 (40)
+	struct Unknown AnimGraphNode_TransitionResult_20; // 0x45E0 (40)
+	struct Unknown AnimGraphNode_TransitionResult_19; // 0x4608 (40)
+	struct Unknown AnimGraphNode_TransitionResult_18; // 0x4630 (40)
+	struct Unknown AnimGraphNode_TransitionResult_17; // 0x4658 (40)
+	struct Unknown AnimGraphNode_TransitionResult_16; // 0x4680 (40)
+	struct Unknown AnimGraphNode_TransitionResult_15; // 0x46A8 (40)
+	struct Unknown AnimGraphNode_TransitionResult_14; // 0x46D0 (40)
+	struct Unknown AnimGraphNode_TransitionResult_13; // 0x46F8 (40)
+	struct Unknown AnimGraphNode_TransitionResult_12; // 0x4720 (40)
+	struct Unknown AnimGraphNode_TransitionResult_11; // 0x4748 (40)
+	struct Unknown AnimGraphNode_TransitionResult_10; // 0x4770 (40)
+	struct Unknown AnimGraphNode_TransitionResult_9; // 0x4798 (40)
+	struct Unknown AnimGraphNode_TransitionResult_8; // 0x47C0 (40)
+	struct Unknown AnimGraphNode_TransitionResult_7; // 0x47E8 (40)
+	struct Unknown AnimGraphNode_TransitionResult_6; // 0x4810 (40)
+	struct Unknown AnimGraphNode_TransitionResult_5; // 0x4838 (40)
+	struct Unknown AnimGraphNode_TransitionResult_4; // 0x4860 (40)
+	struct Unknown AnimGraphNode_TransitionResult_3; // 0x4888 (40)
+	struct Unknown AnimGraphNode_TransitionResult_2; // 0x48B0 (40)
+	struct Unknown AnimGraphNode_TransitionResult; // 0x48D8 (40)
+	struct Unknown AnimGraphNode_SequencePlayer_90; // 0x4900 (120)
+	struct Unknown AnimGraphNode_StateResult_12; // 0x4978 (48)
+	struct Unknown AnimGraphNode_SequencePlayer_89; // 0x49A8 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_88; // 0x4A20 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_87; // 0x4A98 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_86; // 0x4B10 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_85; // 0x4B88 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_84; // 0x4C00 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_83; // 0x4C78 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_82; // 0x4CF0 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_81; // 0x4D68 (120)
+	struct Unknown AnimGraphNode_BlendListByEnum_19; // 0x4DE0 (176)
+	struct Unknown AnimGraphNode_StateResult_11; // 0x4E90 (48)
+	struct Unknown AnimGraphNode_SequencePlayer_80; // 0x4EC0 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_79; // 0x4F38 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_78; // 0x4FB0 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_77; // 0x5028 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_76; // 0x50A0 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_75; // 0x5118 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_74; // 0x5190 (120)
+	struct Unknown AnimGraphNode_BlendListByEnum_18; // 0x5208 (176)
+	struct Unknown AnimGraphNode_SequencePlayer_73; // 0x52B8 (120)
+	struct Unknown AnimGraphNode_StateResult_10; // 0x5330 (48)
+	struct Unknown AnimGraphNode_SequencePlayer_72; // 0x5360 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_71; // 0x53D8 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_70; // 0x5450 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_69; // 0x54C8 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_68; // 0x5540 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_67; // 0x55B8 (120)
+	struct Unknown AnimGraphNode_BlendListByEnum_17; // 0x5630 (176)
+	struct Unknown AnimGraphNode_SequencePlayer_66; // 0x56E0 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_65; // 0x5758 (120)
+	struct Unknown AnimGraphNode_StateResult_9; // 0x57D0 (48)
+	struct Unknown AnimGraphNode_SequencePlayer_64; // 0x5800 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_63; // 0x5878 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_62; // 0x58F0 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_61; // 0x5968 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_60; // 0x59E0 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_59; // 0x5A58 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_58; // 0x5AD0 (120)
+	struct Unknown AnimGraphNode_BlendListByEnum_16; // 0x5B48 (176)
+	struct Unknown AnimGraphNode_SequencePlayer_57; // 0x5BF8 (120)
+	struct Unknown AnimGraphNode_StateResult_8; // 0x5C70 (48)
+	struct Unknown AnimGraphNode_SequencePlayer_56; // 0x5CA0 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_55; // 0x5D18 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_54; // 0x5D90 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_53; // 0x5E08 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_52; // 0x5E80 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_51; // 0x5EF8 (120)
+	struct Unknown AnimGraphNode_BlendListByEnum_15; // 0x5F70 (176)
+	struct Unknown AnimGraphNode_SequencePlayer_50; // 0x6020 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_49; // 0x6098 (120)
+	struct Unknown AnimGraphNode_StateResult_7; // 0x6110 (48)
+	struct Unknown AnimGraphNode_SequencePlayer_48; // 0x6140 (120)
+	struct Unknown AnimGraphNode_BlendListByBool_21; // 0x61B8 (160)
+	struct Unknown AnimGraphNode_SequencePlayer_47; // 0x6258 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_46; // 0x62D0 (120)
+	struct Unknown AnimGraphNode_BlendListByEnum_14; // 0x6348 (176)
+	struct Unknown AnimGraphNode_SequencePlayer_45; // 0x63F8 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_44; // 0x6470 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_43; // 0x64E8 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_42; // 0x6560 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_41; // 0x65D8 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_40; // 0x6650 (120)
+	struct Unknown AnimGraphNode_BlendListByEnum_13; // 0x66C8 (176)
+	struct Unknown AnimGraphNode_SequencePlayer_39; // 0x6778 (120)
+	struct Unknown AnimGraphNode_StateResult_6; // 0x67F0 (48)
+	struct Unknown AnimGraphNode_SequencePlayer_38; // 0x6820 (120)
+	struct Unknown AnimGraphNode_BlendListByBool_20; // 0x6898 (160)
+	struct Unknown AnimGraphNode_SequencePlayer_37; // 0x6938 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_36; // 0x69B0 (120)
+	struct Unknown AnimGraphNode_BlendListByEnum_12; // 0x6A28 (176)
+	struct Unknown AnimGraphNode_SequencePlayer_35; // 0x6AD8 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_34; // 0x6B50 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_33; // 0x6BC8 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_32; // 0x6C40 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_31; // 0x6CB8 (120)
+	struct Unknown AnimGraphNode_BlendListByEnum_11; // 0x6D30 (176)
+	struct Unknown AnimGraphNode_SequencePlayer_30; // 0x6DE0 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_29; // 0x6E58 (120)
+	struct Unknown AnimGraphNode_StateResult_5; // 0x6ED0 (48)
+	struct Unknown AnimGraphNode_SequencePlayer_28; // 0x6F00 (120)
+	struct Unknown AnimGraphNode_BlendListByBool_19; // 0x6F78 (160)
+	struct Unknown AnimGraphNode_BlendSpacePlayer_19; // 0x7018 (224)
+	struct Unknown AnimGraphNode_BlendListByBool_18; // 0x70F8 (160)
+	struct Unknown AnimGraphNode_LayeredBoneBlend_6; // 0x7198 (192)
+	struct Unknown AnimGraphNode_SequencePlayer_27; // 0x7258 (120)
+	struct Unknown AnimGraphNode_BlendSpacePlayer_18; // 0x72D0 (224)
+	struct Unknown AnimGraphNode_SequencePlayer_26; // 0x73B0 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_25; // 0x7428 (120)
+	struct Unknown AnimGraphNode_BlendListByEnum_10; // 0x74A0 (176)
+	struct Unknown AnimGraphNode_TwoWayBlend_5; // 0x7550 (200)
+	struct Unknown AnimGraphNode_BlendSpacePlayer_17; // 0x7618 (224)
+	struct Unknown AnimGraphNode_SequencePlayer_24; // 0x76F8 (120)
+	struct Unknown AnimGraphNode_BlendListByEnum_9; // 0x7770 (176)
+	struct Unknown AnimGraphNode_BlendSpacePlayer_16; // 0x7820 (224)
+	struct Unknown AnimGraphNode_BlendSpacePlayer_15; // 0x7900 (224)
+	struct Unknown AnimGraphNode_BlendListByEnum_8; // 0x79E0 (176)
+	struct Unknown AnimGraphNode_BlendSpacePlayer_14; // 0x7A90 (224)
+	struct Unknown AnimGraphNode_StateResult_4; // 0x7B70 (48)
+	struct Unknown AnimGraphNode_SequencePlayer_23; // 0x7BA0 (120)
+	struct Unknown AnimGraphNode_BlendListByBool_17; // 0x7C18 (160)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace_10; // 0x7CB8 (32)
+	struct Unknown AnimGraphNode_LocalToComponentSpace_9; // 0x7CD8 (32)
+	struct Unknown AnimGraphNode_ModifyBone_13; // 0x7CF8 (264)
+	struct Unknown AnimGraphNode_BlendSpacePlayer_13; // 0x7E00 (224)
+	struct Unknown AnimGraphNode_BlendListByBool_16; // 0x7EE0 (160)
+	struct Unknown AnimGraphNode_BlendSpacePlayer_12; // 0x7F80 (224)
+	struct Unknown AnimGraphNode_SequencePlayer_22; // 0x8060 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_21; // 0x80D8 (120)
+	struct Unknown AnimGraphNode_BlendListByEnum_7; // 0x8150 (176)
+	struct Unknown AnimGraphNode_TwoWayBlend_4; // 0x8200 (200)
+	struct Unknown AnimGraphNode_BlendSpacePlayer_11; // 0x82C8 (224)
+	struct Unknown AnimGraphNode_BlendListByBool_15; // 0x83A8 (160)
+	struct Unknown AnimGraphNode_BlendSpacePlayer_10; // 0x8448 (224)
+	struct Unknown AnimGraphNode_SequencePlayer_20; // 0x8528 (120)
+	struct Unknown AnimGraphNode_BlendListByEnum_6; // 0x85A0 (176)
+	struct Unknown AnimGraphNode_BlendSpacePlayer_9; // 0x8650 (224)
+	struct Unknown AnimGraphNode_BlendSpacePlayer_8; // 0x8730 (224)
+	struct Unknown AnimGraphNode_BlendListByEnum_5; // 0x8810 (176)
+	struct Unknown AnimGraphNode_BlendSpacePlayer_7; // 0x88C0 (224)
+	struct Unknown AnimGraphNode_StateResult_3; // 0x89A0 (48)
+	struct Unknown AnimGraphNode_SequencePlayer_19; // 0x89D0 (120)
+	struct Unknown AnimGraphNode_BlendListByBool_14; // 0x8A48 (160)
+	struct Unknown AnimGraphNode_BlendSpacePlayer_6; // 0x8AE8 (224)
+	struct Unknown AnimGraphNode_BlendListByBool_13; // 0x8BC8 (160)
+	struct Unknown AnimGraphNode_LayeredBoneBlend_5; // 0x8C68 (192)
+	struct Unknown AnimGraphNode_SequencePlayer_18; // 0x8D28 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_17; // 0x8DA0 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_16; // 0x8E18 (120)
+	struct Unknown AnimGraphNode_BlendSpacePlayer_5; // 0x8E90 (224)
+	struct Unknown AnimGraphNode_BlendListByInt; // 0x8F70 (160)
+	struct Unknown AnimGraphNode_BlendSpacePlayer_4; // 0x9010 (224)
+	struct Unknown AnimGraphNode_SequencePlayer_15; // 0x90F0 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_14; // 0x9168 (120)
+	struct Unknown AnimGraphNode_BlendListByEnum_4; // 0x91E0 (176)
+	struct Unknown AnimGraphNode_TwoWayBlend_3; // 0x9290 (200)
+	struct Unknown AnimGraphNode_SequencePlayer_13; // 0x9358 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_12; // 0x93D0 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_11; // 0x9448 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_10; // 0x94C0 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_9; // 0x9538 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_8; // 0x95B0 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_7; // 0x9628 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_6; // 0x96A0 (120)
+	struct Unknown AnimGraphNode_BlendListByEnum_3; // 0x9718 (176)
+	struct Unknown AnimGraphNode_BlendListByBool_12; // 0x97C8 (160)
+	struct Unknown AnimGraphNode_BlendSpacePlayer_3; // 0x9868 (224)
+	struct Unknown AnimGraphNode_SequencePlayer_5; // 0x9948 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_4; // 0x99C0 (120)
+	struct Unknown AnimGraphNode_BlendListByEnum_2; // 0x9A38 (176)
+	struct Unknown AnimGraphNode_BlendSpacePlayer_2; // 0x9AE8 (224)
+	struct Unknown AnimGraphNode_BlendSpacePlayer; // 0x9BC8 (224)
+	struct Unknown AnimGraphNode_BlendListByEnum; // 0x9CA8 (176)
+	struct Unknown AnimGraphNode_StateResult_2; // 0x9D58 (48)
+	struct Unknown AnimGraphNode_StateMachine_2; // 0x9D88 (176)
+	struct Unknown AnimGraphNode_StateResult; // 0x9E38 (48)
+	struct Unknown AnimGraphNode_StateMachine; // 0x9E68 (176)
+	struct Unknown AnimGraphNode_SaveCachedPose_14; // 0x9F18 (184)
+	struct Unknown AnimGraphNode_CopyPoseFromMesh; // 0x9FD0 (320)
+	struct Unknown AnimGraphNode_LayeredBoneBlend_4; // 0xA110 (192)
+	struct Unknown AnimGraphNode_SaveCachedPose_13; // 0xA1D0 (184)
+	struct Unknown AnimGraphNode_UseCachedPose_27; // 0xA288 (40)
+	struct Unknown AnimGraphNode_SaveCachedPose_12; // 0xA2B0 (184)
+	struct Unknown AnimGraphNode_UseCachedPose_26; // 0xA368 (40)
+	struct Unknown AnimGraphNode_ModifyBone_12; // 0xA390 (264)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace_9; // 0xA498 (32)
+	struct Unknown AnimGraphNode_SaveCachedPose_11; // 0xA4B8 (184)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace_8; // 0xA570 (32)
+	struct Unknown AnimGraphNode_LocalToComponentSpace_8; // 0xA590 (32)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace_7; // 0xA5B0 (32)
+	struct Unknown AnimGraphNode_SaveCachedPose_10; // 0xA5D0 (184)
+	struct Unknown AnimGraphNode_SaveCachedPose_9; // 0xA688 (184)
+	struct Unknown AnimGraphNode_LocalToComponentSpace_7; // 0xA740 (32)
+	struct Unknown AnimGraphNode_TwoBoneIK_7; // 0xA760 (480)
+	struct Unknown AnimGraphNode_TwoBoneIK_6; // 0xA940 (480)
+	struct Unknown AnimGraphNode_UseCachedPose_25; // 0xAB20 (40)
+	struct Unknown AnimGraphNode_ModifyBone_11; // 0xAB48 (264)
+	struct Unknown AnimGraphNode_BlendListByBool_11; // 0xAC50 (160)
+	struct Unknown AnimGraphNode_TwoWayBlend_2; // 0xACF0 (200)
+	struct Unknown AnimGraphNode_SaveCachedPose_8; // 0xADB8 (184)
+	struct Unknown AnimGraphNode_ModifyBone_10; // 0xAE70 (264)
+	struct Unknown AnimGraphNode_BlendListByBool_10; // 0xAF78 (160)
+	struct Unknown AnimGraphNode_LayeredBoneBlend_3; // 0xB018 (192)
+	struct Unknown AnimGraphNode_UseCachedPose_24; // 0xB0D8 (40)
+	struct Unknown AnimGraphNode_CopyBone_2; // 0xB100 (240)
+	struct Unknown AnimGraphNode_ApplyAdditive; // 0xB1F0 (200)
+	struct Unknown AnimGraphNode_SequencePlayer_3; // 0xB2B8 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_2; // 0xB330 (120)
+	struct Unknown AnimGraphNode_SaveCachedPose_7; // 0xB3A8 (184)
+	struct Unknown AnimGraphNode_UseCachedPose_23; // 0xB460 (40)
+	struct Unknown AnimGraphNode_SaveCachedPose_6; // 0xB488 (184)
+	struct Unknown AnimGraphNode_ModifyBone_9; // 0xB540 (264)
+	struct Unknown AnimGraphNode_BlendListByBool_9; // 0xB648 (160)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace_6; // 0xB6E8 (32)
+	struct Unknown AnimGraphNode_LocalToComponentSpace_6; // 0xB708 (32)
+	struct Unknown AnimGraphNode_SaveCachedPose_5; // 0xB728 (184)
+	struct Unknown AnimGraphNode_UseCachedPose_22; // 0xB7E0 (40)
+	struct Unknown AnimGraphNode_CopyBone; // 0xB808 (240)
+	struct Unknown AnimGraphNode_ModifyBone_8; // 0xB8F8 (264)
+	struct Unknown AnimGraphNode_BlendListByBool_8; // 0xBA00 (160)
+	struct Unknown AnimGraphNode_Slot_11; // 0xBAA0 (72)
+	struct Unknown AnimGraphNode_Slot_10; // 0xBAE8 (72)
+	struct Unknown AnimGraphNode_Slot_9; // 0xBB30 (72)
+	struct Unknown AnimGraphNode_Slot_8; // 0xBB78 (72)
+	struct Unknown AnimGraphNode_BlendListByBool_7; // 0xBBC0 (160)
+	struct Unknown AnimGraphNode_UseCachedPose_21; // 0xBC60 (40)
+	struct Unknown AnimGraphNode_Slot_7; // 0xBC88 (72)
+	struct Unknown AnimGraphNode_Slot_6; // 0xBCD0 (72)
+	struct Unknown AnimGraphNode_ModifyBone_7; // 0xBD18 (264)
+	struct Unknown AnimGraphNode_ModifyBone_6; // 0xBE20 (264)
+	struct Unknown AnimGraphNode_UseCachedPose_20; // 0xBF28 (40)
+	struct Unknown AnimGraphNode_ModifyBone_5; // 0xBF50 (264)
+	struct Unknown AnimGraphNode_LocalToComponentSpace_5; // 0xC058 (32)
+	struct Unknown AnimGraphNode_SaveCachedPose_4; // 0xC078 (184)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace_5; // 0xC130 (32)
+	struct Unknown AnimGraphNode_UseCachedPose_19; // 0xC150 (40)
+	struct Unknown AnimGraphNode_LocalToComponentSpace_4; // 0xC178 (32)
+	struct Unknown AnimGraphNode_TwoBoneIK_5; // 0xC1A0 (480)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace_4; // 0xC380 (32)
+	struct Unknown AnimGraphNode_Slot_5; // 0xC3A0 (72)
+	struct Unknown AnimGraphNode_LayeredBoneBlend_2; // 0xC3E8 (192)
+	struct Unknown AnimGraphNode_UseCachedPose_18; // 0xC4A8 (40)
+	struct Unknown AnimGraphNode_Slot_4; // 0xC4D0 (72)
+	struct Unknown AnimGraphNode_LayeredBoneBlend; // 0xC518 (192)
+	struct Unknown AnimGraphNode_UseCachedPose_17; // 0xC5D8 (40)
+	struct Unknown AnimGraphNode_UseCachedPose_16; // 0xC600 (40)
+	struct Unknown AnimGraphNode_BlendListByBool_6; // 0xC628 (160)
+	struct Unknown AnimGraphNode_UseCachedPose_15; // 0xC6C8 (40)
+	struct Unknown AnimGraphNode_TwoWayBlend; // 0xC6F0 (200)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace_3; // 0xC7B8 (32)
+	struct Unknown AnimGraphNode_LocalToComponentSpace_3; // 0xC7D8 (32)
+	struct Unknown AnimGraphNode_SaveCachedPose_3; // 0xC7F8 (184)
+	struct Unknown AnimGraphNode_BlendListByBool_5; // 0xC8B0 (160)
+	struct Unknown AnimGraphNode_UseCachedPose_14; // 0xC950 (40)
+	struct Unknown AnimGraphNode_TwoBoneIK_4; // 0xC980 (480)
+	struct Unknown AnimGraphNode_TwoBoneIK_3; // 0xCB60 (480)
+	struct Unknown AnimGraphNode_ModifyBone_4; // 0xCD40 (264)
+	struct Unknown AnimGraphNode_ModifyBone_3; // 0xCE48 (264)
+	struct Unknown AnimGraphNode_Slot_3; // 0xCF50 (72)
+	struct Unknown AnimGraphNode_TwoBoneIK_2; // 0xCFA0 (480)
+	struct Unknown AnimGraphNode_BlendListByBool_4; // 0xD180 (160)
+	struct Unknown AnimGraphNode_ModifyBone_2; // 0xD220 (264)
+	struct Unknown AnimGraphNode_LocalToComponentSpace_2; // 0xD328 (32)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace_2; // 0xD348 (32)
+	struct Unknown AnimGraphNode_BlendListByBool_3; // 0xD368 (160)
+	struct Unknown AnimGraphNode_Slot_2; // 0xD408 (72)
+	struct Unknown AnimGraphNode_Slot; // 0xD450 (72)
+	struct Unknown AnimGraphNode_SaveCachedPose_2; // 0xD498 (184)
+	struct Unknown AnimGraphNode_UseCachedPose_13; // 0xD550 (40)
+	struct Unknown AnimGraphNode_UseCachedPose_12; // 0xD578 (40)
+	struct Unknown AnimGraphNode_UseCachedPose_11; // 0xD5A0 (40)
+	struct Unknown AnimGraphNode_UseCachedPose_10; // 0xD5C8 (40)
+	struct Unknown AnimGraphNode_UseCachedPose_9; // 0xD5F0 (40)
+	struct Unknown AnimGraphNode_UseCachedPose_8; // 0xD618 (40)
+	struct Unknown AnimGraphNode_UseCachedPose_7; // 0xD640 (40)
+	struct Unknown AnimGraphNode_UseCachedPose_6; // 0xD668 (40)
+	struct Unknown AnimGraphNode_UseCachedPose_5; // 0xD690 (40)
+	struct Unknown AnimGraphNode_UseCachedPose_4; // 0xD6B8 (40)
+	struct Unknown AnimGraphNode_BlendListByBool_2; // 0xD6E0 (160)
+	struct Unknown AnimGraphNode_SequencePlayer; // 0xD780 (120)
+	struct Unknown AnimGraphNode_ModifyBone; // 0xD7F8 (264)
+	struct Unknown AnimGraphNode_TwoBoneIK; // 0xD900 (480)
+	struct Unknown AnimGraphNode_LocalToComponentSpace; // 0xDAE0 (32)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace; // 0xDB00 (32)
+	struct Unknown AnimGraphNode_SaveCachedPose; // 0xDB20 (184)
+	struct Unknown AnimGraphNode_UseCachedPose_3; // 0xDBD8 (40)
+	struct Unknown AnimGraphNode_UseCachedPose_2; // 0xDC00 (40)
+	struct Unknown AnimGraphNode_BlendListByBool; // 0xDC28 (160)
+	struct Unknown AnimGraphNode_UseCachedPose; // 0xDCC8 (40)
+
+	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+};
+
+// AnimBlueprintGeneratedClass AB.AB
 class UAB : public UBravoHotelAnimInstanceWeapon {
 
 public:
 
 	struct Unknown UberGraphFrame; // 0x330 (8)
 	struct Unknown AnimGraphNode_Root; // 0x338 (48)
-	struct Unknown AnimGraphNode_BlendListByEnum; // 0x368 (176)
-	struct Unknown AnimGraphNode_SequencePlayer_3; // 0x418 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_2; // 0x490 (120)
-	struct Unknown AnimGraphNode_SequencePlayer; // 0x508 (120)
-	struct Unknown AnimGraphNode_Slot_4; // 0x580 (72)
-	struct Unknown AnimGraphNode_TwoWayBlend; // 0x5C8 (200)
-	struct Unknown AnimGraphNode_LayeredBoneBlend; // 0x690 (192)
-	struct Unknown AnimGraphNode_LocalRefPose_3; // 0x750 (24)
-	struct Unknown AnimGraphNode_Slot_3; // 0x768 (72)
-	struct Unknown AnimGraphNode_LocalRefPose_2; // 0x7B0 (24)
-	struct Unknown AnimGraphNode_Slot_2; // 0x7C8 (72)
-	struct Unknown AnimGraphNode_Slot; // 0x810 (72)
-	struct Unknown AnimGraphNode_LocalRefPose; // 0x858 (24)
-	struct Unknown AnimGraphNode_BlendListByBool; // 0x870 (160)
+	struct Unknown AnimGraphNode_Slot_3; // 0x368 (72)
+	struct Unknown AnimGraphNode_TwoWayBlend; // 0x3B0 (200)
+	struct Unknown AnimGraphNode_LocalRefPose_3; // 0x478 (24)
+	struct Unknown AnimGraphNode_LocalRefPose_2; // 0x490 (24)
+	struct Unknown AnimGraphNode_Slot_2; // 0x4A8 (72)
+	struct Unknown AnimGraphNode_Slot; // 0x4F0 (72)
+	struct Unknown AnimGraphNode_LocalRefPose; // 0x538 (24)
+	struct Unknown AnimGraphNode_BlendListByBool; // 0x550 (160)
+
+	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+};
+
+// AnimBlueprintGeneratedClass AB.AB
+class UAB : public UBravoHotelAnimInstanceWeapon {
+
+public:
+
+	struct Unknown UberGraphFrame; // 0x330 (8)
+	struct Unknown AnimGraphNode_Root; // 0x338 (48)
+	struct Unknown AnimGraphNode_LocalToComponentSpace; // 0x368 (32)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace; // 0x388 (32)
+	struct Unknown AnimGraphNode_ModifyBone_3; // 0x3A8 (264)
+	struct Unknown AnimGraphNode_BlendListByBool; // 0x4B0 (160)
+	struct Unknown AnimGraphNode_ModifyBone_2; // 0x550 (264)
+	struct Unknown AnimGraphNode_Slot_5; // 0x658 (72)
+	struct Unknown AnimGraphNode_ModifyBone; // 0x6A0 (264)
+	struct Unknown AnimGraphNode_TwoWayBlend_2; // 0x7A8 (200)
+	struct Unknown AnimGraphNode_Slot_4; // 0x870 (72)
+	struct Unknown AnimGraphNode_Slot_3; // 0x8B8 (72)
+	struct Unknown AnimGraphNode_LayeredBoneBlend; // 0x900 (192)
+	struct Unknown AnimGraphNode_Slot_2; // 0x9C0 (72)
+	struct Unknown AnimGraphNode_LocalRefPose_2; // 0xA08 (24)
+	struct Unknown AnimGraphNode_TwoWayBlend; // 0xA20 (200)
+	struct Unknown AnimGraphNode_Slot; // 0xAE8 (72)
+	struct Unknown AnimGraphNode_LocalRefPose; // 0xB30 (24)
+	struct Unknown AnimGraphNode_SaveCachedPose_3; // 0xB48 (184)
+	struct Unknown AnimGraphNode_UseCachedPose_6; // 0xC00 (40)
+	struct Unknown AnimGraphNode_UseCachedPose_5; // 0xC28 (40)
+	struct Unknown AnimGraphNode_UseCachedPose_4; // 0xC50 (40)
+	struct Unknown AnimGraphNode_SaveCachedPose_2; // 0xC78 (184)
+	struct Unknown AnimGraphNode_UseCachedPose_3; // 0xD30 (40)
+	struct Unknown AnimGraphNode_SaveCachedPose; // 0xD58 (184)
+	struct Unknown AnimGraphNode_UseCachedPose_2; // 0xE10 (40)
+	struct Unknown AnimGraphNode_UseCachedPose; // 0xE38 (40)
+
+	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+};
+
+// AnimBlueprintGeneratedClass AB.AB
+class UAB : public UBravoHotelAnimInstanceWeapon {
+
+public:
+
+	struct Unknown UberGraphFrame; // 0x330 (8)
+	struct Unknown AnimGraphNode_Root; // 0x338 (48)
+	struct Unknown AnimGraphNode_Slot_3; // 0x368 (72)
+	struct Unknown AnimGraphNode_TwoWayBlend; // 0x3B0 (200)
+	struct Unknown AnimGraphNode_LocalRefPose_3; // 0x478 (24)
+	struct Unknown AnimGraphNode_LocalRefPose_2; // 0x490 (24)
+	struct Unknown AnimGraphNode_Slot_2; // 0x4A8 (72)
+	struct Unknown AnimGraphNode_Slot; // 0x4F0 (72)
+	struct Unknown AnimGraphNode_LocalRefPose; // 0x538 (24)
+	struct Unknown AnimGraphNode_BlendListByBool; // 0x550 (160)
+
+	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+};
+
+// AnimBlueprintGeneratedClass AB.AB
+class UAB : public UBravoHotelAnimInstanceWeapon {
+
+public:
+
+	struct Unknown UberGraphFrame; // 0x330 (8)
+	struct Unknown AnimGraphNode_Root; // 0x338 (48)
+	struct Unknown AnimGraphNode_Slot_3; // 0x368 (72)
+	struct Unknown AnimGraphNode_TwoWayBlend; // 0x3B0 (200)
+	struct Unknown AnimGraphNode_LocalRefPose_3; // 0x478 (24)
+	struct Unknown AnimGraphNode_LocalRefPose_2; // 0x490 (24)
+	struct Unknown AnimGraphNode_Slot_2; // 0x4A8 (72)
+	struct Unknown AnimGraphNode_Slot; // 0x4F0 (72)
+	struct Unknown AnimGraphNode_LocalRefPose; // 0x538 (24)
+	struct Unknown AnimGraphNode_BlendListByBool; // 0x550 (160)
+
+	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+};
+
+// AnimBlueprintGeneratedClass AB.AB
+class UAB : public UBravoHotelAnimInstanceWeapon {
+
+public:
+
+	struct Unknown UberGraphFrame; // 0x330 (8)
+	struct Unknown AnimGraphNode_Root; // 0x338 (48)
+	struct Unknown AnimGraphNode_Slot_3; // 0x368 (72)
+	struct Unknown AnimGraphNode_TwoWayBlend; // 0x3B0 (200)
+	struct Unknown AnimGraphNode_LocalRefPose_3; // 0x478 (24)
+	struct Unknown AnimGraphNode_LocalRefPose_2; // 0x490 (24)
+	struct Unknown AnimGraphNode_Slot_2; // 0x4A8 (72)
+	struct Unknown AnimGraphNode_Slot; // 0x4F0 (72)
+	struct Unknown AnimGraphNode_LocalRefPose; // 0x538 (24)
+	struct Unknown AnimGraphNode_BlendListByBool; // 0x550 (160)
 
 	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
@@ -2691,237 +2924,6 @@ public:
 
 	struct Unknown UberGraphFrame; // 0x330 (8)
 	struct Unknown AnimGraphNode_Root; // 0x338 (48)
-	struct Unknown AnimGraphNode_BlendListByEnum; // 0x368 (176)
-	struct Unknown AnimGraphNode_SequencePlayer_3; // 0x418 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_2; // 0x490 (120)
-	struct Unknown AnimGraphNode_SequencePlayer; // 0x508 (120)
-	struct Unknown AnimGraphNode_Slot_4; // 0x580 (72)
-	struct Unknown AnimGraphNode_TwoWayBlend; // 0x5C8 (200)
-	struct Unknown AnimGraphNode_LayeredBoneBlend; // 0x690 (192)
-	struct Unknown AnimGraphNode_LocalRefPose_3; // 0x750 (24)
-	struct Unknown AnimGraphNode_Slot_3; // 0x768 (72)
-	struct Unknown AnimGraphNode_LocalRefPose_2; // 0x7B0 (24)
-	struct Unknown AnimGraphNode_Slot_2; // 0x7C8 (72)
-	struct Unknown AnimGraphNode_Slot; // 0x810 (72)
-	struct Unknown AnimGraphNode_LocalRefPose; // 0x858 (24)
-	struct Unknown AnimGraphNode_BlendListByBool; // 0x870 (160)
-
-	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-};
-
-// AnimBlueprintGeneratedClass AB.AB
-class UAB : public UBravoHotelAnimInstanceWeapon {
-
-public:
-
-	struct Unknown UberGraphFrame; // 0x330 (8)
-	struct Unknown AnimGraphNode_Root; // 0x338 (48)
-	struct Unknown AnimGraphNode_Slot_3; // 0x368 (72)
-	struct Unknown AnimGraphNode_TwoWayBlend; // 0x3B0 (200)
-	struct Unknown AnimGraphNode_LocalRefPose_3; // 0x478 (24)
-	struct Unknown AnimGraphNode_Slot_2; // 0x490 (72)
-	struct Unknown AnimGraphNode_LocalRefPose_2; // 0x4D8 (24)
-	struct Unknown AnimGraphNode_LocalRefPose; // 0x4F0 (24)
-	struct Unknown AnimGraphNode_Slot; // 0x508 (72)
-	struct Unknown AnimGraphNode_BlendListByBool; // 0x550 (160)
-
-	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-};
-
-// AnimBlueprintGeneratedClass AB.AB
-class UAB : public UBravoHotelAnimInstanceWeapon {
-
-public:
-
-	struct Unknown UberGraphFrame; // 0x330 (8)
-	struct Unknown AnimGraphNode_Root; // 0x338 (48)
-	struct Unknown AnimGraphNode_Slot_3; // 0x368 (72)
-	struct Unknown AnimGraphNode_TwoWayBlend; // 0x3B0 (200)
-	struct Unknown AnimGraphNode_LocalRefPose_3; // 0x478 (24)
-	struct Unknown AnimGraphNode_LocalRefPose_2; // 0x490 (24)
-	struct Unknown AnimGraphNode_Slot_2; // 0x4A8 (72)
-	struct Unknown AnimGraphNode_Slot; // 0x4F0 (72)
-	struct Unknown AnimGraphNode_LocalRefPose; // 0x538 (24)
-	struct Unknown AnimGraphNode_BlendListByBool; // 0x550 (160)
-
-	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-};
-
-// AnimBlueprintGeneratedClass AB.AB
-class UAB : public UBravoHotelAnimInstanceWeapon {
-
-public:
-
-	struct Unknown UberGraphFrame; // 0x330 (8)
-	struct Unknown AnimGraphNode_Root; // 0x338 (48)
-	struct Unknown AnimGraphNode_Slot_3; // 0x368 (72)
-	struct Unknown AnimGraphNode_TwoWayBlend; // 0x3B0 (200)
-	struct Unknown AnimGraphNode_LocalRefPose_3; // 0x478 (24)
-	struct Unknown AnimGraphNode_Slot_2; // 0x490 (72)
-	struct Unknown AnimGraphNode_LocalRefPose_2; // 0x4D8 (24)
-	struct Unknown AnimGraphNode_BlendListByBool; // 0x4F0 (160)
-	struct Unknown AnimGraphNode_Slot; // 0x590 (72)
-	struct Unknown AnimGraphNode_LocalRefPose; // 0x5D8 (24)
-
-	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-};
-
-// AnimBlueprintGeneratedClass AB.AB
-class UAB : public UBravoHotelAnimInstanceWeapon {
-
-public:
-
-	struct Unknown UberGraphFrame; // 0x330 (8)
-	struct Unknown AnimGraphNode_Root; // 0x338 (48)
-	struct Unknown AnimGraphNode_BlendListByEnum; // 0x368 (176)
-	struct Unknown AnimGraphNode_SequencePlayer_4; // 0x418 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_3; // 0x490 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_2; // 0x508 (120)
-	struct Unknown AnimGraphNode_SequencePlayer; // 0x580 (120)
-	struct Unknown AnimGraphNode_Slot_4; // 0x5F8 (72)
-	struct Unknown AnimGraphNode_TwoWayBlend; // 0x640 (200)
-	struct Unknown AnimGraphNode_LayeredBoneBlend; // 0x708 (192)
-	struct Unknown AnimGraphNode_LocalRefPose_3; // 0x7C8 (24)
-	struct Unknown AnimGraphNode_Slot_3; // 0x7E0 (72)
-	struct Unknown AnimGraphNode_LocalRefPose_2; // 0x828 (24)
-	struct Unknown AnimGraphNode_Slot_2; // 0x840 (72)
-	struct Unknown AnimGraphNode_Slot; // 0x888 (72)
-	struct Unknown AnimGraphNode_LocalRefPose; // 0x8D0 (24)
-	struct Unknown AnimGraphNode_BlendListByBool; // 0x8E8 (160)
-
-	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-};
-
-// AnimBlueprintGeneratedClass AB.AB
-class UAB : public UBravoHotelAnimInstanceWeapon {
-
-public:
-
-	struct Unknown UberGraphFrame; // 0x330 (8)
-	struct Unknown AnimGraphNode_Root; // 0x338 (48)
-	struct Unknown AnimGraphNode_Slot_3; // 0x368 (72)
-	struct Unknown AnimGraphNode_TwoWayBlend; // 0x3B0 (200)
-	struct Unknown AnimGraphNode_LocalRefPose_3; // 0x478 (24)
-	struct Unknown AnimGraphNode_LocalRefPose_2; // 0x490 (24)
-	struct Unknown AnimGraphNode_Slot_2; // 0x4A8 (72)
-	struct Unknown AnimGraphNode_Slot; // 0x4F0 (72)
-	struct Unknown AnimGraphNode_LocalRefPose; // 0x538 (24)
-	struct Unknown AnimGraphNode_BlendListByBool; // 0x550 (160)
-
-	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-};
-
-// AnimBlueprintGeneratedClass AB.AB
-class UAB : public UBravoHotelAnimInstanceWeapon {
-
-public:
-
-	struct Unknown UberGraphFrame; // 0x330 (8)
-	struct Unknown AnimGraphNode_Root; // 0x338 (48)
-	struct Unknown AnimGraphNode_BlendListByEnum; // 0x368 (176)
-	struct Unknown AnimGraphNode_SequencePlayer_3; // 0x418 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_2; // 0x490 (120)
-	struct Unknown AnimGraphNode_SequencePlayer; // 0x508 (120)
-	struct Unknown AnimGraphNode_Slot_4; // 0x580 (72)
-	struct Unknown AnimGraphNode_TwoWayBlend; // 0x5C8 (200)
-	struct Unknown AnimGraphNode_LayeredBoneBlend; // 0x690 (192)
-	struct Unknown AnimGraphNode_LocalRefPose_3; // 0x750 (24)
-	struct Unknown AnimGraphNode_Slot_3; // 0x768 (72)
-	struct Unknown AnimGraphNode_LocalRefPose_2; // 0x7B0 (24)
-	struct Unknown AnimGraphNode_Slot_2; // 0x7C8 (72)
-	struct Unknown AnimGraphNode_Slot; // 0x810 (72)
-	struct Unknown AnimGraphNode_LocalRefPose; // 0x858 (24)
-	struct Unknown AnimGraphNode_BlendListByBool; // 0x870 (160)
-
-	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-};
-
-// AnimBlueprintGeneratedClass AB.AB
-class UAB : public UBravoHotelAnimInstanceWeapon {
-
-public:
-
-	struct Unknown UberGraphFrame; // 0x330 (8)
-	struct Unknown AnimGraphNode_Root; // 0x338 (48)
-	struct Unknown AnimGraphNode_Slot_3; // 0x368 (72)
-	struct Unknown AnimGraphNode_TwoWayBlend; // 0x3B0 (200)
-	struct Unknown AnimGraphNode_LocalRefPose_3; // 0x478 (24)
-	struct Unknown AnimGraphNode_LocalRefPose_2; // 0x490 (24)
-	struct Unknown AnimGraphNode_Slot_2; // 0x4A8 (72)
-	struct Unknown AnimGraphNode_Slot; // 0x4F0 (72)
-	struct Unknown AnimGraphNode_LocalRefPose; // 0x538 (24)
-	struct Unknown AnimGraphNode_BlendListByBool; // 0x550 (160)
-
-	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-};
-
-// AnimBlueprintGeneratedClass AB.AB
-class UAB : public UBravoHotelAnimInstanceWeapon {
-
-public:
-
-	struct Unknown UberGraphFrame; // 0x330 (8)
-	struct Unknown AnimGraphNode_Root; // 0x338 (48)
-	struct Unknown AnimGraphNode_BlendListByEnum; // 0x368 (176)
-	struct Unknown AnimGraphNode_SequencePlayer_3; // 0x418 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_2; // 0x490 (120)
-	struct Unknown AnimGraphNode_SequencePlayer; // 0x508 (120)
-	struct Unknown AnimGraphNode_Slot_4; // 0x580 (72)
-	struct Unknown AnimGraphNode_TwoWayBlend; // 0x5C8 (200)
-	struct Unknown AnimGraphNode_LayeredBoneBlend; // 0x690 (192)
-	struct Unknown AnimGraphNode_LocalRefPose_3; // 0x750 (24)
-	struct Unknown AnimGraphNode_Slot_3; // 0x768 (72)
-	struct Unknown AnimGraphNode_LocalRefPose_2; // 0x7B0 (24)
-	struct Unknown AnimGraphNode_Slot_2; // 0x7C8 (72)
-	struct Unknown AnimGraphNode_Slot; // 0x810 (72)
-	struct Unknown AnimGraphNode_LocalRefPose; // 0x858 (24)
-	struct Unknown AnimGraphNode_BlendListByBool; // 0x870 (160)
-
-	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-};
-
-// AnimBlueprintGeneratedClass AB.AB
-class UAB : public UBravoHotelAnimInstanceWeapon {
-
-public:
-
-	struct Unknown UberGraphFrame; // 0x330 (8)
-	struct Unknown AnimGraphNode_Root; // 0x338 (48)
-	struct Unknown AnimGraphNode_BlendListByEnum; // 0x368 (176)
-	struct Unknown AnimGraphNode_SequencePlayer_3; // 0x418 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_2; // 0x490 (120)
-	struct Unknown AnimGraphNode_SequencePlayer; // 0x508 (120)
-	struct Unknown AnimGraphNode_Slot_4; // 0x580 (72)
-	struct Unknown AnimGraphNode_TwoWayBlend; // 0x5C8 (200)
-	struct Unknown AnimGraphNode_LayeredBoneBlend; // 0x690 (192)
-	struct Unknown AnimGraphNode_LocalRefPose_3; // 0x750 (24)
-	struct Unknown AnimGraphNode_LocalRefPose_2; // 0x768 (24)
-	struct Unknown AnimGraphNode_Slot_3; // 0x780 (72)
-	struct Unknown AnimGraphNode_Slot_2; // 0x7C8 (72)
-	struct Unknown AnimGraphNode_Slot; // 0x810 (72)
-	struct Unknown AnimGraphNode_LocalRefPose; // 0x858 (24)
-	struct Unknown AnimGraphNode_BlendListByBool; // 0x870 (160)
-
-	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-};
-
-// AnimBlueprintGeneratedClass AB.AB
-class UAB : public UBravoHotelAnimInstanceWeapon {
-
-public:
-
-	struct Unknown UberGraphFrame; // 0x330 (8)
-	struct Unknown AnimGraphNode_Root; // 0x338 (48)
 	struct Unknown AnimGraphNode_Slot_3; // 0x368 (72)
 	struct Unknown AnimGraphNode_TwoWayBlend; // 0x3B0 (200)
 	struct Unknown AnimGraphNode_LocalRefPose_3; // 0x478 (24)
@@ -2982,46 +2984,14 @@ public:
 
 	struct Unknown UberGraphFrame; // 0x330 (8)
 	struct Unknown AnimGraphNode_Root; // 0x338 (48)
-	struct Unknown AnimGraphNode_BlendListByEnum; // 0x368 (176)
-	struct Unknown AnimGraphNode_SequencePlayer_3; // 0x418 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_2; // 0x490 (120)
-	struct Unknown AnimGraphNode_SequencePlayer; // 0x508 (120)
-	struct Unknown AnimGraphNode_Slot_4; // 0x580 (72)
-	struct Unknown AnimGraphNode_TwoWayBlend; // 0x5C8 (200)
-	struct Unknown AnimGraphNode_LayeredBoneBlend; // 0x690 (192)
-	struct Unknown AnimGraphNode_LocalRefPose_3; // 0x750 (24)
-	struct Unknown AnimGraphNode_Slot_3; // 0x768 (72)
-	struct Unknown AnimGraphNode_LocalRefPose_2; // 0x7B0 (24)
-	struct Unknown AnimGraphNode_Slot_2; // 0x7C8 (72)
-	struct Unknown AnimGraphNode_Slot; // 0x810 (72)
-	struct Unknown AnimGraphNode_LocalRefPose; // 0x858 (24)
-	struct Unknown AnimGraphNode_BlendListByBool; // 0x870 (160)
-
-	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-};
-
-// AnimBlueprintGeneratedClass AB.AB
-class UAB : public UBravoHotelAnimInstanceWeapon {
-
-public:
-
-	struct Unknown UberGraphFrame; // 0x330 (8)
-	struct Unknown AnimGraphNode_Root; // 0x338 (48)
-	struct Unknown AnimGraphNode_BlendListByEnum; // 0x368 (176)
-	struct Unknown AnimGraphNode_SequencePlayer_3; // 0x418 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_2; // 0x490 (120)
-	struct Unknown AnimGraphNode_SequencePlayer; // 0x508 (120)
-	struct Unknown AnimGraphNode_Slot_4; // 0x580 (72)
-	struct Unknown AnimGraphNode_TwoWayBlend; // 0x5C8 (200)
-	struct Unknown AnimGraphNode_LayeredBoneBlend; // 0x690 (192)
-	struct Unknown AnimGraphNode_LocalRefPose_3; // 0x750 (24)
-	struct Unknown AnimGraphNode_Slot_3; // 0x768 (72)
-	struct Unknown AnimGraphNode_LocalRefPose_2; // 0x7B0 (24)
-	struct Unknown AnimGraphNode_Slot_2; // 0x7C8 (72)
-	struct Unknown AnimGraphNode_Slot; // 0x810 (72)
-	struct Unknown AnimGraphNode_LocalRefPose; // 0x858 (24)
-	struct Unknown AnimGraphNode_BlendListByBool; // 0x870 (160)
+	struct Unknown AnimGraphNode_Slot_3; // 0x368 (72)
+	struct Unknown AnimGraphNode_TwoWayBlend; // 0x3B0 (200)
+	struct Unknown AnimGraphNode_LocalRefPose_3; // 0x478 (24)
+	struct Unknown AnimGraphNode_Slot_2; // 0x490 (72)
+	struct Unknown AnimGraphNode_LocalRefPose_2; // 0x4D8 (24)
+	struct Unknown AnimGraphNode_BlendListByBool; // 0x4F0 (160)
+	struct Unknown AnimGraphNode_Slot; // 0x590 (72)
+	struct Unknown AnimGraphNode_LocalRefPose; // 0x5D8 (24)
 
 	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
@@ -3053,88 +3023,127 @@ class UAB : public UBravoHotelAnimInstanceWeapon {
 public:
 
 	struct Unknown UberGraphFrame; // 0x330 (8)
-	struct Unknown AnimGraphNode_BlendListByEnum; // 0x338 (176)
-	struct Unknown AnimGraphNode_SequencePlayer_3; // 0x3E8 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_2; // 0x460 (120)
-	struct Unknown AnimGraphNode_SequencePlayer; // 0x4D8 (120)
-	struct Unknown AnimGraphNode_Slot_4; // 0x550 (72)
-	struct Unknown AnimGraphNode_TwoWayBlend; // 0x598 (200)
-	struct Unknown AnimGraphNode_LayeredBoneBlend; // 0x660 (192)
-	struct Unknown AnimGraphNode_LocalRefPose_3; // 0x720 (24)
-	struct Unknown AnimGraphNode_Root; // 0x738 (48)
+	struct Unknown AnimGraphNode_Root; // 0x338 (48)
+	struct Unknown AnimGraphNode_BlendListByEnum; // 0x368 (176)
+	struct Unknown AnimGraphNode_SequencePlayer_3; // 0x418 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_2; // 0x490 (120)
+	struct Unknown AnimGraphNode_SequencePlayer; // 0x508 (120)
+	struct Unknown AnimGraphNode_Slot_4; // 0x580 (72)
+	struct Unknown AnimGraphNode_Slot_3; // 0x5C8 (72)
+	struct Unknown AnimGraphNode_TwoWayBlend; // 0x610 (200)
+	struct Unknown AnimGraphNode_LayeredBoneBlend; // 0x6D8 (192)
+	struct Unknown AnimGraphNode_LocalRefPose_3; // 0x798 (24)
+	struct Unknown AnimGraphNode_LocalRefPose_2; // 0x7B0 (24)
+	struct Unknown AnimGraphNode_Slot_2; // 0x7C8 (72)
+	struct Unknown AnimGraphNode_Slot; // 0x810 (72)
+	struct Unknown AnimGraphNode_LocalRefPose; // 0x858 (24)
+	struct Unknown AnimGraphNode_BlendListByBool; // 0x870 (160)
+
+	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+};
+
+// AnimBlueprintGeneratedClass AB.AB
+class UAB : public UBravoHotelAnimInstanceWeapon {
+
+public:
+
+	struct Unknown UberGraphFrame; // 0x330 (8)
+	struct Unknown AnimGraphNode_Root; // 0x338 (48)
+	struct Unknown AnimGraphNode_BlendListByEnum; // 0x368 (176)
+	struct Unknown AnimGraphNode_SequencePlayer_3; // 0x418 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_2; // 0x490 (120)
+	struct Unknown AnimGraphNode_SequencePlayer; // 0x508 (120)
+	struct Unknown AnimGraphNode_Slot_4; // 0x580 (72)
+	struct Unknown AnimGraphNode_TwoWayBlend; // 0x5C8 (200)
+	struct Unknown AnimGraphNode_LayeredBoneBlend; // 0x690 (192)
+	struct Unknown AnimGraphNode_LocalRefPose_3; // 0x750 (24)
+	struct Unknown AnimGraphNode_Slot_3; // 0x768 (72)
+	struct Unknown AnimGraphNode_LocalRefPose_2; // 0x7B0 (24)
+	struct Unknown AnimGraphNode_Slot_2; // 0x7C8 (72)
+	struct Unknown AnimGraphNode_Slot; // 0x810 (72)
+	struct Unknown AnimGraphNode_LocalRefPose; // 0x858 (24)
+	struct Unknown AnimGraphNode_BlendListByBool; // 0x870 (160)
+
+	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+};
+
+// AnimBlueprintGeneratedClass AB.AB
+class UAB : public UBravoHotelAnimInstanceWeapon {
+
+public:
+
+	struct Unknown UberGraphFrame; // 0x330 (8)
+	struct Unknown AnimGraphNode_Root; // 0x338 (48)
+	struct Unknown AnimGraphNode_BlendListByEnum; // 0x368 (176)
+	struct Unknown AnimGraphNode_SequencePlayer_3; // 0x418 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_2; // 0x490 (120)
+	struct Unknown AnimGraphNode_SequencePlayer; // 0x508 (120)
+	struct Unknown AnimGraphNode_Slot_4; // 0x580 (72)
+	struct Unknown AnimGraphNode_TwoWayBlend; // 0x5C8 (200)
+	struct Unknown AnimGraphNode_LayeredBoneBlend; // 0x690 (192)
+	struct Unknown AnimGraphNode_LocalRefPose_3; // 0x750 (24)
+	struct Unknown AnimGraphNode_Slot_3; // 0x768 (72)
+	struct Unknown AnimGraphNode_LocalRefPose_2; // 0x7B0 (24)
+	struct Unknown AnimGraphNode_Slot_2; // 0x7C8 (72)
+	struct Unknown AnimGraphNode_Slot; // 0x810 (72)
+	struct Unknown AnimGraphNode_LocalRefPose; // 0x858 (24)
+	struct Unknown AnimGraphNode_BlendListByBool; // 0x870 (160)
+
+	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+};
+
+// AnimBlueprintGeneratedClass AB.AB
+class UAB : public UBravoHotelAnimInstanceWeapon {
+
+public:
+
+	struct Unknown UberGraphFrame; // 0x330 (8)
+	struct Unknown AnimGraphNode_Root; // 0x338 (48)
+	struct Unknown AnimGraphNode_BlendListByEnum; // 0x368 (176)
+	struct Unknown AnimGraphNode_SequencePlayer_3; // 0x418 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_2; // 0x490 (120)
+	struct Unknown AnimGraphNode_SequencePlayer; // 0x508 (120)
+	struct Unknown AnimGraphNode_Slot_4; // 0x580 (72)
+	struct Unknown AnimGraphNode_TwoWayBlend; // 0x5C8 (200)
+	struct Unknown AnimGraphNode_LayeredBoneBlend; // 0x690 (192)
+	struct Unknown AnimGraphNode_LocalRefPose_3; // 0x750 (24)
+	struct Unknown AnimGraphNode_Slot_3; // 0x768 (72)
+	struct Unknown AnimGraphNode_LocalRefPose_2; // 0x7B0 (24)
+	struct Unknown AnimGraphNode_Slot_2; // 0x7C8 (72)
+	struct Unknown AnimGraphNode_Slot; // 0x810 (72)
+	struct Unknown AnimGraphNode_LocalRefPose; // 0x858 (24)
+	struct Unknown AnimGraphNode_BlendListByBool; // 0x870 (160)
+
+	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+};
+
+// AnimBlueprintGeneratedClass AB.AB
+class UAB : public UBravoHotelAnimInstanceWeapon {
+
+public:
+
+	struct Unknown UberGraphFrame; // 0x330 (8)
+	struct Unknown AnimGraphNode_Root; // 0x338 (48)
+	struct Unknown AnimGraphNode_Slot_4; // 0x368 (72)
+	struct Unknown AnimGraphNode_BlendListByEnum; // 0x3B0 (176)
+	struct Unknown AnimGraphNode_SequencePlayer_3; // 0x460 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_2; // 0x4D8 (120)
+	struct Unknown AnimGraphNode_SequencePlayer; // 0x550 (120)
+	struct Unknown AnimGraphNode_TwoWayBlend; // 0x5C8 (200)
+	struct Unknown AnimGraphNode_LayeredBoneBlend; // 0x690 (192)
+	struct Unknown AnimGraphNode_LocalRefPose_3; // 0x750 (24)
 	struct Unknown AnimGraphNode_Slot_3; // 0x768 (72)
 	struct Unknown AnimGraphNode_Slot_2; // 0x7B0 (72)
 	struct Unknown AnimGraphNode_LocalRefPose_2; // 0x7F8 (24)
-	struct Unknown AnimGraphNode_LocalRefPose; // 0x810 (24)
-	struct Unknown AnimGraphNode_Slot; // 0x828 (72)
-	struct Unknown AnimGraphNode_BlendListByBool; // 0x870 (160)
+	struct Unknown AnimGraphNode_BlendListByBool; // 0x810 (160)
+	struct Unknown AnimGraphNode_Slot; // 0x8B0 (72)
+	struct Unknown AnimGraphNode_LocalRefPose; // 0x8F8 (24)
 
 	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-};
-
-// AnimBlueprintGeneratedClass AB.AB
-class UAB : public UBravoHotelVehicleAnimInstance {
-
-public:
-
-	struct Unknown UberGraphFrame; // 0xA20 (8)
-	struct Unknown AnimGraphNode_Root; // 0xA28 (48)
-	struct Unknown AnimGraphNode_TransitionResult_9; // 0xA58 (40)
-	struct Unknown AnimGraphNode_TransitionResult_8; // 0xA80 (40)
-	struct Unknown AnimGraphNode_TransitionResult_7; // 0xAA8 (40)
-	struct Unknown AnimGraphNode_TransitionResult_6; // 0xAD0 (40)
-	struct Unknown AnimGraphNode_TransitionResult_5; // 0xAF8 (40)
-	struct Unknown AnimGraphNode_TransitionResult_4; // 0xB20 (40)
-	struct Unknown AnimGraphNode_TransitionResult_3; // 0xB48 (40)
-	struct Unknown AnimGraphNode_TransitionResult_2; // 0xB70 (40)
-	struct Unknown AnimGraphNode_SequencePlayer_6; // 0xB98 (120)
-	struct Unknown AnimGraphNode_StateResult_5; // 0xC10 (48)
-	struct Unknown AnimGraphNode_SequencePlayer_5; // 0xC40 (120)
-	struct Unknown AnimGraphNode_StateResult_4; // 0xCB8 (48)
-	struct Unknown AnimGraphNode_SequencePlayer_4; // 0xCE8 (120)
-	struct Unknown AnimGraphNode_StateResult_3; // 0xD60 (48)
-	struct Unknown AnimGraphNode_TransitionResult; // 0xD90 (40)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace_4; // 0xDB8 (32)
-	struct Unknown AnimGraphNode_MeshRefPose_2; // 0xDD8 (16)
-	struct Unknown AnimGraphNode_BlendListByBool_2; // 0xDE8 (160)
-	struct Unknown AnimGraphNode_SequencePlayer_3; // 0xE88 (120)
-	struct Unknown AnimGraphNode_LayeredBoneBlend; // 0xF00 (192)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace_3; // 0xFC0 (32)
-	struct Unknown AnimGraphNode_LocalToComponentSpace_2; // 0xFE0 (32)
-	struct Unknown AnimGraphNode_ModifyBone_2; // 0x1000 (264)
-	struct Unknown AnimGraphNode_WheelHandler_2; // 0x1108 (224)
-	struct Unknown AnimGraphNode_SequencePlayer_2; // 0x11E8 (120)
-	struct Unknown AnimGraphNode_StateResult_2; // 0x1260 (48)
-	struct Unknown AnimGraphNode_CopyBone_12; // 0x1290 (240)
-	struct Unknown AnimGraphNode_CopyBone_11; // 0x1380 (240)
-	struct Unknown AnimGraphNode_CopyBone_10; // 0x1470 (240)
-	struct Unknown AnimGraphNode_CopyBone_9; // 0x1560 (240)
-	struct Unknown AnimGraphNode_CopyBone_8; // 0x1650 (240)
-	struct Unknown AnimGraphNode_CopyBone_7; // 0x1740 (240)
-	struct Unknown AnimGraphNode_CopyBone_6; // 0x1830 (240)
-	struct Unknown AnimGraphNode_CopyBone_5; // 0x1920 (240)
-	struct Unknown AnimGraphNode_CopyBone_4; // 0x1A10 (240)
-	struct Unknown AnimGraphNode_CopyBone_3; // 0x1B00 (240)
-	struct Unknown AnimGraphNode_CopyBone_2; // 0x1BF0 (240)
-	struct Unknown AnimGraphNode_CopyBone; // 0x1CE0 (240)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace_2; // 0x1DD0 (32)
-	struct Unknown AnimGraphNode_MeshRefPose; // 0x1DF0 (16)
-	struct Unknown AnimGraphNode_BlendListByBool; // 0x1E00 (160)
-	struct Unknown AnimGraphNode_AnimDynamics; // 0x1EA0 (1088)
-	struct Unknown AnimGraphNode_LocalToComponentSpace; // 0x22E0 (32)
-	struct Unknown AnimGraphNode_ModifyBone; // 0x2300 (264)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace; // 0x2408 (32)
-	struct Unknown AnimGraphNode_WheelHandler; // 0x2428 (224)
-	struct Unknown AnimGraphNode_SequencePlayer; // 0x2508 (120)
-	struct Unknown AnimGraphNode_StateResult; // 0x2580 (48)
-	struct Unknown AnimGraphNode_StateMachine; // 0x25B0 (176)
-	char bIsAmphibiousMode : 0; // 0x2660 (1)
-
-	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void BlueprintUpdateAnimation(float DeltaTimeX); // Function AB.AB.BlueprintUpdateAnimation(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 };
 
@@ -3176,183 +3185,69 @@ class UAB : public UBravoHotelVehicleAnimInstance {
 public:
 
 	struct Unknown UberGraphFrame; // 0xA20 (8)
-	struct Unknown AnimGraphNode_LookAt_6; // 0xA30 (432)
-	struct Unknown AnimGraphNode_CopyBone_12; // 0xBE0 (240)
-	struct Unknown AnimGraphNode_LookAt_5; // 0xCD0 (432)
-	struct Unknown AnimGraphNode_CopyBone_11; // 0xE80 (240)
-	struct Unknown AnimGraphNode_LookAt_4; // 0xF70 (432)
-	struct Unknown AnimGraphNode_CopyBone_10; // 0x1120 (240)
-	struct Unknown AnimGraphNode_CopyBone_9; // 0x1210 (240)
-	struct Unknown AnimGraphNode_LookAt_3; // 0x1300 (432)
-	struct Unknown AnimGraphNode_CopyBone_8; // 0x14B0 (240)
-	struct Unknown AnimGraphNode_CopyBone_7; // 0x15A0 (240)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace_3; // 0x1690 (32)
-	struct Unknown AnimGraphNode_MeshRefPose_2; // 0x16B0 (16)
-	struct Unknown AnimGraphNode_BlendListByBool_2; // 0x16C0 (160)
-	struct Unknown AnimGraphNode_CopyBone_6; // 0x1760 (240)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace_2; // 0x1850 (32)
-	struct Unknown AnimGraphNode_CopyBone_5; // 0x1870 (240)
-	struct Unknown AnimGraphNode_Root; // 0x1960 (48)
-	struct Unknown AnimGraphNode_CopyBone_4; // 0x1990 (240)
-	struct Unknown AnimGraphNode_CopyBone_3; // 0x1A80 (240)
-	struct Unknown AnimGraphNode_CopyBone_2; // 0x1B70 (240)
-	struct Unknown AnimGraphNode_CopyBone; // 0x1C60 (240)
-	struct Unknown AnimGraphNode_RotationMultiplier_2; // 0x1D50 (240)
-	struct Unknown AnimGraphNode_LookAt_2; // 0x1E40 (432)
-	struct Unknown AnimGraphNode_RotationMultiplier; // 0x1FF0 (240)
-	struct Unknown AnimGraphNode_LookAt; // 0x20E0 (432)
-	struct Unknown AnimGraphNode_TransitionResult_12; // 0x2290 (40)
-	struct Unknown AnimGraphNode_TransitionResult_11; // 0x22B8 (40)
-	struct Unknown AnimGraphNode_TransitionResult_10; // 0x22E0 (40)
-	struct Unknown AnimGraphNode_TransitionResult_9; // 0x2308 (40)
-	struct Unknown AnimGraphNode_TransitionResult_8; // 0x2330 (40)
-	struct Unknown AnimGraphNode_TransitionResult_7; // 0x2358 (40)
-	struct Unknown AnimGraphNode_SequencePlayer_6; // 0x2380 (120)
-	struct Unknown AnimGraphNode_StateResult_6; // 0x23F8 (48)
-	struct Unknown AnimGraphNode_SequencePlayer_5; // 0x2428 (120)
-	struct Unknown AnimGraphNode_StateResult_5; // 0x24A0 (48)
-	struct Unknown AnimGraphNode_SequencePlayer_4; // 0x24D0 (120)
-	struct Unknown AnimGraphNode_StateResult_4; // 0x2548 (48)
-	struct Unknown AnimGraphNode_StateMachine_2; // 0x2578 (176)
-	struct Unknown AnimGraphNode_LocalToComponentSpace; // 0x2628 (32)
-	struct Unknown AnimGraphNode_SaveCachedPose_2; // 0x2648 (184)
-	struct Unknown AnimGraphNode_TransitionResult_6; // 0x2700 (40)
-	struct Unknown AnimGraphNode_TransitionResult_5; // 0x2728 (40)
-	struct Unknown AnimGraphNode_TransitionResult_4; // 0x2750 (40)
-	struct Unknown AnimGraphNode_TransitionResult_3; // 0x2778 (40)
-	struct Unknown AnimGraphNode_TransitionResult_2; // 0x27A0 (40)
-	struct Unknown AnimGraphNode_TransitionResult; // 0x27C8 (40)
-	struct Unknown AnimGraphNode_SequencePlayer_3; // 0x27F0 (120)
-	struct Unknown AnimGraphNode_StateResult_3; // 0x2868 (48)
-	struct Unknown AnimGraphNode_SequencePlayer_2; // 0x2898 (120)
-	struct Unknown AnimGraphNode_StateResult_2; // 0x2910 (48)
-	struct Unknown AnimGraphNode_SequencePlayer; // 0x2940 (120)
-	struct Unknown AnimGraphNode_StateResult; // 0x29B8 (48)
-	struct Unknown AnimGraphNode_StateMachine; // 0x29E8 (176)
-	struct Unknown AnimGraphNode_SaveCachedPose; // 0x2A98 (184)
-	struct Unknown AnimGraphNode_LayeredBoneBlend_2; // 0x2B50 (192)
-	struct Unknown AnimGraphNode_UseCachedPose_4; // 0x2C10 (40)
-	struct Unknown AnimGraphNode_BlendListByBool; // 0x2C38 (160)
-	struct Unknown AnimGraphNode_TwoWayBlend; // 0x2CD8 (200)
-	struct Unknown AnimGraphNode_UseCachedPose_3; // 0x2DA0 (40)
-	struct Unknown AnimGraphNode_UseCachedPose_2; // 0x2DC8 (40)
-	struct Unknown AnimGraphNode_UseCachedPose; // 0x2DF0 (40)
-	struct Unknown AnimGraphNode_WheelHandler; // 0x2E18 (224)
-	struct Unknown AnimGraphNode_MeshRefPose; // 0x2EF8 (16)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace; // 0x2F08 (32)
-	struct Unknown AnimGraphNode_LayeredBoneBlend; // 0x2F28 (192)
-
-	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void BlueprintUpdateAnimation(float DeltaTimeX); // Function AB.AB.BlueprintUpdateAnimation(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void AnimNotify_FPP_Entered_Idle(); // Function AB.AB.AnimNotify_FPP_Entered_Idle(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void AnimNotify_FPP_Left_Idle(); // Function AB.AB.AnimNotify_FPP_Left_Idle(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-};
-
-// AnimBlueprintGeneratedClass AB.AB
-class UAB : public UBravoHotelVehicleAnimInstance {
-
-public:
-
-	struct Unknown UberGraphFrame; // 0xA20 (8)
-	struct Unknown AnimGraphNode_Root; // 0xA28 (48)
-	struct Unknown AnimGraphNode_MeshRefPose_2; // 0xA58 (16)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace_2; // 0xA68 (32)
-	struct Unknown AnimGraphNode_ModifyBone; // 0xA88 (264)
-	struct Unknown AnimGraphNode_BlendListByBool; // 0xB90 (160)
-	struct Unknown AnimGraphNode_MeshRefPose; // 0xC30 (16)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace; // 0xC40 (32)
-
-	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void BlueprintUpdateAnimation(float DeltaTimeX); // Function AB.AB.BlueprintUpdateAnimation(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-};
-
-// AnimBlueprintGeneratedClass AB.AB
-class UAB : public UBravoHotelVehicleAnimInstance {
-
-public:
-
-	struct Unknown UberGraphFrame; // 0xA20 (8)
 	struct Unknown AnimGraphNode_ComponentToLocalSpace_3; // 0xA28 (32)
-	struct Unknown AnimGraphNode_CopyBone_14; // 0xA48 (240)
-	struct Unknown AnimGraphNode_LookAt_6; // 0xB40 (432)
-	struct Unknown AnimGraphNode_CopyBone_13; // 0xCF0 (240)
-	struct Unknown AnimGraphNode_MeshRefPose_2; // 0xDE0 (16)
-	struct Unknown AnimGraphNode_CopyBone_12; // 0xDF0 (240)
-	struct Unknown AnimGraphNode_LookAt_5; // 0xEE0 (432)
-	struct Unknown AnimGraphNode_CopyBone_11; // 0x1090 (240)
+	struct Unknown AnimGraphNode_CopyBone_12; // 0xA48 (240)
+	struct Unknown AnimGraphNode_LookAt_4; // 0xB40 (432)
+	struct Unknown AnimGraphNode_CopyBone_11; // 0xCF0 (240)
+	struct Unknown AnimGraphNode_LookAt_3; // 0xDE0 (432)
+	struct Unknown AnimGraphNode_CopyBone_10; // 0xF90 (240)
+	struct Unknown AnimGraphNode_MeshRefPose_2; // 0x1080 (16)
+	struct Unknown AnimGraphNode_CopyBone_9; // 0x1090 (240)
 	struct Unknown AnimGraphNode_BlendListByBool_2; // 0x1180 (160)
-	struct Unknown AnimGraphNode_CopyBone_10; // 0x1220 (240)
-	struct Unknown AnimGraphNode_LookAt_4; // 0x1310 (432)
-	struct Unknown AnimGraphNode_CopyBone_9; // 0x14C0 (240)
-	struct Unknown AnimGraphNode_CopyBone_8; // 0x15B0 (240)
-	struct Unknown AnimGraphNode_LookAt_3; // 0x16A0 (432)
-	struct Unknown AnimGraphNode_CopyBone_7; // 0x1850 (240)
-	struct Unknown AnimGraphNode_CopyBone_6; // 0x1940 (240)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace_2; // 0x1A30 (32)
-	struct Unknown AnimGraphNode_CopyBone_5; // 0x1A50 (240)
-	struct Unknown AnimGraphNode_Root; // 0x1B40 (48)
-	struct Unknown AnimGraphNode_CopyBone_4; // 0x1B70 (240)
-	struct Unknown AnimGraphNode_CopyBone_3; // 0x1C60 (240)
-	struct Unknown AnimGraphNode_CopyBone_2; // 0x1D50 (240)
-	struct Unknown AnimGraphNode_CopyBone; // 0x1E40 (240)
-	struct Unknown AnimGraphNode_RotationMultiplier_2; // 0x1F30 (240)
-	struct Unknown AnimGraphNode_LookAt_2; // 0x2020 (432)
-	struct Unknown AnimGraphNode_RotationMultiplier; // 0x21D0 (240)
-	struct Unknown AnimGraphNode_LookAt; // 0x22C0 (432)
-	struct Unknown AnimGraphNode_TransitionResult_12; // 0x2470 (40)
-	struct Unknown AnimGraphNode_TransitionResult_11; // 0x2498 (40)
-	struct Unknown AnimGraphNode_TransitionResult_10; // 0x24C0 (40)
-	struct Unknown AnimGraphNode_TransitionResult_9; // 0x24E8 (40)
-	struct Unknown AnimGraphNode_TransitionResult_8; // 0x2510 (40)
-	struct Unknown AnimGraphNode_TransitionResult_7; // 0x2538 (40)
-	struct Unknown AnimGraphNode_SequencePlayer_6; // 0x2560 (120)
-	struct Unknown AnimGraphNode_StateResult_6; // 0x25D8 (48)
-	struct Unknown AnimGraphNode_SequencePlayer_5; // 0x2608 (120)
-	struct Unknown AnimGraphNode_StateResult_5; // 0x2680 (48)
-	struct Unknown AnimGraphNode_SequencePlayer_4; // 0x26B0 (120)
-	struct Unknown AnimGraphNode_StateResult_4; // 0x2728 (48)
-	struct Unknown AnimGraphNode_StateMachine_2; // 0x2758 (176)
-	struct Unknown AnimGraphNode_SaveCachedPose_2; // 0x2808 (184)
-	struct Unknown AnimGraphNode_LocalToComponentSpace; // 0x28C0 (32)
-	struct Unknown AnimGraphNode_TransitionResult_6; // 0x28E0 (40)
-	struct Unknown AnimGraphNode_TransitionResult_5; // 0x2908 (40)
-	struct Unknown AnimGraphNode_TransitionResult_4; // 0x2930 (40)
-	struct Unknown AnimGraphNode_TransitionResult_3; // 0x2958 (40)
-	struct Unknown AnimGraphNode_TransitionResult_2; // 0x2980 (40)
-	struct Unknown AnimGraphNode_TransitionResult; // 0x29A8 (40)
-	struct Unknown AnimGraphNode_SequencePlayer_3; // 0x29D0 (120)
-	struct Unknown AnimGraphNode_StateResult_3; // 0x2A48 (48)
-	struct Unknown AnimGraphNode_SequencePlayer_2; // 0x2A78 (120)
-	struct Unknown AnimGraphNode_StateResult_2; // 0x2AF0 (48)
-	struct Unknown AnimGraphNode_SequencePlayer; // 0x2B20 (120)
-	struct Unknown AnimGraphNode_StateResult; // 0x2B98 (48)
-	struct Unknown AnimGraphNode_StateMachine; // 0x2BC8 (176)
-	struct Unknown AnimGraphNode_SaveCachedPose; // 0x2C78 (184)
-	struct Unknown AnimGraphNode_LayeredBoneBlend_2; // 0x2D30 (192)
-	struct Unknown AnimGraphNode_UseCachedPose_4; // 0x2DF0 (40)
-	struct Unknown AnimGraphNode_BlendListByBool; // 0x2E18 (160)
-	struct Unknown AnimGraphNode_TwoWayBlend; // 0x2EB8 (200)
-	struct Unknown AnimGraphNode_UseCachedPose_3; // 0x2F80 (40)
-	struct Unknown AnimGraphNode_UseCachedPose_2; // 0x2FA8 (40)
-	struct Unknown AnimGraphNode_UseCachedPose; // 0x2FD0 (40)
-	struct Unknown AnimGraphNode_WheelHandler; // 0x2FF8 (224)
-	struct Unknown AnimGraphNode_MeshRefPose; // 0x30D8 (16)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace; // 0x30E8 (32)
-	struct Unknown AnimGraphNode_LayeredBoneBlend; // 0x3108 (192)
+	struct Unknown AnimGraphNode_CopyBone_8; // 0x1220 (240)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace_2; // 0x1310 (32)
+	struct Unknown AnimGraphNode_CopyBone_7; // 0x1330 (240)
+	struct Unknown AnimGraphNode_Root; // 0x1420 (48)
+	struct Unknown AnimGraphNode_CopyBone_6; // 0x1450 (240)
+	struct Unknown AnimGraphNode_CopyBone_5; // 0x1540 (240)
+	struct Unknown AnimGraphNode_CopyBone_4; // 0x1630 (240)
+	struct Unknown AnimGraphNode_CopyBone_3; // 0x1720 (240)
+	struct Unknown AnimGraphNode_CopyBone_2; // 0x1810 (240)
+	struct Unknown AnimGraphNode_CopyBone; // 0x1900 (240)
+	struct Unknown AnimGraphNode_RotationMultiplier_2; // 0x19F0 (240)
+	struct Unknown AnimGraphNode_LookAt_2; // 0x1AE0 (432)
+	struct Unknown AnimGraphNode_RotationMultiplier; // 0x1C90 (240)
+	struct Unknown AnimGraphNode_LookAt; // 0x1D80 (432)
+	struct Unknown AnimGraphNode_TransitionResult_12; // 0x1F30 (40)
+	struct Unknown AnimGraphNode_TransitionResult_11; // 0x1F58 (40)
+	struct Unknown AnimGraphNode_TransitionResult_10; // 0x1F80 (40)
+	struct Unknown AnimGraphNode_TransitionResult_9; // 0x1FA8 (40)
+	struct Unknown AnimGraphNode_TransitionResult_8; // 0x1FD0 (40)
+	struct Unknown AnimGraphNode_TransitionResult_7; // 0x1FF8 (40)
+	struct Unknown AnimGraphNode_SequencePlayer_6; // 0x2020 (120)
+	struct Unknown AnimGraphNode_StateResult_6; // 0x2098 (48)
+	struct Unknown AnimGraphNode_SequencePlayer_5; // 0x20C8 (120)
+	struct Unknown AnimGraphNode_StateResult_5; // 0x2140 (48)
+	struct Unknown AnimGraphNode_SequencePlayer_4; // 0x2170 (120)
+	struct Unknown AnimGraphNode_StateResult_4; // 0x21E8 (48)
+	struct Unknown AnimGraphNode_StateMachine_2; // 0x2218 (176)
+	struct Unknown AnimGraphNode_SaveCachedPose_2; // 0x22C8 (184)
+	struct Unknown AnimGraphNode_LocalToComponentSpace; // 0x2380 (32)
+	struct Unknown AnimGraphNode_LayeredBoneBlend_2; // 0x23A0 (192)
+	struct Unknown AnimGraphNode_UseCachedPose_4; // 0x2460 (40)
+	struct Unknown AnimGraphNode_TransitionResult_6; // 0x2488 (40)
+	struct Unknown AnimGraphNode_TransitionResult_5; // 0x24B0 (40)
+	struct Unknown AnimGraphNode_TransitionResult_4; // 0x24D8 (40)
+	struct Unknown AnimGraphNode_TransitionResult_3; // 0x2500 (40)
+	struct Unknown AnimGraphNode_TransitionResult_2; // 0x2528 (40)
+	struct Unknown AnimGraphNode_TransitionResult; // 0x2550 (40)
+	struct Unknown AnimGraphNode_SequencePlayer_3; // 0x2578 (120)
+	struct Unknown AnimGraphNode_StateResult_3; // 0x25F0 (48)
+	struct Unknown AnimGraphNode_SequencePlayer_2; // 0x2620 (120)
+	struct Unknown AnimGraphNode_StateResult_2; // 0x2698 (48)
+	struct Unknown AnimGraphNode_SequencePlayer; // 0x26C8 (120)
+	struct Unknown AnimGraphNode_StateResult; // 0x2740 (48)
+	struct Unknown AnimGraphNode_StateMachine; // 0x2770 (176)
+	struct Unknown AnimGraphNode_BlendListByBool; // 0x2820 (160)
+	struct Unknown AnimGraphNode_TwoWayBlend; // 0x28C0 (200)
+	struct Unknown AnimGraphNode_SaveCachedPose; // 0x2988 (184)
+	struct Unknown AnimGraphNode_UseCachedPose_3; // 0x2A40 (40)
+	struct Unknown AnimGraphNode_UseCachedPose_2; // 0x2A68 (40)
+	struct Unknown AnimGraphNode_UseCachedPose; // 0x2A90 (40)
+	struct Unknown AnimGraphNode_WheelHandler; // 0x2AB8 (224)
+	struct Unknown AnimGraphNode_MeshRefPose; // 0x2B98 (16)
+	struct Unknown AnimGraphNode_ComponentToLocalSpace; // 0x2BA8 (32)
+	struct Unknown AnimGraphNode_LayeredBoneBlend; // 0x2BC8 (192)
 
 	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_AB(); // Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
@@ -3373,34 +3268,3568 @@ public:
 	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 };
 
-// AnimBlueprintGeneratedClass AB.AB
-class UAB : public UBravoHotelVehicleAnimInstance {
+// Function AB.AB.AnimGraph
+inline void UAB::AnimGraph(struct Unknown& AnimGraph) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimGraph");
 
-public:
+	struct AnimGraph_Params {
+		struct Unknown& AnimGraph;
+	}; AnimGraph_Params Params;
 
-	struct Unknown UberGraphFrame; // 0xA20 (8)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace_2; // 0xA28 (32)
-	struct Unknown AnimGraphNode_MeshRefPose_2; // 0xA48 (16)
-	struct Unknown AnimGraphNode_MeshRefPose; // 0xA58 (16)
-	struct Unknown AnimGraphNode_WheelHandler; // 0xA68 (224)
-	struct Unknown AnimGraphNode_ComponentToLocalSpace; // 0xB48 (32)
-	struct Unknown AnimGraphNode_ModifyBone_2; // 0xB68 (264)
-	struct Unknown AnimGraphNode_BlendListByBool; // 0xC70 (160)
-	struct Unknown AnimGraphNode_Root; // 0xD10 (48)
-	struct Unknown AnimGraphNode_RotationMultiplier_3; // 0xD40 (240)
-	struct Unknown AnimGraphNode_RotationMultiplier_2; // 0xE30 (240)
-	struct Unknown AnimGraphNode_BoneDrivenController_4; // 0xF20 (280)
-	struct Unknown AnimGraphNode_CopyBone; // 0x1038 (240)
-	struct Unknown AnimGraphNode_RotationMultiplier; // 0x1128 (240)
-	struct Unknown AnimGraphNode_BoneDrivenController_3; // 0x1218 (280)
-	struct Unknown AnimGraphNode_BoneDrivenController_2; // 0x1330 (280)
-	struct Unknown AnimGraphNode_BoneDrivenController; // 0x1448 (280)
-	struct Unknown AnimGraphNode_ModifyBone; // 0x1560 (264)
-	struct Unknown C; // 0x1668 (8)
-	struct Unknown RotateCenterValue; // 0x1670 (12)
 
-	void AnimGraph(struct Unknown& AnimGraph); // Function AB.AB.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void BlueprintUpdateAnimation(float DeltaTimeX); // Function AB.AB.BlueprintUpdateAnimation(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function AB.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-};
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	AnimGraph = Params.AnimGraph;
+
+}
+
+// Function AB.AB.ExecuteUbergraph_AB
+inline void UAB::ExecuteUbergraph_AB(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.ExecuteUbergraph_AB");
+
+	struct ExecuteUbergraph_AB_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_AB_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimGraph
+inline void UAB::AnimGraph(struct Unknown& AnimGraph) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimGraph");
+
+	struct AnimGraph_Params {
+		struct Unknown& AnimGraph;
+	}; AnimGraph_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	AnimGraph = Params.AnimGraph;
+
+}
+
+// Function AB.AB.ExecuteUbergraph_AB
+inline void UAB::ExecuteUbergraph_AB(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.ExecuteUbergraph_AB");
+
+	struct ExecuteUbergraph_AB_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_AB_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimGraph
+inline void UAB::AnimGraph(struct Unknown& AnimGraph) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimGraph");
+
+	struct AnimGraph_Params {
+		struct Unknown& AnimGraph;
+	}; AnimGraph_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	AnimGraph = Params.AnimGraph;
+
+}
+
+// Function AB.AB.ExecuteUbergraph_AB
+inline void UAB::ExecuteUbergraph_AB(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.ExecuteUbergraph_AB");
+
+	struct ExecuteUbergraph_AB_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_AB_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimGraph
+inline void UAB::AnimGraph(struct Unknown& AnimGraph) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimGraph");
+
+	struct AnimGraph_Params {
+		struct Unknown& AnimGraph;
+	}; AnimGraph_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	AnimGraph = Params.AnimGraph;
+
+}
+
+// Function AB.AB.ExecuteUbergraph_AB
+inline void UAB::ExecuteUbergraph_AB(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.ExecuteUbergraph_AB");
+
+	struct ExecuteUbergraph_AB_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_AB_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimGraph
+inline void UAB::AnimGraph(struct Unknown& AnimGraph) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimGraph");
+
+	struct AnimGraph_Params {
+		struct Unknown& AnimGraph;
+	}; AnimGraph_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	AnimGraph = Params.AnimGraph;
+
+}
+
+// Function AB.AB.BlueprintUpdateAnimation
+inline void UAB::BlueprintUpdateAnimation(float DeltaTimeX) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.BlueprintUpdateAnimation");
+
+	struct BlueprintUpdateAnimation_Params {
+		float DeltaTimeX;
+	}; BlueprintUpdateAnimation_Params Params;
+
+	Params.DeltaTimeX = DeltaTimeX;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.ExecuteUbergraph_AB
+inline void UAB::ExecuteUbergraph_AB(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.ExecuteUbergraph_AB");
+
+	struct ExecuteUbergraph_AB_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_AB_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimGraph
+inline void UAB::AnimGraph(struct Unknown& AnimGraph) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimGraph");
+
+	struct AnimGraph_Params {
+		struct Unknown& AnimGraph;
+	}; AnimGraph_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	AnimGraph = Params.AnimGraph;
+
+}
+
+// Function AB.AB.ExecuteUbergraph_AB
+inline void UAB::ExecuteUbergraph_AB(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.ExecuteUbergraph_AB");
+
+	struct ExecuteUbergraph_AB_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_AB_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimGraph
+inline void UAB::AnimGraph(struct Unknown& AnimGraph) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimGraph");
+
+	struct AnimGraph_Params {
+		struct Unknown& AnimGraph;
+	}; AnimGraph_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	AnimGraph = Params.AnimGraph;
+
+}
+
+// Function AB.AB.ExecuteUbergraph_AB
+inline void UAB::ExecuteUbergraph_AB(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.ExecuteUbergraph_AB");
+
+	struct ExecuteUbergraph_AB_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_AB_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimGraph
+inline void UAB::AnimGraph(struct Unknown& AnimGraph) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimGraph");
+
+	struct AnimGraph_Params {
+		struct Unknown& AnimGraph;
+	}; AnimGraph_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	AnimGraph = Params.AnimGraph;
+
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.BlueprintUpdateAnimation
+inline void UAB::BlueprintUpdateAnimation(float DeltaTimeX) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.BlueprintUpdateAnimation");
+
+	struct BlueprintUpdateAnimation_Params {
+		float DeltaTimeX;
+	}; BlueprintUpdateAnimation_Params Params;
+
+	Params.DeltaTimeX = DeltaTimeX;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimNotify_FPP_Entered_Idle
+inline void UAB::AnimNotify_FPP_Entered_Idle() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimNotify_FPP_Entered_Idle");
+
+	struct AnimNotify_FPP_Entered_Idle_Params {
+		
+	}; AnimNotify_FPP_Entered_Idle_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimNotify_FPP_Left_Idle
+inline void UAB::AnimNotify_FPP_Left_Idle() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimNotify_FPP_Left_Idle");
+
+	struct AnimNotify_FPP_Left_Idle_Params {
+		
+	}; AnimNotify_FPP_Left_Idle_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.ExecuteUbergraph_AB
+inline void UAB::ExecuteUbergraph_AB(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.ExecuteUbergraph_AB");
+
+	struct ExecuteUbergraph_AB_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_AB_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimGraph
+inline void UAB::AnimGraph(struct Unknown& AnimGraph) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimGraph");
+
+	struct AnimGraph_Params {
+		struct Unknown& AnimGraph;
+	}; AnimGraph_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	AnimGraph = Params.AnimGraph;
+
+}
+
+// Function AB.AB.UpdateAnimDynamicsAlpha
+inline void UAB::UpdateAnimDynamicsAlpha() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.UpdateAnimDynamicsAlpha");
+
+	struct UpdateAnimDynamicsAlpha_Params {
+		
+	}; UpdateAnimDynamicsAlpha_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.IsNeedToApplyLeftHandIK
+inline char UAB::IsNeedToApplyLeftHandIK() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.IsNeedToApplyLeftHandIK");
+
+	struct IsNeedToApplyLeftHandIK_Params {
+		
+		char ReturnValue;
+
+	}; IsNeedToApplyLeftHandIK_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AB.AB.BlueprintUpdateAnimation
+inline void UAB::BlueprintUpdateAnimation(float DeltaTimeX) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.BlueprintUpdateAnimation");
+
+	struct BlueprintUpdateAnimation_Params {
+		float DeltaTimeX;
+	}; BlueprintUpdateAnimation_Params Params;
+
+	Params.DeltaTimeX = DeltaTimeX;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.ExecuteUbergraph_AB
+inline void UAB::ExecuteUbergraph_AB(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.ExecuteUbergraph_AB");
+
+	struct ExecuteUbergraph_AB_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_AB_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimGraph
+inline void UAB::AnimGraph(struct Unknown& AnimGraph) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimGraph");
+
+	struct AnimGraph_Params {
+		struct Unknown& AnimGraph;
+	}; AnimGraph_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	AnimGraph = Params.AnimGraph;
+
+}
+
+// Function AB.AB.ExecuteUbergraph_AB
+inline void UAB::ExecuteUbergraph_AB(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.ExecuteUbergraph_AB");
+
+	struct ExecuteUbergraph_AB_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_AB_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimGraph
+inline void UAB::AnimGraph(struct Unknown& AnimGraph) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimGraph");
+
+	struct AnimGraph_Params {
+		struct Unknown& AnimGraph;
+	}; AnimGraph_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	AnimGraph = Params.AnimGraph;
+
+}
+
+// Function AB.AB.ChooseStoppingAnim
+inline void UAB::ChooseStoppingAnim(struct Unknown& StoppingAnim) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.ChooseStoppingAnim");
+
+	struct ChooseStoppingAnim_Params {
+		struct Unknown& StoppingAnim;
+	}; ChooseStoppingAnim_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	StoppingAnim = Params.StoppingAnim;
+
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimNotify_LeftResuscitated
+inline void UAB::AnimNotify_LeftResuscitated() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimNotify_LeftResuscitated");
+
+	struct AnimNotify_LeftResuscitated_Params {
+		
+	}; AnimNotify_LeftResuscitated_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimNotify_AnimNotify_EnteredSprintReady
+inline void UAB::AnimNotify_AnimNotify_EnteredSprintReady() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimNotify_AnimNotify_EnteredSprintReady");
+
+	struct AnimNotify_AnimNotify_EnteredSprintReady_Params {
+		
+	}; AnimNotify_AnimNotify_EnteredSprintReady_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimNotify_LeftSprintStopState
+inline void UAB::AnimNotify_LeftSprintStopState() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimNotify_LeftSprintStopState");
+
+	struct AnimNotify_LeftSprintStopState_Params {
+		
+	}; AnimNotify_LeftSprintStopState_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimNotify_EnterSprintStopState
+inline void UAB::AnimNotify_EnterSprintStopState() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimNotify_EnterSprintStopState");
+
+	struct AnimNotify_EnterSprintStopState_Params {
+		
+	}; AnimNotify_EnterSprintStopState_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimNotify_LeftLandState
+inline void UAB::AnimNotify_LeftLandState() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimNotify_LeftLandState");
+
+	struct AnimNotify_LeftLandState_Params {
+		
+	}; AnimNotify_LeftLandState_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimNotify_EnterFallingState
+inline void UAB::AnimNotify_EnterFallingState() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimNotify_EnterFallingState");
+
+	struct AnimNotify_EnterFallingState_Params {
+		
+	}; AnimNotify_EnterFallingState_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimNotify_StopAdditiveLand
+inline void UAB::AnimNotify_StopAdditiveLand() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimNotify_StopAdditiveLand");
+
+	struct AnimNotify_StopAdditiveLand_Params {
+		
+	}; AnimNotify_StopAdditiveLand_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimNotify_SwimLeft
+inline void UAB::AnimNotify_SwimLeft() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimNotify_SwimLeft");
+
+	struct AnimNotify_SwimLeft_Params {
+		
+	}; AnimNotify_SwimLeft_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimNotify_SwimEnter
+inline void UAB::AnimNotify_SwimEnter() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimNotify_SwimEnter");
+
+	struct AnimNotify_SwimEnter_Params {
+		
+	}; AnimNotify_SwimEnter_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimNotify_ChangeGroundedState
+inline void UAB::AnimNotify_ChangeGroundedState() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimNotify_ChangeGroundedState");
+
+	struct AnimNotify_ChangeGroundedState_Params {
+		
+	}; AnimNotify_ChangeGroundedState_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimNotify_LeftIdleState
+inline void UAB::AnimNotify_LeftIdleState() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimNotify_LeftIdleState");
+
+	struct AnimNotify_LeftIdleState_Params {
+		
+	}; AnimNotify_LeftIdleState_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimNotify_EnteredIdleState
+inline void UAB::AnimNotify_EnteredIdleState() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimNotify_EnteredIdleState");
+
+	struct AnimNotify_EnteredIdleState_Params {
+		
+	}; AnimNotify_EnteredIdleState_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimNotify_LeftGroundedState
+inline void UAB::AnimNotify_LeftGroundedState() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimNotify_LeftGroundedState");
+
+	struct AnimNotify_LeftGroundedState_Params {
+		
+	}; AnimNotify_LeftGroundedState_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimNotify_EnterdGroundedState
+inline void UAB::AnimNotify_EnterdGroundedState() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimNotify_EnterdGroundedState");
+
+	struct AnimNotify_EnterdGroundedState_Params {
+		
+	}; AnimNotify_EnterdGroundedState_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimNotify_Stopping
+inline void UAB::AnimNotify_Stopping() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimNotify_Stopping");
+
+	struct AnimNotify_Stopping_Params {
+		
+	}; AnimNotify_Stopping_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimNotify_Falling
+inline void UAB::AnimNotify_Falling() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimNotify_Falling");
+
+	struct AnimNotify_Falling_Params {
+		
+	}; AnimNotify_Falling_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimNotify_Footstep_R
+inline void UAB::AnimNotify_Footstep_R() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimNotify_Footstep_R");
+
+	struct AnimNotify_Footstep_R_Params {
+		
+	}; AnimNotify_Footstep_R_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimNotify_Footstep_L
+inline void UAB::AnimNotify_Footstep_L() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimNotify_Footstep_L");
+
+	struct AnimNotify_Footstep_L_Params {
+		
+	}; AnimNotify_Footstep_L_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.ChooseFallingAnimParam
+inline void UAB::ChooseFallingAnimParam() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.ChooseFallingAnimParam");
+
+	struct ChooseFallingAnimParam_Params {
+		
+	}; ChooseFallingAnimParam_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.ExecuteUbergraph_AB
+inline void UAB::ExecuteUbergraph_AB(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.ExecuteUbergraph_AB");
+
+	struct ExecuteUbergraph_AB_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_AB_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimGraph
+inline void UAB::AnimGraph(struct Unknown& AnimGraph) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimGraph");
+
+	struct AnimGraph_Params {
+		struct Unknown& AnimGraph;
+	}; AnimGraph_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	AnimGraph = Params.AnimGraph;
+
+}
+
+// Function AB.AB.ExecuteUbergraph_AB
+inline void UAB::ExecuteUbergraph_AB(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.ExecuteUbergraph_AB");
+
+	struct ExecuteUbergraph_AB_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_AB_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimGraph
+inline void UAB::AnimGraph(struct Unknown& AnimGraph) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimGraph");
+
+	struct AnimGraph_Params {
+		struct Unknown& AnimGraph;
+	}; AnimGraph_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	AnimGraph = Params.AnimGraph;
+
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.BlueprintUpdateAnimation
+inline void UAB::BlueprintUpdateAnimation(float DeltaTimeX) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.BlueprintUpdateAnimation");
+
+	struct BlueprintUpdateAnimation_Params {
+		float DeltaTimeX;
+	}; BlueprintUpdateAnimation_Params Params;
+
+	Params.DeltaTimeX = DeltaTimeX;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.ExecuteUbergraph_AB
+inline void UAB::ExecuteUbergraph_AB(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.ExecuteUbergraph_AB");
+
+	struct ExecuteUbergraph_AB_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_AB_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimGraph
+inline void UAB::AnimGraph(struct Unknown& AnimGraph) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimGraph");
+
+	struct AnimGraph_Params {
+		struct Unknown& AnimGraph;
+	}; AnimGraph_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	AnimGraph = Params.AnimGraph;
+
+}
+
+// Function AB.AB.ExecuteUbergraph_AB
+inline void UAB::ExecuteUbergraph_AB(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.ExecuteUbergraph_AB");
+
+	struct ExecuteUbergraph_AB_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_AB_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimGraph
+inline void UAB::AnimGraph(struct Unknown& AnimGraph) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimGraph");
+
+	struct AnimGraph_Params {
+		struct Unknown& AnimGraph;
+	}; AnimGraph_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	AnimGraph = Params.AnimGraph;
+
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.BlueprintUpdateAnimation
+inline void UAB::BlueprintUpdateAnimation(float DeltaTimeX) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.BlueprintUpdateAnimation");
+
+	struct BlueprintUpdateAnimation_Params {
+		float DeltaTimeX;
+	}; BlueprintUpdateAnimation_Params Params;
+
+	Params.DeltaTimeX = DeltaTimeX;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimNotify_FPP_Entered_Idle
+inline void UAB::AnimNotify_FPP_Entered_Idle() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimNotify_FPP_Entered_Idle");
+
+	struct AnimNotify_FPP_Entered_Idle_Params {
+		
+	}; AnimNotify_FPP_Entered_Idle_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimNotify_FPP_Left_Idle
+inline void UAB::AnimNotify_FPP_Left_Idle() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimNotify_FPP_Left_Idle");
+
+	struct AnimNotify_FPP_Left_Idle_Params {
+		
+	}; AnimNotify_FPP_Left_Idle_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.ExecuteUbergraph_AB
+inline void UAB::ExecuteUbergraph_AB(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.ExecuteUbergraph_AB");
+
+	struct ExecuteUbergraph_AB_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_AB_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimGraph
+inline void UAB::AnimGraph(struct Unknown InPose, struct Unknown& AnimGraph) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimGraph");
+
+	struct AnimGraph_Params {
+		struct Unknown InPose;
+		struct Unknown& AnimGraph;
+	}; AnimGraph_Params Params;
+
+	Params.InPose = InPose;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	AnimGraph = Params.AnimGraph;
+
+}
+
+// Function AB.AB.ExecuteUbergraph_AB
+inline void UAB::ExecuteUbergraph_AB(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.ExecuteUbergraph_AB");
+
+	struct ExecuteUbergraph_AB_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_AB_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimGraph
+inline void UAB::AnimGraph(struct Unknown& AnimGraph) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimGraph");
+
+	struct AnimGraph_Params {
+		struct Unknown& AnimGraph;
+	}; AnimGraph_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	AnimGraph = Params.AnimGraph;
+
+}
+
+// Function AB.AB.ExecuteUbergraph_AB
+inline void UAB::ExecuteUbergraph_AB(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.ExecuteUbergraph_AB");
+
+	struct ExecuteUbergraph_AB_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_AB_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimGraph
+inline void UAB::AnimGraph(struct Unknown& AnimGraph) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimGraph");
+
+	struct AnimGraph_Params {
+		struct Unknown& AnimGraph;
+	}; AnimGraph_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	AnimGraph = Params.AnimGraph;
+
+}
+
+// Function AB.AB.UpdateAnimDynamicsForce
+inline void UAB::UpdateAnimDynamicsForce() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.UpdateAnimDynamicsForce");
+
+	struct UpdateAnimDynamicsForce_Params {
+		
+	}; UpdateAnimDynamicsForce_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.Get
+inline void UAB::Get(struct Unknown& Skeletal) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.Get");
+
+	struct Get_Params {
+		struct Unknown& Skeletal;
+	}; Get_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Skeletal = Params.Skeletal;
+
+}
+
+// Function AB.AB.Get
+inline void UAB::Get(struct Unknown& Current) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.Get");
+
+	struct Get_Params {
+		struct Unknown& Current;
+	}; Get_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Current = Params.Current;
+
+}
+
+// Function AB.AB.Update
+inline void UAB::Update() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.Update");
+
+	struct Update_Params {
+		
+	}; Update_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.Get
+inline char UAB::Get() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.Get");
+
+	struct Get_Params {
+		
+		char ReturnValue;
+
+	}; Get_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AB.AB.Get
+inline char UAB::Get() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.Get");
+
+	struct Get_Params {
+		
+		char ReturnValue;
+
+	}; Get_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AB.AB.BlueprintUpdateAnimation
+inline void UAB::BlueprintUpdateAnimation(float DeltaTimeX) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.BlueprintUpdateAnimation");
+
+	struct BlueprintUpdateAnimation_Params {
+		float DeltaTimeX;
+	}; BlueprintUpdateAnimation_Params Params;
+
+	Params.DeltaTimeX = DeltaTimeX;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.ExecuteUbergraph_AB
+inline void UAB::ExecuteUbergraph_AB(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.ExecuteUbergraph_AB");
+
+	struct ExecuteUbergraph_AB_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_AB_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimGraph
+inline void UAB::AnimGraph(struct Unknown& AnimGraph) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimGraph");
+
+	struct AnimGraph_Params {
+		struct Unknown& AnimGraph;
+	}; AnimGraph_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	AnimGraph = Params.AnimGraph;
+
+}
+
+// Function AB.AB.ExecuteUbergraph_AB
+inline void UAB::ExecuteUbergraph_AB(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.ExecuteUbergraph_AB");
+
+	struct ExecuteUbergraph_AB_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_AB_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimGraph
+inline void UAB::AnimGraph(struct Unknown& AnimGraph) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimGraph");
+
+	struct AnimGraph_Params {
+		struct Unknown& AnimGraph;
+	}; AnimGraph_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	AnimGraph = Params.AnimGraph;
+
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimNotify_ResetSkipTransitionFlag
+inline void UAB::AnimNotify_ResetSkipTransitionFlag() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimNotify_ResetSkipTransitionFlag");
+
+	struct AnimNotify_ResetSkipTransitionFlag_Params {
+		
+	}; AnimNotify_ResetSkipTransitionFlag_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.ExecuteUbergraph_AB
+inline void UAB::ExecuteUbergraph_AB(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.ExecuteUbergraph_AB");
+
+	struct ExecuteUbergraph_AB_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_AB_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimGraph
+inline void UAB::AnimGraph(struct Unknown& AnimGraph) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimGraph");
+
+	struct AnimGraph_Params {
+		struct Unknown& AnimGraph;
+	}; AnimGraph_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	AnimGraph = Params.AnimGraph;
+
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.ExecuteUbergraph_AB
+inline void UAB::ExecuteUbergraph_AB(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.ExecuteUbergraph_AB");
+
+	struct ExecuteUbergraph_AB_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_AB_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimGraph
+inline void UAB::AnimGraph(struct Unknown& AnimGraph) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimGraph");
+
+	struct AnimGraph_Params {
+		struct Unknown& AnimGraph;
+	}; AnimGraph_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	AnimGraph = Params.AnimGraph;
+
+}
+
+// Function AB.AB.ExecuteUbergraph_AB
+inline void UAB::ExecuteUbergraph_AB(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.ExecuteUbergraph_AB");
+
+	struct ExecuteUbergraph_AB_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_AB_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimGraph
+inline void UAB::AnimGraph(struct Unknown& AnimGraph) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimGraph");
+
+	struct AnimGraph_Params {
+		struct Unknown& AnimGraph;
+	}; AnimGraph_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	AnimGraph = Params.AnimGraph;
+
+}
+
+// Function AB.AB.ExecuteUbergraph_AB
+inline void UAB::ExecuteUbergraph_AB(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.ExecuteUbergraph_AB");
+
+	struct ExecuteUbergraph_AB_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_AB_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimGraph
+inline void UAB::AnimGraph(struct Unknown& AnimGraph) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimGraph");
+
+	struct AnimGraph_Params {
+		struct Unknown& AnimGraph;
+	}; AnimGraph_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	AnimGraph = Params.AnimGraph;
+
+}
+
+// Function AB.AB.ExecuteUbergraph_AB
+inline void UAB::ExecuteUbergraph_AB(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.ExecuteUbergraph_AB");
+
+	struct ExecuteUbergraph_AB_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_AB_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimGraph
+inline void UAB::AnimGraph(struct Unknown& AnimGraph) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimGraph");
+
+	struct AnimGraph_Params {
+		struct Unknown& AnimGraph;
+	}; AnimGraph_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	AnimGraph = Params.AnimGraph;
+
+}
+
+// Function AB.AB.ExecuteUbergraph_AB
+inline void UAB::ExecuteUbergraph_AB(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.ExecuteUbergraph_AB");
+
+	struct ExecuteUbergraph_AB_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_AB_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimGraph
+inline void UAB::AnimGraph(struct Unknown& AnimGraph) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimGraph");
+
+	struct AnimGraph_Params {
+		struct Unknown& AnimGraph;
+	}; AnimGraph_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	AnimGraph = Params.AnimGraph;
+
+}
+
+// Function AB.AB.ExecuteUbergraph_AB
+inline void UAB::ExecuteUbergraph_AB(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.ExecuteUbergraph_AB");
+
+	struct ExecuteUbergraph_AB_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_AB_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimGraph
+inline void UAB::AnimGraph(struct Unknown& AnimGraph) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimGraph");
+
+	struct AnimGraph_Params {
+		struct Unknown& AnimGraph;
+	}; AnimGraph_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	AnimGraph = Params.AnimGraph;
+
+}
+
+// Function AB.AB.ExecuteUbergraph_AB
+inline void UAB::ExecuteUbergraph_AB(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.ExecuteUbergraph_AB");
+
+	struct ExecuteUbergraph_AB_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_AB_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimGraph
+inline void UAB::AnimGraph(struct Unknown& AnimGraph) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimGraph");
+
+	struct AnimGraph_Params {
+		struct Unknown& AnimGraph;
+	}; AnimGraph_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	AnimGraph = Params.AnimGraph;
+
+}
+
+// Function AB.AB.ExecuteUbergraph_AB
+inline void UAB::ExecuteUbergraph_AB(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.ExecuteUbergraph_AB");
+
+	struct ExecuteUbergraph_AB_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_AB_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimGraph
+inline void UAB::AnimGraph(struct Unknown& AnimGraph) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimGraph");
+
+	struct AnimGraph_Params {
+		struct Unknown& AnimGraph;
+	}; AnimGraph_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	AnimGraph = Params.AnimGraph;
+
+}
+
+// Function AB.AB.ExecuteUbergraph_AB
+inline void UAB::ExecuteUbergraph_AB(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.ExecuteUbergraph_AB");
+
+	struct ExecuteUbergraph_AB_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_AB_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimGraph
+inline void UAB::AnimGraph(struct Unknown& AnimGraph) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimGraph");
+
+	struct AnimGraph_Params {
+		struct Unknown& AnimGraph;
+	}; AnimGraph_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	AnimGraph = Params.AnimGraph;
+
+}
+
+// Function AB.AB.ExecuteUbergraph_AB
+inline void UAB::ExecuteUbergraph_AB(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.ExecuteUbergraph_AB");
+
+	struct ExecuteUbergraph_AB_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_AB_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimGraph
+inline void UAB::AnimGraph(struct Unknown& AnimGraph) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimGraph");
+
+	struct AnimGraph_Params {
+		struct Unknown& AnimGraph;
+	}; AnimGraph_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	AnimGraph = Params.AnimGraph;
+
+}
+
+// Function AB.AB.ExecuteUbergraph_AB
+inline void UAB::ExecuteUbergraph_AB(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.ExecuteUbergraph_AB");
+
+	struct ExecuteUbergraph_AB_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_AB_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimGraph
+inline void UAB::AnimGraph(struct Unknown& AnimGraph) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimGraph");
+
+	struct AnimGraph_Params {
+		struct Unknown& AnimGraph;
+	}; AnimGraph_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	AnimGraph = Params.AnimGraph;
+
+}
+
+// Function AB.AB.ExecuteUbergraph_AB
+inline void UAB::ExecuteUbergraph_AB(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.ExecuteUbergraph_AB");
+
+	struct ExecuteUbergraph_AB_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_AB_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimGraph
+inline void UAB::AnimGraph(struct Unknown& AnimGraph) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimGraph");
+
+	struct AnimGraph_Params {
+		struct Unknown& AnimGraph;
+	}; AnimGraph_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	AnimGraph = Params.AnimGraph;
+
+}
+
+// Function AB.AB.ExecuteUbergraph_AB
+inline void UAB::ExecuteUbergraph_AB(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.ExecuteUbergraph_AB");
+
+	struct ExecuteUbergraph_AB_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_AB_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimGraph
+inline void UAB::AnimGraph(struct Unknown& AnimGraph) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimGraph");
+
+	struct AnimGraph_Params {
+		struct Unknown& AnimGraph;
+	}; AnimGraph_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	AnimGraph = Params.AnimGraph;
+
+}
+
+// Function AB.AB.ExecuteUbergraph_AB
+inline void UAB::ExecuteUbergraph_AB(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.ExecuteUbergraph_AB");
+
+	struct ExecuteUbergraph_AB_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_AB_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimGraph
+inline void UAB::AnimGraph(struct Unknown& AnimGraph) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimGraph");
+
+	struct AnimGraph_Params {
+		struct Unknown& AnimGraph;
+	}; AnimGraph_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	AnimGraph = Params.AnimGraph;
+
+}
+
+// Function AB.AB.ExecuteUbergraph_AB
+inline void UAB::ExecuteUbergraph_AB(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.ExecuteUbergraph_AB");
+
+	struct ExecuteUbergraph_AB_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_AB_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimGraph
+inline void UAB::AnimGraph(struct Unknown& AnimGraph) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimGraph");
+
+	struct AnimGraph_Params {
+		struct Unknown& AnimGraph;
+	}; AnimGraph_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	AnimGraph = Params.AnimGraph;
+
+}
+
+// Function AB.AB.ExecuteUbergraph_AB
+inline void UAB::ExecuteUbergraph_AB(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.ExecuteUbergraph_AB");
+
+	struct ExecuteUbergraph_AB_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_AB_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimGraph
+inline void UAB::AnimGraph(struct Unknown& AnimGraph) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimGraph");
+
+	struct AnimGraph_Params {
+		struct Unknown& AnimGraph;
+	}; AnimGraph_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	AnimGraph = Params.AnimGraph;
+
+}
+
+// Function AB.AB.ExecuteUbergraph_AB
+inline void UAB::ExecuteUbergraph_AB(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.ExecuteUbergraph_AB");
+
+	struct ExecuteUbergraph_AB_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_AB_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimGraph
+inline void UAB::AnimGraph(struct Unknown& AnimGraph) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimGraph");
+
+	struct AnimGraph_Params {
+		struct Unknown& AnimGraph;
+	}; AnimGraph_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	AnimGraph = Params.AnimGraph;
+
+}
+
+// Function AB.AB.ExecuteUbergraph_AB
+inline void UAB::ExecuteUbergraph_AB(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.ExecuteUbergraph_AB");
+
+	struct ExecuteUbergraph_AB_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_AB_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimGraph
+inline void UAB::AnimGraph(struct Unknown& AnimGraph) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimGraph");
+
+	struct AnimGraph_Params {
+		struct Unknown& AnimGraph;
+	}; AnimGraph_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	AnimGraph = Params.AnimGraph;
+
+}
+
+// Function AB.AB.BlueprintUpdateAnimation
+inline void UAB::BlueprintUpdateAnimation(float DeltaTimeX) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.BlueprintUpdateAnimation");
+
+	struct BlueprintUpdateAnimation_Params {
+		float DeltaTimeX;
+	}; BlueprintUpdateAnimation_Params Params;
+
+	Params.DeltaTimeX = DeltaTimeX;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.ExecuteUbergraph_AB
+inline void UAB::ExecuteUbergraph_AB(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.ExecuteUbergraph_AB");
+
+	struct ExecuteUbergraph_AB_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_AB_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimGraph
+inline void UAB::AnimGraph(struct Unknown& AnimGraph) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimGraph");
+
+	struct AnimGraph_Params {
+		struct Unknown& AnimGraph;
+	}; AnimGraph_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	AnimGraph = Params.AnimGraph;
+
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB
+inline void UAB::EvaluateGraphExposedInputs_ExecuteUbergraph_AB() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.EvaluateGraphExposedInputs_ExecuteUbergraph_AB");
+
+	struct EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params {
+		
+	}; EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.BlueprintUpdateAnimation
+inline void UAB::BlueprintUpdateAnimation(float DeltaTimeX) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.BlueprintUpdateAnimation");
+
+	struct BlueprintUpdateAnimation_Params {
+		float DeltaTimeX;
+	}; BlueprintUpdateAnimation_Params Params;
+
+	Params.DeltaTimeX = DeltaTimeX;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimNotify_FPP_Entered_Idle
+inline void UAB::AnimNotify_FPP_Entered_Idle() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimNotify_FPP_Entered_Idle");
+
+	struct AnimNotify_FPP_Entered_Idle_Params {
+		
+	}; AnimNotify_FPP_Entered_Idle_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.AnimNotify_FPP_Left_Idle
+inline void UAB::AnimNotify_FPP_Left_Idle() {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.AnimNotify_FPP_Left_Idle");
+
+	struct AnimNotify_FPP_Left_Idle_Params {
+		
+	}; AnimNotify_FPP_Left_Idle_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AB.AB.ExecuteUbergraph_AB
+inline void UAB::ExecuteUbergraph_AB(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function AB.AB.ExecuteUbergraph_AB");
+
+	struct ExecuteUbergraph_AB_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_AB_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
 

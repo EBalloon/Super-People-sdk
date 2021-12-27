@@ -15,3 +15,32 @@ public:
 	void ExecuteUbergraph_Chat_Message(int32_t EntryPoint); // Function Chat_Message.Chat_Message_C.ExecuteUbergraph_Chat_Message(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 };
 
+// Function Chat_Message.Chat_Message_C.Construct
+inline void UChat_Message_C::Construct() {
+	static auto fn = UObject::FindObject<UFunction>("Function Chat_Message.Chat_Message_C.Construct");
+
+	struct Construct_Params {
+		
+	}; Construct_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Chat_Message.Chat_Message_C.ExecuteUbergraph_Chat_Message
+inline void UChat_Message_C::ExecuteUbergraph_Chat_Message(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function Chat_Message.Chat_Message_C.ExecuteUbergraph_Chat_Message");
+
+	struct ExecuteUbergraph_Chat_Message_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_Chat_Message_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+

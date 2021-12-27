@@ -27,3 +27,138 @@ public:
 	void Hovered__DelegateSignature(int32_t Index); // Function WBP_SPS_UseItemSelectionIcon.WBP_SPS_UseItemSelectionIcon_C.Hovered__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 };
 
+// Function WBP_SPS_UseItemSelectionIcon.WBP_SPS_UseItemSelectionIcon_C.OnLoaded_6834BC7D48AF986BC5969685C4D6D2B3
+inline void UWBP_SPS_UseItemSelectionIcon_C::OnLoaded_6834BC7D48AF986BC5969685C4D6D2B3(struct Unknown Loaded) {
+	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_UseItemSelectionIcon.WBP_SPS_UseItemSelectionIcon_C.OnLoaded_6834BC7D48AF986BC5969685C4D6D2B3");
+
+	struct OnLoaded_6834BC7D48AF986BC5969685C4D6D2B3_Params {
+		struct Unknown Loaded;
+	}; OnLoaded_6834BC7D48AF986BC5969685C4D6D2B3_Params Params;
+
+	Params.Loaded = Loaded;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function WBP_SPS_UseItemSelectionIcon.WBP_SPS_UseItemSelectionIcon_C.Unselected
+inline void UWBP_SPS_UseItemSelectionIcon_C::Unselected() {
+	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_UseItemSelectionIcon.WBP_SPS_UseItemSelectionIcon_C.Unselected");
+
+	struct Unselected_Params {
+		
+	}; Unselected_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function WBP_SPS_UseItemSelectionIcon.WBP_SPS_UseItemSelectionIcon_C.Construct
+inline void UWBP_SPS_UseItemSelectionIcon_C::Construct() {
+	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_UseItemSelectionIcon.WBP_SPS_UseItemSelectionIcon_C.Construct");
+
+	struct Construct_Params {
+		
+	}; Construct_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function WBP_SPS_UseItemSelectionIcon.WBP_SPS_UseItemSelectionIcon_C.Selected
+inline void UWBP_SPS_UseItemSelectionIcon_C::Selected() {
+	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_UseItemSelectionIcon.WBP_SPS_UseItemSelectionIcon_C.Selected");
+
+	struct Selected_Params {
+		
+	}; Selected_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function WBP_SPS_UseItemSelectionIcon.WBP_SPS_UseItemSelectionIcon_C.Init
+inline void UWBP_SPS_UseItemSelectionIcon_C::Init(struct Unknown Data, struct FName ItemKey, char IsHaveItem) {
+	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_UseItemSelectionIcon.WBP_SPS_UseItemSelectionIcon_C.Init");
+
+	struct Init_Params {
+		struct Unknown Data;
+		struct FName ItemKey;
+		char IsHaveItem;
+	}; Init_Params Params;
+
+	Params.Data = Data;
+	Params.ItemKey = ItemKey;
+	Params.IsHaveItem = IsHaveItem;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function WBP_SPS_UseItemSelectionIcon.WBP_SPS_UseItemSelectionIcon_C.ExecuteUbergraph_WBP_SPS_UseItemSelectionIcon
+inline void UWBP_SPS_UseItemSelectionIcon_C::ExecuteUbergraph_WBP_SPS_UseItemSelectionIcon(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_UseItemSelectionIcon.WBP_SPS_UseItemSelectionIcon_C.ExecuteUbergraph_WBP_SPS_UseItemSelectionIcon");
+
+	struct ExecuteUbergraph_WBP_SPS_UseItemSelectionIcon_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_WBP_SPS_UseItemSelectionIcon_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function WBP_SPS_UseItemSelectionIcon.WBP_SPS_UseItemSelectionIcon_C.Pressed__DelegateSignature
+inline void UWBP_SPS_UseItemSelectionIcon_C::Pressed__DelegateSignature() {
+	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_UseItemSelectionIcon.WBP_SPS_UseItemSelectionIcon_C.Pressed__DelegateSignature");
+
+	struct Pressed__DelegateSignature_Params {
+		
+	}; Pressed__DelegateSignature_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function WBP_SPS_UseItemSelectionIcon.WBP_SPS_UseItemSelectionIcon_C.Unhovered__DelegateSignature
+inline void UWBP_SPS_UseItemSelectionIcon_C::Unhovered__DelegateSignature(int32_t Index) {
+	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_UseItemSelectionIcon.WBP_SPS_UseItemSelectionIcon_C.Unhovered__DelegateSignature");
+
+	struct Unhovered__DelegateSignature_Params {
+		int32_t Index;
+	}; Unhovered__DelegateSignature_Params Params;
+
+	Params.Index = Index;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function WBP_SPS_UseItemSelectionIcon.WBP_SPS_UseItemSelectionIcon_C.Hovered__DelegateSignature
+inline void UWBP_SPS_UseItemSelectionIcon_C::Hovered__DelegateSignature(int32_t Index) {
+	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_UseItemSelectionIcon.WBP_SPS_UseItemSelectionIcon_C.Hovered__DelegateSignature");
+
+	struct Hovered__DelegateSignature_Params {
+		int32_t Index;
+	}; Hovered__DelegateSignature_Params Params;
+
+	Params.Index = Index;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+

@@ -33,6 +33,217 @@ public:
 	void Widget(); // Function Chat_MainWidget.Chat_MainWidget_C.Widget(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 	void Widget(); // Function Chat_MainWidget.Chat_MainWidget_C.Widget(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function Chat_MainWidget.Chat_MainWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void ExecuteUbergraph_Chat_MainWidget(int32_t EntryPoint); // Function Chat_MainWidget.Chat_MainWidget_C.ExecuteUbergraph_Chat_MainWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void ExecuteUbergraph_Chat_MainWidg(int32_t EntryPoint); // Function Chat_MainWidget.Chat_MainWidget_C.ExecuteUbergraph_Chat_MainWidg(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 };
+
+// Function Chat_MainWidget.Chat_MainWidget_C.Get
+inline struct FText UChat_MainWidget_C::Get() {
+	static auto fn = UObject::FindObject<UFunction>("Function Chat_MainWidget.Chat_MainWidget_C.Get");
+
+	struct Get_Params {
+		
+		struct FText ReturnValue;
+
+	}; Get_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function Chat_MainWidget.Chat_MainWidget_C.PushItem
+inline void UChat_MainWidget_C::PushItem(struct FString UserName, struct FString Text, struct FString Group) {
+	static auto fn = UObject::FindObject<UFunction>("Function Chat_MainWidget.Chat_MainWidget_C.PushItem");
+
+	struct PushItem_Params {
+		struct FString UserName;
+		struct FString Text;
+		struct FString Group;
+	}; PushItem_Params Params;
+
+	Params.UserName = UserName;
+	Params.Text = Text;
+	Params.Group = Group;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Chat_MainWidget.Chat_MainWidget_C.Construct
+inline void UChat_MainWidget_C::Construct() {
+	static auto fn = UObject::FindObject<UFunction>("Function Chat_MainWidget.Chat_MainWidget_C.Construct");
+
+	struct Construct_Params {
+		
+	}; Construct_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Chat_MainWidget.Chat_MainWidget_C.BndEvt__Chat
+inline void UChat_MainWidget_C::BndEvt__Chat(struct FText& Text, char CommitMethod) {
+	static auto fn = UObject::FindObject<UFunction>("Function Chat_MainWidget.Chat_MainWidget_C.BndEvt__Chat");
+
+	struct BndEvt__Chat_Params {
+		struct FText& Text;
+		char CommitMethod;
+	}; BndEvt__Chat_Params Params;
+
+	Params.CommitMethod = CommitMethod;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Text = Params.Text;
+
+}
+
+// Function Chat_MainWidget.Chat_MainWidget_C.Reset
+inline void UChat_MainWidget_C::Reset() {
+	static auto fn = UObject::FindObject<UFunction>("Function Chat_MainWidget.Chat_MainWidget_C.Reset");
+
+	struct Reset_Params {
+		
+	}; Reset_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Chat_MainWidget.Chat_MainWidget_C.Set
+inline void UChat_MainWidget_C::Set() {
+	static auto fn = UObject::FindObject<UFunction>("Function Chat_MainWidget.Chat_MainWidget_C.Set");
+
+	struct Set_Params {
+		
+	}; Set_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Chat_MainWidget.Chat_MainWidget_C.OnMouseEnter
+inline void UChat_MainWidget_C::OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+	static auto fn = UObject::FindObject<UFunction>("Function Chat_MainWidget.Chat_MainWidget_C.OnMouseEnter");
+
+	struct OnMouseEnter_Params {
+		struct Unknown MyGeometry;
+		struct Unknown& MouseEvent;
+	}; OnMouseEnter_Params Params;
+
+	Params.MyGeometry = MyGeometry;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	MouseEvent = Params.MouseEvent;
+
+}
+
+// Function Chat_MainWidget.Chat_MainWidget_C.OnMouseLeave
+inline void UChat_MainWidget_C::OnMouseLeave(struct Unknown& MouseEvent) {
+	static auto fn = UObject::FindObject<UFunction>("Function Chat_MainWidget.Chat_MainWidget_C.OnMouseLeave");
+
+	struct OnMouseLeave_Params {
+		struct Unknown& MouseEvent;
+	}; OnMouseLeave_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	MouseEvent = Params.MouseEvent;
+
+}
+
+// Function Chat_MainWidget.Chat_MainWidget_C.BndEvt__Chat
+inline void UChat_MainWidget_C::BndEvt__Chat(struct FText& Text) {
+	static auto fn = UObject::FindObject<UFunction>("Function Chat_MainWidget.Chat_MainWidget_C.BndEvt__Chat");
+
+	struct BndEvt__Chat_Params {
+		struct FText& Text;
+	}; BndEvt__Chat_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Text = Params.Text;
+
+}
+
+// Function Chat_MainWidget.Chat_MainWidget_C.Widget
+inline void UChat_MainWidget_C::Widget() {
+	static auto fn = UObject::FindObject<UFunction>("Function Chat_MainWidget.Chat_MainWidget_C.Widget");
+
+	struct Widget_Params {
+		
+	}; Widget_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Chat_MainWidget.Chat_MainWidget_C.Widget
+inline void UChat_MainWidget_C::Widget() {
+	static auto fn = UObject::FindObject<UFunction>("Function Chat_MainWidget.Chat_MainWidget_C.Widget");
+
+	struct Widget_Params {
+		
+	}; Widget_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Chat_MainWidget.Chat_MainWidget_C.Tick
+inline void UChat_MainWidget_C::Tick(struct Unknown MyGeometry, float InDeltaTime) {
+	static auto fn = UObject::FindObject<UFunction>("Function Chat_MainWidget.Chat_MainWidget_C.Tick");
+
+	struct Tick_Params {
+		struct Unknown MyGeometry;
+		float InDeltaTime;
+	}; Tick_Params Params;
+
+	Params.MyGeometry = MyGeometry;
+	Params.InDeltaTime = InDeltaTime;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Chat_MainWidget.Chat_MainWidget_C.ExecuteUbergraph_Chat_MainWidg
+inline void UChat_MainWidget_C::ExecuteUbergraph_Chat_MainWidg(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function Chat_MainWidget.Chat_MainWidget_C.ExecuteUbergraph_Chat_MainWidg");
+
+	struct ExecuteUbergraph_Chat_MainWidg_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_Chat_MainWidg_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
 

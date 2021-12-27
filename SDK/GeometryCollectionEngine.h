@@ -73,11 +73,11 @@ public:
 	void SortTrailingEvents(struct TArray<Unknown>& TrailingEvents, enum class Unknow SortMethod); // Function GeometryCollectionEngine.ChaosDestructionListener.SortTrailingEvents(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x40320F0>
 	void SortCollisionEvents(struct TArray<Unknown>& CollisionEvents, enum class Unknow SortMethod); // Function GeometryCollectionEngine.ChaosDestructionListener.SortCollisionEvents(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4031FF0>
 	void SortBreakingEvents(struct TArray<Unknown>& BreakingEvents, enum class Unknow SortMethod); // Function GeometryCollectionEngine.ChaosDestructionListener.SortBreakingEvents(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4031EF0>
-	void SetTrailingEventRequestSettings(struct Unknown& InSettings); // Function GeometryCollectionEngine.ChaosDestructionListener.SetTrailingEventRequestSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4031E50>
+	void SetTrailingEventRequestSettings(struct Unknown& InSettings); // Function GeometryCollectionEngine.ChaosDestructionListener.SetTrailingEventRequestSetting(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4031E50>
 	void SetTrailingEventEnabled(char bIsEnabled); // Function GeometryCollectionEngine.ChaosDestructionListener.SetTrailingEventEnabled(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4031DC0>
 	void SetCollisionEventRequestSettings(struct Unknown& InSettings); // Function GeometryCollectionEngine.ChaosDestructionListener.SetCollisionEventRequestSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4031C90>
 	void SetCollisionEventEnabled(char bIsEnabled); // Function GeometryCollectionEngine.ChaosDestructionListener.SetCollisionEventEnabled(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4031C00>
-	void SetBreakingEventRequestSettings(struct Unknown& InSettings); // Function GeometryCollectionEngine.ChaosDestructionListener.SetBreakingEventRequestSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4031B60>
+	void SetBreakingEventRequestSetting(struct Unknown& InSettings); // Function GeometryCollectionEngine.ChaosDestructionListener.SetBreakingEventRequestSetting(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4031B60>
 	void SetBreakingEventEnabled(char bIsEnabled); // Function GeometryCollectionEngine.ChaosDestructionListener.SetBreakingEventEnabled(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4031AD0>
 	void RemoveGeometryCollectionActor(struct Unknown GeometryCollectionActor); // Function GeometryCollectionEngine.ChaosDestructionListener.RemoveGeometryCollectionActor(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4031A50>
 	void RemoveChaosSolverActor(struct Unknown ChaosSolverActor); // Function GeometryCollectionEngine.ChaosDestructionListener.RemoveChaosSolverActor(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16B5B80>
@@ -132,7 +132,7 @@ public:
 	struct Unknown InitialAngularVelocity; // 0x648 (12)
 	struct Unknown CacheParameters; // 0x658 (80)
 	struct FMulticastInlineDelegate NotifyGeometryCollectionPhysicsStateChange; // 0x6A8 (16)
-	struct FMulticastInlineDelegate NotifyGeometryCollectionPhysicsLoadingStateChange; // 0x6B8 (16)
+	struct FMulticastInlineDelegate NotifyGeometryCollectionPhysicsLoading; // 0x6B8 (16)
 	struct FMulticastInlineDelegate OnChaosBreakEvent; // 0x6E0 (16)
 	float DesiredCacheTime; // 0x6F0 (4)
 	char CachePlayback : 0; // 0x6F4 (1)
@@ -144,7 +144,7 @@ public:
 	void SetNotifyBreaks(char bNewNotifyBreaks); // Function GeometryCollectionEngine.GeometryCollectionComponent.SetNotifyBreaks(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4031D30>
 	void ReceivePhysicsCollision(struct Unknown& CollisionInfo); // Function GeometryCollectionEngine.GeometryCollectionComponent.ReceivePhysicsCollision(Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 	void NotifyGeometryCollectionPhysicsStateChange__DelegateSignature(struct Unknown FracturedComponent); // DelegateFunction GeometryCollectionEngine.GeometryCollectionComponent.NotifyGeometryCollectionPhysicsStateChange__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void NotifyGeometryCollectionPhysicsLoadingStateChange__DelegateSignature(struct Unknown FracturedComponent); // DelegateFunction GeometryCollectionEngine.GeometryCollectionComponent.NotifyGeometryCollectionPhysicsLoadingStateChange__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void NotifyGeometryCollectionPhysicsLoading(struct Unknown FracturedComponent); // DelegateFunction GeometryCollectionEngine.GeometryCollectionComponent.NotifyGeometryCollectionPhysicsLoading(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 	void ApplyPhysicsField(char Enabled, enum class Unknow Target, struct Unknown MetaData, struct Unknown Field); // Function GeometryCollectionEngine.GeometryCollectionComponent.ApplyPhysicsField(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4031730>
 	void ApplyKinematicField(float Radius, struct Unknown Position); // Function GeometryCollectionEngine.GeometryCollectionComponent.ApplyKinematicField(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4031660>
 };
@@ -421,4 +421,408 @@ struct FGeometryCollectionSizeSpecificData {
 	float CollisionParticlesFraction; // 0x1C (4)
 	int32_t MaximumCollisionParticles; // 0x20 (4)
 };
+
+// Function GeometryCollectionEngine.ChaosDestructionListener.SortTrailingEvents
+inline void UChaosDestructionListener::SortTrailingEvents(struct TArray<Unknown>& TrailingEvents, enum class Unknow SortMethod) {
+	static auto fn = UObject::FindObject<UFunction>("Function GeometryCollectionEngine.ChaosDestructionListener.SortTrailingEvents");
+
+	struct SortTrailingEvents_Params {
+		struct TArray<Unknown>& TrailingEvents;
+		enum class Unknow SortMethod;
+	}; SortTrailingEvents_Params Params;
+
+	Params.SortMethod = SortMethod;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	TrailingEvents = Params.TrailingEvents;
+
+}
+
+// Function GeometryCollectionEngine.ChaosDestructionListener.SortCollisionEvents
+inline void UChaosDestructionListener::SortCollisionEvents(struct TArray<Unknown>& CollisionEvents, enum class Unknow SortMethod) {
+	static auto fn = UObject::FindObject<UFunction>("Function GeometryCollectionEngine.ChaosDestructionListener.SortCollisionEvents");
+
+	struct SortCollisionEvents_Params {
+		struct TArray<Unknown>& CollisionEvents;
+		enum class Unknow SortMethod;
+	}; SortCollisionEvents_Params Params;
+
+	Params.SortMethod = SortMethod;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	CollisionEvents = Params.CollisionEvents;
+
+}
+
+// Function GeometryCollectionEngine.ChaosDestructionListener.SortBreakingEvents
+inline void UChaosDestructionListener::SortBreakingEvents(struct TArray<Unknown>& BreakingEvents, enum class Unknow SortMethod) {
+	static auto fn = UObject::FindObject<UFunction>("Function GeometryCollectionEngine.ChaosDestructionListener.SortBreakingEvents");
+
+	struct SortBreakingEvents_Params {
+		struct TArray<Unknown>& BreakingEvents;
+		enum class Unknow SortMethod;
+	}; SortBreakingEvents_Params Params;
+
+	Params.SortMethod = SortMethod;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	BreakingEvents = Params.BreakingEvents;
+
+}
+
+// Function GeometryCollectionEngine.ChaosDestructionListener.SetTrailingEventRequestSetting
+inline void UChaosDestructionListener::SetTrailingEventRequestSettings(struct Unknown& InSettings) {
+	static auto fn = UObject::FindObject<UFunction>("Function GeometryCollectionEngine.ChaosDestructionListener.SetTrailingEventRequestSetting");
+
+	struct SetTrailingEventRequestSettings_Params {
+		struct Unknown& InSettings;
+	}; SetTrailingEventRequestSettings_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	InSettings = Params.InSettings;
+
+}
+
+// Function GeometryCollectionEngine.ChaosDestructionListener.SetTrailingEventEnabled
+inline void UChaosDestructionListener::SetTrailingEventEnabled(char bIsEnabled) {
+	static auto fn = UObject::FindObject<UFunction>("Function GeometryCollectionEngine.ChaosDestructionListener.SetTrailingEventEnabled");
+
+	struct SetTrailingEventEnabled_Params {
+		char bIsEnabled;
+	}; SetTrailingEventEnabled_Params Params;
+
+	Params.bIsEnabled = bIsEnabled;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function GeometryCollectionEngine.ChaosDestructionListener.SetCollisionEventRequestSettings
+inline void UChaosDestructionListener::SetCollisionEventRequestSettings(struct Unknown& InSettings) {
+	static auto fn = UObject::FindObject<UFunction>("Function GeometryCollectionEngine.ChaosDestructionListener.SetCollisionEventRequestSettings");
+
+	struct SetCollisionEventRequestSettings_Params {
+		struct Unknown& InSettings;
+	}; SetCollisionEventRequestSettings_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	InSettings = Params.InSettings;
+
+}
+
+// Function GeometryCollectionEngine.ChaosDestructionListener.SetCollisionEventEnabled
+inline void UChaosDestructionListener::SetCollisionEventEnabled(char bIsEnabled) {
+	static auto fn = UObject::FindObject<UFunction>("Function GeometryCollectionEngine.ChaosDestructionListener.SetCollisionEventEnabled");
+
+	struct SetCollisionEventEnabled_Params {
+		char bIsEnabled;
+	}; SetCollisionEventEnabled_Params Params;
+
+	Params.bIsEnabled = bIsEnabled;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function GeometryCollectionEngine.ChaosDestructionListener.SetBreakingEventRequestSetting
+inline void UChaosDestructionListener::SetBreakingEventRequestSetting(struct Unknown& InSettings) {
+	static auto fn = UObject::FindObject<UFunction>("Function GeometryCollectionEngine.ChaosDestructionListener.SetBreakingEventRequestSetting");
+
+	struct SetBreakingEventRequestSetting_Params {
+		struct Unknown& InSettings;
+	}; SetBreakingEventRequestSetting_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	InSettings = Params.InSettings;
+
+}
+
+// Function GeometryCollectionEngine.ChaosDestructionListener.SetBreakingEventEnabled
+inline void UChaosDestructionListener::SetBreakingEventEnabled(char bIsEnabled) {
+	static auto fn = UObject::FindObject<UFunction>("Function GeometryCollectionEngine.ChaosDestructionListener.SetBreakingEventEnabled");
+
+	struct SetBreakingEventEnabled_Params {
+		char bIsEnabled;
+	}; SetBreakingEventEnabled_Params Params;
+
+	Params.bIsEnabled = bIsEnabled;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function GeometryCollectionEngine.ChaosDestructionListener.RemoveGeometryCollectionActor
+inline void UChaosDestructionListener::RemoveGeometryCollectionActor(struct Unknown GeometryCollectionActor) {
+	static auto fn = UObject::FindObject<UFunction>("Function GeometryCollectionEngine.ChaosDestructionListener.RemoveGeometryCollectionActor");
+
+	struct RemoveGeometryCollectionActor_Params {
+		struct Unknown GeometryCollectionActor;
+	}; RemoveGeometryCollectionActor_Params Params;
+
+	Params.GeometryCollectionActor = GeometryCollectionActor;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function GeometryCollectionEngine.ChaosDestructionListener.RemoveChaosSolverActor
+inline void UChaosDestructionListener::RemoveChaosSolverActor(struct Unknown ChaosSolverActor) {
+	static auto fn = UObject::FindObject<UFunction>("Function GeometryCollectionEngine.ChaosDestructionListener.RemoveChaosSolverActor");
+
+	struct RemoveChaosSolverActor_Params {
+		struct Unknown ChaosSolverActor;
+	}; RemoveChaosSolverActor_Params Params;
+
+	Params.ChaosSolverActor = ChaosSolverActor;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function GeometryCollectionEngine.ChaosDestructionListener.IsEventListening
+inline char UChaosDestructionListener::IsEventListening() {
+	static auto fn = UObject::FindObject<UFunction>("Function GeometryCollectionEngine.ChaosDestructionListener.IsEventListening");
+
+	struct IsEventListening_Params {
+		
+		char ReturnValue;
+
+	}; IsEventListening_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function GeometryCollectionEngine.ChaosDestructionListener.AddGeometryCollectionActor
+inline void UChaosDestructionListener::AddGeometryCollectionActor(struct Unknown GeometryCollectionActor) {
+	static auto fn = UObject::FindObject<UFunction>("Function GeometryCollectionEngine.ChaosDestructionListener.AddGeometryCollectionActor");
+
+	struct AddGeometryCollectionActor_Params {
+		struct Unknown GeometryCollectionActor;
+	}; AddGeometryCollectionActor_Params Params;
+
+	Params.GeometryCollectionActor = GeometryCollectionActor;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function GeometryCollectionEngine.ChaosDestructionListener.AddChaosSolverActor
+inline void UChaosDestructionListener::AddChaosSolverActor(struct Unknown ChaosSolverActor) {
+	static auto fn = UObject::FindObject<UFunction>("Function GeometryCollectionEngine.ChaosDestructionListener.AddChaosSolverActor");
+
+	struct AddChaosSolverActor_Params {
+		struct Unknown ChaosSolverActor;
+	}; AddChaosSolverActor_Params Params;
+
+	Params.ChaosSolverActor = ChaosSolverActor;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function GeometryCollectionEngine.GeometryCollectionActor.RaycastSingle
+inline char AGeometryCollectionActor::RaycastSingle(struct Unknown Start, struct Unknown End, struct Unknown& OutHit) {
+	static auto fn = UObject::FindObject<UFunction>("Function GeometryCollectionEngine.GeometryCollectionActor.RaycastSingle");
+
+	struct RaycastSingle_Params {
+		struct Unknown Start;
+		struct Unknown End;
+		struct Unknown& OutHit;
+		char ReturnValue;
+
+	}; RaycastSingle_Params Params;
+
+	Params.Start = Start;
+	Params.End = End;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	OutHit = Params.OutHit;
+
+
+	return params.ReturnValue;
+}
+
+// Function GeometryCollectionEngine.GeometryCollectionComponent.SetNotifyBreaks
+inline void UGeometryCollectionComponent::SetNotifyBreaks(char bNewNotifyBreaks) {
+	static auto fn = UObject::FindObject<UFunction>("Function GeometryCollectionEngine.GeometryCollectionComponent.SetNotifyBreaks");
+
+	struct SetNotifyBreaks_Params {
+		char bNewNotifyBreaks;
+	}; SetNotifyBreaks_Params Params;
+
+	Params.bNewNotifyBreaks = bNewNotifyBreaks;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function GeometryCollectionEngine.GeometryCollectionComponent.ReceivePhysicsCollision
+inline void UGeometryCollectionComponent::ReceivePhysicsCollision(struct Unknown& CollisionInfo) {
+	static auto fn = UObject::FindObject<UFunction>("Function GeometryCollectionEngine.GeometryCollectionComponent.ReceivePhysicsCollision");
+
+	struct ReceivePhysicsCollision_Params {
+		struct Unknown& CollisionInfo;
+	}; ReceivePhysicsCollision_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	CollisionInfo = Params.CollisionInfo;
+
+}
+
+// DelegateFunction GeometryCollectionEngine.GeometryCollectionComponent.NotifyGeometryCollectionPhysicsStateChange__DelegateSignature
+inline void UGeometryCollectionComponent::NotifyGeometryCollectionPhysicsStateChange__DelegateSignature(struct Unknown FracturedComponent) {
+	static auto fn = UObject::FindObject<UFunction>("DelegateFunction GeometryCollectionEngine.GeometryCollectionComponent.NotifyGeometryCollectionPhysicsStateChange__DelegateSignature");
+
+	struct NotifyGeometryCollectionPhysicsStateChange__DelegateSignature_Params {
+		struct Unknown FracturedComponent;
+	}; NotifyGeometryCollectionPhysicsStateChange__DelegateSignature_Params Params;
+
+	Params.FracturedComponent = FracturedComponent;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// DelegateFunction GeometryCollectionEngine.GeometryCollectionComponent.NotifyGeometryCollectionPhysicsLoading
+inline void UGeometryCollectionComponent::NotifyGeometryCollectionPhysicsLoading(struct Unknown FracturedComponent) {
+	static auto fn = UObject::FindObject<UFunction>("DelegateFunction GeometryCollectionEngine.GeometryCollectionComponent.NotifyGeometryCollectionPhysicsLoading");
+
+	struct NotifyGeometryCollectionPhysicsLoading_Params {
+		struct Unknown FracturedComponent;
+	}; NotifyGeometryCollectionPhysicsLoading_Params Params;
+
+	Params.FracturedComponent = FracturedComponent;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function GeometryCollectionEngine.GeometryCollectionComponent.ApplyPhysicsField
+inline void UGeometryCollectionComponent::ApplyPhysicsField(char Enabled, enum class Unknow Target, struct Unknown MetaData, struct Unknown Field) {
+	static auto fn = UObject::FindObject<UFunction>("Function GeometryCollectionEngine.GeometryCollectionComponent.ApplyPhysicsField");
+
+	struct ApplyPhysicsField_Params {
+		char Enabled;
+		enum class Unknow Target;
+		struct Unknown MetaData;
+		struct Unknown Field;
+	}; ApplyPhysicsField_Params Params;
+
+	Params.Enabled = Enabled;
+	Params.Target = Target;
+	Params.MetaData = MetaData;
+	Params.Field = Field;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function GeometryCollectionEngine.GeometryCollectionComponent.ApplyKinematicField
+inline void UGeometryCollectionComponent::ApplyKinematicField(float Radius, struct Unknown Position) {
+	static auto fn = UObject::FindObject<UFunction>("Function GeometryCollectionEngine.GeometryCollectionComponent.ApplyKinematicField");
+
+	struct ApplyKinematicField_Params {
+		float Radius;
+		struct Unknown Position;
+	}; ApplyKinematicField_Params Params;
+
+	Params.Radius = Radius;
+	Params.Position = Position;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function GeometryCollectionEngine.SkeletalMeshSimulationComponent.ReceivePhysicsCollision
+inline void USkeletalMeshSimulationComponent::ReceivePhysicsCollision(struct Unknown& CollisionInfo) {
+	static auto fn = UObject::FindObject<UFunction>("Function GeometryCollectionEngine.SkeletalMeshSimulationComponent.ReceivePhysicsCollision");
+
+	struct ReceivePhysicsCollision_Params {
+		struct Unknown& CollisionInfo;
+	}; ReceivePhysicsCollision_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	CollisionInfo = Params.CollisionInfo;
+
+}
+
+// Function GeometryCollectionEngine.StaticMeshSimulationComponent.ReceivePhysicsCollision
+inline void UStaticMeshSimulationComponent::ReceivePhysicsCollision(struct Unknown& CollisionInfo) {
+	static auto fn = UObject::FindObject<UFunction>("Function GeometryCollectionEngine.StaticMeshSimulationComponent.ReceivePhysicsCollision");
+
+	struct ReceivePhysicsCollision_Params {
+		struct Unknown& CollisionInfo;
+	}; ReceivePhysicsCollision_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	CollisionInfo = Params.CollisionInfo;
+
+}
+
+// Function GeometryCollectionEngine.StaticMeshSimulationComponent.ForceRecreatePhysicsState
+inline void UStaticMeshSimulationComponent::ForceRecreatePhysicsState() {
+	static auto fn = UObject::FindObject<UFunction>("Function GeometryCollectionEngine.StaticMeshSimulationComponent.ForceRecreatePhysicsState");
+
+	struct ForceRecreatePhysicsState_Params {
+		
+	}; ForceRecreatePhysicsState_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
 

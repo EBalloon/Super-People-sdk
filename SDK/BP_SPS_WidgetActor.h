@@ -37,3 +37,232 @@ public:
 	void ExecuteUbergraph_BP_SPS_WidgetActor(int32_t EntryPoint); // Function BP_SPS_WidgetActor.BP_SPS_WidgetActor_C.ExecuteUbergraph_BP_SPS_WidgetActor(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 };
 
+// Function BP_SPS_WidgetActor.BP_SPS_WidgetActor_C.GetTeamColor
+inline void ABP_SPS_WidgetActor_C::GetTeamColor(int32_t TeamIndex, struct Unknown& OutColor) {
+	static auto fn = UObject::FindObject<UFunction>("Function BP_SPS_WidgetActor.BP_SPS_WidgetActor_C.GetTeamColor");
+
+	struct GetTeamColor_Params {
+		int32_t TeamIndex;
+		struct Unknown& OutColor;
+	}; GetTeamColor_Params Params;
+
+	Params.TeamIndex = TeamIndex;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	OutColor = Params.OutColor;
+
+}
+
+// Function BP_SPS_WidgetActor.BP_SPS_WidgetActor_C.CreateLocationActor
+inline struct Unknown ABP_SPS_WidgetActor_C::CreateLocationActor(struct Unknown& SpawnLocation) {
+	static auto fn = UObject::FindObject<UFunction>("Function BP_SPS_WidgetActor.BP_SPS_WidgetActor_C.CreateLocationActor");
+
+	struct CreateLocationActor_Params {
+		struct Unknown& SpawnLocation;
+		struct Unknown ReturnValue;
+
+	}; CreateLocationActor_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	SpawnLocation = Params.SpawnLocation;
+
+
+	return params.ReturnValue;
+}
+
+// Function BP_SPS_WidgetActor.BP_SPS_WidgetActor_C.GetEnableShow
+inline void ABP_SPS_WidgetActor_C::GetEnableShow(char IsPersonalBox, char& bRet) {
+	static auto fn = UObject::FindObject<UFunction>("Function BP_SPS_WidgetActor.BP_SPS_WidgetActor_C.GetEnableShow");
+
+	struct GetEnableShow_Params {
+		char IsPersonalBox;
+		char& bRet;
+	}; GetEnableShow_Params Params;
+
+	Params.IsPersonalBox = IsPersonalBox;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	bRet = Params.bRet;
+
+}
+
+// Function BP_SPS_WidgetActor.BP_SPS_WidgetActor_C.GetDurationFrompingType
+inline void ABP_SPS_WidgetActor_C::GetDurationFrompingType(enum class Unknow PingType, float& Time) {
+	static auto fn = UObject::FindObject<UFunction>("Function BP_SPS_WidgetActor.BP_SPS_WidgetActor_C.GetDurationFrompingType");
+
+	struct GetDurationFrompingType_Params {
+		enum class Unknow PingType;
+		float& Time;
+	}; GetDurationFrompingType_Params Params;
+
+	Params.PingType = PingType;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Time = Params.Time;
+
+}
+
+// Function BP_SPS_WidgetActor.BP_SPS_WidgetActor_C.ReceiveBeginPlay
+inline void ABP_SPS_WidgetActor_C::ReceiveBeginPlay() {
+	static auto fn = UObject::FindObject<UFunction>("Function BP_SPS_WidgetActor.BP_SPS_WidgetActor_C.ReceiveBeginPlay");
+
+	struct ReceiveBeginPlay_Params {
+		
+	}; ReceiveBeginPlay_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function BP_SPS_WidgetActor.BP_SPS_WidgetActor_C.Deactivate
+inline void ABP_SPS_WidgetActor_C::Deactivate(char Force) {
+	static auto fn = UObject::FindObject<UFunction>("Function BP_SPS_WidgetActor.BP_SPS_WidgetActor_C.Deactivate");
+
+	struct Deactivate_Params {
+		char Force;
+	}; Deactivate_Params Params;
+
+	Params.Force = Force;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function BP_SPS_WidgetActor.BP_SPS_WidgetActor_C.TestLocation
+inline void ABP_SPS_WidgetActor_C::TestLocation(struct Unknown& Location) {
+	static auto fn = UObject::FindObject<UFunction>("Function BP_SPS_WidgetActor.BP_SPS_WidgetActor_C.TestLocation");
+
+	struct TestLocation_Params {
+		struct Unknown& Location;
+	}; TestLocation_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Location = Params.Location;
+
+}
+
+// Function BP_SPS_WidgetActor.BP_SPS_WidgetActor_C.TestLocation2D
+inline void ABP_SPS_WidgetActor_C::TestLocation2D(struct Unknown& Location) {
+	static auto fn = UObject::FindObject<UFunction>("Function BP_SPS_WidgetActor.BP_SPS_WidgetActor_C.TestLocation2D");
+
+	struct TestLocation2D_Params {
+		struct Unknown& Location;
+	}; TestLocation2D_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Location = Params.Location;
+
+}
+
+// Function BP_SPS_WidgetActor.BP_SPS_WidgetActor_C.UpdateRotation
+inline void ABP_SPS_WidgetActor_C::UpdateRotation(float NewLineRate) {
+	static auto fn = UObject::FindObject<UFunction>("Function BP_SPS_WidgetActor.BP_SPS_WidgetActor_C.UpdateRotation");
+
+	struct UpdateRotation_Params {
+		float NewLineRate;
+	}; UpdateRotation_Params Params;
+
+	Params.NewLineRate = NewLineRate;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function BP_SPS_WidgetActor.BP_SPS_WidgetActor_C.SetInNm
+inline void ABP_SPS_WidgetActor_C::SetInNm(char IsIn) {
+	static auto fn = UObject::FindObject<UFunction>("Function BP_SPS_WidgetActor.BP_SPS_WidgetActor_C.SetInNm");
+
+	struct SetInNm_Params {
+		char IsIn;
+	}; SetInNm_Params Params;
+
+	Params.IsIn = IsIn;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function BP_SPS_WidgetActor.BP_SPS_WidgetActor_C.SetPersonalSupplyBoxPingType
+inline void ABP_SPS_WidgetActor_C::SetPersonalSupplyBoxPingType(enum class Unknow NewState) {
+	static auto fn = UObject::FindObject<UFunction>("Function BP_SPS_WidgetActor.BP_SPS_WidgetActor_C.SetPersonalSupplyBoxPingType");
+
+	struct SetPersonalSupplyBoxPingType_Params {
+		enum class Unknow NewState;
+	}; SetPersonalSupplyBoxPingType_Params Params;
+
+	Params.NewState = NewState;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function BP_SPS_WidgetActor.BP_SPS_WidgetActor_C.SetRemoveMaterialPing
+inline void ABP_SPS_WidgetActor_C::SetRemoveMaterialPing() {
+	static auto fn = UObject::FindObject<UFunction>("Function BP_SPS_WidgetActor.BP_SPS_WidgetActor_C.SetRemoveMaterialPing");
+
+	struct SetRemoveMaterialPing_Params {
+		
+	}; SetRemoveMaterialPing_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function BP_SPS_WidgetActor.BP_SPS_WidgetActor_C.SetRemoveExpertWeaponPing
+inline void ABP_SPS_WidgetActor_C::SetRemoveExpertWeaponPing() {
+	static auto fn = UObject::FindObject<UFunction>("Function BP_SPS_WidgetActor.BP_SPS_WidgetActor_C.SetRemoveExpertWeaponPing");
+
+	struct SetRemoveExpertWeaponPing_Params {
+		
+	}; SetRemoveExpertWeaponPing_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function BP_SPS_WidgetActor.BP_SPS_WidgetActor_C.ExecuteUbergraph_BP_SPS_WidgetActor
+inline void ABP_SPS_WidgetActor_C::ExecuteUbergraph_BP_SPS_WidgetActor(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function BP_SPS_WidgetActor.BP_SPS_WidgetActor_C.ExecuteUbergraph_BP_SPS_WidgetActor");
+
+	struct ExecuteUbergraph_BP_SPS_WidgetActor_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_BP_SPS_WidgetActor_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+

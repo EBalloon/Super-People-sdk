@@ -428,12 +428,12 @@ enum class EAkPanningRule : uint8_t {
 	EAkPanningRule = 2,
 };
 
-// Enum AkAudio.EAkWindowsAudioAPI
-enum class EAkWindowsAudioAPI : uint8_t {
-	EAkWindowsAudioAP = 0,
-	EAkWindowsAudioAP = 1,
-	EAkWindowsAudioAP = 2,
-	EAkWindowsAudioAP = 3,
+// Enum AkAudio.EAk
+enum class EAk : uint8_t {
+	EAk = 0,
+	EAk = 1,
+	EAk = 2,
+	EAk = 3,
 };
 
 // Class AkAudio.AkAcousticPortal
@@ -473,8 +473,8 @@ public:
 	void StartAmbientSound(); // Function AkAudio.AkAmbientSound.StartAmbientSound(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x15FD2B0>
 };
 
-// Class AkAudio.AkAndroidInitializationSettings
-class UAkAndroidInitializationSettings : public Object {
+// Class AkAudio.AkAndroidInitializationSetting
+class UAkAndroidInitializationSetting : public Object {
 
 public:
 
@@ -482,7 +482,7 @@ public:
 	struct Unknown CommunicationSettings; // 0x90 (40)
 	struct Unknown AdvancedSettings; // 0xB8 (64)
 
-	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkAndroidInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x15FC010>
+	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkAndroidInitializationSetting.MigrateMultiCoreRendering(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x15FC010>
 };
 
 // Class AkAudio.AkAssetData
@@ -986,7 +986,7 @@ public:
 	char bAutoConnectToWAAPI : 0; // 0x74 (1)
 	char AutoSyncSelection : 0; // 0x75 (1)
 	char SuppressWwiseProjectPathWarnings : 0; // 0x76 (1)
-	char SoundDataGenerationSkipLanguage : 0; // 0x77 (1)
+	char SoundDataGenerationSkipLanguag : 0; // 0x77 (1)
 };
 
 // Class AkAudio.AkSlider
@@ -1084,8 +1084,8 @@ public:
 	struct Unknown AdvancedSettings; // 0xC8 (52)
 };
 
-// Class AkAudio.AkWindowsInitializationSettings
-class UAkWindowsInitializationSettings : public Object {
+// Class AkAudio.AkWindowsInitializationSetting
+class UAkWindowsInitializationSetting : public Object {
 
 public:
 
@@ -1118,8 +1118,8 @@ public:
 	struct FMulticastInlineDelegate OnItemDragged; // 0x118 (16)
 };
 
-// Class AkAudio.AkXboxOneInitializationSettings
-class UAkXboxOneInitializationSettings : public Object {
+// Class AkAudio.AkXboxOneInitializationSetting
+class UAkXboxOneInitializationSetting : public Object {
 
 public:
 
@@ -1128,7 +1128,7 @@ public:
 	struct Unknown CommunicationSettings; // 0x90 (40)
 	struct Unknown AdvancedSettings; // 0xB8 (60)
 
-	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkXboxOneInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x15FC010>
+	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkXboxOneInitializationSetting.MigrateMultiCoreRendering(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x15FC010>
 };
 
 // Class AkAudio.InterpTrackAkAudioEvent
@@ -1167,7 +1167,7 @@ public:
 };
 
 // Class AkAudio.MovieSceneAkAudioEv
-class UMovieSceneAkAudioEvdioRTP : public UMovieSceneSection {
+class UMovieSceneAkAudioEvjectToText : public UMovieSceneSection {
 
 public:
 
@@ -1264,7 +1264,7 @@ struct FAkAdvancedInitializationSettingsWithMultiCoreRendering : FAkAdvancedInit
 	char EnableMultiCoreRendering : 0; // 0x34 (1)
 };
 
-// ScriptStruct AkAudio.AkAndroidAdvancedInitializationSettings
+// ScriptStruct AkAudio.AkAndroidAdvancedInitializationSetting
 struct FAkAndroidAdvancedInitializationSettings : FAkAdvancedInitializationSettingsWithMultiCoreRendering {
 	uint32_t AudioAPI; // 0x38 (4)
 	char RoundFrameSizeToHardwareSize : 0; // 0x3C (1)
@@ -1436,8 +1436,8 @@ struct FAkCommunicationSettings {
 	struct FString NetworkName; // 0x10 (16)
 };
 
-// ScriptStruct AkAudio.AkCommunicationSettingsWithComm
-struct FAkCommunicationSettingsWithComm : FAkCommunicationSettings {
+// ScriptStruct AkAudio.AkCommunicationSettingsWithCommSelection
+struct FAkCommunicationSettingsWithCommSelection : FAkCommunicationSettings {
 	enum class Unknow CommunicationSystem; // 0x20 (4)
 };
 
@@ -1498,8 +1498,8 @@ struct FAkWaapiUri {
 	struct FString Uri; // 0x0 (16)
 };
 
-// ScriptStruct AkAudio.AkWindowsAdvancedInitializationSettings
-struct FAkWindowsAdvancedInitializationSettings : FAkAdvancedInitializationSettingsWithMultiCoreRendering {
+// ScriptStruct AkAudio.AkWindowsAdvancedInitializationSettingl
+struct FAkWindowsAdvancedInitializationSettingl : FAkAdvancedInitializationSettingsWithMultiCoreRendering {
 	uint32_t AudioAPI; // 0x38 (4)
 	char GlobalFocus : 0; // 0x3C (1)
 	char UseHeadMountedDisplayAudioDevice : 0; // 0x3D (1)
@@ -1511,8 +1511,8 @@ struct FAkXboxOneApuHeapInitializationSettings {
 	uint32_t NonCachedSize; // 0x4 (4)
 };
 
-// ScriptStruct AkAudio.AkXboxOneAdvancedInitializationSettings
-struct FAkXboxOneAdvancedInitializationSettings : FAkAdvancedInitializationSettingsWithMultiCoreRendering {
+// ScriptStruct AkAudio.AkXboxOneAdvancedInitializationSettinga
+struct FAkXboxOneAdvancedInitializationSetting : FAkAdvancedInitializationSettingsWithMultiCoreRendering {
 	uint16_t MaximumNumberOfXMAVoices; // 0x38 (2)
 	char UseHardwareCodecLowLatencyMode : 0; // 0x3A (1)
 };
@@ -1560,4 +1560,1407 @@ struct FMovieSceneTangentDataSerializationHelper {
 	float ArriveTangentWeight; // 0xC (4)
 	float LeaveTangentWeight; // 0x10 (4)
 };
+
+// Function AkAudio.AkAcousticPortal.OpenPortal
+inline void AAkAcousticPortal::OpenPortal() {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkAcousticPortal.OpenPortal");
+
+	struct OpenPortal_Params {
+		
+	}; OpenPortal_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AkAudio.AkAcousticPortal.GetCurrentState
+inline enum class Unknow AAkAcousticPortal::GetCurrentState() {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkAcousticPortal.GetCurrentState");
+
+	struct GetCurrentState_Params {
+		
+		enum class Unknow ReturnValue;
+
+	}; GetCurrentState_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AkAudio.AkAcousticPortal.ClosePortal
+inline void AAkAcousticPortal::ClosePortal() {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkAcousticPortal.ClosePortal");
+
+	struct ClosePortal_Params {
+		
+	}; ClosePortal_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AkAudio.AkAmbientSound.StopAmbientSound
+inline void AAkAmbientSound::StopAmbientSound() {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkAmbientSound.StopAmbientSound");
+
+	struct StopAmbientSound_Params {
+		
+	}; StopAmbientSound_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AkAudio.AkAmbientSound.StartAmbientSound
+inline void AAkAmbientSound::StartAmbientSound() {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkAmbientSound.StartAmbientSound");
+
+	struct StartAmbientSound_Params {
+		
+	}; StartAmbientSound_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AkAudio.AkAndroidInitializationSetting.MigrateMultiCoreRendering
+inline void UAkAndroidInitializationSetting::MigrateMultiCoreRendering(char NewValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkAndroidInitializationSetting.MigrateMultiCoreRendering");
+
+	struct MigrateMultiCoreRendering_Params {
+		char NewValue;
+	}; MigrateMultiCoreRendering_Params Params;
+
+	Params.NewValue = NewValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AkAudio.AkAudioEvent.GetMinimumDuration
+inline float UAkAudioEvent::GetMinimumDuration() {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkAudioEvent.GetMinimumDuration");
+
+	struct GetMinimumDuration_Params {
+		
+		float ReturnValue;
+
+	}; GetMinimumDuration_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AkAudio.AkAudioEvent.GetMaximumDuration
+inline float UAkAudioEvent::GetMaximumDuration() {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkAudioEvent.GetMaximumDuration");
+
+	struct GetMaximumDuration_Params {
+		
+		float ReturnValue;
+
+	}; GetMaximumDuration_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AkAudio.AkAudioEvent.GetMaxAttenuationRadius
+inline float UAkAudioEvent::GetMaxAttenuationRadius() {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkAudioEvent.GetMaxAttenuationRadius");
+
+	struct GetMaxAttenuationRadius_Params {
+		
+		float ReturnValue;
+
+	}; GetMaxAttenuationRadius_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AkAudio.AkAudioEvent.GetIsInfinite
+inline char UAkAudioEvent::GetIsInfinite() {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkAudioEvent.GetIsInfinite");
+
+	struct GetIsInfinite_Params {
+		
+		char ReturnValue;
+
+	}; GetIsInfinite_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AkAudio.AkGameObject.Stop
+inline void UAkGameObject::Stop() {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkGameObject.Stop");
+
+	struct Stop_Params {
+		
+	}; Stop_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AkAudio.AkGameObject.PostAssociatedAkEventAsync
+inline void UAkGameObject::PostAssociatedAkEventAsync(struct Unknown WorldContextObject, int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<Unknown>& ExternalSources, struct Unknown LatentInfo, int32_t& PlayingID) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkGameObject.PostAssociatedAkEventAsync");
+
+	struct PostAssociatedAkEventAsync_Params {
+		struct Unknown WorldContextObject;
+		int32_t CallbackMask;
+		struct FDelegate& PostEventCallback;
+		struct TArray<Unknown>& ExternalSources;
+		struct Unknown LatentInfo;
+		int32_t& PlayingID;
+	}; PostAssociatedAkEventAsync_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.CallbackMask = CallbackMask;
+	Params.LatentInfo = LatentInfo;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	PostEventCallback = Params.PostEventCallback;
+	ExternalSources = Params.ExternalSources;
+	PlayingID = Params.PlayingID;
+
+}
+
+// Function AkAudio.AkGameObject.PostAssociatedAkEvent
+inline int32_t UAkGameObject::PostAssociatedAkEvent(int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<Unknown>& ExternalSources) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkGameObject.PostAssociatedAkEvent");
+
+	struct PostAssociatedAkEvent_Params {
+		int32_t CallbackMask;
+		struct FDelegate& PostEventCallback;
+		struct TArray<Unknown>& ExternalSources;
+		int32_t ReturnValue;
+
+	}; PostAssociatedAkEvent_Params Params;
+
+	Params.CallbackMask = CallbackMask;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	PostEventCallback = Params.PostEventCallback;
+	ExternalSources = Params.ExternalSources;
+
+
+	return params.ReturnValue;
+}
+
+// Function AkAudio.AkGameObject.PostAkEventAsync
+inline void UAkGameObject::PostAkEventAsync(struct Unknown WorldContextObject, struct Unknown AkEvent, int32_t& PlayingID, int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<Unknown>& ExternalSources, struct Unknown LatentInfo) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkGameObject.PostAkEventAsync");
+
+	struct PostAkEventAsync_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown AkEvent;
+		int32_t& PlayingID;
+		int32_t CallbackMask;
+		struct FDelegate& PostEventCallback;
+		struct TArray<Unknown>& ExternalSources;
+		struct Unknown LatentInfo;
+	}; PostAkEventAsync_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.AkEvent = AkEvent;
+	Params.CallbackMask = CallbackMask;
+	Params.LatentInfo = LatentInfo;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	PlayingID = Params.PlayingID;
+	PostEventCallback = Params.PostEventCallback;
+	ExternalSources = Params.ExternalSources;
+
+}
+
+// Function AkAudio.AkGameObject.PostAkEvent
+inline int32_t UAkGameObject::PostAkEvent(struct Unknown AkEvent, int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<Unknown>& ExternalSources, struct FString in_EventName) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkGameObject.PostAkEvent");
+
+	struct PostAkEvent_Params {
+		struct Unknown AkEvent;
+		int32_t CallbackMask;
+		struct FDelegate& PostEventCallback;
+		struct TArray<Unknown>& ExternalSources;
+		struct FString in_EventName;
+		int32_t ReturnValue;
+
+	}; PostAkEvent_Params Params;
+
+	Params.AkEvent = AkEvent;
+	Params.CallbackMask = CallbackMask;
+	Params.in_EventName = in_EventName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	PostEventCallback = Params.PostEventCallback;
+	ExternalSources = Params.ExternalSources;
+
+
+	return params.ReturnValue;
+}
+
+// Function AkAudio.AkComponent.UseReverbVolumes
+inline void UAkComponent::UseReverbVolumes(char inUseReverbVolumes) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.UseReverbVolumes");
+
+	struct UseReverbVolumes_Params {
+		char inUseReverbVolumes;
+	}; UseReverbVolumes_Params Params;
+
+	Params.inUseReverbVolumes = inUseReverbVolumes;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AkAudio.AkComponent.UseEarlyReflections
+inline void UAkComponent::UseEarlyReflections(struct Unknown AuxBus, int32_t Order, float BusSendGain, float MaxPathLength, char SpotReflectors, struct FString AuxBusName) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.UseEarlyReflections");
+
+	struct UseEarlyReflections_Params {
+		struct Unknown AuxBus;
+		int32_t Order;
+		float BusSendGain;
+		float MaxPathLength;
+		char SpotReflectors;
+		struct FString AuxBusName;
+	}; UseEarlyReflections_Params Params;
+
+	Params.AuxBus = AuxBus;
+	Params.Order = Order;
+	Params.BusSendGain = BusSendGain;
+	Params.MaxPathLength = MaxPathLength;
+	Params.SpotReflectors = SpotReflectors;
+	Params.AuxBusName = AuxBusName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AkAudio.AkComponent.SetSwitch
+inline void UAkComponent::SetSwitch(struct Unknown SwitchValue, struct FString SwitchGroup, struct FString SwitchState) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.SetSwitch");
+
+	struct SetSwitch_Params {
+		struct Unknown SwitchValue;
+		struct FString SwitchGroup;
+		struct FString SwitchState;
+	}; SetSwitch_Params Params;
+
+	Params.SwitchValue = SwitchValue;
+	Params.SwitchGroup = SwitchGroup;
+	Params.SwitchState = SwitchState;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AkAudio.AkComponent.SetStopWhenOwnerDestroyed
+inline void UAkComponent::SetStopWhenOwnerDestroyed(char bStopWhenOwnerDestroyed) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.SetStopWhenOwnerDestroyed");
+
+	struct SetStopWhenOwnerDestroyed_Params {
+		char bStopWhenOwnerDestroyed;
+	}; SetStopWhenOwnerDestroyed_Params Params;
+
+	Params.bStopWhenOwnerDestroyed = bStopWhenOwnerDestroyed;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AkAudio.AkComponent.SetRTPCValue
+inline void UAkComponent::SetRTPCValue(struct Unknown RTPCValue, float Value, int32_t InterpolationTimeMs, struct FString RTPC) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.SetRTPCValue");
+
+	struct SetRTPCValue_Params {
+		struct Unknown RTPCValue;
+		float Value;
+		int32_t InterpolationTimeMs;
+		struct FString RTPC;
+	}; SetRTPCValue_Params Params;
+
+	Params.RTPCValue = RTPCValue;
+	Params.Value = Value;
+	Params.InterpolationTimeMs = InterpolationTimeMs;
+	Params.RTPC = RTPC;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AkAudio.AkComponent.SetOutputBusVolume
+inline void UAkComponent::SetOutputBusVolume(float BusVolume) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.SetOutputBusVolume");
+
+	struct SetOutputBusVolume_Params {
+		float BusVolume;
+	}; SetOutputBusVolume_Params Params;
+
+	Params.BusVolume = BusVolume;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AkAudio.AkComponent.SetListeners
+inline void UAkComponent::SetListeners(struct TArray<Unknown>& Listeners) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.SetListeners");
+
+	struct SetListeners_Params {
+		struct TArray<Unknown>& Listeners;
+	}; SetListeners_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Listeners = Params.Listeners;
+
+}
+
+// Function AkAudio.AkComponent.SetEarlyReflectionsVolume
+inline void UAkComponent::SetEarlyReflectionsVolume(float SendVolume) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.SetEarlyReflectionsVolume");
+
+	struct SetEarlyReflectionsVolume_Params {
+		float SendVolume;
+	}; SetEarlyReflectionsVolume_Params Params;
+
+	Params.SendVolume = SendVolume;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AkAudio.AkComponent.SetEarlyReflectionsAuxBus
+inline void UAkComponent::SetEarlyReflectionsAuxBus(struct FString AuxBusName) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.SetEarlyReflectionsAuxBus");
+
+	struct SetEarlyReflectionsAuxBus_Params {
+		struct FString AuxBusName;
+	}; SetEarlyReflectionsAuxBus_Params Params;
+
+	Params.AuxBusName = AuxBusName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AkAudio.AkComponent.SetAttenuationScalingFactor
+inline void UAkComponent::SetAttenuationScalingFactor(float Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.SetAttenuationScalingFactor");
+
+	struct SetAttenuationScalingFactor_Params {
+		float Value;
+	}; SetAttenuationScalingFactor_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AkAudio.AkComponent.PostTrigger
+inline void UAkComponent::PostTrigger(struct Unknown TriggerValue, struct FString Trigger) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.PostTrigger");
+
+	struct PostTrigger_Params {
+		struct Unknown TriggerValue;
+		struct FString Trigger;
+	}; PostTrigger_Params Params;
+
+	Params.TriggerValue = TriggerValue;
+	Params.Trigger = Trigger;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AkAudio.AkComponent.PostAssociatedAkEventAndWaitForEndAsync
+inline void UAkComponent::PostAssociatedAkEventAndWaitForEndAsync(int32_t& PlayingID, struct TArray<Unknown>& ExternalSources, struct Unknown LatentInfo) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.PostAssociatedAkEventAndWaitForEndAsync");
+
+	struct PostAssociatedAkEventAndWaitForEndAsync_Params {
+		int32_t& PlayingID;
+		struct TArray<Unknown>& ExternalSources;
+		struct Unknown LatentInfo;
+	}; PostAssociatedAkEventAndWaitForEndAsync_Params Params;
+
+	Params.LatentInfo = LatentInfo;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	PlayingID = Params.PlayingID;
+	ExternalSources = Params.ExternalSources;
+
+}
+
+// Function AkAudio.AkComponent.PostAssociatedAkEventAndWaitForEnd
+inline int32_t UAkComponent::PostAssociatedAkEventAndWaitForEnd(struct TArray<Unknown>& ExternalSources, struct Unknown LatentInfo) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.PostAssociatedAkEventAndWaitForEnd");
+
+	struct PostAssociatedAkEventAndWaitForEnd_Params {
+		struct TArray<Unknown>& ExternalSources;
+		struct Unknown LatentInfo;
+		int32_t ReturnValue;
+
+	}; PostAssociatedAkEventAndWaitForEnd_Params Params;
+
+	Params.LatentInfo = LatentInfo;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	ExternalSources = Params.ExternalSources;
+
+
+	return params.ReturnValue;
+}
+
+// Function AkAudio.AkComponent.PostAkEventByName
+inline int32_t UAkComponent::PostAkEventByName(struct FString in_EventName) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.PostAkEventByName");
+
+	struct PostAkEventByName_Params {
+		struct FString in_EventName;
+		int32_t ReturnValue;
+
+	}; PostAkEventByName_Params Params;
+
+	Params.in_EventName = in_EventName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AkAudio.AkComponent.PostAkEventAndWaitForEndAsync
+inline void UAkComponent::PostAkEventAndWaitForEndAsync(struct Unknown AkEvent, int32_t& PlayingID, struct TArray<Unknown>& ExternalSources, struct Unknown LatentInfo) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.PostAkEventAndWaitForEndAsync");
+
+	struct PostAkEventAndWaitForEndAsync_Params {
+		struct Unknown AkEvent;
+		int32_t& PlayingID;
+		struct TArray<Unknown>& ExternalSources;
+		struct Unknown LatentInfo;
+	}; PostAkEventAndWaitForEndAsync_Params Params;
+
+	Params.AkEvent = AkEvent;
+	Params.LatentInfo = LatentInfo;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	PlayingID = Params.PlayingID;
+	ExternalSources = Params.ExternalSources;
+
+}
+
+// Function AkAudio.AkComponent.PostAkEventAndWaitForEnd
+inline int32_t UAkComponent::PostAkEventAndWaitForEnd(struct Unknown AkEvent, struct FString in_EventName, struct TArray<Unknown>& ExternalSources, struct Unknown LatentInfo) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.PostAkEventAndWaitForEnd");
+
+	struct PostAkEventAndWaitForEnd_Params {
+		struct Unknown AkEvent;
+		struct FString in_EventName;
+		struct TArray<Unknown>& ExternalSources;
+		struct Unknown LatentInfo;
+		int32_t ReturnValue;
+
+	}; PostAkEventAndWaitForEnd_Params Params;
+
+	Params.AkEvent = AkEvent;
+	Params.in_EventName = in_EventName;
+	Params.LatentInfo = LatentInfo;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	ExternalSources = Params.ExternalSources;
+
+
+	return params.ReturnValue;
+}
+
+// Function AkAudio.AkComponent.GetRTPCValue
+inline void UAkComponent::GetRTPCValue(struct Unknown RTPCValue, enum class Unknow InputValueType, float& Value, enum class Unknow& OutputValueType, struct FString RTPC, int32_t PlayingID) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.GetRTPCValue");
+
+	struct GetRTPCValue_Params {
+		struct Unknown RTPCValue;
+		enum class Unknow InputValueType;
+		float& Value;
+		enum class Unknow& OutputValueType;
+		struct FString RTPC;
+		int32_t PlayingID;
+	}; GetRTPCValue_Params Params;
+
+	Params.RTPCValue = RTPCValue;
+	Params.InputValueType = InputValueType;
+	Params.RTPC = RTPC;
+	Params.PlayingID = PlayingID;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Value = Params.Value;
+	OutputValueType = Params.OutputValueType;
+
+}
+
+// Function AkAudio.AkComponent.GetAttenuationRadius
+inline float UAkComponent::GetAttenuationRadius() {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.GetAttenuationRadius");
+
+	struct GetAttenuationRadius_Params {
+		
+		float ReturnValue;
+
+	}; GetAttenuationRadius_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AkAudio.AkCheckBox.SetIsChecked
+inline void UAkCheckBox::SetIsChecked(char InIsChecked) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkCheckBox.SetIsChecked");
+
+	struct SetIsChecked_Params {
+		char InIsChecked;
+	}; SetIsChecked_Params Params;
+
+	Params.InIsChecked = InIsChecked;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AkAudio.AkCheckBox.SetCheckedState
+inline void UAkCheckBox::SetCheckedState(enum class Unknow InCheckedState) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkCheckBox.SetCheckedState");
+
+	struct SetCheckedState_Params {
+		enum class Unknow InCheckedState;
+	}; SetCheckedState_Params Params;
+
+	Params.InCheckedState = InCheckedState;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AkAudio.AkCheckBox.SetAkItemId
+inline void UAkCheckBox::SetAkItemId(struct Unknown& ItemId) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkCheckBox.SetAkItemId");
+
+	struct SetAkItemId_Params {
+		struct Unknown& ItemId;
+	}; SetAkItemId_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	ItemId = Params.ItemId;
+
+}
+
+// Function AkAudio.AkCheckBox.SetAkBoolProperty
+inline void UAkCheckBox::SetAkBoolProperty(struct FString ItemProperty) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkCheckBox.SetAkBoolProperty");
+
+	struct SetAkBoolProperty_Params {
+		struct FString ItemProperty;
+	}; SetAkBoolProperty_Params Params;
+
+	Params.ItemProperty = ItemProperty;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AkAudio.AkCheckBox.IsPressed
+inline char UAkCheckBox::IsPressed() {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkCheckBox.IsPressed");
+
+	struct IsPressed_Params {
+		
+		char ReturnValue;
+
+	}; IsPressed_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AkAudio.AkCheckBox.IsChecked
+inline char UAkCheckBox::IsChecked() {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkCheckBox.IsChecked");
+
+	struct IsChecked_Params {
+		
+		char ReturnValue;
+
+	}; IsChecked_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AkAudio.AkCheckBox.GetCheckedState
+inline enum class Unknow UAkCheckBox::GetCheckedState() {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkCheckBox.GetCheckedState");
+
+	struct GetCheckedState_Params {
+		
+		enum class Unknow ReturnValue;
+
+	}; GetCheckedState_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AkAudio.AkCheckBox.GetAkProperty
+inline struct FString UAkCheckBox::GetAkProperty() {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkCheckBox.GetAkProperty");
+
+	struct GetAkProperty_Params {
+		
+		struct FString ReturnValue;
+
+	}; GetAkProperty_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AkAudio.AkCheckBox.GetAkItemId
+inline struct Unknown UAkCheckBox::GetAkItemId() {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkCheckBox.GetAkItemId");
+
+	struct GetAkItemId_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetAkItemId_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AkAudio.AkGeometryComponent.UpdateGeometry
+inline void UAkGeometryComponent::UpdateGeometry() {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkGeometryComponent.UpdateGeometry");
+
+	struct UpdateGeometry_Params {
+		
+	}; UpdateGeometry_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AkAudio.AkGeometryComponent.RemoveGeometry
+inline void UAkGeometryComponent::RemoveGeometry() {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkGeometryComponent.RemoveGeometry");
+
+	struct RemoveGeometry_Params {
+		
+	}; RemoveGeometry_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AkAudio.AkGeometryComponent.ConvertMesh
+inline void UAkGeometryComponent::ConvertMesh() {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkGeometryComponent.ConvertMesh");
+
+	struct ConvertMesh_Params {
+		
+	}; ConvertMesh_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AkAudio.AkHololensInitializationSettings.MigrateMultiCoreRendering
+inline void UAkHololensInitializationSettings::MigrateMultiCoreRendering(char NewValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkHololensInitializationSettings.MigrateMultiCoreRendering");
+
+	struct MigrateMultiCoreRendering_Params {
+		char NewValue;
+	}; MigrateMultiCoreRendering_Params Params;
+
+	Params.NewValue = NewValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AkAudio.AkItemBoolProperties.SetSearchText
+inline void UAkItemBoolProperties::SetSearchText(struct FString newText) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkItemBoolProperties.SetSearchText");
+
+	struct SetSearchText_Params {
+		struct FString newText;
+	}; SetSearchText_Params Params;
+
+	Params.newText = newText;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AkAudio.AkItemBoolProperties.GetSelectedProperty
+inline struct FString UAkItemBoolProperties::GetSelectedProperty() {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkItemBoolProperties.GetSelectedProperty");
+
+	struct GetSelectedProperty_Params {
+		
+		struct FString ReturnValue;
+
+	}; GetSelectedProperty_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AkAudio.AkItemBoolProperties.GetSearchText
+inline struct FString UAkItemBoolProperties::GetSearchText() {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkItemBoolProperties.GetSearchText");
+
+	struct GetSearchText_Params {
+		
+		struct FString ReturnValue;
+
+	}; GetSearchText_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AkAudio.AkItemProperties.SetSearchText
+inline void UAkItemProperties::SetSearchText(struct FString newText) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkItemProperties.SetSearchText");
+
+	struct SetSearchText_Params {
+		struct FString newText;
+	}; SetSearchText_Params Params;
+
+	Params.newText = newText;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AkAudio.AkItemProperties.GetSelectedProperty
+inline struct FString UAkItemProperties::GetSelectedProperty() {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkItemProperties.GetSelectedProperty");
+
+	struct GetSelectedProperty_Params {
+		
+		struct FString ReturnValue;
+
+	}; GetSelectedProperty_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AkAudio.AkItemProperties.GetSearchText
+inline struct FString UAkItemProperties::GetSearchText() {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkItemProperties.GetSearchText");
+
+	struct GetSearchText_Params {
+		
+		struct FString ReturnValue;
+
+	}; GetSearchText_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AkAudio.AkLinuxInitializationSettings.MigrateMultiCoreRendering
+inline void UAkLinuxInitializationSettings::MigrateMultiCoreRendering(char NewValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkLinuxInitializationSettings.MigrateMultiCoreRendering");
+
+	struct MigrateMultiCoreRendering_Params {
+		char NewValue;
+	}; MigrateMultiCoreRendering_Params Params;
+
+	Params.NewValue = NewValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AkAudio.AkLuminInitializationSettings.MigrateMultiCoreRendering
+inline void UAkLuminInitializationSettings::MigrateMultiCoreRendering(char NewValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkLuminInitializationSettings.MigrateMultiCoreRendering");
+
+	struct MigrateMultiCoreRendering_Params {
+		char NewValue;
+	}; MigrateMultiCoreRendering_Params Params;
+
+	Params.NewValue = NewValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AkAudio.AkMacInitializationSettings.MigrateMultiCoreRendering
+inline void UAkMacInitializationSettings::MigrateMultiCoreRendering(char NewValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkMacInitializationSettings.MigrateMultiCoreRendering");
+
+	struct MigrateMultiCoreRendering_Params {
+		char NewValue;
+	}; MigrateMultiCoreRendering_Params Params;
+
+	Params.NewValue = NewValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AkAudio.AkPS4InitializationSettings.MigrateMultiCoreRendering
+inline void UAkPS4InitializationSettings::MigrateMultiCoreRendering(char NewValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkPS4InitializationSettings.MigrateMultiCoreRendering");
+
+	struct MigrateMultiCoreRendering_Params {
+		char NewValue;
+	}; MigrateMultiCoreRendering_Params Params;
+
+	Params.NewValue = NewValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AkAudio.AkSlider.SetValue
+inline void UAkSlider::SetValue(float InValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkSlider.SetValue");
+
+	struct SetValue_Params {
+		float InValue;
+	}; SetValue_Params Params;
+
+	Params.InValue = InValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AkAudio.AkSlider.SetStepSize
+inline void UAkSlider::SetStepSize(float InValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkSlider.SetStepSize");
+
+	struct SetStepSize_Params {
+		float InValue;
+	}; SetStepSize_Params Params;
+
+	Params.InValue = InValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AkAudio.AkSlider.SetSliderHandleColor
+inline void UAkSlider::SetSliderHandleColor(struct Unknown InValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkSlider.SetSliderHandleColor");
+
+	struct SetSliderHandleColor_Params {
+		struct Unknown InValue;
+	}; SetSliderHandleColor_Params Params;
+
+	Params.InValue = InValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AkAudio.AkSlider.SetSliderBarColor
+inline void UAkSlider::SetSliderBarColor(struct Unknown InValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkSlider.SetSliderBarColor");
+
+	struct SetSliderBarColor_Params {
+		struct Unknown InValue;
+	}; SetSliderBarColor_Params Params;
+
+	Params.InValue = InValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AkAudio.AkSlider.SetLocked
+inline void UAkSlider::SetLocked(char InValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkSlider.SetLocked");
+
+	struct SetLocked_Params {
+		char InValue;
+	}; SetLocked_Params Params;
+
+	Params.InValue = InValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AkAudio.AkSlider.SetIndentHandle
+inline void UAkSlider::SetIndentHandle(char InValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkSlider.SetIndentHandle");
+
+	struct SetIndentHandle_Params {
+		char InValue;
+	}; SetIndentHandle_Params Params;
+
+	Params.InValue = InValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AkAudio.AkSlider.SetAkSliderItemProperty
+inline void UAkSlider::SetAkSliderItemProperty(struct FString ItemProperty) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkSlider.SetAkSliderItemProperty");
+
+	struct SetAkSliderItemProperty_Params {
+		struct FString ItemProperty;
+	}; SetAkSliderItemProperty_Params Params;
+
+	Params.ItemProperty = ItemProperty;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AkAudio.AkSlider.SetAkSliderItemId
+inline void UAkSlider::SetAkSliderItemId(struct Unknown& ItemId) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkSlider.SetAkSliderItemId");
+
+	struct SetAkSliderItemId_Params {
+		struct Unknown& ItemId;
+	}; SetAkSliderItemId_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	ItemId = Params.ItemId;
+
+}
+
+// Function AkAudio.AkSlider.GetValue
+inline float UAkSlider::GetValue() {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkSlider.GetValue");
+
+	struct GetValue_Params {
+		
+		float ReturnValue;
+
+	}; GetValue_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AkAudio.AkSlider.GetAkSliderItemProperty
+inline struct FString UAkSlider::GetAkSliderItemProperty() {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkSlider.GetAkSliderItemProperty");
+
+	struct GetAkSliderItemProperty_Params {
+		
+		struct FString ReturnValue;
+
+	}; GetAkSliderItemProperty_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AkAudio.AkSlider.GetAkSliderItemId
+inline struct Unknown UAkSlider::GetAkSliderItemId() {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkSlider.GetAkSliderItemId");
+
+	struct GetAkSliderItemId_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetAkSliderItemId_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AkAudio.AkSurfaceReflectorSetComponent.UpdateSurfaceReflectorSet
+inline void UAkSurfaceReflectorSetComponent::UpdateSurfaceReflectorSet() {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkSurfaceReflectorSetComponent.UpdateSurfaceReflectorSet");
+
+	struct UpdateSurfaceReflectorSet_Params {
+		
+	}; UpdateSurfaceReflectorSet_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AkAudio.AkSurfaceReflectorSetComponent.SendSurfaceReflectorSet
+inline void UAkSurfaceReflectorSetComponent::SendSurfaceReflectorSet() {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkSurfaceReflectorSetComponent.SendSurfaceReflectorSet");
+
+	struct SendSurfaceReflectorSet_Params {
+		
+	}; SendSurfaceReflectorSet_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AkAudio.AkSurfaceReflectorSetComponent.RemoveSurfaceReflectorSet
+inline void UAkSurfaceReflectorSetComponent::RemoveSurfaceReflectorSet() {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkSurfaceReflectorSetComponent.RemoveSurfaceReflectorSet");
+
+	struct RemoveSurfaceReflectorSet_Params {
+		
+	}; RemoveSurfaceReflectorSet_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AkAudio.AkSwitchInitializationSettings.MigrateMultiCoreRendering
+inline void UAkSwitchInitializationSettings::MigrateMultiCoreRendering(char NewValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkSwitchInitializationSettings.MigrateMultiCoreRendering");
+
+	struct MigrateMultiCoreRendering_Params {
+		char NewValue;
+	}; MigrateMultiCoreRendering_Params Params;
+
+	Params.NewValue = NewValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AkAudio.AkWindowsInitializationSettings.MigrateMultiCoreRendering
+inline void UAkWindowsInitializationSetting::MigrateMultiCoreRendering(char NewValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkWindowsInitializationSettings.MigrateMultiCoreRendering");
+
+	struct MigrateMultiCoreRendering_Params {
+		char NewValue;
+	}; MigrateMultiCoreRendering_Params Params;
+
+	Params.NewValue = NewValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AkAudio.AkWwiseTree.SetSearchText
+inline void UAkWwiseTree::SetSearchText(struct FString newText) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkWwiseTree.SetSearchText");
+
+	struct SetSearchText_Params {
+		struct FString newText;
+	}; SetSearchText_Params Params;
+
+	Params.newText = newText;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AkAudio.AkWwiseTree.GetSelectedItem
+inline struct Unknown UAkWwiseTree::GetSelectedItem() {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkWwiseTree.GetSelectedItem");
+
+	struct GetSelectedItem_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetSelectedItem_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AkAudio.AkWwiseTree.GetSearchText
+inline struct FString UAkWwiseTree::GetSearchText() {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkWwiseTree.GetSearchText");
+
+	struct GetSearchText_Params {
+		
+		struct FString ReturnValue;
+
+	}; GetSearchText_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AkAudio.AkXboxOneInitializationSetting.MigrateMultiCoreRendering
+inline void UAkXboxOneInitializationSetting::MigrateMultiCoreRendering(char NewValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkXboxOneInitializationSetting.MigrateMultiCoreRendering");
+
+	struct MigrateMultiCoreRendering_Params {
+		char NewValue;
+	}; MigrateMultiCoreRendering_Params Params;
+
+	Params.NewValue = NewValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AkAudio.PostEventAsync.PostEventAsync
+inline struct Unknown UPostEventAsync::PostEventAsync(struct Unknown WorldContextObject, struct Unknown AkEvent, struct Unknown Actor, int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<Unknown>& ExternalSources, char bStopWhenAttachedToDestroyed) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.PostEventAsync.PostEventAsync");
+
+	struct PostEventAsync_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown AkEvent;
+		struct Unknown Actor;
+		int32_t CallbackMask;
+		struct FDelegate& PostEventCallback;
+		struct TArray<Unknown>& ExternalSources;
+		char bStopWhenAttachedToDestroyed;
+		struct Unknown ReturnValue;
+
+	}; PostEventAsync_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.AkEvent = AkEvent;
+	Params.Actor = Actor;
+	Params.CallbackMask = CallbackMask;
+	Params.bStopWhenAttachedToDestroyed = bStopWhenAttachedToDestroyed;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	PostEventCallback = Params.PostEventCallback;
+	ExternalSources = Params.ExternalSources;
+
+
+	return params.ReturnValue;
+}
+
+// Function AkAudio.PostEventAsync.PollPostEventFuture
+inline void UPostEventAsync::PollPostEventFuture() {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.PostEventAsync.PollPostEventFuture");
+
+	struct PollPostEventFuture_Params {
+		
+	}; PollPostEventFuture_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AkAudio.PostEventAtLocationAsync.PostEventAtLocationAsync
+inline struct Unknown UPostEventAtLocationAsync::PostEventAtLocationAsync(struct Unknown WorldContextObject, struct Unknown AkEvent, struct Unknown Location, struct Unknown Orientation) {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.PostEventAtLocationAsync.PostEventAtLocationAsync");
+
+	struct PostEventAtLocationAsync_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown AkEvent;
+		struct Unknown Location;
+		struct Unknown Orientation;
+		struct Unknown ReturnValue;
+
+	}; PostEventAtLocationAsync_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.AkEvent = AkEvent;
+	Params.Location = Location;
+	Params.Orientation = Orientation;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AkAudio.PostEventAtLocationAsync.PollPostEventFuture
+inline void UPostEventAtLocationAsync::PollPostEventFuture() {
+	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.PostEventAtLocationAsync.PollPostEventFuture");
+
+	struct PollPostEventFuture_Params {
+		
+	}; PollPostEventFuture_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
 

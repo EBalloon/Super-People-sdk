@@ -25,3 +25,132 @@ public:
 	struct FText GetDownloadText(); // Function BravoHotelPatch.BravoHotelPatchWidget.GetDownloadText(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2066B70>
 };
 
+// Function BravoHotelPatch.BravoHotelPatchWidget.StartPatchService
+inline void UBravoHotelPatchWidget::StartPatchService() {
+	static auto fn = UObject::FindObject<UFunction>("Function BravoHotelPatch.BravoHotelPatchWidget.StartPatchService");
+
+	struct StartPatchService_Params {
+		
+	}; StartPatchService_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function BravoHotelPatch.BravoHotelPatchWidget.ReceiveStartPatchService
+inline void UBravoHotelPatchWidget::ReceiveStartPatchService() {
+	static auto fn = UObject::FindObject<UFunction>("Function BravoHotelPatch.BravoHotelPatchWidget.ReceiveStartPatchService");
+
+	struct ReceiveStartPatchService_Params {
+		
+	}; ReceiveStartPatchService_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function BravoHotelPatch.BravoHotelPatchWidget.ReceiveReadyToStartGame
+inline void UBravoHotelPatchWidget::ReceiveReadyToStartGame() {
+	static auto fn = UObject::FindObject<UFunction>("Function BravoHotelPatch.BravoHotelPatchWidget.ReceiveReadyToStartGame");
+
+	struct ReceiveReadyToStartGame_Params {
+		
+	}; ReceiveReadyToStartGame_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function BravoHotelPatch.BravoHotelPatchWidget.ReceiveReadyToInstallPatch
+inline void UBravoHotelPatchWidget::ReceiveReadyToInstallPatch() {
+	static auto fn = UObject::FindObject<UFunction>("Function BravoHotelPatch.BravoHotelPatchWidget.ReceiveReadyToInstallPatch");
+
+	struct ReceiveReadyToInstallPatch_Params {
+		
+	}; ReceiveReadyToInstallPatch_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function BravoHotelPatch.BravoHotelPatchWidget.ReceiveErrorPatchService
+inline void UBravoHotelPatchWidget::ReceiveErrorPatchService(enum class Unknow ErrorCode, struct FText& ErrorText) {
+	static auto fn = UObject::FindObject<UFunction>("Function BravoHotelPatch.BravoHotelPatchWidget.ReceiveErrorPatchService");
+
+	struct ReceiveErrorPatchService_Params {
+		enum class Unknow ErrorCode;
+		struct FText& ErrorText;
+	}; ReceiveErrorPatchService_Params Params;
+
+	Params.ErrorCode = ErrorCode;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	ErrorText = Params.ErrorText;
+
+}
+
+// Function BravoHotelPatch.BravoHotelPatchWidget.GetVersionText
+inline struct FText UBravoHotelPatchWidget::GetVersionText() {
+	static auto fn = UObject::FindObject<UFunction>("Function BravoHotelPatch.BravoHotelPatchWidget.GetVersionText");
+
+	struct GetVersionText_Params {
+		
+		struct FText ReturnValue;
+
+	}; GetVersionText_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function BravoHotelPatch.BravoHotelPatchWidget.GetGameDefaultMap
+inline struct FString UBravoHotelPatchWidget::GetGameDefaultMap() {
+	static auto fn = UObject::FindObject<UFunction>("Function BravoHotelPatch.BravoHotelPatchWidget.GetGameDefaultMap");
+
+	struct GetGameDefaultMap_Params {
+		
+		struct FString ReturnValue;
+
+	}; GetGameDefaultMap_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function BravoHotelPatch.BravoHotelPatchWidget.GetDownloadText
+inline struct FText UBravoHotelPatchWidget::GetDownloadText() {
+	static auto fn = UObject::FindObject<UFunction>("Function BravoHotelPatch.BravoHotelPatchWidget.GetDownloadText");
+
+	struct GetDownloadText_Params {
+		
+		struct FText ReturnValue;
+
+	}; GetDownloadText_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+

@@ -92,7 +92,7 @@ public:
 	void SetAvoidanceGroup(int32_t GroupFlags); // Function PhysXVehicles.WheeledVehicleMovementComponent.SetAvoidanceGroup(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18ACE80>
 	void SetAvoidanceEnabled(char bEnable); // Function PhysXVehicles.WheeledVehicleMovementComponent.SetAvoidanceEnabled(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18ACDF0>
 	void ServerUpdateState(float InSteeringInput, float InThrottleInput, float InBrakeInput, float InHandbrakeInput, int32_t CurrentGear); // Function PhysXVehicles.WheeledVehicleMovementComponent.ServerUpdateState(Net|NetReliableNative|Event|Protected|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18ACC20>
-	float GetWheelsRotationSpeed(); // Function PhysXVehicles.WheeledVehicleMovementComponent.GetWheelsRotationSpeed(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18ACBC0>
+	float Get(); // Function PhysXVehicles.WheeledVehicleMovementComponent.Get(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18ACBC0>
 	char GetUseAutoGears(); // Function PhysXVehicles.WheeledVehicleMovementComponent.GetUseAutoGears(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18ACB60>
 	int32_t GetTargetGear(); // Function PhysXVehicles.WheeledVehicleMovementComponent.GetTargetGear(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18ACB30>
 	float GetForwardSpeed(); // Function PhysXVehicles.WheeledVehicleMovementComponent.GetForwardSpeed(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18ACA60>
@@ -266,4 +266,476 @@ struct FVehicleDifferential4WData {
 	float FrontBias; // 0x14 (4)
 	float RearBias; // 0x18 (4)
 };
+
+// Function PhysXVehicles.WheeledVehicleMovementComponent.SetUseAutoGears
+inline void UWheeledVehicleMovementComponent::SetUseAutoGears(char bUseAuto) {
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.SetUseAutoGears");
+
+	struct SetUseAutoGears_Params {
+		char bUseAuto;
+	}; SetUseAutoGears_Params Params;
+
+	Params.bUseAuto = bUseAuto;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function PhysXVehicles.WheeledVehicleMovementComponent.SetThrottleInput
+inline void UWheeledVehicleMovementComponent::SetThrottleInput(float Throttle) {
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.SetThrottleInput");
+
+	struct SetThrottleInput_Params {
+		float Throttle;
+	}; SetThrottleInput_Params Params;
+
+	Params.Throttle = Throttle;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function PhysXVehicles.WheeledVehicleMovementComponent.SetTargetGear
+inline void UWheeledVehicleMovementComponent::SetTargetGear(int32_t GearNum, char bImmediate) {
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.SetTargetGear");
+
+	struct SetTargetGear_Params {
+		int32_t GearNum;
+		char bImmediate;
+	}; SetTargetGear_Params Params;
+
+	Params.GearNum = GearNum;
+	Params.bImmediate = bImmediate;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function PhysXVehicles.WheeledVehicleMovementComponent.SetSteeringInput
+inline void UWheeledVehicleMovementComponent::SetSteeringInput(float Steering) {
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.SetSteeringInput");
+
+	struct SetSteeringInput_Params {
+		float Steering;
+	}; SetSteeringInput_Params Params;
+
+	Params.Steering = Steering;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function PhysXVehicles.WheeledVehicleMovementComponent.SetHandbrakeInput
+inline void UWheeledVehicleMovementComponent::SetHandbrakeInput(char bNewHandbrake) {
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.SetHandbrakeInput");
+
+	struct SetHandbrakeInput_Params {
+		char bNewHandbrake;
+	}; SetHandbrakeInput_Params Params;
+
+	Params.bNewHandbrake = bNewHandbrake;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToIgnoreMask
+inline void UWheeledVehicleMovementComponent::SetGroupsToIgnoreMask(struct Unknown& GroupMask) {
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToIgnoreMask");
+
+	struct SetGroupsToIgnoreMask_Params {
+		struct Unknown& GroupMask;
+	}; SetGroupsToIgnoreMask_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	GroupMask = Params.GroupMask;
+
+}
+
+// Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToIgnore
+inline void UWheeledVehicleMovementComponent::SetGroupsToIgnore(int32_t GroupFlags) {
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToIgnore");
+
+	struct SetGroupsToIgnore_Params {
+		int32_t GroupFlags;
+	}; SetGroupsToIgnore_Params Params;
+
+	Params.GroupFlags = GroupFlags;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToAvoidMask
+inline void UWheeledVehicleMovementComponent::SetGroupsToAvoidMask(struct Unknown& GroupMask) {
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToAvoidMask");
+
+	struct SetGroupsToAvoidMask_Params {
+		struct Unknown& GroupMask;
+	}; SetGroupsToAvoidMask_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	GroupMask = Params.GroupMask;
+
+}
+
+// Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToAvoid
+inline void UWheeledVehicleMovementComponent::SetGroupsToAvoid(int32_t GroupFlags) {
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToAvoid");
+
+	struct SetGroupsToAvoid_Params {
+		int32_t GroupFlags;
+	}; SetGroupsToAvoid_Params Params;
+
+	Params.GroupFlags = GroupFlags;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function PhysXVehicles.WheeledVehicleMovementComponent.SetGearUp
+inline void UWheeledVehicleMovementComponent::SetGearUp(char bNewGearUp) {
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.SetGearUp");
+
+	struct SetGearUp_Params {
+		char bNewGearUp;
+	}; SetGearUp_Params Params;
+
+	Params.bNewGearUp = bNewGearUp;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function PhysXVehicles.WheeledVehicleMovementComponent.SetGearDown
+inline void UWheeledVehicleMovementComponent::SetGearDown(char bNewGearDown) {
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.SetGearDown");
+
+	struct SetGearDown_Params {
+		char bNewGearDown;
+	}; SetGearDown_Params Params;
+
+	Params.bNewGearDown = bNewGearDown;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function PhysXVehicles.WheeledVehicleMovementComponent.SetBrakeInput
+inline void UWheeledVehicleMovementComponent::SetBrakeInput(float Brake) {
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.SetBrakeInput");
+
+	struct SetBrakeInput_Params {
+		float Brake;
+	}; SetBrakeInput_Params Params;
+
+	Params.Brake = Brake;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function PhysXVehicles.WheeledVehicleMovementComponent.SetAvoidanceGroupMask
+inline void UWheeledVehicleMovementComponent::SetAvoidanceGroupMask(struct Unknown& GroupMask) {
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.SetAvoidanceGroupMask");
+
+	struct SetAvoidanceGroupMask_Params {
+		struct Unknown& GroupMask;
+	}; SetAvoidanceGroupMask_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	GroupMask = Params.GroupMask;
+
+}
+
+// Function PhysXVehicles.WheeledVehicleMovementComponent.SetAvoidanceGroup
+inline void UWheeledVehicleMovementComponent::SetAvoidanceGroup(int32_t GroupFlags) {
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.SetAvoidanceGroup");
+
+	struct SetAvoidanceGroup_Params {
+		int32_t GroupFlags;
+	}; SetAvoidanceGroup_Params Params;
+
+	Params.GroupFlags = GroupFlags;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function PhysXVehicles.WheeledVehicleMovementComponent.SetAvoidanceEnabled
+inline void UWheeledVehicleMovementComponent::SetAvoidanceEnabled(char bEnable) {
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.SetAvoidanceEnabled");
+
+	struct SetAvoidanceEnabled_Params {
+		char bEnable;
+	}; SetAvoidanceEnabled_Params Params;
+
+	Params.bEnable = bEnable;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function PhysXVehicles.WheeledVehicleMovementComponent.ServerUpdateState
+inline void UWheeledVehicleMovementComponent::ServerUpdateState(float InSteeringInput, float InThrottleInput, float InBrakeInput, float InHandbrakeInput, int32_t CurrentGear) {
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.ServerUpdateState");
+
+	struct ServerUpdateState_Params {
+		float InSteeringInput;
+		float InThrottleInput;
+		float InBrakeInput;
+		float InHandbrakeInput;
+		int32_t CurrentGear;
+	}; ServerUpdateState_Params Params;
+
+	Params.InSteeringInput = InSteeringInput;
+	Params.InThrottleInput = InThrottleInput;
+	Params.InBrakeInput = InBrakeInput;
+	Params.InHandbrakeInput = InHandbrakeInput;
+	Params.CurrentGear = CurrentGear;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function PhysXVehicles.WheeledVehicleMovementComponent.Get
+inline float UWheeledVehicleMovementComponent::Get() {
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.Get");
+
+	struct Get_Params {
+		
+		float ReturnValue;
+
+	}; Get_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function PhysXVehicles.WheeledVehicleMovementComponent.GetUseAutoGears
+inline char UWheeledVehicleMovementComponent::GetUseAutoGears() {
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.GetUseAutoGears");
+
+	struct GetUseAutoGears_Params {
+		
+		char ReturnValue;
+
+	}; GetUseAutoGears_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function PhysXVehicles.WheeledVehicleMovementComponent.GetTargetGear
+inline int32_t UWheeledVehicleMovementComponent::GetTargetGear() {
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.GetTargetGear");
+
+	struct GetTargetGear_Params {
+		
+		int32_t ReturnValue;
+
+	}; GetTargetGear_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function PhysXVehicles.WheeledVehicleMovementComponent.GetForwardSpeed
+inline float UWheeledVehicleMovementComponent::GetForwardSpeed() {
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.GetForwardSpeed");
+
+	struct GetForwardSpeed_Params {
+		
+		float ReturnValue;
+
+	}; GetForwardSpeed_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function PhysXVehicles.WheeledVehicleMovementComponent.GetEngineRotationSpeed
+inline float UWheeledVehicleMovementComponent::GetEngineRotationSpeed() {
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.GetEngineRotationSpeed");
+
+	struct GetEngineRotationSpeed_Params {
+		
+		float ReturnValue;
+
+	}; GetEngineRotationSpeed_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function PhysXVehicles.WheeledVehicleMovementComponent.GetEngineMaxRotationSpeed
+inline float UWheeledVehicleMovementComponent::GetEngineMaxRotationSpeed() {
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.GetEngineMaxRotationSpeed");
+
+	struct GetEngineMaxRotationSpeed_Params {
+		
+		float ReturnValue;
+
+	}; GetEngineMaxRotationSpeed_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function PhysXVehicles.WheeledVehicleMovementComponent.GetCurrentGear
+inline int32_t UWheeledVehicleMovementComponent::GetCurrentGear() {
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.WheeledVehicleMovementComponent.GetCurrentGear");
+
+	struct GetCurrentGear_Params {
+		
+		int32_t ReturnValue;
+
+	}; GetCurrentGear_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function PhysXVehicles.VehicleAnimInstance.GetVehicle
+inline struct Unknown UVehicleAnimInstance::GetVehicle() {
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.VehicleAnimInstance.GetVehicle");
+
+	struct GetVehicle_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetVehicle_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function PhysXVehicles.VehicleWheel.IsInAir
+inline char UVehicleWheel::IsInAir() {
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.VehicleWheel.IsInAir");
+
+	struct IsInAir_Params {
+		
+		char ReturnValue;
+
+	}; IsInAir_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function PhysXVehicles.VehicleWheel.GetSuspensionOffset
+inline float UVehicleWheel::GetSuspensionOffset() {
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.VehicleWheel.GetSuspensionOffset");
+
+	struct GetSuspensionOffset_Params {
+		
+		float ReturnValue;
+
+	}; GetSuspensionOffset_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function PhysXVehicles.VehicleWheel.GetSteerAngle
+inline float UVehicleWheel::GetSteerAngle() {
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.VehicleWheel.GetSteerAngle");
+
+	struct GetSteerAngle_Params {
+		
+		float ReturnValue;
+
+	}; GetSteerAngle_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function PhysXVehicles.VehicleWheel.GetRotationAngle
+inline float UVehicleWheel::GetRotationAngle() {
+	static auto fn = UObject::FindObject<UFunction>("Function PhysXVehicles.VehicleWheel.GetRotationAngle");
+
+	struct GetRotationAngle_Params {
+		
+		float ReturnValue;
+
+	}; GetRotationAngle_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
 

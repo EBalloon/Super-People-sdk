@@ -21,3 +21,54 @@ public:
 	void ExecuteUbergraph_Temp(int32_t EntryPoint); // Function Temp.Temp_C.ExecuteUbergraph_Temp(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 };
 
+// Function Temp.Temp_C.GetImage
+inline void UTemp_C::GetImage(int32_t Index, struct Unknown& Image) {
+	static auto fn = UObject::FindObject<UFunction>("Function Temp.Temp_C.GetImage");
+
+	struct GetImage_Params {
+		int32_t Index;
+		struct Unknown& Image;
+	}; GetImage_Params Params;
+
+	Params.Index = Index;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Image = Params.Image;
+
+}
+
+// Function Temp.Temp_C.Set
+inline void UTemp_C::Set(struct TArray<Unknown>& List) {
+	static auto fn = UObject::FindObject<UFunction>("Function Temp.Temp_C.Set");
+
+	struct Set_Params {
+		struct TArray<Unknown>& List;
+	}; Set_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	List = Params.List;
+
+}
+
+// Function Temp.Temp_C.ExecuteUbergraph_Temp
+inline void UTemp_C::ExecuteUbergraph_Temp(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function Temp.Temp_C.ExecuteUbergraph_Temp");
+
+	struct ExecuteUbergraph_Temp_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_Temp_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+

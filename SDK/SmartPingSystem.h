@@ -48,7 +48,7 @@ public:
 	void GetIconFromTableID(struct FName TableID, struct Unknown& Settings, char& bRet); // Function SmartPingSystem.SmartPingSystem_C.GetIconFromTableID(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 	void Check(char& IsAgree, struct Unknown& TargetActor, char& MyPing); // Function SmartPingSystem.SmartPingSystem_C.Check(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 	void HandlePingOnClientFromWorldMap(struct Unknown WorldLocation, struct Unknown Owner, char HasMaker); // Function SmartPingSystem.SmartPingSystem_C.HandlePingOnClientFromWorldMap(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void IsShowSelectMenu(char& ret); // Function SmartPingSystem.SmartPingSystem_C.IsShowSelectMenu(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void IsShowSelectMenu(char& Ret); // Function SmartPingSystem.SmartPingSystem_C.IsShowSelectMenu(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 	void GetPingType(struct Unknown TargetActor, enum class Unknow& PingType, struct Unknown& RetTargetActor); // Function SmartPingSystem.SmartPingSystem_C.GetPingType(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 	void CancelSelectionInMenu(); // Function SmartPingSystem.SmartPingSystem_C.CancelSelectionInMenu(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 	void ConfirmSelectionInMenu(); // Function SmartPingSystem.SmartPingSystem_C.ConfirmSelectionInMenu(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
@@ -79,4 +79,712 @@ public:
 	void ExecuteOwningClient__DelegateSignature(struct Unknown PingInfo); // Function SmartPingSystem.SmartPingSystem_C.ExecuteOwningClient__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 	void RequestOnServer__DelegateSignature(struct Unknown PingInfo); // Function SmartPingSystem.SmartPingSystem_C.RequestOnServer__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 };
+
+// Function SmartPingSystem.SmartPingSystem_C.Set
+inline void USmartPingSystem_C::Set(char IsPingType) {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.Set");
+
+	struct Set_Params {
+		char IsPingType;
+	}; Set_Params Params;
+
+	Params.IsPingType = IsPingType;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function SmartPingSystem.SmartPingSystem_C.GetPingInfoByIndex
+inline void USmartPingSystem_C::GetPingInfoByIndex(int32_t Index, struct Unknown& PingInfo) {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.GetPingInfoByIndex");
+
+	struct GetPingInfoByIndex_Params {
+		int32_t Index;
+		struct Unknown& PingInfo;
+	}; GetPingInfoByIndex_Params Params;
+
+	Params.Index = Index;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	PingInfo = Params.PingInfo;
+
+}
+
+// Function SmartPingSystem.SmartPingSystem_C.OnMapRightClick
+inline void USmartPingSystem_C::OnMapRightClick(struct Unknown ServerLocation, int32_t PingTypeIndex, char IsAgree) {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.OnMapRightClick");
+
+	struct OnMapRightClick_Params {
+		struct Unknown ServerLocation;
+		int32_t PingTypeIndex;
+		char IsAgree;
+	}; OnMapRightClick_Params Params;
+
+	Params.ServerLocation = ServerLocation;
+	Params.PingTypeIndex = PingTypeIndex;
+	Params.IsAgree = IsAgree;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function SmartPingSystem.SmartPingSystem_C.GetMainWidget
+inline void USmartPingSystem_C::GetMainWidget(struct Unknown& MainWidget) {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.GetMainWidget");
+
+	struct GetMainWidget_Params {
+		struct Unknown& MainWidget;
+	}; GetMainWidget_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	MainWidget = Params.MainWidget;
+
+}
+
+// Function SmartPingSystem.SmartPingSystem_C.CreateSmartPingWidget
+inline struct Unknown USmartPingSystem_C::CreateSmartPingWidget() {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.CreateSmartPingWidget");
+
+	struct CreateSmartPingWidget_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; CreateSmartPingWidget_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function SmartPingSystem.SmartPingSystem_C.GetIconType
+inline void USmartPingSystem_C::GetIconType(struct Unknown Item, char& IsItem, enum class Unknow& ItemPingType) {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.GetIconType");
+
+	struct GetIconType_Params {
+		struct Unknown Item;
+		char& IsItem;
+		enum class Unknow& ItemPingType;
+	}; GetIconType_Params Params;
+
+	Params.Item = Item;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	IsItem = Params.IsItem;
+	ItemPingType = Params.ItemPingType;
+
+}
+
+// Function SmartPingSystem.SmartPingSystem_C.GetActorIndex
+inline void USmartPingSystem_C::GetActorIndex(struct Unknown Actor, int32_t& Index) {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.GetActorIndex");
+
+	struct GetActorIndex_Params {
+		struct Unknown Actor;
+		int32_t& Index;
+	}; GetActorIndex_Params Params;
+
+	Params.Actor = Actor;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Index = Params.Index;
+
+}
+
+// Function SmartPingSystem.SmartPingSystem_C.DeletePing
+inline void USmartPingSystem_C::DeletePing(struct Unknown Owner) {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.DeletePing");
+
+	struct DeletePing_Params {
+		struct Unknown Owner;
+	}; DeletePing_Params Params;
+
+	Params.Owner = Owner;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function SmartPingSystem.SmartPingSystem_C.GetPingActorFromOwner
+inline void USmartPingSystem_C::GetPingActorFromOwner(struct Unknown OwnerState, struct Unknown& PingActor) {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.GetPingActorFromOwner");
+
+	struct GetPingActorFromOwner_Params {
+		struct Unknown OwnerState;
+		struct Unknown& PingActor;
+	}; GetPingActorFromOwner_Params Params;
+
+	Params.OwnerState = OwnerState;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	PingActor = Params.PingActor;
+
+}
+
+// Function SmartPingSystem.SmartPingSystem_C.GetIconFromTableID
+inline void USmartPingSystem_C::GetIconFromTableID(struct FName TableID, struct Unknown& Settings, char& bRet) {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.GetIconFromTableID");
+
+	struct GetIconFromTableID_Params {
+		struct FName TableID;
+		struct Unknown& Settings;
+		char& bRet;
+	}; GetIconFromTableID_Params Params;
+
+	Params.TableID = TableID;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Settings = Params.Settings;
+	bRet = Params.bRet;
+
+}
+
+// Function SmartPingSystem.SmartPingSystem_C.Check
+inline void USmartPingSystem_C::Check(char& IsAgree, struct Unknown& TargetActor, char& MyPing) {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.Check");
+
+	struct Check_Params {
+		char& IsAgree;
+		struct Unknown& TargetActor;
+		char& MyPing;
+	}; Check_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	IsAgree = Params.IsAgree;
+	TargetActor = Params.TargetActor;
+	MyPing = Params.MyPing;
+
+}
+
+// Function SmartPingSystem.SmartPingSystem_C.HandlePingOnClientFromWorldMap
+inline void USmartPingSystem_C::HandlePingOnClientFromWorldMap(struct Unknown WorldLocation, struct Unknown Owner, char HasMaker) {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.HandlePingOnClientFromWorldMap");
+
+	struct HandlePingOnClientFromWorldMap_Params {
+		struct Unknown WorldLocation;
+		struct Unknown Owner;
+		char HasMaker;
+	}; HandlePingOnClientFromWorldMap_Params Params;
+
+	Params.WorldLocation = WorldLocation;
+	Params.Owner = Owner;
+	Params.HasMaker = HasMaker;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function SmartPingSystem.SmartPingSystem_C.IsShowSelectMenu
+inline void USmartPingSystem_C::IsShowSelectMenu(char& Ret) {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.IsShowSelectMenu");
+
+	struct IsShowSelectMenu_Params {
+		char& Ret;
+	}; IsShowSelectMenu_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Ret = Params.Ret;
+
+}
+
+// Function SmartPingSystem.SmartPingSystem_C.GetPingType
+inline void USmartPingSystem_C::GetPingType(struct Unknown TargetActor, enum class Unknow& PingType, struct Unknown& RetTargetActor) {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.GetPingType");
+
+	struct GetPingType_Params {
+		struct Unknown TargetActor;
+		enum class Unknow& PingType;
+		struct Unknown& RetTargetActor;
+	}; GetPingType_Params Params;
+
+	Params.TargetActor = TargetActor;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	PingType = Params.PingType;
+	RetTargetActor = Params.RetTargetActor;
+
+}
+
+// Function SmartPingSystem.SmartPingSystem_C.CancelSelectionInMenu
+inline void USmartPingSystem_C::CancelSelectionInMenu() {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.CancelSelectionInMenu");
+
+	struct CancelSelectionInMenu_Params {
+		
+	}; CancelSelectionInMenu_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function SmartPingSystem.SmartPingSystem_C.ConfirmSelectionInMenu
+inline void USmartPingSystem_C::ConfirmSelectionInMenu() {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.ConfirmSelectionInMenu");
+
+	struct ConfirmSelectionInMenu_Params {
+		
+	}; ConfirmSelectionInMenu_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function SmartPingSystem.SmartPingSystem_C.HandlePingOnClient
+inline void USmartPingSystem_C::HandlePingOnClient(struct FName Icon, struct Unknown Owner) {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.HandlePingOnClient");
+
+	struct HandlePingOnClient_Params {
+		struct FName Icon;
+		struct Unknown Owner;
+	}; HandlePingOnClient_Params Params;
+
+	Params.Icon = Icon;
+	Params.Owner = Owner;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function SmartPingSystem.SmartPingSystem_C.GetHitUsingTraceSettings
+inline void USmartPingSystem_C::GetHitUsingTraceSettings(struct Unknown& Hit) {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.GetHitUsingTraceSettings");
+
+	struct GetHitUsingTraceSettings_Params {
+		struct Unknown& Hit;
+	}; GetHitUsingTraceSettings_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Hit = Params.Hit;
+
+}
+
+// Function SmartPingSystem.SmartPingSystem_C.ToggleSelectionMenu
+inline void USmartPingSystem_C::ToggleSelectionMenu(char Visible, char OnMap, char Enable, struct Unknown& SelectionMenu) {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.ToggleSelectionMenu");
+
+	struct ToggleSelectionMenu_Params {
+		char Visible;
+		char OnMap;
+		char Enable;
+		struct Unknown& SelectionMenu;
+	}; ToggleSelectionMenu_Params Params;
+
+	Params.Visible = Visible;
+	Params.OnMap = OnMap;
+	Params.Enable = Enable;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	SelectionMenu = Params.SelectionMenu;
+
+}
+
+// Function SmartPingSystem.SmartPingSystem_C.ReceiveBeginPlay
+inline void USmartPingSystem_C::ReceiveBeginPlay() {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.ReceiveBeginPlay");
+
+	struct ReceiveBeginPlay_Params {
+		
+	}; ReceiveBeginPlay_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function SmartPingSystem.SmartPingSystem_C.OnSelected
+inline void USmartPingSystem_C::OnSelected(struct Unknown Selected, struct FName ID, char IsPingType, int32_t RequestMessageIndex) {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.OnSelected");
+
+	struct OnSelected_Params {
+		struct Unknown Selected;
+		struct FName ID;
+		char IsPingType;
+		int32_t RequestMessageIndex;
+	}; OnSelected_Params Params;
+
+	Params.Selected = Selected;
+	Params.ID = ID;
+	Params.IsPingType = IsPingType;
+	Params.RequestMessageIndex = RequestMessageIndex;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function SmartPingSystem.SmartPingSystem_C.CreateBindOnSelect
+inline void USmartPingSystem_C::CreateBindOnSelect() {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.CreateBindOnSelect");
+
+	struct CreateBindOnSelect_Params {
+		
+	}; CreateBindOnSelect_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function SmartPingSystem.SmartPingSystem_C.RequestPingOnServer
+inline void USmartPingSystem_C::RequestPingOnServer() {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.RequestPingOnServer");
+
+	struct RequestPingOnServer_Params {
+		
+	}; RequestPingOnServer_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function SmartPingSystem.SmartPingSystem_C.HandleGamepadInput
+inline void USmartPingSystem_C::HandleGamepadInput(float XAxis, float YAxis) {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.HandleGamepadInput");
+
+	struct HandleGamepadInput_Params {
+		float XAxis;
+		float YAxis;
+	}; HandleGamepadInput_Params Params;
+
+	Params.XAxis = XAxis;
+	Params.YAxis = YAxis;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function SmartPingSystem.SmartPingSystem_C.Direct
+inline void USmartPingSystem_C::Direct(char Force, struct FName ForcePingTable) {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.Direct");
+
+	struct Direct_Params {
+		char Force;
+		struct FName ForcePingTable;
+	}; Direct_Params Params;
+
+	Params.Force = Force;
+	Params.ForcePingTable = ForcePingTable;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function SmartPingSystem.SmartPingSystem_C.ResetSmartPing
+inline void USmartPingSystem_C::ResetSmartPing(struct TArray<Unknown>& TeamStateList) {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.ResetSmartPing");
+
+	struct ResetSmartPing_Params {
+		struct TArray<Unknown>& TeamStateList;
+	}; ResetSmartPing_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	TeamStateList = Params.TeamStateList;
+
+}
+
+// Function SmartPingSystem.SmartPingSystem_C.RemovePing
+inline void USmartPingSystem_C::RemovePing(struct Unknown OwnerCharacter) {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.RemovePing");
+
+	struct RemovePing_Params {
+		struct Unknown OwnerCharacter;
+	}; RemovePing_Params Params;
+
+	Params.OwnerCharacter = OwnerCharacter;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function SmartPingSystem.SmartPingSystem_C.Hovered
+inline void USmartPingSystem_C::Hovered(struct Unknown Settings, char IsPingType) {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.Hovered");
+
+	struct Hovered_Params {
+		struct Unknown Settings;
+		char IsPingType;
+	}; Hovered_Params Params;
+
+	Params.Settings = Settings;
+	Params.IsPingType = IsPingType;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function SmartPingSystem.SmartPingSystem_C.AddPersonalSupplyBoxPing
+inline void USmartPingSystem_C::AddPersonalSupplyBoxPing(struct Unknown NewPersonalSupplyBoxPosition) {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.AddPersonalSupplyBoxPing");
+
+	struct AddPersonalSupplyBoxPing_Params {
+		struct Unknown NewPersonalSupplyBoxPosition;
+	}; AddPersonalSupplyBoxPing_Params Params;
+
+	Params.NewPersonalSupplyBoxPosition = NewPersonalSupplyBoxPosition;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function SmartPingSystem.SmartPingSystem_C.SetPingByInputKey
+inline void USmartPingSystem_C::SetPingByInputKey(int32_t KeyIndex) {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.SetPingByInputKey");
+
+	struct SetPingByInputKey_Params {
+		int32_t KeyIndex;
+	}; SetPingByInputKey_Params Params;
+
+	Params.KeyIndex = KeyIndex;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function SmartPingSystem.SmartPingSystem_C.ClearPing
+inline void USmartPingSystem_C::ClearPing() {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.ClearPing");
+
+	struct ClearPing_Params {
+		
+	}; ClearPing_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function SmartPingSystem.SmartPingSystem_C.AddBookPing
+inline void USmartPingSystem_C::AddBookPing(struct Unknown NewPersonalSupplyBoxPosition) {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.AddBookPing");
+
+	struct AddBookPing_Params {
+		struct Unknown NewPersonalSupplyBoxPosition;
+	}; AddBookPing_Params Params;
+
+	Params.NewPersonalSupplyBoxPosition = NewPersonalSupplyBoxPosition;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function SmartPingSystem.SmartPingSystem_C.RemoveBookPing
+inline void USmartPingSystem_C::RemoveBookPing() {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.RemoveBookPing");
+
+	struct RemoveBookPing_Params {
+		
+	}; RemoveBookPing_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function SmartPingSystem.SmartPingSystem_C.RemovePersonalSupplyBoxPing
+inline void USmartPingSystem_C::RemovePersonalSupplyBoxPing() {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.RemovePersonalSupplyBoxPing");
+
+	struct RemovePersonalSupplyBoxPing_Params {
+		
+	}; RemovePersonalSupplyBoxPing_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function SmartPingSystem.SmartPingSystem_C.ShowSmartPingMessage
+inline void USmartPingSystem_C::ShowSmartPingMessage(struct FString Message, struct FString Color, struct FString UserName, struct FString ImagePath, struct FString TierIcon) {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.ShowSmartPingMessage");
+
+	struct ShowSmartPingMessage_Params {
+		struct FString Message;
+		struct FString Color;
+		struct FString UserName;
+		struct FString ImagePath;
+		struct FString TierIcon;
+	}; ShowSmartPingMessage_Params Params;
+
+	Params.Message = Message;
+	Params.Color = Color;
+	Params.UserName = UserName;
+	Params.ImagePath = ImagePath;
+	Params.TierIcon = TierIcon;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function SmartPingSystem.SmartPingSystem_C.ShowSmartPingMunu
+inline void USmartPingSystem_C::ShowSmartPingMunu(char bIsVisible, char bIsOnMap, char bIsEnableRequestMessage) {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.ShowSmartPingMunu");
+
+	struct ShowSmartPingMunu_Params {
+		char bIsVisible;
+		char bIsOnMap;
+		char bIsEnableRequestMessage;
+	}; ShowSmartPingMunu_Params Params;
+
+	Params.bIsVisible = bIsVisible;
+	Params.bIsOnMap = bIsOnMap;
+	Params.bIsEnableRequestMessage = bIsEnableRequestMessage;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function SmartPingSystem.SmartPingSystem_C.ExecuteUbergraph_SmartPingSystem
+inline void USmartPingSystem_C::ExecuteUbergraph_SmartPingSystem(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.ExecuteUbergraph_SmartPingSystem");
+
+	struct ExecuteUbergraph_SmartPingSystem_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_SmartPingSystem_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function SmartPingSystem.SmartPingSystem_C.PingReceivedOnServer__DelegateSignature
+inline void USmartPingSystem_C::PingReceivedOnServer__DelegateSignature() {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.PingReceivedOnServer__DelegateSignature");
+
+	struct PingReceivedOnServer__DelegateSignature_Params {
+		
+	}; PingReceivedOnServer__DelegateSignature_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function SmartPingSystem.SmartPingSystem_C.MenuDeactivated__DelegateSignature
+inline void USmartPingSystem_C::MenuDeactivated__DelegateSignature() {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.MenuDeactivated__DelegateSignature");
+
+	struct MenuDeactivated__DelegateSignature_Params {
+		
+	}; MenuDeactivated__DelegateSignature_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function SmartPingSystem.SmartPingSystem_C.MenuActivated__DelegateSignature
+inline void USmartPingSystem_C::MenuActivated__DelegateSignature() {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.MenuActivated__DelegateSignature");
+
+	struct MenuActivated__DelegateSignature_Params {
+		
+	}; MenuActivated__DelegateSignature_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function SmartPingSystem.SmartPingSystem_C.ExecuteOwningClient__DelegateSignature
+inline void USmartPingSystem_C::ExecuteOwningClient__DelegateSignature(struct Unknown PingInfo) {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.ExecuteOwningClient__DelegateSignature");
+
+	struct ExecuteOwningClient__DelegateSignature_Params {
+		struct Unknown PingInfo;
+	}; ExecuteOwningClient__DelegateSignature_Params Params;
+
+	Params.PingInfo = PingInfo;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function SmartPingSystem.SmartPingSystem_C.RequestOnServer__DelegateSignature
+inline void USmartPingSystem_C::RequestOnServer__DelegateSignature(struct Unknown PingInfo) {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.RequestOnServer__DelegateSignature");
+
+	struct RequestOnServer__DelegateSignature_Params {
+		struct Unknown PingInfo;
+	}; RequestOnServer__DelegateSignature_Params Params;
+
+	Params.PingInfo = PingInfo;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
 

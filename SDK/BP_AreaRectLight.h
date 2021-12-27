@@ -45,3 +45,103 @@ public:
 	void ExecuteUbergraph_BP_AreaRectLight(int32_t EntryPoint); // Function BP_AreaRectLight.BP_AreaRectLight_C.ExecuteUbergraph_BP_AreaRectLight(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 };
 
+// Function BP_AreaRectLight.BP_AreaRectLight_C.NewFunction_1
+inline void ABP_AreaRectLight_C::NewFunction_1() {
+	static auto fn = UObject::FindObject<UFunction>("Function BP_AreaRectLight.BP_AreaRectLight_C.NewFunction_1");
+
+	struct NewFunction_1_Params {
+		
+	}; NewFunction_1_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function BP_AreaRectLight.BP_AreaRectLight_C.LightArraySetup
+inline void ABP_AreaRectLight_C::LightArraySetup() {
+	static auto fn = UObject::FindObject<UFunction>("Function BP_AreaRectLight.BP_AreaRectLight_C.LightArraySetup");
+
+	struct LightArraySetup_Params {
+		
+	}; LightArraySetup_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function BP_AreaRectLight.BP_AreaRectLight_C.UpdateLightValues
+inline void ABP_AreaRectLight_C::UpdateLightValues() {
+	static auto fn = UObject::FindObject<UFunction>("Function BP_AreaRectLight.BP_AreaRectLight_C.UpdateLightValues");
+
+	struct UpdateLightValues_Params {
+		
+	}; UpdateLightValues_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function BP_AreaRectLight.BP_AreaRectLight_C.UserConstructionScript
+inline void ABP_AreaRectLight_C::UserConstructionScript() {
+	static auto fn = UObject::FindObject<UFunction>("Function BP_AreaRectLight.BP_AreaRectLight_C.UserConstructionScript");
+
+	struct UserConstructionScript_Params {
+		
+	}; UserConstructionScript_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function BP_AreaRectLight.BP_AreaRectLight_C.ReceiveBeginPlay
+inline void ABP_AreaRectLight_C::ReceiveBeginPlay() {
+	static auto fn = UObject::FindObject<UFunction>("Function BP_AreaRectLight.BP_AreaRectLight_C.ReceiveBeginPlay");
+
+	struct ReceiveBeginPlay_Params {
+		
+	}; ReceiveBeginPlay_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function BP_AreaRectLight.BP_AreaRectLight_C.ReceiveTick
+inline void ABP_AreaRectLight_C::ReceiveTick(float DeltaSeconds) {
+	static auto fn = UObject::FindObject<UFunction>("Function BP_AreaRectLight.BP_AreaRectLight_C.ReceiveTick");
+
+	struct ReceiveTick_Params {
+		float DeltaSeconds;
+	}; ReceiveTick_Params Params;
+
+	Params.DeltaSeconds = DeltaSeconds;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function BP_AreaRectLight.BP_AreaRectLight_C.ExecuteUbergraph_BP_AreaRectLight
+inline void ABP_AreaRectLight_C::ExecuteUbergraph_BP_AreaRectLight(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function BP_AreaRectLight.BP_AreaRectLight_C.ExecuteUbergraph_BP_AreaRectLight");
+
+	struct ExecuteUbergraph_BP_AreaRectLight_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_BP_AreaRectLight_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+

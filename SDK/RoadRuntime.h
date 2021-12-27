@@ -100,3 +100,400 @@ struct FSideActorManager {
 	int32_t SocketIndex; // 0x18 (4)
 };
 
+// Function RoadRuntime.CrossActor.UpdateSideMesh
+inline void ACrossActor::UpdateSideMesh(struct Unknown InPrototype, struct Unknown MeshRelativeLocation, struct Unknown MeshRelativeRotation, struct Unknown MeshRelativeScale, int32_t SocketIndex, char IsEnable, char IsNormalized) {
+	static auto fn = UObject::FindObject<UFunction>("Function RoadRuntime.CrossActor.UpdateSideMesh");
+
+	struct UpdateSideMesh_Params {
+		struct Unknown InPrototype;
+		struct Unknown MeshRelativeLocation;
+		struct Unknown MeshRelativeRotation;
+		struct Unknown MeshRelativeScale;
+		int32_t SocketIndex;
+		char IsEnable;
+		char IsNormalized;
+	}; UpdateSideMesh_Params Params;
+
+	Params.InPrototype = InPrototype;
+	Params.MeshRelativeLocation = MeshRelativeLocation;
+	Params.MeshRelativeRotation = MeshRelativeRotation;
+	Params.MeshRelativeScale = MeshRelativeScale;
+	Params.SocketIndex = SocketIndex;
+	Params.IsEnable = IsEnable;
+	Params.IsNormalized = IsNormalized;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function RoadRuntime.CrossActor.UpdateSideActor
+inline void ACrossActor::UpdateSideActor(struct Unknown* InPrototype, struct Unknown ActorRelativeLocation, struct Unknown ActorRelativeRotation, struct Unknown ActorRelativeScale, int32_t SocketIndex, char IsEnable, char IsNormalized) {
+	static auto fn = UObject::FindObject<UFunction>("Function RoadRuntime.CrossActor.UpdateSideActor");
+
+	struct UpdateSideActor_Params {
+		struct Unknown* InPrototype;
+		struct Unknown ActorRelativeLocation;
+		struct Unknown ActorRelativeRotation;
+		struct Unknown ActorRelativeScale;
+		int32_t SocketIndex;
+		char IsEnable;
+		char IsNormalized;
+	}; UpdateSideActor_Params Params;
+
+	Params.InPrototype = InPrototype;
+	Params.ActorRelativeLocation = ActorRelativeLocation;
+	Params.ActorRelativeRotation = ActorRelativeRotation;
+	Params.ActorRelativeScale = ActorRelativeScale;
+	Params.SocketIndex = SocketIndex;
+	Params.IsEnable = IsEnable;
+	Params.IsNormalized = IsNormalized;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function RoadRuntime.CrossActor.PushSideMesh
+inline void ACrossActor::PushSideMesh(struct Unknown InPrototype, struct Unknown MeshRelativeLocation, struct Unknown MeshRelativeRotation, struct Unknown MeshRelativeScale, int32_t SocketIndex, char IsEnable, char IsNormalized) {
+	static auto fn = UObject::FindObject<UFunction>("Function RoadRuntime.CrossActor.PushSideMesh");
+
+	struct PushSideMesh_Params {
+		struct Unknown InPrototype;
+		struct Unknown MeshRelativeLocation;
+		struct Unknown MeshRelativeRotation;
+		struct Unknown MeshRelativeScale;
+		int32_t SocketIndex;
+		char IsEnable;
+		char IsNormalized;
+	}; PushSideMesh_Params Params;
+
+	Params.InPrototype = InPrototype;
+	Params.MeshRelativeLocation = MeshRelativeLocation;
+	Params.MeshRelativeRotation = MeshRelativeRotation;
+	Params.MeshRelativeScale = MeshRelativeScale;
+	Params.SocketIndex = SocketIndex;
+	Params.IsEnable = IsEnable;
+	Params.IsNormalized = IsNormalized;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function RoadRuntime.CrossActor.PushSideActor
+inline void ACrossActor::PushSideActor(struct Unknown* InPrototype, struct Unknown ActorRelativeLocation, struct Unknown ActorRelativeRotation, struct Unknown ActorRelativeScale, int32_t SocketIndex, char IsEnable, char IsNormalized) {
+	static auto fn = UObject::FindObject<UFunction>("Function RoadRuntime.CrossActor.PushSideActor");
+
+	struct PushSideActor_Params {
+		struct Unknown* InPrototype;
+		struct Unknown ActorRelativeLocation;
+		struct Unknown ActorRelativeRotation;
+		struct Unknown ActorRelativeScale;
+		int32_t SocketIndex;
+		char IsEnable;
+		char IsNormalized;
+	}; PushSideActor_Params Params;
+
+	Params.InPrototype = InPrototype;
+	Params.ActorRelativeLocation = ActorRelativeLocation;
+	Params.ActorRelativeRotation = ActorRelativeRotation;
+	Params.ActorRelativeScale = ActorRelativeScale;
+	Params.SocketIndex = SocketIndex;
+	Params.IsEnable = IsEnable;
+	Params.IsNormalized = IsNormalized;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function RoadRuntime.CrossActor.DestroySideObjects
+inline void ACrossActor::DestroySideObjects() {
+	static auto fn = UObject::FindObject<UFunction>("Function RoadRuntime.CrossActor.DestroySideObjects");
+
+	struct DestroySideObjects_Params {
+		
+	}; DestroySideObjects_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function RoadRuntime.RoadActor.UpdateSplineMesh
+inline void ARoadActor::UpdateSplineMesh(int32_t MeshIndex) {
+	static auto fn = UObject::FindObject<UFunction>("Function RoadRuntime.RoadActor.UpdateSplineMesh");
+
+	struct UpdateSplineMesh_Params {
+		int32_t MeshIndex;
+	}; UpdateSplineMesh_Params Params;
+
+	Params.MeshIndex = MeshIndex;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function RoadRuntime.RoadActor.UpdateSideMeshes
+inline void ARoadActor::UpdateSideMeshes(struct Unknown InPrototype, struct Unknown MeshRelativeLocation, struct Unknown MeshRelativeRotation, struct Unknown MeshRelativeScale, int32_t SocketIndex, int32_t InShift, int32_t InSpacing, char IsEnable, char IsNormalized) {
+	static auto fn = UObject::FindObject<UFunction>("Function RoadRuntime.RoadActor.UpdateSideMeshes");
+
+	struct UpdateSideMeshes_Params {
+		struct Unknown InPrototype;
+		struct Unknown MeshRelativeLocation;
+		struct Unknown MeshRelativeRotation;
+		struct Unknown MeshRelativeScale;
+		int32_t SocketIndex;
+		int32_t InShift;
+		int32_t InSpacing;
+		char IsEnable;
+		char IsNormalized;
+	}; UpdateSideMeshes_Params Params;
+
+	Params.InPrototype = InPrototype;
+	Params.MeshRelativeLocation = MeshRelativeLocation;
+	Params.MeshRelativeRotation = MeshRelativeRotation;
+	Params.MeshRelativeScale = MeshRelativeScale;
+	Params.SocketIndex = SocketIndex;
+	Params.InShift = InShift;
+	Params.InSpacing = InSpacing;
+	Params.IsEnable = IsEnable;
+	Params.IsNormalized = IsNormalized;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function RoadRuntime.RoadActor.UpdateSideActor
+inline void ARoadActor::UpdateSideActor(struct Unknown* InPrototype, struct Unknown ActorRelativeLocation, struct Unknown ActorRelativeRotation, struct Unknown ActorRelativeScale, int32_t SocketIndex, int32_t InShift, int32_t InSpacing, char IsEnable, char IsNormalized) {
+	static auto fn = UObject::FindObject<UFunction>("Function RoadRuntime.RoadActor.UpdateSideActor");
+
+	struct UpdateSideActor_Params {
+		struct Unknown* InPrototype;
+		struct Unknown ActorRelativeLocation;
+		struct Unknown ActorRelativeRotation;
+		struct Unknown ActorRelativeScale;
+		int32_t SocketIndex;
+		int32_t InShift;
+		int32_t InSpacing;
+		char IsEnable;
+		char IsNormalized;
+	}; UpdateSideActor_Params Params;
+
+	Params.InPrototype = InPrototype;
+	Params.ActorRelativeLocation = ActorRelativeLocation;
+	Params.ActorRelativeRotation = ActorRelativeRotation;
+	Params.ActorRelativeScale = ActorRelativeScale;
+	Params.SocketIndex = SocketIndex;
+	Params.InShift = InShift;
+	Params.InSpacing = InSpacing;
+	Params.IsEnable = IsEnable;
+	Params.IsNormalized = IsNormalized;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function RoadRuntime.RoadActor.UpdateSegment
+inline void ARoadActor::UpdateSegment(int32_t SegmentIndex, struct Unknown SplineComponent, struct Unknown StaticMesh, char InAxis) {
+	static auto fn = UObject::FindObject<UFunction>("Function RoadRuntime.RoadActor.UpdateSegment");
+
+	struct UpdateSegment_Params {
+		int32_t SegmentIndex;
+		struct Unknown SplineComponent;
+		struct Unknown StaticMesh;
+		char InAxis;
+	}; UpdateSegment_Params Params;
+
+	Params.SegmentIndex = SegmentIndex;
+	Params.SplineComponent = SplineComponent;
+	Params.StaticMesh = StaticMesh;
+	Params.InAxis = InAxis;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function RoadRuntime.RoadActor.PushSideMesh
+inline void ARoadActor::PushSideMesh(struct Unknown InPrototype, struct Unknown MeshRelativeLocation, struct Unknown MeshRelativeRotation, struct Unknown MeshRelativeScale, int32_t SocketIndex, int32_t InShift, int32_t InSpacing, char IsEnable, char IsNormalized) {
+	static auto fn = UObject::FindObject<UFunction>("Function RoadRuntime.RoadActor.PushSideMesh");
+
+	struct PushSideMesh_Params {
+		struct Unknown InPrototype;
+		struct Unknown MeshRelativeLocation;
+		struct Unknown MeshRelativeRotation;
+		struct Unknown MeshRelativeScale;
+		int32_t SocketIndex;
+		int32_t InShift;
+		int32_t InSpacing;
+		char IsEnable;
+		char IsNormalized;
+	}; PushSideMesh_Params Params;
+
+	Params.InPrototype = InPrototype;
+	Params.MeshRelativeLocation = MeshRelativeLocation;
+	Params.MeshRelativeRotation = MeshRelativeRotation;
+	Params.MeshRelativeScale = MeshRelativeScale;
+	Params.SocketIndex = SocketIndex;
+	Params.InShift = InShift;
+	Params.InSpacing = InSpacing;
+	Params.IsEnable = IsEnable;
+	Params.IsNormalized = IsNormalized;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function RoadRuntime.RoadActor.PushSideActor
+inline void ARoadActor::PushSideActor(struct Unknown* InPrototype, struct Unknown ActorRelativeLocation, struct Unknown ActorRelativeRotation, struct Unknown ActorRelativeScale, int32_t SocketIndex, int32_t InShift, int32_t InSpacing, char IsEnable, char IsNormalized) {
+	static auto fn = UObject::FindObject<UFunction>("Function RoadRuntime.RoadActor.PushSideActor");
+
+	struct PushSideActor_Params {
+		struct Unknown* InPrototype;
+		struct Unknown ActorRelativeLocation;
+		struct Unknown ActorRelativeRotation;
+		struct Unknown ActorRelativeScale;
+		int32_t SocketIndex;
+		int32_t InShift;
+		int32_t InSpacing;
+		char IsEnable;
+		char IsNormalized;
+	}; PushSideActor_Params Params;
+
+	Params.InPrototype = InPrototype;
+	Params.ActorRelativeLocation = ActorRelativeLocation;
+	Params.ActorRelativeRotation = ActorRelativeRotation;
+	Params.ActorRelativeScale = ActorRelativeScale;
+	Params.SocketIndex = SocketIndex;
+	Params.InShift = InShift;
+	Params.InSpacing = InSpacing;
+	Params.IsEnable = IsEnable;
+	Params.IsNormalized = IsNormalized;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function RoadRuntime.RoadActor.PushCurbsMeshes
+inline void ARoadActor::PushCurbsMeshes(struct Unknown InPrototype, struct Unknown InStartPrototype, struct Unknown InEndPrototype, struct Unknown MeshRelativeLocation, struct Unknown MeshRelativeScale, int32_t SocketIndex, char IsEnable, char InStartEnable, char InEndEnable) {
+	static auto fn = UObject::FindObject<UFunction>("Function RoadRuntime.RoadActor.PushCurbsMeshes");
+
+	struct PushCurbsMeshes_Params {
+		struct Unknown InPrototype;
+		struct Unknown InStartPrototype;
+		struct Unknown InEndPrototype;
+		struct Unknown MeshRelativeLocation;
+		struct Unknown MeshRelativeScale;
+		int32_t SocketIndex;
+		char IsEnable;
+		char InStartEnable;
+		char InEndEnable;
+	}; PushCurbsMeshes_Params Params;
+
+	Params.InPrototype = InPrototype;
+	Params.InStartPrototype = InStartPrototype;
+	Params.InEndPrototype = InEndPrototype;
+	Params.MeshRelativeLocation = MeshRelativeLocation;
+	Params.MeshRelativeScale = MeshRelativeScale;
+	Params.SocketIndex = SocketIndex;
+	Params.IsEnable = IsEnable;
+	Params.InStartEnable = InStartEnable;
+	Params.InEndEnable = InEndEnable;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function RoadRuntime.RoadActor.DestroySideObjects
+inline void ARoadActor::DestroySideObjects() {
+	static auto fn = UObject::FindObject<UFunction>("Function RoadRuntime.RoadActor.DestroySideObjects");
+
+	struct DestroySideObjects_Params {
+		
+	}; DestroySideObjects_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function RoadRuntime.RoadActor.DestroySideCurbs
+inline void ARoadActor::DestroySideCurbs() {
+	static auto fn = UObject::FindObject<UFunction>("Function RoadRuntime.RoadActor.DestroySideCurbs");
+
+	struct DestroySideCurbs_Params {
+		
+	}; DestroySideCurbs_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function RoadRuntime.RoadActor.ClearSplineMeshes
+inline void ARoadActor::ClearSplineMeshes() {
+	static auto fn = UObject::FindObject<UFunction>("Function RoadRuntime.RoadActor.ClearSplineMeshes");
+
+	struct ClearSplineMeshes_Params {
+		
+	}; ClearSplineMeshes_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function RoadRuntime.RoadActor.ApproxLength
+inline float ARoadActor::ApproxLength(struct Unknown& SplineInfo, float Start, float End, int32_t ApproxSections) {
+	static auto fn = UObject::FindObject<UFunction>("Function RoadRuntime.RoadActor.ApproxLength");
+
+	struct ApproxLength_Params {
+		struct Unknown& SplineInfo;
+		float Start;
+		float End;
+		int32_t ApproxSections;
+		float ReturnValue;
+
+	}; ApproxLength_Params Params;
+
+	Params.Start = Start;
+	Params.End = End;
+	Params.ApproxSections = ApproxSections;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	SplineInfo = Params.SplineInfo;
+
+
+	return params.ReturnValue;
+}
+
+// Function RoadRuntime.RoadActor.AddSplineMesh
+inline void ARoadActor::AddSplineMesh(int32_t MeshIndex) {
+	static auto fn = UObject::FindObject<UFunction>("Function RoadRuntime.RoadActor.AddSplineMesh");
+
+	struct AddSplineMesh_Params {
+		int32_t MeshIndex;
+	}; AddSplineMesh_Params Params;
+
+	Params.MeshIndex = MeshIndex;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+

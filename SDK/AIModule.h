@@ -1479,8 +1479,8 @@ public:
 	struct Unknown* ForcedItemType; // 0x68 (8)
 };
 
-// Class AIModule.EnvQueryGenerator_Projected
-class UEnvQueryGenerator_ProjectedPase : public UEnvQueryGenerator {
+// Class AIModule.EnvQueryGenerator_ProjectedPoints
+class UEnvQueryGenerator_ProjectedPoints : public UEnvQueryGenerator {
 
 public:
 
@@ -1488,7 +1488,7 @@ public:
 };
 
 // Class AIModule.EnvQueryGenerator_Cone
-class UEnvQueryGenerator_Cone : public UEnvQueryGenerator_Projected {
+class UEnvQueryGenerator_Cone : public UEnvQueryGenerator_ProjectedPoints {
 
 public:
 
@@ -1509,7 +1509,7 @@ public:
 };
 
 // Class AIModule.EnvQueryGenerator_Donut
-class UEnvQueryGenerator_Donut : public UEnvQueryGenerator_Projected {
+class UEnvQueryGenerator_Donut : public UEnvQueryGenerator_ProjectedPoints {
 
 public:
 
@@ -1525,7 +1525,7 @@ public:
 };
 
 // Class AIModule.EnvQueryGenerator_OnCircle
-class UEnvQueryGenerator_OnCircle : public UEnvQueryGenerator_Projected {
+class UEnvQueryGenerator_OnCircle : public UEnvQueryGenerator_ProjectedPoints {
 
 public:
 
@@ -1544,7 +1544,7 @@ public:
 };
 
 // Class AIModule.EnvQueryGenerator_SimpleGrid
-class UEnvQueryGenerator_SimpleGrid : public UEnvQueryGenerator_Projected {
+class UEnvQueryGenerator_SimpleGrid : public UEnvQueryGenerator_ProjectedPoints {
 
 public:
 
@@ -1735,7 +1735,7 @@ public:
 	enum class Unknow HighlightMode; // 0x610 (1)
 	char bDrawLabels : 0; // 0x614 (1)
 	char bDrawFailedItems : 0; // 0x614 (1)
-	char bReRunQueryOnlyOnFinishedMove : 0; // 0x614 (1)
+	char bReRunQueryOnlyOnFinished : 0; // 0x614 (1)
 	char bShouldBeVisibleInGame : 0; // 0x614 (1)
 	char bTickDuringGame : 0; // 0x614 (1)
 	char QueryingMode; // 0x618 (1)
@@ -1873,7 +1873,7 @@ public:
 	void SetSensingInterval(float NewSensingInterval); // Function AIModule.PawnSensingComponent.SetSensingInterval(BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3FCB360>
 	void SetPeripheralVisionAngle(float NewPeripheralVisionAngle); // Function AIModule.PawnSensingComponent.SetPeripheralVisionAngle(BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3FCB2E0>
 	void SeePawnDelegate__DelegateSignature(struct Unknown Pawn); // DelegateFunction AIModule.PawnSensingComponent.SeePawnDelegate__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void HearNoiseDelegate__DelegateSignature(struct Unknown Instigator, struct Unknown& Location, float Volume); // DelegateFunction AIModule.PawnSensingComponent.HearNoiseDelegate__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void HearNoiseDelegate__DelegateSig(struct Unknown Instigator, struct Unknown& Location, float Volume); // DelegateFunction AIModule.PawnSensingComponent.HearNoiseDelegate__DelegateSigy(MulticastDelegate|Public|Delegate|HasOutParms|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 	float GetPeripheralVisionCosine(); // Function AIModule.PawnSensingComponent.GetPeripheralVisionCosine(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3FCADA0>
 	float GetPeripheralVisionAngle(); // Function AIModule.PawnSensingComponent.GetPeripheralVisionAngle(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3FCAD80>
 };
@@ -2142,4 +2142,2859 @@ struct FPawnActionStack {
 struct FPawnActionEvent {
 	struct Unknown Action; // 0x0 (8)
 };
+
+// Function AIModule.AIController.UseBlackboard
+inline char AAIController::UseBlackboard(struct Unknown BlackboardAsset, struct Unknown& BlackboardComponent) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.UseBlackboard");
+
+	struct UseBlackboard_Params {
+		struct Unknown BlackboardAsset;
+		struct Unknown& BlackboardComponent;
+		char ReturnValue;
+
+	}; UseBlackboard_Params Params;
+
+	Params.BlackboardAsset = BlackboardAsset;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	BlackboardComponent = Params.BlackboardComponent;
+
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.AIController.UnclaimTaskResource
+inline void AAIController::UnclaimTaskResource(struct Unknown* ResourceClass) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.UnclaimTaskResource");
+
+	struct UnclaimTaskResource_Params {
+		struct Unknown* ResourceClass;
+	}; UnclaimTaskResource_Params Params;
+
+	Params.ResourceClass = ResourceClass;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.AIController.SetPathFollowingComponent
+inline void AAIController::SetPathFollowingComponent(struct Unknown NewPFComponent) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.SetPathFollowingComponent");
+
+	struct SetPathFollowingComponent_Params {
+		struct Unknown NewPFComponent;
+	}; SetPathFollowingComponent_Params Params;
+
+	Params.NewPFComponent = NewPFComponent;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.AIController.SetMoveBlockDetection
+inline void AAIController::SetMoveBlockDetection(char bEnable) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.SetMoveBlockDetection");
+
+	struct SetMoveBlockDetection_Params {
+		char bEnable;
+	}; SetMoveBlockDetection_Params Params;
+
+	Params.bEnable = bEnable;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.AIController.RunBehaviorTree
+inline char AAIController::RunBehaviorTree(struct Unknown BTAsset) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.RunBehaviorTree");
+
+	struct RunBehaviorTree_Params {
+		struct Unknown BTAsset;
+		char ReturnValue;
+
+	}; RunBehaviorTree_Params Params;
+
+	Params.BTAsset = BTAsset;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.AIController.OnUsingBlackBoard
+inline void AAIController::OnUsingBlackBoard(struct Unknown BlackboardComp, struct Unknown BlackboardAsset) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.OnUsingBlackBoard");
+
+	struct OnUsingBlackBoard_Params {
+		struct Unknown BlackboardComp;
+		struct Unknown BlackboardAsset;
+	}; OnUsingBlackBoard_Params Params;
+
+	Params.BlackboardComp = BlackboardComp;
+	Params.BlackboardAsset = BlackboardAsset;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.AIController.OnGameplayTaskResourcesClaimed
+inline void AAIController::OnGameplayTaskResourcesClaimed(struct Unknown NewlyClaimed, struct Unknown FreshlyReleased) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.OnGameplayTaskResourcesClaimed");
+
+	struct OnGameplayTaskResourcesClaimed_Params {
+		struct Unknown NewlyClaimed;
+		struct Unknown FreshlyReleased;
+	}; OnGameplayTaskResourcesClaimed_Params Params;
+
+	Params.NewlyClaimed = NewlyClaimed;
+	Params.FreshlyReleased = FreshlyReleased;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.AIController.MoveToLocation
+inline char AAIController::MoveToLocation(struct Unknown& Dest, float AcceptanceRadius, char bStopOnOverlap, char bUsePathfinding, char bProjectDestinationToNavigation, char bCanStrafe, struct Unknown* FilterClass, char bAllowPartialPath) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.MoveToLocation");
+
+	struct MoveToLocation_Params {
+		struct Unknown& Dest;
+		float AcceptanceRadius;
+		char bStopOnOverlap;
+		char bUsePathfinding;
+		char bProjectDestinationToNavigation;
+		char bCanStrafe;
+		struct Unknown* FilterClass;
+		char bAllowPartialPath;
+		char ReturnValue;
+
+	}; MoveToLocation_Params Params;
+
+	Params.AcceptanceRadius = AcceptanceRadius;
+	Params.bStopOnOverlap = bStopOnOverlap;
+	Params.bUsePathfinding = bUsePathfinding;
+	Params.bProjectDestinationToNavigation = bProjectDestinationToNavigation;
+	Params.bCanStrafe = bCanStrafe;
+	Params.FilterClass = FilterClass;
+	Params.bAllowPartialPath = bAllowPartialPath;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Dest = Params.Dest;
+
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.AIController.MoveToActor
+inline char AAIController::MoveToActor(struct Unknown Goal, float AcceptanceRadius, char bStopOnOverlap, char bUsePathfinding, char bCanStrafe, struct Unknown* FilterClass, char bAllowPartialPath) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.MoveToActor");
+
+	struct MoveToActor_Params {
+		struct Unknown Goal;
+		float AcceptanceRadius;
+		char bStopOnOverlap;
+		char bUsePathfinding;
+		char bCanStrafe;
+		struct Unknown* FilterClass;
+		char bAllowPartialPath;
+		char ReturnValue;
+
+	}; MoveToActor_Params Params;
+
+	Params.Goal = Goal;
+	Params.AcceptanceRadius = AcceptanceRadius;
+	Params.bStopOnOverlap = bStopOnOverlap;
+	Params.bUsePathfinding = bUsePathfinding;
+	Params.bCanStrafe = bCanStrafe;
+	Params.FilterClass = FilterClass;
+	Params.bAllowPartialPath = bAllowPartialPath;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.AIController.K2_SetFocus
+inline void AAIController::K2_SetFocus(struct Unknown NewFocus) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.K2_SetFocus");
+
+	struct K2_SetFocus_Params {
+		struct Unknown NewFocus;
+	}; K2_SetFocus_Params Params;
+
+	Params.NewFocus = NewFocus;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.AIController.K2_SetFocalPoint
+inline void AAIController::K2_SetFocalPoint(struct Unknown FP) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.K2_SetFocalPoint");
+
+	struct K2_SetFocalPoint_Params {
+		struct Unknown FP;
+	}; K2_SetFocalPoint_Params Params;
+
+	Params.FP = FP;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.AIController.K2_ClearFocus
+inline void AAIController::K2_ClearFocus() {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.K2_ClearFocus");
+
+	struct K2_ClearFocus_Params {
+		
+	}; K2_ClearFocus_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.AIController.HasPartialPath
+inline char AAIController::HasPartialPath() {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.HasPartialPath");
+
+	struct HasPartialPath_Params {
+		
+		char ReturnValue;
+
+	}; HasPartialPath_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.AIController.GetPathFollowingComponent
+inline struct Unknown AAIController::GetPathFollowingComponent() {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.GetPathFollowingComponent");
+
+	struct GetPathFollowingComponent_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetPathFollowingComponent_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.AIController.GetMoveStatus
+inline char AAIController::GetMoveStatus() {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.GetMoveStatus");
+
+	struct GetMoveStatus_Params {
+		
+		char ReturnValue;
+
+	}; GetMoveStatus_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.AIController.GetImmediateMoveDestination
+inline struct Unknown AAIController::GetImmediateMoveDestination() {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.GetImmediateMoveDestination");
+
+	struct GetImmediateMoveDestination_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetImmediateMoveDestination_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.AIController.GetFocusActor
+inline struct Unknown AAIController::GetFocusActor() {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.GetFocusActor");
+
+	struct GetFocusActor_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetFocusActor_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.AIController.GetFocalPointOnActor
+inline struct Unknown AAIController::GetFocalPointOnActor(struct Unknown Actor) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.GetFocalPointOnActor");
+
+	struct GetFocalPointOnActor_Params {
+		struct Unknown Actor;
+		struct Unknown ReturnValue;
+
+	}; GetFocalPointOnActor_Params Params;
+
+	Params.Actor = Actor;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.AIController.GetFocalPoint
+inline struct Unknown AAIController::GetFocalPoint() {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.GetFocalPoint");
+
+	struct GetFocalPoint_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetFocalPoint_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.AIController.GetAIPerceptionComponent
+inline struct Unknown AAIController::GetAIPerceptionComponent() {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.GetAIPerceptionComponent");
+
+	struct GetAIPerceptionComponent_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetAIPerceptionComponent_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.AIController.ClaimTaskResource
+inline void AAIController::ClaimTaskResource(struct Unknown* ResourceClass) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.ClaimTaskResource");
+
+	struct ClaimTaskResource_Params {
+		struct Unknown* ResourceClass;
+	}; ClaimTaskResource_Params Params;
+
+	Params.ResourceClass = ResourceClass;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.AIAsyncTaskBlueprintProxy.OnMoveCompleted
+inline void UAIAsyncTaskBlueprintProxy::OnMoveCompleted(struct Unknown RequestID, char MovementResult) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIAsyncTaskBlueprintProxy.OnMoveCompleted");
+
+	struct OnMoveCompleted_Params {
+		struct Unknown RequestID;
+		char MovementResult;
+	}; OnMoveCompleted_Params Params;
+
+	Params.RequestID = RequestID;
+	Params.MovementResult = MovementResult;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.AIPerceptionComponent.SetSenseEnabled
+inline void UAIPerceptionComponent::SetSenseEnabled(struct Unknown* SenseClass, char bEnable) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionComponent.SetSenseEnabled");
+
+	struct SetSenseEnabled_Params {
+		struct Unknown* SenseClass;
+		char bEnable;
+	}; SetSenseEnabled_Params Params;
+
+	Params.SenseClass = SenseClass;
+	Params.bEnable = bEnable;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.AIPerceptionComponent.RequestStimuliListenerUpdate
+inline void UAIPerceptionComponent::RequestStimuliListenerUpdate() {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionComponent.RequestStimuliListenerUpdate");
+
+	struct RequestStimuliListenerUpdate_Params {
+		
+	}; RequestStimuliListenerUpdate_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.AIPerceptionComponent.OnOwnerEndPlay
+inline void UAIPerceptionComponent::OnOwnerEndPlay(struct Unknown Actor, char EndPlayReason) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionComponent.OnOwnerEndPlay");
+
+	struct OnOwnerEndPlay_Params {
+		struct Unknown Actor;
+		char EndPlayReason;
+	}; OnOwnerEndPlay_Params Params;
+
+	Params.Actor = Actor;
+	Params.EndPlayReason = EndPlayReason;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.AIPerceptionComponent.GetPerceivedHostileActors
+inline void UAIPerceptionComponent::GetPerceivedHostileActors(struct TArray<Unknown>& OutActors) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionComponent.GetPerceivedHostileActors");
+
+	struct GetPerceivedHostileActors_Params {
+		struct TArray<Unknown>& OutActors;
+	}; GetPerceivedHostileActors_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	OutActors = Params.OutActors;
+
+}
+
+// Function AIModule.AIPerceptionComponent.GetPerceivedActors
+inline void UAIPerceptionComponent::GetPerceivedActors(struct Unknown* SenseToUse, struct TArray<Unknown>& OutActors) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionComponent.GetPerceivedActors");
+
+	struct GetPerceivedActors_Params {
+		struct Unknown* SenseToUse;
+		struct TArray<Unknown>& OutActors;
+	}; GetPerceivedActors_Params Params;
+
+	Params.SenseToUse = SenseToUse;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	OutActors = Params.OutActors;
+
+}
+
+// Function AIModule.AIPerceptionComponent.GetKnownPerceivedActors
+inline void UAIPerceptionComponent::GetKnownPerceivedActors(struct Unknown* SenseToUse, struct TArray<Unknown>& OutActors) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionComponent.GetKnownPerceivedActors");
+
+	struct GetKnownPerceivedActors_Params {
+		struct Unknown* SenseToUse;
+		struct TArray<Unknown>& OutActors;
+	}; GetKnownPerceivedActors_Params Params;
+
+	Params.SenseToUse = SenseToUse;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	OutActors = Params.OutActors;
+
+}
+
+// Function AIModule.AIPerceptionComponent.GetCurrentlyPerceivnt
+inline void UAIPerceptionComponent::GetCurrentlyPerceivtors(struct Unknown* SenseToUse, struct TArray<Unknown>& OutActors) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionComponent.GetCurrentlyPerceivnt");
+
+	struct GetCurrentlyPerceivtors_Params {
+		struct Unknown* SenseToUse;
+		struct TArray<Unknown>& OutActors;
+	}; GetCurrentlyPerceivtors_Params Params;
+
+	Params.SenseToUse = SenseToUse;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	OutActors = Params.OutActors;
+
+}
+
+// Function AIModule.AIPerceptionComponent.GetActorsPerception
+inline char UAIPerceptionComponent::GetActorsPerception(struct Unknown Actor, struct Unknown& Info) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionComponent.GetActorsPerception");
+
+	struct GetActorsPerception_Params {
+		struct Unknown Actor;
+		struct Unknown& Info;
+		char ReturnValue;
+
+	}; GetActorsPerception_Params Params;
+
+	Params.Actor = Actor;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Info = Params.Info;
+
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.AIPerceptionComponent.ForgetAll
+inline void UAIPerceptionComponent::ForgetAll() {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionComponent.ForgetAll");
+
+	struct ForgetAll_Params {
+		
+	}; ForgetAll_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.AIPerceptionStimuliSourceComponent.UnregisterFromSense
+inline void UAIPerceptionStimuliSourceComponent::UnregisterFromSense(struct Unknown* SenseClass) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionStimuliSourceComponent.UnregisterFromSense");
+
+	struct UnregisterFromSense_Params {
+		struct Unknown* SenseClass;
+	}; UnregisterFromSense_Params Params;
+
+	Params.SenseClass = SenseClass;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.AIPerceptionStimuliSourceComponent.UnregisterFromPerceptionSystem
+inline void UAIPerceptionStimuliSourceComponent::UnregisterFromPerceptionSystem() {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionStimuliSourceComponent.UnregisterFromPerceptionSystem");
+
+	struct UnregisterFromPerceptionSystem_Params {
+		
+	}; UnregisterFromPerceptionSystem_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.AIPerceptionStimuliSourceComponent.RegisterWithPerceptionSystem
+inline void UAIPerceptionStimuliSourceComponent::RegisterWithPerceptionSystem() {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionStimuliSourceComponent.RegisterWithPerceptionSystem");
+
+	struct RegisterWithPerceptionSystem_Params {
+		
+	}; RegisterWithPerceptionSystem_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.AIPerceptionStimuliSourceComponent.RegisterForSense
+inline void UAIPerceptionStimuliSourceComponent::RegisterForSense(struct Unknown* SenseClass) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionStimuliSourceComponent.RegisterForSense");
+
+	struct RegisterForSense_Params {
+		struct Unknown* SenseClass;
+	}; RegisterForSense_Params Params;
+
+	Params.SenseClass = SenseClass;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.AIPerceptionSystem.ReportPerceptionEvent
+inline void UAIPerceptionSystem::ReportPerceptionEvent(struct Unknown WorldContextObject, struct Unknown PerceptionEvent) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionSystem.ReportPerceptionEvent");
+
+	struct ReportPerceptionEvent_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown PerceptionEvent;
+	}; ReportPerceptionEvent_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.PerceptionEvent = PerceptionEvent;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.AIPerceptionSystem.ReportEvent
+inline void UAIPerceptionSystem::ReportEvent(struct Unknown PerceptionEvent) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionSystem.ReportEvent");
+
+	struct ReportEvent_Params {
+		struct Unknown PerceptionEvent;
+	}; ReportEvent_Params Params;
+
+	Params.PerceptionEvent = PerceptionEvent;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.AIPerceptionSystem.RegisterPerceptionStimuliSource
+inline char UAIPerceptionSystem::RegisterPerceptionStimuliSource(struct Unknown WorldContextObject, struct Unknown* Sense, struct Unknown Target) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionSystem.RegisterPerceptionStimuliSource");
+
+	struct RegisterPerceptionStimuliSource_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown* Sense;
+		struct Unknown Target;
+		char ReturnValue;
+
+	}; RegisterPerceptionStimuliSource_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.Sense = Sense;
+	Params.Target = Target;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.AIPerceptionSystem.OnPerceptionStimuliSourceEndPlay
+inline void UAIPerceptionSystem::OnPerceptionStimuliSourceEndPlay(struct Unknown Actor, char EndPlayReason) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionSystem.OnPerceptionStimuliSourceEndPlay");
+
+	struct OnPerceptionStimuliSourceEndPlay_Params {
+		struct Unknown Actor;
+		char EndPlayReason;
+	}; OnPerceptionStimuliSourceEndPlay_Params Params;
+
+	Params.Actor = Actor;
+	Params.EndPlayReason = EndPlayReason;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.AIPerceptionSystem.GetSenseClassForStimulus
+inline struct Unknown* UAIPerceptionSystem::GetSenseClassForStimulus(struct Unknown WorldContextObject, struct Unknown& Stimulus) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionSystem.GetSenseClassForStimulus");
+
+	struct GetSenseClassForStimulus_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown& Stimulus;
+		struct Unknown* ReturnValue;
+
+	}; GetSenseClassForStimulus_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Stimulus = Params.Stimulus;
+
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.AISense_Blueprint.OnUpdate
+inline float UAISense_Blueprint::OnUpdate(struct TArray<Unknown>& EventsToProcess) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AISense_Blueprint.OnUpdate");
+
+	struct OnUpdate_Params {
+		struct TArray<Unknown>& EventsToProcess;
+		float ReturnValue;
+
+	}; OnUpdate_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	EventsToProcess = Params.EventsToProcess;
+
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.AISense_Blueprint.OnListenerUpdated
+inline void UAISense_Blueprint::OnListenerUpdated(struct Unknown ActorListener, struct Unknown PerceptionComponent) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AISense_Blueprint.OnListenerUpdated");
+
+	struct OnListenerUpdated_Params {
+		struct Unknown ActorListener;
+		struct Unknown PerceptionComponent;
+	}; OnListenerUpdated_Params Params;
+
+	Params.ActorListener = ActorListener;
+	Params.PerceptionComponent = PerceptionComponent;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.AISense_Blueprint.OnListenerUnregistered
+inline void UAISense_Blueprint::OnListenerUnregistered(struct Unknown ActorListener, struct Unknown PerceptionComponent) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AISense_Blueprint.OnListenerUnregistered");
+
+	struct OnListenerUnregistered_Params {
+		struct Unknown ActorListener;
+		struct Unknown PerceptionComponent;
+	}; OnListenerUnregistered_Params Params;
+
+	Params.ActorListener = ActorListener;
+	Params.PerceptionComponent = PerceptionComponent;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.AISense_Blueprint.OnListenerRegistered
+inline void UAISense_Blueprint::OnListenerRegistered(struct Unknown ActorListener, struct Unknown PerceptionComponent) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AISense_Blueprint.OnListenerRegistered");
+
+	struct OnListenerRegistered_Params {
+		struct Unknown ActorListener;
+		struct Unknown PerceptionComponent;
+	}; OnListenerRegistered_Params Params;
+
+	Params.ActorListener = ActorListener;
+	Params.PerceptionComponent = PerceptionComponent;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.AISense_Blueprint.K2_OnNewPawn
+inline void UAISense_Blueprint::K2_OnNewPawn(struct Unknown NewPawn) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AISense_Blueprint.K2_OnNewPawn");
+
+	struct K2_OnNewPawn_Params {
+		struct Unknown NewPawn;
+	}; K2_OnNewPawn_Params Params;
+
+	Params.NewPawn = NewPawn;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.AISense_Blueprint.GetAllListenerComponents
+inline void UAISense_Blueprint::GetAllListenerComponents(struct TArray<Unknown>& ListenerComponents) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AISense_Blueprint.GetAllListenerComponents");
+
+	struct GetAllListenerComponents_Params {
+		struct TArray<Unknown>& ListenerComponents;
+	}; GetAllListenerComponents_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	ListenerComponents = Params.ListenerComponents;
+
+}
+
+// Function AIModule.AISense_Blueprint.GetAllListenerActors
+inline void UAISense_Blueprint::GetAllListenerActors(struct TArray<Unknown>& ListenerActors) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AISense_Blueprint.GetAllListenerActors");
+
+	struct GetAllListenerActors_Params {
+		struct TArray<Unknown>& ListenerActors;
+	}; GetAllListenerActors_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	ListenerActors = Params.ListenerActors;
+
+}
+
+// Function AIModule.AISense_Damage.ReportDamageEvent
+inline void UAISense_Damage::ReportDamageEvent(struct Unknown WorldContextObject, struct Unknown DamagedActor, struct Unknown Instigator, float DamageAmount, struct Unknown EventLocation, struct Unknown HitLocation) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AISense_Damage.ReportDamageEvent");
+
+	struct ReportDamageEvent_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown DamagedActor;
+		struct Unknown Instigator;
+		float DamageAmount;
+		struct Unknown EventLocation;
+		struct Unknown HitLocation;
+	}; ReportDamageEvent_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.DamagedActor = DamagedActor;
+	Params.Instigator = Instigator;
+	Params.DamageAmount = DamageAmount;
+	Params.EventLocation = EventLocation;
+	Params.HitLocation = HitLocation;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.AISense_Hearing.ReportNoiseEvent
+inline void UAISense_Hearing::ReportNoiseEvent(struct Unknown WorldContextObject, struct Unknown NoiseLocation, float Loudness, struct Unknown Instigator, float MaxRange, struct FName Tag) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AISense_Hearing.ReportNoiseEvent");
+
+	struct ReportNoiseEvent_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown NoiseLocation;
+		float Loudness;
+		struct Unknown Instigator;
+		float MaxRange;
+		struct FName Tag;
+	}; ReportNoiseEvent_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.NoiseLocation = NoiseLocation;
+	Params.Loudness = Loudness;
+	Params.Instigator = Instigator;
+	Params.MaxRange = MaxRange;
+	Params.Tag = Tag;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.AISense_Prediction.RequestPawnPredictionEvent
+inline void UAISense_Prediction::RequestPawnPredictionEvent(struct Unknown Requestor, struct Unknown PredictedActor, float PredictionTime) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AISense_Prediction.RequestPawnPredictionEvent");
+
+	struct RequestPawnPredictionEvent_Params {
+		struct Unknown Requestor;
+		struct Unknown PredictedActor;
+		float PredictionTime;
+	}; RequestPawnPredictionEvent_Params Params;
+
+	Params.Requestor = Requestor;
+	Params.PredictedActor = PredictedActor;
+	Params.PredictionTime = PredictionTime;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.AISense_Prediction.RequestControllerPredictionEvent
+inline void UAISense_Prediction::RequestControllerPredictionEvent(struct Unknown Requestor, struct Unknown PredictedActor, float PredictionTime) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AISense_Prediction.RequestControllerPredictionEvent");
+
+	struct RequestControllerPredictionEvent_Params {
+		struct Unknown Requestor;
+		struct Unknown PredictedActor;
+		float PredictionTime;
+	}; RequestControllerPredictionEvent_Params Params;
+
+	Params.Requestor = Requestor;
+	Params.PredictedActor = PredictedActor;
+	Params.PredictionTime = PredictionTime;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.AISystem.AILoggingVerbose
+inline void UAISystem::AILoggingVerbose() {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AISystem.AILoggingVerbose");
+
+	struct AILoggingVerbose_Params {
+		
+	}; AILoggingVerbose_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.AISystem.AIIgnorePlayers
+inline void UAISystem::AIIgnorePlayers() {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AISystem.AIIgnorePlayers");
+
+	struct AIIgnorePlayers_Params {
+		
+	}; AIIgnorePlayers_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.AITask_MoveTo.AIMoveTo
+inline struct Unknown UAITask_MoveTo::AIMoveTo(struct Unknown Controller, struct Unknown GoalLocation, struct Unknown GoalActor, float AcceptanceRadius, char StopOnOverlap, char AcceptPartialPath, char bUsePathfinding, char bLockAILogic, char bUseContinuosGoalTracking, char ProjectGoalOnNavigation) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AITask_MoveTo.AIMoveTo");
+
+	struct AIMoveTo_Params {
+		struct Unknown Controller;
+		struct Unknown GoalLocation;
+		struct Unknown GoalActor;
+		float AcceptanceRadius;
+		char StopOnOverlap;
+		char AcceptPartialPath;
+		char bUsePathfinding;
+		char bLockAILogic;
+		char bUseContinuosGoalTracking;
+		char ProjectGoalOnNavigation;
+		struct Unknown ReturnValue;
+
+	}; AIMoveTo_Params Params;
+
+	Params.Controller = Controller;
+	Params.GoalLocation = GoalLocation;
+	Params.GoalActor = GoalActor;
+	Params.AcceptanceRadius = AcceptanceRadius;
+	Params.StopOnOverlap = StopOnOverlap;
+	Params.AcceptPartialPath = AcceptPartialPath;
+	Params.bUsePathfinding = bUsePathfinding;
+	Params.bLockAILogic = bLockAILogic;
+	Params.bUseContinuosGoalTracking = bUseContinuosGoalTracking;
+	Params.ProjectGoalOnNavigation = ProjectGoalOnNavigation;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.BrainComponent.StopLogic
+inline void UBrainComponent::StopLogic(struct FString reason) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BrainComponent.StopLogic");
+
+	struct StopLogic_Params {
+		struct FString reason;
+	}; StopLogic_Params Params;
+
+	Params.reason = reason;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.BrainComponent.StartLogic
+inline void UBrainComponent::StartLogic() {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BrainComponent.StartLogic");
+
+	struct StartLogic_Params {
+		
+	}; StartLogic_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.BrainComponent.RestartLogic
+inline void UBrainComponent::RestartLogic() {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BrainComponent.RestartLogic");
+
+	struct RestartLogic_Params {
+		
+	}; RestartLogic_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.BrainComponent.IsRunning
+inline char UBrainComponent::IsRunning() {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BrainComponent.IsRunning");
+
+	struct IsRunning_Params {
+		
+		char ReturnValue;
+
+	}; IsRunning_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.BrainComponent.IsPaused
+inline char UBrainComponent::IsPaused() {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BrainComponent.IsPaused");
+
+	struct IsPaused_Params {
+		
+		char ReturnValue;
+
+	}; IsPaused_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.BehaviorTreeComponent.SetDynamicSubtree
+inline void UBehaviorTreeComponent::SetDynamicSubtree(struct Unknown InjectTag, struct Unknown BehaviorAsset) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BehaviorTreeComponent.SetDynamicSubtree");
+
+	struct SetDynamicSubtree_Params {
+		struct Unknown InjectTag;
+		struct Unknown BehaviorAsset;
+	}; SetDynamicSubtree_Params Params;
+
+	Params.InjectTag = InjectTag;
+	Params.BehaviorAsset = BehaviorAsset;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.BehaviorTreeComponent.GetTagCooldownEndTime
+inline float UBehaviorTreeComponent::GetTagCooldownEndTime(struct Unknown CooldownTag) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BehaviorTreeComponent.GetTagCooldownEndTime");
+
+	struct GetTagCooldownEndTime_Params {
+		struct Unknown CooldownTag;
+		float ReturnValue;
+
+	}; GetTagCooldownEndTime_Params Params;
+
+	Params.CooldownTag = CooldownTag;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.BehaviorTreeComponent.AddCooldownTagDuration
+inline void UBehaviorTreeComponent::AddCooldownTagDuration(struct Unknown CooldownTag, float CooldownDuration, char bAddToExistingDuration) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BehaviorTreeComponent.AddCooldownTagDuration");
+
+	struct AddCooldownTagDuration_Params {
+		struct Unknown CooldownTag;
+		float CooldownDuration;
+		char bAddToExistingDuration;
+	}; AddCooldownTagDuration_Params Params;
+
+	Params.CooldownTag = CooldownTag;
+	Params.CooldownDuration = CooldownDuration;
+	Params.bAddToExistingDuration = bAddToExistingDuration;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.BlackboardComponent.SetValueAsVector
+inline void UBlackboardComponent::SetValueAsVector(struct FName& KeyName, struct Unknown VectorValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.SetValueAsVector");
+
+	struct SetValueAsVector_Params {
+		struct FName& KeyName;
+		struct Unknown VectorValue;
+	}; SetValueAsVector_Params Params;
+
+	Params.VectorValue = VectorValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	KeyName = Params.KeyName;
+
+}
+
+// Function AIModule.BlackboardComponent.SetValueAsString
+inline void UBlackboardComponent::SetValueAsString(struct FName& KeyName, struct FString StringValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.SetValueAsString");
+
+	struct SetValueAsString_Params {
+		struct FName& KeyName;
+		struct FString StringValue;
+	}; SetValueAsString_Params Params;
+
+	Params.StringValue = StringValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	KeyName = Params.KeyName;
+
+}
+
+// Function AIModule.BlackboardComponent.SetValueAsRotator
+inline void UBlackboardComponent::SetValueAsRotator(struct FName& KeyName, struct Unknown VectorValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.SetValueAsRotator");
+
+	struct SetValueAsRotator_Params {
+		struct FName& KeyName;
+		struct Unknown VectorValue;
+	}; SetValueAsRotator_Params Params;
+
+	Params.VectorValue = VectorValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	KeyName = Params.KeyName;
+
+}
+
+// Function AIModule.BlackboardComponent.SetValueAsObject
+inline void UBlackboardComponent::SetValueAsObject(struct FName& KeyName, struct Unknown ObjectValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.SetValueAsObject");
+
+	struct SetValueAsObject_Params {
+		struct FName& KeyName;
+		struct Unknown ObjectValue;
+	}; SetValueAsObject_Params Params;
+
+	Params.ObjectValue = ObjectValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	KeyName = Params.KeyName;
+
+}
+
+// Function AIModule.BlackboardComponent.SetValueAsName
+inline void UBlackboardComponent::SetValueAsName(struct FName& KeyName, struct FName NameValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.SetValueAsName");
+
+	struct SetValueAsName_Params {
+		struct FName& KeyName;
+		struct FName NameValue;
+	}; SetValueAsName_Params Params;
+
+	Params.NameValue = NameValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	KeyName = Params.KeyName;
+
+}
+
+// Function AIModule.BlackboardComponent.SetValueAsInt
+inline void UBlackboardComponent::SetValueAsInt(struct FName& KeyName, int32_t IntValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.SetValueAsInt");
+
+	struct SetValueAsInt_Params {
+		struct FName& KeyName;
+		int32_t IntValue;
+	}; SetValueAsInt_Params Params;
+
+	Params.IntValue = IntValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	KeyName = Params.KeyName;
+
+}
+
+// Function AIModule.BlackboardComponent.SetValueAsFloat
+inline void UBlackboardComponent::SetValueAsFloat(struct FName& KeyName, float FloatValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.SetValueAsFloat");
+
+	struct SetValueAsFloat_Params {
+		struct FName& KeyName;
+		float FloatValue;
+	}; SetValueAsFloat_Params Params;
+
+	Params.FloatValue = FloatValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	KeyName = Params.KeyName;
+
+}
+
+// Function AIModule.BlackboardComponent.SetValueAsEnum
+inline void UBlackboardComponent::SetValueAsEnum(struct FName& KeyName, char EnumValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.SetValueAsEnum");
+
+	struct SetValueAsEnum_Params {
+		struct FName& KeyName;
+		char EnumValue;
+	}; SetValueAsEnum_Params Params;
+
+	Params.EnumValue = EnumValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	KeyName = Params.KeyName;
+
+}
+
+// Function AIModule.BlackboardComponent.SetValueAsClass
+inline void UBlackboardComponent::SetValueAsClass(struct FName& KeyName, struct Unknown* ClassValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.SetValueAsClass");
+
+	struct SetValueAsClass_Params {
+		struct FName& KeyName;
+		struct Unknown* ClassValue;
+	}; SetValueAsClass_Params Params;
+
+	Params.ClassValue = ClassValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	KeyName = Params.KeyName;
+
+}
+
+// Function AIModule.BlackboardComponent.SetValueAsBool
+inline void UBlackboardComponent::SetValueAsBool(struct FName& KeyName, char BoolValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.SetValueAsBool");
+
+	struct SetValueAsBool_Params {
+		struct FName& KeyName;
+		char BoolValue;
+	}; SetValueAsBool_Params Params;
+
+	Params.BoolValue = BoolValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	KeyName = Params.KeyName;
+
+}
+
+// Function AIModule.BlackboardComponent.IsVectorValueSet
+inline char UBlackboardComponent::IsVectorValueSet(struct FName& KeyName) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.IsVectorValueSet");
+
+	struct IsVectorValueSet_Params {
+		struct FName& KeyName;
+		char ReturnValue;
+
+	}; IsVectorValueSet_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	KeyName = Params.KeyName;
+
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.BlackboardComponent.GetValueAsVector
+inline struct Unknown UBlackboardComponent::GetValueAsVector(struct FName& KeyName) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.GetValueAsVector");
+
+	struct GetValueAsVector_Params {
+		struct FName& KeyName;
+		struct Unknown ReturnValue;
+
+	}; GetValueAsVector_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	KeyName = Params.KeyName;
+
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.BlackboardComponent.GetValueAsString
+inline struct FString UBlackboardComponent::GetValueAsString(struct FName& KeyName) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.GetValueAsString");
+
+	struct GetValueAsString_Params {
+		struct FName& KeyName;
+		struct FString ReturnValue;
+
+	}; GetValueAsString_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	KeyName = Params.KeyName;
+
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.BlackboardComponent.GetValueAsRotator
+inline struct Unknown UBlackboardComponent::GetValueAsRotator(struct FName& KeyName) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.GetValueAsRotator");
+
+	struct GetValueAsRotator_Params {
+		struct FName& KeyName;
+		struct Unknown ReturnValue;
+
+	}; GetValueAsRotator_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	KeyName = Params.KeyName;
+
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.BlackboardComponent.GetValueAsObject
+inline struct Unknown UBlackboardComponent::GetValueAsObject(struct FName& KeyName) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.GetValueAsObject");
+
+	struct GetValueAsObject_Params {
+		struct FName& KeyName;
+		struct Unknown ReturnValue;
+
+	}; GetValueAsObject_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	KeyName = Params.KeyName;
+
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.BlackboardComponent.GetValueAsName
+inline struct FName UBlackboardComponent::GetValueAsName(struct FName& KeyName) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.GetValueAsName");
+
+	struct GetValueAsName_Params {
+		struct FName& KeyName;
+		struct FName ReturnValue;
+
+	}; GetValueAsName_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	KeyName = Params.KeyName;
+
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.BlackboardComponent.GetValueAsInt
+inline int32_t UBlackboardComponent::GetValueAsInt(struct FName& KeyName) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.GetValueAsInt");
+
+	struct GetValueAsInt_Params {
+		struct FName& KeyName;
+		int32_t ReturnValue;
+
+	}; GetValueAsInt_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	KeyName = Params.KeyName;
+
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.BlackboardComponent.GetValueAsFloat
+inline float UBlackboardComponent::GetValueAsFloat(struct FName& KeyName) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.GetValueAsFloat");
+
+	struct GetValueAsFloat_Params {
+		struct FName& KeyName;
+		float ReturnValue;
+
+	}; GetValueAsFloat_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	KeyName = Params.KeyName;
+
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.BlackboardComponent.GetValueAsEnum
+inline char UBlackboardComponent::GetValueAsEnum(struct FName& KeyName) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.GetValueAsEnum");
+
+	struct GetValueAsEnum_Params {
+		struct FName& KeyName;
+		char ReturnValue;
+
+	}; GetValueAsEnum_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	KeyName = Params.KeyName;
+
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.BlackboardComponent.GetValueAsClass
+inline struct Unknown* UBlackboardComponent::GetValueAsClass(struct FName& KeyName) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.GetValueAsClass");
+
+	struct GetValueAsClass_Params {
+		struct FName& KeyName;
+		struct Unknown* ReturnValue;
+
+	}; GetValueAsClass_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	KeyName = Params.KeyName;
+
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.BlackboardComponent.GetValueAsBool
+inline char UBlackboardComponent::GetValueAsBool(struct FName& KeyName) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.GetValueAsBool");
+
+	struct GetValueAsBool_Params {
+		struct FName& KeyName;
+		char ReturnValue;
+
+	}; GetValueAsBool_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	KeyName = Params.KeyName;
+
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.BlackboardComponent.GetRotationFromEntry
+inline char UBlackboardComponent::GetRotationFromEntry(struct FName& KeyName, struct Unknown& ResultRotation) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.GetRotationFromEntry");
+
+	struct GetRotationFromEntry_Params {
+		struct FName& KeyName;
+		struct Unknown& ResultRotation;
+		char ReturnValue;
+
+	}; GetRotationFromEntry_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	KeyName = Params.KeyName;
+	ResultRotation = Params.ResultRotation;
+
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.BlackboardComponent.GetLocationFromEntry
+inline char UBlackboardComponent::GetLocationFromEntry(struct FName& KeyName, struct Unknown& ResultLocation) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.GetLocationFromEntry");
+
+	struct GetLocationFromEntry_Params {
+		struct FName& KeyName;
+		struct Unknown& ResultLocation;
+		char ReturnValue;
+
+	}; GetLocationFromEntry_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	KeyName = Params.KeyName;
+	ResultLocation = Params.ResultLocation;
+
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.BlackboardComponent.ClearValue
+inline void UBlackboardComponent::ClearValue(struct FName& KeyName) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.ClearValue");
+
+	struct ClearValue_Params {
+		struct FName& KeyName;
+	}; ClearValue_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	KeyName = Params.KeyName;
+
+}
+
+// Function AIModule.BTDecorator_BlueprintBase.ReceiveTickAI
+inline void UBTDecorator_BlueprintBase::ReceiveTickAI(struct Unknown OwnerController, struct Unknown ControlledPawn, float DeltaSeconds) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTDecorator_BlueprintBase.ReceiveTickAI");
+
+	struct ReceiveTickAI_Params {
+		struct Unknown OwnerController;
+		struct Unknown ControlledPawn;
+		float DeltaSeconds;
+	}; ReceiveTickAI_Params Params;
+
+	Params.OwnerController = OwnerController;
+	Params.ControlledPawn = ControlledPawn;
+	Params.DeltaSeconds = DeltaSeconds;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.BTDecorator_BlueprintBase.ReceiveTick
+inline void UBTDecorator_BlueprintBase::ReceiveTick(struct Unknown OwnerActor, float DeltaSeconds) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTDecorator_BlueprintBase.ReceiveTick");
+
+	struct ReceiveTick_Params {
+		struct Unknown OwnerActor;
+		float DeltaSeconds;
+	}; ReceiveTick_Params Params;
+
+	Params.OwnerActor = OwnerActor;
+	Params.DeltaSeconds = DeltaSeconds;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverDeactivatedAI
+inline void UBTDecorator_BlueprintBase::ReceiveObserverDeactivatedAI(struct Unknown OwnerController, struct Unknown ControlledPawn) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverDeactivatedAI");
+
+	struct ReceiveObserverDeactivatedAI_Params {
+		struct Unknown OwnerController;
+		struct Unknown ControlledPawn;
+	}; ReceiveObserverDeactivatedAI_Params Params;
+
+	Params.OwnerController = OwnerController;
+	Params.ControlledPawn = ControlledPawn;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverDeactivated
+inline void UBTDecorator_BlueprintBase::ReceiveObserverDeactivated(struct Unknown OwnerActor) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverDeactivated");
+
+	struct ReceiveObserverDeactivated_Params {
+		struct Unknown OwnerActor;
+	}; ReceiveObserverDeactivated_Params Params;
+
+	Params.OwnerActor = OwnerActor;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverActivatedAI
+inline void UBTDecorator_BlueprintBase::ReceiveObserverActivatedAI(struct Unknown OwnerController, struct Unknown ControlledPawn) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverActivatedAI");
+
+	struct ReceiveObserverActivatedAI_Params {
+		struct Unknown OwnerController;
+		struct Unknown ControlledPawn;
+	}; ReceiveObserverActivatedAI_Params Params;
+
+	Params.OwnerController = OwnerController;
+	Params.ControlledPawn = ControlledPawn;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverActivated
+inline void UBTDecorator_BlueprintBase::ReceiveObserverActivated(struct Unknown OwnerActor) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverActivated");
+
+	struct ReceiveObserverActivated_Params {
+		struct Unknown OwnerActor;
+	}; ReceiveObserverActivated_Params Params;
+
+	Params.OwnerActor = OwnerActor;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionStartAI
+inline void UBTDecorator_BlueprintBase::ReceiveExecutionStartAI(struct Unknown OwnerController, struct Unknown ControlledPawn) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionStartAI");
+
+	struct ReceiveExecutionStartAI_Params {
+		struct Unknown OwnerController;
+		struct Unknown ControlledPawn;
+	}; ReceiveExecutionStartAI_Params Params;
+
+	Params.OwnerController = OwnerController;
+	Params.ControlledPawn = ControlledPawn;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionStart
+inline void UBTDecorator_BlueprintBase::ReceiveExecutionStart(struct Unknown OwnerActor) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionStart");
+
+	struct ReceiveExecutionStart_Params {
+		struct Unknown OwnerActor;
+	}; ReceiveExecutionStart_Params Params;
+
+	Params.OwnerActor = OwnerActor;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionFinishAI
+inline void UBTDecorator_BlueprintBase::ReceiveExecutionFinishAI(struct Unknown OwnerController, struct Unknown ControlledPawn, char NodeResult) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionFinishAI");
+
+	struct ReceiveExecutionFinishAI_Params {
+		struct Unknown OwnerController;
+		struct Unknown ControlledPawn;
+		char NodeResult;
+	}; ReceiveExecutionFinishAI_Params Params;
+
+	Params.OwnerController = OwnerController;
+	Params.ControlledPawn = ControlledPawn;
+	Params.NodeResult = NodeResult;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionFinish
+inline void UBTDecorator_BlueprintBase::ReceiveExecutionFinish(struct Unknown OwnerActor, char NodeResult) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionFinish");
+
+	struct ReceiveExecutionFinish_Params {
+		struct Unknown OwnerActor;
+		char NodeResult;
+	}; ReceiveExecutionFinish_Params Params;
+
+	Params.OwnerActor = OwnerActor;
+	Params.NodeResult = NodeResult;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.BTDecorator_BlueprintBase.PerformConditionCheckAI
+inline char UBTDecorator_BlueprintBase::PerformConditionCheckAI(struct Unknown OwnerController, struct Unknown ControlledPawn) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTDecorator_BlueprintBase.PerformConditionCheckAI");
+
+	struct PerformConditionCheckAI_Params {
+		struct Unknown OwnerController;
+		struct Unknown ControlledPawn;
+		char ReturnValue;
+
+	}; PerformConditionCheckAI_Params Params;
+
+	Params.OwnerController = OwnerController;
+	Params.ControlledPawn = ControlledPawn;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.BTDecorator_BlueprintBase.PerformConditionCheck
+inline char UBTDecorator_BlueprintBase::PerformConditionCheck(struct Unknown OwnerActor) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTDecorator_BlueprintBase.PerformConditionCheck");
+
+	struct PerformConditionCheck_Params {
+		struct Unknown OwnerActor;
+		char ReturnValue;
+
+	}; PerformConditionCheck_Params Params;
+
+	Params.OwnerActor = OwnerActor;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.BTDecorator_BlueprintBase.IsDecoratorObserverActive
+inline char UBTDecorator_BlueprintBase::IsDecoratorObserverActive() {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTDecorator_BlueprintBase.IsDecoratorObserverActive");
+
+	struct IsDecoratorObserverActive_Params {
+		
+		char ReturnValue;
+
+	}; IsDecoratorObserverActive_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.BTDecorator_BlueprintBase.IsDecoratorExecutionActive
+inline char UBTDecorator_BlueprintBase::IsDecoratorExecutionActive() {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTDecorator_BlueprintBase.IsDecoratorExecutionActive");
+
+	struct IsDecoratorExecutionActive_Params {
+		
+		char ReturnValue;
+
+	}; IsDecoratorExecutionActive_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.BTService_BlueprintBase.ReceiveTickAI
+inline void UBTService_BlueprintBase::ReceiveTickAI(struct Unknown OwnerController, struct Unknown ControlledPawn, float DeltaSeconds) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTService_BlueprintBase.ReceiveTickAI");
+
+	struct ReceiveTickAI_Params {
+		struct Unknown OwnerController;
+		struct Unknown ControlledPawn;
+		float DeltaSeconds;
+	}; ReceiveTickAI_Params Params;
+
+	Params.OwnerController = OwnerController;
+	Params.ControlledPawn = ControlledPawn;
+	Params.DeltaSeconds = DeltaSeconds;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.BTService_BlueprintBase.ReceiveTick
+inline void UBTService_BlueprintBase::ReceiveTick(struct Unknown OwnerActor, float DeltaSeconds) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTService_BlueprintBase.ReceiveTick");
+
+	struct ReceiveTick_Params {
+		struct Unknown OwnerActor;
+		float DeltaSeconds;
+	}; ReceiveTick_Params Params;
+
+	Params.OwnerActor = OwnerActor;
+	Params.DeltaSeconds = DeltaSeconds;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.BTService_BlueprintBase.ReceiveSearchStartAI
+inline void UBTService_BlueprintBase::ReceiveSearchStartAI(struct Unknown OwnerController, struct Unknown ControlledPawn) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTService_BlueprintBase.ReceiveSearchStartAI");
+
+	struct ReceiveSearchStartAI_Params {
+		struct Unknown OwnerController;
+		struct Unknown ControlledPawn;
+	}; ReceiveSearchStartAI_Params Params;
+
+	Params.OwnerController = OwnerController;
+	Params.ControlledPawn = ControlledPawn;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.BTService_BlueprintBase.ReceiveSearchStart
+inline void UBTService_BlueprintBase::ReceiveSearchStart(struct Unknown OwnerActor) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTService_BlueprintBase.ReceiveSearchStart");
+
+	struct ReceiveSearchStart_Params {
+		struct Unknown OwnerActor;
+	}; ReceiveSearchStart_Params Params;
+
+	Params.OwnerActor = OwnerActor;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.BTService_BlueprintBase.ReceiveDeactivationAI
+inline void UBTService_BlueprintBase::ReceiveDeactivationAI(struct Unknown OwnerController, struct Unknown ControlledPawn) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTService_BlueprintBase.ReceiveDeactivationAI");
+
+	struct ReceiveDeactivationAI_Params {
+		struct Unknown OwnerController;
+		struct Unknown ControlledPawn;
+	}; ReceiveDeactivationAI_Params Params;
+
+	Params.OwnerController = OwnerController;
+	Params.ControlledPawn = ControlledPawn;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.BTService_BlueprintBase.ReceiveDeactivation
+inline void UBTService_BlueprintBase::ReceiveDeactivation(struct Unknown OwnerActor) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTService_BlueprintBase.ReceiveDeactivation");
+
+	struct ReceiveDeactivation_Params {
+		struct Unknown OwnerActor;
+	}; ReceiveDeactivation_Params Params;
+
+	Params.OwnerActor = OwnerActor;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.BTService_BlueprintBase.ReceiveActivationAI
+inline void UBTService_BlueprintBase::ReceiveActivationAI(struct Unknown OwnerController, struct Unknown ControlledPawn) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTService_BlueprintBase.ReceiveActivationAI");
+
+	struct ReceiveActivationAI_Params {
+		struct Unknown OwnerController;
+		struct Unknown ControlledPawn;
+	}; ReceiveActivationAI_Params Params;
+
+	Params.OwnerController = OwnerController;
+	Params.ControlledPawn = ControlledPawn;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.BTService_BlueprintBase.ReceiveActivation
+inline void UBTService_BlueprintBase::ReceiveActivation(struct Unknown OwnerActor) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTService_BlueprintBase.ReceiveActivation");
+
+	struct ReceiveActivation_Params {
+		struct Unknown OwnerActor;
+	}; ReceiveActivation_Params Params;
+
+	Params.OwnerActor = OwnerActor;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.BTService_BlueprintBase.IsServiceActive
+inline char UBTService_BlueprintBase::IsServiceActive() {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTService_BlueprintBase.IsServiceActive");
+
+	struct IsServiceActive_Params {
+		
+		char ReturnValue;
+
+	}; IsServiceActive_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.BTTask_BlueprintBase.SetFinishOnMessageWithId
+inline void UBTTask_BlueprintBase::SetFinishOnMessageWithId(struct FName MessageName, int32_t RequestID) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTTask_BlueprintBase.SetFinishOnMessageWithId");
+
+	struct SetFinishOnMessageWithId_Params {
+		struct FName MessageName;
+		int32_t RequestID;
+	}; SetFinishOnMessageWithId_Params Params;
+
+	Params.MessageName = MessageName;
+	Params.RequestID = RequestID;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.BTTask_BlueprintBase.SetFinishOnMessage
+inline void UBTTask_BlueprintBase::SetFinishOnMessage(struct FName MessageName) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTTask_BlueprintBase.SetFinishOnMessage");
+
+	struct SetFinishOnMessage_Params {
+		struct FName MessageName;
+	}; SetFinishOnMessage_Params Params;
+
+	Params.MessageName = MessageName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.BTTask_BlueprintBase.ReceiveTickAI
+inline void UBTTask_BlueprintBase::ReceiveTickAI(struct Unknown OwnerController, struct Unknown ControlledPawn, float DeltaSeconds) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTTask_BlueprintBase.ReceiveTickAI");
+
+	struct ReceiveTickAI_Params {
+		struct Unknown OwnerController;
+		struct Unknown ControlledPawn;
+		float DeltaSeconds;
+	}; ReceiveTickAI_Params Params;
+
+	Params.OwnerController = OwnerController;
+	Params.ControlledPawn = ControlledPawn;
+	Params.DeltaSeconds = DeltaSeconds;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.BTTask_BlueprintBase.ReceiveTick
+inline void UBTTask_BlueprintBase::ReceiveTick(struct Unknown OwnerActor, float DeltaSeconds) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTTask_BlueprintBase.ReceiveTick");
+
+	struct ReceiveTick_Params {
+		struct Unknown OwnerActor;
+		float DeltaSeconds;
+	}; ReceiveTick_Params Params;
+
+	Params.OwnerActor = OwnerActor;
+	Params.DeltaSeconds = DeltaSeconds;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.BTTask_BlueprintBase.ReceiveExecuteAI
+inline void UBTTask_BlueprintBase::ReceiveExecuteAI(struct Unknown OwnerController, struct Unknown ControlledPawn) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTTask_BlueprintBase.ReceiveExecuteAI");
+
+	struct ReceiveExecuteAI_Params {
+		struct Unknown OwnerController;
+		struct Unknown ControlledPawn;
+	}; ReceiveExecuteAI_Params Params;
+
+	Params.OwnerController = OwnerController;
+	Params.ControlledPawn = ControlledPawn;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.BTTask_BlueprintBase.ReceiveExecute
+inline void UBTTask_BlueprintBase::ReceiveExecute(struct Unknown OwnerActor) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTTask_BlueprintBase.ReceiveExecute");
+
+	struct ReceiveExecute_Params {
+		struct Unknown OwnerActor;
+	}; ReceiveExecute_Params Params;
+
+	Params.OwnerActor = OwnerActor;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.BTTask_BlueprintBase.ReceiveAbortAI
+inline void UBTTask_BlueprintBase::ReceiveAbortAI(struct Unknown OwnerController, struct Unknown ControlledPawn) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTTask_BlueprintBase.ReceiveAbortAI");
+
+	struct ReceiveAbortAI_Params {
+		struct Unknown OwnerController;
+		struct Unknown ControlledPawn;
+	}; ReceiveAbortAI_Params Params;
+
+	Params.OwnerController = OwnerController;
+	Params.ControlledPawn = ControlledPawn;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.BTTask_BlueprintBase.ReceiveAbort
+inline void UBTTask_BlueprintBase::ReceiveAbort(struct Unknown OwnerActor) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTTask_BlueprintBase.ReceiveAbort");
+
+	struct ReceiveAbort_Params {
+		struct Unknown OwnerActor;
+	}; ReceiveAbort_Params Params;
+
+	Params.OwnerActor = OwnerActor;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.BTTask_BlueprintBase.IsTaskExecuting
+inline char UBTTask_BlueprintBase::IsTaskExecuting() {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTTask_BlueprintBase.IsTaskExecuting");
+
+	struct IsTaskExecuting_Params {
+		
+		char ReturnValue;
+
+	}; IsTaskExecuting_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.BTTask_BlueprintBase.IsTaskAborting
+inline char UBTTask_BlueprintBase::IsTaskAborting() {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTTask_BlueprintBase.IsTaskAborting");
+
+	struct IsTaskAborting_Params {
+		
+		char ReturnValue;
+
+	}; IsTaskAborting_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.BTTask_BlueprintBase.FinishExecute
+inline void UBTTask_BlueprintBase::FinishExecute(char bSuccess) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTTask_BlueprintBase.FinishExecute");
+
+	struct FinishExecute_Params {
+		char bSuccess;
+	}; FinishExecute_Params Params;
+
+	Params.bSuccess = bSuccess;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.BTTask_BlueprintBase.FinishAbort
+inline void UBTTask_BlueprintBase::FinishAbort() {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTTask_BlueprintBase.FinishAbort");
+
+	struct FinishAbort_Params {
+		
+	}; FinishAbort_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.PathFollowingComponent.OnNavDataRegistered
+inline void UPathFollowingComponent::OnNavDataRegistered(struct Unknown NavData) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PathFollowingComponent.OnNavDataRegistered");
+
+	struct OnNavDataRegistered_Params {
+		struct Unknown NavData;
+	}; OnNavDataRegistered_Params Params;
+
+	Params.NavData = NavData;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.PathFollowingComponent.OnActorBump
+inline void UPathFollowingComponent::OnActorBump(struct Unknown SelfActor, struct Unknown OtherActor, struct Unknown NormalImpulse, struct Unknown& Hit) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PathFollowingComponent.OnActorBump");
+
+	struct OnActorBump_Params {
+		struct Unknown SelfActor;
+		struct Unknown OtherActor;
+		struct Unknown NormalImpulse;
+		struct Unknown& Hit;
+	}; OnActorBump_Params Params;
+
+	Params.SelfActor = SelfActor;
+	Params.OtherActor = OtherActor;
+	Params.NormalImpulse = NormalImpulse;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Hit = Params.Hit;
+
+}
+
+// Function AIModule.PathFollowingComponent.GetPathDestination
+inline struct Unknown UPathFollowingComponent::GetPathDestination() {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PathFollowingComponent.GetPathDestination");
+
+	struct GetPathDestination_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetPathDestination_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.PathFollowingComponent.GetPathActionType
+inline char UPathFollowingComponent::GetPathActionType() {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PathFollowingComponent.GetPathActionType");
+
+	struct GetPathActionType_Params {
+		
+		char ReturnValue;
+
+	}; GetPathActionType_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.CrowdFollowingComponent.SuspendCrowdSteering
+inline void UCrowdFollowingComponent::SuspendCrowdSteering(char bSuspend) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.CrowdFollowingComponent.SuspendCrowdSteering");
+
+	struct SuspendCrowdSteering_Params {
+		char bSuspend;
+	}; SuspendCrowdSteering_Params Params;
+
+	Params.bSuspend = bSuspend;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.EnvQueryGenerator_BlueprintBase.GetQuerier
+inline struct Unknown UEnvQueryGenerator_BlueprintBase::GetQuerier() {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.EnvQueryGenerator_BlueprintBase.GetQuerier");
+
+	struct GetQuerier_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetQuerier_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.EnvQueryGenerator_BlueprintBase.DoItemGeneration
+inline void UEnvQueryGenerator_BlueprintBase::DoItemGeneration(struct TArray<Unknown>& ContextLocations) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.EnvQueryGenerator_BlueprintBase.DoItemGeneration");
+
+	struct DoItemGeneration_Params {
+		struct TArray<Unknown>& ContextLocations;
+	}; DoItemGeneration_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	ContextLocations = Params.ContextLocations;
+
+}
+
+// Function AIModule.EnvQueryGenerator_BlueprintBase.AddGeneratedVector
+inline void UEnvQueryGenerator_BlueprintBase::AddGeneratedVector(struct Unknown GeneratedVector) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.EnvQueryGenerator_BlueprintBase.AddGeneratedVector");
+
+	struct AddGeneratedVector_Params {
+		struct Unknown GeneratedVector;
+	}; AddGeneratedVector_Params Params;
+
+	Params.GeneratedVector = GeneratedVector;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.EnvQueryGenerator_BlueprintBase.AddGeneratedActor
+inline void UEnvQueryGenerator_BlueprintBase::AddGeneratedActor(struct Unknown GeneratedActor) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.EnvQueryGenerator_BlueprintBase.AddGeneratedActor");
+
+	struct AddGeneratedActor_Params {
+		struct Unknown GeneratedActor;
+	}; AddGeneratedActor_Params Params;
+
+	Params.GeneratedActor = GeneratedActor;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.EnvQueryInstanceBlueprintWrapper.SetNamedParam
+inline void UEnvQueryInstanceBlueprintWrapper::SetNamedParam(struct FName ParamName, float Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.EnvQueryInstanceBlueprintWrapper.SetNamedParam");
+
+	struct SetNamedParam_Params {
+		struct FName ParamName;
+		float Value;
+	}; SetNamedParam_Params Params;
+
+	Params.ParamName = ParamName;
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.EnvQueryInstanceBlueprintWrapper.GetResultsAsLocations
+inline struct TArray<Unknown> UEnvQueryInstanceBlueprintWrapper::GetResultsAsLocations() {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.EnvQueryInstanceBlueprintWrapper.GetResultsAsLocations");
+
+	struct GetResultsAsLocations_Params {
+		
+		struct TArray<Unknown> ReturnValue;
+
+	}; GetResultsAsLocations_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.EnvQueryInstanceBlueprintWrapper.GetResultsAsActors
+inline struct TArray<Unknown> UEnvQueryInstanceBlueprintWrapper::GetResultsAsActors() {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.EnvQueryInstanceBlueprintWrapper.GetResultsAsActors");
+
+	struct GetResultsAsActors_Params {
+		
+		struct TArray<Unknown> ReturnValue;
+
+	}; GetResultsAsActors_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.EnvQueryInstanceBlueprintWrapper.GetQueryResultsAsLocations
+inline char UEnvQueryInstanceBlueprintWrapper::GetQueryResultsAsLocations(struct TArray<Unknown>& ResultLocations) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.EnvQueryInstanceBlueprintWrapper.GetQueryResultsAsLocations");
+
+	struct GetQueryResultsAsLocations_Params {
+		struct TArray<Unknown>& ResultLocations;
+		char ReturnValue;
+
+	}; GetQueryResultsAsLocations_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	ResultLocations = Params.ResultLocations;
+
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.EnvQueryInstanceBlueprintWrapper.GetQueryResultsAsActors
+inline char UEnvQueryInstanceBlueprintWrapper::GetQueryResultsAsActors(struct TArray<Unknown>& ResultActors) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.EnvQueryInstanceBlueprintWrapper.GetQueryResultsAsActors");
+
+	struct GetQueryResultsAsActors_Params {
+		struct TArray<Unknown>& ResultActors;
+		char ReturnValue;
+
+	}; GetQueryResultsAsActors_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	ResultActors = Params.ResultActors;
+
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.EnvQueryInstanceBlueprintWrapper.GetItemScore
+inline float UEnvQueryInstanceBlueprintWrapper::GetItemScore(int32_t ItemIndex) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.EnvQueryInstanceBlueprintWrapper.GetItemScore");
+
+	struct GetItemScore_Params {
+		int32_t ItemIndex;
+		float ReturnValue;
+
+	}; GetItemScore_Params Params;
+
+	Params.ItemIndex = ItemIndex;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// DelegateFunction AIModule.EnvQueryInstanceBlueprintWrapper.EQSQueryDoneSignature__DelegateSignature
+inline void UEnvQueryInstanceBlueprintWrapper::EQSQueryDoneSignature__DelegateSignature(struct Unknown QueryInstance, char QueryStatus) {
+	static auto fn = UObject::FindObject<UFunction>("DelegateFunction AIModule.EnvQueryInstanceBlueprintWrapper.EQSQueryDoneSignature__DelegateSignature");
+
+	struct EQSQueryDoneSignature__DelegateSignature_Params {
+		struct Unknown QueryInstance;
+		char QueryStatus;
+	}; EQSQueryDoneSignature__DelegateSignature_Params Params;
+
+	Params.QueryInstance = QueryInstance;
+	Params.QueryStatus = QueryStatus;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.EnvQueryManager.RunEQSQuery
+inline struct Unknown UEnvQueryManager::RunEQSQuery(struct Unknown WorldContextObject, struct Unknown QueryTemplate, struct Unknown Querier, char RunMode, struct Unknown* WrapperClass) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.EnvQueryManager.RunEQSQuery");
+
+	struct RunEQSQuery_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown QueryTemplate;
+		struct Unknown Querier;
+		char RunMode;
+		struct Unknown* WrapperClass;
+		struct Unknown ReturnValue;
+
+	}; RunEQSQuery_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.QueryTemplate = QueryTemplate;
+	Params.Querier = Querier;
+	Params.RunMode = RunMode;
+	Params.WrapperClass = WrapperClass;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.NavLinkProxy.SetSmartLinkEnabled
+inline void ANavLinkProxy::SetSmartLinkEnabled(char bEnabled) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.NavLinkProxy.SetSmartLinkEnabled");
+
+	struct SetSmartLinkEnabled_Params {
+		char bEnabled;
+	}; SetSmartLinkEnabled_Params Params;
+
+	Params.bEnabled = bEnabled;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.NavLinkProxy.ResumePathFollowing
+inline void ANavLinkProxy::ResumePathFollowing(struct Unknown Agent) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.NavLinkProxy.ResumePathFollowing");
+
+	struct ResumePathFollowing_Params {
+		struct Unknown Agent;
+	}; ResumePathFollowing_Params Params;
+
+	Params.Agent = Agent;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.NavLinkProxy.ReceiveSmartLinkReached
+inline void ANavLinkProxy::ReceiveSmartLinkReached(struct Unknown Agent, struct Unknown& Destination) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.NavLinkProxy.ReceiveSmartLinkReached");
+
+	struct ReceiveSmartLinkReached_Params {
+		struct Unknown Agent;
+		struct Unknown& Destination;
+	}; ReceiveSmartLinkReached_Params Params;
+
+	Params.Agent = Agent;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Destination = Params.Destination;
+
+}
+
+// Function AIModule.NavLinkProxy.IsSmartLinkEnabled
+inline char ANavLinkProxy::IsSmartLinkEnabled() {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.NavLinkProxy.IsSmartLinkEnabled");
+
+	struct IsSmartLinkEnabled_Params {
+		
+		char ReturnValue;
+
+	}; IsSmartLinkEnabled_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.NavLinkProxy.HasMovingAgents
+inline char ANavLinkProxy::HasMovingAgents() {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.NavLinkProxy.HasMovingAgents");
+
+	struct HasMovingAgents_Params {
+		
+		char ReturnValue;
+
+	}; HasMovingAgents_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.PawnAction.GetActionPriority
+inline char UPawnAction::GetActionPriority() {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PawnAction.GetActionPriority");
+
+	struct GetActionPriority_Params {
+		
+		char ReturnValue;
+
+	}; GetActionPriority_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.PawnAction.Finish
+inline void UPawnAction::Finish(char WithResult) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PawnAction.Finish");
+
+	struct Finish_Params {
+		char WithResult;
+	}; Finish_Params Params;
+
+	Params.WithResult = WithResult;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.PawnAction.CreateActionInstance
+inline struct Unknown UPawnAction::CreateActionInstance(struct Unknown WorldContextObject, struct Unknown* ActionClass) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PawnAction.CreateActionInstance");
+
+	struct CreateActionInstance_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown* ActionClass;
+		struct Unknown ReturnValue;
+
+	}; CreateActionInstance_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.ActionClass = ActionClass;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.PawnActionsComponent.K2_PushAction
+inline char UPawnActionsComponent::K2_PushAction(struct Unknown NewAction, char Priority, struct Unknown Instigator) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PawnActionsComponent.K2_PushAction");
+
+	struct K2_PushAction_Params {
+		struct Unknown NewAction;
+		char Priority;
+		struct Unknown Instigator;
+		char ReturnValue;
+
+	}; K2_PushAction_Params Params;
+
+	Params.NewAction = NewAction;
+	Params.Priority = Priority;
+	Params.Instigator = Instigator;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.PawnActionsComponent.K2_PerformAction
+inline char UPawnActionsComponent::K2_PerformAction(struct Unknown Pawn, struct Unknown Action, char Priority) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PawnActionsComponent.K2_PerformAction");
+
+	struct K2_PerformAction_Params {
+		struct Unknown Pawn;
+		struct Unknown Action;
+		char Priority;
+		char ReturnValue;
+
+	}; K2_PerformAction_Params Params;
+
+	Params.Pawn = Pawn;
+	Params.Action = Action;
+	Params.Priority = Priority;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.PawnActionsComponent.K2_ForceAbortAction
+inline char UPawnActionsComponent::K2_ForceAbortAction(struct Unknown ActionToAbort) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PawnActionsComponent.K2_ForceAbortAction");
+
+	struct K2_ForceAbortAction_Params {
+		struct Unknown ActionToAbort;
+		char ReturnValue;
+
+	}; K2_ForceAbortAction_Params Params;
+
+	Params.ActionToAbort = ActionToAbort;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.PawnActionsComponent.K2_AbortAction
+inline char UPawnActionsComponent::K2_AbortAction(struct Unknown ActionToAbort) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PawnActionsComponent.K2_AbortAction");
+
+	struct K2_AbortAction_Params {
+		struct Unknown ActionToAbort;
+		char ReturnValue;
+
+	}; K2_AbortAction_Params Params;
+
+	Params.ActionToAbort = ActionToAbort;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.PawnSensingComponent.SetSensingUpdatesEnabled
+inline void UPawnSensingComponent::SetSensingUpdatesEnabled(char bEnabled) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PawnSensingComponent.SetSensingUpdatesEnabled");
+
+	struct SetSensingUpdatesEnabled_Params {
+		char bEnabled;
+	}; SetSensingUpdatesEnabled_Params Params;
+
+	Params.bEnabled = bEnabled;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.PawnSensingComponent.SetSensingInterval
+inline void UPawnSensingComponent::SetSensingInterval(float NewSensingInterval) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PawnSensingComponent.SetSensingInterval");
+
+	struct SetSensingInterval_Params {
+		float NewSensingInterval;
+	}; SetSensingInterval_Params Params;
+
+	Params.NewSensingInterval = NewSensingInterval;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AIModule.PawnSensingComponent.SetPeripheralVisionAngle
+inline void UPawnSensingComponent::SetPeripheralVisionAngle(float NewPeripheralVisionAngle) {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PawnSensingComponent.SetPeripheralVisionAngle");
+
+	struct SetPeripheralVisionAngle_Params {
+		float NewPeripheralVisionAngle;
+	}; SetPeripheralVisionAngle_Params Params;
+
+	Params.NewPeripheralVisionAngle = NewPeripheralVisionAngle;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// DelegateFunction AIModule.PawnSensingComponent.SeePawnDelegate__DelegateSignature
+inline void UPawnSensingComponent::SeePawnDelegate__DelegateSignature(struct Unknown Pawn) {
+	static auto fn = UObject::FindObject<UFunction>("DelegateFunction AIModule.PawnSensingComponent.SeePawnDelegate__DelegateSignature");
+
+	struct SeePawnDelegate__DelegateSignature_Params {
+		struct Unknown Pawn;
+	}; SeePawnDelegate__DelegateSignature_Params Params;
+
+	Params.Pawn = Pawn;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// DelegateFunction AIModule.PawnSensingComponent.HearNoiseDelegate__DelegateSigy
+inline void UPawnSensingComponent::HearNoiseDelegate__DelegateSig(struct Unknown Instigator, struct Unknown& Location, float Volume) {
+	static auto fn = UObject::FindObject<UFunction>("DelegateFunction AIModule.PawnSensingComponent.HearNoiseDelegate__DelegateSigy");
+
+	struct HearNoiseDelegate__DelegateSig_Params {
+		struct Unknown Instigator;
+		struct Unknown& Location;
+		float Volume;
+	}; HearNoiseDelegate__DelegateSig_Params Params;
+
+	Params.Instigator = Instigator;
+	Params.Volume = Volume;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Location = Params.Location;
+
+}
+
+// Function AIModule.PawnSensingComponent.GetPeripheralVisionCosine
+inline float UPawnSensingComponent::GetPeripheralVisionCosine() {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PawnSensingComponent.GetPeripheralVisionCosine");
+
+	struct GetPeripheralVisionCosine_Params {
+		
+		float ReturnValue;
+
+	}; GetPeripheralVisionCosine_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AIModule.PawnSensingComponent.GetPeripheralVisionAngle
+inline float UPawnSensingComponent::GetPeripheralVisionAngle() {
+	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PawnSensingComponent.GetPeripheralVisionAngle");
+
+	struct GetPeripheralVisionAngle_Params {
+		
+		float ReturnValue;
+
+	}; GetPeripheralVisionAngle_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
 

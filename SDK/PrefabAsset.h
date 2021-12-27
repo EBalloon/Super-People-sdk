@@ -128,10 +128,10 @@ public:
 	char bSupportGenerateBlueprint : 0; // 0x118 (1)
 	char bHarvestComponentsWhenGeneratingBlueprint : 0; // 0x119 (1)
 	char bUseActorNameAsVariableNameWhenGeneratingBlueprint : 0; // 0x11A (1)
-	char bForceMobilityToMovr : 0; // 0x11B (1)
+	char bForceMobilityToMoveprint : 0; // 0x11B (1)
 	struct TArray<Unknown> IgnoreActorClassesWhenGeneratingBlueprint; // 0x120 (16)
 	struct TArray<Unknown> IgnoreActorTagsWhenGeneratingBlueprint; // 0x130 (16)
-	char bFlashPrefabWindowForTarget : 0; // 0x140 (1)
+	char bFlashPrefabWindowForTargetPrefabActor : 0; // 0x140 (1)
 	char bEnablePrefabTextEditor : 0; // 0x141 (1)
 	char bDebugMode : 0; // 0x142 (1)
 	char bDisableThumbnailRender : 0; // 0x143 (1)
@@ -145,4 +145,140 @@ struct FPrefabVariantRule {
 	char RuleType; // 0x18 (1)
 	char bEnable : 0; // 0x19 (1)
 };
+
+// Function PrefabAsset.PrefabToolActor.SetPrefab
+inline void APrefabToolActor::SetPrefab(struct Unknown NewPrefab, char bForceRevertEvenDisconnected) {
+	static auto fn = UObject::FindObject<UFunction>("Function PrefabAsset.PrefabToolActor.SetPrefab");
+
+	struct SetPrefab_Params {
+		struct Unknown NewPrefab;
+		char bForceRevertEvenDisconnected;
+	}; SetPrefab_Params Params;
+
+	Params.NewPrefab = NewPrefab;
+	Params.bForceRevertEvenDisconnected = bForceRevertEvenDisconnected;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function PrefabAsset.PrefabToolActor.SetMobility
+inline void APrefabToolActor::SetMobility(char InMobility) {
+	static auto fn = UObject::FindObject<UFunction>("Function PrefabAsset.PrefabToolActor.SetMobility");
+
+	struct SetMobility_Params {
+		char InMobility;
+	}; SetMobility_Params Params;
+
+	Params.InMobility = InMobility;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function PrefabAsset.PrefabToolActor.IsConnected
+inline char APrefabToolActor::IsConnected() {
+	static auto fn = UObject::FindObject<UFunction>("Function PrefabAsset.PrefabToolActor.IsConnected");
+
+	struct IsConnected_Params {
+		
+		char ReturnValue;
+
+	}; IsConnected_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function PrefabAsset.PrefabToolActor.GetPrefabAssetName
+inline struct FString APrefabToolActor::GetPrefabAssetName() {
+	static auto fn = UObject::FindObject<UFunction>("Function PrefabAsset.PrefabToolActor.GetPrefabAssetName");
+
+	struct GetPrefabAssetName_Params {
+		
+		struct FString ReturnValue;
+
+	}; GetPrefabAssetName_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function PrefabAsset.PrefabToolActor.GetPrefab
+inline struct Unknown APrefabToolActor::GetPrefab() {
+	static auto fn = UObject::FindObject<UFunction>("Function PrefabAsset.PrefabToolActor.GetPrefab");
+
+	struct GetPrefab_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetPrefab_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function PrefabAsset.PrefabToolActor.DestroyPrefabActor
+inline void APrefabToolActor::DestroyPrefabActor(char bDestroyAttachedChildren) {
+	static auto fn = UObject::FindObject<UFunction>("Function PrefabAsset.PrefabToolActor.DestroyPrefabActor");
+
+	struct DestroyPrefabActor_Params {
+		char bDestroyAttachedChildren;
+	}; DestroyPrefabActor_Params Params;
+
+	Params.bDestroyAttachedChildren = bDestroyAttachedChildren;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function PrefabAsset.PrefabAsset.SetSimplifiedMeshAssetReference
+inline void UPrefabAsset::SetSimplifiedMeshAssetReference(struct Unknown& InAssetReference) {
+	static auto fn = UObject::FindObject<UFunction>("Function PrefabAsset.PrefabAsset.SetSimplifiedMeshAssetReference");
+
+	struct SetSimplifiedMeshAssetReference_Params {
+		struct Unknown& InAssetReference;
+	}; SetSimplifiedMeshAssetReference_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	InAssetReference = Params.InAssetReference;
+
+}
+
+// Function PrefabAsset.PrefabAsset.GetPrefabHash
+inline struct FString UPrefabAsset::GetPrefabHash() {
+	static auto fn = UObject::FindObject<UFunction>("Function PrefabAsset.PrefabAsset.GetPrefabHash");
+
+	struct GetPrefabHash_Params {
+		
+		struct FString ReturnValue;
+
+	}; GetPrefabHash_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
 

@@ -36,3 +36,92 @@ public:
 	struct Unknown GetAttachedActor(); // Function CableComponent.CableComponent.GetAttachedActor(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x185AD00>
 };
 
+// Function CableComponent.CableComponent.SetAttachEndToComponent
+inline void UCableComponent::SetAttachEndToComponent(struct Unknown Component, struct FName SocketName) {
+	static auto fn = UObject::FindObject<UFunction>("Function CableComponent.CableComponent.SetAttachEndToComponent");
+
+	struct SetAttachEndToComponent_Params {
+		struct Unknown Component;
+		struct FName SocketName;
+	}; SetAttachEndToComponent_Params Params;
+
+	Params.Component = Component;
+	Params.SocketName = SocketName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CableComponent.CableComponent.SetAttachEndTo
+inline void UCableComponent::SetAttachEndTo(struct Unknown Actor, struct FName ComponentProperty, struct FName SocketName) {
+	static auto fn = UObject::FindObject<UFunction>("Function CableComponent.CableComponent.SetAttachEndTo");
+
+	struct SetAttachEndTo_Params {
+		struct Unknown Actor;
+		struct FName ComponentProperty;
+		struct FName SocketName;
+	}; SetAttachEndTo_Params Params;
+
+	Params.Actor = Actor;
+	Params.ComponentProperty = ComponentProperty;
+	Params.SocketName = SocketName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CableComponent.CableComponent.GetCableParticleLocations
+inline void UCableComponent::GetCableParticleLocations(struct TArray<Unknown>& Locations) {
+	static auto fn = UObject::FindObject<UFunction>("Function CableComponent.CableComponent.GetCableParticleLocations");
+
+	struct GetCableParticleLocations_Params {
+		struct TArray<Unknown>& Locations;
+	}; GetCableParticleLocations_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Locations = Params.Locations;
+
+}
+
+// Function CableComponent.CableComponent.GetAttachedComponent
+inline struct Unknown UCableComponent::GetAttachedComponent() {
+	static auto fn = UObject::FindObject<UFunction>("Function CableComponent.CableComponent.GetAttachedComponent");
+
+	struct GetAttachedComponent_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetAttachedComponent_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CableComponent.CableComponent.GetAttachedActor
+inline struct Unknown UCableComponent::GetAttachedActor() {
+	static auto fn = UObject::FindObject<UFunction>("Function CableComponent.CableComponent.GetAttachedActor");
+
+	struct GetAttachedActor_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetAttachedActor_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+

@@ -18,3 +18,40 @@ public:
 	char RemoveTargetAsync(); // Function MagicLeapImageTracker.MagicLeapImageTrackerComponent.RemoveTargetAsync(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17ECED0>
 };
 
+// Function MagicLeapImageTracker.MagicLeapImageTrackerComponent.SetTargetAsync
+inline char UMagicLeapImageTrackerComponent::SetTargetAsync(struct Unknown ImageTarget) {
+	static auto fn = UObject::FindObject<UFunction>("Function MagicLeapImageTracker.MagicLeapImageTrackerComponent.SetTargetAsync");
+
+	struct SetTargetAsync_Params {
+		struct Unknown ImageTarget;
+		char ReturnValue;
+
+	}; SetTargetAsync_Params Params;
+
+	Params.ImageTarget = ImageTarget;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function MagicLeapImageTracker.MagicLeapImageTrackerComponent.RemoveTargetAsync
+inline char UMagicLeapImageTrackerComponent::RemoveTargetAsync() {
+	static auto fn = UObject::FindObject<UFunction>("Function MagicLeapImageTracker.MagicLeapImageTrackerComponent.RemoveTargetAsync");
+
+	struct RemoveTargetAsync_Params {
+		
+		char ReturnValue;
+
+	}; RemoveTargetAsync_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+

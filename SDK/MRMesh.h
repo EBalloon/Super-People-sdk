@@ -45,3 +45,104 @@ public:
 	void Clear(); // Function MRMesh.MRMeshComponent.Clear(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2EE2BF0>
 };
 
+// DelegateFunction MRMesh.MockDataMeshTrackerComponent.OnMockDataMeshTrackerUpdated__DelegateSignature
+inline void UMockDataMeshTrackerComponent::OnMockDataMeshTrackerUpdated__DelegateSignature(int32_t Index, struct TArray<Unknown>& Vertices, struct TArray<Unknown>& Triangles, struct TArray<Unknown>& Normals, struct TArray<Unknown>& Confidence) {
+	static auto fn = UObject::FindObject<UFunction>("DelegateFunction MRMesh.MockDataMeshTrackerComponent.OnMockDataMeshTrackerUpdated__DelegateSignature");
+
+	struct OnMockDataMeshTrackerUpdated__DelegateSignature_Params {
+		int32_t Index;
+		struct TArray<Unknown>& Vertices;
+		struct TArray<Unknown>& Triangles;
+		struct TArray<Unknown>& Normals;
+		struct TArray<Unknown>& Confidence;
+	}; OnMockDataMeshTrackerUpdated__DelegateSignature_Params Params;
+
+	Params.Index = Index;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Vertices = Params.Vertices;
+	Triangles = Params.Triangles;
+	Normals = Params.Normals;
+	Confidence = Params.Confidence;
+
+}
+
+// Function MRMesh.MockDataMeshTrackerComponent.DisconnectMRMesh
+inline void UMockDataMeshTrackerComponent::DisconnectMRMesh(struct Unknown InMRMeshPtr) {
+	static auto fn = UObject::FindObject<UFunction>("Function MRMesh.MockDataMeshTrackerComponent.DisconnectMRMesh");
+
+	struct DisconnectMRMesh_Params {
+		struct Unknown InMRMeshPtr;
+	}; DisconnectMRMesh_Params Params;
+
+	Params.InMRMeshPtr = InMRMeshPtr;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MRMesh.MockDataMeshTrackerComponent.ConnectMRMesh
+inline void UMockDataMeshTrackerComponent::ConnectMRMesh(struct Unknown InMRMeshPtr) {
+	static auto fn = UObject::FindObject<UFunction>("Function MRMesh.MockDataMeshTrackerComponent.ConnectMRMesh");
+
+	struct ConnectMRMesh_Params {
+		struct Unknown InMRMeshPtr;
+	}; ConnectMRMesh_Params Params;
+
+	Params.InMRMeshPtr = InMRMeshPtr;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MRMesh.MRMeshComponent.IsConnected
+inline char UMRMeshComponent::IsConnected() {
+	static auto fn = UObject::FindObject<UFunction>("Function MRMesh.MRMeshComponent.IsConnected");
+
+	struct IsConnected_Params {
+		
+		char ReturnValue;
+
+	}; IsConnected_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function MRMesh.MRMeshComponent.ForceNavMeshUpdate
+inline void UMRMeshComponent::ForceNavMeshUpdate() {
+	static auto fn = UObject::FindObject<UFunction>("Function MRMesh.MRMeshComponent.ForceNavMeshUpdate");
+
+	struct ForceNavMeshUpdate_Params {
+		
+	}; ForceNavMeshUpdate_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MRMesh.MRMeshComponent.Clear
+inline void UMRMeshComponent::Clear() {
+	static auto fn = UObject::FindObject<UFunction>("Function MRMesh.MRMeshComponent.Clear");
+
+	struct Clear_Params {
+		
+	}; Clear_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+

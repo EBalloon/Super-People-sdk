@@ -41,7 +41,7 @@ enum class EGrassScaling : uint8_t {
 // Enum Landscape.ESplineModulationColorMask
 enum class ESplineModulationColorMask : uint8_t {
 	ESplineModulationColorMask = 0,
-	ESplineModulationColorMaskity = 1,
+	ESplineModulationColorMask = 1,
 	ESplineModulationColorMask = 2,
 	ESplineModulationColorMask = 3,
 	ESplineModulationColorMask = 4,
@@ -87,7 +87,7 @@ enum class LandscapeSplineMeshOrientation : uint8_t {
 
 // Enum Landscape.ELandscapeLayerBlendType
 enum class ELandscapeLayerBlendType : uint8_t {
-	LB_WeightBlend = 0,
+	LB_ = 0,
 	LB_AlphaBlend = 1,
 	LB_HeightBlend = 2,
 	LB_MAX = 3,
@@ -193,11 +193,11 @@ public:
 	char bHasLayersContent : 0; // 0x66F (1)
 	struct TMap<Unknown, Unknown> WeightmapUsageMap; // 0x670 (80)
 
-	void SetLandscapeMaterialVectorParam(struct FName ParameterName, struct Unknown Value); // Function Landscape.LandscapeProxy.SetLandscapeMaterialVectorParam(Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x315DB80>
-	void SetLandscapeMaterialTexture(struct FName ParameterName, struct Unknown Value); // Function Landscape.LandscapeProxy.SetLandscapeMaterialTexture(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x315DAC0>
-	void SetLandscapeMaterialScalarParam(struct FName ParameterName, float Value); // Function Landscape.LandscapeProxy.SetLandscapeMaterialScalarParam(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x315D9F0>
+	void SetLandscapeMaterialVectorParameterValue(struct FName ParameterName, struct Unknown Value); // Function Landscape.LandscapeProxy.SetLandscapeMaterialVectorParameterValue(Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x315DB80>
+	void SetLandscapeMaterialTextureParameterValue(struct FName ParameterName, struct Unknown Value); // Function Landscape.LandscapeProxy.SetLandscapeMaterialTextureParameterValue(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x315DAC0>
+	void SetLandscapeMaterialScalarParameterValue(struct FName ParameterName, float Value); // Function Landscape.LandscapeProxy.SetLandscapeMaterialScalarParameterValue(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x315D9F0>
 	void EditorSetLandscapeMaterial(struct Unknown NewLandscapeMaterial); // Function Landscape.LandscapeProxy.EditorSetLandscapeMaterial(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16B5B80>
-	void EditorApplySpline(struct Unknown InSplineComponent, float StartWidth, float EndWidth, float StartSideFalloff, float EndSideFalloff, float StartRoll, float EndRoll, int32_t NumSubdivisions, char bRaiseHeights, char bLowerHeights, struct Unknown PaintLayer); // Function Landscape.LandscapeProxy.EditorApplySpline(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x315D6B0>
+	void EditorApplySpline(struct Unknown InSplineComponent, float StartWidth, float End, float StartSideFalloff, float EndSideFalloff, float StartRoll, float EndRoll, int32_t NumSubdivisions, char bRaiseHeights, char bLowerHeights, struct Unknown PaintLayer); // Function Landscape.LandscapeProxy.EditorApplySpline(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x315D6B0>
 	void ChangeUseTessellationComponentScreenSizeFalloff(char InComponentScreenSizeToUseSubSections); // Function Landscape.LandscapeProxy.ChangeUseTessellationComponentScreenSizeFalloff(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x315D620>
 	void ChangeTessellationComponentScreenSizeFalloff(float InUseTessellationComponentScreenSizeFalloff); // Function Landscape.LandscapeProxy.ChangeTessellationComponentScreenSizeFalloff(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F1D3E0>
 	void ChangeTessellationComponentScreenSize(float InTessellationComponentScreenSize); // Function Landscape.LandscapeProxy.ChangeTessellationComponentScreenSize(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x315D5A0>
@@ -221,7 +221,7 @@ public:
 	struct TArray<Unknown> MaterialInstances; // 0x4F0 (16)
 	struct TArray<Unknown> MaterialInstancesDynamic; // 0x500 (16)
 	struct TArray<Unknown> LODIndexToMaterialIndex; // 0x510 (16)
-	struct TArray<Unknown> MaterialIndexToDisabledTessellation; // 0x520 (16)
+	struct TArray<Unknown> MaterialIndexToDisabledTessellationMaterial; // 0x520 (16)
 	struct Unknown XYOffsetmapTexture; // 0x530 (8)
 	struct Unknown WeightmapScaleBias; // 0x540 (16)
 	float WeightmapSubsectionOffset; // 0x550 (4)
@@ -656,4 +656,281 @@ struct FLayerBlendInput {
 	struct Unknown ConstLayerInput; // 0x38 (12)
 	float ConstHeightInput; // 0x44 (4)
 };
+
+// Function Landscape.LandscapeProxy.SetLandscapeMaterialVectorParameterValue
+inline void ALandscapeProxy::SetLandscapeMaterialVectorParameterValue(struct FName ParameterName, struct Unknown Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function Landscape.LandscapeProxy.SetLandscapeMaterialVectorParameterValue");
+
+	struct SetLandscapeMaterialVectorParameterValue_Params {
+		struct FName ParameterName;
+		struct Unknown Value;
+	}; SetLandscapeMaterialVectorParameterValue_Params Params;
+
+	Params.ParameterName = ParameterName;
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Landscape.LandscapeProxy.SetLandscapeMaterialTextureParameterValue
+inline void ALandscapeProxy::SetLandscapeMaterialTextureParameterValue(struct FName ParameterName, struct Unknown Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function Landscape.LandscapeProxy.SetLandscapeMaterialTextureParameterValue");
+
+	struct SetLandscapeMaterialTextureParameterValue_Params {
+		struct FName ParameterName;
+		struct Unknown Value;
+	}; SetLandscapeMaterialTextureParameterValue_Params Params;
+
+	Params.ParameterName = ParameterName;
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Landscape.LandscapeProxy.SetLandscapeMaterialScalarParameterValue
+inline void ALandscapeProxy::SetLandscapeMaterialScalarParameterValue(struct FName ParameterName, float Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function Landscape.LandscapeProxy.SetLandscapeMaterialScalarParameterValue");
+
+	struct SetLandscapeMaterialScalarParameterValue_Params {
+		struct FName ParameterName;
+		float Value;
+	}; SetLandscapeMaterialScalarParameterValue_Params Params;
+
+	Params.ParameterName = ParameterName;
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Landscape.LandscapeProxy.EditorSetLandscapeMaterial
+inline void ALandscapeProxy::EditorSetLandscapeMaterial(struct Unknown NewLandscapeMaterial) {
+	static auto fn = UObject::FindObject<UFunction>("Function Landscape.LandscapeProxy.EditorSetLandscapeMaterial");
+
+	struct EditorSetLandscapeMaterial_Params {
+		struct Unknown NewLandscapeMaterial;
+	}; EditorSetLandscapeMaterial_Params Params;
+
+	Params.NewLandscapeMaterial = NewLandscapeMaterial;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Landscape.LandscapeProxy.EditorApplySpline
+inline void ALandscapeProxy::EditorApplySpline(struct Unknown InSplineComponent, float StartWidth, float End, float StartSideFalloff, float EndSideFalloff, float StartRoll, float EndRoll, int32_t NumSubdivisions, char bRaiseHeights, char bLowerHeights, struct Unknown PaintLayer) {
+	static auto fn = UObject::FindObject<UFunction>("Function Landscape.LandscapeProxy.EditorApplySpline");
+
+	struct EditorApplySpline_Params {
+		struct Unknown InSplineComponent;
+		float StartWidth;
+		float End;
+		float StartSideFalloff;
+		float EndSideFalloff;
+		float StartRoll;
+		float EndRoll;
+		int32_t NumSubdivisions;
+		char bRaiseHeights;
+		char bLowerHeights;
+		struct Unknown PaintLayer;
+	}; EditorApplySpline_Params Params;
+
+	Params.InSplineComponent = InSplineComponent;
+	Params.StartWidth = StartWidth;
+	Params.End = End;
+	Params.StartSideFalloff = StartSideFalloff;
+	Params.EndSideFalloff = EndSideFalloff;
+	Params.StartRoll = StartRoll;
+	Params.EndRoll = EndRoll;
+	Params.NumSubdivisions = NumSubdivisions;
+	Params.bRaiseHeights = bRaiseHeights;
+	Params.bLowerHeights = bLowerHeights;
+	Params.PaintLayer = PaintLayer;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Landscape.LandscapeProxy.ChangeUseTessellationComponentScreenSizeFalloff
+inline void ALandscapeProxy::ChangeUseTessellationComponentScreenSizeFalloff(char InComponentScreenSizeToUseSubSections) {
+	static auto fn = UObject::FindObject<UFunction>("Function Landscape.LandscapeProxy.ChangeUseTessellationComponentScreenSizeFalloff");
+
+	struct ChangeUseTessellationComponentScreenSizeFalloff_Params {
+		char InComponentScreenSizeToUseSubSections;
+	}; ChangeUseTessellationComponentScreenSizeFalloff_Params Params;
+
+	Params.InComponentScreenSizeToUseSubSections = InComponentScreenSizeToUseSubSections;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Landscape.LandscapeProxy.ChangeTessellationComponentScreenSizeFalloff
+inline void ALandscapeProxy::ChangeTessellationComponentScreenSizeFalloff(float InUseTessellationComponentScreenSizeFalloff) {
+	static auto fn = UObject::FindObject<UFunction>("Function Landscape.LandscapeProxy.ChangeTessellationComponentScreenSizeFalloff");
+
+	struct ChangeTessellationComponentScreenSizeFalloff_Params {
+		float InUseTessellationComponentScreenSizeFalloff;
+	}; ChangeTessellationComponentScreenSizeFalloff_Params Params;
+
+	Params.InUseTessellationComponentScreenSizeFalloff = InUseTessellationComponentScreenSizeFalloff;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Landscape.LandscapeProxy.ChangeTessellationComponentScreenSize
+inline void ALandscapeProxy::ChangeTessellationComponentScreenSize(float InTessellationComponentScreenSize) {
+	static auto fn = UObject::FindObject<UFunction>("Function Landscape.LandscapeProxy.ChangeTessellationComponentScreenSize");
+
+	struct ChangeTessellationComponentScreenSize_Params {
+		float InTessellationComponentScreenSize;
+	}; ChangeTessellationComponentScreenSize_Params Params;
+
+	Params.InTessellationComponentScreenSize = InTessellationComponentScreenSize;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Landscape.LandscapeProxy.ChangeLODDistanceFactor
+inline void ALandscapeProxy::ChangeLODDistanceFactor(float InLODDistanceFactor) {
+	static auto fn = UObject::FindObject<UFunction>("Function Landscape.LandscapeProxy.ChangeLODDistanceFactor");
+
+	struct ChangeLODDistanceFactor_Params {
+		float InLODDistanceFactor;
+	}; ChangeLODDistanceFactor_Params Params;
+
+	Params.InLODDistanceFactor = InLODDistanceFactor;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Landscape.LandscapeProxy.ChangeComponentScreenSizeToUseSubSections
+inline void ALandscapeProxy::ChangeComponentScreenSizeToUseSubSections(float InComponentScreenSizeToUseSubSections) {
+	static auto fn = UObject::FindObject<UFunction>("Function Landscape.LandscapeProxy.ChangeComponentScreenSizeToUseSubSections");
+
+	struct ChangeComponentScreenSizeToUseSubSections_Params {
+		float InComponentScreenSizeToUseSubSections;
+	}; ChangeComponentScreenSizeToUseSubSections_Params Params;
+
+	Params.InComponentScreenSizeToUseSubSections = InComponentScreenSizeToUseSubSections;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Landscape.LandscapeComponent.GetMaterialInstanceDynamic
+inline struct Unknown ULandscapeComponent::GetMaterialInstanceDynamic(int32_t InIndex) {
+	static auto fn = UObject::FindObject<UFunction>("Function Landscape.LandscapeComponent.GetMaterialInstanceDynamic");
+
+	struct GetMaterialInstanceDynamic_Params {
+		int32_t InIndex;
+		struct Unknown ReturnValue;
+
+	}; GetMaterialInstanceDynamic_Params Params;
+
+	Params.InIndex = InIndex;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function Landscape.LandscapeComponent.EditorGetPaintLayerWeightByNameAtLocation
+inline float ULandscapeComponent::EditorGetPaintLayerWeightByNameAtLocation(struct Unknown& InLocation, struct FName InPaintLayerName) {
+	static auto fn = UObject::FindObject<UFunction>("Function Landscape.LandscapeComponent.EditorGetPaintLayerWeightByNameAtLocation");
+
+	struct EditorGetPaintLayerWeightByNameAtLocation_Params {
+		struct Unknown& InLocation;
+		struct FName InPaintLayerName;
+		float ReturnValue;
+
+	}; EditorGetPaintLayerWeightByNameAtLocation_Params Params;
+
+	Params.InPaintLayerName = InPaintLayerName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	InLocation = Params.InLocation;
+
+
+	return params.ReturnValue;
+}
+
+// Function Landscape.LandscapeComponent.EditorGetPaintLayerWeightAtLocation
+inline float ULandscapeComponent::EditorGetPaintLayerWeightAtLocation(struct Unknown& InLocation, struct Unknown PaintLayer) {
+	static auto fn = UObject::FindObject<UFunction>("Function Landscape.LandscapeComponent.EditorGetPaintLayerWeightAtLocation");
+
+	struct EditorGetPaintLayerWeightAtLocation_Params {
+		struct Unknown& InLocation;
+		struct Unknown PaintLayer;
+		float ReturnValue;
+
+	}; EditorGetPaintLayerWeightAtLocation_Params Params;
+
+	Params.PaintLayer = PaintLayer;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	InLocation = Params.InLocation;
+
+
+	return params.ReturnValue;
+}
+
+// Function Landscape.LandscapeHeightfieldCollisionComponent.GetRenderComponent
+inline struct Unknown ULandscapeHeightfieldCollisionComponent::GetRenderComponent() {
+	static auto fn = UObject::FindObject<UFunction>("Function Landscape.LandscapeHeightfieldCollisionComponent.GetRenderComponent");
+
+	struct GetRenderComponent_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetRenderComponent_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function Landscape.LandscapeSplinesComponent.GetSplineMeshComponents
+inline struct TArray<Unknown> ULandscapeSplinesComponent::GetSplineMeshComponents() {
+	static auto fn = UObject::FindObject<UFunction>("Function Landscape.LandscapeSplinesComponent.GetSplineMeshComponents");
+
+	struct GetSplineMeshComponents_Params {
+		
+		struct TArray<Unknown> ReturnValue;
+
+	}; GetSplineMeshComponents_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
 

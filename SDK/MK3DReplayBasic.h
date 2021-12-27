@@ -59,7 +59,7 @@ public:
 	struct Unknown OnMouseLeaveEventBorder(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function MK3DReplayBasic.NativeReplayEventMarkerBasic.OnMouseLeaveEventBorder(Native|Public|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x13697E0>
 	struct Unknown OnMouseEnterEventBorder(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function MK3DReplayBasic.NativeReplayEventMarkerBasic.OnMouseEnterEventBorder(Native|Public|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1369440>
 	struct Unknown OnMouseButtonUpEventBorder(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function MK3DReplayBasic.NativeReplayEventMarkerBasic.OnMouseButtonUpEventBorder(Native|Public|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1369270>
-	struct Unknown OnMouseButtonDownEv(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function MK3DReplayBasic.NativeReplayEventMarkerBasic.OnMouseButtonDownEvasic(Native|Public|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x13690A0>
+	struct Unknown OnMouseButtonDownEv(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function MK3DReplayBasic.NativeReplayEventMarkerBasic.OnMouseButtonDownEv(Native|Public|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x13690A0>
 	struct Unknown GetBorderSize(); // Function MK3DReplayBasic.NativeReplayEventMarkerBasic.GetBorderSize(Native|Public|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1368830>
 };
 
@@ -93,7 +93,7 @@ public:
 	void OnClickedReplayListItemBtn(); // Function MK3DReplayBasic.NativeReplayListItem.OnClickedReplayListItemBtn(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1368DC0>
 };
 
-// Class MK3DReplayBasic.NativeReplayListLev
+// Class MK3DReplayBasic.NativeReplayListLevas
 class ANativeReplayListLevas : public ALevelScriptActor {
 
 public:
@@ -199,7 +199,7 @@ public:
 	void Timer_EnumerateMK3DKnockoutEvents(); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.Timer_EnumerateMK3DKnockoutEvents(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x136AB50>
 	void Timer_EnumerateMK3DKillEvents(); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.Timer_EnumerateMK3DKillEvents(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x136AB30>
 	void SetTimelineScale(float InScale); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.SetTimelineScale(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x136A980>
-	void RemoveAllKnockoutEveBasicWidg(); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.RemoveAllKnockoutEv(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x136A720>
+	void RemoveAllKnockoutEv(); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.RemoveAllKnockoutEv(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x136A720>
 	void RemoveAllKillEventMarkers(); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.RemoveAllKillEventMarkers(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x136A700>
 	void RefreshKillEventMarkers(enum class Unknow killType); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.RefreshKillEventMarkers(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x136A680>
 	void OnValueChangedTimeSlider(float InValue); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnValueChangedTimeSlider(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x136A4A0>
@@ -218,7 +218,7 @@ public:
 	void OnCheckStateChangedShowKill(char bIsChecked); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnCheckStateChangedShowKill(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1368A90>
 	void OnChangeCameraType(enum class Unknow CameraType, struct FString TargetPlayerName); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnChangeCameraType(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1368960>
 	float GetTimelineScale(); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.GetTimelineScale(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1368900>
-	void EnumerateMK3DKillEv(enum class Unknow killType); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.EnumerateMK3DKillEv(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1368780>
+	void EnumerateMK3DKillEv(enum class Unknow killType); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.EnumerateMK3DKillEvasic(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1368780>
 	struct Unknown CreateEventMarker(enum class Unknow killType); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.CreateEventMarker(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 	void BPUpdateTimelineScale(); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.BPUpdateTimelineScale(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 	void BPUpdateKillEventMarkersPos(enum class Unknow killType, float TotalTime); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.BPUpdateKillEventMarkersPos(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
@@ -246,4 +246,1317 @@ struct FUserWidgetInfoForReplay_T {
 	struct FString KeyName; // 0x0 (16)
 	struct FString FilePath; // 0x10 (16)
 };
+
+// Function MK3DReplayBasic.MK3DUserInterfaceManager.Get
+inline struct Unknown AMK3DUserInterfaceManager::Get() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.MK3DUserInterfaceManager.Get");
+
+	struct Get_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; Get_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function MK3DReplayBasic.NativePlayerListItem.OnClickPlayerNameButton
+inline void UNativePlayerListItem::OnClickPlayerNameButton() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativePlayerListItem.OnClickPlayerNameButton");
+
+	struct OnClickPlayerNameButton_Params {
+		
+	}; OnClickPlayerNameButton_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativePlayerListWidget.ShowPlayerList
+inline void UNativePlayerListWidget::ShowPlayerList() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativePlayerListWidget.ShowPlayerList");
+
+	struct ShowPlayerList_Params {
+		
+	}; ShowPlayerList_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativePlayerListWidget.SetPlayerListWidgetButtons
+inline void UNativePlayerListWidget::SetPlayerListWidgetButtons() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativePlayerListWidget.SetPlayerListWidgetButtons");
+
+	struct SetPlayerListWidgetButtons_Params {
+		
+	}; SetPlayerListWidgetButtons_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativePlayerListWidget.OnClickPlayerListPrevButton
+inline void UNativePlayerListWidget::OnClickPlayerListPrevButton() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativePlayerListWidget.OnClickPlayerListPrevButton");
+
+	struct OnClickPlayerListPrevButton_Params {
+		
+	}; OnClickPlayerListPrevButton_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativePlayerListWidget.OnClickPlayerListNextButton
+inline void UNativePlayerListWidget::OnClickPlayerListNextButton() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativePlayerListWidget.OnClickPlayerListNextButton");
+
+	struct OnClickPlayerListNextButton_Params {
+		
+	}; OnClickPlayerListNextButton_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativePlayerListWidget.HidePlayerList
+inline void UNativePlayerListWidget::HidePlayerList() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativePlayerListWidget.HidePlayerList");
+
+	struct HidePlayerList_Params {
+		
+	}; HidePlayerList_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayEventMarkerBasic.OnMouseMoveEventBorder
+inline struct Unknown UNativeReplayEventMarkerBasic::OnMouseMoveEventBorder(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayEventMarkerBasic.OnMouseMoveEventBorder");
+
+	struct OnMouseMoveEventBorder_Params {
+		struct Unknown MyGeometry;
+		struct Unknown& MouseEvent;
+		struct Unknown ReturnValue;
+
+	}; OnMouseMoveEventBorder_Params Params;
+
+	Params.MyGeometry = MyGeometry;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	MouseEvent = Params.MouseEvent;
+
+
+	return params.ReturnValue;
+}
+
+// Function MK3DReplayBasic.NativeReplayEventMarkerBasic.OnMouseLeaveEventBorder
+inline struct Unknown UNativeReplayEventMarkerBasic::OnMouseLeaveEventBorder(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayEventMarkerBasic.OnMouseLeaveEventBorder");
+
+	struct OnMouseLeaveEventBorder_Params {
+		struct Unknown MyGeometry;
+		struct Unknown& MouseEvent;
+		struct Unknown ReturnValue;
+
+	}; OnMouseLeaveEventBorder_Params Params;
+
+	Params.MyGeometry = MyGeometry;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	MouseEvent = Params.MouseEvent;
+
+
+	return params.ReturnValue;
+}
+
+// Function MK3DReplayBasic.NativeReplayEventMarkerBasic.OnMouseEnterEventBorder
+inline struct Unknown UNativeReplayEventMarkerBasic::OnMouseEnterEventBorder(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayEventMarkerBasic.OnMouseEnterEventBorder");
+
+	struct OnMouseEnterEventBorder_Params {
+		struct Unknown MyGeometry;
+		struct Unknown& MouseEvent;
+		struct Unknown ReturnValue;
+
+	}; OnMouseEnterEventBorder_Params Params;
+
+	Params.MyGeometry = MyGeometry;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	MouseEvent = Params.MouseEvent;
+
+
+	return params.ReturnValue;
+}
+
+// Function MK3DReplayBasic.NativeReplayEventMarkerBasic.OnMouseButtonUpEventBorder
+inline struct Unknown UNativeReplayEventMarkerBasic::OnMouseButtonUpEventBorder(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayEventMarkerBasic.OnMouseButtonUpEventBorder");
+
+	struct OnMouseButtonUpEventBorder_Params {
+		struct Unknown MyGeometry;
+		struct Unknown& MouseEvent;
+		struct Unknown ReturnValue;
+
+	}; OnMouseButtonUpEventBorder_Params Params;
+
+	Params.MyGeometry = MyGeometry;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	MouseEvent = Params.MouseEvent;
+
+
+	return params.ReturnValue;
+}
+
+// Function MK3DReplayBasic.NativeReplayEventMarkerBasic.OnMouseButtonDownEv
+inline struct Unknown UNativeReplayEventMarkerBasic::OnMouseButtonDownEv(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayEventMarkerBasic.OnMouseButtonDownEv");
+
+	struct OnMouseButtonDownEv_Params {
+		struct Unknown MyGeometry;
+		struct Unknown& MouseEvent;
+		struct Unknown ReturnValue;
+
+	}; OnMouseButtonDownEv_Params Params;
+
+	Params.MyGeometry = MyGeometry;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	MouseEvent = Params.MouseEvent;
+
+
+	return params.ReturnValue;
+}
+
+// Function MK3DReplayBasic.NativeReplayEventMarkerBasic.GetBorderSize
+inline struct Unknown UNativeReplayEventMarkerBasic::GetBorderSize() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayEventMarkerBasic.GetBorderSize");
+
+	struct GetBorderSize_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetBorderSize_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function MK3DReplayBasic.NativeReplayKillEventMarker.SetKillEvent
+inline void UNativeReplayKillEventMarker::SetKillEvent(struct Unknown& InKillEvent) {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayKillEventMarker.SetKillEvent");
+
+	struct SetKillEvent_Params {
+		struct Unknown& InKillEvent;
+	}; SetKillEvent_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	InKillEvent = Params.InKillEvent;
+
+}
+
+// Function MK3DReplayBasic.NativeReplayKillEventMarker.OnReplayJumpComplete
+inline void UNativeReplayKillEventMarker::OnReplayJumpComplete(char bSuccess) {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayKillEventMarker.OnReplayJumpComplete");
+
+	struct OnReplayJumpComplete_Params {
+		char bSuccess;
+	}; OnReplayJumpComplete_Params Params;
+
+	Params.bSuccess = bSuccess;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayKillEventMarker.GetEventTime
+inline int32_t UNativeReplayKillEventMarker::GetEventTime() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayKillEventMarker.GetEventTime");
+
+	struct GetEventTime_Params {
+		
+		int32_t ReturnValue;
+
+	}; GetEventTime_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function MK3DReplayBasic.NativeReplayListItem.SetReplayListItemText
+inline void UNativeReplayListItem::SetReplayListItemText(struct FString Name, char IsLive, struct Unknown Time) {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayListItem.SetReplayListItemText");
+
+	struct SetReplayListItemText_Params {
+		struct FString Name;
+		char IsLive;
+		struct Unknown Time;
+	}; SetReplayListItemText_Params Params;
+
+	Params.Name = Name;
+	Params.IsLive = IsLive;
+	Params.Time = Time;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayListItem.PlayReplay
+inline void UNativeReplayListItem::PlayReplay() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayListItem.PlayReplay");
+
+	struct PlayReplay_Params {
+		
+	}; PlayReplay_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// DelegateFunction MK3DReplayBasic.NativeReplayListItem.OnSelectedReplayListItemEvent__DelegateSignature
+inline void UNativeReplayListItem::OnSelectedReplayListItemEvent__DelegateSignature(struct FString ReplayName) {
+	static auto fn = UObject::FindObject<UFunction>("DelegateFunction MK3DReplayBasic.NativeReplayListItem.OnSelectedReplayListItemEvent__DelegateSignature");
+
+	struct OnSelectedReplayListItemEvent__DelegateSignature_Params {
+		struct FString ReplayName;
+	}; OnSelectedReplayListItemEvent__DelegateSignature_Params Params;
+
+	Params.ReplayName = ReplayName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayListItem.OnClickedReplayListItemBtn
+inline void UNativeReplayListItem::OnClickedReplayListItemBtn() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayListItem.OnClickedReplayListItemBtn");
+
+	struct OnClickedReplayListItemBtn_Params {
+		
+	}; OnClickedReplayListItemBtn_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayListLev.ShowMouseCursor
+inline void ANativeReplayListLev::ShowMouseCursor() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayListLev.ShowMouseCursor");
+
+	struct ShowMouseCursor_Params {
+		
+	}; ShowMouseCursor_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayListLev.AddListWidgetToViewPort
+inline void ANativeReplayListLevPo::AddListWidgetToViewPort() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayListLev.AddListWidgetToViewPort");
+
+	struct AddListWidgetToViewPort_Params {
+		
+	}; AddListWidgetToViewPort_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayListWidget.UpdateTotalReplaysTB
+inline void UNativeReplayListWidget::UpdateTotalReplaysTB() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayListWidget.UpdateTotalReplaysTB");
+
+	struct UpdateTotalReplaysTB_Params {
+		
+	}; UpdateTotalReplaysTB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayListWidget.UpdateTotalPage
+inline void UNativeReplayListWidget::UpdateTotalPage() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayListWidget.UpdateTotalPage");
+
+	struct UpdateTotalPage_Params {
+		
+	}; UpdateTotalPage_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayListWidget.UpdateShouldKeep
+inline char UNativeReplayListWidget::UpdateShouldKeep(struct FString ReplayName, char bShouldKeep) {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayListWidget.UpdateShouldKeep");
+
+	struct UpdateShouldKeep_Params {
+		struct FString ReplayName;
+		char bShouldKeep;
+		char ReturnValue;
+
+	}; UpdateShouldKeep_Params Params;
+
+	Params.ReplayName = ReplayName;
+	Params.bShouldKeep = bShouldKeep;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function MK3DReplayBasic.NativeReplayListWidget.UpdateReplaysToKeepTB
+inline void UNativeReplayListWidget::UpdateReplaysToKeepTB() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayListWidget.UpdateReplaysToKeepTB");
+
+	struct UpdateReplaysToKeepTB_Params {
+		
+	}; UpdateReplaysToKeepTB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayListWidget.UpdateReplayStatics
+inline void UNativeReplayListWidget::UpdateReplayStatics() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayListWidget.UpdateReplayStatics");
+
+	struct UpdateReplayStatics_Params {
+		
+	}; UpdateReplayStatics_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayListWidget.UpdateReplayListItems
+inline void UNativeReplayListWidget::UpdateReplayListItems() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayListWidget.UpdateReplayListItems");
+
+	struct UpdateReplayListItems_Params {
+		
+	}; UpdateReplayListItems_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayListWidget.UpdatePageSizeTB
+inline void UNativeReplayListWidget::UpdatePageSizeTB() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayListWidget.UpdatePageSizeTB");
+
+	struct UpdatePageSizeTB_Params {
+		
+	}; UpdatePageSizeTB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayListWidget.UpdateCurrentPageTB
+inline void UNativeReplayListWidget::UpdateCurrentPageTB() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayListWidget.UpdateCurrentPageTB");
+
+	struct UpdateCurrentPageTB_Params {
+		
+	}; UpdateCurrentPageTB_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayListWidget.ShowReplayItemDetail
+inline void UNativeReplayListWidget::ShowReplayItemDetail(struct FString inSelectedReplayName) {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayListWidget.ShowReplayItemDetail");
+
+	struct ShowReplayItemDetail_Params {
+		struct FString inSelectedReplayName;
+	}; ShowReplayItemDetail_Params Params;
+
+	Params.inSelectedReplayName = inSelectedReplayName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayListWidget.PlayReplay
+inline void UNativeReplayListWidget::PlayReplay(struct FString ReplayToPlay, char bShowSimpleConfirmBox) {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayListWidget.PlayReplay");
+
+	struct PlayReplay_Params {
+		struct FString ReplayToPlay;
+		char bShowSimpleConfirmBox;
+	}; PlayReplay_Params Params;
+
+	Params.ReplayToPlay = ReplayToPlay;
+	Params.bShowSimpleConfirmBox = bShowSimpleConfirmBox;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayListWidget.OnTextCommitedReplaysToKeepTB
+inline void UNativeReplayListWidget::OnTextCommitedReplaysToKeepTB(struct FText& Text, char CommitMethod) {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayListWidget.OnTextCommitedReplaysToKeepTB");
+
+	struct OnTextCommitedReplaysToKeepTB_Params {
+		struct FText& Text;
+		char CommitMethod;
+	}; OnTextCommitedReplaysToKeepTB_Params Params;
+
+	Params.CommitMethod = CommitMethod;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Text = Params.Text;
+
+}
+
+// Function MK3DReplayBasic.NativeReplayListWidget.OnTextCommitedPageSize
+inline void UNativeReplayListWidget::OnTextCommitedPageSize(struct FText& Text, char CommitMethod) {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayListWidget.OnTextCommitedPageSize");
+
+	struct OnTextCommitedPageSize_Params {
+		struct FText& Text;
+		char CommitMethod;
+	}; OnTextCommitedPageSize_Params Params;
+
+	Params.CommitMethod = CommitMethod;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Text = Params.Text;
+
+}
+
+// Function MK3DReplayBasic.NativeReplayListWidget.OnTextCommitedCurrentPage
+inline void UNativeReplayListWidget::OnTextCommitedCurrentPage(struct FText& Text, char CommitMethod) {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayListWidget.OnTextCommitedCurrentPage");
+
+	struct OnTextCommitedCurrentPage_Params {
+		struct FText& Text;
+		char CommitMethod;
+	}; OnTextCommitedCurrentPage_Params Params;
+
+	Params.CommitMethod = CommitMethod;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Text = Params.Text;
+
+}
+
+// Function MK3DReplayBasic.NativeReplayListWidget.OnSelectedReplayListItem
+inline void UNativeReplayListWidget::OnSelectedReplayListItem(struct FString ReplayName) {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayListWidget.OnSelectedReplayListItem");
+
+	struct OnSelectedReplayListItem_Params {
+		struct FString ReplayName;
+	}; OnSelectedReplayListItem_Params Params;
+
+	Params.ReplayName = ReplayName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayListWidget.OnKeepAndDeleteOldReplaysComplete
+inline void UNativeReplayListWidget::OnKeepAndDeleteOldReplaysComplete(int32_t nRemainedReplays, char bSuccess) {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayListWidget.OnKeepAndDeleteOldReplaysComplete");
+
+	struct OnKeepAndDeleteOldReplaysComplete_Params {
+		int32_t nRemainedReplays;
+		char bSuccess;
+	}; OnKeepAndDeleteOldReplaysComplete_Params Params;
+
+	Params.nRemainedReplays = nRemainedReplays;
+	Params.bSuccess = bSuccess;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayListWidget.OnEnumerateReplayListComplete
+inline void UNativeReplayListWidget::OnEnumerateReplayListComplete(int32_t RetPageIndex, int32_t RetPageSize) {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayListWidget.OnEnumerateReplayListComplete");
+
+	struct OnEnumerateReplayListComplete_Params {
+		int32_t RetPageIndex;
+		int32_t RetPageSize;
+	}; OnEnumerateReplayListComplete_Params Params;
+
+	Params.RetPageIndex = RetPageIndex;
+	Params.RetPageSize = RetPageSize;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayListWidget.OnDeleteReplayComplete
+inline void UNativeReplayListWidget::OnDeleteReplayComplete(struct FString ReplayName, char bSuccess) {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayListWidget.OnDeleteReplayComplete");
+
+	struct OnDeleteReplayComplete_Params {
+		struct FString ReplayName;
+		char bSuccess;
+	}; OnDeleteReplayComplete_Params Params;
+
+	Params.ReplayName = ReplayName;
+	Params.bSuccess = bSuccess;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayListWidget.OnClickedRefreshBtn
+inline void UNativeReplayListWidget::OnClickedRefreshBtn() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayListWidget.OnClickedRefreshBtn");
+
+	struct OnClickedRefreshBtn_Params {
+		
+	}; OnClickedRefreshBtn_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayListWidget.OnClickedPrevBtn
+inline void UNativeReplayListWidget::OnClickedPrevBtn() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayListWidget.OnClickedPrevBtn");
+
+	struct OnClickedPrevBtn_Params {
+		
+	}; OnClickedPrevBtn_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayListWidget.OnClickedPlayBtn
+inline void UNativeReplayListWidget::OnClickedPlayBtn() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayListWidget.OnClickedPlayBtn");
+
+	struct OnClickedPlayBtn_Params {
+		
+	}; OnClickedPlayBtn_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayListWidget.OnClickedNextBtn
+inline void UNativeReplayListWidget::OnClickedNextBtn() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayListWidget.OnClickedNextBtn");
+
+	struct OnClickedNextBtn_Params {
+		
+	}; OnClickedNextBtn_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayListWidget.OnClickedDeleteOldReplaysBtn
+inline void UNativeReplayListWidget::OnClickedDeleteOldReplaysBtn() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayListWidget.OnClickedDeleteOldReplaysBtn");
+
+	struct OnClickedDeleteOldReplaysBtn_Params {
+		
+	}; OnClickedDeleteOldReplaysBtn_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayListWidget.OnClickedDeleteBtn
+inline void UNativeReplayListWidget::OnClickedDeleteBtn() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayListWidget.OnClickedDeleteBtn");
+
+	struct OnClickedDeleteBtn_Params {
+		
+	}; OnClickedDeleteBtn_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayListWidget.OnCheckStateChangedSouldKeep
+inline void UNativeReplayListWidget::OnCheckStateChangedSouldKeep(char bIsChecked) {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayListWidget.OnCheckStateChangedSouldKeep");
+
+	struct OnCheckStateChangedSouldKeep_Params {
+		char bIsChecked;
+	}; OnCheckStateChangedSouldKeep_Params Params;
+
+	Params.bIsChecked = bIsChecked;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayListWidget.InitUI
+inline void UNativeReplayListWidget::InitUI() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayListWidget.InitUI");
+
+	struct InitUI_Params {
+		
+	}; InitUI_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayListWidget.GetReplayList
+inline void UNativeReplayListWidget::GetReplayList() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayListWidget.GetReplayList");
+
+	struct GetReplayList_Params {
+		
+	}; GetReplayList_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayListWidget.GetPrevReplayList
+inline void UNativeReplayListWidget::GetPrevReplayList() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayListWidget.GetPrevReplayList");
+
+	struct GetPrevReplayList_Params {
+		
+	}; GetPrevReplayList_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayListWidget.GetNextReplayList
+inline void UNativeReplayListWidget::GetNextReplayList() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayListWidget.GetNextReplayList");
+
+	struct GetNextReplayList_Params {
+		
+	}; GetNextReplayList_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayListWidget.DeleteReplay
+inline void UNativeReplayListWidget::DeleteReplay(struct FString ReplayToDelete, char bShowSimpleConfirmBox) {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayListWidget.DeleteReplay");
+
+	struct DeleteReplay_Params {
+		struct FString ReplayToDelete;
+		char bShowSimpleConfirmBox;
+	}; DeleteReplay_Params Params;
+
+	Params.ReplayToDelete = ReplayToDelete;
+	Params.bShowSimpleConfirmBox = bShowSimpleConfirmBox;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayListWidget.ChangeReplaysToKeep
+inline void UNativeReplayListWidget::ChangeReplaysToKeep(struct FText& Text) {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayListWidget.ChangeReplaysToKeep");
+
+	struct ChangeReplaysToKeep_Params {
+		struct FText& Text;
+	}; ChangeReplaysToKeep_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Text = Params.Text;
+
+}
+
+// Function MK3DReplayBasic.NativeReplayListWidget.ChangePageSize
+inline void UNativeReplayListWidget::ChangePageSize(struct FText& Text) {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayListWidget.ChangePageSize");
+
+	struct ChangePageSize_Params {
+		struct FText& Text;
+	}; ChangePageSize_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Text = Params.Text;
+
+}
+
+// Function MK3DReplayBasic.NativeReplayListWidget.ChangeCurrentPage
+inline void UNativeReplayListWidget::ChangeCurrentPage(struct FText& Text) {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayListWidget.ChangeCurrentPage");
+
+	struct ChangeCurrentPage_Params {
+		struct FText& Text;
+	}; ChangeCurrentPage_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Text = Params.Text;
+
+}
+
+// Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.UpdateTimelineScale
+inline void UNativeReplayTimelineBasicWidget::UpdateTimelineScale() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.UpdateTimelineScale");
+
+	struct UpdateTimelineScale_Params {
+		
+	}; UpdateTimelineScale_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.UpdateNativeReplaySpeedTextBlock
+inline void UNativeReplayTimelineBasicWidget::UpdateNativeReplaySpeedTextBlock() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.UpdateNativeReplaySpeedTextBlock");
+
+	struct UpdateNativeReplaySpeedTextBlock_Params {
+		
+	}; UpdateNativeReplaySpeedTextBlock_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.Timer_EnumerateMK3DKnockoutEvents
+inline void UNativeReplayTimelineBasicWidget::Timer_EnumerateMK3DKnockoutEvents() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.Timer_EnumerateMK3DKnockoutEvents");
+
+	struct Timer_EnumerateMK3DKnockoutEvents_Params {
+		
+	}; Timer_EnumerateMK3DKnockoutEvents_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.Timer_EnumerateMK3DKillEvents
+inline void UNativeReplayTimelineBasicWidget::Timer_EnumerateMK3DKillEvents() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.Timer_EnumerateMK3DKillEvents");
+
+	struct Timer_EnumerateMK3DKillEvents_Params {
+		
+	}; Timer_EnumerateMK3DKillEvents_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.SetTimelineScale
+inline void UNativeReplayTimelineBasicWidget::SetTimelineScale(float InScale) {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.SetTimelineScale");
+
+	struct SetTimelineScale_Params {
+		float InScale;
+	}; SetTimelineScale_Params Params;
+
+	Params.InScale = InScale;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.RemoveAllKnockoutEv
+inline void UNativeReplayTimelineBasicWidget::RemoveAllKnockoutEventMarkers() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.RemoveAllKnockoutEv");
+
+	struct RemoveAllKnockoutEventMarkers_Params {
+		
+	}; RemoveAllKnockoutEventMarkers_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.RemoveAllKillEventMarkers
+inline void UNativeReplayTimelineBasicWidget::RemoveAllKillEventMarkers() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.RemoveAllKillEventMarkers");
+
+	struct RemoveAllKillEventMarkers_Params {
+		
+	}; RemoveAllKillEventMarkers_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.RefreshKillEventMarkers
+inline void UNativeReplayTimelineBasicWidget::RefreshKillEventMarkers(enum class Unknow killType) {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.RefreshKillEventMarkers");
+
+	struct RefreshKillEventMarkers_Params {
+		enum class Unknow killType;
+	}; RefreshKillEventMarkers_Params Params;
+
+	Params.killType = killType;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnValueChangedTimeSlider
+inline void UNativeReplayTimelineBasicWidget::OnValueChangedTimeSlider(float InValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnValueChangedTimeSlider");
+
+	struct OnValueChangedTimeSlider_Params {
+		float InValue;
+	}; OnValueChangedTimeSlider_Params Params;
+
+	Params.InValue = InValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnTimelineScrollBoxUserScrolled
+inline void UNativeReplayTimelineBasicWidget::OnTimelineScrollBoxUserScrolled(float fCurrentOffset) {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnTimelineScrollBoxUserScrolled");
+
+	struct OnTimelineScrollBoxUserScrolled_Params {
+		float fCurrentOffset;
+	}; OnTimelineScrollBoxUserScrolled_Params Params;
+
+	Params.fCurrentOffset = fCurrentOffset;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnRefreshMarkersIfWidgetReady
+inline void UNativeReplayTimelineBasicWidget::OnRefreshMarkersIfWidgetReady() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnRefreshMarkersIfWidgetReady");
+
+	struct OnRefreshMarkersIfWidgetReady_Params {
+		
+	}; OnRefreshMarkersIfWidgetReady_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnMouseMoveTimelineBorder
+inline struct Unknown UNativeReplayTimelineBasicWidget::OnMouseMoveTimelineBorder(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnMouseMoveTimelineBorder");
+
+	struct OnMouseMoveTimelineBorder_Params {
+		struct Unknown MyGeometry;
+		struct Unknown& MouseEvent;
+		struct Unknown ReturnValue;
+
+	}; OnMouseMoveTimelineBorder_Params Params;
+
+	Params.MyGeometry = MyGeometry;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	MouseEvent = Params.MouseEvent;
+
+
+	return params.ReturnValue;
+}
+
+// Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnMouseLeaveTimelineBorder
+inline struct Unknown UNativeReplayTimelineBasicWidget::OnMouseLeaveTimelineBorder(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnMouseLeaveTimelineBorder");
+
+	struct OnMouseLeaveTimelineBorder_Params {
+		struct Unknown MyGeometry;
+		struct Unknown& MouseEvent;
+		struct Unknown ReturnValue;
+
+	}; OnMouseLeaveTimelineBorder_Params Params;
+
+	Params.MyGeometry = MyGeometry;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	MouseEvent = Params.MouseEvent;
+
+
+	return params.ReturnValue;
+}
+
+// Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnMouseEnterTimelineBorder
+inline struct Unknown UNativeReplayTimelineBasicWidget::OnMouseEnterTimelineBorder(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnMouseEnterTimelineBorder");
+
+	struct OnMouseEnterTimelineBorder_Params {
+		struct Unknown MyGeometry;
+		struct Unknown& MouseEvent;
+		struct Unknown ReturnValue;
+
+	}; OnMouseEnterTimelineBorder_Params Params;
+
+	Params.MyGeometry = MyGeometry;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	MouseEvent = Params.MouseEvent;
+
+
+	return params.ReturnValue;
+}
+
+// Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnClickTimelineScaleUpButton
+inline void UNativeReplayTimelineBasicWidget::OnClickTimelineScaleUpButton() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnClickTimelineScaleUpButton");
+
+	struct OnClickTimelineScaleUpButton_Params {
+		
+	}; OnClickTimelineScaleUpButton_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnClickTimelineScaleDownButton
+inline void UNativeReplayTimelineBasicWidget::OnClickTimelineScaleDownButton() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnClickTimelineScaleDownButton");
+
+	struct OnClickTimelineScaleDownButton_Params {
+		
+	}; OnClickTimelineScaleDownButton_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnClickSpeedUpButton
+inline void UNativeReplayTimelineBasicWidget::OnClickSpeedUpButton() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnClickSpeedUpButton");
+
+	struct OnClickSpeedUpButton_Params {
+		
+	}; OnClickSpeedUpButton_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnClickSpeedDownButton
+inline void UNativeReplayTimelineBasicWidget::OnClickSpeedDownButton() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnClickSpeedDownButton");
+
+	struct OnClickSpeedDownButton_Params {
+		
+	}; OnClickSpeedDownButton_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnClickResumeButton
+inline void UNativeReplayTimelineBasicWidget::OnClickResumeButton() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnClickResumeButton");
+
+	struct OnClickResumeButton_Params {
+		
+	}; OnClickResumeButton_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnClickPauseButton
+inline void UNativeReplayTimelineBasicWidget::OnClickPauseButton() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnClickPauseButton");
+
+	struct OnClickPauseButton_Params {
+		
+	}; OnClickPauseButton_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnCheckStateChangedShowKnockout
+inline void UNativeReplayTimelineBasicWidget::OnCheckStateChangedShowKnockout(char bIsChecked) {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnCheckStateChangedShowKnockout");
+
+	struct OnCheckStateChangedShowKnockout_Params {
+		char bIsChecked;
+	}; OnCheckStateChangedShowKnockout_Params Params;
+
+	Params.bIsChecked = bIsChecked;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnCheckStateChangedShowKill
+inline void UNativeReplayTimelineBasicWidget::OnCheckStateChangedShowKill(char bIsChecked) {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnCheckStateChangedShowKill");
+
+	struct OnCheckStateChangedShowKill_Params {
+		char bIsChecked;
+	}; OnCheckStateChangedShowKill_Params Params;
+
+	Params.bIsChecked = bIsChecked;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnChangeCameraType
+inline void UNativeReplayTimelineBasicWidget::OnChangeCameraType(enum class Unknow CameraType, struct FString TargetPlayerName) {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnChangeCameraType");
+
+	struct OnChangeCameraType_Params {
+		enum class Unknow CameraType;
+		struct FString TargetPlayerName;
+	}; OnChangeCameraType_Params Params;
+
+	Params.CameraType = CameraType;
+	Params.TargetPlayerName = TargetPlayerName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.GetTimelineScale
+inline float UNativeReplayTimelineBasicWidget::GetTimelineScale() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.GetTimelineScale");
+
+	struct GetTimelineScale_Params {
+		
+		float ReturnValue;
+
+	}; GetTimelineScale_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.EnumerateMK3DKillEvasic
+inline void UNativeReplayTimelineBasicWidget::EnumerateMK3DKillEv(enum class Unknow killType) {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.EnumerateMK3DKillEvasic");
+
+	struct EnumerateMK3DKillEv_Params {
+		enum class Unknow killType;
+	}; EnumerateMK3DKillEv_Params Params;
+
+	Params.killType = killType;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.CreateEventMarker
+inline struct Unknown UNativeReplayTimelineBasicWidget::CreateEventMarker(enum class Unknow killType) {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.CreateEventMarker");
+
+	struct CreateEventMarker_Params {
+		enum class Unknow killType;
+		struct Unknown ReturnValue;
+
+	}; CreateEventMarker_Params Params;
+
+	Params.killType = killType;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.BPUpdateTimelineScale
+inline void UNativeReplayTimelineBasicWidget::BPUpdateTimelineScale() {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.BPUpdateTimelineScale");
+
+	struct BPUpdateTimelineScale_Params {
+		
+	}; BPUpdateTimelineScale_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.BPUpdateKillEventMarkersPos
+inline void UNativeReplayTimelineBasicWidget::BPUpdateKillEventMarkersPos(enum class Unknow killType, float TotalTime) {
+	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.BPUpdateKillEventMarkersPos");
+
+	struct BPUpdateKillEventMarkersPos_Params {
+		enum class Unknow killType;
+		float TotalTime;
+	}; BPUpdateKillEventMarkersPos_Params Params;
+
+	Params.killType = killType;
+	Params.TotalTime = TotalTime;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
 

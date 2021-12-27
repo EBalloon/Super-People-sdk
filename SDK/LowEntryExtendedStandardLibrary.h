@@ -97,11 +97,11 @@ enum class ELowEntrySplitScreenTypeThreePlayers : uint8_t {
 	ELowEntrySplitScreenTypeThreePlayers = 2,
 };
 
-// Enum LowEntryExtendedStandardLibrary.ELowEntrySplitScreenTypeTwo
-enum class ELowEntrySplitScreenTypeTwo : uint8_t {
-	ELowEntrySplitScreenTypeTwo = 0,
-	ELowEntrySplitScreenTypeTwo = 1,
-	ELowEntrySplitScreenTypeTwo = 2,
+// Enum LowEntryExtendedStandardLibrary.ELowEntrySplitScreenTypeTwoPlayers
+enum class ELowEntrySplitScreenTypeTwoPlayers : uint8_t {
+	ELowEntrySplitScreenTypeTwoPlayers = 0,
+	ELowEntrySplitScreenTypeTwoPlayers = 1,
+	ELowEntrySplitScreenTypeTwoPlayers = 2,
 };
 
 // Class LowEntryExtendedStandardLibrary.LowEntryBitDataEntry
@@ -495,4 +495,3085 @@ struct FLowEntryRegexMatch {
 	struct FString Match; // 0x10 (16)
 	struct TArray<Unknown> CaptureGroups; // 0x20 (16)
 };
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.SetPosition
+inline void ULowEntryBitDataReader::SetPosition(int32_t Position_) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.SetPosition");
+
+	struct SetPosition_Params {
+		int32_t Position_;
+	}; SetPosition_Params Params;
+
+	Params.Position_ = Position_;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.Reset
+inline void ULowEntryBitDataReader::Reset() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.Reset");
+
+	struct Reset_Params {
+		
+	}; Reset_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.Remaining
+inline int32_t ULowEntryBitDataReader::Remaining() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.Remaining");
+
+	struct Remaining_Params {
+		
+		int32_t ReturnValue;
+
+	}; Remaining_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetStringUtf8Array
+inline struct TArray<Unknown> ULowEntryBitDataReader::GetStringUtf8Array() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetStringUtf8Array");
+
+	struct GetStringUtf8Array_Params {
+		
+		struct TArray<Unknown> ReturnValue;
+
+	}; GetStringUtf8Array_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetStringUtf8
+inline struct FString ULowEntryBitDataReader::GetStringUtf8() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetStringUtf8");
+
+	struct GetStringUtf8_Params {
+		
+		struct FString ReturnValue;
+
+	}; GetStringUtf8_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetPositiveInteger3Array
+inline struct TArray<Unknown> ULowEntryBitDataReader::GetPositiveInteger3Array() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetPositiveInteger3Array");
+
+	struct GetPositiveInteger3Array_Params {
+		
+		struct TArray<Unknown> ReturnValue;
+
+	}; GetPositiveInteger3Array_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetPositiveInteger3
+inline int32_t ULowEntryBitDataReader::GetPositiveInteger3() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetPositiveInteger3");
+
+	struct GetPositiveInteger3_Params {
+		
+		int32_t ReturnValue;
+
+	}; GetPositiveInteger3_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetPositiveInteger2Array
+inline struct TArray<Unknown> ULowEntryBitDataReader::GetPositiveInteger2Array() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetPositiveInteger2Array");
+
+	struct GetPositiveInteger2Array_Params {
+		
+		struct TArray<Unknown> ReturnValue;
+
+	}; GetPositiveInteger2Array_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetPositiveInteger2
+inline int32_t ULowEntryBitDataReader::GetPositiveInteger2() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetPositiveInteger2");
+
+	struct GetPositiveInteger2_Params {
+		
+		int32_t ReturnValue;
+
+	}; GetPositiveInteger2_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetPositiveInteger1Array
+inline struct TArray<Unknown> ULowEntryBitDataReader::GetPositiveInteger1Array() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetPositiveInteger1Array");
+
+	struct GetPositiveInteger1Array_Params {
+		
+		struct TArray<Unknown> ReturnValue;
+
+	}; GetPositiveInteger1Array_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetPositiveInteger1
+inline int32_t ULowEntryBitDataReader::GetPositiveInteger1() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetPositiveInteger1");
+
+	struct GetPositiveInteger1_Params {
+		
+		int32_t ReturnValue;
+
+	}; GetPositiveInteger1_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetPosition
+inline int32_t ULowEntryBitDataReader::GetPosition() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetPosition");
+
+	struct GetPosition_Params {
+		
+		int32_t ReturnValue;
+
+	}; GetPosition_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetLongBytesArray
+inline struct TArray<Unknown> ULowEntryBitDataReader::GetLongBytesArray() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetLongBytesArray");
+
+	struct GetLongBytesArray_Params {
+		
+		struct TArray<Unknown> ReturnValue;
+
+	}; GetLongBytesArray_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetLongBytes
+inline struct Unknown ULowEntryBitDataReader::GetLongBytes() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetLongBytes");
+
+	struct GetLongBytes_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetLongBytes_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetIntegerMostSignificantBits
+inline int32_t ULowEntryBitDataReader::GetIntegerMostSignificantBits(int32_t BitCount) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetIntegerMostSignificantBits");
+
+	struct GetIntegerMostSignificantBits_Params {
+		int32_t BitCount;
+		int32_t ReturnValue;
+
+	}; GetIntegerMostSignificantBits_Params Params;
+
+	Params.BitCount = BitCount;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetIntegerLeastSignificantBits
+inline int32_t ULowEntryBitDataReader::GetIntegerLeastSignificantBits(int32_t BitCount) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetIntegerLeastSignificantBits");
+
+	struct GetIntegerLeastSignificantBits_Params {
+		int32_t BitCount;
+		int32_t ReturnValue;
+
+	}; GetIntegerLeastSignificantBits_Params Params;
+
+	Params.BitCount = BitCount;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetIntegerArrayMostSignificantBits
+inline struct TArray<Unknown> ULowEntryBitDataReader::GetIntegerArrayMostSignificantBits(int32_t BitCount) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetIntegerArrayMostSignificantBits");
+
+	struct GetIntegerArrayMostSignificantBits_Params {
+		int32_t BitCount;
+		struct TArray<Unknown> ReturnValue;
+
+	}; GetIntegerArrayMostSignificantBits_Params Params;
+
+	Params.BitCount = BitCount;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetIntegerArrayLeastSignificantBits
+inline struct TArray<Unknown> ULowEntryBitDataReader::GetIntegerArrayLeastSignificantBits(int32_t BitCount) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetIntegerArrayLeastSignificantBits");
+
+	struct GetIntegerArrayLeastSignificantBits_Params {
+		int32_t BitCount;
+		struct TArray<Unknown> ReturnValue;
+
+	}; GetIntegerArrayLeastSignificantBits_Params Params;
+
+	Params.BitCount = BitCount;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetIntegerArray
+inline struct TArray<Unknown> ULowEntryBitDataReader::GetIntegerArray() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetIntegerArray");
+
+	struct GetIntegerArray_Params {
+		
+		struct TArray<Unknown> ReturnValue;
+
+	}; GetIntegerArray_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetInteger
+inline int32_t ULowEntryBitDataReader::GetInteger() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetInteger");
+
+	struct GetInteger_Params {
+		
+		int32_t ReturnValue;
+
+	}; GetInteger_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetFloatArray
+inline struct TArray<Unknown> ULowEntryBitDataReader::GetFloatArray() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetFloatArray");
+
+	struct GetFloatArray_Params {
+		
+		struct TArray<Unknown> ReturnValue;
+
+	}; GetFloatArray_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetFloat
+inline float ULowEntryBitDataReader::GetFloat() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetFloat");
+
+	struct GetFloat_Params {
+		
+		float ReturnValue;
+
+	}; GetFloat_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetDoubleBytesArray
+inline struct TArray<Unknown> ULowEntryBitDataReader::GetDoubleBytesArray() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetDoubleBytesArray");
+
+	struct GetDoubleBytesArray_Params {
+		
+		struct TArray<Unknown> ReturnValue;
+
+	}; GetDoubleBytesArray_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetDoubleBytes
+inline struct Unknown ULowEntryBitDataReader::GetDoubleBytes() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetDoubleBytes");
+
+	struct GetDoubleBytes_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetDoubleBytes_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetClone
+inline struct Unknown ULowEntryBitDataReader::GetClone() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetClone");
+
+	struct GetClone_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetClone_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetByteMostSignificantBits
+inline char ULowEntryBitDataReader::GetByteMostSignificantBits(int32_t BitCount) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetByteMostSignificantBits");
+
+	struct GetByteMostSignificantBits_Params {
+		int32_t BitCount;
+		char ReturnValue;
+
+	}; GetByteMostSignificantBits_Params Params;
+
+	Params.BitCount = BitCount;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetByteLeastSignificantBits
+inline char ULowEntryBitDataReader::GetByteLeastSignificantBits(int32_t BitCount) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetByteLeastSignificantBits");
+
+	struct GetByteLeastSignificantBits_Params {
+		int32_t BitCount;
+		char ReturnValue;
+
+	}; GetByteLeastSignificantBits_Params Params;
+
+	Params.BitCount = BitCount;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetByteArrayMostSignificantBits
+inline struct TArray<Unknown> ULowEntryBitDataReader::GetByteArrayMostSignificantBits(int32_t BitCount) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetByteArrayMostSignificantBits");
+
+	struct GetByteArrayMostSignificantBits_Params {
+		int32_t BitCount;
+		struct TArray<Unknown> ReturnValue;
+
+	}; GetByteArrayMostSignificantBits_Params Params;
+
+	Params.BitCount = BitCount;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetByteArrayLeastSignificantBits
+inline struct TArray<Unknown> ULowEntryBitDataReader::GetByteArrayLeastSignificantBits(int32_t BitCount) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetByteArrayLeastSignificantBits");
+
+	struct GetByteArrayLeastSignificantBits_Params {
+		int32_t BitCount;
+		struct TArray<Unknown> ReturnValue;
+
+	}; GetByteArrayLeastSignificantBits_Params Params;
+
+	Params.BitCount = BitCount;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetByteArray
+inline struct TArray<Unknown> ULowEntryBitDataReader::GetByteArray() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetByteArray");
+
+	struct GetByteArray_Params {
+		
+		struct TArray<Unknown> ReturnValue;
+
+	}; GetByteArray_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetByte
+inline char ULowEntryBitDataReader::GetByte() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetByte");
+
+	struct GetByte_Params {
+		
+		char ReturnValue;
+
+	}; GetByte_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetBooleanArray
+inline struct TArray<Unknown> ULowEntryBitDataReader::GetBooleanArray() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetBooleanArray");
+
+	struct GetBooleanArray_Params {
+		
+		struct TArray<Unknown> ReturnValue;
+
+	}; GetBooleanArray_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetBoolean
+inline char ULowEntryBitDataReader::GetBoolean() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetBoolean");
+
+	struct GetBoolean_Params {
+		
+		char ReturnValue;
+
+	}; GetBoolean_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetBitArray
+inline struct TArray<Unknown> ULowEntryBitDataReader::GetBitArray() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetBitArray");
+
+	struct GetBitArray_Params {
+		
+		struct TArray<Unknown> ReturnValue;
+
+	}; GetBitArray_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetBit
+inline char ULowEntryBitDataReader::GetBit() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetBit");
+
+	struct GetBit_Params {
+		
+		char ReturnValue;
+
+	}; GetBit_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.Empty
+inline void ULowEntryBitDataReader::Empty() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.Empty");
+
+	struct Empty_Params {
+		
+	}; Empty_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddStringUtf8Array
+inline void ULowEntryBitDataWriter::AddStringUtf8Array(struct TArray<Unknown>& Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddStringUtf8Array");
+
+	struct AddStringUtf8Array_Params {
+		struct TArray<Unknown>& Value;
+	}; AddStringUtf8Array_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Value = Params.Value;
+
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddStringUtf8
+inline void ULowEntryBitDataWriter::AddStringUtf8(struct FString Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddStringUtf8");
+
+	struct AddStringUtf8_Params {
+		struct FString Value;
+	}; AddStringUtf8_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddPositiveInteger3Array
+inline void ULowEntryBitDataWriter::AddPositiveInteger3Array(struct TArray<Unknown>& Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddPositiveInteger3Array");
+
+	struct AddPositiveInteger3Array_Params {
+		struct TArray<Unknown>& Value;
+	}; AddPositiveInteger3Array_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Value = Params.Value;
+
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddPositiveInteger3
+inline void ULowEntryBitDataWriter::AddPositiveInteger3(int32_t Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddPositiveInteger3");
+
+	struct AddPositiveInteger3_Params {
+		int32_t Value;
+	}; AddPositiveInteger3_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddPositiveInteger2Array
+inline void ULowEntryBitDataWriter::AddPositiveInteger2Array(struct TArray<Unknown>& Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddPositiveInteger2Array");
+
+	struct AddPositiveInteger2Array_Params {
+		struct TArray<Unknown>& Value;
+	}; AddPositiveInteger2Array_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Value = Params.Value;
+
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddPositiveInteger2
+inline void ULowEntryBitDataWriter::AddPositiveInteger2(int32_t Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddPositiveInteger2");
+
+	struct AddPositiveInteger2_Params {
+		int32_t Value;
+	}; AddPositiveInteger2_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddPositiveInteger1Array
+inline void ULowEntryBitDataWriter::AddPositiveInteger1Array(struct TArray<Unknown>& Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddPositiveInteger1Array");
+
+	struct AddPositiveInteger1Array_Params {
+		struct TArray<Unknown>& Value;
+	}; AddPositiveInteger1Array_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Value = Params.Value;
+
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddPositiveInteger1
+inline void ULowEntryBitDataWriter::AddPositiveInteger1(int32_t Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddPositiveInteger1");
+
+	struct AddPositiveInteger1_Params {
+		int32_t Value;
+	}; AddPositiveInteger1_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddLongBytesArray
+inline void ULowEntryBitDataWriter::AddLongBytesArray(struct TArray<Unknown>& Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddLongBytesArray");
+
+	struct AddLongBytesArray_Params {
+		struct TArray<Unknown>& Value;
+	}; AddLongBytesArray_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Value = Params.Value;
+
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddLongBytes
+inline void ULowEntryBitDataWriter::AddLongBytes(struct Unknown Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddLongBytes");
+
+	struct AddLongBytes_Params {
+		struct Unknown Value;
+	}; AddLongBytes_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddIntegerMostSignificantBits
+inline void ULowEntryBitDataWriter::AddIntegerMostSignificantBits(int32_t Value, int32_t BitCount) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddIntegerMostSignificantBits");
+
+	struct AddIntegerMostSignificantBits_Params {
+		int32_t Value;
+		int32_t BitCount;
+	}; AddIntegerMostSignificantBits_Params Params;
+
+	Params.Value = Value;
+	Params.BitCount = BitCount;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddIntegerLeastSignificantBits
+inline void ULowEntryBitDataWriter::AddIntegerLeastSignificantBits(int32_t Value, int32_t BitCount) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddIntegerLeastSignificantBits");
+
+	struct AddIntegerLeastSignificantBits_Params {
+		int32_t Value;
+		int32_t BitCount;
+	}; AddIntegerLeastSignificantBits_Params Params;
+
+	Params.Value = Value;
+	Params.BitCount = BitCount;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddIntegerArrayMostSignificantBits
+inline void ULowEntryBitDataWriter::AddIntegerArrayMostSignificantBits(struct TArray<Unknown>& Value, int32_t BitCount) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddIntegerArrayMostSignificantBits");
+
+	struct AddIntegerArrayMostSignificantBits_Params {
+		struct TArray<Unknown>& Value;
+		int32_t BitCount;
+	}; AddIntegerArrayMostSignificantBits_Params Params;
+
+	Params.BitCount = BitCount;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Value = Params.Value;
+
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddIntegerArrayLeastSignificantBits
+inline void ULowEntryBitDataWriter::AddIntegerArrayLeastSignificantBits(struct TArray<Unknown>& Value, int32_t BitCount) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddIntegerArrayLeastSignificantBits");
+
+	struct AddIntegerArrayLeastSignificantBits_Params {
+		struct TArray<Unknown>& Value;
+		int32_t BitCount;
+	}; AddIntegerArrayLeastSignificantBits_Params Params;
+
+	Params.BitCount = BitCount;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Value = Params.Value;
+
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddIntegerArray
+inline void ULowEntryBitDataWriter::AddIntegerArray(struct TArray<Unknown>& Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddIntegerArray");
+
+	struct AddIntegerArray_Params {
+		struct TArray<Unknown>& Value;
+	}; AddIntegerArray_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Value = Params.Value;
+
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddInteger
+inline void ULowEntryBitDataWriter::AddInteger(int32_t Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddInteger");
+
+	struct AddInteger_Params {
+		int32_t Value;
+	}; AddInteger_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddFloatArray
+inline void ULowEntryBitDataWriter::AddFloatArray(struct TArray<Unknown>& Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddFloatArray");
+
+	struct AddFloatArray_Params {
+		struct TArray<Unknown>& Value;
+	}; AddFloatArray_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Value = Params.Value;
+
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddFloat
+inline void ULowEntryBitDataWriter::AddFloat(float Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddFloat");
+
+	struct AddFloat_Params {
+		float Value;
+	}; AddFloat_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddDoubleBytesArray
+inline void ULowEntryBitDataWriter::AddDoubleBytesArray(struct TArray<Unknown>& Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddDoubleBytesArray");
+
+	struct AddDoubleBytesArray_Params {
+		struct TArray<Unknown>& Value;
+	}; AddDoubleBytesArray_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Value = Params.Value;
+
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddDoubleBytes
+inline void ULowEntryBitDataWriter::AddDoubleBytes(struct Unknown Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddDoubleBytes");
+
+	struct AddDoubleBytes_Params {
+		struct Unknown Value;
+	}; AddDoubleBytes_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddByteMostSignificantBits
+inline void ULowEntryBitDataWriter::AddByteMostSignificantBits(char Value, int32_t BitCount) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddByteMostSignificantBits");
+
+	struct AddByteMostSignificantBits_Params {
+		char Value;
+		int32_t BitCount;
+	}; AddByteMostSignificantBits_Params Params;
+
+	Params.Value = Value;
+	Params.BitCount = BitCount;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddByteLeastSignificantBits
+inline void ULowEntryBitDataWriter::AddByteLeastSignificantBits(char Value, int32_t BitCount) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddByteLeastSignificantBits");
+
+	struct AddByteLeastSignificantBits_Params {
+		char Value;
+		int32_t BitCount;
+	}; AddByteLeastSignificantBits_Params Params;
+
+	Params.Value = Value;
+	Params.BitCount = BitCount;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddByteArrayMostSignificantBits
+inline void ULowEntryBitDataWriter::AddByteArrayMostSignificantBits(struct TArray<Unknown>& Value, int32_t BitCount) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddByteArrayMostSignificantBits");
+
+	struct AddByteArrayMostSignificantBits_Params {
+		struct TArray<Unknown>& Value;
+		int32_t BitCount;
+	}; AddByteArrayMostSignificantBits_Params Params;
+
+	Params.BitCount = BitCount;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Value = Params.Value;
+
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddByteArrayLeastSignificantBits
+inline void ULowEntryBitDataWriter::AddByteArrayLeastSignificantBits(struct TArray<Unknown>& Value, int32_t BitCount) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddByteArrayLeastSignificantBits");
+
+	struct AddByteArrayLeastSignificantBits_Params {
+		struct TArray<Unknown>& Value;
+		int32_t BitCount;
+	}; AddByteArrayLeastSignificantBits_Params Params;
+
+	Params.BitCount = BitCount;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Value = Params.Value;
+
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddByteArray
+inline void ULowEntryBitDataWriter::AddByteArray(struct TArray<Unknown>& Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddByteArray");
+
+	struct AddByteArray_Params {
+		struct TArray<Unknown>& Value;
+	}; AddByteArray_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Value = Params.Value;
+
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddByte
+inline void ULowEntryBitDataWriter::AddByte(char Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddByte");
+
+	struct AddByte_Params {
+		char Value;
+	}; AddByte_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddBooleanArray
+inline void ULowEntryBitDataWriter::AddBooleanArray(struct TArray<Unknown>& Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddBooleanArray");
+
+	struct AddBooleanArray_Params {
+		struct TArray<Unknown>& Value;
+	}; AddBooleanArray_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Value = Params.Value;
+
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddBoolean
+inline void ULowEntryBitDataWriter::AddBoolean(char Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddBoolean");
+
+	struct AddBoolean_Params {
+		char Value;
+	}; AddBoolean_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddBitArray
+inline void ULowEntryBitDataWriter::AddBitArray(struct TArray<Unknown>& Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddBitArray");
+
+	struct AddBitArray_Params {
+		struct TArray<Unknown>& Value;
+	}; AddBitArray_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Value = Params.Value;
+
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddBit
+inline void ULowEntryBitDataWriter::AddBit(char Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddBit");
+
+	struct AddBit_Params {
+		char Value;
+	}; AddBit_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.SetPosition
+inline void ULowEntryByteDataReader::SetPosition(int32_t Position_) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.SetPosition");
+
+	struct SetPosition_Params {
+		int32_t Position_;
+	}; SetPosition_Params Params;
+
+	Params.Position_ = Position_;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.Reset
+inline void ULowEntryByteDataReader::Reset() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.Reset");
+
+	struct Reset_Params {
+		
+	}; Reset_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.Remaining
+inline int32_t ULowEntryByteDataReader::Remaining() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.Remaining");
+
+	struct Remaining_Params {
+		
+		int32_t ReturnValue;
+
+	}; Remaining_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetStringUtf8Array
+inline struct TArray<Unknown> ULowEntryByteDataReader::GetStringUtf8Array() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetStringUtf8Array");
+
+	struct GetStringUtf8Array_Params {
+		
+		struct TArray<Unknown> ReturnValue;
+
+	}; GetStringUtf8Array_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetStringUtf8
+inline struct FString ULowEntryByteDataReader::GetStringUtf8() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetStringUtf8");
+
+	struct GetStringUtf8_Params {
+		
+		struct FString ReturnValue;
+
+	}; GetStringUtf8_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetPositiveInteger3Array
+inline struct TArray<Unknown> ULowEntryByteDataReader::GetPositiveInteger3Array() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetPositiveInteger3Array");
+
+	struct GetPositiveInteger3Array_Params {
+		
+		struct TArray<Unknown> ReturnValue;
+
+	}; GetPositiveInteger3Array_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetPositiveInteger3
+inline int32_t ULowEntryByteDataReader::GetPositiveInteger3() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetPositiveInteger3");
+
+	struct GetPositiveInteger3_Params {
+		
+		int32_t ReturnValue;
+
+	}; GetPositiveInteger3_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetPositiveInteger2Array
+inline struct TArray<Unknown> ULowEntryByteDataReader::GetPositiveInteger2Array() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetPositiveInteger2Array");
+
+	struct GetPositiveInteger2Array_Params {
+		
+		struct TArray<Unknown> ReturnValue;
+
+	}; GetPositiveInteger2Array_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetPositiveInteger2
+inline int32_t ULowEntryByteDataReader::GetPositiveInteger2() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetPositiveInteger2");
+
+	struct GetPositiveInteger2_Params {
+		
+		int32_t ReturnValue;
+
+	}; GetPositiveInteger2_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetPositiveInteger1Array
+inline struct TArray<Unknown> ULowEntryByteDataReader::GetPositiveInteger1Array() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetPositiveInteger1Array");
+
+	struct GetPositiveInteger1Array_Params {
+		
+		struct TArray<Unknown> ReturnValue;
+
+	}; GetPositiveInteger1Array_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetPositiveInteger1
+inline int32_t ULowEntryByteDataReader::GetPositiveInteger1() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetPositiveInteger1");
+
+	struct GetPositiveInteger1_Params {
+		
+		int32_t ReturnValue;
+
+	}; GetPositiveInteger1_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetPosition
+inline int32_t ULowEntryByteDataReader::GetPosition() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetPosition");
+
+	struct GetPosition_Params {
+		
+		int32_t ReturnValue;
+
+	}; GetPosition_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetLongBytesArray
+inline struct TArray<Unknown> ULowEntryByteDataReader::GetLongBytesArray() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetLongBytesArray");
+
+	struct GetLongBytesArray_Params {
+		
+		struct TArray<Unknown> ReturnValue;
+
+	}; GetLongBytesArray_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetLongBytes
+inline struct Unknown ULowEntryByteDataReader::GetLongBytes() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetLongBytes");
+
+	struct GetLongBytes_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetLongBytes_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetIntegerArray
+inline struct TArray<Unknown> ULowEntryByteDataReader::GetIntegerArray() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetIntegerArray");
+
+	struct GetIntegerArray_Params {
+		
+		struct TArray<Unknown> ReturnValue;
+
+	}; GetIntegerArray_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetInteger
+inline int32_t ULowEntryByteDataReader::GetInteger() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetInteger");
+
+	struct GetInteger_Params {
+		
+		int32_t ReturnValue;
+
+	}; GetInteger_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetFloatArray
+inline struct TArray<Unknown> ULowEntryByteDataReader::GetFloatArray() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetFloatArray");
+
+	struct GetFloatArray_Params {
+		
+		struct TArray<Unknown> ReturnValue;
+
+	}; GetFloatArray_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetFloat
+inline float ULowEntryByteDataReader::GetFloat() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetFloat");
+
+	struct GetFloat_Params {
+		
+		float ReturnValue;
+
+	}; GetFloat_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetDoubleBytesArray
+inline struct TArray<Unknown> ULowEntryByteDataReader::GetDoubleBytesArray() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetDoubleBytesArray");
+
+	struct GetDoubleBytesArray_Params {
+		
+		struct TArray<Unknown> ReturnValue;
+
+	}; GetDoubleBytesArray_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetDoubleBytes
+inline struct Unknown ULowEntryByteDataReader::GetDoubleBytes() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetDoubleBytes");
+
+	struct GetDoubleBytes_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetDoubleBytes_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetClone
+inline struct Unknown ULowEntryByteDataReader::GetClone() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetClone");
+
+	struct GetClone_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetClone_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetByteArray
+inline struct TArray<Unknown> ULowEntryByteDataReader::GetByteArray() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetByteArray");
+
+	struct GetByteArray_Params {
+		
+		struct TArray<Unknown> ReturnValue;
+
+	}; GetByteArray_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetByte
+inline char ULowEntryByteDataReader::GetByte() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetByte");
+
+	struct GetByte_Params {
+		
+		char ReturnValue;
+
+	}; GetByte_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetBooleanArray
+inline struct TArray<Unknown> ULowEntryByteDataReader::GetBooleanArray() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetBooleanArray");
+
+	struct GetBooleanArray_Params {
+		
+		struct TArray<Unknown> ReturnValue;
+
+	}; GetBooleanArray_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetBoolean
+inline char ULowEntryByteDataReader::GetBoolean() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetBoolean");
+
+	struct GetBoolean_Params {
+		
+		char ReturnValue;
+
+	}; GetBoolean_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.Empty
+inline void ULowEntryByteDataReader::Empty() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.Empty");
+
+	struct Empty_Params {
+		
+	}; Empty_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddStringUtf8Array
+inline void ULowEntryByteDataWriter::AddStringUtf8Array(struct TArray<Unknown>& Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddStringUtf8Array");
+
+	struct AddStringUtf8Array_Params {
+		struct TArray<Unknown>& Value;
+	}; AddStringUtf8Array_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Value = Params.Value;
+
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddStringUtf8
+inline void ULowEntryByteDataWriter::AddStringUtf8(struct FString Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddStringUtf8");
+
+	struct AddStringUtf8_Params {
+		struct FString Value;
+	}; AddStringUtf8_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddPositiveInteger3Array
+inline void ULowEntryByteDataWriter::AddPositiveInteger3Array(struct TArray<Unknown>& Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddPositiveInteger3Array");
+
+	struct AddPositiveInteger3Array_Params {
+		struct TArray<Unknown>& Value;
+	}; AddPositiveInteger3Array_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Value = Params.Value;
+
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddPositiveInteger3
+inline void ULowEntryByteDataWriter::AddPositiveInteger3(int32_t Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddPositiveInteger3");
+
+	struct AddPositiveInteger3_Params {
+		int32_t Value;
+	}; AddPositiveInteger3_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddPositiveInteger2Array
+inline void ULowEntryByteDataWriter::AddPositiveInteger2Array(struct TArray<Unknown>& Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddPositiveInteger2Array");
+
+	struct AddPositiveInteger2Array_Params {
+		struct TArray<Unknown>& Value;
+	}; AddPositiveInteger2Array_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Value = Params.Value;
+
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddPositiveInteger2
+inline void ULowEntryByteDataWriter::AddPositiveInteger2(int32_t Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddPositiveInteger2");
+
+	struct AddPositiveInteger2_Params {
+		int32_t Value;
+	}; AddPositiveInteger2_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddPositiveInteger1Array
+inline void ULowEntryByteDataWriter::AddPositiveInteger1Array(struct TArray<Unknown>& Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddPositiveInteger1Array");
+
+	struct AddPositiveInteger1Array_Params {
+		struct TArray<Unknown>& Value;
+	}; AddPositiveInteger1Array_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Value = Params.Value;
+
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddPositiveInteger1
+inline void ULowEntryByteDataWriter::AddPositiveInteger1(int32_t Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddPositiveInteger1");
+
+	struct AddPositiveInteger1_Params {
+		int32_t Value;
+	}; AddPositiveInteger1_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddLongBytesArray
+inline void ULowEntryByteDataWriter::AddLongBytesArray(struct TArray<Unknown>& Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddLongBytesArray");
+
+	struct AddLongBytesArray_Params {
+		struct TArray<Unknown>& Value;
+	}; AddLongBytesArray_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Value = Params.Value;
+
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddLongBytes
+inline void ULowEntryByteDataWriter::AddLongBytes(struct Unknown Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddLongBytes");
+
+	struct AddLongBytes_Params {
+		struct Unknown Value;
+	}; AddLongBytes_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddIntegerArray
+inline void ULowEntryByteDataWriter::AddIntegerArray(struct TArray<Unknown>& Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddIntegerArray");
+
+	struct AddIntegerArray_Params {
+		struct TArray<Unknown>& Value;
+	}; AddIntegerArray_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Value = Params.Value;
+
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddInteger
+inline void ULowEntryByteDataWriter::AddInteger(int32_t Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddInteger");
+
+	struct AddInteger_Params {
+		int32_t Value;
+	}; AddInteger_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddFloatArray
+inline void ULowEntryByteDataWriter::AddFloatArray(struct TArray<Unknown>& Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddFloatArray");
+
+	struct AddFloatArray_Params {
+		struct TArray<Unknown>& Value;
+	}; AddFloatArray_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Value = Params.Value;
+
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddFloat
+inline void ULowEntryByteDataWriter::AddFloat(float Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddFloat");
+
+	struct AddFloat_Params {
+		float Value;
+	}; AddFloat_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddDoubleBytesArray
+inline void ULowEntryByteDataWriter::AddDoubleBytesArray(struct TArray<Unknown>& Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddDoubleBytesArray");
+
+	struct AddDoubleBytesArray_Params {
+		struct TArray<Unknown>& Value;
+	}; AddDoubleBytesArray_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Value = Params.Value;
+
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddDoubleBytes
+inline void ULowEntryByteDataWriter::AddDoubleBytes(struct Unknown Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddDoubleBytes");
+
+	struct AddDoubleBytes_Params {
+		struct Unknown Value;
+	}; AddDoubleBytes_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddByteArray
+inline void ULowEntryByteDataWriter::AddByteArray(struct TArray<Unknown>& Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddByteArray");
+
+	struct AddByteArray_Params {
+		struct TArray<Unknown>& Value;
+	}; AddByteArray_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Value = Params.Value;
+
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddByte
+inline void ULowEntryByteDataWriter::AddByte(char Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddByte");
+
+	struct AddByte_Params {
+		char Value;
+	}; AddByte_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddBooleanArray
+inline void ULowEntryByteDataWriter::AddBooleanArray(struct TArray<Unknown>& Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddBooleanArray");
+
+	struct AddBooleanArray_Params {
+		struct TArray<Unknown>& Value;
+	}; AddBooleanArray_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Value = Params.Value;
+
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddBoolean
+inline void ULowEntryByteDataWriter::AddBoolean(char Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddBoolean");
+
+	struct AddBoolean_Params {
+		char Value;
+	}; AddBoolean_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryDouble.SetBytes
+inline void ULowEntryDouble::SetBytes(struct TArray<Unknown>& ByteArray, int32_t Index, int32_t Length) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryDouble.SetBytes");
+
+	struct SetBytes_Params {
+		struct TArray<Unknown>& ByteArray;
+		int32_t Index;
+		int32_t Length;
+	}; SetBytes_Params Params;
+
+	Params.Index = Index;
+	Params.Length = Length;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	ByteArray = Params.ByteArray;
+
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryDouble.LongBytes_LessThan
+inline char ULowEntryDouble::LongBytes_LessThan(struct Unknown Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryDouble.LongBytes_LessThan");
+
+	struct LongBytes_LessThan_Params {
+		struct Unknown Value;
+		char ReturnValue;
+
+	}; LongBytes_LessThan_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryDouble.LongBytes_GreaterThan
+inline char ULowEntryDouble::LongBytes_GreaterThan(struct Unknown Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryDouble.LongBytes_GreaterThan");
+
+	struct LongBytes_GreaterThan_Params {
+		struct Unknown Value;
+		char ReturnValue;
+
+	}; LongBytes_GreaterThan_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryDouble.Integer_LessThan
+inline char ULowEntryDouble::Integer_LessThan(int32_t Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryDouble.Integer_LessThan");
+
+	struct Integer_LessThan_Params {
+		int32_t Value;
+		char ReturnValue;
+
+	}; Integer_LessThan_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryDouble.Integer_GreaterThan
+inline char ULowEntryDouble::Integer_GreaterThan(int32_t Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryDouble.Integer_GreaterThan");
+
+	struct Integer_GreaterThan_Params {
+		int32_t Value;
+		char ReturnValue;
+
+	}; Integer_GreaterThan_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryDouble.GetBytes
+inline struct TArray<Unknown> ULowEntryDouble::GetBytes() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryDouble.GetBytes");
+
+	struct GetBytes_Params {
+		
+		struct TArray<Unknown> ReturnValue;
+
+	}; GetBytes_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryDouble.Float_Subtract
+inline void ULowEntryDouble::Float_Subtract(float Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryDouble.Float_Subtract");
+
+	struct Float_Subtract_Params {
+		float Value;
+	}; Float_Subtract_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryDouble.Float_LessThan
+inline char ULowEntryDouble::Float_LessThan(float Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryDouble.Float_LessThan");
+
+	struct Float_LessThan_Params {
+		float Value;
+		char ReturnValue;
+
+	}; Float_LessThan_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryDouble.Float_GreaterThan
+inline char ULowEntryDouble::Float_GreaterThan(float Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryDouble.Float_GreaterThan");
+
+	struct Float_GreaterThan_Params {
+		float Value;
+		char ReturnValue;
+
+	}; Float_GreaterThan_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryDouble.Float_Equals
+inline char ULowEntryDouble::Float_Equals(float Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryDouble.Float_Equals");
+
+	struct Float_Equals_Params {
+		float Value;
+		char ReturnValue;
+
+	}; Float_Equals_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryDouble.Float_Add
+inline void ULowEntryDouble::Float_Add(float Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryDouble.Float_Add");
+
+	struct Float_Add_Params {
+		float Value;
+	}; Float_Add_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryDouble.DoubleBytes_Subtract
+inline void ULowEntryDouble::DoubleBytes_Subtract(struct Unknown Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryDouble.DoubleBytes_Subtract");
+
+	struct DoubleBytes_Subtract_Params {
+		struct Unknown Value;
+	}; DoubleBytes_Subtract_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryDouble.DoubleBytes_LessThan
+inline char ULowEntryDouble::DoubleBytes_LessThan(struct Unknown Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryDouble.DoubleBytes_LessThan");
+
+	struct DoubleBytes_LessThan_Params {
+		struct Unknown Value;
+		char ReturnValue;
+
+	}; DoubleBytes_LessThan_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryDouble.DoubleBytes_GreaterThan
+inline char ULowEntryDouble::DoubleBytes_GreaterThan(struct Unknown Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryDouble.DoubleBytes_GreaterThan");
+
+	struct DoubleBytes_GreaterThan_Params {
+		struct Unknown Value;
+		char ReturnValue;
+
+	}; DoubleBytes_GreaterThan_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryDouble.DoubleBytes_Equals
+inline char ULowEntryDouble::DoubleBytes_Equals(struct Unknown Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryDouble.DoubleBytes_Equals");
+
+	struct DoubleBytes_Equals_Params {
+		struct Unknown Value;
+		char ReturnValue;
+
+	}; DoubleBytes_Equals_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryDouble.DoubleBytes_Add
+inline void ULowEntryDouble::DoubleBytes_Add(struct Unknown Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryDouble.DoubleBytes_Add");
+
+	struct DoubleBytes_Add_Params {
+		struct Unknown Value;
+	}; DoubleBytes_Add_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryDouble.CreateClone
+inline struct Unknown ULowEntryDouble::CreateClone() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryDouble.CreateClone");
+
+	struct CreateClone_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; CreateClone_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryDouble.CastToString
+inline struct FString ULowEntryDouble::CastToString(int32_t MinFractionalDigits) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryDouble.CastToString");
+
+	struct CastToString_Params {
+		int32_t MinFractionalDigits;
+		struct FString ReturnValue;
+
+	}; CastToString_Params Params;
+
+	Params.MinFractionalDigits = MinFractionalDigits;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryDouble.CastToLongBytes
+inline struct Unknown ULowEntryDouble::CastToLongBytes() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryDouble.CastToLongBytes");
+
+	struct CastToLongBytes_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; CastToLongBytes_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryLatentActionBoolean.WaitTillDone
+inline void ULowEntryLatentActionBoolean::WaitTillDone(struct Unknown WorldContextObject, struct Unknown LatentInfo, char& Result_) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLatentActionBoolean.WaitTillDone");
+
+	struct WaitTillDone_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown LatentInfo;
+		char& Result_;
+	}; WaitTillDone_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.LatentInfo = LatentInfo;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Result_ = Params.Result_;
+
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryLatentActionBoolean.IsDone
+inline char ULowEntryLatentActionBoolean::IsDone() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLatentActionBoolean.IsDone");
+
+	struct IsDone_Params {
+		
+		char ReturnValue;
+
+	}; IsDone_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryLatentActionBoolean.GetResult
+inline void ULowEntryLatentActionBoolean::GetResult(char& Result_) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLatentActionBoolean.GetResult");
+
+	struct GetResult_Params {
+		char& Result_;
+	}; GetResult_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Result_ = Params.Result_;
+
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryLatentActionBoolean.Done
+inline void ULowEntryLatentActionBoolean::Done(char Result_) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLatentActionBoolean.Done");
+
+	struct Done_Params {
+		char Result_;
+	}; Done_Params Params;
+
+	Params.Result_ = Result_;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryLatentActionFloat.WaitTillDone
+inline void ULowEntryLatentActionFloat::WaitTillDone(struct Unknown WorldContextObject, struct Unknown LatentInfo, float& Result_) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLatentActionFloat.WaitTillDone");
+
+	struct WaitTillDone_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown LatentInfo;
+		float& Result_;
+	}; WaitTillDone_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.LatentInfo = LatentInfo;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Result_ = Params.Result_;
+
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryLatentActionFloat.IsDone
+inline char ULowEntryLatentActionFloat::IsDone() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLatentActionFloat.IsDone");
+
+	struct IsDone_Params {
+		
+		char ReturnValue;
+
+	}; IsDone_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryLatentActionFloat.GetResult
+inline void ULowEntryLatentActionFloat::GetResult(float& Result_) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLatentActionFloat.GetResult");
+
+	struct GetResult_Params {
+		float& Result_;
+	}; GetResult_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Result_ = Params.Result_;
+
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryLatentActionFloat.Done
+inline void ULowEntryLatentActionFloat::Done(float Result_) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLatentActionFloat.Done");
+
+	struct Done_Params {
+		float Result_;
+	}; Done_Params Params;
+
+	Params.Result_ = Result_;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryLatentActionInteger.WaitTillDone
+inline void ULowEntryLatentActionInteger::WaitTillDone(struct Unknown WorldContextObject, struct Unknown LatentInfo, int32_t& Result_) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLatentActionInteger.WaitTillDone");
+
+	struct WaitTillDone_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown LatentInfo;
+		int32_t& Result_;
+	}; WaitTillDone_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.LatentInfo = LatentInfo;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Result_ = Params.Result_;
+
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryLatentActionInteger.IsDone
+inline char ULowEntryLatentActionInteger::IsDone() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLatentActionInteger.IsDone");
+
+	struct IsDone_Params {
+		
+		char ReturnValue;
+
+	}; IsDone_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryLatentActionInteger.GetResult
+inline void ULowEntryLatentActionInteger::GetResult(int32_t& Result_) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLatentActionInteger.GetResult");
+
+	struct GetResult_Params {
+		int32_t& Result_;
+	}; GetResult_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Result_ = Params.Result_;
+
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryLatentActionInteger.Done
+inline void ULowEntryLatentActionInteger::Done(int32_t Result_) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLatentActionInteger.Done");
+
+	struct Done_Params {
+		int32_t Result_;
+	}; Done_Params Params;
+
+	Params.Result_ = Result_;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryLatentActionNone.WaitTillDone
+inline void ULowEntryLatentActionNone::WaitTillDone(struct Unknown WorldContextObject, struct Unknown LatentInfo) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLatentActionNone.WaitTillDone");
+
+	struct WaitTillDone_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown LatentInfo;
+	}; WaitTillDone_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.LatentInfo = LatentInfo;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryLatentActionNone.IsDone
+inline char ULowEntryLatentActionNone::IsDone() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLatentActionNone.IsDone");
+
+	struct IsDone_Params {
+		
+		char ReturnValue;
+
+	}; IsDone_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryLatentActionNone.Done
+inline void ULowEntryLatentActionNone::Done() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLatentActionNone.Done");
+
+	struct Done_Params {
+		
+	}; Done_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryLatentActionObject.WaitTillDone
+inline void ULowEntryLatentActionObject::WaitTillDone(struct Unknown WorldContextObject, struct Unknown LatentInfo, struct Unknown& Result_) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLatentActionObject.WaitTillDone");
+
+	struct WaitTillDone_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown LatentInfo;
+		struct Unknown& Result_;
+	}; WaitTillDone_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.LatentInfo = LatentInfo;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Result_ = Params.Result_;
+
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryLatentActionObject.IsDone
+inline char ULowEntryLatentActionObject::IsDone() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLatentActionObject.IsDone");
+
+	struct IsDone_Params {
+		
+		char ReturnValue;
+
+	}; IsDone_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryLatentActionObject.GetResult
+inline void ULowEntryLatentActionObject::GetResult(struct Unknown& Result_) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLatentActionObject.GetResult");
+
+	struct GetResult_Params {
+		struct Unknown& Result_;
+	}; GetResult_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Result_ = Params.Result_;
+
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryLatentActionObject.Done
+inline void ULowEntryLatentActionObject::Done(struct Unknown Result_) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLatentActionObject.Done");
+
+	struct Done_Params {
+		struct Unknown Result_;
+	}; Done_Params Params;
+
+	Params.Result_ = Result_;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryLatentActionString.WaitTillDone
+inline void ULowEntryLatentActionString::WaitTillDone(struct Unknown WorldContextObject, struct Unknown LatentInfo, struct FString& Result_) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLatentActionString.WaitTillDone");
+
+	struct WaitTillDone_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown LatentInfo;
+		struct FString& Result_;
+	}; WaitTillDone_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.LatentInfo = LatentInfo;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Result_ = Params.Result_;
+
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryLatentActionString.IsDone
+inline char ULowEntryLatentActionString::IsDone() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLatentActionString.IsDone");
+
+	struct IsDone_Params {
+		
+		char ReturnValue;
+
+	}; IsDone_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryLatentActionString.GetResult
+inline void ULowEntryLatentActionString::GetResult(struct FString& Result_) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLatentActionString.GetResult");
+
+	struct GetResult_Params {
+		struct FString& Result_;
+	}; GetResult_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Result_ = Params.Result_;
+
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryLatentActionString.Done
+inline void ULowEntryLatentActionString::Done(struct FString Result_) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLatentActionString.Done");
+
+	struct Done_Params {
+		struct FString Result_;
+	}; Done_Params Params;
+
+	Params.Result_ = Result_;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryLong.SetBytes
+inline void ULowEntryLong::SetBytes(struct TArray<Unknown>& ByteArray, int32_t Index, int32_t Length) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLong.SetBytes");
+
+	struct SetBytes_Params {
+		struct TArray<Unknown>& ByteArray;
+		int32_t Index;
+		int32_t Length;
+	}; SetBytes_Params Params;
+
+	Params.Index = Index;
+	Params.Length = Length;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	ByteArray = Params.ByteArray;
+
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryLong.LongBytes_Subtract
+inline void ULowEntryLong::LongBytes_Subtract(struct Unknown Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLong.LongBytes_Subtract");
+
+	struct LongBytes_Subtract_Params {
+		struct Unknown Value;
+	}; LongBytes_Subtract_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryLong.LongBytes_LessThan
+inline char ULowEntryLong::LongBytes_LessThan(struct Unknown Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLong.LongBytes_LessThan");
+
+	struct LongBytes_LessThan_Params {
+		struct Unknown Value;
+		char ReturnValue;
+
+	}; LongBytes_LessThan_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryLong.LongBytes_GreaterThan
+inline char ULowEntryLong::LongBytes_GreaterThan(struct Unknown Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLong.LongBytes_GreaterThan");
+
+	struct LongBytes_GreaterThan_Params {
+		struct Unknown Value;
+		char ReturnValue;
+
+	}; LongBytes_GreaterThan_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryLong.LongBytes_Equals
+inline char ULowEntryLong::LongBytes_Equals(struct Unknown Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLong.LongBytes_Equals");
+
+	struct LongBytes_Equals_Params {
+		struct Unknown Value;
+		char ReturnValue;
+
+	}; LongBytes_Equals_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryLong.LongBytes_Add
+inline void ULowEntryLong::LongBytes_Add(struct Unknown Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLong.LongBytes_Add");
+
+	struct LongBytes_Add_Params {
+		struct Unknown Value;
+	}; LongBytes_Add_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryLong.Integer_Subtract
+inline void ULowEntryLong::Integer_Subtract(int32_t Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLong.Integer_Subtract");
+
+	struct Integer_Subtract_Params {
+		int32_t Value;
+	}; Integer_Subtract_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryLong.Integer_LessThan
+inline char ULowEntryLong::Integer_LessThan(int32_t Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLong.Integer_LessThan");
+
+	struct Integer_LessThan_Params {
+		int32_t Value;
+		char ReturnValue;
+
+	}; Integer_LessThan_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryLong.Integer_GreaterThan
+inline char ULowEntryLong::Integer_GreaterThan(int32_t Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLong.Integer_GreaterThan");
+
+	struct Integer_GreaterThan_Params {
+		int32_t Value;
+		char ReturnValue;
+
+	}; Integer_GreaterThan_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryLong.Integer_Equals
+inline char ULowEntryLong::Integer_Equals(int32_t Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLong.Integer_Equals");
+
+	struct Integer_Equals_Params {
+		int32_t Value;
+		char ReturnValue;
+
+	}; Integer_Equals_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryLong.Integer_Add
+inline void ULowEntryLong::Integer_Add(int32_t Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLong.Integer_Add");
+
+	struct Integer_Add_Params {
+		int32_t Value;
+	}; Integer_Add_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryLong.GetBytes
+inline struct TArray<Unknown> ULowEntryLong::GetBytes() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLong.GetBytes");
+
+	struct GetBytes_Params {
+		
+		struct TArray<Unknown> ReturnValue;
+
+	}; GetBytes_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryLong.Float_LessThan
+inline char ULowEntryLong::Float_LessThan(float Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLong.Float_LessThan");
+
+	struct Float_LessThan_Params {
+		float Value;
+		char ReturnValue;
+
+	}; Float_LessThan_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryLong.Float_GreaterThan
+inline char ULowEntryLong::Float_GreaterThan(float Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLong.Float_GreaterThan");
+
+	struct Float_GreaterThan_Params {
+		float Value;
+		char ReturnValue;
+
+	}; Float_GreaterThan_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryLong.DoubleBytes_LessThan
+inline char ULowEntryLong::DoubleBytes_LessThan(struct Unknown Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLong.DoubleBytes_LessThan");
+
+	struct DoubleBytes_LessThan_Params {
+		struct Unknown Value;
+		char ReturnValue;
+
+	}; DoubleBytes_LessThan_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryLong.DoubleBytes_GreaterThan
+inline char ULowEntryLong::DoubleBytes_GreaterThan(struct Unknown Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLong.DoubleBytes_GreaterThan");
+
+	struct DoubleBytes_GreaterThan_Params {
+		struct Unknown Value;
+		char ReturnValue;
+
+	}; DoubleBytes_GreaterThan_Params Params;
+
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryLong.CreateClone
+inline struct Unknown ULowEntryLong::CreateClone() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLong.CreateClone");
+
+	struct CreateClone_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; CreateClone_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryLong.CastToString
+inline struct FString ULowEntryLong::CastToString() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLong.CastToString");
+
+	struct CastToString_Params {
+		
+		struct FString ReturnValue;
+
+	}; CastToString_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryLong.CastToDoubleBytes
+inline struct Unknown ULowEntryLong::CastToDoubleBytes() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLong.CastToDoubleBytes");
+
+	struct CastToDoubleBytes_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; CastToDoubleBytes_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryParsedHashcash.ToString
+inline struct FString ULowEntryParsedHashcash::ToString() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryParsedHashcash.ToString");
+
+	struct ToString_Params {
+		
+		struct FString ReturnValue;
+
+	}; ToString_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryParsedHashcash.GetResource
+inline struct FString ULowEntryParsedHashcash::GetResource() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryParsedHashcash.GetResource");
+
+	struct GetResource_Params {
+		
+		struct FString ReturnValue;
+
+	}; GetResource_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryParsedHashcash.GetDate
+inline struct Unknown ULowEntryParsedHashcash::GetDate() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryParsedHashcash.GetDate");
+
+	struct GetDate_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetDate_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LowEntryExtendedStandardLibrary.LowEntryParsedHashcash.GetBits
+inline int32_t ULowEntryParsedHashcash::GetBits() {
+	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryParsedHashcash.GetBits");
+
+	struct GetBits_Params {
+		
+		int32_t ReturnValue;
+
+	}; GetBits_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
 

@@ -1,4 +1,4 @@
-// BlueprintGeneratedClass Custom.CustomizedChara_DataAsset_C
+// BlueprintGeneratedClass CustomizedChara_DataAsset.CustomizedChara_DataAsset_C
 class UCustomizedChara_DataAsset_C : public UPrimaryDataAsset {
 
 public:

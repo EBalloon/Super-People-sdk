@@ -40,27 +40,27 @@ enum class EDatasmithImportScene : uint8_t {
 	EDatasmithImportScene = 3,
 };
 
-// Enum DatasmithContent.EDatasmithImportLightmapMk
-enum class EDatasmithImportLightmapM : uint8_t {
-	EDatasmithImportLightmapMk_65 = 0,
-	EDatasmithImportLightmapMk_129 = 1,
-	EDatasmithImportLightmapM_257 = 2,
-	EDatasmithImportLightmapM_513 = 3,
-	EDatasmithImportLightmapM_1025 = 4,
-	EDatasmithImportLightmapM_2049 = 5,
-	EDatasmithImportLightmapM_4097 = 6,
-	EDatasmithImportLightmapM = 7,
+// Enum DatasmithContent.EDatasmithImportLightmapMax
+enum class EDatasmithImportLightmapMax : uint8_t {
+	EDatasmithImportLightmapMax_65 = 0,
+	EDatasmithImportLightmapMax_129 = 1,
+	EDatasmithImportLightmapMax_257 = 2,
+	EDatasmithImportLightmapMax_513 = 3,
+	EDatasmithImportLightmapMax_1025 = 4,
+	EDatasmithImportLightmapMax_2049 = 5,
+	EDatasmithImportLightmapMax_4097 = 6,
+	EDatasmithImportLightmapMax = 7,
 };
 
-// Enum DatasmithContent.EDatasmithImportLightmapMk
-enum class EDatasmithImportLightmap : uint8_t {
-	EDatasmithImportLightmapMk_17 = 0,
-	EDatasmithImportLightmapMk_33 = 1,
-	EDatasmithImportLightmapMk_65 = 2,
-	EDatasmithImportLightmap_129 = 3,
-	EDatasmithImportLightmapMk_257 = 4,
-	EDatasmithImportLightmapMk_513 = 5,
-	EDatasmithImportLightmapMk = 6,
+// Enum DatasmithContent.EDatasmithImportLightmapMin
+enum class EDatasmithImportLightmapMin : uint8_t {
+	EDatasmithImportLightmapMin_17 = 0,
+	EDatasmithImportLightmapMin_33 = 1,
+	EDatasmithImportLightmapMin_65 = 2,
+	EDatasmithImportLightmapMin_129 = 3,
+	EDatasmithImportLightmapMin_257 = 4,
+	EDatasmithImportLightmapMin_513 = 5,
+	EDatasmithImportLightmapMin = 6,
 };
 
 // Enum DatasmithContent.EDatasmithImportMaterialQuality
@@ -88,11 +88,11 @@ enum class EDatasmithImportAssetConflictPolicy : uint8_t {
 	EDatasmithImportAssetConflictPolicy = 4,
 };
 
-// Enum DatasmithContent.EDatasmithImportSearchPack
-enum class EDatasmithImportSearchPack : uint8_t {
-	EDatasmithImportSearchPack = 0,
-	EDatasmithImportSearchPack = 1,
-	EDatasmithImportSearchPack = 2,
+// Enum DatasmithContent.EDatasmithImportSearchPackagePolicy
+enum class EDatasmithImportSearchPackagePolicy : uint8_t {
+	EDatasmithImportSearchPackagePolicy = 0,
+	EDatasmithImportSearchPackagePolicy = 1,
+	EDatasmithImportSearchPackagePolicy = 2,
 };
 
 // Class DatasmithContent.DatasmithActorTemplate
@@ -238,8 +238,8 @@ public:
 	struct Unknown LookatTrackingSettings; // 0x30 (48)
 };
 
-// Class DatasmithContent.DatasmithCineCameraComponentTem
-class UDatasmithCineCameraComponentTem : public UDatasmithObjectTemplate {
+// Class DatasmithContent.DatasmithCineCameraComponentTemplate
+class UDatasmithCineCameraComponentTemplate : public UDatasmithObjectTemplate {
 
 public:
 
@@ -326,8 +326,8 @@ public:
 	struct Unknown StaticParameters; // 0x148 (80)
 };
 
-// Class DatasmithContent.DatasmithPointLightComponentTem
-class UDatasmithPointLightComponentTem : public UDatasmithObjectTemplate {
+// Class DatasmithContent.DatasmithPointLightComponentTemplate
+class UDatasmithPointLightComponentTemplate : public UDatasmithObjectTemplate {
 
 public:
 
@@ -386,8 +386,8 @@ public:
 	float OuterConeAngle; // 0x34 (4)
 };
 
-// Class DatasmithContent.DatasmithStaticMeshComponentTem
-class UDatasmithStaticMeshComponentTem : public UDatasmithObjectTemplate {
+// Class DatasmithContent.DatasmithStaticMeshComponentTemplate
+class UDatasmithStaticMeshComponentTemplate : public UDatasmithObjectTemplate {
 
 public:
 
@@ -407,15 +407,15 @@ public:
 	struct TArray<Unknown> StaticMaterials; // 0x98 (16)
 };
 
-// ScriptStruct DatasmithContent.DatasmithCameraLookatTrackePTem
-struct FDatasmithCameraLookatTrack {
+// ScriptStruct DatasmithContent.DatasmithCameraLookatTrackingSettingsTemplate
+struct FDatasmithCameraLookatTrackingSettingsTemplate {
 	char bEnableLookAtTracking : 0; // 0x0 (1)
 	char bAllowRoll : 0; // 0x0 (1)
 	struct Unknown ActorToTrack; // 0x8 (40)
 };
 
-// ScriptStruct DatasmithContent.DatasmithPostProcessSettingsTem
-struct FDatasmithPostProcessSettingsTem {
+// ScriptStruct DatasmithContent.DatasmithPostProcessSettingsTemplate
+struct FDatasmithPostProcessSettingsTemplate {
 	char bOverride_WhiteTemp : 0; // 0x0 (1)
 	char bOverride_ColorSaturation : 0; // 0x0 (1)
 	char bOverride_VignetteIntensity : 0; // 0x0 (1)
@@ -434,8 +434,8 @@ struct FDatasmithPostProcessSettingsTem {
 	float DepthOfFieldFstop; // 0x3C (4)
 };
 
-// ScriptStruct DatasmithContent.DatasmithCameraFocusSettingsTem
-struct FDatasmithCameraFocusSettingsTem {
+// ScriptStruct DatasmithContent.DatasmithCameraFocusSettingsTemplate
+struct FDatasmithCameraFocusSettingsTemplate {
 	enum class Unknow FocusMethod; // 0x0 (1)
 	float ManualFocusDistance; // 0x4 (4)
 };
@@ -445,8 +445,8 @@ struct FDatasmithCameraLensSettingsTemplate {
 	float MaxFStop; // 0x0 (4)
 };
 
-// ScriptStruct DatasmithContent.DatasmithCameraFilmbackSettingsTemplate
-struct FDatasmithCameraFilmbackSettingsTemplate {
+// ScriptStruct DatasmithContent.DatasmithCameraFilmbackSetting
+struct FDatasmithCameraFilmbackSetting {
 	float SensorWidth; // 0x0 (4)
 	float SensorHeight; // 0x4 (4)
 };
@@ -495,8 +495,8 @@ struct FDatasmithStaticParameterSetTemplate {
 	struct TMap<Unknown, Unknown> StaticSwitchParameters; // 0x0 (80)
 };
 
-// ScriptStruct DatasmithContent.DatasmithMeshSectionInfoMk
-struct FDatasmithMeshSectionInfoMk {
+// ScriptStruct DatasmithContent.DatasmithMeshSectionInfoMapTemplate
+struct FDatasmithMeshSectionInfoMapTemplate {
 	struct TMap<Unknown, Unknown> Map; // 0x0 (80)
 };
 
@@ -525,4 +525,19 @@ struct FDatasmithMeshBuildSettingsTemplate {
 	int32_t SrcLightmapIndex; // 0x8 (4)
 	int32_t DstLightmapIndex; // 0xC (4)
 };
+
+// Function DatasmithContent.DatasmithImportedSequencesActor.PlayLevelSequence
+inline void ADatasmithImportedSequencesActor::PlayLevelSequence(struct Unknown SequenceToPlay) {
+	static auto fn = UObject::FindObject<UFunction>("Function DatasmithContent.DatasmithImportedSequencesActor.PlayLevelSequence");
+
+	struct PlayLevelSequence_Params {
+		struct Unknown SequenceToPlay;
+	}; PlayLevelSequence_Params Params;
+
+	Params.SequenceToPlay = SequenceToPlay;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
 

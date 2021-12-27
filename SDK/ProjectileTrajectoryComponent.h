@@ -52,11 +52,356 @@ public:
 	void ReceiveTick(float DeltaSeconds); // Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.ReceiveTick(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 	void StartDraw(struct Unknown DesiredStartLocation, struct Unknown Gravity, struct Unknown InitialLocalVelocity, float PathLifeTime, float TimeInterval, char DrawingType); // Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.StartDraw(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 	void StopDraw(); // Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.StopDraw(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void SpawnActorFromClass(struct Unknown* Class, struct Unknown SpawnTransform, struct Unknown ProjectileVelocity, struct Unknown Sound, struct Unknown NewScale3D, enum class Unknow CollisionHandlingOv, struct Unknown Instigator); // Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.SpawnActorFromClass(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void SpawnActorFromClass(struct Unknown* Class, struct Unknown SpawnTransform, struct Unknown ProjectileVelocity, struct Unknown Sound, struct Unknown NewScale3D, enum class Unknow CollisionHandlingOvyCompo, struct Unknown Instigator); // Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.SpawnActorFromClass(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 	void ForceStopDraw(); // Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.ForceStopDraw(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 	void ResetForceStopDraw(); // Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.ResetForceStopDraw(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 	void ReceiveBeginPlay(); // Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.ReceiveBeginPlay(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 	void IsFPS(char bIsThirdPerson); // Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.IsFPS(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 	void ExecuteUbergraph_ProjectileTrajectoryComponent(int32_t EntryPoint); // Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.ExecuteUbergraph_ProjectileTrajectoryComponent(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 };
+
+// Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.InterpProjectileTrajectoryJumpState
+inline void UProjectileTrajectoryComponent_C::InterpProjectileTrajectoryJumpState(char Jump, struct Unknown Location, struct Unknown Rotation, struct Unknown& StartLocation, struct Unknown& Velocity) {
+	static auto fn = UObject::FindObject<UFunction>("Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.InterpProjectileTrajectoryJumpState");
+
+	struct InterpProjectileTrajectoryJumpState_Params {
+		char Jump;
+		struct Unknown Location;
+		struct Unknown Rotation;
+		struct Unknown& StartLocation;
+		struct Unknown& Velocity;
+	}; InterpProjectileTrajectoryJumpState_Params Params;
+
+	Params.Jump = Jump;
+	Params.Location = Location;
+	Params.Rotation = Rotation;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	StartLocation = Params.StartLocation;
+	Velocity = Params.Velocity;
+
+}
+
+// Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.ResizeDecalFunc
+inline void UProjectileTrajectoryComponent_C::ResizeDecalFunc() {
+	static auto fn = UObject::FindObject<UFunction>("Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.ResizeDecalFunc");
+
+	struct ResizeDecalFunc_Params {
+		
+	}; ResizeDecalFunc_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.SetParticleColorDecalColor
+inline void UProjectileTrajectoryComponent_C::SetParticleColorDecalColor() {
+	static auto fn = UObject::FindObject<UFunction>("Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.SetParticleColorDecalColor");
+
+	struct SetParticleColorDecalColor_Params {
+		
+	}; SetParticleColorDecalColor_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.CalculateStartLocationAndLocalVelocity
+inline void UProjectileTrajectoryComponent_C::CalculateStartLocationAndLocalVelocity(struct Unknown& StartLocaton, struct Unknown& ) {
+	static auto fn = UObject::FindObject<UFunction>("Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.CalculateStartLocationAndLocalVelocity");
+
+	struct CalculateStartLocationAndLocalVelocity_Params {
+		struct Unknown& StartLocaton;
+		struct Unknown& ;
+	}; CalculateStartLocationAndLocalVelocity_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	StartLocaton = Params.StartLocaton;
+	 = Params.;
+
+}
+
+// Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.ClearBeams
+inline void UProjectileTrajectoryComponent_C::ClearBeams() {
+	static auto fn = UObject::FindObject<UFunction>("Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.ClearBeams");
+
+	struct ClearBeams_Params {
+		
+	}; ClearBeams_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.AddNewBeam
+inline void UProjectileTrajectoryComponent_C::AddNewBeam(struct Unknown NewSourcePoint, struct Unknown NewTargetPoint, int32_t Index) {
+	static auto fn = UObject::FindObject<UFunction>("Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.AddNewBeam");
+
+	struct AddNewBeam_Params {
+		struct Unknown NewSourcePoint;
+		struct Unknown NewTargetPoint;
+		int32_t Index;
+	}; AddNewBeam_Params Params;
+
+	Params.NewSourcePoint = NewSourcePoint;
+	Params.NewTargetPoint = NewTargetPoint;
+	Params.Index = Index;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.VisualizeSegment
+inline void UProjectileTrajectoryComponent_C::VisualizeSegment(char Selection, struct Unknown Point1, struct Unknown Point2, int32_t Index) {
+	static auto fn = UObject::FindObject<UFunction>("Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.VisualizeSegment");
+
+	struct VisualizeSegment_Params {
+		char Selection;
+		struct Unknown Point1;
+		struct Unknown Point2;
+		int32_t Index;
+	}; VisualizeSegment_Params Params;
+
+	Params.Selection = Selection;
+	Params.Point1 = Point1;
+	Params.Point2 = Point2;
+	Params.Index = Index;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.GetSegmentAtTime
+inline void UProjectileTrajectoryComponent_C::GetSegmentAtTime(struct Unknown StartLocation, struct Unknown InitialVelocity, struct Unknown Gravity, float Time1, float Time2, struct Unknown& Point1, struct Unknown& Point2) {
+	static auto fn = UObject::FindObject<UFunction>("Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.GetSegmentAtTime");
+
+	struct GetSegmentAtTime_Params {
+		struct Unknown StartLocation;
+		struct Unknown InitialVelocity;
+		struct Unknown Gravity;
+		float Time1;
+		float Time2;
+		struct Unknown& Point1;
+		struct Unknown& Point2;
+	}; GetSegmentAtTime_Params Params;
+
+	Params.StartLocation = StartLocation;
+	Params.InitialVelocity = InitialVelocity;
+	Params.Gravity = Gravity;
+	Params.Time1 = Time1;
+	Params.Time2 = Time2;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Point1 = Params.Point1;
+	Point2 = Params.Point2;
+
+}
+
+// Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.DrawProjectileTrajectory
+inline void UProjectileTrajectoryComponent_C::DrawProjectileTrajectory(struct Unknown DesiredStartLocation, struct Unknown Gravity, struct Unknown InitialLocalVelocity, float PathLifeTime, float TimeInterval) {
+	static auto fn = UObject::FindObject<UFunction>("Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.DrawProjectileTrajectory");
+
+	struct DrawProjectileTrajectory_Params {
+		struct Unknown DesiredStartLocation;
+		struct Unknown Gravity;
+		struct Unknown InitialLocalVelocity;
+		float PathLifeTime;
+		float TimeInterval;
+	}; DrawProjectileTrajectory_Params Params;
+
+	Params.DesiredStartLocation = DesiredStartLocation;
+	Params.Gravity = Gravity;
+	Params.InitialLocalVelocity = InitialLocalVelocity;
+	Params.PathLifeTime = PathLifeTime;
+	Params.TimeInterval = TimeInterval;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.BreakDrawingLoop
+inline void UProjectileTrajectoryComponent_C::BreakDrawingLoop() {
+	static auto fn = UObject::FindObject<UFunction>("Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.BreakDrawingLoop");
+
+	struct BreakDrawingLoop_Params {
+		
+	}; BreakDrawingLoop_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.ReceiveTick
+inline void UProjectileTrajectoryComponent_C::ReceiveTick(float DeltaSeconds) {
+	static auto fn = UObject::FindObject<UFunction>("Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.ReceiveTick");
+
+	struct ReceiveTick_Params {
+		float DeltaSeconds;
+	}; ReceiveTick_Params Params;
+
+	Params.DeltaSeconds = DeltaSeconds;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.StartDraw
+inline void UProjectileTrajectoryComponent_C::StartDraw(struct Unknown DesiredStartLocation, struct Unknown Gravity, struct Unknown InitialLocalVelocity, float PathLifeTime, float TimeInterval, char DrawingType) {
+	static auto fn = UObject::FindObject<UFunction>("Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.StartDraw");
+
+	struct StartDraw_Params {
+		struct Unknown DesiredStartLocation;
+		struct Unknown Gravity;
+		struct Unknown InitialLocalVelocity;
+		float PathLifeTime;
+		float TimeInterval;
+		char DrawingType;
+	}; StartDraw_Params Params;
+
+	Params.DesiredStartLocation = DesiredStartLocation;
+	Params.Gravity = Gravity;
+	Params.InitialLocalVelocity = InitialLocalVelocity;
+	Params.PathLifeTime = PathLifeTime;
+	Params.TimeInterval = TimeInterval;
+	Params.DrawingType = DrawingType;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.StopDraw
+inline void UProjectileTrajectoryComponent_C::StopDraw() {
+	static auto fn = UObject::FindObject<UFunction>("Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.StopDraw");
+
+	struct StopDraw_Params {
+		
+	}; StopDraw_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.SpawnActorFromClass
+inline void UProjectileTrajectoryComponent_C::SpawnActorFromClass(struct Unknown* Class, struct Unknown SpawnTransform, struct Unknown ProjectileVelocity, struct Unknown Sound, struct Unknown NewScale3D, enum class Unknow CollisionHandlingOvyCompo, struct Unknown Instigator) {
+	static auto fn = UObject::FindObject<UFunction>("Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.SpawnActorFromClass");
+
+	struct SpawnActorFromClass_Params {
+		struct Unknown* Class;
+		struct Unknown SpawnTransform;
+		struct Unknown ProjectileVelocity;
+		struct Unknown Sound;
+		struct Unknown NewScale3D;
+		enum class Unknow CollisionHandlingOvyCompo;
+		struct Unknown Instigator;
+	}; SpawnActorFromClass_Params Params;
+
+	Params.Class = Class;
+	Params.SpawnTransform = SpawnTransform;
+	Params.ProjectileVelocity = ProjectileVelocity;
+	Params.Sound = Sound;
+	Params.NewScale3D = NewScale3D;
+	Params.CollisionHandlingOvyCompo = CollisionHandlingOvyCompo;
+	Params.Instigator = Instigator;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.ForceStopDraw
+inline void UProjectileTrajectoryComponent_C::ForceStopDraw() {
+	static auto fn = UObject::FindObject<UFunction>("Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.ForceStopDraw");
+
+	struct ForceStopDraw_Params {
+		
+	}; ForceStopDraw_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.ResetForceStopDraw
+inline void UProjectileTrajectoryComponent_C::ResetForceStopDraw() {
+	static auto fn = UObject::FindObject<UFunction>("Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.ResetForceStopDraw");
+
+	struct ResetForceStopDraw_Params {
+		
+	}; ResetForceStopDraw_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.ReceiveBeginPlay
+inline void UProjectileTrajectoryComponent_C::ReceiveBeginPlay() {
+	static auto fn = UObject::FindObject<UFunction>("Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.ReceiveBeginPlay");
+
+	struct ReceiveBeginPlay_Params {
+		
+	}; ReceiveBeginPlay_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.IsFPS
+inline void UProjectileTrajectoryComponent_C::IsFPS(char bIsThirdPerson) {
+	static auto fn = UObject::FindObject<UFunction>("Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.IsFPS");
+
+	struct IsFPS_Params {
+		char bIsThirdPerson;
+	}; IsFPS_Params Params;
+
+	Params.bIsThirdPerson = bIsThirdPerson;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.ExecuteUbergraph_ProjectileTrajectoryComponent
+inline void UProjectileTrajectoryComponent_C::ExecuteUbergraph_ProjectileTrajectoryComponent(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.ExecuteUbergraph_ProjectileTrajectoryComponent");
+
+	struct ExecuteUbergraph_ProjectileTrajectoryComponent_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_ProjectileTrajectoryComponent_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
 

@@ -624,8 +624,8 @@ struct FMovieSceneCameraAnimSectionData {
 	char bLooping : 0; // 0x18 (1)
 };
 
-// ScriptStruct MovieSceneTracks.MovieSceneCameraShakeSectionTem
-struct FMovieSceneCameraShakeSectionTem : FMovieSceneAdditiveCameraAnimationTemplate {
+// ScriptStruct MovieSceneTracks.MovieSceneCameraShakeSectionTemplate
+struct FMovieSceneCameraShakeSectionTemplate : FMovieSceneAdditiveCameraAnimationTemplate {
 	struct Unknown SourceData; // 0x20 (32)
 	struct Unknown SectionStartTime; // 0x40 (4)
 };
@@ -871,8 +871,8 @@ struct FMovieSceneBoolPropertySectionTemplate : FMovieScenePropertySectionTempla
 	struct Unknown BoolCurve; // 0x48 (144)
 };
 
-// ScriptStruct MovieSceneTracks.MovieSceneSkeletalAnimation
-struct FMovieSceneSkeletalAnimation {
+// ScriptStruct MovieSceneTracks.MovieSceneSkeletalAnimationParams
+struct FMovieSceneSkeletalAnimationParams {
 	struct Unknown Animation; // 0x0 (8)
 	struct Unknown FirstLoopStartFrameOffset; // 0x8 (4)
 	struct Unknown StartFrameOffset; // 0xC (4)
@@ -892,8 +892,8 @@ struct FMovieSceneSkeletalAnimationSectionTemplate : FMovieSceneEvalTemplate {
 	struct Unknown Params; // 0x20 (224)
 };
 
-// ScriptStruct MovieSceneTracks.MovieSceneSkeletalAnimationSectionTemplateParam
-struct FMovieSceneSkeletalAnimationSectionTemplateParam : FMovieSceneSkeletalAnimation {
+// ScriptStruct MovieSceneTracks.MovieSceneSkeletalAnimationSectionTemplateParameters
+struct FMovieSceneSkeletalAnimationSectionTemplateParameters : FMovieSceneSkeletalAnimationParams {
 	struct Unknown SectionStartTime; // 0xD8 (4)
 	struct Unknown SectionEndTime; // 0xDC (4)
 };
@@ -927,4 +927,241 @@ struct FMovieSceneVectorKeyStruct : FMovieSceneVectorKeyStructBase {
 struct FMovieSceneVector2DKeyStruct : FMovieSceneVectorKeyStructBase {
 	struct Unknown Vector; // 0x28 (8)
 };
+
+// Function MovieSceneTracks.MovieScene3DConstraintSection.SetConstraintBindingID
+inline void UMovieScene3DConstraintSection::SetConstraintBindingID(struct Unknown& InConstraintBindingID) {
+	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneTracks.MovieScene3DConstraintSection.SetConstraintBindingID");
+
+	struct SetConstraintBindingID_Params {
+		struct Unknown& InConstraintBindingID;
+	}; SetConstraintBindingID_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	InConstraintBindingID = Params.InConstraintBindingID;
+
+}
+
+// Function MovieSceneTracks.MovieScene3DConstraintSection.GetConstraintBindingID
+inline struct Unknown UMovieScene3DConstraintSection::GetConstraintBindingID() {
+	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneTracks.MovieScene3DConstraintSection.GetConstraintBindingID");
+
+	struct GetConstraintBindingID_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetConstraintBindingID_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function MovieSceneTracks.MovieSceneAudioSection.SetStartOffset
+inline void UMovieSceneAudioSection::SetStartOffset(struct Unknown InStartOffset) {
+	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneTracks.MovieSceneAudioSection.SetStartOffset");
+
+	struct SetStartOffset_Params {
+		struct Unknown InStartOffset;
+	}; SetStartOffset_Params Params;
+
+	Params.InStartOffset = InStartOffset;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MovieSceneTracks.MovieSceneAudioSection.SetSound
+inline void UMovieSceneAudioSection::SetSound(struct Unknown InSound) {
+	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneTracks.MovieSceneAudioSection.SetSound");
+
+	struct SetSound_Params {
+		struct Unknown InSound;
+	}; SetSound_Params Params;
+
+	Params.InSound = InSound;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MovieSceneTracks.MovieSceneAudioSection.GetStartOffset
+inline struct Unknown UMovieSceneAudioSection::GetStartOffset() {
+	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneTracks.MovieSceneAudioSection.GetStartOffset");
+
+	struct GetStartOffset_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetStartOffset_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function MovieSceneTracks.MovieSceneAudioSection.GetSound
+inline struct Unknown UMovieSceneAudioSection::GetSound() {
+	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneTracks.MovieSceneAudioSection.GetSound");
+
+	struct GetSound_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetSound_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function MovieSceneTracks.MovieSceneCameraCutSection.SetCameraBindingID
+inline void UMovieSceneCameraCutSection::SetCameraBindingID(struct Unknown& InCameraBindingID) {
+	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneTracks.MovieSceneCameraCutSection.SetCameraBindingID");
+
+	struct SetCameraBindingID_Params {
+		struct Unknown& InCameraBindingID;
+	}; SetCameraBindingID_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	InCameraBindingID = Params.InCameraBindingID;
+
+}
+
+// Function MovieSceneTracks.MovieSceneCameraCutSection.GetCameraBindingID
+inline struct Unknown UMovieSceneCameraCutSection::GetCameraBindingID() {
+	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneTracks.MovieSceneCameraCutSection.GetCameraBindingID");
+
+	struct GetCameraBindingID_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetCameraBindingID_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function MovieSceneTracks.MovieSceneCinematicShotSection.SetShotDisplayName
+inline void UMovieSceneCinematicShotSection::SetShotDisplayName(struct FString InShotDisplayName) {
+	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneTracks.MovieSceneCinematicShotSection.SetShotDisplayName");
+
+	struct SetShotDisplayName_Params {
+		struct FString InShotDisplayName;
+	}; SetShotDisplayName_Params Params;
+
+	Params.InShotDisplayName = InShotDisplayName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MovieSceneTracks.MovieSceneCinematicShotSection.GetShotDisplayName
+inline struct FString UMovieSceneCinematicShotSection::GetShotDisplayName() {
+	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneTracks.MovieSceneCinematicShotSection.GetShotDisplayName");
+
+	struct GetShotDisplayName_Params {
+		
+		struct FString ReturnValue;
+
+	}; GetShotDisplayName_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function MovieSceneTracks.MovieSceneLevelVisibilitySection.SetVisibility
+inline void UMovieSceneLevelVisibilitySection::SetVisibility(enum class Unknow InVisibility) {
+	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneTracks.MovieSceneLevelVisibilitySection.SetVisibility");
+
+	struct SetVisibility_Params {
+		enum class Unknow InVisibility;
+	}; SetVisibility_Params Params;
+
+	Params.InVisibility = InVisibility;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MovieSceneTracks.MovieSceneLevelVisibilitySection.SetLevelNames
+inline void UMovieSceneLevelVisibilitySection::SetLevelNames(struct TArray<Unknown>& InLevelNames) {
+	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneTracks.MovieSceneLevelVisibilitySection.SetLevelNames");
+
+	struct SetLevelNames_Params {
+		struct TArray<Unknown>& InLevelNames;
+	}; SetLevelNames_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	InLevelNames = Params.InLevelNames;
+
+}
+
+// Function MovieSceneTracks.MovieSceneLevelVisibilitySection.GetVisibility
+inline enum class Unknow UMovieSceneLevelVisibilitySection::GetVisibility() {
+	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneTracks.MovieSceneLevelVisibilitySection.GetVisibility");
+
+	struct GetVisibility_Params {
+		
+		enum class Unknow ReturnValue;
+
+	}; GetVisibility_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function MovieSceneTracks.MovieSceneLevelVisibilitySection.GetLevelNames
+inline struct TArray<Unknown> UMovieSceneLevelVisibilitySection::GetLevelNames() {
+	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneTracks.MovieSceneLevelVisibilitySection.GetLevelNames");
+
+	struct GetLevelNames_Params {
+		
+		struct TArray<Unknown> ReturnValue;
+
+	}; GetLevelNames_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
 

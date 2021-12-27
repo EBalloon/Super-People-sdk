@@ -264,7 +264,7 @@ public:
 	void OnNotifyBeginReceivyP(struct FName NotifyName, struct Unknown& BranchingPointNotifyPayload); // Function AnimGraphRuntime.PlayMontageCallbackProxy.OnNotifyBeginReceiv(Final|Native|Protected|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x323C6C0>
 	void OnMontageEnded(struct Unknown Montage, char bInterrupted); // Function AnimGraphRuntime.PlayMontageCallbackProxy.OnMontageEnded(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x323C5F0>
 	void OnMontageBlendingOut(struct Unknown Montage, char bInterrupted); // Function AnimGraphRuntime.PlayMontageCallbackProxy.OnMontageBlendingOut(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x323C520>
-	struct Unknown CreateProxyObjectForPlayMk(struct Unknown InSkeletalMeshComponent, struct Unknown MontageToPlay, float PlayRate, float StartingPosition, struct FName StartingSection); // Function AnimGraphRuntime.PlayMontageCallbackProxy.CreateProxyObjectForPlayMad(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x323AF20>
+	struct Unknown CreateProxyObjectForPlayMontag(struct Unknown InSkeletalMeshComponent, struct Unknown MontageToPlay, float PlayRate, float StartingPosition, struct FName StartingSection); // Function AnimGraphRuntime.PlayMontageCallbackProxy.CreateProxyObjectForPlayMontag(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x323AF20>
 };
 
 // ScriptStruct AnimGraphRuntime.AnimNode_SkeletalControlBase
@@ -879,7 +879,7 @@ struct FAnimNode_ScaleChainLength : FAnimNode_Base {
 	enum class Unknow ChainInitialLength; // 0x60 (1)
 };
 
-// ScriptStruct AnimGraphRuntime.AnimNode_SequenceEvntimeMk
+// ScriptStruct AnimGraphRuntime.AnimNode_SequenceEv
 struct FAnimNode_SequenceEv : FAnimNode_AssetPlayerBase {
 	struct Unknown Sequence; // 0x30 (8)
 	float ExplicitTime; // 0x38 (4)
@@ -1032,4 +1032,103 @@ struct FRBFTarget : FRBFEntry {
 	enum class Unknow DistanceMethod; // 0x98 (1)
 	enum class Unknow FunctionType; // 0x99 (1)
 };
+
+// Function AnimGraphRuntime.PlayMontageCallbackProxy.OnNotifyEndReceived
+inline void UPlayMontageCallbackProxy::OnNotifyEndReceived(struct FName NotifyName, struct Unknown& BranchingPointNotifyPayload) {
+	static auto fn = UObject::FindObject<UFunction>("Function AnimGraphRuntime.PlayMontageCallbackProxy.OnNotifyEndReceived");
+
+	struct OnNotifyEndReceived_Params {
+		struct FName NotifyName;
+		struct Unknown& BranchingPointNotifyPayload;
+	}; OnNotifyEndReceived_Params Params;
+
+	Params.NotifyName = NotifyName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	BranchingPointNotifyPayload = Params.BranchingPointNotifyPayload;
+
+}
+
+// Function AnimGraphRuntime.PlayMontageCallbackProxy.OnNotifyBeginReceiv
+inline void UPlayMontageCallbackProxy::OnNotifyBeginReceivyP(struct FName NotifyName, struct Unknown& BranchingPointNotifyPayload) {
+	static auto fn = UObject::FindObject<UFunction>("Function AnimGraphRuntime.PlayMontageCallbackProxy.OnNotifyBeginReceiv");
+
+	struct OnNotifyBeginReceivyP_Params {
+		struct FName NotifyName;
+		struct Unknown& BranchingPointNotifyPayload;
+	}; OnNotifyBeginReceivyP_Params Params;
+
+	Params.NotifyName = NotifyName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	BranchingPointNotifyPayload = Params.BranchingPointNotifyPayload;
+
+}
+
+// Function AnimGraphRuntime.PlayMontageCallbackProxy.OnMontageEnded
+inline void UPlayMontageCallbackProxy::OnMontageEnded(struct Unknown Montage, char bInterrupted) {
+	static auto fn = UObject::FindObject<UFunction>("Function AnimGraphRuntime.PlayMontageCallbackProxy.OnMontageEnded");
+
+	struct OnMontageEnded_Params {
+		struct Unknown Montage;
+		char bInterrupted;
+	}; OnMontageEnded_Params Params;
+
+	Params.Montage = Montage;
+	Params.bInterrupted = bInterrupted;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AnimGraphRuntime.PlayMontageCallbackProxy.OnMontageBlendingOut
+inline void UPlayMontageCallbackProxy::OnMontageBlendingOut(struct Unknown Montage, char bInterrupted) {
+	static auto fn = UObject::FindObject<UFunction>("Function AnimGraphRuntime.PlayMontageCallbackProxy.OnMontageBlendingOut");
+
+	struct OnMontageBlendingOut_Params {
+		struct Unknown Montage;
+		char bInterrupted;
+	}; OnMontageBlendingOut_Params Params;
+
+	Params.Montage = Montage;
+	Params.bInterrupted = bInterrupted;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AnimGraphRuntime.PlayMontageCallbackProxy.CreateProxyObjectForPlayMontag
+inline struct Unknown UPlayMontageCallbackProxy::CreateProxyObjectForPlayMontag(struct Unknown InSkeletalMeshComponent, struct Unknown MontageToPlay, float PlayRate, float StartingPosition, struct FName StartingSection) {
+	static auto fn = UObject::FindObject<UFunction>("Function AnimGraphRuntime.PlayMontageCallbackProxy.CreateProxyObjectForPlayMontag");
+
+	struct CreateProxyObjectForPlayMontag_Params {
+		struct Unknown InSkeletalMeshComponent;
+		struct Unknown MontageToPlay;
+		float PlayRate;
+		float StartingPosition;
+		struct FName StartingSection;
+		struct Unknown ReturnValue;
+
+	}; CreateProxyObjectForPlayMontag_Params Params;
+
+	Params.InSkeletalMeshComponent = InSkeletalMeshComponent;
+	Params.MontageToPlay = MontageToPlay;
+	Params.PlayRate = PlayRate;
+	Params.StartingPosition = StartingPosition;
+	Params.StartingSection = StartingSection;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
 

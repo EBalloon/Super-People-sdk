@@ -46,3 +46,73 @@ public:
 	void ClientPing(); // Function ReplicationOptimizer.ReplicationPingComponet.ClientPing(Final|Net|NetReliableNative|Event|Private|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120E5B0>
 };
 
+// Function ReplicationOptimizer.ReplicationPingComponet.ServerRPVPing
+inline void UReplicationPingComponet::ServerRPVPing() {
+	static auto fn = UObject::FindObject<UFunction>("Function ReplicationOptimizer.ReplicationPingComponet.ServerRPVPing");
+
+	struct ServerRPVPing_Params {
+		
+	}; ServerRPVPing_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function ReplicationOptimizer.ReplicationPingComponet.ServerRPCPing
+inline void UReplicationPingComponet::ServerRPCPing() {
+	static auto fn = UObject::FindObject<UFunction>("Function ReplicationOptimizer.ReplicationPingComponet.ServerRPCPing");
+
+	struct ServerRPCPing_Params {
+		
+	}; ServerRPCPing_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function ReplicationOptimizer.ReplicationPingComponet.OnRep_Ping
+inline void UReplicationPingComponet::OnRep_Ping() {
+	static auto fn = UObject::FindObject<UFunction>("Function ReplicationOptimizer.ReplicationPingComponet.OnRep_Ping");
+
+	struct OnRep_Ping_Params {
+		
+	}; OnRep_Ping_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function ReplicationOptimizer.ReplicationPingComponet.OnRep_Enabled
+inline void UReplicationPingComponet::OnRep_Enabled() {
+	static auto fn = UObject::FindObject<UFunction>("Function ReplicationOptimizer.ReplicationPingComponet.OnRep_Enabled");
+
+	struct OnRep_Enabled_Params {
+		
+	}; OnRep_Enabled_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function ReplicationOptimizer.ReplicationPingComponet.ClientPing
+inline void UReplicationPingComponet::ClientPing() {
+	static auto fn = UObject::FindObject<UFunction>("Function ReplicationOptimizer.ReplicationPingComponet.ClientPing");
+
+	struct ClientPing_Params {
+		
+	}; ClientPing_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+

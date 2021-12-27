@@ -207,7 +207,7 @@ public:
 	char bReceiveInput : 0; // 0x161 (1)
 	char bReceiveInputWhenTransparent : 0; // 0x162 (1)
 	char AllowPerformanceWarnings : 0; // 0x163 (1)
-	float ExecuteJSTimersThresholdMo; // 0x164 (4)
+	float ExecuteJSTimersThresholdMs; // 0x164 (4)
 	float UpdateStylesAndLayoutThresholdMs; // 0x168 (4)
 	float RecordRenderingCommandsThresholdMs; // 0x16C (4)
 	float PaintWarningThresholdMs; // 0x170 (4)
@@ -283,8 +283,8 @@ class ACoherentUIGTInputActor : public UActor {
 
 public:
 
-	struct FMulticastInlineDelegate OnCoherentUIGTInputActorMn; // 0x310 (16)
-	struct FMulticastInlineDelegate OnCoherentUIGTInputActorMn; // 0x320 (16)
+	struct FMulticastInlineDelegate OnCoherentUIGTInputActorMouseButtonDown; // 0x310 (16)
+	struct FMulticastInlineDelegate OnCoherentUIGTInputActorMouseButtonUp; // 0x320 (16)
 	struct FMulticastInlineDelegate OnCoherentUIGTInputActorKeyDown; // 0x330 (16)
 	struct FMulticastInlineDelegate OnCoherentUIGTInputActorKeyUp; // 0x340 (16)
 
@@ -398,7 +398,7 @@ public:
 	char bGammaCorrectedMaterial : 0; // 0x204 (1)
 	float TickPeriodInMinimizedGame; // 0x208 (4)
 	char AllowPerformanceWarnings : 0; // 0x20C (1)
-	float ExecuteJSTimersThreshold; // 0x210 (4)
+	float ExecuteJSTimersThresholdMs; // 0x210 (4)
 	float UpdateStylesAndLayoutThresholdMs; // 0x214 (4)
 	float RecordRenderingCommandsThresholdMs; // 0x218 (4)
 	float PaintWarningThresholdMs; // 0x21C (4)
@@ -494,4 +494,1506 @@ struct FCoh_PrivateInfo {
 	struct FString AuthToken; // 0x10 (16)
 	struct FString ApiGameUrl; // 0x20 (16)
 };
+
+// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.UpdateWholeDataModelFromStruct
+inline void UCoherentUIGTBaseComponent::UpdateWholeDataModelFromStruct(struct TFieldPath<FUnknown> Arg) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.UpdateWholeDataModelFromStruct");
+
+	struct UpdateWholeDataModelFromStruct_Params {
+		struct TFieldPath<FUnknown> Arg;
+	}; UpdateWholeDataModelFromStruct_Params Params;
+
+	Params.Arg = Arg;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.UpdateWholeDataModelFromObject
+inline void UCoherentUIGTBaseComponent::UpdateWholeDataModelFromObject(struct Unknown Model) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.UpdateWholeDataModelFromObject");
+
+	struct UpdateWholeDataModelFromObject_Params {
+		struct Unknown Model;
+	}; UpdateWholeDataModelFromObject_Params Params;
+
+	Params.Model = Model;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.TriggerJSEvent
+inline void UCoherentUIGTBaseComponent::TriggerJSEvent(struct FString Name, struct Unknown eventData) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.TriggerJSEvent");
+
+	struct TriggerJSEvent_Params {
+		struct FString Name;
+		struct Unknown eventData;
+	}; TriggerJSEvent_Params Params;
+
+	Params.Name = Name;
+	Params.eventData = eventData;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.SynchronizeModels
+inline void UCoherentUIGTBaseComponent::SynchronizeModels() {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.SynchronizeModels");
+
+	struct SynchronizeModels_Params {
+		
+	}; SynchronizeModels_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.ShowPaintRects
+inline void UCoherentUIGTBaseComponent::ShowPaintRects(char Show) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.ShowPaintRects");
+
+	struct ShowPaintRects_Params {
+		char Show;
+	}; ShowPaintRects_Params Params;
+
+	Params.Show = Show;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.SetOffscreenCanvasRendering
+inline void UCoherentUIGTBaseComponent::SetOffscreenCanvasRendering(char State) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.SetOffscreenCanvasRendering");
+
+	struct SetOffscreenCanvasRendering_Params {
+		char State;
+	}; SetOffscreenCanvasRendering_Params Params;
+
+	Params.State = State;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.SetClickThroughAlphaThreshold
+inline void UCoherentUIGTBaseComponent::SetClickThroughAlphaThreshold(float threshold) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.SetClickThroughAlphaThreshold");
+
+	struct SetClickThroughAlphaThreshold_Params {
+		float threshold;
+	}; SetClickThroughAlphaThreshold_Params Params;
+
+	Params.threshold = threshold;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.Resize
+inline void UCoherentUIGTBaseComponent::Resize(int32_t Width, int32_t Height) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.Resize");
+
+	struct Resize_Params {
+		int32_t Width;
+		int32_t Height;
+	}; Resize_Params Params;
+
+	Params.Width = Width;
+	Params.Height = Height;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.Reload
+inline void UCoherentUIGTBaseComponent::Reload() {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.Reload");
+
+	struct Reload_Params {
+		
+	}; Reload_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.Redraw
+inline void UCoherentUIGTBaseComponent::Redraw() {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.Redraw");
+
+	struct Redraw_Params {
+		
+	}; Redraw_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.Load
+inline void UCoherentUIGTBaseComponent::Load(struct FString Path) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.Load");
+
+	struct Load_Params {
+		struct FString Path;
+	}; Load_Params Params;
+
+	Params.Path = Path;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.IsTransparent
+inline char UCoherentUIGTBaseComponent::IsTransparent() {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.IsTransparent");
+
+	struct IsTransparent_Params {
+		
+		char ReturnValue;
+
+	}; IsTransparent_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.IsReadyToCreateView
+inline char UCoherentUIGTBaseComponent::IsReadyToCreateView() {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.IsReadyToCreateView");
+
+	struct IsReadyToCreateView_Params {
+		
+		char ReturnValue;
+
+	}; IsReadyToCreateView_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.IsReadyForBindings
+inline char UCoherentUIGTBaseComponent::IsReadyForBindings() {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.IsReadyForBindings");
+
+	struct IsReadyForBindings_Params {
+		
+		char ReturnValue;
+
+	}; IsReadyForBindings_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.IsDocumentReady
+inline char UCoherentUIGTBaseComponent::IsDocumentReady() {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.IsDocumentReady");
+
+	struct IsDocumentReady_Params {
+		
+		char ReturnValue;
+
+	}; IsDocumentReady_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.HasRequestedView
+inline char UCoherentUIGTBaseComponent::HasRequestedView() {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.HasRequestedView");
+
+	struct HasRequestedView_Params {
+		
+		char ReturnValue;
+
+	}; HasRequestedView_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.GetClickThroughAlphaThreshold
+inline float UCoherentUIGTBaseComponent::GetClickThroughAlphaThreshold() {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.GetClickThroughAlphaThreshold");
+
+	struct GetClickThroughAlphaThreshold_Params {
+		
+		float ReturnValue;
+
+	}; GetClickThroughAlphaThreshold_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.EndDebugFrameSave
+inline void UCoherentUIGTBaseComponent::EndDebugFrameSave() {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.EndDebugFrameSave");
+
+	struct EndDebugFrameSave_Params {
+		
+	}; EndDebugFrameSave_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.EnableDelayedUpdate
+inline void UCoherentUIGTBaseComponent::EnableDelayedUpdate(char bEnabled) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.EnableDelayedUpdate");
+
+	struct EnableDelayedUpdate_Params {
+		char bEnabled;
+	}; EnableDelayedUpdate_Params Params;
+
+	Params.bEnabled = bEnabled;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.DebugSaveNextFrame
+inline void UCoherentUIGTBaseComponent::DebugSaveNextFrame() {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.DebugSaveNextFrame");
+
+	struct DebugSaveNextFrame_Params {
+		
+	}; DebugSaveNextFrame_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.CreateJSEvent
+inline struct Unknown UCoherentUIGTBaseComponent::CreateJSEvent() {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.CreateJSEvent");
+
+	struct CreateJSEvent_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; CreateJSEvent_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.CreateDataModelFromStruct
+inline void UCoherentUIGTBaseComponent::CreateDataModelFromStruct(struct FString Name, struct TFieldPath<FUnknown> Arg) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.CreateDataModelFromStruct");
+
+	struct CreateDataModelFromStruct_Params {
+		struct FString Name;
+		struct TFieldPath<FUnknown> Arg;
+	}; CreateDataModelFromStruct_Params Params;
+
+	Params.Name = Name;
+	Params.Arg = Arg;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.CreateDataModelFromObject
+inline void UCoherentUIGTBaseComponent::CreateDataModelFromObject(struct FString Name, struct Unknown Model) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.CreateDataModelFromObject");
+
+	struct CreateDataModelFromObject_Params {
+		struct FString Name;
+		struct Unknown Model;
+	}; CreateDataModelFromObject_Params Params;
+
+	Params.Name = Name;
+	Params.Model = Model;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.BeginDebugFrameSave
+inline void UCoherentUIGTBaseComponent::BeginDebugFrameSave() {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.BeginDebugFrameSave");
+
+	struct BeginDebugFrameSave_Params {
+		
+	}; BeginDebugFrameSave_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTGameHUD.SetupUIGTView
+inline void ACoherentUIGTGameHUD::SetupUIGTView(struct FString PageUrl, char bIsTransparent, float ClickThroughAlphaThreshold, float AnimationFrameDefer, char bDelayedUpdate) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTGameHUD.SetupUIGTView");
+
+	struct SetupUIGTView_Params {
+		struct FString PageUrl;
+		char bIsTransparent;
+		float ClickThroughAlphaThreshold;
+		float AnimationFrameDefer;
+		char bDelayedUpdate;
+	}; SetupUIGTView_Params Params;
+
+	Params.PageUrl = PageUrl;
+	Params.bIsTransparent = bIsTransparent;
+	Params.ClickThroughAlphaThreshold = ClickThroughAlphaThreshold;
+	Params.AnimationFrameDefer = AnimationFrameDefer;
+	Params.bDelayedUpdate = bDelayedUpdate;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTGameHUD.HasSetupUIGTView
+inline char ACoherentUIGTGameHUD::HasSetupUIGTView() {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTGameHUD.HasSetupUIGTView");
+
+	struct HasSetupUIGTView_Params {
+		
+		char ReturnValue;
+
+	}; HasSetupUIGTView_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTInputActor.ToggleCoherentUIGTInputFocus
+inline void ACoherentUIGTInputActor::ToggleCoherentUIGTInputFocus() {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTInputActor.ToggleCoherentUIGTInputFocus");
+
+	struct ToggleCoherentUIGTInputFocus_Params {
+		
+	}; ToggleCoherentUIGTInputFocus_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTInputActor.SetLineTraceMode
+inline void ACoherentUIGTInputActor::SetLineTraceMode(char Mode) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTInputActor.SetLineTraceMode");
+
+	struct SetLineTraceMode_Params {
+		char Mode;
+	}; SetLineTraceMode_Params Params;
+
+	Params.Mode = Mode;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTInputActor.SetInputPropagationBehaviour
+inline void ACoherentUIGTInputActor::SetInputPropagationBehaviour(char Propagation) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTInputActor.SetInputPropagationBehaviour");
+
+	struct SetInputPropagationBehaviour_Params {
+		char Propagation;
+	}; SetInputPropagationBehaviour_Params Params;
+
+	Params.Propagation = Propagation;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTInputActor.SetCoherentUIGTViewFocus
+inline void ACoherentUIGTInputActor::SetCoherentUIGTViewFocus(struct Unknown NewFocusedView) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTInputActor.SetCoherentUIGTViewFocus");
+
+	struct SetCoherentUIGTViewFocus_Params {
+		struct Unknown NewFocusedView;
+	}; SetCoherentUIGTViewFocus_Params Params;
+
+	Params.NewFocusedView = NewFocusedView;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTInputActor.SetCoherentUIGTInputFocus
+inline void ACoherentUIGTInputActor::SetCoherentUIGTInputFocus(char FocusUI) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTInputActor.SetCoherentUIGTInputFocus");
+
+	struct SetCoherentUIGTInputFocus_Params {
+		char FocusUI;
+	}; SetCoherentUIGTInputFocus_Params Params;
+
+	Params.FocusUI = FocusUI;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTInputActor.IsJoystickInputWhileUIGTIsFocusedAllowed_DEPRECATED
+inline char ACoherentUIGTInputActor::IsJoystickInputWhileUIGTIsFocusedAllowed_DEPRECATED() {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTInputActor.IsJoystickInputWhileUIGTIsFocusedAllowed_DEPRECATED");
+
+	struct IsJoystickInputWhileUIGTIsFocusedAllowed_DEPRECATED_Params {
+		
+		char ReturnValue;
+
+	}; IsJoystickInputWhileUIGTIsFocusedAllowed_DEPRECATED_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTInputActor.IsCoherentUIGTFocused
+inline char ACoherentUIGTInputActor::IsCoherentUIGTFocused() {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTInputActor.IsCoherentUIGTFocused");
+
+	struct IsCoherentUIGTFocused_Params {
+		
+		char ReturnValue;
+
+	}; IsCoherentUIGTFocused_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTInputActor.Initialize
+inline void ACoherentUIGTInputActor::Initialize(char CollisionChannel, char AddressMode, char RaycastQuality, int32_t UVChannel) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTInputActor.Initialize");
+
+	struct Initialize_Params {
+		char CollisionChannel;
+		char AddressMode;
+		char RaycastQuality;
+		int32_t UVChannel;
+	}; Initialize_Params Params;
+
+	Params.CollisionChannel = CollisionChannel;
+	Params.AddressMode = AddressMode;
+	Params.RaycastQuality = RaycastQuality;
+	Params.UVChannel = UVChannel;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTInputActor.GetInputPropagationBehaviour
+inline char ACoherentUIGTInputActor::GetInputPropagationBehaviour() {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTInputActor.GetInputPropagationBehaviour");
+
+	struct GetInputPropagationBehaviour_Params {
+		
+		char ReturnValue;
+
+	}; GetInputPropagationBehaviour_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTInputActor.AlwaysAcceptMouseInput
+inline void ACoherentUIGTInputActor::AlwaysAcceptMouseInput(char bAccept) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTInputActor.AlwaysAcceptMouseInput");
+
+	struct AlwaysAcceptMouseInput_Params {
+		char bAccept;
+	}; AlwaysAcceptMouseInput_Params Params;
+
+	Params.bAccept = bAccept;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTInputActor.AllowJoystickInputWhileUIGTIsFocused_DEPRECATED
+inline void ACoherentUIGTInputActor::AllowJoystickInputWhileUIGTIsFocused_DEPRECATED(char bAllow) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTInputActor.AllowJoystickInputWhileUIGTIsFocused_DEPRECATED");
+
+	struct AllowJoystickInputWhileUIGTIsFocused_DEPRECATED_Params {
+		char bAllow;
+	}; AllowJoystickInputWhileUIGTIsFocused_DEPRECATED_Params Params;
+
+	Params.bAllow = bAllow;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddText
+inline void UCoherentUIGTJSEvent::AddText(struct FText& Text) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddText");
+
+	struct AddText_Params {
+		struct FText& Text;
+	}; AddText_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Text = Params.Text;
+
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddStructArg
+inline void UCoherentUIGTJSEvent::AddStructArg(struct TFieldPath<FUnknown> Arg) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddStructArg");
+
+	struct AddStructArg_Params {
+		struct TFieldPath<FUnknown> Arg;
+	}; AddStructArg_Params Params;
+
+	Params.Arg = Arg;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddString
+inline void UCoherentUIGTJSEvent::AddString(struct FString Str) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddString");
+
+	struct AddString_Params {
+		struct FString Str;
+	}; AddString_Params Params;
+
+	Params.Str = Str;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddObject
+inline void UCoherentUIGTJSEvent::AddObject(struct Unknown Object) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddObject");
+
+	struct AddObject_Params {
+		struct Unknown Object;
+	}; AddObject_Params Params;
+
+	Params.Object = Object;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddName
+inline void UCoherentUIGTJSEvent::AddName(struct FName& Name) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddName");
+
+	struct AddName_Params {
+		struct FName& Name;
+	}; AddName_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Name = Params.Name;
+
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddInt32
+inline void UCoherentUIGTJSEvent::AddInt32(int32_t integer) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddInt32");
+
+	struct AddInt32_Params {
+		int32_t integer;
+	}; AddInt32_Params Params;
+
+	Params.integer = integer;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddFloat
+inline void UCoherentUIGTJSEvent::AddFloat(float fl) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddFloat");
+
+	struct AddFloat_Params {
+		float fl;
+	}; AddFloat_Params Params;
+
+	Params.fl = fl;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddByte
+inline void UCoherentUIGTJSEvent::AddByte(enum class None Byte) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddByte");
+
+	struct AddByte_Params {
+		enum class None Byte;
+	}; AddByte_Params Params;
+
+	Params.Byte = Byte;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddBool
+inline void UCoherentUIGTJSEvent::AddBool(char B) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddBool");
+
+	struct AddBool_Params {
+		char B;
+	}; AddBool_Params Params;
+
+	Params.B = B;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddArray
+inline void UCoherentUIGTJSEvent::AddArray(struct TArray<Unknown>& Array) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddArray");
+
+	struct AddArray_Params {
+		struct TArray<Unknown>& Array;
+	}; AddArray_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Array = Params.Array;
+
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTJSPayload.ReadObject
+inline void UCoherentUIGTJSPayload::ReadObject(int32_t Index, struct Unknown Object) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTJSPayload.ReadObject");
+
+	struct ReadObject_Params {
+		int32_t Index;
+		struct Unknown Object;
+	}; ReadObject_Params Params;
+
+	Params.Index = Index;
+	Params.Object = Object;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTJSPayload.GetString
+inline struct FString UCoherentUIGTJSPayload::GetString(int32_t Index) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTJSPayload.GetString");
+
+	struct GetString_Params {
+		int32_t Index;
+		struct FString ReturnValue;
+
+	}; GetString_Params Params;
+
+	Params.Index = Index;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTJSPayload.GetNumber
+inline float UCoherentUIGTJSPayload::GetNumber(int32_t Index) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTJSPayload.GetNumber");
+
+	struct GetNumber_Params {
+		int32_t Index;
+		float ReturnValue;
+
+	}; GetNumber_Params Params;
+
+	Params.Index = Index;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTJSPayload.GetInt32
+inline int32_t UCoherentUIGTJSPayload::GetInt32(int32_t Index) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTJSPayload.GetInt32");
+
+	struct GetInt32_Params {
+		int32_t Index;
+		int32_t ReturnValue;
+
+	}; GetInt32_Params Params;
+
+	Params.Index = Index;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTJSPayload.GetBool
+inline char UCoherentUIGTJSPayload::GetBool(int32_t Index) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTJSPayload.GetBool");
+
+	struct GetBool_Params {
+		int32_t Index;
+		char ReturnValue;
+
+	}; GetBool_Params Params;
+
+	Params.Index = Index;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTLiveView.OnLiveViewSizeRequest
+inline void UCoherentUIGTLiveView::OnLiveViewSizeRequest(struct Unknown baseComponent, struct FString Name, int32_t& Width, int32_t& Height) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTLiveView.OnLiveViewSizeRequest");
+
+	struct OnLiveViewSizeRequest_Params {
+		struct Unknown baseComponent;
+		struct FString Name;
+		int32_t& Width;
+		int32_t& Height;
+	}; OnLiveViewSizeRequest_Params Params;
+
+	Params.baseComponent = baseComponent;
+	Params.Name = Name;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Width = Params.Width;
+	Height = Params.Height;
+
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTWidget.UpdateWholeDataModelFromStruct
+inline void UCoherentUIGTWidget::UpdateWholeDataModelFromStruct(struct TFieldPath<FUnknown> Arg) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.UpdateWholeDataModelFromStruct");
+
+	struct UpdateWholeDataModelFromStruct_Params {
+		struct TFieldPath<FUnknown> Arg;
+	}; UpdateWholeDataModelFromStruct_Params Params;
+
+	Params.Arg = Arg;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTWidget.UpdateWholeDataModelFromObject
+inline void UCoherentUIGTWidget::UpdateWholeDataModelFromObject(struct Unknown Model) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.UpdateWholeDataModelFromObject");
+
+	struct UpdateWholeDataModelFromObject_Params {
+		struct Unknown Model;
+	}; UpdateWholeDataModelFromObject_Params Params;
+
+	Params.Model = Model;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTWidget.TriggerJSEvent
+inline void UCoherentUIGTWidget::TriggerJSEvent(struct FString Name, struct Unknown eventData) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.TriggerJSEvent");
+
+	struct TriggerJSEvent_Params {
+		struct FString Name;
+		struct Unknown eventData;
+	}; TriggerJSEvent_Params Params;
+
+	Params.Name = Name;
+	Params.eventData = eventData;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTWidget.SynchronizeModels
+inline void UCoherentUIGTWidget::SynchronizeModels() {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.SynchronizeModels");
+
+	struct SynchronizeModels_Params {
+		
+	}; SynchronizeModels_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTWidget.ShowPaintRects
+inline void UCoherentUIGTWidget::ShowPaintRects(char Show) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.ShowPaintRects");
+
+	struct ShowPaintRects_Params {
+		char Show;
+	}; ShowPaintRects_Params Params;
+
+	Params.Show = Show;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTWidget.SetSkipHittestInputGroupEmpty
+inline void UCoherentUIGTWidget::SetSkipHittestInputGroupEmpty(char bState) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.SetSkipHittestInputGroupEmpty");
+
+	struct SetSkipHittestInputGroupEmpty_Params {
+		char bState;
+	}; SetSkipHittestInputGroupEmpty_Params Params;
+
+	Params.bState = bState;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTWidget.SetRender
+inline void UCoherentUIGTWidget::SetRender(char bState) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.SetRender");
+
+	struct SetRender_Params {
+		char bState;
+	}; SetRender_Params Params;
+
+	Params.bState = bState;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTWidget.SetRefreshTime
+inline void UCoherentUIGTWidget::SetRefreshTime(float Time) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.SetRefreshTime");
+
+	struct SetRefreshTime_Params {
+		float Time;
+	}; SetRefreshTime_Params Params;
+
+	Params.Time = Time;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTWidget.SetReceiveInput
+inline void UCoherentUIGTWidget::SetReceiveInput(char Input) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.SetReceiveInput");
+
+	struct SetReceiveInput_Params {
+		char Input;
+	}; SetReceiveInput_Params Params;
+
+	Params.Input = Input;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTWidget.SetPreviewKeyEventInherit
+inline void UCoherentUIGTWidget::SetPreviewKeyEventInherit(char bState) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.SetPreviewKeyEventInherit");
+
+	struct SetPreviewKeyEventInherit_Params {
+		char bState;
+	}; SetPreviewKeyEventInherit_Params Params;
+
+	Params.bState = bState;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTWidget.SetOffscreenCanvasRendering
+inline void UCoherentUIGTWidget::SetOffscreenCanvasRendering(char State) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.SetOffscreenCanvasRendering");
+
+	struct SetOffscreenCanvasRendering_Params {
+		char State;
+	}; SetOffscreenCanvasRendering_Params Params;
+
+	Params.State = State;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTWidget.SetInputPropagationBehaviour
+inline void UCoherentUIGTWidget::SetInputPropagationBehaviour(char Propagation) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.SetInputPropagationBehaviour");
+
+	struct SetInputPropagationBehaviour_Params {
+		char Propagation;
+	}; SetInputPropagationBehaviour_Params Params;
+
+	Params.Propagation = Propagation;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTWidget.SetHideCursorDuringCapture
+inline void UCoherentUIGTWidget::SetHideCursorDuringCapture(char bState) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.SetHideCursorDuringCapture");
+
+	struct SetHideCursorDuringCapture_Params {
+		char bState;
+	}; SetHideCursorDuringCapture_Params Params;
+
+	Params.bState = bState;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTWidget.SetClickThroughAlphaThreshold
+inline void UCoherentUIGTWidget::SetClickThroughAlphaThreshold(float threshold) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.SetClickThroughAlphaThreshold");
+
+	struct SetClickThroughAlphaThreshold_Params {
+		float threshold;
+	}; SetClickThroughAlphaThreshold_Params Params;
+
+	Params.threshold = threshold;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTWidget.Reload
+inline void UCoherentUIGTWidget::Reload() {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.Reload");
+
+	struct Reload_Params {
+		
+	}; Reload_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTWidget.Redraw
+inline void UCoherentUIGTWidget::Redraw() {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.Redraw");
+
+	struct Redraw_Params {
+		
+	}; Redraw_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// DelegateFunction CoherentUIGTPlugin.CoherentUIGTWidget.MouseEventDelegate__DelegateSignature
+inline void UCoherentUIGTWidget::MouseEventDelegate__DelegateSignature(struct Unknown& MouseEvent) {
+	static auto fn = UObject::FindObject<UFunction>("DelegateFunction CoherentUIGTPlugin.CoherentUIGTWidget.MouseEventDelegate__DelegateSignature");
+
+	struct MouseEventDelegate__DelegateSignature_Params {
+		struct Unknown& MouseEvent;
+	}; MouseEventDelegate__DelegateSignature_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	MouseEvent = Params.MouseEvent;
+
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTWidget.Load
+inline void UCoherentUIGTWidget::Load(struct FString Path) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.Load");
+
+	struct Load_Params {
+		struct FString Path;
+	}; Load_Params Params;
+
+	Params.Path = Path;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// DelegateFunction CoherentUIGTPlugin.CoherentUIGTWidget.KeyUpDelegate__DelegateSignature
+inline void UCoherentUIGTWidget::KeyUpDelegate__DelegateSignature(struct Unknown& Key) {
+	static auto fn = UObject::FindObject<UFunction>("DelegateFunction CoherentUIGTPlugin.CoherentUIGTWidget.KeyUpDelegate__DelegateSignature");
+
+	struct KeyUpDelegate__DelegateSignature_Params {
+		struct Unknown& Key;
+	}; KeyUpDelegate__DelegateSignature_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Key = Params.Key;
+
+}
+
+// DelegateFunction CoherentUIGTPlugin.CoherentUIGTWidget.KeyDownDelegate__DelegateSignature
+inline void UCoherentUIGTWidget::KeyDownDelegate__DelegateSignature(struct Unknown& Key) {
+	static auto fn = UObject::FindObject<UFunction>("DelegateFunction CoherentUIGTPlugin.CoherentUIGTWidget.KeyDownDelegate__DelegateSignature");
+
+	struct KeyDownDelegate__DelegateSignature_Params {
+		struct Unknown& Key;
+	}; KeyDownDelegate__DelegateSignature_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Key = Params.Key;
+
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTWidget.IsTransparent
+inline char UCoherentUIGTWidget::IsTransparent() {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.IsTransparent");
+
+	struct IsTransparent_Params {
+		
+		char ReturnValue;
+
+	}; IsTransparent_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTWidget.IsReadyToCreateView
+inline char UCoherentUIGTWidget::IsReadyToCreateView() {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.IsReadyToCreateView");
+
+	struct IsReadyToCreateView_Params {
+		
+		char ReturnValue;
+
+	}; IsReadyToCreateView_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTWidget.IsReadyForBindings
+inline char UCoherentUIGTWidget::IsReadyForBindings() {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.IsReadyForBindings");
+
+	struct IsReadyForBindings_Params {
+		
+		char ReturnValue;
+
+	}; IsReadyForBindings_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTWidget.IsErrorPage
+inline char UCoherentUIGTWidget::IsErrorPage() {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.IsErrorPage");
+
+	struct IsErrorPage_Params {
+		
+		char ReturnValue;
+
+	}; IsErrorPage_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTWidget.IsDocumentReady
+inline char UCoherentUIGTWidget::IsDocumentReady() {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.IsDocumentReady");
+
+	struct IsDocumentReady_Params {
+		
+		char ReturnValue;
+
+	}; IsDocumentReady_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTWidget.HasRequestedView
+inline char UCoherentUIGTWidget::HasRequestedView() {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.HasRequestedView");
+
+	struct HasRequestedView_Params {
+		
+		char ReturnValue;
+
+	}; HasRequestedView_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTWidget.GetRenderTexture
+inline struct Unknown UCoherentUIGTWidget::GetRenderTexture() {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.GetRenderTexture");
+
+	struct GetRenderTexture_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetRenderTexture_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTWidget.GetInputPropagationBehaviour
+inline char UCoherentUIGTWidget::GetInputPropagationBehaviour() {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.GetInputPropagationBehaviour");
+
+	struct GetInputPropagationBehaviour_Params {
+		
+		char ReturnValue;
+
+	}; GetInputPropagationBehaviour_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTWidget.GetDPIScaleSize
+inline struct Unknown UCoherentUIGTWidget::GetDPIScaleSize() {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.GetDPIScaleSize");
+
+	struct GetDPIScaleSize_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetDPIScaleSize_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTWidget.GetDPIScaleBasedOnSize
+inline float UCoherentUIGTWidget::GetDPIScaleBasedOnSize() {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.GetDPIScaleBasedOnSize");
+
+	struct GetDPIScaleBasedOnSize_Params {
+		
+		float ReturnValue;
+
+	}; GetDPIScaleBasedOnSize_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTWidget.GetClickThroughAlphaThreshold
+inline float UCoherentUIGTWidget::GetClickThroughAlphaThreshold() {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.GetClickThroughAlphaThreshold");
+
+	struct GetClickThroughAlphaThreshold_Params {
+		
+		float ReturnValue;
+
+	}; GetClickThroughAlphaThreshold_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTWidget.FinishLoadSkip
+inline void UCoherentUIGTWidget::FinishLoadSkip(char bState) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.FinishLoadSkip");
+
+	struct FinishLoadSkip_Params {
+		char bState;
+	}; FinishLoadSkip_Params Params;
+
+	Params.bState = bState;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTWidget.EndDebugFrameSave
+inline void UCoherentUIGTWidget::EndDebugFrameSave() {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.EndDebugFrameSave");
+
+	struct EndDebugFrameSave_Params {
+		
+	}; EndDebugFrameSave_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTWidget.DebugSaveNextFrame
+inline void UCoherentUIGTWidget::DebugSaveNextFrame() {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.DebugSaveNextFrame");
+
+	struct DebugSaveNextFrame_Params {
+		
+	}; DebugSaveNextFrame_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTWidget.CreateJSEvent
+inline struct Unknown UCoherentUIGTWidget::CreateJSEvent() {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.CreateJSEvent");
+
+	struct CreateJSEvent_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; CreateJSEvent_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTWidget.CreateDataModelFromStruct
+inline void UCoherentUIGTWidget::CreateDataModelFromStruct(struct FString Name, struct TFieldPath<FUnknown> Arg) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.CreateDataModelFromStruct");
+
+	struct CreateDataModelFromStruct_Params {
+		struct FString Name;
+		struct TFieldPath<FUnknown> Arg;
+	}; CreateDataModelFromStruct_Params Params;
+
+	Params.Name = Name;
+	Params.Arg = Arg;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTWidget.CreateDataModelFromObject
+inline void UCoherentUIGTWidget::CreateDataModelFromObject(struct FString Name, struct Unknown Model) {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.CreateDataModelFromObject");
+
+	struct CreateDataModelFromObject_Params {
+		struct FString Name;
+		struct Unknown Model;
+	}; CreateDataModelFromObject_Params Params;
+
+	Params.Name = Name;
+	Params.Model = Model;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CoherentUIGTPlugin.CoherentUIGTWidget.BeginDebugFrameSave
+inline void UCoherentUIGTWidget::BeginDebugFrameSave() {
+	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.BeginDebugFrameSave");
+
+	struct BeginDebugFrameSave_Params {
+		
+	}; BeginDebugFrameSave_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// DelegateFunction CoherentUIGTPlugin.CoherentUIGTWidget.AKAudioEventDelegate__DelegateSignature
+inline void UCoherentUIGTWidget::AKAudioEventDelegate__DelegateSignature(struct FString EventName) {
+	static auto fn = UObject::FindObject<UFunction>("DelegateFunction CoherentUIGTPlugin.CoherentUIGTWidget.AKAudioEventDelegate__DelegateSignature");
+
+	struct AKAudioEventDelegate__DelegateSignature_Params {
+		struct FString EventName;
+	}; AKAudioEventDelegate__DelegateSignature_Params Params;
+
+	Params.EventName = EventName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
 

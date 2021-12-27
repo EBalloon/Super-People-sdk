@@ -309,8 +309,8 @@ struct FProfileParameterDat {
 	struct TArray<Unknown> ProjectorParameters; // 0x60 (16)
 };
 
-// ScriptStruct CustomizableObject.CustomizableObjectProjector
-struct FCustomizableObjectProjector {
+// ScriptStruct CustomizableObject.CustomizableObjectProjectorParameterValue
+struct FCustomizableObjectProjectorParameterValue {
 	struct FString ParameterName; // 0x0 (16)
 	struct Unknown Value; // 0x10 (56)
 	struct FString UID; // 0x48 (16)
@@ -404,4 +404,1168 @@ struct FIntegerParameterUIData {
 	struct FString Name; // 0x0 (16)
 	struct Unknown ParamUIMetadata; // 0x10 (240)
 };
+
+// Function CustomizableObject.CustomizableObject.UnloadMaskOutCache
+inline void UCustomizableObject::UnloadMaskOutCache() {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObject.UnloadMaskOutCache");
+
+	struct UnloadMaskOutCache_Params {
+		
+	}; UnloadMaskOutCache_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CustomizableObject.CustomizableObject.LoadMaskOutCache
+inline void UCustomizableObject::LoadMaskOutCache() {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObject.LoadMaskOutCache");
+
+	struct LoadMaskOutCache_Params {
+		
+	}; LoadMaskOutCache_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CustomizableObject.CustomizableObject.GetStateUIMetadataFromIndex
+inline struct Unknown UCustomizableObject::GetStateUIMetadataFromIndex(int32_t StateIndex) {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObject.GetStateUIMetadataFromIndex");
+
+	struct GetStateUIMetadataFromIndex_Params {
+		int32_t StateIndex;
+		struct Unknown ReturnValue;
+
+	}; GetStateUIMetadataFromIndex_Params Params;
+
+	Params.StateIndex = StateIndex;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableObject.GetStateUIMetadata
+inline struct Unknown UCustomizableObject::GetStateUIMetadata(struct FString StateName) {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObject.GetStateUIMetadata");
+
+	struct GetStateUIMetadata_Params {
+		struct FString StateName;
+		struct Unknown ReturnValue;
+
+	}; GetStateUIMetadata_Params Params;
+
+	Params.StateName = StateName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableObject.GetStateParameterName
+inline struct FString UCustomizableObject::GetStateParameterName(struct FString StateName, int32_t ParameterIndex) {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObject.GetStateParameterName");
+
+	struct GetStateParameterName_Params {
+		struct FString StateName;
+		int32_t ParameterIndex;
+		struct FString ReturnValue;
+
+	}; GetStateParameterName_Params Params;
+
+	Params.StateName = StateName;
+	Params.ParameterIndex = ParameterIndex;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableObject.GetStateParameterCount
+inline int32_t UCustomizableObject::GetStateParameterCount(struct FString StateName) {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObject.GetStateParameterCount");
+
+	struct GetStateParameterCount_Params {
+		struct FString StateName;
+		int32_t ReturnValue;
+
+	}; GetStateParameterCount_Params Params;
+
+	Params.StateName = StateName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableObject.GetStateName
+inline struct FString UCustomizableObject::GetStateName(int32_t StateIndex) {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObject.GetStateName");
+
+	struct GetStateName_Params {
+		int32_t StateIndex;
+		struct FString ReturnValue;
+
+	}; GetStateName_Params Params;
+
+	Params.StateIndex = StateIndex;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableObject.GetStateCount
+inline int32_t UCustomizableObject::GetStateCount() {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObject.GetStateCount");
+
+	struct GetStateCount_Params {
+		
+		int32_t ReturnValue;
+
+	}; GetStateCount_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableObject.GetParameterUIMetadataFromIndex
+inline struct Unknown UCustomizableObject::GetParameterUIMetadataFromIndex(int32_t ParamIndex) {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObject.GetParameterUIMetadataFromIndex");
+
+	struct GetParameterUIMetadataFromIndex_Params {
+		int32_t ParamIndex;
+		struct Unknown ReturnValue;
+
+	}; GetParameterUIMetadataFromIndex_Params Params;
+
+	Params.ParamIndex = ParamIndex;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableObject.GetParameterUIMetadata
+inline struct Unknown UCustomizableObject::GetParameterUIMetadata(struct FString ParamName) {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObject.GetParameterUIMetadata");
+
+	struct GetParameterUIMetadata_Params {
+		struct FString ParamName;
+		struct Unknown ReturnValue;
+
+	}; GetParameterUIMetadata_Params Params;
+
+	Params.ParamName = ParamName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableObject.GetParameterTypeByName
+inline enum class Unknow UCustomizableObject::GetParameterTypeByName(struct FString Name) {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObject.GetParameterTypeByName");
+
+	struct GetParameterTypeByName_Params {
+		struct FString Name;
+		enum class Unknow ReturnValue;
+
+	}; GetParameterTypeByName_Params Params;
+
+	Params.Name = Name;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableObject.GetParameterType
+inline enum class Unknow UCustomizableObject::GetParameterType(int32_t ParamIndex) {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObject.GetParameterType");
+
+	struct GetParameterType_Params {
+		int32_t ParamIndex;
+		enum class Unknow ReturnValue;
+
+	}; GetParameterType_Params Params;
+
+	Params.ParamIndex = ParamIndex;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableObject.GetParameterName
+inline struct FString UCustomizableObject::GetParameterName(int32_t ParamIndex) {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObject.GetParameterName");
+
+	struct GetParameterName_Params {
+		int32_t ParamIndex;
+		struct FString ReturnValue;
+
+	}; GetParameterName_Params Params;
+
+	Params.ParamIndex = ParamIndex;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableObject.GetParameterDescriptionCount
+inline int32_t UCustomizableObject::GetParameterDescriptionCount(struct FString ParamName) {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObject.GetParameterDescriptionCount");
+
+	struct GetParameterDescriptionCount_Params {
+		struct FString ParamName;
+		int32_t ReturnValue;
+
+	}; GetParameterDescriptionCount_Params Params;
+
+	Params.ParamName = ParamName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableObject.GetParameterCount
+inline int32_t UCustomizableObject::GetParameterCount() {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObject.GetParameterCount");
+
+	struct GetParameterCount_Params {
+		
+		int32_t ReturnValue;
+
+	}; GetParameterCount_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableObject.GetIntParameterNumOptions
+inline int32_t UCustomizableObject::GetIntParameterNumOptions(int32_t ParamIndex) {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObject.GetIntParameterNumOptions");
+
+	struct GetIntParameterNumOptions_Params {
+		int32_t ParamIndex;
+		int32_t ReturnValue;
+
+	}; GetIntParameterNumOptions_Params Params;
+
+	Params.ParamIndex = ParamIndex;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableObject.GetIntParameterAvailableOption
+inline struct FString UCustomizableObject::GetIntParameterAvailableOption(int32_t ParamIndex, int32_t K) {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObject.GetIntParameterAvailableOption");
+
+	struct GetIntParameterAvailableOption_Params {
+		int32_t ParamIndex;
+		int32_t K;
+		struct FString ReturnValue;
+
+	}; GetIntParameterAvailableOption_Params Params;
+
+	Params.ParamIndex = ParamIndex;
+	Params.K = K;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableObject.FindParameter
+inline int32_t UCustomizableObject::FindParameter(struct FString Name) {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObject.FindParameter");
+
+	struct FindParameter_Params {
+		struct FString Name;
+		int32_t ReturnValue;
+
+	}; FindParameter_Params Params;
+
+	Params.Name = Name;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableObject.CreateInstance
+inline struct Unknown UCustomizableObject::CreateInstance() {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObject.CreateInstance");
+
+	struct CreateInstance_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; CreateInstance_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableObjectInstance.UpdateSkeletalMeshAsync
+inline void UCustomizableObjectInstance::UpdateSkeletalMeshAsync(char bIgnoreCloseDist, char bForceHighPriority) {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.UpdateSkeletalMeshAsync");
+
+	struct UpdateSkeletalMeshAsync_Params {
+		char bIgnoreCloseDist;
+		char bForceHighPriority;
+	}; UpdateSkeletalMeshAsync_Params Params;
+
+	Params.bIgnoreCloseDist = bIgnoreCloseDist;
+	Params.bForceHighPriority = bForceHighPriority;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CustomizableObject.CustomizableObjectInstance.SetVectorParameterSelectedOption
+inline void UCustomizableObjectInstance::SetVectorParameterSelectedOption(struct FString VectorParamName, struct Unknown VectorValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.SetVectorParameterSelectedOption");
+
+	struct SetVectorParameterSelectedOption_Params {
+		struct FString VectorParamName;
+		struct Unknown VectorValue;
+	}; SetVectorParameterSelectedOption_Params Params;
+
+	Params.VectorParamName = VectorParamName;
+	Params.VectorValue = VectorValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CustomizableObject.CustomizableObjectInstance.SetRandomValues
+inline void UCustomizableObjectInstance::SetRandomValues() {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.SetRandomValues");
+
+	struct SetRandomValues_Params {
+		
+	}; SetRandomValues_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CustomizableObject.CustomizableObjectInstance.SetProjectorValue
+inline void UCustomizableObjectInstance::SetProjectorValue(struct FString ProjectorParamName, struct Unknown& Pos, struct Unknown& Direction, struct Unknown& Up, struct Unknown& Scale, float Angle, int32_t RangeIndex) {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.SetProjectorValue");
+
+	struct SetProjectorValue_Params {
+		struct FString ProjectorParamName;
+		struct Unknown& Pos;
+		struct Unknown& Direction;
+		struct Unknown& Up;
+		struct Unknown& Scale;
+		float Angle;
+		int32_t RangeIndex;
+	}; SetProjectorValue_Params Params;
+
+	Params.ProjectorParamName = ProjectorParamName;
+	Params.Angle = Angle;
+	Params.RangeIndex = RangeIndex;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Pos = Params.Pos;
+	Direction = Params.Direction;
+	Up = Params.Up;
+	Scale = Params.Scale;
+
+}
+
+// Function CustomizableObject.CustomizableObjectInstance.SetIntParameterSelectedOption
+inline void UCustomizableObjectInstance::SetIntParameterSelectedOption(struct FString ParamName, struct FString SelectedOptionName, int32_t RangeIndex) {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.SetIntParameterSelectedOption");
+
+	struct SetIntParameterSelectedOption_Params {
+		struct FString ParamName;
+		struct FString SelectedOptionName;
+		int32_t RangeIndex;
+	}; SetIntParameterSelectedOption_Params Params;
+
+	Params.ParamName = ParamName;
+	Params.SelectedOptionName = SelectedOptionName;
+	Params.RangeIndex = RangeIndex;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CustomizableObject.CustomizableObjectInstance.SetFloatParameterSelectedOption
+inline void UCustomizableObjectInstance::SetFloatParameterSelectedOption(struct FString FloatParamName, float FloatValue, int32_t RangeIndex) {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.SetFloatParameterSelectedOption");
+
+	struct SetFloatParameterSelectedOption_Params {
+		struct FString FloatParamName;
+		float FloatValue;
+		int32_t RangeIndex;
+	}; SetFloatParameterSelectedOption_Params Params;
+
+	Params.FloatParamName = FloatParamName;
+	Params.FloatValue = FloatValue;
+	Params.RangeIndex = RangeIndex;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CustomizableObject.CustomizableObjectInstance.SetCurrentState
+inline void UCustomizableObjectInstance::SetCurrentState(struct FString StateName) {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.SetCurrentState");
+
+	struct SetCurrentState_Params {
+		struct FString StateName;
+	}; SetCurrentState_Params Params;
+
+	Params.StateName = StateName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CustomizableObject.CustomizableObjectInstance.SetColorParameterSelectedOption
+inline void UCustomizableObjectInstance::SetColorParameterSelectedOption(struct FString ColorParamName, struct Unknown ColorValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.SetColorParameterSelectedOption");
+
+	struct SetColorParameterSelectedOption_Params {
+		struct FString ColorParamName;
+		struct Unknown ColorValue;
+	}; SetColorParameterSelectedOption_Params Params;
+
+	Params.ColorParamName = ColorParamName;
+	Params.ColorValue = ColorValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CustomizableObject.CustomizableObjectInstance.SetBoolParameterSelectedOption
+inline void UCustomizableObjectInstance::SetBoolParameterSelectedOption(struct FString BoolParamName, char BoolValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.SetBoolParameterSelectedOption");
+
+	struct SetBoolParameterSelectedOption_Params {
+		struct FString BoolParamName;
+		char BoolValue;
+	}; SetBoolParameterSelectedOption_Params Params;
+
+	Params.BoolParamName = BoolParamName;
+	Params.BoolValue = BoolValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CustomizableObject.CustomizableObjectInstance.SetAllParameterToDefault
+inline void UCustomizableObjectInstance::SetAllParameterToDefault() {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.SetAllParameterToDefault");
+
+	struct SetAllParameterToDefault_Params {
+		
+	}; SetAllParameterToDefault_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CustomizableObject.CustomizableObjectInstance.SetAllIntParameterToDefault2
+inline void UCustomizableObjectInstance::SetAllIntParameterToDefault2() {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.SetAllIntParameterToDefault2");
+
+	struct SetAllIntParameterToDefault2_Params {
+		
+	}; SetAllIntParameterToDefault2_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CustomizableObject.CustomizableObjectInstance.SetAllIntParameterToDefault
+inline void UCustomizableObjectInstance::SetAllIntParameterToDefault() {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.SetAllIntParameterToDefault");
+
+	struct SetAllIntParameterToDefault_Params {
+		
+	}; SetAllIntParameterToDefault_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CustomizableObject.CustomizableObjectInstance.IsParamMultidimensional
+inline char UCustomizableObjectInstance::IsParamMultidimensional(struct FString ParamName) {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.IsParamMultidimensional");
+
+	struct IsParamMultidimensional_Params {
+		struct FString ParamName;
+		char ReturnValue;
+
+	}; IsParamMultidimensional_Params Params;
+
+	Params.ParamName = ParamName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableObjectInstance.IsParameterRelevant
+inline char UCustomizableObjectInstance::IsParameterRelevant(struct FString ParamName) {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.IsParameterRelevant");
+
+	struct IsParameterRelevant_Params {
+		struct FString ParamName;
+		char ReturnValue;
+
+	}; IsParameterRelevant_Params Params;
+
+	Params.ParamName = ParamName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableObjectInstance.GetProjectorValue
+inline void UCustomizableObjectInstance::GetProjectorValue(struct FString ProjectorParamName, struct Unknown& Pos, struct Unknown& Direction, struct Unknown& Up, struct Unknown& Scale, float& Angle, enum class Unknow& Type, int32_t RangeIndex) {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.GetProjectorValue");
+
+	struct GetProjectorValue_Params {
+		struct FString ProjectorParamName;
+		struct Unknown& Pos;
+		struct Unknown& Direction;
+		struct Unknown& Up;
+		struct Unknown& Scale;
+		float& Angle;
+		enum class Unknow& Type;
+		int32_t RangeIndex;
+	}; GetProjectorValue_Params Params;
+
+	Params.ProjectorParamName = ProjectorParamName;
+	Params.RangeIndex = RangeIndex;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Pos = Params.Pos;
+	Direction = Params.Direction;
+	Up = Params.Up;
+	Scale = Params.Scale;
+	Angle = Params.Angle;
+	Type = Params.Type;
+
+}
+
+// Function CustomizableObject.CustomizableObjectInstance.GetProjectorUp
+inline struct Unknown UCustomizableObjectInstance::GetProjectorUp(struct FString ParamName) {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.GetProjectorUp");
+
+	struct GetProjectorUp_Params {
+		struct FString ParamName;
+		struct Unknown ReturnValue;
+
+	}; GetProjectorUp_Params Params;
+
+	Params.ParamName = ParamName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableObjectInstance.GetProjectorScale
+inline struct Unknown UCustomizableObjectInstance::GetProjectorScale(struct FString ParamName) {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.GetProjectorScale");
+
+	struct GetProjectorScale_Params {
+		struct FString ParamName;
+		struct Unknown ReturnValue;
+
+	}; GetProjectorScale_Params Params;
+
+	Params.ParamName = ParamName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableObjectInstance.GetProjectorPosition
+inline struct Unknown UCustomizableObjectInstance::GetProjectorPosition(struct FString ParamName) {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.GetProjectorPosition");
+
+	struct GetProjectorPosition_Params {
+		struct FString ParamName;
+		struct Unknown ReturnValue;
+
+	}; GetProjectorPosition_Params Params;
+
+	Params.ParamName = ParamName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableObjectInstance.GetProjectorParameterType
+inline enum class Unknow UCustomizableObjectInstance::GetProjectorParameterType(struct FString ParamName, int32_t RangeIndex) {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.GetProjectorParameterType");
+
+	struct GetProjectorParameterType_Params {
+		struct FString ParamName;
+		int32_t RangeIndex;
+		enum class Unknow ReturnValue;
+
+	}; GetProjectorParameterType_Params Params;
+
+	Params.ParamName = ParamName;
+	Params.RangeIndex = RangeIndex;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableObjectInstance.GetProjectorDirection
+inline struct Unknown UCustomizableObjectInstance::GetProjectorDirection(struct FString ParamName) {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.GetProjectorDirection");
+
+	struct GetProjectorDirection_Params {
+		struct FString ParamName;
+		struct Unknown ReturnValue;
+
+	}; GetProjectorDirection_Params Params;
+
+	Params.ParamName = ParamName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableObjectInstance.GetProjectorAngle
+inline float UCustomizableObjectInstance::GetProjectorAngle(struct FString ParamName) {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.GetProjectorAngle");
+
+	struct GetProjectorAngle_Params {
+		struct FString ParamName;
+		float ReturnValue;
+
+	}; GetProjectorAngle_Params Params;
+
+	Params.ParamName = ParamName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableObjectInstance.GetParameterDescription
+inline struct Unknown UCustomizableObjectInstance::GetParameterDescription(struct FString ParamName, int32_t DescIndex) {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.GetParameterDescription");
+
+	struct GetParameterDescription_Params {
+		struct FString ParamName;
+		int32_t DescIndex;
+		struct Unknown ReturnValue;
+
+	}; GetParameterDescription_Params Params;
+
+	Params.ParamName = ParamName;
+	Params.DescIndex = DescIndex;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableObjectInstance.GetIntParameterSelectedOption
+inline struct FString UCustomizableObjectInstance::GetIntParameterSelectedOption(struct FString ParamName, int32_t RangeIndex) {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.GetIntParameterSelectedOption");
+
+	struct GetIntParameterSelectedOption_Params {
+		struct FString ParamName;
+		int32_t RangeIndex;
+		struct FString ReturnValue;
+
+	}; GetIntParameterSelectedOption_Params Params;
+
+	Params.ParamName = ParamName;
+	Params.RangeIndex = RangeIndex;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableObjectInstance.GetFloatParameterSelectedOption
+inline float UCustomizableObjectInstance::GetFloatParameterSelectedOption(struct FString FloatParamName, int32_t RangeIndex) {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.GetFloatParameterSelectedOption");
+
+	struct GetFloatParameterSelectedOption_Params {
+		struct FString FloatParamName;
+		int32_t RangeIndex;
+		float ReturnValue;
+
+	}; GetFloatParameterSelectedOption_Params Params;
+
+	Params.FloatParamName = FloatParamName;
+	Params.RangeIndex = RangeIndex;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableObjectInstance.GetCurrentState
+inline struct FString UCustomizableObjectInstance::GetCurrentState() {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.GetCurrentState");
+
+	struct GetCurrentState_Params {
+		
+		struct FString ReturnValue;
+
+	}; GetCurrentState_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableObjectInstance.GetColorParameterSelectedOption
+inline struct Unknown UCustomizableObjectInstance::GetColorParameterSelectedOption(struct FString ColorParamName) {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.GetColorParameterSelectedOption");
+
+	struct GetColorParameterSelectedOption_Params {
+		struct FString ColorParamName;
+		struct Unknown ReturnValue;
+
+	}; GetColorParameterSelectedOption_Params Params;
+
+	Params.ColorParamName = ColorParamName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableObjectInstance.GetBoolParameterSelectedOption
+inline char UCustomizableObjectInstance::GetBoolParameterSelectedOption(struct FString BoolParamName) {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.GetBoolParameterSelectedOption");
+
+	struct GetBoolParameterSelectedOption_Params {
+		struct FString BoolParamName;
+		char ReturnValue;
+
+	}; GetBoolParameterSelectedOption_Params Params;
+
+	Params.BoolParamName = BoolParamName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableObjectInstance.FindVectorParameterNameIndex
+inline int32_t UCustomizableObjectInstance::FindVectorParameterNameIndex(struct FString ParamName) {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.FindVectorParameterNameIndex");
+
+	struct FindVectorParameterNameIndex_Params {
+		struct FString ParamName;
+		int32_t ReturnValue;
+
+	}; FindVectorParameterNameIndex_Params Params;
+
+	Params.ParamName = ParamName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableObjectInstance.FindProjectorParameterNameIndex
+inline int32_t UCustomizableObjectInstance::FindProjectorParameterNameIndex(struct FString ParamName) {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.FindProjectorParameterNameIndex");
+
+	struct FindProjectorParameterNameIndex_Params {
+		struct FString ParamName;
+		int32_t ReturnValue;
+
+	}; FindProjectorParameterNameIndex_Params Params;
+
+	Params.ParamName = ParamName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableObjectInstance.FindIntParameterNameIndex
+inline int32_t UCustomizableObjectInstance::FindIntParameterNameIndex(struct FString ParamName) {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.FindIntParameterNameIndex");
+
+	struct FindIntParameterNameIndex_Params {
+		struct FString ParamName;
+		int32_t ReturnValue;
+
+	}; FindIntParameterNameIndex_Params Params;
+
+	Params.ParamName = ParamName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableObjectInstance.FindFloatParameterNameIndex
+inline int32_t UCustomizableObjectInstance::FindFloatParameterNameIndex(struct FString ParamName) {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.FindFloatParameterNameIndex");
+
+	struct FindFloatParameterNameIndex_Params {
+		struct FString ParamName;
+		int32_t ReturnValue;
+
+	}; FindFloatParameterNameIndex_Params Params;
+
+	Params.ParamName = ParamName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableObjectInstance.FindBoolParameterNameIndex
+inline int32_t UCustomizableObjectInstance::FindBoolParameterNameIndex(struct FString ParamName) {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.FindBoolParameterNameIndex");
+
+	struct FindBoolParameterNameIndex_Params {
+		struct FString ParamName;
+		int32_t ReturnValue;
+
+	}; FindBoolParameterNameIndex_Params Params;
+
+	Params.ParamName = ParamName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableObjectInstance.Copy
+inline void UCustomizableObjectInstance::Copy(struct Unknown Target) {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.Copy");
+
+	struct Copy_Params {
+		struct Unknown Target;
+	}; Copy_Params Params;
+
+	Params.Target = Target;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CustomizableObject.CustomizableObjectInstance.Clone
+inline struct Unknown UCustomizableObjectInstance::Clone() {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.Clone");
+
+	struct Clone_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; Clone_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableObjectSystem.SetReleaseMutableTexturesImmediately
+inline void UCustomizableObjectSystem::SetReleaseMutableTexturesImmediately(char bReleaseTextures) {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectSystem.SetReleaseMutableTexturesImmediately");
+
+	struct SetReleaseMutableTexturesImmediately_Params {
+		char bReleaseTextures;
+	}; SetReleaseMutableTexturesImmediately_Params Params;
+
+	Params.bReleaseTextures = bReleaseTextures;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CustomizableObject.CustomizableObjectSystem.GetTotalInstances
+inline int32_t UCustomizableObjectSystem::GetTotalInstances() {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectSystem.GetTotalInstances");
+
+	struct GetTotalInstances_Params {
+		
+		int32_t ReturnValue;
+
+	}; GetTotalInstances_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableObjectSystem.GetTextureMemoryUsed
+inline int32_t UCustomizableObjectSystem::GetTextureMemoryUsed() {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectSystem.GetTextureMemoryUsed");
+
+	struct GetTextureMemoryUsed_Params {
+		
+		int32_t ReturnValue;
+
+	}; GetTextureMemoryUsed_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableObjectSystem.GetPluginVersion
+inline struct FString UCustomizableObjectSystem::GetPluginVersion() {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectSystem.GetPluginVersion");
+
+	struct GetPluginVersion_Params {
+		
+		struct FString ReturnValue;
+
+	}; GetPluginVersion_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableObjectSystem.GetNumPendingInstances
+inline int32_t UCustomizableObjectSystem::GetNumPendingInstances() {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectSystem.GetNumPendingInstances");
+
+	struct GetNumPendingInstances_Params {
+		
+		int32_t ReturnValue;
+
+	}; GetNumPendingInstances_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableObjectSystem.GetNumInstances
+inline int32_t UCustomizableObjectSystem::GetNumInstances() {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectSystem.GetNumInstances");
+
+	struct GetNumInstances_Params {
+		
+		int32_t ReturnValue;
+
+	}; GetNumInstances_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableObjectSystem.GetInstance
+inline struct Unknown UCustomizableObjectSystem::GetInstance() {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectSystem.GetInstance");
+
+	struct GetInstance_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetInstance_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableObjectSystem.GetAverageBuildTime
+inline int32_t UCustomizableObjectSystem::GetAverageBuildTime() {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectSystem.GetAverageBuildTime");
+
+	struct GetAverageBuildTime_Params {
+		
+		int32_t ReturnValue;
+
+	}; GetAverageBuildTime_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableObjectSystem.AreEnginePatchesPresent
+inline char UCustomizableObjectSystem::AreEnginePatchesPresent() {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectSystem.AreEnginePatchesPresent");
+
+	struct AreEnginePatchesPresent_Params {
+		
+		char ReturnValue;
+
+	}; AreEnginePatchesPresent_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CustomizableObject.CustomizableSkeletalComponent.UpdateSkeletalMeshAsync
+inline void UCustomizableSkeletalComponent::UpdateSkeletalMeshAsync(char bNeverSkipUpdate) {
+	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableSkeletalComponent.UpdateSkeletalMeshAsync");
+
+	struct UpdateSkeletalMeshAsync_Params {
+		char bNeverSkipUpdate;
+	}; UpdateSkeletalMeshAsync_Params Params;
+
+	Params.bNeverSkipUpdate = bNeverSkipUpdate;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
 

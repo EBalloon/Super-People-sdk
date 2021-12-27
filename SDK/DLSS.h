@@ -27,7 +27,7 @@ public:
 	char bEnableDLSSD3D11 : 0; // 0x29 (1)
 	char bEnableDLSSVulkan : 0; // 0x2A (1)
 	char bEnableDLSSInEditorViewports : 0; // 0x2B (1)
-	char bEnableScreenpercentageManipulationInDLSSEditorViewp : 0; // 0x2C (1)
+	char bEnableScreenpercentageManipulationInDLSSEditorViewports : 0; // 0x2C (1)
 	char bEnableDLSSInPlayInEditorViewports : 0; // 0x2D (1)
 	char bShowDLSSSDebugOnScreenMessages : 0; // 0x2E (1)
 	struct FString GenericDLSSBinaryPath; // 0x30 (16)

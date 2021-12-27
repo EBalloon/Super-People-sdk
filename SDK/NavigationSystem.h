@@ -176,7 +176,7 @@ public:
 	char bTickWhilePaused : 0; // 0x68 (1)
 	char bSupportRebuilding : 0; // 0x68 (1)
 	char bInitialBuildingLocked : 0; // 0x68 (1)
-	char  : 0; // 0x69 (1)
+	char bSkipAgentHeightCheckWhenPickingNavData : 0; // 0x69 (1)
 	enum class Unknow DataGatheringMode; // 0x6C (1)
 	char bGenerateNavigationOnlyAroundNavigationInvokers : 0; // 0x70 (1)
 	float ActiveTilesUpdateInterval; // 0x74 (4)
@@ -207,7 +207,7 @@ public:
 	char IsNavigationBeingBuiltOrLocked(struct Unknown WorldContextObject); // Function NavigationSystem.NavigationSystemV1.IsNavigationBeingBuiltOrLocked(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1CEF0>
 	char IsNavigationBeingBuilt(struct Unknown WorldContextObject); // Function NavigationSystem.NavigationSystemV1.IsNavigationBeingBuilt(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1CE70>
 	struct Unknown GetRandomReachablePointInRadius(struct Unknown WorldContextObject, struct Unknown& Origin, float Radius, struct Unknown NavData, struct Unknown* FilterClass); // Function NavigationSystem.NavigationSystemV1.GetRandomReachablePointInRadius(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1CCA0>
-	struct Unknown GetRandomPointInNavystemMon(struct Unknown WorldContextObject, struct Unknown& Origin, float Radius, struct Unknown NavData, struct Unknown* FilterClass); // Function NavigationSystem.NavigationSystemV1.GetRandomPointInNavystemMon(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1CAD0>
+	struct Unknown GetRandomPointInNav(struct Unknown WorldContextObject, struct Unknown& Origin, float Radius, struct Unknown NavData, struct Unknown* FilterClass); // Function NavigationSystem.NavigationSystemV1.GetRandomPointInNav(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1CAD0>
 	char GetPathLength(struct Unknown WorldContextObject, struct Unknown& PathStart, struct Unknown& PathEnd, float& PathLength, struct Unknown NavData, struct Unknown* FilterClass); // Function NavigationSystem.NavigationSystemV1.GetPathLength(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1C8B0>
 	char GetPathCost(struct Unknown WorldContextObject, struct Unknown& PathStart, struct Unknown& PathEnd, float& PathCost, struct Unknown NavData, struct Unknown* FilterClass); // Function NavigationSystem.NavigationSystemV1.GetPathCost(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1C660>
 	struct Unknown GetNavigationSystem(struct Unknown WorldContextObject); // Function NavigationSystem.NavigationSystemV1.GetNavigationSystem(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3F1C5B0>
@@ -233,7 +233,7 @@ public:
 
 	struct Unknown CapsuleComponent; // 0x320 (8)
 	struct Unknown InvokerComponent; // 0x328 (8)
-	char bActAsNavigationInvtor : 0; // 0x330 (1)
+	char bActAsNavigationInv : 0; // 0x330 (1)
 	struct Unknown NavAgentProps; // 0x338 (48)
 	struct Unknown QueryingExtent; // 0x368 (12)
 	struct Unknown MyNavData; // 0x378 (8)
@@ -408,7 +408,7 @@ public:
 	char bUseVirtualFilters : 0; // 0x565 (1)
 	char bAllowNavLinkAsPathEnd : 0; // 0x565 (1)
 	char bUseVoxelCache : 0; // 0x565 (1)
-	float TileSetUpdateIntervti; // 0x568 (4)
+	float TileSetUpdateInterv; // 0x568 (4)
 	float HeuristicScale; // 0x56C (4)
 	float VerticalDeviationFromGroundCompensation; // 0x570 (4)
 
@@ -500,4 +500,787 @@ struct FRecastNavMeshGenerationProperties {
 	char bFilterLowSpanFromTileCache : 0; // 0x3C (1)
 	char bFixedTilePoolSize : 0; // 0x3C (1)
 };
+
+// Function NavigationSystem.NavigationPath.IsValid
+inline char UNavigationPath::IsValid() {
+	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationPath.IsValid");
+
+	struct IsValid_Params {
+		
+		char ReturnValue;
+
+	}; IsValid_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function NavigationSystem.NavigationPath.IsStringPulled
+inline char UNavigationPath::IsStringPulled() {
+	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationPath.IsStringPulled");
+
+	struct IsStringPulled_Params {
+		
+		char ReturnValue;
+
+	}; IsStringPulled_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function NavigationSystem.NavigationPath.IsPartial
+inline char UNavigationPath::IsPartial() {
+	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationPath.IsPartial");
+
+	struct IsPartial_Params {
+		
+		char ReturnValue;
+
+	}; IsPartial_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function NavigationSystem.NavigationPath.GetPathLength
+inline float UNavigationPath::GetPathLength() {
+	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationPath.GetPathLength");
+
+	struct GetPathLength_Params {
+		
+		float ReturnValue;
+
+	}; GetPathLength_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function NavigationSystem.NavigationPath.GetPathCost
+inline float UNavigationPath::GetPathCost() {
+	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationPath.GetPathCost");
+
+	struct GetPathCost_Params {
+		
+		float ReturnValue;
+
+	}; GetPathCost_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function NavigationSystem.NavigationPath.GetDebugString
+inline struct FString UNavigationPath::GetDebugString() {
+	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationPath.GetDebugString");
+
+	struct GetDebugString_Params {
+		
+		struct FString ReturnValue;
+
+	}; GetDebugString_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function NavigationSystem.NavigationPath.EnableRecalculationOnInvalidation
+inline void UNavigationPath::EnableRecalculationOnInvalidation(char DoRecalculation) {
+	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationPath.EnableRecalculationOnInvalidation");
+
+	struct EnableRecalculationOnInvalidation_Params {
+		char DoRecalculation;
+	}; EnableRecalculationOnInvalidation_Params Params;
+
+	Params.DoRecalculation = DoRecalculation;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function NavigationSystem.NavigationPath.EnableDebugDrawing
+inline void UNavigationPath::EnableDebugDrawing(char bShouldDrawDebugData, struct Unknown PathColor) {
+	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationPath.EnableDebugDrawing");
+
+	struct EnableDebugDrawing_Params {
+		char bShouldDrawDebugData;
+		struct Unknown PathColor;
+	}; EnableDebugDrawing_Params Params;
+
+	Params.bShouldDrawDebugData = bShouldDrawDebugData;
+	Params.PathColor = PathColor;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function NavigationSystem.NavigationSystemV1.UnregisterNavigationInvoker
+inline void UNavigationSystemV1::UnregisterNavigationInvoker(struct Unknown Invoker) {
+	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.UnregisterNavigationInvoker");
+
+	struct UnregisterNavigationInvoker_Params {
+		struct Unknown Invoker;
+	}; UnregisterNavigationInvoker_Params Params;
+
+	Params.Invoker = Invoker;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function NavigationSystem.NavigationSystemV1.SimpleMoveToLocation
+inline void UNavigationSystemV1::SimpleMoveToLocation(struct Unknown Controller, struct Unknown& Goal) {
+	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.SimpleMoveToLocation");
+
+	struct SimpleMoveToLocation_Params {
+		struct Unknown Controller;
+		struct Unknown& Goal;
+	}; SimpleMoveToLocation_Params Params;
+
+	Params.Controller = Controller;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Goal = Params.Goal;
+
+}
+
+// Function NavigationSystem.NavigationSystemV1.SimpleMoveToActor
+inline void UNavigationSystemV1::SimpleMoveToActor(struct Unknown Controller, struct Unknown Goal) {
+	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.SimpleMoveToActor");
+
+	struct SimpleMoveToActor_Params {
+		struct Unknown Controller;
+		struct Unknown Goal;
+	}; SimpleMoveToActor_Params Params;
+
+	Params.Controller = Controller;
+	Params.Goal = Goal;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function NavigationSystem.NavigationSystemV1.SetMaxSimultaneousTileGenerationJobsCount
+inline void UNavigationSystemV1::SetMaxSimultaneousTileGenerationJobsCount(int32_t MaxNumberOfJobs) {
+	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.SetMaxSimultaneousTileGenerationJobsCount");
+
+	struct SetMaxSimultaneousTileGenerationJobsCount_Params {
+		int32_t MaxNumberOfJobs;
+	}; SetMaxSimultaneousTileGenerationJobsCount_Params Params;
+
+	Params.MaxNumberOfJobs = MaxNumberOfJobs;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function NavigationSystem.NavigationSystemV1.SetGeometryGatheringMode
+inline void UNavigationSystemV1::SetGeometryGatheringMode(enum class Unknow NewMode) {
+	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.SetGeometryGatheringMode");
+
+	struct SetGeometryGatheringMode_Params {
+		enum class Unknow NewMode;
+	}; SetGeometryGatheringMode_Params Params;
+
+	Params.NewMode = NewMode;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function NavigationSystem.NavigationSystemV1.ResetMaxSimultaneousTileGenerationJobsCount
+inline void UNavigationSystemV1::ResetMaxSimultaneousTileGenerationJobsCount() {
+	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.ResetMaxSimultaneousTileGenerationJobsCount");
+
+	struct ResetMaxSimultaneousTileGenerationJobsCount_Params {
+		
+	}; ResetMaxSimultaneousTileGenerationJobsCount_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function NavigationSystem.NavigationSystemV1.RegisterNavigationInvoker
+inline void UNavigationSystemV1::RegisterNavigationInvoker(struct Unknown Invoker, float TileGenerationRadius, float TileRemovalRadius) {
+	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.RegisterNavigationInvoker");
+
+	struct RegisterNavigationInvoker_Params {
+		struct Unknown Invoker;
+		float TileGenerationRadius;
+		float TileRemovalRadius;
+	}; RegisterNavigationInvoker_Params Params;
+
+	Params.Invoker = Invoker;
+	Params.TileGenerationRadius = TileGenerationRadius;
+	Params.TileRemovalRadius = TileRemovalRadius;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function NavigationSystem.NavigationSystemV1.ProjectPointToNavigation
+inline struct Unknown UNavigationSystemV1::ProjectPointToNavigation(struct Unknown WorldContextObject, struct Unknown& Point, struct Unknown NavData, struct Unknown* FilterClass, struct Unknown QueryExtent) {
+	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.ProjectPointToNavigation");
+
+	struct ProjectPointToNavigation_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown& Point;
+		struct Unknown NavData;
+		struct Unknown* FilterClass;
+		struct Unknown QueryExtent;
+		struct Unknown ReturnValue;
+
+	}; ProjectPointToNavigation_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.NavData = NavData;
+	Params.FilterClass = FilterClass;
+	Params.QueryExtent = QueryExtent;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Point = Params.Point;
+
+
+	return params.ReturnValue;
+}
+
+// Function NavigationSystem.NavigationSystemV1.OnNavigationBoundsUpdated
+inline void UNavigationSystemV1::OnNavigationBoundsUpdated(struct Unknown NavVolume) {
+	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.OnNavigationBoundsUpdated");
+
+	struct OnNavigationBoundsUpdated_Params {
+		struct Unknown NavVolume;
+	}; OnNavigationBoundsUpdated_Params Params;
+
+	Params.NavVolume = NavVolume;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function NavigationSystem.NavigationSystemV1.NavigationRaycast
+inline char UNavigationSystemV1::NavigationRaycast(struct Unknown WorldContextObject, struct Unknown& RayStart, struct Unknown& RayEnd, struct Unknown& HitLocation, struct Unknown* FilterClass, struct Unknown Querier) {
+	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.NavigationRaycast");
+
+	struct NavigationRaycast_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown& RayStart;
+		struct Unknown& RayEnd;
+		struct Unknown& HitLocation;
+		struct Unknown* FilterClass;
+		struct Unknown Querier;
+		char ReturnValue;
+
+	}; NavigationRaycast_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.FilterClass = FilterClass;
+	Params.Querier = Querier;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	RayStart = Params.RayStart;
+	RayEnd = Params.RayEnd;
+	HitLocation = Params.HitLocation;
+
+
+	return params.ReturnValue;
+}
+
+// Function NavigationSystem.NavigationSystemV1.K2_ReplaceAreaInOctreeData
+inline char UNavigationSystemV1::K2_ReplaceAreaInOctreeData(struct Unknown Object, struct Unknown* OldArea, struct Unknown* NewArea) {
+	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.K2_ReplaceAreaInOctreeData");
+
+	struct K2_ReplaceAreaInOctreeData_Params {
+		struct Unknown Object;
+		struct Unknown* OldArea;
+		struct Unknown* NewArea;
+		char ReturnValue;
+
+	}; K2_ReplaceAreaInOctreeData_Params Params;
+
+	Params.Object = Object;
+	Params.OldArea = OldArea;
+	Params.NewArea = NewArea;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function NavigationSystem.NavigationSystemV1.K2_ProjectPointToNavigation
+inline char UNavigationSystemV1::K2_ProjectPointToNavigation(struct Unknown WorldContextObject, struct Unknown& Point, struct Unknown& ProjectedLocation, struct Unknown NavData, struct Unknown* FilterClass, struct Unknown QueryExtent) {
+	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.K2_ProjectPointToNavigation");
+
+	struct K2_ProjectPointToNavigation_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown& Point;
+		struct Unknown& ProjectedLocation;
+		struct Unknown NavData;
+		struct Unknown* FilterClass;
+		struct Unknown QueryExtent;
+		char ReturnValue;
+
+	}; K2_ProjectPointToNavigation_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.NavData = NavData;
+	Params.FilterClass = FilterClass;
+	Params.QueryExtent = QueryExtent;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Point = Params.Point;
+	ProjectedLocation = Params.ProjectedLocation;
+
+
+	return params.ReturnValue;
+}
+
+// Function NavigationSystem.NavigationSystemV1.K2_GetRandomReachablePointInRadius
+inline char UNavigationSystemV1::K2_GetRandomReachablePointInRadius(struct Unknown WorldContextObject, struct Unknown& Origin, struct Unknown& RandomLocation, float Radius, struct Unknown NavData, struct Unknown* FilterClass) {
+	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.K2_GetRandomReachablePointInRadius");
+
+	struct K2_GetRandomReachablePointInRadius_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown& Origin;
+		struct Unknown& RandomLocation;
+		float Radius;
+		struct Unknown NavData;
+		struct Unknown* FilterClass;
+		char ReturnValue;
+
+	}; K2_GetRandomReachablePointInRadius_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.Radius = Radius;
+	Params.NavData = NavData;
+	Params.FilterClass = FilterClass;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Origin = Params.Origin;
+	RandomLocation = Params.RandomLocation;
+
+
+	return params.ReturnValue;
+}
+
+// Function NavigationSystem.NavigationSystemV1.K2_GetRandomPointInNavigableRadius
+inline char UNavigationSystemV1::K2_GetRandomPointInNavigableRadius(struct Unknown WorldContextObject, struct Unknown& Origin, struct Unknown& RandomLocation, float Radius, struct Unknown NavData, struct Unknown* FilterClass) {
+	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.K2_GetRandomPointInNavigableRadius");
+
+	struct K2_GetRandomPointInNavigableRadius_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown& Origin;
+		struct Unknown& RandomLocation;
+		float Radius;
+		struct Unknown NavData;
+		struct Unknown* FilterClass;
+		char ReturnValue;
+
+	}; K2_GetRandomPointInNavigableRadius_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.Radius = Radius;
+	Params.NavData = NavData;
+	Params.FilterClass = FilterClass;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Origin = Params.Origin;
+	RandomLocation = Params.RandomLocation;
+
+
+	return params.ReturnValue;
+}
+
+// Function NavigationSystem.NavigationSystemV1.K2_GetRandomLocationInNavigableRadius
+inline char UNavigationSystemV1::K2_GetRandomLocationInNavigableRadius(struct Unknown WorldContextObject, struct Unknown& Origin, struct Unknown& RandomLocation, float Radius, struct Unknown NavData, struct Unknown* FilterClass) {
+	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.K2_GetRandomLocationInNavigableRadius");
+
+	struct K2_GetRandomLocationInNavigableRadius_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown& Origin;
+		struct Unknown& RandomLocation;
+		float Radius;
+		struct Unknown NavData;
+		struct Unknown* FilterClass;
+		char ReturnValue;
+
+	}; K2_GetRandomLocationInNavigableRadius_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.Radius = Radius;
+	Params.NavData = NavData;
+	Params.FilterClass = FilterClass;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Origin = Params.Origin;
+	RandomLocation = Params.RandomLocation;
+
+
+	return params.ReturnValue;
+}
+
+// Function NavigationSystem.NavigationSystemV1.IsNavigationBeingBuiltOrLocked
+inline char UNavigationSystemV1::IsNavigationBeingBuiltOrLocked(struct Unknown WorldContextObject) {
+	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.IsNavigationBeingBuiltOrLocked");
+
+	struct IsNavigationBeingBuiltOrLocked_Params {
+		struct Unknown WorldContextObject;
+		char ReturnValue;
+
+	}; IsNavigationBeingBuiltOrLocked_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function NavigationSystem.NavigationSystemV1.IsNavigationBeingBuilt
+inline char UNavigationSystemV1::IsNavigationBeingBuilt(struct Unknown WorldContextObject) {
+	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.IsNavigationBeingBuilt");
+
+	struct IsNavigationBeingBuilt_Params {
+		struct Unknown WorldContextObject;
+		char ReturnValue;
+
+	}; IsNavigationBeingBuilt_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function NavigationSystem.NavigationSystemV1.GetRandomReachablePointInRadius
+inline struct Unknown UNavigationSystemV1::GetRandomReachablePointInRadius(struct Unknown WorldContextObject, struct Unknown& Origin, float Radius, struct Unknown NavData, struct Unknown* FilterClass) {
+	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.GetRandomReachablePointInRadius");
+
+	struct GetRandomReachablePointInRadius_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown& Origin;
+		float Radius;
+		struct Unknown NavData;
+		struct Unknown* FilterClass;
+		struct Unknown ReturnValue;
+
+	}; GetRandomReachablePointInRadius_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.Radius = Radius;
+	Params.NavData = NavData;
+	Params.FilterClass = FilterClass;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Origin = Params.Origin;
+
+
+	return params.ReturnValue;
+}
+
+// Function NavigationSystem.NavigationSystemV1.GetRandomPointInNav
+inline struct Unknown UNavigationSystemV1::GetRandomPointInNav(struct Unknown WorldContextObject, struct Unknown& Origin, float Radius, struct Unknown NavData, struct Unknown* FilterClass) {
+	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.GetRandomPointInNav");
+
+	struct GetRandomPointInNav_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown& Origin;
+		float Radius;
+		struct Unknown NavData;
+		struct Unknown* FilterClass;
+		struct Unknown ReturnValue;
+
+	}; GetRandomPointInNav_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.Radius = Radius;
+	Params.NavData = NavData;
+	Params.FilterClass = FilterClass;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Origin = Params.Origin;
+
+
+	return params.ReturnValue;
+}
+
+// Function NavigationSystem.NavigationSystemV1.GetPathLength
+inline char UNavigationSystemV1::GetPathLength(struct Unknown WorldContextObject, struct Unknown& PathStart, struct Unknown& PathEnd, float& PathLength, struct Unknown NavData, struct Unknown* FilterClass) {
+	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.GetPathLength");
+
+	struct GetPathLength_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown& PathStart;
+		struct Unknown& PathEnd;
+		float& PathLength;
+		struct Unknown NavData;
+		struct Unknown* FilterClass;
+		char ReturnValue;
+
+	}; GetPathLength_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.NavData = NavData;
+	Params.FilterClass = FilterClass;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	PathStart = Params.PathStart;
+	PathEnd = Params.PathEnd;
+	PathLength = Params.PathLength;
+
+
+	return params.ReturnValue;
+}
+
+// Function NavigationSystem.NavigationSystemV1.GetPathCost
+inline char UNavigationSystemV1::GetPathCost(struct Unknown WorldContextObject, struct Unknown& PathStart, struct Unknown& PathEnd, float& PathCost, struct Unknown NavData, struct Unknown* FilterClass) {
+	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.GetPathCost");
+
+	struct GetPathCost_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown& PathStart;
+		struct Unknown& PathEnd;
+		float& PathCost;
+		struct Unknown NavData;
+		struct Unknown* FilterClass;
+		char ReturnValue;
+
+	}; GetPathCost_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.NavData = NavData;
+	Params.FilterClass = FilterClass;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	PathStart = Params.PathStart;
+	PathEnd = Params.PathEnd;
+	PathCost = Params.PathCost;
+
+
+	return params.ReturnValue;
+}
+
+// Function NavigationSystem.NavigationSystemV1.GetNavigationSystem
+inline struct Unknown UNavigationSystemV1::GetNavigationSystem(struct Unknown WorldContextObject) {
+	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.GetNavigationSystem");
+
+	struct GetNavigationSystem_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown ReturnValue;
+
+	}; GetNavigationSystem_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function NavigationSystem.NavigationSystemV1.FindPathToLocationSynchronously
+inline struct Unknown UNavigationSystemV1::FindPathToLocationSynchronously(struct Unknown WorldContextObject, struct Unknown& PathStart, struct Unknown& PathEnd, struct Unknown PathfindingContext, struct Unknown* FilterClass) {
+	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.FindPathToLocationSynchronously");
+
+	struct FindPathToLocationSynchronously_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown& PathStart;
+		struct Unknown& PathEnd;
+		struct Unknown PathfindingContext;
+		struct Unknown* FilterClass;
+		struct Unknown ReturnValue;
+
+	}; FindPathToLocationSynchronously_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.PathfindingContext = PathfindingContext;
+	Params.FilterClass = FilterClass;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	PathStart = Params.PathStart;
+	PathEnd = Params.PathEnd;
+
+
+	return params.ReturnValue;
+}
+
+// Function NavigationSystem.NavigationSystemV1.FindPathToActorSynchronously
+inline struct Unknown UNavigationSystemV1::FindPathToActorSynchronously(struct Unknown WorldContextObject, struct Unknown& PathStart, struct Unknown GoalActor, float TetherDistance, struct Unknown PathfindingContext, struct Unknown* FilterClass) {
+	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.FindPathToActorSynchronously");
+
+	struct FindPathToActorSynchronously_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown& PathStart;
+		struct Unknown GoalActor;
+		float TetherDistance;
+		struct Unknown PathfindingContext;
+		struct Unknown* FilterClass;
+		struct Unknown ReturnValue;
+
+	}; FindPathToActorSynchronously_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.GoalActor = GoalActor;
+	Params.TetherDistance = TetherDistance;
+	Params.PathfindingContext = PathfindingContext;
+	Params.FilterClass = FilterClass;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	PathStart = Params.PathStart;
+
+
+	return params.ReturnValue;
+}
+
+// Function NavigationSystem.NavRelevantComponent.SetNavigationRelevancy
+inline void UNavRelevantComponent::SetNavigationRelevancy(char bRelevant) {
+	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavRelevantComponent.SetNavigationRelevancy");
+
+	struct SetNavigationRelevancy_Params {
+		char bRelevant;
+	}; SetNavigationRelevancy_Params Params;
+
+	Params.bRelevant = bRelevant;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function NavigationSystem.NavModifierComponent.SetAreaClass
+inline void UNavModifierComponent::SetAreaClass(struct Unknown* NewAreaClass) {
+	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavModifierComponent.SetAreaClass");
+
+	struct SetAreaClass_Params {
+		struct Unknown* NewAreaClass;
+	}; SetAreaClass_Params Params;
+
+	Params.NewAreaClass = NewAreaClass;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function NavigationSystem.NavModifierVolume.SetAreaClass
+inline void ANavModifierVolume::SetAreaClass(struct Unknown* NewAreaClass) {
+	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavModifierVolume.SetAreaClass");
+
+	struct SetAreaClass_Params {
+		struct Unknown* NewAreaClass;
+	}; SetAreaClass_Params Params;
+
+	Params.NewAreaClass = NewAreaClass;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function NavigationSystem.RecastNavMesh.K2_ReplaceAreaInTileBounds
+inline char ARecastNavMesh::K2_ReplaceAreaInTileBounds(struct Unknown Bounds, struct Unknown* OldArea, struct Unknown* NewArea, char ReplaceLinks) {
+	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.RecastNavMesh.K2_ReplaceAreaInTileBounds");
+
+	struct K2_ReplaceAreaInTileBounds_Params {
+		struct Unknown Bounds;
+		struct Unknown* OldArea;
+		struct Unknown* NewArea;
+		char ReplaceLinks;
+		char ReturnValue;
+
+	}; K2_ReplaceAreaInTileBounds_Params Params;
+
+	Params.Bounds = Bounds;
+	Params.OldArea = OldArea;
+	Params.NewArea = NewArea;
+	Params.ReplaceLinks = ReplaceLinks;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
 

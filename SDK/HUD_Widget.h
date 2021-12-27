@@ -12,3 +12,47 @@ public:
 	void ExecuteUbergraph_HUD_Widget(int32_t EntryPoint); // Function HUD_Widget.HUD_Widget_C.ExecuteUbergraph_HUD_Widget(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 };
 
+// Function HUD_Widget.HUD_Widget_C.ShowHUDToggle
+inline void UHUD_Widget_C::ShowHUDToggle(char ShowToggle) {
+	static auto fn = UObject::FindObject<UFunction>("Function HUD_Widget.HUD_Widget_C.ShowHUDToggle");
+
+	struct ShowHUDToggle_Params {
+		char ShowToggle;
+	}; ShowHUDToggle_Params Params;
+
+	Params.ShowToggle = ShowToggle;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function HUD_Widget.HUD_Widget_C.Construct
+inline void UHUD_Widget_C::Construct() {
+	static auto fn = UObject::FindObject<UFunction>("Function HUD_Widget.HUD_Widget_C.Construct");
+
+	struct Construct_Params {
+		
+	}; Construct_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function HUD_Widget.HUD_Widget_C.ExecuteUbergraph_HUD_Widget
+inline void UHUD_Widget_C::ExecuteUbergraph_HUD_Widget(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function HUD_Widget.HUD_Widget_C.ExecuteUbergraph_HUD_Widget");
+
+	struct ExecuteUbergraph_HUD_Widget_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_HUD_Widget_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+

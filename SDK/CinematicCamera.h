@@ -136,3 +136,194 @@ struct FCameraFilmbackSettings {
 	float SensorAspectRatio; // 0x8 (4)
 };
 
+// Function CinematicCamera.CineCameraComponent.SetLensPresetByName
+inline void UCineCameraComponent::SetLensPresetByName(struct FString InPresetName) {
+	static auto fn = UObject::FindObject<UFunction>("Function CinematicCamera.CineCameraComponent.SetLensPresetByName");
+
+	struct SetLensPresetByName_Params {
+		struct FString InPresetName;
+	}; SetLensPresetByName_Params Params;
+
+	Params.InPresetName = InPresetName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CinematicCamera.CineCameraComponent.SetFilmbackPresetByName
+inline void UCineCameraComponent::SetFilmbackPresetByName(struct FString InPresetName) {
+	static auto fn = UObject::FindObject<UFunction>("Function CinematicCamera.CineCameraComponent.SetFilmbackPresetByName");
+
+	struct SetFilmbackPresetByName_Params {
+		struct FString InPresetName;
+	}; SetFilmbackPresetByName_Params Params;
+
+	Params.InPresetName = InPresetName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function CinematicCamera.CineCameraComponent.SetCurrentFocalLength
+inline void UCineCameraComponent::SetCurrentFocalLength(float& InFocalLength) {
+	static auto fn = UObject::FindObject<UFunction>("Function CinematicCamera.CineCameraComponent.SetCurrentFocalLength");
+
+	struct SetCurrentFocalLength_Params {
+		float& InFocalLength;
+	}; SetCurrentFocalLength_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	InFocalLength = Params.InFocalLength;
+
+}
+
+// Function CinematicCamera.CineCameraComponent.GetVerticalFieldOfView
+inline float UCineCameraComponent::GetVerticalFieldOfView() {
+	static auto fn = UObject::FindObject<UFunction>("Function CinematicCamera.CineCameraComponent.GetVerticalFieldOfView");
+
+	struct GetVerticalFieldOfView_Params {
+		
+		float ReturnValue;
+
+	}; GetVerticalFieldOfView_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CinematicCamera.CineCameraComponent.GetLensPresetsCopy
+inline struct TArray<Unknown> UCineCameraComponent::GetLensPresetsCopy() {
+	static auto fn = UObject::FindObject<UFunction>("Function CinematicCamera.CineCameraComponent.GetLensPresetsCopy");
+
+	struct GetLensPresetsCopy_Params {
+		
+		struct TArray<Unknown> ReturnValue;
+
+	}; GetLensPresetsCopy_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CinematicCamera.CineCameraComponent.GetLensPresetName
+inline struct FString UCineCameraComponent::GetLensPresetName() {
+	static auto fn = UObject::FindObject<UFunction>("Function CinematicCamera.CineCameraComponent.GetLensPresetName");
+
+	struct GetLensPresetName_Params {
+		
+		struct FString ReturnValue;
+
+	}; GetLensPresetName_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CinematicCamera.CineCameraComponent.GetHorizontalFieldOfView
+inline float UCineCameraComponent::GetHorizontalFieldOfView() {
+	static auto fn = UObject::FindObject<UFunction>("Function CinematicCamera.CineCameraComponent.GetHorizontalFieldOfView");
+
+	struct GetHorizontalFieldOfView_Params {
+		
+		float ReturnValue;
+
+	}; GetHorizontalFieldOfView_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CinematicCamera.CineCameraComponent.GetFilmbackPresetName
+inline struct FString UCineCameraComponent::GetFilmbackPresetName() {
+	static auto fn = UObject::FindObject<UFunction>("Function CinematicCamera.CineCameraComponent.GetFilmbackPresetName");
+
+	struct GetFilmbackPresetName_Params {
+		
+		struct FString ReturnValue;
+
+	}; GetFilmbackPresetName_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CinematicCamera.CineCameraComponent.GetDefaultFilmbackPresetName
+inline struct FString UCineCameraComponent::GetDefaultFilmbackPresetName() {
+	static auto fn = UObject::FindObject<UFunction>("Function CinematicCamera.CineCameraComponent.GetDefaultFilmbackPresetName");
+
+	struct GetDefaultFilmbackPresetName_Params {
+		
+		struct FString ReturnValue;
+
+	}; GetDefaultFilmbackPresetName_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CinematicCamera.CameraRig_Rail.GetRailSplineComponent
+inline struct Unknown ACameraRig_Rail::GetRailSplineComponent() {
+	static auto fn = UObject::FindObject<UFunction>("Function CinematicCamera.CameraRig_Rail.GetRailSplineComponent");
+
+	struct GetRailSplineComponent_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetRailSplineComponent_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function CinematicCamera.CineCameraActor.GetCineCameraComponent
+inline struct Unknown ACineCameraActor::GetCineCameraComponent() {
+	static auto fn = UObject::FindObject<UFunction>("Function CinematicCamera.CineCameraActor.GetCineCameraComponent");
+
+	struct GetCineCameraComponent_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetCineCameraComponent_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+

@@ -121,3 +121,138 @@ struct FAnimationSetup {
 	struct Unknown Enabled; // 0x14 (1)
 };
 
+// Function AnimationSharing.AnimSharingStateInstance.GetInstancedActors
+inline void UAnimSharingStateInstance::GetInstancedActors(struct TArray<Unknown>& Actors) {
+	static auto fn = UObject::FindObject<UFunction>("Function AnimationSharing.AnimSharingStateInstance.GetInstancedActors");
+
+	struct GetInstancedActors_Params {
+		struct TArray<Unknown>& Actors;
+	}; GetInstancedActors_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Actors = Params.Actors;
+
+}
+
+// Function AnimationSharing.AnimationSharingManager.RegisterActorWithSkeletonBP
+inline void UAnimationSharingManager::RegisterActorWithSkeletonBP(struct Unknown InActor, struct Unknown SharingSkeleton) {
+	static auto fn = UObject::FindObject<UFunction>("Function AnimationSharing.AnimationSharingManager.RegisterActorWithSkeletonBP");
+
+	struct RegisterActorWithSkeletonBP_Params {
+		struct Unknown InActor;
+		struct Unknown SharingSkeleton;
+	}; RegisterActorWithSkeletonBP_Params Params;
+
+	Params.InActor = InActor;
+	Params.SharingSkeleton = SharingSkeleton;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AnimationSharing.AnimationSharingManager.GetAnimationSharingManager
+inline struct Unknown UAnimationSharingManager::GetAnimationSharingManager(struct Unknown WorldContextObject) {
+	static auto fn = UObject::FindObject<UFunction>("Function AnimationSharing.AnimationSharingManager.GetAnimationSharingManager");
+
+	struct GetAnimationSharingManager_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown ReturnValue;
+
+	}; GetAnimationSharingManager_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AnimationSharing.AnimationSharingManager.CreateAnimationSharingManager
+inline char UAnimationSharingManager::CreateAnimationSharingManager(struct Unknown WorldContextObject, struct Unknown Setup) {
+	static auto fn = UObject::FindObject<UFunction>("Function AnimationSharing.AnimationSharingManager.CreateAnimationSharingManager");
+
+	struct CreateAnimationSharingManager_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown Setup;
+		char ReturnValue;
+
+	}; CreateAnimationSharingManager_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.Setup = Setup;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AnimationSharing.AnimationSharingManager.AnimationSharingEnabled
+inline char UAnimationSharingManager::AnimationSharingEnabled() {
+	static auto fn = UObject::FindObject<UFunction>("Function AnimationSharing.AnimationSharingManager.AnimationSharingEnabled");
+
+	struct AnimationSharingEnabled_Params {
+		
+		char ReturnValue;
+
+	}; AnimationSharingEnabled_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AnimationSharing.AnimationSharingStateProcessor.ProcessActorState
+inline void UAnimationSharingStateProcessor::ProcessActorState(int32_t& OutState, struct Unknown InActor, char CurrentState, char OnDemandState, char& bShouldProcess) {
+	static auto fn = UObject::FindObject<UFunction>("Function AnimationSharing.AnimationSharingStateProcessor.ProcessActorState");
+
+	struct ProcessActorState_Params {
+		int32_t& OutState;
+		struct Unknown InActor;
+		char CurrentState;
+		char OnDemandState;
+		char& bShouldProcess;
+	}; ProcessActorState_Params Params;
+
+	Params.InActor = InActor;
+	Params.CurrentState = CurrentState;
+	Params.OnDemandState = OnDemandState;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	OutState = Params.OutState;
+	bShouldProcess = Params.bShouldProcess;
+
+}
+
+// Function AnimationSharing.AnimationSharingStateProcessor.GetAnimationStateEnum
+inline struct Unknown UAnimationSharingStateProcessor::GetAnimationStateEnum() {
+	static auto fn = UObject::FindObject<UFunction>("Function AnimationSharing.AnimationSharingStateProcessor.GetAnimationStateEnum");
+
+	struct GetAnimationStateEnum_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetAnimationStateEnum_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+

@@ -53,7 +53,7 @@ enum class EFieldResolutionType : uint8_t {
 enum class EFieldCullingOperationType : uint8_t {
 	Field_Culling_Inside = 0,
 	Field_Culling_Outside = 1,
-	Field_Culling_Operation_M = 2,
+	Field_Culling_Operation_Max = 2,
 	Field_Culling_MAX = 3,
 };
 

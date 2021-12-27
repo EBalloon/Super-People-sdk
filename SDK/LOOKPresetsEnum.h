@@ -1,19 +1,4 @@
-// UserDefinedEnum Enum.ColorChannels
-enum class ColorChannels : uint8_t {
-	ColorChannels = 0,
-	ColorChannels = 1,
-	ColorChannels = 2,
-	ColorChannels = 3,
-};
-
-// UserDefinedEnum Enum.DrawingNoiseModes
-enum class DrawingNoiseModes : uint8_t {
-	DrawingNoiseModes = 0,
-	DrawingNoiseModes = 1,
-	DrawingNoiseModes = 2,
-};
-
-// UserDefinedEnum Enum.LOOKPresetsEnum
+// UserDefinedEnum LOOKPresetsEnum.LOOKPresetsEnum
 enum class LOOKPresetsEnum : uint8_t {
 	LOOKPresetsEnum = 0,
 	LOOKPresetsEnum = 1,
@@ -166,26 +151,5 @@ enum class LOOKPresetsEnum : uint8_t {
 	LOOKPresetsEnum = 148,
 	LOOKPresetsEnum = 149,
 	LOOKPresetsEnum = 150,
-};
-
-// UserDefinedEnum Enum.BlendModes
-enum class BlendModes : uint8_t {
-	BlendModes = 0,
-	BlendModes = 1,
-	BlendModes = 2,
-	BlendModes = 3,
-	BlendModes = 4,
-	BlendModes = 5,
-	BlendModes = 6,
-	BlendModes = 7,
-	BlendModes = 8,
-	BlendModes = 9,
-	BlendModes = 10,
-	BlendModes = 11,
-	BlendModes = 12,
-	BlendModes = 13,
-	BlendModes = 14,
-	BlendModes = 15,
-	BlendModes = 16,
 };
 

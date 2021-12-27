@@ -28,12 +28,12 @@ enum class ENiagaraCollisionMode : uint8_t {
 	ENiagaraCollisionMode = 4,
 };
 
-// Enum Niagara.ENiagaraLegacyTrailWidthMk
-enum class ENiagaraLegacyTrailWidthMk : uint8_t {
-	ENiagaraLegacyTrailWidth = 0,
-	ENiagaraLegacyTrailWidthMk = 1,
-	ENiagaraLegacyTrailWidthMk = 2,
-	ENiagaraLegacyTrailWidthMk = 3,
+// Enum Niagara.ENiagaraLegacyTrailWidthMode
+enum class ENiagaraLegacyTrailWidthMode : uint8_t {
+	ENiagaraLegacyTrailWidthMode = 0,
+	ENiagaraLegacyTrailWidthMode = 1,
+	ENiagaraLegacyTrailWidthMode = 2,
+	ENiagaraLegacyTrailWidthMode = 3,
 };
 
 // Enum Niagara.ENiagaraIterationSource
@@ -142,13 +142,13 @@ enum class ENCPoolMethod : uint8_t {
 	ENCPoolMethod = 5,
 };
 
-// Enum Niagara.ENDISkeletalMesh_SkinningMode
-enum class ENDISkeletalMesh_SkinningMode : uint8_t {
-	ENDISkeletalMesh_SkinningMode = 255,
-	ENDISkeletalMesh_SkinningMode = 0,
-	ENDISkeletalMesh_SkinningMode = 1,
-	ENDISkeletalMesh_SkinningMode = 2,
-	ENDISkeletalMesh_SkinningMode = 256,
+// Enum Niagara.ENDISkeletalMesh_SkinningMng
+enum class ENDISkeletalMesh_SkinningMng : uint8_t {
+	ENDISkeletalMesh_SkinningModeg = 255,
+	ENDISkeletalMesh_SkinningModeg = 0,
+	ENDISkeletalMesh_SkinningMng = 1,
+	ENDISkeletalMesh_Skinning = 2,
+	ENDISkeletalMesh_Skinning = 256,
 };
 
 // Enum Niagara.ENiagaraScalabilityUpdateFrequency
@@ -229,10 +229,10 @@ enum class ENiagaraPlatformSelectionState : uint8_t {
 	ENiagaraPlatformSelectionState = 3,
 };
 
-// Enum Niagara.ENiagaraPreviewGridResetM
-enum class ENiagaraPreviewGridReset : uint8_t {
-	ENiagaraPreviewGridResetM = 0,
-	ENiagaraPreviewGridResetM = 1,
+// Enum Niagara.ENiagaraPreviewGridResetMode
+enum class ENiagaraPreviewGridResetMode : uint8_t {
+	ENiagaraPreviewGridResetMode = 0,
+	ENiagaraPreviewGridResetMode = 1,
 	ENiagaraPreviewGridResetMode = 2,
 	ENiagaraPreviewGridResetMode = 3,
 };
@@ -507,7 +507,7 @@ public:
 	char GetPreviewLODDistanceEnabled(); // Function Niagara.NiagaraComponent.GetPreviewLODDistanceEnabled(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1508DC0>
 	int32_t GetPreviewLODDistance(); // Function Niagara.NiagaraComponent.GetPreviewLODDistance(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1508DA0>
 	struct TArray<Unknown> GetNiagaraParticleValueVec3_DebugOnly(struct FString InEmitterName, struct FString InValueName); // Function Niagara.NiagaraComponent.GetNiagaraParticleValueVec3_DebugOnly(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1508B00>
-	struct TArray<Unknown> GetNiagaraParticleValues_DebugOnly(struct FString InEmitterName, struct FString InValueName); // Function Niagara.NiagaraComponent.GetNiagaraParticleValues_DebugOnly(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1508C50>
+	struct TArray<Unknown> GetNiagaraParticleValues_Debugt(struct FString InEmitterName, struct FString InValueName); // Function Niagara.NiagaraComponent.GetNiagaraParticleValues_Debug(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1508C50>
 	struct TArray<Unknown> GetNiagaraParticlePositions_DebugOnly(struct FString InEmitterName); // Function Niagara.NiagaraComponent.GetNiagaraParticlePositions_DebugOnly(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1508A10>
 	float GetMaxSimTime(); // Function Niagara.NiagaraComponent.GetMaxSimTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x15089E0>
 	char GetForceSolo(); // Function Niagara.NiagaraComponent.GetForceSolo(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x15089B0>
@@ -1669,8 +1669,8 @@ struct FNiagaraSystemCompiledData {
 	struct TArray<Unknown> UpdateInstanceEmitterBindings; // 0x248 (16)
 };
 
-// ScriptStruct Niagara.NiagaraParameterDataSetBindingCollection
-struct FNiagaraParameterDataSetBindingCollection {
+// ScriptStruct Niagara.NiagaraParameterDataSetBinding
+struct FNiagaraParameterDataSetBinding {
 	struct TArray<Unknown> FloatOffsets; // 0x0 (16)
 	struct TArray<Unknown> Int32Offsets; // 0x10 (16)
 };
@@ -1726,8 +1726,8 @@ struct FNiagaraParameterScopeInfo {
 	struct FString NamespaceString; // 0x8 (16)
 };
 
-// ScriptStruct Niagara.NiagaraCompileHashVisitorDebugInfo
-struct FNiagaraCompileHashVisitorDebugInfo {
+// ScriptStruct Niagara.NiagaraCompileHashVisitorDebug
+struct FNiagaraCompileHashVisitorDebug {
 	struct FString Object; // 0x0 (16)
 	struct TArray<Unknown> PropertyKeys; // 0x10 (16)
 	struct TArray<Unknown> PropertyValues; // 0x20 (16)
@@ -1796,4 +1796,1271 @@ struct FNiagaraVariant {
 	struct TArray<Unknown> Bytes; // 0x10 (16)
 	enum class Unknow CurrentMode; // 0x20 (4)
 };
+
+// Function Niagara.NiagaraActor.SetDestroyOnSystemFinish
+inline void ANiagaraActor::SetDestroyOnSystemFinish(char bShouldDestroyOnSystemFinish) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraActor.SetDestroyOnSystemFinish");
+
+	struct SetDestroyOnSystemFinish_Params {
+		char bShouldDestroyOnSystemFinish;
+	}; SetDestroyOnSystemFinish_Params Params;
+
+	Params.bShouldDestroyOnSystemFinish = bShouldDestroyOnSystemFinish;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Niagara.NiagaraActor.OnNiagaraSystemFinished
+inline void ANiagaraActor::OnNiagaraSystemFinished(struct Unknown FinishedComponent) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraActor.OnNiagaraSystemFinished");
+
+	struct OnNiagaraSystemFinished_Params {
+		struct Unknown FinishedComponent;
+	}; OnNiagaraSystemFinished_Params Params;
+
+	Params.FinishedComponent = FinishedComponent;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Niagara.NiagaraComponent.SetVariableVec4
+inline void UNiagaraComponent::SetVariableVec4(struct FName InVariableName, struct Unknown& InValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetVariableVec4");
+
+	struct SetVariableVec4_Params {
+		struct FName InVariableName;
+		struct Unknown& InValue;
+	}; SetVariableVec4_Params Params;
+
+	Params.InVariableName = InVariableName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	InValue = Params.InValue;
+
+}
+
+// Function Niagara.NiagaraComponent.SetVariableVec3
+inline void UNiagaraComponent::SetVariableVec3(struct FName InVariableName, struct Unknown InValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetVariableVec3");
+
+	struct SetVariableVec3_Params {
+		struct FName InVariableName;
+		struct Unknown InValue;
+	}; SetVariableVec3_Params Params;
+
+	Params.InVariableName = InVariableName;
+	Params.InValue = InValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Niagara.NiagaraComponent.SetVariableVec2
+inline void UNiagaraComponent::SetVariableVec2(struct FName InVariableName, struct Unknown InValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetVariableVec2");
+
+	struct SetVariableVec2_Params {
+		struct FName InVariableName;
+		struct Unknown InValue;
+	}; SetVariableVec2_Params Params;
+
+	Params.InVariableName = InVariableName;
+	Params.InValue = InValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Niagara.NiagaraComponent.SetVariableQuat
+inline void UNiagaraComponent::SetVariableQuat(struct FName InVariableName, struct Unknown& InValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetVariableQuat");
+
+	struct SetVariableQuat_Params {
+		struct FName InVariableName;
+		struct Unknown& InValue;
+	}; SetVariableQuat_Params Params;
+
+	Params.InVariableName = InVariableName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	InValue = Params.InValue;
+
+}
+
+// Function Niagara.NiagaraComponent.SetVariableObject
+inline void UNiagaraComponent::SetVariableObject(struct FName InVariableName, struct Unknown Object) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetVariableObject");
+
+	struct SetVariableObject_Params {
+		struct FName InVariableName;
+		struct Unknown Object;
+	}; SetVariableObject_Params Params;
+
+	Params.InVariableName = InVariableName;
+	Params.Object = Object;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Niagara.NiagaraComponent.SetVariableMaterial
+inline void UNiagaraComponent::SetVariableMaterial(struct FName InVariableName, struct Unknown Object) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetVariableMaterial");
+
+	struct SetVariableMaterial_Params {
+		struct FName InVariableName;
+		struct Unknown Object;
+	}; SetVariableMaterial_Params Params;
+
+	Params.InVariableName = InVariableName;
+	Params.Object = Object;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Niagara.NiagaraComponent.SetVariableLinearColor
+inline void UNiagaraComponent::SetVariableLinearColor(struct FName InVariableName, struct Unknown& InValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetVariableLinearColor");
+
+	struct SetVariableLinearColor_Params {
+		struct FName InVariableName;
+		struct Unknown& InValue;
+	}; SetVariableLinearColor_Params Params;
+
+	Params.InVariableName = InVariableName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	InValue = Params.InValue;
+
+}
+
+// Function Niagara.NiagaraComponent.SetVariableInt
+inline void UNiagaraComponent::SetVariableInt(struct FName InVariableName, int32_t InValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetVariableInt");
+
+	struct SetVariableInt_Params {
+		struct FName InVariableName;
+		int32_t InValue;
+	}; SetVariableInt_Params Params;
+
+	Params.InVariableName = InVariableName;
+	Params.InValue = InValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Niagara.NiagaraComponent.SetVariableFloat
+inline void UNiagaraComponent::SetVariableFloat(struct FName InVariableName, float InValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetVariableFloat");
+
+	struct SetVariableFloat_Params {
+		struct FName InVariableName;
+		float InValue;
+	}; SetVariableFloat_Params Params;
+
+	Params.InVariableName = InVariableName;
+	Params.InValue = InValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Niagara.NiagaraComponent.SetVariableBool
+inline void UNiagaraComponent::SetVariableBool(struct FName InVariableName, char InValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetVariableBool");
+
+	struct SetVariableBool_Params {
+		struct FName InVariableName;
+		char InValue;
+	}; SetVariableBool_Params Params;
+
+	Params.InVariableName = InVariableName;
+	Params.InValue = InValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Niagara.NiagaraComponent.SetVariableActor
+inline void UNiagaraComponent::SetVariableActor(struct FName InVariableName, struct Unknown Actor) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetVariableActor");
+
+	struct SetVariableActor_Params {
+		struct FName InVariableName;
+		struct Unknown Actor;
+	}; SetVariableActor_Params Params;
+
+	Params.InVariableName = InVariableName;
+	Params.Actor = Actor;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Niagara.NiagaraComponent.SetSeekDelta
+inline void UNiagaraComponent::SetSeekDelta(float InSeekDelta) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetSeekDelta");
+
+	struct SetSeekDelta_Params {
+		float InSeekDelta;
+	}; SetSeekDelta_Params Params;
+
+	Params.InSeekDelta = InSeekDelta;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Niagara.NiagaraComponent.SetRenderingEnabled
+inline void UNiagaraComponent::SetRenderingEnabled(char bInRenderingEnabled) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetRenderingEnabled");
+
+	struct SetRenderingEnabled_Params {
+		char bInRenderingEnabled;
+	}; SetRenderingEnabled_Params Params;
+
+	Params.bInRenderingEnabled = bInRenderingEnabled;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Niagara.NiagaraComponent.SetPreviewLODDistance
+inline void UNiagaraComponent::SetPreviewLODDistance(char bEnablePreviewLODDistance, float PreviewLODDistance) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetPreviewLODDistance");
+
+	struct SetPreviewLODDistance_Params {
+		char bEnablePreviewLODDistance;
+		float PreviewLODDistance;
+	}; SetPreviewLODDistance_Params Params;
+
+	Params.bEnablePreviewLODDistance = bEnablePreviewLODDistance;
+	Params.PreviewLODDistance = PreviewLODDistance;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Niagara.NiagaraComponent.SetPaused
+inline void UNiagaraComponent::SetPaused(char bInPaused) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetPaused");
+
+	struct SetPaused_Params {
+		char bInPaused;
+	}; SetPaused_Params Params;
+
+	Params.bInPaused = bInPaused;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Niagara.NiagaraComponent.SetNiagaraVariableVec4
+inline void UNiagaraComponent::SetNiagaraVariableVec4(struct FString InVariableName, struct Unknown& InValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetNiagaraVariableVec4");
+
+	struct SetNiagaraVariableVec4_Params {
+		struct FString InVariableName;
+		struct Unknown& InValue;
+	}; SetNiagaraVariableVec4_Params Params;
+
+	Params.InVariableName = InVariableName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	InValue = Params.InValue;
+
+}
+
+// Function Niagara.NiagaraComponent.SetNiagaraVariableVec3
+inline void UNiagaraComponent::SetNiagaraVariableVec3(struct FString InVariableName, struct Unknown InValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetNiagaraVariableVec3");
+
+	struct SetNiagaraVariableVec3_Params {
+		struct FString InVariableName;
+		struct Unknown InValue;
+	}; SetNiagaraVariableVec3_Params Params;
+
+	Params.InVariableName = InVariableName;
+	Params.InValue = InValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Niagara.NiagaraComponent.SetNiagaraVariableVec2
+inline void UNiagaraComponent::SetNiagaraVariableVec2(struct FString InVariableName, struct Unknown InValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetNiagaraVariableVec2");
+
+	struct SetNiagaraVariableVec2_Params {
+		struct FString InVariableName;
+		struct Unknown InValue;
+	}; SetNiagaraVariableVec2_Params Params;
+
+	Params.InVariableName = InVariableName;
+	Params.InValue = InValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Niagara.NiagaraComponent.SetNiagaraVariableQuat
+inline void UNiagaraComponent::SetNiagaraVariableQuat(struct FString InVariableName, struct Unknown& InValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetNiagaraVariableQuat");
+
+	struct SetNiagaraVariableQuat_Params {
+		struct FString InVariableName;
+		struct Unknown& InValue;
+	}; SetNiagaraVariableQuat_Params Params;
+
+	Params.InVariableName = InVariableName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	InValue = Params.InValue;
+
+}
+
+// Function Niagara.NiagaraComponent.SetNiagaraVariableObject
+inline void UNiagaraComponent::SetNiagaraVariableObject(struct FString InVariableName, struct Unknown Object) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetNiagaraVariableObject");
+
+	struct SetNiagaraVariableObject_Params {
+		struct FString InVariableName;
+		struct Unknown Object;
+	}; SetNiagaraVariableObject_Params Params;
+
+	Params.InVariableName = InVariableName;
+	Params.Object = Object;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Niagara.NiagaraComponent.SetNiagaraVariableLinearColor
+inline void UNiagaraComponent::SetNiagaraVariableLinearColor(struct FString InVariableName, struct Unknown& InValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetNiagaraVariableLinearColor");
+
+	struct SetNiagaraVariableLinearColor_Params {
+		struct FString InVariableName;
+		struct Unknown& InValue;
+	}; SetNiagaraVariableLinearColor_Params Params;
+
+	Params.InVariableName = InVariableName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	InValue = Params.InValue;
+
+}
+
+// Function Niagara.NiagaraComponent.SetNiagaraVariableInt
+inline void UNiagaraComponent::SetNiagaraVariableInt(struct FString InVariableName, int32_t InValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetNiagaraVariableInt");
+
+	struct SetNiagaraVariableInt_Params {
+		struct FString InVariableName;
+		int32_t InValue;
+	}; SetNiagaraVariableInt_Params Params;
+
+	Params.InVariableName = InVariableName;
+	Params.InValue = InValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Niagara.NiagaraComponent.SetNiagaraVariableFloat
+inline void UNiagaraComponent::SetNiagaraVariableFloat(struct FString InVariableName, float InValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetNiagaraVariableFloat");
+
+	struct SetNiagaraVariableFloat_Params {
+		struct FString InVariableName;
+		float InValue;
+	}; SetNiagaraVariableFloat_Params Params;
+
+	Params.InVariableName = InVariableName;
+	Params.InValue = InValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Niagara.NiagaraComponent.SetNiagaraVariableBool
+inline void UNiagaraComponent::SetNiagaraVariableBool(struct FString InVariableName, char InValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetNiagaraVariableBool");
+
+	struct SetNiagaraVariableBool_Params {
+		struct FString InVariableName;
+		char InValue;
+	}; SetNiagaraVariableBool_Params Params;
+
+	Params.InVariableName = InVariableName;
+	Params.InValue = InValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Niagara.NiagaraComponent.SetNiagaraVariableActor
+inline void UNiagaraComponent::SetNiagaraVariableActor(struct FString InVariableName, struct Unknown Actor) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetNiagaraVariableActor");
+
+	struct SetNiagaraVariableActor_Params {
+		struct FString InVariableName;
+		struct Unknown Actor;
+	}; SetNiagaraVariableActor_Params Params;
+
+	Params.InVariableName = InVariableName;
+	Params.Actor = Actor;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Niagara.NiagaraComponent.SetMaxSimTime
+inline void UNiagaraComponent::SetMaxSimTime(float InMaxTime) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetMaxSimTime");
+
+	struct SetMaxSimTime_Params {
+		float InMaxTime;
+	}; SetMaxSimTime_Params Params;
+
+	Params.InMaxTime = InMaxTime;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Niagara.NiagaraComponent.SetForceSolo
+inline void UNiagaraComponent::SetForceSolo(char bInForceSolo) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetForceSolo");
+
+	struct SetForceSolo_Params {
+		char bInForceSolo;
+	}; SetForceSolo_Params Params;
+
+	Params.bInForceSolo = bInForceSolo;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Niagara.NiagaraComponent.SetDesiredAge
+inline void UNiagaraComponent::SetDesiredAge(float InDesiredAge) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetDesiredAge");
+
+	struct SetDesiredAge_Params {
+		float InDesiredAge;
+	}; SetDesiredAge_Params Params;
+
+	Params.InDesiredAge = InDesiredAge;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Niagara.NiagaraComponent.SetCanRenderWhileSeeking
+inline void UNiagaraComponent::SetCanRenderWhileSeeking(char bInCanRenderWhileSeeking) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetCanRenderWhileSeeking");
+
+	struct SetCanRenderWhileSeeking_Params {
+		char bInCanRenderWhileSeeking;
+	}; SetCanRenderWhileSeeking_Params Params;
+
+	Params.bInCanRenderWhileSeeking = bInCanRenderWhileSeeking;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Niagara.NiagaraComponent.SetAutoDestroy
+inline void UNiagaraComponent::SetAutoDestroy(char bInAutoDestroy) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetAutoDestroy");
+
+	struct SetAutoDestroy_Params {
+		char bInAutoDestroy;
+	}; SetAutoDestroy_Params Params;
+
+	Params.bInAutoDestroy = bInAutoDestroy;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Niagara.NiagaraComponent.SetAsset
+inline void UNiagaraComponent::SetAsset(struct Unknown InAsset) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetAsset");
+
+	struct SetAsset_Params {
+		struct Unknown InAsset;
+	}; SetAsset_Params Params;
+
+	Params.InAsset = InAsset;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Niagara.NiagaraComponent.SetAllowScalability
+inline void UNiagaraComponent::SetAllowScalability(char bAllow) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetAllowScalability");
+
+	struct SetAllowScalability_Params {
+		char bAllow;
+	}; SetAllowScalability_Params Params;
+
+	Params.bAllow = bAllow;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Niagara.NiagaraComponent.SetAgeUpdateMode
+inline void UNiagaraComponent::SetAgeUpdateMode(enum class Unknow InAgeUpdateMode) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SetAgeUpdateMode");
+
+	struct SetAgeUpdateMode_Params {
+		enum class Unknow InAgeUpdateMode;
+	}; SetAgeUpdateMode_Params Params;
+
+	Params.InAgeUpdateMode = InAgeUpdateMode;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Niagara.NiagaraComponent.SeekToDesiredAge
+inline void UNiagaraComponent::SeekToDesiredAge(float InDesiredAge) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.SeekToDesiredAge");
+
+	struct SeekToDesiredAge_Params {
+		float InDesiredAge;
+	}; SeekToDesiredAge_Params Params;
+
+	Params.InDesiredAge = InDesiredAge;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Niagara.NiagaraComponent.ResetSystem
+inline void UNiagaraComponent::ResetSystem() {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.ResetSystem");
+
+	struct ResetSystem_Params {
+		
+	}; ResetSystem_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Niagara.NiagaraComponent.ReinitializeSystem
+inline void UNiagaraComponent::ReinitializeSystem() {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.ReinitializeSystem");
+
+	struct ReinitializeSystem_Params {
+		
+	}; ReinitializeSystem_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Niagara.NiagaraComponent.IsPaused
+inline char UNiagaraComponent::IsPaused() {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.IsPaused");
+
+	struct IsPaused_Params {
+		
+		char ReturnValue;
+
+	}; IsPaused_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function Niagara.NiagaraComponent.GetSeekDelta
+inline float UNiagaraComponent::GetSeekDelta() {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.GetSeekDelta");
+
+	struct GetSeekDelta_Params {
+		
+		float ReturnValue;
+
+	}; GetSeekDelta_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function Niagara.NiagaraComponent.GetPreviewLODDistanceEnabled
+inline char UNiagaraComponent::GetPreviewLODDistanceEnabled() {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.GetPreviewLODDistanceEnabled");
+
+	struct GetPreviewLODDistanceEnabled_Params {
+		
+		char ReturnValue;
+
+	}; GetPreviewLODDistanceEnabled_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function Niagara.NiagaraComponent.GetPreviewLODDistance
+inline int32_t UNiagaraComponent::GetPreviewLODDistance() {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.GetPreviewLODDistance");
+
+	struct GetPreviewLODDistance_Params {
+		
+		int32_t ReturnValue;
+
+	}; GetPreviewLODDistance_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function Niagara.NiagaraComponent.GetNiagaraParticleValueVec3_DebugOnly
+inline struct TArray<Unknown> UNiagaraComponent::GetNiagaraParticleValueVec3_DebugOnly(struct FString InEmitterName, struct FString InValueName) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.GetNiagaraParticleValueVec3_DebugOnly");
+
+	struct GetNiagaraParticleValueVec3_DebugOnly_Params {
+		struct FString InEmitterName;
+		struct FString InValueName;
+		struct TArray<Unknown> ReturnValue;
+
+	}; GetNiagaraParticleValueVec3_DebugOnly_Params Params;
+
+	Params.InEmitterName = InEmitterName;
+	Params.InValueName = InValueName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function Niagara.NiagaraComponent.GetNiagaraParticleValues_Debug
+inline struct TArray<Unknown> UNiagaraComponent::GetNiagaraParticleValues_Debug(struct FString InEmitterName, struct FString InValueName) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.GetNiagaraParticleValues_Debug");
+
+	struct GetNiagaraParticleValues_Debug_Params {
+		struct FString InEmitterName;
+		struct FString InValueName;
+		struct TArray<Unknown> ReturnValue;
+
+	}; GetNiagaraParticleValues_Debug_Params Params;
+
+	Params.InEmitterName = InEmitterName;
+	Params.InValueName = InValueName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function Niagara.NiagaraComponent.GetNiagaraParticlePositions_DebugOnly
+inline struct TArray<Unknown> UNiagaraComponent::GetNiagaraParticlePositions_DebugOnly(struct FString InEmitterName) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.GetNiagaraParticlePositions_DebugOnly");
+
+	struct GetNiagaraParticlePositions_DebugOnly_Params {
+		struct FString InEmitterName;
+		struct TArray<Unknown> ReturnValue;
+
+	}; GetNiagaraParticlePositions_DebugOnly_Params Params;
+
+	Params.InEmitterName = InEmitterName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function Niagara.NiagaraComponent.GetMaxSimTime
+inline float UNiagaraComponent::GetMaxSimTime() {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.GetMaxSimTime");
+
+	struct GetMaxSimTime_Params {
+		
+		float ReturnValue;
+
+	}; GetMaxSimTime_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function Niagara.NiagaraComponent.GetForceSolo
+inline char UNiagaraComponent::GetForceSolo() {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.GetForceSolo");
+
+	struct GetForceSolo_Params {
+		
+		char ReturnValue;
+
+	}; GetForceSolo_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function Niagara.NiagaraComponent.GetDesiredAge
+inline float UNiagaraComponent::GetDesiredAge() {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.GetDesiredAge");
+
+	struct GetDesiredAge_Params {
+		
+		float ReturnValue;
+
+	}; GetDesiredAge_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function Niagara.NiagaraComponent.GetDataInterface
+inline struct Unknown UNiagaraComponent::GetDataInterface(struct FString Name) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.GetDataInterface");
+
+	struct GetDataInterface_Params {
+		struct FString Name;
+		struct Unknown ReturnValue;
+
+	}; GetDataInterface_Params Params;
+
+	Params.Name = Name;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function Niagara.NiagaraComponent.GetAsset
+inline struct Unknown UNiagaraComponent::GetAsset() {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.GetAsset");
+
+	struct GetAsset_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetAsset_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function Niagara.NiagaraComponent.GetAgeUpdateMode
+inline enum class Unknow UNiagaraComponent::GetAgeUpdateMode() {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.GetAgeUpdateMode");
+
+	struct GetAgeUpdateMode_Params {
+		
+		enum class Unknow ReturnValue;
+
+	}; GetAgeUpdateMode_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function Niagara.NiagaraComponent.AdvanceSimulationByTime
+inline void UNiagaraComponent::AdvanceSimulationByTime(float SimulateTime, float TickDeltaSeconds) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.AdvanceSimulationByTime");
+
+	struct AdvanceSimulationByTime_Params {
+		float SimulateTime;
+		float TickDeltaSeconds;
+	}; AdvanceSimulationByTime_Params Params;
+
+	Params.SimulateTime = SimulateTime;
+	Params.TickDeltaSeconds = TickDeltaSeconds;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Niagara.NiagaraComponent.AdvanceSimulation
+inline void UNiagaraComponent::AdvanceSimulation(int32_t TickCount, float TickDeltaSeconds) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.AdvanceSimulation");
+
+	struct AdvanceSimulation_Params {
+		int32_t TickCount;
+		float TickDeltaSeconds;
+	}; AdvanceSimulation_Params Params;
+
+	Params.TickCount = TickCount;
+	Params.TickDeltaSeconds = TickDeltaSeconds;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Niagara.NiagaraParameterCollectionInstance.SetVectorParameter
+inline void UNiagaraParameterCollectionInstance::SetVectorParameter(struct FString InVariableName, struct Unknown InValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraParameterCollectionInstance.SetVectorParameter");
+
+	struct SetVectorParameter_Params {
+		struct FString InVariableName;
+		struct Unknown InValue;
+	}; SetVectorParameter_Params Params;
+
+	Params.InVariableName = InVariableName;
+	Params.InValue = InValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Niagara.NiagaraParameterCollectionInstance.SetVector4Parameter
+inline void UNiagaraParameterCollectionInstance::SetVector4Parameter(struct FString InVariableName, struct Unknown& InValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraParameterCollectionInstance.SetVector4Parameter");
+
+	struct SetVector4Parameter_Params {
+		struct FString InVariableName;
+		struct Unknown& InValue;
+	}; SetVector4Parameter_Params Params;
+
+	Params.InVariableName = InVariableName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	InValue = Params.InValue;
+
+}
+
+// Function Niagara.NiagaraParameterCollectionInstance.SetVector2DParameter
+inline void UNiagaraParameterCollectionInstance::SetVector2DParameter(struct FString InVariableName, struct Unknown InValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraParameterCollectionInstance.SetVector2DParameter");
+
+	struct SetVector2DParameter_Params {
+		struct FString InVariableName;
+		struct Unknown InValue;
+	}; SetVector2DParameter_Params Params;
+
+	Params.InVariableName = InVariableName;
+	Params.InValue = InValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Niagara.NiagaraParameterCollectionInstance.SetQuatParameter
+inline void UNiagaraParameterCollectionInstance::SetQuatParameter(struct FString InVariableName, struct Unknown& InValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraParameterCollectionInstance.SetQuatParameter");
+
+	struct SetQuatParameter_Params {
+		struct FString InVariableName;
+		struct Unknown& InValue;
+	}; SetQuatParameter_Params Params;
+
+	Params.InVariableName = InVariableName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	InValue = Params.InValue;
+
+}
+
+// Function Niagara.NiagaraParameterCollectionInstance.SetIntParameter
+inline void UNiagaraParameterCollectionInstance::SetIntParameter(struct FString InVariableName, int32_t InValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraParameterCollectionInstance.SetIntParameter");
+
+	struct SetIntParameter_Params {
+		struct FString InVariableName;
+		int32_t InValue;
+	}; SetIntParameter_Params Params;
+
+	Params.InVariableName = InVariableName;
+	Params.InValue = InValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Niagara.NiagaraParameterCollectionInstance.SetFloatParameter
+inline void UNiagaraParameterCollectionInstance::SetFloatParameter(struct FString InVariableName, float InValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraParameterCollectionInstance.SetFloatParameter");
+
+	struct SetFloatParameter_Params {
+		struct FString InVariableName;
+		float InValue;
+	}; SetFloatParameter_Params Params;
+
+	Params.InVariableName = InVariableName;
+	Params.InValue = InValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Niagara.NiagaraParameterCollectionInstance.SetColorParameter
+inline void UNiagaraParameterCollectionInstance::SetColorParameter(struct FString InVariableName, struct Unknown InValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraParameterCollectionInstance.SetColorParameter");
+
+	struct SetColorParameter_Params {
+		struct FString InVariableName;
+		struct Unknown InValue;
+	}; SetColorParameter_Params Params;
+
+	Params.InVariableName = InVariableName;
+	Params.InValue = InValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Niagara.NiagaraParameterCollectionInstance.SetBoolParameter
+inline void UNiagaraParameterCollectionInstance::SetBoolParameter(struct FString InVariableName, char InValue) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraParameterCollectionInstance.SetBoolParameter");
+
+	struct SetBoolParameter_Params {
+		struct FString InVariableName;
+		char InValue;
+	}; SetBoolParameter_Params Params;
+
+	Params.InVariableName = InVariableName;
+	Params.InValue = InValue;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Niagara.NiagaraParameterCollectionInstance.GetVectorParameter
+inline struct Unknown UNiagaraParameterCollectionInstance::GetVectorParameter(struct FString InVariableName) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraParameterCollectionInstance.GetVectorParameter");
+
+	struct GetVectorParameter_Params {
+		struct FString InVariableName;
+		struct Unknown ReturnValue;
+
+	}; GetVectorParameter_Params Params;
+
+	Params.InVariableName = InVariableName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function Niagara.NiagaraParameterCollectionInstance.GetVector4Parameter
+inline struct Unknown UNiagaraParameterCollectionInstance::GetVector4Parameter(struct FString InVariableName) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraParameterCollectionInstance.GetVector4Parameter");
+
+	struct GetVector4Parameter_Params {
+		struct FString InVariableName;
+		struct Unknown ReturnValue;
+
+	}; GetVector4Parameter_Params Params;
+
+	Params.InVariableName = InVariableName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function Niagara.NiagaraParameterCollectionInstance.GetVector2DParameter
+inline struct Unknown UNiagaraParameterCollectionInstance::GetVector2DParameter(struct FString InVariableName) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraParameterCollectionInstance.GetVector2DParameter");
+
+	struct GetVector2DParameter_Params {
+		struct FString InVariableName;
+		struct Unknown ReturnValue;
+
+	}; GetVector2DParameter_Params Params;
+
+	Params.InVariableName = InVariableName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function Niagara.NiagaraParameterCollectionInstance.GetQuatParameter
+inline struct Unknown UNiagaraParameterCollectionInstance::GetQuatParameter(struct FString InVariableName) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraParameterCollectionInstance.GetQuatParameter");
+
+	struct GetQuatParameter_Params {
+		struct FString InVariableName;
+		struct Unknown ReturnValue;
+
+	}; GetQuatParameter_Params Params;
+
+	Params.InVariableName = InVariableName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function Niagara.NiagaraParameterCollectionInstance.GetIntParameter
+inline int32_t UNiagaraParameterCollectionInstance::GetIntParameter(struct FString InVariableName) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraParameterCollectionInstance.GetIntParameter");
+
+	struct GetIntParameter_Params {
+		struct FString InVariableName;
+		int32_t ReturnValue;
+
+	}; GetIntParameter_Params Params;
+
+	Params.InVariableName = InVariableName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function Niagara.NiagaraParameterCollectionInstance.GetFloatParameter
+inline float UNiagaraParameterCollectionInstance::GetFloatParameter(struct FString InVariableName) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraParameterCollectionInstance.GetFloatParameter");
+
+	struct GetFloatParameter_Params {
+		struct FString InVariableName;
+		float ReturnValue;
+
+	}; GetFloatParameter_Params Params;
+
+	Params.InVariableName = InVariableName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function Niagara.NiagaraParameterCollectionInstance.GetColorParameter
+inline struct Unknown UNiagaraParameterCollectionInstance::GetColorParameter(struct FString InVariableName) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraParameterCollectionInstance.GetColorParameter");
+
+	struct GetColorParameter_Params {
+		struct FString InVariableName;
+		struct Unknown ReturnValue;
+
+	}; GetColorParameter_Params Params;
+
+	Params.InVariableName = InVariableName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function Niagara.NiagaraParameterCollectionInstance.GetBoolParameter
+inline char UNiagaraParameterCollectionInstance::GetBoolParameter(struct FString InVariableName) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraParameterCollectionInstance.GetBoolParameter");
+
+	struct GetBoolParameter_Params {
+		struct FString InVariableName;
+		char ReturnValue;
+
+	}; GetBoolParameter_Params Params;
+
+	Params.InVariableName = InVariableName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function Niagara.NiagaraPreviewGrid.SetPaused
+inline void ANiagaraPreviewGrid::SetPaused(char bPaused) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraPreviewGrid.SetPaused");
+
+	struct SetPaused_Params {
+		char bPaused;
+	}; SetPaused_Params Params;
+
+	Params.bPaused = bPaused;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Niagara.NiagaraPreviewGrid.GetPreviews
+inline void ANiagaraPreviewGrid::GetPreviews(struct TArray<Unknown>& OutPreviews) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraPreviewGrid.GetPreviews");
+
+	struct GetPreviews_Params {
+		struct TArray<Unknown>& OutPreviews;
+	}; GetPreviews_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	OutPreviews = Params.OutPreviews;
+
+}
+
+// Function Niagara.NiagaraPreviewGrid.DeactivatePreviews
+inline void ANiagaraPreviewGrid::DeactivatePreviews() {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraPreviewGrid.DeactivatePreviews");
+
+	struct DeactivatePreviews_Params {
+		
+	}; DeactivatePreviews_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Niagara.NiagaraPreviewGrid.ActivatePreviews
+inline void ANiagaraPreviewGrid::ActivatePreviews(char bReset) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraPreviewGrid.ActivatePreviews");
+
+	struct ActivatePreviews_Params {
+		char bReset;
+	}; ActivatePreviews_Params Params;
+
+	Params.bReset = bReset;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Niagara.NiagaraScript.RaiseOnGPUCompilationComplete
+inline void UNiagaraScript::RaiseOnGPUCompilationComplete() {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraScript.RaiseOnGPUCompilationComplete");
+
+	struct RaiseOnGPUCompilationComplete_Params {
+		
+	}; RaiseOnGPUCompilationComplete_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
 

@@ -13,3 +13,62 @@ public:
 	void ExecuteUbergraph_LineWidget(int32_t EntryPoint); // Function LineWidget.LineWidget_C.ExecuteUbergraph_LineWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 };
 
+// Function LineWidget.LineWidget_C.Construct
+inline void ULineWidget_C::Construct() {
+	static auto fn = UObject::FindObject<UFunction>("Function LineWidget.LineWidget_C.Construct");
+
+	struct Construct_Params {
+		
+	}; Construct_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LineWidget.LineWidget_C.Set
+inline void ULineWidget_C::Set(int32_t IconIndex) {
+	static auto fn = UObject::FindObject<UFunction>("Function LineWidget.LineWidget_C.Set");
+
+	struct Set_Params {
+		int32_t IconIndex;
+	}; Set_Params Params;
+
+	Params.IconIndex = IconIndex;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LineWidget.LineWidget_C.SetScale
+inline void ULineWidget_C::SetScale(float Scale) {
+	static auto fn = UObject::FindObject<UFunction>("Function LineWidget.LineWidget_C.SetScale");
+
+	struct SetScale_Params {
+		float Scale;
+	}; SetScale_Params Params;
+
+	Params.Scale = Scale;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LineWidget.LineWidget_C.ExecuteUbergraph_LineWidget
+inline void ULineWidget_C::ExecuteUbergraph_LineWidget(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function LineWidget.LineWidget_C.ExecuteUbergraph_LineWidget");
+
+	struct ExecuteUbergraph_LineWidget_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_LineWidget_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+

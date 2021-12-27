@@ -25,3 +25,21 @@ public:
 	char bDestroyAtEnd : 0; // 0x58 (1)
 };
 
+// Function NiagaraAnimNotifies.AnimNotify_PlayNiagaraEffect.GetSpawnedEffect
+inline struct Unknown UAnimNotify_PlayNiagaraEffect::GetSpawnedEffect() {
+	static auto fn = UObject::FindObject<UFunction>("Function NiagaraAnimNotifies.AnimNotify_PlayNiagaraEffect.GetSpawnedEffect");
+
+	struct GetSpawnedEffect_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetSpawnedEffect_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+

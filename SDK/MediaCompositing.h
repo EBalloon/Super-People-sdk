@@ -29,8 +29,8 @@ public:
 	struct TArray<Unknown> MediaSections; // 0x58 (16)
 };
 
-// ScriptStruct MediaCompositing.MovieSceneMediaPlayerPropertySectionTem
-struct FMovieSceneMediaPlayerPropertySectionTem : FMovieScenePropertySectionTemplate {
+// ScriptStruct MediaCompositing.MovieSceneMediaPlayerPropertySectionTemplate
+struct FMovieSceneMediaPlayerPropertySectionTemplate : FMovieScenePropertySectionTemplate {
 	struct Unknown MediaSource; // 0x48 (8)
 	struct Unknown SectionStartFrame; // 0x50 (4)
 	char bLoop : 0; // 0x54 (1)

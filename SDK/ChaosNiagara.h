@@ -110,7 +110,7 @@ public:
 	float SpreadAngleMax; // 0x19C (4)
 	struct Unknown VelocityOffsetMin; // 0x1A0 (12)
 	struct Unknown VelocityOffsetMax; // 0x1AC (12)
-	struct Unknown FinalVelocityMagnitudeMinMax; // 0x1B8 (8)
+	struct Unknown FinalVelocityMagnitudeMin; // 0x1B8 (8)
 	float MaxLatency; // 0x1C0 (4)
 	enum class Unknow DebugType; // 0x1C4 (1)
 	int32_t LastSpawnedPointID; // 0x1C8 (4)

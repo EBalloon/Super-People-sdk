@@ -195,3 +195,427 @@ struct FCapturedPixelsID {
 	struct TMap<Unknown, Unknown> Identifiers; // 0x0 (80)
 };
 
+// Function MovieSceneCapture.MovieSceneCaptureProtocolBase.IsCapturing
+inline char UMovieSceneCaptureProtocolBase::IsCapturing() {
+	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneCapture.MovieSceneCaptureProtocolBase.IsCapturing");
+
+	struct IsCapturing_Params {
+		
+		char ReturnValue;
+
+	}; IsCapturing_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function MovieSceneCapture.MovieSceneCaptureProtocolBase.GetState
+inline enum class Unknow UMovieSceneCaptureProtocolBase::GetState() {
+	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneCapture.MovieSceneCaptureProtocolBase.GetState");
+
+	struct GetState_Params {
+		
+		enum class Unknow ReturnValue;
+
+	}; GetState_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function MovieSceneCapture.MovieSceneCapture.SetImageCaptureProtocolType
+inline void UMovieSceneCapture::SetImageCaptureProtocolType(struct Unknown* ProtocolType) {
+	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneCapture.MovieSceneCapture.SetImageCaptureProtocolType");
+
+	struct SetImageCaptureProtocolType_Params {
+		struct Unknown* ProtocolType;
+	}; SetImageCaptureProtocolType_Params Params;
+
+	Params.ProtocolType = ProtocolType;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MovieSceneCapture.MovieSceneCapture.SetAudioCaptureProtocolType
+inline void UMovieSceneCapture::SetAudioCaptureProtocolType(struct Unknown* ProtocolType) {
+	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneCapture.MovieSceneCapture.SetAudioCaptureProtocolType");
+
+	struct SetAudioCaptureProtocolType_Params {
+		struct Unknown* ProtocolType;
+	}; SetAudioCaptureProtocolType_Params Params;
+
+	Params.ProtocolType = ProtocolType;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MovieSceneCapture.MovieSceneCapture.GetImageCaptureProtocol
+inline struct Unknown UMovieSceneCapture::GetImageCaptureProtocol() {
+	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneCapture.MovieSceneCapture.GetImageCaptureProtocol");
+
+	struct GetImageCaptureProtocol_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetImageCaptureProtocol_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function MovieSceneCapture.MovieSceneCapture.GetAudioCaptureProtocol
+inline struct Unknown UMovieSceneCapture::GetAudioCaptureProtocol() {
+	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneCapture.MovieSceneCapture.GetAudioCaptureProtocol");
+
+	struct GetAudioCaptureProtocol_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetAudioCaptureProtocol_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function MovieSceneCapture.UserDefinedCaptureProtocol.StopCapturingFinalPixels
+inline void UUserDefinedCaptureProtocol::StopCapturingFinalPixels() {
+	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneCapture.UserDefinedCaptureProtocol.StopCapturingFinalPixels");
+
+	struct StopCapturingFinalPixels_Params {
+		
+	}; StopCapturingFinalPixels_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MovieSceneCapture.UserDefinedCaptureProtocol.StartCapturingFinalPixels
+inline void UUserDefinedCaptureProtocol::StartCapturingFinalPixels(struct Unknown& StreamID) {
+	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneCapture.UserDefinedCaptureProtocol.StartCapturingFinalPixels");
+
+	struct StartCapturingFinalPixels_Params {
+		struct Unknown& StreamID;
+	}; StartCapturingFinalPixels_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	StreamID = Params.StreamID;
+
+}
+
+// Function MovieSceneCapture.UserDefinedCaptureProtocol.ResolveBuffer
+inline void UUserDefinedCaptureProtocol::ResolveBuffer(struct Unknown Buffer, struct Unknown& BufferID) {
+	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneCapture.UserDefinedCaptureProtocol.ResolveBuffer");
+
+	struct ResolveBuffer_Params {
+		struct Unknown Buffer;
+		struct Unknown& BufferID;
+	}; ResolveBuffer_Params Params;
+
+	Params.Buffer = Buffer;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	BufferID = Params.BufferID;
+
+}
+
+// Function MovieSceneCapture.UserDefinedCaptureProtocol.OnWarmUp
+inline void UUserDefinedCaptureProtocol::OnWarmUp() {
+	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneCapture.UserDefinedCaptureProtocol.OnWarmUp");
+
+	struct OnWarmUp_Params {
+		
+	}; OnWarmUp_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MovieSceneCapture.UserDefinedCaptureProtocol.OnTick
+inline void UUserDefinedCaptureProtocol::OnTick() {
+	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneCapture.UserDefinedCaptureProtocol.OnTick");
+
+	struct OnTick_Params {
+		
+	}; OnTick_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MovieSceneCapture.UserDefinedCaptureProtocol.OnStartCapture
+inline void UUserDefinedCaptureProtocol::OnStartCapture() {
+	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneCapture.UserDefinedCaptureProtocol.OnStartCapture");
+
+	struct OnStartCapture_Params {
+		
+	}; OnStartCapture_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MovieSceneCapture.UserDefinedCaptureProtocol.OnSetup
+inline char UUserDefinedCaptureProtocol::OnSetup() {
+	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneCapture.UserDefinedCaptureProtocol.OnSetup");
+
+	struct OnSetup_Params {
+		
+		char ReturnValue;
+
+	}; OnSetup_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function MovieSceneCapture.UserDefinedCaptureProtocol.OnPreTick
+inline void UUserDefinedCaptureProtocol::OnPreTick() {
+	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneCapture.UserDefinedCaptureProtocol.OnPreTick");
+
+	struct OnPreTick_Params {
+		
+	}; OnPreTick_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MovieSceneCapture.UserDefinedCaptureProtocol.OnPixelsReceived
+inline void UUserDefinedCaptureProtocol::OnPixelsReceived(struct Unknown& Pixels, struct Unknown& ID, struct Unknown FrameMetrics) {
+	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneCapture.UserDefinedCaptureProtocol.OnPixelsReceived");
+
+	struct OnPixelsReceived_Params {
+		struct Unknown& Pixels;
+		struct Unknown& ID;
+		struct Unknown FrameMetrics;
+	}; OnPixelsReceived_Params Params;
+
+	Params.FrameMetrics = FrameMetrics;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Pixels = Params.Pixels;
+	ID = Params.ID;
+
+}
+
+// Function MovieSceneCapture.UserDefinedCaptureProtocol.OnPauseCapture
+inline void UUserDefinedCaptureProtocol::OnPauseCapture() {
+	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneCapture.UserDefinedCaptureProtocol.OnPauseCapture");
+
+	struct OnPauseCapture_Params {
+		
+	}; OnPauseCapture_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MovieSceneCapture.UserDefinedCaptureProtocol.OnFinalize
+inline void UUserDefinedCaptureProtocol::OnFinalize() {
+	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneCapture.UserDefinedCaptureProtocol.OnFinalize");
+
+	struct OnFinalize_Params {
+		
+	}; OnFinalize_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MovieSceneCapture.UserDefinedCaptureProtocol.OnCaptureFrame
+inline void UUserDefinedCaptureProtocol::OnCaptureFrame() {
+	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneCapture.UserDefinedCaptureProtocol.OnCaptureFrame");
+
+	struct OnCaptureFrame_Params {
+		
+	}; OnCaptureFrame_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MovieSceneCapture.UserDefinedCaptureProtocol.OnCanFinalize
+inline char UUserDefinedCaptureProtocol::OnCanFinalize() {
+	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneCapture.UserDefinedCaptureProtocol.OnCanFinalize");
+
+	struct OnCanFinalize_Params {
+		
+		char ReturnValue;
+
+	}; OnCanFinalize_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function MovieSceneCapture.UserDefinedCaptureProtocol.OnBeginFinalize
+inline void UUserDefinedCaptureProtocol::OnBeginFinalize() {
+	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneCapture.UserDefinedCaptureProtocol.OnBeginFinalize");
+
+	struct OnBeginFinalize_Params {
+		
+	}; OnBeginFinalize_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MovieSceneCapture.UserDefinedCaptureProtocol.GetCurrentFrameMetrics
+inline struct Unknown UUserDefinedCaptureProtocol::GetCurrentFrameMetrics() {
+	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneCapture.UserDefinedCaptureProtocol.GetCurrentFrameMetrics");
+
+	struct GetCurrentFrameMetrics_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetCurrentFrameMetrics_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function MovieSceneCapture.UserDefinedCaptureProtocol.GenerateFilename
+inline struct FString UUserDefinedCaptureProtocol::GenerateFilename(struct Unknown& InFrameMetrics) {
+	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneCapture.UserDefinedCaptureProtocol.GenerateFilename");
+
+	struct GenerateFilename_Params {
+		struct Unknown& InFrameMetrics;
+		struct FString ReturnValue;
+
+	}; GenerateFilename_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	InFrameMetrics = Params.InFrameMetrics;
+
+
+	return params.ReturnValue;
+}
+
+// Function MovieSceneCapture.UserDefinedImageCaptureProtocol.WriteImageToDisk
+inline void UUserDefinedImageCaptureProtocol::WriteImageToDisk(struct Unknown& PixelData, struct Unknown& StreamID, struct Unknown& FrameMetrics, char bCopyImageData) {
+	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneCapture.UserDefinedImageCaptureProtocol.WriteImageToDisk");
+
+	struct WriteImageToDisk_Params {
+		struct Unknown& PixelData;
+		struct Unknown& StreamID;
+		struct Unknown& FrameMetrics;
+		char bCopyImageData;
+	}; WriteImageToDisk_Params Params;
+
+	Params.bCopyImageData = bCopyImageData;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	PixelData = Params.PixelData;
+	StreamID = Params.StreamID;
+	FrameMetrics = Params.FrameMetrics;
+
+}
+
+// Function MovieSceneCapture.UserDefinedImageCaptureProtocol.GenerateFilenameForCurrentFrame
+inline struct FString UUserDefinedImageCaptureProtocol::GenerateFilenameForCurrentFrame() {
+	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneCapture.UserDefinedImageCaptureProtocol.GenerateFilenameForCurrentFrame");
+
+	struct GenerateFilenameForCurrentFrame_Params {
+		
+		struct FString ReturnValue;
+
+	}; GenerateFilenameForCurrentFrame_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function MovieSceneCapture.UserDefinedImageCaptureProtocol.GenerateFilenameForBuffer
+inline struct FString UUserDefinedImageCaptureProtocol::GenerateFilenameForBuffer(struct Unknown Buffer, struct Unknown& StreamID) {
+	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneCapture.UserDefinedImageCaptureProtocol.GenerateFilenameForBuffer");
+
+	struct GenerateFilenameForBuffer_Params {
+		struct Unknown Buffer;
+		struct Unknown& StreamID;
+		struct FString ReturnValue;
+
+	}; GenerateFilenameForBuffer_Params Params;
+
+	Params.Buffer = Buffer;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	StreamID = Params.StreamID;
+
+
+	return params.ReturnValue;
+}
+

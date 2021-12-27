@@ -210,15 +210,15 @@ public:
 	struct Unknown FindSessions(struct Unknown WorldContextObject, struct Unknown PlayerController, int32_t MaxResults, char bUseLAN); // Function OnlineSubsystemUtils.FindSessionsCallbackProxy.FindSessions(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11C9660>
 };
 
-// Class OnlineSubsystemUtils.FindTurnBasedMatchCallback
-class UFindTurnBasedMatchCallbackls : public UOnlineBlueprintCallProxyBase {
+// Class OnlineSubsystemUtils.FindTurnBasedMatchCallbackProxy
+class UFindTurnBasedMatchCallbackProxy : public UOnlineBlueprintCallProxyBase {
 
 public:
 
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x40 (16)
 
-	struct Unknown FindTurnBasedMatch(struct Unknown WorldContextObject, struct Unknown PlayerController, struct TScriptInterface<IUnknown> MatchActor, int32_t MinPlayers, int32_t MaxPlayers, int32_t PlayerGroup, char ShowExistingMatches); // Function OnlineSubsystemUtils.FindTurnBasedMatchCallbackperty.FindTurnBasedMatch(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11C9790>
+	struct Unknown FindTurnBasedMatch(struct Unknown WorldContextObject, struct Unknown PlayerController, struct TScriptInterface<IUnknown> MatchActor, int32_t MinPlayers, int32_t MaxPlayers, int32_t PlayerGroup, char ShowExistingMatches); // Function OnlineSubsystemUtils.FindTurnBasedMatchCallbackProxy.FindTurnBasedMatch(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11C9790>
 };
 
 // Class OnlineSubsystemUtils.InAppPurchaseCallbackProxy
@@ -245,26 +245,26 @@ public:
 	struct Unknown CreateProxyObjectForInAppPurchase(struct Unknown PlayerController, struct Unknown& ProductRequest); // Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy2.CreateProxyObjectForInAppPurchase(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11C8BA0>
 };
 
-// Class OnlineSubsystemUtils.InAppPurchaseQueryCallback
-class UInAppPurchaseQueryCallback : public Object {
+// Class OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy
+class UInAppPurchaseQueryCallbackProxy : public Object {
 
 public:
 
 	struct FMulticastInlineDelegate OnSuccess; // 0x28 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x38 (16)
 
-	struct Unknown CreateProxyObjectForInAppPurchaseQuery(struct Unknown PlayerController, struct TArray<Unknown>& ProductIdentifiers); // Function OnlineSubsystemUtils.InAppPurchaseQueryCallback.CreateProxyObjectForInAppPurchaseQuery(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11C8E90>
+	struct Unknown CreateProxyObjectForInAppPurchaseQuery(struct Unknown PlayerController, struct TArray<Unknown>& ProductIdentifiers); // Function OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy.CreateProxyObjectForInAppPurchaseQuery(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11C8E90>
 };
 
-// Class OnlineSubsystemUtils.InAppPurchaseQueryCallbackls
-class UInAppPurchaseQueryCallbackls : public Object {
+// Class OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy2
+class UInAppPurchaseQueryCallbackProxy2 : public Object {
 
 public:
 
 	struct FMulticastInlineDelegate OnSuccess; // 0x28 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x38 (16)
 
-	struct Unknown CreateProxyObjectForInAppPurchaseQuery(struct Unknown PlayerController, struct TArray<Unknown>& ProductIdentifiers); // Function OnlineSubsystemUtils.InAppPurchaseQueryCallback.CreateProxyObjectForInAppPurchaseQuery(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11C8D80>
+	struct Unknown CreateProxyObjectForInAppPurchaseQuery(struct Unknown PlayerController, struct TArray<Unknown>& ProductIdentifiers); // Function OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy2.CreateProxyObjectForInAppPurchaseQuery(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11C8D80>
 };
 
 // Class OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy
@@ -604,4 +604,876 @@ struct FSpectatorReservation {
 	struct Unknown SpectatorId; // 0x0 (40)
 	struct Unknown Spectator; // 0x28 (80)
 };
+
+// Function OnlineSubsystemUtils.AchievementQueryCallbackProxy.CacheAchievements
+inline struct Unknown UAchievementQueryCallbackProxy::CacheAchievements(struct Unknown WorldContextObject, struct Unknown PlayerController) {
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.AchievementQueryCallbackProxy.CacheAchievements");
+
+	struct CacheAchievements_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown PlayerController;
+		struct Unknown ReturnValue;
+
+	}; CacheAchievements_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.PlayerController = PlayerController;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function OnlineSubsystemUtils.AchievementQueryCallbackProxy.CacheAchievementDescriptions
+inline struct Unknown UAchievementQueryCallbackProxy::CacheAchievementDescriptions(struct Unknown WorldContextObject, struct Unknown PlayerController) {
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.AchievementQueryCallbackProxy.CacheAchievementDescriptions");
+
+	struct CacheAchievementDescriptions_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown PlayerController;
+		struct Unknown ReturnValue;
+
+	}; CacheAchievementDescriptions_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.PlayerController = PlayerController;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function OnlineSubsystemUtils.AchievementWriteCallbackProxy.WriteAchievementProgress
+inline struct Unknown UAchievementWriteCallbackProxy::WriteAchievementProgress(struct Unknown WorldContextObject, struct Unknown PlayerController, struct FName AchievementName, float progress, int32_t UserTag) {
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.AchievementWriteCallbackProxy.WriteAchievementProgress");
+
+	struct WriteAchievementProgress_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown PlayerController;
+		struct FName AchievementName;
+		float progress;
+		int32_t UserTag;
+		struct Unknown ReturnValue;
+
+	}; WriteAchievementProgress_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.PlayerController = PlayerController;
+	Params.AchievementName = AchievementName;
+	Params.progress = progress;
+	Params.UserTag = UserTag;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function OnlineSubsystemUtils.ConnectionCallbackProxy.ConnectToService
+inline struct Unknown UConnectionCallbackProxy::ConnectToService(struct Unknown WorldContextObject, struct Unknown PlayerController) {
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.ConnectionCallbackProxy.ConnectToService");
+
+	struct ConnectToService_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown PlayerController;
+		struct Unknown ReturnValue;
+
+	}; ConnectToService_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.PlayerController = PlayerController;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function OnlineSubsystemUtils.CreateSessionCallbackProxy.CreateSession
+inline struct Unknown UCreateSessionCallbackProxy::CreateSession(struct Unknown WorldContextObject, struct Unknown PlayerController, int32_t PublicConnections, char bUseLAN) {
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.CreateSessionCallbackProxy.CreateSession");
+
+	struct CreateSession_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown PlayerController;
+		int32_t PublicConnections;
+		char bUseLAN;
+		struct Unknown ReturnValue;
+
+	}; CreateSession_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.PlayerController = PlayerController;
+	Params.PublicConnections = PublicConnections;
+	Params.bUseLAN = bUseLAN;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function OnlineSubsystemUtils.DestroySessionCallbackProxy.DestroySession
+inline struct Unknown UDestroySessionCallbackProxy::DestroySession(struct Unknown WorldContextObject, struct Unknown PlayerController) {
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.DestroySessionCallbackProxy.DestroySession");
+
+	struct DestroySession_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown PlayerController;
+		struct Unknown ReturnValue;
+
+	}; DestroySession_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.PlayerController = PlayerController;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function OnlineSubsystemUtils.EndMatchCallbackProxy.EndMatch
+inline struct Unknown UEndMatchCallbackProxy::EndMatch(struct Unknown WorldContextObject, struct Unknown PlayerController, struct TScriptInterface<IUnknown> MatchActor, struct FString MatchID, char LocalPlayerOutcome, char OtherPlayersOutcome) {
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.EndMatchCallbackProxy.EndMatch");
+
+	struct EndMatch_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown PlayerController;
+		struct TScriptInterface<IUnknown> MatchActor;
+		struct FString MatchID;
+		char LocalPlayerOutcome;
+		char OtherPlayersOutcome;
+		struct Unknown ReturnValue;
+
+	}; EndMatch_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.PlayerController = PlayerController;
+	Params.MatchActor = MatchActor;
+	Params.MatchID = MatchID;
+	Params.LocalPlayerOutcome = LocalPlayerOutcome;
+	Params.OtherPlayersOutcome = OtherPlayersOutcome;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function OnlineSubsystemUtils.EndTurnCallbackProxy.EndTurn
+inline struct Unknown UEndTurnCallbackProxy::EndTurn(struct Unknown WorldContextObject, struct Unknown PlayerController, struct FString MatchID, struct TScriptInterface<IUnknown> TurnBasedMatchInterface) {
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.EndTurnCallbackProxy.EndTurn");
+
+	struct EndTurn_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown PlayerController;
+		struct FString MatchID;
+		struct TScriptInterface<IUnknown> TurnBasedMatchInterface;
+		struct Unknown ReturnValue;
+
+	}; EndTurn_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.PlayerController = PlayerController;
+	Params.MatchID = MatchID;
+	Params.TurnBasedMatchInterface = TurnBasedMatchInterface;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetServerName
+inline struct FString UFindSessionsCallbackProxy::GetServerName(struct Unknown& Result) {
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetServerName");
+
+	struct GetServerName_Params {
+		struct Unknown& Result;
+		struct FString ReturnValue;
+
+	}; GetServerName_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Result = Params.Result;
+
+
+	return params.ReturnValue;
+}
+
+// Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetPingInMs
+inline int32_t UFindSessionsCallbackProxy::GetPingInMs(struct Unknown& Result) {
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetPingInMs");
+
+	struct GetPingInMs_Params {
+		struct Unknown& Result;
+		int32_t ReturnValue;
+
+	}; GetPingInMs_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Result = Params.Result;
+
+
+	return params.ReturnValue;
+}
+
+// Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetMaxPlayers
+inline int32_t UFindSessionsCallbackProxy::GetMaxPlayers(struct Unknown& Result) {
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetMaxPlayers");
+
+	struct GetMaxPlayers_Params {
+		struct Unknown& Result;
+		int32_t ReturnValue;
+
+	}; GetMaxPlayers_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Result = Params.Result;
+
+
+	return params.ReturnValue;
+}
+
+// Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetCurrentPlayers
+inline int32_t UFindSessionsCallbackProxy::GetCurrentPlayers(struct Unknown& Result) {
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetCurrentPlayers");
+
+	struct GetCurrentPlayers_Params {
+		struct Unknown& Result;
+		int32_t ReturnValue;
+
+	}; GetCurrentPlayers_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Result = Params.Result;
+
+
+	return params.ReturnValue;
+}
+
+// Function OnlineSubsystemUtils.FindSessionsCallbackProxy.FindSessions
+inline struct Unknown UFindSessionsCallbackProxy::FindSessions(struct Unknown WorldContextObject, struct Unknown PlayerController, int32_t MaxResults, char bUseLAN) {
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.FindSessionsCallbackProxy.FindSessions");
+
+	struct FindSessions_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown PlayerController;
+		int32_t MaxResults;
+		char bUseLAN;
+		struct Unknown ReturnValue;
+
+	}; FindSessions_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.PlayerController = PlayerController;
+	Params.MaxResults = MaxResults;
+	Params.bUseLAN = bUseLAN;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function OnlineSubsystemUtils.FindTurnBasedMatchCallbackProxy.FindTurnBasedMatch
+inline struct Unknown UFindTurnBasedMatchCallbackProxy::FindTurnBasedMatch(struct Unknown WorldContextObject, struct Unknown PlayerController, struct TScriptInterface<IUnknown> MatchActor, int32_t MinPlayers, int32_t MaxPlayers, int32_t PlayerGroup, char ShowExistingMatches) {
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.FindTurnBasedMatchCallbackProxy.FindTurnBasedMatch");
+
+	struct FindTurnBasedMatch_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown PlayerController;
+		struct TScriptInterface<IUnknown> MatchActor;
+		int32_t MinPlayers;
+		int32_t MaxPlayers;
+		int32_t PlayerGroup;
+		char ShowExistingMatches;
+		struct Unknown ReturnValue;
+
+	}; FindTurnBasedMatch_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.PlayerController = PlayerController;
+	Params.MatchActor = MatchActor;
+	Params.MinPlayers = MinPlayers;
+	Params.MaxPlayers = MaxPlayers;
+	Params.PlayerGroup = PlayerGroup;
+	Params.ShowExistingMatches = ShowExistingMatches;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy.CreateProxyObjectForInAppPurchase
+inline struct Unknown UInAppPurchaseCallbackProxy::CreateProxyObjectForInAppPurchase(struct Unknown PlayerController, struct Unknown& ProductRequest) {
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy.CreateProxyObjectForInAppPurchase");
+
+	struct CreateProxyObjectForInAppPurchase_Params {
+		struct Unknown PlayerController;
+		struct Unknown& ProductRequest;
+		struct Unknown ReturnValue;
+
+	}; CreateProxyObjectForInAppPurchase_Params Params;
+
+	Params.PlayerController = PlayerController;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	ProductRequest = Params.ProductRequest;
+
+
+	return params.ReturnValue;
+}
+
+// Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy2.CreateProxyObjectForInAppPurchaseUnprocessedPurchases
+inline struct Unknown UInAppPurchaseCallbackProxy2::CreateProxyObjectForInAppPurchaseUnprocessedPurchases(struct Unknown PlayerController) {
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy2.CreateProxyObjectForInAppPurchaseUnprocessedPurchases");
+
+	struct CreateProxyObjectForInAppPurchaseUnprocessedPurchases_Params {
+		struct Unknown PlayerController;
+		struct Unknown ReturnValue;
+
+	}; CreateProxyObjectForInAppPurchaseUnprocessedPurchases_Params Params;
+
+	Params.PlayerController = PlayerController;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy2.CreateProxyObjectForInAppPurchaseQueryOwned
+inline struct Unknown UInAppPurchaseCallbackProxy2::CreateProxyObjectForInAppPurchaseQueryOwned(struct Unknown PlayerController) {
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy2.CreateProxyObjectForInAppPurchaseQueryOwned");
+
+	struct CreateProxyObjectForInAppPurchaseQueryOwned_Params {
+		struct Unknown PlayerController;
+		struct Unknown ReturnValue;
+
+	}; CreateProxyObjectForInAppPurchaseQueryOwned_Params Params;
+
+	Params.PlayerController = PlayerController;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy2.CreateProxyObjectForInAppPurchase
+inline struct Unknown UInAppPurchaseCallbackProxy2::CreateProxyObjectForInAppPurchase(struct Unknown PlayerController, struct Unknown& ProductRequest) {
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy2.CreateProxyObjectForInAppPurchase");
+
+	struct CreateProxyObjectForInAppPurchase_Params {
+		struct Unknown PlayerController;
+		struct Unknown& ProductRequest;
+		struct Unknown ReturnValue;
+
+	}; CreateProxyObjectForInAppPurchase_Params Params;
+
+	Params.PlayerController = PlayerController;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	ProductRequest = Params.ProductRequest;
+
+
+	return params.ReturnValue;
+}
+
+// Function OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy.CreateProxyObjectForInAppPurchaseQuery
+inline struct Unknown UInAppPurchaseQueryCallbackProxy::CreateProxyObjectForInAppPurchaseQuery(struct Unknown PlayerController, struct TArray<Unknown>& ProductIdentifiers) {
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy.CreateProxyObjectForInAppPurchaseQuery");
+
+	struct CreateProxyObjectForInAppPurchaseQuery_Params {
+		struct Unknown PlayerController;
+		struct TArray<Unknown>& ProductIdentifiers;
+		struct Unknown ReturnValue;
+
+	}; CreateProxyObjectForInAppPurchaseQuery_Params Params;
+
+	Params.PlayerController = PlayerController;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	ProductIdentifiers = Params.ProductIdentifiers;
+
+
+	return params.ReturnValue;
+}
+
+// Function OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy2.CreateProxyObjectForInAppPurchaseQuery
+inline struct Unknown UInAppPurchaseQueryCallbackProxy2::CreateProxyObjectForInAppPurchaseQuery(struct Unknown PlayerController, struct TArray<Unknown>& ProductIdentifiers) {
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy2.CreateProxyObjectForInAppPurchaseQuery");
+
+	struct CreateProxyObjectForInAppPurchaseQuery_Params {
+		struct Unknown PlayerController;
+		struct TArray<Unknown>& ProductIdentifiers;
+		struct Unknown ReturnValue;
+
+	}; CreateProxyObjectForInAppPurchaseQuery_Params Params;
+
+	Params.PlayerController = PlayerController;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	ProductIdentifiers = Params.ProductIdentifiers;
+
+
+	return params.ReturnValue;
+}
+
+// Function OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy.CreateProxyObjectForInAppPurchaseRestore
+inline struct Unknown UInAppPurchaseRestoreCallbackProxy::CreateProxyObjectForInAppPurchaseRestore(struct TArray<Unknown>& ConsumableProductFlags, struct Unknown PlayerController) {
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy.CreateProxyObjectForInAppPurchaseRestore");
+
+	struct CreateProxyObjectForInAppPurchaseRestore_Params {
+		struct TArray<Unknown>& ConsumableProductFlags;
+		struct Unknown PlayerController;
+		struct Unknown ReturnValue;
+
+	}; CreateProxyObjectForInAppPurchaseRestore_Params Params;
+
+	Params.PlayerController = PlayerController;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	ConsumableProductFlags = Params.ConsumableProductFlags;
+
+
+	return params.ReturnValue;
+}
+
+// Function OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy2.CreateProxyObjectForInAppPurchaseRestore
+inline struct Unknown UInAppPurchaseRestoreCallbackProxy2::CreateProxyObjectForInAppPurchaseRestore(struct TArray<Unknown>& ConsumableProductFlags, struct Unknown PlayerController) {
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy2.CreateProxyObjectForInAppPurchaseRestore");
+
+	struct CreateProxyObjectForInAppPurchaseRestore_Params {
+		struct TArray<Unknown>& ConsumableProductFlags;
+		struct Unknown PlayerController;
+		struct Unknown ReturnValue;
+
+	}; CreateProxyObjectForInAppPurchaseRestore_Params Params;
+
+	Params.PlayerController = PlayerController;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	ConsumableProductFlags = Params.ConsumableProductFlags;
+
+
+	return params.ReturnValue;
+}
+
+// Function OnlineSubsystemUtils.JoinSessionCallbackProxy.JoinSession
+inline struct Unknown UJoinSessionCallbackProxy::JoinSession(struct Unknown WorldContextObject, struct Unknown PlayerController, struct Unknown& SearchResult) {
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.JoinSessionCallbackProxy.JoinSession");
+
+	struct JoinSession_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown PlayerController;
+		struct Unknown& SearchResult;
+		struct Unknown ReturnValue;
+
+	}; JoinSession_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.PlayerController = PlayerController;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	SearchResult = Params.SearchResult;
+
+
+	return params.ReturnValue;
+}
+
+// Function OnlineSubsystemUtils.LeaderboardFlushCallbackProxy.CreateProxyObjectForFlush
+inline struct Unknown ULeaderboardFlushCallbackProxy::CreateProxyObjectForFlush(struct Unknown PlayerController, struct FName SessionName) {
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.LeaderboardFlushCallbackProxy.CreateProxyObjectForFlush");
+
+	struct CreateProxyObjectForFlush_Params {
+		struct Unknown PlayerController;
+		struct FName SessionName;
+		struct Unknown ReturnValue;
+
+	}; CreateProxyObjectForFlush_Params Params;
+
+	Params.PlayerController = PlayerController;
+	Params.SessionName = SessionName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function OnlineSubsystemUtils.LeaderboardQueryCallbackProxy.CreateProxyObjectForIntQuery
+inline struct Unknown ULeaderboardQueryCallbackProxy::CreateProxyObjectForIntQuery(struct Unknown PlayerController, struct FName StatName) {
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.LeaderboardQueryCallbackProxy.CreateProxyObjectForIntQuery");
+
+	struct CreateProxyObjectForIntQuery_Params {
+		struct Unknown PlayerController;
+		struct FName StatName;
+		struct Unknown ReturnValue;
+
+	}; CreateProxyObjectForIntQuery_Params Params;
+
+	Params.PlayerController = PlayerController;
+	Params.StatName = StatName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function OnlineSubsystemUtils.LogoutCallbackProxy.Logout
+inline struct Unknown ULogoutCallbackProxy::Logout(struct Unknown WorldContextObject, struct Unknown PlayerController) {
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.LogoutCallbackProxy.Logout");
+
+	struct Logout_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown PlayerController;
+		struct Unknown ReturnValue;
+
+	}; Logout_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.PlayerController = PlayerController;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function OnlineSubsystemUtils.OnlineBeaconClient.ClientOnConnected
+inline void AOnlineBeaconClient::ClientOnConnected() {
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.OnlineBeaconClient.ClientOnConnected");
+
+	struct ClientOnConnected_Params {
+		
+	}; ClientOnConnected_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function OnlineSubsystemUtils.PartyBeaconClient.ServerUpdateReservationRequest
+inline void APartyBeaconClient::ServerUpdateReservationRequest(struct FString SessionID, struct Unknown ReservationUpdate) {
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.PartyBeaconClient.ServerUpdateReservationRequest");
+
+	struct ServerUpdateReservationRequest_Params {
+		struct FString SessionID;
+		struct Unknown ReservationUpdate;
+	}; ServerUpdateReservationRequest_Params Params;
+
+	Params.SessionID = SessionID;
+	Params.ReservationUpdate = ReservationUpdate;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function OnlineSubsystemUtils.PartyBeaconClient.ServerReservationRequest
+inline void APartyBeaconClient::ServerReservationRequest(struct FString SessionID, struct Unknown Reservation) {
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.PartyBeaconClient.ServerReservationRequest");
+
+	struct ServerReservationRequest_Params {
+		struct FString SessionID;
+		struct Unknown Reservation;
+	}; ServerReservationRequest_Params Params;
+
+	Params.SessionID = SessionID;
+	Params.Reservation = Reservation;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function OnlineSubsystemUtils.PartyBeaconClient.ServerRemoveMemberFromReservationRequest
+inline void APartyBeaconClient::ServerRemoveMemberFromReservationRequest(struct FString SessionID, struct Unknown ReservationUpdate) {
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.PartyBeaconClient.ServerRemoveMemberFromReservationRequest");
+
+	struct ServerRemoveMemberFromReservationRequest_Params {
+		struct FString SessionID;
+		struct Unknown ReservationUpdate;
+	}; ServerRemoveMemberFromReservationRequest_Params Params;
+
+	Params.SessionID = SessionID;
+	Params.ReservationUpdate = ReservationUpdate;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function OnlineSubsystemUtils.PartyBeaconClient.ServerCancelReservationRequest
+inline void APartyBeaconClient::ServerCancelReservationRequest(struct Unknown PartyLeader) {
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.PartyBeaconClient.ServerCancelReservationRequest");
+
+	struct ServerCancelReservationRequest_Params {
+		struct Unknown PartyLeader;
+	}; ServerCancelReservationRequest_Params Params;
+
+	Params.PartyLeader = PartyLeader;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function OnlineSubsystemUtils.PartyBeaconClient.ClientSendReservationUpdates
+inline void APartyBeaconClient::ClientSendReservationUpdates(int32_t NumRemainingReservations) {
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.PartyBeaconClient.ClientSendReservationUpdates");
+
+	struct ClientSendReservationUpdates_Params {
+		int32_t NumRemainingReservations;
+	}; ClientSendReservationUpdates_Params Params;
+
+	Params.NumRemainingReservations = NumRemainingReservations;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function OnlineSubsystemUtils.PartyBeaconClient.ClientSendReservationFull
+inline void APartyBeaconClient::ClientSendReservationFull() {
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.PartyBeaconClient.ClientSendReservationFull");
+
+	struct ClientSendReservationFull_Params {
+		
+	}; ClientSendReservationFull_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function OnlineSubsystemUtils.PartyBeaconClient.ClientReservationResponse
+inline void APartyBeaconClient::ClientReservationResponse(char ReservationResponse) {
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.PartyBeaconClient.ClientReservationResponse");
+
+	struct ClientReservationResponse_Params {
+		char ReservationResponse;
+	}; ClientReservationResponse_Params Params;
+
+	Params.ReservationResponse = ReservationResponse;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function OnlineSubsystemUtils.PartyBeaconClient.ClientCancelReservationResponse
+inline void APartyBeaconClient::ClientCancelReservationResponse(char ReservationResponse) {
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.PartyBeaconClient.ClientCancelReservationResponse");
+
+	struct ClientCancelReservationResponse_Params {
+		char ReservationResponse;
+	}; ClientCancelReservationResponse_Params Params;
+
+	Params.ReservationResponse = ReservationResponse;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function OnlineSubsystemUtils.QuitMatchCallbackProxy.QuitMatch
+inline struct Unknown UQuitMatchCallbackProxy::QuitMatch(struct Unknown WorldContextObject, struct Unknown PlayerController, struct FString MatchID, char Outcome, int32_t TurnTimeoutInSeconds) {
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.QuitMatchCallbackProxy.QuitMatch");
+
+	struct QuitMatch_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown PlayerController;
+		struct FString MatchID;
+		char Outcome;
+		int32_t TurnTimeoutInSeconds;
+		struct Unknown ReturnValue;
+
+	}; QuitMatch_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.PlayerController = PlayerController;
+	Params.MatchID = MatchID;
+	Params.Outcome = Outcome;
+	Params.TurnTimeoutInSeconds = TurnTimeoutInSeconds;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function OnlineSubsystemUtils.ShowLoginUICallbackProxy.ShowExternalLoginUI
+inline struct Unknown UShowLoginUICallbackProxy::ShowExternalLoginUI(struct Unknown WorldContextObject, struct Unknown InPlayerController) {
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.ShowLoginUICallbackProxy.ShowExternalLoginUI");
+
+	struct ShowExternalLoginUI_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown InPlayerController;
+		struct Unknown ReturnValue;
+
+	}; ShowExternalLoginUI_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.InPlayerController = InPlayerController;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function OnlineSubsystemUtils.SpectatorBeaconClient.ServerReservationRequest
+inline void ASpectatorBeaconClient::ServerReservationRequest(struct FString SessionID, struct Unknown Reservation) {
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.SpectatorBeaconClient.ServerReservationRequest");
+
+	struct ServerReservationRequest_Params {
+		struct FString SessionID;
+		struct Unknown Reservation;
+	}; ServerReservationRequest_Params Params;
+
+	Params.SessionID = SessionID;
+	Params.Reservation = Reservation;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function OnlineSubsystemUtils.SpectatorBeaconClient.ServerCancelReservationRequest
+inline void ASpectatorBeaconClient::ServerCancelReservationRequest(struct Unknown Spectator) {
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.SpectatorBeaconClient.ServerCancelReservationRequest");
+
+	struct ServerCancelReservationRequest_Params {
+		struct Unknown Spectator;
+	}; ServerCancelReservationRequest_Params Params;
+
+	Params.Spectator = Spectator;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function OnlineSubsystemUtils.SpectatorBeaconClient.ClientSendReservationUpdates
+inline void ASpectatorBeaconClient::ClientSendReservationUpdates(int32_t NumRemainingReservations) {
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.SpectatorBeaconClient.ClientSendReservationUpdates");
+
+	struct ClientSendReservationUpdates_Params {
+		int32_t NumRemainingReservations;
+	}; ClientSendReservationUpdates_Params Params;
+
+	Params.NumRemainingReservations = NumRemainingReservations;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function OnlineSubsystemUtils.SpectatorBeaconClient.ClientSendReservationFull
+inline void ASpectatorBeaconClient::ClientSendReservationFull() {
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.SpectatorBeaconClient.ClientSendReservationFull");
+
+	struct ClientSendReservationFull_Params {
+		
+	}; ClientSendReservationFull_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function OnlineSubsystemUtils.SpectatorBeaconClient.ClientReservationResponse
+inline void ASpectatorBeaconClient::ClientReservationResponse(char ReservationResponse) {
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.SpectatorBeaconClient.ClientReservationResponse");
+
+	struct ClientReservationResponse_Params {
+		char ReservationResponse;
+	}; ClientReservationResponse_Params Params;
+
+	Params.ReservationResponse = ReservationResponse;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function OnlineSubsystemUtils.SpectatorBeaconClient.ClientCancelReservationResponse
+inline void ASpectatorBeaconClient::ClientCancelReservationResponse(char ReservationResponse) {
+	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.SpectatorBeaconClient.ClientCancelReservationResponse");
+
+	struct ClientCancelReservationResponse_Params {
+		char ReservationResponse;
+	}; ClientCancelReservationResponse_Params Params;
+
+	Params.ReservationResponse = ReservationResponse;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
 

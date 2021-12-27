@@ -30,13 +30,13 @@ enum class EMagicLeapMeshState : uint8_t {
 	EMagicLeapMeshState = 4,
 };
 
-// Enum MagicLeap.EMagicLeapMeshVertexColorMode
-enum class EMagicLeapMeshVertexColorMode : uint8_t {
-	EMagicLeapMeshVertexColorMode = 0,
-	EMagicLeapMeshVertexColorMode = 1,
-	EMagicLeapMeshVertexColorMode = 2,
-	EMagicLeapMeshVertexColorMode = 3,
-	EMagicLeapMeshVertexColorMode = 4,
+// Enum MagicLeap.EMagicLeapMeshVertexColor
+enum class EMagicLeapMeshVertexColor : uint8_t {
+	EMagicLeapMeshVertexColor = 0,
+	EMagicLeapMeshVertexColorMnged = 1,
+	EMagicLeapMeshVertexColor = 2,
+	EMagicLeapMeshVertexColorMed = 3,
+	EMagicLeapMeshVertexColor = 4,
 };
 
 // Enum MagicLeap.EMagicLeapMeshType
@@ -106,9 +106,9 @@ public:
 	char TryGetItemsDetailsAsync(struct TArray<Unknown>& ItemIDs); // Function MagicLeap.InAppPurchaseComponent.TryGetItemsDetailsAsync(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17CBB70>
 	void PurchaseConfirmationSuccess__DelegateSignature(struct Unknown& PurchaseConfirmations); // DelegateFunction MagicLeap.InAppPurchaseComponent.PurchaseConfirmationSuccess__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 	void PurchaseConfirmationFailure__DelegateSignature(); // DelegateFunction MagicLeap.InAppPurchaseComponent.PurchaseConfirmationFailure__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void InAppPurchaseLogMessage__DelegateSignature(struct FString LogMessage); // DelegateFunction MagicLeap.InAppPurchaseComponent.InAppPurchaseLogMessage__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void GetPurchaseHistorySuccess__DelegateSignature(struct TArray<Unknown>& PurchaseHistory); // DelegateFunction MagicLeap.InAppPurchaseComponent.GetPurchaseHistorySuccess__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void GetPurchaseHistoryFailure__DelegateSignature(); // DelegateFunction MagicLeap.InAppPurchaseComponent.GetPurchaseHistoryFailure__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void InAppPurchaseLogMessage__Delegy(struct FString LogMessage); // DelegateFunction MagicLeap.InAppPurchaseComponent.InAppPurchaseLogMessage__Deleg(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void GetPurchaseHistorySuccess__DelegateSig(struct TArray<Unknown>& PurchaseHistory); // DelegateFunction MagicLeap.InAppPurchaseComponent.GetPurchaseHistorySuccess__DelegateSigture(MulticastDelegate|Public|Delegate|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void GetPurchaseHistoryFailure__DelegateSig(); // DelegateFunction MagicLeap.InAppPurchaseComponent.GetPurchaseHistoryFailure__DelegateSig(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 	void GetItemsDetailsSuccess__DelegateSignature(struct TArray<Unknown>& ItemsDetails); // DelegateFunction MagicLeap.InAppPurchaseComponent.GetItemsDetailsSuccess__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 	void GetItemsDetailsFailure__DelegateSignature(); // DelegateFunction MagicLeap.InAppPurchaseComponent.GetItemsDetailsFailure__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 };
@@ -230,7 +230,7 @@ struct FMagicLeapRaycastQueryParams {
 	int32_t Width; // 0x24 (4)
 	int32_t Height; // 0x28 (4)
 	float HorizontalFovDegrees; // 0x2C (4)
-	char CollideWithUnobserv : 0; // 0x30 (1)
+	char CollideWithUnobservry : 0; // 0x30 (1)
 	int32_t UserData; // 0x34 (4)
 };
 
@@ -251,4 +251,294 @@ struct FMagicLeapHeadTrackingState {
 	enum class Unknow Error; // 0x1 (1)
 	float Confidence; // 0x4 (4)
 };
+
+// Function MagicLeap.InAppPurchaseComponent.TryPurchaseItemAsync
+inline char UInAppPurchaseComponent::TryPurchaseItemAsync(struct Unknown& ItemDetails) {
+	static auto fn = UObject::FindObject<UFunction>("Function MagicLeap.InAppPurchaseComponent.TryPurchaseItemAsync");
+
+	struct TryPurchaseItemAsync_Params {
+		struct Unknown& ItemDetails;
+		char ReturnValue;
+
+	}; TryPurchaseItemAsync_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	ItemDetails = Params.ItemDetails;
+
+
+	return params.ReturnValue;
+}
+
+// Function MagicLeap.InAppPurchaseComponent.TryGetPurchaseHistoryAsync
+inline char UInAppPurchaseComponent::TryGetPurchaseHistoryAsync(int32_t InNumPages) {
+	static auto fn = UObject::FindObject<UFunction>("Function MagicLeap.InAppPurchaseComponent.TryGetPurchaseHistoryAsync");
+
+	struct TryGetPurchaseHistoryAsync_Params {
+		int32_t InNumPages;
+		char ReturnValue;
+
+	}; TryGetPurchaseHistoryAsync_Params Params;
+
+	Params.InNumPages = InNumPages;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function MagicLeap.InAppPurchaseComponent.TryGetItemsDetailsAsync
+inline char UInAppPurchaseComponent::TryGetItemsDetailsAsync(struct TArray<Unknown>& ItemIDs) {
+	static auto fn = UObject::FindObject<UFunction>("Function MagicLeap.InAppPurchaseComponent.TryGetItemsDetailsAsync");
+
+	struct TryGetItemsDetailsAsync_Params {
+		struct TArray<Unknown>& ItemIDs;
+		char ReturnValue;
+
+	}; TryGetItemsDetailsAsync_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	ItemIDs = Params.ItemIDs;
+
+
+	return params.ReturnValue;
+}
+
+// DelegateFunction MagicLeap.InAppPurchaseComponent.PurchaseConfirmationSuccess__DelegateSignature
+inline void UInAppPurchaseComponent::PurchaseConfirmationSuccess__DelegateSignature(struct Unknown& PurchaseConfirmations) {
+	static auto fn = UObject::FindObject<UFunction>("DelegateFunction MagicLeap.InAppPurchaseComponent.PurchaseConfirmationSuccess__DelegateSignature");
+
+	struct PurchaseConfirmationSuccess__DelegateSignature_Params {
+		struct Unknown& PurchaseConfirmations;
+	}; PurchaseConfirmationSuccess__DelegateSignature_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	PurchaseConfirmations = Params.PurchaseConfirmations;
+
+}
+
+// DelegateFunction MagicLeap.InAppPurchaseComponent.PurchaseConfirmationFailure__DelegateSignature
+inline void UInAppPurchaseComponent::PurchaseConfirmationFailure__DelegateSignature() {
+	static auto fn = UObject::FindObject<UFunction>("DelegateFunction MagicLeap.InAppPurchaseComponent.PurchaseConfirmationFailure__DelegateSignature");
+
+	struct PurchaseConfirmationFailure__DelegateSignature_Params {
+		
+	}; PurchaseConfirmationFailure__DelegateSignature_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// DelegateFunction MagicLeap.InAppPurchaseComponent.InAppPurchaseLogMessage__Deleg
+inline void UInAppPurchaseComponent::InAppPurchaseLogMessage__Deleg(struct FString LogMessage) {
+	static auto fn = UObject::FindObject<UFunction>("DelegateFunction MagicLeap.InAppPurchaseComponent.InAppPurchaseLogMessage__Deleg");
+
+	struct InAppPurchaseLogMessage__Deleg_Params {
+		struct FString LogMessage;
+	}; InAppPurchaseLogMessage__Deleg_Params Params;
+
+	Params.LogMessage = LogMessage;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// DelegateFunction MagicLeap.InAppPurchaseComponent.GetPurchaseHistorySuccess__DelegateSigture
+inline void UInAppPurchaseComponent::GetPurchaseHistorySuccess__DelegateSig(struct TArray<Unknown>& PurchaseHistory) {
+	static auto fn = UObject::FindObject<UFunction>("DelegateFunction MagicLeap.InAppPurchaseComponent.GetPurchaseHistorySuccess__DelegateSigture");
+
+	struct GetPurchaseHistorySuccess__DelegateSig_Params {
+		struct TArray<Unknown>& PurchaseHistory;
+	}; GetPurchaseHistorySuccess__DelegateSig_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	PurchaseHistory = Params.PurchaseHistory;
+
+}
+
+// DelegateFunction MagicLeap.InAppPurchaseComponent.GetPurchaseHistoryFailure__DelegateSig
+inline void UInAppPurchaseComponent::GetPurchaseHistoryFailure__DelegateSig() {
+	static auto fn = UObject::FindObject<UFunction>("DelegateFunction MagicLeap.InAppPurchaseComponent.GetPurchaseHistoryFailure__DelegateSig");
+
+	struct GetPurchaseHistoryFailure__DelegateSig_Params {
+		
+	}; GetPurchaseHistoryFailure__DelegateSig_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// DelegateFunction MagicLeap.InAppPurchaseComponent.GetItemsDetailsSuccess__DelegateSignature
+inline void UInAppPurchaseComponent::GetItemsDetailsSuccess__DelegateSignature(struct TArray<Unknown>& ItemsDetails) {
+	static auto fn = UObject::FindObject<UFunction>("DelegateFunction MagicLeap.InAppPurchaseComponent.GetItemsDetailsSuccess__DelegateSignature");
+
+	struct GetItemsDetailsSuccess__DelegateSignature_Params {
+		struct TArray<Unknown>& ItemsDetails;
+	}; GetItemsDetailsSuccess__DelegateSignature_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	ItemsDetails = Params.ItemsDetails;
+
+}
+
+// DelegateFunction MagicLeap.InAppPurchaseComponent.GetItemsDetailsFailure__DelegateSignature
+inline void UInAppPurchaseComponent::GetItemsDetailsFailure__DelegateSignature() {
+	static auto fn = UObject::FindObject<UFunction>("DelegateFunction MagicLeap.InAppPurchaseComponent.GetItemsDetailsFailure__DelegateSignature");
+
+	struct GetItemsDetailsFailure__DelegateSignature_Params {
+		
+	}; GetItemsDetailsFailure__DelegateSignature_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MagicLeap.MagicLeapMeshTrackerComponent.SelectMeshBlocks
+inline void UMagicLeapMeshTrackerComponent::SelectMeshBlocks(struct Unknown& NewMeshInfo, struct TArray<Unknown>& RequestedMesh) {
+	static auto fn = UObject::FindObject<UFunction>("Function MagicLeap.MagicLeapMeshTrackerComponent.SelectMeshBlocks");
+
+	struct SelectMeshBlocks_Params {
+		struct Unknown& NewMeshInfo;
+		struct TArray<Unknown>& RequestedMesh;
+	}; SelectMeshBlocks_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	NewMeshInfo = Params.NewMeshInfo;
+	RequestedMesh = Params.RequestedMesh;
+
+}
+
+// DelegateFunction MagicLeap.MagicLeapMeshTrackerComponent.OnMeshTrackerUpdated__DelegateSignature
+inline void UMagicLeapMeshTrackerComponent::OnMeshTrackerUpdated__DelegateSignature(struct Unknown ID, struct TArray<Unknown>& Vertices, struct TArray<Unknown>& Triangles, struct TArray<Unknown>& Normals, struct TArray<Unknown>& Confidence) {
+	static auto fn = UObject::FindObject<UFunction>("DelegateFunction MagicLeap.MagicLeapMeshTrackerComponent.OnMeshTrackerUpdated__DelegateSignature");
+
+	struct OnMeshTrackerUpdated__DelegateSignature_Params {
+		struct Unknown ID;
+		struct TArray<Unknown>& Vertices;
+		struct TArray<Unknown>& Triangles;
+		struct TArray<Unknown>& Normals;
+		struct TArray<Unknown>& Confidence;
+	}; OnMeshTrackerUpdated__DelegateSignature_Params Params;
+
+	Params.ID = ID;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Vertices = Params.Vertices;
+	Triangles = Params.Triangles;
+	Normals = Params.Normals;
+	Confidence = Params.Confidence;
+
+}
+
+// Function MagicLeap.MagicLeapMeshTrackerComponent.GetNumQueuedBlockUpdates
+inline int32_t UMagicLeapMeshTrackerComponent::GetNumQueuedBlockUpdates() {
+	static auto fn = UObject::FindObject<UFunction>("Function MagicLeap.MagicLeapMeshTrackerComponent.GetNumQueuedBlockUpdates");
+
+	struct GetNumQueuedBlockUpdates_Params {
+		
+		int32_t ReturnValue;
+
+	}; GetNumQueuedBlockUpdates_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function MagicLeap.MagicLeapMeshTrackerComponent.DisconnectMRMesh
+inline void UMagicLeapMeshTrackerComponent::DisconnectMRMesh(struct Unknown InMRMeshPtr) {
+	static auto fn = UObject::FindObject<UFunction>("Function MagicLeap.MagicLeapMeshTrackerComponent.DisconnectMRMesh");
+
+	struct DisconnectMRMesh_Params {
+		struct Unknown InMRMeshPtr;
+	}; DisconnectMRMesh_Params Params;
+
+	Params.InMRMeshPtr = InMRMeshPtr;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MagicLeap.MagicLeapMeshTrackerComponent.DisconnectBlockSelector
+inline void UMagicLeapMeshTrackerComponent::DisconnectBlockSelector() {
+	static auto fn = UObject::FindObject<UFunction>("Function MagicLeap.MagicLeapMeshTrackerComponent.DisconnectBlockSelector");
+
+	struct DisconnectBlockSelector_Params {
+		
+	}; DisconnectBlockSelector_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MagicLeap.MagicLeapMeshTrackerComponent.ConnectMRMesh
+inline void UMagicLeapMeshTrackerComponent::ConnectMRMesh(struct Unknown InMRMeshPtr) {
+	static auto fn = UObject::FindObject<UFunction>("Function MagicLeap.MagicLeapMeshTrackerComponent.ConnectMRMesh");
+
+	struct ConnectMRMesh_Params {
+		struct Unknown InMRMeshPtr;
+	}; ConnectMRMesh_Params Params;
+
+	Params.InMRMeshPtr = InMRMeshPtr;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function MagicLeap.MagicLeapMeshTrackerComponent.ConnectBlockSelector
+inline void UMagicLeapMeshTrackerComponent::ConnectBlockSelector(struct TScriptInterface<IUnknown> Selector) {
+	static auto fn = UObject::FindObject<UFunction>("Function MagicLeap.MagicLeapMeshTrackerComponent.ConnectBlockSelector");
+
+	struct ConnectBlockSelector_Params {
+		struct TScriptInterface<IUnknown> Selector;
+	}; ConnectBlockSelector_Params Params;
+
+	Params.Selector = Selector;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
 

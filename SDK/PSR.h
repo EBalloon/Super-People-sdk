@@ -18,3 +18,35 @@ public:
 	void ExecuteUbergraph_AB(int32_t EntryPoint); // Function PSR.AB.ExecuteUbergraph_AB(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 };
 
+// Function PSR.AB.AnimGraph
+inline void UAB::AnimGraph(struct Unknown& AnimGraph) {
+	static auto fn = UObject::FindObject<UFunction>("Function PSR.AB.AnimGraph");
+
+	struct AnimGraph_Params {
+		struct Unknown& AnimGraph;
+	}; AnimGraph_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	AnimGraph = Params.AnimGraph;
+
+}
+
+// Function PSR.AB.ExecuteUbergraph_AB
+inline void UAB::ExecuteUbergraph_AB(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function PSR.AB.ExecuteUbergraph_AB");
+
+	struct ExecuteUbergraph_AB_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_AB_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+

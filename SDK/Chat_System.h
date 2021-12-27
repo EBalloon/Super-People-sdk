@@ -36,3 +36,287 @@ public:
 	void ExecuteUbergraph_Chat_System(int32_t EntryPoint); // Function Chat_System.Chat_System_C.ExecuteUbergraph_Chat_System(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 };
 
+// Function Chat_System.Chat_System_C.Get
+inline void AChat_System_C::Get(struct FString& Group) {
+	static auto fn = UObject::FindObject<UFunction>("Function Chat_System.Chat_System_C.Get");
+
+	struct Get_Params {
+		struct FString& Group;
+	}; Get_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Group = Params.Group;
+
+}
+
+// Function Chat_System.Chat_System_C.Send
+inline void AChat_System_C::Send(struct FString Message, struct FString Group) {
+	static auto fn = UObject::FindObject<UFunction>("Function Chat_System.Chat_System_C.Send");
+
+	struct Send_Params {
+		struct FString Message;
+		struct FString Group;
+	}; Send_Params Params;
+
+	Params.Message = Message;
+	Params.Group = Group;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Chat_System.Chat_System_C.Push
+inline void AChat_System_C::Push(struct Unknown To, struct Unknown From, struct FString Message, struct FString Group, char Display) {
+	static auto fn = UObject::FindObject<UFunction>("Function Chat_System.Chat_System_C.Push");
+
+	struct Push_Params {
+		struct Unknown To;
+		struct Unknown From;
+		struct FString Message;
+		struct FString Group;
+		char Display;
+	}; Push_Params Params;
+
+	Params.To = To;
+	Params.From = From;
+	Params.Message = Message;
+	Params.Group = Group;
+	Params.Display = Display;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Chat_System.Chat_System_C.Create
+inline void AChat_System_C::Create(struct FString Group) {
+	static auto fn = UObject::FindObject<UFunction>("Function Chat_System.Chat_System_C.Create");
+
+	struct Create_Params {
+		struct FString Group;
+	}; Create_Params Params;
+
+	Params.Group = Group;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Chat_System.Chat_System_C.Add
+inline void AChat_System_C::Add(struct FString Group) {
+	static auto fn = UObject::FindObject<UFunction>("Function Chat_System.Chat_System_C.Add");
+
+	struct Add_Params {
+		struct FString Group;
+	}; Add_Params Params;
+
+	Params.Group = Group;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Chat_System.Chat_System_C.Join
+inline void AChat_System_C::Join(struct FString Group) {
+	static auto fn = UObject::FindObject<UFunction>("Function Chat_System.Chat_System_C.Join");
+
+	struct Join_Params {
+		struct FString Group;
+	}; Join_Params Params;
+
+	Params.Group = Group;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Chat_System.Chat_System_C.Add
+inline void AChat_System_C::Add(struct FString Group) {
+	static auto fn = UObject::FindObject<UFunction>("Function Chat_System.Chat_System_C.Add");
+
+	struct Add_Params {
+		struct FString Group;
+	}; Add_Params Params;
+
+	Params.Group = Group;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Chat_System.Chat_System_C.Send
+inline void AChat_System_C::Send(struct FString Message, struct FString Group) {
+	static auto fn = UObject::FindObject<UFunction>("Function Chat_System.Chat_System_C.Send");
+
+	struct Send_Params {
+		struct FString Message;
+		struct FString Group;
+	}; Send_Params Params;
+
+	Params.Message = Message;
+	Params.Group = Group;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Chat_System.Chat_System_C.Add
+inline void AChat_System_C::Add() {
+	static auto fn = UObject::FindObject<UFunction>("Function Chat_System.Chat_System_C.Add");
+
+	struct Add_Params {
+		
+	}; Add_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Chat_System.Chat_System_C.ReceiveBeginPlay
+inline void AChat_System_C::ReceiveBeginPlay() {
+	static auto fn = UObject::FindObject<UFunction>("Function Chat_System.Chat_System_C.ReceiveBeginPlay");
+
+	struct ReceiveBeginPlay_Params {
+		
+	}; ReceiveBeginPlay_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Chat_System.Chat_System_C.Spawn
+inline void AChat_System_C::Spawn() {
+	static auto fn = UObject::FindObject<UFunction>("Function Chat_System.Chat_System_C.Spawn");
+
+	struct Spawn_Params {
+		
+	}; Spawn_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Chat_System.Chat_System_C.Set
+inline void AChat_System_C::Set() {
+	static auto fn = UObject::FindObject<UFunction>("Function Chat_System.Chat_System_C.Set");
+
+	struct Set_Params {
+		
+	}; Set_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Chat_System.Chat_System_C.Leave
+inline void AChat_System_C::Leave(struct FString Group, int32_t Index) {
+	static auto fn = UObject::FindObject<UFunction>("Function Chat_System.Chat_System_C.Leave");
+
+	struct Leave_Params {
+		struct FString Group;
+		int32_t Index;
+	}; Leave_Params Params;
+
+	Params.Group = Group;
+	Params.Index = Index;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Chat_System.Chat_System_C.Remove
+inline void AChat_System_C::Remove(struct FString Group) {
+	static auto fn = UObject::FindObject<UFunction>("Function Chat_System.Chat_System_C.Remove");
+
+	struct Remove_Params {
+		struct FString Group;
+	}; Remove_Params Params;
+
+	Params.Group = Group;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Chat_System.Chat_System_C.Add
+inline void AChat_System_C::Add(struct FString Group) {
+	static auto fn = UObject::FindObject<UFunction>("Function Chat_System.Chat_System_C.Add");
+
+	struct Add_Params {
+		struct FString Group;
+	}; Add_Params Params;
+
+	Params.Group = Group;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Chat_System.Chat_System_C.Remove
+inline void AChat_System_C::Remove(struct FString Group) {
+	static auto fn = UObject::FindObject<UFunction>("Function Chat_System.Chat_System_C.Remove");
+
+	struct Remove_Params {
+		struct FString Group;
+	}; Remove_Params Params;
+
+	Params.Group = Group;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Chat_System.Chat_System_C.Next
+inline void AChat_System_C::Next(char Direction, char Wrap) {
+	static auto fn = UObject::FindObject<UFunction>("Function Chat_System.Chat_System_C.Next");
+
+	struct Next_Params {
+		char Direction;
+		char Wrap;
+	}; Next_Params Params;
+
+	Params.Direction = Direction;
+	Params.Wrap = Wrap;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Chat_System.Chat_System_C.ExecuteUbergraph_Chat_System
+inline void AChat_System_C::ExecuteUbergraph_Chat_System(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function Chat_System.Chat_System_C.ExecuteUbergraph_Chat_System");
+
+	struct ExecuteUbergraph_Chat_System_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_Chat_System_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+

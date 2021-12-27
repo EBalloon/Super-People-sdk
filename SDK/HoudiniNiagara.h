@@ -89,3 +89,557 @@ struct FHoudiniEvent {
 	int32_t Type; // 0x44 (4)
 };
 
+// Function HoudiniNiagara.HoudiniCSV.GetVelocityValue
+inline char UHoudiniCSV::GetVelocityValue(int32_t& rowIndex, struct Unknown& Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function HoudiniNiagara.HoudiniCSV.GetVelocityValue");
+
+	struct GetVelocityValue_Params {
+		int32_t& rowIndex;
+		struct Unknown& Value;
+		char ReturnValue;
+
+	}; GetVelocityValue_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	rowIndex = Params.rowIndex;
+	Value = Params.Value;
+
+
+	return params.ReturnValue;
+}
+
+// Function HoudiniNiagara.HoudiniCSV.GetVectorValue
+inline char UHoudiniCSV::GetVectorValue(int32_t& rowIndex, int32_t& colIndex, struct Unknown& Value, char& DoSwap, char& DoScale) {
+	static auto fn = UObject::FindObject<UFunction>("Function HoudiniNiagara.HoudiniCSV.GetVectorValue");
+
+	struct GetVectorValue_Params {
+		int32_t& rowIndex;
+		int32_t& colIndex;
+		struct Unknown& Value;
+		char& DoSwap;
+		char& DoScale;
+		char ReturnValue;
+
+	}; GetVectorValue_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	rowIndex = Params.rowIndex;
+	colIndex = Params.colIndex;
+	Value = Params.Value;
+	DoSwap = Params.DoSwap;
+	DoScale = Params.DoScale;
+
+
+	return params.ReturnValue;
+}
+
+// Function HoudiniNiagara.HoudiniCSV.GetTimeValue
+inline char UHoudiniCSV::GetTimeValue(int32_t& rowIndex, float& Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function HoudiniNiagara.HoudiniCSV.GetTimeValue");
+
+	struct GetTimeValue_Params {
+		int32_t& rowIndex;
+		float& Value;
+		char ReturnValue;
+
+	}; GetTimeValue_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	rowIndex = Params.rowIndex;
+	Value = Params.Value;
+
+
+	return params.ReturnValue;
+}
+
+// Function HoudiniNiagara.HoudiniCSV.GetRowIndexesForPointAtTime
+inline char UHoudiniCSV::GetRowIndexesForPointAtTime(int32_t& POINTID, float& desiredTime, int32_t& PrevIndex, int32_t& NextIndex, float& PrevWeight) {
+	static auto fn = UObject::FindObject<UFunction>("Function HoudiniNiagara.HoudiniCSV.GetRowIndexesForPointAtTime");
+
+	struct GetRowIndexesForPointAtTime_Params {
+		int32_t& POINTID;
+		float& desiredTime;
+		int32_t& PrevIndex;
+		int32_t& NextIndex;
+		float& PrevWeight;
+		char ReturnValue;
+
+	}; GetRowIndexesForPointAtTime_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	POINTID = Params.POINTID;
+	desiredTime = Params.desiredTime;
+	PrevIndex = Params.PrevIndex;
+	NextIndex = Params.NextIndex;
+	PrevWeight = Params.PrevWeight;
+
+
+	return params.ReturnValue;
+}
+
+// Function HoudiniNiagara.HoudiniCSV.GetPositionValue
+inline char UHoudiniCSV::GetPositionValue(int32_t& rowIndex, struct Unknown& Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function HoudiniNiagara.HoudiniCSV.GetPositionValue");
+
+	struct GetPositionValue_Params {
+		int32_t& rowIndex;
+		struct Unknown& Value;
+		char ReturnValue;
+
+	}; GetPositionValue_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	rowIndex = Params.rowIndex;
+	Value = Params.Value;
+
+
+	return params.ReturnValue;
+}
+
+// Function HoudiniNiagara.HoudiniCSV.GetPointVectorValueAtTime
+inline char UHoudiniCSV::GetPointVectorValueAtTime(int32_t& POINTID, int32_t& columnIndex, float& desiredTime, struct Unknown& Vector, char& DoSwap, char& DoScale) {
+	static auto fn = UObject::FindObject<UFunction>("Function HoudiniNiagara.HoudiniCSV.GetPointVectorValueAtTime");
+
+	struct GetPointVectorValueAtTime_Params {
+		int32_t& POINTID;
+		int32_t& columnIndex;
+		float& desiredTime;
+		struct Unknown& Vector;
+		char& DoSwap;
+		char& DoScale;
+		char ReturnValue;
+
+	}; GetPointVectorValueAtTime_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	POINTID = Params.POINTID;
+	columnIndex = Params.columnIndex;
+	desiredTime = Params.desiredTime;
+	Vector = Params.Vector;
+	DoSwap = Params.DoSwap;
+	DoScale = Params.DoScale;
+
+
+	return params.ReturnValue;
+}
+
+// Function HoudiniNiagara.HoudiniCSV.GetPointValueAtTime
+inline char UHoudiniCSV::GetPointValueAtTime(int32_t& POINTID, int32_t& columnIndex, float& desiredTime, float& Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function HoudiniNiagara.HoudiniCSV.GetPointValueAtTime");
+
+	struct GetPointValueAtTime_Params {
+		int32_t& POINTID;
+		int32_t& columnIndex;
+		float& desiredTime;
+		float& Value;
+		char ReturnValue;
+
+	}; GetPointValueAtTime_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	POINTID = Params.POINTID;
+	columnIndex = Params.columnIndex;
+	desiredTime = Params.desiredTime;
+	Value = Params.Value;
+
+
+	return params.ReturnValue;
+}
+
+// Function HoudiniNiagara.HoudiniCSV.GetPointType
+inline char UHoudiniCSV::GetPointType(int32_t& POINTID, int32_t& Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function HoudiniNiagara.HoudiniCSV.GetPointType");
+
+	struct GetPointType_Params {
+		int32_t& POINTID;
+		int32_t& Value;
+		char ReturnValue;
+
+	}; GetPointType_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	POINTID = Params.POINTID;
+	Value = Params.Value;
+
+
+	return params.ReturnValue;
+}
+
+// Function HoudiniNiagara.HoudiniCSV.GetPointPositionAtTime
+inline char UHoudiniCSV::GetPointPositionAtTime(int32_t& POINTID, float& desiredTime, struct Unknown& Vector) {
+	static auto fn = UObject::FindObject<UFunction>("Function HoudiniNiagara.HoudiniCSV.GetPointPositionAtTime");
+
+	struct GetPointPositionAtTime_Params {
+		int32_t& POINTID;
+		float& desiredTime;
+		struct Unknown& Vector;
+		char ReturnValue;
+
+	}; GetPointPositionAtTime_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	POINTID = Params.POINTID;
+	desiredTime = Params.desiredTime;
+	Vector = Params.Vector;
+
+
+	return params.ReturnValue;
+}
+
+// Function HoudiniNiagara.HoudiniCSV.GetPointLifeAtTime
+inline char UHoudiniCSV::GetPointLifeAtTime(int32_t& POINTID, float& desiredTime, float& Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function HoudiniNiagara.HoudiniCSV.GetPointLifeAtTime");
+
+	struct GetPointLifeAtTime_Params {
+		int32_t& POINTID;
+		float& desiredTime;
+		float& Value;
+		char ReturnValue;
+
+	}; GetPointLifeAtTime_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	POINTID = Params.POINTID;
+	desiredTime = Params.desiredTime;
+	Value = Params.Value;
+
+
+	return params.ReturnValue;
+}
+
+// Function HoudiniNiagara.HoudiniCSV.GetPointLife
+inline char UHoudiniCSV::GetPointLife(int32_t& POINTID, float& Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function HoudiniNiagara.HoudiniCSV.GetPointLife");
+
+	struct GetPointLife_Params {
+		int32_t& POINTID;
+		float& Value;
+		char ReturnValue;
+
+	}; GetPointLife_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	POINTID = Params.POINTID;
+	Value = Params.Value;
+
+
+	return params.ReturnValue;
+}
+
+// Function HoudiniNiagara.HoudiniCSV.GetPointIDsToSpawnAtTime
+inline char UHoudiniCSV::GetPointIDsToSpawnAtTime(float& desiredTime, int32_t& MinID, int32_t& MaxID, int32_t& Count, int32_t& LastSpawnedPointID, float& LastSpawnTime) {
+	static auto fn = UObject::FindObject<UFunction>("Function HoudiniNiagara.HoudiniCSV.GetPointIDsToSpawnAtTime");
+
+	struct GetPointIDsToSpawnAtTime_Params {
+		float& desiredTime;
+		int32_t& MinID;
+		int32_t& MaxID;
+		int32_t& Count;
+		int32_t& LastSpawnedPointID;
+		float& LastSpawnTime;
+		char ReturnValue;
+
+	}; GetPointIDsToSpawnAtTime_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	desiredTime = Params.desiredTime;
+	MinID = Params.MinID;
+	MaxID = Params.MaxID;
+	Count = Params.Count;
+	LastSpawnedPointID = Params.LastSpawnedPointID;
+	LastSpawnTime = Params.LastSpawnTime;
+
+
+	return params.ReturnValue;
+}
+
+// Function HoudiniNiagara.HoudiniCSV.GetNumberOfRows
+inline int32_t UHoudiniCSV::GetNumberOfRows() {
+	static auto fn = UObject::FindObject<UFunction>("Function HoudiniNiagara.HoudiniCSV.GetNumberOfRows");
+
+	struct GetNumberOfRows_Params {
+		
+		int32_t ReturnValue;
+
+	}; GetNumberOfRows_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function HoudiniNiagara.HoudiniCSV.GetNumberOfPoints
+inline int32_t UHoudiniCSV::GetNumberOfPoints() {
+	static auto fn = UObject::FindObject<UFunction>("Function HoudiniNiagara.HoudiniCSV.GetNumberOfPoints");
+
+	struct GetNumberOfPoints_Params {
+		
+		int32_t ReturnValue;
+
+	}; GetNumberOfPoints_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function HoudiniNiagara.HoudiniCSV.GetNumberOfColumns
+inline int32_t UHoudiniCSV::GetNumberOfColumns() {
+	static auto fn = UObject::FindObject<UFunction>("Function HoudiniNiagara.HoudiniCSV.GetNumberOfColumns");
+
+	struct GetNumberOfColumns_Params {
+		
+		int32_t ReturnValue;
+
+	}; GetNumberOfColumns_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function HoudiniNiagara.HoudiniCSV.GetNormalValue
+inline char UHoudiniCSV::GetNormalValue(int32_t& rowIndex, struct Unknown& Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function HoudiniNiagara.HoudiniCSV.GetNormalValue");
+
+	struct GetNormalValue_Params {
+		int32_t& rowIndex;
+		struct Unknown& Value;
+		char ReturnValue;
+
+	}; GetNormalValue_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	rowIndex = Params.rowIndex;
+	Value = Params.Value;
+
+
+	return params.ReturnValue;
+}
+
+// Function HoudiniNiagara.HoudiniCSV.GetLastRowIndexAtTime
+inline char UHoudiniCSV::GetLastRowIndexAtTime(float& desiredTime, int32_t& lastRowIndex) {
+	static auto fn = UObject::FindObject<UFunction>("Function HoudiniNiagara.HoudiniCSV.GetLastRowIndexAtTime");
+
+	struct GetLastRowIndexAtTime_Params {
+		float& desiredTime;
+		int32_t& lastRowIndex;
+		char ReturnValue;
+
+	}; GetLastRowIndexAtTime_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	desiredTime = Params.desiredTime;
+	lastRowIndex = Params.lastRowIndex;
+
+
+	return params.ReturnValue;
+}
+
+// Function HoudiniNiagara.HoudiniCSV.GetLastPointIDToSpawnAtTime
+inline char UHoudiniCSV::GetLastPointIDToSpawnAtTime(float& Time, int32_t& lastIndex) {
+	static auto fn = UObject::FindObject<UFunction>("Function HoudiniNiagara.HoudiniCSV.GetLastPointIDToSpawnAtTime");
+
+	struct GetLastPointIDToSpawnAtTime_Params {
+		float& Time;
+		int32_t& lastIndex;
+		char ReturnValue;
+
+	}; GetLastPointIDToSpawnAtTime_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Time = Params.Time;
+	lastIndex = Params.lastIndex;
+
+
+	return params.ReturnValue;
+}
+
+// Function HoudiniNiagara.HoudiniCSV.GetImpulseValue
+inline char UHoudiniCSV::GetImpulseValue(int32_t& rowIndex, float& Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function HoudiniNiagara.HoudiniCSV.GetImpulseValue");
+
+	struct GetImpulseValue_Params {
+		int32_t& rowIndex;
+		float& Value;
+		char ReturnValue;
+
+	}; GetImpulseValue_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	rowIndex = Params.rowIndex;
+	Value = Params.Value;
+
+
+	return params.ReturnValue;
+}
+
+// Function HoudiniNiagara.HoudiniCSV.GetFloatValueForString
+inline char UHoudiniCSV::GetFloatValueForString(int32_t& rowIndex, struct FString ColumnTitle, float& Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function HoudiniNiagara.HoudiniCSV.GetFloatValueForString");
+
+	struct GetFloatValueForString_Params {
+		int32_t& rowIndex;
+		struct FString ColumnTitle;
+		float& Value;
+		char ReturnValue;
+
+	}; GetFloatValueForString_Params Params;
+
+	Params.ColumnTitle = ColumnTitle;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	rowIndex = Params.rowIndex;
+	Value = Params.Value;
+
+
+	return params.ReturnValue;
+}
+
+// Function HoudiniNiagara.HoudiniCSV.GetFloatValue
+inline char UHoudiniCSV::GetFloatValue(int32_t& rowIndex, int32_t& colIndex, float& Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function HoudiniNiagara.HoudiniCSV.GetFloatValue");
+
+	struct GetFloatValue_Params {
+		int32_t& rowIndex;
+		int32_t& colIndex;
+		float& Value;
+		char ReturnValue;
+
+	}; GetFloatValue_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	rowIndex = Params.rowIndex;
+	colIndex = Params.colIndex;
+	Value = Params.Value;
+
+
+	return params.ReturnValue;
+}
+
+// Function HoudiniNiagara.HoudiniCSV.GetColumnIndexFromString
+inline char UHoudiniCSV::GetColumnIndexFromString(struct FString ColumnTitle, int32_t& columnIndex) {
+	static auto fn = UObject::FindObject<UFunction>("Function HoudiniNiagara.HoudiniCSV.GetColumnIndexFromString");
+
+	struct GetColumnIndexFromString_Params {
+		struct FString ColumnTitle;
+		int32_t& columnIndex;
+		char ReturnValue;
+
+	}; GetColumnIndexFromString_Params Params;
+
+	Params.ColumnTitle = ColumnTitle;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	columnIndex = Params.columnIndex;
+
+
+	return params.ReturnValue;
+}
+
+// Function HoudiniNiagara.HoudiniCSV.GetColorValue
+inline char UHoudiniCSV::GetColorValue(int32_t& rowIndex, struct Unknown& Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function HoudiniNiagara.HoudiniCSV.GetColorValue");
+
+	struct GetColorValue_Params {
+		int32_t& rowIndex;
+		struct Unknown& Value;
+		char ReturnValue;
+
+	}; GetColorValue_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	rowIndex = Params.rowIndex;
+	Value = Params.Value;
+
+
+	return params.ReturnValue;
+}
+

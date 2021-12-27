@@ -284,8 +284,8 @@ public:
 	struct Unknown AttachedComponent; // 0x90 (8)
 };
 
-// Class InteractiveToolsFramework.ClickDragInputBehavess
-class UClickDragInputBehav : public UAnyButtonInputBehav {
+// Class InteractiveToolsFramework.ClickDragInputBehav
+class UClickDragInputBehav : public UAnyButtonInputBehavior {
 
 public:
 
@@ -606,7 +606,7 @@ public:
 };
 
 // Class InteractiveToolsFramework.SingleClickInputBehavior
-class USingleClickInputBehavior : public UAnyButtonInputBehav {
+class USingleClickInputBehavior : public UAnyButtonInputBehavavi {
 
 public:
 
@@ -719,4 +719,34 @@ struct FGizmoVec2ParameterChange {
 	struct Unknown InitialValue; // 0x0 (8)
 	struct Unknown CurrentValue; // 0x8 (8)
 };
+
+// Function InteractiveToolsFramework.GizmoBaseComponent.UpdateWorldLocalState
+inline void UGizmoBaseComponent::UpdateWorldLocalState(char bWorldIn) {
+	static auto fn = UObject::FindObject<UFunction>("Function InteractiveToolsFramework.GizmoBaseComponent.UpdateWorldLocalState");
+
+	struct UpdateWorldLocalState_Params {
+		char bWorldIn;
+	}; UpdateWorldLocalState_Params Params;
+
+	Params.bWorldIn = bWorldIn;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function InteractiveToolsFramework.GizmoBaseComponent.UpdateHoverState
+inline void UGizmoBaseComponent::UpdateHoverState(char bHoveringIn) {
+	static auto fn = UObject::FindObject<UFunction>("Function InteractiveToolsFramework.GizmoBaseComponent.UpdateHoverState");
+
+	struct UpdateHoverState_Params {
+		char bHoveringIn;
+	}; UpdateHoverState_Params Params;
+
+	Params.bHoveringIn = bHoveringIn;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
 

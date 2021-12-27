@@ -281,8 +281,8 @@ struct FCullDistancePreset {
 	struct Unknown MinMax; // 0x10 (8)
 };
 
-// ScriptStruct Foliage.FoliageVertexColorChannelMask
-struct FFoliageVertexColorChannelMask {
+// ScriptStruct Foliage.FoliageVertexColorChannel
+struct FFoliageVertexColorChannel {
 	char UseMask : 0; // 0x0 (1)
 	float MaskThreshold; // 0x4 (4)
 	char InvertMask : 0; // 0x8 (1)
@@ -305,4 +305,46 @@ struct FProceduralFoliageInstance {
 	float Scale; // 0x30 (4)
 	struct Unknown Type; // 0x38 (8)
 };
+
+// Function Foliage.InteractiveFoliageActor.CapsuleTouched
+inline void AInteractiveFoliageActor::CapsuleTouched(struct Unknown OverlappedComp, struct Unknown Other, struct Unknown OtherComp, int32_t OtherBodyIndex, char bFromSweep, struct Unknown& OverlapInfo) {
+	static auto fn = UObject::FindObject<UFunction>("Function Foliage.InteractiveFoliageActor.CapsuleTouched");
+
+	struct CapsuleTouched_Params {
+		struct Unknown OverlappedComp;
+		struct Unknown Other;
+		struct Unknown OtherComp;
+		int32_t OtherBodyIndex;
+		char bFromSweep;
+		struct Unknown& OverlapInfo;
+	}; CapsuleTouched_Params Params;
+
+	Params.OverlappedComp = OverlappedComp;
+	Params.Other = Other;
+	Params.OtherComp = OtherComp;
+	Params.OtherBodyIndex = OtherBodyIndex;
+	Params.bFromSweep = bFromSweep;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	OverlapInfo = Params.OverlapInfo;
+
+}
+
+// Function Foliage.ProceduralFoliageSpawner.Simulate
+inline void UProceduralFoliageSpawner::Simulate(int32_t NumSteps) {
+	static auto fn = UObject::FindObject<UFunction>("Function Foliage.ProceduralFoliageSpawner.Simulate");
+
+	struct Simulate_Params {
+		int32_t NumSteps;
+	}; Simulate_Params Params;
+
+	Params.NumSteps = NumSteps;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
 

@@ -54,3 +54,57 @@ public:
 	char GetImageIsStationary(); // Function MagicLeapAR.LuminARCandidateImage.GetImageIsStationary(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17CFAC0>
 };
 
+// Function MagicLeapAR.LuminARLightEstimate.GetAmbientIntensityNits
+inline struct TArray<Unknown> ULuminARLightEstimate::GetAmbientIntensityNits() {
+	static auto fn = UObject::FindObject<UFunction>("Function MagicLeapAR.LuminARLightEstimate.GetAmbientIntensityNits");
+
+	struct GetAmbientIntensityNits_Params {
+		
+		struct TArray<Unknown> ReturnValue;
+
+	}; GetAmbientIntensityNits_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function MagicLeapAR.LuminARCandidateImage.GetUseUnreliablePose
+inline char ULuminARCandidateImage::GetUseUnreliablePose() {
+	static auto fn = UObject::FindObject<UFunction>("Function MagicLeapAR.LuminARCandidateImage.GetUseUnreliablePose");
+
+	struct GetUseUnreliablePose_Params {
+		
+		char ReturnValue;
+
+	}; GetUseUnreliablePose_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function MagicLeapAR.LuminARCandidateImage.GetImageIsStationary
+inline char ULuminARCandidateImage::GetImageIsStationary() {
+	static auto fn = UObject::FindObject<UFunction>("Function MagicLeapAR.LuminARCandidateImage.GetImageIsStationary");
+
+	struct GetImageIsStationary_Params {
+		
+		char ReturnValue;
+
+	}; GetImageIsStationary_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+

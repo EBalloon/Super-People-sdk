@@ -80,3 +80,21 @@ struct FMagicLeapPlanesQuery {
 	char bResultTrackingSpace : 0; // 0x51 (1)
 };
 
+// Function MagicLeapPlanes.MagicLeapPlanesComponent.RequestPlanesAsync
+inline char UMagicLeapPlanesComponent::RequestPlanesAsync() {
+	static auto fn = UObject::FindObject<UFunction>("Function MagicLeapPlanes.MagicLeapPlanesComponent.RequestPlanesAsync");
+
+	struct RequestPlanesAsync_Params {
+		
+		char ReturnValue;
+
+	}; RequestPlanesAsync_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+

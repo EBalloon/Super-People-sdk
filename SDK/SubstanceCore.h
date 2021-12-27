@@ -177,3 +177,324 @@ struct FSubstanceConnection {
 	struct FString InputImageIdentifier; // 0x10 (16)
 };
 
+// Function SubstanceCore.SubstanceGraphInstance.SetInputString
+inline void USubstanceGraphInstance::SetInputString(struct FString Identifier, struct FString Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function SubstanceCore.SubstanceGraphInstance.SetInputString");
+
+	struct SetInputString_Params {
+		struct FString Identifier;
+		struct FString Value;
+	}; SetInputString_Params Params;
+
+	Params.Identifier = Identifier;
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function SubstanceCore.SubstanceGraphInstance.SetInputInt
+inline void USubstanceGraphInstance::SetInputInt(struct FString Identifier, struct TArray<Unknown>& InputValues) {
+	static auto fn = UObject::FindObject<UFunction>("Function SubstanceCore.SubstanceGraphInstance.SetInputInt");
+
+	struct SetInputInt_Params {
+		struct FString Identifier;
+		struct TArray<Unknown>& InputValues;
+	}; SetInputInt_Params Params;
+
+	Params.Identifier = Identifier;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	InputValues = Params.InputValues;
+
+}
+
+// Function SubstanceCore.SubstanceGraphInstance.SetInputImg
+inline char USubstanceGraphInstance::SetInputImg(struct FString InputName, struct Unknown Value) {
+	static auto fn = UObject::FindObject<UFunction>("Function SubstanceCore.SubstanceGraphInstance.SetInputImg");
+
+	struct SetInputImg_Params {
+		struct FString InputName;
+		struct Unknown Value;
+		char ReturnValue;
+
+	}; SetInputImg_Params Params;
+
+	Params.InputName = InputName;
+	Params.Value = Value;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function SubstanceCore.SubstanceGraphInstance.SetInputFloat
+inline void USubstanceGraphInstance::SetInputFloat(struct FString Identifier, struct TArray<Unknown>& InputValues) {
+	static auto fn = UObject::FindObject<UFunction>("Function SubstanceCore.SubstanceGraphInstance.SetInputFloat");
+
+	struct SetInputFloat_Params {
+		struct FString Identifier;
+		struct TArray<Unknown>& InputValues;
+	}; SetInputFloat_Params Params;
+
+	Params.Identifier = Identifier;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	InputValues = Params.InputValues;
+
+}
+
+// Function SubstanceCore.SubstanceGraphInstance.SetInputColor
+inline void USubstanceGraphInstance::SetInputColor(struct FString Identifier, struct Unknown& Color) {
+	static auto fn = UObject::FindObject<UFunction>("Function SubstanceCore.SubstanceGraphInstance.SetInputColor");
+
+	struct SetInputColor_Params {
+		struct FString Identifier;
+		struct Unknown& Color;
+	}; SetInputColor_Params Params;
+
+	Params.Identifier = Identifier;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Color = Params.Color;
+
+}
+
+// Function SubstanceCore.SubstanceGraphInstance.SetInputBool
+inline void USubstanceGraphInstance::SetInputBool(struct FString Identifier, char Bool) {
+	static auto fn = UObject::FindObject<UFunction>("Function SubstanceCore.SubstanceGraphInstance.SetInputBool");
+
+	struct SetInputBool_Params {
+		struct FString Identifier;
+		char Bool;
+	}; SetInputBool_Params Params;
+
+	Params.Identifier = Identifier;
+	Params.Bool = Bool;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function SubstanceCore.SubstanceGraphInstance.GetIntInputDesc
+inline struct Unknown USubstanceGraphInstance::GetIntInputDesc(struct FString Identifier) {
+	static auto fn = UObject::FindObject<UFunction>("Function SubstanceCore.SubstanceGraphInstance.GetIntInputDesc");
+
+	struct GetIntInputDesc_Params {
+		struct FString Identifier;
+		struct Unknown ReturnValue;
+
+	}; GetIntInputDesc_Params Params;
+
+	Params.Identifier = Identifier;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function SubstanceCore.SubstanceGraphInstance.GetInstanceDesc
+inline struct Unknown USubstanceGraphInstance::GetInstanceDesc() {
+	static auto fn = UObject::FindObject<UFunction>("Function SubstanceCore.SubstanceGraphInstance.GetInstanceDesc");
+
+	struct GetInstanceDesc_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetInstanceDesc_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function SubstanceCore.SubstanceGraphInstance.GetInputType
+inline char USubstanceGraphInstance::GetInputType(struct FString InputName) {
+	static auto fn = UObject::FindObject<UFunction>("Function SubstanceCore.SubstanceGraphInstance.GetInputType");
+
+	struct GetInputType_Params {
+		struct FString InputName;
+		char ReturnValue;
+
+	}; GetInputType_Params Params;
+
+	Params.InputName = InputName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function SubstanceCore.SubstanceGraphInstance.GetInputString
+inline struct FString USubstanceGraphInstance::GetInputString(struct FString Identifier) {
+	static auto fn = UObject::FindObject<UFunction>("Function SubstanceCore.SubstanceGraphInstance.GetInputString");
+
+	struct GetInputString_Params {
+		struct FString Identifier;
+		struct FString ReturnValue;
+
+	}; GetInputString_Params Params;
+
+	Params.Identifier = Identifier;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function SubstanceCore.SubstanceGraphInstance.GetInputNames
+inline struct TArray<Unknown> USubstanceGraphInstance::GetInputNames() {
+	static auto fn = UObject::FindObject<UFunction>("Function SubstanceCore.SubstanceGraphInstance.GetInputNames");
+
+	struct GetInputNames_Params {
+		
+		struct TArray<Unknown> ReturnValue;
+
+	}; GetInputNames_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function SubstanceCore.SubstanceGraphInstance.GetInputInt
+inline struct TArray<Unknown> USubstanceGraphInstance::GetInputInt(struct FString Identifier) {
+	static auto fn = UObject::FindObject<UFunction>("Function SubstanceCore.SubstanceGraphInstance.GetInputInt");
+
+	struct GetInputInt_Params {
+		struct FString Identifier;
+		struct TArray<Unknown> ReturnValue;
+
+	}; GetInputInt_Params Params;
+
+	Params.Identifier = Identifier;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function SubstanceCore.SubstanceGraphInstance.GetInputFloat
+inline struct TArray<Unknown> USubstanceGraphInstance::GetInputFloat(struct FString Identifier) {
+	static auto fn = UObject::FindObject<UFunction>("Function SubstanceCore.SubstanceGraphInstance.GetInputFloat");
+
+	struct GetInputFloat_Params {
+		struct FString Identifier;
+		struct TArray<Unknown> ReturnValue;
+
+	}; GetInputFloat_Params Params;
+
+	Params.Identifier = Identifier;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function SubstanceCore.SubstanceGraphInstance.GetInputColor
+inline struct Unknown USubstanceGraphInstance::GetInputColor(struct FString Identifier) {
+	static auto fn = UObject::FindObject<UFunction>("Function SubstanceCore.SubstanceGraphInstance.GetInputColor");
+
+	struct GetInputColor_Params {
+		struct FString Identifier;
+		struct Unknown ReturnValue;
+
+	}; GetInputColor_Params Params;
+
+	Params.Identifier = Identifier;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function SubstanceCore.SubstanceGraphInstance.GetInputBool
+inline char USubstanceGraphInstance::GetInputBool(struct FString Identifier) {
+	static auto fn = UObject::FindObject<UFunction>("Function SubstanceCore.SubstanceGraphInstance.GetInputBool");
+
+	struct GetInputBool_Params {
+		struct FString Identifier;
+		char ReturnValue;
+
+	}; GetInputBool_Params Params;
+
+	Params.Identifier = Identifier;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function SubstanceCore.SubstanceGraphInstance.GetFloatInputDesc
+inline struct Unknown USubstanceGraphInstance::GetFloatInputDesc(struct FString Identifier) {
+	static auto fn = UObject::FindObject<UFunction>("Function SubstanceCore.SubstanceGraphInstance.GetFloatInputDesc");
+
+	struct GetFloatInputDesc_Params {
+		struct FString Identifier;
+		struct Unknown ReturnValue;
+
+	}; GetFloatInputDesc_Params Params;
+
+	Params.Identifier = Identifier;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function SubstanceCore.SubstanceGraphInstance.GetDynamicMaterialInstance
+inline struct Unknown USubstanceGraphInstance::GetDynamicMaterialInstance(struct FName Name, struct Unknown InParentMaterial) {
+	static auto fn = UObject::FindObject<UFunction>("Function SubstanceCore.SubstanceGraphInstance.GetDynamicMaterialInstance");
+
+	struct GetDynamicMaterialInstance_Params {
+		struct FName Name;
+		struct Unknown InParentMaterial;
+		struct Unknown ReturnValue;
+
+	}; GetDynamicMaterialInstance_Params Params;
+
+	Params.Name = Name;
+	Params.InParentMaterial = InParentMaterial;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+

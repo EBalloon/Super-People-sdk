@@ -130,3 +130,453 @@ struct FCapturedPropSegment {
 	struct FString ComponentName; // 0x18 (16)
 };
 
+// Function VariantManagerContent.LevelVariantSets.GetVariantSetByName
+inline struct Unknown ULevelVariantSets::GetVariantSetByName(struct FString VariantSetName) {
+	static auto fn = UObject::FindObject<UFunction>("Function VariantManagerContent.LevelVariantSets.GetVariantSetByName");
+
+	struct GetVariantSetByName_Params {
+		struct FString VariantSetName;
+		struct Unknown ReturnValue;
+
+	}; GetVariantSetByName_Params Params;
+
+	Params.VariantSetName = VariantSetName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function VariantManagerContent.LevelVariantSets.GetVariantSet
+inline struct Unknown ULevelVariantSets::GetVariantSet(int32_t VariantSetIndex) {
+	static auto fn = UObject::FindObject<UFunction>("Function VariantManagerContent.LevelVariantSets.GetVariantSet");
+
+	struct GetVariantSet_Params {
+		int32_t VariantSetIndex;
+		struct Unknown ReturnValue;
+
+	}; GetVariantSet_Params Params;
+
+	Params.VariantSetIndex = VariantSetIndex;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function VariantManagerContent.LevelVariantSets.GetNumVariantSets
+inline int32_t ULevelVariantSets::GetNumVariantSets() {
+	static auto fn = UObject::FindObject<UFunction>("Function VariantManagerContent.LevelVariantSets.GetNumVariantSets");
+
+	struct GetNumVariantSets_Params {
+		
+		int32_t ReturnValue;
+
+	}; GetNumVariantSets_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function VariantManagerContent.LevelVariantSetsActor.SwitchOnVariantByName
+inline char ALevelVariantSetsActor::SwitchOnVariantByName(struct FString VariantSetName, struct FString VariantName) {
+	static auto fn = UObject::FindObject<UFunction>("Function VariantManagerContent.LevelVariantSetsActor.SwitchOnVariantByName");
+
+	struct SwitchOnVariantByName_Params {
+		struct FString VariantSetName;
+		struct FString VariantName;
+		char ReturnValue;
+
+	}; SwitchOnVariantByName_Params Params;
+
+	Params.VariantSetName = VariantSetName;
+	Params.VariantName = VariantName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function VariantManagerContent.LevelVariantSetsActor.SwitchOnVariantByIndex
+inline char ALevelVariantSetsActor::SwitchOnVariantByIndex(int32_t VariantSetIndex, int32_t VariantIndex) {
+	static auto fn = UObject::FindObject<UFunction>("Function VariantManagerContent.LevelVariantSetsActor.SwitchOnVariantByIndex");
+
+	struct SwitchOnVariantByIndex_Params {
+		int32_t VariantSetIndex;
+		int32_t VariantIndex;
+		char ReturnValue;
+
+	}; SwitchOnVariantByIndex_Params Params;
+
+	Params.VariantSetIndex = VariantSetIndex;
+	Params.VariantIndex = VariantIndex;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function VariantManagerContent.LevelVariantSetsActor.SetLevelVariantSets
+inline void ALevelVariantSetsActor::SetLevelVariantSets(struct Unknown InVariantSets) {
+	static auto fn = UObject::FindObject<UFunction>("Function VariantManagerContent.LevelVariantSetsActor.SetLevelVariantSets");
+
+	struct SetLevelVariantSets_Params {
+		struct Unknown InVariantSets;
+	}; SetLevelVariantSets_Params Params;
+
+	Params.InVariantSets = InVariantSets;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function VariantManagerContent.LevelVariantSetsActor.GetLevelVariantSets
+inline struct Unknown ALevelVariantSetsActor::GetLevelVariantSets(char bLoad) {
+	static auto fn = UObject::FindObject<UFunction>("Function VariantManagerContent.LevelVariantSetsActor.GetLevelVariantSets");
+
+	struct GetLevelVariantSets_Params {
+		char bLoad;
+		struct Unknown ReturnValue;
+
+	}; GetLevelVariantSets_Params Params;
+
+	Params.bLoad = bLoad;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function VariantManagerContent.PropertyValue.HasRecordedData
+inline char UPropertyValue::HasRecordedData() {
+	static auto fn = UObject::FindObject<UFunction>("Function VariantManagerContent.PropertyValue.HasRecordedData");
+
+	struct HasRecordedData_Params {
+		
+		char ReturnValue;
+
+	}; HasRecordedData_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function VariantManagerContent.PropertyValue.GetPropertyTooltip
+inline struct FText UPropertyValue::GetPropertyTooltip() {
+	static auto fn = UObject::FindObject<UFunction>("Function VariantManagerContent.PropertyValue.GetPropertyTooltip");
+
+	struct GetPropertyTooltip_Params {
+		
+		struct FText ReturnValue;
+
+	}; GetPropertyTooltip_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function VariantManagerContent.PropertyValue.GetFullDisplayString
+inline struct FString UPropertyValue::GetFullDisplayString() {
+	static auto fn = UObject::FindObject<UFunction>("Function VariantManagerContent.PropertyValue.GetFullDisplayString");
+
+	struct GetFullDisplayString_Params {
+		
+		struct FString ReturnValue;
+
+	}; GetFullDisplayString_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function VariantManagerContent.SwitchActor.SelectOption
+inline void ASwitchActor::SelectOption(int32_t OptionIndex) {
+	static auto fn = UObject::FindObject<UFunction>("Function VariantManagerContent.SwitchActor.SelectOption");
+
+	struct SelectOption_Params {
+		int32_t OptionIndex;
+	}; SelectOption_Params Params;
+
+	Params.OptionIndex = OptionIndex;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function VariantManagerContent.SwitchActor.GetSelectedOption
+inline int32_t ASwitchActor::GetSelectedOption() {
+	static auto fn = UObject::FindObject<UFunction>("Function VariantManagerContent.SwitchActor.GetSelectedOption");
+
+	struct GetSelectedOption_Params {
+		
+		int32_t ReturnValue;
+
+	}; GetSelectedOption_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function VariantManagerContent.SwitchActor.GetOptions
+inline struct TArray<Unknown> ASwitchActor::GetOptions() {
+	static auto fn = UObject::FindObject<UFunction>("Function VariantManagerContent.SwitchActor.GetOptions");
+
+	struct GetOptions_Params {
+		
+		struct TArray<Unknown> ReturnValue;
+
+	}; GetOptions_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function VariantManagerContent.Variant.SwitchOn
+inline void UVariant::SwitchOn() {
+	static auto fn = UObject::FindObject<UFunction>("Function VariantManagerContent.Variant.SwitchOn");
+
+	struct SwitchOn_Params {
+		
+	}; SwitchOn_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function VariantManagerContent.Variant.SetDisplayText
+inline void UVariant::SetDisplayText(struct FText& NewDisplayText) {
+	static auto fn = UObject::FindObject<UFunction>("Function VariantManagerContent.Variant.SetDisplayText");
+
+	struct SetDisplayText_Params {
+		struct FText& NewDisplayText;
+	}; SetDisplayText_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	NewDisplayText = Params.NewDisplayText;
+
+}
+
+// Function VariantManagerContent.Variant.IsActive
+inline char UVariant::IsActive() {
+	static auto fn = UObject::FindObject<UFunction>("Function VariantManagerContent.Variant.IsActive");
+
+	struct IsActive_Params {
+		
+		char ReturnValue;
+
+	}; IsActive_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function VariantManagerContent.Variant.GetThumbnail
+inline struct Unknown UVariant::GetThumbnail() {
+	static auto fn = UObject::FindObject<UFunction>("Function VariantManagerContent.Variant.GetThumbnail");
+
+	struct GetThumbnail_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetThumbnail_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function VariantManagerContent.Variant.GetNumActors
+inline int32_t UVariant::GetNumActors() {
+	static auto fn = UObject::FindObject<UFunction>("Function VariantManagerContent.Variant.GetNumActors");
+
+	struct GetNumActors_Params {
+		
+		int32_t ReturnValue;
+
+	}; GetNumActors_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function VariantManagerContent.Variant.GetDisplayText
+inline struct FText UVariant::GetDisplayText() {
+	static auto fn = UObject::FindObject<UFunction>("Function VariantManagerContent.Variant.GetDisplayText");
+
+	struct GetDisplayText_Params {
+		
+		struct FText ReturnValue;
+
+	}; GetDisplayText_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function VariantManagerContent.Variant.GetActor
+inline struct Unknown UVariant::GetActor(int32_t ActorIndex) {
+	static auto fn = UObject::FindObject<UFunction>("Function VariantManagerContent.Variant.GetActor");
+
+	struct GetActor_Params {
+		int32_t ActorIndex;
+		struct Unknown ReturnValue;
+
+	}; GetActor_Params Params;
+
+	Params.ActorIndex = ActorIndex;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function VariantManagerContent.VariantSet.SetDisplayText
+inline void UVariantSet::SetDisplayText(struct FText& NewDisplayText) {
+	static auto fn = UObject::FindObject<UFunction>("Function VariantManagerContent.VariantSet.SetDisplayText");
+
+	struct SetDisplayText_Params {
+		struct FText& NewDisplayText;
+	}; SetDisplayText_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	NewDisplayText = Params.NewDisplayText;
+
+}
+
+// Function VariantManagerContent.VariantSet.GetVariantByName
+inline struct Unknown UVariantSet::GetVariantByName(struct FString VariantName) {
+	static auto fn = UObject::FindObject<UFunction>("Function VariantManagerContent.VariantSet.GetVariantByName");
+
+	struct GetVariantByName_Params {
+		struct FString VariantName;
+		struct Unknown ReturnValue;
+
+	}; GetVariantByName_Params Params;
+
+	Params.VariantName = VariantName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function VariantManagerContent.VariantSet.GetVariant
+inline struct Unknown UVariantSet::GetVariant(int32_t VariantIndex) {
+	static auto fn = UObject::FindObject<UFunction>("Function VariantManagerContent.VariantSet.GetVariant");
+
+	struct GetVariant_Params {
+		int32_t VariantIndex;
+		struct Unknown ReturnValue;
+
+	}; GetVariant_Params Params;
+
+	Params.VariantIndex = VariantIndex;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function VariantManagerContent.VariantSet.GetNumVariants
+inline int32_t UVariantSet::GetNumVariants() {
+	static auto fn = UObject::FindObject<UFunction>("Function VariantManagerContent.VariantSet.GetNumVariants");
+
+	struct GetNumVariants_Params {
+		
+		int32_t ReturnValue;
+
+	}; GetNumVariants_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function VariantManagerContent.VariantSet.GetDisplayText
+inline struct FText UVariantSet::GetDisplayText() {
+	static auto fn = UObject::FindObject<UFunction>("Function VariantManagerContent.VariantSet.GetDisplayText");
+
+	struct GetDisplayText_Params {
+		
+		struct FText ReturnValue;
+
+	}; GetDisplayText_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+

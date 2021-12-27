@@ -82,3 +82,17 @@ public:
 	int32_t ProbeUpdateRayBudget; // 0x40 (4)
 };
 
+// Function RTXGI.DDGIVolumeComponent.DDGIClearVolumes
+inline void UDDGIVolumeComponent::DDGIClearVolumes() {
+	static auto fn = UObject::FindObject<UFunction>("Function RTXGI.DDGIVolumeComponent.DDGIClearVolumes");
+
+	struct DDGIClearVolumes_Params {
+		
+	}; DDGIClearVolumes_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+

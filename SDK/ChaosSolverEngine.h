@@ -91,3 +91,32 @@ struct FChaosDebugSubstepControl {
 	char bStep : 0; // 0x2 (1)
 };
 
+// Function ChaosSolverEngine.ChaosSolverActor.SetSolverActive
+inline void AChaosSolverActor::SetSolverActive(char bActive) {
+	static auto fn = UObject::FindObject<UFunction>("Function ChaosSolverEngine.ChaosSolverActor.SetSolverActive");
+
+	struct SetSolverActive_Params {
+		char bActive;
+	}; SetSolverActive_Params Params;
+
+	Params.bActive = bActive;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function ChaosSolverEngine.ChaosSolverActor.SetAsCurrentWorldSolver
+inline void AChaosSolverActor::SetAsCurrentWorldSolver() {
+	static auto fn = UObject::FindObject<UFunction>("Function ChaosSolverEngine.ChaosSolverActor.SetAsCurrentWorldSolver");
+
+	struct SetAsCurrentWorldSolver_Params {
+		
+	}; SetAsCurrentWorldSolver_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+

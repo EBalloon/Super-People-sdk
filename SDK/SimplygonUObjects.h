@@ -296,7 +296,7 @@ struct FAggregationPipelineSettings : FSimplygonPipelineSettings {
 // ScriptStruct SimplygonUObjects.GenerateLightmapTexCoordSettings
 struct FGenerateLightmapTexCoordSettings {
 	char GenerateLightmapTexCoord : 0; // 0x0 (1)
-	int32_t LightmapTexCoordLev; // 0x4 (4)
+	int32_t LightmapTexCoordLevCo; // 0x4 (4)
 	struct FString LightmapTexCoordName; // 0x8 (16)
 	enum class Unknow ChartAggregatorMode; // 0x18 (4)
 	uint32_t TextureWidth; // 0x1C (4)
@@ -319,7 +319,7 @@ struct FMappingImageSettings {
 	char UseAutomaticTextureSize : 0; // 0x18 (1)
 	float AutomaticTextureSizeMultiplier; // 0x1C (4)
 	char ForcePower2Texture : 0; // 0x20 (1)
-	char OnlyParameterizeInv : 0; // 0x20 (1)
+	char OnlyParameterizeInvpping : 0; // 0x20 (1)
 	int32_t TexCoordLevel; // 0x24 (4)
 	struct FString TexCoordName; // 0x28 (16)
 	enum class Unknow TexCoordGeneratorType; // 0x38 (4)
@@ -339,7 +339,7 @@ struct FParameterizerSettings {
 struct FChartAggregatorSettings {
 	enum class Unknow ChartAggregatorMode; // 0x0 (4)
 	enum class Unknow SurfaceAreaScale; // 0x4 (4)
-	int32_t OriginalTexCoordLevbj; // 0x8 (4)
+	int32_t OriginalTexCoordLev; // 0x8 (4)
 	struct FString OriginalTexCoordName; // 0x10 (16)
 	char SeparateOverlappingCharts : 0; // 0x20 (1)
 	struct FString OriginalChartProportionsChannel; // 0x28 (16)
@@ -364,7 +364,7 @@ struct FVertexWeightSettings {
 	char UseVertexWeightsInReducer : 0; // 0x0 (1)
 	char UseVertexWeightsInTexcoordGenerator : 0; // 0x0 (1)
 	struct FString WeightsFromColorName; // 0x8 (16)
-	int32_t WeightsFromColorLev; // 0x18 (4)
+	int32_t WeightsFromColorLevgs; // 0x18 (4)
 	enum class Unknow WeightsFromColorComponent; // 0x1C (4)
 	float WeightsFromColorMultiplier; // 0x20 (4)
 	enum class Unknow WeightsFromColorMode; // 0x24 (4)
@@ -377,7 +377,7 @@ struct FGeometryCullingSettings {
 	struct FString ClippingPlaneSelectionSetName; // 0x8 (16)
 	char UseClippingGeometry : 0; // 0x18 (1)
 	int32_t ClippingGeometrySelectionSetID; // 0x1C (4)
-	struct FString ClippingGeometrySelectionSetNam; // 0x20 (16)
+	struct FString ClippingGeometrySelectionSetName; // 0x20 (16)
 };
 
 // ScriptStruct SimplygonUObjects.VisibilitySettings
@@ -393,7 +393,7 @@ struct FVisibilitySettings {
 	int32_t OccluderSelectionSetID; // 0x20 (4)
 	struct FString OccluderSelectionSetName; // 0x28 (16)
 	float FillNonVisibleAreaThreshold; // 0x38 (4)
-	char RemoveTrianglesNotOccludingOtherTriangles : 0; // 0x3C (1)
+	char RemoveTrianglesNotOccludingOtherTriangr : 0; // 0x3C (1)
 	char ConservativeMode : 0; // 0x3C (1)
 	enum class Unknow ComputeVisibilityMode; // 0x40 (4)
 };
@@ -488,7 +488,7 @@ struct FRepairSettings {
 	char WeldOnlyWithinMaterial : 0; // 0xC (1)
 	char WeldOnlyWithinSceneNode : 0; // 0xC (1)
 	char WeldOnlyBetweenSceneNodes : 0; // 0xC (1)
-	char UseWelding : 0; // 0xC (1)
+	char Use : 0; // 0xC (1)
 	uint32_t ProgressivePasses; // 0x10 (4)
 };
 

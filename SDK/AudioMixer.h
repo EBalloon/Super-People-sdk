@@ -41,13 +41,13 @@ enum class ESubmixEffectDynamicsChannelLinkMode : uint8_t {
 	ESubmixEffectDynamicsChannelLinkMode = 4,
 };
 
-// Enum AudioMixer.ESubmixEffectDynamicsPeakMode
-enum class ESubmixEffectDynamicsPeakMode : uint8_t {
-	ESubmixEffectDynamicsPeakMode = 0,
-	ESubmixEffectDynamicsPeakMode = 1,
-	ESubmixEffectDynamicsPeakMode = 2,
-	ESubmixEffectDynamicsPeakMode = 3,
-	ESubmixEffectDynamicsPeakMode = 4,
+// Enum AudioMixer.ESubmixEffectDynamicsPeak
+enum class ESubmixEffectDynamicsPeak : uint8_t {
+	ESubmixEffectDynamicsPeak = 0,
+	ESubmixEffectDynamicsPeak = 1,
+	ESubmixEffectDynamicsPeak = 2,
+	ESubmixEffectDynamicsPeak = 3,
+	ESubmixEffectDynamicsPeak = 4,
 };
 
 // Enum AudioMixer.ESubmixEffectDynamicsProcessorType
@@ -223,4 +223,203 @@ struct FSubmixEffectReverbFastSettings {
 	float WetLevel; // 0x30 (4)
 	float DryLevel; // 0x34 (4)
 };
+
+// Function AudioMixer.SynthComponent.Stop
+inline void USynthComponent::Stop() {
+	static auto fn = UObject::FindObject<UFunction>("Function AudioMixer.SynthComponent.Stop");
+
+	struct Stop_Params {
+		
+	}; Stop_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AudioMixer.SynthComponent.Start
+inline void USynthComponent::Start() {
+	static auto fn = UObject::FindObject<UFunction>("Function AudioMixer.SynthComponent.Start");
+
+	struct Start_Params {
+		
+	}; Start_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AudioMixer.SynthComponent.SetVolumeMultiplier
+inline void USynthComponent::SetVolumeMultiplier(float VolumeMultiplier) {
+	static auto fn = UObject::FindObject<UFunction>("Function AudioMixer.SynthComponent.SetVolumeMultiplier");
+
+	struct SetVolumeMultiplier_Params {
+		float VolumeMultiplier;
+	}; SetVolumeMultiplier_Params Params;
+
+	Params.VolumeMultiplier = VolumeMultiplier;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AudioMixer.SynthComponent.SetSubmixSend
+inline void USynthComponent::SetSubmixSend(struct Unknown Submix, float SendLevel) {
+	static auto fn = UObject::FindObject<UFunction>("Function AudioMixer.SynthComponent.SetSubmixSend");
+
+	struct SetSubmixSend_Params {
+		struct Unknown Submix;
+		float SendLevel;
+	}; SetSubmixSend_Params Params;
+
+	Params.Submix = Submix;
+	Params.SendLevel = SendLevel;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AudioMixer.SynthComponent.IsPlaying
+inline char USynthComponent::IsPlaying() {
+	static auto fn = UObject::FindObject<UFunction>("Function AudioMixer.SynthComponent.IsPlaying");
+
+	struct IsPlaying_Params {
+		
+		char ReturnValue;
+
+	}; IsPlaying_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function AudioMixer.SubmixEffectDynamicsProcessorPreset.SetSettings
+inline void USubmixEffectDynamicsProcessorPreset::SetSettings(struct Unknown& Settings) {
+	static auto fn = UObject::FindObject<UFunction>("Function AudioMixer.SubmixEffectDynamicsProcessorPreset.SetSettings");
+
+	struct SetSettings_Params {
+		struct Unknown& Settings;
+	}; SetSettings_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Settings = Params.Settings;
+
+}
+
+// Function AudioMixer.SubmixEffectDynamicsProcessorPreset.SetExternalSubmix
+inline void USubmixEffectDynamicsProcessorPreset::SetExternalSubmix(struct Unknown Submix) {
+	static auto fn = UObject::FindObject<UFunction>("Function AudioMixer.SubmixEffectDynamicsProcessorPreset.SetExternalSubmix");
+
+	struct SetExternalSubmix_Params {
+		struct Unknown Submix;
+	}; SetExternalSubmix_Params Params;
+
+	Params.Submix = Submix;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AudioMixer.SubmixEffectSubmixEQPreset.SetSettings
+inline void USubmixEffectSubmixEQPreset::SetSettings(struct Unknown& InSettings) {
+	static auto fn = UObject::FindObject<UFunction>("Function AudioMixer.SubmixEffectSubmixEQPreset.SetSettings");
+
+	struct SetSettings_Params {
+		struct Unknown& InSettings;
+	}; SetSettings_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	InSettings = Params.InSettings;
+
+}
+
+// Function AudioMixer.SubmixEffectReverbPreset.SetSettingsWithReverbEffect
+inline void USubmixEffectReverbPreset::SetSettingsWithReverbEffect(struct Unknown InReverbEffect, float WetLevel, float DryLevel) {
+	static auto fn = UObject::FindObject<UFunction>("Function AudioMixer.SubmixEffectReverbPreset.SetSettingsWithReverbEffect");
+
+	struct SetSettingsWithReverbEffect_Params {
+		struct Unknown InReverbEffect;
+		float WetLevel;
+		float DryLevel;
+	}; SetSettingsWithReverbEffect_Params Params;
+
+	Params.InReverbEffect = InReverbEffect;
+	Params.WetLevel = WetLevel;
+	Params.DryLevel = DryLevel;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AudioMixer.SubmixEffectReverbPreset.SetSettings
+inline void USubmixEffectReverbPreset::SetSettings(struct Unknown& InSettings) {
+	static auto fn = UObject::FindObject<UFunction>("Function AudioMixer.SubmixEffectReverbPreset.SetSettings");
+
+	struct SetSettings_Params {
+		struct Unknown& InSettings;
+	}; SetSettings_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	InSettings = Params.InSettings;
+
+}
+
+// Function AudioMixer.SubmixEffectReverbFastPreset.SetSettingsWithReverbEffect
+inline void USubmixEffectReverbFastPreset::SetSettingsWithReverbEffect(struct Unknown InReverbEffect, float WetLevel, float DryLevel) {
+	static auto fn = UObject::FindObject<UFunction>("Function AudioMixer.SubmixEffectReverbFastPreset.SetSettingsWithReverbEffect");
+
+	struct SetSettingsWithReverbEffect_Params {
+		struct Unknown InReverbEffect;
+		float WetLevel;
+		float DryLevel;
+	}; SetSettingsWithReverbEffect_Params Params;
+
+	Params.InReverbEffect = InReverbEffect;
+	Params.WetLevel = WetLevel;
+	Params.DryLevel = DryLevel;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function AudioMixer.SubmixEffectReverbFastPreset.SetSettings
+inline void USubmixEffectReverbFastPreset::SetSettings(struct Unknown& InSettings) {
+	static auto fn = UObject::FindObject<UFunction>("Function AudioMixer.SubmixEffectReverbFastPreset.SetSettings");
+
+	struct SetSettings_Params {
+		struct Unknown& InSettings;
+	}; SetSettings_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	InSettings = Params.InSettings;
+
+}
 

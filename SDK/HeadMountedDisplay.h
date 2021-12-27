@@ -99,7 +99,7 @@ public:
 	struct Unknown GetHandJointPosition(int32_t jointIndex, char& bValueFound); // Function HeadMountedDisplay.MotionControllerComponent.GetHandJointPosition(Final|Native|Protected|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2F148E0>
 };
 
-// Class HeadMountedDisplay.AsyncTask_LoadXRDev
+// Class HeadMountedDisplay.AsyncTask_LoadXRDevary
 class UAsyncTask_LoadXRDev : public UBlueprintAsyncActionBase {
 
 public:
@@ -117,4 +117,252 @@ struct FXRDeviceId {
 	struct FName SystemName; // 0x0 (8)
 	int32_t DeviceID; // 0x8 (4)
 };
+
+// Function HeadMountedDisplay.MotionControllerComponent.SetTrackingSource
+inline void UMotionControllerComponent::SetTrackingSource(enum class Unknow NewSource) {
+	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.MotionControllerComponent.SetTrackingSource");
+
+	struct SetTrackingSource_Params {
+		enum class Unknow NewSource;
+	}; SetTrackingSource_Params Params;
+
+	Params.NewSource = NewSource;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function HeadMountedDisplay.MotionControllerComponent.SetTrackingMotionSource
+inline void UMotionControllerComponent::SetTrackingMotionSource(struct FName NewSource) {
+	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.MotionControllerComponent.SetTrackingMotionSource");
+
+	struct SetTrackingMotionSource_Params {
+		struct FName NewSource;
+	}; SetTrackingMotionSource_Params Params;
+
+	Params.NewSource = NewSource;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function HeadMountedDisplay.MotionControllerComponent.SetShowDeviceModel
+inline void UMotionControllerComponent::SetShowDeviceModel(char bShowControllerModel) {
+	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.MotionControllerComponent.SetShowDeviceModel");
+
+	struct SetShowDeviceModel_Params {
+		char bShowControllerModel;
+	}; SetShowDeviceModel_Params Params;
+
+	Params.bShowControllerModel = bShowControllerModel;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function HeadMountedDisplay.MotionControllerComponent.SetDisplayModelSource
+inline void UMotionControllerComponent::SetDisplayModelSource(struct FName NewDisplayModelSource) {
+	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.MotionControllerComponent.SetDisplayModelSource");
+
+	struct SetDisplayModelSource_Params {
+		struct FName NewDisplayModelSource;
+	}; SetDisplayModelSource_Params Params;
+
+	Params.NewDisplayModelSource = NewDisplayModelSource;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function HeadMountedDisplay.MotionControllerComponent.SetCustomDisplayMesh
+inline void UMotionControllerComponent::SetCustomDisplayMesh(struct Unknown NewDisplayMesh) {
+	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.MotionControllerComponent.SetCustomDisplayMesh");
+
+	struct SetCustomDisplayMesh_Params {
+		struct Unknown NewDisplayMesh;
+	}; SetCustomDisplayMesh_Params Params;
+
+	Params.NewDisplayMesh = NewDisplayMesh;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function HeadMountedDisplay.MotionControllerComponent.SetAssociatedPlayerIndex
+inline void UMotionControllerComponent::SetAssociatedPlayerIndex(int32_t NewPlayer) {
+	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.MotionControllerComponent.SetAssociatedPlayerIndex");
+
+	struct SetAssociatedPlayerIndex_Params {
+		int32_t NewPlayer;
+	}; SetAssociatedPlayerIndex_Params Params;
+
+	Params.NewPlayer = NewPlayer;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function HeadMountedDisplay.MotionControllerComponent.OnMotionControllerUpdated
+inline void UMotionControllerComponent::OnMotionControllerUpdated() {
+	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.MotionControllerComponent.OnMotionControllerUpdated");
+
+	struct OnMotionControllerUpdated_Params {
+		
+	}; OnMotionControllerUpdated_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function HeadMountedDisplay.MotionControllerComponent.IsTracked
+inline char UMotionControllerComponent::IsTracked() {
+	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.MotionControllerComponent.IsTracked");
+
+	struct IsTracked_Params {
+		
+		char ReturnValue;
+
+	}; IsTracked_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function HeadMountedDisplay.MotionControllerComponent.GetTrackingSource
+inline enum class Unknow UMotionControllerComponent::GetTrackingSource() {
+	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.MotionControllerComponent.GetTrackingSource");
+
+	struct GetTrackingSource_Params {
+		
+		enum class Unknow ReturnValue;
+
+	}; GetTrackingSource_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function HeadMountedDisplay.MotionControllerComponent.GetParameterValue
+inline float UMotionControllerComponent::GetParameterValue(struct FName InName, char& bValueFound) {
+	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.MotionControllerComponent.GetParameterValue");
+
+	struct GetParameterValue_Params {
+		struct FName InName;
+		char& bValueFound;
+		float ReturnValue;
+
+	}; GetParameterValue_Params Params;
+
+	Params.InName = InName;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	bValueFound = Params.bValueFound;
+
+
+	return params.ReturnValue;
+}
+
+// Function HeadMountedDisplay.MotionControllerComponent.GetHandJointPosition
+inline struct Unknown UMotionControllerComponent::GetHandJointPosition(int32_t jointIndex, char& bValueFound) {
+	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.MotionControllerComponent.GetHandJointPosition");
+
+	struct GetHandJointPosition_Params {
+		int32_t jointIndex;
+		char& bValueFound;
+		struct Unknown ReturnValue;
+
+	}; GetHandJointPosition_Params Params;
+
+	Params.jointIndex = jointIndex;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	bValueFound = Params.bValueFound;
+
+
+	return params.ReturnValue;
+}
+
+// Function HeadMountedDisplay.AsyncTask_LoadXRDev.AddNamedDeviceVisualizationComponentAsync
+inline struct Unknown UAsyncTask_LoadXRDev::AddNamedDeviceVisualizationComponentAsync(struct Unknown Target, struct FName SystemName, struct FName DeviceName, char bManualAttachment, struct Unknown& RelativeTransform, struct Unknown& XRDeviceId, struct Unknown& NewComponent) {
+	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.AsyncTask_LoadXRDev.AddNamedDeviceVisualizationComponentAsync");
+
+	struct AddNamedDeviceVisualizationComponentAsync_Params {
+		struct Unknown Target;
+		struct FName SystemName;
+		struct FName DeviceName;
+		char bManualAttachment;
+		struct Unknown& RelativeTransform;
+		struct Unknown& XRDeviceId;
+		struct Unknown& NewComponent;
+		struct Unknown ReturnValue;
+
+	}; AddNamedDeviceVisualizationComponentAsync_Params Params;
+
+	Params.Target = Target;
+	Params.SystemName = SystemName;
+	Params.DeviceName = DeviceName;
+	Params.bManualAttachment = bManualAttachment;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	RelativeTransform = Params.RelativeTransform;
+	XRDeviceId = Params.XRDeviceId;
+	NewComponent = Params.NewComponent;
+
+
+	return params.ReturnValue;
+}
+
+// Function HeadMountedDisplay.AsyncTask_LoadXRDev.AddDeviceVisualizationComponentAsync
+inline struct Unknown UAsyncTask_LoadXRDev::AddDeviceVisualizationComponentAsync(struct Unknown Target, struct Unknown& XRDeviceId, char bManualAttachment, struct Unknown& RelativeTransform, struct Unknown& NewComponent) {
+	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.AsyncTask_LoadXRDev.AddDeviceVisualizationComponentAsync");
+
+	struct AddDeviceVisualizationComponentAsync_Params {
+		struct Unknown Target;
+		struct Unknown& XRDeviceId;
+		char bManualAttachment;
+		struct Unknown& RelativeTransform;
+		struct Unknown& NewComponent;
+		struct Unknown ReturnValue;
+
+	}; AddDeviceVisualizationComponentAsync_Params Params;
+
+	Params.Target = Target;
+	Params.bManualAttachment = bManualAttachment;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	XRDeviceId = Params.XRDeviceId;
+	RelativeTransform = Params.RelativeTransform;
+	NewComponent = Params.NewComponent;
+
+
+	return params.ReturnValue;
+}
 

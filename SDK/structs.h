@@ -1,5 +1,4 @@
-	
-    
+
 #pragma once
 
 #ifdef _MSC_VER
@@ -23,14 +22,13 @@ public:
 	struct FName* Name;
 	UObject* Outer;
 
-	inline void ProcessEvent(class UFunction* function, void* parms)
+	inline void ProcessEvent(struct UFunction* function, void* Params)
 	{
-		return GetVFunction<void(*)(UObject*, struct UFunction*, void*)>(this, 66 /*0x42*/)(this, function, parms);
+		return GetVFunction<void(*)(UObject*, struct UFunction*, void*)>(this, 66 /*0x42*/)(this, function, Params);
 	}
 };
 
-	
-    
+
 struct UClass {
 public:
 	UClass* SuperClass;

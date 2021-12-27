@@ -138,3 +138,84 @@ struct FDestructibleDamageParameters {
 	float ImpactResistance; // 0x18 (4)
 };
 
+// Function ApexDestruction.DestructibleComponent.SetDestructibleMesh
+inline void UDestructibleComponent::SetDestructibleMesh(struct Unknown NewMesh) {
+	static auto fn = UObject::FindObject<UFunction>("Function ApexDestruction.DestructibleComponent.SetDestructibleMesh");
+
+	struct SetDestructibleMesh_Params {
+		struct Unknown NewMesh;
+	}; SetDestructibleMesh_Params Params;
+
+	Params.NewMesh = NewMesh;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function ApexDestruction.DestructibleComponent.GetDestructibleMesh
+inline struct Unknown UDestructibleComponent::GetDestructibleMesh() {
+	static auto fn = UObject::FindObject<UFunction>("Function ApexDestruction.DestructibleComponent.GetDestructibleMesh");
+
+	struct GetDestructibleMesh_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetDestructibleMesh_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function ApexDestruction.DestructibleComponent.ApplyRadiusDamage
+inline void UDestructibleComponent::ApplyRadiusDamage(float BaseDamage, struct Unknown& HurtOrigin, float DamageRadius, float ImpulseStrength, char bFullDamage) {
+	static auto fn = UObject::FindObject<UFunction>("Function ApexDestruction.DestructibleComponent.ApplyRadiusDamage");
+
+	struct ApplyRadiusDamage_Params {
+		float BaseDamage;
+		struct Unknown& HurtOrigin;
+		float DamageRadius;
+		float ImpulseStrength;
+		char bFullDamage;
+	}; ApplyRadiusDamage_Params Params;
+
+	Params.BaseDamage = BaseDamage;
+	Params.DamageRadius = DamageRadius;
+	Params.ImpulseStrength = ImpulseStrength;
+	Params.bFullDamage = bFullDamage;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	HurtOrigin = Params.HurtOrigin;
+
+}
+
+// Function ApexDestruction.DestructibleComponent.ApplyDamage
+inline void UDestructibleComponent::ApplyDamage(float DamageAmount, struct Unknown& HitLocation, struct Unknown& ImpulseDir, float ImpulseStrength) {
+	static auto fn = UObject::FindObject<UFunction>("Function ApexDestruction.DestructibleComponent.ApplyDamage");
+
+	struct ApplyDamage_Params {
+		float DamageAmount;
+		struct Unknown& HitLocation;
+		struct Unknown& ImpulseDir;
+		float ImpulseStrength;
+	}; ApplyDamage_Params Params;
+
+	Params.DamageAmount = DamageAmount;
+	Params.ImpulseStrength = ImpulseStrength;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	HitLocation = Params.HitLocation;
+	ImpulseDir = Params.ImpulseDir;
+
+}
+

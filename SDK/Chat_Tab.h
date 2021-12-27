@@ -28,3 +28,112 @@ public:
 	void ExecuteUbergraph_Chat_Tab(int32_t EntryPoint); // Function Chat_Tab.Chat_Tab_C.ExecuteUbergraph_Chat_Tab(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 };
 
+// Function Chat_Tab.Chat_Tab_C.OnFocusReceived
+inline struct Unknown UChat_Tab_C::OnFocusReceived(struct Unknown MyGeometry, struct Unknown InFocusEvent) {
+	static auto fn = UObject::FindObject<UFunction>("Function Chat_Tab.Chat_Tab_C.OnFocusReceived");
+
+	struct OnFocusReceived_Params {
+		struct Unknown MyGeometry;
+		struct Unknown InFocusEvent;
+		struct Unknown ReturnValue;
+
+	}; OnFocusReceived_Params Params;
+
+	Params.MyGeometry = MyGeometry;
+	Params.InFocusEvent = InFocusEvent;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function Chat_Tab.Chat_Tab_C.Construct
+inline void UChat_Tab_C::Construct() {
+	static auto fn = UObject::FindObject<UFunction>("Function Chat_Tab.Chat_Tab_C.Construct");
+
+	struct Construct_Params {
+		
+	}; Construct_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Chat_Tab.Chat_Tab_C.BndEvt__Button_K2Node_ComponentBoundEvent_27_OnButtonClickedEvent__DelegateSignature
+inline void UChat_Tab_C::BndEvt__Button_K2Node_ComponentBoundEvent_27_OnButtonClickedEvent__DelegateSignature() {
+	static auto fn = UObject::FindObject<UFunction>("Function Chat_Tab.Chat_Tab_C.BndEvt__Button_K2Node_ComponentBoundEvent_27_OnButtonClickedEvent__DelegateSignature");
+
+	struct BndEvt__Button_K2Node_ComponentBoundEvent_27_OnButtonClickedEvent__DelegateSignature_Params {
+		
+	}; BndEvt__Button_K2Node_ComponentBoundEvent_27_OnButtonClickedEvent__DelegateSignature_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Chat_Tab.Chat_Tab_C.Set
+inline void UChat_Tab_C::Set() {
+	static auto fn = UObject::FindObject<UFunction>("Function Chat_Tab.Chat_Tab_C.Set");
+
+	struct Set_Params {
+		
+	}; Set_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Chat_Tab.Chat_Tab_C.Flash
+inline void UChat_Tab_C::Flash() {
+	static auto fn = UObject::FindObject<UFunction>("Function Chat_Tab.Chat_Tab_C.Flash");
+
+	struct Flash_Params {
+		
+	}; Flash_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Chat_Tab.Chat_Tab_C.Tick
+inline void UChat_Tab_C::Tick(struct Unknown MyGeometry, float InDeltaTime) {
+	static auto fn = UObject::FindObject<UFunction>("Function Chat_Tab.Chat_Tab_C.Tick");
+
+	struct Tick_Params {
+		struct Unknown MyGeometry;
+		float InDeltaTime;
+	}; Tick_Params Params;
+
+	Params.MyGeometry = MyGeometry;
+	Params.InDeltaTime = InDeltaTime;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function Chat_Tab.Chat_Tab_C.ExecuteUbergraph_Chat_Tab
+inline void UChat_Tab_C::ExecuteUbergraph_Chat_Tab(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function Chat_Tab.Chat_Tab_C.ExecuteUbergraph_Chat_Tab");
+
+	struct ExecuteUbergraph_Chat_Tab_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_Chat_Tab_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+

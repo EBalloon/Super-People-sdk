@@ -1,5 +1,5 @@
-// WidgetBlueprintGeneratedClass WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionM
-class UWBP_SPS_UseItemSelectionM : public UUserWidget {
+// WidgetBlueprintGeneratedClass WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C
+class UWBP_SPS_UseItemSelectionMenu_C : public UUserWidget {
 
 public:
 
@@ -87,26 +87,368 @@ public:
 	struct Unknown Image; // 0x530 (40)
 	float TextOpacity; // 0x558 (4)
 
-	void Get(int32_t Index, struct Unknown& Icon); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMk.Get(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	struct Unknown OnMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelection.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	struct Unknown OnMouseButtonUp(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMk.OnMouseButtonUp(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void SetVisibleOverImage(int32_t SelectIndex, enum class Unknow VisibleType); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMk.SetVisibleOverImage(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void SetActiveSelection(int32_t Index); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelection.SetActiveSelection(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void Get(int32_t Index, struct Unknown& Icon); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.Get(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	struct Unknown OnMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	struct Unknown OnMouseButtonUp(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.OnMouseButtonUp(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void SetVisibleOverImage(int32_t SelectIndex, enum class Unknow VisibleType); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.SetVisibleOverImage(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void SetActiveSelection(int32_t Index); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.SetActiveSelection(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 	void ClearActiveSelection(); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.ClearActiveSelection(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void CancelSelection(); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelection.CancelSelection(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void ConfirmSelection(); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMkelop.ConfirmSelection(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	int32_t CalculateSelectionIndexFromVector(struct Unknown InputVector); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelection.CalculateSelectionIndexFromVector(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	struct Unknown OnMouseMove(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelection.OnMouseMove(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void OnLoaded_B2D87D22498868B7225333B61217C4AA(struct Unknown Loaded); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMr.OnLoaded_B2D87D22498868B7225333B61217C4AA(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void Construct(); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMk.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void Destruct(); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionM.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void ConstructMenuElements(); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelection.ConstructMenuElements(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void SetSelectedIndex(int32_t SelectedIndex); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelection.SetSelectedIndex(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void (int32_t Index); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelection.(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void AssetLoad(struct Unknown Image); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMublic.AssetLoad(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void ExecuteUbergraph_WBP_SPS_UseItemSelectionMenu(int32_t EntryPoint); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelection.ExecuteUbergraph_WBP_SPS_UseItemSelectionMenu(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void ClearPing__DelegateSignature(); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMk.ClearPing__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void Hovered__DelegateSignature(struct FName ItemKey); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelection.Hovered__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void Selected__DelegateSignature(struct FName ItemKey); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelection.Selected__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void CancelSelection(); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.CancelSelection(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void ConfirmSelection(); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.ConfirmSelection(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	int32_t CalculateSelectionIndexFromVector(struct Unknown InputVector); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.CalculateSelectionIndexFromVector(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	struct Unknown OnMouseMove(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.OnMouseMove(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void OnLoaded_B2D87D22498868B7225333B61217C4AA(struct Unknown Loaded); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.OnLoaded_B2D87D22498868B7225333B61217C4AA(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void Construct(); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void Destruct(); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void ConstructMenuElements(); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.ConstructMenuElements(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void SetSelectedIndex(int32_t SelectedIndex); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.SetSelectedIndex(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void (int32_t Index); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void AssetLoad(struct Unknown Image); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.AssetLoad(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void ExecuteUbergraph_WBP_SPS_UseItemSelectionMenu(int32_t EntryPoint); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.ExecuteUbergraph_WBP_SPS_UseItemSelectionMenu(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void ClearPing__DelegateSignature(); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.ClearPing__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void Hovered__DelegateSignature(struct FName ItemKey); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.Hovered__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void Selected__DelegateSignature(struct FName ItemKey); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.Selected__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 };
+
+// Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.Get
+inline void UWBP_SPS_UseItemSelectionMenu_C::Get(int32_t Index, struct Unknown& Icon) {
+	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.Get");
+
+	struct Get_Params {
+		int32_t Index;
+		struct Unknown& Icon;
+	}; Get_Params Params;
+
+	Params.Index = Index;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Icon = Params.Icon;
+
+}
+
+// Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.OnMouseButtonDown
+inline struct Unknown UWBP_SPS_UseItemSelectionMenu_C::OnMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.OnMouseButtonDown");
+
+	struct OnMouseButtonDown_Params {
+		struct Unknown MyGeometry;
+		struct Unknown& MouseEvent;
+		struct Unknown ReturnValue;
+
+	}; OnMouseButtonDown_Params Params;
+
+	Params.MyGeometry = MyGeometry;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	MouseEvent = Params.MouseEvent;
+
+
+	return params.ReturnValue;
+}
+
+// Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.OnMouseButtonUp
+inline struct Unknown UWBP_SPS_UseItemSelectionMenu_C::OnMouseButtonUp(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.OnMouseButtonUp");
+
+	struct OnMouseButtonUp_Params {
+		struct Unknown MyGeometry;
+		struct Unknown& MouseEvent;
+		struct Unknown ReturnValue;
+
+	}; OnMouseButtonUp_Params Params;
+
+	Params.MyGeometry = MyGeometry;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	MouseEvent = Params.MouseEvent;
+
+
+	return params.ReturnValue;
+}
+
+// Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.SetVisibleOverImage
+inline void UWBP_SPS_UseItemSelectionMenu_C::SetVisibleOverImage(int32_t SelectIndex, enum class Unknow VisibleType) {
+	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.SetVisibleOverImage");
+
+	struct SetVisibleOverImage_Params {
+		int32_t SelectIndex;
+		enum class Unknow VisibleType;
+	}; SetVisibleOverImage_Params Params;
+
+	Params.SelectIndex = SelectIndex;
+	Params.VisibleType = VisibleType;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.SetActiveSelection
+inline void UWBP_SPS_UseItemSelectionMenu_C::SetActiveSelection(int32_t Index) {
+	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.SetActiveSelection");
+
+	struct SetActiveSelection_Params {
+		int32_t Index;
+	}; SetActiveSelection_Params Params;
+
+	Params.Index = Index;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.ClearActiveSelection
+inline void UWBP_SPS_UseItemSelectionMenu_C::ClearActiveSelection() {
+	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.ClearActiveSelection");
+
+	struct ClearActiveSelection_Params {
+		
+	}; ClearActiveSelection_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.CancelSelection
+inline void UWBP_SPS_UseItemSelectionMenu_C::CancelSelection() {
+	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.CancelSelection");
+
+	struct CancelSelection_Params {
+		
+	}; CancelSelection_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.ConfirmSelection
+inline void UWBP_SPS_UseItemSelectionMenu_C::ConfirmSelection() {
+	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.ConfirmSelection");
+
+	struct ConfirmSelection_Params {
+		
+	}; ConfirmSelection_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.CalculateSelectionIndexFromVector
+inline int32_t UWBP_SPS_UseItemSelectionMenu_C::CalculateSelectionIndexFromVector(struct Unknown InputVector) {
+	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.CalculateSelectionIndexFromVector");
+
+	struct CalculateSelectionIndexFromVector_Params {
+		struct Unknown InputVector;
+		int32_t ReturnValue;
+
+	}; CalculateSelectionIndexFromVector_Params Params;
+
+	Params.InputVector = InputVector;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.OnMouseMove
+inline struct Unknown UWBP_SPS_UseItemSelectionMenu_C::OnMouseMove(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.OnMouseMove");
+
+	struct OnMouseMove_Params {
+		struct Unknown MyGeometry;
+		struct Unknown& MouseEvent;
+		struct Unknown ReturnValue;
+
+	}; OnMouseMove_Params Params;
+
+	Params.MyGeometry = MyGeometry;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	MouseEvent = Params.MouseEvent;
+
+
+	return params.ReturnValue;
+}
+
+// Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.OnLoaded_B2D87D22498868B7225333B61217C4AA
+inline void UWBP_SPS_UseItemSelectionMenu_C::OnLoaded_B2D87D22498868B7225333B61217C4AA(struct Unknown Loaded) {
+	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.OnLoaded_B2D87D22498868B7225333B61217C4AA");
+
+	struct OnLoaded_B2D87D22498868B7225333B61217C4AA_Params {
+		struct Unknown Loaded;
+	}; OnLoaded_B2D87D22498868B7225333B61217C4AA_Params Params;
+
+	Params.Loaded = Loaded;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.Construct
+inline void UWBP_SPS_UseItemSelectionMenu_C::Construct() {
+	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.Construct");
+
+	struct Construct_Params {
+		
+	}; Construct_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.Destruct
+inline void UWBP_SPS_UseItemSelectionMenu_C::Destruct() {
+	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.Destruct");
+
+	struct Destruct_Params {
+		
+	}; Destruct_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.ConstructMenuElements
+inline void UWBP_SPS_UseItemSelectionMenu_C::ConstructMenuElements() {
+	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.ConstructMenuElements");
+
+	struct ConstructMenuElements_Params {
+		
+	}; ConstructMenuElements_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.SetSelectedIndex
+inline void UWBP_SPS_UseItemSelectionMenu_C::SetSelectedIndex(int32_t SelectedIndex) {
+	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.SetSelectedIndex");
+
+	struct SetSelectedIndex_Params {
+		int32_t SelectedIndex;
+	}; SetSelectedIndex_Params Params;
+
+	Params.SelectedIndex = SelectedIndex;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.
+inline void UWBP_SPS_UseItemSelectionMenu_C::(int32_t Index) {
+	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.");
+
+	struct _Params {
+		int32_t Index;
+	}; _Params Params;
+
+	Params.Index = Index;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.AssetLoad
+inline void UWBP_SPS_UseItemSelectionMenu_C::AssetLoad(struct Unknown Image) {
+	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.AssetLoad");
+
+	struct AssetLoad_Params {
+		struct Unknown Image;
+	}; AssetLoad_Params Params;
+
+	Params.Image = Image;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.ExecuteUbergraph_WBP_SPS_UseItemSelectionMenu
+inline void UWBP_SPS_UseItemSelectionMenu_C::ExecuteUbergraph_WBP_SPS_UseItemSelectionMenu(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.ExecuteUbergraph_WBP_SPS_UseItemSelectionMenu");
+
+	struct ExecuteUbergraph_WBP_SPS_UseItemSelectionMenu_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_WBP_SPS_UseItemSelectionMenu_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.ClearPing__DelegateSignature
+inline void UWBP_SPS_UseItemSelectionMenu_C::ClearPing__DelegateSignature() {
+	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.ClearPing__DelegateSignature");
+
+	struct ClearPing__DelegateSignature_Params {
+		
+	}; ClearPing__DelegateSignature_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.Hovered__DelegateSignature
+inline void UWBP_SPS_UseItemSelectionMenu_C::Hovered__DelegateSignature(struct FName ItemKey) {
+	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.Hovered__DelegateSignature");
+
+	struct Hovered__DelegateSignature_Params {
+		struct FName ItemKey;
+	}; Hovered__DelegateSignature_Params Params;
+
+	Params.ItemKey = ItemKey;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.Selected__DelegateSignature
+inline void UWBP_SPS_UseItemSelectionMenu_C::Selected__DelegateSignature(struct FName ItemKey) {
+	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.Selected__DelegateSignature");
+
+	struct Selected__DelegateSignature_Params {
+		struct FName ItemKey;
+	}; Selected__DelegateSignature_Params Params;
+
+	Params.ItemKey = ItemKey;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
 

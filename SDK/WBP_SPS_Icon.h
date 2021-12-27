@@ -32,7 +32,7 @@ public:
 	char SetMaterialPing(struct Unknown& PingInfo); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetMaterialPing(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 	void Construct(); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 	void Set_IconSize(float Size); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.Set_IconSize(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void SetWidgetComponentsRenderScale(float ScaleRate); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetWidgetComponentsRenderScale(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void Set(float ScaleRate); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.Set(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 	void SetChangeIcon(struct Unknown Texture); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetChangeIcon(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 	void SetIcon(int32_t TeamPlayerIndex, enum class Unknow ItemPingIconType, char IgnoreTeamIndex); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetIcon(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 	void SetRemoveMaterialPingIcon(); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetRemoveMaterialPingIcon(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
@@ -42,4 +42,241 @@ public:
 	void SetRemoveExpertWeaponPingIcon(); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetRemoveExpertWeaponPingIcon(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 	void ExecuteUbergraph_WBP_SPS_Icon(int32_t EntryPoint); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.ExecuteUbergraph_WBP_SPS_Icon(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 };
+
+// Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetExpertWeaponPing
+inline char UWBP_SPS_Icon_C::SetExpertWeaponPing(struct Unknown& PingInfo) {
+	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetExpertWeaponPing");
+
+	struct SetExpertWeaponPing_Params {
+		struct Unknown& PingInfo;
+		char ReturnValue;
+
+	}; SetExpertWeaponPing_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	PingInfo = Params.PingInfo;
+
+
+	return params.ReturnValue;
+}
+
+// Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetLocalPing
+inline char UWBP_SPS_Icon_C::SetLocalPing(struct Unknown& PingInfo) {
+	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetLocalPing");
+
+	struct SetLocalPing_Params {
+		struct Unknown& PingInfo;
+		char ReturnValue;
+
+	}; SetLocalPing_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	PingInfo = Params.PingInfo;
+
+
+	return params.ReturnValue;
+}
+
+// Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetMaterialPing
+inline char UWBP_SPS_Icon_C::SetMaterialPing(struct Unknown& PingInfo) {
+	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetMaterialPing");
+
+	struct SetMaterialPing_Params {
+		struct Unknown& PingInfo;
+		char ReturnValue;
+
+	}; SetMaterialPing_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	PingInfo = Params.PingInfo;
+
+
+	return params.ReturnValue;
+}
+
+// Function WBP_SPS_Icon.WBP_SPS_Icon_C.Construct
+inline void UWBP_SPS_Icon_C::Construct() {
+	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_Icon.WBP_SPS_Icon_C.Construct");
+
+	struct Construct_Params {
+		
+	}; Construct_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function WBP_SPS_Icon.WBP_SPS_Icon_C.Set_IconSize
+inline void UWBP_SPS_Icon_C::Set_IconSize(float Size) {
+	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_Icon.WBP_SPS_Icon_C.Set_IconSize");
+
+	struct Set_IconSize_Params {
+		float Size;
+	}; Set_IconSize_Params Params;
+
+	Params.Size = Size;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function WBP_SPS_Icon.WBP_SPS_Icon_C.Set
+inline void UWBP_SPS_Icon_C::Set(float ScaleRate) {
+	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_Icon.WBP_SPS_Icon_C.Set");
+
+	struct Set_Params {
+		float ScaleRate;
+	}; Set_Params Params;
+
+	Params.ScaleRate = ScaleRate;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetChangeIcon
+inline void UWBP_SPS_Icon_C::SetChangeIcon(struct Unknown Texture) {
+	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetChangeIcon");
+
+	struct SetChangeIcon_Params {
+		struct Unknown Texture;
+	}; SetChangeIcon_Params Params;
+
+	Params.Texture = Texture;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetIcon
+inline void UWBP_SPS_Icon_C::SetIcon(int32_t TeamPlayerIndex, enum class Unknow ItemPingIconType, char IgnoreTeamIndex) {
+	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetIcon");
+
+	struct SetIcon_Params {
+		int32_t TeamPlayerIndex;
+		enum class Unknow ItemPingIconType;
+		char IgnoreTeamIndex;
+	}; SetIcon_Params Params;
+
+	Params.TeamPlayerIndex = TeamPlayerIndex;
+	Params.ItemPingIconType = ItemPingIconType;
+	Params.IgnoreTeamIndex = IgnoreTeamIndex;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetRemoveMaterialPingIcon
+inline void UWBP_SPS_Icon_C::SetRemoveMaterialPingIcon() {
+	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetRemoveMaterialPingIcon");
+
+	struct SetRemoveMaterialPingIcon_Params {
+		
+	}; SetRemoveMaterialPingIcon_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetIconAlpha
+inline void UWBP_SPS_Icon_C::SetIconAlpha(float NewAlpha) {
+	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetIconAlpha");
+
+	struct SetIconAlpha_Params {
+		float NewAlpha;
+	}; SetIconAlpha_Params Params;
+
+	Params.NewAlpha = NewAlpha;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetShowDebugLightPole
+inline void UWBP_SPS_Icon_C::SetShowDebugLightPole(char IsShow) {
+	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetShowDebugLightPole");
+
+	struct SetShowDebugLightPole_Params {
+		char IsShow;
+	}; SetShowDebugLightPole_Params Params;
+
+	Params.IsShow = IsShow;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetLightPoleValue
+inline void UWBP_SPS_Icon_C::SetLightPoleValue(float Height, float RadiusCurve, float Diameter, float AlphaCurve, float ADSFOV) {
+	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetLightPoleValue");
+
+	struct SetLightPoleValue_Params {
+		float Height;
+		float RadiusCurve;
+		float Diameter;
+		float AlphaCurve;
+		float ADSFOV;
+	}; SetLightPoleValue_Params Params;
+
+	Params.Height = Height;
+	Params.RadiusCurve = RadiusCurve;
+	Params.Diameter = Diameter;
+	Params.AlphaCurve = AlphaCurve;
+	Params.ADSFOV = ADSFOV;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetRemoveExpertWeaponPingIcon
+inline void UWBP_SPS_Icon_C::SetRemoveExpertWeaponPingIcon() {
+	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetRemoveExpertWeaponPingIcon");
+
+	struct SetRemoveExpertWeaponPingIcon_Params {
+		
+	}; SetRemoveExpertWeaponPingIcon_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function WBP_SPS_Icon.WBP_SPS_Icon_C.ExecuteUbergraph_WBP_SPS_Icon
+inline void UWBP_SPS_Icon_C::ExecuteUbergraph_WBP_SPS_Icon(int32_t EntryPoint) {
+	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_Icon.WBP_SPS_Icon_C.ExecuteUbergraph_WBP_SPS_Icon");
+
+	struct ExecuteUbergraph_WBP_SPS_Icon_Params {
+		int32_t EntryPoint;
+	}; ExecuteUbergraph_WBP_SPS_Icon_Params Params;
+
+	Params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
 

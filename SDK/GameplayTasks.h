@@ -70,7 +70,7 @@ public:
 	struct FMulticastInlineDelegate OnFinish; // 0x68 (16)
 
 	struct Unknown TaskWaitDelay(struct TScriptInterface<IUnknown> TaskOwner, float Time, char Priority); // Function GameplayTasks.GameplayTask_WaitDelay.TaskWaitDelay(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3EBA1D0>
-	void TaskDelayDelegate__DelegateSignature(); // DelegateFunction GameplayTasks.GameplayTask_WaitDelay.TaskDelayDelegate__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void TaskDelayDelegate__DelegateSig(); // DelegateFunction GameplayTasks.GameplayTask_WaitDelay.TaskDelayDelegate__DelegateSigy(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
 };
 
 // Class GameplayTasks.GameplayTaskResource
@@ -98,4 +98,191 @@ public:
 	void OnRep_SimulatedTasks(); // Function GameplayTasks.GameplayTasksComponent.OnRep_SimulatedTasks(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3EB9FE0>
 	enum class Unknow K2_RunGameplayTask(struct TScriptInterface<IUnknown> TaskOwner, struct Unknown Task, char Priority, struct TArray<Unknown> AdditionalRequiredResources, struct TArray<Unknown> AdditionalClaimedResources); // Function GameplayTasks.GameplayTasksComponent.K2_RunGameplayTask(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3EB9DA0>
 };
+
+// Function GameplayTasks.GameplayTask.ReadyForActivation
+inline void UGameplayTask::ReadyForActivation() {
+	static auto fn = UObject::FindObject<UFunction>("Function GameplayTasks.GameplayTask.ReadyForActivation");
+
+	struct ReadyForActivation_Params {
+		
+	}; ReadyForActivation_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// DelegateFunction GameplayTasks.GameplayTask.GenericGameplayTaskDelegate__DelegateSignature
+inline void UGameplayTask::GenericGameplayTaskDelegate__DelegateSignature() {
+	static auto fn = UObject::FindObject<UFunction>("DelegateFunction GameplayTasks.GameplayTask.GenericGameplayTaskDelegate__DelegateSignature");
+
+	struct GenericGameplayTaskDelegate__DelegateSignature_Params {
+		
+	}; GenericGameplayTaskDelegate__DelegateSignature_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function GameplayTasks.GameplayTask.EndTask
+inline void UGameplayTask::EndTask() {
+	static auto fn = UObject::FindObject<UFunction>("Function GameplayTasks.GameplayTask.EndTask");
+
+	struct EndTask_Params {
+		
+	}; EndTask_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function GameplayTasks.GameplayTask_SpawnActor.SpawnActor
+inline struct Unknown UGameplayTask_SpawnActor::SpawnActor(struct TScriptInterface<IUnknown> TaskOwner, struct Unknown SpawnLocation, struct Unknown SpawnRotation, struct Unknown* Class, char bSpawnOnlyOnAuthority) {
+	static auto fn = UObject::FindObject<UFunction>("Function GameplayTasks.GameplayTask_SpawnActor.SpawnActor");
+
+	struct SpawnActor_Params {
+		struct TScriptInterface<IUnknown> TaskOwner;
+		struct Unknown SpawnLocation;
+		struct Unknown SpawnRotation;
+		struct Unknown* Class;
+		char bSpawnOnlyOnAuthority;
+		struct Unknown ReturnValue;
+
+	}; SpawnActor_Params Params;
+
+	Params.TaskOwner = TaskOwner;
+	Params.SpawnLocation = SpawnLocation;
+	Params.SpawnRotation = SpawnRotation;
+	Params.Class = Class;
+	Params.bSpawnOnlyOnAuthority = bSpawnOnlyOnAuthority;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function GameplayTasks.GameplayTask_SpawnActor.FinishSpawningActor
+inline void UGameplayTask_SpawnActor::FinishSpawningActor(struct Unknown WorldContextObject, struct Unknown SpawnedActor) {
+	static auto fn = UObject::FindObject<UFunction>("Function GameplayTasks.GameplayTask_SpawnActor.FinishSpawningActor");
+
+	struct FinishSpawningActor_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown SpawnedActor;
+	}; FinishSpawningActor_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.SpawnedActor = SpawnedActor;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function GameplayTasks.GameplayTask_SpawnActor.BeginSpawningActor
+inline char UGameplayTask_SpawnActor::BeginSpawningActor(struct Unknown WorldContextObject, struct Unknown& SpawnedActor) {
+	static auto fn = UObject::FindObject<UFunction>("Function GameplayTasks.GameplayTask_SpawnActor.BeginSpawningActor");
+
+	struct BeginSpawningActor_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown& SpawnedActor;
+		char ReturnValue;
+
+	}; BeginSpawningActor_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	SpawnedActor = Params.SpawnedActor;
+
+
+	return params.ReturnValue;
+}
+
+// Function GameplayTasks.GameplayTask_WaitDelay.TaskWaitDelay
+inline struct Unknown UGameplayTask_WaitDelay::TaskWaitDelay(struct TScriptInterface<IUnknown> TaskOwner, float Time, char Priority) {
+	static auto fn = UObject::FindObject<UFunction>("Function GameplayTasks.GameplayTask_WaitDelay.TaskWaitDelay");
+
+	struct TaskWaitDelay_Params {
+		struct TScriptInterface<IUnknown> TaskOwner;
+		float Time;
+		char Priority;
+		struct Unknown ReturnValue;
+
+	}; TaskWaitDelay_Params Params;
+
+	Params.TaskOwner = TaskOwner;
+	Params.Time = Time;
+	Params.Priority = Priority;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// DelegateFunction GameplayTasks.GameplayTask_WaitDelay.TaskDelayDelegate__DelegateSigy
+inline void UGameplayTask_WaitDelay::TaskDelayDelegate__DelegateSig() {
+	static auto fn = UObject::FindObject<UFunction>("DelegateFunction GameplayTasks.GameplayTask_WaitDelay.TaskDelayDelegate__DelegateSigy");
+
+	struct TaskDelayDelegate__DelegateSig_Params {
+		
+	}; TaskDelayDelegate__DelegateSig_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function GameplayTasks.GameplayTasksComponent.OnRep_SimulatedTasks
+inline void UGameplayTasksComponent::OnRep_SimulatedTasks() {
+	static auto fn = UObject::FindObject<UFunction>("Function GameplayTasks.GameplayTasksComponent.OnRep_SimulatedTasks");
+
+	struct OnRep_SimulatedTasks_Params {
+		
+	}; OnRep_SimulatedTasks_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function GameplayTasks.GameplayTasksComponent.K2_RunGameplayTask
+inline enum class Unknow UGameplayTasksComponent::K2_RunGameplayTask(struct TScriptInterface<IUnknown> TaskOwner, struct Unknown Task, char Priority, struct TArray<Unknown> AdditionalRequiredResources, struct TArray<Unknown> AdditionalClaimedResources) {
+	static auto fn = UObject::FindObject<UFunction>("Function GameplayTasks.GameplayTasksComponent.K2_RunGameplayTask");
+
+	struct K2_RunGameplayTask_Params {
+		struct TScriptInterface<IUnknown> TaskOwner;
+		struct Unknown Task;
+		char Priority;
+		struct TArray<Unknown> AdditionalRequiredResources;
+		struct TArray<Unknown> AdditionalClaimedResources;
+		enum class Unknow ReturnValue;
+
+	}; K2_RunGameplayTask_Params Params;
+
+	Params.TaskOwner = TaskOwner;
+	Params.Task = Task;
+	Params.Priority = Priority;
+	Params.AdditionalRequiredResources = AdditionalRequiredResources;
+	Params.AdditionalClaimedResources = AdditionalClaimedResources;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
 

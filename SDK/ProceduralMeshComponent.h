@@ -59,3 +59,243 @@ struct FProcMeshTangent {
 	char bFlipTangentY : 0; // 0xC (1)
 };
 
+// Function ProceduralMeshComponent.ProceduralMeshComponent.UpdateMeshSection_LinearColor
+inline void UProceduralMeshComponent::UpdateMeshSection_LinearColor(int32_t SectionIndex, struct TArray<Unknown>& Vertices, struct TArray<Unknown>& Normals, struct TArray<Unknown>& UV0, struct TArray<Unknown>& UV1, struct TArray<Unknown>& UV2, struct TArray<Unknown>& UV3, struct TArray<Unknown>& VertexColors, struct TArray<Unknown>& Tangents) {
+	static auto fn = UObject::FindObject<UFunction>("Function ProceduralMeshComponent.ProceduralMeshComponent.UpdateMeshSection_LinearColor");
+
+	struct UpdateMeshSection_LinearColor_Params {
+		int32_t SectionIndex;
+		struct TArray<Unknown>& Vertices;
+		struct TArray<Unknown>& Normals;
+		struct TArray<Unknown>& UV0;
+		struct TArray<Unknown>& UV1;
+		struct TArray<Unknown>& UV2;
+		struct TArray<Unknown>& UV3;
+		struct TArray<Unknown>& VertexColors;
+		struct TArray<Unknown>& Tangents;
+	}; UpdateMeshSection_LinearColor_Params Params;
+
+	Params.SectionIndex = SectionIndex;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Vertices = Params.Vertices;
+	Normals = Params.Normals;
+	UV0 = Params.UV0;
+	UV1 = Params.UV1;
+	UV2 = Params.UV2;
+	UV3 = Params.UV3;
+	VertexColors = Params.VertexColors;
+	Tangents = Params.Tangents;
+
+}
+
+// Function ProceduralMeshComponent.ProceduralMeshComponent.UpdateMeshSection
+inline void UProceduralMeshComponent::UpdateMeshSection(int32_t SectionIndex, struct TArray<Unknown>& Vertices, struct TArray<Unknown>& Normals, struct TArray<Unknown>& UV0, struct TArray<Unknown>& VertexColors, struct TArray<Unknown>& Tangents) {
+	static auto fn = UObject::FindObject<UFunction>("Function ProceduralMeshComponent.ProceduralMeshComponent.UpdateMeshSection");
+
+	struct UpdateMeshSection_Params {
+		int32_t SectionIndex;
+		struct TArray<Unknown>& Vertices;
+		struct TArray<Unknown>& Normals;
+		struct TArray<Unknown>& UV0;
+		struct TArray<Unknown>& VertexColors;
+		struct TArray<Unknown>& Tangents;
+	}; UpdateMeshSection_Params Params;
+
+	Params.SectionIndex = SectionIndex;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Vertices = Params.Vertices;
+	Normals = Params.Normals;
+	UV0 = Params.UV0;
+	VertexColors = Params.VertexColors;
+	Tangents = Params.Tangents;
+
+}
+
+// Function ProceduralMeshComponent.ProceduralMeshComponent.SetMeshSectionVisible
+inline void UProceduralMeshComponent::SetMeshSectionVisible(int32_t SectionIndex, char bNewVisibility) {
+	static auto fn = UObject::FindObject<UFunction>("Function ProceduralMeshComponent.ProceduralMeshComponent.SetMeshSectionVisible");
+
+	struct SetMeshSectionVisible_Params {
+		int32_t SectionIndex;
+		char bNewVisibility;
+	}; SetMeshSectionVisible_Params Params;
+
+	Params.SectionIndex = SectionIndex;
+	Params.bNewVisibility = bNewVisibility;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function ProceduralMeshComponent.ProceduralMeshComponent.IsMeshSectionVisible
+inline char UProceduralMeshComponent::IsMeshSectionVisible(int32_t SectionIndex) {
+	static auto fn = UObject::FindObject<UFunction>("Function ProceduralMeshComponent.ProceduralMeshComponent.IsMeshSectionVisible");
+
+	struct IsMeshSectionVisible_Params {
+		int32_t SectionIndex;
+		char ReturnValue;
+
+	}; IsMeshSectionVisible_Params Params;
+
+	Params.SectionIndex = SectionIndex;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function ProceduralMeshComponent.ProceduralMeshComponent.GetNumSections
+inline int32_t UProceduralMeshComponent::GetNumSections() {
+	static auto fn = UObject::FindObject<UFunction>("Function ProceduralMeshComponent.ProceduralMeshComponent.GetNumSections");
+
+	struct GetNumSections_Params {
+		
+		int32_t ReturnValue;
+
+	}; GetNumSections_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function ProceduralMeshComponent.ProceduralMeshComponent.CreateMeshSection_LinearColor
+inline void UProceduralMeshComponent::CreateMeshSection_LinearColor(int32_t SectionIndex, struct TArray<Unknown>& Vertices, struct TArray<Unknown>& Triangles, struct TArray<Unknown>& Normals, struct TArray<Unknown>& UV0, struct TArray<Unknown>& UV1, struct TArray<Unknown>& UV2, struct TArray<Unknown>& UV3, struct TArray<Unknown>& VertexColors, struct TArray<Unknown>& Tangents, char bCreateCollision) {
+	static auto fn = UObject::FindObject<UFunction>("Function ProceduralMeshComponent.ProceduralMeshComponent.CreateMeshSection_LinearColor");
+
+	struct CreateMeshSection_LinearColor_Params {
+		int32_t SectionIndex;
+		struct TArray<Unknown>& Vertices;
+		struct TArray<Unknown>& Triangles;
+		struct TArray<Unknown>& Normals;
+		struct TArray<Unknown>& UV0;
+		struct TArray<Unknown>& UV1;
+		struct TArray<Unknown>& UV2;
+		struct TArray<Unknown>& UV3;
+		struct TArray<Unknown>& VertexColors;
+		struct TArray<Unknown>& Tangents;
+		char bCreateCollision;
+	}; CreateMeshSection_LinearColor_Params Params;
+
+	Params.SectionIndex = SectionIndex;
+	Params.bCreateCollision = bCreateCollision;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Vertices = Params.Vertices;
+	Triangles = Params.Triangles;
+	Normals = Params.Normals;
+	UV0 = Params.UV0;
+	UV1 = Params.UV1;
+	UV2 = Params.UV2;
+	UV3 = Params.UV3;
+	VertexColors = Params.VertexColors;
+	Tangents = Params.Tangents;
+
+}
+
+// Function ProceduralMeshComponent.ProceduralMeshComponent.CreateMeshSection
+inline void UProceduralMeshComponent::CreateMeshSection(int32_t SectionIndex, struct TArray<Unknown>& Vertices, struct TArray<Unknown>& Triangles, struct TArray<Unknown>& Normals, struct TArray<Unknown>& UV0, struct TArray<Unknown>& VertexColors, struct TArray<Unknown>& Tangents, char bCreateCollision) {
+	static auto fn = UObject::FindObject<UFunction>("Function ProceduralMeshComponent.ProceduralMeshComponent.CreateMeshSection");
+
+	struct CreateMeshSection_Params {
+		int32_t SectionIndex;
+		struct TArray<Unknown>& Vertices;
+		struct TArray<Unknown>& Triangles;
+		struct TArray<Unknown>& Normals;
+		struct TArray<Unknown>& UV0;
+		struct TArray<Unknown>& VertexColors;
+		struct TArray<Unknown>& Tangents;
+		char bCreateCollision;
+	}; CreateMeshSection_Params Params;
+
+	Params.SectionIndex = SectionIndex;
+	Params.bCreateCollision = bCreateCollision;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Vertices = Params.Vertices;
+	Triangles = Params.Triangles;
+	Normals = Params.Normals;
+	UV0 = Params.UV0;
+	VertexColors = Params.VertexColors;
+	Tangents = Params.Tangents;
+
+}
+
+// Function ProceduralMeshComponent.ProceduralMeshComponent.ClearMeshSection
+inline void UProceduralMeshComponent::ClearMeshSection(int32_t SectionIndex) {
+	static auto fn = UObject::FindObject<UFunction>("Function ProceduralMeshComponent.ProceduralMeshComponent.ClearMeshSection");
+
+	struct ClearMeshSection_Params {
+		int32_t SectionIndex;
+	}; ClearMeshSection_Params Params;
+
+	Params.SectionIndex = SectionIndex;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function ProceduralMeshComponent.ProceduralMeshComponent.ClearCollisionConvexMeshes
+inline void UProceduralMeshComponent::ClearCollisionConvexMeshes() {
+	static auto fn = UObject::FindObject<UFunction>("Function ProceduralMeshComponent.ProceduralMeshComponent.ClearCollisionConvexMeshes");
+
+	struct ClearCollisionConvexMeshes_Params {
+		
+	}; ClearCollisionConvexMeshes_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function ProceduralMeshComponent.ProceduralMeshComponent.ClearAllMeshSections
+inline void UProceduralMeshComponent::ClearAllMeshSections() {
+	static auto fn = UObject::FindObject<UFunction>("Function ProceduralMeshComponent.ProceduralMeshComponent.ClearAllMeshSections");
+
+	struct ClearAllMeshSections_Params {
+		
+	}; ClearAllMeshSections_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function ProceduralMeshComponent.ProceduralMeshComponent.AddCollisionConvexMesh
+inline void UProceduralMeshComponent::AddCollisionConvexMesh(struct TArray<Unknown> ConvexVerts) {
+	static auto fn = UObject::FindObject<UFunction>("Function ProceduralMeshComponent.ProceduralMeshComponent.AddCollisionConvexMesh");
+
+	struct AddCollisionConvexMesh_Params {
+		struct TArray<Unknown> ConvexVerts;
+	}; AddCollisionConvexMesh_Params Params;
+
+	Params.ConvexVerts = ConvexVerts;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+

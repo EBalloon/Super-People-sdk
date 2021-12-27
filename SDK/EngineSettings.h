@@ -151,3 +151,54 @@ struct FGameModeName {
 	struct Unknown GameMode; // 0x10 (24)
 };
 
+// Function EngineSettings.GameMapsSettings.SetSkipAssigningGamepadToPlayer1
+inline void UGameMapsSettings::SetSkipAssigningGamepadToPlayer1(char bSkipFirstPlayer) {
+	static auto fn = UObject::FindObject<UFunction>("Function EngineSettings.GameMapsSettings.SetSkipAssigningGamepadToPlayer1");
+
+	struct SetSkipAssigningGamepadToPlayer1_Params {
+		char bSkipFirstPlayer;
+	}; SetSkipAssigningGamepadToPlayer1_Params Params;
+
+	Params.bSkipFirstPlayer = bSkipFirstPlayer;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function EngineSettings.GameMapsSettings.GetSkipAssigningGamepadToPlayer1
+inline char UGameMapsSettings::GetSkipAssigningGamepadToPlayer1() {
+	static auto fn = UObject::FindObject<UFunction>("Function EngineSettings.GameMapsSettings.GetSkipAssigningGamepadToPlayer1");
+
+	struct GetSkipAssigningGamepadToPlayer1_Params {
+		
+		char ReturnValue;
+
+	}; GetSkipAssigningGamepadToPlayer1_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function EngineSettings.GameMapsSettings.GetGameMapsSettings
+inline struct Unknown UGameMapsSettings::GetGameMapsSettings() {
+	static auto fn = UObject::FindObject<UFunction>("Function EngineSettings.GameMapsSettings.GetGameMapsSettings");
+
+	struct GetGameMapsSettings_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetGameMapsSettings_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+

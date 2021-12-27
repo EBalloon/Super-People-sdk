@@ -173,15 +173,15 @@ enum class ESlateDebuggingFocusEvent : uint8_t {
 	ESlateDebuggingFocusEvent = 3,
 };
 
-// Enum SlateCore.ESlateDebuggingNavigationMethod
-enum class ESlateDebuggingNavigationMethod : uint8_t {
+// Enum SlateCore.ESlateDebuggingNavigation
+enum class ESlateDebuggingNavigationMy : uint8_t {
 	ESlateDebuggingNavigationMethod = 0,
-	ESlateDebuggingNavigationMethod = 1,
-	ESlateDebuggingNavigationMethod = 2,
-	ESlateDebuggingNavigationMethod = 3,
-	ESlateDebuggingNavigationMethod = 4,
-	ESlateDebuggingNavigationMethod = 5,
-	ESlateDebuggingNavigationMethod = 6,
+	ESlateDebuggingNavigation = 1,
+	ESlateDebuggingNavigation = 2,
+	ESlateDebuggingNavigation = 3,
+	ESlateDebuggingNavigation = 4,
+	ESlateDebuggingNavigation = 5,
+	ESlateDebuggingNavigation = 6,
 };
 
 // Enum SlateCore.ESlateDebuggingStateChangeEvent
@@ -323,11 +323,11 @@ enum class ESlateCheckBoxType : uint8_t {
 	ESlateCheckBoxType = 2,
 };
 
-// Enum SlateCore.ESlateParentWindowSearch
-enum class ESlateParentWindowSearchMk : uint8_t {
-	ESlateParentWindowSearch = 0,
-	ESlateParentWindowSearchMndUp = 1,
-	ESlateParentWindowSearchMUp = 2,
+// Enum SlateCore.ESlateParentWindowSearchMethod
+enum class ESlateParentWindowSearchMethod : uint8_t {
+	ESlateParentWindowSearchMethod = 0,
+	ESlateParentWindowSearchMethod = 1,
+	ESlateParentWindowSearchMethod = 2,
 };
 
 // Enum SlateCore.EConsumeMouseWheel
@@ -403,7 +403,7 @@ struct FTableRowStyle : FSlateWidgetStyle {
 	struct Unknown InactiveBrush; // 0x228 (136)
 	struct Unknown EvenRowBackgroundHoveredBrush; // 0x2B0 (136)
 	struct Unknown EvenRowBackgroundBrush; // 0x338 (136)
-	struct Unknown OddRowBackgroundHov; // 0x3C0 (136)
+	struct Unknown OddRowBackgroundHovab_; // 0x3C0 (136)
 	struct Unknown OddRowBackgroundBrush; // 0x448 (136)
 	struct Unknown TextColor; // 0x4D0 (40)
 	struct Unknown SelectedTextColor; // 0x4F8 (40)
@@ -591,7 +591,7 @@ struct FDockTabStyle : FSlateWidgetStyle {
 	struct Unknown ForegroundBrush; // 0x4A0 (136)
 	struct Unknown HoveredBrush; // 0x528 (136)
 	struct Unknown ContentAreaBrush; // 0x5B0 (136)
-	struct Unknown TabWellBrush; // 0x638 (136)
+	struct Unknown Tab; // 0x638 (136)
 	struct Unknown TabPadding; // 0x6C0 (16)
 	float OverlapWidth; // 0x6D0 (4)
 	struct Unknown FlashColor; // 0x6D8 (40)

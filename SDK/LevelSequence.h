@@ -177,3 +177,583 @@ struct FLevelSequenceSnapshotSettings {
 	struct Unknown FrameRate; // 0x4 (8)
 };
 
+// Function LevelSequence.LevelSequence.RemoveMetaDataByClass
+inline void ULevelSequence::RemoveMetaDataByClass(struct Unknown* InClass) {
+	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequence.RemoveMetaDataByClass");
+
+	struct RemoveMetaDataByClass_Params {
+		struct Unknown* InClass;
+	}; RemoveMetaDataByClass_Params Params;
+
+	Params.InClass = InClass;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LevelSequence.LevelSequence.FindOrAddMetaDataByClass
+inline struct Unknown ULevelSequence::FindOrAddMetaDataByClass(struct Unknown* InClass) {
+	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequence.FindOrAddMetaDataByClass");
+
+	struct FindOrAddMetaDataByClass_Params {
+		struct Unknown* InClass;
+		struct Unknown ReturnValue;
+
+	}; FindOrAddMetaDataByClass_Params Params;
+
+	Params.InClass = InClass;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LevelSequence.LevelSequence.FindMetaDataByClass
+inline struct Unknown ULevelSequence::FindMetaDataByClass(struct Unknown* InClass) {
+	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequence.FindMetaDataByClass");
+
+	struct FindMetaDataByClass_Params {
+		struct Unknown* InClass;
+		struct Unknown ReturnValue;
+
+	}; FindMetaDataByClass_Params Params;
+
+	Params.InClass = InClass;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LevelSequence.LevelSequence.CopyMetaData
+inline struct Unknown ULevelSequence::CopyMetaData(struct Unknown InMetaData) {
+	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequence.CopyMetaData");
+
+	struct CopyMetaData_Params {
+		struct Unknown InMetaData;
+		struct Unknown ReturnValue;
+
+	}; CopyMetaData_Params Params;
+
+	Params.InMetaData = InMetaData;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LevelSequence.LevelSequenceBurnInOptions.SetBurnIn
+inline void ULevelSequenceBurnInOptions::SetBurnIn(struct Unknown InBurnInClass) {
+	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceBurnInOptions.SetBurnIn");
+
+	struct SetBurnIn_Params {
+		struct Unknown InBurnInClass;
+	}; SetBurnIn_Params Params;
+
+	Params.InBurnInClass = InBurnInClass;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LevelSequence.LevelSequenceActor.ShowBurnin
+inline void ALevelSequenceActor::ShowBurnin() {
+	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.ShowBurnin");
+
+	struct ShowBurnin_Params {
+		
+	}; ShowBurnin_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LevelSequence.LevelSequenceActor.SetSequence
+inline void ALevelSequenceActor::SetSequence(struct Unknown InSequence) {
+	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.SetSequence");
+
+	struct SetSequence_Params {
+		struct Unknown InSequence;
+	}; SetSequence_Params Params;
+
+	Params.InSequence = InSequence;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LevelSequence.LevelSequenceActor.SetReplicatePlayback
+inline void ALevelSequenceActor::SetReplicatePlayback(char ReplicatePlayback) {
+	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.SetReplicatePlayback");
+
+	struct SetReplicatePlayback_Params {
+		char ReplicatePlayback;
+	}; SetReplicatePlayback_Params Params;
+
+	Params.ReplicatePlayback = ReplicatePlayback;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LevelSequence.LevelSequenceActor.SetEventReceivers
+inline void ALevelSequenceActor::SetEventReceivers(struct TArray<Unknown> AdditionalReceivers) {
+	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.SetEventReceivers");
+
+	struct SetEventReceivers_Params {
+		struct TArray<Unknown> AdditionalReceivers;
+	}; SetEventReceivers_Params Params;
+
+	Params.AdditionalReceivers = AdditionalReceivers;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LevelSequence.LevelSequenceActor.SetBindingByTag
+inline void ALevelSequenceActor::SetBindingByTag(struct FName BindingTag, struct TArray<Unknown>& Actors, char bAllowBindingsFromAsset) {
+	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.SetBindingByTag");
+
+	struct SetBindingByTag_Params {
+		struct FName BindingTag;
+		struct TArray<Unknown>& Actors;
+		char bAllowBindingsFromAsset;
+	}; SetBindingByTag_Params Params;
+
+	Params.BindingTag = BindingTag;
+	Params.bAllowBindingsFromAsset = bAllowBindingsFromAsset;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Actors = Params.Actors;
+
+}
+
+// Function LevelSequence.LevelSequenceActor.SetBinding
+inline void ALevelSequenceActor::SetBinding(struct Unknown Binding, struct TArray<Unknown>& Actors, char bAllowBindingsFromAsset) {
+	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.SetBinding");
+
+	struct SetBinding_Params {
+		struct Unknown Binding;
+		struct TArray<Unknown>& Actors;
+		char bAllowBindingsFromAsset;
+	}; SetBinding_Params Params;
+
+	Params.Binding = Binding;
+	Params.bAllowBindingsFromAsset = bAllowBindingsFromAsset;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Actors = Params.Actors;
+
+}
+
+// Function LevelSequence.LevelSequenceActor.ResetBindings
+inline void ALevelSequenceActor::ResetBindings() {
+	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.ResetBindings");
+
+	struct ResetBindings_Params {
+		
+	}; ResetBindings_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LevelSequence.LevelSequenceActor.ResetBinding
+inline void ALevelSequenceActor::ResetBinding(struct Unknown Binding) {
+	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.ResetBinding");
+
+	struct ResetBinding_Params {
+		struct Unknown Binding;
+	}; ResetBinding_Params Params;
+
+	Params.Binding = Binding;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LevelSequence.LevelSequenceActor.RemoveBindingByTag
+inline void ALevelSequenceActor::RemoveBindingByTag(struct FName Tag, struct Unknown Actor) {
+	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.RemoveBindingByTag");
+
+	struct RemoveBindingByTag_Params {
+		struct FName Tag;
+		struct Unknown Actor;
+	}; RemoveBindingByTag_Params Params;
+
+	Params.Tag = Tag;
+	Params.Actor = Actor;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LevelSequence.LevelSequenceActor.RemoveBinding
+inline void ALevelSequenceActor::RemoveBinding(struct Unknown Binding, struct Unknown Actor) {
+	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.RemoveBinding");
+
+	struct RemoveBinding_Params {
+		struct Unknown Binding;
+		struct Unknown Actor;
+	}; RemoveBinding_Params Params;
+
+	Params.Binding = Binding;
+	Params.Actor = Actor;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// DelegateFunction LevelSequence.LevelSequenceActor.OnLevelSequenceLoaded__DelegateSignature
+inline void ALevelSequenceActor::OnLevelSequenceLoaded__DelegateSignature() {
+	static auto fn = UObject::FindObject<UFunction>("DelegateFunction LevelSequence.LevelSequenceActor.OnLevelSequenceLoaded__DelegateSignature");
+
+	struct OnLevelSequenceLoaded__DelegateSignature_Params {
+		
+	}; OnLevelSequenceLoaded__DelegateSignature_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LevelSequence.LevelSequenceActor.LoadSequence
+inline struct Unknown ALevelSequenceActor::LoadSequence() {
+	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.LoadSequence");
+
+	struct LoadSequence_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; LoadSequence_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LevelSequence.LevelSequenceActor.HideBurnin
+inline void ALevelSequenceActor::HideBurnin() {
+	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.HideBurnin");
+
+	struct HideBurnin_Params {
+		
+	}; HideBurnin_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LevelSequence.LevelSequenceActor.GetSequencePlayer
+inline struct Unknown ALevelSequenceActor::GetSequencePlayer() {
+	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.GetSequencePlayer");
+
+	struct GetSequencePlayer_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetSequencePlayer_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LevelSequence.LevelSequenceActor.GetSequence
+inline struct Unknown ALevelSequenceActor::GetSequence() {
+	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.GetSequence");
+
+	struct GetSequence_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetSequence_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LevelSequence.LevelSequenceActor.FindNamedBindings
+inline struct TArray<Unknown> ALevelSequenceActor::FindNamedBindings(struct FName Tag) {
+	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.FindNamedBindings");
+
+	struct FindNamedBindings_Params {
+		struct FName Tag;
+		struct TArray<Unknown> ReturnValue;
+
+	}; FindNamedBindings_Params Params;
+
+	Params.Tag = Tag;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LevelSequence.LevelSequenceActor.FindNamedBinding
+inline struct Unknown ALevelSequenceActor::FindNamedBinding(struct FName Tag) {
+	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.FindNamedBinding");
+
+	struct FindNamedBinding_Params {
+		struct FName Tag;
+		struct Unknown ReturnValue;
+
+	}; FindNamedBinding_Params Params;
+
+	Params.Tag = Tag;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LevelSequence.LevelSequenceActor.AddBindingByTag
+inline void ALevelSequenceActor::AddBindingByTag(struct FName BindingTag, struct Unknown Actor, char bAllowBindingsFromAsset) {
+	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.AddBindingByTag");
+
+	struct AddBindingByTag_Params {
+		struct FName BindingTag;
+		struct Unknown Actor;
+		char bAllowBindingsFromAsset;
+	}; AddBindingByTag_Params Params;
+
+	Params.BindingTag = BindingTag;
+	Params.Actor = Actor;
+	Params.bAllowBindingsFromAsset = bAllowBindingsFromAsset;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LevelSequence.LevelSequenceActor.AddBinding
+inline void ALevelSequenceActor::AddBinding(struct Unknown Binding, struct Unknown Actor, char bAllowBindingsFromAsset) {
+	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.AddBinding");
+
+	struct AddBinding_Params {
+		struct Unknown Binding;
+		struct Unknown Actor;
+		char bAllowBindingsFromAsset;
+	}; AddBinding_Params Params;
+
+	Params.Binding = Binding;
+	Params.Actor = Actor;
+	Params.bAllowBindingsFromAsset = bAllowBindingsFromAsset;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LevelSequence.LevelSequenceBurnIn.SetSettings
+inline void ULevelSequenceBurnIn::SetSettings(struct Unknown InSettings) {
+	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceBurnIn.SetSettings");
+
+	struct SetSettings_Params {
+		struct Unknown InSettings;
+	}; SetSettings_Params Params;
+
+	Params.InSettings = InSettings;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LevelSequence.LevelSequenceBurnIn.GetSettingsClass
+inline struct Unknown* ULevelSequenceBurnIn::GetSettingsClass() {
+	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceBurnIn.GetSettingsClass");
+
+	struct GetSettingsClass_Params {
+		
+		struct Unknown* ReturnValue;
+
+	}; GetSettingsClass_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LevelSequence.LevelSequenceDirector.OnCreated
+inline void ULevelSequenceDirector::OnCreated() {
+	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceDirector.OnCreated");
+
+	struct OnCreated_Params {
+		
+	}; OnCreated_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LevelSequence.LevelSequencePlayer.GetActiveCameraComponent
+inline struct Unknown ULevelSequencePlayer::GetActiveCameraComponent() {
+	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequencePlayer.GetActiveCameraComponent");
+
+	struct GetActiveCameraComponent_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetActiveCameraComponent_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LevelSequence.LevelSequencePlayer.CreateLevelSequencePlayer
+inline struct Unknown ULevelSequencePlayer::CreateLevelSequencePlayer(struct Unknown WorldContextObject, struct Unknown LevelSequence, struct Unknown Settings, struct Unknown& OutActor) {
+	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequencePlayer.CreateLevelSequencePlayer");
+
+	struct CreateLevelSequencePlayer_Params {
+		struct Unknown WorldContextObject;
+		struct Unknown LevelSequence;
+		struct Unknown Settings;
+		struct Unknown& OutActor;
+		struct Unknown ReturnValue;
+
+	}; CreateLevelSequencePlayer_Params Params;
+
+	Params.WorldContextObject = WorldContextObject;
+	Params.LevelSequence = LevelSequence;
+	Params.Settings = Settings;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	OutActor = Params.OutActor;
+
+
+	return params.ReturnValue;
+}
+
+// Function LevelSequence.LevelSequenceMediaController.SynchronizeToServer
+inline void ALevelSequenceMediaController::SynchronizeToServer(float DesyncThresholdSeconds) {
+	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceMediaController.SynchronizeToServer");
+
+	struct SynchronizeToServer_Params {
+		float DesyncThresholdSeconds;
+	}; SynchronizeToServer_Params Params;
+
+	Params.DesyncThresholdSeconds = DesyncThresholdSeconds;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LevelSequence.LevelSequenceMediaController.Play
+inline void ALevelSequenceMediaController::Play() {
+	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceMediaController.Play");
+
+	struct Play_Params {
+		
+	}; Play_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LevelSequence.LevelSequenceMediaController.OnRep_ServerStartTimeSeconds
+inline void ALevelSequenceMediaController::OnRep_ServerStartTimeSeconds() {
+	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceMediaController.OnRep_ServerStartTimeSeconds");
+
+	struct OnRep_ServerStartTimeSeconds_Params {
+		
+	}; OnRep_ServerStartTimeSeconds_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function LevelSequence.LevelSequenceMediaController.GetSequence
+inline struct Unknown ALevelSequenceMediaController::GetSequence() {
+	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceMediaController.GetSequence");
+
+	struct GetSequence_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetSequence_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function LevelSequence.LevelSequenceMediaController.GetMediaComponent
+inline struct Unknown ALevelSequenceMediaController::GetMediaComponent() {
+	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceMediaController.GetMediaComponent");
+
+	struct GetMediaComponent_Params {
+		
+		struct Unknown ReturnValue;
+
+	}; GetMediaComponent_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+

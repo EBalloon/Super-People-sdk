@@ -43,9 +43,9 @@ enum class EOculusMR_ClippingReference : uint8_t {
 };
 
 // Enum OculusMR.EOculusMR_CameraDev
-enum class EOculusMR_CameraDev : uint8_t {
-	EOculusMR_CameraDeveference = 0,
-	EOculusMR_CameraDeveference = 1,
+enum class EOculusMR_CameraDeveferenc : uint8_t {
+	EOculusMR_CameraDev = 0,
+	EOculusMR_CameraDev = 1,
 	EOculusMR_CameraDev = 2,
 	EOculusMR_CameraDev = 3,
 	EOculusMR_CameraDev = 4,
@@ -176,4 +176,230 @@ struct FTrackedCamera {
 	struct Unknown RawRotation; // 0x58 (12)
 	struct Unknown RawOffset; // 0x64 (12)
 };
+
+// Function OculusMR.OculusMR_Settings.SetUseDynamicLighting
+inline void UOculusMR_Settings::SetUseDynamicLighting(char Val) {
+	static auto fn = UObject::FindObject<UFunction>("Function OculusMR.OculusMR_Settings.SetUseDynamicLighting");
+
+	struct SetUseDynamicLighting_Params {
+		char Val;
+	}; SetUseDynamicLighting_Params Params;
+
+	Params.Val = Val;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function OculusMR.OculusMR_Settings.SetIsCasting
+inline void UOculusMR_Settings::SetIsCasting(char Val) {
+	static auto fn = UObject::FindObject<UFunction>("Function OculusMR.OculusMR_Settings.SetIsCasting");
+
+	struct SetIsCasting_Params {
+		char Val;
+	}; SetIsCasting_Params Params;
+
+	Params.Val = Val;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function OculusMR.OculusMR_Settings.SetDepthQuality
+inline void UOculusMR_Settings::SetDepthQuality(enum class Unknow Val) {
+	static auto fn = UObject::FindObject<UFunction>("Function OculusMR.OculusMR_Settings.SetDepthQuality");
+
+	struct SetDepthQuality_Params {
+		enum class Unknow Val;
+	}; SetDepthQuality_Params Params;
+
+	Params.Val = Val;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function OculusMR.OculusMR_Settings.SetCompositionMethod
+inline void UOculusMR_Settings::SetCompositionMethod(enum class Unknow Val) {
+	static auto fn = UObject::FindObject<UFunction>("Function OculusMR.OculusMR_Settings.SetCompositionMethod");
+
+	struct SetCompositionMethod_Params {
+		enum class Unknow Val;
+	}; SetCompositionMethod_Params Params;
+
+	Params.Val = Val;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function OculusMR.OculusMR_Settings.SetCapturingCamera
+inline void UOculusMR_Settings::SetCapturingCamera(enum class Unknow Val) {
+	static auto fn = UObject::FindObject<UFunction>("Function OculusMR.OculusMR_Settings.SetCapturingCamera");
+
+	struct SetCapturingCamera_Params {
+		enum class Unknow Val;
+	}; SetCapturingCamera_Params Params;
+
+	Params.Val = Val;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function OculusMR.OculusMR_Settings.SaveToIni
+inline void UOculusMR_Settings::SaveToIni() {
+	static auto fn = UObject::FindObject<UFunction>("Function OculusMR.OculusMR_Settings.SaveToIni");
+
+	struct SaveToIni_Params {
+		
+	}; SaveToIni_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function OculusMR.OculusMR_Settings.LoadFromIni
+inline void UOculusMR_Settings::LoadFromIni() {
+	static auto fn = UObject::FindObject<UFunction>("Function OculusMR.OculusMR_Settings.LoadFromIni");
+
+	struct LoadFromIni_Params {
+		
+	}; LoadFromIni_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function OculusMR.OculusMR_Settings.GetUseDynamicLighting
+inline char UOculusMR_Settings::GetUseDynamicLighting() {
+	static auto fn = UObject::FindObject<UFunction>("Function OculusMR.OculusMR_Settings.GetUseDynamicLighting");
+
+	struct GetUseDynamicLighting_Params {
+		
+		char ReturnValue;
+
+	}; GetUseDynamicLighting_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function OculusMR.OculusMR_Settings.GetIsCasting
+inline char UOculusMR_Settings::GetIsCasting() {
+	static auto fn = UObject::FindObject<UFunction>("Function OculusMR.OculusMR_Settings.GetIsCasting");
+
+	struct GetIsCasting_Params {
+		
+		char ReturnValue;
+
+	}; GetIsCasting_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function OculusMR.OculusMR_Settings.GetDepthQuality
+inline enum class Unknow UOculusMR_Settings::GetDepthQuality() {
+	static auto fn = UObject::FindObject<UFunction>("Function OculusMR.OculusMR_Settings.GetDepthQuality");
+
+	struct GetDepthQuality_Params {
+		
+		enum class Unknow ReturnValue;
+
+	}; GetDepthQuality_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function OculusMR.OculusMR_Settings.GetCompositionMethod
+inline enum class Unknow UOculusMR_Settings::GetCompositionMethod() {
+	static auto fn = UObject::FindObject<UFunction>("Function OculusMR.OculusMR_Settings.GetCompositionMethod");
+
+	struct GetCompositionMethod_Params {
+		
+		enum class Unknow ReturnValue;
+
+	}; GetCompositionMethod_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function OculusMR.OculusMR_Settings.GetCapturingCamera
+inline enum class Unknow UOculusMR_Settings::GetCapturingCamera() {
+	static auto fn = UObject::FindObject<UFunction>("Function OculusMR.OculusMR_Settings.GetCapturingCamera");
+
+	struct GetCapturingCamera_Params {
+		
+		enum class Unknow ReturnValue;
+
+	}; GetCapturingCamera_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function OculusMR.OculusMR_Settings.GetBindToTrackedCameraIndex
+inline int32_t UOculusMR_Settings::GetBindToTrackedCameraIndex() {
+	static auto fn = UObject::FindObject<UFunction>("Function OculusMR.OculusMR_Settings.GetBindToTrackedCameraIndex");
+
+	struct GetBindToTrackedCameraIndex_Params {
+		
+		int32_t ReturnValue;
+
+	}; GetBindToTrackedCameraIndex_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+// Function OculusMR.OculusMR_Settings.BindToTrackedCameraIndexIfAvailable
+inline void UOculusMR_Settings::BindToTrackedCameraIndexIfAvailable(int32_t InTrackedCameraIndex) {
+	static auto fn = UObject::FindObject<UFunction>("Function OculusMR.OculusMR_Settings.BindToTrackedCameraIndexIfAvailable");
+
+	struct BindToTrackedCameraIndexIfAvailable_Params {
+		int32_t InTrackedCameraIndex;
+	}; BindToTrackedCameraIndexIfAvailable_Params Params;
+
+	Params.InTrackedCameraIndex = InTrackedCameraIndex;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
 
