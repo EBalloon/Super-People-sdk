@@ -1,8 +1,8 @@
 // Enum ClothingSystemRuntimeNv.EClothingWindMethodNv
 enum class EClothingWindMethodNv : uint8_t {
-	EClothingWindMethodNv = 0,
-	EClothingWindMethodNv = 1,
-	EClothingWindMethodNv = 2,
+	Legacy = 0,
+	Accurate = 1,
+	EClothingWindMethodNv_MAX = 2,
 };
 
 // Class ClothingSystemRuntimeNv.ClothConfigNv

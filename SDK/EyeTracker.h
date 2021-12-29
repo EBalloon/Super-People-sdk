@@ -1,9 +1,9 @@
 // Enum EyeTracker.EEyeTrackerStatus
 enum class EEyeTrackerStatus : uint8_t {
-	EEyeTrackerStatus = 0,
-	EEyeTrackerStatus = 1,
-	EEyeTrackerStatus = 2,
-	EEyeTrackerStatus = 3,
+	NotConnected = 0,
+	NotTracking = 1,
+	Tracking = 2,
+	EEyeTrackerStatus_MAX = 3,
 };
 
 // ScriptStruct EyeTracker.EyeTrackerStereoGazeData

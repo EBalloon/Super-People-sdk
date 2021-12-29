@@ -1,23 +1,23 @@
 // Enum DLSSBlueprint.UDLSSMode
 enum class UDLSSMode : uint8_t {
-	UDLSSMode = 0,
-	UDLSSMode = 1,
-	UDLSSMode = 2,
-	UDLSSMode = 3,
-	UDLSSMode = 4,
-	UDLSSMode = 5,
-	UDLSSMode = 6,
-	UDLSSMode = 7,
+	Off = 0,
+	Auto = 1,
+	UltraQuality = 2,
+	Quality = 3,
+	Balanced = 4,
+	Performance = 5,
+	UltraPerformance = 6,
+	UDLSSMode_MAX = 7,
 };
 
 // Enum DLSSBlueprint.UDLSSSupport
 enum class UDLSSSupport : uint8_t {
-	UDLSSSupport = 0,
-	UDLSSSupport = 1,
-	UDLSSSupport = 2,
-	UDLSSSupport = 3,
-	UDLSSSupport = 4,
-	UDLSSSupport = 5,
-	UDLSSSupport = 6,
+	Supported = 0,
+	NotSupported = 1,
+	NotSupportedIncompatibleHardware = 2,
+	NotSupportedDriverOutOfDate = 3,
+	NotSupportedOperatingSystemOutOfDate = 4,
+	NotSupportedByPlatformAtBuildTime = 5,
+	UDLSSSupport_MAX = 6,
 };
 

@@ -1,30 +1,30 @@
 // Enum OculusHMD.EBoundaryType
 enum class EBoundaryType : uint8_t {
-	EBoundaryType = 0,
-	EBoundaryType = 1,
-	EBoundaryType = 2,
+	Boundary_Outer = 0,
+	Boundary_PlayArea = 1,
+	Boundary_MAX = 2,
 };
 
 // Enum OculusHMD.EFixedFoveatedRenderingLevel
 enum class EFixedFoveatedRenderingLevel : uint8_t {
-	EFixedFoveatedRenderingLevel = 0,
-	EFixedFoveatedRenderingLevel = 1,
-	EFixedFoveatedRenderingLevel = 2,
-	EFixedFoveatedRenderingLevel = 3,
-	EFixedFoveatedRenderingLevel = 4,
-	EFixedFoveatedRenderingLevel = 5,
+	FFR_Off = 0,
+	FFR_Low = 1,
+	FFR_Medium = 2,
+	FFR_High = 3,
+	FFR_HighTop = 4,
+	FFR_MAX = 5,
 };
 
 // Enum OculusHMD.ETrackedDeviceType
 enum class ETrackedDeviceType : uint8_t {
-	ETrackedDeviceType = 0,
-	ETrackedDeviceType = 1,
-	ETrackedDeviceType = 2,
-	ETrackedDeviceType = 3,
-	ETrackedDeviceType = 4,
-	ETrackedDeviceType = 5,
-	ETrackedDeviceType = 6,
-	ETrackedDeviceType = 7,
+	None = 0,
+	HMD = 1,
+	LTouch = 2,
+	RTouch = 3,
+	Touch = 4,
+	DeviceObjectZero = 5,
+	All = 6,
+	ETrackedDeviceType_MAX = 7,
 };
 
 // Class OculusHMD.OculusHMDRuntimeSettings

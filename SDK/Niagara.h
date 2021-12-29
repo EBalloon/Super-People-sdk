@@ -1,401 +1,401 @@
 // Enum Niagara.ENiagaraSystemSpawnSectionEndBehavior
 enum class ENiagaraSystemSpawnSectionEndBehavior : uint8_t {
-	ENiagaraSystemSpawnSectionEndBehavior = 0,
-	ENiagaraSystemSpawnSectionEndBehavior = 1,
-	ENiagaraSystemSpawnSectionEndBehavior = 2,
-	ENiagaraSystemSpawnSectionEndBehavior = 3,
+	SetSystemInactive = 0,
+	Deactivate = 1,
+	None = 2,
+	ENiagaraSystemSpawnSectionEndBehavior_MAX = 3,
 };
 
 // Enum Niagara.ENiagaraSystemSpawnSectionEvaluateBehavior
 enum class ENiagaraSystemSpawnSectionEvaluateBehavior : uint8_t {
-	ENiagaraSystemSpawnSectionEvaluateBehavior = 0,
-	ENiagaraSystemSpawnSectionEvaluateBehavior = 1,
-	ENiagaraSystemSpawnSectionEvaluateBehavior = 2,
+	ActivateIfInactive = 0,
+	None = 1,
+	ENiagaraSystemSpawnSectionEvaluateBehavior_MAX = 2,
 };
 
 // Enum Niagara.ENiagaraSystemSpawnSectionStartBehavior
 enum class ENiagaraSystemSpawnSectionStartBehavior : uint8_t {
-	ENiagaraSystemSpawnSectionStartBehavior = 0,
-	ENiagaraSystemSpawnSectionStartBehavior = 1,
+	Activate = 0,
+	ENiagaraSystemSpawnSectionStartBehavior_MAX = 1,
 };
 
 // Enum Niagara.ENiagaraCollisionMode
 enum class ENiagaraCollisionMode : uint8_t {
-	ENiagaraCollisionMode = 0,
-	ENiagaraCollisionMode = 1,
-	ENiagaraCollisionMode = 2,
-	ENiagaraCollisionMode = 3,
-	ENiagaraCollisionMode = 4,
+	None = 0,
+	SceneGeometry = 1,
+	DepthBuffer = 2,
+	DistanceField = 3,
+	ENiagaraCollisionMode_MAX = 4,
 };
 
 // Enum Niagara.ENiagaraLegacyTrailWidthMode
 enum class ENiagaraLegacyTrailWidthMode : uint8_t {
-	ENiagaraLegacyTrailWidthMode = 0,
-	ENiagaraLegacyTrailWidthMode = 1,
-	ENiagaraLegacyTrailWidthMode = 2,
-	ENiagaraLegacyTrailWidthMode = 3,
+	FromCentre = 0,
+	FromFirst = 1,
+	FromSecond = 2,
+	ENiagaraLegacyTrailWidthMode_MAX = 3,
 };
 
 // Enum Niagara.ENiagaraIterationSource
 enum class ENiagaraIterationSource : uint8_t {
-	ENiagaraIterationSource = 0,
-	ENiagaraIterationSource = 1,
-	ENiagaraIterationSource = 2,
+	Particles = 0,
+	DataInterface = 1,
+	ENiagaraIterationSource_MAX = 2,
 };
 
 // Enum Niagara.ENiagaraScriptGroup
 enum class ENiagaraScriptGroup : uint8_t {
-	ENiagaraScriptGroup = 0,
-	ENiagaraScriptGroup = 1,
-	ENiagaraScriptGroup = 2,
-	ENiagaraScriptGroup = 3,
+	Particle = 0,
+	Emitter = 1,
+	System = 2,
+	Max = 3,
 };
 
 // Enum Niagara.ENiagaraScriptUsage
 enum class ENiagaraScriptUsage : uint8_t {
-	ENiagaraScriptUsage = 0,
-	ENiagaraScriptUsage = 1,
-	ENiagaraScriptUsage = 2,
-	ENiagaraScriptUsage = 3,
-	ENiagaraScriptUsage = 4,
-	ENiagaraScriptUsage = 5,
-	ENiagaraScriptUsage = 6,
-	ENiagaraScriptUsage = 7,
-	ENiagaraScriptUsage = 8,
-	ENiagaraScriptUsage = 9,
-	ENiagaraScriptUsage = 10,
-	ENiagaraScriptUsage = 11,
-	ENiagaraScriptUsage = 12,
-	ENiagaraScriptUsage = 13,
+	Function = 0,
+	Module = 1,
+	DynamicInput = 2,
+	ParticleSpawnScript = 3,
+	ParticleSpawnScriptInterpolated = 4,
+	ParticleUpdateScript = 5,
+	ParticleEventScript = 6,
+	ParticleSimulationStageScript = 7,
+	ParticleGPUComputeScript = 8,
+	EmitterSpawnScript = 9,
+	EmitterUpdateScript = 10,
+	SystemSpawnScript = 11,
+	SystemUpdateScript = 12,
+	ENiagaraScriptUsage_MAX = 13,
 };
 
 // Enum Niagara.ENiagaraScriptCompileStatus
 enum class ENiagaraScriptCompileStatus : uint8_t {
-	ENiagaraScriptCompileStatus = 0,
-	ENiagaraScriptCompileStatus = 1,
-	ENiagaraScriptCompileStatus = 2,
-	ENiagaraScriptCompileStatus = 3,
-	ENiagaraScriptCompileStatus = 4,
-	ENiagaraScriptCompileStatus = 5,
-	ENiagaraScriptCompileStatus = 6,
-	ENiagaraScriptCompileStatus = 7,
+	NCS_Unknown = 0,
+	NCS_Dirty = 1,
+	NCS_Error = 2,
+	NCS_UpToDate = 3,
+	NCS_BeingCreated = 4,
+	NCS_UpToDateWithWarnings = 5,
+	NCS_ComputeUpToDateWithWarnings = 6,
+	NCS_MAX = 7,
 };
 
 // Enum Niagara.ENiagaraInputNodeUsage
 enum class ENiagaraInputNodeUsage : uint8_t {
-	ENiagaraInputNodeUsage = 0,
-	ENiagaraInputNodeUsage = 1,
-	ENiagaraInputNodeUsage = 2,
-	ENiagaraInputNodeUsage = 3,
-	ENiagaraInputNodeUsage = 4,
-	ENiagaraInputNodeUsage = 5,
-	ENiagaraInputNodeUsage = 6,
+	Undefined = 0,
+	Parameter = 1,
+	Attribute = 2,
+	SystemConstant = 3,
+	TranslatorConstant = 4,
+	RapidIterationParameter = 5,
+	ENiagaraInputNodeUsage_MAX = 6,
 };
 
 // Enum Niagara.ENiagaraDataSetType
 enum class ENiagaraDataSetType : uint8_t {
-	ENiagaraDataSetType = 0,
-	ENiagaraDataSetType = 1,
-	ENiagaraDataSetType = 2,
-	ENiagaraDataSetType = 3,
+	ParticleData = 0,
+	Shared = 1,
+	Event = 2,
+	ENiagaraDataSetType_MAX = 3,
 };
 
 // Enum Niagara.ENiagaraAgeUpdateMode
 enum class ENiagaraAgeUpdateMode : uint8_t {
-	ENiagaraAgeUpdateMode = 0,
-	ENiagaraAgeUpdateMode = 1,
-	ENiagaraAgeUpdateMode = 2,
-	ENiagaraAgeUpdateMode = 3,
+	TickDeltaTime = 0,
+	DesiredAge = 1,
+	DesiredAgeNoSeek = 2,
+	ENiagaraAgeUpdateMode_MAX = 3,
 };
 
 // Enum Niagara.ENiagaraSimTarget
 enum class ENiagaraSimTarget : uint8_t {
-	ENiagaraSimTarget = 0,
-	ENiagaraSimTarget = 1,
-	ENiagaraSimTarget = 2,
+	CPUSim = 0,
+	GPUComputeSim = 1,
+	ENiagaraSimTarget_MAX = 2,
 };
 
 // Enum Niagara.ENiagaraDefaultMode
 enum class ENiagaraDefaultMode : uint8_t {
-	ENiagaraDefaultMode = 0,
-	ENiagaraDefaultMode = 1,
-	ENiagaraDefaultMode = 2,
-	ENiagaraDefaultMode = 3,
+	Value = 0,
+	Binding = 1,
+	Custom = 2,
+	ENiagaraDefaultMode_MAX = 3,
 };
 
 // Enum Niagara.ENiagaraTickBehavior
 enum class ENiagaraTickBehavior : uint8_t {
-	ENiagaraTickBehavior = 0,
-	ENiagaraTickBehavior = 1,
-	ENiagaraTickBehavior = 2,
-	ENiagaraTickBehavior = 3,
-	ENiagaraTickBehavior = 4,
+	UsePrereqs = 0,
+	UseComponentTickGroup = 1,
+	ForceTickFirst = 2,
+	ForceTickLast = 3,
+	ENiagaraTickBehavior_MAX = 4,
 };
 
 // Enum Niagara.ENCPoolMethod
 enum class ENCPoolMethod : uint8_t {
-	ENCPoolMethod = 0,
-	ENCPoolMethod = 1,
-	ENCPoolMethod = 2,
-	ENCPoolMethod = 3,
-	ENCPoolMethod = 4,
-	ENCPoolMethod = 5,
+	None = 0,
+	AutoRelease = 1,
+	ManualRelease = 2,
+	ManualRelease_OnComplete = 3,
+	FreeInPool = 4,
+	ENCPoolMethod_MAX = 5,
 };
 
-// Enum Niagara.ENDISkeletalMesh_SkinningMng
-enum class ENDISkeletalMesh_SkinningMng : uint8_t {
-	ENDISkeletalMesh_SkinningModeg = 255,
-	ENDISkeletalMesh_SkinningModeg = 0,
-	ENDISkeletalMesh_SkinningMng = 1,
-	ENDISkeletalMesh_Skinning = 2,
-	ENDISkeletalMesh_Skinning = 256,
+// Enum Niagara.ENDISkeletalMesh_SkinningMode
+enum class ENDISkeletalMesh_SkinningMode : uint8_t {
+	Invalid = 255,
+	None = 0,
+	SkinOnTheFly = 1,
+	PreSkin = 2,
+	ENDISkeletalMesh_MAX = 256,
 };
 
 // Enum Niagara.ENiagaraScalabilityUpdateFrequency
 enum class ENiagaraScalabilityUpdateFrequency : uint8_t {
-	ENiagaraScalabilityUpdateFrequency = 0,
-	ENiagaraScalabilityUpdateFrequency = 1,
-	ENiagaraScalabilityUpdateFrequency = 2,
-	ENiagaraScalabilityUpdateFrequency = 3,
-	ENiagaraScalabilityUpdateFrequency = 4,
-	ENiagaraScalabilityUpdateFrequency = 5,
+	SpawnOnly = 0,
+	Low = 1,
+	Medium = 2,
+	High = 3,
+	Continuous = 4,
+	ENiagaraScalabilityUpdateFrequency_MAX = 5,
 };
 
 // Enum Niagara.ENiagaraCullReaction
 enum class ENiagaraCullReaction : uint8_t {
-	ENiagaraCullReaction = 0,
-	ENiagaraCullReaction = 1,
-	ENiagaraCullReaction = 2,
-	ENiagaraCullReaction = 3,
-	ENiagaraCullReaction = 4,
+	Deactivate = 0,
+	DeactivateImmediate = 1,
+	DeactivateResume = 2,
+	DeactivateImmediateResume = 3,
+	ENiagaraCullReaction_MAX = 4,
 };
 
 // Enum Niagara.EParticleAllocationMode
 enum class EParticleAllocationMode : uint8_t {
-	EParticleAllocationMode = 0,
-	EParticleAllocationMode = 1,
-	EParticleAllocationMode = 2,
+	AutomaticEstimate = 0,
+	ManualEstimate = 1,
+	EParticleAllocationMode_MAX = 2,
 };
 
 // Enum Niagara.EScriptExecutionMode
 enum class EScriptExecutionMode : uint8_t {
-	EScriptExecutionMode = 0,
-	EScriptExecutionMode = 1,
-	EScriptExecutionMode = 2,
-	EScriptExecutionMode = 3,
+	EveryParticle = 0,
+	SpawnedParticles = 1,
+	SingleParticle = 2,
+	EScriptExecutionMode_MAX = 3,
 };
 
 // Enum Niagara.ENiagaraSortMode
 enum class ENiagaraSortMode : uint8_t {
-	ENiagaraSortMode = 0,
-	ENiagaraSortMode = 1,
-	ENiagaraSortMode = 2,
-	ENiagaraSortMode = 3,
-	ENiagaraSortMode = 4,
-	ENiagaraSortMode = 5,
+	None = 0,
+	ViewDepth = 1,
+	ViewDistance = 2,
+	CustomAscending = 3,
+	CustomDecending = 4,
+	ENiagaraSortMode_MAX = 5,
 };
 
 // Enum Niagara.ENiagaraMeshLockedAxisSpace
 enum class ENiagaraMeshLockedAxisSpace : uint8_t {
-	ENiagaraMeshLockedAxisSpace = 0,
-	ENiagaraMeshLockedAxisSpace = 1,
-	ENiagaraMeshLockedAxisSpace = 2,
-	ENiagaraMeshLockedAxisSpace = 3,
+	Simulation = 0,
+	World = 1,
+	Local = 2,
+	ENiagaraMeshLockedAxisSpace_MAX = 3,
 };
 
 // Enum Niagara.ENiagaraMeshFacingMode
 enum class ENiagaraMeshFacingMode : uint8_t {
-	ENiagaraMeshFacingMode = 0,
-	ENiagaraMeshFacingMode = 1,
-	ENiagaraMeshFacingMode = 2,
-	ENiagaraMeshFacingMode = 3,
-	ENiagaraMeshFacingMode = 4,
+	Default = 0,
+	Velocity = 1,
+	CameraPosition = 2,
+	CameraPlane = 3,
+	ENiagaraMeshFacingMode_MAX = 4,
 };
 
 // Enum Niagara.ENiagaraPlatformSetState
 enum class ENiagaraPlatformSetState : uint8_t {
-	ENiagaraPlatformSetState = 0,
-	ENiagaraPlatformSetState = 1,
-	ENiagaraPlatformSetState = 2,
-	ENiagaraPlatformSetState = 3,
-	ENiagaraPlatformSetState = 4,
+	Disabled = 0,
+	Enabled = 1,
+	Active = 2,
+	Unknown = 3,
+	ENiagaraPlatformSetState_MAX = 4,
 };
 
 // Enum Niagara.ENiagaraPlatformSelectionState
 enum class ENiagaraPlatformSelectionState : uint8_t {
-	ENiagaraPlatformSelectionState = 0,
-	ENiagaraPlatformSelectionState = 1,
-	ENiagaraPlatformSelectionState = 2,
-	ENiagaraPlatformSelectionState = 3,
+	Default = 0,
+	Enabled = 1,
+	Disabled = 2,
+	ENiagaraPlatformSelectionState_MAX = 3,
 };
 
 // Enum Niagara.ENiagaraPreviewGridResetMode
 enum class ENiagaraPreviewGridResetMode : uint8_t {
-	ENiagaraPreviewGridResetMode = 0,
-	ENiagaraPreviewGridResetMode = 1,
-	ENiagaraPreviewGridResetMode = 2,
-	ENiagaraPreviewGridResetMode = 3,
+	Never = 0,
+	Individual = 1,
+	All = 2,
+	ENiagaraPreviewGridResetMode_MAX = 3,
 };
 
 // Enum Niagara.ENiagaraRibbonTessellationMode
 enum class ENiagaraRibbonTessellationMode : uint8_t {
-	ENiagaraRibbonTessellationMode = 0,
-	ENiagaraRibbonTessellationMode = 1,
-	ENiagaraRibbonTessellationMode = 2,
-	ENiagaraRibbonTessellationMode = 3,
+	Automatic = 0,
+	Custom = 1,
+	Disabled = 2,
+	ENiagaraRibbonTessellationMode_MAX = 3,
 };
 
 // Enum Niagara.ENiagaraRibbonDrawDirection
 enum class ENiagaraRibbonDrawDirection : uint8_t {
-	ENiagaraRibbonDrawDirection = 0,
-	ENiagaraRibbonDrawDirection = 1,
-	ENiagaraRibbonDrawDirection = 2,
+	FrontToBack = 0,
+	BackToFront = 1,
+	ENiagaraRibbonDrawDirection_MAX = 2,
 };
 
 // Enum Niagara.ENiagaraRibbonAgeOffsetMode
 enum class ENiagaraRibbonAgeOffsetMode : uint8_t {
-	ENiagaraRibbonAgeOffsetMode = 0,
-	ENiagaraRibbonAgeOffsetMode = 1,
-	ENiagaraRibbonAgeOffsetMode = 2,
+	Scale = 0,
+	Clip = 1,
+	ENiagaraRibbonAgeOffsetMode_MAX = 2,
 };
 
 // Enum Niagara.ENiagaraRibbonFacingMode
 enum class ENiagaraRibbonFacingMode : uint8_t {
-	ENiagaraRibbonFacingMode = 0,
-	ENiagaraRibbonFacingMode = 1,
-	ENiagaraRibbonFacingMode = 2,
-	ENiagaraRibbonFacingMode = 3,
+	Screen = 0,
+	Custom = 1,
+	CustomSideVector = 2,
+	ENiagaraRibbonFacingMode_MAX = 3,
 };
 
 // Enum Niagara.ENiagaraModuleDependencyScriptConstraint
 enum class ENiagaraModuleDependencyScriptConstraint : uint8_t {
-	ENiagaraModuleDependencyScriptConstraint = 0,
-	ENiagaraModuleDependencyScriptConstraint = 1,
-	ENiagaraModuleDependencyScriptConstraint = 2,
+	SameScript = 0,
+	AllScripts = 1,
+	ENiagaraModuleDependencyScriptConstraint_MAX = 2,
 };
 
 // Enum Niagara.ENiagaraModuleDependencyType
 enum class ENiagaraModuleDependencyType : uint8_t {
-	ENiagaraModuleDependencyType = 0,
-	ENiagaraModuleDependencyType = 1,
-	ENiagaraModuleDependencyType = 2,
+	PreDependency = 0,
+	PostDependency = 1,
+	ENiagaraModuleDependencyType_MAX = 2,
 };
 
 // Enum Niagara.EUnusedAttributeBehaviour
 enum class EUnusedAttributeBehaviour : uint8_t {
-	EUnusedAttributeBehaviour = 0,
-	EUnusedAttributeBehaviour = 1,
-	EUnusedAttributeBehaviour = 2,
-	EUnusedAttributeBehaviour = 3,
-	EUnusedAttributeBehaviour = 4,
-	EUnusedAttributeBehaviour = 5,
+	Copy = 0,
+	Zero = 1,
+	None = 2,
+	MarkInvalid = 3,
+	PassThrough = 4,
+	EUnusedAttributeBehaviour_MAX = 5,
 };
 
 // Enum Niagara.ENiagaraSpriteFacingMode
 enum class ENiagaraSpriteFacingMode : uint8_t {
-	ENiagaraSpriteFacingMode = 0,
-	ENiagaraSpriteFacingMode = 1,
-	ENiagaraSpriteFacingMode = 2,
-	ENiagaraSpriteFacingMode = 3,
-	ENiagaraSpriteFacingMode = 4,
-	ENiagaraSpriteFacingMode = 5,
+	FaceCamera = 0,
+	FaceCameraPlane = 1,
+	CustomFacingVector = 2,
+	FaceCameraPosition = 3,
+	FaceCameraDistanceBlend = 4,
+	ENiagaraSpriteFacingMode_MAX = 5,
 };
 
 // Enum Niagara.ENiagaraSpriteAlignment
 enum class ENiagaraSpriteAlignment : uint8_t {
-	ENiagaraSpriteAlignment = 0,
-	ENiagaraSpriteAlignment = 1,
-	ENiagaraSpriteAlignment = 2,
-	ENiagaraSpriteAlignment = 3,
+	Unaligned = 0,
+	VelocityAligned = 1,
+	CustomAlignment = 2,
+	ENiagaraSpriteAlignment_MAX = 3,
 };
 
 // Enum Niagara.ENiagaraParameterPanelCategory
 enum class ENiagaraParameterPanelCategory : uint8_t {
-	ENiagaraParameterPanelCategory = 0,
-	ENiagaraParameterPanelCategory = 1,
-	ENiagaraParameterPanelCategory = 2,
-	ENiagaraParameterPanelCategory = 3,
-	ENiagaraParameterPanelCategory = 4,
-	ENiagaraParameterPanelCategory = 5,
-	ENiagaraParameterPanelCategory = 6,
-	ENiagaraParameterPanelCategory = 7,
-	ENiagaraParameterPanelCategory = 8,
-	ENiagaraParameterPanelCategory = 9,
-	ENiagaraParameterPanelCategory = 10,
-	ENiagaraParameterPanelCategory = 11,
-	ENiagaraParameterPanelCategory = 12,
-	ENiagaraParameterPanelCategory = 13,
-	ENiagaraParameterPanelCategory = 14,
+	Input = 0,
+	Attributes = 1,
+	Output = 2,
+	Local = 3,
+	User = 4,
+	Engine = 5,
+	Owner = 6,
+	System = 7,
+	Emitter = 8,
+	Particles = 9,
+	ScriptTransient = 10,
+	StaticSwitch = 11,
+	None = 12,
+	Num = 13,
+	ENiagaraParameterPanelCategory_MAX = 14,
 };
 
 // Enum Niagara.ENiagaraScriptParameterUsage
 enum class ENiagaraScriptParameterUsage : uint8_t {
-	ENiagaraScriptParameterUsage = 0,
-	ENiagaraScriptParameterUsage = 1,
-	ENiagaraScriptParameterUsage = 2,
-	ENiagaraScriptParameterUsage = 3,
-	ENiagaraScriptParameterUsage = 4,
-	ENiagaraScriptParameterUsage = 5,
-	ENiagaraScriptParameterUsage = 6,
-	ENiagaraScriptParameterUsage = 7,
+	Input = 0,
+	Output = 1,
+	Local = 2,
+	InputOutput = 3,
+	InitialValueInput = 4,
+	None = 5,
+	Num = 6,
+	ENiagaraScriptParameterUsage_MAX = 7,
 };
 
 // Enum Niagara.ENiagaraParameterScope
 enum class ENiagaraParameterScope : uint8_t {
-	ENiagaraParameterScope = 0,
-	ENiagaraParameterScope = 1,
-	ENiagaraParameterScope = 2,
-	ENiagaraParameterScope = 3,
-	ENiagaraParameterScope = 4,
-	ENiagaraParameterScope = 5,
-	ENiagaraParameterScope = 6,
-	ENiagaraParameterScope = 7,
-	ENiagaraParameterScope = 8,
-	ENiagaraParameterScope = 9,
-	ENiagaraParameterScope = 10,
-	ENiagaraParameterScope = 11,
-	ENiagaraParameterScope = 12,
-	ENiagaraParameterScope = 13,
-	ENiagaraParameterScope = 14,
-	ENiagaraParameterScope = 15,
+	Input = 0,
+	User = 1,
+	Engine = 2,
+	Owner = 3,
+	System = 4,
+	Emitter = 5,
+	Particles = 6,
+	ScriptPersistent = 7,
+	ScriptTransient = 8,
+	Local = 9,
+	Custom = 10,
+	DISPLAY_ONLY_StaticSwitch = 11,
+	Output = 12,
+	None = 13,
+	Num = 14,
+	ENiagaraParameterScope_MAX = 15,
 };
 
 // Enum Niagara.ENiagaraExecutionState
 enum class ENiagaraExecutionState : uint8_t {
-	ENiagaraExecutionState = 0,
-	ENiagaraExecutionState = 1,
-	ENiagaraExecutionState = 2,
-	ENiagaraExecutionState = 3,
-	ENiagaraExecutionState = 4,
-	ENiagaraExecutionState = 5,
-	ENiagaraExecutionState = 6,
+	Active = 0,
+	Inactive = 1,
+	InactiveClear = 2,
+	Complete = 3,
+	Disabled = 4,
+	Num = 5,
+	ENiagaraExecutionState_MAX = 6,
 };
 
 // Enum Niagara.ENiagaraExecutionStateSource
 enum class ENiagaraExecutionStateSource : uint8_t {
-	ENiagaraExecutionStateSource = 0,
-	ENiagaraExecutionStateSource = 1,
-	ENiagaraExecutionStateSource = 2,
-	ENiagaraExecutionStateSource = 3,
-	ENiagaraExecutionStateSource = 4,
+	Scalability = 0,
+	Internal = 1,
+	Owner = 2,
+	InternalCompletion = 3,
+	ENiagaraExecutionStateSource_MAX = 4,
 };
 
 // Enum Niagara.ENiagaraNumericOutputTypeSelectionMode
 enum class ENiagaraNumericOutputTypeSelectionMode : uint8_t {
-	ENiagaraNumericOutputTypeSelectionMode = 0,
-	ENiagaraNumericOutputTypeSelectionMode = 1,
-	ENiagaraNumericOutputTypeSelectionMode = 2,
-	ENiagaraNumericOutputTypeSelectionMode = 3,
-	ENiagaraNumericOutputTypeSelectionMode = 4,
+	None = 0,
+	Largest = 1,
+	Smallest = 2,
+	Scalar = 3,
+	ENiagaraNumericOutputTypeSelectionMode_MAX = 4,
 };
 
 // Enum Niagara.ENiagaraVariantMode
 enum class ENiagaraVariantMode : uint8_t {
-	ENiagaraVariantMode = 0,
-	ENiagaraVariantMode = 1,
-	ENiagaraVariantMode = 2,
-	ENiagaraVariantMode = 3,
-	ENiagaraVariantMode = 4,
+	None = 0,
+	Object = 1,
+	DataInterface = 2,
+	Bytes = 3,
+	ENiagaraVariantMode_MAX = 4,
 };
 
 // Class Niagara.MovieSceneNiagaraTrack
@@ -441,8 +441,8 @@ public:
 	struct Unknown NiagaraComponent; // 0x310 (8)
 	char bDestroyOnSystemFinish : 0; // 0x318 (1)
 
-	void SetDestroyOnSystemFinish(char bShouldDestroyOnSystemFinish); // Function Niagara.NiagaraActor.SetDestroyOnSystemFinish(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x15092B0>
-	void OnNiagaraSystemFinished(struct Unknown FinishedComponent); // Function Niagara.NiagaraActor.OnNiagaraSystemFinished(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1508E40>
+	void SetDestroyOnSystemFinish(char bShouldDestroyOnSystemFinish); // Function Niagara.NiagaraActor.SetDestroyOnSystemFinish(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1519C60>
+	void OnNiagaraSystemFinished(struct Unknown FinishedComponent); // Function Niagara.NiagaraActor.OnNiagaraSystemFinished(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x15197F0>
 };
 
 // Class Niagara.NiagaraComponent
@@ -466,57 +466,57 @@ public:
 	enum class Unknow AutoAttachRotationRule; // 0x629 (1)
 	enum class Unknow AutoAttachScaleRule; // 0x62A (1)
 
-	void SetVariableVec4(struct FName InVariableName, struct Unknown& InValue); // Function Niagara.NiagaraComponent.SetVariableVec4(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x150A6E0>
-	void SetVariableVec3(struct FName InVariableName, struct Unknown InValue); // Function Niagara.NiagaraComponent.SetVariableVec3(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x150A610>
-	void SetVariableVec2(struct FName InVariableName, struct Unknown InValue); // Function Niagara.NiagaraComponent.SetVariableVec2(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x150A550>
-	void SetVariableQuat(struct FName InVariableName, struct Unknown& InValue); // Function Niagara.NiagaraComponent.SetVariableQuat(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x150A480>
-	void SetVariableObject(struct FName InVariableName, struct Unknown Object); // Function Niagara.NiagaraComponent.SetVariableObject(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x150A3C0>
-	void SetVariableMaterial(struct FName InVariableName, struct Unknown Object); // Function Niagara.NiagaraComponent.SetVariableMaterial(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x150A300>
-	void SetVariableLinearColor(struct FName InVariableName, struct Unknown& InValue); // Function Niagara.NiagaraComponent.SetVariableLinearColor(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x150A230>
-	void SetVariableInt(struct FName InVariableName, int32_t InValue); // Function Niagara.NiagaraComponent.SetVariableInt(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x150A170>
-	void SetVariableFloat(struct FName InVariableName, float InValue); // Function Niagara.NiagaraComponent.SetVariableFloat(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x150A0A0>
-	void SetVariableBool(struct FName InVariableName, char InValue); // Function Niagara.NiagaraComponent.SetVariableBool(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1509FD0>
-	void SetVariableActor(struct FName InVariableName, struct Unknown Actor); // Function Niagara.NiagaraComponent.SetVariableActor(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1509F10>
-	void SetSeekDelta(float InSeekDelta); // Function Niagara.NiagaraComponent.SetSeekDelta(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1509E90>
-	void SetRenderingEnabled(char bInRenderingEnabled); // Function Niagara.NiagaraComponent.SetRenderingEnabled(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1509E00>
-	void SetPreviewLODDistance(char bEnablePreviewLODDistance, float PreviewLODDistance); // Function Niagara.NiagaraComponent.SetPreviewLODDistance(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1509D30>
-	void SetPaused(char bInPaused); // Function Niagara.NiagaraComponent.SetPaused(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1509CA0>
-	void SetNiagaraVariableVec4(struct FString InVariableName, struct Unknown& InValue); // Function Niagara.NiagaraComponent.SetNiagaraVariableVec4(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1509BA0>
-	void SetNiagaraVariableVec3(struct FString InVariableName, struct Unknown InValue); // Function Niagara.NiagaraComponent.SetNiagaraVariableVec3(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1509AB0>
-	void SetNiagaraVariableVec2(struct FString InVariableName, struct Unknown InValue); // Function Niagara.NiagaraComponent.SetNiagaraVariableVec2(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x15099D0>
-	void SetNiagaraVariableQuat(struct FString InVariableName, struct Unknown& InValue); // Function Niagara.NiagaraComponent.SetNiagaraVariableQuat(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x15098E0>
-	void SetNiagaraVariableObject(struct FString InVariableName, struct Unknown Object); // Function Niagara.NiagaraComponent.SetNiagaraVariableObject(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1509450>
-	void SetNiagaraVariableLinearColor(struct FString InVariableName, struct Unknown& InValue); // Function Niagara.NiagaraComponent.SetNiagaraVariableLinearColor(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x15097F0>
-	void SetNiagaraVariableInt(struct FString InVariableName, int32_t InValue); // Function Niagara.NiagaraComponent.SetNiagaraVariableInt(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1509710>
-	void SetNiagaraVariableFloat(struct FString InVariableName, float InValue); // Function Niagara.NiagaraComponent.SetNiagaraVariableFloat(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1509620>
-	void SetNiagaraVariableBool(struct FString InVariableName, char InValue); // Function Niagara.NiagaraComponent.SetNiagaraVariableBool(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1509530>
-	void SetNiagaraVariableActor(struct FString InVariableName, struct Unknown Actor); // Function Niagara.NiagaraComponent.SetNiagaraVariableActor(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1509450>
-	void SetMaxSimTime(float InMaxTime); // Function Niagara.NiagaraComponent.SetMaxSimTime(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x15093D0>
-	void SetForceSolo(char bInForceSolo); // Function Niagara.NiagaraComponent.SetForceSolo(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1509340>
-	void SetDesiredAge(float InDesiredAge); // Function Niagara.NiagaraComponent.SetDesiredAge(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1509230>
-	void SetCanRenderWhileSeeking(char bInCanRenderWhileSeeking); // Function Niagara.NiagaraComponent.SetCanRenderWhileSeeking(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x15091A0>
-	void SetAutoDestroy(char bInAutoDestroy); // Function Niagara.NiagaraComponent.SetAutoDestroy(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1509110>
-	void SetAsset(struct Unknown InAsset); // Function Niagara.NiagaraComponent.SetAsset(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1509090>
-	void SetAllowScalability(char bAllow); // Function Niagara.NiagaraComponent.SetAllowScalability(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1509000>
-	void SetAgeUpdateMode(enum class Unknow InAgeUpdateMode); // Function Niagara.NiagaraComponent.SetAgeUpdateMode(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1508F80>
-	void SeekToDesiredAge(float InDesiredAge); // Function Niagara.NiagaraComponent.SeekToDesiredAge(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1508F00>
-	void ResetSystem(); // Function Niagara.NiagaraComponent.ResetSystem(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1508EE0>
-	void ReinitializeSystem(); // Function Niagara.NiagaraComponent.ReinitializeSystem(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1508EC0>
-	char IsPaused(); // Function Niagara.NiagaraComponent.IsPaused(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1508E10>
-	float GetSeekDelta(); // Function Niagara.NiagaraComponent.GetSeekDelta(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1508DE0>
-	char GetPreviewLODDistanceEnabled(); // Function Niagara.NiagaraComponent.GetPreviewLODDistanceEnabled(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1508DC0>
-	int32_t GetPreviewLODDistance(); // Function Niagara.NiagaraComponent.GetPreviewLODDistance(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1508DA0>
-	struct TArray<Unknown> GetNiagaraParticleValueVec3_DebugOnly(struct FString InEmitterName, struct FString InValueName); // Function Niagara.NiagaraComponent.GetNiagaraParticleValueVec3_DebugOnly(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1508B00>
-	struct TArray<Unknown> GetNiagaraParticleValues_Debugt(struct FString InEmitterName, struct FString InValueName); // Function Niagara.NiagaraComponent.GetNiagaraParticleValues_Debug(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1508C50>
-	struct TArray<Unknown> GetNiagaraParticlePositions_DebugOnly(struct FString InEmitterName); // Function Niagara.NiagaraComponent.GetNiagaraParticlePositions_DebugOnly(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1508A10>
-	float GetMaxSimTime(); // Function Niagara.NiagaraComponent.GetMaxSimTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x15089E0>
-	char GetForceSolo(); // Function Niagara.NiagaraComponent.GetForceSolo(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x15089B0>
-	float GetDesiredAge(); // Function Niagara.NiagaraComponent.GetDesiredAge(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1508980>
-	struct Unknown GetDataInterface(struct FString Name); // Function Niagara.NiagaraComponent.GetDataInterface(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x15088D0>
-	struct Unknown GetAsset(); // Function Niagara.NiagaraComponent.GetAsset(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x15088B0>
-	enum class Unknow GetAgeUpdateMode(); // Function Niagara.NiagaraComponent.GetAgeUpdateMode(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1508880>
-	void AdvanceSimulationByTime(float SimulateTime, float TickDeltaSeconds); // Function Niagara.NiagaraComponent.AdvanceSimulationByTime(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x15087C0>
-	void AdvanceSimulation(int32_t TickCount, float TickDeltaSeconds); // Function Niagara.NiagaraComponent.AdvanceSimulation(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x15086F0>
+	void SetVariableVec4(struct FName InVariableName, struct Unknown& InValue); // Function Niagara.NiagaraComponent.SetVariableVec4(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151B090>
+	void SetVariableVec3(struct FName InVariableName, struct Unknown InValue); // Function Niagara.NiagaraComponent.SetVariableVec3(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151AFC0>
+	void SetVariableVec2(struct FName InVariableName, struct Unknown InValue); // Function Niagara.NiagaraComponent.SetVariableVec2(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151AF00>
+	void SetVariableQuat(struct FName InVariableName, struct Unknown& InValue); // Function Niagara.NiagaraComponent.SetVariableQuat(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151AE30>
+	void SetVariableObject(struct FName InVariableName, struct Unknown Object); // Function Niagara.NiagaraComponent.SetVariableObject(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151AD70>
+	void SetVariableMaterial(struct FName InVariableName, struct Unknown Object); // Function Niagara.NiagaraComponent.SetVariableMaterial(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151ACB0>
+	void SetVariableLinearColor(struct FName InVariableName, struct Unknown& InValue); // Function Niagara.NiagaraComponent.SetVariableLinearColor(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151ABE0>
+	void SetVariableInt(struct FName InVariableName, int32_t InValue); // Function Niagara.NiagaraComponent.SetVariableInt(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151AB20>
+	void SetVariableFloat(struct FName InVariableName, float InValue); // Function Niagara.NiagaraComponent.SetVariableFloat(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151AA50>
+	void SetVariableBool(struct FName InVariableName, char InValue); // Function Niagara.NiagaraComponent.SetVariableBool(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151A980>
+	void SetVariableActor(struct FName InVariableName, struct Unknown Actor); // Function Niagara.NiagaraComponent.SetVariableActor(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151A8C0>
+	void SetSeekDelta(float InSeekDelta); // Function Niagara.NiagaraComponent.SetSeekDelta(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151A840>
+	void SetRenderingEnabled(char bInRenderingEnabled); // Function Niagara.NiagaraComponent.SetRenderingEnabled(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151A7B0>
+	void SetPreviewLODDistance(char bEnablePreviewLODDistance, float PreviewLODDistance); // Function Niagara.NiagaraComponent.SetPreviewLODDistance(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151A6E0>
+	void SetPaused(char bInPaused); // Function Niagara.NiagaraComponent.SetPaused(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151A650>
+	void SetNiagaraVariableVec4(struct FString InVariableName, struct Unknown& InValue); // Function Niagara.NiagaraComponent.SetNiagaraVariableVec4(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151A550>
+	void SetNiagaraVariableVec3(struct FString InVariableName, struct Unknown InValue); // Function Niagara.NiagaraComponent.SetNiagaraVariableVec3(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151A460>
+	void SetNiagaraVariableVec2(struct FString InVariableName, struct Unknown InValue); // Function Niagara.NiagaraComponent.SetNiagaraVariableVec2(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151A380>
+	void SetNiagaraVariableQuat(struct FString InVariableName, struct Unknown& InValue); // Function Niagara.NiagaraComponent.SetNiagaraVariableQuat(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151A290>
+	void SetNiagaraVariableObject(struct FString InVariableName, struct Unknown Object); // Function Niagara.NiagaraComponent.SetNiagaraVariableObject(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1519E00>
+	void SetNiagaraVariableLinearColor(struct FString InVariableName, struct Unknown& InValue); // Function Niagara.NiagaraComponent.SetNiagaraVariableLinearColor(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151A1A0>
+	void SetNiagaraVariableInt(struct FString InVariableName, int32_t InValue); // Function Niagara.NiagaraComponent.SetNiagaraVariableInt(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151A0C0>
+	void SetNiagaraVariableFloat(struct FString InVariableName, float InValue); // Function Niagara.NiagaraComponent.SetNiagaraVariableFloat(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1519FD0>
+	void SetNiagaraVariableBool(struct FString InVariableName, char InValue); // Function Niagara.NiagaraComponent.SetNiagaraVariableBool(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1519EE0>
+	void SetNiagaraVariableActor(struct FString InVariableName, struct Unknown Actor); // Function Niagara.NiagaraComponent.SetNiagaraVariableActor(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1519E00>
+	void SetMaxSimTime(float InMaxTime); // Function Niagara.NiagaraComponent.SetMaxSimTime(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1519D80>
+	void SetForceSolo(char bInForceSolo); // Function Niagara.NiagaraComponent.SetForceSolo(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1519CF0>
+	void SetDesiredAge(float InDesiredAge); // Function Niagara.NiagaraComponent.SetDesiredAge(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1519BE0>
+	void SetCanRenderWhileSeeking(char bInCanRenderWhileSeeking); // Function Niagara.NiagaraComponent.SetCanRenderWhileSeeking(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1519B50>
+	void SetAutoDestroy(char bInAutoDestroy); // Function Niagara.NiagaraComponent.SetAutoDestroy(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1519AC0>
+	void SetAsset(struct Unknown InAsset); // Function Niagara.NiagaraComponent.SetAsset(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1519A40>
+	void SetAllowScalability(char bAllow); // Function Niagara.NiagaraComponent.SetAllowScalability(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x15199B0>
+	void SetAgeUpdateMode(enum class Unknow InAgeUpdateMode); // Function Niagara.NiagaraComponent.SetAgeUpdateMode(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1519930>
+	void SeekToDesiredAge(float InDesiredAge); // Function Niagara.NiagaraComponent.SeekToDesiredAge(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x15198B0>
+	void ResetSystem(); // Function Niagara.NiagaraComponent.ResetSystem(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1519890>
+	void ReinitializeSystem(); // Function Niagara.NiagaraComponent.ReinitializeSystem(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1519870>
+	char IsPaused(); // Function Niagara.NiagaraComponent.IsPaused(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x15197C0>
+	float GetSeekDelta(); // Function Niagara.NiagaraComponent.GetSeekDelta(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1519790>
+	char GetPreviewLODDistanceEnabled(); // Function Niagara.NiagaraComponent.GetPreviewLODDistanceEnabled(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1519770>
+	int32_t GetPreviewLODDistance(); // Function Niagara.NiagaraComponent.GetPreviewLODDistance(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1519750>
+	struct TArray<Unknown> GetNiagaraParticleValueVec3_DebugOnly(struct FString InEmitterName, struct FString InValueName); // Function Niagara.NiagaraComponent.GetNiagaraParticleValueVec3_DebugOnly(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x15194B0>
+	struct TArray<Unknown> GetNiagaraParticleValues_DebugOnly(struct FString InEmitterName, struct FString InValueName); // Function Niagara.NiagaraComponent.GetNiagaraParticleValues_DebugOnly(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1519600>
+	struct TArray<Unknown> GetNiagaraParticlePositions_DebugOnly(struct FString InEmitterName); // Function Niagara.NiagaraComponent.GetNiagaraParticlePositions_DebugOnly(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x15193C0>
+	float GetMaxSimTime(); // Function Niagara.NiagaraComponent.GetMaxSimTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1519390>
+	char GetForceSolo(); // Function Niagara.NiagaraComponent.GetForceSolo(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1519360>
+	float GetDesiredAge(); // Function Niagara.NiagaraComponent.GetDesiredAge(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1519330>
+	struct Unknown GetDataInterface(struct FString Name); // Function Niagara.NiagaraComponent.GetDataInterface(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1519280>
+	struct Unknown GetAsset(); // Function Niagara.NiagaraComponent.GetAsset(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1519260>
+	enum class Unknow GetAgeUpdateMode(); // Function Niagara.NiagaraComponent.GetAgeUpdateMode(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1519230>
+	void AdvanceSimulationByTime(float SimulateTime, float TickDeltaSeconds); // Function Niagara.NiagaraComponent.AdvanceSimulationByTime(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1519170>
+	void AdvanceSimulation(int32_t TickCount, float TickDeltaSeconds); // Function Niagara.NiagaraComponent.AdvanceSimulation(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x15190A0>
 };
 
 // Class Niagara.NiagaraComponentPool
@@ -885,22 +885,22 @@ public:
 	struct TArray<Unknown> OverridenParameters; // 0x30 (16)
 	struct Unknown ParameterStorage; // 0x40 (184)
 
-	void SetVectorParameter(struct FString InVariableName, struct Unknown InValue); // Function Niagara.NiagaraParameterCollectionInstance.SetVectorParameter(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x15161A0>
-	void SetVector4Parameter(struct FString InVariableName, struct Unknown& InValue); // Function Niagara.NiagaraParameterCollectionInstance.SetVector4Parameter(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x15160A0>
-	void SetVector2DParameter(struct FString InVariableName, struct Unknown InValue); // Function Niagara.NiagaraParameterCollectionInstance.SetVector2DParameter(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1515FC0>
-	void SetQuatParameter(struct FString InVariableName, struct Unknown& InValue); // Function Niagara.NiagaraParameterCollectionInstance.SetQuatParameter(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1515DC0>
-	void SetIntParameter(struct FString InVariableName, int32_t InValue); // Function Niagara.NiagaraParameterCollectionInstance.SetIntParameter(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1515CE0>
-	void SetFloatParameter(struct FString InVariableName, float InValue); // Function Niagara.NiagaraParameterCollectionInstance.SetFloatParameter(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1515BF0>
-	void SetColorParameter(struct FString InVariableName, struct Unknown InValue); // Function Niagara.NiagaraParameterCollectionInstance.SetColorParameter(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1515B00>
-	void SetBoolParameter(struct FString InVariableName, char InValue); // Function Niagara.NiagaraParameterCollectionInstance.SetBoolParameter(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1515A10>
-	struct Unknown GetVectorParameter(struct FString InVariableName); // Function Niagara.NiagaraParameterCollectionInstance.GetVectorParameter(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1515620>
-	struct Unknown GetVector4Parameter(struct FString InVariableName); // Function Niagara.NiagaraParameterCollectionInstance.GetVector4Parameter(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1515560>
-	struct Unknown GetVector2DParameter(struct FString InVariableName); // Function Niagara.NiagaraParameterCollectionInstance.GetVector2DParameter(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x15154A0>
-	struct Unknown GetQuatParameter(struct FString InVariableName); // Function Niagara.NiagaraParameterCollectionInstance.GetQuatParameter(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x15153E0>
-	int32_t GetIntParameter(struct FString InVariableName); // Function Niagara.NiagaraParameterCollectionInstance.GetIntParameter(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1515270>
-	float GetFloatParameter(struct FString InVariableName); // Function Niagara.NiagaraParameterCollectionInstance.GetFloatParameter(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x15151C0>
-	struct Unknown GetColorParameter(struct FString InVariableName); // Function Niagara.NiagaraParameterCollectionInstance.GetColorParameter(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1515100>
-	char GetBoolParameter(struct FString InVariableName); // Function Niagara.NiagaraParameterCollectionInstance.GetBoolParameter(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1515050>
+	void SetVectorParameter(struct FString InVariableName, struct Unknown InValue); // Function Niagara.NiagaraParameterCollectionInstance.SetVectorParameter(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1526B50>
+	void SetVector4Parameter(struct FString InVariableName, struct Unknown& InValue); // Function Niagara.NiagaraParameterCollectionInstance.SetVector4Parameter(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1526A50>
+	void SetVector2DParameter(struct FString InVariableName, struct Unknown InValue); // Function Niagara.NiagaraParameterCollectionInstance.SetVector2DParameter(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1526970>
+	void SetQuatParameter(struct FString InVariableName, struct Unknown& InValue); // Function Niagara.NiagaraParameterCollectionInstance.SetQuatParameter(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1526770>
+	void SetIntParameter(struct FString InVariableName, int32_t InValue); // Function Niagara.NiagaraParameterCollectionInstance.SetIntParameter(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1526690>
+	void SetFloatParameter(struct FString InVariableName, float InValue); // Function Niagara.NiagaraParameterCollectionInstance.SetFloatParameter(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x15265A0>
+	void SetColorParameter(struct FString InVariableName, struct Unknown InValue); // Function Niagara.NiagaraParameterCollectionInstance.SetColorParameter(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x15264B0>
+	void SetBoolParameter(struct FString InVariableName, char InValue); // Function Niagara.NiagaraParameterCollectionInstance.SetBoolParameter(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x15263C0>
+	struct Unknown GetVectorParameter(struct FString InVariableName); // Function Niagara.NiagaraParameterCollectionInstance.GetVectorParameter(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1525FD0>
+	struct Unknown GetVector4Parameter(struct FString InVariableName); // Function Niagara.NiagaraParameterCollectionInstance.GetVector4Parameter(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1525F10>
+	struct Unknown GetVector2DParameter(struct FString InVariableName); // Function Niagara.NiagaraParameterCollectionInstance.GetVector2DParameter(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1525E50>
+	struct Unknown GetQuatParameter(struct FString InVariableName); // Function Niagara.NiagaraParameterCollectionInstance.GetQuatParameter(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1525D90>
+	int32_t GetIntParameter(struct FString InVariableName); // Function Niagara.NiagaraParameterCollectionInstance.GetIntParameter(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1525C20>
+	float GetFloatParameter(struct FString InVariableName); // Function Niagara.NiagaraParameterCollectionInstance.GetFloatParameter(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1525B70>
+	struct Unknown GetColorParameter(struct FString InVariableName); // Function Niagara.NiagaraParameterCollectionInstance.GetColorParameter(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1525AB0>
+	char GetBoolParameter(struct FString InVariableName); // Function Niagara.NiagaraParameterCollectionInstance.GetBoolParameter(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1525A00>
 };
 
 // Class Niagara.NiagaraParameterCollection
@@ -1002,10 +1002,10 @@ public:
 	int32_t NumY; // 0x344 (4)
 	struct TArray<Unknown> PreviewComponents; // 0x348 (16)
 
-	void SetPaused(char bPaused); // Function Niagara.NiagaraPreviewGrid.SetPaused(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151C380>
-	void GetPreviews(struct TArray<Unknown>& OutPreviews); // Function Niagara.NiagaraPreviewGrid.GetPreviews(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151C280>
-	void DeactivatePreviews(); // Function Niagara.NiagaraPreviewGrid.DeactivatePreviews(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151C260>
-	void ActivatePreviews(char bReset); // Function Niagara.NiagaraPreviewGrid.ActivatePreviews(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151C050>
+	void SetPaused(char bPaused); // Function Niagara.NiagaraPreviewGrid.SetPaused(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x152CD30>
+	void GetPreviews(struct TArray<Unknown>& OutPreviews); // Function Niagara.NiagaraPreviewGrid.GetPreviews(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x152CC30>
+	void DeactivatePreviews(); // Function Niagara.NiagaraPreviewGrid.DeactivatePreviews(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x152CC10>
+	void ActivatePreviews(char bReset); // Function Niagara.NiagaraPreviewGrid.ActivatePreviews(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x152CA00>
 };
 
 // Class Niagara.NiagaraRibbonRendererProperties
@@ -1063,7 +1063,7 @@ public:
 	struct TArray<Unknown> CachedParameterCollectionReferences; // 0x500 (16)
 	struct TArray<Unknown> CachedDefaultDataInterfaces; // 0x510 (16)
 
-	void RaiseOnGPUCompilationComplete(); // Function Niagara.NiagaraScript.RaiseOnGPUCompilationComplete(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x151C360>
+	void RaiseOnGPUCompilationComplete(); // Function Niagara.NiagaraScript.RaiseOnGPUCompilationComplete(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x152CD10>
 };
 
 // Class Niagara.NiagaraSettings
@@ -1146,7 +1146,7 @@ public:
 	struct Unknown EffectType; // 0x38 (8)
 	char bOverrideScalabilitySettings : 0; // 0x40 (1)
 	struct TArray<Unknown> ScalabilityOverrides; // 0x48 (16)
-	struct Unknown SystemScalabilityOv; // 0x58 (16)
+	struct Unknown SystemScalabilityOverrides; // 0x58 (16)
 	struct TArray<Unknown> EmitterHandles; // 0x68 (16)
 	struct TArray<Unknown> ParameterCollectionOverrides; // 0x78 (16)
 	struct Unknown SystemSpawnScript; // 0x88 (8)
@@ -1669,8 +1669,8 @@ struct FNiagaraSystemCompiledData {
 	struct TArray<Unknown> UpdateInstanceEmitterBindings; // 0x248 (16)
 };
 
-// ScriptStruct Niagara.NiagaraParameterDataSetBinding
-struct FNiagaraParameterDataSetBinding {
+// ScriptStruct Niagara.NiagaraParameterDataSetBindingCollection
+struct FNiagaraParameterDataSetBindingCollection {
 	struct TArray<Unknown> FloatOffsets; // 0x0 (16)
 	struct TArray<Unknown> Int32Offsets; // 0x10 (16)
 };
@@ -1726,8 +1726,8 @@ struct FNiagaraParameterScopeInfo {
 	struct FString NamespaceString; // 0x8 (16)
 };
 
-// ScriptStruct Niagara.NiagaraCompileHashVisitorDebug
-struct FNiagaraCompileHashVisitorDebug {
+// ScriptStruct Niagara.NiagaraCompileHashVisitorDebugInfo
+struct FNiagaraCompileHashVisitorDebugInfo {
 	struct FString Object; // 0x0 (16)
 	struct TArray<Unknown> PropertyKeys; // 0x10 (16)
 	struct TArray<Unknown> PropertyValues; // 0x20 (16)
@@ -2514,16 +2514,16 @@ inline struct TArray<Unknown> UNiagaraComponent::GetNiagaraParticleValueVec3_Deb
 	return params.ReturnValue;
 }
 
-// Function Niagara.NiagaraComponent.GetNiagaraParticleValues_Debug
-inline struct TArray<Unknown> UNiagaraComponent::GetNiagaraParticleValues_Debug(struct FString InEmitterName, struct FString InValueName) {
-	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.GetNiagaraParticleValues_Debug");
+// Function Niagara.NiagaraComponent.GetNiagaraParticleValues_DebugOnly
+inline struct TArray<Unknown> UNiagaraComponent::GetNiagaraParticleValues_DebugOnly(struct FString InEmitterName, struct FString InValueName) {
+	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraComponent.GetNiagaraParticleValues_DebugOnly");
 
-	struct GetNiagaraParticleValues_Debug_Params {
+	struct GetNiagaraParticleValues_DebugOnly_Params {
 		struct FString InEmitterName;
 		struct FString InValueName;
 		struct TArray<Unknown> ReturnValue;
 
-	}; GetNiagaraParticleValues_Debug_Params Params;
+	}; GetNiagaraParticleValues_DebugOnly_Params Params;
 
 	Params.InEmitterName = InEmitterName;
 	Params.InValueName = InValueName;

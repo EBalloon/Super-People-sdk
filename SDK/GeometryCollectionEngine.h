@@ -1,56 +1,56 @@
 // Enum GeometryCollectionEngine.EChaosBreakingSortMethod
 enum class EChaosBreakingSortMethod : uint8_t {
-	EChaosBreakingSortMethod = 0,
-	EChaosBreakingSortMethod = 1,
-	EChaosBreakingSortMethod = 2,
-	EChaosBreakingSortMethod = 3,
-	EChaosBreakingSortMethod = 4,
-	EChaosBreakingSortMethod = 5,
+	SortNone = 0,
+	SortByHighestMass = 1,
+	SortByHighestSpeed = 2,
+	SortByNearestFirst = 3,
+	Count = 4,
+	EChaosBreakingSortMethod_MAX = 5,
 };
 
 // Enum GeometryCollectionEngine.EChaosCollisionSortMethod
 enum class EChaosCollisionSortMethod : uint8_t {
-	EChaosCollisionSortMethod = 0,
-	EChaosCollisionSortMethod = 1,
-	EChaosCollisionSortMethod = 2,
-	EChaosCollisionSortMethod = 3,
-	EChaosCollisionSortMethod = 4,
-	EChaosCollisionSortMethod = 5,
-	EChaosCollisionSortMethod = 6,
+	SortNone = 0,
+	SortByHighestMass = 1,
+	SortByHighestSpeed = 2,
+	SortByHighestImpulse = 3,
+	SortByNearestFirst = 4,
+	Count = 5,
+	EChaosCollisionSortMethod_MAX = 6,
 };
 
 // Enum GeometryCollectionEngine.EChaosTrailingSortMethod
 enum class EChaosTrailingSortMethod : uint8_t {
-	EChaosTrailingSortMethod = 0,
-	EChaosTrailingSortMethod = 1,
-	EChaosTrailingSortMethod = 2,
-	EChaosTrailingSortMethod = 3,
-	EChaosTrailingSortMethod = 4,
-	EChaosTrailingSortMethod = 5,
+	SortNone = 0,
+	SortByHighestMass = 1,
+	SortByHighestSpeed = 2,
+	SortByNearestFirst = 3,
+	Count = 4,
+	EChaosTrailingSortMethod_MAX = 5,
 };
 
 // Enum GeometryCollectionEngine.EGeometryCollectionDebugDrawActorHideGeometry
 enum class EGeometryCollectionDebugDrawActorHideGeometry : uint8_t {
-	EGeometryCollectionDebugDrawActorHideGeometry = 0,
-	EGeometryCollectionDebugDrawActorHideGeometry = 1,
-	EGeometryCollectionDebugDrawActorHideGeometry = 2,
-	EGeometryCollectionDebugDrawActorHideGeometry = 3,
-	EGeometryCollectionDebugDrawActorHideGeometry = 4,
-	EGeometryCollectionDebugDrawActorHideGeometry = 5,
+	HideNone = 0,
+	HideWithCollision = 1,
+	HideSelected = 2,
+	HideWholeCollection = 3,
+	HideAll = 4,
+	EGeometryCollectionDebugDrawActorHideGeometry_MAX = 5,
 };
 
 // Enum GeometryCollectionEngine.ECollectionGroupEnum
 enum class ECollectionGroupEnum : uint8_t {
-	ECollectionGroupEnum = 0,
-	ECollectionGroupEnum = 1,
+	Chaos_Traansform = 0,
+	Chaos_Max = 1,
 };
 
 // Enum GeometryCollectionEngine.ECollectionAttributeEnum
 enum class ECollectionAttributeEnum : uint8_t {
-	ECollectionAttributeEnum = 0,
-	ECollectionAttributeEnum = 1,
-	ECollectionAttributeEnum = 2,
-	ECollectionAttributeEnum = 3,
+	Chaos_Active = 0,
+	Chaos_DynamicState = 1,
+	Chaos_CollisionGroup = 2,
+	Chaos_Max = 3,
 };
 
 // Class GeometryCollectionEngine.ChaosDestructionListener
@@ -70,20 +70,20 @@ public:
 	struct FMulticastInlineDelegate OnBreakingEvents; // 0x338 (16)
 	struct FMulticastInlineDelegate OnTrailingEvents; // 0x348 (16)
 
-	void SortTrailingEvents(struct TArray<Unknown>& TrailingEvents, enum class Unknow SortMethod); // Function GeometryCollectionEngine.ChaosDestructionListener.SortTrailingEvents(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x40320F0>
-	void SortCollisionEvents(struct TArray<Unknown>& CollisionEvents, enum class Unknow SortMethod); // Function GeometryCollectionEngine.ChaosDestructionListener.SortCollisionEvents(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4031FF0>
-	void SortBreakingEvents(struct TArray<Unknown>& BreakingEvents, enum class Unknow SortMethod); // Function GeometryCollectionEngine.ChaosDestructionListener.SortBreakingEvents(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4031EF0>
-	void SetTrailingEventRequestSettings(struct Unknown& InSettings); // Function GeometryCollectionEngine.ChaosDestructionListener.SetTrailingEventRequestSetting(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4031E50>
-	void SetTrailingEventEnabled(char bIsEnabled); // Function GeometryCollectionEngine.ChaosDestructionListener.SetTrailingEventEnabled(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4031DC0>
-	void SetCollisionEventRequestSettings(struct Unknown& InSettings); // Function GeometryCollectionEngine.ChaosDestructionListener.SetCollisionEventRequestSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4031C90>
-	void SetCollisionEventEnabled(char bIsEnabled); // Function GeometryCollectionEngine.ChaosDestructionListener.SetCollisionEventEnabled(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4031C00>
-	void SetBreakingEventRequestSetting(struct Unknown& InSettings); // Function GeometryCollectionEngine.ChaosDestructionListener.SetBreakingEventRequestSetting(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4031B60>
-	void SetBreakingEventEnabled(char bIsEnabled); // Function GeometryCollectionEngine.ChaosDestructionListener.SetBreakingEventEnabled(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4031AD0>
-	void RemoveGeometryCollectionActor(struct Unknown GeometryCollectionActor); // Function GeometryCollectionEngine.ChaosDestructionListener.RemoveGeometryCollectionActor(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4031A50>
-	void RemoveChaosSolverActor(struct Unknown ChaosSolverActor); // Function GeometryCollectionEngine.ChaosDestructionListener.RemoveChaosSolverActor(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16B5B80>
-	char IsEventListening(); // Function GeometryCollectionEngine.ChaosDestructionListener.IsEventListening(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x40318A0>
-	void AddGeometryCollectionActor(struct Unknown GeometryCollectionActor); // Function GeometryCollectionEngine.ChaosDestructionListener.AddGeometryCollectionActor(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x40315E0>
-	void AddChaosSolverActor(struct Unknown ChaosSolverActor); // Function GeometryCollectionEngine.ChaosDestructionListener.AddChaosSolverActor(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16B5B80>
+	void SortTrailingEvents(struct TArray<Unknown>& TrailingEvents, enum class Unknow SortMethod); // Function GeometryCollectionEngine.ChaosDestructionListener.SortTrailingEvents(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47ED060>
+	void SortCollisionEvents(struct TArray<Unknown>& CollisionEvents, enum class Unknow SortMethod); // Function GeometryCollectionEngine.ChaosDestructionListener.SortCollisionEvents(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47ECF60>
+	void SortBreakingEvents(struct TArray<Unknown>& BreakingEvents, enum class Unknow SortMethod); // Function GeometryCollectionEngine.ChaosDestructionListener.SortBreakingEvents(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47ECE60>
+	void SetTrailingEventRequestSettings(struct Unknown& InSettings); // Function GeometryCollectionEngine.ChaosDestructionListener.SetTrailingEventRequestSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47ECDC0>
+	void SetTrailingEventEnabled(char bIsEnabled); // Function GeometryCollectionEngine.ChaosDestructionListener.SetTrailingEventEnabled(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47ECD30>
+	void SetCollisionEventRequestSettings(struct Unknown& InSettings); // Function GeometryCollectionEngine.ChaosDestructionListener.SetCollisionEventRequestSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47ECC00>
+	void SetCollisionEventEnabled(char bIsEnabled); // Function GeometryCollectionEngine.ChaosDestructionListener.SetCollisionEventEnabled(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47ECB70>
+	void SetBreakingEventRequestSettings(struct Unknown& InSettings); // Function GeometryCollectionEngine.ChaosDestructionListener.SetBreakingEventRequestSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47ECAD0>
+	void SetBreakingEventEnabled(char bIsEnabled); // Function GeometryCollectionEngine.ChaosDestructionListener.SetBreakingEventEnabled(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47ECA40>
+	void RemoveGeometryCollectionActor(struct Unknown GeometryCollectionActor); // Function GeometryCollectionEngine.ChaosDestructionListener.RemoveGeometryCollectionActor(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47EC9C0>
+	void RemoveChaosSolverActor(struct Unknown ChaosSolverActor); // Function GeometryCollectionEngine.ChaosDestructionListener.RemoveChaosSolverActor(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16C66C0>
+	char IsEventListening(); // Function GeometryCollectionEngine.ChaosDestructionListener.IsEventListening(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47EC810>
+	void AddGeometryCollectionActor(struct Unknown GeometryCollectionActor); // Function GeometryCollectionEngine.ChaosDestructionListener.AddGeometryCollectionActor(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47EC550>
+	void AddChaosSolverActor(struct Unknown ChaosSolverActor); // Function GeometryCollectionEngine.ChaosDestructionListener.AddChaosSolverActor(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16C66C0>
 };
 
 // Class GeometryCollectionEngine.GeometryCollectionActor
@@ -94,7 +94,7 @@ public:
 	struct Unknown GeometryCollectionComponent; // 0x310 (8)
 	struct Unknown GeometryCollectionDebugDrawComponent; // 0x318 (8)
 
-	char RaycastSingle(struct Unknown Start, struct Unknown End, struct Unknown& OutHit); // Function GeometryCollectionEngine.GeometryCollectionActor.RaycastSingle(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x40318D0>
+	char RaycastSingle(struct Unknown Start, struct Unknown End, struct Unknown& OutHit); // Function GeometryCollectionEngine.GeometryCollectionActor.RaycastSingle(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47EC840>
 };
 
 // Class GeometryCollectionEngine.GeometryCollectionCache
@@ -132,7 +132,7 @@ public:
 	struct Unknown InitialAngularVelocity; // 0x648 (12)
 	struct Unknown CacheParameters; // 0x658 (80)
 	struct FMulticastInlineDelegate NotifyGeometryCollectionPhysicsStateChange; // 0x6A8 (16)
-	struct FMulticastInlineDelegate NotifyGeometryCollectionPhysicsLoading; // 0x6B8 (16)
+	struct FMulticastInlineDelegate NotifyGeometryCollectionPhysicsLoadingStateChange; // 0x6B8 (16)
 	struct FMulticastInlineDelegate OnChaosBreakEvent; // 0x6E0 (16)
 	float DesiredCacheTime; // 0x6F0 (4)
 	char CachePlayback : 0; // 0x6F4 (1)
@@ -141,12 +141,12 @@ public:
 	char bNotifyCollisions : 0; // 0x709 (1)
 	struct Unknown DummyBodySetup; // 0x968 (8)
 
-	void SetNotifyBreaks(char bNewNotifyBreaks); // Function GeometryCollectionEngine.GeometryCollectionComponent.SetNotifyBreaks(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4031D30>
-	void ReceivePhysicsCollision(struct Unknown& CollisionInfo); // Function GeometryCollectionEngine.GeometryCollectionComponent.ReceivePhysicsCollision(Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void NotifyGeometryCollectionPhysicsStateChange__DelegateSignature(struct Unknown FracturedComponent); // DelegateFunction GeometryCollectionEngine.GeometryCollectionComponent.NotifyGeometryCollectionPhysicsStateChange__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void NotifyGeometryCollectionPhysicsLoading(struct Unknown FracturedComponent); // DelegateFunction GeometryCollectionEngine.GeometryCollectionComponent.NotifyGeometryCollectionPhysicsLoading(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void ApplyPhysicsField(char Enabled, enum class Unknow Target, struct Unknown MetaData, struct Unknown Field); // Function GeometryCollectionEngine.GeometryCollectionComponent.ApplyPhysicsField(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4031730>
-	void ApplyKinematicField(float Radius, struct Unknown Position); // Function GeometryCollectionEngine.GeometryCollectionComponent.ApplyKinematicField(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4031660>
+	void SetNotifyBreaks(char bNewNotifyBreaks); // Function GeometryCollectionEngine.GeometryCollectionComponent.SetNotifyBreaks(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47ECCA0>
+	void ReceivePhysicsCollision(struct Unknown& CollisionInfo); // Function GeometryCollectionEngine.GeometryCollectionComponent.ReceivePhysicsCollision(Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void NotifyGeometryCollectionPhysicsStateChange__DelegateSignature(struct Unknown FracturedComponent); // DelegateFunction GeometryCollectionEngine.GeometryCollectionComponent.NotifyGeometryCollectionPhysicsStateChange__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void NotifyGeometryCollectionPhysicsLoadingStateChange__DelegateSignature(struct Unknown FracturedComponent); // DelegateFunction GeometryCollectionEngine.GeometryCollectionComponent.NotifyGeometryCollectionPhysicsLoadingStateChange__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void ApplyPhysicsField(char Enabled, enum class Unknow Target, struct Unknown MetaData, struct Unknown Field); // Function GeometryCollectionEngine.GeometryCollectionComponent.ApplyPhysicsField(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47EC6A0>
+	void ApplyKinematicField(float Radius, struct Unknown Position); // Function GeometryCollectionEngine.GeometryCollectionComponent.ApplyKinematicField(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47EC5D0>
 };
 
 // Class GeometryCollectionEngine.GeometryCollectionDebugDrawActor
@@ -291,7 +291,7 @@ public:
 	struct Unknown InitialAngularVelocity; // 0x10C (12)
 	struct FMulticastInlineDelegate OnChaosPhysicsCollision; // 0x118 (16)
 
-	void ReceivePhysicsCollision(struct Unknown& CollisionInfo); // Function GeometryCollectionEngine.SkeletalMeshSimulationComponent.ReceivePhysicsCollision(Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void ReceivePhysicsCollision(struct Unknown& CollisionInfo); // Function GeometryCollectionEngine.SkeletalMeshSimulationComponent.ReceivePhysicsCollision(Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
 };
 
 // Class GeometryCollectionEngine.StaticMeshSimulationComponent
@@ -316,8 +316,8 @@ public:
 	struct FMulticastInlineDelegate OnChaosPhysicsCollision; // 0x100 (16)
 	struct TArray<Unknown> SimulatedComponents; // 0x120 (16)
 
-	void ReceivePhysicsCollision(struct Unknown& CollisionInfo); // Function GeometryCollectionEngine.StaticMeshSimulationComponent.ReceivePhysicsCollision(Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void ForceRecreatePhysicsState(); // Function GeometryCollectionEngine.StaticMeshSimulationComponent.ForceRecreatePhysicsState(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4031880>
+	void ReceivePhysicsCollision(struct Unknown& CollisionInfo); // Function GeometryCollectionEngine.StaticMeshSimulationComponent.ReceivePhysicsCollision(Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void ForceRecreatePhysicsState(); // Function GeometryCollectionEngine.StaticMeshSimulationComponent.ForceRecreatePhysicsState(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47EC7F0>
 };
 
 // ScriptStruct GeometryCollectionEngine.GeomComponentCacheParameters
@@ -479,9 +479,9 @@ inline void UChaosDestructionListener::SortBreakingEvents(struct TArray<Unknown>
 
 }
 
-// Function GeometryCollectionEngine.ChaosDestructionListener.SetTrailingEventRequestSetting
+// Function GeometryCollectionEngine.ChaosDestructionListener.SetTrailingEventRequestSettings
 inline void UChaosDestructionListener::SetTrailingEventRequestSettings(struct Unknown& InSettings) {
-	static auto fn = UObject::FindObject<UFunction>("Function GeometryCollectionEngine.ChaosDestructionListener.SetTrailingEventRequestSetting");
+	static auto fn = UObject::FindObject<UFunction>("Function GeometryCollectionEngine.ChaosDestructionListener.SetTrailingEventRequestSettings");
 
 	struct SetTrailingEventRequestSettings_Params {
 		struct Unknown& InSettings;
@@ -543,13 +543,13 @@ inline void UChaosDestructionListener::SetCollisionEventEnabled(char bIsEnabled)
 	fn->FunctionFlags = flags;
 }
 
-// Function GeometryCollectionEngine.ChaosDestructionListener.SetBreakingEventRequestSetting
-inline void UChaosDestructionListener::SetBreakingEventRequestSetting(struct Unknown& InSettings) {
-	static auto fn = UObject::FindObject<UFunction>("Function GeometryCollectionEngine.ChaosDestructionListener.SetBreakingEventRequestSetting");
+// Function GeometryCollectionEngine.ChaosDestructionListener.SetBreakingEventRequestSettings
+inline void UChaosDestructionListener::SetBreakingEventRequestSettings(struct Unknown& InSettings) {
+	static auto fn = UObject::FindObject<UFunction>("Function GeometryCollectionEngine.ChaosDestructionListener.SetBreakingEventRequestSettings");
 
-	struct SetBreakingEventRequestSetting_Params {
+	struct SetBreakingEventRequestSettings_Params {
 		struct Unknown& InSettings;
-	}; SetBreakingEventRequestSetting_Params Params;
+	}; SetBreakingEventRequestSettings_Params Params;
 
 
 	auto flags = fn->FunctionFlags;
@@ -725,13 +725,13 @@ inline void UGeometryCollectionComponent::NotifyGeometryCollectionPhysicsStateCh
 	fn->FunctionFlags = flags;
 }
 
-// DelegateFunction GeometryCollectionEngine.GeometryCollectionComponent.NotifyGeometryCollectionPhysicsLoading
-inline void UGeometryCollectionComponent::NotifyGeometryCollectionPhysicsLoading(struct Unknown FracturedComponent) {
-	static auto fn = UObject::FindObject<UFunction>("DelegateFunction GeometryCollectionEngine.GeometryCollectionComponent.NotifyGeometryCollectionPhysicsLoading");
+// DelegateFunction GeometryCollectionEngine.GeometryCollectionComponent.NotifyGeometryCollectionPhysicsLoadingStateChange__DelegateSignature
+inline void UGeometryCollectionComponent::NotifyGeometryCollectionPhysicsLoadingStateChange__DelegateSignature(struct Unknown FracturedComponent) {
+	static auto fn = UObject::FindObject<UFunction>("DelegateFunction GeometryCollectionEngine.GeometryCollectionComponent.NotifyGeometryCollectionPhysicsLoadingStateChange__DelegateSignature");
 
-	struct NotifyGeometryCollectionPhysicsLoading_Params {
+	struct NotifyGeometryCollectionPhysicsLoadingStateChange__DelegateSignature_Params {
 		struct Unknown FracturedComponent;
-	}; NotifyGeometryCollectionPhysicsLoading_Params Params;
+	}; NotifyGeometryCollectionPhysicsLoadingStateChange__DelegateSignature_Params Params;
 
 	Params.FracturedComponent = FracturedComponent;
 

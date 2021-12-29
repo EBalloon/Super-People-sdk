@@ -4,61 +4,61 @@ class UBP_KeyCombination_C : public Object {
 public:
 
 	struct FString Name; // 0x28 (16)
-	struct TArray<Unknown> Key; // 0x38 (16)
-	struct TArray<Unknown> Default; // 0x48 (16)
-	char Can : 0; // 0x58 (1)
-	struct TArray<Unknown> Conflicting; // 0x60 (16)
-	struct TArray<Unknown> Conflicting; // 0x70 (16)
-	struct FMulticastInlineDelegate Combination; // 0x80 (16)
-	struct Unknown Parent; // 0x90 (8)
+	struct TArray<Unknown> Key Inputs; // 0x38 (16)
+	struct TArray<Unknown> Default Combination; // 0x48 (16)
+	char Can't Be None : 0; // 0x58 (1)
+	struct TArray<Unknown> Conflicting Mappings Blocked; // 0x60 (16)
+	struct TArray<Unknown> Conflicting Mappings Info; // 0x70 (16)
+	struct FMulticastInlineDelegate Combination Updated; // 0x80 (16)
+	struct Unknown Parent Mapping; // 0x90 (8)
 
-	void Get(struct FString Separator, struct FString No, char Display, struct FString& Display); // Function BP_KeyCombination.BP_KeyCombination_C.Get(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void Add(struct Unknown InputPin, struct Unknown& Input); // Function BP_KeyCombination.BP_KeyCombination_C.Add(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void Equal(struct TArray<Unknown>& Combination, char& Result); // Function BP_KeyCombination.BP_KeyCombination_C.Equal(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void Equal(struct TArray<Unknown>& Conflicts, char& Result); // Function BP_KeyCombination.BP_KeyCombination_C.Equal(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void Evaluate(struct Unknown Player, char& Is, char& Just, char& Just); // Function BP_KeyCombination.BP_KeyCombination_C.Evaluate(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void Clear(); // Function BP_KeyCombination.BP_KeyCombination_C.Clear(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void Add(struct Unknown Conflicted, char Conflicted); // Function BP_KeyCombination.BP_KeyCombination_C.Add(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void Detect(struct Unknown Input, char& Conflict); // Function BP_KeyCombination.BP_KeyCombination_C.Detect(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void Replace(struct TArray<Unknown>& Key); // Function BP_KeyCombination.BP_KeyCombination_C.Replace(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void Load(struct Unknown Game, struct FString Action, struct FString Category, struct FString Name, char Primary); // Function BP_KeyCombination.BP_KeyCombination_C.Load(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void Save(struct Unknown Game, struct Unknown& KeySave); // Function BP_KeyCombination.BP_KeyCombination_C.Save(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void Key(struct Unknown Player, char Ignore, float& Axis, char& Is, char& Just, char& Just); // Function BP_KeyCombination.BP_KeyCombination_C.Key(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void Init(struct FString Name, char Can, struct TArray<Unknown>& Key, struct Unknown& Combination); // Function BP_KeyCombination.BP_KeyCombination_C.Init(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void Combination(struct Unknown Combination); // Function BP_KeyCombination.BP_KeyCombination_C.Combination(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void Get Key Combination Display Name(struct FString Separator, struct FString No Key Display, char Display Type, struct FString& Display Name); // Function BP_KeyCombination.BP_KeyCombination_C.Get Key Combination Display Name(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void Add Key Input(struct Unknown InputPin, struct Unknown& Input); // Function BP_KeyCombination.BP_KeyCombination_C.Add Key Input(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void Equal All Keys(struct TArray<Unknown>& Combination, char& Result); // Function BP_KeyCombination.BP_KeyCombination_C.Equal All Keys(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void Equal All Conflicts(struct TArray<Unknown>& Conflicts, char& Result); // Function BP_KeyCombination.BP_KeyCombination_C.Equal All Conflicts(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void Evaluate Blocking Combinations(struct Unknown Player Controller, char& Is Active, char& Just Pressed, char& Just Released); // Function BP_KeyCombination.BP_KeyCombination_C.Evaluate Blocking Combinations(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void Clear Conflicting Combinations(); // Function BP_KeyCombination.BP_KeyCombination_C.Clear Conflicting Combinations(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void Add Conflicting Combination(struct Unknown Conflicted Combination, char Conflicted ); // Function BP_KeyCombination.BP_KeyCombination_C.Add Conflicting Combination(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void Detect Conflict(struct Unknown Input Combination, char& Conflict Type); // Function BP_KeyCombination.BP_KeyCombination_C.Detect Conflict(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void Replace Key Combination(struct TArray<Unknown>& Key Combination); // Function BP_KeyCombination.BP_KeyCombination_C.Replace Key Combination(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void Load Key Combination(struct Unknown Game Settings, struct FString Action Name, struct FString Category, struct FString Name, char Primary); // Function BP_KeyCombination.BP_KeyCombination_C.Load Key Combination(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void Save Key Combination(struct Unknown Game Settings, struct Unknown& KeySave); // Function BP_KeyCombination.BP_KeyCombination_C.Save Key Combination(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void Key Combination Current State(struct Unknown Player Controller, char Ignore Conflicts, float& Axis Value, char& Is Active, char& Just Pressed, char& Just Released); // Function BP_KeyCombination.BP_KeyCombination_C.Key Combination Current State(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void Init Key Combination(struct FString Name, char Can't Be None, struct TArray<Unknown>& Key Combination, struct Unknown& Combination); // Function BP_KeyCombination.BP_KeyCombination_C.Init Key Combination(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void Combination Updated__DelegateSignature(struct Unknown Combination); // Function BP_KeyCombination.BP_KeyCombination_C.Combination Updated__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
 };
 
-// Function BP_KeyCombination.BP_KeyCombination_C.Get
-inline void UBP_KeyCombination_C::Get(struct FString Separator, struct FString No, char Display, struct FString& Display) {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_KeyCombination.BP_KeyCombination_C.Get");
+// Function BP_KeyCombination.BP_KeyCombination_C.Get Key Combination Display Name
+inline void UBP_KeyCombination_C::Get Key Combination Display Name(struct FString Separator, struct FString No Key Display, char Display Type, struct FString& Display Name) {
+	static auto fn = UObject::FindObject<UFunction>("Function BP_KeyCombination.BP_KeyCombination_C.Get Key Combination Display Name");
 
-	struct Get_Params {
+	struct Get Key Combination Display Name_Params {
 		struct FString Separator;
-		struct FString No;
-		char Display;
-		struct FString& Display;
-	}; Get_Params Params;
+		struct FString No Key Display;
+		char Display Type;
+		struct FString& Display Name;
+	}; Get Key Combination Display Name_Params Params;
 
 	Params.Separator = Separator;
-	Params.No = No;
-	Params.Display = Display;
+	Params.No Key Display = No Key Display;
+	Params.Display Type = Display Type;
 
 	auto flags = fn->FunctionFlags;
 	UObject::ProcessEvent(fn, &Params);
 	fn->FunctionFlags = flags;
 
-	Display = Params.Display;
+	Display Name = Params.Display Name;
 
 }
 
-// Function BP_KeyCombination.BP_KeyCombination_C.Add
-inline void UBP_KeyCombination_C::Add(struct Unknown InputPin, struct Unknown& Input) {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_KeyCombination.BP_KeyCombination_C.Add");
+// Function BP_KeyCombination.BP_KeyCombination_C.Add Key Input
+inline void UBP_KeyCombination_C::Add Key Input(struct Unknown InputPin, struct Unknown& Input) {
+	static auto fn = UObject::FindObject<UFunction>("Function BP_KeyCombination.BP_KeyCombination_C.Add Key Input");
 
-	struct Add_Params {
+	struct Add Key Input_Params {
 		struct Unknown InputPin;
 		struct Unknown& Input;
-	}; Add_Params Params;
+	}; Add Key Input_Params Params;
 
 	Params.InputPin = InputPin;
 
@@ -70,14 +70,14 @@ inline void UBP_KeyCombination_C::Add(struct Unknown InputPin, struct Unknown& I
 
 }
 
-// Function BP_KeyCombination.BP_KeyCombination_C.Equal
-inline void UBP_KeyCombination_C::Equal(struct TArray<Unknown>& Combination, char& Result) {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_KeyCombination.BP_KeyCombination_C.Equal");
+// Function BP_KeyCombination.BP_KeyCombination_C.Equal All Keys
+inline void UBP_KeyCombination_C::Equal All Keys(struct TArray<Unknown>& Combination, char& Result) {
+	static auto fn = UObject::FindObject<UFunction>("Function BP_KeyCombination.BP_KeyCombination_C.Equal All Keys");
 
-	struct Equal_Params {
+	struct Equal All Keys_Params {
 		struct TArray<Unknown>& Combination;
 		char& Result;
-	}; Equal_Params Params;
+	}; Equal All Keys_Params Params;
 
 
 	auto flags = fn->FunctionFlags;
@@ -89,14 +89,14 @@ inline void UBP_KeyCombination_C::Equal(struct TArray<Unknown>& Combination, cha
 
 }
 
-// Function BP_KeyCombination.BP_KeyCombination_C.Equal
-inline void UBP_KeyCombination_C::Equal(struct TArray<Unknown>& Conflicts, char& Result) {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_KeyCombination.BP_KeyCombination_C.Equal");
+// Function BP_KeyCombination.BP_KeyCombination_C.Equal All Conflicts
+inline void UBP_KeyCombination_C::Equal All Conflicts(struct TArray<Unknown>& Conflicts, char& Result) {
+	static auto fn = UObject::FindObject<UFunction>("Function BP_KeyCombination.BP_KeyCombination_C.Equal All Conflicts");
 
-	struct Equal_Params {
+	struct Equal All Conflicts_Params {
 		struct TArray<Unknown>& Conflicts;
 		char& Result;
-	}; Equal_Params Params;
+	}; Equal All Conflicts_Params Params;
 
 
 	auto flags = fn->FunctionFlags;
@@ -108,36 +108,36 @@ inline void UBP_KeyCombination_C::Equal(struct TArray<Unknown>& Conflicts, char&
 
 }
 
-// Function BP_KeyCombination.BP_KeyCombination_C.Evaluate
-inline void UBP_KeyCombination_C::Evaluate(struct Unknown Player, char& Is, char& Just, char& Just) {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_KeyCombination.BP_KeyCombination_C.Evaluate");
+// Function BP_KeyCombination.BP_KeyCombination_C.Evaluate Blocking Combinations
+inline void UBP_KeyCombination_C::Evaluate Blocking Combinations(struct Unknown Player Controller, char& Is Active, char& Just Pressed, char& Just Released) {
+	static auto fn = UObject::FindObject<UFunction>("Function BP_KeyCombination.BP_KeyCombination_C.Evaluate Blocking Combinations");
 
-	struct Evaluate_Params {
-		struct Unknown Player;
-		char& Is;
-		char& Just;
-		char& Just;
-	}; Evaluate_Params Params;
+	struct Evaluate Blocking Combinations_Params {
+		struct Unknown Player Controller;
+		char& Is Active;
+		char& Just Pressed;
+		char& Just Released;
+	}; Evaluate Blocking Combinations_Params Params;
 
-	Params.Player = Player;
+	Params.Player Controller = Player Controller;
 
 	auto flags = fn->FunctionFlags;
 	UObject::ProcessEvent(fn, &Params);
 	fn->FunctionFlags = flags;
 
-	Is = Params.Is;
-	Just = Params.Just;
-	Just = Params.Just;
+	Is Active = Params.Is Active;
+	Just Pressed = Params.Just Pressed;
+	Just Released = Params.Just Released;
 
 }
 
-// Function BP_KeyCombination.BP_KeyCombination_C.Clear
-inline void UBP_KeyCombination_C::Clear() {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_KeyCombination.BP_KeyCombination_C.Clear");
+// Function BP_KeyCombination.BP_KeyCombination_C.Clear Conflicting Combinations
+inline void UBP_KeyCombination_C::Clear Conflicting Combinations() {
+	static auto fn = UObject::FindObject<UFunction>("Function BP_KeyCombination.BP_KeyCombination_C.Clear Conflicting Combinations");
 
-	struct Clear_Params {
+	struct Clear Conflicting Combinations_Params {
 		
-	}; Clear_Params Params;
+	}; Clear Conflicting Combinations_Params Params;
 
 
 	auto flags = fn->FunctionFlags;
@@ -145,73 +145,73 @@ inline void UBP_KeyCombination_C::Clear() {
 	fn->FunctionFlags = flags;
 }
 
-// Function BP_KeyCombination.BP_KeyCombination_C.Add
-inline void UBP_KeyCombination_C::Add(struct Unknown Conflicted, char Conflicted) {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_KeyCombination.BP_KeyCombination_C.Add");
+// Function BP_KeyCombination.BP_KeyCombination_C.Add Conflicting Combination
+inline void UBP_KeyCombination_C::Add Conflicting Combination(struct Unknown Conflicted Combination, char Conflicted ) {
+	static auto fn = UObject::FindObject<UFunction>("Function BP_KeyCombination.BP_KeyCombination_C.Add Conflicting Combination");
 
-	struct Add_Params {
-		struct Unknown Conflicted;
-		char Conflicted;
-	}; Add_Params Params;
+	struct Add Conflicting Combination_Params {
+		struct Unknown Conflicted Combination;
+		char Conflicted ;
+	}; Add Conflicting Combination_Params Params;
 
-	Params.Conflicted = Conflicted;
-	Params.Conflicted = Conflicted;
+	Params.Conflicted Combination = Conflicted Combination;
+	Params.Conflicted  = Conflicted ;
 
 	auto flags = fn->FunctionFlags;
 	UObject::ProcessEvent(fn, &Params);
 	fn->FunctionFlags = flags;
 }
 
-// Function BP_KeyCombination.BP_KeyCombination_C.Detect
-inline void UBP_KeyCombination_C::Detect(struct Unknown Input, char& Conflict) {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_KeyCombination.BP_KeyCombination_C.Detect");
+// Function BP_KeyCombination.BP_KeyCombination_C.Detect Conflict
+inline void UBP_KeyCombination_C::Detect Conflict(struct Unknown Input Combination, char& Conflict Type) {
+	static auto fn = UObject::FindObject<UFunction>("Function BP_KeyCombination.BP_KeyCombination_C.Detect Conflict");
 
-	struct Detect_Params {
-		struct Unknown Input;
-		char& Conflict;
-	}; Detect_Params Params;
+	struct Detect Conflict_Params {
+		struct Unknown Input Combination;
+		char& Conflict Type;
+	}; Detect Conflict_Params Params;
 
-	Params.Input = Input;
-
-	auto flags = fn->FunctionFlags;
-	UObject::ProcessEvent(fn, &Params);
-	fn->FunctionFlags = flags;
-
-	Conflict = Params.Conflict;
-
-}
-
-// Function BP_KeyCombination.BP_KeyCombination_C.Replace
-inline void UBP_KeyCombination_C::Replace(struct TArray<Unknown>& Key) {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_KeyCombination.BP_KeyCombination_C.Replace");
-
-	struct Replace_Params {
-		struct TArray<Unknown>& Key;
-	}; Replace_Params Params;
-
+	Params.Input Combination = Input Combination;
 
 	auto flags = fn->FunctionFlags;
 	UObject::ProcessEvent(fn, &Params);
 	fn->FunctionFlags = flags;
 
-	Key = Params.Key;
+	Conflict Type = Params.Conflict Type;
 
 }
 
-// Function BP_KeyCombination.BP_KeyCombination_C.Load
-inline void UBP_KeyCombination_C::Load(struct Unknown Game, struct FString Action, struct FString Category, struct FString Name, char Primary) {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_KeyCombination.BP_KeyCombination_C.Load");
+// Function BP_KeyCombination.BP_KeyCombination_C.Replace Key Combination
+inline void UBP_KeyCombination_C::Replace Key Combination(struct TArray<Unknown>& Key Combination) {
+	static auto fn = UObject::FindObject<UFunction>("Function BP_KeyCombination.BP_KeyCombination_C.Replace Key Combination");
 
-	struct Load_Params {
-		struct Unknown Game;
-		struct FString Action;
+	struct Replace Key Combination_Params {
+		struct TArray<Unknown>& Key Combination;
+	}; Replace Key Combination_Params Params;
+
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+
+	Key Combination = Params.Key Combination;
+
+}
+
+// Function BP_KeyCombination.BP_KeyCombination_C.Load Key Combination
+inline void UBP_KeyCombination_C::Load Key Combination(struct Unknown Game Settings, struct FString Action Name, struct FString Category, struct FString Name, char Primary) {
+	static auto fn = UObject::FindObject<UFunction>("Function BP_KeyCombination.BP_KeyCombination_C.Load Key Combination");
+
+	struct Load Key Combination_Params {
+		struct Unknown Game Settings;
+		struct FString Action Name;
 		struct FString Category;
 		struct FString Name;
 		char Primary;
-	}; Load_Params Params;
+	}; Load Key Combination_Params Params;
 
-	Params.Game = Game;
-	Params.Action = Action;
+	Params.Game Settings = Game Settings;
+	Params.Action Name = Action Name;
 	Params.Category = Category;
 	Params.Name = Name;
 	Params.Primary = Primary;
@@ -221,16 +221,16 @@ inline void UBP_KeyCombination_C::Load(struct Unknown Game, struct FString Actio
 	fn->FunctionFlags = flags;
 }
 
-// Function BP_KeyCombination.BP_KeyCombination_C.Save
-inline void UBP_KeyCombination_C::Save(struct Unknown Game, struct Unknown& KeySave) {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_KeyCombination.BP_KeyCombination_C.Save");
+// Function BP_KeyCombination.BP_KeyCombination_C.Save Key Combination
+inline void UBP_KeyCombination_C::Save Key Combination(struct Unknown Game Settings, struct Unknown& KeySave) {
+	static auto fn = UObject::FindObject<UFunction>("Function BP_KeyCombination.BP_KeyCombination_C.Save Key Combination");
 
-	struct Save_Params {
-		struct Unknown Game;
+	struct Save Key Combination_Params {
+		struct Unknown Game Settings;
 		struct Unknown& KeySave;
-	}; Save_Params Params;
+	}; Save Key Combination_Params Params;
 
-	Params.Game = Game;
+	Params.Game Settings = Game Settings;
 
 	auto flags = fn->FunctionFlags;
 	UObject::ProcessEvent(fn, &Params);
@@ -240,63 +240,63 @@ inline void UBP_KeyCombination_C::Save(struct Unknown Game, struct Unknown& KeyS
 
 }
 
-// Function BP_KeyCombination.BP_KeyCombination_C.Key
-inline void UBP_KeyCombination_C::Key(struct Unknown Player, char Ignore, float& Axis, char& Is, char& Just, char& Just) {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_KeyCombination.BP_KeyCombination_C.Key");
+// Function BP_KeyCombination.BP_KeyCombination_C.Key Combination Current State
+inline void UBP_KeyCombination_C::Key Combination Current State(struct Unknown Player Controller, char Ignore Conflicts, float& Axis Value, char& Is Active, char& Just Pressed, char& Just Released) {
+	static auto fn = UObject::FindObject<UFunction>("Function BP_KeyCombination.BP_KeyCombination_C.Key Combination Current State");
 
-	struct Key_Params {
-		struct Unknown Player;
-		char Ignore;
-		float& Axis;
-		char& Is;
-		char& Just;
-		char& Just;
-	}; Key_Params Params;
+	struct Key Combination Current State_Params {
+		struct Unknown Player Controller;
+		char Ignore Conflicts;
+		float& Axis Value;
+		char& Is Active;
+		char& Just Pressed;
+		char& Just Released;
+	}; Key Combination Current State_Params Params;
 
-	Params.Player = Player;
-	Params.Ignore = Ignore;
+	Params.Player Controller = Player Controller;
+	Params.Ignore Conflicts = Ignore Conflicts;
 
 	auto flags = fn->FunctionFlags;
 	UObject::ProcessEvent(fn, &Params);
 	fn->FunctionFlags = flags;
 
-	Axis = Params.Axis;
-	Is = Params.Is;
-	Just = Params.Just;
-	Just = Params.Just;
+	Axis Value = Params.Axis Value;
+	Is Active = Params.Is Active;
+	Just Pressed = Params.Just Pressed;
+	Just Released = Params.Just Released;
 
 }
 
-// Function BP_KeyCombination.BP_KeyCombination_C.Init
-inline void UBP_KeyCombination_C::Init(struct FString Name, char Can, struct TArray<Unknown>& Key, struct Unknown& Combination) {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_KeyCombination.BP_KeyCombination_C.Init");
+// Function BP_KeyCombination.BP_KeyCombination_C.Init Key Combination
+inline void UBP_KeyCombination_C::Init Key Combination(struct FString Name, char Can't Be None, struct TArray<Unknown>& Key Combination, struct Unknown& Combination) {
+	static auto fn = UObject::FindObject<UFunction>("Function BP_KeyCombination.BP_KeyCombination_C.Init Key Combination");
 
-	struct Init_Params {
+	struct Init Key Combination_Params {
 		struct FString Name;
-		char Can;
-		struct TArray<Unknown>& Key;
+		char Can't Be None;
+		struct TArray<Unknown>& Key Combination;
 		struct Unknown& Combination;
-	}; Init_Params Params;
+	}; Init Key Combination_Params Params;
 
 	Params.Name = Name;
-	Params.Can = Can;
+	Params.Can't Be None = Can't Be None;
 
 	auto flags = fn->FunctionFlags;
 	UObject::ProcessEvent(fn, &Params);
 	fn->FunctionFlags = flags;
 
-	Key = Params.Key;
+	Key Combination = Params.Key Combination;
 	Combination = Params.Combination;
 
 }
 
-// Function BP_KeyCombination.BP_KeyCombination_C.Combination
-inline void UBP_KeyCombination_C::Combination(struct Unknown Combination) {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_KeyCombination.BP_KeyCombination_C.Combination");
+// Function BP_KeyCombination.BP_KeyCombination_C.Combination Updated__DelegateSignature
+inline void UBP_KeyCombination_C::Combination Updated__DelegateSignature(struct Unknown Combination) {
+	static auto fn = UObject::FindObject<UFunction>("Function BP_KeyCombination.BP_KeyCombination_C.Combination Updated__DelegateSignature");
 
-	struct Combination_Params {
+	struct Combination Updated__DelegateSignature_Params {
 		struct Unknown Combination;
-	}; Combination_Params Params;
+	}; Combination Updated__DelegateSignature_Params Params;
 
 	Params.Combination = Combination;
 

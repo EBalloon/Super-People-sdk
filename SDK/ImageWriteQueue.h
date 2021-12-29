@@ -1,10 +1,10 @@
 // Enum ImageWriteQueue.EDesiredImageFormat
 enum class EDesiredImageFormat : uint8_t {
-	EDesiredImageFormat = 0,
-	EDesiredImageFormat = 1,
-	EDesiredImageFormat = 2,
-	EDesiredImageFormat = 3,
-	EDesiredImageFormat = 4,
+	PNG = 0,
+	JPG = 1,
+	BMP = 2,
+	EXR = 3,
+	EDesiredImageFormat_MAX = 4,
 };
 
 // ScriptStruct ImageWriteQueue.ImageWriteOptions

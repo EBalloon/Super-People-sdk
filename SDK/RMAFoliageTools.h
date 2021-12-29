@@ -1,8 +1,8 @@
 // Enum RMAFoliageTools.ERMAFoliageToolsIncludeMode
 enum class ERMAFoliageToolsIncludeMode : uint8_t {
-	ERMAFoliageToolsIncludeMode = 0,
-	ERMAFoliageToolsIncludeMode = 1,
-	ERMAFoliageToolsIncludeMode = 2,
+	RMAIM_All = 0,
+	RMAIM_Selection = 1,
+	RMAIM_MAX = 2,
 };
 
 // ScriptStruct RMAFoliageTools.RMAFoliageToolsBuffer

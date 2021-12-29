@@ -16,9 +16,9 @@ public:
 	struct Unknown Image_318; // 0x298 (8)
 	struct Unknown Image_319; // 0x2A0 (8)
 
-	void GetImage(int32_t Index, struct Unknown& Image); // Function Temp.Temp_C.GetImage(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void Set(struct TArray<Unknown>& List); // Function Temp.Temp_C.Set(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void ExecuteUbergraph_Temp(int32_t EntryPoint); // Function Temp.Temp_C.ExecuteUbergraph_Temp(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void GetImage(int32_t Index, struct Unknown& Image); // Function Temp.Temp_C.GetImage(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void Set Info(struct TArray<Unknown>& List); // Function Temp.Temp_C.Set Info(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void ExecuteUbergraph_Temp(int32_t EntryPoint); // Function Temp.Temp_C.ExecuteUbergraph_Temp(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
 };
 
 // Function Temp.Temp_C.GetImage
@@ -40,13 +40,13 @@ inline void UTemp_C::GetImage(int32_t Index, struct Unknown& Image) {
 
 }
 
-// Function Temp.Temp_C.Set
-inline void UTemp_C::Set(struct TArray<Unknown>& List) {
-	static auto fn = UObject::FindObject<UFunction>("Function Temp.Temp_C.Set");
+// Function Temp.Temp_C.Set Info
+inline void UTemp_C::Set Info(struct TArray<Unknown>& List) {
+	static auto fn = UObject::FindObject<UFunction>("Function Temp.Temp_C.Set Info");
 
-	struct Set_Params {
+	struct Set Info_Params {
 		struct TArray<Unknown>& List;
-	}; Set_Params Params;
+	}; Set Info_Params Params;
 
 
 	auto flags = fn->FunctionFlags;

@@ -1,29 +1,29 @@
 // Enum OnlineSubsystem.EInAppPurchaseState
 enum class EInAppPurchaseState : uint8_t {
-	EInAppPurchaseState = 0,
-	EInAppPurchaseState = 1,
-	EInAppPurchaseState = 2,
-	EInAppPurchaseState = 3,
-	EInAppPurchaseState = 4,
-	EInAppPurchaseState = 5,
-	EInAppPurchaseState = 6,
-	EInAppPurchaseState = 7,
-	EInAppPurchaseState = 8,
+	Unknown = 0,
+	Success = 1,
+	Failed = 2,
+	Cancelled = 3,
+	Invalid = 4,
+	NotAllowed = 5,
+	Restored = 6,
+	AlreadyOwned = 7,
+	EInAppPurchaseState_MAX = 8,
 };
 
 // Enum OnlineSubsystem.EMPMatchOutcome
 enum class EMPMatchOutcome : uint8_t {
-	EMPMatchOutcome = 0,
-	EMPMatchOutcome = 1,
-	EMPMatchOutcome = 2,
-	EMPMatchOutcome = 3,
-	EMPMatchOutcome = 4,
-	EMPMatchOutcome = 5,
-	EMPMatchOutcome = 6,
-	EMPMatchOutcome = 7,
-	EMPMatchOutcome = 8,
-	EMPMatchOutcome = 9,
-	EMPMatchOutcome = 10,
+	None = 0,
+	Quit = 1,
+	Won = 2,
+	Lost = 3,
+	Tied = 4,
+	TimeExpired = 5,
+	First = 6,
+	Second = 7,
+	Third = 8,
+	Fourth = 9,
+	EMPMatchOutcome_MAX = 10,
 };
 
 // Class OnlineSubsystem.NamedInterfaces

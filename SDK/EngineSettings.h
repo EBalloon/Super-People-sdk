@@ -1,32 +1,32 @@
 // Enum EngineSettings.ESubLevelStripMode
 enum class ESubLevelStripMode : uint8_t {
-	ESubLevelStripMode = 0,
-	ESubLevelStripMode = 1,
-	ESubLevelStripMode = 2,
+	ExactClass = 0,
+	IsChildOf = 1,
+	ESubLevelStripMode_MAX = 2,
 };
 
 // Enum EngineSettings.EFourPlayerSplitScreenType
 enum class EFourPlayerSplitScreenType : uint8_t {
-	EFourPlayerSplitScreenType = 0,
-	EFourPlayerSplitScreenType = 1,
-	EFourPlayerSplitScreenType = 2,
-	EFourPlayerSplitScreenType = 3,
+	Grid = 0,
+	Vertical = 1,
+	Horizontal = 2,
+	EFourPlayerSplitScreenType_MAX = 3,
 };
 
 // Enum EngineSettings.EThreePlayerSplitScreenType
 enum class EThreePlayerSplitScreenType : uint8_t {
-	EThreePlayerSplitScreenType = 0,
-	EThreePlayerSplitScreenType = 1,
-	EThreePlayerSplitScreenType = 2,
-	EThreePlayerSplitScreenType = 3,
-	EThreePlayerSplitScreenType = 4,
+	FavorTop = 0,
+	FavorBottom = 1,
+	Vertical = 2,
+	Horizontal = 3,
+	EThreePlayerSplitScreenType_MAX = 4,
 };
 
 // Enum EngineSettings.ETwoPlayerSplitScreenType
 enum class ETwoPlayerSplitScreenType : uint8_t {
-	ETwoPlayerSplitScreenType = 0,
-	ETwoPlayerSplitScreenType = 1,
-	ETwoPlayerSplitScreenType = 2,
+	Horizontal = 0,
+	Vertical = 1,
+	ETwoPlayerSplitScreenType_MAX = 2,
 };
 
 // Class EngineSettings.ConsoleSettings
@@ -68,9 +68,9 @@ public:
 	struct TArray<Unknown> GameModeMapPrefixes; // 0xE8 (16)
 	struct TArray<Unknown> GameModeClassAliases; // 0xF8 (16)
 
-	void SetSkipAssigningGamepadToPlayer1(char bSkipFirstPlayer); // Function EngineSettings.GameMapsSettings.SetSkipAssigningGamepadToPlayer1(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2C2AAF0>
-	char GetSkipAssigningGamepadToPlayer1(); // Function EngineSettings.GameMapsSettings.GetSkipAssigningGamepadToPlayer1(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2C2AAC0>
-	struct Unknown GetGameMapsSettings(); // Function EngineSettings.GameMapsSettings.GetGameMapsSettings(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2C2AA90>
+	void SetSkipAssigningGamepadToPlayer1(char bSkipFirstPlayer); // Function EngineSettings.GameMapsSettings.SetSkipAssigningGamepadToPlayer1(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33E59C0>
+	char GetSkipAssigningGamepadToPlayer1(); // Function EngineSettings.GameMapsSettings.GetSkipAssigningGamepadToPlayer1(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33E5990>
+	struct Unknown GetGameMapsSettings(); // Function EngineSettings.GameMapsSettings.GetGameMapsSettings(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33E5960>
 };
 
 // Class EngineSettings.GameNetworkManagerSettings

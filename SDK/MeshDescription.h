@@ -1,10 +1,10 @@
 // Enum MeshDescription.EComputeNTBsOptions
 enum class EComputeNTBsOptions : uint8_t {
-	EComputeNTBsOptions = 0,
-	EComputeNTBsOptions = 1,
-	EComputeNTBsOptions = 2,
-	EComputeNTBsOptions = 4,
-	EComputeNTBsOptions = 5,
+	None = 0,
+	Normals = 1,
+	Tangents = 2,
+	WeightedNTBs = 4,
+	EComputeNTBsOptions_MAX = 5,
 };
 
 // ScriptStruct MeshDescription.ElementID

@@ -1,8 +1,8 @@
 // UserDefinedEnum ENiagaraCoordinateSpace.ENiagaraCoordinateSpace
 enum class ENiagaraCoordinateSpace : uint8_t {
-	ENiagaraCoordinateSpace = 0,
-	ENiagaraCoordinateSpace = 1,
-	ENiagaraCoordinateSpace = 2,
-	ENiagaraCoordinateSpace = 3,
+	NewEnumerator0 = 0,
+	NewEnumerator1 = 1,
+	NewEnumerator2 = 2,
+	ENiagaraCoordinateSpace_MAX = 3,
 };
 

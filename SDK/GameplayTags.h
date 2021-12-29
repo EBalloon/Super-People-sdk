@@ -1,47 +1,47 @@
 // Enum GameplayTags.EGameplayTagQueryExprType
 enum class EGameplayTagQueryExprType : uint8_t {
-	EGameplayTagQueryExprType = 0,
-	EGameplayTagQueryExprType = 1,
-	EGameplayTagQueryExprType = 2,
-	EGameplayTagQueryExprType = 3,
-	EGameplayTagQueryExprType = 4,
-	EGameplayTagQueryExprType = 5,
-	EGameplayTagQueryExprType = 6,
-	EGameplayTagQueryExprType = 7,
+	Undefined = 0,
+	AnyTagsMatch = 1,
+	AllTagsMatch = 2,
+	NoTagsMatch = 3,
+	AnyExprMatch = 4,
+	AllExprMatch = 5,
+	NoExprMatch = 6,
+	EGameplayTagQueryExprType_MAX = 7,
 };
 
 // Enum GameplayTags.EGameplayContainerMatchType
 enum class EGameplayContainerMatchType : uint8_t {
-	EGameplayContainerMatchType = 0,
-	EGameplayContainerMatchType = 1,
-	EGameplayContainerMatchType = 2,
+	Any = 0,
+	All = 1,
+	EGameplayContainerMatchType_MAX = 2,
 };
 
 // Enum GameplayTags.EGameplayTagMatchType
 enum class EGameplayTagMatchType : uint8_t {
-	EGameplayTagMatchType = 0,
-	EGameplayTagMatchType = 1,
-	EGameplayTagMatchType = 2,
+	Explicit = 0,
+	IncludeParentTags = 1,
+	EGameplayTagMatchType_MAX = 2,
 };
 
 // Enum GameplayTags.EGameplayTagSelectionType
 enum class EGameplayTagSelectionType : uint8_t {
-	EGameplayTagSelectionType = 0,
-	EGameplayTagSelectionType = 1,
-	EGameplayTagSelectionType = 2,
-	EGameplayTagSelectionType = 3,
-	EGameplayTagSelectionType = 4,
+	None = 0,
+	NonRestrictedOnly = 1,
+	RestrictedOnly = 2,
+	All = 3,
+	EGameplayTagSelectionType_MAX = 4,
 };
 
 // Enum GameplayTags.EGameplayTagSourceType
 enum class EGameplayTagSourceType : uint8_t {
-	EGameplayTagSourceType = 0,
-	EGameplayTagSourceType = 1,
-	EGameplayTagSourceType = 2,
-	EGameplayTagSourceType = 3,
-	EGameplayTagSourceType = 4,
-	EGameplayTagSourceType = 5,
-	EGameplayTagSourceType = 6,
+	Native = 0,
+	DefaultTagList = 1,
+	TagList = 2,
+	RestrictedTagList = 3,
+	DataTable = 4,
+	Invalid = 5,
+	EGameplayTagSourceType_MAX = 6,
 };
 
 // Class GameplayTags.EditableGameplayTagQuery

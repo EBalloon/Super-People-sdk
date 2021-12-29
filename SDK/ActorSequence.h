@@ -1,9 +1,9 @@
 // Enum ActorSequence.EActorSequenceObjectReferenceType
 enum class EActorSequenceObjectReferenceType : uint8_t {
-	EActorSequenceObjectReferenceType = 0,
-	EActorSequenceObjectReferenceType = 1,
-	EActorSequenceObjectReferenceType = 2,
-	EActorSequenceObjectReferenceType = 3,
+	ContextActor = 0,
+	ExternalActor = 1,
+	Component = 2,
+	EActorSequenceObjectReferenceType_MAX = 3,
 };
 
 // Class ActorSequence.ActorSequence

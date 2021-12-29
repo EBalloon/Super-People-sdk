@@ -1,28 +1,28 @@
 // Enum RTXGI.EDDGIRaysPerProbe
 enum class EDDGIRaysPerProbe : uint8_t {
-	EDDGIRaysPerProbe = 0,
-	EDDGIRaysPerProbe = 1,
-	EDDGIRaysPerProbe = 2,
-	EDDGIRaysPerProbe = 3,
-	EDDGIRaysPerProbe = 4,
-	EDDGIRaysPerProbe = 5,
-	EDDGIRaysPerProbe = 6,
-	EDDGIRaysPerProbe = 7,
-	EDDGIRaysPerProbe = 8,
+	n144 = 0,
+	n288 = 1,
+	n432 = 2,
+	n576 = 3,
+	n720 = 4,
+	n864 = 5,
+	n1008 = 6,
+	Count = 7,
+	EDDGIRaysPerProbe_MAX = 8,
 };
 
 // Enum RTXGI.EDDGIDistanceBits
 enum class EDDGIDistanceBits : uint8_t {
-	EDDGIDistanceBits = 0,
-	EDDGIDistanceBits = 1,
-	EDDGIDistanceBits = 2,
+	n16 = 0,
+	n32 = 1,
+	EDDGIDistanceBits_MAX = 2,
 };
 
 // Enum RTXGI.EDDGIIrradianceBits
 enum class EDDGIIrradianceBits : uint8_t {
-	EDDGIIrradianceBits = 0,
-	EDDGIIrradianceBits = 1,
-	EDDGIIrradianceBits = 2,
+	n10 = 0,
+	n32 = 1,
+	EDDGIIrradianceBits_MAX = 2,
 };
 
 // Class RTXGI.DDGIVolume
@@ -68,7 +68,7 @@ public:
 	struct Unknown LastOrigin; // 0x2A8 (12)
 	struct Unknown ProbeScrollOffset; // 0x2B4 (12)
 
-	void DDGIClearVolumes(); // Function RTXGI.DDGIVolumeComponent.DDGIClearVolumes(Final|Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x164F730>
+	void DDGIClearVolumes(); // Function RTXGI.DDGIVolumeComponent.DDGIClearVolumes(Final|Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16600C0>
 };
 
 // Class RTXGI.RTXGIPluginSettings

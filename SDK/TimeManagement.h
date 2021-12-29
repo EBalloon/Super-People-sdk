@@ -1,27 +1,27 @@
 // Enum TimeManagement.EFrameNumberDisplayFormats
 enum class EFrameNumberDisplayFormats : uint8_t {
-	EFrameNumberDisplayFormats = 0,
-	EFrameNumberDisplayFormats = 1,
-	EFrameNumberDisplayFormats = 2,
-	EFrameNumberDisplayFormats = 3,
-	EFrameNumberDisplayFormats = 4,
-	EFrameNumberDisplayFormats = 5,
+	NonDropFrameTimecode = 0,
+	DropFrameTimecode = 1,
+	Seconds = 2,
+	Frames = 3,
+	MAX_Count = 4,
+	EFrameNumberDisplayFormats_MAX = 5,
 };
 
 // Enum TimeManagement.ETimedDataInputState
 enum class ETimedDataInputState : uint8_t {
-	ETimedDataInputState = 0,
-	ETimedDataInputState = 1,
-	ETimedDataInputState = 2,
-	ETimedDataInputState = 3,
+	Connected = 0,
+	Unresponsive = 1,
+	Disconnected = 2,
+	ETimedDataInputState_MAX = 3,
 };
 
 // Enum TimeManagement.ETimedDataInputEvaluationType
 enum class ETimedDataInputEvaluationType : uint8_t {
-	ETimedDataInputEvaluationType = 0,
-	ETimedDataInputEvaluationType = 1,
-	ETimedDataInputEvaluationType = 2,
-	ETimedDataInputEvaluationType = 3,
+	None = 0,
+	Timecode = 1,
+	PlatformTime = 2,
+	ETimedDataInputEvaluationType_MAX = 3,
 };
 
 // Class TimeManagement.FixedFrameRateCustomTimeStep

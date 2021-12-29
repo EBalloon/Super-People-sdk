@@ -6,16 +6,16 @@ enum class EPrefabVariantRuleType : uint8_t {
 
 // Enum PrefabAsset.EPTUITheme
 enum class EPTUITheme : uint8_t {
-	EPTUITheme = 0,
-	EPTUITheme = 1,
-	EPTUITheme = 2,
+	Default = 0,
+	Dark = 1,
+	EPTUITheme_MAX = 2,
 };
 
 // Enum PrefabAsset.EPrefabVisualizerType
 enum class EPrefabVisualizerType : uint8_t {
-	EPrefabVisualizerType = 0,
-	EPrefabVisualizerType = 1,
-	EPrefabVisualizerType = 2,
+	WireBox = 0,
+	WireSphere = 1,
+	EPrefabVisualizerType_MAX = 2,
 };
 
 // Class PrefabAsset.PrefabToolActor
@@ -25,12 +25,12 @@ public:
 
 	struct Unknown PrefabComponent; // 0x310 (8)
 
-	void SetPrefab(struct Unknown NewPrefab, char bForceRevertEvenDisconnected); // Function PrefabAsset.PrefabToolActor.SetPrefab(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124E410>
-	void SetMobility(char InMobility); // Function PrefabAsset.PrefabToolActor.SetMobility(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124E390>
-	char IsConnected(); // Function PrefabAsset.PrefabToolActor.IsConnected(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124E360>
-	struct FString GetPrefabAssetName(); // Function PrefabAsset.PrefabToolActor.GetPrefabAssetName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124E0C0>
-	struct Unknown GetPrefab(); // Function PrefabAsset.PrefabToolActor.GetPrefab(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124E090>
-	void DestroyPrefabActor(char bDestroyAttachedChildren); // Function PrefabAsset.PrefabToolActor.DestroyPrefabActor(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124E000>
+	void SetPrefab(struct Unknown NewPrefab, char bForceRevertEvenDisconnected); // Function PrefabAsset.PrefabToolActor.SetPrefab(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x125EDC0>
+	void SetMobility(char InMobility); // Function PrefabAsset.PrefabToolActor.SetMobility(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x125ED40>
+	char IsConnected(); // Function PrefabAsset.PrefabToolActor.IsConnected(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x125ED10>
+	struct FString GetPrefabAssetName(); // Function PrefabAsset.PrefabToolActor.GetPrefabAssetName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x125EA70>
+	struct Unknown GetPrefab(); // Function PrefabAsset.PrefabToolActor.GetPrefab(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x125EA40>
+	void DestroyPrefabActor(char bDestroyAttachedChildren); // Function PrefabAsset.PrefabToolActor.DestroyPrefabActor(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x125E9B0>
 };
 
 // Class PrefabAsset.PrefabAsset
@@ -47,8 +47,8 @@ public:
 	int32_t NumActors; // 0xD8 (4)
 	struct Unknown PrefabPivot; // 0xDC (12)
 
-	void SetSimplifiedMeshAssetReference(struct Unknown& InAssetReference); // Function PrefabAsset.PrefabAsset.SetSimplifiedMeshAssetReference(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124E4E0>
-	struct FString GetPrefabHash(); // Function PrefabAsset.PrefabAsset.GetPrefabHash(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124E140>
+	void SetSimplifiedMeshAssetReference(struct Unknown& InAssetReference); // Function PrefabAsset.PrefabAsset.SetSimplifiedMeshAssetReference(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x125EE90>
+	struct FString GetPrefabHash(); // Function PrefabAsset.PrefabAsset.GetPrefabHash(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x125EAF0>
 };
 
 // Class PrefabAsset.PrefabVariantAsset
@@ -128,7 +128,7 @@ public:
 	char bSupportGenerateBlueprint : 0; // 0x118 (1)
 	char bHarvestComponentsWhenGeneratingBlueprint : 0; // 0x119 (1)
 	char bUseActorNameAsVariableNameWhenGeneratingBlueprint : 0; // 0x11A (1)
-	char bForceMobilityToMoveprint : 0; // 0x11B (1)
+	char bForceMobilityToMovableWhenGeneratingBlueprint : 0; // 0x11B (1)
 	struct TArray<Unknown> IgnoreActorClassesWhenGeneratingBlueprint; // 0x120 (16)
 	struct TArray<Unknown> IgnoreActorTagsWhenGeneratingBlueprint; // 0x130 (16)
 	char bFlashPrefabWindowForTargetPrefabActor : 0; // 0x140 (1)

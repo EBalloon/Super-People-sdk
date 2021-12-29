@@ -1,12 +1,12 @@
 // Enum ChaosSolverEngine.EClusterConnectionTypeEnum
 enum class EClusterConnectionTypeEnum : uint8_t {
-	EClusterConnectionTypeEnum = 0,
-	EClusterConnectionTypeEnum = 1,
-	EClusterConnectionTypeEnum = 2,
-	EClusterConnectionTypeEnum = 3,
-	EClusterConnectionTypeEnum = 4,
-	EClusterConnectionTypeEnum = 5,
-	EClusterConnectionTypeEnum = 6,
+	Chaos_PointImplicit = 0,
+	Chaos_DelaunayTriangulation = 1,
+	Chaos_MinimalSpanningSubsetDelaunayTriangulation = 2,
+	Chaos_PointImplicitAugmentedWithMinimalDelaunay = 3,
+	Chaos_None = 4,
+	Chaos_EClsuterCreationParameters_Max = 5,
+	Chaos_MAX = 6,
 };
 
 // Class ChaosSolverEngine.ChaosGameplayEventDispatcher
@@ -43,8 +43,8 @@ public:
 	struct Unknown SpriteComponent; // 0x370 (8)
 	struct Unknown GameplayEventDispatcherComponent; // 0x390 (8)
 
-	void SetSolverActive(char bActive); // Function ChaosSolverEngine.ChaosSolverActor.SetSolverActive(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x400C6E0>
-	void SetAsCurrentWorldSolver(); // Function ChaosSolverEngine.ChaosSolverActor.SetAsCurrentWorldSolver(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x400C6C0>
+	void SetSolverActive(char bActive); // Function ChaosSolverEngine.ChaosSolverActor.SetSolverActive(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47C7650>
+	void SetAsCurrentWorldSolver(); // Function ChaosSolverEngine.ChaosSolverActor.SetAsCurrentWorldSolver(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47C7630>
 };
 
 // Class ChaosSolverEngine.ChaosSolverSettings

@@ -1,18 +1,18 @@
 // Enum ClothingSystemRuntimeCommon.EClothingWindMethod_Legacy
 enum class EClothingWindMethod_Legacy : uint8_t {
-	EClothingWindMethod_Legacy = 0,
-	EClothingWindMethod_Legacy = 1,
-	EClothingWindMethod_Legacy = 2,
+	Legacy = 0,
+	Accurate = 1,
+	EClothingWindMethod_MAX = 2,
 };
 
 // Enum ClothingSystemRuntimeCommon.EWeightMapTargetCommon
 enum class EWeightMapTargetCommon : uint8_t {
-	EWeightMapTargetCommon = 0,
-	EWeightMapTargetCommon = 1,
-	EWeightMapTargetCommon = 2,
-	EWeightMapTargetCommon = 3,
-	EWeightMapTargetCommon = 4,
-	EWeightMapTargetCommon = 5,
+	None = 0,
+	MaxDistance = 1,
+	BackstopDistance = 2,
+	BackstopRadius = 3,
+	AnimDriveMultiplier = 4,
+	EWeightMapTargetCommon_MAX = 5,
 };
 
 // Class ClothingSystemRuntimeCommon.ClothingAssetCommon

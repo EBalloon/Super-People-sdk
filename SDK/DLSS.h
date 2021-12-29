@@ -1,9 +1,9 @@
 // Enum DLSS.EDLSSSettingOverride
 enum class EDLSSSettingOverride : uint8_t {
-	EDLSSSettingOverride = 0,
-	EDLSSSettingOverride = 1,
-	EDLSSSettingOverride = 2,
-	EDLSSSettingOverride = 3,
+	Enabled = 0,
+	Disabled = 1,
+	UseProjectSettings = 2,
+	EDLSSSettingOverride_MAX = 3,
 };
 
 // Class DLSS.DLSSOverrideSettings

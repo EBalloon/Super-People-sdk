@@ -1,20 +1,20 @@
 // Enum AppleImageUtils.EAppleTextureType
 enum class EAppleTextureType : uint8_t {
-	EAppleTextureType = 0,
-	EAppleTextureType = 1,
-	EAppleTextureType = 2,
-	EAppleTextureType = 3,
-	EAppleTextureType = 4,
-	EAppleTextureType = 5,
+	Unknown = 0,
+	Image = 1,
+	PixelBuffer = 2,
+	Surface = 3,
+	MetalTexture = 4,
+	EAppleTextureType_MAX = 5,
 };
 
 // Enum AppleImageUtils.ETextureRotationDirection
 enum class ETextureRotationDirection : uint8_t {
-	ETextureRotationDirection = 0,
-	ETextureRotationDirection = 1,
-	ETextureRotationDirection = 2,
-	ETextureRotationDirection = 3,
-	ETextureRotationDirection = 4,
+	None = 0,
+	Left = 1,
+	Right = 2,
+	Down = 3,
+	ETextureRotationDirection_MAX = 4,
 };
 
 // Class AppleImageUtils.AppleImageUtilsBaseAsyncTaskBlueprintProxy
@@ -26,10 +26,10 @@ public:
 	struct FMulticastInlineDelegate OnFailure; // 0x40 (16)
 	struct Unknown ConversionResult; // 0x60 (32)
 
-	struct Unknown CreateProxyObjectForConvertToTIFF(struct Unknown SourceImage, char bWantColor, char bUseGpu, float Scale, enum class Unknow Rotate); // Function AppleImageUtils.AppleImageUtilsBaseAsyncTaskBlueprintProxy.CreateProxyObjectForConvertToTIFF(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1850980>
-	struct Unknown CreateProxyObjectForConvertToPNG(struct Unknown SourceImage, char bWantColor, char bUseGpu, float Scale, enum class Unknow Rotate); // Function AppleImageUtils.AppleImageUtilsBaseAsyncTaskBlueprintProxy.CreateProxyObjectForConvertToPNG(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18507E0>
-	struct Unknown CreateProxyObjectForConvertToJPEG(struct Unknown SourceImage, int32_t Quality, char bWantColor, char bUseGpu, float Scale, enum class Unknow Rotate); // Function AppleImageUtils.AppleImageUtilsBaseAsyncTaskBlueprintProxy.CreateProxyObjectForConvertToJPEG(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1850610>
-	struct Unknown CreateProxyObjectForConvertToHEIF(struct Unknown SourceImage, int32_t Quality, char bWantColor, char bUseGpu, float Scale, enum class Unknow Rotate); // Function AppleImageUtils.AppleImageUtilsBaseAsyncTaskBlueprintProxy.CreateProxyObjectForConvertToHEIF(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1850440>
+	struct Unknown CreateProxyObjectForConvertToTIFF(struct Unknown SourceImage, char bWantColor, char bUseGpu, float Scale, enum class Unknow Rotate); // Function AppleImageUtils.AppleImageUtilsBaseAsyncTaskBlueprintProxy.CreateProxyObjectForConvertToTIFF(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18614C0>
+	struct Unknown CreateProxyObjectForConvertToPNG(struct Unknown SourceImage, char bWantColor, char bUseGpu, float Scale, enum class Unknow Rotate); // Function AppleImageUtils.AppleImageUtilsBaseAsyncTaskBlueprintProxy.CreateProxyObjectForConvertToPNG(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1861320>
+	struct Unknown CreateProxyObjectForConvertToJPEG(struct Unknown SourceImage, int32_t Quality, char bWantColor, char bUseGpu, float Scale, enum class Unknow Rotate); // Function AppleImageUtils.AppleImageUtilsBaseAsyncTaskBlueprintProxy.CreateProxyObjectForConvertToJPEG(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1861150>
+	struct Unknown CreateProxyObjectForConvertToHEIF(struct Unknown SourceImage, int32_t Quality, char bWantColor, char bUseGpu, float Scale, enum class Unknow Rotate); // Function AppleImageUtils.AppleImageUtilsBaseAsyncTaskBlueprintProxy.CreateProxyObjectForConvertToHEIF(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1860F80>
 };
 
 // ScriptStruct AppleImageUtils.AppleImageUtilsImageConversionResult

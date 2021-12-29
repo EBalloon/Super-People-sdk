@@ -1,8 +1,8 @@
 // UserDefinedEnum EModifySetting.EModifySetting
 enum class EModifySetting : uint8_t {
-	EModifySetting = 0,
-	EModifySetting = 1,
-	EModifySetting = 2,
-	EModifySetting = 3,
+	NewEnumerator0 = 0,
+	NewEnumerator1 = 1,
+	NewEnumerator2 = 2,
+	EModifySetting_MAX = 3,
 };
 

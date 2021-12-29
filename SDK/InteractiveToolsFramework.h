@@ -1,134 +1,134 @@
 // Enum InteractiveToolsFramework.EInputCaptureState
 enum class EInputCaptureState : uint8_t {
-	EInputCaptureState = 1,
-	EInputCaptureState = 2,
-	EInputCaptureState = 3,
-	EInputCaptureState = 4,
-	EInputCaptureState = 5,
+	Begin = 1,
+	Continue = 2,
+	End = 3,
+	Ignore = 4,
+	EInputCaptureState_MAX = 5,
 };
 
 // Enum InteractiveToolsFramework.EInputCaptureRequestType
 enum class EInputCaptureRequestType : uint8_t {
-	EInputCaptureRequestType = 1,
-	EInputCaptureRequestType = 2,
-	EInputCaptureRequestType = 3,
+	Begin = 1,
+	Ignore = 2,
+	EInputCaptureRequestType_MAX = 3,
 };
 
 // Enum InteractiveToolsFramework.EInputCaptureSide
 enum class EInputCaptureSide : uint8_t {
-	EInputCaptureSide = 0,
-	EInputCaptureSide = 1,
-	EInputCaptureSide = 2,
-	EInputCaptureSide = 3,
-	EInputCaptureSide = 99,
-	EInputCaptureSide = 100,
+	None = 0,
+	Left = 1,
+	Right = 2,
+	Both = 3,
+	Any = 99,
+	EInputCaptureSide_MAX = 100,
 };
 
 // Enum InteractiveToolsFramework.EInputDevices
 enum class EInputDevices : int32_t {
-	EInputDevices = 0,
-	EInputDevices = 1,
-	EInputDevices = 2,
-	EInputDevices = 4,
-	EInputDevices = 8,
-	EInputDevices = 16,
-	EInputDevices = 24,
-	EInputDevices = 1024,
-	EInputDevices = 1025,
+	None = 0,
+	Keyboard = 1,
+	Mouse = 2,
+	Gamepad = 4,
+	OculusTouch = 8,
+	HTCViveWands = 16,
+	AnySpatialDevice = 24,
+	TabletFingers = 1024,
+	EInputDevices_MAX = 1025,
 };
 
 // Enum InteractiveToolsFramework.ETransformGizmoSubElements
 enum class ETransformGizmoSubElements : int32_t {
-	ETransformGizmoSubElements = 0,
-	ETransformGizmoSubElements = 2,
-	ETransformGizmoSubElements = 4,
-	ETransformGizmoSubElements = 8,
-	ETransformGizmoSubElements = 14,
-	ETransformGizmoSubElements = 16,
-	ETransformGizmoSubElements = 32,
-	ETransformGizmoSubElements = 64,
-	ETransformGizmoSubElements = 112,
-	ETransformGizmoSubElements = 128,
-	ETransformGizmoSubElements = 256,
-	ETransformGizmoSubElements = 512,
-	ETransformGizmoSubElements = 896,
-	ETransformGizmoSubElements = 1024,
-	ETransformGizmoSubElements = 2048,
-	ETransformGizmoSubElements = 4096,
-	ETransformGizmoSubElements = 7168,
-	ETransformGizmoSubElements = 8192,
-	ETransformGizmoSubElements = 16384,
-	ETransformGizmoSubElements = 32768,
-	ETransformGizmoSubElements = 57344,
-	ETransformGizmoSubElements = 65536,
-	ETransformGizmoSubElements = 1022,
-	ETransformGizmoSubElements = 66558,
-	ETransformGizmoSubElements = 131070,
-	ETransformGizmoSubElements = 131071,
+	None = 0,
+	TranslateAxisX = 2,
+	TranslateAxisY = 4,
+	TranslateAxisZ = 8,
+	TranslateAllAxes = 14,
+	TranslatePlaneXY = 16,
+	TranslatePlaneXZ = 32,
+	TranslatePlaneYZ = 64,
+	TranslateAllPlanes = 112,
+	RotateAxisX = 128,
+	RotateAxisY = 256,
+	RotateAxisZ = 512,
+	RotateAllAxes = 896,
+	ScaleAxisX = 1024,
+	ScaleAxisY = 2048,
+	ScaleAxisZ = 4096,
+	ScaleAllAxes = 7168,
+	ScalePlaneYZ = 8192,
+	ScalePlaneXZ = 16384,
+	ScalePlaneXY = 32768,
+	ScaleAllPlanes = 57344,
+	ScaleUniform = 65536,
+	StandardTranslateRotate = 1022,
+	TranslateRotateUniformScale = 66558,
+	FullTranslateRotateScale = 131070,
+	ETransformGizmoSubElements_MAX = 131071,
 };
 
 // Enum InteractiveToolsFramework.EToolChangeTrackingMode
 enum class EToolChangeTrackingMode : uint8_t {
-	EToolChangeTrackingMode = 1,
-	EToolChangeTrackingMode = 2,
-	EToolChangeTrackingMode = 3,
-	EToolChangeTrackingMode = 4,
+	NoChangeTracking = 1,
+	UndoToExit = 2,
+	FullUndoRedo = 3,
+	EToolChangeTrackingMode_MAX = 4,
 };
 
 // Enum InteractiveToolsFramework.EToolSide
 enum class EToolSide : uint8_t {
-	EToolSide = 1,
-	EToolSide = 1,
-	EToolSide = 2,
-	EToolSide = 3,
+	Left = 1,
+	Mouse = 1,
+	Right = 2,
+	EToolSide_MAX = 3,
 };
 
 // Enum InteractiveToolsFramework.ESelectedObjectsModificationType
 enum class ESelectedObjectsModificationType : uint8_t {
-	ESelectedObjectsModificationType = 0,
-	ESelectedObjectsModificationType = 1,
-	ESelectedObjectsModificationType = 2,
-	ESelectedObjectsModificationType = 3,
-	ESelectedObjectsModificationType = 4,
+	Replace = 0,
+	Add = 1,
+	Remove = 2,
+	Clear = 3,
+	ESelectedObjectsModificationType_MAX = 4,
 };
 
 // Enum InteractiveToolsFramework.EToolMessageLevel
 enum class EToolMessageLevel : uint8_t {
-	EToolMessageLevel = 0,
-	EToolMessageLevel = 1,
-	EToolMessageLevel = 2,
-	EToolMessageLevel = 3,
-	EToolMessageLevel = 4,
-	EToolMessageLevel = 5,
+	Internal = 0,
+	UserMessage = 1,
+	UserNotification = 2,
+	UserWarning = 3,
+	UserError = 4,
+	EToolMessageLevel_MAX = 5,
 };
 
 // Enum InteractiveToolsFramework.EToolContextCoordinateSystem
 enum class EToolContextCoordinateSystem : uint8_t {
-	EToolContextCoordinateSystem = 0,
-	EToolContextCoordinateSystem = 1,
-	EToolContextCoordinateSystem = 2,
+	World = 0,
+	Local = 1,
+	EToolContextCoordinateSystem_MAX = 2,
 };
 
 // Enum InteractiveToolsFramework.EStandardToolContextMaterials
 enum class EStandardToolContextMaterials : uint8_t {
-	EStandardToolContextMaterials = 1,
-	EStandardToolContextMaterials = 2,
+	VertexColorMaterial = 1,
+	EStandardToolContextMaterials_MAX = 2,
 };
 
 // Enum InteractiveToolsFramework.ESceneSnapQueryTargetType
 enum class ESceneSnapQueryTargetType : uint8_t {
-	ESceneSnapQueryTargetType = 0,
-	ESceneSnapQueryTargetType = 1,
-	ESceneSnapQueryTargetType = 2,
-	ESceneSnapQueryTargetType = 4,
-	ESceneSnapQueryTargetType = 7,
-	ESceneSnapQueryTargetType = 8,
+	None = 0,
+	MeshVertex = 1,
+	MeshEdge = 2,
+	Grid = 4,
+	All = 7,
+	ESceneSnapQueryTargetType_MAX = 8,
 };
 
 // Enum InteractiveToolsFramework.ESceneSnapQueryType
 enum class ESceneSnapQueryType : uint8_t {
-	ESceneSnapQueryType = 1,
-	ESceneSnapQueryType = 2,
+	Position = 1,
+	ESceneSnapQueryType_MAX = 2,
 };
 
 // Class InteractiveToolsFramework.InteractiveGizmo
@@ -284,8 +284,8 @@ public:
 	struct Unknown AttachedComponent; // 0x90 (8)
 };
 
-// Class InteractiveToolsFramework.ClickDragInputBehav
-class UClickDragInputBehav : public UAnyButtonInputBehavior {
+// Class InteractiveToolsFramework.ClickDragInputBehavior
+class UClickDragInputBehavior : public UAnyButtonInputBehavior {
 
 public:
 
@@ -301,8 +301,8 @@ public:
 	float HoverSizeMultiplier; // 0x4C8 (4)
 	float PixelHitDistanceThreshold; // 0x4CC (4)
 
-	void UpdateWorldLocalState(char bWorldIn); // Function InteractiveToolsFramework.GizmoBaseComponent.UpdateWorldLocalState(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4057700>
-	void UpdateHoverState(char bHoveringIn); // Function InteractiveToolsFramework.GizmoBaseComponent.UpdateHoverState(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4057670>
+	void UpdateWorldLocalState(char bWorldIn); // Function InteractiveToolsFramework.GizmoBaseComponent.UpdateWorldLocalState(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4812670>
+	void UpdateHoverState(char bHoveringIn); // Function InteractiveToolsFramework.GizmoBaseComponent.UpdateHoverState(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x48125E0>
 };
 
 // Class InteractiveToolsFramework.GizmoArrowComponent
@@ -606,7 +606,7 @@ public:
 };
 
 // Class InteractiveToolsFramework.SingleClickInputBehavior
-class USingleClickInputBehavior : public UAnyButtonInputBehavavi {
+class USingleClickInputBehavior : public UAnyButtonInputBehavior {
 
 public:
 

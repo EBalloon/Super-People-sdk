@@ -1,9 +1,9 @@
 // UserDefinedEnum ENiagaraBooleanLogicOps.ENiagaraBooleanLogicOps
 enum class ENiagaraBooleanLogicOps : uint8_t {
-	ENiagaraBooleanLogicOps = 0,
-	ENiagaraBooleanLogicOps = 1,
-	ENiagaraBooleanLogicOps = 2,
-	ENiagaraBooleanLogicOps = 3,
-	ENiagaraBooleanLogicOps = 4,
+	NewEnumerator0 = 0,
+	NewEnumerator2 = 1,
+	NewEnumerator4 = 2,
+	NewEnumerator5 = 3,
+	ENiagaraBooleanLogicOps_MAX = 4,
 };
 

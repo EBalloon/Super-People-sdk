@@ -3,28 +3,28 @@ class UBP_KeyAction_C : public Object {
 
 public:
 
-	struct FString Action; // 0x28 (16)
+	struct FString Action Name; // 0x28 (16)
 	struct FString Category; // 0x38 (16)
-	struct TArray<Unknown> Key; // 0x48 (16)
+	struct TArray<Unknown> Key Mappings; // 0x48 (16)
 
-	void Get(struct FString Mapping, struct Unknown& Mapping, char& SUCCESS); // Function BP_KeyAction.BP_KeyAction_C.Get(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void Load(struct Unknown Game); // Function BP_KeyAction.BP_KeyAction_C.Load(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void Save(struct Unknown Game); // Function BP_KeyAction.BP_KeyAction_C.Save(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void Key(struct Unknown Player, float& Action, char& Just, char& Just); // Function BP_KeyAction.BP_KeyAction_C.Key(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void Init(struct Unknown Key, struct FString Action, struct Unknown& Action); // Function BP_KeyAction.BP_KeyAction_C.Init(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void Get Mapping(struct FString Mapping Name, struct Unknown& Mapping, char& SUCCESS); // Function BP_KeyAction.BP_KeyAction_C.Get Mapping(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void Load Action(struct Unknown Game Settings); // Function BP_KeyAction.BP_KeyAction_C.Load Action(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void Save Action(struct Unknown Game Settings); // Function BP_KeyAction.BP_KeyAction_C.Save Action(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void Key Action Current State(struct Unknown Player Controller, float& Action Axis Value, char& Just Pressed, char& Just Released); // Function BP_KeyAction.BP_KeyAction_C.Key Action Current State(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void Init Key Action(struct Unknown Key Action, struct FString Action Name, struct Unknown& Action); // Function BP_KeyAction.BP_KeyAction_C.Init Key Action(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
 };
 
-// Function BP_KeyAction.BP_KeyAction_C.Get
-inline void UBP_KeyAction_C::Get(struct FString Mapping, struct Unknown& Mapping, char& SUCCESS) {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_KeyAction.BP_KeyAction_C.Get");
+// Function BP_KeyAction.BP_KeyAction_C.Get Mapping
+inline void UBP_KeyAction_C::Get Mapping(struct FString Mapping Name, struct Unknown& Mapping, char& SUCCESS) {
+	static auto fn = UObject::FindObject<UFunction>("Function BP_KeyAction.BP_KeyAction_C.Get Mapping");
 
-	struct Get_Params {
-		struct FString Mapping;
+	struct Get Mapping_Params {
+		struct FString Mapping Name;
 		struct Unknown& Mapping;
 		char& SUCCESS;
-	}; Get_Params Params;
+	}; Get Mapping_Params Params;
 
-	Params.Mapping = Mapping;
+	Params.Mapping Name = Mapping Name;
 
 	auto flags = fn->FunctionFlags;
 	UObject::ProcessEvent(fn, &Params);
@@ -35,71 +35,71 @@ inline void UBP_KeyAction_C::Get(struct FString Mapping, struct Unknown& Mapping
 
 }
 
-// Function BP_KeyAction.BP_KeyAction_C.Load
-inline void UBP_KeyAction_C::Load(struct Unknown Game) {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_KeyAction.BP_KeyAction_C.Load");
+// Function BP_KeyAction.BP_KeyAction_C.Load Action
+inline void UBP_KeyAction_C::Load Action(struct Unknown Game Settings) {
+	static auto fn = UObject::FindObject<UFunction>("Function BP_KeyAction.BP_KeyAction_C.Load Action");
 
-	struct Load_Params {
-		struct Unknown Game;
-	}; Load_Params Params;
+	struct Load Action_Params {
+		struct Unknown Game Settings;
+	}; Load Action_Params Params;
 
-	Params.Game = Game;
-
-	auto flags = fn->FunctionFlags;
-	UObject::ProcessEvent(fn, &Params);
-	fn->FunctionFlags = flags;
-}
-
-// Function BP_KeyAction.BP_KeyAction_C.Save
-inline void UBP_KeyAction_C::Save(struct Unknown Game) {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_KeyAction.BP_KeyAction_C.Save");
-
-	struct Save_Params {
-		struct Unknown Game;
-	}; Save_Params Params;
-
-	Params.Game = Game;
+	Params.Game Settings = Game Settings;
 
 	auto flags = fn->FunctionFlags;
 	UObject::ProcessEvent(fn, &Params);
 	fn->FunctionFlags = flags;
 }
 
-// Function BP_KeyAction.BP_KeyAction_C.Key
-inline void UBP_KeyAction_C::Key(struct Unknown Player, float& Action, char& Just, char& Just) {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_KeyAction.BP_KeyAction_C.Key");
+// Function BP_KeyAction.BP_KeyAction_C.Save Action
+inline void UBP_KeyAction_C::Save Action(struct Unknown Game Settings) {
+	static auto fn = UObject::FindObject<UFunction>("Function BP_KeyAction.BP_KeyAction_C.Save Action");
 
-	struct Key_Params {
-		struct Unknown Player;
-		float& Action;
-		char& Just;
-		char& Just;
-	}; Key_Params Params;
+	struct Save Action_Params {
+		struct Unknown Game Settings;
+	}; Save Action_Params Params;
 
-	Params.Player = Player;
+	Params.Game Settings = Game Settings;
+
+	auto flags = fn->FunctionFlags;
+	UObject::ProcessEvent(fn, &Params);
+	fn->FunctionFlags = flags;
+}
+
+// Function BP_KeyAction.BP_KeyAction_C.Key Action Current State
+inline void UBP_KeyAction_C::Key Action Current State(struct Unknown Player Controller, float& Action Axis Value, char& Just Pressed, char& Just Released) {
+	static auto fn = UObject::FindObject<UFunction>("Function BP_KeyAction.BP_KeyAction_C.Key Action Current State");
+
+	struct Key Action Current State_Params {
+		struct Unknown Player Controller;
+		float& Action Axis Value;
+		char& Just Pressed;
+		char& Just Released;
+	}; Key Action Current State_Params Params;
+
+	Params.Player Controller = Player Controller;
 
 	auto flags = fn->FunctionFlags;
 	UObject::ProcessEvent(fn, &Params);
 	fn->FunctionFlags = flags;
 
-	Action = Params.Action;
-	Just = Params.Just;
-	Just = Params.Just;
+	Action Axis Value = Params.Action Axis Value;
+	Just Pressed = Params.Just Pressed;
+	Just Released = Params.Just Released;
 
 }
 
-// Function BP_KeyAction.BP_KeyAction_C.Init
-inline void UBP_KeyAction_C::Init(struct Unknown Key, struct FString Action, struct Unknown& Action) {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_KeyAction.BP_KeyAction_C.Init");
+// Function BP_KeyAction.BP_KeyAction_C.Init Key Action
+inline void UBP_KeyAction_C::Init Key Action(struct Unknown Key Action, struct FString Action Name, struct Unknown& Action) {
+	static auto fn = UObject::FindObject<UFunction>("Function BP_KeyAction.BP_KeyAction_C.Init Key Action");
 
-	struct Init_Params {
-		struct Unknown Key;
-		struct FString Action;
+	struct Init Key Action_Params {
+		struct Unknown Key Action;
+		struct FString Action Name;
 		struct Unknown& Action;
-	}; Init_Params Params;
+	}; Init Key Action_Params Params;
 
-	Params.Key = Key;
-	Params.Action = Action;
+	Params.Key Action = Key Action;
+	Params.Action Name = Action Name;
 
 	auto flags = fn->FunctionFlags;
 	UObject::ProcessEvent(fn, &Params);

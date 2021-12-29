@@ -1,14 +1,14 @@
 // Enum BravoHotelCloudPlatform.AwsAuthFlowType
 enum class AwsAuthFlowType : uint8_t {
-	AwsAuthFlowType = 0,
-	AwsAuthFlowType = 1,
-	AwsAuthFlowType = 2,
-	AwsAuthFlowType = 3,
-	AwsAuthFlowType = 4,
-	AwsAuthFlowType = 5,
-	AwsAuthFlowType = 6,
-	AwsAuthFlowType = 7,
-	AwsAuthFlowType = 8,
+	NOT_SET = 0,
+	USER_SRP_AUTH = 1,
+	REFRESH_TOKEN_AUTH = 2,
+	REFRESH_TOKEN = 3,
+	CUSTOM_AUTH = 4,
+	ADMIN_NO_SRP_AUTH = 5,
+	USER_PASSWORD_AUTH = 6,
+	ADMIN_USER_PASSWORD_AUTH = 7,
+	AwsAuthFlowType_MAX = 8,
 };
 
 // ScriptStruct BravoHotelCloudPlatform.AwsCredentialsInfo

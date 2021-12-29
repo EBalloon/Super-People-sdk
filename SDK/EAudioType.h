@@ -1,11 +1,11 @@
 // UserDefinedEnum EAudioType.EAudioType
 enum class EAudioType : uint8_t {
-	EAudioType = 0,
-	EAudioType = 1,
-	EAudioType = 2,
-	EAudioType = 3,
-	EAudioType = 4,
-	EAudioType = 5,
-	EAudioType = 6,
+	NewEnumerator4 = 0,
+	NewEnumerator0 = 1,
+	NewEnumerator1 = 2,
+	NewEnumerator2 = 3,
+	NewEnumerator3 = 4,
+	NewEnumerator5 = 5,
+	EAudioType_MAX = 6,
 };
 

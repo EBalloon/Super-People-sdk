@@ -25,7 +25,7 @@ public:
 	char NoneHitActor : 0; // 0x210 (1)
 	char IgnorInput : 0; // 0x211 (1)
 	struct FName TempItemPingTableIndex; // 0x214 (8)
-	char Enable : 0; // 0x21C (1)
+	char Enable Show : 0; // 0x21C (1)
 	struct FName NewVar_1; // 0x220 (8)
 	struct Unknown MainWidget; // 0x228 (8)
 	enum class Unknow EnableEndPingType; // 0x230 (1)
@@ -36,57 +36,57 @@ public:
 	char IsPressedCtrl : 0; // 0x249 (1)
 	char FindPickUpItem : 0; // 0x24A (1)
 
-	void Set(char IsPingType); // Function SmartPingSystem.SmartPingSystem_C.Set(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void GetPingInfoByIndex(int32_t Index, struct Unknown& PingInfo); // Function SmartPingSystem.SmartPingSystem_C.GetPingInfoByIndex(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void OnMapRightClick(struct Unknown ServerLocation, int32_t PingTypeIndex, char IsAgree); // Function SmartPingSystem.SmartPingSystem_C.OnMapRightClick(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void GetMainWidget(struct Unknown& MainWidget); // Function SmartPingSystem.SmartPingSystem_C.GetMainWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	struct Unknown CreateSmartPingWidget(); // Function SmartPingSystem.SmartPingSystem_C.CreateSmartPingWidget(Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void GetIconType(struct Unknown Item, char& IsItem, enum class Unknow& ItemPingType); // Function SmartPingSystem.SmartPingSystem_C.GetIconType(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void GetActorIndex(struct Unknown Actor, int32_t& Index); // Function SmartPingSystem.SmartPingSystem_C.GetActorIndex(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void DeletePing(struct Unknown Owner); // Function SmartPingSystem.SmartPingSystem_C.DeletePing(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void GetPingActorFromOwner(struct Unknown OwnerState, struct Unknown& PingActor); // Function SmartPingSystem.SmartPingSystem_C.GetPingActorFromOwner(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void GetIconFromTableID(struct FName TableID, struct Unknown& Settings, char& bRet); // Function SmartPingSystem.SmartPingSystem_C.GetIconFromTableID(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void Check(char& IsAgree, struct Unknown& TargetActor, char& MyPing); // Function SmartPingSystem.SmartPingSystem_C.Check(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void HandlePingOnClientFromWorldMap(struct Unknown WorldLocation, struct Unknown Owner, char HasMaker); // Function SmartPingSystem.SmartPingSystem_C.HandlePingOnClientFromWorldMap(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void IsShowSelectMenu(char& Ret); // Function SmartPingSystem.SmartPingSystem_C.IsShowSelectMenu(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void GetPingType(struct Unknown TargetActor, enum class Unknow& PingType, struct Unknown& RetTargetActor); // Function SmartPingSystem.SmartPingSystem_C.GetPingType(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void CancelSelectionInMenu(); // Function SmartPingSystem.SmartPingSystem_C.CancelSelectionInMenu(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void ConfirmSelectionInMenu(); // Function SmartPingSystem.SmartPingSystem_C.ConfirmSelectionInMenu(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void HandlePingOnClient(struct FName Icon, struct Unknown Owner); // Function SmartPingSystem.SmartPingSystem_C.HandlePingOnClient(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void GetHitUsingTraceSettings(struct Unknown& Hit); // Function SmartPingSystem.SmartPingSystem_C.GetHitUsingTraceSettings(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void ToggleSelectionMenu(char Visible, char OnMap, char Enable, struct Unknown& SelectionMenu); // Function SmartPingSystem.SmartPingSystem_C.ToggleSelectionMenu(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void ReceiveBeginPlay(); // Function SmartPingSystem.SmartPingSystem_C.ReceiveBeginPlay(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void OnSelected(struct Unknown Selected, struct FName ID, char IsPingType, int32_t RequestMessageIndex); // Function SmartPingSystem.SmartPingSystem_C.OnSelected(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void CreateBindOnSelect(); // Function SmartPingSystem.SmartPingSystem_C.CreateBindOnSelect(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void RequestPingOnServer(); // Function SmartPingSystem.SmartPingSystem_C.RequestPingOnServer(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void HandleGamepadInput(float XAxis, float YAxis); // Function SmartPingSystem.SmartPingSystem_C.HandleGamepadInput(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void Direct(char Force, struct FName ForcePingTable); // Function SmartPingSystem.SmartPingSystem_C.Direct(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void ResetSmartPing(struct TArray<Unknown>& TeamStateList); // Function SmartPingSystem.SmartPingSystem_C.ResetSmartPing(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void RemovePing(struct Unknown OwnerCharacter); // Function SmartPingSystem.SmartPingSystem_C.RemovePing(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void Hovered(struct Unknown Settings, char IsPingType); // Function SmartPingSystem.SmartPingSystem_C.Hovered(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void AddPersonalSupplyBoxPing(struct Unknown NewPersonalSupplyBoxPosition); // Function SmartPingSystem.SmartPingSystem_C.AddPersonalSupplyBoxPing(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void SetPingByInputKey(int32_t KeyIndex); // Function SmartPingSystem.SmartPingSystem_C.SetPingByInputKey(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void ClearPing(); // Function SmartPingSystem.SmartPingSystem_C.ClearPing(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void AddBookPing(struct Unknown NewPersonalSupplyBoxPosition); // Function SmartPingSystem.SmartPingSystem_C.AddBookPing(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void RemoveBookPing(); // Function SmartPingSystem.SmartPingSystem_C.RemoveBookPing(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void RemovePersonalSupplyBoxPing(); // Function SmartPingSystem.SmartPingSystem_C.RemovePersonalSupplyBoxPing(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void ShowSmartPingMessage(struct FString Message, struct FString Color, struct FString UserName, struct FString ImagePath, struct FString TierIcon); // Function SmartPingSystem.SmartPingSystem_C.ShowSmartPingMessage(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void ShowSmartPingMunu(char bIsVisible, char bIsOnMap, char bIsEnableRequestMessage); // Function SmartPingSystem.SmartPingSystem_C.ShowSmartPingMunu(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void ExecuteUbergraph_SmartPingSystem(int32_t EntryPoint); // Function SmartPingSystem.SmartPingSystem_C.ExecuteUbergraph_SmartPingSystem(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void PingReceivedOnServer__DelegateSignature(); // Function SmartPingSystem.SmartPingSystem_C.PingReceivedOnServer__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void MenuDeactivated__DelegateSignature(); // Function SmartPingSystem.SmartPingSystem_C.MenuDeactivated__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void MenuActivated__DelegateSignature(); // Function SmartPingSystem.SmartPingSystem_C.MenuActivated__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void ExecuteOwningClient__DelegateSignature(struct Unknown PingInfo); // Function SmartPingSystem.SmartPingSystem_C.ExecuteOwningClient__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void RequestOnServer__DelegateSignature(struct Unknown PingInfo); // Function SmartPingSystem.SmartPingSystem_C.RequestOnServer__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	void Set Ping Tye(char IsPingType); // Function SmartPingSystem.SmartPingSystem_C.Set Ping Tye(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void GetPingInfoByIndex(int32_t Index, struct Unknown& PingInfo); // Function SmartPingSystem.SmartPingSystem_C.GetPingInfoByIndex(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void OnMapRightClick(struct Unknown ServerLocation, int32_t PingTypeIndex, char IsAgree); // Function SmartPingSystem.SmartPingSystem_C.OnMapRightClick(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void GetMainWidget(struct Unknown& MainWidget); // Function SmartPingSystem.SmartPingSystem_C.GetMainWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	struct Unknown CreateSmartPingWidget(); // Function SmartPingSystem.SmartPingSystem_C.CreateSmartPingWidget(Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void GetIconType(struct Unknown Item, char& IsItem, enum class Unknow& ItemPingType); // Function SmartPingSystem.SmartPingSystem_C.GetIconType(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void GetActorIndex(struct Unknown Actor, int32_t& Index); // Function SmartPingSystem.SmartPingSystem_C.GetActorIndex(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void DeletePing(struct Unknown Owner); // Function SmartPingSystem.SmartPingSystem_C.DeletePing(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void GetPingActorFromOwner(struct Unknown OwnerState, struct Unknown& PingActor); // Function SmartPingSystem.SmartPingSystem_C.GetPingActorFromOwner(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void GetIconFromTableID(struct FName TableID, struct Unknown& Settings, char& bRet); // Function SmartPingSystem.SmartPingSystem_C.GetIconFromTableID(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void Check Agree(char& IsAgree, struct Unknown& TargetActor, char& MyPing); // Function SmartPingSystem.SmartPingSystem_C.Check Agree(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void HandlePingOnClientFromWorldMap(struct Unknown WorldLocation, struct Unknown Owner, char HasMaker); // Function SmartPingSystem.SmartPingSystem_C.HandlePingOnClientFromWorldMap(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void IsShowSelectMenu(char& ret); // Function SmartPingSystem.SmartPingSystem_C.IsShowSelectMenu(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void GetPingType(struct Unknown TargetActor, enum class Unknow& PingType, struct Unknown& RetTargetActor); // Function SmartPingSystem.SmartPingSystem_C.GetPingType(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void CancelSelectionInMenu(); // Function SmartPingSystem.SmartPingSystem_C.CancelSelectionInMenu(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void ConfirmSelectionInMenu(); // Function SmartPingSystem.SmartPingSystem_C.ConfirmSelectionInMenu(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void HandlePingOnClient(struct FName Icon, struct Unknown Owner); // Function SmartPingSystem.SmartPingSystem_C.HandlePingOnClient(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void GetHitUsingTraceSettings(struct Unknown& Hit); // Function SmartPingSystem.SmartPingSystem_C.GetHitUsingTraceSettings(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void ToggleSelectionMenu(char Visible, char OnMap, char Enable RequestMessage, struct Unknown& SelectionMenu); // Function SmartPingSystem.SmartPingSystem_C.ToggleSelectionMenu(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void ReceiveBeginPlay(); // Function SmartPingSystem.SmartPingSystem_C.ReceiveBeginPlay(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void OnSelected(struct Unknown Selected, struct FName ID, char IsPingType, int32_t RequestMessageIndex); // Function SmartPingSystem.SmartPingSystem_C.OnSelected(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void CreateBindOnSelect(); // Function SmartPingSystem.SmartPingSystem_C.CreateBindOnSelect(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void RequestPingOnServer(); // Function SmartPingSystem.SmartPingSystem_C.RequestPingOnServer(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void HandleGamepadInput(float XAxis, float YAxis); // Function SmartPingSystem.SmartPingSystem_C.HandleGamepadInput(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void Direct Ping(char Force, struct FName ForcePingTable); // Function SmartPingSystem.SmartPingSystem_C.Direct Ping(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void ResetSmartPing(struct TArray<Unknown>& TeamStateList); // Function SmartPingSystem.SmartPingSystem_C.ResetSmartPing(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void RemovePing(struct Unknown OwnerCharacter); // Function SmartPingSystem.SmartPingSystem_C.RemovePing(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void Hovered(struct Unknown Settings, char IsPingType); // Function SmartPingSystem.SmartPingSystem_C.Hovered(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void AddPersonalSupplyBoxPing(struct Unknown NewPersonalSupplyBoxPosition); // Function SmartPingSystem.SmartPingSystem_C.AddPersonalSupplyBoxPing(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void SetPingByInputKey(int32_t KeyIndex); // Function SmartPingSystem.SmartPingSystem_C.SetPingByInputKey(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void ClearPing(); // Function SmartPingSystem.SmartPingSystem_C.ClearPing(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void AddBookPing(struct Unknown NewPersonalSupplyBoxPosition); // Function SmartPingSystem.SmartPingSystem_C.AddBookPing(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void RemoveBookPing(); // Function SmartPingSystem.SmartPingSystem_C.RemoveBookPing(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void RemovePersonalSupplyBoxPing(); // Function SmartPingSystem.SmartPingSystem_C.RemovePersonalSupplyBoxPing(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void ShowSmartPingMessage(struct FString Message, struct FString Color, struct FString UserName, struct FString ImagePath, struct FString TierIcon); // Function SmartPingSystem.SmartPingSystem_C.ShowSmartPingMessage(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void ShowSmartPingMunu(char bIsVisible, char bIsOnMap, char bIsEnableRequestMessage); // Function SmartPingSystem.SmartPingSystem_C.ShowSmartPingMunu(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void ExecuteUbergraph_SmartPingSystem(int32_t EntryPoint); // Function SmartPingSystem.SmartPingSystem_C.ExecuteUbergraph_SmartPingSystem(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void PingReceivedOnServer__DelegateSignature(); // Function SmartPingSystem.SmartPingSystem_C.PingReceivedOnServer__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void MenuDeactivated__DelegateSignature(); // Function SmartPingSystem.SmartPingSystem_C.MenuDeactivated__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void MenuActivated__DelegateSignature(); // Function SmartPingSystem.SmartPingSystem_C.MenuActivated__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void ExecuteOwningClient__DelegateSignature(struct Unknown PingInfo); // Function SmartPingSystem.SmartPingSystem_C.ExecuteOwningClient__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void RequestOnServer__DelegateSignature(struct Unknown PingInfo); // Function SmartPingSystem.SmartPingSystem_C.RequestOnServer__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
 };
 
-// Function SmartPingSystem.SmartPingSystem_C.Set
-inline void USmartPingSystem_C::Set(char IsPingType) {
-	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.Set");
+// Function SmartPingSystem.SmartPingSystem_C.Set Ping Tye
+inline void USmartPingSystem_C::Set Ping Tye(char IsPingType) {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.Set Ping Tye");
 
-	struct Set_Params {
+	struct Set Ping Tye_Params {
 		char IsPingType;
-	}; Set_Params Params;
+	}; Set Ping Tye_Params Params;
 
 	Params.IsPingType = IsPingType;
 
@@ -263,15 +263,15 @@ inline void USmartPingSystem_C::GetIconFromTableID(struct FName TableID, struct 
 
 }
 
-// Function SmartPingSystem.SmartPingSystem_C.Check
-inline void USmartPingSystem_C::Check(char& IsAgree, struct Unknown& TargetActor, char& MyPing) {
-	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.Check");
+// Function SmartPingSystem.SmartPingSystem_C.Check Agree
+inline void USmartPingSystem_C::Check Agree(char& IsAgree, struct Unknown& TargetActor, char& MyPing) {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.Check Agree");
 
-	struct Check_Params {
+	struct Check Agree_Params {
 		char& IsAgree;
 		struct Unknown& TargetActor;
 		char& MyPing;
-	}; Check_Params Params;
+	}; Check Agree_Params Params;
 
 
 	auto flags = fn->FunctionFlags;
@@ -304,11 +304,11 @@ inline void USmartPingSystem_C::HandlePingOnClientFromWorldMap(struct Unknown Wo
 }
 
 // Function SmartPingSystem.SmartPingSystem_C.IsShowSelectMenu
-inline void USmartPingSystem_C::IsShowSelectMenu(char& Ret) {
+inline void USmartPingSystem_C::IsShowSelectMenu(char& ret) {
 	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.IsShowSelectMenu");
 
 	struct IsShowSelectMenu_Params {
-		char& Ret;
+		char& ret;
 	}; IsShowSelectMenu_Params Params;
 
 
@@ -316,7 +316,7 @@ inline void USmartPingSystem_C::IsShowSelectMenu(char& Ret) {
 	UObject::ProcessEvent(fn, &Params);
 	fn->FunctionFlags = flags;
 
-	Ret = Params.Ret;
+	ret = Params.ret;
 
 }
 
@@ -404,19 +404,19 @@ inline void USmartPingSystem_C::GetHitUsingTraceSettings(struct Unknown& Hit) {
 }
 
 // Function SmartPingSystem.SmartPingSystem_C.ToggleSelectionMenu
-inline void USmartPingSystem_C::ToggleSelectionMenu(char Visible, char OnMap, char Enable, struct Unknown& SelectionMenu) {
+inline void USmartPingSystem_C::ToggleSelectionMenu(char Visible, char OnMap, char Enable RequestMessage, struct Unknown& SelectionMenu) {
 	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.ToggleSelectionMenu");
 
 	struct ToggleSelectionMenu_Params {
 		char Visible;
 		char OnMap;
-		char Enable;
+		char Enable RequestMessage;
 		struct Unknown& SelectionMenu;
 	}; ToggleSelectionMenu_Params Params;
 
 	Params.Visible = Visible;
 	Params.OnMap = OnMap;
-	Params.Enable = Enable;
+	Params.Enable RequestMessage = Enable RequestMessage;
 
 	auto flags = fn->FunctionFlags;
 	UObject::ProcessEvent(fn, &Params);
@@ -506,14 +506,14 @@ inline void USmartPingSystem_C::HandleGamepadInput(float XAxis, float YAxis) {
 	fn->FunctionFlags = flags;
 }
 
-// Function SmartPingSystem.SmartPingSystem_C.Direct
-inline void USmartPingSystem_C::Direct(char Force, struct FName ForcePingTable) {
-	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.Direct");
+// Function SmartPingSystem.SmartPingSystem_C.Direct Ping
+inline void USmartPingSystem_C::Direct Ping(char Force, struct FName ForcePingTable) {
+	static auto fn = UObject::FindObject<UFunction>("Function SmartPingSystem.SmartPingSystem_C.Direct Ping");
 
-	struct Direct_Params {
+	struct Direct Ping_Params {
 		char Force;
 		struct FName ForcePingTable;
-	}; Direct_Params Params;
+	}; Direct Ping_Params Params;
 
 	Params.Force = Force;
 	Params.ForcePingTable = ForcePingTable;

@@ -1,68 +1,68 @@
 // Enum ChaosNiagara.ELocationZToSpawnEnum
 enum class ELocationZToSpawnEnum : uint8_t {
-	ELocationZToSpawnEnum = 0,
-	ELocationZToSpawnEnum = 1,
-	ELocationZToSpawnEnum = 2,
-	ELocationZToSpawnEnum = 3,
-	ELocationZToSpawnEnum = 4,
+	ChaosNiagara_LocationZToSpawn_None = 0,
+	ChaosNiagara_LocationZToSpawn_Min = 1,
+	ChaosNiagara_LocationZToSpawn_Max = 2,
+	ChaosNiagara_LocationZToSpawn_MinMax = 3,
+	ChaosNiagara_Max = 4,
 };
 
 // Enum ChaosNiagara.ELocationYToSpawnEnum
 enum class ELocationYToSpawnEnum : uint8_t {
-	ELocationYToSpawnEnum = 0,
-	ELocationYToSpawnEnum = 1,
-	ELocationYToSpawnEnum = 2,
-	ELocationYToSpawnEnum = 3,
-	ELocationYToSpawnEnum = 4,
+	ChaosNiagara_LocationYToSpawn_None = 0,
+	ChaosNiagara_LocationYToSpawn_Min = 1,
+	ChaosNiagara_LocationYToSpawn_Max = 2,
+	ChaosNiagara_LocationYToSpawn_MinMax = 3,
+	ChaosNiagara_Max = 4,
 };
 
 // Enum ChaosNiagara.ELocationXToSpawnEnum
 enum class ELocationXToSpawnEnum : uint8_t {
-	ELocationXToSpawnEnum = 0,
-	ELocationXToSpawnEnum = 1,
-	ELocationXToSpawnEnum = 2,
-	ELocationXToSpawnEnum = 3,
-	ELocationXToSpawnEnum = 4,
+	ChaosNiagara_LocationXToSpawn_None = 0,
+	ChaosNiagara_LocationXToSpawn_Min = 1,
+	ChaosNiagara_LocationXToSpawn_Max = 2,
+	ChaosNiagara_LocationXToSpawn_MinMax = 3,
+	ChaosNiagara_Max = 4,
 };
 
 // Enum ChaosNiagara.ELocationFilteringModeEnum
 enum class ELocationFilteringModeEnum : uint8_t {
-	ELocationFilteringModeEnum = 0,
-	ELocationFilteringModeEnum = 1,
-	ELocationFilteringModeEnum = 2,
+	ChaosNiagara_LocationFilteringMode_Inclusive = 0,
+	ChaosNiagara_LocationFilteringMode_Exclusive = 1,
+	ChaosNiagara_Max = 2,
 };
 
 // Enum ChaosNiagara.EDataSourceTypeEnum
 enum class EDataSourceTypeEnum : uint8_t {
-	EDataSourceTypeEnum = 0,
-	EDataSourceTypeEnum = 1,
-	EDataSourceTypeEnum = 2,
-	EDataSourceTypeEnum = 3,
+	ChaosNiagara_DataSourceType_Collision = 0,
+	ChaosNiagara_DataSourceType_Breaking = 1,
+	ChaosNiagara_DataSourceType_Trailing = 2,
+	ChaosNiagara_Max = 3,
 };
 
 // Enum ChaosNiagara.EDebugTypeEnum
 enum class EDebugTypeEnum : uint8_t {
-	EDebugTypeEnum = 0,
-	EDebugTypeEnum = 1,
-	EDebugTypeEnum = 2,
-	EDebugTypeEnum = 3,
+	ChaosNiagara_DebugType_NoDebug = 0,
+	ChaosNiagara_DebugType_ColorBySolver = 1,
+	ChaosNiagara_DebugType_ColorByParticleIndex = 2,
+	ChaosNiagara_Max = 3,
 };
 
 // Enum ChaosNiagara.ERandomVelocityGenerationTypeEnum
 enum class ERandomVelocityGenerationTypeEnum : uint8_t {
-	ERandomVelocityGenerationTypeEnum = 0,
-	ERandomVelocityGenerationTypeEnum = 1,
-	ERandomVelocityGenerationTypeEnum = 2,
-	ERandomVelocityGenerationTypeEnum = 3,
+	ChaosNiagara_RandomVelocityGenerationType_RandomDistribution = 0,
+	ChaosNiagara_RandomVelocityGenerationType_RandomDistributionWithStreamers = 1,
+	ChaosNiagara_RandomVelocityGenerationType_CollisionNormalBased = 2,
+	ChaosNiagara_Max = 3,
 };
 
 // Enum ChaosNiagara.EDataSortTypeEnum
 enum class EDataSortTypeEnum : uint8_t {
-	EDataSortTypeEnum = 0,
-	EDataSortTypeEnum = 1,
-	EDataSortTypeEnum = 2,
-	EDataSortTypeEnum = 3,
-	EDataSortTypeEnum = 4,
+	ChaosNiagara_DataSortType_NoSorting = 0,
+	ChaosNiagara_DataSortType_RandomShuffle = 1,
+	ChaosNiagara_DataSortType_SortByMassMaxToMin = 2,
+	ChaosNiagara_DataSortType_SortByMassMinToMax = 3,
+	ChaosNiagara_Max = 4,
 };
 
 // Class ChaosNiagara.NiagaraDataInterfaceChaosDestruction
@@ -110,7 +110,7 @@ public:
 	float SpreadAngleMax; // 0x19C (4)
 	struct Unknown VelocityOffsetMin; // 0x1A0 (12)
 	struct Unknown VelocityOffsetMax; // 0x1AC (12)
-	struct Unknown FinalVelocityMagnitudeMin; // 0x1B8 (8)
+	struct Unknown FinalVelocityMagnitudeMinMax; // 0x1B8 (8)
 	float MaxLatency; // 0x1C0 (4)
 	enum class Unknow DebugType; // 0x1C4 (1)
 	int32_t LastSpawnedPointID; // 0x1C8 (4)

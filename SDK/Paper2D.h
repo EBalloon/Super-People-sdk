@@ -1,66 +1,66 @@
 // Enum Paper2D.EFlipbookCollisionMode
 enum class EFlipbookCollisionMode : uint8_t {
-	EFlipbookCollisionMode = 0,
-	EFlipbookCollisionMode = 1,
-	EFlipbookCollisionMode = 2,
-	EFlipbookCollisionMode = 3,
+	NoCollision = 0,
+	FirstFrameCollision = 1,
+	EachFrameCollision = 2,
+	EFlipbookCollisionMode_MAX = 3,
 };
 
 // Enum Paper2D.EPaperSpriteAtlasPadding
 enum class EPaperSpriteAtlasPadding : uint8_t {
-	EPaperSpriteAtlasPadding = 0,
-	EPaperSpriteAtlasPadding = 1,
-	EPaperSpriteAtlasPadding = 2,
+	DilateBorder = 0,
+	PadWithZero = 1,
+	EPaperSpriteAtlasPadding_MAX = 2,
 };
 
 // Enum Paper2D.ETileMapProjectionMode
 enum class ETileMapProjectionMode : uint8_t {
-	ETileMapProjectionMode = 0,
-	ETileMapProjectionMode = 1,
-	ETileMapProjectionMode = 2,
-	ETileMapProjectionMode = 3,
-	ETileMapProjectionMode = 4,
+	Orthogonal = 0,
+	IsometricDiamond = 1,
+	IsometricStaggered = 2,
+	HexagonalStaggered = 3,
+	ETileMapProjectionMode_MAX = 4,
 };
 
 // Enum Paper2D.ESpritePivotMode
 enum class ESpritePivotMode : uint8_t {
-	ESpritePivotMode = 0,
-	ESpritePivotMode = 1,
-	ESpritePivotMode = 2,
-	ESpritePivotMode = 3,
-	ESpritePivotMode = 4,
-	ESpritePivotMode = 5,
-	ESpritePivotMode = 6,
-	ESpritePivotMode = 7,
-	ESpritePivotMode = 8,
-	ESpritePivotMode = 9,
-	ESpritePivotMode = 10,
+	Top_Left = 0,
+	Top_Center = 1,
+	Top_Right = 2,
+	Center_Left = 3,
+	Center_Center = 4,
+	Center_Right = 5,
+	Bottom_Left = 6,
+	Bottom_Center = 7,
+	Bottom_Right = 8,
+	Custom = 9,
+	ESpritePivotMode_MAX = 10,
 };
 
 // Enum Paper2D.ESpritePolygonMode
 enum class ESpritePolygonMode : uint8_t {
-	ESpritePolygonMode = 0,
-	ESpritePolygonMode = 1,
-	ESpritePolygonMode = 2,
-	ESpritePolygonMode = 3,
-	ESpritePolygonMode = 4,
-	ESpritePolygonMode = 5,
+	SourceBoundingBox = 0,
+	TightBoundingBox = 1,
+	ShrinkWrapped = 2,
+	FullyCustom = 3,
+	Diced = 4,
+	ESpritePolygonMode_MAX = 5,
 };
 
 // Enum Paper2D.ESpriteShapeType
 enum class ESpriteShapeType : uint8_t {
-	ESpriteShapeType = 0,
-	ESpriteShapeType = 1,
-	ESpriteShapeType = 2,
-	ESpriteShapeType = 3,
+	Box = 0,
+	Circle = 1,
+	Polygon = 2,
+	ESpriteShapeType_MAX = 3,
 };
 
 // Enum Paper2D.ESpriteCollisionMode
 enum class ESpriteCollisionMode : uint8_t {
-	ESpriteCollisionMode = 0,
-	ESpriteCollisionMode = 1,
-	ESpriteCollisionMode = 2,
-	ESpriteCollisionMode = 3,
+	None = 0,
+	Use2DPhysics = 1,
+	Use3DPhysics = 2,
+	ESpriteCollisionMode_MAX = 3,
 };
 
 // Class Paper2D.MaterialExpressionSpriteTextureSampler
@@ -91,13 +91,13 @@ public:
 	struct Unknown DefaultMaterial; // 0x40 (8)
 	char CollisionSource; // 0x48 (1)
 
-	char IsValidKeyFrameIndex(int32_t Index); // Function Paper2D.PaperFlipbook.IsValidKeyFrameIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x168EDE0>
-	float GetTotalDuration(); // Function Paper2D.PaperFlipbook.GetTotalDuration(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x168ED20>
-	struct Unknown GetSpriteAtTime(float Time, char bClampToEnds); // Function Paper2D.PaperFlipbook.GetSpriteAtTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x168EC50>
-	struct Unknown GetSpriteAtFrame(int32_t FrameIndex); // Function Paper2D.PaperFlipbook.GetSpriteAtFrame(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x168EBC0>
-	int32_t GetNumKeyFrames(); // Function Paper2D.PaperFlipbook.GetNumKeyFrames(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x168EB10>
-	int32_t GetNumFrames(); // Function Paper2D.PaperFlipbook.GetNumFrames(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x168EAE0>
-	int32_t GetKeyFrameIndexAtTime(float Time, char bClampToEnds); // Function Paper2D.PaperFlipbook.GetKeyFrameIndexAtTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x168EA10>
+	char IsValidKeyFrameIndex(int32_t Index); // Function Paper2D.PaperFlipbook.IsValidKeyFrameIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x169F920>
+	float GetTotalDuration(); // Function Paper2D.PaperFlipbook.GetTotalDuration(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x169F860>
+	struct Unknown GetSpriteAtTime(float Time, char bClampToEnds); // Function Paper2D.PaperFlipbook.GetSpriteAtTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x169F790>
+	struct Unknown GetSpriteAtFrame(int32_t FrameIndex); // Function Paper2D.PaperFlipbook.GetSpriteAtFrame(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x169F700>
+	int32_t GetNumKeyFrames(); // Function Paper2D.PaperFlipbook.GetNumKeyFrames(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x169F650>
+	int32_t GetNumFrames(); // Function Paper2D.PaperFlipbook.GetNumFrames(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x169F620>
+	int32_t GetKeyFrameIndexAtTime(float Time, char bClampToEnds); // Function Paper2D.PaperFlipbook.GetKeyFrameIndexAtTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x169F550>
 };
 
 // Class Paper2D.PaperFlipbookActor
@@ -125,29 +125,29 @@ public:
 	struct Unknown CachedBodySetup; // 0x518 (8)
 	struct FMulticastInlineDelegate OnFinishedPlaying; // 0x520 (16)
 
-	void Stop(); // Function Paper2D.PaperFlipbookComponent.Stop(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x168F4F0>
-	void SetSpriteColor(struct Unknown NewColor); // Function Paper2D.PaperFlipbookComponent.SetSpriteColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x168F3E0>
-	void SetPlayRate(float NewRate); // Function Paper2D.PaperFlipbookComponent.SetPlayRate(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x168F1D0>
-	void SetPlaybackPositionInFrames(int32_t NewFramePosition, char bFireEvents); // Function Paper2D.PaperFlipbookComponent.SetPlaybackPositionInFrames(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x168F320>
-	void SetPlaybackPosition(float NewPosition, char bFireEvents); // Function Paper2D.PaperFlipbookComponent.SetPlaybackPosition(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x168F250>
-	void SetNewTime(float NewTime); // Function Paper2D.PaperFlipbookComponent.SetNewTime(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x168F150>
-	void SetLooping(char bNewLooping); // Function Paper2D.PaperFlipbookComponent.SetLooping(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x168F0C0>
-	char SetFlipbook(struct Unknown NewFlipbook); // Function Paper2D.PaperFlipbookComponent.SetFlipbook(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x168F020>
-	void ReverseFromEnd(); // Function Paper2D.PaperFlipbookComponent.ReverseFromEnd(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x168F000>
-	void Reverse(); // Function Paper2D.PaperFlipbookComponent.Reverse(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x168EFE0>
-	void PlayFromStart(); // Function Paper2D.PaperFlipbookComponent.PlayFromStart(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x168EF20>
-	void Play(); // Function Paper2D.PaperFlipbookComponent.Play(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x168EF00>
-	void OnRep_SourceFlipbook(struct Unknown OldFlipbook); // Function Paper2D.PaperFlipbookComponent.OnRep_SourceFlipbook(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x168EE80>
-	char IsReversing(); // Function Paper2D.PaperFlipbookComponent.IsReversing(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x168EDB0>
-	char IsPlaying(); // Function Paper2D.PaperFlipbookComponent.IsPlaying(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x168ED80>
-	char IsLooping(); // Function Paper2D.PaperFlipbookComponent.IsLooping(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x168ED50>
-	float GetPlayRate(); // Function Paper2D.PaperFlipbookComponent.GetPlayRate(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x168EB30>
-	int32_t GetPlaybackPositionInFrames(); // Function Paper2D.PaperFlipbookComponent.GetPlaybackPositionInFrames(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x168EB90>
-	float GetPlaybackPosition(); // Function Paper2D.PaperFlipbookComponent.GetPlaybackPosition(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x168EB60>
-	int32_t GetFlipbookLengthInFrames(); // Function Paper2D.PaperFlipbookComponent.GetFlipbookLengthInFrames(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x168E850>
-	float GetFlipbookLength(); // Function Paper2D.PaperFlipbookComponent.GetFlipbookLength(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x168E820>
-	float GetFlipbookFramerate(); // Function Paper2D.PaperFlipbookComponent.GetFlipbookFramerate(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x168E7F0>
-	struct Unknown GetFlipbook(); // Function Paper2D.PaperFlipbookComponent.GetFlipbook(Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x168E7C0>
+	void Stop(); // Function Paper2D.PaperFlipbookComponent.Stop(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A0030>
+	void SetSpriteColor(struct Unknown NewColor); // Function Paper2D.PaperFlipbookComponent.SetSpriteColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x169FF20>
+	void SetPlayRate(float NewRate); // Function Paper2D.PaperFlipbookComponent.SetPlayRate(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x169FD10>
+	void SetPlaybackPositionInFrames(int32_t NewFramePosition, char bFireEvents); // Function Paper2D.PaperFlipbookComponent.SetPlaybackPositionInFrames(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x169FE60>
+	void SetPlaybackPosition(float NewPosition, char bFireEvents); // Function Paper2D.PaperFlipbookComponent.SetPlaybackPosition(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x169FD90>
+	void SetNewTime(float NewTime); // Function Paper2D.PaperFlipbookComponent.SetNewTime(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x169FC90>
+	void SetLooping(char bNewLooping); // Function Paper2D.PaperFlipbookComponent.SetLooping(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x169FC00>
+	char SetFlipbook(struct Unknown NewFlipbook); // Function Paper2D.PaperFlipbookComponent.SetFlipbook(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x169FB60>
+	void ReverseFromEnd(); // Function Paper2D.PaperFlipbookComponent.ReverseFromEnd(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x169FB40>
+	void Reverse(); // Function Paper2D.PaperFlipbookComponent.Reverse(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x169FB20>
+	void PlayFromStart(); // Function Paper2D.PaperFlipbookComponent.PlayFromStart(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x169FA60>
+	void Play(); // Function Paper2D.PaperFlipbookComponent.Play(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x169FA40>
+	void OnRep_SourceFlipbook(struct Unknown OldFlipbook); // Function Paper2D.PaperFlipbookComponent.OnRep_SourceFlipbook(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x169F9C0>
+	char IsReversing(); // Function Paper2D.PaperFlipbookComponent.IsReversing(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x169F8F0>
+	char IsPlaying(); // Function Paper2D.PaperFlipbookComponent.IsPlaying(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x169F8C0>
+	char IsLooping(); // Function Paper2D.PaperFlipbookComponent.IsLooping(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x169F890>
+	float GetPlayRate(); // Function Paper2D.PaperFlipbookComponent.GetPlayRate(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x169F670>
+	int32_t GetPlaybackPositionInFrames(); // Function Paper2D.PaperFlipbookComponent.GetPlaybackPositionInFrames(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x169F6D0>
+	float GetPlaybackPosition(); // Function Paper2D.PaperFlipbookComponent.GetPlaybackPosition(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x169F6A0>
+	int32_t GetFlipbookLengthInFrames(); // Function Paper2D.PaperFlipbookComponent.GetFlipbookLengthInFrames(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x169F390>
+	float GetFlipbookLength(); // Function Paper2D.PaperFlipbookComponent.GetFlipbookLength(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x169F360>
+	float GetFlipbookFramerate(); // Function Paper2D.PaperFlipbookComponent.GetFlipbookFramerate(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x169F330>
+	struct Unknown GetFlipbook(); // Function Paper2D.PaperFlipbookComponent.GetFlipbook(Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x169F300>
 };
 
 // Class Paper2D.PaperGroupedSpriteActor
@@ -166,14 +166,14 @@ public:
 	struct TArray<Unknown> InstanceMaterials; // 0x4E8 (16)
 	struct TArray<Unknown> PerInstanceSpriteData; // 0x4F8 (16)
 
-	char UpdateInstanceTransform(int32_t InstanceIndex, struct Unknown& NewInstanceTransform, char bWorldSpace, char bMarkRenderStateDirty, char bTeleport); // Function Paper2D.PaperGroupedSpriteComponent.UpdateInstanceTransform(Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x168F620>
-	char UpdateInstanceColor(int32_t InstanceIndex, struct Unknown NewInstanceColor, char bMarkRenderStateDirty); // Function Paper2D.PaperGroupedSpriteComponent.UpdateInstanceColor(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x168F510>
-	void SortInstancesAlongAxis(struct Unknown WorldSpaceSortAxis); // Function Paper2D.PaperGroupedSpriteComponent.SortInstancesAlongAxis(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x168F460>
-	char RemoveInstance(int32_t InstanceIndex); // Function Paper2D.PaperGroupedSpriteComponent.RemoveInstance(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x168EF40>
-	char GetInstanceTransform(int32_t InstanceIndex, struct Unknown& OutInstanceTransform, char bWorldSpace); // Function Paper2D.PaperGroupedSpriteComponent.GetInstanceTransform(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x168E8B0>
-	int32_t GetInstanceCount(); // Function Paper2D.PaperGroupedSpriteComponent.GetInstanceCount(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x168E880>
-	void ClearInstances(); // Function Paper2D.PaperGroupedSpriteComponent.ClearInstances(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x168E7A0>
-	int32_t AddInstance(struct Unknown& Transform, struct Unknown Sprite, char bWorldSpace, struct Unknown Color); // Function Paper2D.PaperGroupedSpriteComponent.AddInstance(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x168E5E0>
+	char UpdateInstanceTransform(int32_t InstanceIndex, struct Unknown& NewInstanceTransform, char bWorldSpace, char bMarkRenderStateDirty, char bTeleport); // Function Paper2D.PaperGroupedSpriteComponent.UpdateInstanceTransform(Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A0160>
+	char UpdateInstanceColor(int32_t InstanceIndex, struct Unknown NewInstanceColor, char bMarkRenderStateDirty); // Function Paper2D.PaperGroupedSpriteComponent.UpdateInstanceColor(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A0050>
+	void SortInstancesAlongAxis(struct Unknown WorldSpaceSortAxis); // Function Paper2D.PaperGroupedSpriteComponent.SortInstancesAlongAxis(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x169FFA0>
+	char RemoveInstance(int32_t InstanceIndex); // Function Paper2D.PaperGroupedSpriteComponent.RemoveInstance(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x169FA80>
+	char GetInstanceTransform(int32_t InstanceIndex, struct Unknown& OutInstanceTransform, char bWorldSpace); // Function Paper2D.PaperGroupedSpriteComponent.GetInstanceTransform(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x169F3F0>
+	int32_t GetInstanceCount(); // Function Paper2D.PaperGroupedSpriteComponent.GetInstanceCount(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x169F3C0>
+	void ClearInstances(); // Function Paper2D.PaperGroupedSpriteComponent.ClearInstances(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x169F2E0>
+	int32_t AddInstance(struct Unknown& Transform, struct Unknown Sprite, char bWorldSpace, struct Unknown Color); // Function Paper2D.PaperGroupedSpriteComponent.AddInstance(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x169F120>
 };
 
 // Class Paper2D.PaperRuntimeSettings
@@ -222,9 +222,9 @@ public:
 	struct Unknown MaterialOverride; // 0x4F0 (8)
 	struct Unknown SpriteColor; // 0x4F8 (16)
 
-	void SetSpriteColor(struct Unknown NewColor); // Function Paper2D.PaperSpriteComponent.SetSpriteColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16929F0>
-	char SetSprite(struct Unknown NewSprite); // Function Paper2D.PaperSpriteComponent.SetSprite(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x168F020>
-	struct Unknown GetSprite(); // Function Paper2D.PaperSpriteComponent.GetSprite(Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x168E7C0>
+	void SetSpriteColor(struct Unknown NewColor); // Function Paper2D.PaperSpriteComponent.SetSpriteColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A3530>
+	char SetSprite(struct Unknown NewSprite); // Function Paper2D.PaperSpriteComponent.SetSprite(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x169FB60>
+	struct Unknown GetSprite(); // Function Paper2D.PaperSpriteComponent.GetSprite(Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x169F300>
 };
 
 // Class Paper2D.PaperTerrainActor
@@ -254,7 +254,7 @@ public:
 	float CollisionThickness; // 0x4F0 (4)
 	struct Unknown CachedBodySetup; // 0x4F8 (8)
 
-	void SetTerrainColor(struct Unknown NewColor); // Function Paper2D.PaperTerrainComponent.SetTerrainColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1692A70>
+	void SetTerrainColor(struct Unknown NewColor); // Function Paper2D.PaperTerrainComponent.SetTerrainColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A35B0>
 };
 
 // Class Paper2D.PaperTerrainMaterial
@@ -293,7 +293,7 @@ class UPaperTileMap : public Object {
 
 public:
 
-	int32_t Map; // 0x28 (4)
+	int32_t MapWidth; // 0x28 (4)
 	int32_t MapHeight; // 0x2C (4)
 	int32_t TileWidth; // 0x30 (4)
 	int32_t TileHeight; // 0x34 (4)
@@ -325,7 +325,7 @@ class UPaperTileMapComponent : public UMeshComponent {
 
 public:
 
-	int32_t Map; // 0x4E8 (4)
+	int32_t MapWidth; // 0x4E8 (4)
 	int32_t MapHeight; // 0x4EC (4)
 	int32_t TileWidth; // 0x4F0 (4)
 	int32_t TileHeight; // 0x4F4 (4)
@@ -337,25 +337,25 @@ public:
 	char bUseSingleLayer : 0; // 0x52C (1)
 	struct Unknown TileMap; // 0x530 (8)
 
-	void SetTileMapColor(struct Unknown NewColor); // Function Paper2D.PaperTileMapComponent.SetTileMapColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1692C50>
-	char SetTileMap(struct Unknown NewTileMap); // Function Paper2D.PaperTileMapComponent.SetTileMap(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x168F020>
-	void SetTile(int32_t X, int32_t Y, int32_t Layer, struct Unknown NewValue); // Function Paper2D.PaperTileMapComponent.SetTile(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1692AF0>
-	void SetLayerColor(struct Unknown NewColor, int32_t Layer); // Function Paper2D.PaperTileMapComponent.SetLayerColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1692920>
-	void SetLayerCollision(int32_t Layer, char bHasCollision, char bOverrideThickness, float CustomThickness, char bOverrideOffset, float CustomOffset, char bRebuildCollision); // Function Paper2D.PaperTileMapComponent.SetLayerCollision(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1692700>
-	void SetDefaultCollisionThickness(float Thickness, char bRebuildCollision); // Function Paper2D.PaperTileMapComponent.SetDefaultCollisionThickness(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1692630>
-	void ResizeMap(int32_t New, int32_t NewHeightInTiles); // Function Paper2D.PaperTileMapComponent.ResizeMap(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1692570>
-	void RebuildCollision(); // Function Paper2D.PaperTileMapComponent.RebuildCollision(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1692550>
-	char OwnsTileMap(); // Function Paper2D.PaperTileMapComponent.OwnsTileMap(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1692520>
-	void MakeTileMapEditable(); // Function Paper2D.PaperTileMapComponent.MakeTileMapEditable(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1692500>
-	void GetTilePolygon(int32_t TileX, int32_t TileY, struct TArray<Unknown>& Points, int32_t LayerIndex, char bWorldSpace); // Function Paper2D.PaperTileMapComponent.GetTilePolygon(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16921A0>
-	struct Unknown GetTileMapColor(); // Function Paper2D.PaperTileMapComponent.GetTileMapColor(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1692160>
-	struct Unknown GetTileCornerPosition(int32_t TileX, int32_t TileY, int32_t LayerIndex, char bWorldSpace); // Function Paper2D.PaperTileMapComponent.GetTileCornerPosition(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1692000>
-	struct Unknown GetTileCenterPosition(int32_t TileX, int32_t TileY, int32_t LayerIndex, char bWorldSpace); // Function Paper2D.PaperTileMapComponent.GetTileCenterPosition(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1691EA0>
-	struct Unknown GetTile(int32_t X, int32_t Y, int32_t Layer); // Function Paper2D.PaperTileMapComponent.GetTile(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1691D90>
-	void GetMapSize(int32_t& Map, int32_t& MapHeight, int32_t& NumLayers); // Function Paper2D.PaperTileMapComponent.GetMapSize(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1691C50>
-	struct Unknown GetLayerColor(int32_t Layer); // Function Paper2D.PaperTileMapComponent.GetLayerColor(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1691BB0>
-	void CreateNewTileMap(int32_t Map, int32_t MapHeight, int32_t TileWidth, int32_t TileHeight, float PixelsPerUnrealUnit, char bCreateLayer); // Function Paper2D.PaperTileMapComponent.CreateNewTileMap(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1691A00>
-	struct Unknown AddNewLayer(); // Function Paper2D.PaperTileMapComponent.AddNewLayer(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16919D0>
+	void SetTileMapColor(struct Unknown NewColor); // Function Paper2D.PaperTileMapComponent.SetTileMapColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A3790>
+	char SetTileMap(struct Unknown NewTileMap); // Function Paper2D.PaperTileMapComponent.SetTileMap(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x169FB60>
+	void SetTile(int32_t X, int32_t Y, int32_t Layer, struct Unknown NewValue); // Function Paper2D.PaperTileMapComponent.SetTile(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A3630>
+	void SetLayerColor(struct Unknown NewColor, int32_t Layer); // Function Paper2D.PaperTileMapComponent.SetLayerColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A3460>
+	void SetLayerCollision(int32_t Layer, char bHasCollision, char bOverrideThickness, float CustomThickness, char bOverrideOffset, float CustomOffset, char bRebuildCollision); // Function Paper2D.PaperTileMapComponent.SetLayerCollision(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A3240>
+	void SetDefaultCollisionThickness(float Thickness, char bRebuildCollision); // Function Paper2D.PaperTileMapComponent.SetDefaultCollisionThickness(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A3170>
+	void ResizeMap(int32_t NewWidthInTiles, int32_t NewHeightInTiles); // Function Paper2D.PaperTileMapComponent.ResizeMap(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A30B0>
+	void RebuildCollision(); // Function Paper2D.PaperTileMapComponent.RebuildCollision(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A3090>
+	char OwnsTileMap(); // Function Paper2D.PaperTileMapComponent.OwnsTileMap(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A3060>
+	void MakeTileMapEditable(); // Function Paper2D.PaperTileMapComponent.MakeTileMapEditable(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A3040>
+	void GetTilePolygon(int32_t TileX, int32_t TileY, struct TArray<Unknown>& Points, int32_t LayerIndex, char bWorldSpace); // Function Paper2D.PaperTileMapComponent.GetTilePolygon(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A2CE0>
+	struct Unknown GetTileMapColor(); // Function Paper2D.PaperTileMapComponent.GetTileMapColor(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A2CA0>
+	struct Unknown GetTileCornerPosition(int32_t TileX, int32_t TileY, int32_t LayerIndex, char bWorldSpace); // Function Paper2D.PaperTileMapComponent.GetTileCornerPosition(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A2B40>
+	struct Unknown GetTileCenterPosition(int32_t TileX, int32_t TileY, int32_t LayerIndex, char bWorldSpace); // Function Paper2D.PaperTileMapComponent.GetTileCenterPosition(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A29E0>
+	struct Unknown GetTile(int32_t X, int32_t Y, int32_t Layer); // Function Paper2D.PaperTileMapComponent.GetTile(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A28D0>
+	void GetMapSize(int32_t& MapWidth, int32_t& MapHeight, int32_t& NumLayers); // Function Paper2D.PaperTileMapComponent.GetMapSize(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A2790>
+	struct Unknown GetLayerColor(int32_t Layer); // Function Paper2D.PaperTileMapComponent.GetLayerColor(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A26F0>
+	void CreateNewTileMap(int32_t MapWidth, int32_t MapHeight, int32_t TileWidth, int32_t TileHeight, float PixelsPerUnrealUnit, char bCreateLayer); // Function Paper2D.PaperTileMapComponent.CreateNewTileMap(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A2540>
+	struct Unknown AddNewLayer(); // Function Paper2D.PaperTileMapComponent.AddNewLayer(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A2510>
 };
 
 // Class Paper2D.PaperTileSet
@@ -1345,15 +1345,15 @@ inline void UPaperTileMapComponent::SetDefaultCollisionThickness(float Thickness
 }
 
 // Function Paper2D.PaperTileMapComponent.ResizeMap
-inline void UPaperTileMapComponent::ResizeMap(int32_t New, int32_t NewHeightInTiles) {
+inline void UPaperTileMapComponent::ResizeMap(int32_t NewWidthInTiles, int32_t NewHeightInTiles) {
 	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperTileMapComponent.ResizeMap");
 
 	struct ResizeMap_Params {
-		int32_t New;
+		int32_t NewWidthInTiles;
 		int32_t NewHeightInTiles;
 	}; ResizeMap_Params Params;
 
-	Params.New = New;
+	Params.NewWidthInTiles = NewWidthInTiles;
 	Params.NewHeightInTiles = NewHeightInTiles;
 
 	auto flags = fn->FunctionFlags;
@@ -1524,11 +1524,11 @@ inline struct Unknown UPaperTileMapComponent::GetTile(int32_t X, int32_t Y, int3
 }
 
 // Function Paper2D.PaperTileMapComponent.GetMapSize
-inline void UPaperTileMapComponent::GetMapSize(int32_t& Map, int32_t& MapHeight, int32_t& NumLayers) {
+inline void UPaperTileMapComponent::GetMapSize(int32_t& MapWidth, int32_t& MapHeight, int32_t& NumLayers) {
 	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperTileMapComponent.GetMapSize");
 
 	struct GetMapSize_Params {
-		int32_t& Map;
+		int32_t& MapWidth;
 		int32_t& MapHeight;
 		int32_t& NumLayers;
 	}; GetMapSize_Params Params;
@@ -1538,7 +1538,7 @@ inline void UPaperTileMapComponent::GetMapSize(int32_t& Map, int32_t& MapHeight,
 	UObject::ProcessEvent(fn, &Params);
 	fn->FunctionFlags = flags;
 
-	Map = Params.Map;
+	MapWidth = Params.MapWidth;
 	MapHeight = Params.MapHeight;
 	NumLayers = Params.NumLayers;
 
@@ -1564,11 +1564,11 @@ inline struct Unknown UPaperTileMapComponent::GetLayerColor(int32_t Layer) {
 }
 
 // Function Paper2D.PaperTileMapComponent.CreateNewTileMap
-inline void UPaperTileMapComponent::CreateNewTileMap(int32_t Map, int32_t MapHeight, int32_t TileWidth, int32_t TileHeight, float PixelsPerUnrealUnit, char bCreateLayer) {
+inline void UPaperTileMapComponent::CreateNewTileMap(int32_t MapWidth, int32_t MapHeight, int32_t TileWidth, int32_t TileHeight, float PixelsPerUnrealUnit, char bCreateLayer) {
 	static auto fn = UObject::FindObject<UFunction>("Function Paper2D.PaperTileMapComponent.CreateNewTileMap");
 
 	struct CreateNewTileMap_Params {
-		int32_t Map;
+		int32_t MapWidth;
 		int32_t MapHeight;
 		int32_t TileWidth;
 		int32_t TileHeight;
@@ -1576,7 +1576,7 @@ inline void UPaperTileMapComponent::CreateNewTileMap(int32_t Map, int32_t MapHei
 		char bCreateLayer;
 	}; CreateNewTileMap_Params Params;
 
-	Params.Map = Map;
+	Params.MapWidth = MapWidth;
 	Params.MapHeight = MapHeight;
 	Params.TileWidth = TileWidth;
 	Params.TileHeight = TileHeight;

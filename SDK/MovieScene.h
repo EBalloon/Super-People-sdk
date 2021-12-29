@@ -1,123 +1,123 @@
 // Enum MovieScene.EMovieSceneKeyInterpolation
 enum class EMovieSceneKeyInterpolation : uint8_t {
-	EMovieSceneKeyInterpolation = 0,
-	EMovieSceneKeyInterpolation = 1,
-	EMovieSceneKeyInterpolation = 2,
-	EMovieSceneKeyInterpolation = 3,
-	EMovieSceneKeyInterpolation = 4,
-	EMovieSceneKeyInterpolation = 5,
+	Auto = 0,
+	User = 1,
+	Break = 2,
+	Linear = 3,
+	Constant = 4,
+	EMovieSceneKeyInterpolation_MAX = 5,
 };
 
 // Enum MovieScene.EMovieSceneBlendType
 enum class EMovieSceneBlendType : uint8_t {
-	EMovieSceneBlendType = 0,
-	EMovieSceneBlendType = 1,
-	EMovieSceneBlendType = 2,
-	EMovieSceneBlendType = 4,
-	EMovieSceneBlendType = 5,
+	Invalid = 0,
+	Absolute = 1,
+	Additive = 2,
+	Relative = 4,
+	EMovieSceneBlendType_MAX = 5,
 };
 
 // Enum MovieScene.EMovieSceneBuiltInEasing
 enum class EMovieSceneBuiltInEasing : uint8_t {
-	EMovieSceneBuiltInEasing = 0,
-	EMovieSceneBuiltInEasing = 1,
-	EMovieSceneBuiltInEasing = 2,
-	EMovieSceneBuiltInEasing = 3,
-	EMovieSceneBuiltInEasing = 4,
-	EMovieSceneBuiltInEasing = 5,
-	EMovieSceneBuiltInEasing = 6,
-	EMovieSceneBuiltInEasing = 7,
-	EMovieSceneBuiltInEasing = 8,
-	EMovieSceneBuiltInEasing = 9,
-	EMovieSceneBuiltInEasing = 10,
-	EMovieSceneBuiltInEasing = 11,
-	EMovieSceneBuiltInEasing = 12,
-	EMovieSceneBuiltInEasing = 13,
-	EMovieSceneBuiltInEasing = 14,
-	EMovieSceneBuiltInEasing = 15,
-	EMovieSceneBuiltInEasing = 16,
-	EMovieSceneBuiltInEasing = 17,
-	EMovieSceneBuiltInEasing = 18,
-	EMovieSceneBuiltInEasing = 19,
-	EMovieSceneBuiltInEasing = 20,
-	EMovieSceneBuiltInEasing = 21,
-	EMovieSceneBuiltInEasing = 22,
+	Linear = 0,
+	SinIn = 1,
+	SinOut = 2,
+	SinInOut = 3,
+	QuadIn = 4,
+	QuadOut = 5,
+	QuadInOut = 6,
+	CubicIn = 7,
+	CubicOut = 8,
+	CubicInOut = 9,
+	QuartIn = 10,
+	QuartOut = 11,
+	QuartInOut = 12,
+	QuintIn = 13,
+	QuintOut = 14,
+	QuintInOut = 15,
+	ExpoIn = 16,
+	ExpoOut = 17,
+	ExpoInOut = 18,
+	CircIn = 19,
+	CircOut = 20,
+	CircInOut = 21,
+	EMovieSceneBuiltInEasing_MAX = 22,
 };
 
 // Enum MovieScene.EEvaluationMethod
 enum class EEvaluationMethod : uint8_t {
-	EEvaluationMethod = 0,
-	EEvaluationMethod = 1,
-	EEvaluationMethod = 2,
+	Static = 0,
+	Swept = 1,
+	EEvaluationMethod_MAX = 2,
 };
 
 // Enum MovieScene.EUpdateClockSource
 enum class EUpdateClockSource : uint8_t {
-	EUpdateClockSource = 0,
-	EUpdateClockSource = 1,
-	EUpdateClockSource = 2,
-	EUpdateClockSource = 3,
-	EUpdateClockSource = 4,
-	EUpdateClockSource = 5,
-	EUpdateClockSource = 6,
+	Tick = 0,
+	Platform = 1,
+	Audio = 2,
+	RelativeTimecode = 3,
+	Timecode = 4,
+	Custom = 5,
+	EUpdateClockSource_MAX = 6,
 };
 
 // Enum MovieScene.EMovieSceneEvaluationType
 enum class EMovieSceneEvaluationType : uint8_t {
-	EMovieSceneEvaluationType = 0,
-	EMovieSceneEvaluationType = 1,
-	EMovieSceneEvaluationType = 2,
+	FrameLocked = 0,
+	WithSubFrames = 1,
+	EMovieSceneEvaluationType_MAX = 2,
 };
 
 // Enum MovieScene.EMovieScenePlayerStatus
 enum class EMovieScenePlayerStatus : uint8_t {
-	EMovieScenePlayerStatus = 0,
-	EMovieScenePlayerStatus = 1,
-	EMovieScenePlayerStatus = 2,
-	EMovieScenePlayerStatus = 3,
-	EMovieScenePlayerStatus = 4,
-	EMovieScenePlayerStatus = 5,
-	EMovieScenePlayerStatus = 6,
-	EMovieScenePlayerStatus = 7,
+	Stopped = 0,
+	Playing = 1,
+	Recording = 2,
+	Scrubbing = 3,
+	Jumping = 4,
+	Stepping = 5,
+	Paused = 6,
+	MAX = 7,
 };
 
 // Enum MovieScene.EMovieSceneObjectBindingSpace
 enum class EMovieSceneObjectBindingSpace : uint8_t {
-	EMovieSceneObjectBindingSpace = 0,
-	EMovieSceneObjectBindingSpace = 1,
-	EMovieSceneObjectBindingSpace = 2,
+	Local = 0,
+	Root = 1,
+	EMovieSceneObjectBindingSpace_MAX = 2,
 };
 
 // Enum MovieScene.EMovieSceneCompletionMode
 enum class EMovieSceneCompletionMode : uint8_t {
-	EMovieSceneCompletionMode = 0,
-	EMovieSceneCompletionMode = 1,
-	EMovieSceneCompletionMode = 2,
-	EMovieSceneCompletionMode = 3,
+	KeepState = 0,
+	RestoreState = 1,
+	ProjectDefault = 2,
+	EMovieSceneCompletionMode_MAX = 3,
 };
 
 // Enum MovieScene.ESectionEvaluationFlags
 enum class ESectionEvaluationFlags : uint8_t {
-	ESectionEvaluationFlags = 0,
-	ESectionEvaluationFlags = 1,
-	ESectionEvaluationFlags = 2,
-	ESectionEvaluationFlags = 3,
+	None = 0,
+	PreRoll = 1,
+	PostRoll = 2,
+	ESectionEvaluationFlags_MAX = 3,
 };
 
 // Enum MovieScene.EUpdatePositionMethod
 enum class EUpdatePositionMethod : uint8_t {
-	EUpdatePositionMethod = 0,
-	EUpdatePositionMethod = 1,
-	EUpdatePositionMethod = 2,
-	EUpdatePositionMethod = 3,
+	Play = 0,
+	Jump = 1,
+	Scrub = 2,
+	EUpdatePositionMethod_MAX = 3,
 };
 
 // Enum MovieScene.ESpawnOwnership
 enum class ESpawnOwnership : uint8_t {
-	ESpawnOwnership = 0,
-	ESpawnOwnership = 1,
-	ESpawnOwnership = 2,
-	ESpawnOwnership = 3,
+	InnerSequence = 0,
+	MasterSequence = 1,
+	External = 2,
+	ESpawnOwnership_MAX = 3,
 };
 
 // Class MovieScene.MovieSceneSignedObject
@@ -159,22 +159,22 @@ public:
 	char bSupportsInfiniteRange : 0; // 0xC8 (1)
 	struct Unknown BlendType; // 0xC9 (2)
 
-	void SetRowIndex(int32_t NewRowIndex); // Function MovieScene.MovieSceneSection.SetRowIndex(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31BEB60>
-	void SetPreRollFrames(int32_t InPreRollFrames); // Function MovieScene.MovieSceneSection.SetPreRollFrames(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31BEAD0>
-	void SetPostRollFrames(int32_t InPostRollFrames); // Function MovieScene.MovieSceneSection.SetPostRollFrames(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31BEA40>
-	void SetOverlapPriority(int32_t NewPriority); // Function MovieScene.MovieSceneSection.SetOverlapPriority(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31BE9C0>
-	void SetIsLocked(char bInIsLocked); // Function MovieScene.MovieSceneSection.SetIsLocked(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31BE930>
-	void SetIsActive(char bInIsActive); // Function MovieScene.MovieSceneSection.SetIsActive(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31BE8A0>
-	void SetCompletionMode(enum class Unknow InCompletionMode); // Function MovieScene.MovieSceneSection.SetCompletionMode(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31BE820>
-	void SetBlendType(enum class Unknow InBlendType); // Function MovieScene.MovieSceneSection.SetBlendType(RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31BE7A0>
-	char IsLocked(); // Function MovieScene.MovieSceneSection.IsLocked(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31BE770>
-	char IsActive(); // Function MovieScene.MovieSceneSection.IsActive(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31BE740>
-	int32_t GetRowIndex(); // Function MovieScene.MovieSceneSection.GetRowIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31BE720>
-	int32_t GetPreRollFrames(); // Function MovieScene.MovieSceneSection.GetPreRollFrames(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31BE700>
-	int32_t GetPostRollFrames(); // Function MovieScene.MovieSceneSection.GetPostRollFrames(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31BE6E0>
-	int32_t GetOverlapPriority(); // Function MovieScene.MovieSceneSection.GetOverlapPriority(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31BE6C0>
-	enum class Unknow GetCompletionMode(); // Function MovieScene.MovieSceneSection.GetCompletionMode(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31BE6A0>
-	struct Unknown GetBlendType(); // Function MovieScene.MovieSceneSection.GetBlendType(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31BE670>
+	void SetRowIndex(int32_t NewRowIndex); // Function MovieScene.MovieSceneSection.SetRowIndex(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3979A30>
+	void SetPreRollFrames(int32_t InPreRollFrames); // Function MovieScene.MovieSceneSection.SetPreRollFrames(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x39799A0>
+	void SetPostRollFrames(int32_t InPostRollFrames); // Function MovieScene.MovieSceneSection.SetPostRollFrames(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3979910>
+	void SetOverlapPriority(int32_t NewPriority); // Function MovieScene.MovieSceneSection.SetOverlapPriority(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3979890>
+	void SetIsLocked(char bInIsLocked); // Function MovieScene.MovieSceneSection.SetIsLocked(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3979800>
+	void SetIsActive(char bInIsActive); // Function MovieScene.MovieSceneSection.SetIsActive(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3979770>
+	void SetCompletionMode(enum class Unknow InCompletionMode); // Function MovieScene.MovieSceneSection.SetCompletionMode(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x39796F0>
+	void SetBlendType(enum class Unknow InBlendType); // Function MovieScene.MovieSceneSection.SetBlendType(RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3979670>
+	char IsLocked(); // Function MovieScene.MovieSceneSection.IsLocked(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3979640>
+	char IsActive(); // Function MovieScene.MovieSceneSection.IsActive(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3979610>
+	int32_t GetRowIndex(); // Function MovieScene.MovieSceneSection.GetRowIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x39795F0>
+	int32_t GetPreRollFrames(); // Function MovieScene.MovieSceneSection.GetPreRollFrames(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x39795D0>
+	int32_t GetPostRollFrames(); // Function MovieScene.MovieSceneSection.GetPostRollFrames(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x39795B0>
+	int32_t GetOverlapPriority(); // Function MovieScene.MovieSceneSection.GetOverlapPriority(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3979590>
+	enum class Unknow GetCompletionMode(); // Function MovieScene.MovieSceneSection.GetCompletionMode(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3979570>
+	struct Unknown GetBlendType(); // Function MovieScene.MovieSceneSection.GetBlendType(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3979540>
 };
 
 // Class MovieScene.MovieSceneSequence
@@ -187,8 +187,8 @@ public:
 	char bParentContextsAreSignificant : 0; // 0x341 (1)
 	char bPlayableDirectly : 0; // 0x342 (1)
 
-	struct TArray<Unknown> FindBindingsByTag(struct FName InBindingName); // Function MovieScene.MovieSceneSequence.FindBindingsByTag(Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C2B80>
-	struct Unknown FindBindingByTag(struct FName InBindingName); // Function MovieScene.MovieSceneSequence.FindBindingByTag(Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C2AD0>
+	struct TArray<Unknown> FindBindingsByTag(struct FName InBindingName); // Function MovieScene.MovieSceneSequence.FindBindingsByTag(Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397DA50>
+	struct Unknown FindBindingByTag(struct FName InBindingName); // Function MovieScene.MovieSceneSequence.FindBindingByTag(Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397D9A0>
 };
 
 // Class MovieScene.MovieSceneSequencePlayer
@@ -212,52 +212,52 @@ public:
 	struct Unknown NetSyncProps; // 0x828 (16)
 	struct TScriptInterface<IUnknown> PlaybackClient; // 0x838 (16)
 
-	void StopAtCurrentTime(); // Function MovieScene.MovieSceneSequencePlayer.StopAtCurrentTime(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C4060>
-	void Stop(); // Function MovieScene.MovieSceneSequencePlayer.Stop(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C4040>
-	void SetTimeRange(float StartTime, float Duration); // Function MovieScene.MovieSceneSequencePlayer.SetTimeRange(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C3F80>
-	void SetPlayRate(float PlayRate); // Function MovieScene.MovieSceneSequencePlayer.SetPlayRate(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C3D40>
-	void SetPlaybackRange(float NewStartTime, float NewEndTime); // Function MovieScene.MovieSceneSequencePlayer.SetPlaybackRange(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C3EC0>
-	void SetPlaybackPosition(float NewPlaybackPosition); // Function MovieScene.MovieSceneSequencePlayer.SetPlaybackPosition(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C3DC0>
-	void SetFrameRate(struct Unknown FrameRate); // Function MovieScene.MovieSceneSequencePlayer.SetFrameRate(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C3CB0>
-	void SetFrameRange(int32_t StartFrame, int32_t Duration); // Function MovieScene.MovieSceneSequencePlayer.SetFrameRange(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C3BF0>
-	void SetDisableCameraCuts(char bInDisableCameraCuts); // Function MovieScene.MovieSceneSequencePlayer.SetDisableCameraCuts(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C3B60>
-	void ScrubToSeconds(float TimeInSeconds); // Function MovieScene.MovieSceneSequencePlayer.ScrubToSeconds(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C3440>
-	char ScrubToMarkedFrame(struct FString InLabel); // Function MovieScene.MovieSceneSequencePlayer.ScrubToMarkedFrame(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C3AB0>
-	void ScrubToFrame(struct Unknown NewPosition); // Function MovieScene.MovieSceneSequencePlayer.ScrubToFrame(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C3A20>
-	void Scrub(); // Function MovieScene.MovieSceneSequencePlayer.Scrub(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C3A00>
-	void RPC_OnStopEvent(struct Unknown StoppedTime); // Function MovieScene.MovieSceneSequencePlayer.RPC_OnStopEvent(Final|Net|NetReliableNative|Event|NetMulticast|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C3970>
-	void RPC_ExplicitServerUpdateEvent(enum class Unknow Method, struct Unknown RelevantTime); // Function MovieScene.MovieSceneSequencePlayer.RPC_ExplicitServerUpdateEvent(Final|Net|NetReliableNative|Event|NetMulticast|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C38A0>
-	void PlayToSeconds(float TimeInSeconds); // Function MovieScene.MovieSceneSequencePlayer.PlayToSeconds(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C3820>
-	char PlayToMarkedFrame(struct FString InLabel); // Function MovieScene.MovieSceneSequencePlayer.PlayToMarkedFrame(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C3770>
-	void PlayToFrame(struct Unknown NewPosition); // Function MovieScene.MovieSceneSequencePlayer.PlayToFrame(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C36E0>
-	void PlayReverseEx(int32_t InStartTime); // Function MovieScene.MovieSceneSequencePlayer.PlayReverseEx(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C3660>
-	void PlayReverse(); // Function MovieScene.MovieSceneSequencePlayer.PlayReverse(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C3640>
-	void PlayLooping(int32_t NumLoops, char HasJumped); // Function MovieScene.MovieSceneSequencePlayer.PlayLooping(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C3580>
-	void Play(); // Function MovieScene.MovieSceneSequencePlayer.Play(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C3560>
-	void Pause(); // Function MovieScene.MovieSceneSequencePlayer.Pause(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C3540>
-	void JumpToSeconds(float TimeInSeconds); // Function MovieScene.MovieSceneSequencePlayer.JumpToSeconds(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C34C0>
-	void JumpToPosition(float NewPlaybackPosition); // Function MovieScene.MovieSceneSequencePlayer.JumpToPosition(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C3440>
-	char JumpToMarkedFrame(struct FString InLabel); // Function MovieScene.MovieSceneSequencePlayer.JumpToMarkedFrame(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C3390>
-	void JumpToFrame(struct Unknown NewPosition); // Function MovieScene.MovieSceneSequencePlayer.JumpToFrame(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C3300>
-	char IsReversed(); // Function MovieScene.MovieSceneSequencePlayer.IsReversed(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C32D0>
-	char IsPlaying(); // Function MovieScene.MovieSceneSequencePlayer.IsPlaying(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C32A0>
-	char IsPaused(); // Function MovieScene.MovieSceneSequencePlayer.IsPaused(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C3270>
-	void GoToEndAndStop(); // Function MovieScene.MovieSceneSequencePlayer.GoToEndAndStop(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C3250>
-	struct Unknown GetStartTime(); // Function MovieScene.MovieSceneSequencePlayer.GetStartTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C3200>
-	float GetPlayRate(); // Function MovieScene.MovieSceneSequencePlayer.GetPlayRate(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C2FD0>
-	float GetPlaybackStart(); // Function MovieScene.MovieSceneSequencePlayer.GetPlaybackStart(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C3180>
-	float GetPlaybackPosition(); // Function MovieScene.MovieSceneSequencePlayer.GetPlaybackPosition(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C3090>
-	float GetPlaybackEnd(); // Function MovieScene.MovieSceneSequencePlayer.GetPlaybackEnd(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C3000>
-	struct TArray<Unknown> GetObjectBindings(struct Unknown InObject); // Function MovieScene.MovieSceneSequencePlayer.GetObjectBindings(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C2EF0>
-	float GetLength(); // Function MovieScene.MovieSceneSequencePlayer.GetLength(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C2EC0>
-	struct Unknown GetFrameRate(); // Function MovieScene.MovieSceneSequencePlayer.GetFrameRate(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C2EA0>
-	int32_t GetFrameDuration(); // Function MovieScene.MovieSceneSequencePlayer.GetFrameDuration(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C2E70>
-	struct Unknown GetEndTime(); // Function MovieScene.MovieSceneSequencePlayer.GetEndTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C2E10>
-	struct Unknown GetDuration(); // Function MovieScene.MovieSceneSequencePlayer.GetDuration(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C2DD0>
-	char GetDisableCameraCuts(); // Function MovieScene.MovieSceneSequencePlayer.GetDisableCameraCuts(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C2DA0>
-	struct Unknown GetCurrentTime(); // Function MovieScene.MovieSceneSequencePlayer.GetCurrentTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C2D60>
-	struct TArray<Unknown> GetBoundObjects(struct Unknown ObjectBinding); // Function MovieScene.MovieSceneSequencePlayer.GetBoundObjects(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C2C60>
-	void ChangePlaybackDirection(); // Function MovieScene.MovieSceneSequencePlayer.ChangePlaybackDirection(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C2AB0>
+	void StopAtCurrentTime(); // Function MovieScene.MovieSceneSequencePlayer.StopAtCurrentTime(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397EF30>
+	void Stop(); // Function MovieScene.MovieSceneSequencePlayer.Stop(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397EF10>
+	void SetTimeRange(float StartTime, float Duration); // Function MovieScene.MovieSceneSequencePlayer.SetTimeRange(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397EE50>
+	void SetPlayRate(float PlayRate); // Function MovieScene.MovieSceneSequencePlayer.SetPlayRate(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397EC10>
+	void SetPlaybackRange(float NewStartTime, float NewEndTime); // Function MovieScene.MovieSceneSequencePlayer.SetPlaybackRange(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397ED90>
+	void SetPlaybackPosition(float NewPlaybackPosition); // Function MovieScene.MovieSceneSequencePlayer.SetPlaybackPosition(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397EC90>
+	void SetFrameRate(struct Unknown FrameRate); // Function MovieScene.MovieSceneSequencePlayer.SetFrameRate(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397EB80>
+	void SetFrameRange(int32_t StartFrame, int32_t Duration); // Function MovieScene.MovieSceneSequencePlayer.SetFrameRange(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397EAC0>
+	void SetDisableCameraCuts(char bInDisableCameraCuts); // Function MovieScene.MovieSceneSequencePlayer.SetDisableCameraCuts(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397EA30>
+	void ScrubToSeconds(float TimeInSeconds); // Function MovieScene.MovieSceneSequencePlayer.ScrubToSeconds(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397E310>
+	char ScrubToMarkedFrame(struct FString InLabel); // Function MovieScene.MovieSceneSequencePlayer.ScrubToMarkedFrame(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397E980>
+	void ScrubToFrame(struct Unknown NewPosition); // Function MovieScene.MovieSceneSequencePlayer.ScrubToFrame(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397E8F0>
+	void Scrub(); // Function MovieScene.MovieSceneSequencePlayer.Scrub(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397E8D0>
+	void RPC_OnStopEvent(struct Unknown StoppedTime); // Function MovieScene.MovieSceneSequencePlayer.RPC_OnStopEvent(Final|Net|NetReliableNative|Event|NetMulticast|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397E840>
+	void RPC_ExplicitServerUpdateEvent(enum class Unknow Method, struct Unknown RelevantTime); // Function MovieScene.MovieSceneSequencePlayer.RPC_ExplicitServerUpdateEvent(Final|Net|NetReliableNative|Event|NetMulticast|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397E770>
+	void PlayToSeconds(float TimeInSeconds); // Function MovieScene.MovieSceneSequencePlayer.PlayToSeconds(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397E6F0>
+	char PlayToMarkedFrame(struct FString InLabel); // Function MovieScene.MovieSceneSequencePlayer.PlayToMarkedFrame(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397E640>
+	void PlayToFrame(struct Unknown NewPosition); // Function MovieScene.MovieSceneSequencePlayer.PlayToFrame(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397E5B0>
+	void PlayReverseEx(int32_t InStartTime); // Function MovieScene.MovieSceneSequencePlayer.PlayReverseEx(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397E530>
+	void PlayReverse(); // Function MovieScene.MovieSceneSequencePlayer.PlayReverse(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397E510>
+	void PlayLooping(int32_t NumLoops, char HasJumped); // Function MovieScene.MovieSceneSequencePlayer.PlayLooping(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397E450>
+	void Play(); // Function MovieScene.MovieSceneSequencePlayer.Play(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397E430>
+	void Pause(); // Function MovieScene.MovieSceneSequencePlayer.Pause(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397E410>
+	void JumpToSeconds(float TimeInSeconds); // Function MovieScene.MovieSceneSequencePlayer.JumpToSeconds(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397E390>
+	void JumpToPosition(float NewPlaybackPosition); // Function MovieScene.MovieSceneSequencePlayer.JumpToPosition(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397E310>
+	char JumpToMarkedFrame(struct FString InLabel); // Function MovieScene.MovieSceneSequencePlayer.JumpToMarkedFrame(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397E260>
+	void JumpToFrame(struct Unknown NewPosition); // Function MovieScene.MovieSceneSequencePlayer.JumpToFrame(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397E1D0>
+	char IsReversed(); // Function MovieScene.MovieSceneSequencePlayer.IsReversed(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397E1A0>
+	char IsPlaying(); // Function MovieScene.MovieSceneSequencePlayer.IsPlaying(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397E170>
+	char IsPaused(); // Function MovieScene.MovieSceneSequencePlayer.IsPaused(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397E140>
+	void GoToEndAndStop(); // Function MovieScene.MovieSceneSequencePlayer.GoToEndAndStop(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397E120>
+	struct Unknown GetStartTime(); // Function MovieScene.MovieSceneSequencePlayer.GetStartTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397E0D0>
+	float GetPlayRate(); // Function MovieScene.MovieSceneSequencePlayer.GetPlayRate(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397DEA0>
+	float GetPlaybackStart(); // Function MovieScene.MovieSceneSequencePlayer.GetPlaybackStart(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397E050>
+	float GetPlaybackPosition(); // Function MovieScene.MovieSceneSequencePlayer.GetPlaybackPosition(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397DF60>
+	float GetPlaybackEnd(); // Function MovieScene.MovieSceneSequencePlayer.GetPlaybackEnd(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397DED0>
+	struct TArray<Unknown> GetObjectBindings(struct Unknown InObject); // Function MovieScene.MovieSceneSequencePlayer.GetObjectBindings(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397DDC0>
+	float GetLength(); // Function MovieScene.MovieSceneSequencePlayer.GetLength(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397DD90>
+	struct Unknown GetFrameRate(); // Function MovieScene.MovieSceneSequencePlayer.GetFrameRate(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397DD70>
+	int32_t GetFrameDuration(); // Function MovieScene.MovieSceneSequencePlayer.GetFrameDuration(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397DD40>
+	struct Unknown GetEndTime(); // Function MovieScene.MovieSceneSequencePlayer.GetEndTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397DCE0>
+	struct Unknown GetDuration(); // Function MovieScene.MovieSceneSequencePlayer.GetDuration(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397DCA0>
+	char GetDisableCameraCuts(); // Function MovieScene.MovieSceneSequencePlayer.GetDisableCameraCuts(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397DC70>
+	struct Unknown GetCurrentTime(); // Function MovieScene.MovieSceneSequencePlayer.GetCurrentTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397DC30>
+	struct TArray<Unknown> GetBoundObjects(struct Unknown ObjectBinding); // Function MovieScene.MovieSceneSequencePlayer.GetBoundObjects(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397DB30>
+	void ChangePlaybackDirection(); // Function MovieScene.MovieSceneSequencePlayer.ChangePlaybackDirection(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x397D980>
 };
 
 // Class MovieScene.MovieSceneSubSection
@@ -274,8 +274,8 @@ public:
 	struct FString TargetSequenceName; // 0x138 (16)
 	struct Unknown TargetPathToRecordTo; // 0x148 (16)
 
-	void SetSequence(struct Unknown Sequence); // Function MovieScene.MovieSceneSubSection.SetSequence(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C6D90>
-	struct Unknown GetSequence(); // Function MovieScene.MovieSceneSubSection.GetSequence(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x31C6D60>
+	void SetSequence(struct Unknown Sequence); // Function MovieScene.MovieSceneSubSection.SetSequence(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3981C60>
+	struct Unknown GetSequence(); // Function MovieScene.MovieSceneSubSection.GetSequence(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3981C30>
 };
 
 // Class MovieScene.MovieSceneSubTrack
@@ -307,8 +307,8 @@ public:
 	struct TArray<Unknown> MarkedFrames; // 0x138 (16)
 };
 
-// Class MovieScene.MovieSceneBindingOv
-class UMovieSceneBindingOv : public Object {
+// Class MovieScene.MovieSceneBindingOverrides
+class UMovieSceneBindingOverrides : public Object {
 
 public:
 
@@ -502,8 +502,8 @@ struct FMovieSceneBinding {
 	struct TArray<Unknown> Tracks; // 0x20 (16)
 };
 
-// ScriptStruct MovieScene.MovieSceneBindingOv
-struct FMovieSceneBindingOvwn {
+// ScriptStruct MovieScene.MovieSceneBindingOverrideData
+struct FMovieSceneBindingOverrideData {
 	struct Unknown ObjectBindingID; // 0x0 (24)
 	struct TWeakObjectPtr<struct Unknown> Object; // 0x18 (8)
 	char bOverridesDefault : 0; // 0x20 (1)
@@ -538,8 +538,8 @@ struct FMovieSceneEvaluationMetaData {
 	struct TMap<Unknown, Unknown> SubTemplateSerialNumbers; // 0x20 (80)
 };
 
-// ScriptStruct MovieScene.MovieSceneOrderedEvnMetaData
-struct FMovieSceneOrderedEv {
+// ScriptStruct MovieScene.MovieSceneOrderedEvaluationKey
+struct FMovieSceneOrderedEvaluationKey {
 	struct Unknown Key; // 0x0 (12)
 	uint16_t SetupIndex; // 0xC (2)
 	uint16_t TearDownIndex; // 0xE (2)
@@ -737,8 +737,8 @@ struct FMovieSceneEasingSettings {
 	int32_t ManualEaseOutDuration; // 0x34 (4)
 };
 
-// ScriptStruct MovieScene.MovieSceneSectionEvtings
-struct FMovieSceneSectionEvtings {
+// ScriptStruct MovieScene.MovieSceneSectionEvalOptions
+struct FMovieSceneSectionEvalOptions {
 	char bCanEditCompletionMode : 0; // 0x0 (1)
 	enum class Unknow CompletionMode; // 0x1 (1)
 };

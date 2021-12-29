@@ -1,8 +1,8 @@
 // Enum OodleNetworkHandlerComponent.EOodleEnableMode
 enum class EOodleEnableMode : uint8_t {
-	EOodleEnableMode = 0,
-	EOodleEnableMode = 1,
-	EOodleEnableMode = 2,
+	AlwaysEnabled = 0,
+	WhenCompressedPacketReceived = 1,
+	EOodleEnableMode_MAX = 2,
 };
 
 // Class OodleNetworkHandlerComponent.OodleNetworkTrainerCommandlet

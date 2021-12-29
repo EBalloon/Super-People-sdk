@@ -1,9 +1,9 @@
 // Enum BravoHotelApp.EDSConnectionType
 enum class EDSConnectionType : uint8_t {
-	EDSConnectionType = 0,
-	EDSConnectionType = 1,
-	EDSConnectionType = 2,
-	EDSConnectionType = 3,
-	EDSConnectionType = 4,
+	Unknown = 0,
+	NewMatching = 1,
+	Reconnecting = 2,
+	Manually = 3,
+	EDSConnectionType_MAX = 4,
 };
 

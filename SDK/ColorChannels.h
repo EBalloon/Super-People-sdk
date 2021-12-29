@@ -1,8 +1,8 @@
 // UserDefinedEnum ColorChannels.ColorChannels
 enum class ColorChannels : uint8_t {
-	ColorChannels = 0,
-	ColorChannels = 1,
-	ColorChannels = 2,
-	ColorChannels = 3,
+	NewEnumerator0 = 0,
+	NewEnumerator1 = 1,
+	NewEnumerator2 = 2,
+	ColorChannels_MAX = 3,
 };
 

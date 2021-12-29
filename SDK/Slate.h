@@ -1,170 +1,170 @@
 // Enum Slate.ETextJustify
 enum class ETextJustify : uint8_t {
-	ETextJustify = 0,
-	ETextJustify = 1,
-	ETextJustify = 2,
-	ETextJustify = 3,
+	Left = 0,
+	Center = 1,
+	Right = 2,
+	ETextJustify_MAX = 3,
 };
 
 // Enum Slate.ETextFlowDirection
 enum class ETextFlowDirection : uint8_t {
-	ETextFlowDirection = 0,
-	ETextFlowDirection = 1,
-	ETextFlowDirection = 2,
-	ETextFlowDirection = 3,
+	Auto = 0,
+	LeftToRight = 1,
+	RightToLeft = 2,
+	ETextFlowDirection_MAX = 3,
 };
 
 // Enum Slate.EVirtualKeyboardDismissAction
 enum class EVirtualKeyboardDismissAction : uint8_t {
-	EVirtualKeyboardDismissAction = 0,
-	EVirtualKeyboardDismissAction = 1,
-	EVirtualKeyboardDismissAction = 2,
-	EVirtualKeyboardDismissAction = 3,
+	TextChangeOnDismiss = 0,
+	TextCommitOnAccept = 1,
+	TextCommitOnDismiss = 2,
+	EVirtualKeyboardDismissAction_MAX = 3,
 };
 
 // Enum Slate.EVirtualKeyboardTrigger
 enum class EVirtualKeyboardTrigger : uint8_t {
-	EVirtualKeyboardTrigger = 0,
-	EVirtualKeyboardTrigger = 1,
-	EVirtualKeyboardTrigger = 2,
+	OnFocusByPointer = 0,
+	OnAllFocusEvents = 1,
+	EVirtualKeyboardTrigger_MAX = 2,
 };
 
 // Enum Slate.ETextWrappingPolicy
 enum class ETextWrappingPolicy : uint8_t {
-	ETextWrappingPolicy = 0,
-	ETextWrappingPolicy = 1,
-	ETextWrappingPolicy = 2,
-	ETextWrappingPolicy = 3,
+	DefaultWrapping = 0,
+	AllowPerCharacterWrapping = 1,
+	AllowPerCharacterEllipsis = 2,
+	ETextWrappingPolicy_MAX = 3,
 };
 
 // Enum Slate.ETableViewMode
 enum class ETableViewMode : uint8_t {
-	ETableViewMode = 0,
-	ETableViewMode = 1,
-	ETableViewMode = 2,
-	ETableViewMode = 3,
+	List = 0,
+	Tile = 1,
+	Tree = 2,
+	ETableViewMode_MAX = 3,
 };
 
 // Enum Slate.ESelectionMode
 enum class ESelectionMode : uint8_t {
-	ESelectionMode = 0,
-	ESelectionMode = 1,
-	ESelectionMode = 2,
-	ESelectionMode = 3,
-	ESelectionMode = 4,
+	None = 0,
+	Single = 1,
+	SingleToggle = 2,
+	Multi = 3,
+	ESelectionMode_MAX = 4,
 };
 
 // Enum Slate.EMultiBlockType
 enum class EMultiBlockType : uint8_t {
-	EMultiBlockType = 0,
-	EMultiBlockType = 1,
-	EMultiBlockType = 2,
-	EMultiBlockType = 3,
-	EMultiBlockType = 4,
-	EMultiBlockType = 5,
-	EMultiBlockType = 6,
-	EMultiBlockType = 7,
-	EMultiBlockType = 8,
-	EMultiBlockType = 9,
-	EMultiBlockType = 10,
+	None = 0,
+	ButtonRow = 1,
+	EditableText = 2,
+	Heading = 3,
+	MenuEntry = 4,
+	MenuSeparator = 5,
+	ToolBarButton = 6,
+	ToolBarComboButton = 7,
+	ToolBarSeparator = 8,
+	Widget = 9,
+	EMultiBlockType_MAX = 10,
 };
 
 // Enum Slate.EMultiBoxType
 enum class EMultiBoxType : uint8_t {
-	EMultiBoxType = 0,
-	EMultiBoxType = 1,
-	EMultiBoxType = 2,
-	EMultiBoxType = 3,
-	EMultiBoxType = 4,
-	EMultiBoxType = 5,
-	EMultiBoxType = 6,
-	EMultiBoxType = 7,
+	MenuBar = 0,
+	ToolBar = 1,
+	VerticalToolBar = 2,
+	UniformToolBar = 3,
+	Menu = 4,
+	ButtonRow = 5,
+	ToolMenuBar = 6,
+	EMultiBoxType_MAX = 7,
 };
 
 // Enum Slate.EProgressBarFillType
 enum class EProgressBarFillType : uint8_t {
-	EProgressBarFillType = 0,
-	EProgressBarFillType = 1,
-	EProgressBarFillType = 2,
-	EProgressBarFillType = 3,
-	EProgressBarFillType = 4,
-	EProgressBarFillType = 5,
+	LeftToRight = 0,
+	RightToLeft = 1,
+	FillFromCenter = 2,
+	TopToBottom = 3,
+	BottomToTop = 4,
+	EProgressBarFillType_MAX = 5,
 };
 
 // Enum Slate.EStretch
 enum class EStretch : uint8_t {
-	EStretch = 0,
-	EStretch = 1,
-	EStretch = 2,
-	EStretch = 3,
-	EStretch = 4,
-	EStretch = 5,
-	EStretch = 6,
-	EStretch = 7,
-	EStretch = 8,
+	None = 0,
+	Fill = 1,
+	ScaleToFit = 2,
+	ScaleToFitX = 3,
+	ScaleToFitY = 4,
+	ScaleToFill = 5,
+	ScaleBySafeZone = 6,
+	UserSpecified = 7,
+	EStretch_MAX = 8,
 };
 
 // Enum Slate.EStretchDirection
 enum class EStretchDirection : uint8_t {
-	EStretchDirection = 0,
-	EStretchDirection = 1,
-	EStretchDirection = 2,
-	EStretchDirection = 3,
+	Both = 0,
+	DownOnly = 1,
+	UpOnly = 2,
+	EStretchDirection_MAX = 3,
 };
 
 // Enum Slate.EScrollWhenFocusChanges
 enum class EScrollWhenFocusChanges : uint8_t {
-	EScrollWhenFocusChanges = 0,
-	EScrollWhenFocusChanges = 1,
-	EScrollWhenFocusChanges = 2,
-	EScrollWhenFocusChanges = 3,
+	NoScroll = 0,
+	InstantScroll = 1,
+	AnimatedScroll = 2,
+	EScrollWhenFocusChanges_MAX = 3,
 };
 
 // Enum Slate.EDescendantScrollDestination
 enum class EDescendantScrollDestination : uint8_t {
-	EDescendantScrollDestination = 0,
-	EDescendantScrollDestination = 1,
-	EDescendantScrollDestination = 2,
-	EDescendantScrollDestination = 3,
+	IntoView = 0,
+	TopOrLeft = 1,
+	Center = 2,
+	EDescendantScrollDestination_MAX = 3,
 };
 
 // Enum Slate.EListItemAlignment
 enum class EListItemAlignment : uint8_t {
-	EListItemAlignment = 0,
-	EListItemAlignment = 1,
-	EListItemAlignment = 2,
-	EListItemAlignment = 3,
-	EListItemAlignment = 4,
-	EListItemAlignment = 5,
-	EListItemAlignment = 6,
-	EListItemAlignment = 7,
+	EvenlyDistributed = 0,
+	EvenlySize = 1,
+	EvenlyWide = 2,
+	LeftAligned = 3,
+	RightAligned = 4,
+	CenterAligned = 5,
+	Fill = 6,
+	EListItemAlignment_MAX = 7,
 };
 
 // Enum Slate.ECustomizedToolMenuVisibility
 enum class ECustomizedToolMenuVisibility : uint8_t {
-	ECustomizedToolMenuVisibility = 0,
-	ECustomizedToolMenuVisibility = 1,
-	ECustomizedToolMenuVisibility = 2,
-	ECustomizedToolMenuVisibility = 3,
+	None = 0,
+	Visible = 1,
+	Hidden = 2,
+	ECustomizedToolMenuVisibility_MAX = 3,
 };
 
 // Enum Slate.EMultipleKeyBindingIndex
 enum class EMultipleKeyBindingIndex : uint8_t {
-	EMultipleKeyBindingIndex = 0,
-	EMultipleKeyBindingIndex = 1,
-	EMultipleKeyBindingIndex = 2,
-	EMultipleKeyBindingIndex = 3,
+	Primary = 0,
+	Secondary = 1,
+	NumChords = 2,
+	EMultipleKeyBindingIndex_MAX = 3,
 };
 
 // Enum Slate.EUserInterfaceActionType
 enum class EUserInterfaceActionType : uint8_t {
-	EUserInterfaceActionType = 0,
-	EUserInterfaceActionType = 1,
-	EUserInterfaceActionType = 2,
-	EUserInterfaceActionType = 3,
-	EUserInterfaceActionType = 4,
-	EUserInterfaceActionType = 5,
-	EUserInterfaceActionType = 6,
+	None = 0,
+	Button = 1,
+	ToggleButton = 2,
+	RadioButton = 3,
+	Check = 4,
+	CollapsedButton = 5,
+	EUserInterfaceActionType_MAX = 6,
 };
 
 // Class Slate.ButtonWidgetStyle

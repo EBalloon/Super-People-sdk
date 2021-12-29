@@ -1,98 +1,98 @@
 // Enum DatasmithContent.EDatasmithAreaLightActorType
 enum class EDatasmithAreaLightActorType : uint8_t {
-	EDatasmithAreaLightActorType = 0,
-	EDatasmithAreaLightActorType = 1,
-	EDatasmithAreaLightActorType = 2,
-	EDatasmithAreaLightActorType = 3,
+	Point = 0,
+	Spot = 1,
+	Rect = 2,
+	EDatasmithAreaLightActorType_MAX = 3,
 };
 
 // Enum DatasmithContent.EDatasmithAreaLightActorShape
 enum class EDatasmithAreaLightActorShape : uint8_t {
-	EDatasmithAreaLightActorShape = 0,
-	EDatasmithAreaLightActorShape = 1,
-	EDatasmithAreaLightActorShape = 2,
-	EDatasmithAreaLightActorShape = 3,
-	EDatasmithAreaLightActorShape = 4,
-	EDatasmithAreaLightActorShape = 5,
+	Rectangle = 0,
+	Disc = 1,
+	Sphere = 2,
+	Cylinder = 3,
+	None = 4,
+	EDatasmithAreaLightActorShape_MAX = 5,
 };
 
 // Enum DatasmithContent.EDatasmithCADStitchingTechnique
 enum class EDatasmithCADStitchingTechnique : uint8_t {
-	EDatasmithCADStitchingTechnique = 0,
-	EDatasmithCADStitchingTechnique = 1,
-	EDatasmithCADStitchingTechnique = 2,
-	EDatasmithCADStitchingTechnique = 3,
+	StitchingNone = 0,
+	StitchingHeal = 1,
+	StitchingSew = 2,
+	EDatasmithCADStitchingTechnique_MAX = 3,
 };
 
 // Enum DatasmithContent.EDatasmithImportHierarchy
 enum class EDatasmithImportHierarchy : uint8_t {
-	EDatasmithImportHierarchy = 0,
-	EDatasmithImportHierarchy = 1,
-	EDatasmithImportHierarchy = 2,
-	EDatasmithImportHierarchy = 3,
+	UseMultipleActors = 0,
+	UseSingleActor = 1,
+	UseOneBlueprint = 2,
+	EDatasmithImportHierarchy_MAX = 3,
 };
 
 // Enum DatasmithContent.EDatasmithImportScene
 enum class EDatasmithImportScene : uint8_t {
-	EDatasmithImportScene = 0,
-	EDatasmithImportScene = 1,
-	EDatasmithImportScene = 2,
-	EDatasmithImportScene = 3,
+	NewLevel = 0,
+	CurrentLevel = 1,
+	AssetsOnly = 2,
+	EDatasmithImportScene_MAX = 3,
 };
 
 // Enum DatasmithContent.EDatasmithImportLightmapMax
 enum class EDatasmithImportLightmapMax : uint8_t {
-	EDatasmithImportLightmapMax_65 = 0,
-	EDatasmithImportLightmapMax_129 = 1,
-	EDatasmithImportLightmapMax_257 = 2,
-	EDatasmithImportLightmapMax_513 = 3,
-	EDatasmithImportLightmapMax_1025 = 4,
-	EDatasmithImportLightmapMax_2049 = 5,
-	EDatasmithImportLightmapMax_4097 = 6,
-	EDatasmithImportLightmapMax = 7,
+	LIGHTMAP_65 = 0,
+	LIGHTMAP_129 = 1,
+	LIGHTMAP_257 = 2,
+	LIGHTMAP_513 = 3,
+	LIGHTMAP_1025 = 4,
+	LIGHTMAP_2049 = 5,
+	LIGHTMAP_4097 = 6,
+	LIGHTMAP_MAX = 7,
 };
 
 // Enum DatasmithContent.EDatasmithImportLightmapMin
 enum class EDatasmithImportLightmapMin : uint8_t {
-	EDatasmithImportLightmapMin_17 = 0,
-	EDatasmithImportLightmapMin_33 = 1,
-	EDatasmithImportLightmapMin_65 = 2,
-	EDatasmithImportLightmapMin_129 = 3,
-	EDatasmithImportLightmapMin_257 = 4,
-	EDatasmithImportLightmapMin_513 = 5,
-	EDatasmithImportLightmapMin = 6,
+	LIGHTMAP_17 = 0,
+	LIGHTMAP_33 = 1,
+	LIGHTMAP_65 = 2,
+	LIGHTMAP_129 = 3,
+	LIGHTMAP_257 = 4,
+	LIGHTMAP_513 = 5,
+	LIGHTMAP_MAX = 6,
 };
 
 // Enum DatasmithContent.EDatasmithImportMaterialQuality
 enum class EDatasmithImportMaterialQuality : uint8_t {
-	EDatasmithImportMaterialQuality = 0,
-	EDatasmithImportMaterialQuality = 1,
-	EDatasmithImportMaterialQuality = 2,
-	EDatasmithImportMaterialQuality = 3,
+	UseNoFresnelCurves = 0,
+	UseSimplifierFresnelCurves = 1,
+	UseRealFresnelCurves = 2,
+	EDatasmithImportMaterialQuality_MAX = 3,
 };
 
 // Enum DatasmithContent.EDatasmithImportActorPolicy
 enum class EDatasmithImportActorPolicy : uint8_t {
-	EDatasmithImportActorPolicy = 0,
-	EDatasmithImportActorPolicy = 1,
-	EDatasmithImportActorPolicy = 2,
-	EDatasmithImportActorPolicy = 3,
+	Update = 0,
+	Full = 1,
+	Ignore = 2,
+	EDatasmithImportActorPolicy_MAX = 3,
 };
 
 // Enum DatasmithContent.EDatasmithImportAssetConflictPolicy
 enum class EDatasmithImportAssetConflictPolicy : uint8_t {
-	EDatasmithImportAssetConflictPolicy = 0,
-	EDatasmithImportAssetConflictPolicy = 1,
-	EDatasmithImportAssetConflictPolicy = 2,
-	EDatasmithImportAssetConflictPolicy = 3,
-	EDatasmithImportAssetConflictPolicy = 4,
+	Replace = 0,
+	Update = 1,
+	Use = 2,
+	Ignore = 3,
+	EDatasmithImportAssetConflictPolicy_MAX = 4,
 };
 
 // Enum DatasmithContent.EDatasmithImportSearchPackagePolicy
 enum class EDatasmithImportSearchPackagePolicy : uint8_t {
-	EDatasmithImportSearchPackagePolicy = 0,
-	EDatasmithImportSearchPackagePolicy = 1,
-	EDatasmithImportSearchPackagePolicy = 2,
+	Current = 0,
+	All = 1,
+	EDatasmithImportSearchPackagePolicy_MAX = 2,
 };
 
 // Class DatasmithContent.DatasmithActorTemplate
@@ -258,7 +258,7 @@ public:
 
 	struct TArray<Unknown> ImportedSequences; // 0x310 (16)
 
-	void PlayLevelSequence(struct Unknown SequenceToPlay); // Function DatasmithContent.DatasmithImportedSequencesActor.PlayLevelSequence(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16B5B80>
+	void PlayLevelSequence(struct Unknown SequenceToPlay); // Function DatasmithContent.DatasmithImportedSequencesActor.PlayLevelSequence(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16C66C0>
 };
 
 // Class DatasmithContent.DatasmithCommonTessellationOptions
@@ -445,8 +445,8 @@ struct FDatasmithCameraLensSettingsTemplate {
 	float MaxFStop; // 0x0 (4)
 };
 
-// ScriptStruct DatasmithContent.DatasmithCameraFilmbackSetting
-struct FDatasmithCameraFilmbackSetting {
+// ScriptStruct DatasmithContent.DatasmithCameraFilmbackSettingsTemplate
+struct FDatasmithCameraFilmbackSettingsTemplate {
 	float SensorWidth; // 0x0 (4)
 	float SensorHeight; // 0x4 (4)
 };

@@ -1,81 +1,81 @@
 // Enum AnimGraphRuntime.ESphericalLimitType
 enum class ESphericalLimitType : uint8_t {
-	ESphericalLimitType = 0,
-	ESphericalLimitType = 1,
-	ESphericalLimitType = 2,
+	Inner = 0,
+	Outer = 1,
+	ESphericalLimitType_MAX = 2,
 };
 
 // Enum AnimGraphRuntime.AnimPhysSimSpaceType
 enum class AnimPhysSimSpaceType : uint8_t {
-	AnimPhysSimSpaceType = 0,
-	AnimPhysSimSpaceType = 1,
-	AnimPhysSimSpaceType = 2,
-	AnimPhysSimSpaceType = 3,
-	AnimPhysSimSpaceType = 4,
-	AnimPhysSimSpaceType = 5,
+	Component = 0,
+	Actor = 1,
+	World = 2,
+	RootRelative = 3,
+	BoneRelative = 4,
+	AnimPhysSimSpaceType_MAX = 5,
 };
 
 // Enum AnimGraphRuntime.AnimPhysLinearConstraintType
 enum class AnimPhysLinearConstraintType : uint8_t {
-	AnimPhysLinearConstraintType = 0,
-	AnimPhysLinearConstraintType = 1,
-	AnimPhysLinearConstraintType = 2,
+	Free = 0,
+	Limited = 1,
+	AnimPhysLinearConstraintType_MAX = 2,
 };
 
 // Enum AnimGraphRuntime.AnimPhysAngularConstraintType
 enum class AnimPhysAngularConstraintType : uint8_t {
-	AnimPhysAngularConstraintType = 0,
-	AnimPhysAngularConstraintType = 1,
-	AnimPhysAngularConstraintType = 2,
+	Angular = 0,
+	Cone = 1,
+	AnimPhysAngularConstraintType_MAX = 2,
 };
 
 // Enum AnimGraphRuntime.EBlendListTransitionType
 enum class EBlendListTransitionType : uint8_t {
-	EBlendListTransitionType = 0,
-	EBlendListTransitionType = 1,
-	EBlendListTransitionType = 2,
+	StandardBlend = 0,
+	Inertialization = 1,
+	EBlendListTransitionType_MAX = 2,
 };
 
 // Enum AnimGraphRuntime.EDrivenDestinationMode
 enum class EDrivenDestinationMode : uint8_t {
-	EDrivenDestinationMode = 0,
-	EDrivenDestinationMode = 1,
-	EDrivenDestinationMode = 2,
-	EDrivenDestinationMode = 3,
+	Bone = 0,
+	MorphTarget = 1,
+	MaterialParameter = 2,
+	EDrivenDestinationMode_MAX = 3,
 };
 
 // Enum AnimGraphRuntime.EDrivenBoneModificationMode
 enum class EDrivenBoneModificationMode : uint8_t {
-	EDrivenBoneModificationMode = 0,
-	EDrivenBoneModificationMode = 1,
-	EDrivenBoneModificationMode = 2,
-	EDrivenBoneModificationMode = 3,
+	AddToInput = 0,
+	ReplaceComponent = 1,
+	AddToRefPose = 2,
+	EDrivenBoneModificationMode_MAX = 3,
 };
 
 // Enum AnimGraphRuntime.EConstraintOffsetOption
 enum class EConstraintOffsetOption : uint8_t {
-	EConstraintOffsetOption = 0,
-	EConstraintOffsetOption = 1,
-	EConstraintOffsetOption = 2,
+	None = 0,
+	Offset_RefPose = 1,
+	EConstraintOffsetOption_MAX = 2,
 };
 
 // Enum AnimGraphRuntime.CopyBoneDeltaMode
 enum class CopyBoneDeltaMode : uint8_t {
-	CopyBoneDeltaMode = 0,
-	CopyBoneDeltaMode = 1,
-	CopyBoneDeltaMode = 2,
+	Accumulate = 0,
+	Copy = 1,
+	CopyBoneDeltaMode_MAX = 2,
 };
 
 // Enum AnimGraphRuntime.EInterpolationBlend
 enum class EInterpolationBlend : uint8_t {
-	EInterpolationBlend = 0,
-	EInterpolationBlend = 1,
-	EInterpolationBlend = 2,
-	EInterpolationBlend = 3,
-	EInterpolationBlend = 4,
-	EInterpolationBlend = 5,
-	EInterpolationBlend = 6,
-	EInterpolationBlend = 7,
+	Linear = 0,
+	Cubic = 1,
+	Sinusoidal = 2,
+	EaseInOutExponent2 = 3,
+	EaseInOutExponent3 = 4,
+	EaseInOutExponent4 = 5,
+	EaseInOutExponent5 = 6,
+	MAX = 7,
 };
 
 // Enum AnimGraphRuntime.EBoneModificationMode
@@ -88,41 +88,41 @@ enum class EBoneModificationMode : uint8_t {
 
 // Enum AnimGraphRuntime.EModifyCurveApplyMode
 enum class EModifyCurveApplyMode : uint8_t {
-	EModifyCurveApplyMode = 0,
-	EModifyCurveApplyMode = 1,
-	EModifyCurveApplyMode = 2,
-	EModifyCurveApplyMode = 3,
-	EModifyCurveApplyMode = 4,
-	EModifyCurveApplyMode = 5,
+	Add = 0,
+	Scale = 1,
+	Blend = 2,
+	WeightedMovingAverage = 3,
+	RemapCurve = 4,
+	EModifyCurveApplyMode_MAX = 5,
 };
 
 // Enum AnimGraphRuntime.EPoseDriverOutput
 enum class EPoseDriverOutput : uint8_t {
-	EPoseDriverOutput = 0,
-	EPoseDriverOutput = 1,
-	EPoseDriverOutput = 2,
+	DrivePoses = 0,
+	DriveCurves = 1,
+	EPoseDriverOutput_MAX = 2,
 };
 
 // Enum AnimGraphRuntime.EPoseDriverSource
 enum class EPoseDriverSource : uint8_t {
-	EPoseDriverSource = 0,
-	EPoseDriverSource = 1,
-	EPoseDriverSource = 2,
+	Rotation = 0,
+	Translation = 1,
+	EPoseDriverSource_MAX = 2,
 };
 
 // Enum AnimGraphRuntime.EPoseDriverType
 enum class EPoseDriverType : uint8_t {
-	EPoseDriverType = 0,
-	EPoseDriverType = 1,
-	EPoseDriverType = 2,
-	EPoseDriverType = 3,
+	SwingAndTwist = 0,
+	SwingOnly = 1,
+	Translation = 2,
+	EPoseDriverType_MAX = 3,
 };
 
 // Enum AnimGraphRuntime.ESnapshotSourceMode
 enum class ESnapshotSourceMode : uint8_t {
-	ESnapshotSourceMode = 0,
-	ESnapshotSourceMode = 1,
-	ESnapshotSourceMode = 2,
+	NamedSnapshot = 0,
+	SnapshotPin = 1,
+	ESnapshotSourceMode_MAX = 2,
 };
 
 // Enum AnimGraphRuntime.ERefPoseType
@@ -134,103 +134,103 @@ enum class ERefPoseType : uint8_t {
 
 // Enum AnimGraphRuntime.ESimulationSpace
 enum class ESimulationSpace : uint8_t {
-	ESimulationSpace = 0,
-	ESimulationSpace = 1,
-	ESimulationSpace = 2,
-	ESimulationSpace = 3,
+	ComponentSpace = 0,
+	WorldSpace = 1,
+	BaseBoneSpace = 2,
+	ESimulationSpace_MAX = 3,
 };
 
 // Enum AnimGraphRuntime.EScaleChainInitialLength
 enum class EScaleChainInitialLength : uint8_t {
-	EScaleChainInitialLength = 0,
-	EScaleChainInitialLength = 1,
-	EScaleChainInitialLength = 2,
-	EScaleChainInitialLength = 3,
+	FixedDefaultLengthValue = 0,
+	Distance = 1,
+	ChainLength = 2,
+	EScaleChainInitialLength_MAX = 3,
 };
 
 // Enum AnimGraphRuntime.ESequenceEvalReinit
 enum class ESequenceEvalReinit : uint8_t {
-	ESequenceEvalReinit = 0,
-	ESequenceEvalReinit = 1,
-	ESequenceEvalReinit = 2,
-	ESequenceEvalReinit = 3,
+	NoReset = 0,
+	StartPosition = 1,
+	ExplicitTime = 2,
+	ESequenceEvalReinit_MAX = 3,
 };
 
 // Enum AnimGraphRuntime.ESplineBoneAxis
 enum class ESplineBoneAxis : uint8_t {
-	ESplineBoneAxis = 0,
-	ESplineBoneAxis = 1,
-	ESplineBoneAxis = 2,
-	ESplineBoneAxis = 3,
-	ESplineBoneAxis = 4,
+	None = 0,
+	X = 1,
+	Y = 2,
+	Z = 3,
+	ESplineBoneAxis_MAX = 4,
 };
 
 // Enum AnimGraphRuntime.ERotationComponent
 enum class ERotationComponent : uint8_t {
-	ERotationComponent = 0,
-	ERotationComponent = 1,
-	ERotationComponent = 2,
-	ERotationComponent = 3,
-	ERotationComponent = 4,
-	ERotationComponent = 5,
-	ERotationComponent = 6,
+	EulerX = 0,
+	EulerY = 1,
+	EulerZ = 2,
+	QuaternionAngle = 3,
+	SwingAngle = 4,
+	TwistAngle = 5,
+	ERotationComponent_MAX = 6,
 };
 
 // Enum AnimGraphRuntime.EEasingFuncType
 enum class EEasingFuncType : uint8_t {
-	EEasingFuncType = 0,
-	EEasingFuncType = 1,
-	EEasingFuncType = 2,
-	EEasingFuncType = 3,
-	EEasingFuncType = 4,
-	EEasingFuncType = 5,
-	EEasingFuncType = 6,
-	EEasingFuncType = 7,
-	EEasingFuncType = 8,
-	EEasingFuncType = 9,
-	EEasingFuncType = 10,
-	EEasingFuncType = 11,
-	EEasingFuncType = 12,
-	EEasingFuncType = 13,
-	EEasingFuncType = 14,
-	EEasingFuncType = 15,
+	Linear = 0,
+	Sinusoidal = 1,
+	Cubic = 2,
+	QuadraticInOut = 3,
+	CubicInOut = 4,
+	HermiteCubic = 5,
+	QuarticInOut = 6,
+	QuinticInOut = 7,
+	CircularIn = 8,
+	CircularOut = 9,
+	CircularInOut = 10,
+	ExpIn = 11,
+	ExpOut = 12,
+	ExpInOut = 13,
+	CustomCurve = 14,
+	EEasingFuncType_MAX = 15,
 };
 
 // Enum AnimGraphRuntime.ERBFNormalizeMethod
 enum class ERBFNormalizeMethod : uint8_t {
-	ERBFNormalizeMethod = 0,
-	ERBFNormalizeMethod = 1,
-	ERBFNormalizeMethod = 2,
-	ERBFNormalizeMethod = 3,
-	ERBFNormalizeMethod = 4,
+	OnlyNormalizeAboveOne = 0,
+	AlwaysNormalize = 1,
+	NormalizeWithinMedian = 2,
+	NoNormalization = 3,
+	ERBFNormalizeMethod_MAX = 4,
 };
 
 // Enum AnimGraphRuntime.ERBFDistanceMethod
 enum class ERBFDistanceMethod : uint8_t {
-	ERBFDistanceMethod = 0,
-	ERBFDistanceMethod = 1,
-	ERBFDistanceMethod = 2,
-	ERBFDistanceMethod = 3,
-	ERBFDistanceMethod = 4,
-	ERBFDistanceMethod = 5,
+	Euclidean = 0,
+	Quaternion = 1,
+	SwingAngle = 2,
+	TwistAngle = 3,
+	DefaultMethod = 4,
+	ERBFDistanceMethod_MAX = 5,
 };
 
 // Enum AnimGraphRuntime.ERBFFunctionType
 enum class ERBFFunctionType : uint8_t {
-	ERBFFunctionType = 0,
-	ERBFFunctionType = 1,
-	ERBFFunctionType = 2,
-	ERBFFunctionType = 3,
-	ERBFFunctionType = 4,
-	ERBFFunctionType = 5,
-	ERBFFunctionType = 6,
+	Gaussian = 0,
+	Exponential = 1,
+	Linear = 2,
+	Cubic = 3,
+	Quintic = 4,
+	DefaultFunction = 5,
+	ERBFFunctionType_MAX = 6,
 };
 
 // Enum AnimGraphRuntime.ERBFSolverType
 enum class ERBFSolverType : uint8_t {
-	ERBFSolverType = 0,
-	ERBFSolverType = 1,
-	ERBFSolverType = 2,
+	Additive = 0,
+	Interpolative = 1,
+	ERBFSolverType_MAX = 2,
 };
 
 // Class AnimGraphRuntime.AnimNotify_PlayMontageNotify
@@ -260,11 +260,11 @@ public:
 	struct FMulticastInlineDelegate OnNotifyBegin; // 0x58 (16)
 	struct FMulticastInlineDelegate OnNotifyEnd; // 0x68 (16)
 
-	void OnNotifyEndReceived(struct FName NotifyName, struct Unknown& BranchingPointNotifyPayload); // Function AnimGraphRuntime.PlayMontageCallbackProxy.OnNotifyEndReceived(Final|Native|Protected|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x323C7A0>
-	void OnNotifyBeginReceivyP(struct FName NotifyName, struct Unknown& BranchingPointNotifyPayload); // Function AnimGraphRuntime.PlayMontageCallbackProxy.OnNotifyBeginReceiv(Final|Native|Protected|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x323C6C0>
-	void OnMontageEnded(struct Unknown Montage, char bInterrupted); // Function AnimGraphRuntime.PlayMontageCallbackProxy.OnMontageEnded(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x323C5F0>
-	void OnMontageBlendingOut(struct Unknown Montage, char bInterrupted); // Function AnimGraphRuntime.PlayMontageCallbackProxy.OnMontageBlendingOut(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x323C520>
-	struct Unknown CreateProxyObjectForPlayMontag(struct Unknown InSkeletalMeshComponent, struct Unknown MontageToPlay, float PlayRate, float StartingPosition, struct FName StartingSection); // Function AnimGraphRuntime.PlayMontageCallbackProxy.CreateProxyObjectForPlayMontag(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x323AF20>
+	void OnNotifyEndReceived(struct FName NotifyName, struct Unknown& BranchingPointNotifyPayload); // Function AnimGraphRuntime.PlayMontageCallbackProxy.OnNotifyEndReceived(Final|Native|Protected|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x39F7670>
+	void OnNotifyBeginReceived(struct FName NotifyName, struct Unknown& BranchingPointNotifyPayload); // Function AnimGraphRuntime.PlayMontageCallbackProxy.OnNotifyBeginReceived(Final|Native|Protected|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x39F7590>
+	void OnMontageEnded(struct Unknown Montage, char bInterrupted); // Function AnimGraphRuntime.PlayMontageCallbackProxy.OnMontageEnded(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x39F74C0>
+	void OnMontageBlendingOut(struct Unknown Montage, char bInterrupted); // Function AnimGraphRuntime.PlayMontageCallbackProxy.OnMontageBlendingOut(Final|Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x39F73F0>
+	struct Unknown CreateProxyObjectForPlayMontage(struct Unknown InSkeletalMeshComponent, struct Unknown MontageToPlay, float PlayRate, float StartingPosition, struct FName StartingSection); // Function AnimGraphRuntime.PlayMontageCallbackProxy.CreateProxyObjectForPlayMontage(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x39F5DF0>
 };
 
 // ScriptStruct AnimGraphRuntime.AnimNode_SkeletalControlBase
@@ -671,8 +671,8 @@ struct FAnimNode_ModifyBone : FAnimNode_SkeletalControlBase {
 	char ScaleSpace; // 0x101 (1)
 };
 
-// ScriptStruct AnimGraphRuntime.AnimNode_ModifyCurv
-struct FAnimNode_ModifyCurv : FAnimNode_Base {
+// ScriptStruct AnimGraphRuntime.AnimNode_ModifyCurve
+struct FAnimNode_ModifyCurve : FAnimNode_Base {
 	struct Unknown SourcePose; // 0x10 (16)
 	struct TArray<Unknown> CurveValues; // 0x20 (16)
 	struct TArray<Unknown> CurveNames; // 0x30 (16)
@@ -879,8 +879,8 @@ struct FAnimNode_ScaleChainLength : FAnimNode_Base {
 	enum class Unknow ChainInitialLength; // 0x60 (1)
 };
 
-// ScriptStruct AnimGraphRuntime.AnimNode_SequenceEv
-struct FAnimNode_SequenceEv : FAnimNode_AssetPlayerBase {
+// ScriptStruct AnimGraphRuntime.AnimNode_SequenceEvaluator
+struct FAnimNode_SequenceEvaluator : FAnimNode_AssetPlayerBase {
 	struct Unknown Sequence; // 0x30 (8)
 	float ExplicitTime; // 0x38 (4)
 	char bShouldLoop : 0; // 0x3C (1)
@@ -1052,14 +1052,14 @@ inline void UPlayMontageCallbackProxy::OnNotifyEndReceived(struct FName NotifyNa
 
 }
 
-// Function AnimGraphRuntime.PlayMontageCallbackProxy.OnNotifyBeginReceiv
-inline void UPlayMontageCallbackProxy::OnNotifyBeginReceivyP(struct FName NotifyName, struct Unknown& BranchingPointNotifyPayload) {
-	static auto fn = UObject::FindObject<UFunction>("Function AnimGraphRuntime.PlayMontageCallbackProxy.OnNotifyBeginReceiv");
+// Function AnimGraphRuntime.PlayMontageCallbackProxy.OnNotifyBeginReceived
+inline void UPlayMontageCallbackProxy::OnNotifyBeginReceived(struct FName NotifyName, struct Unknown& BranchingPointNotifyPayload) {
+	static auto fn = UObject::FindObject<UFunction>("Function AnimGraphRuntime.PlayMontageCallbackProxy.OnNotifyBeginReceived");
 
-	struct OnNotifyBeginReceivyP_Params {
+	struct OnNotifyBeginReceived_Params {
 		struct FName NotifyName;
 		struct Unknown& BranchingPointNotifyPayload;
-	}; OnNotifyBeginReceivyP_Params Params;
+	}; OnNotifyBeginReceived_Params Params;
 
 	Params.NotifyName = NotifyName;
 
@@ -1105,11 +1105,11 @@ inline void UPlayMontageCallbackProxy::OnMontageBlendingOut(struct Unknown Monta
 	fn->FunctionFlags = flags;
 }
 
-// Function AnimGraphRuntime.PlayMontageCallbackProxy.CreateProxyObjectForPlayMontag
-inline struct Unknown UPlayMontageCallbackProxy::CreateProxyObjectForPlayMontag(struct Unknown InSkeletalMeshComponent, struct Unknown MontageToPlay, float PlayRate, float StartingPosition, struct FName StartingSection) {
-	static auto fn = UObject::FindObject<UFunction>("Function AnimGraphRuntime.PlayMontageCallbackProxy.CreateProxyObjectForPlayMontag");
+// Function AnimGraphRuntime.PlayMontageCallbackProxy.CreateProxyObjectForPlayMontage
+inline struct Unknown UPlayMontageCallbackProxy::CreateProxyObjectForPlayMontage(struct Unknown InSkeletalMeshComponent, struct Unknown MontageToPlay, float PlayRate, float StartingPosition, struct FName StartingSection) {
+	static auto fn = UObject::FindObject<UFunction>("Function AnimGraphRuntime.PlayMontageCallbackProxy.CreateProxyObjectForPlayMontage");
 
-	struct CreateProxyObjectForPlayMontag_Params {
+	struct CreateProxyObjectForPlayMontage_Params {
 		struct Unknown InSkeletalMeshComponent;
 		struct Unknown MontageToPlay;
 		float PlayRate;
@@ -1117,7 +1117,7 @@ inline struct Unknown UPlayMontageCallbackProxy::CreateProxyObjectForPlayMontag(
 		struct FName StartingSection;
 		struct Unknown ReturnValue;
 
-	}; CreateProxyObjectForPlayMontag_Params Params;
+	}; CreateProxyObjectForPlayMontage_Params Params;
 
 	Params.InSkeletalMeshComponent = InSkeletalMeshComponent;
 	Params.MontageToPlay = MontageToPlay;

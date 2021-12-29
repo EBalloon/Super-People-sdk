@@ -1,17 +1,17 @@
 // Enum AnimationCore.ETransformConstraintType
 enum class ETransformConstraintType : uint8_t {
-	ETransformConstraintType = 0,
-	ETransformConstraintType = 1,
-	ETransformConstraintType = 2,
-	ETransformConstraintType = 3,
-	ETransformConstraintType = 4,
+	Translation = 0,
+	Rotation = 1,
+	Scale = 2,
+	Parent = 3,
+	ETransformConstraintType_MAX = 4,
 };
 
 // Enum AnimationCore.EConstraintType
 enum class EConstraintType : uint8_t {
-	EConstraintType = 0,
-	EConstraintType = 1,
-	EConstraintType = 2,
+	Transform = 0,
+	Aim = 1,
+	MAX = 2,
 };
 
 // Class AnimationCore.AnimationDataSourceRegistry

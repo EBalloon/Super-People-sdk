@@ -1,10 +1,10 @@
 // Enum MagicLeapLightEstimation.EMagicLeapLightEstimationCamera
 enum class EMagicLeapLightEstimationCamera : uint8_t {
-	EMagicLeapLightEstimationCamera = 0,
-	EMagicLeapLightEstimationCamera = 1,
-	EMagicLeapLightEstimationCamera = 2,
-	EMagicLeapLightEstimationCamera = 3,
-	EMagicLeapLightEstimationCamera = 4,
+	Left = 0,
+	Right = 1,
+	FarLeft = 2,
+	FarRight = 3,
+	EMagicLeapLightEstimationCamera_MAX = 4,
 };
 
 // Class MagicLeapLightEstimation.MagicLeapLightingTrackingComponent

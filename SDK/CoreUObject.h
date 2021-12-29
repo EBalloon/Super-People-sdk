@@ -11,45 +11,45 @@ enum class EInterpCurveMode : uint8_t {
 
 // Enum CoreUObject.ERangeBoundTypes
 enum class ERangeBoundTypes : uint8_t {
-	ERangeBoundTypes = 0,
-	ERangeBoundTypes = 1,
-	ERangeBoundTypes = 2,
-	ERangeBoundTypes = 3,
+	Exclusive = 0,
+	Inclusive = 1,
+	Open = 2,
+	ERangeBoundTypes_MAX = 3,
 };
 
 // Enum CoreUObject.ELocalizedTextSourceCategory
 enum class ELocalizedTextSourceCategory : uint8_t {
-	ELocalizedTextSourceCategory = 0,
-	ELocalizedTextSourceCategory = 1,
-	ELocalizedTextSourceCategory = 2,
-	ELocalizedTextSourceCategory = 3,
+	Game = 0,
+	Engine = 1,
+	Editor = 2,
+	ELocalizedTextSourceCategory_MAX = 3,
 };
 
 // Enum CoreUObject.EAutomationEventType
 enum class EAutomationEventType : uint8_t {
-	EAutomationEventType = 0,
-	EAutomationEventType = 1,
-	EAutomationEventType = 2,
-	EAutomationEventType = 3,
+	Info = 0,
+	Warning = 1,
+	Error = 2,
+	EAutomationEventType_MAX = 3,
 };
 
 // Enum CoreUObject.EMouseCursor
 enum class EMouseCursor : uint8_t {
-	EMouseCursor = 0,
-	EMouseCursor = 1,
-	EMouseCursor = 2,
-	EMouseCursor = 3,
-	EMouseCursor = 4,
-	EMouseCursor = 5,
-	EMouseCursor = 6,
-	EMouseCursor = 7,
-	EMouseCursor = 8,
-	EMouseCursor = 9,
-	EMouseCursor = 10,
-	EMouseCursor = 11,
-	EMouseCursor = 12,
-	EMouseCursor = 13,
-	EMouseCursor = 14,
+	None = 0,
+	Default = 1,
+	TextEditBeam = 2,
+	ResizeLeftRight = 3,
+	ResizeUpDown = 4,
+	ResizeSouthEast = 5,
+	ResizeSouthWest = 6,
+	CardinalCross = 7,
+	Crosshairs = 8,
+	Hand = 9,
+	GrabHand = 10,
+	GrabHandClosed = 11,
+	SlashedCircle = 12,
+	EyeDropper = 13,
+	EMouseCursor_MAX = 14,
 };
 
 // Enum CoreUObject.ELifetimeCondition
@@ -76,73 +76,73 @@ enum class ELifetimeCondition : uint8_t {
 
 // Enum CoreUObject.EDataValidationResult
 enum class EDataValidationResult : uint8_t {
-	EDataValidationResult = 0,
-	EDataValidationResult = 1,
-	EDataValidationResult = 2,
-	EDataValidationResult = 3,
+	Invalid = 0,
+	Valid = 1,
+	NotValidated = 2,
+	EDataValidationResult_MAX = 3,
 };
 
 // Enum CoreUObject.EPropertyAccessChangeNotifyMode
 enum class EPropertyAccessChangeNotifyMode : uint8_t {
-	EPropertyAccessChangeNotifyMode = 0,
-	EPropertyAccessChangeNotifyMode = 1,
-	EPropertyAccessChangeNotifyMode = 2,
-	EPropertyAccessChangeNotifyMode = 3,
+	Default = 0,
+	Never = 1,
+	Always = 2,
+	EPropertyAccessChangeNotifyMode_MAX = 3,
 };
 
 // Enum CoreUObject.EUnit
 enum class EUnit : uint8_t {
-	EUnit = 0,
-	EUnit = 1,
-	EUnit = 2,
-	EUnit = 3,
-	EUnit = 4,
-	EUnit = 5,
-	EUnit = 6,
-	EUnit = 7,
-	EUnit = 8,
-	EUnit = 9,
-	EUnit = 10,
-	EUnit = 11,
-	EUnit = 12,
-	EUnit = 13,
-	EUnit = 14,
-	EUnit = 15,
-	EUnit = 16,
-	EUnit = 17,
-	EUnit = 18,
-	EUnit = 19,
-	EUnit = 20,
-	EUnit = 21,
-	EUnit = 22,
-	EUnit = 23,
-	EUnit = 24,
-	EUnit = 25,
-	EUnit = 26,
-	EUnit = 27,
-	EUnit = 28,
-	EUnit = 29,
-	EUnit = 30,
-	EUnit = 31,
-	EUnit = 32,
-	EUnit = 33,
-	EUnit = 34,
-	EUnit = 35,
-	EUnit = 36,
-	EUnit = 37,
-	EUnit = 38,
-	EUnit = 39,
-	EUnit = 43,
-	EUnit = 44,
-	EUnit = 45,
-	EUnit = 46,
-	EUnit = 47,
-	EUnit = 48,
-	EUnit = 49,
-	EUnit = 52,
-	EUnit = 51,
-	EUnit = 53,
-	EUnit = 54,
+	Micrometers = 0,
+	Millimeters = 1,
+	Centimeters = 2,
+	Meters = 3,
+	Kilometers = 4,
+	Inches = 5,
+	Feet = 6,
+	Yards = 7,
+	Miles = 8,
+	Lightyears = 9,
+	Degrees = 10,
+	Radians = 11,
+	MetersPerSecond = 12,
+	KilometersPerHour = 13,
+	MilesPerHour = 14,
+	Celsius = 15,
+	Farenheit = 16,
+	Kelvin = 17,
+	Micrograms = 18,
+	Milligrams = 19,
+	Grams = 20,
+	Kilograms = 21,
+	MetricTons = 22,
+	Ounces = 23,
+	Pounds = 24,
+	Stones = 25,
+	Newtons = 26,
+	PoundsForce = 27,
+	KilogramsForce = 28,
+	Hertz = 29,
+	Kilohertz = 30,
+	Megahertz = 31,
+	Gigahertz = 32,
+	RevolutionsPerMinute = 33,
+	Bytes = 34,
+	Kilobytes = 35,
+	Megabytes = 36,
+	Gigabytes = 37,
+	Terabytes = 38,
+	Lumens = 39,
+	Milliseconds = 43,
+	Seconds = 44,
+	Minutes = 45,
+	Hours = 46,
+	Days = 47,
+	Months = 48,
+	Years = 49,
+	Multiplier = 52,
+	Percentage = 51,
+	Unspecified = 53,
+	EUnit_MAX = 54,
 };
 
 // Enum CoreUObject.EPixelFormat
@@ -223,34 +223,34 @@ enum class EPixelFormat : uint8_t {
 
 // Enum CoreUObject.EAxis
 enum class EAxis : uint8_t {
-	EAxis = 0,
-	EAxis = 1,
-	EAxis = 2,
-	EAxis = 3,
-	EAxis = 4,
+	None = 0,
+	X = 1,
+	Y = 2,
+	Z = 3,
+	EAxis_MAX = 4,
 };
 
 // Enum CoreUObject.ELogTimes
 enum class ELogTimes : uint8_t {
-	ELogTimes = 0,
-	ELogTimes = 1,
-	ELogTimes = 2,
-	ELogTimes = 3,
-	ELogTimes = 4,
+	None = 0,
+	UTC = 1,
+	SinceGStartTime = 2,
+	Local = 3,
+	ELogTimes_MAX = 4,
 };
 
 // Enum CoreUObject.ESearchDir
 enum class ESearchDir : uint8_t {
-	ESearchDir = 0,
-	ESearchDir = 1,
-	ESearchDir = 2,
+	FromStart = 0,
+	FromEnd = 1,
+	ESearchDir_MAX = 2,
 };
 
 // Enum CoreUObject.ESearchCase
 enum class ESearchCase : uint8_t {
-	ESearchCase = 0,
-	ESearchCase = 1,
-	ESearchCase = 2,
+	CaseSensitive = 0,
+	IgnoreCase = 1,
+	ESearchCase_MAX = 2,
 };
 
 // ScriptStruct CoreUObject.JoinabilitySettings

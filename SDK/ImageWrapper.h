@@ -1,20 +1,20 @@
 // Enum ImageWrapper.EBitmapCSType
 enum class EBitmapCSType : int32_t {
-	EBitmapCSType = 0,
-	EBitmapCSType = 1934772034,
-	EBitmapCSType = 1466527264,
-	EBitmapCSType = 1279872587,
-	EBitmapCSType = 1296188740,
-	EBitmapCSType = 1934772035,
+	BCST_BLCS_CALIBRATED_RGB = 0,
+	BCST_LCS_sRGB = 1934772034,
+	BCST_LCS_WINDOWS_COLOR_SPACE = 1466527264,
+	BCST_PROFILE_LINKED = 1279872587,
+	BCST_PROFILE_EMBEDDED = 1296188740,
+	BCST_MAX = 1934772035,
 };
 
 // Enum ImageWrapper.EBitmapHeaderVersion
 enum class EBitmapHeaderVersion : uint8_t {
-	EBitmapHeaderVersion = 0,
-	EBitmapHeaderVersion = 1,
-	EBitmapHeaderVersion = 2,
-	EBitmapHeaderVersion = 3,
-	EBitmapHeaderVersion = 4,
-	EBitmapHeaderVersion = 5,
+	BHV_BITMAPINFOHEADER = 0,
+	BHV_BITMAPV2INFOHEADER = 1,
+	BHV_BITMAPV3INFOHEADER = 2,
+	BHV_BITMAPV4HEADER = 3,
+	BHV_BITMAPV5HEADER = 4,
+	BHV_MAX = 5,
 };
 

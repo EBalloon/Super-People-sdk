@@ -1,8 +1,8 @@
 // UserDefinedEnum ENiagaraRandomnessMode.ENiagaraRandomnessMode
 enum class ENiagaraRandomnessMode : uint8_t {
-	ENiagaraRandomnessMode = 0,
-	ENiagaraRandomnessMode = 1,
-	ENiagaraRandomnessMode = 2,
-	ENiagaraRandomnessMode = 3,
+	NewEnumerator0 = 0,
+	NewEnumerator1 = 1,
+	NewEnumerator2 = 2,
+	ENiagaraRandomnessMode_MAX = 3,
 };
 

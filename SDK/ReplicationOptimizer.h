@@ -1,12 +1,12 @@
 // Enum ReplicationOptimizer.EClassRepNodeMapping
 enum class EClassRepNodeMapping : uint8_t {
-	EClassRepNodeMapping = 0,
-	EClassRepNodeMapping = 1,
-	EClassRepNodeMapping = 2,
-	EClassRepNodeMapping = 3,
-	EClassRepNodeMapping = 4,
-	EClassRepNodeMapping = 5,
-	EClassRepNodeMapping = 6,
+	NotRouted = 0,
+	RelevantAllConnections = 1,
+	Spatialize_Static_Conditional = 2,
+	Spatialize_Static_Always = 3,
+	Spatialize_Dynamic = 4,
+	Spatialize_Dormancy = 5,
+	EClassRepNodeMapping_MAX = 6,
 };
 
 // Class ReplicationOptimizer.RealReplicationGraph
@@ -39,11 +39,11 @@ public:
 	char bEnabled : 0; // 0xB4 (1)
 	struct Unknown PlayerState; // 0xB8 (8)
 
-	void ServerRPVPing(); // Function ReplicationOptimizer.ReplicationPingComponet.ServerRPVPing(Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120E660>
-	void ServerRPCPing(); // Function ReplicationOptimizer.ReplicationPingComponet.ServerRPCPing(Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120E610>
-	void OnRep_Ping(); // Function ReplicationOptimizer.ReplicationPingComponet.OnRep_Ping(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120E5F0>
-	void OnRep_Enabled(); // Function ReplicationOptimizer.ReplicationPingComponet.OnRep_Enabled(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120E5D0>
-	void ClientPing(); // Function ReplicationOptimizer.ReplicationPingComponet.ClientPing(Final|Net|NetReliableNative|Event|Private|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120E5B0>
+	void ServerRPVPing(); // Function ReplicationOptimizer.ReplicationPingComponet.ServerRPVPing(Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x121F010>
+	void ServerRPCPing(); // Function ReplicationOptimizer.ReplicationPingComponet.ServerRPCPing(Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x121EFC0>
+	void OnRep_Ping(); // Function ReplicationOptimizer.ReplicationPingComponet.OnRep_Ping(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x121EFA0>
+	void OnRep_Enabled(); // Function ReplicationOptimizer.ReplicationPingComponet.OnRep_Enabled(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x121EF80>
+	void ClientPing(); // Function ReplicationOptimizer.ReplicationPingComponet.ClientPing(Final|Net|NetReliableNative|Event|Private|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x121EF60>
 };
 
 // Function ReplicationOptimizer.ReplicationPingComponet.ServerRPVPing

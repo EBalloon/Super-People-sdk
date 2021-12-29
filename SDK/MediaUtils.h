@@ -1,9 +1,9 @@
 // Enum MediaUtils.EMediaPlayerOptionBooleanOverride
 enum class EMediaPlayerOptionBooleanOverride : uint8_t {
-	EMediaPlayerOptionBooleanOverride = 0,
-	EMediaPlayerOptionBooleanOverride = 1,
-	EMediaPlayerOptionBooleanOverride = 2,
-	EMediaPlayerOptionBooleanOverride = 3,
+	UseMediaPlayerSetting = 0,
+	Enabled = 1,
+	Disabled = 2,
+	EMediaPlayerOptionBooleanOverride_MAX = 3,
 };
 
 // ScriptStruct MediaUtils.MediaPlayerOptions

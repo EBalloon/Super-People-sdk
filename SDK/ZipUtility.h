@@ -8,18 +8,18 @@ enum class ZipUtilityCompressionLevel : uint8_t {
 
 // Enum ZipUtility.EZipUtilityCompressionFormat
 enum class EZipUtilityCompressionFormat : uint8_t {
-	EZipUtilityCompressionFormat = 0,
-	EZipUtilityCompressionFormat = 1,
-	EZipUtilityCompressionFormat = 2,
-	EZipUtilityCompressionFormat = 3,
-	EZipUtilityCompressionFormat = 4,
-	EZipUtilityCompressionFormat = 5,
-	EZipUtilityCompressionFormat = 6,
-	EZipUtilityCompressionFormat = 7,
-	EZipUtilityCompressionFormat = 8,
-	EZipUtilityCompressionFormat = 9,
-	EZipUtilityCompressionFormat = 10,
-	EZipUtilityCompressionFormat = 11,
+	COMPRESSION_FORMAT_UNKNOWN = 0,
+	COMPRESSION_FORMAT_SEVEN_ZIP = 1,
+	COMPRESSION_FORMAT_ZIP = 2,
+	COMPRESSION_FORMAT_GZIP = 3,
+	COMPRESSION_FORMAT_BZIP2 = 4,
+	COMPRESSION_FORMAT_RAR = 5,
+	COMPRESSION_FORMAT_TAR = 6,
+	COMPRESSION_FORMAT_ISO = 7,
+	COMPRESSION_FORMAT_CAB = 8,
+	COMPRESSION_FORMAT_LZMA = 9,
+	COMPRESSION_FORMAT_LZMA86 = 10,
+	COMPRESSION_FORMAT_MAX = 11,
 };
 
 // Enum ZipUtility.EZipUtilityCompletionState

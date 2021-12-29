@@ -1,19 +1,19 @@
 // Enum MagicLeapEyeTracker.EMagicLeapEyeTrackingCalibrationStatus
 enum class EMagicLeapEyeTrackingCalibrationStatus : uint8_t {
-	EMagicLeapEyeTrackingCalibrationStatus = 0,
-	EMagicLeapEyeTrackingCalibrationStatus = 1,
-	EMagicLeapEyeTrackingCalibrationStatus = 2,
-	EMagicLeapEyeTrackingCalibrationStatus = 3,
+	None = 0,
+	Bad = 1,
+	Good = 2,
+	EMagicLeapEyeTrackingCalibrationStatus_MAX = 3,
 };
 
 // Enum MagicLeapEyeTracker.EMagicLeapEyeTrackingStatus
 enum class EMagicLeapEyeTrackingStatus : uint8_t {
-	EMagicLeapEyeTrackingStatus = 0,
-	EMagicLeapEyeTrackingStatus = 1,
-	EMagicLeapEyeTrackingStatus = 2,
-	EMagicLeapEyeTrackingStatus = 3,
-	EMagicLeapEyeTrackingStatus = 4,
-	EMagicLeapEyeTrackingStatus = 5,
+	NotConnected = 0,
+	Disabled = 1,
+	UserNotPresent = 2,
+	UserPresent = 3,
+	UserPresentAndWatchingWindow = 4,
+	EMagicLeapEyeTrackingStatus_MAX = 5,
 };
 
 // ScriptStruct MagicLeapEyeTracker.MagicLeapEyeBlinkState

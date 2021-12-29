@@ -1,55 +1,55 @@
 // Enum GeometryCollectionSimulationCore.EEmissionPatternTypeEnum
 enum class EEmissionPatternTypeEnum : uint8_t {
-	EEmissionPatternTypeEnum = 0,
-	EEmissionPatternTypeEnum = 1,
-	EEmissionPatternTypeEnum = 2,
+	Chaos_Emission_Pattern_First_Frame = 0,
+	Chaos_Emission_Pattern_On_Demand = 1,
+	Chaos_Max = 2,
 };
 
 // Enum GeometryCollectionSimulationCore.EInitialVelocityTypeEnum
 enum class EInitialVelocityTypeEnum : uint8_t {
-	EInitialVelocityTypeEnum = 0,
-	EInitialVelocityTypeEnum = 1,
-	EInitialVelocityTypeEnum = 2,
+	Chaos_Initial_Velocity_User_Defined = 0,
+	Chaos_Initial_Velocity_None = 1,
+	Chaos_Max = 2,
 };
 
 // Enum GeometryCollectionSimulationCore.EGeometryCollectionPhysicsTypeEnum
 enum class EGeometryCollectionPhysicsTypeEnum : uint8_t {
-	EGeometryCollectionPhysicsTypeEnum = 0,
-	EGeometryCollectionPhysicsTypeEnum = 1,
-	EGeometryCollectionPhysicsTypeEnum = 2,
-	EGeometryCollectionPhysicsTypeEnum = 3,
-	EGeometryCollectionPhysicsTypeEnum = 4,
-	EGeometryCollectionPhysicsTypeEnum = 5,
-	EGeometryCollectionPhysicsTypeEnum = 6,
-	EGeometryCollectionPhysicsTypeEnum = 7,
-	EGeometryCollectionPhysicsTypeEnum = 8,
+	Chaos_AngularVelocity = 0,
+	Chaos_DynamicState = 1,
+	Chaos_LinearVelocity = 2,
+	Chaos_InitialAngularVelocity = 3,
+	Chaos_InitialLinearVelocity = 4,
+	Chaos_CollisionGroup = 5,
+	Chaos_LinearForce = 6,
+	Chaos_AngularTorque = 7,
+	Chaos_Max = 8,
 };
 
 // Enum GeometryCollectionSimulationCore.EObjectStateTypeEnum
 enum class EObjectStateTypeEnum : uint8_t {
-	EObjectStateTypeEnum = 0,
-	EObjectStateTypeEnum = 1,
-	EObjectStateTypeEnum = 2,
-	EObjectStateTypeEnum = 3,
-	EObjectStateTypeEnum = 4,
-	EObjectStateTypeEnum = 100,
-	EObjectStateTypeEnum = 101,
+	Chaos_NONE = 0,
+	Chaos_Object_Sleeping = 1,
+	Chaos_Object_Kinematic = 2,
+	Chaos_Object_Static = 3,
+	Chaos_Object_Dynamic = 4,
+	Chaos_Object_UserDefined = 100,
+	Chaos_Max = 101,
 };
 
 // Enum GeometryCollectionSimulationCore.EImplicitTypeEnum
 enum class EImplicitTypeEnum : uint8_t {
-	EImplicitTypeEnum = 0,
-	EImplicitTypeEnum = 1,
-	EImplicitTypeEnum = 2,
-	EImplicitTypeEnum = 3,
-	EImplicitTypeEnum = 4,
-	EImplicitTypeEnum = 5,
+	Chaos_Implicit_Box = 0,
+	Chaos_Implicit_Sphere = 1,
+	Chaos_Implicit_Capsule = 2,
+	Chaos_Implicit_LevelSet = 3,
+	Chaos_Implicit_None = 4,
+	Chaos_Max = 5,
 };
 
 // Enum GeometryCollectionSimulationCore.ECollisionTypeEnum
 enum class ECollisionTypeEnum : uint8_t {
-	ECollisionTypeEnum = 0,
-	ECollisionTypeEnum = 1,
-	ECollisionTypeEnum = 2,
+	Chaos_Volumetric = 0,
+	Chaos_Surface_Volumetric = 1,
+	Chaos_Max = 2,
 };
 

@@ -1,35 +1,35 @@
 // Enum MovieSceneTracks.MovieScene3DPathSection_Axis
 enum class MovieScene3DPathSection_Axis : uint8_t {
-	MovieScene3DPathSection_Axis = 0,
-	MovieScene3DPathSection_Axis = 1,
-	MovieScene3DPathSection_Axis = 2,
-	MovieScene3DPathSection_Axis = 3,
-	MovieScene3DPathSection_Axis = 4,
-	MovieScene3DPathSection_Axis = 5,
-	MovieScene3DPathSection_Axis = 6,
+	X = 0,
+	Y = 1,
+	Z = 2,
+	NEG_X = 3,
+	NEG_Y = 4,
+	NEG_Z = 5,
+	MovieScene3DPathSection_MAX = 6,
 };
 
 // Enum MovieSceneTracks.EFireEventsAtPosition
 enum class EFireEventsAtPosition : uint8_t {
-	EFireEventsAtPosition = 0,
-	EFireEventsAtPosition = 1,
-	EFireEventsAtPosition = 2,
-	EFireEventsAtPosition = 3,
+	AtStartOfEvaluation = 0,
+	AtEndOfEvaluation = 1,
+	AfterSpawn = 2,
+	EFireEventsAtPosition_MAX = 3,
 };
 
 // Enum MovieSceneTracks.ELevelVisibility
 enum class ELevelVisibility : uint8_t {
-	ELevelVisibility = 0,
-	ELevelVisibility = 1,
-	ELevelVisibility = 2,
+	Visible = 0,
+	Hidden = 1,
+	ELevelVisibility_MAX = 2,
 };
 
 // Enum MovieSceneTracks.EParticleKey
 enum class EParticleKey : uint8_t {
-	EParticleKey = 0,
-	EParticleKey = 1,
-	EParticleKey = 2,
-	EParticleKey = 3,
+	Activate = 0,
+	Deactivate = 1,
+	Trigger = 2,
+	EParticleKey_MAX = 3,
 };
 
 // Class MovieSceneTracks.MovieScenePropertyTrack
@@ -51,8 +51,8 @@ public:
 	struct Unknown ConstraintId; // 0xE0 (16)
 	struct Unknown ConstraintBindingID; // 0xF0 (24)
 
-	void SetConstraintBindingID(struct Unknown& InConstraintBindingID); // Function MovieSceneTracks.MovieScene3DConstraintSection.SetConstraintBindingID(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3290FB0>
-	struct Unknown GetConstraintBindingID(); // Function MovieSceneTracks.MovieScene3DConstraintSection.GetConstraintBindingID(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3290F30>
+	void SetConstraintBindingID(struct Unknown& InConstraintBindingID); // Function MovieSceneTracks.MovieScene3DConstraintSection.SetConstraintBindingID(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3A4BE80>
+	struct Unknown GetConstraintBindingID(); // Function MovieSceneTracks.MovieScene3DConstraintSection.GetConstraintBindingID(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3A4BE00>
 };
 
 // Class MovieSceneTracks.MovieScene3DAttachSection
@@ -135,10 +135,10 @@ public:
 	struct FMulticastInlineDelegate OnAudioFinished; // 0x310 (16)
 	struct FMulticastInlineDelegate OnAudioPlaybackPercent; // 0x320 (16)
 
-	void SetStartOffset(struct Unknown InStartOffset); // Function MovieSceneTracks.MovieSceneAudioSection.SetStartOffset(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x32910F0>
-	void SetSound(struct Unknown InSound); // Function MovieSceneTracks.MovieSceneAudioSection.SetSound(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3291070>
-	struct Unknown GetStartOffset(); // Function MovieSceneTracks.MovieSceneAudioSection.GetStartOffset(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3290F90>
-	struct Unknown GetSound(); // Function MovieSceneTracks.MovieSceneAudioSection.GetSound(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3290F70>
+	void SetStartOffset(struct Unknown InStartOffset); // Function MovieSceneTracks.MovieSceneAudioSection.SetStartOffset(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3A4BFC0>
+	void SetSound(struct Unknown InSound); // Function MovieSceneTracks.MovieSceneAudioSection.SetSound(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3A4BF40>
+	struct Unknown GetStartOffset(); // Function MovieSceneTracks.MovieSceneAudioSection.GetStartOffset(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3A4BE60>
+	struct Unknown GetSound(); // Function MovieSceneTracks.MovieSceneAudioSection.GetSound(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3A4BE40>
 };
 
 // Class MovieSceneTracks.MovieSceneAudioTrack
@@ -204,8 +204,8 @@ public:
 	struct Unknown CameraGuid; // 0xE0 (16)
 	struct Unknown CameraBindingID; // 0xF0 (24)
 
-	void SetCameraBindingID(struct Unknown& InCameraBindingID); // Function MovieSceneTracks.MovieSceneCameraCutSection.SetCameraBindingID(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3298880>
-	struct Unknown GetCameraBindingID(); // Function MovieSceneTracks.MovieSceneCameraCutSection.GetCameraBindingID(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3290F30>
+	void SetCameraBindingID(struct Unknown& InCameraBindingID); // Function MovieSceneTracks.MovieSceneCameraCutSection.SetCameraBindingID(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3A53750>
+	struct Unknown GetCameraBindingID(); // Function MovieSceneTracks.MovieSceneCameraCutSection.GetCameraBindingID(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3A4BE00>
 };
 
 // Class MovieSceneTracks.MovieSceneCameraCutTrack
@@ -245,8 +245,8 @@ public:
 	struct FString ShotDisplayName; // 0x158 (16)
 	struct FText DisplayName; // 0x168 (24)
 
-	void SetShotDisplayName(struct FString InShotDisplayName); // Function MovieSceneTracks.MovieSceneCinematicShotSection.SetShotDisplayName(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x32989F0>
-	struct FString GetShotDisplayName(); // Function MovieSceneTracks.MovieSceneCinematicShotSection.GetShotDisplayName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3298780>
+	void SetShotDisplayName(struct FString InShotDisplayName); // Function MovieSceneTracks.MovieSceneCinematicShotSection.SetShotDisplayName(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3A538C0>
+	struct FString GetShotDisplayName(); // Function MovieSceneTracks.MovieSceneCinematicShotSection.GetShotDisplayName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3A53650>
 };
 
 // Class MovieSceneTracks.MovieSceneColorSection
@@ -354,10 +354,10 @@ public:
 	enum class Unknow Visibility; // 0xE0 (1)
 	struct TArray<Unknown> LevelNames; // 0xE8 (16)
 
-	void SetVisibility(enum class Unknow InVisibility); // Function MovieSceneTracks.MovieSceneLevelVisibilitySection.SetVisibility(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3298AF0>
-	void SetLevelNames(struct TArray<Unknown>& InLevelNames); // Function MovieSceneTracks.MovieSceneLevelVisibilitySection.SetLevelNames(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3298940>
-	enum class Unknow GetVisibility(); // Function MovieSceneTracks.MovieSceneLevelVisibilitySection.GetVisibility(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3298850>
-	struct TArray<Unknown> GetLevelNames(); // Function MovieSceneTracks.MovieSceneLevelVisibilitySection.GetLevelNames(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3298750>
+	void SetVisibility(enum class Unknow InVisibility); // Function MovieSceneTracks.MovieSceneLevelVisibilitySection.SetVisibility(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3A539C0>
+	void SetLevelNames(struct TArray<Unknown>& InLevelNames); // Function MovieSceneTracks.MovieSceneLevelVisibilitySection.SetLevelNames(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3A53810>
+	enum class Unknow GetVisibility(); // Function MovieSceneTracks.MovieSceneLevelVisibilitySection.GetVisibility(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3A53720>
+	struct TArray<Unknown> GetLevelNames(); // Function MovieSceneTracks.MovieSceneLevelVisibilitySection.GetLevelNames(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3A53620>
 };
 
 // Class MovieSceneTracks.MovieSceneLevelVisibilityTrack

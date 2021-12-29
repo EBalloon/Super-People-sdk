@@ -1,107 +1,107 @@
 // Enum VivoxCore.DeviceType
 enum class DeviceType : uint8_t {
-	DeviceType = 0,
-	DeviceType = 1,
-	DeviceType = 2,
-	DeviceType = 3,
-	DeviceType = 4,
+	NullDevice = 0,
+	SpecificDevice = 1,
+	DefaultSystemDevice = 2,
+	DefaultCommunicationDevice = 3,
+	DeviceType_MAX = 4,
 };
 
 // Enum VivoxCore.EAudioFadeModel
 enum class EAudioFadeModel : uint8_t {
-	EAudioFadeModel = 0,
-	EAudioFadeModel = 1,
-	EAudioFadeModel = 2,
-	EAudioFadeModel = 3,
+	InverseByDistance = 0,
+	LinearByDistance = 1,
+	ExponentialByDistance = 2,
+	EAudioFadeModel_MAX = 3,
 };
 
 // Enum VivoxCore.ChannelType
 enum class ChannelType : uint8_t {
-	ChannelType = 0,
-	ChannelType = 1,
-	ChannelType = 2,
-	ChannelType = 3,
+	NonPositional = 0,
+	Positional = 1,
+	Echo = 2,
+	ChannelType_MAX = 3,
 };
 
 // Enum VivoxCore.ConnectionState
 enum class ConnectionState : uint8_t {
-	ConnectionState = 0,
-	ConnectionState = 1,
-	ConnectionState = 2,
-	ConnectionState = 3,
-	ConnectionState = 4,
+	Disconnected = 0,
+	Connecting = 1,
+	Connected = 2,
+	Disconnecting = 3,
+	ConnectionState_MAX = 4,
 };
 
 // Enum VivoxCore.ParticipantSpeakingUpdateRate
 enum class ParticipantSpeakingUpdateRate : uint8_t {
-	ParticipantSpeakingUpdateRate = 0,
-	ParticipantSpeakingUpdateRate = 1,
-	ParticipantSpeakingUpdateRate = 2,
-	ParticipantSpeakingUpdateRate = 3,
-	ParticipantSpeakingUpdateRate = 4,
-	ParticipantSpeakingUpdateRate = 5,
+	StateChange = 0,
+	Never = 1,
+	Update1Hz = 2,
+	Update5Hz = 3,
+	Update10Hz = 4,
+	ParticipantSpeakingUpdateRate_MAX = 5,
 };
 
 // Enum VivoxCore.TransmissionMode
 enum class TransmissionMode : uint8_t {
-	TransmissionMode = 0,
-	TransmissionMode = 1,
-	TransmissionMode = 2,
-	TransmissionMode = 3,
+	None = 0,
+	Single = 1,
+	All = 2,
+	TransmissionMode_MAX = 3,
 };
 
 // Enum VivoxCore.SubscriptionReply
 enum class SubscriptionReply : uint8_t {
-	SubscriptionReply = 0,
-	SubscriptionReply = 1,
-	SubscriptionReply = 2,
+	Allow = 0,
+	Block = 1,
+	SubscriptionReply_MAX = 2,
 };
 
 // Enum VivoxCore.SubscriptionMode
 enum class SubscriptionMode : uint8_t {
-	SubscriptionMode = 0,
-	SubscriptionMode = 1,
-	SubscriptionMode = 2,
-	SubscriptionMode = 3,
+	Accept = 0,
+	Block = 1,
+	Defer = 2,
+	SubscriptionMode_MAX = 3,
 };
 
 // Enum VivoxCore.LoginState
 enum class LoginState : uint8_t {
-	LoginState = 0,
-	LoginState = 1,
-	LoginState = 2,
-	LoginState = 3,
-	LoginState = 4,
+	LoggedOut = 0,
+	LoggingIn = 1,
+	LoggedIn = 2,
+	LoggingOut = 3,
+	LoginState_MAX = 4,
 };
 
 // Enum VivoxCore.TTSMessageState
 enum class TTSMessageState : uint8_t {
-	TTSMessageState = 0,
-	TTSMessageState = 1,
-	TTSMessageState = 2,
+	Playing = 0,
+	Enqueued = 1,
+	TTSMessageState_MAX = 2,
 };
 
 // Enum VivoxCore.TTSDestination
 enum class TTSDestination : uint8_t {
-	TTSDestination = 0,
-	TTSDestination = 0,
-	TTSDestination = 1,
-	TTSDestination = 2,
-	TTSDestination = 3,
-	TTSDestination = 4,
-	TTSDestination = 5,
-	TTSDestination = 6,
-	TTSDestination = 7,
+	Default = 0,
+	RemoteTransmission = 0,
+	LocalPlayback = 1,
+	RemoteTransmissionWithLocalPlayback = 2,
+	QueuedRemoteTransmission = 3,
+	QueuedLocalPlayback = 4,
+	QueuedRemoteTransmissionWithLocalPlayback = 5,
+	ScreenReader = 6,
+	TTSDestination_MAX = 7,
 };
 
 // Enum VivoxCore.PresenceStatus
 enum class PresenceStatus : uint8_t {
-	PresenceStatus = 0,
-	PresenceStatus = 1,
-	PresenceStatus = 2,
-	PresenceStatus = 3,
-	PresenceStatus = 4,
-	PresenceStatus = 5,
-	PresenceStatus = 6,
+	Unavailable = 0,
+	Available = 1,
+	Chat = 2,
+	DoNotDisturb = 3,
+	Away = 4,
+	ExtendedAway = 5,
+	PresenceStatus_MAX = 6,
 };
 

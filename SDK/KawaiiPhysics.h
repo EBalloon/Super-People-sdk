@@ -1,30 +1,30 @@
 // Enum KawaiiPhysics.ECollisionLimitType
 enum class ECollisionLimitType : uint8_t {
-	ECollisionLimitType = 0,
-	ECollisionLimitType = 1,
-	ECollisionLimitType = 2,
-	ECollisionLimitType = 3,
-	ECollisionLimitType = 4,
+	None = 0,
+	Spherical = 1,
+	Capsule = 2,
+	Planar = 3,
+	ECollisionLimitType_MAX = 4,
 };
 
 // Enum KawaiiPhysics.EBoneForwardAxis
 enum class EBoneForwardAxis : uint8_t {
-	EBoneForwardAxis = 0,
-	EBoneForwardAxis = 1,
-	EBoneForwardAxis = 2,
-	EBoneForwardAxis = 3,
-	EBoneForwardAxis = 4,
-	EBoneForwardAxis = 5,
-	EBoneForwardAxis = 6,
+	X_Positive = 0,
+	X_Negative = 1,
+	Y_Positive = 2,
+	Y_Negative = 3,
+	Z_Positive = 4,
+	Z_Negative = 5,
+	EBoneForwardAxis_MAX = 6,
 };
 
 // Enum KawaiiPhysics.EPlanarConstraint
 enum class EPlanarConstraint : uint8_t {
-	EPlanarConstraint = 0,
-	EPlanarConstraint = 1,
-	EPlanarConstraint = 2,
-	EPlanarConstraint = 3,
-	EPlanarConstraint = 4,
+	None = 0,
+	X = 1,
+	Y = 2,
+	Z = 3,
+	EPlanarConstraint_MAX = 4,
 };
 
 // Class KawaiiPhysics.KawaiiPhysicsLimitsDataAsset

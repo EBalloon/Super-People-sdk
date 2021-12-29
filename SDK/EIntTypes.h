@@ -1,9 +1,9 @@
 // UserDefinedEnum EIntTypes.EIntTypes
 enum class EIntTypes : uint8_t {
-	EIntTypes = 0,
-	EIntTypes = 1,
-	EIntTypes = 2,
-	EIntTypes = 3,
-	EIntTypes = 4,
+	NewEnumerator4 = 0,
+	NewEnumerator5 = 1,
+	NewEnumerator6 = 2,
+	NewEnumerator7 = 3,
+	EIntTypes_MAX = 4,
 };
 

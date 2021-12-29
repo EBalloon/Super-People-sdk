@@ -1,25 +1,25 @@
 // Enum MagicLeapARPin.EMagicLeapAutoPinType
 enum class EMagicLeapAutoPinType : uint8_t {
-	EMagicLeapAutoPinType = 0,
-	EMagicLeapAutoPinType = 1,
-	EMagicLeapAutoPinType = 2,
-	EMagicLeapAutoPinType = 3,
+	OnlyOnDataRestoration = 0,
+	Always = 1,
+	Never = 2,
+	EMagicLeapAutoPinType_MAX = 3,
 };
 
 // Enum MagicLeapARPin.EMagicLeapPassableWorldError
 enum class EMagicLeapPassableWorldError : uint8_t {
-	EMagicLeapPassableWorldError = 0,
-	EMagicLeapPassableWorldError = 1,
-	EMagicLeapPassableWorldError = 2,
-	EMagicLeapPassableWorldError = 3,
-	EMagicLeapPassableWorldError = 4,
-	EMagicLeapPassableWorldError = 5,
-	EMagicLeapPassableWorldError = 6,
-	EMagicLeapPassableWorldError = 7,
-	EMagicLeapPassableWorldError = 8,
-	EMagicLeapPassableWorldError = 9,
-	EMagicLeapPassableWorldError = 10,
-	EMagicLeapPassableWorldError = 11,
+	None = 0,
+	LowMapQuality = 1,
+	UnableToLocalize = 2,
+	Unavailable = 3,
+	PrivilegeDenied = 4,
+	InvalidParam = 5,
+	UnspecifiedFailure = 6,
+	PrivilegeRequestPending = 7,
+	StartupPending = 8,
+	NotImplemented = 9,
+	PinNotFound = 10,
+	EMagicLeapPassableWorldError_MAX = 11,
 };
 
 // Class MagicLeapARPin.MagicLeapARPinComponent
@@ -38,16 +38,16 @@ public:
 	struct Unknown PinnedSceneComponent; // 0x288 (8)
 	struct Unknown PinData; // 0x290 (8)
 
-	void UnPin(); // Function MagicLeapARPin.MagicLeapARPinComponent.UnPin(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17BAED0>
-	char PinSceneComponent(struct Unknown ComponentToPin); // Function MagicLeapARPin.MagicLeapARPinComponent.PinSceneComponent(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17BADA0>
-	char PinRestoredOrSynced(); // Function MagicLeapARPin.MagicLeapARPinComponent.PinRestoredOrSynced(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17BAD70>
-	char PinActor(struct Unknown ActorToPin); // Function MagicLeapARPin.MagicLeapARPinComponent.PinActor(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17BACE0>
-	void PersistentEntityPinned__DelegateSignature(char bRestoredOrSynced); // DelegateFunction MagicLeapARPin.MagicLeapARPinComponent.PersistentEntityPinned__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void PersistentEntityPinLost__Deleg(); // DelegateFunction MagicLeapARPin.MagicLeapARPinComponent.PersistentEntityPinLost__Deleg(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	char IsPinned(); // Function MagicLeapARPin.MagicLeapARPinComponent.IsPinned(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17BAC80>
-	char GetPinState(struct Unknown& State); // Function MagicLeapARPin.MagicLeapARPinComponent.GetPinState(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17BAB20>
-	char GetPinnedPinID(struct Unknown& PinID); // Function MagicLeapARPin.MagicLeapARPinComponent.GetPinnedPinID(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17BABD0>
-	struct Unknown GetPinData(struct Unknown* PinDataClass); // Function MagicLeapARPin.MagicLeapARPinComponent.GetPinData(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17BAA90>
+	void UnPin(); // Function MagicLeapARPin.MagicLeapARPinComponent.UnPin(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17CBA10>
+	char PinSceneComponent(struct Unknown ComponentToPin); // Function MagicLeapARPin.MagicLeapARPinComponent.PinSceneComponent(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17CB8E0>
+	char PinRestoredOrSynced(); // Function MagicLeapARPin.MagicLeapARPinComponent.PinRestoredOrSynced(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17CB8B0>
+	char PinActor(struct Unknown ActorToPin); // Function MagicLeapARPin.MagicLeapARPinComponent.PinActor(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17CB820>
+	void PersistentEntityPinned__DelegateSignature(char bRestoredOrSynced); // DelegateFunction MagicLeapARPin.MagicLeapARPinComponent.PersistentEntityPinned__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void PersistentEntityPinLost__DelegateSignature(); // DelegateFunction MagicLeapARPin.MagicLeapARPinComponent.PersistentEntityPinLost__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	char IsPinned(); // Function MagicLeapARPin.MagicLeapARPinComponent.IsPinned(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17CB7C0>
+	char GetPinState(struct Unknown& State); // Function MagicLeapARPin.MagicLeapARPinComponent.GetPinState(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17CB660>
+	char GetPinnedPinID(struct Unknown& PinID); // Function MagicLeapARPin.MagicLeapARPinComponent.GetPinnedPinID(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17CB710>
+	struct Unknown GetPinData(struct Unknown* PinDataClass); // Function MagicLeapARPin.MagicLeapARPinComponent.GetPinData(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17CB5D0>
 };
 
 // Class MagicLeapARPin.MagicLeapARPinSettings
@@ -162,13 +162,13 @@ inline void UMagicLeapARPinComponent::PersistentEntityPinned__DelegateSignature(
 	fn->FunctionFlags = flags;
 }
 
-// DelegateFunction MagicLeapARPin.MagicLeapARPinComponent.PersistentEntityPinLost__Deleg
-inline void UMagicLeapARPinComponent::PersistentEntityPinLost__Deleg() {
-	static auto fn = UObject::FindObject<UFunction>("DelegateFunction MagicLeapARPin.MagicLeapARPinComponent.PersistentEntityPinLost__Deleg");
+// DelegateFunction MagicLeapARPin.MagicLeapARPinComponent.PersistentEntityPinLost__DelegateSignature
+inline void UMagicLeapARPinComponent::PersistentEntityPinLost__DelegateSignature() {
+	static auto fn = UObject::FindObject<UFunction>("DelegateFunction MagicLeapARPin.MagicLeapARPinComponent.PersistentEntityPinLost__DelegateSignature");
 
-	struct PersistentEntityPinLost__Deleg_Params {
+	struct PersistentEntityPinLost__DelegateSignature_Params {
 		
-	}; PersistentEntityPinLost__Deleg_Params Params;
+	}; PersistentEntityPinLost__DelegateSignature_Params Params;
 
 
 	auto flags = fn->FunctionFlags;

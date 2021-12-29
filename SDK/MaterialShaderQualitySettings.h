@@ -1,10 +1,10 @@
 // Enum MaterialShaderQualitySettings.EMobileCSMQuality
 enum class EMobileCSMQuality : uint8_t {
-	EMobileCSMQuality = 0,
-	EMobileCSMQuality = 1,
-	EMobileCSMQuality = 2,
-	EMobileCSMQuality = 3,
-	EMobileCSMQuality = 4,
+	NoFiltering = 0,
+	PCF_1x1 = 1,
+	PCF_2x2 = 2,
+	PCF_3x3 = 3,
+	EMobileCSMQuality_MAX = 4,
 };
 
 // Class MaterialShaderQualitySettings.MaterialShaderQualitySettings

@@ -1,12 +1,12 @@
 // Enum CoherentRenderingPlugin.ECoherentRenderingSettingsSeverity
 enum class ECoherentRenderingSettingsSeverity : uint8_t {
-	ECoherentRenderingSettingsSeverity = 0,
-	ECoherentRenderingSettingsSeverity = 1,
-	ECoherentRenderingSettingsSeverity = 2,
-	ECoherentRenderingSettingsSeverity = 3,
-	ECoherentRenderingSettingsSeverity = 4,
-	ECoherentRenderingSettingsSeverity = 5,
-	ECoherentRenderingSettingsSeverity = 6,
+	Trace = 0,
+	Debug = 1,
+	Info = 2,
+	Warning = 3,
+	AssertFailure = 4,
+	Error = 5,
+	ECoherentRenderingSettingsSeverity_MAX = 6,
 };
 
 // Class CoherentRenderingPlugin.CoherentRenderingSettings

@@ -1,63 +1,63 @@
 // Enum AudioMixer.EAudioSpectrumType
 enum class EAudioSpectrumType : uint8_t {
-	EAudioSpectrumType = 0,
-	EAudioSpectrumType = 1,
-	EAudioSpectrumType = 2,
+	MagnitudeSpectrum = 0,
+	PowerSpectrum = 1,
+	EAudioSpectrumType_MAX = 2,
 };
 
 // Enum AudioMixer.EFFTWindowType
 enum class EFFTWindowType : uint8_t {
-	EFFTWindowType = 0,
-	EFFTWindowType = 1,
-	EFFTWindowType = 2,
-	EFFTWindowType = 3,
-	EFFTWindowType = 4,
+	None = 0,
+	Hamming = 1,
+	Hann = 2,
+	Blackman = 3,
+	EFFTWindowType_MAX = 4,
 };
 
 // Enum AudioMixer.EFFTPeakInterpolationMethod
 enum class EFFTPeakInterpolationMethod : uint8_t {
-	EFFTPeakInterpolationMethod = 0,
-	EFFTPeakInterpolationMethod = 1,
-	EFFTPeakInterpolationMethod = 2,
-	EFFTPeakInterpolationMethod = 3,
+	NearestNeighbor = 0,
+	Linear = 1,
+	Quadratic = 2,
+	EFFTPeakInterpolationMethod_MAX = 3,
 };
 
 // Enum AudioMixer.EFFTSize
 enum class EFFTSize : uint8_t {
-	EFFTSize = 0,
-	EFFTSize = 1,
-	EFFTSize = 2,
-	EFFTSize = 3,
-	EFFTSize = 4,
-	EFFTSize = 5,
+	DefaultSize = 0,
+	Min = 1,
+	Small = 2,
+	Medium = 3,
+	Large = 4,
+	Max = 5,
 };
 
 // Enum AudioMixer.ESubmixEffectDynamicsChannelLinkMode
 enum class ESubmixEffectDynamicsChannelLinkMode : uint8_t {
-	ESubmixEffectDynamicsChannelLinkMode = 0,
-	ESubmixEffectDynamicsChannelLinkMode = 1,
-	ESubmixEffectDynamicsChannelLinkMode = 2,
-	ESubmixEffectDynamicsChannelLinkMode = 3,
-	ESubmixEffectDynamicsChannelLinkMode = 4,
+	Disabled = 0,
+	Average = 1,
+	Peak = 2,
+	Count = 3,
+	ESubmixEffectDynamicsChannelLinkMode_MAX = 4,
 };
 
-// Enum AudioMixer.ESubmixEffectDynamicsPeak
-enum class ESubmixEffectDynamicsPeak : uint8_t {
-	ESubmixEffectDynamicsPeak = 0,
-	ESubmixEffectDynamicsPeak = 1,
-	ESubmixEffectDynamicsPeak = 2,
-	ESubmixEffectDynamicsPeak = 3,
-	ESubmixEffectDynamicsPeak = 4,
+// Enum AudioMixer.ESubmixEffectDynamicsPeakMode
+enum class ESubmixEffectDynamicsPeakMode : uint8_t {
+	MeanSquared = 0,
+	RootMeanSquared = 1,
+	Peak = 2,
+	Count = 3,
+	ESubmixEffectDynamicsPeakMode_MAX = 4,
 };
 
 // Enum AudioMixer.ESubmixEffectDynamicsProcessorType
 enum class ESubmixEffectDynamicsProcessorType : uint8_t {
-	ESubmixEffectDynamicsProcessorType = 0,
-	ESubmixEffectDynamicsProcessorType = 1,
-	ESubmixEffectDynamicsProcessorType = 2,
-	ESubmixEffectDynamicsProcessorType = 3,
-	ESubmixEffectDynamicsProcessorType = 4,
-	ESubmixEffectDynamicsProcessorType = 5,
+	Compressor = 0,
+	Limiter = 1,
+	Expander = 2,
+	Gate = 3,
+	Count = 4,
+	ESubmixEffectDynamicsProcessorType_MAX = 5,
 };
 
 // Class AudioMixer.SynthComponent
@@ -89,11 +89,11 @@ public:
 	struct Unknown Synth; // 0x6D8 (8)
 	struct Unknown AudioComponent; // 0x6E0 (8)
 
-	void Stop(); // Function AudioMixer.SynthComponent.Stop(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33FF8A0>
-	void Start(); // Function AudioMixer.SynthComponent.Start(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33FF5C0>
-	void SetVolumeMultiplier(float VolumeMultiplier); // Function AudioMixer.SynthComponent.SetVolumeMultiplier(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33FF540>
-	void SetSubmixSend(struct Unknown Submix, float SendLevel); // Function AudioMixer.SynthComponent.SetSubmixSend(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33FF470>
-	char IsPlaying(); // Function AudioMixer.SynthComponent.IsPlaying(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33FE6B0>
+	void Stop(); // Function AudioMixer.SynthComponent.Stop(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3BBA790>
+	void Start(); // Function AudioMixer.SynthComponent.Start(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3BBA4B0>
+	void SetVolumeMultiplier(float VolumeMultiplier); // Function AudioMixer.SynthComponent.SetVolumeMultiplier(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3BBA430>
+	void SetSubmixSend(struct Unknown Submix, float SendLevel); // Function AudioMixer.SynthComponent.SetSubmixSend(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3BBA360>
+	char IsPlaying(); // Function AudioMixer.SynthComponent.IsPlaying(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3BB95A0>
 };
 
 // Class AudioMixer.SubmixEffectDynamicsProcessorPreset
@@ -103,8 +103,8 @@ public:
 
 	struct Unknown Settings; // 0xB8 (80)
 
-	void SetSettings(struct Unknown& Settings); // Function AudioMixer.SubmixEffectDynamicsProcessorPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33FEFE0>
-	void SetExternalSubmix(struct Unknown Submix); // Function AudioMixer.SubmixEffectDynamicsProcessorPreset.SetExternalSubmix(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33FEF60>
+	void SetSettings(struct Unknown& Settings); // Function AudioMixer.SubmixEffectDynamicsProcessorPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3BB9ED0>
+	void SetExternalSubmix(struct Unknown Submix); // Function AudioMixer.SubmixEffectDynamicsProcessorPreset.SetExternalSubmix(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3BB9E50>
 };
 
 // Class AudioMixer.SubmixEffectSubmixEQPreset
@@ -114,7 +114,7 @@ public:
 
 	struct Unknown Settings; // 0x78 (16)
 
-	void SetSettings(struct Unknown& InSettings); // Function AudioMixer.SubmixEffectSubmixEQPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18E17A0>
+	void SetSettings(struct Unknown& InSettings); // Function AudioMixer.SubmixEffectSubmixEQPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18F22E0>
 };
 
 // Class AudioMixer.SubmixEffectReverbPreset
@@ -124,8 +124,8 @@ public:
 
 	struct Unknown Settings; // 0x9C (52)
 
-	void SetSettingsWithReverbEffect(struct Unknown InReverbEffect, float WetLevel, float DryLevel); // Function AudioMixer.SubmixEffectReverbPreset.SetSettingsWithReverbEffect(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33FF370>
-	void SetSettings(struct Unknown& InSettings); // Function AudioMixer.SubmixEffectReverbPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33FF1B0>
+	void SetSettingsWithReverbEffect(struct Unknown InReverbEffect, float WetLevel, float DryLevel); // Function AudioMixer.SubmixEffectReverbPreset.SetSettingsWithReverbEffect(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3BBA260>
+	void SetSettings(struct Unknown& InSettings); // Function AudioMixer.SubmixEffectReverbPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3BBA0A0>
 };
 
 // Class AudioMixer.SubmixEffectReverbFastPreset
@@ -135,8 +135,8 @@ public:
 
 	struct Unknown Settings; // 0xA0 (56)
 
-	void SetSettingsWithReverbEffect(struct Unknown InReverbEffect, float WetLevel, float DryLevel); // Function AudioMixer.SubmixEffectReverbFastPreset.SetSettingsWithReverbEffect(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33FF270>
-	void SetSettings(struct Unknown& InSettings); // Function AudioMixer.SubmixEffectReverbFastPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x33FF0F0>
+	void SetSettingsWithReverbEffect(struct Unknown InReverbEffect, float WetLevel, float DryLevel); // Function AudioMixer.SubmixEffectReverbFastPreset.SetSettingsWithReverbEffect(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3BBA160>
+	void SetSettings(struct Unknown& InSettings); // Function AudioMixer.SubmixEffectReverbFastPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3BB9FE0>
 };
 
 // Class AudioMixer.SynthSound

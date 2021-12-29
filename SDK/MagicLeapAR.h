@@ -1,20 +1,20 @@
 // Enum MagicLeapAR.ELuminARLineTraceChannel
 enum class ELuminARLineTraceChannel : uint8_t {
-	ELuminARLineTraceChannel = 0,
-	ELuminARLineTraceChannel = 1,
-	ELuminARLineTraceChannel = 2,
-	ELuminARLineTraceChannel = 4,
-	ELuminARLineTraceChannel = 8,
-	ELuminARLineTraceChannel = 16,
-	ELuminARLineTraceChannel = 17,
+	None = 0,
+	FeaturePoint = 1,
+	InfinitePlane = 2,
+	PlaneUsingExtent = 4,
+	PlaneUsingBoundaryPolygon = 8,
+	FeaturePointWithSurfaceNormal = 16,
+	ELuminARLineTraceChannel_MAX = 17,
 };
 
 // Enum MagicLeapAR.ELuminARTrackingState
 enum class ELuminARTrackingState : uint8_t {
-	ELuminARTrackingState = 0,
-	ELuminARTrackingState = 1,
-	ELuminARTrackingState = 2,
-	ELuminARTrackingState = 3,
+	Tracking = 0,
+	NotTracking = 1,
+	StoppedTracking = 2,
+	ELuminARTrackingState_MAX = 3,
 };
 
 // Class MagicLeapAR.LuminARSessionConfig
@@ -39,7 +39,7 @@ public:
 
 	struct TArray<Unknown> AmbientIntensityNits; // 0x40 (16)
 
-	struct TArray<Unknown> GetAmbientIntensityNits(); // Function MagicLeapAR.LuminARLightEstimate.GetAmbientIntensityNits(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17CFA00>
+	struct TArray<Unknown> GetAmbientIntensityNits(); // Function MagicLeapAR.LuminARLightEstimate.GetAmbientIntensityNits(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17E0540>
 };
 
 // Class MagicLeapAR.LuminARCandidateImage
@@ -50,8 +50,8 @@ public:
 	char bUseUnreliablePose : 0; // 0x58 (1)
 	char bImageIsStationary : 0; // 0x59 (1)
 
-	char GetUseUnreliablePose(); // Function MagicLeapAR.LuminARCandidateImage.GetUseUnreliablePose(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17CFB10>
-	char GetImageIsStationary(); // Function MagicLeapAR.LuminARCandidateImage.GetImageIsStationary(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17CFAC0>
+	char GetUseUnreliablePose(); // Function MagicLeapAR.LuminARCandidateImage.GetUseUnreliablePose(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17E0650>
+	char GetImageIsStationary(); // Function MagicLeapAR.LuminARCandidateImage.GetImageIsStationary(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17E0600>
 };
 
 // Function MagicLeapAR.LuminARLightEstimate.GetAmbientIntensityNits

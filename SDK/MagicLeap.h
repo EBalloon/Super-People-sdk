@@ -1,91 +1,91 @@
 // Enum MagicLeap.PurchaseType
 enum class PurchaseType : uint8_t {
-	PurchaseType = 0,
-	PurchaseType = 1,
-	PurchaseType = 2,
-	PurchaseType = 3,
+	Consumable = 0,
+	Nonconsumable = 1,
+	Undefined = 2,
+	PurchaseType_MAX = 3,
 };
 
 // Enum MagicLeap.EFocusLostReason
 enum class EFocusLostReason : uint8_t {
-	EFocusLostReason = 0,
-	EFocusLostReason = 1,
-	EFocusLostReason = 2,
+	EFocusLostReason_Invalid = 0,
+	EFocusLostReason_System = 1,
+	EFocusLostReason_MAX = 2,
 };
 
 // Enum MagicLeap.EMagicLeapMeshLOD
 enum class EMagicLeapMeshLOD : uint8_t {
-	EMagicLeapMeshLO = 0,
-	EMagicLeapMeshLO = 1,
-	EMagicLeapMeshLO = 2,
-	EMagicLeapMeshLO = 3,
+	Minimum = 0,
+	Medium = 1,
+	Maximum = 2,
+	EMagicLeapMeshLOD_MAX = 3,
 };
 
 // Enum MagicLeap.EMagicLeapMeshState
 enum class EMagicLeapMeshState : uint8_t {
-	EMagicLeapMeshState = 0,
-	EMagicLeapMeshState = 1,
-	EMagicLeapMeshState = 2,
-	EMagicLeapMeshState = 3,
-	EMagicLeapMeshState = 4,
+	New = 0,
+	Updated = 1,
+	Deleted = 2,
+	Unchanged = 3,
+	EMagicLeapMeshState_MAX = 4,
 };
 
-// Enum MagicLeap.EMagicLeapMeshVertexColor
-enum class EMagicLeapMeshVertexColor : uint8_t {
-	EMagicLeapMeshVertexColor = 0,
-	EMagicLeapMeshVertexColorMnged = 1,
-	EMagicLeapMeshVertexColor = 2,
-	EMagicLeapMeshVertexColorMed = 3,
-	EMagicLeapMeshVertexColor = 4,
+// Enum MagicLeap.EMagicLeapMeshVertexColorMode
+enum class EMagicLeapMeshVertexColorMode : uint8_t {
+	None = 0,
+	Confidence = 1,
+	Block = 2,
+	LOD = 3,
+	EMagicLeapMeshVertexColorMode_MAX = 4,
 };
 
 // Enum MagicLeap.EMagicLeapMeshType
 enum class EMagicLeapMeshType : uint8_t {
-	EMagicLeapMeshType = 0,
-	EMagicLeapMeshType = 1,
-	EMagicLeapMeshType = 2,
+	Triangles = 0,
+	PointCloud = 1,
+	EMagicLeapMeshType_MAX = 2,
 };
 
 // Enum MagicLeap.EMagicLeapRaycastResultState
 enum class EMagicLeapRaycastResultState : uint8_t {
-	EMagicLeapRaycastResultState = 0,
-	EMagicLeapRaycastResultState = 1,
-	EMagicLeapRaycastResultState = 2,
-	EMagicLeapRaycastResultState = 3,
-	EMagicLeapRaycastResultState = 4,
+	RequestFailed = 0,
+	NoCollision = 1,
+	HitUnobserved = 2,
+	HitObserved = 3,
+	EMagicLeapRaycastResultState_MAX = 4,
 };
 
 // Enum MagicLeap.CloudStatus
 enum class CloudStatus : uint8_t {
-	CloudStatus = 0,
-	CloudStatus = 1,
-	CloudStatus = 2,
+	CloudStatus_NotDone = 0,
+	CloudStatus_Done = 1,
+	CloudStatus_MAX = 2,
 };
 
 // Enum MagicLeap.EMagicLeapHeadTrackingMapEvent
 enum class EMagicLeapHeadTrackingMapEvent : uint8_t {
-	EMagicLeapHeadTrackingMapEvent = 0,
-	EMagicLeapHeadTrackingMapEvent = 1,
-	EMagicLeapHeadTrackingMapEvent = 2,
-	EMagicLeapHeadTrackingMapEvent = 3,
-	EMagicLeapHeadTrackingMapEvent = 4,
+	Lost = 0,
+	Recovered = 1,
+	RecoveryFailed = 2,
+	NewSession = 3,
+	EMagicLeapHeadTrackingMapEvent_MAX = 4,
 };
 
 // Enum MagicLeap.EMagicLeapHeadTrackingMode
 enum class EMagicLeapHeadTrackingMode : uint8_t {
-	EMagicLeapHeadTrackingMode = 0,
-	EMagicLeapHeadTrackingMode = 1,
-	EMagicLeapHeadTrackingMode = 2,
-	EMagicLeapHeadTrackingMode = 3,
+	PositionAndOrientation = 0,
+	Unavailable = 1,
+	Unknown = 2,
+	EMagicLeapHeadTrackingMode_MAX = 3,
 };
 
 // Enum MagicLeap.EMagicLeapHeadTrackingError
 enum class EMagicLeapHeadTrackingError : uint8_t {
-	EMagicLeapHeadTrackingError = 0,
-	EMagicLeapHeadTrackingError = 1,
-	EMagicLeapHeadTrackingError = 2,
-	EMagicLeapHeadTrackingError = 3,
-	EMagicLeapHeadTrackingError = 4,
+	None = 0,
+	NotEnoughFeatures = 1,
+	LowLight = 2,
+	Unknown = 3,
+	EMagicLeapHeadTrackingError_MAX = 4,
 };
 
 // Class MagicLeap.InAppPurchaseComponent
@@ -101,16 +101,16 @@ public:
 	struct FMulticastInlineDelegate GetPurchaseHistorySuccess; // 0x100 (16)
 	struct FMulticastInlineDelegate GetPurchaseHistoryFailure; // 0x110 (16)
 
-	char TryPurchaseItemAsync(struct Unknown& ItemDetails); // Function MagicLeap.InAppPurchaseComponent.TryPurchaseItemAsync(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17CBCE0>
-	char TryGetPurchaseHistoryAsync(int32_t InNumPages); // Function MagicLeap.InAppPurchaseComponent.TryGetPurchaseHistoryAsync(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17CBC50>
-	char TryGetItemsDetailsAsync(struct TArray<Unknown>& ItemIDs); // Function MagicLeap.InAppPurchaseComponent.TryGetItemsDetailsAsync(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17CBB70>
-	void PurchaseConfirmationSuccess__DelegateSignature(struct Unknown& PurchaseConfirmations); // DelegateFunction MagicLeap.InAppPurchaseComponent.PurchaseConfirmationSuccess__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void PurchaseConfirmationFailure__DelegateSignature(); // DelegateFunction MagicLeap.InAppPurchaseComponent.PurchaseConfirmationFailure__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void InAppPurchaseLogMessage__Delegy(struct FString LogMessage); // DelegateFunction MagicLeap.InAppPurchaseComponent.InAppPurchaseLogMessage__Deleg(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void GetPurchaseHistorySuccess__DelegateSig(struct TArray<Unknown>& PurchaseHistory); // DelegateFunction MagicLeap.InAppPurchaseComponent.GetPurchaseHistorySuccess__DelegateSigture(MulticastDelegate|Public|Delegate|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void GetPurchaseHistoryFailure__DelegateSig(); // DelegateFunction MagicLeap.InAppPurchaseComponent.GetPurchaseHistoryFailure__DelegateSig(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void GetItemsDetailsSuccess__DelegateSignature(struct TArray<Unknown>& ItemsDetails); // DelegateFunction MagicLeap.InAppPurchaseComponent.GetItemsDetailsSuccess__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	void GetItemsDetailsFailure__DelegateSignature(); // DelegateFunction MagicLeap.InAppPurchaseComponent.GetItemsDetailsFailure__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
+	char TryPurchaseItemAsync(struct Unknown& ItemDetails); // Function MagicLeap.InAppPurchaseComponent.TryPurchaseItemAsync(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17DC820>
+	char TryGetPurchaseHistoryAsync(int32_t InNumPages); // Function MagicLeap.InAppPurchaseComponent.TryGetPurchaseHistoryAsync(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17DC790>
+	char TryGetItemsDetailsAsync(struct TArray<Unknown>& ItemIDs); // Function MagicLeap.InAppPurchaseComponent.TryGetItemsDetailsAsync(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17DC6B0>
+	void PurchaseConfirmationSuccess__DelegateSignature(struct Unknown& PurchaseConfirmations); // DelegateFunction MagicLeap.InAppPurchaseComponent.PurchaseConfirmationSuccess__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void PurchaseConfirmationFailure__DelegateSignature(); // DelegateFunction MagicLeap.InAppPurchaseComponent.PurchaseConfirmationFailure__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void InAppPurchaseLogMessage__DelegateSignature(struct FString LogMessage); // DelegateFunction MagicLeap.InAppPurchaseComponent.InAppPurchaseLogMessage__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void GetPurchaseHistorySuccess__DelegateSignature(struct TArray<Unknown>& PurchaseHistory); // DelegateFunction MagicLeap.InAppPurchaseComponent.GetPurchaseHistorySuccess__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void GetPurchaseHistoryFailure__DelegateSignature(); // DelegateFunction MagicLeap.InAppPurchaseComponent.GetPurchaseHistoryFailure__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void GetItemsDetailsSuccess__DelegateSignature(struct TArray<Unknown>& ItemsDetails); // DelegateFunction MagicLeap.InAppPurchaseComponent.GetItemsDetailsSuccess__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void GetItemsDetailsFailure__DelegateSignature(); // DelegateFunction MagicLeap.InAppPurchaseComponent.GetItemsDetailsFailure__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
 };
 
 // Class MagicLeap.LuminApplicationLifecycleComponent
@@ -131,8 +131,8 @@ class UMagicLeapHeadTrackingNotificationsComponent : public UVRNotificationsComp
 public:
 
 	struct FMulticastInlineDelegate OnHeadTrackingLost; // 0x140 (16)
-	struct FMulticastInlineDelegate OnHeadTrackingRecov; // 0x150 (16)
-	struct FMulticastInlineDelegate OnHeadTrackingRecovgatePrope; // 0x160 (16)
+	struct FMulticastInlineDelegate OnHeadTrackingRecovered; // 0x150 (16)
+	struct FMulticastInlineDelegate OnHeadTrackingRecoveryFailed; // 0x160 (16)
 	struct FMulticastInlineDelegate OnHeadTrackingNewSessionStarted; // 0x170 (16)
 };
 
@@ -159,13 +159,13 @@ public:
 	struct Unknown MRMesh; // 0x2B0 (8)
 	int32_t BricksPerFrame; // 0x2B8 (4)
 
-	void SelectMeshBlocks(struct Unknown& NewMeshInfo, struct TArray<Unknown>& RequestedMesh); // Function MagicLeap.MagicLeapMeshTrackerComponent.SelectMeshBlocks(Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17CB850>
-	void OnMeshTrackerUpdated__DelegateSignature(struct Unknown ID, struct TArray<Unknown>& Vertices, struct TArray<Unknown>& Triangles, struct TArray<Unknown>& Normals, struct TArray<Unknown>& Confidence); // DelegateFunction MagicLeap.MagicLeapMeshTrackerComponent.OnMeshTrackerUpdated__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x23B3180>
-	int32_t GetNumQueuedBlockUpdates(); // Function MagicLeap.MagicLeapMeshTrackerComponent.GetNumQueuedBlockUpdates(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17CB300>
-	void DisconnectMRMesh(struct Unknown InMRMeshPtr); // Function MagicLeap.MagicLeapMeshTrackerComponent.DisconnectMRMesh(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17CAED0>
-	void DisconnectBlockSelector(); // Function MagicLeap.MagicLeapMeshTrackerComponent.DisconnectBlockSelector(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17CAEB0>
-	void ConnectMRMesh(struct Unknown InMRMeshPtr); // Function MagicLeap.MagicLeapMeshTrackerComponent.ConnectMRMesh(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17CAE30>
-	void ConnectBlockSelector(struct TScriptInterface<IUnknown> Selector); // Function MagicLeap.MagicLeapMeshTrackerComponent.ConnectBlockSelector(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17CAD90>
+	void SelectMeshBlocks(struct Unknown& NewMeshInfo, struct TArray<Unknown>& RequestedMesh); // Function MagicLeap.MagicLeapMeshTrackerComponent.SelectMeshBlocks(Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17DC390>
+	void OnMeshTrackerUpdated__DelegateSignature(struct Unknown ID, struct TArray<Unknown>& Vertices, struct TArray<Unknown>& Triangles, struct TArray<Unknown>& Normals, struct TArray<Unknown>& Confidence); // DelegateFunction MagicLeap.MagicLeapMeshTrackerComponent.OnMeshTrackerUpdated__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	int32_t GetNumQueuedBlockUpdates(); // Function MagicLeap.MagicLeapMeshTrackerComponent.GetNumQueuedBlockUpdates(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17DBE40>
+	void DisconnectMRMesh(struct Unknown InMRMeshPtr); // Function MagicLeap.MagicLeapMeshTrackerComponent.DisconnectMRMesh(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17DBA10>
+	void DisconnectBlockSelector(); // Function MagicLeap.MagicLeapMeshTrackerComponent.DisconnectBlockSelector(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17DB9F0>
+	void ConnectMRMesh(struct Unknown InMRMeshPtr); // Function MagicLeap.MagicLeapMeshTrackerComponent.ConnectMRMesh(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17DB970>
+	void ConnectBlockSelector(struct TScriptInterface<IUnknown> Selector); // Function MagicLeap.MagicLeapMeshTrackerComponent.ConnectBlockSelector(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17DB8D0>
 };
 
 // Class MagicLeap.MagicLeapSettings
@@ -230,7 +230,7 @@ struct FMagicLeapRaycastQueryParams {
 	int32_t Width; // 0x24 (4)
 	int32_t Height; // 0x28 (4)
 	float HorizontalFovDegrees; // 0x2C (4)
-	char CollideWithUnobservry : 0; // 0x30 (1)
+	char CollideWithUnobserved : 0; // 0x30 (1)
 	int32_t UserData; // 0x34 (4)
 };
 
@@ -344,13 +344,13 @@ inline void UInAppPurchaseComponent::PurchaseConfirmationFailure__DelegateSignat
 	fn->FunctionFlags = flags;
 }
 
-// DelegateFunction MagicLeap.InAppPurchaseComponent.InAppPurchaseLogMessage__Deleg
-inline void UInAppPurchaseComponent::InAppPurchaseLogMessage__Deleg(struct FString LogMessage) {
-	static auto fn = UObject::FindObject<UFunction>("DelegateFunction MagicLeap.InAppPurchaseComponent.InAppPurchaseLogMessage__Deleg");
+// DelegateFunction MagicLeap.InAppPurchaseComponent.InAppPurchaseLogMessage__DelegateSignature
+inline void UInAppPurchaseComponent::InAppPurchaseLogMessage__DelegateSignature(struct FString LogMessage) {
+	static auto fn = UObject::FindObject<UFunction>("DelegateFunction MagicLeap.InAppPurchaseComponent.InAppPurchaseLogMessage__DelegateSignature");
 
-	struct InAppPurchaseLogMessage__Deleg_Params {
+	struct InAppPurchaseLogMessage__DelegateSignature_Params {
 		struct FString LogMessage;
-	}; InAppPurchaseLogMessage__Deleg_Params Params;
+	}; InAppPurchaseLogMessage__DelegateSignature_Params Params;
 
 	Params.LogMessage = LogMessage;
 
@@ -359,13 +359,13 @@ inline void UInAppPurchaseComponent::InAppPurchaseLogMessage__Deleg(struct FStri
 	fn->FunctionFlags = flags;
 }
 
-// DelegateFunction MagicLeap.InAppPurchaseComponent.GetPurchaseHistorySuccess__DelegateSigture
-inline void UInAppPurchaseComponent::GetPurchaseHistorySuccess__DelegateSig(struct TArray<Unknown>& PurchaseHistory) {
-	static auto fn = UObject::FindObject<UFunction>("DelegateFunction MagicLeap.InAppPurchaseComponent.GetPurchaseHistorySuccess__DelegateSigture");
+// DelegateFunction MagicLeap.InAppPurchaseComponent.GetPurchaseHistorySuccess__DelegateSignature
+inline void UInAppPurchaseComponent::GetPurchaseHistorySuccess__DelegateSignature(struct TArray<Unknown>& PurchaseHistory) {
+	static auto fn = UObject::FindObject<UFunction>("DelegateFunction MagicLeap.InAppPurchaseComponent.GetPurchaseHistorySuccess__DelegateSignature");
 
-	struct GetPurchaseHistorySuccess__DelegateSig_Params {
+	struct GetPurchaseHistorySuccess__DelegateSignature_Params {
 		struct TArray<Unknown>& PurchaseHistory;
-	}; GetPurchaseHistorySuccess__DelegateSig_Params Params;
+	}; GetPurchaseHistorySuccess__DelegateSignature_Params Params;
 
 
 	auto flags = fn->FunctionFlags;
@@ -376,13 +376,13 @@ inline void UInAppPurchaseComponent::GetPurchaseHistorySuccess__DelegateSig(stru
 
 }
 
-// DelegateFunction MagicLeap.InAppPurchaseComponent.GetPurchaseHistoryFailure__DelegateSig
-inline void UInAppPurchaseComponent::GetPurchaseHistoryFailure__DelegateSig() {
-	static auto fn = UObject::FindObject<UFunction>("DelegateFunction MagicLeap.InAppPurchaseComponent.GetPurchaseHistoryFailure__DelegateSig");
+// DelegateFunction MagicLeap.InAppPurchaseComponent.GetPurchaseHistoryFailure__DelegateSignature
+inline void UInAppPurchaseComponent::GetPurchaseHistoryFailure__DelegateSignature() {
+	static auto fn = UObject::FindObject<UFunction>("DelegateFunction MagicLeap.InAppPurchaseComponent.GetPurchaseHistoryFailure__DelegateSignature");
 
-	struct GetPurchaseHistoryFailure__DelegateSig_Params {
+	struct GetPurchaseHistoryFailure__DelegateSignature_Params {
 		
-	}; GetPurchaseHistoryFailure__DelegateSig_Params Params;
+	}; GetPurchaseHistoryFailure__DelegateSignature_Params Params;
 
 
 	auto flags = fn->FunctionFlags;

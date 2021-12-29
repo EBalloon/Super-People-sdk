@@ -1,12 +1,12 @@
 // Enum LocationServicesBPLibrary.ELocationAccuracy
 enum class ELocationAccuracy : uint8_t {
-	ELocationAccuracy = 0,
-	ELocationAccuracy = 1,
-	ELocationAccuracy = 2,
-	ELocationAccuracy = 3,
-	ELocationAccuracy = 4,
-	ELocationAccuracy = 5,
-	ELocationAccuracy = 6,
+	LA_ThreeKilometers = 0,
+	LA_OneKilometer = 1,
+	LA_HundredMeters = 2,
+	LA_TenMeters = 3,
+	LA_Best = 4,
+	LA_Navigation = 5,
+	LA_MAX = 6,
 };
 
 // Class LocationServicesBPLibrary.LocationServicesImpl

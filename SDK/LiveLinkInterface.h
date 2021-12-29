@@ -1,16 +1,16 @@
-// Enum LiveLinkInterface.ELiveLinkCameraProjection
-enum class ELiveLinkCameraProjection : uint8_t {
-	ELiveLinkCameraProjection = 0,
-	ELiveLinkCameraProjection = 1,
-	ELiveLinkCameraProjection = 2,
+// Enum LiveLinkInterface.ELiveLinkCameraProjectionMode
+enum class ELiveLinkCameraProjectionMode : uint8_t {
+	Perspective = 0,
+	Orthographic = 1,
+	ELiveLinkCameraProjectionMode_MAX = 2,
 };
 
 // Enum LiveLinkInterface.ELiveLinkSourceMode
 enum class ELiveLinkSourceMode : uint8_t {
-	ELiveLinkSourceMode = 0,
-	ELiveLinkSourceMode = 1,
-	ELiveLinkSourceMode = 2,
-	ELiveLinkSourceMode = 3,
+	Latest = 0,
+	EngineTime = 1,
+	Timecode = 2,
+	ELiveLinkSourceMode_MAX = 3,
 };
 
 // Class LiveLinkInterface.LiveLinkSourceSettings
@@ -134,8 +134,8 @@ struct FLiveLinkCameraStaticData : FLiveLinkTransformStaticData {
 	char bIsFocusDistanceSupported : 0; // 0x1D (1)
 };
 
-// ScriptStruct LiveLinkInterface.LiveLinkCurveConversionSetting
-struct FLiveLinkCurveConversionSetting {
+// ScriptStruct LiveLinkInterface.LiveLinkCurveConversionSettings
+struct FLiveLinkCurveConversionSettings {
 	struct TMap<Unknown, Unknown> CurveConversionAssetMap; // 0x0 (80)
 };
 

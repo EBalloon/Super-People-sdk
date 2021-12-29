@@ -1,11 +1,11 @@
 // Enum UdpMessaging.EUdpMessageFormat
 enum class EUdpMessageFormat : uint8_t {
-	EUdpMessageFormat = 0,
-	EUdpMessageFormat = 1,
-	EUdpMessageFormat = 2,
-	EUdpMessageFormat = 3,
-	EUdpMessageFormat = 4,
-	EUdpMessageFormat = 5,
+	None = 0,
+	Json = 1,
+	TaggedProperty = 2,
+	CborPlatformEndianness = 3,
+	CborStandardEndianness = 4,
+	EUdpMessageFormat_MAX = 5,
 };
 
 // Class UdpMessaging.UdpMessagingSettings

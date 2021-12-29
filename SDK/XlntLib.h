@@ -1,211 +1,211 @@
 // Enum XlntLib.ExcelUnderlineType
 enum class ExcelUnderlineType : uint8_t {
-	ExcelUnderlineType = 0,
-	ExcelUnderlineType = 1,
-	ExcelUnderlineType = 2,
-	ExcelUnderlineType = 3,
-	ExcelUnderlineType = 4,
-	ExcelUnderlineType = 5,
+	None = 0,
+	Double = 1,
+	DoubleAccounting = 2,
+	Single = 3,
+	SingleAccounting = 4,
+	ExcelUnderlineType_MAX = 5,
 };
 
 // Enum XlntLib.ExcelFillType
 enum class ExcelFillType : uint8_t {
-	ExcelFillType = 0,
-	ExcelFillType = 1,
-	ExcelFillType = 2,
+	Pattern = 0,
+	Gradient = 1,
+	ExcelFillType_MAX = 2,
 };
 
 // Enum XlntLib.ExcelGradientFillType
 enum class ExcelGradientFillType : uint8_t {
-	ExcelGradientFillType = 0,
-	ExcelGradientFillType = 1,
-	ExcelGradientFillType = 2,
+	Linear = 0,
+	Path = 1,
+	ExcelGradientFillType_MAX = 2,
 };
 
 // Enum XlntLib.ExcelPatternFillType
 enum class ExcelPatternFillType : uint8_t {
-	ExcelPatternFillType = 0,
-	ExcelPatternFillType = 1,
-	ExcelPatternFillType = 2,
-	ExcelPatternFillType = 3,
-	ExcelPatternFillType = 4,
-	ExcelPatternFillType = 5,
-	ExcelPatternFillType = 6,
-	ExcelPatternFillType = 7,
-	ExcelPatternFillType = 8,
-	ExcelPatternFillType = 9,
-	ExcelPatternFillType = 10,
-	ExcelPatternFillType = 11,
-	ExcelPatternFillType = 12,
-	ExcelPatternFillType = 13,
-	ExcelPatternFillType = 14,
-	ExcelPatternFillType = 15,
-	ExcelPatternFillType = 16,
-	ExcelPatternFillType = 17,
-	ExcelPatternFillType = 18,
-	ExcelPatternFillType = 19,
+	None = 0,
+	Solid = 1,
+	Mediumgray = 2,
+	Darkgray = 3,
+	LightGray = 4,
+	DarkHorizontal = 5,
+	DarkVertical = 6,
+	DarkDown = 7,
+	DarkUp = 8,
+	DarkGrid = 9,
+	DarkTrellis = 10,
+	LightHorizontal = 11,
+	LightVertical = 12,
+	LightDown = 13,
+	LightUp = 14,
+	LightGrid = 15,
+	LightTrellis = 16,
+	Gray125 = 17,
+	Gray0625 = 18,
+	ExcelPatternFillType_MAX = 19,
 };
 
 // Enum XlntLib.ExcelColorType
 enum class ExcelColorType : uint8_t {
-	ExcelColorType = 0,
-	ExcelColorType = 1,
-	ExcelColorType = 2,
-	ExcelColorType = 3,
+	Indexed = 0,
+	Theme = 1,
+	RGB = 2,
+	ExcelColorType_MAX = 3,
 };
 
 // Enum XlntLib.ExcelBorderStyle
 enum class ExcelBorderStyle : uint8_t {
-	ExcelBorderStyle = 0,
-	ExcelBorderStyle = 1,
-	ExcelBorderStyle = 2,
-	ExcelBorderStyle = 3,
-	ExcelBorderStyle = 4,
-	ExcelBorderStyle = 5,
-	ExcelBorderStyle = 6,
-	ExcelBorderStyle = 7,
-	ExcelBorderStyle = 8,
-	ExcelBorderStyle = 9,
-	ExcelBorderStyle = 10,
-	ExcelBorderStyle = 11,
-	ExcelBorderStyle = 12,
-	ExcelBorderStyle = 13,
-	ExcelBorderStyle = 14,
+	None = 0,
+	DashDot = 1,
+	DashDotDot = 2,
+	Dashed = 3,
+	Dotted = 4,
+	Double = 5,
+	Hair = 6,
+	Medium = 7,
+	MediumDashDot = 8,
+	MediumDashDotDot = 9,
+	MediumDashed = 10,
+	SlantDashDot = 11,
+	Thick = 12,
+	Thin = 13,
+	ExcelBorderStyle_MAX = 14,
 };
 
 // Enum XlntLib.ExcelBorderSideType
 enum class ExcelBorderSideType : uint8_t {
-	ExcelBorderSideType = 0,
-	ExcelBorderSideType = 1,
-	ExcelBorderSideType = 2,
-	ExcelBorderSideType = 3,
-	ExcelBorderSideType = 4,
-	ExcelBorderSideType = 5,
-	ExcelBorderSideType = 6,
-	ExcelBorderSideType = 7,
+	Start = 0,
+	End = 1,
+	Top = 2,
+	Bottom = 3,
+	Diagonal = 4,
+	Vertical = 5,
+	Horizontal = 6,
+	ExcelBorderSideType_MAX = 7,
 };
 
 // Enum XlntLib.ExcelBorderDiagonalDirection
 enum class ExcelBorderDiagonalDirection : uint8_t {
-	ExcelBorderDiagonalDirection = 0,
-	ExcelBorderDiagonalDirection = 1,
-	ExcelBorderDiagonalDirection = 2,
-	ExcelBorderDiagonalDirection = 3,
-	ExcelBorderDiagonalDirection = 4,
+	None = 0,
+	Up = 1,
+	Down = 2,
+	Both = 3,
+	ExcelBorderDiagonalDirection_MAX = 4,
 };
 
 // Enum XlntLib.ExcelVerticalAlignment
 enum class ExcelVerticalAlignment : uint8_t {
-	ExcelVerticalAlignment = 0,
-	ExcelVerticalAlignment = 1,
-	ExcelVerticalAlignment = 2,
-	ExcelVerticalAlignment = 3,
-	ExcelVerticalAlignment = 4,
-	ExcelVerticalAlignment = 5,
+	Top = 0,
+	Center = 1,
+	Bottom = 2,
+	Justify = 3,
+	Distributed = 4,
+	ExcelVerticalAlignment_MAX = 5,
 };
 
 // Enum XlntLib.ExcelHorizontalAlignment
 enum class ExcelHorizontalAlignment : uint8_t {
-	ExcelHorizontalAlignment = 0,
-	ExcelHorizontalAlignment = 1,
-	ExcelHorizontalAlignment = 2,
-	ExcelHorizontalAlignment = 3,
-	ExcelHorizontalAlignment = 4,
-	ExcelHorizontalAlignment = 5,
-	ExcelHorizontalAlignment = 6,
-	ExcelHorizontalAlignment = 7,
-	ExcelHorizontalAlignment = 8,
+	General = 0,
+	Left = 1,
+	Center = 2,
+	Right = 3,
+	Fill = 4,
+	Justify = 5,
+	CenterContinuous = 6,
+	Distributed = 7,
+	ExcelHorizontalAlignment_MAX = 8,
 };
 
 // Enum XlntLib.ExcelExtendedProperty
 enum class ExcelExtendedProperty : uint8_t {
-	ExcelExtendedProperty = 0,
-	ExcelExtendedProperty = 1,
-	ExcelExtendedProperty = 2,
-	ExcelExtendedProperty = 3,
-	ExcelExtendedProperty = 4,
-	ExcelExtendedProperty = 5,
-	ExcelExtendedProperty = 6,
-	ExcelExtendedProperty = 7,
-	ExcelExtendedProperty = 8,
-	ExcelExtendedProperty = 9,
-	ExcelExtendedProperty = 10,
-	ExcelExtendedProperty = 11,
-	ExcelExtendedProperty = 12,
-	ExcelExtendedProperty = 13,
-	ExcelExtendedProperty = 14,
-	ExcelExtendedProperty = 15,
-	ExcelExtendedProperty = 16,
-	ExcelExtendedProperty = 17,
-	ExcelExtendedProperty = 18,
-	ExcelExtendedProperty = 19,
-	ExcelExtendedProperty = 20,
-	ExcelExtendedProperty = 21,
-	ExcelExtendedProperty = 22,
-	ExcelExtendedProperty = 23,
-	ExcelExtendedProperty = 24,
-	ExcelExtendedProperty = 25,
-	ExcelExtendedProperty = 26,
-	ExcelExtendedProperty = 27,
+	Application = 0,
+	AppVersion = 1,
+	Characters = 2,
+	CharactersWithWpaces = 3,
+	Company = 4,
+	Digsig = 5,
+	DocSecurity = 6,
+	HeadingPairs = 7,
+	HiddenSlides = 8,
+	HLinks = 9,
+	HyperlinkBase = 10,
+	HyperlinksChanged = 11,
+	Lines = 12,
+	LinksUpToDate = 13,
+	Manager = 14,
+	MMClips = 15,
+	Notes = 16,
+	Pages = 17,
+	Paragraphs = 18,
+	PresentationFormat = 19,
+	ScaleCrop = 20,
+	SharedDoc = 21,
+	Slides = 22,
+	Template = 23,
+	TitlesOfParts = 24,
+	TotalTime = 25,
+	Words = 26,
+	ExcelExtendedProperty_MAX = 27,
 };
 
 // Enum XlntLib.ExcelCoreProperty
 enum class ExcelCoreProperty : uint8_t {
-	ExcelCoreProperty = 0,
-	ExcelCoreProperty = 1,
-	ExcelCoreProperty = 2,
-	ExcelCoreProperty = 3,
-	ExcelCoreProperty = 4,
-	ExcelCoreProperty = 5,
-	ExcelCoreProperty = 6,
-	ExcelCoreProperty = 7,
-	ExcelCoreProperty = 8,
-	ExcelCoreProperty = 9,
-	ExcelCoreProperty = 10,
-	ExcelCoreProperty = 11,
-	ExcelCoreProperty = 12,
-	ExcelCoreProperty = 13,
-	ExcelCoreProperty = 14,
-	ExcelCoreProperty = 15,
+	Category = 0,
+	Content_status = 1,
+	Created = 2,
+	Creator = 3,
+	Description = 4,
+	Identifier = 5,
+	Keywords = 6,
+	Language = 7,
+	LastModifiedBy = 8,
+	LastPrinted = 9,
+	Modified = 10,
+	Revision = 11,
+	Subject = 12,
+	Title = 13,
+	Version = 14,
+	ExcelCoreProperty_MAX = 15,
 };
 
 // Enum XlntLib.ExcelCellType
 enum class ExcelCellType : uint8_t {
-	ExcelCellType = 0,
-	ExcelCellType = 1,
-	ExcelCellType = 2,
-	ExcelCellType = 3,
-	ExcelCellType = 4,
-	ExcelCellType = 5,
-	ExcelCellType = 6,
-	ExcelCellType = 7,
-	ExcelCellType = 8,
+	Empty = 0,
+	Boolean = 1,
+	Date = 2,
+	Error = 3,
+	InlineString = 4,
+	Number = 5,
+	SharedString = 6,
+	FormulaString = 7,
+	ExcelCellType_MAX = 8,
 };
 
 // Enum XlntLib.ExcelBaseDate
 enum class ExcelBaseDate : uint8_t {
-	ExcelBaseDate = 0,
-	ExcelBaseDate = 1,
-	ExcelBaseDate = 2,
+	Windows1900 = 0,
+	Mac1904 = 1,
+	ExcelBaseDate_MAX = 2,
 };
 
 // Enum XlntLib.ExcelVariantType
 enum class ExcelVariantType : uint8_t {
-	ExcelVariantType = 0,
-	ExcelVariantType = 1,
-	ExcelVariantType = 2,
-	ExcelVariantType = 3,
-	ExcelVariantType = 4,
-	ExcelVariantType = 5,
-	ExcelVariantType = 6,
+	None = 0,
+	Bool = 1,
+	Int32 = 2,
+	String = 3,
+	DateTime = 4,
+	Array = 5,
+	ExcelVariantType_MAX = 6,
 };
 
 // Enum XlntLib.ExcelSortType
 enum class ExcelSortType : uint8_t {
-	ExcelSortType = 0,
-	ExcelSortType = 1,
-	ExcelSortType = 2,
-	ExcelSortType = 3,
+	None = 0,
+	Ascending = 1,
+	Descending = 2,
+	ExcelSortType_MAX = 3,
 };
 
 // Class XlntLib.ExcelWorkbook
@@ -216,45 +216,45 @@ public:
 	struct TArray<Unknown> mSheets; // 0x28 (16)
 	struct Unknown mActiveSheet; // 0x38 (8)
 
-	struct FString Title(); // Function XlntLib.ExcelWorkbook.Title(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1352DB0>
-	char StopWatch(struct Unknown WorldContextObject); // Function XlntLib.ExcelWorkbook.StopWatch(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1352520>
-	char StartWatch(struct Unknown WorldContextObject, struct FDelegate onChanged, char autoReload, float Rate); // Function XlntLib.ExcelWorkbook.StartWatch(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x13523A0>
-	struct Unknown SheetWithTitle(struct FString Title); // Function XlntLib.ExcelWorkbook.SheetWithTitle(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x13522A0>
-	struct Unknown SheetWithId(int32_t ID); // Function XlntLib.ExcelWorkbook.SheetWithId(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1352210>
-	struct TArray<Unknown> SheetTitles(); // Function XlntLib.ExcelWorkbook.SheetTitles(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1352190>
-	int32_t SheetCount(); // Function XlntLib.ExcelWorkbook.SheetCount(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1352160>
-	struct Unknown SheetAt(int32_t Index); // Function XlntLib.ExcelWorkbook.SheetAt(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x13520D0>
-	void SetTitle(struct FString Value); // Function XlntLib.ExcelWorkbook.SetTitle(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1351EF0>
-	void SetExtendedPropertyValue(enum class Unknow Property, struct Unknown Value); // Function XlntLib.ExcelWorkbook.SetExtendedPropertyValue(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1351660>
-	void SetCustomProperty(struct FString Name, struct Unknown Value); // Function XlntLib.ExcelWorkbook.SetCustomProperty(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1351250>
-	void SetCorePropertyValue(enum class Unknow Property, struct Unknown Value); // Function XlntLib.ExcelWorkbook.SetCorePropertyValue(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1351080>
-	void SetBaseDate(enum class Unknow BaseDate); // Function XlntLib.ExcelWorkbook.SetBaseDate(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1350DF0>
-	void SetActiveSheetWithTitle(struct FString Title); // Function XlntLib.ExcelWorkbook.SetActiveSheetWithTitle(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1350D00>
-	void SetActiveSheetAt(int32_t Index); // Function XlntLib.ExcelWorkbook.SetActiveSheetAt(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1350C80>
-	void SetActiveSheet(struct Unknown sheet); // Function XlntLib.ExcelWorkbook.SetActiveSheet(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1350C00>
-	char SaveAs(struct FString Path, char isAbsolutePath, char isSave); // Function XlntLib.ExcelWorkbook.SaveAs(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1350A80>
-	char Save(); // Function XlntLib.ExcelWorkbook.Save(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1350A50>
-	void RemoveSheet(struct Unknown sheet); // Function XlntLib.ExcelWorkbook.RemoveSheet(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1350940>
-	char Reload(); // Function XlntLib.ExcelWorkbook.Reload(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1350910>
-	char Load(struct FString fullPath); // Function XlntLib.ExcelWorkbook.Load(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1350020>
-	char HasTitle(); // Function XlntLib.ExcelWorkbook.HasTitle(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x134F6F0>
-	char HasExtendedProperty(enum class Unknow Property); // Function XlntLib.ExcelWorkbook.HasExtendedProperty(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x134F660>
-	char HasCustomProperty(struct FString Name); // Function XlntLib.ExcelWorkbook.HasCustomProperty(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x134F560>
-	char HasCoreProperty(enum class Unknow Property); // Function XlntLib.ExcelWorkbook.HasCoreProperty(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x134F4D0>
-	struct Unknown GetExtendedPropertyValue(enum class Unknow Property); // Function XlntLib.ExcelWorkbook.GetExtendedPropertyValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x134F350>
-	struct Unknown GetCustomProperty(struct FString Name); // Function XlntLib.ExcelWorkbook.GetCustomProperty(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x134F220>
-	struct Unknown GetCorePropertyValue(enum class Unknow Property); // Function XlntLib.ExcelWorkbook.GetCorePropertyValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x134F160>
-	struct Unknown CreateSheet(int32_t Index, char SetActive); // Function XlntLib.ExcelWorkbook.CreateSheet(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x134D170>
-	struct Unknown CopySheet(struct Unknown sheet, int32_t Index); // Function XlntLib.ExcelWorkbook.CopySheet(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x134D0B0>
-	char ContainsSheet(struct FString Title); // Function XlntLib.ExcelWorkbook.ContainsSheet(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x134CFB0>
-	void Clear(); // Function XlntLib.ExcelWorkbook.Clear(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x134CC80>
-	enum class Unknow BaseDate(); // Function XlntLib.ExcelWorkbook.BaseDate(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x134BE20>
-	void ApplyToCells(struct Unknown WorldContextObject, struct FDelegate onCell); // Function XlntLib.ExcelWorkbook.ApplyToCells(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x134BD40>
-	struct TArray<Unknown> AllSheets(); // Function XlntLib.ExcelWorkbook.AllSheets(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x134BCB0>
-	struct TArray<Unknown> AllExtendedProperties(); // Function XlntLib.ExcelWorkbook.AllExtendedProperties(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x134BBB0>
-	struct TArray<Unknown> AllCustomProperties(); // Function XlntLib.ExcelWorkbook.AllCustomProperties(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x134BB30>
-	struct TArray<Unknown> AllCoreProperties(); // Function XlntLib.ExcelWorkbook.AllCoreProperties(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x134BAB0>
-	struct Unknown ActiveSheet(); // Function XlntLib.ExcelWorkbook.ActiveSheet(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x134BA80>
+	struct FString Title(); // Function XlntLib.ExcelWorkbook.Title(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1363760>
+	char StopWatch(struct Unknown WorldContextObject); // Function XlntLib.ExcelWorkbook.StopWatch(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1362ED0>
+	char StartWatch(struct Unknown WorldContextObject, struct FDelegate onChanged, char autoReload, float Rate); // Function XlntLib.ExcelWorkbook.StartWatch(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1362D50>
+	struct Unknown SheetWithTitle(struct FString Title); // Function XlntLib.ExcelWorkbook.SheetWithTitle(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1362C50>
+	struct Unknown SheetWithId(int32_t ID); // Function XlntLib.ExcelWorkbook.SheetWithId(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1362BC0>
+	struct TArray<Unknown> SheetTitles(); // Function XlntLib.ExcelWorkbook.SheetTitles(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1362B40>
+	int32_t SheetCount(); // Function XlntLib.ExcelWorkbook.SheetCount(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1362B10>
+	struct Unknown SheetAt(int32_t Index); // Function XlntLib.ExcelWorkbook.SheetAt(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1362A80>
+	void SetTitle(struct FString Value); // Function XlntLib.ExcelWorkbook.SetTitle(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x13628A0>
+	void SetExtendedPropertyValue(enum class Unknow Property, struct Unknown Value); // Function XlntLib.ExcelWorkbook.SetExtendedPropertyValue(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1362010>
+	void SetCustomProperty(struct FString Name, struct Unknown Value); // Function XlntLib.ExcelWorkbook.SetCustomProperty(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1361C00>
+	void SetCorePropertyValue(enum class Unknow Property, struct Unknown Value); // Function XlntLib.ExcelWorkbook.SetCorePropertyValue(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1361A30>
+	void SetBaseDate(enum class Unknow BaseDate); // Function XlntLib.ExcelWorkbook.SetBaseDate(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x13617A0>
+	void SetActiveSheetWithTitle(struct FString Title); // Function XlntLib.ExcelWorkbook.SetActiveSheetWithTitle(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x13616B0>
+	void SetActiveSheetAt(int32_t Index); // Function XlntLib.ExcelWorkbook.SetActiveSheetAt(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1361630>
+	void SetActiveSheet(struct Unknown sheet); // Function XlntLib.ExcelWorkbook.SetActiveSheet(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x13615B0>
+	char SaveAs(struct FString Path, char isAbsolutePath, char isSave); // Function XlntLib.ExcelWorkbook.SaveAs(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1361430>
+	char Save(); // Function XlntLib.ExcelWorkbook.Save(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1361400>
+	void RemoveSheet(struct Unknown sheet); // Function XlntLib.ExcelWorkbook.RemoveSheet(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x13612F0>
+	char Reload(); // Function XlntLib.ExcelWorkbook.Reload(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x13612C0>
+	char Load(struct FString fullPath); // Function XlntLib.ExcelWorkbook.Load(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x13609D0>
+	char HasTitle(); // Function XlntLib.ExcelWorkbook.HasTitle(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x13600A0>
+	char HasExtendedProperty(enum class Unknow Property); // Function XlntLib.ExcelWorkbook.HasExtendedProperty(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1360010>
+	char HasCustomProperty(struct FString Name); // Function XlntLib.ExcelWorkbook.HasCustomProperty(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x135FF10>
+	char HasCoreProperty(enum class Unknow Property); // Function XlntLib.ExcelWorkbook.HasCoreProperty(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x135FE80>
+	struct Unknown GetExtendedPropertyValue(enum class Unknow Property); // Function XlntLib.ExcelWorkbook.GetExtendedPropertyValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x135FD00>
+	struct Unknown GetCustomProperty(struct FString Name); // Function XlntLib.ExcelWorkbook.GetCustomProperty(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x135FBD0>
+	struct Unknown GetCorePropertyValue(enum class Unknow Property); // Function XlntLib.ExcelWorkbook.GetCorePropertyValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x135FB10>
+	struct Unknown CreateSheet(int32_t Index, char SetActive); // Function XlntLib.ExcelWorkbook.CreateSheet(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x135DB20>
+	struct Unknown CopySheet(struct Unknown sheet, int32_t Index); // Function XlntLib.ExcelWorkbook.CopySheet(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x135DA60>
+	char ContainsSheet(struct FString Title); // Function XlntLib.ExcelWorkbook.ContainsSheet(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x135D960>
+	void Clear(); // Function XlntLib.ExcelWorkbook.Clear(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x135D630>
+	enum class Unknow BaseDate(); // Function XlntLib.ExcelWorkbook.BaseDate(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x135C7D0>
+	void ApplyToCells(struct Unknown WorldContextObject, struct FDelegate onCell); // Function XlntLib.ExcelWorkbook.ApplyToCells(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x135C6F0>
+	struct TArray<Unknown> AllSheets(); // Function XlntLib.ExcelWorkbook.AllSheets(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x135C660>
+	struct TArray<Unknown> AllExtendedProperties(); // Function XlntLib.ExcelWorkbook.AllExtendedProperties(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x135C560>
+	struct TArray<Unknown> AllCustomProperties(); // Function XlntLib.ExcelWorkbook.AllCustomProperties(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x135C4E0>
+	struct TArray<Unknown> AllCoreProperties(); // Function XlntLib.ExcelWorkbook.AllCoreProperties(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x135C460>
+	struct Unknown ActiveSheet(); // Function XlntLib.ExcelWorkbook.ActiveSheet(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x135C430>
 };
 
 // ScriptStruct XlntLib.ExcelAlignment

@@ -1,10 +1,10 @@
 // Enum GeometryCollectionCore.EGeometryCollectionCacheType
 enum class EGeometryCollectionCacheType : uint8_t {
-	EGeometryCollectionCacheType = 0,
-	EGeometryCollectionCacheType = 1,
-	EGeometryCollectionCacheType = 2,
-	EGeometryCollectionCacheType = 3,
-	EGeometryCollectionCacheType = 4,
+	None = 0,
+	Record = 1,
+	Play = 2,
+	RecordAndPlay = 3,
+	EGeometryCollectionCacheType_MAX = 4,
 };
 
 // ScriptStruct GeometryCollectionCore.RecordedTransformTrack
