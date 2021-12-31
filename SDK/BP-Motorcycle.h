@@ -3,10 +3,10 @@ class ABP-Motorcycle_C : public ABP-DefaultTwoWheelVehicle_C {
 
 public:
 
-	struct Unknown BravoHotelVehicleTire_R; // 0xD68 (8)
-	struct Unknown BravoHotelVehicleTire_F; // 0xD70 (8)
-	struct Unknown VehicleSeatCollision1; // 0xD78 (8)
-	struct Unknown VehicleSeatCollision; // 0xD80 (8)
-	struct Unknown BravoHotelVehicleSeat02; // 0xD88 (8)
+	struct Unknown BravoHotelVehicleTire_R; // 0xDB8 (8)
+	struct Unknown BravoHotelVehicleTire_F; // 0xDC0 (8)
+	struct Unknown VehicleSeatCollision1; // 0xDC8 (8)
+	struct Unknown VehicleSeatCollision; // 0xDD0 (8)
+	struct Unknown BravoHotelVehicleSeat02; // 0xDD8 (8)
 };
 

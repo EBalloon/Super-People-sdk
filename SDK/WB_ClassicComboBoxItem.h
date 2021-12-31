@@ -9,8 +9,8 @@ public:
 	struct FString ItemOption; // 0x260 (16)
 	struct Unknown Resolution; // 0x270 (8)
 
-	void Construct(); // Function WB_ClassicComboBoxItem.WB_ClassicComboBoxItem_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_WB_ClassicComboBoxItem(int32_t EntryPoint); // Function WB_ClassicComboBoxItem.WB_ClassicComboBoxItem_C.ExecuteUbergraph_WB_ClassicComboBoxItem(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void Construct(); // Function WB_ClassicComboBoxItem.WB_ClassicComboBoxItem_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_WB_ClassicComboBoxItem(int32_t EntryPoint); // Function WB_ClassicComboBoxItem.WB_ClassicComboBoxItem_C.ExecuteUbergraph_WB_ClassicComboBoxItem(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function WB_ClassicComboBoxItem.WB_ClassicComboBoxItem_C.Construct

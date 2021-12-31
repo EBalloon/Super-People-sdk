@@ -10,9 +10,9 @@ public:
 	struct FString SavedReplayFileName; // 0x288 (16)
 	struct Unknown ReplayListWidget; // 0x298 (8)
 
-	void Init(struct Unknown Event, struct FString ReplayFileName, struct Unknown ReplayListWidget); // Function UW-CheatReplayListItem.UW-CheatReplayListItem_C.Init(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void BndEvt__Button_97_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-CheatReplayListItem.UW-CheatReplayListItem_C.BndEvt__Button_97_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_UW-CheatReplayListItem(int32_t EntryPoint); // Function UW-CheatReplayListItem.UW-CheatReplayListItem_C.ExecuteUbergraph_UW-CheatReplayListItem(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void Init(struct Unknown Event, struct FString ReplayFileName, struct Unknown ReplayListWidget); // Function UW-CheatReplayListItem.UW-CheatReplayListItem_C.Init(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void BndEvt__Button_97_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-CheatReplayListItem.UW-CheatReplayListItem_C.BndEvt__Button_97_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_UW-CheatReplayListItem(int32_t EntryPoint); // Function UW-CheatReplayListItem.UW-CheatReplayListItem_C.ExecuteUbergraph_UW-CheatReplayListItem(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function UW-CheatReplayListItem.UW-CheatReplayListItem_C.Init

@@ -230,8 +230,8 @@ public:
 	struct Unknown AnimGraphNode_ComponentToLocalSpace; // 0xE6F0 (32)
 	struct Unknown AnimGraphNode_UseCachedPose; // 0xE710 (40)
 
-	void AnimGraph(struct Unknown InPose, struct Unknown& AnimGraph); // Function ABP-Mannequin-PostProcess.ABP-Mannequin-PostProcess_C.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_ABP-Mannequin-PostProcess(int32_t EntryPoint); // Function ABP-Mannequin-PostProcess.ABP-Mannequin-PostProcess_C.ExecuteUbergraph_ABP-Mannequin-PostProcess(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void AnimGraph(struct Unknown InPose, struct Unknown& AnimGraph); // Function ABP-Mannequin-PostProcess.ABP-Mannequin-PostProcess_C.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_ABP-Mannequin-PostProcess(int32_t EntryPoint); // Function ABP-Mannequin-PostProcess.ABP-Mannequin-PostProcess_C.ExecuteUbergraph_ABP-Mannequin-PostProcess(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function ABP-Mannequin-PostProcess.ABP-Mannequin-PostProcess_C.AnimGraph

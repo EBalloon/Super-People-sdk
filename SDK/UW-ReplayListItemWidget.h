@@ -26,16 +26,16 @@ public:
 	struct Unknown Style; // 0x410 (632)
 	struct Unknown ReplayListWidget; // 0x688 (8)
 
-	void GetBattleModeString(int32_t Idx, struct FText& Str); // Function UW-ReplayListItemWidget.UW-ReplayListItemWidget_C.GetBattleModeString(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void GetReportType(struct FText& Type); // Function UW-ReplayListItemWidget.UW-ReplayListItemWidget_C.GetReportType(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Clicked(); // Function UW-ReplayListItemWidget.UW-ReplayListItemWidget_C.Clicked(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void UpdateKeep(char State); // Function UW-ReplayListItemWidget.UW-ReplayListItemWidget_C.UpdateKeep(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void RevertButtonStyle(); // Function UW-ReplayListItemWidget.UW-ReplayListItemWidget_C.RevertButtonStyle(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Init(struct Unknown ItemInfo, char Supported, struct Unknown ReplayListWidget); // Function UW-ReplayListItemWidget.UW-ReplayListItemWidget_C.Init(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Construct(); // Function UW-ReplayListItemWidget.UW-ReplayListItemWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void BndEvt__ReplayListItemBtn_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-ReplayListItemWidget.UW-ReplayListItemWidget_C.BndEvt__ReplayListItemBtn_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_UW-ReplayListItemWidget(int32_t EntryPoint); // Function UW-ReplayListItemWidget.UW-ReplayListItemWidget_C.ExecuteUbergraph_UW-ReplayListItemWidget(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Click__DelegateSignature(struct Unknown ItemInfo); // Function UW-ReplayListItemWidget.UW-ReplayListItemWidget_C.Click__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void GetBattleModeString(int32_t Idx, struct FText& Str); // Function UW-ReplayListItemWidget.UW-ReplayListItemWidget_C.GetBattleModeString(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void GetReportType(struct FText& Type); // Function UW-ReplayListItemWidget.UW-ReplayListItemWidget_C.GetReportType(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Clicked(); // Function UW-ReplayListItemWidget.UW-ReplayListItemWidget_C.Clicked(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void UpdateKeep(char State); // Function UW-ReplayListItemWidget.UW-ReplayListItemWidget_C.UpdateKeep(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void RevertButtonStyle(); // Function UW-ReplayListItemWidget.UW-ReplayListItemWidget_C.RevertButtonStyle(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Init(struct Unknown ItemInfo, char Supported, struct Unknown ReplayListWidget); // Function UW-ReplayListItemWidget.UW-ReplayListItemWidget_C.Init(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Construct(); // Function UW-ReplayListItemWidget.UW-ReplayListItemWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void BndEvt__ReplayListItemBtn_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-ReplayListItemWidget.UW-ReplayListItemWidget_C.BndEvt__ReplayListItemBtn_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_UW-ReplayListItemWidget(int32_t EntryPoint); // Function UW-ReplayListItemWidget.UW-ReplayListItemWidget_C.ExecuteUbergraph_UW-ReplayListItemWidget(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Click__DelegateSignature(struct Unknown ItemInfo); // Function UW-ReplayListItemWidget.UW-ReplayListItemWidget_C.Click__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function UW-ReplayListItemWidget.UW-ReplayListItemWidget_C.GetBattleModeString

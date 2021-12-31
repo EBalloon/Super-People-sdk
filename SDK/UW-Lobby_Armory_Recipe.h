@@ -23,17 +23,17 @@ public:
 	struct Unknown CraftingInfo; // 0x2D0 (296)
 	struct Unknown SelectedButton; // 0x3F8 (8)
 
-	void GetCraftingWeaponRarity(int32_t& OutRarity); // Function UW-Lobby_Armory_Recipe.UW-Lobby_Armory_Recipe_C.GetCraftingWeaponRarity(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void OnChangedArmoryTab(); // Function UW-Lobby_Armory_Recipe.UW-Lobby_Armory_Recipe_C.OnChangedArmoryTab(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetButtonEnabled(); // Function UW-Lobby_Armory_Recipe.UW-Lobby_Armory_Recipe_C.SetButtonEnabled(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void CheckOwn(); // Function UW-Lobby_Armory_Recipe.UW-Lobby_Armory_Recipe_C.CheckOwn(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetCraftingInfo(struct Unknown ButtonRef); // Function UW-Lobby_Armory_Recipe.UW-Lobby_Armory_Recipe_C.SetCraftingInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Construct(); // Function UW-Lobby_Armory_Recipe.UW-Lobby_Armory_Recipe_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void BndEvt__Button_Crapting_Btn_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-Lobby_Armory_Recipe.UW-Lobby_Armory_Recipe_C.BndEvt__Button_Crapting_Btn_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void RequestCraftWeapon(int32_t WeaponIndex, struct FString ItemId); // Function UW-Lobby_Armory_Recipe.UW-Lobby_Armory_Recipe_C.RequestCraftWeapon(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void BndEvt__Button_Crapting_Btn_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature(); // Function UW-Lobby_Armory_Recipe.UW-Lobby_Armory_Recipe_C.BndEvt__Button_Crapting_Btn_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SelectCancel(); // Function UW-Lobby_Armory_Recipe.UW-Lobby_Armory_Recipe_C.SelectCancel(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_UW-Lobby_Armory_Recipe(int32_t EntryPoint); // Function UW-Lobby_Armory_Recipe.UW-Lobby_Armory_Recipe_C.ExecuteUbergraph_UW-Lobby_Armory_Recipe(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void GetCraftingWeaponRarity(int32_t& OutRarity); // Function UW-Lobby_Armory_Recipe.UW-Lobby_Armory_Recipe_C.GetCraftingWeaponRarity(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void OnChangedArmoryTab(); // Function UW-Lobby_Armory_Recipe.UW-Lobby_Armory_Recipe_C.OnChangedArmoryTab(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetButtonEnabled(); // Function UW-Lobby_Armory_Recipe.UW-Lobby_Armory_Recipe_C.SetButtonEnabled(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void CheckOwn(); // Function UW-Lobby_Armory_Recipe.UW-Lobby_Armory_Recipe_C.CheckOwn(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetCraftingInfo(struct Unknown ButtonRef); // Function UW-Lobby_Armory_Recipe.UW-Lobby_Armory_Recipe_C.SetCraftingInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Construct(); // Function UW-Lobby_Armory_Recipe.UW-Lobby_Armory_Recipe_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void BndEvt__Button_Crapting_Btn_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-Lobby_Armory_Recipe.UW-Lobby_Armory_Recipe_C.BndEvt__Button_Crapting_Btn_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void RequestCraftWeapon(int32_t WeaponIndex, struct FString ItemId); // Function UW-Lobby_Armory_Recipe.UW-Lobby_Armory_Recipe_C.RequestCraftWeapon(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void BndEvt__Button_Crapting_Btn_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature(); // Function UW-Lobby_Armory_Recipe.UW-Lobby_Armory_Recipe_C.BndEvt__Button_Crapting_Btn_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SelectCancel(); // Function UW-Lobby_Armory_Recipe.UW-Lobby_Armory_Recipe_C.SelectCancel(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_UW-Lobby_Armory_Recipe(int32_t EntryPoint); // Function UW-Lobby_Armory_Recipe.UW-Lobby_Armory_Recipe_C.ExecuteUbergraph_UW-Lobby_Armory_Recipe(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function UW-Lobby_Armory_Recipe.UW-Lobby_Armory_Recipe_C.GetCraftingWeaponRarity

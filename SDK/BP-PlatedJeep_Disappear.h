@@ -10,7 +10,7 @@ public:
 	struct Unknown SkeletalMesh; // 0x480 (8)
 	struct Unknown DefaultSceneRoot; // 0x488 (8)
 
-	void UserConstructionScript(); // Function BP-PlatedJeep_Disappear.BP-PlatedJeep_Disappear_C.UserConstructionScript(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void UserConstructionScript(); // Function BP-PlatedJeep_Disappear.BP-PlatedJeep_Disappear_C.UserConstructionScript(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function BP-PlatedJeep_Disappear.BP-PlatedJeep_Disappear_C.UserConstructionScript

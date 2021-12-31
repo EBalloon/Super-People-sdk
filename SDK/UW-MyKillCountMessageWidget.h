@@ -15,12 +15,12 @@ public:
 	struct Unknown Timer_HideKillCountText; // 0x288 (8)
 	float RemainTime; // 0x290 (4)
 
-	void SetHideTimer(); // Function UW-MyKillCountMessageWidget.UW-MyKillCountMessageWidget_C.SetHideTimer(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void UpdateAssistTextSize(); // Function UW-MyKillCountMessageWidget.UW-MyKillCountMessageWidget_C.UpdateAssistTextSize(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ShowKillCount(char bIsKill, struct FText Text); // Function UW-MyKillCountMessageWidget.UW-MyKillCountMessageWidget_C.ShowKillCount(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void HideKillCountText(); // Function UW-MyKillCountMessageWidget.UW-MyKillCountMessageWidget_C.HideKillCountText(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void OnAnimationFinished(struct Unknown Animation); // Function UW-MyKillCountMessageWidget.UW-MyKillCountMessageWidget_C.OnAnimationFinished(BlueprintCosmetic|Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_UW-MyKillCountMessageWidget(int32_t EntryPoint); // Function UW-MyKillCountMessageWidget.UW-MyKillCountMessageWidget_C.ExecuteUbergraph_UW-MyKillCountMessageWidget(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void SetHideTimer(); // Function UW-MyKillCountMessageWidget.UW-MyKillCountMessageWidget_C.SetHideTimer(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void UpdateAssistTextSize(); // Function UW-MyKillCountMessageWidget.UW-MyKillCountMessageWidget_C.UpdateAssistTextSize(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ShowKillCount(char bIsKill, struct FText Text); // Function UW-MyKillCountMessageWidget.UW-MyKillCountMessageWidget_C.ShowKillCount(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void HideKillCountText(); // Function UW-MyKillCountMessageWidget.UW-MyKillCountMessageWidget_C.HideKillCountText(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void OnAnimationFinished(struct Unknown Animation); // Function UW-MyKillCountMessageWidget.UW-MyKillCountMessageWidget_C.OnAnimationFinished(BlueprintCosmetic|Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_UW-MyKillCountMessageWidget(int32_t EntryPoint); // Function UW-MyKillCountMessageWidget.UW-MyKillCountMessageWidget_C.ExecuteUbergraph_UW-MyKillCountMessageWidget(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function UW-MyKillCountMessageWidget.UW-MyKillCountMessageWidget_C.SetHideTimer

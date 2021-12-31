@@ -3,13 +3,13 @@ class ABP-AreaSkill_WetFog_C : public ABravoHotelAreaSkillZoneWetFog {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x388 (8)
+	struct Unknown UberGraphFrame; // 0x3A8 (8)
 
-	void ActivateEffect(struct Unknown Character); // Function BP-AreaSkill_WetFog.BP-AreaSkill_WetFog_C.ActivateEffect(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void DeactivateEffect(struct Unknown Character); // Function BP-AreaSkill_WetFog.BP-AreaSkill_WetFog_C.DeactivateEffect(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void BPSetAreaSkillInfo(); // Function BP-AreaSkill_WetFog.BP-AreaSkill_WetFog_C.BPSetAreaSkillInfo(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void StartDestroy(); // Function BP-AreaSkill_WetFog.BP-AreaSkill_WetFog_C.StartDestroy(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_BP-AreaSkill_WetFog(int32_t EntryPoint); // Function BP-AreaSkill_WetFog.BP-AreaSkill_WetFog_C.ExecuteUbergraph_BP-AreaSkill_WetFog(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void ActivateEffect(struct Unknown Character); // Function BP-AreaSkill_WetFog.BP-AreaSkill_WetFog_C.ActivateEffect(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void DeactivateEffect(struct Unknown Character); // Function BP-AreaSkill_WetFog.BP-AreaSkill_WetFog_C.DeactivateEffect(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void BPSetAreaSkillInfo(); // Function BP-AreaSkill_WetFog.BP-AreaSkill_WetFog_C.BPSetAreaSkillInfo(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void StartDestroy(); // Function BP-AreaSkill_WetFog.BP-AreaSkill_WetFog_C.StartDestroy(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_BP-AreaSkill_WetFog(int32_t EntryPoint); // Function BP-AreaSkill_WetFog.BP-AreaSkill_WetFog_C.ExecuteUbergraph_BP-AreaSkill_WetFog(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function BP-AreaSkill_WetFog.BP-AreaSkill_WetFog_C.ActivateEffect

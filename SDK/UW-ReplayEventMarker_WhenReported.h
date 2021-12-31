@@ -7,9 +7,9 @@ public:
 	struct Unknown EventInform; // 0x2A8 (8)
 	struct Unknown VisualBorder; // 0x2B0 (8)
 
-	void Construct(); // Function UW-ReplayEventMarker_WhenReported.UW-ReplayEventMarker_WhenReported_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void K2_SetKillEvent(char IsMyInfo); // Function UW-ReplayEventMarker_WhenReported.UW-ReplayEventMarker_WhenReported_C.K2_SetKillEvent(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_UW-ReplayEventMarker_WhenReported(int32_t EntryPoint); // Function UW-ReplayEventMarker_WhenReported.UW-ReplayEventMarker_WhenReported_C.ExecuteUbergraph_UW-ReplayEventMarker_WhenReported(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void Construct(); // Function UW-ReplayEventMarker_WhenReported.UW-ReplayEventMarker_WhenReported_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void K2_SetKillEvent(char IsMyInfo); // Function UW-ReplayEventMarker_WhenReported.UW-ReplayEventMarker_WhenReported_C.K2_SetKillEvent(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_UW-ReplayEventMarker_WhenReported(int32_t EntryPoint); // Function UW-ReplayEventMarker_WhenReported.UW-ReplayEventMarker_WhenReported_C.ExecuteUbergraph_UW-ReplayEventMarker_WhenReported(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function UW-ReplayEventMarker_WhenReported.UW-ReplayEventMarker_WhenReported_C.Construct

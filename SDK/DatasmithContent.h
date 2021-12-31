@@ -258,7 +258,7 @@ public:
 
 	struct TArray<Unknown> ImportedSequences; // 0x310 (16)
 
-	void PlayLevelSequence(struct Unknown SequenceToPlay); // Function DatasmithContent.DatasmithImportedSequencesActor.PlayLevelSequence(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16C66C0>
+	void PlayLevelSequence(struct Unknown SequenceToPlay); // Function DatasmithContent.DatasmithImportedSequencesActor.PlayLevelSequence(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16C2C50>
 };
 
 // Class DatasmithContent.DatasmithCommonTessellationOptions

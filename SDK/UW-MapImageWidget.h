@@ -29,25 +29,25 @@ public:
 	enum class Unknow LastWidgetType; // 0x2F1 (1)
 	struct FText UltimateText; // 0x2F8 (24)
 
-	void UpdateWantedOpacity(); // Function UW-MapImageWidget.UW-MapImageWidget_C.UpdateWantedOpacity(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void CheckCanTextImage(char& CanText, char& CanImage); // Function UW-MapImageWidget.UW-MapImageWidget_C.CheckCanTextImage(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void StartShowAnim(); // Function UW-MapImageWidget.UW-MapImageWidget_C.StartShowAnim(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ChangeShowAnim(); // Function UW-MapImageWidget.UW-MapImageWidget_C.ChangeShowAnim(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void UpdateOpacity(); // Function UW-MapImageWidget.UW-MapImageWidget_C.UpdateOpacity(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void CheckWorldMapZoomLevel(char& Changed); // Function UW-MapImageWidget.UW-MapImageWidget_C.CheckWorldMapZoomLevel(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void GetWorldMapZoomLevel(int32_t& ZoomLevel); // Function UW-MapImageWidget.UW-MapImageWidget_C.GetWorldMapZoomLevel(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void CheckToggleWidgetType(char& Changed); // Function UW-MapImageWidget.UW-MapImageWidget_C.CheckToggleWidgetType(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void CheckCanHide(char& CanHide); // Function UW-MapImageWidget.UW-MapImageWidget_C.CheckCanHide(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetMapInfo(char& SUCCESS); // Function UW-MapImageWidget.UW-MapImageWidget_C.SetMapInfo(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void OnLoaded_199F0E9743CFA7E806886E89E49C9E00(struct Unknown Loaded); // Function UW-MapImageWidget.UW-MapImageWidget_C.OnLoaded_199F0E9743CFA7E806886E89E49C9E00(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ShowMapImage(); // Function UW-MapImageWidget.UW-MapImageWidget_C.ShowMapImage(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void HideMapImage(char SetTimer); // Function UW-MapImageWidget.UW-MapImageWidget_C.HideMapImage(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void DoHideMapImage(); // Function UW-MapImageWidget.UW-MapImageWidget_C.DoHideMapImage(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void AsyncMapImage(struct Unknown Image); // Function UW-MapImageWidget.UW-MapImageWidget_C.AsyncMapImage(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-MapImageWidget.UW-MapImageWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ChangeMapImage(); // Function UW-MapImageWidget.UW-MapImageWidget_C.ChangeMapImage(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void CheckOpacity(); // Function UW-MapImageWidget.UW-MapImageWidget_C.CheckOpacity(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_UW-MapImageWidget(int32_t EntryPoint); // Function UW-MapImageWidget.UW-MapImageWidget_C.ExecuteUbergraph_UW-MapImageWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void UpdateWantedOpacity(); // Function UW-MapImageWidget.UW-MapImageWidget_C.UpdateWantedOpacity(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void CheckCanTextImage(char& CanText, char& CanImage); // Function UW-MapImageWidget.UW-MapImageWidget_C.CheckCanTextImage(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void StartShowAnim(); // Function UW-MapImageWidget.UW-MapImageWidget_C.StartShowAnim(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ChangeShowAnim(); // Function UW-MapImageWidget.UW-MapImageWidget_C.ChangeShowAnim(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void UpdateOpacity(); // Function UW-MapImageWidget.UW-MapImageWidget_C.UpdateOpacity(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void CheckWorldMapZoomLevel(char& Changed); // Function UW-MapImageWidget.UW-MapImageWidget_C.CheckWorldMapZoomLevel(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void GetWorldMapZoomLevel(int32_t& ZoomLevel); // Function UW-MapImageWidget.UW-MapImageWidget_C.GetWorldMapZoomLevel(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void CheckToggleWidgetType(char& Changed); // Function UW-MapImageWidget.UW-MapImageWidget_C.CheckToggleWidgetType(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void CheckCanHide(char& CanHide); // Function UW-MapImageWidget.UW-MapImageWidget_C.CheckCanHide(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetMapInfo(char& SUCCESS); // Function UW-MapImageWidget.UW-MapImageWidget_C.SetMapInfo(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void OnLoaded_199F0E9743CFA7E806886E89E49C9E00(struct Unknown Loaded); // Function UW-MapImageWidget.UW-MapImageWidget_C.OnLoaded_199F0E9743CFA7E806886E89E49C9E00(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ShowMapImage(); // Function UW-MapImageWidget.UW-MapImageWidget_C.ShowMapImage(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void HideMapImage(char SetTimer); // Function UW-MapImageWidget.UW-MapImageWidget_C.HideMapImage(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void DoHideMapImage(); // Function UW-MapImageWidget.UW-MapImageWidget_C.DoHideMapImage(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void AsyncMapImage(struct Unknown Image); // Function UW-MapImageWidget.UW-MapImageWidget_C.AsyncMapImage(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-MapImageWidget.UW-MapImageWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ChangeMapImage(); // Function UW-MapImageWidget.UW-MapImageWidget_C.ChangeMapImage(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void CheckOpacity(); // Function UW-MapImageWidget.UW-MapImageWidget_C.CheckOpacity(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_UW-MapImageWidget(int32_t EntryPoint); // Function UW-MapImageWidget.UW-MapImageWidget_C.ExecuteUbergraph_UW-MapImageWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function UW-MapImageWidget.UW-MapImageWidget_C.UpdateWantedOpacity

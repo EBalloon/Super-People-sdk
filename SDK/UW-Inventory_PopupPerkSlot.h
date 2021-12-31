@@ -12,16 +12,16 @@ public:
 	struct Unknown IconBrush; // 0x378 (136)
 	struct Unknown Popup; // 0x400 (8)
 
-	struct Unknown GetColorAndOpacity_1(); // Function UW-Inventory_PopupPerkSlot.UW-Inventory_PopupPerkSlot_C.GetColorAndOpacity_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetBG(); // Function UW-Inventory_PopupPerkSlot.UW-Inventory_PopupPerkSlot_C.SetBG(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetIcon(); // Function UW-Inventory_PopupPerkSlot.UW-Inventory_PopupPerkSlot_C.SetIcon(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetPerk(struct Unknown PerkInfo); // Function UW-Inventory_PopupPerkSlot.UW-Inventory_PopupPerkSlot_C.SetPerk(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void OnLoaded_E4FEEA874F6096BAF3D0FB94F9EE8AAB(struct Unknown Loaded); // Function UW-Inventory_PopupPerkSlot.UW-Inventory_PopupPerkSlot_C.OnLoaded_E4FEEA874F6096BAF3D0FB94F9EE8AAB(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void AsyncLoadIcon(struct Unknown Image); // Function UW-Inventory_PopupPerkSlot.UW-Inventory_PopupPerkSlot_C.AsyncLoadIcon(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-Inventory_PopupPerkSlot.UW-Inventory_PopupPerkSlot_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void OnMouseLeave(struct Unknown& MouseEvent); // Function UW-Inventory_PopupPerkSlot.UW-Inventory_PopupPerkSlot_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Destruct(); // Function UW-Inventory_PopupPerkSlot.UW-Inventory_PopupPerkSlot_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_UW-Inventory_PopupPerkSlot(int32_t EntryPoint); // Function UW-Inventory_PopupPerkSlot.UW-Inventory_PopupPerkSlot_C.ExecuteUbergraph_UW-Inventory_PopupPerkSlot(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	struct Unknown GetColorAndOpacity_1(); // Function UW-Inventory_PopupPerkSlot.UW-Inventory_PopupPerkSlot_C.GetColorAndOpacity_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetBG(); // Function UW-Inventory_PopupPerkSlot.UW-Inventory_PopupPerkSlot_C.SetBG(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetIcon(); // Function UW-Inventory_PopupPerkSlot.UW-Inventory_PopupPerkSlot_C.SetIcon(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetPerk(struct Unknown PerkInfo); // Function UW-Inventory_PopupPerkSlot.UW-Inventory_PopupPerkSlot_C.SetPerk(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void OnLoaded_E4FEEA874F6096BAF3D0FB94F9EE8AAB(struct Unknown Loaded); // Function UW-Inventory_PopupPerkSlot.UW-Inventory_PopupPerkSlot_C.OnLoaded_E4FEEA874F6096BAF3D0FB94F9EE8AAB(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void AsyncLoadIcon(struct Unknown Image); // Function UW-Inventory_PopupPerkSlot.UW-Inventory_PopupPerkSlot_C.AsyncLoadIcon(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-Inventory_PopupPerkSlot.UW-Inventory_PopupPerkSlot_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void OnMouseLeave(struct Unknown& MouseEvent); // Function UW-Inventory_PopupPerkSlot.UW-Inventory_PopupPerkSlot_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Destruct(); // Function UW-Inventory_PopupPerkSlot.UW-Inventory_PopupPerkSlot_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_UW-Inventory_PopupPerkSlot(int32_t EntryPoint); // Function UW-Inventory_PopupPerkSlot.UW-Inventory_PopupPerkSlot_C.ExecuteUbergraph_UW-Inventory_PopupPerkSlot(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function UW-Inventory_PopupPerkSlot.UW-Inventory_PopupPerkSlot_C.GetColorAndOpacity_1

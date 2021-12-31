@@ -12,30 +12,30 @@ class UCineCameraComponent : public UCameraComponent {
 
 public:
 
-	struct Unknown FilmbackSettings; // 0x880 (12)
-	struct Unknown Filmback; // 0x88C (12)
-	struct Unknown LensSettings; // 0x898 (24)
-	struct Unknown FocusSettings; // 0x8B0 (88)
-	float CurrentFocalLength; // 0x908 (4)
-	float CurrentAperture; // 0x90C (4)
-	float CurrentFocusDistance; // 0x910 (4)
-	struct TArray<Unknown> FilmbackPresets; // 0x920 (16)
-	struct TArray<Unknown> LensPresets; // 0x930 (16)
-	struct FString DefaultFilmbackPresetName; // 0x940 (16)
-	struct FString DefaultFilmbackPreset; // 0x950 (16)
-	struct FString DefaultLensPresetName; // 0x960 (16)
-	float DefaultLensFocalLength; // 0x970 (4)
-	float DefaultLensFStop; // 0x974 (4)
+	struct Unknown FilmbackSettings; // 0x870 (12)
+	struct Unknown Filmback; // 0x87C (12)
+	struct Unknown LensSettings; // 0x888 (24)
+	struct Unknown FocusSettings; // 0x8A0 (88)
+	float CurrentFocalLength; // 0x8F8 (4)
+	float CurrentAperture; // 0x8FC (4)
+	float CurrentFocusDistance; // 0x900 (4)
+	struct TArray<Unknown> FilmbackPresets; // 0x910 (16)
+	struct TArray<Unknown> LensPresets; // 0x920 (16)
+	struct FString DefaultFilmbackPresetName; // 0x930 (16)
+	struct FString DefaultFilmbackPreset; // 0x940 (16)
+	struct FString DefaultLensPresetName; // 0x950 (16)
+	float DefaultLensFocalLength; // 0x960 (4)
+	float DefaultLensFStop; // 0x964 (4)
 
-	void SetLensPresetByName(struct FString InPresetName); // Function CinematicCamera.CineCameraComponent.SetLensPresetByName(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3B58730>
-	void SetFilmbackPresetByName(struct FString InPresetName); // Function CinematicCamera.CineCameraComponent.SetFilmbackPresetByName(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3B58690>
-	void SetCurrentFocalLength(float& InFocalLength); // Function CinematicCamera.CineCameraComponent.SetCurrentFocalLength(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3B585F0>
-	float GetVerticalFieldOfView(); // Function CinematicCamera.CineCameraComponent.GetVerticalFieldOfView(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3B585C0>
-	struct TArray<Unknown> GetLensPresetsCopy(); // Function CinematicCamera.CineCameraComponent.GetLensPresetsCopy(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3B584C0>
-	struct FString GetLensPresetName(); // Function CinematicCamera.CineCameraComponent.GetLensPresetName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3B58440>
-	float GetHorizontalFieldOfView(); // Function CinematicCamera.CineCameraComponent.GetHorizontalFieldOfView(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3B58410>
-	struct FString GetFilmbackPresetName(); // Function CinematicCamera.CineCameraComponent.GetFilmbackPresetName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3B58390>
-	struct FString GetDefaultFilmbackPresetName(); // Function CinematicCamera.CineCameraComponent.GetDefaultFilmbackPresetName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3B582C0>
+	void SetLensPresetByName(struct FString InPresetName); // Function CinematicCamera.CineCameraComponent.SetLensPresetByName(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3B589B0>
+	void SetFilmbackPresetByName(struct FString InPresetName); // Function CinematicCamera.CineCameraComponent.SetFilmbackPresetByName(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3B58910>
+	void SetCurrentFocalLength(float& InFocalLength); // Function CinematicCamera.CineCameraComponent.SetCurrentFocalLength(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3B58870>
+	float GetVerticalFieldOfView(); // Function CinematicCamera.CineCameraComponent.GetVerticalFieldOfView(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3B58840>
+	struct TArray<Unknown> GetLensPresetsCopy(); // Function CinematicCamera.CineCameraComponent.GetLensPresetsCopy(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3B58740>
+	struct FString GetLensPresetName(); // Function CinematicCamera.CineCameraComponent.GetLensPresetName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3B586C0>
+	float GetHorizontalFieldOfView(); // Function CinematicCamera.CineCameraComponent.GetHorizontalFieldOfView(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3B58690>
+	struct FString GetFilmbackPresetName(); // Function CinematicCamera.CineCameraComponent.GetFilmbackPresetName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3B58610>
+	struct FString GetDefaultFilmbackPresetName(); // Function CinematicCamera.CineCameraComponent.GetDefaultFilmbackPresetName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3B58540>
 };
 
 // Class CinematicCamera.CameraRig_Crane
@@ -65,7 +65,7 @@ public:
 	struct Unknown RailSplineComponent; // 0x320 (8)
 	struct Unknown RailCameraMount; // 0x328 (8)
 
-	struct Unknown GetRailSplineComponent(); // Function CinematicCamera.CameraRig_Rail.GetRailSplineComponent(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3B585A0>
+	struct Unknown GetRailSplineComponent(); // Function CinematicCamera.CameraRig_Rail.GetRailSplineComponent(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3B58820>
 };
 
 // Class CinematicCamera.CineCameraActor
@@ -75,7 +75,7 @@ public:
 
 	struct Unknown LookatTrackingSettings; // 0x900 (80)
 
-	struct Unknown GetCineCameraComponent(); // Function CinematicCamera.CineCameraActor.GetCineCameraComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3B582A0>
+	struct Unknown GetCineCameraComponent(); // Function CinematicCamera.CineCameraActor.GetCineCameraComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3B58520>
 };
 
 // ScriptStruct CinematicCamera.CameraLookatTrackingSettings

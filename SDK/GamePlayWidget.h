@@ -52,12 +52,12 @@ public:
 	struct Unknown œ ¬¼; // 0x408 (8)
 	struct Unknown ScrollBarTimer; // 0x410 (8)
 
-	void ä¤@t¤¸_1(enum class Unknow Type); // Function GamePlayWidget.GamePlayWidget_C.ä¤@t¤¸_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void DelegateChangeValue_Event_1(struct Unknown Value); // Function GamePlayWidget.GamePlayWidget_C.DelegateChangeValue_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Construct(); // Function GamePlayWidget.GamePlayWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void BndEvt__ScrollBox_54_K2Node_ComponentBoundEvent_0_OnUserScrolledEvent__DelegateSignature(float CurrentOffset); // Function GamePlayWidget.GamePlayWidget_C.BndEvt__ScrollBox_54_K2Node_ComponentBoundEvent_0_OnUserScrolledEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void CustomEvent(); // Function GamePlayWidget.GamePlayWidget_C.CustomEvent(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_GamePlayWidget(int32_t EntryPoint); // Function GamePlayWidget.GamePlayWidget_C.ExecuteUbergraph_GamePlayWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void ä¤@t¤¸_1(enum class Unknow Type); // Function GamePlayWidget.GamePlayWidget_C.ä¤@t¤¸_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void DelegateChangeValue_Event_1(struct Unknown Value); // Function GamePlayWidget.GamePlayWidget_C.DelegateChangeValue_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Construct(); // Function GamePlayWidget.GamePlayWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void BndEvt__ScrollBox_54_K2Node_ComponentBoundEvent_0_OnUserScrolledEvent__DelegateSignature(float CurrentOffset); // Function GamePlayWidget.GamePlayWidget_C.BndEvt__ScrollBox_54_K2Node_ComponentBoundEvent_0_OnUserScrolledEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void CustomEvent(); // Function GamePlayWidget.GamePlayWidget_C.CustomEvent(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_GamePlayWidget(int32_t EntryPoint); // Function GamePlayWidget.GamePlayWidget_C.ExecuteUbergraph_GamePlayWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function GamePlayWidget.GamePlayWidget_C.ä¤@t¤¸_1

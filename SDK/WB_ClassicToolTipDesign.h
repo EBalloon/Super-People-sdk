@@ -6,9 +6,9 @@ public:
 	struct Unknown UberGraphFrame; // 0x268 (8)
 	struct Unknown ToolTipVerticalList; // 0x270 (8)
 
-	void Set Tool Tip Text Design(struct FText Tool Tip, char& -); // Function WB_ClassicToolTipDesign.WB_ClassicToolTipDesign_C.Set Tool Tip Text Design(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Construct(); // Function WB_ClassicToolTipDesign.WB_ClassicToolTipDesign_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_WB_ClassicToolTipDesign(int32_t EntryPoint); // Function WB_ClassicToolTipDesign.WB_ClassicToolTipDesign_C.ExecuteUbergraph_WB_ClassicToolTipDesign(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void Set Tool Tip Text Design(struct FText Tool Tip, char& -); // Function WB_ClassicToolTipDesign.WB_ClassicToolTipDesign_C.Set Tool Tip Text Design(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Construct(); // Function WB_ClassicToolTipDesign.WB_ClassicToolTipDesign_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_WB_ClassicToolTipDesign(int32_t EntryPoint); // Function WB_ClassicToolTipDesign.WB_ClassicToolTipDesign_C.ExecuteUbergraph_WB_ClassicToolTipDesign(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function WB_ClassicToolTipDesign.WB_ClassicToolTipDesign_C.Set Tool Tip Text Design

@@ -7,8 +7,8 @@ public:
 	struct Unknown AnimGraphNode_Root; // 0x278 (48)
 	struct Unknown AnimGraphNode_SequencePlayer; // 0x2A8 (120)
 
-	void AnimGraph(struct Unknown& AnimGraph); // Function ABP-SupplyHelicopter.ABP-SupplyHelicopter_C.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_ABP-SupplyHelicopter(int32_t EntryPoint); // Function ABP-SupplyHelicopter.ABP-SupplyHelicopter_C.ExecuteUbergraph_ABP-SupplyHelicopter(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void AnimGraph(struct Unknown& AnimGraph); // Function ABP-SupplyHelicopter.ABP-SupplyHelicopter_C.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_ABP-SupplyHelicopter(int32_t EntryPoint); // Function ABP-SupplyHelicopter.ABP-SupplyHelicopter_C.ExecuteUbergraph_ABP-SupplyHelicopter(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function ABP-SupplyHelicopter.ABP-SupplyHelicopter_C.AnimGraph

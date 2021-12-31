@@ -5,8 +5,8 @@ public:
 
 	struct Unknown UberGraphFrame; // 0x358 (8)
 
-	void UpdateTargetSize(); // Function BP-SkillTargetingNuclear.BP-SkillTargetingNuclear_C.UpdateTargetSize(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_BP-SkillTargetingNuclear(int32_t EntryPoint); // Function BP-SkillTargetingNuclear.BP-SkillTargetingNuclear_C.ExecuteUbergraph_BP-SkillTargetingNuclear(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void UpdateTargetSize(); // Function BP-SkillTargetingNuclear.BP-SkillTargetingNuclear_C.UpdateTargetSize(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_BP-SkillTargetingNuclear(int32_t EntryPoint); // Function BP-SkillTargetingNuclear.BP-SkillTargetingNuclear_C.ExecuteUbergraph_BP-SkillTargetingNuclear(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function BP-SkillTargetingNuclear.BP-SkillTargetingNuclear_C.UpdateTargetSize

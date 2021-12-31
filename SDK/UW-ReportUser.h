@@ -24,20 +24,20 @@ public:
 	int32_t SelectIndexFromProgram; // 0x32C (4)
 	char CheckCloseComboArrow : 0; // 0x330 (1)
 
-	void SetOpeningArrow(char InOpening); // Function UW-ReportUser.UW-ReportUser_C.SetOpeningArrow(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetReportComboStringFromProgramWidget(int32_t InSelectIndex); // Function UW-ReportUser.UW-ReportUser_C.SetReportComboStringFromProgramWidget(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetReportComboString(); // Function UW-ReportUser.UW-ReportUser_C.SetReportComboString(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetDefaultComboString(); // Function UW-ReportUser.UW-ReportUser_C.SetDefaultComboString(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetReportIndexText(); // Function UW-ReportUser.UW-ReportUser_C.SetReportIndexText(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetDescriptionText(); // Function UW-ReportUser.UW-ReportUser_C.SetDescriptionText(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetNativeValues(); // Function UW-ReportUser.UW-ReportUser_C.SetNativeValues(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void PreConstruct(char IsDesignTime); // Function UW-ReportUser.UW-ReportUser_C.PreConstruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Construct(); // Function UW-ReportUser.UW-ReportUser_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void BndEvt__combobox_string_K2Node_ComponentBoundEvent_0_OnOpeningEvent__DelegateSignature(); // Function UW-ReportUser.UW-ReportUser_C.BndEvt__combobox_string_K2Node_ComponentBoundEvent_0_OnOpeningEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void BndEvt__combobox_string_K2Node_ComponentBoundEvent_1_OnSelectionChangedEvent__DelegateSignature(struct FString SelectedItem, char SelectionType); // Function UW-ReportUser.UW-ReportUser_C.BndEvt__combobox_string_K2Node_ComponentBoundEvent_1_OnSelectionChangedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-ReportUser.UW-ReportUser_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void OnReportConfirm(); // Function UW-ReportUser.UW-ReportUser_C.OnReportConfirm(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_UW-ReportUser(int32_t EntryPoint); // Function UW-ReportUser.UW-ReportUser_C.ExecuteUbergraph_UW-ReportUser(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void SetOpeningArrow(char InOpening); // Function UW-ReportUser.UW-ReportUser_C.SetOpeningArrow(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetReportComboStringFromProgramWidget(int32_t InSelectIndex); // Function UW-ReportUser.UW-ReportUser_C.SetReportComboStringFromProgramWidget(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetReportComboString(); // Function UW-ReportUser.UW-ReportUser_C.SetReportComboString(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetDefaultComboString(); // Function UW-ReportUser.UW-ReportUser_C.SetDefaultComboString(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetReportIndexText(); // Function UW-ReportUser.UW-ReportUser_C.SetReportIndexText(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetDescriptionText(); // Function UW-ReportUser.UW-ReportUser_C.SetDescriptionText(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetNativeValues(); // Function UW-ReportUser.UW-ReportUser_C.SetNativeValues(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void PreConstruct(char IsDesignTime); // Function UW-ReportUser.UW-ReportUser_C.PreConstruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Construct(); // Function UW-ReportUser.UW-ReportUser_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void BndEvt__combobox_string_K2Node_ComponentBoundEvent_0_OnOpeningEvent__DelegateSignature(); // Function UW-ReportUser.UW-ReportUser_C.BndEvt__combobox_string_K2Node_ComponentBoundEvent_0_OnOpeningEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void BndEvt__combobox_string_K2Node_ComponentBoundEvent_1_OnSelectionChangedEvent__DelegateSignature(struct FString SelectedItem, char SelectionType); // Function UW-ReportUser.UW-ReportUser_C.BndEvt__combobox_string_K2Node_ComponentBoundEvent_1_OnSelectionChangedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-ReportUser.UW-ReportUser_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void OnReportConfirm(); // Function UW-ReportUser.UW-ReportUser_C.OnReportConfirm(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_UW-ReportUser(int32_t EntryPoint); // Function UW-ReportUser.UW-ReportUser_C.ExecuteUbergraph_UW-ReportUser(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function UW-ReportUser.UW-ReportUser_C.SetOpeningArrow

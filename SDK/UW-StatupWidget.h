@@ -15,9 +15,9 @@ public:
 	struct Unknown UW-StatupWidget_Item_Speed; // 0x290 (8)
 	struct Unknown VerticalBox_Stats; // 0x298 (8)
 
-	void SetStatInfo(struct Unknown& StatupParams, char IsUpAnim); // Function UW-StatupWidget.UW-StatupWidget_C.SetStatInfo(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void OnAnimationFinished(struct Unknown Animation); // Function UW-StatupWidget.UW-StatupWidget_C.OnAnimationFinished(BlueprintCosmetic|Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_UW-StatupWidget(int32_t EntryPoint); // Function UW-StatupWidget.UW-StatupWidget_C.ExecuteUbergraph_UW-StatupWidget(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void SetStatInfo(struct Unknown& StatupParams, char IsUpAnim); // Function UW-StatupWidget.UW-StatupWidget_C.SetStatInfo(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void OnAnimationFinished(struct Unknown Animation); // Function UW-StatupWidget.UW-StatupWidget_C.OnAnimationFinished(BlueprintCosmetic|Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_UW-StatupWidget(int32_t EntryPoint); // Function UW-StatupWidget.UW-StatupWidget_C.ExecuteUbergraph_UW-StatupWidget(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function UW-StatupWidget.UW-StatupWidget_C.SetStatInfo

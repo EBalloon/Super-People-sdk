@@ -16,13 +16,13 @@ public:
 	struct FText Gamma Strength Edit Value; // 0x298 (24)
 	struct FMulticastInlineDelegate ClosedWidgetDelegate; // 0x2B0 (16)
 
-	void Refresh Video Settings(); // Function UW-StartGammaSetting.UW-StartGammaSetting_C.Refresh Video Settings(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Refresh Gamma Intensity(float Strength); // Function UW-StartGammaSetting.UW-StartGammaSetting_C.Refresh Gamma Intensity(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Construct(); // Function UW-StartGammaSetting.UW-StartGammaSetting_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void BndEvt__Slider_138_K2Node_ComponentBoundEvent_1_OnFloatValueChangedEvent__DelegateSignature(float Value); // Function UW-StartGammaSetting.UW-StartGammaSetting_C.BndEvt__Slider_138_K2Node_ComponentBoundEvent_1_OnFloatValueChangedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void BndEvt__Button_479_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(); // Function UW-StartGammaSetting.UW-StartGammaSetting_C.BndEvt__Button_479_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_UW-StartGammaSetting(int32_t EntryPoint); // Function UW-StartGammaSetting.UW-StartGammaSetting_C.ExecuteUbergraph_UW-StartGammaSetting(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ClosedWidgetDelegate__DelegateSignature(); // Function UW-StartGammaSetting.UW-StartGammaSetting_C.ClosedWidgetDelegate__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void Refresh Video Settings(); // Function UW-StartGammaSetting.UW-StartGammaSetting_C.Refresh Video Settings(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Refresh Gamma Intensity(float Strength); // Function UW-StartGammaSetting.UW-StartGammaSetting_C.Refresh Gamma Intensity(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Construct(); // Function UW-StartGammaSetting.UW-StartGammaSetting_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void BndEvt__Slider_138_K2Node_ComponentBoundEvent_1_OnFloatValueChangedEvent__DelegateSignature(float Value); // Function UW-StartGammaSetting.UW-StartGammaSetting_C.BndEvt__Slider_138_K2Node_ComponentBoundEvent_1_OnFloatValueChangedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void BndEvt__Button_479_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(); // Function UW-StartGammaSetting.UW-StartGammaSetting_C.BndEvt__Button_479_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_UW-StartGammaSetting(int32_t EntryPoint); // Function UW-StartGammaSetting.UW-StartGammaSetting_C.ExecuteUbergraph_UW-StartGammaSetting(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ClosedWidgetDelegate__DelegateSignature(); // Function UW-StartGammaSetting.UW-StartGammaSetting_C.ClosedWidgetDelegate__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function UW-StartGammaSetting.UW-StartGammaSetting_C.Refresh Video Settings

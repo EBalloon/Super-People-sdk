@@ -3,28 +3,28 @@ class UBP-DestructibleComponent_C : public UBravoHotelDestructibleComponent {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x630 (8)
-	float DestructibleMeshLifeTime; // 0x638 (4)
-	char IsLegacyMethodEnable : 0; // 0x63C (1)
-	float StaticMeshLifeSpanTime; // 0x640 (4)
-	char GameStarted : 0; // 0x644 (1)
-	float DefaultHpCache; // 0x648 (4)
-	char IsDestructedBeforeGameStart : 0; // 0x64C (1)
-	char Is : 0; // 0x64D (1)
-	struct FMulticastInlineDelegate DestructEventDispatcher; // 0x650 (16)
-	float LinearDamping; // 0x660 (4)
-	float MassInKg; // 0x664 (4)
-	float AngularDamping; // 0x668 (4)
-	char ClassType; // 0x66C (1)
+	struct Unknown UberGraphFrame; // 0x620 (8)
+	float DestructibleMeshLifeTime; // 0x628 (4)
+	char IsLegacyMethodEnable : 0; // 0x62C (1)
+	float StaticMeshLifeSpanTime; // 0x630 (4)
+	char GameStarted : 0; // 0x634 (1)
+	float DefaultHpCache; // 0x638 (4)
+	char IsDestructedBeforeGameStart : 0; // 0x63C (1)
+	char Is : 0; // 0x63D (1)
+	struct FMulticastInlineDelegate DestructEventDispatcher; // 0x640 (16)
+	float LinearDamping; // 0x650 (4)
+	float MassInKg; // 0x654 (4)
+	float AngularDamping; // 0x658 (4)
+	char ClassType; // 0x65C (1)
 
-	void OnRep_IsDestructedBeforeGameStart(); // Function BP-DestructibleComponent.BP-DestructibleComponent_C.OnRep_IsDestructedBeforeGameStart(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Destruct(float Damage, struct Unknown HitLocation, struct Unknown ImpactDirection, struct Unknown& DM); // Function BP-DestructibleComponent.BP-DestructibleComponent_C.Destruct(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ReceiveBeginPlay(); // Function BP-DestructibleComponent.BP-DestructibleComponent_C.ReceiveBeginPlay(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void K2_OnDestructComponent(float DamageAmount, struct Unknown& HitInfo, struct Unknown EventInstigator, struct Unknown DamageCauser, struct Unknown& ShotInfo); // Function BP-DestructibleComponent.BP-DestructibleComponent_C.K2_OnDestructComponent(Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetLifeSpan(float LifeSpan); // Function BP-DestructibleComponent.BP-DestructibleComponent_C.SetLifeSpan(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetCollisionEnableWithDelay(float DelayTime); // Function BP-DestructibleComponent.BP-DestructibleComponent_C.SetCollisionEnableWithDelay(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_BP-DestructibleComponent(int32_t EntryPoint); // Function BP-DestructibleComponent.BP-DestructibleComponent_C.ExecuteUbergraph_BP-DestructibleComponent(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void DestructEventDispatcher__DelegateSignature(); // Function BP-DestructibleComponent.BP-DestructibleComponent_C.DestructEventDispatcher__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void OnRep_IsDestructedBeforeGameStart(); // Function BP-DestructibleComponent.BP-DestructibleComponent_C.OnRep_IsDestructedBeforeGameStart(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Destruct(float Damage, struct Unknown HitLocation, struct Unknown ImpactDirection, struct Unknown& DM); // Function BP-DestructibleComponent.BP-DestructibleComponent_C.Destruct(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ReceiveBeginPlay(); // Function BP-DestructibleComponent.BP-DestructibleComponent_C.ReceiveBeginPlay(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void K2_OnDestructComponent(float DamageAmount, struct Unknown& HitInfo, struct Unknown EventInstigator, struct Unknown DamageCauser, struct Unknown& ShotInfo); // Function BP-DestructibleComponent.BP-DestructibleComponent_C.K2_OnDestructComponent(Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetLifeSpan(float LifeSpan); // Function BP-DestructibleComponent.BP-DestructibleComponent_C.SetLifeSpan(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetCollisionEnableWithDelay(float DelayTime); // Function BP-DestructibleComponent.BP-DestructibleComponent_C.SetCollisionEnableWithDelay(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_BP-DestructibleComponent(int32_t EntryPoint); // Function BP-DestructibleComponent.BP-DestructibleComponent_C.ExecuteUbergraph_BP-DestructibleComponent(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void DestructEventDispatcher__DelegateSignature(); // Function BP-DestructibleComponent.BP-DestructibleComponent_C.DestructEventDispatcher__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function BP-DestructibleComponent.BP-DestructibleComponent_C.OnRep_IsDestructedBeforeGameStart

@@ -8,7 +8,7 @@ public:
 	struct Unknown ColorType1; // 0x258 (40)
 	struct Unknown ColorType2; // 0x280 (40)
 
-	void Init(struct FText Title, int32_t Value); // Function UW-MatchEnd_GoldList.UW-MatchEnd_GoldList_C.Init(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void Init(struct FText Title, int32_t Value); // Function UW-MatchEnd_GoldList.UW-MatchEnd_GoldList_C.Init(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function UW-MatchEnd_GoldList.UW-MatchEnd_GoldList_C.Init

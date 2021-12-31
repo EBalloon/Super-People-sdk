@@ -6,8 +6,8 @@ public:
 	struct Unknown UberGraphFrame; // 0x290 (8)
 	struct Unknown MarkerBorder; // 0x298 (8)
 
-	void K2_SetKillEvent(char IsMyInfo); // Function UW-ReplayEventMarkerBasic.UW-ReplayEventMarkerBasic_C.K2_SetKillEvent(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_UW-ReplayEventMarkerBasic(int32_t EntryPoint); // Function UW-ReplayEventMarkerBasic.UW-ReplayEventMarkerBasic_C.ExecuteUbergraph_UW-ReplayEventMarkerBasic(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void K2_SetKillEvent(char IsMyInfo); // Function UW-ReplayEventMarkerBasic.UW-ReplayEventMarkerBasic_C.K2_SetKillEvent(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_UW-ReplayEventMarkerBasic(int32_t EntryPoint); // Function UW-ReplayEventMarkerBasic.UW-ReplayEventMarkerBasic_C.ExecuteUbergraph_UW-ReplayEventMarkerBasic(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function UW-ReplayEventMarkerBasic.UW-ReplayEventMarkerBasic_C.K2_SetKillEvent

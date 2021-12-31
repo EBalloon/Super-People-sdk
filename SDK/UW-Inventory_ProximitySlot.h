@@ -67,48 +67,48 @@ public:
 	struct TArray<Unknown> ShowRarityStar; // 0x2110 (16)
 	struct TArray<Unknown> ShowIconBG; // 0x2120 (16)
 
-	void CheckHoverMaterial(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.CheckHoverMaterial(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void IsRoundItemType(char& bRoundItem); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.IsRoundItemType(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetNeededInfo(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetNeededInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void InitTargetActor(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.InitTargetActor(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetItemInfoByInventoryComponent(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetItemInfoByInventoryComponent(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetBindInfo(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetBindInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetRarity(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetRarity(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetItemRarityColor(enum class Unknow CurrentSlot, struct Unknown ImageWidget); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetItemRarityColor(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetRatingArrowVisibility(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetRatingArrowVisibility(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetChestItem(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetChestItem(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetEquippableAttachment(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetEquippableAttachment(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetUpgradeItem(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetUpgradeItem(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void MouseEnterImpl(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.MouseEnterImpl(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void WeaponEquipState(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.WeaponEquipState(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetItemName(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetItemName(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetItemCount(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetItemCount(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetWeaponImage_Internal(struct Unknown IconTexture); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetWeaponImage_Internal(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	struct Unknown SetItemImage_Internal(struct Unknown IconTexture); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetItemImage_Internal(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void IsDraging(char& bResult); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.IsDraging(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	char OnDrop(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnDrop(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void OnDragDetected(struct Unknown MyGeometry, struct Unknown& PointerEvent, struct Unknown& Operation); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnDragDetected(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void GetWeaponInfoByInventoryItemInfo(char& bResult, struct Unknown& WeaponInfo); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.GetWeaponInfoByInventoryItemInfo(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void OnRButtonClick(char& bResult); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnRButtonClick(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void GetCharacterRef(char& Result, struct Unknown& CharacterRef); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.GetCharacterRef(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetWeaponItem(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetWeaponItem(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Set_BGImage_Brush_1(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.Set_BGImage_Brush_1(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void RequestPickupItem(char RButtonClick, char& bResult); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.RequestPickupItem(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	struct Unknown SetItemImage(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetItemImage(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	struct FText GetItemName(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.GetItemName(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void OnLoaded_84877B5B4C424648BFE1AEBDF8BB89BB(struct Unknown Loaded); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnLoaded_84877B5B4C424648BFE1AEBDF8BB89BB(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Construct(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void OnMouseLeave(struct Unknown& MouseEvent); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void AsyncLoadIconTexture(struct Unknown IconTexture); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.AsyncLoadIconTexture(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SlotInfo(struct Unknown TargetActor, struct Unknown ItemInfo); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SlotInfo(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void OnChangeWearableItem(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnChangeWearableItem(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void OnChangeWeapons(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnChangeWeapons(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void OnChangeItemInfoDelegate_Event_1(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnChangeItemInfoDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void OnMouseCaptureLost(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnMouseCaptureLost(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_UW-Inventory_ProximitySlot(int32_t EntryPoint); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.ExecuteUbergraph_UW-Inventory_ProximitySlot(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetSlotInfo__DelegateSignature(struct Unknown TargetActor, struct Unknown ItemInfo); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetSlotInfo__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void CheckHoverMaterial(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.CheckHoverMaterial(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void IsRoundItemType(char& bRoundItem); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.IsRoundItemType(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetNeededInfo(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetNeededInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void InitTargetActor(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.InitTargetActor(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetItemInfoByInventoryComponent(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetItemInfoByInventoryComponent(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetBindInfo(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetBindInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetRarity(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetRarity(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetItemRarityColor(enum class Unknow CurrentSlot, struct Unknown ImageWidget); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetItemRarityColor(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetRatingArrowVisibility(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetRatingArrowVisibility(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetChestItem(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetChestItem(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetEquippableAttachment(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetEquippableAttachment(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetUpgradeItem(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetUpgradeItem(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void MouseEnterImpl(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.MouseEnterImpl(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void WeaponEquipState(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.WeaponEquipState(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetItemName(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetItemName(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetItemCount(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetItemCount(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetWeaponImage_Internal(struct Unknown IconTexture); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetWeaponImage_Internal(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	struct Unknown SetItemImage_Internal(struct Unknown IconTexture); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetItemImage_Internal(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void IsDraging(char& bResult); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.IsDraging(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	char OnDrop(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnDrop(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void OnDragDetected(struct Unknown MyGeometry, struct Unknown& PointerEvent, struct Unknown& Operation); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnDragDetected(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void GetWeaponInfoByInventoryItemInfo(char& bResult, struct Unknown& WeaponInfo); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.GetWeaponInfoByInventoryItemInfo(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void OnRButtonClick(char& bResult); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnRButtonClick(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void GetCharacterRef(char& Result, struct Unknown& CharacterRef); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.GetCharacterRef(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetWeaponItem(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetWeaponItem(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Set_BGImage_Brush_1(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.Set_BGImage_Brush_1(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void RequestPickupItem(char RButtonClick, char& bResult); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.RequestPickupItem(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	struct Unknown SetItemImage(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetItemImage(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	struct FText GetItemName(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.GetItemName(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void OnLoaded_84877B5B4C424648BFE1AEBDF8BB89BB(struct Unknown Loaded); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnLoaded_84877B5B4C424648BFE1AEBDF8BB89BB(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Construct(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void OnMouseLeave(struct Unknown& MouseEvent); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void AsyncLoadIconTexture(struct Unknown IconTexture); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.AsyncLoadIconTexture(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Slotinfo(struct Unknown TargetActor, struct Unknown ItemInfo); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.Slotinfo(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void OnChangeWearableItem(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnChangeWearableItem(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void OnChangeWeapons(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnChangeWeapons(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void OnChangeItemInfoDelegate_Event_1(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnChangeItemInfoDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void OnMouseCaptureLost(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnMouseCaptureLost(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_UW-Inventory_ProximitySlot(int32_t EntryPoint); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.ExecuteUbergraph_UW-Inventory_ProximitySlot(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetSlotInfo__DelegateSignature(struct Unknown TargetActor, struct Unknown ItemInfo); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetSlotInfo__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.CheckHoverMaterial
@@ -671,14 +671,14 @@ inline void UUW-Inventory_ProximitySlot_C::Tick(struct Unknown MyGeometry, float
 	fn->FunctionFlags = flags;
 }
 
-// Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SlotInfo
-inline void UUW-Inventory_ProximitySlot_C::SlotInfo(struct Unknown TargetActor, struct Unknown ItemInfo) {
-	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SlotInfo");
+// Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.Slotinfo
+inline void UUW-Inventory_ProximitySlot_C::Slotinfo(struct Unknown TargetActor, struct Unknown ItemInfo) {
+	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.Slotinfo");
 
-	struct SlotInfo_Params {
+	struct Slotinfo_Params {
 		struct Unknown TargetActor;
 		struct Unknown ItemInfo;
-	}; SlotInfo_Params Params;
+	}; Slotinfo_Params Params;
 
 	Params.TargetActor = TargetActor;
 	Params.ItemInfo = ItemInfo;

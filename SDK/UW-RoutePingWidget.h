@@ -17,20 +17,20 @@ public:
 	struct Unknown GuideLinePos; // 0x2C0 (8)
 	char IsUpdate : 0; // 0x2C8 (1)
 
-	void InitGuideLine(); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.InitGuideLine(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ResetGuideLine(); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.ResetGuideLine(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void UpdateGuideLine(); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.UpdateGuideLine(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void IsValidGuideLine(char& Valid); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.IsValidGuideLine(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetLineInfo(struct Unknown LineRef, struct Unknown CurrentPos, struct Unknown NextPos); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.SetLineInfo(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void GetAngleCurrentToNext(struct Unknown CurrentPos, struct Unknown NextPos, float& Angle); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.GetAngleCurrentToNext(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetRouteWidgets(); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.SetRouteWidgets(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetTeamColor(); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.SetTeamColor(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void MakeWidgets(); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.MakeWidgets(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Initialize(struct Unknown PlayerState); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.Initialize(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void UpdateRoutePing(struct Unknown MapCompWidget, struct TArray<Unknown>& Positions, char IsUpdate); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.UpdateRoutePing(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_UW-RoutePingWidget(int32_t EntryPoint); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.ExecuteUbergraph_UW-RoutePingWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void OnMarkerClicked__DelegateSignature(struct Unknown Button, char mapObjectID); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.OnMarkerClicked__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void InitGuideLine(); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.InitGuideLine(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ResetGuideLine(); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.ResetGuideLine(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void UpdateGuideLine(); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.UpdateGuideLine(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void IsValidGuideLine(char& Valid); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.IsValidGuideLine(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetLineInfo(struct Unknown LineRef, struct Unknown CurrentPos, struct Unknown NextPos); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.SetLineInfo(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void GetAngleCurrentToNext(struct Unknown CurrentPos, struct Unknown NextPos, float& Angle); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.GetAngleCurrentToNext(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetRouteWidgets(); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.SetRouteWidgets(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetTeamColor(); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.SetTeamColor(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void MakeWidgets(); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.MakeWidgets(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Initialize(struct Unknown PlayerState); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.Initialize(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void UpdateRoutePing(struct Unknown MapCompWidget, struct TArray<Unknown>& Positions, char IsUpdate); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.UpdateRoutePing(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_UW-RoutePingWidget(int32_t EntryPoint); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.ExecuteUbergraph_UW-RoutePingWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void OnMarkerClicked__DelegateSignature(struct Unknown Button, char mapObjectID); // Function UW-RoutePingWidget.UW-RoutePingWidget_C.OnMarkerClicked__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function UW-RoutePingWidget.UW-RoutePingWidget_C.InitGuideLine

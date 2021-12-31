@@ -3,25 +3,25 @@ class UABP-MK14_C : public UBravoHotelAnimInstanceWeapon {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x330 (8)
-	struct Unknown AnimGraphNode_Root; // 0x338 (48)
-	struct Unknown AnimGraphNode_BlendListByEnum; // 0x368 (176)
-	struct Unknown AnimGraphNode_SequencePlayer_3; // 0x418 (120)
-	struct Unknown AnimGraphNode_SequencePlayer_2; // 0x490 (120)
-	struct Unknown AnimGraphNode_SequencePlayer; // 0x508 (120)
-	struct Unknown AnimGraphNode_Slot_4; // 0x580 (72)
-	struct Unknown AnimGraphNode_Slot_3; // 0x5C8 (72)
-	struct Unknown AnimGraphNode_TwoWayBlend; // 0x610 (200)
-	struct Unknown AnimGraphNode_LayeredBoneBlend; // 0x6D8 (192)
-	struct Unknown AnimGraphNode_LocalRefPose_3; // 0x798 (24)
-	struct Unknown AnimGraphNode_LocalRefPose_2; // 0x7B0 (24)
-	struct Unknown AnimGraphNode_Slot_2; // 0x7C8 (72)
-	struct Unknown AnimGraphNode_Slot; // 0x810 (72)
-	struct Unknown AnimGraphNode_LocalRefPose; // 0x858 (24)
-	struct Unknown AnimGraphNode_BlendListByBool; // 0x870 (160)
+	struct Unknown UberGraphFrame; // 0x340 (8)
+	struct Unknown AnimGraphNode_Root; // 0x348 (48)
+	struct Unknown AnimGraphNode_BlendListByEnum; // 0x378 (176)
+	struct Unknown AnimGraphNode_SequencePlayer_3; // 0x428 (120)
+	struct Unknown AnimGraphNode_SequencePlayer_2; // 0x4A0 (120)
+	struct Unknown AnimGraphNode_SequencePlayer; // 0x518 (120)
+	struct Unknown AnimGraphNode_Slot_4; // 0x590 (72)
+	struct Unknown AnimGraphNode_Slot_3; // 0x5D8 (72)
+	struct Unknown AnimGraphNode_TwoWayBlend; // 0x620 (200)
+	struct Unknown AnimGraphNode_LayeredBoneBlend; // 0x6E8 (192)
+	struct Unknown AnimGraphNode_LocalRefPose_3; // 0x7A8 (24)
+	struct Unknown AnimGraphNode_LocalRefPose_2; // 0x7C0 (24)
+	struct Unknown AnimGraphNode_Slot_2; // 0x7D8 (72)
+	struct Unknown AnimGraphNode_Slot; // 0x820 (72)
+	struct Unknown AnimGraphNode_LocalRefPose; // 0x868 (24)
+	struct Unknown AnimGraphNode_BlendListByBool; // 0x880 (160)
 
-	void AnimGraph(struct Unknown& AnimGraph); // Function ABP-MK14.ABP-MK14_C.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_ABP-MK14(int32_t EntryPoint); // Function ABP-MK14.ABP-MK14_C.ExecuteUbergraph_ABP-MK14(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void AnimGraph(struct Unknown& AnimGraph); // Function ABP-MK14.ABP-MK14_C.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_ABP-MK14(int32_t EntryPoint); // Function ABP-MK14.ABP-MK14_C.ExecuteUbergraph_ABP-MK14(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function ABP-MK14.ABP-MK14_C.AnimGraph

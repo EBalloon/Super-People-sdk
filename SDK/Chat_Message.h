@@ -11,8 +11,8 @@ public:
 	struct Unknown Username Color; // 0x290 (16)
 	struct Unknown Message Color; // 0x2A0 (16)
 
-	void Construct(); // Function Chat_Message.Chat_Message_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_Chat_Message(int32_t EntryPoint); // Function Chat_Message.Chat_Message_C.ExecuteUbergraph_Chat_Message(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void Construct(); // Function Chat_Message.Chat_Message_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_Chat_Message(int32_t EntryPoint); // Function Chat_Message.Chat_Message_C.ExecuteUbergraph_Chat_Message(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function Chat_Message.Chat_Message_C.Construct

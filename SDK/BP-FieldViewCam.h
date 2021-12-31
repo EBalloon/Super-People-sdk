@@ -9,11 +9,11 @@ public:
 	float DeltaTime; // 0x328 (4)
 	char bIsBackgroundScene : 0; // 0x32C (1)
 
-	void CheckWorldViewCameraLocationRange(); // Function BP-FieldViewCam.BP-FieldViewCam_C.CheckWorldViewCameraLocationRange(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void PreventCameraWallCollision(); // Function BP-FieldViewCam.BP-FieldViewCam_C.PreventCameraWallCollision(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ReceiveTick(float DeltaSeconds); // Function BP-FieldViewCam.BP-FieldViewCam_C.ReceiveTick(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ReceiveBeginPlay(); // Function BP-FieldViewCam.BP-FieldViewCam_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_BP-FieldViewCam(int32_t EntryPoint); // Function BP-FieldViewCam.BP-FieldViewCam_C.ExecuteUbergraph_BP-FieldViewCam(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void CheckWorldViewCameraLocationRange(); // Function BP-FieldViewCam.BP-FieldViewCam_C.CheckWorldViewCameraLocationRange(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void PreventCameraWallCollision(); // Function BP-FieldViewCam.BP-FieldViewCam_C.PreventCameraWallCollision(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ReceiveTick(float DeltaSeconds); // Function BP-FieldViewCam.BP-FieldViewCam_C.ReceiveTick(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ReceiveBeginPlay(); // Function BP-FieldViewCam.BP-FieldViewCam_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_BP-FieldViewCam(int32_t EntryPoint); // Function BP-FieldViewCam.BP-FieldViewCam_C.ExecuteUbergraph_BP-FieldViewCam(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function BP-FieldViewCam.BP-FieldViewCam_C.CheckWorldViewCameraLocationRange

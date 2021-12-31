@@ -6,8 +6,8 @@ public:
 	struct Unknown UberGraphFrame; // 0x420 (8)
 	struct Unknown Sphere; // 0x428 (8)
 
-	void SetTexture5mm(); // Function BP-Sight_4X_FPSK.BP-Sight_4X_FPSK_C.SetTexture5mm(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_BP-Sight_4X_FPSK(int32_t EntryPoint); // Function BP-Sight_4X_FPSK.BP-Sight_4X_FPSK_C.ExecuteUbergraph_BP-Sight_4X_FPSK(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void SetTexture5mm(); // Function BP-Sight_4X_FPSK.BP-Sight_4X_FPSK_C.SetTexture5mm(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_BP-Sight_4X_FPSK(int32_t EntryPoint); // Function BP-Sight_4X_FPSK.BP-Sight_4X_FPSK_C.ExecuteUbergraph_BP-Sight_4X_FPSK(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function BP-Sight_4X_FPSK.BP-Sight_4X_FPSK_C.SetTexture5mm

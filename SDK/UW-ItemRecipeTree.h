@@ -74,12 +74,12 @@ public:
 	struct FName TargetItemKey; // 0x478 (8)
 	char IsSearchExpertWeapon : 0; // 0x480 (1)
 
-	void ShowTreeNode(struct Unknown WidgetInfo, char bShow, char bCombinable); // Function UW-ItemRecipeTree.UW-ItemRecipeTree_C.ShowTreeNode(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetTreeNodeByInfo(struct Unknown TreeData, struct Unknown WidgetInfo, char Complete); // Function UW-ItemRecipeTree.UW-ItemRecipeTree_C.SetTreeNodeByInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Construct(); // Function UW-ItemRecipeTree.UW-ItemRecipeTree_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetItemKey(struct FName ItemKey, struct FName HaveItemKey); // Function UW-ItemRecipeTree.UW-ItemRecipeTree_C.SetItemKey(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Destruct(); // Function UW-ItemRecipeTree.UW-ItemRecipeTree_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_UW-ItemRecipeTree(int32_t EntryPoint); // Function UW-ItemRecipeTree.UW-ItemRecipeTree_C.ExecuteUbergraph_UW-ItemRecipeTree(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void ShowTreeNode(struct Unknown WidgetInfo, char bShow, char bCombinable); // Function UW-ItemRecipeTree.UW-ItemRecipeTree_C.ShowTreeNode(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetTreeNodeByInfo(struct Unknown TreeData, struct Unknown WidgetInfo, char Complete); // Function UW-ItemRecipeTree.UW-ItemRecipeTree_C.SetTreeNodeByInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Construct(); // Function UW-ItemRecipeTree.UW-ItemRecipeTree_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetItemKey(struct FName ItemKey, struct FName HaveItemKey); // Function UW-ItemRecipeTree.UW-ItemRecipeTree_C.SetItemKey(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Destruct(); // Function UW-ItemRecipeTree.UW-ItemRecipeTree_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_UW-ItemRecipeTree(int32_t EntryPoint); // Function UW-ItemRecipeTree.UW-ItemRecipeTree_C.ExecuteUbergraph_UW-ItemRecipeTree(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function UW-ItemRecipeTree.UW-ItemRecipeTree_C.ShowTreeNode

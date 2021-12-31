@@ -5,8 +5,8 @@ public:
 
 	struct Unknown UberGraphFrame; // 0x6D0 (8)
 
-	void ReceiveTick(float DeltaSeconds); // Function BP-TransportAircraft.BP-TransportAircraft_C.ReceiveTick(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_BP-TransportAircraft(int32_t EntryPoint); // Function BP-TransportAircraft.BP-TransportAircraft_C.ExecuteUbergraph_BP-TransportAircraft(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void ReceiveTick(float DeltaSeconds); // Function BP-TransportAircraft.BP-TransportAircraft_C.ReceiveTick(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_BP-TransportAircraft(int32_t EntryPoint); // Function BP-TransportAircraft.BP-TransportAircraft_C.ExecuteUbergraph_BP-TransportAircraft(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function BP-TransportAircraft.BP-TransportAircraft_C.ReceiveTick

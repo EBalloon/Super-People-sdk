@@ -9,15 +9,15 @@ public:
 	struct Unknown btn_OK; // 0x260 (8)
 	struct Unknown Image_2; // 0x268 (8)
 
-	void Hide(); // Function UW-Exit_Popup.UW-Exit_Popup_C.Hide(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Show(); // Function UW-Exit_Popup.UW-Exit_Popup_C.Show(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Construct(); // Function UW-Exit_Popup.UW-Exit_Popup_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-Exit_Popup.UW-Exit_Popup_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void BndEvt__btn_Cancel_K2Node_ComponentBoundEvent_35_OnButtonClickedEvent__DelegateSignature(); // Function UW-Exit_Popup.UW-Exit_Popup_C.BndEvt__btn_Cancel_K2Node_ComponentBoundEvent_35_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void BndEvt__btn_OK_K2Node_ComponentBoundEvent_52_OnButtonClickedEvent__DelegateSignature(); // Function UW-Exit_Popup.UW-Exit_Popup_C.BndEvt__btn_OK_K2Node_ComponentBoundEvent_52_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void BndEvt__btn_OK_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature(); // Function UW-Exit_Popup.UW-Exit_Popup_C.BndEvt__btn_OK_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void BndEvt__btn_Cancel_K2Node_ComponentBoundEvent_15_OnButtonHoverEvent__DelegateSignature(); // Function UW-Exit_Popup.UW-Exit_Popup_C.BndEvt__btn_Cancel_K2Node_ComponentBoundEvent_15_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_UW-Exit_Popup(int32_t EntryPoint); // Function UW-Exit_Popup.UW-Exit_Popup_C.ExecuteUbergraph_UW-Exit_Popup(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void Hide(); // Function UW-Exit_Popup.UW-Exit_Popup_C.Hide(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Show(); // Function UW-Exit_Popup.UW-Exit_Popup_C.Show(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Construct(); // Function UW-Exit_Popup.UW-Exit_Popup_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-Exit_Popup.UW-Exit_Popup_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void BndEvt__btn_Cancel_K2Node_ComponentBoundEvent_35_OnButtonClickedEvent__DelegateSignature(); // Function UW-Exit_Popup.UW-Exit_Popup_C.BndEvt__btn_Cancel_K2Node_ComponentBoundEvent_35_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void BndEvt__btn_OK_K2Node_ComponentBoundEvent_52_OnButtonClickedEvent__DelegateSignature(); // Function UW-Exit_Popup.UW-Exit_Popup_C.BndEvt__btn_OK_K2Node_ComponentBoundEvent_52_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void BndEvt__btn_OK_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature(); // Function UW-Exit_Popup.UW-Exit_Popup_C.BndEvt__btn_OK_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void BndEvt__btn_Cancel_K2Node_ComponentBoundEvent_15_OnButtonHoverEvent__DelegateSignature(); // Function UW-Exit_Popup.UW-Exit_Popup_C.BndEvt__btn_Cancel_K2Node_ComponentBoundEvent_15_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_UW-Exit_Popup(int32_t EntryPoint); // Function UW-Exit_Popup.UW-Exit_Popup_C.ExecuteUbergraph_UW-Exit_Popup(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function UW-Exit_Popup.UW-Exit_Popup_C.Hide

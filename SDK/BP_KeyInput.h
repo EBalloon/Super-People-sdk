@@ -11,11 +11,11 @@ public:
 	char Input is Using Delta : 0; // 0x50 (1)
 	struct FString Display Name; // 0x58 (16)
 
-	void Generate Display Name(); // Function BP_KeyInput.BP_KeyInput_C.Generate Display Name(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Save Key Input(struct Unknown Game Settings, struct Unknown& KeySave); // Function BP_KeyInput.BP_KeyInput_C.Save Key Input(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Update Analog Axis Value(float World Delta Seconds, struct Unknown Player Controller); // Function BP_KeyInput.BP_KeyInput_C.Update Analog Axis Value(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Key Input Current State(struct Unknown Controller, float& Axis Value, char& Down, char& Just Pressed, char& Just Released); // Function BP_KeyInput.BP_KeyInput_C.Key Input Current State(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Init Key Input(struct Unknown Key Input, struct Unknown& Input); // Function BP_KeyInput.BP_KeyInput_C.Init Key Input(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void Generate Display Name(); // Function BP_KeyInput.BP_KeyInput_C.Generate Display Name(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Save Key Input(struct Unknown Game Settings, struct Unknown& KeySave); // Function BP_KeyInput.BP_KeyInput_C.Save Key Input(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Update Analog Axis Value(float World Delta Seconds, struct Unknown Player Controller); // Function BP_KeyInput.BP_KeyInput_C.Update Analog Axis Value(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Key Input Current State(struct Unknown Controller, float& Axis Value, char& Down, char& Just Pressed, char& Just Released); // Function BP_KeyInput.BP_KeyInput_C.Key Input Current State(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Init Key Input(struct Unknown Key Input, struct Unknown& Input); // Function BP_KeyInput.BP_KeyInput_C.Init Key Input(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function BP_KeyInput.BP_KeyInput_C.Generate Display Name

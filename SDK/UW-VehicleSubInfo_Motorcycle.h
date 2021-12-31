@@ -7,8 +7,8 @@ public:
 	struct Unknown SeatIcons; // 0x270 (8)
 	struct Unknown WheelIcons; // 0x278 (8)
 
-	void Setup(struct Unknown VehicleInstance); // Function UW-VehicleSubInfo_Motorcycle.UW-VehicleSubInfo_Motorcycle_C.Setup(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_UW-VehicleSubInfo_Motorcycle(int32_t EntryPoint); // Function UW-VehicleSubInfo_Motorcycle.UW-VehicleSubInfo_Motorcycle_C.ExecuteUbergraph_UW-VehicleSubInfo_Motorcycle(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void Setup(struct Unknown VehicleInstance); // Function UW-VehicleSubInfo_Motorcycle.UW-VehicleSubInfo_Motorcycle_C.Setup(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_UW-VehicleSubInfo_Motorcycle(int32_t EntryPoint); // Function UW-VehicleSubInfo_Motorcycle.UW-VehicleSubInfo_Motorcycle_C.ExecuteUbergraph_UW-VehicleSubInfo_Motorcycle(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function UW-VehicleSubInfo_Motorcycle.UW-VehicleSubInfo_Motorcycle_C.Setup

@@ -3,6 +3,6 @@ class ABP-Weapon_M1TAC_LV1_C : public ABP-RangedWeaponBase_C {
 
 public:
 
-	struct Unknown BravoHotelShellCasingArrow_Clip; // 0x22F0 (8)
+	struct Unknown BravoHotelShellCasingArrow_Clip; // 0x2290 (8)
 };
 

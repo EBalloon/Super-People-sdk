@@ -3,65 +3,65 @@ class ABP-BattleRoyalePawn_C : public ABP-DefaultPawn_C {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x3AC8 (8)
-	struct Unknown Listener; // 0x3AD0 (8)
-	float _P_Cam_Z_NewTrack_0_898B65D1462B08609DA61C81A7B52313; // 0x3AD8 (4)
-	char _P_Cam_Z__Direction_898B65D1462B08609DA61C81A7B52313; // 0x3ADC (1)
-	struct Unknown 3P_Cam_Z; // 0x3AE0 (8)
-	struct Unknown CriticalUITimeHandler; // 0x3AE8 (8)
-	struct Unknown DyingUITimeHandler; // 0x3AF0 (8)
-	struct Unknown ClothHandler; // 0x3AF8 (8)
-	struct Unknown ClothBallObject; // 0x3B00 (8)
-	struct Unknown BallHandleLocation; // 0x3B08 (12)
-	float GamepadInputModifier; // 0x3B14 (4)
-	float BaseTurnRate; // 0x3B18 (4)
-	float BaseLookUpRate; // 0x3B1C (4)
-	struct TArray<Unknown> PerkLevelUpWidgets; // 0x3B20 (16)
-	float PerkLevelUpWidthDepth; // 0x3B30 (4)
-	struct Unknown AmplifierEffect; // 0x3B38 (8)
-	float Cam_Shake_Radius; // 0x3B40 (4)
-	struct Unknown MainWidget; // 0x3B48 (8)
-	struct Unknown HeartBeatSensorEffect; // 0x3B50 (8)
+	struct Unknown UberGraphFrame; // 0x3AB8 (8)
+	struct Unknown Listener; // 0x3AC0 (8)
+	float _P_Cam_Z_NewTrack_0_898B65D1462B08609DA61C81A7B52313; // 0x3AC8 (4)
+	char _P_Cam_Z__Direction_898B65D1462B08609DA61C81A7B52313; // 0x3ACC (1)
+	struct Unknown 3P_Cam_Z; // 0x3AD0 (8)
+	struct Unknown CriticalUITimeHandler; // 0x3AD8 (8)
+	struct Unknown DyingUITimeHandler; // 0x3AE0 (8)
+	struct Unknown ClothHandler; // 0x3AE8 (8)
+	struct Unknown ClothBallObject; // 0x3AF0 (8)
+	struct Unknown BallHandleLocation; // 0x3AF8 (12)
+	float GamepadInputModifier; // 0x3B04 (4)
+	float BaseTurnRate; // 0x3B08 (4)
+	float BaseLookUpRate; // 0x3B0C (4)
+	struct TArray<Unknown> PerkLevelUpWidgets; // 0x3B10 (16)
+	float PerkLevelUpWidthDepth; // 0x3B20 (4)
+	struct Unknown AmplifierEffect; // 0x3B28 (8)
+	float Cam_Shake_Radius; // 0x3B30 (4)
+	struct Unknown MainWidget; // 0x3B38 (8)
+	struct Unknown HeartBeatSensorEffect; // 0x3B40 (8)
 
-	char IsEnableSpawnSupplyBox(struct Unknown TargetActor, struct FString& OutResult); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.IsEnableSpawnSupplyBox(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	char IsInstancedFoliageActor(struct Unknown TargetActor); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.IsInstancedFoliageActor(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void GetMainWidget(struct Unknown& MainWidget); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.GetMainWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void 3P_Cam_Z__FinishedFunc(); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.3P_Cam_Z__FinishedFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void 3P_Cam_Z__UpdateFunc(); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.3P_Cam_Z__UpdateFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_19(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_19(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void InpActEvt_RightMouseButton_K2Node_InputKeyEvent_18(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_RightMouseButton_K2Node_InputKeyEvent_18(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void InpActEvt_One_K2Node_InputKeyEvent_17(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_One_K2Node_InputKeyEvent_17(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void InpActEvt_Two_K2Node_InputKeyEvent_16(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Two_K2Node_InputKeyEvent_16(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void InpActEvt_Three_K2Node_InputKeyEvent_15(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Three_K2Node_InputKeyEvent_15(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void InpActEvt_Four_K2Node_InputKeyEvent_14(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Four_K2Node_InputKeyEvent_14(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void InpActEvt_Five_K2Node_InputKeyEvent_13(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Five_K2Node_InputKeyEvent_13(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void InpActEvt_Six_K2Node_InputKeyEvent_12(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Six_K2Node_InputKeyEvent_12(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void InpActEvt_Seven_K2Node_InputKeyEvent_11(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Seven_K2Node_InputKeyEvent_11(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void InpActEvt_Eight_K2Node_InputKeyEvent_10(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Eight_K2Node_InputKeyEvent_10(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void InpActEvt_Ctrl_One_K2Node_InputKeyEvent_9(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_One_K2Node_InputKeyEvent_9(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void InpActEvt_Ctrl_Two_K2Node_InputKeyEvent_8(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_Two_K2Node_InputKeyEvent_8(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void InpActEvt_Ctrl_Three_K2Node_InputKeyEvent_7(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_Three_K2Node_InputKeyEvent_7(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void InpActEvt_Ctrl_Four_K2Node_InputKeyEvent_6(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_Four_K2Node_InputKeyEvent_6(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void InpActEvt_Ctrl_Five_K2Node_InputKeyEvent_5(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_Five_K2Node_InputKeyEvent_5(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void InpActEvt_Ctrl_Six_K2Node_InputKeyEvent_4(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_Six_K2Node_InputKeyEvent_4(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void InpActEvt_Ctrl_Seven_K2Node_InputKeyEvent_3(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_Seven_K2Node_InputKeyEvent_3(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void InpActEvt_Ctrl_Eight_K2Node_InputKeyEvent_2(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_Eight_K2Node_InputKeyEvent_2(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void InpActEvt_NumPadZero_K2Node_InputKeyEvent_1(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_NumPadZero_K2Node_InputKeyEvent_1(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ReceiveBeginPlay(); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ReceiveTick(float DeltaSeconds); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.ReceiveTick(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetCharacterIntheWater(); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.SetCharacterIntheWater(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void OnDeath(); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.OnDeath(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void OnSaveInventoryData(); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.OnSaveInventoryData(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void AddPerkEvent(struct Unknown& PerkInfo, struct Unknown& InCurrentDisplayAbility, int32_t LastLevel, int32_t ClassLevel, enum class Unknow LevelUpType); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.AddPerkEvent(Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void RemovePerkLevelUI(); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.RemovePerkLevelUI(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void CreatePerkLevelUI(int32_t Count); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.CreatePerkLevelUI(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void PerkSpinEvent(char bShow, int32_t Count, enum class Unknow Slot); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.PerkSpinEvent(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ShowAmplifierEffect(char IsAmplifierEffect, float AmplifierLength); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.ShowAmplifierEffect(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void OnLanded(struct Unknown& Hit); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.OnLanded(Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ReadyGivePerkEvent(); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.ReadyGivePerkEvent(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void KillGivePerkEvent(int32_t KillCount); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.KillGivePerkEvent(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ShowHeartBeatSensorEffect(char IsHeartBeatSensorEffect, float HeartBeatSensorLength); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.ShowHeartBeatSensorEffect(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_BP-BattleRoyalePawn(int32_t EntryPoint); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.ExecuteUbergraph_BP-BattleRoyalePawn(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	char IsEnableSpawnSupplyBox(struct Unknown TargetActor, struct FString& OutResult); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.IsEnableSpawnSupplyBox(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	char IsInstancedFoliageActor(struct Unknown TargetActor); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.IsInstancedFoliageActor(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void GetMainWidget(struct Unknown& MainWidget); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.GetMainWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void 3P_Cam_Z__FinishedFunc(); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.3P_Cam_Z__FinishedFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void 3P_Cam_Z__UpdateFunc(); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.3P_Cam_Z__UpdateFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_19(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_19(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void InpActEvt_RightMouseButton_K2Node_InputKeyEvent_18(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_RightMouseButton_K2Node_InputKeyEvent_18(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void InpActEvt_One_K2Node_InputKeyEvent_17(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_One_K2Node_InputKeyEvent_17(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void InpActEvt_Two_K2Node_InputKeyEvent_16(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Two_K2Node_InputKeyEvent_16(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void InpActEvt_Three_K2Node_InputKeyEvent_15(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Three_K2Node_InputKeyEvent_15(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void InpActEvt_Four_K2Node_InputKeyEvent_14(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Four_K2Node_InputKeyEvent_14(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void InpActEvt_Five_K2Node_InputKeyEvent_13(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Five_K2Node_InputKeyEvent_13(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void InpActEvt_Six_K2Node_InputKeyEvent_12(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Six_K2Node_InputKeyEvent_12(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void InpActEvt_Seven_K2Node_InputKeyEvent_11(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Seven_K2Node_InputKeyEvent_11(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void InpActEvt_Eight_K2Node_InputKeyEvent_10(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Eight_K2Node_InputKeyEvent_10(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void InpActEvt_Ctrl_One_K2Node_InputKeyEvent_9(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_One_K2Node_InputKeyEvent_9(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void InpActEvt_Ctrl_Two_K2Node_InputKeyEvent_8(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_Two_K2Node_InputKeyEvent_8(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void InpActEvt_Ctrl_Three_K2Node_InputKeyEvent_7(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_Three_K2Node_InputKeyEvent_7(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void InpActEvt_Ctrl_Four_K2Node_InputKeyEvent_6(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_Four_K2Node_InputKeyEvent_6(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void InpActEvt_Ctrl_Five_K2Node_InputKeyEvent_5(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_Five_K2Node_InputKeyEvent_5(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void InpActEvt_Ctrl_Six_K2Node_InputKeyEvent_4(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_Six_K2Node_InputKeyEvent_4(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void InpActEvt_Ctrl_Seven_K2Node_InputKeyEvent_3(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_Seven_K2Node_InputKeyEvent_3(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void InpActEvt_Ctrl_Eight_K2Node_InputKeyEvent_2(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_Eight_K2Node_InputKeyEvent_2(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void InpActEvt_NumPadZero_K2Node_InputKeyEvent_1(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_NumPadZero_K2Node_InputKeyEvent_1(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ReceiveBeginPlay(); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ReceiveTick(float DeltaSeconds); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.ReceiveTick(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetCharacterIntheWater(); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.SetCharacterIntheWater(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void OnDeath(); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.OnDeath(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void OnSaveInventoryData(); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.OnSaveInventoryData(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void AddPerkEvent(struct Unknown& PerkInfo, struct Unknown& InCurrentDisplayAbility, int32_t LastLevel, int32_t ClassLevel, enum class Unknow LevelUpType); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.AddPerkEvent(Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void RemovePerkLevelUI(); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.RemovePerkLevelUI(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void CreatePerkLevelUI(int32_t Count); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.CreatePerkLevelUI(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void PerkSpinEvent(char bShow, int32_t Count, enum class Unknow Slot); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.PerkSpinEvent(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ShowAmplifierEffect(char IsAmplifierEffect, float AmplifierLength); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.ShowAmplifierEffect(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void OnLanded(struct Unknown& Hit); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.OnLanded(Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ReadyGivePerkEvent(); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.ReadyGivePerkEvent(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void KillGivePerkEvent(int32_t KillCount); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.KillGivePerkEvent(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ShowHeartBeatSensorEffect(char IsHeartBeatSensorEffect, float HeartBeatSensorLength); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.ShowHeartBeatSensorEffect(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_BP-BattleRoyalePawn(int32_t EntryPoint); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.ExecuteUbergraph_BP-BattleRoyalePawn(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.IsEnableSpawnSupplyBox

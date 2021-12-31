@@ -7,8 +7,8 @@ public:
 	float TextureScale; // 0x3A0 (4)
 	float BurnArea; // 0x3A4 (4)
 
-	void ReceiveBeginPlay(); // Function BP-Projectile_MolotovFireCell.BP-Projectile_MolotovFireCell_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_BP-Projectile_MolotovFireCell(int32_t EntryPoint); // Function BP-Projectile_MolotovFireCell.BP-Projectile_MolotovFireCell_C.ExecuteUbergraph_BP-Projectile_MolotovFireCell(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void ReceiveBeginPlay(); // Function BP-Projectile_MolotovFireCell.BP-Projectile_MolotovFireCell_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_BP-Projectile_MolotovFireCell(int32_t EntryPoint); // Function BP-Projectile_MolotovFireCell.BP-Projectile_MolotovFireCell_C.ExecuteUbergraph_BP-Projectile_MolotovFireCell(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function BP-Projectile_MolotovFireCell.BP-Projectile_MolotovFireCell_C.ReceiveBeginPlay

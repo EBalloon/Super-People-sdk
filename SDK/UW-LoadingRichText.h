@@ -7,8 +7,8 @@ public:
 	struct Unknown RichTextBlock_52; // 0x250 (8)
 	struct FText SetText; // 0x258 (24)
 
-	void Construct(); // Function UW-LoadingRichText.UW-LoadingRichText_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_UW-LoadingRichText(int32_t EntryPoint); // Function UW-LoadingRichText.UW-LoadingRichText_C.ExecuteUbergraph_UW-LoadingRichText(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void Construct(); // Function UW-LoadingRichText.UW-LoadingRichText_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_UW-LoadingRichText(int32_t EntryPoint); // Function UW-LoadingRichText.UW-LoadingRichText_C.ExecuteUbergraph_UW-LoadingRichText(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function UW-LoadingRichText.UW-LoadingRichText_C.Construct

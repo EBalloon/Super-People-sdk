@@ -7,9 +7,9 @@ public:
 	struct Unknown TextField; // 0x250 (8)
 	struct FText Text; // 0x258 (24)
 
-	void Construct(); // Function WB_ClassicSettingsText.WB_ClassicSettingsText_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Update Text(struct FText Text); // Function WB_ClassicSettingsText.WB_ClassicSettingsText_C.Update Text(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_WB_ClassicSettingsText(int32_t EntryPoint); // Function WB_ClassicSettingsText.WB_ClassicSettingsText_C.ExecuteUbergraph_WB_ClassicSettingsText(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void Construct(); // Function WB_ClassicSettingsText.WB_ClassicSettingsText_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Update Text(struct FText Text); // Function WB_ClassicSettingsText.WB_ClassicSettingsText_C.Update Text(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_WB_ClassicSettingsText(int32_t EntryPoint); // Function WB_ClassicSettingsText.WB_ClassicSettingsText_C.ExecuteUbergraph_WB_ClassicSettingsText(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function WB_ClassicSettingsText.WB_ClassicSettingsText_C.Construct

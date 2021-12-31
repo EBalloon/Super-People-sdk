@@ -7,7 +7,7 @@ public:
 	struct Unknown UW-Lobby_WeaponInfo_RandomOption_Slot_3; // 0x250 (8)
 	struct Unknown ItemOption; // 0x258 (184)
 
-	void SetItemOption(struct Unknown& ItemOption); // Function UW-Lobby_WeaponInfo_Option_Slot.UW-Lobby_WeaponInfo_Option_Slot_C.SetItemOption(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void SetItemOption(struct Unknown& ItemOption); // Function UW-Lobby_WeaponInfo_Option_Slot.UW-Lobby_WeaponInfo_Option_Slot_C.SetItemOption(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function UW-Lobby_WeaponInfo_Option_Slot.UW-Lobby_WeaponInfo_Option_Slot_C.SetItemOption

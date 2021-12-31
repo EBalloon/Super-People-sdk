@@ -24,23 +24,23 @@ public:
 	char EnableBind : 0; // 0x340 (1)
 	struct Unknown NewVar_1; // 0x348 (8)
 
-	void OnWheelWrecked(int32_t WheelIndex); // Function UW-VehicleWidget.UW-VehicleWidget_C.OnWheelWrecked(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetHPColor(float InPercent); // Function UW-VehicleWidget.UW-VehicleWidget_C.SetHPColor(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void OnSeatOccupantExited(struct Unknown Seat); // Function UW-VehicleWidget.UW-VehicleWidget_C.OnSeatOccupantExited(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void OnSeatOccupantEntered(struct Unknown Seat); // Function UW-VehicleWidget.UW-VehicleWidget_C.OnSeatOccupantEntered(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void UpdateFuelGauge(); // Function UW-VehicleWidget.UW-VehicleWidget_C.UpdateFuelGauge(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void UpdateSpeedText(); // Function UW-VehicleWidget.UW-VehicleWidget_C.UpdateSpeedText(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Hide(); // Function UW-VehicleWidget.UW-VehicleWidget_C.Hide(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Show(struct Unknown VehicleSeat); // Function UW-VehicleWidget.UW-VehicleWidget_C.Show(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-VehicleWidget.UW-VehicleWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Construct(); // Function UW-VehicleWidget.UW-VehicleWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetInfo(float CurFuel, float CurHp, struct FString CurSpeed); // Function UW-VehicleWidget.UW-VehicleWidget_C.SetInfo(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ShowVehicle(); // Function UW-VehicleWidget.UW-VehicleWidget_C.ShowVehicle(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void OnSeatOccupantEnter(struct Unknown SeatComponent, struct Unknown Occupant); // Function UW-VehicleWidget.UW-VehicleWidget_C.OnSeatOccupantEnter(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void 鉹@ t元_1(struct Unknown SeatComponent, struct Unknown Occupant); // Function UW-VehicleWidget.UW-VehicleWidget_C.鉹@ t元_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void HideVehicle(); // Function UW-VehicleWidget.UW-VehicleWidget_C.HideVehicle(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetInterpTarget(); // Function UW-VehicleWidget.UW-VehicleWidget_C.SetInterpTarget(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_UW-VehicleWidget(int32_t EntryPoint); // Function UW-VehicleWidget.UW-VehicleWidget_C.ExecuteUbergraph_UW-VehicleWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void OnWheelWrecked(int32_t WheelIndex); // Function UW-VehicleWidget.UW-VehicleWidget_C.OnWheelWrecked(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetHPColor(float InPercent); // Function UW-VehicleWidget.UW-VehicleWidget_C.SetHPColor(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void OnSeatOccupantExited(struct Unknown Seat); // Function UW-VehicleWidget.UW-VehicleWidget_C.OnSeatOccupantExited(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void OnSeatOccupantEntered(struct Unknown Seat); // Function UW-VehicleWidget.UW-VehicleWidget_C.OnSeatOccupantEntered(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void UpdateFuelGauge(); // Function UW-VehicleWidget.UW-VehicleWidget_C.UpdateFuelGauge(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void UpdateSpeedText(); // Function UW-VehicleWidget.UW-VehicleWidget_C.UpdateSpeedText(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Hide(); // Function UW-VehicleWidget.UW-VehicleWidget_C.Hide(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Show(struct Unknown VehicleSeat); // Function UW-VehicleWidget.UW-VehicleWidget_C.Show(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-VehicleWidget.UW-VehicleWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Construct(); // Function UW-VehicleWidget.UW-VehicleWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetInfo(float CurFuel, float CurHp, struct FString CurSpeed); // Function UW-VehicleWidget.UW-VehicleWidget_C.SetInfo(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ShowVehicle(); // Function UW-VehicleWidget.UW-VehicleWidget_C.ShowVehicle(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void OnSeatOccupantEnter(struct Unknown SeatComponent, struct Unknown Occupant); // Function UW-VehicleWidget.UW-VehicleWidget_C.OnSeatOccupantEnter(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void 鉹@ t元_1(struct Unknown SeatComponent, struct Unknown Occupant); // Function UW-VehicleWidget.UW-VehicleWidget_C.鉹@ t元_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void HideVehicle(); // Function UW-VehicleWidget.UW-VehicleWidget_C.HideVehicle(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetInterpTarget(); // Function UW-VehicleWidget.UW-VehicleWidget_C.SetInterpTarget(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_UW-VehicleWidget(int32_t EntryPoint); // Function UW-VehicleWidget.UW-VehicleWidget_C.ExecuteUbergraph_UW-VehicleWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function UW-VehicleWidget.UW-VehicleWidget_C.OnWheelWrecked

@@ -13,9 +13,9 @@ public:
 	struct Unknown TextBlock_1; // 0x280 (8)
 	struct FText Title; // 0x288 (24)
 
-	void Construct(); // Function SubTitleSlotWidget.SubTitleSlotWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Set SubType(enum class Unknow SubType); // Function SubTitleSlotWidget.SubTitleSlotWidget_C.Set SubType(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_SubTitleSlotWidget(int32_t EntryPoint); // Function SubTitleSlotWidget.SubTitleSlotWidget_C.ExecuteUbergraph_SubTitleSlotWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void Construct(); // Function SubTitleSlotWidget.SubTitleSlotWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Set SubType(enum class Unknow SubType); // Function SubTitleSlotWidget.SubTitleSlotWidget_C.Set SubType(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_SubTitleSlotWidget(int32_t EntryPoint); // Function SubTitleSlotWidget.SubTitleSlotWidget_C.ExecuteUbergraph_SubTitleSlotWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function SubTitleSlotWidget.SubTitleSlotWidget_C.Construct

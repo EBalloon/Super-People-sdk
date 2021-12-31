@@ -28,11 +28,11 @@ public:
 	struct Unknown LoopSound; // 0x2F4 (4)
 	char IsStopSound : 0; // 0x2F8 (1)
 
-	void Divide(int32_t Value, int32_t& RetS1, int32_t& RetS2); // Function UW-RewardGoldSlot_02.UW-RewardGoldSlot_02_C.Divide(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetGold(int32_t RandomGold); // Function UW-RewardGoldSlot_02.UW-RewardGoldSlot_02_C.SetGold(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void StopSound(); // Function UW-RewardGoldSlot_02.UW-RewardGoldSlot_02_C.StopSound(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void 鉹@t元_2(); // Function UW-RewardGoldSlot_02.UW-RewardGoldSlot_02_C.鉹@t元_2(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_UW-RewardGoldSlot_02(int32_t EntryPoint); // Function UW-RewardGoldSlot_02.UW-RewardGoldSlot_02_C.ExecuteUbergraph_UW-RewardGoldSlot_02(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void Divide(int32_t Value, int32_t& RetS1, int32_t& RetS2); // Function UW-RewardGoldSlot_02.UW-RewardGoldSlot_02_C.Divide(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetGold(int32_t RandomGold); // Function UW-RewardGoldSlot_02.UW-RewardGoldSlot_02_C.SetGold(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void StopSound(); // Function UW-RewardGoldSlot_02.UW-RewardGoldSlot_02_C.StopSound(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void 鉹@t元_2(); // Function UW-RewardGoldSlot_02.UW-RewardGoldSlot_02_C.鉹@t元_2(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_UW-RewardGoldSlot_02(int32_t EntryPoint); // Function UW-RewardGoldSlot_02.UW-RewardGoldSlot_02_C.ExecuteUbergraph_UW-RewardGoldSlot_02(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function UW-RewardGoldSlot_02.UW-RewardGoldSlot_02_C.Divide

@@ -88,26 +88,26 @@ public:
 	float AddTme; // 0x560 (4)
 	float PreStart; // 0x564 (4)
 
-	void OnLoaded_27D2D12149E3EA31998D6D88C1D08B2F(struct Unknown Loaded); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.OnLoaded_27D2D12149E3EA31998D6D88C1D08B2F(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetNickName(struct FString NewNickName); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetNickName(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetIndex(int32_t NewIndex); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetIndex(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetPerkLevel(int32_t NewPerkLevel); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetPerkLevel(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetPerkName(struct FName& NewPerkName); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetPerkName(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetKillCount(int32_t NewKillCount); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetKillCount(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetHp(int32_t NewCur, int32_t NewMax); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetHp(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void 鉹@ t元_1(); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.鉹@ t元_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetPing(struct Unknown& NewPingInfo); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetPing(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetTalking(char NewTalking, char bIsMute); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetTalking(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetFiring(char NewIsFiring); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetFiring(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void AnimationHP(float Start, float End, float Time); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.AnimationHP(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Hp_Ani(); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.Hp_Ani(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetGoldenTime(struct Unknown NewRemainTime, float NewPercent); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetGoldenTime(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetExpertWeaponName(struct FText& NewWeaponName); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetExpertWeaponName(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetCharacterState(enum class Unknow NewState, char IsDisconnect); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetCharacterState(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetRequestResuscitation(char bNewFlag); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetRequestResuscitation(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetResuscitating(char bNewFlag); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetResuscitating(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void UpdateInvalidationbox(); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.UpdateInvalidationbox(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_UW-TeamInfoItemWidget(int32_t EntryPoint); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.ExecuteUbergraph_UW-TeamInfoItemWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void OnLoaded_27D2D12149E3EA31998D6D88C1D08B2F(struct Unknown Loaded); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.OnLoaded_27D2D12149E3EA31998D6D88C1D08B2F(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetNickName(struct FString NewNickName); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetNickName(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetIndex(int32_t NewIndex); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetIndex(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetPerkLevel(int32_t NewPerkLevel); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetPerkLevel(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetPerkName(struct FName& NewPerkName); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetPerkName(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetKillCount(int32_t NewKillCount); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetKillCount(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetHp(int32_t NewCur, int32_t NewMax); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetHp(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void 鉹@ t元_1(); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.鉹@ t元_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetPing(struct Unknown& NewPingInfo); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetPing(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetTalking(char NewTalking, char bIsMute); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetTalking(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetFiring(char NewIsFiring); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetFiring(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void AnimationHP(float Start, float End, float Time); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.AnimationHP(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Hp_Ani(); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.Hp_Ani(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetGoldenTime(struct Unknown NewRemainTime, float NewPercent); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetGoldenTime(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetExpertWeaponName(struct FText& NewWeaponName); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetExpertWeaponName(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetCharacterState(enum class Unknow NewState, char IsDisconnect); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetCharacterState(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetRequestResuscitation(char bNewFlag); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetRequestResuscitation(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetResuscitating(char bNewFlag); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetResuscitating(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void UpdateInvalidationbox(); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.UpdateInvalidationbox(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_UW-TeamInfoItemWidget(int32_t EntryPoint); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.ExecuteUbergraph_UW-TeamInfoItemWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.OnLoaded_27D2D12149E3EA31998D6D88C1D08B2F

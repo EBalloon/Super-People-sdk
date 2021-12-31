@@ -7,8 +7,8 @@ public:
 	struct Unknown Image_73; // 0x250 (8)
 	struct Unknown KeyImageWidget; // 0x258 (8)
 
-	void Construct(); // Function UW-NitroBoomTargetWidget.UW-NitroBoomTargetWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_UW-NitroBoomTargetWidget(int32_t EntryPoint); // Function UW-NitroBoomTargetWidget.UW-NitroBoomTargetWidget_C.ExecuteUbergraph_UW-NitroBoomTargetWidget(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void Construct(); // Function UW-NitroBoomTargetWidget.UW-NitroBoomTargetWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_UW-NitroBoomTargetWidget(int32_t EntryPoint); // Function UW-NitroBoomTargetWidget.UW-NitroBoomTargetWidget_C.ExecuteUbergraph_UW-NitroBoomTargetWidget(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function UW-NitroBoomTargetWidget.UW-NitroBoomTargetWidget_C.Construct

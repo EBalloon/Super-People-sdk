@@ -3,58 +3,58 @@ class ABP-GrenadeWeaponBase_C : public ABravoHotelGrenadeWeapon {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x1F20 (8)
-	struct Unknown StaticMesh_Ring; // 0x1F28 (8)
-	struct Unknown StaticMesh_Lever; // 0x1F30 (8)
-	float Timeline_0_Lerp_77CED3694A7ECD58C02266AF5F5B5991; // 0x1F38 (4)
-	char Timeline_0__Direction_77CED3694A7ECD58C02266AF5F5B5991; // 0x1F3C (1)
-	struct Unknown Timeline_1; // 0x1F40 (8)
-	float Lerp_Lerp_EDD5977E4E850EC460B1E599F1FF45F8; // 0x1F48 (4)
-	char Lerp__Direction_EDD5977E4E850EC460B1E599F1FF45F8; // 0x1F4C (1)
-	struct Unknown Lerp; // 0x1F50 (8)
-	struct Unknown InterpOffset; // 0x1F58 (12)
-	struct Unknown DesiredLocation; // 0x1F64 (12)
-	struct Unknown InitalLocalVelocity; // 0x1F70 (12)
-	struct Unknown DesiredLocation_Ing; // 0x1F7C (12)
-	struct Unknown InitalLocalVelocity_Ing; // 0x1F88 (12)
-	enum class Unknow ThrowingWeaponState; // 0x1F94 (1)
-	char ThrowingAction_Bool : 0; // 0x1F95 (1)
-	struct Unknown DesiredLocation_3; // 0x1F98 (12)
-	struct Unknown DesiredLocation_2_Ing; // 0x1FA4 (12)
-	struct Unknown InitalLocalVelocity_3; // 0x1FB0 (12)
-	struct Unknown InitalLocalVelocity_2_ing; // 0x1FBC (12)
-	float PathLifeTime; // 0x1FC8 (4)
-	float TimeInterval; // 0x1FCC (4)
-	struct Unknown IndicatorComponent_2; // 0x1FD0 (8)
-	struct Unknown IndicatorComponent_3; // 0x1FD8 (8)
-	struct Unknown TrajectoryComponent_2; // 0x1FE0 (8)
-	struct Unknown TrajectoryComponent_3; // 0x1FE8 (8)
+	struct Unknown UberGraphFrame; // 0x1F00 (8)
+	struct Unknown StaticMesh_Ring; // 0x1F08 (8)
+	struct Unknown StaticMesh_Lever; // 0x1F10 (8)
+	float Timeline_0_Lerp_77CED3694A7ECD58C02266AF5F5B5991; // 0x1F18 (4)
+	char Timeline_0__Direction_77CED3694A7ECD58C02266AF5F5B5991; // 0x1F1C (1)
+	struct Unknown Timeline_1; // 0x1F20 (8)
+	float Lerp_Lerp_EDD5977E4E850EC460B1E599F1FF45F8; // 0x1F28 (4)
+	char Lerp__Direction_EDD5977E4E850EC460B1E599F1FF45F8; // 0x1F2C (1)
+	struct Unknown Lerp; // 0x1F30 (8)
+	struct Unknown InterpOffset; // 0x1F38 (12)
+	struct Unknown DesiredLocation; // 0x1F44 (12)
+	struct Unknown InitalLocalVelocity; // 0x1F50 (12)
+	struct Unknown DesiredLocation_Ing; // 0x1F5C (12)
+	struct Unknown InitalLocalVelocity_Ing; // 0x1F68 (12)
+	enum class Unknow ThrowingWeaponState; // 0x1F74 (1)
+	char ThrowingAction_Bool : 0; // 0x1F75 (1)
+	struct Unknown DesiredLocation_3; // 0x1F78 (12)
+	struct Unknown DesiredLocation_2_Ing; // 0x1F84 (12)
+	struct Unknown InitalLocalVelocity_3; // 0x1F90 (12)
+	struct Unknown InitalLocalVelocity_2_ing; // 0x1F9C (12)
+	float PathLifeTime; // 0x1FA8 (4)
+	float TimeInterval; // 0x1FAC (4)
+	struct Unknown IndicatorComponent_2; // 0x1FB0 (8)
+	struct Unknown IndicatorComponent_3; // 0x1FB8 (8)
+	struct Unknown TrajectoryComponent_2; // 0x1FC0 (8)
+	struct Unknown TrajectoryComponent_3; // 0x1FC8 (8)
 
-	struct Unknown GetDebugInfo(); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.GetDebugInfo(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void CheckNeedDrawing(char& Need); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.CheckNeedDrawing(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void IsReplayTarget(char& IsReplayTarget); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.IsReplayTarget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void GetProjectileLocationAndVelocity(int32_t Index, struct Unknown& Location, struct Unknown& Velocity); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.GetProjectileLocationAndVelocity(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ThrowingAction(enum class Unknow ThrowingWeaponState, char Condition); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.ThrowingAction(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	struct Unknown Add Spline Mesh(); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.Add Spline Mesh(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void CalcGrenadeWeaponLocationOffset(struct Unknown Offest); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.CalcGrenadeWeaponLocationOffset(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Lerp__FinishedFunc(); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.Lerp__FinishedFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Lerp__UpdateFunc(); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.Lerp__UpdateFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Timeline_0__FinishedFunc(); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.Timeline_0__FinishedFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Timeline_0__UpdateFunc(); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.Timeline_0__UpdateFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void DrawProjectileTrajectory(); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.DrawProjectileTrajectory(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ReceiveDestroyed(); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.ReceiveDestroyed(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void OnChangeThrowingWeaponStateDelegate_Event(enum class Unknow ThrowingWeaponState); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.OnChangeThrowingWeaponStateDelegate_Event(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void OnChangeThrowingTypeDelegate_Event(enum class Unknow ThrowingType); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.OnChangeThrowingTypeDelegate_Event(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void DrawProjectileTrajectory_ChangeType(); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.DrawProjectileTrajectory_ChangeType(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void OnCharacterGroundStateChangeDelegate(enum class Unknow State); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.OnCharacterGroundStateChangeDelegate(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void InitProjectileTrajectory(); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.InitProjectileTrajectory(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void OnFire(); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.OnFire(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ForceUpdateProjectileTrajectory(); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.ForceUpdateProjectileTrajectory(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void OnChangedReplayViewMode_2(char IsPlayer); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.OnChangedReplayViewMode_2(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void K2_OnOwnerBecomeViewTarget(); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.K2_OnOwnerBecomeViewTarget(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void K2_OnOwnerEndViewTarget(); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.K2_OnOwnerEndViewTarget(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ReceiveEndPlay(char EndPlayReason); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.ReceiveEndPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_BP-GrenadeWeaponBase(int32_t EntryPoint); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.ExecuteUbergraph_BP-GrenadeWeaponBase(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	struct Unknown GetDebugInfo(); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.GetDebugInfo(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void CheckNeedDrawing(char& Need); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.CheckNeedDrawing(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void IsReplayTarget(char& IsReplayTarget); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.IsReplayTarget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void GetProjectileLocationAndVelocity(int32_t Index, struct Unknown& Location, struct Unknown& Velocity); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.GetProjectileLocationAndVelocity(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ThrowingAction(enum class Unknow ThrowingWeaponState, char Condition); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.ThrowingAction(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	struct Unknown Add Spline Mesh(); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.Add Spline Mesh(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void CalcGrenadeWeaponLocationOffset(struct Unknown Offest); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.CalcGrenadeWeaponLocationOffset(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Lerp__FinishedFunc(); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.Lerp__FinishedFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Lerp__UpdateFunc(); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.Lerp__UpdateFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Timeline_0__FinishedFunc(); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.Timeline_0__FinishedFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Timeline_0__UpdateFunc(); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.Timeline_0__UpdateFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void DrawProjectileTrajectory(); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.DrawProjectileTrajectory(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ReceiveDestroyed(); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.ReceiveDestroyed(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void OnChangeThrowingWeaponStateDelegate_Event(enum class Unknow ThrowingWeaponState); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.OnChangeThrowingWeaponStateDelegate_Event(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void OnChangeThrowingTypeDelegate_Event(enum class Unknow ThrowingType); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.OnChangeThrowingTypeDelegate_Event(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void DrawProjectileTrajectory_ChangeType(); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.DrawProjectileTrajectory_ChangeType(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void OnCharacterGroundStateChangeDelegate(enum class Unknow State); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.OnCharacterGroundStateChangeDelegate(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void InitProjectileTrajectory(); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.InitProjectileTrajectory(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void OnFire(); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.OnFire(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ForceUpdateProjectileTrajectory(); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.ForceUpdateProjectileTrajectory(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void OnChangedReplayViewMode_2(char IsPlayer); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.OnChangedReplayViewMode_2(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void K2_OnOwnerBecomeViewTarget(); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.K2_OnOwnerBecomeViewTarget(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void K2_OnOwnerEndViewTarget(); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.K2_OnOwnerEndViewTarget(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ReceiveEndPlay(char EndPlayReason); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.ReceiveEndPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_BP-GrenadeWeaponBase(int32_t EntryPoint); // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.ExecuteUbergraph_BP-GrenadeWeaponBase(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function BP-GrenadeWeaponBase.BP-GrenadeWeaponBase_C.GetDebugInfo

@@ -8,7 +8,7 @@ public:
 	struct Unknown Event; // 0x258 (8)
 	struct Unknown Anim_Second; // 0x260 (8)
 	struct Unknown Hide; // 0x268 (8)
-	struct Unknown Infos_ani; // 0x270 (8)
+	struct Unknown Infos_Ani; // 0x270 (8)
 	struct Unknown Anim_Defeat; // 0x278 (8)
 	struct Unknown Anim_Victory; // 0x280 (8)
 	struct Unknown Arrow; // 0x288 (8)
@@ -92,7 +92,7 @@ public:
 	struct Unknown R_WingLine_2; // 0x4F8 (8)
 	struct Unknown Ribbon; // 0x500 (8)
 	struct Unknown Ribbon_2; // 0x508 (8)
-	struct Unknown Ring; // 0x510 (8)
+	struct Unknown ring; // 0x510 (8)
 	struct Unknown ScrollBox_1; // 0x518 (8)
 	struct Unknown T_DamageType; // 0x520 (8)
 	struct Unknown T_WeaponLevel; // 0x528 (8)
@@ -129,31 +129,31 @@ public:
 	char bTestIsWin : 0; // 0x6C9 (1)
 	float MatchFinalResultShowTime; // 0x6CC (4)
 
-	void SequenceEvent__ENTRYPOINTUW-MatchEnd_Animation_02_2(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.SequenceEvent__ENTRYPOINTUW-MatchEnd_Animation_02_2(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SequenceEvent__ENTRYPOINTUW-MatchEnd_Animation_02_1(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.SequenceEvent__ENTRYPOINTUW-MatchEnd_Animation_02_1(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void CheckSkipBtn(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.CheckSkipBtn(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void PlayCharacterResultAnimation(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.PlayCharacterResultAnimation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void UpdateInputMode(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.UpdateInputMode(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void RemoveOverlapedWidgets(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.RemoveOverlapedWidgets(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetKillerInfo(struct Unknown SimpleResult); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.SetKillerInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetDropedItem(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.SetDropedItem(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ShowMatchEndAnimation(struct Unknown AnimationData, struct Unknown Result, char IsTestMode); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.ShowMatchEndAnimation(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void 鉹@t元_1(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ShowLoseAnimation(struct Unknown Data); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.ShowLoseAnimation(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void BndEvt__Button_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.BndEvt__Button_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void HideAnimation(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.HideAnimation(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void 鉹@t元_2(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.鉹@t元_2(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void DelegateOnWhoKilledMe_Event_1(struct Unknown& SimpleResult); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.DelegateOnWhoKilledMe_Event_1(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Construct(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void 鉹@t元_3(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.鉹@t元_3(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void 鉹@t元_4(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.鉹@t元_4(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void 鉹@t元_5(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.鉹@t元_5(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Init(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.Init(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void BndEvt__Button_103_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.BndEvt__Button_103_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void BndEvt__Button_1_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.BndEvt__Button_1_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_UW-MatchEnd_Animation_02(int32_t EntryPoint); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.ExecuteUbergraph_UW-MatchEnd_Animation_02(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void EventDispatcher_HideComplete__DelegateSignature(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.EventDispatcher_HideComplete__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void SequenceEvent__ENTRYPOINTUW-MatchEnd_Animation_02_2(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.SequenceEvent__ENTRYPOINTUW-MatchEnd_Animation_02_2(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SequenceEvent__ENTRYPOINTUW-MatchEnd_Animation_02_1(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.SequenceEvent__ENTRYPOINTUW-MatchEnd_Animation_02_1(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void CheckSkipBtn(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.CheckSkipBtn(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void PlayCharacterResultAnimation(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.PlayCharacterResultAnimation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void UpdateInputMode(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.UpdateInputMode(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void RemoveOverlapedWidgets(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.RemoveOverlapedWidgets(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetKillerInfo(struct Unknown SimpleResult); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.SetKillerInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetDropedItem(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.SetDropedItem(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ShowMatchEndAnimation(struct Unknown AnimationData, struct Unknown Result, char IsTestMode); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.ShowMatchEndAnimation(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void 鉹@t元_1(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ShowLoseAnimation(struct Unknown Data); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.ShowLoseAnimation(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void BndEvt__Button_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.BndEvt__Button_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void HideAnimation(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.HideAnimation(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void 鉹@t元_2(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.鉹@t元_2(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void DelegateOnWhoKilledMe_Event_1(struct Unknown& SimpleResult); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.DelegateOnWhoKilledMe_Event_1(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Construct(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void 鉹@t元_3(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.鉹@t元_3(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void 鉹@t元_4(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.鉹@t元_4(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void 鉹@t元_5(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.鉹@t元_5(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Init(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.Init(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void BndEvt__Button_103_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.BndEvt__Button_103_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void BndEvt__Button_1_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.BndEvt__Button_1_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_UW-MatchEnd_Animation_02(int32_t EntryPoint); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.ExecuteUbergraph_UW-MatchEnd_Animation_02(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void EventDispatcher_HideComplete__DelegateSignature(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.EventDispatcher_HideComplete__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.SequenceEvent__ENTRYPOINTUW-MatchEnd_Animation_02_2

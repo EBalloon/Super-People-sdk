@@ -7,8 +7,8 @@ public:
 	struct Unknown TextBlock; // 0x250 (8)
 	struct FText SetText; // 0x258 (24)
 
-	void Construct(); // Function UW-CastingWidget_CancelText.UW-CastingWidget_CancelText_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_UW-CastingWidget_CancelText(int32_t EntryPoint); // Function UW-CastingWidget_CancelText.UW-CastingWidget_CancelText_C.ExecuteUbergraph_UW-CastingWidget_CancelText(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void Construct(); // Function UW-CastingWidget_CancelText.UW-CastingWidget_CancelText_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_UW-CastingWidget_CancelText(int32_t EntryPoint); // Function UW-CastingWidget_CancelText.UW-CastingWidget_CancelText_C.ExecuteUbergraph_UW-CastingWidget_CancelText(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function UW-CastingWidget_CancelText.UW-CastingWidget_CancelText_C.Construct

@@ -14,14 +14,14 @@ public:
 	float CurrentHealthSize; // 0x320 (4)
 	float CurrentMaxHealth; // 0x324 (4)
 
-	void GetHealthPosition(float InHealth, float& PositionX); // Function UW-PlayerInfo_Progress_Renew.UW-PlayerInfo_Progress_Renew_C.GetHealthPosition(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void HiddenAllSlots(); // Function UW-PlayerInfo_Progress_Renew.UW-PlayerInfo_Progress_Renew_C.HiddenAllSlots(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void OnSetSlotWidgets(int32_t InNewMaxHealth); // Function UW-PlayerInfo_Progress_Renew.UW-PlayerInfo_Progress_Renew_C.OnSetSlotWidgets(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void SetSlotWidgets(int32_t InNewMaxHealth); // Function UW-PlayerInfo_Progress_Renew.UW-PlayerInfo_Progress_Renew_C.SetSlotWidgets(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void PlayIncreaseMaxHealthAnim(int32_t InLastHealth, int32_t InNewHealth); // Function UW-PlayerInfo_Progress_Renew.UW-PlayerInfo_Progress_Renew_C.PlayIncreaseMaxHealthAnim(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ShowDecreaseCurrentHealthAnim(int32_t InNewHealth); // Function UW-PlayerInfo_Progress_Renew.UW-PlayerInfo_Progress_Renew_C.ShowDecreaseCurrentHealthAnim(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void UpdateOverHealing(int32_t InNewHealth, char bFlag); // Function UW-PlayerInfo_Progress_Renew.UW-PlayerInfo_Progress_Renew_C.UpdateOverHealing(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_UW-PlayerInfo_Progress_Renew(int32_t EntryPoint); // Function UW-PlayerInfo_Progress_Renew.UW-PlayerInfo_Progress_Renew_C.ExecuteUbergraph_UW-PlayerInfo_Progress_Renew(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void GetHealthPosition(float InHealth, float& PositionX); // Function UW-PlayerInfo_Progress_Renew.UW-PlayerInfo_Progress_Renew_C.GetHealthPosition(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void HiddenAllSlots(); // Function UW-PlayerInfo_Progress_Renew.UW-PlayerInfo_Progress_Renew_C.HiddenAllSlots(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void OnSetSlotWidgets(int32_t InNewMaxHealth); // Function UW-PlayerInfo_Progress_Renew.UW-PlayerInfo_Progress_Renew_C.OnSetSlotWidgets(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetSlotWidgets(int32_t InNewMaxHealth); // Function UW-PlayerInfo_Progress_Renew.UW-PlayerInfo_Progress_Renew_C.SetSlotWidgets(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void PlayIncreaseMaxHealthAnim(int32_t InLastHealth, int32_t InNewHealth); // Function UW-PlayerInfo_Progress_Renew.UW-PlayerInfo_Progress_Renew_C.PlayIncreaseMaxHealthAnim(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ShowDecreaseCurrentHealthAnim(int32_t InNewHealth); // Function UW-PlayerInfo_Progress_Renew.UW-PlayerInfo_Progress_Renew_C.ShowDecreaseCurrentHealthAnim(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void UpdateOverHealing(int32_t InNewHealth, char bFlag); // Function UW-PlayerInfo_Progress_Renew.UW-PlayerInfo_Progress_Renew_C.UpdateOverHealing(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_UW-PlayerInfo_Progress_Renew(int32_t EntryPoint); // Function UW-PlayerInfo_Progress_Renew.UW-PlayerInfo_Progress_Renew_C.ExecuteUbergraph_UW-PlayerInfo_Progress_Renew(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function UW-PlayerInfo_Progress_Renew.UW-PlayerInfo_Progress_Renew_C.GetHealthPosition

@@ -24,11 +24,11 @@ public:
 	struct Unknown CurVoiceTalkState; // 0x2E0 (32)
 	struct Unknown PingImage; // 0x300 (8)
 
-	void SetInfo(struct Unknown VoiceTalkState); // Function UW-VoiceTalkSlot.UW-VoiceTalkSlot_C.SetInfo(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void BndEvt__Button_0_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(); // Function UW-VoiceTalkSlot.UW-VoiceTalkSlot_C.BndEvt__Button_0_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void BndEvt__Slider_138_K2Node_ComponentBoundEvent_0_OnFloatValueChangedEvent__DelegateSignature(float Value); // Function UW-VoiceTalkSlot.UW-VoiceTalkSlot_C.BndEvt__Slider_138_K2Node_ComponentBoundEvent_0_OnFloatValueChangedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_UW-VoiceTalkSlot(int32_t EntryPoint); // Function UW-VoiceTalkSlot.UW-VoiceTalkSlot_C.ExecuteUbergraph_UW-VoiceTalkSlot(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void EventDispatcher_ChangeVolumeState__DelegateSignature(struct Unknown VoiceTalkState); // Function UW-VoiceTalkSlot.UW-VoiceTalkSlot_C.EventDispatcher_ChangeVolumeState__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void SetInfo(struct Unknown VoiceTalkState); // Function UW-VoiceTalkSlot.UW-VoiceTalkSlot_C.SetInfo(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void BndEvt__Button_0_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(); // Function UW-VoiceTalkSlot.UW-VoiceTalkSlot_C.BndEvt__Button_0_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void BndEvt__Slider_138_K2Node_ComponentBoundEvent_0_OnFloatValueChangedEvent__DelegateSignature(float Value); // Function UW-VoiceTalkSlot.UW-VoiceTalkSlot_C.BndEvt__Slider_138_K2Node_ComponentBoundEvent_0_OnFloatValueChangedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_UW-VoiceTalkSlot(int32_t EntryPoint); // Function UW-VoiceTalkSlot.UW-VoiceTalkSlot_C.ExecuteUbergraph_UW-VoiceTalkSlot(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void EventDispatcher_ChangeVolumeState__DelegateSignature(struct Unknown VoiceTalkState); // Function UW-VoiceTalkSlot.UW-VoiceTalkSlot_C.EventDispatcher_ChangeVolumeState__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function UW-VoiceTalkSlot.UW-VoiceTalkSlot_C.SetInfo

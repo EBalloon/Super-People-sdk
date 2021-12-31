@@ -15,19 +15,19 @@ public:
 	char IsValidMeshActor : 0; // 0x283 (1)
 	char IsPressedLeftMouse : 0; // 0x284 (1)
 
-	void CheckValidMeshActor(char& Return); // Function UW-ArmoryInput.UW-ArmoryInput_C.CheckValidMeshActor(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void IsSubTabContains(struct FString TabName, char& State); // Function UW-ArmoryInput.UW-ArmoryInput_C.IsSubTabContains(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void UpdateMouseWheel(float Delta); // Function UW-ArmoryInput.UW-ArmoryInput_C.UpdateMouseWheel(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void UpdateMouseY(float Delta); // Function UW-ArmoryInput.UW-ArmoryInput_C.UpdateMouseY(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void UpdateMouseX(float Delta); // Function UW-ArmoryInput.UW-ArmoryInput_C.UpdateMouseX(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Reset(char Snap); // Function UW-ArmoryInput.UW-ArmoryInput_C.Reset(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void GetLobbyWidget(struct Unknown& LobbyWidget); // Function UW-ArmoryInput.UW-ArmoryInput_C.GetLobbyWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void MouseWheel(float Delta); // Function UW-ArmoryInput.UW-ArmoryInput_C.MouseWheel(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Hide(); // Function UW-ArmoryInput.UW-ArmoryInput_C.Hide(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Show(); // Function UW-ArmoryInput.UW-ArmoryInput_C.Show(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Construct(); // Function UW-ArmoryInput.UW-ArmoryInput_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-ArmoryInput.UW-ArmoryInput_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_UW-ArmoryInput(int32_t EntryPoint); // Function UW-ArmoryInput.UW-ArmoryInput_C.ExecuteUbergraph_UW-ArmoryInput(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void CheckValidMeshActor(char& Return); // Function UW-ArmoryInput.UW-ArmoryInput_C.CheckValidMeshActor(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void IsSubTabContains(struct FString TabName, char& State); // Function UW-ArmoryInput.UW-ArmoryInput_C.IsSubTabContains(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void UpdateMouseWheel(float Delta); // Function UW-ArmoryInput.UW-ArmoryInput_C.UpdateMouseWheel(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void UpdateMouseY(float Delta); // Function UW-ArmoryInput.UW-ArmoryInput_C.UpdateMouseY(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void UpdateMouseX(float Delta); // Function UW-ArmoryInput.UW-ArmoryInput_C.UpdateMouseX(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Reset(char Snap); // Function UW-ArmoryInput.UW-ArmoryInput_C.Reset(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void GetLobbyWidget(struct Unknown& LobbyWidget); // Function UW-ArmoryInput.UW-ArmoryInput_C.GetLobbyWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void MouseWheel(float Delta); // Function UW-ArmoryInput.UW-ArmoryInput_C.MouseWheel(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Hide(); // Function UW-ArmoryInput.UW-ArmoryInput_C.Hide(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Show(); // Function UW-ArmoryInput.UW-ArmoryInput_C.Show(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Construct(); // Function UW-ArmoryInput.UW-ArmoryInput_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-ArmoryInput.UW-ArmoryInput_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_UW-ArmoryInput(int32_t EntryPoint); // Function UW-ArmoryInput.UW-ArmoryInput_C.ExecuteUbergraph_UW-ArmoryInput(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function UW-ArmoryInput.UW-ArmoryInput_C.CheckValidMeshActor

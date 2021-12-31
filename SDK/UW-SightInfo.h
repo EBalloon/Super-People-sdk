@@ -26,17 +26,17 @@ public:
 	struct Unknown Timer_UpdateInfos; // 0x2E8 (8)
 	struct Unknown ChargeIndicatorDynamicMaterial; // 0x2F0 (8)
 
-	void HideChargeInfo(); // Function UW-SightInfo.UW-SightInfo_C.HideChargeInfo(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void UpdateChargeInfo(float MaxGaugeValue, float CurrentGaugeValue); // Function UW-SightInfo.UW-SightInfo_C.UpdateChargeInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void UpdateBulletsPerShot(); // Function UW-SightInfo.UW-SightInfo_C.UpdateBulletsPerShot(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void UpdateSnipeGauge(); // Function UW-SightInfo.UW-SightInfo_C.UpdateSnipeGauge(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void UpdateDamage(); // Function UW-SightInfo.UW-SightInfo_C.UpdateDamage(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void UpdateInfos(); // Function UW-SightInfo.UW-SightInfo_C.UpdateInfos(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void HideSightInfo(); // Function UW-SightInfo.UW-SightInfo_C.HideSightInfo(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ShowSightInfo(); // Function UW-SightInfo.UW-SightInfo_C.ShowSightInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Init(); // Function UW-SightInfo.UW-SightInfo_C.Init(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Construct(); // Function UW-SightInfo.UW-SightInfo_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_UW-SightInfo(int32_t EntryPoint); // Function UW-SightInfo.UW-SightInfo_C.ExecuteUbergraph_UW-SightInfo(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void HideChargeInfo(); // Function UW-SightInfo.UW-SightInfo_C.HideChargeInfo(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void UpdateChargeInfo(float MaxGaugeValue, float CurrentGaugeValue); // Function UW-SightInfo.UW-SightInfo_C.UpdateChargeInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void UpdateBulletsPerShot(); // Function UW-SightInfo.UW-SightInfo_C.UpdateBulletsPerShot(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void UpdateSnipeGauge(); // Function UW-SightInfo.UW-SightInfo_C.UpdateSnipeGauge(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void UpdateDamage(); // Function UW-SightInfo.UW-SightInfo_C.UpdateDamage(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void UpdateInfos(); // Function UW-SightInfo.UW-SightInfo_C.UpdateInfos(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void HideSightInfo(); // Function UW-SightInfo.UW-SightInfo_C.HideSightInfo(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ShowSightInfo(); // Function UW-SightInfo.UW-SightInfo_C.ShowSightInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Init(); // Function UW-SightInfo.UW-SightInfo_C.Init(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Construct(); // Function UW-SightInfo.UW-SightInfo_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_UW-SightInfo(int32_t EntryPoint); // Function UW-SightInfo.UW-SightInfo_C.ExecuteUbergraph_UW-SightInfo(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function UW-SightInfo.UW-SightInfo_C.HideChargeInfo

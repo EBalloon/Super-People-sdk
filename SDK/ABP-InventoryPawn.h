@@ -157,15 +157,15 @@ public:
 	float PrevMeshRotationYaw; // 0xAC34 (4)
 	float BoneDrivenValue; // 0xAC38 (4)
 
-	void AnimGraph(struct Unknown& AnimGraph); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void UpdateAnimDynamicsForce(); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.UpdateAnimDynamicsForce(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Get Preview Character Mesh(struct Unknown& Skeletal Mesh Component); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.Get Preview Character Mesh(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Get Current Preview Weapon(struct Unknown& Current Preview Weapon); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.Get Current Preview Weapon(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void Update References(); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.Update References(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	char Get Is Equipping RPG(); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.Get Is Equipping RPG(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	char Get Is Equipping Gatling(); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.Get Is Equipping Gatling(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void BlueprintUpdateAnimation(float DeltaTimeX); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.BlueprintUpdateAnimation(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
-	void ExecuteUbergraph_ABP-InventoryPawn(int32_t EntryPoint); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.ExecuteUbergraph_ABP-InventoryPawn(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void AnimGraph(struct Unknown& AnimGraph); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void UpdateAnimDynamicsForce(); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.UpdateAnimDynamicsForce(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Get Preview Character Mesh(struct Unknown& Skeletal Mesh Component); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.Get Preview Character Mesh(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Get Current Preview Weapon(struct Unknown& Current Preview Weapon); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.Get Current Preview Weapon(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Update References(); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.Update References(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	char Get Is Equipping RPG(); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.Get Is Equipping RPG(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	char Get Is Equipping Gatling(); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.Get Is Equipping Gatling(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void BlueprintUpdateAnimation(float DeltaTimeX); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.BlueprintUpdateAnimation(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ExecuteUbergraph_ABP-InventoryPawn(int32_t EntryPoint); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.ExecuteUbergraph_ABP-InventoryPawn(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function ABP-InventoryPawn.ABP-InventoryPawn_C.AnimGraph

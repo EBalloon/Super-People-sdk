@@ -5,7 +5,7 @@ public:
 
 	struct Unknown Image_47; // 0x248 (8)
 
-	void UpdateCursorVisibility(); // Function UW-Radar_Cursor_Dummy.UW-Radar_Cursor_Dummy_C.UpdateCursorVisibility(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6E050>
+	void UpdateCursorVisibility(); // Function UW-Radar_Cursor_Dummy.UW-Radar_Cursor_Dummy_C.UpdateCursorVisibility(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
 };
 
 // Function UW-Radar_Cursor_Dummy.UW-Radar_Cursor_Dummy_C.UpdateCursorVisibility
