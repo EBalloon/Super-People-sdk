@@ -15,14 +15,14 @@
     PersistentLevel: 0x48   
     Levels: 0x198   
     PlayerController: 0x30  
-    PlayerCameraManager: 0x438  
+    PlayerCameraManager: 0x6C0
     AcknowledgedPawn: 0x428
-    PlayerState: 0x340  
-    RootComponent: 0x158    
+    PlayerState: 0x388  
+    RootComponent: 0x198   
     Mesh: 0x398 
-    RelativeLocation: 0x224
+    RelativeLocation: 0xB4
     PlayerName: 0x3f8
-    Health: 0x10e0 
+    Health: 0x3190 
     TeamIndex: 0x598 + 0xe8
 
 
