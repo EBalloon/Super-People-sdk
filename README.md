@@ -17,7 +17,7 @@
     PlayerController: 0x30  
     PlayerCameraManager: 0x6C0
     AcknowledgedPawn: 0x428
-    PlayerState: 0x388  
+    PlayerState: 0x340  
     RootComponent: 0x198   
     Mesh: 0x398 
     RelativeLocation: 0xB4
