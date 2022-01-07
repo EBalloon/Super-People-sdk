@@ -2,12 +2,12 @@
 
 ### Offsets
 
-    Uworld: 0x71A11B0
-    UObjects : 0x7058720
-    Gnames: 0x703FD40
-    GetBoneMatrix: 0x3EC0EE0
-    LineOfSightTo: 0x3EF1570
-    WorldToScreen: 0x3FA4030
+    Uworld: 0x74B5000
+    UObjects : 0x736C560
+    Gnames: 0x7353B80
+    GetBoneMatrix: 0x3ED4560
+    LineOfSightTo: 0x3F04C10
+    WorldToScreen: 0x3FB78D0
     Obs: DescNames: 0x67FDF50 (thx to #Rng Uziii & #PhysXCore)(www.unknowncheats.me/forum/3321945-post156.html)
     
     LocalPlayers: 0xb8  
@@ -15,15 +15,15 @@
     PersistentLevel: 0x48   
     Levels: 0x198   
     PlayerController: 0x30  
-    PlayerCameraManager: 0x6C0
-    AcknowledgedPawn: 0x428
-    PlayerState: 0x340  
-    RootComponent: 0x198   
-    Mesh: 0x398 
-    RelativeLocation: 0xB4
-    PlayerName: 0x3f8
-    Health: 0x3190 
-    TeamIndex: 0x598 + 0xe8
+    PlayerCameraManager: 0x550
+    AcknowledgedPawn: 0x410
+    PlayerState: 0x330 
+    RootComponent: 0xA0   
+    Mesh: 0x388
+    RelativeLocation: 0xDC
+    PlayerName: 0x3E8
+    Health: 0x29F8
+    TeamIndex: 0x588 + 0xe8
 
 
 ### Check Team
