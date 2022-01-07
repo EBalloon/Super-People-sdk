@@ -10,11 +10,11 @@ public:
 	struct Unknown Image_69; // 0x268 (8)
 	char NextScene : 0; // 0x270 (1)
 
-	void Destory(); // Function UW-CompanyLogo.UW-CompanyLogo_C.Destory(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void MoveNextScene(); // Function UW-CompanyLogo.UW-CompanyLogo_C.MoveNextScene(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void Construct(); // Function UW-CompanyLogo.UW-CompanyLogo_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void 鉹@t元_1(); // Function UW-CompanyLogo.UW-CompanyLogo_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void ExecuteUbergraph_UW-CompanyLogo(int32_t EntryPoint); // Function UW-CompanyLogo.UW-CompanyLogo_C.ExecuteUbergraph_UW-CompanyLogo(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Destory(); // Function UW-CompanyLogo.UW-CompanyLogo_C.Destory(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void MoveNextScene(); // Function UW-CompanyLogo.UW-CompanyLogo_C.MoveNextScene(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void Construct(); // Function UW-CompanyLogo.UW-CompanyLogo_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void 鉹@t元_1(); // Function UW-CompanyLogo.UW-CompanyLogo_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void ExecuteUbergraph_UW-CompanyLogo(int32_t EntryPoint); // Function UW-CompanyLogo.UW-CompanyLogo_C.ExecuteUbergraph_UW-CompanyLogo(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
 };
 
 // Function UW-CompanyLogo.UW-CompanyLogo_C.Destory

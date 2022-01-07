@@ -3,61 +3,61 @@ class UUW-Inventory_MaterialIconSlot_C : public UUW-Inventory_SlotBase_C {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x1360 (8)
-	struct Unknown Complete_ani; // 0x1368 (8)
-	struct Unknown Serching_ani; // 0x1370 (8)
-	struct Unknown Button; // 0x1378 (8)
-	struct Unknown IconBox; // 0x1380 (8)
-	struct Unknown Image; // 0x1388 (8)
-	struct Unknown Image_2; // 0x1390 (8)
-	struct Unknown Image_3; // 0x1398 (8)
-	struct Unknown Image_4; // 0x13A0 (8)
-	struct Unknown Image_5; // 0x13A8 (8)
-	struct Unknown Image_6; // 0x13B0 (8)
-	struct Unknown Image_7; // 0x13B8 (8)
-	struct Unknown Image_8; // 0x13C0 (8)
-	struct Unknown Image_9; // 0x13C8 (8)
-	struct Unknown Image_10; // 0x13D0 (8)
-	struct Unknown Image_149; // 0x13D8 (8)
-	struct Unknown Image_170; // 0x13E0 (8)
-	struct Unknown Image_253; // 0x13E8 (8)
-	struct Unknown Image_305; // 0x13F0 (8)
-	struct Unknown Image_Full; // 0x13F8 (8)
-	struct Unknown IMG_ItemIcon; // 0x1400 (8)
-	struct Unknown MaterialIcon; // 0x1408 (8)
-	struct Unknown MouseHover_2; // 0x1410 (8)
-	struct Unknown MouseHover_; // 0x1418 (8)
-	struct Unknown MousePress_2; // 0x1420 (8)
-	struct Unknown MousePress_; // 0x1428 (8)
-	struct Unknown Searching_; // 0x1430 (8)
-	struct Unknown Stroke; // 0x1438 (8)
-	struct Unknown Stroke_2; // 0x1440 (8)
-	struct Unknown Stroke_3; // 0x1448 (8)
-	struct Unknown Stroke_4; // 0x1450 (8)
-	struct Unknown PreHoveredWidget; // 0x1458 (8)
-	enum class Unknow PreDragType; // 0x1460 (1)
-	char Selected : 0; // 0x1461 (1)
-	int32_t NeedCount; // 0x1464 (4)
-	struct FName ItemKey; // 0x1468 (8)
-	struct Unknown SelectItem; // 0x1470 (16)
-	char BindSelectSearch : 0; // 0x1480 (1)
-	char EnableSearch : 0; // 0x1481 (1)
+	struct Unknown UberGraphFrame; // 0x1350 (8)
+	struct Unknown Complete_ani; // 0x1358 (8)
+	struct Unknown Serching_ani; // 0x1360 (8)
+	struct Unknown Button; // 0x1368 (8)
+	struct Unknown IconBox; // 0x1370 (8)
+	struct Unknown Image; // 0x1378 (8)
+	struct Unknown Image_2; // 0x1380 (8)
+	struct Unknown Image_3; // 0x1388 (8)
+	struct Unknown Image_4; // 0x1390 (8)
+	struct Unknown Image_5; // 0x1398 (8)
+	struct Unknown Image_6; // 0x13A0 (8)
+	struct Unknown Image_7; // 0x13A8 (8)
+	struct Unknown Image_8; // 0x13B0 (8)
+	struct Unknown Image_9; // 0x13B8 (8)
+	struct Unknown Image_10; // 0x13C0 (8)
+	struct Unknown Image_149; // 0x13C8 (8)
+	struct Unknown Image_170; // 0x13D0 (8)
+	struct Unknown Image_253; // 0x13D8 (8)
+	struct Unknown Image_305; // 0x13E0 (8)
+	struct Unknown Image_Full; // 0x13E8 (8)
+	struct Unknown IMG_ItemIcon; // 0x13F0 (8)
+	struct Unknown MaterialIcon; // 0x13F8 (8)
+	struct Unknown MouseHover_2; // 0x1400 (8)
+	struct Unknown MouseHover_; // 0x1408 (8)
+	struct Unknown MousePress_2; // 0x1410 (8)
+	struct Unknown MousePress_; // 0x1418 (8)
+	struct Unknown Searching_; // 0x1420 (8)
+	struct Unknown Stroke; // 0x1428 (8)
+	struct Unknown Stroke_2; // 0x1430 (8)
+	struct Unknown Stroke_3; // 0x1438 (8)
+	struct Unknown Stroke_4; // 0x1440 (8)
+	struct Unknown PreHoveredWidget; // 0x1448 (8)
+	enum class Unknow PreDragType; // 0x1450 (1)
+	char Selected : 0; // 0x1451 (1)
+	int32_t NeedCount; // 0x1454 (4)
+	struct FName ItemKey; // 0x1458 (8)
+	struct Unknown SelectItem; // 0x1460 (16)
+	char BindSelectSearch : 0; // 0x1470 (1)
+	char EnableSearch : 0; // 0x1471 (1)
 
-	enum class Unknow Get_Image_Full_Visibility_1(); // Function UW-Inventory_MaterialIconSlot.UW-Inventory_MaterialIconSlot_C.Get_Image_Full_Visibility_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void MouseEnterImpl(); // Function UW-Inventory_MaterialIconSlot.UW-Inventory_MaterialIconSlot_C.MouseEnterImpl(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SetMaterialInfo(struct FName ItemKey, int32_t Count, struct FName TopKey); // Function UW-Inventory_MaterialIconSlot.UW-Inventory_MaterialIconSlot_C.SetMaterialInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void BndEvt__Button_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-Inventory_MaterialIconSlot.UW-Inventory_MaterialIconSlot_C.BndEvt__Button_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void BndEvt__Button_K2Node_ComponentBoundEvent_1_OnButtonPressedEvent__DelegateSignature(); // Function UW-Inventory_MaterialIconSlot.UW-Inventory_MaterialIconSlot_C.BndEvt__Button_K2Node_ComponentBoundEvent_1_OnButtonPressedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void BndEvt__Button_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature(); // Function UW-Inventory_MaterialIconSlot.UW-Inventory_MaterialIconSlot_C.BndEvt__Button_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void BndEvt__Button_K2Node_ComponentBoundEvent_4_OnButtonHoverEvent__DelegateSignature(); // Function UW-Inventory_MaterialIconSlot.UW-Inventory_MaterialIconSlot_C.BndEvt__Button_K2Node_ComponentBoundEvent_4_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void Construct(); // Function UW-Inventory_MaterialIconSlot.UW-Inventory_MaterialIconSlot_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void Destruct(); // Function UW-Inventory_MaterialIconSlot.UW-Inventory_MaterialIconSlot_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void 鉹@t元_2(struct Unknown MaterialItemKey, char IsSelect); // Function UW-Inventory_MaterialIconSlot.UW-Inventory_MaterialIconSlot_C.鉹@t元_2(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-Inventory_MaterialIconSlot.UW-Inventory_MaterialIconSlot_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void Set Selecte(char Select); // Function UW-Inventory_MaterialIconSlot.UW-Inventory_MaterialIconSlot_C.Set Selecte(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void OnMouseLeave(struct Unknown& MouseEvent); // Function UW-Inventory_MaterialIconSlot.UW-Inventory_MaterialIconSlot_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void 鉹@t元_1(char EnableMaterialSearch); // Function UW-Inventory_MaterialIconSlot.UW-Inventory_MaterialIconSlot_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void ExecuteUbergraph_UW-Inventory_MaterialIconSlot(int32_t EntryPoint); // Function UW-Inventory_MaterialIconSlot.UW-Inventory_MaterialIconSlot_C.ExecuteUbergraph_UW-Inventory_MaterialIconSlot(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	enum class Unknow Get_Image_Full_Visibility_1(); // Function UW-Inventory_MaterialIconSlot.UW-Inventory_MaterialIconSlot_C.Get_Image_Full_Visibility_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void MouseEnterImpl(); // Function UW-Inventory_MaterialIconSlot.UW-Inventory_MaterialIconSlot_C.MouseEnterImpl(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetMaterialInfo(struct FName ItemKey, int32_t Count, struct FName TopKey); // Function UW-Inventory_MaterialIconSlot.UW-Inventory_MaterialIconSlot_C.SetMaterialInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void BndEvt__Button_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-Inventory_MaterialIconSlot.UW-Inventory_MaterialIconSlot_C.BndEvt__Button_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void BndEvt__Button_K2Node_ComponentBoundEvent_1_OnButtonPressedEvent__DelegateSignature(); // Function UW-Inventory_MaterialIconSlot.UW-Inventory_MaterialIconSlot_C.BndEvt__Button_K2Node_ComponentBoundEvent_1_OnButtonPressedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void BndEvt__Button_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature(); // Function UW-Inventory_MaterialIconSlot.UW-Inventory_MaterialIconSlot_C.BndEvt__Button_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void BndEvt__Button_K2Node_ComponentBoundEvent_4_OnButtonHoverEvent__DelegateSignature(); // Function UW-Inventory_MaterialIconSlot.UW-Inventory_MaterialIconSlot_C.BndEvt__Button_K2Node_ComponentBoundEvent_4_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void Construct(); // Function UW-Inventory_MaterialIconSlot.UW-Inventory_MaterialIconSlot_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void Destruct(); // Function UW-Inventory_MaterialIconSlot.UW-Inventory_MaterialIconSlot_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void 鉹@t元_2(struct Unknown MaterialItemKey, char IsSelect); // Function UW-Inventory_MaterialIconSlot.UW-Inventory_MaterialIconSlot_C.鉹@t元_2(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-Inventory_MaterialIconSlot.UW-Inventory_MaterialIconSlot_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void Set Selecte(char Select); // Function UW-Inventory_MaterialIconSlot.UW-Inventory_MaterialIconSlot_C.Set Selecte(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void OnMouseLeave(struct Unknown& MouseEvent); // Function UW-Inventory_MaterialIconSlot.UW-Inventory_MaterialIconSlot_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void 鉹@t元_1(char EnableMaterialSearch); // Function UW-Inventory_MaterialIconSlot.UW-Inventory_MaterialIconSlot_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void ExecuteUbergraph_UW-Inventory_MaterialIconSlot(int32_t EntryPoint); // Function UW-Inventory_MaterialIconSlot.UW-Inventory_MaterialIconSlot_C.ExecuteUbergraph_UW-Inventory_MaterialIconSlot(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
 };
 
 // Function UW-Inventory_MaterialIconSlot.UW-Inventory_MaterialIconSlot_C.Get_Image_Full_Visibility_1

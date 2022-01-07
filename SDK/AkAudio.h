@@ -441,13 +441,13 @@ class AAkAcousticPortal : public AVolume {
 
 public:
 
-	enum class Unknow InitialState; // 0x348 (1)
-	float ObstructionRefreshInterval; // 0x34C (4)
-	char ObstructionCollisionChannel; // 0x350 (1)
+	enum class Unknow InitialState; // 0x338 (1)
+	float ObstructionRefreshInterval; // 0x33C (4)
+	char ObstructionCollisionChannel; // 0x340 (1)
 
-	void OpenPortal(); // Function AkAudio.AkAcousticPortal.OpenPortal(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1609160>
-	enum class Unknow GetCurrentState(); // Function AkAudio.AkAcousticPortal.GetCurrentState(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1608D30>
-	void ClosePortal(); // Function AkAudio.AkAcousticPortal.ClosePortal(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1608C20>
+	void OpenPortal(); // Function AkAudio.AkAcousticPortal.OpenPortal(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1610440>
+	enum class Unknow GetCurrentState(); // Function AkAudio.AkAcousticPortal.GetCurrentState(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1610010>
+	void ClosePortal(); // Function AkAudio.AkAcousticPortal.ClosePortal(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x160FF00>
 };
 
 // Class AkAudio.AkAudioType
@@ -464,13 +464,13 @@ class AAkAmbientSound : public UActor {
 
 public:
 
-	struct Unknown AkAudioEvent; // 0x310 (8)
-	struct Unknown AkComponent; // 0x318 (8)
-	char StopWhenOwnerIsDestroyed : 0; // 0x320 (1)
-	char AutoPost : 0; // 0x321 (1)
+	struct Unknown AkAudioEvent; // 0x300 (8)
+	struct Unknown AkComponent; // 0x308 (8)
+	char StopWhenOwnerIsDestroyed : 0; // 0x310 (1)
+	char AutoPost : 0; // 0x311 (1)
 
-	void StopAmbientSound(); // Function AkAudio.AkAmbientSound.StopAmbientSound(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x160A3A0>
-	void StartAmbientSound(); // Function AkAudio.AkAmbientSound.StartAmbientSound(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x160A380>
+	void StopAmbientSound(); // Function AkAudio.AkAmbientSound.StopAmbientSound(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1611680>
+	void StartAmbientSound(); // Function AkAudio.AkAmbientSound.StartAmbientSound(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1611660>
 };
 
 // Class AkAudio.AkAndroidInitializationSettings
@@ -482,7 +482,7 @@ public:
 	struct Unknown CommunicationSettings; // 0x90 (40)
 	struct Unknown AdvancedSettings; // 0xB8 (64)
 
-	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkAndroidInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16090E0>
+	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkAndroidInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16103C0>
 };
 
 // Class AkAudio.AkAssetData
@@ -577,10 +577,10 @@ public:
 	float MinimumDuration; // 0xC0 (4)
 	float MaximumDuration; // 0xC4 (4)
 
-	float GetMinimumDuration(); // Function AkAudio.AkAudioEvent.GetMinimumDuration(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1608DF0>
-	float GetMaximumDuration(); // Function AkAudio.AkAudioEvent.GetMaximumDuration(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1608DC0>
-	float GetMaxAttenuationRadius(); // Function AkAudio.AkAudioEvent.GetMaxAttenuationRadius(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1608D90>
-	char GetIsInfinite(); // Function AkAudio.AkAudioEvent.GetIsInfinite(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1608D60>
+	float GetMinimumDuration(); // Function AkAudio.AkAudioEvent.GetMinimumDuration(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16100D0>
+	float GetMaximumDuration(); // Function AkAudio.AkAudioEvent.GetMaximumDuration(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16100A0>
+	float GetMaxAttenuationRadius(); // Function AkAudio.AkAudioEvent.GetMaxAttenuationRadius(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1610070>
+	char GetIsInfinite(); // Function AkAudio.AkAudioEvent.GetIsInfinite(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1610040>
 };
 
 // Class AkAudio.AkGameObject
@@ -588,15 +588,15 @@ class UAkGameObject : public USceneComponent {
 
 public:
 
-	struct Unknown AkAudioEvent; // 0x230 (8)
-	struct FString EventName; // 0x238 (16)
-	char bAutoRegisterWithWwise : 0; // 0x248 (1)
+	struct Unknown AkAudioEvent; // 0x228 (8)
+	struct FString EventName; // 0x230 (16)
+	char bAutoRegisterWithWwise : 0; // 0x240 (1)
 
-	void Stop(); // Function AkAudio.AkGameObject.Stop(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x160F3C0>
-	void PostAssociatedAkEventAsync(struct Unknown WorldContextObject, int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<Unknown>& ExternalSources, struct Unknown LatentInfo, int32_t& PlayingID); // Function AkAudio.AkGameObject.PostAssociatedAkEventAsync(BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x160D380>
-	int32_t PostAssociatedAkEvent(int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<Unknown>& ExternalSources); // Function AkAudio.AkGameObject.PostAssociatedAkEvent(BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x160D1E0>
-	void PostAkEventAsync(struct Unknown WorldContextObject, struct Unknown AkEvent, int32_t& PlayingID, int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<Unknown>& ExternalSources, struct Unknown LatentInfo); // Function AkAudio.AkGameObject.PostAkEventAsync(BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x160CA40>
-	int32_t PostAkEvent(struct Unknown AkEvent, int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<Unknown>& ExternalSources, struct FString in_EventName); // Function AkAudio.AkGameObject.PostAkEvent(BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x160C810>
+	void Stop(); // Function AkAudio.AkGameObject.Stop(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16166B0>
+	void PostAssociatedAkEventAsync(struct Unknown WorldContextObject, int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<Unknown>& ExternalSources, struct Unknown LatentInfo, int32_t& PlayingID); // Function AkAudio.AkGameObject.PostAssociatedAkEventAsync(BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1614670>
+	int32_t PostAssociatedAkEvent(int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<Unknown>& ExternalSources); // Function AkAudio.AkGameObject.PostAssociatedAkEvent(BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16144D0>
+	void PostAkEventAsync(struct Unknown WorldContextObject, struct Unknown AkEvent, int32_t& PlayingID, int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<Unknown>& ExternalSources, struct Unknown LatentInfo); // Function AkAudio.AkGameObject.PostAkEventAsync(BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1613D30>
+	int32_t PostAkEvent(struct Unknown AkEvent, int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<Unknown>& ExternalSources, struct FString in_EventName); // Function AkAudio.AkGameObject.PostAkEvent(BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1613B00>
 };
 
 // Class AkAudio.AkComponent
@@ -604,48 +604,48 @@ class UAkComponent : public UAkGameObject {
 
 public:
 
-	char bUseSpatialAudio : 0; // 0x250 (1)
-	char OcclusionCollisionChannel; // 0x258 (1)
-	char EnableSpotReflectors : 0; // 0x25C (1)
-	struct Unknown EarlyReflectionAuxBus; // 0x260 (8)
-	struct FString EarlyReflectionAuxBusName; // 0x268 (16)
-	int32_t EarlyReflectionOrder; // 0x278 (4)
-	float EarlyReflectionBusSendGain; // 0x27C (4)
-	float EarlyReflectionMaxPathLength; // 0x280 (4)
-	float roomReverbAuxBusGain; // 0x284 (4)
-	int32_t diffractionMaxEdges; // 0x288 (4)
-	int32_t diffractionMaxPaths; // 0x28C (4)
-	float diffractionMaxPathLength; // 0x290 (4)
-	char DrawFirstOrderReflections : 0; // 0x294 (1)
-	char DrawSecondOrderReflections : 0; // 0x294 (1)
-	char DrawHigherOrderReflections : 0; // 0x294 (1)
-	char DrawDiffraction : 0; // 0x294 (1)
-	char StopWhenOwnerDestroyed : 0; // 0x298 (1)
-	float RoomIterationInterval; // 0x29C (4)
-	float AttenuationScalingFactor; // 0x2A0 (4)
-	float OcclusionRefreshInterval; // 0x2A4 (4)
-	char bUseReverbVolumes : 0; // 0x2A8 (1)
-	struct TSet<Unknown> Listeners; // 0x398 (80)
-	struct TSet<Unknown> Emitters; // 0x3E8 (80)
+	char bUseSpatialAudio : 0; // 0x248 (1)
+	char OcclusionCollisionChannel; // 0x250 (1)
+	char EnableSpotReflectors : 0; // 0x254 (1)
+	struct Unknown EarlyReflectionAuxBus; // 0x258 (8)
+	struct FString EarlyReflectionAuxBusName; // 0x260 (16)
+	int32_t EarlyReflectionOrder; // 0x270 (4)
+	float EarlyReflectionBusSendGain; // 0x274 (4)
+	float EarlyReflectionMaxPathLength; // 0x278 (4)
+	float roomReverbAuxBusGain; // 0x27C (4)
+	int32_t diffractionMaxEdges; // 0x280 (4)
+	int32_t diffractionMaxPaths; // 0x284 (4)
+	float diffractionMaxPathLength; // 0x288 (4)
+	char DrawFirstOrderReflections : 0; // 0x28C (1)
+	char DrawSecondOrderReflections : 0; // 0x28C (1)
+	char DrawHigherOrderReflections : 0; // 0x28C (1)
+	char DrawDiffraction : 0; // 0x28C (1)
+	char StopWhenOwnerDestroyed : 0; // 0x290 (1)
+	float RoomIterationInterval; // 0x294 (4)
+	float AttenuationScalingFactor; // 0x298 (4)
+	float OcclusionRefreshInterval; // 0x29C (4)
+	char bUseReverbVolumes : 0; // 0x2A0 (1)
+	struct TSet<Unknown> Listeners; // 0x390 (80)
+	struct TSet<Unknown> Emitters; // 0x3E0 (80)
 
-	void UseReverbVolumes(char inUseReverbVolumes); // Function AkAudio.AkComponent.UseReverbVolumes(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x160A5A0>
-	void UseEarlyReflections(struct Unknown AuxBus, int32_t Order, float BusSendGain, float MaxPathLength, char SpotReflectors, struct FString AuxBusName); // Function AkAudio.AkComponent.UseEarlyReflections(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x160A3C0>
-	void SetSwitch(struct Unknown SwitchValue, struct FString SwitchGroup, struct FString SwitchState); // Function AkAudio.AkComponent.SetSwitch(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x160A1B0>
-	void SetStopWhenOwnerDestroyed(char bStopWhenOwnerDestroyed); // Function AkAudio.AkComponent.SetStopWhenOwnerDestroyed(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x160A120>
-	void SetRTPCValue(struct Unknown RTPCValue, float Value, int32_t InterpolationTimeMs, struct FString RTPC); // Function AkAudio.AkComponent.SetRTPCValue(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1609F70>
-	void SetOutputBusVolume(float BusVolume); // Function AkAudio.AkComponent.SetOutputBusVolume(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1609EF0>
-	void SetListeners(struct TArray<Unknown>& Listeners); // Function AkAudio.AkComponent.SetListeners(Final|BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1609E40>
-	void SetEarlyReflectionsVolume(float SendVolume); // Function AkAudio.AkComponent.SetEarlyReflectionsVolume(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1609D30>
-	void SetEarlyReflectionsAuxBus(struct FString AuxBusName); // Function AkAudio.AkComponent.SetEarlyReflectionsAuxBus(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1609C90>
-	void SetAttenuationScalingFactor(float Value); // Function AkAudio.AkComponent.SetAttenuationScalingFactor(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1609B90>
-	void PostTrigger(struct Unknown TriggerValue, struct FString Trigger); // Function AkAudio.AkComponent.PostTrigger(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1609920>
-	void PostAssociatedAkEventAndWaitForEndAsync(int32_t& PlayingID, struct TArray<Unknown>& ExternalSources, struct Unknown LatentInfo); // Function AkAudio.AkComponent.PostAssociatedAkEventAndWaitForEndAsync(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1609750>
-	int32_t PostAssociatedAkEventAndWaitForEnd(struct TArray<Unknown>& ExternalSources, struct Unknown LatentInfo); // Function AkAudio.AkComponent.PostAssociatedAkEventAndWaitForEnd(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16095F0>
-	int32_t PostAkEventByName(struct FString in_EventName); // Function AkAudio.AkComponent.PostAkEventByName(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1609540>
-	void PostAkEventAndWaitForEndAsync(struct Unknown AkEvent, int32_t& PlayingID, struct TArray<Unknown>& ExternalSources, struct Unknown LatentInfo); // Function AkAudio.AkComponent.PostAkEventAndWaitForEndAsync(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1609370>
-	int32_t PostAkEventAndWaitForEnd(struct Unknown AkEvent, struct FString in_EventName, struct TArray<Unknown>& ExternalSources, struct Unknown LatentInfo); // Function AkAudio.AkComponent.PostAkEventAndWaitForEnd(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1609180>
-	void GetRTPCValue(struct Unknown RTPCValue, enum class Unknow InputValueType, float& Value, enum class Unknow& OutputValueType, struct FString RTPC, int32_t PlayingID); // Function AkAudio.AkComponent.GetRTPCValue(Final|BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1608E20>
-	float GetAttenuationRadius(); // Function AkAudio.AkComponent.GetAttenuationRadius(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1608CD0>
+	void UseReverbVolumes(char inUseReverbVolumes); // Function AkAudio.AkComponent.UseReverbVolumes(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1611880>
+	void UseEarlyReflections(struct Unknown AuxBus, int32_t Order, float BusSendGain, float MaxPathLength, char SpotReflectors, struct FString AuxBusName); // Function AkAudio.AkComponent.UseEarlyReflections(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16116A0>
+	void SetSwitch(struct Unknown SwitchValue, struct FString SwitchGroup, struct FString SwitchState); // Function AkAudio.AkComponent.SetSwitch(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1611490>
+	void SetStopWhenOwnerDestroyed(char bStopWhenOwnerDestroyed); // Function AkAudio.AkComponent.SetStopWhenOwnerDestroyed(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1611400>
+	void SetRTPCValue(struct Unknown RTPCValue, float Value, int32_t InterpolationTimeMs, struct FString RTPC); // Function AkAudio.AkComponent.SetRTPCValue(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1611250>
+	void SetOutputBusVolume(float BusVolume); // Function AkAudio.AkComponent.SetOutputBusVolume(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16111D0>
+	void SetListeners(struct TArray<Unknown>& Listeners); // Function AkAudio.AkComponent.SetListeners(Final|BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1611120>
+	void SetEarlyReflectionsVolume(float SendVolume); // Function AkAudio.AkComponent.SetEarlyReflectionsVolume(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1611010>
+	void SetEarlyReflectionsAuxBus(struct FString AuxBusName); // Function AkAudio.AkComponent.SetEarlyReflectionsAuxBus(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1610F70>
+	void SetAttenuationScalingFactor(float Value); // Function AkAudio.AkComponent.SetAttenuationScalingFactor(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1610E70>
+	void PostTrigger(struct Unknown TriggerValue, struct FString Trigger); // Function AkAudio.AkComponent.PostTrigger(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1610C00>
+	void PostAssociatedAkEventAndWaitForEndAsync(int32_t& PlayingID, struct TArray<Unknown>& ExternalSources, struct Unknown LatentInfo); // Function AkAudio.AkComponent.PostAssociatedAkEventAndWaitForEndAsync(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1610A30>
+	int32_t PostAssociatedAkEventAndWaitForEnd(struct TArray<Unknown>& ExternalSources, struct Unknown LatentInfo); // Function AkAudio.AkComponent.PostAssociatedAkEventAndWaitForEnd(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16108D0>
+	int32_t PostAkEventByName(struct FString in_EventName); // Function AkAudio.AkComponent.PostAkEventByName(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1610820>
+	void PostAkEventAndWaitForEndAsync(struct Unknown AkEvent, int32_t& PlayingID, struct TArray<Unknown>& ExternalSources, struct Unknown LatentInfo); // Function AkAudio.AkComponent.PostAkEventAndWaitForEndAsync(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1610650>
+	int32_t PostAkEventAndWaitForEnd(struct Unknown AkEvent, struct FString in_EventName, struct TArray<Unknown>& ExternalSources, struct Unknown LatentInfo); // Function AkAudio.AkComponent.PostAkEventAndWaitForEnd(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1610460>
+	void GetRTPCValue(struct Unknown RTPCValue, enum class Unknow InputValueType, float& Value, enum class Unknow& OutputValueType, struct FString RTPC, int32_t PlayingID); // Function AkAudio.AkComponent.GetRTPCValue(Final|BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1610100>
+	float GetAttenuationRadius(); // Function AkAudio.AkComponent.GetAttenuationRadius(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x160FFB0>
 };
 
 // Class AkAudio.AkAuxBus
@@ -672,15 +672,15 @@ public:
 	struct FMulticastInlineDelegate OnItemDropped; // 0xAD0 (16)
 	struct FMulticastInlineDelegate OnPropertyDropped; // 0xAE0 (16)
 
-	void SetIsChecked(char InIsChecked); // Function AkAudio.AkCheckBox.SetIsChecked(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1609DB0>
-	void SetCheckedState(enum class Unknow InCheckedState); // Function AkAudio.AkCheckBox.SetCheckedState(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1609C10>
-	void SetAkItemId(struct Unknown& ItemId); // Function AkAudio.AkCheckBox.SetAkItemId(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1609AF0>
-	void SetAkBoolProperty(struct FString ItemProperty); // Function AkAudio.AkCheckBox.SetAkBoolProperty(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1609A50>
-	char IsPressed(); // Function AkAudio.AkCheckBox.IsPressed(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16090B0>
-	char IsChecked(); // Function AkAudio.AkCheckBox.IsChecked(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1609080>
-	enum class Unknow GetCheckedState(); // Function AkAudio.AkCheckBox.GetCheckedState(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1608D00>
-	struct FString GetAkProperty(); // Function AkAudio.AkCheckBox.GetAkProperty(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1608C80>
-	struct Unknown GetAkItemId(); // Function AkAudio.AkCheckBox.GetAkItemId(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1608C40>
+	void SetIsChecked(char InIsChecked); // Function AkAudio.AkCheckBox.SetIsChecked(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1611090>
+	void SetCheckedState(enum class Unknow InCheckedState); // Function AkAudio.AkCheckBox.SetCheckedState(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1610EF0>
+	void SetAkItemId(struct Unknown& ItemId); // Function AkAudio.AkCheckBox.SetAkItemId(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1610DD0>
+	void SetAkBoolProperty(struct FString ItemProperty); // Function AkAudio.AkCheckBox.SetAkBoolProperty(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1610D30>
+	char IsPressed(); // Function AkAudio.AkCheckBox.IsPressed(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1610390>
+	char IsChecked(); // Function AkAudio.AkCheckBox.IsChecked(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1610360>
+	enum class Unknow GetCheckedState(); // Function AkAudio.AkCheckBox.GetCheckedState(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x160FFE0>
+	struct FString GetAkProperty(); // Function AkAudio.AkCheckBox.GetAkProperty(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x160FF60>
+	struct Unknown GetAkItemId(); // Function AkAudio.AkCheckBox.GetAkItemId(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x160FF20>
 };
 
 // Class AkAudio.AkFolder
@@ -747,19 +747,19 @@ class UAkGeometryComponent : public USceneComponent {
 
 public:
 
-	enum class Unknow MeshType; // 0x230 (1)
-	int32_t LOD; // 0x234 (4)
-	float WeldingThreshold; // 0x238 (4)
-	struct TMap<Unknown, Unknown> StaticMeshSurfaceOverride; // 0x240 (80)
-	struct Unknown CollisionMeshSurfaceOverride; // 0x290 (16)
-	char bEnableDiffraction : 0; // 0x2A0 (1)
-	char bEnableDiffractionOnBoundaryEdges : 0; // 0x2A0 (1)
-	struct Unknown AssociatedRoom; // 0x2A8 (8)
-	struct Unknown GeometryData; // 0x2C0 (80)
+	enum class Unknow MeshType; // 0x228 (1)
+	int32_t LOD; // 0x22C (4)
+	float WeldingThreshold; // 0x230 (4)
+	struct TMap<Unknown, Unknown> StaticMeshSurfaceOverride; // 0x238 (80)
+	struct Unknown CollisionMeshSurfaceOverride; // 0x288 (16)
+	char bEnableDiffraction : 0; // 0x298 (1)
+	char bEnableDiffractionOnBoundaryEdges : 0; // 0x298 (1)
+	struct Unknown AssociatedRoom; // 0x2A0 (8)
+	struct Unknown GeometryData; // 0x2B8 (80)
 
-	void UpdateGeometry(); // Function AkAudio.AkGeometryComponent.UpdateGeometry(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1614CA0>
-	void RemoveGeometry(); // Function AkAudio.AkGeometryComponent.RemoveGeometry(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1614C80>
-	void ConvertMesh(); // Function AkAudio.AkGeometryComponent.ConvertMesh(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1614680>
+	void UpdateGeometry(); // Function AkAudio.AkGeometryComponent.UpdateGeometry(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x161BEC0>
+	void RemoveGeometry(); // Function AkAudio.AkGeometryComponent.RemoveGeometry(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x161BEA0>
+	void ConvertMesh(); // Function AkAudio.AkGeometryComponent.ConvertMesh(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x161B8A0>
 };
 
 // Class AkAudio.AkGroupValue
@@ -780,7 +780,7 @@ public:
 	struct Unknown CommunicationSettings; // 0x90 (40)
 	struct Unknown AdvancedSettings; // 0xB8 (64)
 
-	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkHololensInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16090E0>
+	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkHololensInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16103C0>
 };
 
 // Class AkAudio.AkInitBankAssetData
@@ -819,9 +819,9 @@ public:
 	struct FMulticastInlineDelegate OnSelectionChanged; // 0x108 (16)
 	struct FMulticastInlineDelegate OnPropertyDragged; // 0x118 (16)
 
-	void SetSearchText(struct FString newText); // Function AkAudio.AkItemBoolProperties.SetSearchText(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x161B8E0>
-	struct FString GetSelectedProperty(); // Function AkAudio.AkItemBoolProperties.GetSelectedProperty(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x161B760>
-	struct FString GetSearchText(); // Function AkAudio.AkItemBoolProperties.GetSearchText(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x161B6E0>
+	void SetSearchText(struct FString newText); // Function AkAudio.AkItemBoolProperties.SetSearchText(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1622AB0>
+	struct FString GetSelectedProperty(); // Function AkAudio.AkItemBoolProperties.GetSelectedProperty(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1622930>
+	struct FString GetSearchText(); // Function AkAudio.AkItemBoolProperties.GetSearchText(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16228B0>
 };
 
 // Class AkAudio.AkItemProperties
@@ -832,9 +832,9 @@ public:
 	struct FMulticastInlineDelegate OnSelectionChanged; // 0x108 (16)
 	struct FMulticastInlineDelegate OnPropertyDragged; // 0x118 (16)
 
-	void SetSearchText(struct FString newText); // Function AkAudio.AkItemProperties.SetSearchText(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x161B8E0>
-	struct FString GetSelectedProperty(); // Function AkAudio.AkItemProperties.GetSelectedProperty(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x161B7E0>
-	struct FString GetSearchText(); // Function AkAudio.AkItemProperties.GetSearchText(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x161B6E0>
+	void SetSearchText(struct FString newText); // Function AkAudio.AkItemProperties.SetSearchText(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1622AB0>
+	struct FString GetSelectedProperty(); // Function AkAudio.AkItemProperties.GetSelectedProperty(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16229B0>
+	struct FString GetSearchText(); // Function AkAudio.AkItemProperties.GetSearchText(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16228B0>
 };
 
 // Class AkAudio.AkLateReverbComponent
@@ -842,13 +842,13 @@ class UAkLateReverbComponent : public USceneComponent {
 
 public:
 
-	char bEnable : 0; // 0x230 (1)
-	struct Unknown AuxBus; // 0x238 (8)
-	struct FString AuxBusName; // 0x240 (16)
-	float SendLevel; // 0x250 (4)
-	float FadeRate; // 0x254 (4)
-	float Priority; // 0x258 (4)
-	struct Unknown NextLowerPriorityComponent; // 0x260 (8)
+	char bEnable : 0; // 0x228 (1)
+	struct Unknown AuxBus; // 0x230 (8)
+	struct FString AuxBusName; // 0x238 (16)
+	float SendLevel; // 0x248 (4)
+	float FadeRate; // 0x24C (4)
+	float Priority; // 0x250 (4)
+	struct Unknown NextLowerPriorityComponent; // 0x258 (8)
 };
 
 // Class AkAudio.AkLinuxInitializationSettings
@@ -860,7 +860,7 @@ public:
 	struct Unknown CommunicationSettings; // 0x90 (40)
 	struct Unknown AdvancedSettings; // 0xB8 (56)
 
-	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkLinuxInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16090E0>
+	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkLinuxInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16103C0>
 };
 
 // Class AkAudio.AkLuminInitializationSettings
@@ -872,7 +872,7 @@ public:
 	struct Unknown CommunicationSettings; // 0x90 (40)
 	struct Unknown AdvancedSettings; // 0xB8 (56)
 
-	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkLuminInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16090E0>
+	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkLuminInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16103C0>
 };
 
 // Class AkAudio.AkMacInitializationSettings
@@ -884,7 +884,7 @@ public:
 	struct Unknown CommunicationSettings; // 0x90 (40)
 	struct Unknown AdvancedSettings; // 0xB8 (56)
 
-	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkMacInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16090E0>
+	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkMacInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16103C0>
 };
 
 // Class AkAudio.AkMediaAssetData
@@ -916,7 +916,7 @@ public:
 	struct Unknown CommunicationSettings; // 0x88 (40)
 	struct Unknown AdvancedSettings; // 0xB0 (64)
 
-	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkPS4InitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x161B860>
+	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkPS4InitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1622A30>
 };
 
 // Class AkAudio.AkReverbVolume
@@ -924,13 +924,13 @@ class AAkReverbVolume : public AVolume {
 
 public:
 
-	char bEnabled : 0; // 0x348 (1)
-	struct Unknown AuxBus; // 0x350 (8)
-	struct FString AuxBusName; // 0x358 (16)
-	float SendLevel; // 0x368 (4)
-	float FadeRate; // 0x36C (4)
-	float Priority; // 0x370 (4)
-	struct Unknown LateReverbComponent; // 0x378 (8)
+	char bEnabled : 0; // 0x338 (1)
+	struct Unknown AuxBus; // 0x340 (8)
+	struct FString AuxBusName; // 0x348 (16)
+	float SendLevel; // 0x358 (4)
+	float FadeRate; // 0x35C (4)
+	float Priority; // 0x360 (4)
+	struct Unknown LateReverbComponent; // 0x368 (8)
 };
 
 // Class AkAudio.AkRoomComponent
@@ -938,12 +938,12 @@ class UAkRoomComponent : public UAkGameObject {
 
 public:
 
-	char bEnable : 0; // 0x250 (1)
-	struct Unknown NextLowerPriorityComponent; // 0x258 (8)
-	float Priority; // 0x260 (4)
-	float WallOcclusion; // 0x264 (4)
-	float AuxSendLevel; // 0x268 (4)
-	char AutoPost : 0; // 0x26C (1)
+	char bEnable : 0; // 0x248 (1)
+	struct Unknown NextLowerPriorityComponent; // 0x250 (8)
+	float Priority; // 0x258 (4)
+	float WallOcclusion; // 0x25C (4)
+	float AuxSendLevel; // 0x260 (4)
+	char AutoPost : 0; // 0x264 (1)
 };
 
 // Class AkAudio.AkSettings
@@ -1010,17 +1010,17 @@ public:
 	struct FMulticastInlineDelegate OnItemDropped; // 0x4F0 (16)
 	struct FMulticastInlineDelegate OnPropertyDropped; // 0x500 (16)
 
-	void SetValue(float InValue); // Function AkAudio.AkSlider.SetValue(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x161FAE0>
-	void SetStepSize(float InValue); // Function AkAudio.AkSlider.SetStepSize(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x161F990>
-	void SetSliderHandleColor(struct Unknown InValue); // Function AkAudio.AkSlider.SetSliderHandleColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x161F910>
-	void SetSliderBarColor(struct Unknown InValue); // Function AkAudio.AkSlider.SetSliderBarColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x161F890>
-	void SetLocked(char InValue); // Function AkAudio.AkSlider.SetLocked(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x161F800>
-	void SetIndentHandle(char InValue); // Function AkAudio.AkSlider.SetIndentHandle(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x161F770>
-	void SetAkSliderItemProperty(struct FString ItemProperty); // Function AkAudio.AkSlider.SetAkSliderItemProperty(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x161F6D0>
-	void SetAkSliderItemId(struct Unknown& ItemId); // Function AkAudio.AkSlider.SetAkSliderItemId(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x161F630>
-	float GetValue(); // Function AkAudio.AkSlider.GetValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x161F460>
-	struct FString GetAkSliderItemProperty(); // Function AkAudio.AkSlider.GetAkSliderItemProperty(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x161F380>
-	struct Unknown GetAkSliderItemId(); // Function AkAudio.AkSlider.GetAkSliderItemId(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x161F340>
+	void SetValue(float InValue); // Function AkAudio.AkSlider.SetValue(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1626C80>
+	void SetStepSize(float InValue); // Function AkAudio.AkSlider.SetStepSize(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1626B30>
+	void SetSliderHandleColor(struct Unknown InValue); // Function AkAudio.AkSlider.SetSliderHandleColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1626AB0>
+	void SetSliderBarColor(struct Unknown InValue); // Function AkAudio.AkSlider.SetSliderBarColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1626A30>
+	void SetLocked(char InValue); // Function AkAudio.AkSlider.SetLocked(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16269A0>
+	void SetIndentHandle(char InValue); // Function AkAudio.AkSlider.SetIndentHandle(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1626910>
+	void SetAkSliderItemProperty(struct FString ItemProperty); // Function AkAudio.AkSlider.SetAkSliderItemProperty(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1626870>
+	void SetAkSliderItemId(struct Unknown& ItemId); // Function AkAudio.AkSlider.SetAkSliderItemId(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16267D0>
+	float GetValue(); // Function AkAudio.AkSlider.GetValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1626600>
+	struct FString GetAkSliderItemProperty(); // Function AkAudio.AkSlider.GetAkSliderItemProperty(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1626520>
+	struct Unknown GetAkSliderItemId(); // Function AkAudio.AkSlider.GetAkSliderItemId(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16264E0>
 };
 
 // Class AkAudio.AkSpatialAudioVolume
@@ -1028,9 +1028,9 @@ class AAkSpatialAudioVolume : public AVolume {
 
 public:
 
-	struct Unknown SurfaceReflectorSet; // 0x348 (8)
-	struct Unknown LateReverb; // 0x350 (8)
-	struct Unknown Room; // 0x358 (8)
+	struct Unknown SurfaceReflectorSet; // 0x338 (8)
+	struct Unknown LateReverb; // 0x340 (8)
+	struct Unknown Room; // 0x348 (8)
 };
 
 // Class AkAudio.AkSpotReflector
@@ -1038,11 +1038,11 @@ class AAkSpotReflector : public UActor {
 
 public:
 
-	struct Unknown EarlyReflectionAuxBus; // 0x310 (8)
-	struct FString EarlyReflectionAuxBusName; // 0x318 (16)
-	struct Unknown AcousticTexture; // 0x328 (8)
-	float DistanceScalingFactor; // 0x330 (4)
-	float Level; // 0x334 (4)
+	struct Unknown EarlyReflectionAuxBus; // 0x300 (8)
+	struct FString EarlyReflectionAuxBusName; // 0x308 (16)
+	struct Unknown AcousticTexture; // 0x318 (8)
+	float DistanceScalingFactor; // 0x320 (4)
+	float Level; // 0x324 (4)
 };
 
 // Class AkAudio.AkSurfaceReflectorSetComponent
@@ -1050,15 +1050,15 @@ class UAkSurfaceReflectorSetComponent : public USceneComponent {
 
 public:
 
-	char bEnableSurfaceReflectors : 0; // 0x230 (1)
-	struct TArray<Unknown> AcousticPolys; // 0x238 (16)
-	char bEnableDiffraction : 0; // 0x248 (1)
-	char bEnableDiffractionOnBoundaryEdges : 0; // 0x248 (1)
-	struct Unknown AssociatedRoom; // 0x250 (8)
+	char bEnableSurfaceReflectors : 0; // 0x228 (1)
+	struct TArray<Unknown> AcousticPolys; // 0x230 (16)
+	char bEnableDiffraction : 0; // 0x240 (1)
+	char bEnableDiffractionOnBoundaryEdges : 0; // 0x240 (1)
+	struct Unknown AssociatedRoom; // 0x248 (8)
 
-	void UpdateSurfaceReflectorSet(); // Function AkAudio.AkSurfaceReflectorSetComponent.UpdateSurfaceReflectorSet(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x161FF00>
-	void SendSurfaceReflectorSet(); // Function AkAudio.AkSurfaceReflectorSetComponent.SendSurfaceReflectorSet(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x161F610>
-	void RemoveSurfaceReflectorSet(); // Function AkAudio.AkSurfaceReflectorSetComponent.RemoveSurfaceReflectorSet(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x161F5F0>
+	void UpdateSurfaceReflectorSet(); // Function AkAudio.AkSurfaceReflectorSetComponent.UpdateSurfaceReflectorSet(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16270A0>
+	void SendSurfaceReflectorSet(); // Function AkAudio.AkSurfaceReflectorSetComponent.SendSurfaceReflectorSet(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16267B0>
+	void RemoveSurfaceReflectorSet(); // Function AkAudio.AkSurfaceReflectorSetComponent.RemoveSurfaceReflectorSet(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1626790>
 };
 
 // Class AkAudio.AkSwitchInitializationSettings
@@ -1070,7 +1070,7 @@ public:
 	struct Unknown CommunicationSettings; // 0x90 (40)
 	struct Unknown AdvancedSettings; // 0xB8 (56)
 
-	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkSwitchInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16090E0>
+	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkSwitchInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16103C0>
 };
 
 // Class AkAudio.AkTVOSInitializationSettings
@@ -1093,7 +1093,7 @@ public:
 	struct Unknown CommunicationSettings; // 0x90 (40)
 	struct Unknown AdvancedSettings; // 0xB8 (64)
 
-	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkWindowsInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16090E0>
+	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkWindowsInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16103C0>
 };
 
 // Class AkAudio.AkWwiseTree
@@ -1104,9 +1104,9 @@ public:
 	struct FMulticastInlineDelegate OnSelectionChanged; // 0x108 (16)
 	struct FMulticastInlineDelegate OnItemDragged; // 0x118 (16)
 
-	void SetSearchText(struct FString newText); // Function AkAudio.AkWwiseTree.SetSearchText(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x161B8E0>
-	struct Unknown GetSelectedItem(); // Function AkAudio.AkWwiseTree.GetSelectedItem(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16261D0>
-	struct FString GetSearchText(); // Function AkAudio.AkWwiseTree.GetSearchText(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1626150>
+	void SetSearchText(struct FString newText); // Function AkAudio.AkWwiseTree.SetSearchText(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1622AB0>
+	struct Unknown GetSelectedItem(); // Function AkAudio.AkWwiseTree.GetSelectedItem(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x162D350>
+	struct FString GetSearchText(); // Function AkAudio.AkWwiseTree.GetSearchText(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x162D2D0>
 };
 
 // Class AkAudio.AkWwiseTreeSelector
@@ -1128,7 +1128,7 @@ public:
 	struct Unknown CommunicationSettings; // 0x90 (40)
 	struct Unknown AdvancedSettings; // 0xB8 (60)
 
-	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkXboxOneInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16090E0>
+	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkXboxOneInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16103C0>
 };
 
 // Class AkAudio.InterpTrackAkAudioEvent
@@ -1208,8 +1208,8 @@ public:
 
 	struct FMulticastInlineDelegate Completed; // 0x30 (16)
 
-	struct Unknown PostEventAsync(struct Unknown WorldContextObject, struct Unknown AkEvent, struct Unknown Actor, int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<Unknown>& ExternalSources, char bStopWhenAttachedToDestroyed); // Function AkAudio.PostEventAsync.PostEventAsync(Final|BlueprintCosmetic|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16264A0>
-	void PollPostEventFuture(); // Function AkAudio.PostEventAsync.PollPostEventFuture(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1626480>
+	struct Unknown PostEventAsync(struct Unknown WorldContextObject, struct Unknown AkEvent, struct Unknown Actor, int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<Unknown>& ExternalSources, char bStopWhenAttachedToDestroyed); // Function AkAudio.PostEventAsync.PostEventAsync(Final|BlueprintCosmetic|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x162D620>
+	void PollPostEventFuture(); // Function AkAudio.PostEventAsync.PollPostEventFuture(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x162D600>
 };
 
 // Class AkAudio.PostEventAtLocationAsync
@@ -1219,8 +1219,8 @@ public:
 
 	struct FMulticastInlineDelegate Completed; // 0x30 (16)
 
-	struct Unknown PostEventAtLocationAsync(struct Unknown WorldContextObject, struct Unknown AkEvent, struct Unknown Location, struct Unknown Orientation); // Function AkAudio.PostEventAtLocationAsync.PostEventAtLocationAsync(Final|BlueprintCosmetic|Native|Static|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1627590>
-	void PollPostEventFuture(); // Function AkAudio.PostEventAtLocationAsync.PollPostEventFuture(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1627570>
+	struct Unknown PostEventAtLocationAsync(struct Unknown WorldContextObject, struct Unknown AkEvent, struct Unknown Location, struct Unknown Orientation); // Function AkAudio.PostEventAtLocationAsync.PostEventAtLocationAsync(Final|BlueprintCosmetic|Native|Static|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x162E710>
+	void PollPostEventFuture(); // Function AkAudio.PostEventAtLocationAsync.PollPostEventFuture(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x162E6F0>
 };
 
 // ScriptStruct AkAudio.AkExternalSourceInfo

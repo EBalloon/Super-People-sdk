@@ -20,22 +20,22 @@ public:
 	struct Unknown UW-ArmoryResultListWidget; // 0x2B8 (8)
 	struct Unknown EnhanceResultTimerHandle; // 0x2C0 (8)
 
-	void Craft(); // Function UW-ArmoryWidget.UW-ArmoryWidget_C.Craft(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void Result(); // Function UW-ArmoryWidget.UW-ArmoryWidget_C.Result(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SetInputEventBox(char Visible); // Function UW-ArmoryWidget.UW-ArmoryWidget_C.SetInputEventBox(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void StopProceedingSound(); // Function UW-ArmoryWidget.UW-ArmoryWidget_C.StopProceedingSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void PlayProceedingSound(); // Function UW-ArmoryWidget.UW-ArmoryWidget_C.PlayProceedingSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void GetLobbyWidget(struct Unknown& Widget); // Function UW-ArmoryWidget.UW-ArmoryWidget_C.GetLobbyWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void Proceeding(); // Function UW-ArmoryWidget.UW-ArmoryWidget_C.Proceeding(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void ShowArmoryUI(struct FString ArmoryResultName); // Function UW-ArmoryWidget.UW-ArmoryWidget_C.ShowArmoryUI(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void Construct(); // Function UW-ArmoryWidget.UW-ArmoryWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void BndEvt__Skip_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature(); // Function UW-ArmoryWidget.UW-ArmoryWidget_C.BndEvt__Skip_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void BndEvt__Skip_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature(); // Function UW-ArmoryWidget.UW-ArmoryWidget_C.BndEvt__Skip_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void EnhanceResult(); // Function UW-ArmoryWidget.UW-ArmoryWidget_C.EnhanceResult(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void CustomEvent_1(); // Function UW-ArmoryWidget.UW-ArmoryWidget_C.CustomEvent_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SetTimerCraftResult(); // Function UW-ArmoryWidget.UW-ArmoryWidget_C.SetTimerCraftResult(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void OnCraftResult(); // Function UW-ArmoryWidget.UW-ArmoryWidget_C.OnCraftResult(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void ExecuteUbergraph_UW-ArmoryWidget(int32_t EntryPoint); // Function UW-ArmoryWidget.UW-ArmoryWidget_C.ExecuteUbergraph_UW-ArmoryWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Craft(); // Function UW-ArmoryWidget.UW-ArmoryWidget_C.Craft(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void Result(); // Function UW-ArmoryWidget.UW-ArmoryWidget_C.Result(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetInputEventBox(char Visible); // Function UW-ArmoryWidget.UW-ArmoryWidget_C.SetInputEventBox(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void StopProceedingSound(); // Function UW-ArmoryWidget.UW-ArmoryWidget_C.StopProceedingSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void PlayProceedingSound(); // Function UW-ArmoryWidget.UW-ArmoryWidget_C.PlayProceedingSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void GetLobbyWidget(struct Unknown& Widget); // Function UW-ArmoryWidget.UW-ArmoryWidget_C.GetLobbyWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void Proceeding(); // Function UW-ArmoryWidget.UW-ArmoryWidget_C.Proceeding(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void ShowArmoryUI(struct FString ArmoryResultName); // Function UW-ArmoryWidget.UW-ArmoryWidget_C.ShowArmoryUI(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void Construct(); // Function UW-ArmoryWidget.UW-ArmoryWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void BndEvt__Skip_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature(); // Function UW-ArmoryWidget.UW-ArmoryWidget_C.BndEvt__Skip_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void BndEvt__Skip_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature(); // Function UW-ArmoryWidget.UW-ArmoryWidget_C.BndEvt__Skip_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void EnhanceResult(); // Function UW-ArmoryWidget.UW-ArmoryWidget_C.EnhanceResult(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void CustomEvent_1(); // Function UW-ArmoryWidget.UW-ArmoryWidget_C.CustomEvent_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetTimerCraftResult(); // Function UW-ArmoryWidget.UW-ArmoryWidget_C.SetTimerCraftResult(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void OnCraftResult(); // Function UW-ArmoryWidget.UW-ArmoryWidget_C.OnCraftResult(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void ExecuteUbergraph_UW-ArmoryWidget(int32_t EntryPoint); // Function UW-ArmoryWidget.UW-ArmoryWidget_C.ExecuteUbergraph_UW-ArmoryWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
 };
 
 // Function UW-ArmoryWidget.UW-ArmoryWidget_C.Craft

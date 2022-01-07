@@ -8,7 +8,7 @@ public:
 	struct Unknown ImageLine; // 0x258 (8)
 	struct Unknown Img_Color; // 0x260 (8)
 
-	void InitIcon(struct Unknown PlayerState); // Function UW-CompassWidget_Item_Resuscitation.UW-CompassWidget_Item_Resuscitation_C.InitIcon(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void InitIcon(struct Unknown PlayerState); // Function UW-CompassWidget_Item_Resuscitation.UW-CompassWidget_Item_Resuscitation_C.InitIcon(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
 };
 
 // Function UW-CompassWidget_Item_Resuscitation.UW-CompassWidget_Item_Resuscitation_C.InitIcon

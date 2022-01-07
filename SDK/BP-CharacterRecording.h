@@ -3,31 +3,31 @@ class ABP-CharacterRecording_C : public ABravoHotel3DViewActor {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x310 (8)
-	struct Unknown PointLight3; // 0x318 (8)
-	struct Unknown PointLight2; // 0x320 (8)
-	struct Unknown SpotLight; // 0x328 (8)
-	struct Unknown PointLight1; // 0x330 (8)
-	struct Unknown BravoHotelSceneCaptureComponent2D; // 0x338 (8)
-	struct Unknown PointLight; // 0x340 (8)
-	struct Unknown SpotLight2; // 0x348 (8)
-	struct Unknown Cube; // 0x350 (8)
-	struct Unknown CustomizableSkeletal; // 0x358 (8)
-	struct Unknown SkeletalMesh; // 0x360 (8)
-	struct Unknown Camera; // 0x368 (8)
-	struct Unknown Scene; // 0x370 (8)
-	struct Unknown CharacterRef; // 0x378 (8)
-	struct TArray<Unknown> PreviewWeapons; // 0x380 (16)
-	char EnableTick : 0; // 0x390 (1)
-	struct Unknown TargetAccel; // 0x394 (12)
-	struct Unknown CurrentAccel; // 0x3A0 (12)
+	struct Unknown UberGraphFrame; // 0x300 (8)
+	struct Unknown PointLight3; // 0x308 (8)
+	struct Unknown PointLight2; // 0x310 (8)
+	struct Unknown SpotLight; // 0x318 (8)
+	struct Unknown PointLight1; // 0x320 (8)
+	struct Unknown BravoHotelSceneCaptureComponent2D; // 0x328 (8)
+	struct Unknown PointLight; // 0x330 (8)
+	struct Unknown SpotLight2; // 0x338 (8)
+	struct Unknown Cube; // 0x340 (8)
+	struct Unknown CustomizableSkeletal; // 0x348 (8)
+	struct Unknown SkeletalMesh; // 0x350 (8)
+	struct Unknown Camera; // 0x358 (8)
+	struct Unknown Scene; // 0x360 (8)
+	struct Unknown CharacterRef; // 0x368 (8)
+	struct TArray<Unknown> PreviewWeapons; // 0x370 (16)
+	char EnableTick : 0; // 0x380 (1)
+	struct Unknown TargetAccel; // 0x384 (12)
+	struct Unknown CurrentAccel; // 0x390 (12)
 
-	void Resize Render Target(int32_t SizeX, int32_t SizeY); // Function BP-CharacterRecording.BP-CharacterRecording_C.Resize Render Target(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void AddRotation(float Delta); // Function BP-CharacterRecording.BP-CharacterRecording_C.AddRotation(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void ReceiveBeginPlay(); // Function BP-CharacterRecording.BP-CharacterRecording_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void ReceiveTick(float DeltaSeconds); // Function BP-CharacterRecording.BP-CharacterRecording_C.ReceiveTick(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void OnUpdatedMutable(struct Unknown Instance); // Function BP-CharacterRecording.BP-CharacterRecording_C.OnUpdatedMutable(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void ExecuteUbergraph_BP-CharacterRecording(int32_t EntryPoint); // Function BP-CharacterRecording.BP-CharacterRecording_C.ExecuteUbergraph_BP-CharacterRecording(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Resize Render Target(int32_t SizeX, int32_t SizeY); // Function BP-CharacterRecording.BP-CharacterRecording_C.Resize Render Target(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void AddRotation(float Delta); // Function BP-CharacterRecording.BP-CharacterRecording_C.AddRotation(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void ReceiveBeginPlay(); // Function BP-CharacterRecording.BP-CharacterRecording_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void ReceiveTick(float DeltaSeconds); // Function BP-CharacterRecording.BP-CharacterRecording_C.ReceiveTick(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void OnUpdatedMutable(struct Unknown Instance); // Function BP-CharacterRecording.BP-CharacterRecording_C.OnUpdatedMutable(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void ExecuteUbergraph_BP-CharacterRecording(int32_t EntryPoint); // Function BP-CharacterRecording.BP-CharacterRecording_C.ExecuteUbergraph_BP-CharacterRecording(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
 };
 
 // Function BP-CharacterRecording.BP-CharacterRecording_C.Resize Render Target

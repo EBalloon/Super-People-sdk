@@ -3,7 +3,7 @@ class AStandInMeshActor : public UActor {
 
 public:
 
-	struct Unknown StaticMeshComponent; // 0x310 (8)
+	struct Unknown StaticMeshComponent; // 0x300 (8)
 };
 
 // Class StandinActor.StandinProxyContainer

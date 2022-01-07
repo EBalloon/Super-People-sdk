@@ -77,41 +77,41 @@ public:
 	struct Unknown DownSlateColor; // 0x5A0 (40)
 	char bAction : 0; // 0x5C8 (1)
 	char bCompare : 0; // 0x5C9 (1)
-	struct Unknown CompareWeaponInfo; // 0x5D0 (2864)
-	char IsNoHide : 0; // 0x1100 (1)
-	char bWeapon : 0; // 0x1101 (1)
-	char bPlayAnimation_WeaponCompare : 0; // 0x1102 (1)
-	struct Unknown VisibleTextColor; // 0x1108 (40)
-	struct Unknown BrushActionKeyWhite; // 0x1130 (136)
-	struct Unknown BrushActionKeyRed; // 0x11B8 (136)
-	struct FName TempName; // 0x1240 (8)
-	struct FText AvailableAmmoQuantity; // 0x1248 (24)
+	struct Unknown CompareWeaponInfo; // 0x5D0 (2848)
+	char IsNoHide : 0; // 0x10F0 (1)
+	char bWeapon : 0; // 0x10F1 (1)
+	char bPlayAnimation_WeaponCompare : 0; // 0x10F2 (1)
+	struct Unknown VisibleTextColor; // 0x10F8 (40)
+	struct Unknown BrushActionKeyWhite; // 0x1120 (136)
+	struct Unknown BrushActionKeyRed; // 0x11A8 (136)
+	struct FName TempName; // 0x1230 (8)
+	struct FText AvailableAmmoQuantity; // 0x1238 (24)
 
-	void SetCompareFloatArrow(struct Unknown UpImgae, struct Unknown DownImgae, struct Unknown Text, struct Unknown CompareInfo); // Function UW-InteractionWidget.UW-InteractionWidget_C.SetCompareFloatArrow(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SetWeaponBuff(struct Unknown InventoryItemInfo); // Function UW-InteractionWidget.UW-InteractionWidget_C.SetWeaponBuff(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SetCustomizedWidget(); // Function UW-InteractionWidget.UW-InteractionWidget_C.SetCustomizedWidget(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SetRarityPickUp(enum class Unknow Rarity); // Function UW-InteractionWidget.UW-InteractionWidget_C.SetRarityPickUp(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SetCompareArrow(struct Unknown UpImgae, struct Unknown DownImgae, struct Unknown Text, struct Unknown CompareInfo); // Function UW-InteractionWidget.UW-InteractionWidget_C.SetCompareArrow(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void Set RarityWeapon(enum class Unknow Rarity); // Function UW-InteractionWidget.UW-InteractionWidget_C.Set RarityWeapon(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void Reset(); // Function UW-InteractionWidget.UW-InteractionWidget_C.Reset(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void Hide(); // Function UW-InteractionWidget.UW-InteractionWidget_C.Hide(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void OnLoaded_2385A39542FE4E4DC3D8DA9A1DC61138(struct Unknown Loaded); // Function UW-InteractionWidget.UW-InteractionWidget_C.OnLoaded_2385A39542FE4E4DC3D8DA9A1DC61138(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void OnLoaded_5F4D13BB46FAD58EF9E7D9B1EC284B61(struct Unknown Loaded); // Function UW-InteractionWidget.UW-InteractionWidget_C.OnLoaded_5F4D13BB46FAD58EF9E7D9B1EC284B61(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void OnLoaded_AD9F8D574EE55C633D4CEBA11FC6FB36(struct Unknown Loaded); // Function UW-InteractionWidget.UW-InteractionWidget_C.OnLoaded_AD9F8D574EE55C633D4CEBA11FC6FB36(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void OnLoaded_F76113C9404D07E2AAB61F936BF0F1DA(struct Unknown Loaded); // Function UW-InteractionWidget.UW-InteractionWidget_C.OnLoaded_F76113C9404D07E2AAB61F936BF0F1DA(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void OnLoaded_2D7AC27D4A9340E37F63BDA517074AED(struct Unknown Loaded); // Function UW-InteractionWidget.UW-InteractionWidget_C.OnLoaded_2D7AC27D4A9340E37F63BDA517074AED(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SetPickItem(struct Unknown& InteractionInfo, struct Unknown& NewPickItem); // Function UW-InteractionWidget.UW-InteractionWidget_C.SetPickItem(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SetWeapon(struct Unknown& InteractionInfo, struct Unknown& NewWeaponItem, struct Unknown& ItemInfo); // Function UW-InteractionWidget.UW-InteractionWidget_C.SetWeapon(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SetCompareWeapon(struct Unknown& InteractionInfo, struct Unknown& NewWeaponItem, struct Unknown& ItemInfo); // Function UW-InteractionWidget.UW-InteractionWidget_C.SetCompareWeapon(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void AsyncLoadIconTexture(struct Unknown IconTexture); // Function UW-InteractionWidget.UW-InteractionWidget_C.AsyncLoadIconTexture(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void PreConstruct(char IsDesignTime); // Function UW-InteractionWidget.UW-InteractionWidget_C.PreConstruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SetAction(struct Unknown& InteractionInfo); // Function UW-InteractionWidget.UW-InteractionWidget_C.SetAction(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void Set PaperSprite AsycLoad(struct Unknown IconTexture, struct Unknown TargetImage); // Function UW-InteractionWidget.UW-InteractionWidget_C.Set PaperSprite AsycLoad(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SetHide(); // Function UW-InteractionWidget.UW-InteractionWidget_C.SetHide(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SetCustomMode(int32_t ModeNum); // Function UW-InteractionWidget.UW-InteractionWidget_C.SetCustomMode(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SetNoHide(char NoHide); // Function UW-InteractionWidget.UW-InteractionWidget_C.SetNoHide(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SetInteractionInfo(struct Unknown InteractionInfo); // Function UW-InteractionWidget.UW-InteractionWidget_C.SetInteractionInfo(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void ExecuteUbergraph_UW-InteractionWidget(int32_t EntryPoint); // Function UW-InteractionWidget.UW-InteractionWidget_C.ExecuteUbergraph_UW-InteractionWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void SetCompareFloatArrow(struct Unknown UpImgae, struct Unknown DownImgae, struct Unknown Text, struct Unknown CompareInfo); // Function UW-InteractionWidget.UW-InteractionWidget_C.SetCompareFloatArrow(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetWeaponBuff(struct Unknown InventoryItemInfo); // Function UW-InteractionWidget.UW-InteractionWidget_C.SetWeaponBuff(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetCustomizedWidget(); // Function UW-InteractionWidget.UW-InteractionWidget_C.SetCustomizedWidget(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetRarityPickUp(enum class Unknow Rarity); // Function UW-InteractionWidget.UW-InteractionWidget_C.SetRarityPickUp(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetCompareArrow(struct Unknown UpImgae, struct Unknown DownImgae, struct Unknown Text, struct Unknown CompareInfo); // Function UW-InteractionWidget.UW-InteractionWidget_C.SetCompareArrow(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void Set RarityWeapon(enum class Unknow Rarity); // Function UW-InteractionWidget.UW-InteractionWidget_C.Set RarityWeapon(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void Reset(); // Function UW-InteractionWidget.UW-InteractionWidget_C.Reset(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void Hide(); // Function UW-InteractionWidget.UW-InteractionWidget_C.Hide(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void OnLoaded_2385A39542FE4E4DC3D8DA9A1DC61138(struct Unknown Loaded); // Function UW-InteractionWidget.UW-InteractionWidget_C.OnLoaded_2385A39542FE4E4DC3D8DA9A1DC61138(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void OnLoaded_5F4D13BB46FAD58EF9E7D9B1EC284B61(struct Unknown Loaded); // Function UW-InteractionWidget.UW-InteractionWidget_C.OnLoaded_5F4D13BB46FAD58EF9E7D9B1EC284B61(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void OnLoaded_AD9F8D574EE55C633D4CEBA11FC6FB36(struct Unknown Loaded); // Function UW-InteractionWidget.UW-InteractionWidget_C.OnLoaded_AD9F8D574EE55C633D4CEBA11FC6FB36(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void OnLoaded_F76113C9404D07E2AAB61F936BF0F1DA(struct Unknown Loaded); // Function UW-InteractionWidget.UW-InteractionWidget_C.OnLoaded_F76113C9404D07E2AAB61F936BF0F1DA(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void OnLoaded_2D7AC27D4A9340E37F63BDA517074AED(struct Unknown Loaded); // Function UW-InteractionWidget.UW-InteractionWidget_C.OnLoaded_2D7AC27D4A9340E37F63BDA517074AED(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetPickItem(struct Unknown& InteractionInfo, struct Unknown& NewPickItem); // Function UW-InteractionWidget.UW-InteractionWidget_C.SetPickItem(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetWeapon(struct Unknown& InteractionInfo, struct Unknown& NewWeaponItem, struct Unknown& ItemInfo); // Function UW-InteractionWidget.UW-InteractionWidget_C.SetWeapon(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetCompareWeapon(struct Unknown& InteractionInfo, struct Unknown& NewWeaponItem, struct Unknown& ItemInfo); // Function UW-InteractionWidget.UW-InteractionWidget_C.SetCompareWeapon(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void AsyncLoadIconTexture(struct Unknown IconTexture); // Function UW-InteractionWidget.UW-InteractionWidget_C.AsyncLoadIconTexture(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void PreConstruct(char IsDesignTime); // Function UW-InteractionWidget.UW-InteractionWidget_C.PreConstruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetAction(struct Unknown& InteractionInfo); // Function UW-InteractionWidget.UW-InteractionWidget_C.SetAction(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void Set PaperSprite AsycLoad(struct Unknown IconTexture, struct Unknown TargetImage); // Function UW-InteractionWidget.UW-InteractionWidget_C.Set PaperSprite AsycLoad(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetHide(); // Function UW-InteractionWidget.UW-InteractionWidget_C.SetHide(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetCustomMode(int32_t ModeNum); // Function UW-InteractionWidget.UW-InteractionWidget_C.SetCustomMode(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetNoHide(char NoHide); // Function UW-InteractionWidget.UW-InteractionWidget_C.SetNoHide(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetInteractionInfo(struct Unknown InteractionInfo); // Function UW-InteractionWidget.UW-InteractionWidget_C.SetInteractionInfo(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void ExecuteUbergraph_UW-InteractionWidget(int32_t EntryPoint); // Function UW-InteractionWidget.UW-InteractionWidget_C.ExecuteUbergraph_UW-InteractionWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
 };
 
 // Function UW-InteractionWidget.UW-InteractionWidget_C.SetCompareFloatArrow

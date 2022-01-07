@@ -3,127 +3,127 @@ class ABP-BravoHotel-PlayerController_C : public ABravoHotelPlayerController {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x13D8 (8)
-	struct Unknown BP-HUDInteractionComponent; // 0x13E0 (8)
-	struct Unknown SmartPingSystemComponent; // 0x13E8 (8)
-	struct Unknown MapSize; // 0x13F0 (12)
-	char IsInWidget : 0; // 0x13FC (1)
-	struct TArray<Unknown> InputActionsToBlock; // 0x1400 (16)
-	struct Unknown BlueZone; // 0x1410 (8)
-	struct TArray<Unknown> PhoneticAlphabetTable_NATO; // 0x1418 (16)
-	char bHasJustClosed : 0; // 0x1428 (1)
-	char bLineTrace : 0; // 0x1429 (1)
-	struct Unknown UI-BlackMarket; // 0x1430 (8)
-	struct Unknown LocalScreenPosition; // 0x1438 (8)
-	struct Unknown MaxViewportSize; // 0x1440 (8)
-	char ReverseSide : 0; // 0x1448 (1)
-	struct Unknown SavedInventory; // 0x1450 (8)
-	struct TArray<Unknown> DefaultItemList; // 0x1458 (16)
-	struct FString SavedInventorySlotName; // 0x1468 (16)
-	char bLoadInventoryData : 0; // 0x1478 (1)
-	char bOpenSystemMenu : 0; // 0x1479 (1)
-	float MinBrightness; // 0x147C (4)
-	float MaxBrightness; // 0x1480 (4)
-	float Contrast; // 0x1484 (4)
-	char bUsePostProcessVolumeOption : 0; // 0x1488 (1)
-	float FilmToeIntensity; // 0x148C (4)
-	float ColorGradingGlobalGamma; // 0x1490 (4)
-	char bInputModeUI : 0; // 0x1494 (1)
-	struct Unknown Timer; // 0x1498 (8)
-	struct Unknown DoubleclickTimer; // 0x14A0 (8)
-	float CheckTime; // 0x14A8 (4)
-	float DoubleClickTime; // 0x14AC (4)
-	char CheckDoubleClick : 0; // 0x14B0 (1)
-	struct Unknown TempLocation; // 0x14B4 (12)
-	struct TArray<Unknown> NameWidgets; // 0x14C0 (16)
-	int32_t CurrentNameWidgetCount; // 0x14D0 (4)
-	char bNameTooltipMode : 0; // 0x14D4 (1)
-	int32_t SmartPingTypeIndex; // 0x14D8 (4)
-	char EableSmartPing : 0; // 0x14DC (1)
-	char PingLock : 0; // 0x14DD (1)
-	struct Unknown OperationMessageWidget; // 0x14E0 (8)
-	struct Unknown SelectionMenu; // 0x14E8 (8)
-	char IsVisibleSelectionMenu : 0; // 0x14F0 (1)
-	struct TMap<Unknown, Unknown> BoostItemList; // 0x14F8 (80)
-	char IgnoreMenu : 0; // 0x1548 (1)
+	struct Unknown UberGraphFrame; // 0x1420 (8)
+	struct Unknown BP-HUDInteractionComponent; // 0x1428 (8)
+	struct Unknown SmartPingSystemComponent; // 0x1430 (8)
+	struct Unknown MapSize; // 0x1438 (12)
+	char IsInWidget : 0; // 0x1444 (1)
+	struct TArray<Unknown> InputActionsToBlock; // 0x1448 (16)
+	struct Unknown BlueZone; // 0x1458 (8)
+	struct TArray<Unknown> PhoneticAlphabetTable_NATO; // 0x1460 (16)
+	char bHasJustClosed : 0; // 0x1470 (1)
+	char bLineTrace : 0; // 0x1471 (1)
+	struct Unknown UI-BlackMarket; // 0x1478 (8)
+	struct Unknown LocalScreenPosition; // 0x1480 (8)
+	struct Unknown MaxViewportSize; // 0x1488 (8)
+	char ReverseSide : 0; // 0x1490 (1)
+	struct Unknown SavedInventory; // 0x1498 (8)
+	struct TArray<Unknown> DefaultItemList; // 0x14A0 (16)
+	struct FString SavedInventorySlotName; // 0x14B0 (16)
+	char bLoadInventoryData : 0; // 0x14C0 (1)
+	char bOpenSystemMenu : 0; // 0x14C1 (1)
+	float MinBrightness; // 0x14C4 (4)
+	float MaxBrightness; // 0x14C8 (4)
+	float Contrast; // 0x14CC (4)
+	char bUsePostProcessVolumeOption : 0; // 0x14D0 (1)
+	float FilmToeIntensity; // 0x14D4 (4)
+	float ColorGradingGlobalGamma; // 0x14D8 (4)
+	char bInputModeUI : 0; // 0x14DC (1)
+	struct Unknown Timer; // 0x14E0 (8)
+	struct Unknown DoubleclickTimer; // 0x14E8 (8)
+	float CheckTime; // 0x14F0 (4)
+	float DoubleClickTime; // 0x14F4 (4)
+	char CheckDoubleClick : 0; // 0x14F8 (1)
+	struct Unknown TempLocation; // 0x14FC (12)
+	struct TArray<Unknown> NameWidgets; // 0x1508 (16)
+	int32_t CurrentNameWidgetCount; // 0x1518 (4)
+	char bNameTooltipMode : 0; // 0x151C (1)
+	int32_t SmartPingTypeIndex; // 0x1520 (4)
+	char EableSmartPing : 0; // 0x1524 (1)
+	char PingLock : 0; // 0x1525 (1)
+	struct Unknown OperationMessageWidget; // 0x1528 (8)
+	struct Unknown SelectionMenu; // 0x1530 (8)
+	char IsVisibleSelectionMenu : 0; // 0x1538 (1)
+	struct TMap<Unknown, Unknown> BoostItemList; // 0x1540 (80)
+	char IgnoreMenu : 0; // 0x1590 (1)
 
-	char HasPerkDeckWidget(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.HasPerkDeckWidget(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	struct Unknown GetHUDInteractionComponent(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.GetHUDInteractionComponent(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	char IsShowingSystemPopup(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.IsShowingSystemPopup(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SetSmartpingInfo(struct Unknown ServerLocation, char IsAgree); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.SetSmartpingInfo(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void MakeSmartpingInfo(struct Unknown ServerLocation, char IsAgree); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.MakeSmartpingInfo(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void CalcZLocation(struct Unknown WorldLocation, float& ZLocation); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.CalcZLocation(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void OnMakeSmartpingInfo(int32_t PingTypeIndex, struct Unknown ServerLocation, char IsAgree); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.OnMakeSmartpingInfo(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void ShowPerkDeckPopup(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.ShowPerkDeckPopup(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void IsSpectating(char& IsSpectating); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.IsSpectating(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void HideInteractive(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.HideInteractive(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	struct Unknown GetSmartPingSystem(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.GetSmartPingSystem(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void CheckInputState(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.CheckInputState(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void IsMatchEnd(char& State); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.IsMatchEnd(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void IsOpenSystemPopup(char& bResult); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.IsOpenSystemPopup(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void GetSpectatorTargetRank(char& Result, int32_t& Rank); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.GetSpectatorTargetRank(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	char IsGlobalPostProcessVolume(struct Unknown Other); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.IsGlobalPostProcessVolume(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SaveInventoryData(char bSaveAppearlance); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.SaveInventoryData(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void CheckSavedInventoryData(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.CheckSavedInventoryData(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SetDefaultItem(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.SetDefaultItem(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void RunInventoryDataCommand(struct Unknown SavedInventoryData); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.RunInventoryDataCommand(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void AddInBackpackItem(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.AddInBackpackItem(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void AddWeaponItem(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.AddWeaponItem(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void AddWearableItem(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.AddWearableItem(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void GetPlayerSpectatorHUD(struct Unknown& RefSpectatorHUD); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.GetPlayerSpectatorHUD(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void CalcReverseSideScreenPosition(struct Unknown WorldLocation, float& OutScreenPositionAngle); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.CalcReverseSideScreenPosition(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void CorrectionScreenPositionByTeamPositionWidget(struct Unknown& ScreenPosition, char& RetOutScreenPosition); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.CorrectionScreenPositionByTeamPositionWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void GetCurrentViewportMaxSizeByTeamPositionWidget(struct Unknown& ViewportMaxSize); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.GetCurrentViewportMaxSizeByTeamPositionWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SetActionBlocked(char bWantsToBlock, struct TArray<Unknown>& ActionNames, struct Unknown Widget); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.SetActionBlocked(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void DoNothing(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.DoNothing(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void GetPlayerMainWidget(char bWantsToCreateIfNull, struct Unknown& Widget); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.GetPlayerMainWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void GetInventoryWidget(char bWantsToCreateIfNull, struct Unknown& Widget); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.GetInventoryWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void GetPlayerHUD(char& IsAlive, struct Unknown& PlayerHUD); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.GetPlayerHUD(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void GetPawnPosition(struct Unknown& out_Position, struct Unknown& out_MapSize); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.GetPawnPosition(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void InpActEvt_Ctrl+Shift_H_K2Node_InputKeyEvent_5(struct Unknown Key); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.InpActEvt_Ctrl+Shift_H_K2Node_InputKeyEvent_5(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void InpActEvt_Ctrl_B_K2Node_InputKeyEvent_4(struct Unknown Key); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.InpActEvt_Ctrl_B_K2Node_InputKeyEvent_4(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void InpActEvt_LeftControl_K2Node_InputKeyEvent_3(struct Unknown Key); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.InpActEvt_LeftControl_K2Node_InputKeyEvent_3(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void InpActEvt_LeftControl_K2Node_InputKeyEvent_2(struct Unknown Key); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.InpActEvt_LeftControl_K2Node_InputKeyEvent_2(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void InpActEvt_AcceptUI_K2Node_InputActionEvent_6(struct Unknown Key); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.InpActEvt_AcceptUI_K2Node_InputActionEvent_6(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void InpActEvt_MiniMap_K2Node_InputActionEvent_5(struct Unknown Key); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.InpActEvt_MiniMap_K2Node_InputActionEvent_5(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void InpActEvt_CloseUI_K2Node_InputActionEvent_4(struct Unknown Key); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.InpActEvt_CloseUI_K2Node_InputActionEvent_4(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void InpActEvt_OptionMenu_K2Node_InputActionEvent_3(struct Unknown Key); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.InpActEvt_OptionMenu_K2Node_InputActionEvent_3(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void InpActEvt_ToggleInGameHUD_K2Node_InputActionEvent_2(struct Unknown Key); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.InpActEvt_ToggleInGameHUD_K2Node_InputActionEvent_2(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void InpActEvt_ToggleGuideWidget_K2Node_InputActionEvent_1(struct Unknown Key); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.InpActEvt_ToggleGuideWidget_K2Node_InputActionEvent_1(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void InpActEvt_J_K2Node_InputKeyEvent_1(struct Unknown Key); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.InpActEvt_J_K2Node_InputKeyEvent_1(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void OpenMarket(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.OpenMarket(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void CustomEvent_1(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.CustomEvent_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void 鉹@ t元_1(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.鉹@ t元_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void CloseBlackMarket(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.CloseBlackMarket(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void OpenBlackMarket(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.OpenBlackMarket(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void Cheat Event(struct FString CheatCommand); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.Cheat Event(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SmartPingConfirmHoldUI_BP(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.SmartPingConfirmHoldUI_BP(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SmartPingCancelHoldUI_BP(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.SmartPingCancelHoldUI_BP(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SmartPingReleased_BP(char bIgnoreMenu); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.SmartPingReleased_BP(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SmartPingPressed_BP(char bIgnoreMenu); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.SmartPingPressed_BP(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SmartPingFastAgree(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.SmartPingFastAgree(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SmartPingHotKey_BP(int32_t Index); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.SmartPingHotKey_BP(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void ClientSetSmartpingInfo(struct Unknown ServerLocation, char IsAgree); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.ClientSetSmartpingInfo(Net|NetReliableNetClient|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void ServerMakeSmartpingInfo(struct Unknown ServerLocation, char IsAgree); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.ServerMakeSmartpingInfo(Net|NetReliableNetServer|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void OnInputInventory(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.OnInputInventory(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void EnterSceneOfWin(char bWin); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.EnterSceneOfWin(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void LoadInventoryData(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.LoadInventoryData(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void InputModeUI(struct Unknown Widget); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.InputModeUI(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void InputModeGame(struct Unknown Widget); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.InputModeGame(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void ServerEnterSceneOfWin(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.ServerEnterSceneOfWin(Net|NetReliableNetServer|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void ClientEnterSceneOfWin(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.ClientEnterSceneOfWin(Net|NetClient|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void OpenPerkDeckPopup(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.OpenPerkDeckPopup(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void K2_SaveInventoryData(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.K2_SaveInventoryData(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void NotifyOperationMessage(struct FText& NotifyText); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.NotifyOperationMessage(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void InsertMarker(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.InsertMarker(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void 鉹@t元_1(struct FName ItemKey); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SetUseItemSelectMenu(char bIsShow); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.SetUseItemSelectMenu(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SetBoostItemSelectMenu(char bIsShow); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.SetBoostItemSelectMenu(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void CustomEvent(struct FName ItemKey); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.CustomEvent(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void CheckNameTooltip(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.CheckNameTooltip(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void RemoveallCharacterToolTip(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.RemoveallCharacterToolTip(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void CreateCharacterToolTip(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.CreateCharacterToolTip(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void ExecuteUbergraph_BP-BravoHotel-PlayerController(int32_t EntryPoint); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.ExecuteUbergraph_BP-BravoHotel-PlayerController(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	char HasPerkDeckWidget(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.HasPerkDeckWidget(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	struct Unknown GetHUDInteractionComponent(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.GetHUDInteractionComponent(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	char IsShowingSystemPopup(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.IsShowingSystemPopup(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetSmartpingInfo(struct Unknown ServerLocation, char IsAgree); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.SetSmartpingInfo(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void MakeSmartpingInfo(struct Unknown ServerLocation, char IsAgree); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.MakeSmartpingInfo(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void CalcZLocation(struct Unknown WorldLocation, float& ZLocation); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.CalcZLocation(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void OnMakeSmartpingInfo(int32_t PingTypeIndex, struct Unknown ServerLocation, char IsAgree); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.OnMakeSmartpingInfo(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void ShowPerkDeckPopup(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.ShowPerkDeckPopup(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void IsSpectating(char& IsSpectating); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.IsSpectating(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void HideInteractive(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.HideInteractive(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	struct Unknown GetSmartPingSystem(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.GetSmartPingSystem(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void CheckInputState(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.CheckInputState(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void IsMatchEnd(char& State); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.IsMatchEnd(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void IsOpenSystemPopup(char& bResult); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.IsOpenSystemPopup(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void GetSpectatorTargetRank(char& Result, int32_t& Rank); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.GetSpectatorTargetRank(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	char IsGlobalPostProcessVolume(struct Unknown Other); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.IsGlobalPostProcessVolume(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SaveInventoryData(char bSaveAppearlance); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.SaveInventoryData(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void CheckSavedInventoryData(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.CheckSavedInventoryData(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetDefaultItem(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.SetDefaultItem(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void RunInventoryDataCommand(struct Unknown SavedInventoryData); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.RunInventoryDataCommand(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void AddInBackpackItem(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.AddInBackpackItem(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void AddWeaponItem(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.AddWeaponItem(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void AddWearableItem(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.AddWearableItem(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void GetPlayerSpectatorHUD(struct Unknown& RefSpectatorHUD); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.GetPlayerSpectatorHUD(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void CalcReverseSideScreenPosition(struct Unknown WorldLocation, float& OutScreenPositionAngle); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.CalcReverseSideScreenPosition(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void CorrectionScreenPositionByTeamPositionWidget(struct Unknown& ScreenPosition, char& RetOutScreenPosition); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.CorrectionScreenPositionByTeamPositionWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void GetCurrentViewportMaxSizeByTeamPositionWidget(struct Unknown& ViewportMaxSize); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.GetCurrentViewportMaxSizeByTeamPositionWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetActionBlocked(char bWantsToBlock, struct TArray<Unknown>& ActionNames, struct Unknown Widget); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.SetActionBlocked(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void DoNothing(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.DoNothing(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void GetPlayerMainWidget(char bWantsToCreateIfNull, struct Unknown& Widget); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.GetPlayerMainWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void GetInventoryWidget(char bWantsToCreateIfNull, struct Unknown& Widget); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.GetInventoryWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void GetPlayerHUD(char& IsAlive, struct Unknown& PlayerHUD); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.GetPlayerHUD(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void GetPawnPosition(struct Unknown& out_Position, struct Unknown& out_MapSize); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.GetPawnPosition(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void InpActEvt_Ctrl+Shift_H_K2Node_InputKeyEvent_5(struct Unknown Key); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.InpActEvt_Ctrl+Shift_H_K2Node_InputKeyEvent_5(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void InpActEvt_Ctrl_B_K2Node_InputKeyEvent_4(struct Unknown Key); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.InpActEvt_Ctrl_B_K2Node_InputKeyEvent_4(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void InpActEvt_LeftControl_K2Node_InputKeyEvent_3(struct Unknown Key); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.InpActEvt_LeftControl_K2Node_InputKeyEvent_3(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void InpActEvt_LeftControl_K2Node_InputKeyEvent_2(struct Unknown Key); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.InpActEvt_LeftControl_K2Node_InputKeyEvent_2(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void InpActEvt_AcceptUI_K2Node_InputActionEvent_6(struct Unknown Key); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.InpActEvt_AcceptUI_K2Node_InputActionEvent_6(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void InpActEvt_MiniMap_K2Node_InputActionEvent_5(struct Unknown Key); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.InpActEvt_MiniMap_K2Node_InputActionEvent_5(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void InpActEvt_CloseUI_K2Node_InputActionEvent_4(struct Unknown Key); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.InpActEvt_CloseUI_K2Node_InputActionEvent_4(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void InpActEvt_OptionMenu_K2Node_InputActionEvent_3(struct Unknown Key); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.InpActEvt_OptionMenu_K2Node_InputActionEvent_3(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void InpActEvt_ToggleInGameHUD_K2Node_InputActionEvent_2(struct Unknown Key); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.InpActEvt_ToggleInGameHUD_K2Node_InputActionEvent_2(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void InpActEvt_ToggleGuideWidget_K2Node_InputActionEvent_1(struct Unknown Key); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.InpActEvt_ToggleGuideWidget_K2Node_InputActionEvent_1(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void InpActEvt_J_K2Node_InputKeyEvent_1(struct Unknown Key); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.InpActEvt_J_K2Node_InputKeyEvent_1(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void OpenMarket(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.OpenMarket(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void CustomEvent_1(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.CustomEvent_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void 鉹@ t元_1(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.鉹@ t元_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void CloseBlackMarket(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.CloseBlackMarket(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void OpenBlackMarket(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.OpenBlackMarket(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void Cheat Event(struct FString CheatCommand); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.Cheat Event(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SmartPingConfirmHoldUI_BP(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.SmartPingConfirmHoldUI_BP(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SmartPingCancelHoldUI_BP(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.SmartPingCancelHoldUI_BP(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SmartPingReleased_BP(char bIgnoreMenu); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.SmartPingReleased_BP(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SmartPingPressed_BP(char bIgnoreMenu); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.SmartPingPressed_BP(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SmartPingFastAgree(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.SmartPingFastAgree(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SmartPingHotKey_BP(int32_t Index); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.SmartPingHotKey_BP(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void ClientSetSmartpingInfo(struct Unknown ServerLocation, char IsAgree); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.ClientSetSmartpingInfo(Net|NetReliableNetClient|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void ServerMakeSmartpingInfo(struct Unknown ServerLocation, char IsAgree); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.ServerMakeSmartpingInfo(Net|NetReliableNetServer|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void OnInputInventory(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.OnInputInventory(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void EnterSceneOfWin(char bWin); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.EnterSceneOfWin(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void LoadInventoryData(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.LoadInventoryData(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void InputModeUI(struct Unknown Widget); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.InputModeUI(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void InputModeGame(struct Unknown Widget); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.InputModeGame(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void ServerEnterSceneOfWin(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.ServerEnterSceneOfWin(Net|NetReliableNetServer|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void ClientEnterSceneOfWin(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.ClientEnterSceneOfWin(Net|NetClient|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void OpenPerkDeckPopup(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.OpenPerkDeckPopup(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void K2_SaveInventoryData(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.K2_SaveInventoryData(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void NotifyOperationMessage(struct FText& NotifyText); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.NotifyOperationMessage(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void InsertMarker(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.InsertMarker(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void 鉹@t元_1(struct FName ItemKey); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetUseItemSelectMenu(char bIsShow); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.SetUseItemSelectMenu(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetBoostItemSelectMenu(char bIsShow); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.SetBoostItemSelectMenu(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void CustomEvent(struct FName ItemKey); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.CustomEvent(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void CheckNameTooltip(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.CheckNameTooltip(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void RemoveallCharacterToolTip(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.RemoveallCharacterToolTip(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void CreateCharacterToolTip(); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.CreateCharacterToolTip(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void ExecuteUbergraph_BP-BravoHotel-PlayerController(int32_t EntryPoint); // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.ExecuteUbergraph_BP-BravoHotel-PlayerController(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
 };
 
 // Function BP-BravoHotel-PlayerController.BP-BravoHotel-PlayerController_C.HasPerkDeckWidget

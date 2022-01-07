@@ -3,73 +3,73 @@ class UUW-Inventory_RecipeSlot_C : public UUW-Inventory_SlotBase_C {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x1360 (8)
-	struct Unknown Ani_Tutorial_Glow; // 0x1368 (8)
-	struct Unknown P_Upgrade_Arrow; // 0x1370 (8)
-	struct Unknown C_SlotHover_ItemState_Hide; // 0x1378 (8)
-	struct Unknown C_SlotHover_ItemState_Show; // 0x1380 (8)
-	struct Unknown Hover_Gold; // 0x1388 (8)
-	struct Unknown P_SlotHover; // 0x1390 (8)
-	struct Unknown BGImage; // 0x1398 (8)
-	struct Unknown CanvasPanel_ITemState; // 0x13A0 (8)
-	struct Unknown Count; // 0x13A8 (8)
-	struct Unknown Effect_Craft; // 0x13B0 (8)
-	struct Unknown HorizontalBox_Rarity; // 0x13B8 (8)
-	struct Unknown HoverImage; // 0x13C0 (8)
-	struct Unknown HoverImage_Gold; // 0x13C8 (8)
-	struct Unknown IconRepair; // 0x13D0 (8)
-	struct Unknown Image_1; // 0x13D8 (8)
-	struct Unknown Image_2; // 0x13E0 (8)
-	struct Unknown Image_222; // 0x13E8 (8)
-	struct Unknown ItemImage; // 0x13F0 (8)
-	struct Unknown ItemNameName; // 0x13F8 (8)
-	struct Unknown ItemState_Text; // 0x1400 (8)
-	struct Unknown NeedMaterial; // 0x1408 (8)
-	struct Unknown Overlay_Key; // 0x1410 (8)
-	struct Unknown ProgressBar_475; // 0x1418 (8)
-	struct Unknown SizeBox_1; // 0x1420 (8)
-	struct Unknown TextBlock_ShortCut; // 0x1428 (8)
-	struct Unknown Tutorial_Glow; // 0x1430 (8)
-	struct Unknown UW-MouseRightClick_Big; // 0x1438 (8)
-	struct Unknown UW-MouseRightClick_Small; // 0x1440 (8)
-	struct Unknown WeaponItemImage; // 0x1448 (8)
-	char bGold : 0; // 0x1450 (1)
-	struct Unknown SelectedHoverImage; // 0x1458 (8)
-	struct Unknown MedicalBGColor; // 0x1460 (16)
-	struct FMulticastInlineDelegate SetSlotInfo; // 0x1470 (16)
-	int32_t SlotIndex; // 0x1480 (4)
-	struct FName RecipeKey; // 0x1484 (8)
-	struct Unknown RecipeData; // 0x1490 (56)
-	char bLeftClicked : 0; // 0x14C8 (1)
-	char CanCraft : 0; // 0x14C9 (1)
+	struct Unknown UberGraphFrame; // 0x1350 (8)
+	struct Unknown Ani_Tutorial_Glow; // 0x1358 (8)
+	struct Unknown P_Upgrade_Arrow; // 0x1360 (8)
+	struct Unknown C_SlotHover_ItemState_Hide; // 0x1368 (8)
+	struct Unknown C_SlotHover_ItemState_Show; // 0x1370 (8)
+	struct Unknown Hover_Gold; // 0x1378 (8)
+	struct Unknown P_SlotHover; // 0x1380 (8)
+	struct Unknown BGImage; // 0x1388 (8)
+	struct Unknown CanvasPanel_ITemState; // 0x1390 (8)
+	struct Unknown Count; // 0x1398 (8)
+	struct Unknown Effect_Craft; // 0x13A0 (8)
+	struct Unknown HorizontalBox_Rarity; // 0x13A8 (8)
+	struct Unknown HoverImage; // 0x13B0 (8)
+	struct Unknown HoverImage_Gold; // 0x13B8 (8)
+	struct Unknown IconRepair; // 0x13C0 (8)
+	struct Unknown Image_1; // 0x13C8 (8)
+	struct Unknown Image_2; // 0x13D0 (8)
+	struct Unknown Image_222; // 0x13D8 (8)
+	struct Unknown ItemImage; // 0x13E0 (8)
+	struct Unknown ItemNameName; // 0x13E8 (8)
+	struct Unknown ItemState_Text; // 0x13F0 (8)
+	struct Unknown NeedMaterial; // 0x13F8 (8)
+	struct Unknown Overlay_Key; // 0x1400 (8)
+	struct Unknown ProgressBar_475; // 0x1408 (8)
+	struct Unknown SizeBox_1; // 0x1410 (8)
+	struct Unknown TextBlock_ShortCut; // 0x1418 (8)
+	struct Unknown Tutorial_Glow; // 0x1420 (8)
+	struct Unknown UW-MouseRightClick_Big; // 0x1428 (8)
+	struct Unknown UW-MouseRightClick_Small; // 0x1430 (8)
+	struct Unknown WeaponItemImage; // 0x1438 (8)
+	char bGold : 0; // 0x1440 (1)
+	struct Unknown SelectedHoverImage; // 0x1448 (8)
+	struct Unknown MedicalBGColor; // 0x1450 (16)
+	struct FMulticastInlineDelegate SetSlotInfo; // 0x1460 (16)
+	int32_t SlotIndex; // 0x1470 (4)
+	struct FName RecipeKey; // 0x1474 (8)
+	struct Unknown RecipeData; // 0x1480 (56)
+	char bLeftClicked : 0; // 0x14B8 (1)
+	char CanCraft : 0; // 0x14B9 (1)
 
-	void Get Weapon Infoby Inventory Item Info(char& bResult, struct Unknown& WeaponInfo); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.Get Weapon Infoby Inventory Item Info(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void GetKeyNameFromKey(struct Unknown& Key, struct FString& Name, char& bRet); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.GetKeyNameFromKey(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SetKeyText(); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.SetKeyText(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SetRightClickBig(); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.SetRightClickBig(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SetRightClickSmall(char IsVisible); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.SetRightClickSmall(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	struct Unknown OnMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	struct Unknown OnMouseButtonUp(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.OnMouseButtonUp(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SetInfo(struct FName RecipeKey, int32_t SlotIndex); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.SetInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SetItemRarityColor(enum class Unknow CurrentSlot, struct Unknown ImageWidget); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.SetItemRarityColor(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void MouseEnterImpl(); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.MouseEnterImpl(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SetWeaponImage_Internal(struct Unknown IconTexture); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.SetWeaponImage_Internal(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	struct Unknown Set Item Image Internal(struct Unknown IconTexture); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.Set Item Image Internal(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void IsDraging(char& bResult); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.IsDraging(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	char OnDrop(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.OnDrop(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void OnDragDetected(struct Unknown MyGeometry, struct Unknown& PointerEvent, struct Unknown& Operation); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.OnDragDetected(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void OnRButtonClick(char& bResult); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.OnRButtonClick(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	struct Unknown Set_BGImage_Brush_1(); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.Set_BGImage_Brush_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	struct Unknown SetItemImage(); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.SetItemImage(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void OnLoaded_DABF06DE406801A7910E4CB19855F653(struct Unknown Loaded); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.OnLoaded_DABF06DE406801A7910E4CB19855F653(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void Construct(); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void OnMouseLeave(struct Unknown& MouseEvent); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void AsyncLoadIconTexture(struct Unknown IconTexture); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.AsyncLoadIconTexture(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void OnUpdateCastingDelegateEvent(struct Unknown& CastingInfo, float CastingPercent); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.OnUpdateCastingDelegateEvent(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void ExecuteUbergraph_UW-Inventory_RecipeSlot(int32_t EntryPoint); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.ExecuteUbergraph_UW-Inventory_RecipeSlot(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SetSlotInfo__DelegateSignature(struct Unknown TargetActor, struct Unknown ItemInfo); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.SetSlotInfo__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Get Weapon Infoby Inventory Item Info(char& bResult, struct Unknown& WeaponInfo); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.Get Weapon Infoby Inventory Item Info(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void GetKeyNameFromKey(struct Unknown& Key, struct FString& Name, char& bRet); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.GetKeyNameFromKey(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetKeyText(); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.SetKeyText(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetRightClickBig(); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.SetRightClickBig(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetRightClickSmall(char IsVisible); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.SetRightClickSmall(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	struct Unknown OnMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	struct Unknown OnMouseButtonUp(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.OnMouseButtonUp(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetInfo(struct FName RecipeKey, int32_t SlotIndex); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.SetInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetItemRarityColor(enum class Unknow CurrentSlot, struct Unknown ImageWidget); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.SetItemRarityColor(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void MouseEnterImpl(); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.MouseEnterImpl(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetWeaponImage_Internal(struct Unknown IconTexture); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.SetWeaponImage_Internal(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	struct Unknown Set Item Image Internal(struct Unknown IconTexture); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.Set Item Image Internal(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void IsDraging(char& bResult); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.IsDraging(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	char OnDrop(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.OnDrop(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void OnDragDetected(struct Unknown MyGeometry, struct Unknown& PointerEvent, struct Unknown& Operation); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.OnDragDetected(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void OnRButtonClick(char& bResult); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.OnRButtonClick(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	struct Unknown Set_BGImage_Brush_1(); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.Set_BGImage_Brush_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	struct Unknown SetItemImage(); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.SetItemImage(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void OnLoaded_DABF06DE406801A7910E4CB19855F653(struct Unknown Loaded); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.OnLoaded_DABF06DE406801A7910E4CB19855F653(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void Construct(); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void OnMouseLeave(struct Unknown& MouseEvent); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void AsyncLoadIconTexture(struct Unknown IconTexture); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.AsyncLoadIconTexture(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void OnUpdateCastingDelegateEvent(struct Unknown& CastingInfo, float CastingPercent); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.OnUpdateCastingDelegateEvent(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void ExecuteUbergraph_UW-Inventory_RecipeSlot(int32_t EntryPoint); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.ExecuteUbergraph_UW-Inventory_RecipeSlot(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetSlotInfo__DelegateSignature(struct Unknown TargetActor, struct Unknown ItemInfo); // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.SetSlotInfo__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
 };
 
 // Function UW-Inventory_RecipeSlot.UW-Inventory_RecipeSlot_C.Get Weapon Infoby Inventory Item Info

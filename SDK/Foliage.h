@@ -68,9 +68,9 @@ class UFoliageInstancedStaticMeshComponent : public UHierarchicalInstancedStatic
 
 public:
 
-	struct FMulticastInlineDelegate OnInstanceTakePointDamage; // 0x710 (16)
-	struct FMulticastInlineDelegate OnInstanceTakeRadialDamage; // 0x720 (16)
-	struct Unknown GenerationGuid; // 0x730 (16)
+	struct FMulticastInlineDelegate OnInstanceTakePointDamage; // 0x708 (16)
+	struct FMulticastInlineDelegate OnInstanceTakeRadialDamage; // 0x718 (16)
+	struct Unknown GenerationGuid; // 0x728 (16)
 };
 
 // Class Foliage.FoliageSettings
@@ -207,22 +207,22 @@ class AInteractiveFoliageActor : public AStaticMeshActor {
 
 public:
 
-	struct Unknown CapsuleComponent; // 0x320 (8)
-	struct Unknown TouchingActorEntryPosition; // 0x328 (12)
-	struct Unknown FoliageVelocity; // 0x334 (12)
-	struct Unknown FoliageForce; // 0x340 (12)
-	struct Unknown FoliagePosition; // 0x34C (12)
-	float FoliageDamageImpulseScale; // 0x358 (4)
-	float FoliageTouchImpulseScale; // 0x35C (4)
-	float FoliageStiffness; // 0x360 (4)
-	float FoliageStiffnessQuadratic; // 0x364 (4)
-	float FoliageDamping; // 0x368 (4)
-	float MaxDamageImpulse; // 0x36C (4)
-	float MaxTouchImpulse; // 0x370 (4)
-	float MaxForce; // 0x374 (4)
-	float Mass; // 0x378 (4)
+	struct Unknown CapsuleComponent; // 0x310 (8)
+	struct Unknown TouchingActorEntryPosition; // 0x318 (12)
+	struct Unknown FoliageVelocity; // 0x324 (12)
+	struct Unknown FoliageForce; // 0x330 (12)
+	struct Unknown FoliagePosition; // 0x33C (12)
+	float FoliageDamageImpulseScale; // 0x348 (4)
+	float FoliageTouchImpulseScale; // 0x34C (4)
+	float FoliageStiffness; // 0x350 (4)
+	float FoliageStiffnessQuadratic; // 0x354 (4)
+	float FoliageDamping; // 0x358 (4)
+	float MaxDamageImpulse; // 0x35C (4)
+	float MaxTouchImpulse; // 0x360 (4)
+	float MaxForce; // 0x364 (4)
+	float Mass; // 0x368 (4)
 
-	void CapsuleTouched(struct Unknown OverlappedComp, struct Unknown Other, struct Unknown OtherComp, int32_t OtherBodyIndex, char bFromSweep, struct Unknown& OverlapInfo); // Function Foliage.InteractiveFoliageActor.CapsuleTouched(Final|Native|Protected|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x38D85C0>
+	void CapsuleTouched(struct Unknown OverlappedComp, struct Unknown Other, struct Unknown OtherComp, int32_t OtherBodyIndex, char bFromSweep, struct Unknown& OverlapInfo); // Function Foliage.InteractiveFoliageActor.CapsuleTouched(Final|Native|Protected|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x38EC0E0>
 };
 
 // Class Foliage.ProceduralFoliageBlockingVolume
@@ -230,7 +230,7 @@ class AProceduralFoliageBlockingVolume : public AVolume {
 
 public:
 
-	struct Unknown ProceduralFoliageVolume; // 0x348 (8)
+	struct Unknown ProceduralFoliageVolume; // 0x338 (8)
 };
 
 // Class Foliage.ProceduralFoliageComponent
@@ -255,7 +255,7 @@ public:
 	float MinimumQuadTreeSize; // 0x34 (4)
 	struct TArray<Unknown> FoliageTypes; // 0x40 (16)
 
-	void Simulate(int32_t NumSteps); // Function Foliage.ProceduralFoliageSpawner.Simulate(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x38D8A40>
+	void Simulate(int32_t NumSteps); // Function Foliage.ProceduralFoliageSpawner.Simulate(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x38EC560>
 };
 
 // Class Foliage.ProceduralFoliageTile
@@ -272,7 +272,7 @@ class AProceduralFoliageVolume : public AVolume {
 
 public:
 
-	struct Unknown ProceduralComponent; // 0x348 (8)
+	struct Unknown ProceduralComponent; // 0x338 (8)
 };
 
 // ScriptStruct Foliage.CullDistancePreset

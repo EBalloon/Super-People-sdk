@@ -3,6 +3,6 @@ class ABP-BattleRoyaleGameMode_Login_C : public ABattleRoyaleGameMode_Login {
 
 public:
 
-	struct Unknown DefaultSceneRoot; // 0x650 (8)
+	struct Unknown DefaultSceneRoot; // 0x640 (8)
 };
 

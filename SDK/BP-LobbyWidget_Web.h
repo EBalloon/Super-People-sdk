@@ -3,58 +3,58 @@ class UBP-LobbyWidget_Web_C : public UBravoHotelLobbyWidget_Web {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x4C8 (8)
-	struct Unknown FadeOutNotice; // 0x4D0 (8)
-	struct Unknown Bg; // 0x4D8 (8)
-	struct Unknown Bg_2; // 0x4E0 (8)
-	struct Unknown CanvasPanel_GameNotice; // 0x4E8 (8)
-	struct Unknown CanvasPanel_PrefetchingProgress; // 0x4F0 (8)
-	struct Unknown Image; // 0x4F8 (8)
-	struct Unknown Image_145; // 0x500 (8)
-	struct Unknown ProgressText; // 0x508 (8)
-	struct Unknown UW-Lobby_Main_Web; // 0x510 (8)
-	struct TArray<Unknown> WeaponList_1; // 0x518 (16)
-	struct TArray<Unknown> CharacterInfoWidgetList; // 0x528 (16)
-	int32_t PartySize; // 0x538 (4)
-	struct Unknown EquipmentTransition; // 0x540 (8)
-	char BindParticle : 0; // 0x548 (1)
-	struct TArray<Unknown> EffectPool; // 0x550 (16)
-	struct FMulticastInlineDelegate EventDispatcher_MoveToCrafting; // 0x560 (16)
-	struct FString CurrentTab; // 0x570 (16)
+	struct Unknown UberGraphFrame; // 0x4D8 (8)
+	struct Unknown FadeOutNotice; // 0x4E0 (8)
+	struct Unknown Bg; // 0x4E8 (8)
+	struct Unknown Bg_2; // 0x4F0 (8)
+	struct Unknown CanvasPanel_GameNotice; // 0x4F8 (8)
+	struct Unknown CanvasPanel_PrefetchingProgress; // 0x500 (8)
+	struct Unknown Image; // 0x508 (8)
+	struct Unknown Image_145; // 0x510 (8)
+	struct Unknown ProgressText; // 0x518 (8)
+	struct Unknown UW-Lobby_Main_Web; // 0x520 (8)
+	struct TArray<Unknown> WeaponList_1; // 0x528 (16)
+	struct TArray<Unknown> CharacterInfoWidgetList; // 0x538 (16)
+	int32_t PartySize; // 0x548 (4)
+	struct Unknown EquipmentTransition; // 0x550 (8)
+	char BindParticle : 0; // 0x558 (1)
+	struct TArray<Unknown> EffectPool; // 0x560 (16)
+	struct FMulticastInlineDelegate EventDispatcher_MoveToCrafting; // 0x570 (16)
+	struct FString CurrentTab; // 0x580 (16)
 
-	void CheckOptionChanged(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.CheckOptionChanged(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void InitArmoryMeshActor(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.InitArmoryMeshActor(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void AddEffect(struct Unknown Location, float Delay); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.AddEffect(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SendPlayTimeMsg(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.SendPlayTimeMsg(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void UpdateCharacterInfo(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.UpdateCharacterInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void CreateCharacterInfo(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.CreateCharacterInfo(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void AddWeaponInfo(struct FString Name, struct Unknown Offset); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.AddWeaponInfo(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void InitWeapon(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.InitWeapon(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void HideExitPopup(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.HideExitPopup(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void Construct(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void ShowMouseCursor(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.ShowMouseCursor(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void OnMatchingSucceeded(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.OnMatchingSucceeded(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void OnMatchingFailed(int32_t ErrorCode, struct FString ExtraDescription); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.OnMatchingFailed(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SetVisibleSelectGameMode(char bState); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.SetVisibleSelectGameMode(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void CustomEvent_1(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.CustomEvent_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SendPlayTimeMessage(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.SendPlayTimeMessage(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void 鉹@t元_1(char Visible, struct Unknown& Location); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.鉹@t元_1(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void EquipmentSounedDelegate_Event_1(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.EquipmentSounedDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SlotHoverSounedDelegate_Event_1(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.SlotHoverSounedDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void K2_OnChangedArmoryTab(struct FString TabName); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.K2_OnChangedArmoryTab(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void K2_OnReceiveCraftWeapon(struct Unknown& CraftWeapon); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.K2_OnReceiveCraftWeapon(Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void K2_OnChangedWeaponList(struct TArray<Unknown>& ReceiveWeaponList); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.K2_OnChangedWeaponList(Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void K2_OnChangedMaterialList(struct TArray<Unknown>& ReceiveMaterialList); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.K2_OnChangedMaterialList(Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void K2_OnChangedGold(int32_t ReceiveGold); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.K2_OnChangedGold(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void K2_MoveToCraftWeapon(int32_t CraftingID); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.K2_MoveToCraftWeapon(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void K2_Init(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.K2_Init(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void OnChangedMainTab(struct FString TabName); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.OnChangedMainTab(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void OnChangeProgress(struct FString PrefetchingProgressString); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.OnChangeProgress(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void OnPrefetchingProgressVisible(enum class Unknow InVisibility); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.OnPrefetchingProgressVisible(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void K2_OnCleanCampaignJoined(char bJoined); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.K2_OnCleanCampaignJoined(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void ExecuteUbergraph_BP-LobbyWidget_Web(int32_t EntryPoint); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.ExecuteUbergraph_BP-LobbyWidget_Web(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void EventDispatcher_MoveToCrafting__DelegateSignature(int32_t CraftingID); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.EventDispatcher_MoveToCrafting__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void CheckOptionChanged(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.CheckOptionChanged(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void InitArmoryMeshActor(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.InitArmoryMeshActor(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void AddEffect(struct Unknown Location, float Delay); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.AddEffect(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SendPlayTimeMsg(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.SendPlayTimeMsg(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void UpdateCharacterInfo(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.UpdateCharacterInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void CreateCharacterInfo(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.CreateCharacterInfo(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void AddWeaponInfo(struct FString Name, struct Unknown Offset); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.AddWeaponInfo(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void InitWeapon(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.InitWeapon(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void HideExitPopup(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.HideExitPopup(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void Construct(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void ShowMouseCursor(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.ShowMouseCursor(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void OnMatchingSucceeded(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.OnMatchingSucceeded(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void OnMatchingFailed(int32_t ErrorCode, struct FString ExtraDescription); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.OnMatchingFailed(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetVisibleSelectGameMode(char bState); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.SetVisibleSelectGameMode(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void CustomEvent_1(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.CustomEvent_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SendPlayTimeMessage(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.SendPlayTimeMessage(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void 鉹@t元_1(char Visible, struct Unknown& Location); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.鉹@t元_1(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void EquipmentSounedDelegate_Event_1(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.EquipmentSounedDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SlotHoverSounedDelegate_Event_1(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.SlotHoverSounedDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void K2_OnChangedArmoryTab(struct FString TabName); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.K2_OnChangedArmoryTab(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void K2_OnReceiveCraftWeapon(struct Unknown& CraftWeapon); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.K2_OnReceiveCraftWeapon(Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void K2_OnChangedWeaponList(struct TArray<Unknown>& ReceiveWeaponList); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.K2_OnChangedWeaponList(Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void K2_OnChangedMaterialList(struct TArray<Unknown>& ReceiveMaterialList); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.K2_OnChangedMaterialList(Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void K2_OnChangedGold(int32_t ReceiveGold); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.K2_OnChangedGold(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void K2_MoveToCraftWeapon(int32_t CraftingID); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.K2_MoveToCraftWeapon(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void K2_Init(); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.K2_Init(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void OnChangedMainTab(struct FString TabName); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.OnChangedMainTab(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void OnChangeProgress(struct FString PrefetchingProgressString); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.OnChangeProgress(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void OnPrefetchingProgressVisible(enum class Unknow InVisibility); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.OnPrefetchingProgressVisible(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void K2_OnCleanCampaignJoined(char bJoined); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.K2_OnCleanCampaignJoined(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void ExecuteUbergraph_BP-LobbyWidget_Web(int32_t EntryPoint); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.ExecuteUbergraph_BP-LobbyWidget_Web(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void EventDispatcher_MoveToCrafting__DelegateSignature(int32_t CraftingID); // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.EventDispatcher_MoveToCrafting__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
 };
 
 // Function BP-LobbyWidget_Web.BP-LobbyWidget_Web_C.CheckOptionChanged

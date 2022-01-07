@@ -3,12 +3,12 @@ class ABP-ProjectileGrenade_MolotovCocktail_Trap_C : public ABravoHotelProjectil
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x7F0 (8)
-	float TextureScale; // 0x7F8 (4)
-	float CollisionSize; // 0x7FC (4)
+	struct Unknown UberGraphFrame; // 0x7E0 (8)
+	float TextureScale; // 0x7E8 (4)
+	float CollisionSize; // 0x7EC (4)
 
-	void ActiveThrowingProjectileMainEffect(); // Function BP-ProjectileGrenade_MolotovCocktail_Trap.BP-ProjectileGrenade_MolotovCocktail_Trap_C.ActiveThrowingProjectileMainEffect(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void ExecuteUbergraph_BP-ProjectileGrenade_MolotovCocktail_Trap(int32_t EntryPoint); // Function BP-ProjectileGrenade_MolotovCocktail_Trap.BP-ProjectileGrenade_MolotovCocktail_Trap_C.ExecuteUbergraph_BP-ProjectileGrenade_MolotovCocktail_Trap(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ActiveThrowingProjectileMainEffect(); // Function BP-ProjectileGrenade_MolotovCocktail_Trap.BP-ProjectileGrenade_MolotovCocktail_Trap_C.ActiveThrowingProjectileMainEffect(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void ExecuteUbergraph_BP-ProjectileGrenade_MolotovCocktail_Trap(int32_t EntryPoint); // Function BP-ProjectileGrenade_MolotovCocktail_Trap.BP-ProjectileGrenade_MolotovCocktail_Trap_C.ExecuteUbergraph_BP-ProjectileGrenade_MolotovCocktail_Trap(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
 };
 
 // Function BP-ProjectileGrenade_MolotovCocktail_Trap.BP-ProjectileGrenade_MolotovCocktail_Trap_C.ActiveThrowingProjectileMainEffect

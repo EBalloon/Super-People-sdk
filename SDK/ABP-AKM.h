@@ -20,8 +20,8 @@ public:
 	struct Unknown AnimGraphNode_Slot; // 0x838 (72)
 	struct Unknown AnimGraphNode_BlendListByBool; // 0x880 (160)
 
-	void AnimGraph(struct Unknown& AnimGraph); // Function ABP-AKM.ABP-AKM_C.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void ExecuteUbergraph_ABP-AKM(int32_t EntryPoint); // Function ABP-AKM.ABP-AKM_C.ExecuteUbergraph_ABP-AKM(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void AnimGraph(struct Unknown& AnimGraph); // Function ABP-AKM.ABP-AKM_C.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void ExecuteUbergraph_ABP-AKM(int32_t EntryPoint); // Function ABP-AKM.ABP-AKM_C.ExecuteUbergraph_ABP-AKM(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
 };
 
 // Function ABP-AKM.ABP-AKM_C.AnimGraph

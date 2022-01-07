@@ -3,6 +3,6 @@ class ABP-BootyBox_C : public ABravoHotelBootyBoxActor {
 
 public:
 
-	struct Unknown StaticMesh; // 0x3B8 (8)
+	struct Unknown StaticMesh; // 0x3A8 (8)
 };
 

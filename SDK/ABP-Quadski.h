@@ -56,11 +56,11 @@ public:
 	struct Unknown AnimGraphNode_StateMachine; // 0x25C0 (176)
 	char bIsAmphibiousMode : 0; // 0x2670 (1)
 
-	void AnimGraph(struct Unknown& AnimGraph); // Function ABP-Quadski.ABP-Quadski_C.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP-Quadski_AnimGraphNode_TransitionResult_C584BAB4475226CF5A96DA84563281E0(); // Function ABP-Quadski.ABP-Quadski_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP-Quadski_AnimGraphNode_TransitionResult_C584BAB4475226CF5A96DA84563281E0(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP-Quadski_AnimGraphNode_TransitionResult_5B320C8249FFAA1FF5372BA69A6E9633(); // Function ABP-Quadski.ABP-Quadski_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP-Quadski_AnimGraphNode_TransitionResult_5B320C8249FFAA1FF5372BA69A6E9633(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void BlueprintUpdateAnimation(float DeltaTimeX); // Function ABP-Quadski.ABP-Quadski_C.BlueprintUpdateAnimation(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void ExecuteUbergraph_ABP-Quadski(int32_t EntryPoint); // Function ABP-Quadski.ABP-Quadski_C.ExecuteUbergraph_ABP-Quadski(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void AnimGraph(struct Unknown& AnimGraph); // Function ABP-Quadski.ABP-Quadski_C.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP-Quadski_AnimGraphNode_TransitionResult_C584BAB4475226CF5A96DA84563281E0(); // Function ABP-Quadski.ABP-Quadski_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP-Quadski_AnimGraphNode_TransitionResult_C584BAB4475226CF5A96DA84563281E0(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP-Quadski_AnimGraphNode_TransitionResult_5B320C8249FFAA1FF5372BA69A6E9633(); // Function ABP-Quadski.ABP-Quadski_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP-Quadski_AnimGraphNode_TransitionResult_5B320C8249FFAA1FF5372BA69A6E9633(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void BlueprintUpdateAnimation(float DeltaTimeX); // Function ABP-Quadski.ABP-Quadski_C.BlueprintUpdateAnimation(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void ExecuteUbergraph_ABP-Quadski(int32_t EntryPoint); // Function ABP-Quadski.ABP-Quadski_C.ExecuteUbergraph_ABP-Quadski(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
 };
 
 // Function ABP-Quadski.ABP-Quadski_C.AnimGraph

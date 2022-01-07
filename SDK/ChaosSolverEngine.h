@@ -23,28 +23,28 @@ class AChaosSolverActor : public UActor {
 
 public:
 
-	float TimeStepMultiplier; // 0x310 (4)
-	int32_t CollisionIterations; // 0x314 (4)
-	int32_t PushOutIterations; // 0x318 (4)
-	int32_t PushOutPairIterations; // 0x31C (4)
-	float ClusterConnectionFactor; // 0x320 (4)
-	enum class Unknow ClusterUnionConnectionType; // 0x324 (1)
-	char DoGenerateCollisionData : 0; // 0x325 (1)
-	struct Unknown CollisionFilterSettings; // 0x328 (16)
-	char DoGenerateBreakingData : 0; // 0x338 (1)
-	struct Unknown BreakingFilterSettings; // 0x33C (16)
-	char DoGenerateTrailingData : 0; // 0x34C (1)
-	struct Unknown TrailingFilterSettings; // 0x350 (16)
-	char bHasFloor : 0; // 0x360 (1)
-	float FloorHeight; // 0x364 (4)
-	float MassScale; // 0x368 (4)
-	char bGenerateContactGraph : 0; // 0x36C (1)
-	struct Unknown ChaosDebugSubstepControl; // 0x36D (3)
-	struct Unknown SpriteComponent; // 0x370 (8)
-	struct Unknown GameplayEventDispatcherComponent; // 0x390 (8)
+	float TimeStepMultiplier; // 0x300 (4)
+	int32_t CollisionIterations; // 0x304 (4)
+	int32_t PushOutIterations; // 0x308 (4)
+	int32_t PushOutPairIterations; // 0x30C (4)
+	float ClusterConnectionFactor; // 0x310 (4)
+	enum class Unknow ClusterUnionConnectionType; // 0x314 (1)
+	char DoGenerateCollisionData : 0; // 0x315 (1)
+	struct Unknown CollisionFilterSettings; // 0x318 (16)
+	char DoGenerateBreakingData : 0; // 0x328 (1)
+	struct Unknown BreakingFilterSettings; // 0x32C (16)
+	char DoGenerateTrailingData : 0; // 0x33C (1)
+	struct Unknown TrailingFilterSettings; // 0x340 (16)
+	char bHasFloor : 0; // 0x350 (1)
+	float FloorHeight; // 0x354 (4)
+	float MassScale; // 0x358 (4)
+	char bGenerateContactGraph : 0; // 0x35C (1)
+	struct Unknown ChaosDebugSubstepControl; // 0x35D (3)
+	struct Unknown SpriteComponent; // 0x360 (8)
+	struct Unknown GameplayEventDispatcherComponent; // 0x380 (8)
 
-	void SetSolverActive(char bActive); // Function ChaosSolverEngine.ChaosSolverActor.SetSolverActive(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47C8540>
-	void SetAsCurrentWorldSolver(); // Function ChaosSolverEngine.ChaosSolverActor.SetAsCurrentWorldSolver(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47C8520>
+	void SetSolverActive(char bActive); // Function ChaosSolverEngine.ChaosSolverActor.SetSolverActive(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47DAC90>
+	void SetAsCurrentWorldSolver(); // Function ChaosSolverEngine.ChaosSolverActor.SetAsCurrentWorldSolver(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x47DAC70>
 };
 
 // Class ChaosSolverEngine.ChaosSolverSettings

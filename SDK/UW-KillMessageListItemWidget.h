@@ -15,10 +15,10 @@ public:
 	struct FMulticastInlineDelegate OnTimeOut; // 0x2A0 (16)
 	struct Unknown LocalPlayerState; // 0x2B0 (8)
 
-	void OnLoaded_9DF86FA64782B378E42DBB813545BD34(struct Unknown Loaded); // Function UW-KillMessageListItemWidget.UW-KillMessageListItemWidget_C.OnLoaded_9DF86FA64782B378E42DBB813545BD34(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SetPlayerInfo(struct Unknown PlayerState, struct Unknown InfoColor); // Function UW-KillMessageListItemWidget.UW-KillMessageListItemWidget_C.SetPlayerInfo(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void ExecuteUbergraph_UW-KillMessageListItemWidget(int32_t EntryPoint); // Function UW-KillMessageListItemWidget.UW-KillMessageListItemWidget_C.ExecuteUbergraph_UW-KillMessageListItemWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void OnTimeOut__DelegateSignature(int32_t ArrayIndex, struct Unknown Slot); // Function UW-KillMessageListItemWidget.UW-KillMessageListItemWidget_C.OnTimeOut__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void OnLoaded_9DF86FA64782B378E42DBB813545BD34(struct Unknown Loaded); // Function UW-KillMessageListItemWidget.UW-KillMessageListItemWidget_C.OnLoaded_9DF86FA64782B378E42DBB813545BD34(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetPlayerInfo(struct Unknown PlayerState, struct Unknown InfoColor); // Function UW-KillMessageListItemWidget.UW-KillMessageListItemWidget_C.SetPlayerInfo(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void ExecuteUbergraph_UW-KillMessageListItemWidget(int32_t EntryPoint); // Function UW-KillMessageListItemWidget.UW-KillMessageListItemWidget_C.ExecuteUbergraph_UW-KillMessageListItemWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void OnTimeOut__DelegateSignature(int32_t ArrayIndex, struct Unknown Slot); // Function UW-KillMessageListItemWidget.UW-KillMessageListItemWidget_C.OnTimeOut__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
 };
 
 // Function UW-KillMessageListItemWidget.UW-KillMessageListItemWidget_C.OnLoaded_9DF86FA64782B378E42DBB813545BD34

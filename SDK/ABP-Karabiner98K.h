@@ -14,8 +14,8 @@ public:
 	struct Unknown AnimGraphNode_Slot; // 0x5A0 (72)
 	struct Unknown AnimGraphNode_LocalRefPose; // 0x5E8 (24)
 
-	void AnimGraph(struct Unknown& AnimGraph); // Function ABP-Karabiner98K.ABP-Karabiner98K_C.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void ExecuteUbergraph_ABP-Karabiner98K(int32_t EntryPoint); // Function ABP-Karabiner98K.ABP-Karabiner98K_C.ExecuteUbergraph_ABP-Karabiner98K(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void AnimGraph(struct Unknown& AnimGraph); // Function ABP-Karabiner98K.ABP-Karabiner98K_C.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void ExecuteUbergraph_ABP-Karabiner98K(int32_t EntryPoint); // Function ABP-Karabiner98K.ABP-Karabiner98K_C.ExecuteUbergraph_ABP-Karabiner98K(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
 };
 
 // Function ABP-Karabiner98K.ABP-Karabiner98K_C.AnimGraph

@@ -6,11 +6,11 @@ public:
 	struct Unknown UberGraphFrame; // 0x38 (8)
 	struct Unknown Game Settings Wrapper; // 0x40 (8)
 
-	void Get Settings Instance(struct Unknown& SettingsWrapper); // Function BP-GameSettingManager.BP-GameSettingManager_C.Get Settings Instance(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void Run Console Command(struct FString Console Command, char& -); // Function BP-GameSettingManager.BP-GameSettingManager_C.Run Console Command(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void Update Audio Channel(char Audio Channel, float Volume, char& -); // Function BP-GameSettingManager.BP-GameSettingManager_C.Update Audio Channel(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void ReceiveInit(); // Function BP-GameSettingManager.BP-GameSettingManager_C.ReceiveInit(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void ExecuteUbergraph_BP-GameSettingManager(int32_t EntryPoint); // Function BP-GameSettingManager.BP-GameSettingManager_C.ExecuteUbergraph_BP-GameSettingManager(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Get Settings Instance(struct Unknown& SettingsWrapper); // Function BP-GameSettingManager.BP-GameSettingManager_C.Get Settings Instance(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void Run Console Command(struct FString Console Command, char& -); // Function BP-GameSettingManager.BP-GameSettingManager_C.Run Console Command(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void Update Audio Channel(char Audio Channel, float Volume, char& -); // Function BP-GameSettingManager.BP-GameSettingManager_C.Update Audio Channel(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void ReceiveInit(); // Function BP-GameSettingManager.BP-GameSettingManager_C.ReceiveInit(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void ExecuteUbergraph_BP-GameSettingManager(int32_t EntryPoint); // Function BP-GameSettingManager.BP-GameSettingManager_C.ExecuteUbergraph_BP-GameSettingManager(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
 };
 
 // Function BP-GameSettingManager.BP-GameSettingManager_C.Get Settings Instance

@@ -9,7 +9,7 @@ public:
 	char bStateBool : 0; // 0x280 (1)
 	struct Unknown Instance; // 0x288 (8)
 
-	void GetInstancedActors(struct TArray<Unknown>& Actors); // Function AnimationSharing.AnimSharingStateInstance.GetInstancedActors(Final|Native|Protected|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16B45D0>
+	void GetInstancedActors(struct TArray<Unknown>& Actors); // Function AnimationSharing.AnimSharingStateInstance.GetInstancedActors(Final|Native|Protected|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16BBDE0>
 };
 
 // Class AnimationSharing.AnimSharingTransitionInstance
@@ -51,13 +51,13 @@ class UAnimationSharingManager : public Object {
 
 public:
 
-	struct TArray<Unknown> Skeletons; // 0x68 (16)
-	struct TArray<Unknown> PerSkeletonData; // 0x78 (16)
+	struct TArray<Unknown> Skeletons; // 0x38 (16)
+	struct TArray<Unknown> PerSkeletonData; // 0x28 (16)
 
-	void RegisterActorWithSkeletonBP(struct Unknown InActor, struct Unknown SharingSkeleton); // Function AnimationSharing.AnimationSharingManager.RegisterActorWithSkeletonBP(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16B4830>
-	struct Unknown GetAnimationSharingManager(struct Unknown WorldContextObject); // Function AnimationSharing.AnimationSharingManager.GetAnimationSharingManager(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16B4520>
-	char CreateAnimationSharingManager(struct Unknown WorldContextObject, struct Unknown Setup); // Function AnimationSharing.AnimationSharingManager.CreateAnimationSharingManager(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16B4460>
-	char AnimationSharingEnabled(); // Function AnimationSharing.AnimationSharingManager.AnimationSharingEnabled(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16B4430>
+	void RegisterActorWithSkeletonBP(struct Unknown InActor, struct Unknown SharingSkeleton); // Function AnimationSharing.AnimationSharingManager.RegisterActorWithSkeletonBP(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16BC040>
+	struct Unknown GetAnimationSharingManager(struct Unknown WorldContextObject); // Function AnimationSharing.AnimationSharingManager.GetAnimationSharingManager(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16BBD30>
+	char CreateAnimationSharingManager(struct Unknown WorldContextObject, struct Unknown Setup); // Function AnimationSharing.AnimationSharingManager.CreateAnimationSharingManager(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16BBC70>
+	char AnimationSharingEnabled(); // Function AnimationSharing.AnimationSharingManager.AnimationSharingEnabled(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16BBC40>
 };
 
 // Class AnimationSharing.AnimationSharingSetup
@@ -76,8 +76,8 @@ public:
 
 	struct Unknown AnimationStateEnum; // 0x28 (40)
 
-	void ProcessActorState(int32_t& OutState, struct Unknown InActor, char CurrentState, char OnDemandState, char& bShouldProcess); // Function AnimationSharing.AnimationSharingStateProcessor.ProcessActorState(Native|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16B4680>
-	struct Unknown GetAnimationStateEnum(); // Function AnimationSharing.AnimationSharingStateProcessor.GetAnimationStateEnum(Native|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16B45A0>
+	void ProcessActorState(int32_t& OutState, struct Unknown InActor, char CurrentState, char OnDemandState, char& bShouldProcess); // Function AnimationSharing.AnimationSharingStateProcessor.ProcessActorState(Native|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16BBE90>
+	struct Unknown GetAnimationStateEnum(); // Function AnimationSharing.AnimationSharingStateProcessor.GetAnimationStateEnum(Native|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16BBDB0>
 };
 
 // ScriptStruct AnimationSharing.AnimationSharingScalability
@@ -90,12 +90,12 @@ struct FAnimationSharingScalability {
 
 // ScriptStruct AnimationSharing.PerSkeletonAnimationSharingSetup
 struct FPerSkeletonAnimationSharingSetup {
-	struct Unknown Skeleton; // 0x18 (8)
-	struct Unknown SkeletalMesh; // 0x10 (8)
-	struct Unknown* BlendAnimBlueprint; // 0x28 (8)
+	struct Unknown Skeleton; // 0x10 (8)
+	struct Unknown SkeletalMesh; // 0x28 (8)
+	struct Unknown* BlendAnimBlueprint; // 0x0 (8)
 	struct Unknown* AdditiveAnimBlueprint; // 0x30 (8)
-	struct Unknown* StateProcessorClass; // 0x20 (8)
-	struct TArray<Unknown> AnimationStates; // 0x0 (16)
+	struct Unknown* StateProcessorClass; // 0x8 (8)
+	struct TArray<Unknown> AnimationStates; // 0x18 (16)
 };
 
 // ScriptStruct AnimationSharing.AnimationStateEntry

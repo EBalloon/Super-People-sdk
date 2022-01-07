@@ -3,13 +3,13 @@ class ABP-BrokenHelmet_C : public ABravoHotelBrokenEquipment {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x330 (8)
-	float Power_Min; // 0x338 (4)
-	float Power_Max; // 0x33C (4)
-	float FlyAngle; // 0x340 (4)
+	struct Unknown UberGraphFrame; // 0x320 (8)
+	float Power_Min; // 0x328 (4)
+	float Power_Max; // 0x32C (4)
+	float FlyAngle; // 0x330 (4)
 
-	void ReceiveBeginPlay(); // Function BP-BrokenHelmet.BP-BrokenHelmet_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void ExecuteUbergraph_BP-BrokenHelmet(int32_t EntryPoint); // Function BP-BrokenHelmet.BP-BrokenHelmet_C.ExecuteUbergraph_BP-BrokenHelmet(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void ReceiveBeginPlay(); // Function BP-BrokenHelmet.BP-BrokenHelmet_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void ExecuteUbergraph_BP-BrokenHelmet(int32_t EntryPoint); // Function BP-BrokenHelmet.BP-BrokenHelmet_C.ExecuteUbergraph_BP-BrokenHelmet(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
 };
 
 // Function BP-BrokenHelmet.BP-BrokenHelmet_C.ReceiveBeginPlay

@@ -12,14 +12,14 @@ public:
 	struct FMulticastInlineDelegate CilckBtn; // 0x278 (16)
 	char IsLeft : 0; // 0x288 (1)
 
-	void Construct(); // Function ArrowBtn.ArrowBtn_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void BndEvt__Button_67_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function ArrowBtn.ArrowBtn_C.BndEvt__Button_67_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void BndEvt__Button_67_K2Node_ComponentBoundEvent_1_OnButtonPressedEvent__DelegateSignature(); // Function ArrowBtn.ArrowBtn_C.BndEvt__Button_67_K2Node_ComponentBoundEvent_1_OnButtonPressedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void BndEvt__Button_67_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature(); // Function ArrowBtn.ArrowBtn_C.BndEvt__Button_67_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void BndEvt__Button_67_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature(); // Function ArrowBtn.ArrowBtn_C.BndEvt__Button_67_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void BndEvt__Button_67_K2Node_ComponentBoundEvent_4_OnButtonReleasedEvent__DelegateSignature(); // Function ArrowBtn.ArrowBtn_C.BndEvt__Button_67_K2Node_ComponentBoundEvent_4_OnButtonReleasedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void ExecuteUbergraph_ArrowBtn(int32_t EntryPoint); // Function ArrowBtn.ArrowBtn_C.ExecuteUbergraph_ArrowBtn(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void CilckBtn__DelegateSignature(); // Function ArrowBtn.ArrowBtn_C.CilckBtn__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void Construct(); // Function ArrowBtn.ArrowBtn_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void BndEvt__Button_67_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function ArrowBtn.ArrowBtn_C.BndEvt__Button_67_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void BndEvt__Button_67_K2Node_ComponentBoundEvent_1_OnButtonPressedEvent__DelegateSignature(); // Function ArrowBtn.ArrowBtn_C.BndEvt__Button_67_K2Node_ComponentBoundEvent_1_OnButtonPressedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void BndEvt__Button_67_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature(); // Function ArrowBtn.ArrowBtn_C.BndEvt__Button_67_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void BndEvt__Button_67_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature(); // Function ArrowBtn.ArrowBtn_C.BndEvt__Button_67_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void BndEvt__Button_67_K2Node_ComponentBoundEvent_4_OnButtonReleasedEvent__DelegateSignature(); // Function ArrowBtn.ArrowBtn_C.BndEvt__Button_67_K2Node_ComponentBoundEvent_4_OnButtonReleasedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void ExecuteUbergraph_ArrowBtn(int32_t EntryPoint); // Function ArrowBtn.ArrowBtn_C.ExecuteUbergraph_ArrowBtn(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void CilckBtn__DelegateSignature(); // Function ArrowBtn.ArrowBtn_C.CilckBtn__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
 };
 
 // Function ArrowBtn.ArrowBtn_C.Construct

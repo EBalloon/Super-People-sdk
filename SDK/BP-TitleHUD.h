@@ -3,13 +3,13 @@ class ABP-TitleHUD_C : public ABravoHotelTitleHUD {
 
 public:
 
-	struct Unknown DefaultSceneRoot; // 0x4B0 (8)
-	struct Unknown MediaSoundComponent; // 0x4B8 (8)
-	struct FMulticastInlineDelegate EventDispatcher_PlayLobbySound; // 0x4C0 (16)
-	struct FMulticastInlineDelegate EventDispatcher_StopLobbySound; // 0x4D0 (16)
+	struct Unknown DefaultSceneRoot; // 0x4A0 (8)
+	struct Unknown MediaSoundComponent; // 0x4A8 (8)
+	struct FMulticastInlineDelegate EventDispatcher_PlayLobbySound; // 0x4B0 (16)
+	struct FMulticastInlineDelegate EventDispatcher_StopLobbySound; // 0x4C0 (16)
 
-	void EventDispatcher_StopLobbySound__DelegateSignature(); // Function BP-TitleHUD.BP-TitleHUD_C.EventDispatcher_StopLobbySound__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void EventDispatcher_PlayLobbySound__DelegateSignature(); // Function BP-TitleHUD.BP-TitleHUD_C.EventDispatcher_PlayLobbySound__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void EventDispatcher_StopLobbySound__DelegateSignature(); // Function BP-TitleHUD.BP-TitleHUD_C.EventDispatcher_StopLobbySound__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void EventDispatcher_PlayLobbySound__DelegateSignature(); // Function BP-TitleHUD.BP-TitleHUD_C.EventDispatcher_PlayLobbySound__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
 };
 
 // Function BP-TitleHUD.BP-TitleHUD_C.EventDispatcher_StopLobbySound__DelegateSignature

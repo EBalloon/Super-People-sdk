@@ -3,98 +3,98 @@ class UUW-Inventory_CarriedSlot_C : public UUW-Inventory_SlotBase_C {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x1360 (8)
-	struct Unknown Ani_Tutorial_Glow; // 0x1368 (8)
-	struct Unknown C_Slot_Up_Arrow; // 0x1370 (8)
-	struct Unknown C_SlotHover_ItemState_Hide; // 0x1378 (8)
-	struct Unknown C_SlotHover_ItemState_Show; // 0x1380 (8)
-	struct Unknown C_SlotHover; // 0x1388 (8)
-	struct Unknown BGImage; // 0x1390 (8)
-	struct Unknown BGImage_2; // 0x1398 (8)
-	struct Unknown CanvasPanel_ITemState; // 0x13A0 (8)
-	struct Unknown Count120; // 0x13A8 (8)
-	struct Unknown Crate_Default; // 0x13B0 (8)
-	struct Unknown Crate_Hover; // 0x13B8 (8)
-	struct Unknown Effect_Booster; // 0x13C0 (8)
-	struct Unknown Effect_Capsule; // 0x13C8 (8)
-	struct Unknown HorizontalBox_Rarity; // 0x13D0 (8)
-	struct Unknown HoverImage; // 0x13D8 (8)
-	struct Unknown HoverImage_Round; // 0x13E0 (8)
-	struct Unknown Image_531; // 0x13E8 (8)
-	struct Unknown Image_539; // 0x13F0 (8)
-	struct Unknown Image_540; // 0x13F8 (8)
-	struct Unknown Image_541; // 0x1400 (8)
-	struct Unknown Image_542; // 0x1408 (8)
-	struct Unknown Image_543; // 0x1410 (8)
-	struct Unknown Image_544; // 0x1418 (8)
-	struct Unknown Image_Bindable; // 0x1420 (8)
-	struct Unknown Image_Supply; // 0x1428 (8)
-	struct Unknown ItemImage; // 0x1430 (8)
-	struct Unknown ItemState_Text; // 0x1438 (8)
-	struct Unknown KeepedItem_List; // 0x1440 (8)
-	struct Unknown KeepedItem_ListHover; // 0x1448 (8)
-	struct Unknown LvColor; // 0x1450 (8)
-	struct Unknown Motion; // 0x1458 (8)
-	struct Unknown ProgressBar_309; // 0x1460 (8)
-	struct Unknown SizeBox_1; // 0x1468 (8)
-	struct Unknown TextBlock_3; // 0x1470 (8)
-	struct Unknown Tutorial_Glow; // 0x1478 (8)
-	struct Unknown UW-MouseRightClick_Big; // 0x1480 (8)
-	struct Unknown UW-MouseRightClick_Small; // 0x1488 (8)
-	struct Unknown WeaponColorBg; // 0x1490 (8)
-	struct Unknown WeaponEquipItem_Default; // 0x1498 (8)
-	struct Unknown WeaponEquipItem_Hover; // 0x14A0 (8)
-	struct Unknown WeaponItemImage; // 0x14A8 (8)
-	int32_t InventoryItemInfoIndex; // 0x14B0 (4)
-	struct Unknown MedicalBGColor; // 0x14B4 (16)
-	int32_t CurCount; // 0x14C4 (4)
-	struct FMulticastInlineDelegate SetSlotInfo; // 0x14C8 (16)
-	char CanUseCapsule : 0; // 0x14D8 (1)
-	struct Unknown SelectedHoverImage; // 0x14E0 (8)
-	struct TArray<Unknown> ShowRarityStar; // 0x14E8 (16)
-	struct TArray<Unknown> ShowIconBG; // 0x14F8 (16)
+	struct Unknown UberGraphFrame; // 0x1350 (8)
+	struct Unknown Ani_Tutorial_Glow; // 0x1358 (8)
+	struct Unknown C_Slot_Up_Arrow; // 0x1360 (8)
+	struct Unknown C_SlotHover_ItemState_Hide; // 0x1368 (8)
+	struct Unknown C_SlotHover_ItemState_Show; // 0x1370 (8)
+	struct Unknown C_SlotHover; // 0x1378 (8)
+	struct Unknown BGImage; // 0x1380 (8)
+	struct Unknown BGImage_2; // 0x1388 (8)
+	struct Unknown CanvasPanel_ITemState; // 0x1390 (8)
+	struct Unknown Count120; // 0x1398 (8)
+	struct Unknown Crate_Default; // 0x13A0 (8)
+	struct Unknown Crate_Hover; // 0x13A8 (8)
+	struct Unknown Effect_Booster; // 0x13B0 (8)
+	struct Unknown Effect_Capsule; // 0x13B8 (8)
+	struct Unknown HorizontalBox_Rarity; // 0x13C0 (8)
+	struct Unknown HoverImage; // 0x13C8 (8)
+	struct Unknown HoverImage_Round; // 0x13D0 (8)
+	struct Unknown Image_531; // 0x13D8 (8)
+	struct Unknown Image_539; // 0x13E0 (8)
+	struct Unknown Image_540; // 0x13E8 (8)
+	struct Unknown Image_541; // 0x13F0 (8)
+	struct Unknown Image_542; // 0x13F8 (8)
+	struct Unknown Image_543; // 0x1400 (8)
+	struct Unknown Image_544; // 0x1408 (8)
+	struct Unknown Image_Bindable; // 0x1410 (8)
+	struct Unknown Image_Supply; // 0x1418 (8)
+	struct Unknown ItemImage; // 0x1420 (8)
+	struct Unknown ItemState_Text; // 0x1428 (8)
+	struct Unknown KeepedItem_List; // 0x1430 (8)
+	struct Unknown KeepedItem_ListHover; // 0x1438 (8)
+	struct Unknown LvColor; // 0x1440 (8)
+	struct Unknown Motion; // 0x1448 (8)
+	struct Unknown ProgressBar_309; // 0x1450 (8)
+	struct Unknown SizeBox_1; // 0x1458 (8)
+	struct Unknown TextBlock_3; // 0x1460 (8)
+	struct Unknown Tutorial_Glow; // 0x1468 (8)
+	struct Unknown UW-MouseRightClick_Big; // 0x1470 (8)
+	struct Unknown UW-MouseRightClick_Small; // 0x1478 (8)
+	struct Unknown WeaponColorBg; // 0x1480 (8)
+	struct Unknown WeaponEquipItem_Default; // 0x1488 (8)
+	struct Unknown WeaponEquipItem_Hover; // 0x1490 (8)
+	struct Unknown WeaponItemImage; // 0x1498 (8)
+	int32_t InventoryItemInfoIndex; // 0x14A0 (4)
+	struct Unknown MedicalBGColor; // 0x14A4 (16)
+	int32_t CurCount; // 0x14B4 (4)
+	struct FMulticastInlineDelegate SetSlotInfo; // 0x14B8 (16)
+	char CanUseCapsule : 0; // 0x14C8 (1)
+	struct Unknown SelectedHoverImage; // 0x14D0 (8)
+	struct TArray<Unknown> ShowRarityStar; // 0x14D8 (16)
+	struct TArray<Unknown> ShowIconBG; // 0x14E8 (16)
 
-	void CheckBoosterItem(char& IsBoost, struct Unknown& OutColor, struct Unknown& OutTexture); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.CheckBoosterItem(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SetBoosterItem(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.SetBoosterItem(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void IsDraging(char& bResult); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.IsDraging(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void IsRoundItemType(char& bRoundItem); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.IsRoundItemType(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SetRightClickSmall(char IsVisible); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.SetRightClickSmall(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SetRightClickBig(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.SetRightClickBig(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SetCapsuleItem(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.SetCapsuleItem(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	char CanUseCapsuleItem(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.CanUseCapsuleItem(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void CheckCapsuleItem(char& IsCapsule, struct Unknown& Color); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.CheckCapsuleItem(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SetRarity(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.SetRarity(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SetBindInfo(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.SetBindInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	float GetPercent_1(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.GetPercent_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void CalTargetHealth(char Hover); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.CalTargetHealth(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SetChestItem(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.SetChestItem(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SetEquippableAttachment(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.SetEquippableAttachment(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void MouseEnterImpl(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.MouseEnterImpl(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void WeaponEquipState(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.WeaponEquipState(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SetItemCount(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.SetItemCount(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SetItemName(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.SetItemName(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	char OnDrop(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.OnDrop(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void DropQuantity(int32_t Quantity); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.DropQuantity(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	struct Unknown Set_WeaponItemImage_Brush_1(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.Set_WeaponItemImage_Brush_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void GetWeaponInfoByInventoryItemInfo(char& bResult, struct Unknown& WeaponInfo); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.GetWeaponInfoByInventoryItemInfo(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void OnDragDetected(struct Unknown MyGeometry, struct Unknown& PointerEvent, struct Unknown& Operation); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.OnDragDetected(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void OnRButtonClick(char& bResult); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.OnRButtonClick(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void Set_BGImage_Brush_1(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.Set_BGImage_Brush_1(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void ResetCarriedList(char& bResult); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.ResetCarriedList(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	struct Unknown SetItemImage(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.SetItemImage(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void DropAll(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.DropAll(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	struct FText GetCount(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.GetCount(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	struct FText GetItemName(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.GetItemName(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void OnLoaded_2B134E7141F4FDBD4FA7CCAEDA8B0F59(struct Unknown Loaded); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.OnLoaded_2B134E7141F4FDBD4FA7CCAEDA8B0F59(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void AsyncLoadIconTexture(struct Unknown IconTexture); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.AsyncLoadIconTexture(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void Slotinfo(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.Slotinfo(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void OnChangeWeapons(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.OnChangeWeapons(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void Construct(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void OnMouseLeave(struct Unknown& MouseEvent); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void ExecuteUbergraph_UW-Inventory_CarriedSlot(int32_t EntryPoint); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.ExecuteUbergraph_UW-Inventory_CarriedSlot(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
-	void SetSlotInfo__DelegateSignature(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.SetSlotInfo__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B6DD70>
+	void CheckBoosterItem(char& IsBoost, struct Unknown& OutColor, struct Unknown& OutTexture); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.CheckBoosterItem(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetBoosterItem(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.SetBoosterItem(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void IsDraging(char& bResult); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.IsDraging(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void IsRoundItemType(char& bRoundItem); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.IsRoundItemType(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetRightClickSmall(char IsVisible); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.SetRightClickSmall(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetRightClickBig(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.SetRightClickBig(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetCapsuleItem(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.SetCapsuleItem(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	char CanUseCapsuleItem(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.CanUseCapsuleItem(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void CheckCapsuleItem(char& IsCapsule, struct Unknown& Color); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.CheckCapsuleItem(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetRarity(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.SetRarity(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetBindInfo(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.SetBindInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	float GetPercent_1(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.GetPercent_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void CalTargetHealth(char Hover); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.CalTargetHealth(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetChestItem(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.SetChestItem(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetEquippableAttachment(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.SetEquippableAttachment(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void MouseEnterImpl(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.MouseEnterImpl(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void WeaponEquipState(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.WeaponEquipState(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetItemCount(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.SetItemCount(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetItemName(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.SetItemName(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	char OnDrop(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.OnDrop(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void DropQuantity(int32_t Quantity); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.DropQuantity(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	struct Unknown Set_WeaponItemImage_Brush_1(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.Set_WeaponItemImage_Brush_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void GetWeaponInfoByInventoryItemInfo(char& bResult, struct Unknown& WeaponInfo); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.GetWeaponInfoByInventoryItemInfo(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void OnDragDetected(struct Unknown MyGeometry, struct Unknown& PointerEvent, struct Unknown& Operation); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.OnDragDetected(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void OnRButtonClick(char& bResult); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.OnRButtonClick(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void Set_BGImage_Brush_1(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.Set_BGImage_Brush_1(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void ResetCarriedList(char& bResult); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.ResetCarriedList(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	struct Unknown SetItemImage(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.SetItemImage(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void DropAll(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.DropAll(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	struct FText GetCount(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.GetCount(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	struct FText GetItemName(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.GetItemName(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void OnLoaded_2B134E7141F4FDBD4FA7CCAEDA8B0F59(struct Unknown Loaded); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.OnLoaded_2B134E7141F4FDBD4FA7CCAEDA8B0F59(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void AsyncLoadIconTexture(struct Unknown IconTexture); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.AsyncLoadIconTexture(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void Slotinfo(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.Slotinfo(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void OnChangeWeapons(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.OnChangeWeapons(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void Construct(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void OnMouseLeave(struct Unknown& MouseEvent); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void ExecuteUbergraph_UW-Inventory_CarriedSlot(int32_t EntryPoint); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.ExecuteUbergraph_UW-Inventory_CarriedSlot(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetSlotInfo__DelegateSignature(); // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.SetSlotInfo__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
 };
 
 // Function UW-Inventory_CarriedSlot.UW-Inventory_CarriedSlot_C.CheckBoosterItem
