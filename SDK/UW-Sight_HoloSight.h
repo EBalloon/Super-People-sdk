@@ -6,8 +6,8 @@ public:
 	struct Unknown UberGraphFrame; // 0x248 (8)
 	struct Unknown Image_1; // 0x250 (8)
 
-	void SetScopeImageAngle(float NewAngle); // Function UW-Sight_HoloSight.UW-Sight_HoloSight_C.SetScopeImageAngle(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-Sight_HoloSight(int32_t EntryPoint); // Function UW-Sight_HoloSight.UW-Sight_HoloSight_C.ExecuteUbergraph_UW-Sight_HoloSight(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetScopeImageAngle(float NewAngle); // Function UW-Sight_HoloSight.UW-Sight_HoloSight_C.SetScopeImageAngle(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ExecuteUbergraph_UW-Sight_HoloSight(int32_t EntryPoint); // Function UW-Sight_HoloSight.UW-Sight_HoloSight_C.ExecuteUbergraph_UW-Sight_HoloSight(Final|UbergraphFunction) // <Game_BE.exe+0x2B812B0>
 };
 
 // Function UW-Sight_HoloSight.UW-Sight_HoloSight_C.SetScopeImageAngle

@@ -29,16 +29,16 @@ public:
 	struct Unknown RichTextBlock_418; // 0x300 (8)
 	char NextScene : 0; // 0x308 (1)
 
-	void MoveNextScene(); // Function UW-ScenarioStartPopup.UW-ScenarioStartPopup_C.MoveNextScene(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Construct(); // Function UW-ScenarioStartPopup.UW-ScenarioStartPopup_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void BndEvt__Button_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-ScenarioStartPopup.UW-ScenarioStartPopup_C.BndEvt__Button_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void BndEvt__Button_247_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(); // Function UW-ScenarioStartPopup.UW-ScenarioStartPopup_C.BndEvt__Button_247_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void CustomEvent_1(); // Function UW-ScenarioStartPopup.UW-ScenarioStartPopup_C.CustomEvent_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void CustomEvent(); // Function UW-ScenarioStartPopup.UW-ScenarioStartPopup_C.CustomEvent(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void BndEvt__Button_Beteran_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(); // Function UW-ScenarioStartPopup.UW-ScenarioStartPopup_C.BndEvt__Button_Beteran_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void CustomEvent_2(); // Function UW-ScenarioStartPopup.UW-ScenarioStartPopup_C.CustomEvent_2(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnTrainingModeOffDelegate_Event_1(); // Function UW-ScenarioStartPopup.UW-ScenarioStartPopup_C.OnTrainingModeOffDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-ScenarioStartPopup(int32_t EntryPoint); // Function UW-ScenarioStartPopup.UW-ScenarioStartPopup_C.ExecuteUbergraph_UW-ScenarioStartPopup(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void MoveNextScene(); // Function UW-ScenarioStartPopup.UW-ScenarioStartPopup_C.MoveNextScene(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Construct(); // Function UW-ScenarioStartPopup.UW-ScenarioStartPopup_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void BndEvt__Button_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-ScenarioStartPopup.UW-ScenarioStartPopup_C.BndEvt__Button_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void BndEvt__Button_247_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(); // Function UW-ScenarioStartPopup.UW-ScenarioStartPopup_C.BndEvt__Button_247_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void CustomEvent_1(); // Function UW-ScenarioStartPopup.UW-ScenarioStartPopup_C.CustomEvent_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void CustomEvent(); // Function UW-ScenarioStartPopup.UW-ScenarioStartPopup_C.CustomEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void BndEvt__Button_Beteran_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(); // Function UW-ScenarioStartPopup.UW-ScenarioStartPopup_C.BndEvt__Button_Beteran_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void CustomEvent_2(); // Function UW-ScenarioStartPopup.UW-ScenarioStartPopup_C.CustomEvent_2(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnTrainingModeOffDelegate_Event_1(); // Function UW-ScenarioStartPopup.UW-ScenarioStartPopup_C.OnTrainingModeOffDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ExecuteUbergraph_UW-ScenarioStartPopup(int32_t EntryPoint); // Function UW-ScenarioStartPopup.UW-ScenarioStartPopup_C.ExecuteUbergraph_UW-ScenarioStartPopup(Final|UbergraphFunction) // <Game_BE.exe+0x2B812B0>
 };
 
 // Function UW-ScenarioStartPopup.UW-ScenarioStartPopup_C.MoveNextScene

@@ -7,13 +7,13 @@ public:
 	float SkillDelayTime; // 0x380 (4)
 	struct Unknown BlackOutDynamicMaterial; // 0x388 (8)
 
-	void UserConstructionScript(); // Function BP-AreaSkill_PowerInterruption.BP-AreaSkill_PowerInterruption_C.UserConstructionScript(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ActivateEffect(struct Unknown Character); // Function BP-AreaSkill_PowerInterruption.BP-AreaSkill_PowerInterruption_C.ActivateEffect(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void DeactivateEffect(struct Unknown Character); // Function BP-AreaSkill_PowerInterruption.BP-AreaSkill_PowerInterruption_C.DeactivateEffect(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void BPSetAreaSkillInfo(); // Function BP-AreaSkill_PowerInterruption.BP-AreaSkill_PowerInterruption_C.BPSetAreaSkillInfo(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void StartDestroy(); // Function BP-AreaSkill_PowerInterruption.BP-AreaSkill_PowerInterruption_C.StartDestroy(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveBeginPlay(); // Function BP-AreaSkill_PowerInterruption.BP-AreaSkill_PowerInterruption_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ExecuteUbergraph_BP-AreaSkill_PowerInterruption(int32_t EntryPoint); // Function BP-AreaSkill_PowerInterruption.BP-AreaSkill_PowerInterruption_C.ExecuteUbergraph_BP-AreaSkill_PowerInterruption(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void UserConstructionScript(); // Function BP-AreaSkill_PowerInterruption.BP-AreaSkill_PowerInterruption_C.UserConstructionScript(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ActivateEffect(struct Unknown Character); // Function BP-AreaSkill_PowerInterruption.BP-AreaSkill_PowerInterruption_C.ActivateEffect(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void DeactivateEffect(struct Unknown Character); // Function BP-AreaSkill_PowerInterruption.BP-AreaSkill_PowerInterruption_C.DeactivateEffect(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void BPSetAreaSkillInfo(); // Function BP-AreaSkill_PowerInterruption.BP-AreaSkill_PowerInterruption_C.BPSetAreaSkillInfo(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void StartDestroy(); // Function BP-AreaSkill_PowerInterruption.BP-AreaSkill_PowerInterruption_C.StartDestroy(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveBeginPlay(); // Function BP-AreaSkill_PowerInterruption.BP-AreaSkill_PowerInterruption_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ExecuteUbergraph_BP-AreaSkill_PowerInterruption(int32_t EntryPoint); // Function BP-AreaSkill_PowerInterruption.BP-AreaSkill_PowerInterruption_C.ExecuteUbergraph_BP-AreaSkill_PowerInterruption(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
 };
 
 // Function BP-AreaSkill_PowerInterruption.BP-AreaSkill_PowerInterruption_C.UserConstructionScript

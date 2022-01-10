@@ -25,11 +25,11 @@ public:
 	struct Unknown VB_Retreat; // 0x2E0 (8)
 	struct Unknown WidgetSwitcher_126; // 0x2E8 (8)
 
-	void SetTutorialInfo(enum class Unknow SkillType); // Function UW-Radar_tutorial.UW-Radar_tutorial_C.SetTutorialInfo(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnLoaded_22BC0859447517E514C09EA47A9A913D(struct Unknown Loaded); // Function UW-Radar_tutorial.UW-Radar_tutorial_C.OnLoaded_22BC0859447517E514C09EA47A9A913D(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void SetRadarTutorial(); // Function UW-Radar_tutorial.UW-Radar_tutorial_C.SetRadarTutorial(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void SetGuideIconAsyncLoad(struct Unknown Image); // Function UW-Radar_tutorial.UW-Radar_tutorial_C.SetGuideIconAsyncLoad(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-Radar_tutorial(int32_t EntryPoint); // Function UW-Radar_tutorial.UW-Radar_tutorial_C.ExecuteUbergraph_UW-Radar_tutorial(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetTutorialInfo(enum class Unknow SkillType); // Function UW-Radar_tutorial.UW-Radar_tutorial_C.SetTutorialInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnLoaded_22BC0859447517E514C09EA47A9A913D(struct Unknown Loaded); // Function UW-Radar_tutorial.UW-Radar_tutorial_C.OnLoaded_22BC0859447517E514C09EA47A9A913D(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void SetRadarTutorial(); // Function UW-Radar_tutorial.UW-Radar_tutorial_C.SetRadarTutorial(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void SetGuideIconAsyncLoad(struct Unknown Image); // Function UW-Radar_tutorial.UW-Radar_tutorial_C.SetGuideIconAsyncLoad(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ExecuteUbergraph_UW-Radar_tutorial(int32_t EntryPoint); // Function UW-Radar_tutorial.UW-Radar_tutorial_C.ExecuteUbergraph_UW-Radar_tutorial(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
 };
 
 // Function UW-Radar_tutorial.UW-Radar_tutorial_C.SetTutorialInfo

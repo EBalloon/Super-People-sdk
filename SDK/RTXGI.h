@@ -68,7 +68,7 @@ public:
 	struct Unknown LastOrigin; // 0x298 (12)
 	struct Unknown ProbeScrollOffset; // 0x2A4 (12)
 
-	void DDGIClearVolumes(); // Function RTXGI.DDGIVolumeComponent.DDGIClearVolumes(Final|Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1663F80>
+	void DDGIClearVolumes(); // Function RTXGI.DDGIVolumeComponent.DDGIClearVolumes(Final|Exec|Native|Public) // <Game_BE.exe+0x1663F80>
 };
 
 // Class RTXGI.RTXGIPluginSettings

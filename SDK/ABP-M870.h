@@ -14,8 +14,8 @@ public:
 	struct Unknown AnimGraphNode_Slot; // 0x5A0 (72)
 	struct Unknown AnimGraphNode_LocalRefPose; // 0x5E8 (24)
 
-	void AnimGraph(struct Unknown& AnimGraph); // Function ABP-M870.ABP-M870_C.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ExecuteUbergraph_ABP-M870(int32_t EntryPoint); // Function ABP-M870.ABP-M870_C.ExecuteUbergraph_ABP-M870(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void AnimGraph(struct Unknown& AnimGraph); // Function ABP-M870.ABP-M870_C.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ExecuteUbergraph_ABP-M870(int32_t EntryPoint); // Function ABP-M870.ABP-M870_C.ExecuteUbergraph_ABP-M870(Final|UbergraphFunction) // <Game_BE.exe+0x2B812B0>
 };
 
 // Function ABP-M870.ABP-M870_C.AnimGraph

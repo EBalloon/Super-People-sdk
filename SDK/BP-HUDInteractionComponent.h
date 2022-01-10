@@ -18,21 +18,21 @@ public:
 	char bInputModeUI_1 : 0; // 0x171 (1)
 	struct TArray<Unknown> InputActionsToBlock_1; // 0x178 (16)
 
-	void CheckAnyAction(char& AnyAction); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.CheckAnyAction(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void CheckAnyCloseUI(char& AnyClosed); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.CheckAnyCloseUI(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	struct Unknown GetSightInfoWidget(); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.GetSightInfoWidget(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void GetReplayWidget(char WantsToCreateIfNull, struct Unknown& Widget); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.GetReplayWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void GetSpectatorWidget(char WantsToCreateIfNull, struct Unknown& Widget); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.GetSpectatorWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void GetInventoryWidget(char WantsToCreateIfNull, struct Unknown& Widget); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.GetInventoryWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void GetPlayerSpectatorHUD(struct Unknown& RefSpectatorHUD); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.GetPlayerSpectatorHUD(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void IsReplay(char& IsReplay); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.IsReplay(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void IsOpenSystemPopup(char& bResult); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.IsOpenSystemPopup(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void GetPlayerMainWidget(char WantsToCreateIfNull, struct Unknown& Widget); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.GetPlayerMainWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void IsMatchEnd(char& State); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.IsMatchEnd(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void InputMiniMap(); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.InputMiniMap(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void InputWorldMap(); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.InputWorldMap(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void InputToggleIngameHUD(); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.InputToggleIngameHUD(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ExecuteUbergraph_BP-HUDInteractionComponent(int32_t EntryPoint); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.ExecuteUbergraph_BP-HUDInteractionComponent(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void CheckAnyAction(char& AnyAction); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.CheckAnyAction(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
+	void CheckAnyCloseUI(char& AnyClosed); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.CheckAnyCloseUI(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
+	struct Unknown GetSightInfoWidget(); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.GetSightInfoWidget(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void GetReplayWidget(char WantsToCreateIfNull, struct Unknown& Widget); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.GetReplayWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
+	void GetSpectatorWidget(char WantsToCreateIfNull, struct Unknown& Widget); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.GetSpectatorWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
+	void GetInventoryWidget(char WantsToCreateIfNull, struct Unknown& Widget); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.GetInventoryWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
+	void GetPlayerSpectatorHUD(struct Unknown& RefSpectatorHUD); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.GetPlayerSpectatorHUD(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
+	void IsReplay(char& IsReplay); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.IsReplay(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
+	void IsOpenSystemPopup(char& bResult); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.IsOpenSystemPopup(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
+	void GetPlayerMainWidget(char WantsToCreateIfNull, struct Unknown& Widget); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.GetPlayerMainWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
+	void IsMatchEnd(char& State); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.IsMatchEnd(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
+	void InputMiniMap(); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.InputMiniMap(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void InputWorldMap(); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.InputWorldMap(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void InputToggleIngameHUD(); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.InputToggleIngameHUD(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ExecuteUbergraph_BP-HUDInteractionComponent(int32_t EntryPoint); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.ExecuteUbergraph_BP-HUDInteractionComponent(Final|UbergraphFunction) // <Game_BE.exe+0x2B812B0>
 };
 
 // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.CheckAnyAction

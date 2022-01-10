@@ -8,11 +8,11 @@ public:
 	struct Unknown SM-Aricraft001__WheelFolding; // 0x320 (8)
 	struct Unknown DefaultSceneRoot; // 0x328 (8)
 
-	void ReceiveBeginPlay(); // Function BP-AircraftBomber_TypeC.BP-AircraftBomber_TypeC_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveTick(float DeltaSeconds); // Function BP-AircraftBomber_TypeC.BP-AircraftBomber_TypeC_C.ReceiveTick(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveDestroyed(); // Function BP-AircraftBomber_TypeC.BP-AircraftBomber_TypeC_C.ReceiveDestroyed(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void BndEvt__MovementComponent_K2Node_ComponentBoundEvent_0_OnInterpToResetDelegate__DelegateSignature(struct Unknown& ImpactResult, float Time); // Function BP-AircraftBomber_TypeC.BP-AircraftBomber_TypeC_C.BndEvt__MovementComponent_K2Node_ComponentBoundEvent_0_OnInterpToResetDelegate__DelegateSignature(HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ExecuteUbergraph_BP-AircraftBomber_TypeC(int32_t EntryPoint); // Function BP-AircraftBomber_TypeC.BP-AircraftBomber_TypeC_C.ExecuteUbergraph_BP-AircraftBomber_TypeC(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void ReceiveBeginPlay(); // Function BP-AircraftBomber_TypeC.BP-AircraftBomber_TypeC_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveTick(float DeltaSeconds); // Function BP-AircraftBomber_TypeC.BP-AircraftBomber_TypeC_C.ReceiveTick(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveDestroyed(); // Function BP-AircraftBomber_TypeC.BP-AircraftBomber_TypeC_C.ReceiveDestroyed(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void BndEvt__MovementComponent_K2Node_ComponentBoundEvent_0_OnInterpToResetDelegate__DelegateSignature(struct Unknown& ImpactResult, float Time); // Function BP-AircraftBomber_TypeC.BP-AircraftBomber_TypeC_C.BndEvt__MovementComponent_K2Node_ComponentBoundEvent_0_OnInterpToResetDelegate__DelegateSignature(HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ExecuteUbergraph_BP-AircraftBomber_TypeC(int32_t EntryPoint); // Function BP-AircraftBomber_TypeC.BP-AircraftBomber_TypeC_C.ExecuteUbergraph_BP-AircraftBomber_TypeC(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
 };
 
 // Function BP-AircraftBomber_TypeC.BP-AircraftBomber_TypeC_C.ReceiveBeginPlay

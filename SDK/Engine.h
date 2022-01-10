@@ -4198,31 +4198,31 @@ public:
 	struct FMulticastSparseDelegate OnComponentDeactivated; // 0x8E (1)
 	struct TArray<Unknown> UCSModifiedProperties; // 0x90 (16)
 
-	void ToggleActive(); // Function Engine.ActorComponent.ToggleActive(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3B59E00>
-	void SetTickGroup(char NewTickGroup); // Function Engine.ActorComponent.SetTickGroup(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4439FC0>
-	void SetTickableWhenPaused(char bTickableWhenPaused); // Function Engine.ActorComponent.SetTickableWhenPaused(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x443A040>
-	void SetIsReplicated(char ShouldReplicate); // Function Engine.ActorComponent.SetIsReplicated(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4439F30>
-	void SetComponentTickInterval(float TickInterval); // Function Engine.ActorComponent.SetComponentTickInterval(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4439EB0>
-	void SetComponentTickEnabled(char bEnabled); // Function Engine.ActorComponent.SetComponentTickEnabled(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4434DA0>
-	void SetAutoActivate(char bNewAutoActivate); // Function Engine.ActorComponent.SetAutoActivate(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4439E20>
-	void SetActive(char bNewActive, char bReset); // Function Engine.ActorComponent.SetActive(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4439D50>
-	void RemoveTickPrerequisiteComponent(struct Unknown PrerequisiteComponent); // Function Engine.ActorComponent.RemoveTickPrerequisiteComponent(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4439CC0>
-	void RemoveTickPrerequisiteActor(struct Unknown PrerequisiteActor); // Function Engine.ActorComponent.RemoveTickPrerequisiteActor(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4439C30>
-	void ReceiveTick(float DeltaSeconds); // Function Engine.ActorComponent.ReceiveTick(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveEndPlay(char EndPlayReason); // Function Engine.ActorComponent.ReceiveEndPlay(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveBeginPlay(); // Function Engine.ActorComponent.ReceiveBeginPlay(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnRep_IsActive(); // Function Engine.ActorComponent.OnRep_IsActive(Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x36B18D0>
-	void K2_DestroyComponent(struct Unknown Object); // Function Engine.ActorComponent.K2_DestroyComponent(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4439B30>
-	char IsComponentTickEnabled(); // Function Engine.ActorComponent.IsComponentTickEnabled(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4439B00>
-	char IsBeingDestroyed(); // Function Engine.ActorComponent.IsBeingDestroyed(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4439AD0>
-	char IsActive(); // Function Engine.ActorComponent.IsActive(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4439AA0>
-	struct Unknown GetOwner(); // Function Engine.ActorComponent.GetOwner(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4433BA0>
-	float GetComponentTickInterval(); // Function Engine.ActorComponent.GetComponentTickInterval(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4439A70>
-	void Deactivate(); // Function Engine.ActorComponent.Deactivate(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x36B18B0>
-	char ComponentHasTag(struct FName Tag); // Function Engine.ActorComponent.ComponentHasTag(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4439860>
-	void AddTickPrerequisiteComponent(struct Unknown PrerequisiteComponent); // Function Engine.ActorComponent.AddTickPrerequisiteComponent(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4439710>
-	void AddTickPrerequisiteActor(struct Unknown PrerequisiteActor); // Function Engine.ActorComponent.AddTickPrerequisiteActor(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4439680>
-	void Activate(char bReset); // Function Engine.ActorComponent.Activate(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3B5A0A0>
+	void ToggleActive(); // Function Engine.ActorComponent.ToggleActive(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B59E00>
+	void SetTickGroup(char NewTickGroup); // Function Engine.ActorComponent.SetTickGroup(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4439FC0>
+	void SetTickableWhenPaused(char bTickableWhenPaused); // Function Engine.ActorComponent.SetTickableWhenPaused(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x443A040>
+	void SetIsReplicated(char ShouldReplicate); // Function Engine.ActorComponent.SetIsReplicated(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4439F30>
+	void SetComponentTickInterval(float TickInterval); // Function Engine.ActorComponent.SetComponentTickInterval(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4439EB0>
+	void SetComponentTickEnabled(char bEnabled); // Function Engine.ActorComponent.SetComponentTickEnabled(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4434DA0>
+	void SetAutoActivate(char bNewAutoActivate); // Function Engine.ActorComponent.SetAutoActivate(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4439E20>
+	void SetActive(char bNewActive, char bReset); // Function Engine.ActorComponent.SetActive(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4439D50>
+	void RemoveTickPrerequisiteComponent(struct Unknown PrerequisiteComponent); // Function Engine.ActorComponent.RemoveTickPrerequisiteComponent(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4439CC0>
+	void RemoveTickPrerequisiteActor(struct Unknown PrerequisiteActor); // Function Engine.ActorComponent.RemoveTickPrerequisiteActor(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4439C30>
+	void ReceiveTick(float DeltaSeconds); // Function Engine.ActorComponent.ReceiveTick(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveEndPlay(char EndPlayReason); // Function Engine.ActorComponent.ReceiveEndPlay(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveBeginPlay(); // Function Engine.ActorComponent.ReceiveBeginPlay(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnRep_IsActive(); // Function Engine.ActorComponent.OnRep_IsActive(Native|Public) // <Game_BE.exe+0x36B18D0>
+	void K2_DestroyComponent(struct Unknown Object); // Function Engine.ActorComponent.K2_DestroyComponent(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4439B30>
+	char IsComponentTickEnabled(); // Function Engine.ActorComponent.IsComponentTickEnabled(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4439B00>
+	char IsBeingDestroyed(); // Function Engine.ActorComponent.IsBeingDestroyed(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4439AD0>
+	char IsActive(); // Function Engine.ActorComponent.IsActive(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4439AA0>
+	struct Unknown GetOwner(); // Function Engine.ActorComponent.GetOwner(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4433BA0>
+	float GetComponentTickInterval(); // Function Engine.ActorComponent.GetComponentTickInterval(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4439A70>
+	void Deactivate(); // Function Engine.ActorComponent.Deactivate(Native|Public|BlueprintCallable) // <Game_BE.exe+0x36B18B0>
+	char ComponentHasTag(struct FName Tag); // Function Engine.ActorComponent.ComponentHasTag(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4439860>
+	void AddTickPrerequisiteComponent(struct Unknown PrerequisiteComponent); // Function Engine.ActorComponent.AddTickPrerequisiteComponent(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4439710>
+	void AddTickPrerequisiteActor(struct Unknown PrerequisiteActor); // Function Engine.ActorComponent.AddTickPrerequisiteActor(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4439680>
+	void Activate(char bReset); // Function Engine.ActorComponent.Activate(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B5A0A0>
 };
 
 // Class Engine.SceneComponent
@@ -4255,67 +4255,67 @@ public:
 	char DetailMode; // 0xB1 (1)
 	struct FMulticastSparseDelegate PhysicsVolumeChangedDelegate; // 0x131 (1)
 
-	void ToggleVisibility(char bPropagateToChildren); // Function Engine.SceneComponent.ToggleVisibility(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B86F0>
-	char SnapTo(struct Unknown InParent, struct FName InSocketName); // Function Engine.SceneComponent.SnapTo(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B8630>
-	void SetWorldScale3D(struct Unknown NewScale); // Function Engine.SceneComponent.SetWorldScale3D(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B8450>
-	void SetVisibility(char bNewVisibility, char bPropagateToChildren); // Function Engine.SceneComponent.SetVisibility(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B8380>
-	void SetShouldUpdatePhysicsVolume(char bInShouldUpdatePhysicsVolume); // Function Engine.SceneComponent.SetShouldUpdatePhysicsVolume(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B82F0>
-	void SetRelativeScale3D(struct Unknown NewScale3D); // Function Engine.SceneComponent.SetRelativeScale3D(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B8260>
-	void SetMobility(char NewMobility); // Function Engine.SceneComponent.SetMobility(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B81E0>
-	void SetHiddenInGame(char NewHidden, char bPropagateToChildren); // Function Engine.SceneComponent.SetHiddenInGame(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B8110>
-	void SetAbsolute(char bNewAbsoluteLocation, char bNewAbsoluteRotation, char bNewAbsoluteScale); // Function Engine.SceneComponent.SetAbsolute(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B7F70>
-	void ResetRelativeTransform(); // Function Engine.SceneComponent.ResetRelativeTransform(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B7F50>
-	void OnRep_Visibility(char OldValue); // Function Engine.SceneComponent.OnRep_Visibility(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B7D70>
-	void OnRep_Transform(); // Function Engine.SceneComponent.OnRep_Transform(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B7D50>
-	void OnRep_AttachSocketName(); // Function Engine.SceneComponent.OnRep_AttachSocketName(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B7D30>
-	void OnRep_AttachParent(); // Function Engine.SceneComponent.OnRep_AttachParent(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B7D30>
-	void OnRep_AttachChildren(); // Function Engine.SceneComponent.OnRep_AttachChildren(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B7D10>
-	void K2_SetWorldTransform(struct Unknown& NewTransform, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.SceneComponent.K2_SetWorldTransform(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B7B10>
-	void K2_SetWorldRotation(struct Unknown NewRotation, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.SceneComponent.K2_SetWorldRotation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B7970>
-	void K2_SetWorldLocationAndRotation(struct Unknown NewLocation, struct Unknown NewRotation, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.SceneComponent.K2_SetWorldLocationAndRotation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B7780>
-	void K2_SetWorldLocation(struct Unknown NewLocation, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.SceneComponent.K2_SetWorldLocation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B75E0>
-	void K2_SetRelativeTransform(struct Unknown& NewTransform, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.SceneComponent.K2_SetRelativeTransform(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B73E0>
-	void K2_SetRelativeRotation(struct Unknown NewRotation, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.SceneComponent.K2_SetRelativeRotation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B7240>
-	void K2_SetRelativeLocationAndRotation(struct Unknown NewLocation, struct Unknown NewRotation, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.SceneComponent.K2_SetRelativeLocationAndRotation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B7050>
-	void K2_SetRelativeLocation(struct Unknown NewLocation, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.SceneComponent.K2_SetRelativeLocation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B6EB0>
-	struct Unknown K2_GetComponentToWorld(); // Function Engine.SceneComponent.K2_GetComponentToWorld(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B6E50>
-	struct Unknown K2_GetComponentScale(); // Function Engine.SceneComponent.K2_GetComponentScale(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B6E10>
-	struct Unknown K2_GetComponentRotation(); // Function Engine.SceneComponent.K2_GetComponentRotation(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B6DD0>
-	struct Unknown K2_GetComponentLocation(); // Function Engine.SceneComponent.K2_GetComponentLocation(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B6D90>
-	void K2_DetachFromComponent(enum class Unknow LocationRule, enum class Unknow RotationRule, enum class Unknow ScaleRule, char bCallModify); // Function Engine.SceneComponent.K2_DetachFromComponent(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B6C40>
-	char K2_AttachToComponent(struct Unknown Parent, struct FName SocketName, enum class Unknow LocationRule, enum class Unknow RotationRule, enum class Unknow ScaleRule, char bWeldSimulatedBodies); // Function Engine.SceneComponent.K2_AttachToComponent(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B6A90>
-	char K2_AttachTo(struct Unknown InParent, struct FName InSocketName, char AttachType, char bWeldSimulatedBodies); // Function Engine.SceneComponent.K2_AttachTo(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B6940>
-	void K2_AddWorldTransform(struct Unknown& DeltaTransform, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.SceneComponent.K2_AddWorldTransform(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B6740>
-	void K2_AddWorldRotation(struct Unknown DeltaRotation, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.SceneComponent.K2_AddWorldRotation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B65A0>
-	void K2_AddWorldOffset(struct Unknown DeltaLocation, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.SceneComponent.K2_AddWorldOffset(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B6400>
-	void K2_AddRelativeRotation(struct Unknown DeltaRotation, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.SceneComponent.K2_AddRelativeRotation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B6260>
-	void K2_AddRelativeLocation(struct Unknown DeltaLocation, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.SceneComponent.K2_AddRelativeLocation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B60C0>
-	void K2_AddLocalTransform(struct Unknown& DeltaTransform, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.SceneComponent.K2_AddLocalTransform(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B5EC0>
-	void K2_AddLocalRotation(struct Unknown DeltaRotation, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.SceneComponent.K2_AddLocalRotation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B5D20>
-	void K2_AddLocalOffset(struct Unknown DeltaLocation, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.SceneComponent.K2_AddLocalOffset(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B5B80>
-	char IsVisible(); // Function Engine.SceneComponent.IsVisible(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B5B50>
-	char IsSimulatingPhysics(struct FName BoneName); // Function Engine.SceneComponent.IsSimulatingPhysics(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B5AB0>
-	char IsAnySimulatingPhysics(); // Function Engine.SceneComponent.IsAnySimulatingPhysics(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B5A80>
-	struct Unknown GetUpVector(); // Function Engine.SceneComponent.GetUpVector(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B58F0>
-	struct Unknown GetSocketTransform(struct FName InSocketName, char TransformSpace); // Function Engine.SceneComponent.GetSocketTransform(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B57F0>
-	struct Unknown GetSocketRotation(struct FName InSocketName); // Function Engine.SceneComponent.GetSocketRotation(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B5740>
-	struct Unknown GetSocketQuaternion(struct FName InSocketName); // Function Engine.SceneComponent.GetSocketQuaternion(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B56A0>
-	struct Unknown GetSocketLocation(struct FName InSocketName); // Function Engine.SceneComponent.GetSocketLocation(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B55F0>
-	char GetShouldUpdatePhysicsVolume(); // Function Engine.SceneComponent.GetShouldUpdatePhysicsVolume(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B55C0>
-	struct Unknown GetRightVector(); // Function Engine.SceneComponent.GetRightVector(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B5580>
-	struct Unknown GetRelativeTransform(); // Function Engine.SceneComponent.GetRelativeTransform(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B5520>
-	struct Unknown GetPhysicsVolume(); // Function Engine.SceneComponent.GetPhysicsVolume(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B54F0>
-	void GetParentComponents(struct TArray<Unknown>& Parents); // Function Engine.SceneComponent.GetParentComponents(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B5440>
-	int32_t GetNumChildrenComponents(); // Function Engine.SceneComponent.GetNumChildrenComponents(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B5410>
-	struct Unknown GetForwardVector(); // Function Engine.SceneComponent.GetForwardVector(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x458C250>
-	struct Unknown GetComponentVelocity(); // Function Engine.SceneComponent.GetComponentVelocity(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B53D0>
-	void GetChildrenComponents(char bIncludeAllDescendants, struct TArray<Unknown>& Children); // Function Engine.SceneComponent.GetChildrenComponents(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B52D0>
-	struct Unknown GetChildComponent(int32_t ChildIndex); // Function Engine.SceneComponent.GetChildComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B5240>
-	struct FName GetAttachSocketName(); // Function Engine.SceneComponent.GetAttachSocketName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B5220>
-	struct Unknown GetAttachParent(); // Function Engine.SceneComponent.GetAttachParent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B5200>
-	struct TArray<Unknown> GetAllSocketNames(); // Function Engine.SceneComponent.GetAllSocketNames(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B5180>
-	char DoesSocketExist(struct FName InSocketName); // Function Engine.SceneComponent.DoesSocketExist(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B50E0>
-	void DetachFromParent(char bMaintainWorldPosition, char bCallModify); // Function Engine.SceneComponent.DetachFromParent(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B5010>
+	void ToggleVisibility(char bPropagateToChildren); // Function Engine.SceneComponent.ToggleVisibility(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45B86F0>
+	char SnapTo(struct Unknown InParent, struct FName InSocketName); // Function Engine.SceneComponent.SnapTo(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45B8630>
+	void SetWorldScale3D(struct Unknown NewScale); // Function Engine.SceneComponent.SetWorldScale3D(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45B8450>
+	void SetVisibility(char bNewVisibility, char bPropagateToChildren); // Function Engine.SceneComponent.SetVisibility(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45B8380>
+	void SetShouldUpdatePhysicsVolume(char bInShouldUpdatePhysicsVolume); // Function Engine.SceneComponent.SetShouldUpdatePhysicsVolume(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45B82F0>
+	void SetRelativeScale3D(struct Unknown NewScale3D); // Function Engine.SceneComponent.SetRelativeScale3D(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45B8260>
+	void SetMobility(char NewMobility); // Function Engine.SceneComponent.SetMobility(Native|Public|BlueprintCallable) // <Game_BE.exe+0x45B81E0>
+	void SetHiddenInGame(char NewHidden, char bPropagateToChildren); // Function Engine.SceneComponent.SetHiddenInGame(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45B8110>
+	void SetAbsolute(char bNewAbsoluteLocation, char bNewAbsoluteRotation, char bNewAbsoluteScale); // Function Engine.SceneComponent.SetAbsolute(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45B7F70>
+	void ResetRelativeTransform(); // Function Engine.SceneComponent.ResetRelativeTransform(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45B7F50>
+	void OnRep_Visibility(char OldValue); // Function Engine.SceneComponent.OnRep_Visibility(Final|Native|Private) // <Game_BE.exe+0x45B7D70>
+	void OnRep_Transform(); // Function Engine.SceneComponent.OnRep_Transform(Final|Native|Private) // <Game_BE.exe+0x45B7D50>
+	void OnRep_AttachSocketName(); // Function Engine.SceneComponent.OnRep_AttachSocketName(Final|Native|Private) // <Game_BE.exe+0x45B7D30>
+	void OnRep_AttachParent(); // Function Engine.SceneComponent.OnRep_AttachParent(Final|Native|Private) // <Game_BE.exe+0x45B7D30>
+	void OnRep_AttachChildren(); // Function Engine.SceneComponent.OnRep_AttachChildren(Final|Native|Private) // <Game_BE.exe+0x45B7D10>
+	void K2_SetWorldTransform(struct Unknown& NewTransform, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.SceneComponent.K2_SetWorldTransform(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45B7B10>
+	void K2_SetWorldRotation(struct Unknown NewRotation, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.SceneComponent.K2_SetWorldRotation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45B7970>
+	void K2_SetWorldLocationAndRotation(struct Unknown NewLocation, struct Unknown NewRotation, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.SceneComponent.K2_SetWorldLocationAndRotation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45B7780>
+	void K2_SetWorldLocation(struct Unknown NewLocation, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.SceneComponent.K2_SetWorldLocation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45B75E0>
+	void K2_SetRelativeTransform(struct Unknown& NewTransform, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.SceneComponent.K2_SetRelativeTransform(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45B73E0>
+	void K2_SetRelativeRotation(struct Unknown NewRotation, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.SceneComponent.K2_SetRelativeRotation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45B7240>
+	void K2_SetRelativeLocationAndRotation(struct Unknown NewLocation, struct Unknown NewRotation, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.SceneComponent.K2_SetRelativeLocationAndRotation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45B7050>
+	void K2_SetRelativeLocation(struct Unknown NewLocation, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.SceneComponent.K2_SetRelativeLocation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45B6EB0>
+	struct Unknown K2_GetComponentToWorld(); // Function Engine.SceneComponent.K2_GetComponentToWorld(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45B6E50>
+	struct Unknown K2_GetComponentScale(); // Function Engine.SceneComponent.K2_GetComponentScale(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45B6E10>
+	struct Unknown K2_GetComponentRotation(); // Function Engine.SceneComponent.K2_GetComponentRotation(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45B6DD0>
+	struct Unknown K2_GetComponentLocation(); // Function Engine.SceneComponent.K2_GetComponentLocation(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45B6D90>
+	void K2_DetachFromComponent(enum class Unknow LocationRule, enum class Unknow RotationRule, enum class Unknow ScaleRule, char bCallModify); // Function Engine.SceneComponent.K2_DetachFromComponent(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45B6C40>
+	char K2_AttachToComponent(struct Unknown Parent, struct FName SocketName, enum class Unknow LocationRule, enum class Unknow RotationRule, enum class Unknow ScaleRule, char bWeldSimulatedBodies); // Function Engine.SceneComponent.K2_AttachToComponent(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45B6A90>
+	char K2_AttachTo(struct Unknown InParent, struct FName InSocketName, char AttachType, char bWeldSimulatedBodies); // Function Engine.SceneComponent.K2_AttachTo(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45B6940>
+	void K2_AddWorldTransform(struct Unknown& DeltaTransform, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.SceneComponent.K2_AddWorldTransform(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45B6740>
+	void K2_AddWorldRotation(struct Unknown DeltaRotation, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.SceneComponent.K2_AddWorldRotation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45B65A0>
+	void K2_AddWorldOffset(struct Unknown DeltaLocation, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.SceneComponent.K2_AddWorldOffset(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45B6400>
+	void K2_AddRelativeRotation(struct Unknown DeltaRotation, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.SceneComponent.K2_AddRelativeRotation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45B6260>
+	void K2_AddRelativeLocation(struct Unknown DeltaLocation, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.SceneComponent.K2_AddRelativeLocation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45B60C0>
+	void K2_AddLocalTransform(struct Unknown& DeltaTransform, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.SceneComponent.K2_AddLocalTransform(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45B5EC0>
+	void K2_AddLocalRotation(struct Unknown DeltaRotation, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.SceneComponent.K2_AddLocalRotation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45B5D20>
+	void K2_AddLocalOffset(struct Unknown DeltaLocation, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.SceneComponent.K2_AddLocalOffset(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45B5B80>
+	char IsVisible(); // Function Engine.SceneComponent.IsVisible(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45B5B50>
+	char IsSimulatingPhysics(struct FName BoneName); // Function Engine.SceneComponent.IsSimulatingPhysics(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45B5AB0>
+	char IsAnySimulatingPhysics(); // Function Engine.SceneComponent.IsAnySimulatingPhysics(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45B5A80>
+	struct Unknown GetUpVector(); // Function Engine.SceneComponent.GetUpVector(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45B58F0>
+	struct Unknown GetSocketTransform(struct FName InSocketName, char TransformSpace); // Function Engine.SceneComponent.GetSocketTransform(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45B57F0>
+	struct Unknown GetSocketRotation(struct FName InSocketName); // Function Engine.SceneComponent.GetSocketRotation(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45B5740>
+	struct Unknown GetSocketQuaternion(struct FName InSocketName); // Function Engine.SceneComponent.GetSocketQuaternion(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45B56A0>
+	struct Unknown GetSocketLocation(struct FName InSocketName); // Function Engine.SceneComponent.GetSocketLocation(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45B55F0>
+	char GetShouldUpdatePhysicsVolume(); // Function Engine.SceneComponent.GetShouldUpdatePhysicsVolume(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45B55C0>
+	struct Unknown GetRightVector(); // Function Engine.SceneComponent.GetRightVector(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45B5580>
+	struct Unknown GetRelativeTransform(); // Function Engine.SceneComponent.GetRelativeTransform(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45B5520>
+	struct Unknown GetPhysicsVolume(); // Function Engine.SceneComponent.GetPhysicsVolume(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45B54F0>
+	void GetParentComponents(struct TArray<Unknown>& Parents); // Function Engine.SceneComponent.GetParentComponents(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45B5440>
+	int32_t GetNumChildrenComponents(); // Function Engine.SceneComponent.GetNumChildrenComponents(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45B5410>
+	struct Unknown GetForwardVector(); // Function Engine.SceneComponent.GetForwardVector(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x458C250>
+	struct Unknown GetComponentVelocity(); // Function Engine.SceneComponent.GetComponentVelocity(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45B53D0>
+	void GetChildrenComponents(char bIncludeAllDescendants, struct TArray<Unknown>& Children); // Function Engine.SceneComponent.GetChildrenComponents(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45B52D0>
+	struct Unknown GetChildComponent(int32_t ChildIndex); // Function Engine.SceneComponent.GetChildComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45B5240>
+	struct FName GetAttachSocketName(); // Function Engine.SceneComponent.GetAttachSocketName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45B5220>
+	struct Unknown GetAttachParent(); // Function Engine.SceneComponent.GetAttachParent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45B5200>
+	struct TArray<Unknown> GetAllSocketNames(); // Function Engine.SceneComponent.GetAllSocketNames(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45B5180>
+	char DoesSocketExist(struct FName InSocketName); // Function Engine.SceneComponent.DoesSocketExist(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45B50E0>
+	void DetachFromParent(char bMaintainWorldPosition, char bCallModify); // Function Engine.SceneComponent.DetachFromParent(Native|Public|BlueprintCallable) // <Game_BE.exe+0x45B5010>
 };
 
 // Class Engine.MKActorEx
@@ -4331,14 +4331,14 @@ public:
 	struct TArray<Unknown> ReplaySamplesForPlayback; // 0x68 (16)
 	struct Unknown SelfActor; // 0x88 (8)
 
-	void OnTickReplaySampleRecord(struct Unknown DemoNetDriver, float MinRecordHz, float MaxRecordHz, char bSaveCheckpoint); // Function Engine.MKActorEx.OnTickReplaySampleRecord(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4565B60>
-	void OnTickReplaySamplePlayback(struct Unknown DemoNetDriver); // Function Engine.MKActorEx.OnTickReplaySamplePlayback(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4565AE0>
-	void OnReplayPreScrub(struct Unknown InWorld); // Function Engine.MKActorEx.OnReplayPreScrub(Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x36B1640>
-	void OnPostRecordReplay(struct Unknown InWorld, struct Unknown& DemoURL); // Function Engine.MKActorEx.OnPostRecordReplay(Final|Native|Private|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45659F0>
-	void LerpReplaySampleForPlayback(struct Unknown DemoNetDriver, struct Unknown L, struct Unknown R, float LerpPercent); // Function Engine.MKActorEx.LerpReplaySampleForPlayback(Native|Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45657B0>
-	char HandleTimelineScrubbed(); // Function Engine.MKActorEx.HandleTimelineScrubbed(Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x36B1850>
-	void GatherReplaySampleForRecording(struct Unknown DemoNetDriver, float DemoCurrentTime, char bSaveCheckpoint); // Function Engine.MKActorEx.GatherReplaySampleForRecording(Native|Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4564670>
-	void ForceReplaySamplingUpdate(); // Function Engine.MKActorEx.ForceReplaySamplingUpdate(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x448D3C0>
+	void OnTickReplaySampleRecord(struct Unknown DemoNetDriver, float MinRecordHz, float MaxRecordHz, char bSaveCheckpoint); // Function Engine.MKActorEx.OnTickReplaySampleRecord(Final|Native|Private) // <Game_BE.exe+0x4565B60>
+	void OnTickReplaySamplePlayback(struct Unknown DemoNetDriver); // Function Engine.MKActorEx.OnTickReplaySamplePlayback(Final|Native|Private) // <Game_BE.exe+0x4565AE0>
+	void OnReplayPreScrub(struct Unknown InWorld); // Function Engine.MKActorEx.OnReplayPreScrub(Native|Protected) // <Game_BE.exe+0x36B1640>
+	void OnPostRecordReplay(struct Unknown InWorld, struct Unknown& DemoURL); // Function Engine.MKActorEx.OnPostRecordReplay(Final|Native|Private|HasOutParms) // <Game_BE.exe+0x45659F0>
+	void LerpReplaySampleForPlayback(struct Unknown DemoNetDriver, struct Unknown L, struct Unknown R, float LerpPercent); // Function Engine.MKActorEx.LerpReplaySampleForPlayback(Native|Event|Protected|BlueprintEvent) // <Game_BE.exe+0x45657B0>
+	char HandleTimelineScrubbed(); // Function Engine.MKActorEx.HandleTimelineScrubbed(Native|Public) // <Game_BE.exe+0x36B1850>
+	void GatherReplaySampleForRecording(struct Unknown DemoNetDriver, float DemoCurrentTime, char bSaveCheckpoint); // Function Engine.MKActorEx.GatherReplaySampleForRecording(Native|Event|Protected|BlueprintEvent) // <Game_BE.exe+0x4564670>
+	void ForceReplaySamplingUpdate(); // Function Engine.MKActorEx.ForceReplaySamplingUpdate(Native|Public|BlueprintCallable) // <Game_BE.exe+0x448D3C0>
 };
 
 // Class Engine.Actor
@@ -4424,137 +4424,137 @@ public:
 	struct TArray<Unknown> BlueprintCreatedComponents; // 0x1C0 (16)
 	struct TArray<Unknown> LoadedObjects; // 0x2E8 (16)
 
-	char WasRecentlyRendered(float Tolerance); // Function Engine.Actor.WasRecentlyRendered(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4435590>
-	void UserConstructionScript(); // Function Engine.Actor.UserConstructionScript(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void TearOff(); // Function Engine.Actor.TearOff(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4435570>
-	void SnapRootComponentTo(struct Unknown InParentActor, struct FName InSocketName); // Function Engine.Actor.SnapRootComponentTo(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44354B0>
-	void SetTickGroup(char NewTickGroup); // Function Engine.Actor.SetTickGroup(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44353A0>
-	void SetTickableWhenPaused(char bTickableWhenPaused); // Function Engine.Actor.SetTickableWhenPaused(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4435420>
-	void SetReplicates(char bInReplicates); // Function Engine.Actor.SetReplicates(Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4435310>
-	void SetReplicateMovement(char bInReplicateMovement); // Function Engine.Actor.SetReplicateMovement(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4435280>
-	void SetOwner(struct Unknown NewOwner); // Function Engine.Actor.SetOwner(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44351F0>
-	void SetNetDormancy(char NewDormancy); // Function Engine.Actor.SetNetDormancy(Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4435170>
-	void SetLifeSpan(float InLifespan); // Function Engine.Actor.SetLifeSpan(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44350F0>
-	void SetAutoDestroyWhenFinished(char bVal); // Function Engine.Actor.SetAutoDestroyWhenFinished(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4435060>
-	void SetActorTickInterval(float TickInterval); // Function Engine.Actor.SetActorTickInterval(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4434FE0>
-	void SetActorTickEnabled(char bEnabled); // Function Engine.Actor.SetActorTickEnabled(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4434F50>
-	void SetActorScale3D(struct Unknown NewScale3D); // Function Engine.Actor.SetActorScale3D(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4434EC0>
-	void SetActorRelativeScale3D(struct Unknown NewRelativeScale); // Function Engine.Actor.SetActorRelativeScale3D(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4434E30>
-	void SetActorHiddenInGame(char bNewHidden); // Function Engine.Actor.SetActorHiddenInGame(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4434DA0>
-	void SetActorEnableCollision(char bNewActorEnableCollision); // Function Engine.Actor.SetActorEnableCollision(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4434D10>
-	void RemoveTickPrerequisiteComponent(struct Unknown PrerequisiteComponent); // Function Engine.Actor.RemoveTickPrerequisiteComponent(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4434C80>
-	void RemoveTickPrerequisiteActor(struct Unknown PrerequisiteActor); // Function Engine.Actor.RemoveTickPrerequisiteActor(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4434BF0>
-	void ReceiveTick(float DeltaSeconds); // Function Engine.Actor.ReceiveTick(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveRadialDamage(float DamageReceived, struct Unknown DamageType, struct Unknown Origin, struct Unknown& HitInfo, struct Unknown InstigatedBy, struct Unknown DamageCauser); // Function Engine.Actor.ReceiveRadialDamage(BlueprintAuthorityOnly|Event|Public|HasOutParms|HasDefaults|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceivePointDamage(float Damage, struct Unknown DamageType, struct Unknown HitLocation, struct Unknown HitNormal, struct Unknown HitComponent, struct FName BoneName, struct Unknown ShotFromDirection, struct Unknown InstigatedBy, struct Unknown DamageCauser, struct Unknown& HitInfo); // Function Engine.Actor.ReceivePointDamage(BlueprintAuthorityOnly|Event|Public|HasOutParms|HasDefaults|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveHit(struct Unknown MyComp, struct Unknown Other, struct Unknown OtherComp, char bSelfMoved, struct Unknown HitLocation, struct Unknown HitNormal, struct Unknown NormalImpulse, struct Unknown& Hit); // Function Engine.Actor.ReceiveHit(Event|Public|HasOutParms|HasDefaults|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveEndPlay(char EndPlayReason); // Function Engine.Actor.ReceiveEndPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveDestroyed(); // Function Engine.Actor.ReceiveDestroyed(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveBeginPlay(); // Function Engine.Actor.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveAnyDamage(float Damage, struct Unknown DamageType, struct Unknown InstigatedBy, struct Unknown DamageCauser); // Function Engine.Actor.ReceiveAnyDamage(BlueprintAuthorityOnly|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveActorOnReleased(struct Unknown ButtonReleased); // Function Engine.Actor.ReceiveActorOnReleased(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveActorOnInputTouchLeave(char FingerIndex); // Function Engine.Actor.ReceiveActorOnInputTouchLeave(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveActorOnInputTouchEnter(char FingerIndex); // Function Engine.Actor.ReceiveActorOnInputTouchEnter(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveActorOnInputTouchEnd(char FingerIndex); // Function Engine.Actor.ReceiveActorOnInputTouchEnd(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveActorOnInputTouchBegin(char FingerIndex); // Function Engine.Actor.ReceiveActorOnInputTouchBegin(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveActorOnClicked(struct Unknown ButtonPressed); // Function Engine.Actor.ReceiveActorOnClicked(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveActorEndOverlap(struct Unknown OtherActor); // Function Engine.Actor.ReceiveActorEndOverlap(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveActorEndCursorOver(); // Function Engine.Actor.ReceiveActorEndCursorOver(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveActorBeginOverlap(struct Unknown OtherActor); // Function Engine.Actor.ReceiveActorBeginOverlap(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveActorBeginCursorOver(); // Function Engine.Actor.ReceiveActorBeginCursorOver(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void PrestreamTextures(float Seconds, char bEnableStreaming, int32_t CinematicTextureGroups); // Function Engine.Actor.PrestreamTextures(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4434AE0>
-	void OnRep_ReplicateMovement(); // Function Engine.Actor.OnRep_ReplicateMovement(Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC7350>
-	void OnRep_ReplicatedMovement(); // Function Engine.Actor.OnRep_ReplicatedMovement(Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4434AC0>
-	void OnRep_Owner(); // Function Engine.Actor.OnRep_Owner(Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC6D10>
-	void OnRep_Instigator(); // Function Engine.Actor.OnRep_Instigator(Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4434AA0>
-	void OnRep_AttachmentReplication(); // Function Engine.Actor.OnRep_AttachmentReplication(Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC6EB0>
-	void MakeNoise(float Loudness, struct Unknown NoiseInstigator, struct Unknown NoiseLocation, float MaxRange, struct FName Tag); // Function Engine.Actor.MakeNoise(Final|BlueprintAuthorityOnly|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4434910>
-	struct Unknown MakeMIDForMaterial(struct Unknown Parent); // Function Engine.Actor.MakeMIDForMaterial(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4434880>
-	char K2_TeleportTo(struct Unknown DestLocation, struct Unknown DestRotation); // Function Engine.Actor.K2_TeleportTo(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4434790>
-	char K2_SetActorTransform(struct Unknown& NewTransform, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.Actor.K2_SetActorTransform(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4434590>
-	char K2_SetActorRotation(struct Unknown NewRotation, char bTeleportPhysics); // Function Engine.Actor.K2_SetActorRotation(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44344B0>
-	void K2_SetActorRelativeTransform(struct Unknown& NewRelativeTransform, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.Actor.K2_SetActorRelativeTransform(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44342B0>
-	void K2_SetActorRelativeRotation(struct Unknown NewRelativeRotation, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.Actor.K2_SetActorRelativeRotation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4434110>
-	void K2_SetActorRelativeLocation(struct Unknown NewRelativeLocation, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.Actor.K2_SetActorRelativeLocation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4433F70>
-	char K2_SetActorLocationAndRotation(struct Unknown NewLocation, struct Unknown NewRotation, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.Actor.K2_SetActorLocationAndRotation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4433D70>
-	char K2_SetActorLocation(struct Unknown NewLocation, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.Actor.K2_SetActorLocation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4433BC0>
-	void K2_OnReset(); // Function Engine.Actor.K2_OnReset(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void K2_OnEndViewTarget(struct Unknown PC); // Function Engine.Actor.K2_OnEndViewTarget(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void K2_OnBecomeViewTarget(struct Unknown PC); // Function Engine.Actor.K2_OnBecomeViewTarget(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	struct Unknown K2_GetRootComponent(); // Function Engine.Actor.K2_GetRootComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4433BA0>
-	struct TArray<Unknown> K2_GetComponentsByClass(struct Unknown* ComponentClass); // Function Engine.Actor.K2_GetComponentsByClass(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4433AC0>
-	struct Unknown K2_GetActorRotation(); // Function Engine.Actor.K2_GetActorRotation(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4433A00>
-	struct Unknown K2_GetActorLocation(); // Function Engine.Actor.K2_GetActorLocation(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4433960>
-	void K2_DetachFromActor(enum class Unknow LocationRule, enum class Unknow RotationRule, enum class Unknow ScaleRule); // Function Engine.Actor.K2_DetachFromActor(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4433860>
-	void K2_DestroyComponent(struct Unknown Component); // Function Engine.Actor.K2_DestroyComponent(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44337E0>
-	void K2_DestroyActor(); // Function Engine.Actor.K2_DestroyActor(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44337C0>
-	void K2_AttachToComponent(struct Unknown Parent, struct FName SocketName, enum class Unknow LocationRule, enum class Unknow RotationRule, enum class Unknow ScaleRule, char bWeldSimulatedBodies); // Function Engine.Actor.K2_AttachToComponent(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4433600>
-	void K2_AttachToActor(struct Unknown ParentActor, struct FName SocketName, enum class Unknow LocationRule, enum class Unknow RotationRule, enum class Unknow ScaleRule, char bWeldSimulatedBodies); // Function Engine.Actor.K2_AttachToActor(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4433440>
-	void K2_AttachRootComponentToActor(struct Unknown InParentActor, struct FName InSocketName, char AttachLocationType, char bWeldSimulatedBodies); // Function Engine.Actor.K2_AttachRootComponentToActor(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44332F0>
-	void K2_AttachRootComponentTo(struct Unknown InParent, struct FName InSocketName, char AttachLocationType, char bWeldSimulatedBodies); // Function Engine.Actor.K2_AttachRootComponentTo(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44331A0>
-	void K2_AddActorWorldTransform(struct Unknown& DeltaTransform, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.Actor.K2_AddActorWorldTransform(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4432FA0>
-	void K2_AddActorWorldRotation(struct Unknown DeltaRotation, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.Actor.K2_AddActorWorldRotation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4432E00>
-	void K2_AddActorWorldOffset(struct Unknown DeltaLocation, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.Actor.K2_AddActorWorldOffset(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4432C60>
-	void K2_AddActorLocalTransform(struct Unknown& NewTransform, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.Actor.K2_AddActorLocalTransform(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4432A60>
-	void K2_AddActorLocalRotation(struct Unknown DeltaRotation, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.Actor.K2_AddActorLocalRotation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44328C0>
-	void K2_AddActorLocalOffset(struct Unknown DeltaLocation, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.Actor.K2_AddActorLocalOffset(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4432720>
-	char IsOverlappingActor(struct Unknown Other); // Function Engine.Actor.IsOverlappingActor(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4432690>
-	char IsChildActor(); // Function Engine.Actor.IsChildActor(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4432660>
-	char IsActorTickEnabled(); // Function Engine.Actor.IsActorTickEnabled(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4432630>
-	char IsActorBeingDestroyed(); // Function Engine.Actor.IsActorBeingDestroyed(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4432600>
-	char HasAuthority(); // Function Engine.Actor.HasAuthority(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44325D0>
-	float GetVerticalDistanceTo(struct Unknown OtherActor); // Function Engine.Actor.GetVerticalDistanceTo(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4432530>
-	struct Unknown GetVelocity(); // Function Engine.Actor.GetVelocity(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44324F0>
-	struct Unknown GetTransform(); // Function Engine.Actor.GetTransform(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44324A0>
-	char GetTickableWhenPaused(); // Function Engine.Actor.GetTickableWhenPaused(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4432470>
-	float GetSquaredDistanceTo(struct Unknown OtherActor); // Function Engine.Actor.GetSquaredDistanceTo(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44323D0>
-	char GetRemoteRole(); // Function Engine.Actor.GetRemoteRole(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44323B0>
-	struct Unknown GetParentComponent(); // Function Engine.Actor.GetParentComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4432380>
-	struct Unknown GetParentActor(); // Function Engine.Actor.GetParentActor(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4432350>
-	struct Unknown GetOwner(); // Function Engine.Actor.GetOwner(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4432330>
-	void GetOverlappingComponents(struct TArray<Unknown>& OverlappingComponents); // Function Engine.Actor.GetOverlappingComponents(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4432280>
-	void GetOverlappingActors(struct TArray<Unknown>& OverlappingActors, struct Unknown* ClassFilter); // Function Engine.Actor.GetOverlappingActors(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4432180>
-	char GetLocalRole(); // Function Engine.Actor.GetLocalRole(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4432160>
-	float GetLifeSpan(); // Function Engine.Actor.GetLifeSpan(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4432120>
-	struct Unknown GetInstigatorController(); // Function Engine.Actor.GetInstigatorController(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44320F0>
-	struct Unknown GetInstigator(); // Function Engine.Actor.GetInstigator(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44320C0>
-	struct Unknown GetInputVectorAxisValue(struct Unknown InputAxisKey); // Function Engine.Actor.GetInputVectorAxisValue(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4431FC0>
-	float GetInputAxisValue(struct FName InputAxisName); // Function Engine.Actor.GetInputAxisValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4431F20>
-	float GetInputAxisKeyValue(struct Unknown InputAxisKey); // Function Engine.Actor.GetInputAxisKeyValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4431E30>
-	float GetHorizontalDotProductTo(struct Unknown OtherActor); // Function Engine.Actor.GetHorizontalDotProductTo(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4431D90>
-	float GetHorizontalDistanceTo(struct Unknown OtherActor); // Function Engine.Actor.GetHorizontalDistanceTo(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4431CF0>
-	float GetGameTimeSinceCreation(); // Function Engine.Actor.GetGameTimeSinceCreation(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4431CC0>
-	float GetDotProductTo(struct Unknown OtherActor); // Function Engine.Actor.GetDotProductTo(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4431C20>
-	float GetDistanceTo(struct Unknown OtherActor); // Function Engine.Actor.GetDistanceTo(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4431B80>
-	struct TArray<Unknown> GetComponentsByTag(struct Unknown* ComponentClass, struct FName Tag); // Function Engine.Actor.GetComponentsByTag(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4431A70>
-	struct TArray<Unknown> GetComponentsByInterface(struct Unknown* Interface); // Function Engine.Actor.GetComponentsByInterface(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4431990>
-	struct Unknown GetComponentByClass(struct Unknown* ComponentClass); // Function Engine.Actor.GetComponentByClass(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4431900>
-	struct FName GetAttachParentSocketName(); // Function Engine.Actor.GetAttachParentSocketName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4431680>
-	void GetAttachParentActors(struct TArray<Unknown>& OutActors); // Function Engine.Actor.GetAttachParentActors(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44315D0>
-	struct Unknown GetAttachParentActorMost(); // Function Engine.Actor.GetAttachParentActorMost(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44315A0>
-	struct Unknown GetAttachParentActor(); // Function Engine.Actor.GetAttachParentActor(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4431570>
-	void GetAttachedActorsRecursive(struct TArray<Unknown>& OutActors, char bIncludeChildActor); // Function Engine.Actor.GetAttachedActorsRecursive(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4431800>
-	void GetAttachedActors(struct TArray<Unknown>& OutActors, char bResetArray, char bIncludeChildActor); // Function Engine.Actor.GetAttachedActors(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44316C0>
-	void GetAllChildActors(struct TArray<Unknown>& ChildActors, char bIncludeDescendants); // Function Engine.Actor.GetAllChildActors(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4431470>
-	struct Unknown GetActorUpVector(); // Function Engine.Actor.GetActorUpVector(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4431400>
-	float GetActorTimeDilation(); // Function Engine.Actor.GetActorTimeDilation(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44313D0>
-	float GetActorTickInterval(); // Function Engine.Actor.GetActorTickInterval(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44313A0>
-	struct Unknown GetActorScale3D(); // Function Engine.Actor.GetActorScale3D(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4431360>
-	struct Unknown GetActorRightVector(); // Function Engine.Actor.GetActorRightVector(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44312F0>
-	struct Unknown GetActorRelativeScale3D(); // Function Engine.Actor.GetActorRelativeScale3D(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44312B0>
-	struct Unknown GetActorForwardVector(); // Function Engine.Actor.GetActorForwardVector(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4431240>
-	void GetActorEyesViewPoint(struct Unknown& OutLocation, struct Unknown& OutRotation); // Function Engine.Actor.GetActorEyesViewPoint(Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4431150>
-	char GetActorEnableCollision(); // Function Engine.Actor.GetActorEnableCollision(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4431120>
-	void GetActorBounds(char bOnlyCollidingComponents, struct Unknown& Origin, struct Unknown& BoxExtent, char bIncludeFromChildActors); // Function Engine.Actor.GetActorBounds(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4430FA0>
-	void ForceNetUpdate(); // Function Engine.Actor.ForceNetUpdate(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4430F80>
-	void FlushNetDormancy(); // Function Engine.Actor.FlushNetDormancy(Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4430F60>
-	void EnableInput(struct Unknown PlayerController); // Function Engine.Actor.EnableInput(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4430ED0>
-	void DisableInput(struct Unknown PlayerController); // Function Engine.Actor.DisableInput(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4430E40>
-	void DetachRootComponentFromParent(char bMaintainWorldPosition); // Function Engine.Actor.DetachRootComponentFromParent(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4430DB0>
-	void AddTickPrerequisiteComponent(struct Unknown PrerequisiteComponent); // Function Engine.Actor.AddTickPrerequisiteComponent(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4430D20>
-	void AddTickPrerequisiteActor(struct Unknown PrerequisiteActor); // Function Engine.Actor.AddTickPrerequisiteActor(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4430C90>
-	struct Unknown AddComponent(struct FName TemplateName, char bManualAttachment, struct Unknown& RelativeTransform, struct Unknown ComponentTemplateContext); // Function Engine.Actor.AddComponent(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4430AD0>
-	char ActorHasTag(struct FName Tag); // Function Engine.Actor.ActorHasTag(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4430A40>
+	char WasRecentlyRendered(float Tolerance); // Function Engine.Actor.WasRecentlyRendered(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4435590>
+	void UserConstructionScript(); // Function Engine.Actor.UserConstructionScript(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void TearOff(); // Function Engine.Actor.TearOff(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4435570>
+	void SnapRootComponentTo(struct Unknown InParentActor, struct FName InSocketName); // Function Engine.Actor.SnapRootComponentTo(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44354B0>
+	void SetTickGroup(char NewTickGroup); // Function Engine.Actor.SetTickGroup(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44353A0>
+	void SetTickableWhenPaused(char bTickableWhenPaused); // Function Engine.Actor.SetTickableWhenPaused(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4435420>
+	void SetReplicates(char bInReplicates); // Function Engine.Actor.SetReplicates(Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4435310>
+	void SetReplicateMovement(char bInReplicateMovement); // Function Engine.Actor.SetReplicateMovement(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4435280>
+	void SetOwner(struct Unknown NewOwner); // Function Engine.Actor.SetOwner(Native|Public|BlueprintCallable) // <Game_BE.exe+0x44351F0>
+	void SetNetDormancy(char NewDormancy); // Function Engine.Actor.SetNetDormancy(Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4435170>
+	void SetLifeSpan(float InLifespan); // Function Engine.Actor.SetLifeSpan(Native|Public|BlueprintCallable) // <Game_BE.exe+0x44350F0>
+	void SetAutoDestroyWhenFinished(char bVal); // Function Engine.Actor.SetAutoDestroyWhenFinished(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4435060>
+	void SetActorTickInterval(float TickInterval); // Function Engine.Actor.SetActorTickInterval(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4434FE0>
+	void SetActorTickEnabled(char bEnabled); // Function Engine.Actor.SetActorTickEnabled(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4434F50>
+	void SetActorScale3D(struct Unknown NewScale3D); // Function Engine.Actor.SetActorScale3D(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4434EC0>
+	void SetActorRelativeScale3D(struct Unknown NewRelativeScale); // Function Engine.Actor.SetActorRelativeScale3D(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4434E30>
+	void SetActorHiddenInGame(char bNewHidden); // Function Engine.Actor.SetActorHiddenInGame(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4434DA0>
+	void SetActorEnableCollision(char bNewActorEnableCollision); // Function Engine.Actor.SetActorEnableCollision(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4434D10>
+	void RemoveTickPrerequisiteComponent(struct Unknown PrerequisiteComponent); // Function Engine.Actor.RemoveTickPrerequisiteComponent(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4434C80>
+	void RemoveTickPrerequisiteActor(struct Unknown PrerequisiteActor); // Function Engine.Actor.RemoveTickPrerequisiteActor(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4434BF0>
+	void ReceiveTick(float DeltaSeconds); // Function Engine.Actor.ReceiveTick(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveRadialDamage(float DamageReceived, struct Unknown DamageType, struct Unknown Origin, struct Unknown& HitInfo, struct Unknown InstigatedBy, struct Unknown DamageCauser); // Function Engine.Actor.ReceiveRadialDamage(BlueprintAuthorityOnly|Event|Public|HasOutParms|HasDefaults|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceivePointDamage(float Damage, struct Unknown DamageType, struct Unknown HitLocation, struct Unknown HitNormal, struct Unknown HitComponent, struct FName BoneName, struct Unknown ShotFromDirection, struct Unknown InstigatedBy, struct Unknown DamageCauser, struct Unknown& HitInfo); // Function Engine.Actor.ReceivePointDamage(BlueprintAuthorityOnly|Event|Public|HasOutParms|HasDefaults|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveHit(struct Unknown MyComp, struct Unknown Other, struct Unknown OtherComp, char bSelfMoved, struct Unknown HitLocation, struct Unknown HitNormal, struct Unknown NormalImpulse, struct Unknown& Hit); // Function Engine.Actor.ReceiveHit(Event|Public|HasOutParms|HasDefaults|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveEndPlay(char EndPlayReason); // Function Engine.Actor.ReceiveEndPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveDestroyed(); // Function Engine.Actor.ReceiveDestroyed(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveBeginPlay(); // Function Engine.Actor.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveAnyDamage(float Damage, struct Unknown DamageType, struct Unknown InstigatedBy, struct Unknown DamageCauser); // Function Engine.Actor.ReceiveAnyDamage(BlueprintAuthorityOnly|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveActorOnReleased(struct Unknown ButtonReleased); // Function Engine.Actor.ReceiveActorOnReleased(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveActorOnInputTouchLeave(char FingerIndex); // Function Engine.Actor.ReceiveActorOnInputTouchLeave(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveActorOnInputTouchEnter(char FingerIndex); // Function Engine.Actor.ReceiveActorOnInputTouchEnter(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveActorOnInputTouchEnd(char FingerIndex); // Function Engine.Actor.ReceiveActorOnInputTouchEnd(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveActorOnInputTouchBegin(char FingerIndex); // Function Engine.Actor.ReceiveActorOnInputTouchBegin(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveActorOnClicked(struct Unknown ButtonPressed); // Function Engine.Actor.ReceiveActorOnClicked(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveActorEndOverlap(struct Unknown OtherActor); // Function Engine.Actor.ReceiveActorEndOverlap(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveActorEndCursorOver(); // Function Engine.Actor.ReceiveActorEndCursorOver(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveActorBeginOverlap(struct Unknown OtherActor); // Function Engine.Actor.ReceiveActorBeginOverlap(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveActorBeginCursorOver(); // Function Engine.Actor.ReceiveActorBeginCursorOver(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void PrestreamTextures(float Seconds, char bEnableStreaming, int32_t CinematicTextureGroups); // Function Engine.Actor.PrestreamTextures(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4434AE0>
+	void OnRep_ReplicateMovement(); // Function Engine.Actor.OnRep_ReplicateMovement(Native|Public) // <Game_BE.exe+0x1EC7350>
+	void OnRep_ReplicatedMovement(); // Function Engine.Actor.OnRep_ReplicatedMovement(Native|Public) // <Game_BE.exe+0x4434AC0>
+	void OnRep_Owner(); // Function Engine.Actor.OnRep_Owner(Native|Protected) // <Game_BE.exe+0x1EC6D10>
+	void OnRep_Instigator(); // Function Engine.Actor.OnRep_Instigator(Native|Public) // <Game_BE.exe+0x4434AA0>
+	void OnRep_AttachmentReplication(); // Function Engine.Actor.OnRep_AttachmentReplication(Native|Public) // <Game_BE.exe+0x1EC6EB0>
+	void MakeNoise(float Loudness, struct Unknown NoiseInstigator, struct Unknown NoiseLocation, float MaxRange, struct FName Tag); // Function Engine.Actor.MakeNoise(Final|BlueprintAuthorityOnly|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4434910>
+	struct Unknown MakeMIDForMaterial(struct Unknown Parent); // Function Engine.Actor.MakeMIDForMaterial(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4434880>
+	char K2_TeleportTo(struct Unknown DestLocation, struct Unknown DestRotation); // Function Engine.Actor.K2_TeleportTo(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4434790>
+	char K2_SetActorTransform(struct Unknown& NewTransform, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.Actor.K2_SetActorTransform(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4434590>
+	char K2_SetActorRotation(struct Unknown NewRotation, char bTeleportPhysics); // Function Engine.Actor.K2_SetActorRotation(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x44344B0>
+	void K2_SetActorRelativeTransform(struct Unknown& NewRelativeTransform, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.Actor.K2_SetActorRelativeTransform(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x44342B0>
+	void K2_SetActorRelativeRotation(struct Unknown NewRelativeRotation, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.Actor.K2_SetActorRelativeRotation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4434110>
+	void K2_SetActorRelativeLocation(struct Unknown NewRelativeLocation, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.Actor.K2_SetActorRelativeLocation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4433F70>
+	char K2_SetActorLocationAndRotation(struct Unknown NewLocation, struct Unknown NewRotation, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.Actor.K2_SetActorLocationAndRotation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4433D70>
+	char K2_SetActorLocation(struct Unknown NewLocation, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.Actor.K2_SetActorLocation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4433BC0>
+	void K2_OnReset(); // Function Engine.Actor.K2_OnReset(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void K2_OnEndViewTarget(struct Unknown PC); // Function Engine.Actor.K2_OnEndViewTarget(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void K2_OnBecomeViewTarget(struct Unknown PC); // Function Engine.Actor.K2_OnBecomeViewTarget(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	struct Unknown K2_GetRootComponent(); // Function Engine.Actor.K2_GetRootComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4433BA0>
+	struct TArray<Unknown> K2_GetComponentsByClass(struct Unknown* ComponentClass); // Function Engine.Actor.K2_GetComponentsByClass(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4433AC0>
+	struct Unknown K2_GetActorRotation(); // Function Engine.Actor.K2_GetActorRotation(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4433A00>
+	struct Unknown K2_GetActorLocation(); // Function Engine.Actor.K2_GetActorLocation(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4433960>
+	void K2_DetachFromActor(enum class Unknow LocationRule, enum class Unknow RotationRule, enum class Unknow ScaleRule); // Function Engine.Actor.K2_DetachFromActor(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4433860>
+	void K2_DestroyComponent(struct Unknown Component); // Function Engine.Actor.K2_DestroyComponent(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44337E0>
+	void K2_DestroyActor(); // Function Engine.Actor.K2_DestroyActor(Native|Public|BlueprintCallable) // <Game_BE.exe+0x44337C0>
+	void K2_AttachToComponent(struct Unknown Parent, struct FName SocketName, enum class Unknow LocationRule, enum class Unknow RotationRule, enum class Unknow ScaleRule, char bWeldSimulatedBodies); // Function Engine.Actor.K2_AttachToComponent(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4433600>
+	void K2_AttachToActor(struct Unknown ParentActor, struct FName SocketName, enum class Unknow LocationRule, enum class Unknow RotationRule, enum class Unknow ScaleRule, char bWeldSimulatedBodies); // Function Engine.Actor.K2_AttachToActor(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4433440>
+	void K2_AttachRootComponentToActor(struct Unknown InParentActor, struct FName InSocketName, char AttachLocationType, char bWeldSimulatedBodies); // Function Engine.Actor.K2_AttachRootComponentToActor(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44332F0>
+	void K2_AttachRootComponentTo(struct Unknown InParent, struct FName InSocketName, char AttachLocationType, char bWeldSimulatedBodies); // Function Engine.Actor.K2_AttachRootComponentTo(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44331A0>
+	void K2_AddActorWorldTransform(struct Unknown& DeltaTransform, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.Actor.K2_AddActorWorldTransform(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4432FA0>
+	void K2_AddActorWorldRotation(struct Unknown DeltaRotation, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.Actor.K2_AddActorWorldRotation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4432E00>
+	void K2_AddActorWorldOffset(struct Unknown DeltaLocation, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.Actor.K2_AddActorWorldOffset(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4432C60>
+	void K2_AddActorLocalTransform(struct Unknown& NewTransform, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.Actor.K2_AddActorLocalTransform(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4432A60>
+	void K2_AddActorLocalRotation(struct Unknown DeltaRotation, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.Actor.K2_AddActorLocalRotation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x44328C0>
+	void K2_AddActorLocalOffset(struct Unknown DeltaLocation, char bSweep, struct Unknown& SweepHitResult, char bTeleport); // Function Engine.Actor.K2_AddActorLocalOffset(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4432720>
+	char IsOverlappingActor(struct Unknown Other); // Function Engine.Actor.IsOverlappingActor(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4432690>
+	char IsChildActor(); // Function Engine.Actor.IsChildActor(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4432660>
+	char IsActorTickEnabled(); // Function Engine.Actor.IsActorTickEnabled(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4432630>
+	char IsActorBeingDestroyed(); // Function Engine.Actor.IsActorBeingDestroyed(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4432600>
+	char HasAuthority(); // Function Engine.Actor.HasAuthority(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44325D0>
+	float GetVerticalDistanceTo(struct Unknown OtherActor); // Function Engine.Actor.GetVerticalDistanceTo(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4432530>
+	struct Unknown GetVelocity(); // Function Engine.Actor.GetVelocity(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44324F0>
+	struct Unknown GetTransform(); // Function Engine.Actor.GetTransform(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44324A0>
+	char GetTickableWhenPaused(); // Function Engine.Actor.GetTickableWhenPaused(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4432470>
+	float GetSquaredDistanceTo(struct Unknown OtherActor); // Function Engine.Actor.GetSquaredDistanceTo(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44323D0>
+	char GetRemoteRole(); // Function Engine.Actor.GetRemoteRole(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44323B0>
+	struct Unknown GetParentComponent(); // Function Engine.Actor.GetParentComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4432380>
+	struct Unknown GetParentActor(); // Function Engine.Actor.GetParentActor(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4432350>
+	struct Unknown GetOwner(); // Function Engine.Actor.GetOwner(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4432330>
+	void GetOverlappingComponents(struct TArray<Unknown>& OverlappingComponents); // Function Engine.Actor.GetOverlappingComponents(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4432280>
+	void GetOverlappingActors(struct TArray<Unknown>& OverlappingActors, struct Unknown* ClassFilter); // Function Engine.Actor.GetOverlappingActors(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4432180>
+	char GetLocalRole(); // Function Engine.Actor.GetLocalRole(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4432160>
+	float GetLifeSpan(); // Function Engine.Actor.GetLifeSpan(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4432120>
+	struct Unknown GetInstigatorController(); // Function Engine.Actor.GetInstigatorController(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44320F0>
+	struct Unknown GetInstigator(); // Function Engine.Actor.GetInstigator(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44320C0>
+	struct Unknown GetInputVectorAxisValue(struct Unknown InputAxisKey); // Function Engine.Actor.GetInputVectorAxisValue(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4431FC0>
+	float GetInputAxisValue(struct FName InputAxisName); // Function Engine.Actor.GetInputAxisValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4431F20>
+	float GetInputAxisKeyValue(struct Unknown InputAxisKey); // Function Engine.Actor.GetInputAxisKeyValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4431E30>
+	float GetHorizontalDotProductTo(struct Unknown OtherActor); // Function Engine.Actor.GetHorizontalDotProductTo(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4431D90>
+	float GetHorizontalDistanceTo(struct Unknown OtherActor); // Function Engine.Actor.GetHorizontalDistanceTo(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4431CF0>
+	float GetGameTimeSinceCreation(); // Function Engine.Actor.GetGameTimeSinceCreation(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4431CC0>
+	float GetDotProductTo(struct Unknown OtherActor); // Function Engine.Actor.GetDotProductTo(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4431C20>
+	float GetDistanceTo(struct Unknown OtherActor); // Function Engine.Actor.GetDistanceTo(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4431B80>
+	struct TArray<Unknown> GetComponentsByTag(struct Unknown* ComponentClass, struct FName Tag); // Function Engine.Actor.GetComponentsByTag(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4431A70>
+	struct TArray<Unknown> GetComponentsByInterface(struct Unknown* Interface); // Function Engine.Actor.GetComponentsByInterface(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4431990>
+	struct Unknown GetComponentByClass(struct Unknown* ComponentClass); // Function Engine.Actor.GetComponentByClass(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4431900>
+	struct FName GetAttachParentSocketName(); // Function Engine.Actor.GetAttachParentSocketName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4431680>
+	void GetAttachParentActors(struct TArray<Unknown>& OutActors); // Function Engine.Actor.GetAttachParentActors(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44315D0>
+	struct Unknown GetAttachParentActorMost(); // Function Engine.Actor.GetAttachParentActorMost(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44315A0>
+	struct Unknown GetAttachParentActor(); // Function Engine.Actor.GetAttachParentActor(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4431570>
+	void GetAttachedActorsRecursive(struct TArray<Unknown>& OutActors, char bIncludeChildActor); // Function Engine.Actor.GetAttachedActorsRecursive(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4431800>
+	void GetAttachedActors(struct TArray<Unknown>& OutActors, char bResetArray, char bIncludeChildActor); // Function Engine.Actor.GetAttachedActors(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44316C0>
+	void GetAllChildActors(struct TArray<Unknown>& ChildActors, char bIncludeDescendants); // Function Engine.Actor.GetAllChildActors(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4431470>
+	struct Unknown GetActorUpVector(); // Function Engine.Actor.GetActorUpVector(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4431400>
+	float GetActorTimeDilation(); // Function Engine.Actor.GetActorTimeDilation(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44313D0>
+	float GetActorTickInterval(); // Function Engine.Actor.GetActorTickInterval(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44313A0>
+	struct Unknown GetActorScale3D(); // Function Engine.Actor.GetActorScale3D(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4431360>
+	struct Unknown GetActorRightVector(); // Function Engine.Actor.GetActorRightVector(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44312F0>
+	struct Unknown GetActorRelativeScale3D(); // Function Engine.Actor.GetActorRelativeScale3D(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44312B0>
+	struct Unknown GetActorForwardVector(); // Function Engine.Actor.GetActorForwardVector(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4431240>
+	void GetActorEyesViewPoint(struct Unknown& OutLocation, struct Unknown& OutRotation); // Function Engine.Actor.GetActorEyesViewPoint(Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4431150>
+	char GetActorEnableCollision(); // Function Engine.Actor.GetActorEnableCollision(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4431120>
+	void GetActorBounds(char bOnlyCollidingComponents, struct Unknown& Origin, struct Unknown& BoxExtent, char bIncludeFromChildActors); // Function Engine.Actor.GetActorBounds(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4430FA0>
+	void ForceNetUpdate(); // Function Engine.Actor.ForceNetUpdate(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4430F80>
+	void FlushNetDormancy(); // Function Engine.Actor.FlushNetDormancy(Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4430F60>
+	void EnableInput(struct Unknown PlayerController); // Function Engine.Actor.EnableInput(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4430ED0>
+	void DisableInput(struct Unknown PlayerController); // Function Engine.Actor.DisableInput(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4430E40>
+	void DetachRootComponentFromParent(char bMaintainWorldPosition); // Function Engine.Actor.DetachRootComponentFromParent(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4430DB0>
+	void AddTickPrerequisiteComponent(struct Unknown PrerequisiteComponent); // Function Engine.Actor.AddTickPrerequisiteComponent(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4430D20>
+	void AddTickPrerequisiteActor(struct Unknown PrerequisiteActor); // Function Engine.Actor.AddTickPrerequisiteActor(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4430C90>
+	struct Unknown AddComponent(struct FName TemplateName, char bManualAttachment, struct Unknown& RelativeTransform, struct Unknown ComponentTemplateContext); // Function Engine.Actor.AddComponent(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4430AD0>
+	char ActorHasTag(struct FName Tag); // Function Engine.Actor.ActorHasTag(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4430A40>
 };
 
 // Class Engine.SkeletalMeshActor
@@ -4570,10 +4570,10 @@ public:
 	struct Unknown ReplicatedMaterial0; // 0x328 (8)
 	struct Unknown ReplicatedMaterial1; // 0x330 (8)
 
-	void OnRep_ReplicatedPhysAsset(); // Function Engine.SkeletalMeshActor.OnRep_ReplicatedPhysAsset(Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124CBD0>
-	void OnRep_ReplicatedMesh(); // Function Engine.SkeletalMeshActor.OnRep_ReplicatedMesh(Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1E71C00>
-	void OnRep_ReplicatedMaterial1(); // Function Engine.SkeletalMeshActor.OnRep_ReplicatedMaterial1(Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F3BD20>
-	void OnRep_ReplicatedMaterial0(); // Function Engine.SkeletalMeshActor.OnRep_ReplicatedMaterial0(Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F3D5C0>
+	void OnRep_ReplicatedPhysAsset(); // Function Engine.SkeletalMeshActor.OnRep_ReplicatedPhysAsset(Native|Public) // <Game_BE.exe+0x124CBD0>
+	void OnRep_ReplicatedMesh(); // Function Engine.SkeletalMeshActor.OnRep_ReplicatedMesh(Native|Public) // <Game_BE.exe+0x1E71C00>
+	void OnRep_ReplicatedMaterial1(); // Function Engine.SkeletalMeshActor.OnRep_ReplicatedMaterial1(Native|Public) // <Game_BE.exe+0x1F3BD20>
+	void OnRep_ReplicatedMaterial0(); // Function Engine.SkeletalMeshActor.OnRep_ReplicatedMaterial0(Native|Public) // <Game_BE.exe+0x1F3D5C0>
 };
 
 // Class Engine.PrimitiveComponent
@@ -4674,120 +4674,120 @@ public:
 	struct FMulticastSparseDelegate OnInputTouchLeave; // 0x485 (1)
 	struct Unknown LODParentPrimitive; // 0x4A0 (8)
 
-	char WasRecentlyRendered(float Tolerance); // Function Engine.PrimitiveComponent.WasRecentlyRendered(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A5960>
-	void WakeRigidBody(struct FName BoneName); // Function Engine.PrimitiveComponent.WakeRigidBody(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A58D0>
-	void WakeAllRigidBodies(); // Function Engine.PrimitiveComponent.WakeAllRigidBodies(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4584890>
-	void SetWalkableSlopeOverride(struct Unknown& NewOverride); // Function Engine.PrimitiveComponent.SetWalkableSlopeOverride(Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A5820>
-	void SetUseCCD(char InUseCCD, struct FName BoneName); // Function Engine.PrimitiveComponent.SetUseCCD(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A5750>
-	void SetTranslucentSortPriority(int32_t NewTranslucentSortPriority); // Function Engine.PrimitiveComponent.SetTranslucentSortPriority(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A56D0>
-	void SetSingleSampleShadowFromStationaryLights(char bNewSingleSampleShadowFromStationaryLights); // Function Engine.PrimitiveComponent.SetSingleSampleShadowFromStationaryLights(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A5640>
-	void SetSimulatePhysics(char bSimulate); // Function Engine.PrimitiveComponent.SetSimulatePhysics(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A55B0>
-	void SetRenderInMainPass(char bValue); // Function Engine.PrimitiveComponent.SetRenderInMainPass(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A5520>
-	void SetRenderCustomDepth(char bValue); // Function Engine.PrimitiveComponent.SetRenderCustomDepth(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A5490>
-	void SetReceivesDecals(char bNewReceivesDecals); // Function Engine.PrimitiveComponent.SetReceivesDecals(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A5400>
-	void SetPhysMaterialOverride(struct Unknown NewPhysMaterial); // Function Engine.PrimitiveComponent.SetPhysMaterialOverride(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A4DD0>
-	void SetPhysicsMaxAngularVelocityInRadians(float NewMaxAngVel, char bAddToCurrent, struct FName BoneName); // Function Engine.PrimitiveComponent.SetPhysicsMaxAngularVelocityInRadians(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A52F0>
-	void SetPhysicsMaxAngularVelocityInDegrees(float NewMaxAngVel, char bAddToCurrent, struct FName BoneName); // Function Engine.PrimitiveComponent.SetPhysicsMaxAngularVelocityInDegrees(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A51E0>
-	void SetPhysicsMaxAngularVelocity(float NewMaxAngVel, char bAddToCurrent, struct FName BoneName); // Function Engine.PrimitiveComponent.SetPhysicsMaxAngularVelocity(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A51E0>
-	void SetPhysicsLinearVelocity(struct Unknown NewVel, char bAddToCurrent, struct FName BoneName); // Function Engine.PrimitiveComponent.SetPhysicsLinearVelocity(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A50C0>
-	void SetPhysicsAngularVelocityInRadians(struct Unknown NewAngVel, char bAddToCurrent, struct FName BoneName); // Function Engine.PrimitiveComponent.SetPhysicsAngularVelocityInRadians(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A4FA0>
-	void SetPhysicsAngularVelocityInDegrees(struct Unknown NewAngVel, char bAddToCurrent, struct FName BoneName); // Function Engine.PrimitiveComponent.SetPhysicsAngularVelocityInDegrees(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A4E60>
-	void SetPhysicsAngularVelocity(struct Unknown NewAngVel, char bAddToCurrent, struct FName BoneName); // Function Engine.PrimitiveComponent.SetPhysicsAngularVelocity(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A4E60>
-	void SetOwnerNoSee(char bNewOwnerNoSee); // Function Engine.PrimitiveComponent.SetOwnerNoSee(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A4D40>
-	void SetOnlyOwnerSee(char bNewOnlyOwnerSee); // Function Engine.PrimitiveComponent.SetOnlyOwnerSee(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A4CB0>
-	void SetNotifyRigidBodyCollision(char bNewNotifyRigidBodyCollision); // Function Engine.PrimitiveComponent.SetNotifyRigidBodyCollision(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A4C20>
-	void SetMaterialByName(struct FName MaterialSlotName, struct Unknown Material); // Function Engine.PrimitiveComponent.SetMaterialByName(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A4B50>
-	void SetMaterial(int32_t ElementIndex, struct Unknown Material); // Function Engine.PrimitiveComponent.SetMaterial(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A4A80>
-	void SetMassScale(struct FName BoneName, float InMassScale); // Function Engine.PrimitiveComponent.SetMassScale(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A49B0>
-	void SetMassOverrideInKg(struct FName BoneName, float MassInKg, char bOverrideMass); // Function Engine.PrimitiveComponent.SetMassOverrideInKg(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A48B0>
-	void SetLinearDamping(float InDamping); // Function Engine.PrimitiveComponent.SetLinearDamping(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A4830>
-	void SetLightingChannels(char bChannel0, char bChannel1, char bChannel2); // Function Engine.PrimitiveComponent.SetLightingChannels(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A4710>
-	void SetLightAttachmentsAsGroup(char bInLightAttachmentsAsGroup); // Function Engine.PrimitiveComponent.SetLightAttachmentsAsGroup(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A4680>
-	void SetGenerateOverlapEvents(char bInGenerateOverlapEvents); // Function Engine.PrimitiveComponent.SetGenerateOverlapEvents(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A45F0>
-	void SetExcludeFromLightAttachmentGroup(char bInExcludeFromLightAttachmentGroup); // Function Engine.PrimitiveComponent.SetExcludeFromLightAttachmentGroup(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A4560>
-	void SetEnableGravity(char bGravityEnabled); // Function Engine.PrimitiveComponent.SetEnableGravity(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A44D0>
-	void SetCustomPrimitiveDataVector4(int32_t DataIndex, struct Unknown Value); // Function Engine.PrimitiveComponent.SetCustomPrimitiveDataVector4(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A4400>
-	void SetCustomPrimitiveDataVector3(int32_t DataIndex, struct Unknown Value); // Function Engine.PrimitiveComponent.SetCustomPrimitiveDataVector3(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A4330>
-	void SetCustomPrimitiveDataVector2(int32_t DataIndex, struct Unknown Value); // Function Engine.PrimitiveComponent.SetCustomPrimitiveDataVector2(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A4270>
-	void SetCustomPrimitiveDataFloat(int32_t DataIndex, float Value); // Function Engine.PrimitiveComponent.SetCustomPrimitiveDataFloat(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A41A0>
-	void SetCustomDepthStencilWriteMask(enum class Unknow WriteMaskBit); // Function Engine.PrimitiveComponent.SetCustomDepthStencilWriteMask(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A4120>
-	void SetCustomDepthStencilValue(int32_t Value); // Function Engine.PrimitiveComponent.SetCustomDepthStencilValue(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A40A0>
-	void SetCullDistance(float NewCullDistance); // Function Engine.PrimitiveComponent.SetCullDistance(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A4020>
-	void SetConstraintMode(char ConstraintMode); // Function Engine.PrimitiveComponent.SetConstraintMode(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A3FA0>
-	void SetCollisionResponseToChannel(char Channel, char NewResponse); // Function Engine.PrimitiveComponent.SetCollisionResponseToChannel(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A3EE0>
-	void SetCollisionResponseToAllChannels(char NewResponse); // Function Engine.PrimitiveComponent.SetCollisionResponseToAllChannels(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A3E60>
-	void SetCollisionProfileName(struct FName InCollisionProfileName, char bUpdateOverlaps); // Function Engine.PrimitiveComponent.SetCollisionProfileName(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A3D90>
-	void SetCollisionObjectType(char Channel); // Function Engine.PrimitiveComponent.SetCollisionObjectType(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A3D10>
-	void SetCollisionEnabled(char NewType); // Function Engine.PrimitiveComponent.SetCollisionEnabled(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A3C90>
-	void SetCenterOfMass(struct Unknown CenterOfMassOffset, struct FName BoneName); // Function Engine.PrimitiveComponent.SetCenterOfMass(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A3BC0>
-	void SetCastShadow(char NewCastShadow); // Function Engine.PrimitiveComponent.SetCastShadow(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A3B30>
-	void SetCastInsetShadow(char bInCastInsetShadow); // Function Engine.PrimitiveComponent.SetCastInsetShadow(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A3AA0>
-	void SetBoundsScale(float NewBoundsScale); // Function Engine.PrimitiveComponent.SetBoundsScale(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A3A20>
-	void SetAngularDamping(float InDamping); // Function Engine.PrimitiveComponent.SetAngularDamping(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A39A0>
-	void SetAllUseCCD(char InUseCCD); // Function Engine.PrimitiveComponent.SetAllUseCCD(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4595420>
-	void SetAllPhysicsLinearVelocity(struct Unknown NewVel, char bAddToCurrent); // Function Engine.PrimitiveComponent.SetAllPhysicsLinearVelocity(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A38C0>
-	void SetAllPhysicsAngularVelocityInRadians(struct Unknown& NewAngVel, char bAddToCurrent); // Function Engine.PrimitiveComponent.SetAllPhysicsAngularVelocityInRadians(Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A37E0>
-	void SetAllPhysicsAngularVelocityInDegrees(struct Unknown& NewAngVel, char bAddToCurrent); // Function Engine.PrimitiveComponent.SetAllPhysicsAngularVelocityInDegrees(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A36C0>
-	void SetAllMassScale(float InMassScale); // Function Engine.PrimitiveComponent.SetAllMassScale(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4583750>
-	struct Unknown ScaleByMomentOfInertia(struct Unknown InputVector, struct FName BoneName); // Function Engine.PrimitiveComponent.ScaleByMomentOfInertia(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A35C0>
-	void PutRigidBodyToSleep(struct FName BoneName); // Function Engine.PrimitiveComponent.PutRigidBodyToSleep(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A3540>
-	char K2_SphereTraceComponent(struct Unknown TraceStart, struct Unknown TraceEnd, float SphereRadius, char bTraceComplex, char bShowTrace, char bPersistentShowTrace, struct Unknown& HitLocation, struct Unknown& HitNormal, struct FName& BoneName, struct Unknown& OutHit); // Function Engine.PrimitiveComponent.K2_SphereTraceComponent(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A31B0>
-	char K2_SphereOverlapComponent(struct Unknown InSphereCentre, float InSphereRadius, char bTraceComplex, char bShowTrace, char bPersistentShowTrace, struct Unknown& HitLocation, struct Unknown& HitNormal, struct FName& BoneName, struct Unknown& OutHit); // Function Engine.PrimitiveComponent.K2_SphereOverlapComponent(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A2E70>
-	char K2_LineTraceComponent(struct Unknown TraceStart, struct Unknown TraceEnd, char bTraceComplex, char bShowTrace, char bPersistentShowTrace, struct Unknown& HitLocation, struct Unknown& HitNormal, struct FName& BoneName, struct Unknown& OutHit); // Function Engine.PrimitiveComponent.K2_LineTraceComponent(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A2B20>
-	char K2_IsQueryCollisionEnabled(); // Function Engine.PrimitiveComponent.K2_IsQueryCollisionEnabled(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A2AE0>
-	char K2_IsPhysicsCollisionEnabled(); // Function Engine.PrimitiveComponent.K2_IsPhysicsCollisionEnabled(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A2AA0>
-	char K2_IsCollisionEnabled(); // Function Engine.PrimitiveComponent.K2_IsCollisionEnabled(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A2A60>
-	char K2_BoxOverlapComponent(struct Unknown InBoxCentre, struct Unknown InBox, char bTraceComplex, char bShowTrace, char bPersistentShowTrace, struct Unknown& HitLocation, struct Unknown& HitNormal, struct FName& BoneName, struct Unknown& OutHit); // Function Engine.PrimitiveComponent.K2_BoxOverlapComponent(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A2710>
-	char IsOverlappingComponent(struct Unknown OtherComp); // Function Engine.PrimitiveComponent.IsOverlappingComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A2680>
-	char IsOverlappingActor(struct Unknown Other); // Function Engine.PrimitiveComponent.IsOverlappingActor(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A25F0>
-	char IsGravityEnabled(); // Function Engine.PrimitiveComponent.IsGravityEnabled(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44907C0>
-	char IsAnyRigidBodyAwake(); // Function Engine.PrimitiveComponent.IsAnyRigidBodyAwake(Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A25C0>
-	void IgnoreComponentWhenMoving(struct Unknown Component, char bShouldIgnore); // Function Engine.PrimitiveComponent.IgnoreComponentWhenMoving(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A24F0>
-	void IgnoreActorWhenMoving(struct Unknown Actor, char bShouldIgnore); // Function Engine.PrimitiveComponent.IgnoreActorWhenMoving(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A2420>
-	struct Unknown GetWalkableSlopeOverride(); // Function Engine.PrimitiveComponent.GetWalkableSlopeOverride(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A23F0>
-	struct Unknown GetPhysicsLinearVelocityAtPoint(struct Unknown Point, struct FName BoneName); // Function Engine.PrimitiveComponent.GetPhysicsLinearVelocityAtPoint(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A2300>
-	struct Unknown GetPhysicsLinearVelocity(struct FName BoneName); // Function Engine.PrimitiveComponent.GetPhysicsLinearVelocity(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A2260>
-	struct Unknown GetPhysicsAngularVelocityInRadians(struct FName BoneName); // Function Engine.PrimitiveComponent.GetPhysicsAngularVelocityInRadians(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A21C0>
-	struct Unknown GetPhysicsAngularVelocityInDegrees(struct FName BoneName); // Function Engine.PrimitiveComponent.GetPhysicsAngularVelocityInDegrees(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A20F0>
-	struct Unknown GetPhysicsAngularVelocity(struct FName BoneName); // Function Engine.PrimitiveComponent.GetPhysicsAngularVelocity(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A20F0>
-	void GetOverlappingComponents(struct TArray<Unknown>& OutOverlappingComponents); // Function Engine.PrimitiveComponent.GetOverlappingComponents(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A2040>
-	void GetOverlappingActors(struct TArray<Unknown>& OverlappingActors, struct Unknown* ClassFilter); // Function Engine.PrimitiveComponent.GetOverlappingActors(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A1F40>
-	int32_t GetNumMaterials(); // Function Engine.PrimitiveComponent.GetNumMaterials(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A1F10>
-	struct Unknown GetMaterialFromCollisionFaceIndex(int32_t FaceIndex, int32_t& SectionIndex); // Function Engine.PrimitiveComponent.GetMaterialFromCollisionFaceIndex(Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A1E30>
-	struct Unknown GetMaterial(int32_t ElementIndex); // Function Engine.PrimitiveComponent.GetMaterial(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A1D90>
-	float GetMassScale(struct FName BoneName); // Function Engine.PrimitiveComponent.GetMassScale(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A1CF0>
-	float GetMass(); // Function Engine.PrimitiveComponent.GetMass(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A1CB0>
-	float GetLinearDamping(); // Function Engine.PrimitiveComponent.GetLinearDamping(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A1C70>
-	struct Unknown GetInertiaTensor(struct FName BoneName); // Function Engine.PrimitiveComponent.GetInertiaTensor(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A1BC0>
-	char GetGenerateOverlapEvents(); // Function Engine.PrimitiveComponent.GetGenerateOverlapEvents(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A1B90>
-	char GetCollisionResponseToChannel(char Channel); // Function Engine.PrimitiveComponent.GetCollisionResponseToChannel(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A1B00>
-	struct FName GetCollisionProfileName(); // Function Engine.PrimitiveComponent.GetCollisionProfileName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A1AC0>
-	char GetCollisionObjectType(); // Function Engine.PrimitiveComponent.GetCollisionObjectType(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A1A90>
-	char GetCollisionEnabled(); // Function Engine.PrimitiveComponent.GetCollisionEnabled(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A1A60>
-	float GetClosestPointOnCollision(struct Unknown& Point, struct Unknown& OutPointOnBody, struct FName BoneName); // Function Engine.PrimitiveComponent.GetClosestPointOnCollision(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A1920>
-	struct Unknown GetCenterOfMass(struct FName BoneName); // Function Engine.PrimitiveComponent.GetCenterOfMass(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A1880>
-	float GetAngularDamping(); // Function Engine.PrimitiveComponent.GetAngularDamping(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A1840>
-	struct Unknown CreateDynamicMaterialInstance(int32_t ElementIndex, struct Unknown SourceMaterial, struct FName OptionalName); // Function Engine.PrimitiveComponent.CreateDynamicMaterialInstance(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A1730>
-	struct Unknown CreateAndSetMaterialInstanceDynamicFromMaterial(int32_t ElementIndex, struct Unknown Parent); // Function Engine.PrimitiveComponent.CreateAndSetMaterialInstanceDynamicFromMaterial(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A1660>
-	struct Unknown CreateAndSetMaterialInstanceDynamic(int32_t ElementIndex); // Function Engine.PrimitiveComponent.CreateAndSetMaterialInstanceDynamic(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A15C0>
-	struct TArray<Unknown> CopyArrayOfMoveIgnoreComponents(); // Function Engine.PrimitiveComponent.CopyArrayOfMoveIgnoreComponents(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A1540>
-	struct TArray<Unknown> CopyArrayOfMoveIgnoreActors(); // Function Engine.PrimitiveComponent.CopyArrayOfMoveIgnoreActors(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A14C0>
-	void ClearMoveIgnoreComponents(); // Function Engine.PrimitiveComponent.ClearMoveIgnoreComponents(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A1490>
-	void ClearMoveIgnoreActors(); // Function Engine.PrimitiveComponent.ClearMoveIgnoreActors(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A1470>
-	char CanCharacterStepUp(struct Unknown Pawn); // Function Engine.PrimitiveComponent.CanCharacterStepUp(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A13D0>
-	void AddTorqueInRadians(struct Unknown Torque, struct FName BoneName, char bAccelChange); // Function Engine.PrimitiveComponent.AddTorqueInRadians(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A1170>
-	void AddTorqueInDegrees(struct Unknown Torque, struct FName BoneName, char bAccelChange); // Function Engine.PrimitiveComponent.AddTorqueInDegrees(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A1290>
-	void AddTorque(struct Unknown Torque, struct FName BoneName, char bAccelChange); // Function Engine.PrimitiveComponent.AddTorque(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A1170>
-	void AddRadialImpulse(struct Unknown Origin, float Radius, float Strength, char Falloff, char bVelChange); // Function Engine.PrimitiveComponent.AddRadialImpulse(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A0FB0>
-	void AddRadialForce(struct Unknown Origin, float Radius, float Strength, char Falloff, char bAccelChange); // Function Engine.PrimitiveComponent.AddRadialForce(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A0DF0>
-	void AddImpulseAtLocation(struct Unknown Impulse, struct Unknown Location, struct FName BoneName); // Function Engine.PrimitiveComponent.AddImpulseAtLocation(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A0CC0>
-	void AddImpulse(struct Unknown Impulse, struct FName BoneName, char bVelChange); // Function Engine.PrimitiveComponent.AddImpulse(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A0BA0>
-	void AddForceAtLocationLocal(struct Unknown Force, struct Unknown Location, struct FName BoneName); // Function Engine.PrimitiveComponent.AddForceAtLocationLocal(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A0A70>
-	void AddForceAtLocation(struct Unknown Force, struct Unknown Location, struct FName BoneName); // Function Engine.PrimitiveComponent.AddForceAtLocation(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A0940>
-	void AddForce(struct Unknown Force, struct FName BoneName, char bAccelChange); // Function Engine.PrimitiveComponent.AddForce(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A0820>
-	void AddAngularImpulseInRadians(struct Unknown Impulse, struct FName BoneName, char bVelChange); // Function Engine.PrimitiveComponent.AddAngularImpulseInRadians(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A0700>
-	void AddAngularImpulseInDegrees(struct Unknown Impulse, struct FName BoneName, char bVelChange); // Function Engine.PrimitiveComponent.AddAngularImpulseInDegrees(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A05C0>
-	void AddAngularImpulse(struct Unknown Impulse, struct FName BoneName, char bVelChange); // Function Engine.PrimitiveComponent.AddAngularImpulse(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A04A0>
+	char WasRecentlyRendered(float Tolerance); // Function Engine.PrimitiveComponent.WasRecentlyRendered(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45A5960>
+	void WakeRigidBody(struct FName BoneName); // Function Engine.PrimitiveComponent.WakeRigidBody(Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A58D0>
+	void WakeAllRigidBodies(); // Function Engine.PrimitiveComponent.WakeAllRigidBodies(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4584890>
+	void SetWalkableSlopeOverride(struct Unknown& NewOverride); // Function Engine.PrimitiveComponent.SetWalkableSlopeOverride(Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x45A5820>
+	void SetUseCCD(char InUseCCD, struct FName BoneName); // Function Engine.PrimitiveComponent.SetUseCCD(Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A5750>
+	void SetTranslucentSortPriority(int32_t NewTranslucentSortPriority); // Function Engine.PrimitiveComponent.SetTranslucentSortPriority(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A56D0>
+	void SetSingleSampleShadowFromStationaryLights(char bNewSingleSampleShadowFromStationaryLights); // Function Engine.PrimitiveComponent.SetSingleSampleShadowFromStationaryLights(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A5640>
+	void SetSimulatePhysics(char bSimulate); // Function Engine.PrimitiveComponent.SetSimulatePhysics(Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A55B0>
+	void SetRenderInMainPass(char bValue); // Function Engine.PrimitiveComponent.SetRenderInMainPass(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A5520>
+	void SetRenderCustomDepth(char bValue); // Function Engine.PrimitiveComponent.SetRenderCustomDepth(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A5490>
+	void SetReceivesDecals(char bNewReceivesDecals); // Function Engine.PrimitiveComponent.SetReceivesDecals(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A5400>
+	void SetPhysMaterialOverride(struct Unknown NewPhysMaterial); // Function Engine.PrimitiveComponent.SetPhysMaterialOverride(Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A4DD0>
+	void SetPhysicsMaxAngularVelocityInRadians(float NewMaxAngVel, char bAddToCurrent, struct FName BoneName); // Function Engine.PrimitiveComponent.SetPhysicsMaxAngularVelocityInRadians(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A52F0>
+	void SetPhysicsMaxAngularVelocityInDegrees(float NewMaxAngVel, char bAddToCurrent, struct FName BoneName); // Function Engine.PrimitiveComponent.SetPhysicsMaxAngularVelocityInDegrees(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A51E0>
+	void SetPhysicsMaxAngularVelocity(float NewMaxAngVel, char bAddToCurrent, struct FName BoneName); // Function Engine.PrimitiveComponent.SetPhysicsMaxAngularVelocity(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A51E0>
+	void SetPhysicsLinearVelocity(struct Unknown NewVel, char bAddToCurrent, struct FName BoneName); // Function Engine.PrimitiveComponent.SetPhysicsLinearVelocity(Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45A50C0>
+	void SetPhysicsAngularVelocityInRadians(struct Unknown NewAngVel, char bAddToCurrent, struct FName BoneName); // Function Engine.PrimitiveComponent.SetPhysicsAngularVelocityInRadians(Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45A4FA0>
+	void SetPhysicsAngularVelocityInDegrees(struct Unknown NewAngVel, char bAddToCurrent, struct FName BoneName); // Function Engine.PrimitiveComponent.SetPhysicsAngularVelocityInDegrees(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45A4E60>
+	void SetPhysicsAngularVelocity(struct Unknown NewAngVel, char bAddToCurrent, struct FName BoneName); // Function Engine.PrimitiveComponent.SetPhysicsAngularVelocity(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45A4E60>
+	void SetOwnerNoSee(char bNewOwnerNoSee); // Function Engine.PrimitiveComponent.SetOwnerNoSee(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A4D40>
+	void SetOnlyOwnerSee(char bNewOnlyOwnerSee); // Function Engine.PrimitiveComponent.SetOnlyOwnerSee(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A4CB0>
+	void SetNotifyRigidBodyCollision(char bNewNotifyRigidBodyCollision); // Function Engine.PrimitiveComponent.SetNotifyRigidBodyCollision(Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A4C20>
+	void SetMaterialByName(struct FName MaterialSlotName, struct Unknown Material); // Function Engine.PrimitiveComponent.SetMaterialByName(Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A4B50>
+	void SetMaterial(int32_t ElementIndex, struct Unknown Material); // Function Engine.PrimitiveComponent.SetMaterial(Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A4A80>
+	void SetMassScale(struct FName BoneName, float InMassScale); // Function Engine.PrimitiveComponent.SetMassScale(Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A49B0>
+	void SetMassOverrideInKg(struct FName BoneName, float MassInKg, char bOverrideMass); // Function Engine.PrimitiveComponent.SetMassOverrideInKg(Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A48B0>
+	void SetLinearDamping(float InDamping); // Function Engine.PrimitiveComponent.SetLinearDamping(Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A4830>
+	void SetLightingChannels(char bChannel0, char bChannel1, char bChannel2); // Function Engine.PrimitiveComponent.SetLightingChannels(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A4710>
+	void SetLightAttachmentsAsGroup(char bInLightAttachmentsAsGroup); // Function Engine.PrimitiveComponent.SetLightAttachmentsAsGroup(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A4680>
+	void SetGenerateOverlapEvents(char bInGenerateOverlapEvents); // Function Engine.PrimitiveComponent.SetGenerateOverlapEvents(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A45F0>
+	void SetExcludeFromLightAttachmentGroup(char bInExcludeFromLightAttachmentGroup); // Function Engine.PrimitiveComponent.SetExcludeFromLightAttachmentGroup(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A4560>
+	void SetEnableGravity(char bGravityEnabled); // Function Engine.PrimitiveComponent.SetEnableGravity(Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A44D0>
+	void SetCustomPrimitiveDataVector4(int32_t DataIndex, struct Unknown Value); // Function Engine.PrimitiveComponent.SetCustomPrimitiveDataVector4(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45A4400>
+	void SetCustomPrimitiveDataVector3(int32_t DataIndex, struct Unknown Value); // Function Engine.PrimitiveComponent.SetCustomPrimitiveDataVector3(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45A4330>
+	void SetCustomPrimitiveDataVector2(int32_t DataIndex, struct Unknown Value); // Function Engine.PrimitiveComponent.SetCustomPrimitiveDataVector2(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45A4270>
+	void SetCustomPrimitiveDataFloat(int32_t DataIndex, float Value); // Function Engine.PrimitiveComponent.SetCustomPrimitiveDataFloat(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A41A0>
+	void SetCustomDepthStencilWriteMask(enum class Unknow WriteMaskBit); // Function Engine.PrimitiveComponent.SetCustomDepthStencilWriteMask(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A4120>
+	void SetCustomDepthStencilValue(int32_t Value); // Function Engine.PrimitiveComponent.SetCustomDepthStencilValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A40A0>
+	void SetCullDistance(float NewCullDistance); // Function Engine.PrimitiveComponent.SetCullDistance(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A4020>
+	void SetConstraintMode(char ConstraintMode); // Function Engine.PrimitiveComponent.SetConstraintMode(Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A3FA0>
+	void SetCollisionResponseToChannel(char Channel, char NewResponse); // Function Engine.PrimitiveComponent.SetCollisionResponseToChannel(Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A3EE0>
+	void SetCollisionResponseToAllChannels(char NewResponse); // Function Engine.PrimitiveComponent.SetCollisionResponseToAllChannels(Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A3E60>
+	void SetCollisionProfileName(struct FName InCollisionProfileName, char bUpdateOverlaps); // Function Engine.PrimitiveComponent.SetCollisionProfileName(Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A3D90>
+	void SetCollisionObjectType(char Channel); // Function Engine.PrimitiveComponent.SetCollisionObjectType(Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A3D10>
+	void SetCollisionEnabled(char NewType); // Function Engine.PrimitiveComponent.SetCollisionEnabled(Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A3C90>
+	void SetCenterOfMass(struct Unknown CenterOfMassOffset, struct FName BoneName); // Function Engine.PrimitiveComponent.SetCenterOfMass(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45A3BC0>
+	void SetCastShadow(char NewCastShadow); // Function Engine.PrimitiveComponent.SetCastShadow(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A3B30>
+	void SetCastInsetShadow(char bInCastInsetShadow); // Function Engine.PrimitiveComponent.SetCastInsetShadow(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A3AA0>
+	void SetBoundsScale(float NewBoundsScale); // Function Engine.PrimitiveComponent.SetBoundsScale(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A3A20>
+	void SetAngularDamping(float InDamping); // Function Engine.PrimitiveComponent.SetAngularDamping(Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A39A0>
+	void SetAllUseCCD(char InUseCCD); // Function Engine.PrimitiveComponent.SetAllUseCCD(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4595420>
+	void SetAllPhysicsLinearVelocity(struct Unknown NewVel, char bAddToCurrent); // Function Engine.PrimitiveComponent.SetAllPhysicsLinearVelocity(Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45A38C0>
+	void SetAllPhysicsAngularVelocityInRadians(struct Unknown& NewAngVel, char bAddToCurrent); // Function Engine.PrimitiveComponent.SetAllPhysicsAngularVelocityInRadians(Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45A37E0>
+	void SetAllPhysicsAngularVelocityInDegrees(struct Unknown& NewAngVel, char bAddToCurrent); // Function Engine.PrimitiveComponent.SetAllPhysicsAngularVelocityInDegrees(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45A36C0>
+	void SetAllMassScale(float InMassScale); // Function Engine.PrimitiveComponent.SetAllMassScale(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4583750>
+	struct Unknown ScaleByMomentOfInertia(struct Unknown InputVector, struct FName BoneName); // Function Engine.PrimitiveComponent.ScaleByMomentOfInertia(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45A35C0>
+	void PutRigidBodyToSleep(struct FName BoneName); // Function Engine.PrimitiveComponent.PutRigidBodyToSleep(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A3540>
+	char K2_SphereTraceComponent(struct Unknown TraceStart, struct Unknown TraceEnd, float SphereRadius, char bTraceComplex, char bShowTrace, char bPersistentShowTrace, struct Unknown& HitLocation, struct Unknown& HitNormal, struct FName& BoneName, struct Unknown& OutHit); // Function Engine.PrimitiveComponent.K2_SphereTraceComponent(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45A31B0>
+	char K2_SphereOverlapComponent(struct Unknown InSphereCentre, float InSphereRadius, char bTraceComplex, char bShowTrace, char bPersistentShowTrace, struct Unknown& HitLocation, struct Unknown& HitNormal, struct FName& BoneName, struct Unknown& OutHit); // Function Engine.PrimitiveComponent.K2_SphereOverlapComponent(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45A2E70>
+	char K2_LineTraceComponent(struct Unknown TraceStart, struct Unknown TraceEnd, char bTraceComplex, char bShowTrace, char bPersistentShowTrace, struct Unknown& HitLocation, struct Unknown& HitNormal, struct FName& BoneName, struct Unknown& OutHit); // Function Engine.PrimitiveComponent.K2_LineTraceComponent(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45A2B20>
+	char K2_IsQueryCollisionEnabled(); // Function Engine.PrimitiveComponent.K2_IsQueryCollisionEnabled(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45A2AE0>
+	char K2_IsPhysicsCollisionEnabled(); // Function Engine.PrimitiveComponent.K2_IsPhysicsCollisionEnabled(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45A2AA0>
+	char K2_IsCollisionEnabled(); // Function Engine.PrimitiveComponent.K2_IsCollisionEnabled(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45A2A60>
+	char K2_BoxOverlapComponent(struct Unknown InBoxCentre, struct Unknown InBox, char bTraceComplex, char bShowTrace, char bPersistentShowTrace, struct Unknown& HitLocation, struct Unknown& HitNormal, struct FName& BoneName, struct Unknown& OutHit); // Function Engine.PrimitiveComponent.K2_BoxOverlapComponent(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45A2710>
+	char IsOverlappingComponent(struct Unknown OtherComp); // Function Engine.PrimitiveComponent.IsOverlappingComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45A2680>
+	char IsOverlappingActor(struct Unknown Other); // Function Engine.PrimitiveComponent.IsOverlappingActor(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45A25F0>
+	char IsGravityEnabled(); // Function Engine.PrimitiveComponent.IsGravityEnabled(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44907C0>
+	char IsAnyRigidBodyAwake(); // Function Engine.PrimitiveComponent.IsAnyRigidBodyAwake(Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x45A25C0>
+	void IgnoreComponentWhenMoving(struct Unknown Component, char bShouldIgnore); // Function Engine.PrimitiveComponent.IgnoreComponentWhenMoving(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A24F0>
+	void IgnoreActorWhenMoving(struct Unknown Actor, char bShouldIgnore); // Function Engine.PrimitiveComponent.IgnoreActorWhenMoving(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A2420>
+	struct Unknown GetWalkableSlopeOverride(); // Function Engine.PrimitiveComponent.GetWalkableSlopeOverride(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45A23F0>
+	struct Unknown GetPhysicsLinearVelocityAtPoint(struct Unknown Point, struct FName BoneName); // Function Engine.PrimitiveComponent.GetPhysicsLinearVelocityAtPoint(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45A2300>
+	struct Unknown GetPhysicsLinearVelocity(struct FName BoneName); // Function Engine.PrimitiveComponent.GetPhysicsLinearVelocity(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45A2260>
+	struct Unknown GetPhysicsAngularVelocityInRadians(struct FName BoneName); // Function Engine.PrimitiveComponent.GetPhysicsAngularVelocityInRadians(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45A21C0>
+	struct Unknown GetPhysicsAngularVelocityInDegrees(struct FName BoneName); // Function Engine.PrimitiveComponent.GetPhysicsAngularVelocityInDegrees(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45A20F0>
+	struct Unknown GetPhysicsAngularVelocity(struct FName BoneName); // Function Engine.PrimitiveComponent.GetPhysicsAngularVelocity(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45A20F0>
+	void GetOverlappingComponents(struct TArray<Unknown>& OutOverlappingComponents); // Function Engine.PrimitiveComponent.GetOverlappingComponents(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45A2040>
+	void GetOverlappingActors(struct TArray<Unknown>& OverlappingActors, struct Unknown* ClassFilter); // Function Engine.PrimitiveComponent.GetOverlappingActors(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45A1F40>
+	int32_t GetNumMaterials(); // Function Engine.PrimitiveComponent.GetNumMaterials(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45A1F10>
+	struct Unknown GetMaterialFromCollisionFaceIndex(int32_t FaceIndex, int32_t& SectionIndex); // Function Engine.PrimitiveComponent.GetMaterialFromCollisionFaceIndex(Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45A1E30>
+	struct Unknown GetMaterial(int32_t ElementIndex); // Function Engine.PrimitiveComponent.GetMaterial(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45A1D90>
+	float GetMassScale(struct FName BoneName); // Function Engine.PrimitiveComponent.GetMassScale(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45A1CF0>
+	float GetMass(); // Function Engine.PrimitiveComponent.GetMass(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45A1CB0>
+	float GetLinearDamping(); // Function Engine.PrimitiveComponent.GetLinearDamping(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45A1C70>
+	struct Unknown GetInertiaTensor(struct FName BoneName); // Function Engine.PrimitiveComponent.GetInertiaTensor(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45A1BC0>
+	char GetGenerateOverlapEvents(); // Function Engine.PrimitiveComponent.GetGenerateOverlapEvents(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45A1B90>
+	char GetCollisionResponseToChannel(char Channel); // Function Engine.PrimitiveComponent.GetCollisionResponseToChannel(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45A1B00>
+	struct FName GetCollisionProfileName(); // Function Engine.PrimitiveComponent.GetCollisionProfileName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45A1AC0>
+	char GetCollisionObjectType(); // Function Engine.PrimitiveComponent.GetCollisionObjectType(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45A1A90>
+	char GetCollisionEnabled(); // Function Engine.PrimitiveComponent.GetCollisionEnabled(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45A1A60>
+	float GetClosestPointOnCollision(struct Unknown& Point, struct Unknown& OutPointOnBody, struct FName BoneName); // Function Engine.PrimitiveComponent.GetClosestPointOnCollision(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45A1920>
+	struct Unknown GetCenterOfMass(struct FName BoneName); // Function Engine.PrimitiveComponent.GetCenterOfMass(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45A1880>
+	float GetAngularDamping(); // Function Engine.PrimitiveComponent.GetAngularDamping(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45A1840>
+	struct Unknown CreateDynamicMaterialInstance(int32_t ElementIndex, struct Unknown SourceMaterial, struct FName OptionalName); // Function Engine.PrimitiveComponent.CreateDynamicMaterialInstance(Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A1730>
+	struct Unknown CreateAndSetMaterialInstanceDynamicFromMaterial(int32_t ElementIndex, struct Unknown Parent); // Function Engine.PrimitiveComponent.CreateAndSetMaterialInstanceDynamicFromMaterial(Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A1660>
+	struct Unknown CreateAndSetMaterialInstanceDynamic(int32_t ElementIndex); // Function Engine.PrimitiveComponent.CreateAndSetMaterialInstanceDynamic(Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A15C0>
+	struct TArray<Unknown> CopyArrayOfMoveIgnoreComponents(); // Function Engine.PrimitiveComponent.CopyArrayOfMoveIgnoreComponents(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A1540>
+	struct TArray<Unknown> CopyArrayOfMoveIgnoreActors(); // Function Engine.PrimitiveComponent.CopyArrayOfMoveIgnoreActors(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A14C0>
+	void ClearMoveIgnoreComponents(); // Function Engine.PrimitiveComponent.ClearMoveIgnoreComponents(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A1490>
+	void ClearMoveIgnoreActors(); // Function Engine.PrimitiveComponent.ClearMoveIgnoreActors(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A1470>
+	char CanCharacterStepUp(struct Unknown Pawn); // Function Engine.PrimitiveComponent.CanCharacterStepUp(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45A13D0>
+	void AddTorqueInRadians(struct Unknown Torque, struct FName BoneName, char bAccelChange); // Function Engine.PrimitiveComponent.AddTorqueInRadians(Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45A1170>
+	void AddTorqueInDegrees(struct Unknown Torque, struct FName BoneName, char bAccelChange); // Function Engine.PrimitiveComponent.AddTorqueInDegrees(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45A1290>
+	void AddTorque(struct Unknown Torque, struct FName BoneName, char bAccelChange); // Function Engine.PrimitiveComponent.AddTorque(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45A1170>
+	void AddRadialImpulse(struct Unknown Origin, float Radius, float Strength, char Falloff, char bVelChange); // Function Engine.PrimitiveComponent.AddRadialImpulse(Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45A0FB0>
+	void AddRadialForce(struct Unknown Origin, float Radius, float Strength, char Falloff, char bAccelChange); // Function Engine.PrimitiveComponent.AddRadialForce(Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45A0DF0>
+	void AddImpulseAtLocation(struct Unknown Impulse, struct Unknown Location, struct FName BoneName); // Function Engine.PrimitiveComponent.AddImpulseAtLocation(Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45A0CC0>
+	void AddImpulse(struct Unknown Impulse, struct FName BoneName, char bVelChange); // Function Engine.PrimitiveComponent.AddImpulse(Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45A0BA0>
+	void AddForceAtLocationLocal(struct Unknown Force, struct Unknown Location, struct FName BoneName); // Function Engine.PrimitiveComponent.AddForceAtLocationLocal(Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45A0A70>
+	void AddForceAtLocation(struct Unknown Force, struct Unknown Location, struct FName BoneName); // Function Engine.PrimitiveComponent.AddForceAtLocation(Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45A0940>
+	void AddForce(struct Unknown Force, struct FName BoneName, char bAccelChange); // Function Engine.PrimitiveComponent.AddForce(Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45A0820>
+	void AddAngularImpulseInRadians(struct Unknown Impulse, struct FName BoneName, char bVelChange); // Function Engine.PrimitiveComponent.AddAngularImpulseInRadians(Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45A0700>
+	void AddAngularImpulseInDegrees(struct Unknown Impulse, struct FName BoneName, char bVelChange); // Function Engine.PrimitiveComponent.AddAngularImpulseInDegrees(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45A05C0>
+	void AddAngularImpulse(struct Unknown Impulse, struct FName BoneName, char bVelChange); // Function Engine.PrimitiveComponent.AddAngularImpulse(Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45A04A0>
 };
 
 // Class Engine.MeshComponent
@@ -4799,14 +4799,14 @@ public:
 	struct TArray<Unknown> OverrideMaterials; // 0x4B0 (16)
 	char bEnableMaterialParameterCaching : 0; // 0x4D0 (1)
 
-	void SetVectorParameterValueOnMaterials(struct FName ParameterName, struct Unknown ParameterValue); // Function Engine.MeshComponent.SetVectorParameterValueOnMaterials(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x455D5F0>
-	void SetScalarParameterValueOnMaterials(struct FName ParameterName, float ParameterValue); // Function Engine.MeshComponent.SetScalarParameterValueOnMaterials(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x455D520>
-	void SetColorParameterValueOnMaterials(struct FName ParameterName, struct Unknown ParameterValue); // Function Engine.MeshComponent.SetColorParameterValueOnMaterials(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x455D2F0>
-	void PrestreamTextures(float Seconds, char bPrioritizeCharacterTextures, int32_t CinematicTextureGroups); // Function Engine.MeshComponent.PrestreamTextures(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x455D1E0>
-	char IsMaterialSlotNameValid(struct FName MaterialSlotName); // Function Engine.MeshComponent.IsMaterialSlotNameValid(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x455D140>
-	struct TArray<Unknown> GetMaterialSlotNames(); // Function Engine.MeshComponent.GetMaterialSlotNames(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x455D040>
-	struct TArray<Unknown> GetMaterials(); // Function Engine.MeshComponent.GetMaterials(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x455D0C0>
-	int32_t GetMaterialIndex(struct FName MaterialSlotName); // Function Engine.MeshComponent.GetMaterialIndex(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x455CFA0>
+	void SetVectorParameterValueOnMaterials(struct FName ParameterName, struct Unknown ParameterValue); // Function Engine.MeshComponent.SetVectorParameterValueOnMaterials(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x455D5F0>
+	void SetScalarParameterValueOnMaterials(struct FName ParameterName, float ParameterValue); // Function Engine.MeshComponent.SetScalarParameterValueOnMaterials(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x455D520>
+	void SetColorParameterValueOnMaterials(struct FName ParameterName, struct Unknown ParameterValue); // Function Engine.MeshComponent.SetColorParameterValueOnMaterials(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x455D2F0>
+	void PrestreamTextures(float Seconds, char bPrioritizeCharacterTextures, int32_t CinematicTextureGroups); // Function Engine.MeshComponent.PrestreamTextures(Native|Public|BlueprintCallable) // <Game_BE.exe+0x455D1E0>
+	char IsMaterialSlotNameValid(struct FName MaterialSlotName); // Function Engine.MeshComponent.IsMaterialSlotNameValid(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x455D140>
+	struct TArray<Unknown> GetMaterialSlotNames(); // Function Engine.MeshComponent.GetMaterialSlotNames(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x455D040>
+	struct TArray<Unknown> GetMaterials(); // Function Engine.MeshComponent.GetMaterials(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x455D0C0>
+	int32_t GetMaterialIndex(struct FName MaterialSlotName); // Function Engine.MeshComponent.GetMaterialIndex(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x455CFA0>
 };
 
 // Class Engine.SkinnedMeshComponent
@@ -4848,44 +4848,44 @@ public:
 	struct Unknown CachedWorldSpaceBounds; // 0x668 (28)
 	struct Unknown CachedWorldToLocalTransform; // 0x690 (64)
 
-	void UnloadSkinWeightProfile(struct FName InProfileName); // Function Engine.SkinnedMeshComponent.UnloadSkinWeightProfile(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45CC350>
-	void UnHideBoneByName(struct FName BoneName); // Function Engine.SkinnedMeshComponent.UnHideBoneByName(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45CC2D0>
-	void TransformToBoneSpace(struct FName BoneName, struct Unknown InPosition, struct Unknown InRotation, struct Unknown& OutPosition, struct Unknown& OutRotation); // Function Engine.SkinnedMeshComponent.TransformToBoneSpace(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45CC110>
-	void TransformFromBoneSpace(struct FName BoneName, struct Unknown InPosition, struct Unknown InRotation, struct Unknown& OutPosition, struct Unknown& OutRotation); // Function Engine.SkinnedMeshComponent.TransformFromBoneSpace(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45CBF50>
-	void ShowMaterialSection(int32_t MaterialID, int32_t SectionIndex, char bShow, int32_t LODIndex); // Function Engine.SkinnedMeshComponent.ShowMaterialSection(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45CBE10>
-	void ShowAllMaterialSections(int32_t LODIndex); // Function Engine.SkinnedMeshComponent.ShowAllMaterialSections(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45CBD90>
-	void SetVertexColorOverride_LinearColor(int32_t LODIndex, struct TArray<Unknown>& VertexColors); // Function Engine.SkinnedMeshComponent.SetVertexColorOverride_LinearColor(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45CBCA0>
-	char SetSkinWeightProfile(struct FName InProfileName); // Function Engine.SkinnedMeshComponent.SetSkinWeightProfile(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45CBC10>
-	void SetSkinWeightOverride(int32_t LODIndex, struct TArray<Unknown>& SkinWeights); // Function Engine.SkinnedMeshComponent.SetSkinWeightOverride(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45CBB20>
-	void SetSkeletalMesh(struct Unknown NewMesh, char bReinitPose); // Function Engine.SkinnedMeshComponent.SetSkeletalMesh(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45CBA50>
-	void SetRenderStatic(char bNewValue); // Function Engine.SkinnedMeshComponent.SetRenderStatic(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45CB9C0>
-	void SetPhysicsAsset(struct Unknown NewPhysicsAsset, char bForceReInit); // Function Engine.SkinnedMeshComponent.SetPhysicsAsset(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45CB8F0>
-	void SetMinLOD(int32_t InNewMinLOD); // Function Engine.SkinnedMeshComponent.SetMinLOD(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45CB870>
-	void SetMasterPoseComponent(struct Unknown NewMasterBoneComponent, char bForceUpdate); // Function Engine.SkinnedMeshComponent.SetMasterPoseComponent(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45CB7A0>
-	void SetForcedLOD(int32_t InNewForcedLOD); // Function Engine.SkinnedMeshComponent.SetForcedLOD(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45CB720>
-	void SetCastCapsuleIndirectShadow(char bNewValue); // Function Engine.SkinnedMeshComponent.SetCastCapsuleIndirectShadow(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45CB690>
-	void SetCastCapsuleDirectShadow(char bNewValue); // Function Engine.SkinnedMeshComponent.SetCastCapsuleDirectShadow(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45CB600>
-	void SetCapsuleIndirectShadowMinVisibility(float NewValue); // Function Engine.SkinnedMeshComponent.SetCapsuleIndirectShadowMinVisibility(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45CB580>
-	char IsUsingSkinWeightProfile(); // Function Engine.SkinnedMeshComponent.IsUsingSkinWeightProfile(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45CB550>
-	char IsMaterialSectionShown(int32_t MaterialID, int32_t LODIndex); // Function Engine.SkinnedMeshComponent.IsMaterialSectionShown(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45CB490>
-	char IsBoneHiddenByName(struct FName BoneName); // Function Engine.SkinnedMeshComponent.IsBoneHiddenByName(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45CB400>
-	void HideBoneByName(struct FName BoneName, char PhysBodyOption); // Function Engine.SkinnedMeshComponent.HideBoneByName(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45CB220>
-	char GetTwistAndSwingAngleOfDeltaRotationFromRefPose(struct FName BoneName, float& OutTwistAngle, float& OutSwingAngle); // Function Engine.SkinnedMeshComponent.GetTwistAndSwingAngleOfDeltaRotationFromRefPose(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45CB100>
-	struct FName GetSocketBoneName(struct FName InSocketName); // Function Engine.SkinnedMeshComponent.GetSocketBoneName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45CAFD0>
-	struct Unknown GetRefPosePosition(int32_t BoneIndex); // Function Engine.SkinnedMeshComponent.GetRefPosePosition(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45CAF30>
-	struct FName GetParentBone(struct FName BoneName); // Function Engine.SkinnedMeshComponent.GetParentBone(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45CAEA0>
-	int32_t GetNumLODs(); // Function Engine.SkinnedMeshComponent.GetNumLODs(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45CAE70>
-	int32_t GetNumBones(); // Function Engine.SkinnedMeshComponent.GetNumBones(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45CAE40>
-	int32_t GetForcedLOD(); // Function Engine.SkinnedMeshComponent.GetForcedLOD(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45CAE10>
-	struct Unknown GetDeltaTransformFromRefPose(struct FName BoneName, struct FName BaseName); // Function Engine.SkinnedMeshComponent.GetDeltaTransformFromRefPose(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45CAD10>
-	struct FName GetCurrentSkinWeightProfileName(); // Function Engine.SkinnedMeshComponent.GetCurrentSkinWeightProfileName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45CACF0>
-	struct FName GetBoneName(int32_t BoneIndex); // Function Engine.SkinnedMeshComponent.GetBoneName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45CAC60>
-	int32_t GetBoneIndex(struct FName BoneName); // Function Engine.SkinnedMeshComponent.GetBoneIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45CABD0>
-	struct FName FindClosestBone_K2(struct Unknown TestLocation, struct Unknown& BoneLocation, float IgnoreScale, char bRequirePhysicsAsset); // Function Engine.SkinnedMeshComponent.FindClosestBone_K2(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45CAA40>
-	void ClearVertexColorOverride(int32_t LODIndex); // Function Engine.SkinnedMeshComponent.ClearVertexColorOverride(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45CA9C0>
-	void ClearSkinWeightProfile(); // Function Engine.SkinnedMeshComponent.ClearSkinWeightProfile(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45CA9A0>
-	void ClearSkinWeightOverride(int32_t LODIndex); // Function Engine.SkinnedMeshComponent.ClearSkinWeightOverride(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45CA920>
-	char BoneIsChildOf(struct FName BoneName, struct FName ParentBoneName); // Function Engine.SkinnedMeshComponent.BoneIsChildOf(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45CA860>
+	void UnloadSkinWeightProfile(struct FName InProfileName); // Function Engine.SkinnedMeshComponent.UnloadSkinWeightProfile(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45CC350>
+	void UnHideBoneByName(struct FName BoneName); // Function Engine.SkinnedMeshComponent.UnHideBoneByName(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45CC2D0>
+	void TransformToBoneSpace(struct FName BoneName, struct Unknown InPosition, struct Unknown InRotation, struct Unknown& OutPosition, struct Unknown& OutRotation); // Function Engine.SkinnedMeshComponent.TransformToBoneSpace(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45CC110>
+	void TransformFromBoneSpace(struct FName BoneName, struct Unknown InPosition, struct Unknown InRotation, struct Unknown& OutPosition, struct Unknown& OutRotation); // Function Engine.SkinnedMeshComponent.TransformFromBoneSpace(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45CBF50>
+	void ShowMaterialSection(int32_t MaterialID, int32_t SectionIndex, char bShow, int32_t LODIndex); // Function Engine.SkinnedMeshComponent.ShowMaterialSection(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45CBE10>
+	void ShowAllMaterialSections(int32_t LODIndex); // Function Engine.SkinnedMeshComponent.ShowAllMaterialSections(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45CBD90>
+	void SetVertexColorOverride_LinearColor(int32_t LODIndex, struct TArray<Unknown>& VertexColors); // Function Engine.SkinnedMeshComponent.SetVertexColorOverride_LinearColor(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x45CBCA0>
+	char SetSkinWeightProfile(struct FName InProfileName); // Function Engine.SkinnedMeshComponent.SetSkinWeightProfile(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45CBC10>
+	void SetSkinWeightOverride(int32_t LODIndex, struct TArray<Unknown>& SkinWeights); // Function Engine.SkinnedMeshComponent.SetSkinWeightOverride(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x45CBB20>
+	void SetSkeletalMesh(struct Unknown NewMesh, char bReinitPose); // Function Engine.SkinnedMeshComponent.SetSkeletalMesh(Native|Public|BlueprintCallable) // <Game_BE.exe+0x45CBA50>
+	void SetRenderStatic(char bNewValue); // Function Engine.SkinnedMeshComponent.SetRenderStatic(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45CB9C0>
+	void SetPhysicsAsset(struct Unknown NewPhysicsAsset, char bForceReInit); // Function Engine.SkinnedMeshComponent.SetPhysicsAsset(Native|Public|BlueprintCallable) // <Game_BE.exe+0x45CB8F0>
+	void SetMinLOD(int32_t InNewMinLOD); // Function Engine.SkinnedMeshComponent.SetMinLOD(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45CB870>
+	void SetMasterPoseComponent(struct Unknown NewMasterBoneComponent, char bForceUpdate); // Function Engine.SkinnedMeshComponent.SetMasterPoseComponent(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45CB7A0>
+	void SetForcedLOD(int32_t InNewForcedLOD); // Function Engine.SkinnedMeshComponent.SetForcedLOD(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45CB720>
+	void SetCastCapsuleIndirectShadow(char bNewValue); // Function Engine.SkinnedMeshComponent.SetCastCapsuleIndirectShadow(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45CB690>
+	void SetCastCapsuleDirectShadow(char bNewValue); // Function Engine.SkinnedMeshComponent.SetCastCapsuleDirectShadow(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45CB600>
+	void SetCapsuleIndirectShadowMinVisibility(float NewValue); // Function Engine.SkinnedMeshComponent.SetCapsuleIndirectShadowMinVisibility(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45CB580>
+	char IsUsingSkinWeightProfile(); // Function Engine.SkinnedMeshComponent.IsUsingSkinWeightProfile(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45CB550>
+	char IsMaterialSectionShown(int32_t MaterialID, int32_t LODIndex); // Function Engine.SkinnedMeshComponent.IsMaterialSectionShown(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45CB490>
+	char IsBoneHiddenByName(struct FName BoneName); // Function Engine.SkinnedMeshComponent.IsBoneHiddenByName(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45CB400>
+	void HideBoneByName(struct FName BoneName, char PhysBodyOption); // Function Engine.SkinnedMeshComponent.HideBoneByName(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45CB220>
+	char GetTwistAndSwingAngleOfDeltaRotationFromRefPose(struct FName BoneName, float& OutTwistAngle, float& OutSwingAngle); // Function Engine.SkinnedMeshComponent.GetTwistAndSwingAngleOfDeltaRotationFromRefPose(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45CB100>
+	struct FName GetSocketBoneName(struct FName InSocketName); // Function Engine.SkinnedMeshComponent.GetSocketBoneName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45CAFD0>
+	struct Unknown GetRefPosePosition(int32_t BoneIndex); // Function Engine.SkinnedMeshComponent.GetRefPosePosition(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45CAF30>
+	struct FName GetParentBone(struct FName BoneName); // Function Engine.SkinnedMeshComponent.GetParentBone(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45CAEA0>
+	int32_t GetNumLODs(); // Function Engine.SkinnedMeshComponent.GetNumLODs(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45CAE70>
+	int32_t GetNumBones(); // Function Engine.SkinnedMeshComponent.GetNumBones(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45CAE40>
+	int32_t GetForcedLOD(); // Function Engine.SkinnedMeshComponent.GetForcedLOD(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45CAE10>
+	struct Unknown GetDeltaTransformFromRefPose(struct FName BoneName, struct FName BaseName); // Function Engine.SkinnedMeshComponent.GetDeltaTransformFromRefPose(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45CAD10>
+	struct FName GetCurrentSkinWeightProfileName(); // Function Engine.SkinnedMeshComponent.GetCurrentSkinWeightProfileName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45CACF0>
+	struct FName GetBoneName(int32_t BoneIndex); // Function Engine.SkinnedMeshComponent.GetBoneName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45CAC60>
+	int32_t GetBoneIndex(struct FName BoneName); // Function Engine.SkinnedMeshComponent.GetBoneIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45CABD0>
+	struct FName FindClosestBone_K2(struct Unknown TestLocation, struct Unknown& BoneLocation, float IgnoreScale, char bRequirePhysicsAsset); // Function Engine.SkinnedMeshComponent.FindClosestBone_K2(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45CAA40>
+	void ClearVertexColorOverride(int32_t LODIndex); // Function Engine.SkinnedMeshComponent.ClearVertexColorOverride(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45CA9C0>
+	void ClearSkinWeightProfile(); // Function Engine.SkinnedMeshComponent.ClearSkinWeightProfile(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45CA9A0>
+	void ClearSkinWeightOverride(int32_t LODIndex); // Function Engine.SkinnedMeshComponent.ClearSkinWeightOverride(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45CA920>
+	char BoneIsChildOf(struct FName BoneName, struct FName ParentBoneName); // Function Engine.SkinnedMeshComponent.BoneIsChildOf(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45CA860>
 };
 
 // Class Engine.StreamableRenderAsset
@@ -4942,17 +4942,17 @@ public:
 	struct TArray<Unknown> Sockets; // 0x168 (16)
 	struct TArray<Unknown> SkinWeightProfiles; // 0x188 (16)
 
-	void SetLODSettings(struct Unknown InLODSettings); // Function Engine.SkeletalMesh.SetLODSettings(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16CA440>
-	int32_t NumSockets(); // Function Engine.SkeletalMesh.NumSockets(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45BE230>
-	struct TArray<Unknown> K2_GetAllMorphTargetNames(); // Function Engine.SkeletalMesh.K2_GetAllMorphTargetNames(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45BE150>
-	char IsSectionUsingCloth(int32_t InSectionIndex, char bCheckCorrespondingSections); // Function Engine.SkeletalMesh.IsSectionUsingCloth(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45BE090>
-	struct Unknown GetSocketByIndex(int32_t Index); // Function Engine.SkeletalMesh.GetSocketByIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45BE000>
-	struct Unknown GetNodeMappingContainer(struct Unknown SourceAsset); // Function Engine.SkeletalMesh.GetNodeMappingContainer(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45BDF70>
-	struct Unknown GetImportedBounds(); // Function Engine.SkeletalMesh.GetImportedBounds(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45BDF20>
-	struct Unknown GetBounds(); // Function Engine.SkeletalMesh.GetBounds(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45BDED0>
-	struct Unknown FindSocketInfo(struct FName InSocketName, struct Unknown& OutTransform, int32_t& OutBoneIndex, int32_t& OutIndex); // Function Engine.SkeletalMesh.FindSocketInfo(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45BDD00>
-	struct Unknown FindSocketAndIndex(struct FName InSocketName, int32_t& OutIndex); // Function Engine.SkeletalMesh.FindSocketAndIndex(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45BDC30>
-	struct Unknown FindSocket(struct FName InSocketName); // Function Engine.SkeletalMesh.FindSocket(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45BDBA0>
+	void SetLODSettings(struct Unknown InLODSettings); // Function Engine.SkeletalMesh.SetLODSettings(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16CA440>
+	int32_t NumSockets(); // Function Engine.SkeletalMesh.NumSockets(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45BE230>
+	struct TArray<Unknown> K2_GetAllMorphTargetNames(); // Function Engine.SkeletalMesh.K2_GetAllMorphTargetNames(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45BE150>
+	char IsSectionUsingCloth(int32_t InSectionIndex, char bCheckCorrespondingSections); // Function Engine.SkeletalMesh.IsSectionUsingCloth(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45BE090>
+	struct Unknown GetSocketByIndex(int32_t Index); // Function Engine.SkeletalMesh.GetSocketByIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45BE000>
+	struct Unknown GetNodeMappingContainer(struct Unknown SourceAsset); // Function Engine.SkeletalMesh.GetNodeMappingContainer(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45BDF70>
+	struct Unknown GetImportedBounds(); // Function Engine.SkeletalMesh.GetImportedBounds(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45BDF20>
+	struct Unknown GetBounds(); // Function Engine.SkeletalMesh.GetBounds(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45BDED0>
+	struct Unknown FindSocketInfo(struct FName InSocketName, struct Unknown& OutTransform, int32_t& OutBoneIndex, int32_t& OutIndex); // Function Engine.SkeletalMesh.FindSocketInfo(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45BDD00>
+	struct Unknown FindSocketAndIndex(struct FName InSocketName, int32_t& OutIndex); // Function Engine.SkeletalMesh.FindSocketAndIndex(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45BDC30>
+	struct Unknown FindSocket(struct FName InSocketName); // Function Engine.SkeletalMesh.FindSocket(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45BDBA0>
 };
 
 // Class Engine.StaticMeshActor
@@ -4964,7 +4964,7 @@ public:
 	char bStaticMeshReplicateMovement : 0; // 0x308 (1)
 	enum class Unknow NavigationGeometryGatheringMode; // 0x309 (1)
 
-	void SetMobility(char InMobility); // Function Engine.StaticMeshActor.SetMobility(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1262870>
+	void SetMobility(char InMobility); // Function Engine.StaticMeshActor.SetMobility(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1262870>
 };
 
 // Class Engine.Texture
@@ -5016,35 +5016,35 @@ public:
 	struct Unknown* ShowDebugTargetDesiredClass; // 0x370 (8)
 	struct Unknown ShowDebugTargetActor; // 0x378 (8)
 
-	void ShowHUD(); // Function Engine.HUD.ShowHUD(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1E71C00>
-	void ShowDebugToggleSubCategory(struct FName Category); // Function Engine.HUD.ShowDebugToggleSubCategory(Final|Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44CC740>
-	void ShowDebugForReticleTargetToggle(struct Unknown* DesiredClass); // Function Engine.HUD.ShowDebugForReticleTargetToggle(Final|Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44CC6C0>
-	void ShowDebug(struct FName DebugType); // Function Engine.HUD.ShowDebug(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1E96D40>
-	void RemoveDebugText(struct Unknown SrcActor, char bLeaveDurationText); // Function Engine.HUD.RemoveDebugText(Final|Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44CC4A0>
-	void RemoveAllDebugStrings(); // Function Engine.HUD.RemoveAllDebugStrings(Final|Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44CC480>
-	void ReceiveHitBoxRelease(struct FName BoxName); // Function Engine.HUD.ReceiveHitBoxRelease(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveHitBoxEndCursorOver(struct FName BoxName); // Function Engine.HUD.ReceiveHitBoxEndCursorOver(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveHitBoxClick(struct FName BoxName); // Function Engine.HUD.ReceiveHitBoxClick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveHitBoxBeginCursorOver(struct FName BoxName); // Function Engine.HUD.ReceiveHitBoxBeginCursorOver(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveDrawHUD(int32_t SizeX, int32_t SizeY); // Function Engine.HUD.ReceiveDrawHUD(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	struct Unknown Project(struct Unknown Location); // Function Engine.HUD.Project(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44CC3D0>
-	void PreviousDebugTarget(); // Function Engine.HUD.PreviousDebugTarget(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FCBCF0>
-	void NextDebugTarget(); // Function Engine.HUD.NextDebugTarget(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11E2640>
-	void GetTextSize(struct FString Text, float& OutWidth, float& OutHeight, struct Unknown Font, float Scale); // Function Engine.HUD.GetTextSize(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44CC0D0>
-	struct Unknown GetOwningPlayerController(); // Function Engine.HUD.GetOwningPlayerController(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16E7B60>
-	struct Unknown GetOwningPawn(); // Function Engine.HUD.GetOwningPawn(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44CC0A0>
-	void GetActorsInSelectionRectangle(struct Unknown* ClassFilter, struct Unknown& FirstPoint, struct Unknown& SecondPoint, struct TArray<Unknown>& OutActors, char bIncludeNonCollidingComponents, char bActorMustBeFullyEnclosed); // Function Engine.HUD.GetActorsInSelectionRectangle(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44CBE90>
-	void DrawTextureSimple(struct Unknown Texture, float ScreenX, float ScreenY, float Scale, char bScalePosition); // Function Engine.HUD.DrawTextureSimple(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44CBD00>
-	void DrawTexture(struct Unknown Texture, float ScreenX, float ScreenY, float ScreenW, float ScreenH, float TextureU, float TextureV, float TextureUWidth, float TextureVHeight, struct Unknown TintColor, char BlendMode, float Scale, char bScalePosition, float Rotation, struct Unknown RotPivot); // Function Engine.HUD.DrawTexture(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44CB8E0>
-	void DrawText(struct FString Text, struct Unknown TextColor, float ScreenX, float ScreenY, struct Unknown Font, float Scale, char bScalePosition); // Function Engine.HUD.DrawText(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44CB6B0>
-	void DrawRect(struct Unknown RectColor, float ScreenX, float ScreenY, float ScreenW, float ScreenH); // Function Engine.HUD.DrawRect(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44CB500>
-	void DrawMaterialTriangle(struct Unknown Material, struct Unknown V0_Pos, struct Unknown V1_Pos, struct Unknown V2_Pos, struct Unknown V0_UV, struct Unknown V1_UV, struct Unknown V2_UV, struct Unknown V0_Color, struct Unknown V1_Color, struct Unknown V2_Color); // Function Engine.HUD.DrawMaterialTriangle(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44CB240>
-	void DrawMaterialSimple(struct Unknown Material, float ScreenX, float ScreenY, float ScreenW, float ScreenH, float Scale, char bScalePosition); // Function Engine.HUD.DrawMaterialSimple(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44CB040>
-	void DrawMaterial(struct Unknown Material, float ScreenX, float ScreenY, float ScreenW, float ScreenH, float MaterialU, float MaterialV, float MaterialUWidth, float MaterialVHeight, float Scale, char bScalePosition, float Rotation, struct Unknown RotPivot); // Function Engine.HUD.DrawMaterial(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44CACB0>
-	void DrawLine(float StartScreenX, float StartScreenY, float EndScreenX, float EndScreenY, struct Unknown LineColor, float LineThickness); // Function Engine.HUD.DrawLine(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44CAAD0>
-	void Deproject(float ScreenX, float ScreenY, struct Unknown& WorldPosition, struct Unknown& WorldDirection); // Function Engine.HUD.Deproject(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44CA8D0>
-	void AddHitBox(struct Unknown Position, struct Unknown Size, struct FName InName, char bConsumesInput, int32_t Priority); // Function Engine.HUD.AddHitBox(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44CA740>
-	void AddDebugText(struct FString DebugText, struct Unknown SrcActor, float Duration, struct Unknown Offset, struct Unknown DesiredOffset, struct Unknown TextColor, char bSkipOverwriteCheck, char bAbsoluteLocation, char bKeepAttachedToActor, struct Unknown InFont, float FontScale, char bDrawShadow); // Function Engine.HUD.AddDebugText(Final|Net|NetReliableNative|Event|Public|HasDefaults|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44CA3A0>
+	void ShowHUD(); // Function Engine.HUD.ShowHUD(Exec|Native|Public) // <Game_BE.exe+0x1E71C00>
+	void ShowDebugToggleSubCategory(struct FName Category); // Function Engine.HUD.ShowDebugToggleSubCategory(Final|Exec|Native|Public) // <Game_BE.exe+0x44CC740>
+	void ShowDebugForReticleTargetToggle(struct Unknown* DesiredClass); // Function Engine.HUD.ShowDebugForReticleTargetToggle(Final|Exec|Native|Public) // <Game_BE.exe+0x44CC6C0>
+	void ShowDebug(struct FName DebugType); // Function Engine.HUD.ShowDebug(Exec|Native|Public) // <Game_BE.exe+0x1E96D40>
+	void RemoveDebugText(struct Unknown SrcActor, char bLeaveDurationText); // Function Engine.HUD.RemoveDebugText(Final|Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x44CC4A0>
+	void RemoveAllDebugStrings(); // Function Engine.HUD.RemoveAllDebugStrings(Final|Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x44CC480>
+	void ReceiveHitBoxRelease(struct FName BoxName); // Function Engine.HUD.ReceiveHitBoxRelease(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveHitBoxEndCursorOver(struct FName BoxName); // Function Engine.HUD.ReceiveHitBoxEndCursorOver(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveHitBoxClick(struct FName BoxName); // Function Engine.HUD.ReceiveHitBoxClick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveHitBoxBeginCursorOver(struct FName BoxName); // Function Engine.HUD.ReceiveHitBoxBeginCursorOver(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveDrawHUD(int32_t SizeX, int32_t SizeY); // Function Engine.HUD.ReceiveDrawHUD(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	struct Unknown Project(struct Unknown Location); // Function Engine.HUD.Project(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44CC3D0>
+	void PreviousDebugTarget(); // Function Engine.HUD.PreviousDebugTarget(Exec|Native|Public) // <Game_BE.exe+0x1FCBCF0>
+	void NextDebugTarget(); // Function Engine.HUD.NextDebugTarget(Exec|Native|Public) // <Game_BE.exe+0x11E2640>
+	void GetTextSize(struct FString Text, float& OutWidth, float& OutHeight, struct Unknown Font, float Scale); // Function Engine.HUD.GetTextSize(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44CC0D0>
+	struct Unknown GetOwningPlayerController(); // Function Engine.HUD.GetOwningPlayerController(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x16E7B60>
+	struct Unknown GetOwningPawn(); // Function Engine.HUD.GetOwningPawn(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44CC0A0>
+	void GetActorsInSelectionRectangle(struct Unknown* ClassFilter, struct Unknown& FirstPoint, struct Unknown& SecondPoint, struct TArray<Unknown>& OutActors, char bIncludeNonCollidingComponents, char bActorMustBeFullyEnclosed); // Function Engine.HUD.GetActorsInSelectionRectangle(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x44CBE90>
+	void DrawTextureSimple(struct Unknown Texture, float ScreenX, float ScreenY, float Scale, char bScalePosition); // Function Engine.HUD.DrawTextureSimple(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44CBD00>
+	void DrawTexture(struct Unknown Texture, float ScreenX, float ScreenY, float ScreenW, float ScreenH, float TextureU, float TextureV, float TextureUWidth, float TextureVHeight, struct Unknown TintColor, char BlendMode, float Scale, char bScalePosition, float Rotation, struct Unknown RotPivot); // Function Engine.HUD.DrawTexture(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x44CB8E0>
+	void DrawText(struct FString Text, struct Unknown TextColor, float ScreenX, float ScreenY, struct Unknown Font, float Scale, char bScalePosition); // Function Engine.HUD.DrawText(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x44CB6B0>
+	void DrawRect(struct Unknown RectColor, float ScreenX, float ScreenY, float ScreenW, float ScreenH); // Function Engine.HUD.DrawRect(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x44CB500>
+	void DrawMaterialTriangle(struct Unknown Material, struct Unknown V0_Pos, struct Unknown V1_Pos, struct Unknown V2_Pos, struct Unknown V0_UV, struct Unknown V1_UV, struct Unknown V2_UV, struct Unknown V0_Color, struct Unknown V1_Color, struct Unknown V2_Color); // Function Engine.HUD.DrawMaterialTriangle(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x44CB240>
+	void DrawMaterialSimple(struct Unknown Material, float ScreenX, float ScreenY, float ScreenW, float ScreenH, float Scale, char bScalePosition); // Function Engine.HUD.DrawMaterialSimple(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44CB040>
+	void DrawMaterial(struct Unknown Material, float ScreenX, float ScreenY, float ScreenW, float ScreenH, float MaterialU, float MaterialV, float MaterialUWidth, float MaterialVHeight, float Scale, char bScalePosition, float Rotation, struct Unknown RotPivot); // Function Engine.HUD.DrawMaterial(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x44CACB0>
+	void DrawLine(float StartScreenX, float StartScreenY, float EndScreenX, float EndScreenY, struct Unknown LineColor, float LineThickness); // Function Engine.HUD.DrawLine(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x44CAAD0>
+	void Deproject(float ScreenX, float ScreenY, struct Unknown& WorldPosition, struct Unknown& WorldDirection); // Function Engine.HUD.Deproject(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44CA8D0>
+	void AddHitBox(struct Unknown Position, struct Unknown Size, struct FName InName, char bConsumesInput, int32_t Priority); // Function Engine.HUD.AddHitBox(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x44CA740>
+	void AddDebugText(struct FString DebugText, struct Unknown SrcActor, float Duration, struct Unknown Offset, struct Unknown DesiredOffset, struct Unknown TextColor, char bSkipOverwriteCheck, char bAbsoluteLocation, char bKeepAttachedToActor, struct Unknown InFont, float FontScale, char bDrawShadow); // Function Engine.HUD.AddDebugText(Final|Net|NetReliableNative|Event|Public|HasDefaults|NetClient) // <Game_BE.exe+0x44CA3A0>
 };
 
 // Class Engine.Player
@@ -5437,91 +5437,91 @@ public:
 	struct Unknown ClothingInteractor; // 0x970 (8)
 	struct FMulticastInlineDelegate OnAnimInitialized; // 0xA40 (16)
 
-	void UnlinkAnimClassLayers(struct Unknown* InClass); // Function Engine.SkeletalMeshComponent.UnlinkAnimClassLayers(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C3D20>
-	void UnbindClothFromMasterPoseComponent(char bRestoreSimulationSpace); // Function Engine.SkeletalMeshComponent.UnbindClothFromMasterPoseComponent(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C3C90>
-	void ToggleDisablePostProcessBlueprint(); // Function Engine.SkeletalMeshComponent.ToggleDisablePostProcessBlueprint(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C3C70>
-	void TermBodiesBelow(struct FName ParentBoneName); // Function Engine.SkeletalMeshComponent.TermBodiesBelow(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C3BF0>
-	void SuspendClothingSimulation(); // Function Engine.SkeletalMeshComponent.SuspendClothingSimulation(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C3BD0>
-	void Stop(); // Function Engine.SkeletalMeshComponent.Stop(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C3BB0>
-	void SnapshotPose(struct Unknown& Snapshot); // Function Engine.SkeletalMeshComponent.SnapshotPose(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C3AE0>
-	void SetUpdateAnimationInEditor(char NewUpdateState); // Function Engine.SkeletalMeshComponent.SetUpdateAnimationInEditor(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x12624E0>
-	void SetTeleportRotationThreshold(float threshold); // Function Engine.SkeletalMeshComponent.SetTeleportRotationThreshold(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C3A60>
-	void SetTeleportDistanceThreshold(float threshold); // Function Engine.SkeletalMeshComponent.SetTeleportDistanceThreshold(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C39E0>
-	void SetPosition(float InPos, char bFireNotifies); // Function Engine.SkeletalMeshComponent.SetPosition(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C3910>
-	void SetPlayRate(float Rate); // Function Engine.SkeletalMeshComponent.SetPlayRate(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C3890>
-	void SetPhysicsBlendWeight(float PhysicsBlendWeight); // Function Engine.SkeletalMeshComponent.SetPhysicsBlendWeight(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C3810>
-	void SetNotifyRigidBodyCollisionBelow(char bNewNotifyRigidBodyCollision, struct FName BoneName, char bIncludeSelf); // Function Engine.SkeletalMeshComponent.SetNotifyRigidBodyCollisionBelow(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C3700>
-	void SetMorphTarget(struct FName MorphTargetName, float Value, char bRemoveZeroWeight); // Function Engine.SkeletalMeshComponent.SetMorphTarget(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C35F0>
-	void SetEnablePhysicsBlending(char bNewBlendPhysics); // Function Engine.SkeletalMeshComponent.SetEnablePhysicsBlending(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C3560>
-	void SetEnableGravityOnAllBodiesBelow(char bEnableGravity, struct FName BoneName, char bIncludeSelf); // Function Engine.SkeletalMeshComponent.SetEnableGravityOnAllBodiesBelow(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C3450>
-	void SetEnableBodyGravity(char bEnableGravity, struct FName BoneName); // Function Engine.SkeletalMeshComponent.SetEnableBodyGravity(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C3390>
-	void SetDisablePostProcessBlueprint(char bInDisablePostProcess); // Function Engine.SkeletalMeshComponent.SetDisablePostProcessBlueprint(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C3300>
-	void SetDisableAnimCurves(char bInDisableAnimCurves); // Function Engine.SkeletalMeshComponent.SetDisableAnimCurves(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C3270>
-	void SetConstraintProfileForAll(struct FName ProfileName, char bDefaultIfNotFound); // Function Engine.SkeletalMeshComponent.SetConstraintProfileForAll(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C31A0>
-	void SetConstraintProfile(struct FName JointName, struct FName ProfileName, char bDefaultIfNotFound); // Function Engine.SkeletalMeshComponent.SetConstraintProfile(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C3090>
-	void SetClothMaxDistanceScale(float Scale); // Function Engine.SkeletalMeshComponent.SetClothMaxDistanceScale(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C3010>
-	void SetBodyNotifyRigidBodyCollision(char bNewNotifyRigidBodyCollision, struct FName BoneName); // Function Engine.SkeletalMeshComponent.SetBodyNotifyRigidBodyCollision(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C2F40>
-	void SetAnimClass(struct Unknown* NewClass); // Function Engine.SkeletalMeshComponent.SetAnimClass(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C2DB0>
-	void SetAnimationMode(char InAnimationMode); // Function Engine.SkeletalMeshComponent.SetAnimationMode(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C2EC0>
-	void SetAnimation(struct Unknown NewAnimToPlay); // Function Engine.SkeletalMeshComponent.SetAnimation(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C2E40>
-	void SetAngularLimits(struct FName InBoneName, float Swing1LimitAngle, float TwistLimitAngle, float Swing2LimitAngle); // Function Engine.SkeletalMeshComponent.SetAngularLimits(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C2C60>
-	void SetAllowRigidBodyAnimNode(char bInAllow, char bReinitAnim); // Function Engine.SkeletalMeshComponent.SetAllowRigidBodyAnimNode(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C2A90>
-	void SetAllowedAnimCurvesEvaluation(struct TArray<Unknown>& List, char bAllow); // Function Engine.SkeletalMeshComponent.SetAllowedAnimCurvesEvaluation(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C2B60>
-	void SetAllowAnimCurveEvaluation(char bInAllow); // Function Engine.SkeletalMeshComponent.SetAllowAnimCurveEvaluation(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C2A00>
-	void SetAllMotorsAngularVelocityDrive(char bEnableSwingDrive, char bEnableTwistDrive, char bSkipCustomPhysicsType); // Function Engine.SkeletalMeshComponent.SetAllMotorsAngularVelocityDrive(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C28E0>
-	void SetAllMotorsAngularPositionDrive(char bEnableSwingDrive, char bEnableTwistDrive, char bSkipCustomPhysicsType); // Function Engine.SkeletalMeshComponent.SetAllMotorsAngularPositionDrive(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C27C0>
-	void SetAllMotorsAngularDriveParams(float InSpring, float InDamping, float InForceLimit, char bSkipCustomPhysicsType); // Function Engine.SkeletalMeshComponent.SetAllMotorsAngularDriveParams(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C2660>
-	void SetAllBodiesSimulatePhysics(char bNewSimulate); // Function Engine.SkeletalMeshComponent.SetAllBodiesSimulatePhysics(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C25D0>
-	void SetAllBodiesPhysicsBlendWeight(float PhysicsBlendWeight, char bSkipCustomPhysicsType); // Function Engine.SkeletalMeshComponent.SetAllBodiesPhysicsBlendWeight(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C2500>
-	void SetAllBodiesBelowSimulatePhysics(struct FName& InBoneName, char bNewSimulate, char bIncludeSelf); // Function Engine.SkeletalMeshComponent.SetAllBodiesBelowSimulatePhysics(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C23E0>
-	void SetAllBodiesBelowPhysicsBlendWeight(struct FName& InBoneName, float PhysicsBlendWeight, char bSkipCustomPhysicsType, char bIncludeSelf); // Function Engine.SkeletalMeshComponent.SetAllBodiesBelowPhysicsBlendWeight(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C2270>
-	void ResumeClothingSimulation(); // Function Engine.SkeletalMeshComponent.ResumeClothingSimulation(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C2250>
-	void ResetClothTeleportMode(); // Function Engine.SkeletalMeshComponent.ResetClothTeleportMode(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C2230>
-	void ResetAnimInstanceDynamics(enum class Unknow InTeleportType); // Function Engine.SkeletalMeshComponent.ResetAnimInstanceDynamics(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C21B0>
-	void ResetAllowedAnimCurveEvaluation(); // Function Engine.SkeletalMeshComponent.ResetAllowedAnimCurveEvaluation(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C2190>
-	void ResetAllBodiesSimulatePhysics(); // Function Engine.SkeletalMeshComponent.ResetAllBodiesSimulatePhysics(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C2170>
-	void PlayAnimation(struct Unknown NewAnimToPlay, char bLooping); // Function Engine.SkeletalMeshComponent.PlayAnimation(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C20A0>
-	void Play(char bLooping); // Function Engine.SkeletalMeshComponent.Play(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C2010>
-	void OverrideAnimationData(struct Unknown InAnimToPlay, char bIsLooping, char bIsPlaying, float Position, float PlayRate); // Function Engine.SkeletalMeshComponent.OverrideAnimationData(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C1E70>
-	void LinkAnimGraphByTag(struct FName InTag, struct Unknown* InClass); // Function Engine.SkeletalMeshComponent.LinkAnimGraphByTag(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C1DB0>
-	void LinkAnimClassLayers(struct Unknown* InClass); // Function Engine.SkeletalMeshComponent.LinkAnimClassLayers(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C1D30>
-	char K2_GetClosestPointOnPhysicsAsset(struct Unknown& WorldPosition, struct Unknown& ClosestWorldPosition, struct Unknown& Normal, struct FName& BoneName, float& Distance); // Function Engine.SkeletalMeshComponent.K2_GetClosestPointOnPhysicsAsset(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C1B30>
-	char IsPlaying(); // Function Engine.SkeletalMeshComponent.IsPlaying(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C1B00>
-	char IsClothingSimulationSuspended(); // Function Engine.SkeletalMeshComponent.IsClothingSimulationSuspended(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C1AD0>
-	char IsBodyGravityEnabled(struct FName BoneName); // Function Engine.SkeletalMeshComponent.IsBodyGravityEnabled(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C1A40>
-	char HasValidAnimationInstance(); // Function Engine.SkeletalMeshComponent.HasValidAnimationInstance(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C1A10>
-	float GetTeleportRotationThreshold(); // Function Engine.SkeletalMeshComponent.GetTeleportRotationThreshold(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C19E0>
-	float GetTeleportDistanceThreshold(); // Function Engine.SkeletalMeshComponent.GetTeleportDistanceThreshold(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C19E0>
-	struct Unknown GetSkeletalCenterOfMass(); // Function Engine.SkeletalMeshComponent.GetSkeletalCenterOfMass(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C19A0>
-	struct Unknown GetPostProcessInstance(); // Function Engine.SkeletalMeshComponent.GetPostProcessInstance(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C1970>
-	float GetPosition(); // Function Engine.SkeletalMeshComponent.GetPosition(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C1940>
-	float GetPlayRate(); // Function Engine.SkeletalMeshComponent.GetPlayRate(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C1910>
-	float GetMorphTarget(struct FName MorphTargetName); // Function Engine.SkeletalMeshComponent.GetMorphTarget(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C1870>
-	struct Unknown GetLinkedAnimLayerInstanceByGroup(struct FName InGroup); // Function Engine.SkeletalMeshComponent.GetLinkedAnimLayerInstanceByGroup(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C17E0>
-	struct Unknown GetLinkedAnimLayerInstanceByClass(struct Unknown* InClass); // Function Engine.SkeletalMeshComponent.GetLinkedAnimLayerInstanceByClass(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C1750>
-	void GetLinkedAnimGraphInstancesByTag(struct FName InTag, struct TArray<Unknown>& OutLinkedInstances); // Function Engine.SkeletalMeshComponent.GetLinkedAnimGraphInstancesByTag(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C1660>
-	struct Unknown GetLinkedAnimGraphInstanceByTag(struct FName InTag); // Function Engine.SkeletalMeshComponent.GetLinkedAnimGraphInstanceByTag(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C15D0>
-	char GetDisablePostProcessBlueprint(); // Function Engine.SkeletalMeshComponent.GetDisablePostProcessBlueprint(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C15A0>
-	char GetDisableAnimCurves(); // Function Engine.SkeletalMeshComponent.GetDisableAnimCurves(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C1570>
-	void GetCurrentJointAngles(struct FName InBoneName, float& Swing1Angle, float& TwistAngle, float& Swing2Angle); // Function Engine.SkeletalMeshComponent.GetCurrentJointAngles(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C13F0>
-	float GetClothMaxDistanceScale(); // Function Engine.SkeletalMeshComponent.GetClothMaxDistanceScale(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C1390>
-	struct Unknown GetClothingSimulationInteractor(); // Function Engine.SkeletalMeshComponent.GetClothingSimulationInteractor(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C13C0>
-	float GetBoneMass(struct FName BoneName, char bScaleMass); // Function Engine.SkeletalMeshComponent.GetBoneMass(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C12C0>
-	struct Unknown GetAnimInstance(); // Function Engine.SkeletalMeshComponent.GetAnimInstance(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C1260>
-	struct Unknown* GetAnimClass(); // Function Engine.SkeletalMeshComponent.GetAnimClass(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C1230>
-	char GetAnimationMode(); // Function Engine.SkeletalMeshComponent.GetAnimationMode(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C1290>
-	char GetAllowRigidBodyAnimNode(); // Function Engine.SkeletalMeshComponent.GetAllowRigidBodyAnimNode(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C11D0>
-	char GetAllowedAnimCurveEvaluate(); // Function Engine.SkeletalMeshComponent.GetAllowedAnimCurveEvaluate(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C1200>
-	void ForceClothNextUpdateTeleportAndReset(); // Function Engine.SkeletalMeshComponent.ForceClothNextUpdateTeleportAndReset(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C11B0>
-	void ForceClothNextUpdateTeleport(); // Function Engine.SkeletalMeshComponent.ForceClothNextUpdateTeleport(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C1190>
-	struct FName FindConstraintBoneName(int32_t ConstraintIndex); // Function Engine.SkeletalMeshComponent.FindConstraintBoneName(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C1100>
-	void ClearMorphTargets(); // Function Engine.SkeletalMeshComponent.ClearMorphTargets(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C10E0>
-	void BreakConstraint(struct Unknown Impulse, struct Unknown HitLocation, struct FName InBoneName); // Function Engine.SkeletalMeshComponent.BreakConstraint(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C0FB0>
-	void BindClothToMasterPoseComponent(); // Function Engine.SkeletalMeshComponent.BindClothToMasterPoseComponent(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C0F90>
-	void AllowAnimCurveEvaluation(struct FName NameOfCurve, char bAllow); // Function Engine.SkeletalMeshComponent.AllowAnimCurveEvaluation(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C0EC0>
-	void AddImpulseToAllBodiesBelow(struct Unknown Impulse, struct FName BoneName, char bVelChange, char bIncludeSelf); // Function Engine.SkeletalMeshComponent.AddImpulseToAllBodiesBelow(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C0D50>
-	void AddForceToAllBodiesBelow(struct Unknown Force, struct FName BoneName, char bAccelChange, char bIncludeSelf); // Function Engine.SkeletalMeshComponent.AddForceToAllBodiesBelow(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C0BE0>
-	void AccumulateAllBodiesBelowPhysicsBlendWeight(struct FName& InBoneName, float AddPhysicsBlendWeight, char bSkipCustomPhysicsType); // Function Engine.SkeletalMeshComponent.AccumulateAllBodiesBelowPhysicsBlendWeight(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45C0AC0>
+	void UnlinkAnimClassLayers(struct Unknown* InClass); // Function Engine.SkeletalMeshComponent.UnlinkAnimClassLayers(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C3D20>
+	void UnbindClothFromMasterPoseComponent(char bRestoreSimulationSpace); // Function Engine.SkeletalMeshComponent.UnbindClothFromMasterPoseComponent(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C3C90>
+	void ToggleDisablePostProcessBlueprint(); // Function Engine.SkeletalMeshComponent.ToggleDisablePostProcessBlueprint(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C3C70>
+	void TermBodiesBelow(struct FName ParentBoneName); // Function Engine.SkeletalMeshComponent.TermBodiesBelow(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C3BF0>
+	void SuspendClothingSimulation(); // Function Engine.SkeletalMeshComponent.SuspendClothingSimulation(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C3BD0>
+	void Stop(); // Function Engine.SkeletalMeshComponent.Stop(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C3BB0>
+	void SnapshotPose(struct Unknown& Snapshot); // Function Engine.SkeletalMeshComponent.SnapshotPose(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x45C3AE0>
+	void SetUpdateAnimationInEditor(char NewUpdateState); // Function Engine.SkeletalMeshComponent.SetUpdateAnimationInEditor(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x12624E0>
+	void SetTeleportRotationThreshold(float threshold); // Function Engine.SkeletalMeshComponent.SetTeleportRotationThreshold(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C3A60>
+	void SetTeleportDistanceThreshold(float threshold); // Function Engine.SkeletalMeshComponent.SetTeleportDistanceThreshold(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C39E0>
+	void SetPosition(float InPos, char bFireNotifies); // Function Engine.SkeletalMeshComponent.SetPosition(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C3910>
+	void SetPlayRate(float Rate); // Function Engine.SkeletalMeshComponent.SetPlayRate(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C3890>
+	void SetPhysicsBlendWeight(float PhysicsBlendWeight); // Function Engine.SkeletalMeshComponent.SetPhysicsBlendWeight(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C3810>
+	void SetNotifyRigidBodyCollisionBelow(char bNewNotifyRigidBodyCollision, struct FName BoneName, char bIncludeSelf); // Function Engine.SkeletalMeshComponent.SetNotifyRigidBodyCollisionBelow(Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C3700>
+	void SetMorphTarget(struct FName MorphTargetName, float Value, char bRemoveZeroWeight); // Function Engine.SkeletalMeshComponent.SetMorphTarget(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C35F0>
+	void SetEnablePhysicsBlending(char bNewBlendPhysics); // Function Engine.SkeletalMeshComponent.SetEnablePhysicsBlending(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C3560>
+	void SetEnableGravityOnAllBodiesBelow(char bEnableGravity, struct FName BoneName, char bIncludeSelf); // Function Engine.SkeletalMeshComponent.SetEnableGravityOnAllBodiesBelow(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C3450>
+	void SetEnableBodyGravity(char bEnableGravity, struct FName BoneName); // Function Engine.SkeletalMeshComponent.SetEnableBodyGravity(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C3390>
+	void SetDisablePostProcessBlueprint(char bInDisablePostProcess); // Function Engine.SkeletalMeshComponent.SetDisablePostProcessBlueprint(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C3300>
+	void SetDisableAnimCurves(char bInDisableAnimCurves); // Function Engine.SkeletalMeshComponent.SetDisableAnimCurves(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C3270>
+	void SetConstraintProfileForAll(struct FName ProfileName, char bDefaultIfNotFound); // Function Engine.SkeletalMeshComponent.SetConstraintProfileForAll(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C31A0>
+	void SetConstraintProfile(struct FName JointName, struct FName ProfileName, char bDefaultIfNotFound); // Function Engine.SkeletalMeshComponent.SetConstraintProfile(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C3090>
+	void SetClothMaxDistanceScale(float Scale); // Function Engine.SkeletalMeshComponent.SetClothMaxDistanceScale(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C3010>
+	void SetBodyNotifyRigidBodyCollision(char bNewNotifyRigidBodyCollision, struct FName BoneName); // Function Engine.SkeletalMeshComponent.SetBodyNotifyRigidBodyCollision(Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C2F40>
+	void SetAnimClass(struct Unknown* NewClass); // Function Engine.SkeletalMeshComponent.SetAnimClass(Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C2DB0>
+	void SetAnimationMode(char InAnimationMode); // Function Engine.SkeletalMeshComponent.SetAnimationMode(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C2EC0>
+	void SetAnimation(struct Unknown NewAnimToPlay); // Function Engine.SkeletalMeshComponent.SetAnimation(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C2E40>
+	void SetAngularLimits(struct FName InBoneName, float Swing1LimitAngle, float TwistLimitAngle, float Swing2LimitAngle); // Function Engine.SkeletalMeshComponent.SetAngularLimits(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C2C60>
+	void SetAllowRigidBodyAnimNode(char bInAllow, char bReinitAnim); // Function Engine.SkeletalMeshComponent.SetAllowRigidBodyAnimNode(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C2A90>
+	void SetAllowedAnimCurvesEvaluation(struct TArray<Unknown>& List, char bAllow); // Function Engine.SkeletalMeshComponent.SetAllowedAnimCurvesEvaluation(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x45C2B60>
+	void SetAllowAnimCurveEvaluation(char bInAllow); // Function Engine.SkeletalMeshComponent.SetAllowAnimCurveEvaluation(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C2A00>
+	void SetAllMotorsAngularVelocityDrive(char bEnableSwingDrive, char bEnableTwistDrive, char bSkipCustomPhysicsType); // Function Engine.SkeletalMeshComponent.SetAllMotorsAngularVelocityDrive(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C28E0>
+	void SetAllMotorsAngularPositionDrive(char bEnableSwingDrive, char bEnableTwistDrive, char bSkipCustomPhysicsType); // Function Engine.SkeletalMeshComponent.SetAllMotorsAngularPositionDrive(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C27C0>
+	void SetAllMotorsAngularDriveParams(float InSpring, float InDamping, float InForceLimit, char bSkipCustomPhysicsType); // Function Engine.SkeletalMeshComponent.SetAllMotorsAngularDriveParams(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C2660>
+	void SetAllBodiesSimulatePhysics(char bNewSimulate); // Function Engine.SkeletalMeshComponent.SetAllBodiesSimulatePhysics(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C25D0>
+	void SetAllBodiesPhysicsBlendWeight(float PhysicsBlendWeight, char bSkipCustomPhysicsType); // Function Engine.SkeletalMeshComponent.SetAllBodiesPhysicsBlendWeight(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C2500>
+	void SetAllBodiesBelowSimulatePhysics(struct FName& InBoneName, char bNewSimulate, char bIncludeSelf); // Function Engine.SkeletalMeshComponent.SetAllBodiesBelowSimulatePhysics(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x45C23E0>
+	void SetAllBodiesBelowPhysicsBlendWeight(struct FName& InBoneName, float PhysicsBlendWeight, char bSkipCustomPhysicsType, char bIncludeSelf); // Function Engine.SkeletalMeshComponent.SetAllBodiesBelowPhysicsBlendWeight(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x45C2270>
+	void ResumeClothingSimulation(); // Function Engine.SkeletalMeshComponent.ResumeClothingSimulation(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C2250>
+	void ResetClothTeleportMode(); // Function Engine.SkeletalMeshComponent.ResetClothTeleportMode(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C2230>
+	void ResetAnimInstanceDynamics(enum class Unknow InTeleportType); // Function Engine.SkeletalMeshComponent.ResetAnimInstanceDynamics(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C21B0>
+	void ResetAllowedAnimCurveEvaluation(); // Function Engine.SkeletalMeshComponent.ResetAllowedAnimCurveEvaluation(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C2190>
+	void ResetAllBodiesSimulatePhysics(); // Function Engine.SkeletalMeshComponent.ResetAllBodiesSimulatePhysics(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C2170>
+	void PlayAnimation(struct Unknown NewAnimToPlay, char bLooping); // Function Engine.SkeletalMeshComponent.PlayAnimation(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C20A0>
+	void Play(char bLooping); // Function Engine.SkeletalMeshComponent.Play(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C2010>
+	void OverrideAnimationData(struct Unknown InAnimToPlay, char bIsLooping, char bIsPlaying, float Position, float PlayRate); // Function Engine.SkeletalMeshComponent.OverrideAnimationData(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C1E70>
+	void LinkAnimGraphByTag(struct FName InTag, struct Unknown* InClass); // Function Engine.SkeletalMeshComponent.LinkAnimGraphByTag(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C1DB0>
+	void LinkAnimClassLayers(struct Unknown* InClass); // Function Engine.SkeletalMeshComponent.LinkAnimClassLayers(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C1D30>
+	char K2_GetClosestPointOnPhysicsAsset(struct Unknown& WorldPosition, struct Unknown& ClosestWorldPosition, struct Unknown& Normal, struct FName& BoneName, float& Distance); // Function Engine.SkeletalMeshComponent.K2_GetClosestPointOnPhysicsAsset(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45C1B30>
+	char IsPlaying(); // Function Engine.SkeletalMeshComponent.IsPlaying(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45C1B00>
+	char IsClothingSimulationSuspended(); // Function Engine.SkeletalMeshComponent.IsClothingSimulationSuspended(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45C1AD0>
+	char IsBodyGravityEnabled(struct FName BoneName); // Function Engine.SkeletalMeshComponent.IsBodyGravityEnabled(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C1A40>
+	char HasValidAnimationInstance(); // Function Engine.SkeletalMeshComponent.HasValidAnimationInstance(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45C1A10>
+	float GetTeleportRotationThreshold(); // Function Engine.SkeletalMeshComponent.GetTeleportRotationThreshold(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45C19E0>
+	float GetTeleportDistanceThreshold(); // Function Engine.SkeletalMeshComponent.GetTeleportDistanceThreshold(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45C19E0>
+	struct Unknown GetSkeletalCenterOfMass(); // Function Engine.SkeletalMeshComponent.GetSkeletalCenterOfMass(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45C19A0>
+	struct Unknown GetPostProcessInstance(); // Function Engine.SkeletalMeshComponent.GetPostProcessInstance(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45C1970>
+	float GetPosition(); // Function Engine.SkeletalMeshComponent.GetPosition(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45C1940>
+	float GetPlayRate(); // Function Engine.SkeletalMeshComponent.GetPlayRate(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45C1910>
+	float GetMorphTarget(struct FName MorphTargetName); // Function Engine.SkeletalMeshComponent.GetMorphTarget(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45C1870>
+	struct Unknown GetLinkedAnimLayerInstanceByGroup(struct FName InGroup); // Function Engine.SkeletalMeshComponent.GetLinkedAnimLayerInstanceByGroup(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45C17E0>
+	struct Unknown GetLinkedAnimLayerInstanceByClass(struct Unknown* InClass); // Function Engine.SkeletalMeshComponent.GetLinkedAnimLayerInstanceByClass(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45C1750>
+	void GetLinkedAnimGraphInstancesByTag(struct FName InTag, struct TArray<Unknown>& OutLinkedInstances); // Function Engine.SkeletalMeshComponent.GetLinkedAnimGraphInstancesByTag(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45C1660>
+	struct Unknown GetLinkedAnimGraphInstanceByTag(struct FName InTag); // Function Engine.SkeletalMeshComponent.GetLinkedAnimGraphInstanceByTag(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45C15D0>
+	char GetDisablePostProcessBlueprint(); // Function Engine.SkeletalMeshComponent.GetDisablePostProcessBlueprint(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45C15A0>
+	char GetDisableAnimCurves(); // Function Engine.SkeletalMeshComponent.GetDisableAnimCurves(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45C1570>
+	void GetCurrentJointAngles(struct FName InBoneName, float& Swing1Angle, float& TwistAngle, float& Swing2Angle); // Function Engine.SkeletalMeshComponent.GetCurrentJointAngles(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x45C13F0>
+	float GetClothMaxDistanceScale(); // Function Engine.SkeletalMeshComponent.GetClothMaxDistanceScale(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45C1390>
+	struct Unknown GetClothingSimulationInteractor(); // Function Engine.SkeletalMeshComponent.GetClothingSimulationInteractor(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45C13C0>
+	float GetBoneMass(struct FName BoneName, char bScaleMass); // Function Engine.SkeletalMeshComponent.GetBoneMass(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45C12C0>
+	struct Unknown GetAnimInstance(); // Function Engine.SkeletalMeshComponent.GetAnimInstance(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45C1260>
+	struct Unknown* GetAnimClass(); // Function Engine.SkeletalMeshComponent.GetAnimClass(Final|Native|Public) // <Game_BE.exe+0x45C1230>
+	char GetAnimationMode(); // Function Engine.SkeletalMeshComponent.GetAnimationMode(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45C1290>
+	char GetAllowRigidBodyAnimNode(); // Function Engine.SkeletalMeshComponent.GetAllowRigidBodyAnimNode(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45C11D0>
+	char GetAllowedAnimCurveEvaluate(); // Function Engine.SkeletalMeshComponent.GetAllowedAnimCurveEvaluate(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45C1200>
+	void ForceClothNextUpdateTeleportAndReset(); // Function Engine.SkeletalMeshComponent.ForceClothNextUpdateTeleportAndReset(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C11B0>
+	void ForceClothNextUpdateTeleport(); // Function Engine.SkeletalMeshComponent.ForceClothNextUpdateTeleport(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C1190>
+	struct FName FindConstraintBoneName(int32_t ConstraintIndex); // Function Engine.SkeletalMeshComponent.FindConstraintBoneName(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C1100>
+	void ClearMorphTargets(); // Function Engine.SkeletalMeshComponent.ClearMorphTargets(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C10E0>
+	void BreakConstraint(struct Unknown Impulse, struct Unknown HitLocation, struct FName InBoneName); // Function Engine.SkeletalMeshComponent.BreakConstraint(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45C0FB0>
+	void BindClothToMasterPoseComponent(); // Function Engine.SkeletalMeshComponent.BindClothToMasterPoseComponent(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C0F90>
+	void AllowAnimCurveEvaluation(struct FName NameOfCurve, char bAllow); // Function Engine.SkeletalMeshComponent.AllowAnimCurveEvaluation(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45C0EC0>
+	void AddImpulseToAllBodiesBelow(struct Unknown Impulse, struct FName BoneName, char bVelChange, char bIncludeSelf); // Function Engine.SkeletalMeshComponent.AddImpulseToAllBodiesBelow(Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45C0D50>
+	void AddForceToAllBodiesBelow(struct Unknown Force, struct FName BoneName, char bAccelChange, char bIncludeSelf); // Function Engine.SkeletalMeshComponent.AddForceToAllBodiesBelow(Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45C0BE0>
+	void AccumulateAllBodiesBelowPhysicsBlendWeight(struct FName& InBoneName, float AddPhysicsBlendWeight, char bSkipCustomPhysicsType); // Function Engine.SkeletalMeshComponent.AccumulateAllBodiesBelowPhysicsBlendWeight(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x45C0AC0>
 };
 
 // Class Engine.AnimInstance
@@ -5543,81 +5543,81 @@ public:
 	struct Unknown NotifyQueue; // 0xF0 (112)
 	struct TArray<Unknown> ActiveAnimNotifyState; // 0x160 (16)
 
-	void UnlockAIResources(char bUnlockMovement, char UnlockAILogic); // Function Engine.AnimInstance.UnlockAIResources(Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EFE8F0>
-	void UnlinkAnimClassLayers(struct Unknown* InClass); // Function Engine.AnimInstance.UnlinkAnimClassLayers(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4445400>
-	struct Unknown TryGetPawnOwner(); // Function Engine.AnimInstance.TryGetPawnOwner(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44453D0>
-	void StopSlotAnimation(float InBlendOutTime, struct FName SlotNodeName); // Function Engine.AnimInstance.StopSlotAnimation(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4445300>
-	void SnapshotPose(struct Unknown& Snapshot); // Function Engine.AnimInstance.SnapshotPose(Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4445230>
-	void SetRootMotionMode(char Value); // Function Engine.AnimInstance.SetRootMotionMode(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44451B0>
-	void SetReceiveNotifiesFromLinkedInstances(char bSet); // Function Engine.AnimInstance.SetReceiveNotifiesFromLinkedInstances(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4445120>
-	void SetPropagateNotifiesToLinkedInstances(char bSet); // Function Engine.AnimInstance.SetPropagateNotifiesToLinkedInstances(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4445090>
-	void SetMorphTarget(struct FName MorphTargetName, float Value); // Function Engine.AnimInstance.SetMorphTarget(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4444FC0>
-	void SavePoseSnapshot(struct FName SnapshotName); // Function Engine.AnimInstance.SavePoseSnapshot(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4444F30>
-	void ResetDynamics(enum class Unknow InTeleportType); // Function Engine.AnimInstance.ResetDynamics(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4444EB0>
-	struct Unknown PlaySlotAnimationAsDynamicMontage(struct Unknown Asset, struct FName SlotNodeName, float BlendInTime, float BlendOutTime, float InPlayRate, int32_t LoopCount, float BlendOutTriggerTime, float InTimeToStartMontageAt); // Function Engine.AnimInstance.PlaySlotAnimationAsDynamicMontage(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4444C70>
-	float PlaySlotAnimation(struct Unknown Asset, struct FName SlotNodeName, float BlendInTime, float BlendOutTime, float InPlayRate, int32_t LoopCount); // Function Engine.AnimInstance.PlaySlotAnimation(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4444AB0>
-	void Montage_StopGroupByName(float InBlendOutTime, struct FName GroupName); // Function Engine.AnimInstance.Montage_StopGroupByName(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44449E0>
-	void Montage_Stop(float InBlendOutTime, struct Unknown Montage); // Function Engine.AnimInstance.Montage_Stop(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4444910>
-	void Montage_SetPosition(struct Unknown Montage, float NewPosition); // Function Engine.AnimInstance.Montage_SetPosition(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4444840>
-	void Montage_SetPlayRate(struct Unknown Montage, float NewPlayRate); // Function Engine.AnimInstance.Montage_SetPlayRate(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4444770>
-	void Montage_SetNextSection(struct FName SectionNameToChange, struct FName NextSection, struct Unknown Montage); // Function Engine.AnimInstance.Montage_SetNextSection(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4444670>
-	void Montage_Resume(struct Unknown Montage); // Function Engine.AnimInstance.Montage_Resume(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44445F0>
-	float Montage_Play(struct Unknown MontageToPlay, float InPlayRate, enum class Unknow ReturnValueType, float InTimeToStartMontageAt, char bStopAllMontages); // Function Engine.AnimInstance.Montage_Play(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4444460>
-	void Montage_Pause(struct Unknown Montage); // Function Engine.AnimInstance.Montage_Pause(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44443E0>
-	void Montage_JumpToSectionsEnd(struct FName SectionName, struct Unknown Montage); // Function Engine.AnimInstance.Montage_JumpToSectionsEnd(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4444320>
-	void Montage_JumpToSection(struct FName SectionName, struct Unknown Montage); // Function Engine.AnimInstance.Montage_JumpToSection(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4444260>
-	char Montage_IsPlaying(struct Unknown Montage); // Function Engine.AnimInstance.Montage_IsPlaying(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44441D0>
-	char Montage_IsActive(struct Unknown Montage); // Function Engine.AnimInstance.Montage_IsActive(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4444140>
-	float Montage_GetPosition(struct Unknown Montage); // Function Engine.AnimInstance.Montage_GetPosition(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44440A0>
-	float Montage_GetPlayRate(struct Unknown Montage); // Function Engine.AnimInstance.Montage_GetPlayRate(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4444000>
-	char Montage_GetIsStopped(struct Unknown Montage); // Function Engine.AnimInstance.Montage_GetIsStopped(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4443F70>
-	struct FName Montage_GetCurrentSection(struct Unknown Montage); // Function Engine.AnimInstance.Montage_GetCurrentSection(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4443EE0>
-	float Montage_GetBlendTime(struct Unknown Montage); // Function Engine.AnimInstance.Montage_GetBlendTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4443E40>
-	void LockAIResources(char bLockMovement, char LockAILogic); // Function Engine.AnimInstance.LockAIResources(Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EFE8F0>
-	void LinkAnimGraphByTag(struct FName InTag, struct Unknown* InClass); // Function Engine.AnimInstance.LinkAnimGraphByTag(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4443D80>
-	void LinkAnimClassLayers(struct Unknown* InClass); // Function Engine.AnimInstance.LinkAnimClassLayers(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4443D00>
-	char IsSyncGroupBetweenMarkers(struct FName InSyncGroupName, struct FName PreviousMarker, struct FName NextMarker, char bRespectMarkerOrder); // Function Engine.AnimInstance.IsSyncGroupBetweenMarkers(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4443BB0>
-	char IsPlayingSlotAnimation(struct Unknown Asset, struct FName SlotNodeName); // Function Engine.AnimInstance.IsPlayingSlotAnimation(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4443AF0>
-	char IsAnyMontagePlaying(); // Function Engine.AnimInstance.IsAnyMontagePlaying(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4443AC0>
-	char HasMarkerBeenHitThisFrame(struct FName SyncGroup, struct FName MarkerName); // Function Engine.AnimInstance.HasMarkerBeenHitThisFrame(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4443A00>
-	char GetTimeToClosestMarker(struct FName SyncGroup, struct FName MarkerName, float& OutMarkerTime); // Function Engine.AnimInstance.GetTimeToClosestMarker(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44438F0>
-	struct Unknown GetSyncGroupPosition(struct FName InSyncGroupName); // Function Engine.AnimInstance.GetSyncGroupPosition(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4443850>
-	float GetRelevantAnimTimeRemainingFraction(int32_t MachineIndex, int32_t StateIndex); // Function Engine.AnimInstance.GetRelevantAnimTimeRemainingFraction(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4443790>
-	float GetRelevantAnimTimeRemaining(int32_t MachineIndex, int32_t StateIndex); // Function Engine.AnimInstance.GetRelevantAnimTimeRemaining(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44436D0>
-	float GetRelevantAnimTimeFraction(int32_t MachineIndex, int32_t StateIndex); // Function Engine.AnimInstance.GetRelevantAnimTimeFraction(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4443610>
-	float GetRelevantAnimTime(int32_t MachineIndex, int32_t StateIndex); // Function Engine.AnimInstance.GetRelevantAnimTime(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4443550>
-	float GetRelevantAnimLength(int32_t MachineIndex, int32_t StateIndex); // Function Engine.AnimInstance.GetRelevantAnimLength(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4443490>
-	char GetReceiveNotifiesFromLinkedInstances(); // Function Engine.AnimInstance.GetReceiveNotifiesFromLinkedInstances(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4443460>
-	char GetPropagateNotifiesToLinkedInstances(); // Function Engine.AnimInstance.GetPropagateNotifiesToLinkedInstances(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4443430>
-	struct Unknown GetOwningComponent(); // Function Engine.AnimInstance.GetOwningComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4443400>
-	struct Unknown GetOwningActor(); // Function Engine.AnimInstance.GetOwningActor(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44433D0>
-	struct Unknown GetLinkedAnimLayerInstanceByGroup(struct FName InGroup); // Function Engine.AnimInstance.GetLinkedAnimLayerInstanceByGroup(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4443340>
-	struct Unknown GetLinkedAnimLayerInstanceByClass(struct Unknown* InClass); // Function Engine.AnimInstance.GetLinkedAnimLayerInstanceByClass(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44432B0>
-	void GetLinkedAnimGraphInstancesByTag(struct FName InTag, struct TArray<Unknown>& OutLinkedInstances); // Function Engine.AnimInstance.GetLinkedAnimGraphInstancesByTag(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44431C0>
-	struct Unknown GetLinkedAnimGraphInstanceByTag(struct FName InTag); // Function Engine.AnimInstance.GetLinkedAnimGraphInstanceByTag(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4443130>
-	float GetInstanceTransitionTimeElapsedFraction(int32_t MachineIndex, int32_t TransitionIndex); // Function Engine.AnimInstance.GetInstanceTransitionTimeElapsedFraction(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4443070>
-	float GetInstanceTransitionTimeElapsed(int32_t MachineIndex, int32_t TransitionIndex); // Function Engine.AnimInstance.GetInstanceTransitionTimeElapsed(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4442FB0>
-	float GetInstanceTransitionCrossfadeDuration(int32_t MachineIndex, int32_t TransitionIndex); // Function Engine.AnimInstance.GetInstanceTransitionCrossfadeDuration(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4442EF0>
-	float GetInstanceStateWeight(int32_t MachineIndex, int32_t StateIndex); // Function Engine.AnimInstance.GetInstanceStateWeight(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4442E30>
-	float GetInstanceMachineWeight(int32_t MachineIndex); // Function Engine.AnimInstance.GetInstanceMachineWeight(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4442DA0>
-	float GetInstanceCurrentStateElapsedTime(int32_t MachineIndex); // Function Engine.AnimInstance.GetInstanceCurrentStateElapsedTime(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4442D10>
-	float GetInstanceAssetPlayerTimeFromEndFraction(int32_t AssetPlayerIndex); // Function Engine.AnimInstance.GetInstanceAssetPlayerTimeFromEndFraction(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4442C80>
-	float GetInstanceAssetPlayerTimeFromEnd(int32_t AssetPlayerIndex); // Function Engine.AnimInstance.GetInstanceAssetPlayerTimeFromEnd(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4442BF0>
-	float GetInstanceAssetPlayerTimeFraction(int32_t AssetPlayerIndex); // Function Engine.AnimInstance.GetInstanceAssetPlayerTimeFraction(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4442B60>
-	float GetInstanceAssetPlayerTime(int32_t AssetPlayerIndex); // Function Engine.AnimInstance.GetInstanceAssetPlayerTime(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4442AD0>
-	float GetInstanceAssetPlayerLength(int32_t AssetPlayerIndex); // Function Engine.AnimInstance.GetInstanceAssetPlayerLength(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4442A40>
-	float GetCurveValue(struct FName CurveName); // Function Engine.AnimInstance.GetCurveValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44429A0>
-	struct FName GetCurrentStateName(int32_t MachineIndex); // Function Engine.AnimInstance.GetCurrentStateName(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4442910>
-	struct Unknown GetCurrentActiveMontage(); // Function Engine.AnimInstance.GetCurrentActiveMontage(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44428E0>
-	void GetAllCurveNames(struct TArray<Unknown>& OutNames); // Function Engine.AnimInstance.GetAllCurveNames(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4442830>
-	void GetActiveCurveNames(enum class Unknow CurveType, struct TArray<Unknown>& OutNames); // Function Engine.AnimInstance.GetActiveCurveNames(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4442740>
-	void ClearMorphTargets(); // Function Engine.AnimInstance.ClearMorphTargets(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4442720>
-	float CalculateDirection(struct Unknown& Velocity, struct Unknown& BaseRotation); // Function Engine.AnimInstance.CalculateDirection(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4442620>
-	void BlueprintUpdateAnimation(float DeltaTimeX); // Function Engine.AnimInstance.BlueprintUpdateAnimation(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void BlueprintPostEvaluateAnimation(); // Function Engine.AnimInstance.BlueprintPostEvaluateAnimation(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void BlueprintLinkedAnimationLayersInitialized(); // Function Engine.AnimInstance.BlueprintLinkedAnimationLayersInitialized(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void BlueprintInitializeAnimation(); // Function Engine.AnimInstance.BlueprintInitializeAnimation(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void BlueprintBeginPlay(); // Function Engine.AnimInstance.BlueprintBeginPlay(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void UnlockAIResources(char bUnlockMovement, char UnlockAILogic); // Function Engine.AnimInstance.UnlockAIResources(Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1EFE8F0>
+	void UnlinkAnimClassLayers(struct Unknown* InClass); // Function Engine.AnimInstance.UnlinkAnimClassLayers(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4445400>
+	struct Unknown TryGetPawnOwner(); // Function Engine.AnimInstance.TryGetPawnOwner(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44453D0>
+	void StopSlotAnimation(float InBlendOutTime, struct FName SlotNodeName); // Function Engine.AnimInstance.StopSlotAnimation(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4445300>
+	void SnapshotPose(struct Unknown& Snapshot); // Function Engine.AnimInstance.SnapshotPose(Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x4445230>
+	void SetRootMotionMode(char Value); // Function Engine.AnimInstance.SetRootMotionMode(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44451B0>
+	void SetReceiveNotifiesFromLinkedInstances(char bSet); // Function Engine.AnimInstance.SetReceiveNotifiesFromLinkedInstances(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4445120>
+	void SetPropagateNotifiesToLinkedInstances(char bSet); // Function Engine.AnimInstance.SetPropagateNotifiesToLinkedInstances(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4445090>
+	void SetMorphTarget(struct FName MorphTargetName, float Value); // Function Engine.AnimInstance.SetMorphTarget(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4444FC0>
+	void SavePoseSnapshot(struct FName SnapshotName); // Function Engine.AnimInstance.SavePoseSnapshot(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4444F30>
+	void ResetDynamics(enum class Unknow InTeleportType); // Function Engine.AnimInstance.ResetDynamics(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4444EB0>
+	struct Unknown PlaySlotAnimationAsDynamicMontage(struct Unknown Asset, struct FName SlotNodeName, float BlendInTime, float BlendOutTime, float InPlayRate, int32_t LoopCount, float BlendOutTriggerTime, float InTimeToStartMontageAt); // Function Engine.AnimInstance.PlaySlotAnimationAsDynamicMontage(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4444C70>
+	float PlaySlotAnimation(struct Unknown Asset, struct FName SlotNodeName, float BlendInTime, float BlendOutTime, float InPlayRate, int32_t LoopCount); // Function Engine.AnimInstance.PlaySlotAnimation(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4444AB0>
+	void Montage_StopGroupByName(float InBlendOutTime, struct FName GroupName); // Function Engine.AnimInstance.Montage_StopGroupByName(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44449E0>
+	void Montage_Stop(float InBlendOutTime, struct Unknown Montage); // Function Engine.AnimInstance.Montage_Stop(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4444910>
+	void Montage_SetPosition(struct Unknown Montage, float NewPosition); // Function Engine.AnimInstance.Montage_SetPosition(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4444840>
+	void Montage_SetPlayRate(struct Unknown Montage, float NewPlayRate); // Function Engine.AnimInstance.Montage_SetPlayRate(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4444770>
+	void Montage_SetNextSection(struct FName SectionNameToChange, struct FName NextSection, struct Unknown Montage); // Function Engine.AnimInstance.Montage_SetNextSection(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4444670>
+	void Montage_Resume(struct Unknown Montage); // Function Engine.AnimInstance.Montage_Resume(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44445F0>
+	float Montage_Play(struct Unknown MontageToPlay, float InPlayRate, enum class Unknow ReturnValueType, float InTimeToStartMontageAt, char bStopAllMontages); // Function Engine.AnimInstance.Montage_Play(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4444460>
+	void Montage_Pause(struct Unknown Montage); // Function Engine.AnimInstance.Montage_Pause(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44443E0>
+	void Montage_JumpToSectionsEnd(struct FName SectionName, struct Unknown Montage); // Function Engine.AnimInstance.Montage_JumpToSectionsEnd(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4444320>
+	void Montage_JumpToSection(struct FName SectionName, struct Unknown Montage); // Function Engine.AnimInstance.Montage_JumpToSection(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4444260>
+	char Montage_IsPlaying(struct Unknown Montage); // Function Engine.AnimInstance.Montage_IsPlaying(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44441D0>
+	char Montage_IsActive(struct Unknown Montage); // Function Engine.AnimInstance.Montage_IsActive(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4444140>
+	float Montage_GetPosition(struct Unknown Montage); // Function Engine.AnimInstance.Montage_GetPosition(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44440A0>
+	float Montage_GetPlayRate(struct Unknown Montage); // Function Engine.AnimInstance.Montage_GetPlayRate(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4444000>
+	char Montage_GetIsStopped(struct Unknown Montage); // Function Engine.AnimInstance.Montage_GetIsStopped(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4443F70>
+	struct FName Montage_GetCurrentSection(struct Unknown Montage); // Function Engine.AnimInstance.Montage_GetCurrentSection(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4443EE0>
+	float Montage_GetBlendTime(struct Unknown Montage); // Function Engine.AnimInstance.Montage_GetBlendTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4443E40>
+	void LockAIResources(char bLockMovement, char LockAILogic); // Function Engine.AnimInstance.LockAIResources(Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1EFE8F0>
+	void LinkAnimGraphByTag(struct FName InTag, struct Unknown* InClass); // Function Engine.AnimInstance.LinkAnimGraphByTag(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4443D80>
+	void LinkAnimClassLayers(struct Unknown* InClass); // Function Engine.AnimInstance.LinkAnimClassLayers(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4443D00>
+	char IsSyncGroupBetweenMarkers(struct FName InSyncGroupName, struct FName PreviousMarker, struct FName NextMarker, char bRespectMarkerOrder); // Function Engine.AnimInstance.IsSyncGroupBetweenMarkers(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4443BB0>
+	char IsPlayingSlotAnimation(struct Unknown Asset, struct FName SlotNodeName); // Function Engine.AnimInstance.IsPlayingSlotAnimation(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4443AF0>
+	char IsAnyMontagePlaying(); // Function Engine.AnimInstance.IsAnyMontagePlaying(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4443AC0>
+	char HasMarkerBeenHitThisFrame(struct FName SyncGroup, struct FName MarkerName); // Function Engine.AnimInstance.HasMarkerBeenHitThisFrame(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4443A00>
+	char GetTimeToClosestMarker(struct FName SyncGroup, struct FName MarkerName, float& OutMarkerTime); // Function Engine.AnimInstance.GetTimeToClosestMarker(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44438F0>
+	struct Unknown GetSyncGroupPosition(struct FName InSyncGroupName); // Function Engine.AnimInstance.GetSyncGroupPosition(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4443850>
+	float GetRelevantAnimTimeRemainingFraction(int32_t MachineIndex, int32_t StateIndex); // Function Engine.AnimInstance.GetRelevantAnimTimeRemainingFraction(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x4443790>
+	float GetRelevantAnimTimeRemaining(int32_t MachineIndex, int32_t StateIndex); // Function Engine.AnimInstance.GetRelevantAnimTimeRemaining(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x44436D0>
+	float GetRelevantAnimTimeFraction(int32_t MachineIndex, int32_t StateIndex); // Function Engine.AnimInstance.GetRelevantAnimTimeFraction(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x4443610>
+	float GetRelevantAnimTime(int32_t MachineIndex, int32_t StateIndex); // Function Engine.AnimInstance.GetRelevantAnimTime(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x4443550>
+	float GetRelevantAnimLength(int32_t MachineIndex, int32_t StateIndex); // Function Engine.AnimInstance.GetRelevantAnimLength(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x4443490>
+	char GetReceiveNotifiesFromLinkedInstances(); // Function Engine.AnimInstance.GetReceiveNotifiesFromLinkedInstances(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4443460>
+	char GetPropagateNotifiesToLinkedInstances(); // Function Engine.AnimInstance.GetPropagateNotifiesToLinkedInstances(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4443430>
+	struct Unknown GetOwningComponent(); // Function Engine.AnimInstance.GetOwningComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4443400>
+	struct Unknown GetOwningActor(); // Function Engine.AnimInstance.GetOwningActor(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44433D0>
+	struct Unknown GetLinkedAnimLayerInstanceByGroup(struct FName InGroup); // Function Engine.AnimInstance.GetLinkedAnimLayerInstanceByGroup(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4443340>
+	struct Unknown GetLinkedAnimLayerInstanceByClass(struct Unknown* InClass); // Function Engine.AnimInstance.GetLinkedAnimLayerInstanceByClass(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44432B0>
+	void GetLinkedAnimGraphInstancesByTag(struct FName InTag, struct TArray<Unknown>& OutLinkedInstances); // Function Engine.AnimInstance.GetLinkedAnimGraphInstancesByTag(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44431C0>
+	struct Unknown GetLinkedAnimGraphInstanceByTag(struct FName InTag); // Function Engine.AnimInstance.GetLinkedAnimGraphInstanceByTag(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4443130>
+	float GetInstanceTransitionTimeElapsedFraction(int32_t MachineIndex, int32_t TransitionIndex); // Function Engine.AnimInstance.GetInstanceTransitionTimeElapsedFraction(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x4443070>
+	float GetInstanceTransitionTimeElapsed(int32_t MachineIndex, int32_t TransitionIndex); // Function Engine.AnimInstance.GetInstanceTransitionTimeElapsed(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x4442FB0>
+	float GetInstanceTransitionCrossfadeDuration(int32_t MachineIndex, int32_t TransitionIndex); // Function Engine.AnimInstance.GetInstanceTransitionCrossfadeDuration(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x4442EF0>
+	float GetInstanceStateWeight(int32_t MachineIndex, int32_t StateIndex); // Function Engine.AnimInstance.GetInstanceStateWeight(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x4442E30>
+	float GetInstanceMachineWeight(int32_t MachineIndex); // Function Engine.AnimInstance.GetInstanceMachineWeight(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x4442DA0>
+	float GetInstanceCurrentStateElapsedTime(int32_t MachineIndex); // Function Engine.AnimInstance.GetInstanceCurrentStateElapsedTime(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x4442D10>
+	float GetInstanceAssetPlayerTimeFromEndFraction(int32_t AssetPlayerIndex); // Function Engine.AnimInstance.GetInstanceAssetPlayerTimeFromEndFraction(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x4442C80>
+	float GetInstanceAssetPlayerTimeFromEnd(int32_t AssetPlayerIndex); // Function Engine.AnimInstance.GetInstanceAssetPlayerTimeFromEnd(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x4442BF0>
+	float GetInstanceAssetPlayerTimeFraction(int32_t AssetPlayerIndex); // Function Engine.AnimInstance.GetInstanceAssetPlayerTimeFraction(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x4442B60>
+	float GetInstanceAssetPlayerTime(int32_t AssetPlayerIndex); // Function Engine.AnimInstance.GetInstanceAssetPlayerTime(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x4442AD0>
+	float GetInstanceAssetPlayerLength(int32_t AssetPlayerIndex); // Function Engine.AnimInstance.GetInstanceAssetPlayerLength(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x4442A40>
+	float GetCurveValue(struct FName CurveName); // Function Engine.AnimInstance.GetCurveValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44429A0>
+	struct FName GetCurrentStateName(int32_t MachineIndex); // Function Engine.AnimInstance.GetCurrentStateName(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x4442910>
+	struct Unknown GetCurrentActiveMontage(); // Function Engine.AnimInstance.GetCurrentActiveMontage(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44428E0>
+	void GetAllCurveNames(struct TArray<Unknown>& OutNames); // Function Engine.AnimInstance.GetAllCurveNames(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4442830>
+	void GetActiveCurveNames(enum class Unknow CurveType, struct TArray<Unknown>& OutNames); // Function Engine.AnimInstance.GetActiveCurveNames(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4442740>
+	void ClearMorphTargets(); // Function Engine.AnimInstance.ClearMorphTargets(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4442720>
+	float CalculateDirection(struct Unknown& Velocity, struct Unknown& BaseRotation); // Function Engine.AnimInstance.CalculateDirection(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4442620>
+	void BlueprintUpdateAnimation(float DeltaTimeX); // Function Engine.AnimInstance.BlueprintUpdateAnimation(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void BlueprintPostEvaluateAnimation(); // Function Engine.AnimInstance.BlueprintPostEvaluateAnimation(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void BlueprintLinkedAnimationLayersInitialized(); // Function Engine.AnimInstance.BlueprintLinkedAnimationLayersInitialized(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void BlueprintInitializeAnimation(); // Function Engine.AnimInstance.BlueprintInitializeAnimation(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void BlueprintBeginPlay(); // Function Engine.AnimInstance.BlueprintBeginPlay(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
 };
 
 // Class Engine.Exporter
@@ -5636,9 +5636,9 @@ public:
 	char bForceFileOperations : 0; // 0x60 (1)
 	struct Unknown ExportTask; // 0x68 (8)
 
-	char ScriptRunAssetExportTask(struct Unknown Task); // Function Engine.Exporter.ScriptRunAssetExportTask(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	char RunAssetExportTasks(struct TArray<Unknown>& ExportTasks); // Function Engine.Exporter.RunAssetExportTasks(Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B3810>
-	char RunAssetExportTask(struct Unknown Task); // Function Engine.Exporter.RunAssetExportTask(Final|RequiredAPI|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17EDF00>
+	char ScriptRunAssetExportTask(struct Unknown Task); // Function Engine.Exporter.ScriptRunAssetExportTask(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	char RunAssetExportTasks(struct TArray<Unknown>& ExportTasks); // Function Engine.Exporter.RunAssetExportTasks(Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x44B3810>
+	char RunAssetExportTask(struct Unknown Task); // Function Engine.Exporter.RunAssetExportTask(Final|RequiredAPI|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x17EDF00>
 };
 
 // Class Engine.LevelScriptActor
@@ -5648,10 +5648,10 @@ public:
 
 	char bInputEnabled : 0; // 0x300 (1)
 
-	void WorldOriginLocationChanged(struct Unknown OldOriginLocation, struct Unknown NewOriginLocation); // Function Engine.LevelScriptActor.WorldOriginLocationChanged(Event|Public|HasDefaults|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void SetCinematicMode(char bCinematicMode, char bHidePlayer, char bAffectsHUD, char bAffectsMovement, char bAffectsTurning); // Function Engine.LevelScriptActor.SetCinematicMode(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453D970>
-	char RemoteEvent(struct FName EventName); // Function Engine.LevelScriptActor.RemoteEvent(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453D420>
-	void LevelReset(); // Function Engine.LevelScriptActor.LevelReset(BlueprintAuthorityOnly|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void WorldOriginLocationChanged(struct Unknown OldOriginLocation, struct Unknown NewOriginLocation); // Function Engine.LevelScriptActor.WorldOriginLocationChanged(Event|Public|HasDefaults|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void SetCinematicMode(char bCinematicMode, char bHidePlayer, char bAffectsHUD, char bAffectsMovement, char bAffectsTurning); // Function Engine.LevelScriptActor.SetCinematicMode(Native|Public|BlueprintCallable) // <Game_BE.exe+0x453D970>
+	char RemoteEvent(struct FName EventName); // Function Engine.LevelScriptActor.RemoteEvent(Native|Public|BlueprintCallable) // <Game_BE.exe+0x453D420>
+	void LevelReset(); // Function Engine.LevelScriptActor.LevelReset(BlueprintAuthorityOnly|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
 };
 
 // Class Engine.FXSystemAsset
@@ -5728,8 +5728,8 @@ public:
 	struct Unknown WorldComposition; // 0x5B0 (8)
 	struct Unknown PSCPool; // 0x650 (88)
 
-	struct Unknown K2_GetWorldSettings(); // Function Engine.World.K2_GetWorldSettings(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45FDA80>
-	void HandleTimelineScrubbed(); // Function Engine.World.HandleTimelineScrubbed(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45FDA60>
+	struct Unknown K2_GetWorldSettings(); // Function Engine.World.K2_GetWorldSettings(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45FDA80>
+	void HandleTimelineScrubbed(); // Function Engine.World.HandleTimelineScrubbed(Final|Native|Public) // <Game_BE.exe+0x45FDA60>
 };
 
 // Class Engine.InterpTrack
@@ -5832,7 +5832,7 @@ public:
 
 	struct Unknown SelfPawn; // 0x308 (8)
 
-	void OnChangedViewMode(); // Function Engine.MKPawnEx.OnChangedViewMode(Native|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1E71C00>
+	void OnChangedViewMode(); // Function Engine.MKPawnEx.OnChangedViewMode(Native|Event|Public|BlueprintEvent) // <Game_BE.exe+0x1E71C00>
 };
 
 // Class Engine.Pawn
@@ -5856,35 +5856,35 @@ public:
 	struct Unknown ControlInputVector; // 0x354 (12)
 	struct Unknown LastControlInputVector; // 0x360 (12)
 
-	void SpawnDefaultController(); // Function Engine.Pawn.SpawnDefaultController(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4584890>
-	void SetCanAffectNavigationGeneration(char bNewValue, char bForceUpdate); // Function Engine.Pawn.SetCanAffectNavigationGeneration(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45846C0>
-	void ReceiveUnpossessed(struct Unknown OldController); // Function Engine.Pawn.ReceiveUnpossessed(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceivePossessed(struct Unknown NewController); // Function Engine.Pawn.ReceivePossessed(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void PawnMakeNoise(float Loudness, struct Unknown NoiseLocation, char bUseNoiseMakerLocation, struct Unknown NoiseMaker); // Function Engine.Pawn.PawnMakeNoise(Final|BlueprintAuthorityOnly|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4584550>
-	void OnRep_PlayerState(); // Function Engine.Pawn.OnRep_PlayerState(Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F3FA60>
-	void OnRep_Controller(); // Function Engine.Pawn.OnRep_Controller(Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4490970>
-	void LaunchPawn(struct Unknown LaunchVelocity, char bXYOverride, char bZOverride); // Function Engine.Pawn.LaunchPawn(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4584310>
-	struct Unknown K2_GetMovementInputVector(); // Function Engine.Pawn.K2_GetMovementInputVector(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4584180>
-	char IsPlayerControlled(); // Function Engine.Pawn.IsPlayerControlled(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45842E0>
-	char IsPawnControlled(); // Function Engine.Pawn.IsPawnControlled(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45842B0>
-	char IsMoveInputIgnored(); // Function Engine.Pawn.IsMoveInputIgnored(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4584250>
-	char IsLocallyControlled(); // Function Engine.Pawn.IsLocallyControlled(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4584220>
-	char IsControlled(); // Function Engine.Pawn.IsControlled(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45841F0>
-	char IsBotControlled(); // Function Engine.Pawn.IsBotControlled(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45841C0>
-	struct Unknown GetPendingMovementInputVector(); // Function Engine.Pawn.GetPendingMovementInputVector(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4584180>
-	struct Unknown GetNavAgentLocation(); // Function Engine.Pawn.GetNavAgentLocation(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45840C0>
-	struct Unknown GetMovementComponent(); // Function Engine.Pawn.GetMovementComponent(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4584090>
-	struct Unknown GetMovementBaseActor(struct Unknown Pawn); // Function Engine.Pawn.GetMovementBaseActor(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4584010>
-	struct Unknown GetLastMovementInputVector(); // Function Engine.Pawn.GetLastMovementInputVector(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4583FD0>
-	struct Unknown GetControlRotation(); // Function Engine.Pawn.GetControlRotation(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4583F30>
-	struct Unknown GetController(); // Function Engine.Pawn.GetController(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4583F70>
-	struct Unknown GetBaseAimRotation(); // Function Engine.Pawn.GetBaseAimRotation(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4583E30>
-	void DetachFromControllerPendingDestroy(); // Function Engine.Pawn.DetachFromControllerPendingDestroy(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F4BC90>
-	struct Unknown ConsumeMovementInputVector(); // Function Engine.Pawn.ConsumeMovementInputVector(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4583DF0>
-	void AddMovementInput(struct Unknown WorldDirection, float ScaleValue, char bForce); // Function Engine.Pawn.AddMovementInput(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4583930>
-	void AddControllerYawInput(float Val); // Function Engine.Pawn.AddControllerYawInput(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45837D0>
-	void AddControllerRollInput(float Val); // Function Engine.Pawn.AddControllerRollInput(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4583750>
-	void AddControllerPitchInput(float Val); // Function Engine.Pawn.AddControllerPitchInput(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45836D0>
+	void SpawnDefaultController(); // Function Engine.Pawn.SpawnDefaultController(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4584890>
+	void SetCanAffectNavigationGeneration(char bNewValue, char bForceUpdate); // Function Engine.Pawn.SetCanAffectNavigationGeneration(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45846C0>
+	void ReceiveUnpossessed(struct Unknown OldController); // Function Engine.Pawn.ReceiveUnpossessed(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceivePossessed(struct Unknown NewController); // Function Engine.Pawn.ReceivePossessed(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void PawnMakeNoise(float Loudness, struct Unknown NoiseLocation, char bUseNoiseMakerLocation, struct Unknown NoiseMaker); // Function Engine.Pawn.PawnMakeNoise(Final|BlueprintAuthorityOnly|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4584550>
+	void OnRep_PlayerState(); // Function Engine.Pawn.OnRep_PlayerState(Native|Public) // <Game_BE.exe+0x1F3FA60>
+	void OnRep_Controller(); // Function Engine.Pawn.OnRep_Controller(Native|Public) // <Game_BE.exe+0x4490970>
+	void LaunchPawn(struct Unknown LaunchVelocity, char bXYOverride, char bZOverride); // Function Engine.Pawn.LaunchPawn(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4584310>
+	struct Unknown K2_GetMovementInputVector(); // Function Engine.Pawn.K2_GetMovementInputVector(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4584180>
+	char IsPlayerControlled(); // Function Engine.Pawn.IsPlayerControlled(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45842E0>
+	char IsPawnControlled(); // Function Engine.Pawn.IsPawnControlled(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45842B0>
+	char IsMoveInputIgnored(); // Function Engine.Pawn.IsMoveInputIgnored(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4584250>
+	char IsLocallyControlled(); // Function Engine.Pawn.IsLocallyControlled(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4584220>
+	char IsControlled(); // Function Engine.Pawn.IsControlled(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45841F0>
+	char IsBotControlled(); // Function Engine.Pawn.IsBotControlled(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45841C0>
+	struct Unknown GetPendingMovementInputVector(); // Function Engine.Pawn.GetPendingMovementInputVector(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4584180>
+	struct Unknown GetNavAgentLocation(); // Function Engine.Pawn.GetNavAgentLocation(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45840C0>
+	struct Unknown GetMovementComponent(); // Function Engine.Pawn.GetMovementComponent(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4584090>
+	struct Unknown GetMovementBaseActor(struct Unknown Pawn); // Function Engine.Pawn.GetMovementBaseActor(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x4584010>
+	struct Unknown GetLastMovementInputVector(); // Function Engine.Pawn.GetLastMovementInputVector(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4583FD0>
+	struct Unknown GetControlRotation(); // Function Engine.Pawn.GetControlRotation(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4583F30>
+	struct Unknown GetController(); // Function Engine.Pawn.GetController(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4583F70>
+	struct Unknown GetBaseAimRotation(); // Function Engine.Pawn.GetBaseAimRotation(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4583E30>
+	void DetachFromControllerPendingDestroy(); // Function Engine.Pawn.DetachFromControllerPendingDestroy(Native|Public|BlueprintCallable) // <Game_BE.exe+0x1F4BC90>
+	struct Unknown ConsumeMovementInputVector(); // Function Engine.Pawn.ConsumeMovementInputVector(Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4583DF0>
+	void AddMovementInput(struct Unknown WorldDirection, float ScaleValue, char bForce); // Function Engine.Pawn.AddMovementInput(Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4583930>
+	void AddControllerYawInput(float Val); // Function Engine.Pawn.AddControllerYawInput(Native|Public|BlueprintCallable) // <Game_BE.exe+0x45837D0>
+	void AddControllerRollInput(float Val); // Function Engine.Pawn.AddControllerRollInput(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4583750>
+	void AddControllerPitchInput(float Val); // Function Engine.Pawn.AddControllerPitchInput(Native|Public|BlueprintCallable) // <Game_BE.exe+0x45836D0>
 };
 
 // Class Engine.MKCharacterEx
@@ -5938,53 +5938,53 @@ public:
 	struct TArray<Unknown> RootMotionRepMoves; // 0x520 (16)
 	struct Unknown RepRootMotion; // 0x530 (152)
 
-	void UnCrouch(char bClientSimulation); // Function Engine.Character.UnCrouch(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2043B40>
-	void StopJumping(); // Function Engine.Character.StopJumping(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x204C9F0>
-	void StopAnimMontage(struct Unknown AnimMontage); // Function Engine.Character.StopAnimMontage(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4485860>
-	void ServerMoveOld(float OldTimeStamp, struct Unknown OldAccel, struct Unknown InVel, char OldMoveFlags); // Function Engine.Character.ServerMoveOld(Net|Native|Event|Public|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44853F0>
-	void ServerMoveNoBase(float Timestamp, struct Unknown InAccel, struct Unknown InVel, struct Unknown ClientLoc, char CompressedMoveFlags, char ClientRoll, uint32_t View, char ClientMovementMode); // Function Engine.Character.ServerMoveNoBase(Net|Native|Event|Public|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4485100>
-	void ServerMoveDualNoBase(float TimeStamp0, struct Unknown InAccel0, struct Unknown InVel, char PendingFlags, uint32_t View0, float Timestamp, struct Unknown InAccel, struct Unknown ClientLoc, char NewFlags, char ClientRoll, uint32_t View, char ClientMovementMode); // Function Engine.Character.ServerMoveDualNoBase(Net|Native|Event|Public|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4484CC0>
-	void ServerMoveDualHybridRootMotion(float TimeStamp0, struct Unknown InAccel0, struct Unknown InVel, char PendingFlags, uint32_t View0, float Timestamp, struct Unknown InAccel, struct Unknown ClientLoc, char NewFlags, char ClientRoll, uint32_t View, struct Unknown ClientMovementBase, struct FName ClientBaseBoneName, char ClientMovementMode); // Function Engine.Character.ServerMoveDualHybridRootMotion(Net|Native|Event|Public|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4484810>
-	void ServerMoveDual(float TimeStamp0, struct Unknown InAccel0, struct Unknown InVel, char PendingFlags, uint32_t View0, float Timestamp, struct Unknown InAccel, struct Unknown ClientLoc, char NewFlags, char ClientRoll, uint32_t View, struct Unknown ClientMovementBase, struct FName ClientBaseBoneName, char ClientMovementMode); // Function Engine.Character.ServerMoveDual(Net|Native|Event|Public|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4484360>
-	void ServerMove(float Timestamp, struct Unknown InAccel, struct Unknown InVel, struct Unknown ClientLoc, char CompressedMoveFlags, char ClientRoll, uint32_t View, struct Unknown ClientMovementBase, struct FName ClientBaseBoneName, char ClientMovementMode); // Function Engine.Character.ServerMove(Net|Native|Event|Public|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4483FE0>
-	void RootMotionDebugClientPrintOnScreen(struct FString inString); // Function Engine.Character.RootMotionDebugClientPrintOnScreen(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4483F30>
-	float PlayAnimMontage(struct Unknown AnimMontage, float InPlayRate, struct FName StartSectionName); // Function Engine.Character.PlayAnimMontage(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4483E20>
-	void OnWalkingOffLedge(struct Unknown& PreviousFloorImpactNormal, struct Unknown& PreviousFloorContactNormal, struct Unknown& PreviousLocation, float TimeDelta); // Function Engine.Character.OnWalkingOffLedge(Native|Event|Public|HasOutParms|HasDefaults|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4483C80>
-	void OnRep_RootMotion(); // Function Engine.Character.OnRep_RootMotion(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4483C60>
-	void OnRep_ReplicatedBasedMovement(); // Function Engine.Character.OnRep_ReplicatedBasedMovement(Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4483C40>
-	void OnRep_ReplayLastTransformUpdateTimeStamp(); // Function Engine.Character.OnRep_ReplayLastTransformUpdateTimeStamp(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4483C20>
-	void OnRep_IsCrouched(); // Function Engine.Character.OnRep_IsCrouched(Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4483C00>
-	void OnLaunched(struct Unknown LaunchVelocity, char bXYOverride, char bZOverride); // Function Engine.Character.OnLaunched(Event|Public|HasDefaults|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnLanded(struct Unknown& Hit); // Function Engine.Character.OnLanded(Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnJumped(); // Function Engine.Character.OnJumped(Native|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4483BE0>
-	void LaunchCharacter(struct Unknown LaunchVelocity, char bXYOverride, char bZOverride); // Function Engine.Character.LaunchCharacter(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4483AC0>
-	void K2_UpdateCustomMovement(float DeltaTime); // Function Engine.Character.K2_UpdateCustomMovement(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void K2_OnStartCrouch(float HalfHeightAdjust, float ScaledHalfHeightAdjust); // Function Engine.Character.K2_OnStartCrouch(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void K2_OnMovementModeChanged(char PrevMovementMode, char NewMovementMode, char PrevCustomMode, char NewCustomMode); // Function Engine.Character.K2_OnMovementModeChanged(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void K2_OnEndCrouch(float HalfHeightAdjust, float ScaledHalfHeightAdjust); // Function Engine.Character.K2_OnEndCrouch(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Jump(); // Function Engine.Character.Jump(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x204E1D0>
-	char IsPlayingRootMotion(); // Function Engine.Character.IsPlayingRootMotion(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4483A90>
-	char IsPlayingNetworkedRootMotionMontage(); // Function Engine.Character.IsPlayingNetworkedRootMotionMontage(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4483A60>
-	char IsJumpProvidingForce(); // Function Engine.Character.IsJumpProvidingForce(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x204C9A0>
-	char HasAnyRootMotion(); // Function Engine.Character.HasAnyRootMotion(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4483A30>
-	struct Unknown GetCurrentMontage(); // Function Engine.Character.GetCurrentMontage(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44833A0>
-	struct Unknown GetBaseTranslationOffset(); // Function Engine.Character.GetBaseTranslationOffset(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4483370>
-	struct Unknown GetBaseRotationOffsetRotator(); // Function Engine.Character.GetBaseRotationOffsetRotator(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4483320>
-	float GetAnimRootMotionTranslationScale(); // Function Engine.Character.GetAnimRootMotionTranslationScale(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44832F0>
-	void ForceLastAckMove(); // Function Engine.Character.ForceLastAckMove(Net|Native|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x204C9D0>
-	void Crouch(char bClientSimulation); // Function Engine.Character.Crouch(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x204CAE0>
-	void ClientVeryShortAdjustPosition(float Timestamp, struct Unknown NewLoc, struct Unknown NewBase, struct FName NewBaseBoneName, char bHasBase, char bBaseRelativePosition, char ServerMovementMode); // Function Engine.Character.ClientVeryShortAdjustPosition(Net|Native|Event|Public|HasDefaults|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4482FA0>
-	void ClientCheatWalk(); // Function Engine.Character.ClientCheatWalk(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3B64520>
-	void ClientCheatGhost(); // Function Engine.Character.ClientCheatGhost(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4482F80>
-	void ClientCheatFly(); // Function Engine.Character.ClientCheatFly(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4482F60>
-	void ClientAdjustRootMotionSourcePosition(float Timestamp, struct Unknown ServerRootMotion, char bHasAnimRootMotion, float ServerMontageTrackPosition, struct Unknown ServerLoc, struct Unknown ServerRotation, float ServerVelZ, struct Unknown ServerBase, struct FName ServerBoneName, char bHasBase, char bBaseRelativePosition, char ServerMovementMode); // Function Engine.Character.ClientAdjustRootMotionSourcePosition(Net|Native|Event|Public|HasDefaults|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4482AA0>
-	void ClientAdjustRootMotionPosition(float Timestamp, float ServerMontageTrackPosition, struct Unknown ServerLoc, struct Unknown ServerRotation, float ServerVelZ, struct Unknown ServerBase, struct FName ServerBoneName, char bHasBase, char bBaseRelativePosition, char ServerMovementMode); // Function Engine.Character.ClientAdjustRootMotionPosition(Net|Native|Event|Public|HasDefaults|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44827B0>
-	void ClientAdjustPosition(float Timestamp, struct Unknown NewLoc, struct Unknown NewVel, struct Unknown NewBase, struct FName NewBaseBoneName, char bHasBase, char bBaseRelativePosition, char ServerMovementMode); // Function Engine.Character.ClientAdjustPosition(Net|Native|Event|Public|HasDefaults|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4482540>
-	void ClientAckGoodMove(float Timestamp); // Function Engine.Character.ClientAckGoodMove(Net|Native|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44824C0>
-	char CanJumpInternal(); // Function Engine.Character.CanJumpInternal(Native|Event|Protected|BlueprintEvent|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4482490>
-	char CanJump(); // Function Engine.Character.CanJump(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4482460>
-	char CanCrouch(); // Function Engine.Character.CanCrouch(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4482430>
-	void CacheInitialMeshOffset(struct Unknown MeshRelativeLocation, struct Unknown MeshRelativeRotation); // Function Engine.Character.CacheInitialMeshOffset(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4482350>
+	void UnCrouch(char bClientSimulation); // Function Engine.Character.UnCrouch(Native|Public|BlueprintCallable) // <Game_BE.exe+0x2043B40>
+	void StopJumping(); // Function Engine.Character.StopJumping(Native|Public|BlueprintCallable) // <Game_BE.exe+0x204C9F0>
+	void StopAnimMontage(struct Unknown AnimMontage); // Function Engine.Character.StopAnimMontage(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4485860>
+	void ServerMoveOld(float OldTimeStamp, struct Unknown OldAccel, struct Unknown InVel, char OldMoveFlags); // Function Engine.Character.ServerMoveOld(Net|Native|Event|Public|NetServer|NetValidate) // <Game_BE.exe+0x44853F0>
+	void ServerMoveNoBase(float Timestamp, struct Unknown InAccel, struct Unknown InVel, struct Unknown ClientLoc, char CompressedMoveFlags, char ClientRoll, uint32_t View, char ClientMovementMode); // Function Engine.Character.ServerMoveNoBase(Net|Native|Event|Public|NetServer|NetValidate) // <Game_BE.exe+0x4485100>
+	void ServerMoveDualNoBase(float TimeStamp0, struct Unknown InAccel0, struct Unknown InVel, char PendingFlags, uint32_t View0, float Timestamp, struct Unknown InAccel, struct Unknown ClientLoc, char NewFlags, char ClientRoll, uint32_t View, char ClientMovementMode); // Function Engine.Character.ServerMoveDualNoBase(Net|Native|Event|Public|NetServer|NetValidate) // <Game_BE.exe+0x4484CC0>
+	void ServerMoveDualHybridRootMotion(float TimeStamp0, struct Unknown InAccel0, struct Unknown InVel, char PendingFlags, uint32_t View0, float Timestamp, struct Unknown InAccel, struct Unknown ClientLoc, char NewFlags, char ClientRoll, uint32_t View, struct Unknown ClientMovementBase, struct FName ClientBaseBoneName, char ClientMovementMode); // Function Engine.Character.ServerMoveDualHybridRootMotion(Net|Native|Event|Public|NetServer|NetValidate) // <Game_BE.exe+0x4484810>
+	void ServerMoveDual(float TimeStamp0, struct Unknown InAccel0, struct Unknown InVel, char PendingFlags, uint32_t View0, float Timestamp, struct Unknown InAccel, struct Unknown ClientLoc, char NewFlags, char ClientRoll, uint32_t View, struct Unknown ClientMovementBase, struct FName ClientBaseBoneName, char ClientMovementMode); // Function Engine.Character.ServerMoveDual(Net|Native|Event|Public|NetServer|NetValidate) // <Game_BE.exe+0x4484360>
+	void ServerMove(float Timestamp, struct Unknown InAccel, struct Unknown InVel, struct Unknown ClientLoc, char CompressedMoveFlags, char ClientRoll, uint32_t View, struct Unknown ClientMovementBase, struct FName ClientBaseBoneName, char ClientMovementMode); // Function Engine.Character.ServerMove(Net|Native|Event|Public|NetServer|NetValidate) // <Game_BE.exe+0x4483FE0>
+	void RootMotionDebugClientPrintOnScreen(struct FString inString); // Function Engine.Character.RootMotionDebugClientPrintOnScreen(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x4483F30>
+	float PlayAnimMontage(struct Unknown AnimMontage, float InPlayRate, struct FName StartSectionName); // Function Engine.Character.PlayAnimMontage(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4483E20>
+	void OnWalkingOffLedge(struct Unknown& PreviousFloorImpactNormal, struct Unknown& PreviousFloorContactNormal, struct Unknown& PreviousLocation, float TimeDelta); // Function Engine.Character.OnWalkingOffLedge(Native|Event|Public|HasOutParms|HasDefaults|BlueprintEvent) // <Game_BE.exe+0x4483C80>
+	void OnRep_RootMotion(); // Function Engine.Character.OnRep_RootMotion(Final|Native|Public) // <Game_BE.exe+0x4483C60>
+	void OnRep_ReplicatedBasedMovement(); // Function Engine.Character.OnRep_ReplicatedBasedMovement(Native|Public) // <Game_BE.exe+0x4483C40>
+	void OnRep_ReplayLastTransformUpdateTimeStamp(); // Function Engine.Character.OnRep_ReplayLastTransformUpdateTimeStamp(Final|Native|Public) // <Game_BE.exe+0x4483C20>
+	void OnRep_IsCrouched(); // Function Engine.Character.OnRep_IsCrouched(Native|Public) // <Game_BE.exe+0x4483C00>
+	void OnLaunched(struct Unknown LaunchVelocity, char bXYOverride, char bZOverride); // Function Engine.Character.OnLaunched(Event|Public|HasDefaults|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnLanded(struct Unknown& Hit); // Function Engine.Character.OnLanded(Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnJumped(); // Function Engine.Character.OnJumped(Native|Event|Public|BlueprintEvent) // <Game_BE.exe+0x4483BE0>
+	void LaunchCharacter(struct Unknown LaunchVelocity, char bXYOverride, char bZOverride); // Function Engine.Character.LaunchCharacter(Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4483AC0>
+	void K2_UpdateCustomMovement(float DeltaTime); // Function Engine.Character.K2_UpdateCustomMovement(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void K2_OnStartCrouch(float HalfHeightAdjust, float ScaledHalfHeightAdjust); // Function Engine.Character.K2_OnStartCrouch(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void K2_OnMovementModeChanged(char PrevMovementMode, char NewMovementMode, char PrevCustomMode, char NewCustomMode); // Function Engine.Character.K2_OnMovementModeChanged(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void K2_OnEndCrouch(float HalfHeightAdjust, float ScaledHalfHeightAdjust); // Function Engine.Character.K2_OnEndCrouch(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Jump(); // Function Engine.Character.Jump(Native|Public|BlueprintCallable) // <Game_BE.exe+0x204E1D0>
+	char IsPlayingRootMotion(); // Function Engine.Character.IsPlayingRootMotion(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4483A90>
+	char IsPlayingNetworkedRootMotionMontage(); // Function Engine.Character.IsPlayingNetworkedRootMotionMontage(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4483A60>
+	char IsJumpProvidingForce(); // Function Engine.Character.IsJumpProvidingForce(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x204C9A0>
+	char HasAnyRootMotion(); // Function Engine.Character.HasAnyRootMotion(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4483A30>
+	struct Unknown GetCurrentMontage(); // Function Engine.Character.GetCurrentMontage(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44833A0>
+	struct Unknown GetBaseTranslationOffset(); // Function Engine.Character.GetBaseTranslationOffset(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4483370>
+	struct Unknown GetBaseRotationOffsetRotator(); // Function Engine.Character.GetBaseRotationOffsetRotator(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4483320>
+	float GetAnimRootMotionTranslationScale(); // Function Engine.Character.GetAnimRootMotionTranslationScale(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44832F0>
+	void ForceLastAckMove(); // Function Engine.Character.ForceLastAckMove(Net|Native|Event|Public|NetClient) // <Game_BE.exe+0x204C9D0>
+	void Crouch(char bClientSimulation); // Function Engine.Character.Crouch(Native|Public|BlueprintCallable) // <Game_BE.exe+0x204CAE0>
+	void ClientVeryShortAdjustPosition(float Timestamp, struct Unknown NewLoc, struct Unknown NewBase, struct FName NewBaseBoneName, char bHasBase, char bBaseRelativePosition, char ServerMovementMode); // Function Engine.Character.ClientVeryShortAdjustPosition(Net|Native|Event|Public|HasDefaults|NetClient) // <Game_BE.exe+0x4482FA0>
+	void ClientCheatWalk(); // Function Engine.Character.ClientCheatWalk(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x3B64520>
+	void ClientCheatGhost(); // Function Engine.Character.ClientCheatGhost(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x4482F80>
+	void ClientCheatFly(); // Function Engine.Character.ClientCheatFly(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x4482F60>
+	void ClientAdjustRootMotionSourcePosition(float Timestamp, struct Unknown ServerRootMotion, char bHasAnimRootMotion, float ServerMontageTrackPosition, struct Unknown ServerLoc, struct Unknown ServerRotation, float ServerVelZ, struct Unknown ServerBase, struct FName ServerBoneName, char bHasBase, char bBaseRelativePosition, char ServerMovementMode); // Function Engine.Character.ClientAdjustRootMotionSourcePosition(Net|Native|Event|Public|HasDefaults|NetClient) // <Game_BE.exe+0x4482AA0>
+	void ClientAdjustRootMotionPosition(float Timestamp, float ServerMontageTrackPosition, struct Unknown ServerLoc, struct Unknown ServerRotation, float ServerVelZ, struct Unknown ServerBase, struct FName ServerBoneName, char bHasBase, char bBaseRelativePosition, char ServerMovementMode); // Function Engine.Character.ClientAdjustRootMotionPosition(Net|Native|Event|Public|HasDefaults|NetClient) // <Game_BE.exe+0x44827B0>
+	void ClientAdjustPosition(float Timestamp, struct Unknown NewLoc, struct Unknown NewVel, struct Unknown NewBase, struct FName NewBaseBoneName, char bHasBase, char bBaseRelativePosition, char ServerMovementMode); // Function Engine.Character.ClientAdjustPosition(Net|Native|Event|Public|HasDefaults|NetClient) // <Game_BE.exe+0x4482540>
+	void ClientAckGoodMove(float Timestamp); // Function Engine.Character.ClientAckGoodMove(Net|Native|Event|Public|NetClient) // <Game_BE.exe+0x44824C0>
+	char CanJumpInternal(); // Function Engine.Character.CanJumpInternal(Native|Event|Protected|BlueprintEvent|Const) // <Game_BE.exe+0x4482490>
+	char CanJump(); // Function Engine.Character.CanJump(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4482460>
+	char CanCrouch(); // Function Engine.Character.CanCrouch(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4482430>
+	void CacheInitialMeshOffset(struct Unknown MeshRelativeLocation, struct Unknown MeshRelativeRotation); // Function Engine.Character.CacheInitialMeshOffset(Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4482350>
 };
 
 // Class Engine.SplineComponent
@@ -6010,100 +6010,100 @@ public:
 	float LoopPosition; // 0x584 (4)
 	struct Unknown DefaultUpVector; // 0x588 (12)
 
-	void UpdateSpline(); // Function Engine.SplineComponent.UpdateSpline(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E1680>
-	void SetWorldLocationAtSplinePoint(int32_t PointIndex, struct Unknown& InLocation); // Function Engine.SplineComponent.SetWorldLocationAtSplinePoint(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E15A0>
-	void SetUpVectorAtSplinePoint(int32_t PointIndex, struct Unknown& InUpVector, char CoordinateSpace, char bUpdateSpline); // Function Engine.SplineComponent.SetUpVectorAtSplinePoint(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E1440>
-	void SetUnselectedSplineSegmentColor(struct Unknown& SegmentColor); // Function Engine.SplineComponent.SetUnselectedSplineSegmentColor(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E0C30>
-	void SetTangentsAtSplinePoint(int32_t PointIndex, struct Unknown& InArriveTangent, struct Unknown& InLeaveTangent, char CoordinateSpace, char bUpdateSpline); // Function Engine.SplineComponent.SetTangentsAtSplinePoint(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E1280>
-	void SetTangentAtSplinePoint(int32_t PointIndex, struct Unknown& InTangent, char CoordinateSpace, char bUpdateSpline); // Function Engine.SplineComponent.SetTangentAtSplinePoint(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E1120>
-	void SetSplineWorldPoints(struct TArray<Unknown>& Points); // Function Engine.SplineComponent.SetSplineWorldPoints(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E1070>
-	void SetSplinePointType(int32_t PointIndex, char Type, char bUpdateSpline); // Function Engine.SplineComponent.SetSplinePointType(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E0E40>
-	void SetSplinePoints(struct TArray<Unknown>& Points, char CoordinateSpace, char bUpdateSpline); // Function Engine.SplineComponent.SetSplinePoints(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E0F40>
-	void SetSplineLocalPoints(struct TArray<Unknown>& Points); // Function Engine.SplineComponent.SetSplineLocalPoints(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E0D90>
-	void SetSelectedSplineSegmentColor(struct Unknown& SegmentColor); // Function Engine.SplineComponent.SetSelectedSplineSegmentColor(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E0C30>
-	void SetLocationAtSplinePoint(int32_t PointIndex, struct Unknown& InLocation, char CoordinateSpace, char bUpdateSpline); // Function Engine.SplineComponent.SetLocationAtSplinePoint(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E0AD0>
-	void SetDrawDebug(char bShow); // Function Engine.SplineComponent.SetDrawDebug(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E0A40>
-	void SetDefaultUpVector(struct Unknown& UpVector, char CoordinateSpace); // Function Engine.SplineComponent.SetDefaultUpVector(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E0960>
-	void SetClosedLoopAtPosition(char bInClosedLoop, float Key, char bUpdateSpline); // Function Engine.SplineComponent.SetClosedLoopAtPosition(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E0850>
-	void SetClosedLoop(char bInClosedLoop, char bUpdateSpline); // Function Engine.SplineComponent.SetClosedLoop(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E0780>
-	void RemoveSplinePoint(int32_t Index, char bUpdateSpline); // Function Engine.SplineComponent.RemoveSplinePoint(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E06C0>
-	char IsClosedLoop(); // Function Engine.SplineComponent.IsClosedLoop(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E0690>
-	struct Unknown GetWorldTangentAtDistanceAlongSpline(float Distance); // Function Engine.SplineComponent.GetWorldTangentAtDistanceAlongSpline(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E05E0>
-	struct Unknown GetWorldRotationAtTime(float Time, char bUseConstantVelocity); // Function Engine.SplineComponent.GetWorldRotationAtTime(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E04F0>
-	struct Unknown GetWorldRotationAtDistanceAlongSpline(float Distance); // Function Engine.SplineComponent.GetWorldRotationAtDistanceAlongSpline(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E0440>
-	struct Unknown GetWorldLocationAtTime(float Time, char bUseConstantVelocity); // Function Engine.SplineComponent.GetWorldLocationAtTime(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E0350>
-	struct Unknown GetWorldLocationAtSplinePoint(int32_t PointIndex); // Function Engine.SplineComponent.GetWorldLocationAtSplinePoint(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E02A0>
-	struct Unknown GetWorldLocationAtDistanceAlongSpline(float Distance); // Function Engine.SplineComponent.GetWorldLocationAtDistanceAlongSpline(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E01F0>
-	struct Unknown GetWorldDirectionAtTime(float Time, char bUseConstantVelocity); // Function Engine.SplineComponent.GetWorldDirectionAtTime(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E0100>
-	struct Unknown GetWorldDirectionAtDistanceAlongSpline(float Distance); // Function Engine.SplineComponent.GetWorldDirectionAtDistanceAlongSpline(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E0050>
-	struct Unknown GetVectorPropertyAtSplinePoint(int32_t Index, struct FName PropertyName); // Function Engine.SplineComponent.GetVectorPropertyAtSplinePoint(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DFF80>
-	struct Unknown GetVectorPropertyAtSplineInputKey(float InKey, struct FName PropertyName); // Function Engine.SplineComponent.GetVectorPropertyAtSplineInputKey(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DFEA0>
-	struct Unknown GetUpVectorAtTime(float Time, char CoordinateSpace, char bUseConstantVelocity); // Function Engine.SplineComponent.GetUpVectorAtTime(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DFD80>
-	struct Unknown GetUpVectorAtSplinePoint(int32_t PointIndex, char CoordinateSpace); // Function Engine.SplineComponent.GetUpVectorAtSplinePoint(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DFCB0>
-	struct Unknown GetUpVectorAtSplineInputKey(float InKey, char CoordinateSpace); // Function Engine.SplineComponent.GetUpVectorAtSplineInputKey(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DFBD0>
-	struct Unknown GetUpVectorAtDistanceAlongSpline(float Distance, char CoordinateSpace); // Function Engine.SplineComponent.GetUpVectorAtDistanceAlongSpline(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DFAF0>
-	struct Unknown GetTransformAtTime(float Time, char CoordinateSpace, char bUseConstantVelocity, char bUseScale); // Function Engine.SplineComponent.GetTransformAtTime(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DF960>
-	struct Unknown GetTransformAtSplinePoint(int32_t PointIndex, char CoordinateSpace, char bUseScale); // Function Engine.SplineComponent.GetTransformAtSplinePoint(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DF820>
-	struct Unknown GetTransformAtSplineInputKey(float InKey, char CoordinateSpace, char bUseScale); // Function Engine.SplineComponent.GetTransformAtSplineInputKey(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DF6D0>
-	struct Unknown GetTransformAtDistanceAlongSpline(float Distance, char CoordinateSpace, char bUseScale); // Function Engine.SplineComponent.GetTransformAtDistanceAlongSpline(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DF580>
-	struct Unknown GetTangentAtTime(float Time, char CoordinateSpace, char bUseConstantVelocity); // Function Engine.SplineComponent.GetTangentAtTime(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DF460>
-	struct Unknown GetTangentAtSplinePoint(int32_t PointIndex, char CoordinateSpace); // Function Engine.SplineComponent.GetTangentAtSplinePoint(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DDC40>
-	struct Unknown GetTangentAtSplineInputKey(float InKey, char CoordinateSpace); // Function Engine.SplineComponent.GetTangentAtSplineInputKey(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DF380>
-	struct Unknown GetTangentAtDistanceAlongSpline(float Distance, char CoordinateSpace); // Function Engine.SplineComponent.GetTangentAtDistanceAlongSpline(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DF2A0>
-	char GetSplinePointType(int32_t PointIndex); // Function Engine.SplineComponent.GetSplinePointType(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DF210>
-	float GetSplineLength(); // Function Engine.SplineComponent.GetSplineLength(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DF1E0>
-	struct Unknown GetScaleAtTime(float Time, char bUseConstantVelocity); // Function Engine.SplineComponent.GetScaleAtTime(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DF070>
-	struct Unknown GetScaleAtSplinePoint(int32_t PointIndex); // Function Engine.SplineComponent.GetScaleAtSplinePoint(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DEFD0>
-	struct Unknown GetScaleAtSplineInputKey(float InKey); // Function Engine.SplineComponent.GetScaleAtSplineInputKey(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DEF30>
-	struct Unknown GetScaleAtDistanceAlongSpline(float Distance); // Function Engine.SplineComponent.GetScaleAtDistanceAlongSpline(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DEE90>
-	struct Unknown GetRotationAtTime(float Time, char CoordinateSpace, char bUseConstantVelocity); // Function Engine.SplineComponent.GetRotationAtTime(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DED70>
-	struct Unknown GetRotationAtSplinePoint(int32_t PointIndex, char CoordinateSpace); // Function Engine.SplineComponent.GetRotationAtSplinePoint(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DECA0>
-	struct Unknown GetRotationAtSplineInputKey(float InKey, char CoordinateSpace); // Function Engine.SplineComponent.GetRotationAtSplineInputKey(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DEBC0>
-	struct Unknown GetRotationAtDistanceAlongSpline(float Distance, char CoordinateSpace); // Function Engine.SplineComponent.GetRotationAtDistanceAlongSpline(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DEAE0>
-	float GetRollAtTime(float Time, char CoordinateSpace, char bUseConstantVelocity); // Function Engine.SplineComponent.GetRollAtTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DE9D0>
-	float GetRollAtSplinePoint(int32_t PointIndex, char CoordinateSpace); // Function Engine.SplineComponent.GetRollAtSplinePoint(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DE910>
-	float GetRollAtSplineInputKey(float InKey, char CoordinateSpace); // Function Engine.SplineComponent.GetRollAtSplineInputKey(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DE840>
-	float GetRollAtDistanceAlongSpline(float Distance, char CoordinateSpace); // Function Engine.SplineComponent.GetRollAtDistanceAlongSpline(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DE770>
-	struct Unknown GetRightVectorAtTime(float Time, char CoordinateSpace, char bUseConstantVelocity); // Function Engine.SplineComponent.GetRightVectorAtTime(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DE650>
-	struct Unknown GetRightVectorAtSplinePoint(int32_t PointIndex, char CoordinateSpace); // Function Engine.SplineComponent.GetRightVectorAtSplinePoint(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DE580>
-	struct Unknown GetRightVectorAtSplineInputKey(float InKey, char CoordinateSpace); // Function Engine.SplineComponent.GetRightVectorAtSplineInputKey(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DE4A0>
-	struct Unknown GetRightVectorAtDistanceAlongSpline(float Distance, char CoordinateSpace); // Function Engine.SplineComponent.GetRightVectorAtDistanceAlongSpline(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DE3C0>
-	int32_t GetNumberOfSplineSegments(); // Function Engine.SplineComponent.GetNumberOfSplineSegments(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DE390>
-	int32_t GetNumberOfSplinePoints(); // Function Engine.SplineComponent.GetNumberOfSplinePoints(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DE360>
-	struct Unknown GetLocationAtTime(float Time, char CoordinateSpace, char bUseConstantVelocity); // Function Engine.SplineComponent.GetLocationAtTime(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DE240>
-	struct Unknown GetLocationAtSplinePoint(int32_t PointIndex, char CoordinateSpace); // Function Engine.SplineComponent.GetLocationAtSplinePoint(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DE170>
-	struct Unknown GetLocationAtSplineInputKey(float InKey, char CoordinateSpace); // Function Engine.SplineComponent.GetLocationAtSplineInputKey(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DE090>
-	struct Unknown GetLocationAtDistanceAlongSpline(float Distance, char CoordinateSpace); // Function Engine.SplineComponent.GetLocationAtDistanceAlongSpline(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DDFB0>
-	void GetLocationAndTangentAtSplinePoint(int32_t PointIndex, struct Unknown& Location, struct Unknown& Tangent, char CoordinateSpace); // Function Engine.SplineComponent.GetLocationAndTangentAtSplinePoint(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DDE40>
-	void GetLocalLocationAndTangentAtSplinePoint(int32_t PointIndex, struct Unknown& LocalLocation, struct Unknown& LocalTangent); // Function Engine.SplineComponent.GetLocalLocationAndTangentAtSplinePoint(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DDD10>
-	struct Unknown GetLeaveTangentAtSplinePoint(int32_t PointIndex, char CoordinateSpace); // Function Engine.SplineComponent.GetLeaveTangentAtSplinePoint(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DDC40>
-	float GetInputKeyAtDistanceAlongSpline(float Distance); // Function Engine.SplineComponent.GetInputKeyAtDistanceAlongSpline(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DDBB0>
-	float GetFloatPropertyAtSplinePoint(int32_t Index, struct FName PropertyName); // Function Engine.SplineComponent.GetFloatPropertyAtSplinePoint(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DDAF0>
-	float GetFloatPropertyAtSplineInputKey(float InKey, struct FName PropertyName); // Function Engine.SplineComponent.GetFloatPropertyAtSplineInputKey(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DDA20>
-	float GetDistanceAlongSplineAtSplinePoint(int32_t PointIndex); // Function Engine.SplineComponent.GetDistanceAlongSplineAtSplinePoint(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DD990>
-	struct Unknown GetDirectionAtTime(float Time, char CoordinateSpace, char bUseConstantVelocity); // Function Engine.SplineComponent.GetDirectionAtTime(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DD870>
-	struct Unknown GetDirectionAtSplinePoint(int32_t PointIndex, char CoordinateSpace); // Function Engine.SplineComponent.GetDirectionAtSplinePoint(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DD7A0>
-	struct Unknown GetDirectionAtSplineInputKey(float InKey, char CoordinateSpace); // Function Engine.SplineComponent.GetDirectionAtSplineInputKey(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DD6C0>
-	struct Unknown GetDirectionAtDistanceAlongSpline(float Distance, char CoordinateSpace); // Function Engine.SplineComponent.GetDirectionAtDistanceAlongSpline(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DD5E0>
-	struct Unknown GetDefaultUpVector(char CoordinateSpace); // Function Engine.SplineComponent.GetDefaultUpVector(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DD540>
-	struct Unknown GetArriveTangentAtSplinePoint(int32_t PointIndex, char CoordinateSpace); // Function Engine.SplineComponent.GetArriveTangentAtSplinePoint(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DD470>
-	struct Unknown FindUpVectorClosestToWorldLocation(struct Unknown& WorldLocation, char CoordinateSpace); // Function Engine.SplineComponent.FindUpVectorClosestToWorldLocation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DD380>
-	struct Unknown FindTransformClosestToWorldLocation(struct Unknown& WorldLocation, char CoordinateSpace, char bUseScale); // Function Engine.SplineComponent.FindTransformClosestToWorldLocation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DD230>
-	struct Unknown FindTangentClosestToWorldLocation(struct Unknown& WorldLocation, char CoordinateSpace); // Function Engine.SplineComponent.FindTangentClosestToWorldLocation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DD140>
-	struct Unknown FindScaleClosestToWorldLocation(struct Unknown& WorldLocation); // Function Engine.SplineComponent.FindScaleClosestToWorldLocation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DD090>
-	struct Unknown FindRotationClosestToWorldLocation(struct Unknown& WorldLocation, char CoordinateSpace); // Function Engine.SplineComponent.FindRotationClosestToWorldLocation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DCFA0>
-	float FindRollClosestToWorldLocation(struct Unknown& WorldLocation, char CoordinateSpace); // Function Engine.SplineComponent.FindRollClosestToWorldLocation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DCEC0>
-	struct Unknown FindRightVectorClosestToWorldLocation(struct Unknown& WorldLocation, char CoordinateSpace); // Function Engine.SplineComponent.FindRightVectorClosestToWorldLocation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DCDD0>
-	struct Unknown FindLocationClosestToWorldLocation(struct Unknown& WorldLocation, char CoordinateSpace); // Function Engine.SplineComponent.FindLocationClosestToWorldLocation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DCCE0>
-	float FindInputKeyClosestToWorldLocation(struct Unknown& WorldLocation); // Function Engine.SplineComponent.FindInputKeyClosestToWorldLocation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DCC40>
-	struct Unknown FindDirectionClosestToWorldLocation(struct Unknown& WorldLocation, char CoordinateSpace); // Function Engine.SplineComponent.FindDirectionClosestToWorldLocation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DCB50>
-	void ClearSplinePoints(char bUpdateSpline); // Function Engine.SplineComponent.ClearSplinePoints(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DCAC0>
-	void AddSplineWorldPoint(struct Unknown& Position); // Function Engine.SplineComponent.AddSplineWorldPoint(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DCA20>
-	void AddSplinePointAtIndex(struct Unknown& Position, int32_t Index, char CoordinateSpace, char bUpdateSpline); // Function Engine.SplineComponent.AddSplinePointAtIndex(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DC8C0>
-	void AddSplinePoint(struct Unknown& Position, char CoordinateSpace, char bUpdateSpline); // Function Engine.SplineComponent.AddSplinePoint(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DC7B0>
-	void AddSplineLocalPoint(struct Unknown& Position); // Function Engine.SplineComponent.AddSplineLocalPoint(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DC720>
-	void AddPoints(struct TArray<Unknown>& Points, char bUpdateSpline); // Function Engine.SplineComponent.AddPoints(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DC620>
-	void AddPoint(struct Unknown& Point, char bUpdateSpline); // Function Engine.SplineComponent.AddPoint(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DC510>
+	void UpdateSpline(); // Function Engine.SplineComponent.UpdateSpline(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45E1680>
+	void SetWorldLocationAtSplinePoint(int32_t PointIndex, struct Unknown& InLocation); // Function Engine.SplineComponent.SetWorldLocationAtSplinePoint(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45E15A0>
+	void SetUpVectorAtSplinePoint(int32_t PointIndex, struct Unknown& InUpVector, char CoordinateSpace, char bUpdateSpline); // Function Engine.SplineComponent.SetUpVectorAtSplinePoint(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45E1440>
+	void SetUnselectedSplineSegmentColor(struct Unknown& SegmentColor); // Function Engine.SplineComponent.SetUnselectedSplineSegmentColor(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45E0C30>
+	void SetTangentsAtSplinePoint(int32_t PointIndex, struct Unknown& InArriveTangent, struct Unknown& InLeaveTangent, char CoordinateSpace, char bUpdateSpline); // Function Engine.SplineComponent.SetTangentsAtSplinePoint(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45E1280>
+	void SetTangentAtSplinePoint(int32_t PointIndex, struct Unknown& InTangent, char CoordinateSpace, char bUpdateSpline); // Function Engine.SplineComponent.SetTangentAtSplinePoint(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45E1120>
+	void SetSplineWorldPoints(struct TArray<Unknown>& Points); // Function Engine.SplineComponent.SetSplineWorldPoints(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x45E1070>
+	void SetSplinePointType(int32_t PointIndex, char Type, char bUpdateSpline); // Function Engine.SplineComponent.SetSplinePointType(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45E0E40>
+	void SetSplinePoints(struct TArray<Unknown>& Points, char CoordinateSpace, char bUpdateSpline); // Function Engine.SplineComponent.SetSplinePoints(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x45E0F40>
+	void SetSplineLocalPoints(struct TArray<Unknown>& Points); // Function Engine.SplineComponent.SetSplineLocalPoints(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x45E0D90>
+	void SetSelectedSplineSegmentColor(struct Unknown& SegmentColor); // Function Engine.SplineComponent.SetSelectedSplineSegmentColor(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45E0C30>
+	void SetLocationAtSplinePoint(int32_t PointIndex, struct Unknown& InLocation, char CoordinateSpace, char bUpdateSpline); // Function Engine.SplineComponent.SetLocationAtSplinePoint(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45E0AD0>
+	void SetDrawDebug(char bShow); // Function Engine.SplineComponent.SetDrawDebug(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45E0A40>
+	void SetDefaultUpVector(struct Unknown& UpVector, char CoordinateSpace); // Function Engine.SplineComponent.SetDefaultUpVector(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45E0960>
+	void SetClosedLoopAtPosition(char bInClosedLoop, float Key, char bUpdateSpline); // Function Engine.SplineComponent.SetClosedLoopAtPosition(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45E0850>
+	void SetClosedLoop(char bInClosedLoop, char bUpdateSpline); // Function Engine.SplineComponent.SetClosedLoop(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45E0780>
+	void RemoveSplinePoint(int32_t Index, char bUpdateSpline); // Function Engine.SplineComponent.RemoveSplinePoint(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45E06C0>
+	char IsClosedLoop(); // Function Engine.SplineComponent.IsClosedLoop(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45E0690>
+	struct Unknown GetWorldTangentAtDistanceAlongSpline(float Distance); // Function Engine.SplineComponent.GetWorldTangentAtDistanceAlongSpline(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45E05E0>
+	struct Unknown GetWorldRotationAtTime(float Time, char bUseConstantVelocity); // Function Engine.SplineComponent.GetWorldRotationAtTime(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45E04F0>
+	struct Unknown GetWorldRotationAtDistanceAlongSpline(float Distance); // Function Engine.SplineComponent.GetWorldRotationAtDistanceAlongSpline(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45E0440>
+	struct Unknown GetWorldLocationAtTime(float Time, char bUseConstantVelocity); // Function Engine.SplineComponent.GetWorldLocationAtTime(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45E0350>
+	struct Unknown GetWorldLocationAtSplinePoint(int32_t PointIndex); // Function Engine.SplineComponent.GetWorldLocationAtSplinePoint(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45E02A0>
+	struct Unknown GetWorldLocationAtDistanceAlongSpline(float Distance); // Function Engine.SplineComponent.GetWorldLocationAtDistanceAlongSpline(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45E01F0>
+	struct Unknown GetWorldDirectionAtTime(float Time, char bUseConstantVelocity); // Function Engine.SplineComponent.GetWorldDirectionAtTime(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45E0100>
+	struct Unknown GetWorldDirectionAtDistanceAlongSpline(float Distance); // Function Engine.SplineComponent.GetWorldDirectionAtDistanceAlongSpline(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45E0050>
+	struct Unknown GetVectorPropertyAtSplinePoint(int32_t Index, struct FName PropertyName); // Function Engine.SplineComponent.GetVectorPropertyAtSplinePoint(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DFF80>
+	struct Unknown GetVectorPropertyAtSplineInputKey(float InKey, struct FName PropertyName); // Function Engine.SplineComponent.GetVectorPropertyAtSplineInputKey(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DFEA0>
+	struct Unknown GetUpVectorAtTime(float Time, char CoordinateSpace, char bUseConstantVelocity); // Function Engine.SplineComponent.GetUpVectorAtTime(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DFD80>
+	struct Unknown GetUpVectorAtSplinePoint(int32_t PointIndex, char CoordinateSpace); // Function Engine.SplineComponent.GetUpVectorAtSplinePoint(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DFCB0>
+	struct Unknown GetUpVectorAtSplineInputKey(float InKey, char CoordinateSpace); // Function Engine.SplineComponent.GetUpVectorAtSplineInputKey(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DFBD0>
+	struct Unknown GetUpVectorAtDistanceAlongSpline(float Distance, char CoordinateSpace); // Function Engine.SplineComponent.GetUpVectorAtDistanceAlongSpline(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DFAF0>
+	struct Unknown GetTransformAtTime(float Time, char CoordinateSpace, char bUseConstantVelocity, char bUseScale); // Function Engine.SplineComponent.GetTransformAtTime(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DF960>
+	struct Unknown GetTransformAtSplinePoint(int32_t PointIndex, char CoordinateSpace, char bUseScale); // Function Engine.SplineComponent.GetTransformAtSplinePoint(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DF820>
+	struct Unknown GetTransformAtSplineInputKey(float InKey, char CoordinateSpace, char bUseScale); // Function Engine.SplineComponent.GetTransformAtSplineInputKey(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DF6D0>
+	struct Unknown GetTransformAtDistanceAlongSpline(float Distance, char CoordinateSpace, char bUseScale); // Function Engine.SplineComponent.GetTransformAtDistanceAlongSpline(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DF580>
+	struct Unknown GetTangentAtTime(float Time, char CoordinateSpace, char bUseConstantVelocity); // Function Engine.SplineComponent.GetTangentAtTime(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DF460>
+	struct Unknown GetTangentAtSplinePoint(int32_t PointIndex, char CoordinateSpace); // Function Engine.SplineComponent.GetTangentAtSplinePoint(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DDC40>
+	struct Unknown GetTangentAtSplineInputKey(float InKey, char CoordinateSpace); // Function Engine.SplineComponent.GetTangentAtSplineInputKey(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DF380>
+	struct Unknown GetTangentAtDistanceAlongSpline(float Distance, char CoordinateSpace); // Function Engine.SplineComponent.GetTangentAtDistanceAlongSpline(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DF2A0>
+	char GetSplinePointType(int32_t PointIndex); // Function Engine.SplineComponent.GetSplinePointType(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DF210>
+	float GetSplineLength(); // Function Engine.SplineComponent.GetSplineLength(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DF1E0>
+	struct Unknown GetScaleAtTime(float Time, char bUseConstantVelocity); // Function Engine.SplineComponent.GetScaleAtTime(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DF070>
+	struct Unknown GetScaleAtSplinePoint(int32_t PointIndex); // Function Engine.SplineComponent.GetScaleAtSplinePoint(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DEFD0>
+	struct Unknown GetScaleAtSplineInputKey(float InKey); // Function Engine.SplineComponent.GetScaleAtSplineInputKey(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DEF30>
+	struct Unknown GetScaleAtDistanceAlongSpline(float Distance); // Function Engine.SplineComponent.GetScaleAtDistanceAlongSpline(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DEE90>
+	struct Unknown GetRotationAtTime(float Time, char CoordinateSpace, char bUseConstantVelocity); // Function Engine.SplineComponent.GetRotationAtTime(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DED70>
+	struct Unknown GetRotationAtSplinePoint(int32_t PointIndex, char CoordinateSpace); // Function Engine.SplineComponent.GetRotationAtSplinePoint(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DECA0>
+	struct Unknown GetRotationAtSplineInputKey(float InKey, char CoordinateSpace); // Function Engine.SplineComponent.GetRotationAtSplineInputKey(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DEBC0>
+	struct Unknown GetRotationAtDistanceAlongSpline(float Distance, char CoordinateSpace); // Function Engine.SplineComponent.GetRotationAtDistanceAlongSpline(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DEAE0>
+	float GetRollAtTime(float Time, char CoordinateSpace, char bUseConstantVelocity); // Function Engine.SplineComponent.GetRollAtTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DE9D0>
+	float GetRollAtSplinePoint(int32_t PointIndex, char CoordinateSpace); // Function Engine.SplineComponent.GetRollAtSplinePoint(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DE910>
+	float GetRollAtSplineInputKey(float InKey, char CoordinateSpace); // Function Engine.SplineComponent.GetRollAtSplineInputKey(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DE840>
+	float GetRollAtDistanceAlongSpline(float Distance, char CoordinateSpace); // Function Engine.SplineComponent.GetRollAtDistanceAlongSpline(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DE770>
+	struct Unknown GetRightVectorAtTime(float Time, char CoordinateSpace, char bUseConstantVelocity); // Function Engine.SplineComponent.GetRightVectorAtTime(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DE650>
+	struct Unknown GetRightVectorAtSplinePoint(int32_t PointIndex, char CoordinateSpace); // Function Engine.SplineComponent.GetRightVectorAtSplinePoint(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DE580>
+	struct Unknown GetRightVectorAtSplineInputKey(float InKey, char CoordinateSpace); // Function Engine.SplineComponent.GetRightVectorAtSplineInputKey(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DE4A0>
+	struct Unknown GetRightVectorAtDistanceAlongSpline(float Distance, char CoordinateSpace); // Function Engine.SplineComponent.GetRightVectorAtDistanceAlongSpline(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DE3C0>
+	int32_t GetNumberOfSplineSegments(); // Function Engine.SplineComponent.GetNumberOfSplineSegments(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DE390>
+	int32_t GetNumberOfSplinePoints(); // Function Engine.SplineComponent.GetNumberOfSplinePoints(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DE360>
+	struct Unknown GetLocationAtTime(float Time, char CoordinateSpace, char bUseConstantVelocity); // Function Engine.SplineComponent.GetLocationAtTime(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DE240>
+	struct Unknown GetLocationAtSplinePoint(int32_t PointIndex, char CoordinateSpace); // Function Engine.SplineComponent.GetLocationAtSplinePoint(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DE170>
+	struct Unknown GetLocationAtSplineInputKey(float InKey, char CoordinateSpace); // Function Engine.SplineComponent.GetLocationAtSplineInputKey(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DE090>
+	struct Unknown GetLocationAtDistanceAlongSpline(float Distance, char CoordinateSpace); // Function Engine.SplineComponent.GetLocationAtDistanceAlongSpline(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DDFB0>
+	void GetLocationAndTangentAtSplinePoint(int32_t PointIndex, struct Unknown& Location, struct Unknown& Tangent, char CoordinateSpace); // Function Engine.SplineComponent.GetLocationAndTangentAtSplinePoint(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DDE40>
+	void GetLocalLocationAndTangentAtSplinePoint(int32_t PointIndex, struct Unknown& LocalLocation, struct Unknown& LocalTangent); // Function Engine.SplineComponent.GetLocalLocationAndTangentAtSplinePoint(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DDD10>
+	struct Unknown GetLeaveTangentAtSplinePoint(int32_t PointIndex, char CoordinateSpace); // Function Engine.SplineComponent.GetLeaveTangentAtSplinePoint(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DDC40>
+	float GetInputKeyAtDistanceAlongSpline(float Distance); // Function Engine.SplineComponent.GetInputKeyAtDistanceAlongSpline(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DDBB0>
+	float GetFloatPropertyAtSplinePoint(int32_t Index, struct FName PropertyName); // Function Engine.SplineComponent.GetFloatPropertyAtSplinePoint(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DDAF0>
+	float GetFloatPropertyAtSplineInputKey(float InKey, struct FName PropertyName); // Function Engine.SplineComponent.GetFloatPropertyAtSplineInputKey(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DDA20>
+	float GetDistanceAlongSplineAtSplinePoint(int32_t PointIndex); // Function Engine.SplineComponent.GetDistanceAlongSplineAtSplinePoint(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DD990>
+	struct Unknown GetDirectionAtTime(float Time, char CoordinateSpace, char bUseConstantVelocity); // Function Engine.SplineComponent.GetDirectionAtTime(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DD870>
+	struct Unknown GetDirectionAtSplinePoint(int32_t PointIndex, char CoordinateSpace); // Function Engine.SplineComponent.GetDirectionAtSplinePoint(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DD7A0>
+	struct Unknown GetDirectionAtSplineInputKey(float InKey, char CoordinateSpace); // Function Engine.SplineComponent.GetDirectionAtSplineInputKey(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DD6C0>
+	struct Unknown GetDirectionAtDistanceAlongSpline(float Distance, char CoordinateSpace); // Function Engine.SplineComponent.GetDirectionAtDistanceAlongSpline(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DD5E0>
+	struct Unknown GetDefaultUpVector(char CoordinateSpace); // Function Engine.SplineComponent.GetDefaultUpVector(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DD540>
+	struct Unknown GetArriveTangentAtSplinePoint(int32_t PointIndex, char CoordinateSpace); // Function Engine.SplineComponent.GetArriveTangentAtSplinePoint(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DD470>
+	struct Unknown FindUpVectorClosestToWorldLocation(struct Unknown& WorldLocation, char CoordinateSpace); // Function Engine.SplineComponent.FindUpVectorClosestToWorldLocation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DD380>
+	struct Unknown FindTransformClosestToWorldLocation(struct Unknown& WorldLocation, char CoordinateSpace, char bUseScale); // Function Engine.SplineComponent.FindTransformClosestToWorldLocation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DD230>
+	struct Unknown FindTangentClosestToWorldLocation(struct Unknown& WorldLocation, char CoordinateSpace); // Function Engine.SplineComponent.FindTangentClosestToWorldLocation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DD140>
+	struct Unknown FindScaleClosestToWorldLocation(struct Unknown& WorldLocation); // Function Engine.SplineComponent.FindScaleClosestToWorldLocation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DD090>
+	struct Unknown FindRotationClosestToWorldLocation(struct Unknown& WorldLocation, char CoordinateSpace); // Function Engine.SplineComponent.FindRotationClosestToWorldLocation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DCFA0>
+	float FindRollClosestToWorldLocation(struct Unknown& WorldLocation, char CoordinateSpace); // Function Engine.SplineComponent.FindRollClosestToWorldLocation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DCEC0>
+	struct Unknown FindRightVectorClosestToWorldLocation(struct Unknown& WorldLocation, char CoordinateSpace); // Function Engine.SplineComponent.FindRightVectorClosestToWorldLocation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DCDD0>
+	struct Unknown FindLocationClosestToWorldLocation(struct Unknown& WorldLocation, char CoordinateSpace); // Function Engine.SplineComponent.FindLocationClosestToWorldLocation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DCCE0>
+	float FindInputKeyClosestToWorldLocation(struct Unknown& WorldLocation); // Function Engine.SplineComponent.FindInputKeyClosestToWorldLocation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DCC40>
+	struct Unknown FindDirectionClosestToWorldLocation(struct Unknown& WorldLocation, char CoordinateSpace); // Function Engine.SplineComponent.FindDirectionClosestToWorldLocation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DCB50>
+	void ClearSplinePoints(char bUpdateSpline); // Function Engine.SplineComponent.ClearSplinePoints(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45DCAC0>
+	void AddSplineWorldPoint(struct Unknown& Position); // Function Engine.SplineComponent.AddSplineWorldPoint(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45DCA20>
+	void AddSplinePointAtIndex(struct Unknown& Position, int32_t Index, char CoordinateSpace, char bUpdateSpline); // Function Engine.SplineComponent.AddSplinePointAtIndex(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45DC8C0>
+	void AddSplinePoint(struct Unknown& Position, char CoordinateSpace, char bUpdateSpline); // Function Engine.SplineComponent.AddSplinePoint(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45DC7B0>
+	void AddSplineLocalPoint(struct Unknown& Position); // Function Engine.SplineComponent.AddSplineLocalPoint(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45DC720>
+	void AddPoints(struct TArray<Unknown>& Points, char bUpdateSpline); // Function Engine.SplineComponent.AddPoints(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x45DC620>
+	void AddPoint(struct Unknown& Point, char bUpdateSpline); // Function Engine.SplineComponent.AddPoint(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x45DC510>
 };
 
 // Class Engine.Commandlet
@@ -6172,36 +6172,36 @@ public:
 	struct TWeakObjectPtr<struct Unknown> AutoAttachParent; // 0x768 (8)
 	struct FName AutoAttachSocketName; // 0x770 (8)
 
-	void StopDelayed(float DelayTime); // Function Engine.AudioComponent.StopDelayed(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4461B10>
-	void Stop(); // Function Engine.AudioComponent.Stop(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4461AF0>
-	void SetWaveParameter(struct FName InName, struct Unknown InWave); // Function Engine.AudioComponent.SetWaveParameter(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4461A30>
-	void SetVolumeMultiplier(float NewVolumeMultiplier); // Function Engine.AudioComponent.SetVolumeMultiplier(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44619B0>
-	void SetUISound(char bInUISound); // Function Engine.AudioComponent.SetUISound(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4461920>
-	void SetSubmixSend(struct Unknown Submix, float SendLevel); // Function Engine.AudioComponent.SetSubmixSend(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4461850>
-	void SetSourceBusSendPreEffect(struct Unknown SoundSourceBus, float SourceBusSendLevel); // Function Engine.AudioComponent.SetSourceBusSendPreEffect(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4461780>
-	void SetSourceBusSendPostEffect(struct Unknown SoundSourceBus, float SourceBusSendLevel); // Function Engine.AudioComponent.SetSourceBusSendPostEffect(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44616B0>
-	void SetSound(struct Unknown NewSound); // Function Engine.AudioComponent.SetSound(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4461630>
-	void SetPitchMultiplier(float NewPitchMultiplier); // Function Engine.AudioComponent.SetPitchMultiplier(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4461480>
-	void SetPaused(char bPause); // Function Engine.AudioComponent.SetPaused(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44613F0>
-	void SetLowPassFilterFrequency(float InLowPassFilterFrequency); // Function Engine.AudioComponent.SetLowPassFilterFrequency(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4461370>
-	void SetLowPassFilterEnabled(char InLowPassFilterEnabled); // Function Engine.AudioComponent.SetLowPassFilterEnabled(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44612E0>
-	void SetIntParameter(struct FName InName, int32_t inInt); // Function Engine.AudioComponent.SetIntParameter(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4461180>
-	void SetFloatParameter(struct FName InName, float InFloat); // Function Engine.AudioComponent.SetFloatParameter(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44610B0>
-	void SetBoolParameter(struct FName InName, char InBool); // Function Engine.AudioComponent.SetBoolParameter(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4460F50>
-	void Play(float StartTime); // Function Engine.AudioComponent.Play(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4460ED0>
-	char IsPlaying(); // Function Engine.AudioComponent.IsPlaying(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4460E80>
-	char HasCookedFFTData(); // Function Engine.AudioComponent.HasCookedFFTData(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4460E50>
-	char HasCookedAmplitudeEnvelopeData(); // Function Engine.AudioComponent.HasCookedAmplitudeEnvelopeData(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4460E20>
-	enum class Unknow GetPlayState(); // Function Engine.AudioComponent.GetPlayState(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4460DF0>
-	char GetCookedFFTDataForAllPlayingSounds(struct TArray<Unknown>& OutSoundWaveSpectralData); // Function Engine.AudioComponent.GetCookedFFTDataForAllPlayingSounds(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4460D10>
-	char GetCookedFFTData(struct TArray<Unknown>& FrequenciesToGet, struct TArray<Unknown>& OutSoundWaveSpectralData); // Function Engine.AudioComponent.GetCookedFFTData(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4460BE0>
-	char GetCookedEnvelopeDataForAllPlayingSounds(struct TArray<Unknown>& OutEnvelopeData); // Function Engine.AudioComponent.GetCookedEnvelopeDataForAllPlayingSounds(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4460B20>
-	char GetCookedEnvelopeData(float& OutEnvelopeData); // Function Engine.AudioComponent.GetCookedEnvelopeData(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4460A70>
-	void FadeOut(float FadeOutDuration, float FadeVolumeLevel, enum class Unknow FadeCurve); // Function Engine.AudioComponent.FadeOut(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4460960>
-	void FadeIn(float FadeInDuration, float FadeVolumeLevel, float StartTime, enum class Unknow FadeCurve); // Function Engine.AudioComponent.FadeIn(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4460810>
-	char BP_GetAttenuationSettingsToApply(struct Unknown& OutAttenuationSettings); // Function Engine.AudioComponent.BP_GetAttenuationSettingsToApply(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4460740>
-	void AdjustVolume(float AdjustVolumeDuration, float AdjustVolumeLevel, enum class Unknow FadeCurve); // Function Engine.AudioComponent.AdjustVolume(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4460640>
-	void AdjustAttenuation(struct Unknown& InAttenuationSettings); // Function Engine.AudioComponent.AdjustAttenuation(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4460570>
+	void StopDelayed(float DelayTime); // Function Engine.AudioComponent.StopDelayed(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4461B10>
+	void Stop(); // Function Engine.AudioComponent.Stop(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4461AF0>
+	void SetWaveParameter(struct FName InName, struct Unknown InWave); // Function Engine.AudioComponent.SetWaveParameter(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4461A30>
+	void SetVolumeMultiplier(float NewVolumeMultiplier); // Function Engine.AudioComponent.SetVolumeMultiplier(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44619B0>
+	void SetUISound(char bInUISound); // Function Engine.AudioComponent.SetUISound(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4461920>
+	void SetSubmixSend(struct Unknown Submix, float SendLevel); // Function Engine.AudioComponent.SetSubmixSend(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4461850>
+	void SetSourceBusSendPreEffect(struct Unknown SoundSourceBus, float SourceBusSendLevel); // Function Engine.AudioComponent.SetSourceBusSendPreEffect(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4461780>
+	void SetSourceBusSendPostEffect(struct Unknown SoundSourceBus, float SourceBusSendLevel); // Function Engine.AudioComponent.SetSourceBusSendPostEffect(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44616B0>
+	void SetSound(struct Unknown NewSound); // Function Engine.AudioComponent.SetSound(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4461630>
+	void SetPitchMultiplier(float NewPitchMultiplier); // Function Engine.AudioComponent.SetPitchMultiplier(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4461480>
+	void SetPaused(char bPause); // Function Engine.AudioComponent.SetPaused(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44613F0>
+	void SetLowPassFilterFrequency(float InLowPassFilterFrequency); // Function Engine.AudioComponent.SetLowPassFilterFrequency(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4461370>
+	void SetLowPassFilterEnabled(char InLowPassFilterEnabled); // Function Engine.AudioComponent.SetLowPassFilterEnabled(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44612E0>
+	void SetIntParameter(struct FName InName, int32_t inInt); // Function Engine.AudioComponent.SetIntParameter(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4461180>
+	void SetFloatParameter(struct FName InName, float InFloat); // Function Engine.AudioComponent.SetFloatParameter(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44610B0>
+	void SetBoolParameter(struct FName InName, char InBool); // Function Engine.AudioComponent.SetBoolParameter(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4460F50>
+	void Play(float StartTime); // Function Engine.AudioComponent.Play(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4460ED0>
+	char IsPlaying(); // Function Engine.AudioComponent.IsPlaying(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4460E80>
+	char HasCookedFFTData(); // Function Engine.AudioComponent.HasCookedFFTData(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4460E50>
+	char HasCookedAmplitudeEnvelopeData(); // Function Engine.AudioComponent.HasCookedAmplitudeEnvelopeData(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4460E20>
+	enum class Unknow GetPlayState(); // Function Engine.AudioComponent.GetPlayState(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4460DF0>
+	char GetCookedFFTDataForAllPlayingSounds(struct TArray<Unknown>& OutSoundWaveSpectralData); // Function Engine.AudioComponent.GetCookedFFTDataForAllPlayingSounds(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x4460D10>
+	char GetCookedFFTData(struct TArray<Unknown>& FrequenciesToGet, struct TArray<Unknown>& OutSoundWaveSpectralData); // Function Engine.AudioComponent.GetCookedFFTData(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x4460BE0>
+	char GetCookedEnvelopeDataForAllPlayingSounds(struct TArray<Unknown>& OutEnvelopeData); // Function Engine.AudioComponent.GetCookedEnvelopeDataForAllPlayingSounds(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x4460B20>
+	char GetCookedEnvelopeData(float& OutEnvelopeData); // Function Engine.AudioComponent.GetCookedEnvelopeData(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x4460A70>
+	void FadeOut(float FadeOutDuration, float FadeVolumeLevel, enum class Unknow FadeCurve); // Function Engine.AudioComponent.FadeOut(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4460960>
+	void FadeIn(float FadeInDuration, float FadeVolumeLevel, float StartTime, enum class Unknow FadeCurve); // Function Engine.AudioComponent.FadeIn(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4460810>
+	char BP_GetAttenuationSettingsToApply(struct Unknown& OutAttenuationSettings); // Function Engine.AudioComponent.BP_GetAttenuationSettingsToApply(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x4460740>
+	void AdjustVolume(float AdjustVolumeDuration, float AdjustVolumeLevel, enum class Unknow FadeCurve); // Function Engine.AudioComponent.AdjustVolume(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4460640>
+	void AdjustAttenuation(struct Unknown& InAttenuationSettings); // Function Engine.AudioComponent.AdjustAttenuation(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x4460570>
 };
 
 // Class Engine.GameModeBase
@@ -6227,34 +6227,34 @@ public:
 	char bStartPlayersAsSpectators : 0; // 0x388 (1)
 	char bPauseable : 0; // 0x388 (1)
 
-	void StartPlay(); // Function Engine.GameModeBase.StartPlay(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B77D0>
-	struct Unknown SpawnDefaultPawnFor(struct Unknown NewPlayer, struct Unknown StartSpot); // Function Engine.GameModeBase.SpawnDefaultPawnFor(Native|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B76E0>
-	struct Unknown SpawnDefaultPawnAtTransform(struct Unknown NewPlayer, struct Unknown& SpawnTransform); // Function Engine.GameModeBase.SpawnDefaultPawnAtTransform(Native|Event|Public|HasOutParms|HasDefaults|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B75C0>
-	char ShouldReset(struct Unknown ActorToReset); // Function Engine.GameModeBase.ShouldReset(Native|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B7520>
-	void ReturnToMainMenuHost(); // Function Engine.GameModeBase.ReturnToMainMenuHost(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B73D0>
-	void RestartPlayerAtTransform(struct Unknown NewPlayer, struct Unknown& SpawnTransform); // Function Engine.GameModeBase.RestartPlayerAtTransform(Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B72B0>
-	void RestartPlayerAtPlayerStart(struct Unknown NewPlayer, struct Unknown StartSpot); // Function Engine.GameModeBase.RestartPlayerAtPlayerStart(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B71E0>
-	void RestartPlayer(struct Unknown NewPlayer); // Function Engine.GameModeBase.RestartPlayer(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B7150>
-	void ResetLevel(); // Function Engine.GameModeBase.ResetLevel(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B7130>
-	char PlayerCanRestart(struct Unknown Player); // Function Engine.GameModeBase.PlayerCanRestart(Native|Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B7030>
-	char MustSpectate(struct Unknown NewPlayerController); // Function Engine.GameModeBase.MustSpectate(Native|Event|Public|BlueprintEvent|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B6F90>
-	void K2_PostLogin(struct Unknown NewPlayer); // Function Engine.GameModeBase.K2_PostLogin(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void K2_OnSwapPlayerControllers(struct Unknown OldPC, struct Unknown NewPC); // Function Engine.GameModeBase.K2_OnSwapPlayerControllers(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void K2_OnRestartPlayer(struct Unknown NewPlayer); // Function Engine.GameModeBase.K2_OnRestartPlayer(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void K2_OnLogout(struct Unknown ExitingController); // Function Engine.GameModeBase.K2_OnLogout(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void K2_OnChangeName(struct Unknown Other, struct FString NewName, char bNameChange); // Function Engine.GameModeBase.K2_OnChangeName(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	struct Unknown K2_FindPlayerStart(struct Unknown Player, struct FString IncomingName); // Function Engine.GameModeBase.K2_FindPlayerStart(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B6EA0>
-	void InitStartSpot(struct Unknown StartSpot, struct Unknown NewPlayer); // Function Engine.GameModeBase.InitStartSpot(Native|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B6DA0>
-	void InitializeHUDForPlayer(struct Unknown NewPlayer); // Function Engine.GameModeBase.InitializeHUDForPlayer(Native|Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44A1D50>
-	char HasMatchStarted(); // Function Engine.GameModeBase.HasMatchStarted(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B6D70>
-	void HandleStartingNewPlayer(struct Unknown NewPlayer); // Function Engine.GameModeBase.HandleStartingNewPlayer(Native|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B6CB0>
-	int32_t GetNumSpectators(); // Function Engine.GameModeBase.GetNumSpectators(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B6C80>
-	int32_t GetNumPlayers(); // Function Engine.GameModeBase.GetNumPlayers(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B6C50>
-	struct Unknown* GetDefaultPawnClassForController(struct Unknown InController); // Function Engine.GameModeBase.GetDefaultPawnClassForController(Native|Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B6B90>
-	struct Unknown FindPlayerStart(struct Unknown Player, struct FString IncomingName); // Function Engine.GameModeBase.FindPlayerStart(Native|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B6A90>
-	struct Unknown ChoosePlayerStart(struct Unknown Player); // Function Engine.GameModeBase.ChoosePlayerStart(Native|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B68D0>
-	void ChangeName(struct Unknown Controller, struct FString NewName, char bNameChange); // Function Engine.GameModeBase.ChangeName(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B67A0>
-	char CanSpectate(struct Unknown Viewer, struct Unknown ViewTarget); // Function Engine.GameModeBase.CanSpectate(Native|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B66D0>
+	void StartPlay(); // Function Engine.GameModeBase.StartPlay(Native|Public|BlueprintCallable) // <Game_BE.exe+0x44B77D0>
+	struct Unknown SpawnDefaultPawnFor(struct Unknown NewPlayer, struct Unknown StartSpot); // Function Engine.GameModeBase.SpawnDefaultPawnFor(Native|Event|Public|BlueprintEvent) // <Game_BE.exe+0x44B76E0>
+	struct Unknown SpawnDefaultPawnAtTransform(struct Unknown NewPlayer, struct Unknown& SpawnTransform); // Function Engine.GameModeBase.SpawnDefaultPawnAtTransform(Native|Event|Public|HasOutParms|HasDefaults|BlueprintEvent) // <Game_BE.exe+0x44B75C0>
+	char ShouldReset(struct Unknown ActorToReset); // Function Engine.GameModeBase.ShouldReset(Native|Event|Public|BlueprintEvent) // <Game_BE.exe+0x44B7520>
+	void ReturnToMainMenuHost(); // Function Engine.GameModeBase.ReturnToMainMenuHost(Native|Public|BlueprintCallable) // <Game_BE.exe+0x44B73D0>
+	void RestartPlayerAtTransform(struct Unknown NewPlayer, struct Unknown& SpawnTransform); // Function Engine.GameModeBase.RestartPlayerAtTransform(Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x44B72B0>
+	void RestartPlayerAtPlayerStart(struct Unknown NewPlayer, struct Unknown StartSpot); // Function Engine.GameModeBase.RestartPlayerAtPlayerStart(Native|Public|BlueprintCallable) // <Game_BE.exe+0x44B71E0>
+	void RestartPlayer(struct Unknown NewPlayer); // Function Engine.GameModeBase.RestartPlayer(Native|Public|BlueprintCallable) // <Game_BE.exe+0x44B7150>
+	void ResetLevel(); // Function Engine.GameModeBase.ResetLevel(Native|Public|BlueprintCallable) // <Game_BE.exe+0x44B7130>
+	char PlayerCanRestart(struct Unknown Player); // Function Engine.GameModeBase.PlayerCanRestart(Native|Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x44B7030>
+	char MustSpectate(struct Unknown NewPlayerController); // Function Engine.GameModeBase.MustSpectate(Native|Event|Public|BlueprintEvent|Const) // <Game_BE.exe+0x44B6F90>
+	void K2_PostLogin(struct Unknown NewPlayer); // Function Engine.GameModeBase.K2_PostLogin(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void K2_OnSwapPlayerControllers(struct Unknown OldPC, struct Unknown NewPC); // Function Engine.GameModeBase.K2_OnSwapPlayerControllers(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void K2_OnRestartPlayer(struct Unknown NewPlayer); // Function Engine.GameModeBase.K2_OnRestartPlayer(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void K2_OnLogout(struct Unknown ExitingController); // Function Engine.GameModeBase.K2_OnLogout(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void K2_OnChangeName(struct Unknown Other, struct FString NewName, char bNameChange); // Function Engine.GameModeBase.K2_OnChangeName(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	struct Unknown K2_FindPlayerStart(struct Unknown Player, struct FString IncomingName); // Function Engine.GameModeBase.K2_FindPlayerStart(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x44B6EA0>
+	void InitStartSpot(struct Unknown StartSpot, struct Unknown NewPlayer); // Function Engine.GameModeBase.InitStartSpot(Native|Event|Public|BlueprintEvent) // <Game_BE.exe+0x44B6DA0>
+	void InitializeHUDForPlayer(struct Unknown NewPlayer); // Function Engine.GameModeBase.InitializeHUDForPlayer(Native|Event|Protected|BlueprintEvent) // <Game_BE.exe+0x44A1D50>
+	char HasMatchStarted(); // Function Engine.GameModeBase.HasMatchStarted(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44B6D70>
+	void HandleStartingNewPlayer(struct Unknown NewPlayer); // Function Engine.GameModeBase.HandleStartingNewPlayer(Native|Event|Public|BlueprintEvent) // <Game_BE.exe+0x44B6CB0>
+	int32_t GetNumSpectators(); // Function Engine.GameModeBase.GetNumSpectators(Native|Public|BlueprintCallable) // <Game_BE.exe+0x44B6C80>
+	int32_t GetNumPlayers(); // Function Engine.GameModeBase.GetNumPlayers(Native|Public|BlueprintCallable) // <Game_BE.exe+0x44B6C50>
+	struct Unknown* GetDefaultPawnClassForController(struct Unknown InController); // Function Engine.GameModeBase.GetDefaultPawnClassForController(Native|Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x44B6B90>
+	struct Unknown FindPlayerStart(struct Unknown Player, struct FString IncomingName); // Function Engine.GameModeBase.FindPlayerStart(Native|Event|Public|BlueprintEvent) // <Game_BE.exe+0x44B6A90>
+	struct Unknown ChoosePlayerStart(struct Unknown Player); // Function Engine.GameModeBase.ChoosePlayerStart(Native|Event|Public|BlueprintEvent) // <Game_BE.exe+0x44B68D0>
+	void ChangeName(struct Unknown Controller, struct FString NewName, char bNameChange); // Function Engine.GameModeBase.ChangeName(Native|Public|BlueprintCallable) // <Game_BE.exe+0x44B67A0>
+	char CanSpectate(struct Unknown Viewer, struct Unknown ViewTarget); // Function Engine.GameModeBase.CanSpectate(Native|Event|Public|BlueprintEvent) // <Game_BE.exe+0x44B66D0>
 };
 
 // Class Engine.GameMode
@@ -6275,18 +6275,18 @@ public:
 	int32_t MaxInactivePlayers; // 0x3DC (4)
 	char bHandleDedicatedServerReplays : 0; // 0x3E0 (1)
 
-	void StartMatch(); // Function Engine.GameMode.StartMatch(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B77B0>
-	void SetBandwidthLimit(float AsyncIOBandwidthLimit); // Function Engine.GameMode.SetBandwidthLimit(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B74A0>
-	void Say(struct FString Msg); // Function Engine.GameMode.Say(Exec|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B73F0>
-	void RestartGame(); // Function Engine.GameMode.RestartGame(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2043AA0>
-	char ReadyToStartMatch(); // Function Engine.GameMode.ReadyToStartMatch(Native|Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B7100>
-	char ReadyToEndMatch(); // Function Engine.GameMode.ReadyToEndMatch(Native|Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B70D0>
-	void K2_OnSetMatchState(struct FName NewState); // Function Engine.GameMode.K2_OnSetMatchState(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	char IsMatchInProgress(); // Function Engine.GameMode.IsMatchInProgress(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B6E70>
-	char HasMatchEnded(); // Function Engine.GameMode.HasMatchEnded(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B6D40>
-	struct FName GetMatchState(); // Function Engine.GameMode.GetMatchState(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B6C30>
-	void EndMatch(); // Function Engine.GameMode.EndMatch(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2045AE0>
-	void AbortMatch(); // Function Engine.GameMode.AbortMatch(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B66B0>
+	void StartMatch(); // Function Engine.GameMode.StartMatch(Native|Public|BlueprintCallable) // <Game_BE.exe+0x44B77B0>
+	void SetBandwidthLimit(float AsyncIOBandwidthLimit); // Function Engine.GameMode.SetBandwidthLimit(Exec|Native|Public) // <Game_BE.exe+0x44B74A0>
+	void Say(struct FString Msg); // Function Engine.GameMode.Say(Exec|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44B73F0>
+	void RestartGame(); // Function Engine.GameMode.RestartGame(Native|Public|BlueprintCallable) // <Game_BE.exe+0x2043AA0>
+	char ReadyToStartMatch(); // Function Engine.GameMode.ReadyToStartMatch(Native|Event|Protected|BlueprintEvent) // <Game_BE.exe+0x44B7100>
+	char ReadyToEndMatch(); // Function Engine.GameMode.ReadyToEndMatch(Native|Event|Protected|BlueprintEvent) // <Game_BE.exe+0x44B70D0>
+	void K2_OnSetMatchState(struct FName NewState); // Function Engine.GameMode.K2_OnSetMatchState(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	char IsMatchInProgress(); // Function Engine.GameMode.IsMatchInProgress(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44B6E70>
+	char HasMatchEnded(); // Function Engine.GameMode.HasMatchEnded(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44B6D40>
+	struct FName GetMatchState(); // Function Engine.GameMode.GetMatchState(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44B6C30>
+	void EndMatch(); // Function Engine.GameMode.EndMatch(Native|Public|BlueprintCallable) // <Game_BE.exe+0x2045AE0>
+	void AbortMatch(); // Function Engine.GameMode.AbortMatch(Native|Public|BlueprintCallable) // <Game_BE.exe+0x44B66B0>
 };
 
 // Class Engine.GameStateBase
@@ -6303,15 +6303,15 @@ public:
 	float ServerWorldTimeSecondsDelta; // 0x330 (4)
 	float ServerWorldTimeSecondsUpdateFrequency; // 0x334 (4)
 
-	void OnRep_SpectatorClass(); // Function Engine.GameStateBase.OnRep_SpectatorClass(Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F3FA60>
-	void OnRep_ReplicatedWorldTimeSeconds(); // Function Engine.GameStateBase.OnRep_ReplicatedWorldTimeSeconds(Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FCBCF0>
-	void OnRep_ReplicatedHasBegunPlay(); // Function Engine.GameStateBase.OnRep_ReplicatedHasBegunPlay(Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F3FA80>
-	void OnRep_GameModeClass(); // Function Engine.GameStateBase.OnRep_GameModeClass(Native|Protected) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4490970>
-	char HasMatchStarted(); // Function Engine.GameStateBase.HasMatchStarted(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C6F40>
-	char HasBegunPlay(); // Function Engine.GameStateBase.HasBegunPlay(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C6F10>
-	float GetServerWorldTimeSeconds(); // Function Engine.GameStateBase.GetServerWorldTimeSeconds(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C6E40>
-	float GetPlayerStartTime(struct Unknown Controller); // Function Engine.GameStateBase.GetPlayerStartTime(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C6950>
-	float GetPlayerRespawnDelay(struct Unknown Controller); // Function Engine.GameStateBase.GetPlayerRespawnDelay(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C68B0>
+	void OnRep_SpectatorClass(); // Function Engine.GameStateBase.OnRep_SpectatorClass(Native|Protected) // <Game_BE.exe+0x1F3FA60>
+	void OnRep_ReplicatedWorldTimeSeconds(); // Function Engine.GameStateBase.OnRep_ReplicatedWorldTimeSeconds(Native|Protected) // <Game_BE.exe+0x1FCBCF0>
+	void OnRep_ReplicatedHasBegunPlay(); // Function Engine.GameStateBase.OnRep_ReplicatedHasBegunPlay(Native|Protected) // <Game_BE.exe+0x1F3FA80>
+	void OnRep_GameModeClass(); // Function Engine.GameStateBase.OnRep_GameModeClass(Native|Protected) // <Game_BE.exe+0x4490970>
+	char HasMatchStarted(); // Function Engine.GameStateBase.HasMatchStarted(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44C6F40>
+	char HasBegunPlay(); // Function Engine.GameStateBase.HasBegunPlay(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44C6F10>
+	float GetServerWorldTimeSeconds(); // Function Engine.GameStateBase.GetServerWorldTimeSeconds(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44C6E40>
+	float GetPlayerStartTime(struct Unknown Controller); // Function Engine.GameStateBase.GetPlayerStartTime(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44C6950>
+	float GetPlayerRespawnDelay(struct Unknown Controller); // Function Engine.GameStateBase.GetPlayerRespawnDelay(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44C68B0>
 };
 
 // Class Engine.GameState
@@ -6323,8 +6323,8 @@ public:
 	struct FName PreviousMatchState; // 0x358 (8)
 	int32_t ElapsedTime; // 0x360 (4)
 
-	void OnRep_MatchState(); // Function Engine.GameState.OnRep_MatchState(Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B7130>
-	void OnRep_ElapsedTime(); // Function Engine.GameState.OnRep_ElapsedTime(Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B73D0>
+	void OnRep_MatchState(); // Function Engine.GameState.OnRep_MatchState(Native|Public) // <Game_BE.exe+0x44B7130>
+	void OnRep_ElapsedTime(); // Function Engine.GameState.OnRep_ElapsedTime(Native|Public) // <Game_BE.exe+0x44B73D0>
 };
 
 // Class Engine.Controller
@@ -6341,34 +6341,34 @@ public:
 	struct Unknown ControlRotation; // 0x394 (12)
 	char bAttachToPawn : 0; // 0x348 (1)
 
-	void UnPossess(); // Function Engine.Controller.UnPossess(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4490CD0>
-	void StopMovement(); // Function Engine.Controller.StopMovement(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F4BC90>
-	void SetInitialLocationAndRotation(struct Unknown& NewLocation, struct Unknown& NewRotation); // Function Engine.Controller.SetInitialLocationAndRotation(Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4490BE0>
-	void SetIgnoreMoveInput(char bNewMoveInput); // Function Engine.Controller.SetIgnoreMoveInput(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4490B50>
-	void SetIgnoreLookInput(char bNewLookInput); // Function Engine.Controller.SetIgnoreLookInput(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4490AC0>
-	void SetControlRotation(struct Unknown& NewRotation); // Function Engine.Controller.SetControlRotation(Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4490A30>
-	void ResetIgnoreMoveInput(); // Function Engine.Controller.ResetIgnoreMoveInput(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x204C7A0>
-	void ResetIgnoreLookInput(); // Function Engine.Controller.ResetIgnoreLookInput(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1E70A40>
-	void ResetIgnoreInputFlags(); // Function Engine.Controller.ResetIgnoreInputFlags(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4490A10>
-	void ReceiveUnPossess(struct Unknown UnpossessedPawn); // Function Engine.Controller.ReceiveUnPossess(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceivePossess(struct Unknown PossessedPawn); // Function Engine.Controller.ReceivePossess(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveInstigatedAnyDamage(float Damage, struct Unknown DamageType, struct Unknown DamagedActor, struct Unknown DamageCauser); // Function Engine.Controller.ReceiveInstigatedAnyDamage(BlueprintAuthorityOnly|Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Possess(struct Unknown InPawn); // Function Engine.Controller.Possess(Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4490990>
-	void OnRep_PlayerState(); // Function Engine.Controller.OnRep_PlayerState(Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4490970>
-	void OnRep_Pawn(); // Function Engine.Controller.OnRep_Pawn(Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11E51D0>
-	char LineOfSightTo(struct Unknown Other, struct Unknown ViewPoint, char bAlternateChecks); // Function Engine.Controller.LineOfSightTo(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4490850>
-	struct Unknown K2_GetPawn(); // Function Engine.Controller.K2_GetPawn(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4490820>
-	char IsPlayerController(); // Function Engine.Controller.IsPlayerController(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44907F0>
-	char IsMoveInputIgnored(); // Function Engine.Controller.IsMoveInputIgnored(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44907C0>
-	char IsLookInputIgnored(); // Function Engine.Controller.IsLookInputIgnored(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4490790>
-	char IsLocalPlayerController(); // Function Engine.Controller.IsLocalPlayerController(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4490740>
-	char IsLocalController(); // Function Engine.Controller.IsLocalController(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4490710>
-	struct Unknown GetViewTarget(); // Function Engine.Controller.GetViewTarget(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44906E0>
-	struct Unknown GetDesiredRotation(); // Function Engine.Controller.GetDesiredRotation(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44906A0>
-	struct Unknown GetControlRotation(); // Function Engine.Controller.GetControlRotation(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4490660>
-	void ClientSetRotation(struct Unknown NewRotation, char bResetCamera); // Function Engine.Controller.ClientSetRotation(Net|NetReliableNative|Event|Public|HasDefaults|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4490580>
-	void ClientSetLocation(struct Unknown NewLocation, struct Unknown NewRotation); // Function Engine.Controller.ClientSetLocation(Net|NetReliableNative|Event|Public|HasDefaults|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44904A0>
-	struct Unknown CastToPlayerController(); // Function Engine.Controller.CastToPlayerController(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4490470>
+	void UnPossess(); // Function Engine.Controller.UnPossess(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4490CD0>
+	void StopMovement(); // Function Engine.Controller.StopMovement(Native|Public|BlueprintCallable) // <Game_BE.exe+0x1F4BC90>
+	void SetInitialLocationAndRotation(struct Unknown& NewLocation, struct Unknown& NewRotation); // Function Engine.Controller.SetInitialLocationAndRotation(Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4490BE0>
+	void SetIgnoreMoveInput(char bNewMoveInput); // Function Engine.Controller.SetIgnoreMoveInput(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4490B50>
+	void SetIgnoreLookInput(char bNewLookInput); // Function Engine.Controller.SetIgnoreLookInput(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4490AC0>
+	void SetControlRotation(struct Unknown& NewRotation); // Function Engine.Controller.SetControlRotation(Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4490A30>
+	void ResetIgnoreMoveInput(); // Function Engine.Controller.ResetIgnoreMoveInput(Native|Public|BlueprintCallable) // <Game_BE.exe+0x204C7A0>
+	void ResetIgnoreLookInput(); // Function Engine.Controller.ResetIgnoreLookInput(Native|Public|BlueprintCallable) // <Game_BE.exe+0x1E70A40>
+	void ResetIgnoreInputFlags(); // Function Engine.Controller.ResetIgnoreInputFlags(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4490A10>
+	void ReceiveUnPossess(struct Unknown UnpossessedPawn); // Function Engine.Controller.ReceiveUnPossess(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceivePossess(struct Unknown PossessedPawn); // Function Engine.Controller.ReceivePossess(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveInstigatedAnyDamage(float Damage, struct Unknown DamageType, struct Unknown DamagedActor, struct Unknown DamageCauser); // Function Engine.Controller.ReceiveInstigatedAnyDamage(BlueprintAuthorityOnly|Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Possess(struct Unknown InPawn); // Function Engine.Controller.Possess(Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4490990>
+	void OnRep_PlayerState(); // Function Engine.Controller.OnRep_PlayerState(Native|Public) // <Game_BE.exe+0x4490970>
+	void OnRep_Pawn(); // Function Engine.Controller.OnRep_Pawn(Native|Public) // <Game_BE.exe+0x11E51D0>
+	char LineOfSightTo(struct Unknown Other, struct Unknown ViewPoint, char bAlternateChecks); // Function Engine.Controller.LineOfSightTo(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4490850>
+	struct Unknown K2_GetPawn(); // Function Engine.Controller.K2_GetPawn(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4490820>
+	char IsPlayerController(); // Function Engine.Controller.IsPlayerController(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44907F0>
+	char IsMoveInputIgnored(); // Function Engine.Controller.IsMoveInputIgnored(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44907C0>
+	char IsLookInputIgnored(); // Function Engine.Controller.IsLookInputIgnored(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4490790>
+	char IsLocalPlayerController(); // Function Engine.Controller.IsLocalPlayerController(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4490740>
+	char IsLocalController(); // Function Engine.Controller.IsLocalController(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4490710>
+	struct Unknown GetViewTarget(); // Function Engine.Controller.GetViewTarget(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44906E0>
+	struct Unknown GetDesiredRotation(); // Function Engine.Controller.GetDesiredRotation(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44906A0>
+	struct Unknown GetControlRotation(); // Function Engine.Controller.GetControlRotation(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4490660>
+	void ClientSetRotation(struct Unknown NewRotation, char bResetCamera); // Function Engine.Controller.ClientSetRotation(Net|NetReliableNative|Event|Public|HasDefaults|NetClient) // <Game_BE.exe+0x4490580>
+	void ClientSetLocation(struct Unknown NewLocation, struct Unknown NewRotation); // Function Engine.Controller.ClientSetLocation(Net|NetReliableNative|Event|Public|HasDefaults|NetClient) // <Game_BE.exe+0x44904A0>
+	struct Unknown CastToPlayerController(); // Function Engine.Controller.CastToPlayerController(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4490470>
 };
 
 // Class Engine.MKPlayerControllerEx
@@ -6432,142 +6432,142 @@ public:
 	char bIsLocalPlayerController : 0; // 0x6E0 (1)
 	struct Unknown SpawnLocation; // 0x418 (12)
 
-	char WasInputKeyJustReleased(struct Unknown Key); // Function Engine.PlayerController.WasInputKeyJustReleased(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45976E0>
-	char WasInputKeyJustPressed(struct Unknown Key); // Function Engine.PlayerController.WasInputKeyJustPressed(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45975F0>
-	void ToggleSpeaking(char bInSpeaking); // Function Engine.PlayerController.ToggleSpeaking(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4597560>
-	void TestServerLevelVisibilityChange(struct FName PackageName, struct FName Filename); // Function Engine.PlayerController.TestServerLevelVisibilityChange(Final|Exec|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F909D0>
-	void SwitchLevel(struct FString URL); // Function Engine.PlayerController.SwitchLevel(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45974B0>
-	void StopHapticEffect(enum class Unknow Hand); // Function Engine.PlayerController.StopHapticEffect(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4597430>
-	void StartFire(char FireModeNum); // Function Engine.PlayerController.StartFire(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45973B0>
-	void SetVirtualJoystickVisibility(char bVisible); // Function Engine.PlayerController.SetVirtualJoystickVisibility(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4597320>
-	void SetViewTargetWithBlend(struct Unknown NewViewTarget, float BlendTime, char BlendFunc, float BlendExp, char bLockOutgoing); // Function Engine.PlayerController.SetViewTargetWithBlend(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45971A0>
-	void SetName(struct FString S); // Function Engine.PlayerController.SetName(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45970F0>
-	void SetMouseLocation(int32_t X, int32_t Y); // Function Engine.PlayerController.SetMouseLocation(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4597030>
-	void SetMouseCursorWidget(char Cursor, struct Unknown CursorWidget); // Function Engine.PlayerController.SetMouseCursorWidget(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4596F70>
-	void SetHapticsByValue(float Frequency, float Amplitude, enum class Unknow Hand); // Function Engine.PlayerController.SetHapticsByValue(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4596E70>
-	void SetDisableHaptics(char bNewDisabled); // Function Engine.PlayerController.SetDisableHaptics(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4596DE0>
-	void SetControllerLightColor(struct Unknown Color); // Function Engine.PlayerController.SetControllerLightColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4596D70>
-	void SetCinematicMode(char bInCinematicMode, char bHidePlayer, char bAffectsHUD, char bAffectsMovement, char bAffectsTurning); // Function Engine.PlayerController.SetCinematicMode(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4596BB0>
-	void SetAudioListenerOverride(struct Unknown AttachToComponent, struct Unknown Location, struct Unknown Rotation); // Function Engine.PlayerController.SetAudioListenerOverride(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4596A90>
-	void SetAudioListenerAttenuationOverride(struct Unknown AttachToComponent, struct Unknown AttenuationLocationOVerride); // Function Engine.PlayerController.SetAudioListenerAttenuationOverride(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45969C0>
-	void ServerViewSelf(struct Unknown TransitionParams); // Function Engine.PlayerController.ServerViewSelf(Net|Native|Event|Public|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45968D0>
-	void ServerViewPrevPlayer(); // Function Engine.PlayerController.ServerViewPrevPlayer(Net|Native|Event|Public|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4596880>
-	void ServerViewNextPlayer(); // Function Engine.PlayerController.ServerViewNextPlayer(Net|Native|Event|Public|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4596830>
-	void ServerVerifyViewTarget(); // Function Engine.PlayerController.ServerVerifyViewTarget(Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45967E0>
-	void ServerUpdateMultipleLevelsVisibility(struct TArray<Unknown> LevelVisibilities); // Function Engine.PlayerController.ServerUpdateMultipleLevelsVisibility(Final|Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4596720>
-	void ServerUpdateLevelVisibility(struct Unknown LevelVisibility); // Function Engine.PlayerController.ServerUpdateLevelVisibility(Final|Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4596660>
-	void ServerUpdateCamera(struct Unknown CamLoc, int32_t CamPitchAndYaw); // Function Engine.PlayerController.ServerUpdateCamera(Net|Native|Event|Public|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4596540>
-	void ServerUnmutePlayer(struct Unknown PlayerId); // Function Engine.PlayerController.ServerUnmutePlayer(Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45963E0>
-	void ServerToggleAILogging(); // Function Engine.PlayerController.ServerToggleAILogging(Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4596390>
-	void ServerShortTimeout(); // Function Engine.PlayerController.ServerShortTimeout(Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4596340>
-	void ServerSetSpectatorWaiting(char bWaiting); // Function Engine.PlayerController.ServerSetSpectatorWaiting(Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4596280>
-	void ServerSetSpectatorLocation(struct Unknown NewLoc, struct Unknown NewRot); // Function Engine.PlayerController.ServerSetSpectatorLocation(Net|Native|Event|Public|NetServer|HasDefaults|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4596150>
-	void ServerRestartPlayer(); // Function Engine.PlayerController.ServerRestartPlayer(Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4596100>
-	void ServerPause(); // Function Engine.PlayerController.ServerPause(Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45960B0>
-	void ServerNotifyLoadedWorld(struct FName WorldPackageName); // Function Engine.PlayerController.ServerNotifyLoadedWorld(Final|Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4596000>
-	void ServerMutePlayer(struct Unknown PlayerId); // Function Engine.PlayerController.ServerMutePlayer(Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4595EA0>
-	void ServerExecRPC(struct FString Msg); // Function Engine.PlayerController.ServerExecRPC(Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4595DD0>
-	void ServerExec(struct FString Msg); // Function Engine.PlayerController.ServerExec(Final|Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EFD2F0>
-	void ServerCheckClientPossessionReliable(); // Function Engine.PlayerController.ServerCheckClientPossessionReliable(Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4595D80>
-	void ServerCheckClientPossession(); // Function Engine.PlayerController.ServerCheckClientPossession(Net|Native|Event|Public|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4595D30>
-	void ServerChangeName(struct FString S); // Function Engine.PlayerController.ServerChangeName(Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4595C60>
-	void ServerCamera(struct FName NewMode); // Function Engine.PlayerController.ServerCamera(Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4595BA0>
-	void ServerAcknowledgePossession(struct Unknown P); // Function Engine.PlayerController.ServerAcknowledgePossession(Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4595AE0>
-	void SendToConsole(struct FString Command); // Function Engine.PlayerController.SendToConsole(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4595A30>
-	void RestartLevel(); // Function Engine.PlayerController.RestartLevel(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4595A10>
-	void ResetMouseCursorWidget(); // Function Engine.PlayerController.ResetMouseCursorWidget(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45959F0>
-	void ResetControllerLightColor(); // Function Engine.PlayerController.ResetControllerLightColor(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45959D0>
-	char ProjectWorldLocationToScreen(struct Unknown WorldLocation, struct Unknown& ScreenLocation, char bPlayerViewportRelative); // Function Engine.PlayerController.ProjectWorldLocationToScreen(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45958A0>
-	void PlayHapticEffect(struct Unknown HapticEffect, enum class Unknow Hand, float Scale, char bLoop); // Function Engine.PlayerController.PlayHapticEffect(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4595750>
-	void PlayDynamicForceFeedback(float Intensity, float Duration, char bAffectsLeftLarge, char bAffectsLeftSmall, char bAffectsRightLarge, char bAffectsRightSmall, char Action, struct Unknown LatentInfo); // Function Engine.PlayerController.PlayDynamicForceFeedback(Final|Native|Private|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45954D0>
-	void Pause(); // Function Engine.PlayerController.Pause(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45954B0>
-	void OnServerStartedVisualLogger(char bIsLogging); // Function Engine.PlayerController.OnServerStartedVisualLogger(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4595420>
-	void LocalTravel(struct FString URL); // Function Engine.PlayerController.LocalTravel(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4595370>
-	void K2_ClientPlayForceFeedback(struct Unknown ForceFeedbackEffect, struct FName Tag, char bLooping, char bIgnoreTimeDilation, char bPlayWhilePaused); // Function Engine.PlayerController.K2_ClientPlayForceFeedback(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45951C0>
-	char IsInputKeyDown(struct Unknown Key); // Function Engine.PlayerController.IsInputKeyDown(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45950D0>
-	void GetViewportSize(int32_t& SizeX, int32_t& SizeY); // Function Engine.PlayerController.GetViewportSize(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4594FF0>
-	struct Unknown GetSpectatorPawn(); // Function Engine.PlayerController.GetSpectatorPawn(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4594FD0>
-	char GetMousePosition(float& LocationX, float& LocationY); // Function Engine.PlayerController.GetMousePosition(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4594EE0>
-	struct Unknown GetInputVectorKeyState(struct Unknown Key); // Function Engine.PlayerController.GetInputVectorKeyState(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4594DE0>
-	void GetInputTouchState(char FingerIndex, float& LocationX, float& LocationY, char& bIsCurrentlyPressed); // Function Engine.PlayerController.GetInputTouchState(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4594C60>
-	void GetInputMouseDelta(float& DeltaX, float& DeltaY); // Function Engine.PlayerController.GetInputMouseDelta(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4594B80>
-	void GetInputMotionState(struct Unknown& Tilt, struct Unknown& RotationRate, struct Unknown& Gravity, struct Unknown& Acceleration); // Function Engine.PlayerController.GetInputMotionState(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45949F0>
-	float GetInputKeyTimeDown(struct Unknown Key); // Function Engine.PlayerController.GetInputKeyTimeDown(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4594900>
-	void GetInputAnalogStickState(char WhichStick, float& StickX, float& StickY); // Function Engine.PlayerController.GetInputAnalogStickState(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45947E0>
-	float GetInputAnalogKeyState(struct Unknown Key); // Function Engine.PlayerController.GetInputAnalogKeyState(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45946F0>
-	struct Unknown GetHUD(); // Function Engine.PlayerController.GetHUD(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4593D20>
-	char GetHitResultUnderFingerForObjects(char FingerIndex, struct TArray<Unknown>& ObjectTypes, char bTraceComplex, struct Unknown& HitResult); // Function Engine.PlayerController.GetHitResultUnderFingerForObjects(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4594520>
-	char GetHitResultUnderFingerByChannel(char FingerIndex, char TraceChannel, char bTraceComplex, struct Unknown& HitResult); // Function Engine.PlayerController.GetHitResultUnderFingerByChannel(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4594380>
-	char GetHitResultUnderFinger(char FingerIndex, char TraceChannel, char bTraceComplex, struct Unknown& HitResult); // Function Engine.PlayerController.GetHitResultUnderFinger(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45941E0>
-	char GetHitResultUnderCursorForObjects(struct TArray<Unknown>& ObjectTypes, char bTraceComplex, struct Unknown& HitResult); // Function Engine.PlayerController.GetHitResultUnderCursorForObjects(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4594050>
-	char GetHitResultUnderCursorByChannel(char TraceChannel, char bTraceComplex, struct Unknown& HitResult); // Function Engine.PlayerController.GetHitResultUnderCursorByChannel(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4593ED0>
-	char GetHitResultUnderCursor(char TraceChannel, char bTraceComplex, struct Unknown& HitResult); // Function Engine.PlayerController.GetHitResultUnderCursor(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4593D50>
-	struct Unknown GetFocalLocation(); // Function Engine.PlayerController.GetFocalLocation(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4593CE0>
-	void FOV(float NewFOV); // Function Engine.PlayerController.FOV(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4593C60>
-	void EnableCheats(); // Function Engine.PlayerController.EnableCheats(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4593C40>
-	char DeprojectScreenPositionToWorld(float ScreenX, float ScreenY, struct Unknown& WorldLocation, struct Unknown& WorldDirection); // Function Engine.PlayerController.DeprojectScreenPositionToWorld(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4593AC0>
-	char DeprojectMousePositionToWorld(struct Unknown& WorldLocation, struct Unknown& WorldDirection); // Function Engine.PlayerController.DeprojectMousePositionToWorld(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45939C0>
-	void ConsoleKey(struct Unknown Key); // Function Engine.PlayerController.ConsoleKey(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45938D0>
-	void ClientWasKicked(struct FText KickReason); // Function Engine.PlayerController.ClientWasKicked(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4593810>
-	void ClientVoiceHandshakeComplete(); // Function Engine.PlayerController.ClientVoiceHandshakeComplete(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45937F0>
-	void ClientUpdateMultipleLevelsStreamingStatus(struct TArray<Unknown> LevelStatuses); // Function Engine.PlayerController.ClientUpdateMultipleLevelsStreamingStatus(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4593750>
-	void ClientUpdateLevelStreamingStatus(struct FName PackageName, char bNewShouldBeLoaded, char bNewShouldBeVisible, char bNewShouldBlockOnLoad, int32_t LODIndex); // Function Engine.PlayerController.ClientUpdateLevelStreamingStatus(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45935A0>
-	void ClientUnmutePlayer(struct Unknown PlayerId); // Function Engine.PlayerController.ClientUnmutePlayer(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4593480>
-	void ClientTravelInternal(struct FString URL, char TravelType, char bSeamless, struct Unknown MapPackageGuid); // Function Engine.PlayerController.ClientTravelInternal(Net|NetReliableNative|Event|Public|HasDefaults|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4593300>
-	void ClientTravel(struct FString URL, char TravelType, char bSeamless, struct Unknown MapPackageGuid); // Function Engine.PlayerController.ClientTravel(Final|Native|Public|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4593190>
-	void ClientTeamMessage(struct Unknown SenderPlayerState, struct FString S, struct FName Type, float MsgLifeTime); // Function Engine.PlayerController.ClientTeamMessage(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4593030>
-	void ClientStopForceFeedback(struct Unknown ForceFeedbackEffect, struct FName Tag); // Function Engine.PlayerController.ClientStopForceFeedback(Net|NetReliableNative|Event|Public|NetClient|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4592F60>
-	void ClientStopCameraShakesFromSource(struct Unknown SourceComponent, char bImmediately); // Function Engine.PlayerController.ClientStopCameraShakesFromSource(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4592E90>
-	void ClientStopCameraShake(struct Unknown* Shake, char bImmediately); // Function Engine.PlayerController.ClientStopCameraShake(Net|NetReliableNative|Event|Public|NetClient|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4592DC0>
-	void ClientStopCameraAnim(struct Unknown AnimToStop); // Function Engine.PlayerController.ClientStopCameraAnim(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4592D30>
-	void ClientStartOnlineSession(); // Function Engine.PlayerController.ClientStartOnlineSession(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4592D10>
-	void ClientSpawnCameraLensEffect(struct Unknown* LensEffectEmitterClass); // Function Engine.PlayerController.ClientSpawnCameraLensEffect(Net|Native|Event|Public|NetClient|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4592C80>
-	void ClientSetViewTarget(struct Unknown A, struct Unknown TransitionParams); // Function Engine.PlayerController.ClientSetViewTarget(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4592B90>
-	void ClientSetSpectatorWaiting(char bWaiting); // Function Engine.PlayerController.ClientSetSpectatorWaiting(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4592B00>
-	void ClientSetHUD(struct Unknown* NewHUDClass); // Function Engine.PlayerController.ClientSetHUD(Net|NetReliableNative|Event|Public|NetClient|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4592A70>
-	void ClientSetForceMipLevelsToBeResident(struct Unknown Material, float ForceDuration, int32_t CinematicTextureGroups); // Function Engine.PlayerController.ClientSetForceMipLevelsToBeResident(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4592970>
-	void ClientSetCinematicMode(char bInCinematicMode, char bAffectsMovement, char bAffectsTurning, char bAffectsHUD); // Function Engine.PlayerController.ClientSetCinematicMode(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4592800>
-	void ClientSetCameraMode(struct FName NewCamMode); // Function Engine.PlayerController.ClientSetCameraMode(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4592770>
-	void ClientSetCameraFade(char bEnableFading, struct Unknown FadeColor, struct Unknown FadeAlpha, float FadeTime, char bFadeAudio); // Function Engine.PlayerController.ClientSetCameraFade(Net|NetReliableNative|Event|Public|HasDefaults|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45925E0>
-	void ClientSetBlockOnAsyncLoading(); // Function Engine.PlayerController.ClientSetBlockOnAsyncLoading(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45925C0>
-	void ClientReturnToMainMenuWithTextReason(struct FText ReturnReason); // Function Engine.PlayerController.ClientReturnToMainMenuWithTextReason(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4592500>
-	void ClientReturnToMainMenu(struct FString ReturnReason); // Function Engine.PlayerController.ClientReturnToMainMenu(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4592450>
-	void ClientRetryClientRestart(struct Unknown NewPawn); // Function Engine.PlayerController.ClientRetryClientRestart(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45923C0>
-	void ClientRestart(struct Unknown NewPawn); // Function Engine.PlayerController.ClientRestart(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4592330>
-	void ClientReset(); // Function Engine.PlayerController.ClientReset(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4592310>
-	void ClientRepObjRef(struct Unknown Object); // Function Engine.PlayerController.ClientRepObjRef(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4592280>
-	void ClientReceiveLocalizedMessage(struct Unknown* Message, int32_t Switch, struct Unknown RelatedPlayerState_2, struct Unknown RelatedPlayerState_3, struct Unknown OptionalObject); // Function Engine.PlayerController.ClientReceiveLocalizedMessage(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4592100>
-	void ClientPrestreamTextures(struct Unknown ForcedActor, float ForceDuration, char bEnableStreaming, int32_t CinematicTextureGroups); // Function Engine.PlayerController.ClientPrestreamTextures(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4591FB0>
-	void ClientPrepareMapChange(struct FName LevelName, char bFirst, char bLast); // Function Engine.PlayerController.ClientPrepareMapChange(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4591EA0>
-	void ClientPlaySoundAtLocation(struct Unknown Sound, struct Unknown Location, float VolumeMultiplier, float PitchMultiplier); // Function Engine.PlayerController.ClientPlaySoundAtLocation(Net|Native|Event|Public|HasDefaults|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4591D50>
-	void ClientPlaySound(struct Unknown Sound, float VolumeMultiplier, float PitchMultiplier); // Function Engine.PlayerController.ClientPlaySound(Net|Native|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4591C50>
-	void ClientPlayForceFeedback_Internal(struct Unknown ForceFeedbackEffect, struct Unknown Params); // Function Engine.PlayerController.ClientPlayForceFeedback_Internal(Final|Net|Native|Event|Private|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4591B60>
-	void ClientPlayCameraShakeFromSource(struct Unknown* Shake, struct Unknown SourceComponent); // Function Engine.PlayerController.ClientPlayCameraShakeFromSource(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4591AA0>
-	void ClientPlayCameraShake(struct Unknown* Shake, float Scale, char PlaySpace, struct Unknown UserPlaySpaceRot); // Function Engine.PlayerController.ClientPlayCameraShake(Net|Native|Event|Public|HasDefaults|NetClient|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4591940>
-	void ClientPlayCameraAnim(struct Unknown AnimToPlay, float Scale, float Rate, float BlendInTime, float BlendOutTime, char bLoop, char bRandomStartTime, char Space, struct Unknown CustomPlaySpace); // Function Engine.PlayerController.ClientPlayCameraAnim(Net|Native|Event|Public|HasDefaults|NetClient|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45916A0>
-	void ClientMutePlayer(struct Unknown PlayerId); // Function Engine.PlayerController.ClientMutePlayer(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4591580>
-	void ClientMessage(struct FString S, struct FName Type, float MsgLifeTime); // Function Engine.PlayerController.ClientMessage(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4591450>
-	void ClientIgnoreMoveInput(char bIgnore); // Function Engine.PlayerController.ClientIgnoreMoveInput(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45913C0>
-	void ClientIgnoreLookInput(char bIgnore); // Function Engine.PlayerController.ClientIgnoreLookInput(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4591330>
-	void ClientGotoState(struct FName NewState); // Function Engine.PlayerController.ClientGotoState(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45912A0>
-	void ClientGameEnded(struct Unknown EndGameFocus, char bIsWinner); // Function Engine.PlayerController.ClientGameEnded(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45911D0>
-	void ClientForceGarbageCollection(); // Function Engine.PlayerController.ClientForceGarbageCollection(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45911B0>
-	void ClientFlushLevelStreaming(); // Function Engine.PlayerController.ClientFlushLevelStreaming(Final|Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4591190>
-	void ClientEndOnlineSession(); // Function Engine.PlayerController.ClientEndOnlineSession(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2045820>
-	void ClientEnableNetworkVoice(char bEnable); // Function Engine.PlayerController.ClientEnableNetworkVoice(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4591100>
-	void ClientCommitMapChange(); // Function Engine.PlayerController.ClientCommitMapChange(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45910E0>
-	void ClientClearCameraLensEffects(); // Function Engine.PlayerController.ClientClearCameraLensEffects(Net|NetReliableNative|Event|Public|NetClient|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45910C0>
-	void ClientCapBandwidth(int32_t Cap); // Function Engine.PlayerController.ClientCapBandwidth(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4591030>
-	void ClientCancelPendingMapChange(); // Function Engine.PlayerController.ClientCancelPendingMapChange(Net|NetReliableNative|Event|Public|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4591010>
-	void ClientAddTextureStreamingLoc(struct Unknown InLoc, float Duration, char bOverrideLocation); // Function Engine.PlayerController.ClientAddTextureStreamingLoc(Final|Net|NetReliableNative|Event|Public|HasDefaults|NetClient) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4590EF0>
-	void ClearAudioListenerOverride(); // Function Engine.PlayerController.ClearAudioListenerOverride(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4590ED0>
-	void ClearAudioListenerAttenuationOverride(); // Function Engine.PlayerController.ClearAudioListenerAttenuationOverride(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4590EB0>
-	char CanRestartPlayer(); // Function Engine.PlayerController.CanRestartPlayer(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4590E80>
-	void Camera(struct FName NewMode); // Function Engine.PlayerController.Camera(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4590DF0>
-	void AddYawInput(float Val); // Function Engine.PlayerController.AddYawInput(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EE33C0>
-	void AddRollInput(float Val); // Function Engine.PlayerController.AddRollInput(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4590D70>
-	void AddPitchInput(float Val); // Function Engine.PlayerController.AddPitchInput(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4590CF0>
-	void ActivateTouchInterface(struct Unknown NewTouchInterface); // Function Engine.PlayerController.ActivateTouchInterface(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4590C60>
+	char WasInputKeyJustReleased(struct Unknown Key); // Function Engine.PlayerController.WasInputKeyJustReleased(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45976E0>
+	char WasInputKeyJustPressed(struct Unknown Key); // Function Engine.PlayerController.WasInputKeyJustPressed(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45975F0>
+	void ToggleSpeaking(char bInSpeaking); // Function Engine.PlayerController.ToggleSpeaking(Exec|Native|Public) // <Game_BE.exe+0x4597560>
+	void TestServerLevelVisibilityChange(struct FName PackageName, struct FName Filename); // Function Engine.PlayerController.TestServerLevelVisibilityChange(Final|Exec|Native|Private) // <Game_BE.exe+0x1F909D0>
+	void SwitchLevel(struct FString URL); // Function Engine.PlayerController.SwitchLevel(Exec|Native|Public) // <Game_BE.exe+0x45974B0>
+	void StopHapticEffect(enum class Unknow Hand); // Function Engine.PlayerController.StopHapticEffect(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4597430>
+	void StartFire(char FireModeNum); // Function Engine.PlayerController.StartFire(Exec|Native|Public) // <Game_BE.exe+0x45973B0>
+	void SetVirtualJoystickVisibility(char bVisible); // Function Engine.PlayerController.SetVirtualJoystickVisibility(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4597320>
+	void SetViewTargetWithBlend(struct Unknown NewViewTarget, float BlendTime, char BlendFunc, float BlendExp, char bLockOutgoing); // Function Engine.PlayerController.SetViewTargetWithBlend(Native|Public|BlueprintCallable) // <Game_BE.exe+0x45971A0>
+	void SetName(struct FString S); // Function Engine.PlayerController.SetName(Exec|Native|Public) // <Game_BE.exe+0x45970F0>
+	void SetMouseLocation(int32_t X, int32_t Y); // Function Engine.PlayerController.SetMouseLocation(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4597030>
+	void SetMouseCursorWidget(char Cursor, struct Unknown CursorWidget); // Function Engine.PlayerController.SetMouseCursorWidget(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4596F70>
+	void SetHapticsByValue(float Frequency, float Amplitude, enum class Unknow Hand); // Function Engine.PlayerController.SetHapticsByValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4596E70>
+	void SetDisableHaptics(char bNewDisabled); // Function Engine.PlayerController.SetDisableHaptics(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4596DE0>
+	void SetControllerLightColor(struct Unknown Color); // Function Engine.PlayerController.SetControllerLightColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4596D70>
+	void SetCinematicMode(char bInCinematicMode, char bHidePlayer, char bAffectsHUD, char bAffectsMovement, char bAffectsTurning); // Function Engine.PlayerController.SetCinematicMode(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4596BB0>
+	void SetAudioListenerOverride(struct Unknown AttachToComponent, struct Unknown Location, struct Unknown Rotation); // Function Engine.PlayerController.SetAudioListenerOverride(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4596A90>
+	void SetAudioListenerAttenuationOverride(struct Unknown AttachToComponent, struct Unknown AttenuationLocationOVerride); // Function Engine.PlayerController.SetAudioListenerAttenuationOverride(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45969C0>
+	void ServerViewSelf(struct Unknown TransitionParams); // Function Engine.PlayerController.ServerViewSelf(Net|Native|Event|Public|NetServer|NetValidate) // <Game_BE.exe+0x45968D0>
+	void ServerViewPrevPlayer(); // Function Engine.PlayerController.ServerViewPrevPlayer(Net|Native|Event|Public|NetServer|NetValidate) // <Game_BE.exe+0x4596880>
+	void ServerViewNextPlayer(); // Function Engine.PlayerController.ServerViewNextPlayer(Net|Native|Event|Public|NetServer|NetValidate) // <Game_BE.exe+0x4596830>
+	void ServerVerifyViewTarget(); // Function Engine.PlayerController.ServerVerifyViewTarget(Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <Game_BE.exe+0x45967E0>
+	void ServerUpdateMultipleLevelsVisibility(struct TArray<Unknown> LevelVisibilities); // Function Engine.PlayerController.ServerUpdateMultipleLevelsVisibility(Final|Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <Game_BE.exe+0x4596720>
+	void ServerUpdateLevelVisibility(struct Unknown LevelVisibility); // Function Engine.PlayerController.ServerUpdateLevelVisibility(Final|Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <Game_BE.exe+0x4596660>
+	void ServerUpdateCamera(struct Unknown CamLoc, int32_t CamPitchAndYaw); // Function Engine.PlayerController.ServerUpdateCamera(Net|Native|Event|Public|NetServer|NetValidate) // <Game_BE.exe+0x4596540>
+	void ServerUnmutePlayer(struct Unknown PlayerId); // Function Engine.PlayerController.ServerUnmutePlayer(Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <Game_BE.exe+0x45963E0>
+	void ServerToggleAILogging(); // Function Engine.PlayerController.ServerToggleAILogging(Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <Game_BE.exe+0x4596390>
+	void ServerShortTimeout(); // Function Engine.PlayerController.ServerShortTimeout(Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <Game_BE.exe+0x4596340>
+	void ServerSetSpectatorWaiting(char bWaiting); // Function Engine.PlayerController.ServerSetSpectatorWaiting(Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <Game_BE.exe+0x4596280>
+	void ServerSetSpectatorLocation(struct Unknown NewLoc, struct Unknown NewRot); // Function Engine.PlayerController.ServerSetSpectatorLocation(Net|Native|Event|Public|NetServer|HasDefaults|NetValidate) // <Game_BE.exe+0x4596150>
+	void ServerRestartPlayer(); // Function Engine.PlayerController.ServerRestartPlayer(Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <Game_BE.exe+0x4596100>
+	void ServerPause(); // Function Engine.PlayerController.ServerPause(Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <Game_BE.exe+0x45960B0>
+	void ServerNotifyLoadedWorld(struct FName WorldPackageName); // Function Engine.PlayerController.ServerNotifyLoadedWorld(Final|Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <Game_BE.exe+0x4596000>
+	void ServerMutePlayer(struct Unknown PlayerId); // Function Engine.PlayerController.ServerMutePlayer(Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <Game_BE.exe+0x4595EA0>
+	void ServerExecRPC(struct FString Msg); // Function Engine.PlayerController.ServerExecRPC(Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <Game_BE.exe+0x4595DD0>
+	void ServerExec(struct FString Msg); // Function Engine.PlayerController.ServerExec(Final|Exec|Native|Public) // <Game_BE.exe+0x1EFD2F0>
+	void ServerCheckClientPossessionReliable(); // Function Engine.PlayerController.ServerCheckClientPossessionReliable(Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <Game_BE.exe+0x4595D80>
+	void ServerCheckClientPossession(); // Function Engine.PlayerController.ServerCheckClientPossession(Net|Native|Event|Public|NetServer|NetValidate) // <Game_BE.exe+0x4595D30>
+	void ServerChangeName(struct FString S); // Function Engine.PlayerController.ServerChangeName(Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <Game_BE.exe+0x4595C60>
+	void ServerCamera(struct FName NewMode); // Function Engine.PlayerController.ServerCamera(Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <Game_BE.exe+0x4595BA0>
+	void ServerAcknowledgePossession(struct Unknown P); // Function Engine.PlayerController.ServerAcknowledgePossession(Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <Game_BE.exe+0x4595AE0>
+	void SendToConsole(struct FString Command); // Function Engine.PlayerController.SendToConsole(Exec|Native|Public) // <Game_BE.exe+0x4595A30>
+	void RestartLevel(); // Function Engine.PlayerController.RestartLevel(Exec|Native|Public) // <Game_BE.exe+0x4595A10>
+	void ResetMouseCursorWidget(); // Function Engine.PlayerController.ResetMouseCursorWidget(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45959F0>
+	void ResetControllerLightColor(); // Function Engine.PlayerController.ResetControllerLightColor(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45959D0>
+	char ProjectWorldLocationToScreen(struct Unknown WorldLocation, struct Unknown& ScreenLocation, char bPlayerViewportRelative); // Function Engine.PlayerController.ProjectWorldLocationToScreen(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45958A0>
+	void PlayHapticEffect(struct Unknown HapticEffect, enum class Unknow Hand, float Scale, char bLoop); // Function Engine.PlayerController.PlayHapticEffect(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4595750>
+	void PlayDynamicForceFeedback(float Intensity, float Duration, char bAffectsLeftLarge, char bAffectsLeftSmall, char bAffectsRightLarge, char bAffectsRightSmall, char Action, struct Unknown LatentInfo); // Function Engine.PlayerController.PlayDynamicForceFeedback(Final|Native|Private|BlueprintCallable) // <Game_BE.exe+0x45954D0>
+	void Pause(); // Function Engine.PlayerController.Pause(Exec|Native|Public) // <Game_BE.exe+0x45954B0>
+	void OnServerStartedVisualLogger(char bIsLogging); // Function Engine.PlayerController.OnServerStartedVisualLogger(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x4595420>
+	void LocalTravel(struct FString URL); // Function Engine.PlayerController.LocalTravel(Exec|Native|Public) // <Game_BE.exe+0x4595370>
+	void K2_ClientPlayForceFeedback(struct Unknown ForceFeedbackEffect, struct FName Tag, char bLooping, char bIgnoreTimeDilation, char bPlayWhilePaused); // Function Engine.PlayerController.K2_ClientPlayForceFeedback(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45951C0>
+	char IsInputKeyDown(struct Unknown Key); // Function Engine.PlayerController.IsInputKeyDown(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45950D0>
+	void GetViewportSize(int32_t& SizeX, int32_t& SizeY); // Function Engine.PlayerController.GetViewportSize(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4594FF0>
+	struct Unknown GetSpectatorPawn(); // Function Engine.PlayerController.GetSpectatorPawn(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4594FD0>
+	char GetMousePosition(float& LocationX, float& LocationY); // Function Engine.PlayerController.GetMousePosition(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4594EE0>
+	struct Unknown GetInputVectorKeyState(struct Unknown Key); // Function Engine.PlayerController.GetInputVectorKeyState(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4594DE0>
+	void GetInputTouchState(char FingerIndex, float& LocationX, float& LocationY, char& bIsCurrentlyPressed); // Function Engine.PlayerController.GetInputTouchState(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4594C60>
+	void GetInputMouseDelta(float& DeltaX, float& DeltaY); // Function Engine.PlayerController.GetInputMouseDelta(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4594B80>
+	void GetInputMotionState(struct Unknown& Tilt, struct Unknown& RotationRate, struct Unknown& Gravity, struct Unknown& Acceleration); // Function Engine.PlayerController.GetInputMotionState(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45949F0>
+	float GetInputKeyTimeDown(struct Unknown Key); // Function Engine.PlayerController.GetInputKeyTimeDown(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4594900>
+	void GetInputAnalogStickState(char WhichStick, float& StickX, float& StickY); // Function Engine.PlayerController.GetInputAnalogStickState(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45947E0>
+	float GetInputAnalogKeyState(struct Unknown Key); // Function Engine.PlayerController.GetInputAnalogKeyState(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45946F0>
+	struct Unknown GetHUD(); // Function Engine.PlayerController.GetHUD(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4593D20>
+	char GetHitResultUnderFingerForObjects(char FingerIndex, struct TArray<Unknown>& ObjectTypes, char bTraceComplex, struct Unknown& HitResult); // Function Engine.PlayerController.GetHitResultUnderFingerForObjects(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4594520>
+	char GetHitResultUnderFingerByChannel(char FingerIndex, char TraceChannel, char bTraceComplex, struct Unknown& HitResult); // Function Engine.PlayerController.GetHitResultUnderFingerByChannel(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4594380>
+	char GetHitResultUnderFinger(char FingerIndex, char TraceChannel, char bTraceComplex, struct Unknown& HitResult); // Function Engine.PlayerController.GetHitResultUnderFinger(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45941E0>
+	char GetHitResultUnderCursorForObjects(struct TArray<Unknown>& ObjectTypes, char bTraceComplex, struct Unknown& HitResult); // Function Engine.PlayerController.GetHitResultUnderCursorForObjects(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4594050>
+	char GetHitResultUnderCursorByChannel(char TraceChannel, char bTraceComplex, struct Unknown& HitResult); // Function Engine.PlayerController.GetHitResultUnderCursorByChannel(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4593ED0>
+	char GetHitResultUnderCursor(char TraceChannel, char bTraceComplex, struct Unknown& HitResult); // Function Engine.PlayerController.GetHitResultUnderCursor(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4593D50>
+	struct Unknown GetFocalLocation(); // Function Engine.PlayerController.GetFocalLocation(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4593CE0>
+	void FOV(float NewFOV); // Function Engine.PlayerController.FOV(Exec|Native|Public) // <Game_BE.exe+0x4593C60>
+	void EnableCheats(); // Function Engine.PlayerController.EnableCheats(Exec|Native|Public) // <Game_BE.exe+0x4593C40>
+	char DeprojectScreenPositionToWorld(float ScreenX, float ScreenY, struct Unknown& WorldLocation, struct Unknown& WorldDirection); // Function Engine.PlayerController.DeprojectScreenPositionToWorld(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4593AC0>
+	char DeprojectMousePositionToWorld(struct Unknown& WorldLocation, struct Unknown& WorldDirection); // Function Engine.PlayerController.DeprojectMousePositionToWorld(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45939C0>
+	void ConsoleKey(struct Unknown Key); // Function Engine.PlayerController.ConsoleKey(Exec|Native|Public) // <Game_BE.exe+0x45938D0>
+	void ClientWasKicked(struct FText KickReason); // Function Engine.PlayerController.ClientWasKicked(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x4593810>
+	void ClientVoiceHandshakeComplete(); // Function Engine.PlayerController.ClientVoiceHandshakeComplete(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x45937F0>
+	void ClientUpdateMultipleLevelsStreamingStatus(struct TArray<Unknown> LevelStatuses); // Function Engine.PlayerController.ClientUpdateMultipleLevelsStreamingStatus(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x4593750>
+	void ClientUpdateLevelStreamingStatus(struct FName PackageName, char bNewShouldBeLoaded, char bNewShouldBeVisible, char bNewShouldBlockOnLoad, int32_t LODIndex); // Function Engine.PlayerController.ClientUpdateLevelStreamingStatus(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x45935A0>
+	void ClientUnmutePlayer(struct Unknown PlayerId); // Function Engine.PlayerController.ClientUnmutePlayer(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x4593480>
+	void ClientTravelInternal(struct FString URL, char TravelType, char bSeamless, struct Unknown MapPackageGuid); // Function Engine.PlayerController.ClientTravelInternal(Net|NetReliableNative|Event|Public|HasDefaults|NetClient) // <Game_BE.exe+0x4593300>
+	void ClientTravel(struct FString URL, char TravelType, char bSeamless, struct Unknown MapPackageGuid); // Function Engine.PlayerController.ClientTravel(Final|Native|Public|HasDefaults) // <Game_BE.exe+0x4593190>
+	void ClientTeamMessage(struct Unknown SenderPlayerState, struct FString S, struct FName Type, float MsgLifeTime); // Function Engine.PlayerController.ClientTeamMessage(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x4593030>
+	void ClientStopForceFeedback(struct Unknown ForceFeedbackEffect, struct FName Tag); // Function Engine.PlayerController.ClientStopForceFeedback(Net|NetReliableNative|Event|Public|NetClient|BlueprintCallable) // <Game_BE.exe+0x4592F60>
+	void ClientStopCameraShakesFromSource(struct Unknown SourceComponent, char bImmediately); // Function Engine.PlayerController.ClientStopCameraShakesFromSource(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4592E90>
+	void ClientStopCameraShake(struct Unknown* Shake, char bImmediately); // Function Engine.PlayerController.ClientStopCameraShake(Net|NetReliableNative|Event|Public|NetClient|BlueprintCallable) // <Game_BE.exe+0x4592DC0>
+	void ClientStopCameraAnim(struct Unknown AnimToStop); // Function Engine.PlayerController.ClientStopCameraAnim(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x4592D30>
+	void ClientStartOnlineSession(); // Function Engine.PlayerController.ClientStartOnlineSession(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x4592D10>
+	void ClientSpawnCameraLensEffect(struct Unknown* LensEffectEmitterClass); // Function Engine.PlayerController.ClientSpawnCameraLensEffect(Net|Native|Event|Public|NetClient|BlueprintCallable) // <Game_BE.exe+0x4592C80>
+	void ClientSetViewTarget(struct Unknown A, struct Unknown TransitionParams); // Function Engine.PlayerController.ClientSetViewTarget(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x4592B90>
+	void ClientSetSpectatorWaiting(char bWaiting); // Function Engine.PlayerController.ClientSetSpectatorWaiting(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x4592B00>
+	void ClientSetHUD(struct Unknown* NewHUDClass); // Function Engine.PlayerController.ClientSetHUD(Net|NetReliableNative|Event|Public|NetClient|BlueprintCallable) // <Game_BE.exe+0x4592A70>
+	void ClientSetForceMipLevelsToBeResident(struct Unknown Material, float ForceDuration, int32_t CinematicTextureGroups); // Function Engine.PlayerController.ClientSetForceMipLevelsToBeResident(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x4592970>
+	void ClientSetCinematicMode(char bInCinematicMode, char bAffectsMovement, char bAffectsTurning, char bAffectsHUD); // Function Engine.PlayerController.ClientSetCinematicMode(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x4592800>
+	void ClientSetCameraMode(struct FName NewCamMode); // Function Engine.PlayerController.ClientSetCameraMode(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x4592770>
+	void ClientSetCameraFade(char bEnableFading, struct Unknown FadeColor, struct Unknown FadeAlpha, float FadeTime, char bFadeAudio); // Function Engine.PlayerController.ClientSetCameraFade(Net|NetReliableNative|Event|Public|HasDefaults|NetClient) // <Game_BE.exe+0x45925E0>
+	void ClientSetBlockOnAsyncLoading(); // Function Engine.PlayerController.ClientSetBlockOnAsyncLoading(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x45925C0>
+	void ClientReturnToMainMenuWithTextReason(struct FText ReturnReason); // Function Engine.PlayerController.ClientReturnToMainMenuWithTextReason(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x4592500>
+	void ClientReturnToMainMenu(struct FString ReturnReason); // Function Engine.PlayerController.ClientReturnToMainMenu(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x4592450>
+	void ClientRetryClientRestart(struct Unknown NewPawn); // Function Engine.PlayerController.ClientRetryClientRestart(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x45923C0>
+	void ClientRestart(struct Unknown NewPawn); // Function Engine.PlayerController.ClientRestart(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x4592330>
+	void ClientReset(); // Function Engine.PlayerController.ClientReset(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x4592310>
+	void ClientRepObjRef(struct Unknown Object); // Function Engine.PlayerController.ClientRepObjRef(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x4592280>
+	void ClientReceiveLocalizedMessage(struct Unknown* Message, int32_t Switch, struct Unknown RelatedPlayerState_2, struct Unknown RelatedPlayerState_3, struct Unknown OptionalObject); // Function Engine.PlayerController.ClientReceiveLocalizedMessage(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x4592100>
+	void ClientPrestreamTextures(struct Unknown ForcedActor, float ForceDuration, char bEnableStreaming, int32_t CinematicTextureGroups); // Function Engine.PlayerController.ClientPrestreamTextures(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x4591FB0>
+	void ClientPrepareMapChange(struct FName LevelName, char bFirst, char bLast); // Function Engine.PlayerController.ClientPrepareMapChange(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x4591EA0>
+	void ClientPlaySoundAtLocation(struct Unknown Sound, struct Unknown Location, float VolumeMultiplier, float PitchMultiplier); // Function Engine.PlayerController.ClientPlaySoundAtLocation(Net|Native|Event|Public|HasDefaults|NetClient) // <Game_BE.exe+0x4591D50>
+	void ClientPlaySound(struct Unknown Sound, float VolumeMultiplier, float PitchMultiplier); // Function Engine.PlayerController.ClientPlaySound(Net|Native|Event|Public|NetClient) // <Game_BE.exe+0x4591C50>
+	void ClientPlayForceFeedback_Internal(struct Unknown ForceFeedbackEffect, struct Unknown Params); // Function Engine.PlayerController.ClientPlayForceFeedback_Internal(Final|Net|Native|Event|Private|NetClient) // <Game_BE.exe+0x4591B60>
+	void ClientPlayCameraShakeFromSource(struct Unknown* Shake, struct Unknown SourceComponent); // Function Engine.PlayerController.ClientPlayCameraShakeFromSource(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4591AA0>
+	void ClientPlayCameraShake(struct Unknown* Shake, float Scale, char PlaySpace, struct Unknown UserPlaySpaceRot); // Function Engine.PlayerController.ClientPlayCameraShake(Net|Native|Event|Public|HasDefaults|NetClient|BlueprintCallable) // <Game_BE.exe+0x4591940>
+	void ClientPlayCameraAnim(struct Unknown AnimToPlay, float Scale, float Rate, float BlendInTime, float BlendOutTime, char bLoop, char bRandomStartTime, char Space, struct Unknown CustomPlaySpace); // Function Engine.PlayerController.ClientPlayCameraAnim(Net|Native|Event|Public|HasDefaults|NetClient|BlueprintCallable) // <Game_BE.exe+0x45916A0>
+	void ClientMutePlayer(struct Unknown PlayerId); // Function Engine.PlayerController.ClientMutePlayer(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x4591580>
+	void ClientMessage(struct FString S, struct FName Type, float MsgLifeTime); // Function Engine.PlayerController.ClientMessage(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x4591450>
+	void ClientIgnoreMoveInput(char bIgnore); // Function Engine.PlayerController.ClientIgnoreMoveInput(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x45913C0>
+	void ClientIgnoreLookInput(char bIgnore); // Function Engine.PlayerController.ClientIgnoreLookInput(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x4591330>
+	void ClientGotoState(struct FName NewState); // Function Engine.PlayerController.ClientGotoState(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x45912A0>
+	void ClientGameEnded(struct Unknown EndGameFocus, char bIsWinner); // Function Engine.PlayerController.ClientGameEnded(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x45911D0>
+	void ClientForceGarbageCollection(); // Function Engine.PlayerController.ClientForceGarbageCollection(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x45911B0>
+	void ClientFlushLevelStreaming(); // Function Engine.PlayerController.ClientFlushLevelStreaming(Final|Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x4591190>
+	void ClientEndOnlineSession(); // Function Engine.PlayerController.ClientEndOnlineSession(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x2045820>
+	void ClientEnableNetworkVoice(char bEnable); // Function Engine.PlayerController.ClientEnableNetworkVoice(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x4591100>
+	void ClientCommitMapChange(); // Function Engine.PlayerController.ClientCommitMapChange(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x45910E0>
+	void ClientClearCameraLensEffects(); // Function Engine.PlayerController.ClientClearCameraLensEffects(Net|NetReliableNative|Event|Public|NetClient|BlueprintCallable) // <Game_BE.exe+0x45910C0>
+	void ClientCapBandwidth(int32_t Cap); // Function Engine.PlayerController.ClientCapBandwidth(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x4591030>
+	void ClientCancelPendingMapChange(); // Function Engine.PlayerController.ClientCancelPendingMapChange(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x4591010>
+	void ClientAddTextureStreamingLoc(struct Unknown InLoc, float Duration, char bOverrideLocation); // Function Engine.PlayerController.ClientAddTextureStreamingLoc(Final|Net|NetReliableNative|Event|Public|HasDefaults|NetClient) // <Game_BE.exe+0x4590EF0>
+	void ClearAudioListenerOverride(); // Function Engine.PlayerController.ClearAudioListenerOverride(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4590ED0>
+	void ClearAudioListenerAttenuationOverride(); // Function Engine.PlayerController.ClearAudioListenerAttenuationOverride(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4590EB0>
+	char CanRestartPlayer(); // Function Engine.PlayerController.CanRestartPlayer(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4590E80>
+	void Camera(struct FName NewMode); // Function Engine.PlayerController.Camera(Exec|Native|Public) // <Game_BE.exe+0x4590DF0>
+	void AddYawInput(float Val); // Function Engine.PlayerController.AddYawInput(Native|Public|BlueprintCallable) // <Game_BE.exe+0x1EE33C0>
+	void AddRollInput(float Val); // Function Engine.PlayerController.AddRollInput(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4590D70>
+	void AddPitchInput(float Val); // Function Engine.PlayerController.AddPitchInput(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4590CF0>
+	void ActivateTouchInterface(struct Unknown NewTouchInterface); // Function Engine.PlayerController.ActivateTouchInterface(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4590C60>
 };
 
 // Class Engine.ApplicationLifecycleComponent
@@ -6606,28 +6606,28 @@ public:
 	char bComponentShouldUpdatePhysicsVolume : 0; // 0xE8 (1)
 	enum class Unknow PlaneConstraintAxisSetting; // 0xEB (1)
 
-	void StopMovementImmediately(); // Function Engine.MovementComponent.StopMovementImmediately(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2072070>
-	void SnapUpdatedComponentToPlane(); // Function Engine.MovementComponent.SnapUpdatedComponentToPlane(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x456A780>
-	void SetUpdatedComponent(struct Unknown NewUpdatedComponent); // Function Engine.MovementComponent.SetUpdatedComponent(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120D1F0>
-	void SetPlaneConstraintOrigin(struct Unknown PlaneOrigin); // Function Engine.MovementComponent.SetPlaneConstraintOrigin(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x456A6F0>
-	void SetPlaneConstraintNormal(struct Unknown PlaneNormal); // Function Engine.MovementComponent.SetPlaneConstraintNormal(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x456A660>
-	void SetPlaneConstraintFromVectors(struct Unknown Forward, struct Unknown Up); // Function Engine.MovementComponent.SetPlaneConstraintFromVectors(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x456A580>
-	void SetPlaneConstraintEnabled(char bEnabled); // Function Engine.MovementComponent.SetPlaneConstraintEnabled(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x456A4F0>
-	void SetPlaneConstraintAxisSetting(enum class Unknow NewAxisSetting); // Function Engine.MovementComponent.SetPlaneConstraintAxisSetting(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x456A470>
-	void PhysicsVolumeChanged(struct Unknown NewVolume); // Function Engine.MovementComponent.PhysicsVolumeChanged(Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x456A3E0>
-	char K2_MoveUpdatedComponent(struct Unknown Delta, struct Unknown NewRotation, struct Unknown& OutHit, char bSweep, char bTeleport); // Function Engine.MovementComponent.K2_MoveUpdatedComponent(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x456A1E0>
-	float K2_GetModifiedMaxSpeed(); // Function Engine.MovementComponent.K2_GetModifiedMaxSpeed(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x456A1A0>
-	float K2_GetMaxSpeedModifier(); // Function Engine.MovementComponent.K2_GetMaxSpeedModifier(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x456A160>
-	char IsExceedingMaxSpeed(float MaxSpeed); // Function Engine.MovementComponent.IsExceedingMaxSpeed(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x456A0D0>
-	struct Unknown GetPlaneConstraintOrigin(); // Function Engine.MovementComponent.GetPlaneConstraintOrigin(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x456A090>
-	struct Unknown GetPlaneConstraintNormal(); // Function Engine.MovementComponent.GetPlaneConstraintNormal(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x456A050>
-	enum class Unknow GetPlaneConstraintAxisSetting(); // Function Engine.MovementComponent.GetPlaneConstraintAxisSetting(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x456A030>
-	struct Unknown GetPhysicsVolume(); // Function Engine.MovementComponent.GetPhysicsVolume(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x456A000>
-	float GetMaxSpeed(); // Function Engine.MovementComponent.GetMaxSpeed(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4569FC0>
-	float GetGravityZ(); // Function Engine.MovementComponent.GetGravityZ(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4569F80>
-	struct Unknown ConstrainNormalToPlane(struct Unknown Normal); // Function Engine.MovementComponent.ConstrainNormalToPlane(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4569ED0>
-	struct Unknown ConstrainLocationToPlane(struct Unknown Location); // Function Engine.MovementComponent.ConstrainLocationToPlane(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4569E20>
-	struct Unknown ConstrainDirectionToPlane(struct Unknown Direction); // Function Engine.MovementComponent.ConstrainDirectionToPlane(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4569D70>
+	void StopMovementImmediately(); // Function Engine.MovementComponent.StopMovementImmediately(Native|Public|BlueprintCallable) // <Game_BE.exe+0x2072070>
+	void SnapUpdatedComponentToPlane(); // Function Engine.MovementComponent.SnapUpdatedComponentToPlane(Native|Public|BlueprintCallable) // <Game_BE.exe+0x456A780>
+	void SetUpdatedComponent(struct Unknown NewUpdatedComponent); // Function Engine.MovementComponent.SetUpdatedComponent(Native|Public|BlueprintCallable) // <Game_BE.exe+0x120D1F0>
+	void SetPlaneConstraintOrigin(struct Unknown PlaneOrigin); // Function Engine.MovementComponent.SetPlaneConstraintOrigin(Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x456A6F0>
+	void SetPlaneConstraintNormal(struct Unknown PlaneNormal); // Function Engine.MovementComponent.SetPlaneConstraintNormal(Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x456A660>
+	void SetPlaneConstraintFromVectors(struct Unknown Forward, struct Unknown Up); // Function Engine.MovementComponent.SetPlaneConstraintFromVectors(Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x456A580>
+	void SetPlaneConstraintEnabled(char bEnabled); // Function Engine.MovementComponent.SetPlaneConstraintEnabled(Native|Public|BlueprintCallable) // <Game_BE.exe+0x456A4F0>
+	void SetPlaneConstraintAxisSetting(enum class Unknow NewAxisSetting); // Function Engine.MovementComponent.SetPlaneConstraintAxisSetting(Native|Public|BlueprintCallable) // <Game_BE.exe+0x456A470>
+	void PhysicsVolumeChanged(struct Unknown NewVolume); // Function Engine.MovementComponent.PhysicsVolumeChanged(Native|Public) // <Game_BE.exe+0x456A3E0>
+	char K2_MoveUpdatedComponent(struct Unknown Delta, struct Unknown NewRotation, struct Unknown& OutHit, char bSweep, char bTeleport); // Function Engine.MovementComponent.K2_MoveUpdatedComponent(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x456A1E0>
+	float K2_GetModifiedMaxSpeed(); // Function Engine.MovementComponent.K2_GetModifiedMaxSpeed(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x456A1A0>
+	float K2_GetMaxSpeedModifier(); // Function Engine.MovementComponent.K2_GetMaxSpeedModifier(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x456A160>
+	char IsExceedingMaxSpeed(float MaxSpeed); // Function Engine.MovementComponent.IsExceedingMaxSpeed(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x456A0D0>
+	struct Unknown GetPlaneConstraintOrigin(); // Function Engine.MovementComponent.GetPlaneConstraintOrigin(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x456A090>
+	struct Unknown GetPlaneConstraintNormal(); // Function Engine.MovementComponent.GetPlaneConstraintNormal(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x456A050>
+	enum class Unknow GetPlaneConstraintAxisSetting(); // Function Engine.MovementComponent.GetPlaneConstraintAxisSetting(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x456A030>
+	struct Unknown GetPhysicsVolume(); // Function Engine.MovementComponent.GetPhysicsVolume(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x456A000>
+	float GetMaxSpeed(); // Function Engine.MovementComponent.GetMaxSpeed(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4569FC0>
+	float GetGravityZ(); // Function Engine.MovementComponent.GetGravityZ(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4569F80>
+	struct Unknown ConstrainNormalToPlane(struct Unknown Normal); // Function Engine.MovementComponent.ConstrainNormalToPlane(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4569ED0>
+	struct Unknown ConstrainLocationToPlane(struct Unknown Location); // Function Engine.MovementComponent.ConstrainLocationToPlane(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4569E20>
+	struct Unknown ConstrainDirectionToPlane(struct Unknown Direction); // Function Engine.MovementComponent.ConstrainDirectionToPlane(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4569D70>
 };
 
 // Class Engine.NavMovementComponent
@@ -6643,13 +6643,13 @@ public:
 	struct Unknown MovementState; // 0x125 (1)
 	struct Unknown PathFollowingComp; // 0x128 (8)
 
-	void StopMovementKeepPathing(); // Function Engine.NavMovementComponent.StopMovementKeepPathing(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x456F3F0>
-	void StopActiveMovement(); // Function Engine.NavMovementComponent.StopActiveMovement(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x456F3D0>
-	char IsSwimming(); // Function Engine.NavMovementComponent.IsSwimming(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x456F200>
-	char IsMovingOnGround(); // Function Engine.NavMovementComponent.IsMovingOnGround(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4487650>
-	char IsFlying(); // Function Engine.NavMovementComponent.IsFlying(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x456F1D0>
-	char IsFalling(); // Function Engine.NavMovementComponent.IsFalling(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x456F1A0>
-	char IsCrouching(); // Function Engine.NavMovementComponent.IsCrouching(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4460E80>
+	void StopMovementKeepPathing(); // Function Engine.NavMovementComponent.StopMovementKeepPathing(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x456F3F0>
+	void StopActiveMovement(); // Function Engine.NavMovementComponent.StopActiveMovement(Native|Public|BlueprintCallable) // <Game_BE.exe+0x456F3D0>
+	char IsSwimming(); // Function Engine.NavMovementComponent.IsSwimming(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x456F200>
+	char IsMovingOnGround(); // Function Engine.NavMovementComponent.IsMovingOnGround(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4487650>
+	char IsFlying(); // Function Engine.NavMovementComponent.IsFlying(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x456F1D0>
+	char IsFalling(); // Function Engine.NavMovementComponent.IsFalling(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x456F1A0>
+	char IsCrouching(); // Function Engine.NavMovementComponent.IsCrouching(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4460E80>
 };
 
 // Class Engine.PawnMovementComponent
@@ -6659,13 +6659,13 @@ public:
 
 	struct Unknown PawnOwner; // 0x130 (8)
 
-	struct Unknown K2_GetInputVector(); // Function Engine.PawnMovementComponent.K2_GetInputVector(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4584140>
-	char IsMoveInputIgnored(); // Function Engine.PawnMovementComponent.IsMoveInputIgnored(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4584280>
-	struct Unknown GetPendingInputVector(); // Function Engine.PawnMovementComponent.GetPendingInputVector(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4584140>
-	struct Unknown GetPawnOwner(); // Function Engine.PawnMovementComponent.GetPawnOwner(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4584110>
-	struct Unknown GetLastInputVector(); // Function Engine.PawnMovementComponent.GetLastInputVector(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4583F90>
-	struct Unknown ConsumeInputVector(); // Function Engine.PawnMovementComponent.ConsumeInputVector(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4583DB0>
-	void AddInputVector(struct Unknown WorldVector, char bForce); // Function Engine.PawnMovementComponent.AddInputVector(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4583850>
+	struct Unknown K2_GetInputVector(); // Function Engine.PawnMovementComponent.K2_GetInputVector(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4584140>
+	char IsMoveInputIgnored(); // Function Engine.PawnMovementComponent.IsMoveInputIgnored(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4584280>
+	struct Unknown GetPendingInputVector(); // Function Engine.PawnMovementComponent.GetPendingInputVector(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4584140>
+	struct Unknown GetPawnOwner(); // Function Engine.PawnMovementComponent.GetPawnOwner(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4584110>
+	struct Unknown GetLastInputVector(); // Function Engine.PawnMovementComponent.GetLastInputVector(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4583F90>
+	struct Unknown ConsumeInputVector(); // Function Engine.PawnMovementComponent.ConsumeInputVector(Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4583DB0>
+	void AddInputVector(struct Unknown WorldVector, char bForce); // Function Engine.PawnMovementComponent.AddInputVector(Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4583850>
 };
 
 // Class Engine.CharacterMovementComponent
@@ -6828,44 +6828,44 @@ public:
 	float BlockingHit_SlideAccelerator; // 0x468 (4)
 	struct Unknown BlockingPhysMaterial; // 0x5C0 (8)
 
-	void SetWalkableFloorZ(float InWalkableFloorZ); // Function Engine.CharacterMovementComponent.SetWalkableFloorZ(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4487F70>
-	void SetWalkableFloorAngle(float InWalkableFloorAngle); // Function Engine.CharacterMovementComponent.SetWalkableFloorAngle(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4487EF0>
-	void SetMovementMode(char NewMovementMode, char NewCustomMode); // Function Engine.CharacterMovementComponent.SetMovementMode(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4487E30>
-	void SetGroupsToIgnoreMask(struct Unknown& GroupMask); // Function Engine.CharacterMovementComponent.SetGroupsToIgnoreMask(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4487DA0>
-	void SetGroupsToIgnore(int32_t GroupFlags); // Function Engine.CharacterMovementComponent.SetGroupsToIgnore(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4487D20>
-	void SetGroupsToAvoidMask(struct Unknown& GroupMask); // Function Engine.CharacterMovementComponent.SetGroupsToAvoidMask(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4487C90>
-	void SetGroupsToAvoid(int32_t GroupFlags); // Function Engine.CharacterMovementComponent.SetGroupsToAvoid(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4487C10>
-	void SetAvoidanceGroupMask(struct Unknown& GroupMask); // Function Engine.CharacterMovementComponent.SetAvoidanceGroupMask(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4487B80>
-	void SetAvoidanceGroup(int32_t GroupFlags); // Function Engine.CharacterMovementComponent.SetAvoidanceGroup(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4487B00>
-	void SetAvoidanceEnabled(char bEnable); // Function Engine.CharacterMovementComponent.SetAvoidanceEnabled(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4487A70>
-	float K2_GetWalkableFloorZ(); // Function Engine.CharacterMovementComponent.K2_GetWalkableFloorZ(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4487A40>
-	float K2_GetWalkableFloorAngle(); // Function Engine.CharacterMovementComponent.K2_GetWalkableFloorAngle(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4487A10>
-	float K2_GetModifiedMaxAcceleration(); // Function Engine.CharacterMovementComponent.K2_GetModifiedMaxAcceleration(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44879D0>
-	void K2_FindFloor(struct Unknown CapsuleLocation, struct Unknown& FloorResult); // Function Engine.CharacterMovementComponent.K2_FindFloor(Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4487880>
-	void K2_ComputeFloorDist(struct Unknown CapsuleLocation, float LineDistance, float SweepDistance, float SweepRadius, struct Unknown& FloorResult); // Function Engine.CharacterMovementComponent.K2_ComputeFloorDist(Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4487680>
-	char IsWalking(); // Function Engine.CharacterMovementComponent.IsWalking(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4487650>
-	char IsWalkable(struct Unknown& Hit); // Function Engine.CharacterMovementComponent.IsWalkable(Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4487560>
-	float GetValidPerchRadius(); // Function Engine.CharacterMovementComponent.GetValidPerchRadius(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4487530>
-	float GetPerchRadiusThreshold(); // Function Engine.CharacterMovementComponent.GetPerchRadiusThreshold(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4487500>
-	struct Unknown GetMovementBase(); // Function Engine.CharacterMovementComponent.GetMovementBase(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44874D0>
-	float GetMinAnalogSpeed(); // Function Engine.CharacterMovementComponent.GetMinAnalogSpeed(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4487490>
-	float GetMaxJumpHeightWithJumpTime(); // Function Engine.CharacterMovementComponent.GetMaxJumpHeightWithJumpTime(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4487450>
-	float GetMaxJumpHeight(); // Function Engine.CharacterMovementComponent.GetMaxJumpHeight(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F3FA20>
-	float GetMaxBrakingDeceleration(); // Function Engine.CharacterMovementComponent.GetMaxBrakingDeceleration(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4487410>
-	float GetMaxAcceleration(); // Function Engine.CharacterMovementComponent.GetMaxAcceleration(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44873D0>
-	struct Unknown GetLastUpdateVelocity(); // Function Engine.CharacterMovementComponent.GetLastUpdateVelocity(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44873A0>
-	struct Unknown GetLastUpdateRotation(); // Function Engine.CharacterMovementComponent.GetLastUpdateRotation(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4487350>
-	struct Unknown GetLastUpdateLocation(); // Function Engine.CharacterMovementComponent.GetLastUpdateLocation(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4487320>
-	struct Unknown GetImpartedMovementBaseVelocity(); // Function Engine.CharacterMovementComponent.GetImpartedMovementBaseVelocity(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44872E0>
-	struct Unknown GetCurrentAcceleration(); // Function Engine.CharacterMovementComponent.GetCurrentAcceleration(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44872A0>
-	struct Unknown GetCharacterOwner(); // Function Engine.CharacterMovementComponent.GetCharacterOwner(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4487280>
-	float GetAnalogInputModifier(); // Function Engine.CharacterMovementComponent.GetAnalogInputModifier(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4487250>
-	void DisableMovement(); // Function Engine.CharacterMovementComponent.DisableMovement(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4487230>
-	void ClearAccumulatedForces(); // Function Engine.CharacterMovementComponent.ClearAccumulatedForces(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4487210>
-	void CapsuleTouched(struct Unknown OverlappedComp, struct Unknown Other, struct Unknown OtherComp, int32_t OtherBodyIndex, char bFromSweep, struct Unknown& SweepResult); // Function Engine.CharacterMovementComponent.CapsuleTouched(Native|Protected|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4487010>
-	void CalcVelocity(float DeltaTime, float Friction, char bFluid, float BrakingDeceleration); // Function Engine.CharacterMovementComponent.CalcVelocity(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4486EB0>
-	void AddImpulse(struct Unknown Impulse, char bVelocityChange); // Function Engine.CharacterMovementComponent.AddImpulse(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4486DD0>
-	void AddForce(struct Unknown Force); // Function Engine.CharacterMovementComponent.AddForce(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4486D40>
+	void SetWalkableFloorZ(float InWalkableFloorZ); // Function Engine.CharacterMovementComponent.SetWalkableFloorZ(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4487F70>
+	void SetWalkableFloorAngle(float InWalkableFloorAngle); // Function Engine.CharacterMovementComponent.SetWalkableFloorAngle(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4487EF0>
+	void SetMovementMode(char NewMovementMode, char NewCustomMode); // Function Engine.CharacterMovementComponent.SetMovementMode(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4487E30>
+	void SetGroupsToIgnoreMask(struct Unknown& GroupMask); // Function Engine.CharacterMovementComponent.SetGroupsToIgnoreMask(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x4487DA0>
+	void SetGroupsToIgnore(int32_t GroupFlags); // Function Engine.CharacterMovementComponent.SetGroupsToIgnore(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4487D20>
+	void SetGroupsToAvoidMask(struct Unknown& GroupMask); // Function Engine.CharacterMovementComponent.SetGroupsToAvoidMask(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x4487C90>
+	void SetGroupsToAvoid(int32_t GroupFlags); // Function Engine.CharacterMovementComponent.SetGroupsToAvoid(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4487C10>
+	void SetAvoidanceGroupMask(struct Unknown& GroupMask); // Function Engine.CharacterMovementComponent.SetAvoidanceGroupMask(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x4487B80>
+	void SetAvoidanceGroup(int32_t GroupFlags); // Function Engine.CharacterMovementComponent.SetAvoidanceGroup(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4487B00>
+	void SetAvoidanceEnabled(char bEnable); // Function Engine.CharacterMovementComponent.SetAvoidanceEnabled(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4487A70>
+	float K2_GetWalkableFloorZ(); // Function Engine.CharacterMovementComponent.K2_GetWalkableFloorZ(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4487A40>
+	float K2_GetWalkableFloorAngle(); // Function Engine.CharacterMovementComponent.K2_GetWalkableFloorAngle(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4487A10>
+	float K2_GetModifiedMaxAcceleration(); // Function Engine.CharacterMovementComponent.K2_GetModifiedMaxAcceleration(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44879D0>
+	void K2_FindFloor(struct Unknown CapsuleLocation, struct Unknown& FloorResult); // Function Engine.CharacterMovementComponent.K2_FindFloor(Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4487880>
+	void K2_ComputeFloorDist(struct Unknown CapsuleLocation, float LineDistance, float SweepDistance, float SweepRadius, struct Unknown& FloorResult); // Function Engine.CharacterMovementComponent.K2_ComputeFloorDist(Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4487680>
+	char IsWalking(); // Function Engine.CharacterMovementComponent.IsWalking(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4487650>
+	char IsWalkable(struct Unknown& Hit); // Function Engine.CharacterMovementComponent.IsWalkable(Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4487560>
+	float GetValidPerchRadius(); // Function Engine.CharacterMovementComponent.GetValidPerchRadius(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4487530>
+	float GetPerchRadiusThreshold(); // Function Engine.CharacterMovementComponent.GetPerchRadiusThreshold(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4487500>
+	struct Unknown GetMovementBase(); // Function Engine.CharacterMovementComponent.GetMovementBase(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44874D0>
+	float GetMinAnalogSpeed(); // Function Engine.CharacterMovementComponent.GetMinAnalogSpeed(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4487490>
+	float GetMaxJumpHeightWithJumpTime(); // Function Engine.CharacterMovementComponent.GetMaxJumpHeightWithJumpTime(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4487450>
+	float GetMaxJumpHeight(); // Function Engine.CharacterMovementComponent.GetMaxJumpHeight(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1F3FA20>
+	float GetMaxBrakingDeceleration(); // Function Engine.CharacterMovementComponent.GetMaxBrakingDeceleration(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4487410>
+	float GetMaxAcceleration(); // Function Engine.CharacterMovementComponent.GetMaxAcceleration(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44873D0>
+	struct Unknown GetLastUpdateVelocity(); // Function Engine.CharacterMovementComponent.GetLastUpdateVelocity(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44873A0>
+	struct Unknown GetLastUpdateRotation(); // Function Engine.CharacterMovementComponent.GetLastUpdateRotation(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4487350>
+	struct Unknown GetLastUpdateLocation(); // Function Engine.CharacterMovementComponent.GetLastUpdateLocation(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4487320>
+	struct Unknown GetImpartedMovementBaseVelocity(); // Function Engine.CharacterMovementComponent.GetImpartedMovementBaseVelocity(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44872E0>
+	struct Unknown GetCurrentAcceleration(); // Function Engine.CharacterMovementComponent.GetCurrentAcceleration(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44872A0>
+	struct Unknown GetCharacterOwner(); // Function Engine.CharacterMovementComponent.GetCharacterOwner(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4487280>
+	float GetAnalogInputModifier(); // Function Engine.CharacterMovementComponent.GetAnalogInputModifier(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4487250>
+	void DisableMovement(); // Function Engine.CharacterMovementComponent.DisableMovement(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4487230>
+	void ClearAccumulatedForces(); // Function Engine.CharacterMovementComponent.ClearAccumulatedForces(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4487210>
+	void CapsuleTouched(struct Unknown OverlappedComp, struct Unknown Other, struct Unknown OtherComp, int32_t OtherBodyIndex, char bFromSweep, struct Unknown& SweepResult); // Function Engine.CharacterMovementComponent.CapsuleTouched(Native|Protected|HasOutParms) // <Game_BE.exe+0x4487010>
+	void CalcVelocity(float DeltaTime, float Friction, char bFluid, float BrakingDeceleration); // Function Engine.CharacterMovementComponent.CalcVelocity(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4486EB0>
+	void AddImpulse(struct Unknown Impulse, char bVelocityChange); // Function Engine.CharacterMovementComponent.AddImpulse(Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4486DD0>
+	void AddForce(struct Unknown Force); // Function Engine.CharacterMovementComponent.AddForce(Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4486D40>
 };
 
 // Class Engine.SceneCapture
@@ -6884,7 +6884,7 @@ public:
 
 	struct Unknown CaptureComponent2D; // 0x310 (8)
 
-	void OnInterpToggle(char bEnable); // Function Engine.SceneCapture2D.OnInterpToggle(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x458C330>
+	void OnInterpToggle(char bEnable); // Function Engine.SceneCapture2D.OnInterpToggle(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x458C330>
 };
 
 // Class Engine.AssetManager
@@ -6928,9 +6928,9 @@ public:
 	struct Unknown BoxExtent; // 0x4C0 (12)
 	float LineThickness; // 0x4CC (4)
 
-	void SetBoxExtent(struct Unknown InBoxExtent, char bUpdateOverlaps); // Function Engine.BoxComponent.SetBoxExtent(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4479C70>
-	struct Unknown GetUnscaledBoxExtent(); // Function Engine.BoxComponent.GetUnscaledBoxExtent(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4479A90>
-	struct Unknown GetScaledBoxExtent(); // Function Engine.BoxComponent.GetScaledBoxExtent(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4479A30>
+	void SetBoxExtent(struct Unknown InBoxExtent, char bUpdateOverlaps); // Function Engine.BoxComponent.SetBoxExtent(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4479C70>
+	struct Unknown GetUnscaledBoxExtent(); // Function Engine.BoxComponent.GetUnscaledBoxExtent(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4479A90>
+	struct Unknown GetScaledBoxExtent(); // Function Engine.BoxComponent.GetScaledBoxExtent(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4479A30>
 };
 
 // Class Engine.CameraComponent
@@ -6951,19 +6951,19 @@ public:
 	float PostProcessBlendWeight; // 0x280 (4)
 	struct Unknown PostProcessSettings; // 0x2B0 (1472)
 
-	void SetUseFieldOfViewForLOD(char bInUseFieldOfViewForLOD); // Function Engine.CameraComponent.SetUseFieldOfViewForLOD(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x447A1E0>
-	void SetProjectionMode(char InProjectionMode); // Function Engine.CameraComponent.SetProjectionMode(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x447A0E0>
-	void SetPostProcessBlendWeight(float InPostProcessBlendWeight); // Function Engine.CameraComponent.SetPostProcessBlendWeight(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x447A060>
-	void SetOrthoWidth(float InOrthoWidth); // Function Engine.CameraComponent.SetOrthoWidth(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4479FE0>
-	void SetOrthoNearClipPlane(float InOrthoNearClipPlane); // Function Engine.CameraComponent.SetOrthoNearClipPlane(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4479F60>
-	void SetOrthoFarClipPlane(float InOrthoFarClipPlane); // Function Engine.CameraComponent.SetOrthoFarClipPlane(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4479EE0>
-	void SetFieldOfView(float InFieldOfView); // Function Engine.CameraComponent.SetFieldOfView(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4479E60>
-	void SetConstraintAspectRatio(char bInConstrainAspectRatio); // Function Engine.CameraComponent.SetConstraintAspectRatio(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4479D50>
-	void SetAspectRatio(float InAspectRatio); // Function Engine.CameraComponent.SetAspectRatio(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4479BF0>
-	void RemoveBlendable(struct TScriptInterface<IUnknown> InBlendableObject); // Function Engine.CameraComponent.RemoveBlendable(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4479AC0>
-	void OnCameraMeshHiddenChanged(); // Function Engine.CameraComponent.OnCameraMeshHiddenChanged(Final|Native|Protected|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1530870>
-	void GetCameraView(float DeltaTime, struct Unknown& DesiredView); // Function Engine.CameraComponent.GetCameraView(Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4479890>
-	void AddOrUpdateBlendable(struct TScriptInterface<IUnknown> InBlendableObject, float InWeight); // Function Engine.CameraComponent.AddOrUpdateBlendable(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4479710>
+	void SetUseFieldOfViewForLOD(char bInUseFieldOfViewForLOD); // Function Engine.CameraComponent.SetUseFieldOfViewForLOD(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x447A1E0>
+	void SetProjectionMode(char InProjectionMode); // Function Engine.CameraComponent.SetProjectionMode(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x447A0E0>
+	void SetPostProcessBlendWeight(float InPostProcessBlendWeight); // Function Engine.CameraComponent.SetPostProcessBlendWeight(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x447A060>
+	void SetOrthoWidth(float InOrthoWidth); // Function Engine.CameraComponent.SetOrthoWidth(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4479FE0>
+	void SetOrthoNearClipPlane(float InOrthoNearClipPlane); // Function Engine.CameraComponent.SetOrthoNearClipPlane(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4479F60>
+	void SetOrthoFarClipPlane(float InOrthoFarClipPlane); // Function Engine.CameraComponent.SetOrthoFarClipPlane(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4479EE0>
+	void SetFieldOfView(float InFieldOfView); // Function Engine.CameraComponent.SetFieldOfView(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4479E60>
+	void SetConstraintAspectRatio(char bInConstrainAspectRatio); // Function Engine.CameraComponent.SetConstraintAspectRatio(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4479D50>
+	void SetAspectRatio(float InAspectRatio); // Function Engine.CameraComponent.SetAspectRatio(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4479BF0>
+	void RemoveBlendable(struct TScriptInterface<IUnknown> InBlendableObject); // Function Engine.CameraComponent.RemoveBlendable(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4479AC0>
+	void OnCameraMeshHiddenChanged(); // Function Engine.CameraComponent.OnCameraMeshHiddenChanged(Final|Native|Protected|BlueprintCallable) // <Game_BE.exe+0x1530870>
+	void GetCameraView(float DeltaTime, struct Unknown& DesiredView); // Function Engine.CameraComponent.GetCameraView(Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x4479890>
+	void AddOrUpdateBlendable(struct TScriptInterface<IUnknown> InBlendableObject, float InWeight); // Function Engine.CameraComponent.AddOrUpdateBlendable(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4479710>
 };
 
 // Class Engine.CheatManager
@@ -6974,62 +6974,62 @@ public:
 	struct Unknown DebugCameraControllerRef; // 0x28 (8)
 	struct Unknown* DebugCameraControllerClass; // 0x30 (8)
 
-	void Walk(); // Function Engine.CheatManager.Walk(Exec|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x36B1750>
-	void ViewSelf(); // Function Engine.CheatManager.ViewSelf(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC7450>
-	void ViewPlayer(struct FString S); // Function Engine.CheatManager.ViewPlayer(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x448D580>
-	void ViewClass(struct Unknown* DesiredClass); // Function Engine.CheatManager.ViewClass(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x448D4F0>
-	void ViewActor(struct FName ActorName); // Function Engine.CheatManager.ViewActor(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x448D460>
-	void UpdateSafeArea(); // Function Engine.CheatManager.UpdateSafeArea(Final|Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x448D440>
-	void ToggleServerStatReplicatorUpdateStatNet(); // Function Engine.CheatManager.ToggleServerStatReplicatorUpdateStatNet(Final|Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x448D420>
-	void ToggleServerStatReplicatorClientOverwrite(); // Function Engine.CheatManager.ToggleServerStatReplicatorClientOverwrite(Final|Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x448D400>
-	void ToggleDebugCamera(); // Function Engine.CheatManager.ToggleDebugCamera(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4434AA0>
-	void ToggleAILogging(); // Function Engine.CheatManager.ToggleAILogging(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x448D3E0>
-	void TestCollisionDistance(); // Function Engine.CheatManager.TestCollisionDistance(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EDD280>
-	void Teleport(); // Function Engine.CheatManager.Teleport(Exec|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x448D3C0>
-	void Summon(struct FString ClassName); // Function Engine.CheatManager.Summon(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x448D310>
-	void StreamLevelOut(struct FName PackageName); // Function Engine.CheatManager.StreamLevelOut(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x448D280>
-	void StreamLevelIn(struct FName PackageName); // Function Engine.CheatManager.StreamLevelIn(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x448D1F0>
-	void SpawnServerStatReplicator(); // Function Engine.CheatManager.SpawnServerStatReplicator(Final|Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x448D1D0>
-	void Slomo(float NewTimeDilation); // Function Engine.CheatManager.Slomo(Exec|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x448D150>
-	void SetWorldOrigin(); // Function Engine.CheatManager.SetWorldOrigin(Final|Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x448D130>
-	void SetReflexLatencyGraph(int32_t Type, float Min, float MAX); // Function Engine.CheatManager.SetReflexLatencyGraph(Final|Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x448D030>
-	void SetMouseSensitivityToDefault(); // Function Engine.CheatManager.SetMouseSensitivityToDefault(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x448D010>
-	void ServerToggleAILogging(); // Function Engine.CheatManager.ServerToggleAILogging(Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x448CF30>
-	void ReceiveInitCheatManager(); // Function Engine.CheatManager.ReceiveInitCheatManager(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveEndPlay(); // Function Engine.CheatManager.ReceiveEndPlay(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void PlayersOnly(); // Function Engine.CheatManager.PlayersOnly(Exec|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC6C10>
-	void OnlyLoadLevel(struct FName PackageName); // Function Engine.CheatManager.OnlyLoadLevel(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x448CEA0>
-	void LogLoc(); // Function Engine.CheatManager.LogLoc(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x448CE80>
-	void InvertMouse(); // Function Engine.CheatManager.InvertMouse(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x448CE60>
-	void God(); // Function Engine.CheatManager.God(Exec|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC7350>
-	void Ghost(); // Function Engine.CheatManager.Ghost(Exec|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x447CF40>
-	void FreezeFrame(float Delay); // Function Engine.CheatManager.FreezeFrame(Exec|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x448CDE0>
-	void Fly(); // Function Engine.CheatManager.Fly(Exec|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CA5B40>
-	void FlushLog(); // Function Engine.CheatManager.FlushLog(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x448CDC0>
-	void EnableDebugCamera(); // Function Engine.CheatManager.EnableDebugCamera(Native|Protected|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1E72F60>
-	void DumpVoiceMutingState(); // Function Engine.CheatManager.DumpVoiceMutingState(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x448CDA0>
-	void DumpPartyState(); // Function Engine.CheatManager.DumpPartyState(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x448CD80>
-	void DumpOnlineSessionState(); // Function Engine.CheatManager.DumpOnlineSessionState(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x448CD60>
-	void DumpChatState(); // Function Engine.CheatManager.DumpChatState(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x448CD40>
-	void DisableDebugCamera(); // Function Engine.CheatManager.DisableDebugCamera(Native|Protected|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x120D1D0>
-	void DestroyTarget(); // Function Engine.CheatManager.DestroyTarget(Exec|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC7280>
-	void DestroyServerStatReplicator(); // Function Engine.CheatManager.DestroyServerStatReplicator(Final|Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x448CD20>
-	void DestroyPawns(struct Unknown* aClass); // Function Engine.CheatManager.DestroyPawns(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x448CC90>
-	void DestroyAllPawnsExceptTarget(); // Function Engine.CheatManager.DestroyAllPawnsExceptTarget(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC6D10>
-	void DestroyAll(struct Unknown* aClass); // Function Engine.CheatManager.DestroyAll(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x448CC00>
-	void DebugCapsuleSweepSize(float HalfHeight, float Radius); // Function Engine.CheatManager.DebugCapsuleSweepSize(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x448CB30>
-	void DebugCapsuleSweepPawn(); // Function Engine.CheatManager.DebugCapsuleSweepPawn(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x448CB10>
-	void DebugCapsuleSweepComplex(char bTraceComplex); // Function Engine.CheatManager.DebugCapsuleSweepComplex(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x448CA80>
-	void DebugCapsuleSweepClear(); // Function Engine.CheatManager.DebugCapsuleSweepClear(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x448CA60>
-	void DebugCapsuleSweepChannel(char Channel); // Function Engine.CheatManager.DebugCapsuleSweepChannel(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x448C9E0>
-	void DebugCapsuleSweepCapture(); // Function Engine.CheatManager.DebugCapsuleSweepCapture(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x448C9C0>
-	void DebugCapsuleSweep(); // Function Engine.CheatManager.DebugCapsuleSweep(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x448C9A0>
-	void DamageTarget(float DamageAmount); // Function Engine.CheatManager.DamageTarget(Exec|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x448C920>
-	void CheatScript(struct FString ScriptName); // Function Engine.CheatManager.CheatScript(Final|Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x448C830>
-	void ChangeSize(float F); // Function Engine.CheatManager.ChangeSize(Exec|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x448C7B0>
-	void BugItStringCreator(struct Unknown ViewLocation, struct Unknown ViewRotation, struct FString& GoString, struct FString& LocString); // Function Engine.CheatManager.BugItStringCreator(Exec|Native|Public|HasOutParms|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x448C5E0>
-	void BugItGo(float X, float Y, float Z, float Pitch, float Yaw, float Roll); // Function Engine.CheatManager.BugItGo(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x448C410>
-	void BugIt(struct FString ScreenShotDescription); // Function Engine.CheatManager.BugIt(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x448C360>
+	void Walk(); // Function Engine.CheatManager.Walk(Exec|Native|Public|BlueprintCallable) // <Game_BE.exe+0x36B1750>
+	void ViewSelf(); // Function Engine.CheatManager.ViewSelf(Exec|Native|Public) // <Game_BE.exe+0x1EC7450>
+	void ViewPlayer(struct FString S); // Function Engine.CheatManager.ViewPlayer(Exec|Native|Public) // <Game_BE.exe+0x448D580>
+	void ViewClass(struct Unknown* DesiredClass); // Function Engine.CheatManager.ViewClass(Exec|Native|Public) // <Game_BE.exe+0x448D4F0>
+	void ViewActor(struct FName ActorName); // Function Engine.CheatManager.ViewActor(Exec|Native|Public) // <Game_BE.exe+0x448D460>
+	void UpdateSafeArea(); // Function Engine.CheatManager.UpdateSafeArea(Final|Exec|Native|Public) // <Game_BE.exe+0x448D440>
+	void ToggleServerStatReplicatorUpdateStatNet(); // Function Engine.CheatManager.ToggleServerStatReplicatorUpdateStatNet(Final|Exec|Native|Public) // <Game_BE.exe+0x448D420>
+	void ToggleServerStatReplicatorClientOverwrite(); // Function Engine.CheatManager.ToggleServerStatReplicatorClientOverwrite(Final|Exec|Native|Public) // <Game_BE.exe+0x448D400>
+	void ToggleDebugCamera(); // Function Engine.CheatManager.ToggleDebugCamera(Exec|Native|Public) // <Game_BE.exe+0x4434AA0>
+	void ToggleAILogging(); // Function Engine.CheatManager.ToggleAILogging(Exec|Native|Public) // <Game_BE.exe+0x448D3E0>
+	void TestCollisionDistance(); // Function Engine.CheatManager.TestCollisionDistance(Exec|Native|Public) // <Game_BE.exe+0x1EDD280>
+	void Teleport(); // Function Engine.CheatManager.Teleport(Exec|Native|Public|BlueprintCallable) // <Game_BE.exe+0x448D3C0>
+	void Summon(struct FString ClassName); // Function Engine.CheatManager.Summon(Exec|Native|Public) // <Game_BE.exe+0x448D310>
+	void StreamLevelOut(struct FName PackageName); // Function Engine.CheatManager.StreamLevelOut(Exec|Native|Public) // <Game_BE.exe+0x448D280>
+	void StreamLevelIn(struct FName PackageName); // Function Engine.CheatManager.StreamLevelIn(Exec|Native|Public) // <Game_BE.exe+0x448D1F0>
+	void SpawnServerStatReplicator(); // Function Engine.CheatManager.SpawnServerStatReplicator(Final|Exec|Native|Public) // <Game_BE.exe+0x448D1D0>
+	void Slomo(float NewTimeDilation); // Function Engine.CheatManager.Slomo(Exec|Native|Public|BlueprintCallable) // <Game_BE.exe+0x448D150>
+	void SetWorldOrigin(); // Function Engine.CheatManager.SetWorldOrigin(Final|Exec|Native|Public) // <Game_BE.exe+0x448D130>
+	void SetReflexLatencyGraph(int32_t Type, float Min, float MAX); // Function Engine.CheatManager.SetReflexLatencyGraph(Final|Exec|Native|Public) // <Game_BE.exe+0x448D030>
+	void SetMouseSensitivityToDefault(); // Function Engine.CheatManager.SetMouseSensitivityToDefault(Exec|Native|Public) // <Game_BE.exe+0x448D010>
+	void ServerToggleAILogging(); // Function Engine.CheatManager.ServerToggleAILogging(Net|NetReliableNative|Event|Public|NetServer|NetValidate) // <Game_BE.exe+0x448CF30>
+	void ReceiveInitCheatManager(); // Function Engine.CheatManager.ReceiveInitCheatManager(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveEndPlay(); // Function Engine.CheatManager.ReceiveEndPlay(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void PlayersOnly(); // Function Engine.CheatManager.PlayersOnly(Exec|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1EC6C10>
+	void OnlyLoadLevel(struct FName PackageName); // Function Engine.CheatManager.OnlyLoadLevel(Exec|Native|Public) // <Game_BE.exe+0x448CEA0>
+	void LogLoc(); // Function Engine.CheatManager.LogLoc(Exec|Native|Public) // <Game_BE.exe+0x448CE80>
+	void InvertMouse(); // Function Engine.CheatManager.InvertMouse(Exec|Native|Public) // <Game_BE.exe+0x448CE60>
+	void God(); // Function Engine.CheatManager.God(Exec|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1EC7350>
+	void Ghost(); // Function Engine.CheatManager.Ghost(Exec|Native|Public|BlueprintCallable) // <Game_BE.exe+0x447CF40>
+	void FreezeFrame(float Delay); // Function Engine.CheatManager.FreezeFrame(Exec|Native|Public|BlueprintCallable) // <Game_BE.exe+0x448CDE0>
+	void Fly(); // Function Engine.CheatManager.Fly(Exec|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CA5B40>
+	void FlushLog(); // Function Engine.CheatManager.FlushLog(Exec|Native|Public) // <Game_BE.exe+0x448CDC0>
+	void EnableDebugCamera(); // Function Engine.CheatManager.EnableDebugCamera(Native|Protected|BlueprintCallable) // <Game_BE.exe+0x1E72F60>
+	void DumpVoiceMutingState(); // Function Engine.CheatManager.DumpVoiceMutingState(Exec|Native|Public) // <Game_BE.exe+0x448CDA0>
+	void DumpPartyState(); // Function Engine.CheatManager.DumpPartyState(Exec|Native|Public) // <Game_BE.exe+0x448CD80>
+	void DumpOnlineSessionState(); // Function Engine.CheatManager.DumpOnlineSessionState(Exec|Native|Public) // <Game_BE.exe+0x448CD60>
+	void DumpChatState(); // Function Engine.CheatManager.DumpChatState(Exec|Native|Public) // <Game_BE.exe+0x448CD40>
+	void DisableDebugCamera(); // Function Engine.CheatManager.DisableDebugCamera(Native|Protected|BlueprintCallable) // <Game_BE.exe+0x120D1D0>
+	void DestroyTarget(); // Function Engine.CheatManager.DestroyTarget(Exec|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1EC7280>
+	void DestroyServerStatReplicator(); // Function Engine.CheatManager.DestroyServerStatReplicator(Final|Exec|Native|Public) // <Game_BE.exe+0x448CD20>
+	void DestroyPawns(struct Unknown* aClass); // Function Engine.CheatManager.DestroyPawns(Exec|Native|Public) // <Game_BE.exe+0x448CC90>
+	void DestroyAllPawnsExceptTarget(); // Function Engine.CheatManager.DestroyAllPawnsExceptTarget(Exec|Native|Public) // <Game_BE.exe+0x1EC6D10>
+	void DestroyAll(struct Unknown* aClass); // Function Engine.CheatManager.DestroyAll(Exec|Native|Public) // <Game_BE.exe+0x448CC00>
+	void DebugCapsuleSweepSize(float HalfHeight, float Radius); // Function Engine.CheatManager.DebugCapsuleSweepSize(Exec|Native|Public) // <Game_BE.exe+0x448CB30>
+	void DebugCapsuleSweepPawn(); // Function Engine.CheatManager.DebugCapsuleSweepPawn(Exec|Native|Public) // <Game_BE.exe+0x448CB10>
+	void DebugCapsuleSweepComplex(char bTraceComplex); // Function Engine.CheatManager.DebugCapsuleSweepComplex(Exec|Native|Public) // <Game_BE.exe+0x448CA80>
+	void DebugCapsuleSweepClear(); // Function Engine.CheatManager.DebugCapsuleSweepClear(Exec|Native|Public) // <Game_BE.exe+0x448CA60>
+	void DebugCapsuleSweepChannel(char Channel); // Function Engine.CheatManager.DebugCapsuleSweepChannel(Exec|Native|Public) // <Game_BE.exe+0x448C9E0>
+	void DebugCapsuleSweepCapture(); // Function Engine.CheatManager.DebugCapsuleSweepCapture(Exec|Native|Public) // <Game_BE.exe+0x448C9C0>
+	void DebugCapsuleSweep(); // Function Engine.CheatManager.DebugCapsuleSweep(Exec|Native|Public) // <Game_BE.exe+0x448C9A0>
+	void DamageTarget(float DamageAmount); // Function Engine.CheatManager.DamageTarget(Exec|Native|Public|BlueprintCallable) // <Game_BE.exe+0x448C920>
+	void CheatScript(struct FString ScriptName); // Function Engine.CheatManager.CheatScript(Final|Exec|Native|Public) // <Game_BE.exe+0x448C830>
+	void ChangeSize(float F); // Function Engine.CheatManager.ChangeSize(Exec|Native|Public|BlueprintCallable) // <Game_BE.exe+0x448C7B0>
+	void BugItStringCreator(struct Unknown ViewLocation, struct Unknown ViewRotation, struct FString& GoString, struct FString& LocString); // Function Engine.CheatManager.BugItStringCreator(Exec|Native|Public|HasOutParms|HasDefaults) // <Game_BE.exe+0x448C5E0>
+	void BugItGo(float X, float Y, float Z, float Pitch, float Yaw, float Roll); // Function Engine.CheatManager.BugItGo(Exec|Native|Public) // <Game_BE.exe+0x448C410>
+	void BugIt(struct FString ScreenShotDescription); // Function Engine.CheatManager.BugIt(Exec|Native|Public) // <Game_BE.exe+0x448C360>
 };
 
 // Class Engine.DamageType
@@ -7054,8 +7054,8 @@ public:
 	struct Unknown* SpectatorControllerClass; // 0x928 (8)
 	struct Unknown SelfDemoNetDriver; // 0x930 (8)
 
-	void SetReplaySample(struct Unknown Target, struct Unknown ReplaySample, char bSaveCheckpoint); // Function Engine.MKDemoNetDriverEx.SetReplaySample(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4565E90>
-	void GetReplaySampleArray(struct Unknown Target, struct TArray<Unknown>& OutReplaySampleArray); // Function Engine.MKDemoNetDriverEx.GetReplaySampleArray(Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4564FA0>
+	void SetReplaySample(struct Unknown Target, struct Unknown ReplaySample, char bSaveCheckpoint); // Function Engine.MKDemoNetDriverEx.SetReplaySample(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4565E90>
+	void GetReplaySampleArray(struct Unknown Target, struct TArray<Unknown>& OutReplaySampleArray); // Function Engine.MKDemoNetDriverEx.GetReplaySampleArray(Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x4564FA0>
 };
 
 // Class Engine.DemoNetDriver
@@ -7103,12 +7103,12 @@ public:
 	struct TArray<Unknown> StreamingTextureData; // 0x518 (16)
 	struct Unknown LightmassSettings; // 0x528 (24)
 
-	char SetStaticMesh(struct Unknown NewMesh); // Function Engine.StaticMeshComponent.SetStaticMesh(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x16A39A0>
-	void SetReverseCulling(char ReverseCulling); // Function Engine.StaticMeshComponent.SetReverseCulling(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45EAA80>
-	void SetForcedLodModel(int32_t NewForcedLodModel); // Function Engine.StaticMeshComponent.SetForcedLodModel(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45EA700>
-	void SetDistanceFieldSelfShadowBias(float NewValue); // Function Engine.StaticMeshComponent.SetDistanceFieldSelfShadowBias(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45EA480>
-	void OnRep_StaticMesh(struct Unknown OldStaticMesh); // Function Engine.StaticMeshComponent.OnRep_StaticMesh(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45EA400>
-	void GetLocalBounds(struct Unknown& Min, struct Unknown& MAX); // Function Engine.StaticMeshComponent.GetLocalBounds(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45EA260>
+	char SetStaticMesh(struct Unknown NewMesh); // Function Engine.StaticMeshComponent.SetStaticMesh(Native|Public|BlueprintCallable) // <Game_BE.exe+0x16A39A0>
+	void SetReverseCulling(char ReverseCulling); // Function Engine.StaticMeshComponent.SetReverseCulling(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45EAA80>
+	void SetForcedLodModel(int32_t NewForcedLodModel); // Function Engine.StaticMeshComponent.SetForcedLodModel(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45EA700>
+	void SetDistanceFieldSelfShadowBias(float NewValue); // Function Engine.StaticMeshComponent.SetDistanceFieldSelfShadowBias(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45EA480>
+	void OnRep_StaticMesh(struct Unknown OldStaticMesh); // Function Engine.StaticMeshComponent.OnRep_StaticMesh(Final|Native|Public) // <Game_BE.exe+0x45EA400>
+	void GetLocalBounds(struct Unknown& Min, struct Unknown& MAX); // Function Engine.StaticMeshComponent.GetLocalBounds(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45EA260>
 };
 
 // Class Engine.GameEngine
@@ -7134,17 +7134,17 @@ public:
 	struct Unknown SelfGameInstance; // 0x80 (8)
 	char bLoadingWidgetVisible : 0; // 0x88 (1)
 
-	void SetTargetCamera(char bKiller); // Function Engine.MKGameInstanceEx.SetTargetCamera(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4565FA0>
-	void PlayReplayCommand(struct FString DemoName); // Function Engine.MKGameInstanceEx.PlayReplayCommand(Final|Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4565DA0>
-	char PlayReplay(struct Unknown LocalPlayer, struct FString DemoName); // Function Engine.MKGameInstanceEx.PlayReplay(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4565CB0>
-	void OnKeepAndDeleteOldVersionReplaysCompleteEvent__DelegateSignature(); // DelegateFunction Engine.MKGameInstanceEx.OnKeepAndDeleteOldVersionReplaysCompleteEvent__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnKeepAndDeleteOldestReplaysCompleteEvent__DelegateSignature(int32_t nRemainedReplays, char bSuccess); // DelegateFunction Engine.MKGameInstanceEx.OnKeepAndDeleteOldestReplaysCompleteEvent__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnEnumerateStreamsCompleteEvent__DelegateSignature(int32_t OutPageIndex, int32_t OutPageSize); // DelegateFunction Engine.MKGameInstanceEx.OnEnumerateStreamsCompleteEvent__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnDeleteStreamCompleteEvent__DelegateSignature(struct FString StreamName, char bSuccess); // DelegateFunction Engine.MKGameInstanceEx.OnDeleteStreamCompleteEvent__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	struct FString GetVictimNetGuid(); // Function Engine.MKGameInstanceEx.GetVictimNetGuid(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4565090>
-	void GetNumOfReplays(int32_t& TotalReplays, int32_t& ReplaysToKeep); // Function Engine.MKGameInstanceEx.GetNumOfReplays(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4564EC0>
-	struct FString GetKillerNetGuid(); // Function Engine.MKGameInstanceEx.GetKillerNetGuid(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4564C90>
-	void EnumerateReplayList(int32_t PageIndex, int32_t PageSize); // Function Engine.MKGameInstanceEx.EnumerateReplayList(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45645B0>
+	void SetTargetCamera(char bKiller); // Function Engine.MKGameInstanceEx.SetTargetCamera(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4565FA0>
+	void PlayReplayCommand(struct FString DemoName); // Function Engine.MKGameInstanceEx.PlayReplayCommand(Final|Exec|Native|Public) // <Game_BE.exe+0x4565DA0>
+	char PlayReplay(struct Unknown LocalPlayer, struct FString DemoName); // Function Engine.MKGameInstanceEx.PlayReplay(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4565CB0>
+	void OnKeepAndDeleteOldVersionReplaysCompleteEvent__DelegateSignature(); // DelegateFunction Engine.MKGameInstanceEx.OnKeepAndDeleteOldVersionReplaysCompleteEvent__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B812B0>
+	void OnKeepAndDeleteOldestReplaysCompleteEvent__DelegateSignature(int32_t nRemainedReplays, char bSuccess); // DelegateFunction Engine.MKGameInstanceEx.OnKeepAndDeleteOldestReplaysCompleteEvent__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B812B0>
+	void OnEnumerateStreamsCompleteEvent__DelegateSignature(int32_t OutPageIndex, int32_t OutPageSize); // DelegateFunction Engine.MKGameInstanceEx.OnEnumerateStreamsCompleteEvent__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B812B0>
+	void OnDeleteStreamCompleteEvent__DelegateSignature(struct FString StreamName, char bSuccess); // DelegateFunction Engine.MKGameInstanceEx.OnDeleteStreamCompleteEvent__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B812B0>
+	struct FString GetVictimNetGuid(); // Function Engine.MKGameInstanceEx.GetVictimNetGuid(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x4565090>
+	void GetNumOfReplays(int32_t& TotalReplays, int32_t& ReplaysToKeep); // Function Engine.MKGameInstanceEx.GetNumOfReplays(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x4564EC0>
+	struct FString GetKillerNetGuid(); // Function Engine.MKGameInstanceEx.GetKillerNetGuid(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x4564C90>
+	void EnumerateReplayList(int32_t PageIndex, int32_t PageSize); // Function Engine.MKGameInstanceEx.EnumerateReplayList(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45645B0>
 };
 
 // Class Engine.GameInstance
@@ -7156,12 +7156,12 @@ public:
 	struct Unknown OnlineSession; // 0xC8 (8)
 	struct TArray<Unknown> ReferencedObjects; // 0xD0 (16)
 
-	void ReceiveShutdown(); // Function Engine.GameInstance.ReceiveShutdown(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveInit(); // Function Engine.GameInstance.ReceiveInit(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void HandleTravelError(char FailureType); // Function Engine.GameInstance.HandleTravelError(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void HandleNetworkError(char FailureType, char bIsServer); // Function Engine.GameInstance.HandleNetworkError(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void DebugRemovePlayer(int32_t ControllerId); // Function Engine.GameInstance.DebugRemovePlayer(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B6A00>
-	void DebugCreatePlayer(int32_t ControllerId); // Function Engine.GameInstance.DebugCreatePlayer(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B6970>
+	void ReceiveShutdown(); // Function Engine.GameInstance.ReceiveShutdown(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveInit(); // Function Engine.GameInstance.ReceiveInit(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void HandleTravelError(char FailureType); // Function Engine.GameInstance.HandleTravelError(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void HandleNetworkError(char FailureType, char bIsServer); // Function Engine.GameInstance.HandleNetworkError(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void DebugRemovePlayer(int32_t ControllerId); // Function Engine.GameInstance.DebugRemovePlayer(Exec|Native|Public) // <Game_BE.exe+0x44B6A00>
+	void DebugCreatePlayer(int32_t ControllerId); // Function Engine.GameInstance.DebugCreatePlayer(Exec|Native|Public) // <Game_BE.exe+0x44B6970>
 };
 
 // Class Engine.GameSession
@@ -7196,19 +7196,19 @@ public:
 	int32_t NumPendingLightmaps; // 0x5F4 (4)
 	struct TArray<Unknown> CachedMappings; // 0x5F8 (16)
 
-	char UpdateInstanceTransform(int32_t InstanceIndex, struct Unknown& NewInstanceTransform, char bWorldSpace, char bMarkRenderStateDirty, char bTeleport); // Function Engine.InstancedStaticMeshComponent.UpdateInstanceTransform(Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44D8570>
-	char SetCustomDataValue(int32_t InstanceIndex, int32_t CustomDataIndex, float CustomDataValue, char bMarkRenderStateDirty); // Function Engine.InstancedStaticMeshComponent.SetCustomDataValue(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44D8420>
-	void SetCullDistances(int32_t StartCullDistance, int32_t EndCullDistance); // Function Engine.InstancedStaticMeshComponent.SetCullDistances(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44D8360>
-	char RemoveInstance(int32_t InstanceIndex); // Function Engine.InstancedStaticMeshComponent.RemoveInstance(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44D82C0>
-	char GetInstanceTransform(int32_t InstanceIndex, struct Unknown& OutInstanceTransform, char bWorldSpace); // Function Engine.InstancedStaticMeshComponent.GetInstanceTransform(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44D7EC0>
-	struct TArray<Unknown> GetInstancesOverlappingSphere(struct Unknown& Center, float Radius, char bSphereInWorldSpace); // Function Engine.InstancedStaticMeshComponent.GetInstancesOverlappingSphere(Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44D8150>
-	struct TArray<Unknown> GetInstancesOverlappingBox(struct Unknown& Box, char bBoxInWorldSpace); // Function Engine.InstancedStaticMeshComponent.GetInstancesOverlappingBox(Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44D8020>
-	int32_t GetInstanceCount(); // Function Engine.InstancedStaticMeshComponent.GetInstanceCount(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44D7E90>
-	void ClearInstances(char bClearBodies); // Function Engine.InstancedStaticMeshComponent.ClearInstances(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44D7E00>
-	char BatchUpdateInstancesTransforms(int32_t StartInstanceIndex, struct TArray<Unknown>& NewInstancesTransforms, char bWorldSpace, char bMarkRenderStateDirty, char bTeleport); // Function Engine.InstancedStaticMeshComponent.BatchUpdateInstancesTransforms(Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44D7C10>
-	char BatchUpdateInstancesTransform(int32_t StartInstanceIndex, int32_t NumInstances, struct Unknown& NewInstancesTransform, char bWorldSpace, char bMarkRenderStateDirty, char bTeleport); // Function Engine.InstancedStaticMeshComponent.BatchUpdateInstancesTransform(Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44D79E0>
-	int32_t AddInstanceWorldSpace(struct Unknown& WorldTransform); // Function Engine.InstancedStaticMeshComponent.AddInstanceWorldSpace(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44D7900>
-	int32_t AddInstance(struct Unknown& InstanceTransform); // Function Engine.InstancedStaticMeshComponent.AddInstance(Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44D7820>
+	char UpdateInstanceTransform(int32_t InstanceIndex, struct Unknown& NewInstanceTransform, char bWorldSpace, char bMarkRenderStateDirty, char bTeleport); // Function Engine.InstancedStaticMeshComponent.UpdateInstanceTransform(Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x44D8570>
+	char SetCustomDataValue(int32_t InstanceIndex, int32_t CustomDataIndex, float CustomDataValue, char bMarkRenderStateDirty); // Function Engine.InstancedStaticMeshComponent.SetCustomDataValue(Native|Public|BlueprintCallable) // <Game_BE.exe+0x44D8420>
+	void SetCullDistances(int32_t StartCullDistance, int32_t EndCullDistance); // Function Engine.InstancedStaticMeshComponent.SetCullDistances(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44D8360>
+	char RemoveInstance(int32_t InstanceIndex); // Function Engine.InstancedStaticMeshComponent.RemoveInstance(Native|Public|BlueprintCallable) // <Game_BE.exe+0x44D82C0>
+	char GetInstanceTransform(int32_t InstanceIndex, struct Unknown& OutInstanceTransform, char bWorldSpace); // Function Engine.InstancedStaticMeshComponent.GetInstanceTransform(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44D7EC0>
+	struct TArray<Unknown> GetInstancesOverlappingSphere(struct Unknown& Center, float Radius, char bSphereInWorldSpace); // Function Engine.InstancedStaticMeshComponent.GetInstancesOverlappingSphere(Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44D8150>
+	struct TArray<Unknown> GetInstancesOverlappingBox(struct Unknown& Box, char bBoxInWorldSpace); // Function Engine.InstancedStaticMeshComponent.GetInstancesOverlappingBox(Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44D8020>
+	int32_t GetInstanceCount(); // Function Engine.InstancedStaticMeshComponent.GetInstanceCount(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44D7E90>
+	void ClearInstances(char bClearBodies); // Function Engine.InstancedStaticMeshComponent.ClearInstances(Native|Public|BlueprintCallable) // <Game_BE.exe+0x44D7E00>
+	char BatchUpdateInstancesTransforms(int32_t StartInstanceIndex, struct TArray<Unknown>& NewInstancesTransforms, char bWorldSpace, char bMarkRenderStateDirty, char bTeleport); // Function Engine.InstancedStaticMeshComponent.BatchUpdateInstancesTransforms(Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x44D7C10>
+	char BatchUpdateInstancesTransform(int32_t StartInstanceIndex, int32_t NumInstances, struct Unknown& NewInstancesTransform, char bWorldSpace, char bMarkRenderStateDirty, char bTeleport); // Function Engine.InstancedStaticMeshComponent.BatchUpdateInstancesTransform(Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x44D79E0>
+	int32_t AddInstanceWorldSpace(struct Unknown& WorldTransform); // Function Engine.InstancedStaticMeshComponent.AddInstanceWorldSpace(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x44D7900>
+	int32_t AddInstance(struct Unknown& InstanceTransform); // Function Engine.InstancedStaticMeshComponent.AddInstance(Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x44D7820>
 };
 
 // Class Engine.HierarchicalInstancedStaticMeshComponent
@@ -7227,8 +7227,8 @@ public:
 	char bDisableCollision : 0; // 0x6A0 (1)
 	int32_t InstanceCountToRender; // 0x6A4 (4)
 
-	char RemoveInstances(struct TArray<Unknown>& InstancesToRemove); // Function Engine.HierarchicalInstancedStaticMeshComponent.RemoveInstances(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44CC570>
-	char DisableInstance(int32_t InstanceIndex); // Function Engine.HierarchicalInstancedStaticMeshComponent.DisableInstance(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44CAA40>
+	char RemoveInstances(struct TArray<Unknown>& InstancesToRemove); // Function Engine.HierarchicalInstancedStaticMeshComponent.RemoveInstances(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x44CC570>
+	char DisableInstance(int32_t InstanceIndex); // Function Engine.HierarchicalInstancedStaticMeshComponent.DisableInstance(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44CAA40>
 };
 
 // Class Engine.MK3DReplayController
@@ -7254,56 +7254,56 @@ public:
 	struct FString ReplayHUDClassName; // 0x918 (16)
 	struct Unknown* ReplayHUDClass; // 0x928 (8)
 
-	void ToggleReplayPauseAndResume(); // Function Engine.MK3DReplayController.ToggleReplayPauseAndResume(Final|Native|Protected|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4561420>
-	void TimerFuncPendingSetPlayerCameraNetGuid(); // Function Engine.MK3DReplayController.TimerFuncPendingSetPlayerCameraNetGuid(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4561400>
-	void TimerFuncPendingSetPlayerCamera(); // Function Engine.MK3DReplayController.TimerFuncPendingSetPlayerCamera(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45613E0>
-	void TimerFuncClearTimerSetPlayerCameraNetGuid(); // Function Engine.MK3DReplayController.TimerFuncClearTimerSetPlayerCameraNetGuid(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45613C0>
-	void TimerFuncClearTimerSetPlayerCamera(); // Function Engine.MK3DReplayController.TimerFuncClearTimerSetPlayerCamera(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45613A0>
-	void ShowInGameReplayHUD(); // Function Engine.MK3DReplayController.ShowInGameReplayHUD(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4561380>
-	void SetSpeedByIndex(int32_t WantSpeedIndex); // Function Engine.MK3DReplayController.SetSpeedByIndex(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4561300>
-	void SetSpeed(float PlayTimeDilation); // Function Engine.MK3DReplayController.SetSpeed(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4561280>
-	char SetPlayerCamera(struct FString TargetName); // Function Engine.MK3DReplayController.SetPlayerCamera(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45611D0>
-	void SetKillcamTargetCamera(char bKiller); // Function Engine.MK3DReplayController.SetKillcamTargetCamera(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4561140>
-	char SetFreeCamera(struct Unknown& Pos, struct Unknown& Rot); // Function Engine.MK3DReplayController.SetFreeCamera(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4561040>
-	char ResumeReplay(); // Function Engine.MK3DReplayController.ResumeReplay(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4561010>
-	void RestoreCameraLag(); // Function Engine.MK3DReplayController.RestoreCameraLag(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4560FF0>
-	char PauseReplay(); // Function Engine.MK3DReplayController.PauseReplay(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4560E90>
-	void OnSetSpeedDelegate__DelegateSignature(); // DelegateFunction Engine.MK3DReplayController.OnSetSpeedDelegate__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnReplayPause__DelegateSignature(char bPaused); // DelegateFunction Engine.MK3DReplayController.OnReplayPause__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnReplayJumpComplete__DelegateSignature(char bSuccess); // DelegateFunction Engine.MK3DReplayController.OnReplayJumpComplete__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnReplayJump__DelegateSignature(float TimeInSec); // DelegateFunction Engine.MK3DReplayController.OnReplayJump__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnGoToEndTime(); // Function Engine.MK3DReplayController.OnGoToEndTime(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4560B20>
-	void OnGoToBeginTime(); // Function Engine.MK3DReplayController.OnGoToBeginTime(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4560B00>
-	void OnFreeCamera(); // Function Engine.MK3DReplayController.OnFreeCamera(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4560AE0>
-	void OnFindActorsByCursorStop(); // Function Engine.MK3DReplayController.OnFindActorsByCursorStop(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4560AC0>
-	void OnFindActorsByCursorStart(); // Function Engine.MK3DReplayController.OnFindActorsByCursorStart(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4560AA0>
-	void MK3DReplayController_EnableReplayKillcamUI(char bEnable); // Function Engine.MK3DReplayController.MK3DReplayController_EnableReplayKillcamUI(Final|Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4560A10>
-	char IsReplaying(); // Function Engine.MK3DReplayController.IsReplaying(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45609E0>
-	char IsPlayingReplay(); // Function Engine.MK3DReplayController.IsPlayingReplay(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45609B0>
-	char IsPlayingLiveReplay(); // Function Engine.MK3DReplayController.IsPlayingLiveReplay(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4560980>
-	char IsPlayingKillcamAndBlockUI(); // Function Engine.MK3DReplayController.IsPlayingKillcamAndBlockUI(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4560950>
-	char IsPlayingKillcam(); // Function Engine.MK3DReplayController.IsPlayingKillcam(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4560920>
-	char IsPlayerViewMode(); // Function Engine.MK3DReplayController.IsPlayerViewMode(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45608F0>
-	char IsPlayerCamera(); // Function Engine.MK3DReplayController.IsPlayerCamera(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45608C0>
-	char IsPaused(); // Function Engine.MK3DReplayController.IsPaused(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4560890>
-	char IsFreeCamera(); // Function Engine.MK3DReplayController.IsFreeCamera(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4560860>
-	char IsFollowViewMode(); // Function Engine.MK3DReplayController.IsFollowViewMode(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4560830>
-	void IncreaseSpeedByIndex(); // Function Engine.MK3DReplayController.IncreaseSpeedByIndex(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4560810>
-	float GetTotalTimeInSec(); // Function Engine.MK3DReplayController.GetTotalTimeInSec(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45607E0>
-	struct Unknown GetTargetPlayer(); // Function Engine.MK3DReplayController.GetTargetPlayer(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45607B0>
-	float GetSpeed(); // Function Engine.MK3DReplayController.GetSpeed(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4560780>
-	float GetReplayJumpDelay(); // Function Engine.MK3DReplayController.GetReplayJumpDelay(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4560750>
-	enum class Unknow GetReplayCameraType(); // Function Engine.MK3DReplayController.GetReplayCameraType(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4560720>
-	struct Unknown GetPlayerCharacter(); // Function Engine.MK3DReplayController.GetPlayerCharacter(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45606F0>
-	enum class Unknow GetLatestReplayCameraType(); // Function Engine.MK3DReplayController.GetLatestReplayCameraType(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45606C0>
-	int32_t GetCurrnetSpeedIndex(); // Function Engine.MK3DReplayController.GetCurrnetSpeedIndex(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4560690>
-	float GetCurrentTimeInSec(); // Function Engine.MK3DReplayController.GetCurrentTimeInSec(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4560660>
-	char FindViewTargetByName(struct FString TargetName, struct Unknown& OutTarget); // Function Engine.MK3DReplayController.FindViewTargetByName(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4560560>
-	int32_t FindSpeedIndex(float fSpeed); // Function Engine.MK3DReplayController.FindSpeedIndex(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45604D0>
-	void DecreaseSpeedByIndex(); // Function Engine.MK3DReplayController.DecreaseSpeedByIndex(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45604B0>
-	void ChangeViewModeDelegate__DelegateSignature(char ViewMode); // DelegateFunction Engine.MK3DReplayController.ChangeViewModeDelegate__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ChangeCameraTypeDelegate__DelegateSignature(enum class Unknow CameraType, struct FString TargetPlayerName); // DelegateFunction Engine.MK3DReplayController.ChangeCameraTypeDelegate__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ChangeCameraTypeByNetGuidDelegate__DelegateSignature(enum class Unknow CameraType, struct FString TargetPlayerNetGuid); // DelegateFunction Engine.MK3DReplayController.ChangeCameraTypeByNetGuidDelegate__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void ToggleReplayPauseAndResume(); // Function Engine.MK3DReplayController.ToggleReplayPauseAndResume(Final|Native|Protected|BlueprintCallable) // <Game_BE.exe+0x4561420>
+	void TimerFuncPendingSetPlayerCameraNetGuid(); // Function Engine.MK3DReplayController.TimerFuncPendingSetPlayerCameraNetGuid(Final|Native|Private) // <Game_BE.exe+0x4561400>
+	void TimerFuncPendingSetPlayerCamera(); // Function Engine.MK3DReplayController.TimerFuncPendingSetPlayerCamera(Final|Native|Private) // <Game_BE.exe+0x45613E0>
+	void TimerFuncClearTimerSetPlayerCameraNetGuid(); // Function Engine.MK3DReplayController.TimerFuncClearTimerSetPlayerCameraNetGuid(Final|Native|Private) // <Game_BE.exe+0x45613C0>
+	void TimerFuncClearTimerSetPlayerCamera(); // Function Engine.MK3DReplayController.TimerFuncClearTimerSetPlayerCamera(Final|Native|Private) // <Game_BE.exe+0x45613A0>
+	void ShowInGameReplayHUD(); // Function Engine.MK3DReplayController.ShowInGameReplayHUD(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4561380>
+	void SetSpeedByIndex(int32_t WantSpeedIndex); // Function Engine.MK3DReplayController.SetSpeedByIndex(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4561300>
+	void SetSpeed(float PlayTimeDilation); // Function Engine.MK3DReplayController.SetSpeed(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4561280>
+	char SetPlayerCamera(struct FString TargetName); // Function Engine.MK3DReplayController.SetPlayerCamera(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45611D0>
+	void SetKillcamTargetCamera(char bKiller); // Function Engine.MK3DReplayController.SetKillcamTargetCamera(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4561140>
+	char SetFreeCamera(struct Unknown& Pos, struct Unknown& Rot); // Function Engine.MK3DReplayController.SetFreeCamera(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4561040>
+	char ResumeReplay(); // Function Engine.MK3DReplayController.ResumeReplay(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4561010>
+	void RestoreCameraLag(); // Function Engine.MK3DReplayController.RestoreCameraLag(Final|Native|Private) // <Game_BE.exe+0x4560FF0>
+	char PauseReplay(); // Function Engine.MK3DReplayController.PauseReplay(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4560E90>
+	void OnSetSpeedDelegate__DelegateSignature(); // DelegateFunction Engine.MK3DReplayController.OnSetSpeedDelegate__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B812B0>
+	void OnReplayPause__DelegateSignature(char bPaused); // DelegateFunction Engine.MK3DReplayController.OnReplayPause__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B812B0>
+	void OnReplayJumpComplete__DelegateSignature(char bSuccess); // DelegateFunction Engine.MK3DReplayController.OnReplayJumpComplete__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B812B0>
+	void OnReplayJump__DelegateSignature(float TimeInSec); // DelegateFunction Engine.MK3DReplayController.OnReplayJump__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B812B0>
+	void OnGoToEndTime(); // Function Engine.MK3DReplayController.OnGoToEndTime(Final|Native|Public) // <Game_BE.exe+0x4560B20>
+	void OnGoToBeginTime(); // Function Engine.MK3DReplayController.OnGoToBeginTime(Final|Native|Public) // <Game_BE.exe+0x4560B00>
+	void OnFreeCamera(); // Function Engine.MK3DReplayController.OnFreeCamera(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4560AE0>
+	void OnFindActorsByCursorStop(); // Function Engine.MK3DReplayController.OnFindActorsByCursorStop(Final|Native|Public) // <Game_BE.exe+0x4560AC0>
+	void OnFindActorsByCursorStart(); // Function Engine.MK3DReplayController.OnFindActorsByCursorStart(Final|Native|Public) // <Game_BE.exe+0x4560AA0>
+	void MK3DReplayController_EnableReplayKillcamUI(char bEnable); // Function Engine.MK3DReplayController.MK3DReplayController_EnableReplayKillcamUI(Final|Exec|Native|Public) // <Game_BE.exe+0x4560A10>
+	char IsReplaying(); // Function Engine.MK3DReplayController.IsReplaying(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x45609E0>
+	char IsPlayingReplay(); // Function Engine.MK3DReplayController.IsPlayingReplay(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x45609B0>
+	char IsPlayingLiveReplay(); // Function Engine.MK3DReplayController.IsPlayingLiveReplay(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x4560980>
+	char IsPlayingKillcamAndBlockUI(); // Function Engine.MK3DReplayController.IsPlayingKillcamAndBlockUI(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x4560950>
+	char IsPlayingKillcam(); // Function Engine.MK3DReplayController.IsPlayingKillcam(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x4560920>
+	char IsPlayerViewMode(); // Function Engine.MK3DReplayController.IsPlayerViewMode(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x45608F0>
+	char IsPlayerCamera(); // Function Engine.MK3DReplayController.IsPlayerCamera(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45608C0>
+	char IsPaused(); // Function Engine.MK3DReplayController.IsPaused(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x4560890>
+	char IsFreeCamera(); // Function Engine.MK3DReplayController.IsFreeCamera(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x4560860>
+	char IsFollowViewMode(); // Function Engine.MK3DReplayController.IsFollowViewMode(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x4560830>
+	void IncreaseSpeedByIndex(); // Function Engine.MK3DReplayController.IncreaseSpeedByIndex(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4560810>
+	float GetTotalTimeInSec(); // Function Engine.MK3DReplayController.GetTotalTimeInSec(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45607E0>
+	struct Unknown GetTargetPlayer(); // Function Engine.MK3DReplayController.GetTargetPlayer(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45607B0>
+	float GetSpeed(); // Function Engine.MK3DReplayController.GetSpeed(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4560780>
+	float GetReplayJumpDelay(); // Function Engine.MK3DReplayController.GetReplayJumpDelay(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4560750>
+	enum class Unknow GetReplayCameraType(); // Function Engine.MK3DReplayController.GetReplayCameraType(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4560720>
+	struct Unknown GetPlayerCharacter(); // Function Engine.MK3DReplayController.GetPlayerCharacter(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45606F0>
+	enum class Unknow GetLatestReplayCameraType(); // Function Engine.MK3DReplayController.GetLatestReplayCameraType(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45606C0>
+	int32_t GetCurrnetSpeedIndex(); // Function Engine.MK3DReplayController.GetCurrnetSpeedIndex(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4560690>
+	float GetCurrentTimeInSec(); // Function Engine.MK3DReplayController.GetCurrentTimeInSec(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4560660>
+	char FindViewTargetByName(struct FString TargetName, struct Unknown& OutTarget); // Function Engine.MK3DReplayController.FindViewTargetByName(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x4560560>
+	int32_t FindSpeedIndex(float fSpeed); // Function Engine.MK3DReplayController.FindSpeedIndex(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45604D0>
+	void DecreaseSpeedByIndex(); // Function Engine.MK3DReplayController.DecreaseSpeedByIndex(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45604B0>
+	void ChangeViewModeDelegate__DelegateSignature(char ViewMode); // DelegateFunction Engine.MK3DReplayController.ChangeViewModeDelegate__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B812B0>
+	void ChangeCameraTypeDelegate__DelegateSignature(enum class Unknow CameraType, struct FString TargetPlayerName); // DelegateFunction Engine.MK3DReplayController.ChangeCameraTypeDelegate__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B812B0>
+	void ChangeCameraTypeByNetGuidDelegate__DelegateSignature(enum class Unknow CameraType, struct FString TargetPlayerNetGuid); // DelegateFunction Engine.MK3DReplayController.ChangeCameraTypeByNetGuidDelegate__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B812B0>
 };
 
 // Class Engine.DefaultPawn
@@ -7318,11 +7318,11 @@ public:
 	struct Unknown MeshComponent; // 0x388 (8)
 	char bAddDefaultMovementBindings : 0; // 0x390 (1)
 
-	void TurnAtRate(float Rate); // Function Engine.DefaultPawn.TurnAtRate(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4499D10>
-	void MoveUp_World(float Val); // Function Engine.DefaultPawn.MoveUp_World(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44993A0>
-	void MoveRight(float Val); // Function Engine.DefaultPawn.MoveRight(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4499320>
-	void MoveForward(float Val); // Function Engine.DefaultPawn.MoveForward(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44992A0>
-	void LookUpAtRate(float Rate); // Function Engine.DefaultPawn.LookUpAtRate(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4499220>
+	void TurnAtRate(float Rate); // Function Engine.DefaultPawn.TurnAtRate(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4499D10>
+	void MoveUp_World(float Val); // Function Engine.DefaultPawn.MoveUp_World(Native|Public|BlueprintCallable) // <Game_BE.exe+0x44993A0>
+	void MoveRight(float Val); // Function Engine.DefaultPawn.MoveRight(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4499320>
+	void MoveForward(float Val); // Function Engine.DefaultPawn.MoveForward(Native|Public|BlueprintCallable) // <Game_BE.exe+0x44992A0>
+	void LookUpAtRate(float Rate); // Function Engine.DefaultPawn.LookUpAtRate(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4499220>
 };
 
 // Class Engine.PhysicalMaterial
@@ -7386,36 +7386,36 @@ public:
 	float ViewRollMax; // 0x2B08 (4)
 	float ServerUpdateCameraTimeout; // 0x2B10 (4)
 
-	void StopCameraShake(struct Unknown ShakeInstance, char bImmediately); // Function Engine.PlayerCameraManager.StopCameraShake(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x458D270>
-	void StopCameraFade(); // Function Engine.PlayerCameraManager.StopCameraFade(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x204E1D0>
-	void StopCameraAnimInst(struct Unknown AnimInst, char bImmediate); // Function Engine.PlayerCameraManager.StopCameraAnimInst(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x458D1A0>
-	void StopAllInstancesOfCameraShakeFromSource(struct Unknown SourceComponent, char bImmediately); // Function Engine.PlayerCameraManager.StopAllInstancesOfCameraShakeFromSource(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x458D0D0>
-	void StopAllInstancesOfCameraShake(struct Unknown* Shake, char bImmediately); // Function Engine.PlayerCameraManager.StopAllInstancesOfCameraShake(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x458D000>
-	void StopAllInstancesOfCameraAnim(struct Unknown Anim, char bImmediate); // Function Engine.PlayerCameraManager.StopAllInstancesOfCameraAnim(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x458CF30>
-	void StopAllCameraShakes(char bImmediately); // Function Engine.PlayerCameraManager.StopAllCameraShakes(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x458CEA0>
-	void StopAllCameraAnims(char bImmediate); // Function Engine.PlayerCameraManager.StopAllCameraAnims(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x458CE10>
-	void StartCameraFade(float FromAlpha, float ToAlpha, float Duration, struct Unknown Color, char bShouldFadeAudio, char bHoldWhenFinished); // Function Engine.PlayerCameraManager.StartCameraFade(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x458CC40>
-	void SetManualCameraFade(float InFadeAmount, struct Unknown Color, char bInFadeAudio); // Function Engine.PlayerCameraManager.SetManualCameraFade(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x458CB20>
-	void SetGameCameraCutThisFrame(); // Function Engine.PlayerCameraManager.SetGameCameraCutThisFrame(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x458CB00>
-	char RemoveCameraModifier(struct Unknown ModifierToRemove); // Function Engine.PlayerCameraManager.RemoveCameraModifier(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x458CA60>
-	void RemoveCameraLensEffect(struct Unknown Emitter); // Function Engine.PlayerCameraManager.RemoveCameraLensEffect(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B7150>
-	struct Unknown PlayCameraShakeFromSource(struct Unknown* ShakeClass, struct Unknown SourceComponent); // Function Engine.PlayerCameraManager.PlayCameraShakeFromSource(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x458C990>
-	struct Unknown PlayCameraShake(struct Unknown* ShakeClass, float Scale, char PlaySpace, struct Unknown UserPlaySpaceRot); // Function Engine.PlayerCameraManager.PlayCameraShake(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x458C820>
-	struct Unknown PlayCameraAnim(struct Unknown Anim, float Rate, float Scale, float BlendInTime, float BlendOutTime, char bLoop, char bRandomStartTime, float Duration, char PlaySpace, struct Unknown UserPlaySpaceRot); // Function Engine.PlayerCameraManager.PlayCameraAnim(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x458C540>
-	void PhotographyCameraModify(struct Unknown NewCameraLocation, struct Unknown PreviousCameraLocation, struct Unknown OriginalCameraLocation, struct Unknown& ResultCameraLocation); // Function Engine.PlayerCameraManager.PhotographyCameraModify(BlueprintCosmetic|Native|Event|Public|HasOutParms|HasDefaults|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x458C3C0>
-	void OnPhotographySessionStart(); // Function Engine.PlayerCameraManager.OnPhotographySessionStart(BlueprintCosmetic|Native|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F3BD20>
-	void OnPhotographySessionEnd(); // Function Engine.PlayerCameraManager.OnPhotographySessionEnd(BlueprintCosmetic|Native|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F3D5C0>
-	void OnPhotographyMultiPartCaptureStart(); // Function Engine.PlayerCameraManager.OnPhotographyMultiPartCaptureStart(BlueprintCosmetic|Native|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124CBD0>
-	void OnPhotographyMultiPartCaptureEnd(); // Function Engine.PlayerCameraManager.OnPhotographyMultiPartCaptureEnd(BlueprintCosmetic|Native|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1E71C00>
-	struct Unknown GetOwningPlayerController(); // Function Engine.PlayerCameraManager.GetOwningPlayerController(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x458C1E0>
-	float GetFOVAngle(); // Function Engine.PlayerCameraManager.GetFOVAngle(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x458BF10>
-	struct Unknown GetCameraRotation(); // Function Engine.PlayerCameraManager.GetCameraRotation(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x458BED0>
-	struct Unknown GetCameraLocation(); // Function Engine.PlayerCameraManager.GetCameraLocation(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x458BE90>
-	struct Unknown FindCameraModifierByClass(struct Unknown* ModifierClass); // Function Engine.PlayerCameraManager.FindCameraModifierByClass(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x458BDF0>
-	void ClearCameraLensEffects(); // Function Engine.PlayerCameraManager.ClearCameraLensEffects(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x204C9D0>
-	char BlueprintUpdateCamera(struct Unknown CameraTarget, struct Unknown& NewCameraLocation, struct Unknown& NewCameraRotation, float& NewCameraFOV); // Function Engine.PlayerCameraManager.BlueprintUpdateCamera(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	struct Unknown AddNewCameraModifier(struct Unknown* ModifierClass); // Function Engine.PlayerCameraManager.AddNewCameraModifier(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x458BD50>
-	struct Unknown AddCameraLensEffect(struct Unknown* LensEffectEmitterClass); // Function Engine.PlayerCameraManager.AddCameraLensEffect(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x458BCB0>
+	void StopCameraShake(struct Unknown ShakeInstance, char bImmediately); // Function Engine.PlayerCameraManager.StopCameraShake(Native|Public|BlueprintCallable) // <Game_BE.exe+0x458D270>
+	void StopCameraFade(); // Function Engine.PlayerCameraManager.StopCameraFade(Native|Public|BlueprintCallable) // <Game_BE.exe+0x204E1D0>
+	void StopCameraAnimInst(struct Unknown AnimInst, char bImmediate); // Function Engine.PlayerCameraManager.StopCameraAnimInst(Native|Public|BlueprintCallable) // <Game_BE.exe+0x458D1A0>
+	void StopAllInstancesOfCameraShakeFromSource(struct Unknown SourceComponent, char bImmediately); // Function Engine.PlayerCameraManager.StopAllInstancesOfCameraShakeFromSource(Native|Public|BlueprintCallable) // <Game_BE.exe+0x458D0D0>
+	void StopAllInstancesOfCameraShake(struct Unknown* Shake, char bImmediately); // Function Engine.PlayerCameraManager.StopAllInstancesOfCameraShake(Native|Public|BlueprintCallable) // <Game_BE.exe+0x458D000>
+	void StopAllInstancesOfCameraAnim(struct Unknown Anim, char bImmediate); // Function Engine.PlayerCameraManager.StopAllInstancesOfCameraAnim(Native|Public|BlueprintCallable) // <Game_BE.exe+0x458CF30>
+	void StopAllCameraShakes(char bImmediately); // Function Engine.PlayerCameraManager.StopAllCameraShakes(Native|Public|BlueprintCallable) // <Game_BE.exe+0x458CEA0>
+	void StopAllCameraAnims(char bImmediate); // Function Engine.PlayerCameraManager.StopAllCameraAnims(Native|Public|BlueprintCallable) // <Game_BE.exe+0x458CE10>
+	void StartCameraFade(float FromAlpha, float ToAlpha, float Duration, struct Unknown Color, char bShouldFadeAudio, char bHoldWhenFinished); // Function Engine.PlayerCameraManager.StartCameraFade(Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x458CC40>
+	void SetManualCameraFade(float InFadeAmount, struct Unknown Color, char bInFadeAudio); // Function Engine.PlayerCameraManager.SetManualCameraFade(Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x458CB20>
+	void SetGameCameraCutThisFrame(); // Function Engine.PlayerCameraManager.SetGameCameraCutThisFrame(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x458CB00>
+	char RemoveCameraModifier(struct Unknown ModifierToRemove); // Function Engine.PlayerCameraManager.RemoveCameraModifier(Native|Public|BlueprintCallable) // <Game_BE.exe+0x458CA60>
+	void RemoveCameraLensEffect(struct Unknown Emitter); // Function Engine.PlayerCameraManager.RemoveCameraLensEffect(Native|Public|BlueprintCallable) // <Game_BE.exe+0x44B7150>
+	struct Unknown PlayCameraShakeFromSource(struct Unknown* ShakeClass, struct Unknown SourceComponent); // Function Engine.PlayerCameraManager.PlayCameraShakeFromSource(Native|Public|BlueprintCallable) // <Game_BE.exe+0x458C990>
+	struct Unknown PlayCameraShake(struct Unknown* ShakeClass, float Scale, char PlaySpace, struct Unknown UserPlaySpaceRot); // Function Engine.PlayerCameraManager.PlayCameraShake(Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x458C820>
+	struct Unknown PlayCameraAnim(struct Unknown Anim, float Rate, float Scale, float BlendInTime, float BlendOutTime, char bLoop, char bRandomStartTime, float Duration, char PlaySpace, struct Unknown UserPlaySpaceRot); // Function Engine.PlayerCameraManager.PlayCameraAnim(Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x458C540>
+	void PhotographyCameraModify(struct Unknown NewCameraLocation, struct Unknown PreviousCameraLocation, struct Unknown OriginalCameraLocation, struct Unknown& ResultCameraLocation); // Function Engine.PlayerCameraManager.PhotographyCameraModify(BlueprintCosmetic|Native|Event|Public|HasOutParms|HasDefaults|BlueprintEvent) // <Game_BE.exe+0x458C3C0>
+	void OnPhotographySessionStart(); // Function Engine.PlayerCameraManager.OnPhotographySessionStart(BlueprintCosmetic|Native|Event|Public|BlueprintEvent) // <Game_BE.exe+0x1F3BD20>
+	void OnPhotographySessionEnd(); // Function Engine.PlayerCameraManager.OnPhotographySessionEnd(BlueprintCosmetic|Native|Event|Public|BlueprintEvent) // <Game_BE.exe+0x1F3D5C0>
+	void OnPhotographyMultiPartCaptureStart(); // Function Engine.PlayerCameraManager.OnPhotographyMultiPartCaptureStart(BlueprintCosmetic|Native|Event|Public|BlueprintEvent) // <Game_BE.exe+0x124CBD0>
+	void OnPhotographyMultiPartCaptureEnd(); // Function Engine.PlayerCameraManager.OnPhotographyMultiPartCaptureEnd(BlueprintCosmetic|Native|Event|Public|BlueprintEvent) // <Game_BE.exe+0x1E71C00>
+	struct Unknown GetOwningPlayerController(); // Function Engine.PlayerCameraManager.GetOwningPlayerController(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x458C1E0>
+	float GetFOVAngle(); // Function Engine.PlayerCameraManager.GetFOVAngle(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x458BF10>
+	struct Unknown GetCameraRotation(); // Function Engine.PlayerCameraManager.GetCameraRotation(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x458BED0>
+	struct Unknown GetCameraLocation(); // Function Engine.PlayerCameraManager.GetCameraLocation(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x458BE90>
+	struct Unknown FindCameraModifierByClass(struct Unknown* ModifierClass); // Function Engine.PlayerCameraManager.FindCameraModifierByClass(Native|Public|BlueprintCallable) // <Game_BE.exe+0x458BDF0>
+	void ClearCameraLensEffects(); // Function Engine.PlayerCameraManager.ClearCameraLensEffects(Native|Public|BlueprintCallable) // <Game_BE.exe+0x204C9D0>
+	char BlueprintUpdateCamera(struct Unknown CameraTarget, struct Unknown& NewCameraLocation, struct Unknown& NewCameraRotation, float& NewCameraFOV); // Function Engine.PlayerCameraManager.BlueprintUpdateCamera(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	struct Unknown AddNewCameraModifier(struct Unknown* ModifierClass); // Function Engine.PlayerCameraManager.AddNewCameraModifier(Native|Public|BlueprintCallable) // <Game_BE.exe+0x458BD50>
+	struct Unknown AddCameraLensEffect(struct Unknown* LensEffectEmitterClass); // Function Engine.PlayerCameraManager.AddCameraLensEffect(Native|Public|BlueprintCallable) // <Game_BE.exe+0x458BCB0>
 };
 
 // Class Engine.MKPlayerStateEx
@@ -7447,14 +7447,14 @@ public:
 	struct Unknown PawnPrivate; // 0x368 (8)
 	struct FString PlayerNamePrivate; // 0x3E8 (16)
 
-	void ReceiveOverrideWith(struct Unknown OldPlayerState); // Function Engine.PlayerState.ReceiveOverrideWith(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveCopyProperties(struct Unknown NewPlayerState); // Function Engine.PlayerState.ReceiveCopyProperties(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnRep_UniqueId(); // Function Engine.PlayerState.OnRep_UniqueId(Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124CE40>
-	void OnRep_Score(); // Function Engine.PlayerState.OnRep_Score(Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F3BD20>
-	void OnRep_PlayerName(); // Function Engine.PlayerState.OnRep_PlayerName(Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11E25A0>
-	void OnRep_PlayerId(); // Function Engine.PlayerState.OnRep_PlayerId(Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124CB00>
-	void OnRep_bIsInactive(); // Function Engine.PlayerState.OnRep_bIsInactive(Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4460EB0>
-	struct FString GetPlayerName(); // Function Engine.PlayerState.GetPlayerName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x459C1E0>
+	void ReceiveOverrideWith(struct Unknown OldPlayerState); // Function Engine.PlayerState.ReceiveOverrideWith(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveCopyProperties(struct Unknown NewPlayerState); // Function Engine.PlayerState.ReceiveCopyProperties(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnRep_UniqueId(); // Function Engine.PlayerState.OnRep_UniqueId(Native|Public) // <Game_BE.exe+0x124CE40>
+	void OnRep_Score(); // Function Engine.PlayerState.OnRep_Score(Native|Public) // <Game_BE.exe+0x1F3BD20>
+	void OnRep_PlayerName(); // Function Engine.PlayerState.OnRep_PlayerName(Native|Public) // <Game_BE.exe+0x11E25A0>
+	void OnRep_PlayerId(); // Function Engine.PlayerState.OnRep_PlayerId(Native|Public) // <Game_BE.exe+0x124CB00>
+	void OnRep_bIsInactive(); // Function Engine.PlayerState.OnRep_bIsInactive(Native|Public) // <Game_BE.exe+0x4460EB0>
+	struct FString GetPlayerName(); // Function Engine.PlayerState.GetPlayerName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x459C1E0>
 };
 
 // Class Engine.SceneCaptureComponent
@@ -7481,15 +7481,15 @@ public:
 	struct TArray<Unknown> ShowFlagSettings; // 0x280 (16)
 	struct FString ProfilingEventName; // 0x2A0 (16)
 
-	void ShowOnlyComponent(struct Unknown InComponent); // Function Engine.SceneCaptureComponent.ShowOnlyComponent(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B85B0>
-	void ShowOnlyActorComponents(struct Unknown InActor, char bIncludeFromChildActors); // Function Engine.SceneCaptureComponent.ShowOnlyActorComponents(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B84E0>
-	void SetCaptureSortPriority(int32_t NewCaptureSortPriority); // Function Engine.SceneCaptureComponent.SetCaptureSortPriority(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B8090>
-	void RemoveShowOnlyComponent(struct Unknown InComponent); // Function Engine.SceneCaptureComponent.RemoveShowOnlyComponent(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B7ED0>
-	void RemoveShowOnlyActorComponents(struct Unknown InActor, char bIncludeFromChildActors); // Function Engine.SceneCaptureComponent.RemoveShowOnlyActorComponents(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B7E00>
-	void HideComponent(struct Unknown InComponent); // Function Engine.SceneCaptureComponent.HideComponent(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B5A00>
-	void HideActorComponents(struct Unknown InActor, char bIncludeFromChildActors); // Function Engine.SceneCaptureComponent.HideActorComponents(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B5930>
-	void ClearShowOnlyComponents(); // Function Engine.SceneCaptureComponent.ClearShowOnlyComponents(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B4FF0>
-	void ClearHiddenComponents(); // Function Engine.SceneCaptureComponent.ClearHiddenComponents(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B4FD0>
+	void ShowOnlyComponent(struct Unknown InComponent); // Function Engine.SceneCaptureComponent.ShowOnlyComponent(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45B85B0>
+	void ShowOnlyActorComponents(struct Unknown InActor, char bIncludeFromChildActors); // Function Engine.SceneCaptureComponent.ShowOnlyActorComponents(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45B84E0>
+	void SetCaptureSortPriority(int32_t NewCaptureSortPriority); // Function Engine.SceneCaptureComponent.SetCaptureSortPriority(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45B8090>
+	void RemoveShowOnlyComponent(struct Unknown InComponent); // Function Engine.SceneCaptureComponent.RemoveShowOnlyComponent(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45B7ED0>
+	void RemoveShowOnlyActorComponents(struct Unknown InActor, char bIncludeFromChildActors); // Function Engine.SceneCaptureComponent.RemoveShowOnlyActorComponents(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45B7E00>
+	void HideComponent(struct Unknown InComponent); // Function Engine.SceneCaptureComponent.HideComponent(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45B5A00>
+	void HideActorComponents(struct Unknown InActor, char bIncludeFromChildActors); // Function Engine.SceneCaptureComponent.HideActorComponents(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45B5930>
+	void ClearShowOnlyComponents(); // Function Engine.SceneCaptureComponent.ClearShowOnlyComponents(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45B4FF0>
+	void ClearHiddenComponents(); // Function Engine.SceneCaptureComponent.ClearHiddenComponents(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45B4FD0>
 };
 
 // Class Engine.SceneCaptureComponent2D
@@ -7515,8 +7515,8 @@ public:
 	char bConsiderUnrenderedOpaquePixelAsFullyTranslucent : 0; // 0x90C (1)
 	char bDisableFlipCopyGLES : 0; // 0x910 (1)
 
-	void CaptureScene(); // Function Engine.SceneCaptureComponent2D.CaptureScene(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B4FB0>
-	void AddOrUpdateBlendable(struct TScriptInterface<IUnknown> InBlendableObject, float InWeight); // Function Engine.SceneCaptureComponent2D.AddOrUpdateBlendable(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B4E60>
+	void CaptureScene(); // Function Engine.SceneCaptureComponent2D.CaptureScene(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45B4FB0>
+	void AddOrUpdateBlendable(struct TScriptInterface<IUnknown> InBlendableObject, float InWeight); // Function Engine.SceneCaptureComponent2D.AddOrUpdateBlendable(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45B4E60>
 };
 
 // Class Engine.ArrowComponent
@@ -7530,7 +7530,7 @@ public:
 	char bIsScreenSizeScaled : 0; // 0x4B4 (1)
 	char bTreatAsASprite : 0; // 0x4B4 (1)
 
-	void SetArrowColor(struct Unknown NewColor); // Function Engine.ArrowComponent.SetArrowColor(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4459520>
+	void SetArrowColor(struct Unknown NewColor); // Function Engine.ArrowComponent.SetArrowColor(Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4459520>
 };
 
 // Class Engine.NavigationObjectBase
@@ -7591,16 +7591,16 @@ public:
 	float InterpLocationMaxLagDistance; // 0x168 (4)
 	float InterpLocationSnapToTargetDistance; // 0x16C (4)
 
-	void StopSimulating(struct Unknown& HitResult); // Function Engine.ProjectileMovementComponent.StopSimulating(Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A8540>
-	void SetVelocityInLocalSpace(struct Unknown NewVelocity); // Function Engine.ProjectileMovementComponent.SetVelocityInLocalSpace(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A84B0>
-	void SetInterpolatedComponent(struct Unknown Component); // Function Engine.ProjectileMovementComponent.SetInterpolatedComponent(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A8320>
-	void ResetInterpolation(); // Function Engine.ProjectileMovementComponent.ResetInterpolation(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A8200>
-	void OnProjectileStopDelegate__DelegateSignature(struct Unknown& ImpactResult); // DelegateFunction Engine.ProjectileMovementComponent.OnProjectileStopDelegate__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnProjectileBounceDelegate__DelegateSignature(struct Unknown& ImpactResult, struct Unknown& ImpactVelocity); // DelegateFunction Engine.ProjectileMovementComponent.OnProjectileBounceDelegate__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void MoveInterpolationTarget(struct Unknown& NewLocation, struct Unknown& NewRotation); // Function Engine.ProjectileMovementComponent.MoveInterpolationTarget(Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A8090>
-	struct Unknown LimitVelocity(struct Unknown NewVelocity); // Function Engine.ProjectileMovementComponent.LimitVelocity(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A7FE0>
-	char IsVelocityUnderSimulationThreshold(); // Function Engine.ProjectileMovementComponent.IsVelocityUnderSimulationThreshold(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A7F80>
-	char IsInterpolationComplete(); // Function Engine.ProjectileMovementComponent.IsInterpolationComplete(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A7F50>
+	void StopSimulating(struct Unknown& HitResult); // Function Engine.ProjectileMovementComponent.StopSimulating(Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x45A8540>
+	void SetVelocityInLocalSpace(struct Unknown NewVelocity); // Function Engine.ProjectileMovementComponent.SetVelocityInLocalSpace(Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45A84B0>
+	void SetInterpolatedComponent(struct Unknown Component); // Function Engine.ProjectileMovementComponent.SetInterpolatedComponent(Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A8320>
+	void ResetInterpolation(); // Function Engine.ProjectileMovementComponent.ResetInterpolation(Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A8200>
+	void OnProjectileStopDelegate__DelegateSignature(struct Unknown& ImpactResult); // DelegateFunction Engine.ProjectileMovementComponent.OnProjectileStopDelegate__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <Game_BE.exe+0x2B812B0>
+	void OnProjectileBounceDelegate__DelegateSignature(struct Unknown& ImpactResult, struct Unknown& ImpactVelocity); // DelegateFunction Engine.ProjectileMovementComponent.OnProjectileBounceDelegate__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	void MoveInterpolationTarget(struct Unknown& NewLocation, struct Unknown& NewRotation); // Function Engine.ProjectileMovementComponent.MoveInterpolationTarget(Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45A8090>
+	struct Unknown LimitVelocity(struct Unknown NewVelocity); // Function Engine.ProjectileMovementComponent.LimitVelocity(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45A7FE0>
+	char IsVelocityUnderSimulationThreshold(); // Function Engine.ProjectileMovementComponent.IsVelocityUnderSimulationThreshold(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45A7F80>
+	char IsInterpolationComplete(); // Function Engine.ProjectileMovementComponent.IsInterpolationComplete(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45A7F50>
 };
 
 // Class Engine.GameUserSettings
@@ -7646,82 +7646,82 @@ public:
 	char ShowHUD : 0; // 0x13C (1)
 	struct FMulticastInlineDelegate OnGameUserSettingsUINeedsUpdate; // 0x140 (16)
 
-	void ValidateSettings(); // Function Engine.GameUserSettings.ValidateSettings(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x36B1750>
-	char SupportsHDRDisplayOutput(); // Function Engine.GameUserSettings.SupportsHDRDisplayOutput(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C7DC0>
-	void SetVSyncEnabled(char bEnable); // Function Engine.GameUserSettings.SetVSyncEnabled(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C7C30>
-	void SetVisualEffectQuality(int32_t Value); // Function Engine.GameUserSettings.SetVisualEffectQuality(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C7D40>
-	void SetViewDistanceQuality(int32_t Value); // Function Engine.GameUserSettings.SetViewDistanceQuality(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C7CC0>
-	void SetToDefaults(char bIgnoreResolutionSettings); // Function Engine.GameUserSettings.SetToDefaults(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C7BA0>
-	void SetTextureQuality(int32_t Value); // Function Engine.GameUserSettings.SetTextureQuality(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C7B20>
-	void SetSmoothFrameRateEnabled(char bEnable); // Function Engine.GameUserSettings.SetSmoothFrameRateEnabled(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C7A90>
-	void SetShadowQuality(int32_t Value); // Function Engine.GameUserSettings.SetShadowQuality(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C7A10>
-	void SetShadingQuality(int32_t Value); // Function Engine.GameUserSettings.SetShadingQuality(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C7990>
-	void SetScreenResolution(struct Unknown Resolution); // Function Engine.GameUserSettings.SetScreenResolution(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C7910>
-	void SetResolutionScaleValueEx(float NewScaleValue); // Function Engine.GameUserSettings.SetResolutionScaleValueEx(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C7890>
-	void SetResolutionScaleValue(int32_t NewScaleValue); // Function Engine.GameUserSettings.SetResolutionScaleValue(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C7810>
-	void SetResolutionScaleNormalized(float NewScaleNormalized); // Function Engine.GameUserSettings.SetResolutionScaleNormalized(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C7790>
-	void SetPostProcessingQuality(int32_t Value); // Function Engine.GameUserSettings.SetPostProcessingQuality(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C7710>
-	void SetOverallScalabilityLevel(int32_t Value); // Function Engine.GameUserSettings.SetOverallScalabilityLevel(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C7680>
-	void SetLobbyFrameRateLimit(float NewLimit); // Function Engine.GameUserSettings.SetLobbyFrameRateLimit(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C7600>
-	void SetFullscreenMode(char InFullscreenMode); // Function Engine.GameUserSettings.SetFullscreenMode(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C7580>
-	void SetFrameRateLimit(float NewLimit); // Function Engine.GameUserSettings.SetFrameRateLimit(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C7500>
-	void SetFoliageQuality(int32_t Value); // Function Engine.GameUserSettings.SetFoliageQuality(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C7480>
-	void SetDynamicResolutionEnabled(char bEnable); // Function Engine.GameUserSettings.SetDynamicResolutionEnabled(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C73F0>
-	void SetBenchmarkFallbackValues(); // Function Engine.GameUserSettings.SetBenchmarkFallbackValues(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C73D0>
-	void SetAudioQualityLevel(int32_t QualityLevel); // Function Engine.GameUserSettings.SetAudioQualityLevel(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C7350>
-	void SetAntiAliasingQuality(int32_t Value); // Function Engine.GameUserSettings.SetAntiAliasingQuality(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C72D0>
-	void SaveSettings(); // Function Engine.GameUserSettings.SaveSettings(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC7350>
-	void RunHardwareBenchmark(int32_t WorkScale, float CPUMultiplier, float GPUMultiplier); // Function Engine.GameUserSettings.RunHardwareBenchmark(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C71D0>
-	void RevertVideoMode(); // Function Engine.GameUserSettings.RevertVideoMode(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C71B0>
-	void ResetToCurrentSettings(); // Function Engine.GameUserSettings.ResetToCurrentSettings(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4435570>
-	void LoadSettings(char bForceReload); // Function Engine.GameUserSettings.LoadSettings(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C7120>
-	char IsVSyncEnabled(); // Function Engine.GameUserSettings.IsVSyncEnabled(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1090790>
-	char IsVSyncDirty(); // Function Engine.GameUserSettings.IsVSyncDirty(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C70F0>
-	char IsSmoothFrameRate(); // Function Engine.GameUserSettings.IsSmoothFrameRate(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C70C0>
-	char IsShowingHUD(); // Function Engine.GameUserSettings.IsShowingHUD(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C7090>
-	char IsScreenResolutionDirty(); // Function Engine.GameUserSettings.IsScreenResolutionDirty(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C7060>
-	char IsHDREnabled(); // Function Engine.GameUserSettings.IsHDREnabled(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C7030>
-	char IsFullscreenModeDirty(); // Function Engine.GameUserSettings.IsFullscreenModeDirty(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C7000>
-	char IsDynamicResolutionEnabled(); // Function Engine.GameUserSettings.IsDynamicResolutionEnabled(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C6FD0>
-	char IsDynamicResolutionDirty(); // Function Engine.GameUserSettings.IsDynamicResolutionDirty(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C6FA0>
-	char IsDirty(); // Function Engine.GameUserSettings.IsDirty(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C6F70>
-	int32_t GetVisualEffectQuality(); // Function Engine.GameUserSettings.GetVisualEffectQuality(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x10900F0>
-	int32_t GetViewDistanceQuality(); // Function Engine.GameUserSettings.GetViewDistanceQuality(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C6EE0>
-	int32_t GetTextureQuality(); // Function Engine.GameUserSettings.GetTextureQuality(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C6EB0>
-	int32_t GetSyncInterval(); // Function Engine.GameUserSettings.GetSyncInterval(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C6E80>
-	int32_t GetShadowQuality(); // Function Engine.GameUserSettings.GetShadowQuality(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x13984F0>
-	int32_t GetShadingQuality(); // Function Engine.GameUserSettings.GetShadingQuality(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x109A510>
-	struct Unknown GetScreenResolution(); // Function Engine.GameUserSettings.GetScreenResolution(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C6E00>
-	float GetResolutionScaleNormalized(); // Function Engine.GameUserSettings.GetResolutionScaleNormalized(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C6DD0>
-	void GetResolutionScaleInformationEx(float& CurrentScaleNormalized, float& CurrentScaleValue, float& MinScaleValue, float& MaxScaleValue); // Function Engine.GameUserSettings.GetResolutionScaleInformationEx(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C6C30>
-	void GetResolutionScaleInformation(float& CurrentScaleNormalized, int32_t& CurrentScaleValue, int32_t& MinScaleValue, int32_t& MaxScaleValue); // Function Engine.GameUserSettings.GetResolutionScaleInformation(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C6A90>
-	float GetRecommendedResolutionScale(); // Function Engine.GameUserSettings.GetRecommendedResolutionScale(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C6A50>
-	char GetPreferredFullscreenMode(); // Function Engine.GameUserSettings.GetPreferredFullscreenMode(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C6A20>
-	int32_t GetPostProcessingQuality(); // Function Engine.GameUserSettings.GetPostProcessingQuality(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C69F0>
-	int32_t GetOverallScalabilityLevel(); // Function Engine.GameUserSettings.GetOverallScalabilityLevel(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C6880>
-	float GetLobbyFrameRateLimit(); // Function Engine.GameUserSettings.GetLobbyFrameRateLimit(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C6850>
-	struct Unknown GetLastConfirmedScreenResolution(); // Function Engine.GameUserSettings.GetLastConfirmedScreenResolution(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C6810>
-	char GetLastConfirmedFullscreenMode(); // Function Engine.GameUserSettings.GetLastConfirmedFullscreenMode(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C67E0>
-	struct Unknown GetGameUserSettings(); // Function Engine.GameUserSettings.GetGameUserSettings(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C67B0>
-	char GetFullscreenMode(); // Function Engine.GameUserSettings.GetFullscreenMode(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C6780>
-	float GetFrameRateLimit(); // Function Engine.GameUserSettings.GetFrameRateLimit(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C6750>
-	int32_t GetFramePace(); // Function Engine.GameUserSettings.GetFramePace(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C6720>
-	int32_t GetFoliageQuality(); // Function Engine.GameUserSettings.GetFoliageQuality(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C66F0>
-	struct Unknown GetDesktopResolution(); // Function Engine.GameUserSettings.GetDesktopResolution(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C66B0>
-	struct Unknown GetDefaultWindowPosition(); // Function Engine.GameUserSettings.GetDefaultWindowPosition(Final|Native|Static|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C6670>
-	char GetDefaultWindowMode(); // Function Engine.GameUserSettings.GetDefaultWindowMode(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C6640>
-	float GetDefaultResolutionScale(); // Function Engine.GameUserSettings.GetDefaultResolutionScale(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C6600>
-	struct Unknown GetDefaultResolution(); // Function Engine.GameUserSettings.GetDefaultResolution(Final|Native|Static|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C65C0>
-	char GetCurrentResolutionWindowMode(); // Function Engine.GameUserSettings.GetCurrentResolutionWindowMode(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C6590>
-	int32_t GetCurrentHDRDisplayNits(); // Function Engine.GameUserSettings.GetCurrentHDRDisplayNits(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C6560>
-	int32_t GetAudioQualityLevel(); // Function Engine.GameUserSettings.GetAudioQualityLevel(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x398CEF0>
-	int32_t GetAntiAliasingQuality(); // Function Engine.GameUserSettings.GetAntiAliasingQuality(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1084A50>
-	void EnableHDRDisplayOutput(char bEnable, int32_t DisplayNits); // Function Engine.GameUserSettings.EnableHDRDisplayOutput(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C64A0>
-	void ConfirmVideoMode(); // Function Engine.GameUserSettings.ConfirmVideoMode(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x36B18B0>
-	void ApplySettings(char bCheckForCommandLineOverrides); // Function Engine.GameUserSettings.ApplySettings(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C6410>
-	void ApplyResolutionSettings(char bCheckForCommandLineOverrides); // Function Engine.GameUserSettings.ApplyResolutionSettings(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C6380>
-	void ApplyNonResolutionSettings(); // Function Engine.GameUserSettings.ApplyNonResolutionSettings(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x36B18F0>
-	void ApplyHardwareBenchmarkResults(); // Function Engine.GameUserSettings.ApplyHardwareBenchmarkResults(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1EC7450>
+	void ValidateSettings(); // Function Engine.GameUserSettings.ValidateSettings(Native|Public|BlueprintCallable) // <Game_BE.exe+0x36B1750>
+	char SupportsHDRDisplayOutput(); // Function Engine.GameUserSettings.SupportsHDRDisplayOutput(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44C7DC0>
+	void SetVSyncEnabled(char bEnable); // Function Engine.GameUserSettings.SetVSyncEnabled(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44C7C30>
+	void SetVisualEffectQuality(int32_t Value); // Function Engine.GameUserSettings.SetVisualEffectQuality(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44C7D40>
+	void SetViewDistanceQuality(int32_t Value); // Function Engine.GameUserSettings.SetViewDistanceQuality(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44C7CC0>
+	void SetToDefaults(char bIgnoreResolutionSettings); // Function Engine.GameUserSettings.SetToDefaults(Native|Public|BlueprintCallable) // <Game_BE.exe+0x44C7BA0>
+	void SetTextureQuality(int32_t Value); // Function Engine.GameUserSettings.SetTextureQuality(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44C7B20>
+	void SetSmoothFrameRateEnabled(char bEnable); // Function Engine.GameUserSettings.SetSmoothFrameRateEnabled(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44C7A90>
+	void SetShadowQuality(int32_t Value); // Function Engine.GameUserSettings.SetShadowQuality(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44C7A10>
+	void SetShadingQuality(int32_t Value); // Function Engine.GameUserSettings.SetShadingQuality(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44C7990>
+	void SetScreenResolution(struct Unknown Resolution); // Function Engine.GameUserSettings.SetScreenResolution(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x44C7910>
+	void SetResolutionScaleValueEx(float NewScaleValue); // Function Engine.GameUserSettings.SetResolutionScaleValueEx(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44C7890>
+	void SetResolutionScaleValue(int32_t NewScaleValue); // Function Engine.GameUserSettings.SetResolutionScaleValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44C7810>
+	void SetResolutionScaleNormalized(float NewScaleNormalized); // Function Engine.GameUserSettings.SetResolutionScaleNormalized(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44C7790>
+	void SetPostProcessingQuality(int32_t Value); // Function Engine.GameUserSettings.SetPostProcessingQuality(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44C7710>
+	void SetOverallScalabilityLevel(int32_t Value); // Function Engine.GameUserSettings.SetOverallScalabilityLevel(Native|Public|BlueprintCallable) // <Game_BE.exe+0x44C7680>
+	void SetLobbyFrameRateLimit(float NewLimit); // Function Engine.GameUserSettings.SetLobbyFrameRateLimit(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44C7600>
+	void SetFullscreenMode(char InFullscreenMode); // Function Engine.GameUserSettings.SetFullscreenMode(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44C7580>
+	void SetFrameRateLimit(float NewLimit); // Function Engine.GameUserSettings.SetFrameRateLimit(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44C7500>
+	void SetFoliageQuality(int32_t Value); // Function Engine.GameUserSettings.SetFoliageQuality(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44C7480>
+	void SetDynamicResolutionEnabled(char bEnable); // Function Engine.GameUserSettings.SetDynamicResolutionEnabled(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44C73F0>
+	void SetBenchmarkFallbackValues(); // Function Engine.GameUserSettings.SetBenchmarkFallbackValues(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44C73D0>
+	void SetAudioQualityLevel(int32_t QualityLevel); // Function Engine.GameUserSettings.SetAudioQualityLevel(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44C7350>
+	void SetAntiAliasingQuality(int32_t Value); // Function Engine.GameUserSettings.SetAntiAliasingQuality(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44C72D0>
+	void SaveSettings(); // Function Engine.GameUserSettings.SaveSettings(Native|Public|BlueprintCallable) // <Game_BE.exe+0x1EC7350>
+	void RunHardwareBenchmark(int32_t WorkScale, float CPUMultiplier, float GPUMultiplier); // Function Engine.GameUserSettings.RunHardwareBenchmark(Native|Public|BlueprintCallable) // <Game_BE.exe+0x44C71D0>
+	void RevertVideoMode(); // Function Engine.GameUserSettings.RevertVideoMode(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44C71B0>
+	void ResetToCurrentSettings(); // Function Engine.GameUserSettings.ResetToCurrentSettings(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4435570>
+	void LoadSettings(char bForceReload); // Function Engine.GameUserSettings.LoadSettings(Native|Public|BlueprintCallable) // <Game_BE.exe+0x44C7120>
+	char IsVSyncEnabled(); // Function Engine.GameUserSettings.IsVSyncEnabled(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1090790>
+	char IsVSyncDirty(); // Function Engine.GameUserSettings.IsVSyncDirty(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44C70F0>
+	char IsSmoothFrameRate(); // Function Engine.GameUserSettings.IsSmoothFrameRate(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44C70C0>
+	char IsShowingHUD(); // Function Engine.GameUserSettings.IsShowingHUD(Native|Public|BlueprintCallable) // <Game_BE.exe+0x44C7090>
+	char IsScreenResolutionDirty(); // Function Engine.GameUserSettings.IsScreenResolutionDirty(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44C7060>
+	char IsHDREnabled(); // Function Engine.GameUserSettings.IsHDREnabled(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44C7030>
+	char IsFullscreenModeDirty(); // Function Engine.GameUserSettings.IsFullscreenModeDirty(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44C7000>
+	char IsDynamicResolutionEnabled(); // Function Engine.GameUserSettings.IsDynamicResolutionEnabled(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44C6FD0>
+	char IsDynamicResolutionDirty(); // Function Engine.GameUserSettings.IsDynamicResolutionDirty(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44C6FA0>
+	char IsDirty(); // Function Engine.GameUserSettings.IsDirty(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44C6F70>
+	int32_t GetVisualEffectQuality(); // Function Engine.GameUserSettings.GetVisualEffectQuality(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x10900F0>
+	int32_t GetViewDistanceQuality(); // Function Engine.GameUserSettings.GetViewDistanceQuality(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44C6EE0>
+	int32_t GetTextureQuality(); // Function Engine.GameUserSettings.GetTextureQuality(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44C6EB0>
+	int32_t GetSyncInterval(); // Function Engine.GameUserSettings.GetSyncInterval(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x44C6E80>
+	int32_t GetShadowQuality(); // Function Engine.GameUserSettings.GetShadowQuality(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x13984F0>
+	int32_t GetShadingQuality(); // Function Engine.GameUserSettings.GetShadingQuality(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x109A510>
+	struct Unknown GetScreenResolution(); // Function Engine.GameUserSettings.GetScreenResolution(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44C6E00>
+	float GetResolutionScaleNormalized(); // Function Engine.GameUserSettings.GetResolutionScaleNormalized(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44C6DD0>
+	void GetResolutionScaleInformationEx(float& CurrentScaleNormalized, float& CurrentScaleValue, float& MinScaleValue, float& MaxScaleValue); // Function Engine.GameUserSettings.GetResolutionScaleInformationEx(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44C6C30>
+	void GetResolutionScaleInformation(float& CurrentScaleNormalized, int32_t& CurrentScaleValue, int32_t& MinScaleValue, int32_t& MaxScaleValue); // Function Engine.GameUserSettings.GetResolutionScaleInformation(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44C6A90>
+	float GetRecommendedResolutionScale(); // Function Engine.GameUserSettings.GetRecommendedResolutionScale(Native|Public|BlueprintCallable) // <Game_BE.exe+0x44C6A50>
+	char GetPreferredFullscreenMode(); // Function Engine.GameUserSettings.GetPreferredFullscreenMode(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44C6A20>
+	int32_t GetPostProcessingQuality(); // Function Engine.GameUserSettings.GetPostProcessingQuality(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44C69F0>
+	int32_t GetOverallScalabilityLevel(); // Function Engine.GameUserSettings.GetOverallScalabilityLevel(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44C6880>
+	float GetLobbyFrameRateLimit(); // Function Engine.GameUserSettings.GetLobbyFrameRateLimit(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44C6850>
+	struct Unknown GetLastConfirmedScreenResolution(); // Function Engine.GameUserSettings.GetLastConfirmedScreenResolution(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44C6810>
+	char GetLastConfirmedFullscreenMode(); // Function Engine.GameUserSettings.GetLastConfirmedFullscreenMode(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44C67E0>
+	struct Unknown GetGameUserSettings(); // Function Engine.GameUserSettings.GetGameUserSettings(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x44C67B0>
+	char GetFullscreenMode(); // Function Engine.GameUserSettings.GetFullscreenMode(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44C6780>
+	float GetFrameRateLimit(); // Function Engine.GameUserSettings.GetFrameRateLimit(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44C6750>
+	int32_t GetFramePace(); // Function Engine.GameUserSettings.GetFramePace(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x44C6720>
+	int32_t GetFoliageQuality(); // Function Engine.GameUserSettings.GetFoliageQuality(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44C66F0>
+	struct Unknown GetDesktopResolution(); // Function Engine.GameUserSettings.GetDesktopResolution(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44C66B0>
+	struct Unknown GetDefaultWindowPosition(); // Function Engine.GameUserSettings.GetDefaultWindowPosition(Final|Native|Static|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x44C6670>
+	char GetDefaultWindowMode(); // Function Engine.GameUserSettings.GetDefaultWindowMode(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x44C6640>
+	float GetDefaultResolutionScale(); // Function Engine.GameUserSettings.GetDefaultResolutionScale(Native|Public|BlueprintCallable) // <Game_BE.exe+0x44C6600>
+	struct Unknown GetDefaultResolution(); // Function Engine.GameUserSettings.GetDefaultResolution(Final|Native|Static|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x44C65C0>
+	char GetCurrentResolutionWindowMode(); // Function Engine.GameUserSettings.GetCurrentResolutionWindowMode(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44C6590>
+	int32_t GetCurrentHDRDisplayNits(); // Function Engine.GameUserSettings.GetCurrentHDRDisplayNits(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44C6560>
+	int32_t GetAudioQualityLevel(); // Function Engine.GameUserSettings.GetAudioQualityLevel(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x398CEF0>
+	int32_t GetAntiAliasingQuality(); // Function Engine.GameUserSettings.GetAntiAliasingQuality(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1084A50>
+	void EnableHDRDisplayOutput(char bEnable, int32_t DisplayNits); // Function Engine.GameUserSettings.EnableHDRDisplayOutput(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44C64A0>
+	void ConfirmVideoMode(); // Function Engine.GameUserSettings.ConfirmVideoMode(Native|Public|BlueprintCallable) // <Game_BE.exe+0x36B18B0>
+	void ApplySettings(char bCheckForCommandLineOverrides); // Function Engine.GameUserSettings.ApplySettings(Native|Public|BlueprintCallable) // <Game_BE.exe+0x44C6410>
+	void ApplyResolutionSettings(char bCheckForCommandLineOverrides); // Function Engine.GameUserSettings.ApplyResolutionSettings(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44C6380>
+	void ApplyNonResolutionSettings(); // Function Engine.GameUserSettings.ApplyNonResolutionSettings(Native|Public|BlueprintCallable) // <Game_BE.exe+0x36B18F0>
+	void ApplyHardwareBenchmarkResults(); // Function Engine.GameUserSettings.ApplyHardwareBenchmarkResults(Native|Public|BlueprintCallable) // <Game_BE.exe+0x1EC7450>
 };
 
 // Class Engine.CapsuleComponent
@@ -7732,20 +7732,20 @@ public:
 	float CapsuleHalfHeight; // 0x4C0 (4)
 	float CapsuleRadius; // 0x4C4 (4)
 
-	void SetCapsuleSize(float InRadius, float InHalfHeight, char bUpdateOverlaps); // Function Engine.CapsuleComponent.SetCapsuleSize(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4485750>
-	void SetCapsuleRadius(float Radius, char bUpdateOverlaps); // Function Engine.CapsuleComponent.SetCapsuleRadius(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4485680>
-	void SetCapsuleHalfHeight(float HalfHeight, char bUpdateOverlaps); // Function Engine.CapsuleComponent.SetCapsuleHalfHeight(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44855B0>
-	void GetUnscaledCapsuleSize_WithoutHemisphere(float& OutRadius, float& OutHalfHeightWithoutHemisphere); // Function Engine.CapsuleComponent.GetUnscaledCapsuleSize_WithoutHemisphere(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4483940>
-	void GetUnscaledCapsuleSize(float& OutRadius, float& OutHalfHeight); // Function Engine.CapsuleComponent.GetUnscaledCapsuleSize(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4483850>
-	float GetUnscaledCapsuleRadius(); // Function Engine.CapsuleComponent.GetUnscaledCapsuleRadius(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4483830>
-	float GetUnscaledCapsuleHalfHeight_WithoutHemisphere(); // Function Engine.CapsuleComponent.GetUnscaledCapsuleHalfHeight_WithoutHemisphere(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4483800>
-	float GetUnscaledCapsuleHalfHeight(); // Function Engine.CapsuleComponent.GetUnscaledCapsuleHalfHeight(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44837E0>
-	float GetShapeScale(); // Function Engine.CapsuleComponent.GetShapeScale(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44836C0>
-	void GetScaledCapsuleSize_WithoutHemisphere(float& OutRadius, float& OutHalfHeightWithoutHemisphere); // Function Engine.CapsuleComponent.GetScaledCapsuleSize_WithoutHemisphere(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44835A0>
-	void GetScaledCapsuleSize(float& OutRadius, float& OutHalfHeight); // Function Engine.CapsuleComponent.GetScaledCapsuleSize(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4483490>
-	float GetScaledCapsuleRadius(); // Function Engine.CapsuleComponent.GetScaledCapsuleRadius(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4483450>
-	float GetScaledCapsuleHalfHeight_WithoutHemisphere(); // Function Engine.CapsuleComponent.GetScaledCapsuleHalfHeight_WithoutHemisphere(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4483400>
-	float GetScaledCapsuleHalfHeight(); // Function Engine.CapsuleComponent.GetScaledCapsuleHalfHeight(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44833D0>
+	void SetCapsuleSize(float InRadius, float InHalfHeight, char bUpdateOverlaps); // Function Engine.CapsuleComponent.SetCapsuleSize(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4485750>
+	void SetCapsuleRadius(float Radius, char bUpdateOverlaps); // Function Engine.CapsuleComponent.SetCapsuleRadius(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4485680>
+	void SetCapsuleHalfHeight(float HalfHeight, char bUpdateOverlaps); // Function Engine.CapsuleComponent.SetCapsuleHalfHeight(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44855B0>
+	void GetUnscaledCapsuleSize_WithoutHemisphere(float& OutRadius, float& OutHalfHeightWithoutHemisphere); // Function Engine.CapsuleComponent.GetUnscaledCapsuleSize_WithoutHemisphere(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4483940>
+	void GetUnscaledCapsuleSize(float& OutRadius, float& OutHalfHeight); // Function Engine.CapsuleComponent.GetUnscaledCapsuleSize(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4483850>
+	float GetUnscaledCapsuleRadius(); // Function Engine.CapsuleComponent.GetUnscaledCapsuleRadius(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4483830>
+	float GetUnscaledCapsuleHalfHeight_WithoutHemisphere(); // Function Engine.CapsuleComponent.GetUnscaledCapsuleHalfHeight_WithoutHemisphere(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4483800>
+	float GetUnscaledCapsuleHalfHeight(); // Function Engine.CapsuleComponent.GetUnscaledCapsuleHalfHeight(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44837E0>
+	float GetShapeScale(); // Function Engine.CapsuleComponent.GetShapeScale(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44836C0>
+	void GetScaledCapsuleSize_WithoutHemisphere(float& OutRadius, float& OutHalfHeightWithoutHemisphere); // Function Engine.CapsuleComponent.GetScaledCapsuleSize_WithoutHemisphere(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44835A0>
+	void GetScaledCapsuleSize(float& OutRadius, float& OutHalfHeight); // Function Engine.CapsuleComponent.GetScaledCapsuleSize(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4483490>
+	float GetScaledCapsuleRadius(); // Function Engine.CapsuleComponent.GetScaledCapsuleRadius(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4483450>
+	float GetScaledCapsuleHalfHeight_WithoutHemisphere(); // Function Engine.CapsuleComponent.GetScaledCapsuleHalfHeight_WithoutHemisphere(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4483400>
+	float GetScaledCapsuleHalfHeight(); // Function Engine.CapsuleComponent.GetScaledCapsuleHalfHeight(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44833D0>
 };
 
 // Class Engine.GameViewportClient
@@ -7759,9 +7759,9 @@ public:
 	struct Unknown World; // 0x78 (8)
 	struct Unknown GameInstance; // 0x80 (8)
 
-	void SSSwapControllers(); // Function Engine.GameViewportClient.SSSwapControllers(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x36B18D0>
-	void ShowTitleSafeArea(); // Function Engine.GameViewportClient.ShowTitleSafeArea(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x36B18F0>
-	void SetConsoleTarget(int32_t PlayerIndex); // Function Engine.GameViewportClient.SetConsoleTarget(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44CC630>
+	void SSSwapControllers(); // Function Engine.GameViewportClient.SSSwapControllers(Exec|Native|Public) // <Game_BE.exe+0x36B18D0>
+	void ShowTitleSafeArea(); // Function Engine.GameViewportClient.ShowTitleSafeArea(Exec|Native|Public) // <Game_BE.exe+0x36B18F0>
+	void SetConsoleTarget(int32_t PlayerIndex); // Function Engine.GameViewportClient.SetConsoleTarget(Exec|Native|Public) // <Game_BE.exe+0x44CC630>
 };
 
 // Class Engine.PhysicsVolume
@@ -7836,7 +7836,7 @@ public:
 	struct Unknown* LastBookmarkClass; // 0x478 (8)
 	char bUseInstancedStaticCollision : 0; // 0x480 (1)
 
-	void OnRep_WorldGravityZ(); // Function Engine.WorldSettings.OnRep_WorldGravityZ(Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1E71C00>
+	void OnRep_WorldGravityZ(); // Function Engine.WorldSettings.OnRep_WorldGravityZ(Native|Public) // <Game_BE.exe+0x1E71C00>
 };
 
 // Class Engine.CameraModifier
@@ -7852,12 +7852,12 @@ public:
 	float AlphaOutTime; // 0x3C (4)
 	float ALPHA; // 0x40 (4)
 
-	char IsDisabled(); // Function Engine.CameraModifier.IsDisabled(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x36B1850>
-	struct Unknown GetViewTarget(); // Function Engine.CameraModifier.GetViewTarget(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3B598C0>
-	void EnableModifier(); // Function Engine.CameraModifier.EnableModifier(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x447CF40>
-	void DisableModifier(char bImmediate); // Function Engine.CameraModifier.DisableModifier(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x447CEB0>
-	void BlueprintModifyPostProcess(float DeltaTime, float& PostProcessBlendWeight, struct Unknown& PostProcessSettings); // Function Engine.CameraModifier.BlueprintModifyPostProcess(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void BlueprintModifyCamera(float DeltaTime, struct Unknown ViewLocation, struct Unknown ViewRotation, float FOV, struct Unknown& NewViewLocation, struct Unknown& NewViewRotation, float& NewFOV); // Function Engine.CameraModifier.BlueprintModifyCamera(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	char IsDisabled(); // Function Engine.CameraModifier.IsDisabled(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36B1850>
+	struct Unknown GetViewTarget(); // Function Engine.CameraModifier.GetViewTarget(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B598C0>
+	void EnableModifier(); // Function Engine.CameraModifier.EnableModifier(Native|Public|BlueprintCallable) // <Game_BE.exe+0x447CF40>
+	void DisableModifier(char bImmediate); // Function Engine.CameraModifier.DisableModifier(Native|Public|BlueprintCallable) // <Game_BE.exe+0x447CEB0>
+	void BlueprintModifyPostProcess(float DeltaTime, float& PostProcessBlendWeight, struct Unknown& PostProcessSettings); // Function Engine.CameraModifier.BlueprintModifyPostProcess(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void BlueprintModifyCamera(float DeltaTime, struct Unknown ViewLocation, struct Unknown ViewRotation, float FOV, struct Unknown& NewViewLocation, struct Unknown& NewViewRotation, float& NewFOV); // Function Engine.CameraModifier.BlueprintModifyCamera(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
 };
 
 // Class Engine.SkyLight
@@ -7868,7 +7868,7 @@ public:
 	struct Unknown LightComponent; // 0x300 (8)
 	char bEnabled : 0; // 0x308 (1)
 
-	void OnRep_bEnabled(); // Function Engine.SkyLight.OnRep_bEnabled(Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1E71C00>
+	void OnRep_bEnabled(); // Function Engine.SkyLight.OnRep_bEnabled(Native|Public) // <Game_BE.exe+0x1E71C00>
 };
 
 // Class Engine.MaterialInterface
@@ -7881,12 +7881,12 @@ public:
 	struct TArray<Unknown> TextureStreamingData; // 0x60 (16)
 	struct TArray<Unknown> AssetUserData; // 0x70 (16)
 
-	void SetForceMipLevelsToBeResident(char OverrideForceMiplevelsToBeResident, char bForceMiplevelsToBeResidentValue, float ForceDuration, int32_t CinematicTextureGroups, char bFastResponse); // Function Engine.MaterialInterface.SetForceMipLevelsToBeResident(RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4559080>
-	struct Unknown GetPhysicalMaterialMask(); // Function Engine.MaterialInterface.GetPhysicalMaterialMask(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3B59890>
-	struct Unknown GetPhysicalMaterialFromMap(int32_t Index); // Function Engine.MaterialInterface.GetPhysicalMaterialFromMap(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4558850>
-	struct Unknown GetPhysicalMaterial(); // Function Engine.MaterialInterface.GetPhysicalMaterial(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3B598C0>
-	struct Unknown GetParameterInfo(char Association, struct FName ParameterName, struct Unknown LayerFunction); // Function Engine.MaterialInterface.GetParameterInfo(Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4558740>
-	struct Unknown GetBaseMaterial(); // Function Engine.MaterialInterface.GetBaseMaterial(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4558710>
+	void SetForceMipLevelsToBeResident(char OverrideForceMiplevelsToBeResident, char bForceMiplevelsToBeResidentValue, float ForceDuration, int32_t CinematicTextureGroups, char bFastResponse); // Function Engine.MaterialInterface.SetForceMipLevelsToBeResident(RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4559080>
+	struct Unknown GetPhysicalMaterialMask(); // Function Engine.MaterialInterface.GetPhysicalMaterialMask(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B59890>
+	struct Unknown GetPhysicalMaterialFromMap(int32_t Index); // Function Engine.MaterialInterface.GetPhysicalMaterialFromMap(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4558850>
+	struct Unknown GetPhysicalMaterial(); // Function Engine.MaterialInterface.GetPhysicalMaterial(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B598C0>
+	struct Unknown GetParameterInfo(char Association, struct FName ParameterName, struct Unknown LayerFunction); // Function Engine.MaterialInterface.GetParameterInfo(Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4558740>
+	struct Unknown GetBaseMaterial(); // Function Engine.MaterialInterface.GetBaseMaterial(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4558710>
 };
 
 // Class Engine.MaterialInstance
@@ -7917,9 +7917,9 @@ public:
 
 	struct Unknown PhysMaterialMask; // 0x408 (8)
 
-	struct Unknown K2_GetVectorParameterValue(struct FName ParameterName); // Function Engine.MaterialInstanceConstant.K2_GetVectorParameterValue(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4558D80>
-	struct Unknown K2_GetTextureParameterValue(struct FName ParameterName); // Function Engine.MaterialInstanceConstant.K2_GetTextureParameterValue(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4558BB0>
-	float K2_GetScalarParameterValue(struct FName ParameterName); // Function Engine.MaterialInstanceConstant.K2_GetScalarParameterValue(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45589C0>
+	struct Unknown K2_GetVectorParameterValue(struct FName ParameterName); // Function Engine.MaterialInstanceConstant.K2_GetVectorParameterValue(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4558D80>
+	struct Unknown K2_GetTextureParameterValue(struct FName ParameterName); // Function Engine.MaterialInstanceConstant.K2_GetTextureParameterValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4558BB0>
+	float K2_GetScalarParameterValue(struct FName ParameterName); // Function Engine.MaterialInstanceConstant.K2_GetScalarParameterValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45589C0>
 };
 
 // Class Engine.BlueprintGeneratedClass
@@ -7955,7 +7955,7 @@ public:
 	float PostProcessBlendWeight; // 0x32C (4)
 	struct Unknown PostProcessSettings; // 0x330 (1472)
 
-	int32_t GetAutoActivatePlayerIndex(); // Function Engine.CameraActor.GetAutoActivatePlayerIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4479860>
+	int32_t GetAutoActivatePlayerIndex(); // Function Engine.CameraActor.GetAutoActivatePlayerIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4479860>
 };
 
 // Class Engine.SoundBase
@@ -8140,11 +8140,11 @@ public:
 
 	struct Unknown AudioComponent; // 0x300 (8)
 
-	void Stop(); // Function Engine.AmbientSound.Stop(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x443A0D0>
-	void Play(float StartTime); // Function Engine.AmbientSound.Play(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4439BB0>
-	void FadeOut(float FadeOutDuration, float FadeVolumeLevel); // Function Engine.AmbientSound.FadeOut(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44399B0>
-	void FadeIn(float FadeInDuration, float FadeVolumeLevel); // Function Engine.AmbientSound.FadeIn(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44398F0>
-	void AdjustVolume(float AdjustVolumeDuration, float AdjustVolumeLevel); // Function Engine.AmbientSound.AdjustVolume(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44397A0>
+	void Stop(); // Function Engine.AmbientSound.Stop(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x443A0D0>
+	void Play(float StartTime); // Function Engine.AmbientSound.Play(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4439BB0>
+	void FadeOut(float FadeOutDuration, float FadeVolumeLevel); // Function Engine.AmbientSound.FadeOut(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44399B0>
+	void FadeIn(float FadeInDuration, float FadeVolumeLevel); // Function Engine.AmbientSound.FadeIn(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44398F0>
+	void AdjustVolume(float AdjustVolumeDuration, float AdjustVolumeLevel); // Function Engine.AmbientSound.AdjustVolume(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44397A0>
 };
 
 // Class Engine.AnimationSettings
@@ -8240,7 +8240,7 @@ public:
 	float RateScale; // 0x9C (4)
 	struct Unknown RawCurveData; // 0xA0 (16)
 
-	float GetPlayLength(); // Function Engine.AnimSequenceBase.GetPlayLength(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4453800>
+	float GetPlayLength(); // Function Engine.AnimSequenceBase.GetPlayLength(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4453800>
 };
 
 // Class Engine.AnimComposite
@@ -8358,7 +8358,7 @@ public:
 	struct Unknown TimeStretchCurve; // 0x1A8 (40)
 	struct FName TimeStretchCurveName; // 0x1D0 (8)
 
-	float GetDefaultBlendOutTime(); // Function Engine.AnimMontage.GetDefaultBlendOutTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x444F170>
+	float GetDefaultBlendOutTime(); // Function Engine.AnimMontage.GetDefaultBlendOutTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x444F170>
 };
 
 // Class Engine.AnimNotify_PlayParticleEffect
@@ -8410,7 +8410,7 @@ public:
 	struct FName WidthScaleCurve; // 0x4C (8)
 	char bRecycleSpawnedSystems : 0; // 0x54 (1)
 
-	struct Unknown OverridePSTemplate(struct Unknown MeshComp, struct Unknown Animation); // Function Engine.AnimNotifyState_Trail.OverridePSTemplate(Event|Public|BlueprintEvent|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	struct Unknown OverridePSTemplate(struct Unknown MeshComp, struct Unknown Animation); // Function Engine.AnimNotifyState_Trail.OverridePSTemplate(Event|Public|BlueprintEvent|Const) // <Game_BE.exe+0x2B812B0>
 };
 
 // Class Engine.AnimSequence
@@ -8460,19 +8460,19 @@ public:
 	struct Unknown CurrentAsset; // 0x270 (8)
 	struct FDelegate PostEvaluateAnimEvent; // 0x278 (16)
 
-	void StopAnim(); // Function Engine.AnimSingleNodeInstance.StopAnim(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4454010>
-	void SetReverse(char bInReverse); // Function Engine.AnimSingleNodeInstance.SetReverse(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4453F80>
-	void SetPreviewCurveOverride(struct FName& PoseName, float Value, char bRemoveIfZero); // Function Engine.AnimSingleNodeInstance.SetPreviewCurveOverride(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4453E60>
-	void SetPositionWithPreviousTime(float InPosition, float InPreviousTime, char bFireNotifies); // Function Engine.AnimSingleNodeInstance.SetPositionWithPreviousTime(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4453D50>
-	void SetPosition(float InPosition, char bFireNotifies); // Function Engine.AnimSingleNodeInstance.SetPosition(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4453C80>
-	void SetPlayRate(float InPlayRate); // Function Engine.AnimSingleNodeInstance.SetPlayRate(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4453B70>
-	void SetPlaying(char bIsPlaying); // Function Engine.AnimSingleNodeInstance.SetPlaying(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4453BF0>
-	void SetLooping(char bIsLooping); // Function Engine.AnimSingleNodeInstance.SetLooping(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4453AE0>
-	void SetBlendSpaceInput(struct Unknown& InBlendInput); // Function Engine.AnimSingleNodeInstance.SetBlendSpaceInput(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4453A50>
-	void SetAnimationAsset(struct Unknown NewAsset, char bIsLooping, float InPlayRate); // Function Engine.AnimSingleNodeInstance.SetAnimationAsset(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4453940>
-	void PlayAnim(char bIsLooping, float InPlayRate, float InStartPosition); // Function Engine.AnimSingleNodeInstance.PlayAnim(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4453840>
-	float GetLength(); // Function Engine.AnimSingleNodeInstance.GetLength(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44537D0>
-	struct Unknown GetAnimationAsset(); // Function Engine.AnimSingleNodeInstance.GetAnimationAsset(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44537A0>
+	void StopAnim(); // Function Engine.AnimSingleNodeInstance.StopAnim(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4454010>
+	void SetReverse(char bInReverse); // Function Engine.AnimSingleNodeInstance.SetReverse(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4453F80>
+	void SetPreviewCurveOverride(struct FName& PoseName, float Value, char bRemoveIfZero); // Function Engine.AnimSingleNodeInstance.SetPreviewCurveOverride(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x4453E60>
+	void SetPositionWithPreviousTime(float InPosition, float InPreviousTime, char bFireNotifies); // Function Engine.AnimSingleNodeInstance.SetPositionWithPreviousTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4453D50>
+	void SetPosition(float InPosition, char bFireNotifies); // Function Engine.AnimSingleNodeInstance.SetPosition(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4453C80>
+	void SetPlayRate(float InPlayRate); // Function Engine.AnimSingleNodeInstance.SetPlayRate(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4453B70>
+	void SetPlaying(char bIsPlaying); // Function Engine.AnimSingleNodeInstance.SetPlaying(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4453BF0>
+	void SetLooping(char bIsLooping); // Function Engine.AnimSingleNodeInstance.SetLooping(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4453AE0>
+	void SetBlendSpaceInput(struct Unknown& InBlendInput); // Function Engine.AnimSingleNodeInstance.SetBlendSpaceInput(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4453A50>
+	void SetAnimationAsset(struct Unknown NewAsset, char bIsLooping, float InPlayRate); // Function Engine.AnimSingleNodeInstance.SetAnimationAsset(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4453940>
+	void PlayAnim(char bIsLooping, float InPlayRate, float InStartPosition); // Function Engine.AnimSingleNodeInstance.PlayAnim(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4453840>
+	float GetLength(); // Function Engine.AnimSingleNodeInstance.GetLength(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44537D0>
+	struct Unknown GetAnimationAsset(); // Function Engine.AnimSingleNodeInstance.GetAnimationAsset(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44537A0>
 };
 
 // Class Engine.AnimStreamable
@@ -8547,8 +8547,8 @@ public:
 	struct FMulticastInlineDelegate Completed; // 0x30 (16)
 	struct Unknown SaveGameObject; // 0x60 (8)
 
-	struct Unknown AsyncSaveGameToSlot(struct Unknown WorldContextObject, struct Unknown SaveGameObject, struct FString SlotName, int32_t UserIndex); // Function Engine.AsyncActionHandleSaveGame.AsyncSaveGameToSlot(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x445D660>
-	struct Unknown AsyncLoadGameFromSlot(struct Unknown WorldContextObject, struct FString SlotName, int32_t UserIndex); // Function Engine.AsyncActionHandleSaveGame.AsyncLoadGameFromSlot(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x445D000>
+	struct Unknown AsyncSaveGameToSlot(struct Unknown WorldContextObject, struct Unknown SaveGameObject, struct FString SlotName, int32_t UserIndex); // Function Engine.AsyncActionHandleSaveGame.AsyncSaveGameToSlot(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x445D660>
+	struct Unknown AsyncLoadGameFromSlot(struct Unknown WorldContextObject, struct FString SlotName, int32_t UserIndex); // Function Engine.AsyncActionHandleSaveGame.AsyncLoadGameFromSlot(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x445D000>
 };
 
 // Class Engine.AsyncActionLoadPrimaryAsset
@@ -8558,7 +8558,7 @@ public:
 
 	struct FMulticastInlineDelegate Completed; // 0x78 (16)
 
-	struct Unknown AsyncLoadPrimaryAsset(struct Unknown WorldContextObject, struct Unknown PrimaryAsset, struct TArray<Unknown>& LoadBundles); // Function Engine.AsyncActionLoadPrimaryAsset.AsyncLoadPrimaryAsset(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x445D120>
+	struct Unknown AsyncLoadPrimaryAsset(struct Unknown WorldContextObject, struct Unknown PrimaryAsset, struct TArray<Unknown>& LoadBundles); // Function Engine.AsyncActionLoadPrimaryAsset.AsyncLoadPrimaryAsset(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x445D120>
 };
 
 // Class Engine.AsyncActionLoadPrimaryAssetClass
@@ -8568,7 +8568,7 @@ public:
 
 	struct FMulticastInlineDelegate Completed; // 0x78 (16)
 
-	struct Unknown AsyncLoadPrimaryAssetClass(struct Unknown WorldContextObject, struct Unknown PrimaryAsset, struct TArray<Unknown>& LoadBundles); // Function Engine.AsyncActionLoadPrimaryAssetClass.AsyncLoadPrimaryAssetClass(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x445D260>
+	struct Unknown AsyncLoadPrimaryAssetClass(struct Unknown WorldContextObject, struct Unknown PrimaryAsset, struct TArray<Unknown>& LoadBundles); // Function Engine.AsyncActionLoadPrimaryAssetClass.AsyncLoadPrimaryAssetClass(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x445D260>
 };
 
 // Class Engine.AsyncActionLoadPrimaryAssetList
@@ -8578,7 +8578,7 @@ public:
 
 	struct FMulticastInlineDelegate Completed; // 0x78 (16)
 
-	struct Unknown AsyncLoadPrimaryAssetList(struct Unknown WorldContextObject, struct TArray<Unknown>& PrimaryAssetList, struct TArray<Unknown>& LoadBundles); // Function Engine.AsyncActionLoadPrimaryAssetList.AsyncLoadPrimaryAssetList(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x445D500>
+	struct Unknown AsyncLoadPrimaryAssetList(struct Unknown WorldContextObject, struct TArray<Unknown>& PrimaryAssetList, struct TArray<Unknown>& LoadBundles); // Function Engine.AsyncActionLoadPrimaryAssetList.AsyncLoadPrimaryAssetList(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x445D500>
 };
 
 // Class Engine.AsyncActionLoadPrimaryAssetClassList
@@ -8588,7 +8588,7 @@ public:
 
 	struct FMulticastInlineDelegate Completed; // 0x78 (16)
 
-	struct Unknown AsyncLoadPrimaryAssetClassList(struct Unknown WorldContextObject, struct TArray<Unknown>& PrimaryAssetList, struct TArray<Unknown>& LoadBundles); // Function Engine.AsyncActionLoadPrimaryAssetClassList.AsyncLoadPrimaryAssetClassList(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x445D3A0>
+	struct Unknown AsyncLoadPrimaryAssetClassList(struct Unknown WorldContextObject, struct TArray<Unknown>& PrimaryAssetList, struct TArray<Unknown>& LoadBundles); // Function Engine.AsyncActionLoadPrimaryAssetClassList.AsyncLoadPrimaryAssetClassList(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x445D3A0>
 };
 
 // Class Engine.AsyncActionChangePrimaryAssetBundles
@@ -8598,8 +8598,8 @@ public:
 
 	struct FMulticastInlineDelegate Completed; // 0x78 (16)
 
-	struct Unknown AsyncChangeBundleStateForPrimaryAssetList(struct Unknown WorldContextObject, struct TArray<Unknown>& PrimaryAssetList, struct TArray<Unknown>& AddBundles, struct TArray<Unknown>& RemoveBundles); // Function Engine.AsyncActionChangePrimaryAssetBundles.AsyncChangeBundleStateForPrimaryAssetList(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x445CE40>
-	struct Unknown AsyncChangeBundleStateForMatchingPrimaryAssets(struct Unknown WorldContextObject, struct TArray<Unknown>& NewBundles, struct TArray<Unknown>& OldBundles); // Function Engine.AsyncActionChangePrimaryAssetBundles.AsyncChangeBundleStateForMatchingPrimaryAssets(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x445CCE0>
+	struct Unknown AsyncChangeBundleStateForPrimaryAssetList(struct Unknown WorldContextObject, struct TArray<Unknown>& PrimaryAssetList, struct TArray<Unknown>& AddBundles, struct TArray<Unknown>& RemoveBundles); // Function Engine.AsyncActionChangePrimaryAssetBundles.AsyncChangeBundleStateForPrimaryAssetList(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x445CE40>
+	struct Unknown AsyncChangeBundleStateForMatchingPrimaryAssets(struct Unknown WorldContextObject, struct TArray<Unknown>& NewBundles, struct TArray<Unknown>& OldBundles); // Function Engine.AsyncActionChangePrimaryAssetBundles.AsyncChangeBundleStateForMatchingPrimaryAssets(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x445CCE0>
 };
 
 // Class Engine.AtmosphericFog
@@ -8634,20 +8634,20 @@ public:
 	struct Unknown TransmittanceTexture; // 0x288 (8)
 	struct Unknown IrradianceTexture; // 0x290 (8)
 
-	void StartPrecompute(); // Function Engine.AtmosphericFogComponent.StartPrecompute(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1530870>
-	void SetSunMultiplier(float NewSunMultiplier); // Function Engine.AtmosphericFogComponent.SetSunMultiplier(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x445DE60>
-	void SetStartDistance(float NewStartDistance); // Function Engine.AtmosphericFogComponent.SetStartDistance(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x445DDE0>
-	void SetPrecomputeParams(float DensityHeight, int32_t MaxScatteringOrder, int32_t InscatterAltitudeSampleNum); // Function Engine.AtmosphericFogComponent.SetPrecomputeParams(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x445DCD0>
-	void SetFogMultiplier(float NewFogMultiplier); // Function Engine.AtmosphericFogComponent.SetFogMultiplier(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x445DC50>
-	void SetDistanceScale(float NewDistanceScale); // Function Engine.AtmosphericFogComponent.SetDistanceScale(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x445DBD0>
-	void SetDistanceOffset(float NewDistanceOffset); // Function Engine.AtmosphericFogComponent.SetDistanceOffset(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x445DB50>
-	void SetDensityOffset(float NewDensityOffset); // Function Engine.AtmosphericFogComponent.SetDensityOffset(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x445DAD0>
-	void SetDensityMultiplier(float NewDensityMultiplier); // Function Engine.AtmosphericFogComponent.SetDensityMultiplier(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x445DA50>
-	void SetDefaultLightColor(struct Unknown NewLightColor); // Function Engine.AtmosphericFogComponent.SetDefaultLightColor(Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x445D9D0>
-	void SetDefaultBrightness(float NewBrightness); // Function Engine.AtmosphericFogComponent.SetDefaultBrightness(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x445D950>
-	void SetAltitudeScale(float NewAltitudeScale); // Function Engine.AtmosphericFogComponent.SetAltitudeScale(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x445D8D0>
-	void DisableSunDisk(char NewSunDisk); // Function Engine.AtmosphericFogComponent.DisableSunDisk(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x445D840>
-	void DisableGroundScattering(char NewGroundScattering); // Function Engine.AtmosphericFogComponent.DisableGroundScattering(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x445D7B0>
+	void StartPrecompute(); // Function Engine.AtmosphericFogComponent.StartPrecompute(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1530870>
+	void SetSunMultiplier(float NewSunMultiplier); // Function Engine.AtmosphericFogComponent.SetSunMultiplier(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x445DE60>
+	void SetStartDistance(float NewStartDistance); // Function Engine.AtmosphericFogComponent.SetStartDistance(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x445DDE0>
+	void SetPrecomputeParams(float DensityHeight, int32_t MaxScatteringOrder, int32_t InscatterAltitudeSampleNum); // Function Engine.AtmosphericFogComponent.SetPrecomputeParams(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x445DCD0>
+	void SetFogMultiplier(float NewFogMultiplier); // Function Engine.AtmosphericFogComponent.SetFogMultiplier(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x445DC50>
+	void SetDistanceScale(float NewDistanceScale); // Function Engine.AtmosphericFogComponent.SetDistanceScale(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x445DBD0>
+	void SetDistanceOffset(float NewDistanceOffset); // Function Engine.AtmosphericFogComponent.SetDistanceOffset(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x445DB50>
+	void SetDensityOffset(float NewDensityOffset); // Function Engine.AtmosphericFogComponent.SetDensityOffset(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x445DAD0>
+	void SetDensityMultiplier(float NewDensityMultiplier); // Function Engine.AtmosphericFogComponent.SetDensityMultiplier(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x445DA50>
+	void SetDefaultLightColor(struct Unknown NewLightColor); // Function Engine.AtmosphericFogComponent.SetDefaultLightColor(Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x445D9D0>
+	void SetDefaultBrightness(float NewBrightness); // Function Engine.AtmosphericFogComponent.SetDefaultBrightness(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x445D950>
+	void SetAltitudeScale(float NewAltitudeScale); // Function Engine.AtmosphericFogComponent.SetAltitudeScale(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x445D8D0>
+	void DisableSunDisk(char NewSunDisk); // Function Engine.AtmosphericFogComponent.DisableSunDisk(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x445D840>
+	void DisableGroundScattering(char NewGroundScattering); // Function Engine.AtmosphericFogComponent.DisableGroundScattering(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x445D7B0>
 };
 
 // Class Engine.AudioSettings
@@ -8688,11 +8688,11 @@ public:
 	struct Unknown Settings; // 0x340 (32)
 	struct Unknown AmbientZoneSettings; // 0x360 (36)
 
-	void SetReverbSettings(struct Unknown& NewReverbSettings); // Function Engine.AudioVolume.SetReverbSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4461580>
-	void SetPriority(float NewPriority); // Function Engine.AudioVolume.SetPriority(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4461500>
-	void SetInteriorSettings(struct Unknown& NewInteriorSettings); // Function Engine.AudioVolume.SetInteriorSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4461240>
-	void SetEnabled(char bNewEnabled); // Function Engine.AudioVolume.SetEnabled(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4461020>
-	void OnRep_bEnabled(); // Function Engine.AudioVolume.OnRep_bEnabled(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4460EB0>
+	void SetReverbSettings(struct Unknown& NewReverbSettings); // Function Engine.AudioVolume.SetReverbSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x4461580>
+	void SetPriority(float NewPriority); // Function Engine.AudioVolume.SetPriority(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4461500>
+	void SetInteriorSettings(struct Unknown& NewInteriorSettings); // Function Engine.AudioVolume.SetInteriorSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x4461240>
+	void SetEnabled(char bNewEnabled); // Function Engine.AudioVolume.SetEnabled(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4461020>
+	void OnRep_bEnabled(); // Function Engine.AudioVolume.OnRep_bEnabled(Final|Native|Private) // <Game_BE.exe+0x4460EB0>
 };
 
 // Class Engine.AutoDestroySubsystem
@@ -8702,7 +8702,7 @@ public:
 
 	struct TArray<Unknown> ActorsToPoll; // 0x38 (16)
 
-	void OnActorEndPlay(struct Unknown Actor, char EndPlayReason); // Function Engine.AutoDestroySubsystem.OnActorEndPlay(Final|Native|Private) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4467D20>
+	void OnActorEndPlay(struct Unknown Actor, char EndPlayReason); // Function Engine.AutoDestroySubsystem.OnActorEndPlay(Final|Native|Private) // <Game_BE.exe+0x4467D20>
 };
 
 // Class Engine.AutomationTestSettings
@@ -8739,10 +8739,10 @@ public:
 	float TestHeightDifference; // 0x44 (4)
 	float HeightCheckMargin; // 0x48 (4)
 
-	char RegisterMovementComponent(struct Unknown MovementComp, float AvoidanceWeight); // Function Engine.AvoidanceManager.RegisterMovementComponent(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4467DE0>
-	int32_t GetObjectCount(); // Function Engine.AvoidanceManager.GetObjectCount(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4467CF0>
-	int32_t GetNewAvoidanceUID(); // Function Engine.AvoidanceManager.GetNewAvoidanceUID(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4467CC0>
-	struct Unknown GetAvoidanceVelocityForComponent(struct Unknown MovementComp); // Function Engine.AvoidanceManager.GetAvoidanceVelocityForComponent(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4467C20>
+	char RegisterMovementComponent(struct Unknown MovementComp, float AvoidanceWeight); // Function Engine.AvoidanceManager.RegisterMovementComponent(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4467DE0>
+	int32_t GetObjectCount(); // Function Engine.AvoidanceManager.GetObjectCount(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4467CF0>
+	int32_t GetNewAvoidanceUID(); // Function Engine.AvoidanceManager.GetNewAvoidanceUID(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4467CC0>
+	struct Unknown GetAvoidanceVelocityForComponent(struct Unknown MovementComp); // Function Engine.AvoidanceManager.GetAvoidanceVelocityForComponent(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4467C20>
 };
 
 // Class Engine.BandwidthTestActor
@@ -8766,9 +8766,9 @@ public:
 	float V; // 0x4C0 (4)
 	float VL; // 0x4C4 (4)
 
-	void SetUV(int32_t NewU, int32_t NewUL, int32_t NewV, int32_t NewVL); // Function Engine.BillboardComponent.SetUV(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44680C0>
-	void SetSpriteAndUV(struct Unknown NewSprite, int32_t NewU, int32_t NewUL, int32_t NewV, int32_t NewVL); // Function Engine.BillboardComponent.SetSpriteAndUV(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4467F40>
-	void SetSprite(struct Unknown NewSprite); // Function Engine.BillboardComponent.SetSprite(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4467EB0>
+	void SetUV(int32_t NewU, int32_t NewUL, int32_t NewV, int32_t NewVL); // Function Engine.BillboardComponent.SetUV(Native|Public|BlueprintCallable) // <Game_BE.exe+0x44680C0>
+	void SetSpriteAndUV(struct Unknown NewSprite, int32_t NewU, int32_t NewUL, int32_t NewV, int32_t NewVL); // Function Engine.BillboardComponent.SetSpriteAndUV(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4467F40>
+	void SetSprite(struct Unknown NewSprite); // Function Engine.BillboardComponent.SetSprite(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4467EB0>
 };
 
 // Class Engine.Skeleton
@@ -8971,9 +8971,9 @@ public:
 	struct Unknown MoveInst; // 0x70 (8)
 	char PlaySpace; // 0x78 (1)
 
-	void Stop(char bImmediate); // Function Engine.CameraAnimInst.Stop(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x447A270>
-	void SetScale(float NewDuration); // Function Engine.CameraAnimInst.SetScale(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x447A160>
-	void SetDuration(float NewDuration); // Function Engine.CameraAnimInst.SetDuration(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4479DE0>
+	void Stop(char bImmediate); // Function Engine.CameraAnimInst.Stop(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x447A270>
+	void SetScale(float NewDuration); // Function Engine.CameraAnimInst.SetScale(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x447A160>
+	void SetDuration(float NewDuration); // Function Engine.CameraAnimInst.SetDuration(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4479DE0>
 };
 
 // Class Engine.CameraModifier_CameraShake
@@ -9010,10 +9010,10 @@ public:
 	float OscillatorTimeRemaining; // 0x14C (4)
 	struct Unknown AnimInst; // 0x150 (8)
 
-	void ReceiveStopShake(char bImmediately); // Function Engine.CameraShake.ReceiveStopShake(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceivePlayShake(float Scale); // Function Engine.CameraShake.ReceivePlayShake(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	char ReceiveIsFinished(); // Function Engine.CameraShake.ReceiveIsFinished(Native|Event|Public|BlueprintEvent|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17846D0>
-	void BlueprintUpdateCameraShake(float DeltaTime, float ALPHA, struct Unknown& POV, struct Unknown& ModifiedPOV); // Function Engine.CameraShake.BlueprintUpdateCameraShake(Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void ReceiveStopShake(char bImmediately); // Function Engine.CameraShake.ReceiveStopShake(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceivePlayShake(float Scale); // Function Engine.CameraShake.ReceivePlayShake(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	char ReceiveIsFinished(); // Function Engine.CameraShake.ReceiveIsFinished(Native|Event|Public|BlueprintEvent|Const) // <Game_BE.exe+0x17846D0>
+	void BlueprintUpdateCameraShake(float DeltaTime, float ALPHA, struct Unknown& POV, struct Unknown& ModifiedPOV); // Function Engine.CameraShake.BlueprintUpdateCameraShake(Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
 };
 
 // Class Engine.CameraShakeSourceActor
@@ -9035,10 +9035,10 @@ public:
 	struct Unknown* CameraShake; // 0x238 (8)
 	char bAutoPlay : 0; // 0x240 (1)
 
-	void StopAllCameraShakes(char bImmediately); // Function Engine.CameraShakeSourceComponent.StopAllCameraShakes(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x447E780>
-	void PlayCameraShake(struct Unknown* InCameraShake); // Function Engine.CameraShakeSourceComponent.PlayCameraShake(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x447E700>
-	void Play(); // Function Engine.CameraShakeSourceComponent.Play(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x447E6E0>
-	float GetAttenuationFactor(struct Unknown& Location); // Function Engine.CameraShakeSourceComponent.GetAttenuationFactor(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x447CF60>
+	void StopAllCameraShakes(char bImmediately); // Function Engine.CameraShakeSourceComponent.StopAllCameraShakes(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x447E780>
+	void PlayCameraShake(struct Unknown* InCameraShake); // Function Engine.CameraShakeSourceComponent.PlayCameraShake(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x447E700>
+	void Play(); // Function Engine.CameraShakeSourceComponent.Play(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x447E6E0>
+	float GetAttenuationFactor(struct Unknown& Location); // Function Engine.CameraShakeSourceComponent.GetAttenuationFactor(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x447CF60>
 };
 
 // Class Engine.Canvas
@@ -9061,19 +9061,19 @@ public:
 	struct Unknown GradientTexture0; // 0x68 (8)
 	struct Unknown ReporterGraph; // 0x70 (8)
 
-	struct Unknown K2_TextSize(struct Unknown RenderFont, struct FString RenderText, struct Unknown Scale); // Function Engine.Canvas.K2_TextSize(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x447E5B0>
-	struct Unknown K2_StrLen(struct Unknown RenderFont, struct FString RenderText); // Function Engine.Canvas.K2_StrLen(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x447E4C0>
-	struct Unknown K2_Project(struct Unknown WorldLocation); // Function Engine.Canvas.K2_Project(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x447E410>
-	void K2_DrawTriangle(struct Unknown RenderTexture, struct TArray<Unknown> Triangles); // Function Engine.Canvas.K2_DrawTriangle(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x447E2F0>
-	void K2_DrawTexture(struct Unknown RenderTexture, struct Unknown ScreenPosition, struct Unknown ScreenSize, struct Unknown CoordinatePosition, struct Unknown CoordinateSize, struct Unknown RenderColor, char BlendMode, float Rotation, struct Unknown PivotPoint); // Function Engine.Canvas.K2_DrawTexture(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x447E070>
-	void K2_DrawText(struct Unknown RenderFont, struct FString RenderText, struct Unknown ScreenPosition, struct Unknown Scale, struct Unknown RenderColor, float Kerning, struct Unknown ShadowColor, struct Unknown ShadowOffset, char bCentreX, char bCentreY, char bOutlined, struct Unknown OutlineColor); // Function Engine.Canvas.K2_DrawText(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x447DCD0>
-	void K2_DrawPolygon(struct Unknown RenderTexture, struct Unknown ScreenPosition, struct Unknown Radius, int32_t NumberOfSides, struct Unknown RenderColor); // Function Engine.Canvas.K2_DrawPolygon(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x447DB40>
-	void K2_DrawMaterialTriangle(struct Unknown RenderMaterial, struct TArray<Unknown> Triangles); // Function Engine.Canvas.K2_DrawMaterialTriangle(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x447DA20>
-	void K2_DrawMaterial(struct Unknown RenderMaterial, struct Unknown ScreenPosition, struct Unknown ScreenSize, struct Unknown CoordinatePosition, struct Unknown CoordinateSize, float Rotation, struct Unknown PivotPoint); // Function Engine.Canvas.K2_DrawMaterial(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x447D800>
-	void K2_DrawLine(struct Unknown ScreenPositionA, struct Unknown ScreenPositionB, float Thickness, struct Unknown RenderColor); // Function Engine.Canvas.K2_DrawLine(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x447D6B0>
-	void K2_DrawBox(struct Unknown ScreenPosition, struct Unknown ScreenSize, float Thickness, struct Unknown RenderColor); // Function Engine.Canvas.K2_DrawBox(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x447D560>
-	void K2_DrawBorder(struct Unknown BorderTexture, struct Unknown BackgroundTexture, struct Unknown LeftBorderTexture, struct Unknown RightBorderTexture, struct Unknown TopBorderTexture, struct Unknown BottomBorderTexture, struct Unknown ScreenPosition, struct Unknown ScreenSize, struct Unknown CoordinatePosition, struct Unknown CoordinateSize, struct Unknown RenderColor, struct Unknown BorderScale, struct Unknown BackgroundScale, float Rotation, struct Unknown PivotPoint, struct Unknown CornerSize); // Function Engine.Canvas.K2_DrawBorder(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x447D120>
-	void K2_Deproject(struct Unknown ScreenPosition, struct Unknown& WorldOrigin, struct Unknown& WorldDirection); // Function Engine.Canvas.K2_Deproject(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x447D000>
+	struct Unknown K2_TextSize(struct Unknown RenderFont, struct FString RenderText, struct Unknown Scale); // Function Engine.Canvas.K2_TextSize(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x447E5B0>
+	struct Unknown K2_StrLen(struct Unknown RenderFont, struct FString RenderText); // Function Engine.Canvas.K2_StrLen(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x447E4C0>
+	struct Unknown K2_Project(struct Unknown WorldLocation); // Function Engine.Canvas.K2_Project(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x447E410>
+	void K2_DrawTriangle(struct Unknown RenderTexture, struct TArray<Unknown> Triangles); // Function Engine.Canvas.K2_DrawTriangle(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x447E2F0>
+	void K2_DrawTexture(struct Unknown RenderTexture, struct Unknown ScreenPosition, struct Unknown ScreenSize, struct Unknown CoordinatePosition, struct Unknown CoordinateSize, struct Unknown RenderColor, char BlendMode, float Rotation, struct Unknown PivotPoint); // Function Engine.Canvas.K2_DrawTexture(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x447E070>
+	void K2_DrawText(struct Unknown RenderFont, struct FString RenderText, struct Unknown ScreenPosition, struct Unknown Scale, struct Unknown RenderColor, float Kerning, struct Unknown ShadowColor, struct Unknown ShadowOffset, char bCentreX, char bCentreY, char bOutlined, struct Unknown OutlineColor); // Function Engine.Canvas.K2_DrawText(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x447DCD0>
+	void K2_DrawPolygon(struct Unknown RenderTexture, struct Unknown ScreenPosition, struct Unknown Radius, int32_t NumberOfSides, struct Unknown RenderColor); // Function Engine.Canvas.K2_DrawPolygon(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x447DB40>
+	void K2_DrawMaterialTriangle(struct Unknown RenderMaterial, struct TArray<Unknown> Triangles); // Function Engine.Canvas.K2_DrawMaterialTriangle(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x447DA20>
+	void K2_DrawMaterial(struct Unknown RenderMaterial, struct Unknown ScreenPosition, struct Unknown ScreenSize, struct Unknown CoordinatePosition, struct Unknown CoordinateSize, float Rotation, struct Unknown PivotPoint); // Function Engine.Canvas.K2_DrawMaterial(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x447D800>
+	void K2_DrawLine(struct Unknown ScreenPositionA, struct Unknown ScreenPositionB, float Thickness, struct Unknown RenderColor); // Function Engine.Canvas.K2_DrawLine(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x447D6B0>
+	void K2_DrawBox(struct Unknown ScreenPosition, struct Unknown ScreenSize, float Thickness, struct Unknown RenderColor); // Function Engine.Canvas.K2_DrawBox(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x447D560>
+	void K2_DrawBorder(struct Unknown BorderTexture, struct Unknown BackgroundTexture, struct Unknown LeftBorderTexture, struct Unknown RightBorderTexture, struct Unknown TopBorderTexture, struct Unknown BottomBorderTexture, struct Unknown ScreenPosition, struct Unknown ScreenSize, struct Unknown CoordinatePosition, struct Unknown CoordinateSize, struct Unknown RenderColor, struct Unknown BorderScale, struct Unknown BackgroundScale, float Rotation, struct Unknown PivotPoint, struct Unknown CornerSize); // Function Engine.Canvas.K2_DrawBorder(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x447D120>
+	void K2_Deproject(struct Unknown ScreenPosition, struct Unknown& WorldOrigin, struct Unknown& WorldDirection); // Function Engine.Canvas.K2_Deproject(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x447D000>
 };
 
 // Class Engine.TextureRenderTarget
@@ -9114,10 +9114,10 @@ public:
 	struct TWeakObjectPtr<struct Unknown> World; // 0xF8 (8)
 	char bShouldClearRenderTargetOnReceiveUpdate : 0; // 0x100 (1)
 
-	void UpdateResource(); // Function Engine.CanvasRenderTarget2D.UpdateResource(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44858F0>
-	void ReceiveUpdate(struct Unknown Canvas, int32_t Width, int32_t Height); // Function Engine.CanvasRenderTarget2D.ReceiveUpdate(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void GetSize(int32_t& Width, int32_t& Height); // Function Engine.CanvasRenderTarget2D.GetSize(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4483700>
-	struct Unknown CreateCanvasRenderTarget2D(struct Unknown WorldContextObject, struct Unknown* CanvasRenderTarget2DClass, int32_t Width, int32_t Height); // Function Engine.CanvasRenderTarget2D.CreateCanvasRenderTarget2D(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44831C0>
+	void UpdateResource(); // Function Engine.CanvasRenderTarget2D.UpdateResource(Native|Public|BlueprintCallable) // <Game_BE.exe+0x44858F0>
+	void ReceiveUpdate(struct Unknown Canvas, int32_t Width, int32_t Height); // Function Engine.CanvasRenderTarget2D.ReceiveUpdate(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void GetSize(int32_t& Width, int32_t& Height); // Function Engine.CanvasRenderTarget2D.GetSize(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x4483700>
+	struct Unknown CreateCanvasRenderTarget2D(struct Unknown WorldContextObject, struct Unknown* CanvasRenderTarget2DClass, int32_t Width, int32_t Height); // Function Engine.CanvasRenderTarget2D.CreateCanvasRenderTarget2D(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x44831C0>
 };
 
 // Class Engine.ChaosPhysicalMaterial
@@ -9151,7 +9151,7 @@ public:
 	struct Unknown ChildActor; // 0x230 (8)
 	struct Unknown ChildActorTemplate; // 0x238 (8)
 
-	void SetChildActorClass(struct Unknown* InClass); // Function Engine.ChildActorComponent.SetChildActorClass(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x448CF80>
+	void SetChildActorClass(struct Unknown* InClass); // Function Engine.ChildActorComponent.SetChildActorClass(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x448CF80>
 };
 
 // Class Engine.ChildConnection
@@ -9304,7 +9304,7 @@ public:
 	struct Unknown FloatCurve; // 0x30 (128)
 	char bIsEventCurve : 0; // 0xB0 (1)
 
-	float GetFloatValue(float InTime); // Function Engine.CurveFloat.GetFloatValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4495440>
+	float GetFloatValue(float InTime); // Function Engine.CurveFloat.GetFloatValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4495440>
 };
 
 // Class Engine.CurveLinearColor
@@ -9321,8 +9321,8 @@ public:
 	float AdjustMinAlpha; // 0x244 (4)
 	float AdjustMaxAlpha; // 0x248 (4)
 
-	struct Unknown GetLinearColorValue(float InTime); // Function Engine.CurveLinearColor.GetLinearColorValue(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44954D0>
-	struct Unknown GetClampedLinearColorValue(float InTime); // Function Engine.CurveLinearColor.GetClampedLinearColorValue(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4494AD0>
+	struct Unknown GetLinearColorValue(float InTime); // Function Engine.CurveLinearColor.GetLinearColorValue(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44954D0>
+	struct Unknown GetClampedLinearColorValue(float InTime); // Function Engine.CurveLinearColor.GetClampedLinearColorValue(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4494AD0>
 };
 
 // Class Engine.Texture2D
@@ -9337,8 +9337,8 @@ public:
 	char AddressY; // 0xC2 (1)
 	struct Unknown ImportedSize; // 0xC4 (8)
 
-	int32_t Blueprint_GetSizeY(); // Function Engine.Texture2D.Blueprint_GetSizeY(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45F2BF0>
-	int32_t Blueprint_GetSizeX(); // Function Engine.Texture2D.Blueprint_GetSizeX(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45F2BC0>
+	int32_t Blueprint_GetSizeY(); // Function Engine.Texture2D.Blueprint_GetSizeY(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45F2BF0>
+	int32_t Blueprint_GetSizeX(); // Function Engine.Texture2D.Blueprint_GetSizeX(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45F2BC0>
 };
 
 // Class Engine.CurveLinearColorAtlas
@@ -9349,7 +9349,7 @@ public:
 	uint32_t TextureSize; // 0xE8 (4)
 	struct TArray<Unknown> GradientCurves; // 0xF0 (16)
 
-	char GetCurvePosition(struct Unknown InCurve, float& Position); // Function Engine.CurveLinearColorAtlas.GetCurvePosition(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4494B70>
+	char GetCurvePosition(struct Unknown InCurve, float& Position); // Function Engine.CurveLinearColorAtlas.GetCurvePosition(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x4494B70>
 };
 
 // Class Engine.CurveVector
@@ -9359,7 +9359,7 @@ public:
 
 	struct Unknown FloatCurves[0x3]; // 0x30 (384)
 
-	struct Unknown GetVectorValue(float InTime); // Function Engine.CurveVector.GetVectorValue(Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4495760>
+	struct Unknown GetVectorValue(float InTime); // Function Engine.CurveVector.GetVectorValue(Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4495760>
 };
 
 // Class Engine.DebugCameraController
@@ -9388,13 +9388,13 @@ public:
 	float InitialAccel; // 0x7C0 (4)
 	float InitialDecel; // 0x7C4 (4)
 
-	void ToggleDisplay(); // Function Engine.DebugCameraController.ToggleDisplay(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44958A0>
-	void ShowDebugSelectedInfo(); // Function Engine.DebugCameraController.ShowDebugSelectedInfo(Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4495880>
-	void SetPawnMovementSpeedScale(float NewSpeedScale); // Function Engine.DebugCameraController.SetPawnMovementSpeedScale(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4495800>
-	void ReceiveOnDeactivate(struct Unknown RestoredPC); // Function Engine.DebugCameraController.ReceiveOnDeactivate(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveOnActorSelected(struct Unknown NewSelectedActor, struct Unknown& SelectHitLocation, struct Unknown& SelectHitNormal, struct Unknown& Hit); // Function Engine.DebugCameraController.ReceiveOnActorSelected(Event|Protected|HasOutParms|HasDefaults|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveOnActivate(struct Unknown OriginalPC); // Function Engine.DebugCameraController.ReceiveOnActivate(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	struct Unknown GetSelectedActor(); // Function Engine.DebugCameraController.GetSelectedActor(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4495570>
+	void ToggleDisplay(); // Function Engine.DebugCameraController.ToggleDisplay(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44958A0>
+	void ShowDebugSelectedInfo(); // Function Engine.DebugCameraController.ShowDebugSelectedInfo(Exec|Native|Public) // <Game_BE.exe+0x4495880>
+	void SetPawnMovementSpeedScale(float NewSpeedScale); // Function Engine.DebugCameraController.SetPawnMovementSpeedScale(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4495800>
+	void ReceiveOnDeactivate(struct Unknown RestoredPC); // Function Engine.DebugCameraController.ReceiveOnDeactivate(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveOnActorSelected(struct Unknown NewSelectedActor, struct Unknown& SelectHitLocation, struct Unknown& SelectHitNormal, struct Unknown& Hit); // Function Engine.DebugCameraController.ReceiveOnActorSelected(Event|Protected|HasOutParms|HasDefaults|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveOnActivate(struct Unknown OriginalPC); // Function Engine.DebugCameraController.ReceiveOnActivate(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	struct Unknown GetSelectedActor(); // Function Engine.DebugCameraController.GetSelectedActor(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4495570>
 };
 
 // Class Engine.DebugCameraControllerSettings
@@ -9412,9 +9412,9 @@ public:
 
 	struct Unknown Decal; // 0x300 (8)
 
-	void SetDecalMaterial(struct Unknown NewDecalMaterial); // Function Engine.DecalActor.SetDecalMaterial(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4499520>
-	struct Unknown GetDecalMaterial(); // Function Engine.DecalActor.GetDecalMaterial(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4499100>
-	struct Unknown CreateDynamicMaterialInstance(); // Function Engine.DecalActor.CreateDynamicMaterialInstance(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44990A0>
+	void SetDecalMaterial(struct Unknown NewDecalMaterial); // Function Engine.DecalActor.SetDecalMaterial(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4499520>
+	struct Unknown GetDecalMaterial(); // Function Engine.DecalActor.GetDecalMaterial(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4499100>
+	struct Unknown CreateDynamicMaterialInstance(); // Function Engine.DecalActor.CreateDynamicMaterialInstance(Native|Public|BlueprintCallable) // <Game_BE.exe+0x44990A0>
 };
 
 // Class Engine.DecalComponent
@@ -9432,17 +9432,17 @@ public:
 	char bDestroyOwnerAfterFade : 0; // 0x248 (1)
 	struct Unknown DecalSize; // 0x24C (12)
 
-	void SetSortOrder(int32_t Value); // Function Engine.DecalComponent.SetSortOrder(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4499C90>
-	void SetFadeScreenSize(float NewFadeScreenSize); // Function Engine.DecalComponent.SetFadeScreenSize(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4499A00>
-	void SetFadeOut(float StartDelay, float Duration, char DestroyOwnerAfterFade); // Function Engine.DecalComponent.SetFadeOut(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44998F0>
-	void SetFadeIn(float StartDelay, float Duaration); // Function Engine.DecalComponent.SetFadeIn(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4499830>
-	void SetDecalMaterial(struct Unknown NewDecalMaterial); // Function Engine.DecalComponent.SetDecalMaterial(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44995A0>
-	float GetFadeStartDelay(); // Function Engine.DecalComponent.GetFadeStartDelay(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44991F0>
-	float GetFadeInStartDelay(); // Function Engine.DecalComponent.GetFadeInStartDelay(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44991C0>
-	float GetFadeInDuration(); // Function Engine.DecalComponent.GetFadeInDuration(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4499190>
-	float GetFadeDuration(); // Function Engine.DecalComponent.GetFadeDuration(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4499160>
-	struct Unknown GetDecalMaterial(); // Function Engine.DecalComponent.GetDecalMaterial(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4499130>
-	struct Unknown CreateDynamicMaterialInstance(); // Function Engine.DecalComponent.CreateDynamicMaterialInstance(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44990D0>
+	void SetSortOrder(int32_t Value); // Function Engine.DecalComponent.SetSortOrder(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4499C90>
+	void SetFadeScreenSize(float NewFadeScreenSize); // Function Engine.DecalComponent.SetFadeScreenSize(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4499A00>
+	void SetFadeOut(float StartDelay, float Duration, char DestroyOwnerAfterFade); // Function Engine.DecalComponent.SetFadeOut(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44998F0>
+	void SetFadeIn(float StartDelay, float Duaration); // Function Engine.DecalComponent.SetFadeIn(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4499830>
+	void SetDecalMaterial(struct Unknown NewDecalMaterial); // Function Engine.DecalComponent.SetDecalMaterial(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44995A0>
+	float GetFadeStartDelay(); // Function Engine.DecalComponent.GetFadeStartDelay(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44991F0>
+	float GetFadeInStartDelay(); // Function Engine.DecalComponent.GetFadeInStartDelay(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44991C0>
+	float GetFadeInDuration(); // Function Engine.DecalComponent.GetFadeInDuration(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4499190>
+	float GetFadeDuration(); // Function Engine.DecalComponent.GetFadeDuration(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4499160>
+	struct Unknown GetDecalMaterial(); // Function Engine.DecalComponent.GetDecalMaterial(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4499130>
+	struct Unknown CreateDynamicMaterialInstance(); // Function Engine.DecalComponent.CreateDynamicMaterialInstance(Native|Public|BlueprintCallable) // <Game_BE.exe+0x44990D0>
 };
 
 // Class Engine.MKDemoNetConnectionEx
@@ -9520,19 +9520,19 @@ public:
 	struct Unknown LightComponent; // 0x300 (8)
 	char bEnabled : 0; // 0x308 (1)
 
-	void ToggleEnabled(); // Function Engine.Light.ToggleEnabled(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453EAA0>
-	void SetLightFunctionScale(struct Unknown NewLightFunctionScale); // Function Engine.Light.SetLightFunctionScale(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453E330>
-	void SetLightFunctionMaterial(struct Unknown NewLightFunctionMaterial); // Function Engine.Light.SetLightFunctionMaterial(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453E230>
-	void SetLightFunctionFadeDistance(float NewLightFunctionFadeDistance); // Function Engine.Light.SetLightFunctionFadeDistance(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453E130>
-	void SetLightColor(struct Unknown NewLightColor); // Function Engine.Light.SetLightColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453DF60>
-	void SetEnabled(char bSetEnabled); // Function Engine.Light.SetEnabled(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453DBC0>
-	void SetCastShadows(char bNewValue); // Function Engine.Light.SetCastShadows(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453D8E0>
-	void SetBrightness(float NewBrightness); // Function Engine.Light.SetBrightness(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453D860>
-	void SetAffectTranslucentLighting(char bNewValue); // Function Engine.Light.SetAffectTranslucentLighting(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453D550>
-	void OnRep_bEnabled(); // Function Engine.Light.OnRep_bEnabled(Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1E71C00>
-	char IsEnabled(); // Function Engine.Light.IsEnabled(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453CF20>
-	struct Unknown GetLightColor(); // Function Engine.Light.GetLightColor(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453CE80>
-	float GetBrightness(); // Function Engine.Light.GetBrightness(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453CE20>
+	void ToggleEnabled(); // Function Engine.Light.ToggleEnabled(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x453EAA0>
+	void SetLightFunctionScale(struct Unknown NewLightFunctionScale); // Function Engine.Light.SetLightFunctionScale(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x453E330>
+	void SetLightFunctionMaterial(struct Unknown NewLightFunctionMaterial); // Function Engine.Light.SetLightFunctionMaterial(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x453E230>
+	void SetLightFunctionFadeDistance(float NewLightFunctionFadeDistance); // Function Engine.Light.SetLightFunctionFadeDistance(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x453E130>
+	void SetLightColor(struct Unknown NewLightColor); // Function Engine.Light.SetLightColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x453DF60>
+	void SetEnabled(char bSetEnabled); // Function Engine.Light.SetEnabled(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x453DBC0>
+	void SetCastShadows(char bNewValue); // Function Engine.Light.SetCastShadows(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x453D8E0>
+	void SetBrightness(float NewBrightness); // Function Engine.Light.SetBrightness(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x453D860>
+	void SetAffectTranslucentLighting(char bNewValue); // Function Engine.Light.SetAffectTranslucentLighting(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x453D550>
+	void OnRep_bEnabled(); // Function Engine.Light.OnRep_bEnabled(Native|Public) // <Game_BE.exe+0x1E71C00>
+	char IsEnabled(); // Function Engine.Light.IsEnabled(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x453CF20>
+	struct Unknown GetLightColor(); // Function Engine.Light.GetLightColor(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x453CE80>
+	float GetBrightness(); // Function Engine.Light.GetBrightness(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x453CE20>
 };
 
 // Class Engine.LightComponentBase
@@ -9561,14 +9561,14 @@ public:
 	float VolumetricSourceRadiusScale; // 0x254 (4)
 	int32_t SamplesPerPixel; // 0x258 (4)
 
-	void SetSamplesPerPixel(int32_t NewValue); // Function Engine.LightComponentBase.SetSamplesPerPixel(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45416F0>
-	void SetCastVolumetricShadow(char bNewValue); // Function Engine.LightComponentBase.SetCastVolumetricShadow(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45415E0>
-	void SetCastShadows(char bNewValue); // Function Engine.LightComponentBase.SetCastShadows(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4541550>
-	void SetCastRaytracedShadow(char bNewValue); // Function Engine.LightComponentBase.SetCastRaytracedShadow(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45414C0>
-	void SetCastDeepShadow(char bNewValue); // Function Engine.LightComponentBase.SetCastDeepShadow(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4541430>
-	void SetAffectReflection(char bNewValue); // Function Engine.LightComponentBase.SetAffectReflection(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4541320>
-	void SetAffectGlobalIllumination(char bNewValue); // Function Engine.LightComponentBase.SetAffectGlobalIllumination(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4541290>
-	struct Unknown GetLightColor(); // Function Engine.LightComponentBase.GetLightColor(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4541150>
+	void SetSamplesPerPixel(int32_t NewValue); // Function Engine.LightComponentBase.SetSamplesPerPixel(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45416F0>
+	void SetCastVolumetricShadow(char bNewValue); // Function Engine.LightComponentBase.SetCastVolumetricShadow(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45415E0>
+	void SetCastShadows(char bNewValue); // Function Engine.LightComponentBase.SetCastShadows(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4541550>
+	void SetCastRaytracedShadow(char bNewValue); // Function Engine.LightComponentBase.SetCastRaytracedShadow(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45414C0>
+	void SetCastDeepShadow(char bNewValue); // Function Engine.LightComponentBase.SetCastDeepShadow(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4541430>
+	void SetAffectReflection(char bNewValue); // Function Engine.LightComponentBase.SetAffectReflection(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4541320>
+	void SetAffectGlobalIllumination(char bNewValue); // Function Engine.LightComponentBase.SetAffectGlobalIllumination(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4541290>
+	struct Unknown GetLightColor(); // Function Engine.LightComponentBase.GetLightColor(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4541150>
 };
 
 // Class Engine.LightComponent
@@ -9616,32 +9616,32 @@ public:
 	char bUseRayTracedDistanceFieldShadows : 0; // 0x2F5 (1)
 	float RayStartOffsetDepthScale; // 0x2F8 (4)
 
-	void SetVolumetricScatteringIntensity(float NewIntensity); // Function Engine.LightComponent.SetVolumetricScatteringIntensity(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453EA20>
-	void SetUseIESBrightness(char bNewValue); // Function Engine.LightComponent.SetUseIESBrightness(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453E990>
-	void SetTransmission(char bNewValue); // Function Engine.LightComponent.SetTransmission(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453E900>
-	void SetTemperature(float NewTemperature); // Function Engine.LightComponent.SetTemperature(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453E880>
-	void SetSpecularScale(float NewValue); // Function Engine.LightComponent.SetSpecularScale(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453E800>
-	void SetShadowSlopeBias(float NewValue); // Function Engine.LightComponent.SetShadowSlopeBias(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453E6F0>
-	void SetShadowResolutionScale(float NewValue); // Function Engine.LightComponent.SetShadowResolutionScale(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453E670>
-	void SetShadowBias(float NewValue); // Function Engine.LightComponent.SetShadowBias(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453E5F0>
-	void SetLightingChannels(char bChannel0, char bChannel1, char bChannel2); // Function Engine.LightComponent.SetLightingChannels(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453E450>
-	void SetLightFunctionScale(struct Unknown NewLightFunctionScale); // Function Engine.LightComponent.SetLightFunctionScale(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453E3C0>
-	void SetLightFunctionMaterial(struct Unknown NewLightFunctionMaterial); // Function Engine.LightComponent.SetLightFunctionMaterial(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453E2B0>
-	void SetLightFunctionFadeDistance(float NewLightFunctionFadeDistance); // Function Engine.LightComponent.SetLightFunctionFadeDistance(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453E1B0>
-	void SetLightFunctionDisabledBrightness(float NewValue); // Function Engine.LightComponent.SetLightFunctionDisabledBrightness(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453E0B0>
-	void SetLightColor(struct Unknown NewLightColor, char bSRGB); // Function Engine.LightComponent.SetLightColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453DFE0>
-	void SetIntensity(float NewIntensity); // Function Engine.LightComponent.SetIntensity(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453DE60>
-	void SetIndirectLightingIntensity(float NewIntensity); // Function Engine.LightComponent.SetIndirectLightingIntensity(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453DDE0>
-	void SetIESTexture(struct Unknown NewValue); // Function Engine.LightComponent.SetIESTexture(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453DD60>
-	void SetIESBrightnessScale(float NewValue); // Function Engine.LightComponent.SetIESBrightnessScale(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453DCE0>
-	void SetForceCachedShadowsForMovablePrimitives(char bNewValue); // Function Engine.LightComponent.SetForceCachedShadowsForMovablePrimitives(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453DC50>
-	void SetEnableLightShaftBloom(char bNewValue); // Function Engine.LightComponent.SetEnableLightShaftBloom(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453DB30>
-	void SetBloomTint(struct Unknown NewValue); // Function Engine.LightComponent.SetBloomTint(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453D7F0>
-	void SetBloomThreshold(float NewValue); // Function Engine.LightComponent.SetBloomThreshold(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453D770>
-	void SetBloomScale(float NewValue); // Function Engine.LightComponent.SetBloomScale(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453D6F0>
-	void SetBloomMaxBrightness(float NewValue); // Function Engine.LightComponent.SetBloomMaxBrightness(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453D670>
-	void SetAffectTranslucentLighting(char bNewValue); // Function Engine.LightComponent.SetAffectTranslucentLighting(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453D5E0>
-	void SetAffectDynamicIndirectLighting(char bNewValue); // Function Engine.LightComponent.SetAffectDynamicIndirectLighting(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453D4C0>
+	void SetVolumetricScatteringIntensity(float NewIntensity); // Function Engine.LightComponent.SetVolumetricScatteringIntensity(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x453EA20>
+	void SetUseIESBrightness(char bNewValue); // Function Engine.LightComponent.SetUseIESBrightness(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x453E990>
+	void SetTransmission(char bNewValue); // Function Engine.LightComponent.SetTransmission(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x453E900>
+	void SetTemperature(float NewTemperature); // Function Engine.LightComponent.SetTemperature(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x453E880>
+	void SetSpecularScale(float NewValue); // Function Engine.LightComponent.SetSpecularScale(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x453E800>
+	void SetShadowSlopeBias(float NewValue); // Function Engine.LightComponent.SetShadowSlopeBias(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x453E6F0>
+	void SetShadowResolutionScale(float NewValue); // Function Engine.LightComponent.SetShadowResolutionScale(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x453E670>
+	void SetShadowBias(float NewValue); // Function Engine.LightComponent.SetShadowBias(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x453E5F0>
+	void SetLightingChannels(char bChannel0, char bChannel1, char bChannel2); // Function Engine.LightComponent.SetLightingChannels(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x453E450>
+	void SetLightFunctionScale(struct Unknown NewLightFunctionScale); // Function Engine.LightComponent.SetLightFunctionScale(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x453E3C0>
+	void SetLightFunctionMaterial(struct Unknown NewLightFunctionMaterial); // Function Engine.LightComponent.SetLightFunctionMaterial(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x453E2B0>
+	void SetLightFunctionFadeDistance(float NewLightFunctionFadeDistance); // Function Engine.LightComponent.SetLightFunctionFadeDistance(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x453E1B0>
+	void SetLightFunctionDisabledBrightness(float NewValue); // Function Engine.LightComponent.SetLightFunctionDisabledBrightness(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x453E0B0>
+	void SetLightColor(struct Unknown NewLightColor, char bSRGB); // Function Engine.LightComponent.SetLightColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x453DFE0>
+	void SetIntensity(float NewIntensity); // Function Engine.LightComponent.SetIntensity(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x453DE60>
+	void SetIndirectLightingIntensity(float NewIntensity); // Function Engine.LightComponent.SetIndirectLightingIntensity(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x453DDE0>
+	void SetIESTexture(struct Unknown NewValue); // Function Engine.LightComponent.SetIESTexture(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x453DD60>
+	void SetIESBrightnessScale(float NewValue); // Function Engine.LightComponent.SetIESBrightnessScale(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x453DCE0>
+	void SetForceCachedShadowsForMovablePrimitives(char bNewValue); // Function Engine.LightComponent.SetForceCachedShadowsForMovablePrimitives(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x453DC50>
+	void SetEnableLightShaftBloom(char bNewValue); // Function Engine.LightComponent.SetEnableLightShaftBloom(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x453DB30>
+	void SetBloomTint(struct Unknown NewValue); // Function Engine.LightComponent.SetBloomTint(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x453D7F0>
+	void SetBloomThreshold(float NewValue); // Function Engine.LightComponent.SetBloomThreshold(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x453D770>
+	void SetBloomScale(float NewValue); // Function Engine.LightComponent.SetBloomScale(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x453D6F0>
+	void SetBloomMaxBrightness(float NewValue); // Function Engine.LightComponent.SetBloomMaxBrightness(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x453D670>
+	void SetAffectTranslucentLighting(char bNewValue); // Function Engine.LightComponent.SetAffectTranslucentLighting(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x453D5E0>
+	void SetAffectDynamicIndirectLighting(char bNewValue); // Function Engine.LightComponent.SetAffectDynamicIndirectLighting(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x453D4C0>
 };
 
 // Class Engine.DirectionalLightComponent
@@ -9676,16 +9676,16 @@ public:
 	char bUsedAsAtmosphereSunLight : 0; // 0x3E4 (1)
 	int32_t AtmosphereSunLightIndex; // 0x3E8 (4)
 
-	void SetShadowDistanceFadeoutFraction(float NewValue); // Function Engine.DirectionalLightComponent.SetShadowDistanceFadeoutFraction(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4499C10>
-	void SetShadowAmount(float NewValue); // Function Engine.DirectionalLightComponent.SetShadowAmount(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4499B90>
-	void SetOcclusionMaskDarkness(float NewValue); // Function Engine.DirectionalLightComponent.SetOcclusionMaskDarkness(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4499B10>
-	void SetLightShaftOverrideDirection(struct Unknown NewValue); // Function Engine.DirectionalLightComponent.SetLightShaftOverrideDirection(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4499A80>
-	void SetEnableLightShaftOcclusion(char bNewValue); // Function Engine.DirectionalLightComponent.SetEnableLightShaftOcclusion(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44997A0>
-	void SetDynamicShadowDistanceStationaryLight(float NewValue); // Function Engine.DirectionalLightComponent.SetDynamicShadowDistanceStationaryLight(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4499720>
-	void SetDynamicShadowDistanceMovableLight(float NewValue); // Function Engine.DirectionalLightComponent.SetDynamicShadowDistanceMovableLight(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44996A0>
-	void SetDynamicShadowCascades(int32_t NewValue); // Function Engine.DirectionalLightComponent.SetDynamicShadowCascades(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4499620>
-	void SetCascadeTransitionFraction(float NewValue); // Function Engine.DirectionalLightComponent.SetCascadeTransitionFraction(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44994A0>
-	void SetCascadeDistributionExponent(float NewValue); // Function Engine.DirectionalLightComponent.SetCascadeDistributionExponent(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4499420>
+	void SetShadowDistanceFadeoutFraction(float NewValue); // Function Engine.DirectionalLightComponent.SetShadowDistanceFadeoutFraction(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4499C10>
+	void SetShadowAmount(float NewValue); // Function Engine.DirectionalLightComponent.SetShadowAmount(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4499B90>
+	void SetOcclusionMaskDarkness(float NewValue); // Function Engine.DirectionalLightComponent.SetOcclusionMaskDarkness(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4499B10>
+	void SetLightShaftOverrideDirection(struct Unknown NewValue); // Function Engine.DirectionalLightComponent.SetLightShaftOverrideDirection(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4499A80>
+	void SetEnableLightShaftOcclusion(char bNewValue); // Function Engine.DirectionalLightComponent.SetEnableLightShaftOcclusion(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44997A0>
+	void SetDynamicShadowDistanceStationaryLight(float NewValue); // Function Engine.DirectionalLightComponent.SetDynamicShadowDistanceStationaryLight(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4499720>
+	void SetDynamicShadowDistanceMovableLight(float NewValue); // Function Engine.DirectionalLightComponent.SetDynamicShadowDistanceMovableLight(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44996A0>
+	void SetDynamicShadowCascades(int32_t NewValue); // Function Engine.DirectionalLightComponent.SetDynamicShadowCascades(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4499620>
+	void SetCascadeTransitionFraction(float NewValue); // Function Engine.DirectionalLightComponent.SetCascadeTransitionFraction(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44994A0>
+	void SetCascadeDistributionExponent(float NewValue); // Function Engine.DirectionalLightComponent.SetCascadeDistributionExponent(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4499420>
 };
 
 // Class Engine.DistributionFloat
@@ -9832,10 +9832,10 @@ public:
 
 	float SphereRadius; // 0x4C0 (4)
 
-	void SetSphereRadius(float InSphereRadius, char bUpdateOverlaps); // Function Engine.SphereComponent.SetSphereRadius(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E0CC0>
-	float GetUnscaledSphereRadius(); // Function Engine.SphereComponent.GetUnscaledSphereRadius(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44837E0>
-	float GetShapeScale(); // Function Engine.SphereComponent.GetShapeScale(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DF1A0>
-	float GetScaledSphereRadius(); // Function Engine.SphereComponent.GetScaledSphereRadius(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45DF150>
+	void SetSphereRadius(float InSphereRadius, char bUpdateOverlaps); // Function Engine.SphereComponent.SetSphereRadius(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45E0CC0>
+	float GetUnscaledSphereRadius(); // Function Engine.SphereComponent.GetUnscaledSphereRadius(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44837E0>
+	float GetShapeScale(); // Function Engine.SphereComponent.GetShapeScale(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DF1A0>
+	float GetScaledSphereRadius(); // Function Engine.SphereComponent.GetScaledSphereRadius(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45DF150>
 };
 
 // Class Engine.EdGraph
@@ -9925,18 +9925,18 @@ public:
 	struct FMulticastInlineDelegate OnParticleDeath; // 0x330 (16)
 	struct FMulticastInlineDelegate OnParticleCollide; // 0x340 (16)
 
-	void ToggleActive(); // Function Engine.Emitter.ToggleActive(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44A21D0>
-	void SetVectorParameter(struct FName ParameterName, struct Unknown Param); // Function Engine.Emitter.SetVectorParameter(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44A2100>
-	void SetTemplate(struct Unknown NewTemplate); // Function Engine.Emitter.SetTemplate(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124CBF0>
-	void SetMaterialParameter(struct FName ParameterName, struct Unknown Param); // Function Engine.Emitter.SetMaterialParameter(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44A2040>
-	void SetFloatParameter(struct FName ParameterName, float Param); // Function Engine.Emitter.SetFloatParameter(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44A1F70>
-	void SetColorParameter(struct FName ParameterName, struct Unknown Param); // Function Engine.Emitter.SetColorParameter(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44A1EA0>
-	void SetActorParameter(struct FName ParameterName, struct Unknown Param); // Function Engine.Emitter.SetActorParameter(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44A1DE0>
-	void OnRep_bCurrentlyActive(); // Function Engine.Emitter.OnRep_bCurrentlyActive(Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124CBD0>
-	void OnParticleSystemFinished(struct Unknown FinishedComponent); // Function Engine.Emitter.OnParticleSystemFinished(Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44A1D50>
-	char IsActive(); // Function Engine.Emitter.IsActive(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44A1D20>
-	void Deactivate(); // Function Engine.Emitter.Deactivate(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44A1D00>
-	void Activate(); // Function Engine.Emitter.Activate(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44A1CE0>
+	void ToggleActive(); // Function Engine.Emitter.ToggleActive(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44A21D0>
+	void SetVectorParameter(struct FName ParameterName, struct Unknown Param); // Function Engine.Emitter.SetVectorParameter(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x44A2100>
+	void SetTemplate(struct Unknown NewTemplate); // Function Engine.Emitter.SetTemplate(Native|Public|BlueprintCallable) // <Game_BE.exe+0x124CBF0>
+	void SetMaterialParameter(struct FName ParameterName, struct Unknown Param); // Function Engine.Emitter.SetMaterialParameter(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44A2040>
+	void SetFloatParameter(struct FName ParameterName, float Param); // Function Engine.Emitter.SetFloatParameter(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44A1F70>
+	void SetColorParameter(struct FName ParameterName, struct Unknown Param); // Function Engine.Emitter.SetColorParameter(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x44A1EA0>
+	void SetActorParameter(struct FName ParameterName, struct Unknown Param); // Function Engine.Emitter.SetActorParameter(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44A1DE0>
+	void OnRep_bCurrentlyActive(); // Function Engine.Emitter.OnRep_bCurrentlyActive(Native|Public) // <Game_BE.exe+0x124CBD0>
+	void OnParticleSystemFinished(struct Unknown FinishedComponent); // Function Engine.Emitter.OnParticleSystemFinished(Native|Public) // <Game_BE.exe+0x44A1D50>
+	char IsActive(); // Function Engine.Emitter.IsActive(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44A1D20>
+	void Deactivate(); // Function Engine.Emitter.Deactivate(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44A1D00>
+	void Activate(); // Function Engine.Emitter.Activate(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44A1CE0>
 };
 
 // Class Engine.EmitterCameraLensEffectBase
@@ -9978,7 +9978,7 @@ public:
 	struct Unknown Component; // 0x300 (8)
 	char bEnabled : 0; // 0x308 (1)
 
-	void OnRep_bEnabled(); // Function Engine.ExponentialHeightFog.OnRep_bEnabled(Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1E71C00>
+	void OnRep_bEnabled(); // Function Engine.ExponentialHeightFog.OnRep_bEnabled(Native|Public) // <Game_BE.exe+0x1E71C00>
 };
 
 // Class Engine.ExponentialHeightFogComponent
@@ -10010,26 +10010,26 @@ public:
 	float VolumetricFogStaticLightingScatteringIntensity; // 0x2BC (4)
 	char bOverrideLightColorsWithFogInscatteringColors : 0; // 0x2C0 (1)
 
-	void SetVolumetricFogScatteringDistribution(float NewValue); // Function Engine.ExponentialHeightFogComponent.SetVolumetricFogScatteringDistribution(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B4240>
-	void SetVolumetricFogExtinctionScale(float NewValue); // Function Engine.ExponentialHeightFogComponent.SetVolumetricFogExtinctionScale(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B41C0>
-	void SetVolumetricFogEmissive(struct Unknown NewValue); // Function Engine.ExponentialHeightFogComponent.SetVolumetricFogEmissive(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B4140>
-	void SetVolumetricFogDistance(float NewValue); // Function Engine.ExponentialHeightFogComponent.SetVolumetricFogDistance(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B40C0>
-	void SetVolumetricFogAlbedo(struct Unknown NewValue); // Function Engine.ExponentialHeightFogComponent.SetVolumetricFogAlbedo(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B4050>
-	void SetVolumetricFog(char bNewValue); // Function Engine.ExponentialHeightFogComponent.SetVolumetricFog(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B3FC0>
-	void SetStartDistance(float Value); // Function Engine.ExponentialHeightFogComponent.SetStartDistance(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B3F40>
-	void SetNonDirectionalInscatteringColorDistance(float Value); // Function Engine.ExponentialHeightFogComponent.SetNonDirectionalInscatteringColorDistance(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B3EC0>
-	void SetInscatteringTextureTint(struct Unknown Value); // Function Engine.ExponentialHeightFogComponent.SetInscatteringTextureTint(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B3DC0>
-	void SetInscatteringColorCubemapAngle(float Value); // Function Engine.ExponentialHeightFogComponent.SetInscatteringColorCubemapAngle(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B3D40>
-	void SetInscatteringColorCubemap(struct Unknown Value); // Function Engine.ExponentialHeightFogComponent.SetInscatteringColorCubemap(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B3CC0>
-	void SetFullyDirectionalInscatteringColorDistance(float Value); // Function Engine.ExponentialHeightFogComponent.SetFullyDirectionalInscatteringColorDistance(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B3C40>
-	void SetFogMaxOpacity(float Value); // Function Engine.ExponentialHeightFogComponent.SetFogMaxOpacity(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B3B40>
-	void SetFogInscatteringColor(struct Unknown Value); // Function Engine.ExponentialHeightFogComponent.SetFogInscatteringColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B3AC0>
-	void SetFogHeightFalloff(float Value); // Function Engine.ExponentialHeightFogComponent.SetFogHeightFalloff(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x445DC50>
-	void SetFogDensity(float Value); // Function Engine.ExponentialHeightFogComponent.SetFogDensity(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x445DE60>
-	void SetFogCutoffDistance(float Value); // Function Engine.ExponentialHeightFogComponent.SetFogCutoffDistance(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B3A40>
-	void SetDirectionalInscatteringStartDistance(float Value); // Function Engine.ExponentialHeightFogComponent.SetDirectionalInscatteringStartDistance(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B39C0>
-	void SetDirectionalInscatteringExponent(float Value); // Function Engine.ExponentialHeightFogComponent.SetDirectionalInscatteringExponent(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B3940>
-	void SetDirectionalInscatteringColor(struct Unknown Value); // Function Engine.ExponentialHeightFogComponent.SetDirectionalInscatteringColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B38C0>
+	void SetVolumetricFogScatteringDistribution(float NewValue); // Function Engine.ExponentialHeightFogComponent.SetVolumetricFogScatteringDistribution(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44B4240>
+	void SetVolumetricFogExtinctionScale(float NewValue); // Function Engine.ExponentialHeightFogComponent.SetVolumetricFogExtinctionScale(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44B41C0>
+	void SetVolumetricFogEmissive(struct Unknown NewValue); // Function Engine.ExponentialHeightFogComponent.SetVolumetricFogEmissive(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x44B4140>
+	void SetVolumetricFogDistance(float NewValue); // Function Engine.ExponentialHeightFogComponent.SetVolumetricFogDistance(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44B40C0>
+	void SetVolumetricFogAlbedo(struct Unknown NewValue); // Function Engine.ExponentialHeightFogComponent.SetVolumetricFogAlbedo(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x44B4050>
+	void SetVolumetricFog(char bNewValue); // Function Engine.ExponentialHeightFogComponent.SetVolumetricFog(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44B3FC0>
+	void SetStartDistance(float Value); // Function Engine.ExponentialHeightFogComponent.SetStartDistance(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44B3F40>
+	void SetNonDirectionalInscatteringColorDistance(float Value); // Function Engine.ExponentialHeightFogComponent.SetNonDirectionalInscatteringColorDistance(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44B3EC0>
+	void SetInscatteringTextureTint(struct Unknown Value); // Function Engine.ExponentialHeightFogComponent.SetInscatteringTextureTint(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x44B3DC0>
+	void SetInscatteringColorCubemapAngle(float Value); // Function Engine.ExponentialHeightFogComponent.SetInscatteringColorCubemapAngle(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44B3D40>
+	void SetInscatteringColorCubemap(struct Unknown Value); // Function Engine.ExponentialHeightFogComponent.SetInscatteringColorCubemap(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44B3CC0>
+	void SetFullyDirectionalInscatteringColorDistance(float Value); // Function Engine.ExponentialHeightFogComponent.SetFullyDirectionalInscatteringColorDistance(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44B3C40>
+	void SetFogMaxOpacity(float Value); // Function Engine.ExponentialHeightFogComponent.SetFogMaxOpacity(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44B3B40>
+	void SetFogInscatteringColor(struct Unknown Value); // Function Engine.ExponentialHeightFogComponent.SetFogInscatteringColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x44B3AC0>
+	void SetFogHeightFalloff(float Value); // Function Engine.ExponentialHeightFogComponent.SetFogHeightFalloff(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x445DC50>
+	void SetFogDensity(float Value); // Function Engine.ExponentialHeightFogComponent.SetFogDensity(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x445DE60>
+	void SetFogCutoffDistance(float Value); // Function Engine.ExponentialHeightFogComponent.SetFogCutoffDistance(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44B3A40>
+	void SetDirectionalInscatteringStartDistance(float Value); // Function Engine.ExponentialHeightFogComponent.SetDirectionalInscatteringStartDistance(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44B39C0>
+	void SetDirectionalInscatteringExponent(float Value); // Function Engine.ExponentialHeightFogComponent.SetDirectionalInscatteringExponent(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44B3940>
+	void SetDirectionalInscatteringColor(struct Unknown Value); // Function Engine.ExponentialHeightFogComponent.SetDirectionalInscatteringColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x44B38C0>
 };
 
 // Class Engine.FloatingPawnMovement
@@ -10110,12 +10110,12 @@ public:
 	struct Unknown AttenuationOverrides; // 0x240 (176)
 	struct FMulticastInlineDelegate OnForceFeedbackFinished; // 0x2F0 (16)
 
-	void Stop(); // Function Engine.ForceFeedbackComponent.Stop(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B42C0>
-	void SetIntensityMultiplier(float NewIntensityMultiplier); // Function Engine.ForceFeedbackComponent.SetIntensityMultiplier(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B3E40>
-	void SetForceFeedbackEffect(struct Unknown NewForceFeedbackEffect); // Function Engine.ForceFeedbackComponent.SetForceFeedbackEffect(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B3BC0>
-	void Play(float StartTime); // Function Engine.ForceFeedbackComponent.Play(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4479E60>
-	char BP_GetAttenuationSettingsToApply(struct Unknown& OutAttenuationSettings); // Function Engine.ForceFeedbackComponent.BP_GetAttenuationSettingsToApply(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B3710>
-	void AdjustAttenuation(struct Unknown& InAttenuationSettings); // Function Engine.ForceFeedbackComponent.AdjustAttenuation(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44B3610>
+	void Stop(); // Function Engine.ForceFeedbackComponent.Stop(Native|Public|BlueprintCallable) // <Game_BE.exe+0x44B42C0>
+	void SetIntensityMultiplier(float NewIntensityMultiplier); // Function Engine.ForceFeedbackComponent.SetIntensityMultiplier(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44B3E40>
+	void SetForceFeedbackEffect(struct Unknown NewForceFeedbackEffect); // Function Engine.ForceFeedbackComponent.SetForceFeedbackEffect(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44B3BC0>
+	void Play(float StartTime); // Function Engine.ForceFeedbackComponent.Play(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4479E60>
+	char BP_GetAttenuationSettingsToApply(struct Unknown& OutAttenuationSettings); // Function Engine.ForceFeedbackComponent.BP_GetAttenuationSettingsToApply(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44B3710>
+	void AdjustAttenuation(struct Unknown& InAttenuationSettings); // Function Engine.ForceFeedbackComponent.AdjustAttenuation(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x44B3610>
 };
 
 // Class Engine.ForceFeedbackEffect
@@ -10185,8 +10185,8 @@ public:
 
 	struct Unknown SpotLightComponent; // 0x310 (8)
 
-	void SetOuterConeAngle(float NewOuterConeAngle); // Function Engine.SpotLight.SetOuterConeAngle(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E59E0>
-	void SetInnerConeAngle(float NewInnerConeAngle); // Function Engine.SpotLight.SetInnerConeAngle(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E58E0>
+	void SetOuterConeAngle(float NewOuterConeAngle); // Function Engine.SpotLight.SetOuterConeAngle(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45E59E0>
+	void SetInnerConeAngle(float NewInnerConeAngle); // Function Engine.SpotLight.SetInnerConeAngle(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45E58E0>
 };
 
 // Class Engine.HapticFeedbackEffect_Buffer
@@ -10272,15 +10272,15 @@ public:
 
 	struct TArray<Unknown> CachedKeyToActionInfo; // 0x120 (16)
 
-	char WasControllerKeyJustReleased(struct Unknown Key); // Function Engine.InputComponent.WasControllerKeyJustReleased(Final|Native|Private|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44D2810>
-	char WasControllerKeyJustPressed(struct Unknown Key); // Function Engine.InputComponent.WasControllerKeyJustPressed(Final|Native|Private|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44D2810>
-	char IsControllerKeyDown(struct Unknown Key); // Function Engine.InputComponent.IsControllerKeyDown(Final|Native|Private|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44D2810>
-	void GetTouchState(int32_t FingerIndex, float& LocationX, float& LocationY, char& bIsCurrentlyPressed); // Function Engine.InputComponent.GetTouchState(Final|Native|Private|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44D2390>
-	struct Unknown GetControllerVectorKeyState(struct Unknown Key); // Function Engine.InputComponent.GetControllerVectorKeyState(Final|Native|Private|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44D2260>
-	void GetControllerMouseDelta(float& DeltaX, float& DeltaY); // Function Engine.InputComponent.GetControllerMouseDelta(Final|Native|Private|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44D2180>
-	float GetControllerKeyTimeDown(struct Unknown Key); // Function Engine.InputComponent.GetControllerKeyTimeDown(Final|Native|Private|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44D1F70>
-	void GetControllerAnalogStickState(char WhichStick, float& StickX, float& StickY); // Function Engine.InputComponent.GetControllerAnalogStickState(Final|Native|Private|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44D2060>
-	float GetControllerAnalogKeyState(struct Unknown Key); // Function Engine.InputComponent.GetControllerAnalogKeyState(Final|Native|Private|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44D1F70>
+	char WasControllerKeyJustReleased(struct Unknown Key); // Function Engine.InputComponent.WasControllerKeyJustReleased(Final|Native|Private|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44D2810>
+	char WasControllerKeyJustPressed(struct Unknown Key); // Function Engine.InputComponent.WasControllerKeyJustPressed(Final|Native|Private|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44D2810>
+	char IsControllerKeyDown(struct Unknown Key); // Function Engine.InputComponent.IsControllerKeyDown(Final|Native|Private|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44D2810>
+	void GetTouchState(int32_t FingerIndex, float& LocationX, float& LocationY, char& bIsCurrentlyPressed); // Function Engine.InputComponent.GetTouchState(Final|Native|Private|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44D2390>
+	struct Unknown GetControllerVectorKeyState(struct Unknown Key); // Function Engine.InputComponent.GetControllerVectorKeyState(Final|Native|Private|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44D2260>
+	void GetControllerMouseDelta(float& DeltaX, float& DeltaY); // Function Engine.InputComponent.GetControllerMouseDelta(Final|Native|Private|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44D2180>
+	float GetControllerKeyTimeDown(struct Unknown Key); // Function Engine.InputComponent.GetControllerKeyTimeDown(Final|Native|Private|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44D1F70>
+	void GetControllerAnalogStickState(char WhichStick, float& StickX, float& StickY); // Function Engine.InputComponent.GetControllerAnalogStickState(Final|Native|Private|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44D2060>
+	float GetControllerAnalogKeyState(struct Unknown Key); // Function Engine.InputComponent.GetControllerAnalogKeyState(Final|Native|Private|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44D1F70>
 };
 
 // Class Engine.InputKeyDelegateBinding
@@ -10322,17 +10322,17 @@ public:
 	struct Unknown ConsoleKey; // 0xC8 (24)
 	struct TArray<Unknown> ConsoleKeys; // 0xE0 (16)
 
-	void SaveKeyMappings(); // Function Engine.InputSettings.SaveKeyMappings(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44D3500>
-	void RemoveAxisMapping(struct Unknown& KeyMapping, char bForceRebuildKeymaps); // Function Engine.InputSettings.RemoveAxisMapping(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44D3360>
-	void RemoveActionMapping(struct Unknown& KeyMapping, char bForceRebuildKeymaps); // Function Engine.InputSettings.RemoveActionMapping(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44D31C0>
-	struct Unknown GetInputSettings(); // Function Engine.InputSettings.GetInputSettings(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44D2360>
-	void GetAxisNames(struct TArray<Unknown>& AxisNames); // Function Engine.InputSettings.GetAxisNames(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44D1EC0>
-	void GetAxisMappingByName(struct FName InAxisName, struct TArray<Unknown>& OutMappings); // Function Engine.InputSettings.GetAxisMappingByName(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44D1D90>
-	void GetActionNames(struct TArray<Unknown>& ActionNames); // Function Engine.InputSettings.GetActionNames(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44D1CE0>
-	void GetActionMappingByName(struct FName InActionName, struct TArray<Unknown>& OutMappings); // Function Engine.InputSettings.GetActionMappingByName(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44D1BB0>
-	void ForceRebuildKeymaps(); // Function Engine.InputSettings.ForceRebuildKeymaps(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44D1B90>
-	void AddAxisMapping(struct Unknown& KeyMapping, char bForceRebuildKeymaps); // Function Engine.InputSettings.AddAxisMapping(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44D1860>
-	void AddActionMapping(struct Unknown& KeyMapping, char bForceRebuildKeymaps); // Function Engine.InputSettings.AddActionMapping(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44D16C0>
+	void SaveKeyMappings(); // Function Engine.InputSettings.SaveKeyMappings(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44D3500>
+	void RemoveAxisMapping(struct Unknown& KeyMapping, char bForceRebuildKeymaps); // Function Engine.InputSettings.RemoveAxisMapping(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x44D3360>
+	void RemoveActionMapping(struct Unknown& KeyMapping, char bForceRebuildKeymaps); // Function Engine.InputSettings.RemoveActionMapping(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x44D31C0>
+	struct Unknown GetInputSettings(); // Function Engine.InputSettings.GetInputSettings(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x44D2360>
+	void GetAxisNames(struct TArray<Unknown>& AxisNames); // Function Engine.InputSettings.GetAxisNames(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44D1EC0>
+	void GetAxisMappingByName(struct FName InAxisName, struct TArray<Unknown>& OutMappings); // Function Engine.InputSettings.GetAxisMappingByName(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44D1D90>
+	void GetActionNames(struct TArray<Unknown>& ActionNames); // Function Engine.InputSettings.GetActionNames(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44D1CE0>
+	void GetActionMappingByName(struct FName InActionName, struct TArray<Unknown>& OutMappings); // Function Engine.InputSettings.GetActionMappingByName(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x44D1BB0>
+	void ForceRebuildKeymaps(); // Function Engine.InputSettings.ForceRebuildKeymaps(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44D1B90>
+	void AddAxisMapping(struct Unknown& KeyMapping, char bForceRebuildKeymaps); // Function Engine.InputSettings.AddAxisMapping(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x44D1860>
+	void AddActionMapping(struct Unknown& KeyMapping, char bForceRebuildKeymaps); // Function Engine.InputSettings.AddActionMapping(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x44D16C0>
 };
 
 // Class Engine.InputTouchDelegateBinding
@@ -10448,14 +10448,14 @@ public:
 	int32_t MaxSimulationIterations; // 0x154 (4)
 	struct TArray<Unknown> ControlPoints; // 0x158 (16)
 
-	void StopSimulating(struct Unknown& HitResult); // Function Engine.InterpToMovementComponent.StopSimulating(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44DC490>
-	void RestartMovement(float InitialDirection); // Function Engine.InterpToMovementComponent.RestartMovement(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44DC410>
-	void OnInterpToWaitEndDelegate__DelegateSignature(struct Unknown& ImpactResult, float Time); // DelegateFunction Engine.InterpToMovementComponent.OnInterpToWaitEndDelegate__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnInterpToWaitBeginDelegate__DelegateSignature(struct Unknown& ImpactResult, float Time); // DelegateFunction Engine.InterpToMovementComponent.OnInterpToWaitBeginDelegate__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnInterpToStopDelegate__DelegateSignature(struct Unknown& ImpactResult, float Time); // DelegateFunction Engine.InterpToMovementComponent.OnInterpToStopDelegate__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnInterpToReverseDelegate__DelegateSignature(struct Unknown& ImpactResult, float Time); // DelegateFunction Engine.InterpToMovementComponent.OnInterpToReverseDelegate__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnInterpToResetDelegate__DelegateSignature(struct Unknown& ImpactResult, float Time); // DelegateFunction Engine.InterpToMovementComponent.OnInterpToResetDelegate__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void FinaliseControlPoints(); // Function Engine.InterpToMovementComponent.FinaliseControlPoints(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44DC3F0>
+	void StopSimulating(struct Unknown& HitResult); // Function Engine.InterpToMovementComponent.StopSimulating(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x44DC490>
+	void RestartMovement(float InitialDirection); // Function Engine.InterpToMovementComponent.RestartMovement(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44DC410>
+	void OnInterpToWaitEndDelegate__DelegateSignature(struct Unknown& ImpactResult, float Time); // DelegateFunction Engine.InterpToMovementComponent.OnInterpToWaitEndDelegate__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <Game_BE.exe+0x2B812B0>
+	void OnInterpToWaitBeginDelegate__DelegateSignature(struct Unknown& ImpactResult, float Time); // DelegateFunction Engine.InterpToMovementComponent.OnInterpToWaitBeginDelegate__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <Game_BE.exe+0x2B812B0>
+	void OnInterpToStopDelegate__DelegateSignature(struct Unknown& ImpactResult, float Time); // DelegateFunction Engine.InterpToMovementComponent.OnInterpToStopDelegate__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <Game_BE.exe+0x2B812B0>
+	void OnInterpToReverseDelegate__DelegateSignature(struct Unknown& ImpactResult, float Time); // DelegateFunction Engine.InterpToMovementComponent.OnInterpToReverseDelegate__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <Game_BE.exe+0x2B812B0>
+	void OnInterpToResetDelegate__DelegateSignature(struct Unknown& ImpactResult, float Time); // DelegateFunction Engine.InterpToMovementComponent.OnInterpToResetDelegate__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <Game_BE.exe+0x2B812B0>
+	void FinaliseControlPoints(); // Function Engine.InterpToMovementComponent.FinaliseControlPoints(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x44DC3F0>
 };
 
 // Class Engine.InterpTrackAnimControl
@@ -10926,18 +10926,18 @@ public:
 	struct Unknown LoadedLevel; // 0x130 (8)
 	struct Unknown PendingUnloadLevel; // 0x138 (8)
 
-	char ShouldBeLoaded(); // Function Engine.LevelStreaming.ShouldBeLoaded(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x3CC36D0>
-	void SetShouldBeVisible(char bInShouldBeVisible); // Function Engine.LevelStreaming.SetShouldBeVisible(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453E770>
-	void SetShouldBeLoaded(char bInShouldBeLoaded); // Function Engine.LevelStreaming.SetShouldBeLoaded(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x44C6410>
-	void SetPriority(int32_t NewPriority); // Function Engine.LevelStreaming.SetPriority(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453E570>
-	void SetLevelLODIndex(int32_t LODIndex); // Function Engine.LevelStreaming.SetLevelLODIndex(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453DEE0>
-	char IsStreamingStatePending(); // Function Engine.LevelStreaming.IsStreamingStatePending(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453CFB0>
-	char IsLevelVisible(); // Function Engine.LevelStreaming.IsLevelVisible(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453CF80>
-	char IsLevelLoaded(); // Function Engine.LevelStreaming.IsLevelLoaded(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453CF50>
-	struct FName GetWorldAssetPackageFName(); // Function Engine.LevelStreaming.GetWorldAssetPackageFName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453CEE0>
-	struct Unknown GetLoadedLevel(); // Function Engine.LevelStreaming.GetLoadedLevel(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453CEC0>
-	struct Unknown GetLevelScriptActor(); // Function Engine.LevelStreaming.GetLevelScriptActor(Final|Native|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453CE50>
-	struct Unknown CreateInstance(struct FString UniqueInstanceName); // Function Engine.LevelStreaming.CreateInstance(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453CD70>
+	char ShouldBeLoaded(); // Function Engine.LevelStreaming.ShouldBeLoaded(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CC36D0>
+	void SetShouldBeVisible(char bInShouldBeVisible); // Function Engine.LevelStreaming.SetShouldBeVisible(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x453E770>
+	void SetShouldBeLoaded(char bInShouldBeLoaded); // Function Engine.LevelStreaming.SetShouldBeLoaded(Native|Public|BlueprintCallable) // <Game_BE.exe+0x44C6410>
+	void SetPriority(int32_t NewPriority); // Function Engine.LevelStreaming.SetPriority(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x453E570>
+	void SetLevelLODIndex(int32_t LODIndex); // Function Engine.LevelStreaming.SetLevelLODIndex(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x453DEE0>
+	char IsStreamingStatePending(); // Function Engine.LevelStreaming.IsStreamingStatePending(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x453CFB0>
+	char IsLevelVisible(); // Function Engine.LevelStreaming.IsLevelVisible(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x453CF80>
+	char IsLevelLoaded(); // Function Engine.LevelStreaming.IsLevelLoaded(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x453CF50>
+	struct FName GetWorldAssetPackageFName(); // Function Engine.LevelStreaming.GetWorldAssetPackageFName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x453CEE0>
+	struct Unknown GetLoadedLevel(); // Function Engine.LevelStreaming.GetLoadedLevel(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x453CEC0>
+	struct Unknown GetLevelScriptActor(); // Function Engine.LevelStreaming.GetLevelScriptActor(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x453CE50>
+	struct Unknown CreateInstance(struct FString UniqueInstanceName); // Function Engine.LevelStreaming.CreateInstance(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x453CD70>
 };
 
 // Class Engine.LevelStreamingDynamic
@@ -10948,8 +10948,8 @@ public:
 	char bInitiallyLoaded : 0; // 0x158 (1)
 	char bInitiallyVisible : 0; // 0x158 (1)
 
-	struct Unknown LoadLevelInstanceBySoftObjectPtr(struct Unknown WorldContextObject, struct Unknown Level, struct Unknown Location, struct Unknown Rotation, char& bOutSuccess); // Function Engine.LevelStreamingDynamic.LoadLevelInstanceBySoftObjectPtr(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453D1F0>
-	struct Unknown LoadLevelInstance(struct Unknown WorldContextObject, struct FString LevelName, struct Unknown Location, struct Unknown Rotation, char& bOutSuccess); // Function Engine.LevelStreamingDynamic.LoadLevelInstance(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453CFE0>
+	struct Unknown LoadLevelInstanceBySoftObjectPtr(struct Unknown WorldContextObject, struct Unknown Level, struct Unknown Location, struct Unknown Rotation, char& bOutSuccess); // Function Engine.LevelStreamingDynamic.LoadLevelInstanceBySoftObjectPtr(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x453D1F0>
+	struct Unknown LoadLevelInstance(struct Unknown WorldContextObject, struct FString LevelName, struct Unknown Location, struct Unknown Rotation, char& bOutSuccess); // Function Engine.LevelStreamingDynamic.LoadLevelInstance(Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x453CFE0>
 };
 
 // Class Engine.LevelStreamingVolume
@@ -11006,9 +11006,9 @@ public:
 	float AttenuationRadius; // 0x378 (4)
 	struct Unknown LightmassSettings; // 0x37C (12)
 
-	void SetIntensityUnits(enum class Unknow NewIntensityUnits); // Function Engine.LocalLightComponent.SetIntensityUnits(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4541670>
-	void SetAttenuationRadius(float NewRadius); // Function Engine.LocalLightComponent.SetAttenuationRadius(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45413B0>
-	float GetUnitsConversionFactor(enum class Unknow SrcUnits, enum class Unknow TargetUnits, float CosHalfConeAngle); // Function Engine.LocalLightComponent.GetUnitsConversionFactor(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4541190>
+	void SetIntensityUnits(enum class Unknow NewIntensityUnits); // Function Engine.LocalLightComponent.SetIntensityUnits(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4541670>
+	void SetAttenuationRadius(float NewRadius); // Function Engine.LocalLightComponent.SetAttenuationRadius(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45413B0>
+	float GetUnitsConversionFactor(enum class Unknow SrcUnits, enum class Unknow TargetUnits, float CosHalfConeAngle); // Function Engine.LocalLightComponent.GetUnitsConversionFactor(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x4541190>
 };
 
 // Class Engine.LODActor
@@ -11155,8 +11155,8 @@ public:
 
 	struct TArray<Unknown> Elements; // 0x4A8 (16)
 
-	void SetElements(struct TArray<Unknown>& NewElements); // Function Engine.MaterialBillboardComponent.SetElements(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4546070>
-	void AddElement(struct Unknown Material, struct Unknown DistanceToOpacityCurve, char bSizeIsInScreenSpace, float BaseSizeX, float BaseSizeY, struct Unknown DistanceToSizeCurve); // Function Engine.MaterialBillboardComponent.AddElement(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4545EA0>
+	void SetElements(struct TArray<Unknown>& NewElements); // Function Engine.MaterialBillboardComponent.SetElements(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x4546070>
+	void AddElement(struct Unknown Material, struct Unknown DistanceToOpacityCurve, char bSizeIsInScreenSpace, float BaseSizeX, float BaseSizeY, struct Unknown DistanceToSizeCurve); // Function Engine.MaterialBillboardComponent.AddElement(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4545EA0>
 };
 
 // Class Engine.MaterialExpressionAbs
@@ -12610,14 +12610,14 @@ public:
 	struct FMulticastInlineDelegate OnStop; // 0x380 (16)
 	struct FMulticastInlineDelegate OnPause; // 0x390 (16)
 
-	void Stop(); // Function Engine.MatineeActor.Stop(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F3D5C0>
-	void SetPosition(float NewPosition, char bJump); // Function Engine.MatineeActor.SetPosition(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x455D450>
-	void SetLoopingState(char bNewLooping); // Function Engine.MatineeActor.SetLoopingState(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x455D3C0>
-	void Reverse(); // Function Engine.MatineeActor.Reverse(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F3BD20>
-	void Play(); // Function Engine.MatineeActor.Play(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124CBD0>
-	void Pause(); // Function Engine.MatineeActor.Pause(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11E25A0>
-	void EnableGroupByName(struct FString GroupName, char bEnable); // Function Engine.MatineeActor.EnableGroupByName(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x455CE60>
-	void ChangePlaybackDirection(); // Function Engine.MatineeActor.ChangePlaybackDirection(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4460EB0>
+	void Stop(); // Function Engine.MatineeActor.Stop(Native|Public|BlueprintCallable) // <Game_BE.exe+0x1F3D5C0>
+	void SetPosition(float NewPosition, char bJump); // Function Engine.MatineeActor.SetPosition(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x455D450>
+	void SetLoopingState(char bNewLooping); // Function Engine.MatineeActor.SetLoopingState(Native|Public|BlueprintCallable) // <Game_BE.exe+0x455D3C0>
+	void Reverse(); // Function Engine.MatineeActor.Reverse(Native|Public|BlueprintCallable) // <Game_BE.exe+0x1F3BD20>
+	void Play(); // Function Engine.MatineeActor.Play(Native|Public|BlueprintCallable) // <Game_BE.exe+0x124CBD0>
+	void Pause(); // Function Engine.MatineeActor.Pause(Native|Public|BlueprintCallable) // <Game_BE.exe+0x11E25A0>
+	void EnableGroupByName(struct FString GroupName, char bEnable); // Function Engine.MatineeActor.EnableGroupByName(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x455CE60>
+	void ChangePlaybackDirection(); // Function Engine.MatineeActor.ChangePlaybackDirection(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4460EB0>
 };
 
 // Class Engine.MatineeActorCameraAnim
@@ -12656,7 +12656,7 @@ public:
 	float KillcamBeforeSec; // 0xE8 (4)
 	float KillcamAfterSec; // 0xEC (4)
 
-	void OnJumpCompleteForKillcam(char bSuccess); // Function Engine.MK3DKillcamComponent.OnJumpCompleteForKillcam(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4560B40>
+	void OnJumpCompleteForKillcam(char bSuccess); // Function Engine.MK3DKillcamComponent.OnJumpCompleteForKillcam(Final|Native|Public) // <Game_BE.exe+0x4560B40>
 };
 
 // Class Engine.MK3DTargetcamComponent
@@ -12667,7 +12667,7 @@ public:
 	struct FMulticastInlineDelegate OnMK3DTargetcamCompleteEvent; // 0xB0 (16)
 	struct TArray<Unknown> MK3DTargetEvents; // 0xD8 (16)
 
-	void EnumerateMK3DTargetEvents(struct Unknown World); // Function Engine.MK3DTargetcamComponent.EnumerateMK3DTargetEvents(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4564530>
+	void EnumerateMK3DTargetEvents(struct Unknown World); // Function Engine.MK3DTargetcamComponent.EnumerateMK3DTargetEvents(Final|Native|Public) // <Game_BE.exe+0x4564530>
 };
 
 // Class Engine.MKDemoActorChannel
@@ -12686,7 +12686,7 @@ public:
 	char DataVersion; // 0x30 (1)
 	float Time; // 0x34 (4)
 
-	struct Unknown MakeReplaySample(struct Unknown Actor); // Function Engine.ReplaySampleBase.MakeReplaySample(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4565970>
+	struct Unknown MakeReplaySample(struct Unknown Actor); // Function Engine.ReplaySampleBase.MakeReplaySample(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x4565970>
 };
 
 // Class Engine.ModelComponent
@@ -14004,7 +14004,7 @@ public:
 	struct TArray<Unknown> SoloTracking; // 0xE8 (16)
 	struct TArray<Unknown> NamedMaterialSlots; // 0xF8 (16)
 
-	char ContainsEmitterType(struct Unknown* TypeData); // Function Engine.ParticleSystem.ContainsEmitterType(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x457E520>
+	char ContainsEmitterType(struct Unknown* TypeData); // Function Engine.ParticleSystem.ContainsEmitterType(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x457E520>
 };
 
 // Class Engine.ParticleSystemComponent
@@ -14046,30 +14046,30 @@ public:
 	enum class Unknow AutoAttachScaleRule; // 0x612 (1)
 	struct FMulticastInlineDelegate OnSystemFinished; // 0x640 (16)
 
-	void SetTrailSourceData(struct FName InFirstSocketName, struct FName InSecondSocketName, char InWidthMode, float InWidth); // Function Engine.ParticleSystemComponent.SetTrailSourceData(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x457FFB0>
-	void SetTemplate(struct Unknown NewTemplate); // Function Engine.ParticleSystemComponent.SetTemplate(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x457FF30>
-	void SetMaterialParameter(struct FName ParameterName, struct Unknown Param); // Function Engine.ParticleSystemComponent.SetMaterialParameter(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x457FE70>
-	void SetBeamTargetTangent(int32_t EmitterIndex, struct Unknown NewTangentPoint, int32_t TargetIndex); // Function Engine.ParticleSystemComponent.SetBeamTargetTangent(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x457FA20>
-	void SetBeamTargetStrength(int32_t EmitterIndex, float NewTargetStrength, int32_t TargetIndex); // Function Engine.ParticleSystemComponent.SetBeamTargetStrength(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x457F920>
-	void SetBeamTargetPoint(int32_t EmitterIndex, struct Unknown NewTargetPoint, int32_t TargetIndex); // Function Engine.ParticleSystemComponent.SetBeamTargetPoint(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x457F810>
-	void SetBeamSourceTangent(int32_t EmitterIndex, struct Unknown NewTangentPoint, int32_t SourceIndex); // Function Engine.ParticleSystemComponent.SetBeamSourceTangent(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x457F700>
-	void SetBeamSourceStrength(int32_t EmitterIndex, float NewSourceStrength, int32_t SourceIndex); // Function Engine.ParticleSystemComponent.SetBeamSourceStrength(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x457F600>
-	void SetBeamSourcePoint(int32_t EmitterIndex, struct Unknown NewSourcePoint, int32_t SourceIndex); // Function Engine.ParticleSystemComponent.SetBeamSourcePoint(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x457F4F0>
-	void SetBeamEndPoint(int32_t EmitterIndex, struct Unknown NewEndPoint); // Function Engine.ParticleSystemComponent.SetBeamEndPoint(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x457F420>
-	void SetAutoAttachParams(struct Unknown Parent, struct FName SocketName, char LocationType); // Function Engine.ParticleSystemComponent.SetAutoAttachParams(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x457F180>
-	int32_t GetNumActiveParticles(); // Function Engine.ParticleSystemComponent.GetNumActiveParticles(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x457F080>
-	struct Unknown GetNamedMaterial(struct FName InName); // Function Engine.ParticleSystemComponent.GetNamedMaterial(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x457EFE0>
-	char GetBeamTargetTangent(int32_t EmitterIndex, int32_t TargetIndex, struct Unknown& OutTangentPoint); // Function Engine.ParticleSystemComponent.GetBeamTargetTangent(Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x457EEA0>
-	char GetBeamTargetStrength(int32_t EmitterIndex, int32_t TargetIndex, float& OutTargetStrength); // Function Engine.ParticleSystemComponent.GetBeamTargetStrength(Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x457ED80>
-	char GetBeamTargetPoint(int32_t EmitterIndex, int32_t TargetIndex, struct Unknown& OutTargetPoint); // Function Engine.ParticleSystemComponent.GetBeamTargetPoint(Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x457EC70>
-	char GetBeamSourceTangent(int32_t EmitterIndex, int32_t SourceIndex, struct Unknown& OutTangentPoint); // Function Engine.ParticleSystemComponent.GetBeamSourceTangent(Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x457EB60>
-	char GetBeamSourceStrength(int32_t EmitterIndex, int32_t SourceIndex, float& OutSourceStrength); // Function Engine.ParticleSystemComponent.GetBeamSourceStrength(Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x457EA40>
-	char GetBeamSourcePoint(int32_t EmitterIndex, int32_t SourceIndex, struct Unknown& OutSourcePoint); // Function Engine.ParticleSystemComponent.GetBeamSourcePoint(Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x457E930>
-	char GetBeamEndPoint(int32_t EmitterIndex, struct Unknown& OutEndPoint); // Function Engine.ParticleSystemComponent.GetBeamEndPoint(Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x457E850>
-	void GenerateParticleEvent(struct FName InEventName, float InEmitterTime, struct Unknown InLocation, struct Unknown InDirection, struct Unknown InVelocity); // Function Engine.ParticleSystemComponent.GenerateParticleEvent(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x457E6A0>
-	void EndTrails(); // Function Engine.ParticleSystemComponent.EndTrails(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x457E680>
-	struct Unknown CreateNamedDynamicMaterialInstance(struct FName InName, struct Unknown SourceMaterial); // Function Engine.ParticleSystemComponent.CreateNamedDynamicMaterialInstance(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x457E5B0>
-	void BeginTrails(struct FName InFirstSocketName, struct FName InSecondSocketName, char InWidthMode, float InWidth); // Function Engine.ParticleSystemComponent.BeginTrails(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x457E3D0>
+	void SetTrailSourceData(struct FName InFirstSocketName, struct FName InSecondSocketName, char InWidthMode, float InWidth); // Function Engine.ParticleSystemComponent.SetTrailSourceData(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x457FFB0>
+	void SetTemplate(struct Unknown NewTemplate); // Function Engine.ParticleSystemComponent.SetTemplate(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x457FF30>
+	void SetMaterialParameter(struct FName ParameterName, struct Unknown Param); // Function Engine.ParticleSystemComponent.SetMaterialParameter(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x457FE70>
+	void SetBeamTargetTangent(int32_t EmitterIndex, struct Unknown NewTangentPoint, int32_t TargetIndex); // Function Engine.ParticleSystemComponent.SetBeamTargetTangent(Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x457FA20>
+	void SetBeamTargetStrength(int32_t EmitterIndex, float NewTargetStrength, int32_t TargetIndex); // Function Engine.ParticleSystemComponent.SetBeamTargetStrength(Native|Public|BlueprintCallable) // <Game_BE.exe+0x457F920>
+	void SetBeamTargetPoint(int32_t EmitterIndex, struct Unknown NewTargetPoint, int32_t TargetIndex); // Function Engine.ParticleSystemComponent.SetBeamTargetPoint(Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x457F810>
+	void SetBeamSourceTangent(int32_t EmitterIndex, struct Unknown NewTangentPoint, int32_t SourceIndex); // Function Engine.ParticleSystemComponent.SetBeamSourceTangent(Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x457F700>
+	void SetBeamSourceStrength(int32_t EmitterIndex, float NewSourceStrength, int32_t SourceIndex); // Function Engine.ParticleSystemComponent.SetBeamSourceStrength(Native|Public|BlueprintCallable) // <Game_BE.exe+0x457F600>
+	void SetBeamSourcePoint(int32_t EmitterIndex, struct Unknown NewSourcePoint, int32_t SourceIndex); // Function Engine.ParticleSystemComponent.SetBeamSourcePoint(Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x457F4F0>
+	void SetBeamEndPoint(int32_t EmitterIndex, struct Unknown NewEndPoint); // Function Engine.ParticleSystemComponent.SetBeamEndPoint(Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x457F420>
+	void SetAutoAttachParams(struct Unknown Parent, struct FName SocketName, char LocationType); // Function Engine.ParticleSystemComponent.SetAutoAttachParams(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x457F180>
+	int32_t GetNumActiveParticles(); // Function Engine.ParticleSystemComponent.GetNumActiveParticles(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x457F080>
+	struct Unknown GetNamedMaterial(struct FName InName); // Function Engine.ParticleSystemComponent.GetNamedMaterial(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x457EFE0>
+	char GetBeamTargetTangent(int32_t EmitterIndex, int32_t TargetIndex, struct Unknown& OutTangentPoint); // Function Engine.ParticleSystemComponent.GetBeamTargetTangent(Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x457EEA0>
+	char GetBeamTargetStrength(int32_t EmitterIndex, int32_t TargetIndex, float& OutTargetStrength); // Function Engine.ParticleSystemComponent.GetBeamTargetStrength(Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x457ED80>
+	char GetBeamTargetPoint(int32_t EmitterIndex, int32_t TargetIndex, struct Unknown& OutTargetPoint); // Function Engine.ParticleSystemComponent.GetBeamTargetPoint(Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x457EC70>
+	char GetBeamSourceTangent(int32_t EmitterIndex, int32_t SourceIndex, struct Unknown& OutTangentPoint); // Function Engine.ParticleSystemComponent.GetBeamSourceTangent(Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x457EB60>
+	char GetBeamSourceStrength(int32_t EmitterIndex, int32_t SourceIndex, float& OutSourceStrength); // Function Engine.ParticleSystemComponent.GetBeamSourceStrength(Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x457EA40>
+	char GetBeamSourcePoint(int32_t EmitterIndex, int32_t SourceIndex, struct Unknown& OutSourcePoint); // Function Engine.ParticleSystemComponent.GetBeamSourcePoint(Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x457E930>
+	char GetBeamEndPoint(int32_t EmitterIndex, struct Unknown& OutEndPoint); // Function Engine.ParticleSystemComponent.GetBeamEndPoint(Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x457E850>
+	void GenerateParticleEvent(struct FName InEventName, float InEmitterTime, struct Unknown InLocation, struct Unknown InDirection, struct Unknown InVelocity); // Function Engine.ParticleSystemComponent.GenerateParticleEvent(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x457E6A0>
+	void EndTrails(); // Function Engine.ParticleSystemComponent.EndTrails(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x457E680>
+	struct Unknown CreateNamedDynamicMaterialInstance(struct FName InName, struct Unknown SourceMaterial); // Function Engine.ParticleSystemComponent.CreateNamedDynamicMaterialInstance(Native|Public|BlueprintCallable) // <Game_BE.exe+0x457E5B0>
+	void BeginTrails(struct FName InFirstSocketName, struct FName InSecondSocketName, char InWidthMode, float InWidth); // Function Engine.ParticleSystemComponent.BeginTrails(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x457E3D0>
 };
 
 // Class Engine.ParticleSystemReplay
@@ -14093,7 +14093,7 @@ public:
 	float LastLocalNoiseVolume; // 0xCC (4)
 	float LastLocalNoiseTime; // 0xD0 (4)
 
-	void MakeNoise(struct Unknown NoiseMaker, float Loudness, struct Unknown& NoiseLocation); // Function Engine.PawnNoiseEmitterComponent.MakeNoise(BlueprintAuthorityOnly|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4584430>
+	void MakeNoise(struct Unknown NoiseMaker, float Loudness, struct Unknown& NoiseLocation); // Function Engine.PawnNoiseEmitterComponent.MakeNoise(BlueprintAuthorityOnly|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4584430>
 };
 
 // Class Engine.PhysicalAnimationComponent
@@ -14104,12 +14104,12 @@ public:
 	float StrengthMultiplyer; // 0xB0 (4)
 	struct Unknown SkeletalMeshComponent; // 0xB8 (8)
 
-	void SetStrengthMultiplyer(float InStrengthMultiplyer); // Function Engine.PhysicalAnimationComponent.SetStrengthMultiplyer(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4584810>
-	void SetSkeletalMeshComponent(struct Unknown InSkeletalMeshComponent); // Function Engine.PhysicalAnimationComponent.SetSkeletalMeshComponent(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4584790>
-	struct Unknown GetBodyTargetTransform(struct FName BodyName); // Function Engine.PhysicalAnimationComponent.GetBodyTargetTransform(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4583E70>
-	void ApplyPhysicalAnimationSettingsBelow(struct FName BodyName, struct Unknown& PhysicalAnimationData, char bIncludeSelf); // Function Engine.PhysicalAnimationComponent.ApplyPhysicalAnimationSettingsBelow(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4583C80>
-	void ApplyPhysicalAnimationSettings(struct FName BodyName, struct Unknown& PhysicalAnimationData); // Function Engine.PhysicalAnimationComponent.ApplyPhysicalAnimationSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4583BA0>
-	void ApplyPhysicalAnimationProfileBelow(struct FName BodyName, struct FName ProfileName, char bIncludeSelf, char bClearNotFound); // Function Engine.PhysicalAnimationComponent.ApplyPhysicalAnimationProfileBelow(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4583A50>
+	void SetStrengthMultiplyer(float InStrengthMultiplyer); // Function Engine.PhysicalAnimationComponent.SetStrengthMultiplyer(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4584810>
+	void SetSkeletalMeshComponent(struct Unknown InSkeletalMeshComponent); // Function Engine.PhysicalAnimationComponent.SetSkeletalMeshComponent(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4584790>
+	struct Unknown GetBodyTargetTransform(struct FName BodyName); // Function Engine.PhysicalAnimationComponent.GetBodyTargetTransform(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4583E70>
+	void ApplyPhysicalAnimationSettingsBelow(struct FName BodyName, struct Unknown& PhysicalAnimationData, char bIncludeSelf); // Function Engine.PhysicalAnimationComponent.ApplyPhysicalAnimationSettingsBelow(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x4583C80>
+	void ApplyPhysicalAnimationSettings(struct FName BodyName, struct Unknown& PhysicalAnimationData); // Function Engine.PhysicalAnimationComponent.ApplyPhysicalAnimationSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x4583BA0>
+	void ApplyPhysicalAnimationProfileBelow(struct FName BodyName, struct FName ProfileName, char bIncludeSelf, char bClearNotFound); // Function Engine.PhysicalAnimationComponent.ApplyPhysicalAnimationProfileBelow(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4583A50>
 };
 
 // Class Engine.PhysicalMaterialMask
@@ -14180,40 +14180,40 @@ public:
 	struct FMulticastInlineDelegate OnConstraintBroken; // 0x260 (16)
 	struct Unknown ConstraintInstance; // 0x270 (440)
 
-	void SetOrientationDriveTwistAndSwing(char bEnableTwistDrive, char bEnableSwingDrive); // Function Engine.PhysicsConstraintComponent.SetOrientationDriveTwistAndSwing(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4588230>
-	void SetOrientationDriveSLERP(char bEnableSLERP); // Function Engine.PhysicsConstraintComponent.SetOrientationDriveSLERP(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45881A0>
-	void SetLinearZLimit(char ConstraintType, float LimitSize); // Function Engine.PhysicsConstraintComponent.SetLinearZLimit(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45880E0>
-	void SetLinearYLimit(char ConstraintType, float LimitSize); // Function Engine.PhysicsConstraintComponent.SetLinearYLimit(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4588020>
-	void SetLinearXLimit(char ConstraintType, float LimitSize); // Function Engine.PhysicsConstraintComponent.SetLinearXLimit(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4587F60>
-	void SetLinearVelocityTarget(struct Unknown& InVelTarget); // Function Engine.PhysicsConstraintComponent.SetLinearVelocityTarget(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4587ED0>
-	void SetLinearVelocityDrive(char bEnableDriveX, char bEnableDriveY, char bEnableDriveZ); // Function Engine.PhysicsConstraintComponent.SetLinearVelocityDrive(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4587DB0>
-	void SetLinearPositionTarget(struct Unknown& InPosTarget); // Function Engine.PhysicsConstraintComponent.SetLinearPositionTarget(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4587CA0>
-	void SetLinearPositionDrive(char bEnableDriveX, char bEnableDriveY, char bEnableDriveZ); // Function Engine.PhysicsConstraintComponent.SetLinearPositionDrive(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4587B80>
-	void SetLinearDriveParams(float PositionStrength, float VelocityStrength, float InForceLimit); // Function Engine.PhysicsConstraintComponent.SetLinearDriveParams(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4587A70>
-	void SetLinearBreakable(char bLinearBreakable, float LinearBreakThreshold); // Function Engine.PhysicsConstraintComponent.SetLinearBreakable(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4587920>
-	void SetDisableCollision(char bDisableCollision); // Function Engine.PhysicsConstraintComponent.SetDisableCollision(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4587810>
-	void SetConstraintReferencePosition(char Frame, struct Unknown& RefPosition); // Function Engine.PhysicsConstraintComponent.SetConstraintReferencePosition(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4587740>
-	void SetConstraintReferenceOrientation(char Frame, struct Unknown& PriAxis, struct Unknown& SecAxis); // Function Engine.PhysicsConstraintComponent.SetConstraintReferenceOrientation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4587620>
-	void SetConstraintReferenceFrame(char Frame, struct Unknown& RefFrame); // Function Engine.PhysicsConstraintComponent.SetConstraintReferenceFrame(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4587500>
-	void SetConstrainedComponents(struct Unknown Component1, struct FName BoneName1, struct Unknown Component2, struct FName BoneName2); // Function Engine.PhysicsConstraintComponent.SetConstrainedComponents(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45873B0>
-	void SetAngularVelocityTarget(struct Unknown& InVelTarget); // Function Engine.PhysicsConstraintComponent.SetAngularVelocityTarget(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4587320>
-	void SetAngularVelocityDriveTwistAndSwing(char bEnableTwistDrive, char bEnableSwingDrive); // Function Engine.PhysicsConstraintComponent.SetAngularVelocityDriveTwistAndSwing(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4587250>
-	void SetAngularVelocityDriveSLERP(char bEnableSLERP); // Function Engine.PhysicsConstraintComponent.SetAngularVelocityDriveSLERP(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45871C0>
-	void SetAngularVelocityDrive(char bEnableSwingDrive, char bEnableTwistDrive); // Function Engine.PhysicsConstraintComponent.SetAngularVelocityDrive(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45870F0>
-	void SetAngularTwistLimit(char ConstraintType, float TwistLimitAngle); // Function Engine.PhysicsConstraintComponent.SetAngularTwistLimit(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4587030>
-	void SetAngularSwing2Limit(char MotionType, float Swing2LimitAngle); // Function Engine.PhysicsConstraintComponent.SetAngularSwing2Limit(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4586F70>
-	void SetAngularSwing1Limit(char MotionType, float Swing1LimitAngle); // Function Engine.PhysicsConstraintComponent.SetAngularSwing1Limit(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4586EB0>
-	void SetAngularOrientationTarget(struct Unknown& InPosTarget); // Function Engine.PhysicsConstraintComponent.SetAngularOrientationTarget(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4586DA0>
-	void SetAngularOrientationDrive(char bEnableSwingDrive, char bEnableTwistDrive); // Function Engine.PhysicsConstraintComponent.SetAngularOrientationDrive(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4586CD0>
-	void SetAngularDriveParams(float PositionStrength, float VelocityStrength, float InForceLimit); // Function Engine.PhysicsConstraintComponent.SetAngularDriveParams(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4586BC0>
-	void SetAngularDriveMode(char DriveMode); // Function Engine.PhysicsConstraintComponent.SetAngularDriveMode(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4586B40>
-	void SetAngularBreakable(char bAngularBreakable, float AngularBreakThreshold); // Function Engine.PhysicsConstraintComponent.SetAngularBreakable(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45869F0>
-	char IsBroken(); // Function Engine.PhysicsConstraintComponent.IsBroken(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45869C0>
-	float GetCurrentTwist(); // Function Engine.PhysicsConstraintComponent.GetCurrentTwist(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45864D0>
-	float GetCurrentSwing2(); // Function Engine.PhysicsConstraintComponent.GetCurrentSwing2(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45864A0>
-	float GetCurrentSwing1(); // Function Engine.PhysicsConstraintComponent.GetCurrentSwing1(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4586470>
-	void GetConstraintForce(struct Unknown& OutLinearForce, struct Unknown& OutAngularForce); // Function Engine.PhysicsConstraintComponent.GetConstraintForce(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4586390>
-	void BreakConstraint(); // Function Engine.PhysicsConstraintComponent.BreakConstraint(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4586370>
+	void SetOrientationDriveTwistAndSwing(char bEnableTwistDrive, char bEnableSwingDrive); // Function Engine.PhysicsConstraintComponent.SetOrientationDriveTwistAndSwing(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4588230>
+	void SetOrientationDriveSLERP(char bEnableSLERP); // Function Engine.PhysicsConstraintComponent.SetOrientationDriveSLERP(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45881A0>
+	void SetLinearZLimit(char ConstraintType, float LimitSize); // Function Engine.PhysicsConstraintComponent.SetLinearZLimit(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45880E0>
+	void SetLinearYLimit(char ConstraintType, float LimitSize); // Function Engine.PhysicsConstraintComponent.SetLinearYLimit(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4588020>
+	void SetLinearXLimit(char ConstraintType, float LimitSize); // Function Engine.PhysicsConstraintComponent.SetLinearXLimit(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4587F60>
+	void SetLinearVelocityTarget(struct Unknown& InVelTarget); // Function Engine.PhysicsConstraintComponent.SetLinearVelocityTarget(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4587ED0>
+	void SetLinearVelocityDrive(char bEnableDriveX, char bEnableDriveY, char bEnableDriveZ); // Function Engine.PhysicsConstraintComponent.SetLinearVelocityDrive(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4587DB0>
+	void SetLinearPositionTarget(struct Unknown& InPosTarget); // Function Engine.PhysicsConstraintComponent.SetLinearPositionTarget(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4587CA0>
+	void SetLinearPositionDrive(char bEnableDriveX, char bEnableDriveY, char bEnableDriveZ); // Function Engine.PhysicsConstraintComponent.SetLinearPositionDrive(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4587B80>
+	void SetLinearDriveParams(float PositionStrength, float VelocityStrength, float InForceLimit); // Function Engine.PhysicsConstraintComponent.SetLinearDriveParams(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4587A70>
+	void SetLinearBreakable(char bLinearBreakable, float LinearBreakThreshold); // Function Engine.PhysicsConstraintComponent.SetLinearBreakable(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4587920>
+	void SetDisableCollision(char bDisableCollision); // Function Engine.PhysicsConstraintComponent.SetDisableCollision(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4587810>
+	void SetConstraintReferencePosition(char Frame, struct Unknown& RefPosition); // Function Engine.PhysicsConstraintComponent.SetConstraintReferencePosition(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4587740>
+	void SetConstraintReferenceOrientation(char Frame, struct Unknown& PriAxis, struct Unknown& SecAxis); // Function Engine.PhysicsConstraintComponent.SetConstraintReferenceOrientation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4587620>
+	void SetConstraintReferenceFrame(char Frame, struct Unknown& RefFrame); // Function Engine.PhysicsConstraintComponent.SetConstraintReferenceFrame(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4587500>
+	void SetConstrainedComponents(struct Unknown Component1, struct FName BoneName1, struct Unknown Component2, struct FName BoneName2); // Function Engine.PhysicsConstraintComponent.SetConstrainedComponents(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45873B0>
+	void SetAngularVelocityTarget(struct Unknown& InVelTarget); // Function Engine.PhysicsConstraintComponent.SetAngularVelocityTarget(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4587320>
+	void SetAngularVelocityDriveTwistAndSwing(char bEnableTwistDrive, char bEnableSwingDrive); // Function Engine.PhysicsConstraintComponent.SetAngularVelocityDriveTwistAndSwing(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4587250>
+	void SetAngularVelocityDriveSLERP(char bEnableSLERP); // Function Engine.PhysicsConstraintComponent.SetAngularVelocityDriveSLERP(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45871C0>
+	void SetAngularVelocityDrive(char bEnableSwingDrive, char bEnableTwistDrive); // Function Engine.PhysicsConstraintComponent.SetAngularVelocityDrive(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45870F0>
+	void SetAngularTwistLimit(char ConstraintType, float TwistLimitAngle); // Function Engine.PhysicsConstraintComponent.SetAngularTwistLimit(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4587030>
+	void SetAngularSwing2Limit(char MotionType, float Swing2LimitAngle); // Function Engine.PhysicsConstraintComponent.SetAngularSwing2Limit(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4586F70>
+	void SetAngularSwing1Limit(char MotionType, float Swing1LimitAngle); // Function Engine.PhysicsConstraintComponent.SetAngularSwing1Limit(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4586EB0>
+	void SetAngularOrientationTarget(struct Unknown& InPosTarget); // Function Engine.PhysicsConstraintComponent.SetAngularOrientationTarget(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4586DA0>
+	void SetAngularOrientationDrive(char bEnableSwingDrive, char bEnableTwistDrive); // Function Engine.PhysicsConstraintComponent.SetAngularOrientationDrive(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4586CD0>
+	void SetAngularDriveParams(float PositionStrength, float VelocityStrength, float InForceLimit); // Function Engine.PhysicsConstraintComponent.SetAngularDriveParams(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4586BC0>
+	void SetAngularDriveMode(char DriveMode); // Function Engine.PhysicsConstraintComponent.SetAngularDriveMode(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4586B40>
+	void SetAngularBreakable(char bAngularBreakable, float AngularBreakThreshold); // Function Engine.PhysicsConstraintComponent.SetAngularBreakable(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45869F0>
+	char IsBroken(); // Function Engine.PhysicsConstraintComponent.IsBroken(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45869C0>
+	float GetCurrentTwist(); // Function Engine.PhysicsConstraintComponent.GetCurrentTwist(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45864D0>
+	float GetCurrentSwing2(); // Function Engine.PhysicsConstraintComponent.GetCurrentSwing2(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45864A0>
+	float GetCurrentSwing1(); // Function Engine.PhysicsConstraintComponent.GetCurrentSwing1(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4586470>
+	void GetConstraintForce(struct Unknown& OutLinearForce, struct Unknown& OutAngularForce); // Function Engine.PhysicsConstraintComponent.GetConstraintForce(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4586390>
+	void BreakConstraint(); // Function Engine.PhysicsConstraintComponent.BreakConstraint(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4586370>
 };
 
 // Class Engine.PhysicsConstraintTemplate
@@ -14241,20 +14241,20 @@ public:
 	float AngularStiffness; // 0xD0 (4)
 	float InterpolationSpeed; // 0x140 (4)
 
-	void SetTargetRotation(struct Unknown NewRotation); // Function Engine.PhysicsHandleComponent.SetTargetRotation(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4588470>
-	void SetTargetLocationAndRotation(struct Unknown NewLocation, struct Unknown NewRotation); // Function Engine.PhysicsHandleComponent.SetTargetLocationAndRotation(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4588390>
-	void SetTargetLocation(struct Unknown NewLocation); // Function Engine.PhysicsHandleComponent.SetTargetLocation(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4588300>
-	void SetLinearStiffness(float NewLinearStiffness); // Function Engine.PhysicsHandleComponent.SetLinearStiffness(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4587D30>
-	void SetLinearDamping(float NewLinearDamping); // Function Engine.PhysicsHandleComponent.SetLinearDamping(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45879F0>
-	void SetInterpolationSpeed(float NewInterpolationSpeed); // Function Engine.PhysicsHandleComponent.SetInterpolationSpeed(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45878A0>
-	void SetAngularStiffness(float NewAngularStiffness); // Function Engine.PhysicsHandleComponent.SetAngularStiffness(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4586E30>
-	void SetAngularDamping(float NewAngularDamping); // Function Engine.PhysicsHandleComponent.SetAngularDamping(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4586AC0>
-	void ReleaseComponent(); // Function Engine.PhysicsHandleComponent.ReleaseComponent(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2069FC0>
-	void GrabComponentAtLocationWithRotation(struct Unknown Component, struct FName InBoneName, struct Unknown Location, struct Unknown Rotation); // Function Engine.PhysicsHandleComponent.GrabComponentAtLocationWithRotation(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4586840>
-	void GrabComponentAtLocation(struct Unknown Component, struct FName InBoneName, struct Unknown GrabLocation); // Function Engine.PhysicsHandleComponent.GrabComponentAtLocation(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4586730>
-	void GrabComponent(struct Unknown Component, struct FName InBoneName, struct Unknown GrabLocation, char bConstrainRotation); // Function Engine.PhysicsHandleComponent.GrabComponent(Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45865E0>
-	void GetTargetLocationAndRotation(struct Unknown& TargetLocation, struct Unknown& TargetRotation); // Function Engine.PhysicsHandleComponent.GetTargetLocationAndRotation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x4586500>
-	struct Unknown GetGrabbedComponent(); // Function Engine.PhysicsHandleComponent.GetGrabbedComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x36C5BE0>
+	void SetTargetRotation(struct Unknown NewRotation); // Function Engine.PhysicsHandleComponent.SetTargetRotation(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4588470>
+	void SetTargetLocationAndRotation(struct Unknown NewLocation, struct Unknown NewRotation); // Function Engine.PhysicsHandleComponent.SetTargetLocationAndRotation(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4588390>
+	void SetTargetLocation(struct Unknown NewLocation); // Function Engine.PhysicsHandleComponent.SetTargetLocation(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4588300>
+	void SetLinearStiffness(float NewLinearStiffness); // Function Engine.PhysicsHandleComponent.SetLinearStiffness(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4587D30>
+	void SetLinearDamping(float NewLinearDamping); // Function Engine.PhysicsHandleComponent.SetLinearDamping(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45879F0>
+	void SetInterpolationSpeed(float NewInterpolationSpeed); // Function Engine.PhysicsHandleComponent.SetInterpolationSpeed(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45878A0>
+	void SetAngularStiffness(float NewAngularStiffness); // Function Engine.PhysicsHandleComponent.SetAngularStiffness(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4586E30>
+	void SetAngularDamping(float NewAngularDamping); // Function Engine.PhysicsHandleComponent.SetAngularDamping(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4586AC0>
+	void ReleaseComponent(); // Function Engine.PhysicsHandleComponent.ReleaseComponent(Native|Public|BlueprintCallable) // <Game_BE.exe+0x2069FC0>
+	void GrabComponentAtLocationWithRotation(struct Unknown Component, struct FName InBoneName, struct Unknown Location, struct Unknown Rotation); // Function Engine.PhysicsHandleComponent.GrabComponentAtLocationWithRotation(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4586840>
+	void GrabComponentAtLocation(struct Unknown Component, struct FName InBoneName, struct Unknown GrabLocation); // Function Engine.PhysicsHandleComponent.GrabComponentAtLocation(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4586730>
+	void GrabComponent(struct Unknown Component, struct FName InBoneName, struct Unknown GrabLocation, char bConstrainRotation); // Function Engine.PhysicsHandleComponent.GrabComponent(Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45865E0>
+	void GetTargetLocationAndRotation(struct Unknown& TargetLocation, struct Unknown& TargetRotation); // Function Engine.PhysicsHandleComponent.GetTargetLocationAndRotation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4586500>
+	struct Unknown GetGrabbedComponent(); // Function Engine.PhysicsHandleComponent.GetGrabbedComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C5BE0>
 };
 
 // Class Engine.PhysicsSettings
@@ -14322,10 +14322,10 @@ public:
 	char bIgnoreSelf : 0; // 0x239 (1)
 	float SpringCompression; // 0x23C (4)
 
-	struct Unknown GetSpringRestingPoint(); // Function Engine.PhysicsSpringComponent.GetSpringRestingPoint(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x458C290>
-	struct Unknown GetSpringDirection(); // Function Engine.PhysicsSpringComponent.GetSpringDirection(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x458C250>
-	struct Unknown GetSpringCurrentEndPoint(); // Function Engine.PhysicsSpringComponent.GetSpringCurrentEndPoint(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x458C210>
-	float GetNormalizedCompressionScalar(); // Function Engine.PhysicsSpringComponent.GetNormalizedCompressionScalar(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x458C1B0>
+	struct Unknown GetSpringRestingPoint(); // Function Engine.PhysicsSpringComponent.GetSpringRestingPoint(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x458C290>
+	struct Unknown GetSpringDirection(); // Function Engine.PhysicsSpringComponent.GetSpringDirection(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x458C250>
+	struct Unknown GetSpringCurrentEndPoint(); // Function Engine.PhysicsSpringComponent.GetSpringCurrentEndPoint(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x458C210>
+	float GetNormalizedCompressionScalar(); // Function Engine.PhysicsSpringComponent.GetNormalizedCompressionScalar(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x458C1B0>
 };
 
 // Class Engine.PhysicsThruster
@@ -14352,7 +14352,7 @@ public:
 	struct Unknown PlanarReflectionComponent; // 0x310 (8)
 	char bShowPreviewPlane : 0; // 0x318 (1)
 
-	void OnInterpToggle(char bEnable); // Function Engine.PlanarReflection.OnInterpToggle(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x458C330>
+	void OnInterpToggle(char bEnable); // Function Engine.PlanarReflection.OnInterpToggle(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x458C330>
 };
 
 // Class Engine.PlanarReflectionComponent
@@ -14394,10 +14394,10 @@ public:
 	struct FMulticastInlineDelegate PlatformChangedToLaptopModeDelegate; // 0xB0 (16)
 	struct FMulticastInlineDelegate PlatformChangedToTabletModeDelegate; // 0xC0 (16)
 
-	char SupportsConvertibleLaptops(); // Function Engine.PlatformEventsComponent.SupportsConvertibleLaptops(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x458D340>
-	void PlatformEventDelegate__DelegateSignature(); // DelegateFunction Engine.PlatformEventsComponent.PlatformEventDelegate__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	char IsInTabletMode(); // Function Engine.PlatformEventsComponent.IsInTabletMode(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x458C300>
-	char IsInLaptopMode(); // Function Engine.PlatformEventsComponent.IsInLaptopMode(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x458C2D0>
+	char SupportsConvertibleLaptops(); // Function Engine.PlatformEventsComponent.SupportsConvertibleLaptops(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x458D340>
+	void PlatformEventDelegate__DelegateSignature(); // DelegateFunction Engine.PlatformEventsComponent.PlatformEventDelegate__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B812B0>
+	char IsInTabletMode(); // Function Engine.PlatformEventsComponent.IsInTabletMode(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x458C300>
+	char IsInLaptopMode(); // Function Engine.PlatformEventsComponent.IsInLaptopMode(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x458C2D0>
 };
 
 // Class Engine.PlatformInterfaceWebResponse
@@ -14411,9 +14411,9 @@ public:
 	struct FString StringResponse; // 0x40 (16)
 	struct TArray<Unknown> BinaryResponse; // 0x50 (16)
 
-	int32_t GetNumHeaders(); // Function Engine.PlatformInterfaceWebResponse.GetNumHeaders(Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1530840>
-	struct FString GetHeaderValue(struct FString HeaderName); // Function Engine.PlatformInterfaceWebResponse.GetHeaderValue(Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x458C0C0>
-	void GetHeader(int32_t HeaderIndex, struct FString& Header, struct FString& Value); // Function Engine.PlatformInterfaceWebResponse.GetHeader(Native|Public|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x458BF50>
+	int32_t GetNumHeaders(); // Function Engine.PlatformInterfaceWebResponse.GetNumHeaders(Native|Public) // <Game_BE.exe+0x1530840>
+	struct FString GetHeaderValue(struct FString HeaderName); // Function Engine.PlatformInterfaceWebResponse.GetHeaderValue(Native|Public) // <Game_BE.exe+0x458C0C0>
+	void GetHeader(int32_t HeaderIndex, struct FString& Header, struct FString& Value); // Function Engine.PlatformInterfaceWebResponse.GetHeader(Native|Public|HasOutParms) // <Game_BE.exe+0x458BF50>
 };
 
 // Class Engine.PlayerInput
@@ -14424,11 +14424,11 @@ public:
 	struct TArray<Unknown> DebugExecBindings; // 0x120 (16)
 	struct TArray<Unknown> InvertedAxis; // 0x160 (16)
 
-	void SetMouseSensitivity(float Sensitivity); // Function Engine.PlayerInput.SetMouseSensitivity(Final|Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x459CAB0>
-	void SetBind(struct FName BindName, struct FString Command); // Function Engine.PlayerInput.SetBind(Final|Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x459C440>
-	void InvertAxisKey(struct Unknown AxisKey); // Function Engine.PlayerInput.InvertAxisKey(Final|Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x459C2E0>
-	void InvertAxis(struct FName AxisName); // Function Engine.PlayerInput.InvertAxis(Final|Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x459C260>
-	void ClearSmoothing(); // Function Engine.PlayerInput.ClearSmoothing(Final|Exec|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x459BDD0>
+	void SetMouseSensitivity(float Sensitivity); // Function Engine.PlayerInput.SetMouseSensitivity(Final|Exec|Native|Public) // <Game_BE.exe+0x459CAB0>
+	void SetBind(struct FName BindName, struct FString Command); // Function Engine.PlayerInput.SetBind(Final|Exec|Native|Public) // <Game_BE.exe+0x459C440>
+	void InvertAxisKey(struct Unknown AxisKey); // Function Engine.PlayerInput.InvertAxisKey(Final|Exec|Native|Public) // <Game_BE.exe+0x459C2E0>
+	void InvertAxis(struct FName AxisName); // Function Engine.PlayerInput.InvertAxis(Final|Exec|Native|Public) // <Game_BE.exe+0x459C260>
+	void ClearSmoothing(); // Function Engine.PlayerInput.ClearSmoothing(Final|Exec|Native|Public) // <Game_BE.exe+0x459BDD0>
 };
 
 // Class Engine.PointLight
@@ -14438,8 +14438,8 @@ public:
 
 	struct Unknown PointLightComponent; // 0x310 (8)
 
-	void SetRadius(float NewRadius); // Function Engine.PointLight.SetRadius(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x459CB30>
-	void SetLightFalloffExponent(float NewLightFalloffExponent); // Function Engine.PointLight.SetLightFalloffExponent(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x459C9B0>
+	void SetRadius(float NewRadius); // Function Engine.PointLight.SetRadius(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x459CB30>
+	void SetLightFalloffExponent(float NewLightFalloffExponent); // Function Engine.PointLight.SetLightFalloffExponent(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x459C9B0>
 };
 
 // Class Engine.PointLightComponent
@@ -14453,10 +14453,10 @@ public:
 	float SoftSourceRadius; // 0x394 (4)
 	float SourceLength; // 0x398 (4)
 
-	void SetSourceRadius(float bNewValue); // Function Engine.PointLightComponent.SetSourceRadius(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x459CCB0>
-	void SetSourceLength(float NewValue); // Function Engine.PointLightComponent.SetSourceLength(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x459CC30>
-	void SetSoftSourceRadius(float bNewValue); // Function Engine.PointLightComponent.SetSoftSourceRadius(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x459CBB0>
-	void SetLightFalloffExponent(float NewLightFalloffExponent); // Function Engine.PointLightComponent.SetLightFalloffExponent(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x459CA30>
+	void SetSourceRadius(float bNewValue); // Function Engine.PointLightComponent.SetSourceRadius(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x459CCB0>
+	void SetSourceLength(float NewValue); // Function Engine.PointLightComponent.SetSourceLength(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x459CC30>
+	void SetSoftSourceRadius(float bNewValue); // Function Engine.PointLightComponent.SetSoftSourceRadius(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x459CBB0>
+	void SetLightFalloffExponent(float NewLightFalloffExponent); // Function Engine.PointLightComponent.SetLightFalloffExponent(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x459CA30>
 };
 
 // Class Engine.PoseAsset
@@ -14491,7 +14491,7 @@ public:
 	char bEnabled : 0; // 0x7FC (1)
 	char bUnbound : 0; // 0x7FC (1)
 
-	void AddOrUpdateBlendable(struct TScriptInterface<IUnknown> InBlendableObject, float InWeight); // Function Engine.PostProcessComponent.AddOrUpdateBlendable(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x459BC80>
+	void AddOrUpdateBlendable(struct TScriptInterface<IUnknown> InBlendableObject, float InWeight); // Function Engine.PostProcessComponent.AddOrUpdateBlendable(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x459BC80>
 };
 
 // Class Engine.PostProcessVolume
@@ -14506,7 +14506,7 @@ public:
 	char bEnabled : 0; // 0x90C (1)
 	char bUnbound : 0; // 0x90C (1)
 
-	void AddOrUpdateBlendable(struct TScriptInterface<IUnknown> InBlendableObject, float InWeight); // Function Engine.PostProcessVolume.AddOrUpdateBlendable(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x459BB30>
+	void AddOrUpdateBlendable(struct TScriptInterface<IUnknown> InBlendableObject, float InWeight); // Function Engine.PostProcessVolume.AddOrUpdateBlendable(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x459BB30>
 };
 
 // Class Engine.PrecomputedVisibilityOverrideVolume
@@ -14556,10 +14556,10 @@ public:
 
 	struct Unknown ForceComponent; // 0x300 (8)
 
-	void ToggleForce(); // Function Engine.RadialForceActor.ToggleForce(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F3BD20>
-	void FireImpulse(); // Function Engine.RadialForceActor.FireImpulse(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1E71C00>
-	void EnableForce(); // Function Engine.RadialForceActor.EnableForce(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x124CBD0>
-	void DisableForce(); // Function Engine.RadialForceActor.DisableForce(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1F3D5C0>
+	void ToggleForce(); // Function Engine.RadialForceActor.ToggleForce(Native|Public|BlueprintCallable) // <Game_BE.exe+0x1F3BD20>
+	void FireImpulse(); // Function Engine.RadialForceActor.FireImpulse(Native|Public|BlueprintCallable) // <Game_BE.exe+0x1E71C00>
+	void EnableForce(); // Function Engine.RadialForceActor.EnableForce(Native|Public|BlueprintCallable) // <Game_BE.exe+0x124CBD0>
+	void DisableForce(); // Function Engine.RadialForceActor.DisableForce(Native|Public|BlueprintCallable) // <Game_BE.exe+0x1F3D5C0>
 };
 
 // Class Engine.RadialForceComponent
@@ -14576,9 +14576,9 @@ public:
 	float DestructibleDamage; // 0x23C (4)
 	struct TArray<Unknown> ObjectTypesToAffect; // 0x240 (16)
 
-	void RemoveObjectTypeToAffect(char ObjectType); // Function Engine.RadialForceComponent.RemoveObjectTypeToAffect(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A8180>
-	void FireImpulse(); // Function Engine.RadialForceComponent.FireImpulse(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A7F30>
-	void AddObjectTypeToAffect(char ObjectType); // Function Engine.RadialForceComponent.AddObjectTypeToAffect(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A7EB0>
+	void RemoveObjectTypeToAffect(char ObjectType); // Function Engine.RadialForceComponent.RemoveObjectTypeToAffect(Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A8180>
+	void FireImpulse(); // Function Engine.RadialForceComponent.FireImpulse(Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A7F30>
+	void AddObjectTypeToAffect(char ObjectType); // Function Engine.RadialForceComponent.AddObjectTypeToAffect(Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A7EB0>
 };
 
 // Class Engine.RectLight
@@ -14600,11 +14600,11 @@ public:
 	float BarnDoorLength; // 0x394 (4)
 	struct Unknown SourceTexture; // 0x398 (8)
 
-	void SetSourceWidth(float bNewValue); // Function Engine.RectLightComponent.SetSourceWidth(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A8430>
-	void SetSourceTexture(struct Unknown bNewValue); // Function Engine.RectLightComponent.SetSourceTexture(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A83B0>
-	void SetSourceHeight(float NewValue); // Function Engine.RectLightComponent.SetSourceHeight(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x459CA30>
-	void SetBarnDoorLength(float NewValue); // Function Engine.RectLightComponent.SetBarnDoorLength(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A82A0>
-	void SetBarnDoorAngle(float NewValue); // Function Engine.RectLightComponent.SetBarnDoorAngle(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45A8220>
+	void SetSourceWidth(float bNewValue); // Function Engine.RectLightComponent.SetSourceWidth(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A8430>
+	void SetSourceTexture(struct Unknown bNewValue); // Function Engine.RectLightComponent.SetSourceTexture(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A83B0>
+	void SetSourceHeight(float NewValue); // Function Engine.RectLightComponent.SetSourceHeight(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x459CA30>
+	void SetBarnDoorLength(float NewValue); // Function Engine.RectLightComponent.SetBarnDoorLength(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A82A0>
+	void SetBarnDoorAngle(float NewValue); // Function Engine.RectLightComponent.SetBarnDoorAngle(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45A8220>
 };
 
 // Class Engine.RendererSettings
@@ -14789,10 +14789,10 @@ public:
 	char bEnableCompressCrunch : 0; // 0x50 (1)
 	int32_t RemoveLowMips; // 0x54 (4)
 
-	int32_t GetTileSize(); // Function Engine.RuntimeVirtualTexture.GetTileSize(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45AE2E0>
-	int32_t GetTileCount(); // Function Engine.RuntimeVirtualTexture.GetTileCount(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45AE2A0>
-	int32_t GetTileBorderSize(); // Function Engine.RuntimeVirtualTexture.GetTileBorderSize(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45AE260>
-	int32_t GetSize(); // Function Engine.RuntimeVirtualTexture.GetSize(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45AE1F0>
+	int32_t GetTileSize(); // Function Engine.RuntimeVirtualTexture.GetTileSize(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45AE2E0>
+	int32_t GetTileCount(); // Function Engine.RuntimeVirtualTexture.GetTileCount(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45AE2A0>
+	int32_t GetTileBorderSize(); // Function Engine.RuntimeVirtualTexture.GetTileBorderSize(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45AE260>
+	int32_t GetSize(); // Function Engine.RuntimeVirtualTexture.GetSize(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45AE1F0>
 };
 
 // Class Engine.RuntimeVirtualTextureComponent
@@ -14804,7 +14804,7 @@ public:
 	char bUseStreamingLowMipsInEditor : 0; // 0x230 (1)
 	struct Unknown BoundsSourceActor; // 0x238 (8)
 
-	struct Unknown GetVirtualTextureTransform(); // Function Engine.RuntimeVirtualTextureComponent.GetVirtualTextureTransform(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45AE330>
+	struct Unknown GetVirtualTextureTransform(); // Function Engine.RuntimeVirtualTextureComponent.GetVirtualTextureTransform(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45AE330>
 };
 
 // Class Engine.RuntimeVirtualTextureStreamingProxy
@@ -14837,7 +14837,7 @@ public:
 	struct Unknown TextureTargetODS; // 0x2E0 (8)
 	float IPD; // 0x2E8 (4)
 
-	void CaptureScene(); // Function Engine.SceneCaptureComponentCube.CaptureScene(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45B4FB0>
+	void CaptureScene(); // Function Engine.SceneCaptureComponentCube.CaptureScene(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45B4FB0>
 };
 
 // Class Engine.SceneCaptureCube
@@ -14847,7 +14847,7 @@ public:
 
 	struct Unknown CaptureComponentCube; // 0x310 (8)
 
-	void OnInterpToggle(char bEnable); // Function Engine.SceneCaptureCube.OnInterpToggle(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x458C330>
+	void OnInterpToggle(char bEnable); // Function Engine.SceneCaptureCube.OnInterpToggle(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x458C330>
 };
 
 // Class Engine.SCS_Node
@@ -14975,8 +14975,8 @@ public:
 	struct Unknown RelativeScale; // 0x50 (12)
 	char bForceAlwaysAnimated : 0; // 0x5C (1)
 
-	void InitializeSocketFromLocation(struct Unknown SkelComp, struct Unknown WorldLocation, struct Unknown WorldNormal); // Function Engine.SkeletalMeshSocket.InitializeSocketFromLocation(Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45CB2E0>
-	struct Unknown GetSocketLocation(struct Unknown SkelComp); // Function Engine.SkeletalMeshSocket.GetSocketLocation(Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45CB060>
+	void InitializeSocketFromLocation(struct Unknown SkelComp, struct Unknown WorldLocation, struct Unknown WorldNormal); // Function Engine.SkeletalMeshSocket.InitializeSocketFromLocation(Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45CB2E0>
+	struct Unknown GetSocketLocation(struct Unknown SkelComp); // Function Engine.SkeletalMeshSocket.GetSocketLocation(Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45CB060>
 };
 
 // Class Engine.SkyAtmosphereComponent
@@ -15007,21 +15007,21 @@ public:
 	float TransmittanceMinLightElevationAngle; // 0x2BC (4)
 	struct Unknown bStaticLightingBuiltGUID; // 0x2E4 (16)
 
-	void SetSkyLuminanceFactor(struct Unknown NewValue); // Function Engine.SkyAtmosphereComponent.SetSkyLuminanceFactor(Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45D1320>
-	void SetRayleighScatteringScale(float NewValue); // Function Engine.SkyAtmosphereComponent.SetRayleighScatteringScale(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45D12A0>
-	void SetRayleighScattering(struct Unknown NewValue); // Function Engine.SkyAtmosphereComponent.SetRayleighScattering(Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45D1220>
-	void SetRayleighExponentialDistribution(float NewValue); // Function Engine.SkyAtmosphereComponent.SetRayleighExponentialDistribution(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45D11A0>
-	void SetOtherAbsorptionScale(float NewValue); // Function Engine.SkyAtmosphereComponent.SetOtherAbsorptionScale(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453E5F0>
-	void SetOtherAbsorption(struct Unknown NewValue); // Function Engine.SkyAtmosphereComponent.SetOtherAbsorption(Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45D1120>
-	void SetMieScatteringScale(float NewValue); // Function Engine.SkyAtmosphereComponent.SetMieScatteringScale(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45D0D70>
-	void SetMieScattering(struct Unknown NewValue); // Function Engine.SkyAtmosphereComponent.SetMieScattering(Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45D0CF0>
-	void SetMieExponentialDistribution(float NewValue); // Function Engine.SkyAtmosphereComponent.SetMieExponentialDistribution(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453E670>
-	void SetMieAnisotropy(float NewValue); // Function Engine.SkyAtmosphereComponent.SetMieAnisotropy(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x453E800>
-	void SetMieAbsorptionScale(float NewValue); // Function Engine.SkyAtmosphereComponent.SetMieAbsorptionScale(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45D0C70>
-	void SetMieAbsorption(struct Unknown NewValue); // Function Engine.SkyAtmosphereComponent.SetMieAbsorption(Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45D0BF0>
-	void SetHeightFogContribution(float NewValue); // Function Engine.SkyAtmosphereComponent.SetHeightFogContribution(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45D0960>
-	void SetAerialPespectiveViewDistanceScale(float NewValue); // Function Engine.SkyAtmosphereComponent.SetAerialPespectiveViewDistanceScale(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45D06C0>
-	void OverrideAtmosphereLightDirection(int32_t AtmosphereLightIndex, struct Unknown& LightDirection); // Function Engine.SkyAtmosphereComponent.OverrideAtmosphereLightDirection(Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45D05D0>
+	void SetSkyLuminanceFactor(struct Unknown NewValue); // Function Engine.SkyAtmosphereComponent.SetSkyLuminanceFactor(Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45D1320>
+	void SetRayleighScatteringScale(float NewValue); // Function Engine.SkyAtmosphereComponent.SetRayleighScatteringScale(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45D12A0>
+	void SetRayleighScattering(struct Unknown NewValue); // Function Engine.SkyAtmosphereComponent.SetRayleighScattering(Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45D1220>
+	void SetRayleighExponentialDistribution(float NewValue); // Function Engine.SkyAtmosphereComponent.SetRayleighExponentialDistribution(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45D11A0>
+	void SetOtherAbsorptionScale(float NewValue); // Function Engine.SkyAtmosphereComponent.SetOtherAbsorptionScale(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x453E5F0>
+	void SetOtherAbsorption(struct Unknown NewValue); // Function Engine.SkyAtmosphereComponent.SetOtherAbsorption(Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45D1120>
+	void SetMieScatteringScale(float NewValue); // Function Engine.SkyAtmosphereComponent.SetMieScatteringScale(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45D0D70>
+	void SetMieScattering(struct Unknown NewValue); // Function Engine.SkyAtmosphereComponent.SetMieScattering(Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45D0CF0>
+	void SetMieExponentialDistribution(float NewValue); // Function Engine.SkyAtmosphereComponent.SetMieExponentialDistribution(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x453E670>
+	void SetMieAnisotropy(float NewValue); // Function Engine.SkyAtmosphereComponent.SetMieAnisotropy(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x453E800>
+	void SetMieAbsorptionScale(float NewValue); // Function Engine.SkyAtmosphereComponent.SetMieAbsorptionScale(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45D0C70>
+	void SetMieAbsorption(struct Unknown NewValue); // Function Engine.SkyAtmosphereComponent.SetMieAbsorption(Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45D0BF0>
+	void SetHeightFogContribution(float NewValue); // Function Engine.SkyAtmosphereComponent.SetHeightFogContribution(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45D0960>
+	void SetAerialPespectiveViewDistanceScale(float NewValue); // Function Engine.SkyAtmosphereComponent.SetAerialPespectiveViewDistanceScale(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45D06C0>
+	void OverrideAtmosphereLightDirection(int32_t AtmosphereLightIndex, struct Unknown& LightDirection); // Function Engine.SkyAtmosphereComponent.OverrideAtmosphereLightDirection(Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45D05D0>
 };
 
 // Class Engine.SkyAtmosphere
@@ -15060,21 +15060,21 @@ public:
 	float OcclusionTranslucencyForTwoSidedFoliages; // 0x2BC (4)
 	struct Unknown BlendDestinationCubemap; // 0x378 (8)
 
-	void SetVolumetricScatteringIntensity(float NewIntensity); // Function Engine.SkyLightComponent.SetVolumetricScatteringIntensity(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45D13A0>
-	void SetOcclusionTint(struct Unknown& InTint); // Function Engine.SkyLightComponent.SetOcclusionTint(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45D1090>
-	void SetOcclusionFoliageTint(struct Unknown& InTint); // Function Engine.SkyLightComponent.SetOcclusionFoliageTint(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45D1000>
-	void SetOcclusionExponent(float InOcclusionExponent); // Function Engine.SkyLightComponent.SetOcclusionExponent(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45D0F80>
-	void SetOcclusionContrast(float InOcclusionContrast); // Function Engine.SkyLightComponent.SetOcclusionContrast(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45D0F00>
-	void SetOcclusionBarkTint(struct Unknown& InTint); // Function Engine.SkyLightComponent.SetOcclusionBarkTint(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45D0E70>
-	void SetMinOcclusion(float InMinOcclusion); // Function Engine.SkyLightComponent.SetMinOcclusion(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45D0DF0>
-	void SetLowerHemisphereColor(struct Unknown& InLowerHemisphereColor); // Function Engine.SkyLightComponent.SetLowerHemisphereColor(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45D0B60>
-	void SetLightColor(struct Unknown NewLightColor); // Function Engine.SkyLightComponent.SetLightColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45D0AE0>
-	void SetIntensity(float NewIntensity); // Function Engine.SkyLightComponent.SetIntensity(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45D0A60>
-	void SetIndirectLightingIntensity(float NewIntensity); // Function Engine.SkyLightComponent.SetIndirectLightingIntensity(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45D09E0>
-	void SetCubemapBlend(struct Unknown SourceCubemap, struct Unknown DestinationCubemap, float InBlendFraction); // Function Engine.SkyLightComponent.SetCubemapBlend(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45D0850>
-	void SetCubemap(struct Unknown NewCubemap); // Function Engine.SkyLightComponent.SetCubemap(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45D07D0>
-	void SetAffectDynamicIndirectLighting(char bNewValue); // Function Engine.SkyLightComponent.SetAffectDynamicIndirectLighting(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45D0740>
-	void RecaptureSky(); // Function Engine.SkyLightComponent.RecaptureSky(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45D06A0>
+	void SetVolumetricScatteringIntensity(float NewIntensity); // Function Engine.SkyLightComponent.SetVolumetricScatteringIntensity(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45D13A0>
+	void SetOcclusionTint(struct Unknown& InTint); // Function Engine.SkyLightComponent.SetOcclusionTint(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45D1090>
+	void SetOcclusionFoliageTint(struct Unknown& InTint); // Function Engine.SkyLightComponent.SetOcclusionFoliageTint(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45D1000>
+	void SetOcclusionExponent(float InOcclusionExponent); // Function Engine.SkyLightComponent.SetOcclusionExponent(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45D0F80>
+	void SetOcclusionContrast(float InOcclusionContrast); // Function Engine.SkyLightComponent.SetOcclusionContrast(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45D0F00>
+	void SetOcclusionBarkTint(struct Unknown& InTint); // Function Engine.SkyLightComponent.SetOcclusionBarkTint(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45D0E70>
+	void SetMinOcclusion(float InMinOcclusion); // Function Engine.SkyLightComponent.SetMinOcclusion(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45D0DF0>
+	void SetLowerHemisphereColor(struct Unknown& InLowerHemisphereColor); // Function Engine.SkyLightComponent.SetLowerHemisphereColor(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45D0B60>
+	void SetLightColor(struct Unknown NewLightColor); // Function Engine.SkyLightComponent.SetLightColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45D0AE0>
+	void SetIntensity(float NewIntensity); // Function Engine.SkyLightComponent.SetIntensity(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45D0A60>
+	void SetIndirectLightingIntensity(float NewIntensity); // Function Engine.SkyLightComponent.SetIndirectLightingIntensity(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45D09E0>
+	void SetCubemapBlend(struct Unknown SourceCubemap, struct Unknown DestinationCubemap, float InBlendFraction); // Function Engine.SkyLightComponent.SetCubemapBlend(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45D0850>
+	void SetCubemap(struct Unknown NewCubemap); // Function Engine.SkyLightComponent.SetCubemap(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45D07D0>
+	void SetAffectDynamicIndirectLighting(char bNewValue); // Function Engine.SkyLightComponent.SetAffectDynamicIndirectLighting(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45D0740>
+	void RecaptureSky(); // Function Engine.SkyLightComponent.RecaptureSky(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45D06A0>
 };
 
 // Class Engine.SlateBrushAsset
@@ -15410,12 +15410,12 @@ public:
 	float OutputVolume; // 0x68 (4)
 	struct FMulticastInlineDelegate OnSubmixRecordedFileDone; // 0x70 (16)
 
-	void StopRecordingOutput(struct Unknown WorldContextObject, enum class Unknow ExportType, struct FString Name, struct FString Path, struct Unknown ExistingSoundWaveToOverwrite); // Function Engine.SoundSubmix.StopRecordingOutput(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45D9210>
-	void StopEnvelopeFollowing(struct Unknown WorldContextObject); // Function Engine.SoundSubmix.StopEnvelopeFollowing(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45D9190>
-	void StartRecordingOutput(struct Unknown WorldContextObject, float ExpectedDuration); // Function Engine.SoundSubmix.StartRecordingOutput(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45D90C0>
-	void StartEnvelopeFollowing(struct Unknown WorldContextObject); // Function Engine.SoundSubmix.StartEnvelopeFollowing(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45D9040>
-	void SetSubmixOutputVolume(struct Unknown WorldContextObject, float InOutputVolume); // Function Engine.SoundSubmix.SetSubmixOutputVolume(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45D8F70>
-	void AddEnvelopeFollowerDelegate(struct Unknown WorldContextObject, struct FDelegate& OnSubmixEnvelopeBP); // Function Engine.SoundSubmix.AddEnvelopeFollowerDelegate(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45D8E80>
+	void StopRecordingOutput(struct Unknown WorldContextObject, enum class Unknow ExportType, struct FString Name, struct FString Path, struct Unknown ExistingSoundWaveToOverwrite); // Function Engine.SoundSubmix.StopRecordingOutput(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45D9210>
+	void StopEnvelopeFollowing(struct Unknown WorldContextObject); // Function Engine.SoundSubmix.StopEnvelopeFollowing(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45D9190>
+	void StartRecordingOutput(struct Unknown WorldContextObject, float ExpectedDuration); // Function Engine.SoundSubmix.StartRecordingOutput(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45D90C0>
+	void StartEnvelopeFollowing(struct Unknown WorldContextObject); // Function Engine.SoundSubmix.StartEnvelopeFollowing(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45D9040>
+	void SetSubmixOutputVolume(struct Unknown WorldContextObject, float InOutputVolume); // Function Engine.SoundSubmix.SetSubmixOutputVolume(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45D8F70>
+	void AddEnvelopeFollowerDelegate(struct Unknown WorldContextObject, struct FDelegate& OnSubmixEnvelopeBP); // Function Engine.SoundSubmix.AddEnvelopeFollowerDelegate(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x45D8E80>
 };
 
 // Class Engine.SoundfieldSubmix
@@ -15503,36 +15503,36 @@ public:
 	char ForwardAxis; // 0x5CD (1)
 	float VirtualTextureMainPassMaxDrawDistance; // 0x5D0 (4)
 
-	void UpdateMesh(); // Function Engine.SplineMeshComponent.UpdateMesh(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E6190>
-	void SetStartTangent(struct Unknown StartTangent, char bUpdateMesh); // Function Engine.SplineMeshComponent.SetStartTangent(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E60B0>
-	void SetStartScale(struct Unknown StartScale, char bUpdateMesh); // Function Engine.SplineMeshComponent.SetStartScale(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E5FF0>
-	void SetStartRoll(float StartRoll, char bUpdateMesh); // Function Engine.SplineMeshComponent.SetStartRoll(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E5F20>
-	void SetStartPosition(struct Unknown StartPos, char bUpdateMesh); // Function Engine.SplineMeshComponent.SetStartPosition(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E5E40>
-	void SetStartOffset(struct Unknown StartOffset, char bUpdateMesh); // Function Engine.SplineMeshComponent.SetStartOffset(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E5D80>
-	void SetStartAndEnd(struct Unknown StartPos, struct Unknown StartTangent, struct Unknown EndPos, struct Unknown EndTangent, char bUpdateMesh); // Function Engine.SplineMeshComponent.SetStartAndEnd(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E5BC0>
-	void SetSplineUpDir(struct Unknown& InSplineUpDir, char bUpdateMesh); // Function Engine.SplineMeshComponent.SetSplineUpDir(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E5AE0>
-	void SetForwardAxis(char InForwardAxis, char bUpdateMesh); // Function Engine.SplineMeshComponent.SetForwardAxis(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E5810>
-	void SetEndTangent(struct Unknown EndTangent, char bUpdateMesh); // Function Engine.SplineMeshComponent.SetEndTangent(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E5730>
-	void SetEndScale(struct Unknown EndScale, char bUpdateMesh); // Function Engine.SplineMeshComponent.SetEndScale(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E5670>
-	void SetEndRoll(float EndRoll, char bUpdateMesh); // Function Engine.SplineMeshComponent.SetEndRoll(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E55A0>
-	void SetEndPosition(struct Unknown EndPos, char bUpdateMesh); // Function Engine.SplineMeshComponent.SetEndPosition(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E54C0>
-	void SetEndOffset(struct Unknown EndOffset, char bUpdateMesh); // Function Engine.SplineMeshComponent.SetEndOffset(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E5400>
-	void SetBoundaryMin(float InBoundaryMin, char bUpdateMesh); // Function Engine.SplineMeshComponent.SetBoundaryMin(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E5330>
-	void SetBoundaryMax(float InBoundaryMax, char bUpdateMesh); // Function Engine.SplineMeshComponent.SetBoundaryMax(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E5260>
-	struct Unknown GetStartTangent(); // Function Engine.SplineMeshComponent.GetStartTangent(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E5170>
-	struct Unknown GetStartScale(); // Function Engine.SplineMeshComponent.GetStartScale(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E5130>
-	float GetStartRoll(); // Function Engine.SplineMeshComponent.GetStartRoll(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E5100>
-	struct Unknown GetStartPosition(); // Function Engine.SplineMeshComponent.GetStartPosition(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E50C0>
-	struct Unknown GetStartOffset(); // Function Engine.SplineMeshComponent.GetStartOffset(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E5080>
-	struct Unknown GetSplineUpDir(); // Function Engine.SplineMeshComponent.GetSplineUpDir(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E5040>
-	char GetForwardAxis(); // Function Engine.SplineMeshComponent.GetForwardAxis(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E4B80>
-	struct Unknown GetEndTangent(); // Function Engine.SplineMeshComponent.GetEndTangent(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E4B40>
-	struct Unknown GetEndScale(); // Function Engine.SplineMeshComponent.GetEndScale(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E4B00>
-	float GetEndRoll(); // Function Engine.SplineMeshComponent.GetEndRoll(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E4AD0>
-	struct Unknown GetEndPosition(); // Function Engine.SplineMeshComponent.GetEndPosition(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E4A90>
-	struct Unknown GetEndOffset(); // Function Engine.SplineMeshComponent.GetEndOffset(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E4A50>
-	float GetBoundaryMin(); // Function Engine.SplineMeshComponent.GetBoundaryMin(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E4980>
-	float GetBoundaryMax(); // Function Engine.SplineMeshComponent.GetBoundaryMax(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E4950>
+	void UpdateMesh(); // Function Engine.SplineMeshComponent.UpdateMesh(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45E6190>
+	void SetStartTangent(struct Unknown StartTangent, char bUpdateMesh); // Function Engine.SplineMeshComponent.SetStartTangent(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45E60B0>
+	void SetStartScale(struct Unknown StartScale, char bUpdateMesh); // Function Engine.SplineMeshComponent.SetStartScale(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45E5FF0>
+	void SetStartRoll(float StartRoll, char bUpdateMesh); // Function Engine.SplineMeshComponent.SetStartRoll(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45E5F20>
+	void SetStartPosition(struct Unknown StartPos, char bUpdateMesh); // Function Engine.SplineMeshComponent.SetStartPosition(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45E5E40>
+	void SetStartOffset(struct Unknown StartOffset, char bUpdateMesh); // Function Engine.SplineMeshComponent.SetStartOffset(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45E5D80>
+	void SetStartAndEnd(struct Unknown StartPos, struct Unknown StartTangent, struct Unknown EndPos, struct Unknown EndTangent, char bUpdateMesh); // Function Engine.SplineMeshComponent.SetStartAndEnd(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45E5BC0>
+	void SetSplineUpDir(struct Unknown& InSplineUpDir, char bUpdateMesh); // Function Engine.SplineMeshComponent.SetSplineUpDir(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45E5AE0>
+	void SetForwardAxis(char InForwardAxis, char bUpdateMesh); // Function Engine.SplineMeshComponent.SetForwardAxis(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45E5810>
+	void SetEndTangent(struct Unknown EndTangent, char bUpdateMesh); // Function Engine.SplineMeshComponent.SetEndTangent(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45E5730>
+	void SetEndScale(struct Unknown EndScale, char bUpdateMesh); // Function Engine.SplineMeshComponent.SetEndScale(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45E5670>
+	void SetEndRoll(float EndRoll, char bUpdateMesh); // Function Engine.SplineMeshComponent.SetEndRoll(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45E55A0>
+	void SetEndPosition(struct Unknown EndPos, char bUpdateMesh); // Function Engine.SplineMeshComponent.SetEndPosition(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45E54C0>
+	void SetEndOffset(struct Unknown EndOffset, char bUpdateMesh); // Function Engine.SplineMeshComponent.SetEndOffset(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45E5400>
+	void SetBoundaryMin(float InBoundaryMin, char bUpdateMesh); // Function Engine.SplineMeshComponent.SetBoundaryMin(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45E5330>
+	void SetBoundaryMax(float InBoundaryMax, char bUpdateMesh); // Function Engine.SplineMeshComponent.SetBoundaryMax(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45E5260>
+	struct Unknown GetStartTangent(); // Function Engine.SplineMeshComponent.GetStartTangent(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45E5170>
+	struct Unknown GetStartScale(); // Function Engine.SplineMeshComponent.GetStartScale(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45E5130>
+	float GetStartRoll(); // Function Engine.SplineMeshComponent.GetStartRoll(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45E5100>
+	struct Unknown GetStartPosition(); // Function Engine.SplineMeshComponent.GetStartPosition(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45E50C0>
+	struct Unknown GetStartOffset(); // Function Engine.SplineMeshComponent.GetStartOffset(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45E5080>
+	struct Unknown GetSplineUpDir(); // Function Engine.SplineMeshComponent.GetSplineUpDir(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45E5040>
+	char GetForwardAxis(); // Function Engine.SplineMeshComponent.GetForwardAxis(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45E4B80>
+	struct Unknown GetEndTangent(); // Function Engine.SplineMeshComponent.GetEndTangent(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45E4B40>
+	struct Unknown GetEndScale(); // Function Engine.SplineMeshComponent.GetEndScale(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45E4B00>
+	float GetEndRoll(); // Function Engine.SplineMeshComponent.GetEndRoll(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45E4AD0>
+	struct Unknown GetEndPosition(); // Function Engine.SplineMeshComponent.GetEndPosition(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45E4A90>
+	struct Unknown GetEndOffset(); // Function Engine.SplineMeshComponent.GetEndOffset(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45E4A50>
+	float GetBoundaryMin(); // Function Engine.SplineMeshComponent.GetBoundaryMin(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45E4980>
+	float GetBoundaryMax(); // Function Engine.SplineMeshComponent.GetBoundaryMax(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45E4950>
 };
 
 // Class Engine.SpotLightComponent
@@ -15547,8 +15547,8 @@ public:
 	float PCSSSharpness; // 0x3B0 (4)
 	float PCSSContrast; // 0x3B4 (4)
 
-	void SetOuterConeAngle(float NewOuterConeAngle); // Function Engine.SpotLightComponent.SetOuterConeAngle(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E5A60>
-	void SetInnerConeAngle(float NewInnerConeAngle); // Function Engine.SpotLightComponent.SetInnerConeAngle(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E5960>
+	void SetOuterConeAngle(float NewOuterConeAngle); // Function Engine.SpotLightComponent.SetOuterConeAngle(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45E5A60>
+	void SetInnerConeAngle(float NewInnerConeAngle); // Function Engine.SpotLightComponent.SetInnerConeAngle(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45E5960>
 };
 
 // Class Engine.SpringArmComponent
@@ -15575,9 +15575,9 @@ public:
 	float CameraLagMaxTimeStep; // 0x258 (4)
 	float CameraLagMaxDistance; // 0x25C (4)
 
-	char IsCollisionFixApplied(); // Function Engine.SpringArmComponent.IsCollisionFixApplied(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E5230>
-	struct Unknown GetUnfixedCameraPosition(); // Function Engine.SpringArmComponent.GetUnfixedCameraPosition(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E51F0>
-	struct Unknown GetTargetRotation(); // Function Engine.SpringArmComponent.GetTargetRotation(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E51B0>
+	char IsCollisionFixApplied(); // Function Engine.SpringArmComponent.IsCollisionFixApplied(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45E5230>
+	struct Unknown GetUnfixedCameraPosition(); // Function Engine.SpringArmComponent.GetUnfixedCameraPosition(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45E51F0>
+	struct Unknown GetTargetRotation(); // Function Engine.SpringArmComponent.GetTargetRotation(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45E51B0>
 };
 
 // Class Engine.StaticMesh
@@ -15614,22 +15614,22 @@ public:
 	struct Unknown EditableMesh; // 0x148 (8)
 	struct Unknown NavCollision; // 0x150 (8)
 
-	void RemoveSocket(struct Unknown Socket); // Function Engine.StaticMesh.RemoveSocket(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FA2DF0>
-	int32_t GetNumTriangles(int32_t LODIndex); // Function Engine.StaticMesh.GetNumTriangles(Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E4FB0>
-	int32_t GetNumSections(int32_t InLOD); // Function Engine.StaticMesh.GetNumSections(Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E4F20>
-	int32_t GetNumMaterial(); // Function Engine.StaticMesh.GetNumMaterial(Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E4F00>
-	int32_t GetNumLODs(); // Function Engine.StaticMesh.GetNumLODs(Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E4ED0>
-	void GetMinimumLODForPlatforms(struct TMap<Unknown, Unknown>& PlatformMinimumLODs); // Function Engine.StaticMesh.GetMinimumLODForPlatforms(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E4D50>
-	int32_t GetMinimumLODForPlatform(struct FName& PlatformName); // Function Engine.StaticMesh.GetMinimumLODForPlatform(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E4CD0>
-	int32_t GetMaterialIndex(struct FName MaterialSlotName); // Function Engine.StaticMesh.GetMaterialIndex(Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E4C40>
-	struct Unknown GetMaterial(int32_t MaterialIndex); // Function Engine.StaticMesh.GetMaterial(Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E4BB0>
-	struct Unknown GetBounds(); // Function Engine.StaticMesh.GetBounds(Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E4A00>
-	struct Unknown GetBoundingBox(); // Function Engine.StaticMesh.GetBoundingBox(Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E49B0>
-	struct Unknown FindSocket(struct FName InSocketName); // Function Engine.StaticMesh.FindSocket(Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E48C0>
-	struct Unknown CreateStaticMeshDescription(struct Unknown Outer); // Function Engine.StaticMesh.CreateStaticMeshDescription(Final|RequiredAPI|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E4840>
-	void BuildFromStaticMeshDescriptions(struct TArray<Unknown>& StaticMeshDescriptions, char bBuildSimpleCollision); // Function Engine.StaticMesh.BuildFromStaticMeshDescriptions(Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E4740>
-	void AddSocket(struct Unknown Socket); // Function Engine.StaticMesh.AddSocket(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1FA2D70>
-	struct FName AddMaterial(struct Unknown Material); // Function Engine.StaticMesh.AddMaterial(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45E46B0>
+	void RemoveSocket(struct Unknown Socket); // Function Engine.StaticMesh.RemoveSocket(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1FA2DF0>
+	int32_t GetNumTriangles(int32_t LODIndex); // Function Engine.StaticMesh.GetNumTriangles(Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45E4FB0>
+	int32_t GetNumSections(int32_t InLOD); // Function Engine.StaticMesh.GetNumSections(Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45E4F20>
+	int32_t GetNumMaterial(); // Function Engine.StaticMesh.GetNumMaterial(Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45E4F00>
+	int32_t GetNumLODs(); // Function Engine.StaticMesh.GetNumLODs(Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45E4ED0>
+	void GetMinimumLODForPlatforms(struct TMap<Unknown, Unknown>& PlatformMinimumLODs); // Function Engine.StaticMesh.GetMinimumLODForPlatforms(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45E4D50>
+	int32_t GetMinimumLODForPlatform(struct FName& PlatformName); // Function Engine.StaticMesh.GetMinimumLODForPlatform(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45E4CD0>
+	int32_t GetMaterialIndex(struct FName MaterialSlotName); // Function Engine.StaticMesh.GetMaterialIndex(Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45E4C40>
+	struct Unknown GetMaterial(int32_t MaterialIndex); // Function Engine.StaticMesh.GetMaterial(Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45E4BB0>
+	struct Unknown GetBounds(); // Function Engine.StaticMesh.GetBounds(Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45E4A00>
+	struct Unknown GetBoundingBox(); // Function Engine.StaticMesh.GetBoundingBox(Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45E49B0>
+	struct Unknown FindSocket(struct FName InSocketName); // Function Engine.StaticMesh.FindSocket(Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45E48C0>
+	struct Unknown CreateStaticMeshDescription(struct Unknown Outer); // Function Engine.StaticMesh.CreateStaticMeshDescription(Final|RequiredAPI|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x45E4840>
+	void BuildFromStaticMeshDescriptions(struct TArray<Unknown>& StaticMeshDescriptions, char bBuildSimpleCollision); // Function Engine.StaticMesh.BuildFromStaticMeshDescriptions(Final|RequiredAPI|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x45E4740>
+	void AddSocket(struct Unknown Socket); // Function Engine.StaticMesh.AddSocket(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1FA2D70>
+	struct FName AddMaterial(struct Unknown Material); // Function Engine.StaticMesh.AddMaterial(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45E46B0>
 };
 
 // Class Engine.StaticMeshSocket
@@ -15666,18 +15666,18 @@ public:
 	struct Unknown Shape; // 0x2B8 (8)
 	int32_t Priority; // 0x2C0 (4)
 
-	void SetUVRect(struct Unknown InUVRect); // Function Engine.StereoLayerComponent.SetUVRect(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45EAD30>
-	void SetTexture(struct Unknown InTexture); // Function Engine.StereoLayerComponent.SetTexture(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45EACB0>
-	void SetQuadSize(struct Unknown InQuadSize); // Function Engine.StereoLayerComponent.SetQuadSize(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45EA980>
-	void SetPriority(int32_t InPriority); // Function Engine.StereoLayerComponent.SetPriority(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45EA900>
-	void SetLeftTexture(struct Unknown InTexture); // Function Engine.StereoLayerComponent.SetLeftTexture(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45EA800>
-	void SetEquirectProps(struct Unknown InScaleBiases); // Function Engine.StereoLayerComponent.SetEquirectProps(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45EA500>
-	void MarkTextureForUpdate(); // Function Engine.StereoLayerComponent.MarkTextureForUpdate(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45EA3E0>
-	struct Unknown GetUVRect(); // Function Engine.StereoLayerComponent.GetUVRect(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45EA3B0>
-	struct Unknown GetTexture(); // Function Engine.StereoLayerComponent.GetTexture(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45EA390>
-	struct Unknown GetQuadSize(); // Function Engine.StereoLayerComponent.GetQuadSize(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45EA360>
-	int32_t GetPriority(); // Function Engine.StereoLayerComponent.GetPriority(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45EA340>
-	struct Unknown GetLeftTexture(); // Function Engine.StereoLayerComponent.GetLeftTexture(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45EA240>
+	void SetUVRect(struct Unknown InUVRect); // Function Engine.StereoLayerComponent.SetUVRect(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45EAD30>
+	void SetTexture(struct Unknown InTexture); // Function Engine.StereoLayerComponent.SetTexture(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45EACB0>
+	void SetQuadSize(struct Unknown InQuadSize); // Function Engine.StereoLayerComponent.SetQuadSize(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45EA980>
+	void SetPriority(int32_t InPriority); // Function Engine.StereoLayerComponent.SetPriority(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45EA900>
+	void SetLeftTexture(struct Unknown InTexture); // Function Engine.StereoLayerComponent.SetLeftTexture(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45EA800>
+	void SetEquirectProps(struct Unknown InScaleBiases); // Function Engine.StereoLayerComponent.SetEquirectProps(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45EA500>
+	void MarkTextureForUpdate(); // Function Engine.StereoLayerComponent.MarkTextureForUpdate(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45EA3E0>
+	struct Unknown GetUVRect(); // Function Engine.StereoLayerComponent.GetUVRect(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45EA3B0>
+	struct Unknown GetTexture(); // Function Engine.StereoLayerComponent.GetTexture(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45EA390>
+	struct Unknown GetQuadSize(); // Function Engine.StereoLayerComponent.GetQuadSize(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45EA360>
+	int32_t GetPriority(); // Function Engine.StereoLayerComponent.GetPriority(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45EA340>
+	struct Unknown GetLeftTexture(); // Function Engine.StereoLayerComponent.GetLeftTexture(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45EA240>
 };
 
 // Class Engine.StereoLayerShapeCylinder
@@ -15689,9 +15689,9 @@ public:
 	float OverlayArc; // 0x2C (4)
 	int32_t Height; // 0x30 (4)
 
-	void SetRadius(float InRadius); // Function Engine.StereoLayerShapeCylinder.SetRadius(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45EAA00>
-	void SetOverlayArc(float InOverlayArc); // Function Engine.StereoLayerShapeCylinder.SetOverlayArc(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45EA880>
-	void SetHeight(int32_t InHeight); // Function Engine.StereoLayerShapeCylinder.SetHeight(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45EA780>
+	void SetRadius(float InRadius); // Function Engine.StereoLayerShapeCylinder.SetRadius(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45EAA00>
+	void SetOverlayArc(float InOverlayArc); // Function Engine.StereoLayerShapeCylinder.SetOverlayArc(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45EA880>
+	void SetHeight(int32_t InHeight); // Function Engine.StereoLayerShapeCylinder.SetHeight(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45EA780>
 };
 
 // Class Engine.StereoLayerShapeEquirect
@@ -15706,7 +15706,7 @@ public:
 	struct Unknown LeftBias; // 0x60 (8)
 	struct Unknown RightBias; // 0x68 (8)
 
-	void SetEquirectProps(struct Unknown InScaleBiases); // Function Engine.StereoLayerShapeEquirect.SetEquirectProps(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45EA600>
+	void SetEquirectProps(struct Unknown InScaleBiases); // Function Engine.StereoLayerShapeEquirect.SetEquirectProps(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45EA600>
 };
 
 // Class Engine.SubsurfaceProfile
@@ -15737,12 +15737,12 @@ public:
 
 	float FrameDelay; // 0x28 (4)
 
-	struct Unknown GetTimecode(); // Function Engine.TimecodeProvider.GetTimecode(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45F2DE0>
-	enum class Unknow GetSynchronizationState(); // Function Engine.TimecodeProvider.GetSynchronizationState(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45F2DB0>
-	struct Unknown GetQualifiedFrameTime(); // Function Engine.TimecodeProvider.GetQualifiedFrameTime(Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45F2D70>
-	struct Unknown GetFrameRate(); // Function Engine.TimecodeProvider.GetFrameRate(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45F2CA0>
-	struct Unknown GetDelayedTimecode(); // Function Engine.TimecodeProvider.GetDelayedTimecode(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45F2C60>
-	struct Unknown GetDelayedQualifiedFrameTime(); // Function Engine.TimecodeProvider.GetDelayedQualifiedFrameTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45F2C20>
+	struct Unknown GetTimecode(); // Function Engine.TimecodeProvider.GetTimecode(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45F2DE0>
+	enum class Unknow GetSynchronizationState(); // Function Engine.TimecodeProvider.GetSynchronizationState(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45F2DB0>
+	struct Unknown GetQualifiedFrameTime(); // Function Engine.TimecodeProvider.GetQualifiedFrameTime(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45F2D70>
+	struct Unknown GetFrameRate(); // Function Engine.TimecodeProvider.GetFrameRate(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45F2CA0>
+	struct Unknown GetDelayedTimecode(); // Function Engine.TimecodeProvider.GetDelayedTimecode(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45F2C60>
+	struct Unknown GetDelayedQualifiedFrameTime(); // Function Engine.TimecodeProvider.GetDelayedQualifiedFrameTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45F2C20>
 };
 
 // Class Engine.SystemTimeTimecodeProvider
@@ -15792,20 +15792,20 @@ public:
 	float VertSpacingAdjust; // 0x4EC (4)
 	char bAlwaysRenderAsText : 0; // 0x4F0 (1)
 
-	void SetYScale(float Value); // Function Engine.TextRenderComponent.SetYScale(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45EF280>
-	void SetXScale(float Value); // Function Engine.TextRenderComponent.SetXScale(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45EF200>
-	void SetWorldSize(float Value); // Function Engine.TextRenderComponent.SetWorldSize(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45EF180>
-	void SetVertSpacingAdjust(float Value); // Function Engine.TextRenderComponent.SetVertSpacingAdjust(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45EF080>
-	void SetVerticalAlignment(char Value); // Function Engine.TextRenderComponent.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45EF100>
-	void SetTextRenderColor(struct Unknown Value); // Function Engine.TextRenderComponent.SetTextRenderColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45EF010>
-	void SetTextMaterial(struct Unknown Material); // Function Engine.TextRenderComponent.SetTextMaterial(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45EEF90>
-	void SetText(struct FString Value); // Function Engine.TextRenderComponent.SetText(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45EEEF0>
-	void SetHorizSpacingAdjust(float Value); // Function Engine.TextRenderComponent.SetHorizSpacingAdjust(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45EEDF0>
-	void SetHorizontalAlignment(char Value); // Function Engine.TextRenderComponent.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45EEE70>
-	void SetFont(struct Unknown Value); // Function Engine.TextRenderComponent.SetFont(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45EED70>
-	void K2_SetText(struct FText& Value); // Function Engine.TextRenderComponent.K2_SetText(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45EECA0>
-	struct Unknown GetTextWorldSize(); // Function Engine.TextRenderComponent.GetTextWorldSize(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45EEBA0>
-	struct Unknown GetTextLocalSize(); // Function Engine.TextRenderComponent.GetTextLocalSize(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45EEB60>
+	void SetYScale(float Value); // Function Engine.TextRenderComponent.SetYScale(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45EF280>
+	void SetXScale(float Value); // Function Engine.TextRenderComponent.SetXScale(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45EF200>
+	void SetWorldSize(float Value); // Function Engine.TextRenderComponent.SetWorldSize(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45EF180>
+	void SetVertSpacingAdjust(float Value); // Function Engine.TextRenderComponent.SetVertSpacingAdjust(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45EF080>
+	void SetVerticalAlignment(char Value); // Function Engine.TextRenderComponent.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45EF100>
+	void SetTextRenderColor(struct Unknown Value); // Function Engine.TextRenderComponent.SetTextRenderColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x45EF010>
+	void SetTextMaterial(struct Unknown Material); // Function Engine.TextRenderComponent.SetTextMaterial(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45EEF90>
+	void SetText(struct FString Value); // Function Engine.TextRenderComponent.SetText(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45EEEF0>
+	void SetHorizSpacingAdjust(float Value); // Function Engine.TextRenderComponent.SetHorizSpacingAdjust(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45EEDF0>
+	void SetHorizontalAlignment(char Value); // Function Engine.TextRenderComponent.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45EEE70>
+	void SetFont(struct Unknown Value); // Function Engine.TextRenderComponent.SetFont(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45EED70>
+	void K2_SetText(struct FText& Value); // Function Engine.TextRenderComponent.K2_SetText(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x45EECA0>
+	struct Unknown GetTextWorldSize(); // Function Engine.TextRenderComponent.GetTextWorldSize(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45EEBA0>
+	struct Unknown GetTextLocalSize(); // Function Engine.TextRenderComponent.GetTextLocalSize(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45EEB60>
 };
 
 // Class Engine.TextureLightProfile
@@ -15837,29 +15837,29 @@ public:
 	struct Unknown TheTimeline; // 0xB0 (152)
 	char bIgnoreTimeDilation : 0; // 0x148 (1)
 
-	void Stop(); // Function Engine.TimelineComponent.Stop(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45F35F0>
-	void SetVectorCurve(struct Unknown NewVectorCurve, struct FName VectorTrackName); // Function Engine.TimelineComponent.SetVectorCurve(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45F3530>
-	void SetTimelineLengthMode(char NewLengthMode); // Function Engine.TimelineComponent.SetTimelineLengthMode(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45F34B0>
-	void SetTimelineLength(float NewLength); // Function Engine.TimelineComponent.SetTimelineLength(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45F3430>
-	void SetPlayRate(float NewRate); // Function Engine.TimelineComponent.SetPlayRate(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45F32A0>
-	void SetPlaybackPosition(float NewPosition, char bFireEvents, char bFireUpdate); // Function Engine.TimelineComponent.SetPlaybackPosition(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45F3320>
-	void SetNewTime(float NewTime); // Function Engine.TimelineComponent.SetNewTime(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45F3220>
-	void SetLooping(char bNewLooping); // Function Engine.TimelineComponent.SetLooping(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45F3190>
-	void SetLinearColorCurve(struct Unknown NewLinearColorCurve, struct FName LinearColorTrackName); // Function Engine.TimelineComponent.SetLinearColorCurve(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45F30D0>
-	void SetIgnoreTimeDilation(char bNewIgnoreTimeDilation); // Function Engine.TimelineComponent.SetIgnoreTimeDilation(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45F3040>
-	void SetFloatCurve(struct Unknown NewFloatCurve, struct FName FloatTrackName); // Function Engine.TimelineComponent.SetFloatCurve(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45F2F80>
-	void ReverseFromEnd(); // Function Engine.TimelineComponent.ReverseFromEnd(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45F2F60>
-	void Reverse(); // Function Engine.TimelineComponent.Reverse(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45F2F40>
-	void PlayFromStart(); // Function Engine.TimelineComponent.PlayFromStart(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45F2F20>
-	void Play(); // Function Engine.TimelineComponent.Play(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45F2F00>
-	void OnRep_Timeline(); // Function Engine.TimelineComponent.OnRep_Timeline(Final|Native|Public) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45F2EE0>
-	char IsReversing(); // Function Engine.TimelineComponent.IsReversing(Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45F2EB0>
-	char IsPlaying(); // Function Engine.TimelineComponent.IsPlaying(Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45F2E80>
-	char IsLooping(); // Function Engine.TimelineComponent.IsLooping(Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45F2E50>
-	float GetTimelineLength(); // Function Engine.TimelineComponent.GetTimelineLength(Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45F2E20>
-	float GetPlayRate(); // Function Engine.TimelineComponent.GetPlayRate(Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45F2D10>
-	float GetPlaybackPosition(); // Function Engine.TimelineComponent.GetPlaybackPosition(Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45F2D40>
-	char GetIgnoreTimeDilation(); // Function Engine.TimelineComponent.GetIgnoreTimeDilation(Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45F2CE0>
+	void Stop(); // Function Engine.TimelineComponent.Stop(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45F35F0>
+	void SetVectorCurve(struct Unknown NewVectorCurve, struct FName VectorTrackName); // Function Engine.TimelineComponent.SetVectorCurve(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45F3530>
+	void SetTimelineLengthMode(char NewLengthMode); // Function Engine.TimelineComponent.SetTimelineLengthMode(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45F34B0>
+	void SetTimelineLength(float NewLength); // Function Engine.TimelineComponent.SetTimelineLength(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45F3430>
+	void SetPlayRate(float NewRate); // Function Engine.TimelineComponent.SetPlayRate(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45F32A0>
+	void SetPlaybackPosition(float NewPosition, char bFireEvents, char bFireUpdate); // Function Engine.TimelineComponent.SetPlaybackPosition(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45F3320>
+	void SetNewTime(float NewTime); // Function Engine.TimelineComponent.SetNewTime(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45F3220>
+	void SetLooping(char bNewLooping); // Function Engine.TimelineComponent.SetLooping(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45F3190>
+	void SetLinearColorCurve(struct Unknown NewLinearColorCurve, struct FName LinearColorTrackName); // Function Engine.TimelineComponent.SetLinearColorCurve(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45F30D0>
+	void SetIgnoreTimeDilation(char bNewIgnoreTimeDilation); // Function Engine.TimelineComponent.SetIgnoreTimeDilation(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45F3040>
+	void SetFloatCurve(struct Unknown NewFloatCurve, struct FName FloatTrackName); // Function Engine.TimelineComponent.SetFloatCurve(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45F2F80>
+	void ReverseFromEnd(); // Function Engine.TimelineComponent.ReverseFromEnd(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45F2F60>
+	void Reverse(); // Function Engine.TimelineComponent.Reverse(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45F2F40>
+	void PlayFromStart(); // Function Engine.TimelineComponent.PlayFromStart(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45F2F20>
+	void Play(); // Function Engine.TimelineComponent.Play(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45F2F00>
+	void OnRep_Timeline(); // Function Engine.TimelineComponent.OnRep_Timeline(Final|Native|Public) // <Game_BE.exe+0x45F2EE0>
+	char IsReversing(); // Function Engine.TimelineComponent.IsReversing(Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45F2EB0>
+	char IsPlaying(); // Function Engine.TimelineComponent.IsPlaying(Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45F2E80>
+	char IsLooping(); // Function Engine.TimelineComponent.IsLooping(Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45F2E50>
+	float GetTimelineLength(); // Function Engine.TimelineComponent.GetTimelineLength(Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45F2E20>
+	float GetPlayRate(); // Function Engine.TimelineComponent.GetPlayRate(Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45F2D10>
+	float GetPlaybackPosition(); // Function Engine.TimelineComponent.GetPlaybackPosition(Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45F2D40>
+	char GetIgnoreTimeDilation(); // Function Engine.TimelineComponent.GetIgnoreTimeDilation(Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x45F2CE0>
 };
 
 // Class Engine.TimelineTemplate
@@ -15998,7 +15998,7 @@ public:
 	float Tightness; // 0x4B4 (4)
 	char bPreviewVectorField : 0; // 0x4B8 (1)
 
-	void SetIntensity(float NewIntensity); // Function Engine.VectorFieldComponent.SetIntensity(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45F7860>
+	void SetIntensity(float NewIntensity); // Function Engine.VectorFieldComponent.SetIntensity(Native|Public|BlueprintCallable) // <Game_BE.exe+0x45F7860>
 };
 
 // Class Engine.VectorFieldStatic
@@ -16045,11 +16045,11 @@ public:
 
 	struct Unknown Settings; // 0xB0 (24)
 
-	void RegisterWithPlayerState(struct Unknown OwningState); // Function Engine.VOIPTalker.RegisterWithPlayerState(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45FE3E0>
-	float GetVoiceLevel(); // Function Engine.VOIPTalker.GetVoiceLevel(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45FDA30>
-	struct Unknown CreateTalkerForPlayer(struct Unknown OwningState); // Function Engine.VOIPTalker.CreateTalkerForPlayer(Final|Native|Static|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45FD9B0>
-	void BPOnTalkingEnd(); // Function Engine.VOIPTalker.BPOnTalkingEnd(Native|Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1222AC0>
-	void BPOnTalkingBegin(struct Unknown AudioComponent); // Function Engine.VOIPTalker.BPOnTalkingBegin(Native|Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45FD920>
+	void RegisterWithPlayerState(struct Unknown OwningState); // Function Engine.VOIPTalker.RegisterWithPlayerState(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45FE3E0>
+	float GetVoiceLevel(); // Function Engine.VOIPTalker.GetVoiceLevel(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45FDA30>
+	struct Unknown CreateTalkerForPlayer(struct Unknown OwningState); // Function Engine.VOIPTalker.CreateTalkerForPlayer(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x45FD9B0>
+	void BPOnTalkingEnd(); // Function Engine.VOIPTalker.BPOnTalkingEnd(Native|Event|Protected|BlueprintEvent) // <Game_BE.exe+0x1222AC0>
+	void BPOnTalkingBegin(struct Unknown AudioComponent); // Function Engine.VOIPTalker.BPOnTalkingBegin(Native|Event|Protected|BlueprintEvent) // <Game_BE.exe+0x45FD920>
 };
 
 // Class Engine.VolumetricLightmapDensityVolume
@@ -16080,12 +16080,12 @@ public:
 	float Radius; // 0x238 (4)
 	char bPointWind : 0; // 0x23C (1)
 
-	void SetWindType(enum class Unknow InNewType); // Function Engine.WindDirectionalSourceComponent.SetWindType(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45FE750>
-	void SetStrength(float InNewStrength); // Function Engine.WindDirectionalSourceComponent.SetStrength(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45FE6D0>
-	void SetSpeed(float InNewSpeed); // Function Engine.WindDirectionalSourceComponent.SetSpeed(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45FE650>
-	void SetRadius(float InNewRadius); // Function Engine.WindDirectionalSourceComponent.SetRadius(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45FE5D0>
-	void SetMinimumGustAmount(float InNewMinGust); // Function Engine.WindDirectionalSourceComponent.SetMinimumGustAmount(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45FE550>
-	void SetMaximumGustAmount(float InNewMaxGust); // Function Engine.WindDirectionalSourceComponent.SetMaximumGustAmount(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x45FE460>
+	void SetWindType(enum class Unknow InNewType); // Function Engine.WindDirectionalSourceComponent.SetWindType(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45FE750>
+	void SetStrength(float InNewStrength); // Function Engine.WindDirectionalSourceComponent.SetStrength(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45FE6D0>
+	void SetSpeed(float InNewSpeed); // Function Engine.WindDirectionalSourceComponent.SetSpeed(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45FE650>
+	void SetRadius(float InNewRadius); // Function Engine.WindDirectionalSourceComponent.SetRadius(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45FE5D0>
+	void SetMinimumGustAmount(float InNewMinGust); // Function Engine.WindDirectionalSourceComponent.SetMinimumGustAmount(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45FE550>
+	void SetMaximumGustAmount(float InNewMaxGust); // Function Engine.WindDirectionalSourceComponent.SetMaximumGustAmount(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x45FE460>
 };
 
 // Class Engine.WorldComposition

@@ -9,7 +9,7 @@ public:
 	struct Unknown IMG-TitleBG; // 0x260 (8)
 	struct Unknown UW-BlackMarket_Main; // 0x268 (8)
 
-	struct Unknown OnClose(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-BlackMarket.UW-BlackMarket_C.OnClose(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	struct Unknown OnClose(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-BlackMarket.UW-BlackMarket_C.OnClose(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
 };
 
 // Function UW-BlackMarket.UW-BlackMarket_C.OnClose

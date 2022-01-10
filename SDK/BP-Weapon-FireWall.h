@@ -6,9 +6,9 @@ public:
 	struct Unknown UberGraphFrame; // 0x1FC0 (8)
 	struct Unknown ParticleSystem; // 0x1FC8 (8)
 
-	void K2_OnEquip(); // Function BP-Weapon-FireWall.BP-Weapon-FireWall_C.K2_OnEquip(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void K2_OnUnEquip(); // Function BP-Weapon-FireWall.BP-Weapon-FireWall_C.K2_OnUnEquip(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ExecuteUbergraph_BP-Weapon-FireWall(int32_t EntryPoint); // Function BP-Weapon-FireWall.BP-Weapon-FireWall_C.ExecuteUbergraph_BP-Weapon-FireWall(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void K2_OnEquip(); // Function BP-Weapon-FireWall.BP-Weapon-FireWall_C.K2_OnEquip(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void K2_OnUnEquip(); // Function BP-Weapon-FireWall.BP-Weapon-FireWall_C.K2_OnUnEquip(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ExecuteUbergraph_BP-Weapon-FireWall(int32_t EntryPoint); // Function BP-Weapon-FireWall.BP-Weapon-FireWall_C.ExecuteUbergraph_BP-Weapon-FireWall(Final|UbergraphFunction) // <Game_BE.exe+0x2B812B0>
 };
 
 // Function BP-Weapon-FireWall.BP-Weapon-FireWall_C.K2_OnEquip

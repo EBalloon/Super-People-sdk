@@ -37,28 +37,28 @@ public:
 	struct Unknown MainWidget; // 0x2330 (8)
 	struct Unknown TopWidget; // 0x2338 (8)
 
-	void GetTopWidget(struct Unknown& TopWidget); // Function BP-HB_Sensor.BP-HB_Sensor_C.GetTopWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void GetMainWidget(struct Unknown& MainWidget); // Function BP-HB_Sensor.BP-HB_Sensor_C.GetMainWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void IsOwnerLocallyControlled(char& bIsLocallyControlled); // Function BP-HB_Sensor.BP-HB_Sensor_C.IsOwnerLocallyControlled(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void BlackColorFunc(char IsEnabled); // Function BP-HB_Sensor.BP-HB_Sensor_C.BlackColorFunc(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Monochrome Func(char IsEnabled); // Function BP-HB_Sensor.BP-HB_Sensor_C.Monochrome Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Selective Color Func(char IsEnabled); // Function BP-HB_Sensor.BP-HB_Sensor_C.Selective Color Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void SetEffectPriority(int32_t Priority, struct Unknown Material); // Function BP-HB_Sensor.BP-HB_Sensor_C.SetEffectPriority(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void SetAdvancedEffectFeatures(struct Unknown Features, struct Unknown Material, struct Unknown Dynamic Material Instance); // Function BP-HB_Sensor.BP-HB_Sensor_C.SetAdvancedEffectFeatures(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Radial Blur Func(char IsEnabled); // Function BP-HB_Sensor.BP-HB_Sensor_C.Radial Blur Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void CreateEffectMaterialInstance(struct Unknown Material, struct Unknown& Instance); // Function BP-HB_Sensor.BP-HB_Sensor_C.CreateEffectMaterialInstance(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ScreenEffectEvent(char RadialBlur, char BlackColor); // Function BP-HB_Sensor.BP-HB_Sensor_C.ScreenEffectEvent(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveTick(float DeltaSeconds); // Function BP-HB_Sensor.BP-HB_Sensor_C.ReceiveTick(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveBeginPlay(); // Function BP-HB_Sensor.BP-HB_Sensor_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnPostEventAtLocationEvent(struct FString EventKey, struct Unknown& Location); // Function BP-HB_Sensor.BP-HB_Sensor_C.OnPostEventAtLocationEvent(Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void AddActiveEvent(); // Function BP-HB_Sensor.BP-HB_Sensor_C.AddActiveEvent(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void K2_OnEquip(); // Function BP-HB_Sensor.BP-HB_Sensor_C.K2_OnEquip(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveDestroyed(); // Function BP-HB_Sensor.BP-HB_Sensor_C.ReceiveDestroyed(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void K2_OnUnEquip(); // Function BP-HB_Sensor.BP-HB_Sensor_C.K2_OnUnEquip(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnClickedHeartBeatSensor(); // Function BP-HB_Sensor.BP-HB_Sensor_C.OnClickedHeartBeatSensor(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnActiveHeartBeatSensor(); // Function BP-HB_Sensor.BP-HB_Sensor_C.OnActiveHeartBeatSensor(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnDeactiveHeartBeatSensor(); // Function BP-HB_Sensor.BP-HB_Sensor_C.OnDeactiveHeartBeatSensor(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ExecuteUbergraph_BP-HB_Sensor(int32_t EntryPoint); // Function BP-HB_Sensor.BP-HB_Sensor_C.ExecuteUbergraph_BP-HB_Sensor(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void GetTopWidget(struct Unknown& TopWidget); // Function BP-HB_Sensor.BP-HB_Sensor_C.GetTopWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
+	void GetMainWidget(struct Unknown& MainWidget); // Function BP-HB_Sensor.BP-HB_Sensor_C.GetMainWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
+	void IsOwnerLocallyControlled(char& bIsLocallyControlled); // Function BP-HB_Sensor.BP-HB_Sensor_C.IsOwnerLocallyControlled(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
+	void BlackColorFunc(char IsEnabled); // Function BP-HB_Sensor.BP-HB_Sensor_C.BlackColorFunc(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Monochrome Func(char IsEnabled); // Function BP-HB_Sensor.BP-HB_Sensor_C.Monochrome Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Selective Color Func(char IsEnabled); // Function BP-HB_Sensor.BP-HB_Sensor_C.Selective Color Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void SetEffectPriority(int32_t Priority, struct Unknown Material); // Function BP-HB_Sensor.BP-HB_Sensor_C.SetEffectPriority(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void SetAdvancedEffectFeatures(struct Unknown Features, struct Unknown Material, struct Unknown Dynamic Material Instance); // Function BP-HB_Sensor.BP-HB_Sensor_C.SetAdvancedEffectFeatures(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Radial Blur Func(char IsEnabled); // Function BP-HB_Sensor.BP-HB_Sensor_C.Radial Blur Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void CreateEffectMaterialInstance(struct Unknown Material, struct Unknown& Instance); // Function BP-HB_Sensor.BP-HB_Sensor_C.CreateEffectMaterialInstance(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ScreenEffectEvent(char RadialBlur, char BlackColor); // Function BP-HB_Sensor.BP-HB_Sensor_C.ScreenEffectEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveTick(float DeltaSeconds); // Function BP-HB_Sensor.BP-HB_Sensor_C.ReceiveTick(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveBeginPlay(); // Function BP-HB_Sensor.BP-HB_Sensor_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnPostEventAtLocationEvent(struct FString EventKey, struct Unknown& Location); // Function BP-HB_Sensor.BP-HB_Sensor_C.OnPostEventAtLocationEvent(Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void AddActiveEvent(); // Function BP-HB_Sensor.BP-HB_Sensor_C.AddActiveEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void K2_OnEquip(); // Function BP-HB_Sensor.BP-HB_Sensor_C.K2_OnEquip(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveDestroyed(); // Function BP-HB_Sensor.BP-HB_Sensor_C.ReceiveDestroyed(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void K2_OnUnEquip(); // Function BP-HB_Sensor.BP-HB_Sensor_C.K2_OnUnEquip(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnClickedHeartBeatSensor(); // Function BP-HB_Sensor.BP-HB_Sensor_C.OnClickedHeartBeatSensor(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnActiveHeartBeatSensor(); // Function BP-HB_Sensor.BP-HB_Sensor_C.OnActiveHeartBeatSensor(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnDeactiveHeartBeatSensor(); // Function BP-HB_Sensor.BP-HB_Sensor_C.OnDeactiveHeartBeatSensor(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ExecuteUbergraph_BP-HB_Sensor(int32_t EntryPoint); // Function BP-HB_Sensor.BP-HB_Sensor_C.ExecuteUbergraph_BP-HB_Sensor(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
 };
 
 // Function BP-HB_Sensor.BP-HB_Sensor_C.GetTopWidget

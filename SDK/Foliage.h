@@ -222,7 +222,7 @@ public:
 	float MaxForce; // 0x364 (4)
 	float Mass; // 0x368 (4)
 
-	void CapsuleTouched(struct Unknown OverlappedComp, struct Unknown Other, struct Unknown OtherComp, int32_t OtherBodyIndex, char bFromSweep, struct Unknown& OverlapInfo); // Function Foliage.InteractiveFoliageActor.CapsuleTouched(Final|Native|Protected|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x38EC0E0>
+	void CapsuleTouched(struct Unknown OverlappedComp, struct Unknown Other, struct Unknown OtherComp, int32_t OtherBodyIndex, char bFromSweep, struct Unknown& OverlapInfo); // Function Foliage.InteractiveFoliageActor.CapsuleTouched(Final|Native|Protected|HasOutParms) // <Game_BE.exe+0x38EC0E0>
 };
 
 // Class Foliage.ProceduralFoliageBlockingVolume
@@ -255,7 +255,7 @@ public:
 	float MinimumQuadTreeSize; // 0x34 (4)
 	struct TArray<Unknown> FoliageTypes; // 0x40 (16)
 
-	void Simulate(int32_t NumSteps); // Function Foliage.ProceduralFoliageSpawner.Simulate(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x38EC560>
+	void Simulate(int32_t NumSteps); // Function Foliage.ProceduralFoliageSpawner.Simulate(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x38EC560>
 };
 
 // Class Foliage.ProceduralFoliageTile

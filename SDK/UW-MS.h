@@ -8,10 +8,10 @@ public:
 	struct Unknown Image_78; // 0x258 (8)
 	struct Unknown PingImage; // 0x260 (8)
 
-	void UpdatePing(); // Function UW-MS.UW-MS_C.UpdatePing(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Construct(); // Function UW-MS.UW-MS_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void 鉹@t元_1(); // Function UW-MS.UW-MS_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-MS(int32_t EntryPoint); // Function UW-MS.UW-MS_C.ExecuteUbergraph_UW-MS(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void UpdatePing(); // Function UW-MS.UW-MS_C.UpdatePing(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Construct(); // Function UW-MS.UW-MS_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void 鉹@t元_1(); // Function UW-MS.UW-MS_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ExecuteUbergraph_UW-MS(int32_t EntryPoint); // Function UW-MS.UW-MS_C.ExecuteUbergraph_UW-MS(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
 };
 
 // Function UW-MS.UW-MS_C.UpdatePing

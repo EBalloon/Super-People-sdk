@@ -22,23 +22,23 @@ public:
 	char bNeedCheckWeaponList : 0; // 0x3D8 (1)
 	char bNeedCheckMaterialList : 0; // 0x3D9 (1)
 
-	void NotifyNewItemToCoh(); // Function UW-Lobby_ArmoryMain.UW-Lobby_ArmoryMain_C.NotifyNewItemToCoh(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void RemoveNewCraftingList(struct FName ID); // Function UW-Lobby_ArmoryMain.UW-Lobby_ArmoryMain_C.RemoveNewCraftingList(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void UpdateNewCraftingSlots(); // Function UW-Lobby_ArmoryMain.UW-Lobby_ArmoryMain_C.UpdateNewCraftingSlots(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void UpdateNewMaterialList(); // Function UW-Lobby_ArmoryMain.UW-Lobby_ArmoryMain_C.UpdateNewMaterialList(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void UpdateNewWeaponList(); // Function UW-Lobby_ArmoryMain.UW-Lobby_ArmoryMain_C.UpdateNewWeaponList(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void CreateCraftWeaponPerkPopup(); // Function UW-Lobby_ArmoryMain.UW-Lobby_ArmoryMain_C.CreateCraftWeaponPerkPopup(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void EndCraft(); // Function UW-Lobby_ArmoryMain.UW-Lobby_ArmoryMain_C.EndCraft(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void StartCraft(struct Unknown& CraftWeapon); // Function UW-Lobby_ArmoryMain.UW-Lobby_ArmoryMain_C.StartCraft(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void GetOwnWeaponCount(int32_t BaseWeaponID, int32_t& Count); // Function UW-Lobby_ArmoryMain.UW-Lobby_ArmoryMain_C.GetOwnWeaponCount(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void GetOwnItemCount(int32_t ItemId, int32_t& Count); // Function UW-Lobby_ArmoryMain.UW-Lobby_ArmoryMain_C.GetOwnItemCount(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void CheckOwnWeapon(int32_t BaseWeaponID, char& IsOwn); // Function UW-Lobby_ArmoryMain.UW-Lobby_ArmoryMain_C.CheckOwnWeapon(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void CheckOwnItems(struct TArray<Unknown>& ItemId, char& AllOwn, int32_t& OwnCount); // Function UW-Lobby_ArmoryMain.UW-Lobby_ArmoryMain_C.CheckOwnItems(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnChangedMaterialList(struct TArray<Unknown>& MaterialList); // Function UW-Lobby_ArmoryMain.UW-Lobby_ArmoryMain_C.OnChangedMaterialList(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnChangedWeaponList(struct TArray<Unknown>& WeaponList); // Function UW-Lobby_ArmoryMain.UW-Lobby_ArmoryMain_C.OnChangedWeaponList(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnChangedGold(int32_t Gold); // Function UW-Lobby_ArmoryMain.UW-Lobby_ArmoryMain_C.OnChangedGold(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnChangedArmoryTab(struct FString TabName); // Function UW-Lobby_ArmoryMain.UW-Lobby_ArmoryMain_C.OnChangedArmoryTab(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnChangedMainTab(struct FString TabName); // Function UW-Lobby_ArmoryMain.UW-Lobby_ArmoryMain_C.OnChangedMainTab(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void NotifyNewItemToCoh(); // Function UW-Lobby_ArmoryMain.UW-Lobby_ArmoryMain_C.NotifyNewItemToCoh(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void RemoveNewCraftingList(struct FName ID); // Function UW-Lobby_ArmoryMain.UW-Lobby_ArmoryMain_C.RemoveNewCraftingList(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void UpdateNewCraftingSlots(); // Function UW-Lobby_ArmoryMain.UW-Lobby_ArmoryMain_C.UpdateNewCraftingSlots(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void UpdateNewMaterialList(); // Function UW-Lobby_ArmoryMain.UW-Lobby_ArmoryMain_C.UpdateNewMaterialList(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void UpdateNewWeaponList(); // Function UW-Lobby_ArmoryMain.UW-Lobby_ArmoryMain_C.UpdateNewWeaponList(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void CreateCraftWeaponPerkPopup(); // Function UW-Lobby_ArmoryMain.UW-Lobby_ArmoryMain_C.CreateCraftWeaponPerkPopup(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void EndCraft(); // Function UW-Lobby_ArmoryMain.UW-Lobby_ArmoryMain_C.EndCraft(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void StartCraft(struct Unknown& CraftWeapon); // Function UW-Lobby_ArmoryMain.UW-Lobby_ArmoryMain_C.StartCraft(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void GetOwnWeaponCount(int32_t BaseWeaponID, int32_t& Count); // Function UW-Lobby_ArmoryMain.UW-Lobby_ArmoryMain_C.GetOwnWeaponCount(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
+	void GetOwnItemCount(int32_t ItemId, int32_t& Count); // Function UW-Lobby_ArmoryMain.UW-Lobby_ArmoryMain_C.GetOwnItemCount(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
+	void CheckOwnWeapon(int32_t BaseWeaponID, char& IsOwn); // Function UW-Lobby_ArmoryMain.UW-Lobby_ArmoryMain_C.CheckOwnWeapon(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
+	void CheckOwnItems(struct TArray<Unknown>& ItemId, char& AllOwn, int32_t& OwnCount); // Function UW-Lobby_ArmoryMain.UW-Lobby_ArmoryMain_C.CheckOwnItems(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
+	void OnChangedMaterialList(struct TArray<Unknown>& MaterialList); // Function UW-Lobby_ArmoryMain.UW-Lobby_ArmoryMain_C.OnChangedMaterialList(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnChangedWeaponList(struct TArray<Unknown>& WeaponList); // Function UW-Lobby_ArmoryMain.UW-Lobby_ArmoryMain_C.OnChangedWeaponList(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnChangedGold(int32_t Gold); // Function UW-Lobby_ArmoryMain.UW-Lobby_ArmoryMain_C.OnChangedGold(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnChangedArmoryTab(struct FString TabName); // Function UW-Lobby_ArmoryMain.UW-Lobby_ArmoryMain_C.OnChangedArmoryTab(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnChangedMainTab(struct FString TabName); // Function UW-Lobby_ArmoryMain.UW-Lobby_ArmoryMain_C.OnChangedMainTab(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
 };
 
 // Function UW-Lobby_ArmoryMain.UW-Lobby_ArmoryMain_C.NotifyNewItemToCoh

@@ -21,25 +21,25 @@ public:
 	struct Unknown HoverOwnerWidget; // 0x13C0 (8)
 	int32_t Index; // 0x13C8 (4)
 
-	void OnDragDetected(struct Unknown MyGeometry, struct Unknown& PointerEvent, struct Unknown& Operation); // Function UW-Inventory_KeepedSlot.UW-Inventory_KeepedSlot_C.OnDragDetected(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void SetHoverWidgetRef(); // Function UW-Inventory_KeepedSlot.UW-Inventory_KeepedSlot_C.SetHoverWidgetRef(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	char OnDrop(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation); // Function UW-Inventory_KeepedSlot.UW-Inventory_KeepedSlot_C.OnDrop(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void SetBG(enum class Unknow WearableItemType); // Function UW-Inventory_KeepedSlot.UW-Inventory_KeepedSlot_C.SetBG(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnRButtonClick(char& bResult); // Function UW-Inventory_KeepedSlot.UW-Inventory_KeepedSlot_C.OnRButtonClick(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	enum class Unknow Get_Abillity_Visibility_1(); // Function UW-Inventory_KeepedSlot.UW-Inventory_KeepedSlot_C.Get_Abillity_Visibility_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void RequestGetItem(struct Unknown Pickup, char& bResult); // Function UW-Inventory_KeepedSlot.UW-Inventory_KeepedSlot_C.RequestGetItem(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Reset(); // Function UW-Inventory_KeepedSlot.UW-Inventory_KeepedSlot_C.Reset(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void InitData(enum class Unknow EquipType, enum class Unknow WearableItemType); // Function UW-Inventory_KeepedSlot.UW-Inventory_KeepedSlot_C.InitData(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void SetInfo(struct Unknown InventoryWidget, struct Unknown InventoryItemInfoData); // Function UW-Inventory_KeepedSlot.UW-Inventory_KeepedSlot_C.SetInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Drop(); // Function UW-Inventory_KeepedSlot.UW-Inventory_KeepedSlot_C.Drop(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnLoaded_98E452BD4DD4A7091D0406BA03F23FD2(struct Unknown Loaded); // Function UW-Inventory_KeepedSlot.UW-Inventory_KeepedSlot_C.OnLoaded_98E452BD4DD4A7091D0406BA03F23FD2(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-Inventory_KeepedSlot.UW-Inventory_KeepedSlot_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnMouseLeave(struct Unknown& MouseEvent); // Function UW-Inventory_KeepedSlot.UW-Inventory_KeepedSlot_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Enable(); // Function UW-Inventory_KeepedSlot.UW-Inventory_KeepedSlot_C.Enable(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Disable(); // Function UW-Inventory_KeepedSlot.UW-Inventory_KeepedSlot_C.Disable(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Construct(); // Function UW-Inventory_KeepedSlot.UW-Inventory_KeepedSlot_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void AysncLoadIconTexture(struct Unknown IconTexture); // Function UW-Inventory_KeepedSlot.UW-Inventory_KeepedSlot_C.AysncLoadIconTexture(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-Inventory_KeepedSlot(int32_t EntryPoint); // Function UW-Inventory_KeepedSlot.UW-Inventory_KeepedSlot_C.ExecuteUbergraph_UW-Inventory_KeepedSlot(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void OnDragDetected(struct Unknown MyGeometry, struct Unknown& PointerEvent, struct Unknown& Operation); // Function UW-Inventory_KeepedSlot.UW-Inventory_KeepedSlot_C.OnDragDetected(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void SetHoverWidgetRef(); // Function UW-Inventory_KeepedSlot.UW-Inventory_KeepedSlot_C.SetHoverWidgetRef(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	char OnDrop(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation); // Function UW-Inventory_KeepedSlot.UW-Inventory_KeepedSlot_C.OnDrop(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void SetBG(enum class Unknow WearableItemType); // Function UW-Inventory_KeepedSlot.UW-Inventory_KeepedSlot_C.SetBG(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnRButtonClick(char& bResult); // Function UW-Inventory_KeepedSlot.UW-Inventory_KeepedSlot_C.OnRButtonClick(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	enum class Unknow Get_Abillity_Visibility_1(); // Function UW-Inventory_KeepedSlot.UW-Inventory_KeepedSlot_C.Get_Abillity_Visibility_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
+	void RequestGetItem(struct Unknown Pickup, char& bResult); // Function UW-Inventory_KeepedSlot.UW-Inventory_KeepedSlot_C.RequestGetItem(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Reset(); // Function UW-Inventory_KeepedSlot.UW-Inventory_KeepedSlot_C.Reset(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void InitData(enum class Unknow EquipType, enum class Unknow WearableItemType); // Function UW-Inventory_KeepedSlot.UW-Inventory_KeepedSlot_C.InitData(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void SetInfo(struct Unknown InventoryWidget, struct Unknown InventoryItemInfoData); // Function UW-Inventory_KeepedSlot.UW-Inventory_KeepedSlot_C.SetInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Drop(); // Function UW-Inventory_KeepedSlot.UW-Inventory_KeepedSlot_C.Drop(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnLoaded_98E452BD4DD4A7091D0406BA03F23FD2(struct Unknown Loaded); // Function UW-Inventory_KeepedSlot.UW-Inventory_KeepedSlot_C.OnLoaded_98E452BD4DD4A7091D0406BA03F23FD2(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-Inventory_KeepedSlot.UW-Inventory_KeepedSlot_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnMouseLeave(struct Unknown& MouseEvent); // Function UW-Inventory_KeepedSlot.UW-Inventory_KeepedSlot_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Enable(); // Function UW-Inventory_KeepedSlot.UW-Inventory_KeepedSlot_C.Enable(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Disable(); // Function UW-Inventory_KeepedSlot.UW-Inventory_KeepedSlot_C.Disable(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Construct(); // Function UW-Inventory_KeepedSlot.UW-Inventory_KeepedSlot_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void AysncLoadIconTexture(struct Unknown IconTexture); // Function UW-Inventory_KeepedSlot.UW-Inventory_KeepedSlot_C.AysncLoadIconTexture(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ExecuteUbergraph_UW-Inventory_KeepedSlot(int32_t EntryPoint); // Function UW-Inventory_KeepedSlot.UW-Inventory_KeepedSlot_C.ExecuteUbergraph_UW-Inventory_KeepedSlot(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
 };
 
 // Function UW-Inventory_KeepedSlot.UW-Inventory_KeepedSlot_C.OnDragDetected

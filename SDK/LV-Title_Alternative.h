@@ -90,112 +90,112 @@ public:
 	struct Unknown Plane_2_EdGraph_27_RefProperty; // 0x5D8 (8)
 	struct Unknown Plane_4_EdGraph_27_RefProperty; // 0x5E0 (8)
 
-	void SetSequecePanelColor(int32_t WeaponRarity); // Function LV-Title_Alternative.LV-Title_Alternative_C.SetSequecePanelColor(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ChangeMenu(struct FString Menu); // Function LV-Title_Alternative.LV-Title_Alternative_C.ChangeMenu(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void SetTutorial(); // Function LV-Title_Alternative.LV-Title_Alternative_C.SetTutorial(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void PlayLobbySound(); // Function LV-Title_Alternative.LV-Title_Alternative_C.PlayLobbySound(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void UpdatePartyInfo(); // Function LV-Title_Alternative.LV-Title_Alternative_C.UpdatePartyInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void GetGammaSettings(struct Unknown& GammaWidget); // Function LV-Title_Alternative.LV-Title_Alternative_C.GetGammaSettings(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void GetTitleWdiget(struct Unknown& HUD); // Function LV-Title_Alternative.LV-Title_Alternative_C.GetTitleWdiget(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void StopArmoryAnalyzeSound(); // Function LV-Title_Alternative.LV-Title_Alternative_C.StopArmoryAnalyzeSound(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void PlayArmoryAnalyzeSound(); // Function LV-Title_Alternative.LV-Title_Alternative_C.PlayArmoryAnalyzeSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void StopArmoryAmbienceSound(); // Function LV-Title_Alternative.LV-Title_Alternative_C.StopArmoryAmbienceSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void PlayArmoryAmbienceSound(); // Function LV-Title_Alternative.LV-Title_Alternative_C.PlayArmoryAmbienceSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void StopSequence(); // Function LV-Title_Alternative.LV-Title_Alternative_C.StopSequence(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void SetOutlineGlow(float Value); // Function LV-Title_Alternative.LV-Title_Alternative_C.SetOutlineGlow(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void InitPostProcess(); // Function LV-Title_Alternative.LV-Title_Alternative_C.InitPostProcess(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void FinishIdentified(); // Function LV-Title_Alternative.LV-Title_Alternative_C.FinishIdentified(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ResetIdentified(); // Function LV-Title_Alternative.LV-Title_Alternative_C.ResetIdentified(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void UpdateIdentifiedEffect(float DeltaTime); // Function LV-Title_Alternative.LV-Title_Alternative_C.UpdateIdentifiedEffect(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void SequencePlay(struct Unknown Sequence, int32_t StartFrame, int32_t Duration); // Function LV-Title_Alternative.LV-Title_Alternative_C.SequencePlay(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void StopLobbySound(); // Function LV-Title_Alternative.LV-Title_Alternative_C.StopLobbySound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void PlayMoveLobbySound(); // Function LV-Title_Alternative.LV-Title_Alternative_C.PlayMoveLobbySound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void PlayAmbienceSound(); // Function LV-Title_Alternative.LV-Title_Alternative_C.PlayAmbienceSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void PlayBGM(); // Function LV-Title_Alternative.LV-Title_Alternative_C.PlayBGM(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ShowLobbyWidget(char IsConnectedLoginServer); // Function LV-Title_Alternative.LV-Title_Alternative_C.ShowLobbyWidget(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void SetCamera(char bLogin); // Function LV-Title_Alternative.LV-Title_Alternative_C.SetCamera(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void LoadSavedData(); // Function LV-Title_Alternative.LV-Title_Alternative_C.LoadSavedData(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void SaveUserData(); // Function LV-Title_Alternative.LV-Title_Alternative_C.SaveUserData(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void SetTitleWidget(); // Function LV-Title_Alternative.LV-Title_Alternative_C.SetTitleWidget(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void InitData(); // Function LV-Title_Alternative.LV-Title_Alternative_C.InitData(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void BindPartyEvent(); // Function LV-Title_Alternative.LV-Title_Alternative_C.BindPartyEvent(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnPartyInfoChanged(struct Unknown& PartyInfo); // Function LV-Title_Alternative.LV-Title_Alternative_C.OnPartyInfoChanged(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void SetPartyView(char bIsParty); // Function LV-Title_Alternative.LV-Title_Alternative_C.SetPartyView(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void BindPartyInfo(); // Function LV-Title_Alternative.LV-Title_Alternative_C.BindPartyInfo(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void CustomEvent_5(); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_5(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnMatchingSucceeded(); // Function LV-Title_Alternative.LV-Title_Alternative_C.OnMatchingSucceeded(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void BindLoginProcess(); // Function LV-Title_Alternative.LV-Title_Alternative_C.BindLoginProcess(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnTriedToLogin(struct FName UserName, struct FString Password); // Function LV-Title_Alternative.LV-Title_Alternative_C.OnTriedToLogin(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void SetLobbyAkComponent(); // Function LV-Title_Alternative.LV-Title_Alternative_C.SetLobbyAkComponent(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void InitFlow(char IsConnectedLoginServer); // Function LV-Title_Alternative.LV-Title_Alternative_C.InitFlow(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void MoveSceneNotice(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneNotice(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void MoveSceneGammaSettings(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneGammaSettings(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void MoveSceneCompanyLogo(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneCompanyLogo(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void MoveSceneSupportProgram(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneSupportProgram(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void MoveSceneLogin(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneLogin(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void MoveSceneOpeningMovie(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneOpeningMovie(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void MoveSceneTermsConditions(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneTermsConditions(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void MoveSceneCreateCharacter(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneCreateCharacter(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void MoveSceneTutorialMovie(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneTutorialMovie(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ChangedSceneDelegate_Event_1(enum class Unknow SceneType); // Function LV-Title_Alternative.LV-Title_Alternative_C.ChangedSceneDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void CustomEvent_13(); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_13(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ChangedLoginDelegate_Event_1(enum class Unknow LoginFlow); // Function LV-Title_Alternative.LV-Title_Alternative_C.ChangedLoginDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void MoveLoginFlowServicePlatform(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveLoginFlowServicePlatform(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void MoveSceneLobby(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneLobby(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void CustomEvent_15(); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_15(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void MoveLoginFlowWaitingTicket(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveLoginFlowWaitingTicket(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void MoveNextScene(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveNextScene(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void CustomEvent_16(); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_16(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void MoveSceneStartScenarioMode(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneStartScenarioMode(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void MoveScenePlayTutorial(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveScenePlayTutorial(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnFinished_Event_3(); // Function LV-Title_Alternative.LV-Title_Alternative_C.OnFinished_Event_3(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void MoveLoginFlowCatalogue(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveLoginFlowCatalogue(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Event Lobby(); // Function LV-Title_Alternative.LV-Title_Alternative_C.Event Lobby(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Event Armory(); // Function LV-Title_Alternative.LV-Title_Alternative_C.Event Armory(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Event SupplyBox(); // Function LV-Title_Alternative.LV-Title_Alternative_C.Event SupplyBox(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Event Character(); // Function LV-Title_Alternative.LV-Title_Alternative_C.Event Character(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Event Rank(); // Function LV-Title_Alternative.LV-Title_Alternative_C.Event Rank(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnFinished_Event_1(); // Function LV-Title_Alternative.LV-Title_Alternative_C.OnFinished_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnFinished_Event_2(); // Function LV-Title_Alternative.LV-Title_Alternative_C.OnFinished_Event_2(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Event Identified(); // Function LV-Title_Alternative.LV-Title_Alternative_C.Event Identified(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void CustomEvent_2(); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_2(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Event Replay(); // Function LV-Title_Alternative.LV-Title_Alternative_C.Event Replay(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void BindLobbyCharacterMenu(); // Function LV-Title_Alternative.LV-Title_Alternative_C.BindLobbyCharacterMenu(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void EventMoveLobbyCharacterWearable(struct FString WearableMenu); // Function LV-Title_Alternative.LV-Title_Alternative_C.EventMoveLobbyCharacterWearable(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void EventMoveLobbyCharacterAppearance(); // Function LV-Title_Alternative.LV-Title_Alternative_C.EventMoveLobbyCharacterAppearance(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void EventChangeTab(struct FString TabName); // Function LV-Title_Alternative.LV-Title_Alternative_C.EventChangeTab(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Event_Enhance(); // Function LV-Title_Alternative.LV-Title_Alternative_C.Event_Enhance(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Event_Proceeding(); // Function LV-Title_Alternative.LV-Title_Alternative_C.Event_Proceeding(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Event_EnhanceResult(); // Function LV-Title_Alternative.LV-Title_Alternative_C.Event_EnhanceResult(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void EventChangeArmmyScene(struct FString SceneName); // Function LV-Title_Alternative.LV-Title_Alternative_C.EventChangeArmmyScene(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Event_ArmoryEx(); // Function LV-Title_Alternative.LV-Title_Alternative_C.Event_ArmoryEx(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void CustomEvent_1(); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void EventSeasonChangedSubTab(struct FString TabName); // Function LV-Title_Alternative.LV-Title_Alternative_C.EventSeasonChangedSubTab(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void CustomEvent_4(); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_4(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ArmoryUI(); // Function LV-Title_Alternative.LV-Title_Alternative_C.ArmoryUI(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void CustomEvent_6(); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_6(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void CustomEvent_8(struct FString Menu); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_8(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void CustomEvent_7(); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_7(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void CustomEvent_9(struct FString TabName); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_9(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ApplyChangeTab(); // Function LV-Title_Alternative.LV-Title_Alternative_C.ApplyChangeTab(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void CustomEvent_11(struct FString TabName); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_11(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void CustomEvent_12(struct FString SceneName); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_12(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void CustomEvent_10(struct FString Menu); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_10(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void MoveLobbyCharacterAppearanceDelegate_Event_1(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveLobbyCharacterAppearanceDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void MoveCreateCharacterAppearance(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveCreateCharacterAppearance(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void MoveCreateCharacterWearable(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveCreateCharacterWearable(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnChangedArmoryTab(struct FString TabName); // Function LV-Title_Alternative.LV-Title_Alternative_C.OnChangedArmoryTab(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Event_Craft(); // Function LV-Title_Alternative.LV-Title_Alternative_C.Event_Craft(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void CustomEvent(); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Event_CraftResult(); // Function LV-Title_Alternative.LV-Title_Alternative_C.Event_CraftResult(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void SetCurrentArmoryCamera(); // Function LV-Title_Alternative.LV-Title_Alternative_C.SetCurrentArmoryCamera(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void SetArmorySequenceCamera(); // Function LV-Title_Alternative.LV-Title_Alternative_C.SetArmorySequenceCamera(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void InitArmoryTab(); // Function LV-Title_Alternative.LV-Title_Alternative_C.InitArmoryTab(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveBeginPlay(); // Function LV-Title_Alternative.LV-Title_Alternative_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveTick(float DeltaSeconds); // Function LV-Title_Alternative.LV-Title_Alternative_C.ReceiveTick(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveDestroyed(); // Function LV-Title_Alternative.LV-Title_Alternative_C.ReceiveDestroyed(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveEndPlay(char EndPlayReason); // Function LV-Title_Alternative.LV-Title_Alternative_C.ReceiveEndPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ExecuteUbergraph_LV-Title_Alternative(int32_t EntryPoint); // Function LV-Title_Alternative.LV-Title_Alternative_C.ExecuteUbergraph_LV-Title_Alternative(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetSequecePanelColor(int32_t WeaponRarity); // Function LV-Title_Alternative.LV-Title_Alternative_C.SetSequecePanelColor(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ChangeMenu(struct FString Menu); // Function LV-Title_Alternative.LV-Title_Alternative_C.ChangeMenu(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void SetTutorial(); // Function LV-Title_Alternative.LV-Title_Alternative_C.SetTutorial(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void PlayLobbySound(); // Function LV-Title_Alternative.LV-Title_Alternative_C.PlayLobbySound(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void UpdatePartyInfo(); // Function LV-Title_Alternative.LV-Title_Alternative_C.UpdatePartyInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void GetGammaSettings(struct Unknown& GammaWidget); // Function LV-Title_Alternative.LV-Title_Alternative_C.GetGammaSettings(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void GetTitleWdiget(struct Unknown& HUD); // Function LV-Title_Alternative.LV-Title_Alternative_C.GetTitleWdiget(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void StopArmoryAnalyzeSound(); // Function LV-Title_Alternative.LV-Title_Alternative_C.StopArmoryAnalyzeSound(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void PlayArmoryAnalyzeSound(); // Function LV-Title_Alternative.LV-Title_Alternative_C.PlayArmoryAnalyzeSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void StopArmoryAmbienceSound(); // Function LV-Title_Alternative.LV-Title_Alternative_C.StopArmoryAmbienceSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void PlayArmoryAmbienceSound(); // Function LV-Title_Alternative.LV-Title_Alternative_C.PlayArmoryAmbienceSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void StopSequence(); // Function LV-Title_Alternative.LV-Title_Alternative_C.StopSequence(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void SetOutlineGlow(float Value); // Function LV-Title_Alternative.LV-Title_Alternative_C.SetOutlineGlow(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void InitPostProcess(); // Function LV-Title_Alternative.LV-Title_Alternative_C.InitPostProcess(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void FinishIdentified(); // Function LV-Title_Alternative.LV-Title_Alternative_C.FinishIdentified(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ResetIdentified(); // Function LV-Title_Alternative.LV-Title_Alternative_C.ResetIdentified(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void UpdateIdentifiedEffect(float DeltaTime); // Function LV-Title_Alternative.LV-Title_Alternative_C.UpdateIdentifiedEffect(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void SequencePlay(struct Unknown Sequence, int32_t StartFrame, int32_t Duration); // Function LV-Title_Alternative.LV-Title_Alternative_C.SequencePlay(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void StopLobbySound(); // Function LV-Title_Alternative.LV-Title_Alternative_C.StopLobbySound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void PlayMoveLobbySound(); // Function LV-Title_Alternative.LV-Title_Alternative_C.PlayMoveLobbySound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void PlayAmbienceSound(); // Function LV-Title_Alternative.LV-Title_Alternative_C.PlayAmbienceSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void PlayBGM(); // Function LV-Title_Alternative.LV-Title_Alternative_C.PlayBGM(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ShowLobbyWidget(char IsConnectedLoginServer); // Function LV-Title_Alternative.LV-Title_Alternative_C.ShowLobbyWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void SetCamera(char bLogin); // Function LV-Title_Alternative.LV-Title_Alternative_C.SetCamera(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void LoadSavedData(); // Function LV-Title_Alternative.LV-Title_Alternative_C.LoadSavedData(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void SaveUserData(); // Function LV-Title_Alternative.LV-Title_Alternative_C.SaveUserData(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void SetTitleWidget(); // Function LV-Title_Alternative.LV-Title_Alternative_C.SetTitleWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void InitData(); // Function LV-Title_Alternative.LV-Title_Alternative_C.InitData(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void BindPartyEvent(); // Function LV-Title_Alternative.LV-Title_Alternative_C.BindPartyEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnPartyInfoChanged(struct Unknown& PartyInfo); // Function LV-Title_Alternative.LV-Title_Alternative_C.OnPartyInfoChanged(HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void SetPartyView(char bIsParty); // Function LV-Title_Alternative.LV-Title_Alternative_C.SetPartyView(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void BindPartyInfo(); // Function LV-Title_Alternative.LV-Title_Alternative_C.BindPartyInfo(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void CustomEvent_5(); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_5(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnMatchingSucceeded(); // Function LV-Title_Alternative.LV-Title_Alternative_C.OnMatchingSucceeded(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void BindLoginProcess(); // Function LV-Title_Alternative.LV-Title_Alternative_C.BindLoginProcess(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnTriedToLogin(struct FName UserName, struct FString Password); // Function LV-Title_Alternative.LV-Title_Alternative_C.OnTriedToLogin(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void SetLobbyAkComponent(); // Function LV-Title_Alternative.LV-Title_Alternative_C.SetLobbyAkComponent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void InitFlow(char IsConnectedLoginServer); // Function LV-Title_Alternative.LV-Title_Alternative_C.InitFlow(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void MoveSceneNotice(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneNotice(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void MoveSceneGammaSettings(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneGammaSettings(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void MoveSceneCompanyLogo(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneCompanyLogo(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void MoveSceneSupportProgram(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneSupportProgram(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void MoveSceneLogin(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneLogin(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void MoveSceneOpeningMovie(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneOpeningMovie(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void MoveSceneTermsConditions(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneTermsConditions(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void MoveSceneCreateCharacter(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneCreateCharacter(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void MoveSceneTutorialMovie(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneTutorialMovie(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ChangedSceneDelegate_Event_1(enum class Unknow SceneType); // Function LV-Title_Alternative.LV-Title_Alternative_C.ChangedSceneDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void CustomEvent_13(); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_13(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ChangedLoginDelegate_Event_1(enum class Unknow LoginFlow); // Function LV-Title_Alternative.LV-Title_Alternative_C.ChangedLoginDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void MoveLoginFlowServicePlatform(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveLoginFlowServicePlatform(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void MoveSceneLobby(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneLobby(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void CustomEvent_15(); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_15(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void MoveLoginFlowWaitingTicket(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveLoginFlowWaitingTicket(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void MoveNextScene(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveNextScene(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void CustomEvent_16(); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_16(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void MoveSceneStartScenarioMode(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveSceneStartScenarioMode(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void MoveScenePlayTutorial(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveScenePlayTutorial(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnFinished_Event_3(); // Function LV-Title_Alternative.LV-Title_Alternative_C.OnFinished_Event_3(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void MoveLoginFlowCatalogue(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveLoginFlowCatalogue(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Event Lobby(); // Function LV-Title_Alternative.LV-Title_Alternative_C.Event Lobby(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Event Armory(); // Function LV-Title_Alternative.LV-Title_Alternative_C.Event Armory(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Event SupplyBox(); // Function LV-Title_Alternative.LV-Title_Alternative_C.Event SupplyBox(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Event Character(); // Function LV-Title_Alternative.LV-Title_Alternative_C.Event Character(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Event Rank(); // Function LV-Title_Alternative.LV-Title_Alternative_C.Event Rank(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnFinished_Event_1(); // Function LV-Title_Alternative.LV-Title_Alternative_C.OnFinished_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnFinished_Event_2(); // Function LV-Title_Alternative.LV-Title_Alternative_C.OnFinished_Event_2(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Event Identified(); // Function LV-Title_Alternative.LV-Title_Alternative_C.Event Identified(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void CustomEvent_2(); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_2(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Event Replay(); // Function LV-Title_Alternative.LV-Title_Alternative_C.Event Replay(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void BindLobbyCharacterMenu(); // Function LV-Title_Alternative.LV-Title_Alternative_C.BindLobbyCharacterMenu(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void EventMoveLobbyCharacterWearable(struct FString WearableMenu); // Function LV-Title_Alternative.LV-Title_Alternative_C.EventMoveLobbyCharacterWearable(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void EventMoveLobbyCharacterAppearance(); // Function LV-Title_Alternative.LV-Title_Alternative_C.EventMoveLobbyCharacterAppearance(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void EventChangeTab(struct FString TabName); // Function LV-Title_Alternative.LV-Title_Alternative_C.EventChangeTab(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Event_Enhance(); // Function LV-Title_Alternative.LV-Title_Alternative_C.Event_Enhance(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Event_Proceeding(); // Function LV-Title_Alternative.LV-Title_Alternative_C.Event_Proceeding(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Event_EnhanceResult(); // Function LV-Title_Alternative.LV-Title_Alternative_C.Event_EnhanceResult(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void EventChangeArmmyScene(struct FString SceneName); // Function LV-Title_Alternative.LV-Title_Alternative_C.EventChangeArmmyScene(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Event_ArmoryEx(); // Function LV-Title_Alternative.LV-Title_Alternative_C.Event_ArmoryEx(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void CustomEvent_1(); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void EventSeasonChangedSubTab(struct FString TabName); // Function LV-Title_Alternative.LV-Title_Alternative_C.EventSeasonChangedSubTab(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void CustomEvent_4(); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_4(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ArmoryUI(); // Function LV-Title_Alternative.LV-Title_Alternative_C.ArmoryUI(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void CustomEvent_6(); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_6(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void CustomEvent_8(struct FString Menu); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_8(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void CustomEvent_7(); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_7(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void CustomEvent_9(struct FString TabName); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_9(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ApplyChangeTab(); // Function LV-Title_Alternative.LV-Title_Alternative_C.ApplyChangeTab(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void CustomEvent_11(struct FString TabName); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_11(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void CustomEvent_12(struct FString SceneName); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_12(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void CustomEvent_10(struct FString Menu); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent_10(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void MoveLobbyCharacterAppearanceDelegate_Event_1(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveLobbyCharacterAppearanceDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void MoveCreateCharacterAppearance(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveCreateCharacterAppearance(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void MoveCreateCharacterWearable(); // Function LV-Title_Alternative.LV-Title_Alternative_C.MoveCreateCharacterWearable(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnChangedArmoryTab(struct FString TabName); // Function LV-Title_Alternative.LV-Title_Alternative_C.OnChangedArmoryTab(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Event_Craft(); // Function LV-Title_Alternative.LV-Title_Alternative_C.Event_Craft(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void CustomEvent(); // Function LV-Title_Alternative.LV-Title_Alternative_C.CustomEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Event_CraftResult(); // Function LV-Title_Alternative.LV-Title_Alternative_C.Event_CraftResult(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void SetCurrentArmoryCamera(); // Function LV-Title_Alternative.LV-Title_Alternative_C.SetCurrentArmoryCamera(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void SetArmorySequenceCamera(); // Function LV-Title_Alternative.LV-Title_Alternative_C.SetArmorySequenceCamera(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void InitArmoryTab(); // Function LV-Title_Alternative.LV-Title_Alternative_C.InitArmoryTab(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveBeginPlay(); // Function LV-Title_Alternative.LV-Title_Alternative_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveTick(float DeltaSeconds); // Function LV-Title_Alternative.LV-Title_Alternative_C.ReceiveTick(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveDestroyed(); // Function LV-Title_Alternative.LV-Title_Alternative_C.ReceiveDestroyed(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveEndPlay(char EndPlayReason); // Function LV-Title_Alternative.LV-Title_Alternative_C.ReceiveEndPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ExecuteUbergraph_LV-Title_Alternative(int32_t EntryPoint); // Function LV-Title_Alternative.LV-Title_Alternative_C.ExecuteUbergraph_LV-Title_Alternative(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
 };
 
 // Function LV-Title_Alternative.LV-Title_Alternative_C.SetSequecePanelColor

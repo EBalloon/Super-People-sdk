@@ -218,30 +218,30 @@ public:
 	char bDelayedUpdate : 0; // 0x181 (1)
 	struct Unknown AudioWrapper; // 0x1F8 (8)
 
-	void UpdateWholeDataModelFromStruct(struct TFieldPath<FUnknown> Arg); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.UpdateWholeDataModelFromStruct(Final|Native|Public|BlueprintCallable|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1116670>
-	void UpdateWholeDataModelFromObject(struct Unknown Model); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.UpdateWholeDataModelFromObject(Final|Native|Public|BlueprintCallable|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11199E0>
-	void TriggerJSEvent(struct FString Name, struct Unknown eventData); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.TriggerJSEvent(Final|Native|Public|BlueprintCallable|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11196E0>
-	void SynchronizeModels(); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.SynchronizeModels(Final|Native|Public|BlueprintCallable|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11196A0>
-	void ShowPaintRects(char Show); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.ShowPaintRects(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1119610>
-	void SetOffscreenCanvasRendering(char State); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.SetOffscreenCanvasRendering(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11192F0>
-	void SetClickThroughAlphaThreshold(float threshold); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.SetClickThroughAlphaThreshold(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1119060>
-	void Resize(int32_t Width, int32_t Height); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.Resize(Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1118FA0>
-	void Reload(); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.Reload(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1118F80>
-	void Redraw(); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.Redraw(Final|Native|Public|BlueprintCallable|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1118F60>
-	void Load(struct FString Path); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.Load(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1118EC0>
-	char IsTransparent(); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.IsTransparent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1118E90>
-	char IsReadyToCreateView(); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.IsReadyToCreateView(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1118E60>
-	char IsReadyForBindings(); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.IsReadyForBindings(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1118E30>
-	char IsDocumentReady(); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.IsDocumentReady(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1118DD0>
-	char HasRequestedView(); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.HasRequestedView(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1118BF0>
-	float GetClickThroughAlphaThreshold(); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.GetClickThroughAlphaThreshold(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1118B90>
-	void EndDebugFrameSave(); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.EndDebugFrameSave(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1118B70>
-	void EnableDelayedUpdate(char bEnabled); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.EnableDelayedUpdate(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1118AE0>
-	void DebugSaveNextFrame(); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.DebugSaveNextFrame(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1118AC0>
-	struct Unknown CreateJSEvent(); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.CreateJSEvent(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1118A10>
-	void CreateDataModelFromStruct(struct FString Name, struct TFieldPath<FUnknown> Arg); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.CreateDataModelFromStruct(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1116400>
-	void CreateDataModelFromObject(struct FString Name, struct Unknown Model); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.CreateDataModelFromObject(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1118930>
-	void BeginDebugFrameSave(); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.BeginDebugFrameSave(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1118910>
+	void UpdateWholeDataModelFromStruct(struct TFieldPath<FUnknown> Arg); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.UpdateWholeDataModelFromStruct(Final|Native|Public|BlueprintCallable|Const) // <Game_BE.exe+0x1116670>
+	void UpdateWholeDataModelFromObject(struct Unknown Model); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.UpdateWholeDataModelFromObject(Final|Native|Public|BlueprintCallable|Const) // <Game_BE.exe+0x11199E0>
+	void TriggerJSEvent(struct FString Name, struct Unknown eventData); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.TriggerJSEvent(Final|Native|Public|BlueprintCallable|Const) // <Game_BE.exe+0x11196E0>
+	void SynchronizeModels(); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.SynchronizeModels(Final|Native|Public|BlueprintCallable|Const) // <Game_BE.exe+0x11196A0>
+	void ShowPaintRects(char Show); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.ShowPaintRects(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1119610>
+	void SetOffscreenCanvasRendering(char State); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.SetOffscreenCanvasRendering(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x11192F0>
+	void SetClickThroughAlphaThreshold(float threshold); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.SetClickThroughAlphaThreshold(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1119060>
+	void Resize(int32_t Width, int32_t Height); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.Resize(Native|Public|BlueprintCallable) // <Game_BE.exe+0x1118FA0>
+	void Reload(); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.Reload(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1118F80>
+	void Redraw(); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.Redraw(Final|Native|Public|BlueprintCallable|Const) // <Game_BE.exe+0x1118F60>
+	void Load(struct FString Path); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.Load(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1118EC0>
+	char IsTransparent(); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.IsTransparent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1118E90>
+	char IsReadyToCreateView(); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.IsReadyToCreateView(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1118E60>
+	char IsReadyForBindings(); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.IsReadyForBindings(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1118E30>
+	char IsDocumentReady(); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.IsDocumentReady(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1118DD0>
+	char HasRequestedView(); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.HasRequestedView(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1118BF0>
+	float GetClickThroughAlphaThreshold(); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.GetClickThroughAlphaThreshold(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1118B90>
+	void EndDebugFrameSave(); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.EndDebugFrameSave(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1118B70>
+	void EnableDelayedUpdate(char bEnabled); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.EnableDelayedUpdate(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1118AE0>
+	void DebugSaveNextFrame(); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.DebugSaveNextFrame(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1118AC0>
+	struct Unknown CreateJSEvent(); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.CreateJSEvent(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1118A10>
+	void CreateDataModelFromStruct(struct FString Name, struct TFieldPath<FUnknown> Arg); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.CreateDataModelFromStruct(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1116400>
+	void CreateDataModelFromObject(struct FString Name, struct Unknown Model); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.CreateDataModelFromObject(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1118930>
+	void BeginDebugFrameSave(); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.BeginDebugFrameSave(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1118910>
 };
 
 // Class CoherentUIGTPlugin.CoherentUIGTComponent
@@ -264,8 +264,8 @@ public:
 
 	struct Unknown CoherentUIGTHUD; // 0x3F0 (8)
 
-	void SetupUIGTView(struct FString PageUrl, char bIsTransparent, float ClickThroughAlphaThreshold, float AnimationFrameDefer, char bDelayedUpdate); // Function CoherentUIGTPlugin.CoherentUIGTGameHUD.SetupUIGTView(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1119460>
-	char HasSetupUIGTView(); // Function CoherentUIGTPlugin.CoherentUIGTGameHUD.HasSetupUIGTView(Final|RequiredAPI|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1118C20>
+	void SetupUIGTView(struct FString PageUrl, char bIsTransparent, float ClickThroughAlphaThreshold, float AnimationFrameDefer, char bDelayedUpdate); // Function CoherentUIGTPlugin.CoherentUIGTGameHUD.SetupUIGTView(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1119460>
+	char HasSetupUIGTView(); // Function CoherentUIGTPlugin.CoherentUIGTGameHUD.HasSetupUIGTView(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1118C20>
 };
 
 // Class CoherentUIGTPlugin.CoherentUIGTHUD
@@ -288,17 +288,17 @@ public:
 	struct FMulticastInlineDelegate OnCoherentUIGTInputActorKeyDown; // 0x320 (16)
 	struct FMulticastInlineDelegate OnCoherentUIGTInputActorKeyUp; // 0x330 (16)
 
-	void ToggleCoherentUIGTInputFocus(); // Function CoherentUIGTPlugin.CoherentUIGTInputActor.ToggleCoherentUIGTInputFocus(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11196C0>
-	void SetLineTraceMode(char Mode); // Function CoherentUIGTPlugin.CoherentUIGTInputActor.SetLineTraceMode(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1119270>
-	void SetInputPropagationBehaviour(char Propagation); // Function CoherentUIGTPlugin.CoherentUIGTInputActor.SetInputPropagationBehaviour(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11191F0>
-	void SetCoherentUIGTViewFocus(struct Unknown NewFocusedView); // Function CoherentUIGTPlugin.CoherentUIGTInputActor.SetCoherentUIGTViewFocus(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1119170>
-	void SetCoherentUIGTInputFocus(char FocusUI); // Function CoherentUIGTPlugin.CoherentUIGTInputActor.SetCoherentUIGTInputFocus(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11190E0>
-	char IsJoystickInputWhileUIGTIsFocusedAllowed_DEPRECATED(); // Function CoherentUIGTPlugin.CoherentUIGTInputActor.IsJoystickInputWhileUIGTIsFocusedAllowed_DEPRECATED(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1118E00>
-	char IsCoherentUIGTFocused(); // Function CoherentUIGTPlugin.CoherentUIGTInputActor.IsCoherentUIGTFocused(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1118DA0>
-	void Initialize(char CollisionChannel, char AddressMode, char RaycastQuality, int32_t UVChannel); // Function CoherentUIGTPlugin.CoherentUIGTInputActor.Initialize(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1118C50>
-	char GetInputPropagationBehaviour(); // Function CoherentUIGTPlugin.CoherentUIGTInputActor.GetInputPropagationBehaviour(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1118BC0>
-	void AlwaysAcceptMouseInput(char bAccept); // Function CoherentUIGTPlugin.CoherentUIGTInputActor.AlwaysAcceptMouseInput(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1118880>
-	void AllowJoystickInputWhileUIGTIsFocused_DEPRECATED(char bAllow); // Function CoherentUIGTPlugin.CoherentUIGTInputActor.AllowJoystickInputWhileUIGTIsFocused_DEPRECATED(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x11187F0>
+	void ToggleCoherentUIGTInputFocus(); // Function CoherentUIGTPlugin.CoherentUIGTInputActor.ToggleCoherentUIGTInputFocus(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x11196C0>
+	void SetLineTraceMode(char Mode); // Function CoherentUIGTPlugin.CoherentUIGTInputActor.SetLineTraceMode(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1119270>
+	void SetInputPropagationBehaviour(char Propagation); // Function CoherentUIGTPlugin.CoherentUIGTInputActor.SetInputPropagationBehaviour(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x11191F0>
+	void SetCoherentUIGTViewFocus(struct Unknown NewFocusedView); // Function CoherentUIGTPlugin.CoherentUIGTInputActor.SetCoherentUIGTViewFocus(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1119170>
+	void SetCoherentUIGTInputFocus(char FocusUI); // Function CoherentUIGTPlugin.CoherentUIGTInputActor.SetCoherentUIGTInputFocus(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x11190E0>
+	char IsJoystickInputWhileUIGTIsFocusedAllowed_DEPRECATED(); // Function CoherentUIGTPlugin.CoherentUIGTInputActor.IsJoystickInputWhileUIGTIsFocusedAllowed_DEPRECATED(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1118E00>
+	char IsCoherentUIGTFocused(); // Function CoherentUIGTPlugin.CoherentUIGTInputActor.IsCoherentUIGTFocused(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1118DA0>
+	void Initialize(char CollisionChannel, char AddressMode, char RaycastQuality, int32_t UVChannel); // Function CoherentUIGTPlugin.CoherentUIGTInputActor.Initialize(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1118C50>
+	char GetInputPropagationBehaviour(); // Function CoherentUIGTPlugin.CoherentUIGTInputActor.GetInputPropagationBehaviour(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1118BC0>
+	void AlwaysAcceptMouseInput(char bAccept); // Function CoherentUIGTPlugin.CoherentUIGTInputActor.AlwaysAcceptMouseInput(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1118880>
+	void AllowJoystickInputWhileUIGTIsFocused_DEPRECATED(char bAllow); // Function CoherentUIGTPlugin.CoherentUIGTInputActor.AllowJoystickInputWhileUIGTIsFocused_DEPRECATED(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x11187F0>
 };
 
 // Class CoherentUIGTPlugin.CoherentUIGTJSEvent
@@ -308,16 +308,16 @@ public:
 
 	struct TArray<Unknown> StructTypes; // 0xA8 (16)
 
-	void AddText(struct FText& Text); // Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddText(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111C490>
-	void AddStructArg(struct TFieldPath<FUnknown> Arg); // Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddStructArg(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1116350>
-	void AddString(struct FString Str); // Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddString(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111C3F0>
-	void AddObject(struct Unknown Object); // Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddObject(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111C370>
-	void AddName(struct FName& Name); // Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddName(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111C2E0>
-	void AddInt32(int32_t integer); // Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddInt32(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111C260>
-	void AddFloat(float fl); // Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddFloat(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111C1E0>
-	void AddByte(enum class None Byte); // Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddByte(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111C160>
-	void AddBool(char B); // Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddBool(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111C0D0>
-	void AddArray(struct TArray<Unknown>& Array); // Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddArray(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1115FA0>
+	void AddText(struct FText& Text); // Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddText(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x111C490>
+	void AddStructArg(struct TFieldPath<FUnknown> Arg); // Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddStructArg(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1116350>
+	void AddString(struct FString Str); // Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddString(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111C3F0>
+	void AddObject(struct Unknown Object); // Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddObject(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111C370>
+	void AddName(struct FName& Name); // Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddName(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x111C2E0>
+	void AddInt32(int32_t integer); // Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddInt32(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111C260>
+	void AddFloat(float fl); // Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddFloat(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111C1E0>
+	void AddByte(enum class None Byte); // Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddByte(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111C160>
+	void AddBool(char B); // Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddBool(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111C0D0>
+	void AddArray(struct TArray<Unknown>& Array); // Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddArray(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1115FA0>
 };
 
 // Class CoherentUIGTPlugin.CoherentUIGTJSPayload
@@ -327,11 +327,11 @@ public:
 
 	struct FString EventName; // 0x28 (16)
 
-	void ReadObject(int32_t Index, struct Unknown Object); // Function CoherentUIGTPlugin.CoherentUIGTJSPayload.ReadObject(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111CDE0>
-	struct FString GetString(int32_t Index); // Function CoherentUIGTPlugin.CoherentUIGTJSPayload.GetString(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111C9E0>
-	float GetNumber(int32_t Index); // Function CoherentUIGTPlugin.CoherentUIGTJSPayload.GetNumber(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111C920>
-	int32_t GetInt32(int32_t Index); // Function CoherentUIGTPlugin.CoherentUIGTJSPayload.GetInt32(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111C890>
-	char GetBool(int32_t Index); // Function CoherentUIGTPlugin.CoherentUIGTJSPayload.GetBool(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111C730>
+	void ReadObject(int32_t Index, struct Unknown Object); // Function CoherentUIGTPlugin.CoherentUIGTJSPayload.ReadObject(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111CDE0>
+	struct FString GetString(int32_t Index); // Function CoherentUIGTPlugin.CoherentUIGTJSPayload.GetString(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111C9E0>
+	float GetNumber(int32_t Index); // Function CoherentUIGTPlugin.CoherentUIGTJSPayload.GetNumber(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111C920>
+	int32_t GetInt32(int32_t Index); // Function CoherentUIGTPlugin.CoherentUIGTJSPayload.GetInt32(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111C890>
+	char GetBool(int32_t Index); // Function CoherentUIGTPlugin.CoherentUIGTJSPayload.GetBool(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111C730>
 };
 
 // Class CoherentUIGTPlugin.CoherentUIGTLiveView
@@ -342,7 +342,7 @@ public:
 	struct FString LinkName; // 0xB0 (16)
 	struct Unknown Texture; // 0xC0 (8)
 
-	void OnLiveViewSizeRequest(struct Unknown baseComponent, struct FString Name, int32_t& Width, int32_t& Height); // Function CoherentUIGTPlugin.CoherentUIGTLiveView.OnLiveViewSizeRequest(Final|Native|Public|HasOutParms|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111CC50>
+	void OnLiveViewSizeRequest(struct Unknown baseComponent, struct FString Name, int32_t& Width, int32_t& Height); // Function CoherentUIGTPlugin.CoherentUIGTLiveView.OnLiveViewSizeRequest(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x111CC50>
 };
 
 // Class CoherentUIGTPlugin.CoherentUIGTSettings
@@ -412,45 +412,45 @@ public:
 	char OffscreenCanvasRendering : 0; // 0x35C (1)
 	char Transparent : 0; // 0x35D (1)
 
-	void UpdateWholeDataModelFromStruct(struct TFieldPath<FUnknown> Arg); // Function CoherentUIGTPlugin.CoherentUIGTWidget.UpdateWholeDataModelFromStruct(Final|Native|Public|BlueprintCallable|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1116740>
-	void UpdateWholeDataModelFromObject(struct Unknown Model); // Function CoherentUIGTPlugin.CoherentUIGTWidget.UpdateWholeDataModelFromObject(Final|Native|Public|BlueprintCallable|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111D550>
-	void TriggerJSEvent(struct FString Name, struct Unknown eventData); // Function CoherentUIGTPlugin.CoherentUIGTWidget.TriggerJSEvent(Final|Native|Public|BlueprintCallable|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111D470>
-	void SynchronizeModels(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.SynchronizeModels(Final|Native|Public|BlueprintCallable|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111D450>
-	void ShowPaintRects(char Show); // Function CoherentUIGTPlugin.CoherentUIGTWidget.ShowPaintRects(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111D3C0>
-	void SetSkipHittestInputGroupEmpty(char bState); // Function CoherentUIGTPlugin.CoherentUIGTWidget.SetSkipHittestInputGroupEmpty(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111D330>
-	void SetRender(char bState); // Function CoherentUIGTPlugin.CoherentUIGTWidget.SetRender(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111D2A0>
-	void SetRefreshTime(float Time); // Function CoherentUIGTPlugin.CoherentUIGTWidget.SetRefreshTime(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111D220>
-	void SetReceiveInput(char Input); // Function CoherentUIGTPlugin.CoherentUIGTWidget.SetReceiveInput(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111D190>
-	void SetPreviewKeyEventInherit(char bState); // Function CoherentUIGTPlugin.CoherentUIGTWidget.SetPreviewKeyEventInherit(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111D100>
-	void SetOffscreenCanvasRendering(char State); // Function CoherentUIGTPlugin.CoherentUIGTWidget.SetOffscreenCanvasRendering(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111D070>
-	void SetInputPropagationBehaviour(char Propagation); // Function CoherentUIGTPlugin.CoherentUIGTWidget.SetInputPropagationBehaviour(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111CFF0>
-	void SetHideCursorDuringCapture(char bState); // Function CoherentUIGTPlugin.CoherentUIGTWidget.SetHideCursorDuringCapture(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111CF60>
-	void SetClickThroughAlphaThreshold(float threshold); // Function CoherentUIGTPlugin.CoherentUIGTWidget.SetClickThroughAlphaThreshold(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111CEE0>
-	void Reload(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.Reload(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111CEC0>
-	void Redraw(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.Redraw(Final|Native|Public|BlueprintCallable|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111CEA0>
-	void MouseEventDelegate__DelegateSignature(struct Unknown& MouseEvent); // DelegateFunction CoherentUIGTPlugin.CoherentUIGTWidget.MouseEventDelegate__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Load(struct FString Path); // Function CoherentUIGTPlugin.CoherentUIGTWidget.Load(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111CBB0>
-	void KeyUpDelegate__DelegateSignature(struct Unknown& Key); // DelegateFunction CoherentUIGTPlugin.CoherentUIGTWidget.KeyUpDelegate__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void KeyDownDelegate__DelegateSignature(struct Unknown& Key); // DelegateFunction CoherentUIGTPlugin.CoherentUIGTWidget.KeyDownDelegate__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	char IsTransparent(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.IsTransparent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111CB80>
-	char IsReadyToCreateView(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.IsReadyToCreateView(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1118E60>
-	char IsReadyForBindings(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.IsReadyForBindings(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111CB50>
-	char IsErrorPage(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.IsErrorPage(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111CB20>
-	char IsDocumentReady(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.IsDocumentReady(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111CAF0>
-	char HasRequestedView(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.HasRequestedView(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111CAC0>
-	struct Unknown GetRenderTexture(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.GetRenderTexture(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111C9B0>
-	char GetInputPropagationBehaviour(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.GetInputPropagationBehaviour(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111C860>
-	struct Unknown GetDPIScaleSize(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.GetDPIScaleSize(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111C820>
-	float GetDPIScaleBasedOnSize(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.GetDPIScaleBasedOnSize(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111C7F0>
-	float GetClickThroughAlphaThreshold(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.GetClickThroughAlphaThreshold(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111C7C0>
-	void FinishLoadSkip(char bState); // Function CoherentUIGTPlugin.CoherentUIGTWidget.FinishLoadSkip(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111C6A0>
-	void EndDebugFrameSave(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.EndDebugFrameSave(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111C680>
-	void DebugSaveNextFrame(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.DebugSaveNextFrame(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111C660>
-	struct Unknown CreateJSEvent(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.CreateJSEvent(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1118A10>
-	void CreateDataModelFromStruct(struct FString Name, struct TFieldPath<FUnknown> Arg); // Function CoherentUIGTPlugin.CoherentUIGTWidget.CreateDataModelFromStruct(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1116520>
-	void CreateDataModelFromObject(struct FString Name, struct Unknown Model); // Function CoherentUIGTPlugin.CoherentUIGTWidget.CreateDataModelFromObject(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111C580>
-	void BeginDebugFrameSave(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.BeginDebugFrameSave(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x111C560>
-	void AKAudioEventDelegate__DelegateSignature(struct FString EventName); // DelegateFunction CoherentUIGTPlugin.CoherentUIGTWidget.AKAudioEventDelegate__DelegateSignature(MulticastDelegate|Public|Delegate) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void UpdateWholeDataModelFromStruct(struct TFieldPath<FUnknown> Arg); // Function CoherentUIGTPlugin.CoherentUIGTWidget.UpdateWholeDataModelFromStruct(Final|Native|Public|BlueprintCallable|Const) // <Game_BE.exe+0x1116740>
+	void UpdateWholeDataModelFromObject(struct Unknown Model); // Function CoherentUIGTPlugin.CoherentUIGTWidget.UpdateWholeDataModelFromObject(Final|Native|Public|BlueprintCallable|Const) // <Game_BE.exe+0x111D550>
+	void TriggerJSEvent(struct FString Name, struct Unknown eventData); // Function CoherentUIGTPlugin.CoherentUIGTWidget.TriggerJSEvent(Final|Native|Public|BlueprintCallable|Const) // <Game_BE.exe+0x111D470>
+	void SynchronizeModels(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.SynchronizeModels(Final|Native|Public|BlueprintCallable|Const) // <Game_BE.exe+0x111D450>
+	void ShowPaintRects(char Show); // Function CoherentUIGTPlugin.CoherentUIGTWidget.ShowPaintRects(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111D3C0>
+	void SetSkipHittestInputGroupEmpty(char bState); // Function CoherentUIGTPlugin.CoherentUIGTWidget.SetSkipHittestInputGroupEmpty(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111D330>
+	void SetRender(char bState); // Function CoherentUIGTPlugin.CoherentUIGTWidget.SetRender(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111D2A0>
+	void SetRefreshTime(float Time); // Function CoherentUIGTPlugin.CoherentUIGTWidget.SetRefreshTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111D220>
+	void SetReceiveInput(char Input); // Function CoherentUIGTPlugin.CoherentUIGTWidget.SetReceiveInput(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111D190>
+	void SetPreviewKeyEventInherit(char bState); // Function CoherentUIGTPlugin.CoherentUIGTWidget.SetPreviewKeyEventInherit(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111D100>
+	void SetOffscreenCanvasRendering(char State); // Function CoherentUIGTPlugin.CoherentUIGTWidget.SetOffscreenCanvasRendering(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111D070>
+	void SetInputPropagationBehaviour(char Propagation); // Function CoherentUIGTPlugin.CoherentUIGTWidget.SetInputPropagationBehaviour(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111CFF0>
+	void SetHideCursorDuringCapture(char bState); // Function CoherentUIGTPlugin.CoherentUIGTWidget.SetHideCursorDuringCapture(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111CF60>
+	void SetClickThroughAlphaThreshold(float threshold); // Function CoherentUIGTPlugin.CoherentUIGTWidget.SetClickThroughAlphaThreshold(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111CEE0>
+	void Reload(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.Reload(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111CEC0>
+	void Redraw(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.Redraw(Final|Native|Public|BlueprintCallable|Const) // <Game_BE.exe+0x111CEA0>
+	void MouseEventDelegate__DelegateSignature(struct Unknown& MouseEvent); // DelegateFunction CoherentUIGTPlugin.CoherentUIGTWidget.MouseEventDelegate__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <Game_BE.exe+0x2B812B0>
+	void Load(struct FString Path); // Function CoherentUIGTPlugin.CoherentUIGTWidget.Load(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111CBB0>
+	void KeyUpDelegate__DelegateSignature(struct Unknown& Key); // DelegateFunction CoherentUIGTPlugin.CoherentUIGTWidget.KeyUpDelegate__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <Game_BE.exe+0x2B812B0>
+	void KeyDownDelegate__DelegateSignature(struct Unknown& Key); // DelegateFunction CoherentUIGTPlugin.CoherentUIGTWidget.KeyDownDelegate__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <Game_BE.exe+0x2B812B0>
+	char IsTransparent(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.IsTransparent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x111CB80>
+	char IsReadyToCreateView(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.IsReadyToCreateView(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1118E60>
+	char IsReadyForBindings(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.IsReadyForBindings(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x111CB50>
+	char IsErrorPage(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.IsErrorPage(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111CB20>
+	char IsDocumentReady(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.IsDocumentReady(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x111CAF0>
+	char HasRequestedView(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.HasRequestedView(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x111CAC0>
+	struct Unknown GetRenderTexture(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.GetRenderTexture(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x111C9B0>
+	char GetInputPropagationBehaviour(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.GetInputPropagationBehaviour(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x111C860>
+	struct Unknown GetDPIScaleSize(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.GetDPIScaleSize(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x111C820>
+	float GetDPIScaleBasedOnSize(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.GetDPIScaleBasedOnSize(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x111C7F0>
+	float GetClickThroughAlphaThreshold(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.GetClickThroughAlphaThreshold(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x111C7C0>
+	void FinishLoadSkip(char bState); // Function CoherentUIGTPlugin.CoherentUIGTWidget.FinishLoadSkip(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111C6A0>
+	void EndDebugFrameSave(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.EndDebugFrameSave(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111C680>
+	void DebugSaveNextFrame(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.DebugSaveNextFrame(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111C660>
+	struct Unknown CreateJSEvent(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.CreateJSEvent(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1118A10>
+	void CreateDataModelFromStruct(struct FString Name, struct TFieldPath<FUnknown> Arg); // Function CoherentUIGTPlugin.CoherentUIGTWidget.CreateDataModelFromStruct(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1116520>
+	void CreateDataModelFromObject(struct FString Name, struct Unknown Model); // Function CoherentUIGTPlugin.CoherentUIGTWidget.CreateDataModelFromObject(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111C580>
+	void BeginDebugFrameSave(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.BeginDebugFrameSave(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111C560>
+	void AKAudioEventDelegate__DelegateSignature(struct FString EventName); // DelegateFunction CoherentUIGTPlugin.CoherentUIGTWidget.AKAudioEventDelegate__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B812B0>
 };
 
 // ScriptStruct CoherentUIGTPlugin.Coh_MouseEventData

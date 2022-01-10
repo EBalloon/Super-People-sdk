@@ -22,18 +22,18 @@ public:
 	char IsReportAbleDateTime : 0; // 0x2C8 (1)
 	struct Unknown TargetPlayerState; // 0x2D0 (8)
 
-	void ReportSended(); // Function UW-SpectatingTargetInfo.UW-SpectatingTargetInfo_C.ReportSended(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Check Report Enable From User Name(); // Function UW-SpectatingTargetInfo.UW-SpectatingTargetInfo_C.Check Report Enable From User Name(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void SetTargetPlayerInfo(struct Unknown PlayerState); // Function UW-SpectatingTargetInfo.UW-SpectatingTargetInfo_C.SetTargetPlayerInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnLoaded_4A4EF93A4D64362A89D43DA6D9BD2749(struct Unknown Loaded); // Function UW-SpectatingTargetInfo.UW-SpectatingTargetInfo_C.OnLoaded_4A4EF93A4D64362A89D43DA6D9BD2749(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void AsyncClassIcon(struct Unknown Image); // Function UW-SpectatingTargetInfo.UW-SpectatingTargetInfo_C.AsyncClassIcon(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void BndEvt__Button_Report_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-SpectatingTargetInfo.UW-SpectatingTargetInfo_C.BndEvt__Button_Report_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Construct(); // Function UW-SpectatingTargetInfo.UW-SpectatingTargetInfo_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void BndEvt__Button_Report_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature(); // Function UW-SpectatingTargetInfo.UW-SpectatingTargetInfo_C.BndEvt__Button_Report_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void BndEvt__Button_Report_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature(); // Function UW-SpectatingTargetInfo.UW-SpectatingTargetInfo_C.BndEvt__Button_Report_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void SetReplayReportAbleDateTime(); // Function UW-SpectatingTargetInfo.UW-SpectatingTargetInfo_C.SetReplayReportAbleDateTime(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void CheckTargetValid(); // Function UW-SpectatingTargetInfo.UW-SpectatingTargetInfo_C.CheckTargetValid(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-SpectatingTargetInfo(int32_t EntryPoint); // Function UW-SpectatingTargetInfo.UW-SpectatingTargetInfo_C.ExecuteUbergraph_UW-SpectatingTargetInfo(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void ReportSended(); // Function UW-SpectatingTargetInfo.UW-SpectatingTargetInfo_C.ReportSended(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Check Report Enable From User Name(); // Function UW-SpectatingTargetInfo.UW-SpectatingTargetInfo_C.Check Report Enable From User Name(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void SetTargetPlayerInfo(struct Unknown PlayerState); // Function UW-SpectatingTargetInfo.UW-SpectatingTargetInfo_C.SetTargetPlayerInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnLoaded_4A4EF93A4D64362A89D43DA6D9BD2749(struct Unknown Loaded); // Function UW-SpectatingTargetInfo.UW-SpectatingTargetInfo_C.OnLoaded_4A4EF93A4D64362A89D43DA6D9BD2749(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void AsyncClassIcon(struct Unknown Image); // Function UW-SpectatingTargetInfo.UW-SpectatingTargetInfo_C.AsyncClassIcon(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void BndEvt__Button_Report_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-SpectatingTargetInfo.UW-SpectatingTargetInfo_C.BndEvt__Button_Report_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Construct(); // Function UW-SpectatingTargetInfo.UW-SpectatingTargetInfo_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void BndEvt__Button_Report_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature(); // Function UW-SpectatingTargetInfo.UW-SpectatingTargetInfo_C.BndEvt__Button_Report_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void BndEvt__Button_Report_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature(); // Function UW-SpectatingTargetInfo.UW-SpectatingTargetInfo_C.BndEvt__Button_Report_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void SetReplayReportAbleDateTime(); // Function UW-SpectatingTargetInfo.UW-SpectatingTargetInfo_C.SetReplayReportAbleDateTime(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void CheckTargetValid(); // Function UW-SpectatingTargetInfo.UW-SpectatingTargetInfo_C.CheckTargetValid(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ExecuteUbergraph_UW-SpectatingTargetInfo(int32_t EntryPoint); // Function UW-SpectatingTargetInfo.UW-SpectatingTargetInfo_C.ExecuteUbergraph_UW-SpectatingTargetInfo(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
 };
 
 // Function UW-SpectatingTargetInfo.UW-SpectatingTargetInfo_C.ReportSended

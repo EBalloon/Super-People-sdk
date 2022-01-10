@@ -39,7 +39,7 @@ public:
 
 	struct TArray<Unknown> AmbientIntensityNits; // 0x40 (16)
 
-	struct TArray<Unknown> GetAmbientIntensityNits(); // Function MagicLeapAR.LuminARLightEstimate.GetAmbientIntensityNits(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17E4380>
+	struct TArray<Unknown> GetAmbientIntensityNits(); // Function MagicLeapAR.LuminARLightEstimate.GetAmbientIntensityNits(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17E4380>
 };
 
 // Class MagicLeapAR.LuminARCandidateImage
@@ -50,8 +50,8 @@ public:
 	char bUseUnreliablePose : 0; // 0x58 (1)
 	char bImageIsStationary : 0; // 0x59 (1)
 
-	char GetUseUnreliablePose(); // Function MagicLeapAR.LuminARCandidateImage.GetUseUnreliablePose(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17E4490>
-	char GetImageIsStationary(); // Function MagicLeapAR.LuminARCandidateImage.GetImageIsStationary(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x17E4440>
+	char GetUseUnreliablePose(); // Function MagicLeapAR.LuminARCandidateImage.GetUseUnreliablePose(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17E4490>
+	char GetImageIsStationary(); // Function MagicLeapAR.LuminARCandidateImage.GetImageIsStationary(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17E4440>
 };
 
 // Function MagicLeapAR.LuminARLightEstimate.GetAmbientIntensityNits

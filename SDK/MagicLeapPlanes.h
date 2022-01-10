@@ -34,7 +34,7 @@ public:
 	struct FMulticastInlineDelegate OnPlanesQueryResult; // 0x258 (16)
 	struct FMulticastInlineDelegate OnPersistentPlanesQueryResult; // 0x268 (16)
 
-	char RequestPlanesAsync(); // Function MagicLeapPlanes.MagicLeapPlanesComponent.RequestPlanesAsync(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1805290>
+	char RequestPlanesAsync(); // Function MagicLeapPlanes.MagicLeapPlanesComponent.RequestPlanesAsync(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1805290>
 };
 
 // ScriptStruct MagicLeapPlanes.MagicLeapPlaneBoundaries

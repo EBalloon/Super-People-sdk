@@ -28,36 +28,36 @@ public:
 	struct FMulticastInlineDelegate EventDispatcher_TrySelectMode; // 0x310 (16)
 	char OkayType : 0; // 0x320 (1)
 
-	void SetOptionChangedFromBenchmark(); // Function UW-PopupWidget.UW-PopupWidget_C.SetOptionChangedFromBenchmark(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void PerkDeckSelectMode(); // Function UW-PopupWidget.UW-PopupWidget_C.PerkDeckSelectMode(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void IsStartedGame(char& bRet); // Function UW-PopupWidget.UW-PopupWidget_C.IsStartedGame(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void IsSoloPlay(char& bRet); // Function UW-PopupWidget.UW-PopupWidget_C.IsSoloPlay(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void GetMessage(int32_t ErrorCode, struct FString ErrorID, struct FString Param, struct FString& Title, struct FString& Desc); // Function UW-PopupWidget.UW-PopupWidget_C.GetMessage(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void EnterDeathCam(char IsWinningCam, char IsTargetCameraKiller); // Function UW-PopupWidget.UW-PopupWidget_C.EnterDeathCam(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void EnterWindow(); // Function UW-PopupWidget.UW-PopupWidget_C.EnterWindow(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void GetMyTeamAlive(char& ALIVE); // Function UW-PopupWidget.UW-PopupWidget_C.GetMyTeamAlive(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void EnterLobby(); // Function UW-PopupWidget.UW-PopupWidget_C.EnterLobby(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	struct Unknown OnMouseWheel(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-PopupWidget.UW-PopupWidget_C.OnMouseWheel(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	struct Unknown OnMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-PopupWidget.UW-PopupWidget_C.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Construct(); // Function UW-PopupWidget.UW-PopupWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void BndEvt__btn_OK_K2Node_ComponentBoundEvent_35_OnButtonClickedEvent__DelegateSignature(); // Function UW-PopupWidget.UW-PopupWidget_C.BndEvt__btn_OK_K2Node_ComponentBoundEvent_35_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void BndEvt__btn_Cancel_K2Node_ComponentBoundEvent_53_OnButtonClickedEvent__DelegateSignature(); // Function UW-PopupWidget.UW-PopupWidget_C.BndEvt__btn_Cancel_K2Node_ComponentBoundEvent_53_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void BndEvt__btn_OK_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature(); // Function UW-PopupWidget.UW-PopupWidget_C.BndEvt__btn_OK_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void BndEvt__btn_Cancel_K2Node_ComponentBoundEvent_15_OnButtonHoverEvent__DelegateSignature(); // Function UW-PopupWidget.UW-PopupWidget_C.BndEvt__btn_Cancel_K2Node_ComponentBoundEvent_15_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void PlayerLogout(); // Function UW-PopupWidget.UW-PopupWidget_C.PlayerLogout(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void LeaveGame(); // Function UW-PopupWidget.UW-PopupWidget_C.LeaveGame(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnChangedFinalRankDelegate_Event(); // Function UW-PopupWidget.UW-PopupWidget_C.OnChangedFinalRankDelegate_Event(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void FinalResult_Internal(); // Function UW-PopupWidget.UW-PopupWidget_C.FinalResult_Internal(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void MoveLobby(); // Function UW-PopupWidget.UW-PopupWidget_C.MoveLobby(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Show_2(); // Function UW-PopupWidget.UW-PopupWidget_C.Show_2(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Hide_2(); // Function UW-PopupWidget.UW-PopupWidget_C.Hide_2(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void SetMessageEx(int32_t ErrorIdx, struct FString ErrorID, struct FString Parameter, char bConfirm, char bCancel, char bWaiting, struct Unknown& evt); // Function UW-PopupWidget.UW-PopupWidget_C.SetMessageEx(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void 鉹@t元_1(); // Function UW-PopupWidget.UW-PopupWidget_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void QuitGame(float DelayTime); // Function UW-PopupWidget.UW-PopupWidget_C.QuitGame(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Destruct(); // Function UW-PopupWidget.UW-PopupWidget_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-PopupWidget(int32_t EntryPoint); // Function UW-PopupWidget.UW-PopupWidget_C.ExecuteUbergraph_UW-PopupWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void EventDispatcher_TrySelectMode__DelegateSignature(); // Function UW-PopupWidget.UW-PopupWidget_C.EventDispatcher_TrySelectMode__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void EventDispatcher_MoveToDeathCam__DelegateSignature(); // Function UW-PopupWidget.UW-PopupWidget_C.EventDispatcher_MoveToDeathCam__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetOptionChangedFromBenchmark(); // Function UW-PopupWidget.UW-PopupWidget_C.SetOptionChangedFromBenchmark(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void PerkDeckSelectMode(); // Function UW-PopupWidget.UW-PopupWidget_C.PerkDeckSelectMode(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void IsStartedGame(char& bRet); // Function UW-PopupWidget.UW-PopupWidget_C.IsStartedGame(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void IsSoloPlay(char& bRet); // Function UW-PopupWidget.UW-PopupWidget_C.IsSoloPlay(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void GetMessage(int32_t ErrorCode, struct FString ErrorID, struct FString Param, struct FString& Title, struct FString& Desc); // Function UW-PopupWidget.UW-PopupWidget_C.GetMessage(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void EnterDeathCam(char IsWinningCam, char IsTargetCameraKiller); // Function UW-PopupWidget.UW-PopupWidget_C.EnterDeathCam(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void EnterWindow(); // Function UW-PopupWidget.UW-PopupWidget_C.EnterWindow(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void GetMyTeamAlive(char& ALIVE); // Function UW-PopupWidget.UW-PopupWidget_C.GetMyTeamAlive(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void EnterLobby(); // Function UW-PopupWidget.UW-PopupWidget_C.EnterLobby(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	struct Unknown OnMouseWheel(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-PopupWidget.UW-PopupWidget_C.OnMouseWheel(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	struct Unknown OnMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-PopupWidget.UW-PopupWidget_C.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Construct(); // Function UW-PopupWidget.UW-PopupWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void BndEvt__btn_OK_K2Node_ComponentBoundEvent_35_OnButtonClickedEvent__DelegateSignature(); // Function UW-PopupWidget.UW-PopupWidget_C.BndEvt__btn_OK_K2Node_ComponentBoundEvent_35_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void BndEvt__btn_Cancel_K2Node_ComponentBoundEvent_53_OnButtonClickedEvent__DelegateSignature(); // Function UW-PopupWidget.UW-PopupWidget_C.BndEvt__btn_Cancel_K2Node_ComponentBoundEvent_53_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void BndEvt__btn_OK_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature(); // Function UW-PopupWidget.UW-PopupWidget_C.BndEvt__btn_OK_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void BndEvt__btn_Cancel_K2Node_ComponentBoundEvent_15_OnButtonHoverEvent__DelegateSignature(); // Function UW-PopupWidget.UW-PopupWidget_C.BndEvt__btn_Cancel_K2Node_ComponentBoundEvent_15_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void PlayerLogout(); // Function UW-PopupWidget.UW-PopupWidget_C.PlayerLogout(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void LeaveGame(); // Function UW-PopupWidget.UW-PopupWidget_C.LeaveGame(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnChangedFinalRankDelegate_Event(); // Function UW-PopupWidget.UW-PopupWidget_C.OnChangedFinalRankDelegate_Event(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void FinalResult_Internal(); // Function UW-PopupWidget.UW-PopupWidget_C.FinalResult_Internal(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void MoveLobby(); // Function UW-PopupWidget.UW-PopupWidget_C.MoveLobby(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Show_2(); // Function UW-PopupWidget.UW-PopupWidget_C.Show_2(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Hide_2(); // Function UW-PopupWidget.UW-PopupWidget_C.Hide_2(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void SetMessageEx(int32_t ErrorIdx, struct FString ErrorID, struct FString Parameter, char bConfirm, char bCancel, char bWaiting, struct Unknown& evt); // Function UW-PopupWidget.UW-PopupWidget_C.SetMessageEx(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void 鉹@t元_1(); // Function UW-PopupWidget.UW-PopupWidget_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void QuitGame(float DelayTime); // Function UW-PopupWidget.UW-PopupWidget_C.QuitGame(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Destruct(); // Function UW-PopupWidget.UW-PopupWidget_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ExecuteUbergraph_UW-PopupWidget(int32_t EntryPoint); // Function UW-PopupWidget.UW-PopupWidget_C.ExecuteUbergraph_UW-PopupWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	void EventDispatcher_TrySelectMode__DelegateSignature(); // Function UW-PopupWidget.UW-PopupWidget_C.EventDispatcher_TrySelectMode__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void EventDispatcher_MoveToDeathCam__DelegateSignature(); // Function UW-PopupWidget.UW-PopupWidget_C.EventDispatcher_MoveToDeathCam__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
 };
 
 // Function UW-PopupWidget.UW-PopupWidget_C.SetOptionChangedFromBenchmark

@@ -10,7 +10,7 @@ public:
 	struct Unknown SkeletalMesh; // 0x470 (8)
 	struct Unknown DefaultSceneRoot; // 0x478 (8)
 
-	void UserConstructionScript(); // Function BP-Jaguar_Appear.BP-Jaguar_Appear_C.UserConstructionScript(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void UserConstructionScript(); // Function BP-Jaguar_Appear.BP-Jaguar_Appear_C.UserConstructionScript(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
 };
 
 // Function BP-Jaguar_Appear.BP-Jaguar_Appear_C.UserConstructionScript

@@ -9,11 +9,11 @@ public:
 	float DeltaTime; // 0x318 (4)
 	char bIsBackgroundScene : 0; // 0x31C (1)
 
-	void CheckWorldViewCameraLocationRange(); // Function BP-FieldViewCam.BP-FieldViewCam_C.CheckWorldViewCameraLocationRange(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void PreventCameraWallCollision(); // Function BP-FieldViewCam.BP-FieldViewCam_C.PreventCameraWallCollision(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveTick(float DeltaSeconds); // Function BP-FieldViewCam.BP-FieldViewCam_C.ReceiveTick(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveBeginPlay(); // Function BP-FieldViewCam.BP-FieldViewCam_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ExecuteUbergraph_BP-FieldViewCam(int32_t EntryPoint); // Function BP-FieldViewCam.BP-FieldViewCam_C.ExecuteUbergraph_BP-FieldViewCam(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void CheckWorldViewCameraLocationRange(); // Function BP-FieldViewCam.BP-FieldViewCam_C.CheckWorldViewCameraLocationRange(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void PreventCameraWallCollision(); // Function BP-FieldViewCam.BP-FieldViewCam_C.PreventCameraWallCollision(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveTick(float DeltaSeconds); // Function BP-FieldViewCam.BP-FieldViewCam_C.ReceiveTick(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveBeginPlay(); // Function BP-FieldViewCam.BP-FieldViewCam_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ExecuteUbergraph_BP-FieldViewCam(int32_t EntryPoint); // Function BP-FieldViewCam.BP-FieldViewCam_C.ExecuteUbergraph_BP-FieldViewCam(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
 };
 
 // Function BP-FieldViewCam.BP-FieldViewCam_C.CheckWorldViewCameraLocationRange

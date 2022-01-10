@@ -15,21 +15,21 @@ public:
 	char bRememberMe : 0; // 0x2B1 (1)
 	struct FMulticastInlineDelegate OnSkipTitle; // 0x2B8 (16)
 
-	void HideExitPopup(); // Function BP-TitleWidget.BP-TitleWidget_C.HideExitPopup(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Login(); // Function BP-TitleWidget.BP-TitleWidget_C.Login(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ValidateUserName(struct FText InputUserName, char& Ret, struct FName& UserName); // Function BP-TitleWidget.BP-TitleWidget_C.ValidateUserName(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Construct(); // Function BP-TitleWidget.BP-TitleWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnLogin(); // Function BP-TitleWidget.BP-TitleWidget_C.OnLogin(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ShowMouseCursor(); // Function BP-TitleWidget.BP-TitleWidget_C.ShowMouseCursor(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnLoginSucceeded(); // Function BP-TitleWidget.BP-TitleWidget_C.OnLoginSucceeded(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnLoginFailed(int32_t ErrorIndex, struct FString ErrorID, struct FString Parameters); // Function BP-TitleWidget.BP-TitleWidget_C.OnLoginFailed(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ExecuteUbergraph_BP-TitleWidget(int32_t EntryPoint); // Function BP-TitleWidget.BP-TitleWidget_C.ExecuteUbergraph_BP-TitleWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnSkipTitle__DelegateSignature(); // Function BP-TitleWidget.BP-TitleWidget_C.OnSkipTitle__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnSaveUserData__DelegateSignature(); // Function BP-TitleWidget.BP-TitleWidget_C.OnSaveUserData__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnPlayBGM__DelegateSignature(); // Function BP-TitleWidget.BP-TitleWidget_C.OnPlayBGM__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnMoveLobby__DelegateSignature(); // Function BP-TitleWidget.BP-TitleWidget_C.OnMoveLobby__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnTriedToTestLogin__DelegateSignature(struct FName UserName, struct FString TestIP); // Function BP-TitleWidget.BP-TitleWidget_C.OnTriedToTestLogin__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnTriedToLogin__DelegateSignature(struct FName UserName, struct FString Password); // Function BP-TitleWidget.BP-TitleWidget_C.OnTriedToLogin__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void HideExitPopup(); // Function BP-TitleWidget.BP-TitleWidget_C.HideExitPopup(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Login(); // Function BP-TitleWidget.BP-TitleWidget_C.Login(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ValidateUserName(struct FText InputUserName, char& Ret, struct FName& UserName); // Function BP-TitleWidget.BP-TitleWidget_C.ValidateUserName(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
+	void Construct(); // Function BP-TitleWidget.BP-TitleWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnLogin(); // Function BP-TitleWidget.BP-TitleWidget_C.OnLogin(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ShowMouseCursor(); // Function BP-TitleWidget.BP-TitleWidget_C.ShowMouseCursor(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnLoginSucceeded(); // Function BP-TitleWidget.BP-TitleWidget_C.OnLoginSucceeded(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnLoginFailed(int32_t ErrorIndex, struct FString ErrorID, struct FString Parameters); // Function BP-TitleWidget.BP-TitleWidget_C.OnLoginFailed(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ExecuteUbergraph_BP-TitleWidget(int32_t EntryPoint); // Function BP-TitleWidget.BP-TitleWidget_C.ExecuteUbergraph_BP-TitleWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	void OnSkipTitle__DelegateSignature(); // Function BP-TitleWidget.BP-TitleWidget_C.OnSkipTitle__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnSaveUserData__DelegateSignature(); // Function BP-TitleWidget.BP-TitleWidget_C.OnSaveUserData__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnPlayBGM__DelegateSignature(); // Function BP-TitleWidget.BP-TitleWidget_C.OnPlayBGM__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnMoveLobby__DelegateSignature(); // Function BP-TitleWidget.BP-TitleWidget_C.OnMoveLobby__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnTriedToTestLogin__DelegateSignature(struct FName UserName, struct FString TestIP); // Function BP-TitleWidget.BP-TitleWidget_C.OnTriedToTestLogin__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnTriedToLogin__DelegateSignature(struct FName UserName, struct FString Password); // Function BP-TitleWidget.BP-TitleWidget_C.OnTriedToLogin__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
 };
 
 // Function BP-TitleWidget.BP-TitleWidget_C.HideExitPopup

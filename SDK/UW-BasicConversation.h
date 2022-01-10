@@ -23,12 +23,12 @@ public:
 	struct Unknown WidgetSwitcher_Face; // 0x2E0 (8)
 	struct Unknown SentenceData; // 0x2E8 (176)
 
-	void Finished_F3AEE8B3477DC5B8B5A3EA8301B8E940(); // Function UW-BasicConversation.UW-BasicConversation_C.Finished_F3AEE8B3477DC5B8B5A3EA8301B8E940(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Construct(); // Function UW-BasicConversation.UW-BasicConversation_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ShowSentense(struct Unknown& SentenceData); // Function UW-BasicConversation.UW-BasicConversation_C.ShowSentense(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void HideSentense(); // Function UW-BasicConversation.UW-BasicConversation_C.HideSentense(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void BndEvt__Button_406_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-BasicConversation.UW-BasicConversation_C.BndEvt__Button_406_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-BasicConversation(int32_t EntryPoint); // Function UW-BasicConversation.UW-BasicConversation_C.ExecuteUbergraph_UW-BasicConversation(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void Finished_F3AEE8B3477DC5B8B5A3EA8301B8E940(); // Function UW-BasicConversation.UW-BasicConversation_C.Finished_F3AEE8B3477DC5B8B5A3EA8301B8E940(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Construct(); // Function UW-BasicConversation.UW-BasicConversation_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ShowSentense(struct Unknown& SentenceData); // Function UW-BasicConversation.UW-BasicConversation_C.ShowSentense(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void HideSentense(); // Function UW-BasicConversation.UW-BasicConversation_C.HideSentense(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void BndEvt__Button_406_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-BasicConversation.UW-BasicConversation_C.BndEvt__Button_406_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ExecuteUbergraph_UW-BasicConversation(int32_t EntryPoint); // Function UW-BasicConversation.UW-BasicConversation_C.ExecuteUbergraph_UW-BasicConversation(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
 };
 
 // Function UW-BasicConversation.UW-BasicConversation_C.Finished_F3AEE8B3477DC5B8B5A3EA8301B8E940

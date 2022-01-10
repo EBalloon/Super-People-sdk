@@ -24,23 +24,23 @@ public:
 	struct FText TextAll; // 0x318 (24)
 	int32_t LanguageIndex; // 0x330 (4)
 
-	void CheckLanguageIndex(); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.CheckLanguageIndex(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnChangedArmoryTab(); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.OnChangedArmoryTab(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnSelectedCrafting(int32_t CraftingID); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.OnSelectedCrafting(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void SetOwn(char NewOwn, char NewOwnAny); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.SetOwn(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void DefaultSelectButton(); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.DefaultSelectButton(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void SelectCraftingInfo(int32_t CraftingID); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.SelectCraftingInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void CheckLastCategory(struct Unknown NewOpendWidget); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.CheckLastCategory(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ResetLastCategory(); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.ResetLastCategory(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void CheckOwn(); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.CheckOwn(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnChangedWeaponType(struct FString WeaponType); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.OnChangedWeaponType(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ClearCategory(); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.ClearCategory(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void InitCraftingCategory(); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.InitCraftingCategory(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void BndEvt__ComboBoxString_Sort_1_K2Node_ComponentBoundEvent_1_OnSelectionChangedEvent__DelegateSignature(struct FString SelectedItem, char SelectionType); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.BndEvt__ComboBoxString_Sort_1_K2Node_ComponentBoundEvent_1_OnSelectionChangedEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void BndEvt__ComboBoxString_Sort_1_K2Node_ComponentBoundEvent_2_OnOpeningEvent__DelegateSignature(); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.BndEvt__ComboBoxString_Sort_1_K2Node_ComponentBoundEvent_2_OnOpeningEvent__DelegateSignature(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Construct(); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-Lobby_Craft_List(int32_t EntryPoint); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.ExecuteUbergraph_UW-Lobby_Craft_List(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void CheckLanguageIndex(); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.CheckLanguageIndex(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnChangedArmoryTab(); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.OnChangedArmoryTab(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnSelectedCrafting(int32_t CraftingID); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.OnSelectedCrafting(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void SetOwn(char NewOwn, char NewOwnAny); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.SetOwn(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void DefaultSelectButton(); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.DefaultSelectButton(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void SelectCraftingInfo(int32_t CraftingID); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.SelectCraftingInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void CheckLastCategory(struct Unknown NewOpendWidget); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.CheckLastCategory(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ResetLastCategory(); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.ResetLastCategory(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void CheckOwn(); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.CheckOwn(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnChangedWeaponType(struct FString WeaponType); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.OnChangedWeaponType(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ClearCategory(); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.ClearCategory(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void InitCraftingCategory(); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.InitCraftingCategory(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void BndEvt__ComboBoxString_Sort_1_K2Node_ComponentBoundEvent_1_OnSelectionChangedEvent__DelegateSignature(struct FString SelectedItem, char SelectionType); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.BndEvt__ComboBoxString_Sort_1_K2Node_ComponentBoundEvent_1_OnSelectionChangedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void BndEvt__ComboBoxString_Sort_1_K2Node_ComponentBoundEvent_2_OnOpeningEvent__DelegateSignature(); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.BndEvt__ComboBoxString_Sort_1_K2Node_ComponentBoundEvent_2_OnOpeningEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Construct(); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ExecuteUbergraph_UW-Lobby_Craft_List(int32_t EntryPoint); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.ExecuteUbergraph_UW-Lobby_Craft_List(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
 };
 
 // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.CheckLanguageIndex

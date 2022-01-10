@@ -19,7 +19,7 @@ public:
 	struct Unknown T_MagSize; // 0x2B0 (8)
 	struct Unknown T_Power; // 0x2B8 (8)
 
-	void SetWeaponStat(struct Unknown& WeaponInfo); // Function UW-Lobby_WeaponInfo_Stat.UW-Lobby_WeaponInfo_Stat_C.SetWeaponStat(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetWeaponStat(struct Unknown& WeaponInfo); // Function UW-Lobby_WeaponInfo_Stat.UW-Lobby_WeaponInfo_Stat_C.SetWeaponStat(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
 };
 
 // Function UW-Lobby_WeaponInfo_Stat.UW-Lobby_WeaponInfo_Stat_C.SetWeaponStat

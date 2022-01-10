@@ -5,12 +5,12 @@ public:
 
 	struct Unknown UberGraphFrame; // 0x378 (8)
 
-	void UserConstructionScript(); // Function BP-AreaSkill_Hacking.BP-AreaSkill_Hacking_C.UserConstructionScript(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ActivateEffect(struct Unknown Character); // Function BP-AreaSkill_Hacking.BP-AreaSkill_Hacking_C.ActivateEffect(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void DeactivateEffect(struct Unknown Character); // Function BP-AreaSkill_Hacking.BP-AreaSkill_Hacking_C.DeactivateEffect(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void BPSetAreaSkillInfo(); // Function BP-AreaSkill_Hacking.BP-AreaSkill_Hacking_C.BPSetAreaSkillInfo(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void StartDestroy(); // Function BP-AreaSkill_Hacking.BP-AreaSkill_Hacking_C.StartDestroy(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ExecuteUbergraph_BP-AreaSkill_Hacking(int32_t EntryPoint); // Function BP-AreaSkill_Hacking.BP-AreaSkill_Hacking_C.ExecuteUbergraph_BP-AreaSkill_Hacking(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void UserConstructionScript(); // Function BP-AreaSkill_Hacking.BP-AreaSkill_Hacking_C.UserConstructionScript(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ActivateEffect(struct Unknown Character); // Function BP-AreaSkill_Hacking.BP-AreaSkill_Hacking_C.ActivateEffect(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void DeactivateEffect(struct Unknown Character); // Function BP-AreaSkill_Hacking.BP-AreaSkill_Hacking_C.DeactivateEffect(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void BPSetAreaSkillInfo(); // Function BP-AreaSkill_Hacking.BP-AreaSkill_Hacking_C.BPSetAreaSkillInfo(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void StartDestroy(); // Function BP-AreaSkill_Hacking.BP-AreaSkill_Hacking_C.StartDestroy(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ExecuteUbergraph_BP-AreaSkill_Hacking(int32_t EntryPoint); // Function BP-AreaSkill_Hacking.BP-AreaSkill_Hacking_C.ExecuteUbergraph_BP-AreaSkill_Hacking(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
 };
 
 // Function BP-AreaSkill_Hacking.BP-AreaSkill_Hacking_C.UserConstructionScript

@@ -592,86 +592,86 @@ public:
 	float Mojo Tolerance; // 0x250C (4)
 	struct Unknown Mojo - Advanced; // 0x2510 (56)
 
-	void Create Effect Material Instance(struct Unknown Material, struct Unknown& Instance); // Function Chameleon.Chameleon_C.Create Effect Material Instance(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Mojo Func(char IsEnabled); // Function Chameleon.Chameleon_C.Mojo Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Pyramid Func(char IsEnabled); // Function Chameleon.Chameleon_C.Pyramid Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Zone Func(char IsEnabled); // Function Chameleon.Chameleon_C.Zone Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Lens Func(char IsEnabled); // Function Chameleon.Chameleon_C.Lens Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Grid Cell Func(char IsEnabled); // Function Chameleon.Chameleon_C.Grid Cell Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Haunted Func(char IsEnabled); // Function Chameleon.Chameleon_C.Haunted Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Screen Fire Func(char IsEnabled); // Function Chameleon.Chameleon_C.Screen Fire Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Selective Color Func(char IsEnabled); // Function Chameleon.Chameleon_C.Selective Color Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Melted World Func(char IsEnabled); // Function Chameleon.Chameleon_C.Melted World Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Hazy Lights Func(char IsEnabled); // Function Chameleon.Chameleon_C.Hazy Lights Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Disco Ball Func(char IsEnabled); // Function Chameleon.Chameleon_C.Disco Ball Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Camera Shake Func(char IsEnabled); // Function Chameleon.Chameleon_C.Camera Shake Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Colored AO Func(char IsEnabled); // Function Chameleon.Chameleon_C.Colored AO Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Infected Func(char IsEnabled); // Function Chameleon.Chameleon_C.Infected Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Actor Featurette Func(char IsEnabled); // Function Chameleon.Chameleon_C.Actor Featurette Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Set Advanced Effect Features (No Custom Depth)(struct Unknown Features, struct Unknown Material, struct Unknown Dynamic Material Instance); // Function Chameleon.Chameleon_C.Set Advanced Effect Features (No Custom Depth)(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Set Advanced Effect Features(struct Unknown Features, struct Unknown Material, struct Unknown Dynamic Material Instance); // Function Chameleon.Chameleon_C.Set Advanced Effect Features(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Wired Func(char IsEnabled); // Function Chameleon.Chameleon_C.Wired Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Sketch Func(char IsEnabled); // Function Chameleon.Chameleon_C.Sketch Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Alarm Func(char IsEnabled); // Function Chameleon.Chameleon_C.Alarm Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Digitize Func(char IsEnabled); // Function Chameleon.Chameleon_C.Digitize Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void World Glitch Func(char IsEnabled); // Function Chameleon.Chameleon_C.World Glitch Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void World Splash Func(char IsEnabled); // Function Chameleon.Chameleon_C.World Splash Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Snow Func(char IsEnabled); // Function Chameleon.Chameleon_C.Snow Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Letterboxing Func(char IsEnabled); // Function Chameleon.Chameleon_C.Letterboxing Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Kaleidescope Func(char IsEnabled); // Function Chameleon.Chameleon_C.Kaleidescope Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void 2D Transform Func(char IsEnabled); // Function Chameleon.Chameleon_C.2D Transform Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void SetEffectPriority(int32_t Priority, struct Unknown Material); // Function Chameleon.Chameleon_C.SetEffectPriority(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ApplyChameleonSettings(); // Function Chameleon.Chameleon_C.ApplyChameleonSettings(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Custom Depth Highlighter (NC) Func(char IsEnabled); // Function Chameleon.Chameleon_C.Custom Depth Highlighter (NC) Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Custom Depth Highlighter Func(char IsEnabled); // Function Chameleon.Chameleon_C.Custom Depth Highlighter Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Neon Func(char IsEnabled); // Function Chameleon.Chameleon_C.Neon Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Frost Func(char IsEnabled); // Function Chameleon.Chameleon_C.Frost Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Anamorphic Lens Flares Func(char IsEnabled); // Function Chameleon.Chameleon_C.Anamorphic Lens Flares Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Toon Shading Func(char IsEnabled); // Function Chameleon.Chameleon_C.Toon Shading Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Sharpen Func(char IsEnabled); // Function Chameleon.Chameleon_C.Sharpen Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Screen Decals Func(char IsEnabled); // Function Chameleon.Chameleon_C.Screen Decals Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Screen Damage Func(char IsEnabled); // Function Chameleon.Chameleon_C.Screen Damage Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Magic Transitions Func(char IsEnabled); // Function Chameleon.Chameleon_C.Magic Transitions Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Drawing Func(char IsEnabled); // Function Chameleon.Chameleon_C.Drawing Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Distance Distortion Func(char Condition); // Function Chameleon.Chameleon_C.Distance Distortion Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Sonar Func(char Condition); // Function Chameleon.Chameleon_C.Sonar Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Circles Func(char Condition); // Function Chameleon.Chameleon_C.Circles Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void LOOK Func(char Condition); // Function Chameleon.Chameleon_C.LOOK Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void TV Noise Func(char& IsEnabled); // Function Chameleon.Chameleon_C.TV Noise Func(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Tiles Func(char& IsEnabled); // Function Chameleon.Chameleon_C.Tiles Func(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Squares Func(char& IsEnabled); // Function Chameleon.Chameleon_C.Squares Func(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Pulse Func(char& IsEnabled); // Function Chameleon.Chameleon_C.Pulse Func(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Kuwahara Func(char& IsEnabled); // Function Chameleon.Chameleon_C.Kuwahara Func(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Iridescent Func(char& IsEnabled); // Function Chameleon.Chameleon_C.Iridescent Func(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Invert Func(char& IsEnabled); // Function Chameleon.Chameleon_C.Invert Func(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Hard Emboss Func(char& IsEnabled); // Function Chameleon.Chameleon_C.Hard Emboss Func(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Emboss Func(char& IsEnabled); // Function Chameleon.Chameleon_C.Emboss Func(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Edge Detect Func(char& IsEnabled); // Function Chameleon.Chameleon_C.Edge Detect Func(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ASCII Func(char& IsEnabled); // Function Chameleon.Chameleon_C.ASCII Func(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Bleach Func(char& IsEnabled); // Function Chameleon.Chameleon_C.Bleach Func(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Scratches Func(char IsEnabled); // Function Chameleon.Chameleon_C.Scratches Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Distance Fog Func(char IsEnabled); // Function Chameleon.Chameleon_C.Distance Fog Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Screen Waves Func(char IsEnabled); // Function Chameleon.Chameleon_C.Screen Waves Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Radial Blur Func(char IsEnabled); // Function Chameleon.Chameleon_C.Radial Blur Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Monochrome Func(char IsEnabled); // Function Chameleon.Chameleon_C.Monochrome Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Hue Panner Func(char IsEnabled); // Function Chameleon.Chameleon_C.Hue Panner Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void MonitorFX Func(char IsEnabled); // Function Chameleon.Chameleon_C.MonitorFX Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Glitch Func(char IsEnabled); // Function Chameleon.Chameleon_C.Glitch Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Comic Func(char IsEnabled); // Function Chameleon.Chameleon_C.Comic Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Colorize Func(char Condition); // Function Chameleon.Chameleon_C.Colorize Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Blur Func(char IsEnabled); // Function Chameleon.Chameleon_C.Blur Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Pixel Dissolve Func(char IsEnabled); // Function Chameleon.Chameleon_C.Pixel Dissolve Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Drug Func(char IsEnabled); // Function Chameleon.Chameleon_C.Drug Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Alcohol Func(char IsEnabled); // Function Chameleon.Chameleon_C.Alcohol Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Mosaic Func(char IsEnabled); // Function Chameleon.Chameleon_C.Mosaic Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Screen Drops Func(char IsEnabled); // Function Chameleon.Chameleon_C.Screen Drops Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void InitChameleon(); // Function Chameleon.Chameleon_C.InitChameleon(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Channel Swapper Func(char IsEnabled); // Function Chameleon.Chameleon_C.Channel Swapper Func(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Channel Clamper Func(char& IsEnabled); // Function Chameleon.Chameleon_C.Channel Clamper Func(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void UserConstructionScript(); // Function Chameleon.Chameleon_C.UserConstructionScript(Event|Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveActorBeginOverlap(struct Unknown OtherActor); // Function Chameleon.Chameleon_C.ReceiveActorBeginOverlap(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveTick(float DeltaSeconds); // Function Chameleon.Chameleon_C.ReceiveTick(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ExecuteUbergraph_Chameleon(int32_t EntryPoint); // Function Chameleon.Chameleon_C.ExecuteUbergraph_Chameleon(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void Create Effect Material Instance(struct Unknown Material, struct Unknown& Instance); // Function Chameleon.Chameleon_C.Create Effect Material Instance(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Mojo Func(char IsEnabled); // Function Chameleon.Chameleon_C.Mojo Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Pyramid Func(char IsEnabled); // Function Chameleon.Chameleon_C.Pyramid Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Zone Func(char IsEnabled); // Function Chameleon.Chameleon_C.Zone Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Lens Func(char IsEnabled); // Function Chameleon.Chameleon_C.Lens Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Grid Cell Func(char IsEnabled); // Function Chameleon.Chameleon_C.Grid Cell Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Haunted Func(char IsEnabled); // Function Chameleon.Chameleon_C.Haunted Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Screen Fire Func(char IsEnabled); // Function Chameleon.Chameleon_C.Screen Fire Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Selective Color Func(char IsEnabled); // Function Chameleon.Chameleon_C.Selective Color Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Melted World Func(char IsEnabled); // Function Chameleon.Chameleon_C.Melted World Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Hazy Lights Func(char IsEnabled); // Function Chameleon.Chameleon_C.Hazy Lights Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Disco Ball Func(char IsEnabled); // Function Chameleon.Chameleon_C.Disco Ball Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Camera Shake Func(char IsEnabled); // Function Chameleon.Chameleon_C.Camera Shake Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Colored AO Func(char IsEnabled); // Function Chameleon.Chameleon_C.Colored AO Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Infected Func(char IsEnabled); // Function Chameleon.Chameleon_C.Infected Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Actor Featurette Func(char IsEnabled); // Function Chameleon.Chameleon_C.Actor Featurette Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Set Advanced Effect Features (No Custom Depth)(struct Unknown Features, struct Unknown Material, struct Unknown Dynamic Material Instance); // Function Chameleon.Chameleon_C.Set Advanced Effect Features (No Custom Depth)(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Set Advanced Effect Features(struct Unknown Features, struct Unknown Material, struct Unknown Dynamic Material Instance); // Function Chameleon.Chameleon_C.Set Advanced Effect Features(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Wired Func(char IsEnabled); // Function Chameleon.Chameleon_C.Wired Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Sketch Func(char IsEnabled); // Function Chameleon.Chameleon_C.Sketch Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Alarm Func(char IsEnabled); // Function Chameleon.Chameleon_C.Alarm Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Digitize Func(char IsEnabled); // Function Chameleon.Chameleon_C.Digitize Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void World Glitch Func(char IsEnabled); // Function Chameleon.Chameleon_C.World Glitch Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void World Splash Func(char IsEnabled); // Function Chameleon.Chameleon_C.World Splash Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Snow Func(char IsEnabled); // Function Chameleon.Chameleon_C.Snow Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Letterboxing Func(char IsEnabled); // Function Chameleon.Chameleon_C.Letterboxing Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Kaleidescope Func(char IsEnabled); // Function Chameleon.Chameleon_C.Kaleidescope Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void 2D Transform Func(char IsEnabled); // Function Chameleon.Chameleon_C.2D Transform Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void SetEffectPriority(int32_t Priority, struct Unknown Material); // Function Chameleon.Chameleon_C.SetEffectPriority(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ApplyChameleonSettings(); // Function Chameleon.Chameleon_C.ApplyChameleonSettings(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Custom Depth Highlighter (NC) Func(char IsEnabled); // Function Chameleon.Chameleon_C.Custom Depth Highlighter (NC) Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Custom Depth Highlighter Func(char IsEnabled); // Function Chameleon.Chameleon_C.Custom Depth Highlighter Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Neon Func(char IsEnabled); // Function Chameleon.Chameleon_C.Neon Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Frost Func(char IsEnabled); // Function Chameleon.Chameleon_C.Frost Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Anamorphic Lens Flares Func(char IsEnabled); // Function Chameleon.Chameleon_C.Anamorphic Lens Flares Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Toon Shading Func(char IsEnabled); // Function Chameleon.Chameleon_C.Toon Shading Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Sharpen Func(char IsEnabled); // Function Chameleon.Chameleon_C.Sharpen Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Screen Decals Func(char IsEnabled); // Function Chameleon.Chameleon_C.Screen Decals Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Screen Damage Func(char IsEnabled); // Function Chameleon.Chameleon_C.Screen Damage Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Magic Transitions Func(char IsEnabled); // Function Chameleon.Chameleon_C.Magic Transitions Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Drawing Func(char IsEnabled); // Function Chameleon.Chameleon_C.Drawing Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Distance Distortion Func(char Condition); // Function Chameleon.Chameleon_C.Distance Distortion Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Sonar Func(char Condition); // Function Chameleon.Chameleon_C.Sonar Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Circles Func(char Condition); // Function Chameleon.Chameleon_C.Circles Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void LOOK Func(char Condition); // Function Chameleon.Chameleon_C.LOOK Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void TV Noise Func(char& IsEnabled); // Function Chameleon.Chameleon_C.TV Noise Func(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Tiles Func(char& IsEnabled); // Function Chameleon.Chameleon_C.Tiles Func(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Squares Func(char& IsEnabled); // Function Chameleon.Chameleon_C.Squares Func(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Pulse Func(char& IsEnabled); // Function Chameleon.Chameleon_C.Pulse Func(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Kuwahara Func(char& IsEnabled); // Function Chameleon.Chameleon_C.Kuwahara Func(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Iridescent Func(char& IsEnabled); // Function Chameleon.Chameleon_C.Iridescent Func(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Invert Func(char& IsEnabled); // Function Chameleon.Chameleon_C.Invert Func(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Hard Emboss Func(char& IsEnabled); // Function Chameleon.Chameleon_C.Hard Emboss Func(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Emboss Func(char& IsEnabled); // Function Chameleon.Chameleon_C.Emboss Func(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Edge Detect Func(char& IsEnabled); // Function Chameleon.Chameleon_C.Edge Detect Func(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ASCII Func(char& IsEnabled); // Function Chameleon.Chameleon_C.ASCII Func(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Bleach Func(char& IsEnabled); // Function Chameleon.Chameleon_C.Bleach Func(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Scratches Func(char IsEnabled); // Function Chameleon.Chameleon_C.Scratches Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Distance Fog Func(char IsEnabled); // Function Chameleon.Chameleon_C.Distance Fog Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Screen Waves Func(char IsEnabled); // Function Chameleon.Chameleon_C.Screen Waves Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Radial Blur Func(char IsEnabled); // Function Chameleon.Chameleon_C.Radial Blur Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Monochrome Func(char IsEnabled); // Function Chameleon.Chameleon_C.Monochrome Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Hue Panner Func(char IsEnabled); // Function Chameleon.Chameleon_C.Hue Panner Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void MonitorFX Func(char IsEnabled); // Function Chameleon.Chameleon_C.MonitorFX Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Glitch Func(char IsEnabled); // Function Chameleon.Chameleon_C.Glitch Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Comic Func(char IsEnabled); // Function Chameleon.Chameleon_C.Comic Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Colorize Func(char Condition); // Function Chameleon.Chameleon_C.Colorize Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Blur Func(char IsEnabled); // Function Chameleon.Chameleon_C.Blur Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Pixel Dissolve Func(char IsEnabled); // Function Chameleon.Chameleon_C.Pixel Dissolve Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Drug Func(char IsEnabled); // Function Chameleon.Chameleon_C.Drug Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Alcohol Func(char IsEnabled); // Function Chameleon.Chameleon_C.Alcohol Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Mosaic Func(char IsEnabled); // Function Chameleon.Chameleon_C.Mosaic Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Screen Drops Func(char IsEnabled); // Function Chameleon.Chameleon_C.Screen Drops Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void InitChameleon(); // Function Chameleon.Chameleon_C.InitChameleon(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Channel Swapper Func(char IsEnabled); // Function Chameleon.Chameleon_C.Channel Swapper Func(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Channel Clamper Func(char& IsEnabled); // Function Chameleon.Chameleon_C.Channel Clamper Func(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void UserConstructionScript(); // Function Chameleon.Chameleon_C.UserConstructionScript(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveActorBeginOverlap(struct Unknown OtherActor); // Function Chameleon.Chameleon_C.ReceiveActorBeginOverlap(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveTick(float DeltaSeconds); // Function Chameleon.Chameleon_C.ReceiveTick(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ExecuteUbergraph_Chameleon(int32_t EntryPoint); // Function Chameleon.Chameleon_C.ExecuteUbergraph_Chameleon(Final|UbergraphFunction) // <Game_BE.exe+0x2B812B0>
 };
 
 // Function Chameleon.Chameleon_C.Create Effect Material Instance

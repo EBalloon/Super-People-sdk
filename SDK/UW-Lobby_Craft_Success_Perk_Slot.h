@@ -18,14 +18,14 @@ public:
 	struct Unknown Img_Icon; // 0x2A8 (8)
 	struct Unknown ItemOptionInfo; // 0x2B0 (184)
 
-	void SequenceEvent__ENTRYPOINTUW-Lobby_Craft_Success_Perk_Slot_1(); // Function UW-Lobby_Craft_Success_Perk_Slot.UW-Lobby_Craft_Success_Perk_Slot_C.SequenceEvent__ENTRYPOINTUW-Lobby_Craft_Success_Perk_Slot_1(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void PlaySoundSpread(); // Function UW-Lobby_Craft_Success_Perk_Slot.UW-Lobby_Craft_Success_Perk_Slot_C.PlaySoundSpread(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void SetItemOption(struct Unknown& ItemOption); // Function UW-Lobby_Craft_Success_Perk_Slot.UW-Lobby_Craft_Success_Perk_Slot_C.SetItemOption(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnLoaded_6CB9F6B747A71C38876DC8AFD4771124(struct Unknown Loaded); // Function UW-Lobby_Craft_Success_Perk_Slot.UW-Lobby_Craft_Success_Perk_Slot_C.OnLoaded_6CB9F6B747A71C38876DC8AFD4771124(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void AsyncLoadImg(struct Unknown Object); // Function UW-Lobby_Craft_Success_Perk_Slot.UW-Lobby_Craft_Success_Perk_Slot_C.AsyncLoadImg(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-Lobby_Craft_Success_Perk_Slot.UW-Lobby_Craft_Success_Perk_Slot_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void PlayOpenAnim(); // Function UW-Lobby_Craft_Success_Perk_Slot.UW-Lobby_Craft_Success_Perk_Slot_C.PlayOpenAnim(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-Lobby_Craft_Success_Perk_Slot(int32_t EntryPoint); // Function UW-Lobby_Craft_Success_Perk_Slot.UW-Lobby_Craft_Success_Perk_Slot_C.ExecuteUbergraph_UW-Lobby_Craft_Success_Perk_Slot(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SequenceEvent__ENTRYPOINTUW-Lobby_Craft_Success_Perk_Slot_1(); // Function UW-Lobby_Craft_Success_Perk_Slot.UW-Lobby_Craft_Success_Perk_Slot_C.SequenceEvent__ENTRYPOINTUW-Lobby_Craft_Success_Perk_Slot_1(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void PlaySoundSpread(); // Function UW-Lobby_Craft_Success_Perk_Slot.UW-Lobby_Craft_Success_Perk_Slot_C.PlaySoundSpread(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void SetItemOption(struct Unknown& ItemOption); // Function UW-Lobby_Craft_Success_Perk_Slot.UW-Lobby_Craft_Success_Perk_Slot_C.SetItemOption(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnLoaded_6CB9F6B747A71C38876DC8AFD4771124(struct Unknown Loaded); // Function UW-Lobby_Craft_Success_Perk_Slot.UW-Lobby_Craft_Success_Perk_Slot_C.OnLoaded_6CB9F6B747A71C38876DC8AFD4771124(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void AsyncLoadImg(struct Unknown Object); // Function UW-Lobby_Craft_Success_Perk_Slot.UW-Lobby_Craft_Success_Perk_Slot_C.AsyncLoadImg(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-Lobby_Craft_Success_Perk_Slot.UW-Lobby_Craft_Success_Perk_Slot_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void PlayOpenAnim(); // Function UW-Lobby_Craft_Success_Perk_Slot.UW-Lobby_Craft_Success_Perk_Slot_C.PlayOpenAnim(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ExecuteUbergraph_UW-Lobby_Craft_Success_Perk_Slot(int32_t EntryPoint); // Function UW-Lobby_Craft_Success_Perk_Slot.UW-Lobby_Craft_Success_Perk_Slot_C.ExecuteUbergraph_UW-Lobby_Craft_Success_Perk_Slot(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
 };
 
 // Function UW-Lobby_Craft_Success_Perk_Slot.UW-Lobby_Craft_Success_Perk_Slot_C.SequenceEvent__ENTRYPOINTUW-Lobby_Craft_Success_Perk_Slot_1

@@ -5,8 +5,8 @@ public:
 
 	struct Unknown UberGraphFrame; // 0x22A0 (8)
 
-	void ReceiveBeginPlay(); // Function BP-Weapon_M16A4_LV7.BP-Weapon_M16A4_LV7_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ExecuteUbergraph_BP-Weapon_M16A4_LV7(int32_t EntryPoint); // Function BP-Weapon_M16A4_LV7.BP-Weapon_M16A4_LV7_C.ExecuteUbergraph_BP-Weapon_M16A4_LV7(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void ReceiveBeginPlay(); // Function BP-Weapon_M16A4_LV7.BP-Weapon_M16A4_LV7_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ExecuteUbergraph_BP-Weapon_M16A4_LV7(int32_t EntryPoint); // Function BP-Weapon_M16A4_LV7.BP-Weapon_M16A4_LV7_C.ExecuteUbergraph_BP-Weapon_M16A4_LV7(Final|UbergraphFunction) // <Game_BE.exe+0x2B812B0>
 };
 
 // Function BP-Weapon_M16A4_LV7.BP-Weapon_M16A4_LV7_C.ReceiveBeginPlay

@@ -40,8 +40,8 @@ public:
 	struct Unknown TextBlock_17; // 0x358 (8)
 	struct Unknown WidgetSwitcher_132; // 0x360 (8)
 
-	void SetKillCamGuide(); // Function UW-ReplayGuideWidget.UW-ReplayGuideWidget_C.SetKillCamGuide(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ChangeGuide(enum class Unknow CameraType); // Function UW-ReplayGuideWidget.UW-ReplayGuideWidget_C.ChangeGuide(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetKillCamGuide(); // Function UW-ReplayGuideWidget.UW-ReplayGuideWidget_C.SetKillCamGuide(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ChangeGuide(enum class Unknow CameraType); // Function UW-ReplayGuideWidget.UW-ReplayGuideWidget_C.ChangeGuide(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
 };
 
 // Function UW-ReplayGuideWidget.UW-ReplayGuideWidget_C.SetKillCamGuide

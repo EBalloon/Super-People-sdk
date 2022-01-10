@@ -15,53 +15,53 @@ public:
 	float LastSecond; // 0x238 (4)
 	int32_t AdditionalStepCount; // 0x23C (4)
 
-	void CalcLadderInteractionType(); // Function BP-LadderComponent.BP-LadderComponent_C.CalcLadderInteractionType(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void CanCancelMotion(char& CanCancel); // Function BP-LadderComponent.BP-LadderComponent_C.CanCancelMotion(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void GetEndLocation(struct Unknown& LadderRelativeLocation); // Function BP-LadderComponent.BP-LadderComponent_C.GetEndLocation(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void SetMovingInfo(); // Function BP-LadderComponent.BP-LadderComponent_C.SetMovingInfo(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void MoveInMotion(); // Function BP-LadderComponent.BP-LadderComponent_C.MoveInMotion(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ActiveCameraInterp(); // Function BP-LadderComponent.BP-LadderComponent_C.ActiveCameraInterp(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void CalcSnappingTime(); // Function BP-LadderComponent.BP-LadderComponent_C.CalcSnappingTime(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void InitializeLadder(); // Function BP-LadderComponent.BP-LadderComponent_C.InitializeLadder(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void SetMovementOnLadder(float AxisValue); // Function BP-LadderComponent.BP-LadderComponent_C.SetMovementOnLadder(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void AddMovementOnLadder(float AxisValue); // Function BP-LadderComponent.BP-LadderComponent_C.AddMovementOnLadder(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void CheckCanExitLadder(char IsTop, char& Result); // Function BP-LadderComponent.BP-LadderComponent_C.CheckCanExitLadder(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ChangeMovementMode(char OnLadder); // Function BP-LadderComponent.BP-LadderComponent_C.ChangeMovementMode(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void CalcTargetLocation(enum class Unknow InLadderInteractionType, struct Unknown& OutTargetLocation); // Function BP-LadderComponent.BP-LadderComponent_C.CalcTargetLocation(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void SetCharacterClimbSettings(char ClimbOn); // Function BP-LadderComponent.BP-LadderComponent_C.SetCharacterClimbSettings(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void SnapToLadder(); // Function BP-LadderComponent.BP-LadderComponent_C.SnapToLadder(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void SetSnappingInfo(float& DirectSnapLocZ); // Function BP-LadderComponent.BP-LadderComponent_C.SetSnappingInfo(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void SetLadderPos(); // Function BP-LadderComponent.BP-LadderComponent_C.SetLadderPos(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void CheckLadderEnd(float Input Scale, char& Result, char& IsTop, float& InputScale); // Function BP-LadderComponent.BP-LadderComponent_C.CheckLadderEnd(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnNotifyEnd_ABB5B46F49E086A9FC6EC9AE877A3650(struct FName NotifyName); // Function BP-LadderComponent.BP-LadderComponent_C.OnNotifyEnd_ABB5B46F49E086A9FC6EC9AE877A3650(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnNotifyBegin_ABB5B46F49E086A9FC6EC9AE877A3650(struct FName NotifyName); // Function BP-LadderComponent.BP-LadderComponent_C.OnNotifyBegin_ABB5B46F49E086A9FC6EC9AE877A3650(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnInterrupted_ABB5B46F49E086A9FC6EC9AE877A3650(struct FName NotifyName); // Function BP-LadderComponent.BP-LadderComponent_C.OnInterrupted_ABB5B46F49E086A9FC6EC9AE877A3650(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnBlendOut_ABB5B46F49E086A9FC6EC9AE877A3650(struct FName NotifyName); // Function BP-LadderComponent.BP-LadderComponent_C.OnBlendOut_ABB5B46F49E086A9FC6EC9AE877A3650(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnCompleted_ABB5B46F49E086A9FC6EC9AE877A3650(struct FName NotifyName); // Function BP-LadderComponent.BP-LadderComponent_C.OnCompleted_ABB5B46F49E086A9FC6EC9AE877A3650(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ServerSetMovementOnLadder(struct Unknown LadderLocation, float AxisValue); // Function BP-LadderComponent.BP-LadderComponent_C.ServerSetMovementOnLadder(Net|NetReliableNetServer|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void StopMontage(struct Unknown StopMontage); // Function BP-LadderComponent.BP-LadderComponent_C.StopMontage(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void CompleteExitingLadder(); // Function BP-LadderComponent.BP-LadderComponent_C.CompleteExitingLadder(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void CompleteEnteringLadder(); // Function BP-LadderComponent.BP-LadderComponent_C.CompleteEnteringLadder(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void MultiStopMontage(struct Unknown StopMontage); // Function BP-LadderComponent.BP-LadderComponent_C.MultiStopMontage(Net|NetReliableNetMulticast|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ServerStopMontage(struct Unknown StopMontage); // Function BP-LadderComponent.BP-LadderComponent_C.ServerStopMontage(Net|NetReliableNetServer|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void LadderStateEvent(); // Function BP-LadderComponent.BP-LadderComponent_C.LadderStateEvent(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ServerDownLadder(enum class Unknow LadderInteractionType); // Function BP-LadderComponent.BP-LadderComponent_C.ServerDownLadder(Net|NetReliableNetServer|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void PlayLadderAnim(); // Function BP-LadderComponent.BP-LadderComponent_C.PlayLadderAnim(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void StartMoveInMotion(); // Function BP-LadderComponent.BP-LadderComponent_C.StartMoveInMotion(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveTick(float DeltaSeconds); // Function BP-LadderComponent.BP-LadderComponent_C.ReceiveTick(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveBeginPlay(); // Function BP-LadderComponent.BP-LadderComponent_C.ReceiveBeginPlay(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void CancelMotion(float AxisValue); // Function BP-LadderComponent.BP-LadderComponent_C.CancelMotion(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ExceptionSetUsingLadder(struct Unknown UsingLadder); // Function BP-LadderComponent.BP-LadderComponent_C.ExceptionSetUsingLadder(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ServerUseLadder(enum class Unknow LadderInteractionType, float SnappingTime, float DirectSnapLocZ, struct Unknown UsingLadder); // Function BP-LadderComponent.BP-LadderComponent_C.ServerUseLadder(Net|NetReliableNetServer|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void MultiUseLadder(enum class Unknow LadderInteractionType, float SnappingTime, float DirectSnapLocZ, struct Unknown UsingLadder); // Function BP-LadderComponent.BP-LadderComponent_C.MultiUseLadder(Net|NetReliableNetMulticast|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void MultiDownLadder(enum class Unknow LadderInteractionType); // Function BP-LadderComponent.BP-LadderComponent_C.MultiDownLadder(Net|NetReliableNetMulticast|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void StartStopMontage(struct Unknown StopMontage); // Function BP-LadderComponent.BP-LadderComponent_C.StartStopMontage(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ServerSetLadderState(enum class Unknow LadderState); // Function BP-LadderComponent.BP-LadderComponent_C.ServerSetLadderState(Net|NetReliableNetServer|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void K2_StartUseladder(); // Function BP-LadderComponent.BP-LadderComponent_C.K2_StartUseladder(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void K2_StopUseLadder(); // Function BP-LadderComponent.BP-LadderComponent_C.K2_StopUseLadder(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void K2_MoveRightOnLadder(float AxisValue); // Function BP-LadderComponent.BP-LadderComponent_C.K2_MoveRightOnLadder(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void K2_MoveForwardOnLadder(float AxisValue); // Function BP-LadderComponent.BP-LadderComponent_C.K2_MoveForwardOnLadder(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ExecuteUbergraph_BP-LadderComponent(int32_t EntryPoint); // Function BP-LadderComponent.BP-LadderComponent_C.ExecuteUbergraph_BP-LadderComponent(Final|UbergraphFunction) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void CalcLadderInteractionType(); // Function BP-LadderComponent.BP-LadderComponent_C.CalcLadderInteractionType(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void CanCancelMotion(char& CanCancel); // Function BP-LadderComponent.BP-LadderComponent_C.CanCancelMotion(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
+	void GetEndLocation(struct Unknown& LadderRelativeLocation); // Function BP-LadderComponent.BP-LadderComponent_C.GetEndLocation(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void SetMovingInfo(); // Function BP-LadderComponent.BP-LadderComponent_C.SetMovingInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void MoveInMotion(); // Function BP-LadderComponent.BP-LadderComponent_C.MoveInMotion(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ActiveCameraInterp(); // Function BP-LadderComponent.BP-LadderComponent_C.ActiveCameraInterp(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void CalcSnappingTime(); // Function BP-LadderComponent.BP-LadderComponent_C.CalcSnappingTime(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void InitializeLadder(); // Function BP-LadderComponent.BP-LadderComponent_C.InitializeLadder(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void SetMovementOnLadder(float AxisValue); // Function BP-LadderComponent.BP-LadderComponent_C.SetMovementOnLadder(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void AddMovementOnLadder(float AxisValue); // Function BP-LadderComponent.BP-LadderComponent_C.AddMovementOnLadder(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void CheckCanExitLadder(char IsTop, char& Result); // Function BP-LadderComponent.BP-LadderComponent_C.CheckCanExitLadder(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ChangeMovementMode(char OnLadder); // Function BP-LadderComponent.BP-LadderComponent_C.ChangeMovementMode(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void CalcTargetLocation(enum class Unknow InLadderInteractionType, struct Unknown& OutTargetLocation); // Function BP-LadderComponent.BP-LadderComponent_C.CalcTargetLocation(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void SetCharacterClimbSettings(char ClimbOn); // Function BP-LadderComponent.BP-LadderComponent_C.SetCharacterClimbSettings(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void SnapToLadder(); // Function BP-LadderComponent.BP-LadderComponent_C.SnapToLadder(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void SetSnappingInfo(float& DirectSnapLocZ); // Function BP-LadderComponent.BP-LadderComponent_C.SetSnappingInfo(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void SetLadderPos(); // Function BP-LadderComponent.BP-LadderComponent_C.SetLadderPos(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void CheckLadderEnd(float Input Scale, char& Result, char& IsTop, float& InputScale); // Function BP-LadderComponent.BP-LadderComponent_C.CheckLadderEnd(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnNotifyEnd_ABB5B46F49E086A9FC6EC9AE877A3650(struct FName NotifyName); // Function BP-LadderComponent.BP-LadderComponent_C.OnNotifyEnd_ABB5B46F49E086A9FC6EC9AE877A3650(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnNotifyBegin_ABB5B46F49E086A9FC6EC9AE877A3650(struct FName NotifyName); // Function BP-LadderComponent.BP-LadderComponent_C.OnNotifyBegin_ABB5B46F49E086A9FC6EC9AE877A3650(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnInterrupted_ABB5B46F49E086A9FC6EC9AE877A3650(struct FName NotifyName); // Function BP-LadderComponent.BP-LadderComponent_C.OnInterrupted_ABB5B46F49E086A9FC6EC9AE877A3650(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnBlendOut_ABB5B46F49E086A9FC6EC9AE877A3650(struct FName NotifyName); // Function BP-LadderComponent.BP-LadderComponent_C.OnBlendOut_ABB5B46F49E086A9FC6EC9AE877A3650(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnCompleted_ABB5B46F49E086A9FC6EC9AE877A3650(struct FName NotifyName); // Function BP-LadderComponent.BP-LadderComponent_C.OnCompleted_ABB5B46F49E086A9FC6EC9AE877A3650(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ServerSetMovementOnLadder(struct Unknown LadderLocation, float AxisValue); // Function BP-LadderComponent.BP-LadderComponent_C.ServerSetMovementOnLadder(Net|NetReliableNetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void StopMontage(struct Unknown StopMontage); // Function BP-LadderComponent.BP-LadderComponent_C.StopMontage(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void CompleteExitingLadder(); // Function BP-LadderComponent.BP-LadderComponent_C.CompleteExitingLadder(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void CompleteEnteringLadder(); // Function BP-LadderComponent.BP-LadderComponent_C.CompleteEnteringLadder(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void MultiStopMontage(struct Unknown StopMontage); // Function BP-LadderComponent.BP-LadderComponent_C.MultiStopMontage(Net|NetReliableNetMulticast|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ServerStopMontage(struct Unknown StopMontage); // Function BP-LadderComponent.BP-LadderComponent_C.ServerStopMontage(Net|NetReliableNetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void LadderStateEvent(); // Function BP-LadderComponent.BP-LadderComponent_C.LadderStateEvent(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ServerDownLadder(enum class Unknow LadderInteractionType); // Function BP-LadderComponent.BP-LadderComponent_C.ServerDownLadder(Net|NetReliableNetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void PlayLadderAnim(); // Function BP-LadderComponent.BP-LadderComponent_C.PlayLadderAnim(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void StartMoveInMotion(); // Function BP-LadderComponent.BP-LadderComponent_C.StartMoveInMotion(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveTick(float DeltaSeconds); // Function BP-LadderComponent.BP-LadderComponent_C.ReceiveTick(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveBeginPlay(); // Function BP-LadderComponent.BP-LadderComponent_C.ReceiveBeginPlay(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void CancelMotion(float AxisValue); // Function BP-LadderComponent.BP-LadderComponent_C.CancelMotion(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ExceptionSetUsingLadder(struct Unknown UsingLadder); // Function BP-LadderComponent.BP-LadderComponent_C.ExceptionSetUsingLadder(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ServerUseLadder(enum class Unknow LadderInteractionType, float SnappingTime, float DirectSnapLocZ, struct Unknown UsingLadder); // Function BP-LadderComponent.BP-LadderComponent_C.ServerUseLadder(Net|NetReliableNetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void MultiUseLadder(enum class Unknow LadderInteractionType, float SnappingTime, float DirectSnapLocZ, struct Unknown UsingLadder); // Function BP-LadderComponent.BP-LadderComponent_C.MultiUseLadder(Net|NetReliableNetMulticast|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void MultiDownLadder(enum class Unknow LadderInteractionType); // Function BP-LadderComponent.BP-LadderComponent_C.MultiDownLadder(Net|NetReliableNetMulticast|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void StartStopMontage(struct Unknown StopMontage); // Function BP-LadderComponent.BP-LadderComponent_C.StartStopMontage(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ServerSetLadderState(enum class Unknow LadderState); // Function BP-LadderComponent.BP-LadderComponent_C.ServerSetLadderState(Net|NetReliableNetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void K2_StartUseladder(); // Function BP-LadderComponent.BP-LadderComponent_C.K2_StartUseladder(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void K2_StopUseLadder(); // Function BP-LadderComponent.BP-LadderComponent_C.K2_StopUseLadder(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void K2_MoveRightOnLadder(float AxisValue); // Function BP-LadderComponent.BP-LadderComponent_C.K2_MoveRightOnLadder(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void K2_MoveForwardOnLadder(float AxisValue); // Function BP-LadderComponent.BP-LadderComponent_C.K2_MoveForwardOnLadder(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ExecuteUbergraph_BP-LadderComponent(int32_t EntryPoint); // Function BP-LadderComponent.BP-LadderComponent_C.ExecuteUbergraph_BP-LadderComponent(Final|UbergraphFunction) // <Game_BE.exe+0x2B812B0>
 };
 
 // Function BP-LadderComponent.BP-LadderComponent_C.CalcLadderInteractionType

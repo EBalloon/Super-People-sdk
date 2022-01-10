@@ -14,8 +14,8 @@ public:
 	struct FMulticastInlineDelegate OnImageTargetLost; // 0x278 (16)
 	struct FMulticastInlineDelegate OnImageTargetUnreliableTracking; // 0x288 (16)
 
-	char SetTargetAsync(struct Unknown ImageTarget); // Function MagicLeapImageTracker.MagicLeapImageTrackerComponent.SetTargetAsync(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x18018B0>
-	char RemoveTargetAsync(); // Function MagicLeapImageTracker.MagicLeapImageTrackerComponent.RemoveTargetAsync(Final|Native|Public|BlueprintCallable) // <BravoHotelClient-Win64-Shipping.protected.exe+0x1801810>
+	char SetTargetAsync(struct Unknown ImageTarget); // Function MagicLeapImageTracker.MagicLeapImageTrackerComponent.SetTargetAsync(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18018B0>
+	char RemoveTargetAsync(); // Function MagicLeapImageTracker.MagicLeapImageTrackerComponent.RemoveTargetAsync(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1801810>
 };
 
 // Function MagicLeapImageTracker.MagicLeapImageTrackerComponent.SetTargetAsync

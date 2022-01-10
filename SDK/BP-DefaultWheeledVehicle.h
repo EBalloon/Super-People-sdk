@@ -10,25 +10,25 @@ public:
 	struct Unknown Timeline_1; // 0xD50 (8)
 	struct Unknown EngineSound; // 0xD58 (8)
 
-	void SetWaterLevelZ_Func(); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.SetWaterLevelZ_Func(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	float GetCameraTargetArmLength(); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.GetCameraTargetArmLength(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void SetupCamera(); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.SetupCamera(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Timeline_0__FinishedFunc(); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.Timeline_0__FinishedFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Timeline_0__UpdateFunc(); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.Timeline_0__UpdateFunc(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_9(struct Unknown Key); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_9(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void InpActEvt_RightMouseButton_K2Node_InputKeyEvent_8(struct Unknown Key); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.InpActEvt_RightMouseButton_K2Node_InputKeyEvent_8(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void InpActEvt_Gamepad_LeftShoulder_K2Node_InputKeyEvent_7(struct Unknown Key); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.InpActEvt_Gamepad_LeftShoulder_K2Node_InputKeyEvent_7(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void InpActEvt_Gamepad_LeftShoulder_K2Node_InputKeyEvent_6(struct Unknown Key); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.InpActEvt_Gamepad_LeftShoulder_K2Node_InputKeyEvent_6(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void InpActEvt_One_K2Node_InputKeyEvent_5(struct Unknown Key); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.InpActEvt_One_K2Node_InputKeyEvent_5(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void InpActEvt_Two_K2Node_InputKeyEvent_4(struct Unknown Key); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.InpActEvt_Two_K2Node_InputKeyEvent_4(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void InpActEvt_Three_K2Node_InputKeyEvent_3(struct Unknown Key); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.InpActEvt_Three_K2Node_InputKeyEvent_3(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void InpActEvt_Four_K2Node_InputKeyEvent_2(struct Unknown Key); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.InpActEvt_Four_K2Node_InputKeyEvent_2(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void InpActEvt_Five_K2Node_InputKeyEvent_1(struct Unknown Key); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.InpActEvt_Five_K2Node_InputKeyEvent_1(BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveBeginPlay(); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void SetWaterLevelZ(); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.SetWaterLevelZ(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void K2_OnNitroJumpEnd(); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.K2_OnNitroJumpEnd(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void K2_OnBoosterChanged(char bIsBoosted); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.K2_OnBoosterChanged(Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ExecuteUbergraph_BP-DefaultWheeledVehicle(int32_t EntryPoint); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.ExecuteUbergraph_BP-DefaultWheeledVehicle(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetWaterLevelZ_Func(); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.SetWaterLevelZ_Func(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	float GetCameraTargetArmLength(); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.GetCameraTargetArmLength(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <Game_BE.exe+0x2B812B0>
+	void SetupCamera(); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.SetupCamera(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Timeline_0__FinishedFunc(); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.Timeline_0__FinishedFunc(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Timeline_0__UpdateFunc(); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.Timeline_0__UpdateFunc(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_9(struct Unknown Key); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_9(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void InpActEvt_RightMouseButton_K2Node_InputKeyEvent_8(struct Unknown Key); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.InpActEvt_RightMouseButton_K2Node_InputKeyEvent_8(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void InpActEvt_Gamepad_LeftShoulder_K2Node_InputKeyEvent_7(struct Unknown Key); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.InpActEvt_Gamepad_LeftShoulder_K2Node_InputKeyEvent_7(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void InpActEvt_Gamepad_LeftShoulder_K2Node_InputKeyEvent_6(struct Unknown Key); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.InpActEvt_Gamepad_LeftShoulder_K2Node_InputKeyEvent_6(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void InpActEvt_One_K2Node_InputKeyEvent_5(struct Unknown Key); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.InpActEvt_One_K2Node_InputKeyEvent_5(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void InpActEvt_Two_K2Node_InputKeyEvent_4(struct Unknown Key); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.InpActEvt_Two_K2Node_InputKeyEvent_4(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void InpActEvt_Three_K2Node_InputKeyEvent_3(struct Unknown Key); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.InpActEvt_Three_K2Node_InputKeyEvent_3(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void InpActEvt_Four_K2Node_InputKeyEvent_2(struct Unknown Key); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.InpActEvt_Four_K2Node_InputKeyEvent_2(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void InpActEvt_Five_K2Node_InputKeyEvent_1(struct Unknown Key); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.InpActEvt_Five_K2Node_InputKeyEvent_1(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceiveBeginPlay(); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void SetWaterLevelZ(); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.SetWaterLevelZ(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void K2_OnNitroJumpEnd(); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.K2_OnNitroJumpEnd(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void K2_OnBoosterChanged(char bIsBoosted); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.K2_OnBoosterChanged(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ExecuteUbergraph_BP-DefaultWheeledVehicle(int32_t EntryPoint); // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.ExecuteUbergraph_BP-DefaultWheeledVehicle(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
 };
 
 // Function BP-DefaultWheeledVehicle.BP-DefaultWheeledVehicle_C.SetWaterLevelZ_Func

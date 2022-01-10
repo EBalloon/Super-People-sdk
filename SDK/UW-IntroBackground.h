@@ -5,7 +5,7 @@ public:
 
 	struct Unknown Image_80; // 0x248 (8)
 
-	void destroy(); // Function UW-IntroBackground.UW-IntroBackground_C.destroy(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void destroy(); // Function UW-IntroBackground.UW-IntroBackground_C.destroy(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
 };
 
 // Function UW-IntroBackground.UW-IntroBackground_C.destroy

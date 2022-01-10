@@ -10,10 +10,10 @@ public:
 	struct Unknown InstigatorLocation; // 0x268 (12)
 	struct Unknown InstigatorCharacter; // 0x278 (8)
 
-	void Hide(); // Function UW-HittedDamageWidget.UW-HittedDamageWidget_C.Hide(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Construct(); // Function UW-HittedDamageWidget.UW-HittedDamageWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-HittedDamageWidget.UW-HittedDamageWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-HittedDamageWidget(int32_t EntryPoint); // Function UW-HittedDamageWidget.UW-HittedDamageWidget_C.ExecuteUbergraph_UW-HittedDamageWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void Hide(); // Function UW-HittedDamageWidget.UW-HittedDamageWidget_C.Hide(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Construct(); // Function UW-HittedDamageWidget.UW-HittedDamageWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-HittedDamageWidget.UW-HittedDamageWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ExecuteUbergraph_UW-HittedDamageWidget(int32_t EntryPoint); // Function UW-HittedDamageWidget.UW-HittedDamageWidget_C.ExecuteUbergraph_UW-HittedDamageWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
 };
 
 // Function UW-HittedDamageWidget.UW-HittedDamageWidget_C.Hide

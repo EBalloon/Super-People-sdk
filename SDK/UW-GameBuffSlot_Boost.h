@@ -16,18 +16,18 @@ public:
 	char IsActive : 0; // 0x344 (1)
 	struct Unknown BoostBuffInfo; // 0x348 (392)
 
-	void SetIsActive(char bActive); // Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.SetIsActive(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void InitBuffInfo(); // Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.InitBuffInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void UpdateCoolTime(float Timer, float MaxTime); // Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.UpdateCoolTime(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnLoaded_541BBAAD4C8A218716460DAC5837CB3E(struct Unknown Loaded); // Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.OnLoaded_541BBAAD4C8A218716460DAC5837CB3E(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Construct(); // Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void K2_UpdateBuff(float Timer, float MaxTime); // Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.K2_UpdateBuff(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void K2_OnNewBuff(); // Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.K2_OnNewBuff(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnAnimationFinished(struct Unknown Animation); // Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.OnAnimationFinished(BlueprintCosmetic|Event|Protected|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void K2_OnRenewBuff(); // Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.K2_OnRenewBuff(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void PlayAnimBoostOn(); // Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.PlayAnimBoostOn(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void AsyncloadImage(struct Unknown Image); // Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.AsyncloadImage(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-GameBuffSlot_Boost(int32_t EntryPoint); // Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.ExecuteUbergraph_UW-GameBuffSlot_Boost(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void SetIsActive(char bActive); // Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.SetIsActive(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void InitBuffInfo(); // Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.InitBuffInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void UpdateCoolTime(float Timer, float MaxTime); // Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.UpdateCoolTime(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnLoaded_541BBAAD4C8A218716460DAC5837CB3E(struct Unknown Loaded); // Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.OnLoaded_541BBAAD4C8A218716460DAC5837CB3E(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Construct(); // Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void K2_UpdateBuff(float Timer, float MaxTime); // Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.K2_UpdateBuff(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void K2_OnNewBuff(); // Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.K2_OnNewBuff(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnAnimationFinished(struct Unknown Animation); // Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.OnAnimationFinished(BlueprintCosmetic|Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void K2_OnRenewBuff(); // Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.K2_OnRenewBuff(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void PlayAnimBoostOn(); // Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.PlayAnimBoostOn(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void AsyncloadImage(struct Unknown Image); // Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.AsyncloadImage(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ExecuteUbergraph_UW-GameBuffSlot_Boost(int32_t EntryPoint); // Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.ExecuteUbergraph_UW-GameBuffSlot_Boost(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
 };
 
 // Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.SetIsActive

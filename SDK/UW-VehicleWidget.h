@@ -24,23 +24,23 @@ public:
 	char EnableBind : 0; // 0x340 (1)
 	struct Unknown NewVar_1; // 0x348 (8)
 
-	void OnWheelWrecked(int32_t WheelIndex); // Function UW-VehicleWidget.UW-VehicleWidget_C.OnWheelWrecked(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void SetHPColor(float InPercent); // Function UW-VehicleWidget.UW-VehicleWidget_C.SetHPColor(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnSeatOccupantExited(struct Unknown Seat); // Function UW-VehicleWidget.UW-VehicleWidget_C.OnSeatOccupantExited(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnSeatOccupantEntered(struct Unknown Seat); // Function UW-VehicleWidget.UW-VehicleWidget_C.OnSeatOccupantEntered(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void UpdateFuelGauge(); // Function UW-VehicleWidget.UW-VehicleWidget_C.UpdateFuelGauge(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void UpdateSpeedText(); // Function UW-VehicleWidget.UW-VehicleWidget_C.UpdateSpeedText(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Hide(); // Function UW-VehicleWidget.UW-VehicleWidget_C.Hide(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Show(struct Unknown VehicleSeat); // Function UW-VehicleWidget.UW-VehicleWidget_C.Show(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-VehicleWidget.UW-VehicleWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Construct(); // Function UW-VehicleWidget.UW-VehicleWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void SetInfo(float CurFuel, float CurHp, struct FString CurSpeed); // Function UW-VehicleWidget.UW-VehicleWidget_C.SetInfo(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ShowVehicle(); // Function UW-VehicleWidget.UW-VehicleWidget_C.ShowVehicle(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void OnSeatOccupantEnter(struct Unknown SeatComponent, struct Unknown Occupant); // Function UW-VehicleWidget.UW-VehicleWidget_C.OnSeatOccupantEnter(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void 鉹@ t元_1(struct Unknown SeatComponent, struct Unknown Occupant); // Function UW-VehicleWidget.UW-VehicleWidget_C.鉹@ t元_1(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void HideVehicle(); // Function UW-VehicleWidget.UW-VehicleWidget_C.HideVehicle(Event|Public|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void SetInterpTarget(); // Function UW-VehicleWidget.UW-VehicleWidget_C.SetInterpTarget(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-VehicleWidget(int32_t EntryPoint); // Function UW-VehicleWidget.UW-VehicleWidget_C.ExecuteUbergraph_UW-VehicleWidget(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void OnWheelWrecked(int32_t WheelIndex); // Function UW-VehicleWidget.UW-VehicleWidget_C.OnWheelWrecked(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void SetHPColor(float InPercent); // Function UW-VehicleWidget.UW-VehicleWidget_C.SetHPColor(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnSeatOccupantExited(struct Unknown Seat); // Function UW-VehicleWidget.UW-VehicleWidget_C.OnSeatOccupantExited(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnSeatOccupantEntered(struct Unknown Seat); // Function UW-VehicleWidget.UW-VehicleWidget_C.OnSeatOccupantEntered(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void UpdateFuelGauge(); // Function UW-VehicleWidget.UW-VehicleWidget_C.UpdateFuelGauge(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void UpdateSpeedText(); // Function UW-VehicleWidget.UW-VehicleWidget_C.UpdateSpeedText(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Hide(); // Function UW-VehicleWidget.UW-VehicleWidget_C.Hide(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Show(struct Unknown VehicleSeat); // Function UW-VehicleWidget.UW-VehicleWidget_C.Show(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-VehicleWidget.UW-VehicleWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Construct(); // Function UW-VehicleWidget.UW-VehicleWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void SetInfo(float CurFuel, float CurHp, struct FString CurSpeed); // Function UW-VehicleWidget.UW-VehicleWidget_C.SetInfo(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ShowVehicle(); // Function UW-VehicleWidget.UW-VehicleWidget_C.ShowVehicle(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnSeatOccupantEnter(struct Unknown SeatComponent, struct Unknown Occupant); // Function UW-VehicleWidget.UW-VehicleWidget_C.OnSeatOccupantEnter(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void 鉹@ t元_1(struct Unknown SeatComponent, struct Unknown Occupant); // Function UW-VehicleWidget.UW-VehicleWidget_C.鉹@ t元_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void HideVehicle(); // Function UW-VehicleWidget.UW-VehicleWidget_C.HideVehicle(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void SetInterpTarget(); // Function UW-VehicleWidget.UW-VehicleWidget_C.SetInterpTarget(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ExecuteUbergraph_UW-VehicleWidget(int32_t EntryPoint); // Function UW-VehicleWidget.UW-VehicleWidget_C.ExecuteUbergraph_UW-VehicleWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
 };
 
 // Function UW-VehicleWidget.UW-VehicleWidget_C.OnWheelWrecked

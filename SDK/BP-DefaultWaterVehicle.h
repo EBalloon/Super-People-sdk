@@ -8,12 +8,12 @@ public:
 	char IsAnyHit : 0; // 0xD70 (1)
 	struct Unknown LastHitActor; // 0xD78 (8)
 
-	void CheckLastHitActor(); // Function BP-DefaultWaterVehicle.BP-DefaultWaterVehicle_C.CheckLastHitActor(Public|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void IsLandscape(char& IsLandscape); // Function BP-DefaultWaterVehicle.BP-DefaultWaterVehicle_C.IsLandscape(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ReceiveHit(struct Unknown MyComp, struct Unknown Other, struct Unknown OtherComp, char bSelfMoved, struct Unknown HitLocation, struct Unknown HitNormal, struct Unknown NormalImpulse, struct Unknown& Hit); // Function BP-DefaultWaterVehicle.BP-DefaultWaterVehicle_C.ReceiveHit(Event|Public|HasOutParms|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void CheckAnyHit(); // Function BP-DefaultWaterVehicle.BP-DefaultWaterVehicle_C.CheckAnyHit(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ResetGate(); // Function BP-DefaultWaterVehicle.BP-DefaultWaterVehicle_C.ResetGate(BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ExecuteUbergraph_BP-DefaultWaterVehicle(int32_t EntryPoint); // Function BP-DefaultWaterVehicle.BP-DefaultWaterVehicle_C.ExecuteUbergraph_BP-DefaultWaterVehicle(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void CheckLastHitActor(); // Function BP-DefaultWaterVehicle.BP-DefaultWaterVehicle_C.CheckLastHitActor(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void IsLandscape(char& IsLandscape); // Function BP-DefaultWaterVehicle.BP-DefaultWaterVehicle_C.IsLandscape(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
+	void ReceiveHit(struct Unknown MyComp, struct Unknown Other, struct Unknown OtherComp, char bSelfMoved, struct Unknown HitLocation, struct Unknown HitNormal, struct Unknown NormalImpulse, struct Unknown& Hit); // Function BP-DefaultWaterVehicle.BP-DefaultWaterVehicle_C.ReceiveHit(Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void CheckAnyHit(); // Function BP-DefaultWaterVehicle.BP-DefaultWaterVehicle_C.CheckAnyHit(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ResetGate(); // Function BP-DefaultWaterVehicle.BP-DefaultWaterVehicle_C.ResetGate(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ExecuteUbergraph_BP-DefaultWaterVehicle(int32_t EntryPoint); // Function BP-DefaultWaterVehicle.BP-DefaultWaterVehicle_C.ExecuteUbergraph_BP-DefaultWaterVehicle(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
 };
 
 // Function BP-DefaultWaterVehicle.BP-DefaultWaterVehicle_C.CheckLastHitActor

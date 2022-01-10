@@ -16,9 +16,9 @@ public:
 	struct Unknown Image_318; // 0x298 (8)
 	struct Unknown Image_319; // 0x2A0 (8)
 
-	void GetImage(int32_t Index, struct Unknown& Image); // Function Temp.Temp_C.GetImage(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void Set Info(struct TArray<Unknown>& List); // Function Temp.Temp_C.Set Info(HasOutParms|BlueprintCallable|BlueprintEvent) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
-	void ExecuteUbergraph_Temp(int32_t EntryPoint); // Function Temp.Temp_C.ExecuteUbergraph_Temp(Final|UbergraphFunction|HasDefaults) // <BravoHotelClient-Win64-Shipping.protected.exe+0x2B812B0>
+	void GetImage(int32_t Index, struct Unknown& Image); // Function Temp.Temp_C.GetImage(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Set Info(struct TArray<Unknown>& List); // Function Temp.Temp_C.Set Info(HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ExecuteUbergraph_Temp(int32_t EntryPoint); // Function Temp.Temp_C.ExecuteUbergraph_Temp(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
 };
 
 // Function Temp.Temp_C.GetImage
