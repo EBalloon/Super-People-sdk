@@ -3,16 +3,16 @@ class ABP-MagazineBase_C : public ABravoHotelMagazineForDrop {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x350 (8)
-	float PhysicsSimulateTime; // 0x358 (4)
-	float LifeTime; // 0x35C (4)
-	float AddImpulse; // 0x360 (4)
-	char Stance; // 0x364 (1)
-	float AddImpulse_Crouched; // 0x368 (4)
-	float AddImpulse_Proned; // 0x36C (4)
+	struct Unknown UberGraphFrame; // 0x360 (8)
+	float PhysicsSimulateTime; // 0x368 (4)
+	float LifeTime; // 0x36C (4)
+	float AddImpulse; // 0x370 (4)
+	char Stance; // 0x374 (1)
+	float AddImpulse_Crouched; // 0x378 (4)
+	float AddImpulse_Proned; // 0x37C (4)
 
-	void ReceiveBeginPlay(); // Function BP-MagazineBase.BP-MagazineBase_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_BP-MagazineBase(int32_t EntryPoint); // Function BP-MagazineBase.BP-MagazineBase_C.ExecuteUbergraph_BP-MagazineBase(Final|UbergraphFunction) // <Game_BE.exe+0x2B812B0>
+	void ReceiveBeginPlay(); // Function BP-MagazineBase.BP-MagazineBase_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_BP-MagazineBase(int32_t EntryPoint); // Function BP-MagazineBase.BP-MagazineBase_C.ExecuteUbergraph_BP-MagazineBase(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
 };
 
 // Function BP-MagazineBase.BP-MagazineBase_C.ReceiveBeginPlay

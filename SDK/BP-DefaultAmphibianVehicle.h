@@ -3,13 +3,13 @@ class ABP-DefaultAmphibianVehicle_C : public ABP-DefaultWheeledVehicle_C {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0xD60 (8)
+	struct Unknown UberGraphFrame; // 0xD78 (8)
 
-	void ReceiveUnpossessed(struct Unknown OldController); // Function BP-DefaultAmphibianVehicle.BP-DefaultAmphibianVehicle_C.ReceiveUnpossessed(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void PlayCameraShake_ModeChange(); // Function BP-DefaultAmphibianVehicle.BP-DefaultAmphibianVehicle_C.PlayCameraShake_ModeChange(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnPlaySplashParticle(char IsToWater); // Function BP-DefaultAmphibianVehicle.BP-DefaultAmphibianVehicle_C.OnPlaySplashParticle(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnChangedAmphibiousMode(char bTrue); // Function BP-DefaultAmphibianVehicle.BP-DefaultAmphibianVehicle_C.OnChangedAmphibiousMode(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_BP-DefaultAmphibianVehicle(int32_t EntryPoint); // Function BP-DefaultAmphibianVehicle.BP-DefaultAmphibianVehicle_C.ExecuteUbergraph_BP-DefaultAmphibianVehicle(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	void ReceiveUnpossessed(struct Unknown OldController); // Function BP-DefaultAmphibianVehicle.BP-DefaultAmphibianVehicle_C.ReceiveUnpossessed(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void PlayCameraShake_ModeChange(); // Function BP-DefaultAmphibianVehicle.BP-DefaultAmphibianVehicle_C.PlayCameraShake_ModeChange(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnPlaySplashParticle(char IsToWater); // Function BP-DefaultAmphibianVehicle.BP-DefaultAmphibianVehicle_C.OnPlaySplashParticle(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnChangedAmphibiousMode(char bTrue); // Function BP-DefaultAmphibianVehicle.BP-DefaultAmphibianVehicle_C.OnChangedAmphibiousMode(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_BP-DefaultAmphibianVehicle(int32_t EntryPoint); // Function BP-DefaultAmphibianVehicle.BP-DefaultAmphibianVehicle_C.ExecuteUbergraph_BP-DefaultAmphibianVehicle(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function BP-DefaultAmphibianVehicle.BP-DefaultAmphibianVehicle_C.ReceiveUnpossessed

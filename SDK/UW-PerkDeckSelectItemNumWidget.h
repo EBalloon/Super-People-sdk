@@ -7,7 +7,7 @@ public:
 	struct Unknown TextBlock_Selected; // 0x250 (8)
 	int32_t PlayerIndex; // 0x258 (4)
 
-	void SetTeamIndex(int32_t PlayerIndex); // Function UW-PerkDeckSelectItemNumWidget.UW-PerkDeckSelectItemNumWidget_C.SetTeamIndex(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void SetTeamIndex(int32_t PlayerIndex); // Function UW-PerkDeckSelectItemNumWidget.UW-PerkDeckSelectItemNumWidget_C.SetTeamIndex(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-PerkDeckSelectItemNumWidget.UW-PerkDeckSelectItemNumWidget_C.SetTeamIndex

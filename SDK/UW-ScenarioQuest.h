@@ -22,13 +22,13 @@ public:
 	char ActiveQuest : 0; // 0x340 (1)
 	struct TArray<Unknown> PendingQuestInfo; // 0x348 (16)
 
-	void ConsumeQuestInfo(); // Function UW-ScenarioQuest.UW-ScenarioQuest_C.ConsumeQuestInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void CompleteQuest(); // Function UW-ScenarioQuest.UW-ScenarioQuest_C.CompleteQuest(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void UpdateQuestInfo(struct Unknown QuestInfo); // Function UW-ScenarioQuest.UW-ScenarioQuest_C.UpdateQuestInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetQuestInfo(struct Unknown QuestInfo); // Function UW-ScenarioQuest.UW-ScenarioQuest_C.SetQuestInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Finished_98C3A1304432C887E8D12CAE4AA78DFF(); // Function UW-ScenarioQuest.UW-ScenarioQuest_C.Finished_98C3A1304432C887E8D12CAE4AA78DFF(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void CompleteQuestEvent(); // Function UW-ScenarioQuest.UW-ScenarioQuest_C.CompleteQuestEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-ScenarioQuest(int32_t EntryPoint); // Function UW-ScenarioQuest.UW-ScenarioQuest_C.ExecuteUbergraph_UW-ScenarioQuest(Final|UbergraphFunction) // <Game_BE.exe+0x2B812B0>
+	void ConsumeQuestInfo(); // Function UW-ScenarioQuest.UW-ScenarioQuest_C.ConsumeQuestInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CompleteQuest(); // Function UW-ScenarioQuest.UW-ScenarioQuest_C.CompleteQuest(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void UpdateQuestInfo(struct Unknown QuestInfo); // Function UW-ScenarioQuest.UW-ScenarioQuest_C.UpdateQuestInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetQuestInfo(struct Unknown QuestInfo); // Function UW-ScenarioQuest.UW-ScenarioQuest_C.SetQuestInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Finished_98C3A1304432C887E8D12CAE4AA78DFF(); // Function UW-ScenarioQuest.UW-ScenarioQuest_C.Finished_98C3A1304432C887E8D12CAE4AA78DFF(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CompleteQuestEvent(); // Function UW-ScenarioQuest.UW-ScenarioQuest_C.CompleteQuestEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-ScenarioQuest(int32_t EntryPoint); // Function UW-ScenarioQuest.UW-ScenarioQuest_C.ExecuteUbergraph_UW-ScenarioQuest(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-ScenarioQuest.UW-ScenarioQuest_C.ConsumeQuestInfo

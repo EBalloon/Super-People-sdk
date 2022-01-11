@@ -17,8 +17,8 @@ public:
 	struct Unknown UW-KillMessageListWidget_10; // 0x318 (8)
 	struct TArray<Unknown> TmpInfoList; // 0x320 (16)
 
-	void AddKillMessage(struct Unknown& BroadCastInfo); // Function UW-KillInfoWidget.UW-KillInfoWidget_C.AddKillMessage(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-KillInfoWidget(int32_t EntryPoint); // Function UW-KillInfoWidget.UW-KillInfoWidget_C.ExecuteUbergraph_UW-KillInfoWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	void AddKillMessage(struct Unknown& BroadCastInfo); // Function UW-KillInfoWidget.UW-KillInfoWidget_C.AddKillMessage(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-KillInfoWidget(int32_t EntryPoint); // Function UW-KillInfoWidget.UW-KillInfoWidget_C.ExecuteUbergraph_UW-KillInfoWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-KillInfoWidget.UW-KillInfoWidget_C.AddKillMessage

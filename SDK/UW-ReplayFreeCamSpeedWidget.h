@@ -8,9 +8,9 @@ public:
 	struct Unknown T_CamSpeed; // 0x258 (8)
 	struct Unknown Handle_HideFreeCamSpeed; // 0x260 (8)
 
-	void HideFreeCamSpeed(); // Function UW-ReplayFreeCamSpeedWidget.UW-ReplayFreeCamSpeedWidget_C.HideFreeCamSpeed(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ShowFreeCamSpeed(); // Function UW-ReplayFreeCamSpeedWidget.UW-ReplayFreeCamSpeedWidget_C.ShowFreeCamSpeed(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnChangedFreeCamSpeedLevel(float SpeedLevel); // Function UW-ReplayFreeCamSpeedWidget.UW-ReplayFreeCamSpeedWidget_C.OnChangedFreeCamSpeedLevel(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void HideFreeCamSpeed(); // Function UW-ReplayFreeCamSpeedWidget.UW-ReplayFreeCamSpeedWidget_C.HideFreeCamSpeed(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowFreeCamSpeed(); // Function UW-ReplayFreeCamSpeedWidget.UW-ReplayFreeCamSpeedWidget_C.ShowFreeCamSpeed(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnChangedFreeCamSpeedLevel(float SpeedLevel); // Function UW-ReplayFreeCamSpeedWidget.UW-ReplayFreeCamSpeedWidget_C.OnChangedFreeCamSpeedLevel(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-ReplayFreeCamSpeedWidget.UW-ReplayFreeCamSpeedWidget_C.HideFreeCamSpeed

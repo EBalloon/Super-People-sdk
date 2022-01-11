@@ -3,11 +3,11 @@ class ABP-Projectile_Base_C : public ABravoHotelProjectileBullet {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x510 (8)
-	struct Unknown ParticleSystem; // 0x518 (8)
+	struct Unknown UberGraphFrame; // 0x528 (8)
+	struct Unknown ParticleSystem; // 0x530 (8)
 
-	void ReceiveBeginPlay(); // Function BP-Projectile_Base.BP-Projectile_Base_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_BP-Projectile_Base(int32_t EntryPoint); // Function BP-Projectile_Base.BP-Projectile_Base_C.ExecuteUbergraph_BP-Projectile_Base(Final|UbergraphFunction) // <Game_BE.exe+0x2B812B0>
+	void ReceiveBeginPlay(); // Function BP-Projectile_Base.BP-Projectile_Base_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_BP-Projectile_Base(int32_t EntryPoint); // Function BP-Projectile_Base.BP-Projectile_Base_C.ExecuteUbergraph_BP-Projectile_Base(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
 };
 
 // Function BP-Projectile_Base.BP-Projectile_Base_C.ReceiveBeginPlay

@@ -3,37 +3,37 @@ class AChat_System_C : public UActor {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x300 (8)
-	struct Unknown DefaultSceneRoot; // 0x308 (8)
-	struct TArray<Unknown> Muted Players; // 0x310 (16)
-	char Two-way Mute? : 0; // 0x320 (1)
-	struct FString Player Name; // 0x328 (16)
-	struct TArray<Unknown> Players to Message; // 0x338 (16)
-	struct Unknown Game Instance Blueprint; // 0x348 (8)
-	struct TArray<Unknown> Joined Groups; // 0x350 (16)
-	struct TArray<Unknown> Banned Groups; // 0x360 (16)
-	struct TArray<Unknown> Owned Groups; // 0x370 (16)
-	struct Unknown Chat Widget; // 0x380 (8)
-	struct Unknown HUD Widget; // 0x388 (8)
+	struct Unknown UberGraphFrame; // 0x318 (8)
+	struct Unknown DefaultSceneRoot; // 0x320 (8)
+	struct TArray<Unknown> Muted Players; // 0x328 (16)
+	char Two-way Mute? : 0; // 0x338 (1)
+	struct FString Player Name; // 0x340 (16)
+	struct TArray<Unknown> Players to Message; // 0x350 (16)
+	struct Unknown Game Instance Blueprint; // 0x360 (8)
+	struct TArray<Unknown> Joined Groups; // 0x368 (16)
+	struct TArray<Unknown> Banned Groups; // 0x378 (16)
+	struct TArray<Unknown> Owned Groups; // 0x388 (16)
+	struct Unknown Chat Widget; // 0x398 (8)
+	struct Unknown HUD Widget; // 0x3A0 (8)
 
-	void Get Current Group(struct FString& Group); // Function Chat_System.Chat_System_C.Get Current Group(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
-	void Send Chat Message(struct FString Message, struct FString Group); // Function Chat_System.Chat_System_C.Send Chat Message(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Push Item(struct Unknown To:, struct Unknown From:, struct FString Message, struct FString Group, char Display Username?); // Function Chat_System.Chat_System_C.Push Item(Net|NetClient|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Create Group(struct FString Group Name); // Function Chat_System.Chat_System_C.Create Group(Net|NetClient|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Add Global Group on Server(struct FString Group); // Function Chat_System.Chat_System_C.Add Global Group on Server(Net|NetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Join Group(struct FString Group Name); // Function Chat_System.Chat_System_C.Join Group(Net|NetClient|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Add Local Group on Server(struct FString Group Name); // Function Chat_System.Chat_System_C.Add Local Group on Server(Net|NetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Send Chat Message Server(struct FString Message, struct FString Group); // Function Chat_System.Chat_System_C.Send Chat Message Server(Net|NetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Add Player to Chat(); // Function Chat_System.Chat_System_C.Add Player to Chat(Net|NetReliableNetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ReceiveBeginPlay(); // Function Chat_System.Chat_System_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Spawn Chat(); // Function Chat_System.Chat_System_C.Spawn Chat(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Set Keyboard Focus to Chat Input(); // Function Chat_System.Chat_System_C.Set Keyboard Focus to Chat Input(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Leave Group(struct FString Group Name, int32_t Index); // Function Chat_System.Chat_System_C.Leave Group(Net|NetClient|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Remove Local Group on Server(struct FString Group Name); // Function Chat_System.Chat_System_C.Remove Local Group on Server(Net|NetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Add Owned Group on Server(struct FString Group); // Function Chat_System.Chat_System_C.Add Owned Group on Server(Net|NetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Remove Owned Group On Server(struct FString Group); // Function Chat_System.Chat_System_C.Remove Owned Group On Server(Net|NetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Next Tab(char Direction, char Wrap Around at End?); // Function Chat_System.Chat_System_C.Next Tab(Net|NetClient|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_Chat_System(int32_t EntryPoint); // Function Chat_System.Chat_System_C.ExecuteUbergraph_Chat_System(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	void Get Current Group(struct FString& Group); // Function Chat_System.Chat_System_C.Get Current Group(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void Send Chat Message(struct FString Message, struct FString Group); // Function Chat_System.Chat_System_C.Send Chat Message(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Push Item(struct Unknown To:, struct Unknown From:, struct FString Message, struct FString Group, char Display Username?); // Function Chat_System.Chat_System_C.Push Item(Net|NetClient|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Create Group(struct FString Group Name); // Function Chat_System.Chat_System_C.Create Group(Net|NetClient|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Add Global Group on Server(struct FString Group); // Function Chat_System.Chat_System_C.Add Global Group on Server(Net|NetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Join Group(struct FString Group Name); // Function Chat_System.Chat_System_C.Join Group(Net|NetClient|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Add Local Group on Server(struct FString Group Name); // Function Chat_System.Chat_System_C.Add Local Group on Server(Net|NetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Send Chat Message Server(struct FString Message, struct FString Group); // Function Chat_System.Chat_System_C.Send Chat Message Server(Net|NetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Add Player to Chat(); // Function Chat_System.Chat_System_C.Add Player to Chat(Net|NetReliableNetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ReceiveBeginPlay(); // Function Chat_System.Chat_System_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Spawn Chat(); // Function Chat_System.Chat_System_C.Spawn Chat(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Set Keyboard Focus to Chat Input(); // Function Chat_System.Chat_System_C.Set Keyboard Focus to Chat Input(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Leave Group(struct FString Group Name, int32_t Index); // Function Chat_System.Chat_System_C.Leave Group(Net|NetClient|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Remove Local Group on Server(struct FString Group Name); // Function Chat_System.Chat_System_C.Remove Local Group on Server(Net|NetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Add Owned Group on Server(struct FString Group); // Function Chat_System.Chat_System_C.Add Owned Group on Server(Net|NetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Remove Owned Group On Server(struct FString Group); // Function Chat_System.Chat_System_C.Remove Owned Group On Server(Net|NetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Next Tab(char Direction, char Wrap Around at End?); // Function Chat_System.Chat_System_C.Next Tab(Net|NetClient|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_Chat_System(int32_t EntryPoint); // Function Chat_System.Chat_System_C.ExecuteUbergraph_Chat_System(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function Chat_System.Chat_System_C.Get Current Group

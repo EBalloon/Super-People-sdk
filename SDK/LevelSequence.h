@@ -18,10 +18,10 @@ public:
 	struct TMap<Unknown, Unknown> PossessedObjects; // 0x440 (80)
 	struct Unknown* DirectorClass; // 0x490 (8)
 
-	void RemoveMetaDataByClass(struct Unknown* InClass); // Function LevelSequence.LevelSequence.RemoveMetaDataByClass(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD2C30>
-	struct Unknown FindOrAddMetaDataByClass(struct Unknown* InClass); // Function LevelSequence.LevelSequence.FindOrAddMetaDataByClass(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD2590>
-	struct Unknown FindMetaDataByClass(struct Unknown* InClass); // Function LevelSequence.LevelSequence.FindMetaDataByClass(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CD2590>
-	struct Unknown CopyMetaData(struct Unknown InMetaData); // Function LevelSequence.LevelSequence.CopyMetaData(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD2590>
+	void RemoveMetaDataByClass(struct Unknown* InClass); // Function LevelSequence.LevelSequence.RemoveMetaDataByClass(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD1AF0>
+	struct Unknown FindOrAddMetaDataByClass(struct Unknown* InClass); // Function LevelSequence.LevelSequence.FindOrAddMetaDataByClass(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD1450>
+	struct Unknown FindMetaDataByClass(struct Unknown* InClass); // Function LevelSequence.LevelSequence.FindMetaDataByClass(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CD1450>
+	struct Unknown CopyMetaData(struct Unknown InMetaData); // Function LevelSequence.LevelSequence.CopyMetaData(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD1450>
 };
 
 // Class LevelSequence.LevelSequenceBurnInOptions
@@ -33,7 +33,7 @@ public:
 	struct Unknown BurnInClass; // 0x30 (24)
 	struct Unknown Settings; // 0x48 (8)
 
-	void SetBurnIn(struct Unknown InBurnInClass); // Function LevelSequence.LevelSequenceBurnInOptions.SetBurnIn(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3CD2FF0>
+	void SetBurnIn(struct Unknown InBurnInClass); // Function LevelSequence.LevelSequenceBurnInOptions.SetBurnIn(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3CD1EB0>
 };
 
 // Class LevelSequence.LevelSequenceActor
@@ -41,39 +41,39 @@ class ALevelSequenceActor : public UActor {
 
 public:
 
-	struct Unknown PlaybackSettings; // 0x310 (20)
-	struct Unknown SequencePlayer; // 0x328 (8)
-	struct Unknown LevelSequence; // 0x330 (24)
-	struct TArray<Unknown> AdditionalEventReceivers; // 0x348 (16)
-	struct Unknown CameraSettings; // 0x358 (2)
-	struct Unknown BurnInOptions; // 0x360 (8)
-	struct Unknown BindingOverrides; // 0x368 (8)
-	char bAutoPlay : 0; // 0x370 (1)
-	char bOverrideInstanceData : 0; // 0x370 (1)
-	char bReplicatePlayback : 0; // 0x370 (1)
-	struct Unknown DefaultInstanceData; // 0x378 (8)
-	struct Unknown BurnInInstance; // 0x380 (8)
-	char bShowBurnin : 0; // 0x388 (1)
+	struct Unknown PlaybackSettings; // 0x328 (20)
+	struct Unknown SequencePlayer; // 0x340 (8)
+	struct Unknown LevelSequence; // 0x348 (24)
+	struct TArray<Unknown> AdditionalEventReceivers; // 0x360 (16)
+	struct Unknown CameraSettings; // 0x370 (2)
+	struct Unknown BurnInOptions; // 0x378 (8)
+	struct Unknown BindingOverrides; // 0x380 (8)
+	char bAutoPlay : 0; // 0x388 (1)
+	char bOverrideInstanceData : 0; // 0x388 (1)
+	char bReplicatePlayback : 0; // 0x388 (1)
+	struct Unknown DefaultInstanceData; // 0x390 (8)
+	struct Unknown BurnInInstance; // 0x398 (8)
+	char bShowBurnin : 0; // 0x3A0 (1)
 
-	void ShowBurnin(); // Function LevelSequence.LevelSequenceActor.ShowBurnin(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD3350>
-	void SetSequence(struct Unknown InSequence); // Function LevelSequence.LevelSequenceActor.SetSequence(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD32D0>
-	void SetReplicatePlayback(char ReplicatePlayback); // Function LevelSequence.LevelSequenceActor.SetReplicatePlayback(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD3240>
-	void SetEventReceivers(struct TArray<Unknown> AdditionalReceivers); // Function LevelSequence.LevelSequenceActor.SetEventReceivers(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD30F0>
-	void SetBindingByTag(struct FName BindingTag, struct TArray<Unknown>& Actors, char bAllowBindingsFromAsset); // Function LevelSequence.LevelSequenceActor.SetBindingByTag(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3CD2EC0>
-	void SetBinding(struct Unknown Binding, struct TArray<Unknown>& Actors, char bAllowBindingsFromAsset); // Function LevelSequence.LevelSequenceActor.SetBinding(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3CD2D70>
-	void ResetBindings(); // Function LevelSequence.LevelSequenceActor.ResetBindings(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD2D50>
-	void ResetBinding(struct Unknown Binding); // Function LevelSequence.LevelSequenceActor.ResetBinding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD2CA0>
-	void RemoveBindingByTag(struct FName Tag, struct Unknown Actor); // Function LevelSequence.LevelSequenceActor.RemoveBindingByTag(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD2B70>
-	void RemoveBinding(struct Unknown Binding, struct Unknown Actor); // Function LevelSequence.LevelSequenceActor.RemoveBinding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD2A80>
-	void OnLevelSequenceLoaded__DelegateSignature(); // DelegateFunction LevelSequence.LevelSequenceActor.OnLevelSequenceLoaded__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B812B0>
-	struct Unknown LoadSequence(); // Function LevelSequence.LevelSequenceActor.LoadSequence(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CD2A10>
-	void HideBurnin(); // Function LevelSequence.LevelSequenceActor.HideBurnin(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD29F0>
-	struct Unknown GetSequencePlayer(); // Function LevelSequence.LevelSequenceActor.GetSequencePlayer(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CD29A0>
-	struct Unknown GetSequence(); // Function LevelSequence.LevelSequenceActor.GetSequence(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CD2950>
-	struct TArray<Unknown> FindNamedBindings(struct FName Tag); // Function LevelSequence.LevelSequenceActor.FindNamedBindings(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CD2830>
-	struct Unknown FindNamedBinding(struct FName Tag); // Function LevelSequence.LevelSequenceActor.FindNamedBinding(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CD2780>
-	void AddBindingByTag(struct FName BindingTag, struct Unknown Actor, char bAllowBindingsFromAsset); // Function LevelSequence.LevelSequenceActor.AddBindingByTag(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD2480>
-	void AddBinding(struct Unknown Binding, struct Unknown Actor, char bAllowBindingsFromAsset); // Function LevelSequence.LevelSequenceActor.AddBinding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD2340>
+	void ShowBurnin(); // Function LevelSequence.LevelSequenceActor.ShowBurnin(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD2210>
+	void SetSequence(struct Unknown InSequence); // Function LevelSequence.LevelSequenceActor.SetSequence(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD2190>
+	void SetReplicatePlayback(char ReplicatePlayback); // Function LevelSequence.LevelSequenceActor.SetReplicatePlayback(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD2100>
+	void SetEventReceivers(struct TArray<Unknown> AdditionalReceivers); // Function LevelSequence.LevelSequenceActor.SetEventReceivers(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD1FB0>
+	void SetBindingByTag(struct FName BindingTag, struct TArray<Unknown>& Actors, char bAllowBindingsFromAsset); // Function LevelSequence.LevelSequenceActor.SetBindingByTag(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3CD1D80>
+	void SetBinding(struct Unknown Binding, struct TArray<Unknown>& Actors, char bAllowBindingsFromAsset); // Function LevelSequence.LevelSequenceActor.SetBinding(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3CD1C30>
+	void ResetBindings(); // Function LevelSequence.LevelSequenceActor.ResetBindings(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD1C10>
+	void ResetBinding(struct Unknown Binding); // Function LevelSequence.LevelSequenceActor.ResetBinding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD1B60>
+	void RemoveBindingByTag(struct FName Tag, struct Unknown Actor); // Function LevelSequence.LevelSequenceActor.RemoveBindingByTag(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD1A30>
+	void RemoveBinding(struct Unknown Binding, struct Unknown Actor); // Function LevelSequence.LevelSequenceActor.RemoveBinding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD1940>
+	void OnLevelSequenceLoaded__DelegateSignature(); // DelegateFunction LevelSequence.LevelSequenceActor.OnLevelSequenceLoaded__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B80160>
+	struct Unknown LoadSequence(); // Function LevelSequence.LevelSequenceActor.LoadSequence(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CD18D0>
+	void HideBurnin(); // Function LevelSequence.LevelSequenceActor.HideBurnin(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD18B0>
+	struct Unknown GetSequencePlayer(); // Function LevelSequence.LevelSequenceActor.GetSequencePlayer(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CD1860>
+	struct Unknown GetSequence(); // Function LevelSequence.LevelSequenceActor.GetSequence(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CD1810>
+	struct TArray<Unknown> FindNamedBindings(struct FName Tag); // Function LevelSequence.LevelSequenceActor.FindNamedBindings(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CD16F0>
+	struct Unknown FindNamedBinding(struct FName Tag); // Function LevelSequence.LevelSequenceActor.FindNamedBinding(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CD1640>
+	void AddBindingByTag(struct FName BindingTag, struct Unknown Actor, char bAllowBindingsFromAsset); // Function LevelSequence.LevelSequenceActor.AddBindingByTag(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD1340>
+	void AddBinding(struct Unknown Binding, struct Unknown Actor, char bAllowBindingsFromAsset); // Function LevelSequence.LevelSequenceActor.AddBinding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD1200>
 };
 
 // Class LevelSequence.LevelSequenceBurnIn
@@ -84,8 +84,8 @@ public:
 	struct Unknown FrameInformation; // 0x248 (184)
 	struct Unknown LevelSequenceActor; // 0x300 (8)
 
-	void SetSettings(struct Unknown InSettings); // Function LevelSequence.LevelSequenceBurnIn.SetSettings(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	struct Unknown* GetSettingsClass(); // Function LevelSequence.LevelSequenceBurnIn.GetSettingsClass(Native|Event|Public|BlueprintEvent|Const) // <Game_BE.exe+0x3CD29D0>
+	void SetSettings(struct Unknown InSettings); // Function LevelSequence.LevelSequenceBurnIn.SetSettings(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct Unknown* GetSettingsClass(); // Function LevelSequence.LevelSequenceBurnIn.GetSettingsClass(Native|Event|Public|BlueprintEvent|Const) // <Game_BE.exe+0x3CD1890>
 };
 
 // Class LevelSequence.LevelSequenceDirector
@@ -95,7 +95,7 @@ public:
 
 	struct Unknown Player; // 0x28 (8)
 
-	void OnCreated(); // Function LevelSequence.LevelSequenceDirector.OnCreated(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnCreated(); // Function LevelSequence.LevelSequenceDirector.OnCreated(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 };
 
 // Class LevelSequence.LevelSequencePlayer
@@ -105,8 +105,8 @@ public:
 
 	struct FMulticastInlineDelegate OnCameraCut; // 0x890 (16)
 
-	struct Unknown GetActiveCameraComponent(); // Function LevelSequence.LevelSequencePlayer.GetActiveCameraComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CD2910>
-	struct Unknown CreateLevelSequencePlayer(struct Unknown WorldContextObject, struct Unknown LevelSequence, struct Unknown Settings, struct Unknown& OutActor); // Function LevelSequence.LevelSequencePlayer.CreateLevelSequencePlayer(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3CD2610>
+	struct Unknown GetActiveCameraComponent(); // Function LevelSequence.LevelSequencePlayer.GetActiveCameraComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CD17D0>
+	struct Unknown CreateLevelSequencePlayer(struct Unknown WorldContextObject, struct Unknown LevelSequence, struct Unknown Settings, struct Unknown& OutActor); // Function LevelSequence.LevelSequencePlayer.CreateLevelSequencePlayer(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3CD14D0>
 };
 
 // Class LevelSequence.LevelSequenceMediaController
@@ -114,15 +114,15 @@ class ALevelSequenceMediaController : public UActor {
 
 public:
 
-	struct Unknown Sequence; // 0x308 (8)
-	struct Unknown MediaComponent; // 0x310 (8)
-	float ServerStartTimeSeconds; // 0x318 (4)
+	struct Unknown Sequence; // 0x320 (8)
+	struct Unknown MediaComponent; // 0x328 (8)
+	float ServerStartTimeSeconds; // 0x330 (4)
 
-	void SynchronizeToServer(float DesyncThresholdSeconds); // Function LevelSequence.LevelSequenceMediaController.SynchronizeToServer(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD3370>
-	void Play(); // Function LevelSequence.LevelSequenceMediaController.Play(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD2A60>
-	void OnRep_ServerStartTimeSeconds(); // Function LevelSequence.LevelSequenceMediaController.OnRep_ServerStartTimeSeconds(Final|Native|Private) // <Game_BE.exe+0x3CD2A40>
-	struct Unknown GetSequence(); // Function LevelSequence.LevelSequenceMediaController.GetSequence(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CD2980>
-	struct Unknown GetMediaComponent(); // Function LevelSequence.LevelSequenceMediaController.GetMediaComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B6BA20>
+	void SynchronizeToServer(float DesyncThresholdSeconds); // Function LevelSequence.LevelSequenceMediaController.SynchronizeToServer(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD2230>
+	void Play(); // Function LevelSequence.LevelSequenceMediaController.Play(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD1920>
+	void OnRep_ServerStartTimeSeconds(); // Function LevelSequence.LevelSequenceMediaController.OnRep_ServerStartTimeSeconds(Final|Native|Private) // <Game_BE.exe+0x3CD1900>
+	struct Unknown GetSequence(); // Function LevelSequence.LevelSequenceMediaController.GetSequence(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CD1840>
+	struct Unknown GetMediaComponent(); // Function LevelSequence.LevelSequenceMediaController.GetMediaComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B6A8C0>
 };
 
 // ScriptStruct LevelSequence.LevelSequenceCameraSettings

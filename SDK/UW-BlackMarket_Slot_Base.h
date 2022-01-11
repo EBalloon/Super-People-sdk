@@ -17,14 +17,14 @@ public:
 	struct Unknown BlackmarketDataInfo; // 0x2B0 (280)
 	struct TArray<Unknown> ConsoleMultiCommandString; // 0x3C8 (16)
 
-	void SetConsoleMultiCommandString(struct TArray<Unknown>& Str); // Function UW-BlackMarket_Slot_Base.UW-BlackMarket_Slot_Base_C.SetConsoleMultiCommandString(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetItemMultiCommand(struct FName ItemRowName, enum class Unknow ItemType, struct TArray<Unknown>& Command); // Function UW-BlackMarket_Slot_Base.UW-BlackMarket_Slot_Base_C.SetItemMultiCommand(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetData(struct Unknown Data); // Function UW-BlackMarket_Slot_Base.UW-BlackMarket_Slot_Base_C.SetData(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetAmmoInfoForWeapon(struct FName AmmoName, int32_t Count); // Function UW-BlackMarket_Slot_Base.UW-BlackMarket_Slot_Base_C.SetAmmoInfoForWeapon(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetItemType(enum class Unknow ItemType); // Function UW-BlackMarket_Slot_Base.UW-BlackMarket_Slot_Base_C.SetItemType(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void RunCommand(); // Function UW-BlackMarket_Slot_Base.UW-BlackMarket_Slot_Base_C.RunCommand(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetConsoleCommandString(struct FString Str); // Function UW-BlackMarket_Slot_Base.UW-BlackMarket_Slot_Base_C.SetConsoleCommandString(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetItemCommand(struct FName ItemRowName, enum class Unknow ItemType, struct FString Command); // Function UW-BlackMarket_Slot_Base.UW-BlackMarket_Slot_Base_C.SetItemCommand(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void SetConsoleMultiCommandString(struct TArray<Unknown>& Str); // Function UW-BlackMarket_Slot_Base.UW-BlackMarket_Slot_Base_C.SetConsoleMultiCommandString(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetItemMultiCommand(struct FName ItemRowName, enum class Unknow ItemType, struct TArray<Unknown>& Command); // Function UW-BlackMarket_Slot_Base.UW-BlackMarket_Slot_Base_C.SetItemMultiCommand(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetData(struct Unknown Data); // Function UW-BlackMarket_Slot_Base.UW-BlackMarket_Slot_Base_C.SetData(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetAmmoInfoForWeapon(struct FName AmmoName, int32_t Count); // Function UW-BlackMarket_Slot_Base.UW-BlackMarket_Slot_Base_C.SetAmmoInfoForWeapon(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetItemType(enum class Unknow ItemType); // Function UW-BlackMarket_Slot_Base.UW-BlackMarket_Slot_Base_C.SetItemType(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void RunCommand(); // Function UW-BlackMarket_Slot_Base.UW-BlackMarket_Slot_Base_C.RunCommand(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetConsoleCommandString(struct FString Str); // Function UW-BlackMarket_Slot_Base.UW-BlackMarket_Slot_Base_C.SetConsoleCommandString(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetItemCommand(struct FName ItemRowName, enum class Unknow ItemType, struct FString Command); // Function UW-BlackMarket_Slot_Base.UW-BlackMarket_Slot_Base_C.SetItemCommand(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-BlackMarket_Slot_Base.UW-BlackMarket_Slot_Base_C.SetConsoleMultiCommandString

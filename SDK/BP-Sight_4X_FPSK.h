@@ -3,11 +3,11 @@ class ABP-Sight_4X_FPSK_C : public ABP-Sight_Base_C {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x410 (8)
-	struct Unknown Sphere; // 0x418 (8)
+	struct Unknown UberGraphFrame; // 0x428 (8)
+	struct Unknown Sphere; // 0x430 (8)
 
-	void SetTexture5mm(); // Function BP-Sight_4X_FPSK.BP-Sight_4X_FPSK_C.SetTexture5mm(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_BP-Sight_4X_FPSK(int32_t EntryPoint); // Function BP-Sight_4X_FPSK.BP-Sight_4X_FPSK_C.ExecuteUbergraph_BP-Sight_4X_FPSK(Final|UbergraphFunction) // <Game_BE.exe+0x2B812B0>
+	void SetTexture5mm(); // Function BP-Sight_4X_FPSK.BP-Sight_4X_FPSK_C.SetTexture5mm(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_BP-Sight_4X_FPSK(int32_t EntryPoint); // Function BP-Sight_4X_FPSK.BP-Sight_4X_FPSK_C.ExecuteUbergraph_BP-Sight_4X_FPSK(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
 };
 
 // Function BP-Sight_4X_FPSK.BP-Sight_4X_FPSK_C.SetTexture5mm

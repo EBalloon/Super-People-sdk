@@ -5,7 +5,7 @@ public:
 
 	struct Unknown TextBlock_62; // 0x248 (8)
 
-	void Init(struct FString Str); // Function UW-CheatReplayListTitleItem.UW-CheatReplayListTitleItem_C.Init(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Init(struct FString Str); // Function UW-CheatReplayListTitleItem.UW-CheatReplayListTitleItem_C.Init(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-CheatReplayListTitleItem.UW-CheatReplayListTitleItem_C.Init

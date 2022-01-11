@@ -34,9 +34,9 @@ public:
 	enum class Unknow ResourceOverlapPolicy; // 0x3A (1)
 	struct Unknown ChildTask; // 0x60 (8)
 
-	void ReadyForActivation(); // Function GameplayTasks.GameplayTask.ReadyForActivation(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4688730>
-	void GenericGameplayTaskDelegate__DelegateSignature(); // DelegateFunction GameplayTasks.GameplayTask.GenericGameplayTaskDelegate__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B812B0>
-	void EndTask(); // Function GameplayTasks.GameplayTask.EndTask(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x46883E0>
+	void ReadyForActivation(); // Function GameplayTasks.GameplayTask.ReadyForActivation(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x46877C0>
+	void GenericGameplayTaskDelegate__DelegateSignature(); // DelegateFunction GameplayTasks.GameplayTask.GenericGameplayTaskDelegate__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B80160>
+	void EndTask(); // Function GameplayTasks.GameplayTask.EndTask(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4687470>
 };
 
 // Class GameplayTasks.GameplayTask_SpawnActor
@@ -48,9 +48,9 @@ public:
 	struct FMulticastInlineDelegate DidNotSpawn; // 0x78 (16)
 	struct Unknown* ClassToSpawn; // 0xA0 (8)
 
-	struct Unknown SpawnActor(struct TScriptInterface<IUnknown> TaskOwner, struct Unknown SpawnLocation, struct Unknown SpawnRotation, struct Unknown* Class, char bSpawnOnlyOnAuthority); // Function GameplayTasks.GameplayTask_SpawnActor.SpawnActor(Final|Native|Static|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4688750>
-	void FinishSpawningActor(struct Unknown WorldContextObject, struct Unknown SpawnedActor); // Function GameplayTasks.GameplayTask_SpawnActor.FinishSpawningActor(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4688400>
-	char BeginSpawningActor(struct Unknown WorldContextObject, struct Unknown& SpawnedActor); // Function GameplayTasks.GameplayTask_SpawnActor.BeginSpawningActor(Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x4688010>
+	struct Unknown SpawnActor(struct TScriptInterface<IUnknown> TaskOwner, struct Unknown SpawnLocation, struct Unknown SpawnRotation, struct Unknown* Class, char bSpawnOnlyOnAuthority); // Function GameplayTasks.GameplayTask_SpawnActor.SpawnActor(Final|Native|Static|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x46877E0>
+	void FinishSpawningActor(struct Unknown WorldContextObject, struct Unknown SpawnedActor); // Function GameplayTasks.GameplayTask_SpawnActor.FinishSpawningActor(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4687490>
+	char BeginSpawningActor(struct Unknown WorldContextObject, struct Unknown& SpawnedActor); // Function GameplayTasks.GameplayTask_SpawnActor.BeginSpawningActor(Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x46870A0>
 };
 
 // Class GameplayTasks.GameplayTask_TimeLimitedExecution
@@ -69,8 +69,8 @@ public:
 
 	struct FMulticastInlineDelegate OnFinish; // 0x68 (16)
 
-	struct Unknown TaskWaitDelay(struct TScriptInterface<IUnknown> TaskOwner, float Time, char Priority); // Function GameplayTasks.GameplayTask_WaitDelay.TaskWaitDelay(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x4688900>
-	void TaskDelayDelegate__DelegateSignature(); // DelegateFunction GameplayTasks.GameplayTask_WaitDelay.TaskDelayDelegate__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B812B0>
+	struct Unknown TaskWaitDelay(struct TScriptInterface<IUnknown> TaskOwner, float Time, char Priority); // Function GameplayTasks.GameplayTask_WaitDelay.TaskWaitDelay(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x4687990>
+	void TaskDelayDelegate__DelegateSignature(); // DelegateFunction GameplayTasks.GameplayTask_WaitDelay.TaskDelayDelegate__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B80160>
 };
 
 // Class GameplayTasks.GameplayTaskResource
@@ -95,8 +95,8 @@ public:
 	struct TArray<Unknown> KnownTasks; // 0x100 (16)
 	struct FMulticastInlineDelegate OnClaimedResourcesChange; // 0x110 (16)
 
-	void OnRep_SimulatedTasks(); // Function GameplayTasks.GameplayTasksComponent.OnRep_SimulatedTasks(Final|Native|Public) // <Game_BE.exe+0x4688710>
-	enum class Unknow K2_RunGameplayTask(struct TScriptInterface<IUnknown> TaskOwner, struct Unknown Task, char Priority, struct TArray<Unknown> AdditionalRequiredResources, struct TArray<Unknown> AdditionalClaimedResources); // Function GameplayTasks.GameplayTasksComponent.K2_RunGameplayTask(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x46884D0>
+	void OnRep_SimulatedTasks(); // Function GameplayTasks.GameplayTasksComponent.OnRep_SimulatedTasks(Final|Native|Public) // <Game_BE.exe+0x46877A0>
+	enum class Unknow K2_RunGameplayTask(struct TScriptInterface<IUnknown> TaskOwner, struct Unknown Task, char Priority, struct TArray<Unknown> AdditionalRequiredResources, struct TArray<Unknown> AdditionalClaimedResources); // Function GameplayTasks.GameplayTasksComponent.K2_RunGameplayTask(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x4687560>
 };
 
 // Function GameplayTasks.GameplayTask.ReadyForActivation

@@ -301,8 +301,8 @@ public:
 	float HoverSizeMultiplier; // 0x4B8 (4)
 	float PixelHitDistanceThreshold; // 0x4BC (4)
 
-	void UpdateWorldLocalState(char bWorldIn); // Function InteractiveToolsFramework.GizmoBaseComponent.UpdateWorldLocalState(Final|Native|Public) // <Game_BE.exe+0x4825C80>
-	void UpdateHoverState(char bHoveringIn); // Function InteractiveToolsFramework.GizmoBaseComponent.UpdateHoverState(Final|Native|Public) // <Game_BE.exe+0x4825BF0>
+	void UpdateWorldLocalState(char bWorldIn); // Function InteractiveToolsFramework.GizmoBaseComponent.UpdateWorldLocalState(Final|Native|Public) // <Game_BE.exe+0x4824CC0>
+	void UpdateHoverState(char bHoveringIn); // Function InteractiveToolsFramework.GizmoBaseComponent.UpdateHoverState(Final|Native|Public) // <Game_BE.exe+0x4824C30>
 };
 
 // Class InteractiveToolsFramework.GizmoArrowComponent
@@ -431,9 +431,9 @@ class AIntervalGizmoActor : public AGizmoActor {
 
 public:
 
-	struct Unknown UpIntervalComponent; // 0x300 (8)
-	struct Unknown DownIntervalComponent; // 0x308 (8)
-	struct Unknown ForwardIntervalComponent; // 0x310 (8)
+	struct Unknown UpIntervalComponent; // 0x318 (8)
+	struct Unknown DownIntervalComponent; // 0x320 (8)
+	struct Unknown ForwardIntervalComponent; // 0x328 (8)
 };
 
 // Class InteractiveToolsFramework.IntervalGizmo
@@ -626,22 +626,22 @@ class ATransformGizmoActor : public AGizmoActor {
 
 public:
 
-	struct Unknown TranslateX; // 0x300 (8)
-	struct Unknown TranslateY; // 0x308 (8)
-	struct Unknown TranslateZ; // 0x310 (8)
-	struct Unknown TranslateYZ; // 0x318 (8)
-	struct Unknown TranslateXZ; // 0x320 (8)
-	struct Unknown TranslateXY; // 0x328 (8)
-	struct Unknown RotateX; // 0x330 (8)
-	struct Unknown RotateY; // 0x338 (8)
-	struct Unknown RotateZ; // 0x340 (8)
-	struct Unknown UniformScale; // 0x348 (8)
-	struct Unknown AxisScaleX; // 0x350 (8)
-	struct Unknown AxisScaleY; // 0x358 (8)
-	struct Unknown AxisScaleZ; // 0x360 (8)
-	struct Unknown PlaneScaleYZ; // 0x368 (8)
-	struct Unknown PlaneScaleXZ; // 0x370 (8)
-	struct Unknown PlaneScaleXY; // 0x378 (8)
+	struct Unknown TranslateX; // 0x318 (8)
+	struct Unknown TranslateY; // 0x320 (8)
+	struct Unknown TranslateZ; // 0x328 (8)
+	struct Unknown TranslateYZ; // 0x330 (8)
+	struct Unknown TranslateXZ; // 0x338 (8)
+	struct Unknown TranslateXY; // 0x340 (8)
+	struct Unknown RotateX; // 0x348 (8)
+	struct Unknown RotateY; // 0x350 (8)
+	struct Unknown RotateZ; // 0x358 (8)
+	struct Unknown UniformScale; // 0x360 (8)
+	struct Unknown AxisScaleX; // 0x368 (8)
+	struct Unknown AxisScaleY; // 0x370 (8)
+	struct Unknown AxisScaleZ; // 0x378 (8)
+	struct Unknown PlaneScaleYZ; // 0x380 (8)
+	struct Unknown PlaneScaleXZ; // 0x388 (8)
+	struct Unknown PlaneScaleXY; // 0x390 (8)
 };
 
 // Class InteractiveToolsFramework.TransformGizmo

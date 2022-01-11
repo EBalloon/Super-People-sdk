@@ -6,11 +6,11 @@ public:
 	struct Unknown UberGraphFrame; // 0x38 (8)
 	struct Unknown Game Settings Wrapper; // 0x40 (8)
 
-	void Get Settings Instance(struct Unknown& SettingsWrapper); // Function BP-GameSettingManager.BP-GameSettingManager_C.Get Settings Instance(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Run Console Command(struct FString Console Command, char& -); // Function BP-GameSettingManager.BP-GameSettingManager_C.Run Console Command(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Update Audio Channel(char Audio Channel, float Volume, char& -); // Function BP-GameSettingManager.BP-GameSettingManager_C.Update Audio Channel(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ReceiveInit(); // Function BP-GameSettingManager.BP-GameSettingManager_C.ReceiveInit(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_BP-GameSettingManager(int32_t EntryPoint); // Function BP-GameSettingManager.BP-GameSettingManager_C.ExecuteUbergraph_BP-GameSettingManager(Final|UbergraphFunction) // <Game_BE.exe+0x2B812B0>
+	void Get Settings Instance(struct Unknown& SettingsWrapper); // Function BP-GameSettingManager.BP-GameSettingManager_C.Get Settings Instance(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Run Console Command(struct FString Console Command, char& -); // Function BP-GameSettingManager.BP-GameSettingManager_C.Run Console Command(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Update Audio Channel(char Audio Channel, float Volume, char& -); // Function BP-GameSettingManager.BP-GameSettingManager_C.Update Audio Channel(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ReceiveInit(); // Function BP-GameSettingManager.BP-GameSettingManager_C.ReceiveInit(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_BP-GameSettingManager(int32_t EntryPoint); // Function BP-GameSettingManager.BP-GameSettingManager_C.ExecuteUbergraph_BP-GameSettingManager(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
 };
 
 // Function BP-GameSettingManager.BP-GameSettingManager_C.Get Settings Instance

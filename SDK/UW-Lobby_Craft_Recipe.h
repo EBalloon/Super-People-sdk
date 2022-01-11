@@ -24,13 +24,13 @@ public:
 	struct Unknown ArmoryInputRef; // 0x2E8 (8)
 	float CurrentOpacity; // 0x2F0 (4)
 
-	void SetOpacity(); // Function UW-Lobby_Craft_Recipe.UW-Lobby_Craft_Recipe_C.SetOpacity(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void CheckOwn(); // Function UW-Lobby_Craft_Recipe.UW-Lobby_Craft_Recipe_C.CheckOwn(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void InitRecipeItemArray(); // Function UW-Lobby_Craft_Recipe.UW-Lobby_Craft_Recipe_C.InitRecipeItemArray(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetRecipeInfo(int32_t BaseItemID, int32_t MaterialGroupItemID); // Function UW-Lobby_Craft_Recipe.UW-Lobby_Craft_Recipe_C.SetRecipeInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Construct(); // Function UW-Lobby_Craft_Recipe.UW-Lobby_Craft_Recipe_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-Lobby_Craft_Recipe.UW-Lobby_Craft_Recipe_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-Lobby_Craft_Recipe(int32_t EntryPoint); // Function UW-Lobby_Craft_Recipe.UW-Lobby_Craft_Recipe_C.ExecuteUbergraph_UW-Lobby_Craft_Recipe(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	void SetOpacity(); // Function UW-Lobby_Craft_Recipe.UW-Lobby_Craft_Recipe_C.SetOpacity(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CheckOwn(); // Function UW-Lobby_Craft_Recipe.UW-Lobby_Craft_Recipe_C.CheckOwn(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void InitRecipeItemArray(); // Function UW-Lobby_Craft_Recipe.UW-Lobby_Craft_Recipe_C.InitRecipeItemArray(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetRecipeInfo(int32_t BaseItemID, int32_t MaterialGroupItemID); // Function UW-Lobby_Craft_Recipe.UW-Lobby_Craft_Recipe_C.SetRecipeInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Construct(); // Function UW-Lobby_Craft_Recipe.UW-Lobby_Craft_Recipe_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-Lobby_Craft_Recipe.UW-Lobby_Craft_Recipe_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-Lobby_Craft_Recipe(int32_t EntryPoint); // Function UW-Lobby_Craft_Recipe.UW-Lobby_Craft_Recipe_C.ExecuteUbergraph_UW-Lobby_Craft_Recipe(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-Lobby_Craft_Recipe.UW-Lobby_Craft_Recipe_C.SetOpacity

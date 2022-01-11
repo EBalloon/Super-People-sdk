@@ -18,11 +18,11 @@ public:
 	struct Unknown L1D; // 0x2F8 (8)
 	struct Unknown ScrollBarTimer; // 0x300 (8)
 
-	void Construct(); // Function AudioWidget.AudioWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void 鉹@t元_1(struct Unknown Value); // Function AudioWidget.AudioWidget_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__ScrollBox_54_K2Node_ComponentBoundEvent_0_OnUserScrolledEvent__DelegateSignature(float CurrentOffset); // Function AudioWidget.AudioWidget_C.BndEvt__ScrollBox_54_K2Node_ComponentBoundEvent_0_OnUserScrolledEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void CustomEvent(); // Function AudioWidget.AudioWidget_C.CustomEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_AudioWidget(int32_t EntryPoint); // Function AudioWidget.AudioWidget_C.ExecuteUbergraph_AudioWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	void Construct(); // Function AudioWidget.AudioWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void 鉹@t元_1(struct Unknown Value); // Function AudioWidget.AudioWidget_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__ScrollBox_54_K2Node_ComponentBoundEvent_0_OnUserScrolledEvent__DelegateSignature(float CurrentOffset); // Function AudioWidget.AudioWidget_C.BndEvt__ScrollBox_54_K2Node_ComponentBoundEvent_0_OnUserScrolledEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CustomEvent(); // Function AudioWidget.AudioWidget_C.CustomEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_AudioWidget(int32_t EntryPoint); // Function AudioWidget.AudioWidget_C.ExecuteUbergraph_AudioWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function AudioWidget.AudioWidget_C.Construct

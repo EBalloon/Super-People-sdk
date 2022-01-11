@@ -3,10 +3,10 @@ class ABP-TransportAircraft_C : public ATransportAircraftPawn {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x6C0 (8)
+	struct Unknown UberGraphFrame; // 0x6D0 (8)
 
-	void ReceiveTick(float DeltaSeconds); // Function BP-TransportAircraft.BP-TransportAircraft_C.ReceiveTick(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_BP-TransportAircraft(int32_t EntryPoint); // Function BP-TransportAircraft.BP-TransportAircraft_C.ExecuteUbergraph_BP-TransportAircraft(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	void ReceiveTick(float DeltaSeconds); // Function BP-TransportAircraft.BP-TransportAircraft_C.ReceiveTick(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_BP-TransportAircraft(int32_t EntryPoint); // Function BP-TransportAircraft.BP-TransportAircraft_C.ExecuteUbergraph_BP-TransportAircraft(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function BP-TransportAircraft.BP-TransportAircraft_C.ReceiveTick

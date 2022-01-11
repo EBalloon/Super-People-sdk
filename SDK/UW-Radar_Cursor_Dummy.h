@@ -5,7 +5,7 @@ public:
 
 	struct Unknown Image_47; // 0x248 (8)
 
-	void UpdateCursorVisibility(); // Function UW-Radar_Cursor_Dummy.UW-Radar_Cursor_Dummy_C.UpdateCursorVisibility(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void UpdateCursorVisibility(); // Function UW-Radar_Cursor_Dummy.UW-Radar_Cursor_Dummy_C.UpdateCursorVisibility(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-Radar_Cursor_Dummy.UW-Radar_Cursor_Dummy_C.UpdateCursorVisibility

@@ -9,12 +9,12 @@ public:
 	struct Unknown RichTextBlock_321; // 0x260 (8)
 	struct Unknown InventoryRef; // 0x268 (8)
 
-	struct Unknown OnMouseButtonDown_1(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-Inventory_ItemInfoTooltip.UW-Inventory_ItemInfoTooltip_C.OnMouseButtonDown_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void HideInfo(); // Function UW-Inventory_ItemInfoTooltip.UW-Inventory_ItemInfoTooltip_C.HideInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ShowInfo(struct Unknown InvenRef); // Function UW-Inventory_ItemInfoTooltip.UW-Inventory_ItemInfoTooltip_C.ShowInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnMouseLeave(struct Unknown& MouseEvent); // Function UW-Inventory_ItemInfoTooltip.UW-Inventory_ItemInfoTooltip_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ForceCloseInfo(); // Function UW-Inventory_ItemInfoTooltip.UW-Inventory_ItemInfoTooltip_C.ForceCloseInfo(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-Inventory_ItemInfoTooltip(int32_t EntryPoint); // Function UW-Inventory_ItemInfoTooltip.UW-Inventory_ItemInfoTooltip_C.ExecuteUbergraph_UW-Inventory_ItemInfoTooltip(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	struct Unknown OnMouseButtonDown_1(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-Inventory_ItemInfoTooltip.UW-Inventory_ItemInfoTooltip_C.OnMouseButtonDown_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void HideInfo(); // Function UW-Inventory_ItemInfoTooltip.UW-Inventory_ItemInfoTooltip_C.HideInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowInfo(struct Unknown InvenRef); // Function UW-Inventory_ItemInfoTooltip.UW-Inventory_ItemInfoTooltip_C.ShowInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnMouseLeave(struct Unknown& MouseEvent); // Function UW-Inventory_ItemInfoTooltip.UW-Inventory_ItemInfoTooltip_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ForceCloseInfo(); // Function UW-Inventory_ItemInfoTooltip.UW-Inventory_ItemInfoTooltip_C.ForceCloseInfo(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-Inventory_ItemInfoTooltip(int32_t EntryPoint); // Function UW-Inventory_ItemInfoTooltip.UW-Inventory_ItemInfoTooltip_C.ExecuteUbergraph_UW-Inventory_ItemInfoTooltip(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-Inventory_ItemInfoTooltip.UW-Inventory_ItemInfoTooltip_C.OnMouseButtonDown_1

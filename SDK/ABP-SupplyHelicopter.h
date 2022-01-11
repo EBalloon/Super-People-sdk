@@ -7,8 +7,8 @@ public:
 	struct Unknown AnimGraphNode_Root; // 0x278 (48)
 	struct Unknown AnimGraphNode_SequencePlayer; // 0x2A8 (120)
 
-	void AnimGraph(struct Unknown& AnimGraph); // Function ABP-SupplyHelicopter.ABP-SupplyHelicopter_C.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_ABP-SupplyHelicopter(int32_t EntryPoint); // Function ABP-SupplyHelicopter.ABP-SupplyHelicopter_C.ExecuteUbergraph_ABP-SupplyHelicopter(Final|UbergraphFunction) // <Game_BE.exe+0x2B812B0>
+	void AnimGraph(struct Unknown& AnimGraph); // Function ABP-SupplyHelicopter.ABP-SupplyHelicopter_C.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_ABP-SupplyHelicopter(int32_t EntryPoint); // Function ABP-SupplyHelicopter.ABP-SupplyHelicopter_C.ExecuteUbergraph_ABP-SupplyHelicopter(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
 };
 
 // Function ABP-SupplyHelicopter.ABP-SupplyHelicopter_C.AnimGraph

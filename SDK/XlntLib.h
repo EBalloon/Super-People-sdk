@@ -216,45 +216,45 @@ public:
 	struct TArray<Unknown> mSheets; // 0x28 (16)
 	struct Unknown mActiveSheet; // 0x38 (8)
 
-	struct FString Title(); // Function XlntLib.ExcelWorkbook.Title(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x13673D0>
-	char StopWatch(struct Unknown WorldContextObject); // Function XlntLib.ExcelWorkbook.StopWatch(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1366B40>
-	char StartWatch(struct Unknown WorldContextObject, struct FDelegate onChanged, char autoReload, float Rate); // Function XlntLib.ExcelWorkbook.StartWatch(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x13669C0>
-	struct Unknown SheetWithTitle(struct FString Title); // Function XlntLib.ExcelWorkbook.SheetWithTitle(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x13668C0>
-	struct Unknown SheetWithId(int32_t ID); // Function XlntLib.ExcelWorkbook.SheetWithId(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1366830>
-	struct TArray<Unknown> SheetTitles(); // Function XlntLib.ExcelWorkbook.SheetTitles(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x13667B0>
-	int32_t SheetCount(); // Function XlntLib.ExcelWorkbook.SheetCount(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1366780>
-	struct Unknown SheetAt(int32_t Index); // Function XlntLib.ExcelWorkbook.SheetAt(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x13666F0>
-	void SetTitle(struct FString Value); // Function XlntLib.ExcelWorkbook.SetTitle(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1366510>
-	void SetExtendedPropertyValue(enum class Unknow Property, struct Unknown Value); // Function XlntLib.ExcelWorkbook.SetExtendedPropertyValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1365C80>
-	void SetCustomProperty(struct FString Name, struct Unknown Value); // Function XlntLib.ExcelWorkbook.SetCustomProperty(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1365870>
-	void SetCorePropertyValue(enum class Unknow Property, struct Unknown Value); // Function XlntLib.ExcelWorkbook.SetCorePropertyValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x13656A0>
-	void SetBaseDate(enum class Unknow BaseDate); // Function XlntLib.ExcelWorkbook.SetBaseDate(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1365410>
-	void SetActiveSheetWithTitle(struct FString Title); // Function XlntLib.ExcelWorkbook.SetActiveSheetWithTitle(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1365320>
-	void SetActiveSheetAt(int32_t Index); // Function XlntLib.ExcelWorkbook.SetActiveSheetAt(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x13652A0>
-	void SetActiveSheet(struct Unknown sheet); // Function XlntLib.ExcelWorkbook.SetActiveSheet(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1365220>
-	char SaveAs(struct FString Path, char isAbsolutePath, char isSave); // Function XlntLib.ExcelWorkbook.SaveAs(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x13650A0>
-	char Save(); // Function XlntLib.ExcelWorkbook.Save(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1365070>
-	void RemoveSheet(struct Unknown sheet); // Function XlntLib.ExcelWorkbook.RemoveSheet(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1364F60>
-	char Reload(); // Function XlntLib.ExcelWorkbook.Reload(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1364F30>
-	char Load(struct FString fullPath); // Function XlntLib.ExcelWorkbook.Load(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1364640>
-	char HasTitle(); // Function XlntLib.ExcelWorkbook.HasTitle(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1363D10>
-	char HasExtendedProperty(enum class Unknow Property); // Function XlntLib.ExcelWorkbook.HasExtendedProperty(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1363C80>
-	char HasCustomProperty(struct FString Name); // Function XlntLib.ExcelWorkbook.HasCustomProperty(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1363B80>
-	char HasCoreProperty(enum class Unknow Property); // Function XlntLib.ExcelWorkbook.HasCoreProperty(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1363AF0>
-	struct Unknown GetExtendedPropertyValue(enum class Unknow Property); // Function XlntLib.ExcelWorkbook.GetExtendedPropertyValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1363970>
-	struct Unknown GetCustomProperty(struct FString Name); // Function XlntLib.ExcelWorkbook.GetCustomProperty(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1363840>
-	struct Unknown GetCorePropertyValue(enum class Unknow Property); // Function XlntLib.ExcelWorkbook.GetCorePropertyValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1363780>
-	struct Unknown CreateSheet(int32_t Index, char SetActive); // Function XlntLib.ExcelWorkbook.CreateSheet(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1361790>
-	struct Unknown CopySheet(struct Unknown sheet, int32_t Index); // Function XlntLib.ExcelWorkbook.CopySheet(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x13616D0>
-	char ContainsSheet(struct FString Title); // Function XlntLib.ExcelWorkbook.ContainsSheet(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x13615D0>
-	void Clear(); // Function XlntLib.ExcelWorkbook.Clear(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x13612A0>
-	enum class Unknow BaseDate(); // Function XlntLib.ExcelWorkbook.BaseDate(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1360440>
-	void ApplyToCells(struct Unknown WorldContextObject, struct FDelegate onCell); // Function XlntLib.ExcelWorkbook.ApplyToCells(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1360360>
-	struct TArray<Unknown> AllSheets(); // Function XlntLib.ExcelWorkbook.AllSheets(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x13602D0>
-	struct TArray<Unknown> AllExtendedProperties(); // Function XlntLib.ExcelWorkbook.AllExtendedProperties(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x13601D0>
-	struct TArray<Unknown> AllCustomProperties(); // Function XlntLib.ExcelWorkbook.AllCustomProperties(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1360150>
-	struct TArray<Unknown> AllCoreProperties(); // Function XlntLib.ExcelWorkbook.AllCoreProperties(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x13600D0>
-	struct Unknown ActiveSheet(); // Function XlntLib.ExcelWorkbook.ActiveSheet(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x13600A0>
+	struct FString Title(); // Function XlntLib.ExcelWorkbook.Title(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1366FB0>
+	char StopWatch(struct Unknown WorldContextObject); // Function XlntLib.ExcelWorkbook.StopWatch(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1366720>
+	char StartWatch(struct Unknown WorldContextObject, struct FDelegate onChanged, char autoReload, float Rate); // Function XlntLib.ExcelWorkbook.StartWatch(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x13665A0>
+	struct Unknown SheetWithTitle(struct FString Title); // Function XlntLib.ExcelWorkbook.SheetWithTitle(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x13664A0>
+	struct Unknown SheetWithId(int32_t ID); // Function XlntLib.ExcelWorkbook.SheetWithId(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1366410>
+	struct TArray<Unknown> SheetTitles(); // Function XlntLib.ExcelWorkbook.SheetTitles(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1366390>
+	int32_t SheetCount(); // Function XlntLib.ExcelWorkbook.SheetCount(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1366360>
+	struct Unknown SheetAt(int32_t Index); // Function XlntLib.ExcelWorkbook.SheetAt(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x13662D0>
+	void SetTitle(struct FString Value); // Function XlntLib.ExcelWorkbook.SetTitle(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x13660F0>
+	void SetExtendedPropertyValue(enum class Unknow Property, struct Unknown Value); // Function XlntLib.ExcelWorkbook.SetExtendedPropertyValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1365860>
+	void SetCustomProperty(struct FString Name, struct Unknown Value); // Function XlntLib.ExcelWorkbook.SetCustomProperty(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1365450>
+	void SetCorePropertyValue(enum class Unknow Property, struct Unknown Value); // Function XlntLib.ExcelWorkbook.SetCorePropertyValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1365280>
+	void SetBaseDate(enum class Unknow BaseDate); // Function XlntLib.ExcelWorkbook.SetBaseDate(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1364FF0>
+	void SetActiveSheetWithTitle(struct FString Title); // Function XlntLib.ExcelWorkbook.SetActiveSheetWithTitle(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1364F00>
+	void SetActiveSheetAt(int32_t Index); // Function XlntLib.ExcelWorkbook.SetActiveSheetAt(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1364E80>
+	void SetActiveSheet(struct Unknown sheet); // Function XlntLib.ExcelWorkbook.SetActiveSheet(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1364E00>
+	char SaveAs(struct FString Path, char isAbsolutePath, char isSave); // Function XlntLib.ExcelWorkbook.SaveAs(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1364C80>
+	char Save(); // Function XlntLib.ExcelWorkbook.Save(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1364C50>
+	void RemoveSheet(struct Unknown sheet); // Function XlntLib.ExcelWorkbook.RemoveSheet(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1364B40>
+	char Reload(); // Function XlntLib.ExcelWorkbook.Reload(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1364B10>
+	char Load(struct FString fullPath); // Function XlntLib.ExcelWorkbook.Load(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1364220>
+	char HasTitle(); // Function XlntLib.ExcelWorkbook.HasTitle(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x13638F0>
+	char HasExtendedProperty(enum class Unknow Property); // Function XlntLib.ExcelWorkbook.HasExtendedProperty(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1363860>
+	char HasCustomProperty(struct FString Name); // Function XlntLib.ExcelWorkbook.HasCustomProperty(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1363760>
+	char HasCoreProperty(enum class Unknow Property); // Function XlntLib.ExcelWorkbook.HasCoreProperty(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x13636D0>
+	struct Unknown GetExtendedPropertyValue(enum class Unknow Property); // Function XlntLib.ExcelWorkbook.GetExtendedPropertyValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1363550>
+	struct Unknown GetCustomProperty(struct FString Name); // Function XlntLib.ExcelWorkbook.GetCustomProperty(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1363420>
+	struct Unknown GetCorePropertyValue(enum class Unknow Property); // Function XlntLib.ExcelWorkbook.GetCorePropertyValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1363360>
+	struct Unknown CreateSheet(int32_t Index, char SetActive); // Function XlntLib.ExcelWorkbook.CreateSheet(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1361370>
+	struct Unknown CopySheet(struct Unknown sheet, int32_t Index); // Function XlntLib.ExcelWorkbook.CopySheet(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x13612B0>
+	char ContainsSheet(struct FString Title); // Function XlntLib.ExcelWorkbook.ContainsSheet(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x13611B0>
+	void Clear(); // Function XlntLib.ExcelWorkbook.Clear(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1360E80>
+	enum class Unknow BaseDate(); // Function XlntLib.ExcelWorkbook.BaseDate(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1360020>
+	void ApplyToCells(struct Unknown WorldContextObject, struct FDelegate onCell); // Function XlntLib.ExcelWorkbook.ApplyToCells(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x135FF40>
+	struct TArray<Unknown> AllSheets(); // Function XlntLib.ExcelWorkbook.AllSheets(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x135FEB0>
+	struct TArray<Unknown> AllExtendedProperties(); // Function XlntLib.ExcelWorkbook.AllExtendedProperties(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x135FDB0>
+	struct TArray<Unknown> AllCustomProperties(); // Function XlntLib.ExcelWorkbook.AllCustomProperties(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x135FD30>
+	struct TArray<Unknown> AllCoreProperties(); // Function XlntLib.ExcelWorkbook.AllCoreProperties(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x135FCB0>
+	struct Unknown ActiveSheet(); // Function XlntLib.ExcelWorkbook.ActiveSheet(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x135FC80>
 };
 
 // ScriptStruct XlntLib.ExcelAlignment

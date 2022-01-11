@@ -7,7 +7,7 @@ public:
 	struct Unknown UW-Lobby_ItemName; // 0x250 (8)
 	struct Unknown UW-Lobby_WeaponInfo_Stat; // 0x258 (8)
 
-	void SetWeaponInfo(int32_t WeaponItemID); // Function UW-Lobby_WeaponInfo.UW-Lobby_WeaponInfo_C.SetWeaponInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void SetWeaponInfo(int32_t WeaponItemID); // Function UW-Lobby_WeaponInfo.UW-Lobby_WeaponInfo_C.SetWeaponInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-Lobby_WeaponInfo.UW-Lobby_WeaponInfo_C.SetWeaponInfo

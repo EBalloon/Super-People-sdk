@@ -3,30 +3,30 @@ class ABP-PlayerHUD_C : public ABravoHotelPlayerHUD {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x850 (8)
-	struct Unknown DefaultSceneRoot; // 0x858 (8)
-	struct TMap<Unknown, Unknown> TableInfo; // 0x860 (80)
-	struct TArray<Unknown> NewVar_1; // 0x8B0 (16)
-	struct TArray<Unknown> GuideWidgetStack; // 0x8C0 (16)
-	enum class Unknow NewVar_2; // 0x8D0 (1)
+	struct Unknown UberGraphFrame; // 0x868 (8)
+	struct Unknown DefaultSceneRoot; // 0x870 (8)
+	struct TMap<Unknown, Unknown> TableInfo; // 0x878 (80)
+	struct TArray<Unknown> NewVar_1; // 0x8C8 (16)
+	struct TArray<Unknown> GuideWidgetStack; // 0x8D8 (16)
+	enum class Unknow NewVar_2; // 0x8E8 (1)
 
-	void IsSpectate(char& Return); // Function BP-PlayerHUD.BP-PlayerHUD_C.IsSpectate(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
-	void OnShowMyKillInfoMessage(struct Unknown BroadCastInfo); // Function BP-PlayerHUD.BP-PlayerHUD_C.OnShowMyKillInfoMessage(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnShowMyKnockOutInfo(struct FText WeaponName, struct FText Victim, char IsHeadShot, char TeamKill, char SelfKill); // Function BP-PlayerHUD.BP-PlayerHUD_C.OnShowMyKnockOutInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnShowMyKillInfo(struct FText WeaponName, struct FText Victim, int32_t KillCount, char IsHeadShot, char TeamKill, char SelfKill, char FinallyKill); // Function BP-PlayerHUD.BP-PlayerHUD_C.OnShowMyKillInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SelectTopOrBottomWidget(enum class Unknow MessageType, struct Unknown& UserWidget); // Function BP-PlayerHUD.BP-PlayerHUD_C.SelectTopOrBottomWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SelectTable(enum class Unknow TableType, struct Unknown& DataTable); // Function BP-PlayerHUD.BP-PlayerHUD_C.SelectTable(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void HideHUDMessage(enum class Unknow MessageType); // Function BP-PlayerHUD.BP-PlayerHUD_C.HideHUDMessage(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ShowHudMessageAll(); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowHudMessageAll(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ShowHudMessageAt(int32_t MessageTypeNum); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowHudMessageAt(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnAddKillMessageAll(); // Function BP-PlayerHUD.BP-PlayerHUD_C.OnAddKillMessageAll(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ShowHUDMessageAtNum(char ShowNext, int32_t TypeNum); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowHUDMessageAtNum(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ShowKillMessage(struct TArray<Unknown>& DamageTypeArray); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowKillMessage(HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ShowGuideWidget(enum class Unknow GuideType); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowGuideWidget(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void HideGuideWidget(enum class Unknow GuideType); // Function BP-PlayerHUD.BP-PlayerHUD_C.HideGuideWidget(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ShowHUDMessage(struct Unknown MessageRow); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowHUDMessage(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void K2_SetMainAndSpectatorWidgetVisiblility(char bIsVisible, char bMainWidget, char bSpectatorWidget); // Function BP-PlayerHUD.BP-PlayerHUD_C.K2_SetMainAndSpectatorWidgetVisiblility(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_BP-PlayerHUD(int32_t EntryPoint); // Function BP-PlayerHUD.BP-PlayerHUD_C.ExecuteUbergraph_BP-PlayerHUD(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	void IsSpectate(char& Return); // Function BP-PlayerHUD.BP-PlayerHUD_C.IsSpectate(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void OnShowMyKillInfoMessage(struct Unknown BroadCastInfo); // Function BP-PlayerHUD.BP-PlayerHUD_C.OnShowMyKillInfoMessage(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnShowMyKnockOutInfo(struct FText WeaponName, struct FText Victim, char IsHeadShot, char TeamKill, char SelfKill); // Function BP-PlayerHUD.BP-PlayerHUD_C.OnShowMyKnockOutInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnShowMyKillInfo(struct FText WeaponName, struct FText Victim, int32_t KillCount, char IsHeadShot, char TeamKill, char SelfKill, char FinallyKill); // Function BP-PlayerHUD.BP-PlayerHUD_C.OnShowMyKillInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SelectTopOrBottomWidget(enum class Unknow MessageType, struct Unknown& UserWidget); // Function BP-PlayerHUD.BP-PlayerHUD_C.SelectTopOrBottomWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SelectTable(enum class Unknow TableType, struct Unknown& DataTable); // Function BP-PlayerHUD.BP-PlayerHUD_C.SelectTable(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void HideHUDMessage(enum class Unknow MessageType); // Function BP-PlayerHUD.BP-PlayerHUD_C.HideHUDMessage(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowHudMessageAll(); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowHudMessageAll(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowHudMessageAt(int32_t MessageTypeNum); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowHudMessageAt(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnAddKillMessageAll(); // Function BP-PlayerHUD.BP-PlayerHUD_C.OnAddKillMessageAll(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowHUDMessageAtNum(char ShowNext, int32_t TypeNum); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowHUDMessageAtNum(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowKillMessage(struct TArray<Unknown>& DamageTypeArray); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowKillMessage(HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowGuideWidget(enum class Unknow GuideType); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowGuideWidget(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void HideGuideWidget(enum class Unknow GuideType); // Function BP-PlayerHUD.BP-PlayerHUD_C.HideGuideWidget(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowHUDMessage(struct Unknown MessageRow); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowHUDMessage(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void K2_SetMainAndSpectatorWidgetVisiblility(char bIsVisible, char bMainWidget, char bSpectatorWidget); // Function BP-PlayerHUD.BP-PlayerHUD_C.K2_SetMainAndSpectatorWidgetVisiblility(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_BP-PlayerHUD(int32_t EntryPoint); // Function BP-PlayerHUD.BP-PlayerHUD_C.ExecuteUbergraph_BP-PlayerHUD(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function BP-PlayerHUD.BP-PlayerHUD_C.IsSpectate

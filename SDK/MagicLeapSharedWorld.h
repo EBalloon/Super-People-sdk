@@ -3,15 +3,15 @@ class AMagicLeapSharedWorldGameMode : public AGameMode {
 
 public:
 
-	struct Unknown SharedWorldData; // 0x3E8 (16)
-	struct FMulticastInlineDelegate OnNewLocalDataFromClients; // 0x3F8 (16)
-	float PinSelectionConfidenceThreshold; // 0x408 (4)
-	struct Unknown ChosenOne; // 0x4B0 (8)
+	struct Unknown SharedWorldData; // 0x400 (16)
+	struct FMulticastInlineDelegate OnNewLocalDataFromClients; // 0x410 (16)
+	float PinSelectionConfidenceThreshold; // 0x420 (4)
+	struct Unknown ChosenOne; // 0x4C8 (8)
 
-	char SendSharedWorldDataToClients(); // Function MagicLeapSharedWorld.MagicLeapSharedWorldGameMode.SendSharedWorldDataToClients(Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <Game_BE.exe+0x17D4B60>
-	void SelectChosenOne(); // Function MagicLeapSharedWorld.MagicLeapSharedWorldGameMode.SelectChosenOne(BlueprintAuthorityOnly|Native|Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x17D4B40>
-	void MagicLeapOnNewLocalDataFromClients__DelegateSignature(); // DelegateFunction MagicLeapSharedWorld.MagicLeapSharedWorldGameMode.MagicLeapOnNewLocalDataFromClients__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B812B0>
-	void DetermineSharedWorldData(struct Unknown& NewSharedWorldData); // Function MagicLeapSharedWorld.MagicLeapSharedWorldGameMode.DetermineSharedWorldData(BlueprintAuthorityOnly|Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x17D4A20>
+	char SendSharedWorldDataToClients(); // Function MagicLeapSharedWorld.MagicLeapSharedWorldGameMode.SendSharedWorldDataToClients(Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <Game_BE.exe+0x17D4500>
+	void SelectChosenOne(); // Function MagicLeapSharedWorld.MagicLeapSharedWorldGameMode.SelectChosenOne(BlueprintAuthorityOnly|Native|Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x17D44E0>
+	void MagicLeapOnNewLocalDataFromClients__DelegateSignature(); // DelegateFunction MagicLeapSharedWorld.MagicLeapSharedWorldGameMode.MagicLeapOnNewLocalDataFromClients__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B80160>
+	void DetermineSharedWorldData(struct Unknown& NewSharedWorldData); // Function MagicLeapSharedWorld.MagicLeapSharedWorldGameMode.DetermineSharedWorldData(BlueprintAuthorityOnly|Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x17D43C0>
 };
 
 // Class MagicLeapSharedWorld.MagicLeapSharedWorldGameState
@@ -19,15 +19,15 @@ class AMagicLeapSharedWorldGameState : public AGameState {
 
 public:
 
-	struct Unknown SharedWorldData; // 0x370 (16)
-	struct Unknown AlignmentTransforms; // 0x380 (16)
-	struct FMulticastInlineDelegate OnSharedWorldDataUpdated; // 0x390 (16)
-	struct FMulticastInlineDelegate OnAlignmentTransformsUpdated; // 0x3A0 (16)
+	struct Unknown SharedWorldData; // 0x388 (16)
+	struct Unknown AlignmentTransforms; // 0x398 (16)
+	struct FMulticastInlineDelegate OnSharedWorldDataUpdated; // 0x3A8 (16)
+	struct FMulticastInlineDelegate OnAlignmentTransformsUpdated; // 0x3B8 (16)
 
-	void OnReplicate_SharedWorldData(); // Function MagicLeapSharedWorld.MagicLeapSharedWorldGameState.OnReplicate_SharedWorldData(Final|Native|Private) // <Game_BE.exe+0x17D4B20>
-	void OnReplicate_AlignmentTransforms(); // Function MagicLeapSharedWorld.MagicLeapSharedWorldGameState.OnReplicate_AlignmentTransforms(Final|Native|Private) // <Game_BE.exe+0x17D4B00>
-	void MagicLeapSharedWorldEvent__DelegateSignature(); // DelegateFunction MagicLeapSharedWorld.MagicLeapSharedWorldGameState.MagicLeapSharedWorldEvent__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B812B0>
-	struct Unknown CalculateXRCameraRootTransform(); // Function MagicLeapSharedWorld.MagicLeapSharedWorldGameState.CalculateXRCameraRootTransform(Native|Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <Game_BE.exe+0x17D48D0>
+	void OnReplicate_SharedWorldData(); // Function MagicLeapSharedWorld.MagicLeapSharedWorldGameState.OnReplicate_SharedWorldData(Final|Native|Private) // <Game_BE.exe+0x17D44C0>
+	void OnReplicate_AlignmentTransforms(); // Function MagicLeapSharedWorld.MagicLeapSharedWorldGameState.OnReplicate_AlignmentTransforms(Final|Native|Private) // <Game_BE.exe+0x17D44A0>
+	void MagicLeapSharedWorldEvent__DelegateSignature(); // DelegateFunction MagicLeapSharedWorld.MagicLeapSharedWorldGameState.MagicLeapSharedWorldEvent__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B80160>
+	struct Unknown CalculateXRCameraRootTransform(); // Function MagicLeapSharedWorld.MagicLeapSharedWorldGameState.CalculateXRCameraRootTransform(Native|Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <Game_BE.exe+0x17D4270>
 };
 
 // ScriptStruct MagicLeapSharedWorld.MagicLeapSharedWorldSharedData

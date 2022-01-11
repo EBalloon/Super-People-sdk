@@ -27,17 +27,17 @@ public:
 	float KeySizeScale; // 0x4A8 (4)
 	int32_t CurrentLanguage; // 0x4AC (4)
 
-	void CheckLanguage(); // Function UW-CastingWidget.UW-CastingWidget_C.CheckLanguage(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void IsTarget(struct Unknown Target, char& IsTarget); // Function UW-CastingWidget.UW-CastingWidget_C.IsTarget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
-	void RefreshCastingUI(); // Function UW-CastingWidget.UW-CastingWidget_C.RefreshCastingUI(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void UpdateProgress(); // Function UW-CastingWidget.UW-CastingWidget_C.UpdateProgress(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void HideCastingUI(); // Function UW-CastingWidget.UW-CastingWidget_C.HideCastingUI(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ShowCastingUI(struct Unknown CastingInfo); // Function UW-CastingWidget.UW-CastingWidget_C.ShowCastingUI(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-CastingWidget.UW-CastingWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Construct(); // Function UW-CastingWidget.UW-CastingWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetCancelMessage(struct FText Desc); // Function UW-CastingWidget.UW-CastingWidget_C.SetCancelMessage(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void PreConstruct(char IsDesignTime); // Function UW-CastingWidget.UW-CastingWidget_C.PreConstruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-CastingWidget(int32_t EntryPoint); // Function UW-CastingWidget.UW-CastingWidget_C.ExecuteUbergraph_UW-CastingWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	void CheckLanguage(); // Function UW-CastingWidget.UW-CastingWidget_C.CheckLanguage(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void IsTarget(struct Unknown Target, char& IsTarget); // Function UW-CastingWidget.UW-CastingWidget_C.IsTarget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void RefreshCastingUI(); // Function UW-CastingWidget.UW-CastingWidget_C.RefreshCastingUI(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void UpdateProgress(); // Function UW-CastingWidget.UW-CastingWidget_C.UpdateProgress(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void HideCastingUI(); // Function UW-CastingWidget.UW-CastingWidget_C.HideCastingUI(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowCastingUI(struct Unknown CastingInfo); // Function UW-CastingWidget.UW-CastingWidget_C.ShowCastingUI(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-CastingWidget.UW-CastingWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Construct(); // Function UW-CastingWidget.UW-CastingWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetCancelMessage(struct FText Desc); // Function UW-CastingWidget.UW-CastingWidget_C.SetCancelMessage(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void PreConstruct(char IsDesignTime); // Function UW-CastingWidget.UW-CastingWidget_C.PreConstruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-CastingWidget(int32_t EntryPoint); // Function UW-CastingWidget.UW-CastingWidget_C.ExecuteUbergraph_UW-CastingWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-CastingWidget.UW-CastingWidget_C.CheckLanguage

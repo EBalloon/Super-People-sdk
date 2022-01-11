@@ -3,70 +3,70 @@ class UUW-Inventory_MaterialSlot_C : public UUW-Inventory_SlotBase_C {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x1350 (8)
-	struct Unknown Anim_LoopHintMaterial; // 0x1358 (8)
-	struct Unknown Anim_Upgrade; // 0x1360 (8)
-	struct Unknown P_Upgrade_Arrow; // 0x1368 (8)
-	struct Unknown C_SlotHover_ItemState_Hide; // 0x1370 (8)
-	struct Unknown C_SlotHover_ItemState_Show; // 0x1378 (8)
-	struct Unknown Hover_Gold; // 0x1380 (8)
-	struct Unknown P_SlotHover; // 0x1388 (8)
-	struct Unknown BGImage; // 0x1390 (8)
-	struct Unknown CanvasPanel_ITemState; // 0x1398 (8)
-	struct Unknown CanvasPanel_Unnecessary; // 0x13A0 (8)
-	struct Unknown Count; // 0x13A8 (8)
-	struct Unknown Count_Icon; // 0x13B0 (8)
-	struct Unknown fill; // 0x13B8 (8)
-	struct Unknown Hint; // 0x13C0 (8)
-	struct Unknown HoverImage; // 0x13C8 (8)
-	struct Unknown HoverImage_Gold; // 0x13D0 (8)
-	struct Unknown Image_1; // 0x13D8 (8)
-	struct Unknown Image_2; // 0x13E0 (8)
-	struct Unknown Image_95; // 0x13E8 (8)
-	struct Unknown ItemImage; // 0x13F0 (8)
-	struct Unknown ItemNameName; // 0x13F8 (8)
-	struct Unknown ItemState_Text; // 0x1400 (8)
-	struct Unknown LvColor; // 0x1408 (8)
-	struct Unknown NeedMaterial; // 0x1410 (8)
-	struct Unknown OverBG_3; // 0x1418 (8)
-	struct Unknown ProgressBar_136; // 0x1420 (8)
-	struct Unknown SizeBox_1; // 0x1428 (8)
-	struct Unknown WeaponItemImage; // 0x1430 (8)
-	char bGold : 0; // 0x1438 (1)
-	struct Unknown SelectedHoverImage; // 0x1440 (8)
-	struct Unknown MedicalBGColor; // 0x1448 (16)
-	struct FMulticastInlineDelegate SetSlotInfo; // 0x1458 (16)
-	int32_t SlotIndex; // 0x1468 (4)
+	struct Unknown UberGraphFrame; // 0x1358 (8)
+	struct Unknown Anim_LoopHintMaterial; // 0x1360 (8)
+	struct Unknown Anim_Upgrade; // 0x1368 (8)
+	struct Unknown P_Upgrade_Arrow; // 0x1370 (8)
+	struct Unknown C_SlotHover_ItemState_Hide; // 0x1378 (8)
+	struct Unknown C_SlotHover_ItemState_Show; // 0x1380 (8)
+	struct Unknown Hover_Gold; // 0x1388 (8)
+	struct Unknown P_SlotHover; // 0x1390 (8)
+	struct Unknown BGImage; // 0x1398 (8)
+	struct Unknown CanvasPanel_ITemState; // 0x13A0 (8)
+	struct Unknown CanvasPanel_Unnecessary; // 0x13A8 (8)
+	struct Unknown Count; // 0x13B0 (8)
+	struct Unknown Count_Icon; // 0x13B8 (8)
+	struct Unknown fill; // 0x13C0 (8)
+	struct Unknown Hint; // 0x13C8 (8)
+	struct Unknown HoverImage; // 0x13D0 (8)
+	struct Unknown HoverImage_Gold; // 0x13D8 (8)
+	struct Unknown Image_1; // 0x13E0 (8)
+	struct Unknown Image_2; // 0x13E8 (8)
+	struct Unknown Image_95; // 0x13F0 (8)
+	struct Unknown ItemImage; // 0x13F8 (8)
+	struct Unknown ItemNameName; // 0x1400 (8)
+	struct Unknown ItemState_Text; // 0x1408 (8)
+	struct Unknown LvColor; // 0x1410 (8)
+	struct Unknown NeedMaterial; // 0x1418 (8)
+	struct Unknown OverBG_3; // 0x1420 (8)
+	struct Unknown ProgressBar_136; // 0x1428 (8)
+	struct Unknown SizeBox_1; // 0x1430 (8)
+	struct Unknown WeaponItemImage; // 0x1438 (8)
+	char bGold : 0; // 0x1440 (1)
+	struct Unknown SelectedHoverImage; // 0x1448 (8)
+	struct Unknown MedicalBGColor; // 0x1450 (16)
+	struct FMulticastInlineDelegate SetSlotInfo; // 0x1460 (16)
+	int32_t SlotIndex; // 0x1470 (4)
 
-	void Get Weapon Infoby Inventory Item Info(char& bResult, struct Unknown& WeaponInfo); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.Get Weapon Infoby Inventory Item Info(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void CanChange(char& Result); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.CanChange(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
-	void DropQuantity(int32_t Quantity); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.DropQuantity(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetInfo(struct Unknown ItemInfo, int32_t SlotIndex); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.SetInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetItemRarityColor(enum class Unknow CurrentSlot, struct Unknown ImageWidget); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.SetItemRarityColor(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void MouseEnterImpl(); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.MouseEnterImpl(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetWeaponImage_Internal(struct Unknown IconTexture); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.SetWeaponImage_Internal(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	struct Unknown Set Item Image Internal(struct Unknown IconTexture); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.Set Item Image Internal(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void IsDraging(char& bResult); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.IsDraging(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
-	char OnDrop(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.OnDrop(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnDragDetected(struct Unknown MyGeometry, struct Unknown& PointerEvent, struct Unknown& Operation); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.OnDragDetected(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnRButtonClick(char& bResult); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.OnRButtonClick(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	struct Unknown Set_BGImage_Brush_1(); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.Set_BGImage_Brush_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	struct Unknown SetItemImage(); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.SetItemImage(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnLoaded_844D1FE84342B1FFB080F8A6CC651A2C(struct Unknown Loaded); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.OnLoaded_844D1FE84342B1FFB080F8A6CC651A2C(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Construct(); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnMouseLeave(struct Unknown& MouseEvent); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void AsyncLoadIconTexture(struct Unknown IconTexture); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.AsyncLoadIconTexture(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnUpdateCastingDelegateEvent(struct Unknown& CastingInfo, float CastingPercent); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.OnUpdateCastingDelegateEvent(HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Enable(); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.Enable(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Disable(); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.Disable(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void CompleteCombine(); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.CompleteCombine(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void HoverRecipeTree(); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.HoverRecipeTree(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnDragEnter(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.OnDragEnter(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnDragLeave(struct Unknown PointerEvent, struct Unknown Operation); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.OnDragLeave(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-Inventory_MaterialSlot(int32_t EntryPoint); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.ExecuteUbergraph_UW-Inventory_MaterialSlot(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
-	void SetSlotInfo__DelegateSignature(struct Unknown TargetActor, struct Unknown ItemInfo); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.SetSlotInfo__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Get Weapon Infoby Inventory Item Info(char& bResult, struct Unknown& WeaponInfo); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.Get Weapon Infoby Inventory Item Info(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CanChange(char& Result); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.CanChange(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void DropQuantity(int32_t Quantity); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.DropQuantity(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetInfo(struct Unknown ItemInfo, int32_t SlotIndex); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.SetInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetItemRarityColor(enum class Unknow CurrentSlot, struct Unknown ImageWidget); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.SetItemRarityColor(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void MouseEnterImpl(); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.MouseEnterImpl(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetWeaponImage_Internal(struct Unknown IconTexture); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.SetWeaponImage_Internal(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct Unknown Set Item Image Internal(struct Unknown IconTexture); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.Set Item Image Internal(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void IsDraging(char& bResult); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.IsDraging(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	char OnDrop(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.OnDrop(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnDragDetected(struct Unknown MyGeometry, struct Unknown& PointerEvent, struct Unknown& Operation); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.OnDragDetected(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnRButtonClick(char& bResult); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.OnRButtonClick(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct Unknown Set_BGImage_Brush_1(); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.Set_BGImage_Brush_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct Unknown SetItemImage(); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.SetItemImage(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_844D1FE84342B1FFB080F8A6CC651A2C(struct Unknown Loaded); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.OnLoaded_844D1FE84342B1FFB080F8A6CC651A2C(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Construct(); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnMouseLeave(struct Unknown& MouseEvent); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AsyncLoadIconTexture(struct Unknown IconTexture); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.AsyncLoadIconTexture(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnUpdateCastingDelegateEvent(struct Unknown& CastingInfo, float CastingPercent); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.OnUpdateCastingDelegateEvent(HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Enable(); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.Enable(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Disable(); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.Disable(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CompleteCombine(); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.CompleteCombine(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void HoverRecipeTree(); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.HoverRecipeTree(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnDragEnter(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.OnDragEnter(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnDragLeave(struct Unknown PointerEvent, struct Unknown Operation); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.OnDragLeave(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-Inventory_MaterialSlot(int32_t EntryPoint); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.ExecuteUbergraph_UW-Inventory_MaterialSlot(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void SetSlotInfo__DelegateSignature(struct Unknown TargetActor, struct Unknown ItemInfo); // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.SetSlotInfo__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-Inventory_MaterialSlot.UW-Inventory_MaterialSlot_C.Get Weapon Infoby Inventory Item Info

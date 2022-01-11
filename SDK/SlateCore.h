@@ -355,7 +355,8 @@ struct FSlateBrush {
 	struct FName ResourceName; // 0x50 (8)
 	struct Unknown UVRegion; // 0x58 (20)
 	char DrawAs; // 0x6C (1)
-	enum class None tiling; // 0x6D (1)
+	enum class 
+û_4 tiling; // 0x6D (1)
 	char Mirroring; // 0x6E (1)
 	char ImageType; // 0x6F (1)
 	char bIsDynamicallyLoaded : 0; // 0x80 (1)

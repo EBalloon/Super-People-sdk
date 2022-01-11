@@ -8,12 +8,12 @@ public:
 	struct Unknown T_TeamNum; // 0x270 (8)
 	struct Unknown VB_PlayerList; // 0x278 (8)
 
-	void CheckEmptyGroup(); // Function UW-ReplayPlayerListGroupWidget.UW-ReplayPlayerListGroupWidget_C.CheckEmptyGroup(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetTeamColor(); // Function UW-ReplayPlayerListGroupWidget.UW-ReplayPlayerListGroupWidget_C.SetTeamColor(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetTeamNumText(); // Function UW-ReplayPlayerListGroupWidget.UW-ReplayPlayerListGroupWidget_C.SetTeamNumText(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Init(struct Unknown PlayerState); // Function UW-ReplayPlayerListGroupWidget.UW-ReplayPlayerListGroupWidget_C.Init(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void UpdatePlayerInfo(enum class Unknow PlayerListSortType); // Function UW-ReplayPlayerListGroupWidget.UW-ReplayPlayerListGroupWidget_C.UpdatePlayerInfo(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-ReplayPlayerListGroupWidget(int32_t EntryPoint); // Function UW-ReplayPlayerListGroupWidget.UW-ReplayPlayerListGroupWidget_C.ExecuteUbergraph_UW-ReplayPlayerListGroupWidget(Final|UbergraphFunction) // <Game_BE.exe+0x2B812B0>
+	void CheckEmptyGroup(); // Function UW-ReplayPlayerListGroupWidget.UW-ReplayPlayerListGroupWidget_C.CheckEmptyGroup(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetTeamColor(); // Function UW-ReplayPlayerListGroupWidget.UW-ReplayPlayerListGroupWidget_C.SetTeamColor(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetTeamNumText(); // Function UW-ReplayPlayerListGroupWidget.UW-ReplayPlayerListGroupWidget_C.SetTeamNumText(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Init(struct Unknown PlayerState); // Function UW-ReplayPlayerListGroupWidget.UW-ReplayPlayerListGroupWidget_C.Init(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void UpdatePlayerInfo(enum class Unknow PlayerListSortType); // Function UW-ReplayPlayerListGroupWidget.UW-ReplayPlayerListGroupWidget_C.UpdatePlayerInfo(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-ReplayPlayerListGroupWidget(int32_t EntryPoint); // Function UW-ReplayPlayerListGroupWidget.UW-ReplayPlayerListGroupWidget_C.ExecuteUbergraph_UW-ReplayPlayerListGroupWidget(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-ReplayPlayerListGroupWidget.UW-ReplayPlayerListGroupWidget_C.CheckEmptyGroup

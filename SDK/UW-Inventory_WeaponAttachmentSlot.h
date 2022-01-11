@@ -3,45 +3,45 @@ class UUW-Inventory_WeaponAttachmentSlot_C : public UUW-Inventory_SlotBase_C {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x1350 (8)
-	struct Unknown Bg; // 0x1358 (8)
-	struct Unknown BGImage; // 0x1360 (8)
-	struct Unknown BorderImage; // 0x1368 (8)
-	struct Unknown EmptyImage; // 0x1370 (8)
-	struct Unknown ItemImage; // 0x1378 (8)
-	struct Unknown OverImage; // 0x1380 (8)
-	struct Unknown SizeBox_1; // 0x1388 (8)
-	enum class Unknow WeaponAttachmentType; // 0x1390 (1)
-	int32_t WeaponSlotIndex; // 0x1394 (4)
-	char IsHover : 0; // 0x1398 (1)
-	struct Unknown WeaponSlotWidget; // 0x13A0 (8)
-	enum class Unknow WeaponAttachmentUseType; // 0x13A8 (1)
-	int32_t SlotMode; // 0x13AC (4)
-	struct Unknown HoverWidget; // 0x13B0 (8)
+	struct Unknown UberGraphFrame; // 0x1358 (8)
+	struct Unknown Bg; // 0x1360 (8)
+	struct Unknown BGImage; // 0x1368 (8)
+	struct Unknown BorderImage; // 0x1370 (8)
+	struct Unknown EmptyImage; // 0x1378 (8)
+	struct Unknown ItemImage; // 0x1380 (8)
+	struct Unknown OverImage; // 0x1388 (8)
+	struct Unknown SizeBox_1; // 0x1390 (8)
+	enum class Unknow WeaponAttachmentType; // 0x1398 (1)
+	int32_t WeaponSlotIndex; // 0x139C (4)
+	char IsHover : 0; // 0x13A0 (1)
+	struct Unknown WeaponSlotWidget; // 0x13A8 (8)
+	enum class Unknow WeaponAttachmentUseType; // 0x13B0 (1)
+	int32_t SlotMode; // 0x13B4 (4)
+	struct Unknown HoverWidget; // 0x13B8 (8)
 
-	void SetHoverWidgetRef(); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.SetHoverWidgetRef(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetWeaponSlot(struct Unknown WeaponSlot); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.SetWeaponSlot(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnDragDetected(struct Unknown MyGeometry, struct Unknown& PointerEvent, struct Unknown& Operation); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.OnDragDetected(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void IsDraging(char& bResult); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.IsDraging(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnRButtonClick(char& bResult); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.OnRButtonClick(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void UnEquip(); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.UnEquip(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Reset(); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.Reset(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Drop(); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.Drop(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Init(enum class Unknow AttachmentType, enum class Unknow WeaponAttachmentUseType); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.Init(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetInfo(int32_t SlotIndex, struct Unknown InventoryWidget, struct Unknown WeaponSlotWidget, struct Unknown InventoryItemInfo); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.SetInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnLoaded_024BD4794308D2A802E72686E4471A98(struct Unknown Loaded); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.OnLoaded_024BD4794308D2A802E72686E4471A98(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnMouseLeave(struct Unknown& MouseEvent); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Hover(); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.Hover(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ResetEquip(); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.ResetEquip(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Construct(); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void CanEquip(); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.CanEquip(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ResetHover(); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.ResetHover(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SelectEquip(); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.SelectEquip(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void AsyncLoadIconTexture(struct Unknown IconTexture); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.AsyncLoadIconTexture(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ResetSelectEquip(); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.ResetSelectEquip(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void MouseLeave(); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.MouseLeave(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-Inventory_WeaponAttachmentSlot(int32_t EntryPoint); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.ExecuteUbergraph_UW-Inventory_WeaponAttachmentSlot(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	void SetHoverWidgetRef(); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.SetHoverWidgetRef(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetWeaponSlot(struct Unknown WeaponSlot); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.SetWeaponSlot(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnDragDetected(struct Unknown MyGeometry, struct Unknown& PointerEvent, struct Unknown& Operation); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.OnDragDetected(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void IsDraging(char& bResult); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.IsDraging(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnRButtonClick(char& bResult); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.OnRButtonClick(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void UnEquip(); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.UnEquip(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Reset(); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.Reset(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Drop(); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.Drop(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Init(enum class Unknow AttachmentType, enum class Unknow WeaponAttachmentUseType); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.Init(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetInfo(int32_t SlotIndex, struct Unknown InventoryWidget, struct Unknown WeaponSlotWidget, struct Unknown InventoryItemInfo); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.SetInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_024BD4794308D2A802E72686E4471A98(struct Unknown Loaded); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.OnLoaded_024BD4794308D2A802E72686E4471A98(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnMouseLeave(struct Unknown& MouseEvent); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Hover(); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.Hover(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ResetEquip(); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.ResetEquip(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Construct(); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CanEquip(); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.CanEquip(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ResetHover(); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.ResetHover(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SelectEquip(); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.SelectEquip(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AsyncLoadIconTexture(struct Unknown IconTexture); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.AsyncLoadIconTexture(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ResetSelectEquip(); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.ResetSelectEquip(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void MouseLeave(); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.MouseLeave(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-Inventory_WeaponAttachmentSlot(int32_t EntryPoint); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.ExecuteUbergraph_UW-Inventory_WeaponAttachmentSlot(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.SetHoverWidgetRef

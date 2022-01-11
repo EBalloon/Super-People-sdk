@@ -3,10 +3,10 @@ class ABP-Weapon_M16A4_LV6_A_C : public ABP-Weapon_M16A4_LV1_C {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x22A0 (8)
+	struct Unknown UberGraphFrame; // 0x22B0 (8)
 
-	void ReceiveBeginPlay(); // Function BP-Weapon_M16A4_LV6_A.BP-Weapon_M16A4_LV6_A_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_BP-Weapon_M16A4_LV6_A(int32_t EntryPoint); // Function BP-Weapon_M16A4_LV6_A.BP-Weapon_M16A4_LV6_A_C.ExecuteUbergraph_BP-Weapon_M16A4_LV6_A(Final|UbergraphFunction) // <Game_BE.exe+0x2B812B0>
+	void ReceiveBeginPlay(); // Function BP-Weapon_M16A4_LV6_A.BP-Weapon_M16A4_LV6_A_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_BP-Weapon_M16A4_LV6_A(int32_t EntryPoint); // Function BP-Weapon_M16A4_LV6_A.BP-Weapon_M16A4_LV6_A_C.ExecuteUbergraph_BP-Weapon_M16A4_LV6_A(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
 };
 
 // Function BP-Weapon_M16A4_LV6_A.BP-Weapon_M16A4_LV6_A_C.ReceiveBeginPlay

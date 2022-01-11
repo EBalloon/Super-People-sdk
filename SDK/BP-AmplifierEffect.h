@@ -3,26 +3,26 @@ class ABP-AmplifierEffect_C : public UActor {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x300 (8)
-	struct Unknown Widget; // 0x308 (8)
-	struct Unknown DefaultSceneRoot; // 0x310 (8)
-	struct Unknown TargetCharacter; // 0x318 (8)
-	struct Unknown LoudnessCurve; // 0x320 (8)
-	float AmplifierLength; // 0x328 (4)
-	enum class Unknow TagetGroundState; // 0x32C (1)
-	char IsFiring : 0; // 0x32D (1)
-	struct Unknown CurrentWeapon; // 0x330 (8)
-	struct Unknown SingleTimerEvent; // 0x338 (8)
-	char IsSingleFiring : 0; // 0x340 (1)
+	struct Unknown UberGraphFrame; // 0x318 (8)
+	struct Unknown Widget; // 0x320 (8)
+	struct Unknown DefaultSceneRoot; // 0x328 (8)
+	struct Unknown TargetCharacter; // 0x330 (8)
+	struct Unknown LoudnessCurve; // 0x338 (8)
+	float AmplifierLength; // 0x340 (4)
+	enum class Unknow TagetGroundState; // 0x344 (1)
+	char IsFiring : 0; // 0x345 (1)
+	struct Unknown CurrentWeapon; // 0x348 (8)
+	struct Unknown SingleTimerEvent; // 0x350 (8)
+	char IsSingleFiring : 0; // 0x358 (1)
 
-	void OnCharacterMovementUpdated_tじ_1(float DeltaSeconds, struct Unknown OldLocation, struct Unknown OldVelocity); // Function BP-AmplifierEffect.BP-AmplifierEffect_C.OnCharacterMovementUpdated_tじ_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnCharacterGroundStateChangeDelegate_tじ_1(enum class Unknow State); // Function BP-AmplifierEffect.BP-AmplifierEffect_C.OnCharacterGroundStateChangeDelegate_tじ_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ReceiveTick(float DeltaSeconds); // Function BP-AmplifierEffect.BP-AmplifierEffect_C.ReceiveTick(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetTarget(struct Unknown TargetCharacter, float AmplifierLength); // Function BP-AmplifierEffect.BP-AmplifierEffect_C.SetTarget(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void CharacterMovementEvent(float DeltaSeconds, struct Unknown OldLocation, struct Unknown OldVelocity); // Function BP-AmplifierEffect.BP-AmplifierEffect_C.CharacterMovementEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnStartSimulateFire(); // Function BP-AmplifierEffect.BP-AmplifierEffect_C.OnStartSimulateFire(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SingleStopEvent(); // Function BP-AmplifierEffect.BP-AmplifierEffect_C.SingleStopEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_BP-AmplifierEffect(int32_t EntryPoint); // Function BP-AmplifierEffect.BP-AmplifierEffect_C.ExecuteUbergraph_BP-AmplifierEffect(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	void OnCharacterMovementUpdated_tじ_1(float DeltaSeconds, struct Unknown OldLocation, struct Unknown OldVelocity); // Function BP-AmplifierEffect.BP-AmplifierEffect_C.OnCharacterMovementUpdated_tじ_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnCharacterGroundStateChangeDelegate_tじ_1(enum class Unknow State); // Function BP-AmplifierEffect.BP-AmplifierEffect_C.OnCharacterGroundStateChangeDelegate_tじ_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ReceiveTick(float DeltaSeconds); // Function BP-AmplifierEffect.BP-AmplifierEffect_C.ReceiveTick(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetTarget(struct Unknown TargetCharacter, float AmplifierLength); // Function BP-AmplifierEffect.BP-AmplifierEffect_C.SetTarget(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CharacterMovementEvent(float DeltaSeconds, struct Unknown OldLocation, struct Unknown OldVelocity); // Function BP-AmplifierEffect.BP-AmplifierEffect_C.CharacterMovementEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnStartSimulateFire(); // Function BP-AmplifierEffect.BP-AmplifierEffect_C.OnStartSimulateFire(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SingleStopEvent(); // Function BP-AmplifierEffect.BP-AmplifierEffect_C.SingleStopEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_BP-AmplifierEffect(int32_t EntryPoint); // Function BP-AmplifierEffect.BP-AmplifierEffect_C.ExecuteUbergraph_BP-AmplifierEffect(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function BP-AmplifierEffect.BP-AmplifierEffect_C.OnCharacterMovementUpdated_tじ_1

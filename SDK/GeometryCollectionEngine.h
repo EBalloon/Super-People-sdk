@@ -70,20 +70,20 @@ public:
 	struct FMulticastInlineDelegate OnBreakingEvents; // 0x328 (16)
 	struct FMulticastInlineDelegate OnTrailingEvents; // 0x338 (16)
 
-	void SortTrailingEvents(struct TArray<Unknown>& TrailingEvents, enum class Unknow SortMethod); // Function GeometryCollectionEngine.ChaosDestructionListener.SortTrailingEvents(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x48006B0>
-	void SortCollisionEvents(struct TArray<Unknown>& CollisionEvents, enum class Unknow SortMethod); // Function GeometryCollectionEngine.ChaosDestructionListener.SortCollisionEvents(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x48005B0>
-	void SortBreakingEvents(struct TArray<Unknown>& BreakingEvents, enum class Unknow SortMethod); // Function GeometryCollectionEngine.ChaosDestructionListener.SortBreakingEvents(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x48004B0>
-	void SetTrailingEventRequestSettings(struct Unknown& InSettings); // Function GeometryCollectionEngine.ChaosDestructionListener.SetTrailingEventRequestSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x4800410>
-	void SetTrailingEventEnabled(char bIsEnabled); // Function GeometryCollectionEngine.ChaosDestructionListener.SetTrailingEventEnabled(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4800380>
-	void SetCollisionEventRequestSettings(struct Unknown& InSettings); // Function GeometryCollectionEngine.ChaosDestructionListener.SetCollisionEventRequestSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x4800250>
-	void SetCollisionEventEnabled(char bIsEnabled); // Function GeometryCollectionEngine.ChaosDestructionListener.SetCollisionEventEnabled(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x48001C0>
-	void SetBreakingEventRequestSettings(struct Unknown& InSettings); // Function GeometryCollectionEngine.ChaosDestructionListener.SetBreakingEventRequestSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x4800120>
-	void SetBreakingEventEnabled(char bIsEnabled); // Function GeometryCollectionEngine.ChaosDestructionListener.SetBreakingEventEnabled(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4800090>
-	void RemoveGeometryCollectionActor(struct Unknown GeometryCollectionActor); // Function GeometryCollectionEngine.ChaosDestructionListener.RemoveGeometryCollectionActor(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4800010>
-	void RemoveChaosSolverActor(struct Unknown ChaosSolverActor); // Function GeometryCollectionEngine.ChaosDestructionListener.RemoveChaosSolverActor(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16CA440>
-	char IsEventListening(); // Function GeometryCollectionEngine.ChaosDestructionListener.IsEventListening(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x47FFE60>
-	void AddGeometryCollectionActor(struct Unknown GeometryCollectionActor); // Function GeometryCollectionEngine.ChaosDestructionListener.AddGeometryCollectionActor(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x47FFBA0>
-	void AddChaosSolverActor(struct Unknown ChaosSolverActor); // Function GeometryCollectionEngine.ChaosDestructionListener.AddChaosSolverActor(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16CA440>
+	void SortTrailingEvents(struct TArray<Unknown>& TrailingEvents, enum class Unknow SortMethod); // Function GeometryCollectionEngine.ChaosDestructionListener.SortTrailingEvents(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x47FF700>
+	void SortCollisionEvents(struct TArray<Unknown>& CollisionEvents, enum class Unknow SortMethod); // Function GeometryCollectionEngine.ChaosDestructionListener.SortCollisionEvents(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x47FF600>
+	void SortBreakingEvents(struct TArray<Unknown>& BreakingEvents, enum class Unknow SortMethod); // Function GeometryCollectionEngine.ChaosDestructionListener.SortBreakingEvents(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x47FF500>
+	void SetTrailingEventRequestSettings(struct Unknown& InSettings); // Function GeometryCollectionEngine.ChaosDestructionListener.SetTrailingEventRequestSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x47FF460>
+	void SetTrailingEventEnabled(char bIsEnabled); // Function GeometryCollectionEngine.ChaosDestructionListener.SetTrailingEventEnabled(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x47FF3D0>
+	void SetCollisionEventRequestSettings(struct Unknown& InSettings); // Function GeometryCollectionEngine.ChaosDestructionListener.SetCollisionEventRequestSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x47FF2A0>
+	void SetCollisionEventEnabled(char bIsEnabled); // Function GeometryCollectionEngine.ChaosDestructionListener.SetCollisionEventEnabled(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x47FF210>
+	void SetBreakingEventRequestSettings(struct Unknown& InSettings); // Function GeometryCollectionEngine.ChaosDestructionListener.SetBreakingEventRequestSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x47FF170>
+	void SetBreakingEventEnabled(char bIsEnabled); // Function GeometryCollectionEngine.ChaosDestructionListener.SetBreakingEventEnabled(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x47FF0E0>
+	void RemoveGeometryCollectionActor(struct Unknown GeometryCollectionActor); // Function GeometryCollectionEngine.ChaosDestructionListener.RemoveGeometryCollectionActor(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x47FF060>
+	void RemoveChaosSolverActor(struct Unknown ChaosSolverActor); // Function GeometryCollectionEngine.ChaosDestructionListener.RemoveChaosSolverActor(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16C9DF0>
+	char IsEventListening(); // Function GeometryCollectionEngine.ChaosDestructionListener.IsEventListening(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x47FEEB0>
+	void AddGeometryCollectionActor(struct Unknown GeometryCollectionActor); // Function GeometryCollectionEngine.ChaosDestructionListener.AddGeometryCollectionActor(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x47FEBF0>
+	void AddChaosSolverActor(struct Unknown ChaosSolverActor); // Function GeometryCollectionEngine.ChaosDestructionListener.AddChaosSolverActor(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16C9DF0>
 };
 
 // Class GeometryCollectionEngine.GeometryCollectionActor
@@ -91,10 +91,10 @@ class AGeometryCollectionActor : public UActor {
 
 public:
 
-	struct Unknown GeometryCollectionComponent; // 0x300 (8)
-	struct Unknown GeometryCollectionDebugDrawComponent; // 0x308 (8)
+	struct Unknown GeometryCollectionComponent; // 0x318 (8)
+	struct Unknown GeometryCollectionDebugDrawComponent; // 0x320 (8)
 
-	char RaycastSingle(struct Unknown Start, struct Unknown End, struct Unknown& OutHit); // Function GeometryCollectionEngine.GeometryCollectionActor.RaycastSingle(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x47FFE90>
+	char RaycastSingle(struct Unknown Start, struct Unknown End, struct Unknown& OutHit); // Function GeometryCollectionEngine.GeometryCollectionActor.RaycastSingle(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x47FEEE0>
 };
 
 // Class GeometryCollectionEngine.GeometryCollectionCache
@@ -141,12 +141,12 @@ public:
 	char bNotifyCollisions : 0; // 0x6F9 (1)
 	struct Unknown DummyBodySetup; // 0x958 (8)
 
-	void SetNotifyBreaks(char bNewNotifyBreaks); // Function GeometryCollectionEngine.GeometryCollectionComponent.SetNotifyBreaks(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x48002F0>
-	void ReceivePhysicsCollision(struct Unknown& CollisionInfo); // Function GeometryCollectionEngine.GeometryCollectionComponent.ReceivePhysicsCollision(Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void NotifyGeometryCollectionPhysicsStateChange__DelegateSignature(struct Unknown FracturedComponent); // DelegateFunction GeometryCollectionEngine.GeometryCollectionComponent.NotifyGeometryCollectionPhysicsStateChange__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B812B0>
-	void NotifyGeometryCollectionPhysicsLoadingStateChange__DelegateSignature(struct Unknown FracturedComponent); // DelegateFunction GeometryCollectionEngine.GeometryCollectionComponent.NotifyGeometryCollectionPhysicsLoadingStateChange__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B812B0>
-	void ApplyPhysicsField(char Enabled, enum class Unknow Target, struct Unknown MetaData, struct Unknown Field); // Function GeometryCollectionEngine.GeometryCollectionComponent.ApplyPhysicsField(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x47FFCF0>
-	void ApplyKinematicField(float Radius, struct Unknown Position); // Function GeometryCollectionEngine.GeometryCollectionComponent.ApplyKinematicField(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x47FFC20>
+	void SetNotifyBreaks(char bNewNotifyBreaks); // Function GeometryCollectionEngine.GeometryCollectionComponent.SetNotifyBreaks(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x47FF340>
+	void ReceivePhysicsCollision(struct Unknown& CollisionInfo); // Function GeometryCollectionEngine.GeometryCollectionComponent.ReceivePhysicsCollision(Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void NotifyGeometryCollectionPhysicsStateChange__DelegateSignature(struct Unknown FracturedComponent); // DelegateFunction GeometryCollectionEngine.GeometryCollectionComponent.NotifyGeometryCollectionPhysicsStateChange__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B80160>
+	void NotifyGeometryCollectionPhysicsLoadingStateChange__DelegateSignature(struct Unknown FracturedComponent); // DelegateFunction GeometryCollectionEngine.GeometryCollectionComponent.NotifyGeometryCollectionPhysicsLoadingStateChange__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B80160>
+	void ApplyPhysicsField(char Enabled, enum class Unknow Target, struct Unknown MetaData, struct Unknown Field); // Function GeometryCollectionEngine.GeometryCollectionComponent.ApplyPhysicsField(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x47FED40>
+	void ApplyKinematicField(float Radius, struct Unknown Position); // Function GeometryCollectionEngine.GeometryCollectionComponent.ApplyKinematicField(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x47FEC70>
 };
 
 // Class GeometryCollectionEngine.GeometryCollectionDebugDrawActor
@@ -154,67 +154,67 @@ class AGeometryCollectionDebugDrawActor : public UActor {
 
 public:
 
-	struct Unknown WarningMessage; // 0x300 (1)
-	struct Unknown SelectedRigidBody; // 0x308 (24)
-	char bDebugDrawWholeCollection : 0; // 0x320 (1)
-	char bDebugDrawHierarchy : 0; // 0x321 (1)
-	char bDebugDrawClustering : 0; // 0x322 (1)
-	enum class Unknow HideGeometry; // 0x323 (1)
-	char bShowRigidBodyId : 0; // 0x324 (1)
-	char bShowRigidBodyCollision : 0; // 0x325 (1)
-	char bCollisionAtOrigin : 0; // 0x326 (1)
-	char bShowRigidBodyTransform : 0; // 0x327 (1)
-	char bShowRigidBodyInertia : 0; // 0x328 (1)
-	char bShowRigidBodyVelocity : 0; // 0x329 (1)
-	char bShowRigidBodyForce : 0; // 0x32A (1)
-	char bShowRigidBodyInfos : 0; // 0x32B (1)
-	char bShowTransformIndex : 0; // 0x32C (1)
-	char bShowTransform : 0; // 0x32D (1)
-	char bShowParent : 0; // 0x32E (1)
-	char bShowLevel : 0; // 0x32F (1)
-	char bShowConnectivityEdges : 0; // 0x330 (1)
-	char bShowGeometryIndex : 0; // 0x331 (1)
-	char bShowGeometryTransform : 0; // 0x332 (1)
-	char bShowBoundingBox : 0; // 0x333 (1)
-	char bShowFaces : 0; // 0x334 (1)
-	char bShowFaceIndices : 0; // 0x335 (1)
-	char bShowFaceNormals : 0; // 0x336 (1)
-	char bShowSingleFace : 0; // 0x337 (1)
-	int32_t SingleFaceIndex; // 0x338 (4)
-	char bShowVertices : 0; // 0x33C (1)
-	char bShowVertexIndices : 0; // 0x33D (1)
-	char bShowVertexNormals : 0; // 0x33E (1)
-	char bUseActiveVisualization : 0; // 0x33F (1)
-	float PointThickness; // 0x340 (4)
-	float LineThickness; // 0x344 (4)
-	char bTextShadow : 0; // 0x348 (1)
-	float TextScale; // 0x34C (4)
-	float NormalScale; // 0x350 (4)
-	float AxisScale; // 0x354 (4)
-	float ArrowScale; // 0x358 (4)
-	struct Unknown RigidBodyIdColor; // 0x35C (4)
-	float RigidBodyTransformScale; // 0x360 (4)
-	struct Unknown RigidBodyCollisionColor; // 0x364 (4)
-	struct Unknown RigidBodyInertiaColor; // 0x368 (4)
-	struct Unknown RigidBodyVelocityColor; // 0x36C (4)
-	struct Unknown RigidBodyForceColor; // 0x370 (4)
-	struct Unknown RigidBodyInfoColor; // 0x374 (4)
-	struct Unknown TransformIndexColor; // 0x378 (4)
-	float TransformScale; // 0x37C (4)
-	struct Unknown LevelColor; // 0x380 (4)
-	struct Unknown ParentColor; // 0x384 (4)
-	float ConnectivityEdgeThickness; // 0x388 (4)
-	struct Unknown GeometryIndexColor; // 0x38C (4)
-	float GeometryTransformScale; // 0x390 (4)
-	struct Unknown BoundingBoxColor; // 0x394 (4)
-	struct Unknown FaceColor; // 0x398 (4)
-	struct Unknown FaceIndexColor; // 0x39C (4)
-	struct Unknown FaceNormalColor; // 0x3A0 (4)
-	struct Unknown SingleFaceColor; // 0x3A4 (4)
-	struct Unknown VertexColor; // 0x3A8 (4)
-	struct Unknown VertexIndexColor; // 0x3AC (4)
-	struct Unknown VertexNormalColor; // 0x3B0 (4)
-	struct Unknown SpriteComponent; // 0x3B8 (8)
+	struct Unknown WarningMessage; // 0x318 (1)
+	struct Unknown SelectedRigidBody; // 0x320 (24)
+	char bDebugDrawWholeCollection : 0; // 0x338 (1)
+	char bDebugDrawHierarchy : 0; // 0x339 (1)
+	char bDebugDrawClustering : 0; // 0x33A (1)
+	enum class Unknow HideGeometry; // 0x33B (1)
+	char bShowRigidBodyId : 0; // 0x33C (1)
+	char bShowRigidBodyCollision : 0; // 0x33D (1)
+	char bCollisionAtOrigin : 0; // 0x33E (1)
+	char bShowRigidBodyTransform : 0; // 0x33F (1)
+	char bShowRigidBodyInertia : 0; // 0x340 (1)
+	char bShowRigidBodyVelocity : 0; // 0x341 (1)
+	char bShowRigidBodyForce : 0; // 0x342 (1)
+	char bShowRigidBodyInfos : 0; // 0x343 (1)
+	char bShowTransformIndex : 0; // 0x344 (1)
+	char bShowTransform : 0; // 0x345 (1)
+	char bShowParent : 0; // 0x346 (1)
+	char bShowLevel : 0; // 0x347 (1)
+	char bShowConnectivityEdges : 0; // 0x348 (1)
+	char bShowGeometryIndex : 0; // 0x349 (1)
+	char bShowGeometryTransform : 0; // 0x34A (1)
+	char bShowBoundingBox : 0; // 0x34B (1)
+	char bShowFaces : 0; // 0x34C (1)
+	char bShowFaceIndices : 0; // 0x34D (1)
+	char bShowFaceNormals : 0; // 0x34E (1)
+	char bShowSingleFace : 0; // 0x34F (1)
+	int32_t SingleFaceIndex; // 0x350 (4)
+	char bShowVertices : 0; // 0x354 (1)
+	char bShowVertexIndices : 0; // 0x355 (1)
+	char bShowVertexNormals : 0; // 0x356 (1)
+	char bUseActiveVisualization : 0; // 0x357 (1)
+	float PointThickness; // 0x358 (4)
+	float LineThickness; // 0x35C (4)
+	char bTextShadow : 0; // 0x360 (1)
+	float TextScale; // 0x364 (4)
+	float NormalScale; // 0x368 (4)
+	float AxisScale; // 0x36C (4)
+	float ArrowScale; // 0x370 (4)
+	struct Unknown RigidBodyIdColor; // 0x374 (4)
+	float RigidBodyTransformScale; // 0x378 (4)
+	struct Unknown RigidBodyCollisionColor; // 0x37C (4)
+	struct Unknown RigidBodyInertiaColor; // 0x380 (4)
+	struct Unknown RigidBodyVelocityColor; // 0x384 (4)
+	struct Unknown RigidBodyForceColor; // 0x388 (4)
+	struct Unknown RigidBodyInfoColor; // 0x38C (4)
+	struct Unknown TransformIndexColor; // 0x390 (4)
+	float TransformScale; // 0x394 (4)
+	struct Unknown LevelColor; // 0x398 (4)
+	struct Unknown ParentColor; // 0x39C (4)
+	float ConnectivityEdgeThickness; // 0x3A0 (4)
+	struct Unknown GeometryIndexColor; // 0x3A4 (4)
+	float GeometryTransformScale; // 0x3A8 (4)
+	struct Unknown BoundingBoxColor; // 0x3AC (4)
+	struct Unknown FaceColor; // 0x3B0 (4)
+	struct Unknown FaceIndexColor; // 0x3B4 (4)
+	struct Unknown FaceNormalColor; // 0x3B8 (4)
+	struct Unknown SingleFaceColor; // 0x3BC (4)
+	struct Unknown VertexColor; // 0x3C0 (4)
+	struct Unknown VertexIndexColor; // 0x3C4 (4)
+	struct Unknown VertexNormalColor; // 0x3C8 (4)
+	struct Unknown SpriteComponent; // 0x3D0 (8)
 };
 
 // Class GeometryCollectionEngine.GeometryCollectionDebugDrawComponent
@@ -257,12 +257,12 @@ class AGeometryCollectionRenderLevelSetActor : public UActor {
 
 public:
 
-	struct Unknown TargetVolumeTexture; // 0x300 (8)
-	struct Unknown RayMarchMaterial; // 0x308 (8)
-	float SurfaceTolerance; // 0x310 (4)
-	float Isovalue; // 0x314 (4)
-	char Enabled : 0; // 0x318 (1)
-	char RenderVolumeBoundingBox : 0; // 0x319 (1)
+	struct Unknown TargetVolumeTexture; // 0x318 (8)
+	struct Unknown RayMarchMaterial; // 0x320 (8)
+	float SurfaceTolerance; // 0x328 (4)
+	float Isovalue; // 0x32C (4)
+	char Enabled : 0; // 0x330 (1)
+	char RenderVolumeBoundingBox : 0; // 0x331 (1)
 };
 
 // Class GeometryCollectionEngine.SkeletalMeshSimulationComponent
@@ -291,7 +291,7 @@ public:
 	struct Unknown InitialAngularVelocity; // 0x10C (12)
 	struct FMulticastInlineDelegate OnChaosPhysicsCollision; // 0x118 (16)
 
-	void ReceivePhysicsCollision(struct Unknown& CollisionInfo); // Function GeometryCollectionEngine.SkeletalMeshSimulationComponent.ReceivePhysicsCollision(Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ReceivePhysicsCollision(struct Unknown& CollisionInfo); // Function GeometryCollectionEngine.SkeletalMeshSimulationComponent.ReceivePhysicsCollision(Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 };
 
 // Class GeometryCollectionEngine.StaticMeshSimulationComponent
@@ -316,8 +316,8 @@ public:
 	struct FMulticastInlineDelegate OnChaosPhysicsCollision; // 0x100 (16)
 	struct TArray<Unknown> SimulatedComponents; // 0x120 (16)
 
-	void ReceivePhysicsCollision(struct Unknown& CollisionInfo); // Function GeometryCollectionEngine.StaticMeshSimulationComponent.ReceivePhysicsCollision(Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ForceRecreatePhysicsState(); // Function GeometryCollectionEngine.StaticMeshSimulationComponent.ForceRecreatePhysicsState(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x47FFE40>
+	void ReceivePhysicsCollision(struct Unknown& CollisionInfo); // Function GeometryCollectionEngine.StaticMeshSimulationComponent.ReceivePhysicsCollision(Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ForceRecreatePhysicsState(); // Function GeometryCollectionEngine.StaticMeshSimulationComponent.ForceRecreatePhysicsState(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x47FEE90>
 };
 
 // ScriptStruct GeometryCollectionEngine.GeomComponentCacheParameters

@@ -3,6 +3,6 @@ class ABP-InventoryPawn_C : public ABravoHotelInventoryCharacter {
 
 public:
 
-	struct Unknown SpotLight1; // 0x3C8 (8)
+	struct Unknown SpotLight1; // 0x3E0 (8)
 };
 

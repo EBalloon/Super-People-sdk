@@ -3,14 +3,14 @@ class ABP-Camaro_Appear_C : public ABravoHotelMaterialEffectActor {
 
 public:
 
-	struct Unknown Tire_RL; // 0x450 (8)
-	struct Unknown Tire_FL; // 0x458 (8)
-	struct Unknown Tire_RR; // 0x460 (8)
-	struct Unknown Tire_FR; // 0x468 (8)
-	struct Unknown SkeletalMesh; // 0x470 (8)
-	struct Unknown DefaultSceneRoot; // 0x478 (8)
+	struct Unknown Tire_RL; // 0x468 (8)
+	struct Unknown Tire_FL; // 0x470 (8)
+	struct Unknown Tire_RR; // 0x478 (8)
+	struct Unknown Tire_FR; // 0x480 (8)
+	struct Unknown SkeletalMesh; // 0x488 (8)
+	struct Unknown DefaultSceneRoot; // 0x490 (8)
 
-	void UserConstructionScript(); // Function BP-Camaro_Appear.BP-Camaro_Appear_C.UserConstructionScript(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void UserConstructionScript(); // Function BP-Camaro_Appear.BP-Camaro_Appear_C.UserConstructionScript(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 };
 
 // Function BP-Camaro_Appear.BP-Camaro_Appear_C.UserConstructionScript

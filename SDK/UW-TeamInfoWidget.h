@@ -8,10 +8,10 @@ public:
 	struct Unknown UW-TeamInfoItemWidget_C_2; // 0x268 (8)
 	struct Unknown VerticalBox_InfoList; // 0x270 (8)
 
-	struct Unknown CreateSlot(); // Function UW-TeamInfoWidget.UW-TeamInfoWidget_C.CreateSlot(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Construct(); // Function UW-TeamInfoWidget.UW-TeamInfoWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void UpdateInvalidationbox(); // Function UW-TeamInfoWidget.UW-TeamInfoWidget_C.UpdateInvalidationbox(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-TeamInfoWidget(int32_t EntryPoint); // Function UW-TeamInfoWidget.UW-TeamInfoWidget_C.ExecuteUbergraph_UW-TeamInfoWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	struct Unknown CreateSlot(); // Function UW-TeamInfoWidget.UW-TeamInfoWidget_C.CreateSlot(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Construct(); // Function UW-TeamInfoWidget.UW-TeamInfoWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void UpdateInvalidationbox(); // Function UW-TeamInfoWidget.UW-TeamInfoWidget_C.UpdateInvalidationbox(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-TeamInfoWidget(int32_t EntryPoint); // Function UW-TeamInfoWidget.UW-TeamInfoWidget_C.ExecuteUbergraph_UW-TeamInfoWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-TeamInfoWidget.UW-TeamInfoWidget_C.CreateSlot

@@ -8,10 +8,10 @@ public:
 	struct Unknown UW-CustomizedCharacter; // 0x318 (8)
 	enum class Unknow CurrentSceneType; // 0x320 (1)
 
-	void Construct(); // Function BP-CreateCharacterWidget_Web.BP-CreateCharacterWidget_Web_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function BP-CreateCharacterWidget_Web.BP-CreateCharacterWidget_Web_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void CustomEvent_1(enum class Unknow SceneType); // Function BP-CreateCharacterWidget_Web.BP-CreateCharacterWidget_Web_C.CustomEvent_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_BP-CreateCharacterWidget_Web(int32_t EntryPoint); // Function BP-CreateCharacterWidget_Web.BP-CreateCharacterWidget_Web_C.ExecuteUbergraph_BP-CreateCharacterWidget_Web(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	void Construct(); // Function BP-CreateCharacterWidget_Web.BP-CreateCharacterWidget_Web_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function BP-CreateCharacterWidget_Web.BP-CreateCharacterWidget_Web_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CustomEvent_1(enum class Unknow SceneType); // Function BP-CreateCharacterWidget_Web.BP-CreateCharacterWidget_Web_C.CustomEvent_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_BP-CreateCharacterWidget_Web(int32_t EntryPoint); // Function BP-CreateCharacterWidget_Web.BP-CreateCharacterWidget_Web_C.ExecuteUbergraph_BP-CreateCharacterWidget_Web(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function BP-CreateCharacterWidget_Web.BP-CreateCharacterWidget_Web_C.Construct

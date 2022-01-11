@@ -12,10 +12,10 @@ public:
 	struct Unknown T_Value; // 0x278 (8)
 	struct FText Text_StatName; // 0x280 (24)
 
-	void SetStatValue(int32_t Type, float Value); // Function UW-StatupWidget_Item.UW-StatupWidget_Item_C.SetStatValue(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetStatName(struct FString NewParam); // Function UW-StatupWidget_Item.UW-StatupWidget_Item_C.SetStatName(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void PreConstruct(char IsDesignTime); // Function UW-StatupWidget_Item.UW-StatupWidget_Item_C.PreConstruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-StatupWidget_Item(int32_t EntryPoint); // Function UW-StatupWidget_Item.UW-StatupWidget_Item_C.ExecuteUbergraph_UW-StatupWidget_Item(Final|UbergraphFunction) // <Game_BE.exe+0x2B812B0>
+	void SetStatValue(int32_t Type, float Value); // Function UW-StatupWidget_Item.UW-StatupWidget_Item_C.SetStatValue(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetStatName(struct FString NewParam); // Function UW-StatupWidget_Item.UW-StatupWidget_Item_C.SetStatName(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void PreConstruct(char IsDesignTime); // Function UW-StatupWidget_Item.UW-StatupWidget_Item_C.PreConstruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-StatupWidget_Item(int32_t EntryPoint); // Function UW-StatupWidget_Item.UW-StatupWidget_Item_C.ExecuteUbergraph_UW-StatupWidget_Item(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-StatupWidget_Item.UW-StatupWidget_Item_C.SetStatValue

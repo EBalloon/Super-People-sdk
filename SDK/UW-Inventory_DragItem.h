@@ -16,15 +16,15 @@ public:
 	struct Unknown ChangeTarget; // 0x290 (8)
 	struct Unknown PlayerHUDRef; // 0x298 (8)
 
-	void GetBravoHotelPlayerHUD(struct Unknown& NewParam); // Function UW-Inventory_DragItem.UW-Inventory_DragItem_C.GetBravoHotelPlayerHUD(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
-	void Init(struct Unknown Image, int32_t Count, char LockSlot, enum class Unknow DragType); // Function UW-Inventory_DragItem.UW-Inventory_DragItem_C.Init(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Disable(); // Function UW-Inventory_DragItem.UW-Inventory_DragItem_C.Disable(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Enable(); // Function UW-Inventory_DragItem.UW-Inventory_DragItem_C.Enable(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnLoaded_CC3EA76649966C8AA6712791A8D413B0(struct Unknown Loaded); // Function UW-Inventory_DragItem.UW-Inventory_DragItem_C.OnLoaded_CC3EA76649966C8AA6712791A8D413B0(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-Inventory_DragItem.UW-Inventory_DragItem_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void InitFromObjectRef(struct Unknown Icon SoftObject Ref, struct Unknown Icon Size, int32_t Count, char LockSlot, enum class Unknow DragType); // Function UW-Inventory_DragItem.UW-Inventory_DragItem_C.InitFromObjectRef(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Destruct(); // Function UW-Inventory_DragItem.UW-Inventory_DragItem_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-Inventory_DragItem(int32_t EntryPoint); // Function UW-Inventory_DragItem.UW-Inventory_DragItem_C.ExecuteUbergraph_UW-Inventory_DragItem(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	void GetBravoHotelPlayerHUD(struct Unknown& NewParam); // Function UW-Inventory_DragItem.UW-Inventory_DragItem_C.GetBravoHotelPlayerHUD(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void Init(struct Unknown Image, int32_t Count, char LockSlot, enum class Unknow DragType); // Function UW-Inventory_DragItem.UW-Inventory_DragItem_C.Init(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Disable(); // Function UW-Inventory_DragItem.UW-Inventory_DragItem_C.Disable(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Enable(); // Function UW-Inventory_DragItem.UW-Inventory_DragItem_C.Enable(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_CC3EA76649966C8AA6712791A8D413B0(struct Unknown Loaded); // Function UW-Inventory_DragItem.UW-Inventory_DragItem_C.OnLoaded_CC3EA76649966C8AA6712791A8D413B0(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-Inventory_DragItem.UW-Inventory_DragItem_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void InitFromObjectRef(struct Unknown Icon SoftObject Ref, struct Unknown Icon Size, int32_t Count, char LockSlot, enum class Unknow DragType); // Function UW-Inventory_DragItem.UW-Inventory_DragItem_C.InitFromObjectRef(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Destruct(); // Function UW-Inventory_DragItem.UW-Inventory_DragItem_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-Inventory_DragItem(int32_t EntryPoint); // Function UW-Inventory_DragItem.UW-Inventory_DragItem_C.ExecuteUbergraph_UW-Inventory_DragItem(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-Inventory_DragItem.UW-Inventory_DragItem_C.GetBravoHotelPlayerHUD

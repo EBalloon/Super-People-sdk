@@ -3,19 +3,19 @@ class ABP-DestructibleActor_C : public ADestructibleActor {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x318 (8)
-	float OpacityTime_Opacity_Percent_6C96418549465FDC90E47A873A3B4734; // 0x320 (4)
-	float OpacityTime_Opacity_6C96418549465FDC90E47A873A3B4734; // 0x324 (4)
-	char OpacityTime__Direction_6C96418549465FDC90E47A873A3B4734; // 0x328 (1)
-	struct Unknown OpacityTime; // 0x330 (8)
-	float Opacity; // 0x338 (4)
-	float DM_Opacity; // 0x33C (4)
-	char Opacity_Bool : 0; // 0x340 (1)
+	struct Unknown UberGraphFrame; // 0x330 (8)
+	float OpacityTime_Opacity_Percent_6C96418549465FDC90E47A873A3B4734; // 0x338 (4)
+	float OpacityTime_Opacity_6C96418549465FDC90E47A873A3B4734; // 0x33C (4)
+	char OpacityTime__Direction_6C96418549465FDC90E47A873A3B4734; // 0x340 (1)
+	struct Unknown OpacityTime; // 0x348 (8)
+	float Opacity; // 0x350 (4)
+	float DM_Opacity; // 0x354 (4)
+	char Opacity_Bool : 0; // 0x358 (1)
 
-	void OpacityTime__FinishedFunc(); // Function BP-DestructibleActor.BP-DestructibleActor_C.OpacityTime__FinishedFunc(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OpacityTime__UpdateFunc(); // Function BP-DestructibleActor.BP-DestructibleActor_C.OpacityTime__UpdateFunc(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ReceiveBeginPlay(); // Function BP-DestructibleActor.BP-DestructibleActor_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_BP-DestructibleActor(int32_t EntryPoint); // Function BP-DestructibleActor.BP-DestructibleActor_C.ExecuteUbergraph_BP-DestructibleActor(Final|UbergraphFunction) // <Game_BE.exe+0x2B812B0>
+	void OpacityTime__FinishedFunc(); // Function BP-DestructibleActor.BP-DestructibleActor_C.OpacityTime__FinishedFunc(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OpacityTime__UpdateFunc(); // Function BP-DestructibleActor.BP-DestructibleActor_C.OpacityTime__UpdateFunc(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ReceiveBeginPlay(); // Function BP-DestructibleActor.BP-DestructibleActor_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_BP-DestructibleActor(int32_t EntryPoint); // Function BP-DestructibleActor.BP-DestructibleActor_C.ExecuteUbergraph_BP-DestructibleActor(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
 };
 
 // Function BP-DestructibleActor.BP-DestructibleActor_C.OpacityTime__FinishedFunc

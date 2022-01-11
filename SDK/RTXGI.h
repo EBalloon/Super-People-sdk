@@ -30,7 +30,7 @@ class ADDGIVolume : public UActor {
 
 public:
 
-	struct Unknown DDGIVolumeComponent; // 0x300 (8)
+	struct Unknown DDGIVolumeComponent; // 0x318 (8)
 };
 
 // Class RTXGI.DDGIVolumeComponent
@@ -68,7 +68,7 @@ public:
 	struct Unknown LastOrigin; // 0x298 (12)
 	struct Unknown ProbeScrollOffset; // 0x2A4 (12)
 
-	void DDGIClearVolumes(); // Function RTXGI.DDGIVolumeComponent.DDGIClearVolumes(Final|Exec|Native|Public) // <Game_BE.exe+0x1663F80>
+	void DDGIClearVolumes(); // Function RTXGI.DDGIVolumeComponent.DDGIClearVolumes(Final|Exec|Native|Public) // <Game_BE.exe+0x1663AA0>
 };
 
 // Class RTXGI.RTXGIPluginSettings

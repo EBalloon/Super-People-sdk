@@ -27,20 +27,20 @@ public:
 	struct Unknown TXT-Menu04; // 0x480 (8)
 	struct FText PerkSlot; // 0x488 (24)
 
-	void SetIconTexture(struct Unknown IconTexture); // Function UW-BlackMarket_Slot_Perk.UW-BlackMarket_Slot_Perk_C.SetIconTexture(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	struct Unknown On_IMG-Over-Border_MouseButtonDown_1(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-BlackMarket_Slot_Perk.UW-BlackMarket_Slot_Perk_C.On_IMG-Over-Border_MouseButtonDown_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnLoaded_9CBCD238440D1A899A0522A5A29885AA(struct Unknown Loaded); // Function UW-BlackMarket_Slot_Perk.UW-BlackMarket_Slot_Perk_C.OnLoaded_9CBCD238440D1A899A0522A5A29885AA(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Construct(); // Function UW-BlackMarket_Slot_Perk.UW-BlackMarket_Slot_Perk_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void AysncLoading(struct Unknown IconTexture); // Function UW-BlackMarket_Slot_Perk.UW-BlackMarket_Slot_Perk_C.AysncLoading(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-BlackMarket_Slot_Perk.UW-BlackMarket_Slot_Perk_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnMouseLeave(struct Unknown& MouseEvent); // Function UW-BlackMarket_Slot_Perk.UW-BlackMarket_Slot_Perk_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SwitchMenu(); // Function UW-BlackMarket_Slot_Perk.UW-BlackMarket_Slot_Perk_C.SwitchMenu(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SwitchSlot(); // Function UW-BlackMarket_Slot_Perk.UW-BlackMarket_Slot_Perk_C.SwitchSlot(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__BTN-Menu02_K2Node_ComponentBoundEvent_30_OnButtonClickedEvent__DelegateSignature(); // Function UW-BlackMarket_Slot_Perk.UW-BlackMarket_Slot_Perk_C.BndEvt__BTN-Menu02_K2Node_ComponentBoundEvent_30_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetData(struct Unknown Data); // Function UW-BlackMarket_Slot_Perk.UW-BlackMarket_Slot_Perk_C.SetData(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__BTN-Menu03_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-BlackMarket_Slot_Perk.UW-BlackMarket_Slot_Perk_C.BndEvt__BTN-Menu03_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__BTN-Menu04_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(); // Function UW-BlackMarket_Slot_Perk.UW-BlackMarket_Slot_Perk_C.BndEvt__BTN-Menu04_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-BlackMarket_Slot_Perk(int32_t EntryPoint); // Function UW-BlackMarket_Slot_Perk.UW-BlackMarket_Slot_Perk_C.ExecuteUbergraph_UW-BlackMarket_Slot_Perk(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	void SetIconTexture(struct Unknown IconTexture); // Function UW-BlackMarket_Slot_Perk.UW-BlackMarket_Slot_Perk_C.SetIconTexture(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct Unknown On_IMG-Over-Border_MouseButtonDown_1(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-BlackMarket_Slot_Perk.UW-BlackMarket_Slot_Perk_C.On_IMG-Over-Border_MouseButtonDown_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_9CBCD238440D1A899A0522A5A29885AA(struct Unknown Loaded); // Function UW-BlackMarket_Slot_Perk.UW-BlackMarket_Slot_Perk_C.OnLoaded_9CBCD238440D1A899A0522A5A29885AA(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Construct(); // Function UW-BlackMarket_Slot_Perk.UW-BlackMarket_Slot_Perk_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AysncLoading(struct Unknown IconTexture); // Function UW-BlackMarket_Slot_Perk.UW-BlackMarket_Slot_Perk_C.AysncLoading(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-BlackMarket_Slot_Perk.UW-BlackMarket_Slot_Perk_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnMouseLeave(struct Unknown& MouseEvent); // Function UW-BlackMarket_Slot_Perk.UW-BlackMarket_Slot_Perk_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SwitchMenu(); // Function UW-BlackMarket_Slot_Perk.UW-BlackMarket_Slot_Perk_C.SwitchMenu(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SwitchSlot(); // Function UW-BlackMarket_Slot_Perk.UW-BlackMarket_Slot_Perk_C.SwitchSlot(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__BTN-Menu02_K2Node_ComponentBoundEvent_30_OnButtonClickedEvent__DelegateSignature(); // Function UW-BlackMarket_Slot_Perk.UW-BlackMarket_Slot_Perk_C.BndEvt__BTN-Menu02_K2Node_ComponentBoundEvent_30_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetData(struct Unknown Data); // Function UW-BlackMarket_Slot_Perk.UW-BlackMarket_Slot_Perk_C.SetData(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__BTN-Menu03_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-BlackMarket_Slot_Perk.UW-BlackMarket_Slot_Perk_C.BndEvt__BTN-Menu03_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__BTN-Menu04_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(); // Function UW-BlackMarket_Slot_Perk.UW-BlackMarket_Slot_Perk_C.BndEvt__BTN-Menu04_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-BlackMarket_Slot_Perk(int32_t EntryPoint); // Function UW-BlackMarket_Slot_Perk.UW-BlackMarket_Slot_Perk_C.ExecuteUbergraph_UW-BlackMarket_Slot_Perk(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-BlackMarket_Slot_Perk.UW-BlackMarket_Slot_Perk_C.SetIconTexture

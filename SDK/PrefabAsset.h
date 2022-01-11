@@ -23,14 +23,14 @@ class APrefabToolActor : public UActor {
 
 public:
 
-	struct Unknown PrefabComponent; // 0x300 (8)
+	struct Unknown PrefabComponent; // 0x318 (8)
 
-	void SetPrefab(struct Unknown NewPrefab, char bForceRevertEvenDisconnected); // Function PrefabAsset.PrefabToolActor.SetPrefab(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x12628F0>
-	void SetMobility(char InMobility); // Function PrefabAsset.PrefabToolActor.SetMobility(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1262870>
-	char IsConnected(); // Function PrefabAsset.PrefabToolActor.IsConnected(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1262840>
-	struct FString GetPrefabAssetName(); // Function PrefabAsset.PrefabToolActor.GetPrefabAssetName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x12625A0>
-	struct Unknown GetPrefab(); // Function PrefabAsset.PrefabToolActor.GetPrefab(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1262570>
-	void DestroyPrefabActor(char bDestroyAttachedChildren); // Function PrefabAsset.PrefabToolActor.DestroyPrefabActor(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x12624E0>
+	void SetPrefab(struct Unknown NewPrefab, char bForceRevertEvenDisconnected); // Function PrefabAsset.PrefabToolActor.SetPrefab(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x12624E0>
+	void SetMobility(char InMobility); // Function PrefabAsset.PrefabToolActor.SetMobility(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1262460>
+	char IsConnected(); // Function PrefabAsset.PrefabToolActor.IsConnected(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1262430>
+	struct FString GetPrefabAssetName(); // Function PrefabAsset.PrefabToolActor.GetPrefabAssetName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1262190>
+	struct Unknown GetPrefab(); // Function PrefabAsset.PrefabToolActor.GetPrefab(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1262160>
+	void DestroyPrefabActor(char bDestroyAttachedChildren); // Function PrefabAsset.PrefabToolActor.DestroyPrefabActor(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x12620D0>
 };
 
 // Class PrefabAsset.PrefabAsset
@@ -47,8 +47,8 @@ public:
 	int32_t NumActors; // 0xD8 (4)
 	struct Unknown PrefabPivot; // 0xDC (12)
 
-	void SetSimplifiedMeshAssetReference(struct Unknown& InAssetReference); // Function PrefabAsset.PrefabAsset.SetSimplifiedMeshAssetReference(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x12629C0>
-	struct FString GetPrefabHash(); // Function PrefabAsset.PrefabAsset.GetPrefabHash(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1262620>
+	void SetSimplifiedMeshAssetReference(struct Unknown& InAssetReference); // Function PrefabAsset.PrefabAsset.SetSimplifiedMeshAssetReference(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x12625B0>
+	struct FString GetPrefabHash(); // Function PrefabAsset.PrefabAsset.GetPrefabHash(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1262210>
 };
 
 // Class PrefabAsset.PrefabVariantAsset

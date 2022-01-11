@@ -7,10 +7,10 @@ public:
 	struct Unknown InventoryCharacterRef; // 0x250 (8)
 	char Visible : 0; // 0x258 (1)
 
-	enum class Unknow GetVisibility_1(); // Function UW-Inventory_CharacterDragPanel.UW-Inventory_CharacterDragPanel_C.GetVisibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
-	struct Unknown On_DragRect_MouseButtonDown_1(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-Inventory_CharacterDragPanel.UW-Inventory_CharacterDragPanel_C.On_DragRect_MouseButtonDown_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void IsHitTest(struct Unknown Pos, char& bHit); // Function UW-Inventory_CharacterDragPanel.UW-Inventory_CharacterDragPanel_C.IsHitTest(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
-	void GetInventoryCharacter(struct Unknown& InventoryCharacter); // Function UW-Inventory_CharacterDragPanel.UW-Inventory_CharacterDragPanel_C.GetInventoryCharacter(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
+	enum class Unknow GetVisibility_1(); // Function UW-Inventory_CharacterDragPanel.UW-Inventory_CharacterDragPanel_C.GetVisibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	struct Unknown On_DragRect_MouseButtonDown_1(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-Inventory_CharacterDragPanel.UW-Inventory_CharacterDragPanel_C.On_DragRect_MouseButtonDown_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void IsHitTest(struct Unknown Pos, char& bHit); // Function UW-Inventory_CharacterDragPanel.UW-Inventory_CharacterDragPanel_C.IsHitTest(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void GetInventoryCharacter(struct Unknown& InventoryCharacter); // Function UW-Inventory_CharacterDragPanel.UW-Inventory_CharacterDragPanel_C.GetInventoryCharacter(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-Inventory_CharacterDragPanel.UW-Inventory_CharacterDragPanel_C.GetVisibility_1

@@ -30,20 +30,20 @@ public:
 	struct Unknown TXT-TotalWeight; // 0x498 (8)
 	struct Unknown TXT-Weight; // 0x4A0 (8)
 
-	struct Unknown On_IMG-BG_MouseButtonDown_1(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-BlackMarket_Slot_Ammo.UW-BlackMarket_Slot_Ammo_C.On_IMG-BG_MouseButtonDown_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetIconTexture(struct Unknown IconTexture); // Function UW-BlackMarket_Slot_Ammo.UW-BlackMarket_Slot_Ammo_C.SetIconTexture(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnLoaded_CF7AEC2246CE5FCA548190A8C8AE4FB8(struct Unknown Loaded); // Function UW-BlackMarket_Slot_Ammo.UW-BlackMarket_Slot_Ammo_C.OnLoaded_CF7AEC2246CE5FCA548190A8C8AE4FB8(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Construct(); // Function UW-BlackMarket_Slot_Ammo.UW-BlackMarket_Slot_Ammo_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-BlackMarket_Slot_Ammo.UW-BlackMarket_Slot_Ammo_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnMouseLeave(struct Unknown& MouseEvent); // Function UW-BlackMarket_Slot_Ammo.UW-BlackMarket_Slot_Ammo_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void AysncLoading(struct Unknown IconTexture); // Function UW-BlackMarket_Slot_Ammo.UW-BlackMarket_Slot_Ammo_C.AysncLoading(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SwitchMenu(); // Function UW-BlackMarket_Slot_Ammo.UW-BlackMarket_Slot_Ammo_C.SwitchMenu(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SwitchSlot(); // Function UW-BlackMarket_Slot_Ammo.UW-BlackMarket_Slot_Ammo_C.SwitchSlot(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__BTN-Menu02_K2Node_ComponentBoundEvent_125_OnButtonClickedEvent__DelegateSignature(); // Function UW-BlackMarket_Slot_Ammo.UW-BlackMarket_Slot_Ammo_C.BndEvt__BTN-Menu02_K2Node_ComponentBoundEvent_125_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__BTN-Menu03_K2Node_ComponentBoundEvent_142_OnButtonClickedEvent__DelegateSignature(); // Function UW-BlackMarket_Slot_Ammo.UW-BlackMarket_Slot_Ammo_C.BndEvt__BTN-Menu03_K2Node_ComponentBoundEvent_142_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__BTN-Menu04_K2Node_ComponentBoundEvent_160_OnButtonClickedEvent__DelegateSignature(); // Function UW-BlackMarket_Slot_Ammo.UW-BlackMarket_Slot_Ammo_C.BndEvt__BTN-Menu04_K2Node_ComponentBoundEvent_160_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__BTN-Menu05_K2Node_ComponentBoundEvent_179_OnButtonClickedEvent__DelegateSignature(); // Function UW-BlackMarket_Slot_Ammo.UW-BlackMarket_Slot_Ammo_C.BndEvt__BTN-Menu05_K2Node_ComponentBoundEvent_179_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-BlackMarket_Slot_Ammo(int32_t EntryPoint); // Function UW-BlackMarket_Slot_Ammo.UW-BlackMarket_Slot_Ammo_C.ExecuteUbergraph_UW-BlackMarket_Slot_Ammo(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	struct Unknown On_IMG-BG_MouseButtonDown_1(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-BlackMarket_Slot_Ammo.UW-BlackMarket_Slot_Ammo_C.On_IMG-BG_MouseButtonDown_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetIconTexture(struct Unknown IconTexture); // Function UW-BlackMarket_Slot_Ammo.UW-BlackMarket_Slot_Ammo_C.SetIconTexture(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_CF7AEC2246CE5FCA548190A8C8AE4FB8(struct Unknown Loaded); // Function UW-BlackMarket_Slot_Ammo.UW-BlackMarket_Slot_Ammo_C.OnLoaded_CF7AEC2246CE5FCA548190A8C8AE4FB8(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Construct(); // Function UW-BlackMarket_Slot_Ammo.UW-BlackMarket_Slot_Ammo_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-BlackMarket_Slot_Ammo.UW-BlackMarket_Slot_Ammo_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnMouseLeave(struct Unknown& MouseEvent); // Function UW-BlackMarket_Slot_Ammo.UW-BlackMarket_Slot_Ammo_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AysncLoading(struct Unknown IconTexture); // Function UW-BlackMarket_Slot_Ammo.UW-BlackMarket_Slot_Ammo_C.AysncLoading(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SwitchMenu(); // Function UW-BlackMarket_Slot_Ammo.UW-BlackMarket_Slot_Ammo_C.SwitchMenu(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SwitchSlot(); // Function UW-BlackMarket_Slot_Ammo.UW-BlackMarket_Slot_Ammo_C.SwitchSlot(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__BTN-Menu02_K2Node_ComponentBoundEvent_125_OnButtonClickedEvent__DelegateSignature(); // Function UW-BlackMarket_Slot_Ammo.UW-BlackMarket_Slot_Ammo_C.BndEvt__BTN-Menu02_K2Node_ComponentBoundEvent_125_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__BTN-Menu03_K2Node_ComponentBoundEvent_142_OnButtonClickedEvent__DelegateSignature(); // Function UW-BlackMarket_Slot_Ammo.UW-BlackMarket_Slot_Ammo_C.BndEvt__BTN-Menu03_K2Node_ComponentBoundEvent_142_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__BTN-Menu04_K2Node_ComponentBoundEvent_160_OnButtonClickedEvent__DelegateSignature(); // Function UW-BlackMarket_Slot_Ammo.UW-BlackMarket_Slot_Ammo_C.BndEvt__BTN-Menu04_K2Node_ComponentBoundEvent_160_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__BTN-Menu05_K2Node_ComponentBoundEvent_179_OnButtonClickedEvent__DelegateSignature(); // Function UW-BlackMarket_Slot_Ammo.UW-BlackMarket_Slot_Ammo_C.BndEvt__BTN-Menu05_K2Node_ComponentBoundEvent_179_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-BlackMarket_Slot_Ammo(int32_t EntryPoint); // Function UW-BlackMarket_Slot_Ammo.UW-BlackMarket_Slot_Ammo_C.ExecuteUbergraph_UW-BlackMarket_Slot_Ammo(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-BlackMarket_Slot_Ammo.UW-BlackMarket_Slot_Ammo_C.On_IMG-BG_MouseButtonDown_1

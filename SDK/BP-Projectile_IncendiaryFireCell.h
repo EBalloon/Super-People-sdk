@@ -3,7 +3,7 @@ class ABP-Projectile_IncendiaryFireCell_C : public ABravoHotelProjectileMolotovF
 
 public:
 
-	float TextureScale; // 0x388 (4)
-	float BurnArea; // 0x38C (4)
+	float TextureScale; // 0x3A0 (4)
+	float BurnArea; // 0x3A4 (4)
 };
 

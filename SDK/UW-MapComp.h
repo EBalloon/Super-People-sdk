@@ -33,59 +33,59 @@ public:
 	char IsDrawingRoutePing : 0; // 0x5F8 (1)
 	struct TArray<Unknown> IgnoreAreaCircleLines; // 0x600 (16)
 
-	void CheckAgreePing(char& bRet, struct Unknown& Location); // Function UW-MapComp.UW-MapComp_C.CheckAgreePing(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Get Cur Mouse Point(struct Unknown& Pos); // Function UW-MapComp.UW-MapComp_C.Get Cur Mouse Point(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void CalcMapScaleInterpSpeed(int32_t TargetZoomLevel); // Function UW-MapComp.UW-MapComp_C.CalcMapScaleInterpSpeed(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Remove Area Widget(enum class Unknow Type, struct Unknown Info); // Function UW-MapComp.UW-MapComp_C.Remove Area Widget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void UpdateReplayCircleMask(); // Function UW-MapComp.UW-MapComp_C.UpdateReplayCircleMask(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void UpdateMapPos(); // Function UW-MapComp.UW-MapComp_C.UpdateMapPos(Public|BlueprintCallable|BlueprintEvent|Const) // <Game_BE.exe+0x2B812B0>
-	void UpdateCircleMask(struct Unknown centerPosOnWorld, float radiusOnWorld, struct FName CirclePosName, struct FName CircleRadiusName, float MaskAdditionalRadius, struct Unknown MaterialInstance); // Function UW-MapComp.UW-MapComp_C.UpdateCircleMask(Public|HasDefaults|BlueprintCallable|BlueprintEvent|Const) // <Game_BE.exe+0x2B812B0>
-	void Update Circle Masks(); // Function UW-MapComp.UW-MapComp_C.Update Circle Masks(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void UpdateCircleInfosImpl(); // Function UW-MapComp.UW-MapComp_C.UpdateCircleInfosImpl(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void UpdateMapScale(); // Function UW-MapComp.UW-MapComp_C.UpdateMapScale(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void PlayTargetPosAnim(); // Function UW-MapComp.UW-MapComp_C.PlayTargetPosAnim(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void CreatePersonalSupplyBox(); // Function UW-MapComp.UW-MapComp_C.CreatePersonalSupplyBox(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void CreateFreeCamWidget(); // Function UW-MapComp.UW-MapComp_C.CreateFreeCamWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void CreateAirCraftWidget(); // Function UW-MapComp.UW-MapComp_C.CreateAirCraftWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void CreateMapPlayerWidget_Impl(); // Function UW-MapComp.UW-MapComp_C.CreateMapPlayerWidget_Impl(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnAttackedWidget(int32_t UniquePlayerId); // Function UW-MapComp.UW-MapComp_C.OnAttackedWidget(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnFireWidget(int32_t UniquePlayerId, struct Unknown Rotation, float Length); // Function UW-MapComp.UW-MapComp_C.OnFireWidget(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void GetSkillMapFactor(float Distance, float& Factor); // Function UW-MapComp.UW-MapComp_C.GetSkillMapFactor(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Add Area Widget(enum class Unknow AreaWidgetType, struct Unknown AreaWidgetInfo); // Function UW-MapComp.UW-MapComp_C.Add Area Widget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void WantChangeVisibility(enum class Unknow WantVisibility, struct Unknown ChangeWidget); // Function UW-MapComp.UW-MapComp_C.WantChangeVisibility(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void GetMiniMapFactor(float& Factor); // Function UW-MapComp.UW-MapComp_C.GetMiniMapFactor(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ConvertSizeWorldToMap(struct Unknown Size, struct Unknown& Ret); // Function UW-MapComp.UW-MapComp_C.ConvertSizeWorldToMap(Private|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <Game_BE.exe+0x2B812B0>
-	void OnMarkerClicked(struct Unknown Button, char mapObjectID); // Function UW-MapComp.UW-MapComp_C.OnMarkerClicked(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void CalPosRelatedMapOnViewport(struct Unknown PosOnViewport, struct Unknown& Ret); // Function UW-MapComp.UW-MapComp_C.CalPosRelatedMapOnViewport(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <Game_BE.exe+0x2B812B0>
-	void ConvertPosViewportToMap(struct Unknown PosOnViewport, struct Unknown& Ret); // Function UW-MapComp.UW-MapComp_C.ConvertPosViewportToMap(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <Game_BE.exe+0x2B812B0>
-	struct Unknown OnMouseMove(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-MapComp.UW-MapComp_C.OnMouseMove(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetMarker(char isOn, struct Unknown PosOnViewport, float Heigh); // Function UW-MapComp.UW-MapComp_C.SetMarker(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	struct Unknown OnMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-MapComp.UW-MapComp_C.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	struct Unknown OnMouseButtonUp(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-MapComp.UW-MapComp_C.OnMouseButtonUp(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	struct Unknown OnMouseWheel(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-MapComp.UW-MapComp_C.OnMouseWheel(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnPaint(struct Unknown& Context); // Function UW-MapComp.UW-MapComp_C.OnPaint(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const) // <Game_BE.exe+0x2B812B0>
-	void AddWidgetComp(struct Unknown* WidgetClass, struct Unknown Anchor, struct Unknown Pivot, struct Unknown Size, int32_t ZOrder, struct Unknown& Ret); // Function UW-MapComp.UW-MapComp_C.AddWidgetComp(Private|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ConvertForwardToDegree(struct Unknown Forward, float& Degree); // Function UW-MapComp.UW-MapComp_C.ConvertForwardToDegree(Private|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnLoaded_C5F225F94B2C743064A54D84F3497501(struct Unknown Loaded); // Function UW-MapComp.UW-MapComp_C.OnLoaded_C5F225F94B2C743064A54D84F3497501(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void DebugStringOnMapEvent(struct FString DebugString, struct Unknown WorldPosition, float RemainTime, float FontSize); // Function UW-MapComp.UW-MapComp_C.DebugStringOnMapEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void CreateMapPlayerWidget(); // Function UW-MapComp.UW-MapComp_C.CreateMapPlayerWidget(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void UpdateSupplyBoxInfo(); // Function UW-MapComp.UW-MapComp_C.UpdateSupplyBoxInfo(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void UpdateFreeCamPosition(); // Function UW-MapComp.UW-MapComp_C.UpdateFreeCamPosition(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void UpdateFreeCamAngle(); // Function UW-MapComp.UW-MapComp_C.UpdateFreeCamAngle(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetFreeCamEnable(char bEnable); // Function UW-MapComp.UW-MapComp_C.SetFreeCamEnable(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetAircraftVisibility(char bVisible); // Function UW-MapComp.UW-MapComp_C.SetAircraftVisibility(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void PreUpdateComponents(); // Function UW-MapComp.UW-MapComp_C.PreUpdateComponents(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void UpdateCircleInfos(); // Function UW-MapComp.UW-MapComp_C.UpdateCircleInfos(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void UpdateReplayCircleInfos(); // Function UW-MapComp.UW-MapComp_C.UpdateReplayCircleInfos(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetVisiblePingMenu(char Visible); // Function UW-MapComp.UW-MapComp_C.SetVisiblePingMenu(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ChangeMap(char IsWeightMap); // Function UW-MapComp.UW-MapComp_C.ChangeMap(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnMouseUp(struct Unknown Mouse); // Function UW-MapComp.UW-MapComp_C.OnMouseUp(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-MapComp(int32_t EntryPoint); // Function UW-MapComp.UW-MapComp_C.ExecuteUbergraph_UW-MapComp(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
-	void OnMouseButtonDownOnMap__DelegateSignature(struct Unknown Button, struct Unknown PosOnViewport); // Function UW-MapComp.UW-MapComp_C.OnMouseButtonDownOnMap__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnDragginOnMap__DelegateSignature(struct Unknown Delta); // Function UW-MapComp.UW-MapComp_C.OnDragginOnMap__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnObjectClickOnMap__DelegateSignature(struct Unknown Button, char mapObjectID); // Function UW-MapComp.UW-MapComp_C.OnObjectClickOnMap__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnMouseButtonUpOnMap__DelegateSignature(struct Unknown Button, struct Unknown PosOnViewport); // Function UW-MapComp.UW-MapComp_C.OnMouseButtonUpOnMap__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnWheelOnMap__DelegateSignature(float Delta, struct Unknown PosOnViewport); // Function UW-MapComp.UW-MapComp_C.OnWheelOnMap__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void CheckAgreePing(char& bRet, struct Unknown& Location); // Function UW-MapComp.UW-MapComp_C.CheckAgreePing(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Get Cur Mouse Point(struct Unknown& Pos); // Function UW-MapComp.UW-MapComp_C.Get Cur Mouse Point(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CalcMapScaleInterpSpeed(int32_t TargetZoomLevel); // Function UW-MapComp.UW-MapComp_C.CalcMapScaleInterpSpeed(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Remove Area Widget(enum class Unknow Type, struct Unknown Info); // Function UW-MapComp.UW-MapComp_C.Remove Area Widget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void UpdateReplayCircleMask(); // Function UW-MapComp.UW-MapComp_C.UpdateReplayCircleMask(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void UpdateMapPos(); // Function UW-MapComp.UW-MapComp_C.UpdateMapPos(Public|BlueprintCallable|BlueprintEvent|Const) // <Game_BE.exe+0x2B80160>
+	void UpdateCircleMask(struct Unknown centerPosOnWorld, float radiusOnWorld, struct FName CirclePosName, struct FName CircleRadiusName, float MaskAdditionalRadius, struct Unknown MaterialInstance); // Function UW-MapComp.UW-MapComp_C.UpdateCircleMask(Public|HasDefaults|BlueprintCallable|BlueprintEvent|Const) // <Game_BE.exe+0x2B80160>
+	void Update Circle Masks(); // Function UW-MapComp.UW-MapComp_C.Update Circle Masks(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void UpdateCircleInfosImpl(); // Function UW-MapComp.UW-MapComp_C.UpdateCircleInfosImpl(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void UpdateMapScale(); // Function UW-MapComp.UW-MapComp_C.UpdateMapScale(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void PlayTargetPosAnim(); // Function UW-MapComp.UW-MapComp_C.PlayTargetPosAnim(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CreatePersonalSupplyBox(); // Function UW-MapComp.UW-MapComp_C.CreatePersonalSupplyBox(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CreateFreeCamWidget(); // Function UW-MapComp.UW-MapComp_C.CreateFreeCamWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CreateAirCraftWidget(); // Function UW-MapComp.UW-MapComp_C.CreateAirCraftWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CreateMapPlayerWidget_Impl(); // Function UW-MapComp.UW-MapComp_C.CreateMapPlayerWidget_Impl(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnAttackedWidget(int32_t UniquePlayerId); // Function UW-MapComp.UW-MapComp_C.OnAttackedWidget(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnFireWidget(int32_t UniquePlayerId, struct Unknown Rotation, float Length); // Function UW-MapComp.UW-MapComp_C.OnFireWidget(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetSkillMapFactor(float Distance, float& Factor); // Function UW-MapComp.UW-MapComp_C.GetSkillMapFactor(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Add Area Widget(enum class Unknow AreaWidgetType, struct Unknown AreaWidgetInfo); // Function UW-MapComp.UW-MapComp_C.Add Area Widget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void WantChangeVisibility(enum class Unknow WantVisibility, struct Unknown ChangeWidget); // Function UW-MapComp.UW-MapComp_C.WantChangeVisibility(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetMiniMapFactor(float& Factor); // Function UW-MapComp.UW-MapComp_C.GetMiniMapFactor(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ConvertSizeWorldToMap(struct Unknown Size, struct Unknown& Ret); // Function UW-MapComp.UW-MapComp_C.ConvertSizeWorldToMap(Private|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <Game_BE.exe+0x2B80160>
+	void OnMarkerClicked(struct Unknown Button, char mapObjectID); // Function UW-MapComp.UW-MapComp_C.OnMarkerClicked(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CalPosRelatedMapOnViewport(struct Unknown PosOnViewport, struct Unknown& Ret); // Function UW-MapComp.UW-MapComp_C.CalPosRelatedMapOnViewport(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <Game_BE.exe+0x2B80160>
+	void ConvertPosViewportToMap(struct Unknown PosOnViewport, struct Unknown& Ret); // Function UW-MapComp.UW-MapComp_C.ConvertPosViewportToMap(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <Game_BE.exe+0x2B80160>
+	struct Unknown OnMouseMove(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-MapComp.UW-MapComp_C.OnMouseMove(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetMarker(char isOn, struct Unknown PosOnViewport, float Heigh); // Function UW-MapComp.UW-MapComp_C.SetMarker(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct Unknown OnMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-MapComp.UW-MapComp_C.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct Unknown OnMouseButtonUp(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-MapComp.UW-MapComp_C.OnMouseButtonUp(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct Unknown OnMouseWheel(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-MapComp.UW-MapComp_C.OnMouseWheel(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnPaint(struct Unknown& Context); // Function UW-MapComp.UW-MapComp_C.OnPaint(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const) // <Game_BE.exe+0x2B80160>
+	void AddWidgetComp(struct Unknown* WidgetClass, struct Unknown Anchor, struct Unknown Pivot, struct Unknown Size, int32_t ZOrder, struct Unknown& Ret); // Function UW-MapComp.UW-MapComp_C.AddWidgetComp(Private|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ConvertForwardToDegree(struct Unknown Forward, float& Degree); // Function UW-MapComp.UW-MapComp_C.ConvertForwardToDegree(Private|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_C5F225F94B2C743064A54D84F3497501(struct Unknown Loaded); // Function UW-MapComp.UW-MapComp_C.OnLoaded_C5F225F94B2C743064A54D84F3497501(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void DebugStringOnMapEvent(struct FString DebugString, struct Unknown WorldPosition, float RemainTime, float FontSize); // Function UW-MapComp.UW-MapComp_C.DebugStringOnMapEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CreateMapPlayerWidget(); // Function UW-MapComp.UW-MapComp_C.CreateMapPlayerWidget(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void UpdateSupplyBoxInfo(); // Function UW-MapComp.UW-MapComp_C.UpdateSupplyBoxInfo(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void UpdateFreeCamPosition(); // Function UW-MapComp.UW-MapComp_C.UpdateFreeCamPosition(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void UpdateFreeCamAngle(); // Function UW-MapComp.UW-MapComp_C.UpdateFreeCamAngle(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetFreeCamEnable(char bEnable); // Function UW-MapComp.UW-MapComp_C.SetFreeCamEnable(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetAircraftVisibility(char bVisible); // Function UW-MapComp.UW-MapComp_C.SetAircraftVisibility(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void PreUpdateComponents(); // Function UW-MapComp.UW-MapComp_C.PreUpdateComponents(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void UpdateCircleInfos(); // Function UW-MapComp.UW-MapComp_C.UpdateCircleInfos(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void UpdateReplayCircleInfos(); // Function UW-MapComp.UW-MapComp_C.UpdateReplayCircleInfos(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetVisiblePingMenu(char Visible); // Function UW-MapComp.UW-MapComp_C.SetVisiblePingMenu(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ChangeMap(char IsWeightMap); // Function UW-MapComp.UW-MapComp_C.ChangeMap(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnMouseUp(struct Unknown Mouse); // Function UW-MapComp.UW-MapComp_C.OnMouseUp(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-MapComp(int32_t EntryPoint); // Function UW-MapComp.UW-MapComp_C.ExecuteUbergraph_UW-MapComp(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void OnMouseButtonDownOnMap__DelegateSignature(struct Unknown Button, struct Unknown PosOnViewport); // Function UW-MapComp.UW-MapComp_C.OnMouseButtonDownOnMap__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnDragginOnMap__DelegateSignature(struct Unknown Delta); // Function UW-MapComp.UW-MapComp_C.OnDragginOnMap__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnObjectClickOnMap__DelegateSignature(struct Unknown Button, char mapObjectID); // Function UW-MapComp.UW-MapComp_C.OnObjectClickOnMap__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnMouseButtonUpOnMap__DelegateSignature(struct Unknown Button, struct Unknown PosOnViewport); // Function UW-MapComp.UW-MapComp_C.OnMouseButtonUpOnMap__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnWheelOnMap__DelegateSignature(float Delta, struct Unknown PosOnViewport); // Function UW-MapComp.UW-MapComp_C.OnWheelOnMap__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-MapComp.UW-MapComp_C.CheckAgreePing

@@ -3,18 +3,18 @@ class ABP-LobbyPawn_C : public ABravoHotelLobbyCharacter {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x3AD0 (8)
-	struct Unknown Box; // 0x3AD8 (8)
-	int32_t PawnIndex; // 0x3AE0 (4)
-	struct Unknown* BravoHotelPlayerStateClass; // 0x3AE8 (8)
-	char bReady : 0; // 0x3AF0 (1)
-	char bMatchSuccess : 0; // 0x3AF1 (1)
-	char bIsFaceCustomizing : 0; // 0x3AF2 (1)
+	struct Unknown UberGraphFrame; // 0x3B50 (8)
+	struct Unknown Box; // 0x3B58 (8)
+	int32_t PawnIndex; // 0x3B60 (4)
+	struct Unknown* BravoHotelPlayerStateClass; // 0x3B68 (8)
+	char bReady : 0; // 0x3B70 (1)
+	char bMatchSuccess : 0; // 0x3B71 (1)
+	char bIsFaceCustomizing : 0; // 0x3B72 (1)
 
-	void ReceiveBeginPlay(); // Function BP-LobbyPawn.BP-LobbyPawn_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnEquipWeapon(); // Function BP-LobbyPawn.BP-LobbyPawn_C.OnEquipWeapon(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void InitCustomizableObjectInstance(); // Function BP-LobbyPawn.BP-LobbyPawn_C.InitCustomizableObjectInstance(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_BP-LobbyPawn(int32_t EntryPoint); // Function BP-LobbyPawn.BP-LobbyPawn_C.ExecuteUbergraph_BP-LobbyPawn(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	void ReceiveBeginPlay(); // Function BP-LobbyPawn.BP-LobbyPawn_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnEquipWeapon(); // Function BP-LobbyPawn.BP-LobbyPawn_C.OnEquipWeapon(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void InitCustomizableObjectInstance(); // Function BP-LobbyPawn.BP-LobbyPawn_C.InitCustomizableObjectInstance(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_BP-LobbyPawn(int32_t EntryPoint); // Function BP-LobbyPawn.BP-LobbyPawn_C.ExecuteUbergraph_BP-LobbyPawn(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function BP-LobbyPawn.BP-LobbyPawn_C.ReceiveBeginPlay

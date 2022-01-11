@@ -12,16 +12,16 @@ public:
 	struct Unknown Img_FreeCam; // 0x348 (8)
 	struct Unknown PlayerState; // 0x350 (8)
 
-	void OnClickPlayerNameButton(); // Function UW-PlayerIconWidget.UW-PlayerIconWidget_C.OnClickPlayerNameButton(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnAttackedWidget(); // Function UW-PlayerIconWidget.UW-PlayerIconWidget_C.OnAttackedWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnFireWidget(struct Unknown MapComp, struct Unknown Rotation, float Length); // Function UW-PlayerIconWidget.UW-PlayerIconWidget_C.OnFireWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetFreeCam(); // Function UW-PlayerIconWidget.UW-PlayerIconWidget_C.SetFreeCam(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Initialize(struct Unknown PlayerState); // Function UW-PlayerIconWidget.UW-PlayerIconWidget_C.Initialize(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnAnimationFinished(struct Unknown Animation); // Function UW-PlayerIconWidget.UW-PlayerIconWidget_C.OnAnimationFinished(BlueprintCosmetic|Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Rotate(float Angle); // Function UW-PlayerIconWidget.UW-PlayerIconWidget_C.Rotate(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__BT_UserName_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-PlayerIconWidget.UW-PlayerIconWidget_C.BndEvt__BT_UserName_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void PlayTargetPosAnim(); // Function UW-PlayerIconWidget.UW-PlayerIconWidget_C.PlayTargetPosAnim(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-PlayerIconWidget(int32_t EntryPoint); // Function UW-PlayerIconWidget.UW-PlayerIconWidget_C.ExecuteUbergraph_UW-PlayerIconWidget(Final|UbergraphFunction) // <Game_BE.exe+0x2B812B0>
+	void OnClickPlayerNameButton(); // Function UW-PlayerIconWidget.UW-PlayerIconWidget_C.OnClickPlayerNameButton(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnAttackedWidget(); // Function UW-PlayerIconWidget.UW-PlayerIconWidget_C.OnAttackedWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnFireWidget(struct Unknown MapComp, struct Unknown Rotation, float Length); // Function UW-PlayerIconWidget.UW-PlayerIconWidget_C.OnFireWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetFreeCam(); // Function UW-PlayerIconWidget.UW-PlayerIconWidget_C.SetFreeCam(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Initialize(struct Unknown PlayerState); // Function UW-PlayerIconWidget.UW-PlayerIconWidget_C.Initialize(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnAnimationFinished(struct Unknown Animation); // Function UW-PlayerIconWidget.UW-PlayerIconWidget_C.OnAnimationFinished(BlueprintCosmetic|Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Rotate(float Angle); // Function UW-PlayerIconWidget.UW-PlayerIconWidget_C.Rotate(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__BT_UserName_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-PlayerIconWidget.UW-PlayerIconWidget_C.BndEvt__BT_UserName_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void PlayTargetPosAnim(); // Function UW-PlayerIconWidget.UW-PlayerIconWidget_C.PlayTargetPosAnim(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-PlayerIconWidget(int32_t EntryPoint); // Function UW-PlayerIconWidget.UW-PlayerIconWidget_C.ExecuteUbergraph_UW-PlayerIconWidget(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-PlayerIconWidget.UW-PlayerIconWidget_C.OnClickPlayerNameButton

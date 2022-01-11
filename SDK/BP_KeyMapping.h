@@ -9,11 +9,11 @@ public:
 	struct Unknown Secondary Combination; // 0x48 (8)
 	struct Unknown Parent Action; // 0x50 (8)
 
-	void Revert To Default KeyMapping(); // Function BP_KeyMapping.BP_KeyMapping_C.Revert To Default KeyMapping(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Load Key Mapping(struct Unknown Game Settings, struct FString Action Name, struct FString Category); // Function BP_KeyMapping.BP_KeyMapping_C.Load Key Mapping(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Save Key Mapping(struct Unknown Game Settings, struct Unknown& KeySave); // Function BP_KeyMapping.BP_KeyMapping_C.Save Key Mapping(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Key Mapping Current State(struct Unknown Player Controller, float& Mapping Value, char& Is Active, char& Just Pressed, char& Just Released); // Function BP_KeyMapping.BP_KeyMapping_C.Key Mapping Current State(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Init Key Mapping(struct Unknown Key Mapping, struct Unknown& Mapping); // Function BP_KeyMapping.BP_KeyMapping_C.Init Key Mapping(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Revert To Default KeyMapping(); // Function BP_KeyMapping.BP_KeyMapping_C.Revert To Default KeyMapping(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Load Key Mapping(struct Unknown Game Settings, struct FString Action Name, struct FString Category); // Function BP_KeyMapping.BP_KeyMapping_C.Load Key Mapping(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Save Key Mapping(struct Unknown Game Settings, struct Unknown& KeySave); // Function BP_KeyMapping.BP_KeyMapping_C.Save Key Mapping(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Key Mapping Current State(struct Unknown Player Controller, float& Mapping Value, char& Is Active, char& Just Pressed, char& Just Released); // Function BP_KeyMapping.BP_KeyMapping_C.Key Mapping Current State(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Init Key Mapping(struct Unknown Key Mapping, struct Unknown& Mapping); // Function BP_KeyMapping.BP_KeyMapping_C.Init Key Mapping(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 };
 
 // Function BP_KeyMapping.BP_KeyMapping_C.Revert To Default KeyMapping

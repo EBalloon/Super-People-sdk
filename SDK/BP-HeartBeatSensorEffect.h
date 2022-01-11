@@ -3,22 +3,22 @@ class ABP-HeartBeatSensorEffect_C : public UActor {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x300 (8)
-	struct Unknown Widget; // 0x308 (8)
-	struct Unknown DefaultSceneRoot; // 0x310 (8)
-	struct Unknown TargetCharacter; // 0x318 (8)
-	struct Unknown LoudnessCurve; // 0x320 (8)
-	float HeartBeatSensorLength; // 0x328 (4)
-	enum class Unknow TagetGroundState; // 0x32C (1)
-	char IsFiring : 0; // 0x32D (1)
-	struct Unknown CurrentWeapon; // 0x330 (8)
-	struct Unknown SingleTimerEvent; // 0x338 (8)
-	char IsSingleFiring : 0; // 0x340 (1)
+	struct Unknown UberGraphFrame; // 0x318 (8)
+	struct Unknown Widget; // 0x320 (8)
+	struct Unknown DefaultSceneRoot; // 0x328 (8)
+	struct Unknown TargetCharacter; // 0x330 (8)
+	struct Unknown LoudnessCurve; // 0x338 (8)
+	float HeartBeatSensorLength; // 0x340 (4)
+	enum class Unknow TagetGroundState; // 0x344 (1)
+	char IsFiring : 0; // 0x345 (1)
+	struct Unknown CurrentWeapon; // 0x348 (8)
+	struct Unknown SingleTimerEvent; // 0x350 (8)
+	char IsSingleFiring : 0; // 0x358 (1)
 
-	void ReceiveTick(float DeltaSeconds); // Function BP-HeartBeatSensorEffect.BP-HeartBeatSensorEffect_C.ReceiveTick(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetTarget(struct Unknown TargetCharacter, float HeartBeatSensorLength); // Function BP-HeartBeatSensorEffect.BP-HeartBeatSensorEffect_C.SetTarget(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnCharacterMovementUpdated_tじ_1(float DeltaSeconds, struct Unknown OldLocation, struct Unknown OldVelocity); // Function BP-HeartBeatSensorEffect.BP-HeartBeatSensorEffect_C.OnCharacterMovementUpdated_tじ_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_BP-HeartBeatSensorEffect(int32_t EntryPoint); // Function BP-HeartBeatSensorEffect.BP-HeartBeatSensorEffect_C.ExecuteUbergraph_BP-HeartBeatSensorEffect(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	void ReceiveTick(float DeltaSeconds); // Function BP-HeartBeatSensorEffect.BP-HeartBeatSensorEffect_C.ReceiveTick(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetTarget(struct Unknown TargetCharacter, float HeartBeatSensorLength); // Function BP-HeartBeatSensorEffect.BP-HeartBeatSensorEffect_C.SetTarget(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnCharacterMovementUpdated_tじ_1(float DeltaSeconds, struct Unknown OldLocation, struct Unknown OldVelocity); // Function BP-HeartBeatSensorEffect.BP-HeartBeatSensorEffect_C.OnCharacterMovementUpdated_tじ_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_BP-HeartBeatSensorEffect(int32_t EntryPoint); // Function BP-HeartBeatSensorEffect.BP-HeartBeatSensorEffect_C.ExecuteUbergraph_BP-HeartBeatSensorEffect(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function BP-HeartBeatSensorEffect.BP-HeartBeatSensorEffect_C.ReceiveTick

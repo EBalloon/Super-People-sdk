@@ -36,55 +36,55 @@ public:
 	struct Unknown UW-Inventory_ItemSlotHover; // 0x3D0 (8)
 	struct Unknown LobbyCoherent2DTexture; // 0x3D8 (8)
 
-	void EndCraft(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.EndCraft(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void StartCraft(struct Unknown& CraftWeapon); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.StartCraft(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void GetHoverWidget(struct Unknown& UW-Inventory_ItemSlotHover); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.GetHoverWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
-	void CreateHoverWidget(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.CreateHoverWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnChangedArmoryTab(struct FString TabName); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.OnChangedArmoryTab(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnChangedMainTab(struct FString TabName); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.OnChangedMainTab(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void UpdateMouseWheel(float Delta); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.UpdateMouseWheel(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void UpdateMouseY(float Delta); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.UpdateMouseY(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void UpdateMouseX(float Delta); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.UpdateMouseX(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void MatchFailedSound(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.MatchFailedSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void MatchStartSound(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.MatchStartSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ShowReplayList(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.ShowReplayList(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetArmoryInputBox(char Visible); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.SetArmoryInputBox(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void HideSelectGameMode(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.HideSelectGameMode(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ShowSelectGameMode(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.ShowSelectGameMode(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void HideBlur(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.HideBlur(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ShowBlur(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.ShowBlur(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void HideUI(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.HideUI(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ShowArmoryUI(struct FString ArmoryResultName); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.ShowArmoryUI(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void CheckKeyUp(struct Unknown Input, char& bResult); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.CheckKeyUp(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void CheckKeyDown(struct Unknown Input, char& bResult); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.CheckKeyDown(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ProcessInput(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.ProcessInput(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ClickExit(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.ClickExit(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ClickOption(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.ClickOption(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void StartGame(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.StartGame(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ResetMatchingPopup(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.ResetMatchingPopup(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ResetStartButton(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.ResetStartButton(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ShowMatchingStart(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.ShowMatchingStart(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void HideMatchingResult(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.HideMatchingResult(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ShowMatchingResult(int32_t ErrorCode, struct FString ExtraDescription); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.ShowMatchingResult(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetLobbyWidget(struct Unknown LobbyWidget); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.SetLobbyWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void UIButtonClickSound(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.UIButtonClickSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void UIButtonHoverSound(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.UIButtonHoverSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	struct Unknown OnGenerateWidget_1(struct FString Item); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.OnGenerateWidget_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Construct(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__BTN-Title_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.BndEvt__BTN-Title_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__BTN-PUBLICMATCH_K2Node_ComponentBoundEvent_9_OnButtonClickedEvent__DelegateSignature(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.BndEvt__BTN-PUBLICMATCH_K2Node_ComponentBoundEvent_9_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__BTN-CUSTOMMATCH_K2Node_ComponentBoundEvent_66_OnButtonClickedEvent__DelegateSignature(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.BndEvt__BTN-CUSTOMMATCH_K2Node_ComponentBoundEvent_66_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void CoherentBind(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.CoherentBind(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnMatchingFailed(int32_t ErrorCode, struct FString ExtraDescription); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.OnMatchingFailed(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void PlayUIButtonClickSound(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.PlayUIButtonClickSound(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void PlayUIBtuttonOverSound(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.PlayUIBtuttonOverSound(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Exit(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.Exit(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Option(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.Option(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void FinishLoadEvent(struct FString Path, char isMainFrame); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.FinishLoadEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void FinishLoad_tじ_1(struct FString Path, char isMainFrame); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.FinishLoad_tじ_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetReceiveInput(char ReceiveInput); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.SetReceiveInput(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Destruct(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-Lobby_Main_Web(int32_t EntryPoint); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.ExecuteUbergraph_UW-Lobby_Main_Web(Final|UbergraphFunction) // <Game_BE.exe+0x2B812B0>
+	void EndCraft(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.EndCraft(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void StartCraft(struct Unknown& CraftWeapon); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.StartCraft(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetHoverWidget(struct Unknown& UW-Inventory_ItemSlotHover); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.GetHoverWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void CreateHoverWidget(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.CreateHoverWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnChangedArmoryTab(struct FString TabName); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.OnChangedArmoryTab(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnChangedMainTab(struct FString TabName); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.OnChangedMainTab(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void UpdateMouseWheel(float Delta); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.UpdateMouseWheel(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void UpdateMouseY(float Delta); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.UpdateMouseY(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void UpdateMouseX(float Delta); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.UpdateMouseX(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void MatchFailedSound(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.MatchFailedSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void MatchStartSound(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.MatchStartSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowReplayList(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.ShowReplayList(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetArmoryInputBox(char Visible); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.SetArmoryInputBox(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void HideSelectGameMode(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.HideSelectGameMode(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowSelectGameMode(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.ShowSelectGameMode(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void HideBlur(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.HideBlur(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowBlur(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.ShowBlur(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void HideUI(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.HideUI(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowArmoryUI(struct FString ArmoryResultName); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.ShowArmoryUI(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CheckKeyUp(struct Unknown Input, char& bResult); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.CheckKeyUp(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CheckKeyDown(struct Unknown Input, char& bResult); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.CheckKeyDown(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ProcessInput(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.ProcessInput(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ClickExit(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.ClickExit(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ClickOption(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.ClickOption(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void StartGame(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.StartGame(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ResetMatchingPopup(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.ResetMatchingPopup(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ResetStartButton(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.ResetStartButton(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowMatchingStart(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.ShowMatchingStart(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void HideMatchingResult(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.HideMatchingResult(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowMatchingResult(int32_t ErrorCode, struct FString ExtraDescription); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.ShowMatchingResult(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetLobbyWidget(struct Unknown LobbyWidget); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.SetLobbyWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void UIButtonClickSound(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.UIButtonClickSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void UIButtonHoverSound(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.UIButtonHoverSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct Unknown OnGenerateWidget_1(struct FString Item); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.OnGenerateWidget_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Construct(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__BTN-Title_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.BndEvt__BTN-Title_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__BTN-PUBLICMATCH_K2Node_ComponentBoundEvent_9_OnButtonClickedEvent__DelegateSignature(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.BndEvt__BTN-PUBLICMATCH_K2Node_ComponentBoundEvent_9_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__BTN-CUSTOMMATCH_K2Node_ComponentBoundEvent_66_OnButtonClickedEvent__DelegateSignature(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.BndEvt__BTN-CUSTOMMATCH_K2Node_ComponentBoundEvent_66_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CoherentBind(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.CoherentBind(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnMatchingFailed(int32_t ErrorCode, struct FString ExtraDescription); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.OnMatchingFailed(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void PlayUIButtonClickSound(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.PlayUIButtonClickSound(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void PlayUIBtuttonOverSound(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.PlayUIBtuttonOverSound(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Exit(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.Exit(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Option(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.Option(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void FinishLoadEvent(struct FString Path, char isMainFrame); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.FinishLoadEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void FinishLoad_tじ_1(struct FString Path, char isMainFrame); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.FinishLoad_tじ_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetReceiveInput(char ReceiveInput); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.SetReceiveInput(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Destruct(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-Lobby_Main_Web(int32_t EntryPoint); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.ExecuteUbergraph_UW-Lobby_Main_Web(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.EndCraft

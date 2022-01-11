@@ -17,14 +17,14 @@ public:
 	float AngularDamping; // 0x658 (4)
 	char ClassType; // 0x65C (1)
 
-	void OnRep_IsDestructedBeforeGameStart(); // Function BP-DestructibleComponent.BP-DestructibleComponent_C.OnRep_IsDestructedBeforeGameStart(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Destruct(float Damage, struct Unknown HitLocation, struct Unknown ImpactDirection, struct Unknown& DM); // Function BP-DestructibleComponent.BP-DestructibleComponent_C.Destruct(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ReceiveBeginPlay(); // Function BP-DestructibleComponent.BP-DestructibleComponent_C.ReceiveBeginPlay(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void K2_OnDestructComponent(float DamageAmount, struct Unknown& HitInfo, struct Unknown EventInstigator, struct Unknown DamageCauser, struct Unknown& ShotInfo); // Function BP-DestructibleComponent.BP-DestructibleComponent_C.K2_OnDestructComponent(Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetLifeSpan(float LifeSpan); // Function BP-DestructibleComponent.BP-DestructibleComponent_C.SetLifeSpan(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetCollisionEnableWithDelay(float DelayTime); // Function BP-DestructibleComponent.BP-DestructibleComponent_C.SetCollisionEnableWithDelay(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_BP-DestructibleComponent(int32_t EntryPoint); // Function BP-DestructibleComponent.BP-DestructibleComponent_C.ExecuteUbergraph_BP-DestructibleComponent(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
-	void DestructEventDispatcher__DelegateSignature(); // Function BP-DestructibleComponent.BP-DestructibleComponent_C.DestructEventDispatcher__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void OnRep_IsDestructedBeforeGameStart(); // Function BP-DestructibleComponent.BP-DestructibleComponent_C.OnRep_IsDestructedBeforeGameStart(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Destruct(float Damage, struct Unknown HitLocation, struct Unknown ImpactDirection, struct Unknown& DM); // Function BP-DestructibleComponent.BP-DestructibleComponent_C.Destruct(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ReceiveBeginPlay(); // Function BP-DestructibleComponent.BP-DestructibleComponent_C.ReceiveBeginPlay(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void K2_OnDestructComponent(float DamageAmount, struct Unknown& HitInfo, struct Unknown EventInstigator, struct Unknown DamageCauser, struct Unknown& ShotInfo); // Function BP-DestructibleComponent.BP-DestructibleComponent_C.K2_OnDestructComponent(Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetLifeSpan(float LifeSpan); // Function BP-DestructibleComponent.BP-DestructibleComponent_C.SetLifeSpan(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetCollisionEnableWithDelay(float DelayTime); // Function BP-DestructibleComponent.BP-DestructibleComponent_C.SetCollisionEnableWithDelay(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_BP-DestructibleComponent(int32_t EntryPoint); // Function BP-DestructibleComponent.BP-DestructibleComponent_C.ExecuteUbergraph_BP-DestructibleComponent(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void DestructEventDispatcher__DelegateSignature(); // Function BP-DestructibleComponent.BP-DestructibleComponent_C.DestructEventDispatcher__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 };
 
 // Function BP-DestructibleComponent.BP-DestructibleComponent_C.OnRep_IsDestructedBeforeGameStart

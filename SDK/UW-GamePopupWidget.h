@@ -4,7 +4,7 @@ class UUW-GamePopupWidget_C : public UBravoHotelGamePopupWidget {
 public:
 
 	struct Unknown UberGraphFrame; // 0x250 (8)
-	struct Unknown BTN-Exit; // 0x258 (8)
+	struct Unknown Btn-Exit; // 0x258 (8)
 	struct Unknown BTN-LobbyRestart; // 0x260 (8)
 	struct Unknown BTN-Resume; // 0x268 (8)
 	struct Unknown BTN-ReturnToTitle; // 0x270 (8)
@@ -23,29 +23,29 @@ public:
 	struct FName MapNameToExit; // 0x2D8 (8)
 	char IsLobby : 0; // 0x2E0 (1)
 
-	struct Unknown OnMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	struct Unknown OnMouseWheel(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.OnMouseWheel(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Construct(); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__BTN-Resume_K2Node_ComponentBoundEvent_60_OnButtonClickedEvent__DelegateSignature(); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.BndEvt__BTN-Resume_K2Node_ComponentBoundEvent_60_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__BTN-Settings_K2Node_ComponentBoundEvent_119_OnButtonClickedEvent__DelegateSignature(); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.BndEvt__BTN-Settings_K2Node_ComponentBoundEvent_119_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__BTN-ReturnToTitle_K2Node_ComponentBoundEvent_137_OnButtonClickedEvent__DelegateSignature(); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.BndEvt__BTN-ReturnToTitle_K2Node_ComponentBoundEvent_137_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__BTN-Exit_K2Node_ComponentBoundEvent_156_OnButtonClickedEvent__DelegateSignature(); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.BndEvt__BTN-Exit_K2Node_ComponentBoundEvent_156_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__BTN-Resume_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature(); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.BndEvt__BTN-Resume_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__BTN-Settings_K2Node_ComponentBoundEvent_26_OnButtonHoverEvent__DelegateSignature(); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.BndEvt__BTN-Settings_K2Node_ComponentBoundEvent_26_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__BTN-ReturnToTitle_K2Node_ComponentBoundEvent_58_OnButtonHoverEvent__DelegateSignature(); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.BndEvt__BTN-ReturnToTitle_K2Node_ComponentBoundEvent_58_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__BTN-Exit_K2Node_ComponentBoundEvent_95_OnButtonHoverEvent__DelegateSignature(); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.BndEvt__BTN-Exit_K2Node_ComponentBoundEvent_95_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Show(); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.Show(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Hide(); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.Hide(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__Button_0_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature(); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.BndEvt__Button_0_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__Button_1_K2Node_ComponentBoundEvent_3_OnButtonClickedEvent__DelegateSignature(); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.BndEvt__Button_1_K2Node_ComponentBoundEvent_3_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__Button_1_K2Node_ComponentBoundEvent_4_OnButtonHoverEvent__DelegateSignature(); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.BndEvt__Button_1_K2Node_ComponentBoundEvent_4_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__Button_3_K2Node_ComponentBoundEvent_5_OnButtonClickedEvent__DelegateSignature(); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.BndEvt__Button_3_K2Node_ComponentBoundEvent_5_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__Button_3_K2Node_ComponentBoundEvent_6_OnButtonHoverEvent__DelegateSignature(); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.BndEvt__Button_3_K2Node_ComponentBoundEvent_6_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__Button_0_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.BndEvt__Button_0_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Destruct(); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__BTN-LobbyRestart_K2Node_ComponentBoundEvent_7_OnButtonClickedEvent__DelegateSignature(); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.BndEvt__BTN-LobbyRestart_K2Node_ComponentBoundEvent_7_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__BTN-LobbyRestart_K2Node_ComponentBoundEvent_8_OnButtonHoverEvent__DelegateSignature(); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.BndEvt__BTN-LobbyRestart_K2Node_ComponentBoundEvent_8_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-GamePopupWidget(int32_t EntryPoint); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.ExecuteUbergraph_UW-GamePopupWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	struct Unknown OnMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct Unknown OnMouseWheel(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.OnMouseWheel(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Construct(); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__BTN-Resume_K2Node_ComponentBoundEvent_60_OnButtonClickedEvent__DelegateSignature(); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.BndEvt__BTN-Resume_K2Node_ComponentBoundEvent_60_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__BTN-Settings_K2Node_ComponentBoundEvent_119_OnButtonClickedEvent__DelegateSignature(); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.BndEvt__BTN-Settings_K2Node_ComponentBoundEvent_119_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__BTN-ReturnToTitle_K2Node_ComponentBoundEvent_137_OnButtonClickedEvent__DelegateSignature(); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.BndEvt__BTN-ReturnToTitle_K2Node_ComponentBoundEvent_137_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__BTN-Exit_K2Node_ComponentBoundEvent_156_OnButtonClickedEvent__DelegateSignature(); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.BndEvt__BTN-Exit_K2Node_ComponentBoundEvent_156_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__BTN-Resume_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature(); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.BndEvt__BTN-Resume_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__BTN-Settings_K2Node_ComponentBoundEvent_26_OnButtonHoverEvent__DelegateSignature(); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.BndEvt__BTN-Settings_K2Node_ComponentBoundEvent_26_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__BTN-ReturnToTitle_K2Node_ComponentBoundEvent_58_OnButtonHoverEvent__DelegateSignature(); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.BndEvt__BTN-ReturnToTitle_K2Node_ComponentBoundEvent_58_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__BTN-Exit_K2Node_ComponentBoundEvent_95_OnButtonHoverEvent__DelegateSignature(); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.BndEvt__BTN-Exit_K2Node_ComponentBoundEvent_95_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Show(); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.Show(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Hide(); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.Hide(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__Button_0_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature(); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.BndEvt__Button_0_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__Button_1_K2Node_ComponentBoundEvent_3_OnButtonClickedEvent__DelegateSignature(); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.BndEvt__Button_1_K2Node_ComponentBoundEvent_3_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__Button_1_K2Node_ComponentBoundEvent_4_OnButtonHoverEvent__DelegateSignature(); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.BndEvt__Button_1_K2Node_ComponentBoundEvent_4_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__Button_3_K2Node_ComponentBoundEvent_5_OnButtonClickedEvent__DelegateSignature(); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.BndEvt__Button_3_K2Node_ComponentBoundEvent_5_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__Button_3_K2Node_ComponentBoundEvent_6_OnButtonHoverEvent__DelegateSignature(); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.BndEvt__Button_3_K2Node_ComponentBoundEvent_6_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__Button_0_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.BndEvt__Button_0_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Destruct(); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__BTN-LobbyRestart_K2Node_ComponentBoundEvent_7_OnButtonClickedEvent__DelegateSignature(); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.BndEvt__BTN-LobbyRestart_K2Node_ComponentBoundEvent_7_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__BTN-LobbyRestart_K2Node_ComponentBoundEvent_8_OnButtonHoverEvent__DelegateSignature(); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.BndEvt__BTN-LobbyRestart_K2Node_ComponentBoundEvent_8_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-GamePopupWidget(int32_t EntryPoint); // Function UW-GamePopupWidget.UW-GamePopupWidget_C.ExecuteUbergraph_UW-GamePopupWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-GamePopupWidget.UW-GamePopupWidget_C.OnMouseButtonDown

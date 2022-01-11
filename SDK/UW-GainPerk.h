@@ -32,21 +32,21 @@ public:
 	int32_t CurrenteLevel; // 0x5D0 (4)
 	char IsPlayingUltimateSound : 0; // 0x5D4 (1)
 
-	char IsUltimateLevel(); // Function UW-GainPerk.UW-GainPerk_C.IsUltimateLevel(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
-	void SetPerkDesc(); // Function UW-GainPerk.UW-GainPerk_C.SetPerkDesc(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	struct FText Get_T_PerkDescLv1_Text_1(); // Function UW-GainPerk.UW-GainPerk_C.Get_T_PerkDescLv1_Text_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
-	struct FText Get_PerkName_Text_1(); // Function UW-GainPerk.UW-GainPerk_C.Get_PerkName_Text_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
-	struct Unknown Get_PerkName_ColorAndOpacity_1(); // Function UW-GainPerk.UW-GainPerk_C.Get_PerkName_ColorAndOpacity_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
-	enum class Unknow Get_TextBlock_7_Visibility_1(); // Function UW-GainPerk.UW-GainPerk_C.Get_TextBlock_7_Visibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
-	struct Unknown Get_PerkImage_Brush_1(); // Function UW-GainPerk.UW-GainPerk_C.Get_PerkImage_Brush_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
-	enum class Unknow Get_PerkImage_Visibility_1(); // Function UW-GainPerk.UW-GainPerk_C.Get_PerkImage_Visibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
-	void OnLoaded_A03468734B71BD17CEDAA08DD6958C1B(struct Unknown Loaded); // Function UW-GainPerk.UW-GainPerk_C.OnLoaded_A03468734B71BD17CEDAA08DD6958C1B(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Construct(); // Function UW-GainPerk.UW-GainPerk_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-GainPerk.UW-GainPerk_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void AsyncLoadIconTexture(struct Unknown IconTexture); // Function UW-GainPerk.UW-GainPerk_C.AsyncLoadIconTexture(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void RemovePopup(); // Function UW-GainPerk.UW-GainPerk_C.RemovePopup(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void RemoveFrom(); // Function UW-GainPerk.UW-GainPerk_C.RemoveFrom(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-GainPerk(int32_t EntryPoint); // Function UW-GainPerk.UW-GainPerk_C.ExecuteUbergraph_UW-GainPerk(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	char IsUltimateLevel(); // Function UW-GainPerk.UW-GainPerk_C.IsUltimateLevel(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void SetPerkDesc(); // Function UW-GainPerk.UW-GainPerk_C.SetPerkDesc(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FText Get_T_PerkDescLv1_Text_1(); // Function UW-GainPerk.UW-GainPerk_C.Get_T_PerkDescLv1_Text_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	struct FText Get_PerkName_Text_1(); // Function UW-GainPerk.UW-GainPerk_C.Get_PerkName_Text_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	struct Unknown Get_PerkName_ColorAndOpacity_1(); // Function UW-GainPerk.UW-GainPerk_C.Get_PerkName_ColorAndOpacity_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	enum class Unknow Get_TextBlock_7_Visibility_1(); // Function UW-GainPerk.UW-GainPerk_C.Get_TextBlock_7_Visibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	struct Unknown Get_PerkImage_Brush_1(); // Function UW-GainPerk.UW-GainPerk_C.Get_PerkImage_Brush_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	enum class Unknow Get_PerkImage_Visibility_1(); // Function UW-GainPerk.UW-GainPerk_C.Get_PerkImage_Visibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_A03468734B71BD17CEDAA08DD6958C1B(struct Unknown Loaded); // Function UW-GainPerk.UW-GainPerk_C.OnLoaded_A03468734B71BD17CEDAA08DD6958C1B(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Construct(); // Function UW-GainPerk.UW-GainPerk_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-GainPerk.UW-GainPerk_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AsyncLoadIconTexture(struct Unknown IconTexture); // Function UW-GainPerk.UW-GainPerk_C.AsyncLoadIconTexture(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void RemovePopup(); // Function UW-GainPerk.UW-GainPerk_C.RemovePopup(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void RemoveFrom(); // Function UW-GainPerk.UW-GainPerk_C.RemoveFrom(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-GainPerk(int32_t EntryPoint); // Function UW-GainPerk.UW-GainPerk_C.ExecuteUbergraph_UW-GainPerk(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-GainPerk.UW-GainPerk_C.IsUltimateLevel

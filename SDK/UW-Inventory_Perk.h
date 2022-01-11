@@ -58,7 +58,7 @@ public:
 	struct Unknown Image_Cycle; // 0x488 (8)
 	struct Unknown Image_Cycle_2; // 0x490 (8)
 	struct Unknown IMG_ClassIcon; // 0x498 (8)
-	struct Unknown IMG_PerkDeckIcon; // 0x4A0 (8)
+	struct Unknown Img_PerkDeckIcon; // 0x4A0 (8)
 	struct Unknown IMG_Supply; // 0x4A8 (8)
 	struct Unknown IMG_UltimatedSkill; // 0x4B0 (8)
 	struct Unknown InvalidationBox_1; // 0x4B8 (8)
@@ -142,75 +142,75 @@ public:
 	int32_t LastLevel; // 0x774 (4)
 	struct Unknown PerkDeckClassInfo; // 0x778 (40)
 
-	void SequenceEvent__ENTRYPOINTUW-Inventory_Perk_2(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SequenceEvent__ENTRYPOINTUW-Inventory_Perk_2(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SequenceEvent__ENTRYPOINTUW-Inventory_Perk_1(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SequenceEvent__ENTRYPOINTUW-Inventory_Perk_1(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetEnabledInvalidationbox(char Enabled); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetEnabledInvalidationbox(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ResetUltimateSound(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.ResetUltimateSound(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void AddGainPerkPopup(struct Unknown PerkInfo, int32_t CurrentLevel, int32_t LastLevel); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AddGainPerkPopup(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void UpdateInvalidationbox(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.UpdateInvalidationbox(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnChangedToggleType(enum class Unknow ToggleType); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnChangedToggleType(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnBattleRoyaleStateChanged(enum class Unknow PreviousState, enum class Unknow CurrentState); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnBattleRoyaleStateChanged(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void UpdateStatsInfo(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.UpdateStatsInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	struct Unknown OnMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetUltimateSkillKeyIcon(struct TArray<Unknown>& Type); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetUltimateSkillKeyIcon(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void PlayAbilityCountSoundEnd(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PlayAbilityCountSoundEnd(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void PlayAbilityCountSoundStart(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PlayAbilityCountSoundStart(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ShowStatusHovered(struct Unknown InHoveredWidget); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.ShowStatusHovered(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetAbilityAnimation(struct Unknown& Handle, int32_t Value, struct Unknown Animation, struct FString FunctionName, int32_t Index); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetAbilityAnimation(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void InitAnimation(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.InitAnimation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void DefenseCountAnimation(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.DefenseCountAnimation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SpeedCountAnimation(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SpeedCountAnimation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void PowerCountAnimation(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PowerCountAnimation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void PlaySoundBonusLevelUp(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PlaySoundBonusLevelUp(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void PlaySoundTimeBonus(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PlaySoundTimeBonus(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void GetPositionTargetPerk(enum class Unknow PerkSlot, int32_t PerkIndex, char& Result, struct Unknown& Position); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.GetPositionTargetPerk(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void GetSlotAndIndexTargetPerk(struct FName TargetPerkName, char& HasPerk, enum class Unknow& PerkSlot, int32_t& PerkIndex); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.GetSlotAndIndexTargetPerk(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void AddUltimateSkillUnlockEffect(int32_t CurrentLevel); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AddUltimateSkillUnlockEffect(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ResetPerkCells(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.ResetPerkCells(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetClassLevelText(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetClassLevelText(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void PerkLevelUpEffect(struct Unknown PerkInfo, int32_t CurrentLevel); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PerkLevelUpEffect(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetPerkdeckWidget(char State); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetPerkdeckWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ShowUltimatePerk(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.ShowUltimatePerk(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void PlayStatsLevelUpAnim(struct Unknown IncreasedAbility); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PlayStatsLevelUpAnim(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void PlayLevelTextAnim(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PlayLevelTextAnim(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void CheckUltimateOpen(int32_t CurrentLevel); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.CheckUltimateOpen(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void PerkLevelUp(struct Unknown PerkInfo, int32_t CurrentLevel, int32_t LastLevel); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PerkLevelUp(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetUltimateSkillInfo(char UseLocalPlayerInfo, char IsMaxLevel); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetUltimateSkillInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetPriceFontColor(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetPriceFontColor(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	struct FText Get_TextBlock_Price_Text_1(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.Get_TextBlock_Price_Text_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
-	void CreatePerkDeck(char UseLocalPlayerInfo, char IsMaxLevel); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.CreatePerkDeck(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetPerks(struct Unknown HoverWidget, char bUseLocalPlayerInfo, char bMaxLevel, char bPerkDeckMode, struct Unknown PerkDeckClassInfo); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetPerks(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnLoaded_99DDE97542548A0CC17B5FBAD209C3DD(struct Unknown Loaded); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnLoaded_99DDE97542548A0CC17B5FBAD209C3DD(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnLoaded_4F86CE894B71E485811BFEA8F94AD46E(struct Unknown Loaded); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnLoaded_4F86CE894B71E485811BFEA8F94AD46E(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnLoaded_9E0A9EF44F73119D77D7119DEA0EF67A(struct Unknown Loaded); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnLoaded_9E0A9EF44F73119D77D7119DEA0EF67A(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Destruct(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void AsyncLoadIcon(struct Unknown Image); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AsyncLoadIcon(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void AsyncCohIcon(struct Unknown Image); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AsyncCohIcon(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void PlayReadyGivePerk(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PlayReadyGivePerk(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void StopReadyGivePerk(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.StopReadyGivePerk(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void AsyncClassIcon(struct Unknown Image); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AsyncClassIcon(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void AbilityPowerAnimationFinished(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AbilityPowerAnimationFinished(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void AbilitySpeedAnimationFinished(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AbilitySpeedAnimationFinished(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void LevelUpAnimationFinished(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.LevelUpAnimationFinished(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void PlayKillGivePerk(int32_t KillCount); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PlayKillGivePerk(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnHoveredWidget(struct Unknown HoveredWidget); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnHoveredWidget(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__btn_PerkDeck_K2Node_ComponentBoundEvent_4_OnButtonHoverEvent__DelegateSignature(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.BndEvt__btn_PerkDeck_K2Node_ComponentBoundEvent_4_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void AbilityDefenseAnimationFinished(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AbilityDefenseAnimationFinished(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__btn_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.BndEvt__btn_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__btn_PerkDeck_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.BndEvt__btn_PerkDeck_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__btn_PerkDeck_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.BndEvt__btn_PerkDeck_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Construct(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__btn_PerkDeckDisabled_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.BndEvt__btn_PerkDeckDisabled_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__btn_PerkDeckEnabled_1_K2Node_ComponentBoundEvent_5_OnButtonClickedEvent__DelegateSignature(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.BndEvt__btn_PerkDeckEnabled_1_K2Node_ComponentBoundEvent_5_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void 鉹@t元_1(enum class Unknow PrevState, enum class Unknow CurrentState); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void CheckFreeSupply(char IsInventoryOpen); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.CheckFreeSupply(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void 鉹@t元_2(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.鉹@t元_2(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void StartUltimateAnim(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.StartUltimateAnim(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void UpdateUnlockLevel(int32_t NewLevel); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.UpdateUnlockLevel(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void K2_RefreshPerkDeck(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.K2_RefreshPerkDeck(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void 鉹@t元_3(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.鉹@t元_3(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetEnoughGold(char IsEnough); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetEnoughGold(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-Inventory_Perk(int32_t EntryPoint); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.ExecuteUbergraph_UW-Inventory_Perk(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	void SequenceEvent__ENTRYPOINTUW-Inventory_Perk_2(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SequenceEvent__ENTRYPOINTUW-Inventory_Perk_2(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SequenceEvent__ENTRYPOINTUW-Inventory_Perk_1(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SequenceEvent__ENTRYPOINTUW-Inventory_Perk_1(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetEnabledInvalidationbox(char Enabled); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetEnabledInvalidationbox(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ResetUltimateSound(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.ResetUltimateSound(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AddGainPerkPopup(struct Unknown PerkInfo, int32_t CurrentLevel, int32_t LastLevel); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AddGainPerkPopup(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void UpdateInvalidationbox(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.UpdateInvalidationbox(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnChangedToggleType(enum class Unknow ToggleType); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnChangedToggleType(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnBattleRoyaleStateChanged(enum class Unknow PreviousState, enum class Unknow CurrentState); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnBattleRoyaleStateChanged(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void UpdateStatsInfo(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.UpdateStatsInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct Unknown OnMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetUltimateSkillKeyIcon(struct TArray<Unknown>& Type); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetUltimateSkillKeyIcon(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void PlayAbilityCountSoundEnd(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PlayAbilityCountSoundEnd(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void PlayAbilityCountSoundStart(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PlayAbilityCountSoundStart(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowStatusHovered(struct Unknown InHoveredWidget); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.ShowStatusHovered(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetAbilityAnimation(struct Unknown& Handle, int32_t Value, struct Unknown Animation, struct FString FunctionName, int32_t Index); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetAbilityAnimation(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void InitAnimation(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.InitAnimation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void DefenseCountAnimation(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.DefenseCountAnimation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SpeedCountAnimation(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SpeedCountAnimation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void PowerCountAnimation(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PowerCountAnimation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void PlaySoundBonusLevelUp(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PlaySoundBonusLevelUp(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void PlaySoundTimeBonus(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PlaySoundTimeBonus(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetPositionTargetPerk(enum class Unknow PerkSlot, int32_t PerkIndex, char& Result, struct Unknown& Position); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.GetPositionTargetPerk(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetSlotAndIndexTargetPerk(struct FName TargetPerkName, char& HasPerk, enum class Unknow& PerkSlot, int32_t& PerkIndex); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.GetSlotAndIndexTargetPerk(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AddUltimateSkillUnlockEffect(int32_t CurrentLevel); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AddUltimateSkillUnlockEffect(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ResetPerkCells(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.ResetPerkCells(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetClassLevelText(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetClassLevelText(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void PerkLevelUpEffect(struct Unknown PerkInfo, int32_t CurrentLevel); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PerkLevelUpEffect(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetPerkdeckWidget(char State); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetPerkdeckWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowUltimatePerk(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.ShowUltimatePerk(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void PlayStatsLevelUpAnim(struct Unknown IncreasedAbility); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PlayStatsLevelUpAnim(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void PlayLevelTextAnim(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PlayLevelTextAnim(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CheckUltimateOpen(int32_t CurrentLevel); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.CheckUltimateOpen(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void PerkLevelUp(struct Unknown PerkInfo, int32_t CurrentLevel, int32_t LastLevel); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PerkLevelUp(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetUltimateSkillInfo(char UseLocalPlayerInfo, char IsMaxLevel); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetUltimateSkillInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetPriceFontColor(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetPriceFontColor(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FText Get_TextBlock_Price_Text_1(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.Get_TextBlock_Price_Text_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void CreatePerkDeck(char UseLocalPlayerInfo, char IsMaxLevel); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.CreatePerkDeck(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetPerks(struct Unknown HoverWidget, char bUseLocalPlayerInfo, char bMaxLevel, char bPerkDeckMode, struct Unknown PerkDeckClassInfo); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetPerks(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_99DDE97542548A0CC17B5FBAD209C3DD(struct Unknown Loaded); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnLoaded_99DDE97542548A0CC17B5FBAD209C3DD(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_4F86CE894B71E485811BFEA8F94AD46E(struct Unknown Loaded); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnLoaded_4F86CE894B71E485811BFEA8F94AD46E(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_9E0A9EF44F73119D77D7119DEA0EF67A(struct Unknown Loaded); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnLoaded_9E0A9EF44F73119D77D7119DEA0EF67A(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Destruct(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AsyncLoadIcon(struct Unknown Image); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AsyncLoadIcon(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AsyncCohIcon(struct Unknown Image); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AsyncCohIcon(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void PlayReadyGivePerk(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PlayReadyGivePerk(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void StopReadyGivePerk(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.StopReadyGivePerk(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AsyncClassIcon(struct Unknown Image); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AsyncClassIcon(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AbilityPowerAnimationFinished(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AbilityPowerAnimationFinished(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AbilitySpeedAnimationFinished(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AbilitySpeedAnimationFinished(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void LevelUpAnimationFinished(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.LevelUpAnimationFinished(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void PlayKillGivePerk(int32_t KillCount); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PlayKillGivePerk(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnHoveredWidget(struct Unknown HoveredWidget); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnHoveredWidget(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__btn_PerkDeck_K2Node_ComponentBoundEvent_4_OnButtonHoverEvent__DelegateSignature(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.BndEvt__btn_PerkDeck_K2Node_ComponentBoundEvent_4_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AbilityDefenseAnimationFinished(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AbilityDefenseAnimationFinished(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__btn_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.BndEvt__btn_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__btn_PerkDeck_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.BndEvt__btn_PerkDeck_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__btn_PerkDeck_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.BndEvt__btn_PerkDeck_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Construct(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__btn_PerkDeckDisabled_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.BndEvt__btn_PerkDeckDisabled_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__btn_PerkDeckEnabled_1_K2Node_ComponentBoundEvent_5_OnButtonClickedEvent__DelegateSignature(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.BndEvt__btn_PerkDeckEnabled_1_K2Node_ComponentBoundEvent_5_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void 鉹@t元_1(enum class Unknow PrevState, enum class Unknow CurrentState); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CheckFreeSupply(char IsInventoryOpen); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.CheckFreeSupply(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void 鉹@t元_2(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.鉹@t元_2(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void StartUltimateAnim(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.StartUltimateAnim(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void UpdateUnlockLevel(int32_t NewLevel); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.UpdateUnlockLevel(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void K2_RefreshPerkDeck(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.K2_RefreshPerkDeck(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void 鉹@t元_3(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.鉹@t元_3(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetEnoughGold(char IsEnough); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetEnoughGold(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-Inventory_Perk(int32_t EntryPoint); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.ExecuteUbergraph_UW-Inventory_Perk(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SequenceEvent__ENTRYPOINTUW-Inventory_Perk_2

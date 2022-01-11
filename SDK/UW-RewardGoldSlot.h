@@ -55,19 +55,19 @@ public:
 	float 1000StartTime; // 0x3A8 (4)
 	float FinStartTime; // 0x3AC (4)
 
-	void Divide(int32_t Value1, int32_t& RetS1, int32_t& RetS2); // Function UW-RewardGoldSlot.UW-RewardGoldSlot_C.Divide(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void StopSound(); // Function UW-RewardGoldSlot.UW-RewardGoldSlot_C.StopSound(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void 鉹@t元_7(); // Function UW-RewardGoldSlot.UW-RewardGoldSlot_C.鉹@t元_7(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void 鉹@t元_8(); // Function UW-RewardGoldSlot.UW-RewardGoldSlot_C.鉹@t元_8(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void CustomEvent(); // Function UW-RewardGoldSlot.UW-RewardGoldSlot_C.CustomEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void CustomEvent_2(); // Function UW-RewardGoldSlot.UW-RewardGoldSlot_C.CustomEvent_2(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void CustomEvent_3(); // Function UW-RewardGoldSlot.UW-RewardGoldSlot_C.CustomEvent_3(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void CustomEvent_4(); // Function UW-RewardGoldSlot.UW-RewardGoldSlot_C.CustomEvent_4(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetGold(int32_t AddGold, int32_t GetGold); // Function UW-RewardGoldSlot.UW-RewardGoldSlot_C.SetGold(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void CustomEvent_5(); // Function UW-RewardGoldSlot.UW-RewardGoldSlot_C.CustomEvent_5(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void 鉹@t元_1(); // Function UW-RewardGoldSlot.UW-RewardGoldSlot_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void 鉹@t元_2(); // Function UW-RewardGoldSlot.UW-RewardGoldSlot_C.鉹@t元_2(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-RewardGoldSlot(int32_t EntryPoint); // Function UW-RewardGoldSlot.UW-RewardGoldSlot_C.ExecuteUbergraph_UW-RewardGoldSlot(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	void Divide(int32_t Value1, int32_t& RetS1, int32_t& RetS2); // Function UW-RewardGoldSlot.UW-RewardGoldSlot_C.Divide(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void StopSound(); // Function UW-RewardGoldSlot.UW-RewardGoldSlot_C.StopSound(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void 鉹@t元_7(); // Function UW-RewardGoldSlot.UW-RewardGoldSlot_C.鉹@t元_7(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void 鉹@t元_8(); // Function UW-RewardGoldSlot.UW-RewardGoldSlot_C.鉹@t元_8(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CustomEvent(); // Function UW-RewardGoldSlot.UW-RewardGoldSlot_C.CustomEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CustomEvent_2(); // Function UW-RewardGoldSlot.UW-RewardGoldSlot_C.CustomEvent_2(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CustomEvent_3(); // Function UW-RewardGoldSlot.UW-RewardGoldSlot_C.CustomEvent_3(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CustomEvent_4(); // Function UW-RewardGoldSlot.UW-RewardGoldSlot_C.CustomEvent_4(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetGold(int32_t AddGold, int32_t GetGold); // Function UW-RewardGoldSlot.UW-RewardGoldSlot_C.SetGold(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CustomEvent_5(); // Function UW-RewardGoldSlot.UW-RewardGoldSlot_C.CustomEvent_5(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void 鉹@t元_1(); // Function UW-RewardGoldSlot.UW-RewardGoldSlot_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void 鉹@t元_2(); // Function UW-RewardGoldSlot.UW-RewardGoldSlot_C.鉹@t元_2(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-RewardGoldSlot(int32_t EntryPoint); // Function UW-RewardGoldSlot.UW-RewardGoldSlot_C.ExecuteUbergraph_UW-RewardGoldSlot(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-RewardGoldSlot.UW-RewardGoldSlot_C.Divide

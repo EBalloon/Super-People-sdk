@@ -3,14 +3,14 @@ class ABP-OutGameParachute_C : public ABravoHotelOutGameParachuteActor {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x300 (8)
-	struct Unknown ParachuteBag_SkeletalMesh; // 0x308 (8)
-	struct Unknown Parachute_SkeletalMesh; // 0x310 (8)
-	struct Unknown DefaultSceneRoot; // 0x318 (8)
+	struct Unknown UberGraphFrame; // 0x318 (8)
+	struct Unknown ParachuteBag_SkeletalMesh; // 0x320 (8)
+	struct Unknown Parachute_SkeletalMesh; // 0x328 (8)
+	struct Unknown DefaultSceneRoot; // 0x330 (8)
 
-	void ReceiveBeginPlay(); // Function BP-OutGameParachute.BP-OutGameParachute_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetSkinMaterial(struct Unknown Material); // Function BP-OutGameParachute.BP-OutGameParachute_C.SetSkinMaterial(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_BP-OutGameParachute(int32_t EntryPoint); // Function BP-OutGameParachute.BP-OutGameParachute_C.ExecuteUbergraph_BP-OutGameParachute(Final|UbergraphFunction) // <Game_BE.exe+0x2B812B0>
+	void ReceiveBeginPlay(); // Function BP-OutGameParachute.BP-OutGameParachute_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetSkinMaterial(struct Unknown Material); // Function BP-OutGameParachute.BP-OutGameParachute_C.SetSkinMaterial(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_BP-OutGameParachute(int32_t EntryPoint); // Function BP-OutGameParachute.BP-OutGameParachute_C.ExecuteUbergraph_BP-OutGameParachute(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
 };
 
 // Function BP-OutGameParachute.BP-OutGameParachute_C.ReceiveBeginPlay

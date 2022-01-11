@@ -21,8 +21,8 @@ public:
 	struct Unknown TerrainHeight; // 0x2E8 (8)
 	char IsParachute : 0; // 0x2F0 (1)
 
-	void SetParachuteInfo(struct Unknown SetParachuteInfo); // Function UW-FallingWidget.UW-FallingWidget_C.SetParachuteInfo(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-FallingWidget(int32_t EntryPoint); // Function UW-FallingWidget.UW-FallingWidget_C.ExecuteUbergraph_UW-FallingWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	void SetParachuteInfo(struct Unknown SetParachuteInfo); // Function UW-FallingWidget.UW-FallingWidget_C.SetParachuteInfo(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-FallingWidget(int32_t EntryPoint); // Function UW-FallingWidget.UW-FallingWidget_C.ExecuteUbergraph_UW-FallingWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-FallingWidget.UW-FallingWidget_C.SetParachuteInfo

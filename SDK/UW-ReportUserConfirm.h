@@ -10,10 +10,10 @@ public:
 	struct Unknown txt_description; // 0x278 (8)
 	struct Unknown uw-bg; // 0x280 (8)
 
-	void PreConstruct(char IsDesignTime); // Function UW-ReportUserConfirm.UW-ReportUserConfirm_C.PreConstruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Construct(); // Function UW-ReportUserConfirm.UW-ReportUserConfirm_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnReportSended(enum class Unknow InWidgetType); // Function UW-ReportUserConfirm.UW-ReportUserConfirm_C.OnReportSended(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-ReportUserConfirm(int32_t EntryPoint); // Function UW-ReportUserConfirm.UW-ReportUserConfirm_C.ExecuteUbergraph_UW-ReportUserConfirm(Final|UbergraphFunction) // <Game_BE.exe+0x2B812B0>
+	void PreConstruct(char IsDesignTime); // Function UW-ReportUserConfirm.UW-ReportUserConfirm_C.PreConstruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Construct(); // Function UW-ReportUserConfirm.UW-ReportUserConfirm_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnReportSended(enum class Unknow InWidgetType); // Function UW-ReportUserConfirm.UW-ReportUserConfirm_C.OnReportSended(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-ReportUserConfirm(int32_t EntryPoint); // Function UW-ReportUserConfirm.UW-ReportUserConfirm_C.ExecuteUbergraph_UW-ReportUserConfirm(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-ReportUserConfirm.UW-ReportUserConfirm_C.PreConstruct

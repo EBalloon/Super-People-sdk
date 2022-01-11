@@ -9,14 +9,14 @@ public:
 	struct Unknown Image_1; // 0x260 (8)
 	struct Unknown ControllerRef; // 0x268 (8)
 
-	enum class Unknow Get_CharacterPreviewImage_Visibility_1(); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.Get_CharacterPreviewImage_Visibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
-	void GetCharacterPreviewRef(char& Result, struct Unknown& CharacterPreviewRef); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.GetCharacterPreviewRef(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Construct(); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetPreviewVisible(char bVisible); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.SetPreviewVisible(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetPlayAnimation(); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.SetPlayAnimation(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Reset(); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.Reset(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void CustomEvent_1(); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.CustomEvent_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-Inventory_CharacterPreView(int32_t EntryPoint); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.ExecuteUbergraph_UW-Inventory_CharacterPreView(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	enum class Unknow Get_CharacterPreviewImage_Visibility_1(); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.Get_CharacterPreviewImage_Visibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void GetCharacterPreviewRef(char& Result, struct Unknown& CharacterPreviewRef); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.GetCharacterPreviewRef(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Construct(); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetPreviewVisible(char bVisible); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.SetPreviewVisible(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetPlayAnimation(); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.SetPlayAnimation(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Reset(); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.Reset(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CustomEvent_1(); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.CustomEvent_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-Inventory_CharacterPreView(int32_t EntryPoint); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.ExecuteUbergraph_UW-Inventory_CharacterPreView(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.Get_CharacterPreviewImage_Visibility_1

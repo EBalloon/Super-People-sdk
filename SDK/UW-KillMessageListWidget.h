@@ -31,19 +31,19 @@ public:
 	struct Unknown Timer_StartHideAnim; // 0x450 (8)
 	struct Unknown CurrentInfoColor; // 0x458 (40)
 
-	void ResetInfos(); // Function UW-KillMessageListWidget.UW-KillMessageListWidget_C.ResetInfos(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetBroadcastTypeIcon(enum class Unknow MessageType); // Function UW-KillMessageListWidget.UW-KillMessageListWidget_C.SetBroadcastTypeIcon(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void GetTeamType(struct Unknown PlayerState, enum class Unknow& TeamType); // Function UW-KillMessageListWidget.UW-KillMessageListWidget_C.GetTeamType(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
-	void GetInfoColor(struct Unknown Killer, struct Unknown Died, enum class Unknow MessageType, struct Unknown& OutTeamColor); // Function UW-KillMessageListWidget.UW-KillMessageListWidget_C.GetInfoColor(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
-	void SetBGColor(enum class Unknow MessageType); // Function UW-KillMessageListWidget.UW-KillMessageListWidget_C.SetBGColor(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void PlayDownAnim(); // Function UW-KillMessageListWidget.UW-KillMessageListWidget_C.PlayDownAnim(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void StartHideAnim(); // Function UW-KillMessageListWidget.UW-KillMessageListWidget_C.StartHideAnim(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void StartShow(); // Function UW-KillMessageListWidget.UW-KillMessageListWidget_C.StartShow(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnLoaded_E905D98740C8E2F4A90B4C89D663ACAA(struct Unknown Loaded); // Function UW-KillMessageListWidget.UW-KillMessageListWidget_C.OnLoaded_E905D98740C8E2F4A90B4C89D663ACAA(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnLoaded_342F68DF4CB26590AC0C9EA8C343CCF1(struct Unknown Loaded); // Function UW-KillMessageListWidget.UW-KillMessageListWidget_C.OnLoaded_342F68DF4CB26590AC0C9EA8C343CCF1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetKillMessageInfo(struct Unknown& Info); // Function UW-KillMessageListWidget.UW-KillMessageListWidget_C.SetKillMessageInfo(HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-KillMessageListWidget(int32_t EntryPoint); // Function UW-KillMessageListWidget.UW-KillMessageListWidget_C.ExecuteUbergraph_UW-KillMessageListWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
-	void OnTimeOut__DelegateSignature(int32_t ArrayIndex, struct Unknown Slot); // Function UW-KillMessageListWidget.UW-KillMessageListWidget_C.OnTimeOut__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void ResetInfos(); // Function UW-KillMessageListWidget.UW-KillMessageListWidget_C.ResetInfos(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetBroadcastTypeIcon(enum class Unknow MessageType); // Function UW-KillMessageListWidget.UW-KillMessageListWidget_C.SetBroadcastTypeIcon(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetTeamType(struct Unknown PlayerState, enum class Unknow& TeamType); // Function UW-KillMessageListWidget.UW-KillMessageListWidget_C.GetTeamType(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void GetInfoColor(struct Unknown Killer, struct Unknown Died, enum class Unknow MessageType, struct Unknown& OutTeamColor); // Function UW-KillMessageListWidget.UW-KillMessageListWidget_C.GetInfoColor(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void SetBGColor(enum class Unknow MessageType); // Function UW-KillMessageListWidget.UW-KillMessageListWidget_C.SetBGColor(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void PlayDownAnim(); // Function UW-KillMessageListWidget.UW-KillMessageListWidget_C.PlayDownAnim(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void StartHideAnim(); // Function UW-KillMessageListWidget.UW-KillMessageListWidget_C.StartHideAnim(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void StartShow(); // Function UW-KillMessageListWidget.UW-KillMessageListWidget_C.StartShow(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_E905D98740C8E2F4A90B4C89D663ACAA(struct Unknown Loaded); // Function UW-KillMessageListWidget.UW-KillMessageListWidget_C.OnLoaded_E905D98740C8E2F4A90B4C89D663ACAA(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_342F68DF4CB26590AC0C9EA8C343CCF1(struct Unknown Loaded); // Function UW-KillMessageListWidget.UW-KillMessageListWidget_C.OnLoaded_342F68DF4CB26590AC0C9EA8C343CCF1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetKillMessageInfo(struct Unknown& Info); // Function UW-KillMessageListWidget.UW-KillMessageListWidget_C.SetKillMessageInfo(HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-KillMessageListWidget(int32_t EntryPoint); // Function UW-KillMessageListWidget.UW-KillMessageListWidget_C.ExecuteUbergraph_UW-KillMessageListWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void OnTimeOut__DelegateSignature(int32_t ArrayIndex, struct Unknown Slot); // Function UW-KillMessageListWidget.UW-KillMessageListWidget_C.OnTimeOut__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-KillMessageListWidget.UW-KillMessageListWidget_C.ResetInfos

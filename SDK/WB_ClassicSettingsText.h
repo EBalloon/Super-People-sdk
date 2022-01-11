@@ -7,9 +7,9 @@ public:
 	struct Unknown TextField; // 0x250 (8)
 	struct FText Text; // 0x258 (24)
 
-	void Construct(); // Function WB_ClassicSettingsText.WB_ClassicSettingsText_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Update Text(struct FText Text); // Function WB_ClassicSettingsText.WB_ClassicSettingsText_C.Update Text(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_WB_ClassicSettingsText(int32_t EntryPoint); // Function WB_ClassicSettingsText.WB_ClassicSettingsText_C.ExecuteUbergraph_WB_ClassicSettingsText(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	void Construct(); // Function WB_ClassicSettingsText.WB_ClassicSettingsText_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Update Text(struct FText Text); // Function WB_ClassicSettingsText.WB_ClassicSettingsText_C.Update Text(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_WB_ClassicSettingsText(int32_t EntryPoint); // Function WB_ClassicSettingsText.WB_ClassicSettingsText_C.ExecuteUbergraph_WB_ClassicSettingsText(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function WB_ClassicSettingsText.WB_ClassicSettingsText_C.Construct

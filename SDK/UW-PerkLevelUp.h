@@ -23,19 +23,19 @@ public:
 	float FinishTime; // 0x3BC (4)
 	enum class Unknow PerkSlot; // 0x3C0 (1)
 
-	struct FText Get_TextBlock_1_Text_1(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Get_TextBlock_1_Text_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
-	struct Unknown Get_ItemImage_bg_Brush_1(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Get_ItemImage_bg_Brush_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
-	struct Unknown Get_ItemImage_Main_Brush_1(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Get_ItemImage_Main_Brush_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
-	struct FText Get_TextMountablewea_Text_1(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Get_TextMountablewea_Text_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
-	enum class Unknow Get_TextBlock_2_Visibility_1(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Get_TextBlock_2_Visibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
-	enum class Unknow Get_TextBlock_0_Visibility_1(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Get_TextBlock_0_Visibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
-	void StartFinish(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.StartFinish(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void StartSpin(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.StartSpin(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Construct(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void EndFinish(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.EndFinish(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetPerkInfo(struct Unknown PerkInfo); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.SetPerkInfo(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void RemoveSelf(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.RemoveSelf(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-PerkLevelUp(int32_t EntryPoint); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.ExecuteUbergraph_UW-PerkLevelUp(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	struct FText Get_TextBlock_1_Text_1(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Get_TextBlock_1_Text_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	struct Unknown Get_ItemImage_bg_Brush_1(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Get_ItemImage_bg_Brush_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	struct Unknown Get_ItemImage_Main_Brush_1(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Get_ItemImage_Main_Brush_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	struct FText Get_TextMountablewea_Text_1(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Get_TextMountablewea_Text_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	enum class Unknow Get_TextBlock_2_Visibility_1(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Get_TextBlock_2_Visibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	enum class Unknow Get_TextBlock_0_Visibility_1(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Get_TextBlock_0_Visibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void StartFinish(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.StartFinish(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void StartSpin(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.StartSpin(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Construct(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void EndFinish(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.EndFinish(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetPerkInfo(struct Unknown PerkInfo); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.SetPerkInfo(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void RemoveSelf(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.RemoveSelf(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-PerkLevelUp(int32_t EntryPoint); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.ExecuteUbergraph_UW-PerkLevelUp(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Get_TextBlock_1_Text_1

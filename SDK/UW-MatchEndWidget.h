@@ -18,18 +18,18 @@ public:
 	float WinMatchEndResultShowTime; // 0x3B0 (4)
 	struct Unknown ResultMatchEndAnimation; // 0x3B4 (2)
 
-	char IsVisibleMatchEndWidget(); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.IsVisibleMatchEndWidget(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void GetPlayerState(struct Unknown& PlayerState); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.GetPlayerState(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void K2_ShowSimpleResult(struct Unknown& SimpleResult); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.K2_ShowSimpleResult(Event|Protected|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void K2_HideSimpleResult(); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.K2_HideSimpleResult(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void K2_ShowFinalResult(struct Unknown& FinalResult); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.K2_ShowFinalResult(Event|Protected|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void K2_HideFinalResult(); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.K2_HideFinalResult(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Construct(); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void K2_ShowMatchEndAnimation(struct Unknown& MatchEndAnimation, struct Unknown& SimpleResult, char bIsRetired); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.K2_ShowMatchEndAnimation(Event|Protected|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void K2_HideMatchEndAnimation(); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.K2_HideMatchEndAnimation(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Init(); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.Init(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void 鉹@t元_1(); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-MatchEndWidget(int32_t EntryPoint); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.ExecuteUbergraph_UW-MatchEndWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	char IsVisibleMatchEndWidget(); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.IsVisibleMatchEndWidget(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetPlayerState(struct Unknown& PlayerState); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.GetPlayerState(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void K2_ShowSimpleResult(struct Unknown& SimpleResult); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.K2_ShowSimpleResult(Event|Protected|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void K2_HideSimpleResult(); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.K2_HideSimpleResult(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void K2_ShowFinalResult(struct Unknown& FinalResult); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.K2_ShowFinalResult(Event|Protected|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void K2_HideFinalResult(); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.K2_HideFinalResult(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Construct(); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void K2_ShowMatchEndAnimation(struct Unknown& MatchEndAnimation, struct Unknown& SimpleResult, char bIsRetired); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.K2_ShowMatchEndAnimation(Event|Protected|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void K2_HideMatchEndAnimation(); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.K2_HideMatchEndAnimation(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Init(); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.Init(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void 鉹@t元_1(); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-MatchEndWidget(int32_t EntryPoint); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.ExecuteUbergraph_UW-MatchEndWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-MatchEndWidget.UW-MatchEndWidget_C.IsVisibleMatchEndWidget

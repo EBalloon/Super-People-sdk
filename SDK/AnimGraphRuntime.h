@@ -260,11 +260,11 @@ public:
 	struct FMulticastInlineDelegate OnNotifyBegin; // 0x58 (16)
 	struct FMulticastInlineDelegate OnNotifyEnd; // 0x68 (16)
 
-	void OnNotifyEndReceived(struct FName NotifyName, struct Unknown& BranchingPointNotifyPayload); // Function AnimGraphRuntime.PlayMontageCallbackProxy.OnNotifyEndReceived(Final|Native|Protected|HasOutParms) // <Game_BE.exe+0x3A0AC70>
-	void OnNotifyBeginReceived(struct FName NotifyName, struct Unknown& BranchingPointNotifyPayload); // Function AnimGraphRuntime.PlayMontageCallbackProxy.OnNotifyBeginReceived(Final|Native|Protected|HasOutParms) // <Game_BE.exe+0x3A0AB90>
-	void OnMontageEnded(struct Unknown Montage, char bInterrupted); // Function AnimGraphRuntime.PlayMontageCallbackProxy.OnMontageEnded(Final|Native|Protected) // <Game_BE.exe+0x3A0AAC0>
-	void OnMontageBlendingOut(struct Unknown Montage, char bInterrupted); // Function AnimGraphRuntime.PlayMontageCallbackProxy.OnMontageBlendingOut(Final|Native|Protected) // <Game_BE.exe+0x3A0A9F0>
-	struct Unknown CreateProxyObjectForPlayMontage(struct Unknown InSkeletalMeshComponent, struct Unknown MontageToPlay, float PlayRate, float StartingPosition, struct FName StartingSection); // Function AnimGraphRuntime.PlayMontageCallbackProxy.CreateProxyObjectForPlayMontage(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x3A093F0>
+	void OnNotifyEndReceived(struct FName NotifyName, struct Unknown& BranchingPointNotifyPayload); // Function AnimGraphRuntime.PlayMontageCallbackProxy.OnNotifyEndReceived(Final|Native|Protected|HasOutParms) // <Game_BE.exe+0x3A09B80>
+	void OnNotifyBeginReceived(struct FName NotifyName, struct Unknown& BranchingPointNotifyPayload); // Function AnimGraphRuntime.PlayMontageCallbackProxy.OnNotifyBeginReceived(Final|Native|Protected|HasOutParms) // <Game_BE.exe+0x3A09AA0>
+	void OnMontageEnded(struct Unknown Montage, char bInterrupted); // Function AnimGraphRuntime.PlayMontageCallbackProxy.OnMontageEnded(Final|Native|Protected) // <Game_BE.exe+0x3A099D0>
+	void OnMontageBlendingOut(struct Unknown Montage, char bInterrupted); // Function AnimGraphRuntime.PlayMontageCallbackProxy.OnMontageBlendingOut(Final|Native|Protected) // <Game_BE.exe+0x3A09900>
+	struct Unknown CreateProxyObjectForPlayMontage(struct Unknown InSkeletalMeshComponent, struct Unknown MontageToPlay, float PlayRate, float StartingPosition, struct FName StartingSection); // Function AnimGraphRuntime.PlayMontageCallbackProxy.CreateProxyObjectForPlayMontage(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x3A08300>
 };
 
 // ScriptStruct AnimGraphRuntime.AnimNode_SkeletalControlBase

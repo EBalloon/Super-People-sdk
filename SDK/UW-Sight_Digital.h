@@ -10,10 +10,10 @@ public:
 	struct Unknown Scope_Center; // 0x268 (8)
 	struct Unknown Scope_Center_Dot; // 0x270 (8)
 
-	void SetScopeImageAngle(float NewAngle); // Function UW-Sight_Digital.UW-Sight_Digital_C.SetScopeImageAngle(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void K2_OnEnterADS(); // Function UW-Sight_Digital.UW-Sight_Digital_C.K2_OnEnterADS(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void K2_OnExitADS(); // Function UW-Sight_Digital.UW-Sight_Digital_C.K2_OnExitADS(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-Sight_Digital(int32_t EntryPoint); // Function UW-Sight_Digital.UW-Sight_Digital_C.ExecuteUbergraph_UW-Sight_Digital(Final|UbergraphFunction) // <Game_BE.exe+0x2B812B0>
+	void SetScopeImageAngle(float NewAngle); // Function UW-Sight_Digital.UW-Sight_Digital_C.SetScopeImageAngle(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void K2_OnEnterADS(); // Function UW-Sight_Digital.UW-Sight_Digital_C.K2_OnEnterADS(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void K2_OnExitADS(); // Function UW-Sight_Digital.UW-Sight_Digital_C.K2_OnExitADS(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-Sight_Digital(int32_t EntryPoint); // Function UW-Sight_Digital.UW-Sight_Digital_C.ExecuteUbergraph_UW-Sight_Digital(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-Sight_Digital.UW-Sight_Digital_C.SetScopeImageAngle

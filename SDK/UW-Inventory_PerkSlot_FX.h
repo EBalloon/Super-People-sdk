@@ -13,10 +13,10 @@ public:
 	struct Unknown PerkFxMaterialInstance; // 0x278 (8)
 	struct Unknown UltimatePerkFxTexture; // 0x280 (8)
 
-	void InitFxInfo(); // Function UW-Inventory_PerkSlot_FX.UW-Inventory_PerkSlot_FX_C.InitFxInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Construct(); // Function UW-Inventory_PerkSlot_FX.UW-Inventory_PerkSlot_FX_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-Inventory_PerkSlot_FX.UW-Inventory_PerkSlot_FX_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-Inventory_PerkSlot_FX(int32_t EntryPoint); // Function UW-Inventory_PerkSlot_FX.UW-Inventory_PerkSlot_FX_C.ExecuteUbergraph_UW-Inventory_PerkSlot_FX(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	void InitFxInfo(); // Function UW-Inventory_PerkSlot_FX.UW-Inventory_PerkSlot_FX_C.InitFxInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Construct(); // Function UW-Inventory_PerkSlot_FX.UW-Inventory_PerkSlot_FX_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-Inventory_PerkSlot_FX.UW-Inventory_PerkSlot_FX_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-Inventory_PerkSlot_FX(int32_t EntryPoint); // Function UW-Inventory_PerkSlot_FX.UW-Inventory_PerkSlot_FX_C.ExecuteUbergraph_UW-Inventory_PerkSlot_FX(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-Inventory_PerkSlot_FX.UW-Inventory_PerkSlot_FX_C.InitFxInfo

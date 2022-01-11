@@ -10,11 +10,11 @@ public:
 	struct Unknown Image_69; // 0x268 (8)
 	char NextScene : 0; // 0x270 (1)
 
-	void Destory(); // Function UW-CompanyLogo.UW-CompanyLogo_C.Destory(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void MoveNextScene(); // Function UW-CompanyLogo.UW-CompanyLogo_C.MoveNextScene(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Construct(); // Function UW-CompanyLogo.UW-CompanyLogo_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void 鉹@t元_1(); // Function UW-CompanyLogo.UW-CompanyLogo_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-CompanyLogo(int32_t EntryPoint); // Function UW-CompanyLogo.UW-CompanyLogo_C.ExecuteUbergraph_UW-CompanyLogo(Final|UbergraphFunction) // <Game_BE.exe+0x2B812B0>
+	void Destory(); // Function UW-CompanyLogo.UW-CompanyLogo_C.Destory(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void MoveNextScene(); // Function UW-CompanyLogo.UW-CompanyLogo_C.MoveNextScene(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Construct(); // Function UW-CompanyLogo.UW-CompanyLogo_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void 鉹@t元_1(); // Function UW-CompanyLogo.UW-CompanyLogo_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-CompanyLogo(int32_t EntryPoint); // Function UW-CompanyLogo.UW-CompanyLogo_C.ExecuteUbergraph_UW-CompanyLogo(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-CompanyLogo.UW-CompanyLogo_C.Destory

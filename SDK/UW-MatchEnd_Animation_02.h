@@ -129,30 +129,30 @@ public:
 	char bTestIsWin : 0; // 0x6C9 (1)
 	float MatchFinalResultShowTime; // 0x6CC (4)
 
-	void SequenceEvent__ENTRYPOINTUW-MatchEnd_Animation_02_2(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.SequenceEvent__ENTRYPOINTUW-MatchEnd_Animation_02_2(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SequenceEvent__ENTRYPOINTUW-MatchEnd_Animation_02_1(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.SequenceEvent__ENTRYPOINTUW-MatchEnd_Animation_02_1(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void CheckSkipBtn(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.CheckSkipBtn(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void PlayCharacterResultAnimation(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.PlayCharacterResultAnimation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void UpdateInputMode(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.UpdateInputMode(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void RemoveOverlapedWidgets(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.RemoveOverlapedWidgets(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetKillerInfo(struct Unknown SimpleResult); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.SetKillerInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetDropedItem(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.SetDropedItem(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ShowMatchEndAnimation(struct Unknown AnimationData, struct Unknown Result, char IsTestMode, char bIsRetire); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.ShowMatchEndAnimation(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void 鉹@t元_1(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ShowLoseAnimation(struct Unknown Data); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.ShowLoseAnimation(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void DelegateOnWhoKilledMe_Event_1(struct Unknown& SimpleResult); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.DelegateOnWhoKilledMe_Event_1(HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__Button_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.BndEvt__Button_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void HideAnimation(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.HideAnimation(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void 鉹@t元_2(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.鉹@t元_2(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Construct(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void 鉹@t元_3(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.鉹@t元_3(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void 鉹@t元_4(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.鉹@t元_4(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Init(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.Init(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__Button_103_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.BndEvt__Button_103_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__Button_1_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.BndEvt__Button_1_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-MatchEnd_Animation_02(int32_t EntryPoint); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.ExecuteUbergraph_UW-MatchEnd_Animation_02(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
-	void EventDispatcher_HideComplete__DelegateSignature(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.EventDispatcher_HideComplete__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void SequenceEvent__ENTRYPOINTUW-MatchEnd_Animation_02_2(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.SequenceEvent__ENTRYPOINTUW-MatchEnd_Animation_02_2(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SequenceEvent__ENTRYPOINTUW-MatchEnd_Animation_02_1(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.SequenceEvent__ENTRYPOINTUW-MatchEnd_Animation_02_1(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CheckSkipBtn(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.CheckSkipBtn(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void PlayCharacterResultAnimation(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.PlayCharacterResultAnimation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void UpdateInputMode(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.UpdateInputMode(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void RemoveOverlapedWidgets(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.RemoveOverlapedWidgets(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetKillerInfo(struct Unknown SimpleResult); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.SetKillerInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetDropedItem(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.SetDropedItem(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowMatchEndAnimation(struct Unknown AnimationData, struct Unknown Result, char IsTestMode, char bIsRetire); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.ShowMatchEndAnimation(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void 鉹@t元_1(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowLoseAnimation(struct Unknown Data); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.ShowLoseAnimation(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void DelegateOnWhoKilledMe_Event_1(struct Unknown& SimpleResult); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.DelegateOnWhoKilledMe_Event_1(HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__Button_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.BndEvt__Button_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void HideAnimation(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.HideAnimation(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void 鉹@t元_2(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.鉹@t元_2(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Construct(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void 鉹@t元_3(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.鉹@t元_3(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void 鉹@t元_4(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.鉹@t元_4(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Init(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.Init(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__Button_103_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.BndEvt__Button_103_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__Button_1_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.BndEvt__Button_1_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-MatchEnd_Animation_02(int32_t EntryPoint); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.ExecuteUbergraph_UW-MatchEnd_Animation_02(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void EventDispatcher_HideComplete__DelegateSignature(); // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.EventDispatcher_HideComplete__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-MatchEnd_Animation_02.UW-MatchEnd_Animation_02_C.SequenceEvent__ENTRYPOINTUW-MatchEnd_Animation_02_2

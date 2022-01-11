@@ -46,37 +46,37 @@ public:
 	float TempMarkerPosition; // 0x484 (4)
 	float ArrangedAngle; // 0x488 (4)
 
-	struct Unknown CreateExpertWeaponItemMarker(); // Function UW-CompassWidget.UW-CompassWidget_C.CreateExpertWeaponItemMarker(Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	struct Unknown CreateLocalPingnMarker(); // Function UW-CompassWidget.UW-CompassWidget_C.CreateLocalPingnMarker(Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetWidgetPosition(struct Unknown Pos, struct Unknown Widget); // Function UW-CompassWidget.UW-CompassWidget_C.SetWidgetPosition(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	struct Unknown CreateResuscitationMarker(); // Function UW-CompassWidget.UW-CompassWidget_C.CreateResuscitationMarker(Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	struct Unknown CreateMaterialItemMarker(); // Function UW-CompassWidget.UW-CompassWidget_C.CreateMaterialItemMarker(Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	struct FText SetRotation(int32_t Angle); // Function UW-CompassWidget.UW-CompassWidget_C.SetRotation(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	struct Unknown CreateRuler(struct Unknown Position, float Angle); // Function UW-CompassWidget.UW-CompassWidget_C.CreateRuler(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void CreateMarkerWidget(int32_t TeamPlayerCnt); // Function UW-CompassWidget.UW-CompassWidget_C.CreateMarkerWidget(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	float GetDirectionAngle(float TargetAngle, float CurrentAngle, struct Unknown Curve); // Function UW-CompassWidget.UW-CompassWidget_C.GetDirectionAngle(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
-	float GetCurvedFactor(float TargetAngle, float CurrentAngle, float Weight, float Offeset, struct Unknown Curve); // Function UW-CompassWidget.UW-CompassWidget_C.GetCurvedFactor(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
-	struct Unknown CreateUnit(struct Unknown Position, float Angle); // Function UW-CompassWidget.UW-CompassWidget_C.CreateUnit(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	float ConvertAngleToDistance(float Angle); // Function UW-CompassWidget.UW-CompassWidget_C.ConvertAngleToDistance(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
-	void UpdateMarkerRotation(); // Function UW-CompassWidget.UW-CompassWidget_C.UpdateMarkerRotation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void UpdateControllerRotation(float Value, int32_t RealAngle); // Function UW-CompassWidget.UW-CompassWidget_C.UpdateControllerRotation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Construct(); // Function UW-CompassWidget.UW-CompassWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnUpdateMarkerPosition(int32_t WidgetIdx); // Function UW-CompassWidget.UW-CompassWidget_C.OnUpdateMarkerPosition(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void CreateMarker(int32_t Count); // Function UW-CompassWidget.UW-CompassWidget_C.CreateMarker(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnResetUnit(struct Unknown Widget, float UnitAngle); // Function UW-CompassWidget.UW-CompassWidget_C.OnResetUnit(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnUpdateViewAngle(float Value, int32_t RealAngle); // Function UW-CompassWidget.UW-CompassWidget_C.OnUpdateViewAngle(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnSetMarkerInfo(struct Unknown& MarkerPingInfo, char UsingSpawnAnimation); // Function UW-CompassWidget.UW-CompassWidget_C.OnSetMarkerInfo(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnUpdatePersonalSupplyBoxMarkerPosition(); // Function UW-CompassWidget.UW-CompassWidget_C.OnUpdatePersonalSupplyBoxMarkerPosition(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnSetPersonalSupplyBoxMarkerInfo(struct Unknown& MarkerPingInfo, char Opened, char UsingSpawnAnimation); // Function UW-CompassWidget.UW-CompassWidget_C.OnSetPersonalSupplyBoxMarkerInfo(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnUpdateMaterialItemMarkerPosition(int32_t PingIndex); // Function UW-CompassWidget.UW-CompassWidget_C.OnUpdateMaterialItemMarkerPosition(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnSetMaterialItemMarkerInfo(struct Unknown& MaterialMarker, char UsingSpawnAnimation); // Function UW-CompassWidget.UW-CompassWidget_C.OnSetMaterialItemMarkerInfo(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnUpdateResuscitationMarkerPosition(struct Unknown MarkerWidget, struct Unknown Pos); // Function UW-CompassWidget.UW-CompassWidget_C.OnUpdateResuscitationMarkerPosition(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnSetResuscitationMarkerInfo(struct Unknown MarkerWidget, struct Unknown PlayerState); // Function UW-CompassWidget.UW-CompassWidget_C.OnSetResuscitationMarkerInfo(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnSetLocalPingMarkerInfo(struct Unknown& LocalPingMarker, char UsingSpawnAnimation); // Function UW-CompassWidget.UW-CompassWidget_C.OnSetLocalPingMarkerInfo(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnUpdateLocalPingMarkerPosition(int32_t PingIndex); // Function UW-CompassWidget.UW-CompassWidget_C.OnUpdateLocalPingMarkerPosition(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnUpdateExpertWeaponItemMarkerPosition(); // Function UW-CompassWidget.UW-CompassWidget_C.OnUpdateExpertWeaponItemMarkerPosition(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnSetExpertWeaponItemMarkerInfo(struct Unknown& ExpertWeaponMarker, char UsingSpawnAnimation); // Function UW-CompassWidget.UW-CompassWidget_C.OnSetExpertWeaponItemMarkerInfo(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-CompassWidget(int32_t EntryPoint); // Function UW-CompassWidget.UW-CompassWidget_C.ExecuteUbergraph_UW-CompassWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	struct Unknown CreateExpertWeaponItemMarker(); // Function UW-CompassWidget.UW-CompassWidget_C.CreateExpertWeaponItemMarker(Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct Unknown CreateLocalPingnMarker(); // Function UW-CompassWidget.UW-CompassWidget_C.CreateLocalPingnMarker(Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetWidgetPosition(struct Unknown Pos, struct Unknown Widget); // Function UW-CompassWidget.UW-CompassWidget_C.SetWidgetPosition(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct Unknown CreateResuscitationMarker(); // Function UW-CompassWidget.UW-CompassWidget_C.CreateResuscitationMarker(Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct Unknown CreateMaterialItemMarker(); // Function UW-CompassWidget.UW-CompassWidget_C.CreateMaterialItemMarker(Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FText SetRotation(int32_t Angle); // Function UW-CompassWidget.UW-CompassWidget_C.SetRotation(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct Unknown CreateRuler(struct Unknown Position, float Angle); // Function UW-CompassWidget.UW-CompassWidget_C.CreateRuler(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CreateMarkerWidget(int32_t TeamPlayerCnt); // Function UW-CompassWidget.UW-CompassWidget_C.CreateMarkerWidget(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	float GetDirectionAngle(float TargetAngle, float CurrentAngle, struct Unknown Curve); // Function UW-CompassWidget.UW-CompassWidget_C.GetDirectionAngle(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	float GetCurvedFactor(float TargetAngle, float CurrentAngle, float Weight, float Offeset, struct Unknown Curve); // Function UW-CompassWidget.UW-CompassWidget_C.GetCurvedFactor(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	struct Unknown CreateUnit(struct Unknown Position, float Angle); // Function UW-CompassWidget.UW-CompassWidget_C.CreateUnit(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	float ConvertAngleToDistance(float Angle); // Function UW-CompassWidget.UW-CompassWidget_C.ConvertAngleToDistance(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void UpdateMarkerRotation(); // Function UW-CompassWidget.UW-CompassWidget_C.UpdateMarkerRotation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void UpdateControllerRotation(float Value, int32_t RealAngle); // Function UW-CompassWidget.UW-CompassWidget_C.UpdateControllerRotation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Construct(); // Function UW-CompassWidget.UW-CompassWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnUpdateMarkerPosition(int32_t WidgetIdx); // Function UW-CompassWidget.UW-CompassWidget_C.OnUpdateMarkerPosition(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CreateMarker(int32_t Count); // Function UW-CompassWidget.UW-CompassWidget_C.CreateMarker(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnResetUnit(struct Unknown Widget, float UnitAngle); // Function UW-CompassWidget.UW-CompassWidget_C.OnResetUnit(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnUpdateViewAngle(float Value, int32_t RealAngle); // Function UW-CompassWidget.UW-CompassWidget_C.OnUpdateViewAngle(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnSetMarkerInfo(struct Unknown& MarkerPingInfo, char UsingSpawnAnimation); // Function UW-CompassWidget.UW-CompassWidget_C.OnSetMarkerInfo(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnUpdatePersonalSupplyBoxMarkerPosition(); // Function UW-CompassWidget.UW-CompassWidget_C.OnUpdatePersonalSupplyBoxMarkerPosition(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnSetPersonalSupplyBoxMarkerInfo(struct Unknown& MarkerPingInfo, char Opened, char UsingSpawnAnimation); // Function UW-CompassWidget.UW-CompassWidget_C.OnSetPersonalSupplyBoxMarkerInfo(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnUpdateMaterialItemMarkerPosition(int32_t PingIndex); // Function UW-CompassWidget.UW-CompassWidget_C.OnUpdateMaterialItemMarkerPosition(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnSetMaterialItemMarkerInfo(struct Unknown& MaterialMarker, char UsingSpawnAnimation); // Function UW-CompassWidget.UW-CompassWidget_C.OnSetMaterialItemMarkerInfo(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnUpdateResuscitationMarkerPosition(struct Unknown MarkerWidget, struct Unknown Pos); // Function UW-CompassWidget.UW-CompassWidget_C.OnUpdateResuscitationMarkerPosition(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnSetResuscitationMarkerInfo(struct Unknown MarkerWidget, struct Unknown PlayerState); // Function UW-CompassWidget.UW-CompassWidget_C.OnSetResuscitationMarkerInfo(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnSetLocalPingMarkerInfo(struct Unknown& LocalPingMarker, char UsingSpawnAnimation); // Function UW-CompassWidget.UW-CompassWidget_C.OnSetLocalPingMarkerInfo(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnUpdateLocalPingMarkerPosition(int32_t PingIndex); // Function UW-CompassWidget.UW-CompassWidget_C.OnUpdateLocalPingMarkerPosition(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnUpdateExpertWeaponItemMarkerPosition(); // Function UW-CompassWidget.UW-CompassWidget_C.OnUpdateExpertWeaponItemMarkerPosition(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnSetExpertWeaponItemMarkerInfo(struct Unknown& ExpertWeaponMarker, char UsingSpawnAnimation); // Function UW-CompassWidget.UW-CompassWidget_C.OnSetExpertWeaponItemMarkerInfo(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-CompassWidget(int32_t EntryPoint); // Function UW-CompassWidget.UW-CompassWidget_C.ExecuteUbergraph_UW-CompassWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-CompassWidget.UW-CompassWidget_C.CreateExpertWeaponItemMarker

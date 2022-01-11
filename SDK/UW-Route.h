@@ -11,11 +11,11 @@ public:
 	struct Unknown Image_237; // 0x2D8 (8)
 	struct Unknown MapCompRef; // 0x2E0 (8)
 
-	void StopAirCraftAnimation(); // Function UW-Route.UW-Route_C.StopAirCraftAnimation(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void UpdateAirCraftScaleByMouseWheel(float Delta); // Function UW-Route.UW-Route_C.UpdateAirCraftScaleByMouseWheel(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void StartAirCraftAnimation(); // Function UW-Route.UW-Route_C.StartAirCraftAnimation(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void UpdateAircraftAngle(float Angle); // Function UW-Route.UW-Route_C.UpdateAircraftAngle(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-Route(int32_t EntryPoint); // Function UW-Route.UW-Route_C.ExecuteUbergraph_UW-Route(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	void StopAirCraftAnimation(); // Function UW-Route.UW-Route_C.StopAirCraftAnimation(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void UpdateAirCraftScaleByMouseWheel(float Delta); // Function UW-Route.UW-Route_C.UpdateAirCraftScaleByMouseWheel(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void StartAirCraftAnimation(); // Function UW-Route.UW-Route_C.StartAirCraftAnimation(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void UpdateAircraftAngle(float Angle); // Function UW-Route.UW-Route_C.UpdateAircraftAngle(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-Route(int32_t EntryPoint); // Function UW-Route.UW-Route_C.ExecuteUbergraph_UW-Route(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-Route.UW-Route_C.StopAirCraftAnimation

@@ -22,10 +22,10 @@ public:
 	char IsUPState : 0; // 0x2A8 (1)
 	struct FMulticastInlineDelegate Dispatcher_ProgressBarDone; // 0x2B0 (16)
 
-	void SetData(float StartPoint, float EndPoint, float Min, float MAX, float ShowTime, char Play); // Function UW-RankPoint.UW-RankPoint_C.SetData(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-RankPoint.UW-RankPoint_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-RankPoint(int32_t EntryPoint); // Function UW-RankPoint.UW-RankPoint_C.ExecuteUbergraph_UW-RankPoint(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
-	void Dispatcher_ProgressBarDone__DelegateSignature(); // Function UW-RankPoint.UW-RankPoint_C.Dispatcher_ProgressBarDone__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void SetData(float StartPoint, float EndPoint, float Min, float MAX, float ShowTime, char Play); // Function UW-RankPoint.UW-RankPoint_C.SetData(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-RankPoint.UW-RankPoint_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-RankPoint(int32_t EntryPoint); // Function UW-RankPoint.UW-RankPoint_C.ExecuteUbergraph_UW-RankPoint(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void Dispatcher_ProgressBarDone__DelegateSignature(); // Function UW-RankPoint.UW-RankPoint_C.Dispatcher_ProgressBarDone__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-RankPoint.UW-RankPoint_C.SetData

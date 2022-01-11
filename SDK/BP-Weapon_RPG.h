@@ -3,15 +3,15 @@ class ABP-Weapon_RPG_C : public ABP-RangedWeaponBase_C {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x22A0 (8)
+	struct Unknown UberGraphFrame; // 0x22B0 (8)
 
-	void GetTargetEffectorLocationR(struct Unknown& TargetEffectorLocationR); // Function BP-Weapon_RPG.BP-Weapon_RPG_C.GetTargetEffectorLocationR(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
-	void ReceiveTick(float DeltaSeconds); // Function BP-Weapon_RPG.BP-Weapon_RPG_C.ReceiveTick(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void K2_OnEquip(); // Function BP-Weapon_RPG.BP-Weapon_RPG_C.K2_OnEquip(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void K2_OnUnEquip(); // Function BP-Weapon_RPG.BP-Weapon_RPG_C.K2_OnUnEquip(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ReceiveBeginPlay(); // Function BP-Weapon_RPG.BP-Weapon_RPG_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void CheckWeaponScale(); // Function BP-Weapon_RPG.BP-Weapon_RPG_C.CheckWeaponScale(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_BP-Weapon_RPG(int32_t EntryPoint); // Function BP-Weapon_RPG.BP-Weapon_RPG_C.ExecuteUbergraph_BP-Weapon_RPG(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	void GetTargetEffectorLocationR(struct Unknown& TargetEffectorLocationR); // Function BP-Weapon_RPG.BP-Weapon_RPG_C.GetTargetEffectorLocationR(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void ReceiveTick(float DeltaSeconds); // Function BP-Weapon_RPG.BP-Weapon_RPG_C.ReceiveTick(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void K2_OnEquip(); // Function BP-Weapon_RPG.BP-Weapon_RPG_C.K2_OnEquip(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void K2_OnUnEquip(); // Function BP-Weapon_RPG.BP-Weapon_RPG_C.K2_OnUnEquip(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ReceiveBeginPlay(); // Function BP-Weapon_RPG.BP-Weapon_RPG_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CheckWeaponScale(); // Function BP-Weapon_RPG.BP-Weapon_RPG_C.CheckWeaponScale(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_BP-Weapon_RPG(int32_t EntryPoint); // Function BP-Weapon_RPG.BP-Weapon_RPG_C.ExecuteUbergraph_BP-Weapon_RPG(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function BP-Weapon_RPG.BP-Weapon_RPG_C.GetTargetEffectorLocationR

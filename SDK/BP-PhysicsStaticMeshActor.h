@@ -3,13 +3,13 @@ class ABP-PhysicsStaticMeshActor_C : public UActor {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x300 (8)
-	struct Unknown StaticMesh; // 0x308 (8)
-	struct Unknown DefaultSceneRoot; // 0x310 (8)
-	float DestructibleMeshLifeTime; // 0x318 (4)
+	struct Unknown UberGraphFrame; // 0x318 (8)
+	struct Unknown StaticMesh; // 0x320 (8)
+	struct Unknown DefaultSceneRoot; // 0x328 (8)
+	float DestructibleMeshLifeTime; // 0x330 (4)
 
-	void ReceiveBeginPlay(); // Function BP-PhysicsStaticMeshActor.BP-PhysicsStaticMeshActor_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_BP-PhysicsStaticMeshActor(int32_t EntryPoint); // Function BP-PhysicsStaticMeshActor.BP-PhysicsStaticMeshActor_C.ExecuteUbergraph_BP-PhysicsStaticMeshActor(Final|UbergraphFunction) // <Game_BE.exe+0x2B812B0>
+	void ReceiveBeginPlay(); // Function BP-PhysicsStaticMeshActor.BP-PhysicsStaticMeshActor_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_BP-PhysicsStaticMeshActor(int32_t EntryPoint); // Function BP-PhysicsStaticMeshActor.BP-PhysicsStaticMeshActor_C.ExecuteUbergraph_BP-PhysicsStaticMeshActor(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
 };
 
 // Function BP-PhysicsStaticMeshActor.BP-PhysicsStaticMeshActor_C.ReceiveBeginPlay

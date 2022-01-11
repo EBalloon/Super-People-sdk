@@ -27,17 +27,17 @@ public:
 	struct TMap<Unknown, Unknown> ClassInfoItemMap; // 0x2F0 (80)
 	char ListVisibility : 0; // 0x340 (1)
 
-	void UpdateClassCount(); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.UpdateClassCount(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void HiddenAllClassLists(); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.HiddenAllClassLists(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetClassList(); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.SetClassList(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Construct(); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__Button_SpreadList_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.BndEvt__Button_SpreadList_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OpenList(); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.OpenList(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void CloseList(); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.CloseList(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void UpdateList(); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.UpdateList(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnBattleRoyalStateChanged_Event_1(enum class Unknow PrevState, enum class Unknow CurrentState); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.OnBattleRoyalStateChanged_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnUpdateClassCount_Event_1(); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.OnUpdateClassCount_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-ClassinfoitemBoardWidget(int32_t EntryPoint); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.ExecuteUbergraph_UW-ClassinfoitemBoardWidget(Final|UbergraphFunction) // <Game_BE.exe+0x2B812B0>
+	void UpdateClassCount(); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.UpdateClassCount(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void HiddenAllClassLists(); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.HiddenAllClassLists(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetClassList(); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.SetClassList(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Construct(); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__Button_SpreadList_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.BndEvt__Button_SpreadList_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OpenList(); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.OpenList(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CloseList(); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.CloseList(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void UpdateList(); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.UpdateList(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnBattleRoyalStateChanged_Event_1(enum class Unknow PrevState, enum class Unknow CurrentState); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.OnBattleRoyalStateChanged_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnUpdateClassCount_Event_1(); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.OnUpdateClassCount_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-ClassinfoitemBoardWidget(int32_t EntryPoint); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.ExecuteUbergraph_UW-ClassinfoitemBoardWidget(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.UpdateClassCount

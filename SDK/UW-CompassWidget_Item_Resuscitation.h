@@ -8,7 +8,7 @@ public:
 	struct Unknown ImageLine; // 0x258 (8)
 	struct Unknown Img_Color; // 0x260 (8)
 
-	void InitIcon(struct Unknown PlayerState); // Function UW-CompassWidget_Item_Resuscitation.UW-CompassWidget_Item_Resuscitation_C.InitIcon(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void InitIcon(struct Unknown PlayerState); // Function UW-CompassWidget_Item_Resuscitation.UW-CompassWidget_Item_Resuscitation_C.InitIcon(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-CompassWidget_Item_Resuscitation.UW-CompassWidget_Item_Resuscitation_C.InitIcon

@@ -15,9 +15,9 @@ public:
 	char IsTickStart : 0; // 0xEC (1)
 	struct Unknown TargetCharacter; // 0xF0 (8)
 
-	void DrawGrassCollision(struct Unknown TargetCharacter); // Function BP-GrassCollision_Character.BP-GrassCollision_Character_C.DrawGrassCollision(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ClearRenderTarget(); // Function BP-GrassCollision_Character.BP-GrassCollision_Character_C.ClearRenderTarget(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_BP-GrassCollision_Character(int32_t EntryPoint); // Function BP-GrassCollision_Character.BP-GrassCollision_Character_C.ExecuteUbergraph_BP-GrassCollision_Character(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	void DrawGrassCollision(struct Unknown TargetCharacter); // Function BP-GrassCollision_Character.BP-GrassCollision_Character_C.DrawGrassCollision(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ClearRenderTarget(); // Function BP-GrassCollision_Character.BP-GrassCollision_Character_C.ClearRenderTarget(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_BP-GrassCollision_Character(int32_t EntryPoint); // Function BP-GrassCollision_Character.BP-GrassCollision_Character_C.ExecuteUbergraph_BP-GrassCollision_Character(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function BP-GrassCollision_Character.BP-GrassCollision_Character_C.DrawGrassCollision

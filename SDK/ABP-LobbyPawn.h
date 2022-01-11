@@ -97,13 +97,13 @@ public:
 	float DeltaTimeX; // 0x65B0 (4)
 	float HairAnimDynamicsAlpha; // 0x65B4 (4)
 
-	void AnimGraph(struct Unknown& AnimGraph); // Function ABP-LobbyPawn.ABP-LobbyPawn_C.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void UpdateAnimDynamicsAlpha(); // Function ABP-LobbyPawn.ABP-LobbyPawn_C.UpdateAnimDynamicsAlpha(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	char IsNeedToApplyLeftHandIK(); // Function ABP-LobbyPawn.ABP-LobbyPawn_C.IsNeedToApplyLeftHandIK(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
-	void BlueprintUpdateAnimation(float DeltaTimeX); // Function ABP-LobbyPawn.ABP-LobbyPawn_C.BlueprintUpdateAnimation(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP-LobbyPawn_AnimGraphNode_TransitionResult_B1938DBB4FA07527E591E291B7304361(); // Function ABP-LobbyPawn.ABP-LobbyPawn_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP-LobbyPawn_AnimGraphNode_TransitionResult_B1938DBB4FA07527E591E291B7304361(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP-LobbyPawn_AnimGraphNode_TransitionResult_5F4429C24615D1D556AB4C92EB9C64DC(); // Function ABP-LobbyPawn.ABP-LobbyPawn_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP-LobbyPawn_AnimGraphNode_TransitionResult_5F4429C24615D1D556AB4C92EB9C64DC(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_ABP-LobbyPawn(int32_t EntryPoint); // Function ABP-LobbyPawn.ABP-LobbyPawn_C.ExecuteUbergraph_ABP-LobbyPawn(Final|UbergraphFunction) // <Game_BE.exe+0x2B812B0>
+	void AnimGraph(struct Unknown& AnimGraph); // Function ABP-LobbyPawn.ABP-LobbyPawn_C.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void UpdateAnimDynamicsAlpha(); // Function ABP-LobbyPawn.ABP-LobbyPawn_C.UpdateAnimDynamicsAlpha(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	char IsNeedToApplyLeftHandIK(); // Function ABP-LobbyPawn.ABP-LobbyPawn_C.IsNeedToApplyLeftHandIK(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void BlueprintUpdateAnimation(float DeltaTimeX); // Function ABP-LobbyPawn.ABP-LobbyPawn_C.BlueprintUpdateAnimation(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP-LobbyPawn_AnimGraphNode_TransitionResult_B1938DBB4FA07527E591E291B7304361(); // Function ABP-LobbyPawn.ABP-LobbyPawn_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP-LobbyPawn_AnimGraphNode_TransitionResult_B1938DBB4FA07527E591E291B7304361(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP-LobbyPawn_AnimGraphNode_TransitionResult_5F4429C24615D1D556AB4C92EB9C64DC(); // Function ABP-LobbyPawn.ABP-LobbyPawn_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP-LobbyPawn_AnimGraphNode_TransitionResult_5F4429C24615D1D556AB4C92EB9C64DC(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_ABP-LobbyPawn(int32_t EntryPoint); // Function ABP-LobbyPawn.ABP-LobbyPawn_C.ExecuteUbergraph_ABP-LobbyPawn(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
 };
 
 // Function ABP-LobbyPawn.ABP-LobbyPawn_C.AnimGraph

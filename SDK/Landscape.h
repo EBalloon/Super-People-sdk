@@ -117,7 +117,7 @@ class AControlPointMeshActor : public UActor {
 
 public:
 
-	struct Unknown ControlPointMeshComponent; // 0x300 (8)
+	struct Unknown ControlPointMeshComponent; // 0x318 (8)
 };
 
 // Class Landscape.ControlPointMeshComponent
@@ -133,76 +133,76 @@ class ALandscapeProxy : public UActor {
 
 public:
 
-	struct Unknown SplineComponent; // 0x300 (8)
-	struct Unknown LandscapeGuid; // 0x308 (16)
-	struct Unknown LandscapeSectionOffset; // 0x328 (8)
-	int32_t MaxLODLevel; // 0x330 (4)
-	float LODDistanceFactor; // 0x334 (4)
-	char LODFalloff; // 0x338 (1)
-	float ComponentScreenSizeToUseSubSections; // 0x33C (4)
-	float LOD0ScreenSize; // 0x340 (4)
-	float LOD0DistributionSetting; // 0x344 (4)
-	float LODDistributionSetting; // 0x348 (4)
-	float TessellationComponentScreenSize; // 0x34C (4)
-	char UseTessellationComponentScreenSizeFalloff : 0; // 0x350 (1)
-	float TessellationComponentScreenSizeFalloff; // 0x354 (4)
-	int32_t OccluderGeometryLOD; // 0x358 (4)
-	int32_t StaticLightingLOD; // 0x35C (4)
-	struct Unknown DefaultPhysMaterial; // 0x360 (8)
-	float StreamingDistanceMultiplier; // 0x368 (4)
-	struct Unknown LandscapeMaterial; // 0x370 (8)
-	struct Unknown LandscapeHoleMaterial; // 0x398 (8)
-	struct TArray<Unknown> LandscapeMaterialsOverride; // 0x3A0 (16)
-	char bMeshHoles : 0; // 0x3B0 (1)
-	char MeshHolesMaxLod; // 0x3B1 (1)
-	struct TArray<Unknown> RuntimeVirtualTextures; // 0x3B8 (16)
-	int32_t VirtualTextureNumLods; // 0x3C8 (4)
-	int32_t VirtualTextureLodBias; // 0x3CC (4)
-	enum class Unknow VirtualTextureRenderPassType; // 0x3D0 (1)
-	float NegativeZBoundsExtension; // 0x3D4 (4)
-	float PositiveZBoundsExtension; // 0x3D8 (4)
-	struct TArray<Unknown> LandscapeComponents; // 0x3E0 (16)
-	struct TArray<Unknown> CollisionComponents; // 0x3F0 (16)
-	struct TArray<Unknown> FoliageComponents; // 0x400 (16)
-	char bHasLandscapeGrass : 0; // 0x474 (1)
-	float StaticLightingResolution; // 0x478 (4)
-	char bCastStaticShadow : 0; // 0x47C (1)
-	char bCastShadowAsTwoSided : 0; // 0x47C (1)
-	char bCastFarShadow : 0; // 0x47C (1)
-	char bAffectDistanceFieldLighting : 0; // 0x480 (1)
-	struct Unknown LightingChannels; // 0x481 (1)
-	char bUseMaterialPositionOffsetInStaticLighting : 0; // 0x484 (1)
-	char bRenderCustomDepth : 0; // 0x484 (1)
-	int32_t CustomDepthStencilValue; // 0x488 (4)
-	float LDMaxDrawDistance; // 0x48C (4)
-	struct Unknown LightmassSettings; // 0x490 (24)
-	int32_t CollisionMipLevel; // 0x4A8 (4)
-	int32_t SimpleCollisionMipLevel; // 0x4AC (4)
-	float CollisionThickness; // 0x4B0 (4)
-	struct Unknown BodyInstance; // 0x4B8 (400)
-	char bGenerateOverlapEvents : 0; // 0x648 (1)
-	char bBakeMaterialPositionOffsetIntoCollision : 0; // 0x648 (1)
-	int32_t ComponentSizeQuads; // 0x64C (4)
-	int32_t SubsectionSizeQuads; // 0x650 (4)
-	int32_t NumSubsections; // 0x654 (4)
-	char bUsedForNavigation : 0; // 0x658 (1)
-	char bFillCollisionUnderLandscapeForNavmesh : 0; // 0x658 (1)
-	char bUseDynamicMaterialInstance : 0; // 0x65C (1)
-	enum class Unknow NavigationGeometryGatheringMode; // 0x65D (1)
-	char bUseLandscapeForCullingInvisibleHLODVertices : 0; // 0x65E (1)
-	char bHasLayersContent : 0; // 0x65F (1)
-	struct TMap<Unknown, Unknown> WeightmapUsageMap; // 0x660 (80)
+	struct Unknown SplineComponent; // 0x318 (8)
+	struct Unknown LandscapeGuid; // 0x320 (16)
+	struct Unknown LandscapeSectionOffset; // 0x340 (8)
+	int32_t MaxLODLevel; // 0x348 (4)
+	float LODDistanceFactor; // 0x34C (4)
+	char LODFalloff; // 0x350 (1)
+	float ComponentScreenSizeToUseSubSections; // 0x354 (4)
+	float LOD0ScreenSize; // 0x358 (4)
+	float LOD0DistributionSetting; // 0x35C (4)
+	float LODDistributionSetting; // 0x360 (4)
+	float TessellationComponentScreenSize; // 0x364 (4)
+	char UseTessellationComponentScreenSizeFalloff : 0; // 0x368 (1)
+	float TessellationComponentScreenSizeFalloff; // 0x36C (4)
+	int32_t OccluderGeometryLOD; // 0x370 (4)
+	int32_t StaticLightingLOD; // 0x374 (4)
+	struct Unknown DefaultPhysMaterial; // 0x378 (8)
+	float StreamingDistanceMultiplier; // 0x380 (4)
+	struct Unknown LandscapeMaterial; // 0x388 (8)
+	struct Unknown LandscapeHoleMaterial; // 0x3B0 (8)
+	struct TArray<Unknown> LandscapeMaterialsOverride; // 0x3B8 (16)
+	char bMeshHoles : 0; // 0x3C8 (1)
+	char MeshHolesMaxLod; // 0x3C9 (1)
+	struct TArray<Unknown> RuntimeVirtualTextures; // 0x3D0 (16)
+	int32_t VirtualTextureNumLods; // 0x3E0 (4)
+	int32_t VirtualTextureLodBias; // 0x3E4 (4)
+	enum class Unknow VirtualTextureRenderPassType; // 0x3E8 (1)
+	float NegativeZBoundsExtension; // 0x3EC (4)
+	float PositiveZBoundsExtension; // 0x3F0 (4)
+	struct TArray<Unknown> LandscapeComponents; // 0x3F8 (16)
+	struct TArray<Unknown> CollisionComponents; // 0x408 (16)
+	struct TArray<Unknown> FoliageComponents; // 0x418 (16)
+	char bHasLandscapeGrass : 0; // 0x48C (1)
+	float StaticLightingResolution; // 0x490 (4)
+	char bCastStaticShadow : 0; // 0x494 (1)
+	char bCastShadowAsTwoSided : 0; // 0x494 (1)
+	char bCastFarShadow : 0; // 0x494 (1)
+	char bAffectDistanceFieldLighting : 0; // 0x498 (1)
+	struct Unknown LightingChannels; // 0x499 (1)
+	char bUseMaterialPositionOffsetInStaticLighting : 0; // 0x49C (1)
+	char bRenderCustomDepth : 0; // 0x49C (1)
+	int32_t CustomDepthStencilValue; // 0x4A0 (4)
+	float LDMaxDrawDistance; // 0x4A4 (4)
+	struct Unknown LightmassSettings; // 0x4A8 (24)
+	int32_t CollisionMipLevel; // 0x4C0 (4)
+	int32_t SimpleCollisionMipLevel; // 0x4C4 (4)
+	float CollisionThickness; // 0x4C8 (4)
+	struct Unknown BodyInstance; // 0x4D0 (400)
+	char bGenerateOverlapEvents : 0; // 0x660 (1)
+	char bBakeMaterialPositionOffsetIntoCollision : 0; // 0x660 (1)
+	int32_t ComponentSizeQuads; // 0x664 (4)
+	int32_t SubsectionSizeQuads; // 0x668 (4)
+	int32_t NumSubsections; // 0x66C (4)
+	char bUsedForNavigation : 0; // 0x670 (1)
+	char bFillCollisionUnderLandscapeForNavmesh : 0; // 0x670 (1)
+	char bUseDynamicMaterialInstance : 0; // 0x674 (1)
+	enum class Unknow NavigationGeometryGatheringMode; // 0x675 (1)
+	char bUseLandscapeForCullingInvisibleHLODVertices : 0; // 0x676 (1)
+	char bHasLayersContent : 0; // 0x677 (1)
+	struct TMap<Unknown, Unknown> WeightmapUsageMap; // 0x678 (80)
 
-	void SetLandscapeMaterialVectorParameterValue(struct FName ParameterName, struct Unknown Value); // Function Landscape.LandscapeProxy.SetLandscapeMaterialVectorParameterValue(Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x392C5B0>
-	void SetLandscapeMaterialTextureParameterValue(struct FName ParameterName, struct Unknown Value); // Function Landscape.LandscapeProxy.SetLandscapeMaterialTextureParameterValue(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x392C4F0>
-	void SetLandscapeMaterialScalarParameterValue(struct FName ParameterName, float Value); // Function Landscape.LandscapeProxy.SetLandscapeMaterialScalarParameterValue(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x392C420>
-	void EditorSetLandscapeMaterial(struct Unknown NewLandscapeMaterial); // Function Landscape.LandscapeProxy.EditorSetLandscapeMaterial(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16CA440>
-	void EditorApplySpline(struct Unknown InSplineComponent, float StartWidth, float EndWidth, float StartSideFalloff, float EndSideFalloff, float StartRoll, float EndRoll, int32_t NumSubdivisions, char bRaiseHeights, char bLowerHeights, struct Unknown PaintLayer); // Function Landscape.LandscapeProxy.EditorApplySpline(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x392C0E0>
-	void ChangeUseTessellationComponentScreenSizeFalloff(char InComponentScreenSizeToUseSubSections); // Function Landscape.LandscapeProxy.ChangeUseTessellationComponentScreenSizeFalloff(Native|Public|BlueprintCallable) // <Game_BE.exe+0x392C050>
-	void ChangeTessellationComponentScreenSizeFalloff(float InUseTessellationComponentScreenSizeFalloff); // Function Landscape.LandscapeProxy.ChangeTessellationComponentScreenSizeFalloff(Native|Public|BlueprintCallable) // <Game_BE.exe+0x1F3C9D0>
-	void ChangeTessellationComponentScreenSize(float InTessellationComponentScreenSize); // Function Landscape.LandscapeProxy.ChangeTessellationComponentScreenSize(Native|Public|BlueprintCallable) // <Game_BE.exe+0x392BFD0>
-	void ChangeLODDistanceFactor(float InLODDistanceFactor); // Function Landscape.LandscapeProxy.ChangeLODDistanceFactor(Native|Public|BlueprintCallable) // <Game_BE.exe+0x392BF50>
-	void ChangeComponentScreenSizeToUseSubSections(float InComponentScreenSizeToUseSubSections); // Function Landscape.LandscapeProxy.ChangeComponentScreenSizeToUseSubSections(Native|Public|BlueprintCallable) // <Game_BE.exe+0x1F3C930>
+	void SetLandscapeMaterialVectorParameterValue(struct FName ParameterName, struct Unknown Value); // Function Landscape.LandscapeProxy.SetLandscapeMaterialVectorParameterValue(Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x392B450>
+	void SetLandscapeMaterialTextureParameterValue(struct FName ParameterName, struct Unknown Value); // Function Landscape.LandscapeProxy.SetLandscapeMaterialTextureParameterValue(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x392B390>
+	void SetLandscapeMaterialScalarParameterValue(struct FName ParameterName, float Value); // Function Landscape.LandscapeProxy.SetLandscapeMaterialScalarParameterValue(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x392B2C0>
+	void EditorSetLandscapeMaterial(struct Unknown NewLandscapeMaterial); // Function Landscape.LandscapeProxy.EditorSetLandscapeMaterial(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16C9DF0>
+	void EditorApplySpline(struct Unknown InSplineComponent, float StartWidth, float EndWidth, float StartSideFalloff, float EndSideFalloff, float StartRoll, float EndRoll, int32_t NumSubdivisions, char bRaiseHeights, char bLowerHeights, struct Unknown PaintLayer); // Function Landscape.LandscapeProxy.EditorApplySpline(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x392AF80>
+	void ChangeUseTessellationComponentScreenSizeFalloff(char InComponentScreenSizeToUseSubSections); // Function Landscape.LandscapeProxy.ChangeUseTessellationComponentScreenSizeFalloff(Native|Public|BlueprintCallable) // <Game_BE.exe+0x392AEF0>
+	void ChangeTessellationComponentScreenSizeFalloff(float InUseTessellationComponentScreenSizeFalloff); // Function Landscape.LandscapeProxy.ChangeTessellationComponentScreenSizeFalloff(Native|Public|BlueprintCallable) // <Game_BE.exe+0x1F3C560>
+	void ChangeTessellationComponentScreenSize(float InTessellationComponentScreenSize); // Function Landscape.LandscapeProxy.ChangeTessellationComponentScreenSize(Native|Public|BlueprintCallable) // <Game_BE.exe+0x392AE70>
+	void ChangeLODDistanceFactor(float InLODDistanceFactor); // Function Landscape.LandscapeProxy.ChangeLODDistanceFactor(Native|Public|BlueprintCallable) // <Game_BE.exe+0x392ADF0>
+	void ChangeComponentScreenSizeToUseSubSections(float InComponentScreenSizeToUseSubSections); // Function Landscape.LandscapeProxy.ChangeComponentScreenSizeToUseSubSections(Native|Public|BlueprintCallable) // <Game_BE.exe+0x1F3C4C0>
 };
 
 // Class Landscape.LandscapeComponent
@@ -248,9 +248,9 @@ public:
 	struct TArray<Unknown> MobileMaterialInterfaces; // 0x638 (16)
 	struct TArray<Unknown> MobileWeightmapTextures; // 0x648 (16)
 
-	struct Unknown GetMaterialInstanceDynamic(int32_t InIndex); // Function Landscape.LandscapeComponent.GetMaterialInstanceDynamic(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3929AE0>
-	float EditorGetPaintLayerWeightByNameAtLocation(struct Unknown& InLocation, struct FName InPaintLayerName); // Function Landscape.LandscapeComponent.EditorGetPaintLayerWeightByNameAtLocation(Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3929A00>
-	float EditorGetPaintLayerWeightAtLocation(struct Unknown& InLocation, struct Unknown PaintLayer); // Function Landscape.LandscapeComponent.EditorGetPaintLayerWeightAtLocation(Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3929A00>
+	struct Unknown GetMaterialInstanceDynamic(int32_t InIndex); // Function Landscape.LandscapeComponent.GetMaterialInstanceDynamic(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3928990>
+	float EditorGetPaintLayerWeightByNameAtLocation(struct Unknown& InLocation, struct FName InPaintLayerName); // Function Landscape.LandscapeComponent.EditorGetPaintLayerWeightByNameAtLocation(Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x39288B0>
+	float EditorGetPaintLayerWeightAtLocation(struct Unknown& InLocation, struct Unknown PaintLayer); // Function Landscape.LandscapeComponent.EditorGetPaintLayerWeightAtLocation(Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x39288B0>
 };
 
 // Class Landscape.LandscapeGrassType
@@ -286,7 +286,7 @@ public:
 	LazyObjectProperty RenderComponent; // 0x50C (28)
 	struct TArray<Unknown> CookedPhysicalMaterials; // 0x538 (16)
 
-	struct Unknown GetRenderComponent(); // Function Landscape.LandscapeHeightfieldCollisionComponent.GetRenderComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x392C3F0>
+	struct Unknown GetRenderComponent(); // Function Landscape.LandscapeHeightfieldCollisionComponent.GetRenderComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x392B290>
 };
 
 // Class Landscape.LandscapeInfo
@@ -339,7 +339,7 @@ class ALandscapeMeshProxyActor : public UActor {
 
 public:
 
-	struct Unknown LandscapeMeshProxyComponent; // 0x300 (8)
+	struct Unknown LandscapeMeshProxyComponent; // 0x318 (8)
 };
 
 // Class Landscape.LandscapeMeshProxyComponent
@@ -369,7 +369,7 @@ public:
 	struct TArray<Unknown> Segments; // 0x4B8 (16)
 	struct TArray<Unknown> CookedForeignMeshComponents; // 0x4C8 (16)
 
-	struct TArray<Unknown> GetSplineMeshComponents(); // Function Landscape.LandscapeSplinesComponent.GetSplineMeshComponents(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x392F570>
+	struct TArray<Unknown> GetSplineMeshComponents(); // Function Landscape.LandscapeSplinesComponent.GetSplineMeshComponents(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x392E410>
 };
 
 // Class Landscape.LandscapeSplineControlPoint
@@ -410,7 +410,7 @@ class ALandscapeStreamingProxy : public ALandscapeProxy {
 
 public:
 
-	LazyObjectProperty LandscapeActor; // 0x6B0 (28)
+	LazyObjectProperty LandscapeActor; // 0x6C8 (28)
 };
 
 // Class Landscape.LandscapeWeightmapUsage

@@ -171,70 +171,70 @@ public:
 	enum class Unknow FlowDirectionPreference; // 0xD0 (1)
 	struct TArray<Unknown> NativeBindings; // 0xF8 (16)
 
-	void SetVisibility(enum class Unknow InVisibility); // Function UMG.Widget.SetVisibility(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B5AE10>
-	void SetUserFocus(struct Unknown PlayerController); // Function UMG.Widget.SetUserFocus(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B5ABF0>
-	void SetToolTipText(struct FText& InToolTipText); // Function UMG.Widget.SetToolTipText(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B5AB20>
-	void SetToolTip(struct Unknown Widget); // Function UMG.Widget.SetToolTip(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B5AAA0>
-	void SetRenderTranslation(struct Unknown Translation); // Function UMG.Widget.SetRenderTranslation(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B5A990>
-	void SetRenderTransformPivot(struct Unknown Pivot); // Function UMG.Widget.SetRenderTransformPivot(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B5A910>
-	void SetRenderTransformAngle(float Angle); // Function UMG.Widget.SetRenderTransformAngle(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B5A890>
-	void SetRenderTransform(struct Unknown InTransform); // Function UMG.Widget.SetRenderTransform(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B5A7B0>
-	void SetRenderShear(struct Unknown Shear); // Function UMG.Widget.SetRenderShear(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B5A730>
-	void SetRenderScale(struct Unknown Scale); // Function UMG.Widget.SetRenderScale(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B5A6B0>
-	void SetRenderOpacity(float InOpacity); // Function UMG.Widget.SetRenderOpacity(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B5A630>
-	void SetNavigationRuleExplicit(enum class Unknow Direction, struct Unknown InWidget); // Function UMG.Widget.SetNavigationRuleExplicit(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B5A4E0>
-	void SetNavigationRuleCustomBoundary(enum class Unknow Direction, struct FDelegate InCustomDelegate); // Function UMG.Widget.SetNavigationRuleCustomBoundary(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B5A400>
-	void SetNavigationRuleCustom(enum class Unknow Direction, struct FDelegate InCustomDelegate); // Function UMG.Widget.SetNavigationRuleCustom(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B5A320>
-	void SetNavigationRuleBase(enum class Unknow Direction, enum class Unknow Rule); // Function UMG.Widget.SetNavigationRuleBase(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B5A260>
-	void SetNavigationRule(enum class Unknow Direction, enum class Unknow Rule, struct FName WidgetToFocus); // Function UMG.Widget.SetNavigationRule(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B5A150>
-	void SetKeyboardFocus(); // Function UMG.Widget.SetKeyboardFocus(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B5A130>
-	void SetIsEnabled(char bInIsEnabled); // Function UMG.Widget.SetIsEnabled(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B5A0A0>
-	void SetFocus(); // Function UMG.Widget.SetFocus(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B5A000>
-	void SetCursor(char InCursor); // Function UMG.Widget.SetCursor(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B59F80>
-	void SetClipping(enum class Unknow InClipping); // Function UMG.Widget.SetClipping(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B59F00>
-	void SetAllNavigationRules(enum class Unknow Rule, struct FName WidgetToFocus); // Function UMG.Widget.SetAllNavigationRules(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B59E40>
-	void ResetCursor(); // Function UMG.Widget.ResetCursor(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B59E20>
-	void RemoveFromParent(); // Function UMG.Widget.RemoveFromParent(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B59E00>
-	struct Unknown OnReply__DelegateSignature(); // DelegateFunction UMG.Widget.OnReply__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B812B0>
-	struct Unknown OnPointerEvent__DelegateSignature(struct Unknown MyGeometry, struct Unknown& MouseEvent); // DelegateFunction UMG.Widget.OnPointerEvent__DelegateSignature(Public|Delegate|HasOutParms) // <Game_BE.exe+0x2B812B0>
-	char IsVisible(); // Function UMG.Widget.IsVisible(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B59DD0>
-	char IsHovered(); // Function UMG.Widget.IsHovered(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36B1880>
-	void InvalidateLayoutAndVolatility(); // Function UMG.Widget.InvalidateLayoutAndVolatility(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B59DB0>
-	char HasUserFocusedDescendants(struct Unknown PlayerController); // Function UMG.Widget.HasUserFocusedDescendants(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B59D20>
-	char HasUserFocus(struct Unknown PlayerController); // Function UMG.Widget.HasUserFocus(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B59C90>
-	char HasMouseCaptureByUser(int32_t UserIndex, int32_t PointerIndex); // Function UMG.Widget.HasMouseCaptureByUser(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B59BD0>
-	char HasMouseCapture(); // Function UMG.Widget.HasMouseCapture(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B59BA0>
-	char HasKeyboardFocus(); // Function UMG.Widget.HasKeyboardFocus(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B59B70>
-	char HasFocusedDescendants(); // Function UMG.Widget.HasFocusedDescendants(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B59B40>
-	char HasAnyUserFocus(); // Function UMG.Widget.HasAnyUserFocus(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B59B10>
-	struct Unknown GetWidget__DelegateSignature(); // DelegateFunction UMG.Widget.GetWidget__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B812B0>
-	enum class Unknow GetVisibility(); // Function UMG.Widget.GetVisibility(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B59AE0>
-	struct Unknown GetTickSpaceGeometry(); // Function UMG.Widget.GetTickSpaceGeometry(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B599C0>
-	struct FText GetText__DelegateSignature(); // DelegateFunction UMG.Widget.GetText__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B812B0>
-	enum class Unknow GetSlateVisibility__DelegateSignature(); // DelegateFunction UMG.Widget.GetSlateVisibility__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B812B0>
-	struct Unknown GetSlateColor__DelegateSignature(); // DelegateFunction UMG.Widget.GetSlateColor__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B812B0>
-	struct Unknown GetSlateBrush__DelegateSignature(); // DelegateFunction UMG.Widget.GetSlateBrush__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B812B0>
-	float GetRenderTransformAngle(); // Function UMG.Widget.GetRenderTransformAngle(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B59990>
-	float GetRenderOpacity(); // Function UMG.Widget.GetRenderOpacity(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B59960>
-	struct Unknown GetParent(); // Function UMG.Widget.GetParent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B59930>
-	struct Unknown GetPaintSpaceGeometry(); // Function UMG.Widget.GetPaintSpaceGeometry(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B598F0>
-	struct Unknown GetOwningPlayer(); // Function UMG.Widget.GetOwningPlayer(BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B598C0>
-	struct Unknown GetOwningLocalPlayer(); // Function UMG.Widget.GetOwningLocalPlayer(BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B59890>
-	char GetMouseCursor__DelegateSignature(); // DelegateFunction UMG.Widget.GetMouseCursor__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B812B0>
-	struct Unknown GetLinearColor__DelegateSignature(); // DelegateFunction UMG.Widget.GetLinearColor__DelegateSignature(Public|Delegate|HasDefaults) // <Game_BE.exe+0x2B812B0>
-	char GetIsEnabled(); // Function UMG.Widget.GetIsEnabled(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B59860>
-	int32_t GetInt32__DelegateSignature(); // DelegateFunction UMG.Widget.GetInt32__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B812B0>
-	struct Unknown GetGameInstance(); // Function UMG.Widget.GetGameInstance(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B59830>
-	float GetFloat__DelegateSignature(); // DelegateFunction UMG.Widget.GetFloat__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B812B0>
-	struct Unknown GetDesiredSize(); // Function UMG.Widget.GetDesiredSize(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B597F0>
-	enum class Unknow GetClipping(); // Function UMG.Widget.GetClipping(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B597C0>
-	enum class Unknow GetCheckBoxState__DelegateSignature(); // DelegateFunction UMG.Widget.GetCheckBoxState__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B812B0>
-	struct Unknown GetCachedGeometry(); // Function UMG.Widget.GetCachedGeometry(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B59780>
-	char GetBool__DelegateSignature(); // DelegateFunction UMG.Widget.GetBool__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B812B0>
-	struct Unknown GenerateWidgetForString__DelegateSignature(struct FString Item); // DelegateFunction UMG.Widget.GenerateWidgetForString__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B812B0>
-	struct Unknown GenerateWidgetForObject__DelegateSignature(struct Unknown Item); // DelegateFunction UMG.Widget.GenerateWidgetForObject__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B812B0>
-	void ForceVolatile(char bForce); // Function UMG.Widget.ForceVolatile(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B596F0>
-	void ForceLayoutPrepass(); // Function UMG.Widget.ForceLayoutPrepass(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B596D0>
+	void SetVisibility(enum class Unknow InVisibility); // Function UMG.Widget.SetVisibility(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B59CF0>
+	void SetUserFocus(struct Unknown PlayerController); // Function UMG.Widget.SetUserFocus(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B59AD0>
+	void SetToolTipText(struct FText& InToolTipText); // Function UMG.Widget.SetToolTipText(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B59A00>
+	void SetToolTip(struct Unknown Widget); // Function UMG.Widget.SetToolTip(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B59980>
+	void SetRenderTranslation(struct Unknown Translation); // Function UMG.Widget.SetRenderTranslation(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B59870>
+	void SetRenderTransformPivot(struct Unknown Pivot); // Function UMG.Widget.SetRenderTransformPivot(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B597F0>
+	void SetRenderTransformAngle(float Angle); // Function UMG.Widget.SetRenderTransformAngle(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B59770>
+	void SetRenderTransform(struct Unknown InTransform); // Function UMG.Widget.SetRenderTransform(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B59690>
+	void SetRenderShear(struct Unknown Shear); // Function UMG.Widget.SetRenderShear(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B59610>
+	void SetRenderScale(struct Unknown Scale); // Function UMG.Widget.SetRenderScale(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B59590>
+	void SetRenderOpacity(float InOpacity); // Function UMG.Widget.SetRenderOpacity(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B59510>
+	void SetNavigationRuleExplicit(enum class Unknow Direction, struct Unknown InWidget); // Function UMG.Widget.SetNavigationRuleExplicit(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B593C0>
+	void SetNavigationRuleCustomBoundary(enum class Unknow Direction, struct FDelegate InCustomDelegate); // Function UMG.Widget.SetNavigationRuleCustomBoundary(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B592E0>
+	void SetNavigationRuleCustom(enum class Unknow Direction, struct FDelegate InCustomDelegate); // Function UMG.Widget.SetNavigationRuleCustom(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B59200>
+	void SetNavigationRuleBase(enum class Unknow Direction, enum class Unknow Rule); // Function UMG.Widget.SetNavigationRuleBase(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B59140>
+	void SetNavigationRule(enum class Unknow Direction, enum class Unknow Rule, struct FName WidgetToFocus); // Function UMG.Widget.SetNavigationRule(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B59030>
+	void SetKeyboardFocus(); // Function UMG.Widget.SetKeyboardFocus(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B59010>
+	void SetIsEnabled(char bInIsEnabled); // Function UMG.Widget.SetIsEnabled(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B58F80>
+	void SetFocus(); // Function UMG.Widget.SetFocus(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B58EE0>
+	void SetCursor(char InCursor); // Function UMG.Widget.SetCursor(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B58E60>
+	void SetClipping(enum class Unknow InClipping); // Function UMG.Widget.SetClipping(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B58DE0>
+	void SetAllNavigationRules(enum class Unknow Rule, struct FName WidgetToFocus); // Function UMG.Widget.SetAllNavigationRules(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B58D20>
+	void ResetCursor(); // Function UMG.Widget.ResetCursor(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B58D00>
+	void RemoveFromParent(); // Function UMG.Widget.RemoveFromParent(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B58CE0>
+	struct Unknown OnReply__DelegateSignature(); // DelegateFunction UMG.Widget.OnReply__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B80160>
+	struct Unknown OnPointerEvent__DelegateSignature(struct Unknown MyGeometry, struct Unknown& MouseEvent); // DelegateFunction UMG.Widget.OnPointerEvent__DelegateSignature(Public|Delegate|HasOutParms) // <Game_BE.exe+0x2B80160>
+	char IsVisible(); // Function UMG.Widget.IsVisible(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B58CB0>
+	char IsHovered(); // Function UMG.Widget.IsHovered(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36B0740>
+	void InvalidateLayoutAndVolatility(); // Function UMG.Widget.InvalidateLayoutAndVolatility(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B58C90>
+	char HasUserFocusedDescendants(struct Unknown PlayerController); // Function UMG.Widget.HasUserFocusedDescendants(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B58C00>
+	char HasUserFocus(struct Unknown PlayerController); // Function UMG.Widget.HasUserFocus(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B58B70>
+	char HasMouseCaptureByUser(int32_t UserIndex, int32_t PointerIndex); // Function UMG.Widget.HasMouseCaptureByUser(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B58AB0>
+	char HasMouseCapture(); // Function UMG.Widget.HasMouseCapture(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B58A80>
+	char HasKeyboardFocus(); // Function UMG.Widget.HasKeyboardFocus(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B58A50>
+	char HasFocusedDescendants(); // Function UMG.Widget.HasFocusedDescendants(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B58A20>
+	char HasAnyUserFocus(); // Function UMG.Widget.HasAnyUserFocus(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B589F0>
+	struct Unknown GetWidget__DelegateSignature(); // DelegateFunction UMG.Widget.GetWidget__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B80160>
+	enum class Unknow GetVisibility(); // Function UMG.Widget.GetVisibility(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B589C0>
+	struct Unknown GetTickSpaceGeometry(); // Function UMG.Widget.GetTickSpaceGeometry(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B588A0>
+	struct FText GetText__DelegateSignature(); // DelegateFunction UMG.Widget.GetText__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B80160>
+	enum class Unknow GetSlateVisibility__DelegateSignature(); // DelegateFunction UMG.Widget.GetSlateVisibility__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B80160>
+	struct Unknown GetSlateColor__DelegateSignature(); // DelegateFunction UMG.Widget.GetSlateColor__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B80160>
+	struct Unknown GetSlateBrush__DelegateSignature(); // DelegateFunction UMG.Widget.GetSlateBrush__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B80160>
+	float GetRenderTransformAngle(); // Function UMG.Widget.GetRenderTransformAngle(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B58870>
+	float GetRenderOpacity(); // Function UMG.Widget.GetRenderOpacity(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B58840>
+	struct Unknown GetParent(); // Function UMG.Widget.GetParent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B58810>
+	struct Unknown GetPaintSpaceGeometry(); // Function UMG.Widget.GetPaintSpaceGeometry(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B587D0>
+	struct Unknown GetOwningPlayer(); // Function UMG.Widget.GetOwningPlayer(BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B587A0>
+	struct Unknown GetOwningLocalPlayer(); // Function UMG.Widget.GetOwningLocalPlayer(BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B58770>
+	char GetMouseCursor__DelegateSignature(); // DelegateFunction UMG.Widget.GetMouseCursor__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B80160>
+	struct Unknown GetLinearColor__DelegateSignature(); // DelegateFunction UMG.Widget.GetLinearColor__DelegateSignature(Public|Delegate|HasDefaults) // <Game_BE.exe+0x2B80160>
+	char GetIsEnabled(); // Function UMG.Widget.GetIsEnabled(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B58740>
+	int32_t GetInt32__DelegateSignature(); // DelegateFunction UMG.Widget.GetInt32__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B80160>
+	struct Unknown GetGameInstance(); // Function UMG.Widget.GetGameInstance(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B58710>
+	float GetFloat__DelegateSignature(); // DelegateFunction UMG.Widget.GetFloat__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B80160>
+	struct Unknown GetDesiredSize(); // Function UMG.Widget.GetDesiredSize(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B586D0>
+	enum class Unknow GetClipping(); // Function UMG.Widget.GetClipping(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B586A0>
+	enum class Unknow GetCheckBoxState__DelegateSignature(); // DelegateFunction UMG.Widget.GetCheckBoxState__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B80160>
+	struct Unknown GetCachedGeometry(); // Function UMG.Widget.GetCachedGeometry(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B58660>
+	char GetBool__DelegateSignature(); // DelegateFunction UMG.Widget.GetBool__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B80160>
+	struct Unknown GenerateWidgetForString__DelegateSignature(struct FString Item); // DelegateFunction UMG.Widget.GenerateWidgetForString__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B80160>
+	struct Unknown GenerateWidgetForObject__DelegateSignature(struct Unknown Item); // DelegateFunction UMG.Widget.GenerateWidgetForObject__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B80160>
+	void ForceVolatile(char bForce); // Function UMG.Widget.ForceVolatile(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B585D0>
+	void ForceLayoutPrepass(); // Function UMG.Widget.ForceLayoutPrepass(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B585B0>
 };
 
 // Class UMG.UserWidget
@@ -264,95 +264,95 @@ public:
 	struct Unknown InputComponent; // 0x1E0 (8)
 	struct TArray<Unknown> AnimationCallbacks; // 0x1E8 (16)
 
-	void UnregisterInputComponent(); // Function UMG.UserWidget.UnregisterInputComponent(Final|Native|Protected|BlueprintCallable) // <Game_BE.exe+0x3B57B30>
-	void UnbindFromAnimationStarted(struct Unknown Animation, struct FDelegate Delegate); // Function UMG.UserWidget.UnbindFromAnimationStarted(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B57A50>
-	void UnbindFromAnimationFinished(struct Unknown Animation, struct FDelegate Delegate); // Function UMG.UserWidget.UnbindFromAnimationFinished(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B57970>
-	void UnbindAllFromAnimationStarted(struct Unknown Animation); // Function UMG.UserWidget.UnbindAllFromAnimationStarted(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B578F0>
-	void UnbindAllFromAnimationFinished(struct Unknown Animation); // Function UMG.UserWidget.UnbindAllFromAnimationFinished(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B57870>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UMG.UserWidget.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void StopListeningForInputAction(struct FName ActionName, char EventType); // Function UMG.UserWidget.StopListeningForInputAction(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B577B0>
-	void StopListeningForAllInputActions(); // Function UMG.UserWidget.StopListeningForAllInputActions(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B57790>
-	void StopAnimationsAndLatentActions(); // Function UMG.UserWidget.StopAnimationsAndLatentActions(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B57770>
-	void StopAnimation(struct Unknown InAnimation); // Function UMG.UserWidget.StopAnimation(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B576F0>
-	void StopAllAnimations(); // Function UMG.UserWidget.StopAllAnimations(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B576D0>
-	void SetPositionInViewport(struct Unknown Position, char bRemoveDPIScale); // Function UMG.UserWidget.SetPositionInViewport(Final|BlueprintCosmetic|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B56FF0>
-	void SetPlaybackSpeed(struct Unknown InAnimation, float PlaybackSpeed); // Function UMG.UserWidget.SetPlaybackSpeed(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B56F20>
-	void SetPadding(struct Unknown InPadding); // Function UMG.UserWidget.SetPadding(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B56E90>
-	void SetOwningPlayer(struct Unknown LocalPlayerController); // Function UMG.UserWidget.SetOwningPlayer(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B56E10>
-	void SetNumLoopsToPlay(struct Unknown InAnimation, int32_t NumLoopsToPlay); // Function UMG.UserWidget.SetNumLoopsToPlay(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B56C50>
-	void SetNoPixelSnapping(char InNoSnapping); // Function UMG.UserWidget.SetNoPixelSnapping(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B56BC0>
-	void SetInputActionPriority(int32_t NewPriority); // Function UMG.UserWidget.SetInputActionPriority(Final|Native|Protected|BlueprintCallable) // <Game_BE.exe+0x3B56870>
-	void SetInputActionBlocking(char bShouldBlock); // Function UMG.UserWidget.SetInputActionBlocking(Final|Native|Protected|BlueprintCallable) // <Game_BE.exe+0x3B567E0>
-	void SetForegroundColor(struct Unknown InForegroundColor); // Function UMG.UserWidget.SetForegroundColor(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B56670>
-	void SetDesiredSizeInViewport(struct Unknown Size); // Function UMG.UserWidget.SetDesiredSizeInViewport(Final|BlueprintCosmetic|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B563E0>
-	void SetColorAndOpacity(struct Unknown InColorAndOpacity); // Function UMG.UserWidget.SetColorAndOpacity(Final|BlueprintCosmetic|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B562E0>
-	void SetAnchorsInViewport(struct Unknown Anchors); // Function UMG.UserWidget.SetAnchorsInViewport(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B55F20>
-	void SetAlignmentInViewport(struct Unknown Alignment); // Function UMG.UserWidget.SetAlignmentInViewport(Final|BlueprintCosmetic|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B55EA0>
-	void ReverseAnimation(struct Unknown InAnimation); // Function UMG.UserWidget.ReverseAnimation(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B55E20>
-	void RemoveFromViewport(); // Function UMG.UserWidget.RemoveFromViewport(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x2066B40>
-	void RegisterInputComponent(); // Function UMG.UserWidget.RegisterInputComponent(Final|Native|Protected|BlueprintCallable) // <Game_BE.exe+0x3B55E00>
-	void PreConstruct(char IsDesignTime); // Function UMG.UserWidget.PreConstruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void PlaySound(struct Unknown SoundToPlay); // Function UMG.UserWidget.PlaySound(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B55D80>
-	struct Unknown PlayAnimationTimeRange(struct Unknown InAnimation, float StartAtTime, float EndAtTime, int32_t NumLoopsToPlay, char PlayMode, float PlaybackSpeed, char bRestoreState); // Function UMG.UserWidget.PlayAnimationTimeRange(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B55B90>
-	struct Unknown PlayAnimationReverse(struct Unknown InAnimation, float PlaybackSpeed, char bRestoreState); // Function UMG.UserWidget.PlayAnimationReverse(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B55A80>
-	struct Unknown PlayAnimationForward(struct Unknown InAnimation, float PlaybackSpeed, char bRestoreState); // Function UMG.UserWidget.PlayAnimationForward(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B55970>
-	struct Unknown PlayAnimation(struct Unknown InAnimation, float StartAtTime, int32_t NumLoopsToPlay, char PlayMode, float PlaybackSpeed, char bRestoreState); // Function UMG.UserWidget.PlayAnimation(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B557B0>
-	float PauseAnimation(struct Unknown InAnimation); // Function UMG.UserWidget.PauseAnimation(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B55710>
-	struct Unknown OnTouchStarted(struct Unknown MyGeometry, struct Unknown& InTouchEvent); // Function UMG.UserWidget.OnTouchStarted(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	struct Unknown OnTouchMoved(struct Unknown MyGeometry, struct Unknown& InTouchEvent); // Function UMG.UserWidget.OnTouchMoved(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	struct Unknown OnTouchGesture(struct Unknown MyGeometry, struct Unknown& GestureEvent); // Function UMG.UserWidget.OnTouchGesture(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	struct Unknown OnTouchForceChanged(struct Unknown MyGeometry, struct Unknown& InTouchEvent); // Function UMG.UserWidget.OnTouchForceChanged(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	struct Unknown OnTouchEnded(struct Unknown MyGeometry, struct Unknown& InTouchEvent); // Function UMG.UserWidget.OnTouchEnded(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnRemovedFromFocusPath(struct Unknown InFocusEvent); // Function UMG.UserWidget.OnRemovedFromFocusPath(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	struct Unknown OnPreviewMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UMG.UserWidget.OnPreviewMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	struct Unknown OnPreviewKeyDown(struct Unknown MyGeometry, struct Unknown InKeyEvent); // Function UMG.UserWidget.OnPreviewKeyDown(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnPaint(struct Unknown& Context); // Function UMG.UserWidget.OnPaint(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent|Const) // <Game_BE.exe+0x2B812B0>
-	struct Unknown OnMouseWheel(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UMG.UserWidget.OnMouseWheel(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	struct Unknown OnMouseMove(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UMG.UserWidget.OnMouseMove(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnMouseLeave(struct Unknown& MouseEvent); // Function UMG.UserWidget.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UMG.UserWidget.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnMouseCaptureLost(); // Function UMG.UserWidget.OnMouseCaptureLost(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	struct Unknown OnMouseButtonUp(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UMG.UserWidget.OnMouseButtonUp(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	struct Unknown OnMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UMG.UserWidget.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	struct Unknown OnMouseButtonDoubleClick(struct Unknown InMyGeometry, struct Unknown& InMouseEvent); // Function UMG.UserWidget.OnMouseButtonDoubleClick(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	struct Unknown OnMotionDetected(struct Unknown MyGeometry, struct Unknown InMotionEvent); // Function UMG.UserWidget.OnMotionDetected(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	struct Unknown OnKeyUp(struct Unknown MyGeometry, struct Unknown InKeyEvent); // Function UMG.UserWidget.OnKeyUp(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	struct Unknown OnKeyDown(struct Unknown MyGeometry, struct Unknown InKeyEvent); // Function UMG.UserWidget.OnKeyDown(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	struct Unknown OnKeyChar(struct Unknown MyGeometry, struct Unknown InCharacterEvent); // Function UMG.UserWidget.OnKeyChar(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnInitialized(); // Function UMG.UserWidget.OnInitialized(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	struct Unknown OnFocusReceived(struct Unknown MyGeometry, struct Unknown InFocusEvent); // Function UMG.UserWidget.OnFocusReceived(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnFocusLost(struct Unknown InFocusEvent); // Function UMG.UserWidget.OnFocusLost(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	char OnDrop(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation); // Function UMG.UserWidget.OnDrop(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	char OnDragOver(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation); // Function UMG.UserWidget.OnDragOver(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnDragLeave(struct Unknown PointerEvent, struct Unknown Operation); // Function UMG.UserWidget.OnDragLeave(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnDragEnter(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation); // Function UMG.UserWidget.OnDragEnter(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnDragDetected(struct Unknown MyGeometry, struct Unknown& PointerEvent, struct Unknown& Operation); // Function UMG.UserWidget.OnDragDetected(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnDragCancelled(struct Unknown& PointerEvent, struct Unknown Operation); // Function UMG.UserWidget.OnDragCancelled(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnAnimationStarted(struct Unknown Animation); // Function UMG.UserWidget.OnAnimationStarted(BlueprintCosmetic|Native|Event|Protected|BlueprintEvent) // <Game_BE.exe+0x3B55680>
-	void OnAnimationFinished(struct Unknown Animation); // Function UMG.UserWidget.OnAnimationFinished(BlueprintCosmetic|Native|Event|Protected|BlueprintEvent) // <Game_BE.exe+0x3B555F0>
-	struct Unknown OnAnalogValueChanged(struct Unknown MyGeometry, struct Unknown InAnalogInputEvent); // Function UMG.UserWidget.OnAnalogValueChanged(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnAddedToFocusPath(struct Unknown InFocusEvent); // Function UMG.UserWidget.OnAddedToFocusPath(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ListenForInputAction(struct FName ActionName, char EventType, char bConsume, struct FDelegate Callback); // Function UMG.UserWidget.ListenForInputAction(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B55470>
-	char IsPlayingAnimation(); // Function UMG.UserWidget.IsPlayingAnimation(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B55440>
-	char IsListeningForInputAction(struct FName ActionName); // Function UMG.UserWidget.IsListeningForInputAction(Final|Native|Protected|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B553B0>
-	char IsInViewport(); // Function UMG.UserWidget.IsInViewport(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B55020>
-	char IsInteractable(); // Function UMG.UserWidget.IsInteractable(BlueprintCosmetic|Event|Public|BlueprintEvent|Const) // <Game_BE.exe+0x2B812B0>
-	char IsAnyAnimationPlaying(); // Function UMG.UserWidget.IsAnyAnimationPlaying(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B55380>
-	char IsAnimationPlayingForward(struct Unknown InAnimation); // Function UMG.UserWidget.IsAnimationPlayingForward(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B552F0>
-	char IsAnimationPlaying(struct Unknown InAnimation); // Function UMG.UserWidget.IsAnimationPlaying(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B55260>
-	struct Unknown GetOwningPlayerPawn(); // Function UMG.UserWidget.GetOwningPlayerPawn(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B55050>
-	char GetIsVisible(); // Function UMG.UserWidget.GetIsVisible(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B55020>
-	float GetAnimationCurrentTime(struct Unknown InAnimation); // Function UMG.UserWidget.GetAnimationCurrentTime(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B54F20>
-	struct Unknown GetAnchorsInViewport(); // Function UMG.UserWidget.GetAnchorsInViewport(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B54EE0>
-	struct Unknown GetAlignmentInViewport(); // Function UMG.UserWidget.GetAlignmentInViewport(Final|BlueprintCosmetic|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B54EA0>
-	void Destruct(); // Function UMG.UserWidget.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Construct(); // Function UMG.UserWidget.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void CancelLatentActions(); // Function UMG.UserWidget.CancelLatentActions(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B54E40>
-	void BindToAnimationStarted(struct Unknown Animation, struct FDelegate Delegate); // Function UMG.UserWidget.BindToAnimationStarted(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B54D60>
-	void BindToAnimationFinished(struct Unknown Animation, struct FDelegate Delegate); // Function UMG.UserWidget.BindToAnimationFinished(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B54C80>
-	void BindToAnimationEvent(struct Unknown Animation, struct FDelegate Delegate, enum class Unknow AnimationEvent, struct FName UserTag); // Function UMG.UserWidget.BindToAnimationEvent(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B54B10>
-	void AddToViewport(int32_t ZOrder); // Function UMG.UserWidget.AddToViewport(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B54A90>
-	char AddToPlayerScreen(int32_t ZOrder); // Function UMG.UserWidget.AddToPlayerScreen(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B54A00>
+	void UnregisterInputComponent(); // Function UMG.UserWidget.UnregisterInputComponent(Final|Native|Protected|BlueprintCallable) // <Game_BE.exe+0x3B56A10>
+	void UnbindFromAnimationStarted(struct Unknown Animation, struct FDelegate Delegate); // Function UMG.UserWidget.UnbindFromAnimationStarted(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B56930>
+	void UnbindFromAnimationFinished(struct Unknown Animation, struct FDelegate Delegate); // Function UMG.UserWidget.UnbindFromAnimationFinished(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B56850>
+	void UnbindAllFromAnimationStarted(struct Unknown Animation); // Function UMG.UserWidget.UnbindAllFromAnimationStarted(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B567D0>
+	void UnbindAllFromAnimationFinished(struct Unknown Animation); // Function UMG.UserWidget.UnbindAllFromAnimationFinished(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B56750>
+	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UMG.UserWidget.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void StopListeningForInputAction(struct FName ActionName, char EventType); // Function UMG.UserWidget.StopListeningForInputAction(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B56690>
+	void StopListeningForAllInputActions(); // Function UMG.UserWidget.StopListeningForAllInputActions(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B56670>
+	void StopAnimationsAndLatentActions(); // Function UMG.UserWidget.StopAnimationsAndLatentActions(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B56650>
+	void StopAnimation(struct Unknown InAnimation); // Function UMG.UserWidget.StopAnimation(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B565D0>
+	void StopAllAnimations(); // Function UMG.UserWidget.StopAllAnimations(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B565B0>
+	void SetPositionInViewport(struct Unknown Position, char bRemoveDPIScale); // Function UMG.UserWidget.SetPositionInViewport(Final|BlueprintCosmetic|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B55ED0>
+	void SetPlaybackSpeed(struct Unknown InAnimation, float PlaybackSpeed); // Function UMG.UserWidget.SetPlaybackSpeed(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B55E00>
+	void SetPadding(struct Unknown InPadding); // Function UMG.UserWidget.SetPadding(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B55D70>
+	void SetOwningPlayer(struct Unknown LocalPlayerController); // Function UMG.UserWidget.SetOwningPlayer(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B55CF0>
+	void SetNumLoopsToPlay(struct Unknown InAnimation, int32_t NumLoopsToPlay); // Function UMG.UserWidget.SetNumLoopsToPlay(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B55B30>
+	void SetNoPixelSnapping(char InNoSnapping); // Function UMG.UserWidget.SetNoPixelSnapping(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B55AA0>
+	void SetInputActionPriority(int32_t NewPriority); // Function UMG.UserWidget.SetInputActionPriority(Final|Native|Protected|BlueprintCallable) // <Game_BE.exe+0x3B55750>
+	void SetInputActionBlocking(char bShouldBlock); // Function UMG.UserWidget.SetInputActionBlocking(Final|Native|Protected|BlueprintCallable) // <Game_BE.exe+0x3B556C0>
+	void SetForegroundColor(struct Unknown InForegroundColor); // Function UMG.UserWidget.SetForegroundColor(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B55550>
+	void SetDesiredSizeInViewport(struct Unknown Size); // Function UMG.UserWidget.SetDesiredSizeInViewport(Final|BlueprintCosmetic|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B552C0>
+	void SetColorAndOpacity(struct Unknown InColorAndOpacity); // Function UMG.UserWidget.SetColorAndOpacity(Final|BlueprintCosmetic|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B551C0>
+	void SetAnchorsInViewport(struct Unknown Anchors); // Function UMG.UserWidget.SetAnchorsInViewport(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B54E00>
+	void SetAlignmentInViewport(struct Unknown Alignment); // Function UMG.UserWidget.SetAlignmentInViewport(Final|BlueprintCosmetic|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B54D80>
+	void ReverseAnimation(struct Unknown InAnimation); // Function UMG.UserWidget.ReverseAnimation(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B54D00>
+	void RemoveFromViewport(); // Function UMG.UserWidget.RemoveFromViewport(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x2066BE0>
+	void RegisterInputComponent(); // Function UMG.UserWidget.RegisterInputComponent(Final|Native|Protected|BlueprintCallable) // <Game_BE.exe+0x3B54CE0>
+	void PreConstruct(char IsDesignTime); // Function UMG.UserWidget.PreConstruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void PlaySound(struct Unknown SoundToPlay); // Function UMG.UserWidget.PlaySound(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B54C60>
+	struct Unknown PlayAnimationTimeRange(struct Unknown InAnimation, float StartAtTime, float EndAtTime, int32_t NumLoopsToPlay, char PlayMode, float PlaybackSpeed, char bRestoreState); // Function UMG.UserWidget.PlayAnimationTimeRange(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B54A70>
+	struct Unknown PlayAnimationReverse(struct Unknown InAnimation, float PlaybackSpeed, char bRestoreState); // Function UMG.UserWidget.PlayAnimationReverse(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B54960>
+	struct Unknown PlayAnimationForward(struct Unknown InAnimation, float PlaybackSpeed, char bRestoreState); // Function UMG.UserWidget.PlayAnimationForward(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B54850>
+	struct Unknown PlayAnimation(struct Unknown InAnimation, float StartAtTime, int32_t NumLoopsToPlay, char PlayMode, float PlaybackSpeed, char bRestoreState); // Function UMG.UserWidget.PlayAnimation(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B54690>
+	float PauseAnimation(struct Unknown InAnimation); // Function UMG.UserWidget.PauseAnimation(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B545F0>
+	struct Unknown OnTouchStarted(struct Unknown MyGeometry, struct Unknown& InTouchEvent); // Function UMG.UserWidget.OnTouchStarted(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct Unknown OnTouchMoved(struct Unknown MyGeometry, struct Unknown& InTouchEvent); // Function UMG.UserWidget.OnTouchMoved(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct Unknown OnTouchGesture(struct Unknown MyGeometry, struct Unknown& GestureEvent); // Function UMG.UserWidget.OnTouchGesture(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct Unknown OnTouchForceChanged(struct Unknown MyGeometry, struct Unknown& InTouchEvent); // Function UMG.UserWidget.OnTouchForceChanged(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct Unknown OnTouchEnded(struct Unknown MyGeometry, struct Unknown& InTouchEvent); // Function UMG.UserWidget.OnTouchEnded(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnRemovedFromFocusPath(struct Unknown InFocusEvent); // Function UMG.UserWidget.OnRemovedFromFocusPath(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct Unknown OnPreviewMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UMG.UserWidget.OnPreviewMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct Unknown OnPreviewKeyDown(struct Unknown MyGeometry, struct Unknown InKeyEvent); // Function UMG.UserWidget.OnPreviewKeyDown(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnPaint(struct Unknown& Context); // Function UMG.UserWidget.OnPaint(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent|Const) // <Game_BE.exe+0x2B80160>
+	struct Unknown OnMouseWheel(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UMG.UserWidget.OnMouseWheel(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct Unknown OnMouseMove(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UMG.UserWidget.OnMouseMove(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnMouseLeave(struct Unknown& MouseEvent); // Function UMG.UserWidget.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UMG.UserWidget.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnMouseCaptureLost(); // Function UMG.UserWidget.OnMouseCaptureLost(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct Unknown OnMouseButtonUp(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UMG.UserWidget.OnMouseButtonUp(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct Unknown OnMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UMG.UserWidget.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct Unknown OnMouseButtonDoubleClick(struct Unknown InMyGeometry, struct Unknown& InMouseEvent); // Function UMG.UserWidget.OnMouseButtonDoubleClick(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct Unknown OnMotionDetected(struct Unknown MyGeometry, struct Unknown InMotionEvent); // Function UMG.UserWidget.OnMotionDetected(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct Unknown OnKeyUp(struct Unknown MyGeometry, struct Unknown InKeyEvent); // Function UMG.UserWidget.OnKeyUp(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct Unknown OnKeyDown(struct Unknown MyGeometry, struct Unknown InKeyEvent); // Function UMG.UserWidget.OnKeyDown(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct Unknown OnKeyChar(struct Unknown MyGeometry, struct Unknown InCharacterEvent); // Function UMG.UserWidget.OnKeyChar(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnInitialized(); // Function UMG.UserWidget.OnInitialized(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct Unknown OnFocusReceived(struct Unknown MyGeometry, struct Unknown InFocusEvent); // Function UMG.UserWidget.OnFocusReceived(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnFocusLost(struct Unknown InFocusEvent); // Function UMG.UserWidget.OnFocusLost(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	char OnDrop(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation); // Function UMG.UserWidget.OnDrop(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	char OnDragOver(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation); // Function UMG.UserWidget.OnDragOver(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnDragLeave(struct Unknown PointerEvent, struct Unknown Operation); // Function UMG.UserWidget.OnDragLeave(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnDragEnter(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation); // Function UMG.UserWidget.OnDragEnter(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnDragDetected(struct Unknown MyGeometry, struct Unknown& PointerEvent, struct Unknown& Operation); // Function UMG.UserWidget.OnDragDetected(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnDragCancelled(struct Unknown& PointerEvent, struct Unknown Operation); // Function UMG.UserWidget.OnDragCancelled(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnAnimationStarted(struct Unknown Animation); // Function UMG.UserWidget.OnAnimationStarted(BlueprintCosmetic|Native|Event|Protected|BlueprintEvent) // <Game_BE.exe+0x3B54560>
+	void OnAnimationFinished(struct Unknown Animation); // Function UMG.UserWidget.OnAnimationFinished(BlueprintCosmetic|Native|Event|Protected|BlueprintEvent) // <Game_BE.exe+0x3B544D0>
+	struct Unknown OnAnalogValueChanged(struct Unknown MyGeometry, struct Unknown InAnalogInputEvent); // Function UMG.UserWidget.OnAnalogValueChanged(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnAddedToFocusPath(struct Unknown InFocusEvent); // Function UMG.UserWidget.OnAddedToFocusPath(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ListenForInputAction(struct FName ActionName, char EventType, char bConsume, struct FDelegate Callback); // Function UMG.UserWidget.ListenForInputAction(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B54350>
+	char IsPlayingAnimation(); // Function UMG.UserWidget.IsPlayingAnimation(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B54320>
+	char IsListeningForInputAction(struct FName ActionName); // Function UMG.UserWidget.IsListeningForInputAction(Final|Native|Protected|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B54290>
+	char IsInViewport(); // Function UMG.UserWidget.IsInViewport(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B53F00>
+	char IsInteractable(); // Function UMG.UserWidget.IsInteractable(BlueprintCosmetic|Event|Public|BlueprintEvent|Const) // <Game_BE.exe+0x2B80160>
+	char IsAnyAnimationPlaying(); // Function UMG.UserWidget.IsAnyAnimationPlaying(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B54260>
+	char IsAnimationPlayingForward(struct Unknown InAnimation); // Function UMG.UserWidget.IsAnimationPlayingForward(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B541D0>
+	char IsAnimationPlaying(struct Unknown InAnimation); // Function UMG.UserWidget.IsAnimationPlaying(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B54140>
+	struct Unknown GetOwningPlayerPawn(); // Function UMG.UserWidget.GetOwningPlayerPawn(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B53F30>
+	char GetIsVisible(); // Function UMG.UserWidget.GetIsVisible(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B53F00>
+	float GetAnimationCurrentTime(struct Unknown InAnimation); // Function UMG.UserWidget.GetAnimationCurrentTime(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B53E00>
+	struct Unknown GetAnchorsInViewport(); // Function UMG.UserWidget.GetAnchorsInViewport(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B53DC0>
+	struct Unknown GetAlignmentInViewport(); // Function UMG.UserWidget.GetAlignmentInViewport(Final|BlueprintCosmetic|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B53D80>
+	void Destruct(); // Function UMG.UserWidget.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Construct(); // Function UMG.UserWidget.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CancelLatentActions(); // Function UMG.UserWidget.CancelLatentActions(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B53D20>
+	void BindToAnimationStarted(struct Unknown Animation, struct FDelegate Delegate); // Function UMG.UserWidget.BindToAnimationStarted(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B53C40>
+	void BindToAnimationFinished(struct Unknown Animation, struct FDelegate Delegate); // Function UMG.UserWidget.BindToAnimationFinished(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B53B60>
+	void BindToAnimationEvent(struct Unknown Animation, struct FDelegate Delegate, enum class Unknow AnimationEvent, struct FName UserTag); // Function UMG.UserWidget.BindToAnimationEvent(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B539F0>
+	void AddToViewport(int32_t ZOrder); // Function UMG.UserWidget.AddToViewport(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B53970>
+	char AddToPlayerScreen(int32_t ZOrder); // Function UMG.UserWidget.AddToPlayerScreen(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B538E0>
 };
 
 // Class UMG.PanelWidget
@@ -362,16 +362,16 @@ public:
 
 	struct TArray<Unknown> Slots; // 0x108 (16)
 
-	char RemoveChildAt(int32_t Index); // Function UMG.PanelWidget.RemoveChildAt(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B45550>
-	char RemoveChild(struct Unknown Content); // Function UMG.PanelWidget.RemoveChild(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B454C0>
-	char HasChild(struct Unknown Content); // Function UMG.PanelWidget.HasChild(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B45320>
-	char HasAnyChildren(); // Function UMG.PanelWidget.HasAnyChildren(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B452F0>
-	int32_t GetChildrenCount(); // Function UMG.PanelWidget.GetChildrenCount(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B44F40>
-	int32_t GetChildIndex(struct Unknown Content); // Function UMG.PanelWidget.GetChildIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B44EB0>
-	struct Unknown GetChildAt(int32_t Index); // Function UMG.PanelWidget.GetChildAt(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B44E20>
-	struct TArray<Unknown> GetAllChildren(); // Function UMG.PanelWidget.GetAllChildren(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B44DA0>
-	void ClearChildren(); // Function UMG.PanelWidget.ClearChildren(Native|Public|BlueprintCallable) // <Game_BE.exe+0x1EC6CF0>
-	struct Unknown AddChild(struct Unknown Content); // Function UMG.PanelWidget.AddChild(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B44BD0>
+	char RemoveChildAt(int32_t Index); // Function UMG.PanelWidget.RemoveChildAt(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B44440>
+	char RemoveChild(struct Unknown Content); // Function UMG.PanelWidget.RemoveChild(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B443B0>
+	char HasChild(struct Unknown Content); // Function UMG.PanelWidget.HasChild(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B44210>
+	char HasAnyChildren(); // Function UMG.PanelWidget.HasAnyChildren(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B441E0>
+	int32_t GetChildrenCount(); // Function UMG.PanelWidget.GetChildrenCount(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B43E30>
+	int32_t GetChildIndex(struct Unknown Content); // Function UMG.PanelWidget.GetChildIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B43DA0>
+	struct Unknown GetChildAt(int32_t Index); // Function UMG.PanelWidget.GetChildAt(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B43D10>
+	struct TArray<Unknown> GetAllChildren(); // Function UMG.PanelWidget.GetAllChildren(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B43C90>
+	void ClearChildren(); // Function UMG.PanelWidget.ClearChildren(Native|Public|BlueprintCallable) // <Game_BE.exe+0x1EC6910>
+	struct Unknown AddChild(struct Unknown Content); // Function UMG.PanelWidget.AddChild(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B43AC0>
 };
 
 // Class UMG.Border
@@ -396,17 +396,17 @@ public:
 	struct FDelegate OnMouseMoveEvent; // 0x23C (16)
 	struct FDelegate OnMouseDoubleClickEvent; // 0x24C (16)
 
-	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.Border.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B38A10>
-	void SetPadding(struct Unknown InPadding); // Function UMG.Border.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B38480>
-	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.Border.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B37DA0>
-	void SetDesiredSizeScale(struct Unknown InScale); // Function UMG.Border.SetDesiredSizeScale(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B37C20>
-	void SetContentColorAndOpacity(struct Unknown InContentColorAndOpacity); // Function UMG.Border.SetContentColorAndOpacity(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B37BA0>
-	void SetBrushFromTexture(struct Unknown Texture); // Function UMG.Border.SetBrushFromTexture(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B379A0>
-	void SetBrushFromMaterial(struct Unknown Material); // Function UMG.Border.SetBrushFromMaterial(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B379A0>
-	void SetBrushFromAsset(struct Unknown Asset); // Function UMG.Border.SetBrushFromAsset(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B37920>
-	void SetBrushColor(struct Unknown InBrushColor); // Function UMG.Border.SetBrushColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B378A0>
-	void SetBrush(struct Unknown& InBrush); // Function UMG.Border.SetBrush(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B37720>
-	struct Unknown GetDynamicMaterial(); // Function UMG.Border.GetDynamicMaterial(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B37090>
+	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.Border.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B378D0>
+	void SetPadding(struct Unknown InPadding); // Function UMG.Border.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B37340>
+	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.Border.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B36C60>
+	void SetDesiredSizeScale(struct Unknown InScale); // Function UMG.Border.SetDesiredSizeScale(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B36AE0>
+	void SetContentColorAndOpacity(struct Unknown InContentColorAndOpacity); // Function UMG.Border.SetContentColorAndOpacity(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B36A60>
+	void SetBrushFromTexture(struct Unknown Texture); // Function UMG.Border.SetBrushFromTexture(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B36860>
+	void SetBrushFromMaterial(struct Unknown Material); // Function UMG.Border.SetBrushFromMaterial(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B36860>
+	void SetBrushFromAsset(struct Unknown Asset); // Function UMG.Border.SetBrushFromAsset(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B367E0>
+	void SetBrushColor(struct Unknown InBrushColor); // Function UMG.Border.SetBrushColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B36760>
+	void SetBrush(struct Unknown& InBrush); // Function UMG.Border.SetBrush(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B365E0>
+	struct Unknown GetDynamicMaterial(); // Function UMG.Border.GetDynamicMaterial(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B35F50>
 };
 
 // Class UMG.AsyncTaskDownloadImage
@@ -417,7 +417,7 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFail; // 0x40 (16)
 
-	struct Unknown DownloadImage(struct FString URL); // Function UMG.AsyncTaskDownloadImage.DownloadImage(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x3B36EC0>
+	struct Unknown DownloadImage(struct FString URL); // Function UMG.AsyncTaskDownloadImage.DownloadImage(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x3B35D80>
 };
 
 // Class UMG.BackgroundBlur
@@ -434,13 +434,13 @@ public:
 	int32_t BlurRadius; // 0x13C (4)
 	struct Unknown LowQualityFallbackBrush; // 0x140 (136)
 
-	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.BackgroundBlur.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B38910>
-	void SetPadding(struct Unknown InPadding); // Function UMG.BackgroundBlur.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B38360>
-	void SetLowQualityFallbackBrush(struct Unknown& InBrush); // Function UMG.BackgroundBlur.SetLowQualityFallbackBrush(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B38050>
-	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.BackgroundBlur.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B37CA0>
-	void SetBlurStrength(float InStrength); // Function UMG.BackgroundBlur.SetBlurStrength(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B376A0>
-	void SetBlurRadius(int32_t InBlurRadius); // Function UMG.BackgroundBlur.SetBlurRadius(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B37620>
-	void SetApplyAlphaToBlur(char bInApplyAlphaToBlur); // Function UMG.BackgroundBlur.SetApplyAlphaToBlur(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B37480>
+	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.BackgroundBlur.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B377D0>
+	void SetPadding(struct Unknown InPadding); // Function UMG.BackgroundBlur.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B37220>
+	void SetLowQualityFallbackBrush(struct Unknown& InBrush); // Function UMG.BackgroundBlur.SetLowQualityFallbackBrush(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B36F10>
+	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.BackgroundBlur.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B36B60>
+	void SetBlurStrength(float InStrength); // Function UMG.BackgroundBlur.SetBlurStrength(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B36560>
+	void SetBlurRadius(int32_t InBlurRadius); // Function UMG.BackgroundBlur.SetBlurRadius(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B364E0>
+	void SetApplyAlphaToBlur(char bInApplyAlphaToBlur); // Function UMG.BackgroundBlur.SetApplyAlphaToBlur(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B36340>
 };
 
 // Class UMG.PanelSlot
@@ -461,9 +461,9 @@ public:
 	char HorizontalAlignment; // 0x48 (1)
 	char VerticalAlignment; // 0x49 (1)
 
-	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.BackgroundBlurSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B38990>
-	void SetPadding(struct Unknown InPadding); // Function UMG.BackgroundBlurSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B383F0>
-	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.BackgroundBlurSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B37D20>
+	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.BackgroundBlurSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B37850>
+	void SetPadding(struct Unknown InPadding); // Function UMG.BackgroundBlurSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B372B0>
+	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.BackgroundBlurSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B36BE0>
 };
 
 // Class UMG.PropertyBinding
@@ -485,9 +485,9 @@ public:
 	char HorizontalAlignment; // 0x48 (1)
 	char VerticalAlignment; // 0x49 (1)
 
-	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.BorderSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B38A90>
-	void SetPadding(struct Unknown InPadding); // Function UMG.BorderSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B38510>
-	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.BorderSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B37E20>
+	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.BorderSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B37950>
+	void SetPadding(struct Unknown InPadding); // Function UMG.BorderSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B373D0>
+	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.BorderSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B36CE0>
 };
 
 // Class UMG.Button
@@ -509,13 +509,13 @@ public:
 	struct FMulticastInlineDelegate OnHovered; // 0x438 (16)
 	struct FMulticastInlineDelegate OnUnhovered; // 0x448 (16)
 
-	void SetTouchMethod(char InTouchMethod); // Function UMG.Button.SetTouchMethod(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B38890>
-	void SetStyle(struct Unknown& InStyle); // Function UMG.Button.SetStyle(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B387B0>
-	void SetPressMethod(char InPressMethod); // Function UMG.Button.SetPressMethod(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B386B0>
-	void SetColorAndOpacity(struct Unknown InColorAndOpacity); // Function UMG.Button.SetColorAndOpacity(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B37B20>
-	void SetClickMethod(char InClickMethod); // Function UMG.Button.SetClickMethod(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B37AA0>
-	void SetBackgroundColor(struct Unknown InBackgroundColor); // Function UMG.Button.SetBackgroundColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B375A0>
-	char IsPressed(); // Function UMG.Button.IsPressed(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B37310>
+	void SetTouchMethod(char InTouchMethod); // Function UMG.Button.SetTouchMethod(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B37750>
+	void SetStyle(struct Unknown& InStyle); // Function UMG.Button.SetStyle(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B37670>
+	void SetPressMethod(char InPressMethod); // Function UMG.Button.SetPressMethod(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B37570>
+	void SetColorAndOpacity(struct Unknown InColorAndOpacity); // Function UMG.Button.SetColorAndOpacity(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B369E0>
+	void SetClickMethod(char InClickMethod); // Function UMG.Button.SetClickMethod(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B36960>
+	void SetBackgroundColor(struct Unknown InBackgroundColor); // Function UMG.Button.SetBackgroundColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B36460>
+	char IsPressed(); // Function UMG.Button.IsPressed(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B361D0>
 };
 
 // Class UMG.ButtonSlot
@@ -527,9 +527,9 @@ public:
 	char HorizontalAlignment; // 0x48 (1)
 	char VerticalAlignment; // 0x49 (1)
 
-	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.ButtonSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B38B10>
-	void SetPadding(struct Unknown InPadding); // Function UMG.ButtonSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B385A0>
-	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.ButtonSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B37EA0>
+	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.ButtonSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B379D0>
+	void SetPadding(struct Unknown InPadding); // Function UMG.ButtonSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B37460>
+	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.ButtonSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B36D60>
 };
 
 // Class UMG.CanvasPanelSlot
@@ -541,24 +541,24 @@ public:
 	char bAutoSize : 0; // 0x60 (1)
 	int32_t ZOrder; // 0x64 (4)
 
-	void SetZOrder(int32_t InZOrder); // Function UMG.CanvasPanelSlot.SetZOrder(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B38B90>
-	void SetSize(struct Unknown InSize); // Function UMG.CanvasPanelSlot.SetSize(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B38730>
-	void SetPosition(struct Unknown InPosition); // Function UMG.CanvasPanelSlot.SetPosition(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B38630>
-	void SetOffsets(struct Unknown InOffset); // Function UMG.CanvasPanelSlot.SetOffsets(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B382D0>
-	void SetMinimum(struct Unknown InMinimumAnchors); // Function UMG.CanvasPanelSlot.SetMinimum(Final|Native|Public|HasDefaults) // <Game_BE.exe+0x3B38250>
-	void SetMaximum(struct Unknown InMaximumAnchors); // Function UMG.CanvasPanelSlot.SetMaximum(Final|Native|Public|HasDefaults) // <Game_BE.exe+0x3B381D0>
-	void SetLayout(struct Unknown& InLayoutData); // Function UMG.CanvasPanelSlot.SetLayout(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B37FB0>
-	void SetAutoSize(char InbAutoSize); // Function UMG.CanvasPanelSlot.SetAutoSize(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B37510>
-	void SetAnchors(struct Unknown InAnchors); // Function UMG.CanvasPanelSlot.SetAnchors(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B373F0>
-	void SetAlignment(struct Unknown InAlignment); // Function UMG.CanvasPanelSlot.SetAlignment(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B37370>
-	int32_t GetZOrder(); // Function UMG.CanvasPanelSlot.GetZOrder(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B372B0>
-	struct Unknown GetSize(); // Function UMG.CanvasPanelSlot.GetSize(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B37190>
-	struct Unknown GetPosition(); // Function UMG.CanvasPanelSlot.GetPosition(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B37150>
-	struct Unknown GetOffsets(); // Function UMG.CanvasPanelSlot.GetOffsets(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B37110>
-	struct Unknown GetLayout(); // Function UMG.CanvasPanelSlot.GetLayout(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B370C0>
-	char GetAutoSize(); // Function UMG.CanvasPanelSlot.GetAutoSize(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B37030>
-	struct Unknown GetAnchors(); // Function UMG.CanvasPanelSlot.GetAnchors(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B36FF0>
-	struct Unknown GetAlignment(); // Function UMG.CanvasPanelSlot.GetAlignment(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B36FB0>
+	void SetZOrder(int32_t InZOrder); // Function UMG.CanvasPanelSlot.SetZOrder(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B37A50>
+	void SetSize(struct Unknown InSize); // Function UMG.CanvasPanelSlot.SetSize(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B375F0>
+	void SetPosition(struct Unknown InPosition); // Function UMG.CanvasPanelSlot.SetPosition(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B374F0>
+	void SetOffsets(struct Unknown InOffset); // Function UMG.CanvasPanelSlot.SetOffsets(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B37190>
+	void SetMinimum(struct Unknown InMinimumAnchors); // Function UMG.CanvasPanelSlot.SetMinimum(Final|Native|Public|HasDefaults) // <Game_BE.exe+0x3B37110>
+	void SetMaximum(struct Unknown InMaximumAnchors); // Function UMG.CanvasPanelSlot.SetMaximum(Final|Native|Public|HasDefaults) // <Game_BE.exe+0x3B37090>
+	void SetLayout(struct Unknown& InLayoutData); // Function UMG.CanvasPanelSlot.SetLayout(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B36E70>
+	void SetAutoSize(char InbAutoSize); // Function UMG.CanvasPanelSlot.SetAutoSize(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B363D0>
+	void SetAnchors(struct Unknown InAnchors); // Function UMG.CanvasPanelSlot.SetAnchors(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B362B0>
+	void SetAlignment(struct Unknown InAlignment); // Function UMG.CanvasPanelSlot.SetAlignment(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B36230>
+	int32_t GetZOrder(); // Function UMG.CanvasPanelSlot.GetZOrder(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B36170>
+	struct Unknown GetSize(); // Function UMG.CanvasPanelSlot.GetSize(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B36050>
+	struct Unknown GetPosition(); // Function UMG.CanvasPanelSlot.GetPosition(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B36010>
+	struct Unknown GetOffsets(); // Function UMG.CanvasPanelSlot.GetOffsets(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B35FD0>
+	struct Unknown GetLayout(); // Function UMG.CanvasPanelSlot.GetLayout(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B35F80>
+	char GetAutoSize(); // Function UMG.CanvasPanelSlot.GetAutoSize(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B35EF0>
+	struct Unknown GetAnchors(); // Function UMG.CanvasPanelSlot.GetAnchors(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B35EB0>
+	struct Unknown GetAlignment(); // Function UMG.CanvasPanelSlot.GetAlignment(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B35E70>
 };
 
 // Class UMG.CheckBox
@@ -585,11 +585,11 @@ public:
 	char IsFocusable : 0; // 0x748 (1)
 	struct FMulticastInlineDelegate OnCheckStateChanged; // 0x750 (16)
 
-	void SetIsChecked(char InIsChecked); // Function UMG.CheckBox.SetIsChecked(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B37F20>
-	void SetCheckedState(enum class Unknow InCheckedState); // Function UMG.CheckBox.SetCheckedState(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B37A20>
-	char IsPressed(); // Function UMG.CheckBox.IsPressed(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B37340>
-	char IsChecked(); // Function UMG.CheckBox.IsChecked(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B372E0>
-	enum class Unknow GetCheckedState(); // Function UMG.CheckBox.GetCheckedState(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B37060>
+	void SetIsChecked(char InIsChecked); // Function UMG.CheckBox.SetIsChecked(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B36DE0>
+	void SetCheckedState(enum class Unknow InCheckedState); // Function UMG.CheckBox.SetCheckedState(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B368E0>
+	char IsPressed(); // Function UMG.CheckBox.IsPressed(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B36200>
+	char IsChecked(); // Function UMG.CheckBox.IsChecked(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B361A0>
+	enum class Unknow GetCheckedState(); // Function UMG.CheckBox.GetCheckedState(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B35F20>
 };
 
 // Class UMG.CircularThrobber
@@ -604,9 +604,9 @@ public:
 	struct Unknown Image; // 0x120 (136)
 	char bEnableRadius : 0; // 0x1A8 (1)
 
-	void SetRadius(float InRadius); // Function UMG.CircularThrobber.SetRadius(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3C2B0>
-	void SetPeriod(float InPeriod); // Function UMG.CircularThrobber.SetPeriod(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3C230>
-	void SetNumberOfPieces(int32_t InNumberOfPieces); // Function UMG.CircularThrobber.SetNumberOfPieces(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3C1B0>
+	void SetRadius(float InRadius); // Function UMG.CircularThrobber.SetRadius(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3B180>
+	void SetPeriod(float InPeriod); // Function UMG.CircularThrobber.SetPeriod(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3B100>
+	void SetNumberOfPieces(int32_t InNumberOfPieces); // Function UMG.CircularThrobber.SetNumberOfPieces(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3B080>
 };
 
 // Class UMG.ComboBox
@@ -639,21 +639,21 @@ public:
 	struct FMulticastInlineDelegate OnSelectionChanged; // 0xD88 (16)
 	struct FMulticastInlineDelegate OnOpening; // 0xD98 (16)
 
-	void SetSelectedOption(struct FString Option); // Function UMG.ComboBoxString.SetSelectedOption(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3C3B0>
-	void SetSelectedIndex(int32_t Index); // Function UMG.ComboBoxString.SetSelectedIndex(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3C330>
-	char RemoveOption(struct FString Option); // Function UMG.ComboBoxString.RemoveOption(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3B950>
-	void RefreshOptions(); // Function UMG.ComboBoxString.RefreshOptions(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3B8B0>
-	void OnSelectionChangedEvent__DelegateSignature(struct FString SelectedItem, char SelectionType); // DelegateFunction UMG.ComboBoxString.OnSelectionChangedEvent__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B812B0>
-	void OnOpeningEvent__DelegateSignature(); // DelegateFunction UMG.ComboBoxString.OnOpeningEvent__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B812B0>
-	char IsOpen(); // Function UMG.ComboBoxString.IsOpen(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3B880>
-	struct FString GetSelectedOption(); // Function UMG.ComboBoxString.GetSelectedOption(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3B5F0>
-	int32_t GetSelectedIndex(); // Function UMG.ComboBoxString.GetSelectedIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3B5C0>
-	int32_t GetOptionCount(); // Function UMG.ComboBoxString.GetOptionCount(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3B590>
-	struct FString GetOptionAtIndex(int32_t Index); // Function UMG.ComboBoxString.GetOptionAtIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3B4B0>
-	int32_t FindOptionIndex(struct FString Option); // Function UMG.ComboBoxString.FindOptionIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3B2A0>
-	void ClearSelection(); // Function UMG.ComboBoxString.ClearSelection(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3AEF0>
-	void ClearOptions(); // Function UMG.ComboBoxString.ClearOptions(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3AED0>
-	void AddOption(struct FString Option); // Function UMG.ComboBoxString.AddOption(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3AD50>
+	void SetSelectedOption(struct FString Option); // Function UMG.ComboBoxString.SetSelectedOption(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3B280>
+	void SetSelectedIndex(int32_t Index); // Function UMG.ComboBoxString.SetSelectedIndex(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3B200>
+	char RemoveOption(struct FString Option); // Function UMG.ComboBoxString.RemoveOption(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3A820>
+	void RefreshOptions(); // Function UMG.ComboBoxString.RefreshOptions(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3A780>
+	void OnSelectionChangedEvent__DelegateSignature(struct FString SelectedItem, char SelectionType); // DelegateFunction UMG.ComboBoxString.OnSelectionChangedEvent__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B80160>
+	void OnOpeningEvent__DelegateSignature(); // DelegateFunction UMG.ComboBoxString.OnOpeningEvent__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B80160>
+	char IsOpen(); // Function UMG.ComboBoxString.IsOpen(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3A750>
+	struct FString GetSelectedOption(); // Function UMG.ComboBoxString.GetSelectedOption(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3A4C0>
+	int32_t GetSelectedIndex(); // Function UMG.ComboBoxString.GetSelectedIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3A490>
+	int32_t GetOptionCount(); // Function UMG.ComboBoxString.GetOptionCount(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3A460>
+	struct FString GetOptionAtIndex(int32_t Index); // Function UMG.ComboBoxString.GetOptionAtIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3A380>
+	int32_t FindOptionIndex(struct FString Option); // Function UMG.ComboBoxString.FindOptionIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3A170>
+	void ClearSelection(); // Function UMG.ComboBoxString.ClearSelection(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B39DC0>
+	void ClearOptions(); // Function UMG.ComboBoxString.ClearOptions(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B39DA0>
+	void AddOption(struct FString Option); // Function UMG.ComboBoxString.AddOption(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B39C20>
 };
 
 // Class UMG.DragDropOperation
@@ -671,9 +671,9 @@ public:
 	struct FMulticastInlineDelegate OnDragCancelled; // 0x68 (16)
 	struct FMulticastInlineDelegate OnDragged; // 0x78 (16)
 
-	void Drop(struct Unknown& PointerEvent); // Function UMG.DragDropOperation.Drop(Native|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x3B3B170>
-	void Dragged(struct Unknown& PointerEvent); // Function UMG.DragDropOperation.Dragged(Native|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x3B3B040>
-	void DragCancelled(struct Unknown& PointerEvent); // Function UMG.DragDropOperation.DragCancelled(Native|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x3B3AF10>
+	void Drop(struct Unknown& PointerEvent); // Function UMG.DragDropOperation.Drop(Native|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x3B3A040>
+	void Dragged(struct Unknown& PointerEvent); // Function UMG.DragDropOperation.Dragged(Native|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x3B39F10>
+	void DragCancelled(struct Unknown& PointerEvent); // Function UMG.DragDropOperation.DragCancelled(Native|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x3B39DE0>
 };
 
 // Class UMG.DynamicEntryBoxBase
@@ -690,9 +690,9 @@ public:
 	int32_t MaxElementSize; // 0x134 (4)
 	struct Unknown EntryWidgetPool; // 0x148 (128)
 
-	void SetEntrySpacing(struct Unknown& InEntrySpacing); // Function UMG.DynamicEntryBoxBase.SetEntrySpacing(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B3BB40>
-	int32_t GetNumEntries(); // Function UMG.DynamicEntryBoxBase.GetNumEntries(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3B480>
-	struct TArray<Unknown> GetAllEntries(); // Function UMG.DynamicEntryBoxBase.GetAllEntries(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3B350>
+	void SetEntrySpacing(struct Unknown& InEntrySpacing); // Function UMG.DynamicEntryBoxBase.SetEntrySpacing(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B3AA10>
+	int32_t GetNumEntries(); // Function UMG.DynamicEntryBoxBase.GetNumEntries(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3A350>
+	struct TArray<Unknown> GetAllEntries(); // Function UMG.DynamicEntryBoxBase.GetAllEntries(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3A220>
 };
 
 // Class UMG.DynamicEntryBox
@@ -702,10 +702,10 @@ public:
 
 	struct Unknown* EntryWidgetClass; // 0x1C8 (8)
 
-	void Reset(char bDeleteWidgets); // Function UMG.DynamicEntryBox.Reset(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3BA00>
-	void RemoveEntry(struct Unknown EntryWidget); // Function UMG.DynamicEntryBox.RemoveEntry(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3B8D0>
-	struct Unknown BP_CreateEntryOfClass(struct Unknown* EntryClass); // Function UMG.DynamicEntryBox.BP_CreateEntryOfClass(Final|Native|Private|BlueprintCallable) // <Game_BE.exe+0x3B3AE20>
-	struct Unknown BP_CreateEntry(); // Function UMG.DynamicEntryBox.BP_CreateEntry(Final|Native|Private|BlueprintCallable) // <Game_BE.exe+0x3B3ADF0>
+	void Reset(char bDeleteWidgets); // Function UMG.DynamicEntryBox.Reset(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3A8D0>
+	void RemoveEntry(struct Unknown EntryWidget); // Function UMG.DynamicEntryBox.RemoveEntry(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3A7A0>
+	struct Unknown BP_CreateEntryOfClass(struct Unknown* EntryClass); // Function UMG.DynamicEntryBox.BP_CreateEntryOfClass(Final|Native|Private|BlueprintCallable) // <Game_BE.exe+0x3B39CF0>
+	struct Unknown BP_CreateEntry(); // Function UMG.DynamicEntryBox.BP_CreateEntry(Final|Native|Private|BlueprintCallable) // <Game_BE.exe+0x3B39CC0>
 };
 
 // Class UMG.EditableText
@@ -742,14 +742,14 @@ public:
 	struct FMulticastInlineDelegate OnTextChanged; // 0x420 (16)
 	struct FMulticastInlineDelegate OnTextCommitted; // 0x430 (16)
 
-	void SetText(struct FText InText); // Function UMG.EditableText.SetText(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3C4A0>
-	void SetJustification(char InJustification); // Function UMG.EditableText.SetJustification(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3C0B0>
-	void SetIsReadOnly(char InbIsReadyOnly); // Function UMG.EditableText.SetIsReadOnly(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3BF90>
-	void SetIsPassword(char InbIsPassword); // Function UMG.EditableText.SetIsPassword(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3BE70>
-	void SetHintText(struct FText InHintText); // Function UMG.EditableText.SetHintText(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3BCB0>
-	void OnEditableTextCommittedEvent__DelegateSignature(struct FText& Text, char CommitMethod); // DelegateFunction UMG.EditableText.OnEditableTextCommittedEvent__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <Game_BE.exe+0x2B812B0>
-	void OnEditableTextChangedEvent__DelegateSignature(struct FText& Text); // DelegateFunction UMG.EditableText.OnEditableTextChangedEvent__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <Game_BE.exe+0x2B812B0>
-	struct FText GetText(); // Function UMG.EditableText.GetText(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3B6E0>
+	void SetText(struct FText InText); // Function UMG.EditableText.SetText(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3B370>
+	void SetJustification(char InJustification); // Function UMG.EditableText.SetJustification(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3AF80>
+	void SetIsReadOnly(char InbIsReadyOnly); // Function UMG.EditableText.SetIsReadOnly(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3AE60>
+	void SetIsPassword(char InbIsPassword); // Function UMG.EditableText.SetIsPassword(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3AD40>
+	void SetHintText(struct FText InHintText); // Function UMG.EditableText.SetHintText(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3AB80>
+	void OnEditableTextCommittedEvent__DelegateSignature(struct FText& Text, char CommitMethod); // DelegateFunction UMG.EditableText.OnEditableTextCommittedEvent__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <Game_BE.exe+0x2B80160>
+	void OnEditableTextChangedEvent__DelegateSignature(struct FText& Text); // DelegateFunction UMG.EditableText.OnEditableTextChangedEvent__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <Game_BE.exe+0x2B80160>
+	struct FText GetText(); // Function UMG.EditableText.GetText(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3A5B0>
 };
 
 // Class UMG.EditableTextBox
@@ -786,18 +786,18 @@ public:
 	struct FMulticastInlineDelegate OnTextChanged; // 0x9F8 (16)
 	struct FMulticastInlineDelegate OnTextCommitted; // 0xA08 (16)
 
-	void SetText(struct FText InText); // Function UMG.EditableTextBox.SetText(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3C580>
-	void SetJustification(char InJustification); // Function UMG.EditableTextBox.SetJustification(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3C130>
-	void SetIsReadOnly(char bReadOnly); // Function UMG.EditableTextBox.SetIsReadOnly(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3C020>
-	void SetIsPassword(char bIsPassword); // Function UMG.EditableTextBox.SetIsPassword(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3BF00>
-	void SetHintText(struct FText InText); // Function UMG.EditableTextBox.SetHintText(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3BD90>
-	void SetError(struct FText InError); // Function UMG.EditableTextBox.SetError(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3BBD0>
-	void SelectWordAt(); // Function UMG.EditableTextBox.SelectWordAt(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3BA90>
-	void OnEditableTextBoxCommittedEvent__DelegateSignature(struct FText& Text, char CommitMethod); // DelegateFunction UMG.EditableTextBox.OnEditableTextBoxCommittedEvent__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <Game_BE.exe+0x2B812B0>
-	void OnEditableTextBoxChangedEvent__DelegateSignature(struct FText& Text); // DelegateFunction UMG.EditableTextBox.OnEditableTextBoxChangedEvent__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <Game_BE.exe+0x2B812B0>
-	char HasError(); // Function UMG.EditableTextBox.HasError(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3B850>
-	struct FText GetText(); // Function UMG.EditableTextBox.GetText(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3B780>
-	void ClearError(); // Function UMG.EditableTextBox.ClearError(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3AEB0>
+	void SetText(struct FText InText); // Function UMG.EditableTextBox.SetText(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3B450>
+	void SetJustification(char InJustification); // Function UMG.EditableTextBox.SetJustification(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3B000>
+	void SetIsReadOnly(char bReadOnly); // Function UMG.EditableTextBox.SetIsReadOnly(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3AEF0>
+	void SetIsPassword(char bIsPassword); // Function UMG.EditableTextBox.SetIsPassword(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3ADD0>
+	void SetHintText(struct FText InText); // Function UMG.EditableTextBox.SetHintText(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3AC60>
+	void SetError(struct FText InError); // Function UMG.EditableTextBox.SetError(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3AAA0>
+	void SelectWordAt(); // Function UMG.EditableTextBox.SelectWordAt(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3A960>
+	void OnEditableTextBoxCommittedEvent__DelegateSignature(struct FText& Text, char CommitMethod); // DelegateFunction UMG.EditableTextBox.OnEditableTextBoxCommittedEvent__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <Game_BE.exe+0x2B80160>
+	void OnEditableTextBoxChangedEvent__DelegateSignature(struct FText& Text); // DelegateFunction UMG.EditableTextBox.OnEditableTextBoxChangedEvent__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <Game_BE.exe+0x2B80160>
+	char HasError(); // Function UMG.EditableTextBox.HasError(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3A720>
+	struct FText GetText(); // Function UMG.EditableTextBox.GetText(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3A650>
+	void ClearError(); // Function UMG.EditableTextBox.ClearError(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B39D80>
 };
 
 // Class UMG.ExpandableArea
@@ -816,9 +816,9 @@ public:
 	struct Unknown HeaderContent; // 0x318 (8)
 	struct Unknown BodyContent; // 0x320 (8)
 
-	void SetIsExpanded_Animated(char IsExpanded); // Function UMG.ExpandableArea.SetIsExpanded_Animated(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B40910>
-	void SetIsExpanded(char IsExpanded); // Function UMG.ExpandableArea.SetIsExpanded(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B40880>
-	char GetIsExpanded(); // Function UMG.ExpandableArea.GetIsExpanded(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3F2F0>
+	void SetIsExpanded_Animated(char IsExpanded); // Function UMG.ExpandableArea.SetIsExpanded_Animated(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3F7E0>
+	void SetIsExpanded(char IsExpanded); // Function UMG.ExpandableArea.SetIsExpanded(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3F750>
+	char GetIsExpanded(); // Function UMG.ExpandableArea.GetIsExpanded(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3E1C0>
 };
 
 // Class UMG.GridPanel
@@ -829,9 +829,9 @@ public:
 	struct TArray<Unknown> ColumnFill; // 0x120 (16)
 	struct TArray<Unknown> RowFill; // 0x130 (16)
 
-	void SetRowFill(int32_t columnIndex, float Coefficient); // Function UMG.GridPanel.SetRowFill(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B40E80>
-	void SetColumnFill(int32_t columnIndex, float Coefficient); // Function UMG.GridPanel.SetColumnFill(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B40520>
-	struct Unknown AddChildToGrid(struct Unknown Content, int32_t InRow, int32_t InColumn); // Function UMG.GridPanel.AddChildToGrid(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3EAE0>
+	void SetRowFill(int32_t columnIndex, float Coefficient); // Function UMG.GridPanel.SetRowFill(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3FD50>
+	void SetColumnFill(int32_t columnIndex, float Coefficient); // Function UMG.GridPanel.SetColumnFill(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3F3F0>
+	struct Unknown AddChildToGrid(struct Unknown Content, int32_t InRow, int32_t InColumn); // Function UMG.GridPanel.AddChildToGrid(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3D9B0>
 };
 
 // Class UMG.GridSlot
@@ -849,15 +849,15 @@ public:
 	int32_t Layer; // 0x5C (4)
 	struct Unknown Nudge; // 0x60 (8)
 
-	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.GridSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B412D0>
-	void SetRowSpan(int32_t InRowSpan); // Function UMG.GridSlot.SetRowSpan(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B40F50>
-	void SetRow(int32_t InRow); // Function UMG.GridSlot.SetRow(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B40E00>
-	void SetPadding(struct Unknown InPadding); // Function UMG.GridSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B40CE0>
-	void SetNudge(struct Unknown InNudge); // Function UMG.GridSlot.SetNudge(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B40BE0>
-	void SetLayer(int32_t InLayer); // Function UMG.GridSlot.SetLayer(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B40A80>
-	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.GridSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B40780>
-	void SetColumnSpan(int32_t InColumnSpan); // Function UMG.GridSlot.SetColumnSpan(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B405F0>
-	void SetColumn(int32_t InColumn); // Function UMG.GridSlot.SetColumn(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B404A0>
+	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.GridSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B401A0>
+	void SetRowSpan(int32_t InRowSpan); // Function UMG.GridSlot.SetRowSpan(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3FE20>
+	void SetRow(int32_t InRow); // Function UMG.GridSlot.SetRow(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3FCD0>
+	void SetPadding(struct Unknown InPadding); // Function UMG.GridSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3FBB0>
+	void SetNudge(struct Unknown InNudge); // Function UMG.GridSlot.SetNudge(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B3FAB0>
+	void SetLayer(int32_t InLayer); // Function UMG.GridSlot.SetLayer(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3F950>
+	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.GridSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3F650>
+	void SetColumnSpan(int32_t InColumnSpan); // Function UMG.GridSlot.SetColumnSpan(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3F4C0>
+	void SetColumn(int32_t InColumn); // Function UMG.GridSlot.SetColumn(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3F370>
 };
 
 // Class UMG.HorizontalBoxSlot
@@ -870,10 +870,10 @@ public:
 	char HorizontalAlignment; // 0x58 (1)
 	char VerticalAlignment; // 0x59 (1)
 
-	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.HorizontalBoxSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B41350>
-	void SetSize(struct Unknown InSize); // Function UMG.HorizontalBoxSlot.SetSize(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B411C0>
-	void SetPadding(struct Unknown InPadding); // Function UMG.HorizontalBoxSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B40D70>
-	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.HorizontalBoxSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B40800>
+	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.HorizontalBoxSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B40220>
+	void SetSize(struct Unknown InSize); // Function UMG.HorizontalBoxSlot.SetSize(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B40090>
+	void SetPadding(struct Unknown InPadding); // Function UMG.HorizontalBoxSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3FC40>
+	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.HorizontalBoxSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3F6D0>
 };
 
 // Class UMG.Image
@@ -888,21 +888,21 @@ public:
 	char bFlipForRightToLeftFlowDirection : 0; // 0x1C0 (1)
 	struct FDelegate OnMouseButtonDownEvent; // 0x1C4 (16)
 
-	void SetOpacity(float InOpacity); // Function UMG.Image.SetOpacity(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B40C60>
-	void SetGammaCorrect(); // Function UMG.Image.SetGammaCorrect(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B40760>
-	void SetColorAndOpacity(struct Unknown InColorAndOpacity); // Function UMG.Image.SetColorAndOpacity(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B40420>
-	void SetBrushTintColor(struct Unknown TintColor); // Function UMG.Image.SetBrushTintColor(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B402A0>
-	void SetBrushSize(struct Unknown DesiredSize); // Function UMG.Image.SetBrushSize(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B40220>
-	void SetBrushResourceObject(struct Unknown ResourceObject); // Function UMG.Image.SetBrushResourceObject(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B401A0>
-	void SetBrushFromTextureDynamic(struct Unknown Texture, char bMatchSize); // Function UMG.Image.SetBrushFromTextureDynamic(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B400D0>
-	void SetBrushFromTexture(struct Unknown Texture, char bMatchSize); // Function UMG.Image.SetBrushFromTexture(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B40000>
-	void SetBrushFromSoftTexture(struct Unknown SoftTexture, char bMatchSize); // Function UMG.Image.SetBrushFromSoftTexture(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3FEA0>
-	void SetBrushFromSoftMaterial(struct Unknown SoftMaterial); // Function UMG.Image.SetBrushFromSoftMaterial(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3FD80>
-	void SetBrushFromMaterial(struct Unknown Material); // Function UMG.Image.SetBrushFromMaterial(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3FCF0>
-	void SetBrushFromAtlasInterface(struct TScriptInterface<IUnknown> AtlasRegion, char bMatchSize); // Function UMG.Image.SetBrushFromAtlasInterface(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3FC00>
-	void SetBrushFromAsset(struct Unknown Asset); // Function UMG.Image.SetBrushFromAsset(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3FB70>
-	void SetBrush(struct Unknown& InBrush); // Function UMG.Image.SetBrush(Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B3F9F0>
-	struct Unknown GetDynamicMaterial(); // Function UMG.Image.GetDynamicMaterial(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3F230>
+	void SetOpacity(float InOpacity); // Function UMG.Image.SetOpacity(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3FB30>
+	void SetGammaCorrect(); // Function UMG.Image.SetGammaCorrect(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3F630>
+	void SetColorAndOpacity(struct Unknown InColorAndOpacity); // Function UMG.Image.SetColorAndOpacity(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B3F2F0>
+	void SetBrushTintColor(struct Unknown TintColor); // Function UMG.Image.SetBrushTintColor(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3F170>
+	void SetBrushSize(struct Unknown DesiredSize); // Function UMG.Image.SetBrushSize(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B3F0F0>
+	void SetBrushResourceObject(struct Unknown ResourceObject); // Function UMG.Image.SetBrushResourceObject(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3F070>
+	void SetBrushFromTextureDynamic(struct Unknown Texture, char bMatchSize); // Function UMG.Image.SetBrushFromTextureDynamic(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3EFA0>
+	void SetBrushFromTexture(struct Unknown Texture, char bMatchSize); // Function UMG.Image.SetBrushFromTexture(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3EED0>
+	void SetBrushFromSoftTexture(struct Unknown SoftTexture, char bMatchSize); // Function UMG.Image.SetBrushFromSoftTexture(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3ED70>
+	void SetBrushFromSoftMaterial(struct Unknown SoftMaterial); // Function UMG.Image.SetBrushFromSoftMaterial(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3EC50>
+	void SetBrushFromMaterial(struct Unknown Material); // Function UMG.Image.SetBrushFromMaterial(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3EBC0>
+	void SetBrushFromAtlasInterface(struct TScriptInterface<IUnknown> AtlasRegion, char bMatchSize); // Function UMG.Image.SetBrushFromAtlasInterface(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3EAD0>
+	void SetBrushFromAsset(struct Unknown Asset); // Function UMG.Image.SetBrushFromAsset(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3EA40>
+	void SetBrush(struct Unknown& InBrush); // Function UMG.Image.SetBrush(Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B3E8C0>
+	struct Unknown GetDynamicMaterial(); // Function UMG.Image.GetDynamicMaterial(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3E100>
 };
 
 // Class UMG.InputKeySelector
@@ -924,16 +924,16 @@ public:
 	struct FMulticastInlineDelegate OnKeySelected; // 0x6C0 (16)
 	struct FMulticastInlineDelegate OnIsSelectingKeyChanged; // 0x6D0 (16)
 
-	void SetTextBlockVisibility(enum class Unknow InVisibility); // Function UMG.InputKeySelector.SetTextBlockVisibility(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B41250>
-	void SetSelectedKey(struct Unknown& InSelectedKey); // Function UMG.InputKeySelector.SetSelectedKey(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B41050>
-	void SetNoKeySpecifiedText(struct FText InNoKeySpecifiedText); // Function UMG.InputKeySelector.SetNoKeySpecifiedText(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B40B00>
-	void SetKeySelectionText(struct FText InKeySelectionText); // Function UMG.InputKeySelector.SetKeySelectionText(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B409A0>
-	void SetEscapeKeys(struct TArray<Unknown>& InKeys); // Function UMG.InputKeySelector.SetEscapeKeys(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B40670>
-	void SetAllowModifierKeys(char bInAllowModifierKeys); // Function UMG.InputKeySelector.SetAllowModifierKeys(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3F960>
-	void SetAllowGamepadKeys(char bInAllowGamepadKeys); // Function UMG.InputKeySelector.SetAllowGamepadKeys(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3F8D0>
-	void OnKeySelected__DelegateSignature(struct Unknown SelectedKey); // DelegateFunction UMG.InputKeySelector.OnKeySelected__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B812B0>
-	void OnIsSelectingKeyChanged__DelegateSignature(); // DelegateFunction UMG.InputKeySelector.OnIsSelectingKeyChanged__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B812B0>
-	char GetIsSelectingKey(); // Function UMG.InputKeySelector.GetIsSelectingKey(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3F320>
+	void SetTextBlockVisibility(enum class Unknow InVisibility); // Function UMG.InputKeySelector.SetTextBlockVisibility(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B40120>
+	void SetSelectedKey(struct Unknown& InSelectedKey); // Function UMG.InputKeySelector.SetSelectedKey(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B3FF20>
+	void SetNoKeySpecifiedText(struct FText InNoKeySpecifiedText); // Function UMG.InputKeySelector.SetNoKeySpecifiedText(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3F9D0>
+	void SetKeySelectionText(struct FText InKeySelectionText); // Function UMG.InputKeySelector.SetKeySelectionText(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3F870>
+	void SetEscapeKeys(struct TArray<Unknown>& InKeys); // Function UMG.InputKeySelector.SetEscapeKeys(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B3F540>
+	void SetAllowModifierKeys(char bInAllowModifierKeys); // Function UMG.InputKeySelector.SetAllowModifierKeys(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3E830>
+	void SetAllowGamepadKeys(char bInAllowGamepadKeys); // Function UMG.InputKeySelector.SetAllowGamepadKeys(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3E7A0>
+	void OnKeySelected__DelegateSignature(struct Unknown SelectedKey); // DelegateFunction UMG.InputKeySelector.OnKeySelected__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B80160>
+	void OnIsSelectingKeyChanged__DelegateSignature(); // DelegateFunction UMG.InputKeySelector.OnIsSelectingKeyChanged__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B80160>
+	char GetIsSelectingKey(); // Function UMG.InputKeySelector.GetIsSelectingKey(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3E1F0>
 };
 
 // Class UMG.InvalidationBox
@@ -944,9 +944,9 @@ public:
 	char bCanCache : 0; // 0x120 (1)
 	char CacheRelativeTransforms : 0; // 0x121 (1)
 
-	void SetCanCache(char CanCache); // Function UMG.InvalidationBox.SetCanCache(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B40390>
-	void InvalidateCache(); // Function UMG.InvalidationBox.InvalidateCache(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1530870>
-	char GetCanCache(); // Function UMG.InvalidationBox.GetCanCache(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3F200>
+	void SetCanCache(char CanCache); // Function UMG.InvalidationBox.SetCanCache(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3F260>
+	void InvalidateCache(); // Function UMG.InvalidationBox.InvalidateCache(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1530390>
+	char GetCanCache(); // Function UMG.InvalidationBox.GetCanCache(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3E0D0>
 };
 
 // Class UMG.ListViewBase
@@ -963,14 +963,14 @@ public:
 	struct FMulticastInlineDelegate BP_OnEntryReleased; // 0x130 (16)
 	struct Unknown EntryWidgetPool; // 0x140 (128)
 
-	void SetWheelScrollMultiplier(float NewWheelScrollMultiplier); // Function UMG.ListViewBase.SetWheelScrollMultiplier(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B45F80>
-	void SetScrollOffset(float InScrollOffset); // Function UMG.ListViewBase.SetScrollOffset(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B45B90>
-	void SetScrollbarVisibility(enum class Unknow InVisibility); // Function UMG.ListViewBase.SetScrollbarVisibility(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B45C10>
-	void ScrollToTop(); // Function UMG.ListViewBase.ScrollToTop(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B45620>
-	void ScrollToBottom(); // Function UMG.ListViewBase.ScrollToBottom(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B45600>
-	void RequestRefresh(); // Function UMG.ListViewBase.RequestRefresh(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B455E0>
-	void RegenerateAllEntries(); // Function UMG.ListViewBase.RegenerateAllEntries(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B454A0>
-	struct TArray<Unknown> GetDisplayedEntryWidgets(); // Function UMG.ListViewBase.GetDisplayedEntryWidgets(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B44F70>
+	void SetWheelScrollMultiplier(float NewWheelScrollMultiplier); // Function UMG.ListViewBase.SetWheelScrollMultiplier(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B44E70>
+	void SetScrollOffset(float InScrollOffset); // Function UMG.ListViewBase.SetScrollOffset(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B44A80>
+	void SetScrollbarVisibility(enum class Unknow InVisibility); // Function UMG.ListViewBase.SetScrollbarVisibility(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B44B00>
+	void ScrollToTop(); // Function UMG.ListViewBase.ScrollToTop(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B44510>
+	void ScrollToBottom(); // Function UMG.ListViewBase.ScrollToBottom(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B444F0>
+	void RequestRefresh(); // Function UMG.ListViewBase.RequestRefresh(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B444D0>
+	void RegenerateAllEntries(); // Function UMG.ListViewBase.RegenerateAllEntries(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B44390>
+	struct TArray<Unknown> GetDisplayedEntryWidgets(); // Function UMG.ListViewBase.GetDisplayedEntryWidgets(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B43E60>
 };
 
 // Class UMG.ListView
@@ -993,29 +993,29 @@ public:
 	struct FMulticastInlineDelegate BP_OnItemSelectionChanged; // 0x348 (16)
 	struct FMulticastInlineDelegate BP_OnItemScrolledIntoView; // 0x358 (16)
 
-	void SetSelectionMode(char SelectionMode); // Function UMG.ListView.SetSelectionMode(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B41140>
-	void SetSelectedIndex(int32_t Index); // Function UMG.ListView.SetSelectedIndex(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B40FD0>
-	void ScrollIndexIntoView(int32_t Index); // Function UMG.ListView.ScrollIndexIntoView(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3F850>
-	void RemoveItem(struct Unknown Item); // Function UMG.ListView.RemoveItem(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3F7D0>
-	void NavigateToIndex(int32_t Index); // Function UMG.ListView.NavigateToIndex(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3F750>
-	char IsRefreshPending(); // Function UMG.ListView.IsRefreshPending(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3F720>
-	int32_t GetNumItems(); // Function UMG.ListView.GetNumItems(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3F4B0>
-	struct TArray<Unknown> GetListItems(); // Function UMG.ListView.GetListItems(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3F480>
-	struct Unknown GetItemAt(int32_t Index); // Function UMG.ListView.GetItemAt(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3F350>
-	int32_t GetIndexForItem(struct Unknown Item); // Function UMG.ListView.GetIndexForItem(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3F260>
-	void ClearListItems(); // Function UMG.ListView.ClearListItems(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3F1E0>
-	void BP_SetSelectedItem(struct Unknown Item); // Function UMG.ListView.BP_SetSelectedItem(Final|Native|Private|BlueprintCallable) // <Game_BE.exe+0x3B3F160>
-	void BP_SetListItems(struct TArray<Unknown>& InListItems); // Function UMG.ListView.BP_SetListItems(Final|Native|Private|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B3F0B0>
-	void BP_SetItemSelection(struct Unknown Item, char bSelected); // Function UMG.ListView.BP_SetItemSelection(Final|Native|Private|BlueprintCallable) // <Game_BE.exe+0x3B3EFE0>
-	void BP_ScrollItemIntoView(struct Unknown Item); // Function UMG.ListView.BP_ScrollItemIntoView(Final|Native|Private|BlueprintCallable) // <Game_BE.exe+0x3B3EF60>
-	void BP_NavigateToItem(struct Unknown Item); // Function UMG.ListView.BP_NavigateToItem(Final|Native|Private|BlueprintCallable) // <Game_BE.exe+0x3B3EEE0>
-	char BP_IsItemVisible(struct Unknown Item); // Function UMG.ListView.BP_IsItemVisible(Final|Native|Private|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3EE50>
-	char BP_GetSelectedItems(struct TArray<Unknown>& Items); // Function UMG.ListView.BP_GetSelectedItems(Final|Native|Private|HasOutParms|BlueprintCallable|Const) // <Game_BE.exe+0x3B3ED90>
-	struct Unknown BP_GetSelectedItem(); // Function UMG.ListView.BP_GetSelectedItem(Final|Native|Private|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3ED60>
-	int32_t BP_GetNumItemsSelected(); // Function UMG.ListView.BP_GetNumItemsSelected(Final|Native|Private|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3ED30>
-	void BP_ClearSelection(); // Function UMG.ListView.BP_ClearSelection(Final|Native|Private|BlueprintCallable) // <Game_BE.exe+0x3B3ED10>
-	void BP_CancelScrollIntoView(); // Function UMG.ListView.BP_CancelScrollIntoView(Final|Native|Private|BlueprintCallable) // <Game_BE.exe+0x3B3ECF0>
-	void AddItem(struct Unknown Item); // Function UMG.ListView.AddItem(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3EC70>
+	void SetSelectionMode(char SelectionMode); // Function UMG.ListView.SetSelectionMode(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B40010>
+	void SetSelectedIndex(int32_t Index); // Function UMG.ListView.SetSelectedIndex(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3FEA0>
+	void ScrollIndexIntoView(int32_t Index); // Function UMG.ListView.ScrollIndexIntoView(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3E720>
+	void RemoveItem(struct Unknown Item); // Function UMG.ListView.RemoveItem(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3E6A0>
+	void NavigateToIndex(int32_t Index); // Function UMG.ListView.NavigateToIndex(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3E620>
+	char IsRefreshPending(); // Function UMG.ListView.IsRefreshPending(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3E5F0>
+	int32_t GetNumItems(); // Function UMG.ListView.GetNumItems(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3E380>
+	struct TArray<Unknown> GetListItems(); // Function UMG.ListView.GetListItems(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3E350>
+	struct Unknown GetItemAt(int32_t Index); // Function UMG.ListView.GetItemAt(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3E220>
+	int32_t GetIndexForItem(struct Unknown Item); // Function UMG.ListView.GetIndexForItem(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3E130>
+	void ClearListItems(); // Function UMG.ListView.ClearListItems(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3E0B0>
+	void BP_SetSelectedItem(struct Unknown Item); // Function UMG.ListView.BP_SetSelectedItem(Final|Native|Private|BlueprintCallable) // <Game_BE.exe+0x3B3E030>
+	void BP_SetListItems(struct TArray<Unknown>& InListItems); // Function UMG.ListView.BP_SetListItems(Final|Native|Private|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B3DF80>
+	void BP_SetItemSelection(struct Unknown Item, char bSelected); // Function UMG.ListView.BP_SetItemSelection(Final|Native|Private|BlueprintCallable) // <Game_BE.exe+0x3B3DEB0>
+	void BP_ScrollItemIntoView(struct Unknown Item); // Function UMG.ListView.BP_ScrollItemIntoView(Final|Native|Private|BlueprintCallable) // <Game_BE.exe+0x3B3DE30>
+	void BP_NavigateToItem(struct Unknown Item); // Function UMG.ListView.BP_NavigateToItem(Final|Native|Private|BlueprintCallable) // <Game_BE.exe+0x3B3DDB0>
+	char BP_IsItemVisible(struct Unknown Item); // Function UMG.ListView.BP_IsItemVisible(Final|Native|Private|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3DD20>
+	char BP_GetSelectedItems(struct TArray<Unknown>& Items); // Function UMG.ListView.BP_GetSelectedItems(Final|Native|Private|HasOutParms|BlueprintCallable|Const) // <Game_BE.exe+0x3B3DC60>
+	struct Unknown BP_GetSelectedItem(); // Function UMG.ListView.BP_GetSelectedItem(Final|Native|Private|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3DC30>
+	int32_t BP_GetNumItemsSelected(); // Function UMG.ListView.BP_GetNumItemsSelected(Final|Native|Private|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3DC00>
+	void BP_ClearSelection(); // Function UMG.ListView.BP_ClearSelection(Final|Native|Private|BlueprintCallable) // <Game_BE.exe+0x3B3DBE0>
+	void BP_CancelScrollIntoView(); // Function UMG.ListView.BP_CancelScrollIntoView(Final|Native|Private|BlueprintCallable) // <Game_BE.exe+0x3B3DBC0>
+	void AddItem(struct Unknown Item); // Function UMG.ListView.AddItem(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3DB40>
 };
 
 // Class UMG.MenuAnchor
@@ -1031,15 +1031,15 @@ public:
 	char UseApplicationMenuStack : 0; // 0x13B (1)
 	struct FMulticastInlineDelegate OnMenuOpenChanged; // 0x140 (16)
 
-	void ToggleOpen(char bFocusOnOpen); // Function UMG.MenuAnchor.ToggleOpen(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B460E0>
-	char ShouldOpenDueToClick(); // Function UMG.MenuAnchor.ShouldOpenDueToClick(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B460B0>
-	void SetPlacement(char InPlacement); // Function UMG.MenuAnchor.SetPlacement(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B45B10>
-	void Open(char bFocusMenu); // Function UMG.MenuAnchor.Open(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B45410>
-	char IsOpen(); // Function UMG.MenuAnchor.IsOpen(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B453E0>
-	char HasOpenSubMenus(); // Function UMG.MenuAnchor.HasOpenSubMenus(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B453B0>
-	struct Unknown GetMenuPosition(); // Function UMG.MenuAnchor.GetMenuPosition(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B45140>
-	void FitInWindow(char bFit); // Function UMG.MenuAnchor.FitInWindow(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B44D10>
-	void Close(); // Function UMG.MenuAnchor.Close(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B44CF0>
+	void ToggleOpen(char bFocusOnOpen); // Function UMG.MenuAnchor.ToggleOpen(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B44FD0>
+	char ShouldOpenDueToClick(); // Function UMG.MenuAnchor.ShouldOpenDueToClick(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B44FA0>
+	void SetPlacement(char InPlacement); // Function UMG.MenuAnchor.SetPlacement(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B44A00>
+	void Open(char bFocusMenu); // Function UMG.MenuAnchor.Open(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B44300>
+	char IsOpen(); // Function UMG.MenuAnchor.IsOpen(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B442D0>
+	char HasOpenSubMenus(); // Function UMG.MenuAnchor.HasOpenSubMenus(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B442A0>
+	struct Unknown GetMenuPosition(); // Function UMG.MenuAnchor.GetMenuPosition(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B44030>
+	void FitInWindow(char bFit); // Function UMG.MenuAnchor.FitInWindow(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B43C00>
+	void Close(); // Function UMG.MenuAnchor.Close(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B43BE0>
 };
 
 // Class UMG.MovieScene2DTransformSection
@@ -1087,7 +1087,7 @@ public:
 	struct Unknown Margin; // 0x114 (16)
 	float LineHeightPercentage; // 0x124 (4)
 
-	void SetJustification(char InJustification); // Function UMG.TextLayoutWidget.SetJustification(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B569C0>
+	void SetJustification(char InJustification); // Function UMG.TextLayoutWidget.SetJustification(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B558A0>
 };
 
 // Class UMG.MultiLineEditableText
@@ -1111,14 +1111,14 @@ public:
 	struct FMulticastInlineDelegate OnTextChanged; // 0x430 (16)
 	struct FMulticastInlineDelegate OnTextCommitted; // 0x440 (16)
 
-	void SetWidgetStyle(struct Unknown& InWidgetStyle); // Function UMG.MultiLineEditableText.SetWidgetStyle(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B46000>
-	void SetText(struct FText InText); // Function UMG.MultiLineEditableText.SetText(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B45C90>
-	void SetIsReadOnly(char bReadOnly); // Function UMG.MultiLineEditableText.SetIsReadOnly(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B45960>
-	void SetHintText(struct FText InHintText); // Function UMG.MultiLineEditableText.SetHintText(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B45720>
-	void OnMultiLineEditableTextCommittedEvent__DelegateSignature(struct FText& Text, char CommitMethod); // DelegateFunction UMG.MultiLineEditableText.OnMultiLineEditableTextCommittedEvent__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <Game_BE.exe+0x2B812B0>
-	void OnMultiLineEditableTextChangedEvent__DelegateSignature(struct FText& Text); // DelegateFunction UMG.MultiLineEditableText.OnMultiLineEditableTextChangedEvent__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <Game_BE.exe+0x2B812B0>
-	struct FText GetText(); // Function UMG.MultiLineEditableText.GetText(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B45180>
-	struct FText GetHintText(); // Function UMG.MultiLineEditableText.GetHintText(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B45000>
+	void SetWidgetStyle(struct Unknown& InWidgetStyle); // Function UMG.MultiLineEditableText.SetWidgetStyle(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B44EF0>
+	void SetText(struct FText InText); // Function UMG.MultiLineEditableText.SetText(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B44B80>
+	void SetIsReadOnly(char bReadOnly); // Function UMG.MultiLineEditableText.SetIsReadOnly(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B44850>
+	void SetHintText(struct FText InHintText); // Function UMG.MultiLineEditableText.SetHintText(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B44610>
+	void OnMultiLineEditableTextCommittedEvent__DelegateSignature(struct FText& Text, char CommitMethod); // DelegateFunction UMG.MultiLineEditableText.OnMultiLineEditableTextCommittedEvent__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <Game_BE.exe+0x2B80160>
+	void OnMultiLineEditableTextChangedEvent__DelegateSignature(struct FText& Text); // DelegateFunction UMG.MultiLineEditableText.OnMultiLineEditableTextChangedEvent__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <Game_BE.exe+0x2B80160>
+	struct FText GetText(); // Function UMG.MultiLineEditableText.GetText(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B44070>
+	struct FText GetHintText(); // Function UMG.MultiLineEditableText.GetHintText(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B43EF0>
 };
 
 // Class UMG.MultiLineEditableTextBox
@@ -1143,15 +1143,15 @@ public:
 	struct FMulticastInlineDelegate OnTextChanged; // 0xC50 (16)
 	struct FMulticastInlineDelegate OnTextCommitted; // 0xC60 (16)
 
-	void SetTextStyle(struct Unknown& InTextStyle); // Function UMG.MultiLineEditableTextBox.SetTextStyle(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B45E50>
-	void SetText(struct FText InText); // Function UMG.MultiLineEditableTextBox.SetText(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B45D70>
-	void SetIsReadOnly(char bReadOnly); // Function UMG.MultiLineEditableTextBox.SetIsReadOnly(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B459F0>
-	void SetHintText(struct FText InHintText); // Function UMG.MultiLineEditableTextBox.SetHintText(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B45800>
-	void SetError(struct FText InError); // Function UMG.MultiLineEditableTextBox.SetError(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B45640>
-	void OnMultiLineEditableTextBoxCommittedEvent__DelegateSignature(struct FText& Text, char CommitMethod); // DelegateFunction UMG.MultiLineEditableTextBox.OnMultiLineEditableTextBoxCommittedEvent__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <Game_BE.exe+0x2B812B0>
-	void OnMultiLineEditableTextBoxChangedEvent__DelegateSignature(struct FText& Text); // DelegateFunction UMG.MultiLineEditableTextBox.OnMultiLineEditableTextBoxChangedEvent__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <Game_BE.exe+0x2B812B0>
-	struct FText GetText(); // Function UMG.MultiLineEditableTextBox.GetText(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B45220>
-	struct FText GetHintText(); // Function UMG.MultiLineEditableTextBox.GetHintText(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B450A0>
+	void SetTextStyle(struct Unknown& InTextStyle); // Function UMG.MultiLineEditableTextBox.SetTextStyle(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B44D40>
+	void SetText(struct FText InText); // Function UMG.MultiLineEditableTextBox.SetText(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B44C60>
+	void SetIsReadOnly(char bReadOnly); // Function UMG.MultiLineEditableTextBox.SetIsReadOnly(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B448E0>
+	void SetHintText(struct FText InHintText); // Function UMG.MultiLineEditableTextBox.SetHintText(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B446F0>
+	void SetError(struct FText InError); // Function UMG.MultiLineEditableTextBox.SetError(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B44530>
+	void OnMultiLineEditableTextBoxCommittedEvent__DelegateSignature(struct FText& Text, char CommitMethod); // DelegateFunction UMG.MultiLineEditableTextBox.OnMultiLineEditableTextBoxCommittedEvent__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <Game_BE.exe+0x2B80160>
+	void OnMultiLineEditableTextBoxChangedEvent__DelegateSignature(struct FText& Text); // DelegateFunction UMG.MultiLineEditableTextBox.OnMultiLineEditableTextBoxChangedEvent__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <Game_BE.exe+0x2B80160>
+	struct FText GetText(); // Function UMG.MultiLineEditableTextBox.GetText(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B44110>
+	struct FText GetHintText(); // Function UMG.MultiLineEditableTextBox.GetHintText(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B43F90>
 };
 
 // Class UMG.OverlaySlot
@@ -1163,9 +1163,9 @@ public:
 	char HorizontalAlignment; // 0x50 (1)
 	char VerticalAlignment; // 0x51 (1)
 
-	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.OverlaySlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B45F00>
-	void SetPadding(struct Unknown InPadding); // Function UMG.OverlaySlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B45A80>
-	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.OverlaySlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B458E0>
+	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.OverlaySlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B44DF0>
+	void SetPadding(struct Unknown InPadding); // Function UMG.OverlaySlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B44970>
+	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.OverlaySlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B447D0>
 };
 
 // Class UMG.ProgressBar
@@ -1186,9 +1186,9 @@ public:
 	struct Unknown FillColorAndOpacity; // 0x2E8 (16)
 	struct FDelegate FillColorAndOpacityDelegate; // 0x2F8 (16)
 
-	void SetPercent(float InPercent); // Function UMG.ProgressBar.SetPercent(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B49D90>
-	void SetIsMarquee(char InbIsMarquee); // Function UMG.ProgressBar.SetIsMarquee(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B497E0>
-	void SetFillColorAndOpacity(struct Unknown InColor); // Function UMG.ProgressBar.SetFillColorAndOpacity(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B495D0>
+	void SetPercent(float InPercent); // Function UMG.ProgressBar.SetPercent(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B48C70>
+	void SetIsMarquee(char InbIsMarquee); // Function UMG.ProgressBar.SetIsMarquee(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B486C0>
+	void SetFillColorAndOpacity(struct Unknown InColor); // Function UMG.ProgressBar.SetFillColorAndOpacity(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B484B0>
 };
 
 // Class UMG.RetainerBox
@@ -1203,11 +1203,11 @@ public:
 	struct Unknown EffectMaterial; // 0x130 (8)
 	struct FName TextureParameter; // 0x138 (8)
 
-	void SetTextureParameter(struct FName TextureParameter); // Function UMG.RetainerBox.SetTextureParameter(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4A590>
-	void SetRenderingPhase(int32_t RenderPhase, int32_t TotalPhases); // Function UMG.RetainerBox.SetRenderingPhase(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B49E10>
-	void SetEffectMaterial(struct Unknown EffectMaterial); // Function UMG.RetainerBox.SetEffectMaterial(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B49550>
-	void RequestRender(); // Function UMG.RetainerBox.RequestRender(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B48BB0>
-	struct Unknown GetEffectMaterial(); // Function UMG.RetainerBox.GetEffectMaterial(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B48A50>
+	void SetTextureParameter(struct FName TextureParameter); // Function UMG.RetainerBox.SetTextureParameter(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B49470>
+	void SetRenderingPhase(int32_t RenderPhase, int32_t TotalPhases); // Function UMG.RetainerBox.SetRenderingPhase(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B48CF0>
+	void SetEffectMaterial(struct Unknown EffectMaterial); // Function UMG.RetainerBox.SetEffectMaterial(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B48430>
+	void RequestRender(); // Function UMG.RetainerBox.RequestRender(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B47A90>
+	struct Unknown GetEffectMaterial(); // Function UMG.RetainerBox.GetEffectMaterial(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B47930>
 };
 
 // Class UMG.RichTextBlock
@@ -1223,19 +1223,19 @@ public:
 	float MinDesiredWidth; // 0x3C8 (4)
 	struct TArray<Unknown> InstanceDecorators; // 0x638 (16)
 
-	void SetTextStyleSet(struct Unknown NewTextStyleSet); // Function UMG.RichTextBlock.SetTextStyleSet(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4A510>
-	void SetText(struct FText& InText); // Function UMG.RichTextBlock.SetText(Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B4A430>
-	void SetMinDesiredWidth(float InMinDesiredWidth); // Function UMG.RichTextBlock.SetMinDesiredWidth(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B49AF0>
-	void SetDefaultTextStyle(struct Unknown& InDefaultTextStyle); // Function UMG.RichTextBlock.SetDefaultTextStyle(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B494A0>
-	void SetDefaultStrikeBrush(struct Unknown& InStrikeBrush); // Function UMG.RichTextBlock.SetDefaultStrikeBrush(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B49320>
-	void SetDefaultShadowOffset(struct Unknown InShadowOffset); // Function UMG.RichTextBlock.SetDefaultShadowOffset(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B492A0>
-	void SetDefaultShadowColorAndOpacity(struct Unknown InShadowColorAndOpacity); // Function UMG.RichTextBlock.SetDefaultShadowColorAndOpacity(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B49220>
-	void SetDefaultFont(struct Unknown InFontInfo); // Function UMG.RichTextBlock.SetDefaultFont(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B49110>
-	void SetDefaultColorAndOpacity(struct Unknown InColorAndOpacity); // Function UMG.RichTextBlock.SetDefaultColorAndOpacity(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B49020>
-	void SetAutoWrapText(char InAutoTextWrap); // Function UMG.RichTextBlock.SetAutoWrapText(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B48F10>
-	struct FText GetText(); // Function UMG.RichTextBlock.GetText(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B48AE0>
-	struct Unknown GetDecoratorByClass(struct Unknown* DecoratorClass); // Function UMG.RichTextBlock.GetDecoratorByClass(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B489C0>
-	void ClearAllDefaultStyleOverrides(); // Function UMG.RichTextBlock.ClearAllDefaultStyleOverrides(Final|Native|Public) // <Game_BE.exe+0x3B48880>
+	void SetTextStyleSet(struct Unknown NewTextStyleSet); // Function UMG.RichTextBlock.SetTextStyleSet(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B493F0>
+	void SetText(struct FText& InText); // Function UMG.RichTextBlock.SetText(Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B49310>
+	void SetMinDesiredWidth(float InMinDesiredWidth); // Function UMG.RichTextBlock.SetMinDesiredWidth(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B489D0>
+	void SetDefaultTextStyle(struct Unknown& InDefaultTextStyle); // Function UMG.RichTextBlock.SetDefaultTextStyle(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B48380>
+	void SetDefaultStrikeBrush(struct Unknown& InStrikeBrush); // Function UMG.RichTextBlock.SetDefaultStrikeBrush(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B48200>
+	void SetDefaultShadowOffset(struct Unknown InShadowOffset); // Function UMG.RichTextBlock.SetDefaultShadowOffset(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B48180>
+	void SetDefaultShadowColorAndOpacity(struct Unknown InShadowColorAndOpacity); // Function UMG.RichTextBlock.SetDefaultShadowColorAndOpacity(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B48100>
+	void SetDefaultFont(struct Unknown InFontInfo); // Function UMG.RichTextBlock.SetDefaultFont(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B47FF0>
+	void SetDefaultColorAndOpacity(struct Unknown InColorAndOpacity); // Function UMG.RichTextBlock.SetDefaultColorAndOpacity(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B47F00>
+	void SetAutoWrapText(char InAutoTextWrap); // Function UMG.RichTextBlock.SetAutoWrapText(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B47DF0>
+	struct FText GetText(); // Function UMG.RichTextBlock.GetText(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B479C0>
+	struct Unknown GetDecoratorByClass(struct Unknown* DecoratorClass); // Function UMG.RichTextBlock.GetDecoratorByClass(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B478A0>
+	void ClearAllDefaultStyleOverrides(); // Function UMG.RichTextBlock.ClearAllDefaultStyleOverrides(Final|Native|Public) // <Game_BE.exe+0x3B47760>
 };
 
 // Class UMG.RichTextBlockImageDecorator
@@ -1256,7 +1256,7 @@ public:
 	char PadTop : 0; // 0x122 (1)
 	char PadBottom : 0; // 0x123 (1)
 
-	void SetSidesToPad(char InPadLeft, char InPadRight, char InPadTop, char InPadBottom); // Function UMG.SafeZone.SetSidesToPad(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4A100>
+	void SetSidesToPad(char InPadLeft, char InPadRight, char InPadTop, char InPadBottom); // Function UMG.SafeZone.SetSidesToPad(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B48FE0>
 };
 
 // Class UMG.SafeZoneSlot
@@ -1281,10 +1281,10 @@ public:
 	float UserSpecifiedScale; // 0x124 (4)
 	char IgnoreInheritedScale : 0; // 0x128 (1)
 
-	void SetUserSpecifiedScale(float InUserSpecifiedScale); // Function UMG.ScaleBox.SetUserSpecifiedScale(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4A610>
-	void SetStretchDirection(char InStretchDirection); // Function UMG.ScaleBox.SetStretchDirection(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4A3B0>
-	void SetStretch(char InStretch); // Function UMG.ScaleBox.SetStretch(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4A330>
-	void SetIgnoreInheritedScale(char bInIgnoreInheritedScale); // Function UMG.ScaleBox.SetIgnoreInheritedScale(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B49750>
+	void SetUserSpecifiedScale(float InUserSpecifiedScale); // Function UMG.ScaleBox.SetUserSpecifiedScale(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B494F0>
+	void SetStretchDirection(char InStretchDirection); // Function UMG.ScaleBox.SetStretchDirection(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B49290>
+	void SetStretch(char InStretch); // Function UMG.ScaleBox.SetStretch(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B49210>
+	void SetIgnoreInheritedScale(char bInIgnoreInheritedScale); // Function UMG.ScaleBox.SetIgnoreInheritedScale(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B48630>
 };
 
 // Class UMG.ScaleBoxSlot
@@ -1296,9 +1296,9 @@ public:
 	char HorizontalAlignment; // 0x48 (1)
 	char VerticalAlignment; // 0x49 (1)
 
-	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.ScaleBoxSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B38B10>
-	void SetPadding(struct Unknown InPadding); // Function UMG.ScaleBoxSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B49C70>
-	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.ScaleBoxSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B37EA0>
+	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.ScaleBoxSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B379D0>
+	void SetPadding(struct Unknown InPadding); // Function UMG.ScaleBoxSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B48B50>
+	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.ScaleBoxSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B36D60>
 };
 
 // Class UMG.ScrollBar
@@ -1314,7 +1314,7 @@ public:
 	struct Unknown Thickness; // 0x5E4 (8)
 	struct Unknown Padding; // 0x5EC (16)
 
-	void SetState(float InOffsetFraction, float InThumbSizeFraction); // Function UMG.ScrollBar.SetState(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4A270>
+	void SetState(float InOffsetFraction, float InThumbSizeFraction); // Function UMG.ScrollBar.SetState(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B49150>
 };
 
 // Class UMG.ScrollBox
@@ -1342,23 +1342,23 @@ public:
 	float WheelScrollMultiplier; // 0x854 (4)
 	struct FMulticastInlineDelegate OnUserScrolled; // 0x858 (16)
 
-	void SetWheelScrollMultiplier(float NewWheelScrollMultiplier); // Function UMG.ScrollBox.SetWheelScrollMultiplier(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4A710>
-	void SetScrollOffset(float NewScrollOffset); // Function UMG.ScrollBox.SetScrollOffset(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B49F50>
-	void SetScrollbarVisibility(enum class Unknow NewScrollBarVisibility); // Function UMG.ScrollBox.SetScrollbarVisibility(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B49ED0>
-	void SetScrollbarThickness(struct Unknown& NewScrollbarThickness); // Function UMG.ScrollBox.SetScrollbarThickness(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B4A070>
-	void SetScrollbarPadding(struct Unknown& NewScrollbarPadding); // Function UMG.ScrollBox.SetScrollbarPadding(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B49FD0>
-	void SetOrientation(char NewOrientation); // Function UMG.ScrollBox.SetOrientation(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B49BF0>
-	void SetConsumeMouseWheel(enum class Unknow NewConsumeMouseWheel); // Function UMG.ScrollBox.SetConsumeMouseWheel(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B48FA0>
-	void SetAnimateWheelScrolling(char bShouldAnimateWheelScrolling); // Function UMG.ScrollBox.SetAnimateWheelScrolling(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B48E80>
-	void SetAlwaysShowScrollbar(char NewAlwaysShowScrollbar); // Function UMG.ScrollBox.SetAlwaysShowScrollbar(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B48DF0>
-	void SetAllowOverscroll(char NewAllowOverscroll); // Function UMG.ScrollBox.SetAllowOverscroll(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B48D60>
-	void ScrollWidgetIntoView(struct Unknown WidgetToFind, char AnimateScroll, enum class Unknow ScrollDestination, float Padding); // Function UMG.ScrollBox.ScrollWidgetIntoView(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B48C10>
-	void ScrollToStart(); // Function UMG.ScrollBox.ScrollToStart(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B48BF0>
-	void ScrollToEnd(); // Function UMG.ScrollBox.ScrollToEnd(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B48BD0>
-	float GetViewOffsetFraction(); // Function UMG.ScrollBox.GetViewOffsetFraction(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B48B80>
-	float GetScrollOffsetOfEnd(); // Function UMG.ScrollBox.GetScrollOffsetOfEnd(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B48AB0>
-	float GetScrollOffset(); // Function UMG.ScrollBox.GetScrollOffset(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B48A80>
-	void EndInertialScrolling(); // Function UMG.ScrollBox.EndInertialScrolling(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B489A0>
+	void SetWheelScrollMultiplier(float NewWheelScrollMultiplier); // Function UMG.ScrollBox.SetWheelScrollMultiplier(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B495F0>
+	void SetScrollOffset(float NewScrollOffset); // Function UMG.ScrollBox.SetScrollOffset(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B48E30>
+	void SetScrollbarVisibility(enum class Unknow NewScrollBarVisibility); // Function UMG.ScrollBox.SetScrollbarVisibility(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B48DB0>
+	void SetScrollbarThickness(struct Unknown& NewScrollbarThickness); // Function UMG.ScrollBox.SetScrollbarThickness(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B48F50>
+	void SetScrollbarPadding(struct Unknown& NewScrollbarPadding); // Function UMG.ScrollBox.SetScrollbarPadding(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B48EB0>
+	void SetOrientation(char NewOrientation); // Function UMG.ScrollBox.SetOrientation(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B48AD0>
+	void SetConsumeMouseWheel(enum class Unknow NewConsumeMouseWheel); // Function UMG.ScrollBox.SetConsumeMouseWheel(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B47E80>
+	void SetAnimateWheelScrolling(char bShouldAnimateWheelScrolling); // Function UMG.ScrollBox.SetAnimateWheelScrolling(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B47D60>
+	void SetAlwaysShowScrollbar(char NewAlwaysShowScrollbar); // Function UMG.ScrollBox.SetAlwaysShowScrollbar(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B47CD0>
+	void SetAllowOverscroll(char NewAllowOverscroll); // Function UMG.ScrollBox.SetAllowOverscroll(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B47C40>
+	void ScrollWidgetIntoView(struct Unknown WidgetToFind, char AnimateScroll, enum class Unknow ScrollDestination, float Padding); // Function UMG.ScrollBox.ScrollWidgetIntoView(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B47AF0>
+	void ScrollToStart(); // Function UMG.ScrollBox.ScrollToStart(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B47AD0>
+	void ScrollToEnd(); // Function UMG.ScrollBox.ScrollToEnd(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B47AB0>
+	float GetViewOffsetFraction(); // Function UMG.ScrollBox.GetViewOffsetFraction(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B47A60>
+	float GetScrollOffsetOfEnd(); // Function UMG.ScrollBox.GetScrollOffsetOfEnd(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B47990>
+	float GetScrollOffset(); // Function UMG.ScrollBox.GetScrollOffset(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B47960>
+	void EndInertialScrolling(); // Function UMG.ScrollBox.EndInertialScrolling(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B47880>
 };
 
 // Class UMG.ScrollBoxSlot
@@ -1370,9 +1370,9 @@ public:
 	char HorizontalAlignment; // 0x48 (1)
 	char VerticalAlignment; // 0x49 (1)
 
-	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.ScrollBoxSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4A690>
-	void SetPadding(struct Unknown InPadding); // Function UMG.ScrollBoxSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B49D00>
-	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.ScrollBoxSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B496D0>
+	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.ScrollBoxSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B49570>
+	void SetPadding(struct Unknown InPadding); // Function UMG.ScrollBoxSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B48BE0>
+	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.ScrollBoxSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B485B0>
 };
 
 // Class UMG.SizeBox
@@ -1397,22 +1397,22 @@ public:
 	char bOverride_MinAspectRatio : 0; // 0x150 (1)
 	char bOverride_MaxAspectRatio : 0; // 0x150 (1)
 
-	void SetWidthOverride(float InWidthOverride); // Function UMG.SizeBox.SetWidthOverride(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4A790>
-	void SetMinDesiredWidth(float InMinDesiredWidth); // Function UMG.SizeBox.SetMinDesiredWidth(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B49B70>
-	void SetMinDesiredHeight(float InMinDesiredHeight); // Function UMG.SizeBox.SetMinDesiredHeight(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B49A70>
-	void SetMinAspectRatio(float InMinAspectRatio); // Function UMG.SizeBox.SetMinAspectRatio(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B499F0>
-	void SetMaxDesiredWidth(float InMaxDesiredWidth); // Function UMG.SizeBox.SetMaxDesiredWidth(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B49970>
-	void SetMaxDesiredHeight(float InMaxDesiredHeight); // Function UMG.SizeBox.SetMaxDesiredHeight(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B498F0>
-	void SetMaxAspectRatio(float InMaxAspectRatio); // Function UMG.SizeBox.SetMaxAspectRatio(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B49870>
-	void SetHeightOverride(float InHeightOverride); // Function UMG.SizeBox.SetHeightOverride(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B49650>
-	void ClearWidthOverride(); // Function UMG.SizeBox.ClearWidthOverride(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B48980>
-	void ClearMinDesiredWidth(); // Function UMG.SizeBox.ClearMinDesiredWidth(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B48960>
-	void ClearMinDesiredHeight(); // Function UMG.SizeBox.ClearMinDesiredHeight(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B48940>
-	void ClearMinAspectRatio(); // Function UMG.SizeBox.ClearMinAspectRatio(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B48920>
-	void ClearMaxDesiredWidth(); // Function UMG.SizeBox.ClearMaxDesiredWidth(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B48900>
-	void ClearMaxDesiredHeight(); // Function UMG.SizeBox.ClearMaxDesiredHeight(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B488E0>
-	void ClearMaxAspectRatio(); // Function UMG.SizeBox.ClearMaxAspectRatio(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B488C0>
-	void ClearHeightOverride(); // Function UMG.SizeBox.ClearHeightOverride(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B488A0>
+	void SetWidthOverride(float InWidthOverride); // Function UMG.SizeBox.SetWidthOverride(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B49670>
+	void SetMinDesiredWidth(float InMinDesiredWidth); // Function UMG.SizeBox.SetMinDesiredWidth(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B48A50>
+	void SetMinDesiredHeight(float InMinDesiredHeight); // Function UMG.SizeBox.SetMinDesiredHeight(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B48950>
+	void SetMinAspectRatio(float InMinAspectRatio); // Function UMG.SizeBox.SetMinAspectRatio(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B488D0>
+	void SetMaxDesiredWidth(float InMaxDesiredWidth); // Function UMG.SizeBox.SetMaxDesiredWidth(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B48850>
+	void SetMaxDesiredHeight(float InMaxDesiredHeight); // Function UMG.SizeBox.SetMaxDesiredHeight(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B487D0>
+	void SetMaxAspectRatio(float InMaxAspectRatio); // Function UMG.SizeBox.SetMaxAspectRatio(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B48750>
+	void SetHeightOverride(float InHeightOverride); // Function UMG.SizeBox.SetHeightOverride(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B48530>
+	void ClearWidthOverride(); // Function UMG.SizeBox.ClearWidthOverride(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B47860>
+	void ClearMinDesiredWidth(); // Function UMG.SizeBox.ClearMinDesiredWidth(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B47840>
+	void ClearMinDesiredHeight(); // Function UMG.SizeBox.ClearMinDesiredHeight(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B47820>
+	void ClearMinAspectRatio(); // Function UMG.SizeBox.ClearMinAspectRatio(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B47800>
+	void ClearMaxDesiredWidth(); // Function UMG.SizeBox.ClearMaxDesiredWidth(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B477E0>
+	void ClearMaxDesiredHeight(); // Function UMG.SizeBox.ClearMaxDesiredHeight(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B477C0>
+	void ClearMaxAspectRatio(); // Function UMG.SizeBox.ClearMaxAspectRatio(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B477A0>
+	void ClearHeightOverride(); // Function UMG.SizeBox.ClearHeightOverride(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B47780>
 };
 
 // Class UMG.SizeBoxSlot
@@ -1424,9 +1424,9 @@ public:
 	char HorizontalAlignment; // 0x58 (1)
 	char VerticalAlignment; // 0x59 (1)
 
-	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.SizeBoxSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4E780>
-	void SetPadding(struct Unknown InPadding); // Function UMG.SizeBoxSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4E3F0>
-	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.SizeBoxSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4DE50>
+	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.SizeBoxSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4D660>
+	void SetPadding(struct Unknown InPadding); // Function UMG.SizeBoxSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4D2D0>
+	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.SizeBoxSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4CD30>
 };
 
 // Class UMG.SlateVectorArtData
@@ -1480,16 +1480,16 @@ public:
 	struct FMulticastInlineDelegate OnControllerCaptureEnd; // 0x4C8 (16)
 	struct FMulticastInlineDelegate OnValueChanged; // 0x4D8 (16)
 
-	void SetValue(float InValue); // Function UMG.Slider.SetValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4E680>
-	void SetStepSize(float InValue); // Function UMG.Slider.SetStepSize(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4E600>
-	void SetSliderHandleColor(struct Unknown InValue); // Function UMG.Slider.SetSliderHandleColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B4E580>
-	void SetSliderBarColor(struct Unknown InValue); // Function UMG.Slider.SetSliderBarColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B4E500>
-	void SetMinValue(float InValue); // Function UMG.Slider.SetMinValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4E2F0>
-	void SetMaxValue(float InValue); // Function UMG.Slider.SetMaxValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4E0F0>
-	void SetLocked(char InValue); // Function UMG.Slider.SetLocked(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4DF60>
-	void SetIndentHandle(char InValue); // Function UMG.Slider.SetIndentHandle(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4DED0>
-	float GetValue(); // Function UMG.Slider.GetValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B4D3F0>
-	float GetNormalizedValue(); // Function UMG.Slider.GetNormalizedValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B4D3C0>
+	void SetValue(float InValue); // Function UMG.Slider.SetValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4D560>
+	void SetStepSize(float InValue); // Function UMG.Slider.SetStepSize(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4D4E0>
+	void SetSliderHandleColor(struct Unknown InValue); // Function UMG.Slider.SetSliderHandleColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B4D460>
+	void SetSliderBarColor(struct Unknown InValue); // Function UMG.Slider.SetSliderBarColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B4D3E0>
+	void SetMinValue(float InValue); // Function UMG.Slider.SetMinValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4D1D0>
+	void SetMaxValue(float InValue); // Function UMG.Slider.SetMaxValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4CFD0>
+	void SetLocked(char InValue); // Function UMG.Slider.SetLocked(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4CE40>
+	void SetIndentHandle(char InValue); // Function UMG.Slider.SetIndentHandle(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4CDB0>
+	float GetValue(); // Function UMG.Slider.GetValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B4C2D0>
+	float GetNormalizedValue(); // Function UMG.Slider.GetNormalizedValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B4C2A0>
 };
 
 // Class UMG.Spacer
@@ -1499,7 +1499,7 @@ public:
 
 	struct Unknown Size; // 0x108 (8)
 
-	void SetSize(struct Unknown InSize); // Function UMG.Spacer.SetSize(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B4E480>
+	void SetSize(struct Unknown InSize); // Function UMG.Spacer.SetSize(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B4D360>
 };
 
 // Class UMG.SpinBox
@@ -1535,32 +1535,32 @@ public:
 	float MinSliderValue; // 0x4FC (4)
 	float MaxSliderValue; // 0x500 (4)
 
-	void SetValue(float NewValue); // Function UMG.SpinBox.SetValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4E700>
-	void SetMinValue(float NewValue); // Function UMG.SpinBox.SetMinValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4E370>
-	void SetMinSliderValue(float NewValue); // Function UMG.SpinBox.SetMinSliderValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4E270>
-	void SetMinFractionalDigits(int32_t NewValue); // Function UMG.SpinBox.SetMinFractionalDigits(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4E1F0>
-	void SetMaxValue(float NewValue); // Function UMG.SpinBox.SetMaxValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4E170>
-	void SetMaxSliderValue(float NewValue); // Function UMG.SpinBox.SetMaxSliderValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4E070>
-	void SetMaxFractionalDigits(int32_t NewValue); // Function UMG.SpinBox.SetMaxFractionalDigits(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4DFF0>
-	void SetForegroundColor(struct Unknown InForegroundColor); // Function UMG.SpinBox.SetForegroundColor(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4DD60>
-	void SetDelta(float NewValue); // Function UMG.SpinBox.SetDelta(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4DCE0>
-	void SetAlwaysUsesDeltaSnap(char bNewValue); // Function UMG.SpinBox.SetAlwaysUsesDeltaSnap(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4DC50>
-	void OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, char CommitMethod); // DelegateFunction UMG.SpinBox.OnSpinBoxValueCommittedEvent__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B812B0>
-	void OnSpinBoxValueChangedEvent__DelegateSignature(float InValue); // DelegateFunction UMG.SpinBox.OnSpinBoxValueChangedEvent__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B812B0>
-	void OnSpinBoxBeginSliderMovement__DelegateSignature(); // DelegateFunction UMG.SpinBox.OnSpinBoxBeginSliderMovement__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B812B0>
-	float GetValue(); // Function UMG.SpinBox.GetValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B4D420>
-	float GetMinValue(); // Function UMG.SpinBox.GetMinValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B4D390>
-	float GetMinSliderValue(); // Function UMG.SpinBox.GetMinSliderValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B4D360>
-	int32_t GetMinFractionalDigits(); // Function UMG.SpinBox.GetMinFractionalDigits(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B4D330>
-	float GetMaxValue(); // Function UMG.SpinBox.GetMaxValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B4D300>
-	float GetMaxSliderValue(); // Function UMG.SpinBox.GetMaxSliderValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B4D2D0>
-	int32_t GetMaxFractionalDigits(); // Function UMG.SpinBox.GetMaxFractionalDigits(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B4D2A0>
-	float GetDelta(); // Function UMG.SpinBox.GetDelta(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B4D0F0>
-	char GetAlwaysUsesDeltaSnap(); // Function UMG.SpinBox.GetAlwaysUsesDeltaSnap(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B4D0C0>
-	void ClearMinValue(); // Function UMG.SpinBox.ClearMinValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4CD30>
-	void ClearMinSliderValue(); // Function UMG.SpinBox.ClearMinSliderValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4CD10>
-	void ClearMaxValue(); // Function UMG.SpinBox.ClearMaxValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4CCF0>
-	void ClearMaxSliderValue(); // Function UMG.SpinBox.ClearMaxSliderValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4CCD0>
+	void SetValue(float NewValue); // Function UMG.SpinBox.SetValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4D5E0>
+	void SetMinValue(float NewValue); // Function UMG.SpinBox.SetMinValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4D250>
+	void SetMinSliderValue(float NewValue); // Function UMG.SpinBox.SetMinSliderValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4D150>
+	void SetMinFractionalDigits(int32_t NewValue); // Function UMG.SpinBox.SetMinFractionalDigits(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4D0D0>
+	void SetMaxValue(float NewValue); // Function UMG.SpinBox.SetMaxValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4D050>
+	void SetMaxSliderValue(float NewValue); // Function UMG.SpinBox.SetMaxSliderValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4CF50>
+	void SetMaxFractionalDigits(int32_t NewValue); // Function UMG.SpinBox.SetMaxFractionalDigits(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4CED0>
+	void SetForegroundColor(struct Unknown InForegroundColor); // Function UMG.SpinBox.SetForegroundColor(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4CC40>
+	void SetDelta(float NewValue); // Function UMG.SpinBox.SetDelta(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4CBC0>
+	void SetAlwaysUsesDeltaSnap(char bNewValue); // Function UMG.SpinBox.SetAlwaysUsesDeltaSnap(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4CB30>
+	void OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, char CommitMethod); // DelegateFunction UMG.SpinBox.OnSpinBoxValueCommittedEvent__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B80160>
+	void OnSpinBoxValueChangedEvent__DelegateSignature(float InValue); // DelegateFunction UMG.SpinBox.OnSpinBoxValueChangedEvent__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B80160>
+	void OnSpinBoxBeginSliderMovement__DelegateSignature(); // DelegateFunction UMG.SpinBox.OnSpinBoxBeginSliderMovement__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B80160>
+	float GetValue(); // Function UMG.SpinBox.GetValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B4C300>
+	float GetMinValue(); // Function UMG.SpinBox.GetMinValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B4C270>
+	float GetMinSliderValue(); // Function UMG.SpinBox.GetMinSliderValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B4C240>
+	int32_t GetMinFractionalDigits(); // Function UMG.SpinBox.GetMinFractionalDigits(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B4C210>
+	float GetMaxValue(); // Function UMG.SpinBox.GetMaxValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B4C1E0>
+	float GetMaxSliderValue(); // Function UMG.SpinBox.GetMaxSliderValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B4C1B0>
+	int32_t GetMaxFractionalDigits(); // Function UMG.SpinBox.GetMaxFractionalDigits(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B4C180>
+	float GetDelta(); // Function UMG.SpinBox.GetDelta(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B4BFD0>
+	char GetAlwaysUsesDeltaSnap(); // Function UMG.SpinBox.GetAlwaysUsesDeltaSnap(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B4BFA0>
+	void ClearMinValue(); // Function UMG.SpinBox.ClearMinValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4BC10>
+	void ClearMinSliderValue(); // Function UMG.SpinBox.ClearMinSliderValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4BBF0>
+	void ClearMaxValue(); // Function UMG.SpinBox.ClearMaxValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4BBD0>
+	void ClearMaxSliderValue(); // Function UMG.SpinBox.ClearMaxSliderValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4BBB0>
 };
 
 // Class UMG.TextBlock
@@ -1582,18 +1582,18 @@ public:
 	char bAutoWrapText : 0; // 0x28D (1)
 	char bSimpleTextMode : 0; // 0x28E (1)
 
-	void SetText(struct FText InText); // Function UMG.TextBlock.SetText(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B574F0>
-	void SetStrikeBrush(struct Unknown InStrikeBrush); // Function UMG.TextBlock.SetStrikeBrush(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B572C0>
-	void SetShadowOffset(struct Unknown InShadowOffset); // Function UMG.TextBlock.SetShadowOffset(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B571B0>
-	void SetShadowColorAndOpacity(struct Unknown InShadowColorAndOpacity); // Function UMG.TextBlock.SetShadowColorAndOpacity(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B57130>
-	void SetOpacity(float InOpacity); // Function UMG.TextBlock.SetOpacity(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B56D90>
-	void SetMinDesiredWidth(float InMinDesiredWidth); // Function UMG.TextBlock.SetMinDesiredWidth(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B56B40>
-	void SetFont(struct Unknown InFontInfo); // Function UMG.TextBlock.SetFont(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B56560>
-	void SetColorAndOpacity(struct Unknown InColorAndOpacity); // Function UMG.TextBlock.SetColorAndOpacity(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B561F0>
-	void SetAutoWrapText(char InAutoTextWrap); // Function UMG.TextBlock.SetAutoWrapText(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B56160>
-	struct FText GetText(); // Function UMG.TextBlock.GetText(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B55100>
-	struct Unknown GetDynamicOutlineMaterial(); // Function UMG.TextBlock.GetDynamicOutlineMaterial(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B54FF0>
-	struct Unknown GetDynamicFontMaterial(); // Function UMG.TextBlock.GetDynamicFontMaterial(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B54FC0>
+	void SetText(struct FText InText); // Function UMG.TextBlock.SetText(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B563D0>
+	void SetStrikeBrush(struct Unknown InStrikeBrush); // Function UMG.TextBlock.SetStrikeBrush(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B561A0>
+	void SetShadowOffset(struct Unknown InShadowOffset); // Function UMG.TextBlock.SetShadowOffset(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B56090>
+	void SetShadowColorAndOpacity(struct Unknown InShadowColorAndOpacity); // Function UMG.TextBlock.SetShadowColorAndOpacity(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B56010>
+	void SetOpacity(float InOpacity); // Function UMG.TextBlock.SetOpacity(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B55C70>
+	void SetMinDesiredWidth(float InMinDesiredWidth); // Function UMG.TextBlock.SetMinDesiredWidth(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B55A20>
+	void SetFont(struct Unknown InFontInfo); // Function UMG.TextBlock.SetFont(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B55440>
+	void SetColorAndOpacity(struct Unknown InColorAndOpacity); // Function UMG.TextBlock.SetColorAndOpacity(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B550D0>
+	void SetAutoWrapText(char InAutoTextWrap); // Function UMG.TextBlock.SetAutoWrapText(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B55040>
+	struct FText GetText(); // Function UMG.TextBlock.GetText(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B53FE0>
+	struct Unknown GetDynamicOutlineMaterial(); // Function UMG.TextBlock.GetDynamicOutlineMaterial(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B53ED0>
+	struct Unknown GetDynamicFontMaterial(); // Function UMG.TextBlock.GetDynamicFontMaterial(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B53EA0>
 };
 
 // Class UMG.Throbber
@@ -1608,10 +1608,10 @@ public:
 	struct Unknown PieceImage; // 0x110 (8)
 	struct Unknown Image; // 0x118 (136)
 
-	void SetNumberOfPieces(int32_t InNumberOfPieces); // Function UMG.Throbber.SetNumberOfPieces(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B56D10>
-	void SetAnimateVertically(char bInAnimateVertically); // Function UMG.Throbber.SetAnimateVertically(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B560D0>
-	void SetAnimateOpacity(char bInAnimateOpacity); // Function UMG.Throbber.SetAnimateOpacity(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B56040>
-	void SetAnimateHorizontally(char bInAnimateHorizontally); // Function UMG.Throbber.SetAnimateHorizontally(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B55FB0>
+	void SetNumberOfPieces(int32_t InNumberOfPieces); // Function UMG.Throbber.SetNumberOfPieces(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B55BF0>
+	void SetAnimateVertically(char bInAnimateVertically); // Function UMG.Throbber.SetAnimateVertically(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B54FB0>
+	void SetAnimateOpacity(char bInAnimateOpacity); // Function UMG.Throbber.SetAnimateOpacity(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B54F20>
+	void SetAnimateHorizontally(char bInAnimateHorizontally); // Function UMG.Throbber.SetAnimateHorizontally(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B54E90>
 };
 
 // Class UMG.TileView
@@ -1624,8 +1624,8 @@ public:
 	enum class Unknow TileAlignment; // 0x370 (1)
 	char bWrapHorizontalNavigation : 0; // 0x371 (1)
 
-	void SetEntryWidth(float NewWidth); // Function UMG.TileView.SetEntryWidth(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B564E0>
-	void SetEntryHeight(float NewHeight); // Function UMG.TileView.SetEntryHeight(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B56460>
+	void SetEntryWidth(float NewWidth); // Function UMG.TileView.SetEntryWidth(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B553C0>
+	void SetEntryHeight(float NewHeight); // Function UMG.TileView.SetEntryHeight(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B55340>
 };
 
 // Class UMG.TreeView
@@ -1636,9 +1636,9 @@ public:
 	struct FDelegate BP_OnGetItemChildren; // 0x378 (16)
 	struct FMulticastInlineDelegate BP_OnItemExpansionChanged; // 0x388 (16)
 
-	void SetItemExpansion(struct Unknown Item, char bExpandItem); // Function UMG.TreeView.SetItemExpansion(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B568F0>
-	void ExpandAll(); // Function UMG.TreeView.ExpandAll(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B54E80>
-	void CollapseAll(); // Function UMG.TreeView.CollapseAll(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B54E60>
+	void SetItemExpansion(struct Unknown Item, char bExpandItem); // Function UMG.TreeView.SetItemExpansion(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B557D0>
+	void ExpandAll(); // Function UMG.TreeView.ExpandAll(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B53D60>
+	void CollapseAll(); // Function UMG.TreeView.CollapseAll(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B53D40>
 };
 
 // Class UMG.UMGSequencePlayer
@@ -1648,8 +1648,8 @@ public:
 
 	struct Unknown Animation; // 0x408 (8)
 
-	void SetUserTag(struct FName InUserTag); // Function UMG.UMGSequencePlayer.SetUserTag(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B575D0>
-	struct FName GetUserTag(); // Function UMG.UMGSequencePlayer.GetUserTag(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B55240>
+	void SetUserTag(struct FName InUserTag); // Function UMG.UMGSequencePlayer.SetUserTag(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B564B0>
+	struct FName GetUserTag(); // Function UMG.UMGSequencePlayer.GetUserTag(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B54120>
 };
 
 // Class UMG.UniformGridPanel
@@ -1661,10 +1661,10 @@ public:
 	float MinDesiredSlotWidth; // 0x130 (4)
 	float MinDesiredSlotHeight; // 0x134 (4)
 
-	void SetSlotPadding(struct Unknown InSlotPadding); // Function UMG.UniformGridPanel.SetSlotPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B57230>
-	void SetMinDesiredSlotWidth(float InMinDesiredSlotWidth); // Function UMG.UniformGridPanel.SetMinDesiredSlotWidth(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B56AC0>
-	void SetMinDesiredSlotHeight(float InMinDesiredSlotHeight); // Function UMG.UniformGridPanel.SetMinDesiredSlotHeight(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B56A40>
-	struct Unknown AddChildToUniformGrid(struct Unknown Content, int32_t InRow, int32_t InColumn); // Function UMG.UniformGridPanel.AddChildToUniformGrid(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B54900>
+	void SetSlotPadding(struct Unknown InSlotPadding); // Function UMG.UniformGridPanel.SetSlotPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B56110>
+	void SetMinDesiredSlotWidth(float InMinDesiredSlotWidth); // Function UMG.UniformGridPanel.SetMinDesiredSlotWidth(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B559A0>
+	void SetMinDesiredSlotHeight(float InMinDesiredSlotHeight); // Function UMG.UniformGridPanel.SetMinDesiredSlotHeight(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B55920>
+	struct Unknown AddChildToUniformGrid(struct Unknown Content, int32_t InRow, int32_t InColumn); // Function UMG.UniformGridPanel.AddChildToUniformGrid(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B537E0>
 };
 
 // Class UMG.UniformGridSlot
@@ -1677,10 +1677,10 @@ public:
 	int32_t Row; // 0x3C (4)
 	int32_t Column; // 0x40 (4)
 
-	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.UniformGridSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B57650>
-	void SetRow(int32_t InRow); // Function UMG.UniformGridSlot.SetRow(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B570B0>
-	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.UniformGridSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B56760>
-	void SetColumn(int32_t InColumn); // Function UMG.UniformGridSlot.SetColumn(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B56360>
+	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.UniformGridSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B56530>
+	void SetRow(int32_t InRow); // Function UMG.UniformGridSlot.SetRow(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B55F90>
+	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.UniformGridSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B55640>
+	void SetColumn(int32_t InColumn); // Function UMG.UniformGridSlot.SetColumn(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B55240>
 };
 
 // Class UMG.VerticalBoxSlot
@@ -1693,10 +1693,10 @@ public:
 	char HorizontalAlignment; // 0x58 (1)
 	char VerticalAlignment; // 0x59 (1)
 
-	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.VerticalBoxSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B5AC70>
-	void SetSize(struct Unknown InSize); // Function UMG.VerticalBoxSlot.SetSize(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B5AA10>
-	void SetPadding(struct Unknown InPadding); // Function UMG.VerticalBoxSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B5A5A0>
-	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.VerticalBoxSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B5A020>
+	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.VerticalBoxSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B59B50>
+	void SetSize(struct Unknown InSize); // Function UMG.VerticalBoxSlot.SetSize(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B598F0>
+	void SetPadding(struct Unknown InPadding); // Function UMG.VerticalBoxSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B59480>
+	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.VerticalBoxSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B58F00>
 };
 
 // Class UMG.Viewport
@@ -1706,12 +1706,12 @@ public:
 
 	struct Unknown BackgroundColor; // 0x120 (16)
 
-	struct Unknown Spawn(struct Unknown* ActorClass); // Function UMG.Viewport.Spawn(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B5AE90>
-	void SetViewRotation(struct Unknown Rotation); // Function UMG.Viewport.SetViewRotation(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B5AD80>
-	void SetViewLocation(struct Unknown Location); // Function UMG.Viewport.SetViewLocation(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B5ACF0>
-	struct Unknown GetViewRotation(); // Function UMG.Viewport.GetViewRotation(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B59A70>
-	struct Unknown GetViewportWorld(); // Function UMG.Viewport.GetViewportWorld(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B59AB0>
-	struct Unknown GetViewLocation(); // Function UMG.Viewport.GetViewLocation(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B59A30>
+	struct Unknown Spawn(struct Unknown* ActorClass); // Function UMG.Viewport.Spawn(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B59D70>
+	void SetViewRotation(struct Unknown Rotation); // Function UMG.Viewport.SetViewRotation(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B59C60>
+	void SetViewLocation(struct Unknown Location); // Function UMG.Viewport.SetViewLocation(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B59BD0>
+	struct Unknown GetViewRotation(); // Function UMG.Viewport.GetViewRotation(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B58950>
+	struct Unknown GetViewportWorld(); // Function UMG.Viewport.GetViewportWorld(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B58990>
+	struct Unknown GetViewLocation(); // Function UMG.Viewport.GetViewLocation(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B58910>
 };
 
 // Class UMG.WidgetAnimation
@@ -1724,14 +1724,14 @@ public:
 	char bLegacyFinishOnStop : 0; // 0x360 (1)
 	struct FString DisplayLabel; // 0x368 (16)
 
-	void UnbindFromAnimationStarted(struct Unknown Widget, struct FDelegate Delegate); // Function UMG.WidgetAnimation.UnbindFromAnimationStarted(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B61400>
-	void UnbindFromAnimationFinished(struct Unknown Widget, struct FDelegate Delegate); // Function UMG.WidgetAnimation.UnbindFromAnimationFinished(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B61320>
-	void UnbindAllFromAnimationStarted(struct Unknown Widget); // Function UMG.WidgetAnimation.UnbindAllFromAnimationStarted(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B612A0>
-	void UnbindAllFromAnimationFinished(struct Unknown Widget); // Function UMG.WidgetAnimation.UnbindAllFromAnimationFinished(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B61220>
-	float GetStartTime(); // Function UMG.WidgetAnimation.GetStartTime(Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B5FCE0>
-	float GetEndTime(); // Function UMG.WidgetAnimation.GetEndTime(Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B5F490>
-	void BindToAnimationStarted(struct Unknown Widget, struct FDelegate Delegate); // Function UMG.WidgetAnimation.BindToAnimationStarted(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B5D250>
-	void BindToAnimationFinished(struct Unknown Widget, struct FDelegate Delegate); // Function UMG.WidgetAnimation.BindToAnimationFinished(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B5D170>
+	void UnbindFromAnimationStarted(struct Unknown Widget, struct FDelegate Delegate); // Function UMG.WidgetAnimation.UnbindFromAnimationStarted(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B602E0>
+	void UnbindFromAnimationFinished(struct Unknown Widget, struct FDelegate Delegate); // Function UMG.WidgetAnimation.UnbindFromAnimationFinished(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B60200>
+	void UnbindAllFromAnimationStarted(struct Unknown Widget); // Function UMG.WidgetAnimation.UnbindAllFromAnimationStarted(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B60180>
+	void UnbindAllFromAnimationFinished(struct Unknown Widget); // Function UMG.WidgetAnimation.UnbindAllFromAnimationFinished(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B60100>
+	float GetStartTime(); // Function UMG.WidgetAnimation.GetStartTime(Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B5EBC0>
+	float GetEndTime(); // Function UMG.WidgetAnimation.GetEndTime(Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B5E370>
+	void BindToAnimationStarted(struct Unknown Widget, struct FDelegate Delegate); // Function UMG.WidgetAnimation.BindToAnimationStarted(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B5C130>
+	void BindToAnimationFinished(struct Unknown Widget, struct FDelegate Delegate); // Function UMG.WidgetAnimation.BindToAnimationFinished(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B5C050>
 };
 
 // Class UMG.WidgetAnimationDelegateBinding
@@ -1749,8 +1749,8 @@ public:
 
 	struct FMulticastInlineDelegate Finished; // 0x28 (16)
 
-	struct Unknown CreatePlayAnimationTimeRangeProxyObject(struct Unknown& Result, struct Unknown Widget, struct Unknown InAnimation, float StartAtTime, float EndAtTime, int32_t NumLoopsToPlay, char PlayMode, float PlaybackSpeed); // Function UMG.WidgetAnimationPlayCallbackProxy.CreatePlayAnimationTimeRangeProxyObject(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B5DA90>
-	struct Unknown CreatePlayAnimationProxyObject(struct Unknown& Result, struct Unknown Widget, struct Unknown InAnimation, float StartAtTime, int32_t NumLoopsToPlay, char PlayMode, float PlaybackSpeed); // Function UMG.WidgetAnimationPlayCallbackProxy.CreatePlayAnimationProxyObject(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B5D890>
+	struct Unknown CreatePlayAnimationTimeRangeProxyObject(struct Unknown& Result, struct Unknown Widget, struct Unknown InAnimation, float StartAtTime, float EndAtTime, int32_t NumLoopsToPlay, char PlayMode, float PlaybackSpeed); // Function UMG.WidgetAnimationPlayCallbackProxy.CreatePlayAnimationTimeRangeProxyObject(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B5C970>
+	struct Unknown CreatePlayAnimationProxyObject(struct Unknown& Result, struct Unknown Widget, struct Unknown InAnimation, float StartAtTime, int32_t NumLoopsToPlay, char PlayMode, float PlaybackSpeed); // Function UMG.WidgetAnimationPlayCallbackProxy.CreatePlayAnimationProxyObject(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B5C770>
 };
 
 // Class UMG.WidgetBlueprintGeneratedClass
@@ -1815,40 +1815,40 @@ public:
 	enum class Unknow GeometryMode; // 0x5C8 (1)
 	float CylinderArcAngle; // 0x5CC (4)
 
-	void SetWindowVisibility(enum class Unknow InVisibility); // Function UMG.WidgetComponent.SetWindowVisibility(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B65040>
-	void SetWindowFocusable(char bInWindowFocusable); // Function UMG.WidgetComponent.SetWindowFocusable(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B64FB0>
-	void SetWidgetSpace(enum class Unknow NewSpace); // Function UMG.WidgetComponent.SetWidgetSpace(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B64F30>
-	void SetWidget(struct Unknown Widget); // Function UMG.WidgetComponent.SetWidget(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B64EA0>
-	void SetTwoSided(char bWantTwoSided); // Function UMG.WidgetComponent.SetTwoSided(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B64E10>
-	void SetTintColorAndOpacity(struct Unknown NewTintColorAndOpacity); // Function UMG.WidgetComponent.SetTintColorAndOpacity(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B64D90>
-	void SetTickWhenOffscreen(char bWantTickWhenOffscreen); // Function UMG.WidgetComponent.SetTickWhenOffscreen(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B64D10>
-	void SetRedrawTime(float InRedrawTime); // Function UMG.WidgetComponent.SetRedrawTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B64C90>
-	void SetPivot(struct Unknown& InPivot); // Function UMG.WidgetComponent.SetPivot(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B64C00>
-	void SetOwnerPlayer(struct Unknown LocalPlayer); // Function UMG.WidgetComponent.SetOwnerPlayer(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B64B80>
-	void SetManuallyRedraw(char bUseManualRedraw); // Function UMG.WidgetComponent.SetManuallyRedraw(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B64AF0>
-	void SetGeometryMode(enum class Unknow InGeometryMode); // Function UMG.WidgetComponent.SetGeometryMode(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B64A70>
-	void SetDrawSize(struct Unknown Size); // Function UMG.WidgetComponent.SetDrawSize(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B64970>
-	void SetDrawAtDesiredSize(char bInDrawAtDesiredSize); // Function UMG.WidgetComponent.SetDrawAtDesiredSize(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B648F0>
-	void SetCylinderArcAngle(float InCylinderArcAngle); // Function UMG.WidgetComponent.SetCylinderArcAngle(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B64870>
-	void SetBackgroundColor(struct Unknown NewBackgroundColor); // Function UMG.WidgetComponent.SetBackgroundColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B64710>
-	void RequestRedraw(); // Function UMG.WidgetComponent.RequestRedraw(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B64520>
-	enum class Unknow GetWindowVisiblility(); // Function UMG.WidgetComponent.GetWindowVisiblility(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B63C30>
-	char GetWindowFocusable(); // Function UMG.WidgetComponent.GetWindowFocusable(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B63C10>
-	enum class Unknow GetWidgetSpace(); // Function UMG.WidgetComponent.GetWidgetSpace(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B63BF0>
-	struct Unknown GetUserWidgetObject(); // Function UMG.WidgetComponent.GetUserWidgetObject(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B639F0>
-	char GetTwoSided(); // Function UMG.WidgetComponent.GetTwoSided(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B639D0>
-	char GetTickWhenOffscreen(); // Function UMG.WidgetComponent.GetTickWhenOffscreen(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B639B0>
-	struct Unknown GetRenderTarget(); // Function UMG.WidgetComponent.GetRenderTarget(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x2077820>
-	float GetRedrawTime(); // Function UMG.WidgetComponent.GetRedrawTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B63990>
-	struct Unknown GetPivot(); // Function UMG.WidgetComponent.GetPivot(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B638B0>
-	struct Unknown GetOwnerPlayer(); // Function UMG.WidgetComponent.GetOwnerPlayer(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B63880>
-	struct Unknown GetMaterialInstance(); // Function UMG.WidgetComponent.GetMaterialInstance(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B63660>
-	char GetManuallyRedraw(); // Function UMG.WidgetComponent.GetManuallyRedraw(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B63640>
-	enum class Unknow GetGeometryMode(); // Function UMG.WidgetComponent.GetGeometryMode(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B63570>
-	struct Unknown GetDrawSize(); // Function UMG.WidgetComponent.GetDrawSize(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B63530>
-	char GetDrawAtDesiredSize(); // Function UMG.WidgetComponent.GetDrawAtDesiredSize(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B63510>
-	float GetCylinderArcAngle(); // Function UMG.WidgetComponent.GetCylinderArcAngle(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B634F0>
-	struct Unknown GetCurrentDrawSize(); // Function UMG.WidgetComponent.GetCurrentDrawSize(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B634B0>
+	void SetWindowVisibility(enum class Unknow InVisibility); // Function UMG.WidgetComponent.SetWindowVisibility(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B63F00>
+	void SetWindowFocusable(char bInWindowFocusable); // Function UMG.WidgetComponent.SetWindowFocusable(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B63E70>
+	void SetWidgetSpace(enum class Unknow NewSpace); // Function UMG.WidgetComponent.SetWidgetSpace(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B63DF0>
+	void SetWidget(struct Unknown Widget); // Function UMG.WidgetComponent.SetWidget(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B63D60>
+	void SetTwoSided(char bWantTwoSided); // Function UMG.WidgetComponent.SetTwoSided(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B63CD0>
+	void SetTintColorAndOpacity(struct Unknown NewTintColorAndOpacity); // Function UMG.WidgetComponent.SetTintColorAndOpacity(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B63C50>
+	void SetTickWhenOffscreen(char bWantTickWhenOffscreen); // Function UMG.WidgetComponent.SetTickWhenOffscreen(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B63BD0>
+	void SetRedrawTime(float InRedrawTime); // Function UMG.WidgetComponent.SetRedrawTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B63B50>
+	void SetPivot(struct Unknown& InPivot); // Function UMG.WidgetComponent.SetPivot(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B63AC0>
+	void SetOwnerPlayer(struct Unknown LocalPlayer); // Function UMG.WidgetComponent.SetOwnerPlayer(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B63A40>
+	void SetManuallyRedraw(char bUseManualRedraw); // Function UMG.WidgetComponent.SetManuallyRedraw(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B639B0>
+	void SetGeometryMode(enum class Unknow InGeometryMode); // Function UMG.WidgetComponent.SetGeometryMode(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B63930>
+	void SetDrawSize(struct Unknown Size); // Function UMG.WidgetComponent.SetDrawSize(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B63830>
+	void SetDrawAtDesiredSize(char bInDrawAtDesiredSize); // Function UMG.WidgetComponent.SetDrawAtDesiredSize(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B637B0>
+	void SetCylinderArcAngle(float InCylinderArcAngle); // Function UMG.WidgetComponent.SetCylinderArcAngle(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B63730>
+	void SetBackgroundColor(struct Unknown NewBackgroundColor); // Function UMG.WidgetComponent.SetBackgroundColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B635D0>
+	void RequestRedraw(); // Function UMG.WidgetComponent.RequestRedraw(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B633E0>
+	enum class Unknow GetWindowVisiblility(); // Function UMG.WidgetComponent.GetWindowVisiblility(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62AF0>
+	char GetWindowFocusable(); // Function UMG.WidgetComponent.GetWindowFocusable(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62AD0>
+	enum class Unknow GetWidgetSpace(); // Function UMG.WidgetComponent.GetWidgetSpace(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62AB0>
+	struct Unknown GetUserWidgetObject(); // Function UMG.WidgetComponent.GetUserWidgetObject(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B628B0>
+	char GetTwoSided(); // Function UMG.WidgetComponent.GetTwoSided(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62890>
+	char GetTickWhenOffscreen(); // Function UMG.WidgetComponent.GetTickWhenOffscreen(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62870>
+	struct Unknown GetRenderTarget(); // Function UMG.WidgetComponent.GetRenderTarget(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x20778E0>
+	float GetRedrawTime(); // Function UMG.WidgetComponent.GetRedrawTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62850>
+	struct Unknown GetPivot(); // Function UMG.WidgetComponent.GetPivot(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62770>
+	struct Unknown GetOwnerPlayer(); // Function UMG.WidgetComponent.GetOwnerPlayer(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62740>
+	struct Unknown GetMaterialInstance(); // Function UMG.WidgetComponent.GetMaterialInstance(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62520>
+	char GetManuallyRedraw(); // Function UMG.WidgetComponent.GetManuallyRedraw(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62500>
+	enum class Unknow GetGeometryMode(); // Function UMG.WidgetComponent.GetGeometryMode(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62430>
+	struct Unknown GetDrawSize(); // Function UMG.WidgetComponent.GetDrawSize(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B623F0>
+	char GetDrawAtDesiredSize(); // Function UMG.WidgetComponent.GetDrawAtDesiredSize(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x2043430>
+	float GetCylinderArcAngle(); // Function UMG.WidgetComponent.GetCylinderArcAngle(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B623D0>
+	struct Unknown GetCurrentDrawSize(); // Function UMG.WidgetComponent.GetCurrentDrawSize(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62390>
 };
 
 // Class UMG.WidgetInteractionComponent
@@ -1874,21 +1874,21 @@ public:
 	char bIsHoveredWidgetFocusable : 0; // 0x411 (1)
 	char bIsHoveredWidgetHitTestVisible : 0; // 0x412 (1)
 
-	void SetFocus(struct Unknown FocusWidget); // Function UMG.WidgetInteractionComponent.SetFocus(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B649F0>
-	void SetCustomHitResult(struct Unknown& HitResult); // Function UMG.WidgetInteractionComponent.SetCustomHitResult(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B64790>
-	char SendKeyChar(struct FString Characters, char bRepeat); // Function UMG.WidgetInteractionComponent.SendKeyChar(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B645C0>
-	void ScrollWheel(float ScrollDelta); // Function UMG.WidgetInteractionComponent.ScrollWheel(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B64540>
-	void ReleasePointerKey(struct Unknown Key); // Function UMG.WidgetInteractionComponent.ReleasePointerKey(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B643C0>
-	char ReleaseKey(struct Unknown Key); // Function UMG.WidgetInteractionComponent.ReleaseKey(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B642C0>
-	void PressPointerKey(struct Unknown Key); // Function UMG.WidgetInteractionComponent.PressPointerKey(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B63F10>
-	char PressKey(struct Unknown Key, char bRepeat); // Function UMG.WidgetInteractionComponent.PressKey(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B63DE0>
-	char PressAndReleaseKey(struct Unknown Key); // Function UMG.WidgetInteractionComponent.PressAndReleaseKey(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B63CE0>
-	char IsOverInteractableWidget(); // Function UMG.WidgetInteractionComponent.IsOverInteractableWidget(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B63CB0>
-	char IsOverHitTestVisibleWidget(); // Function UMG.WidgetInteractionComponent.IsOverHitTestVisibleWidget(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B63C80>
-	char IsOverFocusableWidget(); // Function UMG.WidgetInteractionComponent.IsOverFocusableWidget(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B63C50>
-	struct Unknown GetLastHitResult(); // Function UMG.WidgetInteractionComponent.GetLastHitResult(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B635C0>
-	struct Unknown GetHoveredWidgetComponent(); // Function UMG.WidgetInteractionComponent.GetHoveredWidgetComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B63590>
-	struct Unknown Get2DHitLocation(); // Function UMG.WidgetInteractionComponent.Get2DHitLocation(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B63470>
+	void SetFocus(struct Unknown FocusWidget); // Function UMG.WidgetInteractionComponent.SetFocus(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B638B0>
+	void SetCustomHitResult(struct Unknown& HitResult); // Function UMG.WidgetInteractionComponent.SetCustomHitResult(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B63650>
+	char SendKeyChar(struct FString Characters, char bRepeat); // Function UMG.WidgetInteractionComponent.SendKeyChar(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B63480>
+	void ScrollWheel(float ScrollDelta); // Function UMG.WidgetInteractionComponent.ScrollWheel(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B63400>
+	void ReleasePointerKey(struct Unknown Key); // Function UMG.WidgetInteractionComponent.ReleasePointerKey(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B63280>
+	char ReleaseKey(struct Unknown Key); // Function UMG.WidgetInteractionComponent.ReleaseKey(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B63180>
+	void PressPointerKey(struct Unknown Key); // Function UMG.WidgetInteractionComponent.PressPointerKey(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B62DD0>
+	char PressKey(struct Unknown Key, char bRepeat); // Function UMG.WidgetInteractionComponent.PressKey(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B62CA0>
+	char PressAndReleaseKey(struct Unknown Key); // Function UMG.WidgetInteractionComponent.PressAndReleaseKey(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B62BA0>
+	char IsOverInteractableWidget(); // Function UMG.WidgetInteractionComponent.IsOverInteractableWidget(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62B70>
+	char IsOverHitTestVisibleWidget(); // Function UMG.WidgetInteractionComponent.IsOverHitTestVisibleWidget(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62B40>
+	char IsOverFocusableWidget(); // Function UMG.WidgetInteractionComponent.IsOverFocusableWidget(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62B10>
+	struct Unknown GetLastHitResult(); // Function UMG.WidgetInteractionComponent.GetLastHitResult(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62480>
+	struct Unknown GetHoveredWidgetComponent(); // Function UMG.WidgetInteractionComponent.GetHoveredWidgetComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62450>
+	struct Unknown Get2DHitLocation(); // Function UMG.WidgetInteractionComponent.Get2DHitLocation(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62350>
 };
 
 // Class UMG.WidgetNavigation
@@ -1911,12 +1911,12 @@ public:
 
 	int32_t ActiveWidgetIndex; // 0x120 (4)
 
-	void SetActiveWidgetIndex(int32_t Index); // Function UMG.WidgetSwitcher.SetActiveWidgetIndex(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B66D50>
-	void SetActiveWidget(struct Unknown Widget); // Function UMG.WidgetSwitcher.SetActiveWidget(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3FCF0>
-	struct Unknown GetWidgetAtIndex(int32_t Index); // Function UMG.WidgetSwitcher.GetWidgetAtIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B66CC0>
-	int32_t GetNumWidgets(); // Function UMG.WidgetSwitcher.GetNumWidgets(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B66C90>
-	int32_t GetActiveWidgetIndex(); // Function UMG.WidgetSwitcher.GetActiveWidgetIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B66C60>
-	struct Unknown GetActiveWidget(); // Function UMG.WidgetSwitcher.GetActiveWidget(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B66C30>
+	void SetActiveWidgetIndex(int32_t Index); // Function UMG.WidgetSwitcher.SetActiveWidgetIndex(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B65C10>
+	void SetActiveWidget(struct Unknown Widget); // Function UMG.WidgetSwitcher.SetActiveWidget(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3EBC0>
+	struct Unknown GetWidgetAtIndex(int32_t Index); // Function UMG.WidgetSwitcher.GetWidgetAtIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B65B80>
+	int32_t GetNumWidgets(); // Function UMG.WidgetSwitcher.GetNumWidgets(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B65B50>
+	int32_t GetActiveWidgetIndex(); // Function UMG.WidgetSwitcher.GetActiveWidgetIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B65B20>
+	struct Unknown GetActiveWidget(); // Function UMG.WidgetSwitcher.GetActiveWidget(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B65AF0>
 };
 
 // Class UMG.WidgetSwitcherSlot
@@ -1928,9 +1928,9 @@ public:
 	char HorizontalAlignment; // 0x50 (1)
 	char VerticalAlignment; // 0x51 (1)
 
-	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.WidgetSwitcherSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B673A0>
-	void SetPadding(struct Unknown InPadding); // Function UMG.WidgetSwitcherSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B45A80>
-	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.WidgetSwitcherSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B66EF0>
+	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.WidgetSwitcherSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B66260>
+	void SetPadding(struct Unknown InPadding); // Function UMG.WidgetSwitcherSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B44970>
+	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.WidgetSwitcherSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B65DB0>
 };
 
 // Class UMG.WidgetTree
@@ -1949,9 +1949,9 @@ public:
 	char bWindowButtonsEnabled : 0; // 0x120 (1)
 	char bDoubleClickTogglesFullscreen : 0; // 0x121 (1)
 
-	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.WindowTitleBarArea.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B67420>
-	void SetPadding(struct Unknown InPadding); // Function UMG.WindowTitleBarArea.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B671F0>
-	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.WindowTitleBarArea.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B66F70>
+	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.WindowTitleBarArea.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B662E0>
+	void SetPadding(struct Unknown InPadding); // Function UMG.WindowTitleBarArea.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B660B0>
+	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.WindowTitleBarArea.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B65E30>
 };
 
 // Class UMG.WindowTitleBarAreaSlot
@@ -1963,9 +1963,9 @@ public:
 	char HorizontalAlignment; // 0x48 (1)
 	char VerticalAlignment; // 0x49 (1)
 
-	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.WindowTitleBarAreaSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B674A0>
-	void SetPadding(struct Unknown InPadding); // Function UMG.WindowTitleBarAreaSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B67280>
-	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.WindowTitleBarAreaSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B66FF0>
+	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.WindowTitleBarAreaSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B66360>
+	void SetPadding(struct Unknown InPadding); // Function UMG.WindowTitleBarAreaSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B66140>
+	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.WindowTitleBarAreaSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B65EB0>
 };
 
 // Class UMG.WrapBox
@@ -1978,9 +1978,9 @@ public:
 	char bExplicitWrapWidth : 0; // 0x12C (1)
 	char HorizontalAlignment; // 0x12D (1)
 
-	void SetInnerSlotPadding(struct Unknown InPadding); // Function UMG.WrapBox.SetInnerSlotPadding(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B67170>
-	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.WrapBox.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B67070>
-	struct Unknown AddChildToWrapBox(struct Unknown Content); // Function UMG.WrapBox.AddChildToWrapBox(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B66BA0>
+	void SetInnerSlotPadding(struct Unknown InPadding); // Function UMG.WrapBox.SetInnerSlotPadding(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B66030>
+	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.WrapBox.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B65F30>
+	struct Unknown AddChildToWrapBox(struct Unknown Content); // Function UMG.WrapBox.AddChildToWrapBox(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B65A60>
 };
 
 // Class UMG.WrapBoxSlot
@@ -1994,11 +1994,11 @@ public:
 	char HorizontalAlignment; // 0x50 (1)
 	char VerticalAlignment; // 0x51 (1)
 
-	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.WrapBoxSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B67520>
-	void SetPadding(struct Unknown InPadding); // Function UMG.WrapBoxSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B67310>
-	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.WrapBoxSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B670F0>
-	void SetFillSpanWhenLessThan(float InFillSpanWhenLessThan); // Function UMG.WrapBoxSlot.SetFillSpanWhenLessThan(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B66E70>
-	void SetFillEmptySpace(char InbFillEmptySpace); // Function UMG.WrapBoxSlot.SetFillEmptySpace(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B66DE0>
+	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.WrapBoxSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B663E0>
+	void SetPadding(struct Unknown InPadding); // Function UMG.WrapBoxSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B661D0>
+	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.WrapBoxSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B65FB0>
+	void SetFillSpanWhenLessThan(float InFillSpanWhenLessThan); // Function UMG.WrapBoxSlot.SetFillSpanWhenLessThan(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B65D30>
+	void SetFillEmptySpace(char InbFillEmptySpace); // Function UMG.WrapBoxSlot.SetFillEmptySpace(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B65CA0>
 };
 
 // ScriptStruct UMG.WidgetTransform

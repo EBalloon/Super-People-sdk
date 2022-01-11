@@ -7,8 +7,8 @@ public:
 	struct Unknown SeatIcons; // 0x270 (8)
 	struct Unknown WheelIcons; // 0x278 (8)
 
-	void Setup(struct Unknown VehicleInstance); // Function UW-VehicleSubInfo_Camaro.UW-VehicleSubInfo_Camaro_C.Setup(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-VehicleSubInfo_Camaro(int32_t EntryPoint); // Function UW-VehicleSubInfo_Camaro.UW-VehicleSubInfo_Camaro_C.ExecuteUbergraph_UW-VehicleSubInfo_Camaro(Final|UbergraphFunction) // <Game_BE.exe+0x2B812B0>
+	void Setup(struct Unknown VehicleInstance); // Function UW-VehicleSubInfo_Camaro.UW-VehicleSubInfo_Camaro_C.Setup(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-VehicleSubInfo_Camaro(int32_t EntryPoint); // Function UW-VehicleSubInfo_Camaro.UW-VehicleSubInfo_Camaro_C.ExecuteUbergraph_UW-VehicleSubInfo_Camaro(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-VehicleSubInfo_Camaro.UW-VehicleSubInfo_Camaro_C.Setup

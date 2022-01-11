@@ -157,15 +157,15 @@ public:
 	float PrevMeshRotationYaw; // 0xAC34 (4)
 	float BoneDrivenValue; // 0xAC38 (4)
 
-	void AnimGraph(struct Unknown& AnimGraph); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void UpdateAnimDynamicsForce(); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.UpdateAnimDynamicsForce(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Get Preview Character Mesh(struct Unknown& Skeletal Mesh Component); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.Get Preview Character Mesh(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
-	void Get Current Preview Weapon(struct Unknown& Current Preview Weapon); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.Get Current Preview Weapon(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
-	void Update References(); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.Update References(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	char Get Is Equipping RPG(); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.Get Is Equipping RPG(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
-	char Get Is Equipping Gatling(); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.Get Is Equipping Gatling(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
-	void BlueprintUpdateAnimation(float DeltaTimeX); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.BlueprintUpdateAnimation(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_ABP-InventoryPawn(int32_t EntryPoint); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.ExecuteUbergraph_ABP-InventoryPawn(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	void AnimGraph(struct Unknown& AnimGraph); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void UpdateAnimDynamicsForce(); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.UpdateAnimDynamicsForce(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Get Preview Character Mesh(struct Unknown& Skeletal Mesh Component); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.Get Preview Character Mesh(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void Get Current Preview Weapon(struct Unknown& Current Preview Weapon); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.Get Current Preview Weapon(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void Update References(); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.Update References(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	char Get Is Equipping RPG(); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.Get Is Equipping RPG(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	char Get Is Equipping Gatling(); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.Get Is Equipping Gatling(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void BlueprintUpdateAnimation(float DeltaTimeX); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.BlueprintUpdateAnimation(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_ABP-InventoryPawn(int32_t EntryPoint); // Function ABP-InventoryPawn.ABP-InventoryPawn_C.ExecuteUbergraph_ABP-InventoryPawn(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function ABP-InventoryPawn.ABP-InventoryPawn_C.AnimGraph

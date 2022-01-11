@@ -8,7 +8,7 @@ public:
 	struct Unknown ColorType1; // 0x258 (40)
 	struct Unknown ColorType2; // 0x280 (40)
 
-	void Init(struct FText Title, int32_t Value); // Function UW-MatchEnd_GoldList.UW-MatchEnd_GoldList_C.Init(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Init(struct FText Title, int32_t Value); // Function UW-MatchEnd_GoldList.UW-MatchEnd_GoldList_C.Init(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-MatchEnd_GoldList.UW-MatchEnd_GoldList_C.Init

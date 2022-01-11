@@ -6,8 +6,8 @@ public:
 	struct Unknown UberGraphFrame; // 0x2A0 (8)
 	struct Unknown VisualBorder; // 0x2A8 (8)
 
-	void Construct(); // Function UW-ReplayEventMarker_Knockout.UW-ReplayEventMarker_Knockout_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-ReplayEventMarker_Knockout(int32_t EntryPoint); // Function UW-ReplayEventMarker_Knockout.UW-ReplayEventMarker_Knockout_C.ExecuteUbergraph_UW-ReplayEventMarker_Knockout(Final|UbergraphFunction) // <Game_BE.exe+0x2B812B0>
+	void Construct(); // Function UW-ReplayEventMarker_Knockout.UW-ReplayEventMarker_Knockout_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-ReplayEventMarker_Knockout(int32_t EntryPoint); // Function UW-ReplayEventMarker_Knockout.UW-ReplayEventMarker_Knockout_C.ExecuteUbergraph_UW-ReplayEventMarker_Knockout(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-ReplayEventMarker_Knockout.UW-ReplayEventMarker_Knockout_C.Construct

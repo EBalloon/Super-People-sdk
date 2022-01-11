@@ -7,10 +7,10 @@ public:
 	struct Unknown Image_51; // 0x250 (8)
 	float InitSize; // 0x258 (4)
 
-	void Construct(); // Function LineWidget.LineWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Set Color(int32_t IconIndex); // Function LineWidget.LineWidget_C.Set Color(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetScale(float Scale); // Function LineWidget.LineWidget_C.SetScale(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_LineWidget(int32_t EntryPoint); // Function LineWidget.LineWidget_C.ExecuteUbergraph_LineWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	void Construct(); // Function LineWidget.LineWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Set Color(int32_t IconIndex); // Function LineWidget.LineWidget_C.Set Color(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetScale(float Scale); // Function LineWidget.LineWidget_C.SetScale(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_LineWidget(int32_t EntryPoint); // Function LineWidget.LineWidget_C.ExecuteUbergraph_LineWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function LineWidget.LineWidget_C.Construct

@@ -55,39 +55,39 @@ public:
 	struct Unknown WeaponInfo; // 0x448 (168)
 	int32_t SlotIndex; // 0x4F0 (4)
 
-	void IsNoDamageWeapon(char& Weapon); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.IsNoDamageWeapon(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
-	void SetFistMode(); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.SetFistMode(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void IsMeleeWeapon(char& bTrue); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.IsMeleeWeapon(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
-	void OnAddBuffs(struct Unknown& AddBuffs); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.OnAddBuffs(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void HiddenAllBuffs(); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.HiddenAllBuffs(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetStar(int32_t Level, struct Unknown Tint, struct Unknown Image); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.SetStar(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetArmorInfo(char HasHelmet, float HelmetGauge, char HasChest, float ChestGauge, char HasBackpack, float BackpackGauge, int32_t HelmetLevel, int32_t ArmorLevel, int32_t BagLevel); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.SetArmorInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void IsPerkWeapon(char& Weapon); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.IsPerkWeapon(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
-	void ChangePawn(); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.ChangePawn(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetBulletCount(struct FString BulletCount, struct FString BulletMaxCount); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.SetBulletCount(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetWeaponFireMode(enum class Unknow FireMode); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.SetWeaponFireMode(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void UpdateDamage(); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.UpdateDamage(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void UpdateTimer(); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.UpdateTimer(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void UpdateInfos(); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.UpdateInfos(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetUpdateTimer(); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.SetUpdateTimer(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetLungRed(char Flag); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.SetLungRed(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnSetStance(char IsFirstPerson, int32_t Stance, char IsHeadbanging); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.OnSetStance(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ResetWeaponInfo(); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.ResetWeaponInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetWeaponInfo(struct Unknown& WeaponInfo); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.SetWeaponInfo(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Init(); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.Init(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnLoaded_97B8B47B466730860C4DE6A59E985E90(struct Unknown Loaded); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.OnLoaded_97B8B47B466730860C4DE6A59E985E90(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void AddBuff(struct Unknown AddBuffs); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.AddBuff(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void StopLastHeadbangingAnim(); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.StopLastHeadbangingAnim(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetStance(char bIsFirstPerson, int32_t Stance, char bIsHeadbanging); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.SetStance(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetBackpackPercent(float Percent); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.SetBackpackPercent(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Set PaperSprite AsycLoad(struct Unknown IconTexture, struct Unknown TargetImage); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.Set PaperSprite AsycLoad(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetRedLungAnim(char bIsRed); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.SetRedLungAnim(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ResetCurrentWeaponInfo(int32_t SlotIndex); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.ResetCurrentWeaponInfo(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetCurrentWeaponInfo(struct Unknown SetWeaponInfo); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.SetCurrentWeaponInfo(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetFireMode(enum class Unknow SetFireMode); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.SetFireMode(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetWeaponBulletCount(int32_t CurrentAmmo, int32_t TotalAmmo); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.SetWeaponBulletCount(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Construct(); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-PlayerInfoWidget_Renew(int32_t EntryPoint); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.ExecuteUbergraph_UW-PlayerInfoWidget_Renew(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	void IsNoDamageWeapon(char& Weapon); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.IsNoDamageWeapon(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void SetFistMode(); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.SetFistMode(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void IsMeleeWeapon(char& bTrue); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.IsMeleeWeapon(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void OnAddBuffs(struct Unknown& AddBuffs); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.OnAddBuffs(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void HiddenAllBuffs(); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.HiddenAllBuffs(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetStar(int32_t Level, struct Unknown Tint, struct Unknown Image); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.SetStar(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetArmorInfo(char HasHelmet, float HelmetGauge, char HasChest, float ChestGauge, char HasBackpack, float BackpackGauge, int32_t HelmetLevel, int32_t ArmorLevel, int32_t BagLevel); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.SetArmorInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void IsPerkWeapon(char& Weapon); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.IsPerkWeapon(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void ChangePawn(); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.ChangePawn(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetBulletCount(struct FString BulletCount, struct FString BulletMaxCount); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.SetBulletCount(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetWeaponFireMode(enum class Unknow FireMode); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.SetWeaponFireMode(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void UpdateDamage(); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.UpdateDamage(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void UpdateTimer(); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.UpdateTimer(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void UpdateInfos(); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.UpdateInfos(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetUpdateTimer(); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.SetUpdateTimer(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetLungRed(char Flag); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.SetLungRed(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnSetStance(char IsFirstPerson, int32_t Stance, char IsHeadbanging); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.OnSetStance(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ResetWeaponInfo(); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.ResetWeaponInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetWeaponInfo(struct Unknown& WeaponInfo); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.SetWeaponInfo(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Init(); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.Init(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_97B8B47B466730860C4DE6A59E985E90(struct Unknown Loaded); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.OnLoaded_97B8B47B466730860C4DE6A59E985E90(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AddBuff(struct Unknown AddBuffs); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.AddBuff(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void StopLastHeadbangingAnim(); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.StopLastHeadbangingAnim(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetStance(char bIsFirstPerson, int32_t Stance, char bIsHeadbanging); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.SetStance(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetBackpackPercent(float Percent); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.SetBackpackPercent(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Set PaperSprite AsycLoad(struct Unknown IconTexture, struct Unknown TargetImage); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.Set PaperSprite AsycLoad(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetRedLungAnim(char bIsRed); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.SetRedLungAnim(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ResetCurrentWeaponInfo(int32_t SlotIndex); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.ResetCurrentWeaponInfo(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetCurrentWeaponInfo(struct Unknown SetWeaponInfo); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.SetCurrentWeaponInfo(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetFireMode(enum class Unknow SetFireMode); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.SetFireMode(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetWeaponBulletCount(int32_t CurrentAmmo, int32_t TotalAmmo); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.SetWeaponBulletCount(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Construct(); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-PlayerInfoWidget_Renew(int32_t EntryPoint); // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.ExecuteUbergraph_UW-PlayerInfoWidget_Renew(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-PlayerInfoWidget_Renew.UW-PlayerInfoWidget_Renew_C.IsNoDamageWeapon

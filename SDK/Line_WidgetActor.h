@@ -3,13 +3,13 @@ class ALine_WidgetActor_C : public UActor {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x300 (8)
-	struct Unknown Widget1; // 0x308 (8)
-	struct Unknown DefaultSceneRoot; // 0x310 (8)
+	struct Unknown UberGraphFrame; // 0x318 (8)
+	struct Unknown Widget1; // 0x320 (8)
+	struct Unknown DefaultSceneRoot; // 0x328 (8)
 
-	void SetLine(char Show, int32_t IconIndex); // Function Line_WidgetActor.Line_WidgetActor_C.SetLine(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetScale(float Scale); // Function Line_WidgetActor.Line_WidgetActor_C.SetScale(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_Line_WidgetActor(int32_t EntryPoint); // Function Line_WidgetActor.Line_WidgetActor_C.ExecuteUbergraph_Line_WidgetActor(Final|UbergraphFunction) // <Game_BE.exe+0x2B812B0>
+	void SetLine(char Show, int32_t IconIndex); // Function Line_WidgetActor.Line_WidgetActor_C.SetLine(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetScale(float Scale); // Function Line_WidgetActor.Line_WidgetActor_C.SetScale(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_Line_WidgetActor(int32_t EntryPoint); // Function Line_WidgetActor.Line_WidgetActor_C.ExecuteUbergraph_Line_WidgetActor(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
 };
 
 // Function Line_WidgetActor.Line_WidgetActor_C.SetLine

@@ -7,8 +7,8 @@ public:
 	struct Unknown SeatIcons; // 0x270 (8)
 	struct Unknown WheelIcons; // 0x278 (8)
 
-	void Setup(struct Unknown VehicleInstance); // Function UW-VehicleSubInfo_Riverine.UW-VehicleSubInfo_Riverine_C.Setup(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-VehicleSubInfo_Riverine(int32_t EntryPoint); // Function UW-VehicleSubInfo_Riverine.UW-VehicleSubInfo_Riverine_C.ExecuteUbergraph_UW-VehicleSubInfo_Riverine(Final|UbergraphFunction) // <Game_BE.exe+0x2B812B0>
+	void Setup(struct Unknown VehicleInstance); // Function UW-VehicleSubInfo_Riverine.UW-VehicleSubInfo_Riverine_C.Setup(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-VehicleSubInfo_Riverine(int32_t EntryPoint); // Function UW-VehicleSubInfo_Riverine.UW-VehicleSubInfo_Riverine_C.ExecuteUbergraph_UW-VehicleSubInfo_Riverine(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-VehicleSubInfo_Riverine.UW-VehicleSubInfo_Riverine_C.Setup

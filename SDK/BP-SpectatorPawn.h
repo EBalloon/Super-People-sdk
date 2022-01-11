@@ -3,16 +3,16 @@ class ABP-SpectatorPawn_C : public ABravoHotelSpectatorPawn {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x3C0 (8)
-	struct Unknown Camera; // 0x3C8 (8)
-	struct Unknown SpringArm; // 0x3D0 (8)
-	char bKillCam : 0; // 0x3D8 (1)
+	struct Unknown UberGraphFrame; // 0x3D8 (8)
+	struct Unknown Camera; // 0x3E0 (8)
+	struct Unknown SpringArm; // 0x3E8 (8)
+	char bKillCam : 0; // 0x3F0 (1)
 
-	void TargetSetting(); // Function BP-SpectatorPawn.BP-SpectatorPawn_C.TargetSetting(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void GetTargetByUID(int32_t UID, struct Unknown& TargetPawn); // Function BP-SpectatorPawn.BP-SpectatorPawn_C.GetTargetByUID(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void KillCamTarget(); // Function BP-SpectatorPawn.BP-SpectatorPawn_C.KillCamTarget(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnSetTarget(); // Function BP-SpectatorPawn.BP-SpectatorPawn_C.OnSetTarget(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_BP-SpectatorPawn(int32_t EntryPoint); // Function BP-SpectatorPawn.BP-SpectatorPawn_C.ExecuteUbergraph_BP-SpectatorPawn(Final|UbergraphFunction) // <Game_BE.exe+0x2B812B0>
+	void TargetSetting(); // Function BP-SpectatorPawn.BP-SpectatorPawn_C.TargetSetting(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetTargetByUID(int32_t UID, struct Unknown& TargetPawn); // Function BP-SpectatorPawn.BP-SpectatorPawn_C.GetTargetByUID(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void KillCamTarget(); // Function BP-SpectatorPawn.BP-SpectatorPawn_C.KillCamTarget(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnSetTarget(); // Function BP-SpectatorPawn.BP-SpectatorPawn_C.OnSetTarget(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_BP-SpectatorPawn(int32_t EntryPoint); // Function BP-SpectatorPawn.BP-SpectatorPawn_C.ExecuteUbergraph_BP-SpectatorPawn(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
 };
 
 // Function BP-SpectatorPawn.BP-SpectatorPawn_C.TargetSetting

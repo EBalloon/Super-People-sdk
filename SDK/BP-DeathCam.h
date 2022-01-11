@@ -3,33 +3,33 @@ class ABP-DeathCam_C : public UActor {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x300 (8)
-	struct Unknown FirstCamera; // 0x308 (8)
-	struct Unknown FirstSpringArm; // 0x310 (8)
-	struct Unknown ThirdCamera; // 0x318 (8)
-	struct Unknown SecondCamera; // 0x320 (8)
-	struct Unknown DefaultSceneRoot; // 0x328 (8)
-	float DeltaSeconds; // 0x330 (4)
-	struct Unknown TargetDeltaLocation; // 0x334 (12)
-	struct Unknown Character; // 0x340 (8)
-	float LowerBoundCameraHeightDelta; // 0x348 (4)
-	char bHeightUpdateFinished : 0; // 0x34C (1)
-	float ThridCameraRotationYawDelta; // 0x350 (4)
-	float ThirdCameraMinHeight; // 0x354 (4)
-	float FirstSpringArmDeltaZ; // 0x358 (4)
+	struct Unknown UberGraphFrame; // 0x318 (8)
+	struct Unknown FirstCamera; // 0x320 (8)
+	struct Unknown FirstSpringArm; // 0x328 (8)
+	struct Unknown ThirdCamera; // 0x330 (8)
+	struct Unknown SecondCamera; // 0x338 (8)
+	struct Unknown DefaultSceneRoot; // 0x340 (8)
+	float DeltaSeconds; // 0x348 (4)
+	struct Unknown TargetDeltaLocation; // 0x34C (12)
+	struct Unknown Character; // 0x358 (8)
+	float LowerBoundCameraHeightDelta; // 0x360 (4)
+	char bHeightUpdateFinished : 0; // 0x364 (1)
+	float ThridCameraRotationYawDelta; // 0x368 (4)
+	float ThirdCameraMinHeight; // 0x36C (4)
+	float FirstSpringArmDeltaZ; // 0x370 (4)
 
-	void CheckThirdCameraLocationRange(); // Function BP-DeathCam.BP-DeathCam_C.CheckThirdCameraLocationRange(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void UpdateActorRotationToPelvis(); // Function BP-DeathCam.BP-DeathCam_C.UpdateActorRotationToPelvis(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void GetActiveCamera(struct Unknown& ActiveCamera); // Function BP-DeathCam.BP-DeathCam_C.GetActiveCamera(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
-	void UpdateLowerBoundCameraHeight(); // Function BP-DeathCam.BP-DeathCam_C.UpdateLowerBoundCameraHeight(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void PreventCameraWallCollision(); // Function BP-DeathCam.BP-DeathCam_C.PreventCameraWallCollision(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void InitReferences(char& bSuccess); // Function BP-DeathCam.BP-DeathCam_C.InitReferences(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void UpdateCameraHeightToHead(); // Function BP-DeathCam.BP-DeathCam_C.UpdateCameraHeightToHead(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void UserConstructionScript(); // Function BP-DeathCam.BP-DeathCam_C.UserConstructionScript(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ReceiveBeginPlay(); // Function BP-DeathCam.BP-DeathCam_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ReceiveTick(float DeltaSeconds); // Function BP-DeathCam.BP-DeathCam_C.ReceiveTick(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void K2_OnEndViewTarget(struct Unknown PC); // Function BP-DeathCam.BP-DeathCam_C.K2_OnEndViewTarget(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_BP-DeathCam(int32_t EntryPoint); // Function BP-DeathCam.BP-DeathCam_C.ExecuteUbergraph_BP-DeathCam(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	void CheckThirdCameraLocationRange(); // Function BP-DeathCam.BP-DeathCam_C.CheckThirdCameraLocationRange(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void UpdateActorRotationToPelvis(); // Function BP-DeathCam.BP-DeathCam_C.UpdateActorRotationToPelvis(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetActiveCamera(struct Unknown& ActiveCamera); // Function BP-DeathCam.BP-DeathCam_C.GetActiveCamera(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void UpdateLowerBoundCameraHeight(); // Function BP-DeathCam.BP-DeathCam_C.UpdateLowerBoundCameraHeight(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void PreventCameraWallCollision(); // Function BP-DeathCam.BP-DeathCam_C.PreventCameraWallCollision(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void InitReferences(char& bSuccess); // Function BP-DeathCam.BP-DeathCam_C.InitReferences(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void UpdateCameraHeightToHead(); // Function BP-DeathCam.BP-DeathCam_C.UpdateCameraHeightToHead(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void UserConstructionScript(); // Function BP-DeathCam.BP-DeathCam_C.UserConstructionScript(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ReceiveBeginPlay(); // Function BP-DeathCam.BP-DeathCam_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ReceiveTick(float DeltaSeconds); // Function BP-DeathCam.BP-DeathCam_C.ReceiveTick(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void K2_OnEndViewTarget(struct Unknown PC); // Function BP-DeathCam.BP-DeathCam_C.K2_OnEndViewTarget(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_BP-DeathCam(int32_t EntryPoint); // Function BP-DeathCam.BP-DeathCam_C.ExecuteUbergraph_BP-DeathCam(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function BP-DeathCam.BP-DeathCam_C.CheckThirdCameraLocationRange

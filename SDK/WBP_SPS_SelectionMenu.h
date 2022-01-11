@@ -67,28 +67,28 @@ public:
 	char IsPingType : 0; // 0x440 (1)
 	char Enable RequestMessage : 0; // 0x441 (1)
 
-	void GetRequestTextFromIndex(int32_t Index, struct Unknown& Text); // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.GetRequestTextFromIndex(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Get Icon from Index(int32_t Index, struct Unknown& Icon); // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.Get Icon from Index(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void MakeSmartpingInfo(); // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.MakeSmartpingInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	struct Unknown OnMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	struct Unknown OnMouseButtonUp(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.OnMouseButtonUp(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetVisibleOverImage(int32_t SelectIndex, enum class Unknow VisibleType); // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.SetVisibleOverImage(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetActiveSelection(int32_t Index); // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.SetActiveSelection(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ClearActiveSelection(); // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.ClearActiveSelection(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void CancelSelection(); // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.CancelSelection(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ConfirmSelection(); // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.ConfirmSelection(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	int32_t CalculateSelectionIndexFromVector(struct Unknown InputVector); // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.CalculateSelectionIndexFromVector(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	struct Unknown OnMouseMove(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.OnMouseMove(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Construct(); // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Destruct(); // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ConstructMenuElements(); // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.ConstructMenuElements(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetSelectedIndex(int32_t SelectedIndex); // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.SetSelectedIndex(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void 鉹@t元_1(int32_t Index, struct Unknown Settings); // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void TogglePingType(char NewIsPingType); // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.TogglePingType(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_WBP_SPS_SelectionMenu(int32_t EntryPoint); // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.ExecuteUbergraph_WBP_SPS_SelectionMenu(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
-	void ClearPing__DelegateSignature(); // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.ClearPing__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Hovered__DelegateSignature(struct Unknown Settings, char IsPingType); // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.Hovered__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Selected__DelegateSignature(struct Unknown Selected, struct FName ID, char IsPingType, int32_t RequestMessageIndex); // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.Selected__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void GetRequestTextFromIndex(int32_t Index, struct Unknown& Text); // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.GetRequestTextFromIndex(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Get Icon from Index(int32_t Index, struct Unknown& Icon); // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.Get Icon from Index(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void MakeSmartpingInfo(); // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.MakeSmartpingInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct Unknown OnMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct Unknown OnMouseButtonUp(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.OnMouseButtonUp(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetVisibleOverImage(int32_t SelectIndex, enum class Unknow VisibleType); // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.SetVisibleOverImage(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetActiveSelection(int32_t Index); // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.SetActiveSelection(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ClearActiveSelection(); // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.ClearActiveSelection(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CancelSelection(); // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.CancelSelection(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ConfirmSelection(); // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.ConfirmSelection(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	int32_t CalculateSelectionIndexFromVector(struct Unknown InputVector); // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.CalculateSelectionIndexFromVector(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct Unknown OnMouseMove(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.OnMouseMove(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Construct(); // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Destruct(); // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ConstructMenuElements(); // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.ConstructMenuElements(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetSelectedIndex(int32_t SelectedIndex); // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.SetSelectedIndex(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void 鉹@t元_1(int32_t Index, struct Unknown Settings); // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void TogglePingType(char NewIsPingType); // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.TogglePingType(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_WBP_SPS_SelectionMenu(int32_t EntryPoint); // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.ExecuteUbergraph_WBP_SPS_SelectionMenu(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void ClearPing__DelegateSignature(); // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.ClearPing__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Hovered__DelegateSignature(struct Unknown Settings, char IsPingType); // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.Hovered__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Selected__DelegateSignature(struct Unknown Selected, struct FName ID, char IsPingType, int32_t RequestMessageIndex); // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.Selected__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 };
 
 // Function WBP_SPS_SelectionMenu.WBP_SPS_SelectionMenu_C.GetRequestTextFromIndex

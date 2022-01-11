@@ -441,13 +441,13 @@ class AAkAcousticPortal : public AVolume {
 
 public:
 
-	enum class Unknow InitialState; // 0x338 (1)
-	float ObstructionRefreshInterval; // 0x33C (4)
-	char ObstructionCollisionChannel; // 0x340 (1)
+	enum class Unknow InitialState; // 0x350 (1)
+	float ObstructionRefreshInterval; // 0x354 (4)
+	char ObstructionCollisionChannel; // 0x358 (1)
 
-	void OpenPortal(); // Function AkAudio.AkAcousticPortal.OpenPortal(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1610440>
-	enum class Unknow GetCurrentState(); // Function AkAudio.AkAcousticPortal.GetCurrentState(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1610010>
-	void ClosePortal(); // Function AkAudio.AkAcousticPortal.ClosePortal(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x160FF00>
+	void OpenPortal(); // Function AkAudio.AkAcousticPortal.OpenPortal(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x160FF60>
+	enum class Unknow GetCurrentState(); // Function AkAudio.AkAcousticPortal.GetCurrentState(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x160FB30>
+	void ClosePortal(); // Function AkAudio.AkAcousticPortal.ClosePortal(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x160FA20>
 };
 
 // Class AkAudio.AkAudioType
@@ -464,13 +464,13 @@ class AAkAmbientSound : public UActor {
 
 public:
 
-	struct Unknown AkAudioEvent; // 0x300 (8)
-	struct Unknown AkComponent; // 0x308 (8)
-	char StopWhenOwnerIsDestroyed : 0; // 0x310 (1)
-	char AutoPost : 0; // 0x311 (1)
+	struct Unknown AkAudioEvent; // 0x318 (8)
+	struct Unknown AkComponent; // 0x320 (8)
+	char StopWhenOwnerIsDestroyed : 0; // 0x328 (1)
+	char AutoPost : 0; // 0x329 (1)
 
-	void StopAmbientSound(); // Function AkAudio.AkAmbientSound.StopAmbientSound(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1611680>
-	void StartAmbientSound(); // Function AkAudio.AkAmbientSound.StartAmbientSound(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1611660>
+	void StopAmbientSound(); // Function AkAudio.AkAmbientSound.StopAmbientSound(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16111A0>
+	void StartAmbientSound(); // Function AkAudio.AkAmbientSound.StartAmbientSound(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1611180>
 };
 
 // Class AkAudio.AkAndroidInitializationSettings
@@ -482,7 +482,7 @@ public:
 	struct Unknown CommunicationSettings; // 0x90 (40)
 	struct Unknown AdvancedSettings; // 0xB8 (64)
 
-	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkAndroidInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <Game_BE.exe+0x16103C0>
+	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkAndroidInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <Game_BE.exe+0x160FEE0>
 };
 
 // Class AkAudio.AkAssetData
@@ -577,10 +577,10 @@ public:
 	float MinimumDuration; // 0xC0 (4)
 	float MaximumDuration; // 0xC4 (4)
 
-	float GetMinimumDuration(); // Function AkAudio.AkAudioEvent.GetMinimumDuration(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x16100D0>
-	float GetMaximumDuration(); // Function AkAudio.AkAudioEvent.GetMaximumDuration(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x16100A0>
-	float GetMaxAttenuationRadius(); // Function AkAudio.AkAudioEvent.GetMaxAttenuationRadius(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1610070>
-	char GetIsInfinite(); // Function AkAudio.AkAudioEvent.GetIsInfinite(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1610040>
+	float GetMinimumDuration(); // Function AkAudio.AkAudioEvent.GetMinimumDuration(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x160FBF0>
+	float GetMaximumDuration(); // Function AkAudio.AkAudioEvent.GetMaximumDuration(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x160FBC0>
+	float GetMaxAttenuationRadius(); // Function AkAudio.AkAudioEvent.GetMaxAttenuationRadius(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x160FB90>
+	char GetIsInfinite(); // Function AkAudio.AkAudioEvent.GetIsInfinite(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x160FB60>
 };
 
 // Class AkAudio.AkGameObject
@@ -592,11 +592,11 @@ public:
 	struct FString EventName; // 0x230 (16)
 	char bAutoRegisterWithWwise : 0; // 0x240 (1)
 
-	void Stop(); // Function AkAudio.AkGameObject.Stop(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16166B0>
-	void PostAssociatedAkEventAsync(struct Unknown WorldContextObject, int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<Unknown>& ExternalSources, struct Unknown LatentInfo, int32_t& PlayingID); // Function AkAudio.AkGameObject.PostAssociatedAkEventAsync(BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1614670>
-	int32_t PostAssociatedAkEvent(int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<Unknown>& ExternalSources); // Function AkAudio.AkGameObject.PostAssociatedAkEvent(BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x16144D0>
-	void PostAkEventAsync(struct Unknown WorldContextObject, struct Unknown AkEvent, int32_t& PlayingID, int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<Unknown>& ExternalSources, struct Unknown LatentInfo); // Function AkAudio.AkGameObject.PostAkEventAsync(BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1613D30>
-	int32_t PostAkEvent(struct Unknown AkEvent, int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<Unknown>& ExternalSources, struct FString in_EventName); // Function AkAudio.AkGameObject.PostAkEvent(BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1613B00>
+	void Stop(); // Function AkAudio.AkGameObject.Stop(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16161D0>
+	void PostAssociatedAkEventAsync(struct Unknown WorldContextObject, int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<Unknown>& ExternalSources, struct Unknown LatentInfo, int32_t& PlayingID); // Function AkAudio.AkGameObject.PostAssociatedAkEventAsync(BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1614190>
+	int32_t PostAssociatedAkEvent(int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<Unknown>& ExternalSources); // Function AkAudio.AkGameObject.PostAssociatedAkEvent(BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1613FF0>
+	void PostAkEventAsync(struct Unknown WorldContextObject, struct Unknown AkEvent, int32_t& PlayingID, int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<Unknown>& ExternalSources, struct Unknown LatentInfo); // Function AkAudio.AkGameObject.PostAkEventAsync(BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1613850>
+	int32_t PostAkEvent(struct Unknown AkEvent, int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<Unknown>& ExternalSources, struct FString in_EventName); // Function AkAudio.AkGameObject.PostAkEvent(BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1613620>
 };
 
 // Class AkAudio.AkComponent
@@ -628,24 +628,24 @@ public:
 	struct TSet<Unknown> Listeners; // 0x390 (80)
 	struct TSet<Unknown> Emitters; // 0x3E0 (80)
 
-	void UseReverbVolumes(char inUseReverbVolumes); // Function AkAudio.AkComponent.UseReverbVolumes(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1611880>
-	void UseEarlyReflections(struct Unknown AuxBus, int32_t Order, float BusSendGain, float MaxPathLength, char SpotReflectors, struct FString AuxBusName); // Function AkAudio.AkComponent.UseEarlyReflections(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16116A0>
-	void SetSwitch(struct Unknown SwitchValue, struct FString SwitchGroup, struct FString SwitchState); // Function AkAudio.AkComponent.SetSwitch(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1611490>
-	void SetStopWhenOwnerDestroyed(char bStopWhenOwnerDestroyed); // Function AkAudio.AkComponent.SetStopWhenOwnerDestroyed(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1611400>
-	void SetRTPCValue(struct Unknown RTPCValue, float Value, int32_t InterpolationTimeMs, struct FString RTPC); // Function AkAudio.AkComponent.SetRTPCValue(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1611250>
-	void SetOutputBusVolume(float BusVolume); // Function AkAudio.AkComponent.SetOutputBusVolume(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16111D0>
-	void SetListeners(struct TArray<Unknown>& Listeners); // Function AkAudio.AkComponent.SetListeners(Final|BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1611120>
-	void SetEarlyReflectionsVolume(float SendVolume); // Function AkAudio.AkComponent.SetEarlyReflectionsVolume(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1611010>
-	void SetEarlyReflectionsAuxBus(struct FString AuxBusName); // Function AkAudio.AkComponent.SetEarlyReflectionsAuxBus(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1610F70>
-	void SetAttenuationScalingFactor(float Value); // Function AkAudio.AkComponent.SetAttenuationScalingFactor(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1610E70>
-	void PostTrigger(struct Unknown TriggerValue, struct FString Trigger); // Function AkAudio.AkComponent.PostTrigger(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1610C00>
-	void PostAssociatedAkEventAndWaitForEndAsync(int32_t& PlayingID, struct TArray<Unknown>& ExternalSources, struct Unknown LatentInfo); // Function AkAudio.AkComponent.PostAssociatedAkEventAndWaitForEndAsync(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1610A30>
-	int32_t PostAssociatedAkEventAndWaitForEnd(struct TArray<Unknown>& ExternalSources, struct Unknown LatentInfo); // Function AkAudio.AkComponent.PostAssociatedAkEventAndWaitForEnd(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x16108D0>
-	int32_t PostAkEventByName(struct FString in_EventName); // Function AkAudio.AkComponent.PostAkEventByName(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1610820>
-	void PostAkEventAndWaitForEndAsync(struct Unknown AkEvent, int32_t& PlayingID, struct TArray<Unknown>& ExternalSources, struct Unknown LatentInfo); // Function AkAudio.AkComponent.PostAkEventAndWaitForEndAsync(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1610650>
-	int32_t PostAkEventAndWaitForEnd(struct Unknown AkEvent, struct FString in_EventName, struct TArray<Unknown>& ExternalSources, struct Unknown LatentInfo); // Function AkAudio.AkComponent.PostAkEventAndWaitForEnd(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1610460>
-	void GetRTPCValue(struct Unknown RTPCValue, enum class Unknow InputValueType, float& Value, enum class Unknow& OutputValueType, struct FString RTPC, int32_t PlayingID); // Function AkAudio.AkComponent.GetRTPCValue(Final|BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1610100>
-	float GetAttenuationRadius(); // Function AkAudio.AkComponent.GetAttenuationRadius(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x160FFB0>
+	void UseReverbVolumes(char inUseReverbVolumes); // Function AkAudio.AkComponent.UseReverbVolumes(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16113A0>
+	void UseEarlyReflections(struct Unknown AuxBus, int32_t Order, float BusSendGain, float MaxPathLength, char SpotReflectors, struct FString AuxBusName); // Function AkAudio.AkComponent.UseEarlyReflections(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16111C0>
+	void SetSwitch(struct Unknown SwitchValue, struct FString SwitchGroup, struct FString SwitchState); // Function AkAudio.AkComponent.SetSwitch(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1610FB0>
+	void SetStopWhenOwnerDestroyed(char bStopWhenOwnerDestroyed); // Function AkAudio.AkComponent.SetStopWhenOwnerDestroyed(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1610F20>
+	void SetRTPCValue(struct Unknown RTPCValue, float Value, int32_t InterpolationTimeMs, struct FString RTPC); // Function AkAudio.AkComponent.SetRTPCValue(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1610D70>
+	void SetOutputBusVolume(float BusVolume); // Function AkAudio.AkComponent.SetOutputBusVolume(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1610CF0>
+	void SetListeners(struct TArray<Unknown>& Listeners); // Function AkAudio.AkComponent.SetListeners(Final|BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1610C40>
+	void SetEarlyReflectionsVolume(float SendVolume); // Function AkAudio.AkComponent.SetEarlyReflectionsVolume(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1610B30>
+	void SetEarlyReflectionsAuxBus(struct FString AuxBusName); // Function AkAudio.AkComponent.SetEarlyReflectionsAuxBus(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1610A90>
+	void SetAttenuationScalingFactor(float Value); // Function AkAudio.AkComponent.SetAttenuationScalingFactor(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1610990>
+	void PostTrigger(struct Unknown TriggerValue, struct FString Trigger); // Function AkAudio.AkComponent.PostTrigger(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1610720>
+	void PostAssociatedAkEventAndWaitForEndAsync(int32_t& PlayingID, struct TArray<Unknown>& ExternalSources, struct Unknown LatentInfo); // Function AkAudio.AkComponent.PostAssociatedAkEventAndWaitForEndAsync(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1610550>
+	int32_t PostAssociatedAkEventAndWaitForEnd(struct TArray<Unknown>& ExternalSources, struct Unknown LatentInfo); // Function AkAudio.AkComponent.PostAssociatedAkEventAndWaitForEnd(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x16103F0>
+	int32_t PostAkEventByName(struct FString in_EventName); // Function AkAudio.AkComponent.PostAkEventByName(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1610340>
+	void PostAkEventAndWaitForEndAsync(struct Unknown AkEvent, int32_t& PlayingID, struct TArray<Unknown>& ExternalSources, struct Unknown LatentInfo); // Function AkAudio.AkComponent.PostAkEventAndWaitForEndAsync(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1610170>
+	int32_t PostAkEventAndWaitForEnd(struct Unknown AkEvent, struct FString in_EventName, struct TArray<Unknown>& ExternalSources, struct Unknown LatentInfo); // Function AkAudio.AkComponent.PostAkEventAndWaitForEnd(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x160FF80>
+	void GetRTPCValue(struct Unknown RTPCValue, enum class Unknow InputValueType, float& Value, enum class Unknow& OutputValueType, struct FString RTPC, int32_t PlayingID); // Function AkAudio.AkComponent.GetRTPCValue(Final|BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x160FC20>
+	float GetAttenuationRadius(); // Function AkAudio.AkComponent.GetAttenuationRadius(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x160FAD0>
 };
 
 // Class AkAudio.AkAuxBus
@@ -672,15 +672,15 @@ public:
 	struct FMulticastInlineDelegate OnItemDropped; // 0xAD0 (16)
 	struct FMulticastInlineDelegate OnPropertyDropped; // 0xAE0 (16)
 
-	void SetIsChecked(char InIsChecked); // Function AkAudio.AkCheckBox.SetIsChecked(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1611090>
-	void SetCheckedState(enum class Unknow InCheckedState); // Function AkAudio.AkCheckBox.SetCheckedState(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1610EF0>
-	void SetAkItemId(struct Unknown& ItemId); // Function AkAudio.AkCheckBox.SetAkItemId(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x1610DD0>
-	void SetAkBoolProperty(struct FString ItemProperty); // Function AkAudio.AkCheckBox.SetAkBoolProperty(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1610D30>
-	char IsPressed(); // Function AkAudio.AkCheckBox.IsPressed(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1610390>
-	char IsChecked(); // Function AkAudio.AkCheckBox.IsChecked(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1610360>
-	enum class Unknow GetCheckedState(); // Function AkAudio.AkCheckBox.GetCheckedState(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x160FFE0>
-	struct FString GetAkProperty(); // Function AkAudio.AkCheckBox.GetAkProperty(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x160FF60>
-	struct Unknown GetAkItemId(); // Function AkAudio.AkCheckBox.GetAkItemId(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x160FF20>
+	void SetIsChecked(char InIsChecked); // Function AkAudio.AkCheckBox.SetIsChecked(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1610BB0>
+	void SetCheckedState(enum class Unknow InCheckedState); // Function AkAudio.AkCheckBox.SetCheckedState(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1610A10>
+	void SetAkItemId(struct Unknown& ItemId); // Function AkAudio.AkCheckBox.SetAkItemId(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x16108F0>
+	void SetAkBoolProperty(struct FString ItemProperty); // Function AkAudio.AkCheckBox.SetAkBoolProperty(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1610850>
+	char IsPressed(); // Function AkAudio.AkCheckBox.IsPressed(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x160FEB0>
+	char IsChecked(); // Function AkAudio.AkCheckBox.IsChecked(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x160FE80>
+	enum class Unknow GetCheckedState(); // Function AkAudio.AkCheckBox.GetCheckedState(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x160FB00>
+	struct FString GetAkProperty(); // Function AkAudio.AkCheckBox.GetAkProperty(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x160FA80>
+	struct Unknown GetAkItemId(); // Function AkAudio.AkCheckBox.GetAkItemId(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x160FA40>
 };
 
 // Class AkAudio.AkFolder
@@ -757,9 +757,9 @@ public:
 	struct Unknown AssociatedRoom; // 0x2A0 (8)
 	struct Unknown GeometryData; // 0x2B8 (80)
 
-	void UpdateGeometry(); // Function AkAudio.AkGeometryComponent.UpdateGeometry(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x161BEC0>
-	void RemoveGeometry(); // Function AkAudio.AkGeometryComponent.RemoveGeometry(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x161BEA0>
-	void ConvertMesh(); // Function AkAudio.AkGeometryComponent.ConvertMesh(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x161B8A0>
+	void UpdateGeometry(); // Function AkAudio.AkGeometryComponent.UpdateGeometry(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x161B9E0>
+	void RemoveGeometry(); // Function AkAudio.AkGeometryComponent.RemoveGeometry(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x161B9C0>
+	void ConvertMesh(); // Function AkAudio.AkGeometryComponent.ConvertMesh(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x161B3C0>
 };
 
 // Class AkAudio.AkGroupValue
@@ -780,7 +780,7 @@ public:
 	struct Unknown CommunicationSettings; // 0x90 (40)
 	struct Unknown AdvancedSettings; // 0xB8 (64)
 
-	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkHololensInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <Game_BE.exe+0x16103C0>
+	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkHololensInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <Game_BE.exe+0x160FEE0>
 };
 
 // Class AkAudio.AkInitBankAssetData
@@ -819,9 +819,9 @@ public:
 	struct FMulticastInlineDelegate OnSelectionChanged; // 0x108 (16)
 	struct FMulticastInlineDelegate OnPropertyDragged; // 0x118 (16)
 
-	void SetSearchText(struct FString newText); // Function AkAudio.AkItemBoolProperties.SetSearchText(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1622AB0>
-	struct FString GetSelectedProperty(); // Function AkAudio.AkItemBoolProperties.GetSelectedProperty(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1622930>
-	struct FString GetSearchText(); // Function AkAudio.AkItemBoolProperties.GetSearchText(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x16228B0>
+	void SetSearchText(struct FString newText); // Function AkAudio.AkItemBoolProperties.SetSearchText(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16225D0>
+	struct FString GetSelectedProperty(); // Function AkAudio.AkItemBoolProperties.GetSelectedProperty(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1622450>
+	struct FString GetSearchText(); // Function AkAudio.AkItemBoolProperties.GetSearchText(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x16223D0>
 };
 
 // Class AkAudio.AkItemProperties
@@ -832,9 +832,9 @@ public:
 	struct FMulticastInlineDelegate OnSelectionChanged; // 0x108 (16)
 	struct FMulticastInlineDelegate OnPropertyDragged; // 0x118 (16)
 
-	void SetSearchText(struct FString newText); // Function AkAudio.AkItemProperties.SetSearchText(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1622AB0>
-	struct FString GetSelectedProperty(); // Function AkAudio.AkItemProperties.GetSelectedProperty(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x16229B0>
-	struct FString GetSearchText(); // Function AkAudio.AkItemProperties.GetSearchText(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x16228B0>
+	void SetSearchText(struct FString newText); // Function AkAudio.AkItemProperties.SetSearchText(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16225D0>
+	struct FString GetSelectedProperty(); // Function AkAudio.AkItemProperties.GetSelectedProperty(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x16224D0>
+	struct FString GetSearchText(); // Function AkAudio.AkItemProperties.GetSearchText(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x16223D0>
 };
 
 // Class AkAudio.AkLateReverbComponent
@@ -860,7 +860,7 @@ public:
 	struct Unknown CommunicationSettings; // 0x90 (40)
 	struct Unknown AdvancedSettings; // 0xB8 (56)
 
-	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkLinuxInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <Game_BE.exe+0x16103C0>
+	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkLinuxInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <Game_BE.exe+0x160FEE0>
 };
 
 // Class AkAudio.AkLuminInitializationSettings
@@ -872,7 +872,7 @@ public:
 	struct Unknown CommunicationSettings; // 0x90 (40)
 	struct Unknown AdvancedSettings; // 0xB8 (56)
 
-	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkLuminInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <Game_BE.exe+0x16103C0>
+	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkLuminInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <Game_BE.exe+0x160FEE0>
 };
 
 // Class AkAudio.AkMacInitializationSettings
@@ -884,7 +884,7 @@ public:
 	struct Unknown CommunicationSettings; // 0x90 (40)
 	struct Unknown AdvancedSettings; // 0xB8 (56)
 
-	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkMacInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <Game_BE.exe+0x16103C0>
+	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkMacInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <Game_BE.exe+0x160FEE0>
 };
 
 // Class AkAudio.AkMediaAssetData
@@ -916,7 +916,7 @@ public:
 	struct Unknown CommunicationSettings; // 0x88 (40)
 	struct Unknown AdvancedSettings; // 0xB0 (64)
 
-	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkPS4InitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <Game_BE.exe+0x1622A30>
+	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkPS4InitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <Game_BE.exe+0x1622550>
 };
 
 // Class AkAudio.AkReverbVolume
@@ -924,13 +924,13 @@ class AAkReverbVolume : public AVolume {
 
 public:
 
-	char bEnabled : 0; // 0x338 (1)
-	struct Unknown AuxBus; // 0x340 (8)
-	struct FString AuxBusName; // 0x348 (16)
-	float SendLevel; // 0x358 (4)
-	float FadeRate; // 0x35C (4)
-	float Priority; // 0x360 (4)
-	struct Unknown LateReverbComponent; // 0x368 (8)
+	char bEnabled : 0; // 0x350 (1)
+	struct Unknown AuxBus; // 0x358 (8)
+	struct FString AuxBusName; // 0x360 (16)
+	float SendLevel; // 0x370 (4)
+	float FadeRate; // 0x374 (4)
+	float Priority; // 0x378 (4)
+	struct Unknown LateReverbComponent; // 0x380 (8)
 };
 
 // Class AkAudio.AkRoomComponent
@@ -1010,17 +1010,17 @@ public:
 	struct FMulticastInlineDelegate OnItemDropped; // 0x4F0 (16)
 	struct FMulticastInlineDelegate OnPropertyDropped; // 0x500 (16)
 
-	void SetValue(float InValue); // Function AkAudio.AkSlider.SetValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1626C80>
-	void SetStepSize(float InValue); // Function AkAudio.AkSlider.SetStepSize(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1626B30>
-	void SetSliderHandleColor(struct Unknown InValue); // Function AkAudio.AkSlider.SetSliderHandleColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x1626AB0>
-	void SetSliderBarColor(struct Unknown InValue); // Function AkAudio.AkSlider.SetSliderBarColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x1626A30>
-	void SetLocked(char InValue); // Function AkAudio.AkSlider.SetLocked(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16269A0>
-	void SetIndentHandle(char InValue); // Function AkAudio.AkSlider.SetIndentHandle(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1626910>
-	void SetAkSliderItemProperty(struct FString ItemProperty); // Function AkAudio.AkSlider.SetAkSliderItemProperty(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1626870>
-	void SetAkSliderItemId(struct Unknown& ItemId); // Function AkAudio.AkSlider.SetAkSliderItemId(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x16267D0>
-	float GetValue(); // Function AkAudio.AkSlider.GetValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1626600>
-	struct FString GetAkSliderItemProperty(); // Function AkAudio.AkSlider.GetAkSliderItemProperty(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1626520>
-	struct Unknown GetAkSliderItemId(); // Function AkAudio.AkSlider.GetAkSliderItemId(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x16264E0>
+	void SetValue(float InValue); // Function AkAudio.AkSlider.SetValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16267A0>
+	void SetStepSize(float InValue); // Function AkAudio.AkSlider.SetStepSize(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1626650>
+	void SetSliderHandleColor(struct Unknown InValue); // Function AkAudio.AkSlider.SetSliderHandleColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x16265D0>
+	void SetSliderBarColor(struct Unknown InValue); // Function AkAudio.AkSlider.SetSliderBarColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x1626550>
+	void SetLocked(char InValue); // Function AkAudio.AkSlider.SetLocked(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16264C0>
+	void SetIndentHandle(char InValue); // Function AkAudio.AkSlider.SetIndentHandle(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1626430>
+	void SetAkSliderItemProperty(struct FString ItemProperty); // Function AkAudio.AkSlider.SetAkSliderItemProperty(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1626390>
+	void SetAkSliderItemId(struct Unknown& ItemId); // Function AkAudio.AkSlider.SetAkSliderItemId(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x16262F0>
+	float GetValue(); // Function AkAudio.AkSlider.GetValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1626120>
+	struct FString GetAkSliderItemProperty(); // Function AkAudio.AkSlider.GetAkSliderItemProperty(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1626040>
+	struct Unknown GetAkSliderItemId(); // Function AkAudio.AkSlider.GetAkSliderItemId(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1626000>
 };
 
 // Class AkAudio.AkSpatialAudioVolume
@@ -1028,9 +1028,9 @@ class AAkSpatialAudioVolume : public AVolume {
 
 public:
 
-	struct Unknown SurfaceReflectorSet; // 0x338 (8)
-	struct Unknown LateReverb; // 0x340 (8)
-	struct Unknown Room; // 0x348 (8)
+	struct Unknown SurfaceReflectorSet; // 0x350 (8)
+	struct Unknown LateReverb; // 0x358 (8)
+	struct Unknown Room; // 0x360 (8)
 };
 
 // Class AkAudio.AkSpotReflector
@@ -1038,11 +1038,11 @@ class AAkSpotReflector : public UActor {
 
 public:
 
-	struct Unknown EarlyReflectionAuxBus; // 0x300 (8)
-	struct FString EarlyReflectionAuxBusName; // 0x308 (16)
-	struct Unknown AcousticTexture; // 0x318 (8)
-	float DistanceScalingFactor; // 0x320 (4)
-	float Level; // 0x324 (4)
+	struct Unknown EarlyReflectionAuxBus; // 0x318 (8)
+	struct FString EarlyReflectionAuxBusName; // 0x320 (16)
+	struct Unknown AcousticTexture; // 0x330 (8)
+	float DistanceScalingFactor; // 0x338 (4)
+	float Level; // 0x33C (4)
 };
 
 // Class AkAudio.AkSurfaceReflectorSetComponent
@@ -1056,9 +1056,9 @@ public:
 	char bEnableDiffractionOnBoundaryEdges : 0; // 0x240 (1)
 	struct Unknown AssociatedRoom; // 0x248 (8)
 
-	void UpdateSurfaceReflectorSet(); // Function AkAudio.AkSurfaceReflectorSetComponent.UpdateSurfaceReflectorSet(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16270A0>
-	void SendSurfaceReflectorSet(); // Function AkAudio.AkSurfaceReflectorSetComponent.SendSurfaceReflectorSet(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16267B0>
-	void RemoveSurfaceReflectorSet(); // Function AkAudio.AkSurfaceReflectorSetComponent.RemoveSurfaceReflectorSet(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1626790>
+	void UpdateSurfaceReflectorSet(); // Function AkAudio.AkSurfaceReflectorSetComponent.UpdateSurfaceReflectorSet(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1626BC0>
+	void SendSurfaceReflectorSet(); // Function AkAudio.AkSurfaceReflectorSetComponent.SendSurfaceReflectorSet(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16262D0>
+	void RemoveSurfaceReflectorSet(); // Function AkAudio.AkSurfaceReflectorSetComponent.RemoveSurfaceReflectorSet(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16262B0>
 };
 
 // Class AkAudio.AkSwitchInitializationSettings
@@ -1070,7 +1070,7 @@ public:
 	struct Unknown CommunicationSettings; // 0x90 (40)
 	struct Unknown AdvancedSettings; // 0xB8 (56)
 
-	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkSwitchInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <Game_BE.exe+0x16103C0>
+	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkSwitchInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <Game_BE.exe+0x160FEE0>
 };
 
 // Class AkAudio.AkTVOSInitializationSettings
@@ -1093,7 +1093,7 @@ public:
 	struct Unknown CommunicationSettings; // 0x90 (40)
 	struct Unknown AdvancedSettings; // 0xB8 (64)
 
-	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkWindowsInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <Game_BE.exe+0x16103C0>
+	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkWindowsInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <Game_BE.exe+0x160FEE0>
 };
 
 // Class AkAudio.AkWwiseTree
@@ -1104,9 +1104,9 @@ public:
 	struct FMulticastInlineDelegate OnSelectionChanged; // 0x108 (16)
 	struct FMulticastInlineDelegate OnItemDragged; // 0x118 (16)
 
-	void SetSearchText(struct FString newText); // Function AkAudio.AkWwiseTree.SetSearchText(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1622AB0>
-	struct Unknown GetSelectedItem(); // Function AkAudio.AkWwiseTree.GetSelectedItem(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x162D350>
-	struct FString GetSearchText(); // Function AkAudio.AkWwiseTree.GetSearchText(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x162D2D0>
+	void SetSearchText(struct FString newText); // Function AkAudio.AkWwiseTree.SetSearchText(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16225D0>
+	struct Unknown GetSelectedItem(); // Function AkAudio.AkWwiseTree.GetSelectedItem(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x162CE70>
+	struct FString GetSearchText(); // Function AkAudio.AkWwiseTree.GetSearchText(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x162CDF0>
 };
 
 // Class AkAudio.AkWwiseTreeSelector
@@ -1128,7 +1128,7 @@ public:
 	struct Unknown CommunicationSettings; // 0x90 (40)
 	struct Unknown AdvancedSettings; // 0xB8 (60)
 
-	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkXboxOneInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <Game_BE.exe+0x16103C0>
+	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkXboxOneInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <Game_BE.exe+0x160FEE0>
 };
 
 // Class AkAudio.InterpTrackAkAudioEvent
@@ -1208,8 +1208,8 @@ public:
 
 	struct FMulticastInlineDelegate Completed; // 0x30 (16)
 
-	struct Unknown PostEventAsync(struct Unknown WorldContextObject, struct Unknown AkEvent, struct Unknown Actor, int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<Unknown>& ExternalSources, char bStopWhenAttachedToDestroyed); // Function AkAudio.PostEventAsync.PostEventAsync(Final|BlueprintCosmetic|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x162D620>
-	void PollPostEventFuture(); // Function AkAudio.PostEventAsync.PollPostEventFuture(Final|Native|Private) // <Game_BE.exe+0x162D600>
+	struct Unknown PostEventAsync(struct Unknown WorldContextObject, struct Unknown AkEvent, struct Unknown Actor, int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<Unknown>& ExternalSources, char bStopWhenAttachedToDestroyed); // Function AkAudio.PostEventAsync.PostEventAsync(Final|BlueprintCosmetic|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x162D140>
+	void PollPostEventFuture(); // Function AkAudio.PostEventAsync.PollPostEventFuture(Final|Native|Private) // <Game_BE.exe+0x162D120>
 };
 
 // Class AkAudio.PostEventAtLocationAsync
@@ -1219,8 +1219,8 @@ public:
 
 	struct FMulticastInlineDelegate Completed; // 0x30 (16)
 
-	struct Unknown PostEventAtLocationAsync(struct Unknown WorldContextObject, struct Unknown AkEvent, struct Unknown Location, struct Unknown Orientation); // Function AkAudio.PostEventAtLocationAsync.PostEventAtLocationAsync(Final|BlueprintCosmetic|Native|Static|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x162E710>
-	void PollPostEventFuture(); // Function AkAudio.PostEventAtLocationAsync.PollPostEventFuture(Final|Native|Private) // <Game_BE.exe+0x162E6F0>
+	struct Unknown PostEventAtLocationAsync(struct Unknown WorldContextObject, struct Unknown AkEvent, struct Unknown Location, struct Unknown Orientation); // Function AkAudio.PostEventAtLocationAsync.PostEventAtLocationAsync(Final|BlueprintCosmetic|Native|Static|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x162E230>
+	void PollPostEventFuture(); // Function AkAudio.PostEventAtLocationAsync.PollPostEventFuture(Final|Native|Private) // <Game_BE.exe+0x162E210>
 };
 
 // ScriptStruct AkAudio.AkExternalSourceInfo

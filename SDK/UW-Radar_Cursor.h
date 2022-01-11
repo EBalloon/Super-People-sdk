@@ -16,17 +16,17 @@ public:
 	struct Unknown Anim_MouseClicked; // 0x298 (8)
 	struct Unknown DummyWidgetRef; // 0x2A0 (8)
 
-	void PlayClickSound(); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.PlayClickSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetCursorSize(); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.SetCursorSize(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetCursorByBuffEventType(enum class Unknow BuffEventType); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.SetCursorByBuffEventType(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnClicked_Event_1(struct Unknown TouchedActor, struct Unknown ButtonPressed); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.OnClicked_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Construct(); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void PlayMouseCursorAnimation(); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.PlayMouseCursorAnimation(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void UpdateCursorPosition(); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.UpdateCursorPosition(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ShowCursor(); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.ShowCursor(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void HideCursor(); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.HideCursor(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-Radar_Cursor(int32_t EntryPoint); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.ExecuteUbergraph_UW-Radar_Cursor(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	void PlayClickSound(); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.PlayClickSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetCursorSize(); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.SetCursorSize(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetCursorByBuffEventType(enum class Unknow BuffEventType); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.SetCursorByBuffEventType(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnClicked_Event_1(struct Unknown TouchedActor, struct Unknown ButtonPressed); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.OnClicked_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Construct(); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void PlayMouseCursorAnimation(); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.PlayMouseCursorAnimation(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void UpdateCursorPosition(); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.UpdateCursorPosition(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowCursor(); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.ShowCursor(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void HideCursor(); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.HideCursor(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-Radar_Cursor(int32_t EntryPoint); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.ExecuteUbergraph_UW-Radar_Cursor(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-Radar_Cursor.UW-Radar_Cursor_C.PlayClickSound

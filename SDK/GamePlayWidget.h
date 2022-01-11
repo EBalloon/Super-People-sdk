@@ -54,12 +54,12 @@ public:
 	struct Unknown œ ¬¼; // 0x418 (8)
 	struct Unknown ScrollBarTimer; // 0x420 (8)
 
-	void ä¤@t¤¸_1(enum class Unknow Type); // Function GamePlayWidget.GamePlayWidget_C.ä¤@t¤¸_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void DelegateChangeValue_Event_1(struct Unknown Value); // Function GamePlayWidget.GamePlayWidget_C.DelegateChangeValue_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Construct(); // Function GamePlayWidget.GamePlayWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__ScrollBox_54_K2Node_ComponentBoundEvent_0_OnUserScrolledEvent__DelegateSignature(float CurrentOffset); // Function GamePlayWidget.GamePlayWidget_C.BndEvt__ScrollBox_54_K2Node_ComponentBoundEvent_0_OnUserScrolledEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void CustomEvent(); // Function GamePlayWidget.GamePlayWidget_C.CustomEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_GamePlayWidget(int32_t EntryPoint); // Function GamePlayWidget.GamePlayWidget_C.ExecuteUbergraph_GamePlayWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	void ä¤@t¤¸_1(enum class Unknow Type); // Function GamePlayWidget.GamePlayWidget_C.ä¤@t¤¸_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void DelegateChangeValue_Event_1(struct Unknown Value); // Function GamePlayWidget.GamePlayWidget_C.DelegateChangeValue_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Construct(); // Function GamePlayWidget.GamePlayWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__ScrollBox_54_K2Node_ComponentBoundEvent_0_OnUserScrolledEvent__DelegateSignature(float CurrentOffset); // Function GamePlayWidget.GamePlayWidget_C.BndEvt__ScrollBox_54_K2Node_ComponentBoundEvent_0_OnUserScrolledEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CustomEvent(); // Function GamePlayWidget.GamePlayWidget_C.CustomEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_GamePlayWidget(int32_t EntryPoint); // Function GamePlayWidget.GamePlayWidget_C.ExecuteUbergraph_GamePlayWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function GamePlayWidget.GamePlayWidget_C.ä¤@t¤¸_1

@@ -3,12 +3,12 @@ class ABP-Weapon-MolotovCocktail_C : public ABP-GrenadeWeaponBase_C {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x1FC0 (8)
-	struct Unknown ParticleSystem; // 0x1FC8 (8)
+	struct Unknown UberGraphFrame; // 0x1FE0 (8)
+	struct Unknown ParticleSystem; // 0x1FE8 (8)
 
-	void K2_OnEquip(); // Function BP-Weapon-MolotovCocktail.BP-Weapon-MolotovCocktail_C.K2_OnEquip(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void K2_OnUnEquip(); // Function BP-Weapon-MolotovCocktail.BP-Weapon-MolotovCocktail_C.K2_OnUnEquip(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_BP-Weapon-MolotovCocktail(int32_t EntryPoint); // Function BP-Weapon-MolotovCocktail.BP-Weapon-MolotovCocktail_C.ExecuteUbergraph_BP-Weapon-MolotovCocktail(Final|UbergraphFunction) // <Game_BE.exe+0x2B812B0>
+	void K2_OnEquip(); // Function BP-Weapon-MolotovCocktail.BP-Weapon-MolotovCocktail_C.K2_OnEquip(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void K2_OnUnEquip(); // Function BP-Weapon-MolotovCocktail.BP-Weapon-MolotovCocktail_C.K2_OnUnEquip(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_BP-Weapon-MolotovCocktail(int32_t EntryPoint); // Function BP-Weapon-MolotovCocktail.BP-Weapon-MolotovCocktail_C.ExecuteUbergraph_BP-Weapon-MolotovCocktail(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
 };
 
 // Function BP-Weapon-MolotovCocktail.BP-Weapon-MolotovCocktail_C.K2_OnEquip

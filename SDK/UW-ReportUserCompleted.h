@@ -10,9 +10,9 @@ public:
 	struct Unknown uw-bg; // 0x270 (8)
 	struct FText DescriptionText; // 0x278 (24)
 
-	void Construct(); // Function UW-ReportUserCompleted.UW-ReportUserCompleted_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void PreConstruct(char IsDesignTime); // Function UW-ReportUserCompleted.UW-ReportUserCompleted_C.PreConstruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-ReportUserCompleted(int32_t EntryPoint); // Function UW-ReportUserCompleted.UW-ReportUserCompleted_C.ExecuteUbergraph_UW-ReportUserCompleted(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	void Construct(); // Function UW-ReportUserCompleted.UW-ReportUserCompleted_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void PreConstruct(char IsDesignTime); // Function UW-ReportUserCompleted.UW-ReportUserCompleted_C.PreConstruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-ReportUserCompleted(int32_t EntryPoint); // Function UW-ReportUserCompleted.UW-ReportUserCompleted_C.ExecuteUbergraph_UW-ReportUserCompleted(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-ReportUserCompleted.UW-ReportUserCompleted_C.Construct

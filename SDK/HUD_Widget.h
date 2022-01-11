@@ -7,9 +7,9 @@ public:
 	struct Unknown ChatWidget; // 0x250 (8)
 	struct Unknown Chat System; // 0x258 (8)
 
-	void ShowHUDToggle(char ShowToggle); // Function HUD_Widget.HUD_Widget_C.ShowHUDToggle(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Construct(); // Function HUD_Widget.HUD_Widget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_HUD_Widget(int32_t EntryPoint); // Function HUD_Widget.HUD_Widget_C.ExecuteUbergraph_HUD_Widget(Final|UbergraphFunction) // <Game_BE.exe+0x2B812B0>
+	void ShowHUDToggle(char ShowToggle); // Function HUD_Widget.HUD_Widget_C.ShowHUDToggle(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Construct(); // Function HUD_Widget.HUD_Widget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_HUD_Widget(int32_t EntryPoint); // Function HUD_Widget.HUD_Widget_C.ExecuteUbergraph_HUD_Widget(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
 };
 
 // Function HUD_Widget.HUD_Widget_C.ShowHUDToggle

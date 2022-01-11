@@ -3,11 +3,11 @@ class ABP-ProjectileGrenade_Bomb_Perk_C : public ABravoHotelProjectileGrenadeBom
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x668 (8)
-	struct Unknown Ak; // 0x670 (8)
+	struct Unknown UberGraphFrame; // 0x680 (8)
+	struct Unknown Ak; // 0x688 (8)
 
-	void BndEvt__SphereCollision_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature(struct Unknown HitComponent, struct Unknown OtherActor, struct Unknown OtherComp, struct Unknown NormalImpulse, struct Unknown& Hit); // Function BP-ProjectileGrenade_Bomb_Perk.BP-ProjectileGrenade_Bomb_Perk_C.BndEvt__SphereCollision_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature(HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_BP-ProjectileGrenade_Bomb_Perk(int32_t EntryPoint); // Function BP-ProjectileGrenade_Bomb_Perk.BP-ProjectileGrenade_Bomb_Perk_C.ExecuteUbergraph_BP-ProjectileGrenade_Bomb_Perk(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	void BndEvt__SphereCollision_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature(struct Unknown HitComponent, struct Unknown OtherActor, struct Unknown OtherComp, struct Unknown NormalImpulse, struct Unknown& Hit); // Function BP-ProjectileGrenade_Bomb_Perk.BP-ProjectileGrenade_Bomb_Perk_C.BndEvt__SphereCollision_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature(HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_BP-ProjectileGrenade_Bomb_Perk(int32_t EntryPoint); // Function BP-ProjectileGrenade_Bomb_Perk.BP-ProjectileGrenade_Bomb_Perk_C.ExecuteUbergraph_BP-ProjectileGrenade_Bomb_Perk(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function BP-ProjectileGrenade_Bomb_Perk.BP-ProjectileGrenade_Bomb_Perk_C.BndEvt__SphereCollision_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature

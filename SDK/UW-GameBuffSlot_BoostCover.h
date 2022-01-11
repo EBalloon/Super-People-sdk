@@ -7,8 +7,8 @@ public:
 	struct Unknown UW-GameBuffSlot_Boost; // 0x250 (8)
 	struct Unknown HoverWidget; // 0x258 (8)
 
-	void OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-GameBuffSlot_BoostCover.UW-GameBuffSlot_BoostCover_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-GameBuffSlot_BoostCover(int32_t EntryPoint); // Function UW-GameBuffSlot_BoostCover.UW-GameBuffSlot_BoostCover_C.ExecuteUbergraph_UW-GameBuffSlot_BoostCover(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	void OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-GameBuffSlot_BoostCover.UW-GameBuffSlot_BoostCover_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-GameBuffSlot_BoostCover(int32_t EntryPoint); // Function UW-GameBuffSlot_BoostCover.UW-GameBuffSlot_BoostCover_C.ExecuteUbergraph_UW-GameBuffSlot_BoostCover(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-GameBuffSlot_BoostCover.UW-GameBuffSlot_BoostCover_C.OnMouseEnter

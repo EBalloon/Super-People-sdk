@@ -27,57 +27,57 @@ public:
 	enum class Unknow CurrentState; // 0x320 (1)
 	struct Unknown LastDisplayAbility; // 0x324 (12)
 
-	void ShowStatupAnim(struct Unknown& StatupParams); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowStatupAnim(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void CheckStatupAnim(struct Unknown& DisplayAbility); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.CheckStatupAnim(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnShowNotRecorverHPMessage(char Type, int32_t ItemId); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.OnShowNotRecorverHPMessage(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void On Battle Royale State Changed(enum class Unknow PreviousState, enum class Unknow CurrentState); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.On Battle Royale State Changed(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ShowAmmoReloadedMessage(int32_t ReloadedAmmoCount); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowAmmoReloadedMessage(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ShowProgressMessage(int32_t Type, int32_t Time); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowProgressMessage(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ShowKillMessage(struct FText WeaponName, struct FText Victim, char HeadShot, char TeamKill); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowKillMessage(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetGameVersion(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.SetGameVersion(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ChangeWidgetVisibleByToggleType(enum class Unknow CurrentType); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ChangeWidgetVisibleByToggleType(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	struct Unknown GetSlotHoverWidget(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.GetSlotHoverWidget(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ShowFireModeLog(enum class Unknow Mode); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowFireModeLog(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void GetMainWidget(struct Unknown& MainWidget); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.GetMainWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
-	void GetWearableLevels(int32_t& HelmetLevel, int32_t& ArmorLevel, int32_t& BagLevel); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.GetWearableLevels(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void CreateHoverWidget(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.CreateHoverWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetPerkInfo(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.SetPerkInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	char OnDrop(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.OnDrop(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	int32_t GetFinalAliveCount(int32_t AliveCount); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.GetFinalAliveCount(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B812B0>
-	void Destruct(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ResetPerkDeck(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ResetPerkDeck(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetEnergy(float energy); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.SetEnergy(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ShowHealthRecovery(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowHealthRecovery(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void HideHealthRecovery(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.HideHealthRecovery(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ShowEnergyRecovery(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowEnergyRecovery(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void HideEnergyRecovery(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.HideEnergyRecovery(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetArmorInfo(char bHasHelmet, float HelmetGauge, char bHasChest, float ChestGauge, char bHasBackpack, float BackpackGauge); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.SetArmorInfo(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ResetMyInfo(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ResetMyInfo(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ShowNotRecorverHPMessage(char Type, int32_t ItemId); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowNotRecorverHPMessage(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetCurrentWeaponFireMode(enum class Unknow FireMode); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.SetCurrentWeaponFireMode(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ShowPerkDeck(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowPerkDeck(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void HidePerkDeck(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.HidePerkDeck(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void PlayReadyGivePerk(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.PlayReadyGivePerk(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void PlayKillGivePerk(int32_t KillCount); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.PlayKillGivePerk(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnChangedToggleType(enum class Unknow PreType, enum class Unknow CurrentType); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.OnChangedToggleType(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void CheckVisibilityPerkDeck(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.CheckVisibilityPerkDeck(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void HideHUDMessage(enum class Unknow MessageType); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.HideHUDMessage(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void AddKillMessage(struct Unknown& Info); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.AddKillMessage(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ShowCastingUI(struct Unknown& CastingInfo); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowCastingUI(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void HideCastingUI(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.HideCastingUI(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Construct(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OpenInventory(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.OpenInventory(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void CloseInventory(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.CloseInventory(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void PlayShowAnim(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.PlayShowAnim(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void PlayHideAnim(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.PlayHideAnim(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnChangedPlayerInfos(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.OnChangedPlayerInfos(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ShowHUDMessage(struct Unknown MessageRow); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowHUDMessage(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void K2_SetPerkInfo(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.K2_SetPerkInfo(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ShowMyKillCountMessage(char bIsKill, struct FText& Message); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowMyKillCountMessage(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ShowHitDamageLog(struct Unknown& HitDamageLogInfo); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowHitDamageLog(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void LevelUpEvent(struct Unknown PerkInfo, int32_t CurrentLevel, enum class Unknow LevelUpType, struct Unknown DisplayAbility, int32_t LastLevel); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.LevelUpEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void PreConstruct(char IsDesignTime); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.PreConstruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-TopInfoWidget(int32_t EntryPoint); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ExecuteUbergraph_UW-TopInfoWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	void ShowStatupAnim(struct Unknown& StatupParams); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowStatupAnim(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CheckStatupAnim(struct Unknown& DisplayAbility); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.CheckStatupAnim(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnShowNotRecorverHPMessage(char Type, int32_t ItemId); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.OnShowNotRecorverHPMessage(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void On Battle Royale State Changed(enum class Unknow PreviousState, enum class Unknow CurrentState); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.On Battle Royale State Changed(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowAmmoReloadedMessage(int32_t ReloadedAmmoCount); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowAmmoReloadedMessage(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowProgressMessage(int32_t Type, int32_t Time); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowProgressMessage(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowKillMessage(struct FText WeaponName, struct FText Victim, char HeadShot, char TeamKill); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowKillMessage(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetGameVersion(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.SetGameVersion(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ChangeWidgetVisibleByToggleType(enum class Unknow CurrentType); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ChangeWidgetVisibleByToggleType(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct Unknown GetSlotHoverWidget(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.GetSlotHoverWidget(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowFireModeLog(enum class Unknow Mode); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowFireModeLog(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetMainWidget(struct Unknown& MainWidget); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.GetMainWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void GetWearableLevels(int32_t& HelmetLevel, int32_t& ArmorLevel, int32_t& BagLevel); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.GetWearableLevels(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CreateHoverWidget(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.CreateHoverWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetPerkInfo(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.SetPerkInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	char OnDrop(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.OnDrop(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	int32_t GetFinalAliveCount(int32_t AliveCount); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.GetFinalAliveCount(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void Destruct(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ResetPerkDeck(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ResetPerkDeck(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetEnergy(float energy); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.SetEnergy(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowHealthRecovery(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowHealthRecovery(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void HideHealthRecovery(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.HideHealthRecovery(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowEnergyRecovery(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowEnergyRecovery(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void HideEnergyRecovery(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.HideEnergyRecovery(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetArmorInfo(char bHasHelmet, float HelmetGauge, char bHasChest, float ChestGauge, char bHasBackpack, float BackpackGauge); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.SetArmorInfo(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ResetMyInfo(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ResetMyInfo(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowNotRecorverHPMessage(char Type, int32_t ItemId); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowNotRecorverHPMessage(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetCurrentWeaponFireMode(enum class Unknow FireMode); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.SetCurrentWeaponFireMode(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowPerkDeck(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowPerkDeck(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void HidePerkDeck(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.HidePerkDeck(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void PlayReadyGivePerk(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.PlayReadyGivePerk(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void PlayKillGivePerk(int32_t KillCount); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.PlayKillGivePerk(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnChangedToggleType(enum class Unknow PreType, enum class Unknow CurrentType); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.OnChangedToggleType(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CheckVisibilityPerkDeck(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.CheckVisibilityPerkDeck(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void HideHUDMessage(enum class Unknow MessageType); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.HideHUDMessage(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AddKillMessage(struct Unknown& Info); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.AddKillMessage(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowCastingUI(struct Unknown& CastingInfo); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowCastingUI(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void HideCastingUI(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.HideCastingUI(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Construct(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OpenInventory(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.OpenInventory(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CloseInventory(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.CloseInventory(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void PlayShowAnim(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.PlayShowAnim(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void PlayHideAnim(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.PlayHideAnim(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnChangedPlayerInfos(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.OnChangedPlayerInfos(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowHUDMessage(struct Unknown MessageRow); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowHUDMessage(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void K2_SetPerkInfo(); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.K2_SetPerkInfo(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowMyKillCountMessage(char bIsKill, struct FText& Message); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowMyKillCountMessage(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowHitDamageLog(struct Unknown& HitDamageLogInfo); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowHitDamageLog(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void LevelUpEvent(struct Unknown PerkInfo, int32_t CurrentLevel, enum class Unknow LevelUpType, struct Unknown DisplayAbility, int32_t LastLevel); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.LevelUpEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void PreConstruct(char IsDesignTime); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.PreConstruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-TopInfoWidget(int32_t EntryPoint); // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ExecuteUbergraph_UW-TopInfoWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-TopInfoWidget.UW-TopInfoWidget_C.ShowStatupAnim

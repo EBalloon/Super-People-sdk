@@ -14,8 +14,8 @@ public:
 	struct Unknown AnimGraphNode_LocalRefPose; // 0x548 (24)
 	struct Unknown AnimGraphNode_BlendListByBool; // 0x560 (160)
 
-	void AnimGraph(struct Unknown& AnimGraph); // Function ABP-S686.ABP-S686_C.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_ABP-S686(int32_t EntryPoint); // Function ABP-S686.ABP-S686_C.ExecuteUbergraph_ABP-S686(Final|UbergraphFunction) // <Game_BE.exe+0x2B812B0>
+	void AnimGraph(struct Unknown& AnimGraph); // Function ABP-S686.ABP-S686_C.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_ABP-S686(int32_t EntryPoint); // Function ABP-S686.ABP-S686_C.ExecuteUbergraph_ABP-S686(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
 };
 
 // Function ABP-S686.ABP-S686_C.AnimGraph

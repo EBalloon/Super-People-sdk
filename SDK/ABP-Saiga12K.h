@@ -20,8 +20,8 @@ public:
 	struct Unknown AnimGraphNode_LocalRefPose; // 0x868 (24)
 	struct Unknown AnimGraphNode_BlendListByBool; // 0x880 (160)
 
-	void AnimGraph(struct Unknown& AnimGraph); // Function ABP-Saiga12K.ABP-Saiga12K_C.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_ABP-Saiga12K(int32_t EntryPoint); // Function ABP-Saiga12K.ABP-Saiga12K_C.ExecuteUbergraph_ABP-Saiga12K(Final|UbergraphFunction) // <Game_BE.exe+0x2B812B0>
+	void AnimGraph(struct Unknown& AnimGraph); // Function ABP-Saiga12K.ABP-Saiga12K_C.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_ABP-Saiga12K(int32_t EntryPoint); // Function ABP-Saiga12K.ABP-Saiga12K_C.ExecuteUbergraph_ABP-Saiga12K(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
 };
 
 // Function ABP-Saiga12K.ABP-Saiga12K_C.AnimGraph

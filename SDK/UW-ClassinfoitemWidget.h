@@ -8,11 +8,11 @@ public:
 	struct Unknown TextBlock_ClassName; // 0x258 (8)
 	struct Unknown TextBlock_Count; // 0x260 (8)
 
-	void SetClassCount(int32_t Count); // Function UW-ClassinfoitemWidget.UW-ClassinfoitemWidget_C.SetClassCount(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void SetClassInfo(struct Unknown& PerkDeckData); // Function UW-ClassinfoitemWidget.UW-ClassinfoitemWidget_C.SetClassInfo(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnLoaded_5B4CA9324370B6EF1C483DB3B88E6511(struct Unknown Loaded); // Function UW-ClassinfoitemWidget.UW-ClassinfoitemWidget_C.OnLoaded_5B4CA9324370B6EF1C483DB3B88E6511(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void AsyncLoadingClassIcon(struct Unknown Texture); // Function UW-ClassinfoitemWidget.UW-ClassinfoitemWidget_C.AsyncLoadingClassIcon(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-ClassinfoitemWidget(int32_t EntryPoint); // Function UW-ClassinfoitemWidget.UW-ClassinfoitemWidget_C.ExecuteUbergraph_UW-ClassinfoitemWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	void SetClassCount(int32_t Count); // Function UW-ClassinfoitemWidget.UW-ClassinfoitemWidget_C.SetClassCount(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetClassInfo(struct Unknown& PerkDeckData); // Function UW-ClassinfoitemWidget.UW-ClassinfoitemWidget_C.SetClassInfo(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_5B4CA9324370B6EF1C483DB3B88E6511(struct Unknown Loaded); // Function UW-ClassinfoitemWidget.UW-ClassinfoitemWidget_C.OnLoaded_5B4CA9324370B6EF1C483DB3B88E6511(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AsyncLoadingClassIcon(struct Unknown Texture); // Function UW-ClassinfoitemWidget.UW-ClassinfoitemWidget_C.AsyncLoadingClassIcon(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-ClassinfoitemWidget(int32_t EntryPoint); // Function UW-ClassinfoitemWidget.UW-ClassinfoitemWidget_C.ExecuteUbergraph_UW-ClassinfoitemWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-ClassinfoitemWidget.UW-ClassinfoitemWidget_C.SetClassCount

@@ -8,7 +8,7 @@ public:
 	struct Unknown Switcher; // 0x258 (8)
 	float OwnDirection; // 0x260 (4)
 
-	void Initialize(float Direction); // Function UW-CompassRulerWidget.UW-CompassRulerWidget_C.Initialize(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
+	void Initialize(float Direction); // Function UW-CompassRulerWidget.UW-CompassRulerWidget_C.Initialize(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-CompassRulerWidget.UW-CompassRulerWidget_C.Initialize

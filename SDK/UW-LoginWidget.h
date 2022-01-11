@@ -54,30 +54,30 @@ public:
 	int32_t ApplyUserInfoCount; // 0x3D8 (4)
 	char bServicePlatformFlow : 0; // 0x3DC (1)
 
-	void DefaultMessage(); // Function UW-LoginWidget.UW-LoginWidget_C.DefaultMessage(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ServicePlatformLogin(); // Function UW-LoginWidget.UW-LoginWidget_C.ServicePlatformLogin(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ShowBlock(); // Function UW-LoginWidget.UW-LoginWidget_C.ShowBlock(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void UodateWaitingUser(int32_t UserCount, int32_t Time); // Function UW-LoginWidget.UW-LoginWidget_C.UodateWaitingUser(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ShowNotice(int32_t Idx); // Function UW-LoginWidget.UW-LoginWidget_C.ShowNotice(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-LoginWidget.UW-LoginWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__Button_479_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-LoginWidget.UW-LoginWidget_C.BndEvt__Button_479_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__Button_481_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(); // Function UW-LoginWidget.UW-LoginWidget_C.BndEvt__Button_481_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__Button_485_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(); // Function UW-LoginWidget.UW-LoginWidget_C.BndEvt__Button_485_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__Button_482_K2Node_ComponentBoundEvent_3_OnButtonClickedEvent__DelegateSignature(); // Function UW-LoginWidget.UW-LoginWidget_C.BndEvt__Button_482_K2Node_ComponentBoundEvent_3_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__Button_484_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature(); // Function UW-LoginWidget.UW-LoginWidget_C.BndEvt__Button_484_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnLoginSucceeded(); // Function UW-LoginWidget.UW-LoginWidget_C.OnLoginSucceeded(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnCreateCharacter_Event_1(); // Function UW-LoginWidget.UW-LoginWidget_C.OnCreateCharacter_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void WaitingUserDelegate_Event_1(int32_t WaitingUserCount, int32_t WaitingTime); // Function UW-LoginWidget.UW-LoginWidget_C.WaitingUserDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__Button_K2Node_ComponentBoundEvent_5_OnButtonClickedEvent__DelegateSignature(); // Function UW-LoginWidget.UW-LoginWidget_C.BndEvt__Button_K2Node_ComponentBoundEvent_5_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Destruct(); // Function UW-LoginWidget.UW-LoginWidget_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Construct(); // Function UW-LoginWidget.UW-LoginWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void CustomEvent_1(int32_t ErrorIndex, struct FString ErrorID, struct FString Parameters); // Function UW-LoginWidget.UW-LoginWidget_C.CustomEvent_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Login(); // Function UW-LoginWidget.UW-LoginWidget_C.Login(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void PressAnyKeyDelayTime(); // Function UW-LoginWidget.UW-LoginWidget_C.PressAnyKeyDelayTime(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void BndEvt__Button_1_K2Node_ComponentBoundEvent_6_OnButtonClickedEvent__DelegateSignature(); // Function UW-LoginWidget.UW-LoginWidget_C.BndEvt__Button_1_K2Node_ComponentBoundEvent_6_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void CustomEvent_2(struct FString Parameters); // Function UW-LoginWidget.UW-LoginWidget_C.CustomEvent_2(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void QuitGame(float DelayTime); // Function UW-LoginWidget.UW-LoginWidget_C.QuitGame(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-LoginWidget(int32_t EntryPoint); // Function UW-LoginWidget.UW-LoginWidget_C.ExecuteUbergraph_UW-LoginWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	void DefaultMessage(); // Function UW-LoginWidget.UW-LoginWidget_C.DefaultMessage(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ServicePlatformLogin(); // Function UW-LoginWidget.UW-LoginWidget_C.ServicePlatformLogin(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowBlock(); // Function UW-LoginWidget.UW-LoginWidget_C.ShowBlock(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void UodateWaitingUser(int32_t UserCount, int32_t Time); // Function UW-LoginWidget.UW-LoginWidget_C.UodateWaitingUser(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowNotice(int32_t Idx); // Function UW-LoginWidget.UW-LoginWidget_C.ShowNotice(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-LoginWidget.UW-LoginWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__Button_479_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-LoginWidget.UW-LoginWidget_C.BndEvt__Button_479_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__Button_481_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(); // Function UW-LoginWidget.UW-LoginWidget_C.BndEvt__Button_481_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__Button_485_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(); // Function UW-LoginWidget.UW-LoginWidget_C.BndEvt__Button_485_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__Button_482_K2Node_ComponentBoundEvent_3_OnButtonClickedEvent__DelegateSignature(); // Function UW-LoginWidget.UW-LoginWidget_C.BndEvt__Button_482_K2Node_ComponentBoundEvent_3_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__Button_484_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature(); // Function UW-LoginWidget.UW-LoginWidget_C.BndEvt__Button_484_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoginSucceeded(); // Function UW-LoginWidget.UW-LoginWidget_C.OnLoginSucceeded(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnCreateCharacter_Event_1(); // Function UW-LoginWidget.UW-LoginWidget_C.OnCreateCharacter_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void WaitingUserDelegate_Event_1(int32_t WaitingUserCount, int32_t WaitingTime); // Function UW-LoginWidget.UW-LoginWidget_C.WaitingUserDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__Button_K2Node_ComponentBoundEvent_5_OnButtonClickedEvent__DelegateSignature(); // Function UW-LoginWidget.UW-LoginWidget_C.BndEvt__Button_K2Node_ComponentBoundEvent_5_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Destruct(); // Function UW-LoginWidget.UW-LoginWidget_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Construct(); // Function UW-LoginWidget.UW-LoginWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CustomEvent_1(int32_t ErrorIndex, struct FString ErrorID, struct FString Parameters); // Function UW-LoginWidget.UW-LoginWidget_C.CustomEvent_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Login(); // Function UW-LoginWidget.UW-LoginWidget_C.Login(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void PressAnyKeyDelayTime(); // Function UW-LoginWidget.UW-LoginWidget_C.PressAnyKeyDelayTime(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__Button_1_K2Node_ComponentBoundEvent_6_OnButtonClickedEvent__DelegateSignature(); // Function UW-LoginWidget.UW-LoginWidget_C.BndEvt__Button_1_K2Node_ComponentBoundEvent_6_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CustomEvent_2(struct FString Parameters); // Function UW-LoginWidget.UW-LoginWidget_C.CustomEvent_2(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void QuitGame(float DelayTime); // Function UW-LoginWidget.UW-LoginWidget_C.QuitGame(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-LoginWidget(int32_t EntryPoint); // Function UW-LoginWidget.UW-LoginWidget_C.ExecuteUbergraph_UW-LoginWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-LoginWidget.UW-LoginWidget_C.DefaultMessage

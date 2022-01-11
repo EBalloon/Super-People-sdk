@@ -28,12 +28,12 @@ public:
 	int32_t LastSeaponTierId; // 0x2F8 (4)
 	float WidgetHalfSizeX; // 0x2FC (4)
 
-	void Set Position(char IsLeft, char IsSoloMode, struct Unknown CharacterRef, struct Unknown MemberInfo); // Function UW-Lobby_CharacterInfo.UW-Lobby_CharacterInfo_C.Set Position(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Init(struct Unknown PartyInfo, char bIsSoloMode); // Function UW-Lobby_CharacterInfo.UW-Lobby_CharacterInfo_C.Init(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void OnLoaded_53B5B77C4172B8F96BC2979B2702DE82(struct Unknown Loaded); // Function UW-Lobby_CharacterInfo.UW-Lobby_CharacterInfo_C.OnLoaded_53B5B77C4172B8F96BC2979B2702DE82(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void Construct(); // Function UW-Lobby_CharacterInfo.UW-Lobby_CharacterInfo_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void AsyncIcon(struct Unknown Asset); // Function UW-Lobby_CharacterInfo.UW-Lobby_CharacterInfo_C.AsyncIcon(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B812B0>
-	void ExecuteUbergraph_UW-Lobby_CharacterInfo(int32_t EntryPoint); // Function UW-Lobby_CharacterInfo.UW-Lobby_CharacterInfo_C.ExecuteUbergraph_UW-Lobby_CharacterInfo(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B812B0>
+	void Set Position(char IsLeft, char IsSoloMode, struct Unknown CharacterRef, struct Unknown MemberInfo); // Function UW-Lobby_CharacterInfo.UW-Lobby_CharacterInfo_C.Set Position(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Init(struct Unknown PartyInfo, char bIsSoloMode); // Function UW-Lobby_CharacterInfo.UW-Lobby_CharacterInfo_C.Init(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_53B5B77C4172B8F96BC2979B2702DE82(struct Unknown Loaded); // Function UW-Lobby_CharacterInfo.UW-Lobby_CharacterInfo_C.OnLoaded_53B5B77C4172B8F96BC2979B2702DE82(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Construct(); // Function UW-Lobby_CharacterInfo.UW-Lobby_CharacterInfo_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AsyncIcon(struct Unknown Asset); // Function UW-Lobby_CharacterInfo.UW-Lobby_CharacterInfo_C.AsyncIcon(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExecuteUbergraph_UW-Lobby_CharacterInfo(int32_t EntryPoint); // Function UW-Lobby_CharacterInfo.UW-Lobby_CharacterInfo_C.ExecuteUbergraph_UW-Lobby_CharacterInfo(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-Lobby_CharacterInfo.UW-Lobby_CharacterInfo_C.Set Position
