@@ -3,16 +3,16 @@ class UUW-ReplayWorldMapOption_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Canvas_Main; // 0x250 (8)
-	struct Unknown CB_DrawDeathPosition; // 0x258 (8)
-	struct Unknown CB_DrawFireDirection; // 0x260 (8)
-	struct Unknown CB_DrawHitted; // 0x268 (8)
-	struct Unknown CB_DrawPersonalSupplyBox; // 0x270 (8)
-	struct Unknown CB_TransportDropBox; // 0x278 (8)
-	struct Unknown ReplayController; // 0x280 (8)
-	struct Unknown MainWidget; // 0x288 (8)
-	struct Unknown PlayerHUD; // 0x290 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UCanvasPanel Canvas_Main; // 0x250 (8)
+	struct UCheckBox CB_DrawDeathPosition; // 0x258 (8)
+	struct UCheckBox CB_DrawFireDirection; // 0x260 (8)
+	struct UCheckBox CB_DrawHitted; // 0x268 (8)
+	struct UCheckBox CB_DrawPersonalSupplyBox; // 0x270 (8)
+	struct UCheckBox CB_TransportDropBox; // 0x278 (8)
+	struct ABP-MK3DReplayController_C ReplayController; // 0x280 (8)
+	struct UBravoHotelMainWidget MainWidget; // 0x288 (8)
+	struct ABravoHotelPlayerHUD PlayerHUD; // 0x290 (8)
 
 	void Init(); // Function UW-ReplayWorldmapOption.UW-ReplayWorldMapOption_C.Init(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__CB_DrawFireDirection_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature(char bIsChecked); // Function UW-ReplayWorldmapOption.UW-ReplayWorldMapOption_C.BndEvt__CB_DrawFireDirection_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>

@@ -3,29 +3,29 @@ class UUW-MatchEndWidget_C : public UBravoHotelGameMatchEndWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x360 (8)
-	struct Unknown UW-MatchEnd_Animation_02; // 0x368 (8)
-	struct Unknown UW-MatchEnd_Ranking2; // 0x370 (8)
-	struct Unknown UW_SimpleResult; // 0x378 (8)
-	struct Unknown MainWidgetRef; // 0x380 (8)
-	struct Unknown PlayerHUDRef; // 0x388 (8)
-	struct Unknown UW_FinalResult; // 0x390 (8)
-	struct Unknown UW_Animation; // 0x398 (8)
-	struct Unknown PlayerControllerRef; // 0x3A0 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x360 (8)
+	struct UUW-MatchEnd_Animation_02_C UW-MatchEnd_Animation_02; // 0x368 (8)
+	struct UUW-MatchEnd_Ranking2_C UW-MatchEnd_Ranking2; // 0x370 (8)
+	struct UUW-MatchEnd_Animation_C UW_SimpleResult; // 0x378 (8)
+	struct UUW-MainWidget_C MainWidgetRef; // 0x380 (8)
+	struct ABravoHotelPlayerHUD PlayerHUDRef; // 0x388 (8)
+	struct UUW-MatchEnd_Ranking_C UW_FinalResult; // 0x390 (8)
+	struct UUW-MatchEnd_Animation_C UW_Animation; // 0x398 (8)
+	struct ABravoHotelPlayerController PlayerControllerRef; // 0x3A0 (8)
 	char NewResult : 0; // 0x3A8 (1)
-	struct Unknown ResultData; // 0x3A9 (4)
+	struct FMatchEndFinalResult ResultData; // 0x3A9 (4)
 	char IsGiveUp : 0; // 0x3AD (1)
 	float WinMatchEndResultShowTime; // 0x3B0 (4)
-	struct Unknown ResultMatchEndAnimation; // 0x3B4 (2)
+	struct FMatchEndAnimation ResultMatchEndAnimation; // 0x3B4 (2)
 
 	char IsVisibleMatchEndWidget(); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.IsVisibleMatchEndWidget(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetPlayerState(struct Unknown& PlayerState); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.GetPlayerState(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void K2_ShowSimpleResult(struct Unknown& SimpleResult); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.K2_ShowSimpleResult(Event|Protected|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetPlayerState(struct ABravoHotelPlayerState& PlayerState); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.GetPlayerState(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void K2_ShowSimpleResult(struct FMatchEndSimpleResult& SimpleResult); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.K2_ShowSimpleResult(Event|Protected|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void K2_HideSimpleResult(); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.K2_HideSimpleResult(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void K2_ShowFinalResult(struct Unknown& FinalResult); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.K2_ShowFinalResult(Event|Protected|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void K2_ShowFinalResult(struct FMatchEndFinalResult& FinalResult); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.K2_ShowFinalResult(Event|Protected|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void K2_HideFinalResult(); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.K2_HideFinalResult(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void K2_ShowMatchEndAnimation(struct Unknown& MatchEndAnimation, struct Unknown& SimpleResult, char bIsRetired); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.K2_ShowMatchEndAnimation(Event|Protected|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void K2_ShowMatchEndAnimation(struct FMatchEndAnimation& MatchEndAnimation, struct FMatchEndSimpleResult& SimpleResult, char bIsRetired); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.K2_ShowMatchEndAnimation(Event|Protected|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void K2_HideMatchEndAnimation(); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.K2_HideMatchEndAnimation(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Init(); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.Init(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ä¤@t¤¸_1(); // Function UW-MatchEndWidget.UW-MatchEndWidget_C.ä¤@t¤¸_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -51,11 +51,11 @@ inline char UUW-MatchEndWidget_C::IsVisibleMatchEndWidget() {
 }
 
 // Function UW-MatchEndWidget.UW-MatchEndWidget_C.GetPlayerState
-inline void UUW-MatchEndWidget_C::GetPlayerState(struct Unknown& PlayerState) {
+inline void UUW-MatchEndWidget_C::GetPlayerState(struct ABravoHotelPlayerState& PlayerState) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MatchEndWidget.UW-MatchEndWidget_C.GetPlayerState");
 
 	struct GetPlayerState_Params {
-		struct Unknown& PlayerState;
+		struct ABravoHotelPlayerState& PlayerState;
 	}; GetPlayerState_Params Params;
 
 
@@ -68,11 +68,11 @@ inline void UUW-MatchEndWidget_C::GetPlayerState(struct Unknown& PlayerState) {
 }
 
 // Function UW-MatchEndWidget.UW-MatchEndWidget_C.K2_ShowSimpleResult
-inline void UUW-MatchEndWidget_C::K2_ShowSimpleResult(struct Unknown& SimpleResult) {
+inline void UUW-MatchEndWidget_C::K2_ShowSimpleResult(struct FMatchEndSimpleResult& SimpleResult) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MatchEndWidget.UW-MatchEndWidget_C.K2_ShowSimpleResult");
 
 	struct K2_ShowSimpleResult_Params {
-		struct Unknown& SimpleResult;
+		struct FMatchEndSimpleResult& SimpleResult;
 	}; K2_ShowSimpleResult_Params Params;
 
 
@@ -99,11 +99,11 @@ inline void UUW-MatchEndWidget_C::K2_HideSimpleResult() {
 }
 
 // Function UW-MatchEndWidget.UW-MatchEndWidget_C.K2_ShowFinalResult
-inline void UUW-MatchEndWidget_C::K2_ShowFinalResult(struct Unknown& FinalResult) {
+inline void UUW-MatchEndWidget_C::K2_ShowFinalResult(struct FMatchEndFinalResult& FinalResult) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MatchEndWidget.UW-MatchEndWidget_C.K2_ShowFinalResult");
 
 	struct K2_ShowFinalResult_Params {
-		struct Unknown& FinalResult;
+		struct FMatchEndFinalResult& FinalResult;
 	}; K2_ShowFinalResult_Params Params;
 
 
@@ -144,12 +144,12 @@ inline void UUW-MatchEndWidget_C::Construct() {
 }
 
 // Function UW-MatchEndWidget.UW-MatchEndWidget_C.K2_ShowMatchEndAnimation
-inline void UUW-MatchEndWidget_C::K2_ShowMatchEndAnimation(struct Unknown& MatchEndAnimation, struct Unknown& SimpleResult, char bIsRetired) {
+inline void UUW-MatchEndWidget_C::K2_ShowMatchEndAnimation(struct FMatchEndAnimation& MatchEndAnimation, struct FMatchEndSimpleResult& SimpleResult, char bIsRetired) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MatchEndWidget.UW-MatchEndWidget_C.K2_ShowMatchEndAnimation");
 
 	struct K2_ShowMatchEndAnimation_Params {
-		struct Unknown& MatchEndAnimation;
-		struct Unknown& SimpleResult;
+		struct FMatchEndAnimation& MatchEndAnimation;
+		struct FMatchEndSimpleResult& SimpleResult;
 		char bIsRetired;
 	}; K2_ShowMatchEndAnimation_Params Params;
 

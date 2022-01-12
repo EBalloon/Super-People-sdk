@@ -81,11 +81,11 @@ class UMediaComponent : public UActorComponent {
 
 public:
 
-	struct Unknown MediaTexture; // 0xB0 (8)
-	struct Unknown MediaPlayer; // 0xB8 (8)
+	struct UMediaTexture MediaTexture; // 0xB0 (8)
+	struct UMediaPlayer MediaPlayer; // 0xB8 (8)
 
-	struct Unknown GetMediaTexture(); // Function MediaAssets.MediaComponent.GetMediaTexture(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C4A80>
-	struct Unknown GetMediaPlayer(); // Function MediaAssets.MediaComponent.GetMediaPlayer(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CBF730>
+	struct UMediaTexture GetMediaTexture(); // Function MediaAssets.MediaComponent.GetMediaTexture(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C4A80>
+	struct UMediaPlayer GetMediaPlayer(); // Function MediaAssets.MediaComponent.GetMediaPlayer(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CBF730>
 };
 
 // Class MediaAssets.MediaPlayer
@@ -101,38 +101,38 @@ public:
 	struct FMulticastInlineDelegate OnPlaybackSuspended; // 0x78 (16)
 	struct FMulticastInlineDelegate OnSeekCompleted; // 0x88 (16)
 	struct FMulticastInlineDelegate OnTracksChanged; // 0x98 (16)
-	struct Unknown CacheAhead; // 0xA8 (8)
-	struct Unknown CacheBehind; // 0xB0 (8)
-	struct Unknown CacheBehindGame; // 0xB8 (8)
+	struct FTimespan CacheAhead; // 0xA8 (8)
+	struct FTimespan CacheBehind; // 0xB0 (8)
+	struct FTimespan CacheBehindGame; // 0xB8 (8)
 	char NativeAudioOut : 0; // 0xC0 (1)
 	char PlayOnOpen : 0; // 0xC1 (1)
 	char Shuffle : 0; // 0xC4 (1)
 	char Loop : 0; // 0xC4 (1)
-	struct Unknown Playlist; // 0xC8 (8)
+	struct UMediaPlaylist Playlist; // 0xC8 (8)
 	int32_t PlaylistIndex; // 0xD0 (4)
-	struct Unknown TimeDelay; // 0xD8 (8)
+	struct FTimespan TimeDelay; // 0xD8 (8)
 	float HorizontalFieldOfView; // 0xE0 (4)
 	float VerticalFieldOfView; // 0xE4 (4)
-	struct Unknown ViewRotation; // 0xE8 (12)
-	struct Unknown playerGUID; // 0x120 (16)
-	struct Unknown OwnerWidget; // 0x138 (8)
+	struct FRotator ViewRotation; // 0xE8 (12)
+	struct FGuid playerGUID; // 0x120 (16)
+	struct UUserWidget OwnerWidget; // 0x138 (8)
 
 	char SupportsSeeking(); // Function MediaAssets.MediaPlayer.SupportsSeeking(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CC2560>
 	char SupportsScrubbing(); // Function MediaAssets.MediaPlayer.SupportsScrubbing(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CC2530>
 	char SupportsRate(float Rate, char Unthinned); // Function MediaAssets.MediaPlayer.SupportsRate(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CC2460>
-	char SetViewRotation(struct Unknown& Rotation, char Absolute); // Function MediaAssets.MediaPlayer.SetViewRotation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3CC2380>
+	char SetViewRotation(struct FRotator& Rotation, char Absolute); // Function MediaAssets.MediaPlayer.SetViewRotation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3CC2380>
 	char SetViewField(float Horizontal, float Vertical, char Absolute); // Function MediaAssets.MediaPlayer.SetViewField(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC2270>
 	char SetVideoTrackFrameRate(int32_t TrackIndex, int32_t FormatIndex, float FrameRate); // Function MediaAssets.MediaPlayer.SetVideoTrackFrameRate(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC2170>
-	char SetTrackFormat(enum class Unknow TrackType, int32_t TrackIndex, int32_t FormatIndex); // Function MediaAssets.MediaPlayer.SetTrackFormat(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC2070>
-	void SetTimeDelay(struct Unknown TimeDelay); // Function MediaAssets.MediaPlayer.SetTimeDelay(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3CC1FF0>
+	char SetTrackFormat(enum class EMediaPlayerTrack TrackType, int32_t TrackIndex, int32_t FormatIndex); // Function MediaAssets.MediaPlayer.SetTrackFormat(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC2070>
+	void SetTimeDelay(struct FTimespan TimeDelay); // Function MediaAssets.MediaPlayer.SetTimeDelay(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3CC1FF0>
 	char SetRate(float Rate); // Function MediaAssets.MediaPlayer.SetRate(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC1E40>
 	char SetNativeVolume(float Volume); // Function MediaAssets.MediaPlayer.SetNativeVolume(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC1DB0>
-	void SetMediaOptions(struct Unknown options); // Function MediaAssets.MediaPlayer.SetMediaOptions(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC1C30>
+	void SetMediaOptions(struct UMediaSource options); // Function MediaAssets.MediaPlayer.SetMediaOptions(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC1C30>
 	char SetLooping(char Looping); // Function MediaAssets.MediaPlayer.SetLooping(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC1830>
 	void SetDesiredPlayerName(struct FName playerName); // Function MediaAssets.MediaPlayer.SetDesiredPlayerName(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC1530>
-	void SetBlockOnTime(struct Unknown& Time); // Function MediaAssets.MediaPlayer.SetBlockOnTime(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3CC14A0>
-	char SelectTrack(enum class Unknow TrackType, int32_t TrackIndex); // Function MediaAssets.MediaPlayer.SelectTrack(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC13E0>
-	char Seek(struct Unknown& Time); // Function MediaAssets.MediaPlayer.Seek(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3CC1340>
+	void SetBlockOnTime(struct FTimespan& Time); // Function MediaAssets.MediaPlayer.SetBlockOnTime(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3CC14A0>
+	char SelectTrack(enum class EMediaPlayerTrack TrackType, int32_t TrackIndex); // Function MediaAssets.MediaPlayer.SelectTrack(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC13E0>
+	char Seek(struct FTimespan& Time); // Function MediaAssets.MediaPlayer.Seek(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3CC1340>
 	char Rewind(); // Function MediaAssets.MediaPlayer.Rewind(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC1310>
 	char Reopen(); // Function MediaAssets.MediaPlayer.Reopen(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC1220>
 	char Previous(); // Function MediaAssets.MediaPlayer.Previous(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC10D0>
@@ -140,12 +140,12 @@ public:
 	char Play(); // Function MediaAssets.MediaPlayer.Play(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC1080>
 	char Pause(); // Function MediaAssets.MediaPlayer.Pause(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC1050>
 	char OpenUrl(struct FString URL); // Function MediaAssets.MediaPlayer.OpenUrl(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC0FA0>
-	char OpenSourceWithOptions(struct Unknown MediaSource, struct Unknown& options); // Function MediaAssets.MediaPlayer.OpenSourceWithOptions(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3CC0EA0>
-	void OpenSourceLatent(struct Unknown WorldContextObject, struct Unknown LatentInfo, struct Unknown MediaSource, struct Unknown& options, char& bSuccess); // Function MediaAssets.MediaPlayer.OpenSourceLatent(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3CC0CC0>
-	char OpenSourceForWidget(struct Unknown MediaSource, struct Unknown NewOwnerWidget); // Function MediaAssets.MediaPlayer.OpenSourceForWidget(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC0C00>
-	char OpenSource(struct Unknown MediaSource); // Function MediaAssets.MediaPlayer.OpenSource(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC0B70>
-	char OpenPlaylistIndex(struct Unknown InPlaylist, int32_t Index); // Function MediaAssets.MediaPlayer.OpenPlaylistIndex(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC0AB0>
-	char OpenPlaylist(struct Unknown InPlaylist); // Function MediaAssets.MediaPlayer.OpenPlaylist(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC0A10>
+	char OpenSourceWithOptions(struct UMediaSource MediaSource, struct FMediaPlayerOptions& options); // Function MediaAssets.MediaPlayer.OpenSourceWithOptions(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3CC0EA0>
+	void OpenSourceLatent(struct Object WorldContextObject, struct FLatentActionInfo LatentInfo, struct UMediaSource MediaSource, struct FMediaPlayerOptions& options, char& bSuccess); // Function MediaAssets.MediaPlayer.OpenSourceLatent(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3CC0CC0>
+	char OpenSourceForWidget(struct UMediaSource MediaSource, struct UUserWidget NewOwnerWidget); // Function MediaAssets.MediaPlayer.OpenSourceForWidget(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC0C00>
+	char OpenSource(struct UMediaSource MediaSource); // Function MediaAssets.MediaPlayer.OpenSource(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC0B70>
+	char OpenPlaylistIndex(struct UMediaPlaylist InPlaylist, int32_t Index); // Function MediaAssets.MediaPlayer.OpenPlaylistIndex(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC0AB0>
+	char OpenPlaylist(struct UMediaPlaylist InPlaylist); // Function MediaAssets.MediaPlayer.OpenPlaylist(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC0A10>
 	char OpenFile(struct FString FilePath); // Function MediaAssets.MediaPlayer.OpenFile(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC0960>
 	char Next(); // Function MediaAssets.MediaPlayer.Next(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC0910>
 	char IsReady(); // Function MediaAssets.MediaPlayer.IsReady(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CC08E0>
@@ -157,39 +157,39 @@ public:
 	char IsClosed(); // Function MediaAssets.MediaPlayer.IsClosed(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CC07C0>
 	char IsBuffering(); // Function MediaAssets.MediaPlayer.IsBuffering(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CC0790>
 	char HasError(); // Function MediaAssets.MediaPlayer.HasError(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CC06A0>
-	struct Unknown GetViewRotation(); // Function MediaAssets.MediaPlayer.GetViewRotation(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CC0630>
+	struct FRotator GetViewRotation(); // Function MediaAssets.MediaPlayer.GetViewRotation(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CC0630>
 	struct FString GetVideoTrackType(int32_t TrackIndex, int32_t FormatIndex); // Function MediaAssets.MediaPlayer.GetVideoTrackType(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CC0530>
-	struct Unknown GetVideoTrackFrameRates(int32_t TrackIndex, int32_t FormatIndex); // Function MediaAssets.MediaPlayer.GetVideoTrackFrameRates(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CC0460>
+	struct FFloatRange GetVideoTrackFrameRates(int32_t TrackIndex, int32_t FormatIndex); // Function MediaAssets.MediaPlayer.GetVideoTrackFrameRates(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CC0460>
 	float GetVideoTrackFrameRate(int32_t TrackIndex, int32_t FormatIndex); // Function MediaAssets.MediaPlayer.GetVideoTrackFrameRate(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CC03A0>
-	struct Unknown GetVideoTrackDimensions(int32_t TrackIndex, int32_t FormatIndex); // Function MediaAssets.MediaPlayer.GetVideoTrackDimensions(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CC02D0>
+	struct FIntPoint GetVideoTrackDimensions(int32_t TrackIndex, int32_t FormatIndex); // Function MediaAssets.MediaPlayer.GetVideoTrackDimensions(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CC02D0>
 	float GetVideoTrackAspectRatio(int32_t TrackIndex, int32_t FormatIndex); // Function MediaAssets.MediaPlayer.GetVideoTrackAspectRatio(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CC0210>
 	float GetVerticalFieldOfView(); // Function MediaAssets.MediaPlayer.GetVerticalFieldOfView(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CC01E0>
 	struct FString GetUrl(); // Function MediaAssets.MediaPlayer.GetUrl(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CC0120>
-	struct FString GetTrackLanguage(enum class Unknow TrackType, int32_t TrackIndex); // Function MediaAssets.MediaPlayer.GetTrackLanguage(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CC0010>
-	int32_t GetTrackFormat(enum class Unknow TrackType, int32_t TrackIndex); // Function MediaAssets.MediaPlayer.GetTrackFormat(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CBFF50>
-	struct FText GetTrackDisplayName(enum class Unknow TrackType, int32_t TrackIndex); // Function MediaAssets.MediaPlayer.GetTrackDisplayName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CBFE30>
-	struct Unknown GetTimeDelay(); // Function MediaAssets.MediaPlayer.GetTimeDelay(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CBFDF0>
-	struct Unknown GetTime(); // Function MediaAssets.MediaPlayer.GetTime(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CBFDB0>
-	void GetSupportedRates(struct TArray<Unknown>& OutRates, char Unthinned); // Function MediaAssets.MediaPlayer.GetSupportedRates(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CBFCB0>
-	int32_t GetSelectedTrack(enum class Unknow TrackType); // Function MediaAssets.MediaPlayer.GetSelectedTrack(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CBFBA0>
+	struct FString GetTrackLanguage(enum class EMediaPlayerTrack TrackType, int32_t TrackIndex); // Function MediaAssets.MediaPlayer.GetTrackLanguage(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CC0010>
+	int32_t GetTrackFormat(enum class EMediaPlayerTrack TrackType, int32_t TrackIndex); // Function MediaAssets.MediaPlayer.GetTrackFormat(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CBFF50>
+	struct FText GetTrackDisplayName(enum class EMediaPlayerTrack TrackType, int32_t TrackIndex); // Function MediaAssets.MediaPlayer.GetTrackDisplayName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CBFE30>
+	struct FTimespan GetTimeDelay(); // Function MediaAssets.MediaPlayer.GetTimeDelay(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CBFDF0>
+	struct FTimespan GetTime(); // Function MediaAssets.MediaPlayer.GetTime(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CBFDB0>
+	void GetSupportedRates(struct TArray<struct FFloatRange>& OutRates, char Unthinned); // Function MediaAssets.MediaPlayer.GetSupportedRates(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CBFCB0>
+	int32_t GetSelectedTrack(enum class EMediaPlayerTrack TrackType); // Function MediaAssets.MediaPlayer.GetSelectedTrack(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CBFBA0>
 	float GetRate(); // Function MediaAssets.MediaPlayer.GetRate(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CBFB70>
 	int32_t GetPlaylistIndex(); // Function MediaAssets.MediaPlayer.GetPlaylistIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CBFA10>
-	struct Unknown GetPlaylist(); // Function MediaAssets.MediaPlayer.GetPlaylist(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CBF9F0>
+	struct UMediaPlaylist GetPlaylist(); // Function MediaAssets.MediaPlayer.GetPlaylist(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CBF9F0>
 	struct FName GetPlayerName(); // Function MediaAssets.MediaPlayer.GetPlayerName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CBF9B0>
-	int32_t GetNumTracks(enum class Unknow TrackType); // Function MediaAssets.MediaPlayer.GetNumTracks(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CBF920>
-	int32_t GetNumTrackFormats(enum class Unknow TrackType, int32_t TrackIndex); // Function MediaAssets.MediaPlayer.GetNumTrackFormats(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CBF860>
+	int32_t GetNumTracks(enum class EMediaPlayerTrack TrackType); // Function MediaAssets.MediaPlayer.GetNumTracks(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CBF920>
+	int32_t GetNumTrackFormats(enum class EMediaPlayerTrack TrackType, int32_t TrackIndex); // Function MediaAssets.MediaPlayer.GetNumTrackFormats(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CBF860>
 	struct FText GetMediaName(); // Function MediaAssets.MediaPlayer.GetMediaName(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CBF690>
-	struct Unknown GetLastVideoSampleProcessedTime(); // Function MediaAssets.MediaPlayer.GetLastVideoSampleProcessedTime(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CBF650>
-	struct Unknown GetLastAudioSampleProcessedTime(); // Function MediaAssets.MediaPlayer.GetLastAudioSampleProcessedTime(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CBF610>
+	struct FTimespan GetLastVideoSampleProcessedTime(); // Function MediaAssets.MediaPlayer.GetLastVideoSampleProcessedTime(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CBF650>
+	struct FTimespan GetLastAudioSampleProcessedTime(); // Function MediaAssets.MediaPlayer.GetLastAudioSampleProcessedTime(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CBF610>
 	float GetHorizontalFieldOfView(); // Function MediaAssets.MediaPlayer.GetHorizontalFieldOfView(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CBF5E0>
-	struct Unknown GetDuration(); // Function MediaAssets.MediaPlayer.GetDuration(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CBF540>
+	struct FTimespan GetDuration(); // Function MediaAssets.MediaPlayer.GetDuration(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CBF540>
 	struct FName GetDesiredPlayerName(); // Function MediaAssets.MediaPlayer.GetDesiredPlayerName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CBF500>
 	struct FString GetAudioTrackType(int32_t TrackIndex, int32_t FormatIndex); // Function MediaAssets.MediaPlayer.GetAudioTrackType(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CBF400>
 	int32_t GetAudioTrackSampleRate(int32_t TrackIndex, int32_t FormatIndex); // Function MediaAssets.MediaPlayer.GetAudioTrackSampleRate(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CBF340>
 	int32_t GetAudioTrackChannels(int32_t TrackIndex, int32_t FormatIndex); // Function MediaAssets.MediaPlayer.GetAudioTrackChannels(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CBF280>
 	void Close(); // Function MediaAssets.MediaPlayer.Close(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CBEE40>
 	char CanPlayUrl(struct FString URL); // Function MediaAssets.MediaPlayer.CanPlayUrl(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CBED90>
-	char CanPlaySource(struct Unknown MediaSource); // Function MediaAssets.MediaPlayer.CanPlaySource(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CBED00>
+	char CanPlaySource(struct UMediaSource MediaSource); // Function MediaAssets.MediaPlayer.CanPlaySource(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CBED00>
 	char CanPause(); // Function MediaAssets.MediaPlayer.CanPause(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CBECD0>
 };
 
@@ -198,20 +198,20 @@ class UMediaPlaylist : public Object {
 
 public:
 
-	struct TArray<Unknown> Items; // 0x28 (16)
+	struct TArray<struct UMediaSource> Items; // 0x28 (16)
 
-	char Replace(int32_t Index, struct Unknown Replacement); // Function MediaAssets.MediaPlaylist.Replace(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC1250>
+	char Replace(int32_t Index, struct UMediaSource Replacement); // Function MediaAssets.MediaPlaylist.Replace(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC1250>
 	char RemoveAt(int32_t Index); // Function MediaAssets.MediaPlaylist.RemoveAt(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC1190>
-	char Remove(struct Unknown MediaSource); // Function MediaAssets.MediaPlaylist.Remove(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC1100>
+	char Remove(struct UMediaSource MediaSource); // Function MediaAssets.MediaPlaylist.Remove(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC1100>
 	int32_t Num(); // Function MediaAssets.MediaPlaylist.Num(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC0940>
-	void Insert(struct Unknown MediaSource, int32_t Index); // Function MediaAssets.MediaPlaylist.Insert(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC06D0>
-	struct Unknown GetRandom(int32_t& OutIndex); // Function MediaAssets.MediaPlaylist.GetRandom(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3CBFAD0>
-	struct Unknown GetPrevious(int32_t& InOutIndex); // Function MediaAssets.MediaPlaylist.GetPrevious(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3CBFA30>
-	struct Unknown GetNext(int32_t& InOutIndex); // Function MediaAssets.MediaPlaylist.GetNext(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3CBF7C0>
-	struct Unknown Get(int32_t Index); // Function MediaAssets.MediaPlaylist.Get(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x13662D0>
+	void Insert(struct UMediaSource MediaSource, int32_t Index); // Function MediaAssets.MediaPlaylist.Insert(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC06D0>
+	struct UMediaSource GetRandom(int32_t& OutIndex); // Function MediaAssets.MediaPlaylist.GetRandom(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3CBFAD0>
+	struct UMediaSource GetPrevious(int32_t& InOutIndex); // Function MediaAssets.MediaPlaylist.GetPrevious(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3CBFA30>
+	struct UMediaSource GetNext(int32_t& InOutIndex); // Function MediaAssets.MediaPlaylist.GetNext(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3CBF7C0>
+	struct UMediaSource Get(int32_t Index); // Function MediaAssets.MediaPlaylist.Get(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x13662D0>
 	char AddUrl(struct FString URL); // Function MediaAssets.MediaPlaylist.AddUrl(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CBE9D0>
 	char AddFile(struct FString FilePath); // Function MediaAssets.MediaPlaylist.AddFile(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CBE920>
-	char Add(struct Unknown MediaSource); // Function MediaAssets.MediaPlaylist.Add(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CBE890>
+	char Add(struct UMediaSource MediaSource); // Function MediaAssets.MediaPlaylist.Add(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CBE890>
 };
 
 // Class MediaAssets.MediaSoundComponent
@@ -219,21 +219,21 @@ class UMediaSoundComponent : public USynthComponent {
 
 public:
 
-	enum class Unknow Channels; // 0x700 (4)
+	enum class EMediaSoundChannels Channels; // 0x700 (4)
 	char DynamicRateAdjustment : 0; // 0x704 (1)
 	float RateAdjustmentFactor; // 0x708 (4)
-	struct Unknown RateAdjustmentRange; // 0x70C (16)
-	struct Unknown MediaPlayer; // 0x720 (8)
+	struct FFloatRange RateAdjustmentRange; // 0x70C (16)
+	struct UMediaPlayer MediaPlayer; // 0x720 (8)
 
-	void SetSpectralAnalysisSettings(struct TArray<Unknown> InFrequenciesToAnalyze, enum class Unknow InFFTSize); // Function MediaAssets.MediaSoundComponent.SetSpectralAnalysisSettings(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC1ED0>
-	void SetMediaPlayer(struct Unknown NewMediaPlayer); // Function MediaAssets.MediaSoundComponent.SetMediaPlayer(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC1CB0>
+	void SetSpectralAnalysisSettings(struct TArray<float> InFrequenciesToAnalyze, enum class EMediaSoundComponentFFTSize InFFTSize); // Function MediaAssets.MediaSoundComponent.SetSpectralAnalysisSettings(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC1ED0>
+	void SetMediaPlayer(struct UMediaPlayer NewMediaPlayer); // Function MediaAssets.MediaSoundComponent.SetMediaPlayer(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC1CB0>
 	void SetEnvelopeFollowingsettings(int32_t AttackTimeMsec, int32_t ReleaseTimeMsec); // Function MediaAssets.MediaSoundComponent.SetEnvelopeFollowingsettings(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC16D0>
 	void SetEnableSpectralAnalysis(char bInSpectralAnalysisEnabled); // Function MediaAssets.MediaSoundComponent.SetEnableSpectralAnalysis(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC1640>
 	void SetEnableEnvelopeFollowing(char bInEnvelopeFollowing); // Function MediaAssets.MediaSoundComponent.SetEnableEnvelopeFollowing(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC15B0>
-	struct TArray<Unknown> GetSpectralData(); // Function MediaAssets.MediaSoundComponent.GetSpectralData(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CBFC30>
-	struct Unknown GetMediaPlayer(); // Function MediaAssets.MediaSoundComponent.GetMediaPlayer(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CBF760>
+	struct TArray<struct FMediaSoundComponentSpectralData> GetSpectralData(); // Function MediaAssets.MediaSoundComponent.GetSpectralData(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CBFC30>
+	struct UMediaPlayer GetMediaPlayer(); // Function MediaAssets.MediaSoundComponent.GetMediaPlayer(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CBF760>
 	float GetEnvelopeValue(); // Function MediaAssets.MediaSoundComponent.GetEnvelopeValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CBF580>
-	char BP_GetAttenuationSettingsToApply(struct Unknown& OutAttenuationSettings); // Function MediaAssets.MediaSoundComponent.BP_GetAttenuationSettingsToApply(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3CBEA80>
+	char BP_GetAttenuationSettingsToApply(struct FSoundAttenuationSettings& OutAttenuationSettings); // Function MediaAssets.MediaSoundComponent.BP_GetAttenuationSettingsToApply(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3CBEA80>
 };
 
 // Class MediaAssets.MediaTexture
@@ -244,14 +244,14 @@ public:
 	char AddressX; // 0xB8 (1)
 	char AddressY; // 0xB9 (1)
 	char AutoClear : 0; // 0xBA (1)
-	struct Unknown ClearColor; // 0xBC (16)
+	struct FLinearColor ClearColor; // 0xBC (16)
 	char EnableGenMips : 0; // 0xCC (1)
 	char NumMips; // 0xCD (1)
-	struct Unknown MediaPlayer; // 0xD0 (8)
+	struct UMediaPlayer MediaPlayer; // 0xD0 (8)
 
-	void SetMediaPlayer(struct Unknown NewMediaPlayer); // Function MediaAssets.MediaTexture.SetMediaPlayer(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC1D30>
+	void SetMediaPlayer(struct UMediaPlayer NewMediaPlayer); // Function MediaAssets.MediaTexture.SetMediaPlayer(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CC1D30>
 	int32_t GetWidth(); // Function MediaAssets.MediaTexture.GetWidth(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CC0670>
-	struct Unknown GetMediaPlayer(); // Function MediaAssets.MediaTexture.GetMediaPlayer(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CBF790>
+	struct UMediaPlayer GetMediaPlayer(); // Function MediaAssets.MediaTexture.GetMediaPlayer(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CBF790>
 	int32_t GetHeight(); // Function MediaAssets.MediaTexture.GetHeight(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CBF5B0>
 	float GetAspectRatio(); // Function MediaAssets.MediaTexture.GetAspectRatio(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CBF250>
 };
@@ -261,7 +261,7 @@ class UPlatformMediaSource : public UMediaSource {
 
 public:
 
-	struct Unknown MediaSource; // 0x80 (8)
+	struct UMediaSource MediaSource; // 0x80 (8)
 };
 
 // Class MediaAssets.StreamMediaSource
@@ -310,12 +310,12 @@ inline void UFileMediaSource::SetFilePath(struct FString Path) {
 }
 
 // Function MediaAssets.MediaComponent.GetMediaTexture
-inline struct Unknown UMediaComponent::GetMediaTexture() {
+inline struct UMediaTexture UMediaComponent::GetMediaTexture() {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaComponent.GetMediaTexture");
 
 	struct GetMediaTexture_Params {
 		
-		struct Unknown ReturnValue;
+		struct UMediaTexture ReturnValue;
 
 	}; GetMediaTexture_Params Params;
 
@@ -328,12 +328,12 @@ inline struct Unknown UMediaComponent::GetMediaTexture() {
 }
 
 // Function MediaAssets.MediaComponent.GetMediaPlayer
-inline struct Unknown UMediaComponent::GetMediaPlayer() {
+inline struct UMediaPlayer UMediaComponent::GetMediaPlayer() {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaComponent.GetMediaPlayer");
 
 	struct GetMediaPlayer_Params {
 		
-		struct Unknown ReturnValue;
+		struct UMediaPlayer ReturnValue;
 
 	}; GetMediaPlayer_Params Params;
 
@@ -403,11 +403,11 @@ inline char UMediaPlayer::SupportsRate(float Rate, char Unthinned) {
 }
 
 // Function MediaAssets.MediaPlayer.SetViewRotation
-inline char UMediaPlayer::SetViewRotation(struct Unknown& Rotation, char Absolute) {
+inline char UMediaPlayer::SetViewRotation(struct FRotator& Rotation, char Absolute) {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.SetViewRotation");
 
 	struct SetViewRotation_Params {
-		struct Unknown& Rotation;
+		struct FRotator& Rotation;
 		char Absolute;
 		char ReturnValue;
 
@@ -472,11 +472,11 @@ inline char UMediaPlayer::SetVideoTrackFrameRate(int32_t TrackIndex, int32_t For
 }
 
 // Function MediaAssets.MediaPlayer.SetTrackFormat
-inline char UMediaPlayer::SetTrackFormat(enum class Unknow TrackType, int32_t TrackIndex, int32_t FormatIndex) {
+inline char UMediaPlayer::SetTrackFormat(enum class EMediaPlayerTrack TrackType, int32_t TrackIndex, int32_t FormatIndex) {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.SetTrackFormat");
 
 	struct SetTrackFormat_Params {
-		enum class Unknow TrackType;
+		enum class EMediaPlayerTrack TrackType;
 		int32_t TrackIndex;
 		int32_t FormatIndex;
 		char ReturnValue;
@@ -495,11 +495,11 @@ inline char UMediaPlayer::SetTrackFormat(enum class Unknow TrackType, int32_t Tr
 }
 
 // Function MediaAssets.MediaPlayer.SetTimeDelay
-inline void UMediaPlayer::SetTimeDelay(struct Unknown TimeDelay) {
+inline void UMediaPlayer::SetTimeDelay(struct FTimespan TimeDelay) {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.SetTimeDelay");
 
 	struct SetTimeDelay_Params {
-		struct Unknown TimeDelay;
+		struct FTimespan TimeDelay;
 	}; SetTimeDelay_Params Params;
 
 	Params.TimeDelay = TimeDelay;
@@ -548,11 +548,11 @@ inline char UMediaPlayer::SetNativeVolume(float Volume) {
 }
 
 // Function MediaAssets.MediaPlayer.SetMediaOptions
-inline void UMediaPlayer::SetMediaOptions(struct Unknown options) {
+inline void UMediaPlayer::SetMediaOptions(struct UMediaSource options) {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.SetMediaOptions");
 
 	struct SetMediaOptions_Params {
-		struct Unknown options;
+		struct UMediaSource options;
 	}; SetMediaOptions_Params Params;
 
 	Params.options = options;
@@ -597,11 +597,11 @@ inline void UMediaPlayer::SetDesiredPlayerName(struct FName playerName) {
 }
 
 // Function MediaAssets.MediaPlayer.SetBlockOnTime
-inline void UMediaPlayer::SetBlockOnTime(struct Unknown& Time) {
+inline void UMediaPlayer::SetBlockOnTime(struct FTimespan& Time) {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.SetBlockOnTime");
 
 	struct SetBlockOnTime_Params {
-		struct Unknown& Time;
+		struct FTimespan& Time;
 	}; SetBlockOnTime_Params Params;
 
 
@@ -614,11 +614,11 @@ inline void UMediaPlayer::SetBlockOnTime(struct Unknown& Time) {
 }
 
 // Function MediaAssets.MediaPlayer.SelectTrack
-inline char UMediaPlayer::SelectTrack(enum class Unknow TrackType, int32_t TrackIndex) {
+inline char UMediaPlayer::SelectTrack(enum class EMediaPlayerTrack TrackType, int32_t TrackIndex) {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.SelectTrack");
 
 	struct SelectTrack_Params {
-		enum class Unknow TrackType;
+		enum class EMediaPlayerTrack TrackType;
 		int32_t TrackIndex;
 		char ReturnValue;
 
@@ -635,11 +635,11 @@ inline char UMediaPlayer::SelectTrack(enum class Unknow TrackType, int32_t Track
 }
 
 // Function MediaAssets.MediaPlayer.Seek
-inline char UMediaPlayer::Seek(struct Unknown& Time) {
+inline char UMediaPlayer::Seek(struct FTimespan& Time) {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.Seek");
 
 	struct Seek_Params {
-		struct Unknown& Time;
+		struct FTimespan& Time;
 		char ReturnValue;
 
 	}; Seek_Params Params;
@@ -779,12 +779,12 @@ inline char UMediaPlayer::OpenUrl(struct FString URL) {
 }
 
 // Function MediaAssets.MediaPlayer.OpenSourceWithOptions
-inline char UMediaPlayer::OpenSourceWithOptions(struct Unknown MediaSource, struct Unknown& options) {
+inline char UMediaPlayer::OpenSourceWithOptions(struct UMediaSource MediaSource, struct FMediaPlayerOptions& options) {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.OpenSourceWithOptions");
 
 	struct OpenSourceWithOptions_Params {
-		struct Unknown MediaSource;
-		struct Unknown& options;
+		struct UMediaSource MediaSource;
+		struct FMediaPlayerOptions& options;
 		char ReturnValue;
 
 	}; OpenSourceWithOptions_Params Params;
@@ -802,14 +802,14 @@ inline char UMediaPlayer::OpenSourceWithOptions(struct Unknown MediaSource, stru
 }
 
 // Function MediaAssets.MediaPlayer.OpenSourceLatent
-inline void UMediaPlayer::OpenSourceLatent(struct Unknown WorldContextObject, struct Unknown LatentInfo, struct Unknown MediaSource, struct Unknown& options, char& bSuccess) {
+inline void UMediaPlayer::OpenSourceLatent(struct Object WorldContextObject, struct FLatentActionInfo LatentInfo, struct UMediaSource MediaSource, struct FMediaPlayerOptions& options, char& bSuccess) {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.OpenSourceLatent");
 
 	struct OpenSourceLatent_Params {
-		struct Unknown WorldContextObject;
-		struct Unknown LatentInfo;
-		struct Unknown MediaSource;
-		struct Unknown& options;
+		struct Object WorldContextObject;
+		struct FLatentActionInfo LatentInfo;
+		struct UMediaSource MediaSource;
+		struct FMediaPlayerOptions& options;
 		char& bSuccess;
 	}; OpenSourceLatent_Params Params;
 
@@ -827,12 +827,12 @@ inline void UMediaPlayer::OpenSourceLatent(struct Unknown WorldContextObject, st
 }
 
 // Function MediaAssets.MediaPlayer.OpenSourceForWidget
-inline char UMediaPlayer::OpenSourceForWidget(struct Unknown MediaSource, struct Unknown NewOwnerWidget) {
+inline char UMediaPlayer::OpenSourceForWidget(struct UMediaSource MediaSource, struct UUserWidget NewOwnerWidget) {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.OpenSourceForWidget");
 
 	struct OpenSourceForWidget_Params {
-		struct Unknown MediaSource;
-		struct Unknown NewOwnerWidget;
+		struct UMediaSource MediaSource;
+		struct UUserWidget NewOwnerWidget;
 		char ReturnValue;
 
 	}; OpenSourceForWidget_Params Params;
@@ -848,11 +848,11 @@ inline char UMediaPlayer::OpenSourceForWidget(struct Unknown MediaSource, struct
 }
 
 // Function MediaAssets.MediaPlayer.OpenSource
-inline char UMediaPlayer::OpenSource(struct Unknown MediaSource) {
+inline char UMediaPlayer::OpenSource(struct UMediaSource MediaSource) {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.OpenSource");
 
 	struct OpenSource_Params {
-		struct Unknown MediaSource;
+		struct UMediaSource MediaSource;
 		char ReturnValue;
 
 	}; OpenSource_Params Params;
@@ -867,11 +867,11 @@ inline char UMediaPlayer::OpenSource(struct Unknown MediaSource) {
 }
 
 // Function MediaAssets.MediaPlayer.OpenPlaylistIndex
-inline char UMediaPlayer::OpenPlaylistIndex(struct Unknown InPlaylist, int32_t Index) {
+inline char UMediaPlayer::OpenPlaylistIndex(struct UMediaPlaylist InPlaylist, int32_t Index) {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.OpenPlaylistIndex");
 
 	struct OpenPlaylistIndex_Params {
-		struct Unknown InPlaylist;
+		struct UMediaPlaylist InPlaylist;
 		int32_t Index;
 		char ReturnValue;
 
@@ -888,11 +888,11 @@ inline char UMediaPlayer::OpenPlaylistIndex(struct Unknown InPlaylist, int32_t I
 }
 
 // Function MediaAssets.MediaPlayer.OpenPlaylist
-inline char UMediaPlayer::OpenPlaylist(struct Unknown InPlaylist) {
+inline char UMediaPlayer::OpenPlaylist(struct UMediaPlaylist InPlaylist) {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.OpenPlaylist");
 
 	struct OpenPlaylist_Params {
-		struct Unknown InPlaylist;
+		struct UMediaPlaylist InPlaylist;
 		char ReturnValue;
 
 	}; OpenPlaylist_Params Params;
@@ -1106,12 +1106,12 @@ inline char UMediaPlayer::HasError() {
 }
 
 // Function MediaAssets.MediaPlayer.GetViewRotation
-inline struct Unknown UMediaPlayer::GetViewRotation() {
+inline struct FRotator UMediaPlayer::GetViewRotation() {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetViewRotation");
 
 	struct GetViewRotation_Params {
 		
-		struct Unknown ReturnValue;
+		struct FRotator ReturnValue;
 
 	}; GetViewRotation_Params Params;
 
@@ -1145,13 +1145,13 @@ inline struct FString UMediaPlayer::GetVideoTrackType(int32_t TrackIndex, int32_
 }
 
 // Function MediaAssets.MediaPlayer.GetVideoTrackFrameRates
-inline struct Unknown UMediaPlayer::GetVideoTrackFrameRates(int32_t TrackIndex, int32_t FormatIndex) {
+inline struct FFloatRange UMediaPlayer::GetVideoTrackFrameRates(int32_t TrackIndex, int32_t FormatIndex) {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetVideoTrackFrameRates");
 
 	struct GetVideoTrackFrameRates_Params {
 		int32_t TrackIndex;
 		int32_t FormatIndex;
-		struct Unknown ReturnValue;
+		struct FFloatRange ReturnValue;
 
 	}; GetVideoTrackFrameRates_Params Params;
 
@@ -1187,13 +1187,13 @@ inline float UMediaPlayer::GetVideoTrackFrameRate(int32_t TrackIndex, int32_t Fo
 }
 
 // Function MediaAssets.MediaPlayer.GetVideoTrackDimensions
-inline struct Unknown UMediaPlayer::GetVideoTrackDimensions(int32_t TrackIndex, int32_t FormatIndex) {
+inline struct FIntPoint UMediaPlayer::GetVideoTrackDimensions(int32_t TrackIndex, int32_t FormatIndex) {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetVideoTrackDimensions");
 
 	struct GetVideoTrackDimensions_Params {
 		int32_t TrackIndex;
 		int32_t FormatIndex;
-		struct Unknown ReturnValue;
+		struct FIntPoint ReturnValue;
 
 	}; GetVideoTrackDimensions_Params Params;
 
@@ -1265,11 +1265,11 @@ inline struct FString UMediaPlayer::GetUrl() {
 }
 
 // Function MediaAssets.MediaPlayer.GetTrackLanguage
-inline struct FString UMediaPlayer::GetTrackLanguage(enum class Unknow TrackType, int32_t TrackIndex) {
+inline struct FString UMediaPlayer::GetTrackLanguage(enum class EMediaPlayerTrack TrackType, int32_t TrackIndex) {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetTrackLanguage");
 
 	struct GetTrackLanguage_Params {
-		enum class Unknow TrackType;
+		enum class EMediaPlayerTrack TrackType;
 		int32_t TrackIndex;
 		struct FString ReturnValue;
 
@@ -1286,11 +1286,11 @@ inline struct FString UMediaPlayer::GetTrackLanguage(enum class Unknow TrackType
 }
 
 // Function MediaAssets.MediaPlayer.GetTrackFormat
-inline int32_t UMediaPlayer::GetTrackFormat(enum class Unknow TrackType, int32_t TrackIndex) {
+inline int32_t UMediaPlayer::GetTrackFormat(enum class EMediaPlayerTrack TrackType, int32_t TrackIndex) {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetTrackFormat");
 
 	struct GetTrackFormat_Params {
-		enum class Unknow TrackType;
+		enum class EMediaPlayerTrack TrackType;
 		int32_t TrackIndex;
 		int32_t ReturnValue;
 
@@ -1307,11 +1307,11 @@ inline int32_t UMediaPlayer::GetTrackFormat(enum class Unknow TrackType, int32_t
 }
 
 // Function MediaAssets.MediaPlayer.GetTrackDisplayName
-inline struct FText UMediaPlayer::GetTrackDisplayName(enum class Unknow TrackType, int32_t TrackIndex) {
+inline struct FText UMediaPlayer::GetTrackDisplayName(enum class EMediaPlayerTrack TrackType, int32_t TrackIndex) {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetTrackDisplayName");
 
 	struct GetTrackDisplayName_Params {
-		enum class Unknow TrackType;
+		enum class EMediaPlayerTrack TrackType;
 		int32_t TrackIndex;
 		struct FText ReturnValue;
 
@@ -1328,12 +1328,12 @@ inline struct FText UMediaPlayer::GetTrackDisplayName(enum class Unknow TrackTyp
 }
 
 // Function MediaAssets.MediaPlayer.GetTimeDelay
-inline struct Unknown UMediaPlayer::GetTimeDelay() {
+inline struct FTimespan UMediaPlayer::GetTimeDelay() {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetTimeDelay");
 
 	struct GetTimeDelay_Params {
 		
-		struct Unknown ReturnValue;
+		struct FTimespan ReturnValue;
 
 	}; GetTimeDelay_Params Params;
 
@@ -1346,12 +1346,12 @@ inline struct Unknown UMediaPlayer::GetTimeDelay() {
 }
 
 // Function MediaAssets.MediaPlayer.GetTime
-inline struct Unknown UMediaPlayer::GetTime() {
+inline struct FTimespan UMediaPlayer::GetTime() {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetTime");
 
 	struct GetTime_Params {
 		
-		struct Unknown ReturnValue;
+		struct FTimespan ReturnValue;
 
 	}; GetTime_Params Params;
 
@@ -1364,11 +1364,11 @@ inline struct Unknown UMediaPlayer::GetTime() {
 }
 
 // Function MediaAssets.MediaPlayer.GetSupportedRates
-inline void UMediaPlayer::GetSupportedRates(struct TArray<Unknown>& OutRates, char Unthinned) {
+inline void UMediaPlayer::GetSupportedRates(struct TArray<struct FFloatRange>& OutRates, char Unthinned) {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetSupportedRates");
 
 	struct GetSupportedRates_Params {
-		struct TArray<Unknown>& OutRates;
+		struct TArray<struct FFloatRange>& OutRates;
 		char Unthinned;
 	}; GetSupportedRates_Params Params;
 
@@ -1383,11 +1383,11 @@ inline void UMediaPlayer::GetSupportedRates(struct TArray<Unknown>& OutRates, ch
 }
 
 // Function MediaAssets.MediaPlayer.GetSelectedTrack
-inline int32_t UMediaPlayer::GetSelectedTrack(enum class Unknow TrackType) {
+inline int32_t UMediaPlayer::GetSelectedTrack(enum class EMediaPlayerTrack TrackType) {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetSelectedTrack");
 
 	struct GetSelectedTrack_Params {
-		enum class Unknow TrackType;
+		enum class EMediaPlayerTrack TrackType;
 		int32_t ReturnValue;
 
 	}; GetSelectedTrack_Params Params;
@@ -1438,12 +1438,12 @@ inline int32_t UMediaPlayer::GetPlaylistIndex() {
 }
 
 // Function MediaAssets.MediaPlayer.GetPlaylist
-inline struct Unknown UMediaPlayer::GetPlaylist() {
+inline struct UMediaPlaylist UMediaPlayer::GetPlaylist() {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetPlaylist");
 
 	struct GetPlaylist_Params {
 		
-		struct Unknown ReturnValue;
+		struct UMediaPlaylist ReturnValue;
 
 	}; GetPlaylist_Params Params;
 
@@ -1474,11 +1474,11 @@ inline struct FName UMediaPlayer::GetPlayerName() {
 }
 
 // Function MediaAssets.MediaPlayer.GetNumTracks
-inline int32_t UMediaPlayer::GetNumTracks(enum class Unknow TrackType) {
+inline int32_t UMediaPlayer::GetNumTracks(enum class EMediaPlayerTrack TrackType) {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetNumTracks");
 
 	struct GetNumTracks_Params {
-		enum class Unknow TrackType;
+		enum class EMediaPlayerTrack TrackType;
 		int32_t ReturnValue;
 
 	}; GetNumTracks_Params Params;
@@ -1493,11 +1493,11 @@ inline int32_t UMediaPlayer::GetNumTracks(enum class Unknow TrackType) {
 }
 
 // Function MediaAssets.MediaPlayer.GetNumTrackFormats
-inline int32_t UMediaPlayer::GetNumTrackFormats(enum class Unknow TrackType, int32_t TrackIndex) {
+inline int32_t UMediaPlayer::GetNumTrackFormats(enum class EMediaPlayerTrack TrackType, int32_t TrackIndex) {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetNumTrackFormats");
 
 	struct GetNumTrackFormats_Params {
-		enum class Unknow TrackType;
+		enum class EMediaPlayerTrack TrackType;
 		int32_t TrackIndex;
 		int32_t ReturnValue;
 
@@ -1532,12 +1532,12 @@ inline struct FText UMediaPlayer::GetMediaName() {
 }
 
 // Function MediaAssets.MediaPlayer.GetLastVideoSampleProcessedTime
-inline struct Unknown UMediaPlayer::GetLastVideoSampleProcessedTime() {
+inline struct FTimespan UMediaPlayer::GetLastVideoSampleProcessedTime() {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetLastVideoSampleProcessedTime");
 
 	struct GetLastVideoSampleProcessedTime_Params {
 		
-		struct Unknown ReturnValue;
+		struct FTimespan ReturnValue;
 
 	}; GetLastVideoSampleProcessedTime_Params Params;
 
@@ -1550,12 +1550,12 @@ inline struct Unknown UMediaPlayer::GetLastVideoSampleProcessedTime() {
 }
 
 // Function MediaAssets.MediaPlayer.GetLastAudioSampleProcessedTime
-inline struct Unknown UMediaPlayer::GetLastAudioSampleProcessedTime() {
+inline struct FTimespan UMediaPlayer::GetLastAudioSampleProcessedTime() {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetLastAudioSampleProcessedTime");
 
 	struct GetLastAudioSampleProcessedTime_Params {
 		
-		struct Unknown ReturnValue;
+		struct FTimespan ReturnValue;
 
 	}; GetLastAudioSampleProcessedTime_Params Params;
 
@@ -1586,12 +1586,12 @@ inline float UMediaPlayer::GetHorizontalFieldOfView() {
 }
 
 // Function MediaAssets.MediaPlayer.GetDuration
-inline struct Unknown UMediaPlayer::GetDuration() {
+inline struct FTimespan UMediaPlayer::GetDuration() {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetDuration");
 
 	struct GetDuration_Params {
 		
-		struct Unknown ReturnValue;
+		struct FTimespan ReturnValue;
 
 	}; GetDuration_Params Params;
 
@@ -1718,11 +1718,11 @@ inline char UMediaPlayer::CanPlayUrl(struct FString URL) {
 }
 
 // Function MediaAssets.MediaPlayer.CanPlaySource
-inline char UMediaPlayer::CanPlaySource(struct Unknown MediaSource) {
+inline char UMediaPlayer::CanPlaySource(struct UMediaSource MediaSource) {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.CanPlaySource");
 
 	struct CanPlaySource_Params {
-		struct Unknown MediaSource;
+		struct UMediaSource MediaSource;
 		char ReturnValue;
 
 	}; CanPlaySource_Params Params;
@@ -1755,12 +1755,12 @@ inline char UMediaPlayer::CanPause() {
 }
 
 // Function MediaAssets.MediaPlaylist.Replace
-inline char UMediaPlaylist::Replace(int32_t Index, struct Unknown Replacement) {
+inline char UMediaPlaylist::Replace(int32_t Index, struct UMediaSource Replacement) {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlaylist.Replace");
 
 	struct Replace_Params {
 		int32_t Index;
-		struct Unknown Replacement;
+		struct UMediaSource Replacement;
 		char ReturnValue;
 
 	}; Replace_Params Params;
@@ -1795,11 +1795,11 @@ inline char UMediaPlaylist::RemoveAt(int32_t Index) {
 }
 
 // Function MediaAssets.MediaPlaylist.Remove
-inline char UMediaPlaylist::Remove(struct Unknown MediaSource) {
+inline char UMediaPlaylist::Remove(struct UMediaSource MediaSource) {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlaylist.Remove");
 
 	struct Remove_Params {
-		struct Unknown MediaSource;
+		struct UMediaSource MediaSource;
 		char ReturnValue;
 
 	}; Remove_Params Params;
@@ -1832,11 +1832,11 @@ inline int32_t UMediaPlaylist::Num() {
 }
 
 // Function MediaAssets.MediaPlaylist.Insert
-inline void UMediaPlaylist::Insert(struct Unknown MediaSource, int32_t Index) {
+inline void UMediaPlaylist::Insert(struct UMediaSource MediaSource, int32_t Index) {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlaylist.Insert");
 
 	struct Insert_Params {
-		struct Unknown MediaSource;
+		struct UMediaSource MediaSource;
 		int32_t Index;
 	}; Insert_Params Params;
 
@@ -1849,12 +1849,12 @@ inline void UMediaPlaylist::Insert(struct Unknown MediaSource, int32_t Index) {
 }
 
 // Function MediaAssets.MediaPlaylist.GetRandom
-inline struct Unknown UMediaPlaylist::GetRandom(int32_t& OutIndex) {
+inline struct UMediaSource UMediaPlaylist::GetRandom(int32_t& OutIndex) {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlaylist.GetRandom");
 
 	struct GetRandom_Params {
 		int32_t& OutIndex;
-		struct Unknown ReturnValue;
+		struct UMediaSource ReturnValue;
 
 	}; GetRandom_Params Params;
 
@@ -1870,12 +1870,12 @@ inline struct Unknown UMediaPlaylist::GetRandom(int32_t& OutIndex) {
 }
 
 // Function MediaAssets.MediaPlaylist.GetPrevious
-inline struct Unknown UMediaPlaylist::GetPrevious(int32_t& InOutIndex) {
+inline struct UMediaSource UMediaPlaylist::GetPrevious(int32_t& InOutIndex) {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlaylist.GetPrevious");
 
 	struct GetPrevious_Params {
 		int32_t& InOutIndex;
-		struct Unknown ReturnValue;
+		struct UMediaSource ReturnValue;
 
 	}; GetPrevious_Params Params;
 
@@ -1891,12 +1891,12 @@ inline struct Unknown UMediaPlaylist::GetPrevious(int32_t& InOutIndex) {
 }
 
 // Function MediaAssets.MediaPlaylist.GetNext
-inline struct Unknown UMediaPlaylist::GetNext(int32_t& InOutIndex) {
+inline struct UMediaSource UMediaPlaylist::GetNext(int32_t& InOutIndex) {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlaylist.GetNext");
 
 	struct GetNext_Params {
 		int32_t& InOutIndex;
-		struct Unknown ReturnValue;
+		struct UMediaSource ReturnValue;
 
 	}; GetNext_Params Params;
 
@@ -1912,12 +1912,12 @@ inline struct Unknown UMediaPlaylist::GetNext(int32_t& InOutIndex) {
 }
 
 // Function MediaAssets.MediaPlaylist.Get
-inline struct Unknown UMediaPlaylist::Get(int32_t Index) {
+inline struct UMediaSource UMediaPlaylist::Get(int32_t Index) {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlaylist.Get");
 
 	struct Get_Params {
 		int32_t Index;
-		struct Unknown ReturnValue;
+		struct UMediaSource ReturnValue;
 
 	}; Get_Params Params;
 
@@ -1969,11 +1969,11 @@ inline char UMediaPlaylist::AddFile(struct FString FilePath) {
 }
 
 // Function MediaAssets.MediaPlaylist.Add
-inline char UMediaPlaylist::Add(struct Unknown MediaSource) {
+inline char UMediaPlaylist::Add(struct UMediaSource MediaSource) {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlaylist.Add");
 
 	struct Add_Params {
-		struct Unknown MediaSource;
+		struct UMediaSource MediaSource;
 		char ReturnValue;
 
 	}; Add_Params Params;
@@ -1988,12 +1988,12 @@ inline char UMediaPlaylist::Add(struct Unknown MediaSource) {
 }
 
 // Function MediaAssets.MediaSoundComponent.SetSpectralAnalysisSettings
-inline void UMediaSoundComponent::SetSpectralAnalysisSettings(struct TArray<Unknown> InFrequenciesToAnalyze, enum class Unknow InFFTSize) {
+inline void UMediaSoundComponent::SetSpectralAnalysisSettings(struct TArray<float> InFrequenciesToAnalyze, enum class EMediaSoundComponentFFTSize InFFTSize) {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaSoundComponent.SetSpectralAnalysisSettings");
 
 	struct SetSpectralAnalysisSettings_Params {
-		struct TArray<Unknown> InFrequenciesToAnalyze;
-		enum class Unknow InFFTSize;
+		struct TArray<float> InFrequenciesToAnalyze;
+		enum class EMediaSoundComponentFFTSize InFFTSize;
 	}; SetSpectralAnalysisSettings_Params Params;
 
 	Params.InFrequenciesToAnalyze = InFrequenciesToAnalyze;
@@ -2005,11 +2005,11 @@ inline void UMediaSoundComponent::SetSpectralAnalysisSettings(struct TArray<Unkn
 }
 
 // Function MediaAssets.MediaSoundComponent.SetMediaPlayer
-inline void UMediaSoundComponent::SetMediaPlayer(struct Unknown NewMediaPlayer) {
+inline void UMediaSoundComponent::SetMediaPlayer(struct UMediaPlayer NewMediaPlayer) {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaSoundComponent.SetMediaPlayer");
 
 	struct SetMediaPlayer_Params {
-		struct Unknown NewMediaPlayer;
+		struct UMediaPlayer NewMediaPlayer;
 	}; SetMediaPlayer_Params Params;
 
 	Params.NewMediaPlayer = NewMediaPlayer;
@@ -2067,12 +2067,12 @@ inline void UMediaSoundComponent::SetEnableEnvelopeFollowing(char bInEnvelopeFol
 }
 
 // Function MediaAssets.MediaSoundComponent.GetSpectralData
-inline struct TArray<Unknown> UMediaSoundComponent::GetSpectralData() {
+inline struct TArray<struct FMediaSoundComponentSpectralData> UMediaSoundComponent::GetSpectralData() {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaSoundComponent.GetSpectralData");
 
 	struct GetSpectralData_Params {
 		
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<struct FMediaSoundComponentSpectralData> ReturnValue;
 
 	}; GetSpectralData_Params Params;
 
@@ -2085,12 +2085,12 @@ inline struct TArray<Unknown> UMediaSoundComponent::GetSpectralData() {
 }
 
 // Function MediaAssets.MediaSoundComponent.GetMediaPlayer
-inline struct Unknown UMediaSoundComponent::GetMediaPlayer() {
+inline struct UMediaPlayer UMediaSoundComponent::GetMediaPlayer() {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaSoundComponent.GetMediaPlayer");
 
 	struct GetMediaPlayer_Params {
 		
-		struct Unknown ReturnValue;
+		struct UMediaPlayer ReturnValue;
 
 	}; GetMediaPlayer_Params Params;
 
@@ -2121,11 +2121,11 @@ inline float UMediaSoundComponent::GetEnvelopeValue() {
 }
 
 // Function MediaAssets.MediaSoundComponent.BP_GetAttenuationSettingsToApply
-inline char UMediaSoundComponent::BP_GetAttenuationSettingsToApply(struct Unknown& OutAttenuationSettings) {
+inline char UMediaSoundComponent::BP_GetAttenuationSettingsToApply(struct FSoundAttenuationSettings& OutAttenuationSettings) {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaSoundComponent.BP_GetAttenuationSettingsToApply");
 
 	struct BP_GetAttenuationSettingsToApply_Params {
-		struct Unknown& OutAttenuationSettings;
+		struct FSoundAttenuationSettings& OutAttenuationSettings;
 		char ReturnValue;
 
 	}; BP_GetAttenuationSettingsToApply_Params Params;
@@ -2142,11 +2142,11 @@ inline char UMediaSoundComponent::BP_GetAttenuationSettingsToApply(struct Unknow
 }
 
 // Function MediaAssets.MediaTexture.SetMediaPlayer
-inline void UMediaTexture::SetMediaPlayer(struct Unknown NewMediaPlayer) {
+inline void UMediaTexture::SetMediaPlayer(struct UMediaPlayer NewMediaPlayer) {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaTexture.SetMediaPlayer");
 
 	struct SetMediaPlayer_Params {
-		struct Unknown NewMediaPlayer;
+		struct UMediaPlayer NewMediaPlayer;
 	}; SetMediaPlayer_Params Params;
 
 	Params.NewMediaPlayer = NewMediaPlayer;
@@ -2175,12 +2175,12 @@ inline int32_t UMediaTexture::GetWidth() {
 }
 
 // Function MediaAssets.MediaTexture.GetMediaPlayer
-inline struct Unknown UMediaTexture::GetMediaPlayer() {
+inline struct UMediaPlayer UMediaTexture::GetMediaPlayer() {
 	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaTexture.GetMediaPlayer");
 
 	struct GetMediaPlayer_Params {
 		
-		struct Unknown ReturnValue;
+		struct UMediaPlayer ReturnValue;
 
 	}; GetMediaPlayer_Params Params;
 

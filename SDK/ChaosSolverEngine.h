@@ -14,8 +14,8 @@ class UChaosGameplayEventDispatcher : public UChaosEventListenerComponent {
 
 public:
 
-	struct TMap<Unknown, Unknown> CollisionEventRegistrations; // 0x1C8 (80)
-	struct TMap<Unknown, Unknown> BreakEventRegistrations; // 0x218 (80)
+	struct TMap<struct UPrimitiveComponent, struct FChaosHandlerSet> CollisionEventRegistrations; // 0x1C8 (80)
+	struct TMap<struct UPrimitiveComponent, struct FBreakEventCallbackWrapper> BreakEventRegistrations; // 0x218 (80)
 };
 
 // Class ChaosSolverEngine.ChaosSolverActor
@@ -28,20 +28,20 @@ public:
 	int32_t PushOutIterations; // 0x320 (4)
 	int32_t PushOutPairIterations; // 0x324 (4)
 	float ClusterConnectionFactor; // 0x328 (4)
-	enum class Unknow ClusterUnionConnectionType; // 0x32C (1)
+	enum class EClusterConnectionTypeEnum ClusterUnionConnectionType; // 0x32C (1)
 	char DoGenerateCollisionData : 0; // 0x32D (1)
-	struct Unknown CollisionFilterSettings; // 0x330 (16)
+	struct FSolverCollisionFilterSettings CollisionFilterSettings; // 0x330 (16)
 	char DoGenerateBreakingData : 0; // 0x340 (1)
-	struct Unknown BreakingFilterSettings; // 0x344 (16)
+	struct FSolverBreakingFilterSettings BreakingFilterSettings; // 0x344 (16)
 	char DoGenerateTrailingData : 0; // 0x354 (1)
-	struct Unknown TrailingFilterSettings; // 0x358 (16)
+	struct FSolverTrailingFilterSettings TrailingFilterSettings; // 0x358 (16)
 	char bHasFloor : 0; // 0x368 (1)
 	float FloorHeight; // 0x36C (4)
 	float MassScale; // 0x370 (4)
 	char bGenerateContactGraph : 0; // 0x374 (1)
-	struct Unknown ChaosDebugSubstepControl; // 0x375 (3)
-	struct Unknown SpriteComponent; // 0x378 (8)
-	struct Unknown GameplayEventDispatcherComponent; // 0x398 (8)
+	struct FChaosDebugSubstepControl ChaosDebugSubstepControl; // 0x375 (3)
+	struct UBillboardComponent SpriteComponent; // 0x378 (8)
+	struct UChaosGameplayEventDispatcher GameplayEventDispatcherComponent; // 0x398 (8)
 
 	void SetSolverActive(char bActive); // Function ChaosSolverEngine.ChaosSolverActor.SetSolverActive(Native|Public|BlueprintCallable) // <Game_BE.exe+0x47D9D30>
 	void SetAsCurrentWorldSolver(); // Function ChaosSolverEngine.ChaosSolverActor.SetAsCurrentWorldSolver(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x47D9D10>
@@ -52,36 +52,36 @@ class UChaosSolverSettings : public UDeveloperSettings {
 
 public:
 
-	struct Unknown DefaultChaosSolverActorClass; // 0x40 (24)
+	struct FSoftClassPath DefaultChaosSolverActorClass; // 0x40 (24)
 };
 
 // ScriptStruct ChaosSolverEngine.ChaosPhysicsCollisionInfo
 struct FChaosPhysicsCollisionInfo {
-	struct Unknown Component; // 0x0 (8)
-	struct Unknown OtherComponent; // 0x8 (8)
-	struct Unknown Location; // 0x10 (12)
-	struct Unknown Normal; // 0x1C (12)
-	struct Unknown AccumulatedImpulse; // 0x28 (12)
-	struct Unknown Velocity; // 0x34 (12)
-	struct Unknown OtherVelocity; // 0x40 (12)
-	struct Unknown AngularVelocity; // 0x4C (12)
-	struct Unknown OtherAngularVelocity; // 0x58 (12)
+	struct UPrimitiveComponent Component; // 0x0 (8)
+	struct UPrimitiveComponent OtherComponent; // 0x8 (8)
+	struct FVector Location; // 0x10 (12)
+	struct FVector Normal; // 0x1C (12)
+	struct FVector AccumulatedImpulse; // 0x28 (12)
+	struct FVector Velocity; // 0x34 (12)
+	struct FVector OtherVelocity; // 0x40 (12)
+	struct FVector AngularVelocity; // 0x4C (12)
+	struct FVector OtherAngularVelocity; // 0x58 (12)
 	float Mass; // 0x64 (4)
 	float OtherMass; // 0x68 (4)
 };
 
 // ScriptStruct ChaosSolverEngine.ChaosBreakEvent
 struct FChaosBreakEvent {
-	struct Unknown Component; // 0x0 (8)
-	struct Unknown Location; // 0x8 (12)
-	struct Unknown Velocity; // 0x14 (12)
-	struct Unknown AngularVelocity; // 0x20 (12)
+	struct UPrimitiveComponent Component; // 0x0 (8)
+	struct FVector Location; // 0x8 (12)
+	struct FVector Velocity; // 0x14 (12)
+	struct FVector AngularVelocity; // 0x20 (12)
 	float Mass; // 0x2C (4)
 };
 
 // ScriptStruct ChaosSolverEngine.ChaosHandlerSet
 struct FChaosHandlerSet {
-	struct TSet<Unknown> ChaosHandlers; // 0x8 (80)
+	struct TSet<struct Object> ChaosHandlers; // 0x8 (80)
 };
 
 // ScriptStruct ChaosSolverEngine.ChaosDebugSubstepControl

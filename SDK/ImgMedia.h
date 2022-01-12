@@ -3,13 +3,13 @@ class UImgMediaSource : public UBaseMediaSource {
 
 public:
 
-	struct Unknown FrameRateOverride; // 0x88 (8)
+	struct FFrameRate FrameRateOverride; // 0x88 (8)
 	struct FString ProxyOverride; // 0x90 (16)
-	struct Unknown SequencePath; // 0xA0 (16)
+	struct FDirectoryPath SequencePath; // 0xA0 (16)
 
 	void SetSequencePath(struct FString Path); // Function ImgMedia.ImgMediaSource.SetSequencePath(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10BE1B0>
 	struct FString GetSequencePath(); // Function ImgMedia.ImgMediaSource.GetSequencePath(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x10BE0C0>
-	void GetProxies(struct TArray<Unknown>& OutProxies); // Function ImgMedia.ImgMediaSource.GetProxies(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x10BDFF0>
+	void GetProxies(struct TArray<struct FString>& OutProxies); // Function ImgMedia.ImgMediaSource.GetProxies(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x10BDFF0>
 };
 
 // Function ImgMedia.ImgMediaSource.SetSequencePath
@@ -46,11 +46,11 @@ inline struct FString UImgMediaSource::GetSequencePath() {
 }
 
 // Function ImgMedia.ImgMediaSource.GetProxies
-inline void UImgMediaSource::GetProxies(struct TArray<Unknown>& OutProxies) {
+inline void UImgMediaSource::GetProxies(struct TArray<struct FString>& OutProxies) {
 	static auto fn = UObject::FindObject<UFunction>("Function ImgMedia.ImgMediaSource.GetProxies");
 
 	struct GetProxies_Params {
-		struct TArray<Unknown>& OutProxies;
+		struct TArray<struct FString>& OutProxies;
 	}; GetProxies_Params Params;
 
 

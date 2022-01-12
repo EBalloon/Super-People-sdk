@@ -3,12 +3,12 @@ class UUW-ArmoryInput_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Image_20; // 0x250 (8)
-	struct Unknown TargetAccel; // 0x258 (12)
-	struct Unknown CurrentAccel; // 0x264 (12)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UImage Image_20; // 0x250 (8)
+	struct FRotator TargetAccel; // 0x258 (12)
+	struct FRotator CurrentAccel; // 0x264 (12)
 	float TargetScale; // 0x270 (4)
-	struct Unknown DataAsset; // 0x278 (8)
+	struct UOutGameArmoryDataType_C DataAsset; // 0x278 (8)
 	char ResetOriginTransform : 0; // 0x280 (1)
 	char MouseInputLock : 0; // 0x281 (1)
 	char IsUpdatingRotation : 0; // 0x282 (1)
@@ -21,12 +21,12 @@ public:
 	void UpdateMouseY(float Delta); // Function UW-ArmoryInput.UW-ArmoryInput_C.UpdateMouseY(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void UpdateMouseX(float Delta); // Function UW-ArmoryInput.UW-ArmoryInput_C.UpdateMouseX(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Reset(char Snap); // Function UW-ArmoryInput.UW-ArmoryInput_C.Reset(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetLobbyWidget(struct Unknown& LobbyWidget); // Function UW-ArmoryInput.UW-ArmoryInput_C.GetLobbyWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetLobbyWidget(struct UBP-LobbyWidget_Web_C& LobbyWidget); // Function UW-ArmoryInput.UW-ArmoryInput_C.GetLobbyWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void MouseWheel(float Delta); // Function UW-ArmoryInput.UW-ArmoryInput_C.MouseWheel(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Hide(); // Function UW-ArmoryInput.UW-ArmoryInput_C.Hide(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Show(); // Function UW-ArmoryInput.UW-ArmoryInput_C.Show(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-ArmoryInput.UW-ArmoryInput_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-ArmoryInput.UW-ArmoryInput_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-ArmoryInput.UW-ArmoryInput_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-ArmoryInput(int32_t EntryPoint); // Function UW-ArmoryInput.UW-ArmoryInput_C.ExecuteUbergraph_UW-ArmoryInput(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
@@ -127,11 +127,11 @@ inline void UUW-ArmoryInput_C::Reset(char Snap) {
 }
 
 // Function UW-ArmoryInput.UW-ArmoryInput_C.GetLobbyWidget
-inline void UUW-ArmoryInput_C::GetLobbyWidget(struct Unknown& LobbyWidget) {
+inline void UUW-ArmoryInput_C::GetLobbyWidget(struct UBP-LobbyWidget_Web_C& LobbyWidget) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-ArmoryInput.UW-ArmoryInput_C.GetLobbyWidget");
 
 	struct GetLobbyWidget_Params {
-		struct Unknown& LobbyWidget;
+		struct UBP-LobbyWidget_Web_C& LobbyWidget;
 	}; GetLobbyWidget_Params Params;
 
 
@@ -201,11 +201,11 @@ inline void UUW-ArmoryInput_C::Construct() {
 }
 
 // Function UW-ArmoryInput.UW-ArmoryInput_C.Tick
-inline void UUW-ArmoryInput_C::Tick(struct Unknown MyGeometry, float InDeltaTime) {
+inline void UUW-ArmoryInput_C::Tick(struct FGeometry MyGeometry, float InDeltaTime) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-ArmoryInput.UW-ArmoryInput_C.Tick");
 
 	struct Tick_Params {
-		struct Unknown MyGeometry;
+		struct FGeometry MyGeometry;
 		float InDeltaTime;
 	}; Tick_Params Params;
 

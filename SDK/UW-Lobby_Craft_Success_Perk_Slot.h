@@ -3,27 +3,27 @@ class UUW-Lobby_Craft_Success_Perk_Slot_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown perk_Icon_Scale; // 0x250 (8)
-	struct Unknown HorizontalBox_Rarity; // 0x258 (8)
-	struct Unknown Image; // 0x260 (8)
-	struct Unknown Image_2; // 0x268 (8)
-	struct Unknown Image_3; // 0x270 (8)
-	struct Unknown Image_4; // 0x278 (8)
-	struct Unknown Image_5; // 0x280 (8)
-	struct Unknown Image_6; // 0x288 (8)
-	struct Unknown Image_7; // 0x290 (8)
-	struct Unknown Image_328; // 0x298 (8)
-	struct Unknown Img_GradeBG; // 0x2A0 (8)
-	struct Unknown Img_Icon; // 0x2A8 (8)
-	struct Unknown ItemOptionInfo; // 0x2B0 (184)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UWidgetAnimation perk_Icon_Scale; // 0x250 (8)
+	struct UHorizontalBox HorizontalBox_Rarity; // 0x258 (8)
+	struct UImage Image; // 0x260 (8)
+	struct UImage Image_2; // 0x268 (8)
+	struct UImage Image_3; // 0x270 (8)
+	struct UImage Image_4; // 0x278 (8)
+	struct UImage Image_5; // 0x280 (8)
+	struct UImage Image_6; // 0x288 (8)
+	struct UImage Image_7; // 0x290 (8)
+	struct UImage Image_328; // 0x298 (8)
+	struct UImage Img_GradeBG; // 0x2A0 (8)
+	struct UImage Img_Icon; // 0x2A8 (8)
+	struct FItemOption ItemOptionInfo; // 0x2B0 (184)
 
 	void SequenceEvent__ENTRYPOINTUW-Lobby_Craft_Success_Perk_Slot_1(); // Function UW-Lobby_Craft_Success_Perk_Slot.UW-Lobby_Craft_Success_Perk_Slot_C.SequenceEvent__ENTRYPOINTUW-Lobby_Craft_Success_Perk_Slot_1(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void PlaySoundSpread(); // Function UW-Lobby_Craft_Success_Perk_Slot.UW-Lobby_Craft_Success_Perk_Slot_C.PlaySoundSpread(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetItemOption(struct Unknown& ItemOption); // Function UW-Lobby_Craft_Success_Perk_Slot.UW-Lobby_Craft_Success_Perk_Slot_C.SetItemOption(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnLoaded_6CB9F6B747A71C38876DC8AFD4771124(struct Unknown Loaded); // Function UW-Lobby_Craft_Success_Perk_Slot.UW-Lobby_Craft_Success_Perk_Slot_C.OnLoaded_6CB9F6B747A71C38876DC8AFD4771124(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AsyncLoadImg(struct Unknown Object); // Function UW-Lobby_Craft_Success_Perk_Slot.UW-Lobby_Craft_Success_Perk_Slot_C.AsyncLoadImg(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-Lobby_Craft_Success_Perk_Slot.UW-Lobby_Craft_Success_Perk_Slot_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetItemOption(struct FItemOption& ItemOption); // Function UW-Lobby_Craft_Success_Perk_Slot.UW-Lobby_Craft_Success_Perk_Slot_C.SetItemOption(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_6CB9F6B747A71C38876DC8AFD4771124(struct Object Loaded); // Function UW-Lobby_Craft_Success_Perk_Slot.UW-Lobby_Craft_Success_Perk_Slot_C.OnLoaded_6CB9F6B747A71C38876DC8AFD4771124(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AsyncLoadImg(struct TSoftObjectPtr<Object> Object); // Function UW-Lobby_Craft_Success_Perk_Slot.UW-Lobby_Craft_Success_Perk_Slot_C.AsyncLoadImg(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnMouseEnter(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-Lobby_Craft_Success_Perk_Slot.UW-Lobby_Craft_Success_Perk_Slot_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void PlayOpenAnim(); // Function UW-Lobby_Craft_Success_Perk_Slot.UW-Lobby_Craft_Success_Perk_Slot_C.PlayOpenAnim(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-Lobby_Craft_Success_Perk_Slot(int32_t EntryPoint); // Function UW-Lobby_Craft_Success_Perk_Slot.UW-Lobby_Craft_Success_Perk_Slot_C.ExecuteUbergraph_UW-Lobby_Craft_Success_Perk_Slot(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
@@ -57,11 +57,11 @@ inline void UUW-Lobby_Craft_Success_Perk_Slot_C::PlaySoundSpread() {
 }
 
 // Function UW-Lobby_Craft_Success_Perk_Slot.UW-Lobby_Craft_Success_Perk_Slot_C.SetItemOption
-inline void UUW-Lobby_Craft_Success_Perk_Slot_C::SetItemOption(struct Unknown& ItemOption) {
+inline void UUW-Lobby_Craft_Success_Perk_Slot_C::SetItemOption(struct FItemOption& ItemOption) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Lobby_Craft_Success_Perk_Slot.UW-Lobby_Craft_Success_Perk_Slot_C.SetItemOption");
 
 	struct SetItemOption_Params {
-		struct Unknown& ItemOption;
+		struct FItemOption& ItemOption;
 	}; SetItemOption_Params Params;
 
 
@@ -74,11 +74,11 @@ inline void UUW-Lobby_Craft_Success_Perk_Slot_C::SetItemOption(struct Unknown& I
 }
 
 // Function UW-Lobby_Craft_Success_Perk_Slot.UW-Lobby_Craft_Success_Perk_Slot_C.OnLoaded_6CB9F6B747A71C38876DC8AFD4771124
-inline void UUW-Lobby_Craft_Success_Perk_Slot_C::OnLoaded_6CB9F6B747A71C38876DC8AFD4771124(struct Unknown Loaded) {
+inline void UUW-Lobby_Craft_Success_Perk_Slot_C::OnLoaded_6CB9F6B747A71C38876DC8AFD4771124(struct Object Loaded) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Lobby_Craft_Success_Perk_Slot.UW-Lobby_Craft_Success_Perk_Slot_C.OnLoaded_6CB9F6B747A71C38876DC8AFD4771124");
 
 	struct OnLoaded_6CB9F6B747A71C38876DC8AFD4771124_Params {
-		struct Unknown Loaded;
+		struct Object Loaded;
 	}; OnLoaded_6CB9F6B747A71C38876DC8AFD4771124_Params Params;
 
 	Params.Loaded = Loaded;
@@ -89,11 +89,11 @@ inline void UUW-Lobby_Craft_Success_Perk_Slot_C::OnLoaded_6CB9F6B747A71C38876DC8
 }
 
 // Function UW-Lobby_Craft_Success_Perk_Slot.UW-Lobby_Craft_Success_Perk_Slot_C.AsyncLoadImg
-inline void UUW-Lobby_Craft_Success_Perk_Slot_C::AsyncLoadImg(struct Unknown Object) {
+inline void UUW-Lobby_Craft_Success_Perk_Slot_C::AsyncLoadImg(struct TSoftObjectPtr<Object> Object) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Lobby_Craft_Success_Perk_Slot.UW-Lobby_Craft_Success_Perk_Slot_C.AsyncLoadImg");
 
 	struct AsyncLoadImg_Params {
-		struct Unknown Object;
+		struct TSoftObjectPtr<Object> Object;
 	}; AsyncLoadImg_Params Params;
 
 	Params.Object = Object;
@@ -104,12 +104,12 @@ inline void UUW-Lobby_Craft_Success_Perk_Slot_C::AsyncLoadImg(struct Unknown Obj
 }
 
 // Function UW-Lobby_Craft_Success_Perk_Slot.UW-Lobby_Craft_Success_Perk_Slot_C.OnMouseEnter
-inline void UUW-Lobby_Craft_Success_Perk_Slot_C::OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline void UUW-Lobby_Craft_Success_Perk_Slot_C::OnMouseEnter(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Lobby_Craft_Success_Perk_Slot.UW-Lobby_Craft_Success_Perk_Slot_C.OnMouseEnter");
 
 	struct OnMouseEnter_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
 	}; OnMouseEnter_Params Params;
 
 	Params.MyGeometry = MyGeometry;

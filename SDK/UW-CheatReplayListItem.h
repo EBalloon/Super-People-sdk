@@ -3,26 +3,26 @@ class UUW-CheatReplayListItem_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Button_98; // 0x250 (8)
-	struct Unknown Time_2; // 0x258 (8)
-	struct Unknown SavedEvent; // 0x260 (40)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UButton Button_98; // 0x250 (8)
+	struct UTextBlock Time_2; // 0x258 (8)
+	struct FMKReplayReportInfo SavedEvent; // 0x260 (40)
 	struct FString SavedReplayFileName; // 0x288 (16)
-	struct Unknown ReplayListWidget; // 0x298 (8)
+	struct UBravoHotelReplayListWidget ReplayListWidget; // 0x298 (8)
 
-	void Init(struct Unknown Event, struct FString ReplayFileName, struct Unknown ReplayListWidget); // Function UW-CheatReplayListItem.UW-CheatReplayListItem_C.Init(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Init(struct FMKReplayReportInfo Event, struct FString ReplayFileName, struct UBravoHotelReplayListWidget ReplayListWidget); // Function UW-CheatReplayListItem.UW-CheatReplayListItem_C.Init(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__Button_97_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-CheatReplayListItem.UW-CheatReplayListItem_C.BndEvt__Button_97_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-CheatReplayListItem(int32_t EntryPoint); // Function UW-CheatReplayListItem.UW-CheatReplayListItem_C.ExecuteUbergraph_UW-CheatReplayListItem(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-CheatReplayListItem.UW-CheatReplayListItem_C.Init
-inline void UUW-CheatReplayListItem_C::Init(struct Unknown Event, struct FString ReplayFileName, struct Unknown ReplayListWidget) {
+inline void UUW-CheatReplayListItem_C::Init(struct FMKReplayReportInfo Event, struct FString ReplayFileName, struct UBravoHotelReplayListWidget ReplayListWidget) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-CheatReplayListItem.UW-CheatReplayListItem_C.Init");
 
 	struct Init_Params {
-		struct Unknown Event;
+		struct FMKReplayReportInfo Event;
 		struct FString ReplayFileName;
-		struct Unknown ReplayListWidget;
+		struct UBravoHotelReplayListWidget ReplayListWidget;
 	}; Init_Params Params;
 
 	Params.Event = Event;

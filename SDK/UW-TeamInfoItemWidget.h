@@ -3,65 +3,65 @@ class UUW-TeamInfoItemWidget_C : public UBravoHotelTeamInfoSlotWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x308 (8)
-	struct Unknown Anim_IconBouncing; // 0x310 (8)
-	struct Unknown Progress_Stroke; // 0x318 (8)
-	struct Unknown Shoot_ani; // 0x320 (8)
-	struct Unknown CanvasPanel_Main; // 0x328 (8)
-	struct Unknown death; // 0x330 (8)
-	struct Unknown Image_126; // 0x338 (8)
-	struct Unknown Image_168; // 0x340 (8)
-	struct Unknown Image_280; // 0x348 (8)
-	struct Unknown Image_623; // 0x350 (8)
-	struct Unknown Image_624; // 0x358 (8)
-	struct Unknown Image_1058; // 0x360 (8)
-	struct Unknown Image_Firing; // 0x368 (8)
-	struct Unknown Image_Heart; // 0x370 (8)
-	struct Unknown Image_Outline; // 0x378 (8)
-	struct Unknown Image_TeamInfoClassIcon; // 0x380 (8)
-	struct Unknown Img_LogOut; // 0x388 (8)
-	struct Unknown Img_Voice; // 0x390 (8)
-	struct Unknown Img_VoiceMute; // 0x398 (8)
-	struct Unknown InvalidationBox_1; // 0x3A0 (8)
-	struct Unknown Overlay_447; // 0x3A8 (8)
-	struct Unknown Overlay_Death; // 0x3B0 (8)
-	struct Unknown Overlay_RemainGoldenTimeSelf; // 0x3B8 (8)
-	struct Unknown Overlay_RequestResus; // 0x3C0 (8)
-	struct Unknown ProgressBar_440; // 0x3C8 (8)
-	struct Unknown ProgressBar_443; // 0x3D0 (8)
-	struct Unknown SizeBox_132; // 0x3D8 (8)
-	struct Unknown StateGoldenTime; // 0x3E0 (8)
-	struct Unknown StateKnockdown; // 0x3E8 (8)
-	struct Unknown T_ClassName; // 0x3F0 (8)
-	struct Unknown T_ClassWeapon; // 0x3F8 (8)
-	struct Unknown T_PlayerIndex; // 0x400 (8)
-	struct Unknown T_PlayerName; // 0x408 (8)
-	struct Unknown TeamColor; // 0x410 (8)
-	struct Unknown TextBlock_4; // 0x418 (8)
-	struct Unknown TextBlock_297; // 0x420 (8)
-	struct Unknown TextBlock_590; // 0x428 (8)
-	struct Unknown TextBlock_591; // 0x430 (8)
-	struct Unknown TextBlock_1016; // 0x438 (8)
-	struct Unknown TextBlock_RemainGoldenTimeSelf; // 0x440 (8)
-	struct Unknown TextBlock_RequestResus; // 0x448 (8)
-	struct Unknown TextBlock_Resuscitating; // 0x450 (8)
-	struct Unknown UW-RequestResuscitation; // 0x458 (8)
-	struct Unknown WidgetSwitcher_LogOut; // 0x460 (8)
-	struct Unknown WidgetSwitcher_Resuscitate; // 0x468 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x308 (8)
+	struct UWidgetAnimation Anim_IconBouncing; // 0x310 (8)
+	struct UWidgetAnimation Progress_Stroke; // 0x318 (8)
+	struct UWidgetAnimation Shoot_ani; // 0x320 (8)
+	struct UCanvasPanel CanvasPanel_Main; // 0x328 (8)
+	struct UImage death; // 0x330 (8)
+	struct UImage Image_126; // 0x338 (8)
+	struct UImage Image_168; // 0x340 (8)
+	struct UImage Image_280; // 0x348 (8)
+	struct UImage Image_623; // 0x350 (8)
+	struct UImage Image_624; // 0x358 (8)
+	struct UImage Image_1058; // 0x360 (8)
+	struct UImage Image_Firing; // 0x368 (8)
+	struct UImage Image_Heart; // 0x370 (8)
+	struct UImage Image_Outline; // 0x378 (8)
+	struct UImage Image_TeamInfoClassIcon; // 0x380 (8)
+	struct UImage Img_LogOut; // 0x388 (8)
+	struct UImage Img_Voice; // 0x390 (8)
+	struct UImage Img_VoiceMute; // 0x398 (8)
+	struct UInvalidationBox InvalidationBox_1; // 0x3A0 (8)
+	struct UOverlay Overlay_447; // 0x3A8 (8)
+	struct UOverlay Overlay_Death; // 0x3B0 (8)
+	struct UOverlay Overlay_RemainGoldenTimeSelf; // 0x3B8 (8)
+	struct UOverlay Overlay_RequestResus; // 0x3C0 (8)
+	struct UProgressBar ProgressBar_440; // 0x3C8 (8)
+	struct UProgressBar ProgressBar_443; // 0x3D0 (8)
+	struct USizeBox SizeBox_132; // 0x3D8 (8)
+	struct UProgressBar StateGoldenTime; // 0x3E0 (8)
+	struct UProgressBar StateKnockdown; // 0x3E8 (8)
+	struct UTextBlock T_ClassName; // 0x3F0 (8)
+	struct UTextBlock T_ClassWeapon; // 0x3F8 (8)
+	struct UTextBlock T_PlayerIndex; // 0x400 (8)
+	struct UTextBlock T_PlayerName; // 0x408 (8)
+	struct UImage TeamColor; // 0x410 (8)
+	struct UTextBlock TextBlock_4; // 0x418 (8)
+	struct UTextBlock TextBlock_297; // 0x420 (8)
+	struct UTextBlock TextBlock_590; // 0x428 (8)
+	struct UTextBlock TextBlock_591; // 0x430 (8)
+	struct UTextBlock TextBlock_1016; // 0x438 (8)
+	struct UTextBlock TextBlock_RemainGoldenTimeSelf; // 0x440 (8)
+	struct UTextBlock TextBlock_RequestResus; // 0x448 (8)
+	struct UTextBlock TextBlock_Resuscitating; // 0x450 (8)
+	struct UUW-RequestResuscitation_C UW-RequestResuscitation; // 0x458 (8)
+	struct UWidgetSwitcher WidgetSwitcher_LogOut; // 0x460 (8)
+	struct UWidgetSwitcher WidgetSwitcher_Resuscitate; // 0x468 (8)
 	int32_t Index; // 0x470 (4)
-	enum class Unknow Behavior; // 0x474 (1)
+	enum class EPlayerBehavior Behavior; // 0x474 (1)
 	float hp; // 0x478 (4)
 	struct FText Name; // 0x480 (24)
-	struct TArray<Unknown> ColorList; // 0x498 (16)
+	struct TArray<struct FLinearColor> ColorList; // 0x498 (16)
 	char bPin : 0; // 0x4A8 (1)
 	float PrevHP; // 0x4AC (4)
 	char bReduceHP : 0; // 0x4B0 (1)
-	struct Unknown TimerHandleReduceHP; // 0x4B8 (8)
+	struct FTimerHandle TimerHandleReduceHP; // 0x4B8 (8)
 	char bIncreaseHP : 0; // 0x4C0 (1)
-	struct Unknown HealthChangeCurve; // 0x4C8 (8)
-	struct Unknown HealthDangerCurve; // 0x4D0 (8)
-	struct Unknown HealTimer; // 0x4D8 (8)
-	struct Unknown FaintTimer; // 0x4E0 (8)
+	struct UCurveFloat HealthChangeCurve; // 0x4C8 (8)
+	struct UCurveLinearColor HealthDangerCurve; // 0x4D0 (8)
+	struct FTimerHandle HealTimer; // 0x4D8 (8)
+	struct FTimerHandle FaintTimer; // 0x4E0 (8)
 	float BaseHealth; // 0x4E8 (4)
 	float TargetHealth; // 0x4EC (4)
 	float HealthWeight; // 0x4F0 (4)
@@ -73,14 +73,14 @@ public:
 	float FaintPercent; // 0x508 (4)
 	float CurrentAlpha; // 0x50C (4)
 	float AlphaTimer; // 0x510 (4)
-	struct Unknown AlphaCurve; // 0x518 (8)
+	struct UCurveFloat AlphaCurve; // 0x518 (8)
 	char KnockDown : 0; // 0x520 (1)
 	float HeartBeat; // 0x524 (4)
-	struct Unknown DisConnectSprite; // 0x528 (8)
-	struct Unknown KnockDownSprite; // 0x530 (8)
-	struct Unknown DeathSprite; // 0x538 (8)
-	struct Unknown VehicleSprite; // 0x540 (8)
-	struct Unknown HpTimer; // 0x548 (8)
+	struct UPaperSprite DisConnectSprite; // 0x528 (8)
+	struct UPaperSprite KnockDownSprite; // 0x530 (8)
+	struct UPaperSprite DeathSprite; // 0x538 (8)
+	struct UPaperSprite VehicleSprite; // 0x540 (8)
+	struct FTimerHandle HpTimer; // 0x548 (8)
 	float EndTime; // 0x550 (4)
 	float StartTime; // 0x554 (4)
 	float TotalTime; // 0x558 (4)
@@ -88,7 +88,7 @@ public:
 	float AddTme; // 0x560 (4)
 	float PreStart; // 0x564 (4)
 
-	void OnLoaded_27D2D12149E3EA31998D6D88C1D08B2F(struct Unknown Loaded); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.OnLoaded_27D2D12149E3EA31998D6D88C1D08B2F(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_27D2D12149E3EA31998D6D88C1D08B2F(struct Object Loaded); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.OnLoaded_27D2D12149E3EA31998D6D88C1D08B2F(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetNickName(struct FString NewNickName); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetNickName(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetIndex(int32_t NewIndex); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetIndex(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetPerkLevel(int32_t NewPerkLevel); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetPerkLevel(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -96,14 +96,14 @@ public:
 	void SetKillCount(int32_t NewKillCount); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetKillCount(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetHp(int32_t NewCur, int32_t NewMax); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetHp(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ä¤@ t¤¸_1(); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.ä¤@ t¤¸_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetPing(struct Unknown& NewPingInfo); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetPing(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetPing(struct FBravoHotelPingInfo& NewPingInfo); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetPing(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetTalking(char NewTalking, char bIsMute); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetTalking(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetFiring(char NewIsFiring); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetFiring(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void AnimationHP(float Start, float End, float Time); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.AnimationHP(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Hp_Ani(); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.Hp_Ani(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetGoldenTime(struct Unknown NewRemainTime, float NewPercent); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetGoldenTime(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetGoldenTime(struct FTimespan NewRemainTime, float NewPercent); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetGoldenTime(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetExpertWeaponName(struct FText& NewWeaponName); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetExpertWeaponName(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetCharacterState(enum class Unknow NewState, char IsDisconnect); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetCharacterState(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetCharacterState(enum class ECharacterState NewState, char IsDisconnect); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetCharacterState(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetRequestResuscitation(char bNewFlag); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetRequestResuscitation(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetResuscitating(char bNewFlag); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetResuscitating(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void UpdateInvalidationbox(); // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.UpdateInvalidationbox(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -111,11 +111,11 @@ public:
 };
 
 // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.OnLoaded_27D2D12149E3EA31998D6D88C1D08B2F
-inline void UUW-TeamInfoItemWidget_C::OnLoaded_27D2D12149E3EA31998D6D88C1D08B2F(struct Unknown Loaded) {
+inline void UUW-TeamInfoItemWidget_C::OnLoaded_27D2D12149E3EA31998D6D88C1D08B2F(struct Object Loaded) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.OnLoaded_27D2D12149E3EA31998D6D88C1D08B2F");
 
 	struct OnLoaded_27D2D12149E3EA31998D6D88C1D08B2F_Params {
-		struct Unknown Loaded;
+		struct Object Loaded;
 	}; OnLoaded_27D2D12149E3EA31998D6D88C1D08B2F_Params Params;
 
 	Params.Loaded = Loaded;
@@ -234,11 +234,11 @@ inline void UUW-TeamInfoItemWidget_C::ä¤@ t¤¸_1() {
 }
 
 // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetPing
-inline void UUW-TeamInfoItemWidget_C::SetPing(struct Unknown& NewPingInfo) {
+inline void UUW-TeamInfoItemWidget_C::SetPing(struct FBravoHotelPingInfo& NewPingInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetPing");
 
 	struct SetPing_Params {
-		struct Unknown& NewPingInfo;
+		struct FBravoHotelPingInfo& NewPingInfo;
 	}; SetPing_Params Params;
 
 
@@ -316,11 +316,11 @@ inline void UUW-TeamInfoItemWidget_C::Hp_Ani() {
 }
 
 // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetGoldenTime
-inline void UUW-TeamInfoItemWidget_C::SetGoldenTime(struct Unknown NewRemainTime, float NewPercent) {
+inline void UUW-TeamInfoItemWidget_C::SetGoldenTime(struct FTimespan NewRemainTime, float NewPercent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetGoldenTime");
 
 	struct SetGoldenTime_Params {
-		struct Unknown NewRemainTime;
+		struct FTimespan NewRemainTime;
 		float NewPercent;
 	}; SetGoldenTime_Params Params;
 
@@ -350,11 +350,11 @@ inline void UUW-TeamInfoItemWidget_C::SetExpertWeaponName(struct FText& NewWeapo
 }
 
 // Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetCharacterState
-inline void UUW-TeamInfoItemWidget_C::SetCharacterState(enum class Unknow NewState, char IsDisconnect) {
+inline void UUW-TeamInfoItemWidget_C::SetCharacterState(enum class ECharacterState NewState, char IsDisconnect) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-TeamInfoItemWidget.UW-TeamInfoItemWidget_C.SetCharacterState");
 
 	struct SetCharacterState_Params {
-		enum class Unknow NewState;
+		enum class ECharacterState NewState;
 		char IsDisconnect;
 	}; SetCharacterState_Params Params;
 

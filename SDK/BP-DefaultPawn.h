@@ -3,15 +3,15 @@ class ABP-DefaultPawn_C : public ABravoHotelCharacterPrefab {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x3B40 (8)
-	struct Unknown BP-LadderComponent; // 0x3B48 (8)
-	struct Unknown OutBlueZone; // 0x3B50 (8)
-	struct Unknown BP-FoliageCollision; // 0x3B58 (8)
-	struct Unknown DevCamera_ChildActor; // 0x3B60 (8)
-	struct Unknown TeamInfoUpdater; // 0x3B68 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x3B40 (8)
+	struct UBP-LadderComponent_C BP-LadderComponent; // 0x3B48 (8)
+	struct UParticleSystemComponent OutBlueZone; // 0x3B50 (8)
+	struct UBP-GrassCollision_Character_C BP-FoliageCollision; // 0x3B58 (8)
+	struct UChildActorComponent DevCamera_ChildActor; // 0x3B60 (8)
+	struct UTeamInfoUpdaterComponent TeamInfoUpdater; // 0x3B68 (8)
 	float VelocityZ_LandingDamage; // 0x3B70 (4)
-	struct Unknown CharacterPreviewRef; // 0x3B78 (8)
-	struct Unknown Chat System; // 0x3B80 (8)
+	struct ABP-CharacterRecording_C CharacterPreviewRef; // 0x3B78 (8)
+	struct AChat_System_C Chat System; // 0x3B80 (8)
 	char ShowChatToggle : 0; // 0x3B88 (1)
 	float CurrentViewportSizeX; // 0x3B8C (4)
 	float CurrentViewportSizeY; // 0x3B90 (4)
@@ -22,16 +22,16 @@ public:
 
 	void ForceInitRecordingCharacter(); // Function BP-DefaultPawn.BP-DefaultPawn_C.ForceInitRecordingCharacter(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CheckAimingCancelation(); // Function BP-DefaultPawn.BP-DefaultPawn_C.CheckAimingCancelation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CorrectionScreenPosition(struct Unknown& ScreenPosition, char& RetOutScreenPosition); // Function BP-DefaultPawn.BP-DefaultPawn_C.CorrectionScreenPosition(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CorrectionScreenPosition(struct FVector2D& ScreenPosition, char& RetOutScreenPosition); // Function BP-DefaultPawn.BP-DefaultPawn_C.CorrectionScreenPosition(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void LoadTableData(); // Function BP-DefaultPawn.BP-DefaultPawn_C.LoadTableData(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void UserConstructionScript(); // Function BP-DefaultPawn.BP-DefaultPawn_C.UserConstructionScript(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InpActEvt_Six_K2Node_InputKeyEvent_7(struct Unknown Key); // Function BP-DefaultPawn.BP-DefaultPawn_C.InpActEvt_Six_K2Node_InputKeyEvent_7(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InpActEvt_RightBracket_K2Node_InputKeyEvent_6(struct Unknown Key); // Function BP-DefaultPawn.BP-DefaultPawn_C.InpActEvt_RightBracket_K2Node_InputKeyEvent_6(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InpActEvt_LeftBracket_K2Node_InputKeyEvent_5(struct Unknown Key); // Function BP-DefaultPawn.BP-DefaultPawn_C.InpActEvt_LeftBracket_K2Node_InputKeyEvent_5(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InpActEvt_Divide_K2Node_InputKeyEvent_4(struct Unknown Key); // Function BP-DefaultPawn.BP-DefaultPawn_C.InpActEvt_Divide_K2Node_InputKeyEvent_4(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InpActEvt_Hyphen_K2Node_InputKeyEvent_3(struct Unknown Key); // Function BP-DefaultPawn.BP-DefaultPawn_C.InpActEvt_Hyphen_K2Node_InputKeyEvent_3(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InpActEvt_Ctrl+Shift_F_K2Node_InputKeyEvent_2(struct Unknown Key); // Function BP-DefaultPawn.BP-DefaultPawn_C.InpActEvt_Ctrl+Shift_F_K2Node_InputKeyEvent_2(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InpActEvt_Semicolon_K2Node_InputKeyEvent_1(struct Unknown Key); // Function BP-DefaultPawn.BP-DefaultPawn_C.InpActEvt_Semicolon_K2Node_InputKeyEvent_1(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void InpActEvt_Six_K2Node_InputKeyEvent_7(struct FKey Key); // Function BP-DefaultPawn.BP-DefaultPawn_C.InpActEvt_Six_K2Node_InputKeyEvent_7(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void InpActEvt_RightBracket_K2Node_InputKeyEvent_6(struct FKey Key); // Function BP-DefaultPawn.BP-DefaultPawn_C.InpActEvt_RightBracket_K2Node_InputKeyEvent_6(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void InpActEvt_LeftBracket_K2Node_InputKeyEvent_5(struct FKey Key); // Function BP-DefaultPawn.BP-DefaultPawn_C.InpActEvt_LeftBracket_K2Node_InputKeyEvent_5(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void InpActEvt_Divide_K2Node_InputKeyEvent_4(struct FKey Key); // Function BP-DefaultPawn.BP-DefaultPawn_C.InpActEvt_Divide_K2Node_InputKeyEvent_4(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void InpActEvt_Hyphen_K2Node_InputKeyEvent_3(struct FKey Key); // Function BP-DefaultPawn.BP-DefaultPawn_C.InpActEvt_Hyphen_K2Node_InputKeyEvent_3(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void InpActEvt_Ctrl+Shift_F_K2Node_InputKeyEvent_2(struct FKey Key); // Function BP-DefaultPawn.BP-DefaultPawn_C.InpActEvt_Ctrl+Shift_F_K2Node_InputKeyEvent_2(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void InpActEvt_Semicolon_K2Node_InputKeyEvent_1(struct FKey Key); // Function BP-DefaultPawn.BP-DefaultPawn_C.InpActEvt_Semicolon_K2Node_InputKeyEvent_1(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void K2_EnterSceneOfWin(); // Function BP-DefaultPawn.BP-DefaultPawn_C.K2_EnterSceneOfWin(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ReadyTeleport(); // Function BP-DefaultPawn.BP-DefaultPawn_C.ReadyTeleport(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ServerPlayTeleportEffect(); // Function BP-DefaultPawn.BP-DefaultPawn_C.ServerPlayTeleportEffect(Net|NetReliableNetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -41,18 +41,18 @@ public:
 	void ServerCrazyJump(); // Function BP-DefaultPawn.BP-DefaultPawn_C.ServerCrazyJump(Net|NetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ServerResetCrazyJump(); // Function BP-DefaultPawn.BP-DefaultPawn_C.ServerResetCrazyJump(Net|NetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void K2_OnGoParachute(); // Function BP-DefaultPawn.BP-DefaultPawn_C.K2_OnGoParachute(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ServerLaunch(struct Unknown LaunchVelocity); // Function BP-DefaultPawn.BP-DefaultPawn_C.ServerLaunch(Net|NetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ServerLaunch(struct FVector LaunchVelocity); // Function BP-DefaultPawn.BP-DefaultPawn_C.ServerLaunch(Net|NetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void K2_Cheat_ToggleCharacterDebugCamera(); // Function BP-DefaultPawn.BP-DefaultPawn_C.K2_Cheat_ToggleCharacterDebugCamera(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void K2_FPSK_OnStartADS(); // Function BP-DefaultPawn.BP-DefaultPawn_C.K2_FPSK_OnStartADS(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void K2_FPSK_OnEndADS(); // Function BP-DefaultPawn.BP-DefaultPawn_C.K2_FPSK_OnEndADS(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SwitchMovementModeEvent(char MovementMode, enum class Unknow CustomMovementMode); // Function BP-DefaultPawn.BP-DefaultPawn_C.SwitchMovementModeEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ServerSwitchMovementModeEvent(char MovementMode, enum class Unknow CustomMovementMode); // Function BP-DefaultPawn.BP-DefaultPawn_C.ServerSwitchMovementModeEvent(Net|NetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void MulticastSwitchMovementMode(char MovementMode, enum class Unknow CustomMovementMode); // Function BP-DefaultPawn.BP-DefaultPawn_C.MulticastSwitchMovementMode(Net|NetMulticast|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void DoPlayDynamicMontage(struct Unknown AnimSequence, struct FName SlotName, float PlayRate); // Function BP-DefaultPawn.BP-DefaultPawn_C.DoPlayDynamicMontage(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ServerPlayDynamicMontage(struct Unknown AnimSequence, struct FName SlotName, float PlayRate); // Function BP-DefaultPawn.BP-DefaultPawn_C.ServerPlayDynamicMontage(Net|NetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void MulticastPlayDynamicMontage(struct Unknown AnimSequence, struct FName SlotName, float PlayRate); // Function BP-DefaultPawn.BP-DefaultPawn_C.MulticastPlayDynamicMontage(Net|NetMulticast|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SwitchMovementModeEvent(char MovementMode, enum class ECustomMovementMode CustomMovementMode); // Function BP-DefaultPawn.BP-DefaultPawn_C.SwitchMovementModeEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ServerSwitchMovementModeEvent(char MovementMode, enum class ECustomMovementMode CustomMovementMode); // Function BP-DefaultPawn.BP-DefaultPawn_C.ServerSwitchMovementModeEvent(Net|NetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void MulticastSwitchMovementMode(char MovementMode, enum class ECustomMovementMode CustomMovementMode); // Function BP-DefaultPawn.BP-DefaultPawn_C.MulticastSwitchMovementMode(Net|NetMulticast|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void DoPlayDynamicMontage(struct UAnimSequence AnimSequence, struct FName SlotName, float PlayRate); // Function BP-DefaultPawn.BP-DefaultPawn_C.DoPlayDynamicMontage(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ServerPlayDynamicMontage(struct UAnimSequence AnimSequence, struct FName SlotName, float PlayRate); // Function BP-DefaultPawn.BP-DefaultPawn_C.ServerPlayDynamicMontage(Net|NetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void MulticastPlayDynamicMontage(struct UAnimSequence AnimSequence, struct FName SlotName, float PlayRate); // Function BP-DefaultPawn.BP-DefaultPawn_C.MulticastPlayDynamicMontage(Net|NetMulticast|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ReceiveBeginPlay(); // Function BP-DefaultPawn.BP-DefaultPawn_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnLanded(struct Unknown& Hit); // Function BP-DefaultPawn.BP-DefaultPawn_C.OnLanded(Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLanded(struct FHitResult& Hit); // Function BP-DefaultPawn.BP-DefaultPawn_C.OnLanded(Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ReceiveDestroyed(); // Function BP-DefaultPawn.BP-DefaultPawn_C.ReceiveDestroyed(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void InitRecordingCharacter(); // Function BP-DefaultPawn.BP-DefaultPawn_C.InitRecordingCharacter(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetVisibleOutBlueZoneBlizzard(char Visible); // Function BP-DefaultPawn.BP-DefaultPawn_C.SetVisibleOutBlueZoneBlizzard(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -93,11 +93,11 @@ inline void ABP-DefaultPawn_C::CheckAimingCancelation() {
 }
 
 // Function BP-DefaultPawn.BP-DefaultPawn_C.CorrectionScreenPosition
-inline void ABP-DefaultPawn_C::CorrectionScreenPosition(struct Unknown& ScreenPosition, char& RetOutScreenPosition) {
+inline void ABP-DefaultPawn_C::CorrectionScreenPosition(struct FVector2D& ScreenPosition, char& RetOutScreenPosition) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-DefaultPawn.BP-DefaultPawn_C.CorrectionScreenPosition");
 
 	struct CorrectionScreenPosition_Params {
-		struct Unknown& ScreenPosition;
+		struct FVector2D& ScreenPosition;
 		char& RetOutScreenPosition;
 	}; CorrectionScreenPosition_Params Params;
 
@@ -140,11 +140,11 @@ inline void ABP-DefaultPawn_C::UserConstructionScript() {
 }
 
 // Function BP-DefaultPawn.BP-DefaultPawn_C.InpActEvt_Six_K2Node_InputKeyEvent_7
-inline void ABP-DefaultPawn_C::InpActEvt_Six_K2Node_InputKeyEvent_7(struct Unknown Key) {
+inline void ABP-DefaultPawn_C::InpActEvt_Six_K2Node_InputKeyEvent_7(struct FKey Key) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-DefaultPawn.BP-DefaultPawn_C.InpActEvt_Six_K2Node_InputKeyEvent_7");
 
 	struct InpActEvt_Six_K2Node_InputKeyEvent_7_Params {
-		struct Unknown Key;
+		struct FKey Key;
 	}; InpActEvt_Six_K2Node_InputKeyEvent_7_Params Params;
 
 	Params.Key = Key;
@@ -155,11 +155,11 @@ inline void ABP-DefaultPawn_C::InpActEvt_Six_K2Node_InputKeyEvent_7(struct Unkno
 }
 
 // Function BP-DefaultPawn.BP-DefaultPawn_C.InpActEvt_RightBracket_K2Node_InputKeyEvent_6
-inline void ABP-DefaultPawn_C::InpActEvt_RightBracket_K2Node_InputKeyEvent_6(struct Unknown Key) {
+inline void ABP-DefaultPawn_C::InpActEvt_RightBracket_K2Node_InputKeyEvent_6(struct FKey Key) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-DefaultPawn.BP-DefaultPawn_C.InpActEvt_RightBracket_K2Node_InputKeyEvent_6");
 
 	struct InpActEvt_RightBracket_K2Node_InputKeyEvent_6_Params {
-		struct Unknown Key;
+		struct FKey Key;
 	}; InpActEvt_RightBracket_K2Node_InputKeyEvent_6_Params Params;
 
 	Params.Key = Key;
@@ -170,11 +170,11 @@ inline void ABP-DefaultPawn_C::InpActEvt_RightBracket_K2Node_InputKeyEvent_6(str
 }
 
 // Function BP-DefaultPawn.BP-DefaultPawn_C.InpActEvt_LeftBracket_K2Node_InputKeyEvent_5
-inline void ABP-DefaultPawn_C::InpActEvt_LeftBracket_K2Node_InputKeyEvent_5(struct Unknown Key) {
+inline void ABP-DefaultPawn_C::InpActEvt_LeftBracket_K2Node_InputKeyEvent_5(struct FKey Key) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-DefaultPawn.BP-DefaultPawn_C.InpActEvt_LeftBracket_K2Node_InputKeyEvent_5");
 
 	struct InpActEvt_LeftBracket_K2Node_InputKeyEvent_5_Params {
-		struct Unknown Key;
+		struct FKey Key;
 	}; InpActEvt_LeftBracket_K2Node_InputKeyEvent_5_Params Params;
 
 	Params.Key = Key;
@@ -185,11 +185,11 @@ inline void ABP-DefaultPawn_C::InpActEvt_LeftBracket_K2Node_InputKeyEvent_5(stru
 }
 
 // Function BP-DefaultPawn.BP-DefaultPawn_C.InpActEvt_Divide_K2Node_InputKeyEvent_4
-inline void ABP-DefaultPawn_C::InpActEvt_Divide_K2Node_InputKeyEvent_4(struct Unknown Key) {
+inline void ABP-DefaultPawn_C::InpActEvt_Divide_K2Node_InputKeyEvent_4(struct FKey Key) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-DefaultPawn.BP-DefaultPawn_C.InpActEvt_Divide_K2Node_InputKeyEvent_4");
 
 	struct InpActEvt_Divide_K2Node_InputKeyEvent_4_Params {
-		struct Unknown Key;
+		struct FKey Key;
 	}; InpActEvt_Divide_K2Node_InputKeyEvent_4_Params Params;
 
 	Params.Key = Key;
@@ -200,11 +200,11 @@ inline void ABP-DefaultPawn_C::InpActEvt_Divide_K2Node_InputKeyEvent_4(struct Un
 }
 
 // Function BP-DefaultPawn.BP-DefaultPawn_C.InpActEvt_Hyphen_K2Node_InputKeyEvent_3
-inline void ABP-DefaultPawn_C::InpActEvt_Hyphen_K2Node_InputKeyEvent_3(struct Unknown Key) {
+inline void ABP-DefaultPawn_C::InpActEvt_Hyphen_K2Node_InputKeyEvent_3(struct FKey Key) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-DefaultPawn.BP-DefaultPawn_C.InpActEvt_Hyphen_K2Node_InputKeyEvent_3");
 
 	struct InpActEvt_Hyphen_K2Node_InputKeyEvent_3_Params {
-		struct Unknown Key;
+		struct FKey Key;
 	}; InpActEvt_Hyphen_K2Node_InputKeyEvent_3_Params Params;
 
 	Params.Key = Key;
@@ -215,11 +215,11 @@ inline void ABP-DefaultPawn_C::InpActEvt_Hyphen_K2Node_InputKeyEvent_3(struct Un
 }
 
 // Function BP-DefaultPawn.BP-DefaultPawn_C.InpActEvt_Ctrl+Shift_F_K2Node_InputKeyEvent_2
-inline void ABP-DefaultPawn_C::InpActEvt_Ctrl+Shift_F_K2Node_InputKeyEvent_2(struct Unknown Key) {
+inline void ABP-DefaultPawn_C::InpActEvt_Ctrl+Shift_F_K2Node_InputKeyEvent_2(struct FKey Key) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-DefaultPawn.BP-DefaultPawn_C.InpActEvt_Ctrl+Shift_F_K2Node_InputKeyEvent_2");
 
 	struct InpActEvt_Ctrl+Shift_F_K2Node_InputKeyEvent_2_Params {
-		struct Unknown Key;
+		struct FKey Key;
 	}; InpActEvt_Ctrl+Shift_F_K2Node_InputKeyEvent_2_Params Params;
 
 	Params.Key = Key;
@@ -230,11 +230,11 @@ inline void ABP-DefaultPawn_C::InpActEvt_Ctrl+Shift_F_K2Node_InputKeyEvent_2(str
 }
 
 // Function BP-DefaultPawn.BP-DefaultPawn_C.InpActEvt_Semicolon_K2Node_InputKeyEvent_1
-inline void ABP-DefaultPawn_C::InpActEvt_Semicolon_K2Node_InputKeyEvent_1(struct Unknown Key) {
+inline void ABP-DefaultPawn_C::InpActEvt_Semicolon_K2Node_InputKeyEvent_1(struct FKey Key) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-DefaultPawn.BP-DefaultPawn_C.InpActEvt_Semicolon_K2Node_InputKeyEvent_1");
 
 	struct InpActEvt_Semicolon_K2Node_InputKeyEvent_1_Params {
-		struct Unknown Key;
+		struct FKey Key;
 	}; InpActEvt_Semicolon_K2Node_InputKeyEvent_1_Params Params;
 
 	Params.Key = Key;
@@ -371,11 +371,11 @@ inline void ABP-DefaultPawn_C::K2_OnGoParachute() {
 }
 
 // Function BP-DefaultPawn.BP-DefaultPawn_C.ServerLaunch
-inline void ABP-DefaultPawn_C::ServerLaunch(struct Unknown LaunchVelocity) {
+inline void ABP-DefaultPawn_C::ServerLaunch(struct FVector LaunchVelocity) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-DefaultPawn.BP-DefaultPawn_C.ServerLaunch");
 
 	struct ServerLaunch_Params {
-		struct Unknown LaunchVelocity;
+		struct FVector LaunchVelocity;
 	}; ServerLaunch_Params Params;
 
 	Params.LaunchVelocity = LaunchVelocity;
@@ -428,12 +428,12 @@ inline void ABP-DefaultPawn_C::K2_FPSK_OnEndADS() {
 }
 
 // Function BP-DefaultPawn.BP-DefaultPawn_C.SwitchMovementModeEvent
-inline void ABP-DefaultPawn_C::SwitchMovementModeEvent(char MovementMode, enum class Unknow CustomMovementMode) {
+inline void ABP-DefaultPawn_C::SwitchMovementModeEvent(char MovementMode, enum class ECustomMovementMode CustomMovementMode) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-DefaultPawn.BP-DefaultPawn_C.SwitchMovementModeEvent");
 
 	struct SwitchMovementModeEvent_Params {
 		char MovementMode;
-		enum class Unknow CustomMovementMode;
+		enum class ECustomMovementMode CustomMovementMode;
 	}; SwitchMovementModeEvent_Params Params;
 
 	Params.MovementMode = MovementMode;
@@ -445,12 +445,12 @@ inline void ABP-DefaultPawn_C::SwitchMovementModeEvent(char MovementMode, enum c
 }
 
 // Function BP-DefaultPawn.BP-DefaultPawn_C.ServerSwitchMovementModeEvent
-inline void ABP-DefaultPawn_C::ServerSwitchMovementModeEvent(char MovementMode, enum class Unknow CustomMovementMode) {
+inline void ABP-DefaultPawn_C::ServerSwitchMovementModeEvent(char MovementMode, enum class ECustomMovementMode CustomMovementMode) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-DefaultPawn.BP-DefaultPawn_C.ServerSwitchMovementModeEvent");
 
 	struct ServerSwitchMovementModeEvent_Params {
 		char MovementMode;
-		enum class Unknow CustomMovementMode;
+		enum class ECustomMovementMode CustomMovementMode;
 	}; ServerSwitchMovementModeEvent_Params Params;
 
 	Params.MovementMode = MovementMode;
@@ -462,12 +462,12 @@ inline void ABP-DefaultPawn_C::ServerSwitchMovementModeEvent(char MovementMode, 
 }
 
 // Function BP-DefaultPawn.BP-DefaultPawn_C.MulticastSwitchMovementMode
-inline void ABP-DefaultPawn_C::MulticastSwitchMovementMode(char MovementMode, enum class Unknow CustomMovementMode) {
+inline void ABP-DefaultPawn_C::MulticastSwitchMovementMode(char MovementMode, enum class ECustomMovementMode CustomMovementMode) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-DefaultPawn.BP-DefaultPawn_C.MulticastSwitchMovementMode");
 
 	struct MulticastSwitchMovementMode_Params {
 		char MovementMode;
-		enum class Unknow CustomMovementMode;
+		enum class ECustomMovementMode CustomMovementMode;
 	}; MulticastSwitchMovementMode_Params Params;
 
 	Params.MovementMode = MovementMode;
@@ -479,11 +479,11 @@ inline void ABP-DefaultPawn_C::MulticastSwitchMovementMode(char MovementMode, en
 }
 
 // Function BP-DefaultPawn.BP-DefaultPawn_C.DoPlayDynamicMontage
-inline void ABP-DefaultPawn_C::DoPlayDynamicMontage(struct Unknown AnimSequence, struct FName SlotName, float PlayRate) {
+inline void ABP-DefaultPawn_C::DoPlayDynamicMontage(struct UAnimSequence AnimSequence, struct FName SlotName, float PlayRate) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-DefaultPawn.BP-DefaultPawn_C.DoPlayDynamicMontage");
 
 	struct DoPlayDynamicMontage_Params {
-		struct Unknown AnimSequence;
+		struct UAnimSequence AnimSequence;
 		struct FName SlotName;
 		float PlayRate;
 	}; DoPlayDynamicMontage_Params Params;
@@ -498,11 +498,11 @@ inline void ABP-DefaultPawn_C::DoPlayDynamicMontage(struct Unknown AnimSequence,
 }
 
 // Function BP-DefaultPawn.BP-DefaultPawn_C.ServerPlayDynamicMontage
-inline void ABP-DefaultPawn_C::ServerPlayDynamicMontage(struct Unknown AnimSequence, struct FName SlotName, float PlayRate) {
+inline void ABP-DefaultPawn_C::ServerPlayDynamicMontage(struct UAnimSequence AnimSequence, struct FName SlotName, float PlayRate) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-DefaultPawn.BP-DefaultPawn_C.ServerPlayDynamicMontage");
 
 	struct ServerPlayDynamicMontage_Params {
-		struct Unknown AnimSequence;
+		struct UAnimSequence AnimSequence;
 		struct FName SlotName;
 		float PlayRate;
 	}; ServerPlayDynamicMontage_Params Params;
@@ -517,11 +517,11 @@ inline void ABP-DefaultPawn_C::ServerPlayDynamicMontage(struct Unknown AnimSeque
 }
 
 // Function BP-DefaultPawn.BP-DefaultPawn_C.MulticastPlayDynamicMontage
-inline void ABP-DefaultPawn_C::MulticastPlayDynamicMontage(struct Unknown AnimSequence, struct FName SlotName, float PlayRate) {
+inline void ABP-DefaultPawn_C::MulticastPlayDynamicMontage(struct UAnimSequence AnimSequence, struct FName SlotName, float PlayRate) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-DefaultPawn.BP-DefaultPawn_C.MulticastPlayDynamicMontage");
 
 	struct MulticastPlayDynamicMontage_Params {
-		struct Unknown AnimSequence;
+		struct UAnimSequence AnimSequence;
 		struct FName SlotName;
 		float PlayRate;
 	}; MulticastPlayDynamicMontage_Params Params;
@@ -550,11 +550,11 @@ inline void ABP-DefaultPawn_C::ReceiveBeginPlay() {
 }
 
 // Function BP-DefaultPawn.BP-DefaultPawn_C.OnLanded
-inline void ABP-DefaultPawn_C::OnLanded(struct Unknown& Hit) {
+inline void ABP-DefaultPawn_C::OnLanded(struct FHitResult& Hit) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-DefaultPawn.BP-DefaultPawn_C.OnLanded");
 
 	struct OnLanded_Params {
-		struct Unknown& Hit;
+		struct FHitResult& Hit;
 	}; OnLanded_Params Params;
 
 

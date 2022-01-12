@@ -22,12 +22,12 @@ class ULuminARSessionConfig : public UARSessionConfig {
 
 public:
 
-	struct Unknown PlanesQuery; // 0xB0 (96)
+	struct FMagicLeapPlanesQuery PlanesQuery; // 0xB0 (96)
 	int32_t MaxPlaneQueryResults; // 0x110 (4)
 	int32_t MinPlaneArea; // 0x114 (4)
 	char bArbitraryOrientationPlaneDetection : 0; // 0x118 (1)
-	struct Unknown PlaneSearchExtents; // 0x11C (12)
-	struct TArray<Unknown> PlaneQueryFlags; // 0x128 (16)
+	struct FVector PlaneSearchExtents; // 0x11C (12)
+	struct TArray<enum class EMagicLeapPlaneQueryFlags> PlaneQueryFlags; // 0x128 (16)
 	char bDiscardZeroExtentPlanes : 0; // 0x138 (1)
 	char bDefaultUseUnreliablePose : 0; // 0x139 (1)
 };
@@ -37,9 +37,9 @@ class ULuminARLightEstimate : public UARBasicLightEstimate {
 
 public:
 
-	struct TArray<Unknown> AmbientIntensityNits; // 0x40 (16)
+	struct TArray<float> AmbientIntensityNits; // 0x40 (16)
 
-	struct TArray<Unknown> GetAmbientIntensityNits(); // Function MagicLeapAR.LuminARLightEstimate.GetAmbientIntensityNits(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17E3D20>
+	struct TArray<float> GetAmbientIntensityNits(); // Function MagicLeapAR.LuminARLightEstimate.GetAmbientIntensityNits(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17E3D20>
 };
 
 // Class MagicLeapAR.LuminARCandidateImage
@@ -55,12 +55,12 @@ public:
 };
 
 // Function MagicLeapAR.LuminARLightEstimate.GetAmbientIntensityNits
-inline struct TArray<Unknown> ULuminARLightEstimate::GetAmbientIntensityNits() {
+inline struct TArray<float> ULuminARLightEstimate::GetAmbientIntensityNits() {
 	static auto fn = UObject::FindObject<UFunction>("Function MagicLeapAR.LuminARLightEstimate.GetAmbientIntensityNits");
 
 	struct GetAmbientIntensityNits_Params {
 		
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<float> ReturnValue;
 
 	}; GetAmbientIntensityNits_Params Params;
 

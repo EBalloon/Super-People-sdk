@@ -3,30 +3,30 @@ class UUW-MapImageWidget_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Anim_Hide_Ima; // 0x250 (8)
-	struct Unknown Anim_Hide_text; // 0x258 (8)
-	struct Unknown Anim_Show_Ima; // 0x260 (8)
-	struct Unknown Anim_Show_text; // 0x268 (8)
-	struct Unknown Canvas_Main; // 0x270 (8)
-	struct Unknown HorizontalBox_86; // 0x278 (8)
-	struct Unknown Image_130; // 0x280 (8)
-	struct Unknown Image_811; // 0x288 (8)
-	struct Unknown Img_MapImage; // 0x290 (8)
-	struct Unknown MatchType; // 0x298 (8)
-	struct Unknown MaxPlayerCount; // 0x2A0 (8)
-	struct Unknown Overlay_Text; // 0x2A8 (8)
-	struct Unknown PersonType; // 0x2B0 (8)
-	struct Unknown T_MapImageDesc; // 0x2B8 (8)
-	struct Unknown T_MapImageTitle; // 0x2C0 (8)
-	struct Unknown Ultimate; // 0x2C8 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UWidgetAnimation Anim_Hide_Ima; // 0x250 (8)
+	struct UWidgetAnimation Anim_Hide_text; // 0x258 (8)
+	struct UWidgetAnimation Anim_Show_Ima; // 0x260 (8)
+	struct UWidgetAnimation Anim_Show_text; // 0x268 (8)
+	struct UCanvasPanel Canvas_Main; // 0x270 (8)
+	struct UHorizontalBox HorizontalBox_86; // 0x278 (8)
+	struct UImage Image_130; // 0x280 (8)
+	struct UImage Image_811; // 0x288 (8)
+	struct UImage Img_MapImage; // 0x290 (8)
+	struct UTextBlock MatchType; // 0x298 (8)
+	struct UTextBlock MaxPlayerCount; // 0x2A0 (8)
+	struct UOverlay Overlay_Text; // 0x2A8 (8)
+	struct UTextBlock PersonType; // 0x2B0 (8)
+	struct UTextBlock T_MapImageDesc; // 0x2B8 (8)
+	struct UTextBlock T_MapImageTitle; // 0x2C0 (8)
+	struct UTextBlock Ultimate; // 0x2C8 (8)
 	char IsShowText : 0; // 0x2D0 (1)
-	struct Unknown Timer_HideMapImage; // 0x2D8 (8)
+	struct FTimerHandle Timer_HideMapImage; // 0x2D8 (8)
 	int32_t LastZoomLevel; // 0x2E0 (4)
 	float WantOpacity; // 0x2E4 (4)
-	struct Unknown MainWidgetRef; // 0x2E8 (8)
+	struct UUW-MainWidget_C MainWidgetRef; // 0x2E8 (8)
 	char IsShowImage : 0; // 0x2F0 (1)
-	enum class Unknow LastWidgetType; // 0x2F1 (1)
+	enum class EToggleWidgetModeType LastWidgetType; // 0x2F1 (1)
 	struct FText UltimateText; // 0x2F8 (24)
 
 	void UpdateWantedOpacity(); // Function UW-MapImageWidget.UW-MapImageWidget_C.UpdateWantedOpacity(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -39,12 +39,12 @@ public:
 	void CheckToggleWidgetType(char& Changed); // Function UW-MapImageWidget.UW-MapImageWidget_C.CheckToggleWidgetType(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CheckCanHide(char& CanHide); // Function UW-MapImageWidget.UW-MapImageWidget_C.CheckCanHide(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void SetMapInfo(char& SUCCESS); // Function UW-MapImageWidget.UW-MapImageWidget_C.SetMapInfo(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnLoaded_199F0E9743CFA7E806886E89E49C9E00(struct Unknown Loaded); // Function UW-MapImageWidget.UW-MapImageWidget_C.OnLoaded_199F0E9743CFA7E806886E89E49C9E00(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_199F0E9743CFA7E806886E89E49C9E00(struct Object Loaded); // Function UW-MapImageWidget.UW-MapImageWidget_C.OnLoaded_199F0E9743CFA7E806886E89E49C9E00(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ShowMapImage(); // Function UW-MapImageWidget.UW-MapImageWidget_C.ShowMapImage(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void HideMapImage(char SetTimer); // Function UW-MapImageWidget.UW-MapImageWidget_C.HideMapImage(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void DoHideMapImage(); // Function UW-MapImageWidget.UW-MapImageWidget_C.DoHideMapImage(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AsyncMapImage(struct Unknown Image); // Function UW-MapImageWidget.UW-MapImageWidget_C.AsyncMapImage(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-MapImageWidget.UW-MapImageWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AsyncMapImage(struct TSoftObjectPtr<Object> Image); // Function UW-MapImageWidget.UW-MapImageWidget_C.AsyncMapImage(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-MapImageWidget.UW-MapImageWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ChangeMapImage(); // Function UW-MapImageWidget.UW-MapImageWidget_C.ChangeMapImage(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CheckOpacity(); // Function UW-MapImageWidget.UW-MapImageWidget_C.CheckOpacity(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-MapImageWidget(int32_t EntryPoint); // Function UW-MapImageWidget.UW-MapImageWidget_C.ExecuteUbergraph_UW-MapImageWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
@@ -211,11 +211,11 @@ inline void UUW-MapImageWidget_C::SetMapInfo(char& SUCCESS) {
 }
 
 // Function UW-MapImageWidget.UW-MapImageWidget_C.OnLoaded_199F0E9743CFA7E806886E89E49C9E00
-inline void UUW-MapImageWidget_C::OnLoaded_199F0E9743CFA7E806886E89E49C9E00(struct Unknown Loaded) {
+inline void UUW-MapImageWidget_C::OnLoaded_199F0E9743CFA7E806886E89E49C9E00(struct Object Loaded) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MapImageWidget.UW-MapImageWidget_C.OnLoaded_199F0E9743CFA7E806886E89E49C9E00");
 
 	struct OnLoaded_199F0E9743CFA7E806886E89E49C9E00_Params {
-		struct Unknown Loaded;
+		struct Object Loaded;
 	}; OnLoaded_199F0E9743CFA7E806886E89E49C9E00_Params Params;
 
 	Params.Loaded = Loaded;
@@ -269,11 +269,11 @@ inline void UUW-MapImageWidget_C::DoHideMapImage() {
 }
 
 // Function UW-MapImageWidget.UW-MapImageWidget_C.AsyncMapImage
-inline void UUW-MapImageWidget_C::AsyncMapImage(struct Unknown Image) {
+inline void UUW-MapImageWidget_C::AsyncMapImage(struct TSoftObjectPtr<Object> Image) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MapImageWidget.UW-MapImageWidget_C.AsyncMapImage");
 
 	struct AsyncMapImage_Params {
-		struct Unknown Image;
+		struct TSoftObjectPtr<Object> Image;
 	}; AsyncMapImage_Params Params;
 
 	Params.Image = Image;
@@ -284,11 +284,11 @@ inline void UUW-MapImageWidget_C::AsyncMapImage(struct Unknown Image) {
 }
 
 // Function UW-MapImageWidget.UW-MapImageWidget_C.Tick
-inline void UUW-MapImageWidget_C::Tick(struct Unknown MyGeometry, float InDeltaTime) {
+inline void UUW-MapImageWidget_C::Tick(struct FGeometry MyGeometry, float InDeltaTime) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MapImageWidget.UW-MapImageWidget_C.Tick");
 
 	struct Tick_Params {
-		struct Unknown MyGeometry;
+		struct FGeometry MyGeometry;
 		float InDeltaTime;
 	}; Tick_Params Params;
 

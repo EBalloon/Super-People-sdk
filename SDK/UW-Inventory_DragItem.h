@@ -3,36 +3,36 @@ class UUW-Inventory_DragItem_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown BGImage; // 0x250 (8)
-	struct Unknown BorderImage; // 0x258 (8)
-	struct Unknown DisableImage; // 0x260 (8)
-	struct Unknown Image_177; // 0x268 (8)
-	struct Unknown ItemCount; // 0x270 (8)
-	struct Unknown ItemImage; // 0x278 (8)
-	struct Unknown WidgetReference; // 0x280 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UImage BGImage; // 0x250 (8)
+	struct UImage BorderImage; // 0x258 (8)
+	struct UImage DisableImage; // 0x260 (8)
+	struct UImage Image_177; // 0x268 (8)
+	struct UTextBlock ItemCount; // 0x270 (8)
+	struct UImage ItemImage; // 0x278 (8)
+	struct UUserWidget WidgetReference; // 0x280 (8)
 	char Lock : 0; // 0x288 (1)
-	enum class Unknow InventoryDragType; // 0x289 (1)
-	struct Unknown ChangeTarget; // 0x290 (8)
-	struct Unknown PlayerHUDRef; // 0x298 (8)
+	enum class ItemWidgetDragType InventoryDragType; // 0x289 (1)
+	struct UUserWidget ChangeTarget; // 0x290 (8)
+	struct ABravoHotelPlayerHUD PlayerHUDRef; // 0x298 (8)
 
-	void GetBravoHotelPlayerHUD(struct Unknown& NewParam); // Function UW-Inventory_DragItem.UW-Inventory_DragItem_C.GetBravoHotelPlayerHUD(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void Init(struct Unknown Image, int32_t Count, char LockSlot, enum class Unknow DragType); // Function UW-Inventory_DragItem.UW-Inventory_DragItem_C.Init(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetBravoHotelPlayerHUD(struct ABravoHotelPlayerHUD& NewParam); // Function UW-Inventory_DragItem.UW-Inventory_DragItem_C.GetBravoHotelPlayerHUD(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void Init(struct FSlateBrush Image, int32_t Count, char LockSlot, enum class ItemWidgetDragType DragType); // Function UW-Inventory_DragItem.UW-Inventory_DragItem_C.Init(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Disable(); // Function UW-Inventory_DragItem.UW-Inventory_DragItem_C.Disable(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Enable(); // Function UW-Inventory_DragItem.UW-Inventory_DragItem_C.Enable(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnLoaded_CC3EA76649966C8AA6712791A8D413B0(struct Unknown Loaded); // Function UW-Inventory_DragItem.UW-Inventory_DragItem_C.OnLoaded_CC3EA76649966C8AA6712791A8D413B0(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-Inventory_DragItem.UW-Inventory_DragItem_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InitFromObjectRef(struct Unknown Icon SoftObject Ref, struct Unknown Icon Size, int32_t Count, char LockSlot, enum class Unknow DragType); // Function UW-Inventory_DragItem.UW-Inventory_DragItem_C.InitFromObjectRef(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_CC3EA76649966C8AA6712791A8D413B0(struct Object Loaded); // Function UW-Inventory_DragItem.UW-Inventory_DragItem_C.OnLoaded_CC3EA76649966C8AA6712791A8D413B0(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-Inventory_DragItem.UW-Inventory_DragItem_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void InitFromObjectRef(struct TSoftObjectPtr<Object> Icon SoftObject Ref, struct FVector2D Icon Size, int32_t Count, char LockSlot, enum class ItemWidgetDragType DragType); // Function UW-Inventory_DragItem.UW-Inventory_DragItem_C.InitFromObjectRef(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Destruct(); // Function UW-Inventory_DragItem.UW-Inventory_DragItem_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-Inventory_DragItem(int32_t EntryPoint); // Function UW-Inventory_DragItem.UW-Inventory_DragItem_C.ExecuteUbergraph_UW-Inventory_DragItem(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-Inventory_DragItem.UW-Inventory_DragItem_C.GetBravoHotelPlayerHUD
-inline void UUW-Inventory_DragItem_C::GetBravoHotelPlayerHUD(struct Unknown& NewParam) {
+inline void UUW-Inventory_DragItem_C::GetBravoHotelPlayerHUD(struct ABravoHotelPlayerHUD& NewParam) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_DragItem.UW-Inventory_DragItem_C.GetBravoHotelPlayerHUD");
 
 	struct GetBravoHotelPlayerHUD_Params {
-		struct Unknown& NewParam;
+		struct ABravoHotelPlayerHUD& NewParam;
 	}; GetBravoHotelPlayerHUD_Params Params;
 
 
@@ -45,14 +45,14 @@ inline void UUW-Inventory_DragItem_C::GetBravoHotelPlayerHUD(struct Unknown& New
 }
 
 // Function UW-Inventory_DragItem.UW-Inventory_DragItem_C.Init
-inline void UUW-Inventory_DragItem_C::Init(struct Unknown Image, int32_t Count, char LockSlot, enum class Unknow DragType) {
+inline void UUW-Inventory_DragItem_C::Init(struct FSlateBrush Image, int32_t Count, char LockSlot, enum class ItemWidgetDragType DragType) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_DragItem.UW-Inventory_DragItem_C.Init");
 
 	struct Init_Params {
-		struct Unknown Image;
+		struct FSlateBrush Image;
 		int32_t Count;
 		char LockSlot;
-		enum class Unknow DragType;
+		enum class ItemWidgetDragType DragType;
 	}; Init_Params Params;
 
 	Params.Image = Image;
@@ -94,11 +94,11 @@ inline void UUW-Inventory_DragItem_C::Enable() {
 }
 
 // Function UW-Inventory_DragItem.UW-Inventory_DragItem_C.OnLoaded_CC3EA76649966C8AA6712791A8D413B0
-inline void UUW-Inventory_DragItem_C::OnLoaded_CC3EA76649966C8AA6712791A8D413B0(struct Unknown Loaded) {
+inline void UUW-Inventory_DragItem_C::OnLoaded_CC3EA76649966C8AA6712791A8D413B0(struct Object Loaded) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_DragItem.UW-Inventory_DragItem_C.OnLoaded_CC3EA76649966C8AA6712791A8D413B0");
 
 	struct OnLoaded_CC3EA76649966C8AA6712791A8D413B0_Params {
-		struct Unknown Loaded;
+		struct Object Loaded;
 	}; OnLoaded_CC3EA76649966C8AA6712791A8D413B0_Params Params;
 
 	Params.Loaded = Loaded;
@@ -109,11 +109,11 @@ inline void UUW-Inventory_DragItem_C::OnLoaded_CC3EA76649966C8AA6712791A8D413B0(
 }
 
 // Function UW-Inventory_DragItem.UW-Inventory_DragItem_C.Tick
-inline void UUW-Inventory_DragItem_C::Tick(struct Unknown MyGeometry, float InDeltaTime) {
+inline void UUW-Inventory_DragItem_C::Tick(struct FGeometry MyGeometry, float InDeltaTime) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_DragItem.UW-Inventory_DragItem_C.Tick");
 
 	struct Tick_Params {
-		struct Unknown MyGeometry;
+		struct FGeometry MyGeometry;
 		float InDeltaTime;
 	}; Tick_Params Params;
 
@@ -126,15 +126,15 @@ inline void UUW-Inventory_DragItem_C::Tick(struct Unknown MyGeometry, float InDe
 }
 
 // Function UW-Inventory_DragItem.UW-Inventory_DragItem_C.InitFromObjectRef
-inline void UUW-Inventory_DragItem_C::InitFromObjectRef(struct Unknown Icon SoftObject Ref, struct Unknown Icon Size, int32_t Count, char LockSlot, enum class Unknow DragType) {
+inline void UUW-Inventory_DragItem_C::InitFromObjectRef(struct TSoftObjectPtr<Object> Icon SoftObject Ref, struct FVector2D Icon Size, int32_t Count, char LockSlot, enum class ItemWidgetDragType DragType) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_DragItem.UW-Inventory_DragItem_C.InitFromObjectRef");
 
 	struct InitFromObjectRef_Params {
-		struct Unknown Icon SoftObject Ref;
-		struct Unknown Icon Size;
+		struct TSoftObjectPtr<Object> Icon SoftObject Ref;
+		struct FVector2D Icon Size;
 		int32_t Count;
 		char LockSlot;
-		enum class Unknow DragType;
+		enum class ItemWidgetDragType DragType;
 	}; InitFromObjectRef_Params Params;
 
 	Params.Icon SoftObject Ref = Icon SoftObject Ref;

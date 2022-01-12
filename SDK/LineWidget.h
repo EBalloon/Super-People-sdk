@@ -3,8 +3,8 @@ class ULineWidget_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Image_51; // 0x250 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UImage Image_51; // 0x250 (8)
 	float InitSize; // 0x258 (4)
 
 	void Construct(); // Function LineWidget.LineWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>

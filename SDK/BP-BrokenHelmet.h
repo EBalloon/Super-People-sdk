@@ -3,7 +3,7 @@ class ABP-BrokenHelmet_C : public ABravoHotelBrokenEquipment {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x338 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x338 (8)
 	float Power_Min; // 0x340 (4)
 	float Power_Max; // 0x344 (4)
 	float FlyAngle; // 0x348 (4)

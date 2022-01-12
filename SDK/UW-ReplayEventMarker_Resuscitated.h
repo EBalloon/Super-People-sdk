@@ -3,8 +3,8 @@ class UUW-ReplayEventMarker_Resuscitated_C : public UUW-ReplayEventMarkerBasic_C
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x2A0 (8)
-	struct Unknown VisualBorder; // 0x2A8 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x2A0 (8)
+	struct UBorder VisualBorder; // 0x2A8 (8)
 
 	void Construct(); // Function UW-ReplayEventMarker_Resuscitated.UW-ReplayEventMarker_Resuscitated_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-ReplayEventMarker_Resuscitated(int32_t EntryPoint); // Function UW-ReplayEventMarker_Resuscitated.UW-ReplayEventMarker_Resuscitated_C.ExecuteUbergraph_UW-ReplayEventMarker_Resuscitated(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>

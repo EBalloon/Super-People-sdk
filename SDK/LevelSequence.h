@@ -3,8 +3,8 @@ class UDefaultLevelSequenceInstanceData : public Object {
 
 public:
 
-	struct Unknown TransformOriginActor; // 0x30 (8)
-	struct Unknown TransformOrigin; // 0x40 (48)
+	struct UActor TransformOriginActor; // 0x30 (8)
+	struct FTransform TransformOrigin; // 0x40 (48)
 };
 
 // Class LevelSequence.LevelSequence
@@ -12,16 +12,16 @@ class ULevelSequence : public UMovieSceneSequence {
 
 public:
 
-	struct Unknown MovieScene; // 0x348 (8)
-	struct Unknown ObjectReferences; // 0x350 (80)
-	struct Unknown BindingReferences; // 0x3A0 (160)
-	struct TMap<Unknown, Unknown> PossessedObjects; // 0x440 (80)
-	struct Unknown* DirectorClass; // 0x490 (8)
+	struct UMovieScene MovieScene; // 0x348 (8)
+	struct FLevelSequenceObjectReferenceMap ObjectReferences; // 0x350 (80)
+	struct FLevelSequenceBindingReferences BindingReferences; // 0x3A0 (160)
+	struct TMap<struct FString, struct FLevelSequenceObject> PossessedObjects; // 0x440 (80)
+	struct UClass* DirectorClass; // 0x490 (8)
 
-	void RemoveMetaDataByClass(struct Unknown* InClass); // Function LevelSequence.LevelSequence.RemoveMetaDataByClass(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD1AF0>
-	struct Unknown FindOrAddMetaDataByClass(struct Unknown* InClass); // Function LevelSequence.LevelSequence.FindOrAddMetaDataByClass(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD1450>
-	struct Unknown FindMetaDataByClass(struct Unknown* InClass); // Function LevelSequence.LevelSequence.FindMetaDataByClass(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CD1450>
-	struct Unknown CopyMetaData(struct Unknown InMetaData); // Function LevelSequence.LevelSequence.CopyMetaData(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD1450>
+	void RemoveMetaDataByClass(struct UClass* InClass); // Function LevelSequence.LevelSequence.RemoveMetaDataByClass(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD1AF0>
+	struct Object FindOrAddMetaDataByClass(struct UClass* InClass); // Function LevelSequence.LevelSequence.FindOrAddMetaDataByClass(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD1450>
+	struct Object FindMetaDataByClass(struct UClass* InClass); // Function LevelSequence.LevelSequence.FindMetaDataByClass(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CD1450>
+	struct Object CopyMetaData(struct Object InMetaData); // Function LevelSequence.LevelSequence.CopyMetaData(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD1450>
 };
 
 // Class LevelSequence.LevelSequenceBurnInOptions
@@ -30,10 +30,10 @@ class ULevelSequenceBurnInOptions : public Object {
 public:
 
 	char bUseBurnIn : 0; // 0x28 (1)
-	struct Unknown BurnInClass; // 0x30 (24)
-	struct Unknown Settings; // 0x48 (8)
+	struct FSoftClassPath BurnInClass; // 0x30 (24)
+	struct ULevelSequenceBurnInInitSettings Settings; // 0x48 (8)
 
-	void SetBurnIn(struct Unknown InBurnInClass); // Function LevelSequence.LevelSequenceBurnInOptions.SetBurnIn(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3CD1EB0>
+	void SetBurnIn(struct FSoftClassPath InBurnInClass); // Function LevelSequence.LevelSequenceBurnInOptions.SetBurnIn(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3CD1EB0>
 };
 
 // Class LevelSequence.LevelSequenceActor
@@ -41,39 +41,39 @@ class ALevelSequenceActor : public UActor {
 
 public:
 
-	struct Unknown PlaybackSettings; // 0x328 (20)
-	struct Unknown SequencePlayer; // 0x340 (8)
-	struct Unknown LevelSequence; // 0x348 (24)
-	struct TArray<Unknown> AdditionalEventReceivers; // 0x360 (16)
-	struct Unknown CameraSettings; // 0x370 (2)
-	struct Unknown BurnInOptions; // 0x378 (8)
-	struct Unknown BindingOverrides; // 0x380 (8)
+	struct FMovieSceneSequencePlaybackSettings PlaybackSettings; // 0x328 (20)
+	struct ULevelSequencePlayer SequencePlayer; // 0x340 (8)
+	struct FSoftObjectPath LevelSequence; // 0x348 (24)
+	struct TArray<struct UActor> AdditionalEventReceivers; // 0x360 (16)
+	struct FLevelSequenceCameraSettings CameraSettings; // 0x370 (2)
+	struct ULevelSequenceBurnInOptions BurnInOptions; // 0x378 (8)
+	struct UMovieSceneBindingOverrides BindingOverrides; // 0x380 (8)
 	char bAutoPlay : 0; // 0x388 (1)
 	char bOverrideInstanceData : 0; // 0x388 (1)
 	char bReplicatePlayback : 0; // 0x388 (1)
-	struct Unknown DefaultInstanceData; // 0x390 (8)
-	struct Unknown BurnInInstance; // 0x398 (8)
+	struct Object DefaultInstanceData; // 0x390 (8)
+	struct ULevelSequenceBurnIn BurnInInstance; // 0x398 (8)
 	char bShowBurnin : 0; // 0x3A0 (1)
 
 	void ShowBurnin(); // Function LevelSequence.LevelSequenceActor.ShowBurnin(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD2210>
-	void SetSequence(struct Unknown InSequence); // Function LevelSequence.LevelSequenceActor.SetSequence(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD2190>
+	void SetSequence(struct ULevelSequence InSequence); // Function LevelSequence.LevelSequenceActor.SetSequence(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD2190>
 	void SetReplicatePlayback(char ReplicatePlayback); // Function LevelSequence.LevelSequenceActor.SetReplicatePlayback(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD2100>
-	void SetEventReceivers(struct TArray<Unknown> AdditionalReceivers); // Function LevelSequence.LevelSequenceActor.SetEventReceivers(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD1FB0>
-	void SetBindingByTag(struct FName BindingTag, struct TArray<Unknown>& Actors, char bAllowBindingsFromAsset); // Function LevelSequence.LevelSequenceActor.SetBindingByTag(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3CD1D80>
-	void SetBinding(struct Unknown Binding, struct TArray<Unknown>& Actors, char bAllowBindingsFromAsset); // Function LevelSequence.LevelSequenceActor.SetBinding(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3CD1C30>
+	void SetEventReceivers(struct TArray<struct UActor> AdditionalReceivers); // Function LevelSequence.LevelSequenceActor.SetEventReceivers(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD1FB0>
+	void SetBindingByTag(struct FName BindingTag, struct TArray<struct UActor>& Actors, char bAllowBindingsFromAsset); // Function LevelSequence.LevelSequenceActor.SetBindingByTag(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3CD1D80>
+	void SetBinding(struct FMovieSceneObjectBindingID Binding, struct TArray<struct UActor>& Actors, char bAllowBindingsFromAsset); // Function LevelSequence.LevelSequenceActor.SetBinding(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3CD1C30>
 	void ResetBindings(); // Function LevelSequence.LevelSequenceActor.ResetBindings(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD1C10>
-	void ResetBinding(struct Unknown Binding); // Function LevelSequence.LevelSequenceActor.ResetBinding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD1B60>
-	void RemoveBindingByTag(struct FName Tag, struct Unknown Actor); // Function LevelSequence.LevelSequenceActor.RemoveBindingByTag(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD1A30>
-	void RemoveBinding(struct Unknown Binding, struct Unknown Actor); // Function LevelSequence.LevelSequenceActor.RemoveBinding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD1940>
+	void ResetBinding(struct FMovieSceneObjectBindingID Binding); // Function LevelSequence.LevelSequenceActor.ResetBinding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD1B60>
+	void RemoveBindingByTag(struct FName Tag, struct UActor Actor); // Function LevelSequence.LevelSequenceActor.RemoveBindingByTag(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD1A30>
+	void RemoveBinding(struct FMovieSceneObjectBindingID Binding, struct UActor Actor); // Function LevelSequence.LevelSequenceActor.RemoveBinding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD1940>
 	void OnLevelSequenceLoaded__DelegateSignature(); // DelegateFunction LevelSequence.LevelSequenceActor.OnLevelSequenceLoaded__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B80160>
-	struct Unknown LoadSequence(); // Function LevelSequence.LevelSequenceActor.LoadSequence(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CD18D0>
+	struct ULevelSequence LoadSequence(); // Function LevelSequence.LevelSequenceActor.LoadSequence(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CD18D0>
 	void HideBurnin(); // Function LevelSequence.LevelSequenceActor.HideBurnin(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD18B0>
-	struct Unknown GetSequencePlayer(); // Function LevelSequence.LevelSequenceActor.GetSequencePlayer(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CD1860>
-	struct Unknown GetSequence(); // Function LevelSequence.LevelSequenceActor.GetSequence(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CD1810>
-	struct TArray<Unknown> FindNamedBindings(struct FName Tag); // Function LevelSequence.LevelSequenceActor.FindNamedBindings(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CD16F0>
-	struct Unknown FindNamedBinding(struct FName Tag); // Function LevelSequence.LevelSequenceActor.FindNamedBinding(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CD1640>
-	void AddBindingByTag(struct FName BindingTag, struct Unknown Actor, char bAllowBindingsFromAsset); // Function LevelSequence.LevelSequenceActor.AddBindingByTag(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD1340>
-	void AddBinding(struct Unknown Binding, struct Unknown Actor, char bAllowBindingsFromAsset); // Function LevelSequence.LevelSequenceActor.AddBinding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD1200>
+	struct ULevelSequencePlayer GetSequencePlayer(); // Function LevelSequence.LevelSequenceActor.GetSequencePlayer(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CD1860>
+	struct ULevelSequence GetSequence(); // Function LevelSequence.LevelSequenceActor.GetSequence(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CD1810>
+	struct TArray<struct FMovieSceneObjectBindingID> FindNamedBindings(struct FName Tag); // Function LevelSequence.LevelSequenceActor.FindNamedBindings(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CD16F0>
+	struct FMovieSceneObjectBindingID FindNamedBinding(struct FName Tag); // Function LevelSequence.LevelSequenceActor.FindNamedBinding(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CD1640>
+	void AddBindingByTag(struct FName BindingTag, struct UActor Actor, char bAllowBindingsFromAsset); // Function LevelSequence.LevelSequenceActor.AddBindingByTag(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD1340>
+	void AddBinding(struct FMovieSceneObjectBindingID Binding, struct UActor Actor, char bAllowBindingsFromAsset); // Function LevelSequence.LevelSequenceActor.AddBinding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD1200>
 };
 
 // Class LevelSequence.LevelSequenceBurnIn
@@ -81,11 +81,11 @@ class ULevelSequenceBurnIn : public UUserWidget {
 
 public:
 
-	struct Unknown FrameInformation; // 0x248 (184)
-	struct Unknown LevelSequenceActor; // 0x300 (8)
+	struct FLevelSequencePlayerSnapshot FrameInformation; // 0x248 (184)
+	struct ALevelSequenceActor LevelSequenceActor; // 0x300 (8)
 
-	void SetSettings(struct Unknown InSettings); // Function LevelSequence.LevelSequenceBurnIn.SetSettings(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown* GetSettingsClass(); // Function LevelSequence.LevelSequenceBurnIn.GetSettingsClass(Native|Event|Public|BlueprintEvent|Const) // <Game_BE.exe+0x3CD1890>
+	void SetSettings(struct Object InSettings); // Function LevelSequence.LevelSequenceBurnIn.SetSettings(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct UClass* GetSettingsClass(); // Function LevelSequence.LevelSequenceBurnIn.GetSettingsClass(Native|Event|Public|BlueprintEvent|Const) // <Game_BE.exe+0x3CD1890>
 };
 
 // Class LevelSequence.LevelSequenceDirector
@@ -93,7 +93,7 @@ class ULevelSequenceDirector : public Object {
 
 public:
 
-	struct Unknown Player; // 0x28 (8)
+	struct ULevelSequencePlayer Player; // 0x28 (8)
 
 	void OnCreated(); // Function LevelSequence.LevelSequenceDirector.OnCreated(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 };
@@ -105,8 +105,8 @@ public:
 
 	struct FMulticastInlineDelegate OnCameraCut; // 0x890 (16)
 
-	struct Unknown GetActiveCameraComponent(); // Function LevelSequence.LevelSequencePlayer.GetActiveCameraComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CD17D0>
-	struct Unknown CreateLevelSequencePlayer(struct Unknown WorldContextObject, struct Unknown LevelSequence, struct Unknown Settings, struct Unknown& OutActor); // Function LevelSequence.LevelSequencePlayer.CreateLevelSequencePlayer(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3CD14D0>
+	struct UCameraComponent GetActiveCameraComponent(); // Function LevelSequence.LevelSequencePlayer.GetActiveCameraComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CD17D0>
+	struct ULevelSequencePlayer CreateLevelSequencePlayer(struct Object WorldContextObject, struct ULevelSequence LevelSequence, struct FMovieSceneSequencePlaybackSettings Settings, struct ALevelSequenceActor& OutActor); // Function LevelSequence.LevelSequencePlayer.CreateLevelSequencePlayer(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3CD14D0>
 };
 
 // Class LevelSequence.LevelSequenceMediaController
@@ -114,15 +114,15 @@ class ALevelSequenceMediaController : public UActor {
 
 public:
 
-	struct Unknown Sequence; // 0x320 (8)
-	struct Unknown MediaComponent; // 0x328 (8)
+	struct ALevelSequenceActor Sequence; // 0x320 (8)
+	struct UMediaComponent MediaComponent; // 0x328 (8)
 	float ServerStartTimeSeconds; // 0x330 (4)
 
 	void SynchronizeToServer(float DesyncThresholdSeconds); // Function LevelSequence.LevelSequenceMediaController.SynchronizeToServer(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD2230>
 	void Play(); // Function LevelSequence.LevelSequenceMediaController.Play(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CD1920>
 	void OnRep_ServerStartTimeSeconds(); // Function LevelSequence.LevelSequenceMediaController.OnRep_ServerStartTimeSeconds(Final|Native|Private) // <Game_BE.exe+0x3CD1900>
-	struct Unknown GetSequence(); // Function LevelSequence.LevelSequenceMediaController.GetSequence(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CD1840>
-	struct Unknown GetMediaComponent(); // Function LevelSequence.LevelSequenceMediaController.GetMediaComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B6A8C0>
+	struct ALevelSequenceActor GetSequence(); // Function LevelSequence.LevelSequenceMediaController.GetSequence(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CD1840>
+	struct UMediaComponent GetMediaComponent(); // Function LevelSequence.LevelSequenceMediaController.GetMediaComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B6A8C0>
 };
 
 // ScriptStruct LevelSequence.LevelSequenceCameraSettings
@@ -133,19 +133,19 @@ struct FLevelSequenceCameraSettings {
 
 // ScriptStruct LevelSequence.LevelSequenceBindingReferences
 struct FLevelSequenceBindingReferences {
-	struct TMap<Unknown, Unknown> BindingIdToReferences; // 0x0 (80)
-	struct TSet<Unknown> AnimSequenceInstances; // 0x50 (80)
+	struct TMap<struct FGuid, struct FLevelSequenceBindingReferenceArray> BindingIdToReferences; // 0x0 (80)
+	struct TSet<struct FGuid> AnimSequenceInstances; // 0x50 (80)
 };
 
 // ScriptStruct LevelSequence.LevelSequenceBindingReferenceArray
 struct FLevelSequenceBindingReferenceArray {
-	struct TArray<Unknown> References; // 0x0 (16)
+	struct TArray<struct FLevelSequenceBindingReference> References; // 0x0 (16)
 };
 
 // ScriptStruct LevelSequence.LevelSequenceBindingReference
 struct FLevelSequenceBindingReference {
 	struct FString PackageName; // 0x0 (16)
-	struct Unknown ExternalObjectPath; // 0x10 (24)
+	struct FSoftObjectPath ExternalObjectPath; // 0x10 (24)
 	struct FString ObjectPath; // 0x28 (16)
 };
 
@@ -153,36 +153,36 @@ struct FLevelSequenceBindingReference {
 struct FLevelSequenceObject {
 	LazyObjectProperty ObjectOrOwner; // 0x0 (28)
 	struct FString ComponentName; // 0x20 (16)
-	struct TWeakObjectPtr<struct Unknown> CachedComponent; // 0x30 (8)
+	struct TWeakObjectPtr<struct Object> CachedComponent; // 0x30 (8)
 };
 
 // ScriptStruct LevelSequence.LevelSequencePlayerSnapshot
 struct FLevelSequencePlayerSnapshot {
 	struct FString MasterName; // 0x0 (16)
-	struct Unknown MasterTime; // 0x10 (16)
-	struct Unknown SourceTime; // 0x20 (16)
+	struct FQualifiedFrameTime MasterTime; // 0x10 (16)
+	struct FQualifiedFrameTime SourceTime; // 0x20 (16)
 	struct FString CurrentShotName; // 0x30 (16)
-	struct Unknown CurrentShotLocalTime; // 0x40 (16)
-	struct Unknown CurrentShotSourceTime; // 0x50 (16)
+	struct FQualifiedFrameTime CurrentShotLocalTime; // 0x40 (16)
+	struct FQualifiedFrameTime CurrentShotSourceTime; // 0x50 (16)
 	struct FString SourceTimecode; // 0x60 (16)
-	struct Unknown CameraComponent; // 0x70 (40)
-	struct Unknown Settings; // 0x98 (12)
-	struct Unknown ActiveShot; // 0xA8 (8)
-	struct Unknown ShotID; // 0xB0 (4)
+	struct TSoftObjectPtr<UCameraComponent> CameraComponent; // 0x70 (40)
+	struct FLevelSequenceSnapshotSettings Settings; // 0x98 (12)
+	struct ULevelSequence ActiveShot; // 0xA8 (8)
+	struct FMovieSceneSequenceID ShotID; // 0xB0 (4)
 };
 
 // ScriptStruct LevelSequence.LevelSequenceSnapshotSettings
 struct FLevelSequenceSnapshotSettings {
 	char ZeroPadAmount; // 0x0 (1)
-	struct Unknown FrameRate; // 0x4 (8)
+	struct FFrameRate FrameRate; // 0x4 (8)
 };
 
 // Function LevelSequence.LevelSequence.RemoveMetaDataByClass
-inline void ULevelSequence::RemoveMetaDataByClass(struct Unknown* InClass) {
+inline void ULevelSequence::RemoveMetaDataByClass(struct UClass* InClass) {
 	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequence.RemoveMetaDataByClass");
 
 	struct RemoveMetaDataByClass_Params {
-		struct Unknown* InClass;
+		struct UClass* InClass;
 	}; RemoveMetaDataByClass_Params Params;
 
 	Params.InClass = InClass;
@@ -193,12 +193,12 @@ inline void ULevelSequence::RemoveMetaDataByClass(struct Unknown* InClass) {
 }
 
 // Function LevelSequence.LevelSequence.FindOrAddMetaDataByClass
-inline struct Unknown ULevelSequence::FindOrAddMetaDataByClass(struct Unknown* InClass) {
+inline struct Object ULevelSequence::FindOrAddMetaDataByClass(struct UClass* InClass) {
 	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequence.FindOrAddMetaDataByClass");
 
 	struct FindOrAddMetaDataByClass_Params {
-		struct Unknown* InClass;
-		struct Unknown ReturnValue;
+		struct UClass* InClass;
+		struct Object ReturnValue;
 
 	}; FindOrAddMetaDataByClass_Params Params;
 
@@ -212,12 +212,12 @@ inline struct Unknown ULevelSequence::FindOrAddMetaDataByClass(struct Unknown* I
 }
 
 // Function LevelSequence.LevelSequence.FindMetaDataByClass
-inline struct Unknown ULevelSequence::FindMetaDataByClass(struct Unknown* InClass) {
+inline struct Object ULevelSequence::FindMetaDataByClass(struct UClass* InClass) {
 	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequence.FindMetaDataByClass");
 
 	struct FindMetaDataByClass_Params {
-		struct Unknown* InClass;
-		struct Unknown ReturnValue;
+		struct UClass* InClass;
+		struct Object ReturnValue;
 
 	}; FindMetaDataByClass_Params Params;
 
@@ -231,12 +231,12 @@ inline struct Unknown ULevelSequence::FindMetaDataByClass(struct Unknown* InClas
 }
 
 // Function LevelSequence.LevelSequence.CopyMetaData
-inline struct Unknown ULevelSequence::CopyMetaData(struct Unknown InMetaData) {
+inline struct Object ULevelSequence::CopyMetaData(struct Object InMetaData) {
 	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequence.CopyMetaData");
 
 	struct CopyMetaData_Params {
-		struct Unknown InMetaData;
-		struct Unknown ReturnValue;
+		struct Object InMetaData;
+		struct Object ReturnValue;
 
 	}; CopyMetaData_Params Params;
 
@@ -250,11 +250,11 @@ inline struct Unknown ULevelSequence::CopyMetaData(struct Unknown InMetaData) {
 }
 
 // Function LevelSequence.LevelSequenceBurnInOptions.SetBurnIn
-inline void ULevelSequenceBurnInOptions::SetBurnIn(struct Unknown InBurnInClass) {
+inline void ULevelSequenceBurnInOptions::SetBurnIn(struct FSoftClassPath InBurnInClass) {
 	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceBurnInOptions.SetBurnIn");
 
 	struct SetBurnIn_Params {
-		struct Unknown InBurnInClass;
+		struct FSoftClassPath InBurnInClass;
 	}; SetBurnIn_Params Params;
 
 	Params.InBurnInClass = InBurnInClass;
@@ -279,11 +279,11 @@ inline void ALevelSequenceActor::ShowBurnin() {
 }
 
 // Function LevelSequence.LevelSequenceActor.SetSequence
-inline void ALevelSequenceActor::SetSequence(struct Unknown InSequence) {
+inline void ALevelSequenceActor::SetSequence(struct ULevelSequence InSequence) {
 	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.SetSequence");
 
 	struct SetSequence_Params {
-		struct Unknown InSequence;
+		struct ULevelSequence InSequence;
 	}; SetSequence_Params Params;
 
 	Params.InSequence = InSequence;
@@ -309,11 +309,11 @@ inline void ALevelSequenceActor::SetReplicatePlayback(char ReplicatePlayback) {
 }
 
 // Function LevelSequence.LevelSequenceActor.SetEventReceivers
-inline void ALevelSequenceActor::SetEventReceivers(struct TArray<Unknown> AdditionalReceivers) {
+inline void ALevelSequenceActor::SetEventReceivers(struct TArray<struct UActor> AdditionalReceivers) {
 	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.SetEventReceivers");
 
 	struct SetEventReceivers_Params {
-		struct TArray<Unknown> AdditionalReceivers;
+		struct TArray<struct UActor> AdditionalReceivers;
 	}; SetEventReceivers_Params Params;
 
 	Params.AdditionalReceivers = AdditionalReceivers;
@@ -324,12 +324,12 @@ inline void ALevelSequenceActor::SetEventReceivers(struct TArray<Unknown> Additi
 }
 
 // Function LevelSequence.LevelSequenceActor.SetBindingByTag
-inline void ALevelSequenceActor::SetBindingByTag(struct FName BindingTag, struct TArray<Unknown>& Actors, char bAllowBindingsFromAsset) {
+inline void ALevelSequenceActor::SetBindingByTag(struct FName BindingTag, struct TArray<struct UActor>& Actors, char bAllowBindingsFromAsset) {
 	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.SetBindingByTag");
 
 	struct SetBindingByTag_Params {
 		struct FName BindingTag;
-		struct TArray<Unknown>& Actors;
+		struct TArray<struct UActor>& Actors;
 		char bAllowBindingsFromAsset;
 	}; SetBindingByTag_Params Params;
 
@@ -345,12 +345,12 @@ inline void ALevelSequenceActor::SetBindingByTag(struct FName BindingTag, struct
 }
 
 // Function LevelSequence.LevelSequenceActor.SetBinding
-inline void ALevelSequenceActor::SetBinding(struct Unknown Binding, struct TArray<Unknown>& Actors, char bAllowBindingsFromAsset) {
+inline void ALevelSequenceActor::SetBinding(struct FMovieSceneObjectBindingID Binding, struct TArray<struct UActor>& Actors, char bAllowBindingsFromAsset) {
 	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.SetBinding");
 
 	struct SetBinding_Params {
-		struct Unknown Binding;
-		struct TArray<Unknown>& Actors;
+		struct FMovieSceneObjectBindingID Binding;
+		struct TArray<struct UActor>& Actors;
 		char bAllowBindingsFromAsset;
 	}; SetBinding_Params Params;
 
@@ -380,11 +380,11 @@ inline void ALevelSequenceActor::ResetBindings() {
 }
 
 // Function LevelSequence.LevelSequenceActor.ResetBinding
-inline void ALevelSequenceActor::ResetBinding(struct Unknown Binding) {
+inline void ALevelSequenceActor::ResetBinding(struct FMovieSceneObjectBindingID Binding) {
 	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.ResetBinding");
 
 	struct ResetBinding_Params {
-		struct Unknown Binding;
+		struct FMovieSceneObjectBindingID Binding;
 	}; ResetBinding_Params Params;
 
 	Params.Binding = Binding;
@@ -395,12 +395,12 @@ inline void ALevelSequenceActor::ResetBinding(struct Unknown Binding) {
 }
 
 // Function LevelSequence.LevelSequenceActor.RemoveBindingByTag
-inline void ALevelSequenceActor::RemoveBindingByTag(struct FName Tag, struct Unknown Actor) {
+inline void ALevelSequenceActor::RemoveBindingByTag(struct FName Tag, struct UActor Actor) {
 	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.RemoveBindingByTag");
 
 	struct RemoveBindingByTag_Params {
 		struct FName Tag;
-		struct Unknown Actor;
+		struct UActor Actor;
 	}; RemoveBindingByTag_Params Params;
 
 	Params.Tag = Tag;
@@ -412,12 +412,12 @@ inline void ALevelSequenceActor::RemoveBindingByTag(struct FName Tag, struct Unk
 }
 
 // Function LevelSequence.LevelSequenceActor.RemoveBinding
-inline void ALevelSequenceActor::RemoveBinding(struct Unknown Binding, struct Unknown Actor) {
+inline void ALevelSequenceActor::RemoveBinding(struct FMovieSceneObjectBindingID Binding, struct UActor Actor) {
 	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.RemoveBinding");
 
 	struct RemoveBinding_Params {
-		struct Unknown Binding;
-		struct Unknown Actor;
+		struct FMovieSceneObjectBindingID Binding;
+		struct UActor Actor;
 	}; RemoveBinding_Params Params;
 
 	Params.Binding = Binding;
@@ -443,12 +443,12 @@ inline void ALevelSequenceActor::OnLevelSequenceLoaded__DelegateSignature() {
 }
 
 // Function LevelSequence.LevelSequenceActor.LoadSequence
-inline struct Unknown ALevelSequenceActor::LoadSequence() {
+inline struct ULevelSequence ALevelSequenceActor::LoadSequence() {
 	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.LoadSequence");
 
 	struct LoadSequence_Params {
 		
-		struct Unknown ReturnValue;
+		struct ULevelSequence ReturnValue;
 
 	}; LoadSequence_Params Params;
 
@@ -475,12 +475,12 @@ inline void ALevelSequenceActor::HideBurnin() {
 }
 
 // Function LevelSequence.LevelSequenceActor.GetSequencePlayer
-inline struct Unknown ALevelSequenceActor::GetSequencePlayer() {
+inline struct ULevelSequencePlayer ALevelSequenceActor::GetSequencePlayer() {
 	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.GetSequencePlayer");
 
 	struct GetSequencePlayer_Params {
 		
-		struct Unknown ReturnValue;
+		struct ULevelSequencePlayer ReturnValue;
 
 	}; GetSequencePlayer_Params Params;
 
@@ -493,12 +493,12 @@ inline struct Unknown ALevelSequenceActor::GetSequencePlayer() {
 }
 
 // Function LevelSequence.LevelSequenceActor.GetSequence
-inline struct Unknown ALevelSequenceActor::GetSequence() {
+inline struct ULevelSequence ALevelSequenceActor::GetSequence() {
 	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.GetSequence");
 
 	struct GetSequence_Params {
 		
-		struct Unknown ReturnValue;
+		struct ULevelSequence ReturnValue;
 
 	}; GetSequence_Params Params;
 
@@ -511,12 +511,12 @@ inline struct Unknown ALevelSequenceActor::GetSequence() {
 }
 
 // Function LevelSequence.LevelSequenceActor.FindNamedBindings
-inline struct TArray<Unknown> ALevelSequenceActor::FindNamedBindings(struct FName Tag) {
+inline struct TArray<struct FMovieSceneObjectBindingID> ALevelSequenceActor::FindNamedBindings(struct FName Tag) {
 	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.FindNamedBindings");
 
 	struct FindNamedBindings_Params {
 		struct FName Tag;
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<struct FMovieSceneObjectBindingID> ReturnValue;
 
 	}; FindNamedBindings_Params Params;
 
@@ -530,12 +530,12 @@ inline struct TArray<Unknown> ALevelSequenceActor::FindNamedBindings(struct FNam
 }
 
 // Function LevelSequence.LevelSequenceActor.FindNamedBinding
-inline struct Unknown ALevelSequenceActor::FindNamedBinding(struct FName Tag) {
+inline struct FMovieSceneObjectBindingID ALevelSequenceActor::FindNamedBinding(struct FName Tag) {
 	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.FindNamedBinding");
 
 	struct FindNamedBinding_Params {
 		struct FName Tag;
-		struct Unknown ReturnValue;
+		struct FMovieSceneObjectBindingID ReturnValue;
 
 	}; FindNamedBinding_Params Params;
 
@@ -549,12 +549,12 @@ inline struct Unknown ALevelSequenceActor::FindNamedBinding(struct FName Tag) {
 }
 
 // Function LevelSequence.LevelSequenceActor.AddBindingByTag
-inline void ALevelSequenceActor::AddBindingByTag(struct FName BindingTag, struct Unknown Actor, char bAllowBindingsFromAsset) {
+inline void ALevelSequenceActor::AddBindingByTag(struct FName BindingTag, struct UActor Actor, char bAllowBindingsFromAsset) {
 	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.AddBindingByTag");
 
 	struct AddBindingByTag_Params {
 		struct FName BindingTag;
-		struct Unknown Actor;
+		struct UActor Actor;
 		char bAllowBindingsFromAsset;
 	}; AddBindingByTag_Params Params;
 
@@ -568,12 +568,12 @@ inline void ALevelSequenceActor::AddBindingByTag(struct FName BindingTag, struct
 }
 
 // Function LevelSequence.LevelSequenceActor.AddBinding
-inline void ALevelSequenceActor::AddBinding(struct Unknown Binding, struct Unknown Actor, char bAllowBindingsFromAsset) {
+inline void ALevelSequenceActor::AddBinding(struct FMovieSceneObjectBindingID Binding, struct UActor Actor, char bAllowBindingsFromAsset) {
 	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceActor.AddBinding");
 
 	struct AddBinding_Params {
-		struct Unknown Binding;
-		struct Unknown Actor;
+		struct FMovieSceneObjectBindingID Binding;
+		struct UActor Actor;
 		char bAllowBindingsFromAsset;
 	}; AddBinding_Params Params;
 
@@ -587,11 +587,11 @@ inline void ALevelSequenceActor::AddBinding(struct Unknown Binding, struct Unkno
 }
 
 // Function LevelSequence.LevelSequenceBurnIn.SetSettings
-inline void ULevelSequenceBurnIn::SetSettings(struct Unknown InSettings) {
+inline void ULevelSequenceBurnIn::SetSettings(struct Object InSettings) {
 	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceBurnIn.SetSettings");
 
 	struct SetSettings_Params {
-		struct Unknown InSettings;
+		struct Object InSettings;
 	}; SetSettings_Params Params;
 
 	Params.InSettings = InSettings;
@@ -602,12 +602,12 @@ inline void ULevelSequenceBurnIn::SetSettings(struct Unknown InSettings) {
 }
 
 // Function LevelSequence.LevelSequenceBurnIn.GetSettingsClass
-inline struct Unknown* ULevelSequenceBurnIn::GetSettingsClass() {
+inline struct UClass* ULevelSequenceBurnIn::GetSettingsClass() {
 	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceBurnIn.GetSettingsClass");
 
 	struct GetSettingsClass_Params {
 		
-		struct Unknown* ReturnValue;
+		struct UClass* ReturnValue;
 
 	}; GetSettingsClass_Params Params;
 
@@ -634,12 +634,12 @@ inline void ULevelSequenceDirector::OnCreated() {
 }
 
 // Function LevelSequence.LevelSequencePlayer.GetActiveCameraComponent
-inline struct Unknown ULevelSequencePlayer::GetActiveCameraComponent() {
+inline struct UCameraComponent ULevelSequencePlayer::GetActiveCameraComponent() {
 	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequencePlayer.GetActiveCameraComponent");
 
 	struct GetActiveCameraComponent_Params {
 		
-		struct Unknown ReturnValue;
+		struct UCameraComponent ReturnValue;
 
 	}; GetActiveCameraComponent_Params Params;
 
@@ -652,15 +652,15 @@ inline struct Unknown ULevelSequencePlayer::GetActiveCameraComponent() {
 }
 
 // Function LevelSequence.LevelSequencePlayer.CreateLevelSequencePlayer
-inline struct Unknown ULevelSequencePlayer::CreateLevelSequencePlayer(struct Unknown WorldContextObject, struct Unknown LevelSequence, struct Unknown Settings, struct Unknown& OutActor) {
+inline struct ULevelSequencePlayer ULevelSequencePlayer::CreateLevelSequencePlayer(struct Object WorldContextObject, struct ULevelSequence LevelSequence, struct FMovieSceneSequencePlaybackSettings Settings, struct ALevelSequenceActor& OutActor) {
 	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequencePlayer.CreateLevelSequencePlayer");
 
 	struct CreateLevelSequencePlayer_Params {
-		struct Unknown WorldContextObject;
-		struct Unknown LevelSequence;
-		struct Unknown Settings;
-		struct Unknown& OutActor;
-		struct Unknown ReturnValue;
+		struct Object WorldContextObject;
+		struct ULevelSequence LevelSequence;
+		struct FMovieSceneSequencePlaybackSettings Settings;
+		struct ALevelSequenceActor& OutActor;
+		struct ULevelSequencePlayer ReturnValue;
 
 	}; CreateLevelSequencePlayer_Params Params;
 
@@ -722,12 +722,12 @@ inline void ALevelSequenceMediaController::OnRep_ServerStartTimeSeconds() {
 }
 
 // Function LevelSequence.LevelSequenceMediaController.GetSequence
-inline struct Unknown ALevelSequenceMediaController::GetSequence() {
+inline struct ALevelSequenceActor ALevelSequenceMediaController::GetSequence() {
 	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceMediaController.GetSequence");
 
 	struct GetSequence_Params {
 		
-		struct Unknown ReturnValue;
+		struct ALevelSequenceActor ReturnValue;
 
 	}; GetSequence_Params Params;
 
@@ -740,12 +740,12 @@ inline struct Unknown ALevelSequenceMediaController::GetSequence() {
 }
 
 // Function LevelSequence.LevelSequenceMediaController.GetMediaComponent
-inline struct Unknown ALevelSequenceMediaController::GetMediaComponent() {
+inline struct UMediaComponent ALevelSequenceMediaController::GetMediaComponent() {
 	static auto fn = UObject::FindObject<UFunction>("Function LevelSequence.LevelSequenceMediaController.GetMediaComponent");
 
 	struct GetMediaComponent_Params {
 		
-		struct Unknown ReturnValue;
+		struct UMediaComponent ReturnValue;
 
 	}; GetMediaComponent_Params Params;
 

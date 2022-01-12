@@ -191,7 +191,7 @@ class UStandinNearPipeline : public USimplygonStandinPipeline {
 
 public:
 
-	struct Unknown Settings; // 0x28 (432)
+	struct FAggregationPipelineSettings Settings; // 0x28 (432)
 };
 
 // Class SimplygonUObjects.StandinFarPipeline
@@ -199,7 +199,7 @@ class UStandinFarPipeline : public USimplygonStandinPipeline {
 
 public:
 
-	struct Unknown Settings; // 0x28 (448)
+	struct FRemeshingPipelineSettings Settings; // 0x28 (448)
 };
 
 // Class SimplygonUObjects.SimplygonColorCaster
@@ -207,7 +207,7 @@ class USimplygonColorCaster : public USimplygonMaterialCaster {
 
 public:
 
-	struct Unknown ColorCasterSettings; // 0x28 (80)
+	struct FColorCasterSettings ColorCasterSettings; // 0x28 (80)
 };
 
 // Class SimplygonUObjects.SimplygonNormalCaster
@@ -215,7 +215,7 @@ class USimplygonNormalCaster : public USimplygonMaterialCaster {
 
 public:
 
-	struct Unknown NormalCasterSettings; // 0x28 (80)
+	struct FNormalCasterSettings NormalCasterSettings; // 0x28 (80)
 };
 
 // Class SimplygonUObjects.ReductionPipeline
@@ -223,7 +223,7 @@ class UReductionPipeline : public USimplygonPipeline {
 
 public:
 
-	struct Unknown Settings; // 0x28 (560)
+	struct FReductionPipelineSettings Settings; // 0x28 (560)
 };
 
 // Class SimplygonUObjects.RemeshingPipeline
@@ -231,7 +231,7 @@ class URemeshingPipeline : public USimplygonPipeline {
 
 public:
 
-	struct Unknown Settings; // 0x28 (448)
+	struct FRemeshingPipelineSettings Settings; // 0x28 (448)
 };
 
 // Class SimplygonUObjects.AggregationPipeline
@@ -239,7 +239,7 @@ class UAggregationPipeline : public USimplygonPipeline {
 
 public:
 
-	struct Unknown Settings; // 0x28 (432)
+	struct FAggregationPipelineSettings Settings; // 0x28 (432)
 };
 
 // Class SimplygonUObjects.SimplygonOpacityCaster
@@ -247,7 +247,7 @@ class USimplygonOpacityCaster : public USimplygonMaterialCaster {
 
 public:
 
-	struct Unknown OpacityCasterSettings; // 0x28 (72)
+	struct FOpacityCasterSettings OpacityCasterSettings; // 0x28 (72)
 };
 
 // Class SimplygonUObjects.SimplygonDisplacementCaster
@@ -255,7 +255,7 @@ class USimplygonDisplacementCaster : public USimplygonMaterialCaster {
 
 public:
 
-	struct Unknown DisplacementCasterSettings; // 0x28 (88)
+	struct FDisplacementCasterSettings DisplacementCasterSettings; // 0x28 (88)
 };
 
 // Class SimplygonUObjects.SimplygonAmbientOcclusionCaster
@@ -263,7 +263,7 @@ class USimplygonAmbientOcclusionCaster : public USimplygonMaterialCaster {
 
 public:
 
-	struct Unknown AmbientOcclusionCasterSettings; // 0x28 (88)
+	struct FAmbientOcclusionCasterSettings AmbientOcclusionCasterSettings; // 0x28 (88)
 };
 
 // Class SimplygonUObjects.SimplygonGeometryDataCaster
@@ -271,7 +271,7 @@ class USimplygonGeometryDataCaster : public USimplygonMaterialCaster {
 
 public:
 
-	struct Unknown GeometryDataCasterSettings; // 0x30 (144)
+	struct FGeometryDataCasterSettings GeometryDataCasterSettings; // 0x30 (144)
 };
 
 // Class SimplygonUObjects.SimplygonVertexColorCaster
@@ -279,18 +279,18 @@ class USimplygonVertexColorCaster : public USimplygonMaterialCaster {
 
 public:
 
-	struct Unknown VertexColorCasterSettings; // 0x28 (96)
+	struct FVertexColorCasterSettings VertexColorCasterSettings; // 0x28 (96)
 };
 
 // ScriptStruct SimplygonUObjects.AggregationPipelineSettings
 struct FAggregationPipelineSettings : FSimplygonPipelineSettings {
-	struct Unknown AggregationSettings; // 0x8 (40)
-	struct Unknown VisibilitySettings; // 0x30 (72)
-	struct Unknown GeometryCullingSettings; // 0x78 (48)
-	struct Unknown VertexWeightSettings; // 0xA8 (40)
-	struct Unknown MappingImageSettings; // 0xD0 (168)
-	struct Unknown GenerateLightmapTexCoordSettings; // 0x178 (40)
-	struct TArray<Unknown> MaterialPropertyCasters; // 0x1A0 (16)
+	struct FAggregationSettings AggregationSettings; // 0x8 (40)
+	struct FVisibilitySettings VisibilitySettings; // 0x30 (72)
+	struct FGeometryCullingSettings GeometryCullingSettings; // 0x78 (48)
+	struct FVertexWeightSettings VertexWeightSettings; // 0xA8 (40)
+	struct FMappingImageSettings MappingImageSettings; // 0xD0 (168)
+	struct FGenerateLightmapTexCoordSettings GenerateLightmapTexCoordSettings; // 0x178 (40)
+	struct TArray<struct USimplygonMaterialCaster> MaterialPropertyCasters; // 0x1A0 (16)
 };
 
 // ScriptStruct SimplygonUObjects.GenerateLightmapTexCoordSettings
@@ -298,7 +298,7 @@ struct FGenerateLightmapTexCoordSettings {
 	char GenerateLightmapTexCoord : 0; // 0x0 (1)
 	int32_t LightmapTexCoordLevel; // 0x4 (4)
 	struct FString LightmapTexCoordName; // 0x8 (16)
-	enum class Unknow ChartAggregatorMode; // 0x18 (4)
+	enum class EChartAggregatorMode ChartAggregatorMode; // 0x18 (4)
 	uint32_t TextureWidth; // 0x1C (4)
 	uint32_t TextureHeight; // 0x20 (4)
 	uint32_t GutterSpace; // 0x24 (4)
@@ -322,11 +322,11 @@ struct FMappingImageSettings {
 	char OnlyParameterizeInvalidUVs : 0; // 0x20 (1)
 	int32_t TexCoordLevel; // 0x24 (4)
 	struct FString TexCoordName; // 0x28 (16)
-	enum class Unknow TexCoordGeneratorType; // 0x38 (4)
-	struct TArray<Unknown> InputMaterialSettings; // 0x40 (16)
-	struct TArray<Unknown> OutputMaterialSettings; // 0x50 (16)
-	struct Unknown ChartAggregatorSettings; // 0x60 (64)
-	struct Unknown ParameterizerSettings; // 0xA0 (8)
+	enum class ETexCoordGeneratorType TexCoordGeneratorType; // 0x38 (4)
+	struct TArray<struct FInputMaterialSettings> InputMaterialSettings; // 0x40 (16)
+	struct TArray<struct FOutputMaterialSettings> OutputMaterialSettings; // 0x50 (16)
+	struct FChartAggregatorSettings ChartAggregatorSettings; // 0x60 (64)
+	struct FParameterizerSettings ParameterizerSettings; // 0xA0 (8)
 };
 
 // ScriptStruct SimplygonUObjects.ParameterizerSettings
@@ -337,8 +337,8 @@ struct FParameterizerSettings {
 
 // ScriptStruct SimplygonUObjects.ChartAggregatorSettings
 struct FChartAggregatorSettings {
-	enum class Unknow ChartAggregatorMode; // 0x0 (4)
-	enum class Unknow SurfaceAreaScale; // 0x4 (4)
+	enum class EChartAggregatorMode ChartAggregatorMode; // 0x0 (4)
+	enum class ESurfaceAreaScale SurfaceAreaScale; // 0x4 (4)
 	int32_t OriginalTexCoordLevel; // 0x8 (4)
 	struct FString OriginalTexCoordName; // 0x10 (16)
 	char SeparateOverlappingCharts : 0; // 0x20 (1)
@@ -365,9 +365,9 @@ struct FVertexWeightSettings {
 	char UseVertexWeightsInTexcoordGenerator : 0; // 0x0 (1)
 	struct FString WeightsFromColorName; // 0x8 (16)
 	int32_t WeightsFromColorLevel; // 0x18 (4)
-	enum class Unknow WeightsFromColorComponent; // 0x1C (4)
+	enum class EWeightsFromColorComponent WeightsFromColorComponent; // 0x1C (4)
 	float WeightsFromColorMultiplier; // 0x20 (4)
-	enum class Unknow WeightsFromColorMode; // 0x24 (4)
+	enum class EWeightsFromColorMode WeightsFromColorMode; // 0x24 (4)
 };
 
 // ScriptStruct SimplygonUObjects.GeometryCullingSettings
@@ -395,7 +395,7 @@ struct FVisibilitySettings {
 	float FillNonVisibleAreaThreshold; // 0x38 (4)
 	char RemoveTrianglesNotOccludingOtherTriangles : 0; // 0x3C (1)
 	char ConservativeMode : 0; // 0x3C (1)
-	enum class Unknow ComputeVisibilityMode; // 0x40 (4)
+	enum class EComputeVisibilityMode ComputeVisibilityMode; // 0x40 (4)
 };
 
 // ScriptStruct SimplygonUObjects.AggregationSettings
@@ -412,12 +412,12 @@ struct FAggregationSettings {
 
 // ScriptStruct SimplygonUObjects.RemeshingPipelineSettings
 struct FRemeshingPipelineSettings : FSimplygonPipelineSettings {
-	struct Unknown RemeshingSettings; // 0x8 (56)
-	struct Unknown BoneSettings; // 0x40 (80)
-	struct Unknown GeometryCullingSettings; // 0x90 (48)
-	struct Unknown VisibilitySettings; // 0xC0 (72)
-	struct Unknown MappingImageSettings; // 0x108 (168)
-	struct TArray<Unknown> MaterialPropertyCasters; // 0x1B0 (16)
+	struct FRemeshingSettings RemeshingSettings; // 0x8 (56)
+	struct FBoneSettings BoneSettings; // 0x40 (80)
+	struct FGeometryCullingSettings GeometryCullingSettings; // 0x90 (48)
+	struct FVisibilitySettings VisibilitySettings; // 0xC0 (72)
+	struct FMappingImageSettings MappingImageSettings; // 0x108 (168)
+	struct TArray<struct USimplygonMaterialCaster> MaterialPropertyCasters; // 0x1B0 (16)
 };
 
 // ScriptStruct SimplygonUObjects.BoneSettings
@@ -430,7 +430,7 @@ struct FBoneSettings {
 	char BoneReductionTargetMaxDeviationEnabled : 0; // 0x0 (1)
 	uint32_t MaxBonePerVertex; // 0x4 (4)
 	char BoneReductionTargetOnScreenSizeEnabled : 0; // 0x8 (1)
-	enum class Unknow BoneReductionTargetStopCondition; // 0xC (4)
+	enum class EBoneReductionTargetStopCondition BoneReductionTargetStopCondition; // 0xC (4)
 	float BoneReductionTargetBoneRatio; // 0x10 (4)
 	uint32_t BoneReductionTargetBoneCount; // 0x14 (4)
 	float BoneReductionTargetMaxDeviation; // 0x18 (4)
@@ -444,9 +444,9 @@ struct FBoneSettings {
 // ScriptStruct SimplygonUObjects.RemeshingSettings
 struct FRemeshingSettings {
 	uint32_t OnScreenSize; // 0x0 (4)
-	enum class Unknow HoleFilling; // 0x4 (4)
-	enum class Unknow RemeshingMode; // 0x8 (4)
-	enum class Unknow SurfaceTransferMode; // 0xC (4)
+	enum class EHoleFilling HoleFilling; // 0x4 (4)
+	enum class ERemeshingMode RemeshingMode; // 0x8 (4)
+	enum class ESurfaceTransferMode SurfaceTransferMode; // 0xC (4)
 	float HardEdgeAngle; // 0x10 (4)
 	char TransferNormals : 0; // 0x14 (1)
 	char TransferColors : 0; // 0x14 (1)
@@ -457,14 +457,14 @@ struct FRemeshingSettings {
 
 // ScriptStruct SimplygonUObjects.ReductionPipelineSettings
 struct FReductionPipelineSettings : FSimplygonPipelineSettings {
-	struct Unknown ReductionSettings; // 0x8 (144)
-	struct Unknown RepairSettings; // 0x98 (20)
-	struct Unknown NormalCalculationSettings; // 0xAC (12)
-	struct Unknown VisibilitySettings; // 0xB8 (72)
-	struct Unknown BoneSettings; // 0x100 (80)
-	struct Unknown VertexWeightSettings; // 0x150 (40)
-	struct Unknown MappingImageSettings; // 0x178 (168)
-	struct TArray<Unknown> MaterialPropertyCasters; // 0x220 (16)
+	struct FReductionSettings ReductionSettings; // 0x8 (144)
+	struct FRepairSettings RepairSettings; // 0x98 (20)
+	struct FNormalCalculationSettings NormalCalculationSettings; // 0xAC (12)
+	struct FVisibilitySettings VisibilitySettings; // 0xB8 (72)
+	struct FBoneSettings BoneSettings; // 0x100 (80)
+	struct FVertexWeightSettings VertexWeightSettings; // 0x150 (40)
+	struct FMappingImageSettings MappingImageSettings; // 0x178 (168)
+	struct TArray<struct USimplygonMaterialCaster> MaterialPropertyCasters; // 0x220 (16)
 };
 
 // ScriptStruct SimplygonUObjects.NormalCalculationSettings
@@ -502,8 +502,8 @@ struct FReductionSettings {
 	float ReductionTargetMaxDeviation; // 0x14 (4)
 	char ReductionTargetOnScreenSizeEnabled : 0; // 0x18 (1)
 	uint32_t ReductionTargetOnScreenSize; // 0x1C (4)
-	enum class Unknow ReductionTargetStopCondition; // 0x20 (4)
-	enum class Unknow ReductionHeuristics; // 0x24 (4)
+	enum class EReductionTargetStopCondition ReductionTargetStopCondition; // 0x20 (4)
+	enum class EReductionHeuristics ReductionHeuristics; // 0x24 (4)
 	float GeometryImportance; // 0x28 (4)
 	float MaterialImportance; // 0x2C (4)
 	float TextureImportance; // 0x30 (4)
@@ -518,10 +518,10 @@ struct FReductionSettings {
 	char KeepSymmetry : 0; // 0x4C (1)
 	char UseAutomaticSymmetryDetection : 0; // 0x4C (1)
 	char UseSymmetryQuadRetriangulator : 0; // 0x4C (1)
-	enum class Unknow SymmetryAxis; // 0x50 (4)
+	enum class ESymmetryAxis SymmetryAxis; // 0x50 (4)
 	float SymmetryOffset; // 0x54 (4)
 	float SymmetryDetectionTolerance; // 0x58 (4)
-	enum class Unknow DataCreationPreferences; // 0x5C (4)
+	enum class EDataCreationPreferences DataCreationPreferences; // 0x5C (4)
 	char GenerateGeomorphData : 0; // 0x60 (1)
 	float OutwardMoveMultiplier; // 0x64 (4)
 	float InwardMoveMultiplier; // 0x68 (4)
@@ -537,34 +537,34 @@ struct FReductionSettings {
 // ScriptStruct SimplygonUObjects.VertexColorCasterSettings
 struct FVertexColorCasterSettings {
 	struct FString MaterialChannel; // 0x0 (16)
-	enum class Unknow OpacityChannelComponent; // 0x10 (4)
-	enum class Unknow DitherType; // 0x14 (4)
-	enum class Unknow FillMode; // 0x18 (4)
+	enum class EOpacityChannelComponent OpacityChannelComponent; // 0x10 (4)
+	enum class EDitherType DitherType; // 0x14 (4)
+	enum class EFillMode FillMode; // 0x18 (4)
 	struct FString OpacityChannel; // 0x20 (16)
 	char UseMultisampling : 0; // 0x30 (1)
 	int32_t OutputColorLevel; // 0x34 (4)
-	enum class Unknow OutputImageFileFormat; // 0x38 (4)
-	enum class Unknow OutputDDSCompressionType; // 0x3C (4)
+	enum class EOutputImageFileFormat OutputImageFileFormat; // 0x38 (4)
+	enum class EOutputDDSCompressionType OutputDDSCompressionType; // 0x3C (4)
 	uint32_t Dilation; // 0x40 (4)
 	struct FString OutputColorName; // 0x48 (16)
-	enum class Unknow OutputPixelFormat; // 0x58 (4)
+	enum class EOutputPixelFormat OutputPixelFormat; // 0x58 (4)
 	float ColorSpaceEdgeThreshold; // 0x5C (4)
 };
 
 // ScriptStruct SimplygonUObjects.GeometryDataCasterSettings
 struct FGeometryDataCasterSettings {
 	struct FString MaterialChannel; // 0x0 (16)
-	enum class Unknow OpacityChannelComponent; // 0x10 (4)
-	enum class Unknow DitherType; // 0x14 (4)
-	enum class Unknow FillMode; // 0x18 (4)
+	enum class EOpacityChannelComponent OpacityChannelComponent; // 0x10 (4)
+	enum class EDitherType DitherType; // 0x14 (4)
+	enum class EFillMode FillMode; // 0x18 (4)
 	struct FString OpacityChannel; // 0x20 (16)
 	char UseMultisampling : 0; // 0x30 (1)
-	enum class Unknow GeometryDataFieldType; // 0x34 (4)
-	enum class Unknow OutputImageFileFormat; // 0x38 (4)
-	enum class Unknow OutputDDSCompressionType; // 0x3C (4)
+	enum class EGeometryDataFieldType GeometryDataFieldType; // 0x34 (4)
+	enum class EOutputImageFileFormat OutputImageFileFormat; // 0x38 (4)
+	enum class EOutputDDSCompressionType OutputDDSCompressionType; // 0x3C (4)
 	uint32_t Dilation; // 0x40 (4)
 	uint32_t GeometryDataFieldIndex; // 0x44 (4)
-	enum class Unknow OutputPixelFormat; // 0x48 (4)
+	enum class EOutputPixelFormat OutputPixelFormat; // 0x48 (4)
 	float MappingInfR; // 0x4C (4)
 	float MappingSupR; // 0x50 (4)
 	float MappingInfG; // 0x54 (4)
@@ -573,24 +573,24 @@ struct FGeometryDataCasterSettings {
 	float MappingSupB; // 0x60 (4)
 	float MappingInfA; // 0x64 (4)
 	float MappingSupA; // 0x68 (4)
-	struct Unknown MappingInf; // 0x70 (16)
-	struct Unknown MappingSup; // 0x80 (16)
+	struct FVector4 MappingInf; // 0x70 (16)
+	struct FVector4 MappingSup; // 0x80 (16)
 };
 
 // ScriptStruct SimplygonUObjects.AmbientOcclusionCasterSettings
 struct FAmbientOcclusionCasterSettings {
 	struct FString MaterialChannel; // 0x0 (16)
-	enum class Unknow OpacityChannelComponent; // 0x10 (4)
-	enum class Unknow DitherType; // 0x14 (4)
-	enum class Unknow FillMode; // 0x18 (4)
+	enum class EOpacityChannelComponent OpacityChannelComponent; // 0x10 (4)
+	enum class EDitherType DitherType; // 0x14 (4)
+	enum class EFillMode FillMode; // 0x18 (4)
 	struct FString OpacityChannel; // 0x20 (16)
 	char UseMultisampling : 0; // 0x30 (1)
 	uint32_t RaysPerPixel; // 0x34 (4)
-	enum class Unknow OutputImageFileFormat; // 0x38 (4)
-	enum class Unknow OutputDDSCompressionType; // 0x3C (4)
+	enum class EOutputImageFileFormat OutputImageFileFormat; // 0x38 (4)
+	enum class EOutputDDSCompressionType OutputDDSCompressionType; // 0x3C (4)
 	uint32_t Dilation; // 0x40 (4)
 	float OcclusionFalloff; // 0x44 (4)
-	enum class Unknow OutputPixelFormat; // 0x48 (4)
+	enum class EOutputPixelFormat OutputPixelFormat; // 0x48 (4)
 	float OcclusionMultiplier; // 0x4C (4)
 	char UseSimpleOcclusionMode : 0; // 0x50 (1)
 };
@@ -598,17 +598,17 @@ struct FAmbientOcclusionCasterSettings {
 // ScriptStruct SimplygonUObjects.DisplacementCasterSettings
 struct FDisplacementCasterSettings {
 	struct FString MaterialChannel; // 0x0 (16)
-	enum class Unknow OpacityChannelComponent; // 0x10 (4)
-	enum class Unknow DitherType; // 0x14 (4)
-	enum class Unknow FillMode; // 0x18 (4)
+	enum class EOpacityChannelComponent OpacityChannelComponent; // 0x10 (4)
+	enum class EDitherType DitherType; // 0x14 (4)
+	enum class EFillMode FillMode; // 0x18 (4)
 	struct FString OpacityChannel; // 0x20 (16)
 	char UseMultisampling : 0; // 0x30 (1)
 	float DistanceScaling; // 0x34 (4)
-	enum class Unknow OutputImageFileFormat; // 0x38 (4)
-	enum class Unknow OutputDDSCompressionType; // 0x3C (4)
+	enum class EOutputImageFileFormat OutputImageFileFormat; // 0x38 (4)
+	enum class EOutputDDSCompressionType OutputDDSCompressionType; // 0x3C (4)
 	uint32_t Dilation; // 0x40 (4)
 	char GenerateScalarDisplacement : 0; // 0x44 (1)
-	enum class Unknow OutputPixelFormat; // 0x48 (4)
+	enum class EOutputPixelFormat OutputPixelFormat; // 0x48 (4)
 	char GenerateTangentSpaceDisplacement : 0; // 0x4C (1)
 	int32_t NormalMapTexCoordLevel; // 0x50 (4)
 };
@@ -616,17 +616,17 @@ struct FDisplacementCasterSettings {
 // ScriptStruct SimplygonUObjects.NormalCasterSettings
 struct FNormalCasterSettings {
 	struct FString MaterialChannel; // 0x0 (16)
-	enum class Unknow OpacityChannelComponent; // 0x10 (4)
-	enum class Unknow DitherType; // 0x14 (4)
-	enum class Unknow FillMode; // 0x18 (4)
+	enum class EOpacityChannelComponent OpacityChannelComponent; // 0x10 (4)
+	enum class EDitherType DitherType; // 0x14 (4)
+	enum class EFillMode FillMode; // 0x18 (4)
 	struct FString OpacityChannel; // 0x20 (16)
 	char UseMultisampling : 0; // 0x30 (1)
 	char FlipBackfacingNormals : 0; // 0x30 (1)
-	enum class Unknow OutputImageFileFormat; // 0x34 (4)
-	enum class Unknow OutputDDSCompressionType; // 0x38 (4)
+	enum class EOutputImageFileFormat OutputImageFileFormat; // 0x34 (4)
+	enum class EOutputDDSCompressionType OutputDDSCompressionType; // 0x38 (4)
 	uint32_t Dilation; // 0x3C (4)
 	char GenerateTangentSpaceNormals : 0; // 0x40 (1)
-	enum class Unknow OutputPixelFormat; // 0x44 (4)
+	enum class EOutputPixelFormat OutputPixelFormat; // 0x44 (4)
 	char FlipGreen : 0; // 0x48 (1)
 	char CalculateBitangentPerFragment : 0; // 0x48 (1)
 	char NormalizeInterpolatedTangentSpace : 0; // 0x48 (1)
@@ -635,33 +635,33 @@ struct FNormalCasterSettings {
 // ScriptStruct SimplygonUObjects.OpacityCasterSettings
 struct FOpacityCasterSettings {
 	struct FString MaterialChannel; // 0x0 (16)
-	enum class Unknow OpacityChannelComponent; // 0x10 (4)
-	enum class Unknow DitherType; // 0x14 (4)
-	enum class Unknow FillMode; // 0x18 (4)
+	enum class EOpacityChannelComponent OpacityChannelComponent; // 0x10 (4)
+	enum class EDitherType DitherType; // 0x14 (4)
+	enum class EFillMode FillMode; // 0x18 (4)
 	struct FString OpacityChannel; // 0x20 (16)
 	char UseMultisampling : 0; // 0x30 (1)
 	char OutputSRGB : 0; // 0x30 (1)
-	enum class Unknow OutputImageFileFormat; // 0x34 (4)
-	enum class Unknow OutputDDSCompressionType; // 0x38 (4)
+	enum class EOutputImageFileFormat OutputImageFileFormat; // 0x34 (4)
+	enum class EOutputDDSCompressionType OutputDDSCompressionType; // 0x38 (4)
 	uint32_t Dilation; // 0x3C (4)
-	enum class Unknow OutputOpacityType; // 0x40 (4)
-	enum class Unknow OutputPixelFormat; // 0x44 (4)
+	enum class EOutputOpacityType OutputOpacityType; // 0x40 (4)
+	enum class EOutputPixelFormat OutputPixelFormat; // 0x44 (4)
 };
 
 // ScriptStruct SimplygonUObjects.ColorCasterSettings
 struct FColorCasterSettings {
 	struct FString MaterialChannel; // 0x0 (16)
-	enum class Unknow OpacityChannelComponent; // 0x10 (4)
-	enum class Unknow DitherType; // 0x14 (4)
-	enum class Unknow FillMode; // 0x18 (4)
+	enum class EOpacityChannelComponent OpacityChannelComponent; // 0x10 (4)
+	enum class EDitherType DitherType; // 0x14 (4)
+	enum class EFillMode FillMode; // 0x18 (4)
 	struct FString OpacityChannel; // 0x20 (16)
 	char UseMultisampling : 0; // 0x30 (1)
 	char BakeOpacityInAlpha : 0; // 0x30 (1)
-	enum class Unknow OutputImageFileFormat; // 0x34 (4)
-	enum class Unknow OutputDDSCompressionType; // 0x38 (4)
+	enum class EOutputImageFileFormat OutputImageFileFormat; // 0x34 (4)
+	enum class EOutputDDSCompressionType OutputDDSCompressionType; // 0x38 (4)
 	uint32_t Dilation; // 0x3C (4)
-	enum class Unknow OutputOpacityType; // 0x40 (4)
-	enum class Unknow OutputPixelFormat; // 0x44 (4)
+	enum class EOutputOpacityType OutputOpacityType; // 0x40 (4)
+	enum class EOutputPixelFormat OutputPixelFormat; // 0x44 (4)
 	char SkipCastingIfNoInputChannel : 0; // 0x48 (1)
 	char OutputSRGB : 0; // 0x48 (1)
 };

@@ -12,15 +12,15 @@ class UCineCameraComponent : public UCameraComponent {
 
 public:
 
-	struct Unknown FilmbackSettings; // 0x870 (12)
-	struct Unknown Filmback; // 0x87C (12)
-	struct Unknown LensSettings; // 0x888 (24)
-	struct Unknown FocusSettings; // 0x8A0 (88)
+	struct FCameraFilmbackSettings FilmbackSettings; // 0x870 (12)
+	struct FCameraFilmbackSettings Filmback; // 0x87C (12)
+	struct FCameraLensSettings LensSettings; // 0x888 (24)
+	struct FCameraFocusSettings FocusSettings; // 0x8A0 (88)
 	float CurrentFocalLength; // 0x8F8 (4)
 	float CurrentAperture; // 0x8FC (4)
 	float CurrentFocusDistance; // 0x900 (4)
-	struct TArray<Unknown> FilmbackPresets; // 0x910 (16)
-	struct TArray<Unknown> LensPresets; // 0x920 (16)
+	struct TArray<struct FNamedFilmbackPreset> FilmbackPresets; // 0x910 (16)
+	struct TArray<struct FNamedLensPreset> LensPresets; // 0x920 (16)
 	struct FString DefaultFilmbackPresetName; // 0x930 (16)
 	struct FString DefaultFilmbackPreset; // 0x940 (16)
 	struct FString DefaultLensPresetName; // 0x950 (16)
@@ -31,7 +31,7 @@ public:
 	void SetFilmbackPresetByName(struct FString InPresetName); // Function CinematicCamera.CineCameraComponent.SetFilmbackPresetByName(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B6A9B0>
 	void SetCurrentFocalLength(float& InFocalLength); // Function CinematicCamera.CineCameraComponent.SetCurrentFocalLength(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B6A910>
 	float GetVerticalFieldOfView(); // Function CinematicCamera.CineCameraComponent.GetVerticalFieldOfView(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B6A8E0>
-	struct TArray<Unknown> GetLensPresetsCopy(); // Function CinematicCamera.CineCameraComponent.GetLensPresetsCopy(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x3B6A7E0>
+	struct TArray<struct FNamedLensPreset> GetLensPresetsCopy(); // Function CinematicCamera.CineCameraComponent.GetLensPresetsCopy(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x3B6A7E0>
 	struct FString GetLensPresetName(); // Function CinematicCamera.CineCameraComponent.GetLensPresetName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B6A760>
 	float GetHorizontalFieldOfView(); // Function CinematicCamera.CineCameraComponent.GetHorizontalFieldOfView(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B6A730>
 	struct FString GetFilmbackPresetName(); // Function CinematicCamera.CineCameraComponent.GetFilmbackPresetName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B6A6B0>
@@ -48,10 +48,10 @@ public:
 	float CraneArmLength; // 0x320 (4)
 	char bLockMountPitch : 0; // 0x324 (1)
 	char bLockMountYaw : 0; // 0x325 (1)
-	struct Unknown TransformComponent; // 0x328 (8)
-	struct Unknown CraneYawControl; // 0x330 (8)
-	struct Unknown CranePitchControl; // 0x338 (8)
-	struct Unknown CraneCameraMount; // 0x340 (8)
+	struct USceneComponent TransformComponent; // 0x328 (8)
+	struct USceneComponent CraneYawControl; // 0x330 (8)
+	struct USceneComponent CranePitchControl; // 0x338 (8)
+	struct USceneComponent CraneCameraMount; // 0x340 (8)
 };
 
 // Class CinematicCamera.CameraRig_Rail
@@ -61,11 +61,11 @@ public:
 
 	float CurrentPositionOnRail; // 0x318 (4)
 	char bLockOrientationToRail : 0; // 0x31C (1)
-	struct Unknown TransformComponent; // 0x320 (8)
-	struct Unknown RailSplineComponent; // 0x328 (8)
-	struct Unknown RailCameraMount; // 0x330 (8)
+	struct USceneComponent TransformComponent; // 0x320 (8)
+	struct USplineComponent RailSplineComponent; // 0x328 (8)
+	struct USceneComponent RailCameraMount; // 0x330 (8)
 
-	struct Unknown GetRailSplineComponent(); // Function CinematicCamera.CameraRig_Rail.GetRailSplineComponent(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x3B6A8C0>
+	struct USplineComponent GetRailSplineComponent(); // Function CinematicCamera.CameraRig_Rail.GetRailSplineComponent(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x3B6A8C0>
 };
 
 // Class CinematicCamera.CineCameraActor
@@ -73,9 +73,9 @@ class ACineCameraActor : public ACameraActor {
 
 public:
 
-	struct Unknown LookatTrackingSettings; // 0x910 (80)
+	struct FCameraLookatTrackingSettings LookatTrackingSettings; // 0x910 (80)
 
-	struct Unknown GetCineCameraComponent(); // Function CinematicCamera.CineCameraActor.GetCineCameraComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B6A5C0>
+	struct UCineCameraComponent GetCineCameraComponent(); // Function CinematicCamera.CineCameraActor.GetCineCameraComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B6A5C0>
 };
 
 // ScriptStruct CinematicCamera.CameraLookatTrackingSettings
@@ -83,18 +83,18 @@ struct FCameraLookatTrackingSettings {
 	char bEnableLookAtTracking : 0; // 0x0 (1)
 	char bDrawDebugLookAtTrackingPosition : 0; // 0x0 (1)
 	float LookAtTrackingInterpSpeed; // 0x4 (4)
-	struct Unknown ActorToTrack; // 0x18 (40)
-	struct Unknown RelativeOffset; // 0x40 (12)
+	struct TSoftObjectPtr<UActor> ActorToTrack; // 0x18 (40)
+	struct FVector RelativeOffset; // 0x40 (12)
 	char bAllowRoll : 0; // 0x4C (1)
 };
 
 // ScriptStruct CinematicCamera.CameraFocusSettings
 struct FCameraFocusSettings {
-	enum class Unknow FocusMethod; // 0x0 (1)
+	enum class ECameraFocusMethod FocusMethod; // 0x0 (1)
 	float ManualFocusDistance; // 0x4 (4)
-	struct Unknown TrackingFocusSettings; // 0x8 (56)
+	struct FCameraTrackingFocusSettings TrackingFocusSettings; // 0x8 (56)
 	char bDrawDebugFocusPlane : 0; // 0x40 (1)
-	struct Unknown DebugFocusPlaneColor; // 0x44 (4)
+	struct FColor DebugFocusPlaneColor; // 0x44 (4)
 	char bSmoothFocusChanges : 0; // 0x48 (1)
 	float FocusSmoothingInterpSpeed; // 0x4C (4)
 	float FocusOffset; // 0x50 (4)
@@ -102,15 +102,15 @@ struct FCameraFocusSettings {
 
 // ScriptStruct CinematicCamera.CameraTrackingFocusSettings
 struct FCameraTrackingFocusSettings {
-	struct Unknown ActorToTrack; // 0x0 (40)
-	struct Unknown RelativeOffset; // 0x28 (12)
+	struct TSoftObjectPtr<UActor> ActorToTrack; // 0x0 (40)
+	struct FVector RelativeOffset; // 0x28 (12)
 	char bDrawDebugTrackingFocusPoint : 0; // 0x34 (1)
 };
 
 // ScriptStruct CinematicCamera.NamedLensPreset
 struct FNamedLensPreset {
 	struct FString Name; // 0x0 (16)
-	struct Unknown LensSettings; // 0x10 (24)
+	struct FCameraLensSettings LensSettings; // 0x10 (24)
 };
 
 // ScriptStruct CinematicCamera.CameraLensSettings
@@ -126,7 +126,7 @@ struct FCameraLensSettings {
 // ScriptStruct CinematicCamera.NamedFilmbackPreset
 struct FNamedFilmbackPreset {
 	struct FString Name; // 0x0 (16)
-	struct Unknown FilmbackSettings; // 0x10 (12)
+	struct FCameraFilmbackSettings FilmbackSettings; // 0x10 (12)
 };
 
 // ScriptStruct CinematicCamera.CameraFilmbackSettings
@@ -202,12 +202,12 @@ inline float UCineCameraComponent::GetVerticalFieldOfView() {
 }
 
 // Function CinematicCamera.CineCameraComponent.GetLensPresetsCopy
-inline struct TArray<Unknown> UCineCameraComponent::GetLensPresetsCopy() {
+inline struct TArray<struct FNamedLensPreset> UCineCameraComponent::GetLensPresetsCopy() {
 	static auto fn = UObject::FindObject<UFunction>("Function CinematicCamera.CineCameraComponent.GetLensPresetsCopy");
 
 	struct GetLensPresetsCopy_Params {
 		
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<struct FNamedLensPreset> ReturnValue;
 
 	}; GetLensPresetsCopy_Params Params;
 
@@ -292,12 +292,12 @@ inline struct FString UCineCameraComponent::GetDefaultFilmbackPresetName() {
 }
 
 // Function CinematicCamera.CameraRig_Rail.GetRailSplineComponent
-inline struct Unknown ACameraRig_Rail::GetRailSplineComponent() {
+inline struct USplineComponent ACameraRig_Rail::GetRailSplineComponent() {
 	static auto fn = UObject::FindObject<UFunction>("Function CinematicCamera.CameraRig_Rail.GetRailSplineComponent");
 
 	struct GetRailSplineComponent_Params {
 		
-		struct Unknown ReturnValue;
+		struct USplineComponent ReturnValue;
 
 	}; GetRailSplineComponent_Params Params;
 
@@ -310,12 +310,12 @@ inline struct Unknown ACameraRig_Rail::GetRailSplineComponent() {
 }
 
 // Function CinematicCamera.CineCameraActor.GetCineCameraComponent
-inline struct Unknown ACineCameraActor::GetCineCameraComponent() {
+inline struct UCineCameraComponent ACineCameraActor::GetCineCameraComponent() {
 	static auto fn = UObject::FindObject<UFunction>("Function CinematicCamera.CineCameraActor.GetCineCameraComponent");
 
 	struct GetCineCameraComponent_Params {
 		
-		struct Unknown ReturnValue;
+		struct UCineCameraComponent ReturnValue;
 
 	}; GetCineCameraComponent_Params Params;
 

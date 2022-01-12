@@ -3,39 +3,39 @@ class UUW-ReplayListItemWidget_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown AdministratorPanel; // 0x250 (8)
-	struct Unknown Cheat; // 0x258 (8)
-	struct Unknown Image_Lock; // 0x260 (8)
-	struct Unknown Image_Version; // 0x268 (8)
-	struct Unknown ReplayListItemBtn_; // 0x270 (8)
-	struct Unknown TextBlock_BattleMode; // 0x278 (8)
-	struct Unknown TextBlock_Day; // 0x280 (8)
-	struct Unknown TextBlock_FileSize; // 0x288 (8)
-	struct Unknown TextBlock_FPP; // 0x290 (8)
-	struct Unknown TextBlock_MapName; // 0x298 (8)
-	struct Unknown TextBlock_Month; // 0x2A0 (8)
-	struct Unknown TextBlock_PlayerRank; // 0x2A8 (8)
-	struct Unknown TextBlock_PlayTime; // 0x2B0 (8)
-	struct Unknown TextBlock_Time; // 0x2B8 (8)
-	struct Unknown TextBlock_TotalCount; // 0x2C0 (8)
-	struct Unknown TextBlock_TotalPlayerCount; // 0x2C8 (8)
-	struct Unknown TextBlock_Year; // 0x2D0 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UCanvasPanel AdministratorPanel; // 0x250 (8)
+	struct UVerticalBox Cheat; // 0x258 (8)
+	struct UImage Image_Lock; // 0x260 (8)
+	struct UImage Image_Version; // 0x268 (8)
+	struct UButton ReplayListItemBtn_; // 0x270 (8)
+	struct UTextBlock TextBlock_BattleMode; // 0x278 (8)
+	struct UTextBlock TextBlock_Day; // 0x280 (8)
+	struct UTextBlock TextBlock_FileSize; // 0x288 (8)
+	struct UTextBlock TextBlock_FPP; // 0x290 (8)
+	struct UTextBlock TextBlock_MapName; // 0x298 (8)
+	struct UTextBlock TextBlock_Month; // 0x2A0 (8)
+	struct UTextBlock TextBlock_PlayerRank; // 0x2A8 (8)
+	struct UTextBlock TextBlock_PlayTime; // 0x2B0 (8)
+	struct UTextBlock TextBlock_Time; // 0x2B8 (8)
+	struct UTextBlock TextBlock_TotalCount; // 0x2C0 (8)
+	struct UTextBlock TextBlock_TotalPlayerCount; // 0x2C8 (8)
+	struct UTextBlock TextBlock_Year; // 0x2D0 (8)
 	struct FMulticastInlineDelegate Click; // 0x2D8 (16)
-	struct Unknown ReplayItemInfo; // 0x2E8 (296)
-	struct Unknown Style; // 0x410 (632)
-	struct Unknown ReplayListWidget; // 0x688 (8)
+	struct FMKReplayListItemInfo ReplayItemInfo; // 0x2E8 (296)
+	struct FButtonStyle Style; // 0x410 (632)
+	struct UBravoHotelReplayListWidget ReplayListWidget; // 0x688 (8)
 
 	void GetBattleModeString(int32_t Idx, struct FText& Str); // Function UW-ReplayListItemWidget.UW-ReplayListItemWidget_C.GetBattleModeString(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void GetReportType(struct FText& Type); // Function UW-ReplayListItemWidget.UW-ReplayListItemWidget_C.GetReportType(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Clicked(); // Function UW-ReplayListItemWidget.UW-ReplayListItemWidget_C.Clicked(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void UpdateKeep(char State); // Function UW-ReplayListItemWidget.UW-ReplayListItemWidget_C.UpdateKeep(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void RevertButtonStyle(); // Function UW-ReplayListItemWidget.UW-ReplayListItemWidget_C.RevertButtonStyle(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Init(struct Unknown ItemInfo, char Supported, struct Unknown ReplayListWidget); // Function UW-ReplayListItemWidget.UW-ReplayListItemWidget_C.Init(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Init(struct FMKReplayListItemInfo ItemInfo, char Supported, struct UBravoHotelReplayListWidget ReplayListWidget); // Function UW-ReplayListItemWidget.UW-ReplayListItemWidget_C.Init(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-ReplayListItemWidget.UW-ReplayListItemWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__ReplayListItemBtn_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-ReplayListItemWidget.UW-ReplayListItemWidget_C.BndEvt__ReplayListItemBtn_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-ReplayListItemWidget(int32_t EntryPoint); // Function UW-ReplayListItemWidget.UW-ReplayListItemWidget_C.ExecuteUbergraph_UW-ReplayListItemWidget(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
-	void Click__DelegateSignature(struct Unknown ItemInfo); // Function UW-ReplayListItemWidget.UW-ReplayListItemWidget_C.Click__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Click__DelegateSignature(struct FMKReplayListItemInfo ItemInfo); // Function UW-ReplayListItemWidget.UW-ReplayListItemWidget_C.Click__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-ReplayListItemWidget.UW-ReplayListItemWidget_C.GetBattleModeString
@@ -118,13 +118,13 @@ inline void UUW-ReplayListItemWidget_C::RevertButtonStyle() {
 }
 
 // Function UW-ReplayListItemWidget.UW-ReplayListItemWidget_C.Init
-inline void UUW-ReplayListItemWidget_C::Init(struct Unknown ItemInfo, char Supported, struct Unknown ReplayListWidget) {
+inline void UUW-ReplayListItemWidget_C::Init(struct FMKReplayListItemInfo ItemInfo, char Supported, struct UBravoHotelReplayListWidget ReplayListWidget) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-ReplayListItemWidget.UW-ReplayListItemWidget_C.Init");
 
 	struct Init_Params {
-		struct Unknown ItemInfo;
+		struct FMKReplayListItemInfo ItemInfo;
 		char Supported;
-		struct Unknown ReplayListWidget;
+		struct UBravoHotelReplayListWidget ReplayListWidget;
 	}; Init_Params Params;
 
 	Params.ItemInfo = ItemInfo;
@@ -180,11 +180,11 @@ inline void UUW-ReplayListItemWidget_C::ExecuteUbergraph_UW-ReplayListItemWidget
 }
 
 // Function UW-ReplayListItemWidget.UW-ReplayListItemWidget_C.Click__DelegateSignature
-inline void UUW-ReplayListItemWidget_C::Click__DelegateSignature(struct Unknown ItemInfo) {
+inline void UUW-ReplayListItemWidget_C::Click__DelegateSignature(struct FMKReplayListItemInfo ItemInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-ReplayListItemWidget.UW-ReplayListItemWidget_C.Click__DelegateSignature");
 
 	struct Click__DelegateSignature_Params {
-		struct Unknown ItemInfo;
+		struct FMKReplayListItemInfo ItemInfo;
 	}; Click__DelegateSignature_Params Params;
 
 	Params.ItemInfo = ItemInfo;

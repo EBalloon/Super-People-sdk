@@ -3,43 +3,43 @@ class UDevWidget_C : public UBravoHotelSettingSubWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x298 (8)
-	struct Unknown ButtonClearStats; // 0x2A0 (8)
-	struct Unknown ButtonDebugVehicle; // 0x2A8 (8)
-	struct Unknown ButtonEngine; // 0x2B0 (8)
-	struct Unknown ButtonFPS; // 0x2B8 (8)
-	struct Unknown ButtonGameplayTick; // 0x2C0 (8)
-	struct Unknown ButtonMemory; // 0x2C8 (8)
-	struct Unknown ButtonNetwork; // 0x2D0 (8)
-	struct Unknown ButtonParticles; // 0x2D8 (8)
-	struct Unknown ButtonSceneRendering; // 0x2E0 (8)
-	struct Unknown ButtonStatSlow; // 0x2E8 (8)
-	struct Unknown ButtonUnitGraph; // 0x2F0 (8)
-	struct Unknown ComboBoxViewModes; // 0x2F8 (8)
-	struct Unknown ComboBoxViewModes1; // 0x300 (8)
-	struct Unknown DeleteSettingsSaveFile; // 0x308 (8)
-	struct Unknown GameSpeed; // 0x310 (8)
-	struct Unknown GameSpeedEdit; // 0x318 (8)
-	struct Unknown HorizontalBox_8; // 0x320 (8)
-	struct Unknown HorizontalBox_9; // 0x328 (8)
-	struct Unknown HorizontalBox_10; // 0x330 (8)
-	struct Unknown HorizontalBox_11; // 0x338 (8)
-	struct Unknown HorizontalBox_12; // 0x340 (8)
-	struct Unknown HorizontalBox_13; // 0x348 (8)
-	struct Unknown PauseGame; // 0x350 (8)
-	struct Unknown TemporalAACatmullRomCheck; // 0x358 (8)
-	struct Unknown TemporalAACurrentFrameWeightEdit; // 0x360 (8)
-	struct Unknown TemporalAAFilterSizeEdit; // 0x368 (8)
-	struct Unknown TemporalAAPauseCorrectChek; // 0x370 (8)
-	struct Unknown TemporalAASamplesEdit; // 0x378 (8)
-	struct Unknown TonemapperSharpenEdit; // 0x380 (8)
-	struct Unknown ToolTip_DeleteSettings; // 0x388 (8)
-	struct Unknown ToolTip_GameSpeed; // 0x390 (8)
-	struct Unknown ToolTip_PauseGame; // 0x398 (8)
-	struct Unknown ToolTip_StatCommands; // 0x3A0 (8)
-	struct Unknown ToolTip_ViewModes; // 0x3A8 (8)
-	struct Unknown ToolTip_ViewModes_2; // 0x3B0 (8)
-	struct Unknown Game Settings; // 0x3B8 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x298 (8)
+	struct UButton ButtonClearStats; // 0x2A0 (8)
+	struct UButton ButtonDebugVehicle; // 0x2A8 (8)
+	struct UButton ButtonEngine; // 0x2B0 (8)
+	struct UButton ButtonFPS; // 0x2B8 (8)
+	struct UButton ButtonGameplayTick; // 0x2C0 (8)
+	struct UButton ButtonMemory; // 0x2C8 (8)
+	struct UButton ButtonNetwork; // 0x2D0 (8)
+	struct UButton ButtonParticles; // 0x2D8 (8)
+	struct UButton ButtonSceneRendering; // 0x2E0 (8)
+	struct UButton ButtonStatSlow; // 0x2E8 (8)
+	struct UButton ButtonUnitGraph; // 0x2F0 (8)
+	struct UComboBoxString ComboBoxViewModes; // 0x2F8 (8)
+	struct UComboBoxString ComboBoxViewModes1; // 0x300 (8)
+	struct UButton DeleteSettingsSaveFile; // 0x308 (8)
+	struct USlider GameSpeed; // 0x310 (8)
+	struct UEditableText GameSpeedEdit; // 0x318 (8)
+	struct UHorizontalBox HorizontalBox_8; // 0x320 (8)
+	struct UHorizontalBox HorizontalBox_9; // 0x328 (8)
+	struct UHorizontalBox HorizontalBox_10; // 0x330 (8)
+	struct UHorizontalBox HorizontalBox_11; // 0x338 (8)
+	struct UHorizontalBox HorizontalBox_12; // 0x340 (8)
+	struct UHorizontalBox HorizontalBox_13; // 0x348 (8)
+	struct UCheckBox PauseGame; // 0x350 (8)
+	struct UCheckBox TemporalAACatmullRomCheck; // 0x358 (8)
+	struct UEditableText TemporalAACurrentFrameWeightEdit; // 0x360 (8)
+	struct UEditableText TemporalAAFilterSizeEdit; // 0x368 (8)
+	struct UCheckBox TemporalAAPauseCorrectChek; // 0x370 (8)
+	struct UEditableText TemporalAASamplesEdit; // 0x378 (8)
+	struct UEditableText TonemapperSharpenEdit; // 0x380 (8)
+	struct UHorizontalBox ToolTip_DeleteSettings; // 0x388 (8)
+	struct UHorizontalBox ToolTip_GameSpeed; // 0x390 (8)
+	struct UHorizontalBox ToolTip_PauseGame; // 0x398 (8)
+	struct UVerticalBox ToolTip_StatCommands; // 0x3A0 (8)
+	struct UVerticalBox ToolTip_ViewModes; // 0x3A8 (8)
+	struct UVerticalBox ToolTip_ViewModes_2; // 0x3B0 (8)
+	struct UBP_GameSettings_C Game Settings; // 0x3B8 (8)
 	float Time Dilation Value Binding; // 0x3C0 (4)
 	struct FText Time Dilation Text Binding; // 0x3C8 (24)
 	struct FMulticastInlineDelegate Settings File Deleted; // 0x3E0 (16)
@@ -53,12 +53,12 @@ public:
 	int32_t TemporalAASamplesValue; // 0x468 (4)
 	float TonemapperSharpenValue; // 0x46C (4)
 	struct FName TempKey; // 0x470 (8)
-	struct TMap<Unknown, Unknown> Temp; // 0x478 (80)
-	enum class Unknow Type; // 0x4C8 (1)
+	struct TMap<struct FName, struct FString> Temp; // 0x478 (80)
+	enum class ESettingType Type; // 0x4C8 (1)
 	float TempValue2; // 0x4CC (4)
 	char IsOnDebugVehicle : 0; // 0x4D0 (1)
 
-	struct Unknown Generate Combobox Widget Item(struct FString Item); // Function DevWidget.DevWidget_C.Generate Combobox Widget Item(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct UWidget Generate Combobox Widget Item(struct FString Item); // Function DevWidget.DevWidget_C.Generate Combobox Widget Item(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Refresh Slider Time Dilation(float Value); // Function DevWidget.DevWidget_C.Refresh Slider Time Dilation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Refresh Pause Game(char InIsChecked); // Function DevWidget.DevWidget_C.Refresh Pause Game(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function DevWidget.DevWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -92,12 +92,12 @@ public:
 };
 
 // Function DevWidget.DevWidget_C.Generate Combobox Widget Item
-inline struct Unknown UDevWidget_C::Generate Combobox Widget Item(struct FString Item) {
+inline struct UWidget UDevWidget_C::Generate Combobox Widget Item(struct FString Item) {
 	static auto fn = UObject::FindObject<UFunction>("Function DevWidget.DevWidget_C.Generate Combobox Widget Item");
 
 	struct Generate Combobox Widget Item_Params {
 		struct FString Item;
-		struct Unknown ReturnValue;
+		struct UWidget ReturnValue;
 
 	}; Generate Combobox Widget Item_Params Params;
 

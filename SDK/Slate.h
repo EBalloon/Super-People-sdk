@@ -172,7 +172,7 @@ class UButtonWidgetStyle : public USlateWidgetStyleContainerBase {
 
 public:
 
-	struct Unknown ButtonStyle; // 0x30 (632)
+	struct FButtonStyle ButtonStyle; // 0x30 (632)
 };
 
 // Class Slate.CheckBoxWidgetStyle
@@ -180,7 +180,7 @@ class UCheckBoxWidgetStyle : public USlateWidgetStyleContainerBase {
 
 public:
 
-	struct Unknown CheckBoxStyle; // 0x30 (1408)
+	struct FCheckBoxStyle CheckBoxStyle; // 0x30 (1408)
 };
 
 // Class Slate.ComboBoxWidgetStyle
@@ -188,7 +188,7 @@ class UComboBoxWidgetStyle : public USlateWidgetStyleContainerBase {
 
 public:
 
-	struct Unknown ComboBoxStyle; // 0x30 (1008)
+	struct FComboBoxStyle ComboBoxStyle; // 0x30 (1008)
 };
 
 // Class Slate.ComboButtonWidgetStyle
@@ -196,7 +196,7 @@ class UComboButtonWidgetStyle : public USlateWidgetStyleContainerBase {
 
 public:
 
-	struct Unknown ComboButtonStyle; // 0x30 (952)
+	struct FComboButtonStyle ComboButtonStyle; // 0x30 (952)
 };
 
 // Class Slate.EditableTextBoxWidgetStyle
@@ -204,7 +204,7 @@ class UEditableTextBoxWidgetStyle : public USlateWidgetStyleContainerBase {
 
 public:
 
-	struct Unknown EditableTextBoxStyle; // 0x30 (2032)
+	struct FEditableTextBoxStyle EditableTextBoxStyle; // 0x30 (2032)
 };
 
 // Class Slate.EditableTextWidgetStyle
@@ -212,7 +212,7 @@ class UEditableTextWidgetStyle : public USlateWidgetStyleContainerBase {
 
 public:
 
-	struct Unknown EditableTextStyle; // 0x30 (536)
+	struct FEditableTextStyle EditableTextStyle; // 0x30 (536)
 };
 
 // Class Slate.ProgressWidgetStyle
@@ -220,7 +220,7 @@ class UProgressWidgetStyle : public USlateWidgetStyleContainerBase {
 
 public:
 
-	struct Unknown ProgressBarStyle; // 0x30 (416)
+	struct FProgressBarStyle ProgressBarStyle; // 0x30 (416)
 };
 
 // Class Slate.ScrollBarWidgetStyle
@@ -228,7 +228,7 @@ class UScrollBarWidgetStyle : public USlateWidgetStyleContainerBase {
 
 public:
 
-	struct Unknown ScrollBarStyle; // 0x30 (1232)
+	struct FScrollBarStyle ScrollBarStyle; // 0x30 (1232)
 };
 
 // Class Slate.ScrollBoxWidgetStyle
@@ -236,7 +236,7 @@ class UScrollBoxWidgetStyle : public USlateWidgetStyleContainerBase {
 
 public:
 
-	struct Unknown ScrollBoxStyle; // 0x30 (552)
+	struct FScrollBoxStyle ScrollBoxStyle; // 0x30 (552)
 };
 
 // Class Slate.SlateSettings
@@ -252,7 +252,7 @@ class USpinBoxWidgetStyle : public USlateWidgetStyleContainerBase {
 
 public:
 
-	struct Unknown SpinBoxStyle; // 0x30 (744)
+	struct FSpinBoxStyle SpinBoxStyle; // 0x30 (744)
 };
 
 // Class Slate.TextBlockWidgetStyle
@@ -260,7 +260,7 @@ class UTextBlockWidgetStyle : public USlateWidgetStyleContainerBase {
 
 public:
 
-	struct Unknown TextBlockStyle; // 0x30 (616)
+	struct FTextBlockStyle TextBlockStyle; // 0x30 (616)
 };
 
 // ScriptStruct Slate.VirtualKeyboardOptions
@@ -270,7 +270,7 @@ struct FVirtualKeyboardOptions {
 
 // ScriptStruct Slate.InputChord
 struct FInputChord {
-	struct Unknown Key; // 0x0 (24)
+	struct FKey Key; // 0x0 (24)
 	char bShift : 0; // 0x18 (1)
 	char bCtrl : 0; // 0x18 (1)
 	char bAlt : 0; // 0x18 (1)
@@ -279,31 +279,31 @@ struct FInputChord {
 
 // ScriptStruct Slate.Anchors
 struct FAnchors {
-	struct Unknown Minimum; // 0x0 (8)
-	struct Unknown Maximum; // 0x8 (8)
+	struct FVector2D Minimum; // 0x0 (8)
+	struct FVector2D Maximum; // 0x8 (8)
 };
 
 // ScriptStruct Slate.CustomizedToolMenu
 struct FCustomizedToolMenu {
 	struct FName Name; // 0x0 (8)
-	struct TMap<Unknown, Unknown> Entries; // 0x8 (80)
-	struct TMap<Unknown, Unknown> Sections; // 0x58 (80)
-	struct TMap<Unknown, Unknown> EntryOrder; // 0xA8 (80)
-	struct TArray<Unknown> SectionOrder; // 0xF8 (16)
+	struct TMap<struct FName, struct FCustomizedToolMenuEntry> Entries; // 0x8 (80)
+	struct TMap<struct FName, struct FCustomizedToolMenuSection> Sections; // 0x58 (80)
+	struct TMap<struct FName, struct FCustomizedToolMenuNameArray> EntryOrder; // 0xA8 (80)
+	struct TArray<struct FName> SectionOrder; // 0xF8 (16)
 };
 
 // ScriptStruct Slate.CustomizedToolMenuNameArray
 struct FCustomizedToolMenuNameArray {
-	struct TArray<Unknown> Names; // 0x0 (16)
+	struct TArray<struct FName> Names; // 0x0 (16)
 };
 
 // ScriptStruct Slate.CustomizedToolMenuSection
 struct FCustomizedToolMenuSection {
-	enum class Unknow Visibility; // 0x0 (4)
+	enum class ECustomizedToolMenuVisibility Visibility; // 0x0 (4)
 };
 
 // ScriptStruct Slate.CustomizedToolMenuEntry
 struct FCustomizedToolMenuEntry {
-	enum class Unknow Visibility; // 0x0 (4)
+	enum class ECustomizedToolMenuVisibility Visibility; // 0x0 (4)
 };
 

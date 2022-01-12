@@ -3,15 +3,15 @@ class ABP-DeathCam_C : public UActor {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x318 (8)
-	struct Unknown FirstCamera; // 0x320 (8)
-	struct Unknown FirstSpringArm; // 0x328 (8)
-	struct Unknown ThirdCamera; // 0x330 (8)
-	struct Unknown SecondCamera; // 0x338 (8)
-	struct Unknown DefaultSceneRoot; // 0x340 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x318 (8)
+	struct UCameraComponent FirstCamera; // 0x320 (8)
+	struct USpringArmComponent FirstSpringArm; // 0x328 (8)
+	struct UCameraComponent ThirdCamera; // 0x330 (8)
+	struct UCameraComponent SecondCamera; // 0x338 (8)
+	struct USceneComponent DefaultSceneRoot; // 0x340 (8)
 	float DeltaSeconds; // 0x348 (4)
-	struct Unknown TargetDeltaLocation; // 0x34C (12)
-	struct Unknown Character; // 0x358 (8)
+	struct FVector TargetDeltaLocation; // 0x34C (12)
+	struct ABravoHotelCharacter Character; // 0x358 (8)
 	float LowerBoundCameraHeightDelta; // 0x360 (4)
 	char bHeightUpdateFinished : 0; // 0x364 (1)
 	float ThridCameraRotationYawDelta; // 0x368 (4)
@@ -20,7 +20,7 @@ public:
 
 	void CheckThirdCameraLocationRange(); // Function BP-DeathCam.BP-DeathCam_C.CheckThirdCameraLocationRange(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void UpdateActorRotationToPelvis(); // Function BP-DeathCam.BP-DeathCam_C.UpdateActorRotationToPelvis(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetActiveCamera(struct Unknown& ActiveCamera); // Function BP-DeathCam.BP-DeathCam_C.GetActiveCamera(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void GetActiveCamera(struct UCameraComponent& ActiveCamera); // Function BP-DeathCam.BP-DeathCam_C.GetActiveCamera(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void UpdateLowerBoundCameraHeight(); // Function BP-DeathCam.BP-DeathCam_C.UpdateLowerBoundCameraHeight(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void PreventCameraWallCollision(); // Function BP-DeathCam.BP-DeathCam_C.PreventCameraWallCollision(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void InitReferences(char& bSuccess); // Function BP-DeathCam.BP-DeathCam_C.InitReferences(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -28,7 +28,7 @@ public:
 	void UserConstructionScript(); // Function BP-DeathCam.BP-DeathCam_C.UserConstructionScript(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ReceiveBeginPlay(); // Function BP-DeathCam.BP-DeathCam_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ReceiveTick(float DeltaSeconds); // Function BP-DeathCam.BP-DeathCam_C.ReceiveTick(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void K2_OnEndViewTarget(struct Unknown PC); // Function BP-DeathCam.BP-DeathCam_C.K2_OnEndViewTarget(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void K2_OnEndViewTarget(struct APlayerController PC); // Function BP-DeathCam.BP-DeathCam_C.K2_OnEndViewTarget(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_BP-DeathCam(int32_t EntryPoint); // Function BP-DeathCam.BP-DeathCam_C.ExecuteUbergraph_BP-DeathCam(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
@@ -61,11 +61,11 @@ inline void ABP-DeathCam_C::UpdateActorRotationToPelvis() {
 }
 
 // Function BP-DeathCam.BP-DeathCam_C.GetActiveCamera
-inline void ABP-DeathCam_C::GetActiveCamera(struct Unknown& ActiveCamera) {
+inline void ABP-DeathCam_C::GetActiveCamera(struct UCameraComponent& ActiveCamera) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-DeathCam.BP-DeathCam_C.GetActiveCamera");
 
 	struct GetActiveCamera_Params {
-		struct Unknown& ActiveCamera;
+		struct UCameraComponent& ActiveCamera;
 	}; GetActiveCamera_Params Params;
 
 
@@ -180,11 +180,11 @@ inline void ABP-DeathCam_C::ReceiveTick(float DeltaSeconds) {
 }
 
 // Function BP-DeathCam.BP-DeathCam_C.K2_OnEndViewTarget
-inline void ABP-DeathCam_C::K2_OnEndViewTarget(struct Unknown PC) {
+inline void ABP-DeathCam_C::K2_OnEndViewTarget(struct APlayerController PC) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-DeathCam.BP-DeathCam_C.K2_OnEndViewTarget");
 
 	struct K2_OnEndViewTarget_Params {
-		struct Unknown PC;
+		struct APlayerController PC;
 	}; K2_OnEndViewTarget_Params Params;
 
 	Params.PC = PC;

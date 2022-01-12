@@ -142,11 +142,11 @@ public:
 
 // ScriptStruct MagicLeapController.MagicLeapTouchpadGesture
 struct FMagicLeapTouchpadGesture {
-	enum class Unknow Hand; // 0x0 (1)
+	enum class EControllerHand Hand; // 0x0 (1)
 	struct FName MotionSource; // 0x4 (8)
-	enum class Unknow Type; // 0xC (1)
-	enum class Unknow Direction; // 0xD (1)
-	struct Unknown PositionAndForce; // 0x10 (12)
+	enum class EMagicLeapTouchpadGestureType Type; // 0xC (1)
+	enum class EMagicLeapTouchpadGestureDirection Direction; // 0xD (1)
+	struct FVector PositionAndForce; // 0x10 (12)
 	float Speed; // 0x1C (4)
 	float Distance; // 0x20 (4)
 	float FingerGap; // 0x24 (4)

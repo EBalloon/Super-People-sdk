@@ -3,19 +3,19 @@ class UUW-Lobby_WeaponInfo_Option_Slot_C : public UUserWidget {
 
 public:
 
-	struct Unknown T_Desc; // 0x248 (8)
-	struct Unknown UW-Lobby_WeaponInfo_RandomOption_Slot_3; // 0x250 (8)
-	struct Unknown ItemOption; // 0x258 (184)
+	struct UTextBlock T_Desc; // 0x248 (8)
+	struct UUW-Lobby_WeaponInfo_Option_Slot_Icon_C UW-Lobby_WeaponInfo_RandomOption_Slot_3; // 0x250 (8)
+	struct FItemOption ItemOption; // 0x258 (184)
 
-	void SetItemOption(struct Unknown& ItemOption); // Function UW-Lobby_WeaponInfo_Option_Slot.UW-Lobby_WeaponInfo_Option_Slot_C.SetItemOption(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetItemOption(struct FItemOption& ItemOption); // Function UW-Lobby_WeaponInfo_Option_Slot.UW-Lobby_WeaponInfo_Option_Slot_C.SetItemOption(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-Lobby_WeaponInfo_Option_Slot.UW-Lobby_WeaponInfo_Option_Slot_C.SetItemOption
-inline void UUW-Lobby_WeaponInfo_Option_Slot_C::SetItemOption(struct Unknown& ItemOption) {
+inline void UUW-Lobby_WeaponInfo_Option_Slot_C::SetItemOption(struct FItemOption& ItemOption) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Lobby_WeaponInfo_Option_Slot.UW-Lobby_WeaponInfo_Option_Slot_C.SetItemOption");
 
 	struct SetItemOption_Params {
-		struct Unknown& ItemOption;
+		struct FItemOption& ItemOption;
 	}; SetItemOption_Params Params;
 
 

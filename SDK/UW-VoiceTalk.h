@@ -3,17 +3,17 @@ class UUW-VoiceTalk_C : public UBravoHotelVoiceTalkWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Image; // 0x250 (8)
-	struct Unknown ScrollBox_99; // 0x258 (8)
-	struct Unknown UW-VoiceTalkSlot; // 0x260 (8)
-	struct Unknown UW-VoiceTalkSlot_135; // 0x268 (8)
-	struct Unknown UW-VoiceTalkSlot_196; // 0x270 (8)
-	struct TArray<Unknown> TempTeamPlayers; // 0x278 (16)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UImage Image; // 0x250 (8)
+	struct UScrollBox ScrollBox_99; // 0x258 (8)
+	struct UUW-VoiceTalkSlot_C UW-VoiceTalkSlot; // 0x260 (8)
+	struct UUW-VoiceTalkSlot_C UW-VoiceTalkSlot_135; // 0x268 (8)
+	struct UUW-VoiceTalkSlot_C UW-VoiceTalkSlot_196; // 0x270 (8)
+	struct TArray<struct ABravoHotelPlayerState> TempTeamPlayers; // 0x278 (16)
 
 	void CheckCreateSlot(char& bRet); // Function UW-VoiceTalk.UW-VoiceTalk_C.CheckCreateSlot(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-VoiceTalk.UW-VoiceTalk_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ChangeVolumeState(struct Unknown VoiceTalkState); // Function UW-VoiceTalk.UW-VoiceTalk_C.ChangeVolumeState(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ChangeVolumeState(struct FVoiceTalkState VoiceTalkState); // Function UW-VoiceTalk.UW-VoiceTalk_C.ChangeVolumeState(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-VoiceTalk(int32_t EntryPoint); // Function UW-VoiceTalk.UW-VoiceTalk_C.ExecuteUbergraph_UW-VoiceTalk(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
@@ -49,11 +49,11 @@ inline void UUW-VoiceTalk_C::Construct() {
 }
 
 // Function UW-VoiceTalk.UW-VoiceTalk_C.ChangeVolumeState
-inline void UUW-VoiceTalk_C::ChangeVolumeState(struct Unknown VoiceTalkState) {
+inline void UUW-VoiceTalk_C::ChangeVolumeState(struct FVoiceTalkState VoiceTalkState) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-VoiceTalk.UW-VoiceTalk_C.ChangeVolumeState");
 
 	struct ChangeVolumeState_Params {
-		struct Unknown VoiceTalkState;
+		struct FVoiceTalkState VoiceTalkState;
 	}; ChangeVolumeState_Params Params;
 
 	Params.VoiceTalkState = VoiceTalkState;

@@ -3,35 +3,35 @@ class UUW-MainWidget_C : public UBravoHotelMainWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x458 (8)
-	struct Unknown Anim_HideWidget; // 0x460 (8)
-	struct Unknown HideLaserPoint; // 0x468 (8)
-	struct Unknown ShowLaserPoint; // 0x470 (8)
-	struct Unknown BackgroundBlur_154; // 0x478 (8)
-	struct Unknown Canvas; // 0x480 (8)
-	struct Unknown HB_PerkSpin; // 0x488 (8)
-	struct Unknown RedCircle; // 0x490 (8)
-	struct Unknown TextBlock_Start; // 0x498 (8)
-	struct Unknown UW-CompassWidget; // 0x4A0 (8)
-	struct Unknown UW-HUDMessageWidget; // 0x4A8 (8)
-	struct Unknown UW-InteractionWidget; // 0x4B0 (8)
-	struct Unknown UW-JetpackWidget; // 0x4B8 (8)
-	struct Unknown UW-MS; // 0x4C0 (8)
-	struct Unknown UW-PerkLevelUp_02; // 0x4C8 (8)
-	struct Unknown UW-VehicleWidget; // 0x4D0 (8)
-	struct Unknown TargetPawn; // 0x4D8 (8)
-	struct Unknown LastDisplayAbility; // 0x4E0 (12)
-	struct TArray<Unknown> GainPerkPopups; // 0x4F0 (16)
-	struct Unknown UW-RaderCursorWidget; // 0x500 (8)
-	struct Unknown UW-DefaultCursorWidget; // 0x508 (8)
-	struct Unknown Timer_IsMouseWidgetInMap; // 0x510 (8)
-	struct Unknown UW-NitroBoomTargetWidget; // 0x518 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x458 (8)
+	struct UWidgetAnimation Anim_HideWidget; // 0x460 (8)
+	struct UWidgetAnimation HideLaserPoint; // 0x468 (8)
+	struct UWidgetAnimation ShowLaserPoint; // 0x470 (8)
+	struct UBackgroundBlur BackgroundBlur_154; // 0x478 (8)
+	struct UCanvasPanel Canvas; // 0x480 (8)
+	struct UHorizontalBox HB_PerkSpin; // 0x488 (8)
+	struct UImage RedCircle; // 0x490 (8)
+	struct UTextBlock TextBlock_Start; // 0x498 (8)
+	struct UUW-CompassWidget_C UW-CompassWidget; // 0x4A0 (8)
+	struct UUW-HUDMessageWidget_C UW-HUDMessageWidget; // 0x4A8 (8)
+	struct UUW-InteractionWidget_C UW-InteractionWidget; // 0x4B0 (8)
+	struct UUW-JetpackWidget_C UW-JetpackWidget; // 0x4B8 (8)
+	struct UUW-MS_C UW-MS; // 0x4C0 (8)
+	struct UUW-PerkLevelUp_02_C UW-PerkLevelUp_02; // 0x4C8 (8)
+	struct UUW-VehicleWidget_C UW-VehicleWidget; // 0x4D0 (8)
+	struct ABravoHotelCharacter TargetPawn; // 0x4D8 (8)
+	struct FDisplayAbility LastDisplayAbility; // 0x4E0 (12)
+	struct TArray<struct UUW-GainPerk_C> GainPerkPopups; // 0x4F0 (16)
+	struct UUW-Radar_Cursor_C UW-RaderCursorWidget; // 0x500 (8)
+	struct UUserWidget UW-DefaultCursorWidget; // 0x508 (8)
+	struct FTimerHandle Timer_IsMouseWidgetInMap; // 0x510 (8)
+	struct UUW-NitroBoomTargetWidget_C UW-NitroBoomTargetWidget; // 0x518 (8)
 	char bIsShow : 0; // 0x520 (1)
 	float TmpViewportUpAngle; // 0x524 (4)
 	float TmpViewportSideAngle; // 0x528 (4)
-	struct Unknown CenterPosition; // 0x52C (8)
-	struct Unknown UW-MapImageRef; // 0x538 (8)
-	struct Unknown Timer_AutoPerkDeck; // 0x540 (8)
+	struct FVector2D CenterPosition; // 0x52C (8)
+	struct UUW-MapImageWidget_C UW-MapImageRef; // 0x538 (8)
+	struct FTimerHandle Timer_AutoPerkDeck; // 0x540 (8)
 	int32_t LastPlayZoneID; // 0x548 (4)
 	char bShowLevelUp : 0; // 0x54C (1)
 	char IsPlayingUltimateSound : 0; // 0x54D (1)
@@ -41,68 +41,68 @@ public:
 	void ShowSkillMouseCursor(); // Function UW-MainWidget.UW-MainWidget_C.ShowSkillMouseCursor(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CheckUltimateSound(int32_t CurrentLevel); // Function UW-MainWidget.UW-MainWidget_C.CheckUltimateSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void UpdateAllInvalidationbox(); // Function UW-MainWidget.UW-MainWidget_C.UpdateAllInvalidationbox(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetSightInfoPosition(enum class Unknow FireType); // Function UW-MainWidget.UW-MainWidget_C.SetSightInfoPosition(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetSightInfoPosition(enum class EFireType FireType); // Function UW-MainWidget.UW-MainWidget_C.SetSightInfoPosition(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ShowProgressMessage(int32_t Type, int32_t Time); // Function UW-MainWidget.UW-MainWidget_C.ShowProgressMessage(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void UpdateNitroTargetWidget(struct Unknown TargetPosition); // Function UW-MainWidget.UW-MainWidget_C.UpdateNitroTargetWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void UpdateNitroTargetWidget(struct FVector2D TargetPosition); // Function UW-MainWidget.UW-MainWidget_C.UpdateNitroTargetWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Change Mouse Widget(); // Function UW-MainWidget.UW-MainWidget_C.Change Mouse Widget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ResetMouseWidget(); // Function UW-MainWidget.UW-MainWidget_C.ResetMouseWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown GetMiniMapWidget(); // Function UW-MainWidget.UW-MainWidget_C.GetMiniMapWidget(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	struct UUserWidget GetMiniMapWidget(); // Function UW-MainWidget.UW-MainWidget_C.GetMiniMapWidget(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void CheckChangedPlayZone(); // Function UW-MainWidget.UW-MainWidget_C.CheckChangedPlayZone(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void HideMapImageWidget(char SetTimer); // Function UW-MainWidget.UW-MainWidget_C.HideMapImageWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ShowMapImageWidget(); // Function UW-MainWidget.UW-MainWidget_C.ShowMapImageWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CheckMapImageWidget(enum class Unknow PreType, enum class Unknow CurrentType); // Function UW-MainWidget.UW-MainWidget_C.CheckMapImageWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CheckWorldMapGuideWidget(enum class Unknow PreType, enum class Unknow CurrentType); // Function UW-MainWidget.UW-MainWidget_C.CheckWorldMapGuideWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ADSGuideWidget(enum class Unknow PreFireType, enum class Unknow FireType); // Function UW-MainWidget.UW-MainWidget_C.ADSGuideWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CheckMapImageWidget(enum class EToggleWidgetModeType PreType, enum class EToggleWidgetModeType CurrentType); // Function UW-MainWidget.UW-MainWidget_C.CheckMapImageWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CheckWorldMapGuideWidget(enum class EToggleWidgetModeType PreType, enum class EToggleWidgetModeType CurrentType); // Function UW-MainWidget.UW-MainWidget_C.CheckWorldMapGuideWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ADSGuideWidget(enum class EFireType PreFireType, enum class EFireType FireType); // Function UW-MainWidget.UW-MainWidget_C.ADSGuideWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void HideSmartpingSelectionMenu(); // Function UW-MainWidget.UW-MainWidget_C.HideSmartpingSelectionMenu(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AddDeathUserWidget(struct Unknown BroadCastInfo); // Function UW-MainWidget.UW-MainWidget_C.AddDeathUserWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetVisibleWorldTeamPositionWidget(enum class Unknow ToggleType); // Function UW-MainWidget.UW-MainWidget_C.SetVisibleWorldTeamPositionWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AddDeathUserWidget(struct FKillBroadcastUIInfo BroadCastInfo); // Function UW-MainWidget.UW-MainWidget_C.AddDeathUserWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetVisibleWorldTeamPositionWidget(enum class EToggleWidgetModeType ToggleType); // Function UW-MainWidget.UW-MainWidget_C.SetVisibleWorldTeamPositionWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CalcMinMaxViewportPositionForTeamPositionWidget(); // Function UW-MainWidget.UW-MainWidget_C.CalcMinMaxViewportPositionForTeamPositionWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ShowZeroingDistance(); // Function UW-MainWidget.UW-MainWidget_C.ShowZeroingDistance(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown GetInteractiveWidget(); // Function UW-MainWidget.UW-MainWidget_C.GetInteractiveWidget(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct UBravoHotelInteractionWidget GetInteractiveWidget(); // Function UW-MainWidget.UW-MainWidget_C.GetInteractiveWidget(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void WorldMapReInit(); // Function UW-MainWidget.UW-MainWidget_C.WorldMapReInit(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ChangeWidgetVisibleByToggleType(enum class Unknow CurrentType); // Function UW-MainWidget.UW-MainWidget_C.ChangeWidgetVisibleByToggleType(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ChangeWidgetVisibleByToggleType(enum class EToggleWidgetModeType CurrentType); // Function UW-MainWidget.UW-MainWidget_C.ChangeWidgetVisibleByToggleType(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	char IsOpenSystemPopup(); // Function UW-MainWidget.UW-MainWidget_C.IsOpenSystemPopup(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void UpdateLaserPoint(float DeltaTime); // Function UW-MainWidget.UW-MainWidget_C.UpdateLaserPoint(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CheckAutoOpenPerkDeck(); // Function UW-MainWidget.UW-MainWidget_C.CheckAutoOpenPerkDeck(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetSightViewRatio(enum class Unknow SightType, struct Unknown& Translation); // Function UW-MainWidget.UW-MainWidget_C.GetSightViewRatio(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void RemovePerkPopup(struct Unknown PerkPopup); // Function UW-MainWidget.UW-MainWidget_C.RemovePerkPopup(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Play Stat Animation(enum class Unknow LevelUpType, struct Unknown DisplayAbility); // Function UW-MainWidget.UW-MainWidget_C.Play Stat Animation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnReadyToSnipe(enum class Unknow FireType); // Function UW-MainWidget.UW-MainWidget_C.OnReadyToSnipe(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void On Battle Royale State Changed(enum class Unknow PreviousState, enum class Unknow CurrentState); // Function UW-MainWidget.UW-MainWidget_C.On Battle Royale State Changed(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	char OnDrop(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation); // Function UW-MainWidget.UW-MainWidget_C.OnDrop(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetSightViewRatio(enum class EWeaponAttachmentItem SightType, struct FVector2D& Translation); // Function UW-MainWidget.UW-MainWidget_C.GetSightViewRatio(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void RemovePerkPopup(struct UUW-GainPerk_C PerkPopup); // Function UW-MainWidget.UW-MainWidget_C.RemovePerkPopup(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Play Stat Animation(enum class EPerkLevelUpType LevelUpType, struct FDisplayAbility DisplayAbility); // Function UW-MainWidget.UW-MainWidget_C.Play Stat Animation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnReadyToSnipe(enum class EFireType FireType); // Function UW-MainWidget.UW-MainWidget_C.OnReadyToSnipe(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void On Battle Royale State Changed(enum class EBattleRoyaleState PreviousState, enum class EBattleRoyaleState CurrentState); // Function UW-MainWidget.UW-MainWidget_C.On Battle Royale State Changed(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	char OnDrop(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-MainWidget.UW-MainWidget_C.OnDrop(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ClosePopup(); // Function UW-MainWidget.UW-MainWidget_C.ClosePopup(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OpenPopup(); // Function UW-MainWidget.UW-MainWidget_C.OpenPopup(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-MainWidget.UW-MainWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnChangeFireType_Event_1(enum class Unknow PreFireType, enum class Unknow NewFireType); // Function UW-MainWidget.UW-MainWidget_C.OnChangeFireType_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnChangeFireType_Event_1(enum class EFireType PreFireType, enum class EFireType NewFireType); // Function UW-MainWidget.UW-MainWidget_C.OnChangeFireType_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BindDelegates(); // Function UW-MainWidget.UW-MainWidget_C.BindDelegates(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void UnbindDelegates(); // Function UW-MainWidget.UW-MainWidget_C.UnbindDelegates(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ReadyGivePerk(); // Function UW-MainWidget.UW-MainWidget_C.ReadyGivePerk(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OpenPerkDeck(); // Function UW-MainWidget.UW-MainWidget_C.OpenPerkDeck(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void UpdateLineOfFire(struct Unknown& Pos, char LastUpdate, float delataTime); // Function UW-MainWidget.UW-MainWidget_C.UpdateLineOfFire(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowLineOfFire(struct Unknown& Pos); // Function UW-MainWidget.UW-MainWidget_C.ShowLineOfFire(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowHittedDamage(struct Unknown InstigatorCharacter); // Function UW-MainWidget.UW-MainWidget_C.ShowHittedDamage(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowDeathUserWidget(struct Unknown& Info); // Function UW-MainWidget.UW-MainWidget_C.ShowDeathUserWidget(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void LevelUpEvent(struct Unknown PerkInfo, int32_t CurrentLevel, enum class Unknow LevelUpType, struct Unknown DisplayAbility, int32_t LastLevel); // Function UW-MainWidget.UW-MainWidget_C.LevelUpEvent(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnChangedToggleType(enum class Unknow PreType, enum class Unknow CurrentType); // Function UW-MainWidget.UW-MainWidget_C.OnChangedToggleType(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void HideHUDMessage(enum class Unknow MessageType); // Function UW-MainWidget.UW-MainWidget_C.HideHUDMessage(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AddCoreInfoSmartping(struct Unknown PlayerState); // Function UW-MainWidget.UW-MainWidget_C.AddCoreInfoSmartping(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AddCoreInfoRouteping(struct Unknown PlayerState); // Function UW-MainWidget.UW-MainWidget_C.AddCoreInfoRouteping(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AddRequestMessage(struct Unknown PlayerState, struct FString Message); // Function UW-MainWidget.UW-MainWidget_C.AddRequestMessage(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AddCoreInfoRequestResuscitation(struct Unknown PlayerState); // Function UW-MainWidget.UW-MainWidget_C.AddCoreInfoRequestResuscitation(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowHUDMessage(struct Unknown MessageRow); // Function UW-MainWidget.UW-MainWidget_C.ShowHUDMessage(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void UpdateLineOfFire(struct FVector2D& Pos, char LastUpdate, float delataTime); // Function UW-MainWidget.UW-MainWidget_C.UpdateLineOfFire(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowLineOfFire(struct FVector2D& Pos); // Function UW-MainWidget.UW-MainWidget_C.ShowLineOfFire(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowHittedDamage(struct ABravoHotelCharacter InstigatorCharacter); // Function UW-MainWidget.UW-MainWidget_C.ShowHittedDamage(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowDeathUserWidget(struct FKillBroadcastUIInfo& Info); // Function UW-MainWidget.UW-MainWidget_C.ShowDeathUserWidget(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void LevelUpEvent(struct FPerkUIInfo PerkInfo, int32_t CurrentLevel, enum class EPerkLevelUpType LevelUpType, struct FDisplayAbility DisplayAbility, int32_t LastLevel); // Function UW-MainWidget.UW-MainWidget_C.LevelUpEvent(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnChangedToggleType(enum class EToggleWidgetModeType PreType, enum class EToggleWidgetModeType CurrentType); // Function UW-MainWidget.UW-MainWidget_C.OnChangedToggleType(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void HideHUDMessage(enum class EHUDMessageType MessageType); // Function UW-MainWidget.UW-MainWidget_C.HideHUDMessage(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AddCoreInfoSmartping(struct ABravoHotelPlayerState PlayerState); // Function UW-MainWidget.UW-MainWidget_C.AddCoreInfoSmartping(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AddCoreInfoRouteping(struct ABravoHotelPlayerState PlayerState); // Function UW-MainWidget.UW-MainWidget_C.AddCoreInfoRouteping(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AddRequestMessage(struct ABravoHotelPlayerState PlayerState, struct FString Message); // Function UW-MainWidget.UW-MainWidget_C.AddRequestMessage(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AddCoreInfoRequestResuscitation(struct ABravoHotelPlayerState PlayerState); // Function UW-MainWidget.UW-MainWidget_C.AddCoreInfoRequestResuscitation(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowHUDMessage(struct FBravoHotelHUDMessageRow MessageRow); // Function UW-MainWidget.UW-MainWidget_C.ShowHUDMessage(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnAllLevelLoadedFirstTime(); // Function UW-MainWidget.UW-MainWidget_C.OnAllLevelLoadedFirstTime(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BPOnViewportSized(); // Function UW-MainWidget.UW-MainWidget_C.BPOnViewportSized(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CheckVisiblilityPerkDeck_BP(); // Function UW-MainWidget.UW-MainWidget_C.CheckVisiblilityPerkDeck_BP(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ChangeMouseCursorWidget(); // Function UW-MainWidget.UW-MainWidget_C.ChangeMouseCursorWidget(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ResetMouseCursorWidget(); // Function UW-MainWidget.UW-MainWidget_C.ResetMouseCursorWidget(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnDoSkillBySkillMap(); // Function UW-MainWidget.UW-MainWidget_C.OnDoSkillBySkillMap(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void UpdateNitroBoomWidget(struct Unknown TargetPosition); // Function UW-MainWidget.UW-MainWidget_C.UpdateNitroBoomWidget(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void UpdateNitroBoomWidget(struct FVector2D TargetPosition); // Function UW-MainWidget.UW-MainWidget_C.UpdateNitroBoomWidget(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetTeamSize(int32_t Size); // Function UW-MainWidget.UW-MainWidget_C.SetTeamSize(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void HideNitroBoomWidget(); // Function UW-MainWidget.UW-MainWidget_C.HideNitroBoomWidget(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Timer_ShowProgressMessage(); // Function UW-MainWidget.UW-MainWidget_C.Timer_ShowProgressMessage(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnPhaseChanged1(int32_t PrevPhase, int32_t CurrentPhase); // Function UW-MainWidget.UW-MainWidget_C.OnPhaseChanged1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnBlueZoneDelegate_Event_1(); // Function UW-MainWidget.UW-MainWidget_C.OnBlueZoneDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnBlueZoneStateChanged_Event_1(enum class Unknow PrevState, enum class Unknow CurrentState); // Function UW-MainWidget.UW-MainWidget_C.OnBlueZoneStateChanged_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnBlueZoneStateChanged_Event_1(enum class EBluseZoneState PrevState, enum class EBluseZoneState CurrentState); // Function UW-MainWidget.UW-MainWidget_C.OnBlueZoneStateChanged_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnChangedPlayerInfos(); // Function UW-MainWidget.UW-MainWidget_C.OnChangedPlayerInfos(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void UpdateChargeGauge(float MaxChargeValue, float CurrentChargeValue); // Function UW-MainWidget.UW-MainWidget_C.UpdateChargeGauge(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void RemoveChargeGauge(); // Function UW-MainWidget.UW-MainWidget_C.RemoveChargeGauge(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -110,7 +110,7 @@ public:
 	void OnRemoveChargeGauge(); // Function UW-MainWidget.UW-MainWidget_C.OnRemoveChargeGauge(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ShowAnim(); // Function UW-MainWidget.UW-MainWidget_C.ShowAnim(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void HideAnim(); // Function UW-MainWidget.UW-MainWidget_C.HideAnim(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowStatupAnim(struct Unknown& StatupParameters); // Function UW-MainWidget.UW-MainWidget_C.ShowStatupAnim(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowStatupAnim(struct FStatupAnimParameters& StatupParameters); // Function UW-MainWidget.UW-MainWidget_C.ShowStatupAnim(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void K2_UpdateAllInvalidationbox(); // Function UW-MainWidget.UW-MainWidget_C.K2_UpdateAllInvalidationbox(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-MainWidget(int32_t EntryPoint); // Function UW-MainWidget.UW-MainWidget_C.ExecuteUbergraph_UW-MainWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
@@ -173,11 +173,11 @@ inline void UUW-MainWidget_C::UpdateAllInvalidationbox() {
 }
 
 // Function UW-MainWidget.UW-MainWidget_C.SetSightInfoPosition
-inline void UUW-MainWidget_C::SetSightInfoPosition(enum class Unknow FireType) {
+inline void UUW-MainWidget_C::SetSightInfoPosition(enum class EFireType FireType) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MainWidget.UW-MainWidget_C.SetSightInfoPosition");
 
 	struct SetSightInfoPosition_Params {
-		enum class Unknow FireType;
+		enum class EFireType FireType;
 	}; SetSightInfoPosition_Params Params;
 
 	Params.FireType = FireType;
@@ -205,11 +205,11 @@ inline void UUW-MainWidget_C::ShowProgressMessage(int32_t Type, int32_t Time) {
 }
 
 // Function UW-MainWidget.UW-MainWidget_C.UpdateNitroTargetWidget
-inline void UUW-MainWidget_C::UpdateNitroTargetWidget(struct Unknown TargetPosition) {
+inline void UUW-MainWidget_C::UpdateNitroTargetWidget(struct FVector2D TargetPosition) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MainWidget.UW-MainWidget_C.UpdateNitroTargetWidget");
 
 	struct UpdateNitroTargetWidget_Params {
-		struct Unknown TargetPosition;
+		struct FVector2D TargetPosition;
 	}; UpdateNitroTargetWidget_Params Params;
 
 	Params.TargetPosition = TargetPosition;
@@ -248,12 +248,12 @@ inline void UUW-MainWidget_C::ResetMouseWidget() {
 }
 
 // Function UW-MainWidget.UW-MainWidget_C.GetMiniMapWidget
-inline struct Unknown UUW-MainWidget_C::GetMiniMapWidget() {
+inline struct UUserWidget UUW-MainWidget_C::GetMiniMapWidget() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MainWidget.UW-MainWidget_C.GetMiniMapWidget");
 
 	struct GetMiniMapWidget_Params {
 		
-		struct Unknown ReturnValue;
+		struct UUserWidget ReturnValue;
 
 	}; GetMiniMapWidget_Params Params;
 
@@ -309,12 +309,12 @@ inline void UUW-MainWidget_C::ShowMapImageWidget() {
 }
 
 // Function UW-MainWidget.UW-MainWidget_C.CheckMapImageWidget
-inline void UUW-MainWidget_C::CheckMapImageWidget(enum class Unknow PreType, enum class Unknow CurrentType) {
+inline void UUW-MainWidget_C::CheckMapImageWidget(enum class EToggleWidgetModeType PreType, enum class EToggleWidgetModeType CurrentType) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MainWidget.UW-MainWidget_C.CheckMapImageWidget");
 
 	struct CheckMapImageWidget_Params {
-		enum class Unknow PreType;
-		enum class Unknow CurrentType;
+		enum class EToggleWidgetModeType PreType;
+		enum class EToggleWidgetModeType CurrentType;
 	}; CheckMapImageWidget_Params Params;
 
 	Params.PreType = PreType;
@@ -326,12 +326,12 @@ inline void UUW-MainWidget_C::CheckMapImageWidget(enum class Unknow PreType, enu
 }
 
 // Function UW-MainWidget.UW-MainWidget_C.CheckWorldMapGuideWidget
-inline void UUW-MainWidget_C::CheckWorldMapGuideWidget(enum class Unknow PreType, enum class Unknow CurrentType) {
+inline void UUW-MainWidget_C::CheckWorldMapGuideWidget(enum class EToggleWidgetModeType PreType, enum class EToggleWidgetModeType CurrentType) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MainWidget.UW-MainWidget_C.CheckWorldMapGuideWidget");
 
 	struct CheckWorldMapGuideWidget_Params {
-		enum class Unknow PreType;
-		enum class Unknow CurrentType;
+		enum class EToggleWidgetModeType PreType;
+		enum class EToggleWidgetModeType CurrentType;
 	}; CheckWorldMapGuideWidget_Params Params;
 
 	Params.PreType = PreType;
@@ -343,12 +343,12 @@ inline void UUW-MainWidget_C::CheckWorldMapGuideWidget(enum class Unknow PreType
 }
 
 // Function UW-MainWidget.UW-MainWidget_C.ADSGuideWidget
-inline void UUW-MainWidget_C::ADSGuideWidget(enum class Unknow PreFireType, enum class Unknow FireType) {
+inline void UUW-MainWidget_C::ADSGuideWidget(enum class EFireType PreFireType, enum class EFireType FireType) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MainWidget.UW-MainWidget_C.ADSGuideWidget");
 
 	struct ADSGuideWidget_Params {
-		enum class Unknow PreFireType;
-		enum class Unknow FireType;
+		enum class EFireType PreFireType;
+		enum class EFireType FireType;
 	}; ADSGuideWidget_Params Params;
 
 	Params.PreFireType = PreFireType;
@@ -374,11 +374,11 @@ inline void UUW-MainWidget_C::HideSmartpingSelectionMenu() {
 }
 
 // Function UW-MainWidget.UW-MainWidget_C.AddDeathUserWidget
-inline void UUW-MainWidget_C::AddDeathUserWidget(struct Unknown BroadCastInfo) {
+inline void UUW-MainWidget_C::AddDeathUserWidget(struct FKillBroadcastUIInfo BroadCastInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MainWidget.UW-MainWidget_C.AddDeathUserWidget");
 
 	struct AddDeathUserWidget_Params {
-		struct Unknown BroadCastInfo;
+		struct FKillBroadcastUIInfo BroadCastInfo;
 	}; AddDeathUserWidget_Params Params;
 
 	Params.BroadCastInfo = BroadCastInfo;
@@ -389,11 +389,11 @@ inline void UUW-MainWidget_C::AddDeathUserWidget(struct Unknown BroadCastInfo) {
 }
 
 // Function UW-MainWidget.UW-MainWidget_C.SetVisibleWorldTeamPositionWidget
-inline void UUW-MainWidget_C::SetVisibleWorldTeamPositionWidget(enum class Unknow ToggleType) {
+inline void UUW-MainWidget_C::SetVisibleWorldTeamPositionWidget(enum class EToggleWidgetModeType ToggleType) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MainWidget.UW-MainWidget_C.SetVisibleWorldTeamPositionWidget");
 
 	struct SetVisibleWorldTeamPositionWidget_Params {
-		enum class Unknow ToggleType;
+		enum class EToggleWidgetModeType ToggleType;
 	}; SetVisibleWorldTeamPositionWidget_Params Params;
 
 	Params.ToggleType = ToggleType;
@@ -432,12 +432,12 @@ inline void UUW-MainWidget_C::ShowZeroingDistance() {
 }
 
 // Function UW-MainWidget.UW-MainWidget_C.GetInteractiveWidget
-inline struct Unknown UUW-MainWidget_C::GetInteractiveWidget() {
+inline struct UBravoHotelInteractionWidget UUW-MainWidget_C::GetInteractiveWidget() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MainWidget.UW-MainWidget_C.GetInteractiveWidget");
 
 	struct GetInteractiveWidget_Params {
 		
-		struct Unknown ReturnValue;
+		struct UBravoHotelInteractionWidget ReturnValue;
 
 	}; GetInteractiveWidget_Params Params;
 
@@ -464,11 +464,11 @@ inline void UUW-MainWidget_C::WorldMapReInit() {
 }
 
 // Function UW-MainWidget.UW-MainWidget_C.ChangeWidgetVisibleByToggleType
-inline void UUW-MainWidget_C::ChangeWidgetVisibleByToggleType(enum class Unknow CurrentType) {
+inline void UUW-MainWidget_C::ChangeWidgetVisibleByToggleType(enum class EToggleWidgetModeType CurrentType) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MainWidget.UW-MainWidget_C.ChangeWidgetVisibleByToggleType");
 
 	struct ChangeWidgetVisibleByToggleType_Params {
-		enum class Unknow CurrentType;
+		enum class EToggleWidgetModeType CurrentType;
 	}; ChangeWidgetVisibleByToggleType_Params Params;
 
 	Params.CurrentType = CurrentType;
@@ -526,12 +526,12 @@ inline void UUW-MainWidget_C::CheckAutoOpenPerkDeck() {
 }
 
 // Function UW-MainWidget.UW-MainWidget_C.GetSightViewRatio
-inline void UUW-MainWidget_C::GetSightViewRatio(enum class Unknow SightType, struct Unknown& Translation) {
+inline void UUW-MainWidget_C::GetSightViewRatio(enum class EWeaponAttachmentItem SightType, struct FVector2D& Translation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MainWidget.UW-MainWidget_C.GetSightViewRatio");
 
 	struct GetSightViewRatio_Params {
-		enum class Unknow SightType;
-		struct Unknown& Translation;
+		enum class EWeaponAttachmentItem SightType;
+		struct FVector2D& Translation;
 	}; GetSightViewRatio_Params Params;
 
 	Params.SightType = SightType;
@@ -545,11 +545,11 @@ inline void UUW-MainWidget_C::GetSightViewRatio(enum class Unknow SightType, str
 }
 
 // Function UW-MainWidget.UW-MainWidget_C.RemovePerkPopup
-inline void UUW-MainWidget_C::RemovePerkPopup(struct Unknown PerkPopup) {
+inline void UUW-MainWidget_C::RemovePerkPopup(struct UUW-GainPerk_C PerkPopup) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MainWidget.UW-MainWidget_C.RemovePerkPopup");
 
 	struct RemovePerkPopup_Params {
-		struct Unknown PerkPopup;
+		struct UUW-GainPerk_C PerkPopup;
 	}; RemovePerkPopup_Params Params;
 
 	Params.PerkPopup = PerkPopup;
@@ -560,12 +560,12 @@ inline void UUW-MainWidget_C::RemovePerkPopup(struct Unknown PerkPopup) {
 }
 
 // Function UW-MainWidget.UW-MainWidget_C.Play Stat Animation
-inline void UUW-MainWidget_C::Play Stat Animation(enum class Unknow LevelUpType, struct Unknown DisplayAbility) {
+inline void UUW-MainWidget_C::Play Stat Animation(enum class EPerkLevelUpType LevelUpType, struct FDisplayAbility DisplayAbility) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MainWidget.UW-MainWidget_C.Play Stat Animation");
 
 	struct Play Stat Animation_Params {
-		enum class Unknow LevelUpType;
-		struct Unknown DisplayAbility;
+		enum class EPerkLevelUpType LevelUpType;
+		struct FDisplayAbility DisplayAbility;
 	}; Play Stat Animation_Params Params;
 
 	Params.LevelUpType = LevelUpType;
@@ -577,11 +577,11 @@ inline void UUW-MainWidget_C::Play Stat Animation(enum class Unknow LevelUpType,
 }
 
 // Function UW-MainWidget.UW-MainWidget_C.OnReadyToSnipe
-inline void UUW-MainWidget_C::OnReadyToSnipe(enum class Unknow FireType) {
+inline void UUW-MainWidget_C::OnReadyToSnipe(enum class EFireType FireType) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MainWidget.UW-MainWidget_C.OnReadyToSnipe");
 
 	struct OnReadyToSnipe_Params {
-		enum class Unknow FireType;
+		enum class EFireType FireType;
 	}; OnReadyToSnipe_Params Params;
 
 	Params.FireType = FireType;
@@ -592,12 +592,12 @@ inline void UUW-MainWidget_C::OnReadyToSnipe(enum class Unknow FireType) {
 }
 
 // Function UW-MainWidget.UW-MainWidget_C.On Battle Royale State Changed
-inline void UUW-MainWidget_C::On Battle Royale State Changed(enum class Unknow PreviousState, enum class Unknow CurrentState) {
+inline void UUW-MainWidget_C::On Battle Royale State Changed(enum class EBattleRoyaleState PreviousState, enum class EBattleRoyaleState CurrentState) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MainWidget.UW-MainWidget_C.On Battle Royale State Changed");
 
 	struct On Battle Royale State Changed_Params {
-		enum class Unknow PreviousState;
-		enum class Unknow CurrentState;
+		enum class EBattleRoyaleState PreviousState;
+		enum class EBattleRoyaleState CurrentState;
 	}; On Battle Royale State Changed_Params Params;
 
 	Params.PreviousState = PreviousState;
@@ -609,13 +609,13 @@ inline void UUW-MainWidget_C::On Battle Royale State Changed(enum class Unknow P
 }
 
 // Function UW-MainWidget.UW-MainWidget_C.OnDrop
-inline char UUW-MainWidget_C::OnDrop(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation) {
+inline char UUW-MainWidget_C::OnDrop(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MainWidget.UW-MainWidget_C.OnDrop");
 
 	struct OnDrop_Params {
-		struct Unknown MyGeometry;
-		struct Unknown PointerEvent;
-		struct Unknown Operation;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent PointerEvent;
+		struct UDragDropOperation Operation;
 		char ReturnValue;
 
 	}; OnDrop_Params Params;
@@ -674,12 +674,12 @@ inline void UUW-MainWidget_C::Construct() {
 }
 
 // Function UW-MainWidget.UW-MainWidget_C.OnChangeFireType_Event_1
-inline void UUW-MainWidget_C::OnChangeFireType_Event_1(enum class Unknow PreFireType, enum class Unknow NewFireType) {
+inline void UUW-MainWidget_C::OnChangeFireType_Event_1(enum class EFireType PreFireType, enum class EFireType NewFireType) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MainWidget.UW-MainWidget_C.OnChangeFireType_Event_1");
 
 	struct OnChangeFireType_Event_1_Params {
-		enum class Unknow PreFireType;
-		enum class Unknow NewFireType;
+		enum class EFireType PreFireType;
+		enum class EFireType NewFireType;
 	}; OnChangeFireType_Event_1_Params Params;
 
 	Params.PreFireType = PreFireType;
@@ -747,11 +747,11 @@ inline void UUW-MainWidget_C::OpenPerkDeck() {
 }
 
 // Function UW-MainWidget.UW-MainWidget_C.UpdateLineOfFire
-inline void UUW-MainWidget_C::UpdateLineOfFire(struct Unknown& Pos, char LastUpdate, float delataTime) {
+inline void UUW-MainWidget_C::UpdateLineOfFire(struct FVector2D& Pos, char LastUpdate, float delataTime) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MainWidget.UW-MainWidget_C.UpdateLineOfFire");
 
 	struct UpdateLineOfFire_Params {
-		struct Unknown& Pos;
+		struct FVector2D& Pos;
 		char LastUpdate;
 		float delataTime;
 	}; UpdateLineOfFire_Params Params;
@@ -768,11 +768,11 @@ inline void UUW-MainWidget_C::UpdateLineOfFire(struct Unknown& Pos, char LastUpd
 }
 
 // Function UW-MainWidget.UW-MainWidget_C.ShowLineOfFire
-inline void UUW-MainWidget_C::ShowLineOfFire(struct Unknown& Pos) {
+inline void UUW-MainWidget_C::ShowLineOfFire(struct FVector2D& Pos) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MainWidget.UW-MainWidget_C.ShowLineOfFire");
 
 	struct ShowLineOfFire_Params {
-		struct Unknown& Pos;
+		struct FVector2D& Pos;
 	}; ShowLineOfFire_Params Params;
 
 
@@ -785,11 +785,11 @@ inline void UUW-MainWidget_C::ShowLineOfFire(struct Unknown& Pos) {
 }
 
 // Function UW-MainWidget.UW-MainWidget_C.ShowHittedDamage
-inline void UUW-MainWidget_C::ShowHittedDamage(struct Unknown InstigatorCharacter) {
+inline void UUW-MainWidget_C::ShowHittedDamage(struct ABravoHotelCharacter InstigatorCharacter) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MainWidget.UW-MainWidget_C.ShowHittedDamage");
 
 	struct ShowHittedDamage_Params {
-		struct Unknown InstigatorCharacter;
+		struct ABravoHotelCharacter InstigatorCharacter;
 	}; ShowHittedDamage_Params Params;
 
 	Params.InstigatorCharacter = InstigatorCharacter;
@@ -800,11 +800,11 @@ inline void UUW-MainWidget_C::ShowHittedDamage(struct Unknown InstigatorCharacte
 }
 
 // Function UW-MainWidget.UW-MainWidget_C.ShowDeathUserWidget
-inline void UUW-MainWidget_C::ShowDeathUserWidget(struct Unknown& Info) {
+inline void UUW-MainWidget_C::ShowDeathUserWidget(struct FKillBroadcastUIInfo& Info) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MainWidget.UW-MainWidget_C.ShowDeathUserWidget");
 
 	struct ShowDeathUserWidget_Params {
-		struct Unknown& Info;
+		struct FKillBroadcastUIInfo& Info;
 	}; ShowDeathUserWidget_Params Params;
 
 
@@ -817,14 +817,14 @@ inline void UUW-MainWidget_C::ShowDeathUserWidget(struct Unknown& Info) {
 }
 
 // Function UW-MainWidget.UW-MainWidget_C.LevelUpEvent
-inline void UUW-MainWidget_C::LevelUpEvent(struct Unknown PerkInfo, int32_t CurrentLevel, enum class Unknow LevelUpType, struct Unknown DisplayAbility, int32_t LastLevel) {
+inline void UUW-MainWidget_C::LevelUpEvent(struct FPerkUIInfo PerkInfo, int32_t CurrentLevel, enum class EPerkLevelUpType LevelUpType, struct FDisplayAbility DisplayAbility, int32_t LastLevel) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MainWidget.UW-MainWidget_C.LevelUpEvent");
 
 	struct LevelUpEvent_Params {
-		struct Unknown PerkInfo;
+		struct FPerkUIInfo PerkInfo;
 		int32_t CurrentLevel;
-		enum class Unknow LevelUpType;
-		struct Unknown DisplayAbility;
+		enum class EPerkLevelUpType LevelUpType;
+		struct FDisplayAbility DisplayAbility;
 		int32_t LastLevel;
 	}; LevelUpEvent_Params Params;
 
@@ -840,12 +840,12 @@ inline void UUW-MainWidget_C::LevelUpEvent(struct Unknown PerkInfo, int32_t Curr
 }
 
 // Function UW-MainWidget.UW-MainWidget_C.OnChangedToggleType
-inline void UUW-MainWidget_C::OnChangedToggleType(enum class Unknow PreType, enum class Unknow CurrentType) {
+inline void UUW-MainWidget_C::OnChangedToggleType(enum class EToggleWidgetModeType PreType, enum class EToggleWidgetModeType CurrentType) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MainWidget.UW-MainWidget_C.OnChangedToggleType");
 
 	struct OnChangedToggleType_Params {
-		enum class Unknow PreType;
-		enum class Unknow CurrentType;
+		enum class EToggleWidgetModeType PreType;
+		enum class EToggleWidgetModeType CurrentType;
 	}; OnChangedToggleType_Params Params;
 
 	Params.PreType = PreType;
@@ -857,11 +857,11 @@ inline void UUW-MainWidget_C::OnChangedToggleType(enum class Unknow PreType, enu
 }
 
 // Function UW-MainWidget.UW-MainWidget_C.HideHUDMessage
-inline void UUW-MainWidget_C::HideHUDMessage(enum class Unknow MessageType) {
+inline void UUW-MainWidget_C::HideHUDMessage(enum class EHUDMessageType MessageType) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MainWidget.UW-MainWidget_C.HideHUDMessage");
 
 	struct HideHUDMessage_Params {
-		enum class Unknow MessageType;
+		enum class EHUDMessageType MessageType;
 	}; HideHUDMessage_Params Params;
 
 	Params.MessageType = MessageType;
@@ -872,11 +872,11 @@ inline void UUW-MainWidget_C::HideHUDMessage(enum class Unknow MessageType) {
 }
 
 // Function UW-MainWidget.UW-MainWidget_C.AddCoreInfoSmartping
-inline void UUW-MainWidget_C::AddCoreInfoSmartping(struct Unknown PlayerState) {
+inline void UUW-MainWidget_C::AddCoreInfoSmartping(struct ABravoHotelPlayerState PlayerState) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MainWidget.UW-MainWidget_C.AddCoreInfoSmartping");
 
 	struct AddCoreInfoSmartping_Params {
-		struct Unknown PlayerState;
+		struct ABravoHotelPlayerState PlayerState;
 	}; AddCoreInfoSmartping_Params Params;
 
 	Params.PlayerState = PlayerState;
@@ -887,11 +887,11 @@ inline void UUW-MainWidget_C::AddCoreInfoSmartping(struct Unknown PlayerState) {
 }
 
 // Function UW-MainWidget.UW-MainWidget_C.AddCoreInfoRouteping
-inline void UUW-MainWidget_C::AddCoreInfoRouteping(struct Unknown PlayerState) {
+inline void UUW-MainWidget_C::AddCoreInfoRouteping(struct ABravoHotelPlayerState PlayerState) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MainWidget.UW-MainWidget_C.AddCoreInfoRouteping");
 
 	struct AddCoreInfoRouteping_Params {
-		struct Unknown PlayerState;
+		struct ABravoHotelPlayerState PlayerState;
 	}; AddCoreInfoRouteping_Params Params;
 
 	Params.PlayerState = PlayerState;
@@ -902,11 +902,11 @@ inline void UUW-MainWidget_C::AddCoreInfoRouteping(struct Unknown PlayerState) {
 }
 
 // Function UW-MainWidget.UW-MainWidget_C.AddRequestMessage
-inline void UUW-MainWidget_C::AddRequestMessage(struct Unknown PlayerState, struct FString Message) {
+inline void UUW-MainWidget_C::AddRequestMessage(struct ABravoHotelPlayerState PlayerState, struct FString Message) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MainWidget.UW-MainWidget_C.AddRequestMessage");
 
 	struct AddRequestMessage_Params {
-		struct Unknown PlayerState;
+		struct ABravoHotelPlayerState PlayerState;
 		struct FString Message;
 	}; AddRequestMessage_Params Params;
 
@@ -919,11 +919,11 @@ inline void UUW-MainWidget_C::AddRequestMessage(struct Unknown PlayerState, stru
 }
 
 // Function UW-MainWidget.UW-MainWidget_C.AddCoreInfoRequestResuscitation
-inline void UUW-MainWidget_C::AddCoreInfoRequestResuscitation(struct Unknown PlayerState) {
+inline void UUW-MainWidget_C::AddCoreInfoRequestResuscitation(struct ABravoHotelPlayerState PlayerState) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MainWidget.UW-MainWidget_C.AddCoreInfoRequestResuscitation");
 
 	struct AddCoreInfoRequestResuscitation_Params {
-		struct Unknown PlayerState;
+		struct ABravoHotelPlayerState PlayerState;
 	}; AddCoreInfoRequestResuscitation_Params Params;
 
 	Params.PlayerState = PlayerState;
@@ -934,11 +934,11 @@ inline void UUW-MainWidget_C::AddCoreInfoRequestResuscitation(struct Unknown Pla
 }
 
 // Function UW-MainWidget.UW-MainWidget_C.ShowHUDMessage
-inline void UUW-MainWidget_C::ShowHUDMessage(struct Unknown MessageRow) {
+inline void UUW-MainWidget_C::ShowHUDMessage(struct FBravoHotelHUDMessageRow MessageRow) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MainWidget.UW-MainWidget_C.ShowHUDMessage");
 
 	struct ShowHUDMessage_Params {
-		struct Unknown MessageRow;
+		struct FBravoHotelHUDMessageRow MessageRow;
 	}; ShowHUDMessage_Params Params;
 
 	Params.MessageRow = MessageRow;
@@ -1033,11 +1033,11 @@ inline void UUW-MainWidget_C::OnDoSkillBySkillMap() {
 }
 
 // Function UW-MainWidget.UW-MainWidget_C.UpdateNitroBoomWidget
-inline void UUW-MainWidget_C::UpdateNitroBoomWidget(struct Unknown TargetPosition) {
+inline void UUW-MainWidget_C::UpdateNitroBoomWidget(struct FVector2D TargetPosition) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MainWidget.UW-MainWidget_C.UpdateNitroBoomWidget");
 
 	struct UpdateNitroBoomWidget_Params {
-		struct Unknown TargetPosition;
+		struct FVector2D TargetPosition;
 	}; UpdateNitroBoomWidget_Params Params;
 
 	Params.TargetPosition = TargetPosition;
@@ -1122,12 +1122,12 @@ inline void UUW-MainWidget_C::OnBlueZoneDelegate_Event_1() {
 }
 
 // Function UW-MainWidget.UW-MainWidget_C.OnBlueZoneStateChanged_Event_1
-inline void UUW-MainWidget_C::OnBlueZoneStateChanged_Event_1(enum class Unknow PrevState, enum class Unknow CurrentState) {
+inline void UUW-MainWidget_C::OnBlueZoneStateChanged_Event_1(enum class EBluseZoneState PrevState, enum class EBluseZoneState CurrentState) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MainWidget.UW-MainWidget_C.OnBlueZoneStateChanged_Event_1");
 
 	struct OnBlueZoneStateChanged_Event_1_Params {
-		enum class Unknow PrevState;
-		enum class Unknow CurrentState;
+		enum class EBluseZoneState PrevState;
+		enum class EBluseZoneState CurrentState;
 	}; OnBlueZoneStateChanged_Event_1_Params Params;
 
 	Params.PrevState = PrevState;
@@ -1240,11 +1240,11 @@ inline void UUW-MainWidget_C::HideAnim() {
 }
 
 // Function UW-MainWidget.UW-MainWidget_C.ShowStatupAnim
-inline void UUW-MainWidget_C::ShowStatupAnim(struct Unknown& StatupParameters) {
+inline void UUW-MainWidget_C::ShowStatupAnim(struct FStatupAnimParameters& StatupParameters) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MainWidget.UW-MainWidget_C.ShowStatupAnim");
 
 	struct ShowStatupAnim_Params {
-		struct Unknown& StatupParameters;
+		struct FStatupAnimParameters& StatupParameters;
 	}; ShowStatupAnim_Params Params;
 
 

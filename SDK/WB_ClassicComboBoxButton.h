@@ -3,26 +3,26 @@ class UWB_ClassicComboBoxButton_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown VisualNoninteractButton; // 0x250 (8)
-	struct Unknown Original Style; // 0x258 (632)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UButton VisualNoninteractButton; // 0x250 (8)
+	struct FButtonStyle Original Style; // 0x258 (632)
 
-	struct Unknown OnMouseButtonUp(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function WB_ClassicComboBoxButton.WB_ClassicComboBoxButton_C.OnMouseButtonUp(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown OnMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function WB_ClassicComboBoxButton.WB_ClassicComboBoxButton_C.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply OnMouseButtonUp(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function WB_ClassicComboBoxButton.WB_ClassicComboBoxButton_C.OnMouseButtonUp(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply OnMouseButtonDown(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function WB_ClassicComboBoxButton.WB_ClassicComboBoxButton_C.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function WB_ClassicComboBoxButton.WB_ClassicComboBoxButton_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function WB_ClassicComboBoxButton.WB_ClassicComboBoxButton_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnMouseLeave(struct Unknown& MouseEvent); // Function WB_ClassicComboBoxButton.WB_ClassicComboBoxButton_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnMouseEnter(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function WB_ClassicComboBoxButton.WB_ClassicComboBoxButton_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnMouseLeave(struct FPointerEvent& MouseEvent); // Function WB_ClassicComboBoxButton.WB_ClassicComboBoxButton_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_WB_ClassicComboBoxButton(int32_t EntryPoint); // Function WB_ClassicComboBoxButton.WB_ClassicComboBoxButton_C.ExecuteUbergraph_WB_ClassicComboBoxButton(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function WB_ClassicComboBoxButton.WB_ClassicComboBoxButton_C.OnMouseButtonUp
-inline struct Unknown UWB_ClassicComboBoxButton_C::OnMouseButtonUp(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UWB_ClassicComboBoxButton_C::OnMouseButtonUp(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function WB_ClassicComboBoxButton.WB_ClassicComboBoxButton_C.OnMouseButtonUp");
 
 	struct OnMouseButtonUp_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnMouseButtonUp_Params Params;
 
@@ -39,13 +39,13 @@ inline struct Unknown UWB_ClassicComboBoxButton_C::OnMouseButtonUp(struct Unknow
 }
 
 // Function WB_ClassicComboBoxButton.WB_ClassicComboBoxButton_C.OnMouseButtonDown
-inline struct Unknown UWB_ClassicComboBoxButton_C::OnMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UWB_ClassicComboBoxButton_C::OnMouseButtonDown(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function WB_ClassicComboBoxButton.WB_ClassicComboBoxButton_C.OnMouseButtonDown");
 
 	struct OnMouseButtonDown_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnMouseButtonDown_Params Params;
 
@@ -76,12 +76,12 @@ inline void UWB_ClassicComboBoxButton_C::Construct() {
 }
 
 // Function WB_ClassicComboBoxButton.WB_ClassicComboBoxButton_C.OnMouseEnter
-inline void UWB_ClassicComboBoxButton_C::OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline void UWB_ClassicComboBoxButton_C::OnMouseEnter(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function WB_ClassicComboBoxButton.WB_ClassicComboBoxButton_C.OnMouseEnter");
 
 	struct OnMouseEnter_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
 	}; OnMouseEnter_Params Params;
 
 	Params.MyGeometry = MyGeometry;
@@ -95,11 +95,11 @@ inline void UWB_ClassicComboBoxButton_C::OnMouseEnter(struct Unknown MyGeometry,
 }
 
 // Function WB_ClassicComboBoxButton.WB_ClassicComboBoxButton_C.OnMouseLeave
-inline void UWB_ClassicComboBoxButton_C::OnMouseLeave(struct Unknown& MouseEvent) {
+inline void UWB_ClassicComboBoxButton_C::OnMouseLeave(struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function WB_ClassicComboBoxButton.WB_ClassicComboBoxButton_C.OnMouseLeave");
 
 	struct OnMouseLeave_Params {
-		struct Unknown& MouseEvent;
+		struct FPointerEvent& MouseEvent;
 	}; OnMouseLeave_Params Params;
 
 

@@ -3,21 +3,21 @@ class UCrossHairDetailInfo_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown 1-1; // 0x250 (8)
-	struct Unknown CurDesc; // 0x258 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UImage 1-1; // 0x250 (8)
+	struct UTextBlock CurDesc; // 0x258 (8)
 
-	void SetData(struct FText Title, struct Unknown Image); // Function CrossHairDetailInfo.CrossHairDetailInfo_C.SetData(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetData(struct FText Title, struct TSoftObjectPtr<UTexture2D> Image); // Function CrossHairDetailInfo.CrossHairDetailInfo_C.SetData(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_CrossHairDetailInfo(int32_t EntryPoint); // Function CrossHairDetailInfo.CrossHairDetailInfo_C.ExecuteUbergraph_CrossHairDetailInfo(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function CrossHairDetailInfo.CrossHairDetailInfo_C.SetData
-inline void UCrossHairDetailInfo_C::SetData(struct FText Title, struct Unknown Image) {
+inline void UCrossHairDetailInfo_C::SetData(struct FText Title, struct TSoftObjectPtr<UTexture2D> Image) {
 	static auto fn = UObject::FindObject<UFunction>("Function CrossHairDetailInfo.CrossHairDetailInfo_C.SetData");
 
 	struct SetData_Params {
 		struct FText Title;
-		struct Unknown Image;
+		struct TSoftObjectPtr<UTexture2D> Image;
 	}; SetData_Params Params;
 
 	Params.Title = Title;

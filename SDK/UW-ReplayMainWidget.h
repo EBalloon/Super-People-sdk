@@ -3,36 +3,36 @@ class UUW-ReplayMainWidget_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Anim_ToggleItemList; // 0x250 (8)
-	struct Unknown Anim_TogglePlayerList; // 0x258 (8)
-	struct Unknown Anim_ToggleTimeline; // 0x260 (8)
-	struct Unknown UW-ReplayFreeCamSpeedWidget; // 0x268 (8)
-	struct Unknown UW-ReplayGuideWidget; // 0x270 (8)
-	struct Unknown UW-ReplayItemList; // 0x278 (8)
-	struct Unknown UW-ReplayPlayerListWidget; // 0x280 (8)
-	struct Unknown UW-ReplayTimelineBasic; // 0x288 (8)
-	struct Unknown UW-ReplayWorldMapOption; // 0x290 (8)
-	struct Unknown UW-SpectatingTargetInfo; // 0x298 (8)
-	struct Unknown ReplayController; // 0x2A0 (8)
-	struct TArray<Unknown> UserNameTooltips; // 0x2A8 (16)
-	struct Unknown MainWidget; // 0x2B8 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UWidgetAnimation Anim_ToggleItemList; // 0x250 (8)
+	struct UWidgetAnimation Anim_TogglePlayerList; // 0x258 (8)
+	struct UWidgetAnimation Anim_ToggleTimeline; // 0x260 (8)
+	struct UUW-ReplayFreeCamSpeedWidget_C UW-ReplayFreeCamSpeedWidget; // 0x268 (8)
+	struct UUW-ReplayGuideWidget_C UW-ReplayGuideWidget; // 0x270 (8)
+	struct UUW-ReplayItemList_C UW-ReplayItemList; // 0x278 (8)
+	struct UUW-ReplayPlayerListWidget_C UW-ReplayPlayerListWidget; // 0x280 (8)
+	struct UUW-ReplayTimelineBasic_C UW-ReplayTimelineBasic; // 0x288 (8)
+	struct UUW-ReplayWorldMapOption_C UW-ReplayWorldMapOption; // 0x290 (8)
+	struct UUW-SpectatingTargetInfo_C UW-SpectatingTargetInfo; // 0x298 (8)
+	struct ABP-MK3DReplayController_C ReplayController; // 0x2A0 (8)
+	struct TArray<struct UUW_ReplayUserNameTooltip_C> UserNameTooltips; // 0x2A8 (16)
+	struct UBravoHotelMainWidget MainWidget; // 0x2B8 (8)
 	int32_t UserNameTooltipsNum; // 0x2C0 (4)
 
 	void SetTargetPawnInfo(); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.SetTargetPawnInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetEnableUserNameTooltips(enum class Unknow CameraType); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.SetEnableUserNameTooltips(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetEnableUserNameTooltips(enum class ECameraType CameraType); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.SetEnableUserNameTooltips(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CheckWorldMapOption(); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.CheckWorldMapOption(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetMainWidget(char& IsValid, struct Unknown& MainWidget); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.GetMainWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetMainWidget(char& IsValid, struct UBravoHotelMainWidget& MainWidget); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.GetMainWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void RemoveAllUserNameTooltips(); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.RemoveAllUserNameTooltips(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CreateUserNameTooltip(struct Unknown PlayerState); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.CreateUserNameTooltip(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CreateUserNameTooltip(struct ABravoHotelPlayerState PlayerState); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.CreateUserNameTooltip(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Set User Name Tooltip(); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.Set User Name Tooltip(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Init(); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.Init(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ToggleTimeline(); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.ToggleTimeline(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void TogglePlayerList(); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.TogglePlayerList(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ToggleItemList(); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.ToggleItemList(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ChangeCameraTypeDelegate_Event_1(enum class Unknow CameraType, struct FString TargetPlayerName); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.ChangeCameraTypeDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ChangeCameraTypeDelegate_Event_1(enum class ECameraType CameraType, struct FString TargetPlayerName); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.ChangeCameraTypeDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void InitWorldMapOption(); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.InitWorldMapOption(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnChangedFreeCamSpeedLevel(float SpeedLevel); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.OnChangedFreeCamSpeedLevel(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnChangedPlayerInfosDelegate_Event_2(); // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.OnChangedPlayerInfosDelegate_Event_2(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -54,11 +54,11 @@ inline void UUW-ReplayMainWidget_C::SetTargetPawnInfo() {
 }
 
 // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.SetEnableUserNameTooltips
-inline void UUW-ReplayMainWidget_C::SetEnableUserNameTooltips(enum class Unknow CameraType) {
+inline void UUW-ReplayMainWidget_C::SetEnableUserNameTooltips(enum class ECameraType CameraType) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.SetEnableUserNameTooltips");
 
 	struct SetEnableUserNameTooltips_Params {
-		enum class Unknow CameraType;
+		enum class ECameraType CameraType;
 	}; SetEnableUserNameTooltips_Params Params;
 
 	Params.CameraType = CameraType;
@@ -83,12 +83,12 @@ inline void UUW-ReplayMainWidget_C::CheckWorldMapOption() {
 }
 
 // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.GetMainWidget
-inline void UUW-ReplayMainWidget_C::GetMainWidget(char& IsValid, struct Unknown& MainWidget) {
+inline void UUW-ReplayMainWidget_C::GetMainWidget(char& IsValid, struct UBravoHotelMainWidget& MainWidget) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.GetMainWidget");
 
 	struct GetMainWidget_Params {
 		char& IsValid;
-		struct Unknown& MainWidget;
+		struct UBravoHotelMainWidget& MainWidget;
 	}; GetMainWidget_Params Params;
 
 
@@ -116,11 +116,11 @@ inline void UUW-ReplayMainWidget_C::RemoveAllUserNameTooltips() {
 }
 
 // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.CreateUserNameTooltip
-inline void UUW-ReplayMainWidget_C::CreateUserNameTooltip(struct Unknown PlayerState) {
+inline void UUW-ReplayMainWidget_C::CreateUserNameTooltip(struct ABravoHotelPlayerState PlayerState) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.CreateUserNameTooltip");
 
 	struct CreateUserNameTooltip_Params {
-		struct Unknown PlayerState;
+		struct ABravoHotelPlayerState PlayerState;
 	}; CreateUserNameTooltip_Params Params;
 
 	Params.PlayerState = PlayerState;
@@ -215,11 +215,11 @@ inline void UUW-ReplayMainWidget_C::ToggleItemList() {
 }
 
 // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.ChangeCameraTypeDelegate_Event_1
-inline void UUW-ReplayMainWidget_C::ChangeCameraTypeDelegate_Event_1(enum class Unknow CameraType, struct FString TargetPlayerName) {
+inline void UUW-ReplayMainWidget_C::ChangeCameraTypeDelegate_Event_1(enum class ECameraType CameraType, struct FString TargetPlayerName) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.ChangeCameraTypeDelegate_Event_1");
 
 	struct ChangeCameraTypeDelegate_Event_1_Params {
-		enum class Unknow CameraType;
+		enum class ECameraType CameraType;
 		struct FString TargetPlayerName;
 	}; ChangeCameraTypeDelegate_Event_1_Params Params;
 
@@ -232,11 +232,11 @@ inline void UUW-ReplayMainWidget_C::ChangeCameraTypeDelegate_Event_1(enum class 
 }
 
 // Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.Tick
-inline void UUW-ReplayMainWidget_C::Tick(struct Unknown MyGeometry, float InDeltaTime) {
+inline void UUW-ReplayMainWidget_C::Tick(struct FGeometry MyGeometry, float InDeltaTime) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-ReplayMainWidget.UW-ReplayMainWidget_C.Tick");
 
 	struct Tick_Params {
-		struct Unknown MyGeometry;
+		struct FGeometry MyGeometry;
 		float InDeltaTime;
 	}; Tick_Params Params;
 

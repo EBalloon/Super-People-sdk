@@ -3,16 +3,16 @@ class UUW-Inventory_SlotBase_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown PlayerController; // 0x250 (8)
-	struct Unknown InventoryItemInfo; // 0x258 (152)
-	struct Unknown InventoryItemDetailInfo; // 0x2F0 (1168)
-	struct Unknown WeaponInfo; // 0x780 (2856)
-	struct Unknown ItemSlotHoverWIdget; // 0x12A8 (8)
-	struct Unknown InventoryWidget; // 0x12B0 (8)
-	struct Unknown DraggedWidget; // 0x12B8 (8)
-	enum class Unknow InventorySlotWidgetKind; // 0x12C0 (1)
-	struct Unknown DragItemBrush; // 0x12C8 (136)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct ABravoHotelPlayerController PlayerController; // 0x250 (8)
+	struct FInventoryItemInfo InventoryItemInfo; // 0x258 (152)
+	struct FInventoryItemDetailInfo InventoryItemDetailInfo; // 0x2F0 (1168)
+	struct FBravoHotelWeaponInfo WeaponInfo; // 0x780 (2856)
+	struct UUW-Inventory_ItemSlotHover_C ItemSlotHoverWIdget; // 0x12A8 (8)
+	struct UUW-InventoryWidget_C InventoryWidget; // 0x12B0 (8)
+	struct UUW-Inventory_DragItem_C DraggedWidget; // 0x12B8 (8)
+	enum class ItemWidgetDragType InventorySlotWidgetKind; // 0x12C0 (1)
+	struct FSlateBrush DragItemBrush; // 0x12C8 (136)
 	char RButtonDown : 0; // 0x1350 (1)
 	char bEpuipped : 0; // 0x1351 (1)
 
@@ -20,28 +20,28 @@ public:
 	void SetInventoryWidget(); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.SetInventoryWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void GetOverrideItemID(struct FName& ItemId); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.GetOverrideItemID(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void IsLockSlot(char& Lock); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.IsLockSlot(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetInventoryItemDetailInfoByItemInfo(struct Unknown InventoryItemInfo, char& bResult); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.SetInventoryItemDetailInfoByItemInfo(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	char OnDrop(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.OnDrop(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetInventoryItemDetailInfoByItemInfo(struct FInventoryItemInfo InventoryItemInfo, char& bResult); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.SetInventoryItemDetailInfoByItemInfo(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	char OnDrop(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.OnDrop(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void DragEnd(); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.DragEnd(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void DragStart(char LockSlot, struct Unknown& Operation); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.DragStart(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetInventoryComponent(char& bResult, struct Unknown& InventoryComponent); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.GetInventoryComponent(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetInventoryItemInfo(struct Unknown InventoryItemInfo); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.SetInventoryItemInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetWeaponInfo(struct Unknown& WeaponInfo); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.GetWeaponInfo(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void SetWeaponInfo(struct Unknown WeaponInfo); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.SetWeaponInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown OnMouseButtonUp(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.OnMouseButtonUp(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void DragStart(char LockSlot, struct UDragDropOperation& Operation); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.DragStart(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetInventoryComponent(char& bResult, struct UPlayerInventoryComponent& InventoryComponent); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.GetInventoryComponent(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetInventoryItemInfo(struct FInventoryItemInfo InventoryItemInfo); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.SetInventoryItemInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetWeaponInfo(struct FBravoHotelWeaponInfo& WeaponInfo); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.GetWeaponInfo(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void SetWeaponInfo(struct FBravoHotelWeaponInfo WeaponInfo); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.SetWeaponInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply OnMouseButtonUp(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.OnMouseButtonUp(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnRButtonClick(char& bResult); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.OnRButtonClick(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnDragDetected(struct Unknown MyGeometry, struct Unknown& PointerEvent, struct Unknown& Operation); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.OnDragDetected(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetInventoryItemDetailInfo(struct Unknown& InventoryItemDeailInfo); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.GetInventoryItemDetailInfo(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void GetInventoryItemInfo(struct Unknown& InventoryItemInfo); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.GetInventoryItemInfo(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void SetInventoryItemDetailInfo(struct Unknown InventoryItemDetailInfo); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.SetInventoryItemDetailInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetInventoryItemInfoByPickup(struct Unknown Pickup, char& bResult); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.SetInventoryItemInfoByPickup(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnDragDetected(struct FGeometry MyGeometry, struct FPointerEvent& PointerEvent, struct UDragDropOperation& Operation); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.OnDragDetected(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetInventoryItemDetailInfo(struct FInventoryItemDetailInfo& InventoryItemDeailInfo); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.GetInventoryItemDetailInfo(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void GetInventoryItemInfo(struct FInventoryItemInfo& InventoryItemInfo); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.GetInventoryItemInfo(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void SetInventoryItemDetailInfo(struct FInventoryItemDetailInfo InventoryItemDetailInfo); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.SetInventoryItemDetailInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetInventoryItemInfoByPickup(struct ABravoHotelPickup Pickup, char& bResult); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.SetInventoryItemInfoByPickup(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetPlayerController(); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.SetPlayerController(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetItemSlotHoverWidget(struct Unknown ItemSlotHoverWIdget, struct Unknown& Out); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.SetItemSlotHoverWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetPlayerController(char& bResult, struct Unknown& Out); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.GetPlayerController(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void GetItemSlotHoverWidget(char& bResult, struct Unknown& Out); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.GetItemSlotHoverWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	struct Unknown OnMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnLoaded_29D4AD794F40F3517E11F7A14C55D6DD(struct Unknown Loaded); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.OnLoaded_29D4AD794F40F3517E11F7A14C55D6DD(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AysncLoadIconTexture(struct Unknown IconTexture); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.AysncLoadIconTexture(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetItemSlotHoverWidget(struct UUW-Inventory_ItemSlotHover_C ItemSlotHoverWIdget, struct UUW-Inventory_ItemSlotHover_C& Out); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.SetItemSlotHoverWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetPlayerController(char& bResult, struct ABravoHotelPlayerController& Out); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.GetPlayerController(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void GetItemSlotHoverWidget(char& bResult, struct UUW-Inventory_ItemSlotHover_C& Out); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.GetItemSlotHoverWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	struct FEventReply OnMouseButtonDown(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_29D4AD794F40F3517E11F7A14C55D6DD(struct Object Loaded); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.OnLoaded_29D4AD794F40F3517E11F7A14C55D6DD(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AysncLoadIconTexture(struct TSoftObjectPtr<UPaperSprite> IconTexture); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.AysncLoadIconTexture(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-Inventory_SlotBase(int32_t EntryPoint); // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.ExecuteUbergraph_UW-Inventory_SlotBase(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
@@ -111,11 +111,11 @@ inline void UUW-Inventory_SlotBase_C::IsLockSlot(char& Lock) {
 }
 
 // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.SetInventoryItemDetailInfoByItemInfo
-inline void UUW-Inventory_SlotBase_C::SetInventoryItemDetailInfoByItemInfo(struct Unknown InventoryItemInfo, char& bResult) {
+inline void UUW-Inventory_SlotBase_C::SetInventoryItemDetailInfoByItemInfo(struct FInventoryItemInfo InventoryItemInfo, char& bResult) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.SetInventoryItemDetailInfoByItemInfo");
 
 	struct SetInventoryItemDetailInfoByItemInfo_Params {
-		struct Unknown InventoryItemInfo;
+		struct FInventoryItemInfo InventoryItemInfo;
 		char& bResult;
 	}; SetInventoryItemDetailInfoByItemInfo_Params Params;
 
@@ -130,13 +130,13 @@ inline void UUW-Inventory_SlotBase_C::SetInventoryItemDetailInfoByItemInfo(struc
 }
 
 // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.OnDrop
-inline char UUW-Inventory_SlotBase_C::OnDrop(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation) {
+inline char UUW-Inventory_SlotBase_C::OnDrop(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.OnDrop");
 
 	struct OnDrop_Params {
-		struct Unknown MyGeometry;
-		struct Unknown PointerEvent;
-		struct Unknown Operation;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent PointerEvent;
+		struct UDragDropOperation Operation;
 		char ReturnValue;
 
 	}; OnDrop_Params Params;
@@ -167,12 +167,12 @@ inline void UUW-Inventory_SlotBase_C::DragEnd() {
 }
 
 // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.DragStart
-inline void UUW-Inventory_SlotBase_C::DragStart(char LockSlot, struct Unknown& Operation) {
+inline void UUW-Inventory_SlotBase_C::DragStart(char LockSlot, struct UDragDropOperation& Operation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.DragStart");
 
 	struct DragStart_Params {
 		char LockSlot;
-		struct Unknown& Operation;
+		struct UDragDropOperation& Operation;
 	}; DragStart_Params Params;
 
 	Params.LockSlot = LockSlot;
@@ -186,12 +186,12 @@ inline void UUW-Inventory_SlotBase_C::DragStart(char LockSlot, struct Unknown& O
 }
 
 // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.GetInventoryComponent
-inline void UUW-Inventory_SlotBase_C::GetInventoryComponent(char& bResult, struct Unknown& InventoryComponent) {
+inline void UUW-Inventory_SlotBase_C::GetInventoryComponent(char& bResult, struct UPlayerInventoryComponent& InventoryComponent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.GetInventoryComponent");
 
 	struct GetInventoryComponent_Params {
 		char& bResult;
-		struct Unknown& InventoryComponent;
+		struct UPlayerInventoryComponent& InventoryComponent;
 	}; GetInventoryComponent_Params Params;
 
 
@@ -205,11 +205,11 @@ inline void UUW-Inventory_SlotBase_C::GetInventoryComponent(char& bResult, struc
 }
 
 // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.SetInventoryItemInfo
-inline void UUW-Inventory_SlotBase_C::SetInventoryItemInfo(struct Unknown InventoryItemInfo) {
+inline void UUW-Inventory_SlotBase_C::SetInventoryItemInfo(struct FInventoryItemInfo InventoryItemInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.SetInventoryItemInfo");
 
 	struct SetInventoryItemInfo_Params {
-		struct Unknown InventoryItemInfo;
+		struct FInventoryItemInfo InventoryItemInfo;
 	}; SetInventoryItemInfo_Params Params;
 
 	Params.InventoryItemInfo = InventoryItemInfo;
@@ -220,11 +220,11 @@ inline void UUW-Inventory_SlotBase_C::SetInventoryItemInfo(struct Unknown Invent
 }
 
 // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.GetWeaponInfo
-inline void UUW-Inventory_SlotBase_C::GetWeaponInfo(struct Unknown& WeaponInfo) {
+inline void UUW-Inventory_SlotBase_C::GetWeaponInfo(struct FBravoHotelWeaponInfo& WeaponInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.GetWeaponInfo");
 
 	struct GetWeaponInfo_Params {
-		struct Unknown& WeaponInfo;
+		struct FBravoHotelWeaponInfo& WeaponInfo;
 	}; GetWeaponInfo_Params Params;
 
 
@@ -237,11 +237,11 @@ inline void UUW-Inventory_SlotBase_C::GetWeaponInfo(struct Unknown& WeaponInfo) 
 }
 
 // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.SetWeaponInfo
-inline void UUW-Inventory_SlotBase_C::SetWeaponInfo(struct Unknown WeaponInfo) {
+inline void UUW-Inventory_SlotBase_C::SetWeaponInfo(struct FBravoHotelWeaponInfo WeaponInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.SetWeaponInfo");
 
 	struct SetWeaponInfo_Params {
-		struct Unknown WeaponInfo;
+		struct FBravoHotelWeaponInfo WeaponInfo;
 	}; SetWeaponInfo_Params Params;
 
 	Params.WeaponInfo = WeaponInfo;
@@ -252,13 +252,13 @@ inline void UUW-Inventory_SlotBase_C::SetWeaponInfo(struct Unknown WeaponInfo) {
 }
 
 // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.OnMouseButtonUp
-inline struct Unknown UUW-Inventory_SlotBase_C::OnMouseButtonUp(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UUW-Inventory_SlotBase_C::OnMouseButtonUp(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.OnMouseButtonUp");
 
 	struct OnMouseButtonUp_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnMouseButtonUp_Params Params;
 
@@ -292,13 +292,13 @@ inline void UUW-Inventory_SlotBase_C::OnRButtonClick(char& bResult) {
 }
 
 // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.OnDragDetected
-inline void UUW-Inventory_SlotBase_C::OnDragDetected(struct Unknown MyGeometry, struct Unknown& PointerEvent, struct Unknown& Operation) {
+inline void UUW-Inventory_SlotBase_C::OnDragDetected(struct FGeometry MyGeometry, struct FPointerEvent& PointerEvent, struct UDragDropOperation& Operation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.OnDragDetected");
 
 	struct OnDragDetected_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& PointerEvent;
-		struct Unknown& Operation;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& PointerEvent;
+		struct UDragDropOperation& Operation;
 	}; OnDragDetected_Params Params;
 
 	Params.MyGeometry = MyGeometry;
@@ -313,11 +313,11 @@ inline void UUW-Inventory_SlotBase_C::OnDragDetected(struct Unknown MyGeometry, 
 }
 
 // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.GetInventoryItemDetailInfo
-inline void UUW-Inventory_SlotBase_C::GetInventoryItemDetailInfo(struct Unknown& InventoryItemDeailInfo) {
+inline void UUW-Inventory_SlotBase_C::GetInventoryItemDetailInfo(struct FInventoryItemDetailInfo& InventoryItemDeailInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.GetInventoryItemDetailInfo");
 
 	struct GetInventoryItemDetailInfo_Params {
-		struct Unknown& InventoryItemDeailInfo;
+		struct FInventoryItemDetailInfo& InventoryItemDeailInfo;
 	}; GetInventoryItemDetailInfo_Params Params;
 
 
@@ -330,11 +330,11 @@ inline void UUW-Inventory_SlotBase_C::GetInventoryItemDetailInfo(struct Unknown&
 }
 
 // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.GetInventoryItemInfo
-inline void UUW-Inventory_SlotBase_C::GetInventoryItemInfo(struct Unknown& InventoryItemInfo) {
+inline void UUW-Inventory_SlotBase_C::GetInventoryItemInfo(struct FInventoryItemInfo& InventoryItemInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.GetInventoryItemInfo");
 
 	struct GetInventoryItemInfo_Params {
-		struct Unknown& InventoryItemInfo;
+		struct FInventoryItemInfo& InventoryItemInfo;
 	}; GetInventoryItemInfo_Params Params;
 
 
@@ -347,11 +347,11 @@ inline void UUW-Inventory_SlotBase_C::GetInventoryItemInfo(struct Unknown& Inven
 }
 
 // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.SetInventoryItemDetailInfo
-inline void UUW-Inventory_SlotBase_C::SetInventoryItemDetailInfo(struct Unknown InventoryItemDetailInfo) {
+inline void UUW-Inventory_SlotBase_C::SetInventoryItemDetailInfo(struct FInventoryItemDetailInfo InventoryItemDetailInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.SetInventoryItemDetailInfo");
 
 	struct SetInventoryItemDetailInfo_Params {
-		struct Unknown InventoryItemDetailInfo;
+		struct FInventoryItemDetailInfo InventoryItemDetailInfo;
 	}; SetInventoryItemDetailInfo_Params Params;
 
 	Params.InventoryItemDetailInfo = InventoryItemDetailInfo;
@@ -362,11 +362,11 @@ inline void UUW-Inventory_SlotBase_C::SetInventoryItemDetailInfo(struct Unknown 
 }
 
 // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.SetInventoryItemInfoByPickup
-inline void UUW-Inventory_SlotBase_C::SetInventoryItemInfoByPickup(struct Unknown Pickup, char& bResult) {
+inline void UUW-Inventory_SlotBase_C::SetInventoryItemInfoByPickup(struct ABravoHotelPickup Pickup, char& bResult) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.SetInventoryItemInfoByPickup");
 
 	struct SetInventoryItemInfoByPickup_Params {
-		struct Unknown Pickup;
+		struct ABravoHotelPickup Pickup;
 		char& bResult;
 	}; SetInventoryItemInfoByPickup_Params Params;
 
@@ -395,12 +395,12 @@ inline void UUW-Inventory_SlotBase_C::SetPlayerController() {
 }
 
 // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.SetItemSlotHoverWidget
-inline void UUW-Inventory_SlotBase_C::SetItemSlotHoverWidget(struct Unknown ItemSlotHoverWIdget, struct Unknown& Out) {
+inline void UUW-Inventory_SlotBase_C::SetItemSlotHoverWidget(struct UUW-Inventory_ItemSlotHover_C ItemSlotHoverWIdget, struct UUW-Inventory_ItemSlotHover_C& Out) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.SetItemSlotHoverWidget");
 
 	struct SetItemSlotHoverWidget_Params {
-		struct Unknown ItemSlotHoverWIdget;
-		struct Unknown& Out;
+		struct UUW-Inventory_ItemSlotHover_C ItemSlotHoverWIdget;
+		struct UUW-Inventory_ItemSlotHover_C& Out;
 	}; SetItemSlotHoverWidget_Params Params;
 
 	Params.ItemSlotHoverWIdget = ItemSlotHoverWIdget;
@@ -414,12 +414,12 @@ inline void UUW-Inventory_SlotBase_C::SetItemSlotHoverWidget(struct Unknown Item
 }
 
 // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.GetPlayerController
-inline void UUW-Inventory_SlotBase_C::GetPlayerController(char& bResult, struct Unknown& Out) {
+inline void UUW-Inventory_SlotBase_C::GetPlayerController(char& bResult, struct ABravoHotelPlayerController& Out) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.GetPlayerController");
 
 	struct GetPlayerController_Params {
 		char& bResult;
-		struct Unknown& Out;
+		struct ABravoHotelPlayerController& Out;
 	}; GetPlayerController_Params Params;
 
 
@@ -433,12 +433,12 @@ inline void UUW-Inventory_SlotBase_C::GetPlayerController(char& bResult, struct 
 }
 
 // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.GetItemSlotHoverWidget
-inline void UUW-Inventory_SlotBase_C::GetItemSlotHoverWidget(char& bResult, struct Unknown& Out) {
+inline void UUW-Inventory_SlotBase_C::GetItemSlotHoverWidget(char& bResult, struct UUW-Inventory_ItemSlotHover_C& Out) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.GetItemSlotHoverWidget");
 
 	struct GetItemSlotHoverWidget_Params {
 		char& bResult;
-		struct Unknown& Out;
+		struct UUW-Inventory_ItemSlotHover_C& Out;
 	}; GetItemSlotHoverWidget_Params Params;
 
 
@@ -452,13 +452,13 @@ inline void UUW-Inventory_SlotBase_C::GetItemSlotHoverWidget(char& bResult, stru
 }
 
 // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.OnMouseButtonDown
-inline struct Unknown UUW-Inventory_SlotBase_C::OnMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UUW-Inventory_SlotBase_C::OnMouseButtonDown(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.OnMouseButtonDown");
 
 	struct OnMouseButtonDown_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnMouseButtonDown_Params Params;
 
@@ -475,11 +475,11 @@ inline struct Unknown UUW-Inventory_SlotBase_C::OnMouseButtonDown(struct Unknown
 }
 
 // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.OnLoaded_29D4AD794F40F3517E11F7A14C55D6DD
-inline void UUW-Inventory_SlotBase_C::OnLoaded_29D4AD794F40F3517E11F7A14C55D6DD(struct Unknown Loaded) {
+inline void UUW-Inventory_SlotBase_C::OnLoaded_29D4AD794F40F3517E11F7A14C55D6DD(struct Object Loaded) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.OnLoaded_29D4AD794F40F3517E11F7A14C55D6DD");
 
 	struct OnLoaded_29D4AD794F40F3517E11F7A14C55D6DD_Params {
-		struct Unknown Loaded;
+		struct Object Loaded;
 	}; OnLoaded_29D4AD794F40F3517E11F7A14C55D6DD_Params Params;
 
 	Params.Loaded = Loaded;
@@ -490,11 +490,11 @@ inline void UUW-Inventory_SlotBase_C::OnLoaded_29D4AD794F40F3517E11F7A14C55D6DD(
 }
 
 // Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.AysncLoadIconTexture
-inline void UUW-Inventory_SlotBase_C::AysncLoadIconTexture(struct Unknown IconTexture) {
+inline void UUW-Inventory_SlotBase_C::AysncLoadIconTexture(struct TSoftObjectPtr<UPaperSprite> IconTexture) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_SlotBase.UW-Inventory_SlotBase_C.AysncLoadIconTexture");
 
 	struct AysncLoadIconTexture_Params {
-		struct Unknown IconTexture;
+		struct TSoftObjectPtr<UPaperSprite> IconTexture;
 	}; AysncLoadIconTexture_Params Params;
 
 	Params.IconTexture = IconTexture;

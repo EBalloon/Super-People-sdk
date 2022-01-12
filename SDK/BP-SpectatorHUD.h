@@ -3,29 +3,29 @@ class UBP-SpectatorHUD_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown BackgroundBlurFadeIn; // 0x250 (8)
-	struct Unknown Idle; // 0x258 (8)
-	struct Unknown BackgroundBlur_1; // 0x260 (8)
-	struct Unknown Btn-Exit; // 0x268 (8)
-	struct Unknown Btn-NextTarget; // 0x270 (8)
-	struct Unknown Btn-PreTarget; // 0x278 (8)
-	struct Unknown Btn-Replay; // 0x280 (8)
-	struct Unknown Canvas_Main; // 0x288 (8)
-	struct Unknown KillcamBtns; // 0x290 (8)
-	struct Unknown MemberChangeBox; // 0x298 (8)
-	struct Unknown TextDepth_Replay; // 0x2A0 (8)
-	struct Unknown UW-SpectatingTargetInfo; // 0x2A8 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UWidgetAnimation BackgroundBlurFadeIn; // 0x250 (8)
+	struct UWidgetAnimation Idle; // 0x258 (8)
+	struct UBackgroundBlur BackgroundBlur_1; // 0x260 (8)
+	struct UButton Btn-Exit; // 0x268 (8)
+	struct UButton Btn-NextTarget; // 0x270 (8)
+	struct UButton Btn-PreTarget; // 0x278 (8)
+	struct UButton Btn-Replay; // 0x280 (8)
+	struct UCanvasPanel Canvas_Main; // 0x288 (8)
+	struct UHorizontalBox KillcamBtns; // 0x290 (8)
+	struct UHorizontalBox MemberChangeBox; // 0x298 (8)
+	struct UTextBlock TextDepth_Replay; // 0x2A0 (8)
+	struct UUW-SpectatingTargetInfo_C UW-SpectatingTargetInfo; // 0x2A8 (8)
 	char bIsKillCam : 0; // 0x2B0 (1)
 
-	struct Unknown GetInteractiveWidget(); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.GetInteractiveWidget(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetTargetPlayerInfo(struct Unknown PlayerState); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.SetTargetPlayerInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	enum class Unknow GetVisibility_1(); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.GetVisibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	struct UBravoHotelInteractionWidget GetInteractiveWidget(); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.GetInteractiveWidget(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetTargetPlayerInfo(struct ABravoHotelPlayerState PlayerState); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.SetTargetPlayerInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	enum class ESlateVisibility GetVisibility_1(); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.GetVisibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	struct FText GetText_1(); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.GetText_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void SetReplayBtn(char bVisiable); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.SetReplayBtn(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetTargetBtn(char bVisiable); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.SetTargetBtn(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AddCoreInfoRouteping(struct Unknown PlayerState); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.AddCoreInfoRouteping(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AddCoreInfoSmartping(struct Unknown PlayerState); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.AddCoreInfoSmartping(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AddCoreInfoRouteping(struct ABravoHotelPlayerState PlayerState); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.AddCoreInfoRouteping(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AddCoreInfoSmartping(struct ABravoHotelPlayerState PlayerState); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.AddCoreInfoSmartping(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void AddKillMsgByMolotovFlame(struct FText& Killer, struct FText& WeaponName, struct FText& Victim, char bHeasShot, char bLocalKiller, char bByTeam, char bTeamDead, int32_t AliveCount, char bKnockOut, int32_t KillerTierID, int32_t DiedTierID); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.AddKillMsgByMolotovFlame(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void AddKillMsgByVehicle(struct FText& Killer, struct FText& Victim, char bLocalKiller, char bByTeam, char bTeamDead, int32_t AliveCount, char bKnockOut, int32_t KillerTierID, int32_t DiedTierID); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.AddKillMsgByVehicle(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void AddKillMsgByWeapon(struct FText& Killer, struct FText& WeaponName, struct FText& Victim, char bHeasShot, char bLocalKiller, char bByTeam, char bTeamDead, int32_t AliveCount, char bKnockOut, int32_t KillerTierID, int32_t DiedTierID); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.AddKillMsgByWeapon(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -38,16 +38,16 @@ public:
 	void AddKillMsgSuicide(struct FText& Victim, char bTeamDead, int32_t AliveCount, char bKnockOut, int32_t DiedTierID); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.AddKillMsgSuicide(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void AddPerkMessage(struct FName PerkName, int32_t Level); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.AddPerkMessage(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void AddPingMessage(struct FString MessageTag, char UsingBackGround); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.AddPingMessage(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AddRequestMessage(struct Unknown PlayerState, struct FString Message); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.AddRequestMessage(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AddRequestMessage(struct ABravoHotelPlayerState PlayerState, struct FString Message); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.AddRequestMessage(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Close(); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.Close(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void FinishPerkSpin(enum class Unknow LevelUpType); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.FinishPerkSpin(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void FinishPerkSpin(enum class EPerkLevelUpType LevelUpType); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.FinishPerkSpin(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void HideAmplifier(); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.HideAmplifier(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void HideBlueZoneNotiMessage(); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.HideBlueZoneNotiMessage(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void HideMinimapWidget(); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.HideMinimapWidget(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void HideTeamPositionWidget(); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.HideTeamPositionWidget(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void HideVehicleWidget(); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.HideVehicleWidget(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void LevelUpEvent(struct Unknown PerkInfo, int32_t CurrentLevel, enum class Unknow LevelUpType, struct Unknown DisplayAbility, int32_t LastLevel); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.LevelUpEvent(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnChangedToggleType(enum class Unknow PreType, enum class Unknow CurrentType); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.OnChangedToggleType(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void LevelUpEvent(struct FPerkUIInfo PerkInfo, int32_t CurrentLevel, enum class EPerkLevelUpType LevelUpType, struct FDisplayAbility DisplayAbility, int32_t LastLevel); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.LevelUpEvent(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnChangedToggleType(enum class EToggleWidgetModeType PreType, enum class EToggleWidgetModeType CurrentType); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.OnChangedToggleType(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Open(); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.Open(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OpenMainMenu(); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.OpenMainMenu(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void PlaySupplyBoxMessage(struct FString Message); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.PlaySupplyBoxMessage(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -57,27 +57,27 @@ public:
 	void SetToggleMinimap(char bToggle); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.SetToggleMinimap(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ShowAmplifier(struct FString InText); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.ShowAmplifier(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ShowBlueZoneNotiMessage(struct FString Title, struct FString Desc); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.ShowBlueZoneNotiMessage(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowCommonMessage(struct Unknown& MessageInfo); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.ShowCommonMessage(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowCommonMessage(struct FCommonMessageInfo& MessageInfo); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.ShowCommonMessage(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ShowDeathAndAliveMessage(struct FText& Victim, int32_t AliveCount); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.ShowDeathAndAliveMessage(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowDeathUserWidget(struct Unknown& Info); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.ShowDeathUserWidget(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowDeathUserWidget(struct FKillBroadcastUIInfo& Info); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.ShowDeathUserWidget(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ShowEnergyItemUse(int32_t Type); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.ShowEnergyItemUse(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ShowGameProgressMessage(int32_t Type, int32_t Time); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.ShowGameProgressMessage(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ShowGameWaitMessage(int32_t Time); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.ShowGameWaitMessage(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowHittedDamage(struct Unknown InstigatorCharacter); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.ShowHittedDamage(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowHittedDamage(struct ABravoHotelCharacter InstigatorCharacter); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.ShowHittedDamage(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ShowInventoryNotEnoughSpaceMessage(); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.ShowInventoryNotEnoughSpaceMessage(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowLineOfFire(struct Unknown& Pos); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.ShowLineOfFire(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowLineOfFire(struct FVector2D& Pos); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.ShowLineOfFire(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ShowMinimapWidget(); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.ShowMinimapWidget(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ShowMyKillInfo(struct FText& WeaponName, struct FText& Victim, int32_t KillCount, int32_t AliveCount, char bHeadShot, char bTeamKill); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.ShowMyKillInfo(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ShowMyKnockOutInfo(struct FText& WeaponName, struct FText& Victim, char bHeadShot, char bTeamKill); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.ShowMyKnockOutInfo(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ShowNuclearMessage(int32_t Count); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.ShowNuclearMessage(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ShowRedZoneBombMessage(); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.ShowRedZoneBombMessage(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ShowRedZoneStartMessage(); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.ShowRedZoneStartMessage(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowReverseSideTeamPositionWidget(int32_t TeamIconIndex, float Angle, struct Unknown ScreenMaxSize); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.ShowReverseSideTeamPositionWidget(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowTeamPositionWidget(int32_t TeamIndex, struct Unknown ScreenPosition, char bNetCullDistance); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.ShowTeamPositionWidget(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowVehicleWidget(struct Unknown VehicleSeat); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.ShowVehicleWidget(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowReverseSideTeamPositionWidget(int32_t TeamIconIndex, float Angle, struct FVector2D ScreenMaxSize); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.ShowReverseSideTeamPositionWidget(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowTeamPositionWidget(int32_t TeamIndex, struct FVector2D ScreenPosition, char bNetCullDistance); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.ShowTeamPositionWidget(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowVehicleWidget(struct UBravoHotelVehicleSeatComponent VehicleSeat); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.ShowVehicleWidget(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void TeamInfoVisibility(char bState); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.TeamInfoVisibility(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ToggleMiniMap(); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.ToggleMiniMap(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void UpdateLineOfFire(struct Unknown& Pos, char LastUpdate, float delataTime); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.UpdateLineOfFire(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void UpdateLineOfFire(struct FVector2D& Pos, char LastUpdate, float delataTime); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.UpdateLineOfFire(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__Btn-Exit_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.BndEvt__Btn-Exit_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__Btn-NextTarget_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.BndEvt__Btn-NextTarget_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__Btn-PreTarget_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.BndEvt__Btn-PreTarget_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -86,7 +86,7 @@ public:
 	void StartBackGroundBlur(); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.StartBackGroundBlur(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ResetBackGroundBlur(); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.ResetBackGroundBlur(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__Button_Return_K2Node_ComponentBoundEvent_3_OnButtonClickedEvent__DelegateSignature(); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.BndEvt__Button_Return_K2Node_ComponentBoundEvent_3_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AddCoreInfoRequestResuscitation(struct Unknown PlayerState); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.AddCoreInfoRequestResuscitation(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AddCoreInfoRequestResuscitation(struct ABravoHotelPlayerState PlayerState); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.AddCoreInfoRequestResuscitation(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ClosePopup(); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.ClosePopup(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void HideAnim(); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.HideAnim(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ShowAnim(); // Function BP-SpectatorHUD.BP-SpectatorHUD_C.ShowAnim(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -94,12 +94,12 @@ public:
 };
 
 // Function BP-SpectatorHUD.BP-SpectatorHUD_C.GetInteractiveWidget
-inline struct Unknown UBP-SpectatorHUD_C::GetInteractiveWidget() {
+inline struct UBravoHotelInteractionWidget UBP-SpectatorHUD_C::GetInteractiveWidget() {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-SpectatorHUD.BP-SpectatorHUD_C.GetInteractiveWidget");
 
 	struct GetInteractiveWidget_Params {
 		
-		struct Unknown ReturnValue;
+		struct UBravoHotelInteractionWidget ReturnValue;
 
 	}; GetInteractiveWidget_Params Params;
 
@@ -112,11 +112,11 @@ inline struct Unknown UBP-SpectatorHUD_C::GetInteractiveWidget() {
 }
 
 // Function BP-SpectatorHUD.BP-SpectatorHUD_C.SetTargetPlayerInfo
-inline void UBP-SpectatorHUD_C::SetTargetPlayerInfo(struct Unknown PlayerState) {
+inline void UBP-SpectatorHUD_C::SetTargetPlayerInfo(struct ABravoHotelPlayerState PlayerState) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-SpectatorHUD.BP-SpectatorHUD_C.SetTargetPlayerInfo");
 
 	struct SetTargetPlayerInfo_Params {
-		struct Unknown PlayerState;
+		struct ABravoHotelPlayerState PlayerState;
 	}; SetTargetPlayerInfo_Params Params;
 
 	Params.PlayerState = PlayerState;
@@ -127,12 +127,12 @@ inline void UBP-SpectatorHUD_C::SetTargetPlayerInfo(struct Unknown PlayerState) 
 }
 
 // Function BP-SpectatorHUD.BP-SpectatorHUD_C.GetVisibility_1
-inline enum class Unknow UBP-SpectatorHUD_C::GetVisibility_1() {
+inline enum class ESlateVisibility UBP-SpectatorHUD_C::GetVisibility_1() {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-SpectatorHUD.BP-SpectatorHUD_C.GetVisibility_1");
 
 	struct GetVisibility_1_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class ESlateVisibility ReturnValue;
 
 	}; GetVisibility_1_Params Params;
 
@@ -193,11 +193,11 @@ inline void UBP-SpectatorHUD_C::SetTargetBtn(char bVisiable) {
 }
 
 // Function BP-SpectatorHUD.BP-SpectatorHUD_C.AddCoreInfoRouteping
-inline void UBP-SpectatorHUD_C::AddCoreInfoRouteping(struct Unknown PlayerState) {
+inline void UBP-SpectatorHUD_C::AddCoreInfoRouteping(struct ABravoHotelPlayerState PlayerState) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-SpectatorHUD.BP-SpectatorHUD_C.AddCoreInfoRouteping");
 
 	struct AddCoreInfoRouteping_Params {
-		struct Unknown PlayerState;
+		struct ABravoHotelPlayerState PlayerState;
 	}; AddCoreInfoRouteping_Params Params;
 
 	Params.PlayerState = PlayerState;
@@ -208,11 +208,11 @@ inline void UBP-SpectatorHUD_C::AddCoreInfoRouteping(struct Unknown PlayerState)
 }
 
 // Function BP-SpectatorHUD.BP-SpectatorHUD_C.AddCoreInfoSmartping
-inline void UBP-SpectatorHUD_C::AddCoreInfoSmartping(struct Unknown PlayerState) {
+inline void UBP-SpectatorHUD_C::AddCoreInfoSmartping(struct ABravoHotelPlayerState PlayerState) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-SpectatorHUD.BP-SpectatorHUD_C.AddCoreInfoSmartping");
 
 	struct AddCoreInfoSmartping_Params {
-		struct Unknown PlayerState;
+		struct ABravoHotelPlayerState PlayerState;
 	}; AddCoreInfoSmartping_Params Params;
 
 	Params.PlayerState = PlayerState;
@@ -547,11 +547,11 @@ inline void UBP-SpectatorHUD_C::AddPingMessage(struct FString MessageTag, char U
 }
 
 // Function BP-SpectatorHUD.BP-SpectatorHUD_C.AddRequestMessage
-inline void UBP-SpectatorHUD_C::AddRequestMessage(struct Unknown PlayerState, struct FString Message) {
+inline void UBP-SpectatorHUD_C::AddRequestMessage(struct ABravoHotelPlayerState PlayerState, struct FString Message) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-SpectatorHUD.BP-SpectatorHUD_C.AddRequestMessage");
 
 	struct AddRequestMessage_Params {
-		struct Unknown PlayerState;
+		struct ABravoHotelPlayerState PlayerState;
 		struct FString Message;
 	}; AddRequestMessage_Params Params;
 
@@ -578,11 +578,11 @@ inline void UBP-SpectatorHUD_C::Close() {
 }
 
 // Function BP-SpectatorHUD.BP-SpectatorHUD_C.FinishPerkSpin
-inline void UBP-SpectatorHUD_C::FinishPerkSpin(enum class Unknow LevelUpType) {
+inline void UBP-SpectatorHUD_C::FinishPerkSpin(enum class EPerkLevelUpType LevelUpType) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-SpectatorHUD.BP-SpectatorHUD_C.FinishPerkSpin");
 
 	struct FinishPerkSpin_Params {
-		enum class Unknow LevelUpType;
+		enum class EPerkLevelUpType LevelUpType;
 	}; FinishPerkSpin_Params Params;
 
 	Params.LevelUpType = LevelUpType;
@@ -663,14 +663,14 @@ inline void UBP-SpectatorHUD_C::HideVehicleWidget() {
 }
 
 // Function BP-SpectatorHUD.BP-SpectatorHUD_C.LevelUpEvent
-inline void UBP-SpectatorHUD_C::LevelUpEvent(struct Unknown PerkInfo, int32_t CurrentLevel, enum class Unknow LevelUpType, struct Unknown DisplayAbility, int32_t LastLevel) {
+inline void UBP-SpectatorHUD_C::LevelUpEvent(struct FPerkUIInfo PerkInfo, int32_t CurrentLevel, enum class EPerkLevelUpType LevelUpType, struct FDisplayAbility DisplayAbility, int32_t LastLevel) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-SpectatorHUD.BP-SpectatorHUD_C.LevelUpEvent");
 
 	struct LevelUpEvent_Params {
-		struct Unknown PerkInfo;
+		struct FPerkUIInfo PerkInfo;
 		int32_t CurrentLevel;
-		enum class Unknow LevelUpType;
-		struct Unknown DisplayAbility;
+		enum class EPerkLevelUpType LevelUpType;
+		struct FDisplayAbility DisplayAbility;
 		int32_t LastLevel;
 	}; LevelUpEvent_Params Params;
 
@@ -686,12 +686,12 @@ inline void UBP-SpectatorHUD_C::LevelUpEvent(struct Unknown PerkInfo, int32_t Cu
 }
 
 // Function BP-SpectatorHUD.BP-SpectatorHUD_C.OnChangedToggleType
-inline void UBP-SpectatorHUD_C::OnChangedToggleType(enum class Unknow PreType, enum class Unknow CurrentType) {
+inline void UBP-SpectatorHUD_C::OnChangedToggleType(enum class EToggleWidgetModeType PreType, enum class EToggleWidgetModeType CurrentType) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-SpectatorHUD.BP-SpectatorHUD_C.OnChangedToggleType");
 
 	struct OnChangedToggleType_Params {
-		enum class Unknow PreType;
-		enum class Unknow CurrentType;
+		enum class EToggleWidgetModeType PreType;
+		enum class EToggleWidgetModeType CurrentType;
 	}; OnChangedToggleType_Params Params;
 
 	Params.PreType = PreType;
@@ -838,11 +838,11 @@ inline void UBP-SpectatorHUD_C::ShowBlueZoneNotiMessage(struct FString Title, st
 }
 
 // Function BP-SpectatorHUD.BP-SpectatorHUD_C.ShowCommonMessage
-inline void UBP-SpectatorHUD_C::ShowCommonMessage(struct Unknown& MessageInfo) {
+inline void UBP-SpectatorHUD_C::ShowCommonMessage(struct FCommonMessageInfo& MessageInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-SpectatorHUD.BP-SpectatorHUD_C.ShowCommonMessage");
 
 	struct ShowCommonMessage_Params {
-		struct Unknown& MessageInfo;
+		struct FCommonMessageInfo& MessageInfo;
 	}; ShowCommonMessage_Params Params;
 
 
@@ -874,11 +874,11 @@ inline void UBP-SpectatorHUD_C::ShowDeathAndAliveMessage(struct FText& Victim, i
 }
 
 // Function BP-SpectatorHUD.BP-SpectatorHUD_C.ShowDeathUserWidget
-inline void UBP-SpectatorHUD_C::ShowDeathUserWidget(struct Unknown& Info) {
+inline void UBP-SpectatorHUD_C::ShowDeathUserWidget(struct FKillBroadcastUIInfo& Info) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-SpectatorHUD.BP-SpectatorHUD_C.ShowDeathUserWidget");
 
 	struct ShowDeathUserWidget_Params {
-		struct Unknown& Info;
+		struct FKillBroadcastUIInfo& Info;
 	}; ShowDeathUserWidget_Params Params;
 
 
@@ -938,11 +938,11 @@ inline void UBP-SpectatorHUD_C::ShowGameWaitMessage(int32_t Time) {
 }
 
 // Function BP-SpectatorHUD.BP-SpectatorHUD_C.ShowHittedDamage
-inline void UBP-SpectatorHUD_C::ShowHittedDamage(struct Unknown InstigatorCharacter) {
+inline void UBP-SpectatorHUD_C::ShowHittedDamage(struct ABravoHotelCharacter InstigatorCharacter) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-SpectatorHUD.BP-SpectatorHUD_C.ShowHittedDamage");
 
 	struct ShowHittedDamage_Params {
-		struct Unknown InstigatorCharacter;
+		struct ABravoHotelCharacter InstigatorCharacter;
 	}; ShowHittedDamage_Params Params;
 
 	Params.InstigatorCharacter = InstigatorCharacter;
@@ -967,11 +967,11 @@ inline void UBP-SpectatorHUD_C::ShowInventoryNotEnoughSpaceMessage() {
 }
 
 // Function BP-SpectatorHUD.BP-SpectatorHUD_C.ShowLineOfFire
-inline void UBP-SpectatorHUD_C::ShowLineOfFire(struct Unknown& Pos) {
+inline void UBP-SpectatorHUD_C::ShowLineOfFire(struct FVector2D& Pos) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-SpectatorHUD.BP-SpectatorHUD_C.ShowLineOfFire");
 
 	struct ShowLineOfFire_Params {
-		struct Unknown& Pos;
+		struct FVector2D& Pos;
 	}; ShowLineOfFire_Params Params;
 
 
@@ -1091,13 +1091,13 @@ inline void UBP-SpectatorHUD_C::ShowRedZoneStartMessage() {
 }
 
 // Function BP-SpectatorHUD.BP-SpectatorHUD_C.ShowReverseSideTeamPositionWidget
-inline void UBP-SpectatorHUD_C::ShowReverseSideTeamPositionWidget(int32_t TeamIconIndex, float Angle, struct Unknown ScreenMaxSize) {
+inline void UBP-SpectatorHUD_C::ShowReverseSideTeamPositionWidget(int32_t TeamIconIndex, float Angle, struct FVector2D ScreenMaxSize) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-SpectatorHUD.BP-SpectatorHUD_C.ShowReverseSideTeamPositionWidget");
 
 	struct ShowReverseSideTeamPositionWidget_Params {
 		int32_t TeamIconIndex;
 		float Angle;
-		struct Unknown ScreenMaxSize;
+		struct FVector2D ScreenMaxSize;
 	}; ShowReverseSideTeamPositionWidget_Params Params;
 
 	Params.TeamIconIndex = TeamIconIndex;
@@ -1110,12 +1110,12 @@ inline void UBP-SpectatorHUD_C::ShowReverseSideTeamPositionWidget(int32_t TeamIc
 }
 
 // Function BP-SpectatorHUD.BP-SpectatorHUD_C.ShowTeamPositionWidget
-inline void UBP-SpectatorHUD_C::ShowTeamPositionWidget(int32_t TeamIndex, struct Unknown ScreenPosition, char bNetCullDistance) {
+inline void UBP-SpectatorHUD_C::ShowTeamPositionWidget(int32_t TeamIndex, struct FVector2D ScreenPosition, char bNetCullDistance) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-SpectatorHUD.BP-SpectatorHUD_C.ShowTeamPositionWidget");
 
 	struct ShowTeamPositionWidget_Params {
 		int32_t TeamIndex;
-		struct Unknown ScreenPosition;
+		struct FVector2D ScreenPosition;
 		char bNetCullDistance;
 	}; ShowTeamPositionWidget_Params Params;
 
@@ -1129,11 +1129,11 @@ inline void UBP-SpectatorHUD_C::ShowTeamPositionWidget(int32_t TeamIndex, struct
 }
 
 // Function BP-SpectatorHUD.BP-SpectatorHUD_C.ShowVehicleWidget
-inline void UBP-SpectatorHUD_C::ShowVehicleWidget(struct Unknown VehicleSeat) {
+inline void UBP-SpectatorHUD_C::ShowVehicleWidget(struct UBravoHotelVehicleSeatComponent VehicleSeat) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-SpectatorHUD.BP-SpectatorHUD_C.ShowVehicleWidget");
 
 	struct ShowVehicleWidget_Params {
-		struct Unknown VehicleSeat;
+		struct UBravoHotelVehicleSeatComponent VehicleSeat;
 	}; ShowVehicleWidget_Params Params;
 
 	Params.VehicleSeat = VehicleSeat;
@@ -1173,11 +1173,11 @@ inline void UBP-SpectatorHUD_C::ToggleMiniMap() {
 }
 
 // Function BP-SpectatorHUD.BP-SpectatorHUD_C.UpdateLineOfFire
-inline void UBP-SpectatorHUD_C::UpdateLineOfFire(struct Unknown& Pos, char LastUpdate, float delataTime) {
+inline void UBP-SpectatorHUD_C::UpdateLineOfFire(struct FVector2D& Pos, char LastUpdate, float delataTime) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-SpectatorHUD.BP-SpectatorHUD_C.UpdateLineOfFire");
 
 	struct UpdateLineOfFire_Params {
-		struct Unknown& Pos;
+		struct FVector2D& Pos;
 		char LastUpdate;
 		float delataTime;
 	}; UpdateLineOfFire_Params Params;
@@ -1306,11 +1306,11 @@ inline void UBP-SpectatorHUD_C::BndEvt__Button_Return_K2Node_ComponentBoundEvent
 }
 
 // Function BP-SpectatorHUD.BP-SpectatorHUD_C.AddCoreInfoRequestResuscitation
-inline void UBP-SpectatorHUD_C::AddCoreInfoRequestResuscitation(struct Unknown PlayerState) {
+inline void UBP-SpectatorHUD_C::AddCoreInfoRequestResuscitation(struct ABravoHotelPlayerState PlayerState) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-SpectatorHUD.BP-SpectatorHUD_C.AddCoreInfoRequestResuscitation");
 
 	struct AddCoreInfoRequestResuscitation_Params {
-		struct Unknown PlayerState;
+		struct ABravoHotelPlayerState PlayerState;
 	}; AddCoreInfoRequestResuscitation_Params Params;
 
 	Params.PlayerState = PlayerState;

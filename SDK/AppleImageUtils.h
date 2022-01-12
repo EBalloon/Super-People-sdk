@@ -24,31 +24,31 @@ public:
 
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x40 (16)
-	struct Unknown ConversionResult; // 0x60 (32)
+	struct FAppleImageUtilsImageConversionResult ConversionResult; // 0x60 (32)
 
-	struct Unknown CreateProxyObjectForConvertToTIFF(struct Unknown SourceImage, char bWantColor, char bUseGpu, float Scale, enum class Unknow Rotate); // Function AppleImageUtils.AppleImageUtilsBaseAsyncTaskBlueprintProxy.CreateProxyObjectForConvertToTIFF(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x1864C30>
-	struct Unknown CreateProxyObjectForConvertToPNG(struct Unknown SourceImage, char bWantColor, char bUseGpu, float Scale, enum class Unknow Rotate); // Function AppleImageUtils.AppleImageUtilsBaseAsyncTaskBlueprintProxy.CreateProxyObjectForConvertToPNG(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x1864A90>
-	struct Unknown CreateProxyObjectForConvertToJPEG(struct Unknown SourceImage, int32_t Quality, char bWantColor, char bUseGpu, float Scale, enum class Unknow Rotate); // Function AppleImageUtils.AppleImageUtilsBaseAsyncTaskBlueprintProxy.CreateProxyObjectForConvertToJPEG(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x18648C0>
-	struct Unknown CreateProxyObjectForConvertToHEIF(struct Unknown SourceImage, int32_t Quality, char bWantColor, char bUseGpu, float Scale, enum class Unknow Rotate); // Function AppleImageUtils.AppleImageUtilsBaseAsyncTaskBlueprintProxy.CreateProxyObjectForConvertToHEIF(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x18646F0>
+	struct UAppleImageUtilsBaseAsyncTaskBlueprintProxy CreateProxyObjectForConvertToTIFF(struct UTexture SourceImage, char bWantColor, char bUseGpu, float Scale, enum class ETextureRotationDirection Rotate); // Function AppleImageUtils.AppleImageUtilsBaseAsyncTaskBlueprintProxy.CreateProxyObjectForConvertToTIFF(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x1864C30>
+	struct UAppleImageUtilsBaseAsyncTaskBlueprintProxy CreateProxyObjectForConvertToPNG(struct UTexture SourceImage, char bWantColor, char bUseGpu, float Scale, enum class ETextureRotationDirection Rotate); // Function AppleImageUtils.AppleImageUtilsBaseAsyncTaskBlueprintProxy.CreateProxyObjectForConvertToPNG(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x1864A90>
+	struct UAppleImageUtilsBaseAsyncTaskBlueprintProxy CreateProxyObjectForConvertToJPEG(struct UTexture SourceImage, int32_t Quality, char bWantColor, char bUseGpu, float Scale, enum class ETextureRotationDirection Rotate); // Function AppleImageUtils.AppleImageUtilsBaseAsyncTaskBlueprintProxy.CreateProxyObjectForConvertToJPEG(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x18648C0>
+	struct UAppleImageUtilsBaseAsyncTaskBlueprintProxy CreateProxyObjectForConvertToHEIF(struct UTexture SourceImage, int32_t Quality, char bWantColor, char bUseGpu, float Scale, enum class ETextureRotationDirection Rotate); // Function AppleImageUtils.AppleImageUtilsBaseAsyncTaskBlueprintProxy.CreateProxyObjectForConvertToHEIF(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x18646F0>
 };
 
 // ScriptStruct AppleImageUtils.AppleImageUtilsImageConversionResult
 struct FAppleImageUtilsImageConversionResult {
 	struct FString Error; // 0x0 (16)
-	struct TArray<Unknown> ImageData; // 0x10 (16)
+	struct TArray<char> ImageData; // 0x10 (16)
 };
 
 // Function AppleImageUtils.AppleImageUtilsBaseAsyncTaskBlueprintProxy.CreateProxyObjectForConvertToTIFF
-inline struct Unknown UAppleImageUtilsBaseAsyncTaskBlueprintProxy::CreateProxyObjectForConvertToTIFF(struct Unknown SourceImage, char bWantColor, char bUseGpu, float Scale, enum class Unknow Rotate) {
+inline struct UAppleImageUtilsBaseAsyncTaskBlueprintProxy UAppleImageUtilsBaseAsyncTaskBlueprintProxy::CreateProxyObjectForConvertToTIFF(struct UTexture SourceImage, char bWantColor, char bUseGpu, float Scale, enum class ETextureRotationDirection Rotate) {
 	static auto fn = UObject::FindObject<UFunction>("Function AppleImageUtils.AppleImageUtilsBaseAsyncTaskBlueprintProxy.CreateProxyObjectForConvertToTIFF");
 
 	struct CreateProxyObjectForConvertToTIFF_Params {
-		struct Unknown SourceImage;
+		struct UTexture SourceImage;
 		char bWantColor;
 		char bUseGpu;
 		float Scale;
-		enum class Unknow Rotate;
-		struct Unknown ReturnValue;
+		enum class ETextureRotationDirection Rotate;
+		struct UAppleImageUtilsBaseAsyncTaskBlueprintProxy ReturnValue;
 
 	}; CreateProxyObjectForConvertToTIFF_Params Params;
 
@@ -66,16 +66,16 @@ inline struct Unknown UAppleImageUtilsBaseAsyncTaskBlueprintProxy::CreateProxyOb
 }
 
 // Function AppleImageUtils.AppleImageUtilsBaseAsyncTaskBlueprintProxy.CreateProxyObjectForConvertToPNG
-inline struct Unknown UAppleImageUtilsBaseAsyncTaskBlueprintProxy::CreateProxyObjectForConvertToPNG(struct Unknown SourceImage, char bWantColor, char bUseGpu, float Scale, enum class Unknow Rotate) {
+inline struct UAppleImageUtilsBaseAsyncTaskBlueprintProxy UAppleImageUtilsBaseAsyncTaskBlueprintProxy::CreateProxyObjectForConvertToPNG(struct UTexture SourceImage, char bWantColor, char bUseGpu, float Scale, enum class ETextureRotationDirection Rotate) {
 	static auto fn = UObject::FindObject<UFunction>("Function AppleImageUtils.AppleImageUtilsBaseAsyncTaskBlueprintProxy.CreateProxyObjectForConvertToPNG");
 
 	struct CreateProxyObjectForConvertToPNG_Params {
-		struct Unknown SourceImage;
+		struct UTexture SourceImage;
 		char bWantColor;
 		char bUseGpu;
 		float Scale;
-		enum class Unknow Rotate;
-		struct Unknown ReturnValue;
+		enum class ETextureRotationDirection Rotate;
+		struct UAppleImageUtilsBaseAsyncTaskBlueprintProxy ReturnValue;
 
 	}; CreateProxyObjectForConvertToPNG_Params Params;
 
@@ -93,17 +93,17 @@ inline struct Unknown UAppleImageUtilsBaseAsyncTaskBlueprintProxy::CreateProxyOb
 }
 
 // Function AppleImageUtils.AppleImageUtilsBaseAsyncTaskBlueprintProxy.CreateProxyObjectForConvertToJPEG
-inline struct Unknown UAppleImageUtilsBaseAsyncTaskBlueprintProxy::CreateProxyObjectForConvertToJPEG(struct Unknown SourceImage, int32_t Quality, char bWantColor, char bUseGpu, float Scale, enum class Unknow Rotate) {
+inline struct UAppleImageUtilsBaseAsyncTaskBlueprintProxy UAppleImageUtilsBaseAsyncTaskBlueprintProxy::CreateProxyObjectForConvertToJPEG(struct UTexture SourceImage, int32_t Quality, char bWantColor, char bUseGpu, float Scale, enum class ETextureRotationDirection Rotate) {
 	static auto fn = UObject::FindObject<UFunction>("Function AppleImageUtils.AppleImageUtilsBaseAsyncTaskBlueprintProxy.CreateProxyObjectForConvertToJPEG");
 
 	struct CreateProxyObjectForConvertToJPEG_Params {
-		struct Unknown SourceImage;
+		struct UTexture SourceImage;
 		int32_t Quality;
 		char bWantColor;
 		char bUseGpu;
 		float Scale;
-		enum class Unknow Rotate;
-		struct Unknown ReturnValue;
+		enum class ETextureRotationDirection Rotate;
+		struct UAppleImageUtilsBaseAsyncTaskBlueprintProxy ReturnValue;
 
 	}; CreateProxyObjectForConvertToJPEG_Params Params;
 
@@ -122,17 +122,17 @@ inline struct Unknown UAppleImageUtilsBaseAsyncTaskBlueprintProxy::CreateProxyOb
 }
 
 // Function AppleImageUtils.AppleImageUtilsBaseAsyncTaskBlueprintProxy.CreateProxyObjectForConvertToHEIF
-inline struct Unknown UAppleImageUtilsBaseAsyncTaskBlueprintProxy::CreateProxyObjectForConvertToHEIF(struct Unknown SourceImage, int32_t Quality, char bWantColor, char bUseGpu, float Scale, enum class Unknow Rotate) {
+inline struct UAppleImageUtilsBaseAsyncTaskBlueprintProxy UAppleImageUtilsBaseAsyncTaskBlueprintProxy::CreateProxyObjectForConvertToHEIF(struct UTexture SourceImage, int32_t Quality, char bWantColor, char bUseGpu, float Scale, enum class ETextureRotationDirection Rotate) {
 	static auto fn = UObject::FindObject<UFunction>("Function AppleImageUtils.AppleImageUtilsBaseAsyncTaskBlueprintProxy.CreateProxyObjectForConvertToHEIF");
 
 	struct CreateProxyObjectForConvertToHEIF_Params {
-		struct Unknown SourceImage;
+		struct UTexture SourceImage;
 		int32_t Quality;
 		char bWantColor;
 		char bUseGpu;
 		float Scale;
-		enum class Unknow Rotate;
-		struct Unknown ReturnValue;
+		enum class ETextureRotationDirection Rotate;
+		struct UAppleImageUtilsBaseAsyncTaskBlueprintProxy ReturnValue;
 
 	}; CreateProxyObjectForConvertToHEIF_Params Params;
 

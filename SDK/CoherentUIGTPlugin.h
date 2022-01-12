@@ -184,8 +184,8 @@ class UCoherentUIGTAudioWrapper : public Object {
 
 public:
 
-	struct Unknown Owner; // 0x28 (8)
-	struct TMap<Unknown, Unknown> Sounds; // 0x30 (80)
+	struct Object Owner; // 0x28 (8)
+	struct TMap<int32_t, struct FCoherentSound> Sounds; // 0x30 (80)
 };
 
 // Class CoherentUIGTPlugin.CoherentUIGTBaseComponent
@@ -202,7 +202,7 @@ public:
 	struct FMulticastInlineDelegate JavaScriptEvent; // 0x110 (16)
 	struct FMulticastInlineDelegate UIGTScriptingReady; // 0x120 (16)
 	struct FDelegate LiveViewSizeRequested; // 0x130 (16)
-	struct Unknown Texture; // 0x158 (8)
+	struct UTextureRenderTarget2D Texture; // 0x158 (8)
 	char Filter; // 0x160 (1)
 	char bReceiveInput : 0; // 0x161 (1)
 	char bReceiveInputWhenTransparent : 0; // 0x162 (1)
@@ -216,11 +216,11 @@ public:
 	int32_t LayerHeightThreshold; // 0x17C (4)
 	char bEnableAdditionalDefaultStyles : 0; // 0x180 (1)
 	char bDelayedUpdate : 0; // 0x181 (1)
-	struct Unknown AudioWrapper; // 0x1F8 (8)
+	struct UCoherentUIGTAudioWrapper AudioWrapper; // 0x1F8 (8)
 
-	void UpdateWholeDataModelFromStruct(struct TFieldPath<FUnknown> Arg); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.UpdateWholeDataModelFromStruct(Final|Native|Public|BlueprintCallable|Const) // <Game_BE.exe+0x1116250>
-	void UpdateWholeDataModelFromObject(struct Unknown Model); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.UpdateWholeDataModelFromObject(Final|Native|Public|BlueprintCallable|Const) // <Game_BE.exe+0x11195C0>
-	void TriggerJSEvent(struct FString Name, struct Unknown eventData); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.TriggerJSEvent(Final|Native|Public|BlueprintCallable|Const) // <Game_BE.exe+0x11192C0>
+	void UpdateWholeDataModelFromStruct(struct TFieldPath<FNone> Arg); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.UpdateWholeDataModelFromStruct(Final|Native|Public|BlueprintCallable|Const) // <Game_BE.exe+0x1116250>
+	void UpdateWholeDataModelFromObject(struct Object Model); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.UpdateWholeDataModelFromObject(Final|Native|Public|BlueprintCallable|Const) // <Game_BE.exe+0x11195C0>
+	void TriggerJSEvent(struct FString Name, struct UCoherentUIGTJSEvent eventData); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.TriggerJSEvent(Final|Native|Public|BlueprintCallable|Const) // <Game_BE.exe+0x11192C0>
 	void SynchronizeModels(); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.SynchronizeModels(Final|Native|Public|BlueprintCallable|Const) // <Game_BE.exe+0x1119280>
 	void ShowPaintRects(char Show); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.ShowPaintRects(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x11191F0>
 	void SetOffscreenCanvasRendering(char State); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.SetOffscreenCanvasRendering(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1118ED0>
@@ -238,9 +238,9 @@ public:
 	void EndDebugFrameSave(); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.EndDebugFrameSave(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1118750>
 	void EnableDelayedUpdate(char bEnabled); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.EnableDelayedUpdate(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x11186C0>
 	void DebugSaveNextFrame(); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.DebugSaveNextFrame(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x11186A0>
-	struct Unknown CreateJSEvent(); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.CreateJSEvent(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x11185F0>
-	void CreateDataModelFromStruct(struct FString Name, struct TFieldPath<FUnknown> Arg); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.CreateDataModelFromStruct(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1115FE0>
-	void CreateDataModelFromObject(struct FString Name, struct Unknown Model); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.CreateDataModelFromObject(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1118510>
+	struct UCoherentUIGTJSEvent CreateJSEvent(); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.CreateJSEvent(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x11185F0>
+	void CreateDataModelFromStruct(struct FString Name, struct TFieldPath<FNone> Arg); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.CreateDataModelFromStruct(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1115FE0>
+	void CreateDataModelFromObject(struct FString Name, struct Object Model); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.CreateDataModelFromObject(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1118510>
 	void BeginDebugFrameSave(); // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.BeginDebugFrameSave(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x11184F0>
 };
 
@@ -262,7 +262,7 @@ class ACoherentUIGTGameHUD : public AHUD {
 
 public:
 
-	struct Unknown CoherentUIGTHUD; // 0x408 (8)
+	struct UCoherentUIGTHUD CoherentUIGTHUD; // 0x408 (8)
 
 	void SetupUIGTView(struct FString PageUrl, char bIsTransparent, float ClickThroughAlphaThreshold, float AnimationFrameDefer, char bDelayedUpdate); // Function CoherentUIGTPlugin.CoherentUIGTGameHUD.SetupUIGTView(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1119040>
 	char HasSetupUIGTView(); // Function CoherentUIGTPlugin.CoherentUIGTGameHUD.HasSetupUIGTView(Final|RequiredAPI|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1118800>
@@ -273,9 +273,9 @@ class UCoherentUIGTHUD : public UCoherentUIGTBaseComponent {
 
 public:
 
-	struct Unknown HUDMaterialName; // 0x230 (24)
-	struct Unknown HUDMaterial; // 0x248 (8)
-	struct Unknown HUDMaterialInstance; // 0x250 (8)
+	struct FSoftObjectPath HUDMaterialName; // 0x230 (24)
+	struct UMaterial HUDMaterial; // 0x248 (8)
+	struct UMaterialInstanceDynamic HUDMaterialInstance; // 0x250 (8)
 };
 
 // Class CoherentUIGTPlugin.CoherentUIGTInputActor
@@ -291,7 +291,7 @@ public:
 	void ToggleCoherentUIGTInputFocus(); // Function CoherentUIGTPlugin.CoherentUIGTInputActor.ToggleCoherentUIGTInputFocus(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x11192A0>
 	void SetLineTraceMode(char Mode); // Function CoherentUIGTPlugin.CoherentUIGTInputActor.SetLineTraceMode(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1118E50>
 	void SetInputPropagationBehaviour(char Propagation); // Function CoherentUIGTPlugin.CoherentUIGTInputActor.SetInputPropagationBehaviour(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1118DD0>
-	void SetCoherentUIGTViewFocus(struct Unknown NewFocusedView); // Function CoherentUIGTPlugin.CoherentUIGTInputActor.SetCoherentUIGTViewFocus(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1118D50>
+	void SetCoherentUIGTViewFocus(struct UCoherentUIGTBaseComponent NewFocusedView); // Function CoherentUIGTPlugin.CoherentUIGTInputActor.SetCoherentUIGTViewFocus(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1118D50>
 	void SetCoherentUIGTInputFocus(char FocusUI); // Function CoherentUIGTPlugin.CoherentUIGTInputActor.SetCoherentUIGTInputFocus(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1118CC0>
 	char IsJoystickInputWhileUIGTIsFocusedAllowed_DEPRECATED(); // Function CoherentUIGTPlugin.CoherentUIGTInputActor.IsJoystickInputWhileUIGTIsFocusedAllowed_DEPRECATED(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x11189E0>
 	char IsCoherentUIGTFocused(); // Function CoherentUIGTPlugin.CoherentUIGTInputActor.IsCoherentUIGTFocused(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1118980>
@@ -306,18 +306,18 @@ class UCoherentUIGTJSEvent : public Object {
 
 public:
 
-	struct TArray<Unknown> StructTypes; // 0xA8 (16)
+	struct TArray<struct UStruct> StructTypes; // 0xA8 (16)
 
 	void AddText(struct FText& Text); // Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddText(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x111C070>
-	void AddStructArg(struct TFieldPath<FUnknown> Arg); // Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddStructArg(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1115F30>
+	void AddStructArg(struct TFieldPath<FNone> Arg); // Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddStructArg(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1115F30>
 	void AddString(struct FString Str); // Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddString(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111BFD0>
-	void AddObject(struct Unknown Object); // Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddObject(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111BF50>
+	void AddObject(struct Object Object); // Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddObject(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111BF50>
 	void AddName(struct FName& Name); // Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddName(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x111BEC0>
 	void AddInt32(int32_t integer); // Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddInt32(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111BE40>
 	void AddFloat(float fl); // Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddFloat(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111BDC0>
 	void AddByte(enum class None Byte); // Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddByte(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111BD40>
 	void AddBool(char B); // Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddBool(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111BCB0>
-	void AddArray(struct TArray<Unknown>& Array); // Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddArray(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1115B80>
+	void AddArray(struct TArray<int32_t>& Array); // Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddArray(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1115B80>
 };
 
 // Class CoherentUIGTPlugin.CoherentUIGTJSPayload
@@ -327,7 +327,7 @@ public:
 
 	struct FString EventName; // 0x28 (16)
 
-	void ReadObject(int32_t Index, struct Unknown Object); // Function CoherentUIGTPlugin.CoherentUIGTJSPayload.ReadObject(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111C9C0>
+	void ReadObject(int32_t Index, struct Object Object); // Function CoherentUIGTPlugin.CoherentUIGTJSPayload.ReadObject(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111C9C0>
 	struct FString GetString(int32_t Index); // Function CoherentUIGTPlugin.CoherentUIGTJSPayload.GetString(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111C5C0>
 	float GetNumber(int32_t Index); // Function CoherentUIGTPlugin.CoherentUIGTJSPayload.GetNumber(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111C500>
 	int32_t GetInt32(int32_t Index); // Function CoherentUIGTPlugin.CoherentUIGTJSPayload.GetInt32(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111C470>
@@ -340,9 +340,9 @@ class UCoherentUIGTLiveView : public UActorComponent {
 public:
 
 	struct FString LinkName; // 0xB0 (16)
-	struct Unknown Texture; // 0xC0 (8)
+	struct UTextureRenderTarget2D Texture; // 0xC0 (8)
 
-	void OnLiveViewSizeRequest(struct Unknown baseComponent, struct FString Name, int32_t& Width, int32_t& Height); // Function CoherentUIGTPlugin.CoherentUIGTLiveView.OnLiveViewSizeRequest(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x111C830>
+	void OnLiveViewSizeRequest(struct UCoherentUIGTBaseComponent baseComponent, struct FString Name, int32_t& Width, int32_t& Height); // Function CoherentUIGTPlugin.CoherentUIGTLiveView.OnLiveViewSizeRequest(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x111C830>
 };
 
 // Class CoherentUIGTPlugin.CoherentUIGTSettings
@@ -358,7 +358,7 @@ public:
 	char RunAsynchronous : 0; // 0x36 (1)
 	char AllowPerformanceWarningsInEditor : 0; // 0x37 (1)
 	char ShowWarningsOnScreen : 0; // 0x38 (1)
-	enum class Unknow LogSeverity; // 0x39 (1)
+	enum class ECoherentUIGTSettingsSeverity LogSeverity; // 0x39 (1)
 	char bPaintToBackBuffer : 0; // 0x3A (1)
 	char bRespectTitleSafeZone : 0; // 0x3B (1)
 	char bRespectLetterboxing : 0; // 0x3C (1)
@@ -366,7 +366,7 @@ public:
 	struct FString CoUIResourcesRoot; // 0x50 (16)
 	char TickWhileGameIsPaused : 0; // 0x60 (1)
 	char bUseLowerCaseNamesForAutoExposedProperties : 0; // 0x61 (1)
-	enum class Unknow MSAA; // 0x62 (1)
+	enum class ECoherentUIGTMSAA MSAA; // 0x62 (1)
 	struct FString CookiesResource; // 0x68 (16)
 	struct FString LocalStorageFolder; // 0x78 (16)
 	char UseCacheFile : 0; // 0x88 (1)
@@ -378,7 +378,7 @@ class UCoherentUIGTWidget : public UWidget {
 
 public:
 
-	struct Unknown Owner; // 0x120 (8)
+	struct UActor Owner; // 0x120 (8)
 	struct FMulticastInlineDelegate ReadyForBindings; // 0x128 (16)
 	struct FMulticastInlineDelegate BindingsReleased; // 0x138 (16)
 	struct FMulticastInlineDelegate FinishLoad; // 0x148 (16)
@@ -406,15 +406,15 @@ public:
 	int32_t LayerWidthThreshold; // 0x224 (4)
 	int32_t LayerHeightThreshold; // 0x228 (4)
 	char bEnableAdditionalDefaultStyles : 0; // 0x22C (1)
-	struct Unknown AudioWrapper; // 0x2C0 (8)
+	struct UCoherentUIGTAudioWrapper AudioWrapper; // 0x2C0 (8)
 	struct FString URL; // 0x348 (16)
 	float ClickThroughAlphaThreshold; // 0x358 (4)
 	char OffscreenCanvasRendering : 0; // 0x35C (1)
 	char Transparent : 0; // 0x35D (1)
 
-	void UpdateWholeDataModelFromStruct(struct TFieldPath<FUnknown> Arg); // Function CoherentUIGTPlugin.CoherentUIGTWidget.UpdateWholeDataModelFromStruct(Final|Native|Public|BlueprintCallable|Const) // <Game_BE.exe+0x1116320>
-	void UpdateWholeDataModelFromObject(struct Unknown Model); // Function CoherentUIGTPlugin.CoherentUIGTWidget.UpdateWholeDataModelFromObject(Final|Native|Public|BlueprintCallable|Const) // <Game_BE.exe+0x111D130>
-	void TriggerJSEvent(struct FString Name, struct Unknown eventData); // Function CoherentUIGTPlugin.CoherentUIGTWidget.TriggerJSEvent(Final|Native|Public|BlueprintCallable|Const) // <Game_BE.exe+0x111D050>
+	void UpdateWholeDataModelFromStruct(struct TFieldPath<FNone> Arg); // Function CoherentUIGTPlugin.CoherentUIGTWidget.UpdateWholeDataModelFromStruct(Final|Native|Public|BlueprintCallable|Const) // <Game_BE.exe+0x1116320>
+	void UpdateWholeDataModelFromObject(struct Object Model); // Function CoherentUIGTPlugin.CoherentUIGTWidget.UpdateWholeDataModelFromObject(Final|Native|Public|BlueprintCallable|Const) // <Game_BE.exe+0x111D130>
+	void TriggerJSEvent(struct FString Name, struct UCoherentUIGTJSEvent eventData); // Function CoherentUIGTPlugin.CoherentUIGTWidget.TriggerJSEvent(Final|Native|Public|BlueprintCallable|Const) // <Game_BE.exe+0x111D050>
 	void SynchronizeModels(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.SynchronizeModels(Final|Native|Public|BlueprintCallable|Const) // <Game_BE.exe+0x111D030>
 	void ShowPaintRects(char Show); // Function CoherentUIGTPlugin.CoherentUIGTWidget.ShowPaintRects(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111CFA0>
 	void SetSkipHittestInputGroupEmpty(char bState); // Function CoherentUIGTPlugin.CoherentUIGTWidget.SetSkipHittestInputGroupEmpty(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111CF10>
@@ -428,35 +428,35 @@ public:
 	void SetClickThroughAlphaThreshold(float threshold); // Function CoherentUIGTPlugin.CoherentUIGTWidget.SetClickThroughAlphaThreshold(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111CAC0>
 	void Reload(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.Reload(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111CAA0>
 	void Redraw(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.Redraw(Final|Native|Public|BlueprintCallable|Const) // <Game_BE.exe+0x111CA80>
-	void MouseEventDelegate__DelegateSignature(struct Unknown& MouseEvent); // DelegateFunction CoherentUIGTPlugin.CoherentUIGTWidget.MouseEventDelegate__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <Game_BE.exe+0x2B80160>
+	void MouseEventDelegate__DelegateSignature(struct FCoh_MouseEventData& MouseEvent); // DelegateFunction CoherentUIGTPlugin.CoherentUIGTWidget.MouseEventDelegate__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <Game_BE.exe+0x2B80160>
 	void Load(struct FString Path); // Function CoherentUIGTPlugin.CoherentUIGTWidget.Load(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111C790>
-	void KeyUpDelegate__DelegateSignature(struct Unknown& Key); // DelegateFunction CoherentUIGTPlugin.CoherentUIGTWidget.KeyUpDelegate__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <Game_BE.exe+0x2B80160>
-	void KeyDownDelegate__DelegateSignature(struct Unknown& Key); // DelegateFunction CoherentUIGTPlugin.CoherentUIGTWidget.KeyDownDelegate__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <Game_BE.exe+0x2B80160>
+	void KeyUpDelegate__DelegateSignature(struct FKey& Key); // DelegateFunction CoherentUIGTPlugin.CoherentUIGTWidget.KeyUpDelegate__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <Game_BE.exe+0x2B80160>
+	void KeyDownDelegate__DelegateSignature(struct FKey& Key); // DelegateFunction CoherentUIGTPlugin.CoherentUIGTWidget.KeyDownDelegate__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <Game_BE.exe+0x2B80160>
 	char IsTransparent(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.IsTransparent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x111C760>
 	char IsReadyToCreateView(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.IsReadyToCreateView(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1118A40>
 	char IsReadyForBindings(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.IsReadyForBindings(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x111C730>
 	char IsErrorPage(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.IsErrorPage(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111C700>
 	char IsDocumentReady(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.IsDocumentReady(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x111C6D0>
 	char HasRequestedView(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.HasRequestedView(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x111C6A0>
-	struct Unknown GetRenderTexture(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.GetRenderTexture(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x111C590>
+	struct UTextureRenderTarget2D GetRenderTexture(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.GetRenderTexture(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x111C590>
 	char GetInputPropagationBehaviour(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.GetInputPropagationBehaviour(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x111C440>
-	struct Unknown GetDPIScaleSize(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.GetDPIScaleSize(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x111C400>
+	struct FIntPoint GetDPIScaleSize(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.GetDPIScaleSize(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x111C400>
 	float GetDPIScaleBasedOnSize(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.GetDPIScaleBasedOnSize(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x111C3D0>
 	float GetClickThroughAlphaThreshold(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.GetClickThroughAlphaThreshold(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x111C3A0>
 	void FinishLoadSkip(char bState); // Function CoherentUIGTPlugin.CoherentUIGTWidget.FinishLoadSkip(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111C280>
 	void EndDebugFrameSave(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.EndDebugFrameSave(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111C260>
 	void DebugSaveNextFrame(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.DebugSaveNextFrame(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111C240>
-	struct Unknown CreateJSEvent(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.CreateJSEvent(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x11185F0>
-	void CreateDataModelFromStruct(struct FString Name, struct TFieldPath<FUnknown> Arg); // Function CoherentUIGTPlugin.CoherentUIGTWidget.CreateDataModelFromStruct(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1116100>
-	void CreateDataModelFromObject(struct FString Name, struct Unknown Model); // Function CoherentUIGTPlugin.CoherentUIGTWidget.CreateDataModelFromObject(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111C160>
+	struct UCoherentUIGTJSEvent CreateJSEvent(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.CreateJSEvent(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x11185F0>
+	void CreateDataModelFromStruct(struct FString Name, struct TFieldPath<FNone> Arg); // Function CoherentUIGTPlugin.CoherentUIGTWidget.CreateDataModelFromStruct(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1116100>
+	void CreateDataModelFromObject(struct FString Name, struct Object Model); // Function CoherentUIGTPlugin.CoherentUIGTWidget.CreateDataModelFromObject(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111C160>
 	void BeginDebugFrameSave(); // Function CoherentUIGTPlugin.CoherentUIGTWidget.BeginDebugFrameSave(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x111C140>
 	void AKAudioEventDelegate__DelegateSignature(struct FString EventName); // DelegateFunction CoherentUIGTPlugin.CoherentUIGTWidget.AKAudioEventDelegate__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B80160>
 };
 
 // ScriptStruct CoherentUIGTPlugin.Coh_MouseEventData
 struct FCoh_MouseEventData {
-	enum class Unknow Type; // 0x0 (1)
-	enum class Unknow Button; // 0x1 (1)
+	enum class ECoh_EventType Type; // 0x0 (1)
+	enum class ECoh_MouseButton Button; // 0x1 (1)
 	int32_t X; // 0x4 (4)
 	int32_t Y; // 0x8 (4)
 	float WheelX; // 0xC (4)
@@ -467,8 +467,8 @@ struct FCoh_MouseEventData {
 
 // ScriptStruct CoherentUIGTPlugin.CoherentSound
 struct FCoherentSound {
-	struct Unknown Component; // 0x0 (8)
-	struct Unknown Stream; // 0x8 (8)
+	struct UAudioComponent Component; // 0x0 (8)
+	struct USoundWaveProcedural Stream; // 0x8 (8)
 };
 
 // ScriptStruct CoherentUIGTPlugin.CoherentUIGTLoadingScreenSettings
@@ -498,11 +498,11 @@ struct FCoh_PrivateInfo {
 };
 
 // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.UpdateWholeDataModelFromStruct
-inline void UCoherentUIGTBaseComponent::UpdateWholeDataModelFromStruct(struct TFieldPath<FUnknown> Arg) {
+inline void UCoherentUIGTBaseComponent::UpdateWholeDataModelFromStruct(struct TFieldPath<FNone> Arg) {
 	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.UpdateWholeDataModelFromStruct");
 
 	struct UpdateWholeDataModelFromStruct_Params {
-		struct TFieldPath<FUnknown> Arg;
+		struct TFieldPath<FNone> Arg;
 	}; UpdateWholeDataModelFromStruct_Params Params;
 
 	Params.Arg = Arg;
@@ -513,11 +513,11 @@ inline void UCoherentUIGTBaseComponent::UpdateWholeDataModelFromStruct(struct TF
 }
 
 // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.UpdateWholeDataModelFromObject
-inline void UCoherentUIGTBaseComponent::UpdateWholeDataModelFromObject(struct Unknown Model) {
+inline void UCoherentUIGTBaseComponent::UpdateWholeDataModelFromObject(struct Object Model) {
 	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.UpdateWholeDataModelFromObject");
 
 	struct UpdateWholeDataModelFromObject_Params {
-		struct Unknown Model;
+		struct Object Model;
 	}; UpdateWholeDataModelFromObject_Params Params;
 
 	Params.Model = Model;
@@ -528,12 +528,12 @@ inline void UCoherentUIGTBaseComponent::UpdateWholeDataModelFromObject(struct Un
 }
 
 // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.TriggerJSEvent
-inline void UCoherentUIGTBaseComponent::TriggerJSEvent(struct FString Name, struct Unknown eventData) {
+inline void UCoherentUIGTBaseComponent::TriggerJSEvent(struct FString Name, struct UCoherentUIGTJSEvent eventData) {
 	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.TriggerJSEvent");
 
 	struct TriggerJSEvent_Params {
 		struct FString Name;
-		struct Unknown eventData;
+		struct UCoherentUIGTJSEvent eventData;
 	}; TriggerJSEvent_Params Params;
 
 	Params.Name = Name;
@@ -815,12 +815,12 @@ inline void UCoherentUIGTBaseComponent::DebugSaveNextFrame() {
 }
 
 // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.CreateJSEvent
-inline struct Unknown UCoherentUIGTBaseComponent::CreateJSEvent() {
+inline struct UCoherentUIGTJSEvent UCoherentUIGTBaseComponent::CreateJSEvent() {
 	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.CreateJSEvent");
 
 	struct CreateJSEvent_Params {
 		
-		struct Unknown ReturnValue;
+		struct UCoherentUIGTJSEvent ReturnValue;
 
 	}; CreateJSEvent_Params Params;
 
@@ -833,12 +833,12 @@ inline struct Unknown UCoherentUIGTBaseComponent::CreateJSEvent() {
 }
 
 // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.CreateDataModelFromStruct
-inline void UCoherentUIGTBaseComponent::CreateDataModelFromStruct(struct FString Name, struct TFieldPath<FUnknown> Arg) {
+inline void UCoherentUIGTBaseComponent::CreateDataModelFromStruct(struct FString Name, struct TFieldPath<FNone> Arg) {
 	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.CreateDataModelFromStruct");
 
 	struct CreateDataModelFromStruct_Params {
 		struct FString Name;
-		struct TFieldPath<FUnknown> Arg;
+		struct TFieldPath<FNone> Arg;
 	}; CreateDataModelFromStruct_Params Params;
 
 	Params.Name = Name;
@@ -850,12 +850,12 @@ inline void UCoherentUIGTBaseComponent::CreateDataModelFromStruct(struct FString
 }
 
 // Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.CreateDataModelFromObject
-inline void UCoherentUIGTBaseComponent::CreateDataModelFromObject(struct FString Name, struct Unknown Model) {
+inline void UCoherentUIGTBaseComponent::CreateDataModelFromObject(struct FString Name, struct Object Model) {
 	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTBaseComponent.CreateDataModelFromObject");
 
 	struct CreateDataModelFromObject_Params {
 		struct FString Name;
-		struct Unknown Model;
+		struct Object Model;
 	}; CreateDataModelFromObject_Params Params;
 
 	Params.Name = Name;
@@ -966,11 +966,11 @@ inline void ACoherentUIGTInputActor::SetInputPropagationBehaviour(char Propagati
 }
 
 // Function CoherentUIGTPlugin.CoherentUIGTInputActor.SetCoherentUIGTViewFocus
-inline void ACoherentUIGTInputActor::SetCoherentUIGTViewFocus(struct Unknown NewFocusedView) {
+inline void ACoherentUIGTInputActor::SetCoherentUIGTViewFocus(struct UCoherentUIGTBaseComponent NewFocusedView) {
 	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTInputActor.SetCoherentUIGTViewFocus");
 
 	struct SetCoherentUIGTViewFocus_Params {
-		struct Unknown NewFocusedView;
+		struct UCoherentUIGTBaseComponent NewFocusedView;
 	}; SetCoherentUIGTViewFocus_Params Params;
 
 	Params.NewFocusedView = NewFocusedView;
@@ -1118,11 +1118,11 @@ inline void UCoherentUIGTJSEvent::AddText(struct FText& Text) {
 }
 
 // Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddStructArg
-inline void UCoherentUIGTJSEvent::AddStructArg(struct TFieldPath<FUnknown> Arg) {
+inline void UCoherentUIGTJSEvent::AddStructArg(struct TFieldPath<FNone> Arg) {
 	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddStructArg");
 
 	struct AddStructArg_Params {
-		struct TFieldPath<FUnknown> Arg;
+		struct TFieldPath<FNone> Arg;
 	}; AddStructArg_Params Params;
 
 	Params.Arg = Arg;
@@ -1148,11 +1148,11 @@ inline void UCoherentUIGTJSEvent::AddString(struct FString Str) {
 }
 
 // Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddObject
-inline void UCoherentUIGTJSEvent::AddObject(struct Unknown Object) {
+inline void UCoherentUIGTJSEvent::AddObject(struct Object Object) {
 	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddObject");
 
 	struct AddObject_Params {
-		struct Unknown Object;
+		struct Object Object;
 	}; AddObject_Params Params;
 
 	Params.Object = Object;
@@ -1240,11 +1240,11 @@ inline void UCoherentUIGTJSEvent::AddBool(char B) {
 }
 
 // Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddArray
-inline void UCoherentUIGTJSEvent::AddArray(struct TArray<Unknown>& Array) {
+inline void UCoherentUIGTJSEvent::AddArray(struct TArray<int32_t>& Array) {
 	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTJSEvent.AddArray");
 
 	struct AddArray_Params {
-		struct TArray<Unknown>& Array;
+		struct TArray<int32_t>& Array;
 	}; AddArray_Params Params;
 
 
@@ -1257,12 +1257,12 @@ inline void UCoherentUIGTJSEvent::AddArray(struct TArray<Unknown>& Array) {
 }
 
 // Function CoherentUIGTPlugin.CoherentUIGTJSPayload.ReadObject
-inline void UCoherentUIGTJSPayload::ReadObject(int32_t Index, struct Unknown Object) {
+inline void UCoherentUIGTJSPayload::ReadObject(int32_t Index, struct Object Object) {
 	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTJSPayload.ReadObject");
 
 	struct ReadObject_Params {
 		int32_t Index;
-		struct Unknown Object;
+		struct Object Object;
 	}; ReadObject_Params Params;
 
 	Params.Index = Index;
@@ -1350,11 +1350,11 @@ inline char UCoherentUIGTJSPayload::GetBool(int32_t Index) {
 }
 
 // Function CoherentUIGTPlugin.CoherentUIGTLiveView.OnLiveViewSizeRequest
-inline void UCoherentUIGTLiveView::OnLiveViewSizeRequest(struct Unknown baseComponent, struct FString Name, int32_t& Width, int32_t& Height) {
+inline void UCoherentUIGTLiveView::OnLiveViewSizeRequest(struct UCoherentUIGTBaseComponent baseComponent, struct FString Name, int32_t& Width, int32_t& Height) {
 	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTLiveView.OnLiveViewSizeRequest");
 
 	struct OnLiveViewSizeRequest_Params {
-		struct Unknown baseComponent;
+		struct UCoherentUIGTBaseComponent baseComponent;
 		struct FString Name;
 		int32_t& Width;
 		int32_t& Height;
@@ -1373,11 +1373,11 @@ inline void UCoherentUIGTLiveView::OnLiveViewSizeRequest(struct Unknown baseComp
 }
 
 // Function CoherentUIGTPlugin.CoherentUIGTWidget.UpdateWholeDataModelFromStruct
-inline void UCoherentUIGTWidget::UpdateWholeDataModelFromStruct(struct TFieldPath<FUnknown> Arg) {
+inline void UCoherentUIGTWidget::UpdateWholeDataModelFromStruct(struct TFieldPath<FNone> Arg) {
 	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.UpdateWholeDataModelFromStruct");
 
 	struct UpdateWholeDataModelFromStruct_Params {
-		struct TFieldPath<FUnknown> Arg;
+		struct TFieldPath<FNone> Arg;
 	}; UpdateWholeDataModelFromStruct_Params Params;
 
 	Params.Arg = Arg;
@@ -1388,11 +1388,11 @@ inline void UCoherentUIGTWidget::UpdateWholeDataModelFromStruct(struct TFieldPat
 }
 
 // Function CoherentUIGTPlugin.CoherentUIGTWidget.UpdateWholeDataModelFromObject
-inline void UCoherentUIGTWidget::UpdateWholeDataModelFromObject(struct Unknown Model) {
+inline void UCoherentUIGTWidget::UpdateWholeDataModelFromObject(struct Object Model) {
 	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.UpdateWholeDataModelFromObject");
 
 	struct UpdateWholeDataModelFromObject_Params {
-		struct Unknown Model;
+		struct Object Model;
 	}; UpdateWholeDataModelFromObject_Params Params;
 
 	Params.Model = Model;
@@ -1403,12 +1403,12 @@ inline void UCoherentUIGTWidget::UpdateWholeDataModelFromObject(struct Unknown M
 }
 
 // Function CoherentUIGTPlugin.CoherentUIGTWidget.TriggerJSEvent
-inline void UCoherentUIGTWidget::TriggerJSEvent(struct FString Name, struct Unknown eventData) {
+inline void UCoherentUIGTWidget::TriggerJSEvent(struct FString Name, struct UCoherentUIGTJSEvent eventData) {
 	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.TriggerJSEvent");
 
 	struct TriggerJSEvent_Params {
 		struct FString Name;
-		struct Unknown eventData;
+		struct UCoherentUIGTJSEvent eventData;
 	}; TriggerJSEvent_Params Params;
 
 	Params.Name = Name;
@@ -1612,11 +1612,11 @@ inline void UCoherentUIGTWidget::Redraw() {
 }
 
 // DelegateFunction CoherentUIGTPlugin.CoherentUIGTWidget.MouseEventDelegate__DelegateSignature
-inline void UCoherentUIGTWidget::MouseEventDelegate__DelegateSignature(struct Unknown& MouseEvent) {
+inline void UCoherentUIGTWidget::MouseEventDelegate__DelegateSignature(struct FCoh_MouseEventData& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("DelegateFunction CoherentUIGTPlugin.CoherentUIGTWidget.MouseEventDelegate__DelegateSignature");
 
 	struct MouseEventDelegate__DelegateSignature_Params {
-		struct Unknown& MouseEvent;
+		struct FCoh_MouseEventData& MouseEvent;
 	}; MouseEventDelegate__DelegateSignature_Params Params;
 
 
@@ -1644,11 +1644,11 @@ inline void UCoherentUIGTWidget::Load(struct FString Path) {
 }
 
 // DelegateFunction CoherentUIGTPlugin.CoherentUIGTWidget.KeyUpDelegate__DelegateSignature
-inline void UCoherentUIGTWidget::KeyUpDelegate__DelegateSignature(struct Unknown& Key) {
+inline void UCoherentUIGTWidget::KeyUpDelegate__DelegateSignature(struct FKey& Key) {
 	static auto fn = UObject::FindObject<UFunction>("DelegateFunction CoherentUIGTPlugin.CoherentUIGTWidget.KeyUpDelegate__DelegateSignature");
 
 	struct KeyUpDelegate__DelegateSignature_Params {
-		struct Unknown& Key;
+		struct FKey& Key;
 	}; KeyUpDelegate__DelegateSignature_Params Params;
 
 
@@ -1661,11 +1661,11 @@ inline void UCoherentUIGTWidget::KeyUpDelegate__DelegateSignature(struct Unknown
 }
 
 // DelegateFunction CoherentUIGTPlugin.CoherentUIGTWidget.KeyDownDelegate__DelegateSignature
-inline void UCoherentUIGTWidget::KeyDownDelegate__DelegateSignature(struct Unknown& Key) {
+inline void UCoherentUIGTWidget::KeyDownDelegate__DelegateSignature(struct FKey& Key) {
 	static auto fn = UObject::FindObject<UFunction>("DelegateFunction CoherentUIGTPlugin.CoherentUIGTWidget.KeyDownDelegate__DelegateSignature");
 
 	struct KeyDownDelegate__DelegateSignature_Params {
-		struct Unknown& Key;
+		struct FKey& Key;
 	}; KeyDownDelegate__DelegateSignature_Params Params;
 
 
@@ -1786,12 +1786,12 @@ inline char UCoherentUIGTWidget::HasRequestedView() {
 }
 
 // Function CoherentUIGTPlugin.CoherentUIGTWidget.GetRenderTexture
-inline struct Unknown UCoherentUIGTWidget::GetRenderTexture() {
+inline struct UTextureRenderTarget2D UCoherentUIGTWidget::GetRenderTexture() {
 	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.GetRenderTexture");
 
 	struct GetRenderTexture_Params {
 		
-		struct Unknown ReturnValue;
+		struct UTextureRenderTarget2D ReturnValue;
 
 	}; GetRenderTexture_Params Params;
 
@@ -1822,12 +1822,12 @@ inline char UCoherentUIGTWidget::GetInputPropagationBehaviour() {
 }
 
 // Function CoherentUIGTPlugin.CoherentUIGTWidget.GetDPIScaleSize
-inline struct Unknown UCoherentUIGTWidget::GetDPIScaleSize() {
+inline struct FIntPoint UCoherentUIGTWidget::GetDPIScaleSize() {
 	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.GetDPIScaleSize");
 
 	struct GetDPIScaleSize_Params {
 		
-		struct Unknown ReturnValue;
+		struct FIntPoint ReturnValue;
 
 	}; GetDPIScaleSize_Params Params;
 
@@ -1919,12 +1919,12 @@ inline void UCoherentUIGTWidget::DebugSaveNextFrame() {
 }
 
 // Function CoherentUIGTPlugin.CoherentUIGTWidget.CreateJSEvent
-inline struct Unknown UCoherentUIGTWidget::CreateJSEvent() {
+inline struct UCoherentUIGTJSEvent UCoherentUIGTWidget::CreateJSEvent() {
 	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.CreateJSEvent");
 
 	struct CreateJSEvent_Params {
 		
-		struct Unknown ReturnValue;
+		struct UCoherentUIGTJSEvent ReturnValue;
 
 	}; CreateJSEvent_Params Params;
 
@@ -1937,12 +1937,12 @@ inline struct Unknown UCoherentUIGTWidget::CreateJSEvent() {
 }
 
 // Function CoherentUIGTPlugin.CoherentUIGTWidget.CreateDataModelFromStruct
-inline void UCoherentUIGTWidget::CreateDataModelFromStruct(struct FString Name, struct TFieldPath<FUnknown> Arg) {
+inline void UCoherentUIGTWidget::CreateDataModelFromStruct(struct FString Name, struct TFieldPath<FNone> Arg) {
 	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.CreateDataModelFromStruct");
 
 	struct CreateDataModelFromStruct_Params {
 		struct FString Name;
-		struct TFieldPath<FUnknown> Arg;
+		struct TFieldPath<FNone> Arg;
 	}; CreateDataModelFromStruct_Params Params;
 
 	Params.Name = Name;
@@ -1954,12 +1954,12 @@ inline void UCoherentUIGTWidget::CreateDataModelFromStruct(struct FString Name, 
 }
 
 // Function CoherentUIGTPlugin.CoherentUIGTWidget.CreateDataModelFromObject
-inline void UCoherentUIGTWidget::CreateDataModelFromObject(struct FString Name, struct Unknown Model) {
+inline void UCoherentUIGTWidget::CreateDataModelFromObject(struct FString Name, struct Object Model) {
 	static auto fn = UObject::FindObject<UFunction>("Function CoherentUIGTPlugin.CoherentUIGTWidget.CreateDataModelFromObject");
 
 	struct CreateDataModelFromObject_Params {
 		struct FString Name;
-		struct Unknown Model;
+		struct Object Model;
 	}; CreateDataModelFromObject_Params Params;
 
 	Params.Name = Name;

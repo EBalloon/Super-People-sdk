@@ -3,25 +3,25 @@ class UComboBoxText_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Button_43; // 0x250 (8)
-	struct Unknown Image_269; // 0x258 (8)
-	struct Unknown TextBlock_67; // 0x260 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UButton Button_43; // 0x250 (8)
+	struct UImage Image_269; // 0x258 (8)
+	struct UTextBlock TextBlock_67; // 0x260 (8)
 	struct FText Text; // 0x268 (24)
 
-	struct Unknown NewFunction_1(); // Function ComboBoxText.ComboBoxText_C.NewFunction_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct UWidget NewFunction_1(); // Function ComboBoxText.ComboBoxText_C.NewFunction_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__Button_42_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature(); // Function ComboBoxText.ComboBoxText_C.BndEvt__Button_42_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetColor(struct Unknown Color); // Function ComboBoxText.ComboBoxText_C.SetColor(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetColor(struct FLinearColor Color); // Function ComboBoxText.ComboBoxText_C.SetColor(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_ComboBoxText(int32_t EntryPoint); // Function ComboBoxText.ComboBoxText_C.ExecuteUbergraph_ComboBoxText(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function ComboBoxText.ComboBoxText_C.NewFunction_1
-inline struct Unknown UComboBoxText_C::NewFunction_1() {
+inline struct UWidget UComboBoxText_C::NewFunction_1() {
 	static auto fn = UObject::FindObject<UFunction>("Function ComboBoxText.ComboBoxText_C.NewFunction_1");
 
 	struct NewFunction_1_Params {
 		
-		struct Unknown ReturnValue;
+		struct UWidget ReturnValue;
 
 	}; NewFunction_1_Params Params;
 
@@ -48,11 +48,11 @@ inline void UComboBoxText_C::BndEvt__Button_42_K2Node_ComponentBoundEvent_0_OnBu
 }
 
 // Function ComboBoxText.ComboBoxText_C.SetColor
-inline void UComboBoxText_C::SetColor(struct Unknown Color) {
+inline void UComboBoxText_C::SetColor(struct FLinearColor Color) {
 	static auto fn = UObject::FindObject<UFunction>("Function ComboBoxText.ComboBoxText_C.SetColor");
 
 	struct SetColor_Params {
-		struct Unknown Color;
+		struct FLinearColor Color;
 	}; SetColor_Params Params;
 
 	Params.Color = Color;

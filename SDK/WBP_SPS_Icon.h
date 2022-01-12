@@ -3,38 +3,38 @@ class UWBP_SPS_Icon_C : public UBravoHotelSmartPingIconWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x440 (8)
-	struct Unknown BgIcon; // 0x448 (8)
-	struct Unknown Icon; // 0x450 (8)
-	struct Unknown Image_175; // 0x458 (8)
-	struct Unknown Indicator; // 0x460 (8)
-	struct Unknown Overlay_1; // 0x468 (8)
-	struct Unknown TeamIndex; // 0x470 (8)
-	struct Unknown TextBlock; // 0x478 (8)
-	struct Unknown TextBlock_2; // 0x480 (8)
-	struct Unknown TextBlock_3; // 0x488 (8)
-	struct Unknown TextBlock_4; // 0x490 (8)
-	struct Unknown TextBlock_5; // 0x498 (8)
-	struct Unknown TextBlock_6; // 0x4A0 (8)
-	struct Unknown TextBlock_7; // 0x4A8 (8)
-	struct Unknown TextBlock_8; // 0x4B0 (8)
-	struct Unknown TextBlock_9; // 0x4B8 (8)
-	struct Unknown TextBlock_10; // 0x4C0 (8)
-	struct Unknown TextBlock_12; // 0x4C8 (8)
-	struct Unknown VerticalBox_301; // 0x4D0 (8)
-	struct Unknown PlayerCamera; // 0x4D8 (8)
-	struct Unknown ParentComponent; // 0x4E0 (8)
-	struct Unknown CanvasSlot; // 0x4E8 (8)
-	struct Unknown MaterialPingInfo; // 0x4F0 (48)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x440 (8)
+	struct UIconImage_C BgIcon; // 0x448 (8)
+	struct UImage Icon; // 0x450 (8)
+	struct UImage Image_175; // 0x458 (8)
+	struct UImage Indicator; // 0x460 (8)
+	struct UOverlay Overlay_1; // 0x468 (8)
+	struct UTextBlock TeamIndex; // 0x470 (8)
+	struct UTextBlock TextBlock; // 0x478 (8)
+	struct UTextBlock TextBlock_2; // 0x480 (8)
+	struct UTextBlock TextBlock_3; // 0x488 (8)
+	struct UTextBlock TextBlock_4; // 0x490 (8)
+	struct UTextBlock TextBlock_5; // 0x498 (8)
+	struct UTextBlock TextBlock_6; // 0x4A0 (8)
+	struct UTextBlock TextBlock_7; // 0x4A8 (8)
+	struct UTextBlock TextBlock_8; // 0x4B0 (8)
+	struct UTextBlock TextBlock_9; // 0x4B8 (8)
+	struct UTextBlock TextBlock_10; // 0x4C0 (8)
+	struct UTextBlock TextBlock_12; // 0x4C8 (8)
+	struct UVerticalBox VerticalBox_301; // 0x4D0 (8)
+	struct APlayerCameraManager PlayerCamera; // 0x4D8 (8)
+	struct USmartPingSystem_C ParentComponent; // 0x4E0 (8)
+	struct UCanvasPanelSlot CanvasSlot; // 0x4E8 (8)
+	struct FMaterialItemPingInfo MaterialPingInfo; // 0x4F0 (48)
 
-	char SetExpertWeaponPing(struct Unknown& PingInfo); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetExpertWeaponPing(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	char SetLocalPing(struct Unknown& PingInfo); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetLocalPing(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	char SetMaterialPing(struct Unknown& PingInfo); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetMaterialPing(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	char SetExpertWeaponPing(struct FExpertWeaponPingInfo& PingInfo); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetExpertWeaponPing(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	char SetLocalPing(struct FBravoHotelLocalPingInfo& PingInfo); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetLocalPing(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	char SetMaterialPing(struct FMaterialItemPingInfo& PingInfo); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetMaterialPing(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Set_IconSize(float Size); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.Set_IconSize(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetWidgetComponentsRenderScale(float ScaleRate); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetWidgetComponentsRenderScale(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetChangeIcon(struct Unknown Texture); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetChangeIcon(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetIcon(int32_t TeamPlayerIndex, enum class Unknow ItemPingIconType, char IgnoreTeamIndex); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetIcon(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetChangeIcon(struct UPaperSprite Texture); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetChangeIcon(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetIcon(int32_t TeamPlayerIndex, enum class EItemPingIconType ItemPingIconType, char IgnoreTeamIndex); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetIcon(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetRemoveMaterialPingIcon(); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetRemoveMaterialPingIcon(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetIconAlpha(float NewAlpha); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetIconAlpha(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetShowDebugLightPole(char IsShow); // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetShowDebugLightPole(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -45,11 +45,11 @@ public:
 };
 
 // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetExpertWeaponPing
-inline char UWBP_SPS_Icon_C::SetExpertWeaponPing(struct Unknown& PingInfo) {
+inline char UWBP_SPS_Icon_C::SetExpertWeaponPing(struct FExpertWeaponPingInfo& PingInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetExpertWeaponPing");
 
 	struct SetExpertWeaponPing_Params {
-		struct Unknown& PingInfo;
+		struct FExpertWeaponPingInfo& PingInfo;
 		char ReturnValue;
 
 	}; SetExpertWeaponPing_Params Params;
@@ -66,11 +66,11 @@ inline char UWBP_SPS_Icon_C::SetExpertWeaponPing(struct Unknown& PingInfo) {
 }
 
 // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetLocalPing
-inline char UWBP_SPS_Icon_C::SetLocalPing(struct Unknown& PingInfo) {
+inline char UWBP_SPS_Icon_C::SetLocalPing(struct FBravoHotelLocalPingInfo& PingInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetLocalPing");
 
 	struct SetLocalPing_Params {
-		struct Unknown& PingInfo;
+		struct FBravoHotelLocalPingInfo& PingInfo;
 		char ReturnValue;
 
 	}; SetLocalPing_Params Params;
@@ -87,11 +87,11 @@ inline char UWBP_SPS_Icon_C::SetLocalPing(struct Unknown& PingInfo) {
 }
 
 // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetMaterialPing
-inline char UWBP_SPS_Icon_C::SetMaterialPing(struct Unknown& PingInfo) {
+inline char UWBP_SPS_Icon_C::SetMaterialPing(struct FMaterialItemPingInfo& PingInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetMaterialPing");
 
 	struct SetMaterialPing_Params {
-		struct Unknown& PingInfo;
+		struct FMaterialItemPingInfo& PingInfo;
 		char ReturnValue;
 
 	}; SetMaterialPing_Params Params;
@@ -152,11 +152,11 @@ inline void UWBP_SPS_Icon_C::SetWidgetComponentsRenderScale(float ScaleRate) {
 }
 
 // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetChangeIcon
-inline void UWBP_SPS_Icon_C::SetChangeIcon(struct Unknown Texture) {
+inline void UWBP_SPS_Icon_C::SetChangeIcon(struct UPaperSprite Texture) {
 	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetChangeIcon");
 
 	struct SetChangeIcon_Params {
-		struct Unknown Texture;
+		struct UPaperSprite Texture;
 	}; SetChangeIcon_Params Params;
 
 	Params.Texture = Texture;
@@ -167,12 +167,12 @@ inline void UWBP_SPS_Icon_C::SetChangeIcon(struct Unknown Texture) {
 }
 
 // Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetIcon
-inline void UWBP_SPS_Icon_C::SetIcon(int32_t TeamPlayerIndex, enum class Unknow ItemPingIconType, char IgnoreTeamIndex) {
+inline void UWBP_SPS_Icon_C::SetIcon(int32_t TeamPlayerIndex, enum class EItemPingIconType ItemPingIconType, char IgnoreTeamIndex) {
 	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_Icon.WBP_SPS_Icon_C.SetIcon");
 
 	struct SetIcon_Params {
 		int32_t TeamPlayerIndex;
-		enum class Unknow ItemPingIconType;
+		enum class EItemPingIconType ItemPingIconType;
 		char IgnoreTeamIndex;
 	}; SetIcon_Params Params;
 

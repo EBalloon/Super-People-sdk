@@ -1,5 +1,5 @@
 // ScriptStruct NiagaraCore.NiagaraCompileHash
 struct FNiagaraCompileHash {
-	struct TArray<Unknown> DataHash; // 0x0 (16)
+	struct TArray<char> DataHash; // 0x0 (16)
 };
 

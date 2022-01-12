@@ -3,29 +3,29 @@ class UUW-BasicConversation_C : public UBravoHotelConversationWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x258 (8)
-	struct Unknown First; // 0x260 (8)
-	struct Unknown Hide; // 0x268 (8)
-	struct Unknown Show; // 0x270 (8)
-	struct Unknown Idle; // 0x278 (8)
-	struct Unknown Bg; // 0x280 (8)
-	struct Unknown Bg_2; // 0x288 (8)
-	struct Unknown Bg_3; // 0x290 (8)
-	struct Unknown Button_407; // 0x298 (8)
-	struct Unknown Image; // 0x2A0 (8)
-	struct Unknown Image_2; // 0x2A8 (8)
-	struct Unknown Image_55; // 0x2B0 (8)
-	struct Unknown Image_340; // 0x2B8 (8)
-	struct Unknown Overlay_Base; // 0x2C0 (8)
-	struct Unknown TextBlock_Message; // 0x2C8 (8)
-	struct Unknown TextBlock_SpeakerName; // 0x2D0 (8)
-	struct Unknown UW-ImageText; // 0x2D8 (8)
-	struct Unknown WidgetSwitcher_Face; // 0x2E0 (8)
-	struct Unknown SentenceData; // 0x2E8 (176)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x258 (8)
+	struct UWidgetAnimation First; // 0x260 (8)
+	struct UWidgetAnimation Hide; // 0x268 (8)
+	struct UWidgetAnimation Show; // 0x270 (8)
+	struct UWidgetAnimation Idle; // 0x278 (8)
+	struct UImage Bg; // 0x280 (8)
+	struct UImage Bg_2; // 0x288 (8)
+	struct UImage Bg_3; // 0x290 (8)
+	struct UButton Button_407; // 0x298 (8)
+	struct UImage Image; // 0x2A0 (8)
+	struct UImage Image_2; // 0x2A8 (8)
+	struct UImage Image_55; // 0x2B0 (8)
+	struct UImage Image_340; // 0x2B8 (8)
+	struct UOverlay Overlay_Base; // 0x2C0 (8)
+	struct UTextBlock TextBlock_Message; // 0x2C8 (8)
+	struct UTextBlock TextBlock_SpeakerName; // 0x2D0 (8)
+	struct UUW-ImageText_C UW-ImageText; // 0x2D8 (8)
+	struct UWidgetSwitcher WidgetSwitcher_Face; // 0x2E0 (8)
+	struct FSentenceData SentenceData; // 0x2E8 (176)
 
 	void Finished_F3AEE8B3477DC5B8B5A3EA8301B8E940(); // Function UW-BasicConversation.UW-BasicConversation_C.Finished_F3AEE8B3477DC5B8B5A3EA8301B8E940(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-BasicConversation.UW-BasicConversation_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowSentense(struct Unknown& SentenceData); // Function UW-BasicConversation.UW-BasicConversation_C.ShowSentense(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowSentense(struct FSentenceData& SentenceData); // Function UW-BasicConversation.UW-BasicConversation_C.ShowSentense(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void HideSentense(); // Function UW-BasicConversation.UW-BasicConversation_C.HideSentense(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__Button_406_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-BasicConversation.UW-BasicConversation_C.BndEvt__Button_406_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-BasicConversation(int32_t EntryPoint); // Function UW-BasicConversation.UW-BasicConversation_C.ExecuteUbergraph_UW-BasicConversation(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
@@ -60,11 +60,11 @@ inline void UUW-BasicConversation_C::Construct() {
 }
 
 // Function UW-BasicConversation.UW-BasicConversation_C.ShowSentense
-inline void UUW-BasicConversation_C::ShowSentense(struct Unknown& SentenceData) {
+inline void UUW-BasicConversation_C::ShowSentense(struct FSentenceData& SentenceData) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-BasicConversation.UW-BasicConversation_C.ShowSentense");
 
 	struct ShowSentense_Params {
-		struct Unknown& SentenceData;
+		struct FSentenceData& SentenceData;
 	}; ShowSentense_Params Params;
 
 

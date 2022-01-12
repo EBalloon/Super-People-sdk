@@ -11,11 +11,11 @@ class UDLSSOverrideSettings : public Object {
 
 public:
 
-	enum class Unknow EnableDLSSInEditorViewportsOverride; // 0x28 (1)
-	enum class Unknow EnableScreenpercentageManipulationInDLSSEditorViewportsOverride; // 0x29 (1)
-	enum class Unknow EnableDLSSInPlayInEditorViewportsOverride; // 0x2A (1)
+	enum class EDLSSSettingOverride EnableDLSSInEditorViewportsOverride; // 0x28 (1)
+	enum class EDLSSSettingOverride EnableScreenpercentageManipulationInDLSSEditorViewportsOverride; // 0x29 (1)
+	enum class EDLSSSettingOverride EnableDLSSInPlayInEditorViewportsOverride; // 0x2A (1)
 	char bShowDLSSIncompatiblePluginsToolsWarnings : 0; // 0x2B (1)
-	enum class Unknow ShowDLSSSDebugOnScreenMessages; // 0x2C (1)
+	enum class EDLSSSettingOverride ShowDLSSSDebugOnScreenMessages; // 0x2C (1)
 };
 
 // Class DLSS.DLSSSettings

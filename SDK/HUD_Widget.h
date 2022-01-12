@@ -3,9 +3,9 @@ class UHUD_Widget_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown ChatWidget; // 0x250 (8)
-	struct Unknown Chat System; // 0x258 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UChat_MainWidget_C ChatWidget; // 0x250 (8)
+	struct AChat_System_C Chat System; // 0x258 (8)
 
 	void ShowHUDToggle(char ShowToggle); // Function HUD_Widget.HUD_Widget_C.ShowHUDToggle(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function HUD_Widget.HUD_Widget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>

@@ -31,8 +31,8 @@ class UNamedInterfaces : public Object {
 
 public:
 
-	struct TArray<Unknown> NamedInterfaces; // 0x28 (16)
-	struct TArray<Unknown> NamedInterfaceDefs; // 0x38 (16)
+	struct TArray<struct FNamedInterface> NamedInterfaces; // 0x28 (16)
+	struct TArray<struct FNamedInterfaceDef> NamedInterfaceDefs; // 0x38 (16)
 };
 
 // ScriptStruct OnlineSubsystem.InAppPurchaseProductInfo
@@ -66,7 +66,7 @@ struct FNamedInterfaceDef {
 // ScriptStruct OnlineSubsystem.NamedInterface
 struct FNamedInterface {
 	struct FName InterfaceName; // 0x0 (8)
-	struct Unknown InterfaceObject; // 0x8 (8)
+	struct Object InterfaceObject; // 0x8 (8)
 };
 
 // ScriptStruct OnlineSubsystem.InAppPurchaseProductRequest

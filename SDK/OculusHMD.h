@@ -33,7 +33,7 @@ class UOculusHMDRuntimeSettings : public Object {
 public:
 
 	char bAutoEnabled : 0; // 0x28 (1)
-	struct TArray<Unknown> SplashDescs; // 0x30 (16)
+	struct TArray<struct FOculusSplashDesc> SplashDescs; // 0x30 (16)
 	char bSupportsDash : 0; // 0x40 (1)
 	char bCompositesDepth : 0; // 0x41 (1)
 	char bHQDistortion : 0; // 0x42 (1)
@@ -41,7 +41,7 @@ public:
 	float PixelDensityMax; // 0x48 (4)
 	int32_t CPULevel; // 0x4C (4)
 	int32_t GPULevel; // 0x50 (4)
-	enum class Unknow FFRLevel; // 0x54 (1)
+	enum class EFixedFoveatedRenderingLevel FFRLevel; // 0x54 (1)
 	char bChromaCorrection : 0; // 0x55 (1)
 	char bRecenterHMDWithController : 0; // 0x56 (1)
 };
@@ -51,16 +51,16 @@ class UOculusSceneCaptureCubemap : public Object {
 
 public:
 
-	struct TArray<Unknown> CaptureComponents; // 0x38 (16)
+	struct TArray<struct USceneCaptureComponent2D> CaptureComponents; // 0x38 (16)
 };
 
 // ScriptStruct OculusHMD.GuardianTestResult
 struct FGuardianTestResult {
 	char IsTriggering : 0; // 0x0 (1)
-	enum class Unknow DeviceType; // 0x1 (1)
+	enum class ETrackedDeviceType DeviceType; // 0x1 (1)
 	float ClosestDistance; // 0x4 (4)
-	struct Unknown ClosestPoint; // 0x8 (12)
-	struct Unknown ClosestPointNormal; // 0x14 (12)
+	struct FVector ClosestPoint; // 0x8 (12)
+	struct FVector ClosestPointNormal; // 0x14 (12)
 };
 
 // ScriptStruct OculusHMD.HmdUserProfile
@@ -70,8 +70,8 @@ struct FHmdUserProfile {
 	float PlayerHeight; // 0x20 (4)
 	float EyeHeight; // 0x24 (4)
 	float IPD; // 0x28 (4)
-	struct Unknown NeckToEyeDistance; // 0x2C (8)
-	struct TArray<Unknown> ExtraFields; // 0x38 (16)
+	struct FVector2D NeckToEyeDistance; // 0x2C (8)
+	struct TArray<struct FHmdUserProfileField> ExtraFields; // 0x38 (16)
 };
 
 // ScriptStruct OculusHMD.HmdUserProfileField
@@ -82,12 +82,12 @@ struct FHmdUserProfileField {
 
 // ScriptStruct OculusHMD.OculusSplashDesc
 struct FOculusSplashDesc {
-	struct Unknown TexturePath; // 0x0 (24)
-	struct Unknown TransformInMeters; // 0x20 (48)
-	struct Unknown QuadSizeInMeters; // 0x50 (8)
-	struct Unknown DeltaRotation; // 0x60 (16)
-	struct Unknown TextureOffset; // 0x70 (8)
-	struct Unknown TextureScale; // 0x78 (8)
+	struct FSoftObjectPath TexturePath; // 0x0 (24)
+	struct FTransform TransformInMeters; // 0x20 (48)
+	struct FVector2D QuadSizeInMeters; // 0x50 (8)
+	struct FQuat DeltaRotation; // 0x60 (16)
+	struct FVector2D TextureOffset; // 0x70 (8)
+	struct FVector2D TextureScale; // 0x78 (8)
 	char bNoAlphaChannel : 0; // 0x80 (1)
 };
 

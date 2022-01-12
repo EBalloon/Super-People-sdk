@@ -3,128 +3,128 @@ class UUW-PersonalSupplyBoxWidget_C : public UBravoHotelPersonalSupplyBoxWidget 
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x3F8 (8)
-	struct Unknown Ani_PadOn; // 0x400 (8)
-	struct Unknown BG_Pad; // 0x408 (8)
-	struct Unknown btn_PerkDeckEnabled; // 0x410 (8)
-	struct Unknown Canvas_ChangeEnable; // 0x418 (8)
-	struct Unknown CanvasPanel; // 0x420 (8)
-	struct Unknown CanvasPanel_3; // 0x428 (8)
-	struct Unknown ComboBoxString_237; // 0x430 (8)
-	struct Unknown CurHaveGoldValue; // 0x438 (8)
-	struct Unknown CurPriceText; // 0x440 (8)
-	struct Unknown Down; // 0x448 (8)
-	struct Unknown EquipBg; // 0x450 (8)
-	struct Unknown Free; // 0x458 (8)
-	struct Unknown GoldImage; // 0x460 (8)
-	struct Unknown GoldImage_2; // 0x468 (8)
-	struct Unknown GoldLack; // 0x470 (8)
-	struct Unknown HaveWeaponText; // 0x478 (8)
-	struct Unknown HorizontalBox_1; // 0x480 (8)
-	struct Unknown Image; // 0x488 (8)
-	struct Unknown Image_2; // 0x490 (8)
-	struct Unknown Image_3; // 0x498 (8)
-	struct Unknown Image_4; // 0x4A0 (8)
-	struct Unknown Image_5; // 0x4A8 (8)
-	struct Unknown Image_91; // 0x4B0 (8)
-	struct Unknown Image_119; // 0x4B8 (8)
-	struct Unknown Image_172; // 0x4C0 (8)
-	struct Unknown Image_192; // 0x4C8 (8)
-	struct Unknown Image_251; // 0x4D0 (8)
-	struct Unknown Image_362; // 0x4D8 (8)
-	struct Unknown Image_400; // 0x4E0 (8)
-	struct Unknown Image_545; // 0x4E8 (8)
-	struct Unknown Image_552; // 0x4F0 (8)
-	struct Unknown Image_614; // 0x4F8 (8)
-	struct Unknown Image_722; // 0x500 (8)
-	struct Unknown Image_1025; // 0x508 (8)
-	struct Unknown Image_1262; // 0x510 (8)
-	struct Unknown ItemIcon; // 0x518 (8)
-	struct Unknown Items_1Text; // 0x520 (8)
-	struct Unknown ItemScroll; // 0x528 (8)
-	struct Unknown ItemsText; // 0x530 (8)
-	struct Unknown OkText; // 0x538 (8)
-	struct Unknown Overlay_4; // 0x540 (8)
-	struct Unknown Overlay_215; // 0x548 (8)
-	struct Unknown PriceBg; // 0x550 (8)
-	struct Unknown PriceBg_2; // 0x558 (8)
-	struct Unknown PriceText; // 0x560 (8)
-	struct Unknown PriceValue; // 0x568 (8)
-	struct Unknown RichTextBlock; // 0x570 (8)
-	struct Unknown RichTextBlock_74; // 0x578 (8)
-	struct Unknown SizeBox_4; // 0x580 (8)
-	struct Unknown SlotBg; // 0x588 (8)
-	struct Unknown SortText; // 0x590 (8)
-	struct Unknown SpecialWeaponText; // 0x598 (8)
-	struct Unknown TextBlock_3; // 0x5A0 (8)
-	struct Unknown Up; // 0x5A8 (8)
-	struct Unknown UW-PersonalSupplyBoxConsumableItemSlotWidget_2; // 0x5B0 (8)
-	struct Unknown UW-PersonalSupplyBoxConsumableItemSlotWidget_3; // 0x5B8 (8)
-	struct Unknown UW-PersonalSupplyBoxConsumableItemSlotWidget_4; // 0x5C0 (8)
-	struct Unknown UW-PersonalSupplyBoxConsumableItemSlotWidget_5; // 0x5C8 (8)
-	struct Unknown UW-PersonalSupplyBoxConsumableItemSlotWidget_6; // 0x5D0 (8)
-	struct Unknown UW-PersonalSupplyBoxWeaponInfoWidget_186; // 0x5D8 (8)
-	struct Unknown UW-SupplyToolTip; // 0x5E0 (8)
-	struct Unknown UW-Timer; // 0x5E8 (8)
-	struct Unknown VerticalBox_1; // 0x5F0 (8)
-	struct Unknown WeaponScroll; // 0x5F8 (8)
-	struct Unknown WidgetSwitcher_1; // 0x600 (8)
-	struct TArray<Unknown> SortType; // 0x608 (16)
-	struct TArray<Unknown> RarityList; // 0x618 (16)
-	struct TMap<Unknown, Unknown> ComboxList; // 0x628 (80)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x3F8 (8)
+	struct UWidgetAnimation Ani_PadOn; // 0x400 (8)
+	struct UImage BG_Pad; // 0x408 (8)
+	struct UButton btn_PerkDeckEnabled; // 0x410 (8)
+	struct UCanvasPanel Canvas_ChangeEnable; // 0x418 (8)
+	struct UCanvasPanel CanvasPanel; // 0x420 (8)
+	struct UCanvasPanel CanvasPanel_3; // 0x428 (8)
+	struct UComboBoxString ComboBoxString_237; // 0x430 (8)
+	struct UTextBlock CurHaveGoldValue; // 0x438 (8)
+	struct UTextBlock CurPriceText; // 0x440 (8)
+	struct UImage Down; // 0x448 (8)
+	struct UImage EquipBg; // 0x450 (8)
+	struct UOverlay Free; // 0x458 (8)
+	struct UImage GoldImage; // 0x460 (8)
+	struct UImage GoldImage_2; // 0x468 (8)
+	struct UOverlay GoldLack; // 0x470 (8)
+	struct UTextBlock HaveWeaponText; // 0x478 (8)
+	struct UHorizontalBox HorizontalBox_1; // 0x480 (8)
+	struct UImage Image; // 0x488 (8)
+	struct UImage Image_2; // 0x490 (8)
+	struct UImage Image_3; // 0x498 (8)
+	struct UImage Image_4; // 0x4A0 (8)
+	struct UImage Image_5; // 0x4A8 (8)
+	struct UImage Image_91; // 0x4B0 (8)
+	struct UImage Image_119; // 0x4B8 (8)
+	struct UImage Image_172; // 0x4C0 (8)
+	struct UImage Image_192; // 0x4C8 (8)
+	struct UImage Image_251; // 0x4D0 (8)
+	struct UImage Image_362; // 0x4D8 (8)
+	struct UImage Image_400; // 0x4E0 (8)
+	struct UImage Image_545; // 0x4E8 (8)
+	struct UImage Image_552; // 0x4F0 (8)
+	struct UImage Image_614; // 0x4F8 (8)
+	struct UImage Image_722; // 0x500 (8)
+	struct UImage Image_1025; // 0x508 (8)
+	struct UImage Image_1262; // 0x510 (8)
+	struct UImage ItemIcon; // 0x518 (8)
+	struct UTextBlock Items_1Text; // 0x520 (8)
+	struct UScrollBox ItemScroll; // 0x528 (8)
+	struct UTextBlock ItemsText; // 0x530 (8)
+	struct UTextBlock OkText; // 0x538 (8)
+	struct UOverlay Overlay_4; // 0x540 (8)
+	struct UOverlay Overlay_215; // 0x548 (8)
+	struct UImage PriceBg; // 0x550 (8)
+	struct UImage PriceBg_2; // 0x558 (8)
+	struct UTextBlock PriceText; // 0x560 (8)
+	struct UTextBlock PriceValue; // 0x568 (8)
+	struct URichTextBlock RichTextBlock; // 0x570 (8)
+	struct URichTextBlock RichTextBlock_74; // 0x578 (8)
+	struct USizeBox SizeBox_4; // 0x580 (8)
+	struct UImage SlotBg; // 0x588 (8)
+	struct UTextBlock SortText; // 0x590 (8)
+	struct UTextBlock SpecialWeaponText; // 0x598 (8)
+	struct UTextBlock TextBlock_3; // 0x5A0 (8)
+	struct UImage Up; // 0x5A8 (8)
+	struct UUW-PersonalSupplyBoxConsumableItemSlotWidget_C UW-PersonalSupplyBoxConsumableItemSlotWidget_2; // 0x5B0 (8)
+	struct UUW-PersonalSupplyBoxConsumableItemSlotWidget_C UW-PersonalSupplyBoxConsumableItemSlotWidget_3; // 0x5B8 (8)
+	struct UUW-PersonalSupplyBoxConsumableItemSlotWidget_C UW-PersonalSupplyBoxConsumableItemSlotWidget_4; // 0x5C0 (8)
+	struct UUW-PersonalSupplyBoxConsumableItemSlotWidget_C UW-PersonalSupplyBoxConsumableItemSlotWidget_5; // 0x5C8 (8)
+	struct UUW-PersonalSupplyBoxConsumableItemSlotWidget_C UW-PersonalSupplyBoxConsumableItemSlotWidget_6; // 0x5D0 (8)
+	struct UUW-PersonalSupplyBoxWeaponInfoWidget_C UW-PersonalSupplyBoxWeaponInfoWidget_186; // 0x5D8 (8)
+	struct UUW-SupplyToolTip_C UW-SupplyToolTip; // 0x5E0 (8)
+	struct UUW-Timer_C UW-Timer; // 0x5E8 (8)
+	struct UVerticalBox VerticalBox_1; // 0x5F0 (8)
+	struct UScrollBox WeaponScroll; // 0x5F8 (8)
+	struct UWidgetSwitcher WidgetSwitcher_1; // 0x600 (8)
+	struct TArray<struct FText> SortType; // 0x608 (16)
+	struct TArray<struct UImage> RarityList; // 0x618 (16)
+	struct TMap<struct FString, struct UUW-ComboBoxText_C> ComboxList; // 0x628 (80)
 	struct FString SelectComboBox; // 0x678 (16)
 	char IsShowAni : 0; // 0x688 (1)
 	char IsFree : 0; // 0x689 (1)
-	struct Unknown SaveSupplyItem; // 0x690 (256)
+	struct FSupplyItem SaveSupplyItem; // 0x690 (256)
 	int32_t CurOwnGold; // 0x790 (4)
 	int32_t TotalPrice; // 0x794 (4)
 
-	struct Unknown OnMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetEmptySlot(char& bRet, struct Unknown& Slot); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.GetEmptySlot(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	char OnDrop(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.OnDrop(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetConsumableItemSlot(int32_t Index, struct Unknown& Widget); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.GetConsumableItemSlot(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown OnGenerateWidget_2(struct FString Item); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.OnGenerateWidget_2(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown OnGenerateWidget_1(struct FString Item); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.OnGenerateWidget_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown CraeteWeaponItemSlots(); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.CraeteWeaponItemSlots(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown CraeteConsumableItemSlots(); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.CraeteConsumableItemSlots(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply OnMouseButtonDown(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetEmptySlot(char& bRet, struct UUW-PersonalSupplyBoxConsumableItemSlotWidget_C& Slot); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.GetEmptySlot(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	char OnDrop(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.OnDrop(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetConsumableItemSlot(int32_t Index, struct UUW-PersonalSupplyBoxConsumableItemSlotWidget_C& Widget); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.GetConsumableItemSlot(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct UWidget OnGenerateWidget_2(struct FString Item); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.OnGenerateWidget_2(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct UWidget OnGenerateWidget_1(struct FString Item); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.OnGenerateWidget_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct UBravoHotelPersonalSupplyBoxSlotItemWidget CraeteWeaponItemSlots(); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.CraeteWeaponItemSlots(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct UBravoHotelPersonalSupplyBoxSlotItemWidget CraeteConsumableItemSlots(); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.CraeteConsumableItemSlots(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__btn_PerkDeckEnabled_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.BndEvt__btn_PerkDeckEnabled_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__ComboBoxString_236_K2Node_ComponentBoundEvent_1_OnSelectionChangedEvent__DelegateSignature(struct FString SelectedItem, char SelectionType); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.BndEvt__ComboBoxString_236_K2Node_ComponentBoundEvent_1_OnSelectionChangedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__ComboBoxString_236_K2Node_ComponentBoundEvent_3_OnOpeningEvent__DelegateSignature(); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.BndEvt__ComboBoxString_236_K2Node_ComponentBoundEvent_3_OnOpeningEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void 鉹@t元_1(struct Unknown ConsumalbeItemDat, int32_t SlotIndex); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetConsumableItemData(int32_t SlotIndex, struct Unknown& ConsumableItem, char SetEmpty); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.SetConsumableItemData(Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetWeaponData(struct Unknown& WeaponItem, char IsDefaultWeapon); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.SetWeaponData(Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void 鉹@t元_2(struct Unknown WeaponData); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.鉹@t元_2(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void 鉹@t元_1(struct FSupplyItem ConsumalbeItemDat, int32_t SlotIndex); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetConsumableItemData(int32_t SlotIndex, struct FSupplyItem& ConsumableItem, char SetEmpty); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.SetConsumableItemData(Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetWeaponData(struct FInventoryItemInfo& WeaponItem, char IsDefaultWeapon); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.SetWeaponData(Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void 鉹@t元_2(struct FInventoryItemInfo WeaponData); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.鉹@t元_2(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Destruct(); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetTotalPrice(int32_t Price); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.SetTotalPrice(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetFree(char IsFree, int32_t FreeCount); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.SetFree(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetOwnGold(int32_t OwnGold); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.SetOwnGold(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void 鉹@t元_3(char IsShow, struct Unknown Slot); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.鉹@t元_3(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void 鉹@t元_3(char IsShow, struct UUW-PersonalSupplyBoxConsumableItemSlotWidget_C Slot); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.鉹@t元_3(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__btn_PerkDeckEnabled_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature(); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.BndEvt__btn_PerkDeckEnabled_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__btn_PerkDeckEnabled_K2Node_ComponentBoundEvent_4_OnButtonHoverEvent__DelegateSignature(); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.BndEvt__btn_PerkDeckEnabled_K2Node_ComponentBoundEvent_4_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void 鉹@t元_4(char IsShow, struct Unknown Widget); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.鉹@t元_4(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void 鉹@t元_5(enum class Unknow PrevState, enum class Unknow CurrentState); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.鉹@t元_5(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void 鉹@t元_4(char IsShow, struct UButton Widget); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.鉹@t元_4(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void 鉹@t元_5(enum class EBattleRoyaleState PrevState, enum class EBattleRoyaleState CurrentState); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.鉹@t元_5(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Close(); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.Close(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void 鉹@t元_6(); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.鉹@t元_6(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void 鉹@t元_7(); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.鉹@t元_7(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ShowConsumableSlotHoverEffect(char IsHover); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.ShowConsumableSlotHoverEffect(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void EquipSlot(struct Unknown Slot); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.EquipSlot(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void 鉹@t元_8(struct Unknown Source, struct Unknown Target); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.鉹@t元_8(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void 鉹@t元_9(struct Unknown Slot); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.鉹@t元_9(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void EquipWeaponSlot(struct Unknown Slot); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.EquipWeaponSlot(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void 鉹@t元_10(struct Unknown Weapon); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.鉹@t元_10(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void EquipSlot(struct UUW-PersonalSupplyBoxSlotItemWidget_C Slot); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.EquipSlot(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void 鉹@t元_8(struct UUW-PersonalSupplyBoxConsumableItemSlotWidget_C Source, struct UUW-PersonalSupplyBoxConsumableItemSlotWidget_C Target); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.鉹@t元_8(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void 鉹@t元_9(struct UUW-PersonalSupplyBoxConsumableItemSlotWidget_C Slot); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.鉹@t元_9(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void EquipWeaponSlot(struct UUW-PersonalSupplyBoxSlotItemWidget_C Slot); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.EquipWeaponSlot(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void 鉹@t元_10(struct FInventoryItemInfo Weapon); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.鉹@t元_10(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetEnoughtGold(char IsEnought); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.SetEnoughtGold(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-PersonalSupplyBoxWidget(int32_t EntryPoint); // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.ExecuteUbergraph_UW-PersonalSupplyBoxWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.OnMouseButtonDown
-inline struct Unknown UUW-PersonalSupplyBoxWidget_C::OnMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UUW-PersonalSupplyBoxWidget_C::OnMouseButtonDown(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.OnMouseButtonDown");
 
 	struct OnMouseButtonDown_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnMouseButtonDown_Params Params;
 
@@ -141,12 +141,12 @@ inline struct Unknown UUW-PersonalSupplyBoxWidget_C::OnMouseButtonDown(struct Un
 }
 
 // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.GetEmptySlot
-inline void UUW-PersonalSupplyBoxWidget_C::GetEmptySlot(char& bRet, struct Unknown& Slot) {
+inline void UUW-PersonalSupplyBoxWidget_C::GetEmptySlot(char& bRet, struct UUW-PersonalSupplyBoxConsumableItemSlotWidget_C& Slot) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.GetEmptySlot");
 
 	struct GetEmptySlot_Params {
 		char& bRet;
-		struct Unknown& Slot;
+		struct UUW-PersonalSupplyBoxConsumableItemSlotWidget_C& Slot;
 	}; GetEmptySlot_Params Params;
 
 
@@ -160,13 +160,13 @@ inline void UUW-PersonalSupplyBoxWidget_C::GetEmptySlot(char& bRet, struct Unkno
 }
 
 // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.OnDrop
-inline char UUW-PersonalSupplyBoxWidget_C::OnDrop(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation) {
+inline char UUW-PersonalSupplyBoxWidget_C::OnDrop(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.OnDrop");
 
 	struct OnDrop_Params {
-		struct Unknown MyGeometry;
-		struct Unknown PointerEvent;
-		struct Unknown Operation;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent PointerEvent;
+		struct UDragDropOperation Operation;
 		char ReturnValue;
 
 	}; OnDrop_Params Params;
@@ -183,12 +183,12 @@ inline char UUW-PersonalSupplyBoxWidget_C::OnDrop(struct Unknown MyGeometry, str
 }
 
 // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.GetConsumableItemSlot
-inline void UUW-PersonalSupplyBoxWidget_C::GetConsumableItemSlot(int32_t Index, struct Unknown& Widget) {
+inline void UUW-PersonalSupplyBoxWidget_C::GetConsumableItemSlot(int32_t Index, struct UUW-PersonalSupplyBoxConsumableItemSlotWidget_C& Widget) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.GetConsumableItemSlot");
 
 	struct GetConsumableItemSlot_Params {
 		int32_t Index;
-		struct Unknown& Widget;
+		struct UUW-PersonalSupplyBoxConsumableItemSlotWidget_C& Widget;
 	}; GetConsumableItemSlot_Params Params;
 
 	Params.Index = Index;
@@ -202,12 +202,12 @@ inline void UUW-PersonalSupplyBoxWidget_C::GetConsumableItemSlot(int32_t Index, 
 }
 
 // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.OnGenerateWidget_2
-inline struct Unknown UUW-PersonalSupplyBoxWidget_C::OnGenerateWidget_2(struct FString Item) {
+inline struct UWidget UUW-PersonalSupplyBoxWidget_C::OnGenerateWidget_2(struct FString Item) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.OnGenerateWidget_2");
 
 	struct OnGenerateWidget_2_Params {
 		struct FString Item;
-		struct Unknown ReturnValue;
+		struct UWidget ReturnValue;
 
 	}; OnGenerateWidget_2_Params Params;
 
@@ -221,12 +221,12 @@ inline struct Unknown UUW-PersonalSupplyBoxWidget_C::OnGenerateWidget_2(struct F
 }
 
 // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.OnGenerateWidget_1
-inline struct Unknown UUW-PersonalSupplyBoxWidget_C::OnGenerateWidget_1(struct FString Item) {
+inline struct UWidget UUW-PersonalSupplyBoxWidget_C::OnGenerateWidget_1(struct FString Item) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.OnGenerateWidget_1");
 
 	struct OnGenerateWidget_1_Params {
 		struct FString Item;
-		struct Unknown ReturnValue;
+		struct UWidget ReturnValue;
 
 	}; OnGenerateWidget_1_Params Params;
 
@@ -240,12 +240,12 @@ inline struct Unknown UUW-PersonalSupplyBoxWidget_C::OnGenerateWidget_1(struct F
 }
 
 // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.CraeteWeaponItemSlots
-inline struct Unknown UUW-PersonalSupplyBoxWidget_C::CraeteWeaponItemSlots() {
+inline struct UBravoHotelPersonalSupplyBoxSlotItemWidget UUW-PersonalSupplyBoxWidget_C::CraeteWeaponItemSlots() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.CraeteWeaponItemSlots");
 
 	struct CraeteWeaponItemSlots_Params {
 		
-		struct Unknown ReturnValue;
+		struct UBravoHotelPersonalSupplyBoxSlotItemWidget ReturnValue;
 
 	}; CraeteWeaponItemSlots_Params Params;
 
@@ -258,12 +258,12 @@ inline struct Unknown UUW-PersonalSupplyBoxWidget_C::CraeteWeaponItemSlots() {
 }
 
 // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.CraeteConsumableItemSlots
-inline struct Unknown UUW-PersonalSupplyBoxWidget_C::CraeteConsumableItemSlots() {
+inline struct UBravoHotelPersonalSupplyBoxSlotItemWidget UUW-PersonalSupplyBoxWidget_C::CraeteConsumableItemSlots() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.CraeteConsumableItemSlots");
 
 	struct CraeteConsumableItemSlots_Params {
 		
-		struct Unknown ReturnValue;
+		struct UBravoHotelPersonalSupplyBoxSlotItemWidget ReturnValue;
 
 	}; CraeteConsumableItemSlots_Params Params;
 
@@ -335,11 +335,11 @@ inline void UUW-PersonalSupplyBoxWidget_C::BndEvt__ComboBoxString_236_K2Node_Com
 }
 
 // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.鉹@t元_1
-inline void UUW-PersonalSupplyBoxWidget_C::鉹@t元_1(struct Unknown ConsumalbeItemDat, int32_t SlotIndex) {
+inline void UUW-PersonalSupplyBoxWidget_C::鉹@t元_1(struct FSupplyItem ConsumalbeItemDat, int32_t SlotIndex) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.鉹@t元_1");
 
 	struct 鉹@t元_1_Params {
-		struct Unknown ConsumalbeItemDat;
+		struct FSupplyItem ConsumalbeItemDat;
 		int32_t SlotIndex;
 	}; 鉹@t元_1_Params Params;
 
@@ -352,12 +352,12 @@ inline void UUW-PersonalSupplyBoxWidget_C::鉹@t元_1(struct Unknown ConsumalbeIte
 }
 
 // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.SetConsumableItemData
-inline void UUW-PersonalSupplyBoxWidget_C::SetConsumableItemData(int32_t SlotIndex, struct Unknown& ConsumableItem, char SetEmpty) {
+inline void UUW-PersonalSupplyBoxWidget_C::SetConsumableItemData(int32_t SlotIndex, struct FSupplyItem& ConsumableItem, char SetEmpty) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.SetConsumableItemData");
 
 	struct SetConsumableItemData_Params {
 		int32_t SlotIndex;
-		struct Unknown& ConsumableItem;
+		struct FSupplyItem& ConsumableItem;
 		char SetEmpty;
 	}; SetConsumableItemData_Params Params;
 
@@ -373,11 +373,11 @@ inline void UUW-PersonalSupplyBoxWidget_C::SetConsumableItemData(int32_t SlotInd
 }
 
 // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.SetWeaponData
-inline void UUW-PersonalSupplyBoxWidget_C::SetWeaponData(struct Unknown& WeaponItem, char IsDefaultWeapon) {
+inline void UUW-PersonalSupplyBoxWidget_C::SetWeaponData(struct FInventoryItemInfo& WeaponItem, char IsDefaultWeapon) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.SetWeaponData");
 
 	struct SetWeaponData_Params {
-		struct Unknown& WeaponItem;
+		struct FInventoryItemInfo& WeaponItem;
 		char IsDefaultWeapon;
 	}; SetWeaponData_Params Params;
 
@@ -392,11 +392,11 @@ inline void UUW-PersonalSupplyBoxWidget_C::SetWeaponData(struct Unknown& WeaponI
 }
 
 // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.鉹@t元_2
-inline void UUW-PersonalSupplyBoxWidget_C::鉹@t元_2(struct Unknown WeaponData) {
+inline void UUW-PersonalSupplyBoxWidget_C::鉹@t元_2(struct FInventoryItemInfo WeaponData) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.鉹@t元_2");
 
 	struct 鉹@t元_2_Params {
-		struct Unknown WeaponData;
+		struct FInventoryItemInfo WeaponData;
 	}; 鉹@t元_2_Params Params;
 
 	Params.WeaponData = WeaponData;
@@ -468,12 +468,12 @@ inline void UUW-PersonalSupplyBoxWidget_C::SetOwnGold(int32_t OwnGold) {
 }
 
 // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.鉹@t元_3
-inline void UUW-PersonalSupplyBoxWidget_C::鉹@t元_3(char IsShow, struct Unknown Slot) {
+inline void UUW-PersonalSupplyBoxWidget_C::鉹@t元_3(char IsShow, struct UUW-PersonalSupplyBoxConsumableItemSlotWidget_C Slot) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.鉹@t元_3");
 
 	struct 鉹@t元_3_Params {
 		char IsShow;
-		struct Unknown Slot;
+		struct UUW-PersonalSupplyBoxConsumableItemSlotWidget_C Slot;
 	}; 鉹@t元_3_Params Params;
 
 	Params.IsShow = IsShow;
@@ -513,12 +513,12 @@ inline void UUW-PersonalSupplyBoxWidget_C::BndEvt__btn_PerkDeckEnabled_K2Node_Co
 }
 
 // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.鉹@t元_4
-inline void UUW-PersonalSupplyBoxWidget_C::鉹@t元_4(char IsShow, struct Unknown Widget) {
+inline void UUW-PersonalSupplyBoxWidget_C::鉹@t元_4(char IsShow, struct UButton Widget) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.鉹@t元_4");
 
 	struct 鉹@t元_4_Params {
 		char IsShow;
-		struct Unknown Widget;
+		struct UButton Widget;
 	}; 鉹@t元_4_Params Params;
 
 	Params.IsShow = IsShow;
@@ -530,12 +530,12 @@ inline void UUW-PersonalSupplyBoxWidget_C::鉹@t元_4(char IsShow, struct Unknown 
 }
 
 // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.鉹@t元_5
-inline void UUW-PersonalSupplyBoxWidget_C::鉹@t元_5(enum class Unknow PrevState, enum class Unknow CurrentState) {
+inline void UUW-PersonalSupplyBoxWidget_C::鉹@t元_5(enum class EBattleRoyaleState PrevState, enum class EBattleRoyaleState CurrentState) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.鉹@t元_5");
 
 	struct 鉹@t元_5_Params {
-		enum class Unknow PrevState;
-		enum class Unknow CurrentState;
+		enum class EBattleRoyaleState PrevState;
+		enum class EBattleRoyaleState CurrentState;
 	}; 鉹@t元_5_Params Params;
 
 	Params.PrevState = PrevState;
@@ -604,11 +604,11 @@ inline void UUW-PersonalSupplyBoxWidget_C::ShowConsumableSlotHoverEffect(char Is
 }
 
 // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.EquipSlot
-inline void UUW-PersonalSupplyBoxWidget_C::EquipSlot(struct Unknown Slot) {
+inline void UUW-PersonalSupplyBoxWidget_C::EquipSlot(struct UUW-PersonalSupplyBoxSlotItemWidget_C Slot) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.EquipSlot");
 
 	struct EquipSlot_Params {
-		struct Unknown Slot;
+		struct UUW-PersonalSupplyBoxSlotItemWidget_C Slot;
 	}; EquipSlot_Params Params;
 
 	Params.Slot = Slot;
@@ -619,12 +619,12 @@ inline void UUW-PersonalSupplyBoxWidget_C::EquipSlot(struct Unknown Slot) {
 }
 
 // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.鉹@t元_8
-inline void UUW-PersonalSupplyBoxWidget_C::鉹@t元_8(struct Unknown Source, struct Unknown Target) {
+inline void UUW-PersonalSupplyBoxWidget_C::鉹@t元_8(struct UUW-PersonalSupplyBoxConsumableItemSlotWidget_C Source, struct UUW-PersonalSupplyBoxConsumableItemSlotWidget_C Target) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.鉹@t元_8");
 
 	struct 鉹@t元_8_Params {
-		struct Unknown Source;
-		struct Unknown Target;
+		struct UUW-PersonalSupplyBoxConsumableItemSlotWidget_C Source;
+		struct UUW-PersonalSupplyBoxConsumableItemSlotWidget_C Target;
 	}; 鉹@t元_8_Params Params;
 
 	Params.Source = Source;
@@ -636,11 +636,11 @@ inline void UUW-PersonalSupplyBoxWidget_C::鉹@t元_8(struct Unknown Source, struc
 }
 
 // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.鉹@t元_9
-inline void UUW-PersonalSupplyBoxWidget_C::鉹@t元_9(struct Unknown Slot) {
+inline void UUW-PersonalSupplyBoxWidget_C::鉹@t元_9(struct UUW-PersonalSupplyBoxConsumableItemSlotWidget_C Slot) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.鉹@t元_9");
 
 	struct 鉹@t元_9_Params {
-		struct Unknown Slot;
+		struct UUW-PersonalSupplyBoxConsumableItemSlotWidget_C Slot;
 	}; 鉹@t元_9_Params Params;
 
 	Params.Slot = Slot;
@@ -651,11 +651,11 @@ inline void UUW-PersonalSupplyBoxWidget_C::鉹@t元_9(struct Unknown Slot) {
 }
 
 // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.EquipWeaponSlot
-inline void UUW-PersonalSupplyBoxWidget_C::EquipWeaponSlot(struct Unknown Slot) {
+inline void UUW-PersonalSupplyBoxWidget_C::EquipWeaponSlot(struct UUW-PersonalSupplyBoxSlotItemWidget_C Slot) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.EquipWeaponSlot");
 
 	struct EquipWeaponSlot_Params {
-		struct Unknown Slot;
+		struct UUW-PersonalSupplyBoxSlotItemWidget_C Slot;
 	}; EquipWeaponSlot_Params Params;
 
 	Params.Slot = Slot;
@@ -666,11 +666,11 @@ inline void UUW-PersonalSupplyBoxWidget_C::EquipWeaponSlot(struct Unknown Slot) 
 }
 
 // Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.鉹@t元_10
-inline void UUW-PersonalSupplyBoxWidget_C::鉹@t元_10(struct Unknown Weapon) {
+inline void UUW-PersonalSupplyBoxWidget_C::鉹@t元_10(struct FInventoryItemInfo Weapon) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PersonalSupplyBoxWidget.UW-PersonalSupplyBoxWidget_C.鉹@t元_10");
 
 	struct 鉹@t元_10_Params {
-		struct Unknown Weapon;
+		struct FInventoryItemInfo Weapon;
 	}; 鉹@t元_10_Params Params;
 
 	Params.Weapon = Weapon;

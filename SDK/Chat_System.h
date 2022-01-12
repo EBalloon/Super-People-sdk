@@ -3,22 +3,22 @@ class AChat_System_C : public UActor {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x318 (8)
-	struct Unknown DefaultSceneRoot; // 0x320 (8)
-	struct TArray<Unknown> Muted Players; // 0x328 (16)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x318 (8)
+	struct USceneComponent DefaultSceneRoot; // 0x320 (8)
+	struct TArray<struct AChat_System_C> Muted Players; // 0x328 (16)
 	char Two-way Mute? : 0; // 0x338 (1)
 	struct FString Player Name; // 0x340 (16)
-	struct TArray<Unknown> Players to Message; // 0x350 (16)
-	struct Unknown Game Instance Blueprint; // 0x360 (8)
-	struct TArray<Unknown> Joined Groups; // 0x368 (16)
-	struct TArray<Unknown> Banned Groups; // 0x378 (16)
-	struct TArray<Unknown> Owned Groups; // 0x388 (16)
-	struct Unknown Chat Widget; // 0x398 (8)
-	struct Unknown HUD Widget; // 0x3A0 (8)
+	struct TArray<struct AChat_System_C> Players to Message; // 0x350 (16)
+	struct UChat_GameInstance_C Game Instance Blueprint; // 0x360 (8)
+	struct TArray<struct FString> Joined Groups; // 0x368 (16)
+	struct TArray<struct FString> Banned Groups; // 0x378 (16)
+	struct TArray<struct FString> Owned Groups; // 0x388 (16)
+	struct UChat_MainWidget_C Chat Widget; // 0x398 (8)
+	struct UHUD_Widget_C HUD Widget; // 0x3A0 (8)
 
 	void Get Current Group(struct FString& Group); // Function Chat_System.Chat_System_C.Get Current Group(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void Send Chat Message(struct FString Message, struct FString Group); // Function Chat_System.Chat_System_C.Send Chat Message(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Push Item(struct Unknown To:, struct Unknown From:, struct FString Message, struct FString Group, char Display Username?); // Function Chat_System.Chat_System_C.Push Item(Net|NetClient|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Push Item(struct AChat_System_C To:, struct AChat_System_C From:, struct FString Message, struct FString Group, char Display Username?); // Function Chat_System.Chat_System_C.Push Item(Net|NetClient|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Create Group(struct FString Group Name); // Function Chat_System.Chat_System_C.Create Group(Net|NetClient|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Add Global Group on Server(struct FString Group); // Function Chat_System.Chat_System_C.Add Global Group on Server(Net|NetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Join Group(struct FString Group Name); // Function Chat_System.Chat_System_C.Join Group(Net|NetClient|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -71,12 +71,12 @@ inline void AChat_System_C::Send Chat Message(struct FString Message, struct FSt
 }
 
 // Function Chat_System.Chat_System_C.Push Item
-inline void AChat_System_C::Push Item(struct Unknown To:, struct Unknown From:, struct FString Message, struct FString Group, char Display Username?) {
+inline void AChat_System_C::Push Item(struct AChat_System_C To:, struct AChat_System_C From:, struct FString Message, struct FString Group, char Display Username?) {
 	static auto fn = UObject::FindObject<UFunction>("Function Chat_System.Chat_System_C.Push Item");
 
 	struct Push Item_Params {
-		struct Unknown To:;
-		struct Unknown From:;
+		struct AChat_System_C To:;
+		struct AChat_System_C From:;
 		struct FString Message;
 		struct FString Group;
 		char Display Username?;

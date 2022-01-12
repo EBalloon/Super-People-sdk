@@ -3,10 +3,10 @@ class UUW-JetpackWidget_C : public UBravoHotelJetpackWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x268 (8)
-	struct Unknown FuelGauge; // 0x270 (8)
-	struct Unknown FuelIcon; // 0x278 (8)
-	struct Unknown FuelText; // 0x280 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x268 (8)
+	struct UProgressBar FuelGauge; // 0x270 (8)
+	struct UImage FuelIcon; // 0x278 (8)
+	struct UTextBlock FuelText; // 0x280 (8)
 
 	void SetNativeValues(); // Function UW-JetpackWidget.UW-JetpackWidget_C.SetNativeValues(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-JetpackWidget.UW-JetpackWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>

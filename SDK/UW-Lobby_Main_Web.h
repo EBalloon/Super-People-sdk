@@ -3,42 +3,42 @@ class UUW-Lobby_Main_Web_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown NewAnimation_2; // 0x250 (8)
-	struct Unknown BackgroundBlur_1; // 0x258 (8)
-	struct Unknown Blur; // 0x260 (8)
-	struct Unknown CanvasPanel_1; // 0x268 (8)
-	struct Unknown Focus; // 0x270 (8)
-	struct Unknown FocusPanel; // 0x278 (8)
-	struct Unknown Lobby; // 0x280 (8)
-	struct Unknown UW-ArmoryWidget; // 0x288 (8)
-	struct Unknown UW-CustomizedCharacter; // 0x290 (8)
-	struct Unknown UW-Exit_Popup; // 0x298 (8)
-	struct Unknown UW-Lobby_ArmoryMain; // 0x2A0 (8)
-	struct Unknown UW-ReplayListWidget; // 0x2A8 (8)
-	struct Unknown UW-Volume; // 0x2B0 (8)
-	struct Unknown NormalTextColor; // 0x2B8 (40)
-	struct Unknown HoverTextColor; // 0x2E0 (40)
-	struct Unknown LobbyWidgetRef; // 0x308 (8)
-	struct Unknown NormalSelectedTextColor; // 0x310 (40)
-	struct Unknown HoverSelectedTextColor; // 0x338 (40)
-	struct Unknown NormalOptionButtonColor; // 0x360 (16)
-	struct Unknown HoverOptionButtonColor; // 0x370 (16)
-	struct Unknown MatchingPopupTimerHandle; // 0x380 (8)
-	struct Unknown PopupKey; // 0x388 (24)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UWidgetAnimation NewAnimation_2; // 0x250 (8)
+	struct UBackgroundBlur BackgroundBlur_1; // 0x258 (8)
+	struct UBackgroundBlur Blur; // 0x260 (8)
+	struct UCanvasPanel CanvasPanel_1; // 0x268 (8)
+	struct UImage Focus; // 0x270 (8)
+	struct UCanvasPanel FocusPanel; // 0x278 (8)
+	struct UCoherentUIGTWidget Lobby; // 0x280 (8)
+	struct UUW-ArmoryWidget_C UW-ArmoryWidget; // 0x288 (8)
+	struct UUW-CustomizedCharacter_C UW-CustomizedCharacter; // 0x290 (8)
+	struct UUW-Exit_Popup_C UW-Exit_Popup; // 0x298 (8)
+	struct UUW-Lobby_ArmoryMain_C UW-Lobby_ArmoryMain; // 0x2A0 (8)
+	struct UUW-ReplayListWidget_C UW-ReplayListWidget; // 0x2A8 (8)
+	struct UUW-Volume_C UW-Volume; // 0x2B0 (8)
+	struct FSlateColor NormalTextColor; // 0x2B8 (40)
+	struct FSlateColor HoverTextColor; // 0x2E0 (40)
+	struct UBP-LobbyWidget_Web_C LobbyWidgetRef; // 0x308 (8)
+	struct FSlateColor NormalSelectedTextColor; // 0x310 (40)
+	struct FSlateColor HoverSelectedTextColor; // 0x338 (40)
+	struct FLinearColor NormalOptionButtonColor; // 0x360 (16)
+	struct FLinearColor HoverOptionButtonColor; // 0x370 (16)
+	struct FTimerHandle MatchingPopupTimerHandle; // 0x380 (8)
+	struct FKey PopupKey; // 0x388 (24)
 	char bExitPopupOpen : 0; // 0x3A0 (1)
 	char bOptionPopupOpen : 0; // 0x3A1 (1)
 	char BattleMode; // 0x3A2 (1)
-	struct Unknown LobbyCoherentSprite; // 0x3A8 (8)
-	struct Unknown SettingWidget; // 0x3B0 (8)
-	struct Unknown LobbySound; // 0x3B8 (8)
+	struct UDataTable LobbyCoherentSprite; // 0x3A8 (8)
+	struct USettingMainWidget_C SettingWidget; // 0x3B0 (8)
+	struct UAkComponent LobbySound; // 0x3B8 (8)
 	struct FString CurrentTab; // 0x3C0 (16)
-	struct Unknown UW-Inventory_ItemSlotHover; // 0x3D0 (8)
-	struct Unknown LobbyCoherent2DTexture; // 0x3D8 (8)
+	struct UUW-Inventory_ItemSlotHover_C UW-Inventory_ItemSlotHover; // 0x3D0 (8)
+	struct UDataTable LobbyCoherent2DTexture; // 0x3D8 (8)
 
 	void EndCraft(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.EndCraft(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void StartCraft(struct Unknown& CraftWeapon); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.StartCraft(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetHoverWidget(struct Unknown& UW-Inventory_ItemSlotHover); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.GetHoverWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void StartCraft(struct FResponse_CraftWeapon_Data& CraftWeapon); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.StartCraft(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetHoverWidget(struct UUW-Inventory_ItemSlotHover_C& UW-Inventory_ItemSlotHover); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.GetHoverWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void CreateHoverWidget(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.CreateHoverWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnChangedArmoryTab(struct FString TabName); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.OnChangedArmoryTab(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnChangedMainTab(struct FString TabName); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.OnChangedMainTab(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -55,8 +55,8 @@ public:
 	void ShowBlur(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.ShowBlur(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void HideUI(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.HideUI(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ShowArmoryUI(struct FString ArmoryResultName); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.ShowArmoryUI(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CheckKeyUp(struct Unknown Input, char& bResult); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.CheckKeyUp(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CheckKeyDown(struct Unknown Input, char& bResult); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.CheckKeyDown(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CheckKeyUp(struct FKey Input, char& bResult); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.CheckKeyUp(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CheckKeyDown(struct FKey Input, char& bResult); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.CheckKeyDown(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ProcessInput(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.ProcessInput(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ClickExit(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.ClickExit(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ClickOption(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.ClickOption(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -66,10 +66,10 @@ public:
 	void ShowMatchingStart(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.ShowMatchingStart(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void HideMatchingResult(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.HideMatchingResult(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ShowMatchingResult(int32_t ErrorCode, struct FString ExtraDescription); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.ShowMatchingResult(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetLobbyWidget(struct Unknown LobbyWidget); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.SetLobbyWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetLobbyWidget(struct UBP-LobbyWidget_Web_C LobbyWidget); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.SetLobbyWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void UIButtonClickSound(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.UIButtonClickSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void UIButtonHoverSound(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.UIButtonHoverSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown OnGenerateWidget_1(struct FString Item); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.OnGenerateWidget_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct UWidget OnGenerateWidget_1(struct FString Item); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.OnGenerateWidget_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__BTN-Title_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.BndEvt__BTN-Title_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__BTN-PUBLICMATCH_K2Node_ComponentBoundEvent_9_OnButtonClickedEvent__DelegateSignature(); // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.BndEvt__BTN-PUBLICMATCH_K2Node_ComponentBoundEvent_9_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -102,11 +102,11 @@ inline void UUW-Lobby_Main_Web_C::EndCraft() {
 }
 
 // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.StartCraft
-inline void UUW-Lobby_Main_Web_C::StartCraft(struct Unknown& CraftWeapon) {
+inline void UUW-Lobby_Main_Web_C::StartCraft(struct FResponse_CraftWeapon_Data& CraftWeapon) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.StartCraft");
 
 	struct StartCraft_Params {
-		struct Unknown& CraftWeapon;
+		struct FResponse_CraftWeapon_Data& CraftWeapon;
 	}; StartCraft_Params Params;
 
 
@@ -119,11 +119,11 @@ inline void UUW-Lobby_Main_Web_C::StartCraft(struct Unknown& CraftWeapon) {
 }
 
 // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.GetHoverWidget
-inline void UUW-Lobby_Main_Web_C::GetHoverWidget(struct Unknown& UW-Inventory_ItemSlotHover) {
+inline void UUW-Lobby_Main_Web_C::GetHoverWidget(struct UUW-Inventory_ItemSlotHover_C& UW-Inventory_ItemSlotHover) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.GetHoverWidget");
 
 	struct GetHoverWidget_Params {
-		struct Unknown& UW-Inventory_ItemSlotHover;
+		struct UUW-Inventory_ItemSlotHover_C& UW-Inventory_ItemSlotHover;
 	}; GetHoverWidget_Params Params;
 
 
@@ -367,11 +367,11 @@ inline void UUW-Lobby_Main_Web_C::ShowArmoryUI(struct FString ArmoryResultName) 
 }
 
 // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.CheckKeyUp
-inline void UUW-Lobby_Main_Web_C::CheckKeyUp(struct Unknown Input, char& bResult) {
+inline void UUW-Lobby_Main_Web_C::CheckKeyUp(struct FKey Input, char& bResult) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.CheckKeyUp");
 
 	struct CheckKeyUp_Params {
-		struct Unknown Input;
+		struct FKey Input;
 		char& bResult;
 	}; CheckKeyUp_Params Params;
 
@@ -386,11 +386,11 @@ inline void UUW-Lobby_Main_Web_C::CheckKeyUp(struct Unknown Input, char& bResult
 }
 
 // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.CheckKeyDown
-inline void UUW-Lobby_Main_Web_C::CheckKeyDown(struct Unknown Input, char& bResult) {
+inline void UUW-Lobby_Main_Web_C::CheckKeyDown(struct FKey Input, char& bResult) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.CheckKeyDown");
 
 	struct CheckKeyDown_Params {
-		struct Unknown Input;
+		struct FKey Input;
 		char& bResult;
 	}; CheckKeyDown_Params Params;
 
@@ -534,11 +534,11 @@ inline void UUW-Lobby_Main_Web_C::ShowMatchingResult(int32_t ErrorCode, struct F
 }
 
 // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.SetLobbyWidget
-inline void UUW-Lobby_Main_Web_C::SetLobbyWidget(struct Unknown LobbyWidget) {
+inline void UUW-Lobby_Main_Web_C::SetLobbyWidget(struct UBP-LobbyWidget_Web_C LobbyWidget) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.SetLobbyWidget");
 
 	struct SetLobbyWidget_Params {
-		struct Unknown LobbyWidget;
+		struct UBP-LobbyWidget_Web_C LobbyWidget;
 	}; SetLobbyWidget_Params Params;
 
 	Params.LobbyWidget = LobbyWidget;
@@ -577,12 +577,12 @@ inline void UUW-Lobby_Main_Web_C::UIButtonHoverSound() {
 }
 
 // Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.OnGenerateWidget_1
-inline struct Unknown UUW-Lobby_Main_Web_C::OnGenerateWidget_1(struct FString Item) {
+inline struct UWidget UUW-Lobby_Main_Web_C::OnGenerateWidget_1(struct FString Item) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Lobby_Main_Web.UW-Lobby_Main_Web_C.OnGenerateWidget_1");
 
 	struct OnGenerateWidget_1_Params {
 		struct FString Item;
-		struct Unknown ReturnValue;
+		struct UWidget ReturnValue;
 
 	}; OnGenerateWidget_1_Params Params;
 

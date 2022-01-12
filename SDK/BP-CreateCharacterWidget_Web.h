@@ -3,14 +3,14 @@ class UBP-CreateCharacterWidget_Web_C : public UBravoHotelCreateCharacterWidget 
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x308 (8)
-	struct Unknown CoherentUIGTWidget_90; // 0x310 (8)
-	struct Unknown UW-CustomizedCharacter; // 0x318 (8)
-	enum class Unknow CurrentSceneType; // 0x320 (1)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x308 (8)
+	struct UCoherentUIGTWidget CoherentUIGTWidget_90; // 0x310 (8)
+	struct UUW-CustomizedCharacter_C UW-CustomizedCharacter; // 0x318 (8)
+	enum class ESceneType CurrentSceneType; // 0x320 (1)
 
 	void Construct(); // Function BP-CreateCharacterWidget_Web.BP-CreateCharacterWidget_Web_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function BP-CreateCharacterWidget_Web.BP-CreateCharacterWidget_Web_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CustomEvent_1(enum class Unknow SceneType); // Function BP-CreateCharacterWidget_Web.BP-CreateCharacterWidget_Web_C.CustomEvent_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function BP-CreateCharacterWidget_Web.BP-CreateCharacterWidget_Web_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CustomEvent_1(enum class ESceneType SceneType); // Function BP-CreateCharacterWidget_Web.BP-CreateCharacterWidget_Web_C.CustomEvent_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_BP-CreateCharacterWidget_Web(int32_t EntryPoint); // Function BP-CreateCharacterWidget_Web.BP-CreateCharacterWidget_Web_C.ExecuteUbergraph_BP-CreateCharacterWidget_Web(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
@@ -29,11 +29,11 @@ inline void UBP-CreateCharacterWidget_Web_C::Construct() {
 }
 
 // Function BP-CreateCharacterWidget_Web.BP-CreateCharacterWidget_Web_C.Tick
-inline void UBP-CreateCharacterWidget_Web_C::Tick(struct Unknown MyGeometry, float InDeltaTime) {
+inline void UBP-CreateCharacterWidget_Web_C::Tick(struct FGeometry MyGeometry, float InDeltaTime) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-CreateCharacterWidget_Web.BP-CreateCharacterWidget_Web_C.Tick");
 
 	struct Tick_Params {
-		struct Unknown MyGeometry;
+		struct FGeometry MyGeometry;
 		float InDeltaTime;
 	}; Tick_Params Params;
 
@@ -46,11 +46,11 @@ inline void UBP-CreateCharacterWidget_Web_C::Tick(struct Unknown MyGeometry, flo
 }
 
 // Function BP-CreateCharacterWidget_Web.BP-CreateCharacterWidget_Web_C.CustomEvent_1
-inline void UBP-CreateCharacterWidget_Web_C::CustomEvent_1(enum class Unknow SceneType) {
+inline void UBP-CreateCharacterWidget_Web_C::CustomEvent_1(enum class ESceneType SceneType) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-CreateCharacterWidget_Web.BP-CreateCharacterWidget_Web_C.CustomEvent_1");
 
 	struct CustomEvent_1_Params {
-		enum class Unknow SceneType;
+		enum class ESceneType SceneType;
 	}; CustomEvent_1_Params Params;
 
 	Params.SceneType = SceneType;

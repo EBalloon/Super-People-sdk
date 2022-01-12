@@ -3,11 +3,11 @@ class UUW-MouseRightClick_C : public UUserWidget {
 
 public:
 
-	struct Unknown Ani_MouseRight; // 0x248 (8)
-	struct Unknown Image; // 0x250 (8)
-	struct Unknown Image_2; // 0x258 (8)
-	struct Unknown Image_292; // 0x260 (8)
-	struct Unknown Image_503; // 0x268 (8)
+	struct UWidgetAnimation Ani_MouseRight; // 0x248 (8)
+	struct UImage Image; // 0x250 (8)
+	struct UImage Image_2; // 0x258 (8)
+	struct UImage Image_292; // 0x260 (8)
+	struct UImage Image_503; // 0x268 (8)
 
 	void HideMouse(); // Function UW-MouseRightClick.UW-MouseRightClick_C.HideMouse(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ShowMouse(); // Function UW-MouseRightClick.UW-MouseRightClick_C.ShowMouse(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>

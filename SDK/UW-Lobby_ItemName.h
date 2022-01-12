@@ -3,8 +3,8 @@ class UUW-Lobby_ItemName_C : public UUserWidget {
 
 public:
 
-	struct Unknown HorizontalBox_Rarity; // 0x248 (8)
-	struct Unknown T_WeaponName; // 0x250 (8)
+	struct UHorizontalBox HorizontalBox_Rarity; // 0x248 (8)
+	struct UTextBlock T_WeaponName; // 0x250 (8)
 
 	void SetNameByID(int32_t ItemId); // Function UW-Lobby_ItemName.UW-Lobby_ItemName_C.SetNameByID(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetName(struct FText Name, int32_t Rarity); // Function UW-Lobby_ItemName.UW-Lobby_ItemName_C.SetName(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>

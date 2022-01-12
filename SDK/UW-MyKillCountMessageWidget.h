@@ -3,23 +3,23 @@ class UUW-MyKillCountMessageWidget_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Anim_HideKillAssist; // 0x250 (8)
-	struct Unknown Anim_ShowAssist; // 0x258 (8)
-	struct Unknown Anim_ShowKill; // 0x260 (8)
-	struct Unknown T_AssistCount; // 0x268 (8)
-	struct Unknown T_KillCount; // 0x270 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UWidgetAnimation Anim_HideKillAssist; // 0x250 (8)
+	struct UWidgetAnimation Anim_ShowAssist; // 0x258 (8)
+	struct UWidgetAnimation Anim_ShowKill; // 0x260 (8)
+	struct UTextBlock T_AssistCount; // 0x268 (8)
+	struct UTextBlock T_KillCount; // 0x270 (8)
 	int32_t DefaultFontSize; // 0x278 (4)
 	int32_t MiniFontSize; // 0x27C (4)
 	char IsShowingKillCount : 0; // 0x280 (1)
-	struct Unknown Timer_HideKillCountText; // 0x288 (8)
+	struct FTimerHandle Timer_HideKillCountText; // 0x288 (8)
 	float RemainTime; // 0x290 (4)
 
 	void SetHideTimer(); // Function UW-MyKillCountMessageWidget.UW-MyKillCountMessageWidget_C.SetHideTimer(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void UpdateAssistTextSize(); // Function UW-MyKillCountMessageWidget.UW-MyKillCountMessageWidget_C.UpdateAssistTextSize(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ShowKillCount(char bIsKill, struct FText Text); // Function UW-MyKillCountMessageWidget.UW-MyKillCountMessageWidget_C.ShowKillCount(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void HideKillCountText(); // Function UW-MyKillCountMessageWidget.UW-MyKillCountMessageWidget_C.HideKillCountText(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnAnimationFinished(struct Unknown Animation); // Function UW-MyKillCountMessageWidget.UW-MyKillCountMessageWidget_C.OnAnimationFinished(BlueprintCosmetic|Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnAnimationFinished(struct UWidgetAnimation Animation); // Function UW-MyKillCountMessageWidget.UW-MyKillCountMessageWidget_C.OnAnimationFinished(BlueprintCosmetic|Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-MyKillCountMessageWidget(int32_t EntryPoint); // Function UW-MyKillCountMessageWidget.UW-MyKillCountMessageWidget_C.ExecuteUbergraph_UW-MyKillCountMessageWidget(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
 };
 
@@ -83,11 +83,11 @@ inline void UUW-MyKillCountMessageWidget_C::HideKillCountText() {
 }
 
 // Function UW-MyKillCountMessageWidget.UW-MyKillCountMessageWidget_C.OnAnimationFinished
-inline void UUW-MyKillCountMessageWidget_C::OnAnimationFinished(struct Unknown Animation) {
+inline void UUW-MyKillCountMessageWidget_C::OnAnimationFinished(struct UWidgetAnimation Animation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MyKillCountMessageWidget.UW-MyKillCountMessageWidget_C.OnAnimationFinished");
 
 	struct OnAnimationFinished_Params {
-		struct Unknown Animation;
+		struct UWidgetAnimation Animation;
 	}; OnAnimationFinished_Params Params;
 
 	Params.Animation = Animation;

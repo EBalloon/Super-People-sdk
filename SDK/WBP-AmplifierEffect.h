@@ -3,18 +3,18 @@ class UWBP-AmplifierEffect_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown FadeOut; // 0x250 (8)
-	struct Unknown FadeIn; // 0x258 (8)
-	struct Unknown Image_Effect; // 0x260 (8)
-	struct Unknown NewVar_1; // 0x268 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UWidgetAnimation FadeOut; // 0x250 (8)
+	struct UWidgetAnimation FadeIn; // 0x258 (8)
+	struct UImage Image_Effect; // 0x260 (8)
+	struct UUMGSequencePlayer NewVar_1; // 0x268 (8)
 	char IsFadeInOutEvent : 0; // 0x270 (1)
 	float CurrentFade; // 0x274 (4)
 
 	void SetMaterialParameter(float Opacity, float Speed, float Scale); // Function WBP-AmplifierEffect.WBP-AmplifierEffect_C.SetMaterialParameter(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void EndAniEvent(); // Function WBP-AmplifierEffect.WBP-AmplifierEffect_C.EndAniEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void FadeOutEvent(); // Function WBP-AmplifierEffect.WBP-AmplifierEffect_C.FadeOutEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function WBP-AmplifierEffect.WBP-AmplifierEffect_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function WBP-AmplifierEffect.WBP-AmplifierEffect_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function WBP-AmplifierEffect.WBP-AmplifierEffect_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void FadeInEvent(); // Function WBP-AmplifierEffect.WBP-AmplifierEffect_C.FadeInEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void AmplifierEffectTikcEvent(float DeltaTime); // Function WBP-AmplifierEffect.WBP-AmplifierEffect_C.AmplifierEffectTikcEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -69,11 +69,11 @@ inline void UWBP-AmplifierEffect_C::FadeOutEvent() {
 }
 
 // Function WBP-AmplifierEffect.WBP-AmplifierEffect_C.Tick
-inline void UWBP-AmplifierEffect_C::Tick(struct Unknown MyGeometry, float InDeltaTime) {
+inline void UWBP-AmplifierEffect_C::Tick(struct FGeometry MyGeometry, float InDeltaTime) {
 	static auto fn = UObject::FindObject<UFunction>("Function WBP-AmplifierEffect.WBP-AmplifierEffect_C.Tick");
 
 	struct Tick_Params {
-		struct Unknown MyGeometry;
+		struct FGeometry MyGeometry;
 		float InDeltaTime;
 	}; Tick_Params Params;
 

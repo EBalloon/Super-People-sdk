@@ -3,7 +3,7 @@ class ABP-MagazineBase_C : public ABravoHotelMagazineForDrop {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x360 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x360 (8)
 	float PhysicsSimulateTime; // 0x368 (4)
 	float LifeTime; // 0x36C (4)
 	float AddImpulse; // 0x370 (4)

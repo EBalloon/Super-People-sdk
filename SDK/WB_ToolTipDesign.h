@@ -3,7 +3,7 @@ class UWB_ToolTipDesign_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
 	struct FText My Tool Tip Text; // 0x250 (24)
 
 	void Set Tool Tip Text Design(struct FText Tool Tip, char& -); // Function WB_ToolTipDesign.WB_ToolTipDesign_C.Set Tool Tip Text Design(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>

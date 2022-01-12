@@ -3,14 +3,14 @@ class UUW-Lobby_Craft_WeaponSelect_Slot_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Button_ItemSlotHover_4; // 0x250 (8)
-	struct Unknown UW-Inventory_ItemSlotHover_4; // 0x258 (8)
-	struct Unknown ItemWeaponInfo; // 0x260 (136)
-	struct Unknown ParentWidget; // 0x2E8 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UButton Button_ItemSlotHover_4; // 0x250 (8)
+	struct UUW-Inventory_ItemSlotHover_C UW-Inventory_ItemSlotHover_4; // 0x258 (8)
+	struct FResponse_Weapon_List_Data ItemWeaponInfo; // 0x260 (136)
+	struct UUW-Lobby_Craft_WeaponSelect_C ParentWidget; // 0x2E8 (8)
 
 	void SetButtonEnabled(char InIsEnabled); // Function UW-Lobby_Craft_WeaponSelect_Slot.UW-Lobby_Craft_WeaponSelect_Slot_C.SetButtonEnabled(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetWeaponInfo(struct Unknown& ItemWeaponInfo, struct Unknown ParentWidget); // Function UW-Lobby_Craft_WeaponSelect_Slot.UW-Lobby_Craft_WeaponSelect_Slot_C.SetWeaponInfo(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetWeaponInfo(struct FResponse_Weapon_List_Data& ItemWeaponInfo, struct UUW-Lobby_Craft_WeaponSelect_C ParentWidget); // Function UW-Lobby_Craft_WeaponSelect_Slot.UW-Lobby_Craft_WeaponSelect_Slot_C.SetWeaponInfo(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__Button_ItemSlotHover_3_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-Lobby_Craft_WeaponSelect_Slot.UW-Lobby_Craft_WeaponSelect_Slot_C.BndEvt__Button_ItemSlotHover_3_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ResetButton(); // Function UW-Lobby_Craft_WeaponSelect_Slot.UW-Lobby_Craft_WeaponSelect_Slot_C.ResetButton(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SelectButton(); // Function UW-Lobby_Craft_WeaponSelect_Slot.UW-Lobby_Craft_WeaponSelect_Slot_C.SelectButton(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -33,12 +33,12 @@ inline void UUW-Lobby_Craft_WeaponSelect_Slot_C::SetButtonEnabled(char InIsEnabl
 }
 
 // Function UW-Lobby_Craft_WeaponSelect_Slot.UW-Lobby_Craft_WeaponSelect_Slot_C.SetWeaponInfo
-inline void UUW-Lobby_Craft_WeaponSelect_Slot_C::SetWeaponInfo(struct Unknown& ItemWeaponInfo, struct Unknown ParentWidget) {
+inline void UUW-Lobby_Craft_WeaponSelect_Slot_C::SetWeaponInfo(struct FResponse_Weapon_List_Data& ItemWeaponInfo, struct UUW-Lobby_Craft_WeaponSelect_C ParentWidget) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Lobby_Craft_WeaponSelect_Slot.UW-Lobby_Craft_WeaponSelect_Slot_C.SetWeaponInfo");
 
 	struct SetWeaponInfo_Params {
-		struct Unknown& ItemWeaponInfo;
-		struct Unknown ParentWidget;
+		struct FResponse_Weapon_List_Data& ItemWeaponInfo;
+		struct UUW-Lobby_Craft_WeaponSelect_C ParentWidget;
 	}; SetWeaponInfo_Params Params;
 
 	Params.ParentWidget = ParentWidget;

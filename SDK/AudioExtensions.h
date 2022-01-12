@@ -3,7 +3,7 @@ class USoundfieldEffectBase : public Object {
 
 public:
 
-	struct Unknown Settings; // 0x28 (8)
+	struct USoundfieldEffectSettingsBase Settings; // 0x28 (8)
 };
 
 // ScriptStruct AudioExtensions.SoundModulationParameter
@@ -14,6 +14,6 @@ struct FSoundModulationParameter {
 
 // ScriptStruct AudioExtensions.SoundModulation
 struct FSoundModulation {
-	struct TArray<Unknown> Settings; // 0x0 (16)
+	struct TArray<struct USoundModulationPluginSourceSettingsBase> Settings; // 0x0 (16)
 };
 

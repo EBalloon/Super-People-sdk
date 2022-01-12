@@ -3,14 +3,14 @@ class UUW-Inventory_ProximityBoxSlot_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Title; // 0x250 (8)
-	struct Unknown WB-ItemList; // 0x258 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UTextBlock Title; // 0x250 (8)
+	struct UWrapBox WB-ItemList; // 0x258 (8)
 	struct FText TitleText; // 0x260 (24)
 	char TitleVisible : 0; // 0x278 (1)
-	struct Unknown TargetActor; // 0x280 (8)
-	struct TArray<Unknown> ItemInfos; // 0x288 (16)
-	struct Unknown InventoryWidget; // 0x298 (8)
+	struct UActor TargetActor; // 0x280 (8)
+	struct TArray<struct FInventoryItemInfo> ItemInfos; // 0x288 (16)
+	struct UUW-InventoryWidget_C InventoryWidget; // 0x298 (8)
 
 	void CreateSlots(); // Function UW-Inventory_ProximityBoxSlot.UW-Inventory_ProximityBoxSlot_C.CreateSlots(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-Inventory_ProximityBoxSlot.UW-Inventory_ProximityBoxSlot_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>

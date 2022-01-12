@@ -4,7 +4,7 @@ class UClothingAssetBase : public Object {
 public:
 
 	struct FString ImportedFilePath; // 0x28 (16)
-	struct Unknown AssetGuid; // 0x38 (16)
+	struct FGuid AssetGuid; // 0x38 (16)
 };
 
 // Class ClothingSystemRuntimeInterface.ClothPhysicalMeshDataBase_Legacy
@@ -12,36 +12,36 @@ class UClothPhysicalMeshDataBase_Legacy : public Object {
 
 public:
 
-	struct TArray<Unknown> Vertices; // 0x28 (16)
-	struct TArray<Unknown> Normals; // 0x38 (16)
-	struct TArray<Unknown> Indices; // 0x48 (16)
-	struct TArray<Unknown> InverseMasses; // 0x58 (16)
-	struct TArray<Unknown> BoneData; // 0x68 (16)
+	struct TArray<struct FVector> Vertices; // 0x28 (16)
+	struct TArray<struct FVector> Normals; // 0x38 (16)
+	struct TArray<uint32_t> Indices; // 0x48 (16)
+	struct TArray<float> InverseMasses; // 0x58 (16)
+	struct TArray<struct FClothVertBoneData> BoneData; // 0x68 (16)
 	int32_t NumFixedVerts; // 0x78 (4)
 	int32_t MaxBoneWeights; // 0x7C (4)
-	struct TArray<Unknown> SelfCollisionIndices; // 0x80 (16)
+	struct TArray<uint32_t> SelfCollisionIndices; // 0x80 (16)
 };
 
 // ScriptStruct ClothingSystemRuntimeInterface.ClothCollisionData
 struct FClothCollisionData {
-	struct TArray<Unknown> Spheres; // 0x0 (16)
-	struct TArray<Unknown> SphereConnections; // 0x10 (16)
-	struct TArray<Unknown> Convexes; // 0x20 (16)
-	struct TArray<Unknown> Boxes; // 0x30 (16)
+	struct TArray<struct FClothCollisionPrim_Sphere> Spheres; // 0x0 (16)
+	struct TArray<struct FClothCollisionPrim_SphereConnection> SphereConnections; // 0x10 (16)
+	struct TArray<struct FClothCollisionPrim_Convex> Convexes; // 0x20 (16)
+	struct TArray<struct FClothCollisionPrim_Box> Boxes; // 0x30 (16)
 };
 
 // ScriptStruct ClothingSystemRuntimeInterface.ClothCollisionPrim_Box
 struct FClothCollisionPrim_Box {
-	struct Unknown LocalPosition; // 0x0 (12)
-	struct Unknown LocalRotation; // 0x10 (16)
-	struct Unknown HalfExtents; // 0x20 (12)
+	struct FVector LocalPosition; // 0x0 (12)
+	struct FQuat LocalRotation; // 0x10 (16)
+	struct FVector HalfExtents; // 0x20 (12)
 	int32_t BoneIndex; // 0x2C (4)
 };
 
 // ScriptStruct ClothingSystemRuntimeInterface.ClothCollisionPrim_Convex
 struct FClothCollisionPrim_Convex {
-	struct TArray<Unknown> Planes; // 0x0 (16)
-	struct TArray<Unknown> SurfacePoints; // 0x10 (16)
+	struct TArray<struct FPlane> Planes; // 0x0 (16)
+	struct TArray<struct FVector> SurfacePoints; // 0x10 (16)
 	int32_t BoneIndex; // 0x20 (4)
 };
 
@@ -54,7 +54,7 @@ struct FClothCollisionPrim_SphereConnection {
 struct FClothCollisionPrim_Sphere {
 	int32_t BoneIndex; // 0x0 (4)
 	float Radius; // 0x4 (4)
-	struct Unknown LocalPosition; // 0x8 (12)
+	struct FVector LocalPosition; // 0x8 (12)
 };
 
 // ScriptStruct ClothingSystemRuntimeInterface.ClothVertBoneData

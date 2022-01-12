@@ -13,13 +13,13 @@ class UBravoHotelPatchWidget : public UUserWidget {
 
 public:
 
-	struct Unknown PatchService; // 0x268 (8)
+	struct UBravoHotelPatchService PatchService; // 0x268 (8)
 
 	void StartPatchService(); // Function BravoHotelPatch.BravoHotelPatchWidget.StartPatchService(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x20840E0>
 	void ReceiveStartPatchService(); // Function BravoHotelPatch.BravoHotelPatchWidget.ReceiveStartPatchService(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ReceiveReadyToStartGame(); // Function BravoHotelPatch.BravoHotelPatchWidget.ReceiveReadyToStartGame(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ReceiveReadyToInstallPatch(); // Function BravoHotelPatch.BravoHotelPatchWidget.ReceiveReadyToInstallPatch(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ReceiveErrorPatchService(enum class Unknow ErrorCode, struct FText& ErrorText); // Function BravoHotelPatch.BravoHotelPatchWidget.ReceiveErrorPatchService(Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ReceiveErrorPatchService(enum class EPatchServiceError ErrorCode, struct FText& ErrorText); // Function BravoHotelPatch.BravoHotelPatchWidget.ReceiveErrorPatchService(Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	struct FText GetVersionText(); // Function BravoHotelPatch.BravoHotelPatchWidget.GetVersionText(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x2084040>
 	struct FString GetGameDefaultMap(); // Function BravoHotelPatch.BravoHotelPatchWidget.GetGameDefaultMap(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x2083FC0>
 	struct FText GetDownloadText(); // Function BravoHotelPatch.BravoHotelPatchWidget.GetDownloadText(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x2083F20>
@@ -82,11 +82,11 @@ inline void UBravoHotelPatchWidget::ReceiveReadyToInstallPatch() {
 }
 
 // Function BravoHotelPatch.BravoHotelPatchWidget.ReceiveErrorPatchService
-inline void UBravoHotelPatchWidget::ReceiveErrorPatchService(enum class Unknow ErrorCode, struct FText& ErrorText) {
+inline void UBravoHotelPatchWidget::ReceiveErrorPatchService(enum class EPatchServiceError ErrorCode, struct FText& ErrorText) {
 	static auto fn = UObject::FindObject<UFunction>("Function BravoHotelPatch.BravoHotelPatchWidget.ReceiveErrorPatchService");
 
 	struct ReceiveErrorPatchService_Params {
-		enum class Unknow ErrorCode;
+		enum class EPatchServiceError ErrorCode;
 		struct FText& ErrorText;
 	}; ReceiveErrorPatchService_Params Params;
 

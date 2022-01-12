@@ -3,21 +3,21 @@ class UUW-PlayerIconWidget_C : public UBravoHotelPlayerIconWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x318 (8)
-	struct Unknown Anim_OnNotifyPos; // 0x320 (8)
-	struct Unknown Anim_OnAttacked; // 0x328 (8)
-	struct Unknown Canvas_Attacked; // 0x330 (8)
-	struct Unknown Canvas_Fire; // 0x338 (8)
-	struct Unknown Canvas_NotifyPos; // 0x340 (8)
-	struct Unknown Img_FreeCam; // 0x348 (8)
-	struct Unknown PlayerState; // 0x350 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x318 (8)
+	struct UWidgetAnimation Anim_OnNotifyPos; // 0x320 (8)
+	struct UWidgetAnimation Anim_OnAttacked; // 0x328 (8)
+	struct UCanvasPanel Canvas_Attacked; // 0x330 (8)
+	struct UCanvasPanel Canvas_Fire; // 0x338 (8)
+	struct UCanvasPanel Canvas_NotifyPos; // 0x340 (8)
+	struct UImage Img_FreeCam; // 0x348 (8)
+	struct ABravoHotelPlayerState PlayerState; // 0x350 (8)
 
 	void OnClickPlayerNameButton(); // Function UW-PlayerIconWidget.UW-PlayerIconWidget_C.OnClickPlayerNameButton(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnAttackedWidget(); // Function UW-PlayerIconWidget.UW-PlayerIconWidget_C.OnAttackedWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnFireWidget(struct Unknown MapComp, struct Unknown Rotation, float Length); // Function UW-PlayerIconWidget.UW-PlayerIconWidget_C.OnFireWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnFireWidget(struct UUW-MapComp_C MapComp, struct FRotator Rotation, float Length); // Function UW-PlayerIconWidget.UW-PlayerIconWidget_C.OnFireWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetFreeCam(); // Function UW-PlayerIconWidget.UW-PlayerIconWidget_C.SetFreeCam(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Initialize(struct Unknown PlayerState); // Function UW-PlayerIconWidget.UW-PlayerIconWidget_C.Initialize(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnAnimationFinished(struct Unknown Animation); // Function UW-PlayerIconWidget.UW-PlayerIconWidget_C.OnAnimationFinished(BlueprintCosmetic|Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Initialize(struct ABravoHotelPlayerState PlayerState); // Function UW-PlayerIconWidget.UW-PlayerIconWidget_C.Initialize(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnAnimationFinished(struct UWidgetAnimation Animation); // Function UW-PlayerIconWidget.UW-PlayerIconWidget_C.OnAnimationFinished(BlueprintCosmetic|Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Rotate(float Angle); // Function UW-PlayerIconWidget.UW-PlayerIconWidget_C.Rotate(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__BT_UserName_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-PlayerIconWidget.UW-PlayerIconWidget_C.BndEvt__BT_UserName_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void PlayTargetPosAnim(); // Function UW-PlayerIconWidget.UW-PlayerIconWidget_C.PlayTargetPosAnim(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -53,12 +53,12 @@ inline void UUW-PlayerIconWidget_C::OnAttackedWidget() {
 }
 
 // Function UW-PlayerIconWidget.UW-PlayerIconWidget_C.OnFireWidget
-inline void UUW-PlayerIconWidget_C::OnFireWidget(struct Unknown MapComp, struct Unknown Rotation, float Length) {
+inline void UUW-PlayerIconWidget_C::OnFireWidget(struct UUW-MapComp_C MapComp, struct FRotator Rotation, float Length) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PlayerIconWidget.UW-PlayerIconWidget_C.OnFireWidget");
 
 	struct OnFireWidget_Params {
-		struct Unknown MapComp;
-		struct Unknown Rotation;
+		struct UUW-MapComp_C MapComp;
+		struct FRotator Rotation;
 		float Length;
 	}; OnFireWidget_Params Params;
 
@@ -86,11 +86,11 @@ inline void UUW-PlayerIconWidget_C::SetFreeCam() {
 }
 
 // Function UW-PlayerIconWidget.UW-PlayerIconWidget_C.Initialize
-inline void UUW-PlayerIconWidget_C::Initialize(struct Unknown PlayerState) {
+inline void UUW-PlayerIconWidget_C::Initialize(struct ABravoHotelPlayerState PlayerState) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PlayerIconWidget.UW-PlayerIconWidget_C.Initialize");
 
 	struct Initialize_Params {
-		struct Unknown PlayerState;
+		struct ABravoHotelPlayerState PlayerState;
 	}; Initialize_Params Params;
 
 	Params.PlayerState = PlayerState;
@@ -101,11 +101,11 @@ inline void UUW-PlayerIconWidget_C::Initialize(struct Unknown PlayerState) {
 }
 
 // Function UW-PlayerIconWidget.UW-PlayerIconWidget_C.OnAnimationFinished
-inline void UUW-PlayerIconWidget_C::OnAnimationFinished(struct Unknown Animation) {
+inline void UUW-PlayerIconWidget_C::OnAnimationFinished(struct UWidgetAnimation Animation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PlayerIconWidget.UW-PlayerIconWidget_C.OnAnimationFinished");
 
 	struct OnAnimationFinished_Params {
-		struct Unknown Animation;
+		struct UWidgetAnimation Animation;
 	}; OnAnimationFinished_Params Params;
 
 	Params.Animation = Animation;

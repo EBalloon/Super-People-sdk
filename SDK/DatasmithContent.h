@@ -100,8 +100,8 @@ class UDatasmithActorTemplate : public UDatasmithObjectTemplate {
 
 public:
 
-	struct TSet<Unknown> Layers; // 0x30 (80)
-	struct TSet<Unknown> Tags; // 0x80 (80)
+	struct TSet<struct FName> Layers; // 0x30 (80)
+	struct TSet<struct FName> Tags; // 0x80 (80)
 };
 
 // Class DatasmithContent.DatasmithAreaLightActor
@@ -109,17 +109,17 @@ class ADatasmithAreaLightActor : public UActor {
 
 public:
 
-	enum class Unknow LightType; // 0x318 (1)
-	enum class Unknow LightShape; // 0x319 (1)
-	struct Unknown Dimensions; // 0x31C (8)
+	enum class EDatasmithAreaLightActorType LightType; // 0x318 (1)
+	enum class EDatasmithAreaLightActorShape LightShape; // 0x319 (1)
+	struct FVector2D Dimensions; // 0x31C (8)
 	float Intensity; // 0x324 (4)
-	enum class Unknow IntensityUnits; // 0x328 (1)
-	struct Unknown Color; // 0x32C (16)
+	enum class ELightUnits IntensityUnits; // 0x328 (1)
+	struct FLinearColor Color; // 0x32C (16)
 	float Temperature; // 0x33C (4)
-	struct Unknown IESTexture; // 0x340 (8)
+	struct UTextureLightProfile IESTexture; // 0x340 (8)
 	char bUseIESBrightness : 0; // 0x348 (1)
 	float IESBrightnessScale; // 0x34C (4)
-	struct Unknown Rotation; // 0x350 (12)
+	struct FRotator Rotation; // 0x350 (12)
 	float SourceRadius; // 0x35C (4)
 	float SourceLength; // 0x360 (4)
 	float AttenuationRadius; // 0x364 (4)
@@ -132,17 +132,17 @@ class UDatasmithAreaLightActorTemplate : public UDatasmithObjectTemplate {
 
 public:
 
-	enum class Unknow LightType; // 0x30 (1)
-	enum class Unknow LightShape; // 0x31 (1)
-	struct Unknown Dimensions; // 0x34 (8)
-	struct Unknown Color; // 0x3C (16)
+	enum class EDatasmithAreaLightActorType LightType; // 0x30 (1)
+	enum class EDatasmithAreaLightActorShape LightShape; // 0x31 (1)
+	struct FVector2D Dimensions; // 0x34 (8)
+	struct FLinearColor Color; // 0x3C (16)
 	float Intensity; // 0x4C (4)
-	enum class Unknow IntensityUnits; // 0x50 (1)
+	enum class ELightUnits IntensityUnits; // 0x50 (1)
 	float Temperature; // 0x54 (4)
-	struct Unknown IESTexture; // 0x58 (40)
+	struct TSoftObjectPtr<UTextureLightProfile> IESTexture; // 0x58 (40)
 	char bUseIESBrightness : 0; // 0x80 (1)
 	float IESBrightnessScale; // 0x84 (4)
-	struct Unknown Rotation; // 0x88 (12)
+	struct FRotator Rotation; // 0x88 (12)
 	float SourceRadius; // 0x94 (4)
 	float SourceLength; // 0x98 (4)
 	float AttenuationRadius; // 0x9C (4)
@@ -227,7 +227,7 @@ class UDatasmithAssetUserData : public UAssetUserData {
 
 public:
 
-	struct TMap<Unknown, Unknown> MetaData; // 0x28 (80)
+	struct TMap<struct FName, struct FString> MetaData; // 0x28 (80)
 };
 
 // Class DatasmithContent.DatasmithCineCameraActorTemplate
@@ -235,7 +235,7 @@ class UDatasmithCineCameraActorTemplate : public UDatasmithObjectTemplate {
 
 public:
 
-	struct Unknown LookatTrackingSettings; // 0x30 (48)
+	struct FDatasmithCameraLookatTrackingSettingsTemplate LookatTrackingSettings; // 0x30 (48)
 };
 
 // Class DatasmithContent.DatasmithCineCameraComponentTemplate
@@ -243,12 +243,12 @@ class UDatasmithCineCameraComponentTemplate : public UDatasmithObjectTemplate {
 
 public:
 
-	struct Unknown FilmbackSettings; // 0x30 (8)
-	struct Unknown LensSettings; // 0x38 (4)
-	struct Unknown FocusSettings; // 0x3C (8)
+	struct FDatasmithCameraFilmbackSettingsTemplate FilmbackSettings; // 0x30 (8)
+	struct FDatasmithCameraLensSettingsTemplate LensSettings; // 0x38 (4)
+	struct FDatasmithCameraFocusSettingsTemplate FocusSettings; // 0x3C (8)
 	float CurrentFocalLength; // 0x44 (4)
 	float CurrentAperture; // 0x48 (4)
-	struct Unknown PostProcessSettings; // 0x50 (64)
+	struct FDatasmithPostProcessSettingsTemplate PostProcessSettings; // 0x50 (64)
 };
 
 // Class DatasmithContent.DatasmithImportedSequencesActor
@@ -256,9 +256,9 @@ class ADatasmithImportedSequencesActor : public UActor {
 
 public:
 
-	struct TArray<Unknown> ImportedSequences; // 0x318 (16)
+	struct TArray<struct ULevelSequence> ImportedSequences; // 0x318 (16)
 
-	void PlayLevelSequence(struct Unknown SequenceToPlay); // Function DatasmithContent.DatasmithImportedSequencesActor.PlayLevelSequence(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16C9DF0>
+	void PlayLevelSequence(struct ULevelSequence SequenceToPlay); // Function DatasmithContent.DatasmithImportedSequencesActor.PlayLevelSequence(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16C9DF0>
 };
 
 // Class DatasmithContent.DatasmithCommonTessellationOptions
@@ -266,7 +266,7 @@ class UDatasmithCommonTessellationOptions : public UDatasmithOptionsBase {
 
 public:
 
-	struct Unknown options; // 0x28 (16)
+	struct FDatasmithTessellationOptions options; // 0x28 (16)
 };
 
 // Class DatasmithContent.DatasmithImportOptions
@@ -274,16 +274,16 @@ class UDatasmithImportOptions : public UDatasmithOptionsBase {
 
 public:
 
-	enum class Unknow SearchPackagePolicy; // 0x28 (1)
-	enum class Unknow MaterialConflictPolicy; // 0x29 (1)
-	enum class Unknow TextureConflictPolicy; // 0x2A (1)
-	enum class Unknow StaticMeshActorImportPolicy; // 0x2B (1)
-	enum class Unknow LightImportPolicy; // 0x2C (1)
-	enum class Unknow CameraImportPolicy; // 0x2D (1)
-	enum class Unknow OtherActorImportPolicy; // 0x2E (1)
-	enum class Unknow MaterialQuality; // 0x2F (1)
-	struct Unknown BaseOptions; // 0x34 (20)
-	struct Unknown ReimportOptions; // 0x48 (2)
+	enum class EDatasmithImportSearchPackagePolicy SearchPackagePolicy; // 0x28 (1)
+	enum class EDatasmithImportAssetConflictPolicy MaterialConflictPolicy; // 0x29 (1)
+	enum class EDatasmithImportAssetConflictPolicy TextureConflictPolicy; // 0x2A (1)
+	enum class EDatasmithImportActorPolicy StaticMeshActorImportPolicy; // 0x2B (1)
+	enum class EDatasmithImportActorPolicy LightImportPolicy; // 0x2C (1)
+	enum class EDatasmithImportActorPolicy CameraImportPolicy; // 0x2D (1)
+	enum class EDatasmithImportActorPolicy OtherActorImportPolicy; // 0x2E (1)
+	enum class EDatasmithImportMaterialQuality MaterialQuality; // 0x2F (1)
+	struct FDatasmithImportBaseOptions BaseOptions; // 0x34 (20)
+	struct FDatasmithReimportOptions ReimportOptions; // 0x48 (2)
 	struct FString Filename; // 0x50 (16)
 	struct FString FilePath; // 0x60 (16)
 };
@@ -293,7 +293,7 @@ class UDatasmithLandscapeTemplate : public UDatasmithObjectTemplate {
 
 public:
 
-	struct Unknown LandscapeMaterial; // 0x30 (8)
+	struct UMaterialInterface LandscapeMaterial; // 0x30 (8)
 	int32_t StaticLightingLOD; // 0x38 (4)
 };
 
@@ -309,9 +309,9 @@ public:
 	float Intensity; // 0x38 (4)
 	float Temperature; // 0x3C (4)
 	float IESBrightnessScale; // 0x40 (4)
-	struct Unknown LightColor; // 0x44 (16)
-	struct Unknown LightFunctionMaterial; // 0x58 (8)
-	struct Unknown IESTexture; // 0x60 (8)
+	struct FLinearColor LightColor; // 0x44 (16)
+	struct UMaterialInterface LightFunctionMaterial; // 0x58 (8)
+	struct UTextureLightProfile IESTexture; // 0x60 (8)
 };
 
 // Class DatasmithContent.DatasmithMaterialInstanceTemplate
@@ -319,11 +319,11 @@ class UDatasmithMaterialInstanceTemplate : public UDatasmithObjectTemplate {
 
 public:
 
-	struct Unknown ParentMaterial; // 0x30 (40)
-	struct TMap<Unknown, Unknown> ScalarParameterValues; // 0x58 (80)
-	struct TMap<Unknown, Unknown> VectorParameterValues; // 0xA8 (80)
-	struct TMap<Unknown, Unknown> TextureParameterValues; // 0xF8 (80)
-	struct Unknown StaticParameters; // 0x148 (80)
+	struct TSoftObjectPtr<UMaterialInterface> ParentMaterial; // 0x30 (40)
+	struct TMap<struct FName, float> ScalarParameterValues; // 0x58 (80)
+	struct TMap<struct FName, struct FLinearColor> VectorParameterValues; // 0xA8 (80)
+	struct TMap<struct FName, struct TSoftObjectPtr<UTexture>> TextureParameterValues; // 0xF8 (80)
+	struct FDatasmithStaticParameterSetTemplate StaticParameters; // 0x148 (80)
 };
 
 // Class DatasmithContent.DatasmithPointLightComponentTemplate
@@ -331,7 +331,7 @@ class UDatasmithPointLightComponentTemplate : public UDatasmithObjectTemplate {
 
 public:
 
-	enum class Unknow IntensityUnits; // 0x30 (1)
+	enum class ELightUnits IntensityUnits; // 0x30 (1)
 	float SourceRadius; // 0x34 (4)
 	float SourceLength; // 0x38 (4)
 	float AttenuationRadius; // 0x3C (4)
@@ -342,7 +342,7 @@ class UDatasmithPostProcessVolumeTemplate : public UDatasmithObjectTemplate {
 
 public:
 
-	struct Unknown Settings; // 0x30 (64)
+	struct FDatasmithPostProcessSettingsTemplate Settings; // 0x30 (64)
 	char bEnabled : 0; // 0x70 (1)
 	char bUnbound : 0; // 0x70 (1)
 };
@@ -352,8 +352,8 @@ class ADatasmithSceneActor : public UActor {
 
 public:
 
-	struct Unknown Scene; // 0x318 (8)
-	struct TMap<Unknown, Unknown> RelatedActors; // 0x320 (80)
+	struct UDatasmithScene Scene; // 0x318 (8)
+	struct TMap<struct FName, struct TSoftObjectPtr<UActor>> RelatedActors; // 0x320 (80)
 };
 
 // Class DatasmithContent.DatasmithSceneComponentTemplate
@@ -361,10 +361,10 @@ class UDatasmithSceneComponentTemplate : public UDatasmithObjectTemplate {
 
 public:
 
-	struct Unknown RelativeTransform; // 0x30 (48)
+	struct FTransform RelativeTransform; // 0x30 (48)
 	char Mobility; // 0x60 (1)
-	struct Unknown AttachParent; // 0x68 (40)
-	struct TSet<Unknown> Tags; // 0x90 (80)
+	struct TSoftObjectPtr<USceneComponent> AttachParent; // 0x68 (40)
+	struct TSet<struct FName> Tags; // 0x90 (80)
 };
 
 // Class DatasmithContent.DatasmithSkyLightComponentTemplate
@@ -374,7 +374,7 @@ public:
 
 	char SourceType; // 0x30 (1)
 	int32_t CubemapResolution; // 0x34 (4)
-	struct Unknown Cubemap; // 0x38 (8)
+	struct UTextureCube Cubemap; // 0x38 (8)
 };
 
 // Class DatasmithContent.DatasmithSpotLightComponentTemplate
@@ -391,8 +391,8 @@ class UDatasmithStaticMeshComponentTemplate : public UDatasmithObjectTemplate {
 
 public:
 
-	struct Unknown StaticMesh; // 0x30 (8)
-	struct TArray<Unknown> OverrideMaterials; // 0x38 (16)
+	struct UStaticMesh StaticMesh; // 0x30 (8)
+	struct TArray<struct UMaterialInterface> OverrideMaterials; // 0x38 (16)
 };
 
 // Class DatasmithContent.DatasmithStaticMeshTemplate
@@ -400,18 +400,18 @@ class UDatasmithStaticMeshTemplate : public UDatasmithObjectTemplate {
 
 public:
 
-	struct Unknown SectionInfoMap; // 0x30 (80)
+	struct FDatasmithMeshSectionInfoMapTemplate SectionInfoMap; // 0x30 (80)
 	int32_t LightMapCoordinateIndex; // 0x80 (4)
 	int32_t LightMapResolution; // 0x84 (4)
-	struct TArray<Unknown> BuildSettings; // 0x88 (16)
-	struct TArray<Unknown> StaticMaterials; // 0x98 (16)
+	struct TArray<struct FDatasmithMeshBuildSettingsTemplate> BuildSettings; // 0x88 (16)
+	struct TArray<struct FDatasmithStaticMaterialTemplate> StaticMaterials; // 0x98 (16)
 };
 
 // ScriptStruct DatasmithContent.DatasmithCameraLookatTrackingSettingsTemplate
 struct FDatasmithCameraLookatTrackingSettingsTemplate {
 	char bEnableLookAtTracking : 0; // 0x0 (1)
 	char bAllowRoll : 0; // 0x0 (1)
-	struct Unknown ActorToTrack; // 0x8 (40)
+	struct TSoftObjectPtr<UActor> ActorToTrack; // 0x8 (40)
 };
 
 // ScriptStruct DatasmithContent.DatasmithPostProcessSettingsTemplate
@@ -426,8 +426,8 @@ struct FDatasmithPostProcessSettingsTemplate {
 	char bOverride_DepthOfFieldFstop : 0; // 0x4 (1)
 	float WhiteTemp; // 0x8 (4)
 	float VignetteIntensity; // 0xC (4)
-	struct Unknown FilmWhitePoint; // 0x10 (16)
-	struct Unknown ColorSaturation; // 0x20 (16)
+	struct FLinearColor FilmWhitePoint; // 0x10 (16)
+	struct FVector4 ColorSaturation; // 0x20 (16)
 	char AutoExposureMethod; // 0x30 (1)
 	float CameraISO; // 0x34 (4)
 	float CameraShutterSpeed; // 0x38 (4)
@@ -436,7 +436,7 @@ struct FDatasmithPostProcessSettingsTemplate {
 
 // ScriptStruct DatasmithContent.DatasmithCameraFocusSettingsTemplate
 struct FDatasmithCameraFocusSettingsTemplate {
-	enum class Unknow FocusMethod; // 0x0 (1)
+	enum class ECameraFocusMethod FocusMethod; // 0x0 (1)
 	float ManualFocusDistance; // 0x4 (4)
 };
 
@@ -456,25 +456,25 @@ struct FDatasmithTessellationOptions {
 	float ChordTolerance; // 0x0 (4)
 	float MaxEdgeLength; // 0x4 (4)
 	float NormalTolerance; // 0x8 (4)
-	enum class Unknow StitchingTechnique; // 0xC (1)
+	enum class EDatasmithCADStitchingTechnique StitchingTechnique; // 0xC (1)
 };
 
 // ScriptStruct DatasmithContent.DatasmithImportBaseOptions
 struct FDatasmithImportBaseOptions {
-	enum class Unknow SceneHandling; // 0x0 (1)
+	enum class EDatasmithImportScene SceneHandling; // 0x0 (1)
 	char bIncludeGeometry : 0; // 0x1 (1)
 	char bIncludeMaterial : 0; // 0x2 (1)
 	char bIncludeLight : 0; // 0x3 (1)
 	char bIncludeCamera : 0; // 0x4 (1)
 	char bIncludeAnimation : 0; // 0x5 (1)
-	struct Unknown AssetOptions; // 0x8 (8)
-	struct Unknown StaticMeshOptions; // 0x10 (4)
+	struct FDatasmithAssetImportOptions AssetOptions; // 0x8 (8)
+	struct FDatasmithStaticMeshImportOptions StaticMeshOptions; // 0x10 (4)
 };
 
 // ScriptStruct DatasmithContent.DatasmithStaticMeshImportOptions
 struct FDatasmithStaticMeshImportOptions {
-	enum class Unknow MinLightmapResolution; // 0x0 (1)
-	enum class Unknow MaxLightmapResolution; // 0x1 (1)
+	enum class EDatasmithImportLightmapMin MinLightmapResolution; // 0x0 (1)
+	enum class EDatasmithImportLightmapMax MaxLightmapResolution; // 0x1 (1)
 	char bGenerateLightmapUVs : 0; // 0x2 (1)
 	char bRemoveDegenerates : 0; // 0x3 (1)
 };
@@ -492,12 +492,12 @@ struct FDatasmithReimportOptions {
 
 // ScriptStruct DatasmithContent.DatasmithStaticParameterSetTemplate
 struct FDatasmithStaticParameterSetTemplate {
-	struct TMap<Unknown, Unknown> StaticSwitchParameters; // 0x0 (80)
+	struct TMap<struct FName, char> StaticSwitchParameters; // 0x0 (80)
 };
 
 // ScriptStruct DatasmithContent.DatasmithMeshSectionInfoMapTemplate
 struct FDatasmithMeshSectionInfoMapTemplate {
-	struct TMap<Unknown, Unknown> Map; // 0x0 (80)
+	struct TMap<uint32_t, struct FDatasmithMeshSectionInfoTemplate> Map; // 0x0 (80)
 };
 
 // ScriptStruct DatasmithContent.DatasmithMeshSectionInfoTemplate
@@ -508,7 +508,7 @@ struct FDatasmithMeshSectionInfoTemplate {
 // ScriptStruct DatasmithContent.DatasmithStaticMaterialTemplate
 struct FDatasmithStaticMaterialTemplate {
 	struct FName MaterialSlotName; // 0x0 (8)
-	struct Unknown MaterialInterface; // 0x8 (8)
+	struct UMaterialInterface MaterialInterface; // 0x8 (8)
 };
 
 // ScriptStruct DatasmithContent.DatasmithMeshBuildSettingsTemplate
@@ -527,11 +527,11 @@ struct FDatasmithMeshBuildSettingsTemplate {
 };
 
 // Function DatasmithContent.DatasmithImportedSequencesActor.PlayLevelSequence
-inline void ADatasmithImportedSequencesActor::PlayLevelSequence(struct Unknown SequenceToPlay) {
+inline void ADatasmithImportedSequencesActor::PlayLevelSequence(struct ULevelSequence SequenceToPlay) {
 	static auto fn = UObject::FindObject<UFunction>("Function DatasmithContent.DatasmithImportedSequencesActor.PlayLevelSequence");
 
 	struct PlayLevelSequence_Params {
-		struct Unknown SequenceToPlay;
+		struct ULevelSequence SequenceToPlay;
 	}; PlayLevelSequence_Params Params;
 
 	Params.SequenceToPlay = SequenceToPlay;

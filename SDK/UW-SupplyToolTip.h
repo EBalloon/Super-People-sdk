@@ -3,12 +3,12 @@ class UUW-SupplyToolTip_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown GoldImage; // 0x250 (8)
-	struct Unknown Image_362; // 0x258 (8)
-	struct Unknown Message; // 0x260 (8)
-	struct Unknown PriceValue; // 0x268 (8)
-	struct Unknown SizeBox_2; // 0x270 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UImage GoldImage; // 0x250 (8)
+	struct UImage Image_362; // 0x258 (8)
+	struct UTextBlock Message; // 0x260 (8)
+	struct UTextBlock PriceValue; // 0x268 (8)
+	struct USizeBox SizeBox_2; // 0x270 (8)
 
 	void SetPriceData(struct FText ItemName, int32_t Price); // Function UW-SupplyToolTip.UW-SupplyToolTip_C.SetPriceData(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetData(struct FText Msg); // Function UW-SupplyToolTip.UW-SupplyToolTip_C.SetData(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>

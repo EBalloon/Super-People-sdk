@@ -3,13 +3,13 @@ class UBP-BHGameInstanceWithSettings_C : public UBravoHotelGameInstance {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x550 (8)
-	struct Unknown Game Settings Wrapper; // 0x558 (8)
-	struct Unknown LastPCPosition; // 0x560 (12)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x550 (8)
+	struct UBP_GameSettingsWrapper_C Game Settings Wrapper; // 0x558 (8)
+	struct FVector LastPCPosition; // 0x560 (12)
 
 	void Update Audio Channel(char Audio Channel, float Volume, char& -); // Function BP-BHGameInstanceWithSettings.BP-BHGameInstanceWithSettings_C.Update Audio Channel(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Run Console Command(struct FString Console Command, char& -); // Function BP-BHGameInstanceWithSettings.BP-BHGameInstanceWithSettings_C.Run Console Command(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Get Settings Instance(struct Unknown& SettingsWrapper); // Function BP-BHGameInstanceWithSettings.BP-BHGameInstanceWithSettings_C.Get Settings Instance(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Get Settings Instance(struct UBP_GameSettingsWrapper_C& SettingsWrapper); // Function BP-BHGameInstanceWithSettings.BP-BHGameInstanceWithSettings_C.Get Settings Instance(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void StartRecordingReplay(); // Function BP-BHGameInstanceWithSettings.BP-BHGameInstanceWithSettings_C.StartRecordingReplay(Net|NetClient|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void StopRecordingReplay(); // Function BP-BHGameInstanceWithSettings.BP-BHGameInstanceWithSettings_C.StopRecordingReplay(Net|NetClient|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ReceiveInit(); // Function BP-BHGameInstanceWithSettings.BP-BHGameInstanceWithSettings_C.ReceiveInit(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -57,11 +57,11 @@ inline void UBP-BHGameInstanceWithSettings_C::Run Console Command(struct FString
 }
 
 // Function BP-BHGameInstanceWithSettings.BP-BHGameInstanceWithSettings_C.Get Settings Instance
-inline void UBP-BHGameInstanceWithSettings_C::Get Settings Instance(struct Unknown& SettingsWrapper) {
+inline void UBP-BHGameInstanceWithSettings_C::Get Settings Instance(struct UBP_GameSettingsWrapper_C& SettingsWrapper) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-BHGameInstanceWithSettings.BP-BHGameInstanceWithSettings_C.Get Settings Instance");
 
 	struct Get Settings Instance_Params {
-		struct Unknown& SettingsWrapper;
+		struct UBP_GameSettingsWrapper_C& SettingsWrapper;
 	}; Get Settings Instance_Params Params;
 
 

@@ -3,12 +3,12 @@ class ABP-PersonalSupplyBox_C : public ABHPersonalSupplyBox {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x380 (8)
-	struct Unknown StaticMeshUnassigned; // 0x388 (8)
-	struct Unknown StaticMeshAssigned; // 0x390 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x380 (8)
+	struct UStaticMeshComponent StaticMeshUnassigned; // 0x388 (8)
+	struct UStaticMeshComponent StaticMeshAssigned; // 0x390 (8)
 	float LandingTimer; // 0x398 (4)
 	char bLanding : 0; // 0x39C (1)
-	struct TArray<Unknown> ItemResult; // 0x3A0 (16)
+	struct TArray<struct FSpawnItemResult> ItemResult; // 0x3A0 (16)
 	float ParachuteTimer; // 0x3B0 (4)
 	float VisibleValue; // 0x3B4 (4)
 	char VisibleAnimationState : 0; // 0x3B8 (1)
@@ -17,7 +17,7 @@ public:
 	void UpdateEffect(float InterpValue); // Function BP-PersonalSupplyBox.BP-PersonalSupplyBox_C.UpdateEffect(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ChangeBoxMesh(char IsMyBox); // Function BP-PersonalSupplyBox.BP-PersonalSupplyBox_C.ChangeBoxMesh(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Visible Animation(char IsShow); // Function BP-PersonalSupplyBox.BP-PersonalSupplyBox_C.Visible Animation(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnChangeState(enum class Unknow StateType); // Function BP-PersonalSupplyBox.BP-PersonalSupplyBox_C.OnChangeState(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnChangeState(enum class EBoxStateType StateType); // Function BP-PersonalSupplyBox.BP-PersonalSupplyBox_C.OnChangeState(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ReceiveBeginPlay(); // Function BP-PersonalSupplyBox.BP-PersonalSupplyBox_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_BP-PersonalSupplyBox(int32_t EntryPoint); // Function BP-PersonalSupplyBox.BP-PersonalSupplyBox_C.ExecuteUbergraph_BP-PersonalSupplyBox(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
 };
@@ -83,11 +83,11 @@ inline void ABP-PersonalSupplyBox_C::Visible Animation(char IsShow) {
 }
 
 // Function BP-PersonalSupplyBox.BP-PersonalSupplyBox_C.OnChangeState
-inline void ABP-PersonalSupplyBox_C::OnChangeState(enum class Unknow StateType) {
+inline void ABP-PersonalSupplyBox_C::OnChangeState(enum class EBoxStateType StateType) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-PersonalSupplyBox.BP-PersonalSupplyBox_C.OnChangeState");
 
 	struct OnChangeState_Params {
-		enum class Unknow StateType;
+		enum class EBoxStateType StateType;
 	}; OnChangeState_Params Params;
 
 	Params.StateType = StateType;

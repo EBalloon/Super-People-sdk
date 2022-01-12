@@ -3,30 +3,30 @@ class UUW-Inventory_Carried_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown HoverBG; // 0x250 (8)
-	struct Unknown ScrollBox_1; // 0x258 (8)
-	struct Unknown WB-CarriedList; // 0x260 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UImage HoverBG; // 0x250 (8)
+	struct UScrollBox ScrollBox_1; // 0x258 (8)
+	struct UWrapBox WB-CarriedList; // 0x260 (8)
 
-	void DragLeave(struct Unknown PointerEvent, struct Unknown Operation); // Function UW-Inventory_Carried.UW-Inventory_Carried_C.DragLeave(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void DragEnter(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation); // Function UW-Inventory_Carried.UW-Inventory_Carried_C.DragEnter(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	char DropItem(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation); // Function UW-Inventory_Carried.UW-Inventory_Carried_C.DropItem(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void DragLeave(struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Carried.UW-Inventory_Carried_C.DragLeave(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void DragEnter(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Carried.UW-Inventory_Carried_C.DragEnter(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	char DropItem(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Carried.UW-Inventory_Carried_C.DropItem(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Disable(); // Function UW-Inventory_Carried.UW-Inventory_Carried_C.Disable(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Enable(); // Function UW-Inventory_Carried.UW-Inventory_Carried_C.Enable(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	char OnDrop(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation); // Function UW-Inventory_Carried.UW-Inventory_Carried_C.OnDrop(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnDragEnter(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation); // Function UW-Inventory_Carried.UW-Inventory_Carried_C.OnDragEnter(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnDragLeave(struct Unknown PointerEvent, struct Unknown Operation); // Function UW-Inventory_Carried.UW-Inventory_Carried_C.OnDragLeave(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	char OnDrop(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Carried.UW-Inventory_Carried_C.OnDrop(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnDragEnter(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Carried.UW-Inventory_Carried_C.OnDragEnter(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnDragLeave(struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Carried.UW-Inventory_Carried_C.OnDragLeave(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetScrollSpeed(float Speed); // Function UW-Inventory_Carried.UW-Inventory_Carried_C.SetScrollSpeed(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-Inventory_Carried(int32_t EntryPoint); // Function UW-Inventory_Carried.UW-Inventory_Carried_C.ExecuteUbergraph_UW-Inventory_Carried(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-Inventory_Carried.UW-Inventory_Carried_C.DragLeave
-inline void UUW-Inventory_Carried_C::DragLeave(struct Unknown PointerEvent, struct Unknown Operation) {
+inline void UUW-Inventory_Carried_C::DragLeave(struct FPointerEvent PointerEvent, struct UDragDropOperation Operation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Carried.UW-Inventory_Carried_C.DragLeave");
 
 	struct DragLeave_Params {
-		struct Unknown PointerEvent;
-		struct Unknown Operation;
+		struct FPointerEvent PointerEvent;
+		struct UDragDropOperation Operation;
 	}; DragLeave_Params Params;
 
 	Params.PointerEvent = PointerEvent;
@@ -38,13 +38,13 @@ inline void UUW-Inventory_Carried_C::DragLeave(struct Unknown PointerEvent, stru
 }
 
 // Function UW-Inventory_Carried.UW-Inventory_Carried_C.DragEnter
-inline void UUW-Inventory_Carried_C::DragEnter(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation) {
+inline void UUW-Inventory_Carried_C::DragEnter(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Carried.UW-Inventory_Carried_C.DragEnter");
 
 	struct DragEnter_Params {
-		struct Unknown MyGeometry;
-		struct Unknown PointerEvent;
-		struct Unknown Operation;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent PointerEvent;
+		struct UDragDropOperation Operation;
 	}; DragEnter_Params Params;
 
 	Params.MyGeometry = MyGeometry;
@@ -57,13 +57,13 @@ inline void UUW-Inventory_Carried_C::DragEnter(struct Unknown MyGeometry, struct
 }
 
 // Function UW-Inventory_Carried.UW-Inventory_Carried_C.DropItem
-inline char UUW-Inventory_Carried_C::DropItem(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation) {
+inline char UUW-Inventory_Carried_C::DropItem(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Carried.UW-Inventory_Carried_C.DropItem");
 
 	struct DropItem_Params {
-		struct Unknown MyGeometry;
-		struct Unknown PointerEvent;
-		struct Unknown Operation;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent PointerEvent;
+		struct UDragDropOperation Operation;
 		char ReturnValue;
 
 	}; DropItem_Params Params;
@@ -108,13 +108,13 @@ inline void UUW-Inventory_Carried_C::Enable() {
 }
 
 // Function UW-Inventory_Carried.UW-Inventory_Carried_C.OnDrop
-inline char UUW-Inventory_Carried_C::OnDrop(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation) {
+inline char UUW-Inventory_Carried_C::OnDrop(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Carried.UW-Inventory_Carried_C.OnDrop");
 
 	struct OnDrop_Params {
-		struct Unknown MyGeometry;
-		struct Unknown PointerEvent;
-		struct Unknown Operation;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent PointerEvent;
+		struct UDragDropOperation Operation;
 		char ReturnValue;
 
 	}; OnDrop_Params Params;
@@ -131,13 +131,13 @@ inline char UUW-Inventory_Carried_C::OnDrop(struct Unknown MyGeometry, struct Un
 }
 
 // Function UW-Inventory_Carried.UW-Inventory_Carried_C.OnDragEnter
-inline void UUW-Inventory_Carried_C::OnDragEnter(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation) {
+inline void UUW-Inventory_Carried_C::OnDragEnter(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Carried.UW-Inventory_Carried_C.OnDragEnter");
 
 	struct OnDragEnter_Params {
-		struct Unknown MyGeometry;
-		struct Unknown PointerEvent;
-		struct Unknown Operation;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent PointerEvent;
+		struct UDragDropOperation Operation;
 	}; OnDragEnter_Params Params;
 
 	Params.MyGeometry = MyGeometry;
@@ -150,12 +150,12 @@ inline void UUW-Inventory_Carried_C::OnDragEnter(struct Unknown MyGeometry, stru
 }
 
 // Function UW-Inventory_Carried.UW-Inventory_Carried_C.OnDragLeave
-inline void UUW-Inventory_Carried_C::OnDragLeave(struct Unknown PointerEvent, struct Unknown Operation) {
+inline void UUW-Inventory_Carried_C::OnDragLeave(struct FPointerEvent PointerEvent, struct UDragDropOperation Operation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Carried.UW-Inventory_Carried_C.OnDragLeave");
 
 	struct OnDragLeave_Params {
-		struct Unknown PointerEvent;
-		struct Unknown Operation;
+		struct FPointerEvent PointerEvent;
+		struct UDragDropOperation Operation;
 	}; OnDragLeave_Params Params;
 
 	Params.PointerEvent = PointerEvent;

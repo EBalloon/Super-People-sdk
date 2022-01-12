@@ -3,11 +3,11 @@ class UUW-ComboBoxText_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Button_43; // 0x250 (8)
-	struct Unknown off; // 0x258 (8)
-	struct Unknown On; // 0x260 (8)
-	struct Unknown TextBlock_67; // 0x268 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UButton Button_43; // 0x250 (8)
+	struct UImage off; // 0x258 (8)
+	struct UImage On; // 0x260 (8)
+	struct UTextBlock TextBlock_67; // 0x268 (8)
 	struct FText Text; // 0x270 (24)
 
 	void BndEvt__Button_42_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature(); // Function UW-ComboBoxText.UW-ComboBoxText_C.BndEvt__Button_42_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>

@@ -3,9 +3,9 @@ class UselectTypeBtn_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Button_43; // 0x250 (8)
-	struct Unknown Image_43; // 0x258 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UButton Button_43; // 0x250 (8)
+	struct UImage Image_43; // 0x258 (8)
 	struct FMulticastInlineDelegate SelectEventDispatcher; // 0x260 (16)
 	int32_t Index; // 0x270 (4)
 

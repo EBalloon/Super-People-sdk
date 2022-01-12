@@ -3,10 +3,10 @@ class UUW-MatchEnd_ButtonBase_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Button; // 0x250 (8)
-	struct Unknown Button_Text; // 0x258 (8)
-	struct Unknown Overlay_Button; // 0x260 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UButton Button; // 0x250 (8)
+	struct UTextBlock Button_Text; // 0x258 (8)
+	struct UOverlay Overlay_Button; // 0x260 (8)
 	struct FText ButtonText; // 0x268 (24)
 	struct FMulticastInlineDelegate OnClicked; // 0x280 (16)
 	struct FMulticastInlineDelegate OnPressed; // 0x290 (16)

@@ -3,7 +3,7 @@ class UBP-WidgetDrag_C : public UDragDropOperation {
 
 public:
 
-	struct Unknown WidgetReference; // 0x88 (8)
-	enum class Unknow InventorySlotWidgetKind; // 0x90 (1)
+	struct UUserWidget WidgetReference; // 0x88 (8)
+	enum class ItemWidgetDragType InventorySlotWidgetKind; // 0x90 (1)
 };
 

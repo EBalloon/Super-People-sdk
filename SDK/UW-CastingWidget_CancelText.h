@@ -3,8 +3,8 @@ class UUW-CastingWidget_CancelText_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown TextBlock; // 0x250 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UTextBlock TextBlock; // 0x250 (8)
 	struct FText SetText; // 0x258 (24)
 
 	void Construct(); // Function UW-CastingWidget_CancelText.UW-CastingWidget_CancelText_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>

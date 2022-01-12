@@ -3,21 +3,21 @@ class UUW-VehicleSubInfo_Base_C : public UUserWidget {
 
 public:
 
-	struct Unknown MySeatColor; // 0x248 (16)
-	struct Unknown WheelGroup; // 0x258 (8)
-	struct Unknown SeatGroup; // 0x260 (8)
+	struct FLinearColor MySeatColor; // 0x248 (16)
+	struct UCanvasPanel WheelGroup; // 0x258 (8)
+	struct UCanvasPanel SeatGroup; // 0x260 (8)
 
-	void Setup(struct Unknown VehicleInstance); // Function UW-VehicleSubInfo_Base.UW-VehicleSubInfo_Base_C.Setup(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Setup(struct ABravoHotelVehicle VehicleInstance); // Function UW-VehicleSubInfo_Base.UW-VehicleSubInfo_Base_C.Setup(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ShowSeatIcon(int32_t SeatIndex, char bShow, char bIsMine); // Function UW-VehicleSubInfo_Base.UW-VehicleSubInfo_Base_C.ShowSeatIcon(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ShowWreckedWheelIcon(int32_t WheelIndex, char bShow); // Function UW-VehicleSubInfo_Base.UW-VehicleSubInfo_Base_C.ShowWreckedWheelIcon(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-VehicleSubInfo_Base.UW-VehicleSubInfo_Base_C.Setup
-inline void UUW-VehicleSubInfo_Base_C::Setup(struct Unknown VehicleInstance) {
+inline void UUW-VehicleSubInfo_Base_C::Setup(struct ABravoHotelVehicle VehicleInstance) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-VehicleSubInfo_Base.UW-VehicleSubInfo_Base_C.Setup");
 
 	struct Setup_Params {
-		struct Unknown VehicleInstance;
+		struct ABravoHotelVehicle VehicleInstance;
 	}; Setup_Params Params;
 
 	Params.VehicleInstance = VehicleInstance;

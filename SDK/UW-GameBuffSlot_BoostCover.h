@@ -3,21 +3,21 @@ class UUW-GameBuffSlot_BoostCover_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown UW-GameBuffSlot_Boost; // 0x250 (8)
-	struct Unknown HoverWidget; // 0x258 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UUW-GameBuffSlot_Boost_C UW-GameBuffSlot_Boost; // 0x250 (8)
+	struct UUW-Inventory_ItemSlotHover_C HoverWidget; // 0x258 (8)
 
-	void OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-GameBuffSlot_BoostCover.UW-GameBuffSlot_BoostCover_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnMouseEnter(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-GameBuffSlot_BoostCover.UW-GameBuffSlot_BoostCover_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-GameBuffSlot_BoostCover(int32_t EntryPoint); // Function UW-GameBuffSlot_BoostCover.UW-GameBuffSlot_BoostCover_C.ExecuteUbergraph_UW-GameBuffSlot_BoostCover(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-GameBuffSlot_BoostCover.UW-GameBuffSlot_BoostCover_C.OnMouseEnter
-inline void UUW-GameBuffSlot_BoostCover_C::OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline void UUW-GameBuffSlot_BoostCover_C::OnMouseEnter(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-GameBuffSlot_BoostCover.UW-GameBuffSlot_BoostCover_C.OnMouseEnter");
 
 	struct OnMouseEnter_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
 	}; OnMouseEnter_Params Params;
 
 	Params.MyGeometry = MyGeometry;

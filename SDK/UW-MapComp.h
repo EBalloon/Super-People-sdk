@@ -3,14 +3,14 @@ class UUW-MapComp_C : public UBravoHotelMapCompWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x500 (8)
-	struct Unknown Aircraft; // 0x508 (8)
-	struct Unknown Background; // 0x510 (8)
-	struct Unknown Canvas; // 0x518 (8)
-	struct Unknown InvalidationBox_1; // 0x520 (8)
-	struct Unknown TestDescentEndPoint_2; // 0x528 (8)
-	struct Unknown TestDescentStartPoint_2; // 0x530 (8)
-	struct Unknown TestLineRouteDotline_2; // 0x538 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x500 (8)
+	struct UCanvasPanel Aircraft; // 0x508 (8)
+	struct UImage Background; // 0x510 (8)
+	struct UCanvasPanel Canvas; // 0x518 (8)
+	struct UInvalidationBox InvalidationBox_1; // 0x520 (8)
+	struct UImage TestDescentEndPoint_2; // 0x528 (8)
+	struct UImage TestDescentStartPoint_2; // 0x530 (8)
+	struct UImage TestLineRouteDotline_2; // 0x538 (8)
 	int32_t MapDisplayInfoFlag; // 0x540 (4)
 	struct FMulticastInlineDelegate OnWheelOnMap; // 0x548 (16)
 	struct FMulticastInlineDelegate OnMouseButtonUpOnMap; // 0x558 (16)
@@ -18,28 +18,28 @@ public:
 	struct FMulticastInlineDelegate OnDragginOnMap; // 0x578 (16)
 	char IsDragging : 0; // 0x588 (1)
 	float DeltaValue; // 0x58C (4)
-	struct TArray<Unknown> GridString_XAxis; // 0x590 (16)
-	struct TArray<Unknown> GridString_YAxis; // 0x5A0 (16)
-	struct Unknown PersonalSupplyBoxRef; // 0x5B0 (8)
-	struct Unknown ReplayFreeCamWidget; // 0x5B8 (8)
+	struct TArray<struct FString> GridString_XAxis; // 0x590 (16)
+	struct TArray<struct FString> GridString_YAxis; // 0x5A0 (16)
+	struct UUW-WorldMapMarkerWidget_C PersonalSupplyBoxRef; // 0x5B0 (8)
+	struct UUW-PlayerIconWidget_C ReplayFreeCamWidget; // 0x5B8 (8)
 	float MapScaleInterpSpeed; // 0x5C0 (4)
 	char MouseRightBtnDown : 0; // 0x5C4 (1)
-	struct Unknown SelectPingMenuTimer; // 0x5C8 (8)
-	struct Unknown SelectionMenu; // 0x5D0 (8)
+	struct FTimerHandle SelectPingMenuTimer; // 0x5C8 (8)
+	struct UWBP_SPS_SelectionMenu_C SelectionMenu; // 0x5D0 (8)
 	struct FMulticastInlineDelegate OnMouseButtonDownOnMap; // 0x5D8 (16)
-	struct Unknown MouseButtonDownPos; // 0x5E8 (8)
+	struct FVector2D MouseButtonDownPos; // 0x5E8 (8)
 	char IsUpdateMapScale : 0; // 0x5F0 (1)
 	float MapScaleInerpSpeedRatio; // 0x5F4 (4)
 	char IsDrawingRoutePing : 0; // 0x5F8 (1)
-	struct TArray<Unknown> IgnoreAreaCircleLines; // 0x600 (16)
+	struct TArray<struct FVector2D> IgnoreAreaCircleLines; // 0x600 (16)
 
-	void CheckAgreePing(char& bRet, struct Unknown& Location); // Function UW-MapComp.UW-MapComp_C.CheckAgreePing(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Get Cur Mouse Point(struct Unknown& Pos); // Function UW-MapComp.UW-MapComp_C.Get Cur Mouse Point(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CheckAgreePing(char& bRet, struct FVector& Location); // Function UW-MapComp.UW-MapComp_C.CheckAgreePing(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Get Cur Mouse Point(struct FVector2D& Pos); // Function UW-MapComp.UW-MapComp_C.Get Cur Mouse Point(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CalcMapScaleInterpSpeed(int32_t TargetZoomLevel); // Function UW-MapComp.UW-MapComp_C.CalcMapScaleInterpSpeed(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Remove Area Widget(enum class Unknow Type, struct Unknown Info); // Function UW-MapComp.UW-MapComp_C.Remove Area Widget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Remove Area Widget(enum class EWorldMapAreaWidgetType Type, struct FAreaWidgetInfo Info); // Function UW-MapComp.UW-MapComp_C.Remove Area Widget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void UpdateReplayCircleMask(); // Function UW-MapComp.UW-MapComp_C.UpdateReplayCircleMask(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void UpdateMapPos(); // Function UW-MapComp.UW-MapComp_C.UpdateMapPos(Public|BlueprintCallable|BlueprintEvent|Const) // <Game_BE.exe+0x2B80160>
-	void UpdateCircleMask(struct Unknown centerPosOnWorld, float radiusOnWorld, struct FName CirclePosName, struct FName CircleRadiusName, float MaskAdditionalRadius, struct Unknown MaterialInstance); // Function UW-MapComp.UW-MapComp_C.UpdateCircleMask(Public|HasDefaults|BlueprintCallable|BlueprintEvent|Const) // <Game_BE.exe+0x2B80160>
+	void UpdateCircleMask(struct FVector2D centerPosOnWorld, float radiusOnWorld, struct FName CirclePosName, struct FName CircleRadiusName, float MaskAdditionalRadius, struct UMaterialInstanceDynamic MaterialInstance); // Function UW-MapComp.UW-MapComp_C.UpdateCircleMask(Public|HasDefaults|BlueprintCallable|BlueprintEvent|Const) // <Game_BE.exe+0x2B80160>
 	void Update Circle Masks(); // Function UW-MapComp.UW-MapComp_C.Update Circle Masks(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void UpdateCircleInfosImpl(); // Function UW-MapComp.UW-MapComp_C.UpdateCircleInfosImpl(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void UpdateMapScale(); // Function UW-MapComp.UW-MapComp_C.UpdateMapScale(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -49,25 +49,25 @@ public:
 	void CreateAirCraftWidget(); // Function UW-MapComp.UW-MapComp_C.CreateAirCraftWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CreateMapPlayerWidget_Impl(); // Function UW-MapComp.UW-MapComp_C.CreateMapPlayerWidget_Impl(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnAttackedWidget(int32_t UniquePlayerId); // Function UW-MapComp.UW-MapComp_C.OnAttackedWidget(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnFireWidget(int32_t UniquePlayerId, struct Unknown Rotation, float Length); // Function UW-MapComp.UW-MapComp_C.OnFireWidget(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnFireWidget(int32_t UniquePlayerId, struct FRotator Rotation, float Length); // Function UW-MapComp.UW-MapComp_C.OnFireWidget(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void GetSkillMapFactor(float Distance, float& Factor); // Function UW-MapComp.UW-MapComp_C.GetSkillMapFactor(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Add Area Widget(enum class Unknow AreaWidgetType, struct Unknown AreaWidgetInfo); // Function UW-MapComp.UW-MapComp_C.Add Area Widget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void WantChangeVisibility(enum class Unknow WantVisibility, struct Unknown ChangeWidget); // Function UW-MapComp.UW-MapComp_C.WantChangeVisibility(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Add Area Widget(enum class EWorldMapAreaWidgetType AreaWidgetType, struct FAreaWidgetInfo AreaWidgetInfo); // Function UW-MapComp.UW-MapComp_C.Add Area Widget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void WantChangeVisibility(enum class ESlateVisibility WantVisibility, struct UWidget ChangeWidget); // Function UW-MapComp.UW-MapComp_C.WantChangeVisibility(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void GetMiniMapFactor(float& Factor); // Function UW-MapComp.UW-MapComp_C.GetMiniMapFactor(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ConvertSizeWorldToMap(struct Unknown Size, struct Unknown& Ret); // Function UW-MapComp.UW-MapComp_C.ConvertSizeWorldToMap(Private|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <Game_BE.exe+0x2B80160>
-	void OnMarkerClicked(struct Unknown Button, char mapObjectID); // Function UW-MapComp.UW-MapComp_C.OnMarkerClicked(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CalPosRelatedMapOnViewport(struct Unknown PosOnViewport, struct Unknown& Ret); // Function UW-MapComp.UW-MapComp_C.CalPosRelatedMapOnViewport(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <Game_BE.exe+0x2B80160>
-	void ConvertPosViewportToMap(struct Unknown PosOnViewport, struct Unknown& Ret); // Function UW-MapComp.UW-MapComp_C.ConvertPosViewportToMap(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <Game_BE.exe+0x2B80160>
-	struct Unknown OnMouseMove(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-MapComp.UW-MapComp_C.OnMouseMove(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetMarker(char isOn, struct Unknown PosOnViewport, float Heigh); // Function UW-MapComp.UW-MapComp_C.SetMarker(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown OnMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-MapComp.UW-MapComp_C.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown OnMouseButtonUp(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-MapComp.UW-MapComp_C.OnMouseButtonUp(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown OnMouseWheel(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-MapComp.UW-MapComp_C.OnMouseWheel(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnPaint(struct Unknown& Context); // Function UW-MapComp.UW-MapComp_C.OnPaint(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const) // <Game_BE.exe+0x2B80160>
-	void AddWidgetComp(struct Unknown* WidgetClass, struct Unknown Anchor, struct Unknown Pivot, struct Unknown Size, int32_t ZOrder, struct Unknown& Ret); // Function UW-MapComp.UW-MapComp_C.AddWidgetComp(Private|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ConvertForwardToDegree(struct Unknown Forward, float& Degree); // Function UW-MapComp.UW-MapComp_C.ConvertForwardToDegree(Private|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnLoaded_C5F225F94B2C743064A54D84F3497501(struct Unknown Loaded); // Function UW-MapComp.UW-MapComp_C.OnLoaded_C5F225F94B2C743064A54D84F3497501(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void DebugStringOnMapEvent(struct FString DebugString, struct Unknown WorldPosition, float RemainTime, float FontSize); // Function UW-MapComp.UW-MapComp_C.DebugStringOnMapEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ConvertSizeWorldToMap(struct FVector2D Size, struct FVector2D& Ret); // Function UW-MapComp.UW-MapComp_C.ConvertSizeWorldToMap(Private|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <Game_BE.exe+0x2B80160>
+	void OnMarkerClicked(struct FKey Button, char mapObjectID); // Function UW-MapComp.UW-MapComp_C.OnMarkerClicked(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CalPosRelatedMapOnViewport(struct FVector2D PosOnViewport, struct FVector2D& Ret); // Function UW-MapComp.UW-MapComp_C.CalPosRelatedMapOnViewport(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <Game_BE.exe+0x2B80160>
+	void ConvertPosViewportToMap(struct FVector2D PosOnViewport, struct FVector2D& Ret); // Function UW-MapComp.UW-MapComp_C.ConvertPosViewportToMap(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <Game_BE.exe+0x2B80160>
+	struct FEventReply OnMouseMove(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-MapComp.UW-MapComp_C.OnMouseMove(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetMarker(char isOn, struct FVector2D PosOnViewport, float Heigh); // Function UW-MapComp.UW-MapComp_C.SetMarker(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply OnMouseButtonDown(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-MapComp.UW-MapComp_C.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply OnMouseButtonUp(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-MapComp.UW-MapComp_C.OnMouseButtonUp(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply OnMouseWheel(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-MapComp.UW-MapComp_C.OnMouseWheel(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnPaint(struct FPaintContext& Context); // Function UW-MapComp.UW-MapComp_C.OnPaint(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|Const) // <Game_BE.exe+0x2B80160>
+	void AddWidgetComp(struct UClass* WidgetClass, struct FVector2D Anchor, struct FVector2D Pivot, struct FVector2D Size, int32_t ZOrder, struct UUserWidget& Ret); // Function UW-MapComp.UW-MapComp_C.AddWidgetComp(Private|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ConvertForwardToDegree(struct FVector Forward, float& Degree); // Function UW-MapComp.UW-MapComp_C.ConvertForwardToDegree(Private|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_C5F225F94B2C743064A54D84F3497501(struct Object Loaded); // Function UW-MapComp.UW-MapComp_C.OnLoaded_C5F225F94B2C743064A54D84F3497501(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void DebugStringOnMapEvent(struct FString DebugString, struct FVector WorldPosition, float RemainTime, float FontSize); // Function UW-MapComp.UW-MapComp_C.DebugStringOnMapEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CreateMapPlayerWidget(); // Function UW-MapComp.UW-MapComp_C.CreateMapPlayerWidget(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void UpdateSupplyBoxInfo(); // Function UW-MapComp.UW-MapComp_C.UpdateSupplyBoxInfo(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void UpdateFreeCamPosition(); // Function UW-MapComp.UW-MapComp_C.UpdateFreeCamPosition(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -79,22 +79,22 @@ public:
 	void UpdateReplayCircleInfos(); // Function UW-MapComp.UW-MapComp_C.UpdateReplayCircleInfos(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetVisiblePingMenu(char Visible); // Function UW-MapComp.UW-MapComp_C.SetVisiblePingMenu(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ChangeMap(char IsWeightMap); // Function UW-MapComp.UW-MapComp_C.ChangeMap(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnMouseUp(struct Unknown Mouse); // Function UW-MapComp.UW-MapComp_C.OnMouseUp(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnMouseUp(struct FPointerEvent Mouse); // Function UW-MapComp.UW-MapComp_C.OnMouseUp(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-MapComp(int32_t EntryPoint); // Function UW-MapComp.UW-MapComp_C.ExecuteUbergraph_UW-MapComp(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
-	void OnMouseButtonDownOnMap__DelegateSignature(struct Unknown Button, struct Unknown PosOnViewport); // Function UW-MapComp.UW-MapComp_C.OnMouseButtonDownOnMap__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnDragginOnMap__DelegateSignature(struct Unknown Delta); // Function UW-MapComp.UW-MapComp_C.OnDragginOnMap__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnObjectClickOnMap__DelegateSignature(struct Unknown Button, char mapObjectID); // Function UW-MapComp.UW-MapComp_C.OnObjectClickOnMap__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnMouseButtonUpOnMap__DelegateSignature(struct Unknown Button, struct Unknown PosOnViewport); // Function UW-MapComp.UW-MapComp_C.OnMouseButtonUpOnMap__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnWheelOnMap__DelegateSignature(float Delta, struct Unknown PosOnViewport); // Function UW-MapComp.UW-MapComp_C.OnWheelOnMap__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnMouseButtonDownOnMap__DelegateSignature(struct FKey Button, struct FVector2D PosOnViewport); // Function UW-MapComp.UW-MapComp_C.OnMouseButtonDownOnMap__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnDragginOnMap__DelegateSignature(struct FVector2D Delta); // Function UW-MapComp.UW-MapComp_C.OnDragginOnMap__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnObjectClickOnMap__DelegateSignature(struct FKey Button, char mapObjectID); // Function UW-MapComp.UW-MapComp_C.OnObjectClickOnMap__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnMouseButtonUpOnMap__DelegateSignature(struct FKey Button, struct FVector2D PosOnViewport); // Function UW-MapComp.UW-MapComp_C.OnMouseButtonUpOnMap__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnWheelOnMap__DelegateSignature(float Delta, struct FVector2D PosOnViewport); // Function UW-MapComp.UW-MapComp_C.OnWheelOnMap__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-MapComp.UW-MapComp_C.CheckAgreePing
-inline void UUW-MapComp_C::CheckAgreePing(char& bRet, struct Unknown& Location) {
+inline void UUW-MapComp_C::CheckAgreePing(char& bRet, struct FVector& Location) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MapComp.UW-MapComp_C.CheckAgreePing");
 
 	struct CheckAgreePing_Params {
 		char& bRet;
-		struct Unknown& Location;
+		struct FVector& Location;
 	}; CheckAgreePing_Params Params;
 
 
@@ -108,11 +108,11 @@ inline void UUW-MapComp_C::CheckAgreePing(char& bRet, struct Unknown& Location) 
 }
 
 // Function UW-MapComp.UW-MapComp_C.Get Cur Mouse Point
-inline void UUW-MapComp_C::Get Cur Mouse Point(struct Unknown& Pos) {
+inline void UUW-MapComp_C::Get Cur Mouse Point(struct FVector2D& Pos) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MapComp.UW-MapComp_C.Get Cur Mouse Point");
 
 	struct Get Cur Mouse Point_Params {
-		struct Unknown& Pos;
+		struct FVector2D& Pos;
 	}; Get Cur Mouse Point_Params Params;
 
 
@@ -140,12 +140,12 @@ inline void UUW-MapComp_C::CalcMapScaleInterpSpeed(int32_t TargetZoomLevel) {
 }
 
 // Function UW-MapComp.UW-MapComp_C.Remove Area Widget
-inline void UUW-MapComp_C::Remove Area Widget(enum class Unknow Type, struct Unknown Info) {
+inline void UUW-MapComp_C::Remove Area Widget(enum class EWorldMapAreaWidgetType Type, struct FAreaWidgetInfo Info) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MapComp.UW-MapComp_C.Remove Area Widget");
 
 	struct Remove Area Widget_Params {
-		enum class Unknow Type;
-		struct Unknown Info;
+		enum class EWorldMapAreaWidgetType Type;
+		struct FAreaWidgetInfo Info;
 	}; Remove Area Widget_Params Params;
 
 	Params.Type = Type;
@@ -185,16 +185,16 @@ inline void UUW-MapComp_C::UpdateMapPos() {
 }
 
 // Function UW-MapComp.UW-MapComp_C.UpdateCircleMask
-inline void UUW-MapComp_C::UpdateCircleMask(struct Unknown centerPosOnWorld, float radiusOnWorld, struct FName CirclePosName, struct FName CircleRadiusName, float MaskAdditionalRadius, struct Unknown MaterialInstance) {
+inline void UUW-MapComp_C::UpdateCircleMask(struct FVector2D centerPosOnWorld, float radiusOnWorld, struct FName CirclePosName, struct FName CircleRadiusName, float MaskAdditionalRadius, struct UMaterialInstanceDynamic MaterialInstance) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MapComp.UW-MapComp_C.UpdateCircleMask");
 
 	struct UpdateCircleMask_Params {
-		struct Unknown centerPosOnWorld;
+		struct FVector2D centerPosOnWorld;
 		float radiusOnWorld;
 		struct FName CirclePosName;
 		struct FName CircleRadiusName;
 		float MaskAdditionalRadius;
-		struct Unknown MaterialInstance;
+		struct UMaterialInstanceDynamic MaterialInstance;
 	}; UpdateCircleMask_Params Params;
 
 	Params.centerPosOnWorld = centerPosOnWorld;
@@ -337,12 +337,12 @@ inline void UUW-MapComp_C::OnAttackedWidget(int32_t UniquePlayerId) {
 }
 
 // Function UW-MapComp.UW-MapComp_C.OnFireWidget
-inline void UUW-MapComp_C::OnFireWidget(int32_t UniquePlayerId, struct Unknown Rotation, float Length) {
+inline void UUW-MapComp_C::OnFireWidget(int32_t UniquePlayerId, struct FRotator Rotation, float Length) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MapComp.UW-MapComp_C.OnFireWidget");
 
 	struct OnFireWidget_Params {
 		int32_t UniquePlayerId;
-		struct Unknown Rotation;
+		struct FRotator Rotation;
 		float Length;
 	}; OnFireWidget_Params Params;
 
@@ -375,12 +375,12 @@ inline void UUW-MapComp_C::GetSkillMapFactor(float Distance, float& Factor) {
 }
 
 // Function UW-MapComp.UW-MapComp_C.Add Area Widget
-inline void UUW-MapComp_C::Add Area Widget(enum class Unknow AreaWidgetType, struct Unknown AreaWidgetInfo) {
+inline void UUW-MapComp_C::Add Area Widget(enum class EWorldMapAreaWidgetType AreaWidgetType, struct FAreaWidgetInfo AreaWidgetInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MapComp.UW-MapComp_C.Add Area Widget");
 
 	struct Add Area Widget_Params {
-		enum class Unknow AreaWidgetType;
-		struct Unknown AreaWidgetInfo;
+		enum class EWorldMapAreaWidgetType AreaWidgetType;
+		struct FAreaWidgetInfo AreaWidgetInfo;
 	}; Add Area Widget_Params Params;
 
 	Params.AreaWidgetType = AreaWidgetType;
@@ -392,12 +392,12 @@ inline void UUW-MapComp_C::Add Area Widget(enum class Unknow AreaWidgetType, str
 }
 
 // Function UW-MapComp.UW-MapComp_C.WantChangeVisibility
-inline void UUW-MapComp_C::WantChangeVisibility(enum class Unknow WantVisibility, struct Unknown ChangeWidget) {
+inline void UUW-MapComp_C::WantChangeVisibility(enum class ESlateVisibility WantVisibility, struct UWidget ChangeWidget) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MapComp.UW-MapComp_C.WantChangeVisibility");
 
 	struct WantChangeVisibility_Params {
-		enum class Unknow WantVisibility;
-		struct Unknown ChangeWidget;
+		enum class ESlateVisibility WantVisibility;
+		struct UWidget ChangeWidget;
 	}; WantChangeVisibility_Params Params;
 
 	Params.WantVisibility = WantVisibility;
@@ -426,12 +426,12 @@ inline void UUW-MapComp_C::GetMiniMapFactor(float& Factor) {
 }
 
 // Function UW-MapComp.UW-MapComp_C.ConvertSizeWorldToMap
-inline void UUW-MapComp_C::ConvertSizeWorldToMap(struct Unknown Size, struct Unknown& Ret) {
+inline void UUW-MapComp_C::ConvertSizeWorldToMap(struct FVector2D Size, struct FVector2D& Ret) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MapComp.UW-MapComp_C.ConvertSizeWorldToMap");
 
 	struct ConvertSizeWorldToMap_Params {
-		struct Unknown Size;
-		struct Unknown& Ret;
+		struct FVector2D Size;
+		struct FVector2D& Ret;
 	}; ConvertSizeWorldToMap_Params Params;
 
 	Params.Size = Size;
@@ -445,11 +445,11 @@ inline void UUW-MapComp_C::ConvertSizeWorldToMap(struct Unknown Size, struct Unk
 }
 
 // Function UW-MapComp.UW-MapComp_C.OnMarkerClicked
-inline void UUW-MapComp_C::OnMarkerClicked(struct Unknown Button, char mapObjectID) {
+inline void UUW-MapComp_C::OnMarkerClicked(struct FKey Button, char mapObjectID) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MapComp.UW-MapComp_C.OnMarkerClicked");
 
 	struct OnMarkerClicked_Params {
-		struct Unknown Button;
+		struct FKey Button;
 		char mapObjectID;
 	}; OnMarkerClicked_Params Params;
 
@@ -462,12 +462,12 @@ inline void UUW-MapComp_C::OnMarkerClicked(struct Unknown Button, char mapObject
 }
 
 // Function UW-MapComp.UW-MapComp_C.CalPosRelatedMapOnViewport
-inline void UUW-MapComp_C::CalPosRelatedMapOnViewport(struct Unknown PosOnViewport, struct Unknown& Ret) {
+inline void UUW-MapComp_C::CalPosRelatedMapOnViewport(struct FVector2D PosOnViewport, struct FVector2D& Ret) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MapComp.UW-MapComp_C.CalPosRelatedMapOnViewport");
 
 	struct CalPosRelatedMapOnViewport_Params {
-		struct Unknown PosOnViewport;
-		struct Unknown& Ret;
+		struct FVector2D PosOnViewport;
+		struct FVector2D& Ret;
 	}; CalPosRelatedMapOnViewport_Params Params;
 
 	Params.PosOnViewport = PosOnViewport;
@@ -481,12 +481,12 @@ inline void UUW-MapComp_C::CalPosRelatedMapOnViewport(struct Unknown PosOnViewpo
 }
 
 // Function UW-MapComp.UW-MapComp_C.ConvertPosViewportToMap
-inline void UUW-MapComp_C::ConvertPosViewportToMap(struct Unknown PosOnViewport, struct Unknown& Ret) {
+inline void UUW-MapComp_C::ConvertPosViewportToMap(struct FVector2D PosOnViewport, struct FVector2D& Ret) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MapComp.UW-MapComp_C.ConvertPosViewportToMap");
 
 	struct ConvertPosViewportToMap_Params {
-		struct Unknown PosOnViewport;
-		struct Unknown& Ret;
+		struct FVector2D PosOnViewport;
+		struct FVector2D& Ret;
 	}; ConvertPosViewportToMap_Params Params;
 
 	Params.PosOnViewport = PosOnViewport;
@@ -500,13 +500,13 @@ inline void UUW-MapComp_C::ConvertPosViewportToMap(struct Unknown PosOnViewport,
 }
 
 // Function UW-MapComp.UW-MapComp_C.OnMouseMove
-inline struct Unknown UUW-MapComp_C::OnMouseMove(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UUW-MapComp_C::OnMouseMove(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MapComp.UW-MapComp_C.OnMouseMove");
 
 	struct OnMouseMove_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnMouseMove_Params Params;
 
@@ -523,12 +523,12 @@ inline struct Unknown UUW-MapComp_C::OnMouseMove(struct Unknown MyGeometry, stru
 }
 
 // Function UW-MapComp.UW-MapComp_C.SetMarker
-inline void UUW-MapComp_C::SetMarker(char isOn, struct Unknown PosOnViewport, float Heigh) {
+inline void UUW-MapComp_C::SetMarker(char isOn, struct FVector2D PosOnViewport, float Heigh) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MapComp.UW-MapComp_C.SetMarker");
 
 	struct SetMarker_Params {
 		char isOn;
-		struct Unknown PosOnViewport;
+		struct FVector2D PosOnViewport;
 		float Heigh;
 	}; SetMarker_Params Params;
 
@@ -542,13 +542,13 @@ inline void UUW-MapComp_C::SetMarker(char isOn, struct Unknown PosOnViewport, fl
 }
 
 // Function UW-MapComp.UW-MapComp_C.OnMouseButtonDown
-inline struct Unknown UUW-MapComp_C::OnMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UUW-MapComp_C::OnMouseButtonDown(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MapComp.UW-MapComp_C.OnMouseButtonDown");
 
 	struct OnMouseButtonDown_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnMouseButtonDown_Params Params;
 
@@ -565,13 +565,13 @@ inline struct Unknown UUW-MapComp_C::OnMouseButtonDown(struct Unknown MyGeometry
 }
 
 // Function UW-MapComp.UW-MapComp_C.OnMouseButtonUp
-inline struct Unknown UUW-MapComp_C::OnMouseButtonUp(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UUW-MapComp_C::OnMouseButtonUp(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MapComp.UW-MapComp_C.OnMouseButtonUp");
 
 	struct OnMouseButtonUp_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnMouseButtonUp_Params Params;
 
@@ -588,13 +588,13 @@ inline struct Unknown UUW-MapComp_C::OnMouseButtonUp(struct Unknown MyGeometry, 
 }
 
 // Function UW-MapComp.UW-MapComp_C.OnMouseWheel
-inline struct Unknown UUW-MapComp_C::OnMouseWheel(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UUW-MapComp_C::OnMouseWheel(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MapComp.UW-MapComp_C.OnMouseWheel");
 
 	struct OnMouseWheel_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnMouseWheel_Params Params;
 
@@ -611,11 +611,11 @@ inline struct Unknown UUW-MapComp_C::OnMouseWheel(struct Unknown MyGeometry, str
 }
 
 // Function UW-MapComp.UW-MapComp_C.OnPaint
-inline void UUW-MapComp_C::OnPaint(struct Unknown& Context) {
+inline void UUW-MapComp_C::OnPaint(struct FPaintContext& Context) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MapComp.UW-MapComp_C.OnPaint");
 
 	struct OnPaint_Params {
-		struct Unknown& Context;
+		struct FPaintContext& Context;
 	}; OnPaint_Params Params;
 
 
@@ -628,16 +628,16 @@ inline void UUW-MapComp_C::OnPaint(struct Unknown& Context) {
 }
 
 // Function UW-MapComp.UW-MapComp_C.AddWidgetComp
-inline void UUW-MapComp_C::AddWidgetComp(struct Unknown* WidgetClass, struct Unknown Anchor, struct Unknown Pivot, struct Unknown Size, int32_t ZOrder, struct Unknown& Ret) {
+inline void UUW-MapComp_C::AddWidgetComp(struct UClass* WidgetClass, struct FVector2D Anchor, struct FVector2D Pivot, struct FVector2D Size, int32_t ZOrder, struct UUserWidget& Ret) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MapComp.UW-MapComp_C.AddWidgetComp");
 
 	struct AddWidgetComp_Params {
-		struct Unknown* WidgetClass;
-		struct Unknown Anchor;
-		struct Unknown Pivot;
-		struct Unknown Size;
+		struct UClass* WidgetClass;
+		struct FVector2D Anchor;
+		struct FVector2D Pivot;
+		struct FVector2D Size;
 		int32_t ZOrder;
-		struct Unknown& Ret;
+		struct UUserWidget& Ret;
 	}; AddWidgetComp_Params Params;
 
 	Params.WidgetClass = WidgetClass;
@@ -655,11 +655,11 @@ inline void UUW-MapComp_C::AddWidgetComp(struct Unknown* WidgetClass, struct Unk
 }
 
 // Function UW-MapComp.UW-MapComp_C.ConvertForwardToDegree
-inline void UUW-MapComp_C::ConvertForwardToDegree(struct Unknown Forward, float& Degree) {
+inline void UUW-MapComp_C::ConvertForwardToDegree(struct FVector Forward, float& Degree) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MapComp.UW-MapComp_C.ConvertForwardToDegree");
 
 	struct ConvertForwardToDegree_Params {
-		struct Unknown Forward;
+		struct FVector Forward;
 		float& Degree;
 	}; ConvertForwardToDegree_Params Params;
 
@@ -674,11 +674,11 @@ inline void UUW-MapComp_C::ConvertForwardToDegree(struct Unknown Forward, float&
 }
 
 // Function UW-MapComp.UW-MapComp_C.OnLoaded_C5F225F94B2C743064A54D84F3497501
-inline void UUW-MapComp_C::OnLoaded_C5F225F94B2C743064A54D84F3497501(struct Unknown Loaded) {
+inline void UUW-MapComp_C::OnLoaded_C5F225F94B2C743064A54D84F3497501(struct Object Loaded) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MapComp.UW-MapComp_C.OnLoaded_C5F225F94B2C743064A54D84F3497501");
 
 	struct OnLoaded_C5F225F94B2C743064A54D84F3497501_Params {
-		struct Unknown Loaded;
+		struct Object Loaded;
 	}; OnLoaded_C5F225F94B2C743064A54D84F3497501_Params Params;
 
 	Params.Loaded = Loaded;
@@ -689,12 +689,12 @@ inline void UUW-MapComp_C::OnLoaded_C5F225F94B2C743064A54D84F3497501(struct Unkn
 }
 
 // Function UW-MapComp.UW-MapComp_C.DebugStringOnMapEvent
-inline void UUW-MapComp_C::DebugStringOnMapEvent(struct FString DebugString, struct Unknown WorldPosition, float RemainTime, float FontSize) {
+inline void UUW-MapComp_C::DebugStringOnMapEvent(struct FString DebugString, struct FVector WorldPosition, float RemainTime, float FontSize) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MapComp.UW-MapComp_C.DebugStringOnMapEvent");
 
 	struct DebugStringOnMapEvent_Params {
 		struct FString DebugString;
-		struct Unknown WorldPosition;
+		struct FVector WorldPosition;
 		float RemainTime;
 		float FontSize;
 	}; DebugStringOnMapEvent_Params Params;
@@ -868,11 +868,11 @@ inline void UUW-MapComp_C::ChangeMap(char IsWeightMap) {
 }
 
 // Function UW-MapComp.UW-MapComp_C.OnMouseUp
-inline void UUW-MapComp_C::OnMouseUp(struct Unknown Mouse) {
+inline void UUW-MapComp_C::OnMouseUp(struct FPointerEvent Mouse) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MapComp.UW-MapComp_C.OnMouseUp");
 
 	struct OnMouseUp_Params {
-		struct Unknown Mouse;
+		struct FPointerEvent Mouse;
 	}; OnMouseUp_Params Params;
 
 	Params.Mouse = Mouse;
@@ -898,12 +898,12 @@ inline void UUW-MapComp_C::ExecuteUbergraph_UW-MapComp(int32_t EntryPoint) {
 }
 
 // Function UW-MapComp.UW-MapComp_C.OnMouseButtonDownOnMap__DelegateSignature
-inline void UUW-MapComp_C::OnMouseButtonDownOnMap__DelegateSignature(struct Unknown Button, struct Unknown PosOnViewport) {
+inline void UUW-MapComp_C::OnMouseButtonDownOnMap__DelegateSignature(struct FKey Button, struct FVector2D PosOnViewport) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MapComp.UW-MapComp_C.OnMouseButtonDownOnMap__DelegateSignature");
 
 	struct OnMouseButtonDownOnMap__DelegateSignature_Params {
-		struct Unknown Button;
-		struct Unknown PosOnViewport;
+		struct FKey Button;
+		struct FVector2D PosOnViewport;
 	}; OnMouseButtonDownOnMap__DelegateSignature_Params Params;
 
 	Params.Button = Button;
@@ -915,11 +915,11 @@ inline void UUW-MapComp_C::OnMouseButtonDownOnMap__DelegateSignature(struct Unkn
 }
 
 // Function UW-MapComp.UW-MapComp_C.OnDragginOnMap__DelegateSignature
-inline void UUW-MapComp_C::OnDragginOnMap__DelegateSignature(struct Unknown Delta) {
+inline void UUW-MapComp_C::OnDragginOnMap__DelegateSignature(struct FVector2D Delta) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MapComp.UW-MapComp_C.OnDragginOnMap__DelegateSignature");
 
 	struct OnDragginOnMap__DelegateSignature_Params {
-		struct Unknown Delta;
+		struct FVector2D Delta;
 	}; OnDragginOnMap__DelegateSignature_Params Params;
 
 	Params.Delta = Delta;
@@ -930,11 +930,11 @@ inline void UUW-MapComp_C::OnDragginOnMap__DelegateSignature(struct Unknown Delt
 }
 
 // Function UW-MapComp.UW-MapComp_C.OnObjectClickOnMap__DelegateSignature
-inline void UUW-MapComp_C::OnObjectClickOnMap__DelegateSignature(struct Unknown Button, char mapObjectID) {
+inline void UUW-MapComp_C::OnObjectClickOnMap__DelegateSignature(struct FKey Button, char mapObjectID) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MapComp.UW-MapComp_C.OnObjectClickOnMap__DelegateSignature");
 
 	struct OnObjectClickOnMap__DelegateSignature_Params {
-		struct Unknown Button;
+		struct FKey Button;
 		char mapObjectID;
 	}; OnObjectClickOnMap__DelegateSignature_Params Params;
 
@@ -947,12 +947,12 @@ inline void UUW-MapComp_C::OnObjectClickOnMap__DelegateSignature(struct Unknown 
 }
 
 // Function UW-MapComp.UW-MapComp_C.OnMouseButtonUpOnMap__DelegateSignature
-inline void UUW-MapComp_C::OnMouseButtonUpOnMap__DelegateSignature(struct Unknown Button, struct Unknown PosOnViewport) {
+inline void UUW-MapComp_C::OnMouseButtonUpOnMap__DelegateSignature(struct FKey Button, struct FVector2D PosOnViewport) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MapComp.UW-MapComp_C.OnMouseButtonUpOnMap__DelegateSignature");
 
 	struct OnMouseButtonUpOnMap__DelegateSignature_Params {
-		struct Unknown Button;
-		struct Unknown PosOnViewport;
+		struct FKey Button;
+		struct FVector2D PosOnViewport;
 	}; OnMouseButtonUpOnMap__DelegateSignature_Params Params;
 
 	Params.Button = Button;
@@ -964,12 +964,12 @@ inline void UUW-MapComp_C::OnMouseButtonUpOnMap__DelegateSignature(struct Unknow
 }
 
 // Function UW-MapComp.UW-MapComp_C.OnWheelOnMap__DelegateSignature
-inline void UUW-MapComp_C::OnWheelOnMap__DelegateSignature(float Delta, struct Unknown PosOnViewport) {
+inline void UUW-MapComp_C::OnWheelOnMap__DelegateSignature(float Delta, struct FVector2D PosOnViewport) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MapComp.UW-MapComp_C.OnWheelOnMap__DelegateSignature");
 
 	struct OnWheelOnMap__DelegateSignature_Params {
 		float Delta;
-		struct Unknown PosOnViewport;
+		struct FVector2D PosOnViewport;
 	}; OnWheelOnMap__DelegateSignature_Params Params;
 
 	Params.Delta = Delta;

@@ -70,29 +70,29 @@ public:
 	char bAllowSpatialization : 0; // 0x228 (1)
 	char bOverrideAttenuation : 0; // 0x228 (1)
 	char bOutputToBusOnly : 0; // 0x22C (1)
-	struct Unknown AttenuationSettings; // 0x230 (8)
-	struct Unknown AttenuationOverrides; // 0x238 (928)
-	struct Unknown ConcurrencySettings; // 0x5D8 (8)
-	struct TSet<Unknown> ConcurrencySet; // 0x5E0 (80)
-	struct Unknown SoundClass; // 0x630 (8)
-	struct Unknown SourceEffectChain; // 0x638 (8)
-	struct Unknown SoundSubmix; // 0x640 (8)
-	struct TArray<Unknown> SoundSubmixSends; // 0x648 (16)
-	struct TArray<Unknown> BusSends; // 0x658 (16)
-	struct Unknown Modulation; // 0x668 (16)
-	struct TArray<Unknown> PreEffectBusSends; // 0x678 (16)
+	struct USoundAttenuation AttenuationSettings; // 0x230 (8)
+	struct FSoundAttenuationSettings AttenuationOverrides; // 0x238 (928)
+	struct USoundConcurrency ConcurrencySettings; // 0x5D8 (8)
+	struct TSet<struct USoundConcurrency> ConcurrencySet; // 0x5E0 (80)
+	struct USoundClass SoundClass; // 0x630 (8)
+	struct USoundEffectSourcePresetChain SourceEffectChain; // 0x638 (8)
+	struct USoundSubmixBase SoundSubmix; // 0x640 (8)
+	struct TArray<struct FSoundSubmixSendInfo> SoundSubmixSends; // 0x648 (16)
+	struct TArray<struct FSoundSourceBusSendInfo> BusSends; // 0x658 (16)
+	struct FSoundModulation Modulation; // 0x668 (16)
+	struct TArray<struct FSoundSourceBusSendInfo> PreEffectBusSends; // 0x678 (16)
 	char bIsUISound : 0; // 0x688 (1)
 	char bIsPreviewSound : 0; // 0x688 (1)
 	int32_t EnvelopeFollowerAttackTime; // 0x68C (4)
 	int32_t EnvelopeFollowerReleaseTime; // 0x690 (4)
 	struct FMulticastInlineDelegate OnAudioEnvelopeValue; // 0x698 (16)
-	struct Unknown Synth; // 0x6C8 (8)
-	struct Unknown AudioComponent; // 0x6D0 (8)
+	struct USynthSound Synth; // 0x6C8 (8)
+	struct UAudioComponent AudioComponent; // 0x6D0 (8)
 
 	void Stop(); // Function AudioMixer.SynthComponent.Stop(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3BCCA50>
 	void Start(); // Function AudioMixer.SynthComponent.Start(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3BCC770>
 	void SetVolumeMultiplier(float VolumeMultiplier); // Function AudioMixer.SynthComponent.SetVolumeMultiplier(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3BCC6F0>
-	void SetSubmixSend(struct Unknown Submix, float SendLevel); // Function AudioMixer.SynthComponent.SetSubmixSend(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3BCC620>
+	void SetSubmixSend(struct USoundSubmixBase Submix, float SendLevel); // Function AudioMixer.SynthComponent.SetSubmixSend(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3BCC620>
 	char IsPlaying(); // Function AudioMixer.SynthComponent.IsPlaying(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3BCB860>
 };
 
@@ -101,10 +101,10 @@ class USubmixEffectDynamicsProcessorPreset : public USoundEffectSubmixPreset {
 
 public:
 
-	struct Unknown Settings; // 0xB8 (80)
+	struct FSubmixEffectDynamicsProcessorSettings Settings; // 0xB8 (80)
 
-	void SetSettings(struct Unknown& Settings); // Function AudioMixer.SubmixEffectDynamicsProcessorPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3BCC190>
-	void SetExternalSubmix(struct Unknown Submix); // Function AudioMixer.SubmixEffectDynamicsProcessorPreset.SetExternalSubmix(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3BCC110>
+	void SetSettings(struct FSubmixEffectDynamicsProcessorSettings& Settings); // Function AudioMixer.SubmixEffectDynamicsProcessorPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3BCC190>
+	void SetExternalSubmix(struct USoundSubmix Submix); // Function AudioMixer.SubmixEffectDynamicsProcessorPreset.SetExternalSubmix(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3BCC110>
 };
 
 // Class AudioMixer.SubmixEffectSubmixEQPreset
@@ -112,9 +112,9 @@ class USubmixEffectSubmixEQPreset : public USoundEffectSubmixPreset {
 
 public:
 
-	struct Unknown Settings; // 0x78 (16)
+	struct FSubmixEffectSubmixEQSettings Settings; // 0x78 (16)
 
-	void SetSettings(struct Unknown& InSettings); // Function AudioMixer.SubmixEffectSubmixEQPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F58D0>
+	void SetSettings(struct FSubmixEffectSubmixEQSettings& InSettings); // Function AudioMixer.SubmixEffectSubmixEQPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F58D0>
 };
 
 // Class AudioMixer.SubmixEffectReverbPreset
@@ -122,10 +122,10 @@ class USubmixEffectReverbPreset : public USoundEffectSubmixPreset {
 
 public:
 
-	struct Unknown Settings; // 0x9C (52)
+	struct FSubmixEffectReverbSettings Settings; // 0x9C (52)
 
-	void SetSettingsWithReverbEffect(struct Unknown InReverbEffect, float WetLevel, float DryLevel); // Function AudioMixer.SubmixEffectReverbPreset.SetSettingsWithReverbEffect(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3BCC520>
-	void SetSettings(struct Unknown& InSettings); // Function AudioMixer.SubmixEffectReverbPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3BCC360>
+	void SetSettingsWithReverbEffect(struct UReverbEffect InReverbEffect, float WetLevel, float DryLevel); // Function AudioMixer.SubmixEffectReverbPreset.SetSettingsWithReverbEffect(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3BCC520>
+	void SetSettings(struct FSubmixEffectReverbSettings& InSettings); // Function AudioMixer.SubmixEffectReverbPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3BCC360>
 };
 
 // Class AudioMixer.SubmixEffectReverbFastPreset
@@ -133,10 +133,10 @@ class USubmixEffectReverbFastPreset : public USoundEffectSubmixPreset {
 
 public:
 
-	struct Unknown Settings; // 0xA0 (56)
+	struct FSubmixEffectReverbFastSettings Settings; // 0xA0 (56)
 
-	void SetSettingsWithReverbEffect(struct Unknown InReverbEffect, float WetLevel, float DryLevel); // Function AudioMixer.SubmixEffectReverbFastPreset.SetSettingsWithReverbEffect(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3BCC420>
-	void SetSettings(struct Unknown& InSettings); // Function AudioMixer.SubmixEffectReverbFastPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3BCC2A0>
+	void SetSettingsWithReverbEffect(struct UReverbEffect InReverbEffect, float WetLevel, float DryLevel); // Function AudioMixer.SubmixEffectReverbFastPreset.SetSettingsWithReverbEffect(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3BCC420>
+	void SetSettings(struct FSubmixEffectReverbFastSettings& InSettings); // Function AudioMixer.SubmixEffectReverbFastPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3BCC2A0>
 };
 
 // Class AudioMixer.SynthSound
@@ -144,14 +144,14 @@ class USynthSound : public USoundWaveProcedural {
 
 public:
 
-	struct Unknown OwningSynthComponent; // 0x360 (8)
+	struct USynthComponent OwningSynthComponent; // 0x360 (8)
 };
 
 // ScriptStruct AudioMixer.SubmixEffectDynamicsProcessorSettings
 struct FSubmixEffectDynamicsProcessorSettings {
-	enum class Unknow DynamicsProcessorType; // 0x0 (1)
-	enum class Unknow PeakMode; // 0x1 (1)
-	enum class Unknow LinkMode; // 0x2 (1)
+	enum class ESubmixEffectDynamicsProcessorType DynamicsProcessorType; // 0x0 (1)
+	enum class ESubmixEffectDynamicsPeakMode PeakMode; // 0x1 (1)
+	enum class ESubmixEffectDynamicsChannelLinkMode LinkMode; // 0x2 (1)
 	float InputGainDb; // 0x4 (4)
 	float ThresholdDb; // 0x8 (4)
 	float Ratio; // 0xC (4)
@@ -159,14 +159,14 @@ struct FSubmixEffectDynamicsProcessorSettings {
 	float LookAheadMsec; // 0x14 (4)
 	float AttackTimeMsec; // 0x18 (4)
 	float ReleaseTimeMsec; // 0x1C (4)
-	struct Unknown ExternalSubmix; // 0x20 (8)
+	struct USoundSubmix ExternalSubmix; // 0x20 (8)
 	char bChannelLinked : 0; // 0x28 (1)
 	char bAnalogMode : 0; // 0x28 (1)
 	char bKeyAudition : 0; // 0x28 (1)
 	float KeyGainDb; // 0x2C (4)
 	float OutputGainDb; // 0x30 (4)
-	struct Unknown KeyHighshelf; // 0x34 (12)
-	struct Unknown KeyLowshelf; // 0x40 (12)
+	struct FSubmixEffectDynamicProcessorFilterSettings KeyHighshelf; // 0x34 (12)
+	struct FSubmixEffectDynamicProcessorFilterSettings KeyLowshelf; // 0x40 (12)
 };
 
 // ScriptStruct AudioMixer.SubmixEffectDynamicProcessorFilterSettings
@@ -178,7 +178,7 @@ struct FSubmixEffectDynamicProcessorFilterSettings {
 
 // ScriptStruct AudioMixer.SubmixEffectSubmixEQSettings
 struct FSubmixEffectSubmixEQSettings {
-	struct TArray<Unknown> EQBands; // 0x0 (16)
+	struct TArray<struct FSubmixEffectEQBand> EQBands; // 0x0 (16)
 };
 
 // ScriptStruct AudioMixer.SubmixEffectEQBand
@@ -268,11 +268,11 @@ inline void USynthComponent::SetVolumeMultiplier(float VolumeMultiplier) {
 }
 
 // Function AudioMixer.SynthComponent.SetSubmixSend
-inline void USynthComponent::SetSubmixSend(struct Unknown Submix, float SendLevel) {
+inline void USynthComponent::SetSubmixSend(struct USoundSubmixBase Submix, float SendLevel) {
 	static auto fn = UObject::FindObject<UFunction>("Function AudioMixer.SynthComponent.SetSubmixSend");
 
 	struct SetSubmixSend_Params {
-		struct Unknown Submix;
+		struct USoundSubmixBase Submix;
 		float SendLevel;
 	}; SetSubmixSend_Params Params;
 
@@ -303,11 +303,11 @@ inline char USynthComponent::IsPlaying() {
 }
 
 // Function AudioMixer.SubmixEffectDynamicsProcessorPreset.SetSettings
-inline void USubmixEffectDynamicsProcessorPreset::SetSettings(struct Unknown& Settings) {
+inline void USubmixEffectDynamicsProcessorPreset::SetSettings(struct FSubmixEffectDynamicsProcessorSettings& Settings) {
 	static auto fn = UObject::FindObject<UFunction>("Function AudioMixer.SubmixEffectDynamicsProcessorPreset.SetSettings");
 
 	struct SetSettings_Params {
-		struct Unknown& Settings;
+		struct FSubmixEffectDynamicsProcessorSettings& Settings;
 	}; SetSettings_Params Params;
 
 
@@ -320,11 +320,11 @@ inline void USubmixEffectDynamicsProcessorPreset::SetSettings(struct Unknown& Se
 }
 
 // Function AudioMixer.SubmixEffectDynamicsProcessorPreset.SetExternalSubmix
-inline void USubmixEffectDynamicsProcessorPreset::SetExternalSubmix(struct Unknown Submix) {
+inline void USubmixEffectDynamicsProcessorPreset::SetExternalSubmix(struct USoundSubmix Submix) {
 	static auto fn = UObject::FindObject<UFunction>("Function AudioMixer.SubmixEffectDynamicsProcessorPreset.SetExternalSubmix");
 
 	struct SetExternalSubmix_Params {
-		struct Unknown Submix;
+		struct USoundSubmix Submix;
 	}; SetExternalSubmix_Params Params;
 
 	Params.Submix = Submix;
@@ -335,11 +335,11 @@ inline void USubmixEffectDynamicsProcessorPreset::SetExternalSubmix(struct Unkno
 }
 
 // Function AudioMixer.SubmixEffectSubmixEQPreset.SetSettings
-inline void USubmixEffectSubmixEQPreset::SetSettings(struct Unknown& InSettings) {
+inline void USubmixEffectSubmixEQPreset::SetSettings(struct FSubmixEffectSubmixEQSettings& InSettings) {
 	static auto fn = UObject::FindObject<UFunction>("Function AudioMixer.SubmixEffectSubmixEQPreset.SetSettings");
 
 	struct SetSettings_Params {
-		struct Unknown& InSettings;
+		struct FSubmixEffectSubmixEQSettings& InSettings;
 	}; SetSettings_Params Params;
 
 
@@ -352,11 +352,11 @@ inline void USubmixEffectSubmixEQPreset::SetSettings(struct Unknown& InSettings)
 }
 
 // Function AudioMixer.SubmixEffectReverbPreset.SetSettingsWithReverbEffect
-inline void USubmixEffectReverbPreset::SetSettingsWithReverbEffect(struct Unknown InReverbEffect, float WetLevel, float DryLevel) {
+inline void USubmixEffectReverbPreset::SetSettingsWithReverbEffect(struct UReverbEffect InReverbEffect, float WetLevel, float DryLevel) {
 	static auto fn = UObject::FindObject<UFunction>("Function AudioMixer.SubmixEffectReverbPreset.SetSettingsWithReverbEffect");
 
 	struct SetSettingsWithReverbEffect_Params {
-		struct Unknown InReverbEffect;
+		struct UReverbEffect InReverbEffect;
 		float WetLevel;
 		float DryLevel;
 	}; SetSettingsWithReverbEffect_Params Params;
@@ -371,11 +371,11 @@ inline void USubmixEffectReverbPreset::SetSettingsWithReverbEffect(struct Unknow
 }
 
 // Function AudioMixer.SubmixEffectReverbPreset.SetSettings
-inline void USubmixEffectReverbPreset::SetSettings(struct Unknown& InSettings) {
+inline void USubmixEffectReverbPreset::SetSettings(struct FSubmixEffectReverbSettings& InSettings) {
 	static auto fn = UObject::FindObject<UFunction>("Function AudioMixer.SubmixEffectReverbPreset.SetSettings");
 
 	struct SetSettings_Params {
-		struct Unknown& InSettings;
+		struct FSubmixEffectReverbSettings& InSettings;
 	}; SetSettings_Params Params;
 
 
@@ -388,11 +388,11 @@ inline void USubmixEffectReverbPreset::SetSettings(struct Unknown& InSettings) {
 }
 
 // Function AudioMixer.SubmixEffectReverbFastPreset.SetSettingsWithReverbEffect
-inline void USubmixEffectReverbFastPreset::SetSettingsWithReverbEffect(struct Unknown InReverbEffect, float WetLevel, float DryLevel) {
+inline void USubmixEffectReverbFastPreset::SetSettingsWithReverbEffect(struct UReverbEffect InReverbEffect, float WetLevel, float DryLevel) {
 	static auto fn = UObject::FindObject<UFunction>("Function AudioMixer.SubmixEffectReverbFastPreset.SetSettingsWithReverbEffect");
 
 	struct SetSettingsWithReverbEffect_Params {
-		struct Unknown InReverbEffect;
+		struct UReverbEffect InReverbEffect;
 		float WetLevel;
 		float DryLevel;
 	}; SetSettingsWithReverbEffect_Params Params;
@@ -407,11 +407,11 @@ inline void USubmixEffectReverbFastPreset::SetSettingsWithReverbEffect(struct Un
 }
 
 // Function AudioMixer.SubmixEffectReverbFastPreset.SetSettings
-inline void USubmixEffectReverbFastPreset::SetSettings(struct Unknown& InSettings) {
+inline void USubmixEffectReverbFastPreset::SetSettings(struct FSubmixEffectReverbFastSettings& InSettings) {
 	static auto fn = UObject::FindObject<UFunction>("Function AudioMixer.SubmixEffectReverbFastPreset.SetSettings");
 
 	struct SetSettings_Params {
-		struct Unknown& InSettings;
+		struct FSubmixEffectReverbFastSettings& InSettings;
 	}; SetSettings_Params Params;
 
 

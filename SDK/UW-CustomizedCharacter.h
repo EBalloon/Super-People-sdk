@@ -3,15 +3,15 @@ class UUW-CustomizedCharacter_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown CurrentAccel; // 0x250 (12)
-	struct Unknown TargetAccel; // 0x25C (12)
-	struct Unknown CurrentCameraActor; // 0x268 (8)
-	struct Unknown OldCameraLocation; // 0x270 (12)
-	struct Unknown CurrentCameraLocation; // 0x27C (12)
-	struct Unknown OriginCameraLocation; // 0x288 (12)
-	struct Unknown TargetCameraLocation; // 0x294 (12)
-	struct Unknown DataAsset; // 0x2A0 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct FRotator CurrentAccel; // 0x250 (12)
+	struct FRotator TargetAccel; // 0x25C (12)
+	struct ACineCameraActor CurrentCameraActor; // 0x268 (8)
+	struct FVector OldCameraLocation; // 0x270 (12)
+	struct FVector CurrentCameraLocation; // 0x27C (12)
+	struct FVector OriginCameraLocation; // 0x288 (12)
+	struct FVector TargetCameraLocation; // 0x294 (12)
+	struct UCustomizedChara_DataAsset_C DataAsset; // 0x2A0 (8)
 	char ResetOriginTransform : 0; // 0x2A8 (1)
 	float BeginFocusDist; // 0x2AC (4)
 	float EndFocusDist; // 0x2B0 (4)
@@ -25,11 +25,11 @@ public:
 	void PercentDist(float CurDist, float& Percent); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.PercentDist(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void MouseWheel(float Delta); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.MouseWheel(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Reset(char ForceSnap); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.Reset(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetCameraActor(struct Unknown CurrentCamera, struct Unknown TargetCamera, float BeginFocusDist, float EndFocusDist); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.SetCameraActor(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetLobbyWidget(struct Unknown& Widget); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.GetLobbyWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetCameraActor(struct ACineCameraActor CurrentCamera, struct ACineCameraActor TargetCamera, float BeginFocusDist, float EndFocusDist); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.SetCameraActor(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetLobbyWidget(struct UBP-LobbyWidget_Web_C& Widget); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.GetLobbyWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Hide(); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.Hide(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Show(); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.Show(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-CustomizedCharacter(int32_t EntryPoint); // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.ExecuteUbergraph_UW-CustomizedCharacter(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
@@ -158,12 +158,12 @@ inline void UUW-CustomizedCharacter_C::Reset(char ForceSnap) {
 }
 
 // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.SetCameraActor
-inline void UUW-CustomizedCharacter_C::SetCameraActor(struct Unknown CurrentCamera, struct Unknown TargetCamera, float BeginFocusDist, float EndFocusDist) {
+inline void UUW-CustomizedCharacter_C::SetCameraActor(struct ACineCameraActor CurrentCamera, struct ACineCameraActor TargetCamera, float BeginFocusDist, float EndFocusDist) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.SetCameraActor");
 
 	struct SetCameraActor_Params {
-		struct Unknown CurrentCamera;
-		struct Unknown TargetCamera;
+		struct ACineCameraActor CurrentCamera;
+		struct ACineCameraActor TargetCamera;
 		float BeginFocusDist;
 		float EndFocusDist;
 	}; SetCameraActor_Params Params;
@@ -179,11 +179,11 @@ inline void UUW-CustomizedCharacter_C::SetCameraActor(struct Unknown CurrentCame
 }
 
 // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.GetLobbyWidget
-inline void UUW-CustomizedCharacter_C::GetLobbyWidget(struct Unknown& Widget) {
+inline void UUW-CustomizedCharacter_C::GetLobbyWidget(struct UBP-LobbyWidget_Web_C& Widget) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.GetLobbyWidget");
 
 	struct GetLobbyWidget_Params {
-		struct Unknown& Widget;
+		struct UBP-LobbyWidget_Web_C& Widget;
 	}; GetLobbyWidget_Params Params;
 
 
@@ -224,11 +224,11 @@ inline void UUW-CustomizedCharacter_C::Show() {
 }
 
 // Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.Tick
-inline void UUW-CustomizedCharacter_C::Tick(struct Unknown MyGeometry, float InDeltaTime) {
+inline void UUW-CustomizedCharacter_C::Tick(struct FGeometry MyGeometry, float InDeltaTime) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-CustomizedCharacter.UW-CustomizedCharacter_C.Tick");
 
 	struct Tick_Params {
-		struct Unknown MyGeometry;
+		struct FGeometry MyGeometry;
 		float InDeltaTime;
 	}; Tick_Params Params;
 

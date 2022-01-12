@@ -3,19 +3,19 @@ class UUW-Inventory_PerkSlot_FX_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown IMG_PerkLevelUpFx; // 0x250 (8)
-	enum class Unknow PerkSlot; // 0x258 (1)
-	struct Unknown PerkFxTexture; // 0x260 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UImage IMG_PerkLevelUpFx; // 0x250 (8)
+	enum class EPerkSlotFlag PerkSlot; // 0x258 (1)
+	struct UTexture PerkFxTexture; // 0x260 (8)
 	char PlayAnimation_1 : 0; // 0x268 (1)
 	float CurrentAnimationTime; // 0x26C (4)
 	float AnimLastTime; // 0x270 (4)
-	struct Unknown PerkFxMaterialInstance; // 0x278 (8)
-	struct Unknown UltimatePerkFxTexture; // 0x280 (8)
+	struct UMaterialInstanceDynamic PerkFxMaterialInstance; // 0x278 (8)
+	struct UTexture UltimatePerkFxTexture; // 0x280 (8)
 
 	void InitFxInfo(); // Function UW-Inventory_PerkSlot_FX.UW-Inventory_PerkSlot_FX_C.InitFxInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-Inventory_PerkSlot_FX.UW-Inventory_PerkSlot_FX_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-Inventory_PerkSlot_FX.UW-Inventory_PerkSlot_FX_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-Inventory_PerkSlot_FX.UW-Inventory_PerkSlot_FX_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-Inventory_PerkSlot_FX(int32_t EntryPoint); // Function UW-Inventory_PerkSlot_FX.UW-Inventory_PerkSlot_FX_C.ExecuteUbergraph_UW-Inventory_PerkSlot_FX(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
@@ -48,11 +48,11 @@ inline void UUW-Inventory_PerkSlot_FX_C::Construct() {
 }
 
 // Function UW-Inventory_PerkSlot_FX.UW-Inventory_PerkSlot_FX_C.Tick
-inline void UUW-Inventory_PerkSlot_FX_C::Tick(struct Unknown MyGeometry, float InDeltaTime) {
+inline void UUW-Inventory_PerkSlot_FX_C::Tick(struct FGeometry MyGeometry, float InDeltaTime) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_PerkSlot_FX.UW-Inventory_PerkSlot_FX_C.Tick");
 
 	struct Tick_Params {
-		struct Unknown MyGeometry;
+		struct FGeometry MyGeometry;
 		float InDeltaTime;
 	}; Tick_Params Params;
 

@@ -3,23 +3,23 @@ class UUW-PopupWidget_C : public UBravoHotelPopupWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x268 (8)
-	struct Unknown Bg; // 0x270 (8)
-	struct Unknown btn_Cancel; // 0x278 (8)
-	struct Unknown btn_OK; // 0x280 (8)
-	struct Unknown Desc; // 0x288 (8)
-	struct Unknown Image_2; // 0x290 (8)
-	struct Unknown Overlay; // 0x298 (8)
-	struct Unknown Overlay_1; // 0x2A0 (8)
-	struct Unknown Overlay_2; // 0x2A8 (8)
-	struct Unknown RichTextBlock_244; // 0x2B0 (8)
-	struct Unknown TextBlock_17; // 0x2B8 (8)
-	struct Unknown Throbber_159; // 0x2C0 (8)
-	struct Unknown Title; // 0x2C8 (8)
-	struct Unknown WidgetSwitcher_1; // 0x2D0 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x268 (8)
+	struct UImage Bg; // 0x270 (8)
+	struct UButton btn_Cancel; // 0x278 (8)
+	struct UButton btn_OK; // 0x280 (8)
+	struct UTextBlock Desc; // 0x288 (8)
+	struct UImage Image_2; // 0x290 (8)
+	struct UOverlay Overlay; // 0x298 (8)
+	struct UOverlay Overlay_1; // 0x2A0 (8)
+	struct UOverlay Overlay_2; // 0x2A8 (8)
+	struct URichTextBlock RichTextBlock_244; // 0x2B0 (8)
+	struct UTextBlock TextBlock_17; // 0x2B8 (8)
+	struct UThrobber Throbber_159; // 0x2C0 (8)
+	struct UTextBlock Title; // 0x2C8 (8)
+	struct UWidgetSwitcher WidgetSwitcher_1; // 0x2D0 (8)
 	struct FName MapNameToExit; // 0x2D8 (8)
 	char IsExitGame : 0; // 0x2E0 (1)
-	struct Unknown ControllerRef; // 0x2E8 (8)
+	struct ABravoHotelPlayerController ControllerRef; // 0x2E8 (8)
 	char IsTutorial : 0; // 0x2F0 (1)
 	char IsDeathCam : 0; // 0x2F1 (1)
 	struct FMulticastInlineDelegate EventDispatcher_MoveToDeathCam; // 0x2F8 (16)
@@ -37,8 +37,8 @@ public:
 	void EnterWindow(); // Function UW-PopupWidget.UW-PopupWidget_C.EnterWindow(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void GetMyTeamAlive(char& ALIVE); // Function UW-PopupWidget.UW-PopupWidget_C.GetMyTeamAlive(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void EnterLobby(); // Function UW-PopupWidget.UW-PopupWidget_C.EnterLobby(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown OnMouseWheel(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-PopupWidget.UW-PopupWidget_C.OnMouseWheel(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown OnMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-PopupWidget.UW-PopupWidget_C.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply OnMouseWheel(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-PopupWidget.UW-PopupWidget_C.OnMouseWheel(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply OnMouseButtonDown(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-PopupWidget.UW-PopupWidget_C.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-PopupWidget.UW-PopupWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__btn_OK_K2Node_ComponentBoundEvent_35_OnButtonClickedEvent__DelegateSignature(); // Function UW-PopupWidget.UW-PopupWidget_C.BndEvt__btn_OK_K2Node_ComponentBoundEvent_35_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__btn_Cancel_K2Node_ComponentBoundEvent_53_OnButtonClickedEvent__DelegateSignature(); // Function UW-PopupWidget.UW-PopupWidget_C.BndEvt__btn_Cancel_K2Node_ComponentBoundEvent_53_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -51,7 +51,7 @@ public:
 	void MoveLobby(); // Function UW-PopupWidget.UW-PopupWidget_C.MoveLobby(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Show_2(); // Function UW-PopupWidget.UW-PopupWidget_C.Show_2(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Hide_2(); // Function UW-PopupWidget.UW-PopupWidget_C.Hide_2(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetMessageEx(int32_t ErrorIdx, struct FString ErrorID, struct FString Parameter, char bConfirm, char bCancel, char bWaiting, struct Unknown& evt); // Function UW-PopupWidget.UW-PopupWidget_C.SetMessageEx(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetMessageEx(int32_t ErrorIdx, struct FString ErrorID, struct FString Parameter, char bConfirm, char bCancel, char bWaiting, struct FWaitingEvent& evt); // Function UW-PopupWidget.UW-PopupWidget_C.SetMessageEx(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ä¤@t¤¸_1(); // Function UW-PopupWidget.UW-PopupWidget_C.ä¤@t¤¸_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void QuitGame(float DelayTime); // Function UW-PopupWidget.UW-PopupWidget_C.QuitGame(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Destruct(); // Function UW-PopupWidget.UW-PopupWidget_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -210,13 +210,13 @@ inline void UUW-PopupWidget_C::EnterLobby() {
 }
 
 // Function UW-PopupWidget.UW-PopupWidget_C.OnMouseWheel
-inline struct Unknown UUW-PopupWidget_C::OnMouseWheel(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UUW-PopupWidget_C::OnMouseWheel(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PopupWidget.UW-PopupWidget_C.OnMouseWheel");
 
 	struct OnMouseWheel_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnMouseWheel_Params Params;
 
@@ -233,13 +233,13 @@ inline struct Unknown UUW-PopupWidget_C::OnMouseWheel(struct Unknown MyGeometry,
 }
 
 // Function UW-PopupWidget.UW-PopupWidget_C.OnMouseButtonDown
-inline struct Unknown UUW-PopupWidget_C::OnMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UUW-PopupWidget_C::OnMouseButtonDown(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PopupWidget.UW-PopupWidget_C.OnMouseButtonDown");
 
 	struct OnMouseButtonDown_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnMouseButtonDown_Params Params;
 
@@ -424,7 +424,7 @@ inline void UUW-PopupWidget_C::Hide_2() {
 }
 
 // Function UW-PopupWidget.UW-PopupWidget_C.SetMessageEx
-inline void UUW-PopupWidget_C::SetMessageEx(int32_t ErrorIdx, struct FString ErrorID, struct FString Parameter, char bConfirm, char bCancel, char bWaiting, struct Unknown& evt) {
+inline void UUW-PopupWidget_C::SetMessageEx(int32_t ErrorIdx, struct FString ErrorID, struct FString Parameter, char bConfirm, char bCancel, char bWaiting, struct FWaitingEvent& evt) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PopupWidget.UW-PopupWidget_C.SetMessageEx");
 
 	struct SetMessageEx_Params {
@@ -434,7 +434,7 @@ inline void UUW-PopupWidget_C::SetMessageEx(int32_t ErrorIdx, struct FString Err
 		char bConfirm;
 		char bCancel;
 		char bWaiting;
-		struct Unknown& evt;
+		struct FWaitingEvent& evt;
 	}; SetMessageEx_Params Params;
 
 	Params.ErrorIdx = ErrorIdx;

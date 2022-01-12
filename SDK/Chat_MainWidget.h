@@ -3,13 +3,13 @@ class UChat_MainWidget_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Chat Input; // 0x250 (8)
-	struct Unknown Chat Switcher; // 0x258 (8)
-	struct Unknown Tab Scrollbox; // 0x260 (8)
-	struct Unknown Whole Widget Container; // 0x268 (8)
-	struct Unknown Chat System; // 0x270 (8)
-	struct Unknown CurrentDialogBox; // 0x278 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UEditableTextBox Chat Input; // 0x250 (8)
+	struct UWidgetSwitcher Chat Switcher; // 0x258 (8)
+	struct UScrollBox Tab Scrollbox; // 0x260 (8)
+	struct UCanvasPanel Whole Widget Container; // 0x268 (8)
+	struct AChat_System_C Chat System; // 0x270 (8)
+	struct UChat_DialogBox_C CurrentDialogBox; // 0x278 (8)
 	float Chat Inactivity Hide Delay; // 0x280 (4)
 	char Faded? : 0; // 0x284 (1)
 	char Was Previously Faded? : 0; // 0x285 (1)
@@ -27,12 +27,12 @@ public:
 	void BndEvt__Chat Input_K2Node_ComponentBoundEvent_790_OnEditableTextBoxCommittedEvent__DelegateSignature(struct FText& Text, char CommitMethod); // Function Chat_MainWidget.Chat_MainWidget_C.BndEvt__Chat Input_K2Node_ComponentBoundEvent_790_OnEditableTextBoxCommittedEvent__DelegateSignature(HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Reset Inactivity Timer(); // Function Chat_MainWidget.Chat_MainWidget_C.Reset Inactivity Timer(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Set Keyboard Focus(); // Function Chat_MainWidget.Chat_MainWidget_C.Set Keyboard Focus(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function Chat_MainWidget.Chat_MainWidget_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnMouseLeave(struct Unknown& MouseEvent); // Function Chat_MainWidget.Chat_MainWidget_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnMouseEnter(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function Chat_MainWidget.Chat_MainWidget_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnMouseLeave(struct FPointerEvent& MouseEvent); // Function Chat_MainWidget.Chat_MainWidget_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__Chat Input_K2Node_ComponentBoundEvent_1051_OnEditableTextBoxChangedEvent__DelegateSignature(struct FText& Text); // Function Chat_MainWidget.Chat_MainWidget_C.BndEvt__Chat Input_K2Node_ComponentBoundEvent_1051_OnEditableTextBoxChangedEvent__DelegateSignature(HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Widget Mouse Enter(); // Function Chat_MainWidget.Chat_MainWidget_C.Widget Mouse Enter(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Widget Mouse Leave(); // Function Chat_MainWidget.Chat_MainWidget_C.Widget Mouse Leave(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function Chat_MainWidget.Chat_MainWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function Chat_MainWidget.Chat_MainWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_Chat_MainWidget(int32_t EntryPoint); // Function Chat_MainWidget.Chat_MainWidget_C.ExecuteUbergraph_Chat_MainWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
@@ -135,12 +135,12 @@ inline void UChat_MainWidget_C::Set Keyboard Focus() {
 }
 
 // Function Chat_MainWidget.Chat_MainWidget_C.OnMouseEnter
-inline void UChat_MainWidget_C::OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline void UChat_MainWidget_C::OnMouseEnter(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function Chat_MainWidget.Chat_MainWidget_C.OnMouseEnter");
 
 	struct OnMouseEnter_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
 	}; OnMouseEnter_Params Params;
 
 	Params.MyGeometry = MyGeometry;
@@ -154,11 +154,11 @@ inline void UChat_MainWidget_C::OnMouseEnter(struct Unknown MyGeometry, struct U
 }
 
 // Function Chat_MainWidget.Chat_MainWidget_C.OnMouseLeave
-inline void UChat_MainWidget_C::OnMouseLeave(struct Unknown& MouseEvent) {
+inline void UChat_MainWidget_C::OnMouseLeave(struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function Chat_MainWidget.Chat_MainWidget_C.OnMouseLeave");
 
 	struct OnMouseLeave_Params {
-		struct Unknown& MouseEvent;
+		struct FPointerEvent& MouseEvent;
 	}; OnMouseLeave_Params Params;
 
 
@@ -216,11 +216,11 @@ inline void UChat_MainWidget_C::Widget Mouse Leave() {
 }
 
 // Function Chat_MainWidget.Chat_MainWidget_C.Tick
-inline void UChat_MainWidget_C::Tick(struct Unknown MyGeometry, float InDeltaTime) {
+inline void UChat_MainWidget_C::Tick(struct FGeometry MyGeometry, float InDeltaTime) {
 	static auto fn = UObject::FindObject<UFunction>("Function Chat_MainWidget.Chat_MainWidget_C.Tick");
 
 	struct Tick_Params {
-		struct Unknown MyGeometry;
+		struct FGeometry MyGeometry;
 		float InDeltaTime;
 	}; Tick_Params Params;
 

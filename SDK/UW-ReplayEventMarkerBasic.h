@@ -3,8 +3,8 @@ class UUW-ReplayEventMarkerBasic_C : public UBravoHotelReplayTimelineEventMarker
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x290 (8)
-	struct Unknown MarkerBorder; // 0x298 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x290 (8)
+	struct UBorder MarkerBorder; // 0x298 (8)
 
 	void K2_SetKillEvent(char IsMyInfo); // Function UW-ReplayEventMarkerBasic.UW-ReplayEventMarkerBasic_C.K2_SetKillEvent(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-ReplayEventMarkerBasic(int32_t EntryPoint); // Function UW-ReplayEventMarkerBasic.UW-ReplayEventMarkerBasic_C.ExecuteUbergraph_UW-ReplayEventMarkerBasic(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>

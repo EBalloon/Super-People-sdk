@@ -3,6 +3,6 @@ class UUW-BlackMarket_Character_C : public UUserWidget {
 
 public:
 
-	struct Unknown IMG-BlackMarketCharacter; // 0x248 (8)
+	struct UImage IMG-BlackMarketCharacter; // 0x248 (8)
 };
 

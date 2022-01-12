@@ -3,35 +3,35 @@ class UKeyImageWidget_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Alt; // 0x250 (8)
-	struct Unknown Alt+; // 0x258 (8)
-	struct Unknown Ctrl; // 0x260 (8)
-	struct Unknown Ctrl+; // 0x268 (8)
-	struct Unknown HorizontalBox_169; // 0x270 (8)
-	struct Unknown Key; // 0x278 (8)
-	struct Unknown ScaleBox_1; // 0x280 (8)
-	struct Unknown Shift; // 0x288 (8)
-	struct Unknown Shift+; // 0x290 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UUW-KeyControl_C Alt; // 0x250 (8)
+	struct UTextBlock Alt+; // 0x258 (8)
+	struct UUW-KeyControl_C Ctrl; // 0x260 (8)
+	struct UTextBlock Ctrl+; // 0x268 (8)
+	struct UHorizontalBox HorizontalBox_169; // 0x270 (8)
+	struct UUW-KeyControl_C Key; // 0x278 (8)
+	struct UScaleBox ScaleBox_1; // 0x280 (8)
+	struct UUW-KeyControl_C Shift; // 0x288 (8)
+	struct UTextBlock Shift+; // 0x290 (8)
 	char Horizontal Alignment; // 0x298 (1)
 	char vertical Alignment; // 0x299 (1)
 	char UsingAlphaBg : 0; // 0x29A (1)
-	enum class Unknow PreKeyType; // 0x29B (1)
-	struct Unknown PreKeyMappingData; // 0x2A0 (40)
+	enum class EKeySettingType PreKeyType; // 0x29B (1)
+	struct FInputActionKeyMapping PreKeyMappingData; // 0x2A0 (40)
 	char UsingKeyMappingData : 0; // 0x2C8 (1)
 	float DefaultScale; // 0x2CC (4)
 	char OverrideFontSize : 0; // 0x2D0 (1)
 	int32_t FontSize; // 0x2D4 (4)
 
 	void SetFontSize(char Override); // Function KeyImageWidget.KeyImageWidget_C.SetFontSize(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetKeyNameFromKey(struct Unknown Key, struct FString& Name, char& bRet); // Function KeyImageWidget.KeyImageWidget_C.GetKeyNameFromKey(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Set Key(struct Unknown Key); // Function KeyImageWidget.KeyImageWidget_C.Set Key(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Set AxistKey(struct Unknown AxisKey); // Function KeyImageWidget.KeyImageWidget_C.Set AxistKey(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetInfo(struct Unknown Key, char Shift, char Alt, char Ctrl); // Function KeyImageWidget.KeyImageWidget_C.SetInfo(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetKeyNameFromKey(struct FKey Key, struct FString& Name, char& bRet); // Function KeyImageWidget.KeyImageWidget_C.GetKeyNameFromKey(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Set Key(struct FInputActionKeyMapping Key); // Function KeyImageWidget.KeyImageWidget_C.Set Key(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Set AxistKey(struct FInputAxisKeyMapping AxisKey); // Function KeyImageWidget.KeyImageWidget_C.Set AxistKey(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetInfo(struct FKey Key, char Shift, char Alt, char Ctrl); // Function KeyImageWidget.KeyImageWidget_C.SetInfo(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetEmpty(); // Function KeyImageWidget.KeyImageWidget_C.SetEmpty(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function KeyImageWidget.KeyImageWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetInfoFromActionKeyMap(struct Unknown ActionKeyMap); // Function KeyImageWidget.KeyImageWidget_C.SetInfoFromActionKeyMap(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetKeyType(enum class Unknow KeyType); // Function KeyImageWidget.KeyImageWidget_C.SetKeyType(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetInfoFromActionKeyMap(struct FInputActionKeyMapping ActionKeyMap); // Function KeyImageWidget.KeyImageWidget_C.SetInfoFromActionKeyMap(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetKeyType(enum class EKeySettingType KeyType); // Function KeyImageWidget.KeyImageWidget_C.SetKeyType(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void PreConstruct(char IsDesignTime); // Function KeyImageWidget.KeyImageWidget_C.PreConstruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void RefreshKey(); // Function KeyImageWidget.KeyImageWidget_C.RefreshKey(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_KeyImageWidget(int32_t EntryPoint); // Function KeyImageWidget.KeyImageWidget_C.ExecuteUbergraph_KeyImageWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
@@ -53,11 +53,11 @@ inline void UKeyImageWidget_C::SetFontSize(char Override) {
 }
 
 // Function KeyImageWidget.KeyImageWidget_C.GetKeyNameFromKey
-inline void UKeyImageWidget_C::GetKeyNameFromKey(struct Unknown Key, struct FString& Name, char& bRet) {
+inline void UKeyImageWidget_C::GetKeyNameFromKey(struct FKey Key, struct FString& Name, char& bRet) {
 	static auto fn = UObject::FindObject<UFunction>("Function KeyImageWidget.KeyImageWidget_C.GetKeyNameFromKey");
 
 	struct GetKeyNameFromKey_Params {
-		struct Unknown Key;
+		struct FKey Key;
 		struct FString& Name;
 		char& bRet;
 	}; GetKeyNameFromKey_Params Params;
@@ -74,11 +74,11 @@ inline void UKeyImageWidget_C::GetKeyNameFromKey(struct Unknown Key, struct FStr
 }
 
 // Function KeyImageWidget.KeyImageWidget_C.Set Key
-inline void UKeyImageWidget_C::Set Key(struct Unknown Key) {
+inline void UKeyImageWidget_C::Set Key(struct FInputActionKeyMapping Key) {
 	static auto fn = UObject::FindObject<UFunction>("Function KeyImageWidget.KeyImageWidget_C.Set Key");
 
 	struct Set Key_Params {
-		struct Unknown Key;
+		struct FInputActionKeyMapping Key;
 	}; Set Key_Params Params;
 
 	Params.Key = Key;
@@ -89,11 +89,11 @@ inline void UKeyImageWidget_C::Set Key(struct Unknown Key) {
 }
 
 // Function KeyImageWidget.KeyImageWidget_C.Set AxistKey
-inline void UKeyImageWidget_C::Set AxistKey(struct Unknown AxisKey) {
+inline void UKeyImageWidget_C::Set AxistKey(struct FInputAxisKeyMapping AxisKey) {
 	static auto fn = UObject::FindObject<UFunction>("Function KeyImageWidget.KeyImageWidget_C.Set AxistKey");
 
 	struct Set AxistKey_Params {
-		struct Unknown AxisKey;
+		struct FInputAxisKeyMapping AxisKey;
 	}; Set AxistKey_Params Params;
 
 	Params.AxisKey = AxisKey;
@@ -104,11 +104,11 @@ inline void UKeyImageWidget_C::Set AxistKey(struct Unknown AxisKey) {
 }
 
 // Function KeyImageWidget.KeyImageWidget_C.SetInfo
-inline void UKeyImageWidget_C::SetInfo(struct Unknown Key, char Shift, char Alt, char Ctrl) {
+inline void UKeyImageWidget_C::SetInfo(struct FKey Key, char Shift, char Alt, char Ctrl) {
 	static auto fn = UObject::FindObject<UFunction>("Function KeyImageWidget.KeyImageWidget_C.SetInfo");
 
 	struct SetInfo_Params {
-		struct Unknown Key;
+		struct FKey Key;
 		char Shift;
 		char Alt;
 		char Ctrl;
@@ -153,11 +153,11 @@ inline void UKeyImageWidget_C::Construct() {
 }
 
 // Function KeyImageWidget.KeyImageWidget_C.SetInfoFromActionKeyMap
-inline void UKeyImageWidget_C::SetInfoFromActionKeyMap(struct Unknown ActionKeyMap) {
+inline void UKeyImageWidget_C::SetInfoFromActionKeyMap(struct FInputActionKeyMapping ActionKeyMap) {
 	static auto fn = UObject::FindObject<UFunction>("Function KeyImageWidget.KeyImageWidget_C.SetInfoFromActionKeyMap");
 
 	struct SetInfoFromActionKeyMap_Params {
-		struct Unknown ActionKeyMap;
+		struct FInputActionKeyMapping ActionKeyMap;
 	}; SetInfoFromActionKeyMap_Params Params;
 
 	Params.ActionKeyMap = ActionKeyMap;
@@ -168,11 +168,11 @@ inline void UKeyImageWidget_C::SetInfoFromActionKeyMap(struct Unknown ActionKeyM
 }
 
 // Function KeyImageWidget.KeyImageWidget_C.SetKeyType
-inline void UKeyImageWidget_C::SetKeyType(enum class Unknow KeyType) {
+inline void UKeyImageWidget_C::SetKeyType(enum class EKeySettingType KeyType) {
 	static auto fn = UObject::FindObject<UFunction>("Function KeyImageWidget.KeyImageWidget_C.SetKeyType");
 
 	struct SetKeyType_Params {
-		enum class Unknow KeyType;
+		enum class EKeySettingType KeyType;
 	}; SetKeyType_Params Params;
 
 	Params.KeyType = KeyType;

@@ -29,7 +29,7 @@ class UFixedFrameRateCustomTimeStep : public UEngineCustomTimeStep {
 
 public:
 
-	struct Unknown FixedFrameRate; // 0x28 (8)
+	struct FFrameRate FixedFrameRate; // 0x28 (8)
 };
 
 // Class TimeManagement.TimeSynchronizationSource

@@ -32,9 +32,9 @@ struct FEngineServicePong {
 	struct FString CurrentLevel; // 0x0 (16)
 	int32_t EngineVersion; // 0x10 (4)
 	char HasBegunPlay : 0; // 0x14 (1)
-	struct Unknown InstanceId; // 0x18 (16)
+	struct FGuid InstanceId; // 0x18 (16)
 	struct FString InstanceType; // 0x28 (16)
-	struct Unknown SessionID; // 0x38 (16)
+	struct FGuid SessionID; // 0x38 (16)
 	float WorldTimeSeconds; // 0x48 (4)
 };
 

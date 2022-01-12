@@ -3,16 +3,16 @@ class UUW-ReplayPlayerListGroupWidget_C : public UBravoHotelReplayPlayerListGrou
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x260 (8)
-	struct Unknown Img_TeamColor; // 0x268 (8)
-	struct Unknown T_TeamNum; // 0x270 (8)
-	struct Unknown VB_PlayerList; // 0x278 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x260 (8)
+	struct UImage Img_TeamColor; // 0x268 (8)
+	struct UTextBlock T_TeamNum; // 0x270 (8)
+	struct UVerticalBox VB_PlayerList; // 0x278 (8)
 
 	void CheckEmptyGroup(); // Function UW-ReplayPlayerListGroupWidget.UW-ReplayPlayerListGroupWidget_C.CheckEmptyGroup(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetTeamColor(); // Function UW-ReplayPlayerListGroupWidget.UW-ReplayPlayerListGroupWidget_C.SetTeamColor(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetTeamNumText(); // Function UW-ReplayPlayerListGroupWidget.UW-ReplayPlayerListGroupWidget_C.SetTeamNumText(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Init(struct Unknown PlayerState); // Function UW-ReplayPlayerListGroupWidget.UW-ReplayPlayerListGroupWidget_C.Init(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void UpdatePlayerInfo(enum class Unknow PlayerListSortType); // Function UW-ReplayPlayerListGroupWidget.UW-ReplayPlayerListGroupWidget_C.UpdatePlayerInfo(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Init(struct ABravoHotelPlayerState PlayerState); // Function UW-ReplayPlayerListGroupWidget.UW-ReplayPlayerListGroupWidget_C.Init(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void UpdatePlayerInfo(enum class EPlayerListSortType PlayerListSortType); // Function UW-ReplayPlayerListGroupWidget.UW-ReplayPlayerListGroupWidget_C.UpdatePlayerInfo(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-ReplayPlayerListGroupWidget(int32_t EntryPoint); // Function UW-ReplayPlayerListGroupWidget.UW-ReplayPlayerListGroupWidget_C.ExecuteUbergraph_UW-ReplayPlayerListGroupWidget(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
 };
 
@@ -59,11 +59,11 @@ inline void UUW-ReplayPlayerListGroupWidget_C::SetTeamNumText() {
 }
 
 // Function UW-ReplayPlayerListGroupWidget.UW-ReplayPlayerListGroupWidget_C.Init
-inline void UUW-ReplayPlayerListGroupWidget_C::Init(struct Unknown PlayerState) {
+inline void UUW-ReplayPlayerListGroupWidget_C::Init(struct ABravoHotelPlayerState PlayerState) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-ReplayPlayerListGroupWidget.UW-ReplayPlayerListGroupWidget_C.Init");
 
 	struct Init_Params {
-		struct Unknown PlayerState;
+		struct ABravoHotelPlayerState PlayerState;
 	}; Init_Params Params;
 
 	Params.PlayerState = PlayerState;
@@ -74,11 +74,11 @@ inline void UUW-ReplayPlayerListGroupWidget_C::Init(struct Unknown PlayerState) 
 }
 
 // Function UW-ReplayPlayerListGroupWidget.UW-ReplayPlayerListGroupWidget_C.UpdatePlayerInfo
-inline void UUW-ReplayPlayerListGroupWidget_C::UpdatePlayerInfo(enum class Unknow PlayerListSortType) {
+inline void UUW-ReplayPlayerListGroupWidget_C::UpdatePlayerInfo(enum class EPlayerListSortType PlayerListSortType) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-ReplayPlayerListGroupWidget.UW-ReplayPlayerListGroupWidget_C.UpdatePlayerInfo");
 
 	struct UpdatePlayerInfo_Params {
-		enum class Unknow PlayerListSortType;
+		enum class EPlayerListSortType PlayerListSortType;
 	}; UpdatePlayerInfo_Params Params;
 
 	Params.PlayerListSortType = PlayerListSortType;

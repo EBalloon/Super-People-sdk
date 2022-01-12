@@ -35,11 +35,11 @@ class UZipFileFunctionInternalCallback : public Object {
 
 public:
 
-	enum class Unknow CompressionFormat; // 0x30 (1)
+	enum class EZipUtilityCompressionFormat CompressionFormat; // 0x30 (1)
 	struct FString File; // 0x38 (16)
 	struct FString DestinationFolder; // 0x48 (16)
 	int32_t FileIndex; // 0x58 (4)
-	struct Unknown Callback; // 0x60 (8)
+	struct Object Callback; // 0x60 (8)
 	char bSingleFile : 0; // 0x68 (1)
 	char bFileFound : 0; // 0x69 (1)
 	char bUnzipto : 0; // 0x6A (1)

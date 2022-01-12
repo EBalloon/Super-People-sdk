@@ -3,25 +3,25 @@ class UUW-InteractionWidget_WeaponPerkSlot_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Image_350; // 0x250 (8)
-	struct Unknown Image_585; // 0x258 (8)
-	struct Unknown Image_Grade_Color_Line; // 0x260 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UImage Image_350; // 0x250 (8)
+	struct UImage Image_585; // 0x258 (8)
+	struct UImage Image_Grade_Color_Line; // 0x260 (8)
 
-	void SetBuffInfo(struct FText BuffName, struct FText Desc, struct Unknown Icon, int32_t Rarity); // Function UW-InteractionWidget_WeaponPerkSlot.UW-InteractionWidget_WeaponPerkSlot_C.SetBuffInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnLoaded_F9A8A8FB4318139B3972C6ACB5BBA1D9(struct Unknown Loaded); // Function UW-InteractionWidget_WeaponPerkSlot.UW-InteractionWidget_WeaponPerkSlot_C.OnLoaded_F9A8A8FB4318139B3972C6ACB5BBA1D9(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AsyncLoadIconTexture(struct Unknown IconTexture); // Function UW-InteractionWidget_WeaponPerkSlot.UW-InteractionWidget_WeaponPerkSlot_C.AsyncLoadIconTexture(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetBuffInfo(struct FText BuffName, struct FText Desc, struct TSoftObjectPtr<Object> Icon, int32_t Rarity); // Function UW-InteractionWidget_WeaponPerkSlot.UW-InteractionWidget_WeaponPerkSlot_C.SetBuffInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_F9A8A8FB4318139B3972C6ACB5BBA1D9(struct Object Loaded); // Function UW-InteractionWidget_WeaponPerkSlot.UW-InteractionWidget_WeaponPerkSlot_C.OnLoaded_F9A8A8FB4318139B3972C6ACB5BBA1D9(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AsyncLoadIconTexture(struct TSoftObjectPtr<Object> IconTexture); // Function UW-InteractionWidget_WeaponPerkSlot.UW-InteractionWidget_WeaponPerkSlot_C.AsyncLoadIconTexture(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-InteractionWidget_WeaponPerkSlot(int32_t EntryPoint); // Function UW-InteractionWidget_WeaponPerkSlot.UW-InteractionWidget_WeaponPerkSlot_C.ExecuteUbergraph_UW-InteractionWidget_WeaponPerkSlot(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-InteractionWidget_WeaponPerkSlot.UW-InteractionWidget_WeaponPerkSlot_C.SetBuffInfo
-inline void UUW-InteractionWidget_WeaponPerkSlot_C::SetBuffInfo(struct FText BuffName, struct FText Desc, struct Unknown Icon, int32_t Rarity) {
+inline void UUW-InteractionWidget_WeaponPerkSlot_C::SetBuffInfo(struct FText BuffName, struct FText Desc, struct TSoftObjectPtr<Object> Icon, int32_t Rarity) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-InteractionWidget_WeaponPerkSlot.UW-InteractionWidget_WeaponPerkSlot_C.SetBuffInfo");
 
 	struct SetBuffInfo_Params {
 		struct FText BuffName;
 		struct FText Desc;
-		struct Unknown Icon;
+		struct TSoftObjectPtr<Object> Icon;
 		int32_t Rarity;
 	}; SetBuffInfo_Params Params;
 
@@ -36,11 +36,11 @@ inline void UUW-InteractionWidget_WeaponPerkSlot_C::SetBuffInfo(struct FText Buf
 }
 
 // Function UW-InteractionWidget_WeaponPerkSlot.UW-InteractionWidget_WeaponPerkSlot_C.OnLoaded_F9A8A8FB4318139B3972C6ACB5BBA1D9
-inline void UUW-InteractionWidget_WeaponPerkSlot_C::OnLoaded_F9A8A8FB4318139B3972C6ACB5BBA1D9(struct Unknown Loaded) {
+inline void UUW-InteractionWidget_WeaponPerkSlot_C::OnLoaded_F9A8A8FB4318139B3972C6ACB5BBA1D9(struct Object Loaded) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-InteractionWidget_WeaponPerkSlot.UW-InteractionWidget_WeaponPerkSlot_C.OnLoaded_F9A8A8FB4318139B3972C6ACB5BBA1D9");
 
 	struct OnLoaded_F9A8A8FB4318139B3972C6ACB5BBA1D9_Params {
-		struct Unknown Loaded;
+		struct Object Loaded;
 	}; OnLoaded_F9A8A8FB4318139B3972C6ACB5BBA1D9_Params Params;
 
 	Params.Loaded = Loaded;
@@ -51,11 +51,11 @@ inline void UUW-InteractionWidget_WeaponPerkSlot_C::OnLoaded_F9A8A8FB4318139B397
 }
 
 // Function UW-InteractionWidget_WeaponPerkSlot.UW-InteractionWidget_WeaponPerkSlot_C.AsyncLoadIconTexture
-inline void UUW-InteractionWidget_WeaponPerkSlot_C::AsyncLoadIconTexture(struct Unknown IconTexture) {
+inline void UUW-InteractionWidget_WeaponPerkSlot_C::AsyncLoadIconTexture(struct TSoftObjectPtr<Object> IconTexture) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-InteractionWidget_WeaponPerkSlot.UW-InteractionWidget_WeaponPerkSlot_C.AsyncLoadIconTexture");
 
 	struct AsyncLoadIconTexture_Params {
-		struct Unknown IconTexture;
+		struct TSoftObjectPtr<Object> IconTexture;
 	}; AsyncLoadIconTexture_Params Params;
 
 	Params.IconTexture = IconTexture;

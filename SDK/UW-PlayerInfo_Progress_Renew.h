@@ -3,12 +3,12 @@ class UUW-PlayerInfo_Progress_Renew_C : public UBravoHotelPlayerInfoProgressWidg
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x2E8 (8)
-	struct Unknown Anim_Healing; // 0x2F0 (8)
-	struct Unknown HorizontalBox_Health; // 0x2F8 (8)
-	struct Unknown Image_eager; // 0x300 (8)
-	struct Unknown SizeBox_main; // 0x308 (8)
-	struct Unknown Curve_ProgressMaxSizeRatio; // 0x310 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x2E8 (8)
+	struct UWidgetAnimation Anim_Healing; // 0x2F0 (8)
+	struct UHorizontalBox HorizontalBox_Health; // 0x2F8 (8)
+	struct UImage Image_eager; // 0x300 (8)
+	struct USizeBox SizeBox_main; // 0x308 (8)
+	struct UCurveFloat Curve_ProgressMaxSizeRatio; // 0x310 (8)
 	float DefaultSlotSize; // 0x318 (4)
 	float MaxHealthSize; // 0x31C (4)
 	float CurrentHealthSize; // 0x320 (4)

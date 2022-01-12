@@ -3,7 +3,7 @@ class UBP-LadderComponent_C : public ULadderComponent {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x210 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x210 (8)
 	char NeedToChangeHand : 0; // 0x218 (1)
 	float CrntAxisValue; // 0x21C (4)
 	float GoalLocationZ; // 0x220 (4)
@@ -17,7 +17,7 @@ public:
 
 	void CalcLadderInteractionType(); // Function BP-LadderComponent.BP-LadderComponent_C.CalcLadderInteractionType(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CanCancelMotion(char& CanCancel); // Function BP-LadderComponent.BP-LadderComponent_C.CanCancelMotion(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void GetEndLocation(struct Unknown& LadderRelativeLocation); // Function BP-LadderComponent.BP-LadderComponent_C.GetEndLocation(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetEndLocation(struct FVector& LadderRelativeLocation); // Function BP-LadderComponent.BP-LadderComponent_C.GetEndLocation(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetMovingInfo(); // Function BP-LadderComponent.BP-LadderComponent_C.SetMovingInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void MoveInMotion(); // Function BP-LadderComponent.BP-LadderComponent_C.MoveInMotion(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ActiveCameraInterp(); // Function BP-LadderComponent.BP-LadderComponent_C.ActiveCameraInterp(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -27,7 +27,7 @@ public:
 	void AddMovementOnLadder(float AxisValue); // Function BP-LadderComponent.BP-LadderComponent_C.AddMovementOnLadder(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CheckCanExitLadder(char IsTop, char& Result); // Function BP-LadderComponent.BP-LadderComponent_C.CheckCanExitLadder(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ChangeMovementMode(char OnLadder); // Function BP-LadderComponent.BP-LadderComponent_C.ChangeMovementMode(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CalcTargetLocation(enum class Unknow InLadderInteractionType, struct Unknown& OutTargetLocation); // Function BP-LadderComponent.BP-LadderComponent_C.CalcTargetLocation(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CalcTargetLocation(enum class ELadderInteractionType InLadderInteractionType, struct FVector& OutTargetLocation); // Function BP-LadderComponent.BP-LadderComponent_C.CalcTargetLocation(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetCharacterClimbSettings(char ClimbOn); // Function BP-LadderComponent.BP-LadderComponent_C.SetCharacterClimbSettings(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SnapToLadder(); // Function BP-LadderComponent.BP-LadderComponent_C.SnapToLadder(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetSnappingInfo(float& DirectSnapLocZ); // Function BP-LadderComponent.BP-LadderComponent_C.SetSnappingInfo(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -38,25 +38,25 @@ public:
 	void OnInterrupted_ABB5B46F49E086A9FC6EC9AE877A3650(struct FName NotifyName); // Function BP-LadderComponent.BP-LadderComponent_C.OnInterrupted_ABB5B46F49E086A9FC6EC9AE877A3650(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnBlendOut_ABB5B46F49E086A9FC6EC9AE877A3650(struct FName NotifyName); // Function BP-LadderComponent.BP-LadderComponent_C.OnBlendOut_ABB5B46F49E086A9FC6EC9AE877A3650(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnCompleted_ABB5B46F49E086A9FC6EC9AE877A3650(struct FName NotifyName); // Function BP-LadderComponent.BP-LadderComponent_C.OnCompleted_ABB5B46F49E086A9FC6EC9AE877A3650(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ServerSetMovementOnLadder(struct Unknown LadderLocation, float AxisValue); // Function BP-LadderComponent.BP-LadderComponent_C.ServerSetMovementOnLadder(Net|NetReliableNetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void StopMontage(struct Unknown StopMontage); // Function BP-LadderComponent.BP-LadderComponent_C.StopMontage(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ServerSetMovementOnLadder(struct FVector LadderLocation, float AxisValue); // Function BP-LadderComponent.BP-LadderComponent_C.ServerSetMovementOnLadder(Net|NetReliableNetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void StopMontage(struct UAnimMontage StopMontage); // Function BP-LadderComponent.BP-LadderComponent_C.StopMontage(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CompleteExitingLadder(); // Function BP-LadderComponent.BP-LadderComponent_C.CompleteExitingLadder(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CompleteEnteringLadder(); // Function BP-LadderComponent.BP-LadderComponent_C.CompleteEnteringLadder(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void MultiStopMontage(struct Unknown StopMontage); // Function BP-LadderComponent.BP-LadderComponent_C.MultiStopMontage(Net|NetReliableNetMulticast|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ServerStopMontage(struct Unknown StopMontage); // Function BP-LadderComponent.BP-LadderComponent_C.ServerStopMontage(Net|NetReliableNetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void MultiStopMontage(struct UAnimMontage StopMontage); // Function BP-LadderComponent.BP-LadderComponent_C.MultiStopMontage(Net|NetReliableNetMulticast|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ServerStopMontage(struct UAnimMontage StopMontage); // Function BP-LadderComponent.BP-LadderComponent_C.ServerStopMontage(Net|NetReliableNetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void LadderStateEvent(); // Function BP-LadderComponent.BP-LadderComponent_C.LadderStateEvent(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ServerDownLadder(enum class Unknow LadderInteractionType); // Function BP-LadderComponent.BP-LadderComponent_C.ServerDownLadder(Net|NetReliableNetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ServerDownLadder(enum class ELadderInteractionType LadderInteractionType); // Function BP-LadderComponent.BP-LadderComponent_C.ServerDownLadder(Net|NetReliableNetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void PlayLadderAnim(); // Function BP-LadderComponent.BP-LadderComponent_C.PlayLadderAnim(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void StartMoveInMotion(); // Function BP-LadderComponent.BP-LadderComponent_C.StartMoveInMotion(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ReceiveTick(float DeltaSeconds); // Function BP-LadderComponent.BP-LadderComponent_C.ReceiveTick(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ReceiveBeginPlay(); // Function BP-LadderComponent.BP-LadderComponent_C.ReceiveBeginPlay(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CancelMotion(float AxisValue); // Function BP-LadderComponent.BP-LadderComponent_C.CancelMotion(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ExceptionSetUsingLadder(struct Unknown UsingLadder); // Function BP-LadderComponent.BP-LadderComponent_C.ExceptionSetUsingLadder(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ServerUseLadder(enum class Unknow LadderInteractionType, float SnappingTime, float DirectSnapLocZ, struct Unknown UsingLadder); // Function BP-LadderComponent.BP-LadderComponent_C.ServerUseLadder(Net|NetReliableNetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void MultiUseLadder(enum class Unknow LadderInteractionType, float SnappingTime, float DirectSnapLocZ, struct Unknown UsingLadder); // Function BP-LadderComponent.BP-LadderComponent_C.MultiUseLadder(Net|NetReliableNetMulticast|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void MultiDownLadder(enum class Unknow LadderInteractionType); // Function BP-LadderComponent.BP-LadderComponent_C.MultiDownLadder(Net|NetReliableNetMulticast|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void StartStopMontage(struct Unknown StopMontage); // Function BP-LadderComponent.BP-LadderComponent_C.StartStopMontage(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ServerSetLadderState(enum class Unknow LadderState); // Function BP-LadderComponent.BP-LadderComponent_C.ServerSetLadderState(Net|NetReliableNetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ExceptionSetUsingLadder(struct ABravoHotelLadder UsingLadder); // Function BP-LadderComponent.BP-LadderComponent_C.ExceptionSetUsingLadder(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ServerUseLadder(enum class ELadderInteractionType LadderInteractionType, float SnappingTime, float DirectSnapLocZ, struct ABravoHotelLadder UsingLadder); // Function BP-LadderComponent.BP-LadderComponent_C.ServerUseLadder(Net|NetReliableNetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void MultiUseLadder(enum class ELadderInteractionType LadderInteractionType, float SnappingTime, float DirectSnapLocZ, struct ABravoHotelLadder UsingLadder); // Function BP-LadderComponent.BP-LadderComponent_C.MultiUseLadder(Net|NetReliableNetMulticast|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void MultiDownLadder(enum class ELadderInteractionType LadderInteractionType); // Function BP-LadderComponent.BP-LadderComponent_C.MultiDownLadder(Net|NetReliableNetMulticast|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void StartStopMontage(struct UAnimMontage StopMontage); // Function BP-LadderComponent.BP-LadderComponent_C.StartStopMontage(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ServerSetLadderState(enum class ELadderState LadderState); // Function BP-LadderComponent.BP-LadderComponent_C.ServerSetLadderState(Net|NetReliableNetServer|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void K2_StartUseladder(); // Function BP-LadderComponent.BP-LadderComponent_C.K2_StartUseladder(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void K2_StopUseLadder(); // Function BP-LadderComponent.BP-LadderComponent_C.K2_StopUseLadder(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void K2_MoveRightOnLadder(float AxisValue); // Function BP-LadderComponent.BP-LadderComponent_C.K2_MoveRightOnLadder(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -96,11 +96,11 @@ inline void UBP-LadderComponent_C::CanCancelMotion(char& CanCancel) {
 }
 
 // Function BP-LadderComponent.BP-LadderComponent_C.GetEndLocation
-inline void UBP-LadderComponent_C::GetEndLocation(struct Unknown& LadderRelativeLocation) {
+inline void UBP-LadderComponent_C::GetEndLocation(struct FVector& LadderRelativeLocation) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-LadderComponent.BP-LadderComponent_C.GetEndLocation");
 
 	struct GetEndLocation_Params {
-		struct Unknown& LadderRelativeLocation;
+		struct FVector& LadderRelativeLocation;
 	}; GetEndLocation_Params Params;
 
 
@@ -247,12 +247,12 @@ inline void UBP-LadderComponent_C::ChangeMovementMode(char OnLadder) {
 }
 
 // Function BP-LadderComponent.BP-LadderComponent_C.CalcTargetLocation
-inline void UBP-LadderComponent_C::CalcTargetLocation(enum class Unknow InLadderInteractionType, struct Unknown& OutTargetLocation) {
+inline void UBP-LadderComponent_C::CalcTargetLocation(enum class ELadderInteractionType InLadderInteractionType, struct FVector& OutTargetLocation) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-LadderComponent.BP-LadderComponent_C.CalcTargetLocation");
 
 	struct CalcTargetLocation_Params {
-		enum class Unknow InLadderInteractionType;
-		struct Unknown& OutTargetLocation;
+		enum class ELadderInteractionType InLadderInteractionType;
+		struct FVector& OutTargetLocation;
 	}; CalcTargetLocation_Params Params;
 
 	Params.InLadderInteractionType = InLadderInteractionType;
@@ -424,11 +424,11 @@ inline void UBP-LadderComponent_C::OnCompleted_ABB5B46F49E086A9FC6EC9AE877A3650(
 }
 
 // Function BP-LadderComponent.BP-LadderComponent_C.ServerSetMovementOnLadder
-inline void UBP-LadderComponent_C::ServerSetMovementOnLadder(struct Unknown LadderLocation, float AxisValue) {
+inline void UBP-LadderComponent_C::ServerSetMovementOnLadder(struct FVector LadderLocation, float AxisValue) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-LadderComponent.BP-LadderComponent_C.ServerSetMovementOnLadder");
 
 	struct ServerSetMovementOnLadder_Params {
-		struct Unknown LadderLocation;
+		struct FVector LadderLocation;
 		float AxisValue;
 	}; ServerSetMovementOnLadder_Params Params;
 
@@ -441,11 +441,11 @@ inline void UBP-LadderComponent_C::ServerSetMovementOnLadder(struct Unknown Ladd
 }
 
 // Function BP-LadderComponent.BP-LadderComponent_C.StopMontage
-inline void UBP-LadderComponent_C::StopMontage(struct Unknown StopMontage) {
+inline void UBP-LadderComponent_C::StopMontage(struct UAnimMontage StopMontage) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-LadderComponent.BP-LadderComponent_C.StopMontage");
 
 	struct StopMontage_Params {
-		struct Unknown StopMontage;
+		struct UAnimMontage StopMontage;
 	}; StopMontage_Params Params;
 
 	Params.StopMontage = StopMontage;
@@ -484,11 +484,11 @@ inline void UBP-LadderComponent_C::CompleteEnteringLadder() {
 }
 
 // Function BP-LadderComponent.BP-LadderComponent_C.MultiStopMontage
-inline void UBP-LadderComponent_C::MultiStopMontage(struct Unknown StopMontage) {
+inline void UBP-LadderComponent_C::MultiStopMontage(struct UAnimMontage StopMontage) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-LadderComponent.BP-LadderComponent_C.MultiStopMontage");
 
 	struct MultiStopMontage_Params {
-		struct Unknown StopMontage;
+		struct UAnimMontage StopMontage;
 	}; MultiStopMontage_Params Params;
 
 	Params.StopMontage = StopMontage;
@@ -499,11 +499,11 @@ inline void UBP-LadderComponent_C::MultiStopMontage(struct Unknown StopMontage) 
 }
 
 // Function BP-LadderComponent.BP-LadderComponent_C.ServerStopMontage
-inline void UBP-LadderComponent_C::ServerStopMontage(struct Unknown StopMontage) {
+inline void UBP-LadderComponent_C::ServerStopMontage(struct UAnimMontage StopMontage) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-LadderComponent.BP-LadderComponent_C.ServerStopMontage");
 
 	struct ServerStopMontage_Params {
-		struct Unknown StopMontage;
+		struct UAnimMontage StopMontage;
 	}; ServerStopMontage_Params Params;
 
 	Params.StopMontage = StopMontage;
@@ -528,11 +528,11 @@ inline void UBP-LadderComponent_C::LadderStateEvent() {
 }
 
 // Function BP-LadderComponent.BP-LadderComponent_C.ServerDownLadder
-inline void UBP-LadderComponent_C::ServerDownLadder(enum class Unknow LadderInteractionType) {
+inline void UBP-LadderComponent_C::ServerDownLadder(enum class ELadderInteractionType LadderInteractionType) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-LadderComponent.BP-LadderComponent_C.ServerDownLadder");
 
 	struct ServerDownLadder_Params {
-		enum class Unknow LadderInteractionType;
+		enum class ELadderInteractionType LadderInteractionType;
 	}; ServerDownLadder_Params Params;
 
 	Params.LadderInteractionType = LadderInteractionType;
@@ -615,11 +615,11 @@ inline void UBP-LadderComponent_C::CancelMotion(float AxisValue) {
 }
 
 // Function BP-LadderComponent.BP-LadderComponent_C.ExceptionSetUsingLadder
-inline void UBP-LadderComponent_C::ExceptionSetUsingLadder(struct Unknown UsingLadder) {
+inline void UBP-LadderComponent_C::ExceptionSetUsingLadder(struct ABravoHotelLadder UsingLadder) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-LadderComponent.BP-LadderComponent_C.ExceptionSetUsingLadder");
 
 	struct ExceptionSetUsingLadder_Params {
-		struct Unknown UsingLadder;
+		struct ABravoHotelLadder UsingLadder;
 	}; ExceptionSetUsingLadder_Params Params;
 
 	Params.UsingLadder = UsingLadder;
@@ -630,14 +630,14 @@ inline void UBP-LadderComponent_C::ExceptionSetUsingLadder(struct Unknown UsingL
 }
 
 // Function BP-LadderComponent.BP-LadderComponent_C.ServerUseLadder
-inline void UBP-LadderComponent_C::ServerUseLadder(enum class Unknow LadderInteractionType, float SnappingTime, float DirectSnapLocZ, struct Unknown UsingLadder) {
+inline void UBP-LadderComponent_C::ServerUseLadder(enum class ELadderInteractionType LadderInteractionType, float SnappingTime, float DirectSnapLocZ, struct ABravoHotelLadder UsingLadder) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-LadderComponent.BP-LadderComponent_C.ServerUseLadder");
 
 	struct ServerUseLadder_Params {
-		enum class Unknow LadderInteractionType;
+		enum class ELadderInteractionType LadderInteractionType;
 		float SnappingTime;
 		float DirectSnapLocZ;
-		struct Unknown UsingLadder;
+		struct ABravoHotelLadder UsingLadder;
 	}; ServerUseLadder_Params Params;
 
 	Params.LadderInteractionType = LadderInteractionType;
@@ -651,14 +651,14 @@ inline void UBP-LadderComponent_C::ServerUseLadder(enum class Unknow LadderInter
 }
 
 // Function BP-LadderComponent.BP-LadderComponent_C.MultiUseLadder
-inline void UBP-LadderComponent_C::MultiUseLadder(enum class Unknow LadderInteractionType, float SnappingTime, float DirectSnapLocZ, struct Unknown UsingLadder) {
+inline void UBP-LadderComponent_C::MultiUseLadder(enum class ELadderInteractionType LadderInteractionType, float SnappingTime, float DirectSnapLocZ, struct ABravoHotelLadder UsingLadder) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-LadderComponent.BP-LadderComponent_C.MultiUseLadder");
 
 	struct MultiUseLadder_Params {
-		enum class Unknow LadderInteractionType;
+		enum class ELadderInteractionType LadderInteractionType;
 		float SnappingTime;
 		float DirectSnapLocZ;
-		struct Unknown UsingLadder;
+		struct ABravoHotelLadder UsingLadder;
 	}; MultiUseLadder_Params Params;
 
 	Params.LadderInteractionType = LadderInteractionType;
@@ -672,11 +672,11 @@ inline void UBP-LadderComponent_C::MultiUseLadder(enum class Unknow LadderIntera
 }
 
 // Function BP-LadderComponent.BP-LadderComponent_C.MultiDownLadder
-inline void UBP-LadderComponent_C::MultiDownLadder(enum class Unknow LadderInteractionType) {
+inline void UBP-LadderComponent_C::MultiDownLadder(enum class ELadderInteractionType LadderInteractionType) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-LadderComponent.BP-LadderComponent_C.MultiDownLadder");
 
 	struct MultiDownLadder_Params {
-		enum class Unknow LadderInteractionType;
+		enum class ELadderInteractionType LadderInteractionType;
 	}; MultiDownLadder_Params Params;
 
 	Params.LadderInteractionType = LadderInteractionType;
@@ -687,11 +687,11 @@ inline void UBP-LadderComponent_C::MultiDownLadder(enum class Unknow LadderInter
 }
 
 // Function BP-LadderComponent.BP-LadderComponent_C.StartStopMontage
-inline void UBP-LadderComponent_C::StartStopMontage(struct Unknown StopMontage) {
+inline void UBP-LadderComponent_C::StartStopMontage(struct UAnimMontage StopMontage) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-LadderComponent.BP-LadderComponent_C.StartStopMontage");
 
 	struct StartStopMontage_Params {
-		struct Unknown StopMontage;
+		struct UAnimMontage StopMontage;
 	}; StartStopMontage_Params Params;
 
 	Params.StopMontage = StopMontage;
@@ -702,11 +702,11 @@ inline void UBP-LadderComponent_C::StartStopMontage(struct Unknown StopMontage) 
 }
 
 // Function BP-LadderComponent.BP-LadderComponent_C.ServerSetLadderState
-inline void UBP-LadderComponent_C::ServerSetLadderState(enum class Unknow LadderState) {
+inline void UBP-LadderComponent_C::ServerSetLadderState(enum class ELadderState LadderState) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-LadderComponent.BP-LadderComponent_C.ServerSetLadderState");
 
 	struct ServerSetLadderState_Params {
-		enum class Unknow LadderState;
+		enum class ELadderState LadderState;
 	}; ServerSetLadderState_Params Params;
 
 	Params.LadderState = LadderState;

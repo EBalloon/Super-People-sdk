@@ -3,23 +3,23 @@ class UUW-Inventory_CharacterDragPanel_C : public UUserWidget {
 
 public:
 
-	struct Unknown Image_91; // 0x248 (8)
-	struct Unknown InventoryCharacterRef; // 0x250 (8)
+	struct UImage Image_91; // 0x248 (8)
+	struct ABravoHotelInventoryCharacter InventoryCharacterRef; // 0x250 (8)
 	char Visible : 0; // 0x258 (1)
 
-	enum class Unknow GetVisibility_1(); // Function UW-Inventory_CharacterDragPanel.UW-Inventory_CharacterDragPanel_C.GetVisibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	struct Unknown On_DragRect_MouseButtonDown_1(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-Inventory_CharacterDragPanel.UW-Inventory_CharacterDragPanel_C.On_DragRect_MouseButtonDown_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void IsHitTest(struct Unknown Pos, char& bHit); // Function UW-Inventory_CharacterDragPanel.UW-Inventory_CharacterDragPanel_C.IsHitTest(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void GetInventoryCharacter(struct Unknown& InventoryCharacter); // Function UW-Inventory_CharacterDragPanel.UW-Inventory_CharacterDragPanel_C.GetInventoryCharacter(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	enum class ESlateVisibility GetVisibility_1(); // Function UW-Inventory_CharacterDragPanel.UW-Inventory_CharacterDragPanel_C.GetVisibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	struct FEventReply On_DragRect_MouseButtonDown_1(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-Inventory_CharacterDragPanel.UW-Inventory_CharacterDragPanel_C.On_DragRect_MouseButtonDown_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void IsHitTest(struct FVector2D Pos, char& bHit); // Function UW-Inventory_CharacterDragPanel.UW-Inventory_CharacterDragPanel_C.IsHitTest(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void GetInventoryCharacter(struct ABravoHotelInventoryCharacter& InventoryCharacter); // Function UW-Inventory_CharacterDragPanel.UW-Inventory_CharacterDragPanel_C.GetInventoryCharacter(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-Inventory_CharacterDragPanel.UW-Inventory_CharacterDragPanel_C.GetVisibility_1
-inline enum class Unknow UUW-Inventory_CharacterDragPanel_C::GetVisibility_1() {
+inline enum class ESlateVisibility UUW-Inventory_CharacterDragPanel_C::GetVisibility_1() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_CharacterDragPanel.UW-Inventory_CharacterDragPanel_C.GetVisibility_1");
 
 	struct GetVisibility_1_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class ESlateVisibility ReturnValue;
 
 	}; GetVisibility_1_Params Params;
 
@@ -32,13 +32,13 @@ inline enum class Unknow UUW-Inventory_CharacterDragPanel_C::GetVisibility_1() {
 }
 
 // Function UW-Inventory_CharacterDragPanel.UW-Inventory_CharacterDragPanel_C.On_DragRect_MouseButtonDown_1
-inline struct Unknown UUW-Inventory_CharacterDragPanel_C::On_DragRect_MouseButtonDown_1(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UUW-Inventory_CharacterDragPanel_C::On_DragRect_MouseButtonDown_1(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_CharacterDragPanel.UW-Inventory_CharacterDragPanel_C.On_DragRect_MouseButtonDown_1");
 
 	struct On_DragRect_MouseButtonDown_1_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; On_DragRect_MouseButtonDown_1_Params Params;
 
@@ -55,11 +55,11 @@ inline struct Unknown UUW-Inventory_CharacterDragPanel_C::On_DragRect_MouseButto
 }
 
 // Function UW-Inventory_CharacterDragPanel.UW-Inventory_CharacterDragPanel_C.IsHitTest
-inline void UUW-Inventory_CharacterDragPanel_C::IsHitTest(struct Unknown Pos, char& bHit) {
+inline void UUW-Inventory_CharacterDragPanel_C::IsHitTest(struct FVector2D Pos, char& bHit) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_CharacterDragPanel.UW-Inventory_CharacterDragPanel_C.IsHitTest");
 
 	struct IsHitTest_Params {
-		struct Unknown Pos;
+		struct FVector2D Pos;
 		char& bHit;
 	}; IsHitTest_Params Params;
 
@@ -74,11 +74,11 @@ inline void UUW-Inventory_CharacterDragPanel_C::IsHitTest(struct Unknown Pos, ch
 }
 
 // Function UW-Inventory_CharacterDragPanel.UW-Inventory_CharacterDragPanel_C.GetInventoryCharacter
-inline void UUW-Inventory_CharacterDragPanel_C::GetInventoryCharacter(struct Unknown& InventoryCharacter) {
+inline void UUW-Inventory_CharacterDragPanel_C::GetInventoryCharacter(struct ABravoHotelInventoryCharacter& InventoryCharacter) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_CharacterDragPanel.UW-Inventory_CharacterDragPanel_C.GetInventoryCharacter");
 
 	struct GetInventoryCharacter_Params {
-		struct Unknown& InventoryCharacter;
+		struct ABravoHotelInventoryCharacter& InventoryCharacter;
 	}; GetInventoryCharacter_Params Params;
 
 

@@ -3,26 +3,26 @@ class UWBP_SPS_SelectionIcon_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown IconImage; // 0x250 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UImage IconImage; // 0x250 (8)
 	struct FMulticastInlineDelegate Hovered; // 0x258 (16)
 	struct FMulticastInlineDelegate Unhovered; // 0x268 (16)
 	struct FMulticastInlineDelegate Pressed; // 0x278 (16)
-	struct Unknown SmartPingComponent; // 0x288 (8)
+	struct USmartPingSystem_C SmartPingComponent; // 0x288 (8)
 	int32_t Index; // 0x290 (4)
-	struct Unknown TintColorToUse; // 0x294 (16)
+	struct FLinearColor TintColorToUse; // 0x294 (16)
 	char Found Setting : 0; // 0x2A4 (1)
-	struct Unknown Settings; // 0x2A8 (184)
+	struct FBravoHotelSmartPingIconSettings Settings; // 0x2A8 (184)
 	struct FName TableID; // 0x360 (8)
 
 	void Construct(); // Function WBP_SPS_SelectionIcon.WBP_SPS_SelectionIcon_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Unselected(); // Function WBP_SPS_SelectionIcon.WBP_SPS_SelectionIcon_C.Unselected(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Selected(); // Function WBP_SPS_SelectionIcon.WBP_SPS_SelectionIcon_C.Selected(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Init(struct Unknown Data); // Function WBP_SPS_SelectionIcon.WBP_SPS_SelectionIcon_C.Init(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Init(struct FBravoHotelSmartPingIconSettings Data); // Function WBP_SPS_SelectionIcon.WBP_SPS_SelectionIcon_C.Init(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_WBP_SPS_SelectionIcon(int32_t EntryPoint); // Function WBP_SPS_SelectionIcon.WBP_SPS_SelectionIcon_C.ExecuteUbergraph_WBP_SPS_SelectionIcon(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 	void Pressed__DelegateSignature(); // Function WBP_SPS_SelectionIcon.WBP_SPS_SelectionIcon_C.Pressed__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Unhovered__DelegateSignature(int32_t Index); // Function WBP_SPS_SelectionIcon.WBP_SPS_SelectionIcon_C.Unhovered__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Hovered__DelegateSignature(int32_t Index, struct Unknown Settings); // Function WBP_SPS_SelectionIcon.WBP_SPS_SelectionIcon_C.Hovered__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Hovered__DelegateSignature(int32_t Index, struct FBravoHotelSmartPingIconSettings Settings); // Function WBP_SPS_SelectionIcon.WBP_SPS_SelectionIcon_C.Hovered__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 };
 
 // Function WBP_SPS_SelectionIcon.WBP_SPS_SelectionIcon_C.Construct
@@ -68,11 +68,11 @@ inline void UWBP_SPS_SelectionIcon_C::Selected() {
 }
 
 // Function WBP_SPS_SelectionIcon.WBP_SPS_SelectionIcon_C.Init
-inline void UWBP_SPS_SelectionIcon_C::Init(struct Unknown Data) {
+inline void UWBP_SPS_SelectionIcon_C::Init(struct FBravoHotelSmartPingIconSettings Data) {
 	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_SelectionIcon.WBP_SPS_SelectionIcon_C.Init");
 
 	struct Init_Params {
-		struct Unknown Data;
+		struct FBravoHotelSmartPingIconSettings Data;
 	}; Init_Params Params;
 
 	Params.Data = Data;
@@ -127,12 +127,12 @@ inline void UWBP_SPS_SelectionIcon_C::Unhovered__DelegateSignature(int32_t Index
 }
 
 // Function WBP_SPS_SelectionIcon.WBP_SPS_SelectionIcon_C.Hovered__DelegateSignature
-inline void UWBP_SPS_SelectionIcon_C::Hovered__DelegateSignature(int32_t Index, struct Unknown Settings) {
+inline void UWBP_SPS_SelectionIcon_C::Hovered__DelegateSignature(int32_t Index, struct FBravoHotelSmartPingIconSettings Settings) {
 	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_SelectionIcon.WBP_SPS_SelectionIcon_C.Hovered__DelegateSignature");
 
 	struct Hovered__DelegateSignature_Params {
 		int32_t Index;
-		struct Unknown Settings;
+		struct FBravoHotelSmartPingIconSettings Settings;
 	}; Hovered__DelegateSignature_Params Params;
 
 	Params.Index = Index;

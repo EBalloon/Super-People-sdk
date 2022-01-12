@@ -3,31 +3,31 @@ class ABP-MK3DReplayController_C : public ABravoHotelMK3DReplayController {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0xAC0 (8)
-	struct Unknown BP-HUDInteractionComponent; // 0xAC8 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0xAC0 (8)
+	struct UBP-HUDInteractionComponent_C BP-HUDInteractionComponent; // 0xAC8 (8)
 	int32_t OpenedWidgetNum; // 0xAD0 (4)
 	char ViewMode; // 0xAD4 (1)
 
-	struct Unknown GetHUDInteractionComponent(); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.GetHUDInteractionComponent(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <Game_BE.exe+0x2B80160>
-	void CheckItemListHide(enum class Unknow CameraType); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.CheckItemListHide(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetReplaySpectatorPawn(struct Unknown& ReplaySpectatorPawn); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.GetReplaySpectatorPawn(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	struct UHUDInteractionComponent GetHUDInteractionComponent(); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.GetHUDInteractionComponent(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <Game_BE.exe+0x2B80160>
+	void CheckItemListHide(enum class ECameraType CameraType); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.CheckItemListHide(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetReplaySpectatorPawn(struct ABP-MK3DSpectatorPawn_C& ReplaySpectatorPawn); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.GetReplaySpectatorPawn(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void InitWorldMapOption(); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.InitWorldMapOption(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetMaxViewportSize(); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.SetMaxViewportSize(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnChangeViewMode(); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.OnChangeViewMode(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnChangeCameraType(enum class Unknow CameraType); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.OnChangeCameraType(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnChangeCameraType(enum class ECameraType CameraType); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.OnChangeCameraType(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetVisibilityPerkDeck(); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.SetVisibilityPerkDeck(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Init(); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.Init(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ChangeInputMode(char ShowMouse); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.ChangeInputMode(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CheckInputMode(); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.CheckInputMode(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InpActEvt_CloseUI_K2Node_InputActionEvent_3(struct Unknown Key); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.InpActEvt_CloseUI_K2Node_InputActionEvent_3(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InpActEvt_MiniMap_K2Node_InputActionEvent_2(struct Unknown Key); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.InpActEvt_MiniMap_K2Node_InputActionEvent_2(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InpActEvt_ToggleInGameHUD_K2Node_InputActionEvent_1(struct Unknown Key); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.InpActEvt_ToggleInGameHUD_K2Node_InputActionEvent_1(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void InpActEvt_CloseUI_K2Node_InputActionEvent_3(struct FKey Key); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.InpActEvt_CloseUI_K2Node_InputActionEvent_3(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void InpActEvt_MiniMap_K2Node_InputActionEvent_2(struct FKey Key); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.InpActEvt_MiniMap_K2Node_InputActionEvent_2(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void InpActEvt_ToggleInGameHUD_K2Node_InputActionEvent_1(struct FKey Key); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.InpActEvt_ToggleInGameHUD_K2Node_InputActionEvent_1(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnInputWorldMap(); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.OnInputWorldMap(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ReceiveBeginPlay(); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnInputReplayTimelineWidget(); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.OnInputReplayTimelineWidget(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnInputItemListWidget(); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.OnInputItemListWidget(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnInputPlayerListWidget(); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.OnInputPlayerListWidget(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ChangeCameraTypeDelegate_Event_1(enum class Unknow CameraType, struct FString TargetPlayerName); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.ChangeCameraTypeDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ChangeCameraTypeDelegate_Event_1(enum class ECameraType CameraType, struct FString TargetPlayerName); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.ChangeCameraTypeDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ChangeViewModeDelegate_Event_1(char ViewMode); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.ChangeViewModeDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnViewportSizedBP(); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.OnViewportSizedBP(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnInputItemList(); // Function BP-MK3DReplayController.BP-MK3DReplayController_C.OnInputItemList(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -35,12 +35,12 @@ public:
 };
 
 // Function BP-MK3DReplayController.BP-MK3DReplayController_C.GetHUDInteractionComponent
-inline struct Unknown ABP-MK3DReplayController_C::GetHUDInteractionComponent() {
+inline struct UHUDInteractionComponent ABP-MK3DReplayController_C::GetHUDInteractionComponent() {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-MK3DReplayController.BP-MK3DReplayController_C.GetHUDInteractionComponent");
 
 	struct GetHUDInteractionComponent_Params {
 		
-		struct Unknown ReturnValue;
+		struct UHUDInteractionComponent ReturnValue;
 
 	}; GetHUDInteractionComponent_Params Params;
 
@@ -53,11 +53,11 @@ inline struct Unknown ABP-MK3DReplayController_C::GetHUDInteractionComponent() {
 }
 
 // Function BP-MK3DReplayController.BP-MK3DReplayController_C.CheckItemListHide
-inline void ABP-MK3DReplayController_C::CheckItemListHide(enum class Unknow CameraType) {
+inline void ABP-MK3DReplayController_C::CheckItemListHide(enum class ECameraType CameraType) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-MK3DReplayController.BP-MK3DReplayController_C.CheckItemListHide");
 
 	struct CheckItemListHide_Params {
-		enum class Unknow CameraType;
+		enum class ECameraType CameraType;
 	}; CheckItemListHide_Params Params;
 
 	Params.CameraType = CameraType;
@@ -68,11 +68,11 @@ inline void ABP-MK3DReplayController_C::CheckItemListHide(enum class Unknow Came
 }
 
 // Function BP-MK3DReplayController.BP-MK3DReplayController_C.GetReplaySpectatorPawn
-inline void ABP-MK3DReplayController_C::GetReplaySpectatorPawn(struct Unknown& ReplaySpectatorPawn) {
+inline void ABP-MK3DReplayController_C::GetReplaySpectatorPawn(struct ABP-MK3DSpectatorPawn_C& ReplaySpectatorPawn) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-MK3DReplayController.BP-MK3DReplayController_C.GetReplaySpectatorPawn");
 
 	struct GetReplaySpectatorPawn_Params {
-		struct Unknown& ReplaySpectatorPawn;
+		struct ABP-MK3DSpectatorPawn_C& ReplaySpectatorPawn;
 	}; GetReplaySpectatorPawn_Params Params;
 
 
@@ -127,11 +127,11 @@ inline void ABP-MK3DReplayController_C::OnChangeViewMode() {
 }
 
 // Function BP-MK3DReplayController.BP-MK3DReplayController_C.OnChangeCameraType
-inline void ABP-MK3DReplayController_C::OnChangeCameraType(enum class Unknow CameraType) {
+inline void ABP-MK3DReplayController_C::OnChangeCameraType(enum class ECameraType CameraType) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-MK3DReplayController.BP-MK3DReplayController_C.OnChangeCameraType");
 
 	struct OnChangeCameraType_Params {
-		enum class Unknow CameraType;
+		enum class ECameraType CameraType;
 	}; OnChangeCameraType_Params Params;
 
 	Params.CameraType = CameraType;
@@ -199,11 +199,11 @@ inline void ABP-MK3DReplayController_C::CheckInputMode() {
 }
 
 // Function BP-MK3DReplayController.BP-MK3DReplayController_C.InpActEvt_CloseUI_K2Node_InputActionEvent_3
-inline void ABP-MK3DReplayController_C::InpActEvt_CloseUI_K2Node_InputActionEvent_3(struct Unknown Key) {
+inline void ABP-MK3DReplayController_C::InpActEvt_CloseUI_K2Node_InputActionEvent_3(struct FKey Key) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-MK3DReplayController.BP-MK3DReplayController_C.InpActEvt_CloseUI_K2Node_InputActionEvent_3");
 
 	struct InpActEvt_CloseUI_K2Node_InputActionEvent_3_Params {
-		struct Unknown Key;
+		struct FKey Key;
 	}; InpActEvt_CloseUI_K2Node_InputActionEvent_3_Params Params;
 
 	Params.Key = Key;
@@ -214,11 +214,11 @@ inline void ABP-MK3DReplayController_C::InpActEvt_CloseUI_K2Node_InputActionEven
 }
 
 // Function BP-MK3DReplayController.BP-MK3DReplayController_C.InpActEvt_MiniMap_K2Node_InputActionEvent_2
-inline void ABP-MK3DReplayController_C::InpActEvt_MiniMap_K2Node_InputActionEvent_2(struct Unknown Key) {
+inline void ABP-MK3DReplayController_C::InpActEvt_MiniMap_K2Node_InputActionEvent_2(struct FKey Key) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-MK3DReplayController.BP-MK3DReplayController_C.InpActEvt_MiniMap_K2Node_InputActionEvent_2");
 
 	struct InpActEvt_MiniMap_K2Node_InputActionEvent_2_Params {
-		struct Unknown Key;
+		struct FKey Key;
 	}; InpActEvt_MiniMap_K2Node_InputActionEvent_2_Params Params;
 
 	Params.Key = Key;
@@ -229,11 +229,11 @@ inline void ABP-MK3DReplayController_C::InpActEvt_MiniMap_K2Node_InputActionEven
 }
 
 // Function BP-MK3DReplayController.BP-MK3DReplayController_C.InpActEvt_ToggleInGameHUD_K2Node_InputActionEvent_1
-inline void ABP-MK3DReplayController_C::InpActEvt_ToggleInGameHUD_K2Node_InputActionEvent_1(struct Unknown Key) {
+inline void ABP-MK3DReplayController_C::InpActEvt_ToggleInGameHUD_K2Node_InputActionEvent_1(struct FKey Key) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-MK3DReplayController.BP-MK3DReplayController_C.InpActEvt_ToggleInGameHUD_K2Node_InputActionEvent_1");
 
 	struct InpActEvt_ToggleInGameHUD_K2Node_InputActionEvent_1_Params {
-		struct Unknown Key;
+		struct FKey Key;
 	}; InpActEvt_ToggleInGameHUD_K2Node_InputActionEvent_1_Params Params;
 
 	Params.Key = Key;
@@ -314,11 +314,11 @@ inline void ABP-MK3DReplayController_C::OnInputPlayerListWidget() {
 }
 
 // Function BP-MK3DReplayController.BP-MK3DReplayController_C.ChangeCameraTypeDelegate_Event_1
-inline void ABP-MK3DReplayController_C::ChangeCameraTypeDelegate_Event_1(enum class Unknow CameraType, struct FString TargetPlayerName) {
+inline void ABP-MK3DReplayController_C::ChangeCameraTypeDelegate_Event_1(enum class ECameraType CameraType, struct FString TargetPlayerName) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-MK3DReplayController.BP-MK3DReplayController_C.ChangeCameraTypeDelegate_Event_1");
 
 	struct ChangeCameraTypeDelegate_Event_1_Params {
-		enum class Unknow CameraType;
+		enum class ECameraType CameraType;
 		struct FString TargetPlayerName;
 	}; ChangeCameraTypeDelegate_Event_1_Params Params;
 

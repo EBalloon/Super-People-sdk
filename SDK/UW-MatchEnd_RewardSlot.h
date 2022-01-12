@@ -3,26 +3,26 @@ class UUW-MatchEnd_RewardSlot_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown HorizontalBox_Rarity; // 0x250 (8)
-	struct Unknown Image_bg; // 0x258 (8)
-	struct Unknown Image_Icon; // 0x260 (8)
-	struct Unknown T_Name; // 0x268 (8)
-	struct Unknown T_WeaponType; // 0x270 (8)
-	struct Unknown TextBlock_186; // 0x278 (8)
-	struct Unknown Tooltip; // 0x280 (8)
-	struct Unknown ItemInfo; // 0x288 (8)
-	struct Unknown ItemDetailInfo; // 0x290 (1168)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UHorizontalBox HorizontalBox_Rarity; // 0x250 (8)
+	struct UImage Image_bg; // 0x258 (8)
+	struct UImage Image_Icon; // 0x260 (8)
+	struct UTextBlock T_Name; // 0x268 (8)
+	struct UTextBlock T_WeaponType; // 0x270 (8)
+	struct UTextBlock TextBlock_186; // 0x278 (8)
+	struct UUW-Inventory_ItemSlotHover_C Tooltip; // 0x280 (8)
+	struct FRewardItemInfo ItemInfo; // 0x288 (8)
+	struct FInventoryItemDetailInfo ItemDetailInfo; // 0x290 (1168)
 
 	void SetRarity(); // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.SetRarity(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetHoverPosition(struct Unknown ViewportSize, struct Unknown MousePosition, struct Unknown HoverSize, struct Unknown& Out); // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.GetHoverPosition(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Init(struct Unknown ItemInfo); // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.Init(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnLoaded_476BD37943992650800406AA289D7379(struct Unknown Loaded); // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.OnLoaded_476BD37943992650800406AA289D7379(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetHoverPosition(struct FVector2D ViewportSize, struct FVector2D MousePosition, struct FVector2D HoverSize, struct FVector2D& Out); // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.GetHoverPosition(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Init(struct FRewardItemInfo ItemInfo); // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.Init(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_476BD37943992650800406AA289D7379(struct Object Loaded); // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.OnLoaded_476BD37943992650800406AA289D7379(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnMouseLeave(struct Unknown& MouseEvent); // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AsyncLoadIcon(struct Unknown Icon); // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.AsyncLoadIcon(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnMouseEnter(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnMouseLeave(struct FPointerEvent& MouseEvent); // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AsyncLoadIcon(struct TSoftObjectPtr<Object> Icon); // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.AsyncLoadIcon(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-MatchEnd_RewardSlot(int32_t EntryPoint); // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.ExecuteUbergraph_UW-MatchEnd_RewardSlot(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
@@ -41,14 +41,14 @@ inline void UUW-MatchEnd_RewardSlot_C::SetRarity() {
 }
 
 // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.GetHoverPosition
-inline void UUW-MatchEnd_RewardSlot_C::GetHoverPosition(struct Unknown ViewportSize, struct Unknown MousePosition, struct Unknown HoverSize, struct Unknown& Out) {
+inline void UUW-MatchEnd_RewardSlot_C::GetHoverPosition(struct FVector2D ViewportSize, struct FVector2D MousePosition, struct FVector2D HoverSize, struct FVector2D& Out) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.GetHoverPosition");
 
 	struct GetHoverPosition_Params {
-		struct Unknown ViewportSize;
-		struct Unknown MousePosition;
-		struct Unknown HoverSize;
-		struct Unknown& Out;
+		struct FVector2D ViewportSize;
+		struct FVector2D MousePosition;
+		struct FVector2D HoverSize;
+		struct FVector2D& Out;
 	}; GetHoverPosition_Params Params;
 
 	Params.ViewportSize = ViewportSize;
@@ -64,11 +64,11 @@ inline void UUW-MatchEnd_RewardSlot_C::GetHoverPosition(struct Unknown ViewportS
 }
 
 // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.Init
-inline void UUW-MatchEnd_RewardSlot_C::Init(struct Unknown ItemInfo) {
+inline void UUW-MatchEnd_RewardSlot_C::Init(struct FRewardItemInfo ItemInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.Init");
 
 	struct Init_Params {
-		struct Unknown ItemInfo;
+		struct FRewardItemInfo ItemInfo;
 	}; Init_Params Params;
 
 	Params.ItemInfo = ItemInfo;
@@ -79,11 +79,11 @@ inline void UUW-MatchEnd_RewardSlot_C::Init(struct Unknown ItemInfo) {
 }
 
 // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.OnLoaded_476BD37943992650800406AA289D7379
-inline void UUW-MatchEnd_RewardSlot_C::OnLoaded_476BD37943992650800406AA289D7379(struct Unknown Loaded) {
+inline void UUW-MatchEnd_RewardSlot_C::OnLoaded_476BD37943992650800406AA289D7379(struct Object Loaded) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.OnLoaded_476BD37943992650800406AA289D7379");
 
 	struct OnLoaded_476BD37943992650800406AA289D7379_Params {
-		struct Unknown Loaded;
+		struct Object Loaded;
 	}; OnLoaded_476BD37943992650800406AA289D7379_Params Params;
 
 	Params.Loaded = Loaded;
@@ -108,11 +108,11 @@ inline void UUW-MatchEnd_RewardSlot_C::Construct() {
 }
 
 // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.Tick
-inline void UUW-MatchEnd_RewardSlot_C::Tick(struct Unknown MyGeometry, float InDeltaTime) {
+inline void UUW-MatchEnd_RewardSlot_C::Tick(struct FGeometry MyGeometry, float InDeltaTime) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.Tick");
 
 	struct Tick_Params {
-		struct Unknown MyGeometry;
+		struct FGeometry MyGeometry;
 		float InDeltaTime;
 	}; Tick_Params Params;
 
@@ -125,12 +125,12 @@ inline void UUW-MatchEnd_RewardSlot_C::Tick(struct Unknown MyGeometry, float InD
 }
 
 // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.OnMouseEnter
-inline void UUW-MatchEnd_RewardSlot_C::OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline void UUW-MatchEnd_RewardSlot_C::OnMouseEnter(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.OnMouseEnter");
 
 	struct OnMouseEnter_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
 	}; OnMouseEnter_Params Params;
 
 	Params.MyGeometry = MyGeometry;
@@ -144,11 +144,11 @@ inline void UUW-MatchEnd_RewardSlot_C::OnMouseEnter(struct Unknown MyGeometry, s
 }
 
 // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.OnMouseLeave
-inline void UUW-MatchEnd_RewardSlot_C::OnMouseLeave(struct Unknown& MouseEvent) {
+inline void UUW-MatchEnd_RewardSlot_C::OnMouseLeave(struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.OnMouseLeave");
 
 	struct OnMouseLeave_Params {
-		struct Unknown& MouseEvent;
+		struct FPointerEvent& MouseEvent;
 	}; OnMouseLeave_Params Params;
 
 
@@ -161,11 +161,11 @@ inline void UUW-MatchEnd_RewardSlot_C::OnMouseLeave(struct Unknown& MouseEvent) 
 }
 
 // Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.AsyncLoadIcon
-inline void UUW-MatchEnd_RewardSlot_C::AsyncLoadIcon(struct Unknown Icon) {
+inline void UUW-MatchEnd_RewardSlot_C::AsyncLoadIcon(struct TSoftObjectPtr<Object> Icon) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MatchEnd_RewardSlot.UW-MatchEnd_RewardSlot_C.AsyncLoadIcon");
 
 	struct AsyncLoadIcon_Params {
-		struct Unknown Icon;
+		struct TSoftObjectPtr<Object> Icon;
 	}; AsyncLoadIcon_Params Params;
 
 	Params.Icon = Icon;

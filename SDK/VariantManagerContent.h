@@ -17,11 +17,11 @@ class ULevelVariantSets : public Object {
 
 public:
 
-	struct Unknown* DirectorClass; // 0x28 (8)
-	struct TArray<Unknown> VariantSets; // 0x30 (16)
+	struct UBlueprintGeneratedClass* DirectorClass; // 0x28 (8)
+	struct TArray<struct UVariantSet> VariantSets; // 0x30 (16)
 
-	struct Unknown GetVariantSetByName(struct FString VariantSetName); // Function VariantManagerContent.LevelVariantSets.GetVariantSetByName(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x16D3B00>
-	struct Unknown GetVariantSet(int32_t VariantSetIndex); // Function VariantManagerContent.LevelVariantSets.GetVariantSet(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x16D3A70>
+	struct UVariantSet GetVariantSetByName(struct FString VariantSetName); // Function VariantManagerContent.LevelVariantSets.GetVariantSetByName(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x16D3B00>
+	struct UVariantSet GetVariantSet(int32_t VariantSetIndex); // Function VariantManagerContent.LevelVariantSets.GetVariantSet(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x16D3A70>
 	int32_t GetNumVariantSets(); // Function VariantManagerContent.LevelVariantSets.GetNumVariantSets(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x10845A0>
 };
 
@@ -30,12 +30,12 @@ class ALevelVariantSetsActor : public UActor {
 
 public:
 
-	struct Unknown LevelVariantSets; // 0x318 (24)
+	struct FSoftObjectPath LevelVariantSets; // 0x318 (24)
 
 	char SwitchOnVariantByName(struct FString VariantSetName, struct FString VariantName); // Function VariantManagerContent.LevelVariantSetsActor.SwitchOnVariantByName(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16D3F10>
 	char SwitchOnVariantByIndex(int32_t VariantSetIndex, int32_t VariantIndex); // Function VariantManagerContent.LevelVariantSetsActor.SwitchOnVariantByIndex(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16D3E50>
-	void SetLevelVariantSets(struct Unknown InVariantSets); // Function VariantManagerContent.LevelVariantSetsActor.SetLevelVariantSets(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16D3DB0>
-	struct Unknown GetLevelVariantSets(char bLoad); // Function VariantManagerContent.LevelVariantSetsActor.GetLevelVariantSets(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16D3690>
+	void SetLevelVariantSets(struct ULevelVariantSets InVariantSets); // Function VariantManagerContent.LevelVariantSetsActor.SetLevelVariantSets(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16D3DB0>
+	struct ULevelVariantSets GetLevelVariantSets(char bLoad); // Function VariantManagerContent.LevelVariantSetsActor.GetLevelVariantSets(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16D3690>
 };
 
 // Class VariantManagerContent.PropertyValue
@@ -43,16 +43,16 @@ class UPropertyValue : public Object {
 
 public:
 
-	struct TArray<Unknown> Properties; // 0x88 (16)
-	struct TArray<Unknown> PropertyIndices; // 0x98 (16)
-	struct TArray<Unknown> CapturedPropSegments; // 0xA8 (16)
+	struct TArray<struct TFieldPath<FNone>> Properties; // 0x88 (16)
+	struct TArray<int32_t> PropertyIndices; // 0x98 (16)
+	struct TArray<struct FCapturedPropSegment> CapturedPropSegments; // 0xA8 (16)
 	struct FString FullDisplayString; // 0xB8 (16)
 	struct FName PropertySetterName; // 0xC8 (8)
-	struct TMap<Unknown, Unknown> PropertySetterParameterDefaults; // 0xD0 (80)
+	struct TMap<struct FString, struct FString> PropertySetterParameterDefaults; // 0xD0 (80)
 	char bHasRecordedData : 0; // 0x120 (1)
-	struct Unknown* LeafPropertyClass; // 0x128 (8)
-	struct TArray<Unknown> ValueBytes; // 0x138 (16)
-	enum class Unknow PropCategory; // 0x148 (1)
+	struct UClass* LeafPropertyClass; // 0x128 (8)
+	struct TArray<char> ValueBytes; // 0x138 (16)
+	enum class EPropertyValueCategory PropCategory; // 0x148 (1)
 
 	char HasRecordedData(); // Function VariantManagerContent.PropertyValue.HasRecordedData(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x16D3C00>
 	struct FText GetPropertyTooltip(); // Function VariantManagerContent.PropertyValue.GetPropertyTooltip(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x16D3810>
@@ -64,12 +64,12 @@ class ASwitchActor : public UActor {
 
 public:
 
-	struct Unknown SceneComponent; // 0x330 (8)
+	struct USceneComponent SceneComponent; // 0x330 (8)
 	int32_t LastSelectedOption; // 0x338 (4)
 
 	void SelectOption(int32_t OptionIndex); // Function VariantManagerContent.SwitchActor.SelectOption(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16D3C60>
 	int32_t GetSelectedOption(); // Function VariantManagerContent.SwitchActor.GetSelectedOption(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x16D38B0>
-	struct TArray<Unknown> GetOptions(); // Function VariantManagerContent.SwitchActor.GetOptions(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x16D3790>
+	struct TArray<struct UActor> GetOptions(); // Function VariantManagerContent.SwitchActor.GetOptions(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x16D3790>
 };
 
 // Class VariantManagerContent.Variant
@@ -78,16 +78,16 @@ class UVariant : public Object {
 public:
 
 	struct FText DisplayText; // 0x28 (24)
-	struct TArray<Unknown> ObjectBindings; // 0x58 (16)
-	struct Unknown Thumbnail; // 0x68 (8)
+	struct TArray<struct UVariantObjectBinding> ObjectBindings; // 0x58 (16)
+	struct UTexture2D Thumbnail; // 0x68 (8)
 
 	void SwitchOn(); // Function VariantManagerContent.Variant.SwitchOn(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16D3E30>
 	void SetDisplayText(struct FText& NewDisplayText); // Function VariantManagerContent.Variant.SetDisplayText(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x16D3CE0>
 	char IsActive(); // Function VariantManagerContent.Variant.IsActive(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16D3C30>
-	struct Unknown GetThumbnail(); // Function VariantManagerContent.Variant.GetThumbnail(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1539300>
+	struct UTexture2D GetThumbnail(); // Function VariantManagerContent.Variant.GetThumbnail(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1539300>
 	int32_t GetNumActors(); // Function VariantManagerContent.Variant.GetNumActors(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x16D3730>
 	struct FText GetDisplayText(); // Function VariantManagerContent.Variant.GetDisplayText(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x16D35B0>
-	struct Unknown GetActor(int32_t ActorIndex); // Function VariantManagerContent.Variant.GetActor(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x16D3520>
+	struct UActor GetActor(int32_t ActorIndex); // Function VariantManagerContent.Variant.GetActor(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x16D3520>
 };
 
 // Class VariantManagerContent.VariantObjectBinding
@@ -96,10 +96,10 @@ class UVariantObjectBinding : public Object {
 public:
 
 	struct FString CachedActorLabel; // 0x28 (16)
-	struct Unknown ObjectPtr; // 0x38 (24)
+	struct FSoftObjectPath ObjectPtr; // 0x38 (24)
 	LazyObjectProperty LazyObjectPtr; // 0x50 (28)
-	struct TArray<Unknown> CapturedProperties; // 0x70 (16)
-	struct TArray<Unknown> FunctionCallers; // 0x80 (16)
+	struct TArray<struct UPropertyValue> CapturedProperties; // 0x70 (16)
+	struct TArray<struct FFunctionCaller> FunctionCallers; // 0x80 (16)
 };
 
 // Class VariantManagerContent.VariantSet
@@ -109,11 +109,11 @@ public:
 
 	struct FText DisplayText; // 0x28 (24)
 	char bExpanded : 0; // 0x58 (1)
-	struct TArray<Unknown> Variants; // 0x60 (16)
+	struct TArray<struct UVariant> Variants; // 0x60 (16)
 
 	void SetDisplayText(struct FText& NewDisplayText); // Function VariantManagerContent.VariantSet.SetDisplayText(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x16D3CE0>
-	struct Unknown GetVariantByName(struct FString VariantName); // Function VariantManagerContent.VariantSet.GetVariantByName(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x16D3970>
-	struct Unknown GetVariant(int32_t VariantIndex); // Function VariantManagerContent.VariantSet.GetVariant(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x16D38E0>
+	struct UVariant GetVariantByName(struct FString VariantName); // Function VariantManagerContent.VariantSet.GetVariantByName(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x16D3970>
+	struct UVariant GetVariant(int32_t VariantIndex); // Function VariantManagerContent.VariantSet.GetVariant(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x16D38E0>
 	int32_t GetNumVariants(); // Function VariantManagerContent.VariantSet.GetNumVariants(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x16D3760>
 	struct FText GetDisplayText(); // Function VariantManagerContent.VariantSet.GetDisplayText(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x16D35B0>
 };
@@ -131,12 +131,12 @@ struct FCapturedPropSegment {
 };
 
 // Function VariantManagerContent.LevelVariantSets.GetVariantSetByName
-inline struct Unknown ULevelVariantSets::GetVariantSetByName(struct FString VariantSetName) {
+inline struct UVariantSet ULevelVariantSets::GetVariantSetByName(struct FString VariantSetName) {
 	static auto fn = UObject::FindObject<UFunction>("Function VariantManagerContent.LevelVariantSets.GetVariantSetByName");
 
 	struct GetVariantSetByName_Params {
 		struct FString VariantSetName;
-		struct Unknown ReturnValue;
+		struct UVariantSet ReturnValue;
 
 	}; GetVariantSetByName_Params Params;
 
@@ -150,12 +150,12 @@ inline struct Unknown ULevelVariantSets::GetVariantSetByName(struct FString Vari
 }
 
 // Function VariantManagerContent.LevelVariantSets.GetVariantSet
-inline struct Unknown ULevelVariantSets::GetVariantSet(int32_t VariantSetIndex) {
+inline struct UVariantSet ULevelVariantSets::GetVariantSet(int32_t VariantSetIndex) {
 	static auto fn = UObject::FindObject<UFunction>("Function VariantManagerContent.LevelVariantSets.GetVariantSet");
 
 	struct GetVariantSet_Params {
 		int32_t VariantSetIndex;
-		struct Unknown ReturnValue;
+		struct UVariantSet ReturnValue;
 
 	}; GetVariantSet_Params Params;
 
@@ -229,11 +229,11 @@ inline char ALevelVariantSetsActor::SwitchOnVariantByIndex(int32_t VariantSetInd
 }
 
 // Function VariantManagerContent.LevelVariantSetsActor.SetLevelVariantSets
-inline void ALevelVariantSetsActor::SetLevelVariantSets(struct Unknown InVariantSets) {
+inline void ALevelVariantSetsActor::SetLevelVariantSets(struct ULevelVariantSets InVariantSets) {
 	static auto fn = UObject::FindObject<UFunction>("Function VariantManagerContent.LevelVariantSetsActor.SetLevelVariantSets");
 
 	struct SetLevelVariantSets_Params {
-		struct Unknown InVariantSets;
+		struct ULevelVariantSets InVariantSets;
 	}; SetLevelVariantSets_Params Params;
 
 	Params.InVariantSets = InVariantSets;
@@ -244,12 +244,12 @@ inline void ALevelVariantSetsActor::SetLevelVariantSets(struct Unknown InVariant
 }
 
 // Function VariantManagerContent.LevelVariantSetsActor.GetLevelVariantSets
-inline struct Unknown ALevelVariantSetsActor::GetLevelVariantSets(char bLoad) {
+inline struct ULevelVariantSets ALevelVariantSetsActor::GetLevelVariantSets(char bLoad) {
 	static auto fn = UObject::FindObject<UFunction>("Function VariantManagerContent.LevelVariantSetsActor.GetLevelVariantSets");
 
 	struct GetLevelVariantSets_Params {
 		char bLoad;
-		struct Unknown ReturnValue;
+		struct ULevelVariantSets ReturnValue;
 
 	}; GetLevelVariantSets_Params Params;
 
@@ -350,12 +350,12 @@ inline int32_t ASwitchActor::GetSelectedOption() {
 }
 
 // Function VariantManagerContent.SwitchActor.GetOptions
-inline struct TArray<Unknown> ASwitchActor::GetOptions() {
+inline struct TArray<struct UActor> ASwitchActor::GetOptions() {
 	static auto fn = UObject::FindObject<UFunction>("Function VariantManagerContent.SwitchActor.GetOptions");
 
 	struct GetOptions_Params {
 		
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<struct UActor> ReturnValue;
 
 	}; GetOptions_Params Params;
 
@@ -417,12 +417,12 @@ inline char UVariant::IsActive() {
 }
 
 // Function VariantManagerContent.Variant.GetThumbnail
-inline struct Unknown UVariant::GetThumbnail() {
+inline struct UTexture2D UVariant::GetThumbnail() {
 	static auto fn = UObject::FindObject<UFunction>("Function VariantManagerContent.Variant.GetThumbnail");
 
 	struct GetThumbnail_Params {
 		
-		struct Unknown ReturnValue;
+		struct UTexture2D ReturnValue;
 
 	}; GetThumbnail_Params Params;
 
@@ -471,12 +471,12 @@ inline struct FText UVariant::GetDisplayText() {
 }
 
 // Function VariantManagerContent.Variant.GetActor
-inline struct Unknown UVariant::GetActor(int32_t ActorIndex) {
+inline struct UActor UVariant::GetActor(int32_t ActorIndex) {
 	static auto fn = UObject::FindObject<UFunction>("Function VariantManagerContent.Variant.GetActor");
 
 	struct GetActor_Params {
 		int32_t ActorIndex;
-		struct Unknown ReturnValue;
+		struct UActor ReturnValue;
 
 	}; GetActor_Params Params;
 
@@ -507,12 +507,12 @@ inline void UVariantSet::SetDisplayText(struct FText& NewDisplayText) {
 }
 
 // Function VariantManagerContent.VariantSet.GetVariantByName
-inline struct Unknown UVariantSet::GetVariantByName(struct FString VariantName) {
+inline struct UVariant UVariantSet::GetVariantByName(struct FString VariantName) {
 	static auto fn = UObject::FindObject<UFunction>("Function VariantManagerContent.VariantSet.GetVariantByName");
 
 	struct GetVariantByName_Params {
 		struct FString VariantName;
-		struct Unknown ReturnValue;
+		struct UVariant ReturnValue;
 
 	}; GetVariantByName_Params Params;
 
@@ -526,12 +526,12 @@ inline struct Unknown UVariantSet::GetVariantByName(struct FString VariantName) 
 }
 
 // Function VariantManagerContent.VariantSet.GetVariant
-inline struct Unknown UVariantSet::GetVariant(int32_t VariantIndex) {
+inline struct UVariant UVariantSet::GetVariant(int32_t VariantIndex) {
 	static auto fn = UObject::FindObject<UFunction>("Function VariantManagerContent.VariantSet.GetVariant");
 
 	struct GetVariant_Params {
 		int32_t VariantIndex;
-		struct Unknown ReturnValue;
+		struct UVariant ReturnValue;
 
 	}; GetVariant_Params Params;
 

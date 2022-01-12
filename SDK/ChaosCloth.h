@@ -13,7 +13,7 @@ class UChaosClothConfig : public UClothConfigCommon {
 
 public:
 
-	enum class Unknow MassMode; // 0x28 (1)
+	enum class EClothMassMode MassMode; // 0x28 (1)
 	float UniformMass; // 0x2C (4)
 	float TotalMass; // 0x30 (4)
 	float Density; // 0x34 (4)
@@ -36,7 +36,7 @@ public:
 	char bUseThinShellVolumeConstraints : 0; // 0x72 (1)
 	char bUseSelfCollisions : 0; // 0x73 (1)
 	char bUseContinuousCollisionDetection : 0; // 0x74 (1)
-	struct Unknown LinearVelocityScale; // 0x78 (12)
+	struct FVector LinearVelocityScale; // 0x78 (12)
 	float AngularVelocityScale; // 0x84 (4)
 };
 
@@ -53,7 +53,7 @@ public:
 	float Damping; // 0x3C (4)
 	char bUseGravityOverride : 0; // 0x40 (1)
 	float GravityScale; // 0x44 (4)
-	struct Unknown Gravity; // 0x48 (12)
+	struct FVector Gravity; // 0x48 (12)
 	char bUseLocalSpaceSimulation : 0; // 0x54 (1)
 	char bUseXPBDConstraints : 0; // 0x55 (1)
 };

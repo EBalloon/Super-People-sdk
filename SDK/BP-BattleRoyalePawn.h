@@ -3,61 +3,61 @@ class ABP-BattleRoyalePawn_C : public ABP-DefaultPawn_C {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x3BA8 (8)
-	struct Unknown Listener; // 0x3BB0 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x3BA8 (8)
+	struct USceneComponent Listener; // 0x3BB0 (8)
 	float _P_Cam_Z_NewTrack_0_898B65D1462B08609DA61C81A7B52313; // 0x3BB8 (4)
 	char _P_Cam_Z__Direction_898B65D1462B08609DA61C81A7B52313; // 0x3BBC (1)
-	struct Unknown 3P_Cam_Z; // 0x3BC0 (8)
-	struct Unknown CriticalUITimeHandler; // 0x3BC8 (8)
-	struct Unknown DyingUITimeHandler; // 0x3BD0 (8)
-	struct Unknown ClothHandler; // 0x3BD8 (8)
-	struct Unknown ClothBallObject; // 0x3BE0 (8)
-	struct Unknown BallHandleLocation; // 0x3BE8 (12)
+	struct UTimelineComponent 3P_Cam_Z; // 0x3BC0 (8)
+	struct FTimerHandle CriticalUITimeHandler; // 0x3BC8 (8)
+	struct FTimerHandle DyingUITimeHandler; // 0x3BD0 (8)
+	struct UPhysicsHandleComponent ClothHandler; // 0x3BD8 (8)
+	struct USkeletalMeshComponent ClothBallObject; // 0x3BE0 (8)
+	struct FVector BallHandleLocation; // 0x3BE8 (12)
 	float GamepadInputModifier; // 0x3BF4 (4)
 	float BaseTurnRate; // 0x3BF8 (4)
 	float BaseLookUpRate; // 0x3BFC (4)
-	struct TArray<Unknown> PerkLevelUpWidgets; // 0x3C00 (16)
+	struct TArray<struct UUW-PerkLevelUp_C> PerkLevelUpWidgets; // 0x3C00 (16)
 	float PerkLevelUpWidthDepth; // 0x3C10 (4)
-	struct Unknown AmplifierEffect; // 0x3C18 (8)
+	struct ABP-AmplifierEffect_C AmplifierEffect; // 0x3C18 (8)
 	float Cam_Shake_Radius; // 0x3C20 (4)
-	struct Unknown MainWidget; // 0x3C28 (8)
-	struct Unknown HeartBeatSensorEffect; // 0x3C30 (8)
+	struct UBravoHotelMainWidget MainWidget; // 0x3C28 (8)
+	struct ABP-HeartBeatSensorEffect_C HeartBeatSensorEffect; // 0x3C30 (8)
 
-	char IsEnableSpawnSupplyBox(struct Unknown TargetActor, struct FString& OutResult); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.IsEnableSpawnSupplyBox(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	char IsInstancedFoliageActor(struct Unknown TargetActor); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.IsInstancedFoliageActor(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetMainWidget(struct Unknown& MainWidget); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.GetMainWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	char IsEnableSpawnSupplyBox(struct UActor TargetActor, struct FString& OutResult); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.IsEnableSpawnSupplyBox(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	char IsInstancedFoliageActor(struct UActor TargetActor); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.IsInstancedFoliageActor(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetMainWidget(struct UBravoHotelMainWidget& MainWidget); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.GetMainWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void 3P_Cam_Z__FinishedFunc(); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.3P_Cam_Z__FinishedFunc(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void 3P_Cam_Z__UpdateFunc(); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.3P_Cam_Z__UpdateFunc(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_19(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_19(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InpActEvt_RightMouseButton_K2Node_InputKeyEvent_18(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_RightMouseButton_K2Node_InputKeyEvent_18(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InpActEvt_One_K2Node_InputKeyEvent_17(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_One_K2Node_InputKeyEvent_17(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InpActEvt_Two_K2Node_InputKeyEvent_16(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Two_K2Node_InputKeyEvent_16(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InpActEvt_Three_K2Node_InputKeyEvent_15(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Three_K2Node_InputKeyEvent_15(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InpActEvt_Four_K2Node_InputKeyEvent_14(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Four_K2Node_InputKeyEvent_14(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InpActEvt_Five_K2Node_InputKeyEvent_13(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Five_K2Node_InputKeyEvent_13(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InpActEvt_Six_K2Node_InputKeyEvent_12(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Six_K2Node_InputKeyEvent_12(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InpActEvt_Seven_K2Node_InputKeyEvent_11(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Seven_K2Node_InputKeyEvent_11(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InpActEvt_Eight_K2Node_InputKeyEvent_10(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Eight_K2Node_InputKeyEvent_10(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InpActEvt_Ctrl_One_K2Node_InputKeyEvent_9(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_One_K2Node_InputKeyEvent_9(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InpActEvt_Ctrl_Two_K2Node_InputKeyEvent_8(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_Two_K2Node_InputKeyEvent_8(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InpActEvt_Ctrl_Three_K2Node_InputKeyEvent_7(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_Three_K2Node_InputKeyEvent_7(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InpActEvt_Ctrl_Four_K2Node_InputKeyEvent_6(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_Four_K2Node_InputKeyEvent_6(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InpActEvt_Ctrl_Five_K2Node_InputKeyEvent_5(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_Five_K2Node_InputKeyEvent_5(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InpActEvt_Ctrl_Six_K2Node_InputKeyEvent_4(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_Six_K2Node_InputKeyEvent_4(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InpActEvt_Ctrl_Seven_K2Node_InputKeyEvent_3(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_Seven_K2Node_InputKeyEvent_3(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InpActEvt_Ctrl_Eight_K2Node_InputKeyEvent_2(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_Eight_K2Node_InputKeyEvent_2(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InpActEvt_NumPadZero_K2Node_InputKeyEvent_1(struct Unknown Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_NumPadZero_K2Node_InputKeyEvent_1(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_19(struct FKey Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_19(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void InpActEvt_RightMouseButton_K2Node_InputKeyEvent_18(struct FKey Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_RightMouseButton_K2Node_InputKeyEvent_18(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void InpActEvt_One_K2Node_InputKeyEvent_17(struct FKey Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_One_K2Node_InputKeyEvent_17(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void InpActEvt_Two_K2Node_InputKeyEvent_16(struct FKey Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Two_K2Node_InputKeyEvent_16(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void InpActEvt_Three_K2Node_InputKeyEvent_15(struct FKey Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Three_K2Node_InputKeyEvent_15(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void InpActEvt_Four_K2Node_InputKeyEvent_14(struct FKey Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Four_K2Node_InputKeyEvent_14(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void InpActEvt_Five_K2Node_InputKeyEvent_13(struct FKey Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Five_K2Node_InputKeyEvent_13(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void InpActEvt_Six_K2Node_InputKeyEvent_12(struct FKey Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Six_K2Node_InputKeyEvent_12(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void InpActEvt_Seven_K2Node_InputKeyEvent_11(struct FKey Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Seven_K2Node_InputKeyEvent_11(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void InpActEvt_Eight_K2Node_InputKeyEvent_10(struct FKey Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Eight_K2Node_InputKeyEvent_10(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void InpActEvt_Ctrl_One_K2Node_InputKeyEvent_9(struct FKey Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_One_K2Node_InputKeyEvent_9(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void InpActEvt_Ctrl_Two_K2Node_InputKeyEvent_8(struct FKey Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_Two_K2Node_InputKeyEvent_8(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void InpActEvt_Ctrl_Three_K2Node_InputKeyEvent_7(struct FKey Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_Three_K2Node_InputKeyEvent_7(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void InpActEvt_Ctrl_Four_K2Node_InputKeyEvent_6(struct FKey Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_Four_K2Node_InputKeyEvent_6(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void InpActEvt_Ctrl_Five_K2Node_InputKeyEvent_5(struct FKey Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_Five_K2Node_InputKeyEvent_5(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void InpActEvt_Ctrl_Six_K2Node_InputKeyEvent_4(struct FKey Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_Six_K2Node_InputKeyEvent_4(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void InpActEvt_Ctrl_Seven_K2Node_InputKeyEvent_3(struct FKey Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_Seven_K2Node_InputKeyEvent_3(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void InpActEvt_Ctrl_Eight_K2Node_InputKeyEvent_2(struct FKey Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_Eight_K2Node_InputKeyEvent_2(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void InpActEvt_NumPadZero_K2Node_InputKeyEvent_1(struct FKey Key); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_NumPadZero_K2Node_InputKeyEvent_1(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ReceiveBeginPlay(); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ReceiveTick(float DeltaSeconds); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.ReceiveTick(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetCharacterIntheWater(); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.SetCharacterIntheWater(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnDeath(); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.OnDeath(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnSaveInventoryData(); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.OnSaveInventoryData(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AddPerkEvent(struct Unknown& PerkInfo, struct Unknown& InCurrentDisplayAbility, int32_t LastLevel, int32_t ClassLevel, enum class Unknow LevelUpType); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.AddPerkEvent(Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AddPerkEvent(struct FPerkInfo& PerkInfo, struct FDisplayAbility& InCurrentDisplayAbility, int32_t LastLevel, int32_t ClassLevel, enum class EPerkLevelUpType LevelUpType); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.AddPerkEvent(Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void RemovePerkLevelUI(); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.RemovePerkLevelUI(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CreatePerkLevelUI(int32_t Count); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.CreatePerkLevelUI(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void PerkSpinEvent(char bShow, int32_t Count, enum class Unknow Slot); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.PerkSpinEvent(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void PerkSpinEvent(char bShow, int32_t Count, enum class EPerkSlotFlag Slot); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.PerkSpinEvent(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ShowAmplifierEffect(char IsAmplifierEffect, float AmplifierLength); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.ShowAmplifierEffect(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnLanded(struct Unknown& Hit); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.OnLanded(Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLanded(struct FHitResult& Hit); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.OnLanded(Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ReadyGivePerkEvent(); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.ReadyGivePerkEvent(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void KillGivePerkEvent(int32_t KillCount); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.KillGivePerkEvent(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ShowHeartBeatSensorEffect(char IsHeartBeatSensorEffect, float HeartBeatSensorLength); // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.ShowHeartBeatSensorEffect(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -65,11 +65,11 @@ public:
 };
 
 // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.IsEnableSpawnSupplyBox
-inline char ABP-BattleRoyalePawn_C::IsEnableSpawnSupplyBox(struct Unknown TargetActor, struct FString& OutResult) {
+inline char ABP-BattleRoyalePawn_C::IsEnableSpawnSupplyBox(struct UActor TargetActor, struct FString& OutResult) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.IsEnableSpawnSupplyBox");
 
 	struct IsEnableSpawnSupplyBox_Params {
-		struct Unknown TargetActor;
+		struct UActor TargetActor;
 		struct FString& OutResult;
 		char ReturnValue;
 
@@ -88,11 +88,11 @@ inline char ABP-BattleRoyalePawn_C::IsEnableSpawnSupplyBox(struct Unknown Target
 }
 
 // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.IsInstancedFoliageActor
-inline char ABP-BattleRoyalePawn_C::IsInstancedFoliageActor(struct Unknown TargetActor) {
+inline char ABP-BattleRoyalePawn_C::IsInstancedFoliageActor(struct UActor TargetActor) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.IsInstancedFoliageActor");
 
 	struct IsInstancedFoliageActor_Params {
-		struct Unknown TargetActor;
+		struct UActor TargetActor;
 		char ReturnValue;
 
 	}; IsInstancedFoliageActor_Params Params;
@@ -107,11 +107,11 @@ inline char ABP-BattleRoyalePawn_C::IsInstancedFoliageActor(struct Unknown Targe
 }
 
 // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.GetMainWidget
-inline void ABP-BattleRoyalePawn_C::GetMainWidget(struct Unknown& MainWidget) {
+inline void ABP-BattleRoyalePawn_C::GetMainWidget(struct UBravoHotelMainWidget& MainWidget) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.GetMainWidget");
 
 	struct GetMainWidget_Params {
-		struct Unknown& MainWidget;
+		struct UBravoHotelMainWidget& MainWidget;
 	}; GetMainWidget_Params Params;
 
 
@@ -152,11 +152,11 @@ inline void ABP-BattleRoyalePawn_C::3P_Cam_Z__UpdateFunc() {
 }
 
 // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_19
-inline void ABP-BattleRoyalePawn_C::InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_19(struct Unknown Key) {
+inline void ABP-BattleRoyalePawn_C::InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_19(struct FKey Key) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_19");
 
 	struct InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_19_Params {
-		struct Unknown Key;
+		struct FKey Key;
 	}; InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_19_Params Params;
 
 	Params.Key = Key;
@@ -167,11 +167,11 @@ inline void ABP-BattleRoyalePawn_C::InpActEvt_LeftMouseButton_K2Node_InputKeyEve
 }
 
 // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_RightMouseButton_K2Node_InputKeyEvent_18
-inline void ABP-BattleRoyalePawn_C::InpActEvt_RightMouseButton_K2Node_InputKeyEvent_18(struct Unknown Key) {
+inline void ABP-BattleRoyalePawn_C::InpActEvt_RightMouseButton_K2Node_InputKeyEvent_18(struct FKey Key) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_RightMouseButton_K2Node_InputKeyEvent_18");
 
 	struct InpActEvt_RightMouseButton_K2Node_InputKeyEvent_18_Params {
-		struct Unknown Key;
+		struct FKey Key;
 	}; InpActEvt_RightMouseButton_K2Node_InputKeyEvent_18_Params Params;
 
 	Params.Key = Key;
@@ -182,11 +182,11 @@ inline void ABP-BattleRoyalePawn_C::InpActEvt_RightMouseButton_K2Node_InputKeyEv
 }
 
 // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_One_K2Node_InputKeyEvent_17
-inline void ABP-BattleRoyalePawn_C::InpActEvt_One_K2Node_InputKeyEvent_17(struct Unknown Key) {
+inline void ABP-BattleRoyalePawn_C::InpActEvt_One_K2Node_InputKeyEvent_17(struct FKey Key) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_One_K2Node_InputKeyEvent_17");
 
 	struct InpActEvt_One_K2Node_InputKeyEvent_17_Params {
-		struct Unknown Key;
+		struct FKey Key;
 	}; InpActEvt_One_K2Node_InputKeyEvent_17_Params Params;
 
 	Params.Key = Key;
@@ -197,11 +197,11 @@ inline void ABP-BattleRoyalePawn_C::InpActEvt_One_K2Node_InputKeyEvent_17(struct
 }
 
 // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Two_K2Node_InputKeyEvent_16
-inline void ABP-BattleRoyalePawn_C::InpActEvt_Two_K2Node_InputKeyEvent_16(struct Unknown Key) {
+inline void ABP-BattleRoyalePawn_C::InpActEvt_Two_K2Node_InputKeyEvent_16(struct FKey Key) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Two_K2Node_InputKeyEvent_16");
 
 	struct InpActEvt_Two_K2Node_InputKeyEvent_16_Params {
-		struct Unknown Key;
+		struct FKey Key;
 	}; InpActEvt_Two_K2Node_InputKeyEvent_16_Params Params;
 
 	Params.Key = Key;
@@ -212,11 +212,11 @@ inline void ABP-BattleRoyalePawn_C::InpActEvt_Two_K2Node_InputKeyEvent_16(struct
 }
 
 // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Three_K2Node_InputKeyEvent_15
-inline void ABP-BattleRoyalePawn_C::InpActEvt_Three_K2Node_InputKeyEvent_15(struct Unknown Key) {
+inline void ABP-BattleRoyalePawn_C::InpActEvt_Three_K2Node_InputKeyEvent_15(struct FKey Key) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Three_K2Node_InputKeyEvent_15");
 
 	struct InpActEvt_Three_K2Node_InputKeyEvent_15_Params {
-		struct Unknown Key;
+		struct FKey Key;
 	}; InpActEvt_Three_K2Node_InputKeyEvent_15_Params Params;
 
 	Params.Key = Key;
@@ -227,11 +227,11 @@ inline void ABP-BattleRoyalePawn_C::InpActEvt_Three_K2Node_InputKeyEvent_15(stru
 }
 
 // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Four_K2Node_InputKeyEvent_14
-inline void ABP-BattleRoyalePawn_C::InpActEvt_Four_K2Node_InputKeyEvent_14(struct Unknown Key) {
+inline void ABP-BattleRoyalePawn_C::InpActEvt_Four_K2Node_InputKeyEvent_14(struct FKey Key) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Four_K2Node_InputKeyEvent_14");
 
 	struct InpActEvt_Four_K2Node_InputKeyEvent_14_Params {
-		struct Unknown Key;
+		struct FKey Key;
 	}; InpActEvt_Four_K2Node_InputKeyEvent_14_Params Params;
 
 	Params.Key = Key;
@@ -242,11 +242,11 @@ inline void ABP-BattleRoyalePawn_C::InpActEvt_Four_K2Node_InputKeyEvent_14(struc
 }
 
 // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Five_K2Node_InputKeyEvent_13
-inline void ABP-BattleRoyalePawn_C::InpActEvt_Five_K2Node_InputKeyEvent_13(struct Unknown Key) {
+inline void ABP-BattleRoyalePawn_C::InpActEvt_Five_K2Node_InputKeyEvent_13(struct FKey Key) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Five_K2Node_InputKeyEvent_13");
 
 	struct InpActEvt_Five_K2Node_InputKeyEvent_13_Params {
-		struct Unknown Key;
+		struct FKey Key;
 	}; InpActEvt_Five_K2Node_InputKeyEvent_13_Params Params;
 
 	Params.Key = Key;
@@ -257,11 +257,11 @@ inline void ABP-BattleRoyalePawn_C::InpActEvt_Five_K2Node_InputKeyEvent_13(struc
 }
 
 // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Six_K2Node_InputKeyEvent_12
-inline void ABP-BattleRoyalePawn_C::InpActEvt_Six_K2Node_InputKeyEvent_12(struct Unknown Key) {
+inline void ABP-BattleRoyalePawn_C::InpActEvt_Six_K2Node_InputKeyEvent_12(struct FKey Key) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Six_K2Node_InputKeyEvent_12");
 
 	struct InpActEvt_Six_K2Node_InputKeyEvent_12_Params {
-		struct Unknown Key;
+		struct FKey Key;
 	}; InpActEvt_Six_K2Node_InputKeyEvent_12_Params Params;
 
 	Params.Key = Key;
@@ -272,11 +272,11 @@ inline void ABP-BattleRoyalePawn_C::InpActEvt_Six_K2Node_InputKeyEvent_12(struct
 }
 
 // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Seven_K2Node_InputKeyEvent_11
-inline void ABP-BattleRoyalePawn_C::InpActEvt_Seven_K2Node_InputKeyEvent_11(struct Unknown Key) {
+inline void ABP-BattleRoyalePawn_C::InpActEvt_Seven_K2Node_InputKeyEvent_11(struct FKey Key) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Seven_K2Node_InputKeyEvent_11");
 
 	struct InpActEvt_Seven_K2Node_InputKeyEvent_11_Params {
-		struct Unknown Key;
+		struct FKey Key;
 	}; InpActEvt_Seven_K2Node_InputKeyEvent_11_Params Params;
 
 	Params.Key = Key;
@@ -287,11 +287,11 @@ inline void ABP-BattleRoyalePawn_C::InpActEvt_Seven_K2Node_InputKeyEvent_11(stru
 }
 
 // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Eight_K2Node_InputKeyEvent_10
-inline void ABP-BattleRoyalePawn_C::InpActEvt_Eight_K2Node_InputKeyEvent_10(struct Unknown Key) {
+inline void ABP-BattleRoyalePawn_C::InpActEvt_Eight_K2Node_InputKeyEvent_10(struct FKey Key) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Eight_K2Node_InputKeyEvent_10");
 
 	struct InpActEvt_Eight_K2Node_InputKeyEvent_10_Params {
-		struct Unknown Key;
+		struct FKey Key;
 	}; InpActEvt_Eight_K2Node_InputKeyEvent_10_Params Params;
 
 	Params.Key = Key;
@@ -302,11 +302,11 @@ inline void ABP-BattleRoyalePawn_C::InpActEvt_Eight_K2Node_InputKeyEvent_10(stru
 }
 
 // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_One_K2Node_InputKeyEvent_9
-inline void ABP-BattleRoyalePawn_C::InpActEvt_Ctrl_One_K2Node_InputKeyEvent_9(struct Unknown Key) {
+inline void ABP-BattleRoyalePawn_C::InpActEvt_Ctrl_One_K2Node_InputKeyEvent_9(struct FKey Key) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_One_K2Node_InputKeyEvent_9");
 
 	struct InpActEvt_Ctrl_One_K2Node_InputKeyEvent_9_Params {
-		struct Unknown Key;
+		struct FKey Key;
 	}; InpActEvt_Ctrl_One_K2Node_InputKeyEvent_9_Params Params;
 
 	Params.Key = Key;
@@ -317,11 +317,11 @@ inline void ABP-BattleRoyalePawn_C::InpActEvt_Ctrl_One_K2Node_InputKeyEvent_9(st
 }
 
 // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_Two_K2Node_InputKeyEvent_8
-inline void ABP-BattleRoyalePawn_C::InpActEvt_Ctrl_Two_K2Node_InputKeyEvent_8(struct Unknown Key) {
+inline void ABP-BattleRoyalePawn_C::InpActEvt_Ctrl_Two_K2Node_InputKeyEvent_8(struct FKey Key) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_Two_K2Node_InputKeyEvent_8");
 
 	struct InpActEvt_Ctrl_Two_K2Node_InputKeyEvent_8_Params {
-		struct Unknown Key;
+		struct FKey Key;
 	}; InpActEvt_Ctrl_Two_K2Node_InputKeyEvent_8_Params Params;
 
 	Params.Key = Key;
@@ -332,11 +332,11 @@ inline void ABP-BattleRoyalePawn_C::InpActEvt_Ctrl_Two_K2Node_InputKeyEvent_8(st
 }
 
 // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_Three_K2Node_InputKeyEvent_7
-inline void ABP-BattleRoyalePawn_C::InpActEvt_Ctrl_Three_K2Node_InputKeyEvent_7(struct Unknown Key) {
+inline void ABP-BattleRoyalePawn_C::InpActEvt_Ctrl_Three_K2Node_InputKeyEvent_7(struct FKey Key) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_Three_K2Node_InputKeyEvent_7");
 
 	struct InpActEvt_Ctrl_Three_K2Node_InputKeyEvent_7_Params {
-		struct Unknown Key;
+		struct FKey Key;
 	}; InpActEvt_Ctrl_Three_K2Node_InputKeyEvent_7_Params Params;
 
 	Params.Key = Key;
@@ -347,11 +347,11 @@ inline void ABP-BattleRoyalePawn_C::InpActEvt_Ctrl_Three_K2Node_InputKeyEvent_7(
 }
 
 // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_Four_K2Node_InputKeyEvent_6
-inline void ABP-BattleRoyalePawn_C::InpActEvt_Ctrl_Four_K2Node_InputKeyEvent_6(struct Unknown Key) {
+inline void ABP-BattleRoyalePawn_C::InpActEvt_Ctrl_Four_K2Node_InputKeyEvent_6(struct FKey Key) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_Four_K2Node_InputKeyEvent_6");
 
 	struct InpActEvt_Ctrl_Four_K2Node_InputKeyEvent_6_Params {
-		struct Unknown Key;
+		struct FKey Key;
 	}; InpActEvt_Ctrl_Four_K2Node_InputKeyEvent_6_Params Params;
 
 	Params.Key = Key;
@@ -362,11 +362,11 @@ inline void ABP-BattleRoyalePawn_C::InpActEvt_Ctrl_Four_K2Node_InputKeyEvent_6(s
 }
 
 // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_Five_K2Node_InputKeyEvent_5
-inline void ABP-BattleRoyalePawn_C::InpActEvt_Ctrl_Five_K2Node_InputKeyEvent_5(struct Unknown Key) {
+inline void ABP-BattleRoyalePawn_C::InpActEvt_Ctrl_Five_K2Node_InputKeyEvent_5(struct FKey Key) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_Five_K2Node_InputKeyEvent_5");
 
 	struct InpActEvt_Ctrl_Five_K2Node_InputKeyEvent_5_Params {
-		struct Unknown Key;
+		struct FKey Key;
 	}; InpActEvt_Ctrl_Five_K2Node_InputKeyEvent_5_Params Params;
 
 	Params.Key = Key;
@@ -377,11 +377,11 @@ inline void ABP-BattleRoyalePawn_C::InpActEvt_Ctrl_Five_K2Node_InputKeyEvent_5(s
 }
 
 // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_Six_K2Node_InputKeyEvent_4
-inline void ABP-BattleRoyalePawn_C::InpActEvt_Ctrl_Six_K2Node_InputKeyEvent_4(struct Unknown Key) {
+inline void ABP-BattleRoyalePawn_C::InpActEvt_Ctrl_Six_K2Node_InputKeyEvent_4(struct FKey Key) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_Six_K2Node_InputKeyEvent_4");
 
 	struct InpActEvt_Ctrl_Six_K2Node_InputKeyEvent_4_Params {
-		struct Unknown Key;
+		struct FKey Key;
 	}; InpActEvt_Ctrl_Six_K2Node_InputKeyEvent_4_Params Params;
 
 	Params.Key = Key;
@@ -392,11 +392,11 @@ inline void ABP-BattleRoyalePawn_C::InpActEvt_Ctrl_Six_K2Node_InputKeyEvent_4(st
 }
 
 // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_Seven_K2Node_InputKeyEvent_3
-inline void ABP-BattleRoyalePawn_C::InpActEvt_Ctrl_Seven_K2Node_InputKeyEvent_3(struct Unknown Key) {
+inline void ABP-BattleRoyalePawn_C::InpActEvt_Ctrl_Seven_K2Node_InputKeyEvent_3(struct FKey Key) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_Seven_K2Node_InputKeyEvent_3");
 
 	struct InpActEvt_Ctrl_Seven_K2Node_InputKeyEvent_3_Params {
-		struct Unknown Key;
+		struct FKey Key;
 	}; InpActEvt_Ctrl_Seven_K2Node_InputKeyEvent_3_Params Params;
 
 	Params.Key = Key;
@@ -407,11 +407,11 @@ inline void ABP-BattleRoyalePawn_C::InpActEvt_Ctrl_Seven_K2Node_InputKeyEvent_3(
 }
 
 // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_Eight_K2Node_InputKeyEvent_2
-inline void ABP-BattleRoyalePawn_C::InpActEvt_Ctrl_Eight_K2Node_InputKeyEvent_2(struct Unknown Key) {
+inline void ABP-BattleRoyalePawn_C::InpActEvt_Ctrl_Eight_K2Node_InputKeyEvent_2(struct FKey Key) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_Ctrl_Eight_K2Node_InputKeyEvent_2");
 
 	struct InpActEvt_Ctrl_Eight_K2Node_InputKeyEvent_2_Params {
-		struct Unknown Key;
+		struct FKey Key;
 	}; InpActEvt_Ctrl_Eight_K2Node_InputKeyEvent_2_Params Params;
 
 	Params.Key = Key;
@@ -422,11 +422,11 @@ inline void ABP-BattleRoyalePawn_C::InpActEvt_Ctrl_Eight_K2Node_InputKeyEvent_2(
 }
 
 // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_NumPadZero_K2Node_InputKeyEvent_1
-inline void ABP-BattleRoyalePawn_C::InpActEvt_NumPadZero_K2Node_InputKeyEvent_1(struct Unknown Key) {
+inline void ABP-BattleRoyalePawn_C::InpActEvt_NumPadZero_K2Node_InputKeyEvent_1(struct FKey Key) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.InpActEvt_NumPadZero_K2Node_InputKeyEvent_1");
 
 	struct InpActEvt_NumPadZero_K2Node_InputKeyEvent_1_Params {
-		struct Unknown Key;
+		struct FKey Key;
 	}; InpActEvt_NumPadZero_K2Node_InputKeyEvent_1_Params Params;
 
 	Params.Key = Key;
@@ -508,15 +508,15 @@ inline void ABP-BattleRoyalePawn_C::OnSaveInventoryData() {
 }
 
 // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.AddPerkEvent
-inline void ABP-BattleRoyalePawn_C::AddPerkEvent(struct Unknown& PerkInfo, struct Unknown& InCurrentDisplayAbility, int32_t LastLevel, int32_t ClassLevel, enum class Unknow LevelUpType) {
+inline void ABP-BattleRoyalePawn_C::AddPerkEvent(struct FPerkInfo& PerkInfo, struct FDisplayAbility& InCurrentDisplayAbility, int32_t LastLevel, int32_t ClassLevel, enum class EPerkLevelUpType LevelUpType) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.AddPerkEvent");
 
 	struct AddPerkEvent_Params {
-		struct Unknown& PerkInfo;
-		struct Unknown& InCurrentDisplayAbility;
+		struct FPerkInfo& PerkInfo;
+		struct FDisplayAbility& InCurrentDisplayAbility;
 		int32_t LastLevel;
 		int32_t ClassLevel;
-		enum class Unknow LevelUpType;
+		enum class EPerkLevelUpType LevelUpType;
 	}; AddPerkEvent_Params Params;
 
 	Params.LastLevel = LastLevel;
@@ -562,13 +562,13 @@ inline void ABP-BattleRoyalePawn_C::CreatePerkLevelUI(int32_t Count) {
 }
 
 // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.PerkSpinEvent
-inline void ABP-BattleRoyalePawn_C::PerkSpinEvent(char bShow, int32_t Count, enum class Unknow Slot) {
+inline void ABP-BattleRoyalePawn_C::PerkSpinEvent(char bShow, int32_t Count, enum class EPerkSlotFlag Slot) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.PerkSpinEvent");
 
 	struct PerkSpinEvent_Params {
 		char bShow;
 		int32_t Count;
-		enum class Unknow Slot;
+		enum class EPerkSlotFlag Slot;
 	}; PerkSpinEvent_Params Params;
 
 	Params.bShow = bShow;
@@ -598,11 +598,11 @@ inline void ABP-BattleRoyalePawn_C::ShowAmplifierEffect(char IsAmplifierEffect, 
 }
 
 // Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.OnLanded
-inline void ABP-BattleRoyalePawn_C::OnLanded(struct Unknown& Hit) {
+inline void ABP-BattleRoyalePawn_C::OnLanded(struct FHitResult& Hit) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-BattleRoyalePawn.BP-BattleRoyalePawn_C.OnLanded");
 
 	struct OnLanded_Params {
-		struct Unknown& Hit;
+		struct FHitResult& Hit;
 	}; OnLanded_Params Params;
 
 

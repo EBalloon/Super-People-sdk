@@ -3,38 +3,38 @@ class UUW_ReplayUserNameTooltip_C : public UBravoHotelItemUseWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x268 (8)
-	struct Unknown BT_UserName; // 0x270 (8)
-	struct Unknown CP_Main; // 0x278 (8)
-	struct Unknown HB_ItemInfo; // 0x280 (8)
-	struct Unknown Image_264; // 0x288 (8)
-	struct Unknown Image_265; // 0x290 (8)
-	struct Unknown Image_1163; // 0x298 (8)
-	struct Unknown IMG_Frontbar; // 0x2A0 (8)
-	struct Unknown IMG_Item; // 0x2A8 (8)
-	struct Unknown Img_TeamColor; // 0x2B0 (8)
-	struct Unknown PB_HP; // 0x2B8 (8)
-	struct Unknown PB_ItemCasting; // 0x2C0 (8)
-	struct Unknown PB_Message; // 0x2C8 (8)
-	struct Unknown SizeBox_Message; // 0x2D0 (8)
-	struct Unknown Switcher_Casting; // 0x2D8 (8)
-	struct Unknown T_Class; // 0x2E0 (8)
-	struct Unknown T_ExpertWeapon; // 0x2E8 (8)
-	struct Unknown T_Item; // 0x2F0 (8)
-	struct Unknown T_Level; // 0x2F8 (8)
-	struct Unknown T_Message; // 0x300 (8)
-	struct Unknown T_Quantity; // 0x308 (8)
-	struct Unknown T_TeamNum; // 0x310 (8)
-	struct Unknown T_UserName; // 0x318 (8)
-	struct Unknown T_UserName_2; // 0x320 (8)
-	struct Unknown PlayerState; // 0x328 (8)
-	struct Unknown ReplayController; // 0x330 (8)
-	struct Unknown TargetCharacter; // 0x338 (8)
-	struct Unknown MaxViewportSize; // 0x340 (8)
-	struct Unknown LocalScreenPosition; // 0x348 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x268 (8)
+	struct UButton BT_UserName; // 0x270 (8)
+	struct UCanvasPanel CP_Main; // 0x278 (8)
+	struct UHorizontalBox HB_ItemInfo; // 0x280 (8)
+	struct UImage Image_264; // 0x288 (8)
+	struct UImage Image_265; // 0x290 (8)
+	struct UImage Image_1163; // 0x298 (8)
+	struct UImage IMG_Frontbar; // 0x2A0 (8)
+	struct UImage IMG_Item; // 0x2A8 (8)
+	struct UImage Img_TeamColor; // 0x2B0 (8)
+	struct UProgressBar PB_HP; // 0x2B8 (8)
+	struct UProgressBar PB_ItemCasting; // 0x2C0 (8)
+	struct UProgressBar PB_Message; // 0x2C8 (8)
+	struct USizeBox SizeBox_Message; // 0x2D0 (8)
+	struct UWidgetSwitcher Switcher_Casting; // 0x2D8 (8)
+	struct UTextBlock T_Class; // 0x2E0 (8)
+	struct UTextBlock T_ExpertWeapon; // 0x2E8 (8)
+	struct UTextBlock T_Item; // 0x2F0 (8)
+	struct UTextBlock T_Level; // 0x2F8 (8)
+	struct UTextBlock T_Message; // 0x300 (8)
+	struct UTextBlock T_Quantity; // 0x308 (8)
+	struct UTextBlock T_TeamNum; // 0x310 (8)
+	struct UTextBlock T_UserName; // 0x318 (8)
+	struct UTextBlock T_UserName_2; // 0x320 (8)
+	struct ABravoHotelPlayerState PlayerState; // 0x328 (8)
+	struct APlayerController ReplayController; // 0x330 (8)
+	struct ABravoHotelCharacter TargetCharacter; // 0x338 (8)
+	struct FVector2D MaxViewportSize; // 0x340 (8)
+	struct FVector2D LocalScreenPosition; // 0x348 (8)
 	char IsPositionUpdated : 0; // 0x350 (1)
 	float DefaultCharacterZLocation; // 0x354 (4)
-	struct Unknown TargetPawn; // 0x358 (8)
+	struct APawn TargetPawn; // 0x358 (8)
 
 	void InitNameButton(); // Function UW_ReplayUserNameTooltip.UW_ReplayUserNameTooltip_C.InitNameButton(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void IsKillCamTarget(char& IsTarget); // Function UW_ReplayUserNameTooltip.UW_ReplayUserNameTooltip_C.IsKillCamTarget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
@@ -45,20 +45,20 @@ public:
 	void SetCastingInfo(char& IsVisible); // Function UW_ReplayUserNameTooltip.UW_ReplayUserNameTooltip_C.SetCastingInfo(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetEnableNameButton(char Enable); // Function UW_ReplayUserNameTooltip.UW_ReplayUserNameTooltip_C.SetEnableNameButton(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnClickPlayerNameButton(); // Function UW_ReplayUserNameTooltip.UW_ReplayUserNameTooltip_C.OnClickPlayerNameButton(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CorrectionScreenPositionByTeamPositionWidget(struct Unknown& ScreenPosition, char& RetOutScreenPosition); // Function UW_ReplayUserNameTooltip.UW_ReplayUserNameTooltip_C.CorrectionScreenPositionByTeamPositionWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CorrectionScreenPositionByTeamPositionWidget(struct FVector2D& ScreenPosition, char& RetOutScreenPosition); // Function UW_ReplayUserNameTooltip.UW_ReplayUserNameTooltip_C.CorrectionScreenPositionByTeamPositionWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void UpdatePosition(); // Function UW_ReplayUserNameTooltip.UW_ReplayUserNameTooltip_C.UpdatePosition(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void IsReplayTarget(char& IsTarget); // Function UW_ReplayUserNameTooltip.UW_ReplayUserNameTooltip_C.IsReplayTarget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void GetPlayerViewPortPosition(struct Unknown& ScreenPosition); // Function UW_ReplayUserNameTooltip.UW_ReplayUserNameTooltip_C.GetPlayerViewPortPosition(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void GetPlayerViewPortPosition(struct FVector2D& ScreenPosition); // Function UW_ReplayUserNameTooltip.UW_ReplayUserNameTooltip_C.GetPlayerViewPortPosition(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void SetVisibilityWidget(char IsShow); // Function UW_ReplayUserNameTooltip.UW_ReplayUserNameTooltip_C.SetVisibilityWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void IsShowUserNameTooltip(char& IsShow); // Function UW_ReplayUserNameTooltip.UW_ReplayUserNameTooltip_C.IsShowUserNameTooltip(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void UpdateItemInfo(); // Function UW_ReplayUserNameTooltip.UW_ReplayUserNameTooltip_C.UpdateItemInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void InitPlayerInfo(); // Function UW_ReplayUserNameTooltip.UW_ReplayUserNameTooltip_C.InitPlayerInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void UpdatePlayerInfo(); // Function UW_ReplayUserNameTooltip.UW_ReplayUserNameTooltip_C.UpdatePlayerInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void UpdateInfos(); // Function UW_ReplayUserNameTooltip.UW_ReplayUserNameTooltip_C.UpdateInfos(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnLoaded_E231BB6440132C19B46345A570B8E8BF(struct Unknown Loaded); // Function UW_ReplayUserNameTooltip.UW_ReplayUserNameTooltip_C.OnLoaded_E231BB6440132C19B46345A570B8E8BF(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_E231BB6440132C19B46345A570B8E8BF(struct Object Loaded); // Function UW_ReplayUserNameTooltip.UW_ReplayUserNameTooltip_C.OnLoaded_E231BB6440132C19B46345A570B8E8BF(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__BT_UserName_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW_ReplayUserNameTooltip.UW_ReplayUserNameTooltip_C.BndEvt__BT_UserName_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AsyncLoadIconTexture(struct Unknown IconTexture, struct Unknown ImgWidget); // Function UW_ReplayUserNameTooltip.UW_ReplayUserNameTooltip_C.AsyncLoadIconTexture(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW_ReplayUserNameTooltip.UW_ReplayUserNameTooltip_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AsyncLoadIconTexture(struct TSoftObjectPtr<UPaperSprite> IconTexture, struct UImage ImgWidget); // Function UW_ReplayUserNameTooltip.UW_ReplayUserNameTooltip_C.AsyncLoadIconTexture(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW_ReplayUserNameTooltip.UW_ReplayUserNameTooltip_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW_ReplayUserNameTooltip.UW_ReplayUserNameTooltip_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW_ReplayUserNameTooltip(int32_t EntryPoint); // Function UW_ReplayUserNameTooltip.UW_ReplayUserNameTooltip_C.ExecuteUbergraph_UW_ReplayUserNameTooltip(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
@@ -206,11 +206,11 @@ inline void UUW_ReplayUserNameTooltip_C::OnClickPlayerNameButton() {
 }
 
 // Function UW_ReplayUserNameTooltip.UW_ReplayUserNameTooltip_C.CorrectionScreenPositionByTeamPositionWidget
-inline void UUW_ReplayUserNameTooltip_C::CorrectionScreenPositionByTeamPositionWidget(struct Unknown& ScreenPosition, char& RetOutScreenPosition) {
+inline void UUW_ReplayUserNameTooltip_C::CorrectionScreenPositionByTeamPositionWidget(struct FVector2D& ScreenPosition, char& RetOutScreenPosition) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW_ReplayUserNameTooltip.UW_ReplayUserNameTooltip_C.CorrectionScreenPositionByTeamPositionWidget");
 
 	struct CorrectionScreenPositionByTeamPositionWidget_Params {
-		struct Unknown& ScreenPosition;
+		struct FVector2D& ScreenPosition;
 		char& RetOutScreenPosition;
 	}; CorrectionScreenPositionByTeamPositionWidget_Params Params;
 
@@ -256,11 +256,11 @@ inline void UUW_ReplayUserNameTooltip_C::IsReplayTarget(char& IsTarget) {
 }
 
 // Function UW_ReplayUserNameTooltip.UW_ReplayUserNameTooltip_C.GetPlayerViewPortPosition
-inline void UUW_ReplayUserNameTooltip_C::GetPlayerViewPortPosition(struct Unknown& ScreenPosition) {
+inline void UUW_ReplayUserNameTooltip_C::GetPlayerViewPortPosition(struct FVector2D& ScreenPosition) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW_ReplayUserNameTooltip.UW_ReplayUserNameTooltip_C.GetPlayerViewPortPosition");
 
 	struct GetPlayerViewPortPosition_Params {
-		struct Unknown& ScreenPosition;
+		struct FVector2D& ScreenPosition;
 	}; GetPlayerViewPortPosition_Params Params;
 
 
@@ -361,11 +361,11 @@ inline void UUW_ReplayUserNameTooltip_C::UpdateInfos() {
 }
 
 // Function UW_ReplayUserNameTooltip.UW_ReplayUserNameTooltip_C.OnLoaded_E231BB6440132C19B46345A570B8E8BF
-inline void UUW_ReplayUserNameTooltip_C::OnLoaded_E231BB6440132C19B46345A570B8E8BF(struct Unknown Loaded) {
+inline void UUW_ReplayUserNameTooltip_C::OnLoaded_E231BB6440132C19B46345A570B8E8BF(struct Object Loaded) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW_ReplayUserNameTooltip.UW_ReplayUserNameTooltip_C.OnLoaded_E231BB6440132C19B46345A570B8E8BF");
 
 	struct OnLoaded_E231BB6440132C19B46345A570B8E8BF_Params {
-		struct Unknown Loaded;
+		struct Object Loaded;
 	}; OnLoaded_E231BB6440132C19B46345A570B8E8BF_Params Params;
 
 	Params.Loaded = Loaded;
@@ -390,12 +390,12 @@ inline void UUW_ReplayUserNameTooltip_C::BndEvt__BT_UserName_K2Node_ComponentBou
 }
 
 // Function UW_ReplayUserNameTooltip.UW_ReplayUserNameTooltip_C.AsyncLoadIconTexture
-inline void UUW_ReplayUserNameTooltip_C::AsyncLoadIconTexture(struct Unknown IconTexture, struct Unknown ImgWidget) {
+inline void UUW_ReplayUserNameTooltip_C::AsyncLoadIconTexture(struct TSoftObjectPtr<UPaperSprite> IconTexture, struct UImage ImgWidget) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW_ReplayUserNameTooltip.UW_ReplayUserNameTooltip_C.AsyncLoadIconTexture");
 
 	struct AsyncLoadIconTexture_Params {
-		struct Unknown IconTexture;
-		struct Unknown ImgWidget;
+		struct TSoftObjectPtr<UPaperSprite> IconTexture;
+		struct UImage ImgWidget;
 	}; AsyncLoadIconTexture_Params Params;
 
 	Params.IconTexture = IconTexture;
@@ -407,11 +407,11 @@ inline void UUW_ReplayUserNameTooltip_C::AsyncLoadIconTexture(struct Unknown Ico
 }
 
 // Function UW_ReplayUserNameTooltip.UW_ReplayUserNameTooltip_C.Tick
-inline void UUW_ReplayUserNameTooltip_C::Tick(struct Unknown MyGeometry, float InDeltaTime) {
+inline void UUW_ReplayUserNameTooltip_C::Tick(struct FGeometry MyGeometry, float InDeltaTime) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW_ReplayUserNameTooltip.UW_ReplayUserNameTooltip_C.Tick");
 
 	struct Tick_Params {
-		struct Unknown MyGeometry;
+		struct FGeometry MyGeometry;
 		float InDeltaTime;
 	}; Tick_Params Params;
 

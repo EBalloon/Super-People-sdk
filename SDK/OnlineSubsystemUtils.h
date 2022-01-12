@@ -125,8 +125,8 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x40 (16)
 
-	struct Unknown CacheAchievements(struct Unknown WorldContextObject, struct Unknown PlayerController); // Function OnlineSubsystemUtils.AchievementQueryCallbackProxy.CacheAchievements(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x11DCBB0>
-	struct Unknown CacheAchievementDescriptions(struct Unknown WorldContextObject, struct Unknown PlayerController); // Function OnlineSubsystemUtils.AchievementQueryCallbackProxy.CacheAchievementDescriptions(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x11DCAF0>
+	struct UAchievementQueryCallbackProxy CacheAchievements(struct Object WorldContextObject, struct APlayerController PlayerController); // Function OnlineSubsystemUtils.AchievementQueryCallbackProxy.CacheAchievements(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x11DCBB0>
+	struct UAchievementQueryCallbackProxy CacheAchievementDescriptions(struct Object WorldContextObject, struct APlayerController PlayerController); // Function OnlineSubsystemUtils.AchievementQueryCallbackProxy.CacheAchievementDescriptions(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x11DCAF0>
 };
 
 // Class OnlineSubsystemUtils.AchievementWriteCallbackProxy
@@ -137,7 +137,7 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x40 (16)
 
-	struct Unknown WriteAchievementProgress(struct Unknown WorldContextObject, struct Unknown PlayerController, struct FName AchievementName, float progress, int32_t UserTag); // Function OnlineSubsystemUtils.AchievementWriteCallbackProxy.WriteAchievementProgress(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x11DE7E0>
+	struct UAchievementWriteCallbackProxy WriteAchievementProgress(struct Object WorldContextObject, struct APlayerController PlayerController, struct FName AchievementName, float progress, int32_t UserTag); // Function OnlineSubsystemUtils.AchievementWriteCallbackProxy.WriteAchievementProgress(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x11DE7E0>
 };
 
 // Class OnlineSubsystemUtils.ConnectionCallbackProxy
@@ -148,7 +148,7 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x40 (16)
 
-	struct Unknown ConnectToService(struct Unknown WorldContextObject, struct Unknown PlayerController); // Function OnlineSubsystemUtils.ConnectionCallbackProxy.ConnectToService(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x11DCC70>
+	struct UConnectionCallbackProxy ConnectToService(struct Object WorldContextObject, struct APlayerController PlayerController); // Function OnlineSubsystemUtils.ConnectionCallbackProxy.ConnectToService(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x11DCC70>
 };
 
 // Class OnlineSubsystemUtils.CreateSessionCallbackProxy
@@ -159,7 +159,7 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x40 (16)
 
-	struct Unknown CreateSession(struct Unknown WorldContextObject, struct Unknown PlayerController, int32_t PublicConnections, char bUseLAN); // Function OnlineSubsystemUtils.CreateSessionCallbackProxy.CreateSession(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x11DD230>
+	struct UCreateSessionCallbackProxy CreateSession(struct Object WorldContextObject, struct APlayerController PlayerController, int32_t PublicConnections, char bUseLAN); // Function OnlineSubsystemUtils.CreateSessionCallbackProxy.CreateSession(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x11DD230>
 };
 
 // Class OnlineSubsystemUtils.DestroySessionCallbackProxy
@@ -170,7 +170,7 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x40 (16)
 
-	struct Unknown DestroySession(struct Unknown WorldContextObject, struct Unknown PlayerController); // Function OnlineSubsystemUtils.DestroySessionCallbackProxy.DestroySession(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x11DD360>
+	struct UDestroySessionCallbackProxy DestroySession(struct Object WorldContextObject, struct APlayerController PlayerController); // Function OnlineSubsystemUtils.DestroySessionCallbackProxy.DestroySession(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x11DD360>
 };
 
 // Class OnlineSubsystemUtils.EndMatchCallbackProxy
@@ -181,7 +181,7 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x40 (16)
 
-	struct Unknown EndMatch(struct Unknown WorldContextObject, struct Unknown PlayerController, struct TScriptInterface<IUnknown> MatchActor, struct FString MatchID, char LocalPlayerOutcome, char OtherPlayersOutcome); // Function OnlineSubsystemUtils.EndMatchCallbackProxy.EndMatch(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x11DD420>
+	struct UEndMatchCallbackProxy EndMatch(struct Object WorldContextObject, struct APlayerController PlayerController, struct TScriptInterface<ITurnBasedMatchInterface> MatchActor, struct FString MatchID, char LocalPlayerOutcome, char OtherPlayersOutcome); // Function OnlineSubsystemUtils.EndMatchCallbackProxy.EndMatch(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x11DD420>
 };
 
 // Class OnlineSubsystemUtils.EndTurnCallbackProxy
@@ -192,7 +192,7 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x40 (16)
 
-	struct Unknown EndTurn(struct Unknown WorldContextObject, struct Unknown PlayerController, struct FString MatchID, struct TScriptInterface<IUnknown> TurnBasedMatchInterface); // Function OnlineSubsystemUtils.EndTurnCallbackProxy.EndTurn(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x11DD650>
+	struct UEndTurnCallbackProxy EndTurn(struct Object WorldContextObject, struct APlayerController PlayerController, struct FString MatchID, struct TScriptInterface<ITurnBasedMatchInterface> TurnBasedMatchInterface); // Function OnlineSubsystemUtils.EndTurnCallbackProxy.EndTurn(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x11DD650>
 };
 
 // Class OnlineSubsystemUtils.FindSessionsCallbackProxy
@@ -203,11 +203,11 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x40 (16)
 
-	struct FString GetServerName(struct Unknown& Result); // Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetServerName(Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x11DE5C0>
-	int32_t GetPingInMs(struct Unknown& Result); // Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetPingInMs(Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x11DE3E0>
-	int32_t GetMaxPlayers(struct Unknown& Result); // Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetMaxPlayers(Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x11DE200>
-	int32_t GetCurrentPlayers(struct Unknown& Result); // Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetCurrentPlayers(Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x11DE020>
-	struct Unknown FindSessions(struct Unknown WorldContextObject, struct Unknown PlayerController, int32_t MaxResults, char bUseLAN); // Function OnlineSubsystemUtils.FindSessionsCallbackProxy.FindSessions(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x11DD7F0>
+	struct FString GetServerName(struct FBlueprintSessionResult& Result); // Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetServerName(Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x11DE5C0>
+	int32_t GetPingInMs(struct FBlueprintSessionResult& Result); // Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetPingInMs(Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x11DE3E0>
+	int32_t GetMaxPlayers(struct FBlueprintSessionResult& Result); // Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetMaxPlayers(Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x11DE200>
+	int32_t GetCurrentPlayers(struct FBlueprintSessionResult& Result); // Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetCurrentPlayers(Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x11DE020>
+	struct UFindSessionsCallbackProxy FindSessions(struct Object WorldContextObject, struct APlayerController PlayerController, int32_t MaxResults, char bUseLAN); // Function OnlineSubsystemUtils.FindSessionsCallbackProxy.FindSessions(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x11DD7F0>
 };
 
 // Class OnlineSubsystemUtils.FindTurnBasedMatchCallbackProxy
@@ -218,7 +218,7 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x40 (16)
 
-	struct Unknown FindTurnBasedMatch(struct Unknown WorldContextObject, struct Unknown PlayerController, struct TScriptInterface<IUnknown> MatchActor, int32_t MinPlayers, int32_t MaxPlayers, int32_t PlayerGroup, char ShowExistingMatches); // Function OnlineSubsystemUtils.FindTurnBasedMatchCallbackProxy.FindTurnBasedMatch(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x11DD920>
+	struct UFindTurnBasedMatchCallbackProxy FindTurnBasedMatch(struct Object WorldContextObject, struct APlayerController PlayerController, struct TScriptInterface<ITurnBasedMatchInterface> MatchActor, int32_t MinPlayers, int32_t MaxPlayers, int32_t PlayerGroup, char ShowExistingMatches); // Function OnlineSubsystemUtils.FindTurnBasedMatchCallbackProxy.FindTurnBasedMatch(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x11DD920>
 };
 
 // Class OnlineSubsystemUtils.InAppPurchaseCallbackProxy
@@ -229,7 +229,7 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x28 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x38 (16)
 
-	struct Unknown CreateProxyObjectForInAppPurchase(struct Unknown PlayerController, struct Unknown& ProductRequest); // Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy.CreateProxyObjectForInAppPurchase(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x11DCE20>
+	struct UInAppPurchaseCallbackProxy CreateProxyObjectForInAppPurchase(struct APlayerController PlayerController, struct FInAppPurchaseProductRequest& ProductRequest); // Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy.CreateProxyObjectForInAppPurchase(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x11DCE20>
 };
 
 // Class OnlineSubsystemUtils.InAppPurchaseCallbackProxy2
@@ -240,9 +240,9 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x28 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x38 (16)
 
-	struct Unknown CreateProxyObjectForInAppPurchaseUnprocessedPurchases(struct Unknown PlayerController); // Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy2.CreateProxyObjectForInAppPurchaseUnprocessedPurchases(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x11DD1B0>
-	struct Unknown CreateProxyObjectForInAppPurchaseQueryOwned(struct Unknown PlayerController); // Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy2.CreateProxyObjectForInAppPurchaseQueryOwned(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x11DD130>
-	struct Unknown CreateProxyObjectForInAppPurchase(struct Unknown PlayerController, struct Unknown& ProductRequest); // Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy2.CreateProxyObjectForInAppPurchase(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x11DCD30>
+	struct UInAppPurchaseCallbackProxy2 CreateProxyObjectForInAppPurchaseUnprocessedPurchases(struct APlayerController PlayerController); // Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy2.CreateProxyObjectForInAppPurchaseUnprocessedPurchases(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x11DD1B0>
+	struct UInAppPurchaseCallbackProxy2 CreateProxyObjectForInAppPurchaseQueryOwned(struct APlayerController PlayerController); // Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy2.CreateProxyObjectForInAppPurchaseQueryOwned(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x11DD130>
+	struct UInAppPurchaseCallbackProxy2 CreateProxyObjectForInAppPurchase(struct APlayerController PlayerController, struct FInAppPurchaseProductRequest2& ProductRequest); // Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy2.CreateProxyObjectForInAppPurchase(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x11DCD30>
 };
 
 // Class OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy
@@ -253,7 +253,7 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x28 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x38 (16)
 
-	struct Unknown CreateProxyObjectForInAppPurchaseQuery(struct Unknown PlayerController, struct TArray<Unknown>& ProductIdentifiers); // Function OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy.CreateProxyObjectForInAppPurchaseQuery(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x11DD020>
+	struct UInAppPurchaseQueryCallbackProxy CreateProxyObjectForInAppPurchaseQuery(struct APlayerController PlayerController, struct TArray<struct FString>& ProductIdentifiers); // Function OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy.CreateProxyObjectForInAppPurchaseQuery(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x11DD020>
 };
 
 // Class OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy2
@@ -264,7 +264,7 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x28 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x38 (16)
 
-	struct Unknown CreateProxyObjectForInAppPurchaseQuery(struct Unknown PlayerController, struct TArray<Unknown>& ProductIdentifiers); // Function OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy2.CreateProxyObjectForInAppPurchaseQuery(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x11DCF10>
+	struct UInAppPurchaseQueryCallbackProxy2 CreateProxyObjectForInAppPurchaseQuery(struct APlayerController PlayerController, struct TArray<struct FString>& ProductIdentifiers); // Function OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy2.CreateProxyObjectForInAppPurchaseQuery(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x11DCF10>
 };
 
 // Class OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy
@@ -275,7 +275,7 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x28 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x38 (16)
 
-	struct Unknown CreateProxyObjectForInAppPurchaseRestore(struct TArray<Unknown>& ConsumableProductFlags, struct Unknown PlayerController); // Function OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy.CreateProxyObjectForInAppPurchaseRestore(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x11E24C0>
+	struct UInAppPurchaseRestoreCallbackProxy CreateProxyObjectForInAppPurchaseRestore(struct TArray<struct FInAppPurchaseProductRequest>& ConsumableProductFlags, struct APlayerController PlayerController); // Function OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy.CreateProxyObjectForInAppPurchaseRestore(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x11E24C0>
 };
 
 // Class OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy2
@@ -286,7 +286,7 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x28 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x38 (16)
 
-	struct Unknown CreateProxyObjectForInAppPurchaseRestore(struct TArray<Unknown>& ConsumableProductFlags, struct Unknown PlayerController); // Function OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy2.CreateProxyObjectForInAppPurchaseRestore(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x11E23A0>
+	struct UInAppPurchaseRestoreCallbackProxy2 CreateProxyObjectForInAppPurchaseRestore(struct TArray<struct FInAppPurchaseProductRequest2>& ConsumableProductFlags, struct APlayerController PlayerController); // Function OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy2.CreateProxyObjectForInAppPurchaseRestore(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x11E23A0>
 };
 
 // Class OnlineSubsystemUtils.JoinSessionCallbackProxy
@@ -297,7 +297,7 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x40 (16)
 
-	struct Unknown JoinSession(struct Unknown WorldContextObject, struct Unknown PlayerController, struct Unknown& SearchResult); // Function OnlineSubsystemUtils.JoinSessionCallbackProxy.JoinSession(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x11E26A0>
+	struct UJoinSessionCallbackProxy JoinSession(struct Object WorldContextObject, struct APlayerController PlayerController, struct FBlueprintSessionResult& SearchResult); // Function OnlineSubsystemUtils.JoinSessionCallbackProxy.JoinSession(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x11E26A0>
 };
 
 // Class OnlineSubsystemUtils.LeaderboardFlushCallbackProxy
@@ -308,7 +308,7 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x28 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x38 (16)
 
-	struct Unknown CreateProxyObjectForFlush(struct Unknown PlayerController, struct FName SessionName); // Function OnlineSubsystemUtils.LeaderboardFlushCallbackProxy.CreateProxyObjectForFlush(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x11E22E0>
+	struct ULeaderboardFlushCallbackProxy CreateProxyObjectForFlush(struct APlayerController PlayerController, struct FName SessionName); // Function OnlineSubsystemUtils.LeaderboardFlushCallbackProxy.CreateProxyObjectForFlush(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x11E22E0>
 };
 
 // Class OnlineSubsystemUtils.LeaderboardQueryCallbackProxy
@@ -319,7 +319,7 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x28 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x38 (16)
 
-	struct Unknown CreateProxyObjectForIntQuery(struct Unknown PlayerController, struct FName StatName); // Function OnlineSubsystemUtils.LeaderboardQueryCallbackProxy.CreateProxyObjectForIntQuery(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x11E25E0>
+	struct ULeaderboardQueryCallbackProxy CreateProxyObjectForIntQuery(struct APlayerController PlayerController, struct FName StatName); // Function OnlineSubsystemUtils.LeaderboardQueryCallbackProxy.CreateProxyObjectForIntQuery(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x11E25E0>
 };
 
 // Class OnlineSubsystemUtils.LogoutCallbackProxy
@@ -330,7 +330,7 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x40 (16)
 
-	struct Unknown Logout(struct Unknown WorldContextObject, struct Unknown PlayerController); // Function OnlineSubsystemUtils.LogoutCallbackProxy.Logout(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x11E2900>
+	struct ULogoutCallbackProxy Logout(struct Object WorldContextObject, struct APlayerController PlayerController); // Function OnlineSubsystemUtils.LogoutCallbackProxy.Logout(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x11E2900>
 };
 
 // Class OnlineSubsystemUtils.OnlineBeacon
@@ -340,7 +340,7 @@ public:
 
 	float BeaconConnectionInitialTimeout; // 0x320 (4)
 	float BeaconConnectionTimeout; // 0x324 (4)
-	struct Unknown NetDriver; // 0x328 (8)
+	struct UNetDriver NetDriver; // 0x328 (8)
 };
 
 // Class OnlineSubsystemUtils.OnlineBeaconClient
@@ -348,9 +348,9 @@ class AOnlineBeaconClient : public AOnlineBeacon {
 
 public:
 
-	struct Unknown BeaconOwner; // 0x348 (8)
-	struct Unknown BeaconConnection; // 0x350 (8)
-	enum class Unknow ConnectionState; // 0x358 (1)
+	struct AOnlineBeaconHostObject BeaconOwner; // 0x348 (8)
+	struct UNetConnection BeaconConnection; // 0x350 (8)
+	enum class EBeaconConnectionState ConnectionState; // 0x358 (1)
 
 	void ClientOnConnected(); // Function OnlineSubsystemUtils.OnlineBeaconClient.ClientOnConnected(Final|Net|NetReliableNative|Event|Private|NetClient) // <Game_BE.exe+0x11E2190>
 };
@@ -361,7 +361,7 @@ class AOnlineBeaconHost : public AOnlineBeacon {
 public:
 
 	int32_t ListenPort; // 0x348 (4)
-	struct TArray<Unknown> ClientActors; // 0x350 (16)
+	struct TArray<struct AOnlineBeaconClient> ClientActors; // 0x350 (16)
 };
 
 // Class OnlineSubsystemUtils.OnlineBeaconHostObject
@@ -370,8 +370,8 @@ class AOnlineBeaconHostObject : public UActor {
 public:
 
 	struct FString BeaconTypeName; // 0x318 (16)
-	struct Unknown* ClientBeaconActorClass; // 0x328 (8)
-	struct TArray<Unknown> ClientActors; // 0x330 (16)
+	struct UClass* ClientBeaconActorClass; // 0x328 (8)
+	struct TArray<struct AOnlineBeaconClient> ClientActors; // 0x330 (16)
 };
 
 // Class OnlineSubsystemUtils.OnlineEngineInterfaceImpl
@@ -388,7 +388,7 @@ class UOnlinePIESettings : public UDeveloperSettings {
 public:
 
 	char bOnlinePIEEnabled : 0; // 0x38 (1)
-	struct TArray<Unknown> Logins; // 0x40 (16)
+	struct TArray<struct FPIELoginSettingsInternal> Logins; // 0x40 (16)
 };
 
 // Class OnlineSubsystemUtils.OnlineSessionClient
@@ -406,15 +406,15 @@ class APartyBeaconClient : public AOnlineBeaconClient {
 public:
 
 	struct FString DestSessionId; // 0x3D8 (16)
-	struct Unknown PendingReservation; // 0x3E8 (80)
-	enum class Unknow RequestType; // 0x438 (1)
+	struct FPartyReservation PendingReservation; // 0x3E8 (80)
+	enum class EClientRequestType RequestType; // 0x438 (1)
 	char bPendingReservationSent : 0; // 0x439 (1)
 	char bCancelReservation : 0; // 0x43A (1)
 
-	void ServerUpdateReservationRequest(struct FString SessionID, struct Unknown ReservationUpdate); // Function OnlineSubsystemUtils.PartyBeaconClient.ServerUpdateReservationRequest(Net|NetReliableNative|Event|Protected|NetServer|NetValidate) // <Game_BE.exe+0x11E31E0>
-	void ServerReservationRequest(struct FString SessionID, struct Unknown Reservation); // Function OnlineSubsystemUtils.PartyBeaconClient.ServerReservationRequest(Net|NetReliableNative|Event|Protected|NetServer|NetValidate) // <Game_BE.exe+0x11E2F40>
-	void ServerRemoveMemberFromReservationRequest(struct FString SessionID, struct Unknown ReservationUpdate); // Function OnlineSubsystemUtils.PartyBeaconClient.ServerRemoveMemberFromReservationRequest(Net|NetReliableNative|Event|Protected|NetServer|NetValidate) // <Game_BE.exe+0x11E2CA0>
-	void ServerCancelReservationRequest(struct Unknown PartyLeader); // Function OnlineSubsystemUtils.PartyBeaconClient.ServerCancelReservationRequest(Net|NetReliableNative|Event|Protected|NetServer|NetValidate) // <Game_BE.exe+0x11E2B90>
+	void ServerUpdateReservationRequest(struct FString SessionID, struct FPartyReservation ReservationUpdate); // Function OnlineSubsystemUtils.PartyBeaconClient.ServerUpdateReservationRequest(Net|NetReliableNative|Event|Protected|NetServer|NetValidate) // <Game_BE.exe+0x11E31E0>
+	void ServerReservationRequest(struct FString SessionID, struct FPartyReservation Reservation); // Function OnlineSubsystemUtils.PartyBeaconClient.ServerReservationRequest(Net|NetReliableNative|Event|Protected|NetServer|NetValidate) // <Game_BE.exe+0x11E2F40>
+	void ServerRemoveMemberFromReservationRequest(struct FString SessionID, struct FPartyReservation ReservationUpdate); // Function OnlineSubsystemUtils.PartyBeaconClient.ServerRemoveMemberFromReservationRequest(Net|NetReliableNative|Event|Protected|NetServer|NetValidate) // <Game_BE.exe+0x11E2CA0>
+	void ServerCancelReservationRequest(struct FUniqueNetIdRepl PartyLeader); // Function OnlineSubsystemUtils.PartyBeaconClient.ServerCancelReservationRequest(Net|NetReliableNative|Event|Protected|NetServer|NetValidate) // <Game_BE.exe+0x11E2B90>
 	void ClientSendReservationUpdates(int32_t NumRemainingReservations); // Function OnlineSubsystemUtils.PartyBeaconClient.ClientSendReservationUpdates(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x11E2250>
 	void ClientSendReservationFull(); // Function OnlineSubsystemUtils.PartyBeaconClient.ClientSendReservationFull(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x11E2230>
 	void ClientReservationResponse(char ReservationResponse); // Function OnlineSubsystemUtils.PartyBeaconClient.ClientReservationResponse(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x11E21B0>
@@ -426,7 +426,7 @@ class APartyBeaconHost : public AOnlineBeaconHostObject {
 
 public:
 
-	struct Unknown State; // 0x340 (8)
+	struct UPartyBeaconState State; // 0x340 (8)
 	char bLogoutOnSessionTimeout : 0; // 0x3A8 (1)
 	float SessionTimeoutSecs; // 0x3AC (4)
 	float TravelSessionTimeoutSecs; // 0x3B0 (4)
@@ -447,7 +447,7 @@ public:
 	int32_t ForceTeamNum; // 0x4C (4)
 	char bRestrictCrossConsole : 0; // 0x50 (1)
 	char bEnableRemovalRequests : 0; // 0x51 (1)
-	struct TArray<Unknown> Reservations; // 0x58 (16)
+	struct TArray<struct FPartyReservation> Reservations; // 0x58 (16)
 };
 
 // Class OnlineSubsystemUtils.QuitMatchCallbackProxy
@@ -458,7 +458,7 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x40 (16)
 
-	struct Unknown QuitMatch(struct Unknown WorldContextObject, struct Unknown PlayerController, struct FString MatchID, char Outcome, int32_t TurnTimeoutInSeconds); // Function OnlineSubsystemUtils.QuitMatchCallbackProxy.QuitMatch(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x11E29C0>
+	struct UQuitMatchCallbackProxy QuitMatch(struct Object WorldContextObject, struct APlayerController PlayerController, struct FString MatchID, char Outcome, int32_t TurnTimeoutInSeconds); // Function OnlineSubsystemUtils.QuitMatchCallbackProxy.QuitMatch(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x11E29C0>
 };
 
 // Class OnlineSubsystemUtils.ShowLoginUICallbackProxy
@@ -469,7 +469,7 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFailure; // 0x40 (16)
 
-	struct Unknown ShowExternalLoginUI(struct Unknown WorldContextObject, struct Unknown InPlayerController); // Function OnlineSubsystemUtils.ShowLoginUICallbackProxy.ShowExternalLoginUI(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x11E5740>
+	struct UShowLoginUICallbackProxy ShowExternalLoginUI(struct Object WorldContextObject, struct APlayerController InPlayerController); // Function OnlineSubsystemUtils.ShowLoginUICallbackProxy.ShowExternalLoginUI(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x11E5740>
 };
 
 // Class OnlineSubsystemUtils.SpectatorBeaconClient
@@ -478,13 +478,13 @@ class ASpectatorBeaconClient : public AOnlineBeaconClient {
 public:
 
 	struct FString DestSessionId; // 0x3D8 (16)
-	struct Unknown PendingReservation; // 0x3E8 (120)
-	enum class Unknow RequestType; // 0x460 (1)
+	struct FSpectatorReservation PendingReservation; // 0x3E8 (120)
+	enum class ESpectatorClientRequestType RequestType; // 0x460 (1)
 	char bPendingReservationSent : 0; // 0x461 (1)
 	char bCancelReservation : 0; // 0x462 (1)
 
-	void ServerReservationRequest(struct FString SessionID, struct Unknown Reservation); // Function OnlineSubsystemUtils.SpectatorBeaconClient.ServerReservationRequest(Net|NetReliableNative|Event|Protected|NetServer|NetValidate) // <Game_BE.exe+0x11E5540>
-	void ServerCancelReservationRequest(struct Unknown Spectator); // Function OnlineSubsystemUtils.SpectatorBeaconClient.ServerCancelReservationRequest(Net|NetReliableNative|Event|Protected|NetServer|NetValidate) // <Game_BE.exe+0x11E2B90>
+	void ServerReservationRequest(struct FString SessionID, struct FSpectatorReservation Reservation); // Function OnlineSubsystemUtils.SpectatorBeaconClient.ServerReservationRequest(Net|NetReliableNative|Event|Protected|NetServer|NetValidate) // <Game_BE.exe+0x11E5540>
+	void ServerCancelReservationRequest(struct FUniqueNetIdRepl Spectator); // Function OnlineSubsystemUtils.SpectatorBeaconClient.ServerCancelReservationRequest(Net|NetReliableNative|Event|Protected|NetServer|NetValidate) // <Game_BE.exe+0x11E2B90>
 	void ClientSendReservationUpdates(int32_t NumRemainingReservations); // Function OnlineSubsystemUtils.SpectatorBeaconClient.ClientSendReservationUpdates(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x11E4DE0>
 	void ClientSendReservationFull(); // Function OnlineSubsystemUtils.SpectatorBeaconClient.ClientSendReservationFull(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x11E4DC0>
 	void ClientReservationResponse(char ReservationResponse); // Function OnlineSubsystemUtils.SpectatorBeaconClient.ClientReservationResponse(Net|NetReliableNative|Event|Public|NetClient) // <Game_BE.exe+0x11E4D40>
@@ -496,7 +496,7 @@ class ASpectatorBeaconHost : public AOnlineBeaconHostObject {
 
 public:
 
-	struct Unknown State; // 0x340 (8)
+	struct USpectatorBeaconState State; // 0x340 (8)
 	char bLogoutOnSessionTimeout : 0; // 0x3A8 (1)
 	float SessionTimeoutSecs; // 0x3AC (4)
 	float TravelSessionTimeoutSecs; // 0x3B0 (4)
@@ -511,7 +511,7 @@ public:
 	int32_t NumConsumedReservations; // 0x30 (4)
 	int32_t MaxReservations; // 0x34 (4)
 	char bRestrictCrossConsole : 0; // 0x38 (1)
-	struct TArray<Unknown> Reservations; // 0x40 (16)
+	struct TArray<struct FSpectatorReservation> Reservations; // 0x40 (16)
 };
 
 // ScriptStruct OnlineSubsystemUtils.InAppPurchaseReceiptInfo2
@@ -532,10 +532,10 @@ struct FOnlineProxyStoreOffer {
 	struct FText PriceText; // 0x78 (24)
 	int32_t NumericPrice; // 0x90 (4)
 	struct FString CurrencyCode; // 0x98 (16)
-	struct Unknown ReleaseDate; // 0xA8 (8)
-	struct Unknown ExpirationDate; // 0xB0 (8)
-	enum class Unknow DiscountType; // 0xB8 (1)
-	struct TMap<Unknown, Unknown> DynamicFields; // 0xC0 (80)
+	struct FDateTime ReleaseDate; // 0xA8 (8)
+	struct FDateTime ExpirationDate; // 0xB0 (8)
+	enum class EOnlineProxyStoreOfferDiscountType DiscountType; // 0xB8 (1)
+	struct TMap<struct FString, struct FString> DynamicFields; // 0xC0 (80)
 };
 
 // ScriptStruct OnlineSubsystemUtils.InAppPurchaseRestoreInfo2
@@ -565,7 +565,7 @@ struct FInAppPurchaseProductInfo2 {
 	struct FString DecimalSeparator; // 0x78 (16)
 	struct FString GroupingSeparator; // 0x88 (16)
 	struct FString ReceiptData; // 0x98 (16)
-	struct TMap<Unknown, Unknown> DynamicFields; // 0xA8 (80)
+	struct TMap<struct FString, struct FString> DynamicFields; // 0xA8 (80)
 };
 
 // ScriptStruct OnlineSubsystemUtils.InAppPurchaseProductRequest2
@@ -576,7 +576,7 @@ struct FInAppPurchaseProductRequest2 {
 
 // ScriptStruct OnlineSubsystemUtils.PlayerReservation
 struct FPlayerReservation {
-	struct Unknown UniqueID; // 0x0 (40)
+	struct FUniqueNetIdRepl UniqueID; // 0x0 (40)
 	struct FString ValidationStr; // 0x28 (16)
 	struct FString Platform; // 0x38 (16)
 	char bAllowCrossplay : 0; // 0x48 (1)
@@ -588,31 +588,31 @@ struct FPIELoginSettingsInternal {
 	struct FString ID; // 0x0 (16)
 	struct FString Token; // 0x10 (16)
 	struct FString Type; // 0x20 (16)
-	struct TArray<Unknown> TokenBytes; // 0x30 (16)
+	struct TArray<char> TokenBytes; // 0x30 (16)
 };
 
 // ScriptStruct OnlineSubsystemUtils.PartyReservation
 struct FPartyReservation {
 	int32_t TeamNum; // 0x0 (4)
-	struct Unknown PartyLeader; // 0x8 (40)
-	struct TArray<Unknown> PartyMembers; // 0x30 (16)
-	struct TArray<Unknown> RemovedPartyMembers; // 0x40 (16)
+	struct FUniqueNetIdRepl PartyLeader; // 0x8 (40)
+	struct TArray<struct FPlayerReservation> PartyMembers; // 0x30 (16)
+	struct TArray<struct FPlayerReservation> RemovedPartyMembers; // 0x40 (16)
 };
 
 // ScriptStruct OnlineSubsystemUtils.SpectatorReservation
 struct FSpectatorReservation {
-	struct Unknown SpectatorId; // 0x0 (40)
-	struct Unknown Spectator; // 0x28 (80)
+	struct FUniqueNetIdRepl SpectatorId; // 0x0 (40)
+	struct FPlayerReservation Spectator; // 0x28 (80)
 };
 
 // Function OnlineSubsystemUtils.AchievementQueryCallbackProxy.CacheAchievements
-inline struct Unknown UAchievementQueryCallbackProxy::CacheAchievements(struct Unknown WorldContextObject, struct Unknown PlayerController) {
+inline struct UAchievementQueryCallbackProxy UAchievementQueryCallbackProxy::CacheAchievements(struct Object WorldContextObject, struct APlayerController PlayerController) {
 	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.AchievementQueryCallbackProxy.CacheAchievements");
 
 	struct CacheAchievements_Params {
-		struct Unknown WorldContextObject;
-		struct Unknown PlayerController;
-		struct Unknown ReturnValue;
+		struct Object WorldContextObject;
+		struct APlayerController PlayerController;
+		struct UAchievementQueryCallbackProxy ReturnValue;
 
 	}; CacheAchievements_Params Params;
 
@@ -627,13 +627,13 @@ inline struct Unknown UAchievementQueryCallbackProxy::CacheAchievements(struct U
 }
 
 // Function OnlineSubsystemUtils.AchievementQueryCallbackProxy.CacheAchievementDescriptions
-inline struct Unknown UAchievementQueryCallbackProxy::CacheAchievementDescriptions(struct Unknown WorldContextObject, struct Unknown PlayerController) {
+inline struct UAchievementQueryCallbackProxy UAchievementQueryCallbackProxy::CacheAchievementDescriptions(struct Object WorldContextObject, struct APlayerController PlayerController) {
 	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.AchievementQueryCallbackProxy.CacheAchievementDescriptions");
 
 	struct CacheAchievementDescriptions_Params {
-		struct Unknown WorldContextObject;
-		struct Unknown PlayerController;
-		struct Unknown ReturnValue;
+		struct Object WorldContextObject;
+		struct APlayerController PlayerController;
+		struct UAchievementQueryCallbackProxy ReturnValue;
 
 	}; CacheAchievementDescriptions_Params Params;
 
@@ -648,16 +648,16 @@ inline struct Unknown UAchievementQueryCallbackProxy::CacheAchievementDescriptio
 }
 
 // Function OnlineSubsystemUtils.AchievementWriteCallbackProxy.WriteAchievementProgress
-inline struct Unknown UAchievementWriteCallbackProxy::WriteAchievementProgress(struct Unknown WorldContextObject, struct Unknown PlayerController, struct FName AchievementName, float progress, int32_t UserTag) {
+inline struct UAchievementWriteCallbackProxy UAchievementWriteCallbackProxy::WriteAchievementProgress(struct Object WorldContextObject, struct APlayerController PlayerController, struct FName AchievementName, float progress, int32_t UserTag) {
 	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.AchievementWriteCallbackProxy.WriteAchievementProgress");
 
 	struct WriteAchievementProgress_Params {
-		struct Unknown WorldContextObject;
-		struct Unknown PlayerController;
+		struct Object WorldContextObject;
+		struct APlayerController PlayerController;
 		struct FName AchievementName;
 		float progress;
 		int32_t UserTag;
-		struct Unknown ReturnValue;
+		struct UAchievementWriteCallbackProxy ReturnValue;
 
 	}; WriteAchievementProgress_Params Params;
 
@@ -675,13 +675,13 @@ inline struct Unknown UAchievementWriteCallbackProxy::WriteAchievementProgress(s
 }
 
 // Function OnlineSubsystemUtils.ConnectionCallbackProxy.ConnectToService
-inline struct Unknown UConnectionCallbackProxy::ConnectToService(struct Unknown WorldContextObject, struct Unknown PlayerController) {
+inline struct UConnectionCallbackProxy UConnectionCallbackProxy::ConnectToService(struct Object WorldContextObject, struct APlayerController PlayerController) {
 	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.ConnectionCallbackProxy.ConnectToService");
 
 	struct ConnectToService_Params {
-		struct Unknown WorldContextObject;
-		struct Unknown PlayerController;
-		struct Unknown ReturnValue;
+		struct Object WorldContextObject;
+		struct APlayerController PlayerController;
+		struct UConnectionCallbackProxy ReturnValue;
 
 	}; ConnectToService_Params Params;
 
@@ -696,15 +696,15 @@ inline struct Unknown UConnectionCallbackProxy::ConnectToService(struct Unknown 
 }
 
 // Function OnlineSubsystemUtils.CreateSessionCallbackProxy.CreateSession
-inline struct Unknown UCreateSessionCallbackProxy::CreateSession(struct Unknown WorldContextObject, struct Unknown PlayerController, int32_t PublicConnections, char bUseLAN) {
+inline struct UCreateSessionCallbackProxy UCreateSessionCallbackProxy::CreateSession(struct Object WorldContextObject, struct APlayerController PlayerController, int32_t PublicConnections, char bUseLAN) {
 	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.CreateSessionCallbackProxy.CreateSession");
 
 	struct CreateSession_Params {
-		struct Unknown WorldContextObject;
-		struct Unknown PlayerController;
+		struct Object WorldContextObject;
+		struct APlayerController PlayerController;
 		int32_t PublicConnections;
 		char bUseLAN;
-		struct Unknown ReturnValue;
+		struct UCreateSessionCallbackProxy ReturnValue;
 
 	}; CreateSession_Params Params;
 
@@ -721,13 +721,13 @@ inline struct Unknown UCreateSessionCallbackProxy::CreateSession(struct Unknown 
 }
 
 // Function OnlineSubsystemUtils.DestroySessionCallbackProxy.DestroySession
-inline struct Unknown UDestroySessionCallbackProxy::DestroySession(struct Unknown WorldContextObject, struct Unknown PlayerController) {
+inline struct UDestroySessionCallbackProxy UDestroySessionCallbackProxy::DestroySession(struct Object WorldContextObject, struct APlayerController PlayerController) {
 	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.DestroySessionCallbackProxy.DestroySession");
 
 	struct DestroySession_Params {
-		struct Unknown WorldContextObject;
-		struct Unknown PlayerController;
-		struct Unknown ReturnValue;
+		struct Object WorldContextObject;
+		struct APlayerController PlayerController;
+		struct UDestroySessionCallbackProxy ReturnValue;
 
 	}; DestroySession_Params Params;
 
@@ -742,17 +742,17 @@ inline struct Unknown UDestroySessionCallbackProxy::DestroySession(struct Unknow
 }
 
 // Function OnlineSubsystemUtils.EndMatchCallbackProxy.EndMatch
-inline struct Unknown UEndMatchCallbackProxy::EndMatch(struct Unknown WorldContextObject, struct Unknown PlayerController, struct TScriptInterface<IUnknown> MatchActor, struct FString MatchID, char LocalPlayerOutcome, char OtherPlayersOutcome) {
+inline struct UEndMatchCallbackProxy UEndMatchCallbackProxy::EndMatch(struct Object WorldContextObject, struct APlayerController PlayerController, struct TScriptInterface<ITurnBasedMatchInterface> MatchActor, struct FString MatchID, char LocalPlayerOutcome, char OtherPlayersOutcome) {
 	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.EndMatchCallbackProxy.EndMatch");
 
 	struct EndMatch_Params {
-		struct Unknown WorldContextObject;
-		struct Unknown PlayerController;
-		struct TScriptInterface<IUnknown> MatchActor;
+		struct Object WorldContextObject;
+		struct APlayerController PlayerController;
+		struct TScriptInterface<ITurnBasedMatchInterface> MatchActor;
 		struct FString MatchID;
 		char LocalPlayerOutcome;
 		char OtherPlayersOutcome;
-		struct Unknown ReturnValue;
+		struct UEndMatchCallbackProxy ReturnValue;
 
 	}; EndMatch_Params Params;
 
@@ -771,15 +771,15 @@ inline struct Unknown UEndMatchCallbackProxy::EndMatch(struct Unknown WorldConte
 }
 
 // Function OnlineSubsystemUtils.EndTurnCallbackProxy.EndTurn
-inline struct Unknown UEndTurnCallbackProxy::EndTurn(struct Unknown WorldContextObject, struct Unknown PlayerController, struct FString MatchID, struct TScriptInterface<IUnknown> TurnBasedMatchInterface) {
+inline struct UEndTurnCallbackProxy UEndTurnCallbackProxy::EndTurn(struct Object WorldContextObject, struct APlayerController PlayerController, struct FString MatchID, struct TScriptInterface<ITurnBasedMatchInterface> TurnBasedMatchInterface) {
 	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.EndTurnCallbackProxy.EndTurn");
 
 	struct EndTurn_Params {
-		struct Unknown WorldContextObject;
-		struct Unknown PlayerController;
+		struct Object WorldContextObject;
+		struct APlayerController PlayerController;
 		struct FString MatchID;
-		struct TScriptInterface<IUnknown> TurnBasedMatchInterface;
-		struct Unknown ReturnValue;
+		struct TScriptInterface<ITurnBasedMatchInterface> TurnBasedMatchInterface;
+		struct UEndTurnCallbackProxy ReturnValue;
 
 	}; EndTurn_Params Params;
 
@@ -796,11 +796,11 @@ inline struct Unknown UEndTurnCallbackProxy::EndTurn(struct Unknown WorldContext
 }
 
 // Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetServerName
-inline struct FString UFindSessionsCallbackProxy::GetServerName(struct Unknown& Result) {
+inline struct FString UFindSessionsCallbackProxy::GetServerName(struct FBlueprintSessionResult& Result) {
 	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetServerName");
 
 	struct GetServerName_Params {
-		struct Unknown& Result;
+		struct FBlueprintSessionResult& Result;
 		struct FString ReturnValue;
 
 	}; GetServerName_Params Params;
@@ -817,11 +817,11 @@ inline struct FString UFindSessionsCallbackProxy::GetServerName(struct Unknown& 
 }
 
 // Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetPingInMs
-inline int32_t UFindSessionsCallbackProxy::GetPingInMs(struct Unknown& Result) {
+inline int32_t UFindSessionsCallbackProxy::GetPingInMs(struct FBlueprintSessionResult& Result) {
 	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetPingInMs");
 
 	struct GetPingInMs_Params {
-		struct Unknown& Result;
+		struct FBlueprintSessionResult& Result;
 		int32_t ReturnValue;
 
 	}; GetPingInMs_Params Params;
@@ -838,11 +838,11 @@ inline int32_t UFindSessionsCallbackProxy::GetPingInMs(struct Unknown& Result) {
 }
 
 // Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetMaxPlayers
-inline int32_t UFindSessionsCallbackProxy::GetMaxPlayers(struct Unknown& Result) {
+inline int32_t UFindSessionsCallbackProxy::GetMaxPlayers(struct FBlueprintSessionResult& Result) {
 	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetMaxPlayers");
 
 	struct GetMaxPlayers_Params {
-		struct Unknown& Result;
+		struct FBlueprintSessionResult& Result;
 		int32_t ReturnValue;
 
 	}; GetMaxPlayers_Params Params;
@@ -859,11 +859,11 @@ inline int32_t UFindSessionsCallbackProxy::GetMaxPlayers(struct Unknown& Result)
 }
 
 // Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetCurrentPlayers
-inline int32_t UFindSessionsCallbackProxy::GetCurrentPlayers(struct Unknown& Result) {
+inline int32_t UFindSessionsCallbackProxy::GetCurrentPlayers(struct FBlueprintSessionResult& Result) {
 	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetCurrentPlayers");
 
 	struct GetCurrentPlayers_Params {
-		struct Unknown& Result;
+		struct FBlueprintSessionResult& Result;
 		int32_t ReturnValue;
 
 	}; GetCurrentPlayers_Params Params;
@@ -880,15 +880,15 @@ inline int32_t UFindSessionsCallbackProxy::GetCurrentPlayers(struct Unknown& Res
 }
 
 // Function OnlineSubsystemUtils.FindSessionsCallbackProxy.FindSessions
-inline struct Unknown UFindSessionsCallbackProxy::FindSessions(struct Unknown WorldContextObject, struct Unknown PlayerController, int32_t MaxResults, char bUseLAN) {
+inline struct UFindSessionsCallbackProxy UFindSessionsCallbackProxy::FindSessions(struct Object WorldContextObject, struct APlayerController PlayerController, int32_t MaxResults, char bUseLAN) {
 	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.FindSessionsCallbackProxy.FindSessions");
 
 	struct FindSessions_Params {
-		struct Unknown WorldContextObject;
-		struct Unknown PlayerController;
+		struct Object WorldContextObject;
+		struct APlayerController PlayerController;
 		int32_t MaxResults;
 		char bUseLAN;
-		struct Unknown ReturnValue;
+		struct UFindSessionsCallbackProxy ReturnValue;
 
 	}; FindSessions_Params Params;
 
@@ -905,18 +905,18 @@ inline struct Unknown UFindSessionsCallbackProxy::FindSessions(struct Unknown Wo
 }
 
 // Function OnlineSubsystemUtils.FindTurnBasedMatchCallbackProxy.FindTurnBasedMatch
-inline struct Unknown UFindTurnBasedMatchCallbackProxy::FindTurnBasedMatch(struct Unknown WorldContextObject, struct Unknown PlayerController, struct TScriptInterface<IUnknown> MatchActor, int32_t MinPlayers, int32_t MaxPlayers, int32_t PlayerGroup, char ShowExistingMatches) {
+inline struct UFindTurnBasedMatchCallbackProxy UFindTurnBasedMatchCallbackProxy::FindTurnBasedMatch(struct Object WorldContextObject, struct APlayerController PlayerController, struct TScriptInterface<ITurnBasedMatchInterface> MatchActor, int32_t MinPlayers, int32_t MaxPlayers, int32_t PlayerGroup, char ShowExistingMatches) {
 	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.FindTurnBasedMatchCallbackProxy.FindTurnBasedMatch");
 
 	struct FindTurnBasedMatch_Params {
-		struct Unknown WorldContextObject;
-		struct Unknown PlayerController;
-		struct TScriptInterface<IUnknown> MatchActor;
+		struct Object WorldContextObject;
+		struct APlayerController PlayerController;
+		struct TScriptInterface<ITurnBasedMatchInterface> MatchActor;
 		int32_t MinPlayers;
 		int32_t MaxPlayers;
 		int32_t PlayerGroup;
 		char ShowExistingMatches;
-		struct Unknown ReturnValue;
+		struct UFindTurnBasedMatchCallbackProxy ReturnValue;
 
 	}; FindTurnBasedMatch_Params Params;
 
@@ -936,13 +936,13 @@ inline struct Unknown UFindTurnBasedMatchCallbackProxy::FindTurnBasedMatch(struc
 }
 
 // Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy.CreateProxyObjectForInAppPurchase
-inline struct Unknown UInAppPurchaseCallbackProxy::CreateProxyObjectForInAppPurchase(struct Unknown PlayerController, struct Unknown& ProductRequest) {
+inline struct UInAppPurchaseCallbackProxy UInAppPurchaseCallbackProxy::CreateProxyObjectForInAppPurchase(struct APlayerController PlayerController, struct FInAppPurchaseProductRequest& ProductRequest) {
 	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy.CreateProxyObjectForInAppPurchase");
 
 	struct CreateProxyObjectForInAppPurchase_Params {
-		struct Unknown PlayerController;
-		struct Unknown& ProductRequest;
-		struct Unknown ReturnValue;
+		struct APlayerController PlayerController;
+		struct FInAppPurchaseProductRequest& ProductRequest;
+		struct UInAppPurchaseCallbackProxy ReturnValue;
 
 	}; CreateProxyObjectForInAppPurchase_Params Params;
 
@@ -959,12 +959,12 @@ inline struct Unknown UInAppPurchaseCallbackProxy::CreateProxyObjectForInAppPurc
 }
 
 // Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy2.CreateProxyObjectForInAppPurchaseUnprocessedPurchases
-inline struct Unknown UInAppPurchaseCallbackProxy2::CreateProxyObjectForInAppPurchaseUnprocessedPurchases(struct Unknown PlayerController) {
+inline struct UInAppPurchaseCallbackProxy2 UInAppPurchaseCallbackProxy2::CreateProxyObjectForInAppPurchaseUnprocessedPurchases(struct APlayerController PlayerController) {
 	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy2.CreateProxyObjectForInAppPurchaseUnprocessedPurchases");
 
 	struct CreateProxyObjectForInAppPurchaseUnprocessedPurchases_Params {
-		struct Unknown PlayerController;
-		struct Unknown ReturnValue;
+		struct APlayerController PlayerController;
+		struct UInAppPurchaseCallbackProxy2 ReturnValue;
 
 	}; CreateProxyObjectForInAppPurchaseUnprocessedPurchases_Params Params;
 
@@ -978,12 +978,12 @@ inline struct Unknown UInAppPurchaseCallbackProxy2::CreateProxyObjectForInAppPur
 }
 
 // Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy2.CreateProxyObjectForInAppPurchaseQueryOwned
-inline struct Unknown UInAppPurchaseCallbackProxy2::CreateProxyObjectForInAppPurchaseQueryOwned(struct Unknown PlayerController) {
+inline struct UInAppPurchaseCallbackProxy2 UInAppPurchaseCallbackProxy2::CreateProxyObjectForInAppPurchaseQueryOwned(struct APlayerController PlayerController) {
 	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy2.CreateProxyObjectForInAppPurchaseQueryOwned");
 
 	struct CreateProxyObjectForInAppPurchaseQueryOwned_Params {
-		struct Unknown PlayerController;
-		struct Unknown ReturnValue;
+		struct APlayerController PlayerController;
+		struct UInAppPurchaseCallbackProxy2 ReturnValue;
 
 	}; CreateProxyObjectForInAppPurchaseQueryOwned_Params Params;
 
@@ -997,13 +997,13 @@ inline struct Unknown UInAppPurchaseCallbackProxy2::CreateProxyObjectForInAppPur
 }
 
 // Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy2.CreateProxyObjectForInAppPurchase
-inline struct Unknown UInAppPurchaseCallbackProxy2::CreateProxyObjectForInAppPurchase(struct Unknown PlayerController, struct Unknown& ProductRequest) {
+inline struct UInAppPurchaseCallbackProxy2 UInAppPurchaseCallbackProxy2::CreateProxyObjectForInAppPurchase(struct APlayerController PlayerController, struct FInAppPurchaseProductRequest2& ProductRequest) {
 	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy2.CreateProxyObjectForInAppPurchase");
 
 	struct CreateProxyObjectForInAppPurchase_Params {
-		struct Unknown PlayerController;
-		struct Unknown& ProductRequest;
-		struct Unknown ReturnValue;
+		struct APlayerController PlayerController;
+		struct FInAppPurchaseProductRequest2& ProductRequest;
+		struct UInAppPurchaseCallbackProxy2 ReturnValue;
 
 	}; CreateProxyObjectForInAppPurchase_Params Params;
 
@@ -1020,13 +1020,13 @@ inline struct Unknown UInAppPurchaseCallbackProxy2::CreateProxyObjectForInAppPur
 }
 
 // Function OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy.CreateProxyObjectForInAppPurchaseQuery
-inline struct Unknown UInAppPurchaseQueryCallbackProxy::CreateProxyObjectForInAppPurchaseQuery(struct Unknown PlayerController, struct TArray<Unknown>& ProductIdentifiers) {
+inline struct UInAppPurchaseQueryCallbackProxy UInAppPurchaseQueryCallbackProxy::CreateProxyObjectForInAppPurchaseQuery(struct APlayerController PlayerController, struct TArray<struct FString>& ProductIdentifiers) {
 	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy.CreateProxyObjectForInAppPurchaseQuery");
 
 	struct CreateProxyObjectForInAppPurchaseQuery_Params {
-		struct Unknown PlayerController;
-		struct TArray<Unknown>& ProductIdentifiers;
-		struct Unknown ReturnValue;
+		struct APlayerController PlayerController;
+		struct TArray<struct FString>& ProductIdentifiers;
+		struct UInAppPurchaseQueryCallbackProxy ReturnValue;
 
 	}; CreateProxyObjectForInAppPurchaseQuery_Params Params;
 
@@ -1043,13 +1043,13 @@ inline struct Unknown UInAppPurchaseQueryCallbackProxy::CreateProxyObjectForInAp
 }
 
 // Function OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy2.CreateProxyObjectForInAppPurchaseQuery
-inline struct Unknown UInAppPurchaseQueryCallbackProxy2::CreateProxyObjectForInAppPurchaseQuery(struct Unknown PlayerController, struct TArray<Unknown>& ProductIdentifiers) {
+inline struct UInAppPurchaseQueryCallbackProxy2 UInAppPurchaseQueryCallbackProxy2::CreateProxyObjectForInAppPurchaseQuery(struct APlayerController PlayerController, struct TArray<struct FString>& ProductIdentifiers) {
 	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy2.CreateProxyObjectForInAppPurchaseQuery");
 
 	struct CreateProxyObjectForInAppPurchaseQuery_Params {
-		struct Unknown PlayerController;
-		struct TArray<Unknown>& ProductIdentifiers;
-		struct Unknown ReturnValue;
+		struct APlayerController PlayerController;
+		struct TArray<struct FString>& ProductIdentifiers;
+		struct UInAppPurchaseQueryCallbackProxy2 ReturnValue;
 
 	}; CreateProxyObjectForInAppPurchaseQuery_Params Params;
 
@@ -1066,13 +1066,13 @@ inline struct Unknown UInAppPurchaseQueryCallbackProxy2::CreateProxyObjectForInA
 }
 
 // Function OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy.CreateProxyObjectForInAppPurchaseRestore
-inline struct Unknown UInAppPurchaseRestoreCallbackProxy::CreateProxyObjectForInAppPurchaseRestore(struct TArray<Unknown>& ConsumableProductFlags, struct Unknown PlayerController) {
+inline struct UInAppPurchaseRestoreCallbackProxy UInAppPurchaseRestoreCallbackProxy::CreateProxyObjectForInAppPurchaseRestore(struct TArray<struct FInAppPurchaseProductRequest>& ConsumableProductFlags, struct APlayerController PlayerController) {
 	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy.CreateProxyObjectForInAppPurchaseRestore");
 
 	struct CreateProxyObjectForInAppPurchaseRestore_Params {
-		struct TArray<Unknown>& ConsumableProductFlags;
-		struct Unknown PlayerController;
-		struct Unknown ReturnValue;
+		struct TArray<struct FInAppPurchaseProductRequest>& ConsumableProductFlags;
+		struct APlayerController PlayerController;
+		struct UInAppPurchaseRestoreCallbackProxy ReturnValue;
 
 	}; CreateProxyObjectForInAppPurchaseRestore_Params Params;
 
@@ -1089,13 +1089,13 @@ inline struct Unknown UInAppPurchaseRestoreCallbackProxy::CreateProxyObjectForIn
 }
 
 // Function OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy2.CreateProxyObjectForInAppPurchaseRestore
-inline struct Unknown UInAppPurchaseRestoreCallbackProxy2::CreateProxyObjectForInAppPurchaseRestore(struct TArray<Unknown>& ConsumableProductFlags, struct Unknown PlayerController) {
+inline struct UInAppPurchaseRestoreCallbackProxy2 UInAppPurchaseRestoreCallbackProxy2::CreateProxyObjectForInAppPurchaseRestore(struct TArray<struct FInAppPurchaseProductRequest2>& ConsumableProductFlags, struct APlayerController PlayerController) {
 	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy2.CreateProxyObjectForInAppPurchaseRestore");
 
 	struct CreateProxyObjectForInAppPurchaseRestore_Params {
-		struct TArray<Unknown>& ConsumableProductFlags;
-		struct Unknown PlayerController;
-		struct Unknown ReturnValue;
+		struct TArray<struct FInAppPurchaseProductRequest2>& ConsumableProductFlags;
+		struct APlayerController PlayerController;
+		struct UInAppPurchaseRestoreCallbackProxy2 ReturnValue;
 
 	}; CreateProxyObjectForInAppPurchaseRestore_Params Params;
 
@@ -1112,14 +1112,14 @@ inline struct Unknown UInAppPurchaseRestoreCallbackProxy2::CreateProxyObjectForI
 }
 
 // Function OnlineSubsystemUtils.JoinSessionCallbackProxy.JoinSession
-inline struct Unknown UJoinSessionCallbackProxy::JoinSession(struct Unknown WorldContextObject, struct Unknown PlayerController, struct Unknown& SearchResult) {
+inline struct UJoinSessionCallbackProxy UJoinSessionCallbackProxy::JoinSession(struct Object WorldContextObject, struct APlayerController PlayerController, struct FBlueprintSessionResult& SearchResult) {
 	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.JoinSessionCallbackProxy.JoinSession");
 
 	struct JoinSession_Params {
-		struct Unknown WorldContextObject;
-		struct Unknown PlayerController;
-		struct Unknown& SearchResult;
-		struct Unknown ReturnValue;
+		struct Object WorldContextObject;
+		struct APlayerController PlayerController;
+		struct FBlueprintSessionResult& SearchResult;
+		struct UJoinSessionCallbackProxy ReturnValue;
 
 	}; JoinSession_Params Params;
 
@@ -1137,13 +1137,13 @@ inline struct Unknown UJoinSessionCallbackProxy::JoinSession(struct Unknown Worl
 }
 
 // Function OnlineSubsystemUtils.LeaderboardFlushCallbackProxy.CreateProxyObjectForFlush
-inline struct Unknown ULeaderboardFlushCallbackProxy::CreateProxyObjectForFlush(struct Unknown PlayerController, struct FName SessionName) {
+inline struct ULeaderboardFlushCallbackProxy ULeaderboardFlushCallbackProxy::CreateProxyObjectForFlush(struct APlayerController PlayerController, struct FName SessionName) {
 	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.LeaderboardFlushCallbackProxy.CreateProxyObjectForFlush");
 
 	struct CreateProxyObjectForFlush_Params {
-		struct Unknown PlayerController;
+		struct APlayerController PlayerController;
 		struct FName SessionName;
-		struct Unknown ReturnValue;
+		struct ULeaderboardFlushCallbackProxy ReturnValue;
 
 	}; CreateProxyObjectForFlush_Params Params;
 
@@ -1158,13 +1158,13 @@ inline struct Unknown ULeaderboardFlushCallbackProxy::CreateProxyObjectForFlush(
 }
 
 // Function OnlineSubsystemUtils.LeaderboardQueryCallbackProxy.CreateProxyObjectForIntQuery
-inline struct Unknown ULeaderboardQueryCallbackProxy::CreateProxyObjectForIntQuery(struct Unknown PlayerController, struct FName StatName) {
+inline struct ULeaderboardQueryCallbackProxy ULeaderboardQueryCallbackProxy::CreateProxyObjectForIntQuery(struct APlayerController PlayerController, struct FName StatName) {
 	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.LeaderboardQueryCallbackProxy.CreateProxyObjectForIntQuery");
 
 	struct CreateProxyObjectForIntQuery_Params {
-		struct Unknown PlayerController;
+		struct APlayerController PlayerController;
 		struct FName StatName;
-		struct Unknown ReturnValue;
+		struct ULeaderboardQueryCallbackProxy ReturnValue;
 
 	}; CreateProxyObjectForIntQuery_Params Params;
 
@@ -1179,13 +1179,13 @@ inline struct Unknown ULeaderboardQueryCallbackProxy::CreateProxyObjectForIntQue
 }
 
 // Function OnlineSubsystemUtils.LogoutCallbackProxy.Logout
-inline struct Unknown ULogoutCallbackProxy::Logout(struct Unknown WorldContextObject, struct Unknown PlayerController) {
+inline struct ULogoutCallbackProxy ULogoutCallbackProxy::Logout(struct Object WorldContextObject, struct APlayerController PlayerController) {
 	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.LogoutCallbackProxy.Logout");
 
 	struct Logout_Params {
-		struct Unknown WorldContextObject;
-		struct Unknown PlayerController;
-		struct Unknown ReturnValue;
+		struct Object WorldContextObject;
+		struct APlayerController PlayerController;
+		struct ULogoutCallbackProxy ReturnValue;
 
 	}; Logout_Params Params;
 
@@ -1214,12 +1214,12 @@ inline void AOnlineBeaconClient::ClientOnConnected() {
 }
 
 // Function OnlineSubsystemUtils.PartyBeaconClient.ServerUpdateReservationRequest
-inline void APartyBeaconClient::ServerUpdateReservationRequest(struct FString SessionID, struct Unknown ReservationUpdate) {
+inline void APartyBeaconClient::ServerUpdateReservationRequest(struct FString SessionID, struct FPartyReservation ReservationUpdate) {
 	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.PartyBeaconClient.ServerUpdateReservationRequest");
 
 	struct ServerUpdateReservationRequest_Params {
 		struct FString SessionID;
-		struct Unknown ReservationUpdate;
+		struct FPartyReservation ReservationUpdate;
 	}; ServerUpdateReservationRequest_Params Params;
 
 	Params.SessionID = SessionID;
@@ -1231,12 +1231,12 @@ inline void APartyBeaconClient::ServerUpdateReservationRequest(struct FString Se
 }
 
 // Function OnlineSubsystemUtils.PartyBeaconClient.ServerReservationRequest
-inline void APartyBeaconClient::ServerReservationRequest(struct FString SessionID, struct Unknown Reservation) {
+inline void APartyBeaconClient::ServerReservationRequest(struct FString SessionID, struct FPartyReservation Reservation) {
 	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.PartyBeaconClient.ServerReservationRequest");
 
 	struct ServerReservationRequest_Params {
 		struct FString SessionID;
-		struct Unknown Reservation;
+		struct FPartyReservation Reservation;
 	}; ServerReservationRequest_Params Params;
 
 	Params.SessionID = SessionID;
@@ -1248,12 +1248,12 @@ inline void APartyBeaconClient::ServerReservationRequest(struct FString SessionI
 }
 
 // Function OnlineSubsystemUtils.PartyBeaconClient.ServerRemoveMemberFromReservationRequest
-inline void APartyBeaconClient::ServerRemoveMemberFromReservationRequest(struct FString SessionID, struct Unknown ReservationUpdate) {
+inline void APartyBeaconClient::ServerRemoveMemberFromReservationRequest(struct FString SessionID, struct FPartyReservation ReservationUpdate) {
 	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.PartyBeaconClient.ServerRemoveMemberFromReservationRequest");
 
 	struct ServerRemoveMemberFromReservationRequest_Params {
 		struct FString SessionID;
-		struct Unknown ReservationUpdate;
+		struct FPartyReservation ReservationUpdate;
 	}; ServerRemoveMemberFromReservationRequest_Params Params;
 
 	Params.SessionID = SessionID;
@@ -1265,11 +1265,11 @@ inline void APartyBeaconClient::ServerRemoveMemberFromReservationRequest(struct 
 }
 
 // Function OnlineSubsystemUtils.PartyBeaconClient.ServerCancelReservationRequest
-inline void APartyBeaconClient::ServerCancelReservationRequest(struct Unknown PartyLeader) {
+inline void APartyBeaconClient::ServerCancelReservationRequest(struct FUniqueNetIdRepl PartyLeader) {
 	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.PartyBeaconClient.ServerCancelReservationRequest");
 
 	struct ServerCancelReservationRequest_Params {
-		struct Unknown PartyLeader;
+		struct FUniqueNetIdRepl PartyLeader;
 	}; ServerCancelReservationRequest_Params Params;
 
 	Params.PartyLeader = PartyLeader;
@@ -1339,16 +1339,16 @@ inline void APartyBeaconClient::ClientCancelReservationResponse(char Reservation
 }
 
 // Function OnlineSubsystemUtils.QuitMatchCallbackProxy.QuitMatch
-inline struct Unknown UQuitMatchCallbackProxy::QuitMatch(struct Unknown WorldContextObject, struct Unknown PlayerController, struct FString MatchID, char Outcome, int32_t TurnTimeoutInSeconds) {
+inline struct UQuitMatchCallbackProxy UQuitMatchCallbackProxy::QuitMatch(struct Object WorldContextObject, struct APlayerController PlayerController, struct FString MatchID, char Outcome, int32_t TurnTimeoutInSeconds) {
 	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.QuitMatchCallbackProxy.QuitMatch");
 
 	struct QuitMatch_Params {
-		struct Unknown WorldContextObject;
-		struct Unknown PlayerController;
+		struct Object WorldContextObject;
+		struct APlayerController PlayerController;
 		struct FString MatchID;
 		char Outcome;
 		int32_t TurnTimeoutInSeconds;
-		struct Unknown ReturnValue;
+		struct UQuitMatchCallbackProxy ReturnValue;
 
 	}; QuitMatch_Params Params;
 
@@ -1366,13 +1366,13 @@ inline struct Unknown UQuitMatchCallbackProxy::QuitMatch(struct Unknown WorldCon
 }
 
 // Function OnlineSubsystemUtils.ShowLoginUICallbackProxy.ShowExternalLoginUI
-inline struct Unknown UShowLoginUICallbackProxy::ShowExternalLoginUI(struct Unknown WorldContextObject, struct Unknown InPlayerController) {
+inline struct UShowLoginUICallbackProxy UShowLoginUICallbackProxy::ShowExternalLoginUI(struct Object WorldContextObject, struct APlayerController InPlayerController) {
 	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.ShowLoginUICallbackProxy.ShowExternalLoginUI");
 
 	struct ShowExternalLoginUI_Params {
-		struct Unknown WorldContextObject;
-		struct Unknown InPlayerController;
-		struct Unknown ReturnValue;
+		struct Object WorldContextObject;
+		struct APlayerController InPlayerController;
+		struct UShowLoginUICallbackProxy ReturnValue;
 
 	}; ShowExternalLoginUI_Params Params;
 
@@ -1387,12 +1387,12 @@ inline struct Unknown UShowLoginUICallbackProxy::ShowExternalLoginUI(struct Unkn
 }
 
 // Function OnlineSubsystemUtils.SpectatorBeaconClient.ServerReservationRequest
-inline void ASpectatorBeaconClient::ServerReservationRequest(struct FString SessionID, struct Unknown Reservation) {
+inline void ASpectatorBeaconClient::ServerReservationRequest(struct FString SessionID, struct FSpectatorReservation Reservation) {
 	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.SpectatorBeaconClient.ServerReservationRequest");
 
 	struct ServerReservationRequest_Params {
 		struct FString SessionID;
-		struct Unknown Reservation;
+		struct FSpectatorReservation Reservation;
 	}; ServerReservationRequest_Params Params;
 
 	Params.SessionID = SessionID;
@@ -1404,11 +1404,11 @@ inline void ASpectatorBeaconClient::ServerReservationRequest(struct FString Sess
 }
 
 // Function OnlineSubsystemUtils.SpectatorBeaconClient.ServerCancelReservationRequest
-inline void ASpectatorBeaconClient::ServerCancelReservationRequest(struct Unknown Spectator) {
+inline void ASpectatorBeaconClient::ServerCancelReservationRequest(struct FUniqueNetIdRepl Spectator) {
 	static auto fn = UObject::FindObject<UFunction>("Function OnlineSubsystemUtils.SpectatorBeaconClient.ServerCancelReservationRequest");
 
 	struct ServerCancelReservationRequest_Params {
-		struct Unknown Spectator;
+		struct FUniqueNetIdRepl Spectator;
 	}; ServerCancelReservationRequest_Params Params;
 
 	Params.Spectator = Spectator;

@@ -3,13 +3,13 @@ class UAnimSharingStateInstance : public UAnimInstance {
 
 public:
 
-	struct Unknown AnimationToPlay; // 0x270 (8)
+	struct UAnimSequence AnimationToPlay; // 0x270 (8)
 	float PermutationTimeOffset; // 0x278 (4)
 	float PlayRate; // 0x27C (4)
 	char bStateBool : 0; // 0x280 (1)
-	struct Unknown Instance; // 0x288 (8)
+	struct UAnimSharingInstance Instance; // 0x288 (8)
 
-	void GetInstancedActors(struct TArray<Unknown>& Actors); // Function AnimationSharing.AnimSharingStateInstance.GetInstancedActors(Final|Native|Protected|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x16BB790>
+	void GetInstancedActors(struct TArray<struct UActor>& Actors); // Function AnimationSharing.AnimSharingStateInstance.GetInstancedActors(Final|Native|Protected|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x16BB790>
 };
 
 // Class AnimationSharing.AnimSharingTransitionInstance
@@ -17,8 +17,8 @@ class UAnimSharingTransitionInstance : public UAnimInstance {
 
 public:
 
-	struct TWeakObjectPtr<struct Unknown> FromComponent; // 0x270 (8)
-	struct TWeakObjectPtr<struct Unknown> ToComponent; // 0x278 (8)
+	struct TWeakObjectPtr<struct USkeletalMeshComponent> FromComponent; // 0x270 (8)
+	struct TWeakObjectPtr<struct USkeletalMeshComponent> ToComponent; // 0x278 (8)
 	float BlendTime; // 0x280 (4)
 	char bBlendBool : 0; // 0x284 (1)
 };
@@ -28,8 +28,8 @@ class UAnimSharingAdditiveInstance : public UAnimInstance {
 
 public:
 
-	struct TWeakObjectPtr<struct Unknown> baseComponent; // 0x270 (8)
-	struct TWeakObjectPtr<struct Unknown> AdditiveAnimation; // 0x278 (8)
+	struct TWeakObjectPtr<struct USkeletalMeshComponent> baseComponent; // 0x270 (8)
+	struct TWeakObjectPtr<struct UAnimSequence> AdditiveAnimation; // 0x278 (8)
 	float ALPHA; // 0x280 (4)
 	char bStateBool : 0; // 0x284 (1)
 };
@@ -39,11 +39,11 @@ class UAnimSharingInstance : public Object {
 
 public:
 
-	struct TArray<Unknown> RegisteredActors; // 0x28 (16)
-	struct Unknown StateProcessor; // 0xA8 (8)
-	struct TArray<Unknown> UsedAnimationSequences; // 0xE8 (16)
-	struct Unknown StateEnum; // 0x108 (8)
-	struct Unknown SharingActor; // 0x110 (8)
+	struct TArray<struct UActor> RegisteredActors; // 0x28 (16)
+	struct UAnimationSharingStateProcessor StateProcessor; // 0xA8 (8)
+	struct TArray<struct UAnimSequence> UsedAnimationSequences; // 0xE8 (16)
+	struct UEnum StateEnum; // 0x108 (8)
+	struct UActor SharingActor; // 0x110 (8)
 };
 
 // Class AnimationSharing.AnimationSharingManager
@@ -51,12 +51,12 @@ class UAnimationSharingManager : public Object {
 
 public:
 
-	struct TArray<Unknown> Skeletons; // 0x38 (16)
-	struct TArray<Unknown> PerSkeletonData; // 0x78 (16)
+	struct TArray<struct USkeleton> Skeletons; // 0x38 (16)
+	struct TArray<struct UAnimSharingInstance> PerSkeletonData; // 0x78 (16)
 
-	void RegisterActorWithSkeletonBP(struct Unknown InActor, struct Unknown SharingSkeleton); // Function AnimationSharing.AnimationSharingManager.RegisterActorWithSkeletonBP(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16BB9F0>
-	struct Unknown GetAnimationSharingManager(struct Unknown WorldContextObject); // Function AnimationSharing.AnimationSharingManager.GetAnimationSharingManager(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x16BB6E0>
-	char CreateAnimationSharingManager(struct Unknown WorldContextObject, struct Unknown Setup); // Function AnimationSharing.AnimationSharingManager.CreateAnimationSharingManager(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x16BB620>
+	void RegisterActorWithSkeletonBP(struct UActor InActor, struct USkeleton SharingSkeleton); // Function AnimationSharing.AnimationSharingManager.RegisterActorWithSkeletonBP(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16BB9F0>
+	struct UAnimationSharingManager GetAnimationSharingManager(struct Object WorldContextObject); // Function AnimationSharing.AnimationSharingManager.GetAnimationSharingManager(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x16BB6E0>
+	char CreateAnimationSharingManager(struct Object WorldContextObject, struct UAnimationSharingSetup Setup); // Function AnimationSharing.AnimationSharingManager.CreateAnimationSharingManager(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x16BB620>
 	char AnimationSharingEnabled(); // Function AnimationSharing.AnimationSharingManager.AnimationSharingEnabled(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x16BB5F0>
 };
 
@@ -65,8 +65,8 @@ class UAnimationSharingSetup : public Object {
 
 public:
 
-	struct TArray<Unknown> SkeletonSetups; // 0x28 (16)
-	struct Unknown ScalabilitySettings; // 0x38 (16)
+	struct TArray<struct FPerSkeletonAnimationSharingSetup> SkeletonSetups; // 0x28 (16)
+	struct FAnimationSharingScalability ScalabilitySettings; // 0x38 (16)
 };
 
 // Class AnimationSharing.AnimationSharingStateProcessor
@@ -74,59 +74,59 @@ class UAnimationSharingStateProcessor : public Object {
 
 public:
 
-	struct Unknown AnimationStateEnum; // 0x28 (40)
+	struct TSoftObjectPtr<UEnum> AnimationStateEnum; // 0x28 (40)
 
-	void ProcessActorState(int32_t& OutState, struct Unknown InActor, char CurrentState, char OnDemandState, char& bShouldProcess); // Function AnimationSharing.AnimationSharingStateProcessor.ProcessActorState(Native|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x16BB840>
-	struct Unknown GetAnimationStateEnum(); // Function AnimationSharing.AnimationSharingStateProcessor.GetAnimationStateEnum(Native|Event|Public|BlueprintEvent) // <Game_BE.exe+0x16BB760>
+	void ProcessActorState(int32_t& OutState, struct UActor InActor, char CurrentState, char OnDemandState, char& bShouldProcess); // Function AnimationSharing.AnimationSharingStateProcessor.ProcessActorState(Native|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x16BB840>
+	struct UEnum GetAnimationStateEnum(); // Function AnimationSharing.AnimationSharingStateProcessor.GetAnimationStateEnum(Native|Event|Public|BlueprintEvent) // <Game_BE.exe+0x16BB760>
 };
 
 // ScriptStruct AnimationSharing.AnimationSharingScalability
 struct FAnimationSharingScalability {
-	struct Unknown UseBlendTransitions; // 0x0 (1)
-	struct Unknown BlendSignificanceValue; // 0x4 (4)
-	struct Unknown MaximumNumberConcurrentBlends; // 0x8 (4)
-	struct Unknown TickSignificanceValue; // 0xC (4)
+	struct FPerPlatformBool UseBlendTransitions; // 0x0 (1)
+	struct FPerPlatformFloat BlendSignificanceValue; // 0x4 (4)
+	struct FPerPlatformInt MaximumNumberConcurrentBlends; // 0x8 (4)
+	struct FPerPlatformFloat TickSignificanceValue; // 0xC (4)
 };
 
 // ScriptStruct AnimationSharing.PerSkeletonAnimationSharingSetup
 struct FPerSkeletonAnimationSharingSetup {
-	struct Unknown Skeleton; // 0x10 (8)
-	struct Unknown SkeletalMesh; // 0x20 (8)
-	struct Unknown* BlendAnimBlueprint; // 0x8 (8)
-	struct Unknown* AdditiveAnimBlueprint; // 0x0 (8)
-	struct Unknown* StateProcessorClass; // 0x18 (8)
-	struct TArray<Unknown> AnimationStates; // 0x28 (16)
+	struct USkeleton Skeleton; // 0x10 (8)
+	struct USkeletalMesh SkeletalMesh; // 0x20 (8)
+	struct UClass* BlendAnimBlueprint; // 0x8 (8)
+	struct UClass* AdditiveAnimBlueprint; // 0x0 (8)
+	struct UClass* StateProcessorClass; // 0x18 (8)
+	struct TArray<struct FAnimationStateEntry> AnimationStates; // 0x28 (16)
 };
 
 // ScriptStruct AnimationSharing.AnimationStateEntry
 struct FAnimationStateEntry {
 	char State; // 0x0 (1)
-	struct TArray<Unknown> AnimationSetups; // 0x8 (16)
+	struct TArray<struct FAnimationSetup> AnimationSetups; // 0x8 (16)
 	char bOnDemand : 0; // 0x18 (1)
 	char bAdditive : 0; // 0x19 (1)
 	float BlendTime; // 0x1C (4)
 	char bReturnToPreviousState : 0; // 0x20 (1)
 	char bSetNextState : 0; // 0x21 (1)
 	char NextState; // 0x22 (1)
-	struct Unknown MaximumNumberOfConcurrentInstances; // 0x24 (4)
+	struct FPerPlatformInt MaximumNumberOfConcurrentInstances; // 0x24 (4)
 	float WiggleTimePercentage; // 0x28 (4)
 	char bRequiresCurves : 0; // 0x2C (1)
 };
 
 // ScriptStruct AnimationSharing.AnimationSetup
 struct FAnimationSetup {
-	struct Unknown AnimSequence; // 0x0 (8)
-	struct Unknown* AnimBlueprint; // 0x8 (8)
-	struct Unknown NumRandomizedInstances; // 0x10 (4)
-	struct Unknown Enabled; // 0x14 (1)
+	struct UAnimSequence AnimSequence; // 0x0 (8)
+	struct UClass* AnimBlueprint; // 0x8 (8)
+	struct FPerPlatformInt NumRandomizedInstances; // 0x10 (4)
+	struct FPerPlatformBool Enabled; // 0x14 (1)
 };
 
 // Function AnimationSharing.AnimSharingStateInstance.GetInstancedActors
-inline void UAnimSharingStateInstance::GetInstancedActors(struct TArray<Unknown>& Actors) {
+inline void UAnimSharingStateInstance::GetInstancedActors(struct TArray<struct UActor>& Actors) {
 	static auto fn = UObject::FindObject<UFunction>("Function AnimationSharing.AnimSharingStateInstance.GetInstancedActors");
 
 	struct GetInstancedActors_Params {
-		struct TArray<Unknown>& Actors;
+		struct TArray<struct UActor>& Actors;
 	}; GetInstancedActors_Params Params;
 
 
@@ -139,12 +139,12 @@ inline void UAnimSharingStateInstance::GetInstancedActors(struct TArray<Unknown>
 }
 
 // Function AnimationSharing.AnimationSharingManager.RegisterActorWithSkeletonBP
-inline void UAnimationSharingManager::RegisterActorWithSkeletonBP(struct Unknown InActor, struct Unknown SharingSkeleton) {
+inline void UAnimationSharingManager::RegisterActorWithSkeletonBP(struct UActor InActor, struct USkeleton SharingSkeleton) {
 	static auto fn = UObject::FindObject<UFunction>("Function AnimationSharing.AnimationSharingManager.RegisterActorWithSkeletonBP");
 
 	struct RegisterActorWithSkeletonBP_Params {
-		struct Unknown InActor;
-		struct Unknown SharingSkeleton;
+		struct UActor InActor;
+		struct USkeleton SharingSkeleton;
 	}; RegisterActorWithSkeletonBP_Params Params;
 
 	Params.InActor = InActor;
@@ -156,12 +156,12 @@ inline void UAnimationSharingManager::RegisterActorWithSkeletonBP(struct Unknown
 }
 
 // Function AnimationSharing.AnimationSharingManager.GetAnimationSharingManager
-inline struct Unknown UAnimationSharingManager::GetAnimationSharingManager(struct Unknown WorldContextObject) {
+inline struct UAnimationSharingManager UAnimationSharingManager::GetAnimationSharingManager(struct Object WorldContextObject) {
 	static auto fn = UObject::FindObject<UFunction>("Function AnimationSharing.AnimationSharingManager.GetAnimationSharingManager");
 
 	struct GetAnimationSharingManager_Params {
-		struct Unknown WorldContextObject;
-		struct Unknown ReturnValue;
+		struct Object WorldContextObject;
+		struct UAnimationSharingManager ReturnValue;
 
 	}; GetAnimationSharingManager_Params Params;
 
@@ -175,12 +175,12 @@ inline struct Unknown UAnimationSharingManager::GetAnimationSharingManager(struc
 }
 
 // Function AnimationSharing.AnimationSharingManager.CreateAnimationSharingManager
-inline char UAnimationSharingManager::CreateAnimationSharingManager(struct Unknown WorldContextObject, struct Unknown Setup) {
+inline char UAnimationSharingManager::CreateAnimationSharingManager(struct Object WorldContextObject, struct UAnimationSharingSetup Setup) {
 	static auto fn = UObject::FindObject<UFunction>("Function AnimationSharing.AnimationSharingManager.CreateAnimationSharingManager");
 
 	struct CreateAnimationSharingManager_Params {
-		struct Unknown WorldContextObject;
-		struct Unknown Setup;
+		struct Object WorldContextObject;
+		struct UAnimationSharingSetup Setup;
 		char ReturnValue;
 
 	}; CreateAnimationSharingManager_Params Params;
@@ -214,12 +214,12 @@ inline char UAnimationSharingManager::AnimationSharingEnabled() {
 }
 
 // Function AnimationSharing.AnimationSharingStateProcessor.ProcessActorState
-inline void UAnimationSharingStateProcessor::ProcessActorState(int32_t& OutState, struct Unknown InActor, char CurrentState, char OnDemandState, char& bShouldProcess) {
+inline void UAnimationSharingStateProcessor::ProcessActorState(int32_t& OutState, struct UActor InActor, char CurrentState, char OnDemandState, char& bShouldProcess) {
 	static auto fn = UObject::FindObject<UFunction>("Function AnimationSharing.AnimationSharingStateProcessor.ProcessActorState");
 
 	struct ProcessActorState_Params {
 		int32_t& OutState;
-		struct Unknown InActor;
+		struct UActor InActor;
 		char CurrentState;
 		char OnDemandState;
 		char& bShouldProcess;
@@ -239,12 +239,12 @@ inline void UAnimationSharingStateProcessor::ProcessActorState(int32_t& OutState
 }
 
 // Function AnimationSharing.AnimationSharingStateProcessor.GetAnimationStateEnum
-inline struct Unknown UAnimationSharingStateProcessor::GetAnimationStateEnum() {
+inline struct UEnum UAnimationSharingStateProcessor::GetAnimationStateEnum() {
 	static auto fn = UObject::FindObject<UFunction>("Function AnimationSharing.AnimationSharingStateProcessor.GetAnimationStateEnum");
 
 	struct GetAnimationStateEnum_Params {
 		
-		struct Unknown ReturnValue;
+		struct UEnum ReturnValue;
 
 	}; GetAnimationStateEnum_Params Params;
 

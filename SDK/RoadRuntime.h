@@ -4,13 +4,13 @@ class ACrossActor : public AStaticMeshActor {
 public:
 
 	struct FString UniqueKey; // 0x328 (16)
-	struct TArray<Unknown> SideActors; // 0x338 (16)
-	struct TArray<Unknown> SideMeshes; // 0x348 (16)
+	struct TArray<struct FCrossActorManager> SideActors; // 0x338 (16)
+	struct TArray<struct FCrossMeshManager> SideMeshes; // 0x348 (16)
 
-	void UpdateSideMesh(struct Unknown InPrototype, struct Unknown MeshRelativeLocation, struct Unknown MeshRelativeRotation, struct Unknown MeshRelativeScale, int32_t SocketIndex, char IsEnable, char IsNormalized); // Function RoadRuntime.CrossActor.UpdateSideMesh(Final|Native|Public|HasDefaults) // <Game_BE.exe+0x10B1550>
-	void UpdateSideActor(struct Unknown* InPrototype, struct Unknown ActorRelativeLocation, struct Unknown ActorRelativeRotation, struct Unknown ActorRelativeScale, int32_t SocketIndex, char IsEnable, char IsNormalized); // Function RoadRuntime.CrossActor.UpdateSideActor(Final|Native|Public|HasDefaults) // <Game_BE.exe+0x10B1070>
-	void PushSideMesh(struct Unknown InPrototype, struct Unknown MeshRelativeLocation, struct Unknown MeshRelativeRotation, struct Unknown MeshRelativeScale, int32_t SocketIndex, char IsEnable, char IsNormalized); // Function RoadRuntime.CrossActor.PushSideMesh(Final|Native|Public|HasDefaults) // <Game_BE.exe+0x10B0A50>
-	void PushSideActor(struct Unknown* InPrototype, struct Unknown ActorRelativeLocation, struct Unknown ActorRelativeRotation, struct Unknown ActorRelativeScale, int32_t SocketIndex, char IsEnable, char IsNormalized); // Function RoadRuntime.CrossActor.PushSideActor(Final|Native|Public|HasDefaults) // <Game_BE.exe+0x10B0570>
+	void UpdateSideMesh(struct UStaticMesh InPrototype, struct FVector MeshRelativeLocation, struct FRotator MeshRelativeRotation, struct FVector MeshRelativeScale, int32_t SocketIndex, char IsEnable, char IsNormalized); // Function RoadRuntime.CrossActor.UpdateSideMesh(Final|Native|Public|HasDefaults) // <Game_BE.exe+0x10B1550>
+	void UpdateSideActor(struct UClass* InPrototype, struct FVector ActorRelativeLocation, struct FRotator ActorRelativeRotation, struct FVector ActorRelativeScale, int32_t SocketIndex, char IsEnable, char IsNormalized); // Function RoadRuntime.CrossActor.UpdateSideActor(Final|Native|Public|HasDefaults) // <Game_BE.exe+0x10B1070>
+	void PushSideMesh(struct UStaticMesh InPrototype, struct FVector MeshRelativeLocation, struct FRotator MeshRelativeRotation, struct FVector MeshRelativeScale, int32_t SocketIndex, char IsEnable, char IsNormalized); // Function RoadRuntime.CrossActor.PushSideMesh(Final|Native|Public|HasDefaults) // <Game_BE.exe+0x10B0A50>
+	void PushSideActor(struct UClass* InPrototype, struct FVector ActorRelativeLocation, struct FRotator ActorRelativeRotation, struct FVector ActorRelativeScale, int32_t SocketIndex, char IsEnable, char IsNormalized); // Function RoadRuntime.CrossActor.PushSideActor(Final|Native|Public|HasDefaults) // <Game_BE.exe+0x10B0570>
 	void DestroySideObjects(); // Function RoadRuntime.CrossActor.DestroySideObjects(Final|Native|Public) // <Game_BE.exe+0x10B0290>
 };
 
@@ -20,95 +20,95 @@ class ARoadActor : public UActor {
 public:
 
 	char SplineMeshAxis; // 0x318 (1)
-	struct Unknown LocalOffset; // 0x31C (12)
-	struct Unknown Father; // 0x328 (8)
+	struct FVector LocalOffset; // 0x31C (12)
+	struct ARoadActor Father; // 0x328 (8)
 	struct FString UniqueKey; // 0x330 (16)
-	struct Unknown Spline; // 0x340 (8)
+	struct USplineComponent Spline; // 0x340 (8)
 	int32_t Index; // 0x348 (4)
 	int32_t Segmentation; // 0x34C (4)
 	int32_t StepGeneration; // 0x350 (4)
 	float Size; // 0x354 (4)
-	struct Unknown RoadMesh; // 0x358 (8)
-	struct TArray<Unknown> RoadMeshesComp; // 0x360 (16)
-	struct TArray<Unknown> SideActors; // 0x370 (16)
-	struct TArray<Unknown> SideMeshes; // 0x380 (16)
-	struct TArray<Unknown> SideCurbs; // 0x390 (16)
+	struct UStaticMesh RoadMesh; // 0x358 (8)
+	struct TArray<struct USplineMeshComponent> RoadMeshesComp; // 0x360 (16)
+	struct TArray<struct FSideActorManager> SideActors; // 0x370 (16)
+	struct TArray<struct FSideMeshManager> SideMeshes; // 0x380 (16)
+	struct TArray<struct FCurbsManager> SideCurbs; // 0x390 (16)
 
 	void UpdateSplineMesh(int32_t MeshIndex); // Function RoadRuntime.RoadActor.UpdateSplineMesh(Final|Native|Public) // <Game_BE.exe+0x10B1A30>
-	void UpdateSideMeshes(struct Unknown InPrototype, struct Unknown MeshRelativeLocation, struct Unknown MeshRelativeRotation, struct Unknown MeshRelativeScale, int32_t SocketIndex, int32_t InShift, int32_t InSpacing, char IsEnable, char IsNormalized); // Function RoadRuntime.RoadActor.UpdateSideMeshes(Final|Native|Public|HasDefaults) // <Game_BE.exe+0x10B1780>
-	void UpdateSideActor(struct Unknown* InPrototype, struct Unknown ActorRelativeLocation, struct Unknown ActorRelativeRotation, struct Unknown ActorRelativeScale, int32_t SocketIndex, int32_t InShift, int32_t InSpacing, char IsEnable, char IsNormalized); // Function RoadRuntime.RoadActor.UpdateSideActor(Final|Native|Public|HasDefaults) // <Game_BE.exe+0x10B12A0>
-	void UpdateSegment(int32_t SegmentIndex, struct Unknown SplineComponent, struct Unknown StaticMesh, char InAxis); // Function RoadRuntime.RoadActor.UpdateSegment(Final|Native|Public) // <Game_BE.exe+0x10B0F30>
-	void PushSideMesh(struct Unknown InPrototype, struct Unknown MeshRelativeLocation, struct Unknown MeshRelativeRotation, struct Unknown MeshRelativeScale, int32_t SocketIndex, int32_t InShift, int32_t InSpacing, char IsEnable, char IsNormalized); // Function RoadRuntime.RoadActor.PushSideMesh(Final|Native|Public|HasDefaults) // <Game_BE.exe+0x10B0C80>
-	void PushSideActor(struct Unknown* InPrototype, struct Unknown ActorRelativeLocation, struct Unknown ActorRelativeRotation, struct Unknown ActorRelativeScale, int32_t SocketIndex, int32_t InShift, int32_t InSpacing, char IsEnable, char IsNormalized); // Function RoadRuntime.RoadActor.PushSideActor(Final|Native|Public|HasDefaults) // <Game_BE.exe+0x10B07A0>
-	void PushCurbsMeshes(struct Unknown InPrototype, struct Unknown InStartPrototype, struct Unknown InEndPrototype, struct Unknown MeshRelativeLocation, struct Unknown MeshRelativeScale, int32_t SocketIndex, char IsEnable, char InStartEnable, char InEndEnable); // Function RoadRuntime.RoadActor.PushCurbsMeshes(Final|Native|Public|HasDefaults) // <Game_BE.exe+0x10B02D0>
+	void UpdateSideMeshes(struct UStaticMesh InPrototype, struct FVector MeshRelativeLocation, struct FRotator MeshRelativeRotation, struct FVector MeshRelativeScale, int32_t SocketIndex, int32_t InShift, int32_t InSpacing, char IsEnable, char IsNormalized); // Function RoadRuntime.RoadActor.UpdateSideMeshes(Final|Native|Public|HasDefaults) // <Game_BE.exe+0x10B1780>
+	void UpdateSideActor(struct UClass* InPrototype, struct FVector ActorRelativeLocation, struct FRotator ActorRelativeRotation, struct FVector ActorRelativeScale, int32_t SocketIndex, int32_t InShift, int32_t InSpacing, char IsEnable, char IsNormalized); // Function RoadRuntime.RoadActor.UpdateSideActor(Final|Native|Public|HasDefaults) // <Game_BE.exe+0x10B12A0>
+	void UpdateSegment(int32_t SegmentIndex, struct USplineComponent SplineComponent, struct UStaticMesh StaticMesh, char InAxis); // Function RoadRuntime.RoadActor.UpdateSegment(Final|Native|Public) // <Game_BE.exe+0x10B0F30>
+	void PushSideMesh(struct UStaticMesh InPrototype, struct FVector MeshRelativeLocation, struct FRotator MeshRelativeRotation, struct FVector MeshRelativeScale, int32_t SocketIndex, int32_t InShift, int32_t InSpacing, char IsEnable, char IsNormalized); // Function RoadRuntime.RoadActor.PushSideMesh(Final|Native|Public|HasDefaults) // <Game_BE.exe+0x10B0C80>
+	void PushSideActor(struct UClass* InPrototype, struct FVector ActorRelativeLocation, struct FRotator ActorRelativeRotation, struct FVector ActorRelativeScale, int32_t SocketIndex, int32_t InShift, int32_t InSpacing, char IsEnable, char IsNormalized); // Function RoadRuntime.RoadActor.PushSideActor(Final|Native|Public|HasDefaults) // <Game_BE.exe+0x10B07A0>
+	void PushCurbsMeshes(struct UStaticMesh InPrototype, struct UStaticMesh InStartPrototype, struct UStaticMesh InEndPrototype, struct FVector MeshRelativeLocation, struct FVector MeshRelativeScale, int32_t SocketIndex, char IsEnable, char InStartEnable, char InEndEnable); // Function RoadRuntime.RoadActor.PushCurbsMeshes(Final|Native|Public|HasDefaults) // <Game_BE.exe+0x10B02D0>
 	void DestroySideObjects(); // Function RoadRuntime.RoadActor.DestroySideObjects(Final|Native|Public) // <Game_BE.exe+0x10B02B0>
 	void DestroySideCurbs(); // Function RoadRuntime.RoadActor.DestroySideCurbs(Final|Native|Public) // <Game_BE.exe+0x10B0270>
 	void ClearSplineMeshes(); // Function RoadRuntime.RoadActor.ClearSplineMeshes(Final|Native|Public) // <Game_BE.exe+0x10B0250>
-	float ApproxLength(struct Unknown& SplineInfo, float Start, float End, int32_t ApproxSections); // Function RoadRuntime.RoadActor.ApproxLength(Final|Native|Static|Public|HasOutParms) // <Game_BE.exe+0x10B00D0>
+	float ApproxLength(struct FInterpCurveVector& SplineInfo, float Start, float End, int32_t ApproxSections); // Function RoadRuntime.RoadActor.ApproxLength(Final|Native|Static|Public|HasOutParms) // <Game_BE.exe+0x10B00D0>
 	void AddSplineMesh(int32_t MeshIndex); // Function RoadRuntime.RoadActor.AddSplineMesh(Final|Native|Public) // <Game_BE.exe+0x10B0050>
 };
 
 // ScriptStruct RoadRuntime.CrossMeshManager
 struct FCrossMeshManager {
-	struct Unknown Prototype; // 0x0 (8)
-	struct Unknown Owner; // 0x8 (8)
-	struct Unknown SideMesh; // 0x10 (8)
+	struct UStaticMesh Prototype; // 0x0 (8)
+	struct UActor Owner; // 0x8 (8)
+	struct UStaticMeshComponent SideMesh; // 0x10 (8)
 	int32_t SocketIndex; // 0x18 (4)
 };
 
 // ScriptStruct RoadRuntime.CrossActorManager
 struct FCrossActorManager {
-	struct Unknown* Prototype; // 0x0 (8)
-	struct Unknown SideActor; // 0x8 (8)
+	struct UClass* Prototype; // 0x0 (8)
+	struct UActor SideActor; // 0x8 (8)
 	int32_t SocketIndex; // 0x10 (4)
 };
 
 // ScriptStruct RoadRuntime.SideMeshManager
 struct FSideMeshManager {
-	struct Unknown Prototype; // 0x0 (8)
-	struct Unknown Owner; // 0x8 (8)
-	struct Unknown SideMeshes; // 0x10 (8)
+	struct UStaticMesh Prototype; // 0x0 (8)
+	struct UActor Owner; // 0x8 (8)
+	struct UHierarchicalInstancedStaticMeshComponent SideMeshes; // 0x10 (8)
 	int32_t SocketIndex; // 0x18 (4)
 };
 
 // ScriptStruct RoadRuntime.CurbsManager
 struct FCurbsManager {
-	struct Unknown Owner; // 0x0 (8)
-	struct Unknown Prototype; // 0x8 (8)
-	struct Unknown StartPrototype; // 0x10 (8)
-	struct Unknown EndPrototype; // 0x18 (8)
-	struct TArray<Unknown> CurbsComp; // 0x20 (16)
-	struct Unknown Spline; // 0x30 (8)
+	struct UActor Owner; // 0x0 (8)
+	struct UStaticMesh Prototype; // 0x8 (8)
+	struct UStaticMesh StartPrototype; // 0x10 (8)
+	struct UStaticMesh EndPrototype; // 0x18 (8)
+	struct TArray<struct USplineMeshComponent> CurbsComp; // 0x20 (16)
+	struct USplineComponent Spline; // 0x30 (8)
 	int32_t SplineIndex; // 0x38 (4)
 	int32_t SocketIndex; // 0x3C (4)
 	int32_t Segmentation; // 0x40 (4)
 	int32_t StepGeneration; // 0x44 (4)
-	struct Unknown Offset; // 0x48 (12)
-	struct Unknown Scale; // 0x54 (12)
+	struct FVector Offset; // 0x48 (12)
+	struct FVector Scale; // 0x54 (12)
 	char CurbEnable : 0; // 0x60 (1)
 	char StartEnable : 0; // 0x61 (1)
 	char EndEnable : 0; // 0x62 (1)
-	struct Unknown SplineInfo; // 0x68 (24)
+	struct FInterpCurveVector SplineInfo; // 0x68 (24)
 	float StartRoll; // 0x80 (4)
 	float EndRoll; // 0x84 (4)
 };
 
 // ScriptStruct RoadRuntime.SideActorManager
 struct FSideActorManager {
-	struct Unknown* Prototype; // 0x0 (8)
-	struct TArray<Unknown> SideActors; // 0x8 (16)
+	struct UClass* Prototype; // 0x0 (8)
+	struct TArray<struct UActor> SideActors; // 0x8 (16)
 	int32_t SocketIndex; // 0x18 (4)
 };
 
 // Function RoadRuntime.CrossActor.UpdateSideMesh
-inline void ACrossActor::UpdateSideMesh(struct Unknown InPrototype, struct Unknown MeshRelativeLocation, struct Unknown MeshRelativeRotation, struct Unknown MeshRelativeScale, int32_t SocketIndex, char IsEnable, char IsNormalized) {
+inline void ACrossActor::UpdateSideMesh(struct UStaticMesh InPrototype, struct FVector MeshRelativeLocation, struct FRotator MeshRelativeRotation, struct FVector MeshRelativeScale, int32_t SocketIndex, char IsEnable, char IsNormalized) {
 	static auto fn = UObject::FindObject<UFunction>("Function RoadRuntime.CrossActor.UpdateSideMesh");
 
 	struct UpdateSideMesh_Params {
-		struct Unknown InPrototype;
-		struct Unknown MeshRelativeLocation;
-		struct Unknown MeshRelativeRotation;
-		struct Unknown MeshRelativeScale;
+		struct UStaticMesh InPrototype;
+		struct FVector MeshRelativeLocation;
+		struct FRotator MeshRelativeRotation;
+		struct FVector MeshRelativeScale;
 		int32_t SocketIndex;
 		char IsEnable;
 		char IsNormalized;
@@ -128,14 +128,14 @@ inline void ACrossActor::UpdateSideMesh(struct Unknown InPrototype, struct Unkno
 }
 
 // Function RoadRuntime.CrossActor.UpdateSideActor
-inline void ACrossActor::UpdateSideActor(struct Unknown* InPrototype, struct Unknown ActorRelativeLocation, struct Unknown ActorRelativeRotation, struct Unknown ActorRelativeScale, int32_t SocketIndex, char IsEnable, char IsNormalized) {
+inline void ACrossActor::UpdateSideActor(struct UClass* InPrototype, struct FVector ActorRelativeLocation, struct FRotator ActorRelativeRotation, struct FVector ActorRelativeScale, int32_t SocketIndex, char IsEnable, char IsNormalized) {
 	static auto fn = UObject::FindObject<UFunction>("Function RoadRuntime.CrossActor.UpdateSideActor");
 
 	struct UpdateSideActor_Params {
-		struct Unknown* InPrototype;
-		struct Unknown ActorRelativeLocation;
-		struct Unknown ActorRelativeRotation;
-		struct Unknown ActorRelativeScale;
+		struct UClass* InPrototype;
+		struct FVector ActorRelativeLocation;
+		struct FRotator ActorRelativeRotation;
+		struct FVector ActorRelativeScale;
 		int32_t SocketIndex;
 		char IsEnable;
 		char IsNormalized;
@@ -155,14 +155,14 @@ inline void ACrossActor::UpdateSideActor(struct Unknown* InPrototype, struct Unk
 }
 
 // Function RoadRuntime.CrossActor.PushSideMesh
-inline void ACrossActor::PushSideMesh(struct Unknown InPrototype, struct Unknown MeshRelativeLocation, struct Unknown MeshRelativeRotation, struct Unknown MeshRelativeScale, int32_t SocketIndex, char IsEnable, char IsNormalized) {
+inline void ACrossActor::PushSideMesh(struct UStaticMesh InPrototype, struct FVector MeshRelativeLocation, struct FRotator MeshRelativeRotation, struct FVector MeshRelativeScale, int32_t SocketIndex, char IsEnable, char IsNormalized) {
 	static auto fn = UObject::FindObject<UFunction>("Function RoadRuntime.CrossActor.PushSideMesh");
 
 	struct PushSideMesh_Params {
-		struct Unknown InPrototype;
-		struct Unknown MeshRelativeLocation;
-		struct Unknown MeshRelativeRotation;
-		struct Unknown MeshRelativeScale;
+		struct UStaticMesh InPrototype;
+		struct FVector MeshRelativeLocation;
+		struct FRotator MeshRelativeRotation;
+		struct FVector MeshRelativeScale;
 		int32_t SocketIndex;
 		char IsEnable;
 		char IsNormalized;
@@ -182,14 +182,14 @@ inline void ACrossActor::PushSideMesh(struct Unknown InPrototype, struct Unknown
 }
 
 // Function RoadRuntime.CrossActor.PushSideActor
-inline void ACrossActor::PushSideActor(struct Unknown* InPrototype, struct Unknown ActorRelativeLocation, struct Unknown ActorRelativeRotation, struct Unknown ActorRelativeScale, int32_t SocketIndex, char IsEnable, char IsNormalized) {
+inline void ACrossActor::PushSideActor(struct UClass* InPrototype, struct FVector ActorRelativeLocation, struct FRotator ActorRelativeRotation, struct FVector ActorRelativeScale, int32_t SocketIndex, char IsEnable, char IsNormalized) {
 	static auto fn = UObject::FindObject<UFunction>("Function RoadRuntime.CrossActor.PushSideActor");
 
 	struct PushSideActor_Params {
-		struct Unknown* InPrototype;
-		struct Unknown ActorRelativeLocation;
-		struct Unknown ActorRelativeRotation;
-		struct Unknown ActorRelativeScale;
+		struct UClass* InPrototype;
+		struct FVector ActorRelativeLocation;
+		struct FRotator ActorRelativeRotation;
+		struct FVector ActorRelativeScale;
 		int32_t SocketIndex;
 		char IsEnable;
 		char IsNormalized;
@@ -238,14 +238,14 @@ inline void ARoadActor::UpdateSplineMesh(int32_t MeshIndex) {
 }
 
 // Function RoadRuntime.RoadActor.UpdateSideMeshes
-inline void ARoadActor::UpdateSideMeshes(struct Unknown InPrototype, struct Unknown MeshRelativeLocation, struct Unknown MeshRelativeRotation, struct Unknown MeshRelativeScale, int32_t SocketIndex, int32_t InShift, int32_t InSpacing, char IsEnable, char IsNormalized) {
+inline void ARoadActor::UpdateSideMeshes(struct UStaticMesh InPrototype, struct FVector MeshRelativeLocation, struct FRotator MeshRelativeRotation, struct FVector MeshRelativeScale, int32_t SocketIndex, int32_t InShift, int32_t InSpacing, char IsEnable, char IsNormalized) {
 	static auto fn = UObject::FindObject<UFunction>("Function RoadRuntime.RoadActor.UpdateSideMeshes");
 
 	struct UpdateSideMeshes_Params {
-		struct Unknown InPrototype;
-		struct Unknown MeshRelativeLocation;
-		struct Unknown MeshRelativeRotation;
-		struct Unknown MeshRelativeScale;
+		struct UStaticMesh InPrototype;
+		struct FVector MeshRelativeLocation;
+		struct FRotator MeshRelativeRotation;
+		struct FVector MeshRelativeScale;
 		int32_t SocketIndex;
 		int32_t InShift;
 		int32_t InSpacing;
@@ -269,14 +269,14 @@ inline void ARoadActor::UpdateSideMeshes(struct Unknown InPrototype, struct Unkn
 }
 
 // Function RoadRuntime.RoadActor.UpdateSideActor
-inline void ARoadActor::UpdateSideActor(struct Unknown* InPrototype, struct Unknown ActorRelativeLocation, struct Unknown ActorRelativeRotation, struct Unknown ActorRelativeScale, int32_t SocketIndex, int32_t InShift, int32_t InSpacing, char IsEnable, char IsNormalized) {
+inline void ARoadActor::UpdateSideActor(struct UClass* InPrototype, struct FVector ActorRelativeLocation, struct FRotator ActorRelativeRotation, struct FVector ActorRelativeScale, int32_t SocketIndex, int32_t InShift, int32_t InSpacing, char IsEnable, char IsNormalized) {
 	static auto fn = UObject::FindObject<UFunction>("Function RoadRuntime.RoadActor.UpdateSideActor");
 
 	struct UpdateSideActor_Params {
-		struct Unknown* InPrototype;
-		struct Unknown ActorRelativeLocation;
-		struct Unknown ActorRelativeRotation;
-		struct Unknown ActorRelativeScale;
+		struct UClass* InPrototype;
+		struct FVector ActorRelativeLocation;
+		struct FRotator ActorRelativeRotation;
+		struct FVector ActorRelativeScale;
 		int32_t SocketIndex;
 		int32_t InShift;
 		int32_t InSpacing;
@@ -300,13 +300,13 @@ inline void ARoadActor::UpdateSideActor(struct Unknown* InPrototype, struct Unkn
 }
 
 // Function RoadRuntime.RoadActor.UpdateSegment
-inline void ARoadActor::UpdateSegment(int32_t SegmentIndex, struct Unknown SplineComponent, struct Unknown StaticMesh, char InAxis) {
+inline void ARoadActor::UpdateSegment(int32_t SegmentIndex, struct USplineComponent SplineComponent, struct UStaticMesh StaticMesh, char InAxis) {
 	static auto fn = UObject::FindObject<UFunction>("Function RoadRuntime.RoadActor.UpdateSegment");
 
 	struct UpdateSegment_Params {
 		int32_t SegmentIndex;
-		struct Unknown SplineComponent;
-		struct Unknown StaticMesh;
+		struct USplineComponent SplineComponent;
+		struct UStaticMesh StaticMesh;
 		char InAxis;
 	}; UpdateSegment_Params Params;
 
@@ -321,14 +321,14 @@ inline void ARoadActor::UpdateSegment(int32_t SegmentIndex, struct Unknown Splin
 }
 
 // Function RoadRuntime.RoadActor.PushSideMesh
-inline void ARoadActor::PushSideMesh(struct Unknown InPrototype, struct Unknown MeshRelativeLocation, struct Unknown MeshRelativeRotation, struct Unknown MeshRelativeScale, int32_t SocketIndex, int32_t InShift, int32_t InSpacing, char IsEnable, char IsNormalized) {
+inline void ARoadActor::PushSideMesh(struct UStaticMesh InPrototype, struct FVector MeshRelativeLocation, struct FRotator MeshRelativeRotation, struct FVector MeshRelativeScale, int32_t SocketIndex, int32_t InShift, int32_t InSpacing, char IsEnable, char IsNormalized) {
 	static auto fn = UObject::FindObject<UFunction>("Function RoadRuntime.RoadActor.PushSideMesh");
 
 	struct PushSideMesh_Params {
-		struct Unknown InPrototype;
-		struct Unknown MeshRelativeLocation;
-		struct Unknown MeshRelativeRotation;
-		struct Unknown MeshRelativeScale;
+		struct UStaticMesh InPrototype;
+		struct FVector MeshRelativeLocation;
+		struct FRotator MeshRelativeRotation;
+		struct FVector MeshRelativeScale;
 		int32_t SocketIndex;
 		int32_t InShift;
 		int32_t InSpacing;
@@ -352,14 +352,14 @@ inline void ARoadActor::PushSideMesh(struct Unknown InPrototype, struct Unknown 
 }
 
 // Function RoadRuntime.RoadActor.PushSideActor
-inline void ARoadActor::PushSideActor(struct Unknown* InPrototype, struct Unknown ActorRelativeLocation, struct Unknown ActorRelativeRotation, struct Unknown ActorRelativeScale, int32_t SocketIndex, int32_t InShift, int32_t InSpacing, char IsEnable, char IsNormalized) {
+inline void ARoadActor::PushSideActor(struct UClass* InPrototype, struct FVector ActorRelativeLocation, struct FRotator ActorRelativeRotation, struct FVector ActorRelativeScale, int32_t SocketIndex, int32_t InShift, int32_t InSpacing, char IsEnable, char IsNormalized) {
 	static auto fn = UObject::FindObject<UFunction>("Function RoadRuntime.RoadActor.PushSideActor");
 
 	struct PushSideActor_Params {
-		struct Unknown* InPrototype;
-		struct Unknown ActorRelativeLocation;
-		struct Unknown ActorRelativeRotation;
-		struct Unknown ActorRelativeScale;
+		struct UClass* InPrototype;
+		struct FVector ActorRelativeLocation;
+		struct FRotator ActorRelativeRotation;
+		struct FVector ActorRelativeScale;
 		int32_t SocketIndex;
 		int32_t InShift;
 		int32_t InSpacing;
@@ -383,15 +383,15 @@ inline void ARoadActor::PushSideActor(struct Unknown* InPrototype, struct Unknow
 }
 
 // Function RoadRuntime.RoadActor.PushCurbsMeshes
-inline void ARoadActor::PushCurbsMeshes(struct Unknown InPrototype, struct Unknown InStartPrototype, struct Unknown InEndPrototype, struct Unknown MeshRelativeLocation, struct Unknown MeshRelativeScale, int32_t SocketIndex, char IsEnable, char InStartEnable, char InEndEnable) {
+inline void ARoadActor::PushCurbsMeshes(struct UStaticMesh InPrototype, struct UStaticMesh InStartPrototype, struct UStaticMesh InEndPrototype, struct FVector MeshRelativeLocation, struct FVector MeshRelativeScale, int32_t SocketIndex, char IsEnable, char InStartEnable, char InEndEnable) {
 	static auto fn = UObject::FindObject<UFunction>("Function RoadRuntime.RoadActor.PushCurbsMeshes");
 
 	struct PushCurbsMeshes_Params {
-		struct Unknown InPrototype;
-		struct Unknown InStartPrototype;
-		struct Unknown InEndPrototype;
-		struct Unknown MeshRelativeLocation;
-		struct Unknown MeshRelativeScale;
+		struct UStaticMesh InPrototype;
+		struct UStaticMesh InStartPrototype;
+		struct UStaticMesh InEndPrototype;
+		struct FVector MeshRelativeLocation;
+		struct FVector MeshRelativeScale;
 		int32_t SocketIndex;
 		char IsEnable;
 		char InStartEnable;
@@ -456,11 +456,11 @@ inline void ARoadActor::ClearSplineMeshes() {
 }
 
 // Function RoadRuntime.RoadActor.ApproxLength
-inline float ARoadActor::ApproxLength(struct Unknown& SplineInfo, float Start, float End, int32_t ApproxSections) {
+inline float ARoadActor::ApproxLength(struct FInterpCurveVector& SplineInfo, float Start, float End, int32_t ApproxSections) {
 	static auto fn = UObject::FindObject<UFunction>("Function RoadRuntime.RoadActor.ApproxLength");
 
 	struct ApproxLength_Params {
-		struct Unknown& SplineInfo;
+		struct FInterpCurveVector& SplineInfo;
 		float Start;
 		float End;
 		int32_t ApproxSections;

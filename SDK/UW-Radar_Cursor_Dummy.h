@@ -3,7 +3,7 @@ class UUW-Radar_Cursor_Dummy_C : public UUserWidget {
 
 public:
 
-	struct Unknown Image_47; // 0x248 (8)
+	struct UImage Image_47; // 0x248 (8)
 
 	void UpdateCursorVisibility(); // Function UW-Radar_Cursor_Dummy.UW-Radar_Cursor_Dummy_C.UpdateCursorVisibility(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 };

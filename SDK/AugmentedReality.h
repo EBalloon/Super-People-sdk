@@ -278,59 +278,59 @@ public:
 	char bRenderMeshDataInWireframe : 0; // 0x34 (1)
 	char bTrackSceneObjects : 0; // 0x35 (1)
 	char bUsePersonSegmentationForOcclusion : 0; // 0x36 (1)
-	enum class Unknow WorldAlignment; // 0x37 (1)
-	enum class Unknow SessionType; // 0x38 (1)
-	enum class Unknow PlaneDetectionMode; // 0x39 (1)
+	enum class EARWorldAlignment WorldAlignment; // 0x37 (1)
+	enum class EARSessionType SessionType; // 0x38 (1)
+	enum class EARPlaneDetectionMode PlaneDetectionMode; // 0x39 (1)
 	char bHorizontalPlaneDetection : 0; // 0x3A (1)
 	char bVerticalPlaneDetection : 0; // 0x3B (1)
 	char bEnableAutoFocus : 0; // 0x3C (1)
-	enum class Unknow LightEstimationMode; // 0x3D (1)
-	enum class Unknow FrameSyncMode; // 0x3E (1)
+	enum class EARLightEstimationMode LightEstimationMode; // 0x3D (1)
+	enum class EARFrameSyncMode FrameSyncMode; // 0x3E (1)
 	char bEnableAutomaticCameraOverlay : 0; // 0x3F (1)
 	char bEnableAutomaticCameraTracking : 0; // 0x40 (1)
 	char bResetCameraTracking : 0; // 0x41 (1)
 	char bResetTrackedObjects : 0; // 0x42 (1)
-	struct TArray<Unknown> CandidateImages; // 0x48 (16)
+	struct TArray<struct UARCandidateImage> CandidateImages; // 0x48 (16)
 	int32_t MaxNumSimultaneousImagesTracked; // 0x58 (4)
-	enum class Unknow EnvironmentCaptureProbeType; // 0x5C (1)
-	struct TArray<Unknown> WorldMapData; // 0x60 (16)
-	struct TArray<Unknown> CandidateObjects; // 0x70 (16)
-	struct Unknown DesiredVideoFormat; // 0x80 (12)
-	enum class Unknow FaceTrackingDirection; // 0x8C (1)
-	enum class Unknow FaceTrackingUpdate; // 0x8D (1)
-	struct TArray<Unknown> SerializedARCandidateImageDatabase; // 0x90 (16)
-	enum class Unknow EnabledSessionTrackingFeature; // 0xA0 (1)
+	enum class EAREnvironmentCaptureProbeType EnvironmentCaptureProbeType; // 0x5C (1)
+	struct TArray<char> WorldMapData; // 0x60 (16)
+	struct TArray<struct UARCandidateObject> CandidateObjects; // 0x70 (16)
+	struct FARVideoFormat DesiredVideoFormat; // 0x80 (12)
+	enum class EARFaceTrackingDirection FaceTrackingDirection; // 0x8C (1)
+	enum class EARFaceTrackingUpdate FaceTrackingUpdate; // 0x8D (1)
+	struct TArray<char> SerializedARCandidateImageDatabase; // 0x90 (16)
+	enum class EARSessionTrackingFeature EnabledSessionTrackingFeature; // 0xA0 (1)
 
 	char ShouldResetTrackedObjects(); // Function AugmentedReality.ARSessionConfig.ShouldResetTrackedObjects(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C09E0>
 	char ShouldResetCameraTracking(); // Function AugmentedReality.ARSessionConfig.ShouldResetCameraTracking(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C09B0>
 	char ShouldRenderCameraOverlay(); // Function AugmentedReality.ARSessionConfig.ShouldRenderCameraOverlay(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C0980>
 	char ShouldEnableCameraTracking(); // Function AugmentedReality.ARSessionConfig.ShouldEnableCameraTracking(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C0950>
 	char ShouldEnableAutoFocus(); // Function AugmentedReality.ARSessionConfig.ShouldEnableAutoFocus(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C0920>
-	void SetWorldMapData(struct TArray<Unknown> WorldMapData); // Function AugmentedReality.ARSessionConfig.SetWorldMapData(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x36C0830>
-	void SetSessionTrackingFeatureToEnable(enum class Unknow InSessionTrackingFeature); // Function AugmentedReality.ARSessionConfig.SetSessionTrackingFeatureToEnable(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x36C07B0>
+	void SetWorldMapData(struct TArray<char> WorldMapData); // Function AugmentedReality.ARSessionConfig.SetWorldMapData(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x36C0830>
+	void SetSessionTrackingFeatureToEnable(enum class EARSessionTrackingFeature InSessionTrackingFeature); // Function AugmentedReality.ARSessionConfig.SetSessionTrackingFeatureToEnable(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x36C07B0>
 	void SetResetTrackedObjects(char bNewValue); // Function AugmentedReality.ARSessionConfig.SetResetTrackedObjects(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x36C0720>
 	void SetResetCameraTracking(char bNewValue); // Function AugmentedReality.ARSessionConfig.SetResetCameraTracking(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x36C0690>
-	void SetFaceTrackingUpdate(enum class Unknow InUpdate); // Function AugmentedReality.ARSessionConfig.SetFaceTrackingUpdate(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x36C0610>
-	void SetFaceTrackingDirection(enum class Unknow InDirection); // Function AugmentedReality.ARSessionConfig.SetFaceTrackingDirection(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x36C0590>
+	void SetFaceTrackingUpdate(enum class EARFaceTrackingUpdate InUpdate); // Function AugmentedReality.ARSessionConfig.SetFaceTrackingUpdate(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x36C0610>
+	void SetFaceTrackingDirection(enum class EARFaceTrackingDirection InDirection); // Function AugmentedReality.ARSessionConfig.SetFaceTrackingDirection(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x36C0590>
 	void SetEnableAutoFocus(char bNewValue); // Function AugmentedReality.ARSessionConfig.SetEnableAutoFocus(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x36C0500>
-	void SetDesiredVideoFormat(struct Unknown NewFormat); // Function AugmentedReality.ARSessionConfig.SetDesiredVideoFormat(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x36C0460>
-	void SetCandidateObjectList(struct TArray<Unknown>& InCandidateObjects); // Function AugmentedReality.ARSessionConfig.SetCandidateObjectList(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x36C03B0>
-	struct TArray<Unknown> GetWorldMapData(); // Function AugmentedReality.ARSessionConfig.GetWorldMapData(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36BF8E0>
-	enum class Unknow GetWorldAlignment(); // Function AugmentedReality.ARSessionConfig.GetWorldAlignment(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36BF8B0>
-	enum class Unknow GetSessionType(); // Function AugmentedReality.ARSessionConfig.GetSessionType(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x161B990>
-	enum class Unknow GetPlaneDetectionMode(); // Function AugmentedReality.ARSessionConfig.GetPlaneDetectionMode(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36BF4B0>
+	void SetDesiredVideoFormat(struct FARVideoFormat NewFormat); // Function AugmentedReality.ARSessionConfig.SetDesiredVideoFormat(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x36C0460>
+	void SetCandidateObjectList(struct TArray<struct UARCandidateObject>& InCandidateObjects); // Function AugmentedReality.ARSessionConfig.SetCandidateObjectList(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x36C03B0>
+	struct TArray<char> GetWorldMapData(); // Function AugmentedReality.ARSessionConfig.GetWorldMapData(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36BF8E0>
+	enum class EARWorldAlignment GetWorldAlignment(); // Function AugmentedReality.ARSessionConfig.GetWorldAlignment(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36BF8B0>
+	enum class EARSessionType GetSessionType(); // Function AugmentedReality.ARSessionConfig.GetSessionType(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x161B990>
+	enum class EARPlaneDetectionMode GetPlaneDetectionMode(); // Function AugmentedReality.ARSessionConfig.GetPlaneDetectionMode(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36BF4B0>
 	int32_t GetMaxNumSimultaneousImagesTracked(); // Function AugmentedReality.ARSessionConfig.GetMaxNumSimultaneousImagesTracked(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36BF3F0>
-	enum class Unknow GetLightEstimationMode(); // Function AugmentedReality.ARSessionConfig.GetLightEstimationMode(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36BF0C0>
-	enum class Unknow GetFrameSyncMode(); // Function AugmentedReality.ARSessionConfig.GetFrameSyncMode(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36BF090>
-	enum class Unknow GetFaceTrackingUpdate(); // Function AugmentedReality.ARSessionConfig.GetFaceTrackingUpdate(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36BF060>
-	enum class Unknow GetFaceTrackingDirection(); // Function AugmentedReality.ARSessionConfig.GetFaceTrackingDirection(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36BF030>
-	enum class Unknow GetEnvironmentCaptureProbeType(); // Function AugmentedReality.ARSessionConfig.GetEnvironmentCaptureProbeType(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36BF000>
-	enum class Unknow GetEnabledSessionTrackingFeature(); // Function AugmentedReality.ARSessionConfig.GetEnabledSessionTrackingFeature(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36BEFD0>
-	struct Unknown GetDesiredVideoFormat(); // Function AugmentedReality.ARSessionConfig.GetDesiredVideoFormat(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36BEE90>
-	struct TArray<Unknown> GetCandidateObjectList(); // Function AugmentedReality.ARSessionConfig.GetCandidateObjectList(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36BED90>
-	struct TArray<Unknown> GetCandidateImageList(); // Function AugmentedReality.ARSessionConfig.GetCandidateImageList(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36BED00>
-	void AddCandidateObject(struct Unknown CandidateObject); // Function AugmentedReality.ARSessionConfig.AddCandidateObject(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x36BDF50>
-	void AddCandidateImage(struct Unknown NewCandidateImage); // Function AugmentedReality.ARSessionConfig.AddCandidateImage(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x36BDED0>
+	enum class EARLightEstimationMode GetLightEstimationMode(); // Function AugmentedReality.ARSessionConfig.GetLightEstimationMode(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36BF0C0>
+	enum class EARFrameSyncMode GetFrameSyncMode(); // Function AugmentedReality.ARSessionConfig.GetFrameSyncMode(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36BF090>
+	enum class EARFaceTrackingUpdate GetFaceTrackingUpdate(); // Function AugmentedReality.ARSessionConfig.GetFaceTrackingUpdate(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36BF060>
+	enum class EARFaceTrackingDirection GetFaceTrackingDirection(); // Function AugmentedReality.ARSessionConfig.GetFaceTrackingDirection(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36BF030>
+	enum class EAREnvironmentCaptureProbeType GetEnvironmentCaptureProbeType(); // Function AugmentedReality.ARSessionConfig.GetEnvironmentCaptureProbeType(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36BF000>
+	enum class EARSessionTrackingFeature GetEnabledSessionTrackingFeature(); // Function AugmentedReality.ARSessionConfig.GetEnabledSessionTrackingFeature(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36BEFD0>
+	struct FARVideoFormat GetDesiredVideoFormat(); // Function AugmentedReality.ARSessionConfig.GetDesiredVideoFormat(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36BEE90>
+	struct TArray<struct UARCandidateObject> GetCandidateObjectList(); // Function AugmentedReality.ARSessionConfig.GetCandidateObjectList(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36BED90>
+	struct TArray<struct UARCandidateImage> GetCandidateImageList(); // Function AugmentedReality.ARSessionConfig.GetCandidateImageList(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36BED00>
+	void AddCandidateObject(struct UARCandidateObject CandidateObject); // Function AugmentedReality.ARSessionConfig.AddCandidateObject(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x36BDF50>
+	void AddCandidateImage(struct UARCandidateImage NewCandidateImage); // Function AugmentedReality.ARSessionConfig.AddCandidateImage(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x36BDED0>
 };
 
 // Class AugmentedReality.ARBasicLightEstimate
@@ -340,11 +340,11 @@ public:
 
 	float AmbientIntensityLumens; // 0x28 (4)
 	float AmbientColorTemperatureKelvin; // 0x2C (4)
-	struct Unknown AmbientColor; // 0x30 (16)
+	struct FLinearColor AmbientColor; // 0x30 (16)
 
 	float GetAmbientIntensityLumens(); // Function AugmentedReality.ARBasicLightEstimate.GetAmbientIntensityLumens(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36BEC70>
 	float GetAmbientColorTemperatureKelvin(); // Function AugmentedReality.ARBasicLightEstimate.GetAmbientColorTemperatureKelvin(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36BEC40>
-	struct Unknown GetAmbientColor(); // Function AugmentedReality.ARBasicLightEstimate.GetAmbientColor(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36BEC00>
+	struct FLinearColor GetAmbientColor(); // Function AugmentedReality.ARBasicLightEstimate.GetAmbientColor(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36BEC00>
 };
 
 // Class AugmentedReality.ARCandidateImage
@@ -352,17 +352,17 @@ class UARCandidateImage : public UDataAsset {
 
 public:
 
-	struct Unknown CandidateTexture; // 0x30 (8)
+	struct UTexture2D CandidateTexture; // 0x30 (8)
 	struct FString FriendlyName; // 0x38 (16)
 	float Width; // 0x48 (4)
 	float Height; // 0x4C (4)
-	enum class Unknow Orientation; // 0x50 (1)
+	enum class EARCandidateImageOrientation Orientation; // 0x50 (1)
 
 	float GetPhysicalWidth(); // Function AugmentedReality.ARCandidateImage.GetPhysicalWidth(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C7280>
 	float GetPhysicalHeight(); // Function AugmentedReality.ARCandidateImage.GetPhysicalHeight(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C7260>
-	enum class Unknow GetOrientation(); // Function AugmentedReality.ARCandidateImage.GetOrientation(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C7240>
+	enum class EARCandidateImageOrientation GetOrientation(); // Function AugmentedReality.ARCandidateImage.GetOrientation(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C7240>
 	struct FString GetFriendlyName(); // Function AugmentedReality.ARCandidateImage.GetFriendlyName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C71E0>
-	struct Unknown GetCandidateTexture(); // Function AugmentedReality.ARCandidateImage.GetCandidateTexture(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C71C0>
+	struct UTexture2D GetCandidateTexture(); // Function AugmentedReality.ARCandidateImage.GetCandidateTexture(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C71C0>
 };
 
 // Class AugmentedReality.ARSaveWorldAsyncTaskBlueprintProxy
@@ -373,7 +373,7 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x50 (16)
 	struct FMulticastInlineDelegate OnFailed; // 0x60 (16)
 
-	struct Unknown ARSaveWorld(struct Unknown WorldContextObject); // Function AugmentedReality.ARSaveWorldAsyncTaskBlueprintProxy.ARSaveWorld(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x36BDE50>
+	struct UARSaveWorldAsyncTaskBlueprintProxy ARSaveWorld(struct Object WorldContextObject); // Function AugmentedReality.ARSaveWorldAsyncTaskBlueprintProxy.ARSaveWorld(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x36BDE50>
 };
 
 // Class AugmentedReality.ARGetCandidateObjectAsyncTaskBlueprintProxy
@@ -384,7 +384,7 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x50 (16)
 	struct FMulticastInlineDelegate OnFailed; // 0x60 (16)
 
-	struct Unknown ARGetCandidateObject(struct Unknown WorldContextObject, struct Unknown Location, struct Unknown Extent); // Function AugmentedReality.ARGetCandidateObjectAsyncTaskBlueprintProxy.ARGetCandidateObject(Final|Native|Static|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x36BDD30>
+	struct UARGetCandidateObjectAsyncTaskBlueprintProxy ARGetCandidateObject(struct Object WorldContextObject, struct FVector Location, struct FVector Extent); // Function AugmentedReality.ARGetCandidateObjectAsyncTaskBlueprintProxy.ARGetCandidateObject(Final|Native|Static|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x36BDD30>
 };
 
 // Class AugmentedReality.ARPin
@@ -392,21 +392,21 @@ class UARPin : public Object {
 
 public:
 
-	struct Unknown TrackedGeometry; // 0x28 (8)
-	struct Unknown PinnedComponent; // 0x30 (8)
-	struct Unknown LocalToTrackingTransform; // 0x40 (48)
-	struct Unknown LocalToAlignedTrackingTransform; // 0x70 (48)
-	enum class Unknow TrackingState; // 0xA0 (1)
+	struct UARTrackedGeometry TrackedGeometry; // 0x28 (8)
+	struct USceneComponent PinnedComponent; // 0x30 (8)
+	struct FTransform LocalToTrackingTransform; // 0x40 (48)
+	struct FTransform LocalToAlignedTrackingTransform; // 0x70 (48)
+	enum class EARTrackingState TrackingState; // 0xA0 (1)
 	struct FMulticastInlineDelegate OnARTrackingStateChanged; // 0xC0 (16)
 	struct FMulticastInlineDelegate OnARTransformUpdated; // 0xD0 (16)
 
-	enum class Unknow GetTrackingState(); // Function AugmentedReality.ARPin.GetTrackingState(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36BEFD0>
-	struct Unknown GetTrackedGeometry(); // Function AugmentedReality.ARPin.GetTrackedGeometry(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36BF750>
-	struct Unknown GetPinnedComponent(); // Function AugmentedReality.ARPin.GetPinnedComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36BF480>
-	struct Unknown GetLocalToWorldTransform(); // Function AugmentedReality.ARPin.GetLocalToWorldTransform(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36BF270>
-	struct Unknown GetLocalToTrackingTransform(); // Function AugmentedReality.ARPin.GetLocalToTrackingTransform(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36BF0F0>
+	enum class EARTrackingState GetTrackingState(); // Function AugmentedReality.ARPin.GetTrackingState(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36BEFD0>
+	struct UARTrackedGeometry GetTrackedGeometry(); // Function AugmentedReality.ARPin.GetTrackedGeometry(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36BF750>
+	struct USceneComponent GetPinnedComponent(); // Function AugmentedReality.ARPin.GetPinnedComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36BF480>
+	struct FTransform GetLocalToWorldTransform(); // Function AugmentedReality.ARPin.GetLocalToWorldTransform(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36BF270>
+	struct FTransform GetLocalToTrackingTransform(); // Function AugmentedReality.ARPin.GetLocalToTrackingTransform(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36BF0F0>
 	struct FName GetDebugName(); // Function AugmentedReality.ARPin.GetDebugName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36BEE50>
-	void DebugDraw(struct Unknown World, struct Unknown& Color, float Scale, float PersistForSeconds); // Function AugmentedReality.ARPin.DebugDraw(Native|Public|HasOutParms|HasDefaults|Const) // <Game_BE.exe+0x36BE240>
+	void DebugDraw(struct UWorld World, struct FLinearColor& Color, float Scale, float PersistForSeconds); // Function AugmentedReality.ARPin.DebugDraw(Native|Public|HasOutParms|HasDefaults|Const) // <Game_BE.exe+0x36BE240>
 };
 
 // Class AugmentedReality.ARSharedWorldGameMode
@@ -416,10 +416,10 @@ public:
 
 	int32_t BufferSizePerChunk; // 0x400 (4)
 
-	void SetPreviewImageData(struct TArray<Unknown> ImageData); // Function AugmentedReality.ARSharedWorldGameMode.SetPreviewImageData(Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <Game_BE.exe+0x36C4D70>
+	void SetPreviewImageData(struct TArray<char> ImageData); // Function AugmentedReality.ARSharedWorldGameMode.SetPreviewImageData(Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <Game_BE.exe+0x36C4D70>
 	void SetARWorldSharingIsReady(); // Function AugmentedReality.ARSharedWorldGameMode.SetARWorldSharingIsReady(Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <Game_BE.exe+0x36C4CD0>
-	void SetARSharedWorldData(struct TArray<Unknown> ARWorldData); // Function AugmentedReality.ARSharedWorldGameMode.SetARSharedWorldData(Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <Game_BE.exe+0x36C4BE0>
-	struct Unknown GetARSharedWorldGameState(); // Function AugmentedReality.ARSharedWorldGameMode.GetARSharedWorldGameState(Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <Game_BE.exe+0x36C43B0>
+	void SetARSharedWorldData(struct TArray<char> ARWorldData); // Function AugmentedReality.ARSharedWorldGameMode.SetARSharedWorldData(Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <Game_BE.exe+0x36C4BE0>
+	struct AARSharedWorldGameState GetARSharedWorldGameState(); // Function AugmentedReality.ARSharedWorldGameMode.GetARSharedWorldGameState(Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <Game_BE.exe+0x36C43B0>
 };
 
 // Class AugmentedReality.ARSharedWorldGameState
@@ -427,8 +427,8 @@ class AARSharedWorldGameState : public AGameState {
 
 public:
 
-	struct TArray<Unknown> PreviewImageData; // 0x388 (16)
-	struct TArray<Unknown> ARWorldData; // 0x398 (16)
+	struct TArray<char> PreviewImageData; // 0x388 (16)
+	struct TArray<char> ARWorldData; // 0x398 (16)
 	int32_t PreviewImageBytesTotal; // 0x3A8 (4)
 	int32_t ARWorldBytesTotal; // 0x3AC (4)
 	int32_t PreviewImageBytesDelivered; // 0x3B0 (4)
@@ -442,9 +442,9 @@ class AARSkyLight : public ASkyLight {
 
 public:
 
-	struct Unknown CaptureProbe; // 0x328 (8)
+	struct UAREnvironmentCaptureProbe CaptureProbe; // 0x328 (8)
 
-	void SetEnvironmentCaptureProbe(struct Unknown InCaptureProbe); // Function AugmentedReality.ARSkyLight.SetEnvironmentCaptureProbe(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x36C4CF0>
+	void SetEnvironmentCaptureProbe(struct UAREnvironmentCaptureProbe InCaptureProbe); // Function AugmentedReality.ARSkyLight.SetEnvironmentCaptureProbe(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x36C4CF0>
 };
 
 // Class AugmentedReality.ARTexture
@@ -452,10 +452,10 @@ class UARTexture : public UTexture {
 
 public:
 
-	enum class Unknow TextureType; // 0xB8 (1)
+	enum class EARTextureType TextureType; // 0xB8 (1)
 	float Timestamp; // 0xBC (4)
-	struct Unknown ExternalTextureGuid; // 0xC0 (16)
-	struct Unknown Size; // 0xD0 (8)
+	struct FGuid ExternalTextureGuid; // 0xC0 (16)
+	struct FVector2D Size; // 0xD0 (8)
 };
 
 // Class AugmentedReality.ARTextureCameraDepth
@@ -463,8 +463,8 @@ class UARTextureCameraDepth : public UARTexture {
 
 public:
 
-	enum class Unknow DepthQuality; // 0xD8 (1)
-	enum class Unknow DepthAccuracy; // 0xD9 (1)
+	enum class EARDepthQuality DepthQuality; // 0xD8 (1)
+	enum class EARDepthAccuracy DepthAccuracy; // 0xD9 (1)
 	char bIsTemporallySmoothed : 0; // 0xDA (1)
 };
 
@@ -473,10 +473,10 @@ class UAREnvironmentCaptureProbeTexture : public UTextureCube {
 
 public:
 
-	enum class Unknow TextureType; // 0x110 (1)
+	enum class EARTextureType TextureType; // 0x110 (1)
 	float Timestamp; // 0x114 (4)
-	struct Unknown ExternalTextureGuid; // 0x118 (16)
-	struct Unknown Size; // 0x128 (8)
+	struct FGuid ExternalTextureGuid; // 0x118 (16)
+	struct FVector2D Size; // 0x128 (8)
 };
 
 // Class AugmentedReality.ARTrackedGeometry
@@ -484,21 +484,21 @@ class UARTrackedGeometry : public Object {
 
 public:
 
-	struct Unknown UniqueID; // 0x28 (16)
-	struct Unknown LocalToTrackingTransform; // 0x40 (48)
-	struct Unknown LocalToAlignedTrackingTransform; // 0x70 (48)
-	enum class Unknow TrackingState; // 0xA0 (1)
-	struct Unknown UnderlyingMesh; // 0xB0 (8)
-	enum class Unknow ObjectClassification; // 0xB8 (1)
+	struct FGuid UniqueID; // 0x28 (16)
+	struct FTransform LocalToTrackingTransform; // 0x40 (48)
+	struct FTransform LocalToAlignedTrackingTransform; // 0x70 (48)
+	enum class EARTrackingState TrackingState; // 0xA0 (1)
+	struct UMRMeshComponent UnderlyingMesh; // 0xB0 (8)
+	enum class EARObjectClassification ObjectClassification; // 0xB8 (1)
 	int32_t LastUpdateFrameNumber; // 0xD0 (4)
 	struct FName DebugName; // 0xE0 (8)
 
 	char IsTracked(); // Function AugmentedReality.ARTrackedGeometry.IsTracked(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C4B60>
-	struct Unknown GetUnderlyingMesh(); // Function AugmentedReality.ARTrackedGeometry.GetUnderlyingMesh(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x36C4A80>
-	enum class Unknow GetTrackingState(); // Function AugmentedReality.ARTrackedGeometry.GetTrackingState(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36BEFD0>
-	enum class Unknow GetObjectClassification(); // Function AugmentedReality.ARTrackedGeometry.GetObjectClassification(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C49F0>
-	struct Unknown GetLocalToWorldTransform(); // Function AugmentedReality.ARTrackedGeometry.GetLocalToWorldTransform(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C4990>
-	struct Unknown GetLocalToTrackingTransform(); // Function AugmentedReality.ARTrackedGeometry.GetLocalToTrackingTransform(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36BF0F0>
+	struct UMRMeshComponent GetUnderlyingMesh(); // Function AugmentedReality.ARTrackedGeometry.GetUnderlyingMesh(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x36C4A80>
+	enum class EARTrackingState GetTrackingState(); // Function AugmentedReality.ARTrackedGeometry.GetTrackingState(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36BEFD0>
+	enum class EARObjectClassification GetObjectClassification(); // Function AugmentedReality.ARTrackedGeometry.GetObjectClassification(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C49F0>
+	struct FTransform GetLocalToWorldTransform(); // Function AugmentedReality.ARTrackedGeometry.GetLocalToWorldTransform(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C4990>
+	struct FTransform GetLocalToTrackingTransform(); // Function AugmentedReality.ARTrackedGeometry.GetLocalToTrackingTransform(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36BF0F0>
 	float GetLastUpdateTimestamp(); // Function AugmentedReality.ARTrackedGeometry.GetLastUpdateTimestamp(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C48C0>
 	int32_t GetLastUpdateFrameNumber(); // Function AugmentedReality.ARTrackedGeometry.GetLastUpdateFrameNumber(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C4890>
 	struct FName GetDebugName(); // Function AugmentedReality.ARTrackedGeometry.GetDebugName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C4750>
@@ -509,16 +509,16 @@ class UARPlaneGeometry : public UARTrackedGeometry {
 
 public:
 
-	enum class Unknow Orientation; // 0xE8 (1)
-	struct Unknown Center; // 0xEC (12)
-	struct Unknown Extent; // 0xF8 (12)
-	struct Unknown SubsumedBy; // 0x118 (8)
+	enum class EARPlaneOrientation Orientation; // 0xE8 (1)
+	struct FVector Center; // 0xEC (12)
+	struct FVector Extent; // 0xF8 (12)
+	struct UARPlaneGeometry SubsumedBy; // 0x118 (8)
 
-	struct Unknown GetSubsumedBy(); // Function AugmentedReality.ARPlaneGeometry.GetSubsumedBy(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C4A30>
-	enum class Unknow GetOrientation(); // Function AugmentedReality.ARPlaneGeometry.GetOrientation(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C4A10>
-	struct Unknown GetExtent(); // Function AugmentedReality.ARPlaneGeometry.GetExtent(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C4860>
-	struct Unknown GetCenter(); // Function AugmentedReality.ARPlaneGeometry.GetCenter(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C4720>
-	struct TArray<Unknown> GetBoundaryPolygonInLocalSpace(); // Function AugmentedReality.ARPlaneGeometry.GetBoundaryPolygonInLocalSpace(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C4650>
+	struct UARPlaneGeometry GetSubsumedBy(); // Function AugmentedReality.ARPlaneGeometry.GetSubsumedBy(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C4A30>
+	enum class EARPlaneOrientation GetOrientation(); // Function AugmentedReality.ARPlaneGeometry.GetOrientation(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C4A10>
+	struct FVector GetExtent(); // Function AugmentedReality.ARPlaneGeometry.GetExtent(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C4860>
+	struct FVector GetCenter(); // Function AugmentedReality.ARPlaneGeometry.GetCenter(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C4720>
+	struct TArray<struct FVector> GetBoundaryPolygonInLocalSpace(); // Function AugmentedReality.ARPlaneGeometry.GetBoundaryPolygonInLocalSpace(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C4650>
 };
 
 // Class AugmentedReality.ARTrackedImage
@@ -526,11 +526,11 @@ class UARTrackedImage : public UARTrackedGeometry {
 
 public:
 
-	struct Unknown DetectedImage; // 0xE8 (8)
-	struct Unknown EstimatedSize; // 0xF0 (8)
+	struct UARCandidateImage DetectedImage; // 0xE8 (8)
+	struct FVector2D EstimatedSize; // 0xF0 (8)
 
-	struct Unknown GetEstimateSize(); // Function AugmentedReality.ARTrackedImage.GetEstimateSize(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x36C47E0>
-	struct Unknown GetDetectedImage(); // Function AugmentedReality.ARTrackedImage.GetDetectedImage(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C4790>
+	struct FVector2D GetEstimateSize(); // Function AugmentedReality.ARTrackedImage.GetEstimateSize(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x36C47E0>
+	struct UARCandidateImage GetDetectedImage(); // Function AugmentedReality.ARTrackedImage.GetDetectedImage(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C4790>
 };
 
 // Class AugmentedReality.ARTrackedQRCode
@@ -547,14 +547,14 @@ class UARFaceGeometry : public UARTrackedGeometry {
 
 public:
 
-	struct Unknown LookAtTarget; // 0xE8 (12)
+	struct FVector LookAtTarget; // 0xE8 (12)
 	char bIsTracked : 0; // 0xF4 (1)
-	struct TMap<Unknown, Unknown> BlendShapes; // 0xF8 (80)
+	struct TMap<enum class EARFaceBlendShape, float> BlendShapes; // 0xF8 (80)
 
-	struct Unknown GetWorldSpaceEyeTransform(enum class Unknow Eye); // Function AugmentedReality.ARFaceGeometry.GetWorldSpaceEyeTransform(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C4AB0>
-	struct Unknown GetLocalSpaceEyeTransform(enum class Unknow Eye); // Function AugmentedReality.ARFaceGeometry.GetLocalSpaceEyeTransform(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C48F0>
-	float GetBlendShapeValue(enum class Unknow BlendShape); // Function AugmentedReality.ARFaceGeometry.GetBlendShapeValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C43E0>
-	struct TMap<Unknown, Unknown> GetBlendShapes(); // Function AugmentedReality.ARFaceGeometry.GetBlendShapes(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C4470>
+	struct FTransform GetWorldSpaceEyeTransform(enum class EAREye Eye); // Function AugmentedReality.ARFaceGeometry.GetWorldSpaceEyeTransform(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C4AB0>
+	struct FTransform GetLocalSpaceEyeTransform(enum class EAREye Eye); // Function AugmentedReality.ARFaceGeometry.GetLocalSpaceEyeTransform(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C48F0>
+	float GetBlendShapeValue(enum class EARFaceBlendShape BlendShape); // Function AugmentedReality.ARFaceGeometry.GetBlendShapeValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C43E0>
+	struct TMap<enum class EARFaceBlendShape, float> GetBlendShapes(); // Function AugmentedReality.ARFaceGeometry.GetBlendShapes(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C4470>
 };
 
 // Class AugmentedReality.AREnvironmentCaptureProbe
@@ -562,10 +562,10 @@ class UAREnvironmentCaptureProbe : public UARTrackedGeometry {
 
 public:
 
-	struct Unknown EnvironmentCaptureTexture; // 0xF8 (8)
+	struct UAREnvironmentCaptureProbeTexture EnvironmentCaptureTexture; // 0xF8 (8)
 
-	struct Unknown GetExtent(); // Function AugmentedReality.AREnvironmentCaptureProbe.GetExtent(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C4820>
-	struct Unknown GetEnvironmentCaptureTexture(); // Function AugmentedReality.AREnvironmentCaptureProbe.GetEnvironmentCaptureTexture(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x36C47B0>
+	struct FVector GetExtent(); // Function AugmentedReality.AREnvironmentCaptureProbe.GetExtent(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C4820>
+	struct UAREnvironmentCaptureProbeTexture GetEnvironmentCaptureTexture(); // Function AugmentedReality.AREnvironmentCaptureProbe.GetEnvironmentCaptureTexture(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x36C47B0>
 };
 
 // Class AugmentedReality.ARTrackedObject
@@ -573,9 +573,9 @@ class UARTrackedObject : public UARTrackedGeometry {
 
 public:
 
-	struct Unknown DetectedObject; // 0xE8 (8)
+	struct UARCandidateObject DetectedObject; // 0xE8 (8)
 
-	struct Unknown GetDetectedObject(); // Function AugmentedReality.ARTrackedObject.GetDetectedObject(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C4790>
+	struct UARCandidateObject GetDetectedObject(); // Function AugmentedReality.ARTrackedObject.GetDetectedObject(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C4790>
 };
 
 // Class AugmentedReality.ARTrackableNotifyComponent
@@ -611,16 +611,16 @@ class UARCandidateObject : public UDataAsset {
 
 public:
 
-	struct TArray<Unknown> CandidateObjectData; // 0x30 (16)
+	struct TArray<char> CandidateObjectData; // 0x30 (16)
 	struct FString FriendlyName; // 0x40 (16)
-	struct Unknown BoundingBox; // 0x50 (28)
+	struct FBox BoundingBox; // 0x50 (28)
 
 	void SetFriendlyName(struct FString NewName); // Function AugmentedReality.ARCandidateObject.SetFriendlyName(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x36C73F0>
-	void SetCandidateObjectData(struct TArray<Unknown>& InCandidateObject); // Function AugmentedReality.ARCandidateObject.SetCandidateObjectData(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x36C7340>
-	void SetBoundingBox(struct Unknown& InBoundingBox); // Function AugmentedReality.ARCandidateObject.SetBoundingBox(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x36C72A0>
+	void SetCandidateObjectData(struct TArray<char>& InCandidateObject); // Function AugmentedReality.ARCandidateObject.SetCandidateObjectData(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x36C7340>
+	void SetBoundingBox(struct FBox& InBoundingBox); // Function AugmentedReality.ARCandidateObject.SetBoundingBox(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x36C72A0>
 	struct FString GetFriendlyName(); // Function AugmentedReality.ARCandidateObject.GetFriendlyName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C7210>
-	struct TArray<Unknown> GetCandidateObjectData(); // Function AugmentedReality.ARCandidateObject.GetCandidateObjectData(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C7190>
-	struct Unknown GetBoundingBox(); // Function AugmentedReality.ARCandidateObject.GetBoundingBox(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C7160>
+	struct TArray<char> GetCandidateObjectData(); // Function AugmentedReality.ARCandidateObject.GetCandidateObjectData(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C7190>
+	struct FBox GetBoundingBox(); // Function AugmentedReality.ARCandidateObject.GetBoundingBox(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C7160>
 };
 
 // ScriptStruct AugmentedReality.ARSharedWorldReplicationState
@@ -632,31 +632,31 @@ struct FARSharedWorldReplicationState {
 // ScriptStruct AugmentedReality.ARTraceResult
 struct FARTraceResult {
 	float DistanceFromCamera; // 0x0 (4)
-	enum class Unknow TraceChannel; // 0x4 (1)
-	struct Unknown LocalToTrackingTransform; // 0x10 (48)
-	struct Unknown TrackedGeometry; // 0x40 (8)
+	enum class EARLineTraceChannels TraceChannel; // 0x4 (1)
+	struct FTransform LocalToTrackingTransform; // 0x10 (48)
+	struct UARTrackedGeometry TrackedGeometry; // 0x40 (8)
 };
 
 // ScriptStruct AugmentedReality.ARPose3D
 struct FARPose3D {
-	struct Unknown SkeletonDefinition; // 0x0 (40)
-	struct TArray<Unknown> JointTransforms; // 0x28 (16)
-	struct TArray<Unknown> IsJointTracked; // 0x38 (16)
-	enum class Unknow JointTransformSpace; // 0x48 (1)
+	struct FARSkeletonDefinition SkeletonDefinition; // 0x0 (40)
+	struct TArray<struct FTransform> JointTransforms; // 0x28 (16)
+	struct TArray<char> IsJointTracked; // 0x38 (16)
+	enum class EARJointTransformSpace JointTransformSpace; // 0x48 (1)
 };
 
 // ScriptStruct AugmentedReality.ARSkeletonDefinition
 struct FARSkeletonDefinition {
 	int32_t NumJoints; // 0x0 (4)
-	struct TArray<Unknown> JointNames; // 0x8 (16)
-	struct TArray<Unknown> ParentIndices; // 0x18 (16)
+	struct TArray<struct FName> JointNames; // 0x8 (16)
+	struct TArray<int32_t> ParentIndices; // 0x18 (16)
 };
 
 // ScriptStruct AugmentedReality.ARPose2D
 struct FARPose2D {
-	struct Unknown SkeletonDefinition; // 0x0 (40)
-	struct TArray<Unknown> JointLocations; // 0x28 (16)
-	struct TArray<Unknown> IsJointTracked; // 0x38 (16)
+	struct FARSkeletonDefinition SkeletonDefinition; // 0x0 (40)
+	struct TArray<struct FVector2D> JointLocations; // 0x28 (16)
+	struct TArray<char> IsJointTracked; // 0x38 (16)
 };
 
 // ScriptStruct AugmentedReality.ARVideoFormat
@@ -669,7 +669,7 @@ struct FARVideoFormat {
 // ScriptStruct AugmentedReality.ARSessionStatus
 struct FARSessionStatus {
 	struct FString AdditionalInfo; // 0x0 (16)
-	enum class Unknow status; // 0x10 (1)
+	enum class EARSessionStatus status; // 0x10 (1)
 };
 
 // Function AugmentedReality.ARSessionConfig.ShouldResetTrackedObjects
@@ -763,11 +763,11 @@ inline char UARSessionConfig::ShouldEnableAutoFocus() {
 }
 
 // Function AugmentedReality.ARSessionConfig.SetWorldMapData
-inline void UARSessionConfig::SetWorldMapData(struct TArray<Unknown> WorldMapData) {
+inline void UARSessionConfig::SetWorldMapData(struct TArray<char> WorldMapData) {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARSessionConfig.SetWorldMapData");
 
 	struct SetWorldMapData_Params {
-		struct TArray<Unknown> WorldMapData;
+		struct TArray<char> WorldMapData;
 	}; SetWorldMapData_Params Params;
 
 	Params.WorldMapData = WorldMapData;
@@ -778,11 +778,11 @@ inline void UARSessionConfig::SetWorldMapData(struct TArray<Unknown> WorldMapDat
 }
 
 // Function AugmentedReality.ARSessionConfig.SetSessionTrackingFeatureToEnable
-inline void UARSessionConfig::SetSessionTrackingFeatureToEnable(enum class Unknow InSessionTrackingFeature) {
+inline void UARSessionConfig::SetSessionTrackingFeatureToEnable(enum class EARSessionTrackingFeature InSessionTrackingFeature) {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARSessionConfig.SetSessionTrackingFeatureToEnable");
 
 	struct SetSessionTrackingFeatureToEnable_Params {
-		enum class Unknow InSessionTrackingFeature;
+		enum class EARSessionTrackingFeature InSessionTrackingFeature;
 	}; SetSessionTrackingFeatureToEnable_Params Params;
 
 	Params.InSessionTrackingFeature = InSessionTrackingFeature;
@@ -823,11 +823,11 @@ inline void UARSessionConfig::SetResetCameraTracking(char bNewValue) {
 }
 
 // Function AugmentedReality.ARSessionConfig.SetFaceTrackingUpdate
-inline void UARSessionConfig::SetFaceTrackingUpdate(enum class Unknow InUpdate) {
+inline void UARSessionConfig::SetFaceTrackingUpdate(enum class EARFaceTrackingUpdate InUpdate) {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARSessionConfig.SetFaceTrackingUpdate");
 
 	struct SetFaceTrackingUpdate_Params {
-		enum class Unknow InUpdate;
+		enum class EARFaceTrackingUpdate InUpdate;
 	}; SetFaceTrackingUpdate_Params Params;
 
 	Params.InUpdate = InUpdate;
@@ -838,11 +838,11 @@ inline void UARSessionConfig::SetFaceTrackingUpdate(enum class Unknow InUpdate) 
 }
 
 // Function AugmentedReality.ARSessionConfig.SetFaceTrackingDirection
-inline void UARSessionConfig::SetFaceTrackingDirection(enum class Unknow InDirection) {
+inline void UARSessionConfig::SetFaceTrackingDirection(enum class EARFaceTrackingDirection InDirection) {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARSessionConfig.SetFaceTrackingDirection");
 
 	struct SetFaceTrackingDirection_Params {
-		enum class Unknow InDirection;
+		enum class EARFaceTrackingDirection InDirection;
 	}; SetFaceTrackingDirection_Params Params;
 
 	Params.InDirection = InDirection;
@@ -868,11 +868,11 @@ inline void UARSessionConfig::SetEnableAutoFocus(char bNewValue) {
 }
 
 // Function AugmentedReality.ARSessionConfig.SetDesiredVideoFormat
-inline void UARSessionConfig::SetDesiredVideoFormat(struct Unknown NewFormat) {
+inline void UARSessionConfig::SetDesiredVideoFormat(struct FARVideoFormat NewFormat) {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARSessionConfig.SetDesiredVideoFormat");
 
 	struct SetDesiredVideoFormat_Params {
-		struct Unknown NewFormat;
+		struct FARVideoFormat NewFormat;
 	}; SetDesiredVideoFormat_Params Params;
 
 	Params.NewFormat = NewFormat;
@@ -883,11 +883,11 @@ inline void UARSessionConfig::SetDesiredVideoFormat(struct Unknown NewFormat) {
 }
 
 // Function AugmentedReality.ARSessionConfig.SetCandidateObjectList
-inline void UARSessionConfig::SetCandidateObjectList(struct TArray<Unknown>& InCandidateObjects) {
+inline void UARSessionConfig::SetCandidateObjectList(struct TArray<struct UARCandidateObject>& InCandidateObjects) {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARSessionConfig.SetCandidateObjectList");
 
 	struct SetCandidateObjectList_Params {
-		struct TArray<Unknown>& InCandidateObjects;
+		struct TArray<struct UARCandidateObject>& InCandidateObjects;
 	}; SetCandidateObjectList_Params Params;
 
 
@@ -900,12 +900,12 @@ inline void UARSessionConfig::SetCandidateObjectList(struct TArray<Unknown>& InC
 }
 
 // Function AugmentedReality.ARSessionConfig.GetWorldMapData
-inline struct TArray<Unknown> UARSessionConfig::GetWorldMapData() {
+inline struct TArray<char> UARSessionConfig::GetWorldMapData() {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARSessionConfig.GetWorldMapData");
 
 	struct GetWorldMapData_Params {
 		
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<char> ReturnValue;
 
 	}; GetWorldMapData_Params Params;
 
@@ -918,12 +918,12 @@ inline struct TArray<Unknown> UARSessionConfig::GetWorldMapData() {
 }
 
 // Function AugmentedReality.ARSessionConfig.GetWorldAlignment
-inline enum class Unknow UARSessionConfig::GetWorldAlignment() {
+inline enum class EARWorldAlignment UARSessionConfig::GetWorldAlignment() {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARSessionConfig.GetWorldAlignment");
 
 	struct GetWorldAlignment_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class EARWorldAlignment ReturnValue;
 
 	}; GetWorldAlignment_Params Params;
 
@@ -936,12 +936,12 @@ inline enum class Unknow UARSessionConfig::GetWorldAlignment() {
 }
 
 // Function AugmentedReality.ARSessionConfig.GetSessionType
-inline enum class Unknow UARSessionConfig::GetSessionType() {
+inline enum class EARSessionType UARSessionConfig::GetSessionType() {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARSessionConfig.GetSessionType");
 
 	struct GetSessionType_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class EARSessionType ReturnValue;
 
 	}; GetSessionType_Params Params;
 
@@ -954,12 +954,12 @@ inline enum class Unknow UARSessionConfig::GetSessionType() {
 }
 
 // Function AugmentedReality.ARSessionConfig.GetPlaneDetectionMode
-inline enum class Unknow UARSessionConfig::GetPlaneDetectionMode() {
+inline enum class EARPlaneDetectionMode UARSessionConfig::GetPlaneDetectionMode() {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARSessionConfig.GetPlaneDetectionMode");
 
 	struct GetPlaneDetectionMode_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class EARPlaneDetectionMode ReturnValue;
 
 	}; GetPlaneDetectionMode_Params Params;
 
@@ -990,12 +990,12 @@ inline int32_t UARSessionConfig::GetMaxNumSimultaneousImagesTracked() {
 }
 
 // Function AugmentedReality.ARSessionConfig.GetLightEstimationMode
-inline enum class Unknow UARSessionConfig::GetLightEstimationMode() {
+inline enum class EARLightEstimationMode UARSessionConfig::GetLightEstimationMode() {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARSessionConfig.GetLightEstimationMode");
 
 	struct GetLightEstimationMode_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class EARLightEstimationMode ReturnValue;
 
 	}; GetLightEstimationMode_Params Params;
 
@@ -1008,12 +1008,12 @@ inline enum class Unknow UARSessionConfig::GetLightEstimationMode() {
 }
 
 // Function AugmentedReality.ARSessionConfig.GetFrameSyncMode
-inline enum class Unknow UARSessionConfig::GetFrameSyncMode() {
+inline enum class EARFrameSyncMode UARSessionConfig::GetFrameSyncMode() {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARSessionConfig.GetFrameSyncMode");
 
 	struct GetFrameSyncMode_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class EARFrameSyncMode ReturnValue;
 
 	}; GetFrameSyncMode_Params Params;
 
@@ -1026,12 +1026,12 @@ inline enum class Unknow UARSessionConfig::GetFrameSyncMode() {
 }
 
 // Function AugmentedReality.ARSessionConfig.GetFaceTrackingUpdate
-inline enum class Unknow UARSessionConfig::GetFaceTrackingUpdate() {
+inline enum class EARFaceTrackingUpdate UARSessionConfig::GetFaceTrackingUpdate() {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARSessionConfig.GetFaceTrackingUpdate");
 
 	struct GetFaceTrackingUpdate_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class EARFaceTrackingUpdate ReturnValue;
 
 	}; GetFaceTrackingUpdate_Params Params;
 
@@ -1044,12 +1044,12 @@ inline enum class Unknow UARSessionConfig::GetFaceTrackingUpdate() {
 }
 
 // Function AugmentedReality.ARSessionConfig.GetFaceTrackingDirection
-inline enum class Unknow UARSessionConfig::GetFaceTrackingDirection() {
+inline enum class EARFaceTrackingDirection UARSessionConfig::GetFaceTrackingDirection() {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARSessionConfig.GetFaceTrackingDirection");
 
 	struct GetFaceTrackingDirection_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class EARFaceTrackingDirection ReturnValue;
 
 	}; GetFaceTrackingDirection_Params Params;
 
@@ -1062,12 +1062,12 @@ inline enum class Unknow UARSessionConfig::GetFaceTrackingDirection() {
 }
 
 // Function AugmentedReality.ARSessionConfig.GetEnvironmentCaptureProbeType
-inline enum class Unknow UARSessionConfig::GetEnvironmentCaptureProbeType() {
+inline enum class EAREnvironmentCaptureProbeType UARSessionConfig::GetEnvironmentCaptureProbeType() {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARSessionConfig.GetEnvironmentCaptureProbeType");
 
 	struct GetEnvironmentCaptureProbeType_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class EAREnvironmentCaptureProbeType ReturnValue;
 
 	}; GetEnvironmentCaptureProbeType_Params Params;
 
@@ -1080,12 +1080,12 @@ inline enum class Unknow UARSessionConfig::GetEnvironmentCaptureProbeType() {
 }
 
 // Function AugmentedReality.ARSessionConfig.GetEnabledSessionTrackingFeature
-inline enum class Unknow UARSessionConfig::GetEnabledSessionTrackingFeature() {
+inline enum class EARSessionTrackingFeature UARSessionConfig::GetEnabledSessionTrackingFeature() {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARSessionConfig.GetEnabledSessionTrackingFeature");
 
 	struct GetEnabledSessionTrackingFeature_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class EARSessionTrackingFeature ReturnValue;
 
 	}; GetEnabledSessionTrackingFeature_Params Params;
 
@@ -1098,12 +1098,12 @@ inline enum class Unknow UARSessionConfig::GetEnabledSessionTrackingFeature() {
 }
 
 // Function AugmentedReality.ARSessionConfig.GetDesiredVideoFormat
-inline struct Unknown UARSessionConfig::GetDesiredVideoFormat() {
+inline struct FARVideoFormat UARSessionConfig::GetDesiredVideoFormat() {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARSessionConfig.GetDesiredVideoFormat");
 
 	struct GetDesiredVideoFormat_Params {
 		
-		struct Unknown ReturnValue;
+		struct FARVideoFormat ReturnValue;
 
 	}; GetDesiredVideoFormat_Params Params;
 
@@ -1116,12 +1116,12 @@ inline struct Unknown UARSessionConfig::GetDesiredVideoFormat() {
 }
 
 // Function AugmentedReality.ARSessionConfig.GetCandidateObjectList
-inline struct TArray<Unknown> UARSessionConfig::GetCandidateObjectList() {
+inline struct TArray<struct UARCandidateObject> UARSessionConfig::GetCandidateObjectList() {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARSessionConfig.GetCandidateObjectList");
 
 	struct GetCandidateObjectList_Params {
 		
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<struct UARCandidateObject> ReturnValue;
 
 	}; GetCandidateObjectList_Params Params;
 
@@ -1134,12 +1134,12 @@ inline struct TArray<Unknown> UARSessionConfig::GetCandidateObjectList() {
 }
 
 // Function AugmentedReality.ARSessionConfig.GetCandidateImageList
-inline struct TArray<Unknown> UARSessionConfig::GetCandidateImageList() {
+inline struct TArray<struct UARCandidateImage> UARSessionConfig::GetCandidateImageList() {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARSessionConfig.GetCandidateImageList");
 
 	struct GetCandidateImageList_Params {
 		
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<struct UARCandidateImage> ReturnValue;
 
 	}; GetCandidateImageList_Params Params;
 
@@ -1152,11 +1152,11 @@ inline struct TArray<Unknown> UARSessionConfig::GetCandidateImageList() {
 }
 
 // Function AugmentedReality.ARSessionConfig.AddCandidateObject
-inline void UARSessionConfig::AddCandidateObject(struct Unknown CandidateObject) {
+inline void UARSessionConfig::AddCandidateObject(struct UARCandidateObject CandidateObject) {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARSessionConfig.AddCandidateObject");
 
 	struct AddCandidateObject_Params {
-		struct Unknown CandidateObject;
+		struct UARCandidateObject CandidateObject;
 	}; AddCandidateObject_Params Params;
 
 	Params.CandidateObject = CandidateObject;
@@ -1167,11 +1167,11 @@ inline void UARSessionConfig::AddCandidateObject(struct Unknown CandidateObject)
 }
 
 // Function AugmentedReality.ARSessionConfig.AddCandidateImage
-inline void UARSessionConfig::AddCandidateImage(struct Unknown NewCandidateImage) {
+inline void UARSessionConfig::AddCandidateImage(struct UARCandidateImage NewCandidateImage) {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARSessionConfig.AddCandidateImage");
 
 	struct AddCandidateImage_Params {
-		struct Unknown NewCandidateImage;
+		struct UARCandidateImage NewCandidateImage;
 	}; AddCandidateImage_Params Params;
 
 	Params.NewCandidateImage = NewCandidateImage;
@@ -1218,12 +1218,12 @@ inline float UARBasicLightEstimate::GetAmbientColorTemperatureKelvin() {
 }
 
 // Function AugmentedReality.ARBasicLightEstimate.GetAmbientColor
-inline struct Unknown UARBasicLightEstimate::GetAmbientColor() {
+inline struct FLinearColor UARBasicLightEstimate::GetAmbientColor() {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARBasicLightEstimate.GetAmbientColor");
 
 	struct GetAmbientColor_Params {
 		
-		struct Unknown ReturnValue;
+		struct FLinearColor ReturnValue;
 
 	}; GetAmbientColor_Params Params;
 
@@ -1272,12 +1272,12 @@ inline float UARCandidateImage::GetPhysicalHeight() {
 }
 
 // Function AugmentedReality.ARCandidateImage.GetOrientation
-inline enum class Unknow UARCandidateImage::GetOrientation() {
+inline enum class EARCandidateImageOrientation UARCandidateImage::GetOrientation() {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARCandidateImage.GetOrientation");
 
 	struct GetOrientation_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class EARCandidateImageOrientation ReturnValue;
 
 	}; GetOrientation_Params Params;
 
@@ -1308,12 +1308,12 @@ inline struct FString UARCandidateImage::GetFriendlyName() {
 }
 
 // Function AugmentedReality.ARCandidateImage.GetCandidateTexture
-inline struct Unknown UARCandidateImage::GetCandidateTexture() {
+inline struct UTexture2D UARCandidateImage::GetCandidateTexture() {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARCandidateImage.GetCandidateTexture");
 
 	struct GetCandidateTexture_Params {
 		
-		struct Unknown ReturnValue;
+		struct UTexture2D ReturnValue;
 
 	}; GetCandidateTexture_Params Params;
 
@@ -1326,12 +1326,12 @@ inline struct Unknown UARCandidateImage::GetCandidateTexture() {
 }
 
 // Function AugmentedReality.ARSaveWorldAsyncTaskBlueprintProxy.ARSaveWorld
-inline struct Unknown UARSaveWorldAsyncTaskBlueprintProxy::ARSaveWorld(struct Unknown WorldContextObject) {
+inline struct UARSaveWorldAsyncTaskBlueprintProxy UARSaveWorldAsyncTaskBlueprintProxy::ARSaveWorld(struct Object WorldContextObject) {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARSaveWorldAsyncTaskBlueprintProxy.ARSaveWorld");
 
 	struct ARSaveWorld_Params {
-		struct Unknown WorldContextObject;
-		struct Unknown ReturnValue;
+		struct Object WorldContextObject;
+		struct UARSaveWorldAsyncTaskBlueprintProxy ReturnValue;
 
 	}; ARSaveWorld_Params Params;
 
@@ -1345,14 +1345,14 @@ inline struct Unknown UARSaveWorldAsyncTaskBlueprintProxy::ARSaveWorld(struct Un
 }
 
 // Function AugmentedReality.ARGetCandidateObjectAsyncTaskBlueprintProxy.ARGetCandidateObject
-inline struct Unknown UARGetCandidateObjectAsyncTaskBlueprintProxy::ARGetCandidateObject(struct Unknown WorldContextObject, struct Unknown Location, struct Unknown Extent) {
+inline struct UARGetCandidateObjectAsyncTaskBlueprintProxy UARGetCandidateObjectAsyncTaskBlueprintProxy::ARGetCandidateObject(struct Object WorldContextObject, struct FVector Location, struct FVector Extent) {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARGetCandidateObjectAsyncTaskBlueprintProxy.ARGetCandidateObject");
 
 	struct ARGetCandidateObject_Params {
-		struct Unknown WorldContextObject;
-		struct Unknown Location;
-		struct Unknown Extent;
-		struct Unknown ReturnValue;
+		struct Object WorldContextObject;
+		struct FVector Location;
+		struct FVector Extent;
+		struct UARGetCandidateObjectAsyncTaskBlueprintProxy ReturnValue;
 
 	}; ARGetCandidateObject_Params Params;
 
@@ -1368,12 +1368,12 @@ inline struct Unknown UARGetCandidateObjectAsyncTaskBlueprintProxy::ARGetCandida
 }
 
 // Function AugmentedReality.ARPin.GetTrackingState
-inline enum class Unknow UARPin::GetTrackingState() {
+inline enum class EARTrackingState UARPin::GetTrackingState() {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARPin.GetTrackingState");
 
 	struct GetTrackingState_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class EARTrackingState ReturnValue;
 
 	}; GetTrackingState_Params Params;
 
@@ -1386,12 +1386,12 @@ inline enum class Unknow UARPin::GetTrackingState() {
 }
 
 // Function AugmentedReality.ARPin.GetTrackedGeometry
-inline struct Unknown UARPin::GetTrackedGeometry() {
+inline struct UARTrackedGeometry UARPin::GetTrackedGeometry() {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARPin.GetTrackedGeometry");
 
 	struct GetTrackedGeometry_Params {
 		
-		struct Unknown ReturnValue;
+		struct UARTrackedGeometry ReturnValue;
 
 	}; GetTrackedGeometry_Params Params;
 
@@ -1404,12 +1404,12 @@ inline struct Unknown UARPin::GetTrackedGeometry() {
 }
 
 // Function AugmentedReality.ARPin.GetPinnedComponent
-inline struct Unknown UARPin::GetPinnedComponent() {
+inline struct USceneComponent UARPin::GetPinnedComponent() {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARPin.GetPinnedComponent");
 
 	struct GetPinnedComponent_Params {
 		
-		struct Unknown ReturnValue;
+		struct USceneComponent ReturnValue;
 
 	}; GetPinnedComponent_Params Params;
 
@@ -1422,12 +1422,12 @@ inline struct Unknown UARPin::GetPinnedComponent() {
 }
 
 // Function AugmentedReality.ARPin.GetLocalToWorldTransform
-inline struct Unknown UARPin::GetLocalToWorldTransform() {
+inline struct FTransform UARPin::GetLocalToWorldTransform() {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARPin.GetLocalToWorldTransform");
 
 	struct GetLocalToWorldTransform_Params {
 		
-		struct Unknown ReturnValue;
+		struct FTransform ReturnValue;
 
 	}; GetLocalToWorldTransform_Params Params;
 
@@ -1440,12 +1440,12 @@ inline struct Unknown UARPin::GetLocalToWorldTransform() {
 }
 
 // Function AugmentedReality.ARPin.GetLocalToTrackingTransform
-inline struct Unknown UARPin::GetLocalToTrackingTransform() {
+inline struct FTransform UARPin::GetLocalToTrackingTransform() {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARPin.GetLocalToTrackingTransform");
 
 	struct GetLocalToTrackingTransform_Params {
 		
-		struct Unknown ReturnValue;
+		struct FTransform ReturnValue;
 
 	}; GetLocalToTrackingTransform_Params Params;
 
@@ -1476,12 +1476,12 @@ inline struct FName UARPin::GetDebugName() {
 }
 
 // Function AugmentedReality.ARPin.DebugDraw
-inline void UARPin::DebugDraw(struct Unknown World, struct Unknown& Color, float Scale, float PersistForSeconds) {
+inline void UARPin::DebugDraw(struct UWorld World, struct FLinearColor& Color, float Scale, float PersistForSeconds) {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARPin.DebugDraw");
 
 	struct DebugDraw_Params {
-		struct Unknown World;
-		struct Unknown& Color;
+		struct UWorld World;
+		struct FLinearColor& Color;
 		float Scale;
 		float PersistForSeconds;
 	}; DebugDraw_Params Params;
@@ -1499,11 +1499,11 @@ inline void UARPin::DebugDraw(struct Unknown World, struct Unknown& Color, float
 }
 
 // Function AugmentedReality.ARSharedWorldGameMode.SetPreviewImageData
-inline void AARSharedWorldGameMode::SetPreviewImageData(struct TArray<Unknown> ImageData) {
+inline void AARSharedWorldGameMode::SetPreviewImageData(struct TArray<char> ImageData) {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARSharedWorldGameMode.SetPreviewImageData");
 
 	struct SetPreviewImageData_Params {
-		struct TArray<Unknown> ImageData;
+		struct TArray<char> ImageData;
 	}; SetPreviewImageData_Params Params;
 
 	Params.ImageData = ImageData;
@@ -1528,11 +1528,11 @@ inline void AARSharedWorldGameMode::SetARWorldSharingIsReady() {
 }
 
 // Function AugmentedReality.ARSharedWorldGameMode.SetARSharedWorldData
-inline void AARSharedWorldGameMode::SetARSharedWorldData(struct TArray<Unknown> ARWorldData) {
+inline void AARSharedWorldGameMode::SetARSharedWorldData(struct TArray<char> ARWorldData) {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARSharedWorldGameMode.SetARSharedWorldData");
 
 	struct SetARSharedWorldData_Params {
-		struct TArray<Unknown> ARWorldData;
+		struct TArray<char> ARWorldData;
 	}; SetARSharedWorldData_Params Params;
 
 	Params.ARWorldData = ARWorldData;
@@ -1543,12 +1543,12 @@ inline void AARSharedWorldGameMode::SetARSharedWorldData(struct TArray<Unknown> 
 }
 
 // Function AugmentedReality.ARSharedWorldGameMode.GetARSharedWorldGameState
-inline struct Unknown AARSharedWorldGameMode::GetARSharedWorldGameState() {
+inline struct AARSharedWorldGameState AARSharedWorldGameMode::GetARSharedWorldGameState() {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARSharedWorldGameMode.GetARSharedWorldGameState");
 
 	struct GetARSharedWorldGameState_Params {
 		
-		struct Unknown ReturnValue;
+		struct AARSharedWorldGameState ReturnValue;
 
 	}; GetARSharedWorldGameState_Params Params;
 
@@ -1575,11 +1575,11 @@ inline void AARSharedWorldGameState::K2_OnARWorldMapIsReady() {
 }
 
 // Function AugmentedReality.ARSkyLight.SetEnvironmentCaptureProbe
-inline void AARSkyLight::SetEnvironmentCaptureProbe(struct Unknown InCaptureProbe) {
+inline void AARSkyLight::SetEnvironmentCaptureProbe(struct UAREnvironmentCaptureProbe InCaptureProbe) {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARSkyLight.SetEnvironmentCaptureProbe");
 
 	struct SetEnvironmentCaptureProbe_Params {
-		struct Unknown InCaptureProbe;
+		struct UAREnvironmentCaptureProbe InCaptureProbe;
 	}; SetEnvironmentCaptureProbe_Params Params;
 
 	Params.InCaptureProbe = InCaptureProbe;
@@ -1608,12 +1608,12 @@ inline char UARTrackedGeometry::IsTracked() {
 }
 
 // Function AugmentedReality.ARTrackedGeometry.GetUnderlyingMesh
-inline struct Unknown UARTrackedGeometry::GetUnderlyingMesh() {
+inline struct UMRMeshComponent UARTrackedGeometry::GetUnderlyingMesh() {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARTrackedGeometry.GetUnderlyingMesh");
 
 	struct GetUnderlyingMesh_Params {
 		
-		struct Unknown ReturnValue;
+		struct UMRMeshComponent ReturnValue;
 
 	}; GetUnderlyingMesh_Params Params;
 
@@ -1626,12 +1626,12 @@ inline struct Unknown UARTrackedGeometry::GetUnderlyingMesh() {
 }
 
 // Function AugmentedReality.ARTrackedGeometry.GetTrackingState
-inline enum class Unknow UARTrackedGeometry::GetTrackingState() {
+inline enum class EARTrackingState UARTrackedGeometry::GetTrackingState() {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARTrackedGeometry.GetTrackingState");
 
 	struct GetTrackingState_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class EARTrackingState ReturnValue;
 
 	}; GetTrackingState_Params Params;
 
@@ -1644,12 +1644,12 @@ inline enum class Unknow UARTrackedGeometry::GetTrackingState() {
 }
 
 // Function AugmentedReality.ARTrackedGeometry.GetObjectClassification
-inline enum class Unknow UARTrackedGeometry::GetObjectClassification() {
+inline enum class EARObjectClassification UARTrackedGeometry::GetObjectClassification() {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARTrackedGeometry.GetObjectClassification");
 
 	struct GetObjectClassification_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class EARObjectClassification ReturnValue;
 
 	}; GetObjectClassification_Params Params;
 
@@ -1662,12 +1662,12 @@ inline enum class Unknow UARTrackedGeometry::GetObjectClassification() {
 }
 
 // Function AugmentedReality.ARTrackedGeometry.GetLocalToWorldTransform
-inline struct Unknown UARTrackedGeometry::GetLocalToWorldTransform() {
+inline struct FTransform UARTrackedGeometry::GetLocalToWorldTransform() {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARTrackedGeometry.GetLocalToWorldTransform");
 
 	struct GetLocalToWorldTransform_Params {
 		
-		struct Unknown ReturnValue;
+		struct FTransform ReturnValue;
 
 	}; GetLocalToWorldTransform_Params Params;
 
@@ -1680,12 +1680,12 @@ inline struct Unknown UARTrackedGeometry::GetLocalToWorldTransform() {
 }
 
 // Function AugmentedReality.ARTrackedGeometry.GetLocalToTrackingTransform
-inline struct Unknown UARTrackedGeometry::GetLocalToTrackingTransform() {
+inline struct FTransform UARTrackedGeometry::GetLocalToTrackingTransform() {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARTrackedGeometry.GetLocalToTrackingTransform");
 
 	struct GetLocalToTrackingTransform_Params {
 		
-		struct Unknown ReturnValue;
+		struct FTransform ReturnValue;
 
 	}; GetLocalToTrackingTransform_Params Params;
 
@@ -1752,12 +1752,12 @@ inline struct FName UARTrackedGeometry::GetDebugName() {
 }
 
 // Function AugmentedReality.ARPlaneGeometry.GetSubsumedBy
-inline struct Unknown UARPlaneGeometry::GetSubsumedBy() {
+inline struct UARPlaneGeometry UARPlaneGeometry::GetSubsumedBy() {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARPlaneGeometry.GetSubsumedBy");
 
 	struct GetSubsumedBy_Params {
 		
-		struct Unknown ReturnValue;
+		struct UARPlaneGeometry ReturnValue;
 
 	}; GetSubsumedBy_Params Params;
 
@@ -1770,12 +1770,12 @@ inline struct Unknown UARPlaneGeometry::GetSubsumedBy() {
 }
 
 // Function AugmentedReality.ARPlaneGeometry.GetOrientation
-inline enum class Unknow UARPlaneGeometry::GetOrientation() {
+inline enum class EARPlaneOrientation UARPlaneGeometry::GetOrientation() {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARPlaneGeometry.GetOrientation");
 
 	struct GetOrientation_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class EARPlaneOrientation ReturnValue;
 
 	}; GetOrientation_Params Params;
 
@@ -1788,12 +1788,12 @@ inline enum class Unknow UARPlaneGeometry::GetOrientation() {
 }
 
 // Function AugmentedReality.ARPlaneGeometry.GetExtent
-inline struct Unknown UARPlaneGeometry::GetExtent() {
+inline struct FVector UARPlaneGeometry::GetExtent() {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARPlaneGeometry.GetExtent");
 
 	struct GetExtent_Params {
 		
-		struct Unknown ReturnValue;
+		struct FVector ReturnValue;
 
 	}; GetExtent_Params Params;
 
@@ -1806,12 +1806,12 @@ inline struct Unknown UARPlaneGeometry::GetExtent() {
 }
 
 // Function AugmentedReality.ARPlaneGeometry.GetCenter
-inline struct Unknown UARPlaneGeometry::GetCenter() {
+inline struct FVector UARPlaneGeometry::GetCenter() {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARPlaneGeometry.GetCenter");
 
 	struct GetCenter_Params {
 		
-		struct Unknown ReturnValue;
+		struct FVector ReturnValue;
 
 	}; GetCenter_Params Params;
 
@@ -1824,12 +1824,12 @@ inline struct Unknown UARPlaneGeometry::GetCenter() {
 }
 
 // Function AugmentedReality.ARPlaneGeometry.GetBoundaryPolygonInLocalSpace
-inline struct TArray<Unknown> UARPlaneGeometry::GetBoundaryPolygonInLocalSpace() {
+inline struct TArray<struct FVector> UARPlaneGeometry::GetBoundaryPolygonInLocalSpace() {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARPlaneGeometry.GetBoundaryPolygonInLocalSpace");
 
 	struct GetBoundaryPolygonInLocalSpace_Params {
 		
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<struct FVector> ReturnValue;
 
 	}; GetBoundaryPolygonInLocalSpace_Params Params;
 
@@ -1842,12 +1842,12 @@ inline struct TArray<Unknown> UARPlaneGeometry::GetBoundaryPolygonInLocalSpace()
 }
 
 // Function AugmentedReality.ARTrackedImage.GetEstimateSize
-inline struct Unknown UARTrackedImage::GetEstimateSize() {
+inline struct FVector2D UARTrackedImage::GetEstimateSize() {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARTrackedImage.GetEstimateSize");
 
 	struct GetEstimateSize_Params {
 		
-		struct Unknown ReturnValue;
+		struct FVector2D ReturnValue;
 
 	}; GetEstimateSize_Params Params;
 
@@ -1860,12 +1860,12 @@ inline struct Unknown UARTrackedImage::GetEstimateSize() {
 }
 
 // Function AugmentedReality.ARTrackedImage.GetDetectedImage
-inline struct Unknown UARTrackedImage::GetDetectedImage() {
+inline struct UARCandidateImage UARTrackedImage::GetDetectedImage() {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARTrackedImage.GetDetectedImage");
 
 	struct GetDetectedImage_Params {
 		
-		struct Unknown ReturnValue;
+		struct UARCandidateImage ReturnValue;
 
 	}; GetDetectedImage_Params Params;
 
@@ -1878,12 +1878,12 @@ inline struct Unknown UARTrackedImage::GetDetectedImage() {
 }
 
 // Function AugmentedReality.ARFaceGeometry.GetWorldSpaceEyeTransform
-inline struct Unknown UARFaceGeometry::GetWorldSpaceEyeTransform(enum class Unknow Eye) {
+inline struct FTransform UARFaceGeometry::GetWorldSpaceEyeTransform(enum class EAREye Eye) {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARFaceGeometry.GetWorldSpaceEyeTransform");
 
 	struct GetWorldSpaceEyeTransform_Params {
-		enum class Unknow Eye;
-		struct Unknown ReturnValue;
+		enum class EAREye Eye;
+		struct FTransform ReturnValue;
 
 	}; GetWorldSpaceEyeTransform_Params Params;
 
@@ -1897,12 +1897,12 @@ inline struct Unknown UARFaceGeometry::GetWorldSpaceEyeTransform(enum class Unkn
 }
 
 // Function AugmentedReality.ARFaceGeometry.GetLocalSpaceEyeTransform
-inline struct Unknown UARFaceGeometry::GetLocalSpaceEyeTransform(enum class Unknow Eye) {
+inline struct FTransform UARFaceGeometry::GetLocalSpaceEyeTransform(enum class EAREye Eye) {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARFaceGeometry.GetLocalSpaceEyeTransform");
 
 	struct GetLocalSpaceEyeTransform_Params {
-		enum class Unknow Eye;
-		struct Unknown ReturnValue;
+		enum class EAREye Eye;
+		struct FTransform ReturnValue;
 
 	}; GetLocalSpaceEyeTransform_Params Params;
 
@@ -1916,11 +1916,11 @@ inline struct Unknown UARFaceGeometry::GetLocalSpaceEyeTransform(enum class Unkn
 }
 
 // Function AugmentedReality.ARFaceGeometry.GetBlendShapeValue
-inline float UARFaceGeometry::GetBlendShapeValue(enum class Unknow BlendShape) {
+inline float UARFaceGeometry::GetBlendShapeValue(enum class EARFaceBlendShape BlendShape) {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARFaceGeometry.GetBlendShapeValue");
 
 	struct GetBlendShapeValue_Params {
-		enum class Unknow BlendShape;
+		enum class EARFaceBlendShape BlendShape;
 		float ReturnValue;
 
 	}; GetBlendShapeValue_Params Params;
@@ -1935,12 +1935,12 @@ inline float UARFaceGeometry::GetBlendShapeValue(enum class Unknow BlendShape) {
 }
 
 // Function AugmentedReality.ARFaceGeometry.GetBlendShapes
-inline struct TMap<Unknown, Unknown> UARFaceGeometry::GetBlendShapes() {
+inline struct TMap<enum class EARFaceBlendShape, float> UARFaceGeometry::GetBlendShapes() {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARFaceGeometry.GetBlendShapes");
 
 	struct GetBlendShapes_Params {
 		
-		struct TMap<Unknown, Unknown> ReturnValue;
+		struct TMap<enum class EARFaceBlendShape, float> ReturnValue;
 
 	}; GetBlendShapes_Params Params;
 
@@ -1953,12 +1953,12 @@ inline struct TMap<Unknown, Unknown> UARFaceGeometry::GetBlendShapes() {
 }
 
 // Function AugmentedReality.AREnvironmentCaptureProbe.GetExtent
-inline struct Unknown UAREnvironmentCaptureProbe::GetExtent() {
+inline struct FVector UAREnvironmentCaptureProbe::GetExtent() {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.AREnvironmentCaptureProbe.GetExtent");
 
 	struct GetExtent_Params {
 		
-		struct Unknown ReturnValue;
+		struct FVector ReturnValue;
 
 	}; GetExtent_Params Params;
 
@@ -1971,12 +1971,12 @@ inline struct Unknown UAREnvironmentCaptureProbe::GetExtent() {
 }
 
 // Function AugmentedReality.AREnvironmentCaptureProbe.GetEnvironmentCaptureTexture
-inline struct Unknown UAREnvironmentCaptureProbe::GetEnvironmentCaptureTexture() {
+inline struct UAREnvironmentCaptureProbeTexture UAREnvironmentCaptureProbe::GetEnvironmentCaptureTexture() {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.AREnvironmentCaptureProbe.GetEnvironmentCaptureTexture");
 
 	struct GetEnvironmentCaptureTexture_Params {
 		
-		struct Unknown ReturnValue;
+		struct UAREnvironmentCaptureProbeTexture ReturnValue;
 
 	}; GetEnvironmentCaptureTexture_Params Params;
 
@@ -1989,12 +1989,12 @@ inline struct Unknown UAREnvironmentCaptureProbe::GetEnvironmentCaptureTexture()
 }
 
 // Function AugmentedReality.ARTrackedObject.GetDetectedObject
-inline struct Unknown UARTrackedObject::GetDetectedObject() {
+inline struct UARCandidateObject UARTrackedObject::GetDetectedObject() {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARTrackedObject.GetDetectedObject");
 
 	struct GetDetectedObject_Params {
 		
-		struct Unknown ReturnValue;
+		struct UARCandidateObject ReturnValue;
 
 	}; GetDetectedObject_Params Params;
 
@@ -2022,11 +2022,11 @@ inline void UARCandidateObject::SetFriendlyName(struct FString NewName) {
 }
 
 // Function AugmentedReality.ARCandidateObject.SetCandidateObjectData
-inline void UARCandidateObject::SetCandidateObjectData(struct TArray<Unknown>& InCandidateObject) {
+inline void UARCandidateObject::SetCandidateObjectData(struct TArray<char>& InCandidateObject) {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARCandidateObject.SetCandidateObjectData");
 
 	struct SetCandidateObjectData_Params {
-		struct TArray<Unknown>& InCandidateObject;
+		struct TArray<char>& InCandidateObject;
 	}; SetCandidateObjectData_Params Params;
 
 
@@ -2039,11 +2039,11 @@ inline void UARCandidateObject::SetCandidateObjectData(struct TArray<Unknown>& I
 }
 
 // Function AugmentedReality.ARCandidateObject.SetBoundingBox
-inline void UARCandidateObject::SetBoundingBox(struct Unknown& InBoundingBox) {
+inline void UARCandidateObject::SetBoundingBox(struct FBox& InBoundingBox) {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARCandidateObject.SetBoundingBox");
 
 	struct SetBoundingBox_Params {
-		struct Unknown& InBoundingBox;
+		struct FBox& InBoundingBox;
 	}; SetBoundingBox_Params Params;
 
 
@@ -2074,12 +2074,12 @@ inline struct FString UARCandidateObject::GetFriendlyName() {
 }
 
 // Function AugmentedReality.ARCandidateObject.GetCandidateObjectData
-inline struct TArray<Unknown> UARCandidateObject::GetCandidateObjectData() {
+inline struct TArray<char> UARCandidateObject::GetCandidateObjectData() {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARCandidateObject.GetCandidateObjectData");
 
 	struct GetCandidateObjectData_Params {
 		
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<char> ReturnValue;
 
 	}; GetCandidateObjectData_Params Params;
 
@@ -2092,12 +2092,12 @@ inline struct TArray<Unknown> UARCandidateObject::GetCandidateObjectData() {
 }
 
 // Function AugmentedReality.ARCandidateObject.GetBoundingBox
-inline struct Unknown UARCandidateObject::GetBoundingBox() {
+inline struct FBox UARCandidateObject::GetBoundingBox() {
 	static auto fn = UObject::FindObject<UFunction>("Function AugmentedReality.ARCandidateObject.GetBoundingBox");
 
 	struct GetBoundingBox_Params {
 		
-		struct Unknown ReturnValue;
+		struct FBox ReturnValue;
 
 	}; GetBoundingBox_Params Params;
 

@@ -29,25 +29,25 @@ public:
 
 	struct FString ObjectUID; // 0x228 (16)
 	int32_t UserIndex; // 0x238 (4)
-	enum class Unknow AutoPinType; // 0x23C (1)
+	enum class EMagicLeapAutoPinType AutoPinType; // 0x23C (1)
 	char bShouldPinActor : 0; // 0x23D (1)
-	struct Unknown* PinDataClass; // 0x240 (8)
+	struct UClass* PinDataClass; // 0x240 (8)
 	struct FMulticastInlineDelegate OnPersistentEntityPinned; // 0x248 (16)
 	struct FMulticastInlineDelegate OnPersistentEntityPinLost; // 0x258 (16)
-	struct Unknown PinnedCFUID; // 0x268 (16)
-	struct Unknown PinnedSceneComponent; // 0x278 (8)
-	struct Unknown PinData; // 0x280 (8)
+	struct FGuid PinnedCFUID; // 0x268 (16)
+	struct USceneComponent PinnedSceneComponent; // 0x278 (8)
+	struct UMagicLeapARPinSaveGame PinData; // 0x280 (8)
 
 	void UnPin(); // Function MagicLeapARPin.MagicLeapARPinComponent.UnPin(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x17CF240>
-	char PinSceneComponent(struct Unknown ComponentToPin); // Function MagicLeapARPin.MagicLeapARPinComponent.PinSceneComponent(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x17CF110>
+	char PinSceneComponent(struct USceneComponent ComponentToPin); // Function MagicLeapARPin.MagicLeapARPinComponent.PinSceneComponent(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x17CF110>
 	char PinRestoredOrSynced(); // Function MagicLeapARPin.MagicLeapARPinComponent.PinRestoredOrSynced(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17CF0E0>
-	char PinActor(struct Unknown ActorToPin); // Function MagicLeapARPin.MagicLeapARPinComponent.PinActor(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x17CF050>
+	char PinActor(struct UActor ActorToPin); // Function MagicLeapARPin.MagicLeapARPinComponent.PinActor(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x17CF050>
 	void PersistentEntityPinned__DelegateSignature(char bRestoredOrSynced); // DelegateFunction MagicLeapARPin.MagicLeapARPinComponent.PersistentEntityPinned__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B80160>
 	void PersistentEntityPinLost__DelegateSignature(); // DelegateFunction MagicLeapARPin.MagicLeapARPinComponent.PersistentEntityPinLost__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B80160>
 	char IsPinned(); // Function MagicLeapARPin.MagicLeapARPinComponent.IsPinned(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17CEFF0>
-	char GetPinState(struct Unknown& State); // Function MagicLeapARPin.MagicLeapARPinComponent.GetPinState(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17CEE90>
-	char GetPinnedPinID(struct Unknown& PinID); // Function MagicLeapARPin.MagicLeapARPinComponent.GetPinnedPinID(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x17CEF40>
-	struct Unknown GetPinData(struct Unknown* PinDataClass); // Function MagicLeapARPin.MagicLeapARPinComponent.GetPinData(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x17CEE00>
+	char GetPinState(struct FMagicLeapARPinState& State); // Function MagicLeapARPin.MagicLeapARPinComponent.GetPinState(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17CEE90>
+	char GetPinnedPinID(struct FGuid& PinID); // Function MagicLeapARPin.MagicLeapARPinComponent.GetPinnedPinID(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x17CEF40>
+	struct UMagicLeapARPinSaveGame GetPinData(struct UClass* PinDataClass); // Function MagicLeapARPin.MagicLeapARPinComponent.GetPinData(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x17CEE00>
 };
 
 // Class MagicLeapARPin.MagicLeapARPinSettings
@@ -56,7 +56,7 @@ class UMagicLeapARPinSettings : public Object {
 public:
 
 	float UpdateCheckFrequency; // 0x28 (4)
-	struct Unknown OnUpdatedEventTriggerDelta; // 0x2C (16)
+	struct FMagicLeapARPinState OnUpdatedEventTriggerDelta; // 0x2C (16)
 };
 
 // Class MagicLeapARPin.MagicLeapARPinSaveGame
@@ -64,9 +64,9 @@ class UMagicLeapARPinSaveGame : public USaveGame {
 
 public:
 
-	struct Unknown PinnedID; // 0x28 (16)
-	struct Unknown ComponentWorldTransform; // 0x40 (48)
-	struct Unknown PinTransform; // 0x70 (48)
+	struct FGuid PinnedID; // 0x28 (16)
+	struct FTransform ComponentWorldTransform; // 0x40 (48)
+	struct FTransform PinTransform; // 0x70 (48)
 };
 
 // ScriptStruct MagicLeapARPin.MagicLeapARPinState
@@ -92,11 +92,11 @@ inline void UMagicLeapARPinComponent::UnPin() {
 }
 
 // Function MagicLeapARPin.MagicLeapARPinComponent.PinSceneComponent
-inline char UMagicLeapARPinComponent::PinSceneComponent(struct Unknown ComponentToPin) {
+inline char UMagicLeapARPinComponent::PinSceneComponent(struct USceneComponent ComponentToPin) {
 	static auto fn = UObject::FindObject<UFunction>("Function MagicLeapARPin.MagicLeapARPinComponent.PinSceneComponent");
 
 	struct PinSceneComponent_Params {
-		struct Unknown ComponentToPin;
+		struct USceneComponent ComponentToPin;
 		char ReturnValue;
 
 	}; PinSceneComponent_Params Params;
@@ -129,11 +129,11 @@ inline char UMagicLeapARPinComponent::PinRestoredOrSynced() {
 }
 
 // Function MagicLeapARPin.MagicLeapARPinComponent.PinActor
-inline char UMagicLeapARPinComponent::PinActor(struct Unknown ActorToPin) {
+inline char UMagicLeapARPinComponent::PinActor(struct UActor ActorToPin) {
 	static auto fn = UObject::FindObject<UFunction>("Function MagicLeapARPin.MagicLeapARPinComponent.PinActor");
 
 	struct PinActor_Params {
-		struct Unknown ActorToPin;
+		struct UActor ActorToPin;
 		char ReturnValue;
 
 	}; PinActor_Params Params;
@@ -195,11 +195,11 @@ inline char UMagicLeapARPinComponent::IsPinned() {
 }
 
 // Function MagicLeapARPin.MagicLeapARPinComponent.GetPinState
-inline char UMagicLeapARPinComponent::GetPinState(struct Unknown& State) {
+inline char UMagicLeapARPinComponent::GetPinState(struct FMagicLeapARPinState& State) {
 	static auto fn = UObject::FindObject<UFunction>("Function MagicLeapARPin.MagicLeapARPinComponent.GetPinState");
 
 	struct GetPinState_Params {
-		struct Unknown& State;
+		struct FMagicLeapARPinState& State;
 		char ReturnValue;
 
 	}; GetPinState_Params Params;
@@ -216,11 +216,11 @@ inline char UMagicLeapARPinComponent::GetPinState(struct Unknown& State) {
 }
 
 // Function MagicLeapARPin.MagicLeapARPinComponent.GetPinnedPinID
-inline char UMagicLeapARPinComponent::GetPinnedPinID(struct Unknown& PinID) {
+inline char UMagicLeapARPinComponent::GetPinnedPinID(struct FGuid& PinID) {
 	static auto fn = UObject::FindObject<UFunction>("Function MagicLeapARPin.MagicLeapARPinComponent.GetPinnedPinID");
 
 	struct GetPinnedPinID_Params {
-		struct Unknown& PinID;
+		struct FGuid& PinID;
 		char ReturnValue;
 
 	}; GetPinnedPinID_Params Params;
@@ -237,12 +237,12 @@ inline char UMagicLeapARPinComponent::GetPinnedPinID(struct Unknown& PinID) {
 }
 
 // Function MagicLeapARPin.MagicLeapARPinComponent.GetPinData
-inline struct Unknown UMagicLeapARPinComponent::GetPinData(struct Unknown* PinDataClass) {
+inline struct UMagicLeapARPinSaveGame UMagicLeapARPinComponent::GetPinData(struct UClass* PinDataClass) {
 	static auto fn = UObject::FindObject<UFunction>("Function MagicLeapARPin.MagicLeapARPinComponent.GetPinData");
 
 	struct GetPinData_Params {
-		struct Unknown* PinDataClass;
-		struct Unknown ReturnValue;
+		struct UClass* PinDataClass;
+		struct UMagicLeapARPinSaveGame ReturnValue;
 
 	}; GetPinData_Params Params;
 

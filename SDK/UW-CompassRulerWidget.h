@@ -3,9 +3,9 @@ class UUW-CompassRulerWidget_C : public UUserWidget {
 
 public:
 
-	struct Unknown Image_2; // 0x248 (8)
-	struct Unknown InvalidationBox_1; // 0x250 (8)
-	struct Unknown Switcher; // 0x258 (8)
+	struct UImage Image_2; // 0x248 (8)
+	struct UInvalidationBox InvalidationBox_1; // 0x250 (8)
+	struct UWidgetSwitcher Switcher; // 0x258 (8)
 	float OwnDirection; // 0x260 (4)
 
 	void Initialize(float Direction); // Function UW-CompassRulerWidget.UW-CompassRulerWidget_C.Initialize(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>

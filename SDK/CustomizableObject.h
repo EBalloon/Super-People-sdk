@@ -49,13 +49,13 @@ class UCustomizableInstancePrivateData : public Object {
 
 public:
 
-	struct TArray<Unknown> GeneratedMaterials; // 0x30 (16)
-	struct TArray<Unknown> GeneratedMeshes; // 0x40 (16)
-	struct TArray<Unknown> GeneratedTextures; // 0x50 (16)
-	struct TArray<Unknown> ParameterDecorations; // 0xE8 (16)
-	struct TMap<Unknown, Unknown> TextureReuseCache; // 0x108 (80)
-	struct TArray<Unknown> ReferencedMaterials; // 0x320 (16)
-	struct TArray<Unknown> PhysicsAssetsToMerge; // 0x3D0 (16)
+	struct TArray<struct FGeneratedMaterial> GeneratedMaterials; // 0x30 (16)
+	struct TArray<struct FGeneratedMesh> GeneratedMeshes; // 0x40 (16)
+	struct TArray<struct FGeneratedTexture> GeneratedTextures; // 0x50 (16)
+	struct TArray<struct FParameterDecorations> ParameterDecorations; // 0xE8 (16)
+	struct TMap<struct FString, struct TWeakObjectPtr<struct UTexture2D>> TextureReuseCache; // 0x108 (80)
+	struct TArray<struct UMaterialInterface> ReferencedMaterials; // 0x320 (16)
+	struct TArray<struct UPhysicsAsset> PhysicsAssetsToMerge; // 0x3D0 (16)
 };
 
 // Class CustomizableObject.MutableMaskOutCache
@@ -63,8 +63,8 @@ class UMutableMaskOutCache : public Object {
 
 public:
 
-	struct TMap<Unknown, Unknown> Materials; // 0x28 (80)
-	struct TMap<Unknown, Unknown> Textures; // 0x78 (80)
+	struct TMap<struct FString, struct FString> Materials; // 0x28 (80)
+	struct TMap<struct FString, struct FMaskOutTexture> Textures; // 0x78 (80)
 };
 
 // Class CustomizableObject.CustomizableObject
@@ -72,43 +72,43 @@ class UCustomizableObject : public Object {
 
 public:
 
-	struct Unknown ReferenceSkeletalMesh; // 0x28 (8)
-	struct Unknown ReferenceStaticMesh; // 0x30 (8)
-	enum class Unknow Relevancy; // 0x38 (1)
+	struct USkeletalMesh ReferenceSkeletalMesh; // 0x28 (8)
+	struct UStaticMesh ReferenceStaticMesh; // 0x30 (8)
+	enum class ECustomizableObjectRelevancy Relevancy; // 0x38 (1)
 	char bDisableTextureLayoutManagement : 0; // 0x39 (1)
-	struct TArray<Unknown> ReferencedMaterials; // 0x40 (16)
-	struct TArray<Unknown> ImageProperties; // 0x50 (16)
-	struct TMap<Unknown, Unknown> GroupNodeMap; // 0x60 (80)
-	struct TArray<Unknown> ContributingMorphTargets; // 0xB0 (16)
-	struct TArray<Unknown> MorphTargetReconstructionInfo; // 0xC0 (16)
-	struct Unknown VersionId; // 0xD0 (16)
-	struct TArray<Unknown> ParameterProperties; // 0xE0 (16)
-	struct TMap<Unknown, Unknown> ParameterUIDataMap; // 0x140 (80)
-	struct TMap<Unknown, Unknown> StateUIDataMap; // 0x190 (80)
-	struct TMap<Unknown, Unknown> PhysicsAssetsMap; // 0x1E0 (80)
-	struct Unknown MaskOutCache; // 0x230 (40)
+	struct TArray<struct TSoftObjectPtr<UMaterialInterface>> ReferencedMaterials; // 0x40 (16)
+	struct TArray<struct FMutableModelImageProperties> ImageProperties; // 0x50 (16)
+	struct TMap<struct FString, struct FCustomizableObjectIdPair> GroupNodeMap; // 0x60 (80)
+	struct TArray<struct UMorphTarget> ContributingMorphTargets; // 0xB0 (16)
+	struct TArray<struct FMorphTargetVertexIndex> MorphTargetReconstructionInfo; // 0xC0 (16)
+	struct FGuid VersionId; // 0xD0 (16)
+	struct TArray<struct FMutableModelParameterProperties> ParameterProperties; // 0xE0 (16)
+	struct TMap<struct FString, struct FParameterUIData> ParameterUIDataMap; // 0x140 (80)
+	struct TMap<struct FString, struct FParameterUIData> StateUIDataMap; // 0x190 (80)
+	struct TMap<struct FString, struct TSoftObjectPtr<UPhysicsAsset>> PhysicsAssetsMap; // 0x1E0 (80)
+	struct TSoftObjectPtr<UMutableMaskOutCache> MaskOutCache; // 0x230 (40)
 	char bIsChildObject : 0; // 0x258 (1)
-	struct Unknown MaskOutCache_HardRef; // 0x260 (8)
+	struct UMutableMaskOutCache MaskOutCache_HardRef; // 0x260 (8)
 
 	void UnloadMaskOutCache(); // Function CustomizableObject.CustomizableObject.UnloadMaskOutCache(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x104D3E0>
 	void LoadMaskOutCache(); // Function CustomizableObject.CustomizableObject.LoadMaskOutCache(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x104CBF0>
-	struct Unknown GetStateUIMetadataFromIndex(int32_t StateIndex); // Function CustomizableObject.CustomizableObject.GetStateUIMetadataFromIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104C960>
-	struct Unknown GetStateUIMetadata(struct FString StateName); // Function CustomizableObject.CustomizableObject.GetStateUIMetadata(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104C820>
+	struct FParameterUIData GetStateUIMetadataFromIndex(int32_t StateIndex); // Function CustomizableObject.CustomizableObject.GetStateUIMetadataFromIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104C960>
+	struct FParameterUIData GetStateUIMetadata(struct FString StateName); // Function CustomizableObject.CustomizableObject.GetStateUIMetadata(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104C820>
 	struct FString GetStateParameterName(struct FString StateName, int32_t ParameterIndex); // Function CustomizableObject.CustomizableObject.GetStateParameterName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104C6F0>
 	int32_t GetStateParameterCount(struct FString StateName); // Function CustomizableObject.CustomizableObject.GetStateParameterCount(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104C640>
 	struct FString GetStateName(int32_t StateIndex); // Function CustomizableObject.CustomizableObject.GetStateName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104C560>
 	int32_t GetStateCount(); // Function CustomizableObject.CustomizableObject.GetStateCount(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104C530>
-	struct Unknown GetParameterUIMetadataFromIndex(int32_t ParamIndex); // Function CustomizableObject.CustomizableObject.GetParameterUIMetadataFromIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104BC90>
-	struct Unknown GetParameterUIMetadata(struct FString ParamName); // Function CustomizableObject.CustomizableObject.GetParameterUIMetadata(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104BB50>
-	enum class Unknow GetParameterTypeByName(struct FString Name); // Function CustomizableObject.CustomizableObject.GetParameterTypeByName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104BAA0>
-	enum class Unknow GetParameterType(int32_t ParamIndex); // Function CustomizableObject.CustomizableObject.GetParameterType(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104BA10>
+	struct FParameterUIData GetParameterUIMetadataFromIndex(int32_t ParamIndex); // Function CustomizableObject.CustomizableObject.GetParameterUIMetadataFromIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104BC90>
+	struct FParameterUIData GetParameterUIMetadata(struct FString ParamName); // Function CustomizableObject.CustomizableObject.GetParameterUIMetadata(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104BB50>
+	enum class EMutableParameterType GetParameterTypeByName(struct FString Name); // Function CustomizableObject.CustomizableObject.GetParameterTypeByName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104BAA0>
+	enum class EMutableParameterType GetParameterType(int32_t ParamIndex); // Function CustomizableObject.CustomizableObject.GetParameterType(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104BA10>
 	struct FString GetParameterName(int32_t ParamIndex); // Function CustomizableObject.CustomizableObject.GetParameterName(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104B970>
 	int32_t GetParameterDescriptionCount(struct FString ParamName); // Function CustomizableObject.CustomizableObject.GetParameterDescriptionCount(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104B8C0>
 	int32_t GetParameterCount(); // Function CustomizableObject.CustomizableObject.GetParameterCount(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104B7A0>
 	int32_t GetIntParameterNumOptions(int32_t ParamIndex); // Function CustomizableObject.CustomizableObject.GetIntParameterNumOptions(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104B610>
 	struct FString GetIntParameterAvailableOption(int32_t ParamIndex, int32_t K); // Function CustomizableObject.CustomizableObject.GetIntParameterAvailableOption(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104B540>
 	int32_t FindParameter(struct FString Name); // Function CustomizableObject.CustomizableObject.FindParameter(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104B050>
-	struct Unknown CreateInstance(); // Function CustomizableObject.CustomizableObject.CreateInstance(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x104AE10>
+	struct UCustomizableObjectInstance CreateInstance(); // Function CustomizableObject.CustomizableObject.CreateInstance(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x104AE10>
 };
 
 // Class CustomizableObject.CustomizableObjectInstance
@@ -116,54 +116,54 @@ class UCustomizableObjectInstance : public Object {
 
 public:
 
-	struct Unknown CustomizableObject; // 0x28 (8)
-	struct Unknown SkeletalMesh; // 0x30 (8)
-	struct TArray<Unknown> BoolParameters; // 0x38 (16)
-	struct TArray<Unknown> IntParameters; // 0x48 (16)
-	struct TArray<Unknown> FloatParameters; // 0x58 (16)
-	struct TArray<Unknown> TextureParameters; // 0x68 (16)
-	struct TArray<Unknown> VectorParameters; // 0x78 (16)
-	struct TArray<Unknown> ProjectorParameters; // 0x88 (16)
+	struct UCustomizableObject CustomizableObject; // 0x28 (8)
+	struct USkeletalMesh SkeletalMesh; // 0x30 (8)
+	struct TArray<struct FCustomizableObjectBoolParameterValue> BoolParameters; // 0x38 (16)
+	struct TArray<struct FCustomizableObjectIntParameterValue> IntParameters; // 0x48 (16)
+	struct TArray<struct FCustomizableObjectFloatParameterValue> FloatParameters; // 0x58 (16)
+	struct TArray<struct FCustomizableObjectTextureParameterValue> TextureParameters; // 0x68 (16)
+	struct TArray<struct FCustomizableObjectVectorParameterValue> VectorParameters; // 0x78 (16)
+	struct TArray<struct FCustomizableObjectProjectorParameterValue> ProjectorParameters; // 0x88 (16)
 	char bBuildParameterDecorations : 0; // 0x98 (1)
 	struct FMulticastInlineDelegate UpdatedDelegate; // 0xA0 (16)
 	struct FString SkeletalMeshStatus; // 0x110 (16)
-	struct TArray<Unknown> MaterialTags; // 0x140 (16)
-	struct Unknown PrivateData; // 0x1D0 (8)
+	struct TArray<struct FString> MaterialTags; // 0x140 (16)
+	struct UCustomizableInstancePrivateData PrivateData; // 0x1D0 (8)
 
 	void UpdateSkeletalMeshAsync(char bIgnoreCloseDist, char bForceHighPriority); // Function CustomizableObject.CustomizableObjectInstance.UpdateSkeletalMeshAsync(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x104D400>
-	void SetVectorParameterSelectedOption(struct FString VectorParamName, struct Unknown VectorValue); // Function CustomizableObject.CustomizableObjectInstance.SetVectorParameterSelectedOption(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x104CD60>
+	void SetVectorParameterSelectedOption(struct FString VectorParamName, struct FLinearColor VectorValue); // Function CustomizableObject.CustomizableObjectInstance.SetVectorParameterSelectedOption(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x104CD60>
 	void SetRandomValues(); // Function CustomizableObject.CustomizableObjectInstance.SetRandomValues(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x104D3C0>
-	void SetProjectorValue(struct FString ProjectorParamName, struct Unknown& Pos, struct Unknown& Direction, struct Unknown& Up, struct Unknown& Scale, float Angle, int32_t RangeIndex); // Function CustomizableObject.CustomizableObjectInstance.SetProjectorValue(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x104D160>
+	void SetProjectorValue(struct FString ProjectorParamName, struct FVector& Pos, struct FVector& Direction, struct FVector& Up, struct FVector& Scale, float Angle, int32_t RangeIndex); // Function CustomizableObject.CustomizableObjectInstance.SetProjectorValue(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x104D160>
 	void SetIntParameterSelectedOption(struct FString ParamName, struct FString SelectedOptionName, int32_t RangeIndex); // Function CustomizableObject.CustomizableObjectInstance.SetIntParameterSelectedOption(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x104D020>
 	void SetFloatParameterSelectedOption(struct FString FloatParamName, float FloatValue, int32_t RangeIndex); // Function CustomizableObject.CustomizableObjectInstance.SetFloatParameterSelectedOption(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x104CEF0>
 	void SetCurrentState(struct FString StateName); // Function CustomizableObject.CustomizableObjectInstance.SetCurrentState(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x104CE50>
-	void SetColorParameterSelectedOption(struct FString ColorParamName, struct Unknown ColorValue); // Function CustomizableObject.CustomizableObjectInstance.SetColorParameterSelectedOption(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x104CD60>
+	void SetColorParameterSelectedOption(struct FString ColorParamName, struct FLinearColor ColorValue); // Function CustomizableObject.CustomizableObjectInstance.SetColorParameterSelectedOption(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x104CD60>
 	void SetBoolParameterSelectedOption(struct FString BoolParamName, char BoolValue); // Function CustomizableObject.CustomizableObjectInstance.SetBoolParameterSelectedOption(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x104CC70>
 	void SetAllParameterToDefault(); // Function CustomizableObject.CustomizableObjectInstance.SetAllParameterToDefault(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x104CC50>
 	void SetAllIntParameterToDefault2(); // Function CustomizableObject.CustomizableObjectInstance.SetAllIntParameterToDefault2(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x104CC10>
 	void SetAllIntParameterToDefault(); // Function CustomizableObject.CustomizableObjectInstance.SetAllIntParameterToDefault(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x104CC30>
 	char IsParamMultidimensional(struct FString ParamName); // Function CustomizableObject.CustomizableObjectInstance.IsParamMultidimensional(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104CA90>
 	char IsParameterRelevant(struct FString ParamName); // Function CustomizableObject.CustomizableObjectInstance.IsParameterRelevant(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104CB40>
-	void GetProjectorValue(struct FString ProjectorParamName, struct Unknown& Pos, struct Unknown& Direction, struct Unknown& Up, struct Unknown& Scale, float& Angle, enum class Unknow& Type, int32_t RangeIndex); // Function CustomizableObject.CustomizableObjectInstance.GetProjectorValue(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x104C260>
-	struct Unknown GetProjectorUp(struct FString ParamName); // Function CustomizableObject.CustomizableObjectInstance.GetProjectorUp(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104C1A0>
-	struct Unknown GetProjectorScale(struct FString ParamName); // Function CustomizableObject.CustomizableObjectInstance.GetProjectorScale(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104C0E0>
-	struct Unknown GetProjectorPosition(struct FString ParamName); // Function CustomizableObject.CustomizableObjectInstance.GetProjectorPosition(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104C020>
-	enum class Unknow GetProjectorParameterType(struct FString ParamName, int32_t RangeIndex); // Function CustomizableObject.CustomizableObjectInstance.GetProjectorParameterType(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104BF30>
-	struct Unknown GetProjectorDirection(struct FString ParamName); // Function CustomizableObject.CustomizableObjectInstance.GetProjectorDirection(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104BE70>
+	void GetProjectorValue(struct FString ProjectorParamName, struct FVector& Pos, struct FVector& Direction, struct FVector& Up, struct FVector& Scale, float& Angle, enum class ECustomizableObjectProjectorType& Type, int32_t RangeIndex); // Function CustomizableObject.CustomizableObjectInstance.GetProjectorValue(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x104C260>
+	struct FVector GetProjectorUp(struct FString ParamName); // Function CustomizableObject.CustomizableObjectInstance.GetProjectorUp(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104C1A0>
+	struct FVector GetProjectorScale(struct FString ParamName); // Function CustomizableObject.CustomizableObjectInstance.GetProjectorScale(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104C0E0>
+	struct FVector GetProjectorPosition(struct FString ParamName); // Function CustomizableObject.CustomizableObjectInstance.GetProjectorPosition(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104C020>
+	enum class ECustomizableObjectProjectorType GetProjectorParameterType(struct FString ParamName, int32_t RangeIndex); // Function CustomizableObject.CustomizableObjectInstance.GetProjectorParameterType(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104BF30>
+	struct FVector GetProjectorDirection(struct FString ParamName); // Function CustomizableObject.CustomizableObjectInstance.GetProjectorDirection(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104BE70>
 	float GetProjectorAngle(struct FString ParamName); // Function CustomizableObject.CustomizableObjectInstance.GetProjectorAngle(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104BDC0>
-	struct Unknown GetParameterDescription(struct FString ParamName, int32_t DescIndex); // Function CustomizableObject.CustomizableObjectInstance.GetParameterDescription(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x104B7D0>
+	struct UTexture2D GetParameterDescription(struct FString ParamName, int32_t DescIndex); // Function CustomizableObject.CustomizableObjectInstance.GetParameterDescription(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x104B7D0>
 	struct FString GetIntParameterSelectedOption(struct FString ParamName, int32_t RangeIndex); // Function CustomizableObject.CustomizableObjectInstance.GetIntParameterSelectedOption(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104B6A0>
 	float GetFloatParameterSelectedOption(struct FString FloatParamName, int32_t RangeIndex); // Function CustomizableObject.CustomizableObjectInstance.GetFloatParameterSelectedOption(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104B450>
 	struct FString GetCurrentState(); // Function CustomizableObject.CustomizableObjectInstance.GetCurrentState(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104B3D0>
-	struct Unknown GetColorParameterSelectedOption(struct FString ColorParamName); // Function CustomizableObject.CustomizableObjectInstance.GetColorParameterSelectedOption(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104B310>
+	struct FLinearColor GetColorParameterSelectedOption(struct FString ColorParamName); // Function CustomizableObject.CustomizableObjectInstance.GetColorParameterSelectedOption(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104B310>
 	char GetBoolParameterSelectedOption(struct FString BoolParamName); // Function CustomizableObject.CustomizableObjectInstance.GetBoolParameterSelectedOption(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104B260>
 	int32_t FindVectorParameterNameIndex(struct FString ParamName); // Function CustomizableObject.CustomizableObjectInstance.FindVectorParameterNameIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104B1B0>
 	int32_t FindProjectorParameterNameIndex(struct FString ParamName); // Function CustomizableObject.CustomizableObjectInstance.FindProjectorParameterNameIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104B100>
 	int32_t FindIntParameterNameIndex(struct FString ParamName); // Function CustomizableObject.CustomizableObjectInstance.FindIntParameterNameIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104AFA0>
 	int32_t FindFloatParameterNameIndex(struct FString ParamName); // Function CustomizableObject.CustomizableObjectInstance.FindFloatParameterNameIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104AEF0>
 	int32_t FindBoolParameterNameIndex(struct FString ParamName); // Function CustomizableObject.CustomizableObjectInstance.FindBoolParameterNameIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x104AE40>
-	void Copy(struct Unknown Target); // Function CustomizableObject.CustomizableObjectInstance.Copy(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x104AD90>
-	struct Unknown Clone(); // Function CustomizableObject.CustomizableObjectInstance.Clone(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x104AD60>
+	void Copy(struct UCustomizableObjectInstance Target); // Function CustomizableObject.CustomizableObjectInstance.Copy(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x104AD90>
+	struct UCustomizableObjectInstance Clone(); // Function CustomizableObject.CustomizableObjectInstance.Clone(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x104AD60>
 };
 
 // Class CustomizableObject.CustomizableObjectImageProviderArray
@@ -171,7 +171,7 @@ class UCustomizableObjectImageProviderArray : public UCustomizableSystemImagePro
 
 public:
 
-	struct TArray<Unknown> Textures; // 0x28 (16)
+	struct TArray<struct UTexture2D> Textures; // 0x28 (16)
 };
 
 // Class CustomizableObject.CustomizableObjectSystem
@@ -179,11 +179,11 @@ class UCustomizableObjectSystem : public Object {
 
 public:
 
-	struct TArray<Unknown> PendingReleaseSkeletalMesh; // 0x28 (16)
-	struct Unknown PreviewExternalImageProvider; // 0x48 (8)
-	struct TArray<Unknown> ProtectedCachedTextures; // 0x150 (16)
-	struct Unknown DefaultInstanceLODManagement; // 0x170 (8)
-	struct Unknown CurrentInstanceLODManagement; // 0x178 (8)
+	struct TArray<struct FPendingReleaseSkeletalMeshInfo> PendingReleaseSkeletalMesh; // 0x28 (16)
+	struct UCustomizableObjectImageProviderArray PreviewExternalImageProvider; // 0x48 (8)
+	struct TArray<struct UTexture2D> ProtectedCachedTextures; // 0x150 (16)
+	struct UCustomizableInstanceLODManagementBase DefaultInstanceLODManagement; // 0x170 (8)
+	struct UCustomizableInstanceLODManagementBase CurrentInstanceLODManagement; // 0x178 (8)
 
 	void SetReleaseMutableTexturesImmediately(char bReleaseTextures); // Function CustomizableObject.CustomizableObjectSystem.SetReleaseMutableTexturesImmediately(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1051A60>
 	int32_t GetTotalInstances(); // Function CustomizableObject.CustomizableObjectSystem.GetTotalInstances(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1051A30>
@@ -191,7 +191,7 @@ public:
 	struct FString GetPluginVersion(); // Function CustomizableObject.CustomizableObjectSystem.GetPluginVersion(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1051980>
 	int32_t GetNumPendingInstances(); // Function CustomizableObject.CustomizableObjectSystem.GetNumPendingInstances(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1051950>
 	int32_t GetNumInstances(); // Function CustomizableObject.CustomizableObjectSystem.GetNumInstances(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1051920>
-	struct Unknown GetInstance(); // Function CustomizableObject.CustomizableObjectSystem.GetInstance(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x10518F0>
+	struct UCustomizableObjectSystem GetInstance(); // Function CustomizableObject.CustomizableObjectSystem.GetInstance(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x10518F0>
 	int32_t GetAverageBuildTime(); // Function CustomizableObject.CustomizableObjectSystem.GetAverageBuildTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x10518C0>
 	char AreEnginePatchesPresent(); // Function CustomizableObject.CustomizableObjectSystem.AreEnginePatchesPresent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1051810>
 };
@@ -202,7 +202,7 @@ class UCustomizableSkeletalComponent : public USceneComponent {
 public:
 
 	float SkippedLastRenderTime; // 0x22C (4)
-	struct Unknown CustomizableObjectInstance; // 0x230 (8)
+	struct UCustomizableObjectInstance CustomizableObjectInstance; // 0x230 (8)
 
 	void UpdateSkeletalMeshAsync(char bNeverSkipUpdate); // Function CustomizableObject.CustomizableSkeletalComponent.UpdateSkeletalMeshAsync(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1051AF0>
 };
@@ -212,30 +212,30 @@ class ACustomizableSkeletalMeshActor : public ASkeletalMeshActor {
 
 public:
 
-	struct Unknown CustomizableSkeletalComponent; // 0x3A0 (8)
+	struct UCustomizableSkeletalComponent CustomizableSkeletalComponent; // 0x3A0 (8)
 };
 
 // ScriptStruct CustomizableObject.ParameterDecorations
 struct FParameterDecorations {
-	struct TArray<Unknown> Images; // 0x0 (16)
+	struct TArray<struct UTexture2D> Images; // 0x0 (16)
 };
 
 // ScriptStruct CustomizableObject.GeneratedMaterial
 struct FGeneratedMaterial {
-	struct TArray<Unknown> Textures; // 0x0 (16)
+	struct TArray<struct FGeneratedTexture> Textures; // 0x0 (16)
 };
 
 // ScriptStruct CustomizableObject.GeneratedTexture
 struct FGeneratedTexture {
 	int32_t ID; // 0x0 (4)
 	struct FString Name; // 0x8 (16)
-	struct Unknown Texture; // 0x18 (8)
+	struct UTexture2D Texture; // 0x18 (8)
 };
 
 // ScriptStruct CustomizableObject.GeneratedMesh
 struct FGeneratedMesh {
 	int32_t ID; // 0x0 (4)
-	struct Unknown Mesh; // 0x8 (8)
+	struct UStaticMesh Mesh; // 0x8 (8)
 };
 
 // ScriptStruct CustomizableObject.MorphTargetVertexIndex
@@ -248,16 +248,16 @@ struct FMorphTargetVertexIndex {
 struct FMaskOutTexture {
 	int32_t SizeX; // 0x0 (4)
 	int32_t SizeY; // 0x4 (4)
-	struct TArray<Unknown> Data; // 0x8 (16)
+	struct TArray<uint32_t> Data; // 0x8 (16)
 };
 
 // ScriptStruct CustomizableObject.MutableModelParameterProperties
 struct FMutableModelParameterProperties {
 	struct FString Name; // 0x0 (16)
-	enum class Unknow Type; // 0x10 (1)
+	enum class EMutableParameterType Type; // 0x10 (1)
 	int32_t ImageDescriptionCount; // 0x14 (4)
-	struct TArray<Unknown> PossibleValues; // 0x18 (16)
-	struct Unknown ParamUIMetadata; // 0x28 (240)
+	struct TArray<struct FMutableModelParameterValue> PossibleValues; // 0x18 (16)
+	struct FMutableParamUIMetadata ParamUIMetadata; // 0x28 (240)
 };
 
 // ScriptStruct CustomizableObject.MutableParamUIMetadata
@@ -265,9 +265,9 @@ struct FMutableParamUIMetadata {
 	struct FString ObjectFriendlyName; // 0x0 (16)
 	struct FString UISectionName; // 0x10 (16)
 	int32_t UIOrder; // 0x20 (4)
-	struct Unknown UIThumbnail; // 0x28 (40)
-	struct TMap<Unknown, Unknown> ExtraInformation; // 0x50 (80)
-	struct TMap<Unknown, Unknown> ExtraAssets; // 0xA0 (80)
+	struct TSoftObjectPtr<UTexture2D> UIThumbnail; // 0x28 (40)
+	struct TMap<struct FString, struct FString> ExtraInformation; // 0x50 (80)
+	struct TMap<struct FString, struct TSoftObjectPtr<Object>> ExtraAssets; // 0xA0 (80)
 };
 
 // ScriptStruct CustomizableObject.MutableModelParameterValue
@@ -301,36 +301,36 @@ struct FCompilationOptions {
 // ScriptStruct CustomizableObject.ProfileParameterDat
 struct FProfileParameterDat {
 	struct FString ProfileName; // 0x0 (16)
-	struct TArray<Unknown> BoolParameters; // 0x10 (16)
-	struct TArray<Unknown> IntParameters; // 0x20 (16)
-	struct TArray<Unknown> FloatParameters; // 0x30 (16)
-	struct TArray<Unknown> TextureParameters; // 0x40 (16)
-	struct TArray<Unknown> VectorParameters; // 0x50 (16)
-	struct TArray<Unknown> ProjectorParameters; // 0x60 (16)
+	struct TArray<struct FCustomizableObjectBoolParameterValue> BoolParameters; // 0x10 (16)
+	struct TArray<struct FCustomizableObjectIntParameterValue> IntParameters; // 0x20 (16)
+	struct TArray<struct FCustomizableObjectFloatParameterValue> FloatParameters; // 0x30 (16)
+	struct TArray<struct FCustomizableObjectTextureParameterValue> TextureParameters; // 0x40 (16)
+	struct TArray<struct FCustomizableObjectVectorParameterValue> VectorParameters; // 0x50 (16)
+	struct TArray<struct FCustomizableObjectProjectorParameterValue> ProjectorParameters; // 0x60 (16)
 };
 
 // ScriptStruct CustomizableObject.CustomizableObjectProjectorParameterValue
 struct FCustomizableObjectProjectorParameterValue {
 	struct FString ParameterName; // 0x0 (16)
-	struct Unknown Value; // 0x10 (56)
+	struct FCustomizableObjectProjector Value; // 0x10 (56)
 	struct FString UID; // 0x48 (16)
-	struct TArray<Unknown> RangeValues; // 0x58 (16)
+	struct TArray<struct FCustomizableObjectProjector> RangeValues; // 0x58 (16)
 };
 
 // ScriptStruct CustomizableObject.CustomizableObjectProjector
 struct FCustomizableObjectProjector {
-	struct Unknown Position; // 0x0 (12)
-	struct Unknown Direction; // 0xC (12)
-	struct Unknown Up; // 0x18 (12)
-	struct Unknown Scale; // 0x24 (12)
-	enum class Unknow ProjectionType; // 0x30 (1)
+	struct FVector Position; // 0x0 (12)
+	struct FVector Direction; // 0xC (12)
+	struct FVector Up; // 0x18 (12)
+	struct FVector Scale; // 0x24 (12)
+	enum class ECustomizableObjectProjectorType ProjectionType; // 0x30 (1)
 	float Angle; // 0x34 (4)
 };
 
 // ScriptStruct CustomizableObject.CustomizableObjectVectorParameterValue
 struct FCustomizableObjectVectorParameterValue {
 	struct FString ParameterName; // 0x0 (16)
-	struct Unknown ParameterValue; // 0x10 (16)
+	struct FLinearColor ParameterValue; // 0x10 (16)
 	struct FString UID; // 0x20 (16)
 };
 
@@ -346,7 +346,7 @@ struct FCustomizableObjectFloatParameterValue {
 	struct FString ParameterName; // 0x0 (16)
 	float ParameterValue; // 0x10 (4)
 	struct FString UID; // 0x18 (16)
-	struct TArray<Unknown> ParameterRangeValues; // 0x28 (16)
+	struct TArray<float> ParameterRangeValues; // 0x28 (16)
 };
 
 // ScriptStruct CustomizableObject.CustomizableObjectIntParameterValue
@@ -354,7 +354,7 @@ struct FCustomizableObjectIntParameterValue {
 	struct FString ParameterName; // 0x0 (16)
 	struct FString ParameterValueName; // 0x10 (16)
 	struct FString UID; // 0x20 (16)
-	struct TArray<Unknown> ParameterRangeValueNames; // 0x30 (16)
+	struct TArray<struct FString> ParameterRangeValueNames; // 0x30 (16)
 };
 
 // ScriptStruct CustomizableObject.CustomizableObjectBoolParameterValue
@@ -380,29 +380,29 @@ struct FCustomizableObjectIdPair {
 // ScriptStruct CustomizableObject.CustomizedMaterialTexture2D
 struct FCustomizedMaterialTexture2D {
 	struct FName Name; // 0x0 (8)
-	struct Unknown Texture; // 0x8 (8)
+	struct UTexture2D Texture; // 0x8 (8)
 };
 
 // ScriptStruct CustomizableObject.PendingReleaseSkeletalMeshInfo
 struct FPendingReleaseSkeletalMeshInfo {
-	struct Unknown SkeletalMesh; // 0x0 (8)
+	struct USkeletalMesh SkeletalMesh; // 0x0 (8)
 	double Timestamp; // 0x8 (8)
 };
 
 // ScriptStruct CustomizableObject.ParameterUIData
 struct FParameterUIData {
 	struct FString Name; // 0x0 (16)
-	struct Unknown ParamUIMetadata; // 0x10 (240)
-	enum class Unknow Type; // 0x100 (1)
-	struct TArray<Unknown> ArrayIntegerParameterOption; // 0x108 (16)
-	enum class Unknow IntegerParameterGroupType; // 0x118 (1)
+	struct FMutableParamUIMetadata ParamUIMetadata; // 0x10 (240)
+	enum class EMutableParameterType Type; // 0x100 (1)
+	struct TArray<struct FIntegerParameterUIData> ArrayIntegerParameterOption; // 0x108 (16)
+	enum class ECustomizableObjectGroupType IntegerParameterGroupType; // 0x118 (1)
 	char bDontCompressRuntimeTextures : 0; // 0x119 (1)
 };
 
 // ScriptStruct CustomizableObject.IntegerParameterUIData
 struct FIntegerParameterUIData {
 	struct FString Name; // 0x0 (16)
-	struct Unknown ParamUIMetadata; // 0x10 (240)
+	struct FMutableParamUIMetadata ParamUIMetadata; // 0x10 (240)
 };
 
 // Function CustomizableObject.CustomizableObject.UnloadMaskOutCache
@@ -434,12 +434,12 @@ inline void UCustomizableObject::LoadMaskOutCache() {
 }
 
 // Function CustomizableObject.CustomizableObject.GetStateUIMetadataFromIndex
-inline struct Unknown UCustomizableObject::GetStateUIMetadataFromIndex(int32_t StateIndex) {
+inline struct FParameterUIData UCustomizableObject::GetStateUIMetadataFromIndex(int32_t StateIndex) {
 	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObject.GetStateUIMetadataFromIndex");
 
 	struct GetStateUIMetadataFromIndex_Params {
 		int32_t StateIndex;
-		struct Unknown ReturnValue;
+		struct FParameterUIData ReturnValue;
 
 	}; GetStateUIMetadataFromIndex_Params Params;
 
@@ -453,12 +453,12 @@ inline struct Unknown UCustomizableObject::GetStateUIMetadataFromIndex(int32_t S
 }
 
 // Function CustomizableObject.CustomizableObject.GetStateUIMetadata
-inline struct Unknown UCustomizableObject::GetStateUIMetadata(struct FString StateName) {
+inline struct FParameterUIData UCustomizableObject::GetStateUIMetadata(struct FString StateName) {
 	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObject.GetStateUIMetadata");
 
 	struct GetStateUIMetadata_Params {
 		struct FString StateName;
-		struct Unknown ReturnValue;
+		struct FParameterUIData ReturnValue;
 
 	}; GetStateUIMetadata_Params Params;
 
@@ -549,12 +549,12 @@ inline int32_t UCustomizableObject::GetStateCount() {
 }
 
 // Function CustomizableObject.CustomizableObject.GetParameterUIMetadataFromIndex
-inline struct Unknown UCustomizableObject::GetParameterUIMetadataFromIndex(int32_t ParamIndex) {
+inline struct FParameterUIData UCustomizableObject::GetParameterUIMetadataFromIndex(int32_t ParamIndex) {
 	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObject.GetParameterUIMetadataFromIndex");
 
 	struct GetParameterUIMetadataFromIndex_Params {
 		int32_t ParamIndex;
-		struct Unknown ReturnValue;
+		struct FParameterUIData ReturnValue;
 
 	}; GetParameterUIMetadataFromIndex_Params Params;
 
@@ -568,12 +568,12 @@ inline struct Unknown UCustomizableObject::GetParameterUIMetadataFromIndex(int32
 }
 
 // Function CustomizableObject.CustomizableObject.GetParameterUIMetadata
-inline struct Unknown UCustomizableObject::GetParameterUIMetadata(struct FString ParamName) {
+inline struct FParameterUIData UCustomizableObject::GetParameterUIMetadata(struct FString ParamName) {
 	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObject.GetParameterUIMetadata");
 
 	struct GetParameterUIMetadata_Params {
 		struct FString ParamName;
-		struct Unknown ReturnValue;
+		struct FParameterUIData ReturnValue;
 
 	}; GetParameterUIMetadata_Params Params;
 
@@ -587,12 +587,12 @@ inline struct Unknown UCustomizableObject::GetParameterUIMetadata(struct FString
 }
 
 // Function CustomizableObject.CustomizableObject.GetParameterTypeByName
-inline enum class Unknow UCustomizableObject::GetParameterTypeByName(struct FString Name) {
+inline enum class EMutableParameterType UCustomizableObject::GetParameterTypeByName(struct FString Name) {
 	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObject.GetParameterTypeByName");
 
 	struct GetParameterTypeByName_Params {
 		struct FString Name;
-		enum class Unknow ReturnValue;
+		enum class EMutableParameterType ReturnValue;
 
 	}; GetParameterTypeByName_Params Params;
 
@@ -606,12 +606,12 @@ inline enum class Unknow UCustomizableObject::GetParameterTypeByName(struct FStr
 }
 
 // Function CustomizableObject.CustomizableObject.GetParameterType
-inline enum class Unknow UCustomizableObject::GetParameterType(int32_t ParamIndex) {
+inline enum class EMutableParameterType UCustomizableObject::GetParameterType(int32_t ParamIndex) {
 	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObject.GetParameterType");
 
 	struct GetParameterType_Params {
 		int32_t ParamIndex;
-		enum class Unknow ReturnValue;
+		enum class EMutableParameterType ReturnValue;
 
 	}; GetParameterType_Params Params;
 
@@ -740,12 +740,12 @@ inline int32_t UCustomizableObject::FindParameter(struct FString Name) {
 }
 
 // Function CustomizableObject.CustomizableObject.CreateInstance
-inline struct Unknown UCustomizableObject::CreateInstance() {
+inline struct UCustomizableObjectInstance UCustomizableObject::CreateInstance() {
 	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObject.CreateInstance");
 
 	struct CreateInstance_Params {
 		
-		struct Unknown ReturnValue;
+		struct UCustomizableObjectInstance ReturnValue;
 
 	}; CreateInstance_Params Params;
 
@@ -775,12 +775,12 @@ inline void UCustomizableObjectInstance::UpdateSkeletalMeshAsync(char bIgnoreClo
 }
 
 // Function CustomizableObject.CustomizableObjectInstance.SetVectorParameterSelectedOption
-inline void UCustomizableObjectInstance::SetVectorParameterSelectedOption(struct FString VectorParamName, struct Unknown VectorValue) {
+inline void UCustomizableObjectInstance::SetVectorParameterSelectedOption(struct FString VectorParamName, struct FLinearColor VectorValue) {
 	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.SetVectorParameterSelectedOption");
 
 	struct SetVectorParameterSelectedOption_Params {
 		struct FString VectorParamName;
-		struct Unknown VectorValue;
+		struct FLinearColor VectorValue;
 	}; SetVectorParameterSelectedOption_Params Params;
 
 	Params.VectorParamName = VectorParamName;
@@ -806,15 +806,15 @@ inline void UCustomizableObjectInstance::SetRandomValues() {
 }
 
 // Function CustomizableObject.CustomizableObjectInstance.SetProjectorValue
-inline void UCustomizableObjectInstance::SetProjectorValue(struct FString ProjectorParamName, struct Unknown& Pos, struct Unknown& Direction, struct Unknown& Up, struct Unknown& Scale, float Angle, int32_t RangeIndex) {
+inline void UCustomizableObjectInstance::SetProjectorValue(struct FString ProjectorParamName, struct FVector& Pos, struct FVector& Direction, struct FVector& Up, struct FVector& Scale, float Angle, int32_t RangeIndex) {
 	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.SetProjectorValue");
 
 	struct SetProjectorValue_Params {
 		struct FString ProjectorParamName;
-		struct Unknown& Pos;
-		struct Unknown& Direction;
-		struct Unknown& Up;
-		struct Unknown& Scale;
+		struct FVector& Pos;
+		struct FVector& Direction;
+		struct FVector& Up;
+		struct FVector& Scale;
 		float Angle;
 		int32_t RangeIndex;
 	}; SetProjectorValue_Params Params;
@@ -888,12 +888,12 @@ inline void UCustomizableObjectInstance::SetCurrentState(struct FString StateNam
 }
 
 // Function CustomizableObject.CustomizableObjectInstance.SetColorParameterSelectedOption
-inline void UCustomizableObjectInstance::SetColorParameterSelectedOption(struct FString ColorParamName, struct Unknown ColorValue) {
+inline void UCustomizableObjectInstance::SetColorParameterSelectedOption(struct FString ColorParamName, struct FLinearColor ColorValue) {
 	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.SetColorParameterSelectedOption");
 
 	struct SetColorParameterSelectedOption_Params {
 		struct FString ColorParamName;
-		struct Unknown ColorValue;
+		struct FLinearColor ColorValue;
 	}; SetColorParameterSelectedOption_Params Params;
 
 	Params.ColorParamName = ColorParamName;
@@ -1002,17 +1002,17 @@ inline char UCustomizableObjectInstance::IsParameterRelevant(struct FString Para
 }
 
 // Function CustomizableObject.CustomizableObjectInstance.GetProjectorValue
-inline void UCustomizableObjectInstance::GetProjectorValue(struct FString ProjectorParamName, struct Unknown& Pos, struct Unknown& Direction, struct Unknown& Up, struct Unknown& Scale, float& Angle, enum class Unknow& Type, int32_t RangeIndex) {
+inline void UCustomizableObjectInstance::GetProjectorValue(struct FString ProjectorParamName, struct FVector& Pos, struct FVector& Direction, struct FVector& Up, struct FVector& Scale, float& Angle, enum class ECustomizableObjectProjectorType& Type, int32_t RangeIndex) {
 	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.GetProjectorValue");
 
 	struct GetProjectorValue_Params {
 		struct FString ProjectorParamName;
-		struct Unknown& Pos;
-		struct Unknown& Direction;
-		struct Unknown& Up;
-		struct Unknown& Scale;
+		struct FVector& Pos;
+		struct FVector& Direction;
+		struct FVector& Up;
+		struct FVector& Scale;
 		float& Angle;
-		enum class Unknow& Type;
+		enum class ECustomizableObjectProjectorType& Type;
 		int32_t RangeIndex;
 	}; GetProjectorValue_Params Params;
 
@@ -1033,12 +1033,12 @@ inline void UCustomizableObjectInstance::GetProjectorValue(struct FString Projec
 }
 
 // Function CustomizableObject.CustomizableObjectInstance.GetProjectorUp
-inline struct Unknown UCustomizableObjectInstance::GetProjectorUp(struct FString ParamName) {
+inline struct FVector UCustomizableObjectInstance::GetProjectorUp(struct FString ParamName) {
 	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.GetProjectorUp");
 
 	struct GetProjectorUp_Params {
 		struct FString ParamName;
-		struct Unknown ReturnValue;
+		struct FVector ReturnValue;
 
 	}; GetProjectorUp_Params Params;
 
@@ -1052,12 +1052,12 @@ inline struct Unknown UCustomizableObjectInstance::GetProjectorUp(struct FString
 }
 
 // Function CustomizableObject.CustomizableObjectInstance.GetProjectorScale
-inline struct Unknown UCustomizableObjectInstance::GetProjectorScale(struct FString ParamName) {
+inline struct FVector UCustomizableObjectInstance::GetProjectorScale(struct FString ParamName) {
 	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.GetProjectorScale");
 
 	struct GetProjectorScale_Params {
 		struct FString ParamName;
-		struct Unknown ReturnValue;
+		struct FVector ReturnValue;
 
 	}; GetProjectorScale_Params Params;
 
@@ -1071,12 +1071,12 @@ inline struct Unknown UCustomizableObjectInstance::GetProjectorScale(struct FStr
 }
 
 // Function CustomizableObject.CustomizableObjectInstance.GetProjectorPosition
-inline struct Unknown UCustomizableObjectInstance::GetProjectorPosition(struct FString ParamName) {
+inline struct FVector UCustomizableObjectInstance::GetProjectorPosition(struct FString ParamName) {
 	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.GetProjectorPosition");
 
 	struct GetProjectorPosition_Params {
 		struct FString ParamName;
-		struct Unknown ReturnValue;
+		struct FVector ReturnValue;
 
 	}; GetProjectorPosition_Params Params;
 
@@ -1090,13 +1090,13 @@ inline struct Unknown UCustomizableObjectInstance::GetProjectorPosition(struct F
 }
 
 // Function CustomizableObject.CustomizableObjectInstance.GetProjectorParameterType
-inline enum class Unknow UCustomizableObjectInstance::GetProjectorParameterType(struct FString ParamName, int32_t RangeIndex) {
+inline enum class ECustomizableObjectProjectorType UCustomizableObjectInstance::GetProjectorParameterType(struct FString ParamName, int32_t RangeIndex) {
 	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.GetProjectorParameterType");
 
 	struct GetProjectorParameterType_Params {
 		struct FString ParamName;
 		int32_t RangeIndex;
-		enum class Unknow ReturnValue;
+		enum class ECustomizableObjectProjectorType ReturnValue;
 
 	}; GetProjectorParameterType_Params Params;
 
@@ -1111,12 +1111,12 @@ inline enum class Unknow UCustomizableObjectInstance::GetProjectorParameterType(
 }
 
 // Function CustomizableObject.CustomizableObjectInstance.GetProjectorDirection
-inline struct Unknown UCustomizableObjectInstance::GetProjectorDirection(struct FString ParamName) {
+inline struct FVector UCustomizableObjectInstance::GetProjectorDirection(struct FString ParamName) {
 	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.GetProjectorDirection");
 
 	struct GetProjectorDirection_Params {
 		struct FString ParamName;
-		struct Unknown ReturnValue;
+		struct FVector ReturnValue;
 
 	}; GetProjectorDirection_Params Params;
 
@@ -1149,13 +1149,13 @@ inline float UCustomizableObjectInstance::GetProjectorAngle(struct FString Param
 }
 
 // Function CustomizableObject.CustomizableObjectInstance.GetParameterDescription
-inline struct Unknown UCustomizableObjectInstance::GetParameterDescription(struct FString ParamName, int32_t DescIndex) {
+inline struct UTexture2D UCustomizableObjectInstance::GetParameterDescription(struct FString ParamName, int32_t DescIndex) {
 	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.GetParameterDescription");
 
 	struct GetParameterDescription_Params {
 		struct FString ParamName;
 		int32_t DescIndex;
-		struct Unknown ReturnValue;
+		struct UTexture2D ReturnValue;
 
 	}; GetParameterDescription_Params Params;
 
@@ -1230,12 +1230,12 @@ inline struct FString UCustomizableObjectInstance::GetCurrentState() {
 }
 
 // Function CustomizableObject.CustomizableObjectInstance.GetColorParameterSelectedOption
-inline struct Unknown UCustomizableObjectInstance::GetColorParameterSelectedOption(struct FString ColorParamName) {
+inline struct FLinearColor UCustomizableObjectInstance::GetColorParameterSelectedOption(struct FString ColorParamName) {
 	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.GetColorParameterSelectedOption");
 
 	struct GetColorParameterSelectedOption_Params {
 		struct FString ColorParamName;
-		struct Unknown ReturnValue;
+		struct FLinearColor ReturnValue;
 
 	}; GetColorParameterSelectedOption_Params Params;
 
@@ -1363,11 +1363,11 @@ inline int32_t UCustomizableObjectInstance::FindBoolParameterNameIndex(struct FS
 }
 
 // Function CustomizableObject.CustomizableObjectInstance.Copy
-inline void UCustomizableObjectInstance::Copy(struct Unknown Target) {
+inline void UCustomizableObjectInstance::Copy(struct UCustomizableObjectInstance Target) {
 	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.Copy");
 
 	struct Copy_Params {
-		struct Unknown Target;
+		struct UCustomizableObjectInstance Target;
 	}; Copy_Params Params;
 
 	Params.Target = Target;
@@ -1378,12 +1378,12 @@ inline void UCustomizableObjectInstance::Copy(struct Unknown Target) {
 }
 
 // Function CustomizableObject.CustomizableObjectInstance.Clone
-inline struct Unknown UCustomizableObjectInstance::Clone() {
+inline struct UCustomizableObjectInstance UCustomizableObjectInstance::Clone() {
 	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectInstance.Clone");
 
 	struct Clone_Params {
 		
-		struct Unknown ReturnValue;
+		struct UCustomizableObjectInstance ReturnValue;
 
 	}; Clone_Params Params;
 
@@ -1501,12 +1501,12 @@ inline int32_t UCustomizableObjectSystem::GetNumInstances() {
 }
 
 // Function CustomizableObject.CustomizableObjectSystem.GetInstance
-inline struct Unknown UCustomizableObjectSystem::GetInstance() {
+inline struct UCustomizableObjectSystem UCustomizableObjectSystem::GetInstance() {
 	static auto fn = UObject::FindObject<UFunction>("Function CustomizableObject.CustomizableObjectSystem.GetInstance");
 
 	struct GetInstance_Params {
 		
-		struct Unknown ReturnValue;
+		struct UCustomizableObjectSystem ReturnValue;
 
 	}; GetInstance_Params Params;
 

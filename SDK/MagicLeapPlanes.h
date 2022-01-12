@@ -24,12 +24,12 @@ class UMagicLeapPlanesComponent : public USceneComponent {
 
 public:
 
-	struct TArray<Unknown> QueryFlags; // 0x228 (16)
-	struct Unknown SearchVolume; // 0x238 (8)
+	struct TArray<enum class EMagicLeapPlaneQueryFlags> QueryFlags; // 0x228 (16)
+	struct UBoxComponent SearchVolume; // 0x238 (8)
 	int32_t MaxResults; // 0x240 (4)
 	float MinHolePerimeter; // 0x244 (4)
 	float MinPlaneArea; // 0x248 (4)
-	enum class Unknow QueryType; // 0x24C (1)
+	enum class EMagicLeapPlaneQueryType QueryType; // 0x24C (1)
 	float SimilarityThreshold; // 0x250 (4)
 	struct FMulticastInlineDelegate OnPlanesQueryResult; // 0x258 (16)
 	struct FMulticastInlineDelegate OnPersistentPlanesQueryResult; // 0x268 (16)
@@ -39,42 +39,42 @@ public:
 
 // ScriptStruct MagicLeapPlanes.MagicLeapPlaneBoundaries
 struct FMagicLeapPlaneBoundaries {
-	struct Unknown ID; // 0x0 (16)
-	struct TArray<Unknown> Boundaries; // 0x10 (16)
+	struct FGuid ID; // 0x0 (16)
+	struct TArray<struct FMagicLeapPlaneBoundary> Boundaries; // 0x10 (16)
 };
 
 // ScriptStruct MagicLeapPlanes.MagicLeapPlaneBoundary
 struct FMagicLeapPlaneBoundary {
-	struct Unknown Polygon; // 0x0 (16)
-	struct TArray<Unknown> Holes; // 0x10 (16)
+	struct FMagicLeapPolygon Polygon; // 0x0 (16)
+	struct TArray<struct FMagicLeapPolygon> Holes; // 0x10 (16)
 };
 
 // ScriptStruct MagicLeapPlanes.MagicLeapPolygon
 struct FMagicLeapPolygon {
-	struct TArray<Unknown> Vertices; // 0x0 (16)
+	struct TArray<struct FVector> Vertices; // 0x0 (16)
 };
 
 // ScriptStruct MagicLeapPlanes.MagicLeapPlaneResult
 struct FMagicLeapPlaneResult {
-	struct Unknown PlanePosition; // 0x0 (12)
-	struct Unknown PlaneOrientation; // 0xC (12)
-	struct Unknown ContentOrientation; // 0x18 (12)
-	struct Unknown PlaneDimensions; // 0x24 (8)
-	struct TArray<Unknown> PlaneFlags; // 0x30 (16)
-	struct Unknown ID; // 0x40 (16)
-	struct Unknown InnerID; // 0x50 (16)
+	struct FVector PlanePosition; // 0x0 (12)
+	struct FRotator PlaneOrientation; // 0xC (12)
+	struct FRotator ContentOrientation; // 0x18 (12)
+	struct FVector2D PlaneDimensions; // 0x24 (8)
+	struct TArray<enum class EMagicLeapPlaneQueryFlags> PlaneFlags; // 0x30 (16)
+	struct FGuid ID; // 0x40 (16)
+	struct FGuid InnerID; // 0x50 (16)
 };
 
 // ScriptStruct MagicLeapPlanes.MagicLeapPlanesQuery
 struct FMagicLeapPlanesQuery {
-	struct TArray<Unknown> Flags; // 0x0 (16)
-	struct Unknown SearchVolume; // 0x10 (8)
+	struct TArray<enum class EMagicLeapPlaneQueryFlags> Flags; // 0x0 (16)
+	struct UBoxComponent SearchVolume; // 0x10 (8)
 	int32_t MaxResults; // 0x18 (4)
 	float MinHoleLength; // 0x1C (4)
 	float MinPlaneArea; // 0x20 (4)
-	struct Unknown SearchVolumePosition; // 0x24 (12)
-	struct Unknown SearchVolumeOrientation; // 0x30 (16)
-	struct Unknown SearchVolumeExtents; // 0x40 (12)
+	struct FVector SearchVolumePosition; // 0x24 (12)
+	struct FQuat SearchVolumeOrientation; // 0x30 (16)
+	struct FVector SearchVolumeExtents; // 0x40 (12)
 	float SimilarityThreshold; // 0x4C (4)
 	char bSearchVolumeTrackingSpace : 0; // 0x50 (1)
 	char bResultTrackingSpace : 0; // 0x51 (1)

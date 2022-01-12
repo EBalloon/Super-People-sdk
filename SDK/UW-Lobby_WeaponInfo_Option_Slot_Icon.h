@@ -3,24 +3,24 @@ class UUW-Lobby_WeaponInfo_Option_Slot_Icon_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Image_Buff; // 0x250 (8)
-	struct Unknown Image_Grade_Color_Line; // 0x258 (8)
-	struct Unknown ItemOption; // 0x260 (184)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UImage Image_Buff; // 0x250 (8)
+	struct UImage Image_Grade_Color_Line; // 0x258 (8)
+	struct FItemOption ItemOption; // 0x260 (184)
 
-	void SetItemOption(struct Unknown& ItemOption); // Function UW-Lobby_WeaponInfo_Option_Slot_Icon.UW-Lobby_WeaponInfo_Option_Slot_Icon_C.SetItemOption(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnLoaded_6C8A793942B5F7D63CF7C5BA6F5F3753(struct Unknown Loaded); // Function UW-Lobby_WeaponInfo_Option_Slot_Icon.UW-Lobby_WeaponInfo_Option_Slot_Icon_C.OnLoaded_6C8A793942B5F7D63CF7C5BA6F5F3753(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AsyncLoadImg(struct Unknown Object); // Function UW-Lobby_WeaponInfo_Option_Slot_Icon.UW-Lobby_WeaponInfo_Option_Slot_Icon_C.AsyncLoadImg(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-Lobby_WeaponInfo_Option_Slot_Icon.UW-Lobby_WeaponInfo_Option_Slot_Icon_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetItemOption(struct FItemOption& ItemOption); // Function UW-Lobby_WeaponInfo_Option_Slot_Icon.UW-Lobby_WeaponInfo_Option_Slot_Icon_C.SetItemOption(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_6C8A793942B5F7D63CF7C5BA6F5F3753(struct Object Loaded); // Function UW-Lobby_WeaponInfo_Option_Slot_Icon.UW-Lobby_WeaponInfo_Option_Slot_Icon_C.OnLoaded_6C8A793942B5F7D63CF7C5BA6F5F3753(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AsyncLoadImg(struct TSoftObjectPtr<Object> Object); // Function UW-Lobby_WeaponInfo_Option_Slot_Icon.UW-Lobby_WeaponInfo_Option_Slot_Icon_C.AsyncLoadImg(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnMouseEnter(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-Lobby_WeaponInfo_Option_Slot_Icon.UW-Lobby_WeaponInfo_Option_Slot_Icon_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-Lobby_WeaponInfo_Option_Slot_Icon(int32_t EntryPoint); // Function UW-Lobby_WeaponInfo_Option_Slot_Icon.UW-Lobby_WeaponInfo_Option_Slot_Icon_C.ExecuteUbergraph_UW-Lobby_WeaponInfo_Option_Slot_Icon(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-Lobby_WeaponInfo_Option_Slot_Icon.UW-Lobby_WeaponInfo_Option_Slot_Icon_C.SetItemOption
-inline void UUW-Lobby_WeaponInfo_Option_Slot_Icon_C::SetItemOption(struct Unknown& ItemOption) {
+inline void UUW-Lobby_WeaponInfo_Option_Slot_Icon_C::SetItemOption(struct FItemOption& ItemOption) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Lobby_WeaponInfo_Option_Slot_Icon.UW-Lobby_WeaponInfo_Option_Slot_Icon_C.SetItemOption");
 
 	struct SetItemOption_Params {
-		struct Unknown& ItemOption;
+		struct FItemOption& ItemOption;
 	}; SetItemOption_Params Params;
 
 
@@ -33,11 +33,11 @@ inline void UUW-Lobby_WeaponInfo_Option_Slot_Icon_C::SetItemOption(struct Unknow
 }
 
 // Function UW-Lobby_WeaponInfo_Option_Slot_Icon.UW-Lobby_WeaponInfo_Option_Slot_Icon_C.OnLoaded_6C8A793942B5F7D63CF7C5BA6F5F3753
-inline void UUW-Lobby_WeaponInfo_Option_Slot_Icon_C::OnLoaded_6C8A793942B5F7D63CF7C5BA6F5F3753(struct Unknown Loaded) {
+inline void UUW-Lobby_WeaponInfo_Option_Slot_Icon_C::OnLoaded_6C8A793942B5F7D63CF7C5BA6F5F3753(struct Object Loaded) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Lobby_WeaponInfo_Option_Slot_Icon.UW-Lobby_WeaponInfo_Option_Slot_Icon_C.OnLoaded_6C8A793942B5F7D63CF7C5BA6F5F3753");
 
 	struct OnLoaded_6C8A793942B5F7D63CF7C5BA6F5F3753_Params {
-		struct Unknown Loaded;
+		struct Object Loaded;
 	}; OnLoaded_6C8A793942B5F7D63CF7C5BA6F5F3753_Params Params;
 
 	Params.Loaded = Loaded;
@@ -48,11 +48,11 @@ inline void UUW-Lobby_WeaponInfo_Option_Slot_Icon_C::OnLoaded_6C8A793942B5F7D63C
 }
 
 // Function UW-Lobby_WeaponInfo_Option_Slot_Icon.UW-Lobby_WeaponInfo_Option_Slot_Icon_C.AsyncLoadImg
-inline void UUW-Lobby_WeaponInfo_Option_Slot_Icon_C::AsyncLoadImg(struct Unknown Object) {
+inline void UUW-Lobby_WeaponInfo_Option_Slot_Icon_C::AsyncLoadImg(struct TSoftObjectPtr<Object> Object) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Lobby_WeaponInfo_Option_Slot_Icon.UW-Lobby_WeaponInfo_Option_Slot_Icon_C.AsyncLoadImg");
 
 	struct AsyncLoadImg_Params {
-		struct Unknown Object;
+		struct TSoftObjectPtr<Object> Object;
 	}; AsyncLoadImg_Params Params;
 
 	Params.Object = Object;
@@ -63,12 +63,12 @@ inline void UUW-Lobby_WeaponInfo_Option_Slot_Icon_C::AsyncLoadImg(struct Unknown
 }
 
 // Function UW-Lobby_WeaponInfo_Option_Slot_Icon.UW-Lobby_WeaponInfo_Option_Slot_Icon_C.OnMouseEnter
-inline void UUW-Lobby_WeaponInfo_Option_Slot_Icon_C::OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline void UUW-Lobby_WeaponInfo_Option_Slot_Icon_C::OnMouseEnter(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Lobby_WeaponInfo_Option_Slot_Icon.UW-Lobby_WeaponInfo_Option_Slot_Icon_C.OnMouseEnter");
 
 	struct OnMouseEnter_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
 	}; OnMouseEnter_Params Params;
 
 	Params.MyGeometry = MyGeometry;

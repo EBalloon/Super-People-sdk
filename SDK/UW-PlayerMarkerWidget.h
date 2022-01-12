@@ -3,59 +3,59 @@ class UUW-PlayerMarkerWidget_C : public UBravoHotelPlayerMarkerWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Anim_OnShow; // 0x250 (8)
-	struct Unknown Canvas_Move; // 0x258 (8)
-	struct Unknown IconImage; // 0x260 (8)
-	struct Unknown Overlay_1; // 0x268 (8)
-	struct Unknown PlayerMarker; // 0x270 (8)
-	struct Unknown SizeBox_IconImage; // 0x278 (8)
-	struct Unknown TeamIndex; // 0x280 (8)
-	struct Unknown UW-CompassWidget_Item_Resuscitation; // 0x288 (8)
-	struct Unknown WidgetSwitcher_Icon; // 0x290 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UWidgetAnimation Anim_OnShow; // 0x250 (8)
+	struct UCanvasPanel Canvas_Move; // 0x258 (8)
+	struct UIconImage_C IconImage; // 0x260 (8)
+	struct UOverlay Overlay_1; // 0x268 (8)
+	struct UImage PlayerMarker; // 0x270 (8)
+	struct USizeBox SizeBox_IconImage; // 0x278 (8)
+	struct UTextBlock TeamIndex; // 0x280 (8)
+	struct UUW-CompassWidget_Item_Resuscitation_C UW-CompassWidget_Item_Resuscitation; // 0x288 (8)
+	struct UWidgetSwitcher WidgetSwitcher_Icon; // 0x290 (8)
 	char IsShowingAnimReserved : 0; // 0x298 (1)
 	struct FMulticastInlineDelegate OnMarkerClicked; // 0x2A0 (16)
-	struct Unknown CurrentMarker; // 0x2B0 (8)
-	struct TMap<Unknown, Unknown> Map_PingTypeTexture; // 0x2B8 (80)
-	struct TMap<Unknown, Unknown> Map_PingItemTypeTexture; // 0x308 (80)
-	struct Unknown SupplyBoxNotOpen; // 0x358 (8)
-	struct Unknown SupplyBoxOpened; // 0x360 (8)
-	struct Unknown PlayerState; // 0x368 (8)
+	struct UImage CurrentMarker; // 0x2B0 (8)
+	struct TMap<enum class EPingType, struct Object> Map_PingTypeTexture; // 0x2B8 (80)
+	struct TMap<enum class EItemPingIconType, struct Object> Map_PingItemTypeTexture; // 0x308 (80)
+	struct Object SupplyBoxNotOpen; // 0x358 (8)
+	struct Object SupplyBoxOpened; // 0x360 (8)
+	struct ABravoHotelPlayerState PlayerState; // 0x368 (8)
 	char IsOnMap : 0; // 0x370 (1)
 	char Selected : 0; // 0x371 (1)
 	char MyPing : 0; // 0x372 (1)
 	struct FMulticastInlineDelegate OnMouseUp; // 0x378 (16)
 
-	struct Unknown OnMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetImageFromPingType(enum class Unknow PingType, struct Unknown& Image); // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.GetImageFromPingType(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetGuidePingInfoForSmartpingMenu(enum class Unknow PingType); // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.SetGuidePingInfoForSmartpingMenu(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetPingType(struct Unknown PingInfo, char IsOpend); // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.SetPingType(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply OnMouseButtonDown(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetImageFromPingType(enum class EPingType PingType, struct UPaperSprite& Image); // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.GetImageFromPingType(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetGuidePingInfoForSmartpingMenu(enum class EPingType PingType); // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.SetGuidePingInfoForSmartpingMenu(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetPingType(struct FBravoHotelPingInfo PingInfo, char IsOpend); // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.SetPingType(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnResetMarkerInfo(); // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.OnResetMarkerInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetPlayerColor(struct Unknown PlayerState); // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.SetPlayerColor(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetPlayerColor(struct ABravoHotelPlayerState PlayerState); // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.SetPlayerColor(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ReserveShowingAnimation(); // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.ReserveShowingAnimation(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown OnMouseButtonUp(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.OnMouseButtonUp(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Initialize(struct Unknown PlayerState); // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.Initialize(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetInfo(struct Unknown PingInfo, char UsingAnimation, char IsOpened); // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.SetInfo(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply OnMouseButtonUp(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.OnMouseButtonUp(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Initialize(struct ABravoHotelPlayerState PlayerState); // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.Initialize(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetInfo(struct FBravoHotelPingInfo PingInfo, char UsingAnimation, char IsOpened); // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.SetInfo(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ResetMarkerInfo(char IsUpdate); // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.ResetMarkerInfo(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetMaterialInfo(char UsingAnimation, struct Unknown MaterialPingInfo); // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.SetMaterialInfo(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetResuscitationInfo(char UsingAnimation, struct Unknown PlayerState); // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.SetResuscitationInfo(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetLocalPingInfo(char UsingAnimation, struct Unknown LocalPingInfo); // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.SetLocalPingInfo(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetExpertWeaponInfo(char UsingAnimation, struct Unknown ExpertWeaponPingInfo); // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.SetExpertWeaponInfo(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnMouseLeave(struct Unknown& MouseEvent); // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetMaterialInfo(char UsingAnimation, struct FMaterialItemPingInfo MaterialPingInfo); // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.SetMaterialInfo(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetResuscitationInfo(char UsingAnimation, struct ABravoHotelPlayerState PlayerState); // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.SetResuscitationInfo(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetLocalPingInfo(char UsingAnimation, struct FBravoHotelLocalPingInfo LocalPingInfo); // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.SetLocalPingInfo(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetExpertWeaponInfo(char UsingAnimation, struct FExpertWeaponPingInfo ExpertWeaponPingInfo); // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.SetExpertWeaponInfo(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnMouseEnter(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnMouseLeave(struct FPointerEvent& MouseEvent); // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-PlayerMarkerWidget(int32_t EntryPoint); // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.ExecuteUbergraph_UW-PlayerMarkerWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
-	void OnMouseUp__DelegateSignature(struct Unknown Mouse); // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.OnMouseUp__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnMarkerClicked__DelegateSignature(struct Unknown Button, char mapObjectID); // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.OnMarkerClicked__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnMouseUp__DelegateSignature(struct FPointerEvent Mouse); // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.OnMouseUp__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnMarkerClicked__DelegateSignature(struct FKey Button, char mapObjectID); // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.OnMarkerClicked__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.OnMouseButtonDown
-inline struct Unknown UUW-PlayerMarkerWidget_C::OnMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UUW-PlayerMarkerWidget_C::OnMouseButtonDown(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.OnMouseButtonDown");
 
 	struct OnMouseButtonDown_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnMouseButtonDown_Params Params;
 
@@ -72,12 +72,12 @@ inline struct Unknown UUW-PlayerMarkerWidget_C::OnMouseButtonDown(struct Unknown
 }
 
 // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.GetImageFromPingType
-inline void UUW-PlayerMarkerWidget_C::GetImageFromPingType(enum class Unknow PingType, struct Unknown& Image) {
+inline void UUW-PlayerMarkerWidget_C::GetImageFromPingType(enum class EPingType PingType, struct UPaperSprite& Image) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.GetImageFromPingType");
 
 	struct GetImageFromPingType_Params {
-		enum class Unknow PingType;
-		struct Unknown& Image;
+		enum class EPingType PingType;
+		struct UPaperSprite& Image;
 	}; GetImageFromPingType_Params Params;
 
 	Params.PingType = PingType;
@@ -91,11 +91,11 @@ inline void UUW-PlayerMarkerWidget_C::GetImageFromPingType(enum class Unknow Pin
 }
 
 // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.SetGuidePingInfoForSmartpingMenu
-inline void UUW-PlayerMarkerWidget_C::SetGuidePingInfoForSmartpingMenu(enum class Unknow PingType) {
+inline void UUW-PlayerMarkerWidget_C::SetGuidePingInfoForSmartpingMenu(enum class EPingType PingType) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.SetGuidePingInfoForSmartpingMenu");
 
 	struct SetGuidePingInfoForSmartpingMenu_Params {
-		enum class Unknow PingType;
+		enum class EPingType PingType;
 	}; SetGuidePingInfoForSmartpingMenu_Params Params;
 
 	Params.PingType = PingType;
@@ -106,11 +106,11 @@ inline void UUW-PlayerMarkerWidget_C::SetGuidePingInfoForSmartpingMenu(enum clas
 }
 
 // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.SetPingType
-inline void UUW-PlayerMarkerWidget_C::SetPingType(struct Unknown PingInfo, char IsOpend) {
+inline void UUW-PlayerMarkerWidget_C::SetPingType(struct FBravoHotelPingInfo PingInfo, char IsOpend) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.SetPingType");
 
 	struct SetPingType_Params {
-		struct Unknown PingInfo;
+		struct FBravoHotelPingInfo PingInfo;
 		char IsOpend;
 	}; SetPingType_Params Params;
 
@@ -137,11 +137,11 @@ inline void UUW-PlayerMarkerWidget_C::OnResetMarkerInfo() {
 }
 
 // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.SetPlayerColor
-inline void UUW-PlayerMarkerWidget_C::SetPlayerColor(struct Unknown PlayerState) {
+inline void UUW-PlayerMarkerWidget_C::SetPlayerColor(struct ABravoHotelPlayerState PlayerState) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.SetPlayerColor");
 
 	struct SetPlayerColor_Params {
-		struct Unknown PlayerState;
+		struct ABravoHotelPlayerState PlayerState;
 	}; SetPlayerColor_Params Params;
 
 	Params.PlayerState = PlayerState;
@@ -166,13 +166,13 @@ inline void UUW-PlayerMarkerWidget_C::ReserveShowingAnimation() {
 }
 
 // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.OnMouseButtonUp
-inline struct Unknown UUW-PlayerMarkerWidget_C::OnMouseButtonUp(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UUW-PlayerMarkerWidget_C::OnMouseButtonUp(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.OnMouseButtonUp");
 
 	struct OnMouseButtonUp_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnMouseButtonUp_Params Params;
 
@@ -189,11 +189,11 @@ inline struct Unknown UUW-PlayerMarkerWidget_C::OnMouseButtonUp(struct Unknown M
 }
 
 // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.Initialize
-inline void UUW-PlayerMarkerWidget_C::Initialize(struct Unknown PlayerState) {
+inline void UUW-PlayerMarkerWidget_C::Initialize(struct ABravoHotelPlayerState PlayerState) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.Initialize");
 
 	struct Initialize_Params {
-		struct Unknown PlayerState;
+		struct ABravoHotelPlayerState PlayerState;
 	}; Initialize_Params Params;
 
 	Params.PlayerState = PlayerState;
@@ -204,11 +204,11 @@ inline void UUW-PlayerMarkerWidget_C::Initialize(struct Unknown PlayerState) {
 }
 
 // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.SetInfo
-inline void UUW-PlayerMarkerWidget_C::SetInfo(struct Unknown PingInfo, char UsingAnimation, char IsOpened) {
+inline void UUW-PlayerMarkerWidget_C::SetInfo(struct FBravoHotelPingInfo PingInfo, char UsingAnimation, char IsOpened) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.SetInfo");
 
 	struct SetInfo_Params {
-		struct Unknown PingInfo;
+		struct FBravoHotelPingInfo PingInfo;
 		char UsingAnimation;
 		char IsOpened;
 	}; SetInfo_Params Params;
@@ -238,12 +238,12 @@ inline void UUW-PlayerMarkerWidget_C::ResetMarkerInfo(char IsUpdate) {
 }
 
 // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.SetMaterialInfo
-inline void UUW-PlayerMarkerWidget_C::SetMaterialInfo(char UsingAnimation, struct Unknown MaterialPingInfo) {
+inline void UUW-PlayerMarkerWidget_C::SetMaterialInfo(char UsingAnimation, struct FMaterialItemPingInfo MaterialPingInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.SetMaterialInfo");
 
 	struct SetMaterialInfo_Params {
 		char UsingAnimation;
-		struct Unknown MaterialPingInfo;
+		struct FMaterialItemPingInfo MaterialPingInfo;
 	}; SetMaterialInfo_Params Params;
 
 	Params.UsingAnimation = UsingAnimation;
@@ -255,12 +255,12 @@ inline void UUW-PlayerMarkerWidget_C::SetMaterialInfo(char UsingAnimation, struc
 }
 
 // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.SetResuscitationInfo
-inline void UUW-PlayerMarkerWidget_C::SetResuscitationInfo(char UsingAnimation, struct Unknown PlayerState) {
+inline void UUW-PlayerMarkerWidget_C::SetResuscitationInfo(char UsingAnimation, struct ABravoHotelPlayerState PlayerState) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.SetResuscitationInfo");
 
 	struct SetResuscitationInfo_Params {
 		char UsingAnimation;
-		struct Unknown PlayerState;
+		struct ABravoHotelPlayerState PlayerState;
 	}; SetResuscitationInfo_Params Params;
 
 	Params.UsingAnimation = UsingAnimation;
@@ -272,12 +272,12 @@ inline void UUW-PlayerMarkerWidget_C::SetResuscitationInfo(char UsingAnimation, 
 }
 
 // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.SetLocalPingInfo
-inline void UUW-PlayerMarkerWidget_C::SetLocalPingInfo(char UsingAnimation, struct Unknown LocalPingInfo) {
+inline void UUW-PlayerMarkerWidget_C::SetLocalPingInfo(char UsingAnimation, struct FBravoHotelLocalPingInfo LocalPingInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.SetLocalPingInfo");
 
 	struct SetLocalPingInfo_Params {
 		char UsingAnimation;
-		struct Unknown LocalPingInfo;
+		struct FBravoHotelLocalPingInfo LocalPingInfo;
 	}; SetLocalPingInfo_Params Params;
 
 	Params.UsingAnimation = UsingAnimation;
@@ -289,12 +289,12 @@ inline void UUW-PlayerMarkerWidget_C::SetLocalPingInfo(char UsingAnimation, stru
 }
 
 // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.SetExpertWeaponInfo
-inline void UUW-PlayerMarkerWidget_C::SetExpertWeaponInfo(char UsingAnimation, struct Unknown ExpertWeaponPingInfo) {
+inline void UUW-PlayerMarkerWidget_C::SetExpertWeaponInfo(char UsingAnimation, struct FExpertWeaponPingInfo ExpertWeaponPingInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.SetExpertWeaponInfo");
 
 	struct SetExpertWeaponInfo_Params {
 		char UsingAnimation;
-		struct Unknown ExpertWeaponPingInfo;
+		struct FExpertWeaponPingInfo ExpertWeaponPingInfo;
 	}; SetExpertWeaponInfo_Params Params;
 
 	Params.UsingAnimation = UsingAnimation;
@@ -306,12 +306,12 @@ inline void UUW-PlayerMarkerWidget_C::SetExpertWeaponInfo(char UsingAnimation, s
 }
 
 // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.OnMouseEnter
-inline void UUW-PlayerMarkerWidget_C::OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline void UUW-PlayerMarkerWidget_C::OnMouseEnter(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.OnMouseEnter");
 
 	struct OnMouseEnter_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
 	}; OnMouseEnter_Params Params;
 
 	Params.MyGeometry = MyGeometry;
@@ -325,11 +325,11 @@ inline void UUW-PlayerMarkerWidget_C::OnMouseEnter(struct Unknown MyGeometry, st
 }
 
 // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.OnMouseLeave
-inline void UUW-PlayerMarkerWidget_C::OnMouseLeave(struct Unknown& MouseEvent) {
+inline void UUW-PlayerMarkerWidget_C::OnMouseLeave(struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.OnMouseLeave");
 
 	struct OnMouseLeave_Params {
-		struct Unknown& MouseEvent;
+		struct FPointerEvent& MouseEvent;
 	}; OnMouseLeave_Params Params;
 
 
@@ -357,11 +357,11 @@ inline void UUW-PlayerMarkerWidget_C::ExecuteUbergraph_UW-PlayerMarkerWidget(int
 }
 
 // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.OnMouseUp__DelegateSignature
-inline void UUW-PlayerMarkerWidget_C::OnMouseUp__DelegateSignature(struct Unknown Mouse) {
+inline void UUW-PlayerMarkerWidget_C::OnMouseUp__DelegateSignature(struct FPointerEvent Mouse) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.OnMouseUp__DelegateSignature");
 
 	struct OnMouseUp__DelegateSignature_Params {
-		struct Unknown Mouse;
+		struct FPointerEvent Mouse;
 	}; OnMouseUp__DelegateSignature_Params Params;
 
 	Params.Mouse = Mouse;
@@ -372,11 +372,11 @@ inline void UUW-PlayerMarkerWidget_C::OnMouseUp__DelegateSignature(struct Unknow
 }
 
 // Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.OnMarkerClicked__DelegateSignature
-inline void UUW-PlayerMarkerWidget_C::OnMarkerClicked__DelegateSignature(struct Unknown Button, char mapObjectID) {
+inline void UUW-PlayerMarkerWidget_C::OnMarkerClicked__DelegateSignature(struct FKey Button, char mapObjectID) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PlayerMarkerWidget.UW-PlayerMarkerWidget_C.OnMarkerClicked__DelegateSignature");
 
 	struct OnMarkerClicked__DelegateSignature_Params {
-		struct Unknown Button;
+		struct FKey Button;
 		char mapObjectID;
 	}; OnMarkerClicked__DelegateSignature_Params Params;
 

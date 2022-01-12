@@ -3,10 +3,10 @@ class USettingDevWidget_C : public UBravoHotelSettingSubWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x298 (8)
-	struct Unknown ButtonGod; // 0x2A0 (8)
-	struct Unknown DevWidget; // 0x2A8 (8)
-	struct Unknown ScrollBox_55; // 0x2B0 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x298 (8)
+	struct UButton ButtonGod; // 0x2A0 (8)
+	struct UDevWidget_C DevWidget; // 0x2A8 (8)
+	struct UScrollBox ScrollBox_55; // 0x2B0 (8)
 
 	void Construct(); // Function SettingDevWidget.SettingDevWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__ButtonOpenCheat_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function SettingDevWidget.SettingDevWidget_C.BndEvt__ButtonOpenCheat_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>

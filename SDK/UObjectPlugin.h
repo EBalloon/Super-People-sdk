@@ -3,7 +3,7 @@ class UMyPluginObject : public Object {
 
 public:
 
-	struct Unknown MyStruct; // 0x28 (16)
+	struct FMyPluginStruct MyStruct; // 0x28 (16)
 };
 
 // ScriptStruct UObjectPlugin.MyPluginStruct

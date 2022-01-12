@@ -3,13 +3,13 @@ class UUW-Volume_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Img_Voice; // 0x250 (8)
-	struct Unknown Img_VoiceX; // 0x258 (8)
-	struct Unknown SizeBox_2; // 0x260 (8)
-	struct Unknown TextBlock; // 0x268 (8)
-	struct Unknown WidgetSwitcher_LogOut; // 0x270 (8)
-	struct Unknown Timer; // 0x278 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UImage Img_Voice; // 0x250 (8)
+	struct UImage Img_VoiceX; // 0x258 (8)
+	struct USizeBox SizeBox_2; // 0x260 (8)
+	struct UTextBlock TextBlock; // 0x268 (8)
+	struct UWidgetSwitcher WidgetSwitcher_LogOut; // 0x270 (8)
+	struct FTimerHandle Timer; // 0x278 (8)
 
 	void Construct(); // Function UW-Volume.UW-Volume_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ä¤@t¤¸_1(float VolumeOnOff, float Volume); // Function UW-Volume.UW-Volume_C.ä¤@t¤¸_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>

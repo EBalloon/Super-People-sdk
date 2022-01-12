@@ -3,82 +3,82 @@ class USlotItemWidget_C : public UBravoHotelSettingSlotWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x4E8 (8)
-	struct Unknown Over; // 0x4F0 (8)
-	struct Unknown Button_107; // 0x4F8 (8)
-	struct Unknown Button_441; // 0x500 (8)
-	struct Unknown Button_Type; // 0x508 (8)
-	struct Unknown ButtonType; // 0x510 (8)
-	struct Unknown ComboBoxString_237; // 0x518 (8)
-	struct Unknown ComboBoxType; // 0x520 (8)
-	struct Unknown Down; // 0x528 (8)
-	struct Unknown EditableText_80; // 0x530 (8)
-	struct Unknown HorizontalBox_191; // 0x538 (8)
-	struct Unknown Image_153; // 0x540 (8)
-	struct Unknown Image_204; // 0x548 (8)
-	struct Unknown Image_414; // 0x550 (8)
-	struct Unknown Key; // 0x558 (8)
-	struct Unknown KeyImageMain; // 0x560 (8)
-	struct Unknown KeyImageSub; // 0x568 (8)
-	struct Unknown KeyLock; // 0x570 (8)
-	struct Unknown LeftA; // 0x578 (8)
-	struct Unknown LeftA_2; // 0x580 (8)
-	struct Unknown LockMain; // 0x588 (8)
-	struct Unknown LockSub; // 0x590 (8)
-	struct Unknown MainBG; // 0x598 (8)
-	struct Unknown MainKeyInput; // 0x5A0 (8)
-	struct Unknown Overlay_215; // 0x5A8 (8)
-	struct Unknown ProgressBar_150; // 0x5B0 (8)
-	struct Unknown RightA; // 0x5B8 (8)
-	struct Unknown RightA_2; // 0x5C0 (8)
-	struct Unknown SelectBtn1; // 0x5C8 (8)
-	struct Unknown SelectBtn2; // 0x5D0 (8)
-	struct Unknown SelectBtn3; // 0x5D8 (8)
-	struct Unknown SelectBtn4; // 0x5E0 (8)
-	struct Unknown SelectBtn5; // 0x5E8 (8)
-	struct Unknown SelectBtn6; // 0x5F0 (8)
-	struct Unknown SelectType; // 0x5F8 (8)
-	struct Unknown SelectValue; // 0x600 (8)
-	struct Unknown Slider_139; // 0x608 (8)
-	struct Unknown SliderType; // 0x610 (8)
-	struct Unknown SubBG; // 0x618 (8)
-	struct Unknown SubKeyInput; // 0x620 (8)
-	struct Unknown T_Button; // 0x628 (8)
-	struct Unknown Title_Text; // 0x630 (8)
-	struct Unknown Up; // 0x638 (8)
-	struct Unknown Value; // 0x640 (8)
-	struct Unknown Value_2; // 0x648 (8)
-	struct Unknown WidgetSwitcher_1; // 0x650 (8)
-	struct Unknown WidgetSwitcher_281; // 0x658 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x4E8 (8)
+	struct UWidgetAnimation Over; // 0x4F0 (8)
+	struct UButton Button_107; // 0x4F8 (8)
+	struct UButton Button_441; // 0x500 (8)
+	struct UButton Button_Type; // 0x508 (8)
+	struct UCanvasPanel ButtonType; // 0x510 (8)
+	struct UComboBoxString ComboBoxString_237; // 0x518 (8)
+	struct UCanvasPanel ComboBoxType; // 0x520 (8)
+	struct UImage Down; // 0x528 (8)
+	struct UEditableText EditableText_80; // 0x530 (8)
+	struct UHorizontalBox HorizontalBox_191; // 0x538 (8)
+	struct UImage Image_153; // 0x540 (8)
+	struct UImage Image_204; // 0x548 (8)
+	struct UImage Image_414; // 0x550 (8)
+	struct UCanvasPanel Key; // 0x558 (8)
+	struct UKeyImageWidget_C KeyImageMain; // 0x560 (8)
+	struct UKeyImageWidget_C KeyImageSub; // 0x568 (8)
+	struct UTextBlock KeyLock; // 0x570 (8)
+	struct UArrowBtn_C LeftA; // 0x578 (8)
+	struct UArrowBtn_C LeftA_2; // 0x580 (8)
+	struct UImage LockMain; // 0x588 (8)
+	struct UImage LockSub; // 0x590 (8)
+	struct UImage MainBG; // 0x598 (8)
+	struct UInputKeySelector MainKeyInput; // 0x5A0 (8)
+	struct UOverlay Overlay_215; // 0x5A8 (8)
+	struct UProgressBar ProgressBar_150; // 0x5B0 (8)
+	struct UArrowBtn_C RightA; // 0x5B8 (8)
+	struct UArrowBtn_C RightA_2; // 0x5C0 (8)
+	struct UselectTypeBtn_C SelectBtn1; // 0x5C8 (8)
+	struct UselectTypeBtn_C SelectBtn2; // 0x5D0 (8)
+	struct UselectTypeBtn_C SelectBtn3; // 0x5D8 (8)
+	struct UselectTypeBtn_C SelectBtn4; // 0x5E0 (8)
+	struct UselectTypeBtn_C SelectBtn5; // 0x5E8 (8)
+	struct UselectTypeBtn_C SelectBtn6; // 0x5F0 (8)
+	struct UCanvasPanel SelectType; // 0x5F8 (8)
+	struct UTextBlock SelectValue; // 0x600 (8)
+	struct USlider Slider_139; // 0x608 (8)
+	struct UCanvasPanel SliderType; // 0x610 (8)
+	struct UImage SubBG; // 0x618 (8)
+	struct UInputKeySelector SubKeyInput; // 0x620 (8)
+	struct UTextBlock T_Button; // 0x628 (8)
+	struct UTextBlock Title_Text; // 0x630 (8)
+	struct UImage Up; // 0x638 (8)
+	struct UTextBlock Value; // 0x640 (8)
+	struct UTextBlock Value_2; // 0x648 (8)
+	struct UWidgetSwitcher WidgetSwitcher_1; // 0x650 (8)
+	struct UWidgetSwitcher WidgetSwitcher_281; // 0x658 (8)
 	char Lock : 0; // 0x660 (1)
 	int32_t Selected SeleteValue; // 0x664 (4)
 	int32_t TotalListSize; // 0x668 (4)
-	struct TArray<Unknown> Empty; // 0x670 (16)
-	struct Unknown ButtonStyle; // 0x680 (632)
-	struct Unknown NewVar_1; // 0x8F8 (112)
+	struct TArray<struct TSoftObjectPtr<UTexture2D>> Empty; // 0x670 (16)
+	struct FButtonStyle ButtonStyle; // 0x680 (632)
+	struct FPointerEvent NewVar_1; // 0x8F8 (112)
 	char SliderIsInit : 0; // 0x968 (1)
 	struct FText EmptyText; // 0x970 (24)
 	int32_t TempSaveComboBoxIndex; // 0x988 (4)
-	struct Unknown Temp; // 0x990 (32)
+	struct FInputChord Temp; // 0x990 (32)
 	float TempValue; // 0x9B0 (4)
 	struct FText PreSliderText; // 0x9B8 (24)
 	struct FString LResultString; // 0x9D0 (16)
 	char have. : 0; // 0x9E0 (1)
 	char IsOnEditableText : 0; // 0x9E1 (1)
 	char CompletSettingData : 0; // 0x9E2 (1)
-	struct Unknown CompleteSettingInfo; // 0x9E8 (136)
-	struct Unknown TempSetting; // 0xA70 (136)
+	struct FSettingInfo CompleteSettingInfo; // 0x9E8 (136)
+	struct FSettingInfo TempSetting; // 0xA70 (136)
 	char ReMarkComboBox : 0; // 0xAF8 (1)
 
-	void GetOrgKey(char IsSubKey, struct Unknown& Key); // Function SlotItemWidget.SlotItemWidget_C.GetOrgKey(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetCurKey(char IsSubKey, struct Unknown& Key); // Function SlotItemWidget.SlotItemWidget_C.GetCurKey(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown OnKeyUp(struct Unknown MyGeometry, struct Unknown InKeyEvent); // Function SlotItemWidget.SlotItemWidget_C.OnKeyUp(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetOrgKey(char IsSubKey, struct FInputChord& Key); // Function SlotItemWidget.SlotItemWidget_C.GetOrgKey(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetCurKey(char IsSubKey, struct FInputChord& Key); // Function SlotItemWidget.SlotItemWidget_C.GetCurKey(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply OnKeyUp(struct FGeometry MyGeometry, struct FKeyEvent InKeyEvent); // Function SlotItemWidget.SlotItemWidget_C.OnKeyUp(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CheckMinMaxValue(float CheckValue, struct FString& RetString); // Function SlotItemWidget.SlotItemWidget_C.CheckMinMaxValue(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CheckConvertFloatToString(float Value, struct FString& Ret); // Function SlotItemWidget.SlotItemWidget_C.CheckConvertFloatToString(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetEnable(char State); // Function SlotItemWidget.SlotItemWidget_C.SetEnable(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetSliderValue(float InputValue, float& OutValue); // Function SlotItemWidget.SlotItemWidget_C.SetSliderValue(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetKeyNameFromKey(struct Unknown Key, struct FString& Name); // Function SlotItemWidget.SlotItemWidget_C.GetKeyNameFromKey(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown OnGenerateWidget_1(struct FString Item); // Function SlotItemWidget.SlotItemWidget_C.OnGenerateWidget_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetKeyNameFromKey(struct FKey Key, struct FString& Name); // Function SlotItemWidget.SlotItemWidget_C.GetKeyNameFromKey(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct UWidget OnGenerateWidget_1(struct FString Item); // Function SlotItemWidget.SlotItemWidget_C.OnGenerateWidget_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function SlotItemWidget.SlotItemWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__Button_106_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature(); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__Button_106_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__Button_106_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature(); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__Button_106_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -89,15 +89,15 @@ public:
 	void BndEvt__Slider_138_K2Node_ComponentBoundEvent_5_OnMouseCaptureBeginEvent__DelegateSignature(); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__Slider_138_K2Node_ComponentBoundEvent_5_OnMouseCaptureBeginEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__Slider_138_K2Node_ComponentBoundEvent_7_OnMouseCaptureEndEvent__DelegateSignature(); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__Slider_138_K2Node_ComponentBoundEvent_7_OnMouseCaptureEndEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Broadcast Change Index(float ValueIndex); // Function SlotItemWidget.SlotItemWidget_C.Broadcast Change Index(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InitDataByKeyInfo(char IsSub, struct Unknown& Index, char IsInit); // Function SlotItemWidget.SlotItemWidget_C.InitDataByKeyInfo(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BndEvt__MainKeyInput_K2Node_ComponentBoundEvent_19_OnKeySelected__DelegateSignature(struct Unknown SelectedKey); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__MainKeyInput_K2Node_ComponentBoundEvent_19_OnKeySelected__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BndEvt__SubKeyInput_K2Node_ComponentBoundEvent_20_OnKeySelected__DelegateSignature(struct Unknown SelectedKey); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__SubKeyInput_K2Node_ComponentBoundEvent_20_OnKeySelected__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void InitDataByKeyInfo(char IsSub, struct FInputActionKeyMapping& Index, char IsInit); // Function SlotItemWidget.SlotItemWidget_C.InitDataByKeyInfo(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__MainKeyInput_K2Node_ComponentBoundEvent_19_OnKeySelected__DelegateSignature(struct FInputChord SelectedKey); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__MainKeyInput_K2Node_ComponentBoundEvent_19_OnKeySelected__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__SubKeyInput_K2Node_ComponentBoundEvent_20_OnKeySelected__DelegateSignature(struct FInputChord SelectedKey); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__SubKeyInput_K2Node_ComponentBoundEvent_20_OnKeySelected__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__MainKeyInput_K2Node_ComponentBoundEvent_10_OnIsSelectingKeyChanged__DelegateSignature(); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__MainKeyInput_K2Node_ComponentBoundEvent_10_OnIsSelectingKeyChanged__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__SubKeyInput_K2Node_ComponentBoundEvent_12_OnIsSelectingKeyChanged__DelegateSignature(); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__SubKeyInput_K2Node_ComponentBoundEvent_12_OnIsSelectingKeyChanged__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetPercentValue(float Value); // Function SlotItemWidget.SlotItemWidget_C.SetPercentValue(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetSelectIndexComboBox(int32_t Index, char BroadcastChange); // Function SlotItemWidget.SlotItemWidget_C.SetSelectIndexComboBox(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetSelectIndexSelectBox(int32_t Index, char BroadcastChange); // Function SlotItemWidget.SlotItemWidget_C.SetSelectIndexSelectBox(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InitDataByAxisKeyInfo(char IsSub, struct Unknown& Index, char IsInit); // Function SlotItemWidget.SlotItemWidget_C.InitDataByAxisKeyInfo(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void InitDataByAxisKeyInfo(char IsSub, struct FInputAxisKeyMapping& Index, char IsInit); // Function SlotItemWidget.SlotItemWidget_C.InitDataByAxisKeyInfo(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SubSelectingKeyChanged(char IsSelectingKey); // Function SlotItemWidget.SlotItemWidget_C.SubSelectingKeyChanged(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void MainSelectingKeyChanged(char IsSelectingKey); // Function SlotItemWidget.SlotItemWidget_C.MainSelectingKeyChanged(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__RightA_K2Node_ComponentBoundEvent_11_CilckBtn__DelegateSignature(); // Function SlotItemWidget.SlotItemWidget_C.BndEvt__RightA_K2Node_ComponentBoundEvent_11_CilckBtn__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -122,12 +122,12 @@ public:
 };
 
 // Function SlotItemWidget.SlotItemWidget_C.GetOrgKey
-inline void USlotItemWidget_C::GetOrgKey(char IsSubKey, struct Unknown& Key) {
+inline void USlotItemWidget_C::GetOrgKey(char IsSubKey, struct FInputChord& Key) {
 	static auto fn = UObject::FindObject<UFunction>("Function SlotItemWidget.SlotItemWidget_C.GetOrgKey");
 
 	struct GetOrgKey_Params {
 		char IsSubKey;
-		struct Unknown& Key;
+		struct FInputChord& Key;
 	}; GetOrgKey_Params Params;
 
 	Params.IsSubKey = IsSubKey;
@@ -141,12 +141,12 @@ inline void USlotItemWidget_C::GetOrgKey(char IsSubKey, struct Unknown& Key) {
 }
 
 // Function SlotItemWidget.SlotItemWidget_C.GetCurKey
-inline void USlotItemWidget_C::GetCurKey(char IsSubKey, struct Unknown& Key) {
+inline void USlotItemWidget_C::GetCurKey(char IsSubKey, struct FInputChord& Key) {
 	static auto fn = UObject::FindObject<UFunction>("Function SlotItemWidget.SlotItemWidget_C.GetCurKey");
 
 	struct GetCurKey_Params {
 		char IsSubKey;
-		struct Unknown& Key;
+		struct FInputChord& Key;
 	}; GetCurKey_Params Params;
 
 	Params.IsSubKey = IsSubKey;
@@ -160,13 +160,13 @@ inline void USlotItemWidget_C::GetCurKey(char IsSubKey, struct Unknown& Key) {
 }
 
 // Function SlotItemWidget.SlotItemWidget_C.OnKeyUp
-inline struct Unknown USlotItemWidget_C::OnKeyUp(struct Unknown MyGeometry, struct Unknown InKeyEvent) {
+inline struct FEventReply USlotItemWidget_C::OnKeyUp(struct FGeometry MyGeometry, struct FKeyEvent InKeyEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function SlotItemWidget.SlotItemWidget_C.OnKeyUp");
 
 	struct OnKeyUp_Params {
-		struct Unknown MyGeometry;
-		struct Unknown InKeyEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FKeyEvent InKeyEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnKeyUp_Params Params;
 
@@ -253,11 +253,11 @@ inline void USlotItemWidget_C::SetSliderValue(float InputValue, float& OutValue)
 }
 
 // Function SlotItemWidget.SlotItemWidget_C.GetKeyNameFromKey
-inline void USlotItemWidget_C::GetKeyNameFromKey(struct Unknown Key, struct FString& Name) {
+inline void USlotItemWidget_C::GetKeyNameFromKey(struct FKey Key, struct FString& Name) {
 	static auto fn = UObject::FindObject<UFunction>("Function SlotItemWidget.SlotItemWidget_C.GetKeyNameFromKey");
 
 	struct GetKeyNameFromKey_Params {
-		struct Unknown Key;
+		struct FKey Key;
 		struct FString& Name;
 	}; GetKeyNameFromKey_Params Params;
 
@@ -272,12 +272,12 @@ inline void USlotItemWidget_C::GetKeyNameFromKey(struct Unknown Key, struct FStr
 }
 
 // Function SlotItemWidget.SlotItemWidget_C.OnGenerateWidget_1
-inline struct Unknown USlotItemWidget_C::OnGenerateWidget_1(struct FString Item) {
+inline struct UWidget USlotItemWidget_C::OnGenerateWidget_1(struct FString Item) {
 	static auto fn = UObject::FindObject<UFunction>("Function SlotItemWidget.SlotItemWidget_C.OnGenerateWidget_1");
 
 	struct OnGenerateWidget_1_Params {
 		struct FString Item;
-		struct Unknown ReturnValue;
+		struct UWidget ReturnValue;
 
 	}; OnGenerateWidget_1_Params Params;
 
@@ -437,12 +437,12 @@ inline void USlotItemWidget_C::Broadcast Change Index(float ValueIndex) {
 }
 
 // Function SlotItemWidget.SlotItemWidget_C.InitDataByKeyInfo
-inline void USlotItemWidget_C::InitDataByKeyInfo(char IsSub, struct Unknown& Index, char IsInit) {
+inline void USlotItemWidget_C::InitDataByKeyInfo(char IsSub, struct FInputActionKeyMapping& Index, char IsInit) {
 	static auto fn = UObject::FindObject<UFunction>("Function SlotItemWidget.SlotItemWidget_C.InitDataByKeyInfo");
 
 	struct InitDataByKeyInfo_Params {
 		char IsSub;
-		struct Unknown& Index;
+		struct FInputActionKeyMapping& Index;
 		char IsInit;
 	}; InitDataByKeyInfo_Params Params;
 
@@ -458,11 +458,11 @@ inline void USlotItemWidget_C::InitDataByKeyInfo(char IsSub, struct Unknown& Ind
 }
 
 // Function SlotItemWidget.SlotItemWidget_C.BndEvt__MainKeyInput_K2Node_ComponentBoundEvent_19_OnKeySelected__DelegateSignature
-inline void USlotItemWidget_C::BndEvt__MainKeyInput_K2Node_ComponentBoundEvent_19_OnKeySelected__DelegateSignature(struct Unknown SelectedKey) {
+inline void USlotItemWidget_C::BndEvt__MainKeyInput_K2Node_ComponentBoundEvent_19_OnKeySelected__DelegateSignature(struct FInputChord SelectedKey) {
 	static auto fn = UObject::FindObject<UFunction>("Function SlotItemWidget.SlotItemWidget_C.BndEvt__MainKeyInput_K2Node_ComponentBoundEvent_19_OnKeySelected__DelegateSignature");
 
 	struct BndEvt__MainKeyInput_K2Node_ComponentBoundEvent_19_OnKeySelected__DelegateSignature_Params {
-		struct Unknown SelectedKey;
+		struct FInputChord SelectedKey;
 	}; BndEvt__MainKeyInput_K2Node_ComponentBoundEvent_19_OnKeySelected__DelegateSignature_Params Params;
 
 	Params.SelectedKey = SelectedKey;
@@ -473,11 +473,11 @@ inline void USlotItemWidget_C::BndEvt__MainKeyInput_K2Node_ComponentBoundEvent_1
 }
 
 // Function SlotItemWidget.SlotItemWidget_C.BndEvt__SubKeyInput_K2Node_ComponentBoundEvent_20_OnKeySelected__DelegateSignature
-inline void USlotItemWidget_C::BndEvt__SubKeyInput_K2Node_ComponentBoundEvent_20_OnKeySelected__DelegateSignature(struct Unknown SelectedKey) {
+inline void USlotItemWidget_C::BndEvt__SubKeyInput_K2Node_ComponentBoundEvent_20_OnKeySelected__DelegateSignature(struct FInputChord SelectedKey) {
 	static auto fn = UObject::FindObject<UFunction>("Function SlotItemWidget.SlotItemWidget_C.BndEvt__SubKeyInput_K2Node_ComponentBoundEvent_20_OnKeySelected__DelegateSignature");
 
 	struct BndEvt__SubKeyInput_K2Node_ComponentBoundEvent_20_OnKeySelected__DelegateSignature_Params {
-		struct Unknown SelectedKey;
+		struct FInputChord SelectedKey;
 	}; BndEvt__SubKeyInput_K2Node_ComponentBoundEvent_20_OnKeySelected__DelegateSignature_Params Params;
 
 	Params.SelectedKey = SelectedKey;
@@ -565,12 +565,12 @@ inline void USlotItemWidget_C::SetSelectIndexSelectBox(int32_t Index, char Broad
 }
 
 // Function SlotItemWidget.SlotItemWidget_C.InitDataByAxisKeyInfo
-inline void USlotItemWidget_C::InitDataByAxisKeyInfo(char IsSub, struct Unknown& Index, char IsInit) {
+inline void USlotItemWidget_C::InitDataByAxisKeyInfo(char IsSub, struct FInputAxisKeyMapping& Index, char IsInit) {
 	static auto fn = UObject::FindObject<UFunction>("Function SlotItemWidget.SlotItemWidget_C.InitDataByAxisKeyInfo");
 
 	struct InitDataByAxisKeyInfo_Params {
 		char IsSub;
-		struct Unknown& Index;
+		struct FInputAxisKeyMapping& Index;
 		char IsInit;
 	}; InitDataByAxisKeyInfo_Params Params;
 

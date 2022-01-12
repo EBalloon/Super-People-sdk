@@ -3,25 +3,25 @@ class UUW-TeamPositionWidget_C : public UBravoHotelTeamPositionWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x290 (8)
-	struct Unknown Anim_Bouncing; // 0x298 (8)
-	struct Unknown CanvasRequestResuscitation; // 0x2A0 (8)
-	struct Unknown CriticalGuage; // 0x2A8 (8)
-	struct Unknown DyingGuage; // 0x2B0 (8)
-	struct Unknown Img_StateDeath; // 0x2B8 (8)
-	struct Unknown Img_StateDisconnect; // 0x2C0 (8)
-	struct Unknown Img_StateParachute; // 0x2C8 (8)
-	struct Unknown Img_StateRevival; // 0x2D0 (8)
-	struct Unknown Img_StateVehicle; // 0x2D8 (8)
-	struct Unknown Img_TeamColor; // 0x2E0 (8)
-	struct Unknown KnockDownBar; // 0x2E8 (8)
-	struct Unknown MoveParameter; // 0x2F0 (8)
-	struct Unknown RevivingGuage; // 0x2F8 (8)
-	struct Unknown Switcher_Guage; // 0x300 (8)
-	struct Unknown Switcher_Icon; // 0x308 (8)
-	struct Unknown TextBlock_Name; // 0x310 (8)
-	struct Unknown TextBlock_PlayerIndex; // 0x318 (8)
-	struct Unknown RevivingTimerHandle; // 0x320 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x290 (8)
+	struct UWidgetAnimation Anim_Bouncing; // 0x298 (8)
+	struct UCanvasPanel CanvasRequestResuscitation; // 0x2A0 (8)
+	struct UImage CriticalGuage; // 0x2A8 (8)
+	struct UImage DyingGuage; // 0x2B0 (8)
+	struct UImage Img_StateDeath; // 0x2B8 (8)
+	struct UImage Img_StateDisconnect; // 0x2C0 (8)
+	struct UImage Img_StateParachute; // 0x2C8 (8)
+	struct UImage Img_StateRevival; // 0x2D0 (8)
+	struct UImage Img_StateVehicle; // 0x2D8 (8)
+	struct UImage Img_TeamColor; // 0x2E0 (8)
+	struct UProgressBar KnockDownBar; // 0x2E8 (8)
+	struct UTextBlock MoveParameter; // 0x2F0 (8)
+	struct UImage RevivingGuage; // 0x2F8 (8)
+	struct UWidgetSwitcher Switcher_Guage; // 0x300 (8)
+	struct UWidgetSwitcher Switcher_Icon; // 0x308 (8)
+	struct UTextBlock TextBlock_Name; // 0x310 (8)
+	struct UTextBlock TextBlock_PlayerIndex; // 0x318 (8)
+	struct FTimerHandle RevivingTimerHandle; // 0x320 (8)
 	float TotalRevivingTime; // 0x328 (4)
 	float CurrentRevivingTime; // 0x32C (4)
 	char IsRequestResuscitation : 0; // 0x330 (1)
@@ -45,7 +45,7 @@ public:
 	void K2_OnChangedIconIndex(); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.K2_OnChangedIconIndex(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void K2_OnChangedIsInViewport(); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.K2_OnChangedIsInViewport(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void K2_OnChangedPlayerState(); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.K2_OnChangedPlayerState(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-TeamPositionWidget(int32_t EntryPoint); // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.ExecuteUbergraph_UW-TeamPositionWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
@@ -322,11 +322,11 @@ inline void UUW-TeamPositionWidget_C::K2_OnChangedPlayerState() {
 }
 
 // Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.Tick
-inline void UUW-TeamPositionWidget_C::Tick(struct Unknown MyGeometry, float InDeltaTime) {
+inline void UUW-TeamPositionWidget_C::Tick(struct FGeometry MyGeometry, float InDeltaTime) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-TeamPositionWidget.UW-TeamPositionWidget_C.Tick");
 
 	struct Tick_Params {
-		struct Unknown MyGeometry;
+		struct FGeometry MyGeometry;
 		float InDeltaTime;
 	}; Tick_Params Params;
 

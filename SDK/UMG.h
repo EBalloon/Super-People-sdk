@@ -148,91 +148,91 @@ class UWidget : public UVisual {
 
 public:
 
-	struct Unknown Slot; // 0x28 (8)
+	struct UPanelSlot Slot; // 0x28 (8)
 	struct FDelegate bIsEnabledDelegate; // 0x30 (16)
 	struct FText ToolTipText; // 0x40 (24)
 	struct FDelegate ToolTipTextDelegate; // 0x58 (16)
-	struct Unknown ToolTipWidget; // 0x68 (8)
+	struct UWidget ToolTipWidget; // 0x68 (8)
 	struct FDelegate ToolTipWidgetDelegate; // 0x70 (16)
 	struct FDelegate VisibilityDelegate; // 0x80 (16)
-	struct Unknown RenderTransform; // 0x90 (28)
-	struct Unknown RenderTransformPivot; // 0xAC (8)
+	struct FWidgetTransform RenderTransform; // 0x90 (28)
+	struct FVector2D RenderTransformPivot; // 0xAC (8)
 	char bIsVariable : 0; // 0xB4 (1)
 	char bCreatedByConstructionScript : 0; // 0xB4 (1)
 	char bIsEnabled : 0; // 0xB4 (1)
 	char bOverride_Cursor : 0; // 0xB4 (1)
-	struct Unknown AccessibleWidgetData; // 0xB8 (8)
+	struct USlateAccessibleWidgetData AccessibleWidgetData; // 0xB8 (8)
 	char bIsVolatile : 0; // 0xC0 (1)
 	char Cursor; // 0xC1 (1)
-	enum class Unknow Clipping; // 0xC2 (1)
-	enum class Unknow Visibility; // 0xC3 (1)
+	enum class EWidgetClipping Clipping; // 0xC2 (1)
+	enum class ESlateVisibility Visibility; // 0xC3 (1)
 	float RenderOpacity; // 0xC4 (4)
-	struct Unknown Navigation; // 0xC8 (8)
-	enum class Unknow FlowDirectionPreference; // 0xD0 (1)
-	struct TArray<Unknown> NativeBindings; // 0xF8 (16)
+	struct UWidgetNavigation Navigation; // 0xC8 (8)
+	enum class EFlowDirectionPreference FlowDirectionPreference; // 0xD0 (1)
+	struct TArray<struct UPropertyBinding> NativeBindings; // 0xF8 (16)
 
-	void SetVisibility(enum class Unknow InVisibility); // Function UMG.Widget.SetVisibility(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B59CF0>
-	void SetUserFocus(struct Unknown PlayerController); // Function UMG.Widget.SetUserFocus(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B59AD0>
+	void SetVisibility(enum class ESlateVisibility InVisibility); // Function UMG.Widget.SetVisibility(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B59CF0>
+	void SetUserFocus(struct APlayerController PlayerController); // Function UMG.Widget.SetUserFocus(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B59AD0>
 	void SetToolTipText(struct FText& InToolTipText); // Function UMG.Widget.SetToolTipText(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B59A00>
-	void SetToolTip(struct Unknown Widget); // Function UMG.Widget.SetToolTip(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B59980>
-	void SetRenderTranslation(struct Unknown Translation); // Function UMG.Widget.SetRenderTranslation(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B59870>
-	void SetRenderTransformPivot(struct Unknown Pivot); // Function UMG.Widget.SetRenderTransformPivot(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B597F0>
+	void SetToolTip(struct UWidget Widget); // Function UMG.Widget.SetToolTip(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B59980>
+	void SetRenderTranslation(struct FVector2D Translation); // Function UMG.Widget.SetRenderTranslation(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B59870>
+	void SetRenderTransformPivot(struct FVector2D Pivot); // Function UMG.Widget.SetRenderTransformPivot(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B597F0>
 	void SetRenderTransformAngle(float Angle); // Function UMG.Widget.SetRenderTransformAngle(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B59770>
-	void SetRenderTransform(struct Unknown InTransform); // Function UMG.Widget.SetRenderTransform(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B59690>
-	void SetRenderShear(struct Unknown Shear); // Function UMG.Widget.SetRenderShear(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B59610>
-	void SetRenderScale(struct Unknown Scale); // Function UMG.Widget.SetRenderScale(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B59590>
+	void SetRenderTransform(struct FWidgetTransform InTransform); // Function UMG.Widget.SetRenderTransform(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B59690>
+	void SetRenderShear(struct FVector2D Shear); // Function UMG.Widget.SetRenderShear(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B59610>
+	void SetRenderScale(struct FVector2D Scale); // Function UMG.Widget.SetRenderScale(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B59590>
 	void SetRenderOpacity(float InOpacity); // Function UMG.Widget.SetRenderOpacity(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B59510>
-	void SetNavigationRuleExplicit(enum class Unknow Direction, struct Unknown InWidget); // Function UMG.Widget.SetNavigationRuleExplicit(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B593C0>
-	void SetNavigationRuleCustomBoundary(enum class Unknow Direction, struct FDelegate InCustomDelegate); // Function UMG.Widget.SetNavigationRuleCustomBoundary(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B592E0>
-	void SetNavigationRuleCustom(enum class Unknow Direction, struct FDelegate InCustomDelegate); // Function UMG.Widget.SetNavigationRuleCustom(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B59200>
-	void SetNavigationRuleBase(enum class Unknow Direction, enum class Unknow Rule); // Function UMG.Widget.SetNavigationRuleBase(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B59140>
-	void SetNavigationRule(enum class Unknow Direction, enum class Unknow Rule, struct FName WidgetToFocus); // Function UMG.Widget.SetNavigationRule(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B59030>
+	void SetNavigationRuleExplicit(enum class EUINavigation Direction, struct UWidget InWidget); // Function UMG.Widget.SetNavigationRuleExplicit(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B593C0>
+	void SetNavigationRuleCustomBoundary(enum class EUINavigation Direction, struct FDelegate InCustomDelegate); // Function UMG.Widget.SetNavigationRuleCustomBoundary(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B592E0>
+	void SetNavigationRuleCustom(enum class EUINavigation Direction, struct FDelegate InCustomDelegate); // Function UMG.Widget.SetNavigationRuleCustom(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B59200>
+	void SetNavigationRuleBase(enum class EUINavigation Direction, enum class EUINavigationRule Rule); // Function UMG.Widget.SetNavigationRuleBase(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B59140>
+	void SetNavigationRule(enum class EUINavigation Direction, enum class EUINavigationRule Rule, struct FName WidgetToFocus); // Function UMG.Widget.SetNavigationRule(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B59030>
 	void SetKeyboardFocus(); // Function UMG.Widget.SetKeyboardFocus(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B59010>
 	void SetIsEnabled(char bInIsEnabled); // Function UMG.Widget.SetIsEnabled(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B58F80>
 	void SetFocus(); // Function UMG.Widget.SetFocus(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B58EE0>
 	void SetCursor(char InCursor); // Function UMG.Widget.SetCursor(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B58E60>
-	void SetClipping(enum class Unknow InClipping); // Function UMG.Widget.SetClipping(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B58DE0>
-	void SetAllNavigationRules(enum class Unknow Rule, struct FName WidgetToFocus); // Function UMG.Widget.SetAllNavigationRules(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B58D20>
+	void SetClipping(enum class EWidgetClipping InClipping); // Function UMG.Widget.SetClipping(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B58DE0>
+	void SetAllNavigationRules(enum class EUINavigationRule Rule, struct FName WidgetToFocus); // Function UMG.Widget.SetAllNavigationRules(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B58D20>
 	void ResetCursor(); // Function UMG.Widget.ResetCursor(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B58D00>
 	void RemoveFromParent(); // Function UMG.Widget.RemoveFromParent(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B58CE0>
-	struct Unknown OnReply__DelegateSignature(); // DelegateFunction UMG.Widget.OnReply__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B80160>
-	struct Unknown OnPointerEvent__DelegateSignature(struct Unknown MyGeometry, struct Unknown& MouseEvent); // DelegateFunction UMG.Widget.OnPointerEvent__DelegateSignature(Public|Delegate|HasOutParms) // <Game_BE.exe+0x2B80160>
+	struct FEventReply OnReply__DelegateSignature(); // DelegateFunction UMG.Widget.OnReply__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B80160>
+	struct FEventReply OnPointerEvent__DelegateSignature(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // DelegateFunction UMG.Widget.OnPointerEvent__DelegateSignature(Public|Delegate|HasOutParms) // <Game_BE.exe+0x2B80160>
 	char IsVisible(); // Function UMG.Widget.IsVisible(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B58CB0>
 	char IsHovered(); // Function UMG.Widget.IsHovered(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36B0740>
 	void InvalidateLayoutAndVolatility(); // Function UMG.Widget.InvalidateLayoutAndVolatility(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B58C90>
-	char HasUserFocusedDescendants(struct Unknown PlayerController); // Function UMG.Widget.HasUserFocusedDescendants(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B58C00>
-	char HasUserFocus(struct Unknown PlayerController); // Function UMG.Widget.HasUserFocus(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B58B70>
+	char HasUserFocusedDescendants(struct APlayerController PlayerController); // Function UMG.Widget.HasUserFocusedDescendants(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B58C00>
+	char HasUserFocus(struct APlayerController PlayerController); // Function UMG.Widget.HasUserFocus(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B58B70>
 	char HasMouseCaptureByUser(int32_t UserIndex, int32_t PointerIndex); // Function UMG.Widget.HasMouseCaptureByUser(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B58AB0>
 	char HasMouseCapture(); // Function UMG.Widget.HasMouseCapture(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B58A80>
 	char HasKeyboardFocus(); // Function UMG.Widget.HasKeyboardFocus(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B58A50>
 	char HasFocusedDescendants(); // Function UMG.Widget.HasFocusedDescendants(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B58A20>
 	char HasAnyUserFocus(); // Function UMG.Widget.HasAnyUserFocus(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B589F0>
-	struct Unknown GetWidget__DelegateSignature(); // DelegateFunction UMG.Widget.GetWidget__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B80160>
-	enum class Unknow GetVisibility(); // Function UMG.Widget.GetVisibility(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B589C0>
-	struct Unknown GetTickSpaceGeometry(); // Function UMG.Widget.GetTickSpaceGeometry(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B588A0>
+	struct UWidget GetWidget__DelegateSignature(); // DelegateFunction UMG.Widget.GetWidget__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B80160>
+	enum class ESlateVisibility GetVisibility(); // Function UMG.Widget.GetVisibility(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B589C0>
+	struct FGeometry GetTickSpaceGeometry(); // Function UMG.Widget.GetTickSpaceGeometry(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B588A0>
 	struct FText GetText__DelegateSignature(); // DelegateFunction UMG.Widget.GetText__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B80160>
-	enum class Unknow GetSlateVisibility__DelegateSignature(); // DelegateFunction UMG.Widget.GetSlateVisibility__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B80160>
-	struct Unknown GetSlateColor__DelegateSignature(); // DelegateFunction UMG.Widget.GetSlateColor__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B80160>
-	struct Unknown GetSlateBrush__DelegateSignature(); // DelegateFunction UMG.Widget.GetSlateBrush__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B80160>
+	enum class ESlateVisibility GetSlateVisibility__DelegateSignature(); // DelegateFunction UMG.Widget.GetSlateVisibility__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B80160>
+	struct FSlateColor GetSlateColor__DelegateSignature(); // DelegateFunction UMG.Widget.GetSlateColor__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B80160>
+	struct FSlateBrush GetSlateBrush__DelegateSignature(); // DelegateFunction UMG.Widget.GetSlateBrush__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B80160>
 	float GetRenderTransformAngle(); // Function UMG.Widget.GetRenderTransformAngle(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B58870>
 	float GetRenderOpacity(); // Function UMG.Widget.GetRenderOpacity(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B58840>
-	struct Unknown GetParent(); // Function UMG.Widget.GetParent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B58810>
-	struct Unknown GetPaintSpaceGeometry(); // Function UMG.Widget.GetPaintSpaceGeometry(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B587D0>
-	struct Unknown GetOwningPlayer(); // Function UMG.Widget.GetOwningPlayer(BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B587A0>
-	struct Unknown GetOwningLocalPlayer(); // Function UMG.Widget.GetOwningLocalPlayer(BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B58770>
+	struct UPanelWidget GetParent(); // Function UMG.Widget.GetParent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B58810>
+	struct FGeometry GetPaintSpaceGeometry(); // Function UMG.Widget.GetPaintSpaceGeometry(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B587D0>
+	struct APlayerController GetOwningPlayer(); // Function UMG.Widget.GetOwningPlayer(BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B587A0>
+	struct ULocalPlayer GetOwningLocalPlayer(); // Function UMG.Widget.GetOwningLocalPlayer(BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B58770>
 	char GetMouseCursor__DelegateSignature(); // DelegateFunction UMG.Widget.GetMouseCursor__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B80160>
-	struct Unknown GetLinearColor__DelegateSignature(); // DelegateFunction UMG.Widget.GetLinearColor__DelegateSignature(Public|Delegate|HasDefaults) // <Game_BE.exe+0x2B80160>
+	struct FLinearColor GetLinearColor__DelegateSignature(); // DelegateFunction UMG.Widget.GetLinearColor__DelegateSignature(Public|Delegate|HasDefaults) // <Game_BE.exe+0x2B80160>
 	char GetIsEnabled(); // Function UMG.Widget.GetIsEnabled(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B58740>
 	int32_t GetInt32__DelegateSignature(); // DelegateFunction UMG.Widget.GetInt32__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B80160>
-	struct Unknown GetGameInstance(); // Function UMG.Widget.GetGameInstance(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B58710>
+	struct UGameInstance GetGameInstance(); // Function UMG.Widget.GetGameInstance(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B58710>
 	float GetFloat__DelegateSignature(); // DelegateFunction UMG.Widget.GetFloat__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B80160>
-	struct Unknown GetDesiredSize(); // Function UMG.Widget.GetDesiredSize(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B586D0>
-	enum class Unknow GetClipping(); // Function UMG.Widget.GetClipping(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B586A0>
-	enum class Unknow GetCheckBoxState__DelegateSignature(); // DelegateFunction UMG.Widget.GetCheckBoxState__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B80160>
-	struct Unknown GetCachedGeometry(); // Function UMG.Widget.GetCachedGeometry(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B58660>
+	struct FVector2D GetDesiredSize(); // Function UMG.Widget.GetDesiredSize(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B586D0>
+	enum class EWidgetClipping GetClipping(); // Function UMG.Widget.GetClipping(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B586A0>
+	enum class ECheckBoxState GetCheckBoxState__DelegateSignature(); // DelegateFunction UMG.Widget.GetCheckBoxState__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B80160>
+	struct FGeometry GetCachedGeometry(); // Function UMG.Widget.GetCachedGeometry(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B58660>
 	char GetBool__DelegateSignature(); // DelegateFunction UMG.Widget.GetBool__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B80160>
-	struct Unknown GenerateWidgetForString__DelegateSignature(struct FString Item); // DelegateFunction UMG.Widget.GenerateWidgetForString__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B80160>
-	struct Unknown GenerateWidgetForObject__DelegateSignature(struct Unknown Item); // DelegateFunction UMG.Widget.GenerateWidgetForObject__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B80160>
+	struct UWidget GenerateWidgetForString__DelegateSignature(struct FString Item); // DelegateFunction UMG.Widget.GenerateWidgetForString__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B80160>
+	struct UWidget GenerateWidgetForObject__DelegateSignature(struct Object Item); // DelegateFunction UMG.Widget.GenerateWidgetForObject__DelegateSignature(Public|Delegate) // <Game_BE.exe+0x2B80160>
 	void ForceVolatile(char bForce); // Function UMG.Widget.ForceVolatile(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B585D0>
 	void ForceLayoutPrepass(); // Function UMG.Widget.ForceLayoutPrepass(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B585B0>
 };
@@ -242,17 +242,17 @@ class UUserWidget : public UWidget {
 
 public:
 
-	struct Unknown ColorAndOpacity; // 0x110 (16)
+	struct FLinearColor ColorAndOpacity; // 0x110 (16)
 	struct FDelegate ColorAndOpacityDelegate; // 0x120 (16)
-	struct Unknown ForegroundColor; // 0x130 (40)
+	struct FSlateColor ForegroundColor; // 0x130 (40)
 	struct FDelegate ForegroundColorDelegate; // 0x158 (16)
-	struct Unknown Padding; // 0x168 (16)
-	struct TArray<Unknown> ActiveSequencePlayers; // 0x178 (16)
-	struct TArray<Unknown> StoppedSequencePlayers; // 0x188 (16)
+	struct FMargin Padding; // 0x168 (16)
+	struct TArray<struct UUMGSequencePlayer> ActiveSequencePlayers; // 0x178 (16)
+	struct TArray<struct UUMGSequencePlayer> StoppedSequencePlayers; // 0x188 (16)
 	char NoPixelSnapping : 0; // 0x198 (1)
 	struct FDelegate NoPixelSnappingDelegate; // 0x19C (16)
-	struct TArray<Unknown> NamedSlotBindings; // 0x1B0 (16)
-	struct Unknown WidgetTree; // 0x1C0 (8)
+	struct TArray<struct FNamedSlotBinding> NamedSlotBindings; // 0x1B0 (16)
+	struct UWidgetTree WidgetTree; // 0x1C0 (8)
 	int32_t Priority; // 0x1C8 (4)
 	char bSupportsKeyboardFocus : 0; // 0x1CC (1)
 	char bIsFocusable : 0; // 0x1CC (1)
@@ -260,97 +260,97 @@ public:
 	char bHasScriptImplementedTick : 0; // 0x1CC (1)
 	char bHasScriptImplementedPaint : 0; // 0x1CC (1)
 	char bCookedWidgetTree : 0; // 0x1CC (1)
-	enum class Unknow TickFrequency; // 0x1D8 (1)
-	struct Unknown InputComponent; // 0x1E0 (8)
-	struct TArray<Unknown> AnimationCallbacks; // 0x1E8 (16)
+	enum class EWidgetTickFrequency TickFrequency; // 0x1D8 (1)
+	struct UInputComponent InputComponent; // 0x1E0 (8)
+	struct TArray<struct FAnimationEventBinding> AnimationCallbacks; // 0x1E8 (16)
 
 	void UnregisterInputComponent(); // Function UMG.UserWidget.UnregisterInputComponent(Final|Native|Protected|BlueprintCallable) // <Game_BE.exe+0x3B56A10>
-	void UnbindFromAnimationStarted(struct Unknown Animation, struct FDelegate Delegate); // Function UMG.UserWidget.UnbindFromAnimationStarted(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B56930>
-	void UnbindFromAnimationFinished(struct Unknown Animation, struct FDelegate Delegate); // Function UMG.UserWidget.UnbindFromAnimationFinished(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B56850>
-	void UnbindAllFromAnimationStarted(struct Unknown Animation); // Function UMG.UserWidget.UnbindAllFromAnimationStarted(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B567D0>
-	void UnbindAllFromAnimationFinished(struct Unknown Animation); // Function UMG.UserWidget.UnbindAllFromAnimationFinished(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B56750>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UMG.UserWidget.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void UnbindFromAnimationStarted(struct UWidgetAnimation Animation, struct FDelegate Delegate); // Function UMG.UserWidget.UnbindFromAnimationStarted(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B56930>
+	void UnbindFromAnimationFinished(struct UWidgetAnimation Animation, struct FDelegate Delegate); // Function UMG.UserWidget.UnbindFromAnimationFinished(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B56850>
+	void UnbindAllFromAnimationStarted(struct UWidgetAnimation Animation); // Function UMG.UserWidget.UnbindAllFromAnimationStarted(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B567D0>
+	void UnbindAllFromAnimationFinished(struct UWidgetAnimation Animation); // Function UMG.UserWidget.UnbindAllFromAnimationFinished(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B56750>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UMG.UserWidget.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void StopListeningForInputAction(struct FName ActionName, char EventType); // Function UMG.UserWidget.StopListeningForInputAction(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B56690>
 	void StopListeningForAllInputActions(); // Function UMG.UserWidget.StopListeningForAllInputActions(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B56670>
 	void StopAnimationsAndLatentActions(); // Function UMG.UserWidget.StopAnimationsAndLatentActions(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B56650>
-	void StopAnimation(struct Unknown InAnimation); // Function UMG.UserWidget.StopAnimation(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B565D0>
+	void StopAnimation(struct UWidgetAnimation InAnimation); // Function UMG.UserWidget.StopAnimation(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B565D0>
 	void StopAllAnimations(); // Function UMG.UserWidget.StopAllAnimations(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B565B0>
-	void SetPositionInViewport(struct Unknown Position, char bRemoveDPIScale); // Function UMG.UserWidget.SetPositionInViewport(Final|BlueprintCosmetic|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B55ED0>
-	void SetPlaybackSpeed(struct Unknown InAnimation, float PlaybackSpeed); // Function UMG.UserWidget.SetPlaybackSpeed(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B55E00>
-	void SetPadding(struct Unknown InPadding); // Function UMG.UserWidget.SetPadding(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B55D70>
-	void SetOwningPlayer(struct Unknown LocalPlayerController); // Function UMG.UserWidget.SetOwningPlayer(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B55CF0>
-	void SetNumLoopsToPlay(struct Unknown InAnimation, int32_t NumLoopsToPlay); // Function UMG.UserWidget.SetNumLoopsToPlay(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B55B30>
+	void SetPositionInViewport(struct FVector2D Position, char bRemoveDPIScale); // Function UMG.UserWidget.SetPositionInViewport(Final|BlueprintCosmetic|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B55ED0>
+	void SetPlaybackSpeed(struct UWidgetAnimation InAnimation, float PlaybackSpeed); // Function UMG.UserWidget.SetPlaybackSpeed(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B55E00>
+	void SetPadding(struct FMargin InPadding); // Function UMG.UserWidget.SetPadding(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B55D70>
+	void SetOwningPlayer(struct APlayerController LocalPlayerController); // Function UMG.UserWidget.SetOwningPlayer(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B55CF0>
+	void SetNumLoopsToPlay(struct UWidgetAnimation InAnimation, int32_t NumLoopsToPlay); // Function UMG.UserWidget.SetNumLoopsToPlay(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B55B30>
 	void SetNoPixelSnapping(char InNoSnapping); // Function UMG.UserWidget.SetNoPixelSnapping(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B55AA0>
 	void SetInputActionPriority(int32_t NewPriority); // Function UMG.UserWidget.SetInputActionPriority(Final|Native|Protected|BlueprintCallable) // <Game_BE.exe+0x3B55750>
 	void SetInputActionBlocking(char bShouldBlock); // Function UMG.UserWidget.SetInputActionBlocking(Final|Native|Protected|BlueprintCallable) // <Game_BE.exe+0x3B556C0>
-	void SetForegroundColor(struct Unknown InForegroundColor); // Function UMG.UserWidget.SetForegroundColor(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B55550>
-	void SetDesiredSizeInViewport(struct Unknown Size); // Function UMG.UserWidget.SetDesiredSizeInViewport(Final|BlueprintCosmetic|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B552C0>
-	void SetColorAndOpacity(struct Unknown InColorAndOpacity); // Function UMG.UserWidget.SetColorAndOpacity(Final|BlueprintCosmetic|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B551C0>
-	void SetAnchorsInViewport(struct Unknown Anchors); // Function UMG.UserWidget.SetAnchorsInViewport(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B54E00>
-	void SetAlignmentInViewport(struct Unknown Alignment); // Function UMG.UserWidget.SetAlignmentInViewport(Final|BlueprintCosmetic|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B54D80>
-	void ReverseAnimation(struct Unknown InAnimation); // Function UMG.UserWidget.ReverseAnimation(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B54D00>
+	void SetForegroundColor(struct FSlateColor InForegroundColor); // Function UMG.UserWidget.SetForegroundColor(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B55550>
+	void SetDesiredSizeInViewport(struct FVector2D Size); // Function UMG.UserWidget.SetDesiredSizeInViewport(Final|BlueprintCosmetic|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B552C0>
+	void SetColorAndOpacity(struct FLinearColor InColorAndOpacity); // Function UMG.UserWidget.SetColorAndOpacity(Final|BlueprintCosmetic|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B551C0>
+	void SetAnchorsInViewport(struct FAnchors Anchors); // Function UMG.UserWidget.SetAnchorsInViewport(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B54E00>
+	void SetAlignmentInViewport(struct FVector2D Alignment); // Function UMG.UserWidget.SetAlignmentInViewport(Final|BlueprintCosmetic|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B54D80>
+	void ReverseAnimation(struct UWidgetAnimation InAnimation); // Function UMG.UserWidget.ReverseAnimation(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B54D00>
 	void RemoveFromViewport(); // Function UMG.UserWidget.RemoveFromViewport(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x2066BE0>
 	void RegisterInputComponent(); // Function UMG.UserWidget.RegisterInputComponent(Final|Native|Protected|BlueprintCallable) // <Game_BE.exe+0x3B54CE0>
 	void PreConstruct(char IsDesignTime); // Function UMG.UserWidget.PreConstruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void PlaySound(struct Unknown SoundToPlay); // Function UMG.UserWidget.PlaySound(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B54C60>
-	struct Unknown PlayAnimationTimeRange(struct Unknown InAnimation, float StartAtTime, float EndAtTime, int32_t NumLoopsToPlay, char PlayMode, float PlaybackSpeed, char bRestoreState); // Function UMG.UserWidget.PlayAnimationTimeRange(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B54A70>
-	struct Unknown PlayAnimationReverse(struct Unknown InAnimation, float PlaybackSpeed, char bRestoreState); // Function UMG.UserWidget.PlayAnimationReverse(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B54960>
-	struct Unknown PlayAnimationForward(struct Unknown InAnimation, float PlaybackSpeed, char bRestoreState); // Function UMG.UserWidget.PlayAnimationForward(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B54850>
-	struct Unknown PlayAnimation(struct Unknown InAnimation, float StartAtTime, int32_t NumLoopsToPlay, char PlayMode, float PlaybackSpeed, char bRestoreState); // Function UMG.UserWidget.PlayAnimation(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B54690>
-	float PauseAnimation(struct Unknown InAnimation); // Function UMG.UserWidget.PauseAnimation(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B545F0>
-	struct Unknown OnTouchStarted(struct Unknown MyGeometry, struct Unknown& InTouchEvent); // Function UMG.UserWidget.OnTouchStarted(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown OnTouchMoved(struct Unknown MyGeometry, struct Unknown& InTouchEvent); // Function UMG.UserWidget.OnTouchMoved(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown OnTouchGesture(struct Unknown MyGeometry, struct Unknown& GestureEvent); // Function UMG.UserWidget.OnTouchGesture(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown OnTouchForceChanged(struct Unknown MyGeometry, struct Unknown& InTouchEvent); // Function UMG.UserWidget.OnTouchForceChanged(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown OnTouchEnded(struct Unknown MyGeometry, struct Unknown& InTouchEvent); // Function UMG.UserWidget.OnTouchEnded(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnRemovedFromFocusPath(struct Unknown InFocusEvent); // Function UMG.UserWidget.OnRemovedFromFocusPath(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown OnPreviewMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UMG.UserWidget.OnPreviewMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown OnPreviewKeyDown(struct Unknown MyGeometry, struct Unknown InKeyEvent); // Function UMG.UserWidget.OnPreviewKeyDown(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnPaint(struct Unknown& Context); // Function UMG.UserWidget.OnPaint(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent|Const) // <Game_BE.exe+0x2B80160>
-	struct Unknown OnMouseWheel(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UMG.UserWidget.OnMouseWheel(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown OnMouseMove(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UMG.UserWidget.OnMouseMove(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnMouseLeave(struct Unknown& MouseEvent); // Function UMG.UserWidget.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UMG.UserWidget.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void PlaySound(struct USoundBase SoundToPlay); // Function UMG.UserWidget.PlaySound(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B54C60>
+	struct UUMGSequencePlayer PlayAnimationTimeRange(struct UWidgetAnimation InAnimation, float StartAtTime, float EndAtTime, int32_t NumLoopsToPlay, char PlayMode, float PlaybackSpeed, char bRestoreState); // Function UMG.UserWidget.PlayAnimationTimeRange(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B54A70>
+	struct UUMGSequencePlayer PlayAnimationReverse(struct UWidgetAnimation InAnimation, float PlaybackSpeed, char bRestoreState); // Function UMG.UserWidget.PlayAnimationReverse(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B54960>
+	struct UUMGSequencePlayer PlayAnimationForward(struct UWidgetAnimation InAnimation, float PlaybackSpeed, char bRestoreState); // Function UMG.UserWidget.PlayAnimationForward(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B54850>
+	struct UUMGSequencePlayer PlayAnimation(struct UWidgetAnimation InAnimation, float StartAtTime, int32_t NumLoopsToPlay, char PlayMode, float PlaybackSpeed, char bRestoreState); // Function UMG.UserWidget.PlayAnimation(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B54690>
+	float PauseAnimation(struct UWidgetAnimation InAnimation); // Function UMG.UserWidget.PauseAnimation(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B545F0>
+	struct FEventReply OnTouchStarted(struct FGeometry MyGeometry, struct FPointerEvent& InTouchEvent); // Function UMG.UserWidget.OnTouchStarted(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply OnTouchMoved(struct FGeometry MyGeometry, struct FPointerEvent& InTouchEvent); // Function UMG.UserWidget.OnTouchMoved(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply OnTouchGesture(struct FGeometry MyGeometry, struct FPointerEvent& GestureEvent); // Function UMG.UserWidget.OnTouchGesture(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply OnTouchForceChanged(struct FGeometry MyGeometry, struct FPointerEvent& InTouchEvent); // Function UMG.UserWidget.OnTouchForceChanged(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply OnTouchEnded(struct FGeometry MyGeometry, struct FPointerEvent& InTouchEvent); // Function UMG.UserWidget.OnTouchEnded(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnRemovedFromFocusPath(struct FFocusEvent InFocusEvent); // Function UMG.UserWidget.OnRemovedFromFocusPath(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply OnPreviewMouseButtonDown(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UMG.UserWidget.OnPreviewMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply OnPreviewKeyDown(struct FGeometry MyGeometry, struct FKeyEvent InKeyEvent); // Function UMG.UserWidget.OnPreviewKeyDown(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnPaint(struct FPaintContext& Context); // Function UMG.UserWidget.OnPaint(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent|Const) // <Game_BE.exe+0x2B80160>
+	struct FEventReply OnMouseWheel(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UMG.UserWidget.OnMouseWheel(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply OnMouseMove(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UMG.UserWidget.OnMouseMove(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnMouseLeave(struct FPointerEvent& MouseEvent); // Function UMG.UserWidget.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnMouseEnter(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UMG.UserWidget.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnMouseCaptureLost(); // Function UMG.UserWidget.OnMouseCaptureLost(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown OnMouseButtonUp(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UMG.UserWidget.OnMouseButtonUp(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown OnMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UMG.UserWidget.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown OnMouseButtonDoubleClick(struct Unknown InMyGeometry, struct Unknown& InMouseEvent); // Function UMG.UserWidget.OnMouseButtonDoubleClick(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown OnMotionDetected(struct Unknown MyGeometry, struct Unknown InMotionEvent); // Function UMG.UserWidget.OnMotionDetected(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown OnKeyUp(struct Unknown MyGeometry, struct Unknown InKeyEvent); // Function UMG.UserWidget.OnKeyUp(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown OnKeyDown(struct Unknown MyGeometry, struct Unknown InKeyEvent); // Function UMG.UserWidget.OnKeyDown(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown OnKeyChar(struct Unknown MyGeometry, struct Unknown InCharacterEvent); // Function UMG.UserWidget.OnKeyChar(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply OnMouseButtonUp(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UMG.UserWidget.OnMouseButtonUp(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply OnMouseButtonDown(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UMG.UserWidget.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply OnMouseButtonDoubleClick(struct FGeometry InMyGeometry, struct FPointerEvent& InMouseEvent); // Function UMG.UserWidget.OnMouseButtonDoubleClick(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply OnMotionDetected(struct FGeometry MyGeometry, struct FMotionEvent InMotionEvent); // Function UMG.UserWidget.OnMotionDetected(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply OnKeyUp(struct FGeometry MyGeometry, struct FKeyEvent InKeyEvent); // Function UMG.UserWidget.OnKeyUp(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply OnKeyDown(struct FGeometry MyGeometry, struct FKeyEvent InKeyEvent); // Function UMG.UserWidget.OnKeyDown(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply OnKeyChar(struct FGeometry MyGeometry, struct FCharacterEvent InCharacterEvent); // Function UMG.UserWidget.OnKeyChar(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnInitialized(); // Function UMG.UserWidget.OnInitialized(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown OnFocusReceived(struct Unknown MyGeometry, struct Unknown InFocusEvent); // Function UMG.UserWidget.OnFocusReceived(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnFocusLost(struct Unknown InFocusEvent); // Function UMG.UserWidget.OnFocusLost(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	char OnDrop(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation); // Function UMG.UserWidget.OnDrop(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	char OnDragOver(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation); // Function UMG.UserWidget.OnDragOver(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnDragLeave(struct Unknown PointerEvent, struct Unknown Operation); // Function UMG.UserWidget.OnDragLeave(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnDragEnter(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation); // Function UMG.UserWidget.OnDragEnter(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnDragDetected(struct Unknown MyGeometry, struct Unknown& PointerEvent, struct Unknown& Operation); // Function UMG.UserWidget.OnDragDetected(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnDragCancelled(struct Unknown& PointerEvent, struct Unknown Operation); // Function UMG.UserWidget.OnDragCancelled(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnAnimationStarted(struct Unknown Animation); // Function UMG.UserWidget.OnAnimationStarted(BlueprintCosmetic|Native|Event|Protected|BlueprintEvent) // <Game_BE.exe+0x3B54560>
-	void OnAnimationFinished(struct Unknown Animation); // Function UMG.UserWidget.OnAnimationFinished(BlueprintCosmetic|Native|Event|Protected|BlueprintEvent) // <Game_BE.exe+0x3B544D0>
-	struct Unknown OnAnalogValueChanged(struct Unknown MyGeometry, struct Unknown InAnalogInputEvent); // Function UMG.UserWidget.OnAnalogValueChanged(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnAddedToFocusPath(struct Unknown InFocusEvent); // Function UMG.UserWidget.OnAddedToFocusPath(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply OnFocusReceived(struct FGeometry MyGeometry, struct FFocusEvent InFocusEvent); // Function UMG.UserWidget.OnFocusReceived(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnFocusLost(struct FFocusEvent InFocusEvent); // Function UMG.UserWidget.OnFocusLost(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	char OnDrop(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UMG.UserWidget.OnDrop(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	char OnDragOver(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UMG.UserWidget.OnDragOver(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnDragLeave(struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UMG.UserWidget.OnDragLeave(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnDragEnter(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UMG.UserWidget.OnDragEnter(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnDragDetected(struct FGeometry MyGeometry, struct FPointerEvent& PointerEvent, struct UDragDropOperation& Operation); // Function UMG.UserWidget.OnDragDetected(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnDragCancelled(struct FPointerEvent& PointerEvent, struct UDragDropOperation Operation); // Function UMG.UserWidget.OnDragCancelled(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnAnimationStarted(struct UWidgetAnimation Animation); // Function UMG.UserWidget.OnAnimationStarted(BlueprintCosmetic|Native|Event|Protected|BlueprintEvent) // <Game_BE.exe+0x3B54560>
+	void OnAnimationFinished(struct UWidgetAnimation Animation); // Function UMG.UserWidget.OnAnimationFinished(BlueprintCosmetic|Native|Event|Protected|BlueprintEvent) // <Game_BE.exe+0x3B544D0>
+	struct FEventReply OnAnalogValueChanged(struct FGeometry MyGeometry, struct FAnalogInputEvent InAnalogInputEvent); // Function UMG.UserWidget.OnAnalogValueChanged(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnAddedToFocusPath(struct FFocusEvent InFocusEvent); // Function UMG.UserWidget.OnAddedToFocusPath(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ListenForInputAction(struct FName ActionName, char EventType, char bConsume, struct FDelegate Callback); // Function UMG.UserWidget.ListenForInputAction(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B54350>
 	char IsPlayingAnimation(); // Function UMG.UserWidget.IsPlayingAnimation(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B54320>
 	char IsListeningForInputAction(struct FName ActionName); // Function UMG.UserWidget.IsListeningForInputAction(Final|Native|Protected|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B54290>
 	char IsInViewport(); // Function UMG.UserWidget.IsInViewport(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B53F00>
 	char IsInteractable(); // Function UMG.UserWidget.IsInteractable(BlueprintCosmetic|Event|Public|BlueprintEvent|Const) // <Game_BE.exe+0x2B80160>
 	char IsAnyAnimationPlaying(); // Function UMG.UserWidget.IsAnyAnimationPlaying(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B54260>
-	char IsAnimationPlayingForward(struct Unknown InAnimation); // Function UMG.UserWidget.IsAnimationPlayingForward(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B541D0>
-	char IsAnimationPlaying(struct Unknown InAnimation); // Function UMG.UserWidget.IsAnimationPlaying(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B54140>
-	struct Unknown GetOwningPlayerPawn(); // Function UMG.UserWidget.GetOwningPlayerPawn(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B53F30>
+	char IsAnimationPlayingForward(struct UWidgetAnimation InAnimation); // Function UMG.UserWidget.IsAnimationPlayingForward(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B541D0>
+	char IsAnimationPlaying(struct UWidgetAnimation InAnimation); // Function UMG.UserWidget.IsAnimationPlaying(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B54140>
+	struct APawn GetOwningPlayerPawn(); // Function UMG.UserWidget.GetOwningPlayerPawn(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B53F30>
 	char GetIsVisible(); // Function UMG.UserWidget.GetIsVisible(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B53F00>
-	float GetAnimationCurrentTime(struct Unknown InAnimation); // Function UMG.UserWidget.GetAnimationCurrentTime(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B53E00>
-	struct Unknown GetAnchorsInViewport(); // Function UMG.UserWidget.GetAnchorsInViewport(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B53DC0>
-	struct Unknown GetAlignmentInViewport(); // Function UMG.UserWidget.GetAlignmentInViewport(Final|BlueprintCosmetic|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B53D80>
+	float GetAnimationCurrentTime(struct UWidgetAnimation InAnimation); // Function UMG.UserWidget.GetAnimationCurrentTime(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B53E00>
+	struct FAnchors GetAnchorsInViewport(); // Function UMG.UserWidget.GetAnchorsInViewport(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B53DC0>
+	struct FVector2D GetAlignmentInViewport(); // Function UMG.UserWidget.GetAlignmentInViewport(Final|BlueprintCosmetic|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B53D80>
 	void Destruct(); // Function UMG.UserWidget.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UMG.UserWidget.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CancelLatentActions(); // Function UMG.UserWidget.CancelLatentActions(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B53D20>
-	void BindToAnimationStarted(struct Unknown Animation, struct FDelegate Delegate); // Function UMG.UserWidget.BindToAnimationStarted(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B53C40>
-	void BindToAnimationFinished(struct Unknown Animation, struct FDelegate Delegate); // Function UMG.UserWidget.BindToAnimationFinished(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B53B60>
-	void BindToAnimationEvent(struct Unknown Animation, struct FDelegate Delegate, enum class Unknow AnimationEvent, struct FName UserTag); // Function UMG.UserWidget.BindToAnimationEvent(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B539F0>
+	void BindToAnimationStarted(struct UWidgetAnimation Animation, struct FDelegate Delegate); // Function UMG.UserWidget.BindToAnimationStarted(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B53C40>
+	void BindToAnimationFinished(struct UWidgetAnimation Animation, struct FDelegate Delegate); // Function UMG.UserWidget.BindToAnimationFinished(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B53B60>
+	void BindToAnimationEvent(struct UWidgetAnimation Animation, struct FDelegate Delegate, enum class EWidgetAnimationEvent AnimationEvent, struct FName UserTag); // Function UMG.UserWidget.BindToAnimationEvent(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B539F0>
 	void AddToViewport(int32_t ZOrder); // Function UMG.UserWidget.AddToViewport(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B53970>
 	char AddToPlayerScreen(int32_t ZOrder); // Function UMG.UserWidget.AddToPlayerScreen(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B538E0>
 };
@@ -360,18 +360,18 @@ class UPanelWidget : public UWidget {
 
 public:
 
-	struct TArray<Unknown> Slots; // 0x108 (16)
+	struct TArray<struct UPanelSlot> Slots; // 0x108 (16)
 
 	char RemoveChildAt(int32_t Index); // Function UMG.PanelWidget.RemoveChildAt(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B44440>
-	char RemoveChild(struct Unknown Content); // Function UMG.PanelWidget.RemoveChild(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B443B0>
-	char HasChild(struct Unknown Content); // Function UMG.PanelWidget.HasChild(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B44210>
+	char RemoveChild(struct UWidget Content); // Function UMG.PanelWidget.RemoveChild(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B443B0>
+	char HasChild(struct UWidget Content); // Function UMG.PanelWidget.HasChild(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B44210>
 	char HasAnyChildren(); // Function UMG.PanelWidget.HasAnyChildren(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B441E0>
 	int32_t GetChildrenCount(); // Function UMG.PanelWidget.GetChildrenCount(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B43E30>
-	int32_t GetChildIndex(struct Unknown Content); // Function UMG.PanelWidget.GetChildIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B43DA0>
-	struct Unknown GetChildAt(int32_t Index); // Function UMG.PanelWidget.GetChildAt(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B43D10>
-	struct TArray<Unknown> GetAllChildren(); // Function UMG.PanelWidget.GetAllChildren(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B43C90>
+	int32_t GetChildIndex(struct UWidget Content); // Function UMG.PanelWidget.GetChildIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B43DA0>
+	struct UWidget GetChildAt(int32_t Index); // Function UMG.PanelWidget.GetChildAt(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B43D10>
+	struct TArray<struct UWidget> GetAllChildren(); // Function UMG.PanelWidget.GetAllChildren(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B43C90>
 	void ClearChildren(); // Function UMG.PanelWidget.ClearChildren(Native|Public|BlueprintCallable) // <Game_BE.exe+0x1EC6910>
-	struct Unknown AddChild(struct Unknown Content); // Function UMG.PanelWidget.AddChild(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B43AC0>
+	struct UPanelSlot AddChild(struct UWidget Content); // Function UMG.PanelWidget.AddChild(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B43AC0>
 };
 
 // Class UMG.Border
@@ -382,14 +382,14 @@ public:
 	char HorizontalAlignment; // 0x120 (1)
 	char VerticalAlignment; // 0x121 (1)
 	char bShowEffectWhenDisabled : 0; // 0x122 (1)
-	struct Unknown ContentColorAndOpacity; // 0x124 (16)
+	struct FLinearColor ContentColorAndOpacity; // 0x124 (16)
 	struct FDelegate ContentColorAndOpacityDelegate; // 0x134 (16)
-	struct Unknown Padding; // 0x144 (16)
-	struct Unknown Background; // 0x158 (136)
+	struct FMargin Padding; // 0x144 (16)
+	struct FSlateBrush Background; // 0x158 (136)
 	struct FDelegate BackgroundDelegate; // 0x1E0 (16)
-	struct Unknown BrushColor; // 0x1F0 (16)
+	struct FLinearColor BrushColor; // 0x1F0 (16)
 	struct FDelegate BrushColorDelegate; // 0x200 (16)
-	struct Unknown DesiredSizeScale; // 0x210 (8)
+	struct FVector2D DesiredSizeScale; // 0x210 (8)
 	char bFlipForRightToLeftFlowDirection : 0; // 0x218 (1)
 	struct FDelegate OnMouseButtonDownEvent; // 0x21C (16)
 	struct FDelegate OnMouseButtonUpEvent; // 0x22C (16)
@@ -397,16 +397,16 @@ public:
 	struct FDelegate OnMouseDoubleClickEvent; // 0x24C (16)
 
 	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.Border.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B378D0>
-	void SetPadding(struct Unknown InPadding); // Function UMG.Border.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B37340>
+	void SetPadding(struct FMargin InPadding); // Function UMG.Border.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B37340>
 	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.Border.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B36C60>
-	void SetDesiredSizeScale(struct Unknown InScale); // Function UMG.Border.SetDesiredSizeScale(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B36AE0>
-	void SetContentColorAndOpacity(struct Unknown InContentColorAndOpacity); // Function UMG.Border.SetContentColorAndOpacity(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B36A60>
-	void SetBrushFromTexture(struct Unknown Texture); // Function UMG.Border.SetBrushFromTexture(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B36860>
-	void SetBrushFromMaterial(struct Unknown Material); // Function UMG.Border.SetBrushFromMaterial(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B36860>
-	void SetBrushFromAsset(struct Unknown Asset); // Function UMG.Border.SetBrushFromAsset(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B367E0>
-	void SetBrushColor(struct Unknown InBrushColor); // Function UMG.Border.SetBrushColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B36760>
-	void SetBrush(struct Unknown& InBrush); // Function UMG.Border.SetBrush(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B365E0>
-	struct Unknown GetDynamicMaterial(); // Function UMG.Border.GetDynamicMaterial(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B35F50>
+	void SetDesiredSizeScale(struct FVector2D InScale); // Function UMG.Border.SetDesiredSizeScale(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B36AE0>
+	void SetContentColorAndOpacity(struct FLinearColor InContentColorAndOpacity); // Function UMG.Border.SetContentColorAndOpacity(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B36A60>
+	void SetBrushFromTexture(struct UTexture2D Texture); // Function UMG.Border.SetBrushFromTexture(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B36860>
+	void SetBrushFromMaterial(struct UMaterialInterface Material); // Function UMG.Border.SetBrushFromMaterial(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B36860>
+	void SetBrushFromAsset(struct USlateBrushAsset Asset); // Function UMG.Border.SetBrushFromAsset(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B367E0>
+	void SetBrushColor(struct FLinearColor InBrushColor); // Function UMG.Border.SetBrushColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B36760>
+	void SetBrush(struct FSlateBrush& InBrush); // Function UMG.Border.SetBrush(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B365E0>
+	struct UMaterialInstanceDynamic GetDynamicMaterial(); // Function UMG.Border.GetDynamicMaterial(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B35F50>
 };
 
 // Class UMG.AsyncTaskDownloadImage
@@ -417,7 +417,7 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x30 (16)
 	struct FMulticastInlineDelegate OnFail; // 0x40 (16)
 
-	struct Unknown DownloadImage(struct FString URL); // Function UMG.AsyncTaskDownloadImage.DownloadImage(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x3B35D80>
+	struct UAsyncTaskDownloadImage DownloadImage(struct FString URL); // Function UMG.AsyncTaskDownloadImage.DownloadImage(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x3B35D80>
 };
 
 // Class UMG.BackgroundBlur
@@ -425,18 +425,18 @@ class UBackgroundBlur : public UContentWidget {
 
 public:
 
-	struct Unknown Padding; // 0x120 (16)
+	struct FMargin Padding; // 0x120 (16)
 	char HorizontalAlignment; // 0x130 (1)
 	char VerticalAlignment; // 0x131 (1)
 	char bApplyAlphaToBlur : 0; // 0x132 (1)
 	float BlurStrength; // 0x134 (4)
 	char bOverrideAutoRadiusCalculation : 0; // 0x138 (1)
 	int32_t BlurRadius; // 0x13C (4)
-	struct Unknown LowQualityFallbackBrush; // 0x140 (136)
+	struct FSlateBrush LowQualityFallbackBrush; // 0x140 (136)
 
 	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.BackgroundBlur.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B377D0>
-	void SetPadding(struct Unknown InPadding); // Function UMG.BackgroundBlur.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B37220>
-	void SetLowQualityFallbackBrush(struct Unknown& InBrush); // Function UMG.BackgroundBlur.SetLowQualityFallbackBrush(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B36F10>
+	void SetPadding(struct FMargin InPadding); // Function UMG.BackgroundBlur.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B37220>
+	void SetLowQualityFallbackBrush(struct FSlateBrush& InBrush); // Function UMG.BackgroundBlur.SetLowQualityFallbackBrush(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B36F10>
 	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.BackgroundBlur.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B36B60>
 	void SetBlurStrength(float InStrength); // Function UMG.BackgroundBlur.SetBlurStrength(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B36560>
 	void SetBlurRadius(int32_t InBlurRadius); // Function UMG.BackgroundBlur.SetBlurRadius(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B364E0>
@@ -448,8 +448,8 @@ class UPanelSlot : public UVisual {
 
 public:
 
-	struct Unknown Parent; // 0x28 (8)
-	struct Unknown Content; // 0x30 (8)
+	struct UPanelWidget Parent; // 0x28 (8)
+	struct UWidget Content; // 0x30 (8)
 };
 
 // Class UMG.BackgroundBlurSlot
@@ -457,12 +457,12 @@ class UBackgroundBlurSlot : public UPanelSlot {
 
 public:
 
-	struct Unknown Padding; // 0x38 (16)
+	struct FMargin Padding; // 0x38 (16)
 	char HorizontalAlignment; // 0x48 (1)
 	char VerticalAlignment; // 0x49 (1)
 
 	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.BackgroundBlurSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B37850>
-	void SetPadding(struct Unknown InPadding); // Function UMG.BackgroundBlurSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B372B0>
+	void SetPadding(struct FMargin InPadding); // Function UMG.BackgroundBlurSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B372B0>
 	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.BackgroundBlurSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B36BE0>
 };
 
@@ -471,8 +471,8 @@ class UPropertyBinding : public Object {
 
 public:
 
-	struct TWeakObjectPtr<struct Unknown> SourceObject; // 0x28 (8)
-	struct Unknown SourcePath; // 0x30 (40)
+	struct TWeakObjectPtr<struct Object> SourceObject; // 0x28 (8)
+	struct FDynamicPropertyPath SourcePath; // 0x30 (40)
 	struct FName DestinationProperty; // 0x58 (8)
 };
 
@@ -481,12 +481,12 @@ class UBorderSlot : public UPanelSlot {
 
 public:
 
-	struct Unknown Padding; // 0x38 (16)
+	struct FMargin Padding; // 0x38 (16)
 	char HorizontalAlignment; // 0x48 (1)
 	char VerticalAlignment; // 0x49 (1)
 
 	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.BorderSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B37950>
-	void SetPadding(struct Unknown InPadding); // Function UMG.BorderSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B373D0>
+	void SetPadding(struct FMargin InPadding); // Function UMG.BorderSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B373D0>
 	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.BorderSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B36CE0>
 };
 
@@ -495,10 +495,10 @@ class UButton : public UContentWidget {
 
 public:
 
-	struct Unknown Style; // 0x160 (8)
-	struct Unknown WidgetStyle; // 0x168 (632)
-	struct Unknown ColorAndOpacity; // 0x3E0 (16)
-	struct Unknown BackgroundColor; // 0x3F0 (16)
+	struct USlateWidgetStyleAsset Style; // 0x160 (8)
+	struct FButtonStyle WidgetStyle; // 0x168 (632)
+	struct FLinearColor ColorAndOpacity; // 0x3E0 (16)
+	struct FLinearColor BackgroundColor; // 0x3F0 (16)
 	char ClickMethod; // 0x400 (1)
 	char TouchMethod; // 0x401 (1)
 	char PressMethod; // 0x402 (1)
@@ -510,11 +510,11 @@ public:
 	struct FMulticastInlineDelegate OnUnhovered; // 0x448 (16)
 
 	void SetTouchMethod(char InTouchMethod); // Function UMG.Button.SetTouchMethod(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B37750>
-	void SetStyle(struct Unknown& InStyle); // Function UMG.Button.SetStyle(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B37670>
+	void SetStyle(struct FButtonStyle& InStyle); // Function UMG.Button.SetStyle(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B37670>
 	void SetPressMethod(char InPressMethod); // Function UMG.Button.SetPressMethod(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B37570>
-	void SetColorAndOpacity(struct Unknown InColorAndOpacity); // Function UMG.Button.SetColorAndOpacity(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B369E0>
+	void SetColorAndOpacity(struct FLinearColor InColorAndOpacity); // Function UMG.Button.SetColorAndOpacity(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B369E0>
 	void SetClickMethod(char InClickMethod); // Function UMG.Button.SetClickMethod(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B36960>
-	void SetBackgroundColor(struct Unknown InBackgroundColor); // Function UMG.Button.SetBackgroundColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B36460>
+	void SetBackgroundColor(struct FLinearColor InBackgroundColor); // Function UMG.Button.SetBackgroundColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B36460>
 	char IsPressed(); // Function UMG.Button.IsPressed(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B361D0>
 };
 
@@ -523,12 +523,12 @@ class UButtonSlot : public UPanelSlot {
 
 public:
 
-	struct Unknown Padding; // 0x38 (16)
+	struct FMargin Padding; // 0x38 (16)
 	char HorizontalAlignment; // 0x48 (1)
 	char VerticalAlignment; // 0x49 (1)
 
 	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.ButtonSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B379D0>
-	void SetPadding(struct Unknown InPadding); // Function UMG.ButtonSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B37460>
+	void SetPadding(struct FMargin InPadding); // Function UMG.ButtonSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B37460>
 	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.ButtonSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B36D60>
 };
 
@@ -537,28 +537,28 @@ class UCanvasPanelSlot : public UPanelSlot {
 
 public:
 
-	struct Unknown LayoutData; // 0x38 (40)
+	struct FAnchorData LayoutData; // 0x38 (40)
 	char bAutoSize : 0; // 0x60 (1)
 	int32_t ZOrder; // 0x64 (4)
 
 	void SetZOrder(int32_t InZOrder); // Function UMG.CanvasPanelSlot.SetZOrder(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B37A50>
-	void SetSize(struct Unknown InSize); // Function UMG.CanvasPanelSlot.SetSize(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B375F0>
-	void SetPosition(struct Unknown InPosition); // Function UMG.CanvasPanelSlot.SetPosition(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B374F0>
-	void SetOffsets(struct Unknown InOffset); // Function UMG.CanvasPanelSlot.SetOffsets(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B37190>
-	void SetMinimum(struct Unknown InMinimumAnchors); // Function UMG.CanvasPanelSlot.SetMinimum(Final|Native|Public|HasDefaults) // <Game_BE.exe+0x3B37110>
-	void SetMaximum(struct Unknown InMaximumAnchors); // Function UMG.CanvasPanelSlot.SetMaximum(Final|Native|Public|HasDefaults) // <Game_BE.exe+0x3B37090>
-	void SetLayout(struct Unknown& InLayoutData); // Function UMG.CanvasPanelSlot.SetLayout(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B36E70>
+	void SetSize(struct FVector2D InSize); // Function UMG.CanvasPanelSlot.SetSize(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B375F0>
+	void SetPosition(struct FVector2D InPosition); // Function UMG.CanvasPanelSlot.SetPosition(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B374F0>
+	void SetOffsets(struct FMargin InOffset); // Function UMG.CanvasPanelSlot.SetOffsets(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B37190>
+	void SetMinimum(struct FVector2D InMinimumAnchors); // Function UMG.CanvasPanelSlot.SetMinimum(Final|Native|Public|HasDefaults) // <Game_BE.exe+0x3B37110>
+	void SetMaximum(struct FVector2D InMaximumAnchors); // Function UMG.CanvasPanelSlot.SetMaximum(Final|Native|Public|HasDefaults) // <Game_BE.exe+0x3B37090>
+	void SetLayout(struct FAnchorData& InLayoutData); // Function UMG.CanvasPanelSlot.SetLayout(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B36E70>
 	void SetAutoSize(char InbAutoSize); // Function UMG.CanvasPanelSlot.SetAutoSize(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B363D0>
-	void SetAnchors(struct Unknown InAnchors); // Function UMG.CanvasPanelSlot.SetAnchors(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B362B0>
-	void SetAlignment(struct Unknown InAlignment); // Function UMG.CanvasPanelSlot.SetAlignment(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B36230>
+	void SetAnchors(struct FAnchors InAnchors); // Function UMG.CanvasPanelSlot.SetAnchors(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B362B0>
+	void SetAlignment(struct FVector2D InAlignment); // Function UMG.CanvasPanelSlot.SetAlignment(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B36230>
 	int32_t GetZOrder(); // Function UMG.CanvasPanelSlot.GetZOrder(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B36170>
-	struct Unknown GetSize(); // Function UMG.CanvasPanelSlot.GetSize(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B36050>
-	struct Unknown GetPosition(); // Function UMG.CanvasPanelSlot.GetPosition(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B36010>
-	struct Unknown GetOffsets(); // Function UMG.CanvasPanelSlot.GetOffsets(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B35FD0>
-	struct Unknown GetLayout(); // Function UMG.CanvasPanelSlot.GetLayout(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B35F80>
+	struct FVector2D GetSize(); // Function UMG.CanvasPanelSlot.GetSize(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B36050>
+	struct FVector2D GetPosition(); // Function UMG.CanvasPanelSlot.GetPosition(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B36010>
+	struct FMargin GetOffsets(); // Function UMG.CanvasPanelSlot.GetOffsets(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B35FD0>
+	struct FAnchorData GetLayout(); // Function UMG.CanvasPanelSlot.GetLayout(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B35F80>
 	char GetAutoSize(); // Function UMG.CanvasPanelSlot.GetAutoSize(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B35EF0>
-	struct Unknown GetAnchors(); // Function UMG.CanvasPanelSlot.GetAnchors(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B35EB0>
-	struct Unknown GetAlignment(); // Function UMG.CanvasPanelSlot.GetAlignment(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B35E70>
+	struct FAnchors GetAnchors(); // Function UMG.CanvasPanelSlot.GetAnchors(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B35EB0>
+	struct FVector2D GetAlignment(); // Function UMG.CanvasPanelSlot.GetAlignment(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B35E70>
 };
 
 // Class UMG.CheckBox
@@ -566,30 +566,30 @@ class UCheckBox : public UContentWidget {
 
 public:
 
-	enum class Unknow CheckedState; // 0x120 (1)
+	enum class ECheckBoxState CheckedState; // 0x120 (1)
 	struct FDelegate CheckedStateDelegate; // 0x124 (16)
-	struct Unknown WidgetStyle; // 0x138 (1408)
-	struct Unknown Style; // 0x6B8 (8)
-	struct Unknown UncheckedImage; // 0x6C0 (8)
-	struct Unknown UncheckedHoveredImage; // 0x6C8 (8)
-	struct Unknown UncheckedPressedImage; // 0x6D0 (8)
-	struct Unknown CheckedImage; // 0x6D8 (8)
-	struct Unknown CheckedHoveredImage; // 0x6E0 (8)
-	struct Unknown CheckedPressedImage; // 0x6E8 (8)
-	struct Unknown UndeterminedImage; // 0x6F0 (8)
-	struct Unknown UndeterminedHoveredImage; // 0x6F8 (8)
-	struct Unknown UndeterminedPressedImage; // 0x700 (8)
+	struct FCheckBoxStyle WidgetStyle; // 0x138 (1408)
+	struct USlateWidgetStyleAsset Style; // 0x6B8 (8)
+	struct USlateBrushAsset UncheckedImage; // 0x6C0 (8)
+	struct USlateBrushAsset UncheckedHoveredImage; // 0x6C8 (8)
+	struct USlateBrushAsset UncheckedPressedImage; // 0x6D0 (8)
+	struct USlateBrushAsset CheckedImage; // 0x6D8 (8)
+	struct USlateBrushAsset CheckedHoveredImage; // 0x6E0 (8)
+	struct USlateBrushAsset CheckedPressedImage; // 0x6E8 (8)
+	struct USlateBrushAsset UndeterminedImage; // 0x6F0 (8)
+	struct USlateBrushAsset UndeterminedHoveredImage; // 0x6F8 (8)
+	struct USlateBrushAsset UndeterminedPressedImage; // 0x700 (8)
 	char HorizontalAlignment; // 0x708 (1)
-	struct Unknown Padding; // 0x70C (16)
-	struct Unknown BorderBackgroundColor; // 0x720 (40)
+	struct FMargin Padding; // 0x70C (16)
+	struct FSlateColor BorderBackgroundColor; // 0x720 (40)
 	char IsFocusable : 0; // 0x748 (1)
 	struct FMulticastInlineDelegate OnCheckStateChanged; // 0x750 (16)
 
 	void SetIsChecked(char InIsChecked); // Function UMG.CheckBox.SetIsChecked(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B36DE0>
-	void SetCheckedState(enum class Unknow InCheckedState); // Function UMG.CheckBox.SetCheckedState(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B368E0>
+	void SetCheckedState(enum class ECheckBoxState InCheckedState); // Function UMG.CheckBox.SetCheckedState(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B368E0>
 	char IsPressed(); // Function UMG.CheckBox.IsPressed(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B36200>
 	char IsChecked(); // Function UMG.CheckBox.IsChecked(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B361A0>
-	enum class Unknow GetCheckedState(); // Function UMG.CheckBox.GetCheckedState(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B35F20>
+	enum class ECheckBoxState GetCheckedState(); // Function UMG.CheckBox.GetCheckedState(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B35F20>
 };
 
 // Class UMG.CircularThrobber
@@ -600,8 +600,8 @@ public:
 	int32_t NumberOfPieces; // 0x108 (4)
 	float Period; // 0x10C (4)
 	float Radius; // 0x110 (4)
-	struct Unknown PieceImage; // 0x118 (8)
-	struct Unknown Image; // 0x120 (136)
+	struct USlateBrushAsset PieceImage; // 0x118 (8)
+	struct FSlateBrush Image; // 0x120 (136)
 	char bEnableRadius : 0; // 0x1A8 (1)
 
 	void SetRadius(float InRadius); // Function UMG.CircularThrobber.SetRadius(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3B180>
@@ -614,7 +614,7 @@ class UComboBox : public UWidget {
 
 public:
 
-	struct TArray<Unknown> Items; // 0x108 (16)
+	struct TArray<struct Object> Items; // 0x108 (16)
 	struct FDelegate OnGenerateWidgetEvent; // 0x118 (16)
 	char bIsFocusable : 0; // 0x128 (1)
 };
@@ -624,16 +624,16 @@ class UComboBoxString : public UWidget {
 
 public:
 
-	struct TArray<Unknown> DefaultOptions; // 0x108 (16)
+	struct TArray<struct FString> DefaultOptions; // 0x108 (16)
 	struct FString SelectedOption; // 0x118 (16)
-	struct Unknown WidgetStyle; // 0x128 (1008)
-	struct Unknown ItemStyle; // 0x518 (1992)
-	struct Unknown ContentPadding; // 0xCE0 (16)
+	struct FComboBoxStyle WidgetStyle; // 0x128 (1008)
+	struct FTableRowStyle ItemStyle; // 0x518 (1992)
+	struct FMargin ContentPadding; // 0xCE0 (16)
 	float MaxListHeight; // 0xCF0 (4)
 	char HasDownArrow : 0; // 0xCF4 (1)
 	char EnableGamepadNavigationMode : 0; // 0xCF5 (1)
-	struct Unknown Font; // 0xCF8 (80)
-	struct Unknown ForegroundColor; // 0xD48 (40)
+	struct FSlateFontInfo Font; // 0xCF8 (80)
+	struct FSlateColor ForegroundColor; // 0xD48 (40)
 	char bIsFocusable : 0; // 0xD70 (1)
 	struct FDelegate OnGenerateWidgetEvent; // 0xD74 (16)
 	struct FMulticastInlineDelegate OnSelectionChanged; // 0xD88 (16)
@@ -662,18 +662,18 @@ class UDragDropOperation : public Object {
 public:
 
 	struct FString Tag; // 0x28 (16)
-	struct Unknown payload; // 0x38 (8)
-	struct Unknown DefaultDragVisual; // 0x40 (8)
-	enum class Unknow Pivot; // 0x48 (1)
-	struct Unknown Offset; // 0x4C (8)
+	struct Object payload; // 0x38 (8)
+	struct UWidget DefaultDragVisual; // 0x40 (8)
+	enum class EDragPivot Pivot; // 0x48 (1)
+	struct FVector2D Offset; // 0x4C (8)
 	char bUseMoveAnimation : 0; // 0x54 (1)
 	struct FMulticastInlineDelegate OnDrop; // 0x58 (16)
 	struct FMulticastInlineDelegate OnDragCancelled; // 0x68 (16)
 	struct FMulticastInlineDelegate OnDragged; // 0x78 (16)
 
-	void Drop(struct Unknown& PointerEvent); // Function UMG.DragDropOperation.Drop(Native|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x3B3A040>
-	void Dragged(struct Unknown& PointerEvent); // Function UMG.DragDropOperation.Dragged(Native|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x3B39F10>
-	void DragCancelled(struct Unknown& PointerEvent); // Function UMG.DragDropOperation.DragCancelled(Native|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x3B39DE0>
+	void Drop(struct FPointerEvent& PointerEvent); // Function UMG.DragDropOperation.Drop(Native|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x3B3A040>
+	void Dragged(struct FPointerEvent& PointerEvent); // Function UMG.DragDropOperation.Dragged(Native|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x3B39F10>
+	void DragCancelled(struct FPointerEvent& PointerEvent); // Function UMG.DragDropOperation.DragCancelled(Native|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x3B39DE0>
 };
 
 // Class UMG.DynamicEntryBoxBase
@@ -681,18 +681,18 @@ class UDynamicEntryBoxBase : public UWidget {
 
 public:
 
-	enum class Unknow EntryBoxType; // 0x108 (1)
-	struct Unknown EntrySpacing; // 0x10C (8)
-	struct TArray<Unknown> SpacingPattern; // 0x118 (16)
-	struct Unknown EntrySizeRule; // 0x128 (8)
+	enum class EDynamicBoxType EntryBoxType; // 0x108 (1)
+	struct FVector2D EntrySpacing; // 0x10C (8)
+	struct TArray<struct FVector2D> SpacingPattern; // 0x118 (16)
+	struct FSlateChildSize EntrySizeRule; // 0x128 (8)
 	char EntryHorizontalAlignment; // 0x130 (1)
 	char EntryVerticalAlignment; // 0x131 (1)
 	int32_t MaxElementSize; // 0x134 (4)
-	struct Unknown EntryWidgetPool; // 0x148 (128)
+	struct FUserWidgetPool EntryWidgetPool; // 0x148 (128)
 
-	void SetEntrySpacing(struct Unknown& InEntrySpacing); // Function UMG.DynamicEntryBoxBase.SetEntrySpacing(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B3AA10>
+	void SetEntrySpacing(struct FVector2D& InEntrySpacing); // Function UMG.DynamicEntryBoxBase.SetEntrySpacing(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B3AA10>
 	int32_t GetNumEntries(); // Function UMG.DynamicEntryBoxBase.GetNumEntries(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3A350>
-	struct TArray<Unknown> GetAllEntries(); // Function UMG.DynamicEntryBoxBase.GetAllEntries(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3A220>
+	struct TArray<struct UUserWidget> GetAllEntries(); // Function UMG.DynamicEntryBoxBase.GetAllEntries(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3A220>
 };
 
 // Class UMG.DynamicEntryBox
@@ -700,12 +700,12 @@ class UDynamicEntryBox : public UDynamicEntryBoxBase {
 
 public:
 
-	struct Unknown* EntryWidgetClass; // 0x1C8 (8)
+	struct UClass* EntryWidgetClass; // 0x1C8 (8)
 
 	void Reset(char bDeleteWidgets); // Function UMG.DynamicEntryBox.Reset(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3A8D0>
-	void RemoveEntry(struct Unknown EntryWidget); // Function UMG.DynamicEntryBox.RemoveEntry(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3A7A0>
-	struct Unknown BP_CreateEntryOfClass(struct Unknown* EntryClass); // Function UMG.DynamicEntryBox.BP_CreateEntryOfClass(Final|Native|Private|BlueprintCallable) // <Game_BE.exe+0x3B39CF0>
-	struct Unknown BP_CreateEntry(); // Function UMG.DynamicEntryBox.BP_CreateEntry(Final|Native|Private|BlueprintCallable) // <Game_BE.exe+0x3B39CC0>
+	void RemoveEntry(struct UUserWidget EntryWidget); // Function UMG.DynamicEntryBox.RemoveEntry(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3A7A0>
+	struct UUserWidget BP_CreateEntryOfClass(struct UClass* EntryClass); // Function UMG.DynamicEntryBox.BP_CreateEntryOfClass(Final|Native|Private|BlueprintCallable) // <Game_BE.exe+0x3B39CF0>
+	struct UUserWidget BP_CreateEntry(); // Function UMG.DynamicEntryBox.BP_CreateEntry(Final|Native|Private|BlueprintCallable) // <Game_BE.exe+0x3B39CC0>
 };
 
 // Class UMG.EditableText
@@ -717,13 +717,13 @@ public:
 	struct FDelegate TextDelegate; // 0x120 (16)
 	struct FText HintText; // 0x130 (24)
 	struct FDelegate HintTextDelegate; // 0x148 (16)
-	struct Unknown WidgetStyle; // 0x158 (536)
-	struct Unknown Style; // 0x370 (8)
-	struct Unknown BackgroundImageSelected; // 0x378 (8)
-	struct Unknown BackgroundImageComposing; // 0x380 (8)
-	struct Unknown CaretImage; // 0x388 (8)
-	struct Unknown Font; // 0x390 (80)
-	struct Unknown ColorAndOpacity; // 0x3E0 (40)
+	struct FEditableTextStyle WidgetStyle; // 0x158 (536)
+	struct USlateWidgetStyleAsset Style; // 0x370 (8)
+	struct USlateBrushAsset BackgroundImageSelected; // 0x378 (8)
+	struct USlateBrushAsset BackgroundImageComposing; // 0x380 (8)
+	struct USlateBrushAsset CaretImage; // 0x388 (8)
+	struct FSlateFontInfo Font; // 0x390 (80)
+	struct FSlateColor ColorAndOpacity; // 0x3E0 (40)
 	char IsReadOnly : 0; // 0x408 (1)
 	char IsPassword : 0; // 0x409 (1)
 	float MinimumDesiredWidth; // 0x40C (4)
@@ -734,11 +734,11 @@ public:
 	char SelectAllTextOnCommit : 0; // 0x414 (1)
 	char AllowContextMenu : 0; // 0x415 (1)
 	char KeyboardType; // 0x416 (1)
-	struct Unknown VirtualKeyboardOptions; // 0x417 (1)
-	enum class Unknow VirtualKeyboardTrigger; // 0x418 (1)
-	enum class Unknow VirtualKeyboardDismissAction; // 0x419 (1)
+	struct FVirtualKeyboardOptions VirtualKeyboardOptions; // 0x417 (1)
+	enum class EVirtualKeyboardTrigger VirtualKeyboardTrigger; // 0x418 (1)
+	enum class EVirtualKeyboardDismissAction VirtualKeyboardDismissAction; // 0x419 (1)
 	char Justification; // 0x41A (1)
-	struct Unknown ShapedTextOptions; // 0x41B (3)
+	struct FShapedTextOptions ShapedTextOptions; // 0x41B (3)
 	struct FMulticastInlineDelegate OnTextChanged; // 0x420 (16)
 	struct FMulticastInlineDelegate OnTextCommitted; // 0x430 (16)
 
@@ -759,18 +759,18 @@ public:
 
 	struct FText Text; // 0x108 (24)
 	struct FDelegate TextDelegate; // 0x120 (16)
-	struct Unknown WidgetStyle; // 0x130 (2032)
-	struct Unknown Style; // 0x920 (8)
+	struct FEditableTextBoxStyle WidgetStyle; // 0x130 (2032)
+	struct USlateWidgetStyleAsset Style; // 0x920 (8)
 	struct FText HintText; // 0x928 (24)
 	struct FDelegate HintTextDelegate; // 0x940 (16)
-	struct Unknown Font; // 0x950 (80)
-	struct Unknown ForegroundColor; // 0x9A0 (16)
-	struct Unknown BackgroundColor; // 0x9B0 (16)
-	struct Unknown ReadOnlyForegroundColor; // 0x9C0 (16)
+	struct FSlateFontInfo Font; // 0x950 (80)
+	struct FLinearColor ForegroundColor; // 0x9A0 (16)
+	struct FLinearColor BackgroundColor; // 0x9B0 (16)
+	struct FLinearColor ReadOnlyForegroundColor; // 0x9C0 (16)
 	char IsReadOnly : 0; // 0x9D0 (1)
 	char IsPassword : 0; // 0x9D1 (1)
 	float MinimumDesiredWidth; // 0x9D4 (4)
-	struct Unknown Padding; // 0x9D8 (16)
+	struct FMargin Padding; // 0x9D8 (16)
 	char IsCaretMovedWhenGainFocus : 0; // 0x9E8 (1)
 	char SelectAllTextWhenFocused : 0; // 0x9E9 (1)
 	char RevertTextOnEscape : 0; // 0x9EA (1)
@@ -778,11 +778,11 @@ public:
 	char SelectAllTextOnCommit : 0; // 0x9EC (1)
 	char AllowContextMenu : 0; // 0x9ED (1)
 	char KeyboardType; // 0x9EE (1)
-	struct Unknown VirtualKeyboardOptions; // 0x9EF (1)
-	enum class Unknow VirtualKeyboardTrigger; // 0x9F0 (1)
-	enum class Unknow VirtualKeyboardDismissAction; // 0x9F1 (1)
+	struct FVirtualKeyboardOptions VirtualKeyboardOptions; // 0x9EF (1)
+	enum class EVirtualKeyboardTrigger VirtualKeyboardTrigger; // 0x9F0 (1)
+	enum class EVirtualKeyboardDismissAction VirtualKeyboardDismissAction; // 0x9F1 (1)
 	char Justification; // 0x9F2 (1)
-	struct Unknown ShapedTextOptions; // 0x9F3 (3)
+	struct FShapedTextOptions ShapedTextOptions; // 0x9F3 (3)
 	struct FMulticastInlineDelegate OnTextChanged; // 0x9F8 (16)
 	struct FMulticastInlineDelegate OnTextCommitted; // 0xA08 (16)
 
@@ -805,16 +805,16 @@ class UExpandableArea : public UWidget {
 
 public:
 
-	struct Unknown Style; // 0x110 (288)
-	struct Unknown BorderBrush; // 0x230 (136)
-	struct Unknown BorderColor; // 0x2B8 (40)
+	struct FExpandableAreaStyle Style; // 0x110 (288)
+	struct FSlateBrush BorderBrush; // 0x230 (136)
+	struct FSlateColor BorderColor; // 0x2B8 (40)
 	char bIsExpanded : 0; // 0x2E0 (1)
 	float MaxHeight; // 0x2E4 (4)
-	struct Unknown HeaderPadding; // 0x2E8 (16)
-	struct Unknown AreaPadding; // 0x2F8 (16)
+	struct FMargin HeaderPadding; // 0x2E8 (16)
+	struct FMargin AreaPadding; // 0x2F8 (16)
 	struct FMulticastInlineDelegate OnExpansionChanged; // 0x308 (16)
-	struct Unknown HeaderContent; // 0x318 (8)
-	struct Unknown BodyContent; // 0x320 (8)
+	struct UWidget HeaderContent; // 0x318 (8)
+	struct UWidget BodyContent; // 0x320 (8)
 
 	void SetIsExpanded_Animated(char IsExpanded); // Function UMG.ExpandableArea.SetIsExpanded_Animated(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3F7E0>
 	void SetIsExpanded(char IsExpanded); // Function UMG.ExpandableArea.SetIsExpanded(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3F750>
@@ -826,12 +826,12 @@ class UGridPanel : public UPanelWidget {
 
 public:
 
-	struct TArray<Unknown> ColumnFill; // 0x120 (16)
-	struct TArray<Unknown> RowFill; // 0x130 (16)
+	struct TArray<float> ColumnFill; // 0x120 (16)
+	struct TArray<float> RowFill; // 0x130 (16)
 
 	void SetRowFill(int32_t columnIndex, float Coefficient); // Function UMG.GridPanel.SetRowFill(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3FD50>
 	void SetColumnFill(int32_t columnIndex, float Coefficient); // Function UMG.GridPanel.SetColumnFill(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3F3F0>
-	struct Unknown AddChildToGrid(struct Unknown Content, int32_t InRow, int32_t InColumn); // Function UMG.GridPanel.AddChildToGrid(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3D9B0>
+	struct UGridSlot AddChildToGrid(struct UWidget Content, int32_t InRow, int32_t InColumn); // Function UMG.GridPanel.AddChildToGrid(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3D9B0>
 };
 
 // Class UMG.GridSlot
@@ -839,7 +839,7 @@ class UGridSlot : public UPanelSlot {
 
 public:
 
-	struct Unknown Padding; // 0x38 (16)
+	struct FMargin Padding; // 0x38 (16)
 	char HorizontalAlignment; // 0x48 (1)
 	char VerticalAlignment; // 0x49 (1)
 	int32_t Row; // 0x4C (4)
@@ -847,13 +847,13 @@ public:
 	int32_t Column; // 0x54 (4)
 	int32_t ColumnSpan; // 0x58 (4)
 	int32_t Layer; // 0x5C (4)
-	struct Unknown Nudge; // 0x60 (8)
+	struct FVector2D Nudge; // 0x60 (8)
 
 	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.GridSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B401A0>
 	void SetRowSpan(int32_t InRowSpan); // Function UMG.GridSlot.SetRowSpan(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3FE20>
 	void SetRow(int32_t InRow); // Function UMG.GridSlot.SetRow(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3FCD0>
-	void SetPadding(struct Unknown InPadding); // Function UMG.GridSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3FBB0>
-	void SetNudge(struct Unknown InNudge); // Function UMG.GridSlot.SetNudge(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B3FAB0>
+	void SetPadding(struct FMargin InPadding); // Function UMG.GridSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3FBB0>
+	void SetNudge(struct FVector2D InNudge); // Function UMG.GridSlot.SetNudge(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B3FAB0>
 	void SetLayer(int32_t InLayer); // Function UMG.GridSlot.SetLayer(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3F950>
 	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.GridSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3F650>
 	void SetColumnSpan(int32_t InColumnSpan); // Function UMG.GridSlot.SetColumnSpan(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3F4C0>
@@ -865,14 +865,14 @@ class UHorizontalBoxSlot : public UPanelSlot {
 
 public:
 
-	struct Unknown Padding; // 0x40 (16)
-	struct Unknown Size; // 0x50 (8)
+	struct FMargin Padding; // 0x40 (16)
+	struct FSlateChildSize Size; // 0x50 (8)
 	char HorizontalAlignment; // 0x58 (1)
 	char VerticalAlignment; // 0x59 (1)
 
 	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.HorizontalBoxSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B40220>
-	void SetSize(struct Unknown InSize); // Function UMG.HorizontalBoxSlot.SetSize(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B40090>
-	void SetPadding(struct Unknown InPadding); // Function UMG.HorizontalBoxSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3FC40>
+	void SetSize(struct FSlateChildSize InSize); // Function UMG.HorizontalBoxSlot.SetSize(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B40090>
+	void SetPadding(struct FMargin InPadding); // Function UMG.HorizontalBoxSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3FC40>
 	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.HorizontalBoxSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3F6D0>
 };
 
@@ -881,28 +881,28 @@ class UImage : public UWidget {
 
 public:
 
-	struct Unknown Brush; // 0x108 (136)
+	struct FSlateBrush Brush; // 0x108 (136)
 	struct FDelegate BrushDelegate; // 0x190 (16)
-	struct Unknown ColorAndOpacity; // 0x1A0 (16)
+	struct FLinearColor ColorAndOpacity; // 0x1A0 (16)
 	struct FDelegate ColorAndOpacityDelegate; // 0x1B0 (16)
 	char bFlipForRightToLeftFlowDirection : 0; // 0x1C0 (1)
 	struct FDelegate OnMouseButtonDownEvent; // 0x1C4 (16)
 
 	void SetOpacity(float InOpacity); // Function UMG.Image.SetOpacity(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3FB30>
 	void SetGammaCorrect(); // Function UMG.Image.SetGammaCorrect(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3F630>
-	void SetColorAndOpacity(struct Unknown InColorAndOpacity); // Function UMG.Image.SetColorAndOpacity(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B3F2F0>
-	void SetBrushTintColor(struct Unknown TintColor); // Function UMG.Image.SetBrushTintColor(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3F170>
-	void SetBrushSize(struct Unknown DesiredSize); // Function UMG.Image.SetBrushSize(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B3F0F0>
-	void SetBrushResourceObject(struct Unknown ResourceObject); // Function UMG.Image.SetBrushResourceObject(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3F070>
-	void SetBrushFromTextureDynamic(struct Unknown Texture, char bMatchSize); // Function UMG.Image.SetBrushFromTextureDynamic(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3EFA0>
-	void SetBrushFromTexture(struct Unknown Texture, char bMatchSize); // Function UMG.Image.SetBrushFromTexture(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3EED0>
-	void SetBrushFromSoftTexture(struct Unknown SoftTexture, char bMatchSize); // Function UMG.Image.SetBrushFromSoftTexture(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3ED70>
-	void SetBrushFromSoftMaterial(struct Unknown SoftMaterial); // Function UMG.Image.SetBrushFromSoftMaterial(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3EC50>
-	void SetBrushFromMaterial(struct Unknown Material); // Function UMG.Image.SetBrushFromMaterial(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3EBC0>
-	void SetBrushFromAtlasInterface(struct TScriptInterface<IUnknown> AtlasRegion, char bMatchSize); // Function UMG.Image.SetBrushFromAtlasInterface(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3EAD0>
-	void SetBrushFromAsset(struct Unknown Asset); // Function UMG.Image.SetBrushFromAsset(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3EA40>
-	void SetBrush(struct Unknown& InBrush); // Function UMG.Image.SetBrush(Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B3E8C0>
-	struct Unknown GetDynamicMaterial(); // Function UMG.Image.GetDynamicMaterial(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3E100>
+	void SetColorAndOpacity(struct FLinearColor InColorAndOpacity); // Function UMG.Image.SetColorAndOpacity(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B3F2F0>
+	void SetBrushTintColor(struct FSlateColor TintColor); // Function UMG.Image.SetBrushTintColor(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3F170>
+	void SetBrushSize(struct FVector2D DesiredSize); // Function UMG.Image.SetBrushSize(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B3F0F0>
+	void SetBrushResourceObject(struct Object ResourceObject); // Function UMG.Image.SetBrushResourceObject(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3F070>
+	void SetBrushFromTextureDynamic(struct UTexture2DDynamic Texture, char bMatchSize); // Function UMG.Image.SetBrushFromTextureDynamic(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3EFA0>
+	void SetBrushFromTexture(struct UTexture2D Texture, char bMatchSize); // Function UMG.Image.SetBrushFromTexture(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3EED0>
+	void SetBrushFromSoftTexture(struct TSoftObjectPtr<UTexture2D> SoftTexture, char bMatchSize); // Function UMG.Image.SetBrushFromSoftTexture(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3ED70>
+	void SetBrushFromSoftMaterial(struct TSoftObjectPtr<UMaterialInterface> SoftMaterial); // Function UMG.Image.SetBrushFromSoftMaterial(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3EC50>
+	void SetBrushFromMaterial(struct UMaterialInterface Material); // Function UMG.Image.SetBrushFromMaterial(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3EBC0>
+	void SetBrushFromAtlasInterface(struct TScriptInterface<ISlateTextureAtlasInterface> AtlasRegion, char bMatchSize); // Function UMG.Image.SetBrushFromAtlasInterface(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3EAD0>
+	void SetBrushFromAsset(struct USlateBrushAsset Asset); // Function UMG.Image.SetBrushFromAsset(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3EA40>
+	void SetBrush(struct FSlateBrush& InBrush); // Function UMG.Image.SetBrush(Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B3E8C0>
+	struct UMaterialInstanceDynamic GetDynamicMaterial(); // Function UMG.Image.GetDynamicMaterial(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3E100>
 };
 
 // Class UMG.InputKeySelector
@@ -910,28 +910,28 @@ class UInputKeySelector : public UWidget {
 
 public:
 
-	struct Unknown WidgetStyle; // 0x108 (632)
-	struct Unknown TextStyle; // 0x380 (616)
-	struct Unknown SelectedKey; // 0x5E8 (32)
-	struct Unknown Font; // 0x608 (80)
-	struct Unknown Margin; // 0x658 (16)
-	struct Unknown ColorAndOpacity; // 0x668 (16)
+	struct FButtonStyle WidgetStyle; // 0x108 (632)
+	struct FTextBlockStyle TextStyle; // 0x380 (616)
+	struct FInputChord SelectedKey; // 0x5E8 (32)
+	struct FSlateFontInfo Font; // 0x608 (80)
+	struct FMargin Margin; // 0x658 (16)
+	struct FLinearColor ColorAndOpacity; // 0x668 (16)
 	struct FText KeySelectionText; // 0x678 (24)
 	struct FText NoKeySpecifiedText; // 0x690 (24)
 	char bAllowModifierKeys : 0; // 0x6A8 (1)
 	char bAllowGamepadKeys : 0; // 0x6A9 (1)
-	struct TArray<Unknown> EscapeKeys; // 0x6B0 (16)
+	struct TArray<struct FKey> EscapeKeys; // 0x6B0 (16)
 	struct FMulticastInlineDelegate OnKeySelected; // 0x6C0 (16)
 	struct FMulticastInlineDelegate OnIsSelectingKeyChanged; // 0x6D0 (16)
 
-	void SetTextBlockVisibility(enum class Unknow InVisibility); // Function UMG.InputKeySelector.SetTextBlockVisibility(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B40120>
-	void SetSelectedKey(struct Unknown& InSelectedKey); // Function UMG.InputKeySelector.SetSelectedKey(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B3FF20>
+	void SetTextBlockVisibility(enum class ESlateVisibility InVisibility); // Function UMG.InputKeySelector.SetTextBlockVisibility(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B40120>
+	void SetSelectedKey(struct FInputChord& InSelectedKey); // Function UMG.InputKeySelector.SetSelectedKey(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B3FF20>
 	void SetNoKeySpecifiedText(struct FText InNoKeySpecifiedText); // Function UMG.InputKeySelector.SetNoKeySpecifiedText(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3F9D0>
 	void SetKeySelectionText(struct FText InKeySelectionText); // Function UMG.InputKeySelector.SetKeySelectionText(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3F870>
-	void SetEscapeKeys(struct TArray<Unknown>& InKeys); // Function UMG.InputKeySelector.SetEscapeKeys(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B3F540>
+	void SetEscapeKeys(struct TArray<struct FKey>& InKeys); // Function UMG.InputKeySelector.SetEscapeKeys(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B3F540>
 	void SetAllowModifierKeys(char bInAllowModifierKeys); // Function UMG.InputKeySelector.SetAllowModifierKeys(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3E830>
 	void SetAllowGamepadKeys(char bInAllowGamepadKeys); // Function UMG.InputKeySelector.SetAllowGamepadKeys(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3E7A0>
-	void OnKeySelected__DelegateSignature(struct Unknown SelectedKey); // DelegateFunction UMG.InputKeySelector.OnKeySelected__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B80160>
+	void OnKeySelected__DelegateSignature(struct FInputChord SelectedKey); // DelegateFunction UMG.InputKeySelector.OnKeySelected__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B80160>
 	void OnIsSelectingKeyChanged__DelegateSignature(); // DelegateFunction UMG.InputKeySelector.OnIsSelectingKeyChanged__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B80160>
 	char GetIsSelectingKey(); // Function UMG.InputKeySelector.GetIsSelectingKey(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3E1F0>
 };
@@ -954,23 +954,23 @@ class UListViewBase : public UWidget {
 
 public:
 
-	struct Unknown* EntryWidgetClass; // 0x108 (8)
+	struct UClass* EntryWidgetClass; // 0x108 (8)
 	float WheelScrollMultiplier; // 0x110 (4)
 	char bEnableScrollAnimation : 0; // 0x114 (1)
 	char bEnableFixedLineOffset : 0; // 0x115 (1)
 	float FixedLineScrollOffset; // 0x118 (4)
 	struct FMulticastInlineDelegate BP_OnEntryGenerated; // 0x120 (16)
 	struct FMulticastInlineDelegate BP_OnEntryReleased; // 0x130 (16)
-	struct Unknown EntryWidgetPool; // 0x140 (128)
+	struct FUserWidgetPool EntryWidgetPool; // 0x140 (128)
 
 	void SetWheelScrollMultiplier(float NewWheelScrollMultiplier); // Function UMG.ListViewBase.SetWheelScrollMultiplier(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B44E70>
 	void SetScrollOffset(float InScrollOffset); // Function UMG.ListViewBase.SetScrollOffset(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B44A80>
-	void SetScrollbarVisibility(enum class Unknow InVisibility); // Function UMG.ListViewBase.SetScrollbarVisibility(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B44B00>
+	void SetScrollbarVisibility(enum class ESlateVisibility InVisibility); // Function UMG.ListViewBase.SetScrollbarVisibility(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B44B00>
 	void ScrollToTop(); // Function UMG.ListViewBase.ScrollToTop(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B44510>
 	void ScrollToBottom(); // Function UMG.ListViewBase.ScrollToBottom(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B444F0>
 	void RequestRefresh(); // Function UMG.ListViewBase.RequestRefresh(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B444D0>
 	void RegenerateAllEntries(); // Function UMG.ListViewBase.RegenerateAllEntries(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B44390>
-	struct TArray<Unknown> GetDisplayedEntryWidgets(); // Function UMG.ListViewBase.GetDisplayedEntryWidgets(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B43E60>
+	struct TArray<struct UUserWidget> GetDisplayedEntryWidgets(); // Function UMG.ListViewBase.GetDisplayedEntryWidgets(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B43E60>
 };
 
 // Class UMG.ListView
@@ -980,12 +980,12 @@ public:
 
 	char Orientation; // 0x2D8 (1)
 	char SelectionMode; // 0x2D9 (1)
-	enum class Unknow ConsumeMouseWheel; // 0x2DA (1)
+	enum class EConsumeMouseWheel ConsumeMouseWheel; // 0x2DA (1)
 	char bClearSelectionOnClick : 0; // 0x2DB (1)
 	char bIsFocusable : 0; // 0x2DC (1)
 	float EntrySpacing; // 0x2E0 (4)
 	char bReturnFocusToSelection : 0; // 0x2E4 (1)
-	struct TArray<Unknown> ListItems; // 0x2E8 (16)
+	struct TArray<struct Object> ListItems; // 0x2E8 (16)
 	struct FMulticastInlineDelegate BP_OnEntryInitialized; // 0x308 (16)
 	struct FMulticastInlineDelegate BP_OnItemClicked; // 0x318 (16)
 	struct FMulticastInlineDelegate BP_OnItemDoubleClicked; // 0x328 (16)
@@ -996,26 +996,26 @@ public:
 	void SetSelectionMode(char SelectionMode); // Function UMG.ListView.SetSelectionMode(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B40010>
 	void SetSelectedIndex(int32_t Index); // Function UMG.ListView.SetSelectedIndex(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3FEA0>
 	void ScrollIndexIntoView(int32_t Index); // Function UMG.ListView.ScrollIndexIntoView(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3E720>
-	void RemoveItem(struct Unknown Item); // Function UMG.ListView.RemoveItem(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3E6A0>
+	void RemoveItem(struct Object Item); // Function UMG.ListView.RemoveItem(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3E6A0>
 	void NavigateToIndex(int32_t Index); // Function UMG.ListView.NavigateToIndex(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3E620>
 	char IsRefreshPending(); // Function UMG.ListView.IsRefreshPending(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3E5F0>
 	int32_t GetNumItems(); // Function UMG.ListView.GetNumItems(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3E380>
-	struct TArray<Unknown> GetListItems(); // Function UMG.ListView.GetListItems(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3E350>
-	struct Unknown GetItemAt(int32_t Index); // Function UMG.ListView.GetItemAt(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3E220>
-	int32_t GetIndexForItem(struct Unknown Item); // Function UMG.ListView.GetIndexForItem(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3E130>
+	struct TArray<struct Object> GetListItems(); // Function UMG.ListView.GetListItems(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3E350>
+	struct Object GetItemAt(int32_t Index); // Function UMG.ListView.GetItemAt(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3E220>
+	int32_t GetIndexForItem(struct Object Item); // Function UMG.ListView.GetIndexForItem(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3E130>
 	void ClearListItems(); // Function UMG.ListView.ClearListItems(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3E0B0>
-	void BP_SetSelectedItem(struct Unknown Item); // Function UMG.ListView.BP_SetSelectedItem(Final|Native|Private|BlueprintCallable) // <Game_BE.exe+0x3B3E030>
-	void BP_SetListItems(struct TArray<Unknown>& InListItems); // Function UMG.ListView.BP_SetListItems(Final|Native|Private|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B3DF80>
-	void BP_SetItemSelection(struct Unknown Item, char bSelected); // Function UMG.ListView.BP_SetItemSelection(Final|Native|Private|BlueprintCallable) // <Game_BE.exe+0x3B3DEB0>
-	void BP_ScrollItemIntoView(struct Unknown Item); // Function UMG.ListView.BP_ScrollItemIntoView(Final|Native|Private|BlueprintCallable) // <Game_BE.exe+0x3B3DE30>
-	void BP_NavigateToItem(struct Unknown Item); // Function UMG.ListView.BP_NavigateToItem(Final|Native|Private|BlueprintCallable) // <Game_BE.exe+0x3B3DDB0>
-	char BP_IsItemVisible(struct Unknown Item); // Function UMG.ListView.BP_IsItemVisible(Final|Native|Private|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3DD20>
-	char BP_GetSelectedItems(struct TArray<Unknown>& Items); // Function UMG.ListView.BP_GetSelectedItems(Final|Native|Private|HasOutParms|BlueprintCallable|Const) // <Game_BE.exe+0x3B3DC60>
-	struct Unknown BP_GetSelectedItem(); // Function UMG.ListView.BP_GetSelectedItem(Final|Native|Private|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3DC30>
+	void BP_SetSelectedItem(struct Object Item); // Function UMG.ListView.BP_SetSelectedItem(Final|Native|Private|BlueprintCallable) // <Game_BE.exe+0x3B3E030>
+	void BP_SetListItems(struct TArray<struct Object>& InListItems); // Function UMG.ListView.BP_SetListItems(Final|Native|Private|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B3DF80>
+	void BP_SetItemSelection(struct Object Item, char bSelected); // Function UMG.ListView.BP_SetItemSelection(Final|Native|Private|BlueprintCallable) // <Game_BE.exe+0x3B3DEB0>
+	void BP_ScrollItemIntoView(struct Object Item); // Function UMG.ListView.BP_ScrollItemIntoView(Final|Native|Private|BlueprintCallable) // <Game_BE.exe+0x3B3DE30>
+	void BP_NavigateToItem(struct Object Item); // Function UMG.ListView.BP_NavigateToItem(Final|Native|Private|BlueprintCallable) // <Game_BE.exe+0x3B3DDB0>
+	char BP_IsItemVisible(struct Object Item); // Function UMG.ListView.BP_IsItemVisible(Final|Native|Private|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3DD20>
+	char BP_GetSelectedItems(struct TArray<struct Object>& Items); // Function UMG.ListView.BP_GetSelectedItems(Final|Native|Private|HasOutParms|BlueprintCallable|Const) // <Game_BE.exe+0x3B3DC60>
+	struct Object BP_GetSelectedItem(); // Function UMG.ListView.BP_GetSelectedItem(Final|Native|Private|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3DC30>
 	int32_t BP_GetNumItemsSelected(); // Function UMG.ListView.BP_GetNumItemsSelected(Final|Native|Private|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B3DC00>
 	void BP_ClearSelection(); // Function UMG.ListView.BP_ClearSelection(Final|Native|Private|BlueprintCallable) // <Game_BE.exe+0x3B3DBE0>
 	void BP_CancelScrollIntoView(); // Function UMG.ListView.BP_CancelScrollIntoView(Final|Native|Private|BlueprintCallable) // <Game_BE.exe+0x3B3DBC0>
-	void AddItem(struct Unknown Item); // Function UMG.ListView.AddItem(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3DB40>
+	void AddItem(struct Object Item); // Function UMG.ListView.AddItem(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3DB40>
 };
 
 // Class UMG.MenuAnchor
@@ -1023,7 +1023,7 @@ class UMenuAnchor : public UContentWidget {
 
 public:
 
-	struct Unknown* MenuClass; // 0x120 (8)
+	struct UClass* MenuClass; // 0x120 (8)
 	struct FDelegate OnGetMenuContentEvent; // 0x128 (16)
 	char Placement; // 0x138 (1)
 	char bFitInWindow : 0; // 0x139 (1)
@@ -1037,7 +1037,7 @@ public:
 	void Open(char bFocusMenu); // Function UMG.MenuAnchor.Open(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B44300>
 	char IsOpen(); // Function UMG.MenuAnchor.IsOpen(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B442D0>
 	char HasOpenSubMenus(); // Function UMG.MenuAnchor.HasOpenSubMenus(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B442A0>
-	struct Unknown GetMenuPosition(); // Function UMG.MenuAnchor.GetMenuPosition(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B44030>
+	struct FVector2D GetMenuPosition(); // Function UMG.MenuAnchor.GetMenuPosition(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B44030>
 	void FitInWindow(char bFit); // Function UMG.MenuAnchor.FitInWindow(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B43C00>
 	void Close(); // Function UMG.MenuAnchor.Close(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B43BE0>
 };
@@ -1047,11 +1047,11 @@ class UMovieScene2DTransformSection : public UMovieSceneSection {
 
 public:
 
-	struct Unknown TransformMask; // 0xE0 (4)
-	struct Unknown Translation[0x2]; // 0xE8 (320)
-	struct Unknown Rotation; // 0x228 (160)
-	struct Unknown Scale[0x2]; // 0x2C8 (320)
-	struct Unknown Shear[0x2]; // 0x408 (320)
+	struct FMovieScene2DTransformMask TransformMask; // 0xE0 (4)
+	struct FMovieSceneFloatChannel Translation[0x2]; // 0xE8 (320)
+	struct FMovieSceneFloatChannel Rotation; // 0x228 (160)
+	struct FMovieSceneFloatChannel Scale[0x2]; // 0x2C8 (320)
+	struct FMovieSceneFloatChannel Shear[0x2]; // 0x408 (320)
 };
 
 // Class UMG.MovieSceneMarginSection
@@ -1059,10 +1059,10 @@ class UMovieSceneMarginSection : public UMovieSceneSection {
 
 public:
 
-	struct Unknown TopCurve; // 0xE0 (160)
-	struct Unknown LeftCurve; // 0x180 (160)
-	struct Unknown RightCurve; // 0x220 (160)
-	struct Unknown BottomCurve; // 0x2C0 (160)
+	struct FMovieSceneFloatChannel TopCurve; // 0xE0 (160)
+	struct FMovieSceneFloatChannel LeftCurve; // 0x180 (160)
+	struct FMovieSceneFloatChannel RightCurve; // 0x220 (160)
+	struct FMovieSceneFloatChannel BottomCurve; // 0x2C0 (160)
 };
 
 // Class UMG.MovieSceneWidgetMaterialTrack
@@ -1070,7 +1070,7 @@ class UMovieSceneWidgetMaterialTrack : public UMovieSceneMaterialTrack {
 
 public:
 
-	struct TArray<Unknown> BrushPropertyNamePath; // 0x68 (16)
+	struct TArray<struct FName> BrushPropertyNamePath; // 0x68 (16)
 	struct FName TrackName; // 0x78 (8)
 };
 
@@ -1079,12 +1079,12 @@ class UTextLayoutWidget : public UWidget {
 
 public:
 
-	struct Unknown ShapedTextOptions; // 0x108 (3)
+	struct FShapedTextOptions ShapedTextOptions; // 0x108 (3)
 	char Justification; // 0x10B (1)
-	enum class Unknow WrappingPolicy; // 0x10C (1)
+	enum class ETextWrappingPolicy WrappingPolicy; // 0x10C (1)
 	char AutoWrapText : 0; // 0x10D (1)
 	float WrapTextAt; // 0x110 (4)
-	struct Unknown Margin; // 0x114 (16)
+	struct FMargin Margin; // 0x114 (16)
 	float LineHeightPercentage; // 0x124 (4)
 
 	void SetJustification(char InJustification); // Function UMG.TextLayoutWidget.SetJustification(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B558A0>
@@ -1098,20 +1098,20 @@ public:
 	struct FText Text; // 0x128 (24)
 	struct FText HintText; // 0x140 (24)
 	struct FDelegate HintTextDelegate; // 0x158 (16)
-	struct Unknown WidgetStyle; // 0x168 (616)
+	struct FTextBlockStyle WidgetStyle; // 0x168 (616)
 	char bIsReadOnly : 0; // 0x3D0 (1)
-	struct Unknown Font; // 0x3D8 (80)
+	struct FSlateFontInfo Font; // 0x3D8 (80)
 	char SelectAllTextWhenFocused : 0; // 0x428 (1)
 	char ClearTextSelectionOnFocusLoss : 0; // 0x429 (1)
 	char RevertTextOnEscape : 0; // 0x42A (1)
 	char ClearKeyboardFocusOnCommit : 0; // 0x42B (1)
 	char AllowContextMenu : 0; // 0x42C (1)
-	struct Unknown VirtualKeyboardOptions; // 0x42D (1)
-	enum class Unknow VirtualKeyboardDismissAction; // 0x42E (1)
+	struct FVirtualKeyboardOptions VirtualKeyboardOptions; // 0x42D (1)
+	enum class EVirtualKeyboardDismissAction VirtualKeyboardDismissAction; // 0x42E (1)
 	struct FMulticastInlineDelegate OnTextChanged; // 0x430 (16)
 	struct FMulticastInlineDelegate OnTextCommitted; // 0x440 (16)
 
-	void SetWidgetStyle(struct Unknown& InWidgetStyle); // Function UMG.MultiLineEditableText.SetWidgetStyle(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B44EF0>
+	void SetWidgetStyle(struct FTextBlockStyle& InWidgetStyle); // Function UMG.MultiLineEditableText.SetWidgetStyle(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B44EF0>
 	void SetText(struct FText InText); // Function UMG.MultiLineEditableText.SetText(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B44B80>
 	void SetIsReadOnly(char bReadOnly); // Function UMG.MultiLineEditableText.SetIsReadOnly(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B44850>
 	void SetHintText(struct FText InHintText); // Function UMG.MultiLineEditableText.SetHintText(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B44610>
@@ -1129,21 +1129,21 @@ public:
 	struct FText Text; // 0x128 (24)
 	struct FText HintText; // 0x140 (24)
 	struct FDelegate HintTextDelegate; // 0x158 (16)
-	struct Unknown WidgetStyle; // 0x168 (2032)
-	struct Unknown TextStyle; // 0x958 (616)
+	struct FEditableTextBoxStyle WidgetStyle; // 0x168 (2032)
+	struct FTextBlockStyle TextStyle; // 0x958 (616)
 	char bIsReadOnly : 0; // 0xBC0 (1)
 	char AllowContextMenu : 0; // 0xBC1 (1)
-	struct Unknown VirtualKeyboardOptions; // 0xBC2 (1)
-	enum class Unknow VirtualKeyboardDismissAction; // 0xBC3 (1)
-	struct Unknown Style; // 0xBC8 (8)
-	struct Unknown Font; // 0xBD0 (80)
-	struct Unknown ForegroundColor; // 0xC20 (16)
-	struct Unknown BackgroundColor; // 0xC30 (16)
-	struct Unknown ReadOnlyForegroundColor; // 0xC40 (16)
+	struct FVirtualKeyboardOptions VirtualKeyboardOptions; // 0xBC2 (1)
+	enum class EVirtualKeyboardDismissAction VirtualKeyboardDismissAction; // 0xBC3 (1)
+	struct USlateWidgetStyleAsset Style; // 0xBC8 (8)
+	struct FSlateFontInfo Font; // 0xBD0 (80)
+	struct FLinearColor ForegroundColor; // 0xC20 (16)
+	struct FLinearColor BackgroundColor; // 0xC30 (16)
+	struct FLinearColor ReadOnlyForegroundColor; // 0xC40 (16)
 	struct FMulticastInlineDelegate OnTextChanged; // 0xC50 (16)
 	struct FMulticastInlineDelegate OnTextCommitted; // 0xC60 (16)
 
-	void SetTextStyle(struct Unknown& InTextStyle); // Function UMG.MultiLineEditableTextBox.SetTextStyle(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B44D40>
+	void SetTextStyle(struct FTextBlockStyle& InTextStyle); // Function UMG.MultiLineEditableTextBox.SetTextStyle(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B44D40>
 	void SetText(struct FText InText); // Function UMG.MultiLineEditableTextBox.SetText(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B44C60>
 	void SetIsReadOnly(char bReadOnly); // Function UMG.MultiLineEditableTextBox.SetIsReadOnly(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B448E0>
 	void SetHintText(struct FText InHintText); // Function UMG.MultiLineEditableTextBox.SetHintText(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B446F0>
@@ -1159,12 +1159,12 @@ class UOverlaySlot : public UPanelSlot {
 
 public:
 
-	struct Unknown Padding; // 0x40 (16)
+	struct FMargin Padding; // 0x40 (16)
 	char HorizontalAlignment; // 0x50 (1)
 	char VerticalAlignment; // 0x51 (1)
 
 	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.OverlaySlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B44DF0>
-	void SetPadding(struct Unknown InPadding); // Function UMG.OverlaySlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B44970>
+	void SetPadding(struct FMargin InPadding); // Function UMG.OverlaySlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B44970>
 	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.OverlaySlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B447D0>
 };
 
@@ -1173,22 +1173,22 @@ class UProgressBar : public UWidget {
 
 public:
 
-	struct Unknown WidgetStyle; // 0x108 (416)
-	struct Unknown Style; // 0x2A8 (8)
-	struct Unknown BackgroundImage; // 0x2B0 (8)
-	struct Unknown FillImage; // 0x2B8 (8)
-	struct Unknown MarqueeImage; // 0x2C0 (8)
+	struct FProgressBarStyle WidgetStyle; // 0x108 (416)
+	struct USlateWidgetStyleAsset Style; // 0x2A8 (8)
+	struct USlateBrushAsset BackgroundImage; // 0x2B0 (8)
+	struct USlateBrushAsset FillImage; // 0x2B8 (8)
+	struct USlateBrushAsset MarqueeImage; // 0x2C0 (8)
 	float Percent; // 0x2C8 (4)
 	char BarFillType; // 0x2CC (1)
 	char bIsMarquee : 0; // 0x2CD (1)
-	struct Unknown BorderPadding; // 0x2D0 (8)
+	struct FVector2D BorderPadding; // 0x2D0 (8)
 	struct FDelegate PercentDelegate; // 0x2D8 (16)
-	struct Unknown FillColorAndOpacity; // 0x2E8 (16)
+	struct FLinearColor FillColorAndOpacity; // 0x2E8 (16)
 	struct FDelegate FillColorAndOpacityDelegate; // 0x2F8 (16)
 
 	void SetPercent(float InPercent); // Function UMG.ProgressBar.SetPercent(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B48C70>
 	void SetIsMarquee(char InbIsMarquee); // Function UMG.ProgressBar.SetIsMarquee(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B486C0>
-	void SetFillColorAndOpacity(struct Unknown InColor); // Function UMG.ProgressBar.SetFillColorAndOpacity(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B484B0>
+	void SetFillColorAndOpacity(struct FLinearColor InColor); // Function UMG.ProgressBar.SetFillColorAndOpacity(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B484B0>
 };
 
 // Class UMG.RetainerBox
@@ -1200,14 +1200,14 @@ public:
 	char RenderOnPhase : 0; // 0x121 (1)
 	int32_t Phase; // 0x124 (4)
 	int32_t PhaseCount; // 0x128 (4)
-	struct Unknown EffectMaterial; // 0x130 (8)
+	struct UMaterialInterface EffectMaterial; // 0x130 (8)
 	struct FName TextureParameter; // 0x138 (8)
 
 	void SetTextureParameter(struct FName TextureParameter); // Function UMG.RetainerBox.SetTextureParameter(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B49470>
 	void SetRenderingPhase(int32_t RenderPhase, int32_t TotalPhases); // Function UMG.RetainerBox.SetRenderingPhase(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B48CF0>
-	void SetEffectMaterial(struct Unknown EffectMaterial); // Function UMG.RetainerBox.SetEffectMaterial(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B48430>
+	void SetEffectMaterial(struct UMaterialInterface EffectMaterial); // Function UMG.RetainerBox.SetEffectMaterial(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B48430>
 	void RequestRender(); // Function UMG.RetainerBox.RequestRender(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B47A90>
-	struct Unknown GetEffectMaterial(); // Function UMG.RetainerBox.GetEffectMaterial(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B47930>
+	struct UMaterialInstanceDynamic GetEffectMaterial(); // Function UMG.RetainerBox.GetEffectMaterial(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B47930>
 };
 
 // Class UMG.RichTextBlock
@@ -1216,25 +1216,25 @@ class URichTextBlock : public UTextLayoutWidget {
 public:
 
 	struct FText Text; // 0x128 (24)
-	struct Unknown TextStyleSet; // 0x140 (8)
-	struct TArray<Unknown> DecoratorClasses; // 0x148 (16)
+	struct UDataTable TextStyleSet; // 0x140 (8)
+	struct TArray<struct UClass*> DecoratorClasses; // 0x148 (16)
 	char bOverrideDefaultStyle : 0; // 0x158 (1)
-	struct Unknown DefaultTextStyleOverride; // 0x160 (616)
+	struct FTextBlockStyle DefaultTextStyleOverride; // 0x160 (616)
 	float MinDesiredWidth; // 0x3C8 (4)
-	struct TArray<Unknown> InstanceDecorators; // 0x638 (16)
+	struct TArray<struct URichTextBlockDecorator> InstanceDecorators; // 0x638 (16)
 
-	void SetTextStyleSet(struct Unknown NewTextStyleSet); // Function UMG.RichTextBlock.SetTextStyleSet(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B493F0>
+	void SetTextStyleSet(struct UDataTable NewTextStyleSet); // Function UMG.RichTextBlock.SetTextStyleSet(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B493F0>
 	void SetText(struct FText& InText); // Function UMG.RichTextBlock.SetText(Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B49310>
 	void SetMinDesiredWidth(float InMinDesiredWidth); // Function UMG.RichTextBlock.SetMinDesiredWidth(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B489D0>
-	void SetDefaultTextStyle(struct Unknown& InDefaultTextStyle); // Function UMG.RichTextBlock.SetDefaultTextStyle(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B48380>
-	void SetDefaultStrikeBrush(struct Unknown& InStrikeBrush); // Function UMG.RichTextBlock.SetDefaultStrikeBrush(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B48200>
-	void SetDefaultShadowOffset(struct Unknown InShadowOffset); // Function UMG.RichTextBlock.SetDefaultShadowOffset(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B48180>
-	void SetDefaultShadowColorAndOpacity(struct Unknown InShadowColorAndOpacity); // Function UMG.RichTextBlock.SetDefaultShadowColorAndOpacity(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B48100>
-	void SetDefaultFont(struct Unknown InFontInfo); // Function UMG.RichTextBlock.SetDefaultFont(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B47FF0>
-	void SetDefaultColorAndOpacity(struct Unknown InColorAndOpacity); // Function UMG.RichTextBlock.SetDefaultColorAndOpacity(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B47F00>
+	void SetDefaultTextStyle(struct FTextBlockStyle& InDefaultTextStyle); // Function UMG.RichTextBlock.SetDefaultTextStyle(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B48380>
+	void SetDefaultStrikeBrush(struct FSlateBrush& InStrikeBrush); // Function UMG.RichTextBlock.SetDefaultStrikeBrush(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B48200>
+	void SetDefaultShadowOffset(struct FVector2D InShadowOffset); // Function UMG.RichTextBlock.SetDefaultShadowOffset(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B48180>
+	void SetDefaultShadowColorAndOpacity(struct FLinearColor InShadowColorAndOpacity); // Function UMG.RichTextBlock.SetDefaultShadowColorAndOpacity(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B48100>
+	void SetDefaultFont(struct FSlateFontInfo InFontInfo); // Function UMG.RichTextBlock.SetDefaultFont(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B47FF0>
+	void SetDefaultColorAndOpacity(struct FSlateColor InColorAndOpacity); // Function UMG.RichTextBlock.SetDefaultColorAndOpacity(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B47F00>
 	void SetAutoWrapText(char InAutoTextWrap); // Function UMG.RichTextBlock.SetAutoWrapText(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B47DF0>
 	struct FText GetText(); // Function UMG.RichTextBlock.GetText(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B479C0>
-	struct Unknown GetDecoratorByClass(struct Unknown* DecoratorClass); // Function UMG.RichTextBlock.GetDecoratorByClass(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B478A0>
+	struct URichTextBlockDecorator GetDecoratorByClass(struct UClass* DecoratorClass); // Function UMG.RichTextBlock.GetDecoratorByClass(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B478A0>
 	void ClearAllDefaultStyleOverrides(); // Function UMG.RichTextBlock.ClearAllDefaultStyleOverrides(Final|Native|Public) // <Game_BE.exe+0x3B47760>
 };
 
@@ -1243,7 +1243,7 @@ class URichTextBlockImageDecorator : public URichTextBlockDecorator {
 
 public:
 
-	struct Unknown ImageSet; // 0x28 (8)
+	struct UDataTable ImageSet; // 0x28 (8)
 };
 
 // Class UMG.SafeZone
@@ -1265,10 +1265,10 @@ class USafeZoneSlot : public UPanelSlot {
 public:
 
 	char bIsTitleSafe : 0; // 0x38 (1)
-	struct Unknown SafeAreaScale; // 0x3C (16)
+	struct FMargin SafeAreaScale; // 0x3C (16)
 	char HAlign; // 0x4C (1)
 	char VAlign; // 0x4D (1)
-	struct Unknown Padding; // 0x50 (16)
+	struct FMargin Padding; // 0x50 (16)
 };
 
 // Class UMG.ScaleBox
@@ -1292,12 +1292,12 @@ class UScaleBoxSlot : public UPanelSlot {
 
 public:
 
-	struct Unknown Padding; // 0x38 (16)
+	struct FMargin Padding; // 0x38 (16)
 	char HorizontalAlignment; // 0x48 (1)
 	char VerticalAlignment; // 0x49 (1)
 
 	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.ScaleBoxSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B379D0>
-	void SetPadding(struct Unknown InPadding); // Function UMG.ScaleBoxSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B48B50>
+	void SetPadding(struct FMargin InPadding); // Function UMG.ScaleBoxSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B48B50>
 	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.ScaleBoxSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B36D60>
 };
 
@@ -1306,13 +1306,13 @@ class UScrollBar : public UWidget {
 
 public:
 
-	struct Unknown WidgetStyle; // 0x108 (1232)
-	struct Unknown Style; // 0x5D8 (8)
+	struct FScrollBarStyle WidgetStyle; // 0x108 (1232)
+	struct USlateWidgetStyleAsset Style; // 0x5D8 (8)
 	char bAlwaysShowScrollbar : 0; // 0x5E0 (1)
 	char bAlwaysShowScrollbarTrack : 0; // 0x5E1 (1)
 	char Orientation; // 0x5E2 (1)
-	struct Unknown Thickness; // 0x5E4 (8)
-	struct Unknown Padding; // 0x5EC (16)
+	struct FVector2D Thickness; // 0x5E4 (8)
+	struct FMargin Padding; // 0x5EC (16)
 
 	void SetState(float InOffsetFraction, float InThumbSizeFraction); // Function UMG.ScrollBar.SetState(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B49150>
 };
@@ -1322,37 +1322,37 @@ class UScrollBox : public UPanelWidget {
 
 public:
 
-	struct Unknown WidgetStyle; // 0x120 (552)
-	struct Unknown WidgetBarStyle; // 0x348 (1232)
-	struct Unknown Style; // 0x818 (8)
-	struct Unknown BarStyle; // 0x820 (8)
+	struct FScrollBoxStyle WidgetStyle; // 0x120 (552)
+	struct FScrollBarStyle WidgetBarStyle; // 0x348 (1232)
+	struct USlateWidgetStyleAsset Style; // 0x818 (8)
+	struct USlateWidgetStyleAsset BarStyle; // 0x820 (8)
 	char Orientation; // 0x828 (1)
-	enum class Unknow ScrollBarVisibility; // 0x829 (1)
-	enum class Unknow ConsumeMouseWheel; // 0x82A (1)
-	struct Unknown ScrollbarThickness; // 0x82C (8)
-	struct Unknown ScrollbarPadding; // 0x834 (16)
+	enum class ESlateVisibility ScrollBarVisibility; // 0x829 (1)
+	enum class EConsumeMouseWheel ConsumeMouseWheel; // 0x82A (1)
+	struct FVector2D ScrollbarThickness; // 0x82C (8)
+	struct FMargin ScrollbarPadding; // 0x834 (16)
 	char AlwaysShowScrollbar : 0; // 0x844 (1)
 	char AlwaysShowScrollbarTrack : 0; // 0x845 (1)
 	char AllowOverscroll : 0; // 0x846 (1)
 	char bAnimateWheelScrolling : 0; // 0x847 (1)
-	enum class Unknow NavigationDestination; // 0x848 (1)
+	enum class EDescendantScrollDestination NavigationDestination; // 0x848 (1)
 	float NavigationScrollPadding; // 0x84C (4)
-	enum class Unknow ScrollWhenFocusChanges; // 0x850 (1)
+	enum class EScrollWhenFocusChanges ScrollWhenFocusChanges; // 0x850 (1)
 	char bAllowRightClickDragScrolling : 0; // 0x851 (1)
 	float WheelScrollMultiplier; // 0x854 (4)
 	struct FMulticastInlineDelegate OnUserScrolled; // 0x858 (16)
 
 	void SetWheelScrollMultiplier(float NewWheelScrollMultiplier); // Function UMG.ScrollBox.SetWheelScrollMultiplier(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B495F0>
 	void SetScrollOffset(float NewScrollOffset); // Function UMG.ScrollBox.SetScrollOffset(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B48E30>
-	void SetScrollbarVisibility(enum class Unknow NewScrollBarVisibility); // Function UMG.ScrollBox.SetScrollbarVisibility(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B48DB0>
-	void SetScrollbarThickness(struct Unknown& NewScrollbarThickness); // Function UMG.ScrollBox.SetScrollbarThickness(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B48F50>
-	void SetScrollbarPadding(struct Unknown& NewScrollbarPadding); // Function UMG.ScrollBox.SetScrollbarPadding(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B48EB0>
+	void SetScrollbarVisibility(enum class ESlateVisibility NewScrollBarVisibility); // Function UMG.ScrollBox.SetScrollbarVisibility(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B48DB0>
+	void SetScrollbarThickness(struct FVector2D& NewScrollbarThickness); // Function UMG.ScrollBox.SetScrollbarThickness(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B48F50>
+	void SetScrollbarPadding(struct FMargin& NewScrollbarPadding); // Function UMG.ScrollBox.SetScrollbarPadding(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B48EB0>
 	void SetOrientation(char NewOrientation); // Function UMG.ScrollBox.SetOrientation(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B48AD0>
-	void SetConsumeMouseWheel(enum class Unknow NewConsumeMouseWheel); // Function UMG.ScrollBox.SetConsumeMouseWheel(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B47E80>
+	void SetConsumeMouseWheel(enum class EConsumeMouseWheel NewConsumeMouseWheel); // Function UMG.ScrollBox.SetConsumeMouseWheel(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B47E80>
 	void SetAnimateWheelScrolling(char bShouldAnimateWheelScrolling); // Function UMG.ScrollBox.SetAnimateWheelScrolling(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B47D60>
 	void SetAlwaysShowScrollbar(char NewAlwaysShowScrollbar); // Function UMG.ScrollBox.SetAlwaysShowScrollbar(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B47CD0>
 	void SetAllowOverscroll(char NewAllowOverscroll); // Function UMG.ScrollBox.SetAllowOverscroll(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B47C40>
-	void ScrollWidgetIntoView(struct Unknown WidgetToFind, char AnimateScroll, enum class Unknow ScrollDestination, float Padding); // Function UMG.ScrollBox.ScrollWidgetIntoView(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B47AF0>
+	void ScrollWidgetIntoView(struct UWidget WidgetToFind, char AnimateScroll, enum class EDescendantScrollDestination ScrollDestination, float Padding); // Function UMG.ScrollBox.ScrollWidgetIntoView(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B47AF0>
 	void ScrollToStart(); // Function UMG.ScrollBox.ScrollToStart(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B47AD0>
 	void ScrollToEnd(); // Function UMG.ScrollBox.ScrollToEnd(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B47AB0>
 	float GetViewOffsetFraction(); // Function UMG.ScrollBox.GetViewOffsetFraction(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B47A60>
@@ -1366,12 +1366,12 @@ class UScrollBoxSlot : public UPanelSlot {
 
 public:
 
-	struct Unknown Padding; // 0x38 (16)
+	struct FMargin Padding; // 0x38 (16)
 	char HorizontalAlignment; // 0x48 (1)
 	char VerticalAlignment; // 0x49 (1)
 
 	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.ScrollBoxSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B49570>
-	void SetPadding(struct Unknown InPadding); // Function UMG.ScrollBoxSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B48BE0>
+	void SetPadding(struct FMargin InPadding); // Function UMG.ScrollBoxSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B48BE0>
 	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.ScrollBoxSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B485B0>
 };
 
@@ -1420,12 +1420,12 @@ class USizeBoxSlot : public UPanelSlot {
 
 public:
 
-	struct Unknown Padding; // 0x38 (16)
+	struct FMargin Padding; // 0x38 (16)
 	char HorizontalAlignment; // 0x58 (1)
 	char VerticalAlignment; // 0x59 (1)
 
 	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.SizeBoxSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4D660>
-	void SetPadding(struct Unknown InPadding); // Function UMG.SizeBoxSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4D2D0>
+	void SetPadding(struct FMargin InPadding); // Function UMG.SizeBoxSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4D2D0>
 	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.SizeBoxSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4CD30>
 };
 
@@ -1434,11 +1434,11 @@ class USlateVectorArtData : public Object {
 
 public:
 
-	struct TArray<Unknown> VertexData; // 0x28 (16)
-	struct TArray<Unknown> IndexData; // 0x38 (16)
-	struct Unknown Material; // 0x48 (8)
-	struct Unknown ExtentMin; // 0x50 (8)
-	struct Unknown ExtentMax; // 0x58 (8)
+	struct TArray<struct FSlateMeshVertex> VertexData; // 0x28 (16)
+	struct TArray<uint32_t> IndexData; // 0x38 (16)
+	struct UMaterialInterface Material; // 0x48 (8)
+	struct FVector2D ExtentMin; // 0x50 (8)
+	struct FVector2D ExtentMax; // 0x58 (8)
 };
 
 // Class UMG.SlateAccessibleWidgetData
@@ -1447,8 +1447,8 @@ class USlateAccessibleWidgetData : public Object {
 public:
 
 	char bCanChildrenBeAccessible : 0; // 0x28 (1)
-	enum class Unknow AccessibleBehavior; // 0x29 (1)
-	enum class Unknow AccessibleSummaryBehavior; // 0x2A (1)
+	enum class ESlateAccessibleBehavior AccessibleBehavior; // 0x29 (1)
+	enum class ESlateAccessibleBehavior AccessibleSummaryBehavior; // 0x2A (1)
 	struct FText AccessibleText; // 0x30 (24)
 	struct FDelegate AccessibleTextDelegate; // 0x48 (16)
 	struct FText AccessibleSummaryText; // 0x58 (24)
@@ -1464,10 +1464,10 @@ public:
 	struct FDelegate ValueDelegate; // 0x10C (16)
 	float MinValue; // 0x11C (4)
 	float MaxValue; // 0x120 (4)
-	struct Unknown WidgetStyle; // 0x128 (832)
+	struct FSliderStyle WidgetStyle; // 0x128 (832)
 	char Orientation; // 0x468 (1)
-	struct Unknown SliderBarColor; // 0x46C (16)
-	struct Unknown SliderHandleColor; // 0x47C (16)
+	struct FLinearColor SliderBarColor; // 0x46C (16)
+	struct FLinearColor SliderHandleColor; // 0x47C (16)
 	char IndentHandle : 0; // 0x48C (1)
 	char Locked : 0; // 0x48D (1)
 	char MouseUsesStep : 0; // 0x48E (1)
@@ -1482,8 +1482,8 @@ public:
 
 	void SetValue(float InValue); // Function UMG.Slider.SetValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4D560>
 	void SetStepSize(float InValue); // Function UMG.Slider.SetStepSize(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4D4E0>
-	void SetSliderHandleColor(struct Unknown InValue); // Function UMG.Slider.SetSliderHandleColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B4D460>
-	void SetSliderBarColor(struct Unknown InValue); // Function UMG.Slider.SetSliderBarColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B4D3E0>
+	void SetSliderHandleColor(struct FLinearColor InValue); // Function UMG.Slider.SetSliderHandleColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B4D460>
+	void SetSliderBarColor(struct FLinearColor InValue); // Function UMG.Slider.SetSliderBarColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B4D3E0>
 	void SetMinValue(float InValue); // Function UMG.Slider.SetMinValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4D1D0>
 	void SetMaxValue(float InValue); // Function UMG.Slider.SetMaxValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4CFD0>
 	void SetLocked(char InValue); // Function UMG.Slider.SetLocked(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4CE40>
@@ -1497,9 +1497,9 @@ class USpacer : public UWidget {
 
 public:
 
-	struct Unknown Size; // 0x108 (8)
+	struct FVector2D Size; // 0x108 (8)
 
-	void SetSize(struct Unknown InSize); // Function UMG.Spacer.SetSize(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B4D360>
+	void SetSize(struct FVector2D InSize); // Function UMG.Spacer.SetSize(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B4D360>
 };
 
 // Class UMG.SpinBox
@@ -1509,19 +1509,19 @@ public:
 
 	float Value; // 0x108 (4)
 	struct FDelegate ValueDelegate; // 0x10C (16)
-	struct Unknown WidgetStyle; // 0x120 (744)
-	struct Unknown Style; // 0x408 (8)
+	struct FSpinBoxStyle WidgetStyle; // 0x120 (744)
+	struct USlateWidgetStyleAsset Style; // 0x408 (8)
 	int32_t MinFractionalDigits; // 0x410 (4)
 	int32_t MaxFractionalDigits; // 0x414 (4)
 	char bAlwaysUsesDeltaSnap : 0; // 0x418 (1)
 	float Delta; // 0x41C (4)
 	float SliderExponent; // 0x420 (4)
-	struct Unknown Font; // 0x428 (80)
+	struct FSlateFontInfo Font; // 0x428 (80)
 	char Justification; // 0x478 (1)
 	float MinDesiredWidth; // 0x47C (4)
 	char ClearKeyboardFocusOnCommit : 0; // 0x480 (1)
 	char SelectAllTextOnCommit : 0; // 0x481 (1)
-	struct Unknown ForegroundColor; // 0x488 (40)
+	struct FSlateColor ForegroundColor; // 0x488 (40)
 	struct FMulticastInlineDelegate OnValueChanged; // 0x4B0 (16)
 	struct FMulticastInlineDelegate OnValueCommitted; // 0x4C0 (16)
 	struct FMulticastInlineDelegate OnBeginSliderMovement; // 0x4D0 (16)
@@ -1542,7 +1542,7 @@ public:
 	void SetMaxValue(float NewValue); // Function UMG.SpinBox.SetMaxValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4D050>
 	void SetMaxSliderValue(float NewValue); // Function UMG.SpinBox.SetMaxSliderValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4CF50>
 	void SetMaxFractionalDigits(int32_t NewValue); // Function UMG.SpinBox.SetMaxFractionalDigits(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4CED0>
-	void SetForegroundColor(struct Unknown InForegroundColor); // Function UMG.SpinBox.SetForegroundColor(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4CC40>
+	void SetForegroundColor(struct FSlateColor InForegroundColor); // Function UMG.SpinBox.SetForegroundColor(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4CC40>
 	void SetDelta(float NewValue); // Function UMG.SpinBox.SetDelta(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4CBC0>
 	void SetAlwaysUsesDeltaSnap(char bNewValue); // Function UMG.SpinBox.SetAlwaysUsesDeltaSnap(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B4CB30>
 	void OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, char CommitMethod); // DelegateFunction UMG.SpinBox.OnSpinBoxValueCommittedEvent__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B80160>
@@ -1570,12 +1570,12 @@ public:
 
 	struct FText Text; // 0x128 (24)
 	struct FDelegate TextDelegate; // 0x140 (16)
-	struct Unknown ColorAndOpacity; // 0x150 (40)
+	struct FSlateColor ColorAndOpacity; // 0x150 (40)
 	struct FDelegate ColorAndOpacityDelegate; // 0x178 (16)
-	struct Unknown Font; // 0x188 (80)
-	struct Unknown StrikeBrush; // 0x1D8 (136)
-	struct Unknown ShadowOffset; // 0x260 (8)
-	struct Unknown ShadowColorAndOpacity; // 0x268 (16)
+	struct FSlateFontInfo Font; // 0x188 (80)
+	struct FSlateBrush StrikeBrush; // 0x1D8 (136)
+	struct FVector2D ShadowOffset; // 0x260 (8)
+	struct FLinearColor ShadowColorAndOpacity; // 0x268 (16)
 	struct FDelegate ShadowColorAndOpacityDelegate; // 0x278 (16)
 	float MinDesiredWidth; // 0x288 (4)
 	char bWrapWithInvalidationPanel : 0; // 0x28C (1)
@@ -1583,17 +1583,17 @@ public:
 	char bSimpleTextMode : 0; // 0x28E (1)
 
 	void SetText(struct FText InText); // Function UMG.TextBlock.SetText(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B563D0>
-	void SetStrikeBrush(struct Unknown InStrikeBrush); // Function UMG.TextBlock.SetStrikeBrush(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B561A0>
-	void SetShadowOffset(struct Unknown InShadowOffset); // Function UMG.TextBlock.SetShadowOffset(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B56090>
-	void SetShadowColorAndOpacity(struct Unknown InShadowColorAndOpacity); // Function UMG.TextBlock.SetShadowColorAndOpacity(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B56010>
+	void SetStrikeBrush(struct FSlateBrush InStrikeBrush); // Function UMG.TextBlock.SetStrikeBrush(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B561A0>
+	void SetShadowOffset(struct FVector2D InShadowOffset); // Function UMG.TextBlock.SetShadowOffset(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B56090>
+	void SetShadowColorAndOpacity(struct FLinearColor InShadowColorAndOpacity); // Function UMG.TextBlock.SetShadowColorAndOpacity(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B56010>
 	void SetOpacity(float InOpacity); // Function UMG.TextBlock.SetOpacity(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B55C70>
 	void SetMinDesiredWidth(float InMinDesiredWidth); // Function UMG.TextBlock.SetMinDesiredWidth(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B55A20>
-	void SetFont(struct Unknown InFontInfo); // Function UMG.TextBlock.SetFont(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B55440>
-	void SetColorAndOpacity(struct Unknown InColorAndOpacity); // Function UMG.TextBlock.SetColorAndOpacity(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B550D0>
+	void SetFont(struct FSlateFontInfo InFontInfo); // Function UMG.TextBlock.SetFont(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B55440>
+	void SetColorAndOpacity(struct FSlateColor InColorAndOpacity); // Function UMG.TextBlock.SetColorAndOpacity(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B550D0>
 	void SetAutoWrapText(char InAutoTextWrap); // Function UMG.TextBlock.SetAutoWrapText(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B55040>
 	struct FText GetText(); // Function UMG.TextBlock.GetText(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B53FE0>
-	struct Unknown GetDynamicOutlineMaterial(); // Function UMG.TextBlock.GetDynamicOutlineMaterial(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B53ED0>
-	struct Unknown GetDynamicFontMaterial(); // Function UMG.TextBlock.GetDynamicFontMaterial(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B53EA0>
+	struct UMaterialInstanceDynamic GetDynamicOutlineMaterial(); // Function UMG.TextBlock.GetDynamicOutlineMaterial(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B53ED0>
+	struct UMaterialInstanceDynamic GetDynamicFontMaterial(); // Function UMG.TextBlock.GetDynamicFontMaterial(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B53EA0>
 };
 
 // Class UMG.Throbber
@@ -1605,8 +1605,8 @@ public:
 	char bAnimateHorizontally : 0; // 0x10C (1)
 	char bAnimateVertically : 0; // 0x10D (1)
 	char bAnimateOpacity : 0; // 0x10E (1)
-	struct Unknown PieceImage; // 0x110 (8)
-	struct Unknown Image; // 0x118 (136)
+	struct USlateBrushAsset PieceImage; // 0x110 (8)
+	struct FSlateBrush Image; // 0x118 (136)
 
 	void SetNumberOfPieces(int32_t InNumberOfPieces); // Function UMG.Throbber.SetNumberOfPieces(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B55BF0>
 	void SetAnimateVertically(char bInAnimateVertically); // Function UMG.Throbber.SetAnimateVertically(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B54FB0>
@@ -1621,7 +1621,7 @@ public:
 
 	float EntryHeight; // 0x368 (4)
 	float EntryWidth; // 0x36C (4)
-	enum class Unknow TileAlignment; // 0x370 (1)
+	enum class EListItemAlignment TileAlignment; // 0x370 (1)
 	char bWrapHorizontalNavigation : 0; // 0x371 (1)
 
 	void SetEntryWidth(float NewWidth); // Function UMG.TileView.SetEntryWidth(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B553C0>
@@ -1636,7 +1636,7 @@ public:
 	struct FDelegate BP_OnGetItemChildren; // 0x378 (16)
 	struct FMulticastInlineDelegate BP_OnItemExpansionChanged; // 0x388 (16)
 
-	void SetItemExpansion(struct Unknown Item, char bExpandItem); // Function UMG.TreeView.SetItemExpansion(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B557D0>
+	void SetItemExpansion(struct Object Item, char bExpandItem); // Function UMG.TreeView.SetItemExpansion(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B557D0>
 	void ExpandAll(); // Function UMG.TreeView.ExpandAll(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B53D60>
 	void CollapseAll(); // Function UMG.TreeView.CollapseAll(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B53D40>
 };
@@ -1646,7 +1646,7 @@ class UUMGSequencePlayer : public Object {
 
 public:
 
-	struct Unknown Animation; // 0x408 (8)
+	struct UWidgetAnimation Animation; // 0x408 (8)
 
 	void SetUserTag(struct FName InUserTag); // Function UMG.UMGSequencePlayer.SetUserTag(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B564B0>
 	struct FName GetUserTag(); // Function UMG.UMGSequencePlayer.GetUserTag(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B54120>
@@ -1657,14 +1657,14 @@ class UUniformGridPanel : public UPanelWidget {
 
 public:
 
-	struct Unknown SlotPadding; // 0x120 (16)
+	struct FMargin SlotPadding; // 0x120 (16)
 	float MinDesiredSlotWidth; // 0x130 (4)
 	float MinDesiredSlotHeight; // 0x134 (4)
 
-	void SetSlotPadding(struct Unknown InSlotPadding); // Function UMG.UniformGridPanel.SetSlotPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B56110>
+	void SetSlotPadding(struct FMargin InSlotPadding); // Function UMG.UniformGridPanel.SetSlotPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B56110>
 	void SetMinDesiredSlotWidth(float InMinDesiredSlotWidth); // Function UMG.UniformGridPanel.SetMinDesiredSlotWidth(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B559A0>
 	void SetMinDesiredSlotHeight(float InMinDesiredSlotHeight); // Function UMG.UniformGridPanel.SetMinDesiredSlotHeight(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B55920>
-	struct Unknown AddChildToUniformGrid(struct Unknown Content, int32_t InRow, int32_t InColumn); // Function UMG.UniformGridPanel.AddChildToUniformGrid(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B537E0>
+	struct UUniformGridSlot AddChildToUniformGrid(struct UWidget Content, int32_t InRow, int32_t InColumn); // Function UMG.UniformGridPanel.AddChildToUniformGrid(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B537E0>
 };
 
 // Class UMG.UniformGridSlot
@@ -1688,14 +1688,14 @@ class UVerticalBoxSlot : public UPanelSlot {
 
 public:
 
-	struct Unknown Size; // 0x38 (8)
-	struct Unknown Padding; // 0x40 (16)
+	struct FSlateChildSize Size; // 0x38 (8)
+	struct FMargin Padding; // 0x40 (16)
 	char HorizontalAlignment; // 0x58 (1)
 	char VerticalAlignment; // 0x59 (1)
 
 	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.VerticalBoxSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B59B50>
-	void SetSize(struct Unknown InSize); // Function UMG.VerticalBoxSlot.SetSize(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B598F0>
-	void SetPadding(struct Unknown InPadding); // Function UMG.VerticalBoxSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B59480>
+	void SetSize(struct FSlateChildSize InSize); // Function UMG.VerticalBoxSlot.SetSize(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B598F0>
+	void SetPadding(struct FMargin InPadding); // Function UMG.VerticalBoxSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B59480>
 	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.VerticalBoxSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B58F00>
 };
 
@@ -1704,14 +1704,14 @@ class UViewport : public UContentWidget {
 
 public:
 
-	struct Unknown BackgroundColor; // 0x120 (16)
+	struct FLinearColor BackgroundColor; // 0x120 (16)
 
-	struct Unknown Spawn(struct Unknown* ActorClass); // Function UMG.Viewport.Spawn(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B59D70>
-	void SetViewRotation(struct Unknown Rotation); // Function UMG.Viewport.SetViewRotation(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B59C60>
-	void SetViewLocation(struct Unknown Location); // Function UMG.Viewport.SetViewLocation(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B59BD0>
-	struct Unknown GetViewRotation(); // Function UMG.Viewport.GetViewRotation(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B58950>
-	struct Unknown GetViewportWorld(); // Function UMG.Viewport.GetViewportWorld(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B58990>
-	struct Unknown GetViewLocation(); // Function UMG.Viewport.GetViewLocation(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B58910>
+	struct UActor Spawn(struct UClass* ActorClass); // Function UMG.Viewport.Spawn(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B59D70>
+	void SetViewRotation(struct FRotator Rotation); // Function UMG.Viewport.SetViewRotation(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B59C60>
+	void SetViewLocation(struct FVector Location); // Function UMG.Viewport.SetViewLocation(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B59BD0>
+	struct FRotator GetViewRotation(); // Function UMG.Viewport.GetViewRotation(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B58950>
+	struct UWorld GetViewportWorld(); // Function UMG.Viewport.GetViewportWorld(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B58990>
+	struct FVector GetViewLocation(); // Function UMG.Viewport.GetViewLocation(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B58910>
 };
 
 // Class UMG.WidgetAnimation
@@ -1719,19 +1719,19 @@ class UWidgetAnimation : public UMovieSceneSequence {
 
 public:
 
-	struct Unknown MovieScene; // 0x348 (8)
-	struct TArray<Unknown> AnimationBindings; // 0x350 (16)
+	struct UMovieScene MovieScene; // 0x348 (8)
+	struct TArray<struct FWidgetAnimationBinding> AnimationBindings; // 0x350 (16)
 	char bLegacyFinishOnStop : 0; // 0x360 (1)
 	struct FString DisplayLabel; // 0x368 (16)
 
-	void UnbindFromAnimationStarted(struct Unknown Widget, struct FDelegate Delegate); // Function UMG.WidgetAnimation.UnbindFromAnimationStarted(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B602E0>
-	void UnbindFromAnimationFinished(struct Unknown Widget, struct FDelegate Delegate); // Function UMG.WidgetAnimation.UnbindFromAnimationFinished(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B60200>
-	void UnbindAllFromAnimationStarted(struct Unknown Widget); // Function UMG.WidgetAnimation.UnbindAllFromAnimationStarted(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B60180>
-	void UnbindAllFromAnimationFinished(struct Unknown Widget); // Function UMG.WidgetAnimation.UnbindAllFromAnimationFinished(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B60100>
+	void UnbindFromAnimationStarted(struct UUserWidget Widget, struct FDelegate Delegate); // Function UMG.WidgetAnimation.UnbindFromAnimationStarted(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B602E0>
+	void UnbindFromAnimationFinished(struct UUserWidget Widget, struct FDelegate Delegate); // Function UMG.WidgetAnimation.UnbindFromAnimationFinished(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B60200>
+	void UnbindAllFromAnimationStarted(struct UUserWidget Widget); // Function UMG.WidgetAnimation.UnbindAllFromAnimationStarted(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B60180>
+	void UnbindAllFromAnimationFinished(struct UUserWidget Widget); // Function UMG.WidgetAnimation.UnbindAllFromAnimationFinished(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B60100>
 	float GetStartTime(); // Function UMG.WidgetAnimation.GetStartTime(Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B5EBC0>
 	float GetEndTime(); // Function UMG.WidgetAnimation.GetEndTime(Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B5E370>
-	void BindToAnimationStarted(struct Unknown Widget, struct FDelegate Delegate); // Function UMG.WidgetAnimation.BindToAnimationStarted(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B5C130>
-	void BindToAnimationFinished(struct Unknown Widget, struct FDelegate Delegate); // Function UMG.WidgetAnimation.BindToAnimationFinished(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B5C050>
+	void BindToAnimationStarted(struct UUserWidget Widget, struct FDelegate Delegate); // Function UMG.WidgetAnimation.BindToAnimationStarted(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B5C130>
+	void BindToAnimationFinished(struct UUserWidget Widget, struct FDelegate Delegate); // Function UMG.WidgetAnimation.BindToAnimationFinished(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B5C050>
 };
 
 // Class UMG.WidgetAnimationDelegateBinding
@@ -1739,7 +1739,7 @@ class UWidgetAnimationDelegateBinding : public UDynamicBlueprintBinding {
 
 public:
 
-	struct TArray<Unknown> WidgetAnimationDelegateBindings; // 0x28 (16)
+	struct TArray<struct FBlueprintWidgetAnimationDelegateBinding> WidgetAnimationDelegateBindings; // 0x28 (16)
 };
 
 // Class UMG.WidgetAnimationPlayCallbackProxy
@@ -1749,8 +1749,8 @@ public:
 
 	struct FMulticastInlineDelegate Finished; // 0x28 (16)
 
-	struct Unknown CreatePlayAnimationTimeRangeProxyObject(struct Unknown& Result, struct Unknown Widget, struct Unknown InAnimation, float StartAtTime, float EndAtTime, int32_t NumLoopsToPlay, char PlayMode, float PlaybackSpeed); // Function UMG.WidgetAnimationPlayCallbackProxy.CreatePlayAnimationTimeRangeProxyObject(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B5C970>
-	struct Unknown CreatePlayAnimationProxyObject(struct Unknown& Result, struct Unknown Widget, struct Unknown InAnimation, float StartAtTime, int32_t NumLoopsToPlay, char PlayMode, float PlaybackSpeed); // Function UMG.WidgetAnimationPlayCallbackProxy.CreatePlayAnimationProxyObject(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B5C770>
+	struct UWidgetAnimationPlayCallbackProxy CreatePlayAnimationTimeRangeProxyObject(struct UUMGSequencePlayer& Result, struct UUserWidget Widget, struct UWidgetAnimation InAnimation, float StartAtTime, float EndAtTime, int32_t NumLoopsToPlay, char PlayMode, float PlaybackSpeed); // Function UMG.WidgetAnimationPlayCallbackProxy.CreatePlayAnimationTimeRangeProxyObject(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B5C970>
+	struct UWidgetAnimationPlayCallbackProxy CreatePlayAnimationProxyObject(struct UUMGSequencePlayer& Result, struct UUserWidget Widget, struct UWidgetAnimation InAnimation, float StartAtTime, int32_t NumLoopsToPlay, char PlayMode, float PlaybackSpeed); // Function UMG.WidgetAnimationPlayCallbackProxy.CreatePlayAnimationProxyObject(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B5C770>
 };
 
 // Class UMG.WidgetBlueprintGeneratedClass
@@ -1758,18 +1758,18 @@ class UWidgetBlueprintGeneratedClass : public UBlueprintGeneratedClass {
 
 public:
 
-	struct Unknown WidgetTree; // 0x3C8 (8)
+	struct UWidgetTree WidgetTree; // 0x3C8 (8)
 	char bAllowTemplate : 0; // 0x3D0 (1)
 	char bAllowDynamicCreation : 0; // 0x3D0 (1)
 	char bValidTemplate : 0; // 0x3D0 (1)
 	char bTemplateInitialized : 0; // 0x3D0 (1)
 	char bCookedTemplate : 0; // 0x3D0 (1)
 	char bClassRequiresNativeTick : 0; // 0x3D0 (1)
-	struct TArray<Unknown> Bindings; // 0x3D8 (16)
-	struct TArray<Unknown> Animations; // 0x3E8 (16)
-	struct TArray<Unknown> NamedSlots; // 0x3F8 (16)
-	struct Unknown TemplateAsset; // 0x408 (40)
-	struct Unknown Template; // 0x430 (8)
+	struct TArray<struct FDelegateRuntimeBinding> Bindings; // 0x3D8 (16)
+	struct TArray<struct UWidgetAnimation> Animations; // 0x3E8 (16)
+	struct TArray<struct FName> NamedSlots; // 0x3F8 (16)
+	struct TSoftObjectPtr<UUserWidget> TemplateAsset; // 0x408 (40)
+	struct UUserWidget Template; // 0x430 (8)
 };
 
 // Class UMG.WidgetComponent
@@ -1777,78 +1777,78 @@ class UWidgetComponent : public UMeshComponent {
 
 public:
 
-	enum class Unknow Space; // 0x4D8 (1)
-	enum class Unknow TimingPolicy; // 0x4D9 (1)
-	struct Unknown* WidgetClass; // 0x4E0 (8)
-	struct Unknown DrawSize; // 0x4E8 (8)
+	enum class EWidgetSpace Space; // 0x4D8 (1)
+	enum class EWidgetTimingPolicy TimingPolicy; // 0x4D9 (1)
+	struct UClass* WidgetClass; // 0x4E0 (8)
+	struct FIntPoint DrawSize; // 0x4E8 (8)
 	char bManuallyRedraw : 0; // 0x4F0 (1)
 	char bRedrawRequested : 0; // 0x4F1 (1)
 	float RedrawTime; // 0x4F4 (4)
-	struct Unknown CurrentDrawSize; // 0x500 (8)
+	struct FIntPoint CurrentDrawSize; // 0x500 (8)
 	char bDrawAtDesiredSize : 0; // 0x508 (1)
-	struct Unknown Pivot; // 0x50C (8)
+	struct FVector2D Pivot; // 0x50C (8)
 	char bReceiveHardwareInput : 0; // 0x514 (1)
 	char bWindowFocusable : 0; // 0x515 (1)
-	enum class Unknow WindowVisibility; // 0x516 (1)
+	enum class EWindowVisibility WindowVisibility; // 0x516 (1)
 	char bApplyGammaCorrection : 0; // 0x517 (1)
-	struct Unknown OwnerPlayer; // 0x518 (8)
-	struct Unknown BackgroundColor; // 0x520 (16)
-	struct Unknown TintColorAndOpacity; // 0x530 (16)
+	struct ULocalPlayer OwnerPlayer; // 0x518 (8)
+	struct FLinearColor BackgroundColor; // 0x520 (16)
+	struct FLinearColor TintColorAndOpacity; // 0x530 (16)
 	float OpacityFromTexture; // 0x540 (4)
-	enum class Unknow BlendMode; // 0x544 (1)
+	enum class EWidgetBlendMode BlendMode; // 0x544 (1)
 	char bIsTwoSided : 0; // 0x545 (1)
 	char TickWhenOffscreen : 0; // 0x546 (1)
-	struct Unknown Widget; // 0x548 (8)
-	struct Unknown BodySetup; // 0x570 (8)
-	struct Unknown TranslucentMaterial; // 0x578 (8)
-	struct Unknown TranslucentMaterial_OneSided; // 0x580 (8)
-	struct Unknown OpaqueMaterial; // 0x588 (8)
-	struct Unknown OpaqueMaterial_OneSided; // 0x590 (8)
-	struct Unknown MaskedMaterial; // 0x598 (8)
-	struct Unknown MaskedMaterial_OneSided; // 0x5A0 (8)
-	struct Unknown RenderTarget; // 0x5A8 (8)
-	struct Unknown MaterialInstance; // 0x5B0 (8)
+	struct UUserWidget Widget; // 0x548 (8)
+	struct UBodySetup BodySetup; // 0x570 (8)
+	struct UMaterialInterface TranslucentMaterial; // 0x578 (8)
+	struct UMaterialInterface TranslucentMaterial_OneSided; // 0x580 (8)
+	struct UMaterialInterface OpaqueMaterial; // 0x588 (8)
+	struct UMaterialInterface OpaqueMaterial_OneSided; // 0x590 (8)
+	struct UMaterialInterface MaskedMaterial; // 0x598 (8)
+	struct UMaterialInterface MaskedMaterial_OneSided; // 0x5A0 (8)
+	struct UTextureRenderTarget2D RenderTarget; // 0x5A8 (8)
+	struct UMaterialInstanceDynamic MaterialInstance; // 0x5B0 (8)
 	char bAddedToScreen : 0; // 0x5B8 (1)
 	char bEditTimeUsable : 0; // 0x5B9 (1)
 	struct FName SharedLayerName; // 0x5BC (8)
 	int32_t LayerZOrder; // 0x5C4 (4)
-	enum class Unknow GeometryMode; // 0x5C8 (1)
+	enum class EWidgetGeometryMode GeometryMode; // 0x5C8 (1)
 	float CylinderArcAngle; // 0x5CC (4)
 
-	void SetWindowVisibility(enum class Unknow InVisibility); // Function UMG.WidgetComponent.SetWindowVisibility(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B63F00>
+	void SetWindowVisibility(enum class EWindowVisibility InVisibility); // Function UMG.WidgetComponent.SetWindowVisibility(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B63F00>
 	void SetWindowFocusable(char bInWindowFocusable); // Function UMG.WidgetComponent.SetWindowFocusable(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B63E70>
-	void SetWidgetSpace(enum class Unknow NewSpace); // Function UMG.WidgetComponent.SetWidgetSpace(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B63DF0>
-	void SetWidget(struct Unknown Widget); // Function UMG.WidgetComponent.SetWidget(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B63D60>
+	void SetWidgetSpace(enum class EWidgetSpace NewSpace); // Function UMG.WidgetComponent.SetWidgetSpace(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B63DF0>
+	void SetWidget(struct UUserWidget Widget); // Function UMG.WidgetComponent.SetWidget(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B63D60>
 	void SetTwoSided(char bWantTwoSided); // Function UMG.WidgetComponent.SetTwoSided(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B63CD0>
-	void SetTintColorAndOpacity(struct Unknown NewTintColorAndOpacity); // Function UMG.WidgetComponent.SetTintColorAndOpacity(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B63C50>
+	void SetTintColorAndOpacity(struct FLinearColor NewTintColorAndOpacity); // Function UMG.WidgetComponent.SetTintColorAndOpacity(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B63C50>
 	void SetTickWhenOffscreen(char bWantTickWhenOffscreen); // Function UMG.WidgetComponent.SetTickWhenOffscreen(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B63BD0>
 	void SetRedrawTime(float InRedrawTime); // Function UMG.WidgetComponent.SetRedrawTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B63B50>
-	void SetPivot(struct Unknown& InPivot); // Function UMG.WidgetComponent.SetPivot(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B63AC0>
-	void SetOwnerPlayer(struct Unknown LocalPlayer); // Function UMG.WidgetComponent.SetOwnerPlayer(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B63A40>
+	void SetPivot(struct FVector2D& InPivot); // Function UMG.WidgetComponent.SetPivot(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B63AC0>
+	void SetOwnerPlayer(struct ULocalPlayer LocalPlayer); // Function UMG.WidgetComponent.SetOwnerPlayer(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B63A40>
 	void SetManuallyRedraw(char bUseManualRedraw); // Function UMG.WidgetComponent.SetManuallyRedraw(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B639B0>
-	void SetGeometryMode(enum class Unknow InGeometryMode); // Function UMG.WidgetComponent.SetGeometryMode(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B63930>
-	void SetDrawSize(struct Unknown Size); // Function UMG.WidgetComponent.SetDrawSize(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B63830>
+	void SetGeometryMode(enum class EWidgetGeometryMode InGeometryMode); // Function UMG.WidgetComponent.SetGeometryMode(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B63930>
+	void SetDrawSize(struct FVector2D Size); // Function UMG.WidgetComponent.SetDrawSize(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B63830>
 	void SetDrawAtDesiredSize(char bInDrawAtDesiredSize); // Function UMG.WidgetComponent.SetDrawAtDesiredSize(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B637B0>
 	void SetCylinderArcAngle(float InCylinderArcAngle); // Function UMG.WidgetComponent.SetCylinderArcAngle(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B63730>
-	void SetBackgroundColor(struct Unknown NewBackgroundColor); // Function UMG.WidgetComponent.SetBackgroundColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B635D0>
+	void SetBackgroundColor(struct FLinearColor NewBackgroundColor); // Function UMG.WidgetComponent.SetBackgroundColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B635D0>
 	void RequestRedraw(); // Function UMG.WidgetComponent.RequestRedraw(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B633E0>
-	enum class Unknow GetWindowVisiblility(); // Function UMG.WidgetComponent.GetWindowVisiblility(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62AF0>
+	enum class EWindowVisibility GetWindowVisiblility(); // Function UMG.WidgetComponent.GetWindowVisiblility(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62AF0>
 	char GetWindowFocusable(); // Function UMG.WidgetComponent.GetWindowFocusable(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62AD0>
-	enum class Unknow GetWidgetSpace(); // Function UMG.WidgetComponent.GetWidgetSpace(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62AB0>
-	struct Unknown GetUserWidgetObject(); // Function UMG.WidgetComponent.GetUserWidgetObject(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B628B0>
+	enum class EWidgetSpace GetWidgetSpace(); // Function UMG.WidgetComponent.GetWidgetSpace(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62AB0>
+	struct UUserWidget GetUserWidgetObject(); // Function UMG.WidgetComponent.GetUserWidgetObject(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B628B0>
 	char GetTwoSided(); // Function UMG.WidgetComponent.GetTwoSided(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62890>
 	char GetTickWhenOffscreen(); // Function UMG.WidgetComponent.GetTickWhenOffscreen(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62870>
-	struct Unknown GetRenderTarget(); // Function UMG.WidgetComponent.GetRenderTarget(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x20778E0>
+	struct UTextureRenderTarget2D GetRenderTarget(); // Function UMG.WidgetComponent.GetRenderTarget(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x20778E0>
 	float GetRedrawTime(); // Function UMG.WidgetComponent.GetRedrawTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62850>
-	struct Unknown GetPivot(); // Function UMG.WidgetComponent.GetPivot(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62770>
-	struct Unknown GetOwnerPlayer(); // Function UMG.WidgetComponent.GetOwnerPlayer(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62740>
-	struct Unknown GetMaterialInstance(); // Function UMG.WidgetComponent.GetMaterialInstance(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62520>
+	struct FVector2D GetPivot(); // Function UMG.WidgetComponent.GetPivot(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62770>
+	struct ULocalPlayer GetOwnerPlayer(); // Function UMG.WidgetComponent.GetOwnerPlayer(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62740>
+	struct UMaterialInstanceDynamic GetMaterialInstance(); // Function UMG.WidgetComponent.GetMaterialInstance(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62520>
 	char GetManuallyRedraw(); // Function UMG.WidgetComponent.GetManuallyRedraw(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62500>
-	enum class Unknow GetGeometryMode(); // Function UMG.WidgetComponent.GetGeometryMode(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62430>
-	struct Unknown GetDrawSize(); // Function UMG.WidgetComponent.GetDrawSize(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B623F0>
+	enum class EWidgetGeometryMode GetGeometryMode(); // Function UMG.WidgetComponent.GetGeometryMode(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62430>
+	struct FVector2D GetDrawSize(); // Function UMG.WidgetComponent.GetDrawSize(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B623F0>
 	char GetDrawAtDesiredSize(); // Function UMG.WidgetComponent.GetDrawAtDesiredSize(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x2043430>
 	float GetCylinderArcAngle(); // Function UMG.WidgetComponent.GetCylinderArcAngle(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B623D0>
-	struct Unknown GetCurrentDrawSize(); // Function UMG.WidgetComponent.GetCurrentDrawSize(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62390>
+	struct FVector2D GetCurrentDrawSize(); // Function UMG.WidgetComponent.GetCurrentDrawSize(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62390>
 };
 
 // Class UMG.WidgetInteractionComponent
@@ -1861,34 +1861,34 @@ public:
 	float PointerIndex; // 0x24C (4)
 	char TraceChannel; // 0x250 (1)
 	float InteractionDistance; // 0x254 (4)
-	enum class Unknow InteractionSource; // 0x258 (1)
+	enum class EWidgetInteractionSource InteractionSource; // 0x258 (1)
 	char bEnableHitTesting : 0; // 0x259 (1)
 	char bShowDebug : 0; // 0x25A (1)
-	struct Unknown DebugColor; // 0x25C (16)
-	struct Unknown CustomHitResult; // 0x2E8 (136)
-	struct Unknown LocalHitLocation; // 0x370 (8)
-	struct Unknown LastLocalHitLocation; // 0x378 (8)
-	struct Unknown HoveredWidgetComponent; // 0x380 (8)
-	struct Unknown LastHitResult; // 0x388 (136)
+	struct FLinearColor DebugColor; // 0x25C (16)
+	struct FHitResult CustomHitResult; // 0x2E8 (136)
+	struct FVector2D LocalHitLocation; // 0x370 (8)
+	struct FVector2D LastLocalHitLocation; // 0x378 (8)
+	struct UWidgetComponent HoveredWidgetComponent; // 0x380 (8)
+	struct FHitResult LastHitResult; // 0x388 (136)
 	char bIsHoveredWidgetInteractable : 0; // 0x410 (1)
 	char bIsHoveredWidgetFocusable : 0; // 0x411 (1)
 	char bIsHoveredWidgetHitTestVisible : 0; // 0x412 (1)
 
-	void SetFocus(struct Unknown FocusWidget); // Function UMG.WidgetInteractionComponent.SetFocus(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B638B0>
-	void SetCustomHitResult(struct Unknown& HitResult); // Function UMG.WidgetInteractionComponent.SetCustomHitResult(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B63650>
+	void SetFocus(struct UWidget FocusWidget); // Function UMG.WidgetInteractionComponent.SetFocus(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B638B0>
+	void SetCustomHitResult(struct FHitResult& HitResult); // Function UMG.WidgetInteractionComponent.SetCustomHitResult(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3B63650>
 	char SendKeyChar(struct FString Characters, char bRepeat); // Function UMG.WidgetInteractionComponent.SendKeyChar(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B63480>
 	void ScrollWheel(float ScrollDelta); // Function UMG.WidgetInteractionComponent.ScrollWheel(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B63400>
-	void ReleasePointerKey(struct Unknown Key); // Function UMG.WidgetInteractionComponent.ReleasePointerKey(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B63280>
-	char ReleaseKey(struct Unknown Key); // Function UMG.WidgetInteractionComponent.ReleaseKey(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B63180>
-	void PressPointerKey(struct Unknown Key); // Function UMG.WidgetInteractionComponent.PressPointerKey(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B62DD0>
-	char PressKey(struct Unknown Key, char bRepeat); // Function UMG.WidgetInteractionComponent.PressKey(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B62CA0>
-	char PressAndReleaseKey(struct Unknown Key); // Function UMG.WidgetInteractionComponent.PressAndReleaseKey(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B62BA0>
+	void ReleasePointerKey(struct FKey Key); // Function UMG.WidgetInteractionComponent.ReleasePointerKey(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B63280>
+	char ReleaseKey(struct FKey Key); // Function UMG.WidgetInteractionComponent.ReleaseKey(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B63180>
+	void PressPointerKey(struct FKey Key); // Function UMG.WidgetInteractionComponent.PressPointerKey(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B62DD0>
+	char PressKey(struct FKey Key, char bRepeat); // Function UMG.WidgetInteractionComponent.PressKey(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B62CA0>
+	char PressAndReleaseKey(struct FKey Key); // Function UMG.WidgetInteractionComponent.PressAndReleaseKey(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B62BA0>
 	char IsOverInteractableWidget(); // Function UMG.WidgetInteractionComponent.IsOverInteractableWidget(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62B70>
 	char IsOverHitTestVisibleWidget(); // Function UMG.WidgetInteractionComponent.IsOverHitTestVisibleWidget(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62B40>
 	char IsOverFocusableWidget(); // Function UMG.WidgetInteractionComponent.IsOverFocusableWidget(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62B10>
-	struct Unknown GetLastHitResult(); // Function UMG.WidgetInteractionComponent.GetLastHitResult(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62480>
-	struct Unknown GetHoveredWidgetComponent(); // Function UMG.WidgetInteractionComponent.GetHoveredWidgetComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62450>
-	struct Unknown Get2DHitLocation(); // Function UMG.WidgetInteractionComponent.Get2DHitLocation(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62350>
+	struct FHitResult GetLastHitResult(); // Function UMG.WidgetInteractionComponent.GetLastHitResult(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62480>
+	struct UWidgetComponent GetHoveredWidgetComponent(); // Function UMG.WidgetInteractionComponent.GetHoveredWidgetComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62450>
+	struct FVector2D Get2DHitLocation(); // Function UMG.WidgetInteractionComponent.Get2DHitLocation(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B62350>
 };
 
 // Class UMG.WidgetNavigation
@@ -1896,12 +1896,12 @@ class UWidgetNavigation : public Object {
 
 public:
 
-	struct Unknown Up; // 0x28 (36)
-	struct Unknown Down; // 0x4C (36)
-	struct Unknown Left; // 0x70 (36)
-	struct Unknown Right; // 0x94 (36)
-	struct Unknown Next; // 0xB8 (36)
-	struct Unknown Previous; // 0xDC (36)
+	struct FWidgetNavigationData Up; // 0x28 (36)
+	struct FWidgetNavigationData Down; // 0x4C (36)
+	struct FWidgetNavigationData Left; // 0x70 (36)
+	struct FWidgetNavigationData Right; // 0x94 (36)
+	struct FWidgetNavigationData Next; // 0xB8 (36)
+	struct FWidgetNavigationData Previous; // 0xDC (36)
 };
 
 // Class UMG.WidgetSwitcher
@@ -1912,11 +1912,11 @@ public:
 	int32_t ActiveWidgetIndex; // 0x120 (4)
 
 	void SetActiveWidgetIndex(int32_t Index); // Function UMG.WidgetSwitcher.SetActiveWidgetIndex(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B65C10>
-	void SetActiveWidget(struct Unknown Widget); // Function UMG.WidgetSwitcher.SetActiveWidget(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3EBC0>
-	struct Unknown GetWidgetAtIndex(int32_t Index); // Function UMG.WidgetSwitcher.GetWidgetAtIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B65B80>
+	void SetActiveWidget(struct UWidget Widget); // Function UMG.WidgetSwitcher.SetActiveWidget(Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B3EBC0>
+	struct UWidget GetWidgetAtIndex(int32_t Index); // Function UMG.WidgetSwitcher.GetWidgetAtIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B65B80>
 	int32_t GetNumWidgets(); // Function UMG.WidgetSwitcher.GetNumWidgets(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B65B50>
 	int32_t GetActiveWidgetIndex(); // Function UMG.WidgetSwitcher.GetActiveWidgetIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B65B20>
-	struct Unknown GetActiveWidget(); // Function UMG.WidgetSwitcher.GetActiveWidget(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B65AF0>
+	struct UWidget GetActiveWidget(); // Function UMG.WidgetSwitcher.GetActiveWidget(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3B65AF0>
 };
 
 // Class UMG.WidgetSwitcherSlot
@@ -1924,12 +1924,12 @@ class UWidgetSwitcherSlot : public UPanelSlot {
 
 public:
 
-	struct Unknown Padding; // 0x40 (16)
+	struct FMargin Padding; // 0x40 (16)
 	char HorizontalAlignment; // 0x50 (1)
 	char VerticalAlignment; // 0x51 (1)
 
 	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.WidgetSwitcherSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B66260>
-	void SetPadding(struct Unknown InPadding); // Function UMG.WidgetSwitcherSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B44970>
+	void SetPadding(struct FMargin InPadding); // Function UMG.WidgetSwitcherSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B44970>
 	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.WidgetSwitcherSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B65DB0>
 };
 
@@ -1938,7 +1938,7 @@ class UWidgetTree : public Object {
 
 public:
 
-	struct Unknown RootWidget; // 0x28 (8)
+	struct UWidget RootWidget; // 0x28 (8)
 };
 
 // Class UMG.WindowTitleBarArea
@@ -1950,7 +1950,7 @@ public:
 	char bDoubleClickTogglesFullscreen : 0; // 0x121 (1)
 
 	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.WindowTitleBarArea.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B662E0>
-	void SetPadding(struct Unknown InPadding); // Function UMG.WindowTitleBarArea.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B660B0>
+	void SetPadding(struct FMargin InPadding); // Function UMG.WindowTitleBarArea.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B660B0>
 	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.WindowTitleBarArea.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B65E30>
 };
 
@@ -1959,12 +1959,12 @@ class UWindowTitleBarAreaSlot : public UPanelSlot {
 
 public:
 
-	struct Unknown Padding; // 0x38 (16)
+	struct FMargin Padding; // 0x38 (16)
 	char HorizontalAlignment; // 0x48 (1)
 	char VerticalAlignment; // 0x49 (1)
 
 	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.WindowTitleBarAreaSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B66360>
-	void SetPadding(struct Unknown InPadding); // Function UMG.WindowTitleBarAreaSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B66140>
+	void SetPadding(struct FMargin InPadding); // Function UMG.WindowTitleBarAreaSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B66140>
 	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.WindowTitleBarAreaSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B65EB0>
 };
 
@@ -1973,14 +1973,14 @@ class UWrapBox : public UPanelWidget {
 
 public:
 
-	struct Unknown InnerSlotPadding; // 0x120 (8)
+	struct FVector2D InnerSlotPadding; // 0x120 (8)
 	float WrapWidth; // 0x128 (4)
 	char bExplicitWrapWidth : 0; // 0x12C (1)
 	char HorizontalAlignment; // 0x12D (1)
 
-	void SetInnerSlotPadding(struct Unknown InPadding); // Function UMG.WrapBox.SetInnerSlotPadding(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B66030>
+	void SetInnerSlotPadding(struct FVector2D InPadding); // Function UMG.WrapBox.SetInnerSlotPadding(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x3B66030>
 	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.WrapBox.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B65F30>
-	struct Unknown AddChildToWrapBox(struct Unknown Content); // Function UMG.WrapBox.AddChildToWrapBox(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B65A60>
+	struct UWrapBoxSlot AddChildToWrapBox(struct UWidget Content); // Function UMG.WrapBox.AddChildToWrapBox(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B65A60>
 };
 
 // Class UMG.WrapBoxSlot
@@ -1988,14 +1988,14 @@ class UWrapBoxSlot : public UPanelSlot {
 
 public:
 
-	struct Unknown Padding; // 0x38 (16)
+	struct FMargin Padding; // 0x38 (16)
 	char bFillEmptySpace : 0; // 0x48 (1)
 	float FillSpanWhenLessThan; // 0x4C (4)
 	char HorizontalAlignment; // 0x50 (1)
 	char VerticalAlignment; // 0x51 (1)
 
 	void SetVerticalAlignment(char InVerticalAlignment); // Function UMG.WrapBoxSlot.SetVerticalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B663E0>
-	void SetPadding(struct Unknown InPadding); // Function UMG.WrapBoxSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B661D0>
+	void SetPadding(struct FMargin InPadding); // Function UMG.WrapBoxSlot.SetPadding(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B661D0>
 	void SetHorizontalAlignment(char InHorizontalAlignment); // Function UMG.WrapBoxSlot.SetHorizontalAlignment(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B65FB0>
 	void SetFillSpanWhenLessThan(float InFillSpanWhenLessThan); // Function UMG.WrapBoxSlot.SetFillSpanWhenLessThan(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B65D30>
 	void SetFillEmptySpace(char InbFillEmptySpace); // Function UMG.WrapBoxSlot.SetFillEmptySpace(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3B65CA0>
@@ -2003,9 +2003,9 @@ public:
 
 // ScriptStruct UMG.WidgetTransform
 struct FWidgetTransform {
-	struct Unknown Translation; // 0x0 (8)
-	struct Unknown Scale; // 0x8 (8)
-	struct Unknown Shear; // 0x10 (8)
+	struct FVector2D Translation; // 0x0 (8)
+	struct FVector2D Scale; // 0x8 (8)
+	struct FVector2D Shear; // 0x10 (8)
 	float Angle; // 0x18 (4)
 };
 
@@ -2013,29 +2013,29 @@ struct FWidgetTransform {
 struct FShapedTextOptions {
 	char bOverride_TextShapingMethod : 0; // 0x0 (1)
 	char bOverride_TextFlowDirection : 0; // 0x0 (1)
-	enum class Unknow TextShapingMethod; // 0x1 (1)
-	enum class Unknow TextFlowDirection; // 0x2 (1)
+	enum class ETextShapingMethod TextShapingMethod; // 0x1 (1)
+	enum class ETextFlowDirection TextFlowDirection; // 0x2 (1)
 };
 
 // ScriptStruct UMG.AnimationEventBinding
 struct FAnimationEventBinding {
-	struct Unknown Animation; // 0x0 (8)
+	struct UWidgetAnimation Animation; // 0x0 (8)
 	struct FDelegate Delegate; // 0x8 (16)
-	enum class Unknow AnimationEvent; // 0x18 (1)
+	enum class EWidgetAnimationEvent AnimationEvent; // 0x18 (1)
 	struct FName UserTag; // 0x1C (8)
 };
 
 // ScriptStruct UMG.NamedSlotBinding
 struct FNamedSlotBinding {
 	struct FName Name; // 0x0 (8)
-	struct Unknown Content; // 0x8 (8)
+	struct UWidget Content; // 0x8 (8)
 };
 
 // ScriptStruct UMG.AnchorData
 struct FAnchorData {
-	struct Unknown Offsets; // 0x0 (16)
-	struct Unknown Anchors; // 0x10 (16)
-	struct Unknown Alignment; // 0x20 (8)
+	struct FMargin Offsets; // 0x0 (16)
+	struct FAnchors Anchors; // 0x10 (16)
+	struct FVector2D Alignment; // 0x20 (8)
 };
 
 // ScriptStruct UMG.MovieScene2DTransformMask
@@ -2045,48 +2045,48 @@ struct FMovieScene2DTransformMask {
 
 // ScriptStruct UMG.MovieScene2DTransformSectionTemplate
 struct FMovieScene2DTransformSectionTemplate : FMovieScenePropertySectionTemplate {
-	struct Unknown Translation[0x2]; // 0x48 (320)
-	struct Unknown Rotation; // 0x188 (160)
-	struct Unknown Scale[0x2]; // 0x228 (320)
-	struct Unknown Shear[0x2]; // 0x368 (320)
-	enum class Unknow BlendType; // 0x4A8 (1)
-	struct Unknown Mask; // 0x4AC (4)
+	struct FMovieSceneFloatChannel Translation[0x2]; // 0x48 (320)
+	struct FMovieSceneFloatChannel Rotation; // 0x188 (160)
+	struct FMovieSceneFloatChannel Scale[0x2]; // 0x228 (320)
+	struct FMovieSceneFloatChannel Shear[0x2]; // 0x368 (320)
+	enum class EMovieSceneBlendType BlendType; // 0x4A8 (1)
+	struct FMovieScene2DTransformMask Mask; // 0x4AC (4)
 };
 
 // ScriptStruct UMG.MovieSceneMarginSectionTemplate
 struct FMovieSceneMarginSectionTemplate : FMovieScenePropertySectionTemplate {
-	struct Unknown TopCurve; // 0x48 (160)
-	struct Unknown LeftCurve; // 0xE8 (160)
-	struct Unknown RightCurve; // 0x188 (160)
-	struct Unknown BottomCurve; // 0x228 (160)
-	enum class Unknow BlendType; // 0x2C8 (1)
+	struct FMovieSceneFloatChannel TopCurve; // 0x48 (160)
+	struct FMovieSceneFloatChannel LeftCurve; // 0xE8 (160)
+	struct FMovieSceneFloatChannel RightCurve; // 0x188 (160)
+	struct FMovieSceneFloatChannel BottomCurve; // 0x228 (160)
+	enum class EMovieSceneBlendType BlendType; // 0x2C8 (1)
 };
 
 // ScriptStruct UMG.MovieSceneWidgetMaterialSectionTemplate
 struct FMovieSceneWidgetMaterialSectionTemplate : FMovieSceneParameterSectionTemplate {
-	struct TArray<Unknown> BrushPropertyNamePath; // 0x80 (16)
+	struct TArray<struct FName> BrushPropertyNamePath; // 0x80 (16)
 };
 
 // ScriptStruct UMG.RichTextStyleRow
 struct FRichTextStyleRow : FTableRowBase {
-	struct Unknown TextStyle; // 0x8 (616)
+	struct FTextBlockStyle TextStyle; // 0x8 (616)
 };
 
 // ScriptStruct UMG.RichImageRow
 struct FRichImageRow : FTableRowBase {
-	struct Unknown Brush; // 0x8 (136)
+	struct FSlateBrush Brush; // 0x8 (136)
 };
 
 // ScriptStruct UMG.SlateMeshVertex
 struct FSlateMeshVertex {
-	struct Unknown Position; // 0x0 (8)
-	struct Unknown Color; // 0x8 (4)
-	struct Unknown UV0; // 0xC (8)
-	struct Unknown UV1; // 0x14 (8)
-	struct Unknown UV2; // 0x1C (8)
-	struct Unknown UV3; // 0x24 (8)
-	struct Unknown UV4; // 0x2C (8)
-	struct Unknown UV5; // 0x34 (8)
+	struct FVector2D Position; // 0x0 (8)
+	struct FColor Color; // 0x8 (4)
+	struct FVector2D UV0; // 0xC (8)
+	struct FVector2D UV1; // 0x14 (8)
+	struct FVector2D UV2; // 0x1C (8)
+	struct FVector2D UV3; // 0x24 (8)
+	struct FVector2D UV4; // 0x2C (8)
+	struct FVector2D UV5; // 0x34 (8)
 };
 
 // ScriptStruct UMG.SlateChildSize
@@ -2097,21 +2097,21 @@ struct FSlateChildSize {
 
 // ScriptStruct UMG.UserWidgetPool
 struct FUserWidgetPool {
-	struct TArray<Unknown> ActiveWidgets; // 0x0 (16)
-	struct TArray<Unknown> InactiveWidgets; // 0x10 (16)
+	struct TArray<struct UUserWidget> ActiveWidgets; // 0x0 (16)
+	struct TArray<struct UUserWidget> InactiveWidgets; // 0x10 (16)
 };
 
 // ScriptStruct UMG.WidgetAnimationBinding
 struct FWidgetAnimationBinding {
 	struct FName WidgetName; // 0x0 (8)
 	struct FName SlotWidgetName; // 0x8 (8)
-	struct Unknown AnimationGuid; // 0x10 (16)
+	struct FGuid AnimationGuid; // 0x10 (16)
 	char bIsRootWidget : 0; // 0x20 (1)
 };
 
 // ScriptStruct UMG.BlueprintWidgetAnimationDelegateBinding
 struct FBlueprintWidgetAnimationDelegateBinding {
-	enum class Unknow Action; // 0x0 (1)
+	enum class EWidgetAnimationEvent Action; // 0x0 (1)
 	struct FName AnimationToBind; // 0x4 (8)
 	struct FName FunctionNameToBind; // 0xC (8)
 	struct FName UserTag; // 0x14 (8)
@@ -2122,24 +2122,24 @@ struct FDelegateRuntimeBinding {
 	struct FString ObjectName; // 0x0 (16)
 	struct FName PropertyName; // 0x10 (8)
 	struct FName FunctionName; // 0x18 (8)
-	struct Unknown SourcePath; // 0x20 (40)
-	enum class Unknow Kind; // 0x48 (1)
+	struct FDynamicPropertyPath SourcePath; // 0x20 (40)
+	enum class EBindingKind Kind; // 0x48 (1)
 };
 
 // ScriptStruct UMG.WidgetNavigationData
 struct FWidgetNavigationData {
-	enum class Unknow Rule; // 0x0 (1)
+	enum class EUINavigationRule Rule; // 0x0 (1)
 	struct FName WidgetToFocus; // 0x4 (8)
-	struct TWeakObjectPtr<struct Unknown> Widget; // 0xC (8)
+	struct TWeakObjectPtr<struct UWidget> Widget; // 0xC (8)
 	struct FDelegate CustomDelegate; // 0x14 (16)
 };
 
 // Function UMG.Widget.SetVisibility
-inline void UWidget::SetVisibility(enum class Unknow InVisibility) {
+inline void UWidget::SetVisibility(enum class ESlateVisibility InVisibility) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Widget.SetVisibility");
 
 	struct SetVisibility_Params {
-		enum class Unknow InVisibility;
+		enum class ESlateVisibility InVisibility;
 	}; SetVisibility_Params Params;
 
 	Params.InVisibility = InVisibility;
@@ -2150,11 +2150,11 @@ inline void UWidget::SetVisibility(enum class Unknow InVisibility) {
 }
 
 // Function UMG.Widget.SetUserFocus
-inline void UWidget::SetUserFocus(struct Unknown PlayerController) {
+inline void UWidget::SetUserFocus(struct APlayerController PlayerController) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Widget.SetUserFocus");
 
 	struct SetUserFocus_Params {
-		struct Unknown PlayerController;
+		struct APlayerController PlayerController;
 	}; SetUserFocus_Params Params;
 
 	Params.PlayerController = PlayerController;
@@ -2182,11 +2182,11 @@ inline void UWidget::SetToolTipText(struct FText& InToolTipText) {
 }
 
 // Function UMG.Widget.SetToolTip
-inline void UWidget::SetToolTip(struct Unknown Widget) {
+inline void UWidget::SetToolTip(struct UWidget Widget) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Widget.SetToolTip");
 
 	struct SetToolTip_Params {
-		struct Unknown Widget;
+		struct UWidget Widget;
 	}; SetToolTip_Params Params;
 
 	Params.Widget = Widget;
@@ -2197,11 +2197,11 @@ inline void UWidget::SetToolTip(struct Unknown Widget) {
 }
 
 // Function UMG.Widget.SetRenderTranslation
-inline void UWidget::SetRenderTranslation(struct Unknown Translation) {
+inline void UWidget::SetRenderTranslation(struct FVector2D Translation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Widget.SetRenderTranslation");
 
 	struct SetRenderTranslation_Params {
-		struct Unknown Translation;
+		struct FVector2D Translation;
 	}; SetRenderTranslation_Params Params;
 
 	Params.Translation = Translation;
@@ -2212,11 +2212,11 @@ inline void UWidget::SetRenderTranslation(struct Unknown Translation) {
 }
 
 // Function UMG.Widget.SetRenderTransformPivot
-inline void UWidget::SetRenderTransformPivot(struct Unknown Pivot) {
+inline void UWidget::SetRenderTransformPivot(struct FVector2D Pivot) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Widget.SetRenderTransformPivot");
 
 	struct SetRenderTransformPivot_Params {
-		struct Unknown Pivot;
+		struct FVector2D Pivot;
 	}; SetRenderTransformPivot_Params Params;
 
 	Params.Pivot = Pivot;
@@ -2242,11 +2242,11 @@ inline void UWidget::SetRenderTransformAngle(float Angle) {
 }
 
 // Function UMG.Widget.SetRenderTransform
-inline void UWidget::SetRenderTransform(struct Unknown InTransform) {
+inline void UWidget::SetRenderTransform(struct FWidgetTransform InTransform) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Widget.SetRenderTransform");
 
 	struct SetRenderTransform_Params {
-		struct Unknown InTransform;
+		struct FWidgetTransform InTransform;
 	}; SetRenderTransform_Params Params;
 
 	Params.InTransform = InTransform;
@@ -2257,11 +2257,11 @@ inline void UWidget::SetRenderTransform(struct Unknown InTransform) {
 }
 
 // Function UMG.Widget.SetRenderShear
-inline void UWidget::SetRenderShear(struct Unknown Shear) {
+inline void UWidget::SetRenderShear(struct FVector2D Shear) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Widget.SetRenderShear");
 
 	struct SetRenderShear_Params {
-		struct Unknown Shear;
+		struct FVector2D Shear;
 	}; SetRenderShear_Params Params;
 
 	Params.Shear = Shear;
@@ -2272,11 +2272,11 @@ inline void UWidget::SetRenderShear(struct Unknown Shear) {
 }
 
 // Function UMG.Widget.SetRenderScale
-inline void UWidget::SetRenderScale(struct Unknown Scale) {
+inline void UWidget::SetRenderScale(struct FVector2D Scale) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Widget.SetRenderScale");
 
 	struct SetRenderScale_Params {
-		struct Unknown Scale;
+		struct FVector2D Scale;
 	}; SetRenderScale_Params Params;
 
 	Params.Scale = Scale;
@@ -2302,12 +2302,12 @@ inline void UWidget::SetRenderOpacity(float InOpacity) {
 }
 
 // Function UMG.Widget.SetNavigationRuleExplicit
-inline void UWidget::SetNavigationRuleExplicit(enum class Unknow Direction, struct Unknown InWidget) {
+inline void UWidget::SetNavigationRuleExplicit(enum class EUINavigation Direction, struct UWidget InWidget) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Widget.SetNavigationRuleExplicit");
 
 	struct SetNavigationRuleExplicit_Params {
-		enum class Unknow Direction;
-		struct Unknown InWidget;
+		enum class EUINavigation Direction;
+		struct UWidget InWidget;
 	}; SetNavigationRuleExplicit_Params Params;
 
 	Params.Direction = Direction;
@@ -2319,11 +2319,11 @@ inline void UWidget::SetNavigationRuleExplicit(enum class Unknow Direction, stru
 }
 
 // Function UMG.Widget.SetNavigationRuleCustomBoundary
-inline void UWidget::SetNavigationRuleCustomBoundary(enum class Unknow Direction, struct FDelegate InCustomDelegate) {
+inline void UWidget::SetNavigationRuleCustomBoundary(enum class EUINavigation Direction, struct FDelegate InCustomDelegate) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Widget.SetNavigationRuleCustomBoundary");
 
 	struct SetNavigationRuleCustomBoundary_Params {
-		enum class Unknow Direction;
+		enum class EUINavigation Direction;
 		struct FDelegate InCustomDelegate;
 	}; SetNavigationRuleCustomBoundary_Params Params;
 
@@ -2336,11 +2336,11 @@ inline void UWidget::SetNavigationRuleCustomBoundary(enum class Unknow Direction
 }
 
 // Function UMG.Widget.SetNavigationRuleCustom
-inline void UWidget::SetNavigationRuleCustom(enum class Unknow Direction, struct FDelegate InCustomDelegate) {
+inline void UWidget::SetNavigationRuleCustom(enum class EUINavigation Direction, struct FDelegate InCustomDelegate) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Widget.SetNavigationRuleCustom");
 
 	struct SetNavigationRuleCustom_Params {
-		enum class Unknow Direction;
+		enum class EUINavigation Direction;
 		struct FDelegate InCustomDelegate;
 	}; SetNavigationRuleCustom_Params Params;
 
@@ -2353,12 +2353,12 @@ inline void UWidget::SetNavigationRuleCustom(enum class Unknow Direction, struct
 }
 
 // Function UMG.Widget.SetNavigationRuleBase
-inline void UWidget::SetNavigationRuleBase(enum class Unknow Direction, enum class Unknow Rule) {
+inline void UWidget::SetNavigationRuleBase(enum class EUINavigation Direction, enum class EUINavigationRule Rule) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Widget.SetNavigationRuleBase");
 
 	struct SetNavigationRuleBase_Params {
-		enum class Unknow Direction;
-		enum class Unknow Rule;
+		enum class EUINavigation Direction;
+		enum class EUINavigationRule Rule;
 	}; SetNavigationRuleBase_Params Params;
 
 	Params.Direction = Direction;
@@ -2370,12 +2370,12 @@ inline void UWidget::SetNavigationRuleBase(enum class Unknow Direction, enum cla
 }
 
 // Function UMG.Widget.SetNavigationRule
-inline void UWidget::SetNavigationRule(enum class Unknow Direction, enum class Unknow Rule, struct FName WidgetToFocus) {
+inline void UWidget::SetNavigationRule(enum class EUINavigation Direction, enum class EUINavigationRule Rule, struct FName WidgetToFocus) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Widget.SetNavigationRule");
 
 	struct SetNavigationRule_Params {
-		enum class Unknow Direction;
-		enum class Unknow Rule;
+		enum class EUINavigation Direction;
+		enum class EUINavigationRule Rule;
 		struct FName WidgetToFocus;
 	}; SetNavigationRule_Params Params;
 
@@ -2447,11 +2447,11 @@ inline void UWidget::SetCursor(char InCursor) {
 }
 
 // Function UMG.Widget.SetClipping
-inline void UWidget::SetClipping(enum class Unknow InClipping) {
+inline void UWidget::SetClipping(enum class EWidgetClipping InClipping) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Widget.SetClipping");
 
 	struct SetClipping_Params {
-		enum class Unknow InClipping;
+		enum class EWidgetClipping InClipping;
 	}; SetClipping_Params Params;
 
 	Params.InClipping = InClipping;
@@ -2462,11 +2462,11 @@ inline void UWidget::SetClipping(enum class Unknow InClipping) {
 }
 
 // Function UMG.Widget.SetAllNavigationRules
-inline void UWidget::SetAllNavigationRules(enum class Unknow Rule, struct FName WidgetToFocus) {
+inline void UWidget::SetAllNavigationRules(enum class EUINavigationRule Rule, struct FName WidgetToFocus) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Widget.SetAllNavigationRules");
 
 	struct SetAllNavigationRules_Params {
-		enum class Unknow Rule;
+		enum class EUINavigationRule Rule;
 		struct FName WidgetToFocus;
 	}; SetAllNavigationRules_Params Params;
 
@@ -2507,12 +2507,12 @@ inline void UWidget::RemoveFromParent() {
 }
 
 // DelegateFunction UMG.Widget.OnReply__DelegateSignature
-inline struct Unknown UWidget::OnReply__DelegateSignature() {
+inline struct FEventReply UWidget::OnReply__DelegateSignature() {
 	static auto fn = UObject::FindObject<UFunction>("DelegateFunction UMG.Widget.OnReply__DelegateSignature");
 
 	struct OnReply__DelegateSignature_Params {
 		
-		struct Unknown ReturnValue;
+		struct FEventReply ReturnValue;
 
 	}; OnReply__DelegateSignature_Params Params;
 
@@ -2525,13 +2525,13 @@ inline struct Unknown UWidget::OnReply__DelegateSignature() {
 }
 
 // DelegateFunction UMG.Widget.OnPointerEvent__DelegateSignature
-inline struct Unknown UWidget::OnPointerEvent__DelegateSignature(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UWidget::OnPointerEvent__DelegateSignature(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("DelegateFunction UMG.Widget.OnPointerEvent__DelegateSignature");
 
 	struct OnPointerEvent__DelegateSignature_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnPointerEvent__DelegateSignature_Params Params;
 
@@ -2598,11 +2598,11 @@ inline void UWidget::InvalidateLayoutAndVolatility() {
 }
 
 // Function UMG.Widget.HasUserFocusedDescendants
-inline char UWidget::HasUserFocusedDescendants(struct Unknown PlayerController) {
+inline char UWidget::HasUserFocusedDescendants(struct APlayerController PlayerController) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Widget.HasUserFocusedDescendants");
 
 	struct HasUserFocusedDescendants_Params {
-		struct Unknown PlayerController;
+		struct APlayerController PlayerController;
 		char ReturnValue;
 
 	}; HasUserFocusedDescendants_Params Params;
@@ -2617,11 +2617,11 @@ inline char UWidget::HasUserFocusedDescendants(struct Unknown PlayerController) 
 }
 
 // Function UMG.Widget.HasUserFocus
-inline char UWidget::HasUserFocus(struct Unknown PlayerController) {
+inline char UWidget::HasUserFocus(struct APlayerController PlayerController) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Widget.HasUserFocus");
 
 	struct HasUserFocus_Params {
-		struct Unknown PlayerController;
+		struct APlayerController PlayerController;
 		char ReturnValue;
 
 	}; HasUserFocus_Params Params;
@@ -2729,12 +2729,12 @@ inline char UWidget::HasAnyUserFocus() {
 }
 
 // DelegateFunction UMG.Widget.GetWidget__DelegateSignature
-inline struct Unknown UWidget::GetWidget__DelegateSignature() {
+inline struct UWidget UWidget::GetWidget__DelegateSignature() {
 	static auto fn = UObject::FindObject<UFunction>("DelegateFunction UMG.Widget.GetWidget__DelegateSignature");
 
 	struct GetWidget__DelegateSignature_Params {
 		
-		struct Unknown ReturnValue;
+		struct UWidget ReturnValue;
 
 	}; GetWidget__DelegateSignature_Params Params;
 
@@ -2747,12 +2747,12 @@ inline struct Unknown UWidget::GetWidget__DelegateSignature() {
 }
 
 // Function UMG.Widget.GetVisibility
-inline enum class Unknow UWidget::GetVisibility() {
+inline enum class ESlateVisibility UWidget::GetVisibility() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Widget.GetVisibility");
 
 	struct GetVisibility_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class ESlateVisibility ReturnValue;
 
 	}; GetVisibility_Params Params;
 
@@ -2765,12 +2765,12 @@ inline enum class Unknow UWidget::GetVisibility() {
 }
 
 // Function UMG.Widget.GetTickSpaceGeometry
-inline struct Unknown UWidget::GetTickSpaceGeometry() {
+inline struct FGeometry UWidget::GetTickSpaceGeometry() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Widget.GetTickSpaceGeometry");
 
 	struct GetTickSpaceGeometry_Params {
 		
-		struct Unknown ReturnValue;
+		struct FGeometry ReturnValue;
 
 	}; GetTickSpaceGeometry_Params Params;
 
@@ -2801,12 +2801,12 @@ inline struct FText UWidget::GetText__DelegateSignature() {
 }
 
 // DelegateFunction UMG.Widget.GetSlateVisibility__DelegateSignature
-inline enum class Unknow UWidget::GetSlateVisibility__DelegateSignature() {
+inline enum class ESlateVisibility UWidget::GetSlateVisibility__DelegateSignature() {
 	static auto fn = UObject::FindObject<UFunction>("DelegateFunction UMG.Widget.GetSlateVisibility__DelegateSignature");
 
 	struct GetSlateVisibility__DelegateSignature_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class ESlateVisibility ReturnValue;
 
 	}; GetSlateVisibility__DelegateSignature_Params Params;
 
@@ -2819,12 +2819,12 @@ inline enum class Unknow UWidget::GetSlateVisibility__DelegateSignature() {
 }
 
 // DelegateFunction UMG.Widget.GetSlateColor__DelegateSignature
-inline struct Unknown UWidget::GetSlateColor__DelegateSignature() {
+inline struct FSlateColor UWidget::GetSlateColor__DelegateSignature() {
 	static auto fn = UObject::FindObject<UFunction>("DelegateFunction UMG.Widget.GetSlateColor__DelegateSignature");
 
 	struct GetSlateColor__DelegateSignature_Params {
 		
-		struct Unknown ReturnValue;
+		struct FSlateColor ReturnValue;
 
 	}; GetSlateColor__DelegateSignature_Params Params;
 
@@ -2837,12 +2837,12 @@ inline struct Unknown UWidget::GetSlateColor__DelegateSignature() {
 }
 
 // DelegateFunction UMG.Widget.GetSlateBrush__DelegateSignature
-inline struct Unknown UWidget::GetSlateBrush__DelegateSignature() {
+inline struct FSlateBrush UWidget::GetSlateBrush__DelegateSignature() {
 	static auto fn = UObject::FindObject<UFunction>("DelegateFunction UMG.Widget.GetSlateBrush__DelegateSignature");
 
 	struct GetSlateBrush__DelegateSignature_Params {
 		
-		struct Unknown ReturnValue;
+		struct FSlateBrush ReturnValue;
 
 	}; GetSlateBrush__DelegateSignature_Params Params;
 
@@ -2891,12 +2891,12 @@ inline float UWidget::GetRenderOpacity() {
 }
 
 // Function UMG.Widget.GetParent
-inline struct Unknown UWidget::GetParent() {
+inline struct UPanelWidget UWidget::GetParent() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Widget.GetParent");
 
 	struct GetParent_Params {
 		
-		struct Unknown ReturnValue;
+		struct UPanelWidget ReturnValue;
 
 	}; GetParent_Params Params;
 
@@ -2909,12 +2909,12 @@ inline struct Unknown UWidget::GetParent() {
 }
 
 // Function UMG.Widget.GetPaintSpaceGeometry
-inline struct Unknown UWidget::GetPaintSpaceGeometry() {
+inline struct FGeometry UWidget::GetPaintSpaceGeometry() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Widget.GetPaintSpaceGeometry");
 
 	struct GetPaintSpaceGeometry_Params {
 		
-		struct Unknown ReturnValue;
+		struct FGeometry ReturnValue;
 
 	}; GetPaintSpaceGeometry_Params Params;
 
@@ -2927,12 +2927,12 @@ inline struct Unknown UWidget::GetPaintSpaceGeometry() {
 }
 
 // Function UMG.Widget.GetOwningPlayer
-inline struct Unknown UWidget::GetOwningPlayer() {
+inline struct APlayerController UWidget::GetOwningPlayer() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Widget.GetOwningPlayer");
 
 	struct GetOwningPlayer_Params {
 		
-		struct Unknown ReturnValue;
+		struct APlayerController ReturnValue;
 
 	}; GetOwningPlayer_Params Params;
 
@@ -2945,12 +2945,12 @@ inline struct Unknown UWidget::GetOwningPlayer() {
 }
 
 // Function UMG.Widget.GetOwningLocalPlayer
-inline struct Unknown UWidget::GetOwningLocalPlayer() {
+inline struct ULocalPlayer UWidget::GetOwningLocalPlayer() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Widget.GetOwningLocalPlayer");
 
 	struct GetOwningLocalPlayer_Params {
 		
-		struct Unknown ReturnValue;
+		struct ULocalPlayer ReturnValue;
 
 	}; GetOwningLocalPlayer_Params Params;
 
@@ -2981,12 +2981,12 @@ inline char UWidget::GetMouseCursor__DelegateSignature() {
 }
 
 // DelegateFunction UMG.Widget.GetLinearColor__DelegateSignature
-inline struct Unknown UWidget::GetLinearColor__DelegateSignature() {
+inline struct FLinearColor UWidget::GetLinearColor__DelegateSignature() {
 	static auto fn = UObject::FindObject<UFunction>("DelegateFunction UMG.Widget.GetLinearColor__DelegateSignature");
 
 	struct GetLinearColor__DelegateSignature_Params {
 		
-		struct Unknown ReturnValue;
+		struct FLinearColor ReturnValue;
 
 	}; GetLinearColor__DelegateSignature_Params Params;
 
@@ -3035,12 +3035,12 @@ inline int32_t UWidget::GetInt32__DelegateSignature() {
 }
 
 // Function UMG.Widget.GetGameInstance
-inline struct Unknown UWidget::GetGameInstance() {
+inline struct UGameInstance UWidget::GetGameInstance() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Widget.GetGameInstance");
 
 	struct GetGameInstance_Params {
 		
-		struct Unknown ReturnValue;
+		struct UGameInstance ReturnValue;
 
 	}; GetGameInstance_Params Params;
 
@@ -3071,12 +3071,12 @@ inline float UWidget::GetFloat__DelegateSignature() {
 }
 
 // Function UMG.Widget.GetDesiredSize
-inline struct Unknown UWidget::GetDesiredSize() {
+inline struct FVector2D UWidget::GetDesiredSize() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Widget.GetDesiredSize");
 
 	struct GetDesiredSize_Params {
 		
-		struct Unknown ReturnValue;
+		struct FVector2D ReturnValue;
 
 	}; GetDesiredSize_Params Params;
 
@@ -3089,12 +3089,12 @@ inline struct Unknown UWidget::GetDesiredSize() {
 }
 
 // Function UMG.Widget.GetClipping
-inline enum class Unknow UWidget::GetClipping() {
+inline enum class EWidgetClipping UWidget::GetClipping() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Widget.GetClipping");
 
 	struct GetClipping_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class EWidgetClipping ReturnValue;
 
 	}; GetClipping_Params Params;
 
@@ -3107,12 +3107,12 @@ inline enum class Unknow UWidget::GetClipping() {
 }
 
 // DelegateFunction UMG.Widget.GetCheckBoxState__DelegateSignature
-inline enum class Unknow UWidget::GetCheckBoxState__DelegateSignature() {
+inline enum class ECheckBoxState UWidget::GetCheckBoxState__DelegateSignature() {
 	static auto fn = UObject::FindObject<UFunction>("DelegateFunction UMG.Widget.GetCheckBoxState__DelegateSignature");
 
 	struct GetCheckBoxState__DelegateSignature_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class ECheckBoxState ReturnValue;
 
 	}; GetCheckBoxState__DelegateSignature_Params Params;
 
@@ -3125,12 +3125,12 @@ inline enum class Unknow UWidget::GetCheckBoxState__DelegateSignature() {
 }
 
 // Function UMG.Widget.GetCachedGeometry
-inline struct Unknown UWidget::GetCachedGeometry() {
+inline struct FGeometry UWidget::GetCachedGeometry() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Widget.GetCachedGeometry");
 
 	struct GetCachedGeometry_Params {
 		
-		struct Unknown ReturnValue;
+		struct FGeometry ReturnValue;
 
 	}; GetCachedGeometry_Params Params;
 
@@ -3161,12 +3161,12 @@ inline char UWidget::GetBool__DelegateSignature() {
 }
 
 // DelegateFunction UMG.Widget.GenerateWidgetForString__DelegateSignature
-inline struct Unknown UWidget::GenerateWidgetForString__DelegateSignature(struct FString Item) {
+inline struct UWidget UWidget::GenerateWidgetForString__DelegateSignature(struct FString Item) {
 	static auto fn = UObject::FindObject<UFunction>("DelegateFunction UMG.Widget.GenerateWidgetForString__DelegateSignature");
 
 	struct GenerateWidgetForString__DelegateSignature_Params {
 		struct FString Item;
-		struct Unknown ReturnValue;
+		struct UWidget ReturnValue;
 
 	}; GenerateWidgetForString__DelegateSignature_Params Params;
 
@@ -3180,12 +3180,12 @@ inline struct Unknown UWidget::GenerateWidgetForString__DelegateSignature(struct
 }
 
 // DelegateFunction UMG.Widget.GenerateWidgetForObject__DelegateSignature
-inline struct Unknown UWidget::GenerateWidgetForObject__DelegateSignature(struct Unknown Item) {
+inline struct UWidget UWidget::GenerateWidgetForObject__DelegateSignature(struct Object Item) {
 	static auto fn = UObject::FindObject<UFunction>("DelegateFunction UMG.Widget.GenerateWidgetForObject__DelegateSignature");
 
 	struct GenerateWidgetForObject__DelegateSignature_Params {
-		struct Unknown Item;
-		struct Unknown ReturnValue;
+		struct Object Item;
+		struct UWidget ReturnValue;
 
 	}; GenerateWidgetForObject__DelegateSignature_Params Params;
 
@@ -3242,11 +3242,11 @@ inline void UUserWidget::UnregisterInputComponent() {
 }
 
 // Function UMG.UserWidget.UnbindFromAnimationStarted
-inline void UUserWidget::UnbindFromAnimationStarted(struct Unknown Animation, struct FDelegate Delegate) {
+inline void UUserWidget::UnbindFromAnimationStarted(struct UWidgetAnimation Animation, struct FDelegate Delegate) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.UnbindFromAnimationStarted");
 
 	struct UnbindFromAnimationStarted_Params {
-		struct Unknown Animation;
+		struct UWidgetAnimation Animation;
 		struct FDelegate Delegate;
 	}; UnbindFromAnimationStarted_Params Params;
 
@@ -3259,11 +3259,11 @@ inline void UUserWidget::UnbindFromAnimationStarted(struct Unknown Animation, st
 }
 
 // Function UMG.UserWidget.UnbindFromAnimationFinished
-inline void UUserWidget::UnbindFromAnimationFinished(struct Unknown Animation, struct FDelegate Delegate) {
+inline void UUserWidget::UnbindFromAnimationFinished(struct UWidgetAnimation Animation, struct FDelegate Delegate) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.UnbindFromAnimationFinished");
 
 	struct UnbindFromAnimationFinished_Params {
-		struct Unknown Animation;
+		struct UWidgetAnimation Animation;
 		struct FDelegate Delegate;
 	}; UnbindFromAnimationFinished_Params Params;
 
@@ -3276,11 +3276,11 @@ inline void UUserWidget::UnbindFromAnimationFinished(struct Unknown Animation, s
 }
 
 // Function UMG.UserWidget.UnbindAllFromAnimationStarted
-inline void UUserWidget::UnbindAllFromAnimationStarted(struct Unknown Animation) {
+inline void UUserWidget::UnbindAllFromAnimationStarted(struct UWidgetAnimation Animation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.UnbindAllFromAnimationStarted");
 
 	struct UnbindAllFromAnimationStarted_Params {
-		struct Unknown Animation;
+		struct UWidgetAnimation Animation;
 	}; UnbindAllFromAnimationStarted_Params Params;
 
 	Params.Animation = Animation;
@@ -3291,11 +3291,11 @@ inline void UUserWidget::UnbindAllFromAnimationStarted(struct Unknown Animation)
 }
 
 // Function UMG.UserWidget.UnbindAllFromAnimationFinished
-inline void UUserWidget::UnbindAllFromAnimationFinished(struct Unknown Animation) {
+inline void UUserWidget::UnbindAllFromAnimationFinished(struct UWidgetAnimation Animation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.UnbindAllFromAnimationFinished");
 
 	struct UnbindAllFromAnimationFinished_Params {
-		struct Unknown Animation;
+		struct UWidgetAnimation Animation;
 	}; UnbindAllFromAnimationFinished_Params Params;
 
 	Params.Animation = Animation;
@@ -3306,11 +3306,11 @@ inline void UUserWidget::UnbindAllFromAnimationFinished(struct Unknown Animation
 }
 
 // Function UMG.UserWidget.Tick
-inline void UUserWidget::Tick(struct Unknown MyGeometry, float InDeltaTime) {
+inline void UUserWidget::Tick(struct FGeometry MyGeometry, float InDeltaTime) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.Tick");
 
 	struct Tick_Params {
-		struct Unknown MyGeometry;
+		struct FGeometry MyGeometry;
 		float InDeltaTime;
 	}; Tick_Params Params;
 
@@ -3368,11 +3368,11 @@ inline void UUserWidget::StopAnimationsAndLatentActions() {
 }
 
 // Function UMG.UserWidget.StopAnimation
-inline void UUserWidget::StopAnimation(struct Unknown InAnimation) {
+inline void UUserWidget::StopAnimation(struct UWidgetAnimation InAnimation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.StopAnimation");
 
 	struct StopAnimation_Params {
-		struct Unknown InAnimation;
+		struct UWidgetAnimation InAnimation;
 	}; StopAnimation_Params Params;
 
 	Params.InAnimation = InAnimation;
@@ -3397,11 +3397,11 @@ inline void UUserWidget::StopAllAnimations() {
 }
 
 // Function UMG.UserWidget.SetPositionInViewport
-inline void UUserWidget::SetPositionInViewport(struct Unknown Position, char bRemoveDPIScale) {
+inline void UUserWidget::SetPositionInViewport(struct FVector2D Position, char bRemoveDPIScale) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.SetPositionInViewport");
 
 	struct SetPositionInViewport_Params {
-		struct Unknown Position;
+		struct FVector2D Position;
 		char bRemoveDPIScale;
 	}; SetPositionInViewport_Params Params;
 
@@ -3414,11 +3414,11 @@ inline void UUserWidget::SetPositionInViewport(struct Unknown Position, char bRe
 }
 
 // Function UMG.UserWidget.SetPlaybackSpeed
-inline void UUserWidget::SetPlaybackSpeed(struct Unknown InAnimation, float PlaybackSpeed) {
+inline void UUserWidget::SetPlaybackSpeed(struct UWidgetAnimation InAnimation, float PlaybackSpeed) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.SetPlaybackSpeed");
 
 	struct SetPlaybackSpeed_Params {
-		struct Unknown InAnimation;
+		struct UWidgetAnimation InAnimation;
 		float PlaybackSpeed;
 	}; SetPlaybackSpeed_Params Params;
 
@@ -3431,11 +3431,11 @@ inline void UUserWidget::SetPlaybackSpeed(struct Unknown InAnimation, float Play
 }
 
 // Function UMG.UserWidget.SetPadding
-inline void UUserWidget::SetPadding(struct Unknown InPadding) {
+inline void UUserWidget::SetPadding(struct FMargin InPadding) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.SetPadding");
 
 	struct SetPadding_Params {
-		struct Unknown InPadding;
+		struct FMargin InPadding;
 	}; SetPadding_Params Params;
 
 	Params.InPadding = InPadding;
@@ -3446,11 +3446,11 @@ inline void UUserWidget::SetPadding(struct Unknown InPadding) {
 }
 
 // Function UMG.UserWidget.SetOwningPlayer
-inline void UUserWidget::SetOwningPlayer(struct Unknown LocalPlayerController) {
+inline void UUserWidget::SetOwningPlayer(struct APlayerController LocalPlayerController) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.SetOwningPlayer");
 
 	struct SetOwningPlayer_Params {
-		struct Unknown LocalPlayerController;
+		struct APlayerController LocalPlayerController;
 	}; SetOwningPlayer_Params Params;
 
 	Params.LocalPlayerController = LocalPlayerController;
@@ -3461,11 +3461,11 @@ inline void UUserWidget::SetOwningPlayer(struct Unknown LocalPlayerController) {
 }
 
 // Function UMG.UserWidget.SetNumLoopsToPlay
-inline void UUserWidget::SetNumLoopsToPlay(struct Unknown InAnimation, int32_t NumLoopsToPlay) {
+inline void UUserWidget::SetNumLoopsToPlay(struct UWidgetAnimation InAnimation, int32_t NumLoopsToPlay) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.SetNumLoopsToPlay");
 
 	struct SetNumLoopsToPlay_Params {
-		struct Unknown InAnimation;
+		struct UWidgetAnimation InAnimation;
 		int32_t NumLoopsToPlay;
 	}; SetNumLoopsToPlay_Params Params;
 
@@ -3523,11 +3523,11 @@ inline void UUserWidget::SetInputActionBlocking(char bShouldBlock) {
 }
 
 // Function UMG.UserWidget.SetForegroundColor
-inline void UUserWidget::SetForegroundColor(struct Unknown InForegroundColor) {
+inline void UUserWidget::SetForegroundColor(struct FSlateColor InForegroundColor) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.SetForegroundColor");
 
 	struct SetForegroundColor_Params {
-		struct Unknown InForegroundColor;
+		struct FSlateColor InForegroundColor;
 	}; SetForegroundColor_Params Params;
 
 	Params.InForegroundColor = InForegroundColor;
@@ -3538,11 +3538,11 @@ inline void UUserWidget::SetForegroundColor(struct Unknown InForegroundColor) {
 }
 
 // Function UMG.UserWidget.SetDesiredSizeInViewport
-inline void UUserWidget::SetDesiredSizeInViewport(struct Unknown Size) {
+inline void UUserWidget::SetDesiredSizeInViewport(struct FVector2D Size) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.SetDesiredSizeInViewport");
 
 	struct SetDesiredSizeInViewport_Params {
-		struct Unknown Size;
+		struct FVector2D Size;
 	}; SetDesiredSizeInViewport_Params Params;
 
 	Params.Size = Size;
@@ -3553,11 +3553,11 @@ inline void UUserWidget::SetDesiredSizeInViewport(struct Unknown Size) {
 }
 
 // Function UMG.UserWidget.SetColorAndOpacity
-inline void UUserWidget::SetColorAndOpacity(struct Unknown InColorAndOpacity) {
+inline void UUserWidget::SetColorAndOpacity(struct FLinearColor InColorAndOpacity) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.SetColorAndOpacity");
 
 	struct SetColorAndOpacity_Params {
-		struct Unknown InColorAndOpacity;
+		struct FLinearColor InColorAndOpacity;
 	}; SetColorAndOpacity_Params Params;
 
 	Params.InColorAndOpacity = InColorAndOpacity;
@@ -3568,11 +3568,11 @@ inline void UUserWidget::SetColorAndOpacity(struct Unknown InColorAndOpacity) {
 }
 
 // Function UMG.UserWidget.SetAnchorsInViewport
-inline void UUserWidget::SetAnchorsInViewport(struct Unknown Anchors) {
+inline void UUserWidget::SetAnchorsInViewport(struct FAnchors Anchors) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.SetAnchorsInViewport");
 
 	struct SetAnchorsInViewport_Params {
-		struct Unknown Anchors;
+		struct FAnchors Anchors;
 	}; SetAnchorsInViewport_Params Params;
 
 	Params.Anchors = Anchors;
@@ -3583,11 +3583,11 @@ inline void UUserWidget::SetAnchorsInViewport(struct Unknown Anchors) {
 }
 
 // Function UMG.UserWidget.SetAlignmentInViewport
-inline void UUserWidget::SetAlignmentInViewport(struct Unknown Alignment) {
+inline void UUserWidget::SetAlignmentInViewport(struct FVector2D Alignment) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.SetAlignmentInViewport");
 
 	struct SetAlignmentInViewport_Params {
-		struct Unknown Alignment;
+		struct FVector2D Alignment;
 	}; SetAlignmentInViewport_Params Params;
 
 	Params.Alignment = Alignment;
@@ -3598,11 +3598,11 @@ inline void UUserWidget::SetAlignmentInViewport(struct Unknown Alignment) {
 }
 
 // Function UMG.UserWidget.ReverseAnimation
-inline void UUserWidget::ReverseAnimation(struct Unknown InAnimation) {
+inline void UUserWidget::ReverseAnimation(struct UWidgetAnimation InAnimation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.ReverseAnimation");
 
 	struct ReverseAnimation_Params {
-		struct Unknown InAnimation;
+		struct UWidgetAnimation InAnimation;
 	}; ReverseAnimation_Params Params;
 
 	Params.InAnimation = InAnimation;
@@ -3656,11 +3656,11 @@ inline void UUserWidget::PreConstruct(char IsDesignTime) {
 }
 
 // Function UMG.UserWidget.PlaySound
-inline void UUserWidget::PlaySound(struct Unknown SoundToPlay) {
+inline void UUserWidget::PlaySound(struct USoundBase SoundToPlay) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.PlaySound");
 
 	struct PlaySound_Params {
-		struct Unknown SoundToPlay;
+		struct USoundBase SoundToPlay;
 	}; PlaySound_Params Params;
 
 	Params.SoundToPlay = SoundToPlay;
@@ -3671,18 +3671,18 @@ inline void UUserWidget::PlaySound(struct Unknown SoundToPlay) {
 }
 
 // Function UMG.UserWidget.PlayAnimationTimeRange
-inline struct Unknown UUserWidget::PlayAnimationTimeRange(struct Unknown InAnimation, float StartAtTime, float EndAtTime, int32_t NumLoopsToPlay, char PlayMode, float PlaybackSpeed, char bRestoreState) {
+inline struct UUMGSequencePlayer UUserWidget::PlayAnimationTimeRange(struct UWidgetAnimation InAnimation, float StartAtTime, float EndAtTime, int32_t NumLoopsToPlay, char PlayMode, float PlaybackSpeed, char bRestoreState) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.PlayAnimationTimeRange");
 
 	struct PlayAnimationTimeRange_Params {
-		struct Unknown InAnimation;
+		struct UWidgetAnimation InAnimation;
 		float StartAtTime;
 		float EndAtTime;
 		int32_t NumLoopsToPlay;
 		char PlayMode;
 		float PlaybackSpeed;
 		char bRestoreState;
-		struct Unknown ReturnValue;
+		struct UUMGSequencePlayer ReturnValue;
 
 	}; PlayAnimationTimeRange_Params Params;
 
@@ -3702,14 +3702,14 @@ inline struct Unknown UUserWidget::PlayAnimationTimeRange(struct Unknown InAnima
 }
 
 // Function UMG.UserWidget.PlayAnimationReverse
-inline struct Unknown UUserWidget::PlayAnimationReverse(struct Unknown InAnimation, float PlaybackSpeed, char bRestoreState) {
+inline struct UUMGSequencePlayer UUserWidget::PlayAnimationReverse(struct UWidgetAnimation InAnimation, float PlaybackSpeed, char bRestoreState) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.PlayAnimationReverse");
 
 	struct PlayAnimationReverse_Params {
-		struct Unknown InAnimation;
+		struct UWidgetAnimation InAnimation;
 		float PlaybackSpeed;
 		char bRestoreState;
-		struct Unknown ReturnValue;
+		struct UUMGSequencePlayer ReturnValue;
 
 	}; PlayAnimationReverse_Params Params;
 
@@ -3725,14 +3725,14 @@ inline struct Unknown UUserWidget::PlayAnimationReverse(struct Unknown InAnimati
 }
 
 // Function UMG.UserWidget.PlayAnimationForward
-inline struct Unknown UUserWidget::PlayAnimationForward(struct Unknown InAnimation, float PlaybackSpeed, char bRestoreState) {
+inline struct UUMGSequencePlayer UUserWidget::PlayAnimationForward(struct UWidgetAnimation InAnimation, float PlaybackSpeed, char bRestoreState) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.PlayAnimationForward");
 
 	struct PlayAnimationForward_Params {
-		struct Unknown InAnimation;
+		struct UWidgetAnimation InAnimation;
 		float PlaybackSpeed;
 		char bRestoreState;
-		struct Unknown ReturnValue;
+		struct UUMGSequencePlayer ReturnValue;
 
 	}; PlayAnimationForward_Params Params;
 
@@ -3748,17 +3748,17 @@ inline struct Unknown UUserWidget::PlayAnimationForward(struct Unknown InAnimati
 }
 
 // Function UMG.UserWidget.PlayAnimation
-inline struct Unknown UUserWidget::PlayAnimation(struct Unknown InAnimation, float StartAtTime, int32_t NumLoopsToPlay, char PlayMode, float PlaybackSpeed, char bRestoreState) {
+inline struct UUMGSequencePlayer UUserWidget::PlayAnimation(struct UWidgetAnimation InAnimation, float StartAtTime, int32_t NumLoopsToPlay, char PlayMode, float PlaybackSpeed, char bRestoreState) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.PlayAnimation");
 
 	struct PlayAnimation_Params {
-		struct Unknown InAnimation;
+		struct UWidgetAnimation InAnimation;
 		float StartAtTime;
 		int32_t NumLoopsToPlay;
 		char PlayMode;
 		float PlaybackSpeed;
 		char bRestoreState;
-		struct Unknown ReturnValue;
+		struct UUMGSequencePlayer ReturnValue;
 
 	}; PlayAnimation_Params Params;
 
@@ -3777,11 +3777,11 @@ inline struct Unknown UUserWidget::PlayAnimation(struct Unknown InAnimation, flo
 }
 
 // Function UMG.UserWidget.PauseAnimation
-inline float UUserWidget::PauseAnimation(struct Unknown InAnimation) {
+inline float UUserWidget::PauseAnimation(struct UWidgetAnimation InAnimation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.PauseAnimation");
 
 	struct PauseAnimation_Params {
-		struct Unknown InAnimation;
+		struct UWidgetAnimation InAnimation;
 		float ReturnValue;
 
 	}; PauseAnimation_Params Params;
@@ -3796,13 +3796,13 @@ inline float UUserWidget::PauseAnimation(struct Unknown InAnimation) {
 }
 
 // Function UMG.UserWidget.OnTouchStarted
-inline struct Unknown UUserWidget::OnTouchStarted(struct Unknown MyGeometry, struct Unknown& InTouchEvent) {
+inline struct FEventReply UUserWidget::OnTouchStarted(struct FGeometry MyGeometry, struct FPointerEvent& InTouchEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.OnTouchStarted");
 
 	struct OnTouchStarted_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& InTouchEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& InTouchEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnTouchStarted_Params Params;
 
@@ -3819,13 +3819,13 @@ inline struct Unknown UUserWidget::OnTouchStarted(struct Unknown MyGeometry, str
 }
 
 // Function UMG.UserWidget.OnTouchMoved
-inline struct Unknown UUserWidget::OnTouchMoved(struct Unknown MyGeometry, struct Unknown& InTouchEvent) {
+inline struct FEventReply UUserWidget::OnTouchMoved(struct FGeometry MyGeometry, struct FPointerEvent& InTouchEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.OnTouchMoved");
 
 	struct OnTouchMoved_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& InTouchEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& InTouchEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnTouchMoved_Params Params;
 
@@ -3842,13 +3842,13 @@ inline struct Unknown UUserWidget::OnTouchMoved(struct Unknown MyGeometry, struc
 }
 
 // Function UMG.UserWidget.OnTouchGesture
-inline struct Unknown UUserWidget::OnTouchGesture(struct Unknown MyGeometry, struct Unknown& GestureEvent) {
+inline struct FEventReply UUserWidget::OnTouchGesture(struct FGeometry MyGeometry, struct FPointerEvent& GestureEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.OnTouchGesture");
 
 	struct OnTouchGesture_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& GestureEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& GestureEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnTouchGesture_Params Params;
 
@@ -3865,13 +3865,13 @@ inline struct Unknown UUserWidget::OnTouchGesture(struct Unknown MyGeometry, str
 }
 
 // Function UMG.UserWidget.OnTouchForceChanged
-inline struct Unknown UUserWidget::OnTouchForceChanged(struct Unknown MyGeometry, struct Unknown& InTouchEvent) {
+inline struct FEventReply UUserWidget::OnTouchForceChanged(struct FGeometry MyGeometry, struct FPointerEvent& InTouchEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.OnTouchForceChanged");
 
 	struct OnTouchForceChanged_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& InTouchEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& InTouchEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnTouchForceChanged_Params Params;
 
@@ -3888,13 +3888,13 @@ inline struct Unknown UUserWidget::OnTouchForceChanged(struct Unknown MyGeometry
 }
 
 // Function UMG.UserWidget.OnTouchEnded
-inline struct Unknown UUserWidget::OnTouchEnded(struct Unknown MyGeometry, struct Unknown& InTouchEvent) {
+inline struct FEventReply UUserWidget::OnTouchEnded(struct FGeometry MyGeometry, struct FPointerEvent& InTouchEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.OnTouchEnded");
 
 	struct OnTouchEnded_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& InTouchEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& InTouchEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnTouchEnded_Params Params;
 
@@ -3911,11 +3911,11 @@ inline struct Unknown UUserWidget::OnTouchEnded(struct Unknown MyGeometry, struc
 }
 
 // Function UMG.UserWidget.OnRemovedFromFocusPath
-inline void UUserWidget::OnRemovedFromFocusPath(struct Unknown InFocusEvent) {
+inline void UUserWidget::OnRemovedFromFocusPath(struct FFocusEvent InFocusEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.OnRemovedFromFocusPath");
 
 	struct OnRemovedFromFocusPath_Params {
-		struct Unknown InFocusEvent;
+		struct FFocusEvent InFocusEvent;
 	}; OnRemovedFromFocusPath_Params Params;
 
 	Params.InFocusEvent = InFocusEvent;
@@ -3926,13 +3926,13 @@ inline void UUserWidget::OnRemovedFromFocusPath(struct Unknown InFocusEvent) {
 }
 
 // Function UMG.UserWidget.OnPreviewMouseButtonDown
-inline struct Unknown UUserWidget::OnPreviewMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UUserWidget::OnPreviewMouseButtonDown(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.OnPreviewMouseButtonDown");
 
 	struct OnPreviewMouseButtonDown_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnPreviewMouseButtonDown_Params Params;
 
@@ -3949,13 +3949,13 @@ inline struct Unknown UUserWidget::OnPreviewMouseButtonDown(struct Unknown MyGeo
 }
 
 // Function UMG.UserWidget.OnPreviewKeyDown
-inline struct Unknown UUserWidget::OnPreviewKeyDown(struct Unknown MyGeometry, struct Unknown InKeyEvent) {
+inline struct FEventReply UUserWidget::OnPreviewKeyDown(struct FGeometry MyGeometry, struct FKeyEvent InKeyEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.OnPreviewKeyDown");
 
 	struct OnPreviewKeyDown_Params {
-		struct Unknown MyGeometry;
-		struct Unknown InKeyEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FKeyEvent InKeyEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnPreviewKeyDown_Params Params;
 
@@ -3970,11 +3970,11 @@ inline struct Unknown UUserWidget::OnPreviewKeyDown(struct Unknown MyGeometry, s
 }
 
 // Function UMG.UserWidget.OnPaint
-inline void UUserWidget::OnPaint(struct Unknown& Context) {
+inline void UUserWidget::OnPaint(struct FPaintContext& Context) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.OnPaint");
 
 	struct OnPaint_Params {
-		struct Unknown& Context;
+		struct FPaintContext& Context;
 	}; OnPaint_Params Params;
 
 
@@ -3987,13 +3987,13 @@ inline void UUserWidget::OnPaint(struct Unknown& Context) {
 }
 
 // Function UMG.UserWidget.OnMouseWheel
-inline struct Unknown UUserWidget::OnMouseWheel(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UUserWidget::OnMouseWheel(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.OnMouseWheel");
 
 	struct OnMouseWheel_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnMouseWheel_Params Params;
 
@@ -4010,13 +4010,13 @@ inline struct Unknown UUserWidget::OnMouseWheel(struct Unknown MyGeometry, struc
 }
 
 // Function UMG.UserWidget.OnMouseMove
-inline struct Unknown UUserWidget::OnMouseMove(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UUserWidget::OnMouseMove(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.OnMouseMove");
 
 	struct OnMouseMove_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnMouseMove_Params Params;
 
@@ -4033,11 +4033,11 @@ inline struct Unknown UUserWidget::OnMouseMove(struct Unknown MyGeometry, struct
 }
 
 // Function UMG.UserWidget.OnMouseLeave
-inline void UUserWidget::OnMouseLeave(struct Unknown& MouseEvent) {
+inline void UUserWidget::OnMouseLeave(struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.OnMouseLeave");
 
 	struct OnMouseLeave_Params {
-		struct Unknown& MouseEvent;
+		struct FPointerEvent& MouseEvent;
 	}; OnMouseLeave_Params Params;
 
 
@@ -4050,12 +4050,12 @@ inline void UUserWidget::OnMouseLeave(struct Unknown& MouseEvent) {
 }
 
 // Function UMG.UserWidget.OnMouseEnter
-inline void UUserWidget::OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline void UUserWidget::OnMouseEnter(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.OnMouseEnter");
 
 	struct OnMouseEnter_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
 	}; OnMouseEnter_Params Params;
 
 	Params.MyGeometry = MyGeometry;
@@ -4083,13 +4083,13 @@ inline void UUserWidget::OnMouseCaptureLost() {
 }
 
 // Function UMG.UserWidget.OnMouseButtonUp
-inline struct Unknown UUserWidget::OnMouseButtonUp(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UUserWidget::OnMouseButtonUp(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.OnMouseButtonUp");
 
 	struct OnMouseButtonUp_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnMouseButtonUp_Params Params;
 
@@ -4106,13 +4106,13 @@ inline struct Unknown UUserWidget::OnMouseButtonUp(struct Unknown MyGeometry, st
 }
 
 // Function UMG.UserWidget.OnMouseButtonDown
-inline struct Unknown UUserWidget::OnMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UUserWidget::OnMouseButtonDown(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.OnMouseButtonDown");
 
 	struct OnMouseButtonDown_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnMouseButtonDown_Params Params;
 
@@ -4129,13 +4129,13 @@ inline struct Unknown UUserWidget::OnMouseButtonDown(struct Unknown MyGeometry, 
 }
 
 // Function UMG.UserWidget.OnMouseButtonDoubleClick
-inline struct Unknown UUserWidget::OnMouseButtonDoubleClick(struct Unknown InMyGeometry, struct Unknown& InMouseEvent) {
+inline struct FEventReply UUserWidget::OnMouseButtonDoubleClick(struct FGeometry InMyGeometry, struct FPointerEvent& InMouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.OnMouseButtonDoubleClick");
 
 	struct OnMouseButtonDoubleClick_Params {
-		struct Unknown InMyGeometry;
-		struct Unknown& InMouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry InMyGeometry;
+		struct FPointerEvent& InMouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnMouseButtonDoubleClick_Params Params;
 
@@ -4152,13 +4152,13 @@ inline struct Unknown UUserWidget::OnMouseButtonDoubleClick(struct Unknown InMyG
 }
 
 // Function UMG.UserWidget.OnMotionDetected
-inline struct Unknown UUserWidget::OnMotionDetected(struct Unknown MyGeometry, struct Unknown InMotionEvent) {
+inline struct FEventReply UUserWidget::OnMotionDetected(struct FGeometry MyGeometry, struct FMotionEvent InMotionEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.OnMotionDetected");
 
 	struct OnMotionDetected_Params {
-		struct Unknown MyGeometry;
-		struct Unknown InMotionEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FMotionEvent InMotionEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnMotionDetected_Params Params;
 
@@ -4173,13 +4173,13 @@ inline struct Unknown UUserWidget::OnMotionDetected(struct Unknown MyGeometry, s
 }
 
 // Function UMG.UserWidget.OnKeyUp
-inline struct Unknown UUserWidget::OnKeyUp(struct Unknown MyGeometry, struct Unknown InKeyEvent) {
+inline struct FEventReply UUserWidget::OnKeyUp(struct FGeometry MyGeometry, struct FKeyEvent InKeyEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.OnKeyUp");
 
 	struct OnKeyUp_Params {
-		struct Unknown MyGeometry;
-		struct Unknown InKeyEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FKeyEvent InKeyEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnKeyUp_Params Params;
 
@@ -4194,13 +4194,13 @@ inline struct Unknown UUserWidget::OnKeyUp(struct Unknown MyGeometry, struct Unk
 }
 
 // Function UMG.UserWidget.OnKeyDown
-inline struct Unknown UUserWidget::OnKeyDown(struct Unknown MyGeometry, struct Unknown InKeyEvent) {
+inline struct FEventReply UUserWidget::OnKeyDown(struct FGeometry MyGeometry, struct FKeyEvent InKeyEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.OnKeyDown");
 
 	struct OnKeyDown_Params {
-		struct Unknown MyGeometry;
-		struct Unknown InKeyEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FKeyEvent InKeyEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnKeyDown_Params Params;
 
@@ -4215,13 +4215,13 @@ inline struct Unknown UUserWidget::OnKeyDown(struct Unknown MyGeometry, struct U
 }
 
 // Function UMG.UserWidget.OnKeyChar
-inline struct Unknown UUserWidget::OnKeyChar(struct Unknown MyGeometry, struct Unknown InCharacterEvent) {
+inline struct FEventReply UUserWidget::OnKeyChar(struct FGeometry MyGeometry, struct FCharacterEvent InCharacterEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.OnKeyChar");
 
 	struct OnKeyChar_Params {
-		struct Unknown MyGeometry;
-		struct Unknown InCharacterEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FCharacterEvent InCharacterEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnKeyChar_Params Params;
 
@@ -4250,13 +4250,13 @@ inline void UUserWidget::OnInitialized() {
 }
 
 // Function UMG.UserWidget.OnFocusReceived
-inline struct Unknown UUserWidget::OnFocusReceived(struct Unknown MyGeometry, struct Unknown InFocusEvent) {
+inline struct FEventReply UUserWidget::OnFocusReceived(struct FGeometry MyGeometry, struct FFocusEvent InFocusEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.OnFocusReceived");
 
 	struct OnFocusReceived_Params {
-		struct Unknown MyGeometry;
-		struct Unknown InFocusEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FFocusEvent InFocusEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnFocusReceived_Params Params;
 
@@ -4271,11 +4271,11 @@ inline struct Unknown UUserWidget::OnFocusReceived(struct Unknown MyGeometry, st
 }
 
 // Function UMG.UserWidget.OnFocusLost
-inline void UUserWidget::OnFocusLost(struct Unknown InFocusEvent) {
+inline void UUserWidget::OnFocusLost(struct FFocusEvent InFocusEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.OnFocusLost");
 
 	struct OnFocusLost_Params {
-		struct Unknown InFocusEvent;
+		struct FFocusEvent InFocusEvent;
 	}; OnFocusLost_Params Params;
 
 	Params.InFocusEvent = InFocusEvent;
@@ -4286,13 +4286,13 @@ inline void UUserWidget::OnFocusLost(struct Unknown InFocusEvent) {
 }
 
 // Function UMG.UserWidget.OnDrop
-inline char UUserWidget::OnDrop(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation) {
+inline char UUserWidget::OnDrop(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.OnDrop");
 
 	struct OnDrop_Params {
-		struct Unknown MyGeometry;
-		struct Unknown PointerEvent;
-		struct Unknown Operation;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent PointerEvent;
+		struct UDragDropOperation Operation;
 		char ReturnValue;
 
 	}; OnDrop_Params Params;
@@ -4309,13 +4309,13 @@ inline char UUserWidget::OnDrop(struct Unknown MyGeometry, struct Unknown Pointe
 }
 
 // Function UMG.UserWidget.OnDragOver
-inline char UUserWidget::OnDragOver(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation) {
+inline char UUserWidget::OnDragOver(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.OnDragOver");
 
 	struct OnDragOver_Params {
-		struct Unknown MyGeometry;
-		struct Unknown PointerEvent;
-		struct Unknown Operation;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent PointerEvent;
+		struct UDragDropOperation Operation;
 		char ReturnValue;
 
 	}; OnDragOver_Params Params;
@@ -4332,12 +4332,12 @@ inline char UUserWidget::OnDragOver(struct Unknown MyGeometry, struct Unknown Po
 }
 
 // Function UMG.UserWidget.OnDragLeave
-inline void UUserWidget::OnDragLeave(struct Unknown PointerEvent, struct Unknown Operation) {
+inline void UUserWidget::OnDragLeave(struct FPointerEvent PointerEvent, struct UDragDropOperation Operation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.OnDragLeave");
 
 	struct OnDragLeave_Params {
-		struct Unknown PointerEvent;
-		struct Unknown Operation;
+		struct FPointerEvent PointerEvent;
+		struct UDragDropOperation Operation;
 	}; OnDragLeave_Params Params;
 
 	Params.PointerEvent = PointerEvent;
@@ -4349,13 +4349,13 @@ inline void UUserWidget::OnDragLeave(struct Unknown PointerEvent, struct Unknown
 }
 
 // Function UMG.UserWidget.OnDragEnter
-inline void UUserWidget::OnDragEnter(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation) {
+inline void UUserWidget::OnDragEnter(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.OnDragEnter");
 
 	struct OnDragEnter_Params {
-		struct Unknown MyGeometry;
-		struct Unknown PointerEvent;
-		struct Unknown Operation;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent PointerEvent;
+		struct UDragDropOperation Operation;
 	}; OnDragEnter_Params Params;
 
 	Params.MyGeometry = MyGeometry;
@@ -4368,13 +4368,13 @@ inline void UUserWidget::OnDragEnter(struct Unknown MyGeometry, struct Unknown P
 }
 
 // Function UMG.UserWidget.OnDragDetected
-inline void UUserWidget::OnDragDetected(struct Unknown MyGeometry, struct Unknown& PointerEvent, struct Unknown& Operation) {
+inline void UUserWidget::OnDragDetected(struct FGeometry MyGeometry, struct FPointerEvent& PointerEvent, struct UDragDropOperation& Operation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.OnDragDetected");
 
 	struct OnDragDetected_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& PointerEvent;
-		struct Unknown& Operation;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& PointerEvent;
+		struct UDragDropOperation& Operation;
 	}; OnDragDetected_Params Params;
 
 	Params.MyGeometry = MyGeometry;
@@ -4389,12 +4389,12 @@ inline void UUserWidget::OnDragDetected(struct Unknown MyGeometry, struct Unknow
 }
 
 // Function UMG.UserWidget.OnDragCancelled
-inline void UUserWidget::OnDragCancelled(struct Unknown& PointerEvent, struct Unknown Operation) {
+inline void UUserWidget::OnDragCancelled(struct FPointerEvent& PointerEvent, struct UDragDropOperation Operation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.OnDragCancelled");
 
 	struct OnDragCancelled_Params {
-		struct Unknown& PointerEvent;
-		struct Unknown Operation;
+		struct FPointerEvent& PointerEvent;
+		struct UDragDropOperation Operation;
 	}; OnDragCancelled_Params Params;
 
 	Params.Operation = Operation;
@@ -4408,11 +4408,11 @@ inline void UUserWidget::OnDragCancelled(struct Unknown& PointerEvent, struct Un
 }
 
 // Function UMG.UserWidget.OnAnimationStarted
-inline void UUserWidget::OnAnimationStarted(struct Unknown Animation) {
+inline void UUserWidget::OnAnimationStarted(struct UWidgetAnimation Animation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.OnAnimationStarted");
 
 	struct OnAnimationStarted_Params {
-		struct Unknown Animation;
+		struct UWidgetAnimation Animation;
 	}; OnAnimationStarted_Params Params;
 
 	Params.Animation = Animation;
@@ -4423,11 +4423,11 @@ inline void UUserWidget::OnAnimationStarted(struct Unknown Animation) {
 }
 
 // Function UMG.UserWidget.OnAnimationFinished
-inline void UUserWidget::OnAnimationFinished(struct Unknown Animation) {
+inline void UUserWidget::OnAnimationFinished(struct UWidgetAnimation Animation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.OnAnimationFinished");
 
 	struct OnAnimationFinished_Params {
-		struct Unknown Animation;
+		struct UWidgetAnimation Animation;
 	}; OnAnimationFinished_Params Params;
 
 	Params.Animation = Animation;
@@ -4438,13 +4438,13 @@ inline void UUserWidget::OnAnimationFinished(struct Unknown Animation) {
 }
 
 // Function UMG.UserWidget.OnAnalogValueChanged
-inline struct Unknown UUserWidget::OnAnalogValueChanged(struct Unknown MyGeometry, struct Unknown InAnalogInputEvent) {
+inline struct FEventReply UUserWidget::OnAnalogValueChanged(struct FGeometry MyGeometry, struct FAnalogInputEvent InAnalogInputEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.OnAnalogValueChanged");
 
 	struct OnAnalogValueChanged_Params {
-		struct Unknown MyGeometry;
-		struct Unknown InAnalogInputEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FAnalogInputEvent InAnalogInputEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnAnalogValueChanged_Params Params;
 
@@ -4459,11 +4459,11 @@ inline struct Unknown UUserWidget::OnAnalogValueChanged(struct Unknown MyGeometr
 }
 
 // Function UMG.UserWidget.OnAddedToFocusPath
-inline void UUserWidget::OnAddedToFocusPath(struct Unknown InFocusEvent) {
+inline void UUserWidget::OnAddedToFocusPath(struct FFocusEvent InFocusEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.OnAddedToFocusPath");
 
 	struct OnAddedToFocusPath_Params {
-		struct Unknown InFocusEvent;
+		struct FFocusEvent InFocusEvent;
 	}; OnAddedToFocusPath_Params Params;
 
 	Params.InFocusEvent = InFocusEvent;
@@ -4586,11 +4586,11 @@ inline char UUserWidget::IsAnyAnimationPlaying() {
 }
 
 // Function UMG.UserWidget.IsAnimationPlayingForward
-inline char UUserWidget::IsAnimationPlayingForward(struct Unknown InAnimation) {
+inline char UUserWidget::IsAnimationPlayingForward(struct UWidgetAnimation InAnimation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.IsAnimationPlayingForward");
 
 	struct IsAnimationPlayingForward_Params {
-		struct Unknown InAnimation;
+		struct UWidgetAnimation InAnimation;
 		char ReturnValue;
 
 	}; IsAnimationPlayingForward_Params Params;
@@ -4605,11 +4605,11 @@ inline char UUserWidget::IsAnimationPlayingForward(struct Unknown InAnimation) {
 }
 
 // Function UMG.UserWidget.IsAnimationPlaying
-inline char UUserWidget::IsAnimationPlaying(struct Unknown InAnimation) {
+inline char UUserWidget::IsAnimationPlaying(struct UWidgetAnimation InAnimation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.IsAnimationPlaying");
 
 	struct IsAnimationPlaying_Params {
-		struct Unknown InAnimation;
+		struct UWidgetAnimation InAnimation;
 		char ReturnValue;
 
 	}; IsAnimationPlaying_Params Params;
@@ -4624,12 +4624,12 @@ inline char UUserWidget::IsAnimationPlaying(struct Unknown InAnimation) {
 }
 
 // Function UMG.UserWidget.GetOwningPlayerPawn
-inline struct Unknown UUserWidget::GetOwningPlayerPawn() {
+inline struct APawn UUserWidget::GetOwningPlayerPawn() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.GetOwningPlayerPawn");
 
 	struct GetOwningPlayerPawn_Params {
 		
-		struct Unknown ReturnValue;
+		struct APawn ReturnValue;
 
 	}; GetOwningPlayerPawn_Params Params;
 
@@ -4660,11 +4660,11 @@ inline char UUserWidget::GetIsVisible() {
 }
 
 // Function UMG.UserWidget.GetAnimationCurrentTime
-inline float UUserWidget::GetAnimationCurrentTime(struct Unknown InAnimation) {
+inline float UUserWidget::GetAnimationCurrentTime(struct UWidgetAnimation InAnimation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.GetAnimationCurrentTime");
 
 	struct GetAnimationCurrentTime_Params {
-		struct Unknown InAnimation;
+		struct UWidgetAnimation InAnimation;
 		float ReturnValue;
 
 	}; GetAnimationCurrentTime_Params Params;
@@ -4679,12 +4679,12 @@ inline float UUserWidget::GetAnimationCurrentTime(struct Unknown InAnimation) {
 }
 
 // Function UMG.UserWidget.GetAnchorsInViewport
-inline struct Unknown UUserWidget::GetAnchorsInViewport() {
+inline struct FAnchors UUserWidget::GetAnchorsInViewport() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.GetAnchorsInViewport");
 
 	struct GetAnchorsInViewport_Params {
 		
-		struct Unknown ReturnValue;
+		struct FAnchors ReturnValue;
 
 	}; GetAnchorsInViewport_Params Params;
 
@@ -4697,12 +4697,12 @@ inline struct Unknown UUserWidget::GetAnchorsInViewport() {
 }
 
 // Function UMG.UserWidget.GetAlignmentInViewport
-inline struct Unknown UUserWidget::GetAlignmentInViewport() {
+inline struct FVector2D UUserWidget::GetAlignmentInViewport() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.GetAlignmentInViewport");
 
 	struct GetAlignmentInViewport_Params {
 		
-		struct Unknown ReturnValue;
+		struct FVector2D ReturnValue;
 
 	}; GetAlignmentInViewport_Params Params;
 
@@ -4757,11 +4757,11 @@ inline void UUserWidget::CancelLatentActions() {
 }
 
 // Function UMG.UserWidget.BindToAnimationStarted
-inline void UUserWidget::BindToAnimationStarted(struct Unknown Animation, struct FDelegate Delegate) {
+inline void UUserWidget::BindToAnimationStarted(struct UWidgetAnimation Animation, struct FDelegate Delegate) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.BindToAnimationStarted");
 
 	struct BindToAnimationStarted_Params {
-		struct Unknown Animation;
+		struct UWidgetAnimation Animation;
 		struct FDelegate Delegate;
 	}; BindToAnimationStarted_Params Params;
 
@@ -4774,11 +4774,11 @@ inline void UUserWidget::BindToAnimationStarted(struct Unknown Animation, struct
 }
 
 // Function UMG.UserWidget.BindToAnimationFinished
-inline void UUserWidget::BindToAnimationFinished(struct Unknown Animation, struct FDelegate Delegate) {
+inline void UUserWidget::BindToAnimationFinished(struct UWidgetAnimation Animation, struct FDelegate Delegate) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.BindToAnimationFinished");
 
 	struct BindToAnimationFinished_Params {
-		struct Unknown Animation;
+		struct UWidgetAnimation Animation;
 		struct FDelegate Delegate;
 	}; BindToAnimationFinished_Params Params;
 
@@ -4791,13 +4791,13 @@ inline void UUserWidget::BindToAnimationFinished(struct Unknown Animation, struc
 }
 
 // Function UMG.UserWidget.BindToAnimationEvent
-inline void UUserWidget::BindToAnimationEvent(struct Unknown Animation, struct FDelegate Delegate, enum class Unknow AnimationEvent, struct FName UserTag) {
+inline void UUserWidget::BindToAnimationEvent(struct UWidgetAnimation Animation, struct FDelegate Delegate, enum class EWidgetAnimationEvent AnimationEvent, struct FName UserTag) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UserWidget.BindToAnimationEvent");
 
 	struct BindToAnimationEvent_Params {
-		struct Unknown Animation;
+		struct UWidgetAnimation Animation;
 		struct FDelegate Delegate;
-		enum class Unknow AnimationEvent;
+		enum class EWidgetAnimationEvent AnimationEvent;
 		struct FName UserTag;
 	}; BindToAnimationEvent_Params Params;
 
@@ -4865,11 +4865,11 @@ inline char UPanelWidget::RemoveChildAt(int32_t Index) {
 }
 
 // Function UMG.PanelWidget.RemoveChild
-inline char UPanelWidget::RemoveChild(struct Unknown Content) {
+inline char UPanelWidget::RemoveChild(struct UWidget Content) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.PanelWidget.RemoveChild");
 
 	struct RemoveChild_Params {
-		struct Unknown Content;
+		struct UWidget Content;
 		char ReturnValue;
 
 	}; RemoveChild_Params Params;
@@ -4884,11 +4884,11 @@ inline char UPanelWidget::RemoveChild(struct Unknown Content) {
 }
 
 // Function UMG.PanelWidget.HasChild
-inline char UPanelWidget::HasChild(struct Unknown Content) {
+inline char UPanelWidget::HasChild(struct UWidget Content) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.PanelWidget.HasChild");
 
 	struct HasChild_Params {
-		struct Unknown Content;
+		struct UWidget Content;
 		char ReturnValue;
 
 	}; HasChild_Params Params;
@@ -4939,11 +4939,11 @@ inline int32_t UPanelWidget::GetChildrenCount() {
 }
 
 // Function UMG.PanelWidget.GetChildIndex
-inline int32_t UPanelWidget::GetChildIndex(struct Unknown Content) {
+inline int32_t UPanelWidget::GetChildIndex(struct UWidget Content) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.PanelWidget.GetChildIndex");
 
 	struct GetChildIndex_Params {
-		struct Unknown Content;
+		struct UWidget Content;
 		int32_t ReturnValue;
 
 	}; GetChildIndex_Params Params;
@@ -4958,12 +4958,12 @@ inline int32_t UPanelWidget::GetChildIndex(struct Unknown Content) {
 }
 
 // Function UMG.PanelWidget.GetChildAt
-inline struct Unknown UPanelWidget::GetChildAt(int32_t Index) {
+inline struct UWidget UPanelWidget::GetChildAt(int32_t Index) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.PanelWidget.GetChildAt");
 
 	struct GetChildAt_Params {
 		int32_t Index;
-		struct Unknown ReturnValue;
+		struct UWidget ReturnValue;
 
 	}; GetChildAt_Params Params;
 
@@ -4977,12 +4977,12 @@ inline struct Unknown UPanelWidget::GetChildAt(int32_t Index) {
 }
 
 // Function UMG.PanelWidget.GetAllChildren
-inline struct TArray<Unknown> UPanelWidget::GetAllChildren() {
+inline struct TArray<struct UWidget> UPanelWidget::GetAllChildren() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.PanelWidget.GetAllChildren");
 
 	struct GetAllChildren_Params {
 		
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<struct UWidget> ReturnValue;
 
 	}; GetAllChildren_Params Params;
 
@@ -5009,12 +5009,12 @@ inline void UPanelWidget::ClearChildren() {
 }
 
 // Function UMG.PanelWidget.AddChild
-inline struct Unknown UPanelWidget::AddChild(struct Unknown Content) {
+inline struct UPanelSlot UPanelWidget::AddChild(struct UWidget Content) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.PanelWidget.AddChild");
 
 	struct AddChild_Params {
-		struct Unknown Content;
-		struct Unknown ReturnValue;
+		struct UWidget Content;
+		struct UPanelSlot ReturnValue;
 
 	}; AddChild_Params Params;
 
@@ -5043,11 +5043,11 @@ inline void UBorder::SetVerticalAlignment(char InVerticalAlignment) {
 }
 
 // Function UMG.Border.SetPadding
-inline void UBorder::SetPadding(struct Unknown InPadding) {
+inline void UBorder::SetPadding(struct FMargin InPadding) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Border.SetPadding");
 
 	struct SetPadding_Params {
-		struct Unknown InPadding;
+		struct FMargin InPadding;
 	}; SetPadding_Params Params;
 
 	Params.InPadding = InPadding;
@@ -5073,11 +5073,11 @@ inline void UBorder::SetHorizontalAlignment(char InHorizontalAlignment) {
 }
 
 // Function UMG.Border.SetDesiredSizeScale
-inline void UBorder::SetDesiredSizeScale(struct Unknown InScale) {
+inline void UBorder::SetDesiredSizeScale(struct FVector2D InScale) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Border.SetDesiredSizeScale");
 
 	struct SetDesiredSizeScale_Params {
-		struct Unknown InScale;
+		struct FVector2D InScale;
 	}; SetDesiredSizeScale_Params Params;
 
 	Params.InScale = InScale;
@@ -5088,11 +5088,11 @@ inline void UBorder::SetDesiredSizeScale(struct Unknown InScale) {
 }
 
 // Function UMG.Border.SetContentColorAndOpacity
-inline void UBorder::SetContentColorAndOpacity(struct Unknown InContentColorAndOpacity) {
+inline void UBorder::SetContentColorAndOpacity(struct FLinearColor InContentColorAndOpacity) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Border.SetContentColorAndOpacity");
 
 	struct SetContentColorAndOpacity_Params {
-		struct Unknown InContentColorAndOpacity;
+		struct FLinearColor InContentColorAndOpacity;
 	}; SetContentColorAndOpacity_Params Params;
 
 	Params.InContentColorAndOpacity = InContentColorAndOpacity;
@@ -5103,11 +5103,11 @@ inline void UBorder::SetContentColorAndOpacity(struct Unknown InContentColorAndO
 }
 
 // Function UMG.Border.SetBrushFromTexture
-inline void UBorder::SetBrushFromTexture(struct Unknown Texture) {
+inline void UBorder::SetBrushFromTexture(struct UTexture2D Texture) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Border.SetBrushFromTexture");
 
 	struct SetBrushFromTexture_Params {
-		struct Unknown Texture;
+		struct UTexture2D Texture;
 	}; SetBrushFromTexture_Params Params;
 
 	Params.Texture = Texture;
@@ -5118,11 +5118,11 @@ inline void UBorder::SetBrushFromTexture(struct Unknown Texture) {
 }
 
 // Function UMG.Border.SetBrushFromMaterial
-inline void UBorder::SetBrushFromMaterial(struct Unknown Material) {
+inline void UBorder::SetBrushFromMaterial(struct UMaterialInterface Material) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Border.SetBrushFromMaterial");
 
 	struct SetBrushFromMaterial_Params {
-		struct Unknown Material;
+		struct UMaterialInterface Material;
 	}; SetBrushFromMaterial_Params Params;
 
 	Params.Material = Material;
@@ -5133,11 +5133,11 @@ inline void UBorder::SetBrushFromMaterial(struct Unknown Material) {
 }
 
 // Function UMG.Border.SetBrushFromAsset
-inline void UBorder::SetBrushFromAsset(struct Unknown Asset) {
+inline void UBorder::SetBrushFromAsset(struct USlateBrushAsset Asset) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Border.SetBrushFromAsset");
 
 	struct SetBrushFromAsset_Params {
-		struct Unknown Asset;
+		struct USlateBrushAsset Asset;
 	}; SetBrushFromAsset_Params Params;
 
 	Params.Asset = Asset;
@@ -5148,11 +5148,11 @@ inline void UBorder::SetBrushFromAsset(struct Unknown Asset) {
 }
 
 // Function UMG.Border.SetBrushColor
-inline void UBorder::SetBrushColor(struct Unknown InBrushColor) {
+inline void UBorder::SetBrushColor(struct FLinearColor InBrushColor) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Border.SetBrushColor");
 
 	struct SetBrushColor_Params {
-		struct Unknown InBrushColor;
+		struct FLinearColor InBrushColor;
 	}; SetBrushColor_Params Params;
 
 	Params.InBrushColor = InBrushColor;
@@ -5163,11 +5163,11 @@ inline void UBorder::SetBrushColor(struct Unknown InBrushColor) {
 }
 
 // Function UMG.Border.SetBrush
-inline void UBorder::SetBrush(struct Unknown& InBrush) {
+inline void UBorder::SetBrush(struct FSlateBrush& InBrush) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Border.SetBrush");
 
 	struct SetBrush_Params {
-		struct Unknown& InBrush;
+		struct FSlateBrush& InBrush;
 	}; SetBrush_Params Params;
 
 
@@ -5180,12 +5180,12 @@ inline void UBorder::SetBrush(struct Unknown& InBrush) {
 }
 
 // Function UMG.Border.GetDynamicMaterial
-inline struct Unknown UBorder::GetDynamicMaterial() {
+inline struct UMaterialInstanceDynamic UBorder::GetDynamicMaterial() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Border.GetDynamicMaterial");
 
 	struct GetDynamicMaterial_Params {
 		
-		struct Unknown ReturnValue;
+		struct UMaterialInstanceDynamic ReturnValue;
 
 	}; GetDynamicMaterial_Params Params;
 
@@ -5198,12 +5198,12 @@ inline struct Unknown UBorder::GetDynamicMaterial() {
 }
 
 // Function UMG.AsyncTaskDownloadImage.DownloadImage
-inline struct Unknown UAsyncTaskDownloadImage::DownloadImage(struct FString URL) {
+inline struct UAsyncTaskDownloadImage UAsyncTaskDownloadImage::DownloadImage(struct FString URL) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.AsyncTaskDownloadImage.DownloadImage");
 
 	struct DownloadImage_Params {
 		struct FString URL;
-		struct Unknown ReturnValue;
+		struct UAsyncTaskDownloadImage ReturnValue;
 
 	}; DownloadImage_Params Params;
 
@@ -5232,11 +5232,11 @@ inline void UBackgroundBlur::SetVerticalAlignment(char InVerticalAlignment) {
 }
 
 // Function UMG.BackgroundBlur.SetPadding
-inline void UBackgroundBlur::SetPadding(struct Unknown InPadding) {
+inline void UBackgroundBlur::SetPadding(struct FMargin InPadding) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.BackgroundBlur.SetPadding");
 
 	struct SetPadding_Params {
-		struct Unknown InPadding;
+		struct FMargin InPadding;
 	}; SetPadding_Params Params;
 
 	Params.InPadding = InPadding;
@@ -5247,11 +5247,11 @@ inline void UBackgroundBlur::SetPadding(struct Unknown InPadding) {
 }
 
 // Function UMG.BackgroundBlur.SetLowQualityFallbackBrush
-inline void UBackgroundBlur::SetLowQualityFallbackBrush(struct Unknown& InBrush) {
+inline void UBackgroundBlur::SetLowQualityFallbackBrush(struct FSlateBrush& InBrush) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.BackgroundBlur.SetLowQualityFallbackBrush");
 
 	struct SetLowQualityFallbackBrush_Params {
-		struct Unknown& InBrush;
+		struct FSlateBrush& InBrush;
 	}; SetLowQualityFallbackBrush_Params Params;
 
 
@@ -5339,11 +5339,11 @@ inline void UBackgroundBlurSlot::SetVerticalAlignment(char InVerticalAlignment) 
 }
 
 // Function UMG.BackgroundBlurSlot.SetPadding
-inline void UBackgroundBlurSlot::SetPadding(struct Unknown InPadding) {
+inline void UBackgroundBlurSlot::SetPadding(struct FMargin InPadding) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.BackgroundBlurSlot.SetPadding");
 
 	struct SetPadding_Params {
-		struct Unknown InPadding;
+		struct FMargin InPadding;
 	}; SetPadding_Params Params;
 
 	Params.InPadding = InPadding;
@@ -5384,11 +5384,11 @@ inline void UBorderSlot::SetVerticalAlignment(char InVerticalAlignment) {
 }
 
 // Function UMG.BorderSlot.SetPadding
-inline void UBorderSlot::SetPadding(struct Unknown InPadding) {
+inline void UBorderSlot::SetPadding(struct FMargin InPadding) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.BorderSlot.SetPadding");
 
 	struct SetPadding_Params {
-		struct Unknown InPadding;
+		struct FMargin InPadding;
 	}; SetPadding_Params Params;
 
 	Params.InPadding = InPadding;
@@ -5429,11 +5429,11 @@ inline void UButton::SetTouchMethod(char InTouchMethod) {
 }
 
 // Function UMG.Button.SetStyle
-inline void UButton::SetStyle(struct Unknown& InStyle) {
+inline void UButton::SetStyle(struct FButtonStyle& InStyle) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Button.SetStyle");
 
 	struct SetStyle_Params {
-		struct Unknown& InStyle;
+		struct FButtonStyle& InStyle;
 	}; SetStyle_Params Params;
 
 
@@ -5461,11 +5461,11 @@ inline void UButton::SetPressMethod(char InPressMethod) {
 }
 
 // Function UMG.Button.SetColorAndOpacity
-inline void UButton::SetColorAndOpacity(struct Unknown InColorAndOpacity) {
+inline void UButton::SetColorAndOpacity(struct FLinearColor InColorAndOpacity) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Button.SetColorAndOpacity");
 
 	struct SetColorAndOpacity_Params {
-		struct Unknown InColorAndOpacity;
+		struct FLinearColor InColorAndOpacity;
 	}; SetColorAndOpacity_Params Params;
 
 	Params.InColorAndOpacity = InColorAndOpacity;
@@ -5491,11 +5491,11 @@ inline void UButton::SetClickMethod(char InClickMethod) {
 }
 
 // Function UMG.Button.SetBackgroundColor
-inline void UButton::SetBackgroundColor(struct Unknown InBackgroundColor) {
+inline void UButton::SetBackgroundColor(struct FLinearColor InBackgroundColor) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Button.SetBackgroundColor");
 
 	struct SetBackgroundColor_Params {
-		struct Unknown InBackgroundColor;
+		struct FLinearColor InBackgroundColor;
 	}; SetBackgroundColor_Params Params;
 
 	Params.InBackgroundColor = InBackgroundColor;
@@ -5539,11 +5539,11 @@ inline void UButtonSlot::SetVerticalAlignment(char InVerticalAlignment) {
 }
 
 // Function UMG.ButtonSlot.SetPadding
-inline void UButtonSlot::SetPadding(struct Unknown InPadding) {
+inline void UButtonSlot::SetPadding(struct FMargin InPadding) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.ButtonSlot.SetPadding");
 
 	struct SetPadding_Params {
-		struct Unknown InPadding;
+		struct FMargin InPadding;
 	}; SetPadding_Params Params;
 
 	Params.InPadding = InPadding;
@@ -5584,11 +5584,11 @@ inline void UCanvasPanelSlot::SetZOrder(int32_t InZOrder) {
 }
 
 // Function UMG.CanvasPanelSlot.SetSize
-inline void UCanvasPanelSlot::SetSize(struct Unknown InSize) {
+inline void UCanvasPanelSlot::SetSize(struct FVector2D InSize) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.CanvasPanelSlot.SetSize");
 
 	struct SetSize_Params {
-		struct Unknown InSize;
+		struct FVector2D InSize;
 	}; SetSize_Params Params;
 
 	Params.InSize = InSize;
@@ -5599,11 +5599,11 @@ inline void UCanvasPanelSlot::SetSize(struct Unknown InSize) {
 }
 
 // Function UMG.CanvasPanelSlot.SetPosition
-inline void UCanvasPanelSlot::SetPosition(struct Unknown InPosition) {
+inline void UCanvasPanelSlot::SetPosition(struct FVector2D InPosition) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.CanvasPanelSlot.SetPosition");
 
 	struct SetPosition_Params {
-		struct Unknown InPosition;
+		struct FVector2D InPosition;
 	}; SetPosition_Params Params;
 
 	Params.InPosition = InPosition;
@@ -5614,11 +5614,11 @@ inline void UCanvasPanelSlot::SetPosition(struct Unknown InPosition) {
 }
 
 // Function UMG.CanvasPanelSlot.SetOffsets
-inline void UCanvasPanelSlot::SetOffsets(struct Unknown InOffset) {
+inline void UCanvasPanelSlot::SetOffsets(struct FMargin InOffset) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.CanvasPanelSlot.SetOffsets");
 
 	struct SetOffsets_Params {
-		struct Unknown InOffset;
+		struct FMargin InOffset;
 	}; SetOffsets_Params Params;
 
 	Params.InOffset = InOffset;
@@ -5629,11 +5629,11 @@ inline void UCanvasPanelSlot::SetOffsets(struct Unknown InOffset) {
 }
 
 // Function UMG.CanvasPanelSlot.SetMinimum
-inline void UCanvasPanelSlot::SetMinimum(struct Unknown InMinimumAnchors) {
+inline void UCanvasPanelSlot::SetMinimum(struct FVector2D InMinimumAnchors) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.CanvasPanelSlot.SetMinimum");
 
 	struct SetMinimum_Params {
-		struct Unknown InMinimumAnchors;
+		struct FVector2D InMinimumAnchors;
 	}; SetMinimum_Params Params;
 
 	Params.InMinimumAnchors = InMinimumAnchors;
@@ -5644,11 +5644,11 @@ inline void UCanvasPanelSlot::SetMinimum(struct Unknown InMinimumAnchors) {
 }
 
 // Function UMG.CanvasPanelSlot.SetMaximum
-inline void UCanvasPanelSlot::SetMaximum(struct Unknown InMaximumAnchors) {
+inline void UCanvasPanelSlot::SetMaximum(struct FVector2D InMaximumAnchors) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.CanvasPanelSlot.SetMaximum");
 
 	struct SetMaximum_Params {
-		struct Unknown InMaximumAnchors;
+		struct FVector2D InMaximumAnchors;
 	}; SetMaximum_Params Params;
 
 	Params.InMaximumAnchors = InMaximumAnchors;
@@ -5659,11 +5659,11 @@ inline void UCanvasPanelSlot::SetMaximum(struct Unknown InMaximumAnchors) {
 }
 
 // Function UMG.CanvasPanelSlot.SetLayout
-inline void UCanvasPanelSlot::SetLayout(struct Unknown& InLayoutData) {
+inline void UCanvasPanelSlot::SetLayout(struct FAnchorData& InLayoutData) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.CanvasPanelSlot.SetLayout");
 
 	struct SetLayout_Params {
-		struct Unknown& InLayoutData;
+		struct FAnchorData& InLayoutData;
 	}; SetLayout_Params Params;
 
 
@@ -5691,11 +5691,11 @@ inline void UCanvasPanelSlot::SetAutoSize(char InbAutoSize) {
 }
 
 // Function UMG.CanvasPanelSlot.SetAnchors
-inline void UCanvasPanelSlot::SetAnchors(struct Unknown InAnchors) {
+inline void UCanvasPanelSlot::SetAnchors(struct FAnchors InAnchors) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.CanvasPanelSlot.SetAnchors");
 
 	struct SetAnchors_Params {
-		struct Unknown InAnchors;
+		struct FAnchors InAnchors;
 	}; SetAnchors_Params Params;
 
 	Params.InAnchors = InAnchors;
@@ -5706,11 +5706,11 @@ inline void UCanvasPanelSlot::SetAnchors(struct Unknown InAnchors) {
 }
 
 // Function UMG.CanvasPanelSlot.SetAlignment
-inline void UCanvasPanelSlot::SetAlignment(struct Unknown InAlignment) {
+inline void UCanvasPanelSlot::SetAlignment(struct FVector2D InAlignment) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.CanvasPanelSlot.SetAlignment");
 
 	struct SetAlignment_Params {
-		struct Unknown InAlignment;
+		struct FVector2D InAlignment;
 	}; SetAlignment_Params Params;
 
 	Params.InAlignment = InAlignment;
@@ -5739,12 +5739,12 @@ inline int32_t UCanvasPanelSlot::GetZOrder() {
 }
 
 // Function UMG.CanvasPanelSlot.GetSize
-inline struct Unknown UCanvasPanelSlot::GetSize() {
+inline struct FVector2D UCanvasPanelSlot::GetSize() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.CanvasPanelSlot.GetSize");
 
 	struct GetSize_Params {
 		
-		struct Unknown ReturnValue;
+		struct FVector2D ReturnValue;
 
 	}; GetSize_Params Params;
 
@@ -5757,12 +5757,12 @@ inline struct Unknown UCanvasPanelSlot::GetSize() {
 }
 
 // Function UMG.CanvasPanelSlot.GetPosition
-inline struct Unknown UCanvasPanelSlot::GetPosition() {
+inline struct FVector2D UCanvasPanelSlot::GetPosition() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.CanvasPanelSlot.GetPosition");
 
 	struct GetPosition_Params {
 		
-		struct Unknown ReturnValue;
+		struct FVector2D ReturnValue;
 
 	}; GetPosition_Params Params;
 
@@ -5775,12 +5775,12 @@ inline struct Unknown UCanvasPanelSlot::GetPosition() {
 }
 
 // Function UMG.CanvasPanelSlot.GetOffsets
-inline struct Unknown UCanvasPanelSlot::GetOffsets() {
+inline struct FMargin UCanvasPanelSlot::GetOffsets() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.CanvasPanelSlot.GetOffsets");
 
 	struct GetOffsets_Params {
 		
-		struct Unknown ReturnValue;
+		struct FMargin ReturnValue;
 
 	}; GetOffsets_Params Params;
 
@@ -5793,12 +5793,12 @@ inline struct Unknown UCanvasPanelSlot::GetOffsets() {
 }
 
 // Function UMG.CanvasPanelSlot.GetLayout
-inline struct Unknown UCanvasPanelSlot::GetLayout() {
+inline struct FAnchorData UCanvasPanelSlot::GetLayout() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.CanvasPanelSlot.GetLayout");
 
 	struct GetLayout_Params {
 		
-		struct Unknown ReturnValue;
+		struct FAnchorData ReturnValue;
 
 	}; GetLayout_Params Params;
 
@@ -5829,12 +5829,12 @@ inline char UCanvasPanelSlot::GetAutoSize() {
 }
 
 // Function UMG.CanvasPanelSlot.GetAnchors
-inline struct Unknown UCanvasPanelSlot::GetAnchors() {
+inline struct FAnchors UCanvasPanelSlot::GetAnchors() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.CanvasPanelSlot.GetAnchors");
 
 	struct GetAnchors_Params {
 		
-		struct Unknown ReturnValue;
+		struct FAnchors ReturnValue;
 
 	}; GetAnchors_Params Params;
 
@@ -5847,12 +5847,12 @@ inline struct Unknown UCanvasPanelSlot::GetAnchors() {
 }
 
 // Function UMG.CanvasPanelSlot.GetAlignment
-inline struct Unknown UCanvasPanelSlot::GetAlignment() {
+inline struct FVector2D UCanvasPanelSlot::GetAlignment() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.CanvasPanelSlot.GetAlignment");
 
 	struct GetAlignment_Params {
 		
-		struct Unknown ReturnValue;
+		struct FVector2D ReturnValue;
 
 	}; GetAlignment_Params Params;
 
@@ -5880,11 +5880,11 @@ inline void UCheckBox::SetIsChecked(char InIsChecked) {
 }
 
 // Function UMG.CheckBox.SetCheckedState
-inline void UCheckBox::SetCheckedState(enum class Unknow InCheckedState) {
+inline void UCheckBox::SetCheckedState(enum class ECheckBoxState InCheckedState) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.CheckBox.SetCheckedState");
 
 	struct SetCheckedState_Params {
-		enum class Unknow InCheckedState;
+		enum class ECheckBoxState InCheckedState;
 	}; SetCheckedState_Params Params;
 
 	Params.InCheckedState = InCheckedState;
@@ -5931,12 +5931,12 @@ inline char UCheckBox::IsChecked() {
 }
 
 // Function UMG.CheckBox.GetCheckedState
-inline enum class Unknow UCheckBox::GetCheckedState() {
+inline enum class ECheckBoxState UCheckBox::GetCheckedState() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.CheckBox.GetCheckedState");
 
 	struct GetCheckedState_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class ECheckBoxState ReturnValue;
 
 	}; GetCheckedState_Params Params;
 
@@ -6241,11 +6241,11 @@ inline void UComboBoxString::AddOption(struct FString Option) {
 }
 
 // Function UMG.DragDropOperation.Drop
-inline void UDragDropOperation::Drop(struct Unknown& PointerEvent) {
+inline void UDragDropOperation::Drop(struct FPointerEvent& PointerEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.DragDropOperation.Drop");
 
 	struct Drop_Params {
-		struct Unknown& PointerEvent;
+		struct FPointerEvent& PointerEvent;
 	}; Drop_Params Params;
 
 
@@ -6258,11 +6258,11 @@ inline void UDragDropOperation::Drop(struct Unknown& PointerEvent) {
 }
 
 // Function UMG.DragDropOperation.Dragged
-inline void UDragDropOperation::Dragged(struct Unknown& PointerEvent) {
+inline void UDragDropOperation::Dragged(struct FPointerEvent& PointerEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.DragDropOperation.Dragged");
 
 	struct Dragged_Params {
-		struct Unknown& PointerEvent;
+		struct FPointerEvent& PointerEvent;
 	}; Dragged_Params Params;
 
 
@@ -6275,11 +6275,11 @@ inline void UDragDropOperation::Dragged(struct Unknown& PointerEvent) {
 }
 
 // Function UMG.DragDropOperation.DragCancelled
-inline void UDragDropOperation::DragCancelled(struct Unknown& PointerEvent) {
+inline void UDragDropOperation::DragCancelled(struct FPointerEvent& PointerEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.DragDropOperation.DragCancelled");
 
 	struct DragCancelled_Params {
-		struct Unknown& PointerEvent;
+		struct FPointerEvent& PointerEvent;
 	}; DragCancelled_Params Params;
 
 
@@ -6292,11 +6292,11 @@ inline void UDragDropOperation::DragCancelled(struct Unknown& PointerEvent) {
 }
 
 // Function UMG.DynamicEntryBoxBase.SetEntrySpacing
-inline void UDynamicEntryBoxBase::SetEntrySpacing(struct Unknown& InEntrySpacing) {
+inline void UDynamicEntryBoxBase::SetEntrySpacing(struct FVector2D& InEntrySpacing) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.DynamicEntryBoxBase.SetEntrySpacing");
 
 	struct SetEntrySpacing_Params {
-		struct Unknown& InEntrySpacing;
+		struct FVector2D& InEntrySpacing;
 	}; SetEntrySpacing_Params Params;
 
 
@@ -6327,12 +6327,12 @@ inline int32_t UDynamicEntryBoxBase::GetNumEntries() {
 }
 
 // Function UMG.DynamicEntryBoxBase.GetAllEntries
-inline struct TArray<Unknown> UDynamicEntryBoxBase::GetAllEntries() {
+inline struct TArray<struct UUserWidget> UDynamicEntryBoxBase::GetAllEntries() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.DynamicEntryBoxBase.GetAllEntries");
 
 	struct GetAllEntries_Params {
 		
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<struct UUserWidget> ReturnValue;
 
 	}; GetAllEntries_Params Params;
 
@@ -6360,11 +6360,11 @@ inline void UDynamicEntryBox::Reset(char bDeleteWidgets) {
 }
 
 // Function UMG.DynamicEntryBox.RemoveEntry
-inline void UDynamicEntryBox::RemoveEntry(struct Unknown EntryWidget) {
+inline void UDynamicEntryBox::RemoveEntry(struct UUserWidget EntryWidget) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.DynamicEntryBox.RemoveEntry");
 
 	struct RemoveEntry_Params {
-		struct Unknown EntryWidget;
+		struct UUserWidget EntryWidget;
 	}; RemoveEntry_Params Params;
 
 	Params.EntryWidget = EntryWidget;
@@ -6375,12 +6375,12 @@ inline void UDynamicEntryBox::RemoveEntry(struct Unknown EntryWidget) {
 }
 
 // Function UMG.DynamicEntryBox.BP_CreateEntryOfClass
-inline struct Unknown UDynamicEntryBox::BP_CreateEntryOfClass(struct Unknown* EntryClass) {
+inline struct UUserWidget UDynamicEntryBox::BP_CreateEntryOfClass(struct UClass* EntryClass) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.DynamicEntryBox.BP_CreateEntryOfClass");
 
 	struct BP_CreateEntryOfClass_Params {
-		struct Unknown* EntryClass;
-		struct Unknown ReturnValue;
+		struct UClass* EntryClass;
+		struct UUserWidget ReturnValue;
 
 	}; BP_CreateEntryOfClass_Params Params;
 
@@ -6394,12 +6394,12 @@ inline struct Unknown UDynamicEntryBox::BP_CreateEntryOfClass(struct Unknown* En
 }
 
 // Function UMG.DynamicEntryBox.BP_CreateEntry
-inline struct Unknown UDynamicEntryBox::BP_CreateEntry() {
+inline struct UUserWidget UDynamicEntryBox::BP_CreateEntry() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.DynamicEntryBox.BP_CreateEntry");
 
 	struct BP_CreateEntry_Params {
 		
-		struct Unknown ReturnValue;
+		struct UUserWidget ReturnValue;
 
 	}; BP_CreateEntry_Params Params;
 
@@ -6813,14 +6813,14 @@ inline void UGridPanel::SetColumnFill(int32_t columnIndex, float Coefficient) {
 }
 
 // Function UMG.GridPanel.AddChildToGrid
-inline struct Unknown UGridPanel::AddChildToGrid(struct Unknown Content, int32_t InRow, int32_t InColumn) {
+inline struct UGridSlot UGridPanel::AddChildToGrid(struct UWidget Content, int32_t InRow, int32_t InColumn) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.GridPanel.AddChildToGrid");
 
 	struct AddChildToGrid_Params {
-		struct Unknown Content;
+		struct UWidget Content;
 		int32_t InRow;
 		int32_t InColumn;
-		struct Unknown ReturnValue;
+		struct UGridSlot ReturnValue;
 
 	}; AddChildToGrid_Params Params;
 
@@ -6881,11 +6881,11 @@ inline void UGridSlot::SetRow(int32_t InRow) {
 }
 
 // Function UMG.GridSlot.SetPadding
-inline void UGridSlot::SetPadding(struct Unknown InPadding) {
+inline void UGridSlot::SetPadding(struct FMargin InPadding) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.GridSlot.SetPadding");
 
 	struct SetPadding_Params {
-		struct Unknown InPadding;
+		struct FMargin InPadding;
 	}; SetPadding_Params Params;
 
 	Params.InPadding = InPadding;
@@ -6896,11 +6896,11 @@ inline void UGridSlot::SetPadding(struct Unknown InPadding) {
 }
 
 // Function UMG.GridSlot.SetNudge
-inline void UGridSlot::SetNudge(struct Unknown InNudge) {
+inline void UGridSlot::SetNudge(struct FVector2D InNudge) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.GridSlot.SetNudge");
 
 	struct SetNudge_Params {
-		struct Unknown InNudge;
+		struct FVector2D InNudge;
 	}; SetNudge_Params Params;
 
 	Params.InNudge = InNudge;
@@ -6986,11 +6986,11 @@ inline void UHorizontalBoxSlot::SetVerticalAlignment(char InVerticalAlignment) {
 }
 
 // Function UMG.HorizontalBoxSlot.SetSize
-inline void UHorizontalBoxSlot::SetSize(struct Unknown InSize) {
+inline void UHorizontalBoxSlot::SetSize(struct FSlateChildSize InSize) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.HorizontalBoxSlot.SetSize");
 
 	struct SetSize_Params {
-		struct Unknown InSize;
+		struct FSlateChildSize InSize;
 	}; SetSize_Params Params;
 
 	Params.InSize = InSize;
@@ -7001,11 +7001,11 @@ inline void UHorizontalBoxSlot::SetSize(struct Unknown InSize) {
 }
 
 // Function UMG.HorizontalBoxSlot.SetPadding
-inline void UHorizontalBoxSlot::SetPadding(struct Unknown InPadding) {
+inline void UHorizontalBoxSlot::SetPadding(struct FMargin InPadding) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.HorizontalBoxSlot.SetPadding");
 
 	struct SetPadding_Params {
-		struct Unknown InPadding;
+		struct FMargin InPadding;
 	}; SetPadding_Params Params;
 
 	Params.InPadding = InPadding;
@@ -7060,11 +7060,11 @@ inline void UImage::SetGammaCorrect() {
 }
 
 // Function UMG.Image.SetColorAndOpacity
-inline void UImage::SetColorAndOpacity(struct Unknown InColorAndOpacity) {
+inline void UImage::SetColorAndOpacity(struct FLinearColor InColorAndOpacity) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Image.SetColorAndOpacity");
 
 	struct SetColorAndOpacity_Params {
-		struct Unknown InColorAndOpacity;
+		struct FLinearColor InColorAndOpacity;
 	}; SetColorAndOpacity_Params Params;
 
 	Params.InColorAndOpacity = InColorAndOpacity;
@@ -7075,11 +7075,11 @@ inline void UImage::SetColorAndOpacity(struct Unknown InColorAndOpacity) {
 }
 
 // Function UMG.Image.SetBrushTintColor
-inline void UImage::SetBrushTintColor(struct Unknown TintColor) {
+inline void UImage::SetBrushTintColor(struct FSlateColor TintColor) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Image.SetBrushTintColor");
 
 	struct SetBrushTintColor_Params {
-		struct Unknown TintColor;
+		struct FSlateColor TintColor;
 	}; SetBrushTintColor_Params Params;
 
 	Params.TintColor = TintColor;
@@ -7090,11 +7090,11 @@ inline void UImage::SetBrushTintColor(struct Unknown TintColor) {
 }
 
 // Function UMG.Image.SetBrushSize
-inline void UImage::SetBrushSize(struct Unknown DesiredSize) {
+inline void UImage::SetBrushSize(struct FVector2D DesiredSize) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Image.SetBrushSize");
 
 	struct SetBrushSize_Params {
-		struct Unknown DesiredSize;
+		struct FVector2D DesiredSize;
 	}; SetBrushSize_Params Params;
 
 	Params.DesiredSize = DesiredSize;
@@ -7105,11 +7105,11 @@ inline void UImage::SetBrushSize(struct Unknown DesiredSize) {
 }
 
 // Function UMG.Image.SetBrushResourceObject
-inline void UImage::SetBrushResourceObject(struct Unknown ResourceObject) {
+inline void UImage::SetBrushResourceObject(struct Object ResourceObject) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Image.SetBrushResourceObject");
 
 	struct SetBrushResourceObject_Params {
-		struct Unknown ResourceObject;
+		struct Object ResourceObject;
 	}; SetBrushResourceObject_Params Params;
 
 	Params.ResourceObject = ResourceObject;
@@ -7120,11 +7120,11 @@ inline void UImage::SetBrushResourceObject(struct Unknown ResourceObject) {
 }
 
 // Function UMG.Image.SetBrushFromTextureDynamic
-inline void UImage::SetBrushFromTextureDynamic(struct Unknown Texture, char bMatchSize) {
+inline void UImage::SetBrushFromTextureDynamic(struct UTexture2DDynamic Texture, char bMatchSize) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Image.SetBrushFromTextureDynamic");
 
 	struct SetBrushFromTextureDynamic_Params {
-		struct Unknown Texture;
+		struct UTexture2DDynamic Texture;
 		char bMatchSize;
 	}; SetBrushFromTextureDynamic_Params Params;
 
@@ -7137,11 +7137,11 @@ inline void UImage::SetBrushFromTextureDynamic(struct Unknown Texture, char bMat
 }
 
 // Function UMG.Image.SetBrushFromTexture
-inline void UImage::SetBrushFromTexture(struct Unknown Texture, char bMatchSize) {
+inline void UImage::SetBrushFromTexture(struct UTexture2D Texture, char bMatchSize) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Image.SetBrushFromTexture");
 
 	struct SetBrushFromTexture_Params {
-		struct Unknown Texture;
+		struct UTexture2D Texture;
 		char bMatchSize;
 	}; SetBrushFromTexture_Params Params;
 
@@ -7154,11 +7154,11 @@ inline void UImage::SetBrushFromTexture(struct Unknown Texture, char bMatchSize)
 }
 
 // Function UMG.Image.SetBrushFromSoftTexture
-inline void UImage::SetBrushFromSoftTexture(struct Unknown SoftTexture, char bMatchSize) {
+inline void UImage::SetBrushFromSoftTexture(struct TSoftObjectPtr<UTexture2D> SoftTexture, char bMatchSize) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Image.SetBrushFromSoftTexture");
 
 	struct SetBrushFromSoftTexture_Params {
-		struct Unknown SoftTexture;
+		struct TSoftObjectPtr<UTexture2D> SoftTexture;
 		char bMatchSize;
 	}; SetBrushFromSoftTexture_Params Params;
 
@@ -7171,11 +7171,11 @@ inline void UImage::SetBrushFromSoftTexture(struct Unknown SoftTexture, char bMa
 }
 
 // Function UMG.Image.SetBrushFromSoftMaterial
-inline void UImage::SetBrushFromSoftMaterial(struct Unknown SoftMaterial) {
+inline void UImage::SetBrushFromSoftMaterial(struct TSoftObjectPtr<UMaterialInterface> SoftMaterial) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Image.SetBrushFromSoftMaterial");
 
 	struct SetBrushFromSoftMaterial_Params {
-		struct Unknown SoftMaterial;
+		struct TSoftObjectPtr<UMaterialInterface> SoftMaterial;
 	}; SetBrushFromSoftMaterial_Params Params;
 
 	Params.SoftMaterial = SoftMaterial;
@@ -7186,11 +7186,11 @@ inline void UImage::SetBrushFromSoftMaterial(struct Unknown SoftMaterial) {
 }
 
 // Function UMG.Image.SetBrushFromMaterial
-inline void UImage::SetBrushFromMaterial(struct Unknown Material) {
+inline void UImage::SetBrushFromMaterial(struct UMaterialInterface Material) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Image.SetBrushFromMaterial");
 
 	struct SetBrushFromMaterial_Params {
-		struct Unknown Material;
+		struct UMaterialInterface Material;
 	}; SetBrushFromMaterial_Params Params;
 
 	Params.Material = Material;
@@ -7201,11 +7201,11 @@ inline void UImage::SetBrushFromMaterial(struct Unknown Material) {
 }
 
 // Function UMG.Image.SetBrushFromAtlasInterface
-inline void UImage::SetBrushFromAtlasInterface(struct TScriptInterface<IUnknown> AtlasRegion, char bMatchSize) {
+inline void UImage::SetBrushFromAtlasInterface(struct TScriptInterface<ISlateTextureAtlasInterface> AtlasRegion, char bMatchSize) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Image.SetBrushFromAtlasInterface");
 
 	struct SetBrushFromAtlasInterface_Params {
-		struct TScriptInterface<IUnknown> AtlasRegion;
+		struct TScriptInterface<ISlateTextureAtlasInterface> AtlasRegion;
 		char bMatchSize;
 	}; SetBrushFromAtlasInterface_Params Params;
 
@@ -7218,11 +7218,11 @@ inline void UImage::SetBrushFromAtlasInterface(struct TScriptInterface<IUnknown>
 }
 
 // Function UMG.Image.SetBrushFromAsset
-inline void UImage::SetBrushFromAsset(struct Unknown Asset) {
+inline void UImage::SetBrushFromAsset(struct USlateBrushAsset Asset) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Image.SetBrushFromAsset");
 
 	struct SetBrushFromAsset_Params {
-		struct Unknown Asset;
+		struct USlateBrushAsset Asset;
 	}; SetBrushFromAsset_Params Params;
 
 	Params.Asset = Asset;
@@ -7233,11 +7233,11 @@ inline void UImage::SetBrushFromAsset(struct Unknown Asset) {
 }
 
 // Function UMG.Image.SetBrush
-inline void UImage::SetBrush(struct Unknown& InBrush) {
+inline void UImage::SetBrush(struct FSlateBrush& InBrush) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Image.SetBrush");
 
 	struct SetBrush_Params {
-		struct Unknown& InBrush;
+		struct FSlateBrush& InBrush;
 	}; SetBrush_Params Params;
 
 
@@ -7250,12 +7250,12 @@ inline void UImage::SetBrush(struct Unknown& InBrush) {
 }
 
 // Function UMG.Image.GetDynamicMaterial
-inline struct Unknown UImage::GetDynamicMaterial() {
+inline struct UMaterialInstanceDynamic UImage::GetDynamicMaterial() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Image.GetDynamicMaterial");
 
 	struct GetDynamicMaterial_Params {
 		
-		struct Unknown ReturnValue;
+		struct UMaterialInstanceDynamic ReturnValue;
 
 	}; GetDynamicMaterial_Params Params;
 
@@ -7268,11 +7268,11 @@ inline struct Unknown UImage::GetDynamicMaterial() {
 }
 
 // Function UMG.InputKeySelector.SetTextBlockVisibility
-inline void UInputKeySelector::SetTextBlockVisibility(enum class Unknow InVisibility) {
+inline void UInputKeySelector::SetTextBlockVisibility(enum class ESlateVisibility InVisibility) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.InputKeySelector.SetTextBlockVisibility");
 
 	struct SetTextBlockVisibility_Params {
-		enum class Unknow InVisibility;
+		enum class ESlateVisibility InVisibility;
 	}; SetTextBlockVisibility_Params Params;
 
 	Params.InVisibility = InVisibility;
@@ -7283,11 +7283,11 @@ inline void UInputKeySelector::SetTextBlockVisibility(enum class Unknow InVisibi
 }
 
 // Function UMG.InputKeySelector.SetSelectedKey
-inline void UInputKeySelector::SetSelectedKey(struct Unknown& InSelectedKey) {
+inline void UInputKeySelector::SetSelectedKey(struct FInputChord& InSelectedKey) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.InputKeySelector.SetSelectedKey");
 
 	struct SetSelectedKey_Params {
-		struct Unknown& InSelectedKey;
+		struct FInputChord& InSelectedKey;
 	}; SetSelectedKey_Params Params;
 
 
@@ -7330,11 +7330,11 @@ inline void UInputKeySelector::SetKeySelectionText(struct FText InKeySelectionTe
 }
 
 // Function UMG.InputKeySelector.SetEscapeKeys
-inline void UInputKeySelector::SetEscapeKeys(struct TArray<Unknown>& InKeys) {
+inline void UInputKeySelector::SetEscapeKeys(struct TArray<struct FKey>& InKeys) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.InputKeySelector.SetEscapeKeys");
 
 	struct SetEscapeKeys_Params {
-		struct TArray<Unknown>& InKeys;
+		struct TArray<struct FKey>& InKeys;
 	}; SetEscapeKeys_Params Params;
 
 
@@ -7377,11 +7377,11 @@ inline void UInputKeySelector::SetAllowGamepadKeys(char bInAllowGamepadKeys) {
 }
 
 // DelegateFunction UMG.InputKeySelector.OnKeySelected__DelegateSignature
-inline void UInputKeySelector::OnKeySelected__DelegateSignature(struct Unknown SelectedKey) {
+inline void UInputKeySelector::OnKeySelected__DelegateSignature(struct FInputChord SelectedKey) {
 	static auto fn = UObject::FindObject<UFunction>("DelegateFunction UMG.InputKeySelector.OnKeySelected__DelegateSignature");
 
 	struct OnKeySelected__DelegateSignature_Params {
-		struct Unknown SelectedKey;
+		struct FInputChord SelectedKey;
 	}; OnKeySelected__DelegateSignature_Params Params;
 
 	Params.SelectedKey = SelectedKey;
@@ -7501,11 +7501,11 @@ inline void UListViewBase::SetScrollOffset(float InScrollOffset) {
 }
 
 // Function UMG.ListViewBase.SetScrollbarVisibility
-inline void UListViewBase::SetScrollbarVisibility(enum class Unknow InVisibility) {
+inline void UListViewBase::SetScrollbarVisibility(enum class ESlateVisibility InVisibility) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.ListViewBase.SetScrollbarVisibility");
 
 	struct SetScrollbarVisibility_Params {
-		enum class Unknow InVisibility;
+		enum class ESlateVisibility InVisibility;
 	}; SetScrollbarVisibility_Params Params;
 
 	Params.InVisibility = InVisibility;
@@ -7572,12 +7572,12 @@ inline void UListViewBase::RegenerateAllEntries() {
 }
 
 // Function UMG.ListViewBase.GetDisplayedEntryWidgets
-inline struct TArray<Unknown> UListViewBase::GetDisplayedEntryWidgets() {
+inline struct TArray<struct UUserWidget> UListViewBase::GetDisplayedEntryWidgets() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.ListViewBase.GetDisplayedEntryWidgets");
 
 	struct GetDisplayedEntryWidgets_Params {
 		
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<struct UUserWidget> ReturnValue;
 
 	}; GetDisplayedEntryWidgets_Params Params;
 
@@ -7635,11 +7635,11 @@ inline void UListView::ScrollIndexIntoView(int32_t Index) {
 }
 
 // Function UMG.ListView.RemoveItem
-inline void UListView::RemoveItem(struct Unknown Item) {
+inline void UListView::RemoveItem(struct Object Item) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.ListView.RemoveItem");
 
 	struct RemoveItem_Params {
-		struct Unknown Item;
+		struct Object Item;
 	}; RemoveItem_Params Params;
 
 	Params.Item = Item;
@@ -7701,12 +7701,12 @@ inline int32_t UListView::GetNumItems() {
 }
 
 // Function UMG.ListView.GetListItems
-inline struct TArray<Unknown> UListView::GetListItems() {
+inline struct TArray<struct Object> UListView::GetListItems() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.ListView.GetListItems");
 
 	struct GetListItems_Params {
 		
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<struct Object> ReturnValue;
 
 	}; GetListItems_Params Params;
 
@@ -7719,12 +7719,12 @@ inline struct TArray<Unknown> UListView::GetListItems() {
 }
 
 // Function UMG.ListView.GetItemAt
-inline struct Unknown UListView::GetItemAt(int32_t Index) {
+inline struct Object UListView::GetItemAt(int32_t Index) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.ListView.GetItemAt");
 
 	struct GetItemAt_Params {
 		int32_t Index;
-		struct Unknown ReturnValue;
+		struct Object ReturnValue;
 
 	}; GetItemAt_Params Params;
 
@@ -7738,11 +7738,11 @@ inline struct Unknown UListView::GetItemAt(int32_t Index) {
 }
 
 // Function UMG.ListView.GetIndexForItem
-inline int32_t UListView::GetIndexForItem(struct Unknown Item) {
+inline int32_t UListView::GetIndexForItem(struct Object Item) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.ListView.GetIndexForItem");
 
 	struct GetIndexForItem_Params {
-		struct Unknown Item;
+		struct Object Item;
 		int32_t ReturnValue;
 
 	}; GetIndexForItem_Params Params;
@@ -7771,11 +7771,11 @@ inline void UListView::ClearListItems() {
 }
 
 // Function UMG.ListView.BP_SetSelectedItem
-inline void UListView::BP_SetSelectedItem(struct Unknown Item) {
+inline void UListView::BP_SetSelectedItem(struct Object Item) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.ListView.BP_SetSelectedItem");
 
 	struct BP_SetSelectedItem_Params {
-		struct Unknown Item;
+		struct Object Item;
 	}; BP_SetSelectedItem_Params Params;
 
 	Params.Item = Item;
@@ -7786,11 +7786,11 @@ inline void UListView::BP_SetSelectedItem(struct Unknown Item) {
 }
 
 // Function UMG.ListView.BP_SetListItems
-inline void UListView::BP_SetListItems(struct TArray<Unknown>& InListItems) {
+inline void UListView::BP_SetListItems(struct TArray<struct Object>& InListItems) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.ListView.BP_SetListItems");
 
 	struct BP_SetListItems_Params {
-		struct TArray<Unknown>& InListItems;
+		struct TArray<struct Object>& InListItems;
 	}; BP_SetListItems_Params Params;
 
 
@@ -7803,11 +7803,11 @@ inline void UListView::BP_SetListItems(struct TArray<Unknown>& InListItems) {
 }
 
 // Function UMG.ListView.BP_SetItemSelection
-inline void UListView::BP_SetItemSelection(struct Unknown Item, char bSelected) {
+inline void UListView::BP_SetItemSelection(struct Object Item, char bSelected) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.ListView.BP_SetItemSelection");
 
 	struct BP_SetItemSelection_Params {
-		struct Unknown Item;
+		struct Object Item;
 		char bSelected;
 	}; BP_SetItemSelection_Params Params;
 
@@ -7820,11 +7820,11 @@ inline void UListView::BP_SetItemSelection(struct Unknown Item, char bSelected) 
 }
 
 // Function UMG.ListView.BP_ScrollItemIntoView
-inline void UListView::BP_ScrollItemIntoView(struct Unknown Item) {
+inline void UListView::BP_ScrollItemIntoView(struct Object Item) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.ListView.BP_ScrollItemIntoView");
 
 	struct BP_ScrollItemIntoView_Params {
-		struct Unknown Item;
+		struct Object Item;
 	}; BP_ScrollItemIntoView_Params Params;
 
 	Params.Item = Item;
@@ -7835,11 +7835,11 @@ inline void UListView::BP_ScrollItemIntoView(struct Unknown Item) {
 }
 
 // Function UMG.ListView.BP_NavigateToItem
-inline void UListView::BP_NavigateToItem(struct Unknown Item) {
+inline void UListView::BP_NavigateToItem(struct Object Item) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.ListView.BP_NavigateToItem");
 
 	struct BP_NavigateToItem_Params {
-		struct Unknown Item;
+		struct Object Item;
 	}; BP_NavigateToItem_Params Params;
 
 	Params.Item = Item;
@@ -7850,11 +7850,11 @@ inline void UListView::BP_NavigateToItem(struct Unknown Item) {
 }
 
 // Function UMG.ListView.BP_IsItemVisible
-inline char UListView::BP_IsItemVisible(struct Unknown Item) {
+inline char UListView::BP_IsItemVisible(struct Object Item) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.ListView.BP_IsItemVisible");
 
 	struct BP_IsItemVisible_Params {
-		struct Unknown Item;
+		struct Object Item;
 		char ReturnValue;
 
 	}; BP_IsItemVisible_Params Params;
@@ -7869,11 +7869,11 @@ inline char UListView::BP_IsItemVisible(struct Unknown Item) {
 }
 
 // Function UMG.ListView.BP_GetSelectedItems
-inline char UListView::BP_GetSelectedItems(struct TArray<Unknown>& Items) {
+inline char UListView::BP_GetSelectedItems(struct TArray<struct Object>& Items) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.ListView.BP_GetSelectedItems");
 
 	struct BP_GetSelectedItems_Params {
-		struct TArray<Unknown>& Items;
+		struct TArray<struct Object>& Items;
 		char ReturnValue;
 
 	}; BP_GetSelectedItems_Params Params;
@@ -7890,12 +7890,12 @@ inline char UListView::BP_GetSelectedItems(struct TArray<Unknown>& Items) {
 }
 
 // Function UMG.ListView.BP_GetSelectedItem
-inline struct Unknown UListView::BP_GetSelectedItem() {
+inline struct Object UListView::BP_GetSelectedItem() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.ListView.BP_GetSelectedItem");
 
 	struct BP_GetSelectedItem_Params {
 		
-		struct Unknown ReturnValue;
+		struct Object ReturnValue;
 
 	}; BP_GetSelectedItem_Params Params;
 
@@ -7954,11 +7954,11 @@ inline void UListView::BP_CancelScrollIntoView() {
 }
 
 // Function UMG.ListView.AddItem
-inline void UListView::AddItem(struct Unknown Item) {
+inline void UListView::AddItem(struct Object Item) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.ListView.AddItem");
 
 	struct AddItem_Params {
-		struct Unknown Item;
+		struct Object Item;
 	}; AddItem_Params Params;
 
 	Params.Item = Item;
@@ -8068,12 +8068,12 @@ inline char UMenuAnchor::HasOpenSubMenus() {
 }
 
 // Function UMG.MenuAnchor.GetMenuPosition
-inline struct Unknown UMenuAnchor::GetMenuPosition() {
+inline struct FVector2D UMenuAnchor::GetMenuPosition() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.MenuAnchor.GetMenuPosition");
 
 	struct GetMenuPosition_Params {
 		
-		struct Unknown ReturnValue;
+		struct FVector2D ReturnValue;
 
 	}; GetMenuPosition_Params Params;
 
@@ -8130,11 +8130,11 @@ inline void UTextLayoutWidget::SetJustification(char InJustification) {
 }
 
 // Function UMG.MultiLineEditableText.SetWidgetStyle
-inline void UMultiLineEditableText::SetWidgetStyle(struct Unknown& InWidgetStyle) {
+inline void UMultiLineEditableText::SetWidgetStyle(struct FTextBlockStyle& InWidgetStyle) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.MultiLineEditableText.SetWidgetStyle");
 
 	struct SetWidgetStyle_Params {
-		struct Unknown& InWidgetStyle;
+		struct FTextBlockStyle& InWidgetStyle;
 	}; SetWidgetStyle_Params Params;
 
 
@@ -8264,11 +8264,11 @@ inline struct FText UMultiLineEditableText::GetHintText() {
 }
 
 // Function UMG.MultiLineEditableTextBox.SetTextStyle
-inline void UMultiLineEditableTextBox::SetTextStyle(struct Unknown& InTextStyle) {
+inline void UMultiLineEditableTextBox::SetTextStyle(struct FTextBlockStyle& InTextStyle) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.MultiLineEditableTextBox.SetTextStyle");
 
 	struct SetTextStyle_Params {
-		struct Unknown& InTextStyle;
+		struct FTextBlockStyle& InTextStyle;
 	}; SetTextStyle_Params Params;
 
 
@@ -8428,11 +8428,11 @@ inline void UOverlaySlot::SetVerticalAlignment(char InVerticalAlignment) {
 }
 
 // Function UMG.OverlaySlot.SetPadding
-inline void UOverlaySlot::SetPadding(struct Unknown InPadding) {
+inline void UOverlaySlot::SetPadding(struct FMargin InPadding) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.OverlaySlot.SetPadding");
 
 	struct SetPadding_Params {
-		struct Unknown InPadding;
+		struct FMargin InPadding;
 	}; SetPadding_Params Params;
 
 	Params.InPadding = InPadding;
@@ -8488,11 +8488,11 @@ inline void UProgressBar::SetIsMarquee(char InbIsMarquee) {
 }
 
 // Function UMG.ProgressBar.SetFillColorAndOpacity
-inline void UProgressBar::SetFillColorAndOpacity(struct Unknown InColor) {
+inline void UProgressBar::SetFillColorAndOpacity(struct FLinearColor InColor) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.ProgressBar.SetFillColorAndOpacity");
 
 	struct SetFillColorAndOpacity_Params {
-		struct Unknown InColor;
+		struct FLinearColor InColor;
 	}; SetFillColorAndOpacity_Params Params;
 
 	Params.InColor = InColor;
@@ -8535,11 +8535,11 @@ inline void URetainerBox::SetRenderingPhase(int32_t RenderPhase, int32_t TotalPh
 }
 
 // Function UMG.RetainerBox.SetEffectMaterial
-inline void URetainerBox::SetEffectMaterial(struct Unknown EffectMaterial) {
+inline void URetainerBox::SetEffectMaterial(struct UMaterialInterface EffectMaterial) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.RetainerBox.SetEffectMaterial");
 
 	struct SetEffectMaterial_Params {
-		struct Unknown EffectMaterial;
+		struct UMaterialInterface EffectMaterial;
 	}; SetEffectMaterial_Params Params;
 
 	Params.EffectMaterial = EffectMaterial;
@@ -8564,12 +8564,12 @@ inline void URetainerBox::RequestRender() {
 }
 
 // Function UMG.RetainerBox.GetEffectMaterial
-inline struct Unknown URetainerBox::GetEffectMaterial() {
+inline struct UMaterialInstanceDynamic URetainerBox::GetEffectMaterial() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.RetainerBox.GetEffectMaterial");
 
 	struct GetEffectMaterial_Params {
 		
-		struct Unknown ReturnValue;
+		struct UMaterialInstanceDynamic ReturnValue;
 
 	}; GetEffectMaterial_Params Params;
 
@@ -8582,11 +8582,11 @@ inline struct Unknown URetainerBox::GetEffectMaterial() {
 }
 
 // Function UMG.RichTextBlock.SetTextStyleSet
-inline void URichTextBlock::SetTextStyleSet(struct Unknown NewTextStyleSet) {
+inline void URichTextBlock::SetTextStyleSet(struct UDataTable NewTextStyleSet) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.RichTextBlock.SetTextStyleSet");
 
 	struct SetTextStyleSet_Params {
-		struct Unknown NewTextStyleSet;
+		struct UDataTable NewTextStyleSet;
 	}; SetTextStyleSet_Params Params;
 
 	Params.NewTextStyleSet = NewTextStyleSet;
@@ -8629,11 +8629,11 @@ inline void URichTextBlock::SetMinDesiredWidth(float InMinDesiredWidth) {
 }
 
 // Function UMG.RichTextBlock.SetDefaultTextStyle
-inline void URichTextBlock::SetDefaultTextStyle(struct Unknown& InDefaultTextStyle) {
+inline void URichTextBlock::SetDefaultTextStyle(struct FTextBlockStyle& InDefaultTextStyle) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.RichTextBlock.SetDefaultTextStyle");
 
 	struct SetDefaultTextStyle_Params {
-		struct Unknown& InDefaultTextStyle;
+		struct FTextBlockStyle& InDefaultTextStyle;
 	}; SetDefaultTextStyle_Params Params;
 
 
@@ -8646,11 +8646,11 @@ inline void URichTextBlock::SetDefaultTextStyle(struct Unknown& InDefaultTextSty
 }
 
 // Function UMG.RichTextBlock.SetDefaultStrikeBrush
-inline void URichTextBlock::SetDefaultStrikeBrush(struct Unknown& InStrikeBrush) {
+inline void URichTextBlock::SetDefaultStrikeBrush(struct FSlateBrush& InStrikeBrush) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.RichTextBlock.SetDefaultStrikeBrush");
 
 	struct SetDefaultStrikeBrush_Params {
-		struct Unknown& InStrikeBrush;
+		struct FSlateBrush& InStrikeBrush;
 	}; SetDefaultStrikeBrush_Params Params;
 
 
@@ -8663,11 +8663,11 @@ inline void URichTextBlock::SetDefaultStrikeBrush(struct Unknown& InStrikeBrush)
 }
 
 // Function UMG.RichTextBlock.SetDefaultShadowOffset
-inline void URichTextBlock::SetDefaultShadowOffset(struct Unknown InShadowOffset) {
+inline void URichTextBlock::SetDefaultShadowOffset(struct FVector2D InShadowOffset) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.RichTextBlock.SetDefaultShadowOffset");
 
 	struct SetDefaultShadowOffset_Params {
-		struct Unknown InShadowOffset;
+		struct FVector2D InShadowOffset;
 	}; SetDefaultShadowOffset_Params Params;
 
 	Params.InShadowOffset = InShadowOffset;
@@ -8678,11 +8678,11 @@ inline void URichTextBlock::SetDefaultShadowOffset(struct Unknown InShadowOffset
 }
 
 // Function UMG.RichTextBlock.SetDefaultShadowColorAndOpacity
-inline void URichTextBlock::SetDefaultShadowColorAndOpacity(struct Unknown InShadowColorAndOpacity) {
+inline void URichTextBlock::SetDefaultShadowColorAndOpacity(struct FLinearColor InShadowColorAndOpacity) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.RichTextBlock.SetDefaultShadowColorAndOpacity");
 
 	struct SetDefaultShadowColorAndOpacity_Params {
-		struct Unknown InShadowColorAndOpacity;
+		struct FLinearColor InShadowColorAndOpacity;
 	}; SetDefaultShadowColorAndOpacity_Params Params;
 
 	Params.InShadowColorAndOpacity = InShadowColorAndOpacity;
@@ -8693,11 +8693,11 @@ inline void URichTextBlock::SetDefaultShadowColorAndOpacity(struct Unknown InSha
 }
 
 // Function UMG.RichTextBlock.SetDefaultFont
-inline void URichTextBlock::SetDefaultFont(struct Unknown InFontInfo) {
+inline void URichTextBlock::SetDefaultFont(struct FSlateFontInfo InFontInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.RichTextBlock.SetDefaultFont");
 
 	struct SetDefaultFont_Params {
-		struct Unknown InFontInfo;
+		struct FSlateFontInfo InFontInfo;
 	}; SetDefaultFont_Params Params;
 
 	Params.InFontInfo = InFontInfo;
@@ -8708,11 +8708,11 @@ inline void URichTextBlock::SetDefaultFont(struct Unknown InFontInfo) {
 }
 
 // Function UMG.RichTextBlock.SetDefaultColorAndOpacity
-inline void URichTextBlock::SetDefaultColorAndOpacity(struct Unknown InColorAndOpacity) {
+inline void URichTextBlock::SetDefaultColorAndOpacity(struct FSlateColor InColorAndOpacity) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.RichTextBlock.SetDefaultColorAndOpacity");
 
 	struct SetDefaultColorAndOpacity_Params {
-		struct Unknown InColorAndOpacity;
+		struct FSlateColor InColorAndOpacity;
 	}; SetDefaultColorAndOpacity_Params Params;
 
 	Params.InColorAndOpacity = InColorAndOpacity;
@@ -8756,12 +8756,12 @@ inline struct FText URichTextBlock::GetText() {
 }
 
 // Function UMG.RichTextBlock.GetDecoratorByClass
-inline struct Unknown URichTextBlock::GetDecoratorByClass(struct Unknown* DecoratorClass) {
+inline struct URichTextBlockDecorator URichTextBlock::GetDecoratorByClass(struct UClass* DecoratorClass) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.RichTextBlock.GetDecoratorByClass");
 
 	struct GetDecoratorByClass_Params {
-		struct Unknown* DecoratorClass;
-		struct Unknown ReturnValue;
+		struct UClass* DecoratorClass;
+		struct URichTextBlockDecorator ReturnValue;
 
 	}; GetDecoratorByClass_Params Params;
 
@@ -8885,11 +8885,11 @@ inline void UScaleBoxSlot::SetVerticalAlignment(char InVerticalAlignment) {
 }
 
 // Function UMG.ScaleBoxSlot.SetPadding
-inline void UScaleBoxSlot::SetPadding(struct Unknown InPadding) {
+inline void UScaleBoxSlot::SetPadding(struct FMargin InPadding) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.ScaleBoxSlot.SetPadding");
 
 	struct SetPadding_Params {
-		struct Unknown InPadding;
+		struct FMargin InPadding;
 	}; SetPadding_Params Params;
 
 	Params.InPadding = InPadding;
@@ -8962,11 +8962,11 @@ inline void UScrollBox::SetScrollOffset(float NewScrollOffset) {
 }
 
 // Function UMG.ScrollBox.SetScrollbarVisibility
-inline void UScrollBox::SetScrollbarVisibility(enum class Unknow NewScrollBarVisibility) {
+inline void UScrollBox::SetScrollbarVisibility(enum class ESlateVisibility NewScrollBarVisibility) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.ScrollBox.SetScrollbarVisibility");
 
 	struct SetScrollbarVisibility_Params {
-		enum class Unknow NewScrollBarVisibility;
+		enum class ESlateVisibility NewScrollBarVisibility;
 	}; SetScrollbarVisibility_Params Params;
 
 	Params.NewScrollBarVisibility = NewScrollBarVisibility;
@@ -8977,11 +8977,11 @@ inline void UScrollBox::SetScrollbarVisibility(enum class Unknow NewScrollBarVis
 }
 
 // Function UMG.ScrollBox.SetScrollbarThickness
-inline void UScrollBox::SetScrollbarThickness(struct Unknown& NewScrollbarThickness) {
+inline void UScrollBox::SetScrollbarThickness(struct FVector2D& NewScrollbarThickness) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.ScrollBox.SetScrollbarThickness");
 
 	struct SetScrollbarThickness_Params {
-		struct Unknown& NewScrollbarThickness;
+		struct FVector2D& NewScrollbarThickness;
 	}; SetScrollbarThickness_Params Params;
 
 
@@ -8994,11 +8994,11 @@ inline void UScrollBox::SetScrollbarThickness(struct Unknown& NewScrollbarThickn
 }
 
 // Function UMG.ScrollBox.SetScrollbarPadding
-inline void UScrollBox::SetScrollbarPadding(struct Unknown& NewScrollbarPadding) {
+inline void UScrollBox::SetScrollbarPadding(struct FMargin& NewScrollbarPadding) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.ScrollBox.SetScrollbarPadding");
 
 	struct SetScrollbarPadding_Params {
-		struct Unknown& NewScrollbarPadding;
+		struct FMargin& NewScrollbarPadding;
 	}; SetScrollbarPadding_Params Params;
 
 
@@ -9026,11 +9026,11 @@ inline void UScrollBox::SetOrientation(char NewOrientation) {
 }
 
 // Function UMG.ScrollBox.SetConsumeMouseWheel
-inline void UScrollBox::SetConsumeMouseWheel(enum class Unknow NewConsumeMouseWheel) {
+inline void UScrollBox::SetConsumeMouseWheel(enum class EConsumeMouseWheel NewConsumeMouseWheel) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.ScrollBox.SetConsumeMouseWheel");
 
 	struct SetConsumeMouseWheel_Params {
-		enum class Unknow NewConsumeMouseWheel;
+		enum class EConsumeMouseWheel NewConsumeMouseWheel;
 	}; SetConsumeMouseWheel_Params Params;
 
 	Params.NewConsumeMouseWheel = NewConsumeMouseWheel;
@@ -9086,13 +9086,13 @@ inline void UScrollBox::SetAllowOverscroll(char NewAllowOverscroll) {
 }
 
 // Function UMG.ScrollBox.ScrollWidgetIntoView
-inline void UScrollBox::ScrollWidgetIntoView(struct Unknown WidgetToFind, char AnimateScroll, enum class Unknow ScrollDestination, float Padding) {
+inline void UScrollBox::ScrollWidgetIntoView(struct UWidget WidgetToFind, char AnimateScroll, enum class EDescendantScrollDestination ScrollDestination, float Padding) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.ScrollBox.ScrollWidgetIntoView");
 
 	struct ScrollWidgetIntoView_Params {
-		struct Unknown WidgetToFind;
+		struct UWidget WidgetToFind;
 		char AnimateScroll;
-		enum class Unknow ScrollDestination;
+		enum class EDescendantScrollDestination ScrollDestination;
 		float Padding;
 	}; ScrollWidgetIntoView_Params Params;
 
@@ -9218,11 +9218,11 @@ inline void UScrollBoxSlot::SetVerticalAlignment(char InVerticalAlignment) {
 }
 
 // Function UMG.ScrollBoxSlot.SetPadding
-inline void UScrollBoxSlot::SetPadding(struct Unknown InPadding) {
+inline void UScrollBoxSlot::SetPadding(struct FMargin InPadding) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.ScrollBoxSlot.SetPadding");
 
 	struct SetPadding_Params {
-		struct Unknown InPadding;
+		struct FMargin InPadding;
 	}; SetPadding_Params Params;
 
 	Params.InPadding = InPadding;
@@ -9495,11 +9495,11 @@ inline void USizeBoxSlot::SetVerticalAlignment(char InVerticalAlignment) {
 }
 
 // Function UMG.SizeBoxSlot.SetPadding
-inline void USizeBoxSlot::SetPadding(struct Unknown InPadding) {
+inline void USizeBoxSlot::SetPadding(struct FMargin InPadding) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.SizeBoxSlot.SetPadding");
 
 	struct SetPadding_Params {
-		struct Unknown InPadding;
+		struct FMargin InPadding;
 	}; SetPadding_Params Params;
 
 	Params.InPadding = InPadding;
@@ -9555,11 +9555,11 @@ inline void USlider::SetStepSize(float InValue) {
 }
 
 // Function UMG.Slider.SetSliderHandleColor
-inline void USlider::SetSliderHandleColor(struct Unknown InValue) {
+inline void USlider::SetSliderHandleColor(struct FLinearColor InValue) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Slider.SetSliderHandleColor");
 
 	struct SetSliderHandleColor_Params {
-		struct Unknown InValue;
+		struct FLinearColor InValue;
 	}; SetSliderHandleColor_Params Params;
 
 	Params.InValue = InValue;
@@ -9570,11 +9570,11 @@ inline void USlider::SetSliderHandleColor(struct Unknown InValue) {
 }
 
 // Function UMG.Slider.SetSliderBarColor
-inline void USlider::SetSliderBarColor(struct Unknown InValue) {
+inline void USlider::SetSliderBarColor(struct FLinearColor InValue) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Slider.SetSliderBarColor");
 
 	struct SetSliderBarColor_Params {
-		struct Unknown InValue;
+		struct FLinearColor InValue;
 	}; SetSliderBarColor_Params Params;
 
 	Params.InValue = InValue;
@@ -9681,11 +9681,11 @@ inline float USlider::GetNormalizedValue() {
 }
 
 // Function UMG.Spacer.SetSize
-inline void USpacer::SetSize(struct Unknown InSize) {
+inline void USpacer::SetSize(struct FVector2D InSize) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Spacer.SetSize");
 
 	struct SetSize_Params {
-		struct Unknown InSize;
+		struct FVector2D InSize;
 	}; SetSize_Params Params;
 
 	Params.InSize = InSize;
@@ -9801,11 +9801,11 @@ inline void USpinBox::SetMaxFractionalDigits(int32_t NewValue) {
 }
 
 // Function UMG.SpinBox.SetForegroundColor
-inline void USpinBox::SetForegroundColor(struct Unknown InForegroundColor) {
+inline void USpinBox::SetForegroundColor(struct FSlateColor InForegroundColor) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.SpinBox.SetForegroundColor");
 
 	struct SetForegroundColor_Params {
-		struct Unknown InForegroundColor;
+		struct FSlateColor InForegroundColor;
 	}; SetForegroundColor_Params Params;
 
 	Params.InForegroundColor = InForegroundColor;
@@ -10125,11 +10125,11 @@ inline void UTextBlock::SetText(struct FText InText) {
 }
 
 // Function UMG.TextBlock.SetStrikeBrush
-inline void UTextBlock::SetStrikeBrush(struct Unknown InStrikeBrush) {
+inline void UTextBlock::SetStrikeBrush(struct FSlateBrush InStrikeBrush) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.TextBlock.SetStrikeBrush");
 
 	struct SetStrikeBrush_Params {
-		struct Unknown InStrikeBrush;
+		struct FSlateBrush InStrikeBrush;
 	}; SetStrikeBrush_Params Params;
 
 	Params.InStrikeBrush = InStrikeBrush;
@@ -10140,11 +10140,11 @@ inline void UTextBlock::SetStrikeBrush(struct Unknown InStrikeBrush) {
 }
 
 // Function UMG.TextBlock.SetShadowOffset
-inline void UTextBlock::SetShadowOffset(struct Unknown InShadowOffset) {
+inline void UTextBlock::SetShadowOffset(struct FVector2D InShadowOffset) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.TextBlock.SetShadowOffset");
 
 	struct SetShadowOffset_Params {
-		struct Unknown InShadowOffset;
+		struct FVector2D InShadowOffset;
 	}; SetShadowOffset_Params Params;
 
 	Params.InShadowOffset = InShadowOffset;
@@ -10155,11 +10155,11 @@ inline void UTextBlock::SetShadowOffset(struct Unknown InShadowOffset) {
 }
 
 // Function UMG.TextBlock.SetShadowColorAndOpacity
-inline void UTextBlock::SetShadowColorAndOpacity(struct Unknown InShadowColorAndOpacity) {
+inline void UTextBlock::SetShadowColorAndOpacity(struct FLinearColor InShadowColorAndOpacity) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.TextBlock.SetShadowColorAndOpacity");
 
 	struct SetShadowColorAndOpacity_Params {
-		struct Unknown InShadowColorAndOpacity;
+		struct FLinearColor InShadowColorAndOpacity;
 	}; SetShadowColorAndOpacity_Params Params;
 
 	Params.InShadowColorAndOpacity = InShadowColorAndOpacity;
@@ -10200,11 +10200,11 @@ inline void UTextBlock::SetMinDesiredWidth(float InMinDesiredWidth) {
 }
 
 // Function UMG.TextBlock.SetFont
-inline void UTextBlock::SetFont(struct Unknown InFontInfo) {
+inline void UTextBlock::SetFont(struct FSlateFontInfo InFontInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.TextBlock.SetFont");
 
 	struct SetFont_Params {
-		struct Unknown InFontInfo;
+		struct FSlateFontInfo InFontInfo;
 	}; SetFont_Params Params;
 
 	Params.InFontInfo = InFontInfo;
@@ -10215,11 +10215,11 @@ inline void UTextBlock::SetFont(struct Unknown InFontInfo) {
 }
 
 // Function UMG.TextBlock.SetColorAndOpacity
-inline void UTextBlock::SetColorAndOpacity(struct Unknown InColorAndOpacity) {
+inline void UTextBlock::SetColorAndOpacity(struct FSlateColor InColorAndOpacity) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.TextBlock.SetColorAndOpacity");
 
 	struct SetColorAndOpacity_Params {
-		struct Unknown InColorAndOpacity;
+		struct FSlateColor InColorAndOpacity;
 	}; SetColorAndOpacity_Params Params;
 
 	Params.InColorAndOpacity = InColorAndOpacity;
@@ -10263,12 +10263,12 @@ inline struct FText UTextBlock::GetText() {
 }
 
 // Function UMG.TextBlock.GetDynamicOutlineMaterial
-inline struct Unknown UTextBlock::GetDynamicOutlineMaterial() {
+inline struct UMaterialInstanceDynamic UTextBlock::GetDynamicOutlineMaterial() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.TextBlock.GetDynamicOutlineMaterial");
 
 	struct GetDynamicOutlineMaterial_Params {
 		
-		struct Unknown ReturnValue;
+		struct UMaterialInstanceDynamic ReturnValue;
 
 	}; GetDynamicOutlineMaterial_Params Params;
 
@@ -10281,12 +10281,12 @@ inline struct Unknown UTextBlock::GetDynamicOutlineMaterial() {
 }
 
 // Function UMG.TextBlock.GetDynamicFontMaterial
-inline struct Unknown UTextBlock::GetDynamicFontMaterial() {
+inline struct UMaterialInstanceDynamic UTextBlock::GetDynamicFontMaterial() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.TextBlock.GetDynamicFontMaterial");
 
 	struct GetDynamicFontMaterial_Params {
 		
-		struct Unknown ReturnValue;
+		struct UMaterialInstanceDynamic ReturnValue;
 
 	}; GetDynamicFontMaterial_Params Params;
 
@@ -10389,11 +10389,11 @@ inline void UTileView::SetEntryHeight(float NewHeight) {
 }
 
 // Function UMG.TreeView.SetItemExpansion
-inline void UTreeView::SetItemExpansion(struct Unknown Item, char bExpandItem) {
+inline void UTreeView::SetItemExpansion(struct Object Item, char bExpandItem) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.TreeView.SetItemExpansion");
 
 	struct SetItemExpansion_Params {
-		struct Unknown Item;
+		struct Object Item;
 		char bExpandItem;
 	}; SetItemExpansion_Params Params;
 
@@ -10467,11 +10467,11 @@ inline struct FName UUMGSequencePlayer::GetUserTag() {
 }
 
 // Function UMG.UniformGridPanel.SetSlotPadding
-inline void UUniformGridPanel::SetSlotPadding(struct Unknown InSlotPadding) {
+inline void UUniformGridPanel::SetSlotPadding(struct FMargin InSlotPadding) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UniformGridPanel.SetSlotPadding");
 
 	struct SetSlotPadding_Params {
-		struct Unknown InSlotPadding;
+		struct FMargin InSlotPadding;
 	}; SetSlotPadding_Params Params;
 
 	Params.InSlotPadding = InSlotPadding;
@@ -10512,14 +10512,14 @@ inline void UUniformGridPanel::SetMinDesiredSlotHeight(float InMinDesiredSlotHei
 }
 
 // Function UMG.UniformGridPanel.AddChildToUniformGrid
-inline struct Unknown UUniformGridPanel::AddChildToUniformGrid(struct Unknown Content, int32_t InRow, int32_t InColumn) {
+inline struct UUniformGridSlot UUniformGridPanel::AddChildToUniformGrid(struct UWidget Content, int32_t InRow, int32_t InColumn) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.UniformGridPanel.AddChildToUniformGrid");
 
 	struct AddChildToUniformGrid_Params {
-		struct Unknown Content;
+		struct UWidget Content;
 		int32_t InRow;
 		int32_t InColumn;
-		struct Unknown ReturnValue;
+		struct UUniformGridSlot ReturnValue;
 
 	}; AddChildToUniformGrid_Params Params;
 
@@ -10610,11 +10610,11 @@ inline void UVerticalBoxSlot::SetVerticalAlignment(char InVerticalAlignment) {
 }
 
 // Function UMG.VerticalBoxSlot.SetSize
-inline void UVerticalBoxSlot::SetSize(struct Unknown InSize) {
+inline void UVerticalBoxSlot::SetSize(struct FSlateChildSize InSize) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.VerticalBoxSlot.SetSize");
 
 	struct SetSize_Params {
-		struct Unknown InSize;
+		struct FSlateChildSize InSize;
 	}; SetSize_Params Params;
 
 	Params.InSize = InSize;
@@ -10625,11 +10625,11 @@ inline void UVerticalBoxSlot::SetSize(struct Unknown InSize) {
 }
 
 // Function UMG.VerticalBoxSlot.SetPadding
-inline void UVerticalBoxSlot::SetPadding(struct Unknown InPadding) {
+inline void UVerticalBoxSlot::SetPadding(struct FMargin InPadding) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.VerticalBoxSlot.SetPadding");
 
 	struct SetPadding_Params {
-		struct Unknown InPadding;
+		struct FMargin InPadding;
 	}; SetPadding_Params Params;
 
 	Params.InPadding = InPadding;
@@ -10655,12 +10655,12 @@ inline void UVerticalBoxSlot::SetHorizontalAlignment(char InHorizontalAlignment)
 }
 
 // Function UMG.Viewport.Spawn
-inline struct Unknown UViewport::Spawn(struct Unknown* ActorClass) {
+inline struct UActor UViewport::Spawn(struct UClass* ActorClass) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Viewport.Spawn");
 
 	struct Spawn_Params {
-		struct Unknown* ActorClass;
-		struct Unknown ReturnValue;
+		struct UClass* ActorClass;
+		struct UActor ReturnValue;
 
 	}; Spawn_Params Params;
 
@@ -10674,11 +10674,11 @@ inline struct Unknown UViewport::Spawn(struct Unknown* ActorClass) {
 }
 
 // Function UMG.Viewport.SetViewRotation
-inline void UViewport::SetViewRotation(struct Unknown Rotation) {
+inline void UViewport::SetViewRotation(struct FRotator Rotation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Viewport.SetViewRotation");
 
 	struct SetViewRotation_Params {
-		struct Unknown Rotation;
+		struct FRotator Rotation;
 	}; SetViewRotation_Params Params;
 
 	Params.Rotation = Rotation;
@@ -10689,11 +10689,11 @@ inline void UViewport::SetViewRotation(struct Unknown Rotation) {
 }
 
 // Function UMG.Viewport.SetViewLocation
-inline void UViewport::SetViewLocation(struct Unknown Location) {
+inline void UViewport::SetViewLocation(struct FVector Location) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Viewport.SetViewLocation");
 
 	struct SetViewLocation_Params {
-		struct Unknown Location;
+		struct FVector Location;
 	}; SetViewLocation_Params Params;
 
 	Params.Location = Location;
@@ -10704,12 +10704,12 @@ inline void UViewport::SetViewLocation(struct Unknown Location) {
 }
 
 // Function UMG.Viewport.GetViewRotation
-inline struct Unknown UViewport::GetViewRotation() {
+inline struct FRotator UViewport::GetViewRotation() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Viewport.GetViewRotation");
 
 	struct GetViewRotation_Params {
 		
-		struct Unknown ReturnValue;
+		struct FRotator ReturnValue;
 
 	}; GetViewRotation_Params Params;
 
@@ -10722,12 +10722,12 @@ inline struct Unknown UViewport::GetViewRotation() {
 }
 
 // Function UMG.Viewport.GetViewportWorld
-inline struct Unknown UViewport::GetViewportWorld() {
+inline struct UWorld UViewport::GetViewportWorld() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Viewport.GetViewportWorld");
 
 	struct GetViewportWorld_Params {
 		
-		struct Unknown ReturnValue;
+		struct UWorld ReturnValue;
 
 	}; GetViewportWorld_Params Params;
 
@@ -10740,12 +10740,12 @@ inline struct Unknown UViewport::GetViewportWorld() {
 }
 
 // Function UMG.Viewport.GetViewLocation
-inline struct Unknown UViewport::GetViewLocation() {
+inline struct FVector UViewport::GetViewLocation() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.Viewport.GetViewLocation");
 
 	struct GetViewLocation_Params {
 		
-		struct Unknown ReturnValue;
+		struct FVector ReturnValue;
 
 	}; GetViewLocation_Params Params;
 
@@ -10758,11 +10758,11 @@ inline struct Unknown UViewport::GetViewLocation() {
 }
 
 // Function UMG.WidgetAnimation.UnbindFromAnimationStarted
-inline void UWidgetAnimation::UnbindFromAnimationStarted(struct Unknown Widget, struct FDelegate Delegate) {
+inline void UWidgetAnimation::UnbindFromAnimationStarted(struct UUserWidget Widget, struct FDelegate Delegate) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WidgetAnimation.UnbindFromAnimationStarted");
 
 	struct UnbindFromAnimationStarted_Params {
-		struct Unknown Widget;
+		struct UUserWidget Widget;
 		struct FDelegate Delegate;
 	}; UnbindFromAnimationStarted_Params Params;
 
@@ -10775,11 +10775,11 @@ inline void UWidgetAnimation::UnbindFromAnimationStarted(struct Unknown Widget, 
 }
 
 // Function UMG.WidgetAnimation.UnbindFromAnimationFinished
-inline void UWidgetAnimation::UnbindFromAnimationFinished(struct Unknown Widget, struct FDelegate Delegate) {
+inline void UWidgetAnimation::UnbindFromAnimationFinished(struct UUserWidget Widget, struct FDelegate Delegate) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WidgetAnimation.UnbindFromAnimationFinished");
 
 	struct UnbindFromAnimationFinished_Params {
-		struct Unknown Widget;
+		struct UUserWidget Widget;
 		struct FDelegate Delegate;
 	}; UnbindFromAnimationFinished_Params Params;
 
@@ -10792,11 +10792,11 @@ inline void UWidgetAnimation::UnbindFromAnimationFinished(struct Unknown Widget,
 }
 
 // Function UMG.WidgetAnimation.UnbindAllFromAnimationStarted
-inline void UWidgetAnimation::UnbindAllFromAnimationStarted(struct Unknown Widget) {
+inline void UWidgetAnimation::UnbindAllFromAnimationStarted(struct UUserWidget Widget) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WidgetAnimation.UnbindAllFromAnimationStarted");
 
 	struct UnbindAllFromAnimationStarted_Params {
-		struct Unknown Widget;
+		struct UUserWidget Widget;
 	}; UnbindAllFromAnimationStarted_Params Params;
 
 	Params.Widget = Widget;
@@ -10807,11 +10807,11 @@ inline void UWidgetAnimation::UnbindAllFromAnimationStarted(struct Unknown Widge
 }
 
 // Function UMG.WidgetAnimation.UnbindAllFromAnimationFinished
-inline void UWidgetAnimation::UnbindAllFromAnimationFinished(struct Unknown Widget) {
+inline void UWidgetAnimation::UnbindAllFromAnimationFinished(struct UUserWidget Widget) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WidgetAnimation.UnbindAllFromAnimationFinished");
 
 	struct UnbindAllFromAnimationFinished_Params {
-		struct Unknown Widget;
+		struct UUserWidget Widget;
 	}; UnbindAllFromAnimationFinished_Params Params;
 
 	Params.Widget = Widget;
@@ -10858,11 +10858,11 @@ inline float UWidgetAnimation::GetEndTime() {
 }
 
 // Function UMG.WidgetAnimation.BindToAnimationStarted
-inline void UWidgetAnimation::BindToAnimationStarted(struct Unknown Widget, struct FDelegate Delegate) {
+inline void UWidgetAnimation::BindToAnimationStarted(struct UUserWidget Widget, struct FDelegate Delegate) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WidgetAnimation.BindToAnimationStarted");
 
 	struct BindToAnimationStarted_Params {
-		struct Unknown Widget;
+		struct UUserWidget Widget;
 		struct FDelegate Delegate;
 	}; BindToAnimationStarted_Params Params;
 
@@ -10875,11 +10875,11 @@ inline void UWidgetAnimation::BindToAnimationStarted(struct Unknown Widget, stru
 }
 
 // Function UMG.WidgetAnimation.BindToAnimationFinished
-inline void UWidgetAnimation::BindToAnimationFinished(struct Unknown Widget, struct FDelegate Delegate) {
+inline void UWidgetAnimation::BindToAnimationFinished(struct UUserWidget Widget, struct FDelegate Delegate) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WidgetAnimation.BindToAnimationFinished");
 
 	struct BindToAnimationFinished_Params {
-		struct Unknown Widget;
+		struct UUserWidget Widget;
 		struct FDelegate Delegate;
 	}; BindToAnimationFinished_Params Params;
 
@@ -10892,19 +10892,19 @@ inline void UWidgetAnimation::BindToAnimationFinished(struct Unknown Widget, str
 }
 
 // Function UMG.WidgetAnimationPlayCallbackProxy.CreatePlayAnimationTimeRangeProxyObject
-inline struct Unknown UWidgetAnimationPlayCallbackProxy::CreatePlayAnimationTimeRangeProxyObject(struct Unknown& Result, struct Unknown Widget, struct Unknown InAnimation, float StartAtTime, float EndAtTime, int32_t NumLoopsToPlay, char PlayMode, float PlaybackSpeed) {
+inline struct UWidgetAnimationPlayCallbackProxy UWidgetAnimationPlayCallbackProxy::CreatePlayAnimationTimeRangeProxyObject(struct UUMGSequencePlayer& Result, struct UUserWidget Widget, struct UWidgetAnimation InAnimation, float StartAtTime, float EndAtTime, int32_t NumLoopsToPlay, char PlayMode, float PlaybackSpeed) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WidgetAnimationPlayCallbackProxy.CreatePlayAnimationTimeRangeProxyObject");
 
 	struct CreatePlayAnimationTimeRangeProxyObject_Params {
-		struct Unknown& Result;
-		struct Unknown Widget;
-		struct Unknown InAnimation;
+		struct UUMGSequencePlayer& Result;
+		struct UUserWidget Widget;
+		struct UWidgetAnimation InAnimation;
 		float StartAtTime;
 		float EndAtTime;
 		int32_t NumLoopsToPlay;
 		char PlayMode;
 		float PlaybackSpeed;
-		struct Unknown ReturnValue;
+		struct UWidgetAnimationPlayCallbackProxy ReturnValue;
 
 	}; CreatePlayAnimationTimeRangeProxyObject_Params Params;
 
@@ -10927,18 +10927,18 @@ inline struct Unknown UWidgetAnimationPlayCallbackProxy::CreatePlayAnimationTime
 }
 
 // Function UMG.WidgetAnimationPlayCallbackProxy.CreatePlayAnimationProxyObject
-inline struct Unknown UWidgetAnimationPlayCallbackProxy::CreatePlayAnimationProxyObject(struct Unknown& Result, struct Unknown Widget, struct Unknown InAnimation, float StartAtTime, int32_t NumLoopsToPlay, char PlayMode, float PlaybackSpeed) {
+inline struct UWidgetAnimationPlayCallbackProxy UWidgetAnimationPlayCallbackProxy::CreatePlayAnimationProxyObject(struct UUMGSequencePlayer& Result, struct UUserWidget Widget, struct UWidgetAnimation InAnimation, float StartAtTime, int32_t NumLoopsToPlay, char PlayMode, float PlaybackSpeed) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WidgetAnimationPlayCallbackProxy.CreatePlayAnimationProxyObject");
 
 	struct CreatePlayAnimationProxyObject_Params {
-		struct Unknown& Result;
-		struct Unknown Widget;
-		struct Unknown InAnimation;
+		struct UUMGSequencePlayer& Result;
+		struct UUserWidget Widget;
+		struct UWidgetAnimation InAnimation;
 		float StartAtTime;
 		int32_t NumLoopsToPlay;
 		char PlayMode;
 		float PlaybackSpeed;
-		struct Unknown ReturnValue;
+		struct UWidgetAnimationPlayCallbackProxy ReturnValue;
 
 	}; CreatePlayAnimationProxyObject_Params Params;
 
@@ -10960,11 +10960,11 @@ inline struct Unknown UWidgetAnimationPlayCallbackProxy::CreatePlayAnimationProx
 }
 
 // Function UMG.WidgetComponent.SetWindowVisibility
-inline void UWidgetComponent::SetWindowVisibility(enum class Unknow InVisibility) {
+inline void UWidgetComponent::SetWindowVisibility(enum class EWindowVisibility InVisibility) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WidgetComponent.SetWindowVisibility");
 
 	struct SetWindowVisibility_Params {
-		enum class Unknow InVisibility;
+		enum class EWindowVisibility InVisibility;
 	}; SetWindowVisibility_Params Params;
 
 	Params.InVisibility = InVisibility;
@@ -10990,11 +10990,11 @@ inline void UWidgetComponent::SetWindowFocusable(char bInWindowFocusable) {
 }
 
 // Function UMG.WidgetComponent.SetWidgetSpace
-inline void UWidgetComponent::SetWidgetSpace(enum class Unknow NewSpace) {
+inline void UWidgetComponent::SetWidgetSpace(enum class EWidgetSpace NewSpace) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WidgetComponent.SetWidgetSpace");
 
 	struct SetWidgetSpace_Params {
-		enum class Unknow NewSpace;
+		enum class EWidgetSpace NewSpace;
 	}; SetWidgetSpace_Params Params;
 
 	Params.NewSpace = NewSpace;
@@ -11005,11 +11005,11 @@ inline void UWidgetComponent::SetWidgetSpace(enum class Unknow NewSpace) {
 }
 
 // Function UMG.WidgetComponent.SetWidget
-inline void UWidgetComponent::SetWidget(struct Unknown Widget) {
+inline void UWidgetComponent::SetWidget(struct UUserWidget Widget) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WidgetComponent.SetWidget");
 
 	struct SetWidget_Params {
-		struct Unknown Widget;
+		struct UUserWidget Widget;
 	}; SetWidget_Params Params;
 
 	Params.Widget = Widget;
@@ -11035,11 +11035,11 @@ inline void UWidgetComponent::SetTwoSided(char bWantTwoSided) {
 }
 
 // Function UMG.WidgetComponent.SetTintColorAndOpacity
-inline void UWidgetComponent::SetTintColorAndOpacity(struct Unknown NewTintColorAndOpacity) {
+inline void UWidgetComponent::SetTintColorAndOpacity(struct FLinearColor NewTintColorAndOpacity) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WidgetComponent.SetTintColorAndOpacity");
 
 	struct SetTintColorAndOpacity_Params {
-		struct Unknown NewTintColorAndOpacity;
+		struct FLinearColor NewTintColorAndOpacity;
 	}; SetTintColorAndOpacity_Params Params;
 
 	Params.NewTintColorAndOpacity = NewTintColorAndOpacity;
@@ -11080,11 +11080,11 @@ inline void UWidgetComponent::SetRedrawTime(float InRedrawTime) {
 }
 
 // Function UMG.WidgetComponent.SetPivot
-inline void UWidgetComponent::SetPivot(struct Unknown& InPivot) {
+inline void UWidgetComponent::SetPivot(struct FVector2D& InPivot) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WidgetComponent.SetPivot");
 
 	struct SetPivot_Params {
-		struct Unknown& InPivot;
+		struct FVector2D& InPivot;
 	}; SetPivot_Params Params;
 
 
@@ -11097,11 +11097,11 @@ inline void UWidgetComponent::SetPivot(struct Unknown& InPivot) {
 }
 
 // Function UMG.WidgetComponent.SetOwnerPlayer
-inline void UWidgetComponent::SetOwnerPlayer(struct Unknown LocalPlayer) {
+inline void UWidgetComponent::SetOwnerPlayer(struct ULocalPlayer LocalPlayer) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WidgetComponent.SetOwnerPlayer");
 
 	struct SetOwnerPlayer_Params {
-		struct Unknown LocalPlayer;
+		struct ULocalPlayer LocalPlayer;
 	}; SetOwnerPlayer_Params Params;
 
 	Params.LocalPlayer = LocalPlayer;
@@ -11127,11 +11127,11 @@ inline void UWidgetComponent::SetManuallyRedraw(char bUseManualRedraw) {
 }
 
 // Function UMG.WidgetComponent.SetGeometryMode
-inline void UWidgetComponent::SetGeometryMode(enum class Unknow InGeometryMode) {
+inline void UWidgetComponent::SetGeometryMode(enum class EWidgetGeometryMode InGeometryMode) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WidgetComponent.SetGeometryMode");
 
 	struct SetGeometryMode_Params {
-		enum class Unknow InGeometryMode;
+		enum class EWidgetGeometryMode InGeometryMode;
 	}; SetGeometryMode_Params Params;
 
 	Params.InGeometryMode = InGeometryMode;
@@ -11142,11 +11142,11 @@ inline void UWidgetComponent::SetGeometryMode(enum class Unknow InGeometryMode) 
 }
 
 // Function UMG.WidgetComponent.SetDrawSize
-inline void UWidgetComponent::SetDrawSize(struct Unknown Size) {
+inline void UWidgetComponent::SetDrawSize(struct FVector2D Size) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WidgetComponent.SetDrawSize");
 
 	struct SetDrawSize_Params {
-		struct Unknown Size;
+		struct FVector2D Size;
 	}; SetDrawSize_Params Params;
 
 	Params.Size = Size;
@@ -11187,11 +11187,11 @@ inline void UWidgetComponent::SetCylinderArcAngle(float InCylinderArcAngle) {
 }
 
 // Function UMG.WidgetComponent.SetBackgroundColor
-inline void UWidgetComponent::SetBackgroundColor(struct Unknown NewBackgroundColor) {
+inline void UWidgetComponent::SetBackgroundColor(struct FLinearColor NewBackgroundColor) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WidgetComponent.SetBackgroundColor");
 
 	struct SetBackgroundColor_Params {
-		struct Unknown NewBackgroundColor;
+		struct FLinearColor NewBackgroundColor;
 	}; SetBackgroundColor_Params Params;
 
 	Params.NewBackgroundColor = NewBackgroundColor;
@@ -11216,12 +11216,12 @@ inline void UWidgetComponent::RequestRedraw() {
 }
 
 // Function UMG.WidgetComponent.GetWindowVisiblility
-inline enum class Unknow UWidgetComponent::GetWindowVisiblility() {
+inline enum class EWindowVisibility UWidgetComponent::GetWindowVisiblility() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WidgetComponent.GetWindowVisiblility");
 
 	struct GetWindowVisiblility_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class EWindowVisibility ReturnValue;
 
 	}; GetWindowVisiblility_Params Params;
 
@@ -11252,12 +11252,12 @@ inline char UWidgetComponent::GetWindowFocusable() {
 }
 
 // Function UMG.WidgetComponent.GetWidgetSpace
-inline enum class Unknow UWidgetComponent::GetWidgetSpace() {
+inline enum class EWidgetSpace UWidgetComponent::GetWidgetSpace() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WidgetComponent.GetWidgetSpace");
 
 	struct GetWidgetSpace_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class EWidgetSpace ReturnValue;
 
 	}; GetWidgetSpace_Params Params;
 
@@ -11270,12 +11270,12 @@ inline enum class Unknow UWidgetComponent::GetWidgetSpace() {
 }
 
 // Function UMG.WidgetComponent.GetUserWidgetObject
-inline struct Unknown UWidgetComponent::GetUserWidgetObject() {
+inline struct UUserWidget UWidgetComponent::GetUserWidgetObject() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WidgetComponent.GetUserWidgetObject");
 
 	struct GetUserWidgetObject_Params {
 		
-		struct Unknown ReturnValue;
+		struct UUserWidget ReturnValue;
 
 	}; GetUserWidgetObject_Params Params;
 
@@ -11324,12 +11324,12 @@ inline char UWidgetComponent::GetTickWhenOffscreen() {
 }
 
 // Function UMG.WidgetComponent.GetRenderTarget
-inline struct Unknown UWidgetComponent::GetRenderTarget() {
+inline struct UTextureRenderTarget2D UWidgetComponent::GetRenderTarget() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WidgetComponent.GetRenderTarget");
 
 	struct GetRenderTarget_Params {
 		
-		struct Unknown ReturnValue;
+		struct UTextureRenderTarget2D ReturnValue;
 
 	}; GetRenderTarget_Params Params;
 
@@ -11360,12 +11360,12 @@ inline float UWidgetComponent::GetRedrawTime() {
 }
 
 // Function UMG.WidgetComponent.GetPivot
-inline struct Unknown UWidgetComponent::GetPivot() {
+inline struct FVector2D UWidgetComponent::GetPivot() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WidgetComponent.GetPivot");
 
 	struct GetPivot_Params {
 		
-		struct Unknown ReturnValue;
+		struct FVector2D ReturnValue;
 
 	}; GetPivot_Params Params;
 
@@ -11378,12 +11378,12 @@ inline struct Unknown UWidgetComponent::GetPivot() {
 }
 
 // Function UMG.WidgetComponent.GetOwnerPlayer
-inline struct Unknown UWidgetComponent::GetOwnerPlayer() {
+inline struct ULocalPlayer UWidgetComponent::GetOwnerPlayer() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WidgetComponent.GetOwnerPlayer");
 
 	struct GetOwnerPlayer_Params {
 		
-		struct Unknown ReturnValue;
+		struct ULocalPlayer ReturnValue;
 
 	}; GetOwnerPlayer_Params Params;
 
@@ -11396,12 +11396,12 @@ inline struct Unknown UWidgetComponent::GetOwnerPlayer() {
 }
 
 // Function UMG.WidgetComponent.GetMaterialInstance
-inline struct Unknown UWidgetComponent::GetMaterialInstance() {
+inline struct UMaterialInstanceDynamic UWidgetComponent::GetMaterialInstance() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WidgetComponent.GetMaterialInstance");
 
 	struct GetMaterialInstance_Params {
 		
-		struct Unknown ReturnValue;
+		struct UMaterialInstanceDynamic ReturnValue;
 
 	}; GetMaterialInstance_Params Params;
 
@@ -11432,12 +11432,12 @@ inline char UWidgetComponent::GetManuallyRedraw() {
 }
 
 // Function UMG.WidgetComponent.GetGeometryMode
-inline enum class Unknow UWidgetComponent::GetGeometryMode() {
+inline enum class EWidgetGeometryMode UWidgetComponent::GetGeometryMode() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WidgetComponent.GetGeometryMode");
 
 	struct GetGeometryMode_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class EWidgetGeometryMode ReturnValue;
 
 	}; GetGeometryMode_Params Params;
 
@@ -11450,12 +11450,12 @@ inline enum class Unknow UWidgetComponent::GetGeometryMode() {
 }
 
 // Function UMG.WidgetComponent.GetDrawSize
-inline struct Unknown UWidgetComponent::GetDrawSize() {
+inline struct FVector2D UWidgetComponent::GetDrawSize() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WidgetComponent.GetDrawSize");
 
 	struct GetDrawSize_Params {
 		
-		struct Unknown ReturnValue;
+		struct FVector2D ReturnValue;
 
 	}; GetDrawSize_Params Params;
 
@@ -11504,12 +11504,12 @@ inline float UWidgetComponent::GetCylinderArcAngle() {
 }
 
 // Function UMG.WidgetComponent.GetCurrentDrawSize
-inline struct Unknown UWidgetComponent::GetCurrentDrawSize() {
+inline struct FVector2D UWidgetComponent::GetCurrentDrawSize() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WidgetComponent.GetCurrentDrawSize");
 
 	struct GetCurrentDrawSize_Params {
 		
-		struct Unknown ReturnValue;
+		struct FVector2D ReturnValue;
 
 	}; GetCurrentDrawSize_Params Params;
 
@@ -11522,11 +11522,11 @@ inline struct Unknown UWidgetComponent::GetCurrentDrawSize() {
 }
 
 // Function UMG.WidgetInteractionComponent.SetFocus
-inline void UWidgetInteractionComponent::SetFocus(struct Unknown FocusWidget) {
+inline void UWidgetInteractionComponent::SetFocus(struct UWidget FocusWidget) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WidgetInteractionComponent.SetFocus");
 
 	struct SetFocus_Params {
-		struct Unknown FocusWidget;
+		struct UWidget FocusWidget;
 	}; SetFocus_Params Params;
 
 	Params.FocusWidget = FocusWidget;
@@ -11537,11 +11537,11 @@ inline void UWidgetInteractionComponent::SetFocus(struct Unknown FocusWidget) {
 }
 
 // Function UMG.WidgetInteractionComponent.SetCustomHitResult
-inline void UWidgetInteractionComponent::SetCustomHitResult(struct Unknown& HitResult) {
+inline void UWidgetInteractionComponent::SetCustomHitResult(struct FHitResult& HitResult) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WidgetInteractionComponent.SetCustomHitResult");
 
 	struct SetCustomHitResult_Params {
-		struct Unknown& HitResult;
+		struct FHitResult& HitResult;
 	}; SetCustomHitResult_Params Params;
 
 
@@ -11590,11 +11590,11 @@ inline void UWidgetInteractionComponent::ScrollWheel(float ScrollDelta) {
 }
 
 // Function UMG.WidgetInteractionComponent.ReleasePointerKey
-inline void UWidgetInteractionComponent::ReleasePointerKey(struct Unknown Key) {
+inline void UWidgetInteractionComponent::ReleasePointerKey(struct FKey Key) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WidgetInteractionComponent.ReleasePointerKey");
 
 	struct ReleasePointerKey_Params {
-		struct Unknown Key;
+		struct FKey Key;
 	}; ReleasePointerKey_Params Params;
 
 	Params.Key = Key;
@@ -11605,11 +11605,11 @@ inline void UWidgetInteractionComponent::ReleasePointerKey(struct Unknown Key) {
 }
 
 // Function UMG.WidgetInteractionComponent.ReleaseKey
-inline char UWidgetInteractionComponent::ReleaseKey(struct Unknown Key) {
+inline char UWidgetInteractionComponent::ReleaseKey(struct FKey Key) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WidgetInteractionComponent.ReleaseKey");
 
 	struct ReleaseKey_Params {
-		struct Unknown Key;
+		struct FKey Key;
 		char ReturnValue;
 
 	}; ReleaseKey_Params Params;
@@ -11624,11 +11624,11 @@ inline char UWidgetInteractionComponent::ReleaseKey(struct Unknown Key) {
 }
 
 // Function UMG.WidgetInteractionComponent.PressPointerKey
-inline void UWidgetInteractionComponent::PressPointerKey(struct Unknown Key) {
+inline void UWidgetInteractionComponent::PressPointerKey(struct FKey Key) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WidgetInteractionComponent.PressPointerKey");
 
 	struct PressPointerKey_Params {
-		struct Unknown Key;
+		struct FKey Key;
 	}; PressPointerKey_Params Params;
 
 	Params.Key = Key;
@@ -11639,11 +11639,11 @@ inline void UWidgetInteractionComponent::PressPointerKey(struct Unknown Key) {
 }
 
 // Function UMG.WidgetInteractionComponent.PressKey
-inline char UWidgetInteractionComponent::PressKey(struct Unknown Key, char bRepeat) {
+inline char UWidgetInteractionComponent::PressKey(struct FKey Key, char bRepeat) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WidgetInteractionComponent.PressKey");
 
 	struct PressKey_Params {
-		struct Unknown Key;
+		struct FKey Key;
 		char bRepeat;
 		char ReturnValue;
 
@@ -11660,11 +11660,11 @@ inline char UWidgetInteractionComponent::PressKey(struct Unknown Key, char bRepe
 }
 
 // Function UMG.WidgetInteractionComponent.PressAndReleaseKey
-inline char UWidgetInteractionComponent::PressAndReleaseKey(struct Unknown Key) {
+inline char UWidgetInteractionComponent::PressAndReleaseKey(struct FKey Key) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WidgetInteractionComponent.PressAndReleaseKey");
 
 	struct PressAndReleaseKey_Params {
-		struct Unknown Key;
+		struct FKey Key;
 		char ReturnValue;
 
 	}; PressAndReleaseKey_Params Params;
@@ -11733,12 +11733,12 @@ inline char UWidgetInteractionComponent::IsOverFocusableWidget() {
 }
 
 // Function UMG.WidgetInteractionComponent.GetLastHitResult
-inline struct Unknown UWidgetInteractionComponent::GetLastHitResult() {
+inline struct FHitResult UWidgetInteractionComponent::GetLastHitResult() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WidgetInteractionComponent.GetLastHitResult");
 
 	struct GetLastHitResult_Params {
 		
-		struct Unknown ReturnValue;
+		struct FHitResult ReturnValue;
 
 	}; GetLastHitResult_Params Params;
 
@@ -11751,12 +11751,12 @@ inline struct Unknown UWidgetInteractionComponent::GetLastHitResult() {
 }
 
 // Function UMG.WidgetInteractionComponent.GetHoveredWidgetComponent
-inline struct Unknown UWidgetInteractionComponent::GetHoveredWidgetComponent() {
+inline struct UWidgetComponent UWidgetInteractionComponent::GetHoveredWidgetComponent() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WidgetInteractionComponent.GetHoveredWidgetComponent");
 
 	struct GetHoveredWidgetComponent_Params {
 		
-		struct Unknown ReturnValue;
+		struct UWidgetComponent ReturnValue;
 
 	}; GetHoveredWidgetComponent_Params Params;
 
@@ -11769,12 +11769,12 @@ inline struct Unknown UWidgetInteractionComponent::GetHoveredWidgetComponent() {
 }
 
 // Function UMG.WidgetInteractionComponent.Get2DHitLocation
-inline struct Unknown UWidgetInteractionComponent::Get2DHitLocation() {
+inline struct FVector2D UWidgetInteractionComponent::Get2DHitLocation() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WidgetInteractionComponent.Get2DHitLocation");
 
 	struct Get2DHitLocation_Params {
 		
-		struct Unknown ReturnValue;
+		struct FVector2D ReturnValue;
 
 	}; Get2DHitLocation_Params Params;
 
@@ -11802,11 +11802,11 @@ inline void UWidgetSwitcher::SetActiveWidgetIndex(int32_t Index) {
 }
 
 // Function UMG.WidgetSwitcher.SetActiveWidget
-inline void UWidgetSwitcher::SetActiveWidget(struct Unknown Widget) {
+inline void UWidgetSwitcher::SetActiveWidget(struct UWidget Widget) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WidgetSwitcher.SetActiveWidget");
 
 	struct SetActiveWidget_Params {
-		struct Unknown Widget;
+		struct UWidget Widget;
 	}; SetActiveWidget_Params Params;
 
 	Params.Widget = Widget;
@@ -11817,12 +11817,12 @@ inline void UWidgetSwitcher::SetActiveWidget(struct Unknown Widget) {
 }
 
 // Function UMG.WidgetSwitcher.GetWidgetAtIndex
-inline struct Unknown UWidgetSwitcher::GetWidgetAtIndex(int32_t Index) {
+inline struct UWidget UWidgetSwitcher::GetWidgetAtIndex(int32_t Index) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WidgetSwitcher.GetWidgetAtIndex");
 
 	struct GetWidgetAtIndex_Params {
 		int32_t Index;
-		struct Unknown ReturnValue;
+		struct UWidget ReturnValue;
 
 	}; GetWidgetAtIndex_Params Params;
 
@@ -11872,12 +11872,12 @@ inline int32_t UWidgetSwitcher::GetActiveWidgetIndex() {
 }
 
 // Function UMG.WidgetSwitcher.GetActiveWidget
-inline struct Unknown UWidgetSwitcher::GetActiveWidget() {
+inline struct UWidget UWidgetSwitcher::GetActiveWidget() {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WidgetSwitcher.GetActiveWidget");
 
 	struct GetActiveWidget_Params {
 		
-		struct Unknown ReturnValue;
+		struct UWidget ReturnValue;
 
 	}; GetActiveWidget_Params Params;
 
@@ -11905,11 +11905,11 @@ inline void UWidgetSwitcherSlot::SetVerticalAlignment(char InVerticalAlignment) 
 }
 
 // Function UMG.WidgetSwitcherSlot.SetPadding
-inline void UWidgetSwitcherSlot::SetPadding(struct Unknown InPadding) {
+inline void UWidgetSwitcherSlot::SetPadding(struct FMargin InPadding) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WidgetSwitcherSlot.SetPadding");
 
 	struct SetPadding_Params {
-		struct Unknown InPadding;
+		struct FMargin InPadding;
 	}; SetPadding_Params Params;
 
 	Params.InPadding = InPadding;
@@ -11950,11 +11950,11 @@ inline void UWindowTitleBarArea::SetVerticalAlignment(char InVerticalAlignment) 
 }
 
 // Function UMG.WindowTitleBarArea.SetPadding
-inline void UWindowTitleBarArea::SetPadding(struct Unknown InPadding) {
+inline void UWindowTitleBarArea::SetPadding(struct FMargin InPadding) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WindowTitleBarArea.SetPadding");
 
 	struct SetPadding_Params {
-		struct Unknown InPadding;
+		struct FMargin InPadding;
 	}; SetPadding_Params Params;
 
 	Params.InPadding = InPadding;
@@ -11995,11 +11995,11 @@ inline void UWindowTitleBarAreaSlot::SetVerticalAlignment(char InVerticalAlignme
 }
 
 // Function UMG.WindowTitleBarAreaSlot.SetPadding
-inline void UWindowTitleBarAreaSlot::SetPadding(struct Unknown InPadding) {
+inline void UWindowTitleBarAreaSlot::SetPadding(struct FMargin InPadding) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WindowTitleBarAreaSlot.SetPadding");
 
 	struct SetPadding_Params {
-		struct Unknown InPadding;
+		struct FMargin InPadding;
 	}; SetPadding_Params Params;
 
 	Params.InPadding = InPadding;
@@ -12025,11 +12025,11 @@ inline void UWindowTitleBarAreaSlot::SetHorizontalAlignment(char InHorizontalAli
 }
 
 // Function UMG.WrapBox.SetInnerSlotPadding
-inline void UWrapBox::SetInnerSlotPadding(struct Unknown InPadding) {
+inline void UWrapBox::SetInnerSlotPadding(struct FVector2D InPadding) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WrapBox.SetInnerSlotPadding");
 
 	struct SetInnerSlotPadding_Params {
-		struct Unknown InPadding;
+		struct FVector2D InPadding;
 	}; SetInnerSlotPadding_Params Params;
 
 	Params.InPadding = InPadding;
@@ -12055,12 +12055,12 @@ inline void UWrapBox::SetHorizontalAlignment(char InHorizontalAlignment) {
 }
 
 // Function UMG.WrapBox.AddChildToWrapBox
-inline struct Unknown UWrapBox::AddChildToWrapBox(struct Unknown Content) {
+inline struct UWrapBoxSlot UWrapBox::AddChildToWrapBox(struct UWidget Content) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WrapBox.AddChildToWrapBox");
 
 	struct AddChildToWrapBox_Params {
-		struct Unknown Content;
-		struct Unknown ReturnValue;
+		struct UWidget Content;
+		struct UWrapBoxSlot ReturnValue;
 
 	}; AddChildToWrapBox_Params Params;
 
@@ -12089,11 +12089,11 @@ inline void UWrapBoxSlot::SetVerticalAlignment(char InVerticalAlignment) {
 }
 
 // Function UMG.WrapBoxSlot.SetPadding
-inline void UWrapBoxSlot::SetPadding(struct Unknown InPadding) {
+inline void UWrapBoxSlot::SetPadding(struct FMargin InPadding) {
 	static auto fn = UObject::FindObject<UFunction>("Function UMG.WrapBoxSlot.SetPadding");
 
 	struct SetPadding_Params {
-		struct Unknown InPadding;
+		struct FMargin InPadding;
 	}; SetPadding_Params Params;
 
 	Params.InPadding = InPadding;

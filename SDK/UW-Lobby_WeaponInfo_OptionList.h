@@ -3,25 +3,25 @@ class UUW-Lobby_WeaponInfo_OptionList_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown UW-Lobby_WeaponInfo_Option_Slot; // 0x250 (8)
-	struct Unknown UW-Lobby_WeaponInfo_Option_Slot_2; // 0x258 (8)
-	struct Unknown UW-Lobby_WeaponInfo_Option_Slot_3; // 0x260 (8)
-	struct Unknown UW-Lobby_WeaponInfo_Option_Slot_4; // 0x268 (8)
-	struct Unknown VerticalBox_OptionList; // 0x270 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UUW-Lobby_WeaponInfo_Option_Slot_C UW-Lobby_WeaponInfo_Option_Slot; // 0x250 (8)
+	struct UUW-Lobby_WeaponInfo_Option_Slot_C UW-Lobby_WeaponInfo_Option_Slot_2; // 0x258 (8)
+	struct UUW-Lobby_WeaponInfo_Option_Slot_C UW-Lobby_WeaponInfo_Option_Slot_3; // 0x260 (8)
+	struct UUW-Lobby_WeaponInfo_Option_Slot_C UW-Lobby_WeaponInfo_Option_Slot_4; // 0x268 (8)
+	struct UVerticalBox VerticalBox_OptionList; // 0x270 (8)
 
-	void AddOptionList(struct Unknown& ItemOption); // Function UW-Lobby_WeaponInfo_OptionList.UW-Lobby_WeaponInfo_OptionList_C.AddOptionList(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetOptionList(struct TArray<Unknown>& OptionIDList); // Function UW-Lobby_WeaponInfo_OptionList.UW-Lobby_WeaponInfo_OptionList_C.SetOptionList(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AddOptionList(struct FItemOption& ItemOption); // Function UW-Lobby_WeaponInfo_OptionList.UW-Lobby_WeaponInfo_OptionList_C.AddOptionList(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetOptionList(struct TArray<int32_t>& OptionIDList); // Function UW-Lobby_WeaponInfo_OptionList.UW-Lobby_WeaponInfo_OptionList_C.SetOptionList(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-Lobby_WeaponInfo_OptionList.UW-Lobby_WeaponInfo_OptionList_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-Lobby_WeaponInfo_OptionList(int32_t EntryPoint); // Function UW-Lobby_WeaponInfo_OptionList.UW-Lobby_WeaponInfo_OptionList_C.ExecuteUbergraph_UW-Lobby_WeaponInfo_OptionList(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-Lobby_WeaponInfo_OptionList.UW-Lobby_WeaponInfo_OptionList_C.AddOptionList
-inline void UUW-Lobby_WeaponInfo_OptionList_C::AddOptionList(struct Unknown& ItemOption) {
+inline void UUW-Lobby_WeaponInfo_OptionList_C::AddOptionList(struct FItemOption& ItemOption) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Lobby_WeaponInfo_OptionList.UW-Lobby_WeaponInfo_OptionList_C.AddOptionList");
 
 	struct AddOptionList_Params {
-		struct Unknown& ItemOption;
+		struct FItemOption& ItemOption;
 	}; AddOptionList_Params Params;
 
 
@@ -34,11 +34,11 @@ inline void UUW-Lobby_WeaponInfo_OptionList_C::AddOptionList(struct Unknown& Ite
 }
 
 // Function UW-Lobby_WeaponInfo_OptionList.UW-Lobby_WeaponInfo_OptionList_C.SetOptionList
-inline void UUW-Lobby_WeaponInfo_OptionList_C::SetOptionList(struct TArray<Unknown>& OptionIDList) {
+inline void UUW-Lobby_WeaponInfo_OptionList_C::SetOptionList(struct TArray<int32_t>& OptionIDList) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Lobby_WeaponInfo_OptionList.UW-Lobby_WeaponInfo_OptionList_C.SetOptionList");
 
 	struct SetOptionList_Params {
-		struct TArray<Unknown>& OptionIDList;
+		struct TArray<int32_t>& OptionIDList;
 	}; SetOptionList_Params Params;
 
 

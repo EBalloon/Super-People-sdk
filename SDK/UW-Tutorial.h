@@ -3,36 +3,36 @@ class UUW-Tutorial_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Bg; // 0x250 (8)
-	struct Unknown btn_Cancel; // 0x258 (8)
-	struct Unknown btn_OK; // 0x260 (8)
-	struct Unknown Button_Focus; // 0x268 (8)
-	struct Unknown Button_Focus2; // 0x270 (8)
-	struct Unknown CanvasPanel_Exit; // 0x278 (8)
-	struct Unknown HorizontalBox_1; // 0x280 (8)
-	struct Unknown Image_2; // 0x288 (8)
-	struct Unknown Image_223; // 0x290 (8)
-	struct Unknown Img_Movie; // 0x298 (8)
-	struct Unknown RichTextBlock_244; // 0x2A0 (8)
-	struct Unknown MediaPlayer; // 0x2A8 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UImage Bg; // 0x250 (8)
+	struct UButton btn_Cancel; // 0x258 (8)
+	struct UButton btn_OK; // 0x260 (8)
+	struct UButton Button_Focus; // 0x268 (8)
+	struct UButton Button_Focus2; // 0x270 (8)
+	struct UCanvasPanel CanvasPanel_Exit; // 0x278 (8)
+	struct UHorizontalBox HorizontalBox_1; // 0x280 (8)
+	struct UImage Image_2; // 0x288 (8)
+	struct UImage Image_223; // 0x290 (8)
+	struct UImage Img_Movie; // 0x298 (8)
+	struct URichTextBlock RichTextBlock_244; // 0x2A0 (8)
+	struct UMediaPlayer MediaPlayer; // 0x2A8 (8)
 	char bPopup : 0; // 0x2B0 (1)
-	struct Unknown MediaSoundComp; // 0x2B8 (8)
+	struct UMediaSoundComponent MediaSoundComp; // 0x2B8 (8)
 	float GammaIntensity; // 0x2C0 (4)
-	struct Unknown Game Settings; // 0x2C8 (8)
-	struct Unknown SkipNoticeTimer; // 0x2D0 (8)
-	struct Unknown MediaTexture; // 0x2D8 (8)
-	struct Unknown Media; // 0x2E0 (8)
+	struct UBP_GameSettings_C Game Settings; // 0x2C8 (8)
+	struct FTimerHandle SkipNoticeTimer; // 0x2D0 (8)
+	struct UMediaTexture MediaTexture; // 0x2D8 (8)
+	struct UFileMediaSource Media; // 0x2E0 (8)
 	char NextScene : 0; // 0x2E8 (1)
 
 	void PlayMedia(); // Function UW-Tutorial.UW-Tutorial_C.PlayMedia(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ToggleExitPopup(); // Function UW-Tutorial.UW-Tutorial_C.ToggleExitPopup(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Move Next Scene(); // Function UW-Tutorial.UW-Tutorial_C.Move Next Scene(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown OnKeyDown(struct Unknown MyGeometry, struct Unknown InKeyEvent); // Function UW-Tutorial.UW-Tutorial_C.OnKeyDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply OnKeyDown(struct FGeometry MyGeometry, struct FKeyEvent InKeyEvent); // Function UW-Tutorial.UW-Tutorial_C.OnKeyDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-Tutorial.UW-Tutorial_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-Tutorial.UW-Tutorial_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-Tutorial.UW-Tutorial_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CustomEvent_1(); // Function UW-Tutorial.UW-Tutorial_C.CustomEvent_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BndEvt__btn_OK_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-Tutorial.UW-Tutorial_C.BndEvt__btn_OK_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__btn_Ok_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-Tutorial.UW-Tutorial_C.BndEvt__btn_Ok_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__btn_Cancel_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(); // Function UW-Tutorial.UW-Tutorial_C.BndEvt__btn_Cancel_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CustomEvent_2(); // Function UW-Tutorial.UW-Tutorial_C.CustomEvent_2(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__Button_Focus_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(); // Function UW-Tutorial.UW-Tutorial_C.BndEvt__Button_Focus_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -83,13 +83,13 @@ inline void UUW-Tutorial_C::Move Next Scene() {
 }
 
 // Function UW-Tutorial.UW-Tutorial_C.OnKeyDown
-inline struct Unknown UUW-Tutorial_C::OnKeyDown(struct Unknown MyGeometry, struct Unknown InKeyEvent) {
+inline struct FEventReply UUW-Tutorial_C::OnKeyDown(struct FGeometry MyGeometry, struct FKeyEvent InKeyEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Tutorial.UW-Tutorial_C.OnKeyDown");
 
 	struct OnKeyDown_Params {
-		struct Unknown MyGeometry;
-		struct Unknown InKeyEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FKeyEvent InKeyEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnKeyDown_Params Params;
 
@@ -118,11 +118,11 @@ inline void UUW-Tutorial_C::Construct() {
 }
 
 // Function UW-Tutorial.UW-Tutorial_C.Tick
-inline void UUW-Tutorial_C::Tick(struct Unknown MyGeometry, float InDeltaTime) {
+inline void UUW-Tutorial_C::Tick(struct FGeometry MyGeometry, float InDeltaTime) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Tutorial.UW-Tutorial_C.Tick");
 
 	struct Tick_Params {
-		struct Unknown MyGeometry;
+		struct FGeometry MyGeometry;
 		float InDeltaTime;
 	}; Tick_Params Params;
 
@@ -148,13 +148,13 @@ inline void UUW-Tutorial_C::CustomEvent_1() {
 	fn->FunctionFlags = flags;
 }
 
-// Function UW-Tutorial.UW-Tutorial_C.BndEvt__btn_OK_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature
-inline void UUW-Tutorial_C::BndEvt__btn_OK_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature() {
-	static auto fn = UObject::FindObject<UFunction>("Function UW-Tutorial.UW-Tutorial_C.BndEvt__btn_OK_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature");
+// Function UW-Tutorial.UW-Tutorial_C.BndEvt__btn_Ok_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature
+inline void UUW-Tutorial_C::BndEvt__btn_Ok_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature() {
+	static auto fn = UObject::FindObject<UFunction>("Function UW-Tutorial.UW-Tutorial_C.BndEvt__btn_Ok_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature");
 
-	struct BndEvt__btn_OK_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature_Params {
+	struct BndEvt__btn_Ok_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature_Params {
 		
-	}; BndEvt__btn_OK_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature_Params Params;
+	}; BndEvt__btn_Ok_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature_Params Params;
 
 
 	auto flags = fn->FunctionFlags;

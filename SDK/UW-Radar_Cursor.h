@@ -3,26 +3,26 @@ class UUW-Radar_Cursor_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Escape_Cursor_Reset; // 0x250 (8)
-	struct Unknown MiniNuke_Cursor_Reset; // 0x258 (8)
-	struct Unknown Escape_Cursor; // 0x260 (8)
-	struct Unknown MiniNuke_Cursor; // 0x268 (8)
-	struct Unknown Image_390; // 0x270 (8)
-	struct Unknown Image_519; // 0x278 (8)
-	struct Unknown Img_CursorNuclear; // 0x280 (8)
-	struct Unknown SizeBox_Nuclear; // 0x288 (8)
-	struct Unknown WidgetSwitcher_1; // 0x290 (8)
-	struct Unknown Anim_MouseClicked; // 0x298 (8)
-	struct Unknown DummyWidgetRef; // 0x2A0 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UWidgetAnimation Escape_Cursor_Reset; // 0x250 (8)
+	struct UWidgetAnimation MiniNuke_Cursor_Reset; // 0x258 (8)
+	struct UWidgetAnimation Escape_Cursor; // 0x260 (8)
+	struct UWidgetAnimation MiniNuke_Cursor; // 0x268 (8)
+	struct UImage Image_390; // 0x270 (8)
+	struct UImage Image_519; // 0x278 (8)
+	struct UImage Img_CursorNuclear; // 0x280 (8)
+	struct USizeBox SizeBox_Nuclear; // 0x288 (8)
+	struct UWidgetSwitcher WidgetSwitcher_1; // 0x290 (8)
+	struct UWidgetAnimation Anim_MouseClicked; // 0x298 (8)
+	struct UUW-Radar_Cursor_Dummy_C DummyWidgetRef; // 0x2A0 (8)
 
 	void PlayClickSound(); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.PlayClickSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetCursorSize(); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.SetCursorSize(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetCursorByBuffEventType(enum class Unknow BuffEventType); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.SetCursorByBuffEventType(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnClicked_Event_1(struct Unknown TouchedActor, struct Unknown ButtonPressed); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.OnClicked_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetCursorByBuffEventType(enum class EBuffEventType BuffEventType); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.SetCursorByBuffEventType(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnClicked_Event_1(struct UActor TouchedActor, struct FKey ButtonPressed); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.OnClicked_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void PlayMouseCursorAnimation(); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.PlayMouseCursorAnimation(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void UpdateCursorPosition(); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.UpdateCursorPosition(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ShowCursor(); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.ShowCursor(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void HideCursor(); // Function UW-Radar_Cursor.UW-Radar_Cursor_C.HideCursor(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -58,11 +58,11 @@ inline void UUW-Radar_Cursor_C::SetCursorSize() {
 }
 
 // Function UW-Radar_Cursor.UW-Radar_Cursor_C.SetCursorByBuffEventType
-inline void UUW-Radar_Cursor_C::SetCursorByBuffEventType(enum class Unknow BuffEventType) {
+inline void UUW-Radar_Cursor_C::SetCursorByBuffEventType(enum class EBuffEventType BuffEventType) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Radar_Cursor.UW-Radar_Cursor_C.SetCursorByBuffEventType");
 
 	struct SetCursorByBuffEventType_Params {
-		enum class Unknow BuffEventType;
+		enum class EBuffEventType BuffEventType;
 	}; SetCursorByBuffEventType_Params Params;
 
 	Params.BuffEventType = BuffEventType;
@@ -73,12 +73,12 @@ inline void UUW-Radar_Cursor_C::SetCursorByBuffEventType(enum class Unknow BuffE
 }
 
 // Function UW-Radar_Cursor.UW-Radar_Cursor_C.OnClicked_Event_1
-inline void UUW-Radar_Cursor_C::OnClicked_Event_1(struct Unknown TouchedActor, struct Unknown ButtonPressed) {
+inline void UUW-Radar_Cursor_C::OnClicked_Event_1(struct UActor TouchedActor, struct FKey ButtonPressed) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Radar_Cursor.UW-Radar_Cursor_C.OnClicked_Event_1");
 
 	struct OnClicked_Event_1_Params {
-		struct Unknown TouchedActor;
-		struct Unknown ButtonPressed;
+		struct UActor TouchedActor;
+		struct FKey ButtonPressed;
 	}; OnClicked_Event_1_Params Params;
 
 	Params.TouchedActor = TouchedActor;
@@ -118,11 +118,11 @@ inline void UUW-Radar_Cursor_C::PlayMouseCursorAnimation() {
 }
 
 // Function UW-Radar_Cursor.UW-Radar_Cursor_C.Tick
-inline void UUW-Radar_Cursor_C::Tick(struct Unknown MyGeometry, float InDeltaTime) {
+inline void UUW-Radar_Cursor_C::Tick(struct FGeometry MyGeometry, float InDeltaTime) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Radar_Cursor.UW-Radar_Cursor_C.Tick");
 
 	struct Tick_Params {
-		struct Unknown MyGeometry;
+		struct FGeometry MyGeometry;
 		float InDeltaTime;
 	}; Tick_Params Params;
 

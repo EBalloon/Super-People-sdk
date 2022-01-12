@@ -13,66 +13,66 @@ public:
 
 	char bUseComplexAsSimpleCollision : 0; // 0x4E0 (1)
 	char bUseAsyncCooking : 0; // 0x4E1 (1)
-	struct Unknown ProcMeshBodySetup; // 0x4E8 (8)
-	struct TArray<Unknown> ProcMeshSections; // 0x4F0 (16)
-	struct TArray<Unknown> CollisionConvexElems; // 0x500 (16)
-	struct Unknown LocalBounds; // 0x510 (28)
-	struct TArray<Unknown> AsyncBodySetupQueue; // 0x530 (16)
+	struct UBodySetup ProcMeshBodySetup; // 0x4E8 (8)
+	struct TArray<struct FProcMeshSection> ProcMeshSections; // 0x4F0 (16)
+	struct TArray<struct FKConvexElem> CollisionConvexElems; // 0x500 (16)
+	struct FBoxSphereBounds LocalBounds; // 0x510 (28)
+	struct TArray<struct UBodySetup> AsyncBodySetupQueue; // 0x530 (16)
 
-	void UpdateMeshSection_LinearColor(int32_t SectionIndex, struct TArray<Unknown>& Vertices, struct TArray<Unknown>& Normals, struct TArray<Unknown>& UV0, struct TArray<Unknown>& UV1, struct TArray<Unknown>& UV2, struct TArray<Unknown>& UV3, struct TArray<Unknown>& VertexColors, struct TArray<Unknown>& Tangents); // Function ProceduralMeshComponent.ProceduralMeshComponent.UpdateMeshSection_LinearColor(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x17A4090>
-	void UpdateMeshSection(int32_t SectionIndex, struct TArray<Unknown>& Vertices, struct TArray<Unknown>& Normals, struct TArray<Unknown>& UV0, struct TArray<Unknown>& VertexColors, struct TArray<Unknown>& Tangents); // Function ProceduralMeshComponent.ProceduralMeshComponent.UpdateMeshSection(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x17A3DC0>
+	void UpdateMeshSection_LinearColor(int32_t SectionIndex, struct TArray<struct FVector>& Vertices, struct TArray<struct FVector>& Normals, struct TArray<struct FVector2D>& UV0, struct TArray<struct FVector2D>& UV1, struct TArray<struct FVector2D>& UV2, struct TArray<struct FVector2D>& UV3, struct TArray<struct FLinearColor>& VertexColors, struct TArray<struct FProcMeshTangent>& Tangents); // Function ProceduralMeshComponent.ProceduralMeshComponent.UpdateMeshSection_LinearColor(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x17A4090>
+	void UpdateMeshSection(int32_t SectionIndex, struct TArray<struct FVector>& Vertices, struct TArray<struct FVector>& Normals, struct TArray<struct FVector2D>& UV0, struct TArray<struct FColor>& VertexColors, struct TArray<struct FProcMeshTangent>& Tangents); // Function ProceduralMeshComponent.ProceduralMeshComponent.UpdateMeshSection(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x17A3DC0>
 	void SetMeshSectionVisible(int32_t SectionIndex, char bNewVisibility); // Function ProceduralMeshComponent.ProceduralMeshComponent.SetMeshSectionVisible(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x17A3AD0>
 	char IsMeshSectionVisible(int32_t SectionIndex); // Function ProceduralMeshComponent.ProceduralMeshComponent.IsMeshSectionVisible(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17A3A40>
 	int32_t GetNumSections(); // Function ProceduralMeshComponent.ProceduralMeshComponent.GetNumSections(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17A3450>
-	void CreateMeshSection_LinearColor(int32_t SectionIndex, struct TArray<Unknown>& Vertices, struct TArray<Unknown>& Triangles, struct TArray<Unknown>& Normals, struct TArray<Unknown>& UV0, struct TArray<Unknown>& UV1, struct TArray<Unknown>& UV2, struct TArray<Unknown>& UV3, struct TArray<Unknown>& VertexColors, struct TArray<Unknown>& Tangents, char bCreateCollision); // Function ProceduralMeshComponent.ProceduralMeshComponent.CreateMeshSection_LinearColor(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x17A2D30>
-	void CreateMeshSection(int32_t SectionIndex, struct TArray<Unknown>& Vertices, struct TArray<Unknown>& Triangles, struct TArray<Unknown>& Normals, struct TArray<Unknown>& UV0, struct TArray<Unknown>& VertexColors, struct TArray<Unknown>& Tangents, char bCreateCollision); // Function ProceduralMeshComponent.ProceduralMeshComponent.CreateMeshSection(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x17A29C0>
+	void CreateMeshSection_LinearColor(int32_t SectionIndex, struct TArray<struct FVector>& Vertices, struct TArray<int32_t>& Triangles, struct TArray<struct FVector>& Normals, struct TArray<struct FVector2D>& UV0, struct TArray<struct FVector2D>& UV1, struct TArray<struct FVector2D>& UV2, struct TArray<struct FVector2D>& UV3, struct TArray<struct FLinearColor>& VertexColors, struct TArray<struct FProcMeshTangent>& Tangents, char bCreateCollision); // Function ProceduralMeshComponent.ProceduralMeshComponent.CreateMeshSection_LinearColor(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x17A2D30>
+	void CreateMeshSection(int32_t SectionIndex, struct TArray<struct FVector>& Vertices, struct TArray<int32_t>& Triangles, struct TArray<struct FVector>& Normals, struct TArray<struct FVector2D>& UV0, struct TArray<struct FColor>& VertexColors, struct TArray<struct FProcMeshTangent>& Tangents, char bCreateCollision); // Function ProceduralMeshComponent.ProceduralMeshComponent.CreateMeshSection(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x17A29C0>
 	void ClearMeshSection(int32_t SectionIndex); // Function ProceduralMeshComponent.ProceduralMeshComponent.ClearMeshSection(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x17A2040>
 	void ClearCollisionConvexMeshes(); // Function ProceduralMeshComponent.ProceduralMeshComponent.ClearCollisionConvexMeshes(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x17A2020>
 	void ClearAllMeshSections(); // Function ProceduralMeshComponent.ProceduralMeshComponent.ClearAllMeshSections(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x17A2000>
-	void AddCollisionConvexMesh(struct TArray<Unknown> ConvexVerts); // Function ProceduralMeshComponent.ProceduralMeshComponent.AddCollisionConvexMesh(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x17A1CC0>
+	void AddCollisionConvexMesh(struct TArray<struct FVector> ConvexVerts); // Function ProceduralMeshComponent.ProceduralMeshComponent.AddCollisionConvexMesh(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x17A1CC0>
 };
 
 // ScriptStruct ProceduralMeshComponent.ProcMeshSection
 struct FProcMeshSection {
-	struct TArray<Unknown> ProcVertexBuffer; // 0x0 (16)
-	struct TArray<Unknown> ProcIndexBuffer; // 0x10 (16)
-	struct Unknown SectionLocalBox; // 0x20 (28)
+	struct TArray<struct FProcMeshVertex> ProcVertexBuffer; // 0x0 (16)
+	struct TArray<uint32_t> ProcIndexBuffer; // 0x10 (16)
+	struct FBox SectionLocalBox; // 0x20 (28)
 	char bEnableCollision : 0; // 0x3C (1)
 	char bSectionVisible : 0; // 0x3D (1)
 };
 
 // ScriptStruct ProceduralMeshComponent.ProcMeshVertex
 struct FProcMeshVertex {
-	struct Unknown Position; // 0x0 (12)
-	struct Unknown Normal; // 0xC (12)
-	struct Unknown Tangent; // 0x18 (16)
-	struct Unknown Color; // 0x28 (4)
-	struct Unknown UV0; // 0x2C (8)
-	struct Unknown UV1; // 0x34 (8)
-	struct Unknown UV2; // 0x3C (8)
-	struct Unknown UV3; // 0x44 (8)
+	struct FVector Position; // 0x0 (12)
+	struct FVector Normal; // 0xC (12)
+	struct FProcMeshTangent Tangent; // 0x18 (16)
+	struct FColor Color; // 0x28 (4)
+	struct FVector2D UV0; // 0x2C (8)
+	struct FVector2D UV1; // 0x34 (8)
+	struct FVector2D UV2; // 0x3C (8)
+	struct FVector2D UV3; // 0x44 (8)
 };
 
 // ScriptStruct ProceduralMeshComponent.ProcMeshTangent
 struct FProcMeshTangent {
-	struct Unknown TangentX; // 0x0 (12)
+	struct FVector TangentX; // 0x0 (12)
 	char bFlipTangentY : 0; // 0xC (1)
 };
 
 // Function ProceduralMeshComponent.ProceduralMeshComponent.UpdateMeshSection_LinearColor
-inline void UProceduralMeshComponent::UpdateMeshSection_LinearColor(int32_t SectionIndex, struct TArray<Unknown>& Vertices, struct TArray<Unknown>& Normals, struct TArray<Unknown>& UV0, struct TArray<Unknown>& UV1, struct TArray<Unknown>& UV2, struct TArray<Unknown>& UV3, struct TArray<Unknown>& VertexColors, struct TArray<Unknown>& Tangents) {
+inline void UProceduralMeshComponent::UpdateMeshSection_LinearColor(int32_t SectionIndex, struct TArray<struct FVector>& Vertices, struct TArray<struct FVector>& Normals, struct TArray<struct FVector2D>& UV0, struct TArray<struct FVector2D>& UV1, struct TArray<struct FVector2D>& UV2, struct TArray<struct FVector2D>& UV3, struct TArray<struct FLinearColor>& VertexColors, struct TArray<struct FProcMeshTangent>& Tangents) {
 	static auto fn = UObject::FindObject<UFunction>("Function ProceduralMeshComponent.ProceduralMeshComponent.UpdateMeshSection_LinearColor");
 
 	struct UpdateMeshSection_LinearColor_Params {
 		int32_t SectionIndex;
-		struct TArray<Unknown>& Vertices;
-		struct TArray<Unknown>& Normals;
-		struct TArray<Unknown>& UV0;
-		struct TArray<Unknown>& UV1;
-		struct TArray<Unknown>& UV2;
-		struct TArray<Unknown>& UV3;
-		struct TArray<Unknown>& VertexColors;
-		struct TArray<Unknown>& Tangents;
+		struct TArray<struct FVector>& Vertices;
+		struct TArray<struct FVector>& Normals;
+		struct TArray<struct FVector2D>& UV0;
+		struct TArray<struct FVector2D>& UV1;
+		struct TArray<struct FVector2D>& UV2;
+		struct TArray<struct FVector2D>& UV3;
+		struct TArray<struct FLinearColor>& VertexColors;
+		struct TArray<struct FProcMeshTangent>& Tangents;
 	}; UpdateMeshSection_LinearColor_Params Params;
 
 	Params.SectionIndex = SectionIndex;
@@ -93,16 +93,16 @@ inline void UProceduralMeshComponent::UpdateMeshSection_LinearColor(int32_t Sect
 }
 
 // Function ProceduralMeshComponent.ProceduralMeshComponent.UpdateMeshSection
-inline void UProceduralMeshComponent::UpdateMeshSection(int32_t SectionIndex, struct TArray<Unknown>& Vertices, struct TArray<Unknown>& Normals, struct TArray<Unknown>& UV0, struct TArray<Unknown>& VertexColors, struct TArray<Unknown>& Tangents) {
+inline void UProceduralMeshComponent::UpdateMeshSection(int32_t SectionIndex, struct TArray<struct FVector>& Vertices, struct TArray<struct FVector>& Normals, struct TArray<struct FVector2D>& UV0, struct TArray<struct FColor>& VertexColors, struct TArray<struct FProcMeshTangent>& Tangents) {
 	static auto fn = UObject::FindObject<UFunction>("Function ProceduralMeshComponent.ProceduralMeshComponent.UpdateMeshSection");
 
 	struct UpdateMeshSection_Params {
 		int32_t SectionIndex;
-		struct TArray<Unknown>& Vertices;
-		struct TArray<Unknown>& Normals;
-		struct TArray<Unknown>& UV0;
-		struct TArray<Unknown>& VertexColors;
-		struct TArray<Unknown>& Tangents;
+		struct TArray<struct FVector>& Vertices;
+		struct TArray<struct FVector>& Normals;
+		struct TArray<struct FVector2D>& UV0;
+		struct TArray<struct FColor>& VertexColors;
+		struct TArray<struct FProcMeshTangent>& Tangents;
 	}; UpdateMeshSection_Params Params;
 
 	Params.SectionIndex = SectionIndex;
@@ -174,20 +174,20 @@ inline int32_t UProceduralMeshComponent::GetNumSections() {
 }
 
 // Function ProceduralMeshComponent.ProceduralMeshComponent.CreateMeshSection_LinearColor
-inline void UProceduralMeshComponent::CreateMeshSection_LinearColor(int32_t SectionIndex, struct TArray<Unknown>& Vertices, struct TArray<Unknown>& Triangles, struct TArray<Unknown>& Normals, struct TArray<Unknown>& UV0, struct TArray<Unknown>& UV1, struct TArray<Unknown>& UV2, struct TArray<Unknown>& UV3, struct TArray<Unknown>& VertexColors, struct TArray<Unknown>& Tangents, char bCreateCollision) {
+inline void UProceduralMeshComponent::CreateMeshSection_LinearColor(int32_t SectionIndex, struct TArray<struct FVector>& Vertices, struct TArray<int32_t>& Triangles, struct TArray<struct FVector>& Normals, struct TArray<struct FVector2D>& UV0, struct TArray<struct FVector2D>& UV1, struct TArray<struct FVector2D>& UV2, struct TArray<struct FVector2D>& UV3, struct TArray<struct FLinearColor>& VertexColors, struct TArray<struct FProcMeshTangent>& Tangents, char bCreateCollision) {
 	static auto fn = UObject::FindObject<UFunction>("Function ProceduralMeshComponent.ProceduralMeshComponent.CreateMeshSection_LinearColor");
 
 	struct CreateMeshSection_LinearColor_Params {
 		int32_t SectionIndex;
-		struct TArray<Unknown>& Vertices;
-		struct TArray<Unknown>& Triangles;
-		struct TArray<Unknown>& Normals;
-		struct TArray<Unknown>& UV0;
-		struct TArray<Unknown>& UV1;
-		struct TArray<Unknown>& UV2;
-		struct TArray<Unknown>& UV3;
-		struct TArray<Unknown>& VertexColors;
-		struct TArray<Unknown>& Tangents;
+		struct TArray<struct FVector>& Vertices;
+		struct TArray<int32_t>& Triangles;
+		struct TArray<struct FVector>& Normals;
+		struct TArray<struct FVector2D>& UV0;
+		struct TArray<struct FVector2D>& UV1;
+		struct TArray<struct FVector2D>& UV2;
+		struct TArray<struct FVector2D>& UV3;
+		struct TArray<struct FLinearColor>& VertexColors;
+		struct TArray<struct FProcMeshTangent>& Tangents;
 		char bCreateCollision;
 	}; CreateMeshSection_LinearColor_Params Params;
 
@@ -211,17 +211,17 @@ inline void UProceduralMeshComponent::CreateMeshSection_LinearColor(int32_t Sect
 }
 
 // Function ProceduralMeshComponent.ProceduralMeshComponent.CreateMeshSection
-inline void UProceduralMeshComponent::CreateMeshSection(int32_t SectionIndex, struct TArray<Unknown>& Vertices, struct TArray<Unknown>& Triangles, struct TArray<Unknown>& Normals, struct TArray<Unknown>& UV0, struct TArray<Unknown>& VertexColors, struct TArray<Unknown>& Tangents, char bCreateCollision) {
+inline void UProceduralMeshComponent::CreateMeshSection(int32_t SectionIndex, struct TArray<struct FVector>& Vertices, struct TArray<int32_t>& Triangles, struct TArray<struct FVector>& Normals, struct TArray<struct FVector2D>& UV0, struct TArray<struct FColor>& VertexColors, struct TArray<struct FProcMeshTangent>& Tangents, char bCreateCollision) {
 	static auto fn = UObject::FindObject<UFunction>("Function ProceduralMeshComponent.ProceduralMeshComponent.CreateMeshSection");
 
 	struct CreateMeshSection_Params {
 		int32_t SectionIndex;
-		struct TArray<Unknown>& Vertices;
-		struct TArray<Unknown>& Triangles;
-		struct TArray<Unknown>& Normals;
-		struct TArray<Unknown>& UV0;
-		struct TArray<Unknown>& VertexColors;
-		struct TArray<Unknown>& Tangents;
+		struct TArray<struct FVector>& Vertices;
+		struct TArray<int32_t>& Triangles;
+		struct TArray<struct FVector>& Normals;
+		struct TArray<struct FVector2D>& UV0;
+		struct TArray<struct FColor>& VertexColors;
+		struct TArray<struct FProcMeshTangent>& Tangents;
 		char bCreateCollision;
 	}; CreateMeshSection_Params Params;
 
@@ -285,11 +285,11 @@ inline void UProceduralMeshComponent::ClearAllMeshSections() {
 }
 
 // Function ProceduralMeshComponent.ProceduralMeshComponent.AddCollisionConvexMesh
-inline void UProceduralMeshComponent::AddCollisionConvexMesh(struct TArray<Unknown> ConvexVerts) {
+inline void UProceduralMeshComponent::AddCollisionConvexMesh(struct TArray<struct FVector> ConvexVerts) {
 	static auto fn = UObject::FindObject<UFunction>("Function ProceduralMeshComponent.ProceduralMeshComponent.AddCollisionConvexMesh");
 
 	struct AddCollisionConvexMesh_Params {
-		struct TArray<Unknown> ConvexVerts;
+		struct TArray<struct FVector> ConvexVerts;
 	}; AddCollisionConvexMesh_Params Params;
 
 	Params.ConvexVerts = ConvexVerts;

@@ -3,58 +3,58 @@ class UUW-SkillMapWidget_C : public UBravoHotelSkillMapWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x250 (8)
-	struct Unknown Tutorial_MouseCursor; // 0x258 (8)
-	struct Unknown Tutorial_Arrow_Loop2; // 0x260 (8)
-	struct Unknown RadarDecoLight; // 0x268 (8)
-	struct Unknown RadarCircle_M; // 0x270 (8)
-	struct Unknown BackgroundBlur_154; // 0x278 (8)
-	struct Unknown BP-MapComp; // 0x280 (8)
-	struct Unknown Button_Nuclear; // 0x288 (8)
-	struct Unknown CP_RealMapSize; // 0x290 (8)
-	struct Unknown Image; // 0x298 (8)
-	struct Unknown Image_2; // 0x2A0 (8)
-	struct Unknown Image_3; // 0x2A8 (8)
-	struct Unknown Image_4; // 0x2B0 (8)
-	struct Unknown Image_5; // 0x2B8 (8)
-	struct Unknown Image_6; // 0x2C0 (8)
-	struct Unknown Image_7; // 0x2C8 (8)
-	struct Unknown Image_171; // 0x2D0 (8)
-	struct Unknown Image_181; // 0x2D8 (8)
-	struct Unknown Image_228; // 0x2E0 (8)
-	struct Unknown Image_326; // 0x2E8 (8)
-	struct Unknown Image_405; // 0x2F0 (8)
-	struct Unknown Image_508; // 0x2F8 (8)
-	struct Unknown Img_MapBackGround; // 0x300 (8)
-	struct Unknown Img_MapCenter; // 0x308 (8)
-	struct Unknown Img_RadarDummy; // 0x310 (8)
-	struct Unknown Tutorial; // 0x318 (8)
-	struct Unknown UW-Radar_tutorial; // 0x320 (8)
-	struct Unknown MapBackGroundPosition; // 0x328 (8)
-	struct Unknown RadarDummyPosition; // 0x330 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x250 (8)
+	struct UWidgetAnimation Tutorial_MouseCursor; // 0x258 (8)
+	struct UWidgetAnimation Tutorial_Arrow_Loop2; // 0x260 (8)
+	struct UWidgetAnimation RadarDecoLight; // 0x268 (8)
+	struct UWidgetAnimation RadarCircle_M; // 0x270 (8)
+	struct UBackgroundBlur BackgroundBlur_154; // 0x278 (8)
+	struct UUW-MapComp_C BP-MapComp; // 0x280 (8)
+	struct UButton Button_Nuclear; // 0x288 (8)
+	struct UCanvasPanel CP_RealMapSize; // 0x290 (8)
+	struct UImage Image; // 0x298 (8)
+	struct UImage Image_2; // 0x2A0 (8)
+	struct UImage Image_3; // 0x2A8 (8)
+	struct UImage Image_4; // 0x2B0 (8)
+	struct UImage Image_5; // 0x2B8 (8)
+	struct UImage Image_6; // 0x2C0 (8)
+	struct UImage Image_7; // 0x2C8 (8)
+	struct UImage Image_171; // 0x2D0 (8)
+	struct UImage Image_181; // 0x2D8 (8)
+	struct UImage Image_228; // 0x2E0 (8)
+	struct UImage Image_326; // 0x2E8 (8)
+	struct UImage Image_405; // 0x2F0 (8)
+	struct UImage Image_508; // 0x2F8 (8)
+	struct UImage Img_MapBackGround; // 0x300 (8)
+	struct UImage Img_MapCenter; // 0x308 (8)
+	struct UImage Img_RadarDummy; // 0x310 (8)
+	struct UOverlay Tutorial; // 0x318 (8)
+	struct UUW-Radar_tutorial_C UW-Radar_tutorial; // 0x320 (8)
+	struct FVector2D MapBackGroundPosition; // 0x328 (8)
+	struct FVector2D RadarDummyPosition; // 0x330 (8)
 
-	void MapClickEvent(struct Unknown ClickLocation); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.MapClickEvent(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void MapClickEvent(struct FVector ClickLocation); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.MapClickEvent(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CalcAllMapRatioByTargetRadius(float& Ratio); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.CalcAllMapRatioByTargetRadius(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void OnMapLeftClick(struct Unknown PosOnViewport); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.OnMapLeftClick(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnMapLeftClick(struct FVector2D PosOnViewport); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.OnMapLeftClick(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void PlayRadarOpenSound(); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.PlayRadarOpenSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CheckPositionChanged(); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.CheckPositionChanged(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetSkillMapRate(); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.SetSkillMapRate(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnSkillMapStart(); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.OnSkillMapStart(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AddAreaWidget(enum class Unknow WorldMapAreaWidgetType, struct Unknown& AreaWidgetInfo); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.AddAreaWidget(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AddAreaWidget(enum class EWorldMapAreaWidgetType WorldMapAreaWidgetType, struct FAreaWidgetInfo& AreaWidgetInfo); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.AddAreaWidget(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__Button_Nuclear_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.BndEvt__Button_Nuclear_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ResetMapPlayers(); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.ResetMapPlayers(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnClickOnMap(struct Unknown Button, struct Unknown PosOnViewport); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.OnClickOnMap(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnClickOnMap(struct FKey Button, struct FVector2D PosOnViewport); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.OnClickOnMap(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-SkillMapWidget(int32_t EntryPoint); // Function UW-SkillMapWidget.UW-SkillMapWidget_C.ExecuteUbergraph_UW-SkillMapWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-SkillMapWidget.UW-SkillMapWidget_C.MapClickEvent
-inline void UUW-SkillMapWidget_C::MapClickEvent(struct Unknown ClickLocation) {
+inline void UUW-SkillMapWidget_C::MapClickEvent(struct FVector ClickLocation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-SkillMapWidget.UW-SkillMapWidget_C.MapClickEvent");
 
 	struct MapClickEvent_Params {
-		struct Unknown ClickLocation;
+		struct FVector ClickLocation;
 	}; MapClickEvent_Params Params;
 
 	Params.ClickLocation = ClickLocation;
@@ -82,11 +82,11 @@ inline void UUW-SkillMapWidget_C::CalcAllMapRatioByTargetRadius(float& Ratio) {
 }
 
 // Function UW-SkillMapWidget.UW-SkillMapWidget_C.OnMapLeftClick
-inline void UUW-SkillMapWidget_C::OnMapLeftClick(struct Unknown PosOnViewport) {
+inline void UUW-SkillMapWidget_C::OnMapLeftClick(struct FVector2D PosOnViewport) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-SkillMapWidget.UW-SkillMapWidget_C.OnMapLeftClick");
 
 	struct OnMapLeftClick_Params {
-		struct Unknown PosOnViewport;
+		struct FVector2D PosOnViewport;
 	}; OnMapLeftClick_Params Params;
 
 	Params.PosOnViewport = PosOnViewport;
@@ -139,11 +139,11 @@ inline void UUW-SkillMapWidget_C::SetSkillMapRate() {
 }
 
 // Function UW-SkillMapWidget.UW-SkillMapWidget_C.Tick
-inline void UUW-SkillMapWidget_C::Tick(struct Unknown MyGeometry, float InDeltaTime) {
+inline void UUW-SkillMapWidget_C::Tick(struct FGeometry MyGeometry, float InDeltaTime) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-SkillMapWidget.UW-SkillMapWidget_C.Tick");
 
 	struct Tick_Params {
-		struct Unknown MyGeometry;
+		struct FGeometry MyGeometry;
 		float InDeltaTime;
 	}; Tick_Params Params;
 
@@ -184,12 +184,12 @@ inline void UUW-SkillMapWidget_C::OnSkillMapStart() {
 }
 
 // Function UW-SkillMapWidget.UW-SkillMapWidget_C.AddAreaWidget
-inline void UUW-SkillMapWidget_C::AddAreaWidget(enum class Unknow WorldMapAreaWidgetType, struct Unknown& AreaWidgetInfo) {
+inline void UUW-SkillMapWidget_C::AddAreaWidget(enum class EWorldMapAreaWidgetType WorldMapAreaWidgetType, struct FAreaWidgetInfo& AreaWidgetInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-SkillMapWidget.UW-SkillMapWidget_C.AddAreaWidget");
 
 	struct AddAreaWidget_Params {
-		enum class Unknow WorldMapAreaWidgetType;
-		struct Unknown& AreaWidgetInfo;
+		enum class EWorldMapAreaWidgetType WorldMapAreaWidgetType;
+		struct FAreaWidgetInfo& AreaWidgetInfo;
 	}; AddAreaWidget_Params Params;
 
 	Params.WorldMapAreaWidgetType = WorldMapAreaWidgetType;
@@ -231,12 +231,12 @@ inline void UUW-SkillMapWidget_C::ResetMapPlayers() {
 }
 
 // Function UW-SkillMapWidget.UW-SkillMapWidget_C.OnClickOnMap
-inline void UUW-SkillMapWidget_C::OnClickOnMap(struct Unknown Button, struct Unknown PosOnViewport) {
+inline void UUW-SkillMapWidget_C::OnClickOnMap(struct FKey Button, struct FVector2D PosOnViewport) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-SkillMapWidget.UW-SkillMapWidget_C.OnClickOnMap");
 
 	struct OnClickOnMap_Params {
-		struct Unknown Button;
-		struct Unknown PosOnViewport;
+		struct FKey Button;
+		struct FVector2D PosOnViewport;
 	}; OnClickOnMap_Params Params;
 
 	Params.Button = Button;

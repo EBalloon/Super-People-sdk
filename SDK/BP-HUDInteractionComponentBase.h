@@ -3,8 +3,8 @@ class UBP-HUDInteractionComponentBase_C : public UHUDInteractionComponent {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0xF0 (8)
-	struct Unknown PlayerController; // 0xF8 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0xF0 (8)
+	struct APlayerController PlayerController; // 0xF8 (8)
 	char bAlreadySetOptionWidget : 0; // 0x100 (1)
 	float defaultContrast; // 0x104 (4)
 	float defaultMaxBrightness; // 0x108 (4)
@@ -17,7 +17,7 @@ public:
 	float FilmToeIntensity; // 0x124 (4)
 	char IsInWidget : 0; // 0x128 (1)
 	char bInputModeUI : 0; // 0x129 (1)
-	struct TArray<Unknown> InputActionsToBlock; // 0x130 (16)
+	struct TArray<struct FName> InputActionsToBlock; // 0x130 (16)
 
 	void CheckAnyAction(char& AnyAction); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.CheckAnyAction(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void CheckAnyCloseUI(char& AnyClosed); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.CheckAnyCloseUI(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
@@ -25,16 +25,16 @@ public:
 	void Callback(); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.Callback(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetMousePositionToCenter(); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.SetMousePositionToCenter(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CheckInputState(); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.CheckInputState(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetActionBlocked(char WantsToBlock, struct TArray<Unknown>& ActionNames, struct Unknown Widget); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.SetActionBlocked(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	char IsGlobalPostProcessVolume(struct Unknown Other); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.IsGlobalPostProcessVolume(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void SetActionBlocked(char WantsToBlock, struct TArray<struct FName>& ActionNames, struct UUserWidget Widget); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.SetActionBlocked(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	char IsGlobalPostProcessVolume(struct Object Other); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.IsGlobalPostProcessVolume(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void SetPostProcessVolumeDefaultOption(); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.SetPostProcessVolumeDefaultOption(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void InitOptionWidget(); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.InitOptionWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void IsSpectating(char& IsSpectating); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.IsSpectating(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void GetPlayerHUD(char& IsAlive, struct Unknown& PlayerHUD); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.GetPlayerHUD(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void GetPlayerHUD(char& IsAlive, struct ABravoHotelPlayerHUD& PlayerHUD); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.GetPlayerHUD(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void InputOptionMenu(); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.InputOptionMenu(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ReceiveTick(float DeltaSeconds); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.ReceiveTick(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InputModeGame(struct Unknown Widget); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.InputModeGame(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InputModeUI(struct Unknown Widget); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.InputModeUI(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void InputModeGame(struct UUserWidget Widget); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.InputModeGame(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void InputModeUI(struct UUserWidget Widget); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.InputModeUI(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void InputToggleIngameHUD(); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.InputToggleIngameHUD(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ReceiveBeginPlay(); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.ReceiveBeginPlay(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_BP-HUDInteractionComponentBase(int32_t EntryPoint); // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.ExecuteUbergraph_BP-HUDInteractionComponentBase(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
@@ -131,13 +131,13 @@ inline void UBP-HUDInteractionComponentBase_C::CheckInputState() {
 }
 
 // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.SetActionBlocked
-inline void UBP-HUDInteractionComponentBase_C::SetActionBlocked(char WantsToBlock, struct TArray<Unknown>& ActionNames, struct Unknown Widget) {
+inline void UBP-HUDInteractionComponentBase_C::SetActionBlocked(char WantsToBlock, struct TArray<struct FName>& ActionNames, struct UUserWidget Widget) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.SetActionBlocked");
 
 	struct SetActionBlocked_Params {
 		char WantsToBlock;
-		struct TArray<Unknown>& ActionNames;
-		struct Unknown Widget;
+		struct TArray<struct FName>& ActionNames;
+		struct UUserWidget Widget;
 	}; SetActionBlocked_Params Params;
 
 	Params.WantsToBlock = WantsToBlock;
@@ -152,11 +152,11 @@ inline void UBP-HUDInteractionComponentBase_C::SetActionBlocked(char WantsToBloc
 }
 
 // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.IsGlobalPostProcessVolume
-inline char UBP-HUDInteractionComponentBase_C::IsGlobalPostProcessVolume(struct Unknown Other) {
+inline char UBP-HUDInteractionComponentBase_C::IsGlobalPostProcessVolume(struct Object Other) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.IsGlobalPostProcessVolume");
 
 	struct IsGlobalPostProcessVolume_Params {
-		struct Unknown Other;
+		struct Object Other;
 		char ReturnValue;
 
 	}; IsGlobalPostProcessVolume_Params Params;
@@ -216,12 +216,12 @@ inline void UBP-HUDInteractionComponentBase_C::IsSpectating(char& IsSpectating) 
 }
 
 // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.GetPlayerHUD
-inline void UBP-HUDInteractionComponentBase_C::GetPlayerHUD(char& IsAlive, struct Unknown& PlayerHUD) {
+inline void UBP-HUDInteractionComponentBase_C::GetPlayerHUD(char& IsAlive, struct ABravoHotelPlayerHUD& PlayerHUD) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.GetPlayerHUD");
 
 	struct GetPlayerHUD_Params {
 		char& IsAlive;
-		struct Unknown& PlayerHUD;
+		struct ABravoHotelPlayerHUD& PlayerHUD;
 	}; GetPlayerHUD_Params Params;
 
 
@@ -264,11 +264,11 @@ inline void UBP-HUDInteractionComponentBase_C::ReceiveTick(float DeltaSeconds) {
 }
 
 // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.InputModeGame
-inline void UBP-HUDInteractionComponentBase_C::InputModeGame(struct Unknown Widget) {
+inline void UBP-HUDInteractionComponentBase_C::InputModeGame(struct UUserWidget Widget) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.InputModeGame");
 
 	struct InputModeGame_Params {
-		struct Unknown Widget;
+		struct UUserWidget Widget;
 	}; InputModeGame_Params Params;
 
 	Params.Widget = Widget;
@@ -279,11 +279,11 @@ inline void UBP-HUDInteractionComponentBase_C::InputModeGame(struct Unknown Widg
 }
 
 // Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.InputModeUI
-inline void UBP-HUDInteractionComponentBase_C::InputModeUI(struct Unknown Widget) {
+inline void UBP-HUDInteractionComponentBase_C::InputModeUI(struct UUserWidget Widget) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-HUDInteractionComponentBase.BP-HUDInteractionComponentBase_C.InputModeUI");
 
 	struct InputModeUI_Params {
-		struct Unknown Widget;
+		struct UUserWidget Widget;
 	}; InputModeUI_Params Params;
 
 	Params.Widget = Widget;

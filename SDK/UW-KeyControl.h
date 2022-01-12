@@ -3,31 +3,31 @@ class UUW-KeyControl_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Action; // 0x250 (8)
-	struct Unknown Image_14; // 0x258 (8)
-	struct Unknown LeftBtn; // 0x260 (8)
-	struct Unknown MidBtn; // 0x268 (8)
-	struct Unknown Mouse; // 0x270 (8)
-	struct Unknown RightBtn; // 0x278 (8)
-	struct Unknown ScaleBox_2; // 0x280 (8)
-	struct Unknown SideDown; // 0x288 (8)
-	struct Unknown SideUp; // 0x290 (8)
-	struct Unknown Text_Action; // 0x298 (8)
-	struct Unknown Text_Action_UsingAlphaBg; // 0x2A0 (8)
-	struct Unknown Turn; // 0x2A8 (8)
-	struct Unknown WheelDown; // 0x2B0 (8)
-	struct Unknown WheelUp; // 0x2B8 (8)
-	struct Unknown WidgetSwitcher_TextStyle; // 0x2C0 (8)
-	struct Unknown X; // 0x2C8 (8)
-	struct Unknown Y; // 0x2D0 (8)
-	struct Unknown Temp; // 0x2D8 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct USizeBox Action; // 0x250 (8)
+	struct UImage Image_14; // 0x258 (8)
+	struct UImage LeftBtn; // 0x260 (8)
+	struct UImage MidBtn; // 0x268 (8)
+	struct UOverlay Mouse; // 0x270 (8)
+	struct UImage RightBtn; // 0x278 (8)
+	struct UScaleBox ScaleBox_2; // 0x280 (8)
+	struct UImage SideDown; // 0x288 (8)
+	struct UImage SideUp; // 0x290 (8)
+	struct UTextBlock Text_Action; // 0x298 (8)
+	struct UTextBlock Text_Action_UsingAlphaBg; // 0x2A0 (8)
+	struct UImage Turn; // 0x2A8 (8)
+	struct UImage WheelDown; // 0x2B0 (8)
+	struct UImage WheelUp; // 0x2B8 (8)
+	struct UWidgetSwitcher WidgetSwitcher_TextStyle; // 0x2C0 (8)
+	struct UImage X; // 0x2C8 (8)
+	struct UImage Y; // 0x2D0 (8)
+	struct Object Temp; // 0x2D8 (8)
 	char NewVar_1 : 0; // 0x2E0 (1)
 	float DefalutScale; // 0x2E4 (4)
 
 	void SetFontSize(int32_t Size); // Function UW-KeyControl.UW-KeyControl_C.SetFontSize(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetKeyNameFromKey(struct Unknown Key, struct FString& Name); // Function UW-KeyControl.UW-KeyControl_C.GetKeyNameFromKey(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Set KeyInfo(struct FName KeyString, struct Unknown InputKey); // Function UW-KeyControl.UW-KeyControl_C.Set KeyInfo(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetKeyNameFromKey(struct FKey Key, struct FString& Name); // Function UW-KeyControl.UW-KeyControl_C.GetKeyNameFromKey(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Set KeyInfo(struct FName KeyString, struct FKey InputKey); // Function UW-KeyControl.UW-KeyControl_C.Set KeyInfo(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void MK3DSpectatorPawn_Turn(); // Function UW-KeyControl.UW-KeyControl_C.MK3DSpectatorPawn_Turn(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Set Using Alpha Bg(char Using); // Function UW-KeyControl.UW-KeyControl_C.Set Using Alpha Bg(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-KeyControl.UW-KeyControl_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -50,11 +50,11 @@ inline void UUW-KeyControl_C::SetFontSize(int32_t Size) {
 }
 
 // Function UW-KeyControl.UW-KeyControl_C.GetKeyNameFromKey
-inline void UUW-KeyControl_C::GetKeyNameFromKey(struct Unknown Key, struct FString& Name) {
+inline void UUW-KeyControl_C::GetKeyNameFromKey(struct FKey Key, struct FString& Name) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-KeyControl.UW-KeyControl_C.GetKeyNameFromKey");
 
 	struct GetKeyNameFromKey_Params {
-		struct Unknown Key;
+		struct FKey Key;
 		struct FString& Name;
 	}; GetKeyNameFromKey_Params Params;
 
@@ -69,12 +69,12 @@ inline void UUW-KeyControl_C::GetKeyNameFromKey(struct Unknown Key, struct FStri
 }
 
 // Function UW-KeyControl.UW-KeyControl_C.Set KeyInfo
-inline void UUW-KeyControl_C::Set KeyInfo(struct FName KeyString, struct Unknown InputKey) {
+inline void UUW-KeyControl_C::Set KeyInfo(struct FName KeyString, struct FKey InputKey) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-KeyControl.UW-KeyControl_C.Set KeyInfo");
 
 	struct Set KeyInfo_Params {
 		struct FName KeyString;
-		struct Unknown InputKey;
+		struct FKey InputKey;
 	}; Set KeyInfo_Params Params;
 
 	Params.KeyString = KeyString;

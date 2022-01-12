@@ -12,7 +12,7 @@ class UMaterialShaderQualitySettings : public Object {
 
 public:
 
-	struct TMap<Unknown, Unknown> ForwardSettingMap; // 0x28 (80)
+	struct TMap<struct FName, struct UShaderPlatformQualitySettings> ForwardSettingMap; // 0x28 (80)
 };
 
 // Class MaterialShaderQualitySettings.ShaderPlatformQualitySettings
@@ -20,7 +20,7 @@ class UShaderPlatformQualitySettings : public Object {
 
 public:
 
-	struct Unknown QualityOverrides[0x3]; // 0x28 (27)
+	struct FMaterialQualityOverrides QualityOverrides[0x3]; // 0x28 (27)
 };
 
 // ScriptStruct MaterialShaderQualitySettings.MaterialQualityOverrides
@@ -33,6 +33,6 @@ struct FMaterialQualityOverrides {
 	char bForceLQReflections : 0; // 0x5 (1)
 	char bForceDisablePreintegratedGF : 0; // 0x6 (1)
 	char bDisableMaterialNormalCalculation : 0; // 0x7 (1)
-	enum class Unknow MobileCSMQuality; // 0x8 (1)
+	enum class EMobileCSMQuality MobileCSMQuality; // 0x8 (1)
 };
 

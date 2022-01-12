@@ -3,56 +3,56 @@ class UProjectileTrajectoryComponent_C : public UActorComponent {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0xB0 (8)
-	struct TArray<Unknown> BeamsArray; // 0xB8 (16)
-	struct Unknown Decal; // 0xC8 (8)
-	struct Unknown StartLocation; // 0xD0 (12)
-	struct Unknown InitialVelocity; // 0xDC (12)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0xB0 (8)
+	struct TArray<struct UParticleSystemComponent> BeamsArray; // 0xB8 (16)
+	struct UDecalComponent Decal; // 0xC8 (8)
+	struct FVector StartLocation; // 0xD0 (12)
+	struct FVector InitialVelocity; // 0xDC (12)
 	float PathLifeTime; // 0xE8 (4)
 	float TimeInterval; // 0xEC (4)
 	char DrawingType; // 0xF0 (1)
-	struct Unknown DesiredStartLocation; // 0xF4 (12)
-	struct Unknown InitialLocalVelocity; // 0x100 (12)
-	struct Unknown BeamParticle; // 0x110 (8)
-	struct Unknown DebugColor; // 0x118 (16)
+	struct FVector DesiredStartLocation; // 0xF4 (12)
+	struct FVector InitialLocalVelocity; // 0x100 (12)
+	struct UParticleSystem BeamParticle; // 0x110 (8)
+	struct FLinearColor DebugColor; // 0x118 (16)
 	float DebugThickness; // 0x128 (4)
-	struct Unknown ParticleColor; // 0x12C (16)
+	struct FLinearColor ParticleColor; // 0x12C (16)
 	float ParticleColorMultipler; // 0x13C (4)
-	struct Unknown DecalMaterial; // 0x140 (8)
-	struct Unknown DecalColor; // 0x148 (16)
-	struct Unknown DecalScale; // 0x158 (12)
+	struct UMaterialInterface DecalMaterial; // 0x140 (8)
+	struct FLinearColor DecalColor; // 0x148 (16)
+	struct FVector DecalScale; // 0x158 (12)
 	char ConstantScale? : 0; // 0x164 (1)
-	struct Unknown ResizerTimer; // 0x168 (8)
-	struct Unknown DecalScaleMin; // 0x170 (12)
-	struct Unknown DecalScaleMax; // 0x17C (12)
+	struct FTimerHandle ResizerTimer; // 0x168 (8)
+	struct FVector DecalScaleMin; // 0x170 (12)
+	struct FVector DecalScaleMax; // 0x17C (12)
 	float ScaleTime; // 0x188 (4)
 	char ScaleStart? : 0; // 0x18C (1)
-	struct Unknown Gravity; // 0x190 (12)
+	struct FVector Gravity; // 0x190 (12)
 	float InitXAxisValue; // 0x19C (4)
 	char CreateBeam : 0; // 0x1A0 (1)
 	int32_t HitBeamIndex; // 0x1A4 (4)
-	struct Unknown SplineStaticMesh; // 0x1A8 (8)
-	struct TArray<Unknown> SplineMeshArray; // 0x1B0 (16)
-	struct Unknown SM-IndicatorScale; // 0x1C0 (12)
-	struct Unknown SM-Indicator; // 0x1D0 (8)
+	struct USplineMeshComponent SplineStaticMesh; // 0x1A8 (8)
+	struct TArray<struct USplineMeshComponent> SplineMeshArray; // 0x1B0 (16)
+	struct FVector SM-IndicatorScale; // 0x1C0 (12)
+	struct UStaticMeshComponent SM-Indicator; // 0x1D0 (8)
 	char Hit : 0; // 0x1D8 (1)
 	char bForceStop : 0; // 0x1D9 (1)
 	char FPSMode : 0; // 0x1DA (1)
 
-	void InterpProjectileTrajectoryJumpState(char Jump, struct Unknown Location, struct Unknown Rotation, struct Unknown& StartLocation, struct Unknown& Velocity); // Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.InterpProjectileTrajectoryJumpState(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void InterpProjectileTrajectoryJumpState(char Jump, struct FVector Location, struct FRotator Rotation, struct FVector& StartLocation, struct FVector& Velocity); // Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.InterpProjectileTrajectoryJumpState(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ResizeDecalFunc(); // Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.ResizeDecalFunc(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetParticleColorDecalColor(); // Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.SetParticleColorDecalColor(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CalculateStartLocationAndLocalVelocity(struct Unknown& StartLocaton, struct Unknown& In1tialLocalVelocity); // Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.CalculateStartLocationAndLocalVelocity(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void CalculateStartLocationAndLocalVelocity(struct FVector& StartLocaton, struct FVector& In1tialLocalVelocity); // Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.CalculateStartLocationAndLocalVelocity(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void ClearBeams(); // Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.ClearBeams(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AddNewBeam(struct Unknown NewSourcePoint, struct Unknown NewTargetPoint, int32_t Index); // Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.AddNewBeam(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void VisualizeSegment(char Selection, struct Unknown Point1, struct Unknown Point2, int32_t Index); // Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.VisualizeSegment(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetSegmentAtTime(struct Unknown StartLocation, struct Unknown InitialVelocity, struct Unknown Gravity, float Time1, float Time2, struct Unknown& Point1, struct Unknown& Point2); // Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.GetSegmentAtTime(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void DrawProjectileTrajectory(struct Unknown DesiredStartLocation, struct Unknown Gravity, struct Unknown InitialLocalVelocity, float PathLifeTime, float TimeInterval); // Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.DrawProjectileTrajectory(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AddNewBeam(struct FVector NewSourcePoint, struct FVector NewTargetPoint, int32_t Index); // Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.AddNewBeam(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void VisualizeSegment(char Selection, struct FVector Point1, struct FVector Point2, int32_t Index); // Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.VisualizeSegment(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetSegmentAtTime(struct FVector StartLocation, struct FVector InitialVelocity, struct FVector Gravity, float Time1, float Time2, struct FVector& Point1, struct FVector& Point2); // Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.GetSegmentAtTime(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void DrawProjectileTrajectory(struct FVector DesiredStartLocation, struct FVector Gravity, struct FVector InitialLocalVelocity, float PathLifeTime, float TimeInterval); // Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.DrawProjectileTrajectory(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BreakDrawingLoop(); // Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.BreakDrawingLoop(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ReceiveTick(float DeltaSeconds); // Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.ReceiveTick(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void StartDraw(struct Unknown DesiredStartLocation, struct Unknown Gravity, struct Unknown InitialLocalVelocity, float PathLifeTime, float TimeInterval, char DrawingType); // Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.StartDraw(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void StartDraw(struct FVector DesiredStartLocation, struct FVector Gravity, struct FVector InitialLocalVelocity, float PathLifeTime, float TimeInterval, char DrawingType); // Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.StartDraw(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void StopDraw(); // Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.StopDraw(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SpawnActorFromClass(struct Unknown* Class, struct Unknown SpawnTransform, struct Unknown ProjectileVelocity, struct Unknown Sound, struct Unknown NewScale3D, enum class Unknow CollisionHandlingOverride, struct Unknown Instigator); // Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.SpawnActorFromClass(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SpawnActorFromClass(struct UClass* Class, struct FTransform SpawnTransform, struct FVector ProjectileVelocity, struct USoundBase Sound, struct FVector NewScale3D, enum class ESpawnActorCollisionHandlingMethod CollisionHandlingOverride, struct APawn Instigator); // Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.SpawnActorFromClass(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ForceStopDraw(); // Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.ForceStopDraw(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ResetForceStopDraw(); // Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.ResetForceStopDraw(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ReceiveBeginPlay(); // Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.ReceiveBeginPlay(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -61,15 +61,15 @@ public:
 };
 
 // Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.InterpProjectileTrajectoryJumpState
-inline void UProjectileTrajectoryComponent_C::InterpProjectileTrajectoryJumpState(char Jump, struct Unknown Location, struct Unknown Rotation, struct Unknown& StartLocation, struct Unknown& Velocity) {
+inline void UProjectileTrajectoryComponent_C::InterpProjectileTrajectoryJumpState(char Jump, struct FVector Location, struct FRotator Rotation, struct FVector& StartLocation, struct FVector& Velocity) {
 	static auto fn = UObject::FindObject<UFunction>("Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.InterpProjectileTrajectoryJumpState");
 
 	struct InterpProjectileTrajectoryJumpState_Params {
 		char Jump;
-		struct Unknown Location;
-		struct Unknown Rotation;
-		struct Unknown& StartLocation;
-		struct Unknown& Velocity;
+		struct FVector Location;
+		struct FRotator Rotation;
+		struct FVector& StartLocation;
+		struct FVector& Velocity;
 	}; InterpProjectileTrajectoryJumpState_Params Params;
 
 	Params.Jump = Jump;
@@ -114,12 +114,12 @@ inline void UProjectileTrajectoryComponent_C::SetParticleColorDecalColor() {
 }
 
 // Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.CalculateStartLocationAndLocalVelocity
-inline void UProjectileTrajectoryComponent_C::CalculateStartLocationAndLocalVelocity(struct Unknown& StartLocaton, struct Unknown& In1tialLocalVelocity) {
+inline void UProjectileTrajectoryComponent_C::CalculateStartLocationAndLocalVelocity(struct FVector& StartLocaton, struct FVector& In1tialLocalVelocity) {
 	static auto fn = UObject::FindObject<UFunction>("Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.CalculateStartLocationAndLocalVelocity");
 
 	struct CalculateStartLocationAndLocalVelocity_Params {
-		struct Unknown& StartLocaton;
-		struct Unknown& In1tialLocalVelocity;
+		struct FVector& StartLocaton;
+		struct FVector& In1tialLocalVelocity;
 	}; CalculateStartLocationAndLocalVelocity_Params Params;
 
 
@@ -147,12 +147,12 @@ inline void UProjectileTrajectoryComponent_C::ClearBeams() {
 }
 
 // Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.AddNewBeam
-inline void UProjectileTrajectoryComponent_C::AddNewBeam(struct Unknown NewSourcePoint, struct Unknown NewTargetPoint, int32_t Index) {
+inline void UProjectileTrajectoryComponent_C::AddNewBeam(struct FVector NewSourcePoint, struct FVector NewTargetPoint, int32_t Index) {
 	static auto fn = UObject::FindObject<UFunction>("Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.AddNewBeam");
 
 	struct AddNewBeam_Params {
-		struct Unknown NewSourcePoint;
-		struct Unknown NewTargetPoint;
+		struct FVector NewSourcePoint;
+		struct FVector NewTargetPoint;
 		int32_t Index;
 	}; AddNewBeam_Params Params;
 
@@ -166,13 +166,13 @@ inline void UProjectileTrajectoryComponent_C::AddNewBeam(struct Unknown NewSourc
 }
 
 // Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.VisualizeSegment
-inline void UProjectileTrajectoryComponent_C::VisualizeSegment(char Selection, struct Unknown Point1, struct Unknown Point2, int32_t Index) {
+inline void UProjectileTrajectoryComponent_C::VisualizeSegment(char Selection, struct FVector Point1, struct FVector Point2, int32_t Index) {
 	static auto fn = UObject::FindObject<UFunction>("Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.VisualizeSegment");
 
 	struct VisualizeSegment_Params {
 		char Selection;
-		struct Unknown Point1;
-		struct Unknown Point2;
+		struct FVector Point1;
+		struct FVector Point2;
 		int32_t Index;
 	}; VisualizeSegment_Params Params;
 
@@ -187,17 +187,17 @@ inline void UProjectileTrajectoryComponent_C::VisualizeSegment(char Selection, s
 }
 
 // Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.GetSegmentAtTime
-inline void UProjectileTrajectoryComponent_C::GetSegmentAtTime(struct Unknown StartLocation, struct Unknown InitialVelocity, struct Unknown Gravity, float Time1, float Time2, struct Unknown& Point1, struct Unknown& Point2) {
+inline void UProjectileTrajectoryComponent_C::GetSegmentAtTime(struct FVector StartLocation, struct FVector InitialVelocity, struct FVector Gravity, float Time1, float Time2, struct FVector& Point1, struct FVector& Point2) {
 	static auto fn = UObject::FindObject<UFunction>("Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.GetSegmentAtTime");
 
 	struct GetSegmentAtTime_Params {
-		struct Unknown StartLocation;
-		struct Unknown InitialVelocity;
-		struct Unknown Gravity;
+		struct FVector StartLocation;
+		struct FVector InitialVelocity;
+		struct FVector Gravity;
 		float Time1;
 		float Time2;
-		struct Unknown& Point1;
-		struct Unknown& Point2;
+		struct FVector& Point1;
+		struct FVector& Point2;
 	}; GetSegmentAtTime_Params Params;
 
 	Params.StartLocation = StartLocation;
@@ -216,13 +216,13 @@ inline void UProjectileTrajectoryComponent_C::GetSegmentAtTime(struct Unknown St
 }
 
 // Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.DrawProjectileTrajectory
-inline void UProjectileTrajectoryComponent_C::DrawProjectileTrajectory(struct Unknown DesiredStartLocation, struct Unknown Gravity, struct Unknown InitialLocalVelocity, float PathLifeTime, float TimeInterval) {
+inline void UProjectileTrajectoryComponent_C::DrawProjectileTrajectory(struct FVector DesiredStartLocation, struct FVector Gravity, struct FVector InitialLocalVelocity, float PathLifeTime, float TimeInterval) {
 	static auto fn = UObject::FindObject<UFunction>("Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.DrawProjectileTrajectory");
 
 	struct DrawProjectileTrajectory_Params {
-		struct Unknown DesiredStartLocation;
-		struct Unknown Gravity;
-		struct Unknown InitialLocalVelocity;
+		struct FVector DesiredStartLocation;
+		struct FVector Gravity;
+		struct FVector InitialLocalVelocity;
 		float PathLifeTime;
 		float TimeInterval;
 	}; DrawProjectileTrajectory_Params Params;
@@ -268,13 +268,13 @@ inline void UProjectileTrajectoryComponent_C::ReceiveTick(float DeltaSeconds) {
 }
 
 // Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.StartDraw
-inline void UProjectileTrajectoryComponent_C::StartDraw(struct Unknown DesiredStartLocation, struct Unknown Gravity, struct Unknown InitialLocalVelocity, float PathLifeTime, float TimeInterval, char DrawingType) {
+inline void UProjectileTrajectoryComponent_C::StartDraw(struct FVector DesiredStartLocation, struct FVector Gravity, struct FVector InitialLocalVelocity, float PathLifeTime, float TimeInterval, char DrawingType) {
 	static auto fn = UObject::FindObject<UFunction>("Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.StartDraw");
 
 	struct StartDraw_Params {
-		struct Unknown DesiredStartLocation;
-		struct Unknown Gravity;
-		struct Unknown InitialLocalVelocity;
+		struct FVector DesiredStartLocation;
+		struct FVector Gravity;
+		struct FVector InitialLocalVelocity;
 		float PathLifeTime;
 		float TimeInterval;
 		char DrawingType;
@@ -307,17 +307,17 @@ inline void UProjectileTrajectoryComponent_C::StopDraw() {
 }
 
 // Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.SpawnActorFromClass
-inline void UProjectileTrajectoryComponent_C::SpawnActorFromClass(struct Unknown* Class, struct Unknown SpawnTransform, struct Unknown ProjectileVelocity, struct Unknown Sound, struct Unknown NewScale3D, enum class Unknow CollisionHandlingOverride, struct Unknown Instigator) {
+inline void UProjectileTrajectoryComponent_C::SpawnActorFromClass(struct UClass* Class, struct FTransform SpawnTransform, struct FVector ProjectileVelocity, struct USoundBase Sound, struct FVector NewScale3D, enum class ESpawnActorCollisionHandlingMethod CollisionHandlingOverride, struct APawn Instigator) {
 	static auto fn = UObject::FindObject<UFunction>("Function ProjectileTrajectoryComponent.ProjectileTrajectoryComponent_C.SpawnActorFromClass");
 
 	struct SpawnActorFromClass_Params {
-		struct Unknown* Class;
-		struct Unknown SpawnTransform;
-		struct Unknown ProjectileVelocity;
-		struct Unknown Sound;
-		struct Unknown NewScale3D;
-		enum class Unknow CollisionHandlingOverride;
-		struct Unknown Instigator;
+		struct UClass* Class;
+		struct FTransform SpawnTransform;
+		struct FVector ProjectileVelocity;
+		struct USoundBase Sound;
+		struct FVector NewScale3D;
+		enum class ESpawnActorCollisionHandlingMethod CollisionHandlingOverride;
+		struct APawn Instigator;
 	}; SpawnActorFromClass_Params Params;
 
 	Params.Class = Class;

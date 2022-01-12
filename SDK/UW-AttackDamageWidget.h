@@ -3,6 +3,6 @@ class UUW-AttackDamageWidget_C : public UBravoHotelAttackDamageWidget {
 
 public:
 
-	struct Unknown FadeOut; // 0x3A0 (8)
+	struct UWidgetAnimation FadeOut; // 0x3A0 (8)
 };
 

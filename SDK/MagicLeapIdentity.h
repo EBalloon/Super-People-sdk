@@ -36,7 +36,7 @@ enum class EMagicLeapIdentityError : uint8_t {
 
 // ScriptStruct MagicLeapIdentity.MagicLeapIdentityAttribute
 struct FMagicLeapIdentityAttribute {
-	enum class Unknow Attribute; // 0x0 (1)
+	enum class EMagicLeapIdentityKey Attribute; // 0x0 (1)
 	struct FString Value; // 0x8 (16)
 };
 

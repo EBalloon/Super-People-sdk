@@ -3,89 +3,89 @@ class UUW-CompassWidget_C : public UBravoHotelCompassWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x350 (8)
-	struct Unknown CanvasPanel_3; // 0x358 (8)
-	struct Unknown CanvasPanel_4; // 0x360 (8)
-	struct Unknown grid; // 0x368 (8)
-	struct Unknown Image; // 0x370 (8)
-	struct Unknown Image_1; // 0x378 (8)
-	struct Unknown Image_2; // 0x380 (8)
-	struct Unknown Image_234; // 0x388 (8)
-	struct Unknown Image_582; // 0x390 (8)
-	struct Unknown InvalidationBox_1; // 0x398 (8)
-	struct Unknown RetainerBox_108; // 0x3A0 (8)
-	struct Unknown SupplyBoxMarker; // 0x3A8 (8)
-	struct Unknown UnitParent; // 0x3B0 (8)
-	struct Unknown UW-CompassUnitWidget; // 0x3B8 (8)
-	struct Unknown UW-CompassUnitWidget_C_2; // 0x3C0 (8)
-	struct Unknown UW-CompassUnitWidget_C_3; // 0x3C8 (8)
-	struct Unknown UW-CompassUnitWidget_C_4; // 0x3D0 (8)
-	struct Unknown UW-CompassUnitWidget_C_5; // 0x3D8 (8)
-	struct Unknown UW-CompassUnitWidget_C_6; // 0x3E0 (8)
-	struct Unknown UW-CompassUnitWidget_C_7; // 0x3E8 (8)
-	struct Unknown UW-CompassUnitWidget_C_8; // 0x3F0 (8)
-	struct Unknown UW-CompassUnitWidget_C_9; // 0x3F8 (8)
-	struct Unknown UW-CompassUnitWidget_C_10; // 0x400 (8)
-	struct Unknown UW-CompassUnitWidget_C_11; // 0x408 (8)
-	struct Unknown UW-CompassUnitWidget_C_12; // 0x410 (8)
-	struct Unknown UW-CompassUnitWidget_C_13; // 0x418 (8)
-	struct Unknown UW-CompassUnitWidget_C_14; // 0x420 (8)
-	struct Unknown UW-PlayerMarkerWidget_C_1; // 0x428 (8)
-	struct Unknown ViewAngle; // 0x430 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x350 (8)
+	struct UCanvasPanel CanvasPanel_3; // 0x358 (8)
+	struct UCanvasPanel CanvasPanel_4; // 0x360 (8)
+	struct UCanvasPanel grid; // 0x368 (8)
+	struct UImage Image; // 0x370 (8)
+	struct UImage Image_1; // 0x378 (8)
+	struct UImage Image_2; // 0x380 (8)
+	struct UImage Image_234; // 0x388 (8)
+	struct UImage Image_582; // 0x390 (8)
+	struct UInvalidationBox InvalidationBox_1; // 0x398 (8)
+	struct URetainerBox RetainerBox_108; // 0x3A0 (8)
+	struct UUW-PlayerMarkerWidget_C SupplyBoxMarker; // 0x3A8 (8)
+	struct UCanvasPanel UnitParent; // 0x3B0 (8)
+	struct UUW-CompassUnitWidget_C UW-CompassUnitWidget; // 0x3B8 (8)
+	struct UUW-CompassUnitWidget_C UW-CompassUnitWidget_C_2; // 0x3C0 (8)
+	struct UUW-CompassUnitWidget_C UW-CompassUnitWidget_C_3; // 0x3C8 (8)
+	struct UUW-CompassUnitWidget_C UW-CompassUnitWidget_C_4; // 0x3D0 (8)
+	struct UUW-CompassUnitWidget_C UW-CompassUnitWidget_C_5; // 0x3D8 (8)
+	struct UUW-CompassUnitWidget_C UW-CompassUnitWidget_C_6; // 0x3E0 (8)
+	struct UUW-CompassUnitWidget_C UW-CompassUnitWidget_C_7; // 0x3E8 (8)
+	struct UUW-CompassUnitWidget_C UW-CompassUnitWidget_C_8; // 0x3F0 (8)
+	struct UUW-CompassUnitWidget_C UW-CompassUnitWidget_C_9; // 0x3F8 (8)
+	struct UUW-CompassUnitWidget_C UW-CompassUnitWidget_C_10; // 0x400 (8)
+	struct UUW-CompassUnitWidget_C UW-CompassUnitWidget_C_11; // 0x408 (8)
+	struct UUW-CompassUnitWidget_C UW-CompassUnitWidget_C_12; // 0x410 (8)
+	struct UUW-CompassUnitWidget_C UW-CompassUnitWidget_C_13; // 0x418 (8)
+	struct UUW-CompassUnitWidget_C UW-CompassUnitWidget_C_14; // 0x420 (8)
+	struct UUW-PlayerMarkerWidget_C UW-PlayerMarkerWidget_C_1; // 0x428 (8)
+	struct UTextBlock ViewAngle; // 0x430 (8)
 	float ScaleForAngleToDistance; // 0x438 (4)
 	float PositionCurveOffset; // 0x43C (4)
-	struct Unknown PositionCurve; // 0x440 (8)
+	struct UCurveFloat PositionCurve; // 0x440 (8)
 	float PositionCurveWeight; // 0x448 (4)
 	float ScaleCurveWeight; // 0x44C (4)
 	float ScaleCurveOffset; // 0x450 (4)
 	int32_t NormalDirectionFontSize; // 0x454 (4)
 	int32_t SpecialDirectionFontSize; // 0x458 (4)
-	struct TArray<Unknown> ArrayPlayerMarkerWidget; // 0x460 (16)
-	struct Unknown NorthColor; // 0x470 (16)
+	struct TArray<struct UUW-PlayerMarkerWidget_C> ArrayPlayerMarkerWidget; // 0x460 (16)
+	struct FLinearColor NorthColor; // 0x470 (16)
 	int32_t Angle0To360; // 0x480 (4)
 	float TempMarkerPosition; // 0x484 (4)
 	float ArrangedAngle; // 0x488 (4)
 
-	struct Unknown CreateExpertWeaponItemMarker(); // Function UW-CompassWidget.UW-CompassWidget_C.CreateExpertWeaponItemMarker(Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown CreateLocalPingnMarker(); // Function UW-CompassWidget.UW-CompassWidget_C.CreateLocalPingnMarker(Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetWidgetPosition(struct Unknown Pos, struct Unknown Widget); // Function UW-CompassWidget.UW-CompassWidget_C.SetWidgetPosition(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown CreateResuscitationMarker(); // Function UW-CompassWidget.UW-CompassWidget_C.CreateResuscitationMarker(Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown CreateMaterialItemMarker(); // Function UW-CompassWidget.UW-CompassWidget_C.CreateMaterialItemMarker(Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct UUserWidget CreateExpertWeaponItemMarker(); // Function UW-CompassWidget.UW-CompassWidget_C.CreateExpertWeaponItemMarker(Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct UUserWidget CreateLocalPingnMarker(); // Function UW-CompassWidget.UW-CompassWidget_C.CreateLocalPingnMarker(Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetWidgetPosition(struct FVector2D Pos, struct UWidget Widget); // Function UW-CompassWidget.UW-CompassWidget_C.SetWidgetPosition(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct UUserWidget CreateResuscitationMarker(); // Function UW-CompassWidget.UW-CompassWidget_C.CreateResuscitationMarker(Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct UUserWidget CreateMaterialItemMarker(); // Function UW-CompassWidget.UW-CompassWidget_C.CreateMaterialItemMarker(Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	struct FText SetRotation(int32_t Angle); // Function UW-CompassWidget.UW-CompassWidget_C.SetRotation(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown CreateRuler(struct Unknown Position, float Angle); // Function UW-CompassWidget.UW-CompassWidget_C.CreateRuler(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct UUW-CompassRulerWidget_C CreateRuler(struct FVector2D Position, float Angle); // Function UW-CompassWidget.UW-CompassWidget_C.CreateRuler(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CreateMarkerWidget(int32_t TeamPlayerCnt); // Function UW-CompassWidget.UW-CompassWidget_C.CreateMarkerWidget(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	float GetDirectionAngle(float TargetAngle, float CurrentAngle, struct Unknown Curve); // Function UW-CompassWidget.UW-CompassWidget_C.GetDirectionAngle(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	float GetCurvedFactor(float TargetAngle, float CurrentAngle, float Weight, float Offeset, struct Unknown Curve); // Function UW-CompassWidget.UW-CompassWidget_C.GetCurvedFactor(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	struct Unknown CreateUnit(struct Unknown Position, float Angle); // Function UW-CompassWidget.UW-CompassWidget_C.CreateUnit(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	float GetDirectionAngle(float TargetAngle, float CurrentAngle, struct UCurveFloat Curve); // Function UW-CompassWidget.UW-CompassWidget_C.GetDirectionAngle(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	float GetCurvedFactor(float TargetAngle, float CurrentAngle, float Weight, float Offeset, struct UCurveFloat Curve); // Function UW-CompassWidget.UW-CompassWidget_C.GetCurvedFactor(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	struct UUW-CompassUnitWidget_C CreateUnit(struct FVector2D Position, float Angle); // Function UW-CompassWidget.UW-CompassWidget_C.CreateUnit(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	float ConvertAngleToDistance(float Angle); // Function UW-CompassWidget.UW-CompassWidget_C.ConvertAngleToDistance(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void UpdateMarkerRotation(); // Function UW-CompassWidget.UW-CompassWidget_C.UpdateMarkerRotation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void UpdateControllerRotation(float Value, int32_t RealAngle); // Function UW-CompassWidget.UW-CompassWidget_C.UpdateControllerRotation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-CompassWidget.UW-CompassWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnUpdateMarkerPosition(int32_t WidgetIdx); // Function UW-CompassWidget.UW-CompassWidget_C.OnUpdateMarkerPosition(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CreateMarker(int32_t Count); // Function UW-CompassWidget.UW-CompassWidget_C.CreateMarker(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnResetUnit(struct Unknown Widget, float UnitAngle); // Function UW-CompassWidget.UW-CompassWidget_C.OnResetUnit(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnResetUnit(struct UWidget Widget, float UnitAngle); // Function UW-CompassWidget.UW-CompassWidget_C.OnResetUnit(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnUpdateViewAngle(float Value, int32_t RealAngle); // Function UW-CompassWidget.UW-CompassWidget_C.OnUpdateViewAngle(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnSetMarkerInfo(struct Unknown& MarkerPingInfo, char UsingSpawnAnimation); // Function UW-CompassWidget.UW-CompassWidget_C.OnSetMarkerInfo(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnSetMarkerInfo(struct FMarkerInfo& MarkerPingInfo, char UsingSpawnAnimation); // Function UW-CompassWidget.UW-CompassWidget_C.OnSetMarkerInfo(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnUpdatePersonalSupplyBoxMarkerPosition(); // Function UW-CompassWidget.UW-CompassWidget_C.OnUpdatePersonalSupplyBoxMarkerPosition(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnSetPersonalSupplyBoxMarkerInfo(struct Unknown& MarkerPingInfo, char Opened, char UsingSpawnAnimation); // Function UW-CompassWidget.UW-CompassWidget_C.OnSetPersonalSupplyBoxMarkerInfo(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnSetPersonalSupplyBoxMarkerInfo(struct FMarkerInfo& MarkerPingInfo, char Opened, char UsingSpawnAnimation); // Function UW-CompassWidget.UW-CompassWidget_C.OnSetPersonalSupplyBoxMarkerInfo(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnUpdateMaterialItemMarkerPosition(int32_t PingIndex); // Function UW-CompassWidget.UW-CompassWidget_C.OnUpdateMaterialItemMarkerPosition(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnSetMaterialItemMarkerInfo(struct Unknown& MaterialMarker, char UsingSpawnAnimation); // Function UW-CompassWidget.UW-CompassWidget_C.OnSetMaterialItemMarkerInfo(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnUpdateResuscitationMarkerPosition(struct Unknown MarkerWidget, struct Unknown Pos); // Function UW-CompassWidget.UW-CompassWidget_C.OnUpdateResuscitationMarkerPosition(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnSetResuscitationMarkerInfo(struct Unknown MarkerWidget, struct Unknown PlayerState); // Function UW-CompassWidget.UW-CompassWidget_C.OnSetResuscitationMarkerInfo(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnSetLocalPingMarkerInfo(struct Unknown& LocalPingMarker, char UsingSpawnAnimation); // Function UW-CompassWidget.UW-CompassWidget_C.OnSetLocalPingMarkerInfo(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnSetMaterialItemMarkerInfo(struct FMaterialItemMarkerInfo& MaterialMarker, char UsingSpawnAnimation); // Function UW-CompassWidget.UW-CompassWidget_C.OnSetMaterialItemMarkerInfo(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnUpdateResuscitationMarkerPosition(struct UWidget MarkerWidget, struct FVector2D Pos); // Function UW-CompassWidget.UW-CompassWidget_C.OnUpdateResuscitationMarkerPosition(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnSetResuscitationMarkerInfo(struct UWidget MarkerWidget, struct ABravoHotelPlayerState PlayerState); // Function UW-CompassWidget.UW-CompassWidget_C.OnSetResuscitationMarkerInfo(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnSetLocalPingMarkerInfo(struct FLocalPingMarkerInfo& LocalPingMarker, char UsingSpawnAnimation); // Function UW-CompassWidget.UW-CompassWidget_C.OnSetLocalPingMarkerInfo(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnUpdateLocalPingMarkerPosition(int32_t PingIndex); // Function UW-CompassWidget.UW-CompassWidget_C.OnUpdateLocalPingMarkerPosition(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnUpdateExpertWeaponItemMarkerPosition(); // Function UW-CompassWidget.UW-CompassWidget_C.OnUpdateExpertWeaponItemMarkerPosition(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnSetExpertWeaponItemMarkerInfo(struct Unknown& ExpertWeaponMarker, char UsingSpawnAnimation); // Function UW-CompassWidget.UW-CompassWidget_C.OnSetExpertWeaponItemMarkerInfo(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnSetExpertWeaponItemMarkerInfo(struct FExpertWeaponItemMarkerInfo& ExpertWeaponMarker, char UsingSpawnAnimation); // Function UW-CompassWidget.UW-CompassWidget_C.OnSetExpertWeaponItemMarkerInfo(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-CompassWidget(int32_t EntryPoint); // Function UW-CompassWidget.UW-CompassWidget_C.ExecuteUbergraph_UW-CompassWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-CompassWidget.UW-CompassWidget_C.CreateExpertWeaponItemMarker
-inline struct Unknown UUW-CompassWidget_C::CreateExpertWeaponItemMarker() {
+inline struct UUserWidget UUW-CompassWidget_C::CreateExpertWeaponItemMarker() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-CompassWidget.UW-CompassWidget_C.CreateExpertWeaponItemMarker");
 
 	struct CreateExpertWeaponItemMarker_Params {
 		
-		struct Unknown ReturnValue;
+		struct UUserWidget ReturnValue;
 
 	}; CreateExpertWeaponItemMarker_Params Params;
 
@@ -98,12 +98,12 @@ inline struct Unknown UUW-CompassWidget_C::CreateExpertWeaponItemMarker() {
 }
 
 // Function UW-CompassWidget.UW-CompassWidget_C.CreateLocalPingnMarker
-inline struct Unknown UUW-CompassWidget_C::CreateLocalPingnMarker() {
+inline struct UUserWidget UUW-CompassWidget_C::CreateLocalPingnMarker() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-CompassWidget.UW-CompassWidget_C.CreateLocalPingnMarker");
 
 	struct CreateLocalPingnMarker_Params {
 		
-		struct Unknown ReturnValue;
+		struct UUserWidget ReturnValue;
 
 	}; CreateLocalPingnMarker_Params Params;
 
@@ -116,12 +116,12 @@ inline struct Unknown UUW-CompassWidget_C::CreateLocalPingnMarker() {
 }
 
 // Function UW-CompassWidget.UW-CompassWidget_C.SetWidgetPosition
-inline void UUW-CompassWidget_C::SetWidgetPosition(struct Unknown Pos, struct Unknown Widget) {
+inline void UUW-CompassWidget_C::SetWidgetPosition(struct FVector2D Pos, struct UWidget Widget) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-CompassWidget.UW-CompassWidget_C.SetWidgetPosition");
 
 	struct SetWidgetPosition_Params {
-		struct Unknown Pos;
-		struct Unknown Widget;
+		struct FVector2D Pos;
+		struct UWidget Widget;
 	}; SetWidgetPosition_Params Params;
 
 	Params.Pos = Pos;
@@ -133,12 +133,12 @@ inline void UUW-CompassWidget_C::SetWidgetPosition(struct Unknown Pos, struct Un
 }
 
 // Function UW-CompassWidget.UW-CompassWidget_C.CreateResuscitationMarker
-inline struct Unknown UUW-CompassWidget_C::CreateResuscitationMarker() {
+inline struct UUserWidget UUW-CompassWidget_C::CreateResuscitationMarker() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-CompassWidget.UW-CompassWidget_C.CreateResuscitationMarker");
 
 	struct CreateResuscitationMarker_Params {
 		
-		struct Unknown ReturnValue;
+		struct UUserWidget ReturnValue;
 
 	}; CreateResuscitationMarker_Params Params;
 
@@ -151,12 +151,12 @@ inline struct Unknown UUW-CompassWidget_C::CreateResuscitationMarker() {
 }
 
 // Function UW-CompassWidget.UW-CompassWidget_C.CreateMaterialItemMarker
-inline struct Unknown UUW-CompassWidget_C::CreateMaterialItemMarker() {
+inline struct UUserWidget UUW-CompassWidget_C::CreateMaterialItemMarker() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-CompassWidget.UW-CompassWidget_C.CreateMaterialItemMarker");
 
 	struct CreateMaterialItemMarker_Params {
 		
-		struct Unknown ReturnValue;
+		struct UUserWidget ReturnValue;
 
 	}; CreateMaterialItemMarker_Params Params;
 
@@ -188,13 +188,13 @@ inline struct FText UUW-CompassWidget_C::SetRotation(int32_t Angle) {
 }
 
 // Function UW-CompassWidget.UW-CompassWidget_C.CreateRuler
-inline struct Unknown UUW-CompassWidget_C::CreateRuler(struct Unknown Position, float Angle) {
+inline struct UUW-CompassRulerWidget_C UUW-CompassWidget_C::CreateRuler(struct FVector2D Position, float Angle) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-CompassWidget.UW-CompassWidget_C.CreateRuler");
 
 	struct CreateRuler_Params {
-		struct Unknown Position;
+		struct FVector2D Position;
 		float Angle;
-		struct Unknown ReturnValue;
+		struct UUW-CompassRulerWidget_C ReturnValue;
 
 	}; CreateRuler_Params Params;
 
@@ -224,13 +224,13 @@ inline void UUW-CompassWidget_C::CreateMarkerWidget(int32_t TeamPlayerCnt) {
 }
 
 // Function UW-CompassWidget.UW-CompassWidget_C.GetDirectionAngle
-inline float UUW-CompassWidget_C::GetDirectionAngle(float TargetAngle, float CurrentAngle, struct Unknown Curve) {
+inline float UUW-CompassWidget_C::GetDirectionAngle(float TargetAngle, float CurrentAngle, struct UCurveFloat Curve) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-CompassWidget.UW-CompassWidget_C.GetDirectionAngle");
 
 	struct GetDirectionAngle_Params {
 		float TargetAngle;
 		float CurrentAngle;
-		struct Unknown Curve;
+		struct UCurveFloat Curve;
 		float ReturnValue;
 
 	}; GetDirectionAngle_Params Params;
@@ -247,7 +247,7 @@ inline float UUW-CompassWidget_C::GetDirectionAngle(float TargetAngle, float Cur
 }
 
 // Function UW-CompassWidget.UW-CompassWidget_C.GetCurvedFactor
-inline float UUW-CompassWidget_C::GetCurvedFactor(float TargetAngle, float CurrentAngle, float Weight, float Offeset, struct Unknown Curve) {
+inline float UUW-CompassWidget_C::GetCurvedFactor(float TargetAngle, float CurrentAngle, float Weight, float Offeset, struct UCurveFloat Curve) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-CompassWidget.UW-CompassWidget_C.GetCurvedFactor");
 
 	struct GetCurvedFactor_Params {
@@ -255,7 +255,7 @@ inline float UUW-CompassWidget_C::GetCurvedFactor(float TargetAngle, float Curre
 		float CurrentAngle;
 		float Weight;
 		float Offeset;
-		struct Unknown Curve;
+		struct UCurveFloat Curve;
 		float ReturnValue;
 
 	}; GetCurvedFactor_Params Params;
@@ -274,13 +274,13 @@ inline float UUW-CompassWidget_C::GetCurvedFactor(float TargetAngle, float Curre
 }
 
 // Function UW-CompassWidget.UW-CompassWidget_C.CreateUnit
-inline struct Unknown UUW-CompassWidget_C::CreateUnit(struct Unknown Position, float Angle) {
+inline struct UUW-CompassUnitWidget_C UUW-CompassWidget_C::CreateUnit(struct FVector2D Position, float Angle) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-CompassWidget.UW-CompassWidget_C.CreateUnit");
 
 	struct CreateUnit_Params {
-		struct Unknown Position;
+		struct FVector2D Position;
 		float Angle;
-		struct Unknown ReturnValue;
+		struct UUW-CompassUnitWidget_C ReturnValue;
 
 	}; CreateUnit_Params Params;
 
@@ -389,11 +389,11 @@ inline void UUW-CompassWidget_C::CreateMarker(int32_t Count) {
 }
 
 // Function UW-CompassWidget.UW-CompassWidget_C.OnResetUnit
-inline void UUW-CompassWidget_C::OnResetUnit(struct Unknown Widget, float UnitAngle) {
+inline void UUW-CompassWidget_C::OnResetUnit(struct UWidget Widget, float UnitAngle) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-CompassWidget.UW-CompassWidget_C.OnResetUnit");
 
 	struct OnResetUnit_Params {
-		struct Unknown Widget;
+		struct UWidget Widget;
 		float UnitAngle;
 	}; OnResetUnit_Params Params;
 
@@ -423,11 +423,11 @@ inline void UUW-CompassWidget_C::OnUpdateViewAngle(float Value, int32_t RealAngl
 }
 
 // Function UW-CompassWidget.UW-CompassWidget_C.OnSetMarkerInfo
-inline void UUW-CompassWidget_C::OnSetMarkerInfo(struct Unknown& MarkerPingInfo, char UsingSpawnAnimation) {
+inline void UUW-CompassWidget_C::OnSetMarkerInfo(struct FMarkerInfo& MarkerPingInfo, char UsingSpawnAnimation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-CompassWidget.UW-CompassWidget_C.OnSetMarkerInfo");
 
 	struct OnSetMarkerInfo_Params {
-		struct Unknown& MarkerPingInfo;
+		struct FMarkerInfo& MarkerPingInfo;
 		char UsingSpawnAnimation;
 	}; OnSetMarkerInfo_Params Params;
 
@@ -456,11 +456,11 @@ inline void UUW-CompassWidget_C::OnUpdatePersonalSupplyBoxMarkerPosition() {
 }
 
 // Function UW-CompassWidget.UW-CompassWidget_C.OnSetPersonalSupplyBoxMarkerInfo
-inline void UUW-CompassWidget_C::OnSetPersonalSupplyBoxMarkerInfo(struct Unknown& MarkerPingInfo, char Opened, char UsingSpawnAnimation) {
+inline void UUW-CompassWidget_C::OnSetPersonalSupplyBoxMarkerInfo(struct FMarkerInfo& MarkerPingInfo, char Opened, char UsingSpawnAnimation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-CompassWidget.UW-CompassWidget_C.OnSetPersonalSupplyBoxMarkerInfo");
 
 	struct OnSetPersonalSupplyBoxMarkerInfo_Params {
-		struct Unknown& MarkerPingInfo;
+		struct FMarkerInfo& MarkerPingInfo;
 		char Opened;
 		char UsingSpawnAnimation;
 	}; OnSetPersonalSupplyBoxMarkerInfo_Params Params;
@@ -492,11 +492,11 @@ inline void UUW-CompassWidget_C::OnUpdateMaterialItemMarkerPosition(int32_t Ping
 }
 
 // Function UW-CompassWidget.UW-CompassWidget_C.OnSetMaterialItemMarkerInfo
-inline void UUW-CompassWidget_C::OnSetMaterialItemMarkerInfo(struct Unknown& MaterialMarker, char UsingSpawnAnimation) {
+inline void UUW-CompassWidget_C::OnSetMaterialItemMarkerInfo(struct FMaterialItemMarkerInfo& MaterialMarker, char UsingSpawnAnimation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-CompassWidget.UW-CompassWidget_C.OnSetMaterialItemMarkerInfo");
 
 	struct OnSetMaterialItemMarkerInfo_Params {
-		struct Unknown& MaterialMarker;
+		struct FMaterialItemMarkerInfo& MaterialMarker;
 		char UsingSpawnAnimation;
 	}; OnSetMaterialItemMarkerInfo_Params Params;
 
@@ -511,12 +511,12 @@ inline void UUW-CompassWidget_C::OnSetMaterialItemMarkerInfo(struct Unknown& Mat
 }
 
 // Function UW-CompassWidget.UW-CompassWidget_C.OnUpdateResuscitationMarkerPosition
-inline void UUW-CompassWidget_C::OnUpdateResuscitationMarkerPosition(struct Unknown MarkerWidget, struct Unknown Pos) {
+inline void UUW-CompassWidget_C::OnUpdateResuscitationMarkerPosition(struct UWidget MarkerWidget, struct FVector2D Pos) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-CompassWidget.UW-CompassWidget_C.OnUpdateResuscitationMarkerPosition");
 
 	struct OnUpdateResuscitationMarkerPosition_Params {
-		struct Unknown MarkerWidget;
-		struct Unknown Pos;
+		struct UWidget MarkerWidget;
+		struct FVector2D Pos;
 	}; OnUpdateResuscitationMarkerPosition_Params Params;
 
 	Params.MarkerWidget = MarkerWidget;
@@ -528,12 +528,12 @@ inline void UUW-CompassWidget_C::OnUpdateResuscitationMarkerPosition(struct Unkn
 }
 
 // Function UW-CompassWidget.UW-CompassWidget_C.OnSetResuscitationMarkerInfo
-inline void UUW-CompassWidget_C::OnSetResuscitationMarkerInfo(struct Unknown MarkerWidget, struct Unknown PlayerState) {
+inline void UUW-CompassWidget_C::OnSetResuscitationMarkerInfo(struct UWidget MarkerWidget, struct ABravoHotelPlayerState PlayerState) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-CompassWidget.UW-CompassWidget_C.OnSetResuscitationMarkerInfo");
 
 	struct OnSetResuscitationMarkerInfo_Params {
-		struct Unknown MarkerWidget;
-		struct Unknown PlayerState;
+		struct UWidget MarkerWidget;
+		struct ABravoHotelPlayerState PlayerState;
 	}; OnSetResuscitationMarkerInfo_Params Params;
 
 	Params.MarkerWidget = MarkerWidget;
@@ -545,11 +545,11 @@ inline void UUW-CompassWidget_C::OnSetResuscitationMarkerInfo(struct Unknown Mar
 }
 
 // Function UW-CompassWidget.UW-CompassWidget_C.OnSetLocalPingMarkerInfo
-inline void UUW-CompassWidget_C::OnSetLocalPingMarkerInfo(struct Unknown& LocalPingMarker, char UsingSpawnAnimation) {
+inline void UUW-CompassWidget_C::OnSetLocalPingMarkerInfo(struct FLocalPingMarkerInfo& LocalPingMarker, char UsingSpawnAnimation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-CompassWidget.UW-CompassWidget_C.OnSetLocalPingMarkerInfo");
 
 	struct OnSetLocalPingMarkerInfo_Params {
-		struct Unknown& LocalPingMarker;
+		struct FLocalPingMarkerInfo& LocalPingMarker;
 		char UsingSpawnAnimation;
 	}; OnSetLocalPingMarkerInfo_Params Params;
 
@@ -593,11 +593,11 @@ inline void UUW-CompassWidget_C::OnUpdateExpertWeaponItemMarkerPosition() {
 }
 
 // Function UW-CompassWidget.UW-CompassWidget_C.OnSetExpertWeaponItemMarkerInfo
-inline void UUW-CompassWidget_C::OnSetExpertWeaponItemMarkerInfo(struct Unknown& ExpertWeaponMarker, char UsingSpawnAnimation) {
+inline void UUW-CompassWidget_C::OnSetExpertWeaponItemMarkerInfo(struct FExpertWeaponItemMarkerInfo& ExpertWeaponMarker, char UsingSpawnAnimation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-CompassWidget.UW-CompassWidget_C.OnSetExpertWeaponItemMarkerInfo");
 
 	struct OnSetExpertWeaponItemMarkerInfo_Params {
-		struct Unknown& ExpertWeaponMarker;
+		struct FExpertWeaponItemMarkerInfo& ExpertWeaponMarker;
 		char UsingSpawnAnimation;
 	}; OnSetExpertWeaponItemMarkerInfo_Params Params;
 

@@ -3,28 +3,28 @@ class ABP-PlayerHUD_C : public ABravoHotelPlayerHUD {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x868 (8)
-	struct Unknown DefaultSceneRoot; // 0x870 (8)
-	struct TMap<Unknown, Unknown> TableInfo; // 0x878 (80)
-	struct TArray<Unknown> NewVar_1; // 0x8C8 (16)
-	struct TArray<Unknown> GuideWidgetStack; // 0x8D8 (16)
-	enum class Unknow NewVar_2; // 0x8E8 (1)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x868 (8)
+	struct USceneComponent DefaultSceneRoot; // 0x870 (8)
+	struct TMap<enum class EHUDMessageTableType, struct UDataTable> TableInfo; // 0x878 (80)
+	struct TArray<struct UClass*> NewVar_1; // 0x8C8 (16)
+	struct TArray<enum class EGuideWidgetType> GuideWidgetStack; // 0x8D8 (16)
+	enum class EHUDMessageType NewVar_2; // 0x8E8 (1)
 
 	void IsSpectate(char& Return); // Function BP-PlayerHUD.BP-PlayerHUD_C.IsSpectate(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void OnShowMyKillInfoMessage(struct Unknown BroadCastInfo); // Function BP-PlayerHUD.BP-PlayerHUD_C.OnShowMyKillInfoMessage(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnShowMyKillInfoMessage(struct FKillBroadcastUIInfo BroadCastInfo); // Function BP-PlayerHUD.BP-PlayerHUD_C.OnShowMyKillInfoMessage(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnShowMyKnockOutInfo(struct FText WeaponName, struct FText Victim, char IsHeadShot, char TeamKill, char SelfKill); // Function BP-PlayerHUD.BP-PlayerHUD_C.OnShowMyKnockOutInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnShowMyKillInfo(struct FText WeaponName, struct FText Victim, int32_t KillCount, char IsHeadShot, char TeamKill, char SelfKill, char FinallyKill); // Function BP-PlayerHUD.BP-PlayerHUD_C.OnShowMyKillInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SelectTopOrBottomWidget(enum class Unknow MessageType, struct Unknown& UserWidget); // Function BP-PlayerHUD.BP-PlayerHUD_C.SelectTopOrBottomWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SelectTable(enum class Unknow TableType, struct Unknown& DataTable); // Function BP-PlayerHUD.BP-PlayerHUD_C.SelectTable(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void HideHUDMessage(enum class Unknow MessageType); // Function BP-PlayerHUD.BP-PlayerHUD_C.HideHUDMessage(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SelectTopOrBottomWidget(enum class EHUDMessageType MessageType, struct UUserWidget& UserWidget); // Function BP-PlayerHUD.BP-PlayerHUD_C.SelectTopOrBottomWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SelectTable(enum class EHUDMessageTableType TableType, struct UDataTable& DataTable); // Function BP-PlayerHUD.BP-PlayerHUD_C.SelectTable(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void HideHUDMessage(enum class EHUDMessageType MessageType); // Function BP-PlayerHUD.BP-PlayerHUD_C.HideHUDMessage(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ShowHudMessageAll(); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowHudMessageAll(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ShowHudMessageAt(int32_t MessageTypeNum); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowHudMessageAt(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnAddKillMessageAll(); // Function BP-PlayerHUD.BP-PlayerHUD_C.OnAddKillMessageAll(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ShowHUDMessageAtNum(char ShowNext, int32_t TypeNum); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowHUDMessageAtNum(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowKillMessage(struct TArray<Unknown>& DamageTypeArray); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowKillMessage(HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowGuideWidget(enum class Unknow GuideType); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowGuideWidget(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void HideGuideWidget(enum class Unknow GuideType); // Function BP-PlayerHUD.BP-PlayerHUD_C.HideGuideWidget(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowHUDMessage(struct Unknown MessageRow); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowHUDMessage(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowKillMessage(struct TArray<struct UClass*>& DamageTypeArray); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowKillMessage(HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowGuideWidget(enum class EGuideWidgetType GuideType); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowGuideWidget(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void HideGuideWidget(enum class EGuideWidgetType GuideType); // Function BP-PlayerHUD.BP-PlayerHUD_C.HideGuideWidget(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowHUDMessage(struct FBravoHotelHUDMessageRow MessageRow); // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowHUDMessage(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void K2_SetMainAndSpectatorWidgetVisiblility(char bIsVisible, char bMainWidget, char bSpectatorWidget); // Function BP-PlayerHUD.BP-PlayerHUD_C.K2_SetMainAndSpectatorWidgetVisiblility(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_BP-PlayerHUD(int32_t EntryPoint); // Function BP-PlayerHUD.BP-PlayerHUD_C.ExecuteUbergraph_BP-PlayerHUD(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
@@ -47,11 +47,11 @@ inline void ABP-PlayerHUD_C::IsSpectate(char& Return) {
 }
 
 // Function BP-PlayerHUD.BP-PlayerHUD_C.OnShowMyKillInfoMessage
-inline void ABP-PlayerHUD_C::OnShowMyKillInfoMessage(struct Unknown BroadCastInfo) {
+inline void ABP-PlayerHUD_C::OnShowMyKillInfoMessage(struct FKillBroadcastUIInfo BroadCastInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-PlayerHUD.BP-PlayerHUD_C.OnShowMyKillInfoMessage");
 
 	struct OnShowMyKillInfoMessage_Params {
-		struct Unknown BroadCastInfo;
+		struct FKillBroadcastUIInfo BroadCastInfo;
 	}; OnShowMyKillInfoMessage_Params Params;
 
 	Params.BroadCastInfo = BroadCastInfo;
@@ -112,12 +112,12 @@ inline void ABP-PlayerHUD_C::OnShowMyKillInfo(struct FText WeaponName, struct FT
 }
 
 // Function BP-PlayerHUD.BP-PlayerHUD_C.SelectTopOrBottomWidget
-inline void ABP-PlayerHUD_C::SelectTopOrBottomWidget(enum class Unknow MessageType, struct Unknown& UserWidget) {
+inline void ABP-PlayerHUD_C::SelectTopOrBottomWidget(enum class EHUDMessageType MessageType, struct UUserWidget& UserWidget) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-PlayerHUD.BP-PlayerHUD_C.SelectTopOrBottomWidget");
 
 	struct SelectTopOrBottomWidget_Params {
-		enum class Unknow MessageType;
-		struct Unknown& UserWidget;
+		enum class EHUDMessageType MessageType;
+		struct UUserWidget& UserWidget;
 	}; SelectTopOrBottomWidget_Params Params;
 
 	Params.MessageType = MessageType;
@@ -131,12 +131,12 @@ inline void ABP-PlayerHUD_C::SelectTopOrBottomWidget(enum class Unknow MessageTy
 }
 
 // Function BP-PlayerHUD.BP-PlayerHUD_C.SelectTable
-inline void ABP-PlayerHUD_C::SelectTable(enum class Unknow TableType, struct Unknown& DataTable) {
+inline void ABP-PlayerHUD_C::SelectTable(enum class EHUDMessageTableType TableType, struct UDataTable& DataTable) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-PlayerHUD.BP-PlayerHUD_C.SelectTable");
 
 	struct SelectTable_Params {
-		enum class Unknow TableType;
-		struct Unknown& DataTable;
+		enum class EHUDMessageTableType TableType;
+		struct UDataTable& DataTable;
 	}; SelectTable_Params Params;
 
 	Params.TableType = TableType;
@@ -150,11 +150,11 @@ inline void ABP-PlayerHUD_C::SelectTable(enum class Unknow TableType, struct Unk
 }
 
 // Function BP-PlayerHUD.BP-PlayerHUD_C.HideHUDMessage
-inline void ABP-PlayerHUD_C::HideHUDMessage(enum class Unknow MessageType) {
+inline void ABP-PlayerHUD_C::HideHUDMessage(enum class EHUDMessageType MessageType) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-PlayerHUD.BP-PlayerHUD_C.HideHUDMessage");
 
 	struct HideHUDMessage_Params {
-		enum class Unknow MessageType;
+		enum class EHUDMessageType MessageType;
 	}; HideHUDMessage_Params Params;
 
 	Params.MessageType = MessageType;
@@ -225,11 +225,11 @@ inline void ABP-PlayerHUD_C::ShowHUDMessageAtNum(char ShowNext, int32_t TypeNum)
 }
 
 // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowKillMessage
-inline void ABP-PlayerHUD_C::ShowKillMessage(struct TArray<Unknown>& DamageTypeArray) {
+inline void ABP-PlayerHUD_C::ShowKillMessage(struct TArray<struct UClass*>& DamageTypeArray) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-PlayerHUD.BP-PlayerHUD_C.ShowKillMessage");
 
 	struct ShowKillMessage_Params {
-		struct TArray<Unknown>& DamageTypeArray;
+		struct TArray<struct UClass*>& DamageTypeArray;
 	}; ShowKillMessage_Params Params;
 
 
@@ -242,11 +242,11 @@ inline void ABP-PlayerHUD_C::ShowKillMessage(struct TArray<Unknown>& DamageTypeA
 }
 
 // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowGuideWidget
-inline void ABP-PlayerHUD_C::ShowGuideWidget(enum class Unknow GuideType) {
+inline void ABP-PlayerHUD_C::ShowGuideWidget(enum class EGuideWidgetType GuideType) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-PlayerHUD.BP-PlayerHUD_C.ShowGuideWidget");
 
 	struct ShowGuideWidget_Params {
-		enum class Unknow GuideType;
+		enum class EGuideWidgetType GuideType;
 	}; ShowGuideWidget_Params Params;
 
 	Params.GuideType = GuideType;
@@ -257,11 +257,11 @@ inline void ABP-PlayerHUD_C::ShowGuideWidget(enum class Unknow GuideType) {
 }
 
 // Function BP-PlayerHUD.BP-PlayerHUD_C.HideGuideWidget
-inline void ABP-PlayerHUD_C::HideGuideWidget(enum class Unknow GuideType) {
+inline void ABP-PlayerHUD_C::HideGuideWidget(enum class EGuideWidgetType GuideType) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-PlayerHUD.BP-PlayerHUD_C.HideGuideWidget");
 
 	struct HideGuideWidget_Params {
-		enum class Unknow GuideType;
+		enum class EGuideWidgetType GuideType;
 	}; HideGuideWidget_Params Params;
 
 	Params.GuideType = GuideType;
@@ -272,11 +272,11 @@ inline void ABP-PlayerHUD_C::HideGuideWidget(enum class Unknow GuideType) {
 }
 
 // Function BP-PlayerHUD.BP-PlayerHUD_C.ShowHUDMessage
-inline void ABP-PlayerHUD_C::ShowHUDMessage(struct Unknown MessageRow) {
+inline void ABP-PlayerHUD_C::ShowHUDMessage(struct FBravoHotelHUDMessageRow MessageRow) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-PlayerHUD.BP-PlayerHUD_C.ShowHUDMessage");
 
 	struct ShowHUDMessage_Params {
-		struct Unknown MessageRow;
+		struct FBravoHotelHUDMessageRow MessageRow;
 	}; ShowHUDMessage_Params Params;
 
 	Params.MessageRow = MessageRow;

@@ -441,12 +441,12 @@ class AAkAcousticPortal : public AVolume {
 
 public:
 
-	enum class Unknow InitialState; // 0x350 (1)
+	enum class AkAcousticPortalState InitialState; // 0x350 (1)
 	float ObstructionRefreshInterval; // 0x354 (4)
 	char ObstructionCollisionChannel; // 0x358 (1)
 
 	void OpenPortal(); // Function AkAudio.AkAcousticPortal.OpenPortal(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x160FF60>
-	enum class Unknow GetCurrentState(); // Function AkAudio.AkAcousticPortal.GetCurrentState(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x160FB30>
+	enum class AkAcousticPortalState GetCurrentState(); // Function AkAudio.AkAcousticPortal.GetCurrentState(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x160FB30>
 	void ClosePortal(); // Function AkAudio.AkAcousticPortal.ClosePortal(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x160FA20>
 };
 
@@ -456,7 +456,7 @@ class UAkAudioType : public Object {
 public:
 
 	uint32_t ShortID; // 0x28 (4)
-	struct TArray<Unknown> UserData; // 0x30 (16)
+	struct TArray<struct Object> UserData; // 0x30 (16)
 };
 
 // Class AkAudio.AkAmbientSound
@@ -464,8 +464,8 @@ class AAkAmbientSound : public UActor {
 
 public:
 
-	struct Unknown AkAudioEvent; // 0x318 (8)
-	struct Unknown AkComponent; // 0x320 (8)
+	struct UAkAudioEvent AkAudioEvent; // 0x318 (8)
+	struct UAkComponent AkComponent; // 0x320 (8)
 	char StopWhenOwnerIsDestroyed : 0; // 0x328 (1)
 	char AutoPost : 0; // 0x329 (1)
 
@@ -478,9 +478,9 @@ class UAkAndroidInitializationSettings : public Object {
 
 public:
 
-	struct Unknown CommonSettings; // 0x28 (104)
-	struct Unknown CommunicationSettings; // 0x90 (40)
-	struct Unknown AdvancedSettings; // 0xB8 (64)
+	struct FAkCommonInitializationSettingsWithSampleRate CommonSettings; // 0x28 (104)
+	struct FAkCommunicationSettingsWithSystemInitialization CommunicationSettings; // 0x90 (40)
+	struct FAkAndroidAdvancedInitializationSettings AdvancedSettings; // 0xB8 (64)
 
 	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkAndroidInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <Game_BE.exe+0x160FEE0>
 };
@@ -498,7 +498,7 @@ class UAkAssetDataWithMedia : public UAkAssetData {
 
 public:
 
-	struct TArray<Unknown> MediaList; // 0x60 (16)
+	struct TArray<struct UAkMediaAsset> MediaList; // 0x60 (16)
 };
 
 // Class AkAudio.AkAssetPlatformData
@@ -506,7 +506,7 @@ class UAkAssetPlatformData : public Object {
 
 public:
 
-	struct Unknown CurrentAssetData; // 0x28 (8)
+	struct UAkAssetData CurrentAssetData; // 0x28 (8)
 };
 
 // Class AkAudio.AkAssetBase
@@ -514,7 +514,7 @@ class UAkAssetBase : public UAkAudioType {
 
 public:
 
-	struct Unknown PlatformAssetData; // 0x40 (8)
+	struct UAkAssetPlatformData PlatformAssetData; // 0x40 (8)
 };
 
 // Class AkAudio.AkAudioBank
@@ -523,9 +523,9 @@ class UAkAudioBank : public UAkAssetBase {
 public:
 
 	char AutoLoad : 0; // 0x50 (1)
-	struct TMap<Unknown, Unknown> LocalizedPlatformAssetDataMap; // 0x58 (80)
-	struct TSet<Unknown> LinkedAkEvents; // 0xA8 (80)
-	struct Unknown CurrentLocalizedPlatformAssetData; // 0xF8 (8)
+	struct TMap<struct FString, struct TSoftObjectPtr<UAkAssetPlatformData>> LocalizedPlatformAssetDataMap; // 0x58 (80)
+	struct TSet<struct TSoftObjectPtr<UAkAudioEvent>> LinkedAkEvents; // 0xA8 (80)
+	struct UAkAssetPlatformData CurrentLocalizedPlatformAssetData; // 0xF8 (8)
 };
 
 // Class AkAudio.AkAssetDataSwitchContainerData
@@ -533,10 +533,10 @@ class UAkAssetDataSwitchContainerData : public Object {
 
 public:
 
-	struct Unknown GroupValue; // 0x28 (40)
-	struct Unknown DefaultGroupValue; // 0x50 (8)
-	struct TArray<Unknown> MediaList; // 0x58 (16)
-	struct TArray<Unknown> Children; // 0x68 (16)
+	struct TSoftObjectPtr<UAkGroupValue> GroupValue; // 0x28 (40)
+	struct UAkGroupValue DefaultGroupValue; // 0x50 (8)
+	struct TArray<struct UAkMediaAsset> MediaList; // 0x58 (16)
+	struct TArray<struct UAkAssetDataSwitchContainerData> Children; // 0x68 (16)
 };
 
 // Class AkAudio.AkAssetDataSwitchContainer
@@ -544,8 +544,8 @@ class UAkAssetDataSwitchContainer : public UAkAssetDataWithMedia {
 
 public:
 
-	struct TArray<Unknown> SwitchContainers; // 0x70 (16)
-	struct Unknown DefaultGroupValue; // 0x80 (8)
+	struct TArray<struct UAkAssetDataSwitchContainerData> SwitchContainers; // 0x70 (16)
+	struct UAkGroupValue DefaultGroupValue; // 0x80 (8)
 };
 
 // Class AkAudio.AkAudioEventData
@@ -557,11 +557,11 @@ public:
 	char IsInfinite : 0; // 0x8C (1)
 	float MinimumDuration; // 0x90 (4)
 	float MaximumDuration; // 0x94 (4)
-	struct TMap<Unknown, Unknown> LocalizedMedia; // 0x98 (80)
-	struct TSet<Unknown> PostedEvents; // 0xE8 (80)
-	struct TSet<Unknown> UserDefinedSends; // 0x138 (80)
-	struct TSet<Unknown> PostedTriggers; // 0x188 (80)
-	struct TSet<Unknown> GroupValues; // 0x1D8 (80)
+	struct TMap<struct FString, struct UAkAssetDataSwitchContainer> LocalizedMedia; // 0x98 (80)
+	struct TSet<struct UAkAudioEvent> PostedEvents; // 0xE8 (80)
+	struct TSet<struct UAkAuxBus> UserDefinedSends; // 0x138 (80)
+	struct TSet<struct UAkTrigger> PostedTriggers; // 0x188 (80)
+	struct TSet<struct UAkGroupValue> GroupValues; // 0x1D8 (80)
 };
 
 // Class AkAudio.AkAudioEvent
@@ -569,9 +569,9 @@ class UAkAudioEvent : public UAkAssetBase {
 
 public:
 
-	struct TMap<Unknown, Unknown> LocalizedPlatformAssetDataMap; // 0x50 (80)
-	struct Unknown RequiredBank; // 0xA0 (8)
-	struct Unknown CurrentLocalizedPlatformData; // 0xB0 (8)
+	struct TMap<struct FString, struct TSoftObjectPtr<UAkAssetPlatformData>> LocalizedPlatformAssetDataMap; // 0x50 (80)
+	struct UAkAudioBank RequiredBank; // 0xA0 (8)
+	struct UAkAssetPlatformData CurrentLocalizedPlatformData; // 0xB0 (8)
 	float MaxAttenuationRadius; // 0xB8 (4)
 	char IsInfinite : 0; // 0xBC (1)
 	float MinimumDuration; // 0xC0 (4)
@@ -588,15 +588,15 @@ class UAkGameObject : public USceneComponent {
 
 public:
 
-	struct Unknown AkAudioEvent; // 0x228 (8)
+	struct UAkAudioEvent AkAudioEvent; // 0x228 (8)
 	struct FString EventName; // 0x230 (16)
 	char bAutoRegisterWithWwise : 0; // 0x240 (1)
 
 	void Stop(); // Function AkAudio.AkGameObject.Stop(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16161D0>
-	void PostAssociatedAkEventAsync(struct Unknown WorldContextObject, int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<Unknown>& ExternalSources, struct Unknown LatentInfo, int32_t& PlayingID); // Function AkAudio.AkGameObject.PostAssociatedAkEventAsync(BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1614190>
-	int32_t PostAssociatedAkEvent(int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<Unknown>& ExternalSources); // Function AkAudio.AkGameObject.PostAssociatedAkEvent(BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1613FF0>
-	void PostAkEventAsync(struct Unknown WorldContextObject, struct Unknown AkEvent, int32_t& PlayingID, int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<Unknown>& ExternalSources, struct Unknown LatentInfo); // Function AkAudio.AkGameObject.PostAkEventAsync(BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1613850>
-	int32_t PostAkEvent(struct Unknown AkEvent, int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<Unknown>& ExternalSources, struct FString in_EventName); // Function AkAudio.AkGameObject.PostAkEvent(BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1613620>
+	void PostAssociatedAkEventAsync(struct Object WorldContextObject, int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<struct FAkExternalSourceInfo>& ExternalSources, struct FLatentActionInfo LatentInfo, int32_t& PlayingID); // Function AkAudio.AkGameObject.PostAssociatedAkEventAsync(BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1614190>
+	int32_t PostAssociatedAkEvent(int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<struct FAkExternalSourceInfo>& ExternalSources); // Function AkAudio.AkGameObject.PostAssociatedAkEvent(BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1613FF0>
+	void PostAkEventAsync(struct Object WorldContextObject, struct UAkAudioEvent AkEvent, int32_t& PlayingID, int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<struct FAkExternalSourceInfo>& ExternalSources, struct FLatentActionInfo LatentInfo); // Function AkAudio.AkGameObject.PostAkEventAsync(BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1613850>
+	int32_t PostAkEvent(struct UAkAudioEvent AkEvent, int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<struct FAkExternalSourceInfo>& ExternalSources, struct FString in_EventName); // Function AkAudio.AkGameObject.PostAkEvent(BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1613620>
 };
 
 // Class AkAudio.AkComponent
@@ -607,7 +607,7 @@ public:
 	char bUseSpatialAudio : 0; // 0x248 (1)
 	char OcclusionCollisionChannel; // 0x250 (1)
 	char EnableSpotReflectors : 0; // 0x254 (1)
-	struct Unknown EarlyReflectionAuxBus; // 0x258 (8)
+	struct UAkAuxBus EarlyReflectionAuxBus; // 0x258 (8)
 	struct FString EarlyReflectionAuxBusName; // 0x260 (16)
 	int32_t EarlyReflectionOrder; // 0x270 (4)
 	float EarlyReflectionBusSendGain; // 0x274 (4)
@@ -625,26 +625,26 @@ public:
 	float AttenuationScalingFactor; // 0x298 (4)
 	float OcclusionRefreshInterval; // 0x29C (4)
 	char bUseReverbVolumes : 0; // 0x2A0 (1)
-	struct TSet<Unknown> Listeners; // 0x390 (80)
-	struct TSet<Unknown> Emitters; // 0x3E0 (80)
+	struct TSet<struct UAkComponent> Listeners; // 0x390 (80)
+	struct TSet<struct UAkComponent> Emitters; // 0x3E0 (80)
 
 	void UseReverbVolumes(char inUseReverbVolumes); // Function AkAudio.AkComponent.UseReverbVolumes(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16113A0>
-	void UseEarlyReflections(struct Unknown AuxBus, int32_t Order, float BusSendGain, float MaxPathLength, char SpotReflectors, struct FString AuxBusName); // Function AkAudio.AkComponent.UseEarlyReflections(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16111C0>
-	void SetSwitch(struct Unknown SwitchValue, struct FString SwitchGroup, struct FString SwitchState); // Function AkAudio.AkComponent.SetSwitch(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1610FB0>
+	void UseEarlyReflections(struct UAkAuxBus AuxBus, int32_t Order, float BusSendGain, float MaxPathLength, char SpotReflectors, struct FString AuxBusName); // Function AkAudio.AkComponent.UseEarlyReflections(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16111C0>
+	void SetSwitch(struct UAkSwitchValue SwitchValue, struct FString SwitchGroup, struct FString SwitchState); // Function AkAudio.AkComponent.SetSwitch(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1610FB0>
 	void SetStopWhenOwnerDestroyed(char bStopWhenOwnerDestroyed); // Function AkAudio.AkComponent.SetStopWhenOwnerDestroyed(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1610F20>
-	void SetRTPCValue(struct Unknown RTPCValue, float Value, int32_t InterpolationTimeMs, struct FString RTPC); // Function AkAudio.AkComponent.SetRTPCValue(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1610D70>
+	void SetRTPCValue(struct UAkRtpc RTPCValue, float Value, int32_t InterpolationTimeMs, struct FString RTPC); // Function AkAudio.AkComponent.SetRTPCValue(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1610D70>
 	void SetOutputBusVolume(float BusVolume); // Function AkAudio.AkComponent.SetOutputBusVolume(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1610CF0>
-	void SetListeners(struct TArray<Unknown>& Listeners); // Function AkAudio.AkComponent.SetListeners(Final|BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1610C40>
+	void SetListeners(struct TArray<struct UAkComponent>& Listeners); // Function AkAudio.AkComponent.SetListeners(Final|BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1610C40>
 	void SetEarlyReflectionsVolume(float SendVolume); // Function AkAudio.AkComponent.SetEarlyReflectionsVolume(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1610B30>
 	void SetEarlyReflectionsAuxBus(struct FString AuxBusName); // Function AkAudio.AkComponent.SetEarlyReflectionsAuxBus(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1610A90>
 	void SetAttenuationScalingFactor(float Value); // Function AkAudio.AkComponent.SetAttenuationScalingFactor(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1610990>
-	void PostTrigger(struct Unknown TriggerValue, struct FString Trigger); // Function AkAudio.AkComponent.PostTrigger(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1610720>
-	void PostAssociatedAkEventAndWaitForEndAsync(int32_t& PlayingID, struct TArray<Unknown>& ExternalSources, struct Unknown LatentInfo); // Function AkAudio.AkComponent.PostAssociatedAkEventAndWaitForEndAsync(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1610550>
-	int32_t PostAssociatedAkEventAndWaitForEnd(struct TArray<Unknown>& ExternalSources, struct Unknown LatentInfo); // Function AkAudio.AkComponent.PostAssociatedAkEventAndWaitForEnd(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x16103F0>
+	void PostTrigger(struct UAkTrigger TriggerValue, struct FString Trigger); // Function AkAudio.AkComponent.PostTrigger(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1610720>
+	void PostAssociatedAkEventAndWaitForEndAsync(int32_t& PlayingID, struct TArray<struct FAkExternalSourceInfo>& ExternalSources, struct FLatentActionInfo LatentInfo); // Function AkAudio.AkComponent.PostAssociatedAkEventAndWaitForEndAsync(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1610550>
+	int32_t PostAssociatedAkEventAndWaitForEnd(struct TArray<struct FAkExternalSourceInfo>& ExternalSources, struct FLatentActionInfo LatentInfo); // Function AkAudio.AkComponent.PostAssociatedAkEventAndWaitForEnd(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x16103F0>
 	int32_t PostAkEventByName(struct FString in_EventName); // Function AkAudio.AkComponent.PostAkEventByName(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1610340>
-	void PostAkEventAndWaitForEndAsync(struct Unknown AkEvent, int32_t& PlayingID, struct TArray<Unknown>& ExternalSources, struct Unknown LatentInfo); // Function AkAudio.AkComponent.PostAkEventAndWaitForEndAsync(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1610170>
-	int32_t PostAkEventAndWaitForEnd(struct Unknown AkEvent, struct FString in_EventName, struct TArray<Unknown>& ExternalSources, struct Unknown LatentInfo); // Function AkAudio.AkComponent.PostAkEventAndWaitForEnd(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x160FF80>
-	void GetRTPCValue(struct Unknown RTPCValue, enum class Unknow InputValueType, float& Value, enum class Unknow& OutputValueType, struct FString RTPC, int32_t PlayingID); // Function AkAudio.AkComponent.GetRTPCValue(Final|BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x160FC20>
+	void PostAkEventAndWaitForEndAsync(struct UAkAudioEvent AkEvent, int32_t& PlayingID, struct TArray<struct FAkExternalSourceInfo>& ExternalSources, struct FLatentActionInfo LatentInfo); // Function AkAudio.AkComponent.PostAkEventAndWaitForEndAsync(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1610170>
+	int32_t PostAkEventAndWaitForEnd(struct UAkAudioEvent AkEvent, struct FString in_EventName, struct TArray<struct FAkExternalSourceInfo>& ExternalSources, struct FLatentActionInfo LatentInfo); // Function AkAudio.AkComponent.PostAkEventAndWaitForEnd(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x160FF80>
+	void GetRTPCValue(struct UAkRtpc RTPCValue, enum class ERTPCValueType InputValueType, float& Value, enum class ERTPCValueType& OutputValueType, struct FString RTPC, int32_t PlayingID); // Function AkAudio.AkComponent.GetRTPCValue(Final|BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x160FC20>
 	float GetAttenuationRadius(); // Function AkAudio.AkComponent.GetAttenuationRadius(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x160FAD0>
 };
 
@@ -653,7 +653,7 @@ class UAkAuxBus : public UAkAssetBase {
 
 public:
 
-	struct Unknown RequiredBank; // 0x50 (8)
+	struct UAkAudioBank RequiredBank; // 0x50 (8)
 };
 
 // Class AkAudio.AkCheckBox
@@ -661,26 +661,26 @@ class UAkCheckBox : public UContentWidget {
 
 public:
 
-	enum class Unknow CheckedState; // 0x4D0 (1)
+	enum class ECheckBoxState CheckedState; // 0x4D0 (1)
 	struct FDelegate CheckedStateDelegate; // 0x4D4 (16)
-	struct Unknown WidgetStyle; // 0x4E8 (1408)
+	struct FCheckBoxStyle WidgetStyle; // 0x4E8 (1408)
 	char HorizontalAlignment; // 0xA68 (1)
 	char IsFocusable : 0; // 0xA69 (1)
-	struct Unknown ThePropertyToControl; // 0xA70 (16)
-	struct Unknown ItemToControl; // 0xA80 (64)
+	struct FAkBoolPropertyToControl ThePropertyToControl; // 0xA70 (16)
+	struct FAkWwiseItemToControl ItemToControl; // 0xA80 (64)
 	struct FMulticastInlineDelegate AkOnCheckStateChanged; // 0xAC0 (16)
 	struct FMulticastInlineDelegate OnItemDropped; // 0xAD0 (16)
 	struct FMulticastInlineDelegate OnPropertyDropped; // 0xAE0 (16)
 
 	void SetIsChecked(char InIsChecked); // Function AkAudio.AkCheckBox.SetIsChecked(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1610BB0>
-	void SetCheckedState(enum class Unknow InCheckedState); // Function AkAudio.AkCheckBox.SetCheckedState(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1610A10>
-	void SetAkItemId(struct Unknown& ItemId); // Function AkAudio.AkCheckBox.SetAkItemId(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x16108F0>
+	void SetCheckedState(enum class ECheckBoxState InCheckedState); // Function AkAudio.AkCheckBox.SetCheckedState(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1610A10>
+	void SetAkItemId(struct FGuid& ItemId); // Function AkAudio.AkCheckBox.SetAkItemId(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x16108F0>
 	void SetAkBoolProperty(struct FString ItemProperty); // Function AkAudio.AkCheckBox.SetAkBoolProperty(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1610850>
 	char IsPressed(); // Function AkAudio.AkCheckBox.IsPressed(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x160FEB0>
 	char IsChecked(); // Function AkAudio.AkCheckBox.IsChecked(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x160FE80>
-	enum class Unknow GetCheckedState(); // Function AkAudio.AkCheckBox.GetCheckedState(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x160FB00>
+	enum class ECheckBoxState GetCheckedState(); // Function AkAudio.AkCheckBox.GetCheckedState(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x160FB00>
 	struct FString GetAkProperty(); // Function AkAudio.AkCheckBox.GetAkProperty(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x160FA80>
-	struct Unknown GetAkItemId(); // Function AkAudio.AkCheckBox.GetAkItemId(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x160FA40>
+	struct FGuid GetAkItemId(); // Function AkAudio.AkCheckBox.GetAkItemId(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x160FA40>
 };
 
 // Class AkAudio.AkFolder
@@ -697,7 +697,7 @@ class UAkCallbackInfo : public Object {
 
 public:
 
-	struct Unknown AkComponent; // 0x28 (8)
+	struct UAkComponent AkComponent; // 0x28 (8)
 };
 
 // Class AkAudio.AkEventCallbackInfo
@@ -737,8 +737,8 @@ class UAkMusicSyncCallbackInfo : public UAkCallbackInfo {
 public:
 
 	int32_t PlayingID; // 0x30 (4)
-	struct Unknown SegmentInfo; // 0x34 (36)
-	enum class Unknow MusicSyncType; // 0x58 (1)
+	struct FAkSegmentInfo SegmentInfo; // 0x34 (36)
+	enum class EAkCallbackType MusicSyncType; // 0x58 (1)
 	struct FString UserCueName; // 0x60 (16)
 };
 
@@ -747,15 +747,15 @@ class UAkGeometryComponent : public USceneComponent {
 
 public:
 
-	enum class Unknow MeshType; // 0x228 (1)
+	enum class AkMeshType MeshType; // 0x228 (1)
 	int32_t LOD; // 0x22C (4)
 	float WeldingThreshold; // 0x230 (4)
-	struct TMap<Unknown, Unknown> StaticMeshSurfaceOverride; // 0x238 (80)
-	struct Unknown CollisionMeshSurfaceOverride; // 0x288 (16)
+	struct TMap<struct UMaterialInterface, struct FAkGeometrySurfaceOverride> StaticMeshSurfaceOverride; // 0x238 (80)
+	struct FAkGeometrySurfaceOverride CollisionMeshSurfaceOverride; // 0x288 (16)
 	char bEnableDiffraction : 0; // 0x298 (1)
 	char bEnableDiffractionOnBoundaryEdges : 0; // 0x298 (1)
-	struct Unknown AssociatedRoom; // 0x2A0 (8)
-	struct Unknown GeometryData; // 0x2B8 (80)
+	struct UActor AssociatedRoom; // 0x2A0 (8)
+	struct FAkGeometryData GeometryData; // 0x2B8 (80)
 
 	void UpdateGeometry(); // Function AkAudio.AkGeometryComponent.UpdateGeometry(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x161B9E0>
 	void RemoveGeometry(); // Function AkAudio.AkGeometryComponent.RemoveGeometry(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x161B9C0>
@@ -767,7 +767,7 @@ class UAkGroupValue : public UAkAudioType {
 
 public:
 
-	struct TArray<Unknown> MediaDependencies; // 0x40 (16)
+	struct TArray<struct TSoftObjectPtr<UAkMediaAsset>> MediaDependencies; // 0x40 (16)
 	uint32_t GroupShortID; // 0x50 (4)
 };
 
@@ -776,9 +776,9 @@ class UAkHololensInitializationSettings : public Object {
 
 public:
 
-	struct Unknown CommonSettings; // 0x28 (104)
-	struct Unknown CommunicationSettings; // 0x90 (40)
-	struct Unknown AdvancedSettings; // 0xB8 (64)
+	struct FAkCommonInitializationSettingsWithSampleRate CommonSettings; // 0x28 (104)
+	struct FAkCommunicationSettingsWithSystemInitialization CommunicationSettings; // 0x90 (40)
+	struct FAkHololensAdvancedInitializationSettings AdvancedSettings; // 0xB8 (64)
 
 	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkHololensInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <Game_BE.exe+0x160FEE0>
 };
@@ -788,7 +788,7 @@ class UAkInitBankAssetData : public UAkAssetDataWithMedia {
 
 public:
 
-	struct TArray<Unknown> PluginInfos; // 0x70 (16)
+	struct TArray<struct FAkPluginInfo> PluginInfos; // 0x70 (16)
 };
 
 // Class AkAudio.AkInitBank
@@ -796,7 +796,7 @@ class UAkInitBank : public UAkAssetBase {
 
 public:
 
-	struct TArray<Unknown> AvailableAudioCultures; // 0x50 (16)
+	struct TArray<struct FString> AvailableAudioCultures; // 0x50 (16)
 	struct FString DefaultLanguage; // 0x60 (16)
 };
 
@@ -805,10 +805,10 @@ class UAkIOSInitializationSettings : public Object {
 
 public:
 
-	struct Unknown CommonSettings; // 0x28 (104)
-	struct Unknown AudioSession; // 0x90 (12)
-	struct Unknown CommunicationSettings; // 0xA0 (40)
-	struct Unknown AdvancedSettings; // 0xC8 (52)
+	struct FAkCommonInitializationSettingsWithSampleRate CommonSettings; // 0x28 (104)
+	struct FAkAudioSession AudioSession; // 0x90 (12)
+	struct FAkCommunicationSettingsWithSystemInitialization CommunicationSettings; // 0xA0 (40)
+	struct FAkAdvancedInitializationSettings AdvancedSettings; // 0xC8 (52)
 };
 
 // Class AkAudio.AkItemBoolProperties
@@ -843,12 +843,12 @@ class UAkLateReverbComponent : public USceneComponent {
 public:
 
 	char bEnable : 0; // 0x228 (1)
-	struct Unknown AuxBus; // 0x230 (8)
+	struct UAkAuxBus AuxBus; // 0x230 (8)
 	struct FString AuxBusName; // 0x238 (16)
 	float SendLevel; // 0x248 (4)
 	float FadeRate; // 0x24C (4)
 	float Priority; // 0x250 (4)
-	struct Unknown NextLowerPriorityComponent; // 0x258 (8)
+	struct UAkLateReverbComponent NextLowerPriorityComponent; // 0x258 (8)
 };
 
 // Class AkAudio.AkLinuxInitializationSettings
@@ -856,9 +856,9 @@ class UAkLinuxInitializationSettings : public Object {
 
 public:
 
-	struct Unknown CommonSettings; // 0x28 (104)
-	struct Unknown CommunicationSettings; // 0x90 (40)
-	struct Unknown AdvancedSettings; // 0xB8 (56)
+	struct FAkCommonInitializationSettingsWithSampleRate CommonSettings; // 0x28 (104)
+	struct FAkCommunicationSettingsWithSystemInitialization CommunicationSettings; // 0x90 (40)
+	struct FAkAdvancedInitializationSettingsWithMultiCoreRendering AdvancedSettings; // 0xB8 (56)
 
 	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkLinuxInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <Game_BE.exe+0x160FEE0>
 };
@@ -868,9 +868,9 @@ class UAkLuminInitializationSettings : public Object {
 
 public:
 
-	struct Unknown CommonSettings; // 0x28 (104)
-	struct Unknown CommunicationSettings; // 0x90 (40)
-	struct Unknown AdvancedSettings; // 0xB8 (56)
+	struct FAkCommonInitializationSettingsWithSampleRate CommonSettings; // 0x28 (104)
+	struct FAkCommunicationSettingsWithSystemInitialization CommunicationSettings; // 0x90 (40)
+	struct FAkAdvancedInitializationSettingsWithMultiCoreRendering AdvancedSettings; // 0xB8 (56)
 
 	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkLuminInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <Game_BE.exe+0x160FEE0>
 };
@@ -880,9 +880,9 @@ class UAkMacInitializationSettings : public Object {
 
 public:
 
-	struct Unknown CommonSettings; // 0x28 (104)
-	struct Unknown CommunicationSettings; // 0x90 (40)
-	struct Unknown AdvancedSettings; // 0xB8 (56)
+	struct FAkCommonInitializationSettingsWithSampleRate CommonSettings; // 0x28 (104)
+	struct FAkCommunicationSettingsWithSystemInitialization CommunicationSettings; // 0x90 (40)
+	struct FAkAdvancedInitializationSettingsWithMultiCoreRendering AdvancedSettings; // 0xB8 (56)
 
 	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkMacInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <Game_BE.exe+0x160FEE0>
 };
@@ -903,8 +903,8 @@ public:
 
 	uint32_t ID; // 0x28 (4)
 	char AutoLoad : 0; // 0x2C (1)
-	struct TArray<Unknown> UserData; // 0x30 (16)
-	struct Unknown CurrentMediaAssetData; // 0x40 (8)
+	struct TArray<struct Object> UserData; // 0x30 (16)
+	struct UAkMediaAssetData CurrentMediaAssetData; // 0x40 (8)
 };
 
 // Class AkAudio.AkPS4InitializationSettings
@@ -912,9 +912,9 @@ class UAkPS4InitializationSettings : public Object {
 
 public:
 
-	struct Unknown CommonSettings; // 0x28 (96)
-	struct Unknown CommunicationSettings; // 0x88 (40)
-	struct Unknown AdvancedSettings; // 0xB0 (64)
+	struct FAkCommonInitializationSettings CommonSettings; // 0x28 (96)
+	struct FAkCommunicationSettingsWithSystemInitialization CommunicationSettings; // 0x88 (40)
+	struct FAkPS4AdvancedInitializationSettings AdvancedSettings; // 0xB0 (64)
 
 	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkPS4InitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <Game_BE.exe+0x1622550>
 };
@@ -925,12 +925,12 @@ class AAkReverbVolume : public AVolume {
 public:
 
 	char bEnabled : 0; // 0x350 (1)
-	struct Unknown AuxBus; // 0x358 (8)
+	struct UAkAuxBus AuxBus; // 0x358 (8)
 	struct FString AuxBusName; // 0x360 (16)
 	float SendLevel; // 0x370 (4)
 	float FadeRate; // 0x374 (4)
 	float Priority; // 0x378 (4)
-	struct Unknown LateReverbComponent; // 0x380 (8)
+	struct UAkLateReverbComponent LateReverbComponent; // 0x380 (8)
 };
 
 // Class AkAudio.AkRoomComponent
@@ -939,7 +939,7 @@ class UAkRoomComponent : public UAkGameObject {
 public:
 
 	char bEnable : 0; // 0x248 (1)
-	struct Unknown NextLowerPriorityComponent; // 0x250 (8)
+	struct UAkRoomComponent NextLowerPriorityComponent; // 0x250 (8)
 	float Priority; // 0x258 (4)
 	float WallOcclusion; // 0x25C (4)
 	float AuxSendLevel; // 0x260 (4)
@@ -952,24 +952,24 @@ class UAkSettings : public Object {
 public:
 
 	char MaxSimultaneousReverbVolumes; // 0x28 (1)
-	struct Unknown WwiseProjectPath; // 0x30 (16)
-	struct Unknown WwiseSoundDataFolder; // 0x40 (16)
+	struct FFilePath WwiseProjectPath; // 0x30 (16)
+	struct FDirectoryPath WwiseSoundDataFolder; // 0x40 (16)
 	char bAutoConnectToWAAPI : 0; // 0x50 (1)
 	char DefaultOcclusionCollisionChannel; // 0x51 (1)
-	struct TMap<Unknown, Unknown> AkGeometryMap; // 0x58 (80)
+	struct TMap<struct TSoftObjectPtr<UPhysicalMaterial>, struct FAkGeometrySurfacePropertiesToMap> AkGeometryMap; // 0x58 (80)
 	char SplitSwitchContainerMedia : 0; // 0xA8 (1)
 	char SplitMediaPerFolder : 0; // 0xA9 (1)
 	char UseEventBasedPackaging : 0; // 0xAA (1)
 	char EnableAutomaticAssetSynchronization : 0; // 0xAB (1)
 	struct TSoftClassPtr<UObject> ComponentClass; // 0xB0 (40)
 	struct FString CommandletCommitMessage; // 0xD8 (16)
-	struct TMap<Unknown, Unknown> UnrealCultureToWwiseCulture; // 0xE8 (80)
+	struct TMap<struct FString, struct FString> UnrealCultureToWwiseCulture; // 0xE8 (80)
 	char AskedToUseNewAssetManagement : 0; // 0x138 (1)
 	char bEnableMultiCoreRendering : 0; // 0x139 (1)
 	char MigratedEnableMultiCoreRendering : 0; // 0x13A (1)
 	char FixupRedirectorsDuringMigration : 0; // 0x13B (1)
-	struct Unknown WwiseWindowsInstallationPath; // 0x140 (16)
-	struct Unknown WwiseMacInstallationPath; // 0x150 (16)
+	struct FDirectoryPath WwiseWindowsInstallationPath; // 0x140 (16)
+	struct FFilePath WwiseMacInstallationPath; // 0x150 (16)
 };
 
 // Class AkAudio.AkSettingsPerUser
@@ -977,9 +977,9 @@ class UAkSettingsPerUser : public Object {
 
 public:
 
-	struct Unknown WwiseProjectPath; // 0x28 (16)
-	struct Unknown WwiseWindowsInstallationPath; // 0x38 (16)
-	struct Unknown WwiseMacInstallationPath; // 0x48 (16)
+	struct FFilePath WwiseProjectPath; // 0x28 (16)
+	struct FDirectoryPath WwiseWindowsInstallationPath; // 0x38 (16)
+	struct FFilePath WwiseMacInstallationPath; // 0x48 (16)
 	char EnableAutomaticAssetSynchronization : 0; // 0x58 (1)
 	struct FString WaapiIPAddress; // 0x60 (16)
 	uint32_t WaapiPort; // 0x70 (4)
@@ -996,31 +996,31 @@ public:
 
 	float Value; // 0x108 (4)
 	struct FDelegate ValueDelegate; // 0x10C (16)
-	struct Unknown WidgetStyle; // 0x120 (832)
+	struct FSliderStyle WidgetStyle; // 0x120 (832)
 	char Orientation; // 0x460 (1)
-	struct Unknown SliderBarColor; // 0x464 (16)
-	struct Unknown SliderHandleColor; // 0x474 (16)
+	struct FLinearColor SliderBarColor; // 0x464 (16)
+	struct FLinearColor SliderHandleColor; // 0x474 (16)
 	char IndentHandle : 0; // 0x484 (1)
 	char Locked : 0; // 0x485 (1)
 	float StepSize; // 0x488 (4)
 	char IsFocusable : 0; // 0x48C (1)
-	struct Unknown ThePropertyToControl; // 0x490 (16)
-	struct Unknown ItemToControl; // 0x4A0 (64)
+	struct FAkPropertyToControl ThePropertyToControl; // 0x490 (16)
+	struct FAkWwiseItemToControl ItemToControl; // 0x4A0 (64)
 	struct FMulticastInlineDelegate OnValueChanged; // 0x4E0 (16)
 	struct FMulticastInlineDelegate OnItemDropped; // 0x4F0 (16)
 	struct FMulticastInlineDelegate OnPropertyDropped; // 0x500 (16)
 
 	void SetValue(float InValue); // Function AkAudio.AkSlider.SetValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16267A0>
 	void SetStepSize(float InValue); // Function AkAudio.AkSlider.SetStepSize(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1626650>
-	void SetSliderHandleColor(struct Unknown InValue); // Function AkAudio.AkSlider.SetSliderHandleColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x16265D0>
-	void SetSliderBarColor(struct Unknown InValue); // Function AkAudio.AkSlider.SetSliderBarColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x1626550>
+	void SetSliderHandleColor(struct FLinearColor InValue); // Function AkAudio.AkSlider.SetSliderHandleColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x16265D0>
+	void SetSliderBarColor(struct FLinearColor InValue); // Function AkAudio.AkSlider.SetSliderBarColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x1626550>
 	void SetLocked(char InValue); // Function AkAudio.AkSlider.SetLocked(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16264C0>
 	void SetIndentHandle(char InValue); // Function AkAudio.AkSlider.SetIndentHandle(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1626430>
 	void SetAkSliderItemProperty(struct FString ItemProperty); // Function AkAudio.AkSlider.SetAkSliderItemProperty(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1626390>
-	void SetAkSliderItemId(struct Unknown& ItemId); // Function AkAudio.AkSlider.SetAkSliderItemId(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x16262F0>
+	void SetAkSliderItemId(struct FGuid& ItemId); // Function AkAudio.AkSlider.SetAkSliderItemId(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x16262F0>
 	float GetValue(); // Function AkAudio.AkSlider.GetValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1626120>
 	struct FString GetAkSliderItemProperty(); // Function AkAudio.AkSlider.GetAkSliderItemProperty(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1626040>
-	struct Unknown GetAkSliderItemId(); // Function AkAudio.AkSlider.GetAkSliderItemId(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1626000>
+	struct FGuid GetAkSliderItemId(); // Function AkAudio.AkSlider.GetAkSliderItemId(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1626000>
 };
 
 // Class AkAudio.AkSpatialAudioVolume
@@ -1028,9 +1028,9 @@ class AAkSpatialAudioVolume : public AVolume {
 
 public:
 
-	struct Unknown SurfaceReflectorSet; // 0x350 (8)
-	struct Unknown LateReverb; // 0x358 (8)
-	struct Unknown Room; // 0x360 (8)
+	struct UAkSurfaceReflectorSetComponent SurfaceReflectorSet; // 0x350 (8)
+	struct UAkLateReverbComponent LateReverb; // 0x358 (8)
+	struct UAkRoomComponent Room; // 0x360 (8)
 };
 
 // Class AkAudio.AkSpotReflector
@@ -1038,9 +1038,9 @@ class AAkSpotReflector : public UActor {
 
 public:
 
-	struct Unknown EarlyReflectionAuxBus; // 0x318 (8)
+	struct UAkAuxBus EarlyReflectionAuxBus; // 0x318 (8)
 	struct FString EarlyReflectionAuxBusName; // 0x320 (16)
-	struct Unknown AcousticTexture; // 0x330 (8)
+	struct UAkAcousticTexture AcousticTexture; // 0x330 (8)
 	float DistanceScalingFactor; // 0x338 (4)
 	float Level; // 0x33C (4)
 };
@@ -1051,10 +1051,10 @@ class UAkSurfaceReflectorSetComponent : public USceneComponent {
 public:
 
 	char bEnableSurfaceReflectors : 0; // 0x228 (1)
-	struct TArray<Unknown> AcousticPolys; // 0x230 (16)
+	struct TArray<struct FAkPoly> AcousticPolys; // 0x230 (16)
 	char bEnableDiffraction : 0; // 0x240 (1)
 	char bEnableDiffractionOnBoundaryEdges : 0; // 0x240 (1)
-	struct Unknown AssociatedRoom; // 0x248 (8)
+	struct UActor AssociatedRoom; // 0x248 (8)
 
 	void UpdateSurfaceReflectorSet(); // Function AkAudio.AkSurfaceReflectorSetComponent.UpdateSurfaceReflectorSet(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1626BC0>
 	void SendSurfaceReflectorSet(); // Function AkAudio.AkSurfaceReflectorSetComponent.SendSurfaceReflectorSet(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16262D0>
@@ -1066,9 +1066,9 @@ class UAkSwitchInitializationSettings : public Object {
 
 public:
 
-	struct Unknown CommonSettings; // 0x28 (104)
-	struct Unknown CommunicationSettings; // 0x90 (40)
-	struct Unknown AdvancedSettings; // 0xB8 (56)
+	struct FAkCommonInitializationSettingsWithSampleRate CommonSettings; // 0x28 (104)
+	struct FAkCommunicationSettingsWithCommSelection CommunicationSettings; // 0x90 (40)
+	struct FAkAdvancedInitializationSettingsWithMultiCoreRendering AdvancedSettings; // 0xB8 (56)
 
 	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkSwitchInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <Game_BE.exe+0x160FEE0>
 };
@@ -1078,10 +1078,10 @@ class UAkTVOSInitializationSettings : public Object {
 
 public:
 
-	struct Unknown CommonSettings; // 0x28 (104)
-	struct Unknown AudioSession; // 0x90 (12)
-	struct Unknown CommunicationSettings; // 0xA0 (40)
-	struct Unknown AdvancedSettings; // 0xC8 (52)
+	struct FAkCommonInitializationSettingsWithSampleRate CommonSettings; // 0x28 (104)
+	struct FAkAudioSession AudioSession; // 0x90 (12)
+	struct FAkCommunicationSettingsWithSystemInitialization CommunicationSettings; // 0xA0 (40)
+	struct FAkAdvancedInitializationSettings AdvancedSettings; // 0xC8 (52)
 };
 
 // Class AkAudio.AkWindowsInitializationSettings
@@ -1089,9 +1089,9 @@ class UAkWindowsInitializationSettings : public Object {
 
 public:
 
-	struct Unknown CommonSettings; // 0x28 (104)
-	struct Unknown CommunicationSettings; // 0x90 (40)
-	struct Unknown AdvancedSettings; // 0xB8 (64)
+	struct FAkCommonInitializationSettingsWithSampleRate CommonSettings; // 0x28 (104)
+	struct FAkCommunicationSettingsWithSystemInitialization CommunicationSettings; // 0x90 (40)
+	struct FAkWindowsAdvancedInitializationSettings AdvancedSettings; // 0xB8 (64)
 
 	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkWindowsInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <Game_BE.exe+0x160FEE0>
 };
@@ -1105,7 +1105,7 @@ public:
 	struct FMulticastInlineDelegate OnItemDragged; // 0x118 (16)
 
 	void SetSearchText(struct FString newText); // Function AkAudio.AkWwiseTree.SetSearchText(Final|BlueprintCosmetic|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16225D0>
-	struct Unknown GetSelectedItem(); // Function AkAudio.AkWwiseTree.GetSelectedItem(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x162CE70>
+	struct FAkWwiseObjectDetails GetSelectedItem(); // Function AkAudio.AkWwiseTree.GetSelectedItem(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x162CE70>
 	struct FString GetSearchText(); // Function AkAudio.AkWwiseTree.GetSearchText(Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x162CDF0>
 };
 
@@ -1123,10 +1123,10 @@ class UAkXboxOneInitializationSettings : public Object {
 
 public:
 
-	struct Unknown CommonSettings; // 0x28 (96)
-	struct Unknown ApuHeapSettings; // 0x88 (8)
-	struct Unknown CommunicationSettings; // 0x90 (40)
-	struct Unknown AdvancedSettings; // 0xB8 (60)
+	struct FAkCommonInitializationSettings CommonSettings; // 0x28 (96)
+	struct FAkXboxOneApuHeapInitializationSettings ApuHeapSettings; // 0x88 (8)
+	struct FAkCommunicationSettingsWithSystemInitialization CommunicationSettings; // 0x90 (40)
+	struct FAkXboxOneAdvancedInitializationSettings AdvancedSettings; // 0xB8 (60)
 
 	void MigrateMultiCoreRendering(char NewValue); // Function AkAudio.AkXboxOneInitializationSettings.MigrateMultiCoreRendering(Final|Native|Public) // <Game_BE.exe+0x160FEE0>
 };
@@ -1136,7 +1136,7 @@ class UInterpTrackAkAudioEvent : public UInterpTrackVectorBase {
 
 public:
 
-	struct TArray<Unknown> Events; // 0x90 (16)
+	struct TArray<struct FAkAudioEventTrackKey> Events; // 0x90 (16)
 	char bContinueEventOnMatineeEnd : 0; // 0xA0 (1)
 };
 
@@ -1171,7 +1171,7 @@ class UMovieSceneAkAudioEventSection : public UMovieSceneSection {
 
 public:
 
-	struct Unknown Event; // 0x120 (8)
+	struct UAkAudioEvent Event; // 0x120 (8)
 	char RetriggerEvent : 0; // 0x128 (1)
 	int32_t ScrubTailLengthMs; // 0x12C (4)
 	char StopAtSectionEnd : 0; // 0x130 (1)
@@ -1185,7 +1185,7 @@ class UMovieSceneAkTrack : public UMovieSceneTrack {
 
 public:
 
-	struct TArray<Unknown> Sections; // 0x58 (16)
+	struct TArray<struct UMovieSceneSection> Sections; // 0x58 (16)
 	char bIsAMasterTrack : 0; // 0x68 (1)
 };
 
@@ -1194,11 +1194,11 @@ class UMovieSceneAkAudioRTPCSection : public UMovieSceneSection {
 
 public:
 
-	struct Unknown RTPC; // 0xE0 (8)
+	struct UAkRtpc RTPC; // 0xE0 (8)
 	struct FString Name; // 0xE8 (16)
-	struct Unknown FloatCurve; // 0xF8 (128)
-	struct Unknown FloatChannelSerializationHelper; // 0x178 (48)
-	struct Unknown RTPCChannel; // 0x1A8 (160)
+	struct FRichCurve FloatCurve; // 0xF8 (128)
+	struct FMovieSceneFloatChannelSerializationHelper FloatChannelSerializationHelper; // 0x178 (48)
+	struct FMovieSceneFloatChannel RTPCChannel; // 0x1A8 (160)
 };
 
 // Class AkAudio.PostEventAsync
@@ -1208,7 +1208,7 @@ public:
 
 	struct FMulticastInlineDelegate Completed; // 0x30 (16)
 
-	struct Unknown PostEventAsync(struct Unknown WorldContextObject, struct Unknown AkEvent, struct Unknown Actor, int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<Unknown>& ExternalSources, char bStopWhenAttachedToDestroyed); // Function AkAudio.PostEventAsync.PostEventAsync(Final|BlueprintCosmetic|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x162D140>
+	struct UPostEventAsync PostEventAsync(struct Object WorldContextObject, struct UAkAudioEvent AkEvent, struct UActor Actor, int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<struct FAkExternalSourceInfo>& ExternalSources, char bStopWhenAttachedToDestroyed); // Function AkAudio.PostEventAsync.PostEventAsync(Final|BlueprintCosmetic|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x162D140>
 	void PollPostEventFuture(); // Function AkAudio.PostEventAsync.PollPostEventFuture(Final|Native|Private) // <Game_BE.exe+0x162D120>
 };
 
@@ -1219,16 +1219,16 @@ public:
 
 	struct FMulticastInlineDelegate Completed; // 0x30 (16)
 
-	struct Unknown PostEventAtLocationAsync(struct Unknown WorldContextObject, struct Unknown AkEvent, struct Unknown Location, struct Unknown Orientation); // Function AkAudio.PostEventAtLocationAsync.PostEventAtLocationAsync(Final|BlueprintCosmetic|Native|Static|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x162E230>
+	struct UPostEventAtLocationAsync PostEventAtLocationAsync(struct Object WorldContextObject, struct UAkAudioEvent AkEvent, struct FVector Location, struct FRotator Orientation); // Function AkAudio.PostEventAtLocationAsync.PostEventAtLocationAsync(Final|BlueprintCosmetic|Native|Static|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x162E230>
 	void PollPostEventFuture(); // Function AkAudio.PostEventAtLocationAsync.PollPostEventFuture(Final|Native|Private) // <Game_BE.exe+0x162E210>
 };
 
 // ScriptStruct AkAudio.AkExternalSourceInfo
 struct FAkExternalSourceInfo {
 	struct FString ExternalSrcName; // 0x0 (16)
-	enum class Unknow CodecID; // 0x10 (1)
+	enum class AkCodecId CodecID; // 0x10 (1)
 	struct FString Filename; // 0x18 (16)
-	struct Unknown ExternalSourceAsset; // 0x28 (8)
+	struct UAkExternalMediaAsset ExternalSourceAsset; // 0x28 (8)
 	char IsStreamed : 0; // 0x30 (1)
 };
 
@@ -1250,7 +1250,7 @@ struct FAkAdvancedInitializationSettings {
 	uint32_t MaximumHardwareTimeoutMs; // 0x20 (4)
 	char DebugOutOfRangeCheckEnabled : 0; // 0x24 (1)
 	float DebugOutOfRangeLimit; // 0x28 (4)
-	struct Unknown SpatialAudioSettings; // 0x2C (8)
+	struct FAkAdvancedSpatialAudioSettings SpatialAudioSettings; // 0x2C (8)
 };
 
 // ScriptStruct AkAudio.AkAdvancedSpatialAudioSettings
@@ -1272,9 +1272,9 @@ struct FAkAndroidAdvancedInitializationSettings : FAkAdvancedInitializationSetti
 
 // ScriptStruct AkAudio.AkAudioSession
 struct FAkAudioSession {
-	enum class Unknow AudioSessionCategory; // 0x0 (4)
+	enum class EAkAudioSessionCategory AudioSessionCategory; // 0x0 (4)
 	uint32_t AudioSessionCategoryOptions; // 0x4 (4)
-	enum class Unknow AudioSessionMode; // 0x8 (4)
+	enum class EAkAudioSessionMode AudioSessionMode; // 0x8 (4)
 };
 
 // ScriptStruct AkAudio.AkSegmentInfo
@@ -1292,7 +1292,7 @@ struct FAkSegmentInfo {
 
 // ScriptStruct AkAudio.AkMidiEventBase
 struct FAkMidiEventBase {
-	enum class Unknow Type; // 0x0 (1)
+	enum class EAkMidiEventType Type; // 0x0 (1)
 	char Chan; // 0x1 (1)
 };
 
@@ -1321,7 +1321,7 @@ struct FAkMidiPitchBend : FAkMidiEventBase {
 
 // ScriptStruct AkAudio.AkMidiCc
 struct FAkMidiCc : FAkMidiEventBase {
-	enum class Unknow Cc; // 0x2 (1)
+	enum class EAkMidiCcValues Cc; // 0x2 (1)
 	char Value; // 0x3 (1)
 };
 
@@ -1344,18 +1344,18 @@ struct FAkChannelMask {
 
 // ScriptStruct AkAudio.AkGeometrySurfaceOverride
 struct FAkGeometrySurfaceOverride {
-	struct Unknown AcousticTexture; // 0x0 (8)
+	struct UAkAcousticTexture AcousticTexture; // 0x0 (8)
 	char bEnableOcclusionOverride : 0; // 0x8 (1)
 	float OcclusionValue; // 0xC (4)
 };
 
 // ScriptStruct AkAudio.AkGeometryData
 struct FAkGeometryData {
-	struct TArray<Unknown> Vertices; // 0x0 (16)
-	struct TArray<Unknown> Surfaces; // 0x10 (16)
-	struct TArray<Unknown> Triangles; // 0x20 (16)
-	struct TArray<Unknown> ToOverrideAcousticTexture; // 0x30 (16)
-	struct TArray<Unknown> ToOverrideOcclusion; // 0x40 (16)
+	struct TArray<struct FVector> Vertices; // 0x0 (16)
+	struct TArray<struct FAkAcousticSurface> Surfaces; // 0x10 (16)
+	struct TArray<struct FAkTriangle> Triangles; // 0x20 (16)
+	struct TArray<struct UPhysicalMaterial> ToOverrideAcousticTexture; // 0x30 (16)
+	struct TArray<struct UPhysicalMaterial> ToOverrideOcclusion; // 0x40 (16)
 };
 
 // ScriptStruct AkAudio.AkTriangle
@@ -1393,10 +1393,10 @@ struct FAkCommonInitializationSettings {
 	uint32_t MaximumNumberOfPositioningPaths; // 0x4 (4)
 	uint32_t CommandQueueSize; // 0x8 (4)
 	uint32_t SamplesPerFrame; // 0xC (4)
-	struct Unknown MainOutputSettings; // 0x10 (40)
+	struct FAkMainOutputSettings MainOutputSettings; // 0x10 (40)
 	float StreamingLookAheadRatio; // 0x38 (4)
 	uint16_t NumberOfRefillsInVoice; // 0x3C (2)
-	struct Unknown SpatialAudioSettings; // 0x40 (32)
+	struct FAkSpatialAudioSettings SpatialAudioSettings; // 0x40 (32)
 };
 
 // ScriptStruct AkAudio.AkSpatialAudioSettings
@@ -1416,8 +1416,8 @@ struct FAkSpatialAudioSettings {
 struct FAkMainOutputSettings {
 	struct FString AudioDeviceShareset; // 0x0 (16)
 	uint32_t DeviceID; // 0x10 (4)
-	enum class Unknow PanningRule; // 0x14 (4)
-	enum class Unknow ChannelConfigType; // 0x18 (4)
+	enum class EAkPanningRule PanningRule; // 0x14 (4)
+	enum class EAkChannelConfigType ChannelConfigType; // 0x18 (4)
 	uint32_t ChannelMask; // 0x1C (4)
 	uint32_t NumberOfChannels; // 0x20 (4)
 };
@@ -1438,7 +1438,7 @@ struct FAkCommunicationSettings {
 
 // ScriptStruct AkAudio.AkCommunicationSettingsWithCommSelection
 struct FAkCommunicationSettingsWithCommSelection : FAkCommunicationSettings {
-	enum class Unknow CommunicationSystem; // 0x20 (4)
+	enum class EAkCommSystem CommunicationSystem; // 0x20 (4)
 };
 
 // ScriptStruct AkAudio.AkCommunicationSettingsWithSystemInitialization
@@ -1464,13 +1464,13 @@ struct FAkPS4AdvancedInitializationSettings : FAkAdvancedInitializationSettingsW
 
 // ScriptStruct AkAudio.AkGeometrySurfacePropertiesToMap
 struct FAkGeometrySurfacePropertiesToMap {
-	struct Unknown AcousticTexture; // 0x0 (40)
+	struct TSoftObjectPtr<UAkAcousticTexture> AcousticTexture; // 0x0 (40)
 	float OcclusionValue; // 0x28 (4)
 };
 
 // ScriptStruct AkAudio.AkWwiseItemToControl
 struct FAkWwiseItemToControl {
-	struct Unknown ItemPicked; // 0x0 (48)
+	struct FAkWwiseObjectDetails ItemPicked; // 0x0 (48)
 	struct FString ItemPath; // 0x30 (16)
 };
 
@@ -1483,7 +1483,7 @@ struct FAkWwiseObjectDetails {
 
 // ScriptStruct AkAudio.AkPoly
 struct FAkPoly {
-	struct Unknown Texture; // 0x0 (8)
+	struct UAkAcousticTexture Texture; // 0x0 (8)
 	float Occlusion; // 0x8 (4)
 	char EnableSurface : 0; // 0xC (1)
 };
@@ -1520,26 +1520,26 @@ struct FAkXboxOneAdvancedInitializationSettings : FAkAdvancedInitializationSetti
 // ScriptStruct AkAudio.AkAudioEventTrackKey
 struct FAkAudioEventTrackKey {
 	float Time; // 0x0 (4)
-	struct Unknown AkAudioEvent; // 0x8 (8)
+	struct UAkAudioEvent AkAudioEvent; // 0x8 (8)
 	struct FString EventName; // 0x10 (16)
 };
 
 // ScriptStruct AkAudio.MovieSceneAkAudioEventTemplate
 struct FMovieSceneAkAudioEventTemplate : FMovieSceneEvalTemplate {
-	struct Unknown Section; // 0x20 (8)
+	struct UMovieSceneAkAudioEventSection Section; // 0x20 (8)
 };
 
 // ScriptStruct AkAudio.MovieSceneAkAudioRTPCTemplate
 struct FMovieSceneAkAudioRTPCTemplate : FMovieSceneEvalTemplate {
-	struct Unknown Section; // 0x20 (8)
+	struct UMovieSceneAkAudioRTPCSection Section; // 0x20 (8)
 };
 
 // ScriptStruct AkAudio.MovieSceneFloatChannelSerializationHelper
 struct FMovieSceneFloatChannelSerializationHelper {
 	char PreInfinityExtrap; // 0x0 (1)
 	char PostInfinityExtrap; // 0x1 (1)
-	struct TArray<Unknown> Times; // 0x8 (16)
-	struct TArray<Unknown> Values; // 0x18 (16)
+	struct TArray<int32_t> Times; // 0x8 (16)
+	struct TArray<struct FMovieSceneFloatValueSerializationHelper> Values; // 0x18 (16)
 	float DefaultValue; // 0x28 (4)
 	char bHasDefaultValue : 0; // 0x2C (1)
 };
@@ -1549,7 +1549,7 @@ struct FMovieSceneFloatValueSerializationHelper {
 	float Value; // 0x0 (4)
 	char InterpMode; // 0x4 (1)
 	char TangentMode; // 0x5 (1)
-	struct Unknown Tangent; // 0x8 (20)
+	struct FMovieSceneTangentDataSerializationHelper Tangent; // 0x8 (20)
 };
 
 // ScriptStruct AkAudio.MovieSceneTangentDataSerializationHelper
@@ -1576,12 +1576,12 @@ inline void AAkAcousticPortal::OpenPortal() {
 }
 
 // Function AkAudio.AkAcousticPortal.GetCurrentState
-inline enum class Unknow AAkAcousticPortal::GetCurrentState() {
+inline enum class AkAcousticPortalState AAkAcousticPortal::GetCurrentState() {
 	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkAcousticPortal.GetCurrentState");
 
 	struct GetCurrentState_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class AkAcousticPortalState ReturnValue;
 
 	}; GetCurrentState_Params Params;
 
@@ -1737,15 +1737,15 @@ inline void UAkGameObject::Stop() {
 }
 
 // Function AkAudio.AkGameObject.PostAssociatedAkEventAsync
-inline void UAkGameObject::PostAssociatedAkEventAsync(struct Unknown WorldContextObject, int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<Unknown>& ExternalSources, struct Unknown LatentInfo, int32_t& PlayingID) {
+inline void UAkGameObject::PostAssociatedAkEventAsync(struct Object WorldContextObject, int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<struct FAkExternalSourceInfo>& ExternalSources, struct FLatentActionInfo LatentInfo, int32_t& PlayingID) {
 	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkGameObject.PostAssociatedAkEventAsync");
 
 	struct PostAssociatedAkEventAsync_Params {
-		struct Unknown WorldContextObject;
+		struct Object WorldContextObject;
 		int32_t CallbackMask;
 		struct FDelegate& PostEventCallback;
-		struct TArray<Unknown>& ExternalSources;
-		struct Unknown LatentInfo;
+		struct TArray<struct FAkExternalSourceInfo>& ExternalSources;
+		struct FLatentActionInfo LatentInfo;
 		int32_t& PlayingID;
 	}; PostAssociatedAkEventAsync_Params Params;
 
@@ -1764,13 +1764,13 @@ inline void UAkGameObject::PostAssociatedAkEventAsync(struct Unknown WorldContex
 }
 
 // Function AkAudio.AkGameObject.PostAssociatedAkEvent
-inline int32_t UAkGameObject::PostAssociatedAkEvent(int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<Unknown>& ExternalSources) {
+inline int32_t UAkGameObject::PostAssociatedAkEvent(int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<struct FAkExternalSourceInfo>& ExternalSources) {
 	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkGameObject.PostAssociatedAkEvent");
 
 	struct PostAssociatedAkEvent_Params {
 		int32_t CallbackMask;
 		struct FDelegate& PostEventCallback;
-		struct TArray<Unknown>& ExternalSources;
+		struct TArray<struct FAkExternalSourceInfo>& ExternalSources;
 		int32_t ReturnValue;
 
 	}; PostAssociatedAkEvent_Params Params;
@@ -1789,17 +1789,17 @@ inline int32_t UAkGameObject::PostAssociatedAkEvent(int32_t CallbackMask, struct
 }
 
 // Function AkAudio.AkGameObject.PostAkEventAsync
-inline void UAkGameObject::PostAkEventAsync(struct Unknown WorldContextObject, struct Unknown AkEvent, int32_t& PlayingID, int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<Unknown>& ExternalSources, struct Unknown LatentInfo) {
+inline void UAkGameObject::PostAkEventAsync(struct Object WorldContextObject, struct UAkAudioEvent AkEvent, int32_t& PlayingID, int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<struct FAkExternalSourceInfo>& ExternalSources, struct FLatentActionInfo LatentInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkGameObject.PostAkEventAsync");
 
 	struct PostAkEventAsync_Params {
-		struct Unknown WorldContextObject;
-		struct Unknown AkEvent;
+		struct Object WorldContextObject;
+		struct UAkAudioEvent AkEvent;
 		int32_t& PlayingID;
 		int32_t CallbackMask;
 		struct FDelegate& PostEventCallback;
-		struct TArray<Unknown>& ExternalSources;
-		struct Unknown LatentInfo;
+		struct TArray<struct FAkExternalSourceInfo>& ExternalSources;
+		struct FLatentActionInfo LatentInfo;
 	}; PostAkEventAsync_Params Params;
 
 	Params.WorldContextObject = WorldContextObject;
@@ -1818,14 +1818,14 @@ inline void UAkGameObject::PostAkEventAsync(struct Unknown WorldContextObject, s
 }
 
 // Function AkAudio.AkGameObject.PostAkEvent
-inline int32_t UAkGameObject::PostAkEvent(struct Unknown AkEvent, int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<Unknown>& ExternalSources, struct FString in_EventName) {
+inline int32_t UAkGameObject::PostAkEvent(struct UAkAudioEvent AkEvent, int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<struct FAkExternalSourceInfo>& ExternalSources, struct FString in_EventName) {
 	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkGameObject.PostAkEvent");
 
 	struct PostAkEvent_Params {
-		struct Unknown AkEvent;
+		struct UAkAudioEvent AkEvent;
 		int32_t CallbackMask;
 		struct FDelegate& PostEventCallback;
-		struct TArray<Unknown>& ExternalSources;
+		struct TArray<struct FAkExternalSourceInfo>& ExternalSources;
 		struct FString in_EventName;
 		int32_t ReturnValue;
 
@@ -1862,11 +1862,11 @@ inline void UAkComponent::UseReverbVolumes(char inUseReverbVolumes) {
 }
 
 // Function AkAudio.AkComponent.UseEarlyReflections
-inline void UAkComponent::UseEarlyReflections(struct Unknown AuxBus, int32_t Order, float BusSendGain, float MaxPathLength, char SpotReflectors, struct FString AuxBusName) {
+inline void UAkComponent::UseEarlyReflections(struct UAkAuxBus AuxBus, int32_t Order, float BusSendGain, float MaxPathLength, char SpotReflectors, struct FString AuxBusName) {
 	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.UseEarlyReflections");
 
 	struct UseEarlyReflections_Params {
-		struct Unknown AuxBus;
+		struct UAkAuxBus AuxBus;
 		int32_t Order;
 		float BusSendGain;
 		float MaxPathLength;
@@ -1887,11 +1887,11 @@ inline void UAkComponent::UseEarlyReflections(struct Unknown AuxBus, int32_t Ord
 }
 
 // Function AkAudio.AkComponent.SetSwitch
-inline void UAkComponent::SetSwitch(struct Unknown SwitchValue, struct FString SwitchGroup, struct FString SwitchState) {
+inline void UAkComponent::SetSwitch(struct UAkSwitchValue SwitchValue, struct FString SwitchGroup, struct FString SwitchState) {
 	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.SetSwitch");
 
 	struct SetSwitch_Params {
-		struct Unknown SwitchValue;
+		struct UAkSwitchValue SwitchValue;
 		struct FString SwitchGroup;
 		struct FString SwitchState;
 	}; SetSwitch_Params Params;
@@ -1921,11 +1921,11 @@ inline void UAkComponent::SetStopWhenOwnerDestroyed(char bStopWhenOwnerDestroyed
 }
 
 // Function AkAudio.AkComponent.SetRTPCValue
-inline void UAkComponent::SetRTPCValue(struct Unknown RTPCValue, float Value, int32_t InterpolationTimeMs, struct FString RTPC) {
+inline void UAkComponent::SetRTPCValue(struct UAkRtpc RTPCValue, float Value, int32_t InterpolationTimeMs, struct FString RTPC) {
 	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.SetRTPCValue");
 
 	struct SetRTPCValue_Params {
-		struct Unknown RTPCValue;
+		struct UAkRtpc RTPCValue;
 		float Value;
 		int32_t InterpolationTimeMs;
 		struct FString RTPC;
@@ -1957,11 +1957,11 @@ inline void UAkComponent::SetOutputBusVolume(float BusVolume) {
 }
 
 // Function AkAudio.AkComponent.SetListeners
-inline void UAkComponent::SetListeners(struct TArray<Unknown>& Listeners) {
+inline void UAkComponent::SetListeners(struct TArray<struct UAkComponent>& Listeners) {
 	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.SetListeners");
 
 	struct SetListeners_Params {
-		struct TArray<Unknown>& Listeners;
+		struct TArray<struct UAkComponent>& Listeners;
 	}; SetListeners_Params Params;
 
 
@@ -2019,11 +2019,11 @@ inline void UAkComponent::SetAttenuationScalingFactor(float Value) {
 }
 
 // Function AkAudio.AkComponent.PostTrigger
-inline void UAkComponent::PostTrigger(struct Unknown TriggerValue, struct FString Trigger) {
+inline void UAkComponent::PostTrigger(struct UAkTrigger TriggerValue, struct FString Trigger) {
 	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.PostTrigger");
 
 	struct PostTrigger_Params {
-		struct Unknown TriggerValue;
+		struct UAkTrigger TriggerValue;
 		struct FString Trigger;
 	}; PostTrigger_Params Params;
 
@@ -2036,13 +2036,13 @@ inline void UAkComponent::PostTrigger(struct Unknown TriggerValue, struct FStrin
 }
 
 // Function AkAudio.AkComponent.PostAssociatedAkEventAndWaitForEndAsync
-inline void UAkComponent::PostAssociatedAkEventAndWaitForEndAsync(int32_t& PlayingID, struct TArray<Unknown>& ExternalSources, struct Unknown LatentInfo) {
+inline void UAkComponent::PostAssociatedAkEventAndWaitForEndAsync(int32_t& PlayingID, struct TArray<struct FAkExternalSourceInfo>& ExternalSources, struct FLatentActionInfo LatentInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.PostAssociatedAkEventAndWaitForEndAsync");
 
 	struct PostAssociatedAkEventAndWaitForEndAsync_Params {
 		int32_t& PlayingID;
-		struct TArray<Unknown>& ExternalSources;
-		struct Unknown LatentInfo;
+		struct TArray<struct FAkExternalSourceInfo>& ExternalSources;
+		struct FLatentActionInfo LatentInfo;
 	}; PostAssociatedAkEventAndWaitForEndAsync_Params Params;
 
 	Params.LatentInfo = LatentInfo;
@@ -2057,12 +2057,12 @@ inline void UAkComponent::PostAssociatedAkEventAndWaitForEndAsync(int32_t& Playi
 }
 
 // Function AkAudio.AkComponent.PostAssociatedAkEventAndWaitForEnd
-inline int32_t UAkComponent::PostAssociatedAkEventAndWaitForEnd(struct TArray<Unknown>& ExternalSources, struct Unknown LatentInfo) {
+inline int32_t UAkComponent::PostAssociatedAkEventAndWaitForEnd(struct TArray<struct FAkExternalSourceInfo>& ExternalSources, struct FLatentActionInfo LatentInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.PostAssociatedAkEventAndWaitForEnd");
 
 	struct PostAssociatedAkEventAndWaitForEnd_Params {
-		struct TArray<Unknown>& ExternalSources;
-		struct Unknown LatentInfo;
+		struct TArray<struct FAkExternalSourceInfo>& ExternalSources;
+		struct FLatentActionInfo LatentInfo;
 		int32_t ReturnValue;
 
 	}; PostAssociatedAkEventAndWaitForEnd_Params Params;
@@ -2099,14 +2099,14 @@ inline int32_t UAkComponent::PostAkEventByName(struct FString in_EventName) {
 }
 
 // Function AkAudio.AkComponent.PostAkEventAndWaitForEndAsync
-inline void UAkComponent::PostAkEventAndWaitForEndAsync(struct Unknown AkEvent, int32_t& PlayingID, struct TArray<Unknown>& ExternalSources, struct Unknown LatentInfo) {
+inline void UAkComponent::PostAkEventAndWaitForEndAsync(struct UAkAudioEvent AkEvent, int32_t& PlayingID, struct TArray<struct FAkExternalSourceInfo>& ExternalSources, struct FLatentActionInfo LatentInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.PostAkEventAndWaitForEndAsync");
 
 	struct PostAkEventAndWaitForEndAsync_Params {
-		struct Unknown AkEvent;
+		struct UAkAudioEvent AkEvent;
 		int32_t& PlayingID;
-		struct TArray<Unknown>& ExternalSources;
-		struct Unknown LatentInfo;
+		struct TArray<struct FAkExternalSourceInfo>& ExternalSources;
+		struct FLatentActionInfo LatentInfo;
 	}; PostAkEventAndWaitForEndAsync_Params Params;
 
 	Params.AkEvent = AkEvent;
@@ -2122,14 +2122,14 @@ inline void UAkComponent::PostAkEventAndWaitForEndAsync(struct Unknown AkEvent, 
 }
 
 // Function AkAudio.AkComponent.PostAkEventAndWaitForEnd
-inline int32_t UAkComponent::PostAkEventAndWaitForEnd(struct Unknown AkEvent, struct FString in_EventName, struct TArray<Unknown>& ExternalSources, struct Unknown LatentInfo) {
+inline int32_t UAkComponent::PostAkEventAndWaitForEnd(struct UAkAudioEvent AkEvent, struct FString in_EventName, struct TArray<struct FAkExternalSourceInfo>& ExternalSources, struct FLatentActionInfo LatentInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.PostAkEventAndWaitForEnd");
 
 	struct PostAkEventAndWaitForEnd_Params {
-		struct Unknown AkEvent;
+		struct UAkAudioEvent AkEvent;
 		struct FString in_EventName;
-		struct TArray<Unknown>& ExternalSources;
-		struct Unknown LatentInfo;
+		struct TArray<struct FAkExternalSourceInfo>& ExternalSources;
+		struct FLatentActionInfo LatentInfo;
 		int32_t ReturnValue;
 
 	}; PostAkEventAndWaitForEnd_Params Params;
@@ -2149,14 +2149,14 @@ inline int32_t UAkComponent::PostAkEventAndWaitForEnd(struct Unknown AkEvent, st
 }
 
 // Function AkAudio.AkComponent.GetRTPCValue
-inline void UAkComponent::GetRTPCValue(struct Unknown RTPCValue, enum class Unknow InputValueType, float& Value, enum class Unknow& OutputValueType, struct FString RTPC, int32_t PlayingID) {
+inline void UAkComponent::GetRTPCValue(struct UAkRtpc RTPCValue, enum class ERTPCValueType InputValueType, float& Value, enum class ERTPCValueType& OutputValueType, struct FString RTPC, int32_t PlayingID) {
 	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkComponent.GetRTPCValue");
 
 	struct GetRTPCValue_Params {
-		struct Unknown RTPCValue;
-		enum class Unknow InputValueType;
+		struct UAkRtpc RTPCValue;
+		enum class ERTPCValueType InputValueType;
 		float& Value;
-		enum class Unknow& OutputValueType;
+		enum class ERTPCValueType& OutputValueType;
 		struct FString RTPC;
 		int32_t PlayingID;
 	}; GetRTPCValue_Params Params;
@@ -2209,11 +2209,11 @@ inline void UAkCheckBox::SetIsChecked(char InIsChecked) {
 }
 
 // Function AkAudio.AkCheckBox.SetCheckedState
-inline void UAkCheckBox::SetCheckedState(enum class Unknow InCheckedState) {
+inline void UAkCheckBox::SetCheckedState(enum class ECheckBoxState InCheckedState) {
 	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkCheckBox.SetCheckedState");
 
 	struct SetCheckedState_Params {
-		enum class Unknow InCheckedState;
+		enum class ECheckBoxState InCheckedState;
 	}; SetCheckedState_Params Params;
 
 	Params.InCheckedState = InCheckedState;
@@ -2224,11 +2224,11 @@ inline void UAkCheckBox::SetCheckedState(enum class Unknow InCheckedState) {
 }
 
 // Function AkAudio.AkCheckBox.SetAkItemId
-inline void UAkCheckBox::SetAkItemId(struct Unknown& ItemId) {
+inline void UAkCheckBox::SetAkItemId(struct FGuid& ItemId) {
 	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkCheckBox.SetAkItemId");
 
 	struct SetAkItemId_Params {
-		struct Unknown& ItemId;
+		struct FGuid& ItemId;
 	}; SetAkItemId_Params Params;
 
 
@@ -2292,12 +2292,12 @@ inline char UAkCheckBox::IsChecked() {
 }
 
 // Function AkAudio.AkCheckBox.GetCheckedState
-inline enum class Unknow UAkCheckBox::GetCheckedState() {
+inline enum class ECheckBoxState UAkCheckBox::GetCheckedState() {
 	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkCheckBox.GetCheckedState");
 
 	struct GetCheckedState_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class ECheckBoxState ReturnValue;
 
 	}; GetCheckedState_Params Params;
 
@@ -2328,12 +2328,12 @@ inline struct FString UAkCheckBox::GetAkProperty() {
 }
 
 // Function AkAudio.AkCheckBox.GetAkItemId
-inline struct Unknown UAkCheckBox::GetAkItemId() {
+inline struct FGuid UAkCheckBox::GetAkItemId() {
 	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkCheckBox.GetAkItemId");
 
 	struct GetAkItemId_Params {
 		
-		struct Unknown ReturnValue;
+		struct FGuid ReturnValue;
 
 	}; GetAkItemId_Params Params;
 
@@ -2595,11 +2595,11 @@ inline void UAkSlider::SetStepSize(float InValue) {
 }
 
 // Function AkAudio.AkSlider.SetSliderHandleColor
-inline void UAkSlider::SetSliderHandleColor(struct Unknown InValue) {
+inline void UAkSlider::SetSliderHandleColor(struct FLinearColor InValue) {
 	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkSlider.SetSliderHandleColor");
 
 	struct SetSliderHandleColor_Params {
-		struct Unknown InValue;
+		struct FLinearColor InValue;
 	}; SetSliderHandleColor_Params Params;
 
 	Params.InValue = InValue;
@@ -2610,11 +2610,11 @@ inline void UAkSlider::SetSliderHandleColor(struct Unknown InValue) {
 }
 
 // Function AkAudio.AkSlider.SetSliderBarColor
-inline void UAkSlider::SetSliderBarColor(struct Unknown InValue) {
+inline void UAkSlider::SetSliderBarColor(struct FLinearColor InValue) {
 	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkSlider.SetSliderBarColor");
 
 	struct SetSliderBarColor_Params {
-		struct Unknown InValue;
+		struct FLinearColor InValue;
 	}; SetSliderBarColor_Params Params;
 
 	Params.InValue = InValue;
@@ -2670,11 +2670,11 @@ inline void UAkSlider::SetAkSliderItemProperty(struct FString ItemProperty) {
 }
 
 // Function AkAudio.AkSlider.SetAkSliderItemId
-inline void UAkSlider::SetAkSliderItemId(struct Unknown& ItemId) {
+inline void UAkSlider::SetAkSliderItemId(struct FGuid& ItemId) {
 	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkSlider.SetAkSliderItemId");
 
 	struct SetAkSliderItemId_Params {
-		struct Unknown& ItemId;
+		struct FGuid& ItemId;
 	}; SetAkSliderItemId_Params Params;
 
 
@@ -2723,12 +2723,12 @@ inline struct FString UAkSlider::GetAkSliderItemProperty() {
 }
 
 // Function AkAudio.AkSlider.GetAkSliderItemId
-inline struct Unknown UAkSlider::GetAkSliderItemId() {
+inline struct FGuid UAkSlider::GetAkSliderItemId() {
 	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkSlider.GetAkSliderItemId");
 
 	struct GetAkSliderItemId_Params {
 		
-		struct Unknown ReturnValue;
+		struct FGuid ReturnValue;
 
 	}; GetAkSliderItemId_Params Params;
 
@@ -2828,12 +2828,12 @@ inline void UAkWwiseTree::SetSearchText(struct FString newText) {
 }
 
 // Function AkAudio.AkWwiseTree.GetSelectedItem
-inline struct Unknown UAkWwiseTree::GetSelectedItem() {
+inline struct FAkWwiseObjectDetails UAkWwiseTree::GetSelectedItem() {
 	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.AkWwiseTree.GetSelectedItem");
 
 	struct GetSelectedItem_Params {
 		
-		struct Unknown ReturnValue;
+		struct FAkWwiseObjectDetails ReturnValue;
 
 	}; GetSelectedItem_Params Params;
 
@@ -2879,18 +2879,18 @@ inline void UAkXboxOneInitializationSettings::MigrateMultiCoreRendering(char New
 }
 
 // Function AkAudio.PostEventAsync.PostEventAsync
-inline struct Unknown UPostEventAsync::PostEventAsync(struct Unknown WorldContextObject, struct Unknown AkEvent, struct Unknown Actor, int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<Unknown>& ExternalSources, char bStopWhenAttachedToDestroyed) {
+inline struct UPostEventAsync UPostEventAsync::PostEventAsync(struct Object WorldContextObject, struct UAkAudioEvent AkEvent, struct UActor Actor, int32_t CallbackMask, struct FDelegate& PostEventCallback, struct TArray<struct FAkExternalSourceInfo>& ExternalSources, char bStopWhenAttachedToDestroyed) {
 	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.PostEventAsync.PostEventAsync");
 
 	struct PostEventAsync_Params {
-		struct Unknown WorldContextObject;
-		struct Unknown AkEvent;
-		struct Unknown Actor;
+		struct Object WorldContextObject;
+		struct UAkAudioEvent AkEvent;
+		struct UActor Actor;
 		int32_t CallbackMask;
 		struct FDelegate& PostEventCallback;
-		struct TArray<Unknown>& ExternalSources;
+		struct TArray<struct FAkExternalSourceInfo>& ExternalSources;
 		char bStopWhenAttachedToDestroyed;
-		struct Unknown ReturnValue;
+		struct UPostEventAsync ReturnValue;
 
 	}; PostEventAsync_Params Params;
 
@@ -2926,15 +2926,15 @@ inline void UPostEventAsync::PollPostEventFuture() {
 }
 
 // Function AkAudio.PostEventAtLocationAsync.PostEventAtLocationAsync
-inline struct Unknown UPostEventAtLocationAsync::PostEventAtLocationAsync(struct Unknown WorldContextObject, struct Unknown AkEvent, struct Unknown Location, struct Unknown Orientation) {
+inline struct UPostEventAtLocationAsync UPostEventAtLocationAsync::PostEventAtLocationAsync(struct Object WorldContextObject, struct UAkAudioEvent AkEvent, struct FVector Location, struct FRotator Orientation) {
 	static auto fn = UObject::FindObject<UFunction>("Function AkAudio.PostEventAtLocationAsync.PostEventAtLocationAsync");
 
 	struct PostEventAtLocationAsync_Params {
-		struct Unknown WorldContextObject;
-		struct Unknown AkEvent;
-		struct Unknown Location;
-		struct Unknown Orientation;
-		struct Unknown ReturnValue;
+		struct Object WorldContextObject;
+		struct UAkAudioEvent AkEvent;
+		struct FVector Location;
+		struct FRotator Orientation;
+		struct UPostEventAtLocationAsync ReturnValue;
 
 	}; PostEventAtLocationAsync_Params Params;
 

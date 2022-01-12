@@ -3,30 +3,30 @@ class UUW-ScenarioWidget_C : public UBravoHotelScenarioWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Ani_TutorialComplete_FadeOut; // 0x250 (8)
-	struct Unknown Ani_TutorialComplete; // 0x258 (8)
-	struct Unknown Idle; // 0x260 (8)
-	struct Unknown CanvasPanel_1; // 0x268 (8)
-	struct Unknown UW-ScenarioQuest; // 0x270 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UWidgetAnimation Ani_TutorialComplete_FadeOut; // 0x250 (8)
+	struct UWidgetAnimation Ani_TutorialComplete; // 0x258 (8)
+	struct UWidgetAnimation Idle; // 0x260 (8)
+	struct UCanvasPanel CanvasPanel_1; // 0x268 (8)
+	struct UUW-ScenarioQuest_C UW-ScenarioQuest; // 0x270 (8)
 
-	enum class Unknow GetVisibility_1(); // Function UW-ScenarioWidget.UW-ScenarioWidget_C.GetVisibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	enum class ESlateVisibility GetVisibility_1(); // Function UW-ScenarioWidget.UW-ScenarioWidget_C.GetVisibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void Finished_1CB7927F4A56CBA0CBA6E698E86EC64F(); // Function UW-ScenarioWidget.UW-ScenarioWidget_C.Finished_1CB7927F4A56CBA0CBA6E698E86EC64F(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Finished_619E7E41423DCBE2E8D2AC87D77B76F6(); // Function UW-ScenarioWidget.UW-ScenarioWidget_C.Finished_619E7E41423DCBE2E8D2AC87D77B76F6(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnUpdateScenarioQuest(struct Unknown& QuestInfo); // Function UW-ScenarioWidget.UW-ScenarioWidget_C.OnUpdateScenarioQuest(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnStartScenarioQuest(struct Unknown& QuestInfo); // Function UW-ScenarioWidget.UW-ScenarioWidget_C.OnStartScenarioQuest(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnStopScenarioQuest(struct Unknown& QuestInfo); // Function UW-ScenarioWidget.UW-ScenarioWidget_C.OnStopScenarioQuest(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnUpdateScenarioQuest(struct FQuestInfo& QuestInfo); // Function UW-ScenarioWidget.UW-ScenarioWidget_C.OnUpdateScenarioQuest(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnStartScenarioQuest(struct FQuestInfo& QuestInfo); // Function UW-ScenarioWidget.UW-ScenarioWidget_C.OnStartScenarioQuest(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnStopScenarioQuest(struct FQuestInfo& QuestInfo); // Function UW-ScenarioWidget.UW-ScenarioWidget_C.OnStopScenarioQuest(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnEndScenario(); // Function UW-ScenarioWidget.UW-ScenarioWidget_C.OnEndScenario(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-ScenarioWidget(int32_t EntryPoint); // Function UW-ScenarioWidget.UW-ScenarioWidget_C.ExecuteUbergraph_UW-ScenarioWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-ScenarioWidget.UW-ScenarioWidget_C.GetVisibility_1
-inline enum class Unknow UUW-ScenarioWidget_C::GetVisibility_1() {
+inline enum class ESlateVisibility UUW-ScenarioWidget_C::GetVisibility_1() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-ScenarioWidget.UW-ScenarioWidget_C.GetVisibility_1");
 
 	struct GetVisibility_1_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class ESlateVisibility ReturnValue;
 
 	}; GetVisibility_1_Params Params;
 
@@ -67,11 +67,11 @@ inline void UUW-ScenarioWidget_C::Finished_619E7E41423DCBE2E8D2AC87D77B76F6() {
 }
 
 // Function UW-ScenarioWidget.UW-ScenarioWidget_C.OnUpdateScenarioQuest
-inline void UUW-ScenarioWidget_C::OnUpdateScenarioQuest(struct Unknown& QuestInfo) {
+inline void UUW-ScenarioWidget_C::OnUpdateScenarioQuest(struct FQuestInfo& QuestInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-ScenarioWidget.UW-ScenarioWidget_C.OnUpdateScenarioQuest");
 
 	struct OnUpdateScenarioQuest_Params {
-		struct Unknown& QuestInfo;
+		struct FQuestInfo& QuestInfo;
 	}; OnUpdateScenarioQuest_Params Params;
 
 
@@ -84,11 +84,11 @@ inline void UUW-ScenarioWidget_C::OnUpdateScenarioQuest(struct Unknown& QuestInf
 }
 
 // Function UW-ScenarioWidget.UW-ScenarioWidget_C.OnStartScenarioQuest
-inline void UUW-ScenarioWidget_C::OnStartScenarioQuest(struct Unknown& QuestInfo) {
+inline void UUW-ScenarioWidget_C::OnStartScenarioQuest(struct FQuestInfo& QuestInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-ScenarioWidget.UW-ScenarioWidget_C.OnStartScenarioQuest");
 
 	struct OnStartScenarioQuest_Params {
-		struct Unknown& QuestInfo;
+		struct FQuestInfo& QuestInfo;
 	}; OnStartScenarioQuest_Params Params;
 
 
@@ -101,11 +101,11 @@ inline void UUW-ScenarioWidget_C::OnStartScenarioQuest(struct Unknown& QuestInfo
 }
 
 // Function UW-ScenarioWidget.UW-ScenarioWidget_C.OnStopScenarioQuest
-inline void UUW-ScenarioWidget_C::OnStopScenarioQuest(struct Unknown& QuestInfo) {
+inline void UUW-ScenarioWidget_C::OnStopScenarioQuest(struct FQuestInfo& QuestInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-ScenarioWidget.UW-ScenarioWidget_C.OnStopScenarioQuest");
 
 	struct OnStopScenarioQuest_Params {
-		struct Unknown& QuestInfo;
+		struct FQuestInfo& QuestInfo;
 	}; OnStopScenarioQuest_Params Params;
 
 

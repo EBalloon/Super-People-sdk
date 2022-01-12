@@ -3,43 +3,43 @@ class UUW-Inventory_Equipped_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Character_BG_Motion; // 0x250 (8)
-	struct Unknown ArmorSlot; // 0x258 (8)
-	struct Unknown BagSlot; // 0x260 (8)
-	struct Unknown BottomSlot; // 0x268 (8)
-	struct Unknown Character_BG; // 0x270 (8)
-	struct Unknown EyeWearSlot; // 0x278 (8)
-	struct Unknown GhillieSlot; // 0x280 (8)
-	struct Unknown GlovesSlot; // 0x288 (8)
-	struct Unknown HatSlot; // 0x290 (8)
-	struct Unknown HelmetSlot; // 0x298 (8)
-	struct Unknown MaskSlot; // 0x2A0 (8)
-	struct Unknown OuterSlot; // 0x2A8 (8)
-	struct Unknown ShoesSlot; // 0x2B0 (8)
-	struct Unknown TopSlot; // 0x2B8 (8)
-	struct Unknown UW-Inventory_CharacterPreView; // 0x2C0 (8)
-	struct Unknown PlayerController; // 0x2C8 (8)
-	struct TMap<Unknown, Unknown> EquipedSlots; // 0x2D0 (80)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UWidgetAnimation Character_BG_Motion; // 0x250 (8)
+	struct UUW-Inventory_EquippedSlot_C ArmorSlot; // 0x258 (8)
+	struct UUW-Inventory_EquippedSlot_C BagSlot; // 0x260 (8)
+	struct UUW-Inventory_EquippedSlot_C BottomSlot; // 0x268 (8)
+	struct UImage Character_BG; // 0x270 (8)
+	struct UUW-Inventory_EquippedSlot_C EyeWearSlot; // 0x278 (8)
+	struct UUW-Inventory_EquippedSlot_C GhillieSlot; // 0x280 (8)
+	struct UUW-Inventory_EquippedSlot_C GlovesSlot; // 0x288 (8)
+	struct UUW-Inventory_EquippedSlot_C HatSlot; // 0x290 (8)
+	struct UUW-Inventory_EquippedSlot_C HelmetSlot; // 0x298 (8)
+	struct UUW-Inventory_EquippedSlot_C MaskSlot; // 0x2A0 (8)
+	struct UUW-Inventory_EquippedSlot_C OuterSlot; // 0x2A8 (8)
+	struct UUW-Inventory_EquippedSlot_C ShoesSlot; // 0x2B0 (8)
+	struct UUW-Inventory_EquippedSlot_C TopSlot; // 0x2B8 (8)
+	struct UUW-Inventory_CharacterPreView_C UW-Inventory_CharacterPreView; // 0x2C0 (8)
+	struct ABP-BravoHotel-PlayerController_C PlayerController; // 0x2C8 (8)
+	struct TMap<enum class EWearableItemType, struct UUW-Inventory_EquippedSlot_C> EquipedSlots; // 0x2D0 (80)
 
-	void ShowStatupAnim(struct Unknown& StatParams, enum class Unknow StatType); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.ShowStatupAnim(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowStatupAnim(struct FStatupAnimParameters& StatParams, enum class EStatupAnimType StatType); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.ShowStatupAnim(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void HoverRecipeTree(struct FName ItemKey); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.HoverRecipeTree(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CompleteItems(struct TArray<Unknown>& ItemKeys); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.CompleteItems(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void HoverItems(struct TArray<Unknown>& ItemKeys); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.HoverItems(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetWearItemKey(enum class Unknow ItemSlot, struct FName& ItemKey); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.GetWearItemKey(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	enum class Unknow Get_btn_ArmorTree_Visibility_1(); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.Get_btn_ArmorTree_Visibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	enum class Unknow GetVisibility_1(); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.GetVisibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void CompleteItems(struct TArray<struct FName>& ItemKeys); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.CompleteItems(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void HoverItems(struct TArray<struct FName>& ItemKeys); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.HoverItems(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetWearItemKey(enum class EWearableItemType ItemSlot, struct FName& ItemKey); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.GetWearItemKey(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	enum class ESlateVisibility Get_btn_ArmorTree_Visibility_1(); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.Get_btn_ArmorTree_Visibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	enum class ESlateVisibility GetVisibility_1(); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.GetVisibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void DisableCarriedListHover(); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.DisableCarriedListHover(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	char DropItem(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.DropItem(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetInventoryComponent(char& Result, struct Unknown& InventoryComponentRef); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.GetInventoryComponent(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	char DropItem(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.DropItem(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetInventoryComponent(char& Result, struct UPlayerInventoryComponent& InventoryComponentRef); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.GetInventoryComponent(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Reset(); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.Reset(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void HoverEquipSlotList(enum class Unknow WearableItemType); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.HoverEquipSlotList(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void HoverEquipSlotList(enum class EWearableItemType WearableItemType); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.HoverEquipSlotList(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void HoverResetEquipSlotList(); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.HoverResetEquipSlotList(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	char OnDrop(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.OnDrop(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetEquippedSlot(struct Unknown InventoryWidget, struct Unknown InventoryItemInfo); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.SetEquippedSlot(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	char OnDrop(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.OnDrop(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetEquippedSlot(struct UUW-InventoryWidget_C InventoryWidget, struct FInventoryItemInfo InventoryItemInfo); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.SetEquippedSlot(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnDragEnter(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.OnDragEnter(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnDragLeave(struct Unknown PointerEvent, struct Unknown Operation); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.OnDragLeave(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnDragEnter(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.OnDragEnter(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnDragLeave(struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.OnDragLeave(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__btn_HelmetTree_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.BndEvt__btn_HelmetTree_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__btn_ArmorTree_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.BndEvt__btn_ArmorTree_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__btn_BagTree_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(); // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.BndEvt__btn_BagTree_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -47,12 +47,12 @@ public:
 };
 
 // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.ShowStatupAnim
-inline void UUW-Inventory_Equipped_C::ShowStatupAnim(struct Unknown& StatParams, enum class Unknow StatType) {
+inline void UUW-Inventory_Equipped_C::ShowStatupAnim(struct FStatupAnimParameters& StatParams, enum class EStatupAnimType StatType) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.ShowStatupAnim");
 
 	struct ShowStatupAnim_Params {
-		struct Unknown& StatParams;
-		enum class Unknow StatType;
+		struct FStatupAnimParameters& StatParams;
+		enum class EStatupAnimType StatType;
 	}; ShowStatupAnim_Params Params;
 
 	Params.StatType = StatType;
@@ -81,11 +81,11 @@ inline void UUW-Inventory_Equipped_C::HoverRecipeTree(struct FName ItemKey) {
 }
 
 // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.CompleteItems
-inline void UUW-Inventory_Equipped_C::CompleteItems(struct TArray<Unknown>& ItemKeys) {
+inline void UUW-Inventory_Equipped_C::CompleteItems(struct TArray<struct FName>& ItemKeys) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.CompleteItems");
 
 	struct CompleteItems_Params {
-		struct TArray<Unknown>& ItemKeys;
+		struct TArray<struct FName>& ItemKeys;
 	}; CompleteItems_Params Params;
 
 
@@ -98,11 +98,11 @@ inline void UUW-Inventory_Equipped_C::CompleteItems(struct TArray<Unknown>& Item
 }
 
 // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.HoverItems
-inline void UUW-Inventory_Equipped_C::HoverItems(struct TArray<Unknown>& ItemKeys) {
+inline void UUW-Inventory_Equipped_C::HoverItems(struct TArray<struct FName>& ItemKeys) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.HoverItems");
 
 	struct HoverItems_Params {
-		struct TArray<Unknown>& ItemKeys;
+		struct TArray<struct FName>& ItemKeys;
 	}; HoverItems_Params Params;
 
 
@@ -115,11 +115,11 @@ inline void UUW-Inventory_Equipped_C::HoverItems(struct TArray<Unknown>& ItemKey
 }
 
 // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.GetWearItemKey
-inline void UUW-Inventory_Equipped_C::GetWearItemKey(enum class Unknow ItemSlot, struct FName& ItemKey) {
+inline void UUW-Inventory_Equipped_C::GetWearItemKey(enum class EWearableItemType ItemSlot, struct FName& ItemKey) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.GetWearItemKey");
 
 	struct GetWearItemKey_Params {
-		enum class Unknow ItemSlot;
+		enum class EWearableItemType ItemSlot;
 		struct FName& ItemKey;
 	}; GetWearItemKey_Params Params;
 
@@ -134,12 +134,12 @@ inline void UUW-Inventory_Equipped_C::GetWearItemKey(enum class Unknow ItemSlot,
 }
 
 // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.Get_btn_ArmorTree_Visibility_1
-inline enum class Unknow UUW-Inventory_Equipped_C::Get_btn_ArmorTree_Visibility_1() {
+inline enum class ESlateVisibility UUW-Inventory_Equipped_C::Get_btn_ArmorTree_Visibility_1() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.Get_btn_ArmorTree_Visibility_1");
 
 	struct Get_btn_ArmorTree_Visibility_1_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class ESlateVisibility ReturnValue;
 
 	}; Get_btn_ArmorTree_Visibility_1_Params Params;
 
@@ -152,12 +152,12 @@ inline enum class Unknow UUW-Inventory_Equipped_C::Get_btn_ArmorTree_Visibility_
 }
 
 // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.GetVisibility_1
-inline enum class Unknow UUW-Inventory_Equipped_C::GetVisibility_1() {
+inline enum class ESlateVisibility UUW-Inventory_Equipped_C::GetVisibility_1() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.GetVisibility_1");
 
 	struct GetVisibility_1_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class ESlateVisibility ReturnValue;
 
 	}; GetVisibility_1_Params Params;
 
@@ -184,13 +184,13 @@ inline void UUW-Inventory_Equipped_C::DisableCarriedListHover() {
 }
 
 // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.DropItem
-inline char UUW-Inventory_Equipped_C::DropItem(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation) {
+inline char UUW-Inventory_Equipped_C::DropItem(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.DropItem");
 
 	struct DropItem_Params {
-		struct Unknown MyGeometry;
-		struct Unknown PointerEvent;
-		struct Unknown Operation;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent PointerEvent;
+		struct UDragDropOperation Operation;
 		char ReturnValue;
 
 	}; DropItem_Params Params;
@@ -207,12 +207,12 @@ inline char UUW-Inventory_Equipped_C::DropItem(struct Unknown MyGeometry, struct
 }
 
 // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.GetInventoryComponent
-inline void UUW-Inventory_Equipped_C::GetInventoryComponent(char& Result, struct Unknown& InventoryComponentRef) {
+inline void UUW-Inventory_Equipped_C::GetInventoryComponent(char& Result, struct UPlayerInventoryComponent& InventoryComponentRef) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.GetInventoryComponent");
 
 	struct GetInventoryComponent_Params {
 		char& Result;
-		struct Unknown& InventoryComponentRef;
+		struct UPlayerInventoryComponent& InventoryComponentRef;
 	}; GetInventoryComponent_Params Params;
 
 
@@ -240,11 +240,11 @@ inline void UUW-Inventory_Equipped_C::Reset() {
 }
 
 // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.HoverEquipSlotList
-inline void UUW-Inventory_Equipped_C::HoverEquipSlotList(enum class Unknow WearableItemType) {
+inline void UUW-Inventory_Equipped_C::HoverEquipSlotList(enum class EWearableItemType WearableItemType) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.HoverEquipSlotList");
 
 	struct HoverEquipSlotList_Params {
-		enum class Unknow WearableItemType;
+		enum class EWearableItemType WearableItemType;
 	}; HoverEquipSlotList_Params Params;
 
 	Params.WearableItemType = WearableItemType;
@@ -269,13 +269,13 @@ inline void UUW-Inventory_Equipped_C::HoverResetEquipSlotList() {
 }
 
 // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.OnDrop
-inline char UUW-Inventory_Equipped_C::OnDrop(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation) {
+inline char UUW-Inventory_Equipped_C::OnDrop(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.OnDrop");
 
 	struct OnDrop_Params {
-		struct Unknown MyGeometry;
-		struct Unknown PointerEvent;
-		struct Unknown Operation;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent PointerEvent;
+		struct UDragDropOperation Operation;
 		char ReturnValue;
 
 	}; OnDrop_Params Params;
@@ -292,12 +292,12 @@ inline char UUW-Inventory_Equipped_C::OnDrop(struct Unknown MyGeometry, struct U
 }
 
 // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.SetEquippedSlot
-inline void UUW-Inventory_Equipped_C::SetEquippedSlot(struct Unknown InventoryWidget, struct Unknown InventoryItemInfo) {
+inline void UUW-Inventory_Equipped_C::SetEquippedSlot(struct UUW-InventoryWidget_C InventoryWidget, struct FInventoryItemInfo InventoryItemInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.SetEquippedSlot");
 
 	struct SetEquippedSlot_Params {
-		struct Unknown InventoryWidget;
-		struct Unknown InventoryItemInfo;
+		struct UUW-InventoryWidget_C InventoryWidget;
+		struct FInventoryItemInfo InventoryItemInfo;
 	}; SetEquippedSlot_Params Params;
 
 	Params.InventoryWidget = InventoryWidget;
@@ -323,13 +323,13 @@ inline void UUW-Inventory_Equipped_C::Construct() {
 }
 
 // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.OnDragEnter
-inline void UUW-Inventory_Equipped_C::OnDragEnter(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation) {
+inline void UUW-Inventory_Equipped_C::OnDragEnter(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.OnDragEnter");
 
 	struct OnDragEnter_Params {
-		struct Unknown MyGeometry;
-		struct Unknown PointerEvent;
-		struct Unknown Operation;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent PointerEvent;
+		struct UDragDropOperation Operation;
 	}; OnDragEnter_Params Params;
 
 	Params.MyGeometry = MyGeometry;
@@ -342,12 +342,12 @@ inline void UUW-Inventory_Equipped_C::OnDragEnter(struct Unknown MyGeometry, str
 }
 
 // Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.OnDragLeave
-inline void UUW-Inventory_Equipped_C::OnDragLeave(struct Unknown PointerEvent, struct Unknown Operation) {
+inline void UUW-Inventory_Equipped_C::OnDragLeave(struct FPointerEvent PointerEvent, struct UDragDropOperation Operation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Equipped.UW-Inventory_Equipped_C.OnDragLeave");
 
 	struct OnDragLeave_Params {
-		struct Unknown PointerEvent;
-		struct Unknown Operation;
+		struct FPointerEvent PointerEvent;
+		struct UDragDropOperation Operation;
 	}; OnDragLeave_Params Params;
 
 	Params.PointerEvent = PointerEvent;

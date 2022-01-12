@@ -19,13 +19,13 @@ public:
 // ScriptStruct MagicLeapLightEstimation.MagicLeapLightEstimationColorTemperatureState
 struct FMagicLeapLightEstimationColorTemperatureState {
 	float ColorTemperatureKelvin; // 0x0 (4)
-	struct Unknown AmbientColor; // 0x4 (16)
-	struct Unknown Timestamp; // 0x18 (8)
+	struct FLinearColor AmbientColor; // 0x4 (16)
+	struct FTimespan Timestamp; // 0x18 (8)
 };
 
 // ScriptStruct MagicLeapLightEstimation.MagicLeapLightEstimationAmbientGlobalState
 struct FMagicLeapLightEstimationAmbientGlobalState {
-	struct TArray<Unknown> AmbientIntensityNits; // 0x0 (16)
-	struct Unknown Timestamp; // 0x10 (8)
+	struct TArray<float> AmbientIntensityNits; // 0x0 (16)
+	struct FTimespan Timestamp; // 0x10 (8)
 };
 

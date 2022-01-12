@@ -3,14 +3,14 @@ class UUW-RankPoint_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown HorizontalBox_Next; // 0x250 (8)
-	struct Unknown ProgressBar_Current; // 0x258 (8)
-	struct Unknown ProgressBar_Down; // 0x260 (8)
-	struct Unknown ProgressBar_Up; // 0x268 (8)
-	struct Unknown TextBlock_Current; // 0x270 (8)
-	struct Unknown TextBlock_Max; // 0x278 (8)
-	struct Unknown TextBlock_Next; // 0x280 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UHorizontalBox HorizontalBox_Next; // 0x250 (8)
+	struct UProgressBar ProgressBar_Current; // 0x258 (8)
+	struct UProgressBar ProgressBar_Down; // 0x260 (8)
+	struct UProgressBar ProgressBar_Up; // 0x268 (8)
+	struct UTextBlock TextBlock_Current; // 0x270 (8)
+	struct UTextBlock TextBlock_Max; // 0x278 (8)
+	struct UTextBlock TextBlock_Next; // 0x280 (8)
 	char EnableUpdate : 0; // 0x288 (1)
 	float CurTime; // 0x28C (4)
 	float ShowTime; // 0x290 (4)
@@ -23,7 +23,7 @@ public:
 	struct FMulticastInlineDelegate Dispatcher_ProgressBarDone; // 0x2B0 (16)
 
 	void SetData(float StartPoint, float EndPoint, float Min, float MAX, float ShowTime, char Play); // Function UW-RankPoint.UW-RankPoint_C.SetData(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-RankPoint.UW-RankPoint_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-RankPoint.UW-RankPoint_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-RankPoint(int32_t EntryPoint); // Function UW-RankPoint.UW-RankPoint_C.ExecuteUbergraph_UW-RankPoint(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 	void Dispatcher_ProgressBarDone__DelegateSignature(); // Function UW-RankPoint.UW-RankPoint_C.Dispatcher_ProgressBarDone__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 };
@@ -54,11 +54,11 @@ inline void UUW-RankPoint_C::SetData(float StartPoint, float EndPoint, float Min
 }
 
 // Function UW-RankPoint.UW-RankPoint_C.Tick
-inline void UUW-RankPoint_C::Tick(struct Unknown MyGeometry, float InDeltaTime) {
+inline void UUW-RankPoint_C::Tick(struct FGeometry MyGeometry, float InDeltaTime) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-RankPoint.UW-RankPoint_C.Tick");
 
 	struct Tick_Params {
-		struct Unknown MyGeometry;
+		struct FGeometry MyGeometry;
 		float InDeltaTime;
 	}; Tick_Params Params;
 

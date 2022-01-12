@@ -3,20 +3,20 @@ class UABP-SupplyHelicopter_C : public UAnimInstance {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x270 (8)
-	struct Unknown AnimGraphNode_Root; // 0x278 (48)
-	struct Unknown AnimGraphNode_SequencePlayer; // 0x2A8 (120)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x270 (8)
+	struct FAnimNode_Root AnimGraphNode_Root; // 0x278 (48)
+	struct FAnimNode_SequencePlayer AnimGraphNode_SequencePlayer; // 0x2A8 (120)
 
-	void AnimGraph(struct Unknown& AnimGraph); // Function ABP-SupplyHelicopter.ABP-SupplyHelicopter_C.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AnimGraph(struct FPoseLink& AnimGraph); // Function ABP-SupplyHelicopter.ABP-SupplyHelicopter_C.AnimGraph(HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_ABP-SupplyHelicopter(int32_t EntryPoint); // Function ABP-SupplyHelicopter.ABP-SupplyHelicopter_C.ExecuteUbergraph_ABP-SupplyHelicopter(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
 };
 
 // Function ABP-SupplyHelicopter.ABP-SupplyHelicopter_C.AnimGraph
-inline void UABP-SupplyHelicopter_C::AnimGraph(struct Unknown& AnimGraph) {
+inline void UABP-SupplyHelicopter_C::AnimGraph(struct FPoseLink& AnimGraph) {
 	static auto fn = UObject::FindObject<UFunction>("Function ABP-SupplyHelicopter.ABP-SupplyHelicopter_C.AnimGraph");
 
 	struct AnimGraph_Params {
-		struct Unknown& AnimGraph;
+		struct FPoseLink& AnimGraph;
 	}; AnimGraph_Params Params;
 
 

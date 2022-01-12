@@ -3,10 +3,10 @@ class UUW-ReplayFreeCamSpeedWidget_C : public UUserWidget {
 
 public:
 
-	struct Unknown Image_136; // 0x248 (8)
-	struct Unknown Slider_Speed; // 0x250 (8)
-	struct Unknown T_CamSpeed; // 0x258 (8)
-	struct Unknown Handle_HideFreeCamSpeed; // 0x260 (8)
+	struct UImage Image_136; // 0x248 (8)
+	struct USlider Slider_Speed; // 0x250 (8)
+	struct UTextBlock T_CamSpeed; // 0x258 (8)
+	struct FTimerHandle Handle_HideFreeCamSpeed; // 0x260 (8)
 
 	void HideFreeCamSpeed(); // Function UW-ReplayFreeCamSpeedWidget.UW-ReplayFreeCamSpeedWidget_C.HideFreeCamSpeed(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ShowFreeCamSpeed(); // Function UW-ReplayFreeCamSpeedWidget.UW-ReplayFreeCamSpeedWidget_C.ShowFreeCamSpeed(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>

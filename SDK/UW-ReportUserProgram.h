@@ -3,30 +3,30 @@ class UUW-ReportUserProgram_C : public UBravoHotelReportUserProgramWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x278 (8)
-	struct Unknown btn_Cancel; // 0x280 (8)
-	struct Unknown btn_report; // 0x288 (8)
-	struct Unknown Button_2; // 0x290 (8)
-	struct Unknown Button_3; // 0x298 (8)
-	struct Unknown Button_4; // 0x2A0 (8)
-	struct Unknown Button_5; // 0x2A8 (8)
-	struct Unknown CheckBox_2; // 0x2B0 (8)
-	struct Unknown CheckBox_3; // 0x2B8 (8)
-	struct Unknown CheckBox_4; // 0x2C0 (8)
-	struct Unknown CheckBox_5; // 0x2C8 (8)
-	struct Unknown combobox_button_overlay; // 0x2D0 (8)
-	struct Unknown combobox_string; // 0x2D8 (8)
-	struct Unknown Image; // 0x2E0 (8)
-	struct Unknown Image_2; // 0x2E8 (8)
-	struct Unknown Image_545; // 0x2F0 (8)
-	struct Unknown NormalArrow; // 0x2F8 (8)
-	struct Unknown OpeningArrow; // 0x300 (8)
-	struct Unknown popup-bg; // 0x308 (8)
-	struct Unknown txt_description; // 0x310 (8)
-	struct Unknown txt_nickname; // 0x318 (8)
-	struct Unknown uw-bg; // 0x320 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x278 (8)
+	struct UButton btn_Cancel; // 0x280 (8)
+	struct UButton btn_report; // 0x288 (8)
+	struct UButton Button_2; // 0x290 (8)
+	struct UButton Button_3; // 0x298 (8)
+	struct UButton Button_4; // 0x2A0 (8)
+	struct UButton Button_5; // 0x2A8 (8)
+	struct UCheckBox CheckBox_2; // 0x2B0 (8)
+	struct UCheckBox CheckBox_3; // 0x2B8 (8)
+	struct UCheckBox CheckBox_4; // 0x2C0 (8)
+	struct UCheckBox CheckBox_5; // 0x2C8 (8)
+	struct UOverlay combobox_button_overlay; // 0x2D0 (8)
+	struct UComboBoxString combobox_string; // 0x2D8 (8)
+	struct UImage Image; // 0x2E0 (8)
+	struct UImage Image_2; // 0x2E8 (8)
+	struct UImage Image_545; // 0x2F0 (8)
+	struct UButton NormalArrow; // 0x2F8 (8)
+	struct UButton OpeningArrow; // 0x300 (8)
+	struct UImage popup-bg; // 0x308 (8)
+	struct UTextBlock txt_description; // 0x310 (8)
+	struct UTextBlock txt_nickname; // 0x318 (8)
+	struct UImage uw-bg; // 0x320 (8)
 	struct FText DescriptionText; // 0x328 (24)
-	struct TArray<Unknown> ReportIndexText; // 0x340 (16)
+	struct TArray<struct FText> ReportIndexText; // 0x340 (16)
 	struct FText DefaultComboString; // 0x350 (24)
 	int32_t CurrentSelectIndex; // 0x368 (4)
 	char CheckCloseComboArrow : 0; // 0x36C (1)
@@ -40,7 +40,7 @@ public:
 	void PreConstruct(char IsDesignTime); // Function UW-ReportUserProgram.UW-ReportUserProgram_C.PreConstruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-ReportUserProgram.UW-ReportUserProgram_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__combobox_string_K2Node_ComponentBoundEvent_0_OnSelectionChangedEvent__DelegateSignature(struct FString SelectedItem, char SelectionType); // Function UW-ReportUserProgram.UW-ReportUserProgram_C.BndEvt__combobox_string_K2Node_ComponentBoundEvent_0_OnSelectionChangedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-ReportUserProgram.UW-ReportUserProgram_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-ReportUserProgram.UW-ReportUserProgram_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__combobox_string_K2Node_ComponentBoundEvent_1_OnOpeningEvent__DelegateSignature(); // Function UW-ReportUserProgram.UW-ReportUserProgram_C.BndEvt__combobox_string_K2Node_ComponentBoundEvent_1_OnOpeningEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__Button_1_K2Node_ComponentBoundEvent_6_OnButtonClickedEvent__DelegateSignature(); // Function UW-ReportUserProgram.UW-ReportUserProgram_C.BndEvt__Button_1_K2Node_ComponentBoundEvent_6_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__Button_2_K2Node_ComponentBoundEvent_7_OnButtonClickedEvent__DelegateSignature(); // Function UW-ReportUserProgram.UW-ReportUserProgram_C.BndEvt__Button_2_K2Node_ComponentBoundEvent_7_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -182,11 +182,11 @@ inline void UUW-ReportUserProgram_C::BndEvt__combobox_string_K2Node_ComponentBou
 }
 
 // Function UW-ReportUserProgram.UW-ReportUserProgram_C.Tick
-inline void UUW-ReportUserProgram_C::Tick(struct Unknown MyGeometry, float InDeltaTime) {
+inline void UUW-ReportUserProgram_C::Tick(struct FGeometry MyGeometry, float InDeltaTime) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-ReportUserProgram.UW-ReportUserProgram_C.Tick");
 
 	struct Tick_Params {
-		struct Unknown MyGeometry;
+		struct FGeometry MyGeometry;
 		float InDeltaTime;
 	}; Tick_Params Params;
 

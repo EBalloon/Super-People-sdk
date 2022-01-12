@@ -3,7 +3,7 @@ class UBP-HUDInteractionComponent_C : public UBP-HUDInteractionComponentBase_C {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x140 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x140 (8)
 	char bHasJustClosed_1 : 0; // 0x148 (1)
 	float defaultContrast_1; // 0x14C (4)
 	float defaultMaxBrightness_1; // 0x150 (4)
@@ -16,18 +16,18 @@ public:
 	float FilmToeIntensity_1; // 0x16C (4)
 	char IsInWidget_1 : 0; // 0x170 (1)
 	char bInputModeUI_1 : 0; // 0x171 (1)
-	struct TArray<Unknown> InputActionsToBlock_1; // 0x178 (16)
+	struct TArray<struct FName> InputActionsToBlock_1; // 0x178 (16)
 
 	void CheckAnyAction(char& AnyAction); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.CheckAnyAction(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void CheckAnyCloseUI(char& AnyClosed); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.CheckAnyCloseUI(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	struct Unknown GetSightInfoWidget(); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.GetSightInfoWidget(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetReplayWidget(char WantsToCreateIfNull, struct Unknown& Widget); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.GetReplayWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void GetSpectatorWidget(char WantsToCreateIfNull, struct Unknown& Widget); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.GetSpectatorWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void GetInventoryWidget(char WantsToCreateIfNull, struct Unknown& Widget); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.GetInventoryWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void GetPlayerSpectatorHUD(struct Unknown& RefSpectatorHUD); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.GetPlayerSpectatorHUD(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	struct UUserWidget GetSightInfoWidget(); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.GetSightInfoWidget(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetReplayWidget(char WantsToCreateIfNull, struct UUW-ReplayMainWidget_C& Widget); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.GetReplayWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void GetSpectatorWidget(char WantsToCreateIfNull, struct UUserWidget& Widget); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.GetSpectatorWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void GetInventoryWidget(char WantsToCreateIfNull, struct UUserWidget& Widget); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.GetInventoryWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void GetPlayerSpectatorHUD(struct ABravoHotelPlayerHUD& RefSpectatorHUD); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.GetPlayerSpectatorHUD(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void IsReplay(char& IsReplay); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.IsReplay(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void IsOpenSystemPopup(char& bResult); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.IsOpenSystemPopup(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void GetPlayerMainWidget(char WantsToCreateIfNull, struct Unknown& Widget); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.GetPlayerMainWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void GetPlayerMainWidget(char WantsToCreateIfNull, struct UBravoHotelMainWidget& Widget); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.GetPlayerMainWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void IsMatchEnd(char& State); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.IsMatchEnd(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void InputMiniMap(); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.InputMiniMap(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void InputWorldMap(); // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.InputWorldMap(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -70,12 +70,12 @@ inline void UBP-HUDInteractionComponent_C::CheckAnyCloseUI(char& AnyClosed) {
 }
 
 // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.GetSightInfoWidget
-inline struct Unknown UBP-HUDInteractionComponent_C::GetSightInfoWidget() {
+inline struct UUserWidget UBP-HUDInteractionComponent_C::GetSightInfoWidget() {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.GetSightInfoWidget");
 
 	struct GetSightInfoWidget_Params {
 		
-		struct Unknown ReturnValue;
+		struct UUserWidget ReturnValue;
 
 	}; GetSightInfoWidget_Params Params;
 
@@ -88,12 +88,12 @@ inline struct Unknown UBP-HUDInteractionComponent_C::GetSightInfoWidget() {
 }
 
 // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.GetReplayWidget
-inline void UBP-HUDInteractionComponent_C::GetReplayWidget(char WantsToCreateIfNull, struct Unknown& Widget) {
+inline void UBP-HUDInteractionComponent_C::GetReplayWidget(char WantsToCreateIfNull, struct UUW-ReplayMainWidget_C& Widget) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.GetReplayWidget");
 
 	struct GetReplayWidget_Params {
 		char WantsToCreateIfNull;
-		struct Unknown& Widget;
+		struct UUW-ReplayMainWidget_C& Widget;
 	}; GetReplayWidget_Params Params;
 
 	Params.WantsToCreateIfNull = WantsToCreateIfNull;
@@ -107,12 +107,12 @@ inline void UBP-HUDInteractionComponent_C::GetReplayWidget(char WantsToCreateIfN
 }
 
 // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.GetSpectatorWidget
-inline void UBP-HUDInteractionComponent_C::GetSpectatorWidget(char WantsToCreateIfNull, struct Unknown& Widget) {
+inline void UBP-HUDInteractionComponent_C::GetSpectatorWidget(char WantsToCreateIfNull, struct UUserWidget& Widget) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.GetSpectatorWidget");
 
 	struct GetSpectatorWidget_Params {
 		char WantsToCreateIfNull;
-		struct Unknown& Widget;
+		struct UUserWidget& Widget;
 	}; GetSpectatorWidget_Params Params;
 
 	Params.WantsToCreateIfNull = WantsToCreateIfNull;
@@ -126,12 +126,12 @@ inline void UBP-HUDInteractionComponent_C::GetSpectatorWidget(char WantsToCreate
 }
 
 // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.GetInventoryWidget
-inline void UBP-HUDInteractionComponent_C::GetInventoryWidget(char WantsToCreateIfNull, struct Unknown& Widget) {
+inline void UBP-HUDInteractionComponent_C::GetInventoryWidget(char WantsToCreateIfNull, struct UUserWidget& Widget) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.GetInventoryWidget");
 
 	struct GetInventoryWidget_Params {
 		char WantsToCreateIfNull;
-		struct Unknown& Widget;
+		struct UUserWidget& Widget;
 	}; GetInventoryWidget_Params Params;
 
 	Params.WantsToCreateIfNull = WantsToCreateIfNull;
@@ -145,11 +145,11 @@ inline void UBP-HUDInteractionComponent_C::GetInventoryWidget(char WantsToCreate
 }
 
 // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.GetPlayerSpectatorHUD
-inline void UBP-HUDInteractionComponent_C::GetPlayerSpectatorHUD(struct Unknown& RefSpectatorHUD) {
+inline void UBP-HUDInteractionComponent_C::GetPlayerSpectatorHUD(struct ABravoHotelPlayerHUD& RefSpectatorHUD) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.GetPlayerSpectatorHUD");
 
 	struct GetPlayerSpectatorHUD_Params {
-		struct Unknown& RefSpectatorHUD;
+		struct ABravoHotelPlayerHUD& RefSpectatorHUD;
 	}; GetPlayerSpectatorHUD_Params Params;
 
 
@@ -196,12 +196,12 @@ inline void UBP-HUDInteractionComponent_C::IsOpenSystemPopup(char& bResult) {
 }
 
 // Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.GetPlayerMainWidget
-inline void UBP-HUDInteractionComponent_C::GetPlayerMainWidget(char WantsToCreateIfNull, struct Unknown& Widget) {
+inline void UBP-HUDInteractionComponent_C::GetPlayerMainWidget(char WantsToCreateIfNull, struct UBravoHotelMainWidget& Widget) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-HUDInteractionComponent.BP-HUDInteractionComponent_C.GetPlayerMainWidget");
 
 	struct GetPlayerMainWidget_Params {
 		char WantsToCreateIfNull;
-		struct Unknown& Widget;
+		struct UBravoHotelMainWidget& Widget;
 	}; GetPlayerMainWidget_Params Params;
 
 	Params.WantsToCreateIfNull = WantsToCreateIfNull;

@@ -3,15 +3,15 @@ class ABP-TransportDropBox_C : public ABravoHotelTransportDropBoxActor {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x4A8 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x4A8 (8)
 	float OverWater_CV_OverWater_77012AB948B572A268E63583418444D0; // 0x4B0 (4)
 	char OverWater__Direction_77012AB948B572A268E63583418444D0; // 0x4B4 (1)
-	struct Unknown OverWater; // 0x4B8 (8)
+	struct UTimelineComponent OverWater; // 0x4B8 (8)
 	float HittingWater_CV_OverWater_7E5F9D2E4D0DDDC70F2F67AD035A6212; // 0x4C0 (4)
 	char HittingWater__Direction_7E5F9D2E4D0DDDC70F2F67AD035A6212; // 0x4C4 (1)
-	struct Unknown HittingWater; // 0x4C8 (8)
+	struct UTimelineComponent HittingWater; // 0x4C8 (8)
 	float LandingTimer; // 0x4D0 (4)
-	struct TArray<Unknown> ItemResult; // 0x4D8 (16)
+	struct TArray<struct FSpawnItemResult> ItemResult; // 0x4D8 (16)
 	float ParachuteTimer; // 0x4E8 (4)
 	float LandingDelay; // 0x4EC (4)
 	float ForceLandingDelaySeconds; // 0x4F0 (4)
@@ -25,7 +25,7 @@ public:
 	void NormalHitSound(); // Function BP-TransportDropBox.BP-TransportDropBox_C.NormalHitSound(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void WaterHitSound(); // Function BP-TransportDropBox.BP-TransportDropBox_C.WaterHitSound(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnActivated(); // Function BP-TransportDropBox.BP-TransportDropBox_C.OnActivated(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetLastPosition(struct Unknown Location, struct Unknown Rotation); // Function BP-TransportDropBox.BP-TransportDropBox_C.SetLastPosition(Net|NetMulticast|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetLastPosition(struct FVector Location, struct FRotator Rotation); // Function BP-TransportDropBox.BP-TransportDropBox_C.SetLastPosition(Net|NetMulticast|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Cutoff(); // Function BP-TransportDropBox.BP-TransportDropBox_C.Cutoff(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OpenDropBoxEvent(); // Function BP-TransportDropBox.BP-TransportDropBox_C.OpenDropBoxEvent(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnOverWater(); // Function BP-TransportDropBox.BP-TransportDropBox_C.OnOverWater(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -150,12 +150,12 @@ inline void ABP-TransportDropBox_C::OnActivated() {
 }
 
 // Function BP-TransportDropBox.BP-TransportDropBox_C.SetLastPosition
-inline void ABP-TransportDropBox_C::SetLastPosition(struct Unknown Location, struct Unknown Rotation) {
+inline void ABP-TransportDropBox_C::SetLastPosition(struct FVector Location, struct FRotator Rotation) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-TransportDropBox.BP-TransportDropBox_C.SetLastPosition");
 
 	struct SetLastPosition_Params {
-		struct Unknown Location;
-		struct Unknown Rotation;
+		struct FVector Location;
+		struct FRotator Rotation;
 	}; SetLastPosition_Params Params;
 
 	Params.Location = Location;

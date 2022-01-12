@@ -68,32 +68,32 @@ class USubstanceGraphInstance : public Object {
 public:
 
 	struct FString PackageURL; // 0x38 (16)
-	struct Unknown ParentFactory; // 0x48 (8)
-	struct TMap<Unknown, Unknown> ImageSources; // 0x50 (80)
-	struct Unknown CreatedMaterial; // 0xA0 (8)
-	struct Unknown ConstantCreatedMaterial; // 0xA8 (8)
-	struct Unknown DynamicCreatedMaterial; // 0xB0 (8)
-	struct TMap<Unknown, Unknown> OutputTextureLinkData; // 0xB8 (80)
-	struct TMap<Unknown, Unknown> OutputInstances; // 0x108 (80)
+	struct USubstanceInstanceFactory ParentFactory; // 0x48 (8)
+	struct TMap<uint32_t, struct UTexture2D> ImageSources; // 0x50 (80)
+	struct UMaterial CreatedMaterial; // 0xA0 (8)
+	struct UMaterialInstanceConstant ConstantCreatedMaterial; // 0xA8 (8)
+	struct UMaterialInstanceDynamic DynamicCreatedMaterial; // 0xB0 (8)
+	struct TMap<int32_t, struct FGuid> OutputTextureLinkData; // 0xB8 (80)
+	struct TMap<uint32_t, struct USubstanceOutputData> OutputInstances; // 0x108 (80)
 	char bIsFrozen : 0; // 0x158 (1)
 
 	void SetInputString(struct FString Identifier, struct FString Value); // Function SubstanceCore.SubstanceGraphInstance.SetInputString(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10D8660>
-	void SetInputInt(struct FString Identifier, struct TArray<Unknown>& InputValues); // Function SubstanceCore.SubstanceGraphInstance.SetInputInt(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x10D8500>
-	char SetInputImg(struct FString InputName, struct Unknown Value); // Function SubstanceCore.SubstanceGraphInstance.SetInputImg(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10D8410>
-	void SetInputFloat(struct FString Identifier, struct TArray<Unknown>& InputValues); // Function SubstanceCore.SubstanceGraphInstance.SetInputFloat(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x10D82B0>
-	void SetInputColor(struct FString Identifier, struct Unknown& Color); // Function SubstanceCore.SubstanceGraphInstance.SetInputColor(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x10D8160>
+	void SetInputInt(struct FString Identifier, struct TArray<int32_t>& InputValues); // Function SubstanceCore.SubstanceGraphInstance.SetInputInt(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x10D8500>
+	char SetInputImg(struct FString InputName, struct Object Value); // Function SubstanceCore.SubstanceGraphInstance.SetInputImg(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10D8410>
+	void SetInputFloat(struct FString Identifier, struct TArray<float>& InputValues); // Function SubstanceCore.SubstanceGraphInstance.SetInputFloat(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x10D82B0>
+	void SetInputColor(struct FString Identifier, struct FLinearColor& Color); // Function SubstanceCore.SubstanceGraphInstance.SetInputColor(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x10D8160>
 	void SetInputBool(struct FString Identifier, char Bool); // Function SubstanceCore.SubstanceGraphInstance.SetInputBool(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10D8020>
-	struct Unknown GetIntInputDesc(struct FString Identifier); // Function SubstanceCore.SubstanceGraphInstance.GetIntInputDesc(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10D79D0>
-	struct Unknown GetInstanceDesc(); // Function SubstanceCore.SubstanceGraphInstance.GetInstanceDesc(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10D78A0>
+	struct FSubstanceIntInputDesc GetIntInputDesc(struct FString Identifier); // Function SubstanceCore.SubstanceGraphInstance.GetIntInputDesc(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10D79D0>
+	struct FSubstanceInstanceDesc GetInstanceDesc(); // Function SubstanceCore.SubstanceGraphInstance.GetInstanceDesc(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10D78A0>
 	char GetInputType(struct FString InputName); // Function SubstanceCore.SubstanceGraphInstance.GetInputType(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10D77A0>
 	struct FString GetInputString(struct FString Identifier); // Function SubstanceCore.SubstanceGraphInstance.GetInputString(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10D7660>
-	struct TArray<Unknown> GetInputNames(); // Function SubstanceCore.SubstanceGraphInstance.GetInputNames(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10D7580>
-	struct TArray<Unknown> GetInputInt(struct FString Identifier); // Function SubstanceCore.SubstanceGraphInstance.GetInputInt(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10D7440>
-	struct TArray<Unknown> GetInputFloat(struct FString Identifier); // Function SubstanceCore.SubstanceGraphInstance.GetInputFloat(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10D7300>
-	struct Unknown GetInputColor(struct FString Identifier); // Function SubstanceCore.SubstanceGraphInstance.GetInputColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x10D71F0>
+	struct TArray<struct FString> GetInputNames(); // Function SubstanceCore.SubstanceGraphInstance.GetInputNames(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10D7580>
+	struct TArray<int32_t> GetInputInt(struct FString Identifier); // Function SubstanceCore.SubstanceGraphInstance.GetInputInt(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10D7440>
+	struct TArray<float> GetInputFloat(struct FString Identifier); // Function SubstanceCore.SubstanceGraphInstance.GetInputFloat(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10D7300>
+	struct FLinearColor GetInputColor(struct FString Identifier); // Function SubstanceCore.SubstanceGraphInstance.GetInputColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x10D71F0>
 	char GetInputBool(struct FString Identifier); // Function SubstanceCore.SubstanceGraphInstance.GetInputBool(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10D70F0>
-	struct Unknown GetFloatInputDesc(struct FString Identifier); // Function SubstanceCore.SubstanceGraphInstance.GetFloatInputDesc(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10D6DF0>
-	struct Unknown GetDynamicMaterialInstance(struct FName Name, struct Unknown InParentMaterial); // Function SubstanceCore.SubstanceGraphInstance.GetDynamicMaterialInstance(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10D6C60>
+	struct FSubstanceFloatInputDesc GetFloatInputDesc(struct FString Identifier); // Function SubstanceCore.SubstanceGraphInstance.GetFloatInputDesc(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10D6DF0>
+	struct UMaterialInstanceDynamic GetDynamicMaterialInstance(struct FName Name, struct UMaterial InParentMaterial); // Function SubstanceCore.SubstanceGraphInstance.GetDynamicMaterialInstance(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10D6C60>
 };
 
 // Class SubstanceCore.SubstanceInstanceFactory
@@ -101,7 +101,7 @@ class USubstanceInstanceFactory : public Object {
 
 public:
 
-	struct TArray<Unknown> mGraphInstances; // 0x28 (16)
+	struct TArray<struct USubstanceGraphInstance> mGraphInstances; // 0x28 (16)
 	struct FString RelativeSourceFilePath; // 0x50 (16)
 	struct FString AbsoluteSourceFilePath; // 0x60 (16)
 	struct FString SourceFileTimestamp; // 0x70 (16)
@@ -113,10 +113,10 @@ class USubstanceOutputData : public Object {
 
 public:
 
-	struct Unknown ConnectedObject; // 0x28 (8)
-	struct Unknown ParamInfo; // 0x30 (16)
-	struct Unknown ParentInstance; // 0x40 (8)
-	struct Unknown CacheGuid; // 0x48 (16)
+	struct Object ConnectedObject; // 0x28 (8)
+	struct FMaterialParameterInfo ParamInfo; // 0x30 (16)
+	struct USubstanceGraphInstance ParentInstance; // 0x40 (8)
+	struct FGuid CacheGuid; // 0x48 (16)
 };
 
 // Class SubstanceCore.SubstanceSettings
@@ -131,7 +131,7 @@ public:
 	char SubstanceEngine; // 0x38 (1)
 	char DefaultSubstanceOutputSizeX; // 0x39 (1)
 	char DefaultSubstanceOutputSizeY; // 0x3A (1)
-	struct Unknown DefaultTemplateMaterial; // 0x40 (40)
+	struct TSoftObjectPtr<UMaterialInterface> DefaultTemplateMaterial; // 0x40 (40)
 };
 
 // Class SubstanceCore.SubstanceTexture2D
@@ -139,7 +139,7 @@ class USubstanceTexture2D : public UTexture2DDynamic {
 
 public:
 
-	struct Unknown ParentInstance; // 0x100 (8)
+	struct USubstanceGraphInstance ParentInstance; // 0x100 (8)
 	char AddressX; // 0x108 (1)
 	char AddressY; // 0x109 (1)
 	char bCooked : 0; // 0x10A (1)
@@ -148,7 +148,7 @@ public:
 // ScriptStruct SubstanceCore.SubstanceInstanceDesc
 struct FSubstanceInstanceDesc {
 	struct FString Name; // 0x0 (16)
-	struct TArray<Unknown> Inputs; // 0x10 (16)
+	struct TArray<struct FSubstanceInputDesc> Inputs; // 0x10 (16)
 };
 
 // ScriptStruct SubstanceCore.SubstanceInputDesc
@@ -159,16 +159,16 @@ struct FSubstanceInputDesc {
 
 // ScriptStruct SubstanceCore.SubstanceFloatInputDesc
 struct FSubstanceFloatInputDesc : FSubstanceInputDesc {
-	struct TArray<Unknown> Min; // 0x18 (16)
-	struct TArray<Unknown> MAX; // 0x28 (16)
-	struct TArray<Unknown> Default; // 0x38 (16)
+	struct TArray<float> Min; // 0x18 (16)
+	struct TArray<float> MAX; // 0x28 (16)
+	struct TArray<float> Default; // 0x38 (16)
 };
 
 // ScriptStruct SubstanceCore.SubstanceIntInputDesc
 struct FSubstanceIntInputDesc : FSubstanceInputDesc {
-	struct TArray<Unknown> Min; // 0x18 (16)
-	struct TArray<Unknown> MAX; // 0x28 (16)
-	struct TArray<Unknown> Default; // 0x38 (16)
+	struct TArray<int32_t> Min; // 0x18 (16)
+	struct TArray<int32_t> MAX; // 0x28 (16)
+	struct TArray<int32_t> Default; // 0x38 (16)
 };
 
 // ScriptStruct SubstanceCore.SubstanceConnection
@@ -195,12 +195,12 @@ inline void USubstanceGraphInstance::SetInputString(struct FString Identifier, s
 }
 
 // Function SubstanceCore.SubstanceGraphInstance.SetInputInt
-inline void USubstanceGraphInstance::SetInputInt(struct FString Identifier, struct TArray<Unknown>& InputValues) {
+inline void USubstanceGraphInstance::SetInputInt(struct FString Identifier, struct TArray<int32_t>& InputValues) {
 	static auto fn = UObject::FindObject<UFunction>("Function SubstanceCore.SubstanceGraphInstance.SetInputInt");
 
 	struct SetInputInt_Params {
 		struct FString Identifier;
-		struct TArray<Unknown>& InputValues;
+		struct TArray<int32_t>& InputValues;
 	}; SetInputInt_Params Params;
 
 	Params.Identifier = Identifier;
@@ -214,12 +214,12 @@ inline void USubstanceGraphInstance::SetInputInt(struct FString Identifier, stru
 }
 
 // Function SubstanceCore.SubstanceGraphInstance.SetInputImg
-inline char USubstanceGraphInstance::SetInputImg(struct FString InputName, struct Unknown Value) {
+inline char USubstanceGraphInstance::SetInputImg(struct FString InputName, struct Object Value) {
 	static auto fn = UObject::FindObject<UFunction>("Function SubstanceCore.SubstanceGraphInstance.SetInputImg");
 
 	struct SetInputImg_Params {
 		struct FString InputName;
-		struct Unknown Value;
+		struct Object Value;
 		char ReturnValue;
 
 	}; SetInputImg_Params Params;
@@ -235,12 +235,12 @@ inline char USubstanceGraphInstance::SetInputImg(struct FString InputName, struc
 }
 
 // Function SubstanceCore.SubstanceGraphInstance.SetInputFloat
-inline void USubstanceGraphInstance::SetInputFloat(struct FString Identifier, struct TArray<Unknown>& InputValues) {
+inline void USubstanceGraphInstance::SetInputFloat(struct FString Identifier, struct TArray<float>& InputValues) {
 	static auto fn = UObject::FindObject<UFunction>("Function SubstanceCore.SubstanceGraphInstance.SetInputFloat");
 
 	struct SetInputFloat_Params {
 		struct FString Identifier;
-		struct TArray<Unknown>& InputValues;
+		struct TArray<float>& InputValues;
 	}; SetInputFloat_Params Params;
 
 	Params.Identifier = Identifier;
@@ -254,12 +254,12 @@ inline void USubstanceGraphInstance::SetInputFloat(struct FString Identifier, st
 }
 
 // Function SubstanceCore.SubstanceGraphInstance.SetInputColor
-inline void USubstanceGraphInstance::SetInputColor(struct FString Identifier, struct Unknown& Color) {
+inline void USubstanceGraphInstance::SetInputColor(struct FString Identifier, struct FLinearColor& Color) {
 	static auto fn = UObject::FindObject<UFunction>("Function SubstanceCore.SubstanceGraphInstance.SetInputColor");
 
 	struct SetInputColor_Params {
 		struct FString Identifier;
-		struct Unknown& Color;
+		struct FLinearColor& Color;
 	}; SetInputColor_Params Params;
 
 	Params.Identifier = Identifier;
@@ -290,12 +290,12 @@ inline void USubstanceGraphInstance::SetInputBool(struct FString Identifier, cha
 }
 
 // Function SubstanceCore.SubstanceGraphInstance.GetIntInputDesc
-inline struct Unknown USubstanceGraphInstance::GetIntInputDesc(struct FString Identifier) {
+inline struct FSubstanceIntInputDesc USubstanceGraphInstance::GetIntInputDesc(struct FString Identifier) {
 	static auto fn = UObject::FindObject<UFunction>("Function SubstanceCore.SubstanceGraphInstance.GetIntInputDesc");
 
 	struct GetIntInputDesc_Params {
 		struct FString Identifier;
-		struct Unknown ReturnValue;
+		struct FSubstanceIntInputDesc ReturnValue;
 
 	}; GetIntInputDesc_Params Params;
 
@@ -309,12 +309,12 @@ inline struct Unknown USubstanceGraphInstance::GetIntInputDesc(struct FString Id
 }
 
 // Function SubstanceCore.SubstanceGraphInstance.GetInstanceDesc
-inline struct Unknown USubstanceGraphInstance::GetInstanceDesc() {
+inline struct FSubstanceInstanceDesc USubstanceGraphInstance::GetInstanceDesc() {
 	static auto fn = UObject::FindObject<UFunction>("Function SubstanceCore.SubstanceGraphInstance.GetInstanceDesc");
 
 	struct GetInstanceDesc_Params {
 		
-		struct Unknown ReturnValue;
+		struct FSubstanceInstanceDesc ReturnValue;
 
 	}; GetInstanceDesc_Params Params;
 
@@ -365,12 +365,12 @@ inline struct FString USubstanceGraphInstance::GetInputString(struct FString Ide
 }
 
 // Function SubstanceCore.SubstanceGraphInstance.GetInputNames
-inline struct TArray<Unknown> USubstanceGraphInstance::GetInputNames() {
+inline struct TArray<struct FString> USubstanceGraphInstance::GetInputNames() {
 	static auto fn = UObject::FindObject<UFunction>("Function SubstanceCore.SubstanceGraphInstance.GetInputNames");
 
 	struct GetInputNames_Params {
 		
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<struct FString> ReturnValue;
 
 	}; GetInputNames_Params Params;
 
@@ -383,12 +383,12 @@ inline struct TArray<Unknown> USubstanceGraphInstance::GetInputNames() {
 }
 
 // Function SubstanceCore.SubstanceGraphInstance.GetInputInt
-inline struct TArray<Unknown> USubstanceGraphInstance::GetInputInt(struct FString Identifier) {
+inline struct TArray<int32_t> USubstanceGraphInstance::GetInputInt(struct FString Identifier) {
 	static auto fn = UObject::FindObject<UFunction>("Function SubstanceCore.SubstanceGraphInstance.GetInputInt");
 
 	struct GetInputInt_Params {
 		struct FString Identifier;
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<int32_t> ReturnValue;
 
 	}; GetInputInt_Params Params;
 
@@ -402,12 +402,12 @@ inline struct TArray<Unknown> USubstanceGraphInstance::GetInputInt(struct FStrin
 }
 
 // Function SubstanceCore.SubstanceGraphInstance.GetInputFloat
-inline struct TArray<Unknown> USubstanceGraphInstance::GetInputFloat(struct FString Identifier) {
+inline struct TArray<float> USubstanceGraphInstance::GetInputFloat(struct FString Identifier) {
 	static auto fn = UObject::FindObject<UFunction>("Function SubstanceCore.SubstanceGraphInstance.GetInputFloat");
 
 	struct GetInputFloat_Params {
 		struct FString Identifier;
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<float> ReturnValue;
 
 	}; GetInputFloat_Params Params;
 
@@ -421,12 +421,12 @@ inline struct TArray<Unknown> USubstanceGraphInstance::GetInputFloat(struct FStr
 }
 
 // Function SubstanceCore.SubstanceGraphInstance.GetInputColor
-inline struct Unknown USubstanceGraphInstance::GetInputColor(struct FString Identifier) {
+inline struct FLinearColor USubstanceGraphInstance::GetInputColor(struct FString Identifier) {
 	static auto fn = UObject::FindObject<UFunction>("Function SubstanceCore.SubstanceGraphInstance.GetInputColor");
 
 	struct GetInputColor_Params {
 		struct FString Identifier;
-		struct Unknown ReturnValue;
+		struct FLinearColor ReturnValue;
 
 	}; GetInputColor_Params Params;
 
@@ -459,12 +459,12 @@ inline char USubstanceGraphInstance::GetInputBool(struct FString Identifier) {
 }
 
 // Function SubstanceCore.SubstanceGraphInstance.GetFloatInputDesc
-inline struct Unknown USubstanceGraphInstance::GetFloatInputDesc(struct FString Identifier) {
+inline struct FSubstanceFloatInputDesc USubstanceGraphInstance::GetFloatInputDesc(struct FString Identifier) {
 	static auto fn = UObject::FindObject<UFunction>("Function SubstanceCore.SubstanceGraphInstance.GetFloatInputDesc");
 
 	struct GetFloatInputDesc_Params {
 		struct FString Identifier;
-		struct Unknown ReturnValue;
+		struct FSubstanceFloatInputDesc ReturnValue;
 
 	}; GetFloatInputDesc_Params Params;
 
@@ -478,13 +478,13 @@ inline struct Unknown USubstanceGraphInstance::GetFloatInputDesc(struct FString 
 }
 
 // Function SubstanceCore.SubstanceGraphInstance.GetDynamicMaterialInstance
-inline struct Unknown USubstanceGraphInstance::GetDynamicMaterialInstance(struct FName Name, struct Unknown InParentMaterial) {
+inline struct UMaterialInstanceDynamic USubstanceGraphInstance::GetDynamicMaterialInstance(struct FName Name, struct UMaterial InParentMaterial) {
 	static auto fn = UObject::FindObject<UFunction>("Function SubstanceCore.SubstanceGraphInstance.GetDynamicMaterialInstance");
 
 	struct GetDynamicMaterialInstance_Params {
 		struct FName Name;
-		struct Unknown InParentMaterial;
-		struct Unknown ReturnValue;
+		struct UMaterial InParentMaterial;
+		struct UMaterialInstanceDynamic ReturnValue;
 
 	}; GetDynamicMaterialInstance_Params Params;
 

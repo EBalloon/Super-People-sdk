@@ -10,21 +10,21 @@ public:
 	struct FString BuildVersion; // 0x40 (16)
 	struct FString LaunchExe; // 0x50 (16)
 	struct FString LaunchCommand; // 0x60 (16)
-	struct TSet<Unknown> PrereqIds; // 0x70 (80)
+	struct TSet<struct FString> PrereqIds; // 0x70 (80)
 	struct FString PrereqName; // 0xC0 (16)
 	struct FString PrereqPath; // 0xD0 (16)
 	struct FString PrereqArgs; // 0xE0 (16)
-	struct TArray<Unknown> FileManifestList; // 0xF0 (16)
-	struct TArray<Unknown> ChunkList; // 0x100 (16)
-	struct TArray<Unknown> CustomFields; // 0x110 (16)
+	struct TArray<struct FFileManifestData> FileManifestList; // 0xF0 (16)
+	struct TArray<struct FChunkInfoData> ChunkList; // 0x100 (16)
+	struct TArray<struct FCustomFieldData> CustomFields; // 0x110 (16)
 };
 
 // ScriptStruct BuildPatchServices.FileManifestData
 struct FFileManifestData {
 	struct FString Filename; // 0x0 (16)
-	struct Unknown FileHash; // 0x10 (20)
-	struct TArray<Unknown> FileChunkParts; // 0x28 (16)
-	struct TArray<Unknown> InstallTags; // 0x38 (16)
+	struct FSHAHashData FileHash; // 0x10 (20)
+	struct TArray<struct FChunkPartData> FileChunkParts; // 0x28 (16)
+	struct TArray<struct FString> InstallTags; // 0x38 (16)
 	char bIsUnixExecutable : 0; // 0x48 (1)
 	struct FString SymlinkTarget; // 0x50 (16)
 	char bIsReadOnly : 0; // 0x60 (1)
@@ -33,7 +33,7 @@ struct FFileManifestData {
 
 // ScriptStruct BuildPatchServices.ChunkPartData
 struct FChunkPartData {
-	struct Unknown Guid; // 0x0 (16)
+	struct FGuid Guid; // 0x0 (16)
 	uint32_t Offset; // 0x10 (4)
 	uint32_t Size; // 0x14 (4)
 };
@@ -45,9 +45,9 @@ struct FSHAHashData {
 
 // ScriptStruct BuildPatchServices.ChunkInfoData
 struct FChunkInfoData {
-	struct Unknown Guid; // 0x0 (16)
+	struct FGuid Guid; // 0x0 (16)
 	uint64_t Hash; // 0x10 (8)
-	struct Unknown ShaHash; // 0x18 (20)
+	struct FSHAHashData ShaHash; // 0x18 (20)
 	int64_t FileSize; // 0x30 (8)
 	char GroupNumber; // 0x38 (1)
 };

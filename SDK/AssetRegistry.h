@@ -1,10 +1,10 @@
 // ScriptStruct AssetRegistry.ARFilter
 struct FARFilter {
-	struct TArray<Unknown> PackageNames; // 0x0 (16)
-	struct TArray<Unknown> PackagePaths; // 0x10 (16)
-	struct TArray<Unknown> ObjectPaths; // 0x20 (16)
-	struct TArray<Unknown> ClassNames; // 0x30 (16)
-	struct TSet<Unknown> RecursiveClassesExclusionSet; // 0x90 (80)
+	struct TArray<struct FName> PackageNames; // 0x0 (16)
+	struct TArray<struct FName> PackagePaths; // 0x10 (16)
+	struct TArray<struct FName> ObjectPaths; // 0x20 (16)
+	struct TArray<struct FName> ClassNames; // 0x30 (16)
+	struct TSet<struct FName> RecursiveClassesExclusionSet; // 0x90 (80)
 	char bRecursivePaths : 0; // 0xE0 (1)
 	char bRecursiveClasses : 0; // 0xE1 (1)
 	char bIncludeOnlyOnDiskAssets : 0; // 0xE2 (1)
@@ -12,14 +12,14 @@ struct FARFilter {
 
 // ScriptStruct AssetRegistry.AssetBundleData
 struct FAssetBundleData {
-	struct TArray<Unknown> Bundles; // 0x0 (16)
+	struct TArray<struct FAssetBundleEntry> Bundles; // 0x0 (16)
 };
 
 // ScriptStruct AssetRegistry.AssetBundleEntry
 struct FAssetBundleEntry {
-	struct Unknown BundleScope; // 0x0 (16)
+	struct FPrimaryAssetId BundleScope; // 0x0 (16)
 	struct FName BundleName; // 0x10 (8)
-	struct TArray<Unknown> BundleAssets; // 0x18 (16)
+	struct TArray<struct FSoftObjectPath> BundleAssets; // 0x18 (16)
 };
 
 // ScriptStruct AssetRegistry.AssetData

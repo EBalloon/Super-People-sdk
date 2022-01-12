@@ -3,40 +3,40 @@ class ABP-WinCam_C : public UActor {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x318 (8)
-	struct Unknown WorldViewCamera; // 0x320 (8)
-	struct Unknown FarCamera; // 0x328 (8)
-	struct Unknown NearCamera; // 0x330 (8)
-	struct Unknown DefaultSceneRoot; // 0x338 (8)
-	struct Unknown CharacterRef; // 0x340 (8)
-	struct Unknown TargetNearCameraTransform; // 0x350 (48)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x318 (8)
+	struct UCameraComponent WorldViewCamera; // 0x320 (8)
+	struct UCameraComponent FarCamera; // 0x328 (8)
+	struct UCameraComponent NearCamera; // 0x330 (8)
+	struct USceneComponent DefaultSceneRoot; // 0x338 (8)
+	struct ABravoHotelCharacter CharacterRef; // 0x340 (8)
+	struct FTransform TargetNearCameraTransform; // 0x350 (48)
 	float DeltaTime; // 0x380 (4)
-	struct Unknown TargetFarCameraTransform; // 0x390 (48)
-	struct Unknown PlayerControllerRef; // 0x3C0 (8)
+	struct FTransform TargetFarCameraTransform; // 0x390 (48)
+	struct ABravoHotelPlayerController PlayerControllerRef; // 0x3C0 (8)
 	char bIsBackgroundScene : 0; // 0x3C8 (1)
-	struct TArray<Unknown> WinTeamCharacters; // 0x3D0 (16)
-	struct TArray<Unknown> DuoLocation_Near; // 0x3E0 (16)
-	struct Unknown CharacterOriginLocation; // 0x3F0 (12)
-	struct TArray<Unknown> DuoRotation_Near; // 0x400 (16)
-	struct TArray<Unknown> DuoLocation_Far; // 0x410 (16)
-	struct TArray<Unknown> DuoRotation_Far; // 0x420 (16)
-	struct TArray<Unknown> TrioLocation_Near; // 0x430 (16)
-	struct TArray<Unknown> TrioRotation_Near; // 0x440 (16)
-	struct TArray<Unknown> TrioLocation_Far; // 0x450 (16)
-	struct TArray<Unknown> TrioRotation_Far; // 0x460 (16)
-	struct TArray<Unknown> SquadLocation_Near; // 0x470 (16)
-	struct TArray<Unknown> SquadRotation_Near; // 0x480 (16)
-	struct TArray<Unknown> SquadLocation_Far; // 0x490 (16)
-	struct TArray<Unknown> SquadRotation_Far; // 0x4A0 (16)
-	struct Unknown CharacterOriginRotation; // 0x4B0 (12)
+	struct TArray<struct ABravoHotelCharacter> WinTeamCharacters; // 0x3D0 (16)
+	struct TArray<struct FVector> DuoLocation_Near; // 0x3E0 (16)
+	struct FVector CharacterOriginLocation; // 0x3F0 (12)
+	struct TArray<struct FRotator> DuoRotation_Near; // 0x400 (16)
+	struct TArray<struct FVector> DuoLocation_Far; // 0x410 (16)
+	struct TArray<struct FRotator> DuoRotation_Far; // 0x420 (16)
+	struct TArray<struct FVector> TrioLocation_Near; // 0x430 (16)
+	struct TArray<struct FRotator> TrioRotation_Near; // 0x440 (16)
+	struct TArray<struct FVector> TrioLocation_Far; // 0x450 (16)
+	struct TArray<struct FRotator> TrioRotation_Far; // 0x460 (16)
+	struct TArray<struct FVector> SquadLocation_Near; // 0x470 (16)
+	struct TArray<struct FRotator> SquadRotation_Near; // 0x480 (16)
+	struct TArray<struct FVector> SquadLocation_Far; // 0x490 (16)
+	struct TArray<struct FRotator> SquadRotation_Far; // 0x4A0 (16)
+	struct FRotator CharacterOriginRotation; // 0x4B0 (12)
 
-	void GetFloorLocation(struct Unknown InLocation, struct Unknown& OutLocation); // Function BP-WinCam.BP-WinCam_C.GetFloorLocation(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void GetFloorLocation(struct FVector InLocation, struct FVector& OutLocation); // Function BP-WinCam.BP-WinCam_C.GetFloorLocation(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void UpdateCharacterRotation(); // Function BP-WinCam.BP-WinCam_C.UpdateCharacterRotation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void UpdateCharacterLocation(); // Function BP-WinCam.BP-WinCam_C.UpdateCharacterLocation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void PlayWinAnimation(struct Unknown TargetCharacter); // Function BP-WinCam.BP-WinCam_C.PlayWinAnimation(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetWinMontage(struct Unknown TargetCharacter, struct Unknown& WinMontage); // Function BP-WinCam.BP-WinCam_C.GetWinMontage(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void PlayWinAnimation(struct ABravoHotelCharacter TargetCharacter); // Function BP-WinCam.BP-WinCam_C.PlayWinAnimation(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetWinMontage(struct ABravoHotelCharacter TargetCharacter, struct UAnimMontage& WinMontage); // Function BP-WinCam.BP-WinCam_C.GetWinMontage(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void CheckWorldViewCameraLocationRange(); // Function BP-WinCam.BP-WinCam_C.CheckWorldViewCameraLocationRange(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetActiveCamera(struct Unknown& ActiveCamera); // Function BP-WinCam.BP-WinCam_C.GetActiveCamera(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void GetActiveCamera(struct UCameraComponent& ActiveCamera); // Function BP-WinCam.BP-WinCam_C.GetActiveCamera(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void PreventCameraWallCollision(); // Function BP-WinCam.BP-WinCam_C.PreventCameraWallCollision(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void InitReferences(char& bSuccess); // Function BP-WinCam.BP-WinCam_C.InitReferences(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ReceiveBeginPlay(); // Function BP-WinCam.BP-WinCam_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -47,12 +47,12 @@ public:
 };
 
 // Function BP-WinCam.BP-WinCam_C.GetFloorLocation
-inline void ABP-WinCam_C::GetFloorLocation(struct Unknown InLocation, struct Unknown& OutLocation) {
+inline void ABP-WinCam_C::GetFloorLocation(struct FVector InLocation, struct FVector& OutLocation) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-WinCam.BP-WinCam_C.GetFloorLocation");
 
 	struct GetFloorLocation_Params {
-		struct Unknown InLocation;
-		struct Unknown& OutLocation;
+		struct FVector InLocation;
+		struct FVector& OutLocation;
 	}; GetFloorLocation_Params Params;
 
 	Params.InLocation = InLocation;
@@ -94,11 +94,11 @@ inline void ABP-WinCam_C::UpdateCharacterLocation() {
 }
 
 // Function BP-WinCam.BP-WinCam_C.PlayWinAnimation
-inline void ABP-WinCam_C::PlayWinAnimation(struct Unknown TargetCharacter) {
+inline void ABP-WinCam_C::PlayWinAnimation(struct ABravoHotelCharacter TargetCharacter) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-WinCam.BP-WinCam_C.PlayWinAnimation");
 
 	struct PlayWinAnimation_Params {
-		struct Unknown TargetCharacter;
+		struct ABravoHotelCharacter TargetCharacter;
 	}; PlayWinAnimation_Params Params;
 
 	Params.TargetCharacter = TargetCharacter;
@@ -109,12 +109,12 @@ inline void ABP-WinCam_C::PlayWinAnimation(struct Unknown TargetCharacter) {
 }
 
 // Function BP-WinCam.BP-WinCam_C.GetWinMontage
-inline void ABP-WinCam_C::GetWinMontage(struct Unknown TargetCharacter, struct Unknown& WinMontage) {
+inline void ABP-WinCam_C::GetWinMontage(struct ABravoHotelCharacter TargetCharacter, struct UAnimMontage& WinMontage) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-WinCam.BP-WinCam_C.GetWinMontage");
 
 	struct GetWinMontage_Params {
-		struct Unknown TargetCharacter;
-		struct Unknown& WinMontage;
+		struct ABravoHotelCharacter TargetCharacter;
+		struct UAnimMontage& WinMontage;
 	}; GetWinMontage_Params Params;
 
 	Params.TargetCharacter = TargetCharacter;
@@ -142,11 +142,11 @@ inline void ABP-WinCam_C::CheckWorldViewCameraLocationRange() {
 }
 
 // Function BP-WinCam.BP-WinCam_C.GetActiveCamera
-inline void ABP-WinCam_C::GetActiveCamera(struct Unknown& ActiveCamera) {
+inline void ABP-WinCam_C::GetActiveCamera(struct UCameraComponent& ActiveCamera) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-WinCam.BP-WinCam_C.GetActiveCamera");
 
 	struct GetActiveCamera_Params {
-		struct Unknown& ActiveCamera;
+		struct UCameraComponent& ActiveCamera;
 	}; GetActiveCamera_Params Params;
 
 

@@ -3,6 +3,6 @@ class ABP-VehicleWaterPlane_C : public UActor {
 
 public:
 
-	struct Unknown Box; // 0x318 (8)
+	struct UBoxComponent Box; // 0x318 (8)
 };
 

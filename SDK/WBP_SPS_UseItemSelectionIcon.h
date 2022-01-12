@@ -3,24 +3,24 @@ class UWBP_SPS_UseItemSelectionIcon_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown IconImage; // 0x250 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UImage IconImage; // 0x250 (8)
 	struct FMulticastInlineDelegate Hovered; // 0x258 (16)
 	struct FMulticastInlineDelegate Unhovered; // 0x268 (16)
 	struct FMulticastInlineDelegate Pressed; // 0x278 (16)
-	struct Unknown SmartPingComponent; // 0x288 (8)
+	struct USmartPingSystem_C SmartPingComponent; // 0x288 (8)
 	int32_t Index; // 0x290 (4)
-	struct Unknown TintColorToUse; // 0x294 (16)
+	struct FLinearColor TintColorToUse; // 0x294 (16)
 	char Found Setting : 0; // 0x2A4 (1)
-	struct Unknown Settings; // 0x2A8 (184)
+	struct FBravoHotelSmartPingIconSettings Settings; // 0x2A8 (184)
 	struct FName TableID; // 0x360 (8)
-	struct Unknown Image; // 0x368 (40)
+	struct TSoftObjectPtr<UPaperSprite> Image; // 0x368 (40)
 
-	void OnLoaded_6834BC7D48AF986BC5969685C4D6D2B3(struct Unknown Loaded); // Function WBP_SPS_UseItemSelectionIcon.WBP_SPS_UseItemSelectionIcon_C.OnLoaded_6834BC7D48AF986BC5969685C4D6D2B3(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_6834BC7D48AF986BC5969685C4D6D2B3(struct Object Loaded); // Function WBP_SPS_UseItemSelectionIcon.WBP_SPS_UseItemSelectionIcon_C.OnLoaded_6834BC7D48AF986BC5969685C4D6D2B3(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Unselected(); // Function WBP_SPS_UseItemSelectionIcon.WBP_SPS_UseItemSelectionIcon_C.Unselected(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function WBP_SPS_UseItemSelectionIcon.WBP_SPS_UseItemSelectionIcon_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Selected(); // Function WBP_SPS_UseItemSelectionIcon.WBP_SPS_UseItemSelectionIcon_C.Selected(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Init(struct Unknown Data, struct FName ItemKey, char IsHaveItem); // Function WBP_SPS_UseItemSelectionIcon.WBP_SPS_UseItemSelectionIcon_C.Init(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Init(struct FBravoHotelSmartPingIconSettings Data, struct FName ItemKey, char IsHaveItem); // Function WBP_SPS_UseItemSelectionIcon.WBP_SPS_UseItemSelectionIcon_C.Init(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_WBP_SPS_UseItemSelectionIcon(int32_t EntryPoint); // Function WBP_SPS_UseItemSelectionIcon.WBP_SPS_UseItemSelectionIcon_C.ExecuteUbergraph_WBP_SPS_UseItemSelectionIcon(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 	void Pressed__DelegateSignature(); // Function WBP_SPS_UseItemSelectionIcon.WBP_SPS_UseItemSelectionIcon_C.Pressed__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Unhovered__DelegateSignature(int32_t Index); // Function WBP_SPS_UseItemSelectionIcon.WBP_SPS_UseItemSelectionIcon_C.Unhovered__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -28,11 +28,11 @@ public:
 };
 
 // Function WBP_SPS_UseItemSelectionIcon.WBP_SPS_UseItemSelectionIcon_C.OnLoaded_6834BC7D48AF986BC5969685C4D6D2B3
-inline void UWBP_SPS_UseItemSelectionIcon_C::OnLoaded_6834BC7D48AF986BC5969685C4D6D2B3(struct Unknown Loaded) {
+inline void UWBP_SPS_UseItemSelectionIcon_C::OnLoaded_6834BC7D48AF986BC5969685C4D6D2B3(struct Object Loaded) {
 	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_UseItemSelectionIcon.WBP_SPS_UseItemSelectionIcon_C.OnLoaded_6834BC7D48AF986BC5969685C4D6D2B3");
 
 	struct OnLoaded_6834BC7D48AF986BC5969685C4D6D2B3_Params {
-		struct Unknown Loaded;
+		struct Object Loaded;
 	}; OnLoaded_6834BC7D48AF986BC5969685C4D6D2B3_Params Params;
 
 	Params.Loaded = Loaded;
@@ -85,11 +85,11 @@ inline void UWBP_SPS_UseItemSelectionIcon_C::Selected() {
 }
 
 // Function WBP_SPS_UseItemSelectionIcon.WBP_SPS_UseItemSelectionIcon_C.Init
-inline void UWBP_SPS_UseItemSelectionIcon_C::Init(struct Unknown Data, struct FName ItemKey, char IsHaveItem) {
+inline void UWBP_SPS_UseItemSelectionIcon_C::Init(struct FBravoHotelSmartPingIconSettings Data, struct FName ItemKey, char IsHaveItem) {
 	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_UseItemSelectionIcon.WBP_SPS_UseItemSelectionIcon_C.Init");
 
 	struct Init_Params {
-		struct Unknown Data;
+		struct FBravoHotelSmartPingIconSettings Data;
 		struct FName ItemKey;
 		char IsHaveItem;
 	}; Init_Params Params;

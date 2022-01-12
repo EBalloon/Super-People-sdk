@@ -3,21 +3,21 @@ class UUW-Lobby_Craft_List_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown ComboBoxString_Sort_2; // 0x250 (8)
-	struct Unknown Down_2; // 0x258 (8)
-	struct Unknown Image; // 0x260 (8)
-	struct Unknown Img_BG; // 0x268 (8)
-	struct Unknown Overlay_2; // 0x270 (8)
-	struct Unknown SortText_2; // 0x278 (8)
-	struct Unknown Up_2; // 0x280 (8)
-	struct Unknown UW-Lobby_RecipeList_Category; // 0x288 (8)
-	struct Unknown UW-Lobby_RecipeList_Category_2; // 0x290 (8)
-	struct Unknown UW-Lobby_RecipeList_Category_3; // 0x298 (8)
-	struct Unknown VerticalBox_Category; // 0x2A0 (8)
-	struct TMap<Unknown, Unknown> CategoryList; // 0x2A8 (80)
-	struct TArray<Unknown> SortTypeList; // 0x2F8 (16)
-	struct Unknown LastOpenedCategory; // 0x308 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UComboBoxString ComboBoxString_Sort_2; // 0x250 (8)
+	struct UImage Down_2; // 0x258 (8)
+	struct UImage Image; // 0x260 (8)
+	struct UImage Img_BG; // 0x268 (8)
+	struct UOverlay Overlay_2; // 0x270 (8)
+	struct UTextBlock SortText_2; // 0x278 (8)
+	struct UImage Up_2; // 0x280 (8)
+	struct UUW-Lobby_Craft_List_Category_C UW-Lobby_RecipeList_Category; // 0x288 (8)
+	struct UUW-Lobby_Craft_List_Category_C UW-Lobby_RecipeList_Category_2; // 0x290 (8)
+	struct UUW-Lobby_Craft_List_Category_C UW-Lobby_RecipeList_Category_3; // 0x298 (8)
+	struct UVerticalBox VerticalBox_Category; // 0x2A0 (8)
+	struct TMap<struct FString, struct UUW-Lobby_Craft_List_Category_C> CategoryList; // 0x2A8 (80)
+	struct TArray<struct FString> SortTypeList; // 0x2F8 (16)
+	struct UUW-Lobby_Craft_List_Category_C LastOpenedCategory; // 0x308 (8)
 	char IsOwn : 0; // 0x310 (1)
 	char IsOwnAny : 0; // 0x311 (1)
 	int32_t CraftingID; // 0x314 (4)
@@ -30,7 +30,7 @@ public:
 	void SetOwn(char NewOwn, char NewOwnAny); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.SetOwn(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void DefaultSelectButton(); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.DefaultSelectButton(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SelectCraftingInfo(int32_t CraftingID); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.SelectCraftingInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CheckLastCategory(struct Unknown NewOpendWidget); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.CheckLastCategory(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CheckLastCategory(struct UUW-Lobby_Craft_List_Category_C NewOpendWidget); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.CheckLastCategory(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ResetLastCategory(); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.ResetLastCategory(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CheckOwn(); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.CheckOwn(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnChangedWeaponType(struct FString WeaponType); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.OnChangedWeaponType(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -38,7 +38,7 @@ public:
 	void InitCraftingCategory(); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.InitCraftingCategory(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__ComboBoxString_Sort_1_K2Node_ComponentBoundEvent_1_OnSelectionChangedEvent__DelegateSignature(struct FString SelectedItem, char SelectionType); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.BndEvt__ComboBoxString_Sort_1_K2Node_ComponentBoundEvent_1_OnSelectionChangedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__ComboBoxString_Sort_1_K2Node_ComponentBoundEvent_2_OnOpeningEvent__DelegateSignature(); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.BndEvt__ComboBoxString_Sort_1_K2Node_ComponentBoundEvent_2_OnOpeningEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-Lobby_Craft_List(int32_t EntryPoint); // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.ExecuteUbergraph_UW-Lobby_Craft_List(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
@@ -133,11 +133,11 @@ inline void UUW-Lobby_Craft_List_C::SelectCraftingInfo(int32_t CraftingID) {
 }
 
 // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.CheckLastCategory
-inline void UUW-Lobby_Craft_List_C::CheckLastCategory(struct Unknown NewOpendWidget) {
+inline void UUW-Lobby_Craft_List_C::CheckLastCategory(struct UUW-Lobby_Craft_List_Category_C NewOpendWidget) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.CheckLastCategory");
 
 	struct CheckLastCategory_Params {
-		struct Unknown NewOpendWidget;
+		struct UUW-Lobby_Craft_List_Category_C NewOpendWidget;
 	}; CheckLastCategory_Params Params;
 
 	Params.NewOpendWidget = NewOpendWidget;
@@ -250,11 +250,11 @@ inline void UUW-Lobby_Craft_List_C::BndEvt__ComboBoxString_Sort_1_K2Node_Compone
 }
 
 // Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.Tick
-inline void UUW-Lobby_Craft_List_C::Tick(struct Unknown MyGeometry, float InDeltaTime) {
+inline void UUW-Lobby_Craft_List_C::Tick(struct FGeometry MyGeometry, float InDeltaTime) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Lobby_Craft_List.UW-Lobby_Craft_List_C.Tick");
 
 	struct Tick_Params {
-		struct Unknown MyGeometry;
+		struct FGeometry MyGeometry;
 		float InDeltaTime;
 	}; Tick_Params Params;
 

@@ -3,15 +3,15 @@ class UUW-RoutePingWidget_Point_C : public UBravoHotelRoutePingWidget {
 
 public:
 
-	struct Unknown Anim_OnShow; // 0x248 (8)
-	struct Unknown BackColor; // 0x250 (8)
-	struct Unknown T_Num; // 0x258 (8)
+	struct UWidgetAnimation Anim_OnShow; // 0x248 (8)
+	struct UImage BackColor; // 0x250 (8)
+	struct UTextBlock T_Num; // 0x258 (8)
 	struct FMulticastInlineDelegate OnMarkerClicked; // 0x260 (16)
 
 	void SetPointAngle(float Angle); // Function UW-RoutePingWidget_Point.UW-RoutePingWidget_Point_C.SetPointAngle(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SelectPointIcon(int32_t Index, char IsLastPoint, char IsUpdate); // Function UW-RoutePingWidget_Point.UW-RoutePingWidget_Point_C.SelectPointIcon(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetTeamColor(struct Unknown LinearColor); // Function UW-RoutePingWidget_Point.UW-RoutePingWidget_Point_C.SetTeamColor(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnMarkerClicked__DelegateSignature(struct Unknown Button, char mapObjectID); // Function UW-RoutePingWidget_Point.UW-RoutePingWidget_Point_C.OnMarkerClicked__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetTeamColor(struct FLinearColor LinearColor); // Function UW-RoutePingWidget_Point.UW-RoutePingWidget_Point_C.SetTeamColor(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnMarkerClicked__DelegateSignature(struct FKey Button, char mapObjectID); // Function UW-RoutePingWidget_Point.UW-RoutePingWidget_Point_C.OnMarkerClicked__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-RoutePingWidget_Point.UW-RoutePingWidget_Point_C.SetPointAngle
@@ -49,11 +49,11 @@ inline void UUW-RoutePingWidget_Point_C::SelectPointIcon(int32_t Index, char IsL
 }
 
 // Function UW-RoutePingWidget_Point.UW-RoutePingWidget_Point_C.SetTeamColor
-inline void UUW-RoutePingWidget_Point_C::SetTeamColor(struct Unknown LinearColor) {
+inline void UUW-RoutePingWidget_Point_C::SetTeamColor(struct FLinearColor LinearColor) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-RoutePingWidget_Point.UW-RoutePingWidget_Point_C.SetTeamColor");
 
 	struct SetTeamColor_Params {
-		struct Unknown LinearColor;
+		struct FLinearColor LinearColor;
 	}; SetTeamColor_Params Params;
 
 	Params.LinearColor = LinearColor;
@@ -64,11 +64,11 @@ inline void UUW-RoutePingWidget_Point_C::SetTeamColor(struct Unknown LinearColor
 }
 
 // Function UW-RoutePingWidget_Point.UW-RoutePingWidget_Point_C.OnMarkerClicked__DelegateSignature
-inline void UUW-RoutePingWidget_Point_C::OnMarkerClicked__DelegateSignature(struct Unknown Button, char mapObjectID) {
+inline void UUW-RoutePingWidget_Point_C::OnMarkerClicked__DelegateSignature(struct FKey Button, char mapObjectID) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-RoutePingWidget_Point.UW-RoutePingWidget_Point_C.OnMarkerClicked__DelegateSignature");
 
 	struct OnMarkerClicked__DelegateSignature_Params {
-		struct Unknown Button;
+		struct FKey Button;
 		char mapObjectID;
 	}; OnMarkerClicked__DelegateSignature_Params Params;
 

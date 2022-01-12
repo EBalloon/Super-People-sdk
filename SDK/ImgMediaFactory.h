@@ -3,7 +3,7 @@ class UImgMediaSettings : public Object {
 
 public:
 
-	struct Unknown DefaultFrameRate; // 0x28 (8)
+	struct FFrameRate DefaultFrameRate; // 0x28 (8)
 	float CacheBehindPercentage; // 0x30 (4)
 	float CacheSizeGB; // 0x34 (4)
 	int32_t CacheThreads; // 0x38 (4)

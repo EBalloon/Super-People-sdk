@@ -3,8 +3,8 @@ class UWB_ClassicSettingsText_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown TextField; // 0x250 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UTextBlock TextField; // 0x250 (8)
 	struct FText Text; // 0x258 (24)
 
 	void Construct(); // Function WB_ClassicSettingsText.WB_ClassicSettingsText_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>

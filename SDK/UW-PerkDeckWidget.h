@@ -3,98 +3,98 @@ class UUW-PerkDeckWidget_C : public UBravoHotelPerkDeckWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Msg_open; // 0x250 (8)
-	struct Unknown POPUP_OPEN; // 0x258 (8)
-	struct Unknown Idle; // 0x260 (8)
-	struct Unknown btn_Choose; // 0x268 (8)
-	struct Unknown btn_OK; // 0x270 (8)
-	struct Unknown btn_OK_6; // 0x278 (8)
-	struct Unknown btn_PerkDeck; // 0x280 (8)
-	struct Unknown Button_CloseMovie; // 0x288 (8)
-	struct Unknown Button_PlayMovie; // 0x290 (8)
-	struct Unknown Button_Refresh; // 0x298 (8)
-	struct Unknown Button_Reselect; // 0x2A0 (8)
-	struct Unknown Button_SelectMode; // 0x2A8 (8)
-	struct Unknown Canvas_CantSelectMessage; // 0x2B0 (8)
-	struct Unknown Canvas_MovieScreen; // 0x2B8 (8)
-	struct Unknown CanvasPanel_ClassList; // 0x2C0 (8)
-	struct Unknown CanvasPanel_NewbieAdvantage; // 0x2C8 (8)
-	struct Unknown CheckBox_PerkDeckNotReOpen; // 0x2D0 (8)
-	struct Unknown GoldLack; // 0x2D8 (8)
-	struct Unknown HorizontalBox_ClassList; // 0x2E0 (8)
-	struct Unknown HorizontalBox_PerkDeckReOpen; // 0x2E8 (8)
-	struct Unknown Image_1; // 0x2F0 (8)
-	struct Unknown Image_2; // 0x2F8 (8)
-	struct Unknown Image_5; // 0x300 (8)
-	struct Unknown Image_10; // 0x308 (8)
-	struct Unknown Image_11; // 0x310 (8)
-	struct Unknown Image_13; // 0x318 (8)
-	struct Unknown Image_134; // 0x320 (8)
-	struct Unknown Image_213; // 0x328 (8)
-	struct Unknown Image_247; // 0x330 (8)
-	struct Unknown Image_271; // 0x338 (8)
-	struct Unknown Image_276; // 0x340 (8)
-	struct Unknown Image_335; // 0x348 (8)
-	struct Unknown Image_342; // 0x350 (8)
-	struct Unknown Image_484; // 0x358 (8)
-	struct Unknown Image_566; // 0x360 (8)
-	struct Unknown Image_1200; // 0x368 (8)
-	struct Unknown Image_1511; // 0x370 (8)
-	struct Unknown Image_Class; // 0x378 (8)
-	struct Unknown Image_ClassIcon; // 0x380 (8)
-	struct Unknown Image_Cycle; // 0x388 (8)
-	struct Unknown Image_Cycle_2; // 0x390 (8)
-	struct Unknown Image_Cycle_4; // 0x398 (8)
-	struct Unknown Image_Weapon; // 0x3A0 (8)
-	struct Unknown Img_Movie; // 0x3A8 (8)
-	struct Unknown ReseletTextGroup1; // 0x3B0 (8)
-	struct Unknown ReseletTextGroup1_2; // 0x3B8 (8)
-	struct Unknown ReseletTextGroup2; // 0x3C0 (8)
-	struct Unknown ReseletTextGroup2_2; // 0x3C8 (8)
-	struct Unknown ReseletTextGroup2_4; // 0x3D0 (8)
-	struct Unknown ScaleBox_ClassList; // 0x3D8 (8)
-	struct Unknown ScaleBox_SelectNotifyMessage; // 0x3E0 (8)
-	struct Unknown SizeBox_Choose; // 0x3E8 (8)
-	struct Unknown SizeBox_Ok; // 0x3F0 (8)
-	struct Unknown SizeBox_Ok2; // 0x3F8 (8)
-	struct Unknown SizeBox_Random; // 0x400 (8)
-	struct Unknown SizeBox_Refrest; // 0x408 (8)
-	struct Unknown SizeBox_Select; // 0x410 (8)
-	struct Unknown T_AmmoName; // 0x418 (8)
-	struct Unknown T_ClassDeckName; // 0x420 (8)
-	struct Unknown T_ClassDesc; // 0x428 (8)
-	struct Unknown T_CurrentGold; // 0x430 (8)
-	struct Unknown T_WeaponDesc; // 0x438 (8)
-	struct Unknown T_WeaponName; // 0x440 (8)
-	struct Unknown TextBlock_Close; // 0x448 (8)
-	struct Unknown TextBlock_Close_2; // 0x450 (8)
-	struct Unknown TextBlock_Close_7; // 0x458 (8)
-	struct Unknown TextBlock_MaxReset; // 0x460 (8)
-	struct Unknown TextBlock_MaxReset_2; // 0x468 (8)
-	struct Unknown TextBlock_Price_ChangeDeckList; // 0x470 (8)
-	struct Unknown TextBlock_Price_Random; // 0x478 (8)
-	struct Unknown TextBlock_Price_Select; // 0x480 (8)
-	struct Unknown TextBlock_RandomRemainCount; // 0x488 (8)
-	struct Unknown TextBlock_RefreshRemainCount; // 0x490 (8)
-	struct Unknown TextBlock_Reselect; // 0x498 (8)
-	struct Unknown TextBlock_Reselect_2; // 0x4A0 (8)
-	struct Unknown TextBlock_Reselect_4; // 0x4A8 (8)
-	struct Unknown UW-Inventory_Perk; // 0x4B0 (8)
-	struct Unknown UW-Timer; // 0x4B8 (8)
-	struct Unknown WidgetSwitcher_ChangeDeck; // 0x4C0 (8)
-	struct Unknown WidgetSwitcher_ChangeDeck_2; // 0x4C8 (8)
-	struct Unknown WidgetSwitcher_Reselect; // 0x4D0 (8)
-	struct Unknown WidgetSwitcher_Reselect_2; // 0x4D8 (8)
-	struct Unknown WidgetSwitcher_Reselect_4; // 0x4E0 (8)
-	struct Unknown InventoryWidget; // 0x4E8 (8)
-	struct TArray<Unknown> Slots; // 0x4F0 (16)
-	struct Unknown IconBrush; // 0x500 (136)
-	struct Unknown HoverWidget; // 0x588 (8)
-	struct Unknown HoverTimerHandle; // 0x590 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UWidgetAnimation Msg_open; // 0x250 (8)
+	struct UWidgetAnimation POPUP_OPEN; // 0x258 (8)
+	struct UWidgetAnimation Idle; // 0x260 (8)
+	struct UButton btn_Choose; // 0x268 (8)
+	struct UButton btn_OK; // 0x270 (8)
+	struct UButton btn_OK_6; // 0x278 (8)
+	struct UButton btn_PerkDeck; // 0x280 (8)
+	struct UButton Button_CloseMovie; // 0x288 (8)
+	struct UButton Button_PlayMovie; // 0x290 (8)
+	struct UButton Button_Refresh; // 0x298 (8)
+	struct UButton Button_Reselect; // 0x2A0 (8)
+	struct UButton Button_SelectMode; // 0x2A8 (8)
+	struct UCanvasPanel Canvas_CantSelectMessage; // 0x2B0 (8)
+	struct UCanvasPanel Canvas_MovieScreen; // 0x2B8 (8)
+	struct UCanvasPanel CanvasPanel_ClassList; // 0x2C0 (8)
+	struct UCanvasPanel CanvasPanel_NewbieAdvantage; // 0x2C8 (8)
+	struct UCheckBox CheckBox_PerkDeckNotReOpen; // 0x2D0 (8)
+	struct UOverlay GoldLack; // 0x2D8 (8)
+	struct UHorizontalBox HorizontalBox_ClassList; // 0x2E0 (8)
+	struct UHorizontalBox HorizontalBox_PerkDeckReOpen; // 0x2E8 (8)
+	struct UImage Image_1; // 0x2F0 (8)
+	struct UImage Image_2; // 0x2F8 (8)
+	struct UImage Image_5; // 0x300 (8)
+	struct UImage Image_10; // 0x308 (8)
+	struct UImage Image_11; // 0x310 (8)
+	struct UImage Image_13; // 0x318 (8)
+	struct UImage Image_134; // 0x320 (8)
+	struct UImage Image_213; // 0x328 (8)
+	struct UImage Image_247; // 0x330 (8)
+	struct UImage Image_271; // 0x338 (8)
+	struct UImage Image_276; // 0x340 (8)
+	struct UImage Image_335; // 0x348 (8)
+	struct UImage Image_342; // 0x350 (8)
+	struct UImage Image_484; // 0x358 (8)
+	struct UImage Image_566; // 0x360 (8)
+	struct UImage Image_1200; // 0x368 (8)
+	struct UImage Image_1511; // 0x370 (8)
+	struct UImage Image_Class; // 0x378 (8)
+	struct UImage Image_ClassIcon; // 0x380 (8)
+	struct UImage Image_Cycle; // 0x388 (8)
+	struct UImage Image_Cycle_2; // 0x390 (8)
+	struct UImage Image_Cycle_4; // 0x398 (8)
+	struct UImage Image_Weapon; // 0x3A0 (8)
+	struct UImage Img_Movie; // 0x3A8 (8)
+	struct UHorizontalBox ReseletTextGroup1; // 0x3B0 (8)
+	struct UHorizontalBox ReseletTextGroup1_2; // 0x3B8 (8)
+	struct UOverlay ReseletTextGroup2; // 0x3C0 (8)
+	struct UOverlay ReseletTextGroup2_2; // 0x3C8 (8)
+	struct UOverlay ReseletTextGroup2_4; // 0x3D0 (8)
+	struct UScaleBox ScaleBox_ClassList; // 0x3D8 (8)
+	struct UScaleBox ScaleBox_SelectNotifyMessage; // 0x3E0 (8)
+	struct USizeBox SizeBox_Choose; // 0x3E8 (8)
+	struct USizeBox SizeBox_Ok; // 0x3F0 (8)
+	struct USizeBox SizeBox_Ok2; // 0x3F8 (8)
+	struct USizeBox SizeBox_Random; // 0x400 (8)
+	struct USizeBox SizeBox_Refrest; // 0x408 (8)
+	struct USizeBox SizeBox_Select; // 0x410 (8)
+	struct UTextBlock T_AmmoName; // 0x418 (8)
+	struct UTextBlock T_ClassDeckName; // 0x420 (8)
+	struct UTextBlock T_ClassDesc; // 0x428 (8)
+	struct UTextBlock T_CurrentGold; // 0x430 (8)
+	struct UTextBlock T_WeaponDesc; // 0x438 (8)
+	struct UTextBlock T_WeaponName; // 0x440 (8)
+	struct UTextBlock TextBlock_Close; // 0x448 (8)
+	struct UTextBlock TextBlock_Close_2; // 0x450 (8)
+	struct UTextBlock TextBlock_Close_7; // 0x458 (8)
+	struct UTextBlock TextBlock_MaxReset; // 0x460 (8)
+	struct UTextBlock TextBlock_MaxReset_2; // 0x468 (8)
+	struct UTextBlock TextBlock_Price_ChangeDeckList; // 0x470 (8)
+	struct UTextBlock TextBlock_Price_Random; // 0x478 (8)
+	struct UTextBlock TextBlock_Price_Select; // 0x480 (8)
+	struct UTextBlock TextBlock_RandomRemainCount; // 0x488 (8)
+	struct UTextBlock TextBlock_RefreshRemainCount; // 0x490 (8)
+	struct UTextBlock TextBlock_Reselect; // 0x498 (8)
+	struct UTextBlock TextBlock_Reselect_2; // 0x4A0 (8)
+	struct UTextBlock TextBlock_Reselect_4; // 0x4A8 (8)
+	struct UUW-Inventory_Perk_C UW-Inventory_Perk; // 0x4B0 (8)
+	struct UUW-Timer_C UW-Timer; // 0x4B8 (8)
+	struct UWidgetSwitcher WidgetSwitcher_ChangeDeck; // 0x4C0 (8)
+	struct UWidgetSwitcher WidgetSwitcher_ChangeDeck_2; // 0x4C8 (8)
+	struct UWidgetSwitcher WidgetSwitcher_Reselect; // 0x4D0 (8)
+	struct UWidgetSwitcher WidgetSwitcher_Reselect_2; // 0x4D8 (8)
+	struct UWidgetSwitcher WidgetSwitcher_Reselect_4; // 0x4E0 (8)
+	struct UUW-InventoryWidget_C InventoryWidget; // 0x4E8 (8)
+	struct TArray<struct UUW-Inventory_PopupPerkSlot_C> Slots; // 0x4F0 (16)
+	struct FSlateBrush IconBrush; // 0x500 (136)
+	struct UUW-Inventory_ItemSlotHover_C HoverWidget; // 0x588 (8)
+	struct FTimerHandle HoverTimerHandle; // 0x590 (8)
 	int64_t LocalTemp; // 0x598 (8)
-	struct Unknown MediaPlayer; // 0x5A0 (8)
-	struct TMap<Unknown, Unknown> ClassVideo_Map; // 0x5A8 (80)
+	struct UMediaPlayer MediaPlayer; // 0x5A0 (8)
+	struct TMap<int32_t, struct UMediaSource> ClassVideo_Map; // 0x5A8 (80)
 	char bBlockButton : 0; // 0x5F8 (1)
 	char bButtonEnabled : 0; // 0x5F9 (1)
 	char bCanRemainCount : 0; // 0x5FA (1)
@@ -105,13 +105,13 @@ public:
 	int32_t ChangeDeckListCount; // 0x60C (4)
 	int32_t PerkDeckID; // 0x610 (4)
 	int32_t DisableTime; // 0x614 (4)
-	struct TMap<Unknown, Unknown> ClassInfoWidgetMap; // 0x618 (80)
-	struct Unknown CurrentPerkDeckSelectInfo; // 0x668 (24)
+	struct TMap<struct FName, struct UUW-PerkDeckSelectItemWidget_C> ClassInfoWidgetMap; // 0x618 (80)
+	struct FPerkDeckSelectInfo CurrentPerkDeckSelectInfo; // 0x668 (24)
 	int32_t LocalPerkMode; // 0x680 (4)
 	float ClassListPadding; // 0x684 (4)
-	struct Unknown Handle_PlayMovie; // 0x688 (8)
-	struct Unknown CurrentClassVideo; // 0x690 (8)
-	struct Unknown Handle_SetPerkInfoByHoverClassButton; // 0x698 (8)
+	struct FTimerHandle Handle_PlayMovie; // 0x688 (8)
+	struct UMediaSource CurrentClassVideo; // 0x690 (8)
+	struct FTimerHandle Handle_SetPerkInfoByHoverClassButton; // 0x698 (8)
 	char LastClassButtonHovered : 0; // 0x6A0 (1)
 	int32_t LastClassIndex; // 0x6A4 (4)
 
@@ -121,7 +121,7 @@ public:
 	void SetPerkDeckReOpenCheck(); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.SetPerkDeckReOpenCheck(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetComingSoonClass(); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.SetComingSoonClass(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void GetComingSoonClass(struct FName& ClassRow); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.GetComingSoonClass(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void UpdateNewbieAdvantage(struct Unknown& PerkDeckData); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.UpdateNewbieAdvantage(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void UpdateNewbieAdvantage(struct FPerkDeckData& PerkDeckData); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.UpdateNewbieAdvantage(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void DisableClassButtonWithoutSelected(); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.DisableClassButtonWithoutSelected(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetPerkInfoByHoverClassButton(); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.SetPerkInfoByHoverClassButton(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void PlayChangeDeckSound(); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.PlayChangeDeckSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -129,7 +129,7 @@ public:
 	void PlayClickSound(); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.PlayClickSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void PlayHoverSound(); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.PlayHoverSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void HasPerkDeckClassInfo(char& NewParam); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.HasPerkDeckClassInfo(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void SetButtonInfo(struct Unknown Button, struct Unknown TextPrice, int32_t Price, struct Unknown TextRemainCount, int32_t RemainCount); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.SetButtonInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetButtonInfo(struct UButton Button, struct UTextBlock TextPrice, int32_t Price, struct UTextBlock TextRemainCount, int32_t RemainCount); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.SetButtonInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void UpdateButtonInfos(); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.UpdateButtonInfos(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CanUseButton(char& Enabled); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.CanUseButton(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void SetButtonEnabled(char IsEnabled); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.SetButtonEnabled(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -140,33 +140,33 @@ public:
 	void RefreshSelectedClassInfo(); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.RefreshSelectedClassInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetClassList(); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.SetClassList(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetPerkModeInfo(int32_t PerkMode); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.SetPerkModeInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown OnMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetClassVideoSource(int32_t PerkDeckID, struct Unknown& VideoSource); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.GetClassVideoSource(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply OnMouseButtonDown(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetClassVideoSource(int32_t PerkDeckID, struct UMediaSource& VideoSource); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.GetClassVideoSource(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ReadyMovie(int32_t PerkDeckID); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.ReadyMovie(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CloseMovie(); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.CloseMovie(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	enum class Unknow GetVisibility_RemainTime(); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.GetVisibility_RemainTime(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void GetInventoryItemDetailInfo(struct FName Name, struct Unknown& Info); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.GetInventoryItemDetailInfo(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	enum class ESlateVisibility GetVisibility_RemainTime(); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.GetVisibility_RemainTime(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void GetInventoryItemDetailInfo(struct FName Name, struct FInventoryItemDetailInfo& Info); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.GetInventoryItemDetailInfo(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	struct FText Get_TextBlock_RemailTime_Text_1(); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.Get_TextBlock_RemailTime_Text_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void SetServerWaiting(char bWait); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.SetServerWaiting(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetGoldInfo(); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.SetGoldInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetPerkInfo(char UseLocalPlayerInfo, struct Unknown PerkDeckClassInfo); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.SetPerkInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetPerkInfo(char UseLocalPlayerInfo, struct FPerkDeckClassInfo PerkDeckClassInfo); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.SetPerkInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CheckInfos(char ForceUpdate); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.CheckInfos(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void InitInfos(); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.InitInfos(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown OnMouseWheel(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.OnMouseWheel(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply OnMouseWheel(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.OnMouseWheel(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Hide(); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.Hide(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Show(); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.Show(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnLoaded_A83B5F164320A0E753E9088699009EB0(struct Unknown Loaded); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.OnLoaded_A83B5F164320A0E753E9088699009EB0(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_A83B5F164320A0E753E9088699009EB0(struct Object Loaded); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.OnLoaded_A83B5F164320A0E753E9088699009EB0(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Finished_68D0074544AABC70455E90A37E1ED67B(); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.Finished_68D0074544AABC70455E90A37E1ED67B(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnLoaded_C916107845AEFBC703CB8F9D00DAC0F0(struct Unknown Loaded); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.OnLoaded_C916107845AEFBC703CB8F9D00DAC0F0(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnLoaded_19FB202A430BEE3458DBA2B7F1362CC8(struct Unknown Loaded); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.OnLoaded_19FB202A430BEE3458DBA2B7F1362CC8(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AsyncLoadingWeapon(struct Unknown IconTexture); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.AsyncLoadingWeapon(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AsyncLoadingClass(struct Unknown Texture); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.AsyncLoadingClass(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_C916107845AEFBC703CB8F9D00DAC0F0(struct Object Loaded); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.OnLoaded_C916107845AEFBC703CB8F9D00DAC0F0(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_19FB202A430BEE3458DBA2B7F1362CC8(struct Object Loaded); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.OnLoaded_19FB202A430BEE3458DBA2B7F1362CC8(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AsyncLoadingWeapon(struct TSoftObjectPtr<UPaperSprite> IconTexture); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.AsyncLoadingWeapon(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AsyncLoadingClass(struct TSoftObjectPtr<Object> Texture); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.AsyncLoadingClass(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnDelegatePayGoldOnChangeDeck(char bSuccess); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.OnDelegatePayGoldOnChangeDeck(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnAnimationFinished(struct Unknown Animation); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.OnAnimationFinished(BlueprintCosmetic|Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnAnimationFinished(struct UWidgetAnimation Animation); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.OnAnimationFinished(BlueprintCosmetic|Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__Button_Movie_K2Node_ComponentBoundEvent_5_OnButtonClickedEvent__DelegateSignature(); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.BndEvt__Button_Movie_K2Node_ComponentBoundEvent_5_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__Button_CloseMovie_K2Node_ComponentBoundEvent_6_OnButtonClickedEvent__DelegateSignature(); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.BndEvt__Button_CloseMovie_K2Node_ComponentBoundEvent_6_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Destruct(); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnBattleRoyalStateChanged(enum class Unknow PrevState, enum class Unknow CurrentState); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.OnBattleRoyalStateChanged(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnBattleRoyalStateChanged(enum class EBattleRoyaleState PrevState, enum class EBattleRoyaleState CurrentState); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.OnBattleRoyalStateChanged(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__Button_Reselect_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature(); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.BndEvt__Button_Reselect_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ClosePopup(); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.ClosePopup(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__Button_Reselect_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.BndEvt__Button_Reselect_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -175,8 +175,8 @@ public:
 	void ChangeClassOnScenario(int32_t DeckIndex); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.ChangeClassOnScenario(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__btn_OK_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature(); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.BndEvt__btn_OK_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AsyncLoadingClassIcon(struct Unknown Texture); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.AsyncLoadingClassIcon(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AsyncLoadingClassIcon(struct TSoftObjectPtr<Object> Texture); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.AsyncLoadingClassIcon(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void HideAnim(); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.HideAnim(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ShowAnim(); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.ShowAnim(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnChangePerkModeDelegate_Event_1(int32_t PerkMode); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.OnChangePerkModeDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -186,7 +186,7 @@ public:
 	void BndEvt__btn_OK_5_K2Node_ComponentBoundEvent_12_OnButtonClickedEvent__DelegateSignature(); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.BndEvt__btn_OK_5_K2Node_ComponentBoundEvent_12_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void DelegatePayGoldOnSelectDeck_Event_1(char bSuccess); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.DelegatePayGoldOnSelectDeck_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnChangedTeamPlayerClass(); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.OnChangedTeamPlayerClass(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetPerkInfoImpl(char bUseLocalPlayerInfo, struct Unknown& PerkDeckClassInfo); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.SetPerkInfoImpl(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetPerkInfoImpl(char bUseLocalPlayerInfo, struct FPerkDeckClassInfo& PerkDeckClassInfo); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.SetPerkInfoImpl(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnChangedCurrentPerkDeckSelectInfo(); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.OnChangedCurrentPerkDeckSelectInfo(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CheckSelectMode(); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.CheckSelectMode(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void DelegateChoosePerkDeck_Event_1(char bSuccess); // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.DelegateChoosePerkDeck_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -289,11 +289,11 @@ inline void UUW-PerkDeckWidget_C::GetComingSoonClass(struct FName& ClassRow) {
 }
 
 // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.UpdateNewbieAdvantage
-inline void UUW-PerkDeckWidget_C::UpdateNewbieAdvantage(struct Unknown& PerkDeckData) {
+inline void UUW-PerkDeckWidget_C::UpdateNewbieAdvantage(struct FPerkDeckData& PerkDeckData) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.UpdateNewbieAdvantage");
 
 	struct UpdateNewbieAdvantage_Params {
-		struct Unknown& PerkDeckData;
+		struct FPerkDeckData& PerkDeckData;
 	}; UpdateNewbieAdvantage_Params Params;
 
 
@@ -407,14 +407,14 @@ inline void UUW-PerkDeckWidget_C::HasPerkDeckClassInfo(char& NewParam) {
 }
 
 // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.SetButtonInfo
-inline void UUW-PerkDeckWidget_C::SetButtonInfo(struct Unknown Button, struct Unknown TextPrice, int32_t Price, struct Unknown TextRemainCount, int32_t RemainCount) {
+inline void UUW-PerkDeckWidget_C::SetButtonInfo(struct UButton Button, struct UTextBlock TextPrice, int32_t Price, struct UTextBlock TextRemainCount, int32_t RemainCount) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.SetButtonInfo");
 
 	struct SetButtonInfo_Params {
-		struct Unknown Button;
-		struct Unknown TextPrice;
+		struct UButton Button;
+		struct UTextBlock TextPrice;
 		int32_t Price;
-		struct Unknown TextRemainCount;
+		struct UTextBlock TextRemainCount;
 		int32_t RemainCount;
 	}; SetButtonInfo_Params Params;
 
@@ -579,13 +579,13 @@ inline void UUW-PerkDeckWidget_C::SetPerkModeInfo(int32_t PerkMode) {
 }
 
 // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.OnMouseButtonDown
-inline struct Unknown UUW-PerkDeckWidget_C::OnMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UUW-PerkDeckWidget_C::OnMouseButtonDown(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.OnMouseButtonDown");
 
 	struct OnMouseButtonDown_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnMouseButtonDown_Params Params;
 
@@ -602,12 +602,12 @@ inline struct Unknown UUW-PerkDeckWidget_C::OnMouseButtonDown(struct Unknown MyG
 }
 
 // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.GetClassVideoSource
-inline void UUW-PerkDeckWidget_C::GetClassVideoSource(int32_t PerkDeckID, struct Unknown& VideoSource) {
+inline void UUW-PerkDeckWidget_C::GetClassVideoSource(int32_t PerkDeckID, struct UMediaSource& VideoSource) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.GetClassVideoSource");
 
 	struct GetClassVideoSource_Params {
 		int32_t PerkDeckID;
-		struct Unknown& VideoSource;
+		struct UMediaSource& VideoSource;
 	}; GetClassVideoSource_Params Params;
 
 	Params.PerkDeckID = PerkDeckID;
@@ -650,12 +650,12 @@ inline void UUW-PerkDeckWidget_C::CloseMovie() {
 }
 
 // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.GetVisibility_RemainTime
-inline enum class Unknow UUW-PerkDeckWidget_C::GetVisibility_RemainTime() {
+inline enum class ESlateVisibility UUW-PerkDeckWidget_C::GetVisibility_RemainTime() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.GetVisibility_RemainTime");
 
 	struct GetVisibility_RemainTime_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class ESlateVisibility ReturnValue;
 
 	}; GetVisibility_RemainTime_Params Params;
 
@@ -668,12 +668,12 @@ inline enum class Unknow UUW-PerkDeckWidget_C::GetVisibility_RemainTime() {
 }
 
 // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.GetInventoryItemDetailInfo
-inline void UUW-PerkDeckWidget_C::GetInventoryItemDetailInfo(struct FName Name, struct Unknown& Info) {
+inline void UUW-PerkDeckWidget_C::GetInventoryItemDetailInfo(struct FName Name, struct FInventoryItemDetailInfo& Info) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.GetInventoryItemDetailInfo");
 
 	struct GetInventoryItemDetailInfo_Params {
 		struct FName Name;
-		struct Unknown& Info;
+		struct FInventoryItemDetailInfo& Info;
 	}; GetInventoryItemDetailInfo_Params Params;
 
 	Params.Name = Name;
@@ -734,12 +734,12 @@ inline void UUW-PerkDeckWidget_C::SetGoldInfo() {
 }
 
 // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.SetPerkInfo
-inline void UUW-PerkDeckWidget_C::SetPerkInfo(char UseLocalPlayerInfo, struct Unknown PerkDeckClassInfo) {
+inline void UUW-PerkDeckWidget_C::SetPerkInfo(char UseLocalPlayerInfo, struct FPerkDeckClassInfo PerkDeckClassInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.SetPerkInfo");
 
 	struct SetPerkInfo_Params {
 		char UseLocalPlayerInfo;
-		struct Unknown PerkDeckClassInfo;
+		struct FPerkDeckClassInfo PerkDeckClassInfo;
 	}; SetPerkInfo_Params Params;
 
 	Params.UseLocalPlayerInfo = UseLocalPlayerInfo;
@@ -780,13 +780,13 @@ inline void UUW-PerkDeckWidget_C::InitInfos() {
 }
 
 // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.OnMouseWheel
-inline struct Unknown UUW-PerkDeckWidget_C::OnMouseWheel(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UUW-PerkDeckWidget_C::OnMouseWheel(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.OnMouseWheel");
 
 	struct OnMouseWheel_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnMouseWheel_Params Params;
 
@@ -831,11 +831,11 @@ inline void UUW-PerkDeckWidget_C::Show() {
 }
 
 // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.OnLoaded_A83B5F164320A0E753E9088699009EB0
-inline void UUW-PerkDeckWidget_C::OnLoaded_A83B5F164320A0E753E9088699009EB0(struct Unknown Loaded) {
+inline void UUW-PerkDeckWidget_C::OnLoaded_A83B5F164320A0E753E9088699009EB0(struct Object Loaded) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.OnLoaded_A83B5F164320A0E753E9088699009EB0");
 
 	struct OnLoaded_A83B5F164320A0E753E9088699009EB0_Params {
-		struct Unknown Loaded;
+		struct Object Loaded;
 	}; OnLoaded_A83B5F164320A0E753E9088699009EB0_Params Params;
 
 	Params.Loaded = Loaded;
@@ -860,11 +860,11 @@ inline void UUW-PerkDeckWidget_C::Finished_68D0074544AABC70455E90A37E1ED67B() {
 }
 
 // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.OnLoaded_C916107845AEFBC703CB8F9D00DAC0F0
-inline void UUW-PerkDeckWidget_C::OnLoaded_C916107845AEFBC703CB8F9D00DAC0F0(struct Unknown Loaded) {
+inline void UUW-PerkDeckWidget_C::OnLoaded_C916107845AEFBC703CB8F9D00DAC0F0(struct Object Loaded) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.OnLoaded_C916107845AEFBC703CB8F9D00DAC0F0");
 
 	struct OnLoaded_C916107845AEFBC703CB8F9D00DAC0F0_Params {
-		struct Unknown Loaded;
+		struct Object Loaded;
 	}; OnLoaded_C916107845AEFBC703CB8F9D00DAC0F0_Params Params;
 
 	Params.Loaded = Loaded;
@@ -875,11 +875,11 @@ inline void UUW-PerkDeckWidget_C::OnLoaded_C916107845AEFBC703CB8F9D00DAC0F0(stru
 }
 
 // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.OnLoaded_19FB202A430BEE3458DBA2B7F1362CC8
-inline void UUW-PerkDeckWidget_C::OnLoaded_19FB202A430BEE3458DBA2B7F1362CC8(struct Unknown Loaded) {
+inline void UUW-PerkDeckWidget_C::OnLoaded_19FB202A430BEE3458DBA2B7F1362CC8(struct Object Loaded) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.OnLoaded_19FB202A430BEE3458DBA2B7F1362CC8");
 
 	struct OnLoaded_19FB202A430BEE3458DBA2B7F1362CC8_Params {
-		struct Unknown Loaded;
+		struct Object Loaded;
 	}; OnLoaded_19FB202A430BEE3458DBA2B7F1362CC8_Params Params;
 
 	Params.Loaded = Loaded;
@@ -890,11 +890,11 @@ inline void UUW-PerkDeckWidget_C::OnLoaded_19FB202A430BEE3458DBA2B7F1362CC8(stru
 }
 
 // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.AsyncLoadingWeapon
-inline void UUW-PerkDeckWidget_C::AsyncLoadingWeapon(struct Unknown IconTexture) {
+inline void UUW-PerkDeckWidget_C::AsyncLoadingWeapon(struct TSoftObjectPtr<UPaperSprite> IconTexture) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.AsyncLoadingWeapon");
 
 	struct AsyncLoadingWeapon_Params {
-		struct Unknown IconTexture;
+		struct TSoftObjectPtr<UPaperSprite> IconTexture;
 	}; AsyncLoadingWeapon_Params Params;
 
 	Params.IconTexture = IconTexture;
@@ -905,11 +905,11 @@ inline void UUW-PerkDeckWidget_C::AsyncLoadingWeapon(struct Unknown IconTexture)
 }
 
 // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.AsyncLoadingClass
-inline void UUW-PerkDeckWidget_C::AsyncLoadingClass(struct Unknown Texture) {
+inline void UUW-PerkDeckWidget_C::AsyncLoadingClass(struct TSoftObjectPtr<Object> Texture) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.AsyncLoadingClass");
 
 	struct AsyncLoadingClass_Params {
-		struct Unknown Texture;
+		struct TSoftObjectPtr<Object> Texture;
 	}; AsyncLoadingClass_Params Params;
 
 	Params.Texture = Texture;
@@ -935,11 +935,11 @@ inline void UUW-PerkDeckWidget_C::OnDelegatePayGoldOnChangeDeck(char bSuccess) {
 }
 
 // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.OnAnimationFinished
-inline void UUW-PerkDeckWidget_C::OnAnimationFinished(struct Unknown Animation) {
+inline void UUW-PerkDeckWidget_C::OnAnimationFinished(struct UWidgetAnimation Animation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.OnAnimationFinished");
 
 	struct OnAnimationFinished_Params {
-		struct Unknown Animation;
+		struct UWidgetAnimation Animation;
 	}; OnAnimationFinished_Params Params;
 
 	Params.Animation = Animation;
@@ -992,12 +992,12 @@ inline void UUW-PerkDeckWidget_C::Destruct() {
 }
 
 // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.OnBattleRoyalStateChanged
-inline void UUW-PerkDeckWidget_C::OnBattleRoyalStateChanged(enum class Unknow PrevState, enum class Unknow CurrentState) {
+inline void UUW-PerkDeckWidget_C::OnBattleRoyalStateChanged(enum class EBattleRoyaleState PrevState, enum class EBattleRoyaleState CurrentState) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.OnBattleRoyalStateChanged");
 
 	struct OnBattleRoyalStateChanged_Params {
-		enum class Unknow PrevState;
-		enum class Unknow CurrentState;
+		enum class EBattleRoyaleState PrevState;
+		enum class EBattleRoyaleState CurrentState;
 	}; OnBattleRoyalStateChanged_Params Params;
 
 	Params.PrevState = PrevState;
@@ -1122,11 +1122,11 @@ inline void UUW-PerkDeckWidget_C::Construct() {
 }
 
 // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.Tick
-inline void UUW-PerkDeckWidget_C::Tick(struct Unknown MyGeometry, float InDeltaTime) {
+inline void UUW-PerkDeckWidget_C::Tick(struct FGeometry MyGeometry, float InDeltaTime) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.Tick");
 
 	struct Tick_Params {
-		struct Unknown MyGeometry;
+		struct FGeometry MyGeometry;
 		float InDeltaTime;
 	}; Tick_Params Params;
 
@@ -1139,11 +1139,11 @@ inline void UUW-PerkDeckWidget_C::Tick(struct Unknown MyGeometry, float InDeltaT
 }
 
 // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.AsyncLoadingClassIcon
-inline void UUW-PerkDeckWidget_C::AsyncLoadingClassIcon(struct Unknown Texture) {
+inline void UUW-PerkDeckWidget_C::AsyncLoadingClassIcon(struct TSoftObjectPtr<Object> Texture) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.AsyncLoadingClassIcon");
 
 	struct AsyncLoadingClassIcon_Params {
-		struct Unknown Texture;
+		struct TSoftObjectPtr<Object> Texture;
 	}; AsyncLoadingClassIcon_Params Params;
 
 	Params.Texture = Texture;
@@ -1282,12 +1282,12 @@ inline void UUW-PerkDeckWidget_C::OnChangedTeamPlayerClass() {
 }
 
 // Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.SetPerkInfoImpl
-inline void UUW-PerkDeckWidget_C::SetPerkInfoImpl(char bUseLocalPlayerInfo, struct Unknown& PerkDeckClassInfo) {
+inline void UUW-PerkDeckWidget_C::SetPerkInfoImpl(char bUseLocalPlayerInfo, struct FPerkDeckClassInfo& PerkDeckClassInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PerkDeckWidget.UW-PerkDeckWidget_C.SetPerkInfoImpl");
 
 	struct SetPerkInfoImpl_Params {
 		char bUseLocalPlayerInfo;
-		struct Unknown& PerkDeckClassInfo;
+		struct FPerkDeckClassInfo& PerkDeckClassInfo;
 	}; SetPerkInfoImpl_Params Params;
 
 	Params.bUseLocalPlayerInfo = bUseLocalPlayerInfo;

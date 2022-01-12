@@ -3,9 +3,9 @@ class UUW-ImageTextCell_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown RichTextBlock_52; // 0x250 (8)
-	struct Unknown DefaultTextStyle; // 0x258 (616)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct URichTextBlock RichTextBlock_52; // 0x250 (8)
+	struct FTextBlockStyle DefaultTextStyle; // 0x258 (616)
 	struct FText TextString; // 0x4C0 (24)
 
 	void Construct(); // Function UW-ImageTextCell.UW-ImageTextCell_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>

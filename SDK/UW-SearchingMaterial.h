@@ -3,50 +3,50 @@ class UUW-SearchingMaterial_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Anim_LoopHintSpecialWeapon; // 0x250 (8)
-	struct Unknown Button_183; // 0x258 (8)
-	struct Unknown Button_283; // 0x260 (8)
-	struct Unknown CanvasPanel; // 0x268 (8)
-	struct Unknown CanvasPanel_2; // 0x270 (8)
-	struct Unknown Image_2; // 0x278 (8)
-	struct Unknown Image_3; // 0x280 (8)
-	struct Unknown Image_4; // 0x288 (8)
-	struct Unknown Image_185; // 0x290 (8)
-	struct Unknown Image_186; // 0x298 (8)
-	struct Unknown Image_189; // 0x2A0 (8)
-	struct Unknown Image_297; // 0x2A8 (8)
-	struct Unknown Img_Find; // 0x2B0 (8)
-	struct Unknown Overlay_2; // 0x2B8 (8)
-	struct Unknown SizeBox_3; // 0x2C0 (8)
-	struct Unknown T_SerchButton; // 0x2C8 (8)
-	struct Unknown TextBlock_5; // 0x2D0 (8)
-	struct Unknown TextBlock_495; // 0x2D8 (8)
-	struct Unknown Throbber; // 0x2E0 (8)
-	struct Unknown UW-Inventory_MaterialIconSlot; // 0x2E8 (8)
-	struct Unknown UW-Inventory_MaterialIconSlot_2; // 0x2F0 (8)
-	struct Unknown UW-Inventory_MaterialIconSlot_3; // 0x2F8 (8)
-	struct Unknown UW-Inventory_MaterialIconSlot_4; // 0x300 (8)
-	struct Unknown UW-Inventory_MaterialIconSlot_5; // 0x308 (8)
-	struct Unknown UW-Inventory_MaterialIconSlot_6; // 0x310 (8)
-	struct Unknown UW-Inventory_MaterialIconSlot_7; // 0x318 (8)
-	struct Unknown UW-Inventory_MaterialIconSlot_8; // 0x320 (8)
-	struct Unknown UW-Inventory_MaterialIconSlot_9; // 0x328 (8)
-	struct Unknown UW-Inventory_MaterialIconSlot_10; // 0x330 (8)
-	struct Unknown UW-Inventory_MaterialIconSlot_11; // 0x338 (8)
-	struct Unknown UW-Inventory_MaterialIconSlot_12; // 0x340 (8)
-	struct Unknown VerticalBox_2; // 0x348 (8)
-	struct Unknown VerticalBox_4; // 0x350 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UWidgetAnimation Anim_LoopHintSpecialWeapon; // 0x250 (8)
+	struct UButton Button_183; // 0x258 (8)
+	struct UButton Button_283; // 0x260 (8)
+	struct UCanvasPanel CanvasPanel; // 0x268 (8)
+	struct UCanvasPanel CanvasPanel_2; // 0x270 (8)
+	struct UImage Image_2; // 0x278 (8)
+	struct UImage Image_3; // 0x280 (8)
+	struct UImage Image_4; // 0x288 (8)
+	struct UImage Image_185; // 0x290 (8)
+	struct UImage Image_186; // 0x298 (8)
+	struct UImage Image_189; // 0x2A0 (8)
+	struct UImage Image_297; // 0x2A8 (8)
+	struct UImage Img_Find; // 0x2B0 (8)
+	struct UOverlay Overlay_2; // 0x2B8 (8)
+	struct USizeBox SizeBox_3; // 0x2C0 (8)
+	struct UTextBlock T_SerchButton; // 0x2C8 (8)
+	struct UTextBlock TextBlock_5; // 0x2D0 (8)
+	struct UTextBlock TextBlock_495; // 0x2D8 (8)
+	struct UThrobber Throbber; // 0x2E0 (8)
+	struct UUW-Inventory_MaterialIconSlot_C UW-Inventory_MaterialIconSlot; // 0x2E8 (8)
+	struct UUW-Inventory_MaterialIconSlot_C UW-Inventory_MaterialIconSlot_2; // 0x2F0 (8)
+	struct UUW-Inventory_MaterialIconSlot_C UW-Inventory_MaterialIconSlot_3; // 0x2F8 (8)
+	struct UUW-Inventory_MaterialIconSlot_C UW-Inventory_MaterialIconSlot_4; // 0x300 (8)
+	struct UUW-Inventory_MaterialIconSlot_C UW-Inventory_MaterialIconSlot_5; // 0x308 (8)
+	struct UUW-Inventory_MaterialIconSlot_C UW-Inventory_MaterialIconSlot_6; // 0x310 (8)
+	struct UUW-Inventory_MaterialIconSlot_C UW-Inventory_MaterialIconSlot_7; // 0x318 (8)
+	struct UUW-Inventory_MaterialIconSlot_C UW-Inventory_MaterialIconSlot_8; // 0x320 (8)
+	struct UUW-Inventory_MaterialIconSlot_C UW-Inventory_MaterialIconSlot_9; // 0x328 (8)
+	struct UUW-Inventory_MaterialIconSlot_C UW-Inventory_MaterialIconSlot_10; // 0x330 (8)
+	struct UUW-Inventory_MaterialIconSlot_C UW-Inventory_MaterialIconSlot_11; // 0x338 (8)
+	struct UUW-Inventory_MaterialIconSlot_C UW-Inventory_MaterialIconSlot_12; // 0x340 (8)
+	struct UVerticalBox VerticalBox_2; // 0x348 (8)
+	struct UVerticalBox VerticalBox_4; // 0x350 (8)
 	char ShowButton : 0; // 0x358 (1)
 	int32_t Index; // 0x35C (4)
-	struct TArray<Unknown> TempList; // 0x360 (16)
+	struct TArray<struct FName> TempList; // 0x360 (16)
 	int32_t MaxSlotCount; // 0x370 (4)
 	char EnableShowExpertWeapon : 0; // 0x374 (1)
 
-	void Get Slot Index(int32_t Index, struct Unknown& Slot); // Function UW-SearchingMaterial.UW-SearchingMaterial_C.Get Slot Index(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Get Slot Index(int32_t Index, struct UUW-Inventory_MaterialIconSlot_C& Slot); // Function UW-SearchingMaterial.UW-SearchingMaterial_C.Get Slot Index(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-SearchingMaterial.UW-SearchingMaterial_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Update(); // Function UW-SearchingMaterial.UW-SearchingMaterial_C.Update(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void 鉹@t元_2(struct Unknown MaterialItemKey, char IsSelect); // Function UW-SearchingMaterial.UW-SearchingMaterial_C.鉹@t元_2(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void 鉹@t元_2(struct FSelecteSearchMaterialItemInfo MaterialItemKey, char IsSelect); // Function UW-SearchingMaterial.UW-SearchingMaterial_C.鉹@t元_2(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Destruct(); // Function UW-SearchingMaterial.UW-SearchingMaterial_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__Button_282_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-SearchingMaterial.UW-SearchingMaterial_C.BndEvt__Button_282_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Enable MaterialSearch(char EnableMaterialSearch); // Function UW-SearchingMaterial.UW-SearchingMaterial_C.Enable MaterialSearch(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -60,12 +60,12 @@ public:
 };
 
 // Function UW-SearchingMaterial.UW-SearchingMaterial_C.Get Slot Index
-inline void UUW-SearchingMaterial_C::Get Slot Index(int32_t Index, struct Unknown& Slot) {
+inline void UUW-SearchingMaterial_C::Get Slot Index(int32_t Index, struct UUW-Inventory_MaterialIconSlot_C& Slot) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-SearchingMaterial.UW-SearchingMaterial_C.Get Slot Index");
 
 	struct Get Slot Index_Params {
 		int32_t Index;
-		struct Unknown& Slot;
+		struct UUW-Inventory_MaterialIconSlot_C& Slot;
 	}; Get Slot Index_Params Params;
 
 	Params.Index = Index;
@@ -107,11 +107,11 @@ inline void UUW-SearchingMaterial_C::Update() {
 }
 
 // Function UW-SearchingMaterial.UW-SearchingMaterial_C.鉹@t元_2
-inline void UUW-SearchingMaterial_C::鉹@t元_2(struct Unknown MaterialItemKey, char IsSelect) {
+inline void UUW-SearchingMaterial_C::鉹@t元_2(struct FSelecteSearchMaterialItemInfo MaterialItemKey, char IsSelect) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-SearchingMaterial.UW-SearchingMaterial_C.鉹@t元_2");
 
 	struct 鉹@t元_2_Params {
-		struct Unknown MaterialItemKey;
+		struct FSelecteSearchMaterialItemInfo MaterialItemKey;
 		char IsSelect;
 	}; 鉹@t元_2_Params Params;
 

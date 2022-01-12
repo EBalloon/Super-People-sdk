@@ -442,8 +442,8 @@ class UBTNode : public Object {
 public:
 
 	struct FString NodeName; // 0x30 (16)
-	struct Unknown TreeAsset; // 0x40 (8)
-	struct Unknown ParentNode; // 0x48 (8)
+	struct UBehaviorTree TreeAsset; // 0x40 (8)
+	struct UBTCompositeNode ParentNode; // 0x48 (8)
 };
 
 // Class AIModule.BTTaskNode
@@ -451,7 +451,7 @@ class UBTTaskNode : public UBTNode {
 
 public:
 
-	struct TArray<Unknown> Services; // 0x58 (16)
+	struct TArray<struct UBTService> Services; // 0x58 (16)
 	char bIgnoreRestartSelf : 0; // 0x68 (1)
 };
 
@@ -460,7 +460,7 @@ class UBTTask_BlackboardBase : public UBTTaskNode {
 
 public:
 
-	struct Unknown BlackboardKey; // 0x70 (40)
+	struct FBlackboardKeySelector BlackboardKey; // 0x70 (40)
 };
 
 // Class AIModule.AIController
@@ -475,36 +475,36 @@ public:
 	char bAllowStrafe : 0; // 0x3F0 (1)
 	char bWantsPlayerState : 0; // 0x3F0 (1)
 	char bSetControlRotationFromPawnOrientation : 0; // 0x3F0 (1)
-	struct Unknown PathFollowingComponent; // 0x3F8 (8)
-	struct Unknown BrainComponent; // 0x400 (8)
-	struct Unknown PerceptionComponent; // 0x408 (8)
-	struct Unknown ActionsComp; // 0x410 (8)
-	struct Unknown Blackboard; // 0x418 (8)
-	struct Unknown CachedGameplayTasksComponent; // 0x420 (8)
-	struct Unknown* DefaultNavigationFilterClass; // 0x428 (8)
+	struct UPathFollowingComponent PathFollowingComponent; // 0x3F8 (8)
+	struct UBrainComponent BrainComponent; // 0x400 (8)
+	struct UAIPerceptionComponent PerceptionComponent; // 0x408 (8)
+	struct UPawnActionsComponent ActionsComp; // 0x410 (8)
+	struct UBlackboardComponent Blackboard; // 0x418 (8)
+	struct UGameplayTasksComponent CachedGameplayTasksComponent; // 0x420 (8)
+	struct UClass* DefaultNavigationFilterClass; // 0x428 (8)
 	struct FMulticastInlineDelegate ReceiveMoveCompleted; // 0x430 (16)
 
-	char UseBlackboard(struct Unknown BlackboardAsset, struct Unknown& BlackboardComponent); // Function AIModule.AIController.UseBlackboard(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x477AFF0>
-	void UnclaimTaskResource(struct Unknown* ResourceClass); // Function AIModule.AIController.UnclaimTaskResource(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x477AE60>
-	void SetPathFollowingComponent(struct Unknown NewPFComponent); // Function AIModule.AIController.SetPathFollowingComponent(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x477A990>
+	char UseBlackboard(struct UBlackboardData BlackboardAsset, struct UBlackboardComponent& BlackboardComponent); // Function AIModule.AIController.UseBlackboard(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x477AFF0>
+	void UnclaimTaskResource(struct UClass* ResourceClass); // Function AIModule.AIController.UnclaimTaskResource(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x477AE60>
+	void SetPathFollowingComponent(struct UPathFollowingComponent NewPFComponent); // Function AIModule.AIController.SetPathFollowingComponent(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x477A990>
 	void SetMoveBlockDetection(char bEnable); // Function AIModule.AIController.SetMoveBlockDetection(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x477A900>
-	char RunBehaviorTree(struct Unknown BTAsset); // Function AIModule.AIController.RunBehaviorTree(Native|Public|BlueprintCallable) // <Game_BE.exe+0x477A730>
-	void OnUsingBlackBoard(struct Unknown BlackboardComp, struct Unknown BlackboardAsset); // Function AIModule.AIController.OnUsingBlackBoard(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnGameplayTaskResourcesClaimed(struct Unknown NewlyClaimed, struct Unknown FreshlyReleased); // Function AIModule.AIController.OnGameplayTaskResourcesClaimed(Native|Public) // <Game_BE.exe+0x477A4C0>
-	char MoveToLocation(struct Unknown& Dest, float AcceptanceRadius, char bStopOnOverlap, char bUsePathfinding, char bProjectDestinationToNavigation, char bCanStrafe, struct Unknown* FilterClass, char bAllowPartialPath); // Function AIModule.AIController.MoveToLocation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x477A250>
-	char MoveToActor(struct Unknown Goal, float AcceptanceRadius, char bStopOnOverlap, char bUsePathfinding, char bCanStrafe, struct Unknown* FilterClass, char bAllowPartialPath); // Function AIModule.AIController.MoveToActor(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x477A030>
-	void K2_SetFocus(struct Unknown NewFocus); // Function AIModule.AIController.K2_SetFocus(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4779EA0>
-	void K2_SetFocalPoint(struct Unknown FP); // Function AIModule.AIController.K2_SetFocalPoint(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4779E10>
+	char RunBehaviorTree(struct UBehaviorTree BTAsset); // Function AIModule.AIController.RunBehaviorTree(Native|Public|BlueprintCallable) // <Game_BE.exe+0x477A730>
+	void OnUsingBlackBoard(struct UBlackboardComponent BlackboardComp, struct UBlackboardData BlackboardAsset); // Function AIModule.AIController.OnUsingBlackBoard(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnGameplayTaskResourcesClaimed(struct FGameplayResourceSet NewlyClaimed, struct FGameplayResourceSet FreshlyReleased); // Function AIModule.AIController.OnGameplayTaskResourcesClaimed(Native|Public) // <Game_BE.exe+0x477A4C0>
+	char MoveToLocation(struct FVector& Dest, float AcceptanceRadius, char bStopOnOverlap, char bUsePathfinding, char bProjectDestinationToNavigation, char bCanStrafe, struct UClass* FilterClass, char bAllowPartialPath); // Function AIModule.AIController.MoveToLocation(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x477A250>
+	char MoveToActor(struct UActor Goal, float AcceptanceRadius, char bStopOnOverlap, char bUsePathfinding, char bCanStrafe, struct UClass* FilterClass, char bAllowPartialPath); // Function AIModule.AIController.MoveToActor(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x477A030>
+	void K2_SetFocus(struct UActor NewFocus); // Function AIModule.AIController.K2_SetFocus(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4779EA0>
+	void K2_SetFocalPoint(struct FVector FP); // Function AIModule.AIController.K2_SetFocalPoint(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4779E10>
 	void K2_ClearFocus(); // Function AIModule.AIController.K2_ClearFocus(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4779DF0>
 	char HasPartialPath(); // Function AIModule.AIController.HasPartialPath(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4779C10>
-	struct Unknown GetPathFollowingComponent(); // Function AIModule.AIController.GetPathFollowingComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4779A50>
+	struct UPathFollowingComponent GetPathFollowingComponent(); // Function AIModule.AIController.GetPathFollowingComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4779A50>
 	char GetMoveStatus(); // Function AIModule.AIController.GetMoveStatus(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4779A20>
-	struct Unknown GetImmediateMoveDestination(); // Function AIModule.AIController.GetImmediateMoveDestination(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x47798F0>
-	struct Unknown GetFocusActor(); // Function AIModule.AIController.GetFocusActor(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x47798C0>
-	struct Unknown GetFocalPointOnActor(struct Unknown Actor); // Function AIModule.AIController.GetFocalPointOnActor(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4779810>
-	struct Unknown GetFocalPoint(); // Function AIModule.AIController.GetFocalPoint(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x47797D0>
-	struct Unknown GetAIPerceptionComponent(); // Function AIModule.AIController.GetAIPerceptionComponent(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x47794C0>
-	void ClaimTaskResource(struct Unknown* ResourceClass); // Function AIModule.AIController.ClaimTaskResource(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x47791E0>
+	struct FVector GetImmediateMoveDestination(); // Function AIModule.AIController.GetImmediateMoveDestination(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x47798F0>
+	struct UActor GetFocusActor(); // Function AIModule.AIController.GetFocusActor(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x47798C0>
+	struct FVector GetFocalPointOnActor(struct UActor Actor); // Function AIModule.AIController.GetFocalPointOnActor(Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4779810>
+	struct FVector GetFocalPoint(); // Function AIModule.AIController.GetFocalPoint(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x47797D0>
+	struct UAIPerceptionComponent GetAIPerceptionComponent(); // Function AIModule.AIController.GetAIPerceptionComponent(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x47794C0>
+	void ClaimTaskResource(struct UClass* ResourceClass); // Function AIModule.AIController.ClaimTaskResource(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x47791E0>
 };
 
 // Class AIModule.BTService
@@ -526,7 +526,7 @@ public:
 	struct FMulticastInlineDelegate OnSuccess; // 0x28 (16)
 	struct FMulticastInlineDelegate OnFail; // 0x38 (16)
 
-	void OnMoveCompleted(struct Unknown RequestID, char MovementResult); // Function AIModule.AIAsyncTaskBlueprintProxy.OnMoveCompleted(Final|Native|Public) // <Game_BE.exe+0x477A590>
+	void OnMoveCompleted(struct FAIRequestID RequestID, char MovementResult); // Function AIModule.AIAsyncTaskBlueprintProxy.OnMoveCompleted(Final|Native|Public) // <Game_BE.exe+0x477A590>
 };
 
 // Class AIModule.AIDataProvider_QueryParams
@@ -555,20 +555,20 @@ class UAIPerceptionComponent : public UActorComponent {
 
 public:
 
-	struct TArray<Unknown> SensesConfig; // 0xB0 (16)
-	struct Unknown* DominantSense; // 0xC0 (8)
-	struct Unknown AIOwner; // 0xD8 (8)
+	struct TArray<struct UAISenseConfig> SensesConfig; // 0xB0 (16)
+	struct UClass* DominantSense; // 0xC0 (8)
+	struct AAIController AIOwner; // 0xD8 (8)
 	struct FMulticastInlineDelegate OnPerceptionUpdated; // 0x160 (16)
 	struct FMulticastInlineDelegate OnTargetPerceptionUpdated; // 0x170 (16)
 
-	void SetSenseEnabled(struct Unknown* SenseClass, char bEnable); // Function AIModule.AIPerceptionComponent.SetSenseEnabled(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x477AA10>
+	void SetSenseEnabled(struct UClass* SenseClass, char bEnable); // Function AIModule.AIPerceptionComponent.SetSenseEnabled(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x477AA10>
 	void RequestStimuliListenerUpdate(); // Function AIModule.AIPerceptionComponent.RequestStimuliListenerUpdate(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x477A710>
-	void OnOwnerEndPlay(struct Unknown Actor, char EndPlayReason); // Function AIModule.AIPerceptionComponent.OnOwnerEndPlay(Final|Native|Public) // <Game_BE.exe+0x477A650>
-	void GetPerceivedHostileActors(struct TArray<Unknown>& OutActors); // Function AIModule.AIPerceptionComponent.GetPerceivedHostileActors(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4779B60>
-	void GetPerceivedActors(struct Unknown* SenseToUse, struct TArray<Unknown>& OutActors); // Function AIModule.AIPerceptionComponent.GetPerceivedActors(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4779A70>
-	void GetKnownPerceivedActors(struct Unknown* SenseToUse, struct TArray<Unknown>& OutActors); // Function AIModule.AIPerceptionComponent.GetKnownPerceivedActors(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4779930>
-	void GetCurrentlyPerceivedActors(struct Unknown* SenseToUse, struct TArray<Unknown>& OutActors); // Function AIModule.AIPerceptionComponent.GetCurrentlyPerceivedActors(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x47796E0>
-	char GetActorsPerception(struct Unknown Actor, struct Unknown& Info); // Function AIModule.AIPerceptionComponent.GetActorsPerception(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x47794E0>
+	void OnOwnerEndPlay(struct UActor Actor, char EndPlayReason); // Function AIModule.AIPerceptionComponent.OnOwnerEndPlay(Final|Native|Public) // <Game_BE.exe+0x477A650>
+	void GetPerceivedHostileActors(struct TArray<struct UActor>& OutActors); // Function AIModule.AIPerceptionComponent.GetPerceivedHostileActors(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4779B60>
+	void GetPerceivedActors(struct UClass* SenseToUse, struct TArray<struct UActor>& OutActors); // Function AIModule.AIPerceptionComponent.GetPerceivedActors(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4779A70>
+	void GetKnownPerceivedActors(struct UClass* SenseToUse, struct TArray<struct UActor>& OutActors); // Function AIModule.AIPerceptionComponent.GetKnownPerceivedActors(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4779930>
+	void GetCurrentlyPerceivedActors(struct UClass* SenseToUse, struct TArray<struct UActor>& OutActors); // Function AIModule.AIPerceptionComponent.GetCurrentlyPerceivedActors(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x47796E0>
+	char GetActorsPerception(struct UActor Actor, struct FActorPerceptionBlueprintInfo& Info); // Function AIModule.AIPerceptionComponent.GetActorsPerception(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x47794E0>
 	void ForgetAll(); // Function AIModule.AIPerceptionComponent.ForgetAll(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4779420>
 };
 
@@ -578,12 +578,12 @@ class UAIPerceptionStimuliSourceComponent : public UActorComponent {
 public:
 
 	char bAutoRegisterAsSource : 0; // 0xB0 (1)
-	struct TArray<Unknown> RegisterAsSourceForSenses; // 0xB8 (16)
+	struct TArray<struct UClass*> RegisterAsSourceForSenses; // 0xB8 (16)
 
-	void UnregisterFromSense(struct Unknown* SenseClass); // Function AIModule.AIPerceptionStimuliSourceComponent.UnregisterFromSense(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x477F960>
+	void UnregisterFromSense(struct UClass* SenseClass); // Function AIModule.AIPerceptionStimuliSourceComponent.UnregisterFromSense(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x477F960>
 	void UnregisterFromPerceptionSystem(); // Function AIModule.AIPerceptionStimuliSourceComponent.UnregisterFromPerceptionSystem(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x477F940>
 	void RegisterWithPerceptionSystem(); // Function AIModule.AIPerceptionStimuliSourceComponent.RegisterWithPerceptionSystem(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x477F260>
-	void RegisterForSense(struct Unknown* SenseClass); // Function AIModule.AIPerceptionStimuliSourceComponent.RegisterForSense(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x477F0F0>
+	void RegisterForSense(struct UClass* SenseClass); // Function AIModule.AIPerceptionStimuliSourceComponent.RegisterForSense(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x477F0F0>
 };
 
 // Class AIModule.AISubsystem
@@ -591,7 +591,7 @@ class UAISubsystem : public Object {
 
 public:
 
-	struct Unknown AISystem; // 0x30 (8)
+	struct UAISystem AISystem; // 0x30 (8)
 };
 
 // Class AIModule.AIPerceptionSystem
@@ -599,14 +599,14 @@ class UAIPerceptionSystem : public UAISubsystem {
 
 public:
 
-	struct TArray<Unknown> Senses; // 0x88 (16)
+	struct TArray<struct UAISense> Senses; // 0x88 (16)
 	float PerceptionAgingRate; // 0x98 (4)
 
-	void ReportPerceptionEvent(struct Unknown WorldContextObject, struct Unknown PerceptionEvent); // Function AIModule.AIPerceptionSystem.ReportPerceptionEvent(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x477F690>
-	void ReportEvent(struct Unknown PerceptionEvent); // Function AIModule.AIPerceptionSystem.ReportEvent(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x477F450>
-	char RegisterPerceptionStimuliSource(struct Unknown WorldContextObject, struct Unknown* Sense, struct Unknown Target); // Function AIModule.AIPerceptionSystem.RegisterPerceptionStimuliSource(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x477F170>
-	void OnPerceptionStimuliSourceEndPlay(struct Unknown Actor, char EndPlayReason); // Function AIModule.AIPerceptionSystem.OnPerceptionStimuliSourceEndPlay(Final|Native|Protected) // <Game_BE.exe+0x477F030>
-	struct Unknown* GetSenseClassForStimulus(struct Unknown WorldContextObject, struct Unknown& Stimulus); // Function AIModule.AIPerceptionSystem.GetSenseClassForStimulus(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x477EF00>
+	void ReportPerceptionEvent(struct Object WorldContextObject, struct UAISenseEvent PerceptionEvent); // Function AIModule.AIPerceptionSystem.ReportPerceptionEvent(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x477F690>
+	void ReportEvent(struct UAISenseEvent PerceptionEvent); // Function AIModule.AIPerceptionSystem.ReportEvent(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x477F450>
+	char RegisterPerceptionStimuliSource(struct Object WorldContextObject, struct UClass* Sense, struct UActor Target); // Function AIModule.AIPerceptionSystem.RegisterPerceptionStimuliSource(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x477F170>
+	void OnPerceptionStimuliSourceEndPlay(struct UActor Actor, char EndPlayReason); // Function AIModule.AIPerceptionSystem.OnPerceptionStimuliSourceEndPlay(Final|Native|Protected) // <Game_BE.exe+0x477F030>
+	struct UClass* GetSenseClassForStimulus(struct Object WorldContextObject, struct FAIStimulus& Stimulus); // Function AIModule.AIPerceptionSystem.GetSenseClassForStimulus(Final|Native|Static|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x477EF00>
 };
 
 // Class AIModule.AISense
@@ -615,10 +615,10 @@ class UAISense : public Object {
 public:
 
 	float DefaultExpirationAge; // 0x28 (4)
-	enum class Unknow NotifyType; // 0x2C (1)
+	enum class EAISenseNotifyType NotifyType; // 0x2C (1)
 	char bWantsNewPawnNotification : 0; // 0x30 (1)
 	char bAutoRegisterAllPawnsAsSources : 0; // 0x30 (1)
-	struct Unknown PerceptionSystemInstance; // 0x38 (8)
+	struct UAIPerceptionSystem PerceptionSystemInstance; // 0x38 (8)
 };
 
 // Class AIModule.AISense_Blueprint
@@ -626,17 +626,17 @@ class UAISense_Blueprint : public UAISense {
 
 public:
 
-	struct Unknown* ListenerDataType; // 0x80 (8)
-	struct TArray<Unknown> ListenerContainer; // 0x88 (16)
-	struct TArray<Unknown> UnprocessedEvents; // 0x98 (16)
+	struct UClass* ListenerDataType; // 0x80 (8)
+	struct TArray<struct UAIPerceptionComponent> ListenerContainer; // 0x88 (16)
+	struct TArray<struct UAISenseEvent> UnprocessedEvents; // 0x98 (16)
 
-	float OnUpdate(struct TArray<Unknown>& EventsToProcess); // Function AIModule.AISense_Blueprint.OnUpdate(Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnListenerUpdated(struct Unknown ActorListener, struct Unknown PerceptionComponent); // Function AIModule.AISense_Blueprint.OnListenerUpdated(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnListenerUnregistered(struct Unknown ActorListener, struct Unknown PerceptionComponent); // Function AIModule.AISense_Blueprint.OnListenerUnregistered(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnListenerRegistered(struct Unknown ActorListener, struct Unknown PerceptionComponent); // Function AIModule.AISense_Blueprint.OnListenerRegistered(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void K2_OnNewPawn(struct Unknown NewPawn); // Function AIModule.AISense_Blueprint.K2_OnNewPawn(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetAllListenerComponents(struct TArray<Unknown>& ListenerComponents); // Function AIModule.AISense_Blueprint.GetAllListenerComponents(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x477EE50>
-	void GetAllListenerActors(struct TArray<Unknown>& ListenerActors); // Function AIModule.AISense_Blueprint.GetAllListenerActors(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x477EDA0>
+	float OnUpdate(struct TArray<struct UAISenseEvent>& EventsToProcess); // Function AIModule.AISense_Blueprint.OnUpdate(Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnListenerUpdated(struct UActor ActorListener, struct UAIPerceptionComponent PerceptionComponent); // Function AIModule.AISense_Blueprint.OnListenerUpdated(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnListenerUnregistered(struct UActor ActorListener, struct UAIPerceptionComponent PerceptionComponent); // Function AIModule.AISense_Blueprint.OnListenerUnregistered(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnListenerRegistered(struct UActor ActorListener, struct UAIPerceptionComponent PerceptionComponent); // Function AIModule.AISense_Blueprint.OnListenerRegistered(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void K2_OnNewPawn(struct APawn NewPawn); // Function AIModule.AISense_Blueprint.K2_OnNewPawn(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetAllListenerComponents(struct TArray<struct UAIPerceptionComponent>& ListenerComponents); // Function AIModule.AISense_Blueprint.GetAllListenerComponents(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x477EE50>
+	void GetAllListenerActors(struct TArray<struct UActor>& ListenerActors); // Function AIModule.AISense_Blueprint.GetAllListenerActors(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x477EDA0>
 };
 
 // Class AIModule.AISense_Damage
@@ -644,9 +644,9 @@ class UAISense_Damage : public UAISense {
 
 public:
 
-	struct TArray<Unknown> RegisteredEvents; // 0x80 (16)
+	struct TArray<struct FAIDamageEvent> RegisteredEvents; // 0x80 (16)
 
-	void ReportDamageEvent(struct Unknown WorldContextObject, struct Unknown DamagedActor, struct Unknown Instigator, float DamageAmount, struct Unknown EventLocation, struct Unknown HitLocation); // Function AIModule.AISense_Damage.ReportDamageEvent(Final|Native|Static|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x477F280>
+	void ReportDamageEvent(struct Object WorldContextObject, struct UActor DamagedActor, struct UActor Instigator, float DamageAmount, struct FVector EventLocation, struct FVector HitLocation); // Function AIModule.AISense_Damage.ReportDamageEvent(Final|Native|Static|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x477F280>
 };
 
 // Class AIModule.AISense_Hearing
@@ -654,10 +654,10 @@ class UAISense_Hearing : public UAISense {
 
 public:
 
-	struct TArray<Unknown> NoiseEvents; // 0x80 (16)
+	struct TArray<struct FAINoiseEvent> NoiseEvents; // 0x80 (16)
 	float SpeedOfSoundSq; // 0x90 (4)
 
-	void ReportNoiseEvent(struct Unknown WorldContextObject, struct Unknown NoiseLocation, float Loudness, struct Unknown Instigator, float MaxRange, struct FName Tag); // Function AIModule.AISense_Hearing.ReportNoiseEvent(Final|Native|Static|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x477F4D0>
+	void ReportNoiseEvent(struct Object WorldContextObject, struct FVector NoiseLocation, float Loudness, struct UActor Instigator, float MaxRange, struct FName Tag); // Function AIModule.AISense_Hearing.ReportNoiseEvent(Final|Native|Static|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x477F4D0>
 };
 
 // Class AIModule.AISense_Prediction
@@ -665,10 +665,10 @@ class UAISense_Prediction : public UAISense {
 
 public:
 
-	struct TArray<Unknown> RegisteredEvents; // 0x80 (16)
+	struct TArray<struct FAIPredictionEvent> RegisteredEvents; // 0x80 (16)
 
-	void RequestPawnPredictionEvent(struct Unknown Requestor, struct Unknown PredictedActor, float PredictionTime); // Function AIModule.AISense_Prediction.RequestPawnPredictionEvent(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x477F840>
-	void RequestControllerPredictionEvent(struct Unknown Requestor, struct Unknown PredictedActor, float PredictionTime); // Function AIModule.AISense_Prediction.RequestControllerPredictionEvent(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x477F740>
+	void RequestPawnPredictionEvent(struct APawn Requestor, struct UActor PredictedActor, float PredictionTime); // Function AIModule.AISense_Prediction.RequestPawnPredictionEvent(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x477F840>
+	void RequestControllerPredictionEvent(struct AAIController Requestor, struct UActor PredictedActor, float PredictionTime); // Function AIModule.AISense_Prediction.RequestControllerPredictionEvent(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x477F740>
 };
 
 // Class AIModule.AISense_Sight
@@ -689,7 +689,7 @@ class UAISense_Team : public UAISense {
 
 public:
 
-	struct TArray<Unknown> RegisteredEvents; // 0x80 (16)
+	struct TArray<struct FAITeamStimulusEvent> RegisteredEvents; // 0x80 (16)
 };
 
 // Class AIModule.AISense_Touch
@@ -697,7 +697,7 @@ class UAISense_Touch : public UAISense {
 
 public:
 
-	struct TArray<Unknown> RegisteredEvents; // 0x80 (16)
+	struct TArray<struct FAITouchEvent> RegisteredEvents; // 0x80 (16)
 };
 
 // Class AIModule.AISenseConfig
@@ -705,7 +705,7 @@ class UAISenseConfig : public Object {
 
 public:
 
-	struct Unknown DebugColor; // 0x28 (4)
+	struct FColor DebugColor; // 0x28 (4)
 	float MaxAge; // 0x2C (4)
 	char bStartsEnabled : 0; // 0x30 (1)
 };
@@ -715,7 +715,7 @@ class UAISenseConfig_Blueprint : public UAISenseConfig {
 
 public:
 
-	struct Unknown* Implementation; // 0x48 (8)
+	struct UClass* Implementation; // 0x48 (8)
 };
 
 // Class AIModule.AISenseConfig_Damage
@@ -723,7 +723,7 @@ class UAISenseConfig_Damage : public UAISenseConfig {
 
 public:
 
-	struct Unknown* Implementation; // 0x48 (8)
+	struct UClass* Implementation; // 0x48 (8)
 };
 
 // Class AIModule.AISenseConfig_Hearing
@@ -731,11 +731,11 @@ class UAISenseConfig_Hearing : public UAISenseConfig {
 
 public:
 
-	struct Unknown* Implementation; // 0x48 (8)
+	struct UClass* Implementation; // 0x48 (8)
 	float HearingRange; // 0x50 (4)
 	float LoSHearingRange; // 0x54 (4)
 	char bUseLoSHearing : 0; // 0x58 (1)
-	struct Unknown DetectionByAffiliation; // 0x5C (4)
+	struct FAISenseAffiliationFilter DetectionByAffiliation; // 0x5C (4)
 };
 
 // Class AIModule.AISenseConfig_Sight
@@ -743,11 +743,11 @@ class UAISenseConfig_Sight : public UAISenseConfig {
 
 public:
 
-	struct Unknown* Implementation; // 0x48 (8)
+	struct UClass* Implementation; // 0x48 (8)
 	float SightRadius; // 0x50 (4)
 	float LoseSightRadius; // 0x54 (4)
 	float PeripheralVisionAngleDegrees; // 0x58 (4)
-	struct Unknown DetectionByAffiliation; // 0x5C (4)
+	struct FAISenseAffiliationFilter DetectionByAffiliation; // 0x5C (4)
 	float AutoSuccessRangeFromLastSeenLocation; // 0x60 (4)
 };
 
@@ -756,7 +756,7 @@ class UAISenseEvent_Damage : public UAISenseEvent {
 
 public:
 
-	struct Unknown Event; // 0x28 (48)
+	struct FAIDamageEvent Event; // 0x28 (48)
 };
 
 // Class AIModule.AISenseEvent_Hearing
@@ -764,7 +764,7 @@ class UAISenseEvent_Hearing : public UAISenseEvent {
 
 public:
 
-	struct Unknown Event; // 0x28 (48)
+	struct FAINoiseEvent Event; // 0x28 (48)
 };
 
 // Class AIModule.AISystem
@@ -772,8 +772,8 @@ class UAISystem : public UAISystemBase {
 
 public:
 
-	struct Unknown PerceptionSystemClassName; // 0x58 (24)
-	struct Unknown HotSpotManagerClassName; // 0x70 (24)
+	struct FSoftClassPath PerceptionSystemClassName; // 0x58 (24)
+	struct FSoftClassPath HotSpotManagerClassName; // 0x70 (24)
 	float AcceptanceRadius; // 0x88 (4)
 	float PathfollowingRegularPathPointAcceptanceRadius; // 0x8C (4)
 	float PathfollowingNavLinkAcceptanceRadius; // 0x90 (4)
@@ -785,12 +785,12 @@ public:
 	char bEnableDebuggerPlugin : 0; // 0x99 (1)
 	char bForgetStaleActors : 0; // 0x9A (1)
 	char DefaultSightCollisionChannel; // 0x9B (1)
-	struct Unknown BehaviorTreeManager; // 0xA0 (8)
-	struct Unknown EnvironmentQueryManager; // 0xA8 (8)
-	struct Unknown PerceptionSystem; // 0xB0 (8)
-	struct TArray<Unknown> AllProxyObjects; // 0xB8 (16)
-	struct Unknown HotSpotManager; // 0xC8 (8)
-	struct Unknown NavLocalGrids; // 0xD0 (8)
+	struct UBehaviorTreeManager BehaviorTreeManager; // 0xA0 (8)
+	struct UEnvQueryManager EnvironmentQueryManager; // 0xA8 (8)
+	struct UAIPerceptionSystem PerceptionSystem; // 0xB0 (8)
+	struct TArray<struct UAIAsyncTaskBlueprintProxy> AllProxyObjects; // 0xB8 (16)
+	struct UAIHotSpotManager HotSpotManager; // 0xC8 (8)
+	struct UNavLocalGridManager NavLocalGrids; // 0xD0 (8)
 
 	void AILoggingVerbose(); // Function AIModule.AISystem.AILoggingVerbose(Exec|Native|Public) // <Game_BE.exe+0x36B0610>
 	void AIIgnorePlayers(); // Function AIModule.AISystem.AIIgnorePlayers(Exec|Native|Public) // <Game_BE.exe+0x3CA4A00>
@@ -801,7 +801,7 @@ class UAITask : public UGameplayTask {
 
 public:
 
-	struct Unknown OwnerController; // 0x68 (8)
+	struct AAIController OwnerController; // 0x68 (8)
 };
 
 // Class AIModule.AITask_MoveTo
@@ -811,9 +811,9 @@ public:
 
 	struct FMulticastInlineDelegate OnRequestFailed; // 0x70 (16)
 	struct FMulticastInlineDelegate OnMoveFinished; // 0x80 (16)
-	struct Unknown MoveRequest; // 0x90 (64)
+	struct FAIMoveRequest MoveRequest; // 0x90 (64)
 
-	struct Unknown AIMoveTo(struct Unknown Controller, struct Unknown GoalLocation, struct Unknown GoalActor, float AcceptanceRadius, char StopOnOverlap, char AcceptPartialPath, char bUsePathfinding, char bLockAILogic, char bUseContinuosGoalTracking, char ProjectGoalOnNavigation); // Function AIModule.AITask_MoveTo.AIMoveTo(Final|Native|Static|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x47837B0>
+	struct UAITask_MoveTo AIMoveTo(struct AAIController Controller, struct FVector GoalLocation, struct UActor GoalActor, float AcceptanceRadius, char StopOnOverlap, char AcceptPartialPath, char bUsePathfinding, char bLockAILogic, char bUseContinuosGoalTracking, char ProjectGoalOnNavigation); // Function AIModule.AITask_MoveTo.AIMoveTo(Final|Native|Static|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x47837B0>
 };
 
 // Class AIModule.BehaviorTree
@@ -821,10 +821,10 @@ class UBehaviorTree : public Object {
 
 public:
 
-	struct Unknown RootNode; // 0x30 (8)
-	struct Unknown BlackboardAsset; // 0x38 (8)
-	struct TArray<Unknown> RootDecorators; // 0x40 (16)
-	struct TArray<Unknown> RootDecoratorOps; // 0x50 (16)
+	struct UBTCompositeNode RootNode; // 0x30 (8)
+	struct UBlackboardData BlackboardAsset; // 0x38 (8)
+	struct TArray<struct UBTDecorator> RootDecorators; // 0x40 (16)
+	struct TArray<struct FBTDecoratorLogic> RootDecoratorOps; // 0x50 (16)
 };
 
 // Class AIModule.BrainComponent
@@ -832,8 +832,8 @@ class UBrainComponent : public UActorComponent {
 
 public:
 
-	struct Unknown BlackboardComp; // 0xB8 (8)
-	struct Unknown AIOwner; // 0xC0 (8)
+	struct UBlackboardComponent BlackboardComp; // 0xB8 (8)
+	struct AAIController AIOwner; // 0xC0 (8)
 
 	void StopLogic(struct FString reason); // Function AIModule.BrainComponent.StopLogic(Native|Public|BlueprintCallable) // <Game_BE.exe+0x478A510>
 	void StartLogic(); // Function AIModule.BrainComponent.StartLogic(Native|Public|BlueprintCallable) // <Game_BE.exe+0x206A070>
@@ -847,12 +847,12 @@ class UBehaviorTreeComponent : public UBrainComponent {
 
 public:
 
-	struct TArray<Unknown> NodeInstances; // 0x130 (16)
-	struct Unknown DefaultBehaviorTreeAsset; // 0x268 (8)
+	struct TArray<struct UBTNode> NodeInstances; // 0x130 (16)
+	struct UBehaviorTree DefaultBehaviorTreeAsset; // 0x268 (8)
 
-	void SetDynamicSubtree(struct Unknown InjectTag, struct Unknown BehaviorAsset); // Function AIModule.BehaviorTreeComponent.SetDynamicSubtree(Native|Public|BlueprintCallable) // <Game_BE.exe+0x47846B0>
-	float GetTagCooldownEndTime(struct Unknown CooldownTag); // Function AIModule.BehaviorTreeComponent.GetTagCooldownEndTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4783E00>
-	void AddCooldownTagDuration(struct Unknown CooldownTag, float CooldownDuration, char bAddToExistingDuration); // Function AIModule.BehaviorTreeComponent.AddCooldownTagDuration(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4783A80>
+	void SetDynamicSubtree(struct FGameplayTag InjectTag, struct UBehaviorTree BehaviorAsset); // Function AIModule.BehaviorTreeComponent.SetDynamicSubtree(Native|Public|BlueprintCallable) // <Game_BE.exe+0x47846B0>
+	float GetTagCooldownEndTime(struct FGameplayTag CooldownTag); // Function AIModule.BehaviorTreeComponent.GetTagCooldownEndTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4783E00>
+	void AddCooldownTagDuration(struct FGameplayTag CooldownTag, float CooldownDuration, char bAddToExistingDuration); // Function AIModule.BehaviorTreeComponent.AddCooldownTagDuration(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4783A80>
 };
 
 // Class AIModule.BehaviorTreeManager
@@ -861,8 +861,8 @@ class UBehaviorTreeManager : public Object {
 public:
 
 	int32_t MaxDebuggerSteps; // 0x28 (4)
-	struct TArray<Unknown> LoadedTemplates; // 0x30 (16)
-	struct TArray<Unknown> ActiveComponents; // 0x40 (16)
+	struct TArray<struct FBehaviorTreeTemplateInfo> LoadedTemplates; // 0x30 (16)
+	struct TArray<struct UBehaviorTreeComponent> ActiveComponents; // 0x40 (16)
 };
 
 // Class AIModule.BlackboardComponent
@@ -870,34 +870,34 @@ class UBlackboardComponent : public UActorComponent {
 
 public:
 
-	struct Unknown BrainComp; // 0xB0 (8)
-	struct Unknown DefaultBlackboardAsset; // 0xB8 (8)
-	struct Unknown BlackboardAsset; // 0xC0 (8)
-	struct TArray<Unknown> KeyInstances; // 0xE8 (16)
+	struct UBrainComponent BrainComp; // 0xB0 (8)
+	struct UBlackboardData DefaultBlackboardAsset; // 0xB8 (8)
+	struct UBlackboardData BlackboardAsset; // 0xC0 (8)
+	struct TArray<struct UBlackboardKeyType> KeyInstances; // 0xE8 (16)
 
-	void SetValueAsVector(struct FName& KeyName, struct Unknown VectorValue); // Function AIModule.BlackboardComponent.SetValueAsVector(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4784F70>
+	void SetValueAsVector(struct FName& KeyName, struct FVector VectorValue); // Function AIModule.BlackboardComponent.SetValueAsVector(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4784F70>
 	void SetValueAsString(struct FName& KeyName, struct FString StringValue); // Function AIModule.BlackboardComponent.SetValueAsString(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x4784E20>
-	void SetValueAsRotator(struct FName& KeyName, struct Unknown VectorValue); // Function AIModule.BlackboardComponent.SetValueAsRotator(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4784D30>
-	void SetValueAsObject(struct FName& KeyName, struct Unknown ObjectValue); // Function AIModule.BlackboardComponent.SetValueAsObject(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x4784C60>
+	void SetValueAsRotator(struct FName& KeyName, struct FRotator VectorValue); // Function AIModule.BlackboardComponent.SetValueAsRotator(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x4784D30>
+	void SetValueAsObject(struct FName& KeyName, struct Object ObjectValue); // Function AIModule.BlackboardComponent.SetValueAsObject(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x4784C60>
 	void SetValueAsName(struct FName& KeyName, struct FName NameValue); // Function AIModule.BlackboardComponent.SetValueAsName(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x4784B90>
 	void SetValueAsInt(struct FName& KeyName, int32_t IntValue); // Function AIModule.BlackboardComponent.SetValueAsInt(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x4784AC0>
 	void SetValueAsFloat(struct FName& KeyName, float FloatValue); // Function AIModule.BlackboardComponent.SetValueAsFloat(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x47849F0>
 	void SetValueAsEnum(struct FName& KeyName, char EnumValue); // Function AIModule.BlackboardComponent.SetValueAsEnum(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x4784920>
-	void SetValueAsClass(struct FName& KeyName, struct Unknown* ClassValue); // Function AIModule.BlackboardComponent.SetValueAsClass(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x4784850>
+	void SetValueAsClass(struct FName& KeyName, struct UClass* ClassValue); // Function AIModule.BlackboardComponent.SetValueAsClass(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x4784850>
 	void SetValueAsBool(struct FName& KeyName, char BoolValue); // Function AIModule.BlackboardComponent.SetValueAsBool(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x4784780>
 	char IsVectorValueSet(struct FName& KeyName); // Function AIModule.BlackboardComponent.IsVectorValueSet(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4784550>
-	struct Unknown GetValueAsVector(struct FName& KeyName); // Function AIModule.BlackboardComponent.GetValueAsVector(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x47844A0>
+	struct FVector GetValueAsVector(struct FName& KeyName); // Function AIModule.BlackboardComponent.GetValueAsVector(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x47844A0>
 	struct FString GetValueAsString(struct FName& KeyName); // Function AIModule.BlackboardComponent.GetValueAsString(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x47843B0>
-	struct Unknown GetValueAsRotator(struct FName& KeyName); // Function AIModule.BlackboardComponent.GetValueAsRotator(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4784300>
-	struct Unknown GetValueAsObject(struct FName& KeyName); // Function AIModule.BlackboardComponent.GetValueAsObject(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4784260>
+	struct FRotator GetValueAsRotator(struct FName& KeyName); // Function AIModule.BlackboardComponent.GetValueAsRotator(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4784300>
+	struct Object GetValueAsObject(struct FName& KeyName); // Function AIModule.BlackboardComponent.GetValueAsObject(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4784260>
 	struct FName GetValueAsName(struct FName& KeyName); // Function AIModule.BlackboardComponent.GetValueAsName(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x47841C0>
 	int32_t GetValueAsInt(struct FName& KeyName); // Function AIModule.BlackboardComponent.GetValueAsInt(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4784120>
 	float GetValueAsFloat(struct FName& KeyName); // Function AIModule.BlackboardComponent.GetValueAsFloat(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4784080>
 	char GetValueAsEnum(struct FName& KeyName); // Function AIModule.BlackboardComponent.GetValueAsEnum(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4783FE0>
-	struct Unknown* GetValueAsClass(struct FName& KeyName); // Function AIModule.BlackboardComponent.GetValueAsClass(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4783F40>
+	struct UClass* GetValueAsClass(struct FName& KeyName); // Function AIModule.BlackboardComponent.GetValueAsClass(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4783F40>
 	char GetValueAsBool(struct FName& KeyName); // Function AIModule.BlackboardComponent.GetValueAsBool(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4783EA0>
-	char GetRotationFromEntry(struct FName& KeyName, struct Unknown& ResultRotation); // Function AIModule.BlackboardComponent.GetRotationFromEntry(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4783D10>
-	char GetLocationFromEntry(struct FName& KeyName, struct Unknown& ResultLocation); // Function AIModule.BlackboardComponent.GetLocationFromEntry(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4783C20>
+	char GetRotationFromEntry(struct FName& KeyName, struct FRotator& ResultRotation); // Function AIModule.BlackboardComponent.GetRotationFromEntry(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4783D10>
+	char GetLocationFromEntry(struct FName& KeyName, struct FVector& ResultLocation); // Function AIModule.BlackboardComponent.GetLocationFromEntry(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4783C20>
 	void ClearValue(struct FName& KeyName); // Function AIModule.BlackboardComponent.ClearValue(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x4783B90>
 };
 
@@ -906,8 +906,8 @@ class UBlackboardData : public UDataAsset {
 
 public:
 
-	struct Unknown Parent; // 0x30 (8)
-	struct TArray<Unknown> Keys; // 0x38 (16)
+	struct UBlackboardData Parent; // 0x30 (8)
+	struct TArray<struct FBlackboardEntry> Keys; // 0x38 (16)
 	char bHasSynchronizedKeys : 0; // 0x48 (1)
 };
 
@@ -916,7 +916,7 @@ class UBlackboardKeyType_Class : public UBlackboardKeyType {
 
 public:
 
-	struct Unknown* BaseClass; // 0x30 (8)
+	struct UClass* BaseClass; // 0x30 (8)
 };
 
 // Class AIModule.BlackboardKeyType_Enum
@@ -924,7 +924,7 @@ class UBlackboardKeyType_Enum : public UBlackboardKeyType {
 
 public:
 
-	struct Unknown EnumType; // 0x30 (8)
+	struct UEnum EnumType; // 0x30 (8)
 	struct FString EnumName; // 0x38 (16)
 	char bIsEnumNameValid : 0; // 0x48 (1)
 };
@@ -935,7 +935,7 @@ class UBlackboardKeyType_NativeEnum : public UBlackboardKeyType {
 public:
 
 	struct FString EnumName; // 0x30 (16)
-	struct Unknown EnumType; // 0x40 (8)
+	struct UEnum EnumType; // 0x40 (8)
 };
 
 // Class AIModule.BlackboardKeyType_Object
@@ -943,7 +943,7 @@ class UBlackboardKeyType_Object : public UBlackboardKeyType {
 
 public:
 
-	struct Unknown* BaseClass; // 0x30 (8)
+	struct UClass* BaseClass; // 0x30 (8)
 };
 
 // Class AIModule.BlackboardKeyType_String
@@ -959,8 +959,8 @@ class UBTCompositeNode : public UBTNode {
 
 public:
 
-	struct TArray<Unknown> Children; // 0x58 (16)
-	struct TArray<Unknown> Services; // 0x68 (16)
+	struct TArray<struct FBTCompositeChild> Children; // 0x58 (16)
+	struct TArray<struct UBTService> Services; // 0x68 (16)
 	char bApplyDecoratorScope : 0; // 0x88 (1)
 };
 
@@ -986,7 +986,7 @@ class UBTDecorator_BlackboardBase : public UBTDecorator {
 
 public:
 
-	struct Unknown BlackboardKey; // 0x68 (40)
+	struct FBlackboardKeySelector BlackboardKey; // 0x68 (40)
 };
 
 // Class AIModule.BTDecorator_Blackboard
@@ -1007,25 +1007,25 @@ class UBTDecorator_BlueprintBase : public UBTDecorator {
 
 public:
 
-	struct Unknown AIOwner; // 0x68 (8)
-	struct Unknown ActorOwner; // 0x70 (8)
-	struct TArray<Unknown> ObservedKeyNames; // 0x78 (16)
+	struct AAIController AIOwner; // 0x68 (8)
+	struct UActor ActorOwner; // 0x70 (8)
+	struct TArray<struct FName> ObservedKeyNames; // 0x78 (16)
 	char bShowPropertyDetails : 0; // 0x98 (1)
 	char bCheckConditionOnlyBlackBoardChanges : 0; // 0x98 (1)
 	char bIsObservingBB : 0; // 0x98 (1)
 
-	void ReceiveTickAI(struct Unknown OwnerController, struct Unknown ControlledPawn, float DeltaSeconds); // Function AIModule.BTDecorator_BlueprintBase.ReceiveTickAI(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ReceiveTick(struct Unknown OwnerActor, float DeltaSeconds); // Function AIModule.BTDecorator_BlueprintBase.ReceiveTick(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ReceiveObserverDeactivatedAI(struct Unknown OwnerController, struct Unknown ControlledPawn); // Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverDeactivatedAI(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ReceiveObserverDeactivated(struct Unknown OwnerActor); // Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverDeactivated(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ReceiveObserverActivatedAI(struct Unknown OwnerController, struct Unknown ControlledPawn); // Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverActivatedAI(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ReceiveObserverActivated(struct Unknown OwnerActor); // Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverActivated(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ReceiveExecutionStartAI(struct Unknown OwnerController, struct Unknown ControlledPawn); // Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionStartAI(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ReceiveExecutionStart(struct Unknown OwnerActor); // Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionStart(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ReceiveExecutionFinishAI(struct Unknown OwnerController, struct Unknown ControlledPawn, char NodeResult); // Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionFinishAI(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ReceiveExecutionFinish(struct Unknown OwnerActor, char NodeResult); // Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionFinish(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	char PerformConditionCheckAI(struct Unknown OwnerController, struct Unknown ControlledPawn); // Function AIModule.BTDecorator_BlueprintBase.PerformConditionCheckAI(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	char PerformConditionCheck(struct Unknown OwnerActor); // Function AIModule.BTDecorator_BlueprintBase.PerformConditionCheck(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ReceiveTickAI(struct AAIController OwnerController, struct APawn ControlledPawn, float DeltaSeconds); // Function AIModule.BTDecorator_BlueprintBase.ReceiveTickAI(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ReceiveTick(struct UActor OwnerActor, float DeltaSeconds); // Function AIModule.BTDecorator_BlueprintBase.ReceiveTick(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ReceiveObserverDeactivatedAI(struct AAIController OwnerController, struct APawn ControlledPawn); // Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverDeactivatedAI(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ReceiveObserverDeactivated(struct UActor OwnerActor); // Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverDeactivated(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ReceiveObserverActivatedAI(struct AAIController OwnerController, struct APawn ControlledPawn); // Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverActivatedAI(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ReceiveObserverActivated(struct UActor OwnerActor); // Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverActivated(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ReceiveExecutionStartAI(struct AAIController OwnerController, struct APawn ControlledPawn); // Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionStartAI(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ReceiveExecutionStart(struct UActor OwnerActor); // Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionStart(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ReceiveExecutionFinishAI(struct AAIController OwnerController, struct APawn ControlledPawn, char NodeResult); // Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionFinishAI(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ReceiveExecutionFinish(struct UActor OwnerActor, char NodeResult); // Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionFinish(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	char PerformConditionCheckAI(struct AAIController OwnerController, struct APawn ControlledPawn); // Function AIModule.BTDecorator_BlueprintBase.PerformConditionCheckAI(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	char PerformConditionCheck(struct UActor OwnerActor); // Function AIModule.BTDecorator_BlueprintBase.PerformConditionCheck(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	char IsDecoratorObserverActive(); // Function AIModule.BTDecorator_BlueprintBase.IsDecoratorObserverActive(Final|Native|Protected|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x47897B0>
 	char IsDecoratorExecutionActive(); // Function AIModule.BTDecorator_BlueprintBase.IsDecoratorExecutionActive(Final|Native|Protected|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4789780>
 };
@@ -1035,9 +1035,9 @@ class UBTDecorator_CheckGameplayTagsOnActor : public UBTDecorator {
 
 public:
 
-	struct Unknown ActorToCheck; // 0x68 (40)
-	enum class Unknow TagsToMatch; // 0x90 (1)
-	struct Unknown GameplayTags; // 0x98 (32)
+	struct FBlackboardKeySelector ActorToCheck; // 0x68 (40)
+	enum class EGameplayContainerMatchType TagsToMatch; // 0x90 (1)
+	struct FGameplayTagContainer GameplayTags; // 0x98 (32)
 	struct FString CachedDescription; // 0xB8 (16)
 };
 
@@ -1047,8 +1047,8 @@ class UBTDecorator_CompareBBEntries : public UBTDecorator {
 public:
 
 	char Operator; // 0x68 (1)
-	struct Unknown BlackboardKeyA; // 0x70 (40)
-	struct Unknown BlackboardKeyB; // 0x98 (40)
+	struct FBlackboardKeySelector BlackboardKeyA; // 0x70 (40)
+	struct FBlackboardKeySelector BlackboardKeyB; // 0x98 (40)
 };
 
 // Class AIModule.BTDecorator_ConeCheck
@@ -1057,9 +1057,9 @@ class UBTDecorator_ConeCheck : public UBTDecorator {
 public:
 
 	float ConeHalfAngle; // 0x68 (4)
-	struct Unknown ConeOrigin; // 0x70 (40)
-	struct Unknown ConeDirection; // 0x98 (40)
-	struct Unknown Observed; // 0xC0 (40)
+	struct FBlackboardKeySelector ConeOrigin; // 0x70 (40)
+	struct FBlackboardKeySelector ConeDirection; // 0x98 (40)
+	struct FBlackboardKeySelector Observed; // 0xC0 (40)
 };
 
 // Class AIModule.BTDecorator_Cooldown
@@ -1075,11 +1075,11 @@ class UBTDecorator_DoesPathExist : public UBTDecorator {
 
 public:
 
-	struct Unknown BlackboardKeyA; // 0x68 (40)
-	struct Unknown BlackboardKeyB; // 0x90 (40)
+	struct FBlackboardKeySelector BlackboardKeyA; // 0x68 (40)
+	struct FBlackboardKeySelector BlackboardKeyB; // 0x90 (40)
 	char bUseSelf : 0; // 0xB8 (1)
 	char PathQueryType; // 0xBC (1)
-	struct Unknown* FilterClass; // 0xC0 (8)
+	struct UClass* FilterClass; // 0xC0 (8)
 };
 
 // Class AIModule.BTDecorator_IsAtLocation
@@ -1088,8 +1088,8 @@ class UBTDecorator_IsAtLocation : public UBTDecorator_BlackboardBase {
 public:
 
 	float AcceptableRadius; // 0x90 (4)
-	struct Unknown ParametrizedAcceptableRadius; // 0x98 (56)
-	enum class Unknow GeometricDistanceType; // 0xD0 (1)
+	struct FAIDataProviderFloatValue ParametrizedAcceptableRadius; // 0x98 (56)
+	enum class FAIDistanceType GeometricDistanceType; // 0xD0 (1)
 	char bUseParametrizedRadius : 0; // 0xD4 (1)
 	char bUseNavAgentGoalLocation : 0; // 0xD4 (1)
 	char bPathFindingBasedTest : 0; // 0xD4 (1)
@@ -1100,7 +1100,7 @@ class UBTDecorator_IsBBEntryOfClass : public UBTDecorator_BlackboardBase {
 
 public:
 
-	struct Unknown* TestClass; // 0x90 (8)
+	struct UClass* TestClass; // 0x90 (8)
 };
 
 // Class AIModule.BTDecorator_KeepInCone
@@ -1109,8 +1109,8 @@ class UBTDecorator_KeepInCone : public UBTDecorator {
 public:
 
 	float ConeHalfAngle; // 0x68 (4)
-	struct Unknown ConeOrigin; // 0x70 (40)
-	struct Unknown Observed; // 0x98 (40)
+	struct FBlackboardKeySelector ConeOrigin; // 0x70 (40)
+	struct FBlackboardKeySelector Observed; // 0x98 (40)
 	char bUseSelfAsOrigin : 0; // 0xC0 (1)
 	char bUseSelfAsObserved : 0; // 0xC0 (1)
 };
@@ -1130,7 +1130,7 @@ class UBTDecorator_SetTagCooldown : public UBTDecorator {
 
 public:
 
-	struct Unknown CooldownTag; // 0x68 (8)
+	struct FGameplayTag CooldownTag; // 0x68 (8)
 	float CooldownDuration; // 0x70 (4)
 	char bAddToExistingDuration : 0; // 0x74 (1)
 };
@@ -1140,7 +1140,7 @@ class UBTDecorator_TagCooldown : public UBTDecorator {
 
 public:
 
-	struct Unknown CooldownTag; // 0x68 (8)
+	struct FGameplayTag CooldownTag; // 0x68 (8)
 	float CooldownDuration; // 0x70 (4)
 	char bAddToExistingDuration : 0; // 0x74 (1)
 	char bActivatesCooldown : 0; // 0x75 (1)
@@ -1159,7 +1159,7 @@ class UBTService_BlackboardBase : public UBTService {
 
 public:
 
-	struct Unknown BlackboardKey; // 0x70 (40)
+	struct FBlackboardKeySelector BlackboardKey; // 0x70 (40)
 };
 
 // Class AIModule.BTService_BlueprintBase
@@ -1167,19 +1167,19 @@ class UBTService_BlueprintBase : public UBTService {
 
 public:
 
-	struct Unknown AIOwner; // 0x70 (8)
-	struct Unknown ActorOwner; // 0x78 (8)
+	struct AAIController AIOwner; // 0x70 (8)
+	struct UActor ActorOwner; // 0x78 (8)
 	char bShowPropertyDetails : 0; // 0x90 (1)
 	char bShowEventDetails : 0; // 0x90 (1)
 
-	void ReceiveTickAI(struct Unknown OwnerController, struct Unknown ControlledPawn, float DeltaSeconds); // Function AIModule.BTService_BlueprintBase.ReceiveTickAI(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ReceiveTick(struct Unknown OwnerActor, float DeltaSeconds); // Function AIModule.BTService_BlueprintBase.ReceiveTick(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ReceiveSearchStartAI(struct Unknown OwnerController, struct Unknown ControlledPawn); // Function AIModule.BTService_BlueprintBase.ReceiveSearchStartAI(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ReceiveSearchStart(struct Unknown OwnerActor); // Function AIModule.BTService_BlueprintBase.ReceiveSearchStart(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ReceiveDeactivationAI(struct Unknown OwnerController, struct Unknown ControlledPawn); // Function AIModule.BTService_BlueprintBase.ReceiveDeactivationAI(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ReceiveDeactivation(struct Unknown OwnerActor); // Function AIModule.BTService_BlueprintBase.ReceiveDeactivation(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ReceiveActivationAI(struct Unknown OwnerController, struct Unknown ControlledPawn); // Function AIModule.BTService_BlueprintBase.ReceiveActivationAI(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ReceiveActivation(struct Unknown OwnerActor); // Function AIModule.BTService_BlueprintBase.ReceiveActivation(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ReceiveTickAI(struct AAIController OwnerController, struct APawn ControlledPawn, float DeltaSeconds); // Function AIModule.BTService_BlueprintBase.ReceiveTickAI(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ReceiveTick(struct UActor OwnerActor, float DeltaSeconds); // Function AIModule.BTService_BlueprintBase.ReceiveTick(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ReceiveSearchStartAI(struct AAIController OwnerController, struct APawn ControlledPawn); // Function AIModule.BTService_BlueprintBase.ReceiveSearchStartAI(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ReceiveSearchStart(struct UActor OwnerActor); // Function AIModule.BTService_BlueprintBase.ReceiveSearchStart(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ReceiveDeactivationAI(struct AAIController OwnerController, struct APawn ControlledPawn); // Function AIModule.BTService_BlueprintBase.ReceiveDeactivationAI(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ReceiveDeactivation(struct UActor OwnerActor); // Function AIModule.BTService_BlueprintBase.ReceiveDeactivation(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ReceiveActivationAI(struct AAIController OwnerController, struct APawn ControlledPawn); // Function AIModule.BTService_BlueprintBase.ReceiveActivationAI(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ReceiveActivation(struct UActor OwnerActor); // Function AIModule.BTService_BlueprintBase.ReceiveActivation(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	char IsServiceActive(); // Function AIModule.BTService_BlueprintBase.IsServiceActive(Final|Native|Protected|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x478D3A0>
 };
 
@@ -1196,7 +1196,7 @@ class UBTService_RunEQS : public UBTService_BlackboardBase {
 
 public:
 
-	struct Unknown EQSRequest; // 0x98 (72)
+	struct FEQSParametrizedQueryExecutionRequest EQSRequest; // 0x98 (72)
 };
 
 // Class AIModule.BTTask_BlueprintBase
@@ -1204,19 +1204,19 @@ class UBTTask_BlueprintBase : public UBTTaskNode {
 
 public:
 
-	struct Unknown AIOwner; // 0x70 (8)
-	struct Unknown ActorOwner; // 0x78 (8)
-	struct Unknown TickInterval; // 0x80 (8)
+	struct AAIController AIOwner; // 0x70 (8)
+	struct UActor ActorOwner; // 0x78 (8)
+	struct FIntervalCountdown TickInterval; // 0x80 (8)
 	char bShowPropertyDetails : 0; // 0xA0 (1)
 
 	void SetFinishOnMessageWithId(struct FName MessageName, int32_t RequestID); // Function AIModule.BTTask_BlueprintBase.SetFinishOnMessageWithId(Final|Native|Protected|BlueprintCallable) // <Game_BE.exe+0x478D4B0>
 	void SetFinishOnMessage(struct FName MessageName); // Function AIModule.BTTask_BlueprintBase.SetFinishOnMessage(Final|Native|Protected|BlueprintCallable) // <Game_BE.exe+0x478D430>
-	void ReceiveTickAI(struct Unknown OwnerController, struct Unknown ControlledPawn, float DeltaSeconds); // Function AIModule.BTTask_BlueprintBase.ReceiveTickAI(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ReceiveTick(struct Unknown OwnerActor, float DeltaSeconds); // Function AIModule.BTTask_BlueprintBase.ReceiveTick(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ReceiveExecuteAI(struct Unknown OwnerController, struct Unknown ControlledPawn); // Function AIModule.BTTask_BlueprintBase.ReceiveExecuteAI(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ReceiveExecute(struct Unknown OwnerActor); // Function AIModule.BTTask_BlueprintBase.ReceiveExecute(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ReceiveAbortAI(struct Unknown OwnerController, struct Unknown ControlledPawn); // Function AIModule.BTTask_BlueprintBase.ReceiveAbortAI(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ReceiveAbort(struct Unknown OwnerActor); // Function AIModule.BTTask_BlueprintBase.ReceiveAbort(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ReceiveTickAI(struct AAIController OwnerController, struct APawn ControlledPawn, float DeltaSeconds); // Function AIModule.BTTask_BlueprintBase.ReceiveTickAI(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ReceiveTick(struct UActor OwnerActor, float DeltaSeconds); // Function AIModule.BTTask_BlueprintBase.ReceiveTick(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ReceiveExecuteAI(struct AAIController OwnerController, struct APawn ControlledPawn); // Function AIModule.BTTask_BlueprintBase.ReceiveExecuteAI(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ReceiveExecute(struct UActor OwnerActor); // Function AIModule.BTTask_BlueprintBase.ReceiveExecute(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ReceiveAbortAI(struct AAIController OwnerController, struct APawn ControlledPawn); // Function AIModule.BTTask_BlueprintBase.ReceiveAbortAI(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ReceiveAbort(struct UActor OwnerActor); // Function AIModule.BTTask_BlueprintBase.ReceiveAbort(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	char IsTaskExecuting(); // Function AIModule.BTTask_BlueprintBase.IsTaskExecuting(Final|Native|Protected|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x478D400>
 	char IsTaskAborting(); // Function AIModule.BTTask_BlueprintBase.IsTaskAborting(Final|Native|Protected|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x478D3D0>
 	void FinishExecute(char bSuccess); // Function AIModule.BTTask_BlueprintBase.FinishExecute(Final|Native|Protected|BlueprintCallable) // <Game_BE.exe+0x478D310>
@@ -1253,7 +1253,7 @@ class UBTTask_MoveTo : public UBTTask_BlackboardBase {
 public:
 
 	float AcceptableRadius; // 0x98 (4)
-	struct Unknown* FilterClass; // 0xA0 (8)
+	struct UClass* FilterClass; // 0xA0 (8)
 	float ObservedBlackboardValueTolerance; // 0xA8 (4)
 	char bObserveBlackboardValue : 0; // 0xAC (1)
 	char bAllowStrafe : 0; // 0xAC (1)
@@ -1281,11 +1281,11 @@ class UBTTask_PlayAnimation : public UBTTaskNode {
 
 public:
 
-	struct Unknown AnimationToPlay; // 0x70 (8)
+	struct UAnimationAsset AnimationToPlay; // 0x70 (8)
 	char bLooping : 0; // 0x78 (1)
 	char bNonBlocking : 0; // 0x78 (1)
-	struct Unknown MyOwnerComp; // 0x80 (8)
-	struct Unknown CachedSkelMesh; // 0x88 (8)
+	struct UBehaviorTreeComponent MyOwnerComp; // 0x80 (8)
+	struct USkeletalMeshComponent CachedSkelMesh; // 0x88 (8)
 };
 
 // Class AIModule.BTTask_PlaySound
@@ -1293,7 +1293,7 @@ class UBTTask_PlaySound : public UBTTaskNode {
 
 public:
 
-	struct Unknown SoundToPlay; // 0x70 (8)
+	struct USoundCue SoundToPlay; // 0x70 (8)
 };
 
 // Class AIModule.BTTask_PushPawnAction
@@ -1301,7 +1301,7 @@ class UBTTask_PushPawnAction : public UBTTask_PawnActionBase {
 
 public:
 
-	struct Unknown Action; // 0x70 (8)
+	struct UPawnAction Action; // 0x70 (8)
 };
 
 // Class AIModule.BTTask_RotateToFaceBBEntry
@@ -1317,7 +1317,7 @@ class UBTTask_RunBehavior : public UBTTaskNode {
 
 public:
 
-	struct Unknown BehaviorAsset; // 0x70 (8)
+	struct UBehaviorTree BehaviorAsset; // 0x70 (8)
 };
 
 // Class AIModule.BTTask_RunBehaviorDynamic
@@ -1325,9 +1325,9 @@ class UBTTask_RunBehaviorDynamic : public UBTTaskNode {
 
 public:
 
-	struct Unknown InjectionTag; // 0x70 (8)
-	struct Unknown DefaultBehaviorAsset; // 0x78 (8)
-	struct Unknown BehaviorAsset; // 0x80 (8)
+	struct FGameplayTag InjectionTag; // 0x70 (8)
+	struct UBehaviorTree DefaultBehaviorAsset; // 0x78 (8)
+	struct UBehaviorTree BehaviorAsset; // 0x80 (8)
 };
 
 // Class AIModule.BTTask_RunEQSQuery
@@ -1335,13 +1335,13 @@ class UBTTask_RunEQSQuery : public UBTTask_BlackboardBase {
 
 public:
 
-	struct Unknown QueryTemplate; // 0x98 (8)
-	struct TArray<Unknown> QueryParams; // 0xA0 (16)
-	struct TArray<Unknown> QueryConfig; // 0xB0 (16)
+	struct UEnvQuery QueryTemplate; // 0x98 (8)
+	struct TArray<struct FEnvNamedValue> QueryParams; // 0xA0 (16)
+	struct TArray<struct FAIDynamicParam> QueryConfig; // 0xB0 (16)
 	char RunMode; // 0xC0 (1)
-	struct Unknown EQSQueryBlackboardKey; // 0xC8 (40)
+	struct FBlackboardKeySelector EQSQueryBlackboardKey; // 0xC8 (40)
 	char bUseBBKey : 0; // 0xF0 (1)
-	struct Unknown EQSRequest; // 0xF8 (72)
+	struct FEQSParametrizedQueryExecutionRequest EQSRequest; // 0xF8 (72)
 };
 
 // Class AIModule.BTTask_SetTagCooldown
@@ -1349,7 +1349,7 @@ class UBTTask_SetTagCooldown : public UBTTaskNode {
 
 public:
 
-	struct Unknown CooldownTag; // 0x70 (8)
+	struct FGameplayTag CooldownTag; // 0x70 (8)
 	char bAddToExistingDuration : 0; // 0x78 (1)
 	float CooldownDuration; // 0x7C (4)
 };
@@ -1368,7 +1368,7 @@ class UBTTask_WaitBlackboardTime : public UBTTask_Wait {
 
 public:
 
-	struct Unknown BlackboardKey; // 0x78 (40)
+	struct FBlackboardKeySelector BlackboardKey; // 0x78 (40)
 };
 
 // Class AIModule.PathFollowingComponent
@@ -1376,12 +1376,12 @@ class UPathFollowingComponent : public UActorComponent {
 
 public:
 
-	struct Unknown MovementComp; // 0xE8 (8)
-	struct Unknown MyNavData; // 0xF8 (8)
+	struct UNavMovementComponent MovementComp; // 0xE8 (8)
+	struct ANavigationData MyNavData; // 0xF8 (8)
 
-	void OnNavDataRegistered(struct Unknown NavData); // Function AIModule.PathFollowingComponent.OnNavDataRegistered(Final|Native|Protected) // <Game_BE.exe+0x47988E0>
-	void OnActorBump(struct Unknown SelfActor, struct Unknown OtherActor, struct Unknown NormalImpulse, struct Unknown& Hit); // Function AIModule.PathFollowingComponent.OnActorBump(Native|Public|HasOutParms|HasDefaults) // <Game_BE.exe+0x4798750>
-	struct Unknown GetPathDestination(); // Function AIModule.PathFollowingComponent.GetPathDestination(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x47983C0>
+	void OnNavDataRegistered(struct ANavigationData NavData); // Function AIModule.PathFollowingComponent.OnNavDataRegistered(Final|Native|Protected) // <Game_BE.exe+0x47988E0>
+	void OnActorBump(struct UActor SelfActor, struct UActor OtherActor, struct FVector NormalImpulse, struct FHitResult& Hit); // Function AIModule.PathFollowingComponent.OnActorBump(Native|Public|HasOutParms|HasDefaults) // <Game_BE.exe+0x4798750>
+	struct FVector GetPathDestination(); // Function AIModule.PathFollowingComponent.GetPathDestination(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x47983C0>
 	char GetPathActionType(); // Function AIModule.PathFollowingComponent.GetPathActionType(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4798390>
 };
 
@@ -1390,8 +1390,8 @@ class UCrowdFollowingComponent : public UPathFollowingComponent {
 
 public:
 
-	struct Unknown CharacterMovement; // 0x260 (8)
-	struct Unknown CrowdAgentMoveDirection; // 0x268 (12)
+	struct UCharacterMovementComponent CharacterMovement; // 0x260 (8)
+	struct FVector CrowdAgentMoveDirection; // 0x268 (12)
 
 	void SuspendCrowdSteering(char bSuspend); // Function AIModule.CrowdFollowingComponent.SuspendCrowdSteering(Native|Public|BlueprintCallable) // <Game_BE.exe+0x478D570>
 };
@@ -1401,9 +1401,9 @@ class UCrowdManager : public UCrowdManagerBase {
 
 public:
 
-	struct Unknown MyNavData; // 0x28 (8)
-	struct TArray<Unknown> AvoidanceConfig; // 0x30 (16)
-	struct TArray<Unknown> SamplingPatterns; // 0x40 (16)
+	struct ANavigationData MyNavData; // 0x28 (8)
+	struct TArray<struct FCrowdAvoidanceConfig> AvoidanceConfig; // 0x30 (16)
+	struct TArray<struct FCrowdAvoidanceSamplingPattern> SamplingPatterns; // 0x40 (16)
 	int32_t MaxAgents; // 0x50 (4)
 	float MaxAgentRadius; // 0x54 (4)
 	int32_t MaxAvoidedAgents; // 0x58 (4)
@@ -1421,7 +1421,7 @@ class UEnvQuery : public UDataAsset {
 public:
 
 	struct FName QueryName; // 0x30 (8)
-	struct TArray<Unknown> options; // 0x38 (16)
+	struct TArray<struct UEnvQueryOption> options; // 0x38 (16)
 };
 
 // Class AIModule.EnvQueryNode
@@ -1438,7 +1438,7 @@ class UEnvQueryGenerator : public UEnvQueryNode {
 public:
 
 	struct FString OptionName; // 0x30 (16)
-	struct Unknown* ItemType; // 0x40 (8)
+	struct UClass* ItemType; // 0x40 (8)
 	char bAutoSortTests : 0; // 0x48 (1)
 };
 
@@ -1447,10 +1447,10 @@ class UEnvQueryGenerator_ActorsOfClass : public UEnvQueryGenerator {
 
 public:
 
-	struct Unknown* SearchedActorClass; // 0x50 (8)
-	struct Unknown GenerateOnlyActorsInRadius; // 0x58 (56)
-	struct Unknown SearchRadius; // 0x90 (56)
-	struct Unknown* SearchCenter; // 0xC8 (8)
+	struct UClass* SearchedActorClass; // 0x50 (8)
+	struct FAIDataProviderBoolValue GenerateOnlyActorsInRadius; // 0x58 (56)
+	struct FAIDataProviderFloatValue SearchRadius; // 0x90 (56)
+	struct UClass* SearchCenter; // 0xC8 (8)
 };
 
 // Class AIModule.EnvQueryGenerator_BlueprintBase
@@ -1459,13 +1459,13 @@ class UEnvQueryGenerator_BlueprintBase : public UEnvQueryGenerator {
 public:
 
 	struct FText GeneratorsActionDescription; // 0x50 (24)
-	struct Unknown* Context; // 0x68 (8)
-	struct Unknown* GeneratedItemType; // 0x70 (8)
+	struct UClass* Context; // 0x68 (8)
+	struct UClass* GeneratedItemType; // 0x70 (8)
 
-	struct Unknown GetQuerier(); // Function AIModule.EnvQueryGenerator_BlueprintBase.GetQuerier(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4790C00>
-	void DoItemGeneration(struct TArray<Unknown>& ContextLocations); // Function AIModule.EnvQueryGenerator_BlueprintBase.DoItemGeneration(Event|Public|HasOutParms|BlueprintEvent|Const) // <Game_BE.exe+0x2B80160>
-	void AddGeneratedVector(struct Unknown GeneratedVector); // Function AIModule.EnvQueryGenerator_BlueprintBase.AddGeneratedVector(Final|Native|Public|HasDefaults|BlueprintCallable|Const) // <Game_BE.exe+0x4790AE0>
-	void AddGeneratedActor(struct Unknown GeneratedActor); // Function AIModule.EnvQueryGenerator_BlueprintBase.AddGeneratedActor(Final|Native|Public|BlueprintCallable|Const) // <Game_BE.exe+0x4790A60>
+	struct Object GetQuerier(); // Function AIModule.EnvQueryGenerator_BlueprintBase.GetQuerier(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4790C00>
+	void DoItemGeneration(struct TArray<struct FVector>& ContextLocations); // Function AIModule.EnvQueryGenerator_BlueprintBase.DoItemGeneration(Event|Public|HasOutParms|BlueprintEvent|Const) // <Game_BE.exe+0x2B80160>
+	void AddGeneratedVector(struct FVector GeneratedVector); // Function AIModule.EnvQueryGenerator_BlueprintBase.AddGeneratedVector(Final|Native|Public|HasDefaults|BlueprintCallable|Const) // <Game_BE.exe+0x4790AE0>
+	void AddGeneratedActor(struct UActor GeneratedActor); // Function AIModule.EnvQueryGenerator_BlueprintBase.AddGeneratedActor(Final|Native|Public|BlueprintCallable|Const) // <Game_BE.exe+0x4790A60>
 };
 
 // Class AIModule.EnvQueryGenerator_Composite
@@ -1473,10 +1473,10 @@ class UEnvQueryGenerator_Composite : public UEnvQueryGenerator {
 
 public:
 
-	struct TArray<Unknown> Generators; // 0x50 (16)
+	struct TArray<struct UEnvQueryGenerator> Generators; // 0x50 (16)
 	char bAllowDifferentItemTypes : 0; // 0x60 (1)
 	char bHasMatchingItemType : 0; // 0x60 (1)
-	struct Unknown* ForcedItemType; // 0x68 (8)
+	struct UClass* ForcedItemType; // 0x68 (8)
 };
 
 // Class AIModule.EnvQueryGenerator_ProjectedPoints
@@ -1484,7 +1484,7 @@ class UEnvQueryGenerator_ProjectedPoints : public UEnvQueryGenerator {
 
 public:
 
-	struct Unknown ProjectionData; // 0x50 (48)
+	struct FEnvTraceData ProjectionData; // 0x50 (48)
 };
 
 // Class AIModule.EnvQueryGenerator_Cone
@@ -1492,11 +1492,11 @@ class UEnvQueryGenerator_Cone : public UEnvQueryGenerator_ProjectedPoints {
 
 public:
 
-	struct Unknown AlignedPointsDistance; // 0x80 (56)
-	struct Unknown ConeDegrees; // 0xB8 (56)
-	struct Unknown AngleStep; // 0xF0 (56)
-	struct Unknown Range; // 0x128 (56)
-	struct Unknown* CenterActor; // 0x160 (8)
+	struct FAIDataProviderFloatValue AlignedPointsDistance; // 0x80 (56)
+	struct FAIDataProviderFloatValue ConeDegrees; // 0xB8 (56)
+	struct FAIDataProviderFloatValue AngleStep; // 0xF0 (56)
+	struct FAIDataProviderFloatValue Range; // 0x128 (56)
+	struct UClass* CenterActor; // 0x160 (8)
 	char bIncludeContextLocation : 0; // 0x168 (1)
 };
 
@@ -1505,7 +1505,7 @@ class UEnvQueryGenerator_CurrentLocation : public UEnvQueryGenerator {
 
 public:
 
-	struct Unknown* QueryContext; // 0x50 (8)
+	struct UClass* QueryContext; // 0x50 (8)
 };
 
 // Class AIModule.EnvQueryGenerator_Donut
@@ -1513,14 +1513,14 @@ class UEnvQueryGenerator_Donut : public UEnvQueryGenerator_ProjectedPoints {
 
 public:
 
-	struct Unknown InnerRadius; // 0x80 (56)
-	struct Unknown OuterRadius; // 0xB8 (56)
-	struct Unknown NumberOfRings; // 0xF0 (56)
-	struct Unknown PointsPerRing; // 0x128 (56)
-	struct Unknown ArcDirection; // 0x160 (32)
-	struct Unknown ArcAngle; // 0x180 (56)
+	struct FAIDataProviderFloatValue InnerRadius; // 0x80 (56)
+	struct FAIDataProviderFloatValue OuterRadius; // 0xB8 (56)
+	struct FAIDataProviderIntValue NumberOfRings; // 0xF0 (56)
+	struct FAIDataProviderIntValue PointsPerRing; // 0x128 (56)
+	struct FEnvDirection ArcDirection; // 0x160 (32)
+	struct FAIDataProviderFloatValue ArcAngle; // 0x180 (56)
 	char bUseSpiralPattern : 0; // 0x1B8 (1)
-	struct Unknown* Center; // 0x1C0 (8)
+	struct UClass* Center; // 0x1C0 (8)
 	char bDefineArc : 0; // 0x1C8 (1)
 };
 
@@ -1529,17 +1529,17 @@ class UEnvQueryGenerator_OnCircle : public UEnvQueryGenerator_ProjectedPoints {
 
 public:
 
-	struct Unknown CircleRadius; // 0x80 (56)
-	struct Unknown SpaceBetween; // 0xB8 (56)
-	struct Unknown NumberOfPoints; // 0xF0 (56)
-	enum class Unknow PointOnCircleSpacingMethod; // 0x128 (1)
-	struct Unknown ArcDirection; // 0x130 (32)
-	struct Unknown ArcAngle; // 0x150 (56)
+	struct FAIDataProviderFloatValue CircleRadius; // 0x80 (56)
+	struct FAIDataProviderFloatValue SpaceBetween; // 0xB8 (56)
+	struct FAIDataProviderIntValue NumberOfPoints; // 0xF0 (56)
+	enum class EPointOnCircleSpacingMethod PointOnCircleSpacingMethod; // 0x128 (1)
+	struct FEnvDirection ArcDirection; // 0x130 (32)
+	struct FAIDataProviderFloatValue ArcAngle; // 0x150 (56)
 	float AngleRadians; // 0x188 (4)
-	struct Unknown* CircleCenter; // 0x190 (8)
+	struct UClass* CircleCenter; // 0x190 (8)
 	char bIgnoreAnyContextActorsWhenGeneratingCircle : 0; // 0x198 (1)
-	struct Unknown CircleCenterZOffset; // 0x1A0 (56)
-	struct Unknown TraceData; // 0x1D8 (48)
+	struct FAIDataProviderFloatValue CircleCenterZOffset; // 0x1A0 (56)
+	struct FEnvTraceData TraceData; // 0x1D8 (48)
 	char bDefineArc : 0; // 0x208 (1)
 };
 
@@ -1548,9 +1548,9 @@ class UEnvQueryGenerator_SimpleGrid : public UEnvQueryGenerator_ProjectedPoints 
 
 public:
 
-	struct Unknown GridSize; // 0x80 (56)
-	struct Unknown SpaceBetween; // 0xB8 (56)
-	struct Unknown* GenerateAround; // 0xF0 (8)
+	struct FAIDataProviderFloatValue GridSize; // 0x80 (56)
+	struct FAIDataProviderFloatValue SpaceBetween; // 0xB8 (56)
+	struct UClass* GenerateAround; // 0xF0 (8)
 };
 
 // Class AIModule.EnvQueryGenerator_PathingGrid
@@ -1558,9 +1558,9 @@ class UEnvQueryGenerator_PathingGrid : public UEnvQueryGenerator_SimpleGrid {
 
 public:
 
-	struct Unknown PathToItem; // 0xF8 (56)
-	struct Unknown* NavigationFilter; // 0x130 (8)
-	struct Unknown ScanRangeMultiplier; // 0x138 (56)
+	struct FAIDataProviderBoolValue PathToItem; // 0xF8 (56)
+	struct UClass* NavigationFilter; // 0x130 (8)
+	struct FAIDataProviderFloatValue ScanRangeMultiplier; // 0x138 (56)
 };
 
 // Class AIModule.EnvQueryInstanceBlueprintWrapper
@@ -1569,17 +1569,17 @@ class UEnvQueryInstanceBlueprintWrapper : public Object {
 public:
 
 	int32_t QueryID; // 0x30 (4)
-	struct Unknown* ItemType; // 0x58 (8)
+	struct UClass* ItemType; // 0x58 (8)
 	int32_t OptionIndex; // 0x60 (4)
 	struct FMulticastInlineDelegate OnQueryFinishedEvent; // 0x68 (16)
 
 	void SetNamedParam(struct FName ParamName, float Value); // Function AIModule.EnvQueryInstanceBlueprintWrapper.SetNamedParam(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4791030>
-	struct TArray<Unknown> GetResultsAsLocations(); // Function AIModule.EnvQueryInstanceBlueprintWrapper.GetResultsAsLocations(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4790E30>
-	struct TArray<Unknown> GetResultsAsActors(); // Function AIModule.EnvQueryInstanceBlueprintWrapper.GetResultsAsActors(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4790DB0>
-	char GetQueryResultsAsLocations(struct TArray<Unknown>& ResultLocations); // Function AIModule.EnvQueryInstanceBlueprintWrapper.GetQueryResultsAsLocations(Final|Native|Public|HasOutParms|BlueprintCallable|Const) // <Game_BE.exe+0x4790CF0>
-	char GetQueryResultsAsActors(struct TArray<Unknown>& ResultActors); // Function AIModule.EnvQueryInstanceBlueprintWrapper.GetQueryResultsAsActors(Final|Native|Public|HasOutParms|BlueprintCallable|Const) // <Game_BE.exe+0x4790C30>
+	struct TArray<struct FVector> GetResultsAsLocations(); // Function AIModule.EnvQueryInstanceBlueprintWrapper.GetResultsAsLocations(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4790E30>
+	struct TArray<struct UActor> GetResultsAsActors(); // Function AIModule.EnvQueryInstanceBlueprintWrapper.GetResultsAsActors(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4790DB0>
+	char GetQueryResultsAsLocations(struct TArray<struct FVector>& ResultLocations); // Function AIModule.EnvQueryInstanceBlueprintWrapper.GetQueryResultsAsLocations(Final|Native|Public|HasOutParms|BlueprintCallable|Const) // <Game_BE.exe+0x4790CF0>
+	char GetQueryResultsAsActors(struct TArray<struct UActor>& ResultActors); // Function AIModule.EnvQueryInstanceBlueprintWrapper.GetQueryResultsAsActors(Final|Native|Public|HasOutParms|BlueprintCallable|Const) // <Game_BE.exe+0x4790C30>
 	float GetItemScore(int32_t ItemIndex); // Function AIModule.EnvQueryInstanceBlueprintWrapper.GetItemScore(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4790B70>
-	void EQSQueryDoneSignature__DelegateSignature(struct Unknown QueryInstance, char QueryStatus); // DelegateFunction AIModule.EnvQueryInstanceBlueprintWrapper.EQSQueryDoneSignature__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B80160>
+	void EQSQueryDoneSignature__DelegateSignature(struct UEnvQueryInstanceBlueprintWrapper QueryInstance, char QueryStatus); // DelegateFunction AIModule.EnvQueryInstanceBlueprintWrapper.EQSQueryDoneSignature__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B80160>
 };
 
 // Class AIModule.EnvQueryManager
@@ -1587,15 +1587,15 @@ class UEnvQueryManager : public UAISubsystem {
 
 public:
 
-	struct TArray<Unknown> InstanceCache; // 0xA8 (16)
-	struct TArray<Unknown> LocalContexts; // 0xB8 (16)
-	struct TArray<Unknown> GCShieldedWrappers; // 0xC8 (16)
+	struct TArray<struct FEnvQueryInstanceCache> InstanceCache; // 0xA8 (16)
+	struct TArray<struct UEnvQueryContext> LocalContexts; // 0xB8 (16)
+	struct TArray<struct UEnvQueryInstanceBlueprintWrapper> GCShieldedWrappers; // 0xC8 (16)
 	float MaxAllowedTestingTime; // 0x12C (4)
 	char bTestQueriesUsingBreadth : 0; // 0x130 (1)
 	int32_t QueryCountWarningThreshold; // 0x134 (4)
 	double QueryCountWarningInterval; // 0x138 (8)
 
-	struct Unknown RunEQSQuery(struct Unknown WorldContextObject, struct Unknown QueryTemplate, struct Unknown Querier, char RunMode, struct Unknown* WrapperClass); // Function AIModule.EnvQueryManager.RunEQSQuery(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x4790EB0>
+	struct UEnvQueryInstanceBlueprintWrapper RunEQSQuery(struct Object WorldContextObject, struct UEnvQuery QueryTemplate, struct Object Querier, char RunMode, struct UClass* WrapperClass); // Function AIModule.EnvQueryManager.RunEQSQuery(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x4790EB0>
 };
 
 // Class AIModule.EnvQueryOption
@@ -1603,8 +1603,8 @@ class UEnvQueryOption : public Object {
 
 public:
 
-	struct Unknown Generator; // 0x28 (8)
-	struct TArray<Unknown> Tests; // 0x30 (16)
+	struct UEnvQueryGenerator Generator; // 0x28 (8)
+	struct TArray<struct UEnvQueryTest> Tests; // 0x30 (16)
 };
 
 // Class AIModule.EnvQueryTest
@@ -1618,17 +1618,17 @@ public:
 	char MultipleContextFilterOp; // 0x48 (1)
 	char MultipleContextScoreOp; // 0x49 (1)
 	char FilterType; // 0x4A (1)
-	struct Unknown BoolValue; // 0x50 (56)
-	struct Unknown FloatValueMin; // 0x88 (56)
-	struct Unknown FloatValueMax; // 0xC0 (56)
+	struct FAIDataProviderBoolValue BoolValue; // 0x50 (56)
+	struct FAIDataProviderFloatValue FloatValueMin; // 0x88 (56)
+	struct FAIDataProviderFloatValue FloatValueMax; // 0xC0 (56)
 	char ScoringEquation; // 0xF9 (1)
 	char ClampMinType; // 0xFA (1)
 	char ClampMaxType; // 0xFB (1)
-	enum class Unknow NormalizationType; // 0xFC (1)
-	struct Unknown ScoreClampMin; // 0x100 (56)
-	struct Unknown ScoreClampMax; // 0x138 (56)
-	struct Unknown ScoringFactor; // 0x170 (56)
-	struct Unknown ReferenceValue; // 0x1A8 (56)
+	enum class EEQSNormalizationType NormalizationType; // 0xFC (1)
+	struct FAIDataProviderFloatValue ScoreClampMin; // 0x100 (56)
+	struct FAIDataProviderFloatValue ScoreClampMax; // 0x138 (56)
+	struct FAIDataProviderFloatValue ScoringFactor; // 0x170 (56)
+	struct FAIDataProviderFloatValue ReferenceValue; // 0x1A8 (56)
 	char bDefineReferenceValue : 0; // 0x1E0 (1)
 	char bWorkOnFloatValues : 0; // 0x1F0 (1)
 };
@@ -1639,7 +1639,7 @@ class UEnvQueryTest_Distance : public UEnvQueryTest {
 public:
 
 	char TestMode; // 0x1F8 (1)
-	struct Unknown* DistanceTo; // 0x200 (8)
+	struct UClass* DistanceTo; // 0x200 (8)
 };
 
 // Class AIModule.EnvQueryTest_Dot
@@ -1647,9 +1647,9 @@ class UEnvQueryTest_Dot : public UEnvQueryTest {
 
 public:
 
-	struct Unknown LineA; // 0x1F8 (32)
-	struct Unknown LineB; // 0x218 (32)
-	enum class Unknow TestMode; // 0x238 (1)
+	struct FEnvDirection LineA; // 0x1F8 (32)
+	struct FEnvDirection LineB; // 0x218 (32)
+	enum class EEnvTestDot TestMode; // 0x238 (1)
 	char bAbsoluteValue : 0; // 0x239 (1)
 };
 
@@ -1658,10 +1658,10 @@ class UEnvQueryTest_GameplayTags : public UEnvQueryTest {
 
 public:
 
-	struct Unknown TagQueryToMatch; // 0x1F8 (72)
+	struct FGameplayTagQuery TagQueryToMatch; // 0x1F8 (72)
 	char bUpdatedToUseQuery : 0; // 0x240 (1)
-	enum class Unknow TagsToMatch; // 0x241 (1)
-	struct Unknown GameplayTags; // 0x248 (32)
+	enum class EGameplayContainerMatchType TagsToMatch; // 0x241 (1)
+	struct FGameplayTagContainer GameplayTags; // 0x248 (32)
 };
 
 // Class AIModule.EnvQueryTest_Overlap
@@ -1669,7 +1669,7 @@ class UEnvQueryTest_Overlap : public UEnvQueryTest {
 
 public:
 
-	struct Unknown OverlapData; // 0x1F8 (32)
+	struct FEnvOverlapData OverlapData; // 0x1F8 (32)
 };
 
 // Class AIModule.EnvQueryTest_Pathfinding
@@ -1678,10 +1678,10 @@ class UEnvQueryTest_Pathfinding : public UEnvQueryTest {
 public:
 
 	char TestMode; // 0x1F8 (1)
-	struct Unknown* Context; // 0x200 (8)
-	struct Unknown PathFromContext; // 0x208 (56)
-	struct Unknown SkipUnreachable; // 0x240 (56)
-	struct Unknown* FilterClass; // 0x278 (8)
+	struct UClass* Context; // 0x200 (8)
+	struct FAIDataProviderBoolValue PathFromContext; // 0x208 (56)
+	struct FAIDataProviderBoolValue SkipUnreachable; // 0x240 (56)
+	struct UClass* FilterClass; // 0x278 (8)
 };
 
 // Class AIModule.EnvQueryTest_PathfindingBatch
@@ -1689,7 +1689,7 @@ class UEnvQueryTest_PathfindingBatch : public UEnvQueryTest_Pathfinding {
 
 public:
 
-	struct Unknown ScanRangeMultiplier; // 0x280 (56)
+	struct FAIDataProviderFloatValue ScanRangeMultiplier; // 0x280 (56)
 };
 
 // Class AIModule.EnvQueryTest_Project
@@ -1697,7 +1697,7 @@ class UEnvQueryTest_Project : public UEnvQueryTest {
 
 public:
 
-	struct Unknown ProjectionData; // 0x1F8 (48)
+	struct FEnvTraceData ProjectionData; // 0x1F8 (48)
 };
 
 // Class AIModule.EnvQueryTest_Trace
@@ -1705,11 +1705,11 @@ class UEnvQueryTest_Trace : public UEnvQueryTest {
 
 public:
 
-	struct Unknown TraceData; // 0x1F8 (48)
-	struct Unknown TraceFromContext; // 0x228 (56)
-	struct Unknown ItemHeightOffset; // 0x260 (56)
-	struct Unknown ContextHeightOffset; // 0x298 (56)
-	struct Unknown* Context; // 0x2D0 (8)
+	struct FEnvTraceData TraceData; // 0x1F8 (48)
+	struct FAIDataProviderBoolValue TraceFromContext; // 0x228 (56)
+	struct FAIDataProviderFloatValue ItemHeightOffset; // 0x260 (56)
+	struct FAIDataProviderFloatValue ContextHeightOffset; // 0x298 (56)
+	struct UClass* Context; // 0x2D0 (8)
 };
 
 // Class AIModule.EnvQueryTest_Volume
@@ -1717,8 +1717,8 @@ class UEnvQueryTest_Volume : public UEnvQueryTest {
 
 public:
 
-	struct Unknown* VolumeContext; // 0x1F8 (8)
-	struct Unknown* VolumeClass; // 0x200 (8)
+	struct UClass* VolumeContext; // 0x1F8 (8)
+	struct UClass* VolumeClass; // 0x200 (8)
 	char bDoComplexVolumeTest : 0; // 0x208 (1)
 };
 
@@ -1727,19 +1727,19 @@ class AEQSTestingPawn : public ACharacter {
 
 public:
 
-	struct Unknown QueryTemplate; // 0x5E0 (8)
-	struct TArray<Unknown> QueryParams; // 0x5E8 (16)
-	struct TArray<Unknown> QueryConfig; // 0x5F8 (16)
+	struct UEnvQuery QueryTemplate; // 0x5E0 (8)
+	struct TArray<struct FEnvNamedValue> QueryParams; // 0x5E8 (16)
+	struct TArray<struct FAIDynamicParam> QueryConfig; // 0x5F8 (16)
 	float TimeLimitPerStep; // 0x608 (4)
 	int32_t StepToDebugDraw; // 0x60C (4)
-	enum class Unknow HighlightMode; // 0x610 (1)
+	enum class EEnvQueryHightlightMode HighlightMode; // 0x610 (1)
 	char bDrawLabels : 0; // 0x614 (1)
 	char bDrawFailedItems : 0; // 0x614 (1)
 	char bReRunQueryOnlyOnFinishedMove : 0; // 0x614 (1)
 	char bShouldBeVisibleInGame : 0; // 0x614 (1)
 	char bTickDuringGame : 0; // 0x614 (1)
 	char QueryingMode; // 0x618 (1)
-	struct Unknown NavAgentProperties; // 0x620 (48)
+	struct FNavAgentProperties NavAgentProperties; // 0x620 (48)
 };
 
 // Class AIModule.GridPathFollowingComponent
@@ -1747,7 +1747,7 @@ class UGridPathFollowingComponent : public UPathFollowingComponent {
 
 public:
 
-	struct Unknown GridManager; // 0x258 (8)
+	struct UNavLocalGridManager GridManager; // 0x258 (8)
 };
 
 // Class AIModule.NavLinkProxy
@@ -1755,15 +1755,15 @@ class ANavLinkProxy : public UActor {
 
 public:
 
-	struct TArray<Unknown> PointLinks; // 0x328 (16)
-	struct TArray<Unknown> SegmentLinks; // 0x338 (16)
-	struct Unknown SmartLinkComp; // 0x348 (8)
+	struct TArray<struct FNavigationLink> PointLinks; // 0x328 (16)
+	struct TArray<struct FNavigationSegmentLink> SegmentLinks; // 0x338 (16)
+	struct UNavLinkCustomComponent SmartLinkComp; // 0x348 (8)
 	char bSmartLinkIsRelevant : 0; // 0x350 (1)
 	struct FMulticastInlineDelegate OnSmartLinkReached; // 0x358 (16)
 
 	void SetSmartLinkEnabled(char bEnabled); // Function AIModule.NavLinkProxy.SetSmartLinkEnabled(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4796310>
-	void ResumePathFollowing(struct Unknown Agent); // Function AIModule.NavLinkProxy.ResumePathFollowing(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x47961C0>
-	void ReceiveSmartLinkReached(struct Unknown Agent, struct Unknown& Destination); // Function AIModule.NavLinkProxy.ReceiveSmartLinkReached(Event|Public|HasOutParms|HasDefaults|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ResumePathFollowing(struct UActor Agent); // Function AIModule.NavLinkProxy.ResumePathFollowing(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x47961C0>
+	void ReceiveSmartLinkReached(struct UActor Agent, struct FVector& Destination); // Function AIModule.NavLinkProxy.ReceiveSmartLinkReached(Event|Public|HasOutParms|HasDefaults|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	char IsSmartLinkEnabled(); // Function AIModule.NavLinkProxy.IsSmartLinkEnabled(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x47960A0>
 	char HasMovingAgents(); // Function AIModule.NavLinkProxy.HasMovingAgents(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4796070>
 };
@@ -1773,11 +1773,11 @@ class UPawnAction : public Object {
 
 public:
 
-	struct Unknown ChildAction; // 0x28 (8)
-	struct Unknown ParentAction; // 0x30 (8)
-	struct Unknown OwnerComponent; // 0x38 (8)
-	struct Unknown Instigator; // 0x40 (8)
-	struct Unknown BrainComp; // 0x48 (8)
+	struct UPawnAction ChildAction; // 0x28 (8)
+	struct UPawnAction ParentAction; // 0x30 (8)
+	struct UPawnActionsComponent OwnerComponent; // 0x38 (8)
+	struct Object Instigator; // 0x40 (8)
+	struct UBrainComponent BrainComp; // 0x48 (8)
 	char bAllowNewSameClassInstance : 0; // 0x80 (1)
 	char bReplaceActiveSameClassInstance : 0; // 0x80 (1)
 	char bShouldPauseMovement : 0; // 0x80 (1)
@@ -1785,7 +1785,7 @@ public:
 
 	char GetActionPriority(); // Function AIModule.PawnAction.GetActionPriority(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x18AB270>
 	void Finish(char WithResult); // Function AIModule.PawnAction.Finish(Native|Protected|BlueprintCallable) // <Game_BE.exe+0x3B59CF0>
-	struct Unknown CreateActionInstance(struct Unknown WorldContextObject, struct Unknown* ActionClass); // Function AIModule.PawnAction.CreateActionInstance(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x47982D0>
+	struct UPawnAction CreateActionInstance(struct Object WorldContextObject, struct UClass* ActionClass); // Function AIModule.PawnAction.CreateActionInstance(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x47982D0>
 };
 
 // Class AIModule.PawnAction_Move
@@ -1793,10 +1793,10 @@ class UPawnAction_Move : public UPawnAction {
 
 public:
 
-	struct Unknown GoalActor; // 0x98 (8)
-	struct Unknown GoalLocation; // 0xA0 (12)
+	struct UActor GoalActor; // 0x98 (8)
+	struct FVector GoalLocation; // 0xA0 (12)
 	float AcceptableRadius; // 0xAC (4)
-	struct Unknown* FilterClass; // 0xB0 (8)
+	struct UClass* FilterClass; // 0xB0 (8)
 	char bAllowStrafe : 0; // 0xB8 (1)
 	char bFinishOnOverlap : 0; // 0xB8 (1)
 	char bUsePathfinding : 0; // 0xB8 (1)
@@ -1811,8 +1811,8 @@ class UPawnAction_Repeat : public UPawnAction {
 
 public:
 
-	struct Unknown ActionToRepeat; // 0x98 (8)
-	struct Unknown RecentActionCopy; // 0xA0 (8)
+	struct UPawnAction ActionToRepeat; // 0x98 (8)
+	struct UPawnAction RecentActionCopy; // 0xA0 (8)
 	char ChildFailureHandlingMode; // 0xA8 (1)
 };
 
@@ -1821,9 +1821,9 @@ class UPawnAction_Sequence : public UPawnAction {
 
 public:
 
-	struct TArray<Unknown> ActionSequence; // 0x98 (16)
+	struct TArray<struct UPawnAction> ActionSequence; // 0x98 (16)
 	char ChildFailureHandlingMode; // 0xA8 (1)
-	struct Unknown RecentActionCopy; // 0xB0 (8)
+	struct UPawnAction RecentActionCopy; // 0xB0 (8)
 };
 
 // Class AIModule.PawnAction_Wait
@@ -1839,15 +1839,15 @@ class UPawnActionsComponent : public UActorComponent {
 
 public:
 
-	struct Unknown ControlledPawn; // 0xB0 (8)
-	struct TArray<Unknown> ActionStacks; // 0xB8 (16)
-	struct TArray<Unknown> ActionEvents; // 0xC8 (16)
-	struct Unknown CurrentAction; // 0xD8 (8)
+	struct APawn ControlledPawn; // 0xB0 (8)
+	struct TArray<struct FPawnActionStack> ActionStacks; // 0xB8 (16)
+	struct TArray<struct FPawnActionEvent> ActionEvents; // 0xC8 (16)
+	struct UPawnAction CurrentAction; // 0xD8 (8)
 
-	char K2_PushAction(struct Unknown NewAction, char Priority, struct Unknown Instigator); // Function AIModule.PawnActionsComponent.K2_PushAction(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4798650>
-	char K2_PerformAction(struct Unknown Pawn, struct Unknown Action, char Priority); // Function AIModule.PawnActionsComponent.K2_PerformAction(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x4798560>
-	char K2_ForceAbortAction(struct Unknown ActionToAbort); // Function AIModule.PawnActionsComponent.K2_ForceAbortAction(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x47984D0>
-	char K2_AbortAction(struct Unknown ActionToAbort); // Function AIModule.PawnActionsComponent.K2_AbortAction(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4798440>
+	char K2_PushAction(struct UPawnAction NewAction, char Priority, struct Object Instigator); // Function AIModule.PawnActionsComponent.K2_PushAction(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4798650>
+	char K2_PerformAction(struct APawn Pawn, struct UPawnAction Action, char Priority); // Function AIModule.PawnActionsComponent.K2_PerformAction(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x4798560>
+	char K2_ForceAbortAction(struct UPawnAction ActionToAbort); // Function AIModule.PawnActionsComponent.K2_ForceAbortAction(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x47984D0>
+	char K2_AbortAction(struct UPawnAction ActionToAbort); // Function AIModule.PawnActionsComponent.K2_AbortAction(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4798440>
 };
 
 // Class AIModule.PawnSensingComponent
@@ -1872,8 +1872,8 @@ public:
 	void SetSensingUpdatesEnabled(char bEnabled); // Function AIModule.PawnSensingComponent.SetSensingUpdatesEnabled(BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4798A60>
 	void SetSensingInterval(float NewSensingInterval); // Function AIModule.PawnSensingComponent.SetSensingInterval(BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <Game_BE.exe+0x47989E0>
 	void SetPeripheralVisionAngle(float NewPeripheralVisionAngle); // Function AIModule.PawnSensingComponent.SetPeripheralVisionAngle(BlueprintAuthorityOnly|Native|Public|BlueprintCallable) // <Game_BE.exe+0x4798960>
-	void SeePawnDelegate__DelegateSignature(struct Unknown Pawn); // DelegateFunction AIModule.PawnSensingComponent.SeePawnDelegate__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B80160>
-	void HearNoiseDelegate__DelegateSignature(struct Unknown Instigator, struct Unknown& Location, float Volume); // DelegateFunction AIModule.PawnSensingComponent.HearNoiseDelegate__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void SeePawnDelegate__DelegateSignature(struct APawn Pawn); // DelegateFunction AIModule.PawnSensingComponent.SeePawnDelegate__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B80160>
+	void HearNoiseDelegate__DelegateSignature(struct APawn Instigator, struct FVector& Location, float Volume); // DelegateFunction AIModule.PawnSensingComponent.HearNoiseDelegate__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms|HasDefaults) // <Game_BE.exe+0x2B80160>
 	float GetPeripheralVisionCosine(); // Function AIModule.PawnSensingComponent.GetPeripheralVisionCosine(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4798420>
 	float GetPeripheralVisionAngle(); // Function AIModule.PawnSensingComponent.GetPeripheralVisionAngle(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x4798400>
 };
@@ -1888,21 +1888,21 @@ struct FAIStimulus {
 	float Age; // 0x0 (4)
 	float ExpirationAge; // 0x4 (4)
 	float Strength; // 0x8 (4)
-	struct Unknown StimulusLocation; // 0xC (12)
-	struct Unknown ReceiverLocation; // 0x18 (12)
+	struct FVector StimulusLocation; // 0xC (12)
+	struct FVector ReceiverLocation; // 0x18 (12)
 	struct FName Tag; // 0x24 (8)
 	char bSuccessfullySensed : 0; // 0x38 (1)
 };
 
 // ScriptStruct AIModule.AIDataProviderValue
 struct FAIDataProviderValue {
-	struct Unknown DataBinding; // 0x10 (8)
+	struct UAIDataProvider DataBinding; // 0x10 (8)
 	struct FName DataField; // 0x18 (8)
 };
 
 // ScriptStruct AIModule.AIDataProviderTypedValue
 struct FAIDataProviderTypedValue : FAIDataProviderValue {
-	struct Unknown* PropertyType; // 0x20 (8)
+	struct UClass* PropertyType; // 0x20 (8)
 };
 
 // ScriptStruct AIModule.AIDataProviderBoolValue
@@ -1922,8 +1922,8 @@ struct FAIDataProviderIntValue : FAIDataProviderTypedValue {
 
 // ScriptStruct AIModule.ActorPerceptionBlueprintInfo
 struct FActorPerceptionBlueprintInfo {
-	struct Unknown Target; // 0x0 (8)
-	struct TArray<Unknown> LastSensedStimuli; // 0x8 (16)
+	struct UActor Target; // 0x0 (8)
+	struct TArray<struct FAIStimulus> LastSensedStimuli; // 0x8 (16)
 	char bIsHostile : 0; // 0x18 (1)
 };
 
@@ -1937,43 +1937,43 @@ struct FAISenseAffiliationFilter {
 // ScriptStruct AIModule.AIDamageEvent
 struct FAIDamageEvent {
 	float Amount; // 0x0 (4)
-	struct Unknown Location; // 0x4 (12)
-	struct Unknown HitLocation; // 0x10 (12)
-	struct Unknown DamagedActor; // 0x20 (8)
-	struct Unknown Instigator; // 0x28 (8)
+	struct FVector Location; // 0x4 (12)
+	struct FVector HitLocation; // 0x10 (12)
+	struct UActor DamagedActor; // 0x20 (8)
+	struct UActor Instigator; // 0x28 (8)
 };
 
 // ScriptStruct AIModule.AINoiseEvent
 struct FAINoiseEvent {
-	struct Unknown NoiseLocation; // 0x4 (12)
+	struct FVector NoiseLocation; // 0x4 (12)
 	float Loudness; // 0x10 (4)
 	float MaxRange; // 0x14 (4)
-	struct Unknown Instigator; // 0x18 (8)
+	struct UActor Instigator; // 0x18 (8)
 	struct FName Tag; // 0x20 (8)
 };
 
 // ScriptStruct AIModule.AIPredictionEvent
 struct FAIPredictionEvent {
-	struct Unknown Requestor; // 0x0 (8)
-	struct Unknown PredictedActor; // 0x8 (8)
+	struct UActor Requestor; // 0x0 (8)
+	struct UActor PredictedActor; // 0x8 (8)
 };
 
 // ScriptStruct AIModule.AISightEvent
 struct FAISightEvent {
-	struct Unknown SeenActor; // 0x8 (8)
-	struct Unknown Observer; // 0x10 (8)
+	struct UActor SeenActor; // 0x8 (8)
+	struct UActor Observer; // 0x10 (8)
 };
 
 // ScriptStruct AIModule.AITeamStimulusEvent
 struct FAITeamStimulusEvent {
-	struct Unknown Broadcaster; // 0x28 (8)
-	struct Unknown Enemy; // 0x30 (8)
+	struct UActor Broadcaster; // 0x28 (8)
+	struct UActor Enemy; // 0x30 (8)
 };
 
 // ScriptStruct AIModule.AITouchEvent
 struct FAITouchEvent {
-	struct Unknown TouchReceiver; // 0x10 (8)
-	struct Unknown OtherActor; // 0x18 (8)
+	struct UActor TouchReceiver; // 0x10 (8)
+	struct UActor OtherActor; // 0x18 (8)
 };
 
 // ScriptStruct AIModule.IntervalCountdown
@@ -1983,20 +1983,20 @@ struct FIntervalCountdown {
 
 // ScriptStruct AIModule.AIMoveRequest
 struct FAIMoveRequest {
-	struct Unknown GoalActor; // 0x0 (8)
+	struct UActor GoalActor; // 0x0 (8)
 };
 
 // ScriptStruct AIModule.BehaviorTreeTemplateInfo
 struct FBehaviorTreeTemplateInfo {
-	struct Unknown Asset; // 0x0 (8)
-	struct Unknown Template; // 0x8 (8)
+	struct UBehaviorTree Asset; // 0x0 (8)
+	struct UBTCompositeNode Template; // 0x8 (8)
 };
 
 // ScriptStruct AIModule.BlackboardKeySelector
 struct FBlackboardKeySelector {
-	struct TArray<Unknown> AllowedTypes; // 0x0 (16)
+	struct TArray<struct UBlackboardKeyType> AllowedTypes; // 0x0 (16)
 	struct FName SelectedKeyName; // 0x10 (8)
-	struct Unknown* SelectedKeyType; // 0x18 (8)
+	struct UClass* SelectedKeyType; // 0x18 (8)
 	char SelectedKeyID; // 0x20 (1)
 	char bNoneIsAllowedValue : 0; // 0x24 (1)
 };
@@ -2004,16 +2004,16 @@ struct FBlackboardKeySelector {
 // ScriptStruct AIModule.BlackboardEntry
 struct FBlackboardEntry {
 	struct FName EntryName; // 0x0 (8)
-	struct Unknown KeyType; // 0x8 (8)
+	struct UBlackboardKeyType KeyType; // 0x8 (8)
 	char bInstanceSynced : 0; // 0x10 (1)
 };
 
 // ScriptStruct AIModule.BTCompositeChild
 struct FBTCompositeChild {
-	struct Unknown ChildComposite; // 0x0 (8)
-	struct Unknown ChildTask; // 0x8 (8)
-	struct TArray<Unknown> Decorators; // 0x10 (16)
-	struct TArray<Unknown> DecoratorOps; // 0x20 (16)
+	struct UBTCompositeNode ChildComposite; // 0x0 (8)
+	struct UBTTaskNode ChildTask; // 0x8 (8)
+	struct TArray<struct UBTDecorator> Decorators; // 0x10 (16)
+	struct TArray<struct FBTDecoratorLogic> DecoratorOps; // 0x20 (16)
 };
 
 // ScriptStruct AIModule.BTDecoratorLogic
@@ -2024,8 +2024,8 @@ struct FBTDecoratorLogic {
 
 // ScriptStruct AIModule.CrowdAvoidanceSamplingPattern
 struct FCrowdAvoidanceSamplingPattern {
-	struct TArray<Unknown> Angles; // 0x0 (16)
-	struct TArray<Unknown> Radii; // 0x10 (16)
+	struct TArray<float> Angles; // 0x0 (16)
+	struct TArray<float> Radii; // 0x10 (16)
 };
 
 // ScriptStruct AIModule.CrowdAvoidanceConfig
@@ -2044,21 +2044,21 @@ struct FCrowdAvoidanceConfig {
 
 // ScriptStruct AIModule.EnvQueryInstanceCache
 struct FEnvQueryInstanceCache {
-	struct Unknown Template; // 0x0 (8)
+	struct UEnvQuery Template; // 0x0 (8)
 };
 
 // ScriptStruct AIModule.EnvQueryRequest
 struct FEnvQueryRequest {
-	struct Unknown QueryTemplate; // 0x0 (8)
-	struct Unknown Owner; // 0x8 (8)
-	struct Unknown World; // 0x10 (8)
+	struct UEnvQuery QueryTemplate; // 0x0 (8)
+	struct Object Owner; // 0x8 (8)
+	struct UWorld World; // 0x10 (8)
 };
 
 // ScriptStruct AIModule.EQSParametrizedQueryExecutionRequest
 struct FEQSParametrizedQueryExecutionRequest {
-	struct Unknown QueryTemplate; // 0x0 (8)
-	struct TArray<Unknown> QueryConfig; // 0x8 (16)
-	struct Unknown EQSQueryBlackboardKey; // 0x18 (40)
+	struct UEnvQuery QueryTemplate; // 0x0 (8)
+	struct TArray<struct FAIDynamicParam> QueryConfig; // 0x8 (16)
+	struct FBlackboardKeySelector EQSQueryBlackboardKey; // 0x18 (40)
 	char RunMode; // 0x40 (1)
 	char bUseBBKeyForQueryTemplate : 0; // 0x44 (1)
 };
@@ -2066,14 +2066,14 @@ struct FEQSParametrizedQueryExecutionRequest {
 // ScriptStruct AIModule.AIDynamicParam
 struct FAIDynamicParam {
 	struct FName ParamName; // 0x0 (8)
-	enum class Unknow ParamType; // 0x8 (1)
+	enum class EAIParamType ParamType; // 0x8 (1)
 	float Value; // 0xC (4)
-	struct Unknown BBKey; // 0x10 (40)
+	struct FBlackboardKeySelector BBKey; // 0x10 (40)
 };
 
 // ScriptStruct AIModule.EnvQueryResult
 struct FEnvQueryResult {
-	struct Unknown* ItemType; // 0x10 (8)
+	struct UClass* ItemType; // 0x10 (8)
 	int32_t OptionIndex; // 0x2C (4)
 	int32_t QueryID; // 0x30 (4)
 };
@@ -2083,7 +2083,7 @@ struct FEnvOverlapData {
 	float ExtentX; // 0x0 (4)
 	float ExtentY; // 0x4 (4)
 	float ExtentZ; // 0x8 (4)
-	struct Unknown ShapeOffset; // 0xC (12)
+	struct FVector ShapeOffset; // 0xC (12)
 	char OverlapChannel; // 0x18 (1)
 	char OverlapShape; // 0x19 (1)
 	char bOnlyBlockingHits : 0; // 0x1C (1)
@@ -2094,7 +2094,7 @@ struct FEnvOverlapData {
 // ScriptStruct AIModule.EnvTraceData
 struct FEnvTraceData {
 	int32_t VersionNum; // 0x0 (4)
-	struct Unknown* NavigationFilter; // 0x8 (8)
+	struct UClass* NavigationFilter; // 0x8 (8)
 	float ProjectDown; // 0x10 (4)
 	float ProjectUp; // 0x14 (4)
 	float ExtentX; // 0x18 (4)
@@ -2115,16 +2115,16 @@ struct FEnvTraceData {
 
 // ScriptStruct AIModule.EnvDirection
 struct FEnvDirection {
-	struct Unknown* LineFrom; // 0x0 (8)
-	struct Unknown* LineTo; // 0x8 (8)
-	struct Unknown* Rotation; // 0x10 (8)
+	struct UClass* LineFrom; // 0x0 (8)
+	struct UClass* LineTo; // 0x8 (8)
+	struct UClass* Rotation; // 0x10 (8)
 	char DirMode; // 0x18 (1)
 };
 
 // ScriptStruct AIModule.EnvNamedValue
 struct FEnvNamedValue {
 	struct FName ParamName; // 0x0 (8)
-	enum class Unknow ParamType; // 0x8 (1)
+	enum class EAIParamType ParamType; // 0x8 (1)
 	float Value; // 0xC (4)
 };
 
@@ -2135,21 +2135,21 @@ struct FGenericTeamId {
 
 // ScriptStruct AIModule.PawnActionStack
 struct FPawnActionStack {
-	struct Unknown TopAction; // 0x0 (8)
+	struct UPawnAction TopAction; // 0x0 (8)
 };
 
 // ScriptStruct AIModule.PawnActionEvent
 struct FPawnActionEvent {
-	struct Unknown Action; // 0x0 (8)
+	struct UPawnAction Action; // 0x0 (8)
 };
 
 // Function AIModule.AIController.UseBlackboard
-inline char AAIController::UseBlackboard(struct Unknown BlackboardAsset, struct Unknown& BlackboardComponent) {
+inline char AAIController::UseBlackboard(struct UBlackboardData BlackboardAsset, struct UBlackboardComponent& BlackboardComponent) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.UseBlackboard");
 
 	struct UseBlackboard_Params {
-		struct Unknown BlackboardAsset;
-		struct Unknown& BlackboardComponent;
+		struct UBlackboardData BlackboardAsset;
+		struct UBlackboardComponent& BlackboardComponent;
 		char ReturnValue;
 
 	}; UseBlackboard_Params Params;
@@ -2167,11 +2167,11 @@ inline char AAIController::UseBlackboard(struct Unknown BlackboardAsset, struct 
 }
 
 // Function AIModule.AIController.UnclaimTaskResource
-inline void AAIController::UnclaimTaskResource(struct Unknown* ResourceClass) {
+inline void AAIController::UnclaimTaskResource(struct UClass* ResourceClass) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.UnclaimTaskResource");
 
 	struct UnclaimTaskResource_Params {
-		struct Unknown* ResourceClass;
+		struct UClass* ResourceClass;
 	}; UnclaimTaskResource_Params Params;
 
 	Params.ResourceClass = ResourceClass;
@@ -2182,11 +2182,11 @@ inline void AAIController::UnclaimTaskResource(struct Unknown* ResourceClass) {
 }
 
 // Function AIModule.AIController.SetPathFollowingComponent
-inline void AAIController::SetPathFollowingComponent(struct Unknown NewPFComponent) {
+inline void AAIController::SetPathFollowingComponent(struct UPathFollowingComponent NewPFComponent) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.SetPathFollowingComponent");
 
 	struct SetPathFollowingComponent_Params {
-		struct Unknown NewPFComponent;
+		struct UPathFollowingComponent NewPFComponent;
 	}; SetPathFollowingComponent_Params Params;
 
 	Params.NewPFComponent = NewPFComponent;
@@ -2212,11 +2212,11 @@ inline void AAIController::SetMoveBlockDetection(char bEnable) {
 }
 
 // Function AIModule.AIController.RunBehaviorTree
-inline char AAIController::RunBehaviorTree(struct Unknown BTAsset) {
+inline char AAIController::RunBehaviorTree(struct UBehaviorTree BTAsset) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.RunBehaviorTree");
 
 	struct RunBehaviorTree_Params {
-		struct Unknown BTAsset;
+		struct UBehaviorTree BTAsset;
 		char ReturnValue;
 
 	}; RunBehaviorTree_Params Params;
@@ -2231,12 +2231,12 @@ inline char AAIController::RunBehaviorTree(struct Unknown BTAsset) {
 }
 
 // Function AIModule.AIController.OnUsingBlackBoard
-inline void AAIController::OnUsingBlackBoard(struct Unknown BlackboardComp, struct Unknown BlackboardAsset) {
+inline void AAIController::OnUsingBlackBoard(struct UBlackboardComponent BlackboardComp, struct UBlackboardData BlackboardAsset) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.OnUsingBlackBoard");
 
 	struct OnUsingBlackBoard_Params {
-		struct Unknown BlackboardComp;
-		struct Unknown BlackboardAsset;
+		struct UBlackboardComponent BlackboardComp;
+		struct UBlackboardData BlackboardAsset;
 	}; OnUsingBlackBoard_Params Params;
 
 	Params.BlackboardComp = BlackboardComp;
@@ -2248,12 +2248,12 @@ inline void AAIController::OnUsingBlackBoard(struct Unknown BlackboardComp, stru
 }
 
 // Function AIModule.AIController.OnGameplayTaskResourcesClaimed
-inline void AAIController::OnGameplayTaskResourcesClaimed(struct Unknown NewlyClaimed, struct Unknown FreshlyReleased) {
+inline void AAIController::OnGameplayTaskResourcesClaimed(struct FGameplayResourceSet NewlyClaimed, struct FGameplayResourceSet FreshlyReleased) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.OnGameplayTaskResourcesClaimed");
 
 	struct OnGameplayTaskResourcesClaimed_Params {
-		struct Unknown NewlyClaimed;
-		struct Unknown FreshlyReleased;
+		struct FGameplayResourceSet NewlyClaimed;
+		struct FGameplayResourceSet FreshlyReleased;
 	}; OnGameplayTaskResourcesClaimed_Params Params;
 
 	Params.NewlyClaimed = NewlyClaimed;
@@ -2265,17 +2265,17 @@ inline void AAIController::OnGameplayTaskResourcesClaimed(struct Unknown NewlyCl
 }
 
 // Function AIModule.AIController.MoveToLocation
-inline char AAIController::MoveToLocation(struct Unknown& Dest, float AcceptanceRadius, char bStopOnOverlap, char bUsePathfinding, char bProjectDestinationToNavigation, char bCanStrafe, struct Unknown* FilterClass, char bAllowPartialPath) {
+inline char AAIController::MoveToLocation(struct FVector& Dest, float AcceptanceRadius, char bStopOnOverlap, char bUsePathfinding, char bProjectDestinationToNavigation, char bCanStrafe, struct UClass* FilterClass, char bAllowPartialPath) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.MoveToLocation");
 
 	struct MoveToLocation_Params {
-		struct Unknown& Dest;
+		struct FVector& Dest;
 		float AcceptanceRadius;
 		char bStopOnOverlap;
 		char bUsePathfinding;
 		char bProjectDestinationToNavigation;
 		char bCanStrafe;
-		struct Unknown* FilterClass;
+		struct UClass* FilterClass;
 		char bAllowPartialPath;
 		char ReturnValue;
 
@@ -2300,16 +2300,16 @@ inline char AAIController::MoveToLocation(struct Unknown& Dest, float Acceptance
 }
 
 // Function AIModule.AIController.MoveToActor
-inline char AAIController::MoveToActor(struct Unknown Goal, float AcceptanceRadius, char bStopOnOverlap, char bUsePathfinding, char bCanStrafe, struct Unknown* FilterClass, char bAllowPartialPath) {
+inline char AAIController::MoveToActor(struct UActor Goal, float AcceptanceRadius, char bStopOnOverlap, char bUsePathfinding, char bCanStrafe, struct UClass* FilterClass, char bAllowPartialPath) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.MoveToActor");
 
 	struct MoveToActor_Params {
-		struct Unknown Goal;
+		struct UActor Goal;
 		float AcceptanceRadius;
 		char bStopOnOverlap;
 		char bUsePathfinding;
 		char bCanStrafe;
-		struct Unknown* FilterClass;
+		struct UClass* FilterClass;
 		char bAllowPartialPath;
 		char ReturnValue;
 
@@ -2331,11 +2331,11 @@ inline char AAIController::MoveToActor(struct Unknown Goal, float AcceptanceRadi
 }
 
 // Function AIModule.AIController.K2_SetFocus
-inline void AAIController::K2_SetFocus(struct Unknown NewFocus) {
+inline void AAIController::K2_SetFocus(struct UActor NewFocus) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.K2_SetFocus");
 
 	struct K2_SetFocus_Params {
-		struct Unknown NewFocus;
+		struct UActor NewFocus;
 	}; K2_SetFocus_Params Params;
 
 	Params.NewFocus = NewFocus;
@@ -2346,11 +2346,11 @@ inline void AAIController::K2_SetFocus(struct Unknown NewFocus) {
 }
 
 // Function AIModule.AIController.K2_SetFocalPoint
-inline void AAIController::K2_SetFocalPoint(struct Unknown FP) {
+inline void AAIController::K2_SetFocalPoint(struct FVector FP) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.K2_SetFocalPoint");
 
 	struct K2_SetFocalPoint_Params {
-		struct Unknown FP;
+		struct FVector FP;
 	}; K2_SetFocalPoint_Params Params;
 
 	Params.FP = FP;
@@ -2393,12 +2393,12 @@ inline char AAIController::HasPartialPath() {
 }
 
 // Function AIModule.AIController.GetPathFollowingComponent
-inline struct Unknown AAIController::GetPathFollowingComponent() {
+inline struct UPathFollowingComponent AAIController::GetPathFollowingComponent() {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.GetPathFollowingComponent");
 
 	struct GetPathFollowingComponent_Params {
 		
-		struct Unknown ReturnValue;
+		struct UPathFollowingComponent ReturnValue;
 
 	}; GetPathFollowingComponent_Params Params;
 
@@ -2429,12 +2429,12 @@ inline char AAIController::GetMoveStatus() {
 }
 
 // Function AIModule.AIController.GetImmediateMoveDestination
-inline struct Unknown AAIController::GetImmediateMoveDestination() {
+inline struct FVector AAIController::GetImmediateMoveDestination() {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.GetImmediateMoveDestination");
 
 	struct GetImmediateMoveDestination_Params {
 		
-		struct Unknown ReturnValue;
+		struct FVector ReturnValue;
 
 	}; GetImmediateMoveDestination_Params Params;
 
@@ -2447,12 +2447,12 @@ inline struct Unknown AAIController::GetImmediateMoveDestination() {
 }
 
 // Function AIModule.AIController.GetFocusActor
-inline struct Unknown AAIController::GetFocusActor() {
+inline struct UActor AAIController::GetFocusActor() {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.GetFocusActor");
 
 	struct GetFocusActor_Params {
 		
-		struct Unknown ReturnValue;
+		struct UActor ReturnValue;
 
 	}; GetFocusActor_Params Params;
 
@@ -2465,12 +2465,12 @@ inline struct Unknown AAIController::GetFocusActor() {
 }
 
 // Function AIModule.AIController.GetFocalPointOnActor
-inline struct Unknown AAIController::GetFocalPointOnActor(struct Unknown Actor) {
+inline struct FVector AAIController::GetFocalPointOnActor(struct UActor Actor) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.GetFocalPointOnActor");
 
 	struct GetFocalPointOnActor_Params {
-		struct Unknown Actor;
-		struct Unknown ReturnValue;
+		struct UActor Actor;
+		struct FVector ReturnValue;
 
 	}; GetFocalPointOnActor_Params Params;
 
@@ -2484,12 +2484,12 @@ inline struct Unknown AAIController::GetFocalPointOnActor(struct Unknown Actor) 
 }
 
 // Function AIModule.AIController.GetFocalPoint
-inline struct Unknown AAIController::GetFocalPoint() {
+inline struct FVector AAIController::GetFocalPoint() {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.GetFocalPoint");
 
 	struct GetFocalPoint_Params {
 		
-		struct Unknown ReturnValue;
+		struct FVector ReturnValue;
 
 	}; GetFocalPoint_Params Params;
 
@@ -2502,12 +2502,12 @@ inline struct Unknown AAIController::GetFocalPoint() {
 }
 
 // Function AIModule.AIController.GetAIPerceptionComponent
-inline struct Unknown AAIController::GetAIPerceptionComponent() {
+inline struct UAIPerceptionComponent AAIController::GetAIPerceptionComponent() {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.GetAIPerceptionComponent");
 
 	struct GetAIPerceptionComponent_Params {
 		
-		struct Unknown ReturnValue;
+		struct UAIPerceptionComponent ReturnValue;
 
 	}; GetAIPerceptionComponent_Params Params;
 
@@ -2520,11 +2520,11 @@ inline struct Unknown AAIController::GetAIPerceptionComponent() {
 }
 
 // Function AIModule.AIController.ClaimTaskResource
-inline void AAIController::ClaimTaskResource(struct Unknown* ResourceClass) {
+inline void AAIController::ClaimTaskResource(struct UClass* ResourceClass) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.ClaimTaskResource");
 
 	struct ClaimTaskResource_Params {
-		struct Unknown* ResourceClass;
+		struct UClass* ResourceClass;
 	}; ClaimTaskResource_Params Params;
 
 	Params.ResourceClass = ResourceClass;
@@ -2535,11 +2535,11 @@ inline void AAIController::ClaimTaskResource(struct Unknown* ResourceClass) {
 }
 
 // Function AIModule.AIAsyncTaskBlueprintProxy.OnMoveCompleted
-inline void UAIAsyncTaskBlueprintProxy::OnMoveCompleted(struct Unknown RequestID, char MovementResult) {
+inline void UAIAsyncTaskBlueprintProxy::OnMoveCompleted(struct FAIRequestID RequestID, char MovementResult) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIAsyncTaskBlueprintProxy.OnMoveCompleted");
 
 	struct OnMoveCompleted_Params {
-		struct Unknown RequestID;
+		struct FAIRequestID RequestID;
 		char MovementResult;
 	}; OnMoveCompleted_Params Params;
 
@@ -2552,11 +2552,11 @@ inline void UAIAsyncTaskBlueprintProxy::OnMoveCompleted(struct Unknown RequestID
 }
 
 // Function AIModule.AIPerceptionComponent.SetSenseEnabled
-inline void UAIPerceptionComponent::SetSenseEnabled(struct Unknown* SenseClass, char bEnable) {
+inline void UAIPerceptionComponent::SetSenseEnabled(struct UClass* SenseClass, char bEnable) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionComponent.SetSenseEnabled");
 
 	struct SetSenseEnabled_Params {
-		struct Unknown* SenseClass;
+		struct UClass* SenseClass;
 		char bEnable;
 	}; SetSenseEnabled_Params Params;
 
@@ -2583,11 +2583,11 @@ inline void UAIPerceptionComponent::RequestStimuliListenerUpdate() {
 }
 
 // Function AIModule.AIPerceptionComponent.OnOwnerEndPlay
-inline void UAIPerceptionComponent::OnOwnerEndPlay(struct Unknown Actor, char EndPlayReason) {
+inline void UAIPerceptionComponent::OnOwnerEndPlay(struct UActor Actor, char EndPlayReason) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionComponent.OnOwnerEndPlay");
 
 	struct OnOwnerEndPlay_Params {
-		struct Unknown Actor;
+		struct UActor Actor;
 		char EndPlayReason;
 	}; OnOwnerEndPlay_Params Params;
 
@@ -2600,11 +2600,11 @@ inline void UAIPerceptionComponent::OnOwnerEndPlay(struct Unknown Actor, char En
 }
 
 // Function AIModule.AIPerceptionComponent.GetPerceivedHostileActors
-inline void UAIPerceptionComponent::GetPerceivedHostileActors(struct TArray<Unknown>& OutActors) {
+inline void UAIPerceptionComponent::GetPerceivedHostileActors(struct TArray<struct UActor>& OutActors) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionComponent.GetPerceivedHostileActors");
 
 	struct GetPerceivedHostileActors_Params {
-		struct TArray<Unknown>& OutActors;
+		struct TArray<struct UActor>& OutActors;
 	}; GetPerceivedHostileActors_Params Params;
 
 
@@ -2617,12 +2617,12 @@ inline void UAIPerceptionComponent::GetPerceivedHostileActors(struct TArray<Unkn
 }
 
 // Function AIModule.AIPerceptionComponent.GetPerceivedActors
-inline void UAIPerceptionComponent::GetPerceivedActors(struct Unknown* SenseToUse, struct TArray<Unknown>& OutActors) {
+inline void UAIPerceptionComponent::GetPerceivedActors(struct UClass* SenseToUse, struct TArray<struct UActor>& OutActors) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionComponent.GetPerceivedActors");
 
 	struct GetPerceivedActors_Params {
-		struct Unknown* SenseToUse;
-		struct TArray<Unknown>& OutActors;
+		struct UClass* SenseToUse;
+		struct TArray<struct UActor>& OutActors;
 	}; GetPerceivedActors_Params Params;
 
 	Params.SenseToUse = SenseToUse;
@@ -2636,12 +2636,12 @@ inline void UAIPerceptionComponent::GetPerceivedActors(struct Unknown* SenseToUs
 }
 
 // Function AIModule.AIPerceptionComponent.GetKnownPerceivedActors
-inline void UAIPerceptionComponent::GetKnownPerceivedActors(struct Unknown* SenseToUse, struct TArray<Unknown>& OutActors) {
+inline void UAIPerceptionComponent::GetKnownPerceivedActors(struct UClass* SenseToUse, struct TArray<struct UActor>& OutActors) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionComponent.GetKnownPerceivedActors");
 
 	struct GetKnownPerceivedActors_Params {
-		struct Unknown* SenseToUse;
-		struct TArray<Unknown>& OutActors;
+		struct UClass* SenseToUse;
+		struct TArray<struct UActor>& OutActors;
 	}; GetKnownPerceivedActors_Params Params;
 
 	Params.SenseToUse = SenseToUse;
@@ -2655,12 +2655,12 @@ inline void UAIPerceptionComponent::GetKnownPerceivedActors(struct Unknown* Sens
 }
 
 // Function AIModule.AIPerceptionComponent.GetCurrentlyPerceivedActors
-inline void UAIPerceptionComponent::GetCurrentlyPerceivedActors(struct Unknown* SenseToUse, struct TArray<Unknown>& OutActors) {
+inline void UAIPerceptionComponent::GetCurrentlyPerceivedActors(struct UClass* SenseToUse, struct TArray<struct UActor>& OutActors) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionComponent.GetCurrentlyPerceivedActors");
 
 	struct GetCurrentlyPerceivedActors_Params {
-		struct Unknown* SenseToUse;
-		struct TArray<Unknown>& OutActors;
+		struct UClass* SenseToUse;
+		struct TArray<struct UActor>& OutActors;
 	}; GetCurrentlyPerceivedActors_Params Params;
 
 	Params.SenseToUse = SenseToUse;
@@ -2674,12 +2674,12 @@ inline void UAIPerceptionComponent::GetCurrentlyPerceivedActors(struct Unknown* 
 }
 
 // Function AIModule.AIPerceptionComponent.GetActorsPerception
-inline char UAIPerceptionComponent::GetActorsPerception(struct Unknown Actor, struct Unknown& Info) {
+inline char UAIPerceptionComponent::GetActorsPerception(struct UActor Actor, struct FActorPerceptionBlueprintInfo& Info) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionComponent.GetActorsPerception");
 
 	struct GetActorsPerception_Params {
-		struct Unknown Actor;
-		struct Unknown& Info;
+		struct UActor Actor;
+		struct FActorPerceptionBlueprintInfo& Info;
 		char ReturnValue;
 
 	}; GetActorsPerception_Params Params;
@@ -2711,11 +2711,11 @@ inline void UAIPerceptionComponent::ForgetAll() {
 }
 
 // Function AIModule.AIPerceptionStimuliSourceComponent.UnregisterFromSense
-inline void UAIPerceptionStimuliSourceComponent::UnregisterFromSense(struct Unknown* SenseClass) {
+inline void UAIPerceptionStimuliSourceComponent::UnregisterFromSense(struct UClass* SenseClass) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionStimuliSourceComponent.UnregisterFromSense");
 
 	struct UnregisterFromSense_Params {
-		struct Unknown* SenseClass;
+		struct UClass* SenseClass;
 	}; UnregisterFromSense_Params Params;
 
 	Params.SenseClass = SenseClass;
@@ -2754,11 +2754,11 @@ inline void UAIPerceptionStimuliSourceComponent::RegisterWithPerceptionSystem() 
 }
 
 // Function AIModule.AIPerceptionStimuliSourceComponent.RegisterForSense
-inline void UAIPerceptionStimuliSourceComponent::RegisterForSense(struct Unknown* SenseClass) {
+inline void UAIPerceptionStimuliSourceComponent::RegisterForSense(struct UClass* SenseClass) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionStimuliSourceComponent.RegisterForSense");
 
 	struct RegisterForSense_Params {
-		struct Unknown* SenseClass;
+		struct UClass* SenseClass;
 	}; RegisterForSense_Params Params;
 
 	Params.SenseClass = SenseClass;
@@ -2769,12 +2769,12 @@ inline void UAIPerceptionStimuliSourceComponent::RegisterForSense(struct Unknown
 }
 
 // Function AIModule.AIPerceptionSystem.ReportPerceptionEvent
-inline void UAIPerceptionSystem::ReportPerceptionEvent(struct Unknown WorldContextObject, struct Unknown PerceptionEvent) {
+inline void UAIPerceptionSystem::ReportPerceptionEvent(struct Object WorldContextObject, struct UAISenseEvent PerceptionEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionSystem.ReportPerceptionEvent");
 
 	struct ReportPerceptionEvent_Params {
-		struct Unknown WorldContextObject;
-		struct Unknown PerceptionEvent;
+		struct Object WorldContextObject;
+		struct UAISenseEvent PerceptionEvent;
 	}; ReportPerceptionEvent_Params Params;
 
 	Params.WorldContextObject = WorldContextObject;
@@ -2786,11 +2786,11 @@ inline void UAIPerceptionSystem::ReportPerceptionEvent(struct Unknown WorldConte
 }
 
 // Function AIModule.AIPerceptionSystem.ReportEvent
-inline void UAIPerceptionSystem::ReportEvent(struct Unknown PerceptionEvent) {
+inline void UAIPerceptionSystem::ReportEvent(struct UAISenseEvent PerceptionEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionSystem.ReportEvent");
 
 	struct ReportEvent_Params {
-		struct Unknown PerceptionEvent;
+		struct UAISenseEvent PerceptionEvent;
 	}; ReportEvent_Params Params;
 
 	Params.PerceptionEvent = PerceptionEvent;
@@ -2801,13 +2801,13 @@ inline void UAIPerceptionSystem::ReportEvent(struct Unknown PerceptionEvent) {
 }
 
 // Function AIModule.AIPerceptionSystem.RegisterPerceptionStimuliSource
-inline char UAIPerceptionSystem::RegisterPerceptionStimuliSource(struct Unknown WorldContextObject, struct Unknown* Sense, struct Unknown Target) {
+inline char UAIPerceptionSystem::RegisterPerceptionStimuliSource(struct Object WorldContextObject, struct UClass* Sense, struct UActor Target) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionSystem.RegisterPerceptionStimuliSource");
 
 	struct RegisterPerceptionStimuliSource_Params {
-		struct Unknown WorldContextObject;
-		struct Unknown* Sense;
-		struct Unknown Target;
+		struct Object WorldContextObject;
+		struct UClass* Sense;
+		struct UActor Target;
 		char ReturnValue;
 
 	}; RegisterPerceptionStimuliSource_Params Params;
@@ -2824,11 +2824,11 @@ inline char UAIPerceptionSystem::RegisterPerceptionStimuliSource(struct Unknown 
 }
 
 // Function AIModule.AIPerceptionSystem.OnPerceptionStimuliSourceEndPlay
-inline void UAIPerceptionSystem::OnPerceptionStimuliSourceEndPlay(struct Unknown Actor, char EndPlayReason) {
+inline void UAIPerceptionSystem::OnPerceptionStimuliSourceEndPlay(struct UActor Actor, char EndPlayReason) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionSystem.OnPerceptionStimuliSourceEndPlay");
 
 	struct OnPerceptionStimuliSourceEndPlay_Params {
-		struct Unknown Actor;
+		struct UActor Actor;
 		char EndPlayReason;
 	}; OnPerceptionStimuliSourceEndPlay_Params Params;
 
@@ -2841,13 +2841,13 @@ inline void UAIPerceptionSystem::OnPerceptionStimuliSourceEndPlay(struct Unknown
 }
 
 // Function AIModule.AIPerceptionSystem.GetSenseClassForStimulus
-inline struct Unknown* UAIPerceptionSystem::GetSenseClassForStimulus(struct Unknown WorldContextObject, struct Unknown& Stimulus) {
+inline struct UClass* UAIPerceptionSystem::GetSenseClassForStimulus(struct Object WorldContextObject, struct FAIStimulus& Stimulus) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionSystem.GetSenseClassForStimulus");
 
 	struct GetSenseClassForStimulus_Params {
-		struct Unknown WorldContextObject;
-		struct Unknown& Stimulus;
-		struct Unknown* ReturnValue;
+		struct Object WorldContextObject;
+		struct FAIStimulus& Stimulus;
+		struct UClass* ReturnValue;
 
 	}; GetSenseClassForStimulus_Params Params;
 
@@ -2864,11 +2864,11 @@ inline struct Unknown* UAIPerceptionSystem::GetSenseClassForStimulus(struct Unkn
 }
 
 // Function AIModule.AISense_Blueprint.OnUpdate
-inline float UAISense_Blueprint::OnUpdate(struct TArray<Unknown>& EventsToProcess) {
+inline float UAISense_Blueprint::OnUpdate(struct TArray<struct UAISenseEvent>& EventsToProcess) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AISense_Blueprint.OnUpdate");
 
 	struct OnUpdate_Params {
-		struct TArray<Unknown>& EventsToProcess;
+		struct TArray<struct UAISenseEvent>& EventsToProcess;
 		float ReturnValue;
 
 	}; OnUpdate_Params Params;
@@ -2885,12 +2885,12 @@ inline float UAISense_Blueprint::OnUpdate(struct TArray<Unknown>& EventsToProces
 }
 
 // Function AIModule.AISense_Blueprint.OnListenerUpdated
-inline void UAISense_Blueprint::OnListenerUpdated(struct Unknown ActorListener, struct Unknown PerceptionComponent) {
+inline void UAISense_Blueprint::OnListenerUpdated(struct UActor ActorListener, struct UAIPerceptionComponent PerceptionComponent) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AISense_Blueprint.OnListenerUpdated");
 
 	struct OnListenerUpdated_Params {
-		struct Unknown ActorListener;
-		struct Unknown PerceptionComponent;
+		struct UActor ActorListener;
+		struct UAIPerceptionComponent PerceptionComponent;
 	}; OnListenerUpdated_Params Params;
 
 	Params.ActorListener = ActorListener;
@@ -2902,12 +2902,12 @@ inline void UAISense_Blueprint::OnListenerUpdated(struct Unknown ActorListener, 
 }
 
 // Function AIModule.AISense_Blueprint.OnListenerUnregistered
-inline void UAISense_Blueprint::OnListenerUnregistered(struct Unknown ActorListener, struct Unknown PerceptionComponent) {
+inline void UAISense_Blueprint::OnListenerUnregistered(struct UActor ActorListener, struct UAIPerceptionComponent PerceptionComponent) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AISense_Blueprint.OnListenerUnregistered");
 
 	struct OnListenerUnregistered_Params {
-		struct Unknown ActorListener;
-		struct Unknown PerceptionComponent;
+		struct UActor ActorListener;
+		struct UAIPerceptionComponent PerceptionComponent;
 	}; OnListenerUnregistered_Params Params;
 
 	Params.ActorListener = ActorListener;
@@ -2919,12 +2919,12 @@ inline void UAISense_Blueprint::OnListenerUnregistered(struct Unknown ActorListe
 }
 
 // Function AIModule.AISense_Blueprint.OnListenerRegistered
-inline void UAISense_Blueprint::OnListenerRegistered(struct Unknown ActorListener, struct Unknown PerceptionComponent) {
+inline void UAISense_Blueprint::OnListenerRegistered(struct UActor ActorListener, struct UAIPerceptionComponent PerceptionComponent) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AISense_Blueprint.OnListenerRegistered");
 
 	struct OnListenerRegistered_Params {
-		struct Unknown ActorListener;
-		struct Unknown PerceptionComponent;
+		struct UActor ActorListener;
+		struct UAIPerceptionComponent PerceptionComponent;
 	}; OnListenerRegistered_Params Params;
 
 	Params.ActorListener = ActorListener;
@@ -2936,11 +2936,11 @@ inline void UAISense_Blueprint::OnListenerRegistered(struct Unknown ActorListene
 }
 
 // Function AIModule.AISense_Blueprint.K2_OnNewPawn
-inline void UAISense_Blueprint::K2_OnNewPawn(struct Unknown NewPawn) {
+inline void UAISense_Blueprint::K2_OnNewPawn(struct APawn NewPawn) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AISense_Blueprint.K2_OnNewPawn");
 
 	struct K2_OnNewPawn_Params {
-		struct Unknown NewPawn;
+		struct APawn NewPawn;
 	}; K2_OnNewPawn_Params Params;
 
 	Params.NewPawn = NewPawn;
@@ -2951,11 +2951,11 @@ inline void UAISense_Blueprint::K2_OnNewPawn(struct Unknown NewPawn) {
 }
 
 // Function AIModule.AISense_Blueprint.GetAllListenerComponents
-inline void UAISense_Blueprint::GetAllListenerComponents(struct TArray<Unknown>& ListenerComponents) {
+inline void UAISense_Blueprint::GetAllListenerComponents(struct TArray<struct UAIPerceptionComponent>& ListenerComponents) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AISense_Blueprint.GetAllListenerComponents");
 
 	struct GetAllListenerComponents_Params {
-		struct TArray<Unknown>& ListenerComponents;
+		struct TArray<struct UAIPerceptionComponent>& ListenerComponents;
 	}; GetAllListenerComponents_Params Params;
 
 
@@ -2968,11 +2968,11 @@ inline void UAISense_Blueprint::GetAllListenerComponents(struct TArray<Unknown>&
 }
 
 // Function AIModule.AISense_Blueprint.GetAllListenerActors
-inline void UAISense_Blueprint::GetAllListenerActors(struct TArray<Unknown>& ListenerActors) {
+inline void UAISense_Blueprint::GetAllListenerActors(struct TArray<struct UActor>& ListenerActors) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AISense_Blueprint.GetAllListenerActors");
 
 	struct GetAllListenerActors_Params {
-		struct TArray<Unknown>& ListenerActors;
+		struct TArray<struct UActor>& ListenerActors;
 	}; GetAllListenerActors_Params Params;
 
 
@@ -2985,16 +2985,16 @@ inline void UAISense_Blueprint::GetAllListenerActors(struct TArray<Unknown>& Lis
 }
 
 // Function AIModule.AISense_Damage.ReportDamageEvent
-inline void UAISense_Damage::ReportDamageEvent(struct Unknown WorldContextObject, struct Unknown DamagedActor, struct Unknown Instigator, float DamageAmount, struct Unknown EventLocation, struct Unknown HitLocation) {
+inline void UAISense_Damage::ReportDamageEvent(struct Object WorldContextObject, struct UActor DamagedActor, struct UActor Instigator, float DamageAmount, struct FVector EventLocation, struct FVector HitLocation) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AISense_Damage.ReportDamageEvent");
 
 	struct ReportDamageEvent_Params {
-		struct Unknown WorldContextObject;
-		struct Unknown DamagedActor;
-		struct Unknown Instigator;
+		struct Object WorldContextObject;
+		struct UActor DamagedActor;
+		struct UActor Instigator;
 		float DamageAmount;
-		struct Unknown EventLocation;
-		struct Unknown HitLocation;
+		struct FVector EventLocation;
+		struct FVector HitLocation;
 	}; ReportDamageEvent_Params Params;
 
 	Params.WorldContextObject = WorldContextObject;
@@ -3010,14 +3010,14 @@ inline void UAISense_Damage::ReportDamageEvent(struct Unknown WorldContextObject
 }
 
 // Function AIModule.AISense_Hearing.ReportNoiseEvent
-inline void UAISense_Hearing::ReportNoiseEvent(struct Unknown WorldContextObject, struct Unknown NoiseLocation, float Loudness, struct Unknown Instigator, float MaxRange, struct FName Tag) {
+inline void UAISense_Hearing::ReportNoiseEvent(struct Object WorldContextObject, struct FVector NoiseLocation, float Loudness, struct UActor Instigator, float MaxRange, struct FName Tag) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AISense_Hearing.ReportNoiseEvent");
 
 	struct ReportNoiseEvent_Params {
-		struct Unknown WorldContextObject;
-		struct Unknown NoiseLocation;
+		struct Object WorldContextObject;
+		struct FVector NoiseLocation;
 		float Loudness;
-		struct Unknown Instigator;
+		struct UActor Instigator;
 		float MaxRange;
 		struct FName Tag;
 	}; ReportNoiseEvent_Params Params;
@@ -3035,12 +3035,12 @@ inline void UAISense_Hearing::ReportNoiseEvent(struct Unknown WorldContextObject
 }
 
 // Function AIModule.AISense_Prediction.RequestPawnPredictionEvent
-inline void UAISense_Prediction::RequestPawnPredictionEvent(struct Unknown Requestor, struct Unknown PredictedActor, float PredictionTime) {
+inline void UAISense_Prediction::RequestPawnPredictionEvent(struct APawn Requestor, struct UActor PredictedActor, float PredictionTime) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AISense_Prediction.RequestPawnPredictionEvent");
 
 	struct RequestPawnPredictionEvent_Params {
-		struct Unknown Requestor;
-		struct Unknown PredictedActor;
+		struct APawn Requestor;
+		struct UActor PredictedActor;
 		float PredictionTime;
 	}; RequestPawnPredictionEvent_Params Params;
 
@@ -3054,12 +3054,12 @@ inline void UAISense_Prediction::RequestPawnPredictionEvent(struct Unknown Reque
 }
 
 // Function AIModule.AISense_Prediction.RequestControllerPredictionEvent
-inline void UAISense_Prediction::RequestControllerPredictionEvent(struct Unknown Requestor, struct Unknown PredictedActor, float PredictionTime) {
+inline void UAISense_Prediction::RequestControllerPredictionEvent(struct AAIController Requestor, struct UActor PredictedActor, float PredictionTime) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AISense_Prediction.RequestControllerPredictionEvent");
 
 	struct RequestControllerPredictionEvent_Params {
-		struct Unknown Requestor;
-		struct Unknown PredictedActor;
+		struct AAIController Requestor;
+		struct UActor PredictedActor;
 		float PredictionTime;
 	}; RequestControllerPredictionEvent_Params Params;
 
@@ -3101,13 +3101,13 @@ inline void UAISystem::AIIgnorePlayers() {
 }
 
 // Function AIModule.AITask_MoveTo.AIMoveTo
-inline struct Unknown UAITask_MoveTo::AIMoveTo(struct Unknown Controller, struct Unknown GoalLocation, struct Unknown GoalActor, float AcceptanceRadius, char StopOnOverlap, char AcceptPartialPath, char bUsePathfinding, char bLockAILogic, char bUseContinuosGoalTracking, char ProjectGoalOnNavigation) {
+inline struct UAITask_MoveTo UAITask_MoveTo::AIMoveTo(struct AAIController Controller, struct FVector GoalLocation, struct UActor GoalActor, float AcceptanceRadius, char StopOnOverlap, char AcceptPartialPath, char bUsePathfinding, char bLockAILogic, char bUseContinuosGoalTracking, char ProjectGoalOnNavigation) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AITask_MoveTo.AIMoveTo");
 
 	struct AIMoveTo_Params {
-		struct Unknown Controller;
-		struct Unknown GoalLocation;
-		struct Unknown GoalActor;
+		struct AAIController Controller;
+		struct FVector GoalLocation;
+		struct UActor GoalActor;
 		float AcceptanceRadius;
 		char StopOnOverlap;
 		char AcceptPartialPath;
@@ -3115,7 +3115,7 @@ inline struct Unknown UAITask_MoveTo::AIMoveTo(struct Unknown Controller, struct
 		char bLockAILogic;
 		char bUseContinuosGoalTracking;
 		char ProjectGoalOnNavigation;
-		struct Unknown ReturnValue;
+		struct UAITask_MoveTo ReturnValue;
 
 	}; AIMoveTo_Params Params;
 
@@ -3217,12 +3217,12 @@ inline char UBrainComponent::IsPaused() {
 }
 
 // Function AIModule.BehaviorTreeComponent.SetDynamicSubtree
-inline void UBehaviorTreeComponent::SetDynamicSubtree(struct Unknown InjectTag, struct Unknown BehaviorAsset) {
+inline void UBehaviorTreeComponent::SetDynamicSubtree(struct FGameplayTag InjectTag, struct UBehaviorTree BehaviorAsset) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BehaviorTreeComponent.SetDynamicSubtree");
 
 	struct SetDynamicSubtree_Params {
-		struct Unknown InjectTag;
-		struct Unknown BehaviorAsset;
+		struct FGameplayTag InjectTag;
+		struct UBehaviorTree BehaviorAsset;
 	}; SetDynamicSubtree_Params Params;
 
 	Params.InjectTag = InjectTag;
@@ -3234,11 +3234,11 @@ inline void UBehaviorTreeComponent::SetDynamicSubtree(struct Unknown InjectTag, 
 }
 
 // Function AIModule.BehaviorTreeComponent.GetTagCooldownEndTime
-inline float UBehaviorTreeComponent::GetTagCooldownEndTime(struct Unknown CooldownTag) {
+inline float UBehaviorTreeComponent::GetTagCooldownEndTime(struct FGameplayTag CooldownTag) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BehaviorTreeComponent.GetTagCooldownEndTime");
 
 	struct GetTagCooldownEndTime_Params {
-		struct Unknown CooldownTag;
+		struct FGameplayTag CooldownTag;
 		float ReturnValue;
 
 	}; GetTagCooldownEndTime_Params Params;
@@ -3253,11 +3253,11 @@ inline float UBehaviorTreeComponent::GetTagCooldownEndTime(struct Unknown Cooldo
 }
 
 // Function AIModule.BehaviorTreeComponent.AddCooldownTagDuration
-inline void UBehaviorTreeComponent::AddCooldownTagDuration(struct Unknown CooldownTag, float CooldownDuration, char bAddToExistingDuration) {
+inline void UBehaviorTreeComponent::AddCooldownTagDuration(struct FGameplayTag CooldownTag, float CooldownDuration, char bAddToExistingDuration) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BehaviorTreeComponent.AddCooldownTagDuration");
 
 	struct AddCooldownTagDuration_Params {
-		struct Unknown CooldownTag;
+		struct FGameplayTag CooldownTag;
 		float CooldownDuration;
 		char bAddToExistingDuration;
 	}; AddCooldownTagDuration_Params Params;
@@ -3272,12 +3272,12 @@ inline void UBehaviorTreeComponent::AddCooldownTagDuration(struct Unknown Cooldo
 }
 
 // Function AIModule.BlackboardComponent.SetValueAsVector
-inline void UBlackboardComponent::SetValueAsVector(struct FName& KeyName, struct Unknown VectorValue) {
+inline void UBlackboardComponent::SetValueAsVector(struct FName& KeyName, struct FVector VectorValue) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.SetValueAsVector");
 
 	struct SetValueAsVector_Params {
 		struct FName& KeyName;
-		struct Unknown VectorValue;
+		struct FVector VectorValue;
 	}; SetValueAsVector_Params Params;
 
 	Params.VectorValue = VectorValue;
@@ -3310,12 +3310,12 @@ inline void UBlackboardComponent::SetValueAsString(struct FName& KeyName, struct
 }
 
 // Function AIModule.BlackboardComponent.SetValueAsRotator
-inline void UBlackboardComponent::SetValueAsRotator(struct FName& KeyName, struct Unknown VectorValue) {
+inline void UBlackboardComponent::SetValueAsRotator(struct FName& KeyName, struct FRotator VectorValue) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.SetValueAsRotator");
 
 	struct SetValueAsRotator_Params {
 		struct FName& KeyName;
-		struct Unknown VectorValue;
+		struct FRotator VectorValue;
 	}; SetValueAsRotator_Params Params;
 
 	Params.VectorValue = VectorValue;
@@ -3329,12 +3329,12 @@ inline void UBlackboardComponent::SetValueAsRotator(struct FName& KeyName, struc
 }
 
 // Function AIModule.BlackboardComponent.SetValueAsObject
-inline void UBlackboardComponent::SetValueAsObject(struct FName& KeyName, struct Unknown ObjectValue) {
+inline void UBlackboardComponent::SetValueAsObject(struct FName& KeyName, struct Object ObjectValue) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.SetValueAsObject");
 
 	struct SetValueAsObject_Params {
 		struct FName& KeyName;
-		struct Unknown ObjectValue;
+		struct Object ObjectValue;
 	}; SetValueAsObject_Params Params;
 
 	Params.ObjectValue = ObjectValue;
@@ -3424,12 +3424,12 @@ inline void UBlackboardComponent::SetValueAsEnum(struct FName& KeyName, char Enu
 }
 
 // Function AIModule.BlackboardComponent.SetValueAsClass
-inline void UBlackboardComponent::SetValueAsClass(struct FName& KeyName, struct Unknown* ClassValue) {
+inline void UBlackboardComponent::SetValueAsClass(struct FName& KeyName, struct UClass* ClassValue) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.SetValueAsClass");
 
 	struct SetValueAsClass_Params {
 		struct FName& KeyName;
-		struct Unknown* ClassValue;
+		struct UClass* ClassValue;
 	}; SetValueAsClass_Params Params;
 
 	Params.ClassValue = ClassValue;
@@ -3483,12 +3483,12 @@ inline char UBlackboardComponent::IsVectorValueSet(struct FName& KeyName) {
 }
 
 // Function AIModule.BlackboardComponent.GetValueAsVector
-inline struct Unknown UBlackboardComponent::GetValueAsVector(struct FName& KeyName) {
+inline struct FVector UBlackboardComponent::GetValueAsVector(struct FName& KeyName) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.GetValueAsVector");
 
 	struct GetValueAsVector_Params {
 		struct FName& KeyName;
-		struct Unknown ReturnValue;
+		struct FVector ReturnValue;
 
 	}; GetValueAsVector_Params Params;
 
@@ -3525,12 +3525,12 @@ inline struct FString UBlackboardComponent::GetValueAsString(struct FName& KeyNa
 }
 
 // Function AIModule.BlackboardComponent.GetValueAsRotator
-inline struct Unknown UBlackboardComponent::GetValueAsRotator(struct FName& KeyName) {
+inline struct FRotator UBlackboardComponent::GetValueAsRotator(struct FName& KeyName) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.GetValueAsRotator");
 
 	struct GetValueAsRotator_Params {
 		struct FName& KeyName;
-		struct Unknown ReturnValue;
+		struct FRotator ReturnValue;
 
 	}; GetValueAsRotator_Params Params;
 
@@ -3546,12 +3546,12 @@ inline struct Unknown UBlackboardComponent::GetValueAsRotator(struct FName& KeyN
 }
 
 // Function AIModule.BlackboardComponent.GetValueAsObject
-inline struct Unknown UBlackboardComponent::GetValueAsObject(struct FName& KeyName) {
+inline struct Object UBlackboardComponent::GetValueAsObject(struct FName& KeyName) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.GetValueAsObject");
 
 	struct GetValueAsObject_Params {
 		struct FName& KeyName;
-		struct Unknown ReturnValue;
+		struct Object ReturnValue;
 
 	}; GetValueAsObject_Params Params;
 
@@ -3651,12 +3651,12 @@ inline char UBlackboardComponent::GetValueAsEnum(struct FName& KeyName) {
 }
 
 // Function AIModule.BlackboardComponent.GetValueAsClass
-inline struct Unknown* UBlackboardComponent::GetValueAsClass(struct FName& KeyName) {
+inline struct UClass* UBlackboardComponent::GetValueAsClass(struct FName& KeyName) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.GetValueAsClass");
 
 	struct GetValueAsClass_Params {
 		struct FName& KeyName;
-		struct Unknown* ReturnValue;
+		struct UClass* ReturnValue;
 
 	}; GetValueAsClass_Params Params;
 
@@ -3693,12 +3693,12 @@ inline char UBlackboardComponent::GetValueAsBool(struct FName& KeyName) {
 }
 
 // Function AIModule.BlackboardComponent.GetRotationFromEntry
-inline char UBlackboardComponent::GetRotationFromEntry(struct FName& KeyName, struct Unknown& ResultRotation) {
+inline char UBlackboardComponent::GetRotationFromEntry(struct FName& KeyName, struct FRotator& ResultRotation) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.GetRotationFromEntry");
 
 	struct GetRotationFromEntry_Params {
 		struct FName& KeyName;
-		struct Unknown& ResultRotation;
+		struct FRotator& ResultRotation;
 		char ReturnValue;
 
 	}; GetRotationFromEntry_Params Params;
@@ -3716,12 +3716,12 @@ inline char UBlackboardComponent::GetRotationFromEntry(struct FName& KeyName, st
 }
 
 // Function AIModule.BlackboardComponent.GetLocationFromEntry
-inline char UBlackboardComponent::GetLocationFromEntry(struct FName& KeyName, struct Unknown& ResultLocation) {
+inline char UBlackboardComponent::GetLocationFromEntry(struct FName& KeyName, struct FVector& ResultLocation) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.GetLocationFromEntry");
 
 	struct GetLocationFromEntry_Params {
 		struct FName& KeyName;
-		struct Unknown& ResultLocation;
+		struct FVector& ResultLocation;
 		char ReturnValue;
 
 	}; GetLocationFromEntry_Params Params;
@@ -3756,12 +3756,12 @@ inline void UBlackboardComponent::ClearValue(struct FName& KeyName) {
 }
 
 // Function AIModule.BTDecorator_BlueprintBase.ReceiveTickAI
-inline void UBTDecorator_BlueprintBase::ReceiveTickAI(struct Unknown OwnerController, struct Unknown ControlledPawn, float DeltaSeconds) {
+inline void UBTDecorator_BlueprintBase::ReceiveTickAI(struct AAIController OwnerController, struct APawn ControlledPawn, float DeltaSeconds) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTDecorator_BlueprintBase.ReceiveTickAI");
 
 	struct ReceiveTickAI_Params {
-		struct Unknown OwnerController;
-		struct Unknown ControlledPawn;
+		struct AAIController OwnerController;
+		struct APawn ControlledPawn;
 		float DeltaSeconds;
 	}; ReceiveTickAI_Params Params;
 
@@ -3775,11 +3775,11 @@ inline void UBTDecorator_BlueprintBase::ReceiveTickAI(struct Unknown OwnerContro
 }
 
 // Function AIModule.BTDecorator_BlueprintBase.ReceiveTick
-inline void UBTDecorator_BlueprintBase::ReceiveTick(struct Unknown OwnerActor, float DeltaSeconds) {
+inline void UBTDecorator_BlueprintBase::ReceiveTick(struct UActor OwnerActor, float DeltaSeconds) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTDecorator_BlueprintBase.ReceiveTick");
 
 	struct ReceiveTick_Params {
-		struct Unknown OwnerActor;
+		struct UActor OwnerActor;
 		float DeltaSeconds;
 	}; ReceiveTick_Params Params;
 
@@ -3792,12 +3792,12 @@ inline void UBTDecorator_BlueprintBase::ReceiveTick(struct Unknown OwnerActor, f
 }
 
 // Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverDeactivatedAI
-inline void UBTDecorator_BlueprintBase::ReceiveObserverDeactivatedAI(struct Unknown OwnerController, struct Unknown ControlledPawn) {
+inline void UBTDecorator_BlueprintBase::ReceiveObserverDeactivatedAI(struct AAIController OwnerController, struct APawn ControlledPawn) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverDeactivatedAI");
 
 	struct ReceiveObserverDeactivatedAI_Params {
-		struct Unknown OwnerController;
-		struct Unknown ControlledPawn;
+		struct AAIController OwnerController;
+		struct APawn ControlledPawn;
 	}; ReceiveObserverDeactivatedAI_Params Params;
 
 	Params.OwnerController = OwnerController;
@@ -3809,11 +3809,11 @@ inline void UBTDecorator_BlueprintBase::ReceiveObserverDeactivatedAI(struct Unkn
 }
 
 // Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverDeactivated
-inline void UBTDecorator_BlueprintBase::ReceiveObserverDeactivated(struct Unknown OwnerActor) {
+inline void UBTDecorator_BlueprintBase::ReceiveObserverDeactivated(struct UActor OwnerActor) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverDeactivated");
 
 	struct ReceiveObserverDeactivated_Params {
-		struct Unknown OwnerActor;
+		struct UActor OwnerActor;
 	}; ReceiveObserverDeactivated_Params Params;
 
 	Params.OwnerActor = OwnerActor;
@@ -3824,12 +3824,12 @@ inline void UBTDecorator_BlueprintBase::ReceiveObserverDeactivated(struct Unknow
 }
 
 // Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverActivatedAI
-inline void UBTDecorator_BlueprintBase::ReceiveObserverActivatedAI(struct Unknown OwnerController, struct Unknown ControlledPawn) {
+inline void UBTDecorator_BlueprintBase::ReceiveObserverActivatedAI(struct AAIController OwnerController, struct APawn ControlledPawn) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverActivatedAI");
 
 	struct ReceiveObserverActivatedAI_Params {
-		struct Unknown OwnerController;
-		struct Unknown ControlledPawn;
+		struct AAIController OwnerController;
+		struct APawn ControlledPawn;
 	}; ReceiveObserverActivatedAI_Params Params;
 
 	Params.OwnerController = OwnerController;
@@ -3841,11 +3841,11 @@ inline void UBTDecorator_BlueprintBase::ReceiveObserverActivatedAI(struct Unknow
 }
 
 // Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverActivated
-inline void UBTDecorator_BlueprintBase::ReceiveObserverActivated(struct Unknown OwnerActor) {
+inline void UBTDecorator_BlueprintBase::ReceiveObserverActivated(struct UActor OwnerActor) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverActivated");
 
 	struct ReceiveObserverActivated_Params {
-		struct Unknown OwnerActor;
+		struct UActor OwnerActor;
 	}; ReceiveObserverActivated_Params Params;
 
 	Params.OwnerActor = OwnerActor;
@@ -3856,12 +3856,12 @@ inline void UBTDecorator_BlueprintBase::ReceiveObserverActivated(struct Unknown 
 }
 
 // Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionStartAI
-inline void UBTDecorator_BlueprintBase::ReceiveExecutionStartAI(struct Unknown OwnerController, struct Unknown ControlledPawn) {
+inline void UBTDecorator_BlueprintBase::ReceiveExecutionStartAI(struct AAIController OwnerController, struct APawn ControlledPawn) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionStartAI");
 
 	struct ReceiveExecutionStartAI_Params {
-		struct Unknown OwnerController;
-		struct Unknown ControlledPawn;
+		struct AAIController OwnerController;
+		struct APawn ControlledPawn;
 	}; ReceiveExecutionStartAI_Params Params;
 
 	Params.OwnerController = OwnerController;
@@ -3873,11 +3873,11 @@ inline void UBTDecorator_BlueprintBase::ReceiveExecutionStartAI(struct Unknown O
 }
 
 // Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionStart
-inline void UBTDecorator_BlueprintBase::ReceiveExecutionStart(struct Unknown OwnerActor) {
+inline void UBTDecorator_BlueprintBase::ReceiveExecutionStart(struct UActor OwnerActor) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionStart");
 
 	struct ReceiveExecutionStart_Params {
-		struct Unknown OwnerActor;
+		struct UActor OwnerActor;
 	}; ReceiveExecutionStart_Params Params;
 
 	Params.OwnerActor = OwnerActor;
@@ -3888,12 +3888,12 @@ inline void UBTDecorator_BlueprintBase::ReceiveExecutionStart(struct Unknown Own
 }
 
 // Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionFinishAI
-inline void UBTDecorator_BlueprintBase::ReceiveExecutionFinishAI(struct Unknown OwnerController, struct Unknown ControlledPawn, char NodeResult) {
+inline void UBTDecorator_BlueprintBase::ReceiveExecutionFinishAI(struct AAIController OwnerController, struct APawn ControlledPawn, char NodeResult) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionFinishAI");
 
 	struct ReceiveExecutionFinishAI_Params {
-		struct Unknown OwnerController;
-		struct Unknown ControlledPawn;
+		struct AAIController OwnerController;
+		struct APawn ControlledPawn;
 		char NodeResult;
 	}; ReceiveExecutionFinishAI_Params Params;
 
@@ -3907,11 +3907,11 @@ inline void UBTDecorator_BlueprintBase::ReceiveExecutionFinishAI(struct Unknown 
 }
 
 // Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionFinish
-inline void UBTDecorator_BlueprintBase::ReceiveExecutionFinish(struct Unknown OwnerActor, char NodeResult) {
+inline void UBTDecorator_BlueprintBase::ReceiveExecutionFinish(struct UActor OwnerActor, char NodeResult) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionFinish");
 
 	struct ReceiveExecutionFinish_Params {
-		struct Unknown OwnerActor;
+		struct UActor OwnerActor;
 		char NodeResult;
 	}; ReceiveExecutionFinish_Params Params;
 
@@ -3924,12 +3924,12 @@ inline void UBTDecorator_BlueprintBase::ReceiveExecutionFinish(struct Unknown Ow
 }
 
 // Function AIModule.BTDecorator_BlueprintBase.PerformConditionCheckAI
-inline char UBTDecorator_BlueprintBase::PerformConditionCheckAI(struct Unknown OwnerController, struct Unknown ControlledPawn) {
+inline char UBTDecorator_BlueprintBase::PerformConditionCheckAI(struct AAIController OwnerController, struct APawn ControlledPawn) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTDecorator_BlueprintBase.PerformConditionCheckAI");
 
 	struct PerformConditionCheckAI_Params {
-		struct Unknown OwnerController;
-		struct Unknown ControlledPawn;
+		struct AAIController OwnerController;
+		struct APawn ControlledPawn;
 		char ReturnValue;
 
 	}; PerformConditionCheckAI_Params Params;
@@ -3945,11 +3945,11 @@ inline char UBTDecorator_BlueprintBase::PerformConditionCheckAI(struct Unknown O
 }
 
 // Function AIModule.BTDecorator_BlueprintBase.PerformConditionCheck
-inline char UBTDecorator_BlueprintBase::PerformConditionCheck(struct Unknown OwnerActor) {
+inline char UBTDecorator_BlueprintBase::PerformConditionCheck(struct UActor OwnerActor) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTDecorator_BlueprintBase.PerformConditionCheck");
 
 	struct PerformConditionCheck_Params {
-		struct Unknown OwnerActor;
+		struct UActor OwnerActor;
 		char ReturnValue;
 
 	}; PerformConditionCheck_Params Params;
@@ -4000,12 +4000,12 @@ inline char UBTDecorator_BlueprintBase::IsDecoratorExecutionActive() {
 }
 
 // Function AIModule.BTService_BlueprintBase.ReceiveTickAI
-inline void UBTService_BlueprintBase::ReceiveTickAI(struct Unknown OwnerController, struct Unknown ControlledPawn, float DeltaSeconds) {
+inline void UBTService_BlueprintBase::ReceiveTickAI(struct AAIController OwnerController, struct APawn ControlledPawn, float DeltaSeconds) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTService_BlueprintBase.ReceiveTickAI");
 
 	struct ReceiveTickAI_Params {
-		struct Unknown OwnerController;
-		struct Unknown ControlledPawn;
+		struct AAIController OwnerController;
+		struct APawn ControlledPawn;
 		float DeltaSeconds;
 	}; ReceiveTickAI_Params Params;
 
@@ -4019,11 +4019,11 @@ inline void UBTService_BlueprintBase::ReceiveTickAI(struct Unknown OwnerControll
 }
 
 // Function AIModule.BTService_BlueprintBase.ReceiveTick
-inline void UBTService_BlueprintBase::ReceiveTick(struct Unknown OwnerActor, float DeltaSeconds) {
+inline void UBTService_BlueprintBase::ReceiveTick(struct UActor OwnerActor, float DeltaSeconds) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTService_BlueprintBase.ReceiveTick");
 
 	struct ReceiveTick_Params {
-		struct Unknown OwnerActor;
+		struct UActor OwnerActor;
 		float DeltaSeconds;
 	}; ReceiveTick_Params Params;
 
@@ -4036,12 +4036,12 @@ inline void UBTService_BlueprintBase::ReceiveTick(struct Unknown OwnerActor, flo
 }
 
 // Function AIModule.BTService_BlueprintBase.ReceiveSearchStartAI
-inline void UBTService_BlueprintBase::ReceiveSearchStartAI(struct Unknown OwnerController, struct Unknown ControlledPawn) {
+inline void UBTService_BlueprintBase::ReceiveSearchStartAI(struct AAIController OwnerController, struct APawn ControlledPawn) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTService_BlueprintBase.ReceiveSearchStartAI");
 
 	struct ReceiveSearchStartAI_Params {
-		struct Unknown OwnerController;
-		struct Unknown ControlledPawn;
+		struct AAIController OwnerController;
+		struct APawn ControlledPawn;
 	}; ReceiveSearchStartAI_Params Params;
 
 	Params.OwnerController = OwnerController;
@@ -4053,11 +4053,11 @@ inline void UBTService_BlueprintBase::ReceiveSearchStartAI(struct Unknown OwnerC
 }
 
 // Function AIModule.BTService_BlueprintBase.ReceiveSearchStart
-inline void UBTService_BlueprintBase::ReceiveSearchStart(struct Unknown OwnerActor) {
+inline void UBTService_BlueprintBase::ReceiveSearchStart(struct UActor OwnerActor) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTService_BlueprintBase.ReceiveSearchStart");
 
 	struct ReceiveSearchStart_Params {
-		struct Unknown OwnerActor;
+		struct UActor OwnerActor;
 	}; ReceiveSearchStart_Params Params;
 
 	Params.OwnerActor = OwnerActor;
@@ -4068,12 +4068,12 @@ inline void UBTService_BlueprintBase::ReceiveSearchStart(struct Unknown OwnerAct
 }
 
 // Function AIModule.BTService_BlueprintBase.ReceiveDeactivationAI
-inline void UBTService_BlueprintBase::ReceiveDeactivationAI(struct Unknown OwnerController, struct Unknown ControlledPawn) {
+inline void UBTService_BlueprintBase::ReceiveDeactivationAI(struct AAIController OwnerController, struct APawn ControlledPawn) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTService_BlueprintBase.ReceiveDeactivationAI");
 
 	struct ReceiveDeactivationAI_Params {
-		struct Unknown OwnerController;
-		struct Unknown ControlledPawn;
+		struct AAIController OwnerController;
+		struct APawn ControlledPawn;
 	}; ReceiveDeactivationAI_Params Params;
 
 	Params.OwnerController = OwnerController;
@@ -4085,11 +4085,11 @@ inline void UBTService_BlueprintBase::ReceiveDeactivationAI(struct Unknown Owner
 }
 
 // Function AIModule.BTService_BlueprintBase.ReceiveDeactivation
-inline void UBTService_BlueprintBase::ReceiveDeactivation(struct Unknown OwnerActor) {
+inline void UBTService_BlueprintBase::ReceiveDeactivation(struct UActor OwnerActor) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTService_BlueprintBase.ReceiveDeactivation");
 
 	struct ReceiveDeactivation_Params {
-		struct Unknown OwnerActor;
+		struct UActor OwnerActor;
 	}; ReceiveDeactivation_Params Params;
 
 	Params.OwnerActor = OwnerActor;
@@ -4100,12 +4100,12 @@ inline void UBTService_BlueprintBase::ReceiveDeactivation(struct Unknown OwnerAc
 }
 
 // Function AIModule.BTService_BlueprintBase.ReceiveActivationAI
-inline void UBTService_BlueprintBase::ReceiveActivationAI(struct Unknown OwnerController, struct Unknown ControlledPawn) {
+inline void UBTService_BlueprintBase::ReceiveActivationAI(struct AAIController OwnerController, struct APawn ControlledPawn) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTService_BlueprintBase.ReceiveActivationAI");
 
 	struct ReceiveActivationAI_Params {
-		struct Unknown OwnerController;
-		struct Unknown ControlledPawn;
+		struct AAIController OwnerController;
+		struct APawn ControlledPawn;
 	}; ReceiveActivationAI_Params Params;
 
 	Params.OwnerController = OwnerController;
@@ -4117,11 +4117,11 @@ inline void UBTService_BlueprintBase::ReceiveActivationAI(struct Unknown OwnerCo
 }
 
 // Function AIModule.BTService_BlueprintBase.ReceiveActivation
-inline void UBTService_BlueprintBase::ReceiveActivation(struct Unknown OwnerActor) {
+inline void UBTService_BlueprintBase::ReceiveActivation(struct UActor OwnerActor) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTService_BlueprintBase.ReceiveActivation");
 
 	struct ReceiveActivation_Params {
-		struct Unknown OwnerActor;
+		struct UActor OwnerActor;
 	}; ReceiveActivation_Params Params;
 
 	Params.OwnerActor = OwnerActor;
@@ -4182,12 +4182,12 @@ inline void UBTTask_BlueprintBase::SetFinishOnMessage(struct FName MessageName) 
 }
 
 // Function AIModule.BTTask_BlueprintBase.ReceiveTickAI
-inline void UBTTask_BlueprintBase::ReceiveTickAI(struct Unknown OwnerController, struct Unknown ControlledPawn, float DeltaSeconds) {
+inline void UBTTask_BlueprintBase::ReceiveTickAI(struct AAIController OwnerController, struct APawn ControlledPawn, float DeltaSeconds) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTTask_BlueprintBase.ReceiveTickAI");
 
 	struct ReceiveTickAI_Params {
-		struct Unknown OwnerController;
-		struct Unknown ControlledPawn;
+		struct AAIController OwnerController;
+		struct APawn ControlledPawn;
 		float DeltaSeconds;
 	}; ReceiveTickAI_Params Params;
 
@@ -4201,11 +4201,11 @@ inline void UBTTask_BlueprintBase::ReceiveTickAI(struct Unknown OwnerController,
 }
 
 // Function AIModule.BTTask_BlueprintBase.ReceiveTick
-inline void UBTTask_BlueprintBase::ReceiveTick(struct Unknown OwnerActor, float DeltaSeconds) {
+inline void UBTTask_BlueprintBase::ReceiveTick(struct UActor OwnerActor, float DeltaSeconds) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTTask_BlueprintBase.ReceiveTick");
 
 	struct ReceiveTick_Params {
-		struct Unknown OwnerActor;
+		struct UActor OwnerActor;
 		float DeltaSeconds;
 	}; ReceiveTick_Params Params;
 
@@ -4218,12 +4218,12 @@ inline void UBTTask_BlueprintBase::ReceiveTick(struct Unknown OwnerActor, float 
 }
 
 // Function AIModule.BTTask_BlueprintBase.ReceiveExecuteAI
-inline void UBTTask_BlueprintBase::ReceiveExecuteAI(struct Unknown OwnerController, struct Unknown ControlledPawn) {
+inline void UBTTask_BlueprintBase::ReceiveExecuteAI(struct AAIController OwnerController, struct APawn ControlledPawn) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTTask_BlueprintBase.ReceiveExecuteAI");
 
 	struct ReceiveExecuteAI_Params {
-		struct Unknown OwnerController;
-		struct Unknown ControlledPawn;
+		struct AAIController OwnerController;
+		struct APawn ControlledPawn;
 	}; ReceiveExecuteAI_Params Params;
 
 	Params.OwnerController = OwnerController;
@@ -4235,11 +4235,11 @@ inline void UBTTask_BlueprintBase::ReceiveExecuteAI(struct Unknown OwnerControll
 }
 
 // Function AIModule.BTTask_BlueprintBase.ReceiveExecute
-inline void UBTTask_BlueprintBase::ReceiveExecute(struct Unknown OwnerActor) {
+inline void UBTTask_BlueprintBase::ReceiveExecute(struct UActor OwnerActor) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTTask_BlueprintBase.ReceiveExecute");
 
 	struct ReceiveExecute_Params {
-		struct Unknown OwnerActor;
+		struct UActor OwnerActor;
 	}; ReceiveExecute_Params Params;
 
 	Params.OwnerActor = OwnerActor;
@@ -4250,12 +4250,12 @@ inline void UBTTask_BlueprintBase::ReceiveExecute(struct Unknown OwnerActor) {
 }
 
 // Function AIModule.BTTask_BlueprintBase.ReceiveAbortAI
-inline void UBTTask_BlueprintBase::ReceiveAbortAI(struct Unknown OwnerController, struct Unknown ControlledPawn) {
+inline void UBTTask_BlueprintBase::ReceiveAbortAI(struct AAIController OwnerController, struct APawn ControlledPawn) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTTask_BlueprintBase.ReceiveAbortAI");
 
 	struct ReceiveAbortAI_Params {
-		struct Unknown OwnerController;
-		struct Unknown ControlledPawn;
+		struct AAIController OwnerController;
+		struct APawn ControlledPawn;
 	}; ReceiveAbortAI_Params Params;
 
 	Params.OwnerController = OwnerController;
@@ -4267,11 +4267,11 @@ inline void UBTTask_BlueprintBase::ReceiveAbortAI(struct Unknown OwnerController
 }
 
 // Function AIModule.BTTask_BlueprintBase.ReceiveAbort
-inline void UBTTask_BlueprintBase::ReceiveAbort(struct Unknown OwnerActor) {
+inline void UBTTask_BlueprintBase::ReceiveAbort(struct UActor OwnerActor) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTTask_BlueprintBase.ReceiveAbort");
 
 	struct ReceiveAbort_Params {
-		struct Unknown OwnerActor;
+		struct UActor OwnerActor;
 	}; ReceiveAbort_Params Params;
 
 	Params.OwnerActor = OwnerActor;
@@ -4347,11 +4347,11 @@ inline void UBTTask_BlueprintBase::FinishAbort() {
 }
 
 // Function AIModule.PathFollowingComponent.OnNavDataRegistered
-inline void UPathFollowingComponent::OnNavDataRegistered(struct Unknown NavData) {
+inline void UPathFollowingComponent::OnNavDataRegistered(struct ANavigationData NavData) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PathFollowingComponent.OnNavDataRegistered");
 
 	struct OnNavDataRegistered_Params {
-		struct Unknown NavData;
+		struct ANavigationData NavData;
 	}; OnNavDataRegistered_Params Params;
 
 	Params.NavData = NavData;
@@ -4362,14 +4362,14 @@ inline void UPathFollowingComponent::OnNavDataRegistered(struct Unknown NavData)
 }
 
 // Function AIModule.PathFollowingComponent.OnActorBump
-inline void UPathFollowingComponent::OnActorBump(struct Unknown SelfActor, struct Unknown OtherActor, struct Unknown NormalImpulse, struct Unknown& Hit) {
+inline void UPathFollowingComponent::OnActorBump(struct UActor SelfActor, struct UActor OtherActor, struct FVector NormalImpulse, struct FHitResult& Hit) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PathFollowingComponent.OnActorBump");
 
 	struct OnActorBump_Params {
-		struct Unknown SelfActor;
-		struct Unknown OtherActor;
-		struct Unknown NormalImpulse;
-		struct Unknown& Hit;
+		struct UActor SelfActor;
+		struct UActor OtherActor;
+		struct FVector NormalImpulse;
+		struct FHitResult& Hit;
 	}; OnActorBump_Params Params;
 
 	Params.SelfActor = SelfActor;
@@ -4385,12 +4385,12 @@ inline void UPathFollowingComponent::OnActorBump(struct Unknown SelfActor, struc
 }
 
 // Function AIModule.PathFollowingComponent.GetPathDestination
-inline struct Unknown UPathFollowingComponent::GetPathDestination() {
+inline struct FVector UPathFollowingComponent::GetPathDestination() {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PathFollowingComponent.GetPathDestination");
 
 	struct GetPathDestination_Params {
 		
-		struct Unknown ReturnValue;
+		struct FVector ReturnValue;
 
 	}; GetPathDestination_Params Params;
 
@@ -4436,12 +4436,12 @@ inline void UCrowdFollowingComponent::SuspendCrowdSteering(char bSuspend) {
 }
 
 // Function AIModule.EnvQueryGenerator_BlueprintBase.GetQuerier
-inline struct Unknown UEnvQueryGenerator_BlueprintBase::GetQuerier() {
+inline struct Object UEnvQueryGenerator_BlueprintBase::GetQuerier() {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.EnvQueryGenerator_BlueprintBase.GetQuerier");
 
 	struct GetQuerier_Params {
 		
-		struct Unknown ReturnValue;
+		struct Object ReturnValue;
 
 	}; GetQuerier_Params Params;
 
@@ -4454,11 +4454,11 @@ inline struct Unknown UEnvQueryGenerator_BlueprintBase::GetQuerier() {
 }
 
 // Function AIModule.EnvQueryGenerator_BlueprintBase.DoItemGeneration
-inline void UEnvQueryGenerator_BlueprintBase::DoItemGeneration(struct TArray<Unknown>& ContextLocations) {
+inline void UEnvQueryGenerator_BlueprintBase::DoItemGeneration(struct TArray<struct FVector>& ContextLocations) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.EnvQueryGenerator_BlueprintBase.DoItemGeneration");
 
 	struct DoItemGeneration_Params {
-		struct TArray<Unknown>& ContextLocations;
+		struct TArray<struct FVector>& ContextLocations;
 	}; DoItemGeneration_Params Params;
 
 
@@ -4471,11 +4471,11 @@ inline void UEnvQueryGenerator_BlueprintBase::DoItemGeneration(struct TArray<Unk
 }
 
 // Function AIModule.EnvQueryGenerator_BlueprintBase.AddGeneratedVector
-inline void UEnvQueryGenerator_BlueprintBase::AddGeneratedVector(struct Unknown GeneratedVector) {
+inline void UEnvQueryGenerator_BlueprintBase::AddGeneratedVector(struct FVector GeneratedVector) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.EnvQueryGenerator_BlueprintBase.AddGeneratedVector");
 
 	struct AddGeneratedVector_Params {
-		struct Unknown GeneratedVector;
+		struct FVector GeneratedVector;
 	}; AddGeneratedVector_Params Params;
 
 	Params.GeneratedVector = GeneratedVector;
@@ -4486,11 +4486,11 @@ inline void UEnvQueryGenerator_BlueprintBase::AddGeneratedVector(struct Unknown 
 }
 
 // Function AIModule.EnvQueryGenerator_BlueprintBase.AddGeneratedActor
-inline void UEnvQueryGenerator_BlueprintBase::AddGeneratedActor(struct Unknown GeneratedActor) {
+inline void UEnvQueryGenerator_BlueprintBase::AddGeneratedActor(struct UActor GeneratedActor) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.EnvQueryGenerator_BlueprintBase.AddGeneratedActor");
 
 	struct AddGeneratedActor_Params {
-		struct Unknown GeneratedActor;
+		struct UActor GeneratedActor;
 	}; AddGeneratedActor_Params Params;
 
 	Params.GeneratedActor = GeneratedActor;
@@ -4518,12 +4518,12 @@ inline void UEnvQueryInstanceBlueprintWrapper::SetNamedParam(struct FName ParamN
 }
 
 // Function AIModule.EnvQueryInstanceBlueprintWrapper.GetResultsAsLocations
-inline struct TArray<Unknown> UEnvQueryInstanceBlueprintWrapper::GetResultsAsLocations() {
+inline struct TArray<struct FVector> UEnvQueryInstanceBlueprintWrapper::GetResultsAsLocations() {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.EnvQueryInstanceBlueprintWrapper.GetResultsAsLocations");
 
 	struct GetResultsAsLocations_Params {
 		
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<struct FVector> ReturnValue;
 
 	}; GetResultsAsLocations_Params Params;
 
@@ -4536,12 +4536,12 @@ inline struct TArray<Unknown> UEnvQueryInstanceBlueprintWrapper::GetResultsAsLoc
 }
 
 // Function AIModule.EnvQueryInstanceBlueprintWrapper.GetResultsAsActors
-inline struct TArray<Unknown> UEnvQueryInstanceBlueprintWrapper::GetResultsAsActors() {
+inline struct TArray<struct UActor> UEnvQueryInstanceBlueprintWrapper::GetResultsAsActors() {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.EnvQueryInstanceBlueprintWrapper.GetResultsAsActors");
 
 	struct GetResultsAsActors_Params {
 		
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<struct UActor> ReturnValue;
 
 	}; GetResultsAsActors_Params Params;
 
@@ -4554,11 +4554,11 @@ inline struct TArray<Unknown> UEnvQueryInstanceBlueprintWrapper::GetResultsAsAct
 }
 
 // Function AIModule.EnvQueryInstanceBlueprintWrapper.GetQueryResultsAsLocations
-inline char UEnvQueryInstanceBlueprintWrapper::GetQueryResultsAsLocations(struct TArray<Unknown>& ResultLocations) {
+inline char UEnvQueryInstanceBlueprintWrapper::GetQueryResultsAsLocations(struct TArray<struct FVector>& ResultLocations) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.EnvQueryInstanceBlueprintWrapper.GetQueryResultsAsLocations");
 
 	struct GetQueryResultsAsLocations_Params {
-		struct TArray<Unknown>& ResultLocations;
+		struct TArray<struct FVector>& ResultLocations;
 		char ReturnValue;
 
 	}; GetQueryResultsAsLocations_Params Params;
@@ -4575,11 +4575,11 @@ inline char UEnvQueryInstanceBlueprintWrapper::GetQueryResultsAsLocations(struct
 }
 
 // Function AIModule.EnvQueryInstanceBlueprintWrapper.GetQueryResultsAsActors
-inline char UEnvQueryInstanceBlueprintWrapper::GetQueryResultsAsActors(struct TArray<Unknown>& ResultActors) {
+inline char UEnvQueryInstanceBlueprintWrapper::GetQueryResultsAsActors(struct TArray<struct UActor>& ResultActors) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.EnvQueryInstanceBlueprintWrapper.GetQueryResultsAsActors");
 
 	struct GetQueryResultsAsActors_Params {
-		struct TArray<Unknown>& ResultActors;
+		struct TArray<struct UActor>& ResultActors;
 		char ReturnValue;
 
 	}; GetQueryResultsAsActors_Params Params;
@@ -4615,11 +4615,11 @@ inline float UEnvQueryInstanceBlueprintWrapper::GetItemScore(int32_t ItemIndex) 
 }
 
 // DelegateFunction AIModule.EnvQueryInstanceBlueprintWrapper.EQSQueryDoneSignature__DelegateSignature
-inline void UEnvQueryInstanceBlueprintWrapper::EQSQueryDoneSignature__DelegateSignature(struct Unknown QueryInstance, char QueryStatus) {
+inline void UEnvQueryInstanceBlueprintWrapper::EQSQueryDoneSignature__DelegateSignature(struct UEnvQueryInstanceBlueprintWrapper QueryInstance, char QueryStatus) {
 	static auto fn = UObject::FindObject<UFunction>("DelegateFunction AIModule.EnvQueryInstanceBlueprintWrapper.EQSQueryDoneSignature__DelegateSignature");
 
 	struct EQSQueryDoneSignature__DelegateSignature_Params {
-		struct Unknown QueryInstance;
+		struct UEnvQueryInstanceBlueprintWrapper QueryInstance;
 		char QueryStatus;
 	}; EQSQueryDoneSignature__DelegateSignature_Params Params;
 
@@ -4632,16 +4632,16 @@ inline void UEnvQueryInstanceBlueprintWrapper::EQSQueryDoneSignature__DelegateSi
 }
 
 // Function AIModule.EnvQueryManager.RunEQSQuery
-inline struct Unknown UEnvQueryManager::RunEQSQuery(struct Unknown WorldContextObject, struct Unknown QueryTemplate, struct Unknown Querier, char RunMode, struct Unknown* WrapperClass) {
+inline struct UEnvQueryInstanceBlueprintWrapper UEnvQueryManager::RunEQSQuery(struct Object WorldContextObject, struct UEnvQuery QueryTemplate, struct Object Querier, char RunMode, struct UClass* WrapperClass) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.EnvQueryManager.RunEQSQuery");
 
 	struct RunEQSQuery_Params {
-		struct Unknown WorldContextObject;
-		struct Unknown QueryTemplate;
-		struct Unknown Querier;
+		struct Object WorldContextObject;
+		struct UEnvQuery QueryTemplate;
+		struct Object Querier;
 		char RunMode;
-		struct Unknown* WrapperClass;
-		struct Unknown ReturnValue;
+		struct UClass* WrapperClass;
+		struct UEnvQueryInstanceBlueprintWrapper ReturnValue;
 
 	}; RunEQSQuery_Params Params;
 
@@ -4674,11 +4674,11 @@ inline void ANavLinkProxy::SetSmartLinkEnabled(char bEnabled) {
 }
 
 // Function AIModule.NavLinkProxy.ResumePathFollowing
-inline void ANavLinkProxy::ResumePathFollowing(struct Unknown Agent) {
+inline void ANavLinkProxy::ResumePathFollowing(struct UActor Agent) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.NavLinkProxy.ResumePathFollowing");
 
 	struct ResumePathFollowing_Params {
-		struct Unknown Agent;
+		struct UActor Agent;
 	}; ResumePathFollowing_Params Params;
 
 	Params.Agent = Agent;
@@ -4689,12 +4689,12 @@ inline void ANavLinkProxy::ResumePathFollowing(struct Unknown Agent) {
 }
 
 // Function AIModule.NavLinkProxy.ReceiveSmartLinkReached
-inline void ANavLinkProxy::ReceiveSmartLinkReached(struct Unknown Agent, struct Unknown& Destination) {
+inline void ANavLinkProxy::ReceiveSmartLinkReached(struct UActor Agent, struct FVector& Destination) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.NavLinkProxy.ReceiveSmartLinkReached");
 
 	struct ReceiveSmartLinkReached_Params {
-		struct Unknown Agent;
-		struct Unknown& Destination;
+		struct UActor Agent;
+		struct FVector& Destination;
 	}; ReceiveSmartLinkReached_Params Params;
 
 	Params.Agent = Agent;
@@ -4777,13 +4777,13 @@ inline void UPawnAction::Finish(char WithResult) {
 }
 
 // Function AIModule.PawnAction.CreateActionInstance
-inline struct Unknown UPawnAction::CreateActionInstance(struct Unknown WorldContextObject, struct Unknown* ActionClass) {
+inline struct UPawnAction UPawnAction::CreateActionInstance(struct Object WorldContextObject, struct UClass* ActionClass) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PawnAction.CreateActionInstance");
 
 	struct CreateActionInstance_Params {
-		struct Unknown WorldContextObject;
-		struct Unknown* ActionClass;
-		struct Unknown ReturnValue;
+		struct Object WorldContextObject;
+		struct UClass* ActionClass;
+		struct UPawnAction ReturnValue;
 
 	}; CreateActionInstance_Params Params;
 
@@ -4798,13 +4798,13 @@ inline struct Unknown UPawnAction::CreateActionInstance(struct Unknown WorldCont
 }
 
 // Function AIModule.PawnActionsComponent.K2_PushAction
-inline char UPawnActionsComponent::K2_PushAction(struct Unknown NewAction, char Priority, struct Unknown Instigator) {
+inline char UPawnActionsComponent::K2_PushAction(struct UPawnAction NewAction, char Priority, struct Object Instigator) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PawnActionsComponent.K2_PushAction");
 
 	struct K2_PushAction_Params {
-		struct Unknown NewAction;
+		struct UPawnAction NewAction;
 		char Priority;
-		struct Unknown Instigator;
+		struct Object Instigator;
 		char ReturnValue;
 
 	}; K2_PushAction_Params Params;
@@ -4821,12 +4821,12 @@ inline char UPawnActionsComponent::K2_PushAction(struct Unknown NewAction, char 
 }
 
 // Function AIModule.PawnActionsComponent.K2_PerformAction
-inline char UPawnActionsComponent::K2_PerformAction(struct Unknown Pawn, struct Unknown Action, char Priority) {
+inline char UPawnActionsComponent::K2_PerformAction(struct APawn Pawn, struct UPawnAction Action, char Priority) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PawnActionsComponent.K2_PerformAction");
 
 	struct K2_PerformAction_Params {
-		struct Unknown Pawn;
-		struct Unknown Action;
+		struct APawn Pawn;
+		struct UPawnAction Action;
 		char Priority;
 		char ReturnValue;
 
@@ -4844,11 +4844,11 @@ inline char UPawnActionsComponent::K2_PerformAction(struct Unknown Pawn, struct 
 }
 
 // Function AIModule.PawnActionsComponent.K2_ForceAbortAction
-inline char UPawnActionsComponent::K2_ForceAbortAction(struct Unknown ActionToAbort) {
+inline char UPawnActionsComponent::K2_ForceAbortAction(struct UPawnAction ActionToAbort) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PawnActionsComponent.K2_ForceAbortAction");
 
 	struct K2_ForceAbortAction_Params {
-		struct Unknown ActionToAbort;
+		struct UPawnAction ActionToAbort;
 		char ReturnValue;
 
 	}; K2_ForceAbortAction_Params Params;
@@ -4863,11 +4863,11 @@ inline char UPawnActionsComponent::K2_ForceAbortAction(struct Unknown ActionToAb
 }
 
 // Function AIModule.PawnActionsComponent.K2_AbortAction
-inline char UPawnActionsComponent::K2_AbortAction(struct Unknown ActionToAbort) {
+inline char UPawnActionsComponent::K2_AbortAction(struct UPawnAction ActionToAbort) {
 	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PawnActionsComponent.K2_AbortAction");
 
 	struct K2_AbortAction_Params {
-		struct Unknown ActionToAbort;
+		struct UPawnAction ActionToAbort;
 		char ReturnValue;
 
 	}; K2_AbortAction_Params Params;
@@ -4927,11 +4927,11 @@ inline void UPawnSensingComponent::SetPeripheralVisionAngle(float NewPeripheralV
 }
 
 // DelegateFunction AIModule.PawnSensingComponent.SeePawnDelegate__DelegateSignature
-inline void UPawnSensingComponent::SeePawnDelegate__DelegateSignature(struct Unknown Pawn) {
+inline void UPawnSensingComponent::SeePawnDelegate__DelegateSignature(struct APawn Pawn) {
 	static auto fn = UObject::FindObject<UFunction>("DelegateFunction AIModule.PawnSensingComponent.SeePawnDelegate__DelegateSignature");
 
 	struct SeePawnDelegate__DelegateSignature_Params {
-		struct Unknown Pawn;
+		struct APawn Pawn;
 	}; SeePawnDelegate__DelegateSignature_Params Params;
 
 	Params.Pawn = Pawn;
@@ -4942,12 +4942,12 @@ inline void UPawnSensingComponent::SeePawnDelegate__DelegateSignature(struct Unk
 }
 
 // DelegateFunction AIModule.PawnSensingComponent.HearNoiseDelegate__DelegateSignature
-inline void UPawnSensingComponent::HearNoiseDelegate__DelegateSignature(struct Unknown Instigator, struct Unknown& Location, float Volume) {
+inline void UPawnSensingComponent::HearNoiseDelegate__DelegateSignature(struct APawn Instigator, struct FVector& Location, float Volume) {
 	static auto fn = UObject::FindObject<UFunction>("DelegateFunction AIModule.PawnSensingComponent.HearNoiseDelegate__DelegateSignature");
 
 	struct HearNoiseDelegate__DelegateSignature_Params {
-		struct Unknown Instigator;
-		struct Unknown& Location;
+		struct APawn Instigator;
+		struct FVector& Location;
 		float Volume;
 	}; HearNoiseDelegate__DelegateSignature_Params Params;
 

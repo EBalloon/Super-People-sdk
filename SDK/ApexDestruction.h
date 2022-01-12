@@ -11,7 +11,7 @@ class ADestructibleActor : public UActor {
 
 public:
 
-	struct Unknown DestructibleComponent; // 0x318 (8)
+	struct UDestructibleComponent DestructibleComponent; // 0x318 (8)
 	struct FMulticastInlineDelegate OnActorFracture; // 0x320 (16)
 };
 
@@ -21,16 +21,16 @@ class UDestructibleComponent : public USkinnedMeshComponent {
 public:
 
 	char bFractureEffectOverride : 0; // 0x6F0 (1)
-	struct TArray<Unknown> FractureEffects; // 0x6F8 (16)
+	struct TArray<struct FFractureEffect> FractureEffects; // 0x6F8 (16)
 	char bEnableHardSleeping : 0; // 0x708 (1)
 	float LargeChunkThreshold; // 0x70C (4)
 	struct FMulticastInlineDelegate OnComponentFracture; // 0x720 (16)
 	struct FMulticastInlineDelegate OnFractureEffectSpawned; // 0x730 (16)
 
-	void SetDestructibleMesh(struct Unknown NewMesh); // Function ApexDestruction.DestructibleComponent.SetDestructibleMesh(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10A7E30>
-	struct Unknown GetDestructibleMesh(); // Function ApexDestruction.DestructibleComponent.GetDestructibleMesh(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10A7E00>
-	void ApplyRadiusDamage(float BaseDamage, struct Unknown& HurtOrigin, float DamageRadius, float ImpulseStrength, char bFullDamage); // Function ApexDestruction.DestructibleComponent.ApplyRadiusDamage(Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x10A7C50>
-	void ApplyDamage(float DamageAmount, struct Unknown& HitLocation, struct Unknown& ImpulseDir, float ImpulseStrength); // Function ApexDestruction.DestructibleComponent.ApplyDamage(Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x10A7AE0>
+	void SetDestructibleMesh(struct UDestructibleMesh NewMesh); // Function ApexDestruction.DestructibleComponent.SetDestructibleMesh(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10A7E30>
+	struct UDestructibleMesh GetDestructibleMesh(); // Function ApexDestruction.DestructibleComponent.GetDestructibleMesh(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10A7E00>
+	void ApplyRadiusDamage(float BaseDamage, struct FVector& HurtOrigin, float DamageRadius, float ImpulseStrength, char bFullDamage); // Function ApexDestruction.DestructibleComponent.ApplyRadiusDamage(Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x10A7C50>
+	void ApplyDamage(float DamageAmount, struct FVector& HitLocation, struct FVector& ImpulseDir, float ImpulseStrength); // Function ApexDestruction.DestructibleComponent.ApplyDamage(Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x10A7AE0>
 };
 
 // Class ApexDestruction.DestructibleFractureSettings
@@ -39,12 +39,12 @@ class UDestructibleFractureSettings : public Object {
 public:
 
 	int32_t CellSiteCount; // 0x28 (4)
-	struct Unknown FractureMaterialDesc; // 0x2C (36)
+	struct FFractureMaterial FractureMaterialDesc; // 0x2C (36)
 	int32_t RandomSeed; // 0x50 (4)
-	struct TArray<Unknown> VoronoiSites; // 0x58 (16)
+	struct TArray<struct FVector> VoronoiSites; // 0x58 (16)
 	int32_t OriginalSubmeshCount; // 0x68 (4)
-	struct TArray<Unknown> Materials; // 0x70 (16)
-	struct TArray<Unknown> ChunkParameters; // 0x80 (16)
+	struct TArray<struct UMaterialInterface> Materials; // 0x70 (16)
+	struct TArray<struct FDestructibleChunkParameters> ChunkParameters; // 0x80 (16)
 };
 
 // Class ApexDestruction.DestructibleMesh
@@ -52,8 +52,8 @@ class UDestructibleMesh : public USkeletalMesh {
 
 public:
 
-	struct Unknown DefaultDestructibleParameters; // 0x3A8 (136)
-	struct TArray<Unknown> FractureEffects; // 0x430 (16)
+	struct FDestructibleParameters DefaultDestructibleParameters; // 0x3A8 (136)
+	struct TArray<struct FFractureEffect> FractureEffects; // 0x430 (16)
 };
 
 // ScriptStruct ApexDestruction.DestructibleChunkParameters
@@ -66,21 +66,21 @@ struct FDestructibleChunkParameters {
 
 // ScriptStruct ApexDestruction.FractureMaterial
 struct FFractureMaterial {
-	struct Unknown UVScale; // 0x0 (8)
-	struct Unknown UVOffset; // 0x8 (8)
-	struct Unknown Tangent; // 0x10 (12)
+	struct FVector2D UVScale; // 0x0 (8)
+	struct FVector2D UVOffset; // 0x8 (8)
+	struct FVector Tangent; // 0x10 (12)
 	float UAngle; // 0x1C (4)
 	int32_t InteriorElementIndex; // 0x20 (4)
 };
 
 // ScriptStruct ApexDestruction.DestructibleParameters
 struct FDestructibleParameters {
-	struct Unknown DamageParameters; // 0x0 (28)
-	struct Unknown DebrisParameters; // 0x1C (44)
-	struct Unknown AdvancedParameters; // 0x48 (16)
-	struct Unknown SpecialHierarchyDepths; // 0x58 (20)
-	struct TArray<Unknown> DepthParameters; // 0x70 (16)
-	struct Unknown Flags; // 0x80 (4)
+	struct FDestructibleDamageParameters DamageParameters; // 0x0 (28)
+	struct FDestructibleDebrisParameters DebrisParameters; // 0x1C (44)
+	struct FDestructibleAdvancedParameters AdvancedParameters; // 0x48 (16)
+	struct FDestructibleSpecialHierarchyDepths SpecialHierarchyDepths; // 0x58 (20)
+	struct TArray<struct FDestructibleDepthParameters> DepthParameters; // 0x70 (16)
+	struct FDestructibleParametersFlag Flags; // 0x80 (4)
 };
 
 // ScriptStruct ApexDestruction.DestructibleParametersFlag
@@ -124,7 +124,7 @@ struct FDestructibleDebrisParameters {
 	float DebrisLifetimeMax; // 0x4 (4)
 	float DebrisMaxSeparationMin; // 0x8 (4)
 	float DebrisMaxSeparationMax; // 0xC (4)
-	struct Unknown ValidBounds; // 0x10 (28)
+	struct FBox ValidBounds; // 0x10 (28)
 };
 
 // ScriptStruct ApexDestruction.DestructibleDamageParameters
@@ -139,11 +139,11 @@ struct FDestructibleDamageParameters {
 };
 
 // Function ApexDestruction.DestructibleComponent.SetDestructibleMesh
-inline void UDestructibleComponent::SetDestructibleMesh(struct Unknown NewMesh) {
+inline void UDestructibleComponent::SetDestructibleMesh(struct UDestructibleMesh NewMesh) {
 	static auto fn = UObject::FindObject<UFunction>("Function ApexDestruction.DestructibleComponent.SetDestructibleMesh");
 
 	struct SetDestructibleMesh_Params {
-		struct Unknown NewMesh;
+		struct UDestructibleMesh NewMesh;
 	}; SetDestructibleMesh_Params Params;
 
 	Params.NewMesh = NewMesh;
@@ -154,12 +154,12 @@ inline void UDestructibleComponent::SetDestructibleMesh(struct Unknown NewMesh) 
 }
 
 // Function ApexDestruction.DestructibleComponent.GetDestructibleMesh
-inline struct Unknown UDestructibleComponent::GetDestructibleMesh() {
+inline struct UDestructibleMesh UDestructibleComponent::GetDestructibleMesh() {
 	static auto fn = UObject::FindObject<UFunction>("Function ApexDestruction.DestructibleComponent.GetDestructibleMesh");
 
 	struct GetDestructibleMesh_Params {
 		
-		struct Unknown ReturnValue;
+		struct UDestructibleMesh ReturnValue;
 
 	}; GetDestructibleMesh_Params Params;
 
@@ -172,12 +172,12 @@ inline struct Unknown UDestructibleComponent::GetDestructibleMesh() {
 }
 
 // Function ApexDestruction.DestructibleComponent.ApplyRadiusDamage
-inline void UDestructibleComponent::ApplyRadiusDamage(float BaseDamage, struct Unknown& HurtOrigin, float DamageRadius, float ImpulseStrength, char bFullDamage) {
+inline void UDestructibleComponent::ApplyRadiusDamage(float BaseDamage, struct FVector& HurtOrigin, float DamageRadius, float ImpulseStrength, char bFullDamage) {
 	static auto fn = UObject::FindObject<UFunction>("Function ApexDestruction.DestructibleComponent.ApplyRadiusDamage");
 
 	struct ApplyRadiusDamage_Params {
 		float BaseDamage;
-		struct Unknown& HurtOrigin;
+		struct FVector& HurtOrigin;
 		float DamageRadius;
 		float ImpulseStrength;
 		char bFullDamage;
@@ -197,13 +197,13 @@ inline void UDestructibleComponent::ApplyRadiusDamage(float BaseDamage, struct U
 }
 
 // Function ApexDestruction.DestructibleComponent.ApplyDamage
-inline void UDestructibleComponent::ApplyDamage(float DamageAmount, struct Unknown& HitLocation, struct Unknown& ImpulseDir, float ImpulseStrength) {
+inline void UDestructibleComponent::ApplyDamage(float DamageAmount, struct FVector& HitLocation, struct FVector& ImpulseDir, float ImpulseStrength) {
 	static auto fn = UObject::FindObject<UFunction>("Function ApexDestruction.DestructibleComponent.ApplyDamage");
 
 	struct ApplyDamage_Params {
 		float DamageAmount;
-		struct Unknown& HitLocation;
-		struct Unknown& ImpulseDir;
+		struct FVector& HitLocation;
+		struct FVector& ImpulseDir;
 		float ImpulseStrength;
 	}; ApplyDamage_Params Params;
 

@@ -213,48 +213,48 @@ class UExcelWorkbook : public Object {
 
 public:
 
-	struct TArray<Unknown> mSheets; // 0x28 (16)
-	struct Unknown mActiveSheet; // 0x38 (8)
+	struct TArray<struct UExcelWorksheet> mSheets; // 0x28 (16)
+	struct UExcelWorksheet mActiveSheet; // 0x38 (8)
 
 	struct FString Title(); // Function XlntLib.ExcelWorkbook.Title(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1366FB0>
-	char StopWatch(struct Unknown WorldContextObject); // Function XlntLib.ExcelWorkbook.StopWatch(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1366720>
-	char StartWatch(struct Unknown WorldContextObject, struct FDelegate onChanged, char autoReload, float Rate); // Function XlntLib.ExcelWorkbook.StartWatch(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x13665A0>
-	struct Unknown SheetWithTitle(struct FString Title); // Function XlntLib.ExcelWorkbook.SheetWithTitle(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x13664A0>
-	struct Unknown SheetWithId(int32_t ID); // Function XlntLib.ExcelWorkbook.SheetWithId(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1366410>
-	struct TArray<Unknown> SheetTitles(); // Function XlntLib.ExcelWorkbook.SheetTitles(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1366390>
+	char StopWatch(struct Object WorldContextObject); // Function XlntLib.ExcelWorkbook.StopWatch(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1366720>
+	char StartWatch(struct Object WorldContextObject, struct FDelegate onChanged, char autoReload, float Rate); // Function XlntLib.ExcelWorkbook.StartWatch(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x13665A0>
+	struct UExcelWorksheet SheetWithTitle(struct FString Title); // Function XlntLib.ExcelWorkbook.SheetWithTitle(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x13664A0>
+	struct UExcelWorksheet SheetWithId(int32_t ID); // Function XlntLib.ExcelWorkbook.SheetWithId(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1366410>
+	struct TArray<struct FString> SheetTitles(); // Function XlntLib.ExcelWorkbook.SheetTitles(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1366390>
 	int32_t SheetCount(); // Function XlntLib.ExcelWorkbook.SheetCount(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1366360>
-	struct Unknown SheetAt(int32_t Index); // Function XlntLib.ExcelWorkbook.SheetAt(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x13662D0>
+	struct UExcelWorksheet SheetAt(int32_t Index); // Function XlntLib.ExcelWorkbook.SheetAt(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x13662D0>
 	void SetTitle(struct FString Value); // Function XlntLib.ExcelWorkbook.SetTitle(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x13660F0>
-	void SetExtendedPropertyValue(enum class Unknow Property, struct Unknown Value); // Function XlntLib.ExcelWorkbook.SetExtendedPropertyValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1365860>
-	void SetCustomProperty(struct FString Name, struct Unknown Value); // Function XlntLib.ExcelWorkbook.SetCustomProperty(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1365450>
-	void SetCorePropertyValue(enum class Unknow Property, struct Unknown Value); // Function XlntLib.ExcelWorkbook.SetCorePropertyValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1365280>
-	void SetBaseDate(enum class Unknow BaseDate); // Function XlntLib.ExcelWorkbook.SetBaseDate(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1364FF0>
+	void SetExtendedPropertyValue(enum class ExcelExtendedProperty Property, struct FExcelVariant Value); // Function XlntLib.ExcelWorkbook.SetExtendedPropertyValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1365860>
+	void SetCustomProperty(struct FString Name, struct FExcelVariant Value); // Function XlntLib.ExcelWorkbook.SetCustomProperty(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1365450>
+	void SetCorePropertyValue(enum class ExcelCoreProperty Property, struct FExcelVariant Value); // Function XlntLib.ExcelWorkbook.SetCorePropertyValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1365280>
+	void SetBaseDate(enum class ExcelBaseDate BaseDate); // Function XlntLib.ExcelWorkbook.SetBaseDate(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1364FF0>
 	void SetActiveSheetWithTitle(struct FString Title); // Function XlntLib.ExcelWorkbook.SetActiveSheetWithTitle(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1364F00>
 	void SetActiveSheetAt(int32_t Index); // Function XlntLib.ExcelWorkbook.SetActiveSheetAt(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1364E80>
-	void SetActiveSheet(struct Unknown sheet); // Function XlntLib.ExcelWorkbook.SetActiveSheet(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1364E00>
+	void SetActiveSheet(struct UExcelWorksheet sheet); // Function XlntLib.ExcelWorkbook.SetActiveSheet(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1364E00>
 	char SaveAs(struct FString Path, char isAbsolutePath, char isSave); // Function XlntLib.ExcelWorkbook.SaveAs(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1364C80>
 	char Save(); // Function XlntLib.ExcelWorkbook.Save(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1364C50>
-	void RemoveSheet(struct Unknown sheet); // Function XlntLib.ExcelWorkbook.RemoveSheet(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1364B40>
+	void RemoveSheet(struct UExcelWorksheet sheet); // Function XlntLib.ExcelWorkbook.RemoveSheet(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1364B40>
 	char Reload(); // Function XlntLib.ExcelWorkbook.Reload(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1364B10>
 	char Load(struct FString fullPath); // Function XlntLib.ExcelWorkbook.Load(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1364220>
 	char HasTitle(); // Function XlntLib.ExcelWorkbook.HasTitle(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x13638F0>
-	char HasExtendedProperty(enum class Unknow Property); // Function XlntLib.ExcelWorkbook.HasExtendedProperty(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1363860>
+	char HasExtendedProperty(enum class ExcelExtendedProperty Property); // Function XlntLib.ExcelWorkbook.HasExtendedProperty(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1363860>
 	char HasCustomProperty(struct FString Name); // Function XlntLib.ExcelWorkbook.HasCustomProperty(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1363760>
-	char HasCoreProperty(enum class Unknow Property); // Function XlntLib.ExcelWorkbook.HasCoreProperty(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x13636D0>
-	struct Unknown GetExtendedPropertyValue(enum class Unknow Property); // Function XlntLib.ExcelWorkbook.GetExtendedPropertyValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1363550>
-	struct Unknown GetCustomProperty(struct FString Name); // Function XlntLib.ExcelWorkbook.GetCustomProperty(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1363420>
-	struct Unknown GetCorePropertyValue(enum class Unknow Property); // Function XlntLib.ExcelWorkbook.GetCorePropertyValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1363360>
-	struct Unknown CreateSheet(int32_t Index, char SetActive); // Function XlntLib.ExcelWorkbook.CreateSheet(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1361370>
-	struct Unknown CopySheet(struct Unknown sheet, int32_t Index); // Function XlntLib.ExcelWorkbook.CopySheet(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x13612B0>
+	char HasCoreProperty(enum class ExcelCoreProperty Property); // Function XlntLib.ExcelWorkbook.HasCoreProperty(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x13636D0>
+	struct FExcelVariant GetExtendedPropertyValue(enum class ExcelExtendedProperty Property); // Function XlntLib.ExcelWorkbook.GetExtendedPropertyValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1363550>
+	struct FExcelVariant GetCustomProperty(struct FString Name); // Function XlntLib.ExcelWorkbook.GetCustomProperty(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1363420>
+	struct FExcelVariant GetCorePropertyValue(enum class ExcelCoreProperty Property); // Function XlntLib.ExcelWorkbook.GetCorePropertyValue(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1363360>
+	struct UExcelWorksheet CreateSheet(int32_t Index, char SetActive); // Function XlntLib.ExcelWorkbook.CreateSheet(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1361370>
+	struct UExcelWorksheet CopySheet(struct UExcelWorksheet sheet, int32_t Index); // Function XlntLib.ExcelWorkbook.CopySheet(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x13612B0>
 	char ContainsSheet(struct FString Title); // Function XlntLib.ExcelWorkbook.ContainsSheet(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x13611B0>
 	void Clear(); // Function XlntLib.ExcelWorkbook.Clear(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1360E80>
-	enum class Unknow BaseDate(); // Function XlntLib.ExcelWorkbook.BaseDate(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1360020>
-	void ApplyToCells(struct Unknown WorldContextObject, struct FDelegate onCell); // Function XlntLib.ExcelWorkbook.ApplyToCells(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x135FF40>
-	struct TArray<Unknown> AllSheets(); // Function XlntLib.ExcelWorkbook.AllSheets(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x135FEB0>
-	struct TArray<Unknown> AllExtendedProperties(); // Function XlntLib.ExcelWorkbook.AllExtendedProperties(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x135FDB0>
-	struct TArray<Unknown> AllCustomProperties(); // Function XlntLib.ExcelWorkbook.AllCustomProperties(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x135FD30>
-	struct TArray<Unknown> AllCoreProperties(); // Function XlntLib.ExcelWorkbook.AllCoreProperties(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x135FCB0>
-	struct Unknown ActiveSheet(); // Function XlntLib.ExcelWorkbook.ActiveSheet(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x135FC80>
+	enum class ExcelBaseDate BaseDate(); // Function XlntLib.ExcelWorkbook.BaseDate(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1360020>
+	void ApplyToCells(struct Object WorldContextObject, struct FDelegate onCell); // Function XlntLib.ExcelWorkbook.ApplyToCells(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x135FF40>
+	struct TArray<struct UExcelWorksheet> AllSheets(); // Function XlntLib.ExcelWorkbook.AllSheets(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x135FEB0>
+	struct TArray<enum class ExcelExtendedProperty> AllExtendedProperties(); // Function XlntLib.ExcelWorkbook.AllExtendedProperties(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x135FDB0>
+	struct TArray<struct FString> AllCustomProperties(); // Function XlntLib.ExcelWorkbook.AllCustomProperties(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x135FD30>
+	struct TArray<enum class ExcelCoreProperty> AllCoreProperties(); // Function XlntLib.ExcelWorkbook.AllCoreProperties(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x135FCB0>
+	struct UExcelWorksheet ActiveSheet(); // Function XlntLib.ExcelWorkbook.ActiveSheet(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x135FC80>
 };
 
 // ScriptStruct XlntLib.ExcelAlignment
@@ -263,41 +263,41 @@ struct FExcelAlignment {
 	char WrapText : 0; // 0x1 (1)
 	int32_t Indent; // 0x4 (4)
 	int32_t TextRotation; // 0x8 (4)
-	enum class Unknow HorizontalAlignment; // 0xC (1)
-	enum class Unknow VerticalAlignment; // 0xD (1)
+	enum class ExcelHorizontalAlignment HorizontalAlignment; // 0xC (1)
+	enum class ExcelVerticalAlignment VerticalAlignment; // 0xD (1)
 };
 
 // ScriptStruct XlntLib.ExcelBorder
 struct FExcelBorder {
-	struct Unknown Start; // 0x0 (36)
-	struct Unknown End; // 0x24 (36)
-	struct Unknown Top; // 0x48 (36)
-	struct Unknown Bottom; // 0x6C (36)
-	struct Unknown Horizontal; // 0x90 (36)
-	struct Unknown Vertical; // 0xB4 (36)
-	struct Unknown Diagonal; // 0xD8 (36)
-	enum class Unknow DiagonalDirection; // 0xFC (1)
+	struct FExcelBorderSide Start; // 0x0 (36)
+	struct FExcelBorderSide End; // 0x24 (36)
+	struct FExcelBorderSide Top; // 0x48 (36)
+	struct FExcelBorderSide Bottom; // 0x6C (36)
+	struct FExcelBorderSide Horizontal; // 0x90 (36)
+	struct FExcelBorderSide Vertical; // 0xB4 (36)
+	struct FExcelBorderSide Diagonal; // 0xD8 (36)
+	enum class ExcelBorderDiagonalDirection DiagonalDirection; // 0xFC (1)
 };
 
 // ScriptStruct XlntLib.ExcelBorderSide
 struct FExcelBorderSide {
-	struct Unknown Color; // 0x0 (32)
-	enum class Unknow Style; // 0x20 (1)
+	struct FExcelColor Color; // 0x0 (32)
+	enum class ExcelBorderStyle Style; // 0x20 (1)
 };
 
 // ScriptStruct XlntLib.ExcelColor
 struct FExcelColor {
-	enum class Unknow Type; // 0x0 (1)
+	enum class ExcelColorType Type; // 0x0 (1)
 	int32_t ColorIndex; // 0x4 (4)
-	struct Unknown ColorValue; // 0x8 (16)
+	struct FLinearColor ColorValue; // 0x8 (16)
 	float Tint; // 0x18 (4)
 	char IsAutoColor : 0; // 0x1C (1)
 };
 
 // ScriptStruct XlntLib.ExcelCellRangeReference
 struct FExcelCellRangeReference {
-	struct Unknown TopLeft; // 0x0 (8)
-	struct Unknown BottomRight; // 0x8 (8)
+	struct FExcelCellReference TopLeft; // 0x0 (8)
+	struct FExcelCellReference BottomRight; // 0x8 (8)
 };
 
 // ScriptStruct XlntLib.ExcelCellReference
@@ -308,24 +308,24 @@ struct FExcelCellReference {
 
 // ScriptStruct XlntLib.ExcelFill
 struct FExcelFill {
-	enum class Unknow Type; // 0x0 (1)
-	struct Unknown PatternFill; // 0x4 (68)
-	struct Unknown GradientFill; // 0x48 (104)
+	enum class ExcelFillType Type; // 0x0 (1)
+	struct FExcelPatternFill PatternFill; // 0x4 (68)
+	struct FExcelGradientFill GradientFill; // 0x48 (104)
 };
 
 // ScriptStruct XlntLib.ExcelGradientFill
 struct FExcelGradientFill {
-	enum class Unknow Type; // 0x0 (1)
+	enum class ExcelGradientFillType Type; // 0x0 (1)
 	float Degree; // 0x4 (4)
-	struct Unknown Distance; // 0x8 (16)
-	struct TMap<Unknown, Unknown> Stops; // 0x18 (80)
+	struct FMargin Distance; // 0x8 (16)
+	struct TMap<float, struct FExcelColor> Stops; // 0x18 (80)
 };
 
 // ScriptStruct XlntLib.ExcelPatternFill
 struct FExcelPatternFill {
-	enum class Unknow Type; // 0x0 (1)
-	struct Unknown ForegroundColor; // 0x4 (32)
-	struct Unknown BackgroundColor; // 0x24 (32)
+	enum class ExcelPatternFillType Type; // 0x0 (1)
+	struct FExcelColor ForegroundColor; // 0x4 (32)
+	struct FExcelColor BackgroundColor; // 0x24 (32)
 };
 
 // ScriptStruct XlntLib.ExcelFont
@@ -338,8 +338,8 @@ struct FExcelFont {
 	char IsStrikeThrough : 0; // 0x17 (1)
 	char IsOutline : 0; // 0x18 (1)
 	char IsShadow : 0; // 0x19 (1)
-	enum class Unknow UnderlineType; // 0x1A (1)
-	struct Unknown Color; // 0x1C (32)
+	enum class ExcelUnderlineType UnderlineType; // 0x1A (1)
+	struct FExcelColor Color; // 0x1C (32)
 	int32_t Family; // 0x3C (4)
 	int32_t Charset; // 0x40 (4)
 	struct FString Scheme; // 0x48 (16)
@@ -376,11 +376,11 @@ inline struct FString UExcelWorkbook::Title() {
 }
 
 // Function XlntLib.ExcelWorkbook.StopWatch
-inline char UExcelWorkbook::StopWatch(struct Unknown WorldContextObject) {
+inline char UExcelWorkbook::StopWatch(struct Object WorldContextObject) {
 	static auto fn = UObject::FindObject<UFunction>("Function XlntLib.ExcelWorkbook.StopWatch");
 
 	struct StopWatch_Params {
-		struct Unknown WorldContextObject;
+		struct Object WorldContextObject;
 		char ReturnValue;
 
 	}; StopWatch_Params Params;
@@ -395,11 +395,11 @@ inline char UExcelWorkbook::StopWatch(struct Unknown WorldContextObject) {
 }
 
 // Function XlntLib.ExcelWorkbook.StartWatch
-inline char UExcelWorkbook::StartWatch(struct Unknown WorldContextObject, struct FDelegate onChanged, char autoReload, float Rate) {
+inline char UExcelWorkbook::StartWatch(struct Object WorldContextObject, struct FDelegate onChanged, char autoReload, float Rate) {
 	static auto fn = UObject::FindObject<UFunction>("Function XlntLib.ExcelWorkbook.StartWatch");
 
 	struct StartWatch_Params {
-		struct Unknown WorldContextObject;
+		struct Object WorldContextObject;
 		struct FDelegate onChanged;
 		char autoReload;
 		float Rate;
@@ -420,12 +420,12 @@ inline char UExcelWorkbook::StartWatch(struct Unknown WorldContextObject, struct
 }
 
 // Function XlntLib.ExcelWorkbook.SheetWithTitle
-inline struct Unknown UExcelWorkbook::SheetWithTitle(struct FString Title) {
+inline struct UExcelWorksheet UExcelWorkbook::SheetWithTitle(struct FString Title) {
 	static auto fn = UObject::FindObject<UFunction>("Function XlntLib.ExcelWorkbook.SheetWithTitle");
 
 	struct SheetWithTitle_Params {
 		struct FString Title;
-		struct Unknown ReturnValue;
+		struct UExcelWorksheet ReturnValue;
 
 	}; SheetWithTitle_Params Params;
 
@@ -439,12 +439,12 @@ inline struct Unknown UExcelWorkbook::SheetWithTitle(struct FString Title) {
 }
 
 // Function XlntLib.ExcelWorkbook.SheetWithId
-inline struct Unknown UExcelWorkbook::SheetWithId(int32_t ID) {
+inline struct UExcelWorksheet UExcelWorkbook::SheetWithId(int32_t ID) {
 	static auto fn = UObject::FindObject<UFunction>("Function XlntLib.ExcelWorkbook.SheetWithId");
 
 	struct SheetWithId_Params {
 		int32_t ID;
-		struct Unknown ReturnValue;
+		struct UExcelWorksheet ReturnValue;
 
 	}; SheetWithId_Params Params;
 
@@ -458,12 +458,12 @@ inline struct Unknown UExcelWorkbook::SheetWithId(int32_t ID) {
 }
 
 // Function XlntLib.ExcelWorkbook.SheetTitles
-inline struct TArray<Unknown> UExcelWorkbook::SheetTitles() {
+inline struct TArray<struct FString> UExcelWorkbook::SheetTitles() {
 	static auto fn = UObject::FindObject<UFunction>("Function XlntLib.ExcelWorkbook.SheetTitles");
 
 	struct SheetTitles_Params {
 		
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<struct FString> ReturnValue;
 
 	}; SheetTitles_Params Params;
 
@@ -494,12 +494,12 @@ inline int32_t UExcelWorkbook::SheetCount() {
 }
 
 // Function XlntLib.ExcelWorkbook.SheetAt
-inline struct Unknown UExcelWorkbook::SheetAt(int32_t Index) {
+inline struct UExcelWorksheet UExcelWorkbook::SheetAt(int32_t Index) {
 	static auto fn = UObject::FindObject<UFunction>("Function XlntLib.ExcelWorkbook.SheetAt");
 
 	struct SheetAt_Params {
 		int32_t Index;
-		struct Unknown ReturnValue;
+		struct UExcelWorksheet ReturnValue;
 
 	}; SheetAt_Params Params;
 
@@ -528,12 +528,12 @@ inline void UExcelWorkbook::SetTitle(struct FString Value) {
 }
 
 // Function XlntLib.ExcelWorkbook.SetExtendedPropertyValue
-inline void UExcelWorkbook::SetExtendedPropertyValue(enum class Unknow Property, struct Unknown Value) {
+inline void UExcelWorkbook::SetExtendedPropertyValue(enum class ExcelExtendedProperty Property, struct FExcelVariant Value) {
 	static auto fn = UObject::FindObject<UFunction>("Function XlntLib.ExcelWorkbook.SetExtendedPropertyValue");
 
 	struct SetExtendedPropertyValue_Params {
-		enum class Unknow Property;
-		struct Unknown Value;
+		enum class ExcelExtendedProperty Property;
+		struct FExcelVariant Value;
 	}; SetExtendedPropertyValue_Params Params;
 
 	Params.Property = Property;
@@ -545,12 +545,12 @@ inline void UExcelWorkbook::SetExtendedPropertyValue(enum class Unknow Property,
 }
 
 // Function XlntLib.ExcelWorkbook.SetCustomProperty
-inline void UExcelWorkbook::SetCustomProperty(struct FString Name, struct Unknown Value) {
+inline void UExcelWorkbook::SetCustomProperty(struct FString Name, struct FExcelVariant Value) {
 	static auto fn = UObject::FindObject<UFunction>("Function XlntLib.ExcelWorkbook.SetCustomProperty");
 
 	struct SetCustomProperty_Params {
 		struct FString Name;
-		struct Unknown Value;
+		struct FExcelVariant Value;
 	}; SetCustomProperty_Params Params;
 
 	Params.Name = Name;
@@ -562,12 +562,12 @@ inline void UExcelWorkbook::SetCustomProperty(struct FString Name, struct Unknow
 }
 
 // Function XlntLib.ExcelWorkbook.SetCorePropertyValue
-inline void UExcelWorkbook::SetCorePropertyValue(enum class Unknow Property, struct Unknown Value) {
+inline void UExcelWorkbook::SetCorePropertyValue(enum class ExcelCoreProperty Property, struct FExcelVariant Value) {
 	static auto fn = UObject::FindObject<UFunction>("Function XlntLib.ExcelWorkbook.SetCorePropertyValue");
 
 	struct SetCorePropertyValue_Params {
-		enum class Unknow Property;
-		struct Unknown Value;
+		enum class ExcelCoreProperty Property;
+		struct FExcelVariant Value;
 	}; SetCorePropertyValue_Params Params;
 
 	Params.Property = Property;
@@ -579,11 +579,11 @@ inline void UExcelWorkbook::SetCorePropertyValue(enum class Unknow Property, str
 }
 
 // Function XlntLib.ExcelWorkbook.SetBaseDate
-inline void UExcelWorkbook::SetBaseDate(enum class Unknow BaseDate) {
+inline void UExcelWorkbook::SetBaseDate(enum class ExcelBaseDate BaseDate) {
 	static auto fn = UObject::FindObject<UFunction>("Function XlntLib.ExcelWorkbook.SetBaseDate");
 
 	struct SetBaseDate_Params {
-		enum class Unknow BaseDate;
+		enum class ExcelBaseDate BaseDate;
 	}; SetBaseDate_Params Params;
 
 	Params.BaseDate = BaseDate;
@@ -624,11 +624,11 @@ inline void UExcelWorkbook::SetActiveSheetAt(int32_t Index) {
 }
 
 // Function XlntLib.ExcelWorkbook.SetActiveSheet
-inline void UExcelWorkbook::SetActiveSheet(struct Unknown sheet) {
+inline void UExcelWorkbook::SetActiveSheet(struct UExcelWorksheet sheet) {
 	static auto fn = UObject::FindObject<UFunction>("Function XlntLib.ExcelWorkbook.SetActiveSheet");
 
 	struct SetActiveSheet_Params {
-		struct Unknown sheet;
+		struct UExcelWorksheet sheet;
 	}; SetActiveSheet_Params Params;
 
 	Params.sheet = sheet;
@@ -680,11 +680,11 @@ inline char UExcelWorkbook::Save() {
 }
 
 // Function XlntLib.ExcelWorkbook.RemoveSheet
-inline void UExcelWorkbook::RemoveSheet(struct Unknown sheet) {
+inline void UExcelWorkbook::RemoveSheet(struct UExcelWorksheet sheet) {
 	static auto fn = UObject::FindObject<UFunction>("Function XlntLib.ExcelWorkbook.RemoveSheet");
 
 	struct RemoveSheet_Params {
-		struct Unknown sheet;
+		struct UExcelWorksheet sheet;
 	}; RemoveSheet_Params Params;
 
 	Params.sheet = sheet;
@@ -750,11 +750,11 @@ inline char UExcelWorkbook::HasTitle() {
 }
 
 // Function XlntLib.ExcelWorkbook.HasExtendedProperty
-inline char UExcelWorkbook::HasExtendedProperty(enum class Unknow Property) {
+inline char UExcelWorkbook::HasExtendedProperty(enum class ExcelExtendedProperty Property) {
 	static auto fn = UObject::FindObject<UFunction>("Function XlntLib.ExcelWorkbook.HasExtendedProperty");
 
 	struct HasExtendedProperty_Params {
-		enum class Unknow Property;
+		enum class ExcelExtendedProperty Property;
 		char ReturnValue;
 
 	}; HasExtendedProperty_Params Params;
@@ -788,11 +788,11 @@ inline char UExcelWorkbook::HasCustomProperty(struct FString Name) {
 }
 
 // Function XlntLib.ExcelWorkbook.HasCoreProperty
-inline char UExcelWorkbook::HasCoreProperty(enum class Unknow Property) {
+inline char UExcelWorkbook::HasCoreProperty(enum class ExcelCoreProperty Property) {
 	static auto fn = UObject::FindObject<UFunction>("Function XlntLib.ExcelWorkbook.HasCoreProperty");
 
 	struct HasCoreProperty_Params {
-		enum class Unknow Property;
+		enum class ExcelCoreProperty Property;
 		char ReturnValue;
 
 	}; HasCoreProperty_Params Params;
@@ -807,12 +807,12 @@ inline char UExcelWorkbook::HasCoreProperty(enum class Unknow Property) {
 }
 
 // Function XlntLib.ExcelWorkbook.GetExtendedPropertyValue
-inline struct Unknown UExcelWorkbook::GetExtendedPropertyValue(enum class Unknow Property) {
+inline struct FExcelVariant UExcelWorkbook::GetExtendedPropertyValue(enum class ExcelExtendedProperty Property) {
 	static auto fn = UObject::FindObject<UFunction>("Function XlntLib.ExcelWorkbook.GetExtendedPropertyValue");
 
 	struct GetExtendedPropertyValue_Params {
-		enum class Unknow Property;
-		struct Unknown ReturnValue;
+		enum class ExcelExtendedProperty Property;
+		struct FExcelVariant ReturnValue;
 
 	}; GetExtendedPropertyValue_Params Params;
 
@@ -826,12 +826,12 @@ inline struct Unknown UExcelWorkbook::GetExtendedPropertyValue(enum class Unknow
 }
 
 // Function XlntLib.ExcelWorkbook.GetCustomProperty
-inline struct Unknown UExcelWorkbook::GetCustomProperty(struct FString Name) {
+inline struct FExcelVariant UExcelWorkbook::GetCustomProperty(struct FString Name) {
 	static auto fn = UObject::FindObject<UFunction>("Function XlntLib.ExcelWorkbook.GetCustomProperty");
 
 	struct GetCustomProperty_Params {
 		struct FString Name;
-		struct Unknown ReturnValue;
+		struct FExcelVariant ReturnValue;
 
 	}; GetCustomProperty_Params Params;
 
@@ -845,12 +845,12 @@ inline struct Unknown UExcelWorkbook::GetCustomProperty(struct FString Name) {
 }
 
 // Function XlntLib.ExcelWorkbook.GetCorePropertyValue
-inline struct Unknown UExcelWorkbook::GetCorePropertyValue(enum class Unknow Property) {
+inline struct FExcelVariant UExcelWorkbook::GetCorePropertyValue(enum class ExcelCoreProperty Property) {
 	static auto fn = UObject::FindObject<UFunction>("Function XlntLib.ExcelWorkbook.GetCorePropertyValue");
 
 	struct GetCorePropertyValue_Params {
-		enum class Unknow Property;
-		struct Unknown ReturnValue;
+		enum class ExcelCoreProperty Property;
+		struct FExcelVariant ReturnValue;
 
 	}; GetCorePropertyValue_Params Params;
 
@@ -864,13 +864,13 @@ inline struct Unknown UExcelWorkbook::GetCorePropertyValue(enum class Unknow Pro
 }
 
 // Function XlntLib.ExcelWorkbook.CreateSheet
-inline struct Unknown UExcelWorkbook::CreateSheet(int32_t Index, char SetActive) {
+inline struct UExcelWorksheet UExcelWorkbook::CreateSheet(int32_t Index, char SetActive) {
 	static auto fn = UObject::FindObject<UFunction>("Function XlntLib.ExcelWorkbook.CreateSheet");
 
 	struct CreateSheet_Params {
 		int32_t Index;
 		char SetActive;
-		struct Unknown ReturnValue;
+		struct UExcelWorksheet ReturnValue;
 
 	}; CreateSheet_Params Params;
 
@@ -885,13 +885,13 @@ inline struct Unknown UExcelWorkbook::CreateSheet(int32_t Index, char SetActive)
 }
 
 // Function XlntLib.ExcelWorkbook.CopySheet
-inline struct Unknown UExcelWorkbook::CopySheet(struct Unknown sheet, int32_t Index) {
+inline struct UExcelWorksheet UExcelWorkbook::CopySheet(struct UExcelWorksheet sheet, int32_t Index) {
 	static auto fn = UObject::FindObject<UFunction>("Function XlntLib.ExcelWorkbook.CopySheet");
 
 	struct CopySheet_Params {
-		struct Unknown sheet;
+		struct UExcelWorksheet sheet;
 		int32_t Index;
-		struct Unknown ReturnValue;
+		struct UExcelWorksheet ReturnValue;
 
 	}; CopySheet_Params Params;
 
@@ -939,12 +939,12 @@ inline void UExcelWorkbook::Clear() {
 }
 
 // Function XlntLib.ExcelWorkbook.BaseDate
-inline enum class Unknow UExcelWorkbook::BaseDate() {
+inline enum class ExcelBaseDate UExcelWorkbook::BaseDate() {
 	static auto fn = UObject::FindObject<UFunction>("Function XlntLib.ExcelWorkbook.BaseDate");
 
 	struct BaseDate_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class ExcelBaseDate ReturnValue;
 
 	}; BaseDate_Params Params;
 
@@ -957,11 +957,11 @@ inline enum class Unknow UExcelWorkbook::BaseDate() {
 }
 
 // Function XlntLib.ExcelWorkbook.ApplyToCells
-inline void UExcelWorkbook::ApplyToCells(struct Unknown WorldContextObject, struct FDelegate onCell) {
+inline void UExcelWorkbook::ApplyToCells(struct Object WorldContextObject, struct FDelegate onCell) {
 	static auto fn = UObject::FindObject<UFunction>("Function XlntLib.ExcelWorkbook.ApplyToCells");
 
 	struct ApplyToCells_Params {
-		struct Unknown WorldContextObject;
+		struct Object WorldContextObject;
 		struct FDelegate onCell;
 	}; ApplyToCells_Params Params;
 
@@ -974,12 +974,12 @@ inline void UExcelWorkbook::ApplyToCells(struct Unknown WorldContextObject, stru
 }
 
 // Function XlntLib.ExcelWorkbook.AllSheets
-inline struct TArray<Unknown> UExcelWorkbook::AllSheets() {
+inline struct TArray<struct UExcelWorksheet> UExcelWorkbook::AllSheets() {
 	static auto fn = UObject::FindObject<UFunction>("Function XlntLib.ExcelWorkbook.AllSheets");
 
 	struct AllSheets_Params {
 		
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<struct UExcelWorksheet> ReturnValue;
 
 	}; AllSheets_Params Params;
 
@@ -992,12 +992,12 @@ inline struct TArray<Unknown> UExcelWorkbook::AllSheets() {
 }
 
 // Function XlntLib.ExcelWorkbook.AllExtendedProperties
-inline struct TArray<Unknown> UExcelWorkbook::AllExtendedProperties() {
+inline struct TArray<enum class ExcelExtendedProperty> UExcelWorkbook::AllExtendedProperties() {
 	static auto fn = UObject::FindObject<UFunction>("Function XlntLib.ExcelWorkbook.AllExtendedProperties");
 
 	struct AllExtendedProperties_Params {
 		
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<enum class ExcelExtendedProperty> ReturnValue;
 
 	}; AllExtendedProperties_Params Params;
 
@@ -1010,12 +1010,12 @@ inline struct TArray<Unknown> UExcelWorkbook::AllExtendedProperties() {
 }
 
 // Function XlntLib.ExcelWorkbook.AllCustomProperties
-inline struct TArray<Unknown> UExcelWorkbook::AllCustomProperties() {
+inline struct TArray<struct FString> UExcelWorkbook::AllCustomProperties() {
 	static auto fn = UObject::FindObject<UFunction>("Function XlntLib.ExcelWorkbook.AllCustomProperties");
 
 	struct AllCustomProperties_Params {
 		
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<struct FString> ReturnValue;
 
 	}; AllCustomProperties_Params Params;
 
@@ -1028,12 +1028,12 @@ inline struct TArray<Unknown> UExcelWorkbook::AllCustomProperties() {
 }
 
 // Function XlntLib.ExcelWorkbook.AllCoreProperties
-inline struct TArray<Unknown> UExcelWorkbook::AllCoreProperties() {
+inline struct TArray<enum class ExcelCoreProperty> UExcelWorkbook::AllCoreProperties() {
 	static auto fn = UObject::FindObject<UFunction>("Function XlntLib.ExcelWorkbook.AllCoreProperties");
 
 	struct AllCoreProperties_Params {
 		
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<enum class ExcelCoreProperty> ReturnValue;
 
 	}; AllCoreProperties_Params Params;
 
@@ -1046,12 +1046,12 @@ inline struct TArray<Unknown> UExcelWorkbook::AllCoreProperties() {
 }
 
 // Function XlntLib.ExcelWorkbook.ActiveSheet
-inline struct Unknown UExcelWorkbook::ActiveSheet() {
+inline struct UExcelWorksheet UExcelWorkbook::ActiveSheet() {
 	static auto fn = UObject::FindObject<UFunction>("Function XlntLib.ExcelWorkbook.ActiveSheet");
 
 	struct ActiveSheet_Params {
 		
-		struct Unknown ReturnValue;
+		struct UExcelWorksheet ReturnValue;
 
 	}; ActiveSheet_Params Params;
 

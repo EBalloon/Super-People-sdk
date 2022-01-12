@@ -3,26 +3,26 @@ class UUW-Inventory_ItemSlotHover_WeaponSlot_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Image_350; // 0x250 (8)
-	struct Unknown Image_585; // 0x258 (8)
-	struct Unknown Image_Grade_Color_Line; // 0x260 (8)
-	struct Unknown TextBlock_445; // 0x268 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UImage Image_350; // 0x250 (8)
+	struct UImage Image_585; // 0x258 (8)
+	struct UImage Image_Grade_Color_Line; // 0x260 (8)
+	struct UTextBlock TextBlock_445; // 0x268 (8)
 
-	void SetBuffInfo(struct FText BuffName, struct FText Desc, struct Unknown Icon, int32_t Rarity); // Function UW-Inventory_ItemSlotHover_WeaponSlot.UW-Inventory_ItemSlotHover_WeaponSlot_C.SetBuffInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnLoaded_EBF7B6BF4C04ABB8FF3715B4F6A51AD1(struct Unknown Loaded); // Function UW-Inventory_ItemSlotHover_WeaponSlot.UW-Inventory_ItemSlotHover_WeaponSlot_C.OnLoaded_EBF7B6BF4C04ABB8FF3715B4F6A51AD1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AsyncLoadIconTexture(struct Unknown IconTexture); // Function UW-Inventory_ItemSlotHover_WeaponSlot.UW-Inventory_ItemSlotHover_WeaponSlot_C.AsyncLoadIconTexture(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetBuffInfo(struct FText BuffName, struct FText Desc, struct TSoftObjectPtr<Object> Icon, int32_t Rarity); // Function UW-Inventory_ItemSlotHover_WeaponSlot.UW-Inventory_ItemSlotHover_WeaponSlot_C.SetBuffInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_EBF7B6BF4C04ABB8FF3715B4F6A51AD1(struct Object Loaded); // Function UW-Inventory_ItemSlotHover_WeaponSlot.UW-Inventory_ItemSlotHover_WeaponSlot_C.OnLoaded_EBF7B6BF4C04ABB8FF3715B4F6A51AD1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AsyncLoadIconTexture(struct TSoftObjectPtr<Object> IconTexture); // Function UW-Inventory_ItemSlotHover_WeaponSlot.UW-Inventory_ItemSlotHover_WeaponSlot_C.AsyncLoadIconTexture(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-Inventory_ItemSlotHover_WeaponSlot(int32_t EntryPoint); // Function UW-Inventory_ItemSlotHover_WeaponSlot.UW-Inventory_ItemSlotHover_WeaponSlot_C.ExecuteUbergraph_UW-Inventory_ItemSlotHover_WeaponSlot(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-Inventory_ItemSlotHover_WeaponSlot.UW-Inventory_ItemSlotHover_WeaponSlot_C.SetBuffInfo
-inline void UUW-Inventory_ItemSlotHover_WeaponSlot_C::SetBuffInfo(struct FText BuffName, struct FText Desc, struct Unknown Icon, int32_t Rarity) {
+inline void UUW-Inventory_ItemSlotHover_WeaponSlot_C::SetBuffInfo(struct FText BuffName, struct FText Desc, struct TSoftObjectPtr<Object> Icon, int32_t Rarity) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover_WeaponSlot.UW-Inventory_ItemSlotHover_WeaponSlot_C.SetBuffInfo");
 
 	struct SetBuffInfo_Params {
 		struct FText BuffName;
 		struct FText Desc;
-		struct Unknown Icon;
+		struct TSoftObjectPtr<Object> Icon;
 		int32_t Rarity;
 	}; SetBuffInfo_Params Params;
 
@@ -37,11 +37,11 @@ inline void UUW-Inventory_ItemSlotHover_WeaponSlot_C::SetBuffInfo(struct FText B
 }
 
 // Function UW-Inventory_ItemSlotHover_WeaponSlot.UW-Inventory_ItemSlotHover_WeaponSlot_C.OnLoaded_EBF7B6BF4C04ABB8FF3715B4F6A51AD1
-inline void UUW-Inventory_ItemSlotHover_WeaponSlot_C::OnLoaded_EBF7B6BF4C04ABB8FF3715B4F6A51AD1(struct Unknown Loaded) {
+inline void UUW-Inventory_ItemSlotHover_WeaponSlot_C::OnLoaded_EBF7B6BF4C04ABB8FF3715B4F6A51AD1(struct Object Loaded) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover_WeaponSlot.UW-Inventory_ItemSlotHover_WeaponSlot_C.OnLoaded_EBF7B6BF4C04ABB8FF3715B4F6A51AD1");
 
 	struct OnLoaded_EBF7B6BF4C04ABB8FF3715B4F6A51AD1_Params {
-		struct Unknown Loaded;
+		struct Object Loaded;
 	}; OnLoaded_EBF7B6BF4C04ABB8FF3715B4F6A51AD1_Params Params;
 
 	Params.Loaded = Loaded;
@@ -52,11 +52,11 @@ inline void UUW-Inventory_ItemSlotHover_WeaponSlot_C::OnLoaded_EBF7B6BF4C04ABB8F
 }
 
 // Function UW-Inventory_ItemSlotHover_WeaponSlot.UW-Inventory_ItemSlotHover_WeaponSlot_C.AsyncLoadIconTexture
-inline void UUW-Inventory_ItemSlotHover_WeaponSlot_C::AsyncLoadIconTexture(struct Unknown IconTexture) {
+inline void UUW-Inventory_ItemSlotHover_WeaponSlot_C::AsyncLoadIconTexture(struct TSoftObjectPtr<Object> IconTexture) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover_WeaponSlot.UW-Inventory_ItemSlotHover_WeaponSlot_C.AsyncLoadIconTexture");
 
 	struct AsyncLoadIconTexture_Params {
-		struct Unknown IconTexture;
+		struct TSoftObjectPtr<Object> IconTexture;
 	}; AsyncLoadIconTexture_Params Params;
 
 	Params.IconTexture = IconTexture;

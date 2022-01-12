@@ -10,21 +10,21 @@ class ULowEntryRawSocketConnection : public Object {
 
 public:
 
-	struct Unknown ListenerCode; // 0x38 (8)
+	struct ULowEntryRawSocketConnectionListenerCode ListenerCode; // 0x38 (8)
 	struct FString Host; // 0x40 (16)
 	int32_t Port; // 0x50 (4)
 	int32_t PortUdp; // 0x54 (4)
-	struct TArray<Unknown> SendingBytes; // 0x58 (16)
-	struct TArray<Unknown> ReceivedBytes; // 0x68 (16)
-	struct TArray<Unknown> ReceivingBuffer; // 0x78 (16)
+	struct TArray<char> SendingBytes; // 0x58 (16)
+	struct TArray<char> ReceivedBytes; // 0x68 (16)
+	struct TArray<char> ReceivingBuffer; // 0x78 (16)
 	char CanCallOnDisconnect : 0; // 0x98 (1)
 	struct FDelegate OnConnectEvent; // 0x9C (16)
 	struct FDelegate OnDisconnectEvent; // 0xAC (16)
 	struct FDelegate OnReceiveMessageEvent; // 0xBC (16)
 	struct FDelegate OnReceiveUnreliableMessageEvent; // 0xCC (16)
 
-	void SendUnreliableMessage(struct TArray<Unknown>& Bytes); // Function LowEntrySocketConnection.LowEntryRawSocketConnection.SendUnreliableMessage(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x109B720>
-	void SendMessage(struct TArray<Unknown>& Bytes); // Function LowEntrySocketConnection.LowEntryRawSocketConnection.SendMessage(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x109B5C0>
+	void SendUnreliableMessage(struct TArray<char>& Bytes); // Function LowEntrySocketConnection.LowEntryRawSocketConnection.SendUnreliableMessage(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x109B720>
+	void SendMessage(struct TArray<char>& Bytes); // Function LowEntrySocketConnection.LowEntryRawSocketConnection.SendMessage(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x109B5C0>
 	char IsConnected(); // Function LowEntrySocketConnection.LowEntryRawSocketConnection.IsConnected(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x109A0C0>
 	int32_t GetPortUdp(); // Function LowEntrySocketConnection.LowEntryRawSocketConnection.GetPortUdp(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x109A090>
 	int32_t GetPort(); // Function LowEntrySocketConnection.LowEntryRawSocketConnection.GetPort(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x109A060>
@@ -32,7 +32,7 @@ public:
 	int32_t GetLocalPort(); // Function LowEntrySocketConnection.LowEntryRawSocketConnection.GetLocalPort(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x109A000>
 	struct FString GetHost(); // Function LowEntrySocketConnection.LowEntryRawSocketConnection.GetHost(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1099F80>
 	void Disconnect(); // Function LowEntrySocketConnection.LowEntryRawSocketConnection.Disconnect(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1099F40>
-	void Connect(struct Unknown WorldContextObject, struct Unknown LatentInfo, char& SUCCESS); // Function LowEntrySocketConnection.LowEntryRawSocketConnection.Connect(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1099340>
+	void Connect(struct Object WorldContextObject, struct FLatentActionInfo LatentInfo, char& SUCCESS); // Function LowEntrySocketConnection.LowEntryRawSocketConnection.Connect(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1099340>
 };
 
 // Class LowEntrySocketConnection.LowEntryRawSocketConnectionListenerCode
@@ -45,7 +45,7 @@ public:
 	char ConnectionSuccess : 0; // 0x2A (1)
 	char JustConnected : 0; // 0x38 (1)
 	float WaitingForConnectionTime; // 0x3C (4)
-	struct Unknown SocketConnection; // 0x40 (8)
+	struct ULowEntryRawSocketConnection SocketConnection; // 0x40 (8)
 	int32_t LatentUUID; // 0x48 (4)
 };
 
@@ -54,20 +54,20 @@ class ULowEntrySocketConnection : public Object {
 
 public:
 
-	struct Unknown ListenerCode; // 0x38 (8)
+	struct ULowEntrySocketConnectionListenerCode ListenerCode; // 0x38 (8)
 	struct FString Host; // 0x40 (16)
 	int32_t Port; // 0x50 (4)
 	int32_t PortUdp; // 0x54 (4)
 	int32_t NextConnectionValidationFunctionCallId; // 0x58 (4)
 	int32_t NextFunctionCallId; // 0x5C (4)
 	int32_t NextLatentFunctionCallId; // 0xB0 (4)
-	struct TArray<Unknown> SendingBytes; // 0x108 (16)
-	struct TArray<Unknown> ReceivedBytes; // 0x118 (16)
-	struct TArray<Unknown> ReceivingBuffer; // 0x128 (16)
+	struct TArray<char> SendingBytes; // 0x108 (16)
+	struct TArray<char> ReceivedBytes; // 0x118 (16)
+	struct TArray<char> ReceivingBuffer; // 0x128 (16)
 	char ReceivingType; // 0x139 (1)
 	int32_t ReceivingFunctionCallId; // 0x13C (4)
 	int32_t ReceivingPacketSize; // 0x140 (4)
-	struct TArray<Unknown> ReceivingPacket; // 0x148 (16)
+	struct TArray<char> ReceivingPacket; // 0x148 (16)
 	char WaitingForConnectionValidationResponse : 0; // 0x168 (1)
 	float ConnectionValidationResponseTime; // 0x16C (4)
 	float ConnectionValidationDelayTime; // 0x170 (4)
@@ -81,10 +81,10 @@ public:
 	struct FDelegate OnReceiveUnreliableMessageEvent; // 0x1B0 (16)
 
 	void SetPeriodicConnectionValidationEnabled(char Enabled); // Function LowEntrySocketConnection.LowEntrySocketConnection.SetPeriodicConnectionValidationEnabled(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x109B880>
-	void SendUnreliableMessage(struct TArray<Unknown>& Bytes); // Function LowEntrySocketConnection.LowEntrySocketConnection.SendUnreliableMessage(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x109B7D0>
-	void SendMessage(struct TArray<Unknown>& Bytes); // Function LowEntrySocketConnection.LowEntrySocketConnection.SendMessage(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x109B670>
-	void SendLatentFunctionCall(struct Unknown WorldContextObject, struct Unknown LatentInfo, enum class Unknow Branch, struct TArray<Unknown>& Bytes, char& Failed, char& Canceled, struct TArray<Unknown>& ResponseBytes, float Timeout); // Function LowEntrySocketConnection.LowEntrySocketConnection.SendLatentFunctionCall(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x109B2E0>
-	void SendFunctionCall(struct Unknown WorldContextObject, struct Unknown LatentInfo, struct TArray<Unknown>& Bytes, char& SUCCESS, struct TArray<Unknown>& ResponseBytes, float Timeout); // Function LowEntrySocketConnection.LowEntrySocketConnection.SendFunctionCall(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x109B090>
+	void SendUnreliableMessage(struct TArray<char>& Bytes); // Function LowEntrySocketConnection.LowEntrySocketConnection.SendUnreliableMessage(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x109B7D0>
+	void SendMessage(struct TArray<char>& Bytes); // Function LowEntrySocketConnection.LowEntrySocketConnection.SendMessage(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x109B670>
+	void SendLatentFunctionCall(struct Object WorldContextObject, struct FLatentActionInfo LatentInfo, enum class ELowEntryLatentFunctionCallAction Branch, struct TArray<char>& Bytes, char& Failed, char& Canceled, struct TArray<char>& ResponseBytes, float Timeout); // Function LowEntrySocketConnection.LowEntrySocketConnection.SendLatentFunctionCall(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x109B2E0>
+	void SendFunctionCall(struct Object WorldContextObject, struct FLatentActionInfo LatentInfo, struct TArray<char>& Bytes, char& SUCCESS, struct TArray<char>& ResponseBytes, float Timeout); // Function LowEntrySocketConnection.LowEntrySocketConnection.SendFunctionCall(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x109B090>
 	void SendConnectionValidation(float Timeout); // Function LowEntrySocketConnection.LowEntrySocketConnection.SendConnectionValidation(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x109B010>
 	void IsPeriodicConnectionValidationEnabled(char& Enabled); // Function LowEntrySocketConnection.LowEntrySocketConnection.IsPeriodicConnectionValidationEnabled(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x109A120>
 	char IsConnected(); // Function LowEntrySocketConnection.LowEntrySocketConnection.IsConnected(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x109A0F0>
@@ -94,7 +94,7 @@ public:
 	int32_t GetLocalPort(); // Function LowEntrySocketConnection.LowEntrySocketConnection.GetLocalPort(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x109A000>
 	struct FString GetHost(); // Function LowEntrySocketConnection.LowEntrySocketConnection.GetHost(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1099F80>
 	void Disconnect(); // Function LowEntrySocketConnection.LowEntrySocketConnection.Disconnect(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1099F60>
-	void Connect(struct Unknown WorldContextObject, struct Unknown LatentInfo, char& SUCCESS); // Function LowEntrySocketConnection.LowEntrySocketConnection.Connect(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1099480>
+	void Connect(struct Object WorldContextObject, struct FLatentActionInfo LatentInfo, char& SUCCESS); // Function LowEntrySocketConnection.LowEntrySocketConnection.Connect(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1099480>
 };
 
 // Class LowEntrySocketConnection.LowEntrySocketConnectionListenerCode
@@ -107,16 +107,16 @@ public:
 	char ConnectionSuccess : 0; // 0x2A (1)
 	char JustConnected : 0; // 0x38 (1)
 	float WaitingForConnectionTime; // 0x3C (4)
-	struct Unknown SocketConnection; // 0x40 (8)
+	struct ULowEntrySocketConnection SocketConnection; // 0x40 (8)
 	int32_t LatentUUID; // 0x48 (4)
 };
 
 // Function LowEntrySocketConnection.LowEntryRawSocketConnection.SendUnreliableMessage
-inline void ULowEntryRawSocketConnection::SendUnreliableMessage(struct TArray<Unknown>& Bytes) {
+inline void ULowEntryRawSocketConnection::SendUnreliableMessage(struct TArray<char>& Bytes) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntrySocketConnection.LowEntryRawSocketConnection.SendUnreliableMessage");
 
 	struct SendUnreliableMessage_Params {
-		struct TArray<Unknown>& Bytes;
+		struct TArray<char>& Bytes;
 	}; SendUnreliableMessage_Params Params;
 
 
@@ -129,11 +129,11 @@ inline void ULowEntryRawSocketConnection::SendUnreliableMessage(struct TArray<Un
 }
 
 // Function LowEntrySocketConnection.LowEntryRawSocketConnection.SendMessage
-inline void ULowEntryRawSocketConnection::SendMessage(struct TArray<Unknown>& Bytes) {
+inline void ULowEntryRawSocketConnection::SendMessage(struct TArray<char>& Bytes) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntrySocketConnection.LowEntryRawSocketConnection.SendMessage");
 
 	struct SendMessage_Params {
-		struct TArray<Unknown>& Bytes;
+		struct TArray<char>& Bytes;
 	}; SendMessage_Params Params;
 
 
@@ -268,12 +268,12 @@ inline void ULowEntryRawSocketConnection::Disconnect() {
 }
 
 // Function LowEntrySocketConnection.LowEntryRawSocketConnection.Connect
-inline void ULowEntryRawSocketConnection::Connect(struct Unknown WorldContextObject, struct Unknown LatentInfo, char& SUCCESS) {
+inline void ULowEntryRawSocketConnection::Connect(struct Object WorldContextObject, struct FLatentActionInfo LatentInfo, char& SUCCESS) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntrySocketConnection.LowEntryRawSocketConnection.Connect");
 
 	struct Connect_Params {
-		struct Unknown WorldContextObject;
-		struct Unknown LatentInfo;
+		struct Object WorldContextObject;
+		struct FLatentActionInfo LatentInfo;
 		char& SUCCESS;
 	}; Connect_Params Params;
 
@@ -304,11 +304,11 @@ inline void ULowEntrySocketConnection::SetPeriodicConnectionValidationEnabled(ch
 }
 
 // Function LowEntrySocketConnection.LowEntrySocketConnection.SendUnreliableMessage
-inline void ULowEntrySocketConnection::SendUnreliableMessage(struct TArray<Unknown>& Bytes) {
+inline void ULowEntrySocketConnection::SendUnreliableMessage(struct TArray<char>& Bytes) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntrySocketConnection.LowEntrySocketConnection.SendUnreliableMessage");
 
 	struct SendUnreliableMessage_Params {
-		struct TArray<Unknown>& Bytes;
+		struct TArray<char>& Bytes;
 	}; SendUnreliableMessage_Params Params;
 
 
@@ -321,11 +321,11 @@ inline void ULowEntrySocketConnection::SendUnreliableMessage(struct TArray<Unkno
 }
 
 // Function LowEntrySocketConnection.LowEntrySocketConnection.SendMessage
-inline void ULowEntrySocketConnection::SendMessage(struct TArray<Unknown>& Bytes) {
+inline void ULowEntrySocketConnection::SendMessage(struct TArray<char>& Bytes) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntrySocketConnection.LowEntrySocketConnection.SendMessage");
 
 	struct SendMessage_Params {
-		struct TArray<Unknown>& Bytes;
+		struct TArray<char>& Bytes;
 	}; SendMessage_Params Params;
 
 
@@ -338,17 +338,17 @@ inline void ULowEntrySocketConnection::SendMessage(struct TArray<Unknown>& Bytes
 }
 
 // Function LowEntrySocketConnection.LowEntrySocketConnection.SendLatentFunctionCall
-inline void ULowEntrySocketConnection::SendLatentFunctionCall(struct Unknown WorldContextObject, struct Unknown LatentInfo, enum class Unknow Branch, struct TArray<Unknown>& Bytes, char& Failed, char& Canceled, struct TArray<Unknown>& ResponseBytes, float Timeout) {
+inline void ULowEntrySocketConnection::SendLatentFunctionCall(struct Object WorldContextObject, struct FLatentActionInfo LatentInfo, enum class ELowEntryLatentFunctionCallAction Branch, struct TArray<char>& Bytes, char& Failed, char& Canceled, struct TArray<char>& ResponseBytes, float Timeout) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntrySocketConnection.LowEntrySocketConnection.SendLatentFunctionCall");
 
 	struct SendLatentFunctionCall_Params {
-		struct Unknown WorldContextObject;
-		struct Unknown LatentInfo;
-		enum class Unknow Branch;
-		struct TArray<Unknown>& Bytes;
+		struct Object WorldContextObject;
+		struct FLatentActionInfo LatentInfo;
+		enum class ELowEntryLatentFunctionCallAction Branch;
+		struct TArray<char>& Bytes;
 		char& Failed;
 		char& Canceled;
-		struct TArray<Unknown>& ResponseBytes;
+		struct TArray<char>& ResponseBytes;
 		float Timeout;
 	}; SendLatentFunctionCall_Params Params;
 
@@ -369,15 +369,15 @@ inline void ULowEntrySocketConnection::SendLatentFunctionCall(struct Unknown Wor
 }
 
 // Function LowEntrySocketConnection.LowEntrySocketConnection.SendFunctionCall
-inline void ULowEntrySocketConnection::SendFunctionCall(struct Unknown WorldContextObject, struct Unknown LatentInfo, struct TArray<Unknown>& Bytes, char& SUCCESS, struct TArray<Unknown>& ResponseBytes, float Timeout) {
+inline void ULowEntrySocketConnection::SendFunctionCall(struct Object WorldContextObject, struct FLatentActionInfo LatentInfo, struct TArray<char>& Bytes, char& SUCCESS, struct TArray<char>& ResponseBytes, float Timeout) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntrySocketConnection.LowEntrySocketConnection.SendFunctionCall");
 
 	struct SendFunctionCall_Params {
-		struct Unknown WorldContextObject;
-		struct Unknown LatentInfo;
-		struct TArray<Unknown>& Bytes;
+		struct Object WorldContextObject;
+		struct FLatentActionInfo LatentInfo;
+		struct TArray<char>& Bytes;
 		char& SUCCESS;
-		struct TArray<Unknown>& ResponseBytes;
+		struct TArray<char>& ResponseBytes;
 		float Timeout;
 	}; SendFunctionCall_Params Params;
 
@@ -550,12 +550,12 @@ inline void ULowEntrySocketConnection::Disconnect() {
 }
 
 // Function LowEntrySocketConnection.LowEntrySocketConnection.Connect
-inline void ULowEntrySocketConnection::Connect(struct Unknown WorldContextObject, struct Unknown LatentInfo, char& SUCCESS) {
+inline void ULowEntrySocketConnection::Connect(struct Object WorldContextObject, struct FLatentActionInfo LatentInfo, char& SUCCESS) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntrySocketConnection.LowEntrySocketConnection.Connect");
 
 	struct Connect_Params {
-		struct Unknown WorldContextObject;
-		struct Unknown LatentInfo;
+		struct Object WorldContextObject;
+		struct FLatentActionInfo LatentInfo;
 		char& SUCCESS;
 	}; Connect_Params Params;
 

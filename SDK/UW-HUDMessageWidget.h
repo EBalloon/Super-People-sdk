@@ -3,103 +3,103 @@ class UUW-HUDMessageWidget_C : public UBravoHotelBroadcastingWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x258 (8)
-	struct Unknown Anim_9WarningMessage; // 0x260 (8)
-	struct Unknown Anim_10SupplyMessage; // 0x268 (8)
-	struct Unknown Anim_8LevelUpMessage; // 0x270 (8)
-	struct Unknown Anim_4GameStartMessage; // 0x278 (8)
-	struct Unknown Anim_27Revival; // 0x280 (8)
-	struct Unknown Anim_TeamKillWarning; // 0x288 (8)
-	struct Unknown 0BlueZoneDesc; // 0x290 (8)
-	struct Unknown 10SupplyMessage; // 0x298 (8)
-	struct Unknown 11BroadcastMessage; // 0x2A0 (8)
-	struct Unknown 12TeamKillWarning; // 0x2A8 (8)
-	struct Unknown 13ActionDescription; // 0x2B0 (8)
-	struct Unknown 14Action; // 0x2B8 (8)
-	struct Unknown 15CastingMessage; // 0x2C0 (8)
-	struct Unknown 16CastingCount; // 0x2C8 (8)
-	struct Unknown 17CastingCancelInfo; // 0x2D0 (8)
-	struct Unknown 18ActionMessage; // 0x2D8 (8)
-	struct Unknown 19CoreInfo; // 0x2E0 (8)
-	struct Unknown 1BlueZoneName; // 0x2E8 (8)
-	struct Unknown 20ZeroingDistance; // 0x2F0 (8)
-	struct Unknown 21PlayerReportInfo; // 0x2F8 (8)
-	struct Unknown 22SpectatorCount; // 0x300 (8)
-	struct Unknown 23PlayerInfo; // 0x308 (8)
-	struct Unknown 24RoundOverInfo; // 0x310 (8)
-	struct Unknown 25RoundOver; // 0x318 (8)
-	struct Unknown 26GuideWidget; // 0x320 (8)
-	struct Unknown 27Revival; // 0x328 (8)
-	struct Unknown 28RequestMessageInfo_2; // 0x330 (8)
-	struct Unknown 29EndResuscitated; // 0x338 (8)
-	struct Unknown 2GameCountDown; // 0x340 (8)
-	struct Unknown 30ItemCancelMessage; // 0x348 (8)
-	struct Unknown 3GameCountDownNum; // 0x350 (8)
-	struct Unknown 4GameStartMessage; // 0x358 (8)
-	struct Unknown 5ChangeClassInfo; // 0x360 (8)
-	struct Unknown 6KillMessage; // 0x368 (8)
-	struct Unknown 7KillCount; // 0x370 (8)
-	struct Unknown 8LevelUpMessage; // 0x378 (8)
-	struct Unknown 9WarningMessage; // 0x380 (8)
-	struct Unknown HUDList; // 0x388 (8)
-	struct Unknown Image; // 0x390 (8)
-	struct Unknown Image_1; // 0x398 (8)
-	struct Unknown Image_2; // 0x3A0 (8)
-	struct Unknown Image_4; // 0x3A8 (8)
-	struct Unknown Image_5; // 0x3B0 (8)
-	struct Unknown Image_8; // 0x3B8 (8)
-	struct Unknown Image_248; // 0x3C0 (8)
-	struct Unknown RichT_ResustingOwnerName; // 0x3C8 (8)
-	struct Unknown ShowMessage<Red18>Free<>; // 0x3D0 (8)
-	struct Unknown UW-CoreInfoWidget; // 0x3D8 (8)
-	struct Unknown UW-CoreInfoWidget_2; // 0x3E0 (8)
-	struct Unknown UW-CoreInfoWidget_243; // 0x3E8 (8)
-	struct Unknown UW-GuideWidget; // 0x3F0 (8)
-	struct Unknown UW-MyKillCountMessageWidget; // 0x3F8 (8)
-	struct Unknown UW-Timer; // 0x400 (8)
-	struct TMap<Unknown, Unknown> LastPriority; // 0x408 (80)
-	struct TArray<Unknown> ShowAnimList; // 0x458 (16)
-	struct TArray<Unknown> HideAnimList; // 0x468 (16)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x258 (8)
+	struct UWidgetAnimation Anim_9WarningMessage; // 0x260 (8)
+	struct UWidgetAnimation Anim_10SupplyMessage; // 0x268 (8)
+	struct UWidgetAnimation Anim_8LevelUpMessage; // 0x270 (8)
+	struct UWidgetAnimation Anim_4GameStartMessage; // 0x278 (8)
+	struct UWidgetAnimation Anim_27Revival; // 0x280 (8)
+	struct UWidgetAnimation Anim_TeamKillWarning; // 0x288 (8)
+	struct UCanvasPanel 0BlueZoneDesc; // 0x290 (8)
+	struct UCanvasPanel 10SupplyMessage; // 0x298 (8)
+	struct UCanvasPanel 11BroadcastMessage; // 0x2A0 (8)
+	struct UCanvasPanel 12TeamKillWarning; // 0x2A8 (8)
+	struct UCanvasPanel 13ActionDescription; // 0x2B0 (8)
+	struct UCanvasPanel 14Action; // 0x2B8 (8)
+	struct UCanvasPanel 15CastingMessage; // 0x2C0 (8)
+	struct UCanvasPanel 16CastingCount; // 0x2C8 (8)
+	struct UCanvasPanel 17CastingCancelInfo; // 0x2D0 (8)
+	struct UCanvasPanel 18ActionMessage; // 0x2D8 (8)
+	struct UCanvasPanel 19CoreInfo; // 0x2E0 (8)
+	struct UCanvasPanel 1BlueZoneName; // 0x2E8 (8)
+	struct UCanvasPanel 20ZeroingDistance; // 0x2F0 (8)
+	struct UCanvasPanel 21PlayerReportInfo; // 0x2F8 (8)
+	struct UCanvasPanel 22SpectatorCount; // 0x300 (8)
+	struct UCanvasPanel 23PlayerInfo; // 0x308 (8)
+	struct UCanvasPanel 24RoundOverInfo; // 0x310 (8)
+	struct UCanvasPanel 25RoundOver; // 0x318 (8)
+	struct UCanvasPanel 26GuideWidget; // 0x320 (8)
+	struct UCanvasPanel 27Revival; // 0x328 (8)
+	struct UCanvasPanel 28RequestMessageInfo_2; // 0x330 (8)
+	struct UCanvasPanel 29EndResuscitated; // 0x338 (8)
+	struct UCanvasPanel 2GameCountDown; // 0x340 (8)
+	struct UCanvasPanel 30ItemCancelMessage; // 0x348 (8)
+	struct UCanvasPanel 3GameCountDownNum; // 0x350 (8)
+	struct UCanvasPanel 4GameStartMessage; // 0x358 (8)
+	struct UCanvasPanel 5ChangeClassInfo; // 0x360 (8)
+	struct UCanvasPanel 6KillMessage; // 0x368 (8)
+	struct UCanvasPanel 7KillCount; // 0x370 (8)
+	struct UCanvasPanel 8LevelUpMessage; // 0x378 (8)
+	struct UCanvasPanel 9WarningMessage; // 0x380 (8)
+	struct UCanvasPanel HUDList; // 0x388 (8)
+	struct UImage Image; // 0x390 (8)
+	struct UImage Image_1; // 0x398 (8)
+	struct UImage Image_2; // 0x3A0 (8)
+	struct UImage Image_4; // 0x3A8 (8)
+	struct UImage Image_5; // 0x3B0 (8)
+	struct UImage Image_8; // 0x3B8 (8)
+	struct UImage Image_248; // 0x3C0 (8)
+	struct URichTextBlock RichT_ResustingOwnerName; // 0x3C8 (8)
+	struct URichTextBlock ShowMessage<Red18>Free<>; // 0x3D0 (8)
+	struct UUW-CoreInfoWidget_C UW-CoreInfoWidget; // 0x3D8 (8)
+	struct UUW-CoreInfoWidget_C UW-CoreInfoWidget_2; // 0x3E0 (8)
+	struct UUW-CoreInfoWidget_C UW-CoreInfoWidget_243; // 0x3E8 (8)
+	struct UUW-GuideWidget_C UW-GuideWidget; // 0x3F0 (8)
+	struct UUW-MyKillCountMessageWidget_C UW-MyKillCountMessageWidget; // 0x3F8 (8)
+	struct UUW-Timer_C UW-Timer; // 0x400 (8)
+	struct TMap<enum class EHUDMessageType, int32_t> LastPriority; // 0x408 (80)
+	struct TArray<struct UPanelWidget> ShowAnimList; // 0x458 (16)
+	struct TArray<struct UPanelWidget> HideAnimList; // 0x468 (16)
 	float ShowAnimTime; // 0x478 (4)
 	float HideAnimTime; // 0x47C (4)
-	struct TMap<Unknown, Unknown> TimerList; // 0x480 (80)
+	struct TMap<struct UPanelWidget, float> TimerList; // 0x480 (80)
 	int32_t TeamKillWarningAnimLoopNum; // 0x4D0 (4)
 	struct FText CheatMessage; // 0x4D8 (24)
 
-	void GetMyKillCountMessageWidget(struct Unknown& KillCountWidget); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.GetMyKillCountMessageWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void ShowCustomAnim(struct Unknown PanelWidget, struct Unknown CustomAnim); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.ShowCustomAnim(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetMyKillCountMessageWidget(struct UUW-MyKillCountMessageWidget_C& KillCountWidget); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.GetMyKillCountMessageWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void ShowCustomAnim(struct UPanelWidget PanelWidget, struct UWidgetAnimation CustomAnim); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.ShowCustomAnim(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ShowResuscitatingWidget(); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.ShowResuscitatingWidget(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetRequestMessageWidget(struct Unknown& Result); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.GetRequestMessageWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void GetRequestMessageWidget(struct UUW-CoreInfoWidget_C& Result); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.GetRequestMessageWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void AddCoreInfoWidget(struct FText Message); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.AddCoreInfoWidget(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetCoreInfoWidget(struct Unknown& CoreInfoWidget); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.GetCoreInfoWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void GetCoreInfoWidget(struct UUW-CoreInfoWidget_C& CoreInfoWidget); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.GetCoreInfoWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void ShowGuideWidget(struct FText Message); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.ShowGuideWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void PlayTeamKillWarningAnim(); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.PlayTeamKillWarningAnim(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ResetPriority(enum class Unknow MessageType, struct Unknown PanelWidget); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.ResetPriority(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AddToTimerList(struct Unknown Panel, float Time); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.AddToTimerList(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ResetPriority(enum class EHUDMessageType MessageType, struct UPanelWidget PanelWidget); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.ResetPriority(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AddToTimerList(struct UPanelWidget Panel, float Time); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.AddToTimerList(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CalcTimerCount(float DeltaTime); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.CalcTimerCount(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void PlayHideAnim(float DeltaTime); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.PlayHideAnim(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void PlayShowAnim(float DeltaTime); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.PlayShowAnim(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void HideDefaultAnim(struct Unknown PanelWidget); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.HideDefaultAnim(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowDefaultAnim(struct Unknown PanelWidget); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.ShowDefaultAnim(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetMessageText(struct Unknown PanelWidget, struct FText Message); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.SetMessageText(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CheckPriority(enum class Unknow MessageType, int32_t Priority, char& CanMessage); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.CheckPriority(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetPanelWidget(enum class Unknow MessageType, struct Unknown& PanelWidget); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.GetPanelWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void HideHUDMessage(enum class Unknow MessageType); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.HideHUDMessage(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowHUDMessage(struct Unknown MessageRow); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.ShowHUDMessage(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnAnimationFinished(struct Unknown Animation); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.OnAnimationFinished(BlueprintCosmetic|Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowHUDMessageAtNum(enum class Unknow MessageType); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.ShowHUDMessageAtNum(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void HideDefaultAnim(struct UPanelWidget PanelWidget); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.HideDefaultAnim(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowDefaultAnim(struct UPanelWidget PanelWidget); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.ShowDefaultAnim(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetMessageText(struct UPanelWidget PanelWidget, struct FText Message); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.SetMessageText(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CheckPriority(enum class EHUDMessageType MessageType, int32_t Priority, char& CanMessage); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.CheckPriority(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetPanelWidget(enum class EHUDMessageType MessageType, struct UPanelWidget& PanelWidget); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.GetPanelWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void HideHUDMessage(enum class EHUDMessageType MessageType); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.HideHUDMessage(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowHUDMessage(struct FBravoHotelHUDMessageRow MessageRow); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.ShowHUDMessage(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnAnimationFinished(struct UWidgetAnimation Animation); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.OnAnimationFinished(BlueprintCosmetic|Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowHUDMessageAtNum(enum class EHUDMessageType MessageType); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.ShowHUDMessageAtNum(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnGameUserSettingsApply_GamePlay_Event_1(struct TArray<Unknown>& List); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.OnGameUserSettingsApply_GamePlay_Event_1(HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnGameUserSettingsApply_GamePlay_Event_1(struct TArray<enum class ESettingType>& List); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.OnGameUserSettingsApply_GamePlay_Event_1(HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-HUDMessageWidget(int32_t EntryPoint); // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.ExecuteUbergraph_UW-HUDMessageWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.GetMyKillCountMessageWidget
-inline void UUW-HUDMessageWidget_C::GetMyKillCountMessageWidget(struct Unknown& KillCountWidget) {
+inline void UUW-HUDMessageWidget_C::GetMyKillCountMessageWidget(struct UUW-MyKillCountMessageWidget_C& KillCountWidget) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.GetMyKillCountMessageWidget");
 
 	struct GetMyKillCountMessageWidget_Params {
-		struct Unknown& KillCountWidget;
+		struct UUW-MyKillCountMessageWidget_C& KillCountWidget;
 	}; GetMyKillCountMessageWidget_Params Params;
 
 
@@ -112,12 +112,12 @@ inline void UUW-HUDMessageWidget_C::GetMyKillCountMessageWidget(struct Unknown& 
 }
 
 // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.ShowCustomAnim
-inline void UUW-HUDMessageWidget_C::ShowCustomAnim(struct Unknown PanelWidget, struct Unknown CustomAnim) {
+inline void UUW-HUDMessageWidget_C::ShowCustomAnim(struct UPanelWidget PanelWidget, struct UWidgetAnimation CustomAnim) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.ShowCustomAnim");
 
 	struct ShowCustomAnim_Params {
-		struct Unknown PanelWidget;
-		struct Unknown CustomAnim;
+		struct UPanelWidget PanelWidget;
+		struct UWidgetAnimation CustomAnim;
 	}; ShowCustomAnim_Params Params;
 
 	Params.PanelWidget = PanelWidget;
@@ -143,11 +143,11 @@ inline void UUW-HUDMessageWidget_C::ShowResuscitatingWidget() {
 }
 
 // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.GetRequestMessageWidget
-inline void UUW-HUDMessageWidget_C::GetRequestMessageWidget(struct Unknown& Result) {
+inline void UUW-HUDMessageWidget_C::GetRequestMessageWidget(struct UUW-CoreInfoWidget_C& Result) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.GetRequestMessageWidget");
 
 	struct GetRequestMessageWidget_Params {
-		struct Unknown& Result;
+		struct UUW-CoreInfoWidget_C& Result;
 	}; GetRequestMessageWidget_Params Params;
 
 
@@ -175,11 +175,11 @@ inline void UUW-HUDMessageWidget_C::AddCoreInfoWidget(struct FText Message) {
 }
 
 // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.GetCoreInfoWidget
-inline void UUW-HUDMessageWidget_C::GetCoreInfoWidget(struct Unknown& CoreInfoWidget) {
+inline void UUW-HUDMessageWidget_C::GetCoreInfoWidget(struct UUW-CoreInfoWidget_C& CoreInfoWidget) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.GetCoreInfoWidget");
 
 	struct GetCoreInfoWidget_Params {
-		struct Unknown& CoreInfoWidget;
+		struct UUW-CoreInfoWidget_C& CoreInfoWidget;
 	}; GetCoreInfoWidget_Params Params;
 
 
@@ -221,12 +221,12 @@ inline void UUW-HUDMessageWidget_C::PlayTeamKillWarningAnim() {
 }
 
 // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.ResetPriority
-inline void UUW-HUDMessageWidget_C::ResetPriority(enum class Unknow MessageType, struct Unknown PanelWidget) {
+inline void UUW-HUDMessageWidget_C::ResetPriority(enum class EHUDMessageType MessageType, struct UPanelWidget PanelWidget) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.ResetPriority");
 
 	struct ResetPriority_Params {
-		enum class Unknow MessageType;
-		struct Unknown PanelWidget;
+		enum class EHUDMessageType MessageType;
+		struct UPanelWidget PanelWidget;
 	}; ResetPriority_Params Params;
 
 	Params.MessageType = MessageType;
@@ -238,11 +238,11 @@ inline void UUW-HUDMessageWidget_C::ResetPriority(enum class Unknow MessageType,
 }
 
 // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.AddToTimerList
-inline void UUW-HUDMessageWidget_C::AddToTimerList(struct Unknown Panel, float Time) {
+inline void UUW-HUDMessageWidget_C::AddToTimerList(struct UPanelWidget Panel, float Time) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.AddToTimerList");
 
 	struct AddToTimerList_Params {
-		struct Unknown Panel;
+		struct UPanelWidget Panel;
 		float Time;
 	}; AddToTimerList_Params Params;
 
@@ -300,11 +300,11 @@ inline void UUW-HUDMessageWidget_C::PlayShowAnim(float DeltaTime) {
 }
 
 // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.HideDefaultAnim
-inline void UUW-HUDMessageWidget_C::HideDefaultAnim(struct Unknown PanelWidget) {
+inline void UUW-HUDMessageWidget_C::HideDefaultAnim(struct UPanelWidget PanelWidget) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.HideDefaultAnim");
 
 	struct HideDefaultAnim_Params {
-		struct Unknown PanelWidget;
+		struct UPanelWidget PanelWidget;
 	}; HideDefaultAnim_Params Params;
 
 	Params.PanelWidget = PanelWidget;
@@ -315,11 +315,11 @@ inline void UUW-HUDMessageWidget_C::HideDefaultAnim(struct Unknown PanelWidget) 
 }
 
 // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.ShowDefaultAnim
-inline void UUW-HUDMessageWidget_C::ShowDefaultAnim(struct Unknown PanelWidget) {
+inline void UUW-HUDMessageWidget_C::ShowDefaultAnim(struct UPanelWidget PanelWidget) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.ShowDefaultAnim");
 
 	struct ShowDefaultAnim_Params {
-		struct Unknown PanelWidget;
+		struct UPanelWidget PanelWidget;
 	}; ShowDefaultAnim_Params Params;
 
 	Params.PanelWidget = PanelWidget;
@@ -330,11 +330,11 @@ inline void UUW-HUDMessageWidget_C::ShowDefaultAnim(struct Unknown PanelWidget) 
 }
 
 // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.SetMessageText
-inline void UUW-HUDMessageWidget_C::SetMessageText(struct Unknown PanelWidget, struct FText Message) {
+inline void UUW-HUDMessageWidget_C::SetMessageText(struct UPanelWidget PanelWidget, struct FText Message) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.SetMessageText");
 
 	struct SetMessageText_Params {
-		struct Unknown PanelWidget;
+		struct UPanelWidget PanelWidget;
 		struct FText Message;
 	}; SetMessageText_Params Params;
 
@@ -347,11 +347,11 @@ inline void UUW-HUDMessageWidget_C::SetMessageText(struct Unknown PanelWidget, s
 }
 
 // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.CheckPriority
-inline void UUW-HUDMessageWidget_C::CheckPriority(enum class Unknow MessageType, int32_t Priority, char& CanMessage) {
+inline void UUW-HUDMessageWidget_C::CheckPriority(enum class EHUDMessageType MessageType, int32_t Priority, char& CanMessage) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.CheckPriority");
 
 	struct CheckPriority_Params {
-		enum class Unknow MessageType;
+		enum class EHUDMessageType MessageType;
 		int32_t Priority;
 		char& CanMessage;
 	}; CheckPriority_Params Params;
@@ -368,12 +368,12 @@ inline void UUW-HUDMessageWidget_C::CheckPriority(enum class Unknow MessageType,
 }
 
 // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.GetPanelWidget
-inline void UUW-HUDMessageWidget_C::GetPanelWidget(enum class Unknow MessageType, struct Unknown& PanelWidget) {
+inline void UUW-HUDMessageWidget_C::GetPanelWidget(enum class EHUDMessageType MessageType, struct UPanelWidget& PanelWidget) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.GetPanelWidget");
 
 	struct GetPanelWidget_Params {
-		enum class Unknow MessageType;
-		struct Unknown& PanelWidget;
+		enum class EHUDMessageType MessageType;
+		struct UPanelWidget& PanelWidget;
 	}; GetPanelWidget_Params Params;
 
 	Params.MessageType = MessageType;
@@ -387,11 +387,11 @@ inline void UUW-HUDMessageWidget_C::GetPanelWidget(enum class Unknow MessageType
 }
 
 // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.HideHUDMessage
-inline void UUW-HUDMessageWidget_C::HideHUDMessage(enum class Unknow MessageType) {
+inline void UUW-HUDMessageWidget_C::HideHUDMessage(enum class EHUDMessageType MessageType) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.HideHUDMessage");
 
 	struct HideHUDMessage_Params {
-		enum class Unknow MessageType;
+		enum class EHUDMessageType MessageType;
 	}; HideHUDMessage_Params Params;
 
 	Params.MessageType = MessageType;
@@ -402,11 +402,11 @@ inline void UUW-HUDMessageWidget_C::HideHUDMessage(enum class Unknow MessageType
 }
 
 // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.ShowHUDMessage
-inline void UUW-HUDMessageWidget_C::ShowHUDMessage(struct Unknown MessageRow) {
+inline void UUW-HUDMessageWidget_C::ShowHUDMessage(struct FBravoHotelHUDMessageRow MessageRow) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.ShowHUDMessage");
 
 	struct ShowHUDMessage_Params {
-		struct Unknown MessageRow;
+		struct FBravoHotelHUDMessageRow MessageRow;
 	}; ShowHUDMessage_Params Params;
 
 	Params.MessageRow = MessageRow;
@@ -417,11 +417,11 @@ inline void UUW-HUDMessageWidget_C::ShowHUDMessage(struct Unknown MessageRow) {
 }
 
 // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.Tick
-inline void UUW-HUDMessageWidget_C::Tick(struct Unknown MyGeometry, float InDeltaTime) {
+inline void UUW-HUDMessageWidget_C::Tick(struct FGeometry MyGeometry, float InDeltaTime) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.Tick");
 
 	struct Tick_Params {
-		struct Unknown MyGeometry;
+		struct FGeometry MyGeometry;
 		float InDeltaTime;
 	}; Tick_Params Params;
 
@@ -434,11 +434,11 @@ inline void UUW-HUDMessageWidget_C::Tick(struct Unknown MyGeometry, float InDelt
 }
 
 // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.OnAnimationFinished
-inline void UUW-HUDMessageWidget_C::OnAnimationFinished(struct Unknown Animation) {
+inline void UUW-HUDMessageWidget_C::OnAnimationFinished(struct UWidgetAnimation Animation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.OnAnimationFinished");
 
 	struct OnAnimationFinished_Params {
-		struct Unknown Animation;
+		struct UWidgetAnimation Animation;
 	}; OnAnimationFinished_Params Params;
 
 	Params.Animation = Animation;
@@ -449,11 +449,11 @@ inline void UUW-HUDMessageWidget_C::OnAnimationFinished(struct Unknown Animation
 }
 
 // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.ShowHUDMessageAtNum
-inline void UUW-HUDMessageWidget_C::ShowHUDMessageAtNum(enum class Unknow MessageType) {
+inline void UUW-HUDMessageWidget_C::ShowHUDMessageAtNum(enum class EHUDMessageType MessageType) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.ShowHUDMessageAtNum");
 
 	struct ShowHUDMessageAtNum_Params {
-		enum class Unknow MessageType;
+		enum class EHUDMessageType MessageType;
 	}; ShowHUDMessageAtNum_Params Params;
 
 	Params.MessageType = MessageType;
@@ -478,11 +478,11 @@ inline void UUW-HUDMessageWidget_C::Construct() {
 }
 
 // Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.OnGameUserSettingsApply_GamePlay_Event_1
-inline void UUW-HUDMessageWidget_C::OnGameUserSettingsApply_GamePlay_Event_1(struct TArray<Unknown>& List) {
+inline void UUW-HUDMessageWidget_C::OnGameUserSettingsApply_GamePlay_Event_1(struct TArray<enum class ESettingType>& List) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-HUDMessageWidget.UW-HUDMessageWidget_C.OnGameUserSettingsApply_GamePlay_Event_1");
 
 	struct OnGameUserSettingsApply_GamePlay_Event_1_Params {
-		struct TArray<Unknown>& List;
+		struct TArray<enum class ESettingType>& List;
 	}; OnGameUserSettingsApply_GamePlay_Event_1_Params Params;
 
 

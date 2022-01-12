@@ -3,30 +3,30 @@ class UUW-GameBuffSlot_Boost_C : public UBravoHotelGameBuffSlot {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x2F8 (8)
-	struct Unknown Anim_Boost_Off; // 0x300 (8)
-	struct Unknown Anim_Boost_On; // 0x308 (8)
-	struct Unknown CanvasPanel_BoostInfo; // 0x310 (8)
-	struct Unknown Image_Active; // 0x318 (8)
-	struct Unknown IMG_CoolTime; // 0x320 (8)
-	struct Unknown T_CoolTime; // 0x328 (8)
-	struct Unknown MI_CoolTimeDynamicInstance; // 0x330 (8)
-	struct Unknown MI_BuffActive; // 0x338 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x2F8 (8)
+	struct UWidgetAnimation Anim_Boost_Off; // 0x300 (8)
+	struct UWidgetAnimation Anim_Boost_On; // 0x308 (8)
+	struct UCanvasPanel CanvasPanel_BoostInfo; // 0x310 (8)
+	struct UImage Image_Active; // 0x318 (8)
+	struct UImage IMG_CoolTime; // 0x320 (8)
+	struct UTextBlock T_CoolTime; // 0x328 (8)
+	struct UMaterialInstanceDynamic MI_CoolTimeDynamicInstance; // 0x330 (8)
+	struct UMaterialInstanceDynamic MI_BuffActive; // 0x338 (8)
 	float BoostOffAnimTime; // 0x340 (4)
 	char IsActive : 0; // 0x344 (1)
-	struct Unknown BoostBuffInfo; // 0x348 (392)
+	struct FBuffData BoostBuffInfo; // 0x348 (392)
 
 	void SetIsActive(char bActive); // Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.SetIsActive(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void InitBuffInfo(); // Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.InitBuffInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void UpdateCoolTime(float Timer, float MaxTime); // Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.UpdateCoolTime(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnLoaded_541BBAAD4C8A218716460DAC5837CB3E(struct Unknown Loaded); // Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.OnLoaded_541BBAAD4C8A218716460DAC5837CB3E(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_541BBAAD4C8A218716460DAC5837CB3E(struct Object Loaded); // Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.OnLoaded_541BBAAD4C8A218716460DAC5837CB3E(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void K2_UpdateBuff(float Timer, float MaxTime); // Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.K2_UpdateBuff(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void K2_OnNewBuff(); // Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.K2_OnNewBuff(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnAnimationFinished(struct Unknown Animation); // Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.OnAnimationFinished(BlueprintCosmetic|Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnAnimationFinished(struct UWidgetAnimation Animation); // Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.OnAnimationFinished(BlueprintCosmetic|Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void K2_OnRenewBuff(); // Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.K2_OnRenewBuff(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void PlayAnimBoostOn(); // Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.PlayAnimBoostOn(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AsyncloadImage(struct Unknown Image); // Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.AsyncloadImage(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AsyncloadImage(struct TSoftObjectPtr<Object> Image); // Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.AsyncloadImage(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-GameBuffSlot_Boost(int32_t EntryPoint); // Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.ExecuteUbergraph_UW-GameBuffSlot_Boost(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
@@ -77,11 +77,11 @@ inline void UUW-GameBuffSlot_Boost_C::UpdateCoolTime(float Timer, float MaxTime)
 }
 
 // Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.OnLoaded_541BBAAD4C8A218716460DAC5837CB3E
-inline void UUW-GameBuffSlot_Boost_C::OnLoaded_541BBAAD4C8A218716460DAC5837CB3E(struct Unknown Loaded) {
+inline void UUW-GameBuffSlot_Boost_C::OnLoaded_541BBAAD4C8A218716460DAC5837CB3E(struct Object Loaded) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.OnLoaded_541BBAAD4C8A218716460DAC5837CB3E");
 
 	struct OnLoaded_541BBAAD4C8A218716460DAC5837CB3E_Params {
-		struct Unknown Loaded;
+		struct Object Loaded;
 	}; OnLoaded_541BBAAD4C8A218716460DAC5837CB3E_Params Params;
 
 	Params.Loaded = Loaded;
@@ -137,11 +137,11 @@ inline void UUW-GameBuffSlot_Boost_C::K2_OnNewBuff() {
 }
 
 // Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.OnAnimationFinished
-inline void UUW-GameBuffSlot_Boost_C::OnAnimationFinished(struct Unknown Animation) {
+inline void UUW-GameBuffSlot_Boost_C::OnAnimationFinished(struct UWidgetAnimation Animation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.OnAnimationFinished");
 
 	struct OnAnimationFinished_Params {
-		struct Unknown Animation;
+		struct UWidgetAnimation Animation;
 	}; OnAnimationFinished_Params Params;
 
 	Params.Animation = Animation;
@@ -180,11 +180,11 @@ inline void UUW-GameBuffSlot_Boost_C::PlayAnimBoostOn() {
 }
 
 // Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.AsyncloadImage
-inline void UUW-GameBuffSlot_Boost_C::AsyncloadImage(struct Unknown Image) {
+inline void UUW-GameBuffSlot_Boost_C::AsyncloadImage(struct TSoftObjectPtr<Object> Image) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-GameBuffSlot_Boost.UW-GameBuffSlot_Boost_C.AsyncloadImage");
 
 	struct AsyncloadImage_Params {
-		struct Unknown Image;
+		struct TSoftObjectPtr<Object> Image;
 	}; AsyncloadImage_Params Params;
 
 	Params.Image = Image;

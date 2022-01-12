@@ -12,10 +12,10 @@ class AMK3DUserInterfaceManager : public UActor {
 
 public:
 
-	struct TArray<Unknown> WidgetInfoArray; // 0x318 (16)
-	struct TMap<Unknown, Unknown> ReplayWidgetMap; // 0x328 (80)
+	struct TArray<struct FUserWidgetInfoForReplay_T> WidgetInfoArray; // 0x318 (16)
+	struct TMap<struct FString, struct UUserWidget> ReplayWidgetMap; // 0x328 (80)
 
-	struct Unknown Get(); // Function MK3DReplayBasic.MK3DUserInterfaceManager.Get(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x137C9E0>
+	struct AMK3DUserInterfaceManager Get(); // Function MK3DReplayBasic.MK3DUserInterfaceManager.Get(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x137C9E0>
 };
 
 // Class MK3DReplayBasic.NativePlayerListItem
@@ -23,8 +23,8 @@ class UNativePlayerListItem : public UUserWidget {
 
 public:
 
-	struct Unknown Button_PlayerName; // 0x248 (8)
-	struct Unknown Text_PlayerName; // 0x250 (8)
+	struct UButton Button_PlayerName; // 0x248 (8)
+	struct UTextBlock Text_PlayerName; // 0x250 (8)
 
 	void OnClickPlayerNameButton(); // Function MK3DReplayBasic.NativePlayerListItem.OnClickPlayerNameButton(Final|Native|Public) // <Game_BE.exe+0x137CE80>
 };
@@ -34,10 +34,10 @@ class UNativePlayerListWidget : public UUserWidget {
 
 public:
 
-	struct Unknown SortMethodTextBlock; // 0x248 (8)
-	struct Unknown PlayerListPrevButton; // 0x250 (8)
-	struct Unknown PlayerListNextButton; // 0x258 (8)
-	struct Unknown ScrollBox_PlayerName; // 0x260 (8)
+	struct UTextBlock SortMethodTextBlock; // 0x248 (8)
+	struct UButton PlayerListPrevButton; // 0x250 (8)
+	struct UButton PlayerListNextButton; // 0x258 (8)
+	struct UScrollBox ScrollBox_PlayerName; // 0x260 (8)
 
 	void ShowPlayerList(); // Function MK3DReplayBasic.NativePlayerListWidget.ShowPlayerList(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x137EC00>
 	void SetPlayerListWidgetButtons(); // Function MK3DReplayBasic.NativePlayerListWidget.SetPlayerListWidgetButtons(Final|Native|Public) // <Game_BE.exe+0x137E9E0>
@@ -51,16 +51,16 @@ class UNativeReplayEventMarkerBasic : public UUserWidget {
 
 public:
 
-	struct Unknown EventBorder; // 0x248 (8)
-	struct Unknown VisualBorder; // 0x250 (8)
-	struct Unknown EventInform; // 0x258 (8)
+	struct UReplayEventBorder EventBorder; // 0x248 (8)
+	struct UBorder VisualBorder; // 0x250 (8)
+	struct UTextBlock EventInform; // 0x258 (8)
 
-	struct Unknown OnMouseMoveEventBorder(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function MK3DReplayBasic.NativeReplayEventMarkerBasic.OnMouseMoveEventBorder(Native|Public|HasOutParms) // <Game_BE.exe+0x137DD60>
-	struct Unknown OnMouseLeaveEventBorder(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function MK3DReplayBasic.NativeReplayEventMarkerBasic.OnMouseLeaveEventBorder(Native|Public|HasOutParms) // <Game_BE.exe+0x137D9C0>
-	struct Unknown OnMouseEnterEventBorder(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function MK3DReplayBasic.NativeReplayEventMarkerBasic.OnMouseEnterEventBorder(Native|Public|HasOutParms) // <Game_BE.exe+0x137D620>
-	struct Unknown OnMouseButtonUpEventBorder(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function MK3DReplayBasic.NativeReplayEventMarkerBasic.OnMouseButtonUpEventBorder(Native|Public|HasOutParms) // <Game_BE.exe+0x137D450>
-	struct Unknown OnMouseButtonDownEventBorder(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function MK3DReplayBasic.NativeReplayEventMarkerBasic.OnMouseButtonDownEventBorder(Native|Public|HasOutParms) // <Game_BE.exe+0x137D280>
-	struct Unknown GetBorderSize(); // Function MK3DReplayBasic.NativeReplayEventMarkerBasic.GetBorderSize(Native|Public|HasDefaults) // <Game_BE.exe+0x137CA10>
+	struct FEventReply OnMouseMoveEventBorder(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function MK3DReplayBasic.NativeReplayEventMarkerBasic.OnMouseMoveEventBorder(Native|Public|HasOutParms) // <Game_BE.exe+0x137DD60>
+	struct FEventReply OnMouseLeaveEventBorder(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function MK3DReplayBasic.NativeReplayEventMarkerBasic.OnMouseLeaveEventBorder(Native|Public|HasOutParms) // <Game_BE.exe+0x137D9C0>
+	struct FEventReply OnMouseEnterEventBorder(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function MK3DReplayBasic.NativeReplayEventMarkerBasic.OnMouseEnterEventBorder(Native|Public|HasOutParms) // <Game_BE.exe+0x137D620>
+	struct FEventReply OnMouseButtonUpEventBorder(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function MK3DReplayBasic.NativeReplayEventMarkerBasic.OnMouseButtonUpEventBorder(Native|Public|HasOutParms) // <Game_BE.exe+0x137D450>
+	struct FEventReply OnMouseButtonDownEventBorder(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function MK3DReplayBasic.NativeReplayEventMarkerBasic.OnMouseButtonDownEventBorder(Native|Public|HasOutParms) // <Game_BE.exe+0x137D280>
+	struct FVector2D GetBorderSize(); // Function MK3DReplayBasic.NativeReplayEventMarkerBasic.GetBorderSize(Native|Public|HasDefaults) // <Game_BE.exe+0x137CA10>
 };
 
 // Class MK3DReplayBasic.NativeReplayKillEventMarker
@@ -68,10 +68,10 @@ class UNativeReplayKillEventMarker : public UNativeReplayEventMarkerBasic {
 
 public:
 
-	struct Unknown KillEvent; // 0x270 (48)
+	struct FMK3DHighlightKillEvent KillEvent; // 0x270 (48)
 	float ClickToJumpDeltaSec; // 0x2A8 (4)
 
-	void SetKillEvent(struct Unknown& InKillEvent); // Function MK3DReplayBasic.NativeReplayKillEventMarker.SetKillEvent(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x137E920>
+	void SetKillEvent(struct FMK3DHighlightKillEvent& InKillEvent); // Function MK3DReplayBasic.NativeReplayKillEventMarker.SetKillEvent(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x137E920>
 	void OnReplayJumpComplete(char bSuccess); // Function MK3DReplayBasic.NativeReplayKillEventMarker.OnReplayJumpComplete(Final|Native|Protected) // <Game_BE.exe+0x137E120>
 	int32_t GetEventTime(); // Function MK3DReplayBasic.NativeReplayKillEventMarker.GetEventTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x137CA50>
 };
@@ -81,13 +81,13 @@ class UNativeReplayListItem : public UUserWidget {
 
 public:
 
-	struct Unknown ReplayListItemBtn; // 0x248 (8)
-	struct Unknown TextName; // 0x250 (8)
-	struct Unknown TextLive; // 0x258 (8)
-	struct Unknown TextTime; // 0x260 (8)
+	struct UButton ReplayListItemBtn; // 0x248 (8)
+	struct UTextBlock TextName; // 0x250 (8)
+	struct UTextBlock TextLive; // 0x258 (8)
+	struct UTextBlock TextTime; // 0x260 (8)
 	struct FMulticastInlineDelegate OnSelectedReplayListItemEvent; // 0x278 (16)
 
-	void SetReplayListItemText(struct FString Name, char IsLive, struct Unknown Time); // Function MK3DReplayBasic.NativeReplayListItem.SetReplayListItemText(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x137EA00>
+	void SetReplayListItemText(struct FString Name, char IsLive, struct FDateTime Time); // Function MK3DReplayBasic.NativeReplayListItem.SetReplayListItemText(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x137EA00>
 	void PlayReplay(); // Function MK3DReplayBasic.NativeReplayListItem.PlayReplay(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x137E700>
 	void OnSelectedReplayListItemEvent__DelegateSignature(struct FString ReplayName); // DelegateFunction MK3DReplayBasic.NativeReplayListItem.OnSelectedReplayListItemEvent__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B80160>
 	void OnClickedReplayListItemBtn(); // Function MK3DReplayBasic.NativeReplayListItem.OnClickedReplayListItemBtn(Final|Native|Public) // <Game_BE.exe+0x137CFA0>
@@ -98,8 +98,8 @@ class ANativeReplayListLevel : public ALevelScriptActor {
 
 public:
 
-	struct Unknown ReplayListWidget; // 0x320 (8)
-	struct Unknown* ReplayListWidgetClass; // 0x328 (8)
+	struct UUserWidget ReplayListWidget; // 0x320 (8)
+	struct UClass* ReplayListWidgetClass; // 0x328 (8)
 
 	void ShowMouseCursor(); // Function MK3DReplayBasic.NativeReplayListLevel.ShowMouseCursor(Final|Native|Protected) // <Game_BE.exe+0x137EBE0>
 	void AddListWidgetToViewPort(); // Function MK3DReplayBasic.NativeReplayListLevel.AddListWidgetToViewPort(Final|Native|Protected) // <Game_BE.exe+0x137C590>
@@ -110,20 +110,20 @@ class UNativeReplayListWidget : public UUserWidget {
 
 public:
 
-	struct Unknown PageSizeTB; // 0x248 (8)
-	struct Unknown CurrentPageTB; // 0x250 (8)
-	struct Unknown ScrollBoxReplayList; // 0x258 (8)
-	struct Unknown RefreshBtn; // 0x260 (8)
-	struct Unknown PrevBtn; // 0x268 (8)
-	struct Unknown NextBtn; // 0x270 (8)
-	struct Unknown TotalReplaysTB; // 0x278 (8)
-	struct Unknown TotalPageText; // 0x280 (8)
-	struct Unknown ReplayItemInform; // 0x288 (8)
-	struct Unknown ShouldKeepChkBox; // 0x290 (8)
-	struct Unknown PlayBtn; // 0x298 (8)
-	struct Unknown DeleteBtn; // 0x2A0 (8)
-	struct Unknown DeleteOldReplaysBtn; // 0x2A8 (8)
-	struct Unknown ReplaysToKeepTB; // 0x2B0 (8)
+	struct UEditableTextBox PageSizeTB; // 0x248 (8)
+	struct UEditableTextBox CurrentPageTB; // 0x250 (8)
+	struct UScrollBox ScrollBoxReplayList; // 0x258 (8)
+	struct UButton RefreshBtn; // 0x260 (8)
+	struct UButton PrevBtn; // 0x268 (8)
+	struct UButton NextBtn; // 0x270 (8)
+	struct UTextBlock TotalReplaysTB; // 0x278 (8)
+	struct UTextBlock TotalPageText; // 0x280 (8)
+	struct UTextBlock ReplayItemInform; // 0x288 (8)
+	struct UCheckBox ShouldKeepChkBox; // 0x290 (8)
+	struct UButton PlayBtn; // 0x298 (8)
+	struct UButton DeleteBtn; // 0x2A0 (8)
+	struct UButton DeleteOldReplaysBtn; // 0x2A8 (8)
+	struct UEditableTextBox ReplaysToKeepTB; // 0x2B0 (8)
 	int32_t TotalPages; // 0x2B8 (4)
 	int32_t CurrentPage; // 0x2BC (4)
 	int32_t PageSize; // 0x2C0 (4)
@@ -169,30 +169,30 @@ class UNativeReplayTimelineBasicWidget : public UUserWidget {
 
 public:
 
-	struct Unknown ReplayTimelineScrollBox; // 0x248 (8)
-	struct Unknown ReplayTimelineSizeBox; // 0x250 (8)
-	struct Unknown ReplayTimelineBorder; // 0x258 (8)
-	struct Unknown ReplayTimelineSlider; // 0x260 (8)
-	struct Unknown ReplayTimeToGoBorder; // 0x268 (8)
-	struct Unknown ReplayTimeToGoText; // 0x270 (8)
-	struct Unknown ReplayCurrentTimeTextBlock; // 0x278 (8)
-	struct Unknown ReplayTotalTimeTextBlock; // 0x280 (8)
-	struct Unknown ReplayPauseButton; // 0x288 (8)
-	struct Unknown ReplayResumeButton; // 0x290 (8)
-	struct Unknown ReplaySpeedUpButton; // 0x298 (8)
-	struct Unknown ReplaySpeedDownButton; // 0x2A0 (8)
-	struct Unknown ReplaySpeedTextBlock; // 0x2A8 (8)
-	struct Unknown ShowKillChkBox; // 0x2B0 (8)
-	struct Unknown ShowKnockoutChkBox; // 0x2B8 (8)
-	struct Unknown TimelineScaleUpButton; // 0x2C0 (8)
-	struct Unknown TimelineScaleDownButton; // 0x2C8 (8)
-	struct Unknown TimelineScaleTextBlock; // 0x2D0 (8)
+	struct UScrollBox ReplayTimelineScrollBox; // 0x248 (8)
+	struct USizeBox ReplayTimelineSizeBox; // 0x250 (8)
+	struct UTimelineBorder ReplayTimelineBorder; // 0x258 (8)
+	struct USlider ReplayTimelineSlider; // 0x260 (8)
+	struct UBorder ReplayTimeToGoBorder; // 0x268 (8)
+	struct UTextBlock ReplayTimeToGoText; // 0x270 (8)
+	struct UTextBlock ReplayCurrentTimeTextBlock; // 0x278 (8)
+	struct UTextBlock ReplayTotalTimeTextBlock; // 0x280 (8)
+	struct UButton ReplayPauseButton; // 0x288 (8)
+	struct UButton ReplayResumeButton; // 0x290 (8)
+	struct UButton ReplaySpeedUpButton; // 0x298 (8)
+	struct UButton ReplaySpeedDownButton; // 0x2A0 (8)
+	struct UTextBlock ReplaySpeedTextBlock; // 0x2A8 (8)
+	struct UCheckBox ShowKillChkBox; // 0x2B0 (8)
+	struct UCheckBox ShowKnockoutChkBox; // 0x2B8 (8)
+	struct UButton TimelineScaleUpButton; // 0x2C0 (8)
+	struct UButton TimelineScaleDownButton; // 0x2C8 (8)
+	struct UTextBlock TimelineScaleTextBlock; // 0x2D0 (8)
 	float TimelineScaleDelta; // 0x2D8 (4)
 	float TimelineMaxScale; // 0x2DC (4)
-	struct TArray<Unknown> KillEventMarkers; // 0x300 (16)
-	struct TArray<Unknown> KnockoutEventMarkers; // 0x310 (16)
-	struct TArray<Unknown> MK3DKillEvents; // 0x320 (16)
-	struct TArray<Unknown> MK3DKnockoutEvents; // 0x330 (16)
+	struct TArray<struct UNativeReplayEventMarkerBasic> KillEventMarkers; // 0x300 (16)
+	struct TArray<struct UNativeReplayEventMarkerBasic> KnockoutEventMarkers; // 0x310 (16)
+	struct TArray<struct FMK3DHighlightKillEvent> MK3DKillEvents; // 0x320 (16)
+	struct TArray<struct FMK3DHighlightKillEvent> MK3DKnockoutEvents; // 0x330 (16)
 
 	void UpdateTimelineScale(); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.UpdateTimelineScale(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x137EF50>
 	void UpdateNativeReplaySpeedTextBlock(); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.UpdateNativeReplaySpeedTextBlock(Final|Native|Public) // <Game_BE.exe+0x137ED70>
@@ -201,13 +201,13 @@ public:
 	void SetTimelineScale(float InScale); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.SetTimelineScale(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x137EB60>
 	void RemoveAllKnockoutEventMarkers(); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.RemoveAllKnockoutEventMarkers(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x137E900>
 	void RemoveAllKillEventMarkers(); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.RemoveAllKillEventMarkers(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x137E8E0>
-	void RefreshKillEventMarkers(enum class Unknow killType); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.RefreshKillEventMarkers(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x137E860>
+	void RefreshKillEventMarkers(enum class EKillType killType); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.RefreshKillEventMarkers(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x137E860>
 	void OnValueChangedTimeSlider(float InValue); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnValueChangedTimeSlider(Final|Native|Public) // <Game_BE.exe+0x137E680>
 	void OnTimelineScrollBoxUserScrolled(float fCurrentOffset); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnTimelineScrollBoxUserScrolled(Final|Native|Public) // <Game_BE.exe+0x137E600>
 	void OnRefreshMarkersIfWidgetReady(); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnRefreshMarkersIfWidgetReady(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x137E100>
-	struct Unknown OnMouseMoveTimelineBorder(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnMouseMoveTimelineBorder(Final|Native|Public|HasOutParms) // <Game_BE.exe+0x137DF30>
-	struct Unknown OnMouseLeaveTimelineBorder(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnMouseLeaveTimelineBorder(Final|Native|Public|HasOutParms) // <Game_BE.exe+0x137DB90>
-	struct Unknown OnMouseEnterTimelineBorder(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnMouseEnterTimelineBorder(Final|Native|Public|HasOutParms) // <Game_BE.exe+0x137D7F0>
+	struct FEventReply OnMouseMoveTimelineBorder(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnMouseMoveTimelineBorder(Final|Native|Public|HasOutParms) // <Game_BE.exe+0x137DF30>
+	struct FEventReply OnMouseLeaveTimelineBorder(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnMouseLeaveTimelineBorder(Final|Native|Public|HasOutParms) // <Game_BE.exe+0x137DB90>
+	struct FEventReply OnMouseEnterTimelineBorder(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnMouseEnterTimelineBorder(Final|Native|Public|HasOutParms) // <Game_BE.exe+0x137D7F0>
 	void OnClickTimelineScaleUpButton(); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnClickTimelineScaleUpButton(Final|Native|Public) // <Game_BE.exe+0x137CF20>
 	void OnClickTimelineScaleDownButton(); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnClickTimelineScaleDownButton(Final|Native|Public) // <Game_BE.exe+0x137CF00>
 	void OnClickSpeedUpButton(); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnClickSpeedUpButton(Final|Native|Public) // <Game_BE.exe+0x137CEE0>
@@ -216,12 +216,12 @@ public:
 	void OnClickPauseButton(); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnClickPauseButton(Final|Native|Public) // <Game_BE.exe+0x137CE20>
 	void OnCheckStateChangedShowKnockout(char bIsChecked); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnCheckStateChangedShowKnockout(Final|Native|Public) // <Game_BE.exe+0x137CD00>
 	void OnCheckStateChangedShowKill(char bIsChecked); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnCheckStateChangedShowKill(Final|Native|Public) // <Game_BE.exe+0x137CC70>
-	void OnChangeCameraType(enum class Unknow CameraType, struct FString TargetPlayerName); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnChangeCameraType(Final|Native|Public) // <Game_BE.exe+0x137CB40>
+	void OnChangeCameraType(enum class ECameraType CameraType, struct FString TargetPlayerName); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnChangeCameraType(Final|Native|Public) // <Game_BE.exe+0x137CB40>
 	float GetTimelineScale(); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.GetTimelineScale(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x137CAE0>
-	void EnumerateMK3DKillEvents(enum class Unknow killType); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.EnumerateMK3DKillEvents(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x137C960>
-	struct Unknown CreateEventMarker(enum class Unknow killType); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.CreateEventMarker(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void EnumerateMK3DKillEvents(enum class EKillType killType); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.EnumerateMK3DKillEvents(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x137C960>
+	struct UNativeReplayKillEventMarker CreateEventMarker(enum class EKillType killType); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.CreateEventMarker(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BPUpdateTimelineScale(); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.BPUpdateTimelineScale(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BPUpdateKillEventMarkersPos(enum class Unknow killType, float TotalTime); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.BPUpdateKillEventMarkersPos(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BPUpdateKillEventMarkersPos(enum class EKillType killType, float TotalTime); // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.BPUpdateKillEventMarkersPos(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 };
 
 // Class MK3DReplayBasic.ReplayEventBorder
@@ -248,12 +248,12 @@ struct FUserWidgetInfoForReplay_T {
 };
 
 // Function MK3DReplayBasic.MK3DUserInterfaceManager.Get
-inline struct Unknown AMK3DUserInterfaceManager::Get() {
+inline struct AMK3DUserInterfaceManager AMK3DUserInterfaceManager::Get() {
 	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.MK3DUserInterfaceManager.Get");
 
 	struct Get_Params {
 		
-		struct Unknown ReturnValue;
+		struct AMK3DUserInterfaceManager ReturnValue;
 
 	}; Get_Params Params;
 
@@ -350,13 +350,13 @@ inline void UNativePlayerListWidget::HidePlayerList() {
 }
 
 // Function MK3DReplayBasic.NativeReplayEventMarkerBasic.OnMouseMoveEventBorder
-inline struct Unknown UNativeReplayEventMarkerBasic::OnMouseMoveEventBorder(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UNativeReplayEventMarkerBasic::OnMouseMoveEventBorder(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayEventMarkerBasic.OnMouseMoveEventBorder");
 
 	struct OnMouseMoveEventBorder_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnMouseMoveEventBorder_Params Params;
 
@@ -373,13 +373,13 @@ inline struct Unknown UNativeReplayEventMarkerBasic::OnMouseMoveEventBorder(stru
 }
 
 // Function MK3DReplayBasic.NativeReplayEventMarkerBasic.OnMouseLeaveEventBorder
-inline struct Unknown UNativeReplayEventMarkerBasic::OnMouseLeaveEventBorder(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UNativeReplayEventMarkerBasic::OnMouseLeaveEventBorder(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayEventMarkerBasic.OnMouseLeaveEventBorder");
 
 	struct OnMouseLeaveEventBorder_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnMouseLeaveEventBorder_Params Params;
 
@@ -396,13 +396,13 @@ inline struct Unknown UNativeReplayEventMarkerBasic::OnMouseLeaveEventBorder(str
 }
 
 // Function MK3DReplayBasic.NativeReplayEventMarkerBasic.OnMouseEnterEventBorder
-inline struct Unknown UNativeReplayEventMarkerBasic::OnMouseEnterEventBorder(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UNativeReplayEventMarkerBasic::OnMouseEnterEventBorder(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayEventMarkerBasic.OnMouseEnterEventBorder");
 
 	struct OnMouseEnterEventBorder_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnMouseEnterEventBorder_Params Params;
 
@@ -419,13 +419,13 @@ inline struct Unknown UNativeReplayEventMarkerBasic::OnMouseEnterEventBorder(str
 }
 
 // Function MK3DReplayBasic.NativeReplayEventMarkerBasic.OnMouseButtonUpEventBorder
-inline struct Unknown UNativeReplayEventMarkerBasic::OnMouseButtonUpEventBorder(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UNativeReplayEventMarkerBasic::OnMouseButtonUpEventBorder(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayEventMarkerBasic.OnMouseButtonUpEventBorder");
 
 	struct OnMouseButtonUpEventBorder_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnMouseButtonUpEventBorder_Params Params;
 
@@ -442,13 +442,13 @@ inline struct Unknown UNativeReplayEventMarkerBasic::OnMouseButtonUpEventBorder(
 }
 
 // Function MK3DReplayBasic.NativeReplayEventMarkerBasic.OnMouseButtonDownEventBorder
-inline struct Unknown UNativeReplayEventMarkerBasic::OnMouseButtonDownEventBorder(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UNativeReplayEventMarkerBasic::OnMouseButtonDownEventBorder(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayEventMarkerBasic.OnMouseButtonDownEventBorder");
 
 	struct OnMouseButtonDownEventBorder_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnMouseButtonDownEventBorder_Params Params;
 
@@ -465,12 +465,12 @@ inline struct Unknown UNativeReplayEventMarkerBasic::OnMouseButtonDownEventBorde
 }
 
 // Function MK3DReplayBasic.NativeReplayEventMarkerBasic.GetBorderSize
-inline struct Unknown UNativeReplayEventMarkerBasic::GetBorderSize() {
+inline struct FVector2D UNativeReplayEventMarkerBasic::GetBorderSize() {
 	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayEventMarkerBasic.GetBorderSize");
 
 	struct GetBorderSize_Params {
 		
-		struct Unknown ReturnValue;
+		struct FVector2D ReturnValue;
 
 	}; GetBorderSize_Params Params;
 
@@ -483,11 +483,11 @@ inline struct Unknown UNativeReplayEventMarkerBasic::GetBorderSize() {
 }
 
 // Function MK3DReplayBasic.NativeReplayKillEventMarker.SetKillEvent
-inline void UNativeReplayKillEventMarker::SetKillEvent(struct Unknown& InKillEvent) {
+inline void UNativeReplayKillEventMarker::SetKillEvent(struct FMK3DHighlightKillEvent& InKillEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayKillEventMarker.SetKillEvent");
 
 	struct SetKillEvent_Params {
-		struct Unknown& InKillEvent;
+		struct FMK3DHighlightKillEvent& InKillEvent;
 	}; SetKillEvent_Params Params;
 
 
@@ -533,13 +533,13 @@ inline int32_t UNativeReplayKillEventMarker::GetEventTime() {
 }
 
 // Function MK3DReplayBasic.NativeReplayListItem.SetReplayListItemText
-inline void UNativeReplayListItem::SetReplayListItemText(struct FString Name, char IsLive, struct Unknown Time) {
+inline void UNativeReplayListItem::SetReplayListItemText(struct FString Name, char IsLive, struct FDateTime Time) {
 	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayListItem.SetReplayListItemText");
 
 	struct SetReplayListItemText_Params {
 		struct FString Name;
 		char IsLive;
-		struct Unknown Time;
+		struct FDateTime Time;
 	}; SetReplayListItemText_Params Params;
 
 	Params.Name = Name;
@@ -1219,11 +1219,11 @@ inline void UNativeReplayTimelineBasicWidget::RemoveAllKillEventMarkers() {
 }
 
 // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.RefreshKillEventMarkers
-inline void UNativeReplayTimelineBasicWidget::RefreshKillEventMarkers(enum class Unknow killType) {
+inline void UNativeReplayTimelineBasicWidget::RefreshKillEventMarkers(enum class EKillType killType) {
 	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.RefreshKillEventMarkers");
 
 	struct RefreshKillEventMarkers_Params {
-		enum class Unknow killType;
+		enum class EKillType killType;
 	}; RefreshKillEventMarkers_Params Params;
 
 	Params.killType = killType;
@@ -1278,13 +1278,13 @@ inline void UNativeReplayTimelineBasicWidget::OnRefreshMarkersIfWidgetReady() {
 }
 
 // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnMouseMoveTimelineBorder
-inline struct Unknown UNativeReplayTimelineBasicWidget::OnMouseMoveTimelineBorder(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UNativeReplayTimelineBasicWidget::OnMouseMoveTimelineBorder(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnMouseMoveTimelineBorder");
 
 	struct OnMouseMoveTimelineBorder_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnMouseMoveTimelineBorder_Params Params;
 
@@ -1301,13 +1301,13 @@ inline struct Unknown UNativeReplayTimelineBasicWidget::OnMouseMoveTimelineBorde
 }
 
 // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnMouseLeaveTimelineBorder
-inline struct Unknown UNativeReplayTimelineBasicWidget::OnMouseLeaveTimelineBorder(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UNativeReplayTimelineBasicWidget::OnMouseLeaveTimelineBorder(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnMouseLeaveTimelineBorder");
 
 	struct OnMouseLeaveTimelineBorder_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnMouseLeaveTimelineBorder_Params Params;
 
@@ -1324,13 +1324,13 @@ inline struct Unknown UNativeReplayTimelineBasicWidget::OnMouseLeaveTimelineBord
 }
 
 // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnMouseEnterTimelineBorder
-inline struct Unknown UNativeReplayTimelineBasicWidget::OnMouseEnterTimelineBorder(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UNativeReplayTimelineBasicWidget::OnMouseEnterTimelineBorder(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnMouseEnterTimelineBorder");
 
 	struct OnMouseEnterTimelineBorder_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnMouseEnterTimelineBorder_Params Params;
 
@@ -1461,11 +1461,11 @@ inline void UNativeReplayTimelineBasicWidget::OnCheckStateChangedShowKill(char b
 }
 
 // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnChangeCameraType
-inline void UNativeReplayTimelineBasicWidget::OnChangeCameraType(enum class Unknow CameraType, struct FString TargetPlayerName) {
+inline void UNativeReplayTimelineBasicWidget::OnChangeCameraType(enum class ECameraType CameraType, struct FString TargetPlayerName) {
 	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.OnChangeCameraType");
 
 	struct OnChangeCameraType_Params {
-		enum class Unknow CameraType;
+		enum class ECameraType CameraType;
 		struct FString TargetPlayerName;
 	}; OnChangeCameraType_Params Params;
 
@@ -1496,11 +1496,11 @@ inline float UNativeReplayTimelineBasicWidget::GetTimelineScale() {
 }
 
 // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.EnumerateMK3DKillEvents
-inline void UNativeReplayTimelineBasicWidget::EnumerateMK3DKillEvents(enum class Unknow killType) {
+inline void UNativeReplayTimelineBasicWidget::EnumerateMK3DKillEvents(enum class EKillType killType) {
 	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.EnumerateMK3DKillEvents");
 
 	struct EnumerateMK3DKillEvents_Params {
-		enum class Unknow killType;
+		enum class EKillType killType;
 	}; EnumerateMK3DKillEvents_Params Params;
 
 	Params.killType = killType;
@@ -1511,12 +1511,12 @@ inline void UNativeReplayTimelineBasicWidget::EnumerateMK3DKillEvents(enum class
 }
 
 // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.CreateEventMarker
-inline struct Unknown UNativeReplayTimelineBasicWidget::CreateEventMarker(enum class Unknow killType) {
+inline struct UNativeReplayKillEventMarker UNativeReplayTimelineBasicWidget::CreateEventMarker(enum class EKillType killType) {
 	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.CreateEventMarker");
 
 	struct CreateEventMarker_Params {
-		enum class Unknow killType;
-		struct Unknown ReturnValue;
+		enum class EKillType killType;
+		struct UNativeReplayKillEventMarker ReturnValue;
 
 	}; CreateEventMarker_Params Params;
 
@@ -1544,11 +1544,11 @@ inline void UNativeReplayTimelineBasicWidget::BPUpdateTimelineScale() {
 }
 
 // Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.BPUpdateKillEventMarkersPos
-inline void UNativeReplayTimelineBasicWidget::BPUpdateKillEventMarkersPos(enum class Unknow killType, float TotalTime) {
+inline void UNativeReplayTimelineBasicWidget::BPUpdateKillEventMarkersPos(enum class EKillType killType, float TotalTime) {
 	static auto fn = UObject::FindObject<UFunction>("Function MK3DReplayBasic.NativeReplayTimelineBasicWidget.BPUpdateKillEventMarkersPos");
 
 	struct BPUpdateKillEventMarkersPos_Params {
-		enum class Unknow killType;
+		enum class EKillType killType;
 		float TotalTime;
 	}; BPUpdateKillEventMarkersPos_Params Params;
 

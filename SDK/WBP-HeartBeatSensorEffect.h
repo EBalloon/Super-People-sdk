@@ -3,19 +3,19 @@ class UWBP-HeartBeatSensorEffect_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown HeartBeat; // 0x250 (8)
-	struct Unknown FadeOut; // 0x258 (8)
-	struct Unknown FadeIn; // 0x260 (8)
-	struct Unknown Image; // 0x268 (8)
-	struct Unknown Image_95; // 0x270 (8)
-	struct Unknown Image_140; // 0x278 (8)
-	struct Unknown NewVar_1; // 0x280 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UWidgetAnimation HeartBeat; // 0x250 (8)
+	struct UWidgetAnimation FadeOut; // 0x258 (8)
+	struct UWidgetAnimation FadeIn; // 0x260 (8)
+	struct UImage Image; // 0x268 (8)
+	struct UImage Image_95; // 0x270 (8)
+	struct UImage Image_140; // 0x278 (8)
+	struct UUMGSequencePlayer NewVar_1; // 0x280 (8)
 	char IsFadeInOutEvent : 0; // 0x288 (1)
 	float CurrentFade; // 0x28C (4)
 
 	void Construct(); // Function WBP-HeartBeatSensorEffect.WBP-HeartBeatSensorEffect_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function WBP-HeartBeatSensorEffect.WBP-HeartBeatSensorEffect_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function WBP-HeartBeatSensorEffect.WBP-HeartBeatSensorEffect_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_WBP-HeartBeatSensorEffect(int32_t EntryPoint); // Function WBP-HeartBeatSensorEffect.WBP-HeartBeatSensorEffect_C.ExecuteUbergraph_WBP-HeartBeatSensorEffect(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
@@ -34,11 +34,11 @@ inline void UWBP-HeartBeatSensorEffect_C::Construct() {
 }
 
 // Function WBP-HeartBeatSensorEffect.WBP-HeartBeatSensorEffect_C.Tick
-inline void UWBP-HeartBeatSensorEffect_C::Tick(struct Unknown MyGeometry, float InDeltaTime) {
+inline void UWBP-HeartBeatSensorEffect_C::Tick(struct FGeometry MyGeometry, float InDeltaTime) {
 	static auto fn = UObject::FindObject<UFunction>("Function WBP-HeartBeatSensorEffect.WBP-HeartBeatSensorEffect_C.Tick");
 
 	struct Tick_Params {
-		struct Unknown MyGeometry;
+		struct FGeometry MyGeometry;
 		float InDeltaTime;
 	}; Tick_Params Params;
 

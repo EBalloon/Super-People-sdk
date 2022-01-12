@@ -10,6 +10,6 @@ public:
 	float CameraZoomVelocity; // 0x40 (4)
 	float CameraInterpSpeed; // 0x44 (4)
 	float CharacterRotationInterpSpeed; // 0x48 (4)
-	struct Unknown CameraMove; // 0x50 (8)
+	struct UCurveFloat CameraMove; // 0x50 (8)
 };
 

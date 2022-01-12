@@ -3,8 +3,8 @@ class UUW-PerkDeckSelectItemNumWidget_C : public UUserWidget {
 
 public:
 
-	struct Unknown Image_Selected; // 0x248 (8)
-	struct Unknown TextBlock_Selected; // 0x250 (8)
+	struct UImage Image_Selected; // 0x248 (8)
+	struct UTextBlock TextBlock_Selected; // 0x250 (8)
 	int32_t PlayerIndex; // 0x258 (4)
 
 	void SetTeamIndex(int32_t PlayerIndex); // Function UW-PerkDeckSelectItemNumWidget.UW-PerkDeckSelectItemNumWidget_C.SetTeamIndex(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>

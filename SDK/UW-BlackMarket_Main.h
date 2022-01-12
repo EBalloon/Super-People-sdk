@@ -3,107 +3,107 @@ class UUW-BlackMarket_Main_C : public UBravoHotelDevelopmentBlackMarket {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x2E8 (8)
-	struct Unknown AllItem; // 0x2F0 (8)
-	struct Unknown Button_1004; // 0x2F8 (8)
-	struct Unknown CheckBox_1; // 0x300 (8)
-	struct Unknown CP-Column; // 0x308 (8)
-	struct Unknown IMG-Ammo; // 0x310 (8)
-	struct Unknown IMG-Attachment; // 0x318 (8)
-	struct Unknown IMG-Consumable; // 0x320 (8)
-	struct Unknown IMG-Custom; // 0x328 (8)
-	struct Unknown IMG-Gear; // 0x330 (8)
-	struct Unknown IMG-Perk; // 0x338 (8)
-	struct Unknown IMG-Preset; // 0x340 (8)
-	struct Unknown IMG-TopBG; // 0x348 (8)
-	struct Unknown IMG-Vehicle; // 0x350 (8)
-	struct Unknown IMG-Weapon; // 0x358 (8)
-	struct Unknown IMG-Wearable; // 0x360 (8)
-	struct Unknown Text_culture; // 0x368 (8)
-	struct Unknown UW-BlackMarket_Character; // 0x370 (8)
-	struct Unknown UW-BlackMarket_SubTab; // 0x378 (8)
-	struct Unknown WB-ItemList; // 0x380 (8)
-	struct Unknown WrapBox_6; // 0x388 (8)
-	enum class Unknow CurrentTab; // 0x390 (1)
-	struct Unknown SelectTabColor; // 0x394 (16)
-	struct Unknown UnSelectTabColor; // 0x3A4 (16)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x2E8 (8)
+	struct UButton AllItem; // 0x2F0 (8)
+	struct UButton Button_1004; // 0x2F8 (8)
+	struct UCheckBox CheckBox_1; // 0x300 (8)
+	struct UCanvasPanel CP-Column; // 0x308 (8)
+	struct UImage IMG-Ammo; // 0x310 (8)
+	struct UImage IMG-Attachment; // 0x318 (8)
+	struct UImage IMG-Consumable; // 0x320 (8)
+	struct UImage IMG-Custom; // 0x328 (8)
+	struct UImage IMG-Gear; // 0x330 (8)
+	struct UImage IMG-Perk; // 0x338 (8)
+	struct UImage IMG-Preset; // 0x340 (8)
+	struct UImage IMG-TopBG; // 0x348 (8)
+	struct UImage IMG-Vehicle; // 0x350 (8)
+	struct UImage IMG-Weapon; // 0x358 (8)
+	struct UImage IMG-Wearable; // 0x360 (8)
+	struct UTextBlock Text_culture; // 0x368 (8)
+	struct UUW-BlackMarket_Character_C UW-BlackMarket_Character; // 0x370 (8)
+	struct UUW-BlackMarket_SubTab_C UW-BlackMarket_SubTab; // 0x378 (8)
+	struct UWrapBox WB-ItemList; // 0x380 (8)
+	struct UWrapBox WrapBox_6; // 0x388 (8)
+	enum class EBlackmarketTabType CurrentTab; // 0x390 (1)
+	struct FLinearColor SelectTabColor; // 0x394 (16)
+	struct FLinearColor UnSelectTabColor; // 0x3A4 (16)
 	char ShowWorkInProcess : 0; // 0x3B4 (1)
-	struct TArray<Unknown> ItemList; // 0x3B8 (16)
-	enum class Unknow SelectedWeaponSubTab; // 0x3C8 (1)
-	enum class Unknow SelectedAttachmentSubTab; // 0x3C9 (1)
-	enum class Unknow SelectedWearableSubTab; // 0x3CA (1)
-	enum class Unknow SelectedGearSubTab; // 0x3CB (1)
-	enum class Unknow SelectedCustomSubTab; // 0x3CC (1)
-	struct TArray<Unknown> SortTypeList; // 0x3D0 (16)
-	struct TArray<Unknown> WeaponAscendList; // 0x3E0 (16)
+	struct TArray<struct FInventoryItemDetailInfo> ItemList; // 0x3B8 (16)
+	enum class EWeaponType SelectedWeaponSubTab; // 0x3C8 (1)
+	enum class EWeaponAttachmentType SelectedAttachmentSubTab; // 0x3C9 (1)
+	enum class EWearableItemType SelectedWearableSubTab; // 0x3CA (1)
+	enum class EWearableItemType SelectedGearSubTab; // 0x3CB (1)
+	enum class EWearableItemType SelectedCustomSubTab; // 0x3CC (1)
+	struct TArray<int32_t> SortTypeList; // 0x3D0 (16)
+	struct TArray<char> WeaponAscendList; // 0x3E0 (16)
 	int32_t CurrentWeaponSortType; // 0x3F0 (4)
-	struct TArray<Unknown> AmmoAscendList; // 0x3F8 (16)
+	struct TArray<char> AmmoAscendList; // 0x3F8 (16)
 	int32_t CurrentAmmoSortType; // 0x408 (4)
-	struct TArray<Unknown> AttachmentAscendList; // 0x410 (16)
+	struct TArray<char> AttachmentAscendList; // 0x410 (16)
 	int32_t CurrentAttachmentSortType; // 0x420 (4)
 	int32_t CurrentWearableSortType; // 0x424 (4)
 	int32_t CurrentConsumableSortType; // 0x428 (4)
 	int32_t CurrentCustomSortType; // 0x42C (4)
 	int32_t CurrentVehicleSortType; // 0x430 (4)
-	struct TArray<Unknown> WearableAscendList; // 0x438 (16)
-	struct TArray<Unknown> ConsumableAscendList; // 0x448 (16)
-	struct TArray<Unknown> CustomAscendList; // 0x458 (16)
-	struct TArray<Unknown> VehicleAscendList; // 0x468 (16)
-	struct Unknown SaveData; // 0x478 (8)
-	struct TArray<Unknown> GearAscendList; // 0x480 (16)
+	struct TArray<char> WearableAscendList; // 0x438 (16)
+	struct TArray<char> ConsumableAscendList; // 0x448 (16)
+	struct TArray<char> CustomAscendList; // 0x458 (16)
+	struct TArray<char> VehicleAscendList; // 0x468 (16)
+	struct UBP-BlackmarketSaveGame_C SaveData; // 0x478 (8)
+	struct TArray<char> GearAscendList; // 0x480 (16)
 	int32_t CurrentGearSortType; // 0x490 (4)
 	struct FString BlackmarketSaveSlotName; // 0x498 (16)
 	int32_t TestIndex; // 0x4A8 (4)
-	struct TArray<Unknown> PerkAscendList; // 0x4B0 (16)
+	struct TArray<char> PerkAscendList; // 0x4B0 (16)
 	int32_t CurrentPerkSortType; // 0x4C0 (4)
-	enum class Unknow SelectedPerkSubTab; // 0x4C4 (1)
+	enum class EPerkSlotFlag SelectedPerkSubTab; // 0x4C4 (1)
 	int32_t CurrentPresetSortType; // 0x4C8 (4)
-	struct TArray<Unknown> PresetAscendList; // 0x4D0 (16)
+	struct TArray<char> PresetAscendList; // 0x4D0 (16)
 	struct FName SelectedPerkClass; // 0x4E0 (8)
-	enum class Unknow SelectedConsumableSubTab; // 0x4E8 (1)
+	enum class EItemType SelectedConsumableSubTab; // 0x4E8 (1)
 
-	void IsCorrectPresetSlot(enum class Unknow status, char& bResult); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.IsCorrectPresetSlot(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void IsCorrectPresetSlot(enum class EDevelopmentStatus status, char& bResult); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.IsCorrectPresetSlot(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void InitPresetList(); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.InitPresetList(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetPresetSlot_Impl(int32_t SortType, char bHideOption); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.SetPresetSlot_Impl(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown On_IMG-Preset_MouseButtonDown_1(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.On_IMG-Preset_MouseButtonDown_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void IsCorrectPerk(enum class Unknow Type, struct TArray<Unknown>& Index, enum class Unknow status, char& bResult); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.IsCorrectPerk(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply On_IMG-Preset_MouseButtonDown_1(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.On_IMG-Preset_MouseButtonDown_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void IsCorrectPerk(enum class EPerkSlotFlag Type, struct TArray<struct FName>& Index, enum class EDevelopmentStatus status, char& bResult); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.IsCorrectPerk(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetPerkSlot_Impl(int32_t SortType, char bHideOption); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.SetPerkSlot_Impl(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void InitPerkList(); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.InitPerkList(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown On_IMG-Perk_MouseButtonDown_1(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.On_IMG-Perk_MouseButtonDown_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown On_IMG-Gear_MouseButtonDown_1(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.On_IMG-Gear_MouseButtonDown_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply On_IMG-Perk_MouseButtonDown_1(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.On_IMG-Perk_MouseButtonDown_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply On_IMG-Gear_MouseButtonDown_1(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.On_IMG-Gear_MouseButtonDown_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetGearSlot_Impl(int32_t SortType, char bHideOption); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.SetGearSlot_Impl(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void IsCorrectGear(enum class Unknow Type, enum class Unknow status, char& bResult); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.IsCorrectGear(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void IsCorrectGear(enum class EWearableItemType Type, enum class EDevelopmentStatus status, char& bResult); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.IsCorrectGear(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void InitGearList(); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.InitGearList(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void IsCorrectVehicleSlot(enum class Unknow status, char& bResult); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.IsCorrectVehicleSlot(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown On_IMG-Vehicle_MouseButtonDown_1(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.On_IMG-Vehicle_MouseButtonDown_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void IsCorrectVehicleSlot(enum class EDevelopmentStatus status, char& bResult); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.IsCorrectVehicleSlot(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply On_IMG-Vehicle_MouseButtonDown_1(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.On_IMG-Vehicle_MouseButtonDown_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void InitVehicleList(); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.InitVehicleList(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetCustomizeSlot_Impl(int32_t SortType, char bHideOption); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.SetCustomizeSlot_Impl(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void InitCustomizeData(); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.InitCustomizeData(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetConsumableSlot_Impl(int32_t SortType, char bHideOption); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.SetConsumableSlot_Impl(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void InitConsumableList(); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.InitConsumableList(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void IsCorrectConsumableSlot(enum class Unknow Type, enum class Unknow status, char& bResult); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.IsCorrectConsumableSlot(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void IsCorrectConsumableSlot(enum class EItemType Type, enum class EDevelopmentStatus status, char& bResult); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.IsCorrectConsumableSlot(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetWearableSlot_Impl(int32_t SortType, char bHideOption); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.SetWearableSlot_Impl(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void InitWearableList(); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.InitWearableList(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void InitAttachmentList(); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.InitAttachmentList(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetAttachmentSlot_Impl(int32_t SortType, char bHideOption); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.SetAttachmentSlot_Impl(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void IsCorrectAmmo(enum class Unknow TabType, enum class Unknow status, char& bResult); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.IsCorrectAmmo(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void IsCorrectAmmo(enum class EBlackmarketTabType TabType, enum class EDevelopmentStatus status, char& bResult); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.IsCorrectAmmo(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetAmmoSlot_Impl(int32_t SortType, char bHideOption); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.SetAmmoSlot_Impl(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void InitAmmoList(); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.InitAmmoList(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetWeaponSlot_Impl(int32_t SortType, char bHideOption); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.SetWeaponSlot_Impl(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void InitWeaponList(); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.InitWeaponList(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void IsCorrectCustomize(enum class Unknow Type, enum class Unknow status, char& bResult); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.IsCorrectCustomize(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown On_IMG-Custom_MouseButtonDown_1(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.On_IMG-Custom_MouseButtonDown_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void IsCorrectWearable(enum class Unknow Type, enum class Unknow status, char& bResult); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.IsCorrectWearable(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void IsCorrectAttachment(enum class Unknow Type, enum class Unknow status, char& bResult); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.IsCorrectAttachment(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void IsCorrectCustomize(enum class EWearableItemType Type, enum class EDevelopmentStatus status, char& bResult); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.IsCorrectCustomize(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply On_IMG-Custom_MouseButtonDown_1(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.On_IMG-Custom_MouseButtonDown_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void IsCorrectWearable(enum class EWearableItemType Type, enum class EDevelopmentStatus status, char& bResult); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.IsCorrectWearable(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void IsCorrectAttachment(enum class EWeaponAttachmentType Type, enum class EDevelopmentStatus status, char& bResult); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.IsCorrectAttachment(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetVehicleSlot_Impl(int32_t SortType, char bHideOption); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.SetVehicleSlot_Impl(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetCustomizeSlot2(struct FName ItemRowName, struct Unknown InventoryItemDetailInfo); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.SetCustomizeSlot2(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void IsCorrectWeapon(enum class Unknow WeaponType, enum class Unknow status, char& bResult); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.IsCorrectWeapon(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown On_IMG-Medical_MouseButtonDown_1(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.On_IMG-Medical_MouseButtonDown_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown On_IMG-Wearable_MouseButtonDown_1(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.On_IMG-Wearable_MouseButtonDown_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown On_IMG-Attachment_MouseButtonDown_1(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.On_IMG-Attachment_MouseButtonDown_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown On_IMG-Ammo_MouseButtonDown_1(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.On_IMG-Ammo_MouseButtonDown_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown On_IMG-Weapon_MouseButtonDown_1(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.On_IMG-Weapon_MouseButtonDown_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetTab(enum class Unknow TabType); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.SetTab(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetCustomizeSlot2(struct FName ItemRowName, struct FInventoryItemDetailInfo InventoryItemDetailInfo); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.SetCustomizeSlot2(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void IsCorrectWeapon(enum class EWeaponType WeaponType, enum class EDevelopmentStatus status, char& bResult); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.IsCorrectWeapon(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply On_IMG-Medical_MouseButtonDown_1(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.On_IMG-Medical_MouseButtonDown_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply On_IMG-Wearable_MouseButtonDown_1(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.On_IMG-Wearable_MouseButtonDown_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply On_IMG-Attachment_MouseButtonDown_1(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.On_IMG-Attachment_MouseButtonDown_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply On_IMG-Ammo_MouseButtonDown_1(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.On_IMG-Ammo_MouseButtonDown_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply On_IMG-Weapon_MouseButtonDown_1(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.On_IMG-Weapon_MouseButtonDown_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetTab(enum class EBlackmarketTabType TabType); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.SetTab(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetData(); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.SetData(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void InitData(); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.InitData(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -112,8 +112,8 @@ public:
 	void BndEvt__Button_1003_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.BndEvt__Button_1003_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetText_culture(); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.SetText_culture(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__AllItem_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.BndEvt__AllItem_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BlackMarketItemExecute(struct Unknown ItemData); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.BlackMarketItemExecute(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BlackMarketCustomItemExecute(struct Unknown ItemData); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.BlackMarketCustomItemExecute(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BlackMarketItemExecute(struct FBravoHotelBlackMarketDataType ItemData); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.BlackMarketItemExecute(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BlackMarketCustomItemExecute(struct FBravoHotelBlackMarketDataType ItemData); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.BlackMarketCustomItemExecute(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetAmmoSlot(int32_t SlotType, char bHideOption); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.SetAmmoSlot(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetConsumableSlot(int32_t SlotType, char bHideOption); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.SetConsumableSlot(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetAttachmentSlot(int32_t SlotType, char bHideOption); // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.SetAttachmentSlot(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -128,11 +128,11 @@ public:
 };
 
 // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.IsCorrectPresetSlot
-inline void UUW-BlackMarket_Main_C::IsCorrectPresetSlot(enum class Unknow status, char& bResult) {
+inline void UUW-BlackMarket_Main_C::IsCorrectPresetSlot(enum class EDevelopmentStatus status, char& bResult) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.IsCorrectPresetSlot");
 
 	struct IsCorrectPresetSlot_Params {
-		enum class Unknow status;
+		enum class EDevelopmentStatus status;
 		char& bResult;
 	}; IsCorrectPresetSlot_Params Params;
 
@@ -178,13 +178,13 @@ inline void UUW-BlackMarket_Main_C::SetPresetSlot_Impl(int32_t SortType, char bH
 }
 
 // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.On_IMG-Preset_MouseButtonDown_1
-inline struct Unknown UUW-BlackMarket_Main_C::On_IMG-Preset_MouseButtonDown_1(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UUW-BlackMarket_Main_C::On_IMG-Preset_MouseButtonDown_1(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.On_IMG-Preset_MouseButtonDown_1");
 
 	struct On_IMG-Preset_MouseButtonDown_1_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; On_IMG-Preset_MouseButtonDown_1_Params Params;
 
@@ -201,13 +201,13 @@ inline struct Unknown UUW-BlackMarket_Main_C::On_IMG-Preset_MouseButtonDown_1(st
 }
 
 // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.IsCorrectPerk
-inline void UUW-BlackMarket_Main_C::IsCorrectPerk(enum class Unknow Type, struct TArray<Unknown>& Index, enum class Unknow status, char& bResult) {
+inline void UUW-BlackMarket_Main_C::IsCorrectPerk(enum class EPerkSlotFlag Type, struct TArray<struct FName>& Index, enum class EDevelopmentStatus status, char& bResult) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.IsCorrectPerk");
 
 	struct IsCorrectPerk_Params {
-		enum class Unknow Type;
-		struct TArray<Unknown>& Index;
-		enum class Unknow status;
+		enum class EPerkSlotFlag Type;
+		struct TArray<struct FName>& Index;
+		enum class EDevelopmentStatus status;
 		char& bResult;
 	}; IsCorrectPerk_Params Params;
 
@@ -255,13 +255,13 @@ inline void UUW-BlackMarket_Main_C::InitPerkList() {
 }
 
 // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.On_IMG-Perk_MouseButtonDown_1
-inline struct Unknown UUW-BlackMarket_Main_C::On_IMG-Perk_MouseButtonDown_1(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UUW-BlackMarket_Main_C::On_IMG-Perk_MouseButtonDown_1(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.On_IMG-Perk_MouseButtonDown_1");
 
 	struct On_IMG-Perk_MouseButtonDown_1_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; On_IMG-Perk_MouseButtonDown_1_Params Params;
 
@@ -278,13 +278,13 @@ inline struct Unknown UUW-BlackMarket_Main_C::On_IMG-Perk_MouseButtonDown_1(stru
 }
 
 // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.On_IMG-Gear_MouseButtonDown_1
-inline struct Unknown UUW-BlackMarket_Main_C::On_IMG-Gear_MouseButtonDown_1(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UUW-BlackMarket_Main_C::On_IMG-Gear_MouseButtonDown_1(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.On_IMG-Gear_MouseButtonDown_1");
 
 	struct On_IMG-Gear_MouseButtonDown_1_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; On_IMG-Gear_MouseButtonDown_1_Params Params;
 
@@ -318,12 +318,12 @@ inline void UUW-BlackMarket_Main_C::SetGearSlot_Impl(int32_t SortType, char bHid
 }
 
 // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.IsCorrectGear
-inline void UUW-BlackMarket_Main_C::IsCorrectGear(enum class Unknow Type, enum class Unknow status, char& bResult) {
+inline void UUW-BlackMarket_Main_C::IsCorrectGear(enum class EWearableItemType Type, enum class EDevelopmentStatus status, char& bResult) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.IsCorrectGear");
 
 	struct IsCorrectGear_Params {
-		enum class Unknow Type;
-		enum class Unknow status;
+		enum class EWearableItemType Type;
+		enum class EDevelopmentStatus status;
 		char& bResult;
 	}; IsCorrectGear_Params Params;
 
@@ -353,11 +353,11 @@ inline void UUW-BlackMarket_Main_C::InitGearList() {
 }
 
 // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.IsCorrectVehicleSlot
-inline void UUW-BlackMarket_Main_C::IsCorrectVehicleSlot(enum class Unknow status, char& bResult) {
+inline void UUW-BlackMarket_Main_C::IsCorrectVehicleSlot(enum class EDevelopmentStatus status, char& bResult) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.IsCorrectVehicleSlot");
 
 	struct IsCorrectVehicleSlot_Params {
-		enum class Unknow status;
+		enum class EDevelopmentStatus status;
 		char& bResult;
 	}; IsCorrectVehicleSlot_Params Params;
 
@@ -372,13 +372,13 @@ inline void UUW-BlackMarket_Main_C::IsCorrectVehicleSlot(enum class Unknow statu
 }
 
 // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.On_IMG-Vehicle_MouseButtonDown_1
-inline struct Unknown UUW-BlackMarket_Main_C::On_IMG-Vehicle_MouseButtonDown_1(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UUW-BlackMarket_Main_C::On_IMG-Vehicle_MouseButtonDown_1(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.On_IMG-Vehicle_MouseButtonDown_1");
 
 	struct On_IMG-Vehicle_MouseButtonDown_1_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; On_IMG-Vehicle_MouseButtonDown_1_Params Params;
 
@@ -471,12 +471,12 @@ inline void UUW-BlackMarket_Main_C::InitConsumableList() {
 }
 
 // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.IsCorrectConsumableSlot
-inline void UUW-BlackMarket_Main_C::IsCorrectConsumableSlot(enum class Unknow Type, enum class Unknow status, char& bResult) {
+inline void UUW-BlackMarket_Main_C::IsCorrectConsumableSlot(enum class EItemType Type, enum class EDevelopmentStatus status, char& bResult) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.IsCorrectConsumableSlot");
 
 	struct IsCorrectConsumableSlot_Params {
-		enum class Unknow Type;
-		enum class Unknow status;
+		enum class EItemType Type;
+		enum class EDevelopmentStatus status;
 		char& bResult;
 	}; IsCorrectConsumableSlot_Params Params;
 
@@ -554,12 +554,12 @@ inline void UUW-BlackMarket_Main_C::SetAttachmentSlot_Impl(int32_t SortType, cha
 }
 
 // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.IsCorrectAmmo
-inline void UUW-BlackMarket_Main_C::IsCorrectAmmo(enum class Unknow TabType, enum class Unknow status, char& bResult) {
+inline void UUW-BlackMarket_Main_C::IsCorrectAmmo(enum class EBlackmarketTabType TabType, enum class EDevelopmentStatus status, char& bResult) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.IsCorrectAmmo");
 
 	struct IsCorrectAmmo_Params {
-		enum class Unknow TabType;
-		enum class Unknow status;
+		enum class EBlackmarketTabType TabType;
+		enum class EDevelopmentStatus status;
 		char& bResult;
 	}; IsCorrectAmmo_Params Params;
 
@@ -637,12 +637,12 @@ inline void UUW-BlackMarket_Main_C::InitWeaponList() {
 }
 
 // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.IsCorrectCustomize
-inline void UUW-BlackMarket_Main_C::IsCorrectCustomize(enum class Unknow Type, enum class Unknow status, char& bResult) {
+inline void UUW-BlackMarket_Main_C::IsCorrectCustomize(enum class EWearableItemType Type, enum class EDevelopmentStatus status, char& bResult) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.IsCorrectCustomize");
 
 	struct IsCorrectCustomize_Params {
-		enum class Unknow Type;
-		enum class Unknow status;
+		enum class EWearableItemType Type;
+		enum class EDevelopmentStatus status;
 		char& bResult;
 	}; IsCorrectCustomize_Params Params;
 
@@ -658,13 +658,13 @@ inline void UUW-BlackMarket_Main_C::IsCorrectCustomize(enum class Unknow Type, e
 }
 
 // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.On_IMG-Custom_MouseButtonDown_1
-inline struct Unknown UUW-BlackMarket_Main_C::On_IMG-Custom_MouseButtonDown_1(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UUW-BlackMarket_Main_C::On_IMG-Custom_MouseButtonDown_1(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.On_IMG-Custom_MouseButtonDown_1");
 
 	struct On_IMG-Custom_MouseButtonDown_1_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; On_IMG-Custom_MouseButtonDown_1_Params Params;
 
@@ -681,12 +681,12 @@ inline struct Unknown UUW-BlackMarket_Main_C::On_IMG-Custom_MouseButtonDown_1(st
 }
 
 // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.IsCorrectWearable
-inline void UUW-BlackMarket_Main_C::IsCorrectWearable(enum class Unknow Type, enum class Unknow status, char& bResult) {
+inline void UUW-BlackMarket_Main_C::IsCorrectWearable(enum class EWearableItemType Type, enum class EDevelopmentStatus status, char& bResult) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.IsCorrectWearable");
 
 	struct IsCorrectWearable_Params {
-		enum class Unknow Type;
-		enum class Unknow status;
+		enum class EWearableItemType Type;
+		enum class EDevelopmentStatus status;
 		char& bResult;
 	}; IsCorrectWearable_Params Params;
 
@@ -702,12 +702,12 @@ inline void UUW-BlackMarket_Main_C::IsCorrectWearable(enum class Unknow Type, en
 }
 
 // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.IsCorrectAttachment
-inline void UUW-BlackMarket_Main_C::IsCorrectAttachment(enum class Unknow Type, enum class Unknow status, char& bResult) {
+inline void UUW-BlackMarket_Main_C::IsCorrectAttachment(enum class EWeaponAttachmentType Type, enum class EDevelopmentStatus status, char& bResult) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.IsCorrectAttachment");
 
 	struct IsCorrectAttachment_Params {
-		enum class Unknow Type;
-		enum class Unknow status;
+		enum class EWeaponAttachmentType Type;
+		enum class EDevelopmentStatus status;
 		char& bResult;
 	}; IsCorrectAttachment_Params Params;
 
@@ -740,12 +740,12 @@ inline void UUW-BlackMarket_Main_C::SetVehicleSlot_Impl(int32_t SortType, char b
 }
 
 // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.SetCustomizeSlot2
-inline void UUW-BlackMarket_Main_C::SetCustomizeSlot2(struct FName ItemRowName, struct Unknown InventoryItemDetailInfo) {
+inline void UUW-BlackMarket_Main_C::SetCustomizeSlot2(struct FName ItemRowName, struct FInventoryItemDetailInfo InventoryItemDetailInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.SetCustomizeSlot2");
 
 	struct SetCustomizeSlot2_Params {
 		struct FName ItemRowName;
-		struct Unknown InventoryItemDetailInfo;
+		struct FInventoryItemDetailInfo InventoryItemDetailInfo;
 	}; SetCustomizeSlot2_Params Params;
 
 	Params.ItemRowName = ItemRowName;
@@ -757,12 +757,12 @@ inline void UUW-BlackMarket_Main_C::SetCustomizeSlot2(struct FName ItemRowName, 
 }
 
 // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.IsCorrectWeapon
-inline void UUW-BlackMarket_Main_C::IsCorrectWeapon(enum class Unknow WeaponType, enum class Unknow status, char& bResult) {
+inline void UUW-BlackMarket_Main_C::IsCorrectWeapon(enum class EWeaponType WeaponType, enum class EDevelopmentStatus status, char& bResult) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.IsCorrectWeapon");
 
 	struct IsCorrectWeapon_Params {
-		enum class Unknow WeaponType;
-		enum class Unknow status;
+		enum class EWeaponType WeaponType;
+		enum class EDevelopmentStatus status;
 		char& bResult;
 	}; IsCorrectWeapon_Params Params;
 
@@ -778,13 +778,13 @@ inline void UUW-BlackMarket_Main_C::IsCorrectWeapon(enum class Unknow WeaponType
 }
 
 // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.On_IMG-Medical_MouseButtonDown_1
-inline struct Unknown UUW-BlackMarket_Main_C::On_IMG-Medical_MouseButtonDown_1(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UUW-BlackMarket_Main_C::On_IMG-Medical_MouseButtonDown_1(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.On_IMG-Medical_MouseButtonDown_1");
 
 	struct On_IMG-Medical_MouseButtonDown_1_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; On_IMG-Medical_MouseButtonDown_1_Params Params;
 
@@ -801,13 +801,13 @@ inline struct Unknown UUW-BlackMarket_Main_C::On_IMG-Medical_MouseButtonDown_1(s
 }
 
 // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.On_IMG-Wearable_MouseButtonDown_1
-inline struct Unknown UUW-BlackMarket_Main_C::On_IMG-Wearable_MouseButtonDown_1(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UUW-BlackMarket_Main_C::On_IMG-Wearable_MouseButtonDown_1(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.On_IMG-Wearable_MouseButtonDown_1");
 
 	struct On_IMG-Wearable_MouseButtonDown_1_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; On_IMG-Wearable_MouseButtonDown_1_Params Params;
 
@@ -824,13 +824,13 @@ inline struct Unknown UUW-BlackMarket_Main_C::On_IMG-Wearable_MouseButtonDown_1(
 }
 
 // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.On_IMG-Attachment_MouseButtonDown_1
-inline struct Unknown UUW-BlackMarket_Main_C::On_IMG-Attachment_MouseButtonDown_1(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UUW-BlackMarket_Main_C::On_IMG-Attachment_MouseButtonDown_1(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.On_IMG-Attachment_MouseButtonDown_1");
 
 	struct On_IMG-Attachment_MouseButtonDown_1_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; On_IMG-Attachment_MouseButtonDown_1_Params Params;
 
@@ -847,13 +847,13 @@ inline struct Unknown UUW-BlackMarket_Main_C::On_IMG-Attachment_MouseButtonDown_
 }
 
 // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.On_IMG-Ammo_MouseButtonDown_1
-inline struct Unknown UUW-BlackMarket_Main_C::On_IMG-Ammo_MouseButtonDown_1(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UUW-BlackMarket_Main_C::On_IMG-Ammo_MouseButtonDown_1(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.On_IMG-Ammo_MouseButtonDown_1");
 
 	struct On_IMG-Ammo_MouseButtonDown_1_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; On_IMG-Ammo_MouseButtonDown_1_Params Params;
 
@@ -870,13 +870,13 @@ inline struct Unknown UUW-BlackMarket_Main_C::On_IMG-Ammo_MouseButtonDown_1(stru
 }
 
 // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.On_IMG-Weapon_MouseButtonDown_1
-inline struct Unknown UUW-BlackMarket_Main_C::On_IMG-Weapon_MouseButtonDown_1(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UUW-BlackMarket_Main_C::On_IMG-Weapon_MouseButtonDown_1(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.On_IMG-Weapon_MouseButtonDown_1");
 
 	struct On_IMG-Weapon_MouseButtonDown_1_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; On_IMG-Weapon_MouseButtonDown_1_Params Params;
 
@@ -893,11 +893,11 @@ inline struct Unknown UUW-BlackMarket_Main_C::On_IMG-Weapon_MouseButtonDown_1(st
 }
 
 // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.SetTab
-inline void UUW-BlackMarket_Main_C::SetTab(enum class Unknow TabType) {
+inline void UUW-BlackMarket_Main_C::SetTab(enum class EBlackmarketTabType TabType) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.SetTab");
 
 	struct SetTab_Params {
-		enum class Unknow TabType;
+		enum class EBlackmarketTabType TabType;
 	}; SetTab_Params Params;
 
 	Params.TabType = TabType;
@@ -1021,11 +1021,11 @@ inline void UUW-BlackMarket_Main_C::BndEvt__AllItem_K2Node_ComponentBoundEvent_1
 }
 
 // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.BlackMarketItemExecute
-inline void UUW-BlackMarket_Main_C::BlackMarketItemExecute(struct Unknown ItemData) {
+inline void UUW-BlackMarket_Main_C::BlackMarketItemExecute(struct FBravoHotelBlackMarketDataType ItemData) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.BlackMarketItemExecute");
 
 	struct BlackMarketItemExecute_Params {
-		struct Unknown ItemData;
+		struct FBravoHotelBlackMarketDataType ItemData;
 	}; BlackMarketItemExecute_Params Params;
 
 	Params.ItemData = ItemData;
@@ -1036,11 +1036,11 @@ inline void UUW-BlackMarket_Main_C::BlackMarketItemExecute(struct Unknown ItemDa
 }
 
 // Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.BlackMarketCustomItemExecute
-inline void UUW-BlackMarket_Main_C::BlackMarketCustomItemExecute(struct Unknown ItemData) {
+inline void UUW-BlackMarket_Main_C::BlackMarketCustomItemExecute(struct FBravoHotelBlackMarketDataType ItemData) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-BlackMarket_Main.UW-BlackMarket_Main_C.BlackMarketCustomItemExecute");
 
 	struct BlackMarketCustomItemExecute_Params {
-		struct Unknown ItemData;
+		struct FBravoHotelBlackMarketDataType ItemData;
 	}; BlackMarketCustomItemExecute_Params Params;
 
 	Params.ItemData = ItemData;

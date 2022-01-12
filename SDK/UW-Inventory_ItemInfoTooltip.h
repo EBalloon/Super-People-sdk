@@ -3,28 +3,28 @@ class UUW-Inventory_ItemInfoTooltip_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Image_94; // 0x250 (8)
-	struct Unknown Image_224; // 0x258 (8)
-	struct Unknown RichTextBlock_321; // 0x260 (8)
-	struct Unknown InventoryRef; // 0x268 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UImage Image_94; // 0x250 (8)
+	struct UImage Image_224; // 0x258 (8)
+	struct URichTextBlock RichTextBlock_321; // 0x260 (8)
+	struct UUW-InventoryWidget_C InventoryRef; // 0x268 (8)
 
-	struct Unknown OnMouseButtonDown_1(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-Inventory_ItemInfoTooltip.UW-Inventory_ItemInfoTooltip_C.OnMouseButtonDown_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply OnMouseButtonDown_1(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-Inventory_ItemInfoTooltip.UW-Inventory_ItemInfoTooltip_C.OnMouseButtonDown_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void HideInfo(); // Function UW-Inventory_ItemInfoTooltip.UW-Inventory_ItemInfoTooltip_C.HideInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowInfo(struct Unknown InvenRef); // Function UW-Inventory_ItemInfoTooltip.UW-Inventory_ItemInfoTooltip_C.ShowInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnMouseLeave(struct Unknown& MouseEvent); // Function UW-Inventory_ItemInfoTooltip.UW-Inventory_ItemInfoTooltip_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowInfo(struct UUW-InventoryWidget_C InvenRef); // Function UW-Inventory_ItemInfoTooltip.UW-Inventory_ItemInfoTooltip_C.ShowInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnMouseLeave(struct FPointerEvent& MouseEvent); // Function UW-Inventory_ItemInfoTooltip.UW-Inventory_ItemInfoTooltip_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ForceCloseInfo(); // Function UW-Inventory_ItemInfoTooltip.UW-Inventory_ItemInfoTooltip_C.ForceCloseInfo(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-Inventory_ItemInfoTooltip(int32_t EntryPoint); // Function UW-Inventory_ItemInfoTooltip.UW-Inventory_ItemInfoTooltip_C.ExecuteUbergraph_UW-Inventory_ItemInfoTooltip(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-Inventory_ItemInfoTooltip.UW-Inventory_ItemInfoTooltip_C.OnMouseButtonDown_1
-inline struct Unknown UUW-Inventory_ItemInfoTooltip_C::OnMouseButtonDown_1(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UUW-Inventory_ItemInfoTooltip_C::OnMouseButtonDown_1(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemInfoTooltip.UW-Inventory_ItemInfoTooltip_C.OnMouseButtonDown_1");
 
 	struct OnMouseButtonDown_1_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnMouseButtonDown_1_Params Params;
 
@@ -55,11 +55,11 @@ inline void UUW-Inventory_ItemInfoTooltip_C::HideInfo() {
 }
 
 // Function UW-Inventory_ItemInfoTooltip.UW-Inventory_ItemInfoTooltip_C.ShowInfo
-inline void UUW-Inventory_ItemInfoTooltip_C::ShowInfo(struct Unknown InvenRef) {
+inline void UUW-Inventory_ItemInfoTooltip_C::ShowInfo(struct UUW-InventoryWidget_C InvenRef) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemInfoTooltip.UW-Inventory_ItemInfoTooltip_C.ShowInfo");
 
 	struct ShowInfo_Params {
-		struct Unknown InvenRef;
+		struct UUW-InventoryWidget_C InvenRef;
 	}; ShowInfo_Params Params;
 
 	Params.InvenRef = InvenRef;
@@ -70,11 +70,11 @@ inline void UUW-Inventory_ItemInfoTooltip_C::ShowInfo(struct Unknown InvenRef) {
 }
 
 // Function UW-Inventory_ItemInfoTooltip.UW-Inventory_ItemInfoTooltip_C.OnMouseLeave
-inline void UUW-Inventory_ItemInfoTooltip_C::OnMouseLeave(struct Unknown& MouseEvent) {
+inline void UUW-Inventory_ItemInfoTooltip_C::OnMouseLeave(struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemInfoTooltip.UW-Inventory_ItemInfoTooltip_C.OnMouseLeave");
 
 	struct OnMouseLeave_Params {
-		struct Unknown& MouseEvent;
+		struct FPointerEvent& MouseEvent;
 	}; OnMouseLeave_Params Params;
 
 

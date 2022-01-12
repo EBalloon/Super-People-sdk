@@ -3,48 +3,48 @@ class UUW-Lobby_CharacterInfo_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Button_306; // 0x250 (8)
-	struct Unknown CanvasPanel_Line; // 0x258 (8)
-	struct Unknown CanvasPanel_Position; // 0x260 (8)
-	struct Unknown Image_Leader; // 0x268 (8)
-	struct Unknown Image_Rank; // 0x270 (8)
-	struct Unknown Img_Cut; // 0x278 (8)
-	struct Unknown Img_MS; // 0x280 (8)
-	struct Unknown Img_MS_2; // 0x288 (8)
-	struct Unknown Img_MS_3; // 0x290 (8)
-	struct Unknown Img_PlayerLine; // 0x298 (8)
-	struct Unknown Img_PlayerPoint; // 0x2A0 (8)
-	struct Unknown Img_Voice; // 0x2A8 (8)
-	struct Unknown Img_VoiceElimination; // 0x2B0 (8)
-	struct Unknown Overlay_OnReady; // 0x2B8 (8)
-	struct Unknown Overlay_Position; // 0x2C0 (8)
-	struct Unknown Overlay_TeamOnReady; // 0x2C8 (8)
-	struct Unknown T_PlayerName; // 0x2D0 (8)
-	struct Unknown T_PlayerName_2; // 0x2D8 (8)
-	struct Unknown WidgetSwitcher_3; // 0x2E0 (8)
-	struct Unknown WidgetSwitcher_IsTeam; // 0x2E8 (8)
-	struct Unknown WidgetSwitcher_State; // 0x2F0 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UButton Button_306; // 0x250 (8)
+	struct UCanvasPanel CanvasPanel_Line; // 0x258 (8)
+	struct UCanvasPanel CanvasPanel_Position; // 0x260 (8)
+	struct UImage Image_Leader; // 0x268 (8)
+	struct UImage Image_Rank; // 0x270 (8)
+	struct UImage Img_Cut; // 0x278 (8)
+	struct UImage Img_MS; // 0x280 (8)
+	struct UImage Img_MS_2; // 0x288 (8)
+	struct UImage Img_MS_3; // 0x290 (8)
+	struct UImage Img_PlayerLine; // 0x298 (8)
+	struct UImage Img_PlayerPoint; // 0x2A0 (8)
+	struct UImage Img_Voice; // 0x2A8 (8)
+	struct UImage Img_VoiceElimination; // 0x2B0 (8)
+	struct UOverlay Overlay_OnReady; // 0x2B8 (8)
+	struct UOverlay Overlay_Position; // 0x2C0 (8)
+	struct UOverlay Overlay_TeamOnReady; // 0x2C8 (8)
+	struct UTextBlock T_PlayerName; // 0x2D0 (8)
+	struct UTextBlock T_PlayerName_2; // 0x2D8 (8)
+	struct UWidgetSwitcher WidgetSwitcher_3; // 0x2E0 (8)
+	struct UWidgetSwitcher WidgetSwitcher_IsTeam; // 0x2E8 (8)
+	struct UWidgetSwitcher WidgetSwitcher_State; // 0x2F0 (8)
 	int32_t LastSeaponTierId; // 0x2F8 (4)
 	float WidgetHalfSizeX; // 0x2FC (4)
 
-	void Set Position(char IsLeft, char IsSoloMode, struct Unknown CharacterRef, struct Unknown MemberInfo); // Function UW-Lobby_CharacterInfo.UW-Lobby_CharacterInfo_C.Set Position(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Init(struct Unknown PartyInfo, char bIsSoloMode); // Function UW-Lobby_CharacterInfo.UW-Lobby_CharacterInfo_C.Init(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnLoaded_53B5B77C4172B8F96BC2979B2702DE82(struct Unknown Loaded); // Function UW-Lobby_CharacterInfo.UW-Lobby_CharacterInfo_C.OnLoaded_53B5B77C4172B8F96BC2979B2702DE82(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Set Position(char IsLeft, char IsSoloMode, struct ABravoHotelCharacter CharacterRef, struct FBravoHotelPartyMemberInfo MemberInfo); // Function UW-Lobby_CharacterInfo.UW-Lobby_CharacterInfo_C.Set Position(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Init(struct FBravoHotelPartyMemberInfo PartyInfo, char bIsSoloMode); // Function UW-Lobby_CharacterInfo.UW-Lobby_CharacterInfo_C.Init(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_53B5B77C4172B8F96BC2979B2702DE82(struct Object Loaded); // Function UW-Lobby_CharacterInfo.UW-Lobby_CharacterInfo_C.OnLoaded_53B5B77C4172B8F96BC2979B2702DE82(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-Lobby_CharacterInfo.UW-Lobby_CharacterInfo_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AsyncIcon(struct Unknown Asset); // Function UW-Lobby_CharacterInfo.UW-Lobby_CharacterInfo_C.AsyncIcon(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AsyncIcon(struct TSoftObjectPtr<Object> Asset); // Function UW-Lobby_CharacterInfo.UW-Lobby_CharacterInfo_C.AsyncIcon(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-Lobby_CharacterInfo(int32_t EntryPoint); // Function UW-Lobby_CharacterInfo.UW-Lobby_CharacterInfo_C.ExecuteUbergraph_UW-Lobby_CharacterInfo(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-Lobby_CharacterInfo.UW-Lobby_CharacterInfo_C.Set Position
-inline void UUW-Lobby_CharacterInfo_C::Set Position(char IsLeft, char IsSoloMode, struct Unknown CharacterRef, struct Unknown MemberInfo) {
+inline void UUW-Lobby_CharacterInfo_C::Set Position(char IsLeft, char IsSoloMode, struct ABravoHotelCharacter CharacterRef, struct FBravoHotelPartyMemberInfo MemberInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Lobby_CharacterInfo.UW-Lobby_CharacterInfo_C.Set Position");
 
 	struct Set Position_Params {
 		char IsLeft;
 		char IsSoloMode;
-		struct Unknown CharacterRef;
-		struct Unknown MemberInfo;
+		struct ABravoHotelCharacter CharacterRef;
+		struct FBravoHotelPartyMemberInfo MemberInfo;
 	}; Set Position_Params Params;
 
 	Params.IsLeft = IsLeft;
@@ -58,11 +58,11 @@ inline void UUW-Lobby_CharacterInfo_C::Set Position(char IsLeft, char IsSoloMode
 }
 
 // Function UW-Lobby_CharacterInfo.UW-Lobby_CharacterInfo_C.Init
-inline void UUW-Lobby_CharacterInfo_C::Init(struct Unknown PartyInfo, char bIsSoloMode) {
+inline void UUW-Lobby_CharacterInfo_C::Init(struct FBravoHotelPartyMemberInfo PartyInfo, char bIsSoloMode) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Lobby_CharacterInfo.UW-Lobby_CharacterInfo_C.Init");
 
 	struct Init_Params {
-		struct Unknown PartyInfo;
+		struct FBravoHotelPartyMemberInfo PartyInfo;
 		char bIsSoloMode;
 	}; Init_Params Params;
 
@@ -75,11 +75,11 @@ inline void UUW-Lobby_CharacterInfo_C::Init(struct Unknown PartyInfo, char bIsSo
 }
 
 // Function UW-Lobby_CharacterInfo.UW-Lobby_CharacterInfo_C.OnLoaded_53B5B77C4172B8F96BC2979B2702DE82
-inline void UUW-Lobby_CharacterInfo_C::OnLoaded_53B5B77C4172B8F96BC2979B2702DE82(struct Unknown Loaded) {
+inline void UUW-Lobby_CharacterInfo_C::OnLoaded_53B5B77C4172B8F96BC2979B2702DE82(struct Object Loaded) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Lobby_CharacterInfo.UW-Lobby_CharacterInfo_C.OnLoaded_53B5B77C4172B8F96BC2979B2702DE82");
 
 	struct OnLoaded_53B5B77C4172B8F96BC2979B2702DE82_Params {
-		struct Unknown Loaded;
+		struct Object Loaded;
 	}; OnLoaded_53B5B77C4172B8F96BC2979B2702DE82_Params Params;
 
 	Params.Loaded = Loaded;
@@ -104,11 +104,11 @@ inline void UUW-Lobby_CharacterInfo_C::Construct() {
 }
 
 // Function UW-Lobby_CharacterInfo.UW-Lobby_CharacterInfo_C.AsyncIcon
-inline void UUW-Lobby_CharacterInfo_C::AsyncIcon(struct Unknown Asset) {
+inline void UUW-Lobby_CharacterInfo_C::AsyncIcon(struct TSoftObjectPtr<Object> Asset) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Lobby_CharacterInfo.UW-Lobby_CharacterInfo_C.AsyncIcon");
 
 	struct AsyncIcon_Params {
-		struct Unknown Asset;
+		struct TSoftObjectPtr<Object> Asset;
 	}; AsyncIcon_Params Params;
 
 	Params.Asset = Asset;

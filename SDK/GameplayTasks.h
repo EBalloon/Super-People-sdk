@@ -31,8 +31,8 @@ class UGameplayTask : public Object {
 public:
 
 	struct FName InstanceName; // 0x30 (8)
-	enum class Unknow ResourceOverlapPolicy; // 0x3A (1)
-	struct Unknown ChildTask; // 0x60 (8)
+	enum class ETaskResourceOverlapPolicy ResourceOverlapPolicy; // 0x3A (1)
+	struct UGameplayTask ChildTask; // 0x60 (8)
 
 	void ReadyForActivation(); // Function GameplayTasks.GameplayTask.ReadyForActivation(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x46877C0>
 	void GenericGameplayTaskDelegate__DelegateSignature(); // DelegateFunction GameplayTasks.GameplayTask.GenericGameplayTaskDelegate__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B80160>
@@ -46,11 +46,11 @@ public:
 
 	struct FMulticastInlineDelegate SUCCESS; // 0x68 (16)
 	struct FMulticastInlineDelegate DidNotSpawn; // 0x78 (16)
-	struct Unknown* ClassToSpawn; // 0xA0 (8)
+	struct UClass* ClassToSpawn; // 0xA0 (8)
 
-	struct Unknown SpawnActor(struct TScriptInterface<IUnknown> TaskOwner, struct Unknown SpawnLocation, struct Unknown SpawnRotation, struct Unknown* Class, char bSpawnOnlyOnAuthority); // Function GameplayTasks.GameplayTask_SpawnActor.SpawnActor(Final|Native|Static|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x46877E0>
-	void FinishSpawningActor(struct Unknown WorldContextObject, struct Unknown SpawnedActor); // Function GameplayTasks.GameplayTask_SpawnActor.FinishSpawningActor(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4687490>
-	char BeginSpawningActor(struct Unknown WorldContextObject, struct Unknown& SpawnedActor); // Function GameplayTasks.GameplayTask_SpawnActor.BeginSpawningActor(Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x46870A0>
+	struct UGameplayTask_SpawnActor SpawnActor(struct TScriptInterface<IGameplayTaskOwnerInterface> TaskOwner, struct FVector SpawnLocation, struct FRotator SpawnRotation, struct UClass* Class, char bSpawnOnlyOnAuthority); // Function GameplayTasks.GameplayTask_SpawnActor.SpawnActor(Final|Native|Static|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x46877E0>
+	void FinishSpawningActor(struct Object WorldContextObject, struct UActor SpawnedActor); // Function GameplayTasks.GameplayTask_SpawnActor.FinishSpawningActor(Native|Public|BlueprintCallable) // <Game_BE.exe+0x4687490>
+	char BeginSpawningActor(struct Object WorldContextObject, struct UActor& SpawnedActor); // Function GameplayTasks.GameplayTask_SpawnActor.BeginSpawningActor(Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x46870A0>
 };
 
 // Class GameplayTasks.GameplayTask_TimeLimitedExecution
@@ -69,7 +69,7 @@ public:
 
 	struct FMulticastInlineDelegate OnFinish; // 0x68 (16)
 
-	struct Unknown TaskWaitDelay(struct TScriptInterface<IUnknown> TaskOwner, float Time, char Priority); // Function GameplayTasks.GameplayTask_WaitDelay.TaskWaitDelay(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x4687990>
+	struct UGameplayTask_WaitDelay TaskWaitDelay(struct TScriptInterface<IGameplayTaskOwnerInterface> TaskOwner, float Time, char Priority); // Function GameplayTasks.GameplayTask_WaitDelay.TaskWaitDelay(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x4687990>
 	void TaskDelayDelegate__DelegateSignature(); // DelegateFunction GameplayTasks.GameplayTask_WaitDelay.TaskDelayDelegate__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B80160>
 };
 
@@ -89,14 +89,14 @@ class UGameplayTasksComponent : public UActorComponent {
 public:
 
 	char bIsNetDirty : 0; // 0xBC (1)
-	struct TArray<Unknown> SimulatedTasks; // 0xC0 (16)
-	struct TArray<Unknown> TaskPriorityQueue; // 0xD0 (16)
-	struct TArray<Unknown> TickingTasks; // 0xF0 (16)
-	struct TArray<Unknown> KnownTasks; // 0x100 (16)
+	struct TArray<struct UGameplayTask> SimulatedTasks; // 0xC0 (16)
+	struct TArray<struct UGameplayTask> TaskPriorityQueue; // 0xD0 (16)
+	struct TArray<struct UGameplayTask> TickingTasks; // 0xF0 (16)
+	struct TArray<struct UGameplayTask> KnownTasks; // 0x100 (16)
 	struct FMulticastInlineDelegate OnClaimedResourcesChange; // 0x110 (16)
 
 	void OnRep_SimulatedTasks(); // Function GameplayTasks.GameplayTasksComponent.OnRep_SimulatedTasks(Final|Native|Public) // <Game_BE.exe+0x46877A0>
-	enum class Unknow K2_RunGameplayTask(struct TScriptInterface<IUnknown> TaskOwner, struct Unknown Task, char Priority, struct TArray<Unknown> AdditionalRequiredResources, struct TArray<Unknown> AdditionalClaimedResources); // Function GameplayTasks.GameplayTasksComponent.K2_RunGameplayTask(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x4687560>
+	enum class EGameplayTaskRunResult K2_RunGameplayTask(struct TScriptInterface<IGameplayTaskOwnerInterface> TaskOwner, struct UGameplayTask Task, char Priority, struct TArray<struct UClass*> AdditionalRequiredResources, struct TArray<struct UClass*> AdditionalClaimedResources); // Function GameplayTasks.GameplayTasksComponent.K2_RunGameplayTask(Final|Native|Static|Public|BlueprintCallable) // <Game_BE.exe+0x4687560>
 };
 
 // Function GameplayTasks.GameplayTask.ReadyForActivation
@@ -142,16 +142,16 @@ inline void UGameplayTask::EndTask() {
 }
 
 // Function GameplayTasks.GameplayTask_SpawnActor.SpawnActor
-inline struct Unknown UGameplayTask_SpawnActor::SpawnActor(struct TScriptInterface<IUnknown> TaskOwner, struct Unknown SpawnLocation, struct Unknown SpawnRotation, struct Unknown* Class, char bSpawnOnlyOnAuthority) {
+inline struct UGameplayTask_SpawnActor UGameplayTask_SpawnActor::SpawnActor(struct TScriptInterface<IGameplayTaskOwnerInterface> TaskOwner, struct FVector SpawnLocation, struct FRotator SpawnRotation, struct UClass* Class, char bSpawnOnlyOnAuthority) {
 	static auto fn = UObject::FindObject<UFunction>("Function GameplayTasks.GameplayTask_SpawnActor.SpawnActor");
 
 	struct SpawnActor_Params {
-		struct TScriptInterface<IUnknown> TaskOwner;
-		struct Unknown SpawnLocation;
-		struct Unknown SpawnRotation;
-		struct Unknown* Class;
+		struct TScriptInterface<IGameplayTaskOwnerInterface> TaskOwner;
+		struct FVector SpawnLocation;
+		struct FRotator SpawnRotation;
+		struct UClass* Class;
 		char bSpawnOnlyOnAuthority;
-		struct Unknown ReturnValue;
+		struct UGameplayTask_SpawnActor ReturnValue;
 
 	}; SpawnActor_Params Params;
 
@@ -169,12 +169,12 @@ inline struct Unknown UGameplayTask_SpawnActor::SpawnActor(struct TScriptInterfa
 }
 
 // Function GameplayTasks.GameplayTask_SpawnActor.FinishSpawningActor
-inline void UGameplayTask_SpawnActor::FinishSpawningActor(struct Unknown WorldContextObject, struct Unknown SpawnedActor) {
+inline void UGameplayTask_SpawnActor::FinishSpawningActor(struct Object WorldContextObject, struct UActor SpawnedActor) {
 	static auto fn = UObject::FindObject<UFunction>("Function GameplayTasks.GameplayTask_SpawnActor.FinishSpawningActor");
 
 	struct FinishSpawningActor_Params {
-		struct Unknown WorldContextObject;
-		struct Unknown SpawnedActor;
+		struct Object WorldContextObject;
+		struct UActor SpawnedActor;
 	}; FinishSpawningActor_Params Params;
 
 	Params.WorldContextObject = WorldContextObject;
@@ -186,12 +186,12 @@ inline void UGameplayTask_SpawnActor::FinishSpawningActor(struct Unknown WorldCo
 }
 
 // Function GameplayTasks.GameplayTask_SpawnActor.BeginSpawningActor
-inline char UGameplayTask_SpawnActor::BeginSpawningActor(struct Unknown WorldContextObject, struct Unknown& SpawnedActor) {
+inline char UGameplayTask_SpawnActor::BeginSpawningActor(struct Object WorldContextObject, struct UActor& SpawnedActor) {
 	static auto fn = UObject::FindObject<UFunction>("Function GameplayTasks.GameplayTask_SpawnActor.BeginSpawningActor");
 
 	struct BeginSpawningActor_Params {
-		struct Unknown WorldContextObject;
-		struct Unknown& SpawnedActor;
+		struct Object WorldContextObject;
+		struct UActor& SpawnedActor;
 		char ReturnValue;
 
 	}; BeginSpawningActor_Params Params;
@@ -209,14 +209,14 @@ inline char UGameplayTask_SpawnActor::BeginSpawningActor(struct Unknown WorldCon
 }
 
 // Function GameplayTasks.GameplayTask_WaitDelay.TaskWaitDelay
-inline struct Unknown UGameplayTask_WaitDelay::TaskWaitDelay(struct TScriptInterface<IUnknown> TaskOwner, float Time, char Priority) {
+inline struct UGameplayTask_WaitDelay UGameplayTask_WaitDelay::TaskWaitDelay(struct TScriptInterface<IGameplayTaskOwnerInterface> TaskOwner, float Time, char Priority) {
 	static auto fn = UObject::FindObject<UFunction>("Function GameplayTasks.GameplayTask_WaitDelay.TaskWaitDelay");
 
 	struct TaskWaitDelay_Params {
-		struct TScriptInterface<IUnknown> TaskOwner;
+		struct TScriptInterface<IGameplayTaskOwnerInterface> TaskOwner;
 		float Time;
 		char Priority;
-		struct Unknown ReturnValue;
+		struct UGameplayTask_WaitDelay ReturnValue;
 
 	}; TaskWaitDelay_Params Params;
 
@@ -260,16 +260,16 @@ inline void UGameplayTasksComponent::OnRep_SimulatedTasks() {
 }
 
 // Function GameplayTasks.GameplayTasksComponent.K2_RunGameplayTask
-inline enum class Unknow UGameplayTasksComponent::K2_RunGameplayTask(struct TScriptInterface<IUnknown> TaskOwner, struct Unknown Task, char Priority, struct TArray<Unknown> AdditionalRequiredResources, struct TArray<Unknown> AdditionalClaimedResources) {
+inline enum class EGameplayTaskRunResult UGameplayTasksComponent::K2_RunGameplayTask(struct TScriptInterface<IGameplayTaskOwnerInterface> TaskOwner, struct UGameplayTask Task, char Priority, struct TArray<struct UClass*> AdditionalRequiredResources, struct TArray<struct UClass*> AdditionalClaimedResources) {
 	static auto fn = UObject::FindObject<UFunction>("Function GameplayTasks.GameplayTasksComponent.K2_RunGameplayTask");
 
 	struct K2_RunGameplayTask_Params {
-		struct TScriptInterface<IUnknown> TaskOwner;
-		struct Unknown Task;
+		struct TScriptInterface<IGameplayTaskOwnerInterface> TaskOwner;
+		struct UGameplayTask Task;
 		char Priority;
-		struct TArray<Unknown> AdditionalRequiredResources;
-		struct TArray<Unknown> AdditionalClaimedResources;
-		enum class Unknow ReturnValue;
+		struct TArray<struct UClass*> AdditionalRequiredResources;
+		struct TArray<struct UClass*> AdditionalClaimedResources;
+		enum class EGameplayTaskRunResult ReturnValue;
 
 	}; K2_RunGameplayTask_Params Params;
 

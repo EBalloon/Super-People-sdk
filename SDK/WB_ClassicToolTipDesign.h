@@ -3,8 +3,8 @@ class UWB_ClassicToolTipDesign_C : public UWB_ToolTipDesign_C {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x268 (8)
-	struct Unknown ToolTipVerticalList; // 0x270 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x268 (8)
+	struct UVerticalBox ToolTipVerticalList; // 0x270 (8)
 
 	void Set Tool Tip Text Design(struct FText Tool Tip, char& -); // Function WB_ClassicToolTipDesign.WB_ClassicToolTipDesign_C.Set Tool Tip Text Design(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function WB_ClassicToolTipDesign.WB_ClassicToolTipDesign_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>

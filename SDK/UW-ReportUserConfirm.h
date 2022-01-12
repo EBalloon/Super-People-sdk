@@ -3,16 +3,16 @@ class UUW-ReportUserConfirm_C : public UBravoHotelReportUserConfirmWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x258 (8)
-	struct Unknown btn_Cancel; // 0x260 (8)
-	struct Unknown btn_confirm; // 0x268 (8)
-	struct Unknown popup-bg; // 0x270 (8)
-	struct Unknown txt_description; // 0x278 (8)
-	struct Unknown uw-bg; // 0x280 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x258 (8)
+	struct UButton btn_Cancel; // 0x260 (8)
+	struct UButton btn_confirm; // 0x268 (8)
+	struct UImage popup-bg; // 0x270 (8)
+	struct UTextBlock txt_description; // 0x278 (8)
+	struct UImage uw-bg; // 0x280 (8)
 
 	void PreConstruct(char IsDesignTime); // Function UW-ReportUserConfirm.UW-ReportUserConfirm_C.PreConstruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-ReportUserConfirm.UW-ReportUserConfirm_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnReportSended(enum class Unknow InWidgetType); // Function UW-ReportUserConfirm.UW-ReportUserConfirm_C.OnReportSended(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnReportSended(enum class EBeginReportWidgetType InWidgetType); // Function UW-ReportUserConfirm.UW-ReportUserConfirm_C.OnReportSended(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-ReportUserConfirm(int32_t EntryPoint); // Function UW-ReportUserConfirm.UW-ReportUserConfirm_C.ExecuteUbergraph_UW-ReportUserConfirm(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
 };
 
@@ -46,11 +46,11 @@ inline void UUW-ReportUserConfirm_C::Construct() {
 }
 
 // Function UW-ReportUserConfirm.UW-ReportUserConfirm_C.OnReportSended
-inline void UUW-ReportUserConfirm_C::OnReportSended(enum class Unknow InWidgetType) {
+inline void UUW-ReportUserConfirm_C::OnReportSended(enum class EBeginReportWidgetType InWidgetType) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-ReportUserConfirm.UW-ReportUserConfirm_C.OnReportSended");
 
 	struct OnReportSended_Params {
-		enum class Unknow InWidgetType;
+		enum class EBeginReportWidgetType InWidgetType;
 	}; OnReportSended_Params Params;
 
 	Params.InWidgetType = InWidgetType;

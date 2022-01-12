@@ -13,6 +13,6 @@ public:
 
 	char bWaitForMoviesToComplete : 0; // 0x28 (1)
 	char bMoviesAreSkippable : 0; // 0x29 (1)
-	struct TArray<Unknown> StartupMovies; // 0x30 (16)
+	struct TArray<struct FString> StartupMovies; // 0x30 (16)
 };
 

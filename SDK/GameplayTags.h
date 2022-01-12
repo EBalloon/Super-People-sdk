@@ -50,8 +50,8 @@ class UEditableGameplayTagQuery : public Object {
 public:
 
 	struct FString UserDescription; // 0x28 (16)
-	struct Unknown RootExpression; // 0x48 (8)
-	struct Unknown TagQueryExportText_Helper; // 0x50 (72)
+	struct UEditableGameplayTagQueryExpression RootExpression; // 0x48 (8)
+	struct FGameplayTagQuery TagQueryExportText_Helper; // 0x50 (72)
 };
 
 // Class GameplayTags.EditableGameplayTagQueryExpression_AnyTagsMatch
@@ -59,7 +59,7 @@ class UEditableGameplayTagQueryExpression_AnyTagsMatch : public UEditableGamepla
 
 public:
 
-	struct Unknown Tags; // 0x28 (32)
+	struct FGameplayTagContainer Tags; // 0x28 (32)
 };
 
 // Class GameplayTags.EditableGameplayTagQueryExpression_AllTagsMatch
@@ -67,7 +67,7 @@ class UEditableGameplayTagQueryExpression_AllTagsMatch : public UEditableGamepla
 
 public:
 
-	struct Unknown Tags; // 0x28 (32)
+	struct FGameplayTagContainer Tags; // 0x28 (32)
 };
 
 // Class GameplayTags.EditableGameplayTagQueryExpression_NoTagsMatch
@@ -75,7 +75,7 @@ class UEditableGameplayTagQueryExpression_NoTagsMatch : public UEditableGameplay
 
 public:
 
-	struct Unknown Tags; // 0x28 (32)
+	struct FGameplayTagContainer Tags; // 0x28 (32)
 };
 
 // Class GameplayTags.EditableGameplayTagQueryExpression_AnyExprMatch
@@ -83,7 +83,7 @@ class UEditableGameplayTagQueryExpression_AnyExprMatch : public UEditableGamepla
 
 public:
 
-	struct TArray<Unknown> Expressions; // 0x28 (16)
+	struct TArray<struct UEditableGameplayTagQueryExpression> Expressions; // 0x28 (16)
 };
 
 // Class GameplayTags.EditableGameplayTagQueryExpression_AllExprMatch
@@ -91,7 +91,7 @@ class UEditableGameplayTagQueryExpression_AllExprMatch : public UEditableGamepla
 
 public:
 
-	struct TArray<Unknown> Expressions; // 0x28 (16)
+	struct TArray<struct UEditableGameplayTagQueryExpression> Expressions; // 0x28 (16)
 };
 
 // Class GameplayTags.EditableGameplayTagQueryExpression_NoExprMatch
@@ -99,7 +99,7 @@ class UEditableGameplayTagQueryExpression_NoExprMatch : public UEditableGameplay
 
 public:
 
-	struct TArray<Unknown> Expressions; // 0x28 (16)
+	struct TArray<struct UEditableGameplayTagQueryExpression> Expressions; // 0x28 (16)
 };
 
 // Class GameplayTags.GameplayTagsManager
@@ -107,8 +107,8 @@ class UGameplayTagsManager : public Object {
 
 public:
 
-	struct TArray<Unknown> TagSources; // 0xC0 (16)
-	struct TArray<Unknown> GameplayTagTables; // 0x1B0 (16)
+	struct TArray<struct FGameplayTagSource> TagSources; // 0xC0 (16)
+	struct TArray<struct UDataTable> GameplayTagTables; // 0x1B0 (16)
 };
 
 // Class GameplayTags.GameplayTagsList
@@ -117,7 +117,7 @@ class UGameplayTagsList : public Object {
 public:
 
 	struct FString ConfigFileName; // 0x28 (16)
-	struct TArray<Unknown> GameplayTagList; // 0x38 (16)
+	struct TArray<struct FGameplayTagTableRow> GameplayTagList; // 0x38 (16)
 };
 
 // Class GameplayTags.RestrictedGameplayTagsList
@@ -126,7 +126,7 @@ class URestrictedGameplayTagsList : public Object {
 public:
 
 	struct FString ConfigFileName; // 0x28 (16)
-	struct TArray<Unknown> RestrictedGameplayTagList; // 0x38 (16)
+	struct TArray<struct FRestrictedGameplayTagTableRow> RestrictedGameplayTagList; // 0x38 (16)
 };
 
 // Class GameplayTags.GameplayTagsSettings
@@ -138,13 +138,13 @@ public:
 	char WarnOnInvalidTags : 0; // 0x49 (1)
 	char FastReplication : 0; // 0x4A (1)
 	struct FString InvalidTagCharacters; // 0x50 (16)
-	struct TArray<Unknown> CategoryRemapping; // 0x60 (16)
-	struct TArray<Unknown> GameplayTagTableList; // 0x70 (16)
-	struct TArray<Unknown> GameplayTagRedirects; // 0x80 (16)
-	struct TArray<Unknown> CommonlyReplicatedTags; // 0x90 (16)
+	struct TArray<struct FGameplayTagCategoryRemap> CategoryRemapping; // 0x60 (16)
+	struct TArray<struct FSoftObjectPath> GameplayTagTableList; // 0x70 (16)
+	struct TArray<struct FGameplayTagRedirect> GameplayTagRedirects; // 0x80 (16)
+	struct TArray<struct FName> CommonlyReplicatedTags; // 0x90 (16)
 	int32_t NumBitsForContainerSize; // 0xA0 (4)
 	int32_t NetIndexFirstBitSegment; // 0xA4 (4)
-	struct TArray<Unknown> RestrictedConfigFiles; // 0xA8 (16)
+	struct TArray<struct FRestrictedConfigInfo> RestrictedConfigFiles; // 0xA8 (16)
 };
 
 // Class GameplayTags.GameplayTagsDeveloperSettings
@@ -158,8 +158,8 @@ public:
 // ScriptStruct GameplayTags.GameplayTagQuery
 struct FGameplayTagQuery {
 	int32_t TokenStreamVersion; // 0x0 (4)
-	struct TArray<Unknown> TagDictionary; // 0x8 (16)
-	struct TArray<Unknown> QueryTokenStream; // 0x18 (16)
+	struct TArray<struct FGameplayTag> TagDictionary; // 0x8 (16)
+	struct TArray<char> QueryTokenStream; // 0x18 (16)
 	struct FString UserDescription; // 0x28 (16)
 	struct FString AutoDescription; // 0x38 (16)
 };
@@ -171,16 +171,16 @@ struct FGameplayTag {
 
 // ScriptStruct GameplayTags.GameplayTagContainer
 struct FGameplayTagContainer {
-	struct TArray<Unknown> GameplayTags; // 0x0 (16)
-	struct TArray<Unknown> ParentTags; // 0x10 (16)
+	struct TArray<struct FGameplayTag> GameplayTags; // 0x0 (16)
+	struct TArray<struct FGameplayTag> ParentTags; // 0x10 (16)
 };
 
 // ScriptStruct GameplayTags.GameplayTagSource
 struct FGameplayTagSource {
 	struct FName SourceName; // 0x0 (8)
-	enum class Unknow SourceType; // 0x8 (1)
-	struct Unknown SourceTagList; // 0x10 (8)
-	struct Unknown SourceRestrictedTagList; // 0x18 (8)
+	enum class EGameplayTagSourceType SourceType; // 0x8 (1)
+	struct UGameplayTagsList SourceTagList; // 0x10 (8)
+	struct URestrictedGameplayTagsList SourceRestrictedTagList; // 0x18 (8)
 };
 
 // ScriptStruct GameplayTags.GameplayTagTableRow
@@ -197,13 +197,13 @@ struct FRestrictedGameplayTagTableRow : FGameplayTagTableRow {
 // ScriptStruct GameplayTags.RestrictedConfigInfo
 struct FRestrictedConfigInfo {
 	struct FString RestrictedConfigName; // 0x0 (16)
-	struct TArray<Unknown> Owners; // 0x10 (16)
+	struct TArray<struct FString> Owners; // 0x10 (16)
 };
 
 // ScriptStruct GameplayTags.GameplayTagCategoryRemap
 struct FGameplayTagCategoryRemap {
 	struct FString BaseCategory; // 0x0 (16)
-	struct TArray<Unknown> RemapCategories; // 0x10 (16)
+	struct TArray<struct FString> RemapCategories; // 0x10 (16)
 };
 
 // ScriptStruct GameplayTags.GameplayTagRedirect

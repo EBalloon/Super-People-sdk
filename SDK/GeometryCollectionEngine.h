@@ -61,29 +61,29 @@ public:
 	char bIsCollisionEventListeningEnabled : 0; // 0x228 (1)
 	char bIsBreakingEventListeningEnabled : 0; // 0x228 (1)
 	char bIsTrailingEventListeningEnabled : 0; // 0x228 (1)
-	struct Unknown CollisionEventRequestSettings; // 0x22C (24)
-	struct Unknown BreakingEventRequestSettings; // 0x244 (24)
-	struct Unknown TrailingEventRequestSettings; // 0x25C (24)
-	struct TSet<Unknown> ChaosSolverActors; // 0x278 (80)
-	struct TSet<Unknown> GeometryCollectionActors; // 0x2C8 (80)
+	struct FChaosCollisionEventRequestSettings CollisionEventRequestSettings; // 0x22C (24)
+	struct FChaosBreakingEventRequestSettings BreakingEventRequestSettings; // 0x244 (24)
+	struct FChaosTrailingEventRequestSettings TrailingEventRequestSettings; // 0x25C (24)
+	struct TSet<struct AChaosSolverActor> ChaosSolverActors; // 0x278 (80)
+	struct TSet<struct AGeometryCollectionActor> GeometryCollectionActors; // 0x2C8 (80)
 	struct FMulticastInlineDelegate OnCollisionEvents; // 0x318 (16)
 	struct FMulticastInlineDelegate OnBreakingEvents; // 0x328 (16)
 	struct FMulticastInlineDelegate OnTrailingEvents; // 0x338 (16)
 
-	void SortTrailingEvents(struct TArray<Unknown>& TrailingEvents, enum class Unknow SortMethod); // Function GeometryCollectionEngine.ChaosDestructionListener.SortTrailingEvents(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x47FF700>
-	void SortCollisionEvents(struct TArray<Unknown>& CollisionEvents, enum class Unknow SortMethod); // Function GeometryCollectionEngine.ChaosDestructionListener.SortCollisionEvents(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x47FF600>
-	void SortBreakingEvents(struct TArray<Unknown>& BreakingEvents, enum class Unknow SortMethod); // Function GeometryCollectionEngine.ChaosDestructionListener.SortBreakingEvents(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x47FF500>
-	void SetTrailingEventRequestSettings(struct Unknown& InSettings); // Function GeometryCollectionEngine.ChaosDestructionListener.SetTrailingEventRequestSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x47FF460>
+	void SortTrailingEvents(struct TArray<struct FChaosTrailingEventData>& TrailingEvents, enum class EChaosTrailingSortMethod SortMethod); // Function GeometryCollectionEngine.ChaosDestructionListener.SortTrailingEvents(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x47FF700>
+	void SortCollisionEvents(struct TArray<struct FChaosCollisionEventData>& CollisionEvents, enum class EChaosCollisionSortMethod SortMethod); // Function GeometryCollectionEngine.ChaosDestructionListener.SortCollisionEvents(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x47FF600>
+	void SortBreakingEvents(struct TArray<struct FChaosBreakingEventData>& BreakingEvents, enum class EChaosBreakingSortMethod SortMethod); // Function GeometryCollectionEngine.ChaosDestructionListener.SortBreakingEvents(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x47FF500>
+	void SetTrailingEventRequestSettings(struct FChaosTrailingEventRequestSettings& InSettings); // Function GeometryCollectionEngine.ChaosDestructionListener.SetTrailingEventRequestSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x47FF460>
 	void SetTrailingEventEnabled(char bIsEnabled); // Function GeometryCollectionEngine.ChaosDestructionListener.SetTrailingEventEnabled(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x47FF3D0>
-	void SetCollisionEventRequestSettings(struct Unknown& InSettings); // Function GeometryCollectionEngine.ChaosDestructionListener.SetCollisionEventRequestSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x47FF2A0>
+	void SetCollisionEventRequestSettings(struct FChaosCollisionEventRequestSettings& InSettings); // Function GeometryCollectionEngine.ChaosDestructionListener.SetCollisionEventRequestSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x47FF2A0>
 	void SetCollisionEventEnabled(char bIsEnabled); // Function GeometryCollectionEngine.ChaosDestructionListener.SetCollisionEventEnabled(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x47FF210>
-	void SetBreakingEventRequestSettings(struct Unknown& InSettings); // Function GeometryCollectionEngine.ChaosDestructionListener.SetBreakingEventRequestSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x47FF170>
+	void SetBreakingEventRequestSettings(struct FChaosBreakingEventRequestSettings& InSettings); // Function GeometryCollectionEngine.ChaosDestructionListener.SetBreakingEventRequestSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x47FF170>
 	void SetBreakingEventEnabled(char bIsEnabled); // Function GeometryCollectionEngine.ChaosDestructionListener.SetBreakingEventEnabled(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x47FF0E0>
-	void RemoveGeometryCollectionActor(struct Unknown GeometryCollectionActor); // Function GeometryCollectionEngine.ChaosDestructionListener.RemoveGeometryCollectionActor(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x47FF060>
-	void RemoveChaosSolverActor(struct Unknown ChaosSolverActor); // Function GeometryCollectionEngine.ChaosDestructionListener.RemoveChaosSolverActor(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16C9DF0>
+	void RemoveGeometryCollectionActor(struct AGeometryCollectionActor GeometryCollectionActor); // Function GeometryCollectionEngine.ChaosDestructionListener.RemoveGeometryCollectionActor(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x47FF060>
+	void RemoveChaosSolverActor(struct AChaosSolverActor ChaosSolverActor); // Function GeometryCollectionEngine.ChaosDestructionListener.RemoveChaosSolverActor(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16C9DF0>
 	char IsEventListening(); // Function GeometryCollectionEngine.ChaosDestructionListener.IsEventListening(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x47FEEB0>
-	void AddGeometryCollectionActor(struct Unknown GeometryCollectionActor); // Function GeometryCollectionEngine.ChaosDestructionListener.AddGeometryCollectionActor(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x47FEBF0>
-	void AddChaosSolverActor(struct Unknown ChaosSolverActor); // Function GeometryCollectionEngine.ChaosDestructionListener.AddChaosSolverActor(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16C9DF0>
+	void AddGeometryCollectionActor(struct AGeometryCollectionActor GeometryCollectionActor); // Function GeometryCollectionEngine.ChaosDestructionListener.AddGeometryCollectionActor(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x47FEBF0>
+	void AddChaosSolverActor(struct AChaosSolverActor ChaosSolverActor); // Function GeometryCollectionEngine.ChaosDestructionListener.AddChaosSolverActor(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16C9DF0>
 };
 
 // Class GeometryCollectionEngine.GeometryCollectionActor
@@ -91,10 +91,10 @@ class AGeometryCollectionActor : public UActor {
 
 public:
 
-	struct Unknown GeometryCollectionComponent; // 0x318 (8)
-	struct Unknown GeometryCollectionDebugDrawComponent; // 0x320 (8)
+	struct UGeometryCollectionComponent GeometryCollectionComponent; // 0x318 (8)
+	struct UGeometryCollectionDebugDrawComponent GeometryCollectionDebugDrawComponent; // 0x320 (8)
 
-	char RaycastSingle(struct Unknown Start, struct Unknown End, struct Unknown& OutHit); // Function GeometryCollectionEngine.GeometryCollectionActor.RaycastSingle(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x47FEEE0>
+	char RaycastSingle(struct FVector Start, struct FVector End, struct FHitResult& OutHit); // Function GeometryCollectionEngine.GeometryCollectionActor.RaycastSingle(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x47FEEE0>
 };
 
 // Class GeometryCollectionEngine.GeometryCollectionCache
@@ -102,9 +102,9 @@ class UGeometryCollectionCache : public Object {
 
 public:
 
-	struct Unknown RecordedData; // 0x28 (16)
-	struct Unknown SupportedCollection; // 0x38 (8)
-	struct Unknown CompatibleCollectionState; // 0x40 (16)
+	struct FRecordedTransformTrack RecordedData; // 0x28 (16)
+	struct UGeometryCollection SupportedCollection; // 0x38 (8)
+	struct FGuid CompatibleCollectionState; // 0x40 (16)
 };
 
 // Class GeometryCollectionEngine.GeometryCollectionComponent
@@ -112,25 +112,25 @@ class UGeometryCollectionComponent : public UMeshComponent {
 
 public:
 
-	struct Unknown ChaosSolverActor; // 0x4E0 (8)
-	struct Unknown RestCollection; // 0x5C8 (8)
-	struct TArray<Unknown> InitializationFields; // 0x5D0 (16)
+	struct AChaosSolverActor ChaosSolverActor; // 0x4E0 (8)
+	struct UGeometryCollection RestCollection; // 0x5C8 (8)
+	struct TArray<struct AFieldSystemActor> InitializationFields; // 0x5D0 (16)
 	char Simulating : 0; // 0x5E0 (1)
-	enum class Unknow ObjectType; // 0x5E8 (1)
+	enum class EObjectStateTypeEnum ObjectType; // 0x5E8 (1)
 	char EnableClustering : 0; // 0x5E9 (1)
 	int32_t ClusterGroupIndex; // 0x5EC (4)
 	int32_t MaxClusterLevel; // 0x5F0 (4)
-	struct TArray<Unknown> DamageThreshold; // 0x5F8 (16)
-	enum class Unknow ClusterConnectionType; // 0x608 (1)
+	struct TArray<float> DamageThreshold; // 0x5F8 (16)
+	enum class EClusterConnectionTypeEnum ClusterConnectionType; // 0x608 (1)
 	int32_t CollisionGroup; // 0x60C (4)
 	float CollisionSampleFraction; // 0x610 (4)
 	float LinearEtherDrag; // 0x614 (4)
 	float AngularEtherDrag; // 0x618 (4)
-	struct Unknown PhysicalMaterial; // 0x620 (8)
-	enum class Unknow InitialVelocityType; // 0x628 (1)
-	struct Unknown InitialLinearVelocity; // 0x62C (12)
-	struct Unknown InitialAngularVelocity; // 0x638 (12)
-	struct Unknown CacheParameters; // 0x648 (80)
+	struct UChaosPhysicalMaterial PhysicalMaterial; // 0x620 (8)
+	enum class EInitialVelocityTypeEnum InitialVelocityType; // 0x628 (1)
+	struct FVector InitialLinearVelocity; // 0x62C (12)
+	struct FVector InitialAngularVelocity; // 0x638 (12)
+	struct FGeomComponentCacheParameters CacheParameters; // 0x648 (80)
 	struct FMulticastInlineDelegate NotifyGeometryCollectionPhysicsStateChange; // 0x698 (16)
 	struct FMulticastInlineDelegate NotifyGeometryCollectionPhysicsLoadingStateChange; // 0x6A8 (16)
 	struct FMulticastInlineDelegate OnChaosBreakEvent; // 0x6D0 (16)
@@ -139,14 +139,14 @@ public:
 	struct FMulticastInlineDelegate OnChaosPhysicsCollision; // 0x6E8 (16)
 	char bNotifyBreaks : 0; // 0x6F8 (1)
 	char bNotifyCollisions : 0; // 0x6F9 (1)
-	struct Unknown DummyBodySetup; // 0x958 (8)
+	struct UBodySetup DummyBodySetup; // 0x958 (8)
 
 	void SetNotifyBreaks(char bNewNotifyBreaks); // Function GeometryCollectionEngine.GeometryCollectionComponent.SetNotifyBreaks(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x47FF340>
-	void ReceivePhysicsCollision(struct Unknown& CollisionInfo); // Function GeometryCollectionEngine.GeometryCollectionComponent.ReceivePhysicsCollision(Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void NotifyGeometryCollectionPhysicsStateChange__DelegateSignature(struct Unknown FracturedComponent); // DelegateFunction GeometryCollectionEngine.GeometryCollectionComponent.NotifyGeometryCollectionPhysicsStateChange__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B80160>
-	void NotifyGeometryCollectionPhysicsLoadingStateChange__DelegateSignature(struct Unknown FracturedComponent); // DelegateFunction GeometryCollectionEngine.GeometryCollectionComponent.NotifyGeometryCollectionPhysicsLoadingStateChange__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B80160>
-	void ApplyPhysicsField(char Enabled, enum class Unknow Target, struct Unknown MetaData, struct Unknown Field); // Function GeometryCollectionEngine.GeometryCollectionComponent.ApplyPhysicsField(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x47FED40>
-	void ApplyKinematicField(float Radius, struct Unknown Position); // Function GeometryCollectionEngine.GeometryCollectionComponent.ApplyKinematicField(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x47FEC70>
+	void ReceivePhysicsCollision(struct FChaosPhysicsCollisionInfo& CollisionInfo); // Function GeometryCollectionEngine.GeometryCollectionComponent.ReceivePhysicsCollision(Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void NotifyGeometryCollectionPhysicsStateChange__DelegateSignature(struct UGeometryCollectionComponent FracturedComponent); // DelegateFunction GeometryCollectionEngine.GeometryCollectionComponent.NotifyGeometryCollectionPhysicsStateChange__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B80160>
+	void NotifyGeometryCollectionPhysicsLoadingStateChange__DelegateSignature(struct UGeometryCollectionComponent FracturedComponent); // DelegateFunction GeometryCollectionEngine.GeometryCollectionComponent.NotifyGeometryCollectionPhysicsLoadingStateChange__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B80160>
+	void ApplyPhysicsField(char Enabled, enum class EGeometryCollectionPhysicsTypeEnum Target, struct UFieldSystemMetaData MetaData, struct UFieldNodeBase Field); // Function GeometryCollectionEngine.GeometryCollectionComponent.ApplyPhysicsField(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x47FED40>
+	void ApplyKinematicField(float Radius, struct FVector Position); // Function GeometryCollectionEngine.GeometryCollectionComponent.ApplyKinematicField(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x47FEC70>
 };
 
 // Class GeometryCollectionEngine.GeometryCollectionDebugDrawActor
@@ -154,12 +154,12 @@ class AGeometryCollectionDebugDrawActor : public UActor {
 
 public:
 
-	struct Unknown WarningMessage; // 0x318 (1)
-	struct Unknown SelectedRigidBody; // 0x320 (24)
+	struct FGeometryCollectionDebugDrawWarningMessage WarningMessage; // 0x318 (1)
+	struct FGeometryCollectionDebugDrawActorSelectedRigidBody SelectedRigidBody; // 0x320 (24)
 	char bDebugDrawWholeCollection : 0; // 0x338 (1)
 	char bDebugDrawHierarchy : 0; // 0x339 (1)
 	char bDebugDrawClustering : 0; // 0x33A (1)
-	enum class Unknow HideGeometry; // 0x33B (1)
+	enum class EGeometryCollectionDebugDrawActorHideGeometry HideGeometry; // 0x33B (1)
 	char bShowRigidBodyId : 0; // 0x33C (1)
 	char bShowRigidBodyCollision : 0; // 0x33D (1)
 	char bCollisionAtOrigin : 0; // 0x33E (1)
@@ -192,29 +192,29 @@ public:
 	float NormalScale; // 0x368 (4)
 	float AxisScale; // 0x36C (4)
 	float ArrowScale; // 0x370 (4)
-	struct Unknown RigidBodyIdColor; // 0x374 (4)
+	struct FColor RigidBodyIdColor; // 0x374 (4)
 	float RigidBodyTransformScale; // 0x378 (4)
-	struct Unknown RigidBodyCollisionColor; // 0x37C (4)
-	struct Unknown RigidBodyInertiaColor; // 0x380 (4)
-	struct Unknown RigidBodyVelocityColor; // 0x384 (4)
-	struct Unknown RigidBodyForceColor; // 0x388 (4)
-	struct Unknown RigidBodyInfoColor; // 0x38C (4)
-	struct Unknown TransformIndexColor; // 0x390 (4)
+	struct FColor RigidBodyCollisionColor; // 0x37C (4)
+	struct FColor RigidBodyInertiaColor; // 0x380 (4)
+	struct FColor RigidBodyVelocityColor; // 0x384 (4)
+	struct FColor RigidBodyForceColor; // 0x388 (4)
+	struct FColor RigidBodyInfoColor; // 0x38C (4)
+	struct FColor TransformIndexColor; // 0x390 (4)
 	float TransformScale; // 0x394 (4)
-	struct Unknown LevelColor; // 0x398 (4)
-	struct Unknown ParentColor; // 0x39C (4)
+	struct FColor LevelColor; // 0x398 (4)
+	struct FColor ParentColor; // 0x39C (4)
 	float ConnectivityEdgeThickness; // 0x3A0 (4)
-	struct Unknown GeometryIndexColor; // 0x3A4 (4)
+	struct FColor GeometryIndexColor; // 0x3A4 (4)
 	float GeometryTransformScale; // 0x3A8 (4)
-	struct Unknown BoundingBoxColor; // 0x3AC (4)
-	struct Unknown FaceColor; // 0x3B0 (4)
-	struct Unknown FaceIndexColor; // 0x3B4 (4)
-	struct Unknown FaceNormalColor; // 0x3B8 (4)
-	struct Unknown SingleFaceColor; // 0x3BC (4)
-	struct Unknown VertexColor; // 0x3C0 (4)
-	struct Unknown VertexIndexColor; // 0x3C4 (4)
-	struct Unknown VertexNormalColor; // 0x3C8 (4)
-	struct Unknown SpriteComponent; // 0x3D0 (8)
+	struct FColor BoundingBoxColor; // 0x3AC (4)
+	struct FColor FaceColor; // 0x3B0 (4)
+	struct FColor FaceIndexColor; // 0x3B4 (4)
+	struct FColor FaceNormalColor; // 0x3B8 (4)
+	struct FColor SingleFaceColor; // 0x3BC (4)
+	struct FColor VertexColor; // 0x3C0 (4)
+	struct FColor VertexIndexColor; // 0x3C4 (4)
+	struct FColor VertexNormalColor; // 0x3C8 (4)
+	struct UBillboardComponent SpriteComponent; // 0x3D0 (8)
 };
 
 // Class GeometryCollectionEngine.GeometryCollectionDebugDrawComponent
@@ -222,8 +222,8 @@ class UGeometryCollectionDebugDrawComponent : public UActorComponent {
 
 public:
 
-	struct Unknown GeometryCollectionDebugDrawActor; // 0xB0 (8)
-	struct Unknown GeometryCollectionRenderLevelSetActor; // 0xB8 (8)
+	struct AGeometryCollectionDebugDrawActor GeometryCollectionDebugDrawActor; // 0xB0 (8)
+	struct AGeometryCollectionRenderLevelSetActor GeometryCollectionRenderLevelSetActor; // 0xB8 (8)
 };
 
 // Class GeometryCollectionEngine.GeometryCollection
@@ -231,9 +231,9 @@ class UGeometryCollection : public Object {
 
 public:
 
-	struct TArray<Unknown> Materials; // 0x30 (16)
-	enum class Unknow CollisionType; // 0x40 (1)
-	enum class Unknow ImplicitType; // 0x41 (1)
+	struct TArray<struct UMaterialInterface> Materials; // 0x30 (16)
+	enum class ECollisionTypeEnum CollisionType; // 0x40 (1)
+	enum class EImplicitTypeEnum ImplicitType; // 0x41 (1)
 	int32_t MinLevelSetResolution; // 0x44 (4)
 	int32_t MaxLevelSetResolution; // 0x48 (4)
 	int32_t MinClusterLevelSetResolution; // 0x4C (4)
@@ -244,11 +244,11 @@ public:
 	float MinimumMassClamp; // 0x60 (4)
 	float CollisionParticlesFraction; // 0x64 (4)
 	int32_t MaximumCollisionParticles; // 0x68 (4)
-	struct TArray<Unknown> SizeSpecificData; // 0x70 (16)
+	struct TArray<struct FGeometryCollectionSizeSpecificData> SizeSpecificData; // 0x70 (16)
 	char EnableRemovePiecesOnFracture : 0; // 0x80 (1)
-	struct TArray<Unknown> RemoveOnFractureMaterials; // 0x88 (16)
-	struct Unknown PersistentGuid; // 0x98 (16)
-	struct Unknown StateGuid; // 0xA8 (16)
+	struct TArray<struct UMaterialInterface> RemoveOnFractureMaterials; // 0x88 (16)
+	struct FGuid PersistentGuid; // 0x98 (16)
+	struct FGuid StateGuid; // 0xA8 (16)
 	int32_t BoneSelectedMaterialIndex; // 0xB8 (4)
 };
 
@@ -257,8 +257,8 @@ class AGeometryCollectionRenderLevelSetActor : public UActor {
 
 public:
 
-	struct Unknown TargetVolumeTexture; // 0x318 (8)
-	struct Unknown RayMarchMaterial; // 0x320 (8)
+	struct UVolumeTexture TargetVolumeTexture; // 0x318 (8)
+	struct UMaterial RayMarchMaterial; // 0x320 (8)
 	float SurfaceTolerance; // 0x328 (4)
 	float Isovalue; // 0x32C (4)
 	char Enabled : 0; // 0x330 (1)
@@ -270,28 +270,28 @@ class USkeletalMeshSimulationComponent : public UActorComponent {
 
 public:
 
-	struct Unknown PhysicalMaterial; // 0xB8 (8)
-	struct Unknown ChaosSolverActor; // 0xC0 (8)
-	struct Unknown OverridePhysicsAsset; // 0xC8 (8)
+	struct UChaosPhysicalMaterial PhysicalMaterial; // 0xB8 (8)
+	struct AChaosSolverActor ChaosSolverActor; // 0xC0 (8)
+	struct UPhysicsAsset OverridePhysicsAsset; // 0xC8 (8)
 	char bSimulating : 0; // 0xD0 (1)
 	char bNotifyCollisions : 0; // 0xD1 (1)
-	enum class Unknow ObjectType; // 0xD2 (1)
+	enum class EObjectStateTypeEnum ObjectType; // 0xD2 (1)
 	float Density; // 0xD4 (4)
 	float MinMass; // 0xD8 (4)
 	float MaxMass; // 0xDC (4)
-	enum class Unknow CollisionType; // 0xE0 (1)
+	enum class ECollisionTypeEnum CollisionType; // 0xE0 (1)
 	float ImplicitShapeParticlesPerUnitArea; // 0xE4 (4)
 	int32_t ImplicitShapeMinNumParticles; // 0xE8 (4)
 	int32_t ImplicitShapeMaxNumParticles; // 0xEC (4)
 	int32_t MinLevelSetResolution; // 0xF0 (4)
 	int32_t MaxLevelSetResolution; // 0xF4 (4)
 	int32_t CollisionGroup; // 0xF8 (4)
-	enum class Unknow InitialVelocityType; // 0xFC (1)
-	struct Unknown InitialLinearVelocity; // 0x100 (12)
-	struct Unknown InitialAngularVelocity; // 0x10C (12)
+	enum class EInitialVelocityTypeEnum InitialVelocityType; // 0xFC (1)
+	struct FVector InitialLinearVelocity; // 0x100 (12)
+	struct FVector InitialAngularVelocity; // 0x10C (12)
 	struct FMulticastInlineDelegate OnChaosPhysicsCollision; // 0x118 (16)
 
-	void ReceivePhysicsCollision(struct Unknown& CollisionInfo); // Function GeometryCollectionEngine.SkeletalMeshSimulationComponent.ReceivePhysicsCollision(Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ReceivePhysicsCollision(struct FChaosPhysicsCollisionInfo& CollisionInfo); // Function GeometryCollectionEngine.SkeletalMeshSimulationComponent.ReceivePhysicsCollision(Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 };
 
 // Class GeometryCollectionEngine.StaticMeshSimulationComponent
@@ -301,29 +301,29 @@ public:
 
 	char Simulating : 0; // 0xB8 (1)
 	char bNotifyCollisions : 0; // 0xB9 (1)
-	enum class Unknow ObjectType; // 0xBA (1)
+	enum class EObjectStateTypeEnum ObjectType; // 0xBA (1)
 	float Mass; // 0xBC (4)
-	enum class Unknow CollisionType; // 0xC0 (1)
-	enum class Unknow ImplicitType; // 0xC1 (1)
+	enum class ECollisionTypeEnum CollisionType; // 0xC0 (1)
+	enum class EImplicitTypeEnum ImplicitType; // 0xC1 (1)
 	int32_t MinLevelSetResolution; // 0xC4 (4)
 	int32_t MaxLevelSetResolution; // 0xC8 (4)
-	enum class Unknow InitialVelocityType; // 0xCC (1)
-	struct Unknown InitialLinearVelocity; // 0xD0 (12)
-	struct Unknown InitialAngularVelocity; // 0xDC (12)
+	enum class EInitialVelocityTypeEnum InitialVelocityType; // 0xCC (1)
+	struct FVector InitialLinearVelocity; // 0xD0 (12)
+	struct FVector InitialAngularVelocity; // 0xDC (12)
 	float DamageThreshold; // 0xE8 (4)
-	struct Unknown PhysicalMaterial; // 0xF0 (8)
-	struct Unknown ChaosSolverActor; // 0xF8 (8)
+	struct UChaosPhysicalMaterial PhysicalMaterial; // 0xF0 (8)
+	struct AChaosSolverActor ChaosSolverActor; // 0xF8 (8)
 	struct FMulticastInlineDelegate OnChaosPhysicsCollision; // 0x100 (16)
-	struct TArray<Unknown> SimulatedComponents; // 0x120 (16)
+	struct TArray<struct UPrimitiveComponent> SimulatedComponents; // 0x120 (16)
 
-	void ReceivePhysicsCollision(struct Unknown& CollisionInfo); // Function GeometryCollectionEngine.StaticMeshSimulationComponent.ReceivePhysicsCollision(Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ReceivePhysicsCollision(struct FChaosPhysicsCollisionInfo& CollisionInfo); // Function GeometryCollectionEngine.StaticMeshSimulationComponent.ReceivePhysicsCollision(Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ForceRecreatePhysicsState(); // Function GeometryCollectionEngine.StaticMeshSimulationComponent.ForceRecreatePhysicsState(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x47FEE90>
 };
 
 // ScriptStruct GeometryCollectionEngine.GeomComponentCacheParameters
 struct FGeomComponentCacheParameters {
-	enum class Unknow CacheMode; // 0x0 (1)
-	struct Unknown TargetCache; // 0x8 (8)
+	enum class EGeometryCollectionCacheType CacheMode; // 0x0 (1)
+	struct UGeometryCollectionCache TargetCache; // 0x8 (8)
 	float ReverseCacheBeginTime; // 0x10 (4)
 	char SaveCollisionData : 0; // 0x14 (1)
 	char DoGenerateCollisionData : 0; // 0x15 (1)
@@ -346,27 +346,27 @@ struct FGeomComponentCacheParameters {
 
 // ScriptStruct GeometryCollectionEngine.ChaosCollisionEventData
 struct FChaosCollisionEventData {
-	struct Unknown Location; // 0x0 (12)
-	struct Unknown Normal; // 0xC (12)
-	struct Unknown Velocity1; // 0x18 (12)
-	struct Unknown Velocity2; // 0x24 (12)
+	struct FVector Location; // 0x0 (12)
+	struct FVector Normal; // 0xC (12)
+	struct FVector Velocity1; // 0x18 (12)
+	struct FVector Velocity2; // 0x24 (12)
 	float Mass1; // 0x30 (4)
 	float Mass2; // 0x34 (4)
-	struct Unknown Impulse; // 0x38 (12)
+	struct FVector Impulse; // 0x38 (12)
 };
 
 // ScriptStruct GeometryCollectionEngine.ChaosBreakingEventData
 struct FChaosBreakingEventData {
-	struct Unknown Location; // 0x0 (12)
-	struct Unknown Velocity; // 0xC (12)
+	struct FVector Location; // 0x0 (12)
+	struct FVector Velocity; // 0xC (12)
 	float Mass; // 0x18 (4)
 };
 
 // ScriptStruct GeometryCollectionEngine.ChaosTrailingEventData
 struct FChaosTrailingEventData {
-	struct Unknown Location; // 0x0 (12)
-	struct Unknown Velocity; // 0xC (12)
-	struct Unknown AngularVelocity; // 0x18 (12)
+	struct FVector Location; // 0x0 (12)
+	struct FVector Velocity; // 0xC (12)
+	struct FVector AngularVelocity; // 0x18 (12)
 	float Mass; // 0x24 (4)
 	int32_t ParticleIndex; // 0x28 (4)
 };
@@ -378,7 +378,7 @@ struct FChaosBreakingEventRequestSettings {
 	float MinSpeed; // 0x8 (4)
 	float MinMass; // 0xC (4)
 	float MaxDistance; // 0x10 (4)
-	enum class Unknow SortMethod; // 0x14 (1)
+	enum class EChaosBreakingSortMethod SortMethod; // 0x14 (1)
 };
 
 // ScriptStruct GeometryCollectionEngine.ChaosCollisionEventRequestSettings
@@ -388,7 +388,7 @@ struct FChaosCollisionEventRequestSettings {
 	float MinSpeed; // 0x8 (4)
 	float MinImpulse; // 0xC (4)
 	float MaxDistance; // 0x10 (4)
-	enum class Unknow SortMethod; // 0x14 (1)
+	enum class EChaosCollisionSortMethod SortMethod; // 0x14 (1)
 };
 
 // ScriptStruct GeometryCollectionEngine.ChaosTrailingEventRequestSettings
@@ -398,21 +398,21 @@ struct FChaosTrailingEventRequestSettings {
 	float MinSpeed; // 0x8 (4)
 	float MinAngularSpeed; // 0xC (4)
 	float MaxDistance; // 0x10 (4)
-	enum class Unknow SortMethod; // 0x14 (1)
+	enum class EChaosTrailingSortMethod SortMethod; // 0x14 (1)
 };
 
 // ScriptStruct GeometryCollectionEngine.GeometryCollectionDebugDrawActorSelectedRigidBody
 struct FGeometryCollectionDebugDrawActorSelectedRigidBody {
 	int32_t ID; // 0x0 (4)
-	struct Unknown Solver; // 0x8 (8)
-	struct Unknown GeometryCollection; // 0x10 (8)
+	struct AChaosSolverActor Solver; // 0x8 (8)
+	struct AGeometryCollectionActor GeometryCollection; // 0x10 (8)
 };
 
 // ScriptStruct GeometryCollectionEngine.GeometryCollectionSizeSpecificData
 struct FGeometryCollectionSizeSpecificData {
 	float MaxSize; // 0x0 (4)
-	enum class Unknow CollisionType; // 0x4 (1)
-	enum class Unknow ImplicitType; // 0x5 (1)
+	enum class ECollisionTypeEnum CollisionType; // 0x4 (1)
+	enum class EImplicitTypeEnum ImplicitType; // 0x5 (1)
 	int32_t MinLevelSetResolution; // 0x8 (4)
 	int32_t MaxLevelSetResolution; // 0xC (4)
 	int32_t MinClusterLevelSetResolution; // 0x10 (4)
@@ -423,12 +423,12 @@ struct FGeometryCollectionSizeSpecificData {
 };
 
 // Function GeometryCollectionEngine.ChaosDestructionListener.SortTrailingEvents
-inline void UChaosDestructionListener::SortTrailingEvents(struct TArray<Unknown>& TrailingEvents, enum class Unknow SortMethod) {
+inline void UChaosDestructionListener::SortTrailingEvents(struct TArray<struct FChaosTrailingEventData>& TrailingEvents, enum class EChaosTrailingSortMethod SortMethod) {
 	static auto fn = UObject::FindObject<UFunction>("Function GeometryCollectionEngine.ChaosDestructionListener.SortTrailingEvents");
 
 	struct SortTrailingEvents_Params {
-		struct TArray<Unknown>& TrailingEvents;
-		enum class Unknow SortMethod;
+		struct TArray<struct FChaosTrailingEventData>& TrailingEvents;
+		enum class EChaosTrailingSortMethod SortMethod;
 	}; SortTrailingEvents_Params Params;
 
 	Params.SortMethod = SortMethod;
@@ -442,12 +442,12 @@ inline void UChaosDestructionListener::SortTrailingEvents(struct TArray<Unknown>
 }
 
 // Function GeometryCollectionEngine.ChaosDestructionListener.SortCollisionEvents
-inline void UChaosDestructionListener::SortCollisionEvents(struct TArray<Unknown>& CollisionEvents, enum class Unknow SortMethod) {
+inline void UChaosDestructionListener::SortCollisionEvents(struct TArray<struct FChaosCollisionEventData>& CollisionEvents, enum class EChaosCollisionSortMethod SortMethod) {
 	static auto fn = UObject::FindObject<UFunction>("Function GeometryCollectionEngine.ChaosDestructionListener.SortCollisionEvents");
 
 	struct SortCollisionEvents_Params {
-		struct TArray<Unknown>& CollisionEvents;
-		enum class Unknow SortMethod;
+		struct TArray<struct FChaosCollisionEventData>& CollisionEvents;
+		enum class EChaosCollisionSortMethod SortMethod;
 	}; SortCollisionEvents_Params Params;
 
 	Params.SortMethod = SortMethod;
@@ -461,12 +461,12 @@ inline void UChaosDestructionListener::SortCollisionEvents(struct TArray<Unknown
 }
 
 // Function GeometryCollectionEngine.ChaosDestructionListener.SortBreakingEvents
-inline void UChaosDestructionListener::SortBreakingEvents(struct TArray<Unknown>& BreakingEvents, enum class Unknow SortMethod) {
+inline void UChaosDestructionListener::SortBreakingEvents(struct TArray<struct FChaosBreakingEventData>& BreakingEvents, enum class EChaosBreakingSortMethod SortMethod) {
 	static auto fn = UObject::FindObject<UFunction>("Function GeometryCollectionEngine.ChaosDestructionListener.SortBreakingEvents");
 
 	struct SortBreakingEvents_Params {
-		struct TArray<Unknown>& BreakingEvents;
-		enum class Unknow SortMethod;
+		struct TArray<struct FChaosBreakingEventData>& BreakingEvents;
+		enum class EChaosBreakingSortMethod SortMethod;
 	}; SortBreakingEvents_Params Params;
 
 	Params.SortMethod = SortMethod;
@@ -480,11 +480,11 @@ inline void UChaosDestructionListener::SortBreakingEvents(struct TArray<Unknown>
 }
 
 // Function GeometryCollectionEngine.ChaosDestructionListener.SetTrailingEventRequestSettings
-inline void UChaosDestructionListener::SetTrailingEventRequestSettings(struct Unknown& InSettings) {
+inline void UChaosDestructionListener::SetTrailingEventRequestSettings(struct FChaosTrailingEventRequestSettings& InSettings) {
 	static auto fn = UObject::FindObject<UFunction>("Function GeometryCollectionEngine.ChaosDestructionListener.SetTrailingEventRequestSettings");
 
 	struct SetTrailingEventRequestSettings_Params {
-		struct Unknown& InSettings;
+		struct FChaosTrailingEventRequestSettings& InSettings;
 	}; SetTrailingEventRequestSettings_Params Params;
 
 
@@ -512,11 +512,11 @@ inline void UChaosDestructionListener::SetTrailingEventEnabled(char bIsEnabled) 
 }
 
 // Function GeometryCollectionEngine.ChaosDestructionListener.SetCollisionEventRequestSettings
-inline void UChaosDestructionListener::SetCollisionEventRequestSettings(struct Unknown& InSettings) {
+inline void UChaosDestructionListener::SetCollisionEventRequestSettings(struct FChaosCollisionEventRequestSettings& InSettings) {
 	static auto fn = UObject::FindObject<UFunction>("Function GeometryCollectionEngine.ChaosDestructionListener.SetCollisionEventRequestSettings");
 
 	struct SetCollisionEventRequestSettings_Params {
-		struct Unknown& InSettings;
+		struct FChaosCollisionEventRequestSettings& InSettings;
 	}; SetCollisionEventRequestSettings_Params Params;
 
 
@@ -544,11 +544,11 @@ inline void UChaosDestructionListener::SetCollisionEventEnabled(char bIsEnabled)
 }
 
 // Function GeometryCollectionEngine.ChaosDestructionListener.SetBreakingEventRequestSettings
-inline void UChaosDestructionListener::SetBreakingEventRequestSettings(struct Unknown& InSettings) {
+inline void UChaosDestructionListener::SetBreakingEventRequestSettings(struct FChaosBreakingEventRequestSettings& InSettings) {
 	static auto fn = UObject::FindObject<UFunction>("Function GeometryCollectionEngine.ChaosDestructionListener.SetBreakingEventRequestSettings");
 
 	struct SetBreakingEventRequestSettings_Params {
-		struct Unknown& InSettings;
+		struct FChaosBreakingEventRequestSettings& InSettings;
 	}; SetBreakingEventRequestSettings_Params Params;
 
 
@@ -576,11 +576,11 @@ inline void UChaosDestructionListener::SetBreakingEventEnabled(char bIsEnabled) 
 }
 
 // Function GeometryCollectionEngine.ChaosDestructionListener.RemoveGeometryCollectionActor
-inline void UChaosDestructionListener::RemoveGeometryCollectionActor(struct Unknown GeometryCollectionActor) {
+inline void UChaosDestructionListener::RemoveGeometryCollectionActor(struct AGeometryCollectionActor GeometryCollectionActor) {
 	static auto fn = UObject::FindObject<UFunction>("Function GeometryCollectionEngine.ChaosDestructionListener.RemoveGeometryCollectionActor");
 
 	struct RemoveGeometryCollectionActor_Params {
-		struct Unknown GeometryCollectionActor;
+		struct AGeometryCollectionActor GeometryCollectionActor;
 	}; RemoveGeometryCollectionActor_Params Params;
 
 	Params.GeometryCollectionActor = GeometryCollectionActor;
@@ -591,11 +591,11 @@ inline void UChaosDestructionListener::RemoveGeometryCollectionActor(struct Unkn
 }
 
 // Function GeometryCollectionEngine.ChaosDestructionListener.RemoveChaosSolverActor
-inline void UChaosDestructionListener::RemoveChaosSolverActor(struct Unknown ChaosSolverActor) {
+inline void UChaosDestructionListener::RemoveChaosSolverActor(struct AChaosSolverActor ChaosSolverActor) {
 	static auto fn = UObject::FindObject<UFunction>("Function GeometryCollectionEngine.ChaosDestructionListener.RemoveChaosSolverActor");
 
 	struct RemoveChaosSolverActor_Params {
-		struct Unknown ChaosSolverActor;
+		struct AChaosSolverActor ChaosSolverActor;
 	}; RemoveChaosSolverActor_Params Params;
 
 	Params.ChaosSolverActor = ChaosSolverActor;
@@ -624,11 +624,11 @@ inline char UChaosDestructionListener::IsEventListening() {
 }
 
 // Function GeometryCollectionEngine.ChaosDestructionListener.AddGeometryCollectionActor
-inline void UChaosDestructionListener::AddGeometryCollectionActor(struct Unknown GeometryCollectionActor) {
+inline void UChaosDestructionListener::AddGeometryCollectionActor(struct AGeometryCollectionActor GeometryCollectionActor) {
 	static auto fn = UObject::FindObject<UFunction>("Function GeometryCollectionEngine.ChaosDestructionListener.AddGeometryCollectionActor");
 
 	struct AddGeometryCollectionActor_Params {
-		struct Unknown GeometryCollectionActor;
+		struct AGeometryCollectionActor GeometryCollectionActor;
 	}; AddGeometryCollectionActor_Params Params;
 
 	Params.GeometryCollectionActor = GeometryCollectionActor;
@@ -639,11 +639,11 @@ inline void UChaosDestructionListener::AddGeometryCollectionActor(struct Unknown
 }
 
 // Function GeometryCollectionEngine.ChaosDestructionListener.AddChaosSolverActor
-inline void UChaosDestructionListener::AddChaosSolverActor(struct Unknown ChaosSolverActor) {
+inline void UChaosDestructionListener::AddChaosSolverActor(struct AChaosSolverActor ChaosSolverActor) {
 	static auto fn = UObject::FindObject<UFunction>("Function GeometryCollectionEngine.ChaosDestructionListener.AddChaosSolverActor");
 
 	struct AddChaosSolverActor_Params {
-		struct Unknown ChaosSolverActor;
+		struct AChaosSolverActor ChaosSolverActor;
 	}; AddChaosSolverActor_Params Params;
 
 	Params.ChaosSolverActor = ChaosSolverActor;
@@ -654,13 +654,13 @@ inline void UChaosDestructionListener::AddChaosSolverActor(struct Unknown ChaosS
 }
 
 // Function GeometryCollectionEngine.GeometryCollectionActor.RaycastSingle
-inline char AGeometryCollectionActor::RaycastSingle(struct Unknown Start, struct Unknown End, struct Unknown& OutHit) {
+inline char AGeometryCollectionActor::RaycastSingle(struct FVector Start, struct FVector End, struct FHitResult& OutHit) {
 	static auto fn = UObject::FindObject<UFunction>("Function GeometryCollectionEngine.GeometryCollectionActor.RaycastSingle");
 
 	struct RaycastSingle_Params {
-		struct Unknown Start;
-		struct Unknown End;
-		struct Unknown& OutHit;
+		struct FVector Start;
+		struct FVector End;
+		struct FHitResult& OutHit;
 		char ReturnValue;
 
 	}; RaycastSingle_Params Params;
@@ -694,11 +694,11 @@ inline void UGeometryCollectionComponent::SetNotifyBreaks(char bNewNotifyBreaks)
 }
 
 // Function GeometryCollectionEngine.GeometryCollectionComponent.ReceivePhysicsCollision
-inline void UGeometryCollectionComponent::ReceivePhysicsCollision(struct Unknown& CollisionInfo) {
+inline void UGeometryCollectionComponent::ReceivePhysicsCollision(struct FChaosPhysicsCollisionInfo& CollisionInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function GeometryCollectionEngine.GeometryCollectionComponent.ReceivePhysicsCollision");
 
 	struct ReceivePhysicsCollision_Params {
-		struct Unknown& CollisionInfo;
+		struct FChaosPhysicsCollisionInfo& CollisionInfo;
 	}; ReceivePhysicsCollision_Params Params;
 
 
@@ -711,11 +711,11 @@ inline void UGeometryCollectionComponent::ReceivePhysicsCollision(struct Unknown
 }
 
 // DelegateFunction GeometryCollectionEngine.GeometryCollectionComponent.NotifyGeometryCollectionPhysicsStateChange__DelegateSignature
-inline void UGeometryCollectionComponent::NotifyGeometryCollectionPhysicsStateChange__DelegateSignature(struct Unknown FracturedComponent) {
+inline void UGeometryCollectionComponent::NotifyGeometryCollectionPhysicsStateChange__DelegateSignature(struct UGeometryCollectionComponent FracturedComponent) {
 	static auto fn = UObject::FindObject<UFunction>("DelegateFunction GeometryCollectionEngine.GeometryCollectionComponent.NotifyGeometryCollectionPhysicsStateChange__DelegateSignature");
 
 	struct NotifyGeometryCollectionPhysicsStateChange__DelegateSignature_Params {
-		struct Unknown FracturedComponent;
+		struct UGeometryCollectionComponent FracturedComponent;
 	}; NotifyGeometryCollectionPhysicsStateChange__DelegateSignature_Params Params;
 
 	Params.FracturedComponent = FracturedComponent;
@@ -726,11 +726,11 @@ inline void UGeometryCollectionComponent::NotifyGeometryCollectionPhysicsStateCh
 }
 
 // DelegateFunction GeometryCollectionEngine.GeometryCollectionComponent.NotifyGeometryCollectionPhysicsLoadingStateChange__DelegateSignature
-inline void UGeometryCollectionComponent::NotifyGeometryCollectionPhysicsLoadingStateChange__DelegateSignature(struct Unknown FracturedComponent) {
+inline void UGeometryCollectionComponent::NotifyGeometryCollectionPhysicsLoadingStateChange__DelegateSignature(struct UGeometryCollectionComponent FracturedComponent) {
 	static auto fn = UObject::FindObject<UFunction>("DelegateFunction GeometryCollectionEngine.GeometryCollectionComponent.NotifyGeometryCollectionPhysicsLoadingStateChange__DelegateSignature");
 
 	struct NotifyGeometryCollectionPhysicsLoadingStateChange__DelegateSignature_Params {
-		struct Unknown FracturedComponent;
+		struct UGeometryCollectionComponent FracturedComponent;
 	}; NotifyGeometryCollectionPhysicsLoadingStateChange__DelegateSignature_Params Params;
 
 	Params.FracturedComponent = FracturedComponent;
@@ -741,14 +741,14 @@ inline void UGeometryCollectionComponent::NotifyGeometryCollectionPhysicsLoading
 }
 
 // Function GeometryCollectionEngine.GeometryCollectionComponent.ApplyPhysicsField
-inline void UGeometryCollectionComponent::ApplyPhysicsField(char Enabled, enum class Unknow Target, struct Unknown MetaData, struct Unknown Field) {
+inline void UGeometryCollectionComponent::ApplyPhysicsField(char Enabled, enum class EGeometryCollectionPhysicsTypeEnum Target, struct UFieldSystemMetaData MetaData, struct UFieldNodeBase Field) {
 	static auto fn = UObject::FindObject<UFunction>("Function GeometryCollectionEngine.GeometryCollectionComponent.ApplyPhysicsField");
 
 	struct ApplyPhysicsField_Params {
 		char Enabled;
-		enum class Unknow Target;
-		struct Unknown MetaData;
-		struct Unknown Field;
+		enum class EGeometryCollectionPhysicsTypeEnum Target;
+		struct UFieldSystemMetaData MetaData;
+		struct UFieldNodeBase Field;
 	}; ApplyPhysicsField_Params Params;
 
 	Params.Enabled = Enabled;
@@ -762,12 +762,12 @@ inline void UGeometryCollectionComponent::ApplyPhysicsField(char Enabled, enum c
 }
 
 // Function GeometryCollectionEngine.GeometryCollectionComponent.ApplyKinematicField
-inline void UGeometryCollectionComponent::ApplyKinematicField(float Radius, struct Unknown Position) {
+inline void UGeometryCollectionComponent::ApplyKinematicField(float Radius, struct FVector Position) {
 	static auto fn = UObject::FindObject<UFunction>("Function GeometryCollectionEngine.GeometryCollectionComponent.ApplyKinematicField");
 
 	struct ApplyKinematicField_Params {
 		float Radius;
-		struct Unknown Position;
+		struct FVector Position;
 	}; ApplyKinematicField_Params Params;
 
 	Params.Radius = Radius;
@@ -779,11 +779,11 @@ inline void UGeometryCollectionComponent::ApplyKinematicField(float Radius, stru
 }
 
 // Function GeometryCollectionEngine.SkeletalMeshSimulationComponent.ReceivePhysicsCollision
-inline void USkeletalMeshSimulationComponent::ReceivePhysicsCollision(struct Unknown& CollisionInfo) {
+inline void USkeletalMeshSimulationComponent::ReceivePhysicsCollision(struct FChaosPhysicsCollisionInfo& CollisionInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function GeometryCollectionEngine.SkeletalMeshSimulationComponent.ReceivePhysicsCollision");
 
 	struct ReceivePhysicsCollision_Params {
-		struct Unknown& CollisionInfo;
+		struct FChaosPhysicsCollisionInfo& CollisionInfo;
 	}; ReceivePhysicsCollision_Params Params;
 
 
@@ -796,11 +796,11 @@ inline void USkeletalMeshSimulationComponent::ReceivePhysicsCollision(struct Unk
 }
 
 // Function GeometryCollectionEngine.StaticMeshSimulationComponent.ReceivePhysicsCollision
-inline void UStaticMeshSimulationComponent::ReceivePhysicsCollision(struct Unknown& CollisionInfo) {
+inline void UStaticMeshSimulationComponent::ReceivePhysicsCollision(struct FChaosPhysicsCollisionInfo& CollisionInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function GeometryCollectionEngine.StaticMeshSimulationComponent.ReceivePhysicsCollision");
 
 	struct ReceivePhysicsCollision_Params {
-		struct Unknown& CollisionInfo;
+		struct FChaosPhysicsCollisionInfo& CollisionInfo;
 	}; ReceivePhysicsCollision_Params Params;
 
 

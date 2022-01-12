@@ -3,30 +3,30 @@ class ABP-CharacterRecording_C : public ABravoHotel3DViewActor {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x318 (8)
-	struct Unknown PointLight3; // 0x320 (8)
-	struct Unknown PointLight2; // 0x328 (8)
-	struct Unknown SpotLight; // 0x330 (8)
-	struct Unknown PointLight1; // 0x338 (8)
-	struct Unknown BravoHotelSceneCaptureComponent2D; // 0x340 (8)
-	struct Unknown PointLight; // 0x348 (8)
-	struct Unknown SpotLight2; // 0x350 (8)
-	struct Unknown Cube; // 0x358 (8)
-	struct Unknown CustomizableSkeletal; // 0x360 (8)
-	struct Unknown SkeletalMesh; // 0x368 (8)
-	struct Unknown Camera; // 0x370 (8)
-	struct Unknown Scene; // 0x378 (8)
-	struct Unknown CharacterRef; // 0x380 (8)
-	struct TArray<Unknown> PreviewWeapons; // 0x388 (16)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x318 (8)
+	struct UPointLightComponent PointLight3; // 0x320 (8)
+	struct UPointLightComponent PointLight2; // 0x328 (8)
+	struct USpotLightComponent SpotLight; // 0x330 (8)
+	struct UPointLightComponent PointLight1; // 0x338 (8)
+	struct UBravoHotelSceneCaptureComponent2D BravoHotelSceneCaptureComponent2D; // 0x340 (8)
+	struct UPointLightComponent PointLight; // 0x348 (8)
+	struct USpotLightComponent SpotLight2; // 0x350 (8)
+	struct UStaticMeshComponent Cube; // 0x358 (8)
+	struct UCustomizableSkeletalComponent CustomizableSkeletal; // 0x360 (8)
+	struct USkeletalMeshComponent SkeletalMesh; // 0x368 (8)
+	struct UCameraComponent Camera; // 0x370 (8)
+	struct USceneComponent Scene; // 0x378 (8)
+	struct ABravoHotelCharacter CharacterRef; // 0x380 (8)
+	struct TArray<struct ABravoHotelWeaponBase> PreviewWeapons; // 0x388 (16)
 	char EnableTick : 0; // 0x398 (1)
-	struct Unknown TargetAccel; // 0x39C (12)
-	struct Unknown CurrentAccel; // 0x3A8 (12)
+	struct FRotator TargetAccel; // 0x39C (12)
+	struct FRotator CurrentAccel; // 0x3A8 (12)
 
 	void Resize Render Target(int32_t SizeX, int32_t SizeY); // Function BP-CharacterRecording.BP-CharacterRecording_C.Resize Render Target(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void AddRotation(float Delta); // Function BP-CharacterRecording.BP-CharacterRecording_C.AddRotation(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ReceiveBeginPlay(); // Function BP-CharacterRecording.BP-CharacterRecording_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ReceiveTick(float DeltaSeconds); // Function BP-CharacterRecording.BP-CharacterRecording_C.ReceiveTick(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnUpdatedMutable(struct Unknown Instance); // Function BP-CharacterRecording.BP-CharacterRecording_C.OnUpdatedMutable(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnUpdatedMutable(struct UCustomizableObjectInstance Instance); // Function BP-CharacterRecording.BP-CharacterRecording_C.OnUpdatedMutable(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_BP-CharacterRecording(int32_t EntryPoint); // Function BP-CharacterRecording.BP-CharacterRecording_C.ExecuteUbergraph_BP-CharacterRecording(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
@@ -92,11 +92,11 @@ inline void ABP-CharacterRecording_C::ReceiveTick(float DeltaSeconds) {
 }
 
 // Function BP-CharacterRecording.BP-CharacterRecording_C.OnUpdatedMutable
-inline void ABP-CharacterRecording_C::OnUpdatedMutable(struct Unknown Instance) {
+inline void ABP-CharacterRecording_C::OnUpdatedMutable(struct UCustomizableObjectInstance Instance) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-CharacterRecording.BP-CharacterRecording_C.OnUpdatedMutable");
 
 	struct OnUpdatedMutable_Params {
-		struct Unknown Instance;
+		struct UCustomizableObjectInstance Instance;
 	}; OnUpdatedMutable_Params Params;
 
 	Params.Instance = Instance;

@@ -3,31 +3,31 @@ class UUW-RequestResuscitation_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Button_Request; // 0x250 (8)
-	struct Unknown Image_955; // 0x258 (8)
-	struct Unknown Image_1208; // 0x260 (8)
-	struct Unknown SizeBox_77; // 0x268 (8)
-	struct Unknown SizeBox_78; // 0x270 (8)
-	struct Unknown Text_Price; // 0x278 (8)
-	struct Unknown TextBlock_767; // 0x280 (8)
-	struct Unknown WidgetSwitcher_Price; // 0x288 (8)
-	struct Unknown PlayerControllerRef; // 0x290 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UButton Button_Request; // 0x250 (8)
+	struct UImage Image_955; // 0x258 (8)
+	struct UImage Image_1208; // 0x260 (8)
+	struct USizeBox SizeBox_77; // 0x268 (8)
+	struct USizeBox SizeBox_78; // 0x270 (8)
+	struct UTextBlock Text_Price; // 0x278 (8)
+	struct UTextBlock TextBlock_767; // 0x280 (8)
+	struct UWidgetSwitcher WidgetSwitcher_Price; // 0x288 (8)
+	struct ABP-BravoHotel-PlayerController_C PlayerControllerRef; // 0x290 (8)
 	char bCanRequest : 0; // 0x298 (1)
 	char bRequest : 0; // 0x299 (1)
 	struct FText RequstingResuscitationText; // 0x2A0 (24)
 	float RequestingSizeBoxWidth; // 0x2B8 (4)
-	struct Unknown RequestTextColor; // 0x2C0 (40)
-	struct Unknown RequestingTextColor; // 0x2E8 (40)
+	struct FSlateColor RequestTextColor; // 0x2C0 (40)
+	struct FSlateColor RequestingTextColor; // 0x2E8 (40)
 	float RequestingSizeBoxInitWidth; // 0x310 (4)
 	struct FText RequstingResuscitationInitText; // 0x318 (24)
-	struct Unknown InitButtonStyle; // 0x330 (632)
-	struct Unknown RequestingButtonStyle; // 0x5A8 (632)
-	struct Unknown CanRequestButtonStyle; // 0x820 (632)
+	struct FButtonStyle InitButtonStyle; // 0x330 (632)
+	struct FButtonStyle RequestingButtonStyle; // 0x5A8 (632)
+	struct FButtonStyle CanRequestButtonStyle; // 0x820 (632)
 
 	void Init(); // Function UW-RequestResuscitation.UW-RequestResuscitation_C.Init(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetRequestState(char bOnRequest); // Function UW-RequestResuscitation.UW-RequestResuscitation_C.SetRequestState(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetPlayerController(struct Unknown& PC); // Function UW-RequestResuscitation.UW-RequestResuscitation_C.GetPlayerController(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void GetPlayerController(struct ABravoHotelPlayerController& PC); // Function UW-RequestResuscitation.UW-RequestResuscitation_C.GetPlayerController(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	char Get_Button_Request_bIsEnabled_1(); // Function UW-RequestResuscitation.UW-RequestResuscitation_C.Get_Button_Request_bIsEnabled_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-RequestResuscitation.UW-RequestResuscitation_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__Button_307_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(); // Function UW-RequestResuscitation.UW-RequestResuscitation_C.BndEvt__Button_307_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -65,11 +65,11 @@ inline void UUW-RequestResuscitation_C::SetRequestState(char bOnRequest) {
 }
 
 // Function UW-RequestResuscitation.UW-RequestResuscitation_C.GetPlayerController
-inline void UUW-RequestResuscitation_C::GetPlayerController(struct Unknown& PC) {
+inline void UUW-RequestResuscitation_C::GetPlayerController(struct ABravoHotelPlayerController& PC) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-RequestResuscitation.UW-RequestResuscitation_C.GetPlayerController");
 
 	struct GetPlayerController_Params {
-		struct Unknown& PC;
+		struct ABravoHotelPlayerController& PC;
 	}; GetPlayerController_Params Params;
 
 

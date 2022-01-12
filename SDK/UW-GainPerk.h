@@ -3,32 +3,32 @@ class UUW-GainPerk_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown LevelUp; // 0x250 (8)
-	struct Unknown FadeOut; // 0x258 (8)
-	struct Unknown FadeIn; // 0x260 (8)
-	struct Unknown Idle; // 0x268 (8)
-	struct Unknown CanvasPanel_2; // 0x270 (8)
-	struct Unknown Image_336; // 0x278 (8)
-	struct Unknown Image_Back; // 0x280 (8)
-	struct Unknown Overlay_186; // 0x288 (8)
-	struct Unknown PerkLastLevel; // 0x290 (8)
-	struct Unknown PerkLevelText; // 0x298 (8)
-	struct Unknown PerkName; // 0x2A0 (8)
-	struct Unknown PerkSlotHover; // 0x2A8 (8)
-	struct Unknown RichTextBlock_Desc; // 0x2B0 (8)
-	struct Unknown TextBlock_1; // 0x2B8 (8)
-	struct Unknown TextBlock_8; // 0x2C0 (8)
-	struct Unknown UW-Inventory_PerkSlot; // 0x2C8 (8)
-	struct Unknown PerkInfo; // 0x2D0 (44)
-	struct Unknown PerkData; // 0x300 (224)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UWidgetAnimation LevelUp; // 0x250 (8)
+	struct UWidgetAnimation FadeOut; // 0x258 (8)
+	struct UWidgetAnimation FadeIn; // 0x260 (8)
+	struct UWidgetAnimation Idle; // 0x268 (8)
+	struct UCanvasPanel CanvasPanel_2; // 0x270 (8)
+	struct UImage Image_336; // 0x278 (8)
+	struct UImage Image_Back; // 0x280 (8)
+	struct UOverlay Overlay_186; // 0x288 (8)
+	struct UTextBlock PerkLastLevel; // 0x290 (8)
+	struct UTextBlock PerkLevelText; // 0x298 (8)
+	struct UTextBlock PerkName; // 0x2A0 (8)
+	struct UCanvasPanel PerkSlotHover; // 0x2A8 (8)
+	struct URichTextBlock RichTextBlock_Desc; // 0x2B0 (8)
+	struct UTextBlock TextBlock_1; // 0x2B8 (8)
+	struct UTextBlock TextBlock_8; // 0x2C0 (8)
+	struct UUW-Inventory_PerkSlot_C UW-Inventory_PerkSlot; // 0x2C8 (8)
+	struct FPerkUIInfo PerkInfo; // 0x2D0 (44)
+	struct FPerkData PerkData; // 0x300 (224)
 	int32_t PerkLevel; // 0x3E0 (4)
-	struct Unknown PerInGameData; // 0x3E8 (456)
+	struct FPerkInGameData PerInGameData; // 0x3E8 (456)
 	int32_t Index; // 0x5B0 (4)
-	struct Unknown MainWiget; // 0x5B8 (8)
+	struct UUW-MainWidget_C MainWiget; // 0x5B8 (8)
 	float CurrentHeight; // 0x5C0 (4)
 	int32_t LastPerkLevel; // 0x5C4 (4)
-	struct Unknown DefaultPosition; // 0x5C8 (8)
+	struct FVector2D DefaultPosition; // 0x5C8 (8)
 	int32_t CurrenteLevel; // 0x5D0 (4)
 	char IsPlayingUltimateSound : 0; // 0x5D4 (1)
 
@@ -36,14 +36,14 @@ public:
 	void SetPerkDesc(); // Function UW-GainPerk.UW-GainPerk_C.SetPerkDesc(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	struct FText Get_T_PerkDescLv1_Text_1(); // Function UW-GainPerk.UW-GainPerk_C.Get_T_PerkDescLv1_Text_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	struct FText Get_PerkName_Text_1(); // Function UW-GainPerk.UW-GainPerk_C.Get_PerkName_Text_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	struct Unknown Get_PerkName_ColorAndOpacity_1(); // Function UW-GainPerk.UW-GainPerk_C.Get_PerkName_ColorAndOpacity_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	enum class Unknow Get_TextBlock_7_Visibility_1(); // Function UW-GainPerk.UW-GainPerk_C.Get_TextBlock_7_Visibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	struct Unknown Get_PerkImage_Brush_1(); // Function UW-GainPerk.UW-GainPerk_C.Get_PerkImage_Brush_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	enum class Unknow Get_PerkImage_Visibility_1(); // Function UW-GainPerk.UW-GainPerk_C.Get_PerkImage_Visibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void OnLoaded_A03468734B71BD17CEDAA08DD6958C1B(struct Unknown Loaded); // Function UW-GainPerk.UW-GainPerk_C.OnLoaded_A03468734B71BD17CEDAA08DD6958C1B(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FSlateColor Get_PerkName_ColorAndOpacity_1(); // Function UW-GainPerk.UW-GainPerk_C.Get_PerkName_ColorAndOpacity_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	enum class ESlateVisibility Get_TextBlock_7_Visibility_1(); // Function UW-GainPerk.UW-GainPerk_C.Get_TextBlock_7_Visibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	struct FSlateBrush Get_PerkImage_Brush_1(); // Function UW-GainPerk.UW-GainPerk_C.Get_PerkImage_Brush_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	enum class ESlateVisibility Get_PerkImage_Visibility_1(); // Function UW-GainPerk.UW-GainPerk_C.Get_PerkImage_Visibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_A03468734B71BD17CEDAA08DD6958C1B(struct Object Loaded); // Function UW-GainPerk.UW-GainPerk_C.OnLoaded_A03468734B71BD17CEDAA08DD6958C1B(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-GainPerk.UW-GainPerk_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-GainPerk.UW-GainPerk_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AsyncLoadIconTexture(struct Unknown IconTexture); // Function UW-GainPerk.UW-GainPerk_C.AsyncLoadIconTexture(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-GainPerk.UW-GainPerk_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AsyncLoadIconTexture(struct TSoftObjectPtr<UPaperSprite> IconTexture); // Function UW-GainPerk.UW-GainPerk_C.AsyncLoadIconTexture(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void RemovePopup(); // Function UW-GainPerk.UW-GainPerk_C.RemovePopup(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void RemoveFrom(); // Function UW-GainPerk.UW-GainPerk_C.RemoveFrom(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-GainPerk(int32_t EntryPoint); // Function UW-GainPerk.UW-GainPerk_C.ExecuteUbergraph_UW-GainPerk(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
@@ -118,12 +118,12 @@ inline struct FText UUW-GainPerk_C::Get_PerkName_Text_1() {
 }
 
 // Function UW-GainPerk.UW-GainPerk_C.Get_PerkName_ColorAndOpacity_1
-inline struct Unknown UUW-GainPerk_C::Get_PerkName_ColorAndOpacity_1() {
+inline struct FSlateColor UUW-GainPerk_C::Get_PerkName_ColorAndOpacity_1() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-GainPerk.UW-GainPerk_C.Get_PerkName_ColorAndOpacity_1");
 
 	struct Get_PerkName_ColorAndOpacity_1_Params {
 		
-		struct Unknown ReturnValue;
+		struct FSlateColor ReturnValue;
 
 	}; Get_PerkName_ColorAndOpacity_1_Params Params;
 
@@ -136,12 +136,12 @@ inline struct Unknown UUW-GainPerk_C::Get_PerkName_ColorAndOpacity_1() {
 }
 
 // Function UW-GainPerk.UW-GainPerk_C.Get_TextBlock_7_Visibility_1
-inline enum class Unknow UUW-GainPerk_C::Get_TextBlock_7_Visibility_1() {
+inline enum class ESlateVisibility UUW-GainPerk_C::Get_TextBlock_7_Visibility_1() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-GainPerk.UW-GainPerk_C.Get_TextBlock_7_Visibility_1");
 
 	struct Get_TextBlock_7_Visibility_1_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class ESlateVisibility ReturnValue;
 
 	}; Get_TextBlock_7_Visibility_1_Params Params;
 
@@ -154,12 +154,12 @@ inline enum class Unknow UUW-GainPerk_C::Get_TextBlock_7_Visibility_1() {
 }
 
 // Function UW-GainPerk.UW-GainPerk_C.Get_PerkImage_Brush_1
-inline struct Unknown UUW-GainPerk_C::Get_PerkImage_Brush_1() {
+inline struct FSlateBrush UUW-GainPerk_C::Get_PerkImage_Brush_1() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-GainPerk.UW-GainPerk_C.Get_PerkImage_Brush_1");
 
 	struct Get_PerkImage_Brush_1_Params {
 		
-		struct Unknown ReturnValue;
+		struct FSlateBrush ReturnValue;
 
 	}; Get_PerkImage_Brush_1_Params Params;
 
@@ -172,12 +172,12 @@ inline struct Unknown UUW-GainPerk_C::Get_PerkImage_Brush_1() {
 }
 
 // Function UW-GainPerk.UW-GainPerk_C.Get_PerkImage_Visibility_1
-inline enum class Unknow UUW-GainPerk_C::Get_PerkImage_Visibility_1() {
+inline enum class ESlateVisibility UUW-GainPerk_C::Get_PerkImage_Visibility_1() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-GainPerk.UW-GainPerk_C.Get_PerkImage_Visibility_1");
 
 	struct Get_PerkImage_Visibility_1_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class ESlateVisibility ReturnValue;
 
 	}; Get_PerkImage_Visibility_1_Params Params;
 
@@ -190,11 +190,11 @@ inline enum class Unknow UUW-GainPerk_C::Get_PerkImage_Visibility_1() {
 }
 
 // Function UW-GainPerk.UW-GainPerk_C.OnLoaded_A03468734B71BD17CEDAA08DD6958C1B
-inline void UUW-GainPerk_C::OnLoaded_A03468734B71BD17CEDAA08DD6958C1B(struct Unknown Loaded) {
+inline void UUW-GainPerk_C::OnLoaded_A03468734B71BD17CEDAA08DD6958C1B(struct Object Loaded) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-GainPerk.UW-GainPerk_C.OnLoaded_A03468734B71BD17CEDAA08DD6958C1B");
 
 	struct OnLoaded_A03468734B71BD17CEDAA08DD6958C1B_Params {
-		struct Unknown Loaded;
+		struct Object Loaded;
 	}; OnLoaded_A03468734B71BD17CEDAA08DD6958C1B_Params Params;
 
 	Params.Loaded = Loaded;
@@ -219,11 +219,11 @@ inline void UUW-GainPerk_C::Construct() {
 }
 
 // Function UW-GainPerk.UW-GainPerk_C.Tick
-inline void UUW-GainPerk_C::Tick(struct Unknown MyGeometry, float InDeltaTime) {
+inline void UUW-GainPerk_C::Tick(struct FGeometry MyGeometry, float InDeltaTime) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-GainPerk.UW-GainPerk_C.Tick");
 
 	struct Tick_Params {
-		struct Unknown MyGeometry;
+		struct FGeometry MyGeometry;
 		float InDeltaTime;
 	}; Tick_Params Params;
 
@@ -236,11 +236,11 @@ inline void UUW-GainPerk_C::Tick(struct Unknown MyGeometry, float InDeltaTime) {
 }
 
 // Function UW-GainPerk.UW-GainPerk_C.AsyncLoadIconTexture
-inline void UUW-GainPerk_C::AsyncLoadIconTexture(struct Unknown IconTexture) {
+inline void UUW-GainPerk_C::AsyncLoadIconTexture(struct TSoftObjectPtr<UPaperSprite> IconTexture) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-GainPerk.UW-GainPerk_C.AsyncLoadIconTexture");
 
 	struct AsyncLoadIconTexture_Params {
-		struct Unknown IconTexture;
+		struct TSoftObjectPtr<UPaperSprite> IconTexture;
 	}; AsyncLoadIconTexture_Params Params;
 
 	Params.IconTexture = IconTexture;

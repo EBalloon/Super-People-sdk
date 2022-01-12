@@ -3,36 +3,36 @@ class ABP-AmplifierEffect_C : public UActor {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x318 (8)
-	struct Unknown Widget; // 0x320 (8)
-	struct Unknown DefaultSceneRoot; // 0x328 (8)
-	struct Unknown TargetCharacter; // 0x330 (8)
-	struct Unknown LoudnessCurve; // 0x338 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x318 (8)
+	struct UWidgetComponent Widget; // 0x320 (8)
+	struct USceneComponent DefaultSceneRoot; // 0x328 (8)
+	struct ABravoHotelCharacter TargetCharacter; // 0x330 (8)
+	struct UCurveFloat LoudnessCurve; // 0x338 (8)
 	float AmplifierLength; // 0x340 (4)
-	enum class Unknow TagetGroundState; // 0x344 (1)
+	enum class ECharacterGroundState TagetGroundState; // 0x344 (1)
 	char IsFiring : 0; // 0x345 (1)
-	struct Unknown CurrentWeapon; // 0x348 (8)
-	struct Unknown SingleTimerEvent; // 0x350 (8)
+	struct ABravoHotelRangedWeapon CurrentWeapon; // 0x348 (8)
+	struct FTimerHandle SingleTimerEvent; // 0x350 (8)
 	char IsSingleFiring : 0; // 0x358 (1)
 
-	void OnCharacterMovementUpdated_tじ_1(float DeltaSeconds, struct Unknown OldLocation, struct Unknown OldVelocity); // Function BP-AmplifierEffect.BP-AmplifierEffect_C.OnCharacterMovementUpdated_tじ_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnCharacterGroundStateChangeDelegate_tじ_1(enum class Unknow State); // Function BP-AmplifierEffect.BP-AmplifierEffect_C.OnCharacterGroundStateChangeDelegate_tじ_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnCharacterMovementUpdated_tじ_1(float DeltaSeconds, struct FVector OldLocation, struct FVector OldVelocity); // Function BP-AmplifierEffect.BP-AmplifierEffect_C.OnCharacterMovementUpdated_tじ_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnCharacterGroundStateChangeDelegate_tじ_1(enum class ECharacterGroundState State); // Function BP-AmplifierEffect.BP-AmplifierEffect_C.OnCharacterGroundStateChangeDelegate_tじ_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ReceiveTick(float DeltaSeconds); // Function BP-AmplifierEffect.BP-AmplifierEffect_C.ReceiveTick(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetTarget(struct Unknown TargetCharacter, float AmplifierLength); // Function BP-AmplifierEffect.BP-AmplifierEffect_C.SetTarget(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void CharacterMovementEvent(float DeltaSeconds, struct Unknown OldLocation, struct Unknown OldVelocity); // Function BP-AmplifierEffect.BP-AmplifierEffect_C.CharacterMovementEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetTarget(struct ABravoHotelCharacter TargetCharacter, float AmplifierLength); // Function BP-AmplifierEffect.BP-AmplifierEffect_C.SetTarget(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CharacterMovementEvent(float DeltaSeconds, struct FVector OldLocation, struct FVector OldVelocity); // Function BP-AmplifierEffect.BP-AmplifierEffect_C.CharacterMovementEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnStartSimulateFire(); // Function BP-AmplifierEffect.BP-AmplifierEffect_C.OnStartSimulateFire(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SingleStopEvent(); // Function BP-AmplifierEffect.BP-AmplifierEffect_C.SingleStopEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_BP-AmplifierEffect(int32_t EntryPoint); // Function BP-AmplifierEffect.BP-AmplifierEffect_C.ExecuteUbergraph_BP-AmplifierEffect(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function BP-AmplifierEffect.BP-AmplifierEffect_C.OnCharacterMovementUpdated_tじ_1
-inline void ABP-AmplifierEffect_C::OnCharacterMovementUpdated_tじ_1(float DeltaSeconds, struct Unknown OldLocation, struct Unknown OldVelocity) {
+inline void ABP-AmplifierEffect_C::OnCharacterMovementUpdated_tじ_1(float DeltaSeconds, struct FVector OldLocation, struct FVector OldVelocity) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-AmplifierEffect.BP-AmplifierEffect_C.OnCharacterMovementUpdated_tじ_1");
 
 	struct OnCharacterMovementUpdated_tじ_1_Params {
 		float DeltaSeconds;
-		struct Unknown OldLocation;
-		struct Unknown OldVelocity;
+		struct FVector OldLocation;
+		struct FVector OldVelocity;
 	}; OnCharacterMovementUpdated_tじ_1_Params Params;
 
 	Params.DeltaSeconds = DeltaSeconds;
@@ -45,11 +45,11 @@ inline void ABP-AmplifierEffect_C::OnCharacterMovementUpdated_tじ_1(float DeltaS
 }
 
 // Function BP-AmplifierEffect.BP-AmplifierEffect_C.OnCharacterGroundStateChangeDelegate_tじ_1
-inline void ABP-AmplifierEffect_C::OnCharacterGroundStateChangeDelegate_tじ_1(enum class Unknow State) {
+inline void ABP-AmplifierEffect_C::OnCharacterGroundStateChangeDelegate_tじ_1(enum class ECharacterGroundState State) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-AmplifierEffect.BP-AmplifierEffect_C.OnCharacterGroundStateChangeDelegate_tじ_1");
 
 	struct OnCharacterGroundStateChangeDelegate_tじ_1_Params {
-		enum class Unknow State;
+		enum class ECharacterGroundState State;
 	}; OnCharacterGroundStateChangeDelegate_tじ_1_Params Params;
 
 	Params.State = State;
@@ -75,11 +75,11 @@ inline void ABP-AmplifierEffect_C::ReceiveTick(float DeltaSeconds) {
 }
 
 // Function BP-AmplifierEffect.BP-AmplifierEffect_C.SetTarget
-inline void ABP-AmplifierEffect_C::SetTarget(struct Unknown TargetCharacter, float AmplifierLength) {
+inline void ABP-AmplifierEffect_C::SetTarget(struct ABravoHotelCharacter TargetCharacter, float AmplifierLength) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-AmplifierEffect.BP-AmplifierEffect_C.SetTarget");
 
 	struct SetTarget_Params {
-		struct Unknown TargetCharacter;
+		struct ABravoHotelCharacter TargetCharacter;
 		float AmplifierLength;
 	}; SetTarget_Params Params;
 
@@ -92,13 +92,13 @@ inline void ABP-AmplifierEffect_C::SetTarget(struct Unknown TargetCharacter, flo
 }
 
 // Function BP-AmplifierEffect.BP-AmplifierEffect_C.CharacterMovementEvent
-inline void ABP-AmplifierEffect_C::CharacterMovementEvent(float DeltaSeconds, struct Unknown OldLocation, struct Unknown OldVelocity) {
+inline void ABP-AmplifierEffect_C::CharacterMovementEvent(float DeltaSeconds, struct FVector OldLocation, struct FVector OldVelocity) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-AmplifierEffect.BP-AmplifierEffect_C.CharacterMovementEvent");
 
 	struct CharacterMovementEvent_Params {
 		float DeltaSeconds;
-		struct Unknown OldLocation;
-		struct Unknown OldVelocity;
+		struct FVector OldLocation;
+		struct FVector OldVelocity;
 	}; CharacterMovementEvent_Params Params;
 
 	Params.DeltaSeconds = DeltaSeconds;

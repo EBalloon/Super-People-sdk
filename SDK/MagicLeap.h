@@ -101,15 +101,15 @@ public:
 	struct FMulticastInlineDelegate GetPurchaseHistorySuccess; // 0x100 (16)
 	struct FMulticastInlineDelegate GetPurchaseHistoryFailure; // 0x110 (16)
 
-	char TryPurchaseItemAsync(struct Unknown& ItemDetails); // Function MagicLeap.InAppPurchaseComponent.TryPurchaseItemAsync(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x17E0000>
+	char TryPurchaseItemAsync(struct FPurchaseItemDetails& ItemDetails); // Function MagicLeap.InAppPurchaseComponent.TryPurchaseItemAsync(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x17E0000>
 	char TryGetPurchaseHistoryAsync(int32_t InNumPages); // Function MagicLeap.InAppPurchaseComponent.TryGetPurchaseHistoryAsync(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x17DFF70>
-	char TryGetItemsDetailsAsync(struct TArray<Unknown>& ItemIDs); // Function MagicLeap.InAppPurchaseComponent.TryGetItemsDetailsAsync(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x17DFE90>
-	void PurchaseConfirmationSuccess__DelegateSignature(struct Unknown& PurchaseConfirmations); // DelegateFunction MagicLeap.InAppPurchaseComponent.PurchaseConfirmationSuccess__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <Game_BE.exe+0x2B80160>
+	char TryGetItemsDetailsAsync(struct TArray<struct FString>& ItemIDs); // Function MagicLeap.InAppPurchaseComponent.TryGetItemsDetailsAsync(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x17DFE90>
+	void PurchaseConfirmationSuccess__DelegateSignature(struct FPurchaseConfirmation& PurchaseConfirmations); // DelegateFunction MagicLeap.InAppPurchaseComponent.PurchaseConfirmationSuccess__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <Game_BE.exe+0x2B80160>
 	void PurchaseConfirmationFailure__DelegateSignature(); // DelegateFunction MagicLeap.InAppPurchaseComponent.PurchaseConfirmationFailure__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B80160>
 	void InAppPurchaseLogMessage__DelegateSignature(struct FString LogMessage); // DelegateFunction MagicLeap.InAppPurchaseComponent.InAppPurchaseLogMessage__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B80160>
-	void GetPurchaseHistorySuccess__DelegateSignature(struct TArray<Unknown>& PurchaseHistory); // DelegateFunction MagicLeap.InAppPurchaseComponent.GetPurchaseHistorySuccess__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <Game_BE.exe+0x2B80160>
+	void GetPurchaseHistorySuccess__DelegateSignature(struct TArray<struct FPurchaseConfirmation>& PurchaseHistory); // DelegateFunction MagicLeap.InAppPurchaseComponent.GetPurchaseHistorySuccess__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <Game_BE.exe+0x2B80160>
 	void GetPurchaseHistoryFailure__DelegateSignature(); // DelegateFunction MagicLeap.InAppPurchaseComponent.GetPurchaseHistoryFailure__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B80160>
-	void GetItemsDetailsSuccess__DelegateSignature(struct TArray<Unknown>& ItemsDetails); // DelegateFunction MagicLeap.InAppPurchaseComponent.GetItemsDetailsSuccess__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <Game_BE.exe+0x2B80160>
+	void GetItemsDetailsSuccess__DelegateSignature(struct TArray<struct FPurchaseItemDetails>& ItemsDetails); // DelegateFunction MagicLeap.InAppPurchaseComponent.GetItemsDetailsSuccess__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms) // <Game_BE.exe+0x2B80160>
 	void GetItemsDetailsFailure__DelegateSignature(); // DelegateFunction MagicLeap.InAppPurchaseComponent.GetItemsDetailsFailure__DelegateSignature(MulticastDelegate|Public|Delegate) // <Game_BE.exe+0x2B80160>
 };
 
@@ -143,29 +143,29 @@ public:
 
 	struct FMulticastInlineDelegate OnMeshTrackerUpdated; // 0x230 (16)
 	char ScanWorld : 0; // 0x240 (1)
-	enum class Unknow MeshType; // 0x241 (1)
-	struct Unknown BoundingVolume; // 0x248 (8)
-	enum class Unknow LevelOfDetail; // 0x250 (1)
+	enum class EMagicLeapMeshType MeshType; // 0x241 (1)
+	struct UBoxComponent BoundingVolume; // 0x248 (8)
+	enum class EMagicLeapMeshLOD LevelOfDetail; // 0x250 (1)
 	float PerimeterOfGapsToFill; // 0x254 (4)
 	char Planarize : 0; // 0x258 (1)
 	float DisconnectedSectionArea; // 0x25C (4)
 	char RequestNormals : 0; // 0x260 (1)
 	char RequestVertexConfidence : 0; // 0x261 (1)
-	enum class Unknow VertexColorMode; // 0x262 (1)
-	struct TArray<Unknown> BlockVertexColors; // 0x268 (16)
-	struct Unknown VertexColorFromConfidenceZero; // 0x278 (16)
-	struct Unknown VertexColorFromConfidenceOne; // 0x288 (16)
+	enum class EMagicLeapMeshVertexColorMode VertexColorMode; // 0x262 (1)
+	struct TArray<struct FColor> BlockVertexColors; // 0x268 (16)
+	struct FLinearColor VertexColorFromConfidenceZero; // 0x278 (16)
+	struct FLinearColor VertexColorFromConfidenceOne; // 0x288 (16)
 	char RemoveOverlappingTriangles : 0; // 0x298 (1)
-	struct Unknown MRMesh; // 0x2A0 (8)
+	struct UMRMeshComponent MRMesh; // 0x2A0 (8)
 	int32_t BricksPerFrame; // 0x2A8 (4)
 
-	void SelectMeshBlocks(struct Unknown& NewMeshInfo, struct TArray<Unknown>& RequestedMesh); // Function MagicLeap.MagicLeapMeshTrackerComponent.SelectMeshBlocks(Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x17DFB70>
-	void OnMeshTrackerUpdated__DelegateSignature(struct Unknown ID, struct TArray<Unknown>& Vertices, struct TArray<Unknown>& Triangles, struct TArray<Unknown>& Normals, struct TArray<Unknown>& Confidence); // DelegateFunction MagicLeap.MagicLeapMeshTrackerComponent.OnMeshTrackerUpdated__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms|HasDefaults) // <Game_BE.exe+0x2B80160>
+	void SelectMeshBlocks(struct FMagicLeapTrackingMeshInfo& NewMeshInfo, struct TArray<struct FMagicLeapMeshBlockRequest>& RequestedMesh); // Function MagicLeap.MagicLeapMeshTrackerComponent.SelectMeshBlocks(Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x17DFB70>
+	void OnMeshTrackerUpdated__DelegateSignature(struct FGuid ID, struct TArray<struct FVector>& Vertices, struct TArray<int32_t>& Triangles, struct TArray<struct FVector>& Normals, struct TArray<float>& Confidence); // DelegateFunction MagicLeap.MagicLeapMeshTrackerComponent.OnMeshTrackerUpdated__DelegateSignature(MulticastDelegate|Public|Delegate|HasOutParms|HasDefaults) // <Game_BE.exe+0x2B80160>
 	int32_t GetNumQueuedBlockUpdates(); // Function MagicLeap.MagicLeapMeshTrackerComponent.GetNumQueuedBlockUpdates(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x17DF620>
-	void DisconnectMRMesh(struct Unknown InMRMeshPtr); // Function MagicLeap.MagicLeapMeshTrackerComponent.DisconnectMRMesh(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x17DF1F0>
+	void DisconnectMRMesh(struct UMRMeshComponent InMRMeshPtr); // Function MagicLeap.MagicLeapMeshTrackerComponent.DisconnectMRMesh(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x17DF1F0>
 	void DisconnectBlockSelector(); // Function MagicLeap.MagicLeapMeshTrackerComponent.DisconnectBlockSelector(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x17DF1D0>
-	void ConnectMRMesh(struct Unknown InMRMeshPtr); // Function MagicLeap.MagicLeapMeshTrackerComponent.ConnectMRMesh(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x17DF150>
-	void ConnectBlockSelector(struct TScriptInterface<IUnknown> Selector); // Function MagicLeap.MagicLeapMeshTrackerComponent.ConnectBlockSelector(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x17DF0B0>
+	void ConnectMRMesh(struct UMRMeshComponent InMRMeshPtr); // Function MagicLeap.MagicLeapMeshTrackerComponent.ConnectMRMesh(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x17DF150>
+	void ConnectBlockSelector(struct TScriptInterface<IMagicLeapMeshBlockSelectorInterface> Selector); // Function MagicLeap.MagicLeapMeshTrackerComponent.ConnectBlockSelector(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x17DF0B0>
 };
 
 // Class MagicLeap.MagicLeapSettings
@@ -182,51 +182,51 @@ public:
 struct FPurchaseItemDetails {
 	struct FString Price; // 0x10 (16)
 	struct FString Name; // 0x20 (16)
-	enum class Unknow Type; // 0x30 (1)
+	enum class PurchaseType Type; // 0x30 (1)
 };
 
 // ScriptStruct MagicLeap.PurchaseConfirmation
 struct FPurchaseConfirmation {
 	struct FString PackageName; // 0x10 (16)
-	enum class Unknow Type; // 0x48 (1)
+	enum class PurchaseType Type; // 0x48 (1)
 };
 
 // ScriptStruct MagicLeap.MagicLeapMeshBlockRequest
 struct FMagicLeapMeshBlockRequest {
-	struct Unknown BlockID; // 0x0 (16)
-	enum class Unknow LevelOfDetail; // 0x10 (1)
+	struct FGuid BlockID; // 0x0 (16)
+	enum class EMagicLeapMeshLOD LevelOfDetail; // 0x10 (1)
 };
 
 // ScriptStruct MagicLeap.MagicLeapTrackingMeshInfo
 struct FMagicLeapTrackingMeshInfo {
-	struct Unknown Timestamp; // 0x0 (8)
-	struct TArray<Unknown> BlockData; // 0x8 (16)
+	struct FTimespan Timestamp; // 0x0 (8)
+	struct TArray<struct FMagicLeapMeshBlockInfo> BlockData; // 0x8 (16)
 };
 
 // ScriptStruct MagicLeap.MagicLeapMeshBlockInfo
 struct FMagicLeapMeshBlockInfo {
-	struct Unknown BlockID; // 0x0 (16)
-	struct Unknown BlockPosition; // 0x10 (12)
-	struct Unknown BlockOrientation; // 0x1C (12)
-	struct Unknown BlockDimensions; // 0x28 (12)
-	struct Unknown Timestamp; // 0x38 (8)
-	enum class Unknow BlockState; // 0x40 (1)
+	struct FGuid BlockID; // 0x0 (16)
+	struct FVector BlockPosition; // 0x10 (12)
+	struct FRotator BlockOrientation; // 0x1C (12)
+	struct FVector BlockDimensions; // 0x28 (12)
+	struct FTimespan Timestamp; // 0x38 (8)
+	enum class EMagicLeapMeshState BlockState; // 0x40 (1)
 };
 
 // ScriptStruct MagicLeap.MagicLeapRaycastHitResult
 struct FMagicLeapRaycastHitResult {
-	enum class Unknow HitState; // 0x0 (1)
-	struct Unknown HitPoint; // 0x4 (12)
-	struct Unknown Normal; // 0x10 (12)
+	enum class EMagicLeapRaycastResultState HitState; // 0x0 (1)
+	struct FVector HitPoint; // 0x4 (12)
+	struct FVector Normal; // 0x10 (12)
 	float Confidence; // 0x1C (4)
 	int32_t UserData; // 0x20 (4)
 };
 
 // ScriptStruct MagicLeap.MagicLeapRaycastQueryParams
 struct FMagicLeapRaycastQueryParams {
-	struct Unknown Position; // 0x0 (12)
-	struct Unknown Direction; // 0xC (12)
-	struct Unknown UpVector; // 0x18 (12)
+	struct FVector Position; // 0x0 (12)
+	struct FVector Direction; // 0xC (12)
+	struct FVector UpVector; // 0x18 (12)
 	int32_t Width; // 0x24 (4)
 	int32_t Height; // 0x28 (4)
 	float HorizontalFovDegrees; // 0x2C (4)
@@ -247,17 +247,17 @@ struct FMagicLeapGraphicsClientPerformanceInfo {
 
 // ScriptStruct MagicLeap.MagicLeapHeadTrackingState
 struct FMagicLeapHeadTrackingState {
-	enum class Unknow Mode; // 0x0 (1)
-	enum class Unknow Error; // 0x1 (1)
+	enum class EMagicLeapHeadTrackingMode Mode; // 0x0 (1)
+	enum class EMagicLeapHeadTrackingError Error; // 0x1 (1)
 	float Confidence; // 0x4 (4)
 };
 
 // Function MagicLeap.InAppPurchaseComponent.TryPurchaseItemAsync
-inline char UInAppPurchaseComponent::TryPurchaseItemAsync(struct Unknown& ItemDetails) {
+inline char UInAppPurchaseComponent::TryPurchaseItemAsync(struct FPurchaseItemDetails& ItemDetails) {
 	static auto fn = UObject::FindObject<UFunction>("Function MagicLeap.InAppPurchaseComponent.TryPurchaseItemAsync");
 
 	struct TryPurchaseItemAsync_Params {
-		struct Unknown& ItemDetails;
+		struct FPurchaseItemDetails& ItemDetails;
 		char ReturnValue;
 
 	}; TryPurchaseItemAsync_Params Params;
@@ -293,11 +293,11 @@ inline char UInAppPurchaseComponent::TryGetPurchaseHistoryAsync(int32_t InNumPag
 }
 
 // Function MagicLeap.InAppPurchaseComponent.TryGetItemsDetailsAsync
-inline char UInAppPurchaseComponent::TryGetItemsDetailsAsync(struct TArray<Unknown>& ItemIDs) {
+inline char UInAppPurchaseComponent::TryGetItemsDetailsAsync(struct TArray<struct FString>& ItemIDs) {
 	static auto fn = UObject::FindObject<UFunction>("Function MagicLeap.InAppPurchaseComponent.TryGetItemsDetailsAsync");
 
 	struct TryGetItemsDetailsAsync_Params {
-		struct TArray<Unknown>& ItemIDs;
+		struct TArray<struct FString>& ItemIDs;
 		char ReturnValue;
 
 	}; TryGetItemsDetailsAsync_Params Params;
@@ -314,11 +314,11 @@ inline char UInAppPurchaseComponent::TryGetItemsDetailsAsync(struct TArray<Unkno
 }
 
 // DelegateFunction MagicLeap.InAppPurchaseComponent.PurchaseConfirmationSuccess__DelegateSignature
-inline void UInAppPurchaseComponent::PurchaseConfirmationSuccess__DelegateSignature(struct Unknown& PurchaseConfirmations) {
+inline void UInAppPurchaseComponent::PurchaseConfirmationSuccess__DelegateSignature(struct FPurchaseConfirmation& PurchaseConfirmations) {
 	static auto fn = UObject::FindObject<UFunction>("DelegateFunction MagicLeap.InAppPurchaseComponent.PurchaseConfirmationSuccess__DelegateSignature");
 
 	struct PurchaseConfirmationSuccess__DelegateSignature_Params {
-		struct Unknown& PurchaseConfirmations;
+		struct FPurchaseConfirmation& PurchaseConfirmations;
 	}; PurchaseConfirmationSuccess__DelegateSignature_Params Params;
 
 
@@ -360,11 +360,11 @@ inline void UInAppPurchaseComponent::InAppPurchaseLogMessage__DelegateSignature(
 }
 
 // DelegateFunction MagicLeap.InAppPurchaseComponent.GetPurchaseHistorySuccess__DelegateSignature
-inline void UInAppPurchaseComponent::GetPurchaseHistorySuccess__DelegateSignature(struct TArray<Unknown>& PurchaseHistory) {
+inline void UInAppPurchaseComponent::GetPurchaseHistorySuccess__DelegateSignature(struct TArray<struct FPurchaseConfirmation>& PurchaseHistory) {
 	static auto fn = UObject::FindObject<UFunction>("DelegateFunction MagicLeap.InAppPurchaseComponent.GetPurchaseHistorySuccess__DelegateSignature");
 
 	struct GetPurchaseHistorySuccess__DelegateSignature_Params {
-		struct TArray<Unknown>& PurchaseHistory;
+		struct TArray<struct FPurchaseConfirmation>& PurchaseHistory;
 	}; GetPurchaseHistorySuccess__DelegateSignature_Params Params;
 
 
@@ -391,11 +391,11 @@ inline void UInAppPurchaseComponent::GetPurchaseHistoryFailure__DelegateSignatur
 }
 
 // DelegateFunction MagicLeap.InAppPurchaseComponent.GetItemsDetailsSuccess__DelegateSignature
-inline void UInAppPurchaseComponent::GetItemsDetailsSuccess__DelegateSignature(struct TArray<Unknown>& ItemsDetails) {
+inline void UInAppPurchaseComponent::GetItemsDetailsSuccess__DelegateSignature(struct TArray<struct FPurchaseItemDetails>& ItemsDetails) {
 	static auto fn = UObject::FindObject<UFunction>("DelegateFunction MagicLeap.InAppPurchaseComponent.GetItemsDetailsSuccess__DelegateSignature");
 
 	struct GetItemsDetailsSuccess__DelegateSignature_Params {
-		struct TArray<Unknown>& ItemsDetails;
+		struct TArray<struct FPurchaseItemDetails>& ItemsDetails;
 	}; GetItemsDetailsSuccess__DelegateSignature_Params Params;
 
 
@@ -422,12 +422,12 @@ inline void UInAppPurchaseComponent::GetItemsDetailsFailure__DelegateSignature()
 }
 
 // Function MagicLeap.MagicLeapMeshTrackerComponent.SelectMeshBlocks
-inline void UMagicLeapMeshTrackerComponent::SelectMeshBlocks(struct Unknown& NewMeshInfo, struct TArray<Unknown>& RequestedMesh) {
+inline void UMagicLeapMeshTrackerComponent::SelectMeshBlocks(struct FMagicLeapTrackingMeshInfo& NewMeshInfo, struct TArray<struct FMagicLeapMeshBlockRequest>& RequestedMesh) {
 	static auto fn = UObject::FindObject<UFunction>("Function MagicLeap.MagicLeapMeshTrackerComponent.SelectMeshBlocks");
 
 	struct SelectMeshBlocks_Params {
-		struct Unknown& NewMeshInfo;
-		struct TArray<Unknown>& RequestedMesh;
+		struct FMagicLeapTrackingMeshInfo& NewMeshInfo;
+		struct TArray<struct FMagicLeapMeshBlockRequest>& RequestedMesh;
 	}; SelectMeshBlocks_Params Params;
 
 
@@ -441,15 +441,15 @@ inline void UMagicLeapMeshTrackerComponent::SelectMeshBlocks(struct Unknown& New
 }
 
 // DelegateFunction MagicLeap.MagicLeapMeshTrackerComponent.OnMeshTrackerUpdated__DelegateSignature
-inline void UMagicLeapMeshTrackerComponent::OnMeshTrackerUpdated__DelegateSignature(struct Unknown ID, struct TArray<Unknown>& Vertices, struct TArray<Unknown>& Triangles, struct TArray<Unknown>& Normals, struct TArray<Unknown>& Confidence) {
+inline void UMagicLeapMeshTrackerComponent::OnMeshTrackerUpdated__DelegateSignature(struct FGuid ID, struct TArray<struct FVector>& Vertices, struct TArray<int32_t>& Triangles, struct TArray<struct FVector>& Normals, struct TArray<float>& Confidence) {
 	static auto fn = UObject::FindObject<UFunction>("DelegateFunction MagicLeap.MagicLeapMeshTrackerComponent.OnMeshTrackerUpdated__DelegateSignature");
 
 	struct OnMeshTrackerUpdated__DelegateSignature_Params {
-		struct Unknown ID;
-		struct TArray<Unknown>& Vertices;
-		struct TArray<Unknown>& Triangles;
-		struct TArray<Unknown>& Normals;
-		struct TArray<Unknown>& Confidence;
+		struct FGuid ID;
+		struct TArray<struct FVector>& Vertices;
+		struct TArray<int32_t>& Triangles;
+		struct TArray<struct FVector>& Normals;
+		struct TArray<float>& Confidence;
 	}; OnMeshTrackerUpdated__DelegateSignature_Params Params;
 
 	Params.ID = ID;
@@ -484,11 +484,11 @@ inline int32_t UMagicLeapMeshTrackerComponent::GetNumQueuedBlockUpdates() {
 }
 
 // Function MagicLeap.MagicLeapMeshTrackerComponent.DisconnectMRMesh
-inline void UMagicLeapMeshTrackerComponent::DisconnectMRMesh(struct Unknown InMRMeshPtr) {
+inline void UMagicLeapMeshTrackerComponent::DisconnectMRMesh(struct UMRMeshComponent InMRMeshPtr) {
 	static auto fn = UObject::FindObject<UFunction>("Function MagicLeap.MagicLeapMeshTrackerComponent.DisconnectMRMesh");
 
 	struct DisconnectMRMesh_Params {
-		struct Unknown InMRMeshPtr;
+		struct UMRMeshComponent InMRMeshPtr;
 	}; DisconnectMRMesh_Params Params;
 
 	Params.InMRMeshPtr = InMRMeshPtr;
@@ -513,11 +513,11 @@ inline void UMagicLeapMeshTrackerComponent::DisconnectBlockSelector() {
 }
 
 // Function MagicLeap.MagicLeapMeshTrackerComponent.ConnectMRMesh
-inline void UMagicLeapMeshTrackerComponent::ConnectMRMesh(struct Unknown InMRMeshPtr) {
+inline void UMagicLeapMeshTrackerComponent::ConnectMRMesh(struct UMRMeshComponent InMRMeshPtr) {
 	static auto fn = UObject::FindObject<UFunction>("Function MagicLeap.MagicLeapMeshTrackerComponent.ConnectMRMesh");
 
 	struct ConnectMRMesh_Params {
-		struct Unknown InMRMeshPtr;
+		struct UMRMeshComponent InMRMeshPtr;
 	}; ConnectMRMesh_Params Params;
 
 	Params.InMRMeshPtr = InMRMeshPtr;
@@ -528,11 +528,11 @@ inline void UMagicLeapMeshTrackerComponent::ConnectMRMesh(struct Unknown InMRMes
 }
 
 // Function MagicLeap.MagicLeapMeshTrackerComponent.ConnectBlockSelector
-inline void UMagicLeapMeshTrackerComponent::ConnectBlockSelector(struct TScriptInterface<IUnknown> Selector) {
+inline void UMagicLeapMeshTrackerComponent::ConnectBlockSelector(struct TScriptInterface<IMagicLeapMeshBlockSelectorInterface> Selector) {
 	static auto fn = UObject::FindObject<UFunction>("Function MagicLeap.MagicLeapMeshTrackerComponent.ConnectBlockSelector");
 
 	struct ConnectBlockSelector_Params {
-		struct TScriptInterface<IUnknown> Selector;
+		struct TScriptInterface<IMagicLeapMeshBlockSelectorInterface> Selector;
 	}; ConnectBlockSelector_Params Params;
 
 	Params.Selector = Selector;

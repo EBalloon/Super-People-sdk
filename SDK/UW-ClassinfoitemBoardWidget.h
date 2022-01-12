@@ -3,28 +3,28 @@ class UUW-ClassinfoitemBoardWidget_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Anim_Show_classinfo; // 0x250 (8)
-	struct Unknown Button_SpreadList; // 0x258 (8)
-	struct Unknown Image_323; // 0x260 (8)
-	struct Unknown UW-ClassinfoitemWidget; // 0x268 (8)
-	struct Unknown UW-ClassinfoitemWidget_2; // 0x270 (8)
-	struct Unknown UW-ClassinfoitemWidget_3; // 0x278 (8)
-	struct Unknown UW-ClassinfoitemWidget_4; // 0x280 (8)
-	struct Unknown UW-ClassinfoitemWidget_5; // 0x288 (8)
-	struct Unknown UW-ClassinfoitemWidget_6; // 0x290 (8)
-	struct Unknown UW-ClassinfoitemWidget_7; // 0x298 (8)
-	struct Unknown UW-ClassinfoitemWidget_8; // 0x2A0 (8)
-	struct Unknown UW-ClassinfoitemWidget_9; // 0x2A8 (8)
-	struct Unknown UW-ClassinfoitemWidget_10; // 0x2B0 (8)
-	struct Unknown UW-ClassinfoitemWidget_11; // 0x2B8 (8)
-	struct Unknown UW-ClassinfoitemWidget_12; // 0x2C0 (8)
-	struct Unknown VerticalBox_ClassBox; // 0x2C8 (8)
-	struct Unknown VerticalBox_ClassList; // 0x2D0 (8)
-	struct Unknown VerticalBox_Description; // 0x2D8 (8)
-	struct Unknown VerticalBox_Main; // 0x2E0 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UWidgetAnimation Anim_Show_classinfo; // 0x250 (8)
+	struct UButton Button_SpreadList; // 0x258 (8)
+	struct UImage Image_323; // 0x260 (8)
+	struct UUW-ClassinfoitemWidget_C UW-ClassinfoitemWidget; // 0x268 (8)
+	struct UUW-ClassinfoitemWidget_C UW-ClassinfoitemWidget_2; // 0x270 (8)
+	struct UUW-ClassinfoitemWidget_C UW-ClassinfoitemWidget_3; // 0x278 (8)
+	struct UUW-ClassinfoitemWidget_C UW-ClassinfoitemWidget_4; // 0x280 (8)
+	struct UUW-ClassinfoitemWidget_C UW-ClassinfoitemWidget_5; // 0x288 (8)
+	struct UUW-ClassinfoitemWidget_C UW-ClassinfoitemWidget_6; // 0x290 (8)
+	struct UUW-ClassinfoitemWidget_C UW-ClassinfoitemWidget_7; // 0x298 (8)
+	struct UUW-ClassinfoitemWidget_C UW-ClassinfoitemWidget_8; // 0x2A0 (8)
+	struct UUW-ClassinfoitemWidget_C UW-ClassinfoitemWidget_9; // 0x2A8 (8)
+	struct UUW-ClassinfoitemWidget_C UW-ClassinfoitemWidget_10; // 0x2B0 (8)
+	struct UUW-ClassinfoitemWidget_C UW-ClassinfoitemWidget_11; // 0x2B8 (8)
+	struct UUW-ClassinfoitemWidget_C UW-ClassinfoitemWidget_12; // 0x2C0 (8)
+	struct UVerticalBox VerticalBox_ClassBox; // 0x2C8 (8)
+	struct UVerticalBox VerticalBox_ClassList; // 0x2D0 (8)
+	struct UVerticalBox VerticalBox_Description; // 0x2D8 (8)
+	struct UVerticalBox VerticalBox_Main; // 0x2E0 (8)
 	int32_t LastTableRow; // 0x2E8 (4)
-	struct TMap<Unknown, Unknown> ClassInfoItemMap; // 0x2F0 (80)
+	struct TMap<struct FName, struct UUW-ClassinfoitemWidget_C> ClassInfoItemMap; // 0x2F0 (80)
 	char ListVisibility : 0; // 0x340 (1)
 
 	void UpdateClassCount(); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.UpdateClassCount(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -35,7 +35,7 @@ public:
 	void OpenList(); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.OpenList(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CloseList(); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.CloseList(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void UpdateList(); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.UpdateList(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnBattleRoyalStateChanged_Event_1(enum class Unknow PrevState, enum class Unknow CurrentState); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.OnBattleRoyalStateChanged_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnBattleRoyalStateChanged_Event_1(enum class EBattleRoyaleState PrevState, enum class EBattleRoyaleState CurrentState); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.OnBattleRoyalStateChanged_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnUpdateClassCount_Event_1(); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.OnUpdateClassCount_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-ClassinfoitemBoardWidget(int32_t EntryPoint); // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.ExecuteUbergraph_UW-ClassinfoitemBoardWidget(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
 };
@@ -153,12 +153,12 @@ inline void UUW-ClassinfoitemBoardWidget_C::UpdateList() {
 }
 
 // Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.OnBattleRoyalStateChanged_Event_1
-inline void UUW-ClassinfoitemBoardWidget_C::OnBattleRoyalStateChanged_Event_1(enum class Unknow PrevState, enum class Unknow CurrentState) {
+inline void UUW-ClassinfoitemBoardWidget_C::OnBattleRoyalStateChanged_Event_1(enum class EBattleRoyaleState PrevState, enum class EBattleRoyaleState CurrentState) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-ClassinfoitemBoardWidget.UW-ClassinfoitemBoardWidget_C.OnBattleRoyalStateChanged_Event_1");
 
 	struct OnBattleRoyalStateChanged_Event_1_Params {
-		enum class Unknow PrevState;
-		enum class Unknow CurrentState;
+		enum class EBattleRoyaleState PrevState;
+		enum class EBattleRoyaleState CurrentState;
 	}; OnBattleRoyalStateChanged_Event_1_Params Params;
 
 	Params.PrevState = PrevState;

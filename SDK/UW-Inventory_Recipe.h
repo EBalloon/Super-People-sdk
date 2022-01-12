@@ -3,24 +3,24 @@ class UUW-Inventory_Recipe_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Character_BG_Motion; // 0x250 (8)
-	struct Unknown Image_308; // 0x258 (8)
-	struct Unknown ScrollBox_KeepedList; // 0x260 (8)
-	struct Unknown SizeBox_KeepedList; // 0x268 (8)
-	struct Unknown PlayerController; // 0x270 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UWidgetAnimation Character_BG_Motion; // 0x250 (8)
+	struct UImage Image_308; // 0x258 (8)
+	struct UScrollBox ScrollBox_KeepedList; // 0x260 (8)
+	struct USizeBox SizeBox_KeepedList; // 0x268 (8)
+	struct ABP-BravoHotel-PlayerController_C PlayerController; // 0x270 (8)
 	float SlotMaxHeight; // 0x278 (4)
 
 	void UpdateSlotMaxSize(int32_t SlotNum); // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.UpdateSlotMaxSize(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void DisableCarriedListHover(); // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.DisableCarriedListHover(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	char DropItem(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation); // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.DropItem(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetInventoryComponent(char& Result, struct Unknown& InventoryComponentRef); // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.GetInventoryComponent(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	char DropItem(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.DropItem(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetInventoryComponent(char& Result, struct UPlayerInventoryComponent& InventoryComponentRef); // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.GetInventoryComponent(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Reset(); // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.Reset(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void HoverEquipSlotList(enum class Unknow WearableItemType); // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.HoverEquipSlotList(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void HoverEquipSlotList(enum class EWearableItemType WearableItemType); // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.HoverEquipSlotList(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void HoverResetEquipSlotList(); // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.HoverResetEquipSlotList(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	char OnDrop(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation); // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.OnDrop(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnDragEnter(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation); // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.OnDragEnter(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnDragLeave(struct Unknown PointerEvent, struct Unknown Operation); // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.OnDragLeave(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	char OnDrop(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.OnDrop(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnDragEnter(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.OnDragEnter(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnDragLeave(struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.OnDragLeave(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-Inventory_Recipe(int32_t EntryPoint); // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.ExecuteUbergraph_UW-Inventory_Recipe(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
@@ -55,13 +55,13 @@ inline void UUW-Inventory_Recipe_C::DisableCarriedListHover() {
 }
 
 // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.DropItem
-inline char UUW-Inventory_Recipe_C::DropItem(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation) {
+inline char UUW-Inventory_Recipe_C::DropItem(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.DropItem");
 
 	struct DropItem_Params {
-		struct Unknown MyGeometry;
-		struct Unknown PointerEvent;
-		struct Unknown Operation;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent PointerEvent;
+		struct UDragDropOperation Operation;
 		char ReturnValue;
 
 	}; DropItem_Params Params;
@@ -78,12 +78,12 @@ inline char UUW-Inventory_Recipe_C::DropItem(struct Unknown MyGeometry, struct U
 }
 
 // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.GetInventoryComponent
-inline void UUW-Inventory_Recipe_C::GetInventoryComponent(char& Result, struct Unknown& InventoryComponentRef) {
+inline void UUW-Inventory_Recipe_C::GetInventoryComponent(char& Result, struct UPlayerInventoryComponent& InventoryComponentRef) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.GetInventoryComponent");
 
 	struct GetInventoryComponent_Params {
 		char& Result;
-		struct Unknown& InventoryComponentRef;
+		struct UPlayerInventoryComponent& InventoryComponentRef;
 	}; GetInventoryComponent_Params Params;
 
 
@@ -111,11 +111,11 @@ inline void UUW-Inventory_Recipe_C::Reset() {
 }
 
 // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.HoverEquipSlotList
-inline void UUW-Inventory_Recipe_C::HoverEquipSlotList(enum class Unknow WearableItemType) {
+inline void UUW-Inventory_Recipe_C::HoverEquipSlotList(enum class EWearableItemType WearableItemType) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.HoverEquipSlotList");
 
 	struct HoverEquipSlotList_Params {
-		enum class Unknow WearableItemType;
+		enum class EWearableItemType WearableItemType;
 	}; HoverEquipSlotList_Params Params;
 
 	Params.WearableItemType = WearableItemType;
@@ -140,13 +140,13 @@ inline void UUW-Inventory_Recipe_C::HoverResetEquipSlotList() {
 }
 
 // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.OnDrop
-inline char UUW-Inventory_Recipe_C::OnDrop(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation) {
+inline char UUW-Inventory_Recipe_C::OnDrop(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.OnDrop");
 
 	struct OnDrop_Params {
-		struct Unknown MyGeometry;
-		struct Unknown PointerEvent;
-		struct Unknown Operation;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent PointerEvent;
+		struct UDragDropOperation Operation;
 		char ReturnValue;
 
 	}; OnDrop_Params Params;
@@ -163,13 +163,13 @@ inline char UUW-Inventory_Recipe_C::OnDrop(struct Unknown MyGeometry, struct Unk
 }
 
 // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.OnDragEnter
-inline void UUW-Inventory_Recipe_C::OnDragEnter(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation) {
+inline void UUW-Inventory_Recipe_C::OnDragEnter(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.OnDragEnter");
 
 	struct OnDragEnter_Params {
-		struct Unknown MyGeometry;
-		struct Unknown PointerEvent;
-		struct Unknown Operation;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent PointerEvent;
+		struct UDragDropOperation Operation;
 	}; OnDragEnter_Params Params;
 
 	Params.MyGeometry = MyGeometry;
@@ -182,12 +182,12 @@ inline void UUW-Inventory_Recipe_C::OnDragEnter(struct Unknown MyGeometry, struc
 }
 
 // Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.OnDragLeave
-inline void UUW-Inventory_Recipe_C::OnDragLeave(struct Unknown PointerEvent, struct Unknown Operation) {
+inline void UUW-Inventory_Recipe_C::OnDragLeave(struct FPointerEvent PointerEvent, struct UDragDropOperation Operation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Recipe.UW-Inventory_Recipe_C.OnDragLeave");
 
 	struct OnDragLeave_Params {
-		struct Unknown PointerEvent;
-		struct Unknown Operation;
+		struct FPointerEvent PointerEvent;
+		struct UDragDropOperation Operation;
 	}; OnDragLeave_Params Params;
 
 	Params.PointerEvent = PointerEvent;

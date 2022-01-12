@@ -3,34 +3,34 @@ class UUW-FallingWidget_C : public UBravoHotelFallingWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x270 (8)
-	struct Unknown Parachute_Loop; // 0x278 (8)
-	struct Unknown Parachute_Open; // 0x280 (8)
-	struct Unknown Canvas; // 0x288 (8)
-	struct Unknown HorizontalBox_Ground; // 0x290 (8)
-	struct Unknown HorizontalBox_Parachute; // 0x298 (8)
-	struct Unknown HorizontalBox_Sea; // 0x2A0 (8)
-	struct Unknown Image_797; // 0x2A8 (8)
-	struct Unknown Image_798; // 0x2B0 (8)
-	struct Unknown Overlay_Speed; // 0x2B8 (8)
-	struct Unknown Parachute; // 0x2C0 (8)
-	struct Unknown Player; // 0x2C8 (8)
-	struct Unknown PlayerGroup; // 0x2D0 (8)
-	struct Unknown SeaHeight; // 0x2D8 (8)
-	struct Unknown Speed; // 0x2E0 (8)
-	struct Unknown TerrainHeight; // 0x2E8 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x270 (8)
+	struct UWidgetAnimation Parachute_Loop; // 0x278 (8)
+	struct UWidgetAnimation Parachute_Open; // 0x280 (8)
+	struct UCanvasPanel Canvas; // 0x288 (8)
+	struct UHorizontalBox HorizontalBox_Ground; // 0x290 (8)
+	struct UHorizontalBox HorizontalBox_Parachute; // 0x298 (8)
+	struct UHorizontalBox HorizontalBox_Sea; // 0x2A0 (8)
+	struct UImage Image_797; // 0x2A8 (8)
+	struct UImage Image_798; // 0x2B0 (8)
+	struct UOverlay Overlay_Speed; // 0x2B8 (8)
+	struct UImage Parachute; // 0x2C0 (8)
+	struct UImage Player; // 0x2C8 (8)
+	struct UCanvasPanel PlayerGroup; // 0x2D0 (8)
+	struct UProgressBar SeaHeight; // 0x2D8 (8)
+	struct UTextBlock Speed; // 0x2E0 (8)
+	struct UProgressBar TerrainHeight; // 0x2E8 (8)
 	char IsParachute : 0; // 0x2F0 (1)
 
-	void SetParachuteInfo(struct Unknown SetParachuteInfo); // Function UW-FallingWidget.UW-FallingWidget_C.SetParachuteInfo(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetParachuteInfo(struct FParachuteInfo SetParachuteInfo); // Function UW-FallingWidget.UW-FallingWidget_C.SetParachuteInfo(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-FallingWidget(int32_t EntryPoint); // Function UW-FallingWidget.UW-FallingWidget_C.ExecuteUbergraph_UW-FallingWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-FallingWidget.UW-FallingWidget_C.SetParachuteInfo
-inline void UUW-FallingWidget_C::SetParachuteInfo(struct Unknown SetParachuteInfo) {
+inline void UUW-FallingWidget_C::SetParachuteInfo(struct FParachuteInfo SetParachuteInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-FallingWidget.UW-FallingWidget_C.SetParachuteInfo");
 
 	struct SetParachuteInfo_Params {
-		struct Unknown SetParachuteInfo;
+		struct FParachuteInfo SetParachuteInfo;
 	}; SetParachuteInfo_Params Params;
 
 	Params.SetParachuteInfo = SetParachuteInfo;

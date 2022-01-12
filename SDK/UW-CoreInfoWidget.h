@@ -3,33 +3,33 @@ class UUW-CoreInfoWidget_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown VB_CoreList; // 0x250 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UVerticalBox VB_CoreList; // 0x250 (8)
 	int32_t MaxWidgetCount; // 0x258 (4)
 	char bStartFromTop : 0; // 0x25C (1)
 	char Alignment; // 0x25D (1)
 	int32_t SetWidgetSwitcherIndex; // 0x260 (4)
 
-	void CheckCanStackDamageLog(struct Unknown& DamageLogInfo, char& CanStack); // Function UW-CoreInfoWidget.UW-CoreInfoWidget_C.CheckCanStackDamageLog(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AddCoreInfoDamageLog(struct Unknown& DamageLogInfo); // Function UW-CoreInfoWidget.UW-CoreInfoWidget_C.AddCoreInfoDamageLog(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void CheckCanStackDamageLog(struct FHitDamageLogInfo& DamageLogInfo, char& CanStack); // Function UW-CoreInfoWidget.UW-CoreInfoWidget_C.CheckCanStackDamageLog(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AddCoreInfoDamageLog(struct FHitDamageLogInfo& DamageLogInfo); // Function UW-CoreInfoWidget.UW-CoreInfoWidget_C.AddCoreInfoDamageLog(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void AddMyKillMessage(struct FText Message); // Function UW-CoreInfoWidget.UW-CoreInfoWidget_C.AddMyKillMessage(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AddCoreInfoRequestResuscitation(struct Unknown PlayerState); // Function UW-CoreInfoWidget.UW-CoreInfoWidget_C.AddCoreInfoRequestResuscitation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AddRequestMessage(struct FText Message, struct Unknown PlayerState); // Function UW-CoreInfoWidget.UW-CoreInfoWidget_C.AddRequestMessage(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AddCoreInfoRouteping(struct Unknown PlayerState); // Function UW-CoreInfoWidget.UW-CoreInfoWidget_C.AddCoreInfoRouteping(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AddCoreInfoRequestResuscitation(struct ABravoHotelPlayerState PlayerState); // Function UW-CoreInfoWidget.UW-CoreInfoWidget_C.AddCoreInfoRequestResuscitation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AddRequestMessage(struct FText Message, struct ABravoHotelPlayerState PlayerState); // Function UW-CoreInfoWidget.UW-CoreInfoWidget_C.AddRequestMessage(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AddCoreInfoRouteping(struct ABravoHotelPlayerState PlayerState); // Function UW-CoreInfoWidget.UW-CoreInfoWidget_C.AddCoreInfoRouteping(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void AddCoreInfoMessage(struct FText Message, struct FString Type); // Function UW-CoreInfoWidget.UW-CoreInfoWidget_C.AddCoreInfoMessage(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AddCoreInfoSmartping(struct Unknown PlayerState); // Function UW-CoreInfoWidget.UW-CoreInfoWidget_C.AddCoreInfoSmartping(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowNewWidget(float RemainTime, struct Unknown& CoreInfoItemWidget); // Function UW-CoreInfoWidget.UW-CoreInfoWidget_C.ShowNewWidget(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AddCoreInfoSmartping(struct ABravoHotelPlayerState PlayerState); // Function UW-CoreInfoWidget.UW-CoreInfoWidget_C.AddCoreInfoSmartping(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowNewWidget(float RemainTime, struct UUW-CoreInfoWidgetItem_C& CoreInfoItemWidget); // Function UW-CoreInfoWidget.UW-CoreInfoWidget_C.ShowNewWidget(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void InitChildCoreWidget(); // Function UW-CoreInfoWidget.UW-CoreInfoWidget_C.InitChildCoreWidget(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void PreConstruct(char IsDesignTime); // Function UW-CoreInfoWidget.UW-CoreInfoWidget_C.PreConstruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-CoreInfoWidget(int32_t EntryPoint); // Function UW-CoreInfoWidget.UW-CoreInfoWidget_C.ExecuteUbergraph_UW-CoreInfoWidget(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-CoreInfoWidget.UW-CoreInfoWidget_C.CheckCanStackDamageLog
-inline void UUW-CoreInfoWidget_C::CheckCanStackDamageLog(struct Unknown& DamageLogInfo, char& CanStack) {
+inline void UUW-CoreInfoWidget_C::CheckCanStackDamageLog(struct FHitDamageLogInfo& DamageLogInfo, char& CanStack) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-CoreInfoWidget.UW-CoreInfoWidget_C.CheckCanStackDamageLog");
 
 	struct CheckCanStackDamageLog_Params {
-		struct Unknown& DamageLogInfo;
+		struct FHitDamageLogInfo& DamageLogInfo;
 		char& CanStack;
 	}; CheckCanStackDamageLog_Params Params;
 
@@ -44,11 +44,11 @@ inline void UUW-CoreInfoWidget_C::CheckCanStackDamageLog(struct Unknown& DamageL
 }
 
 // Function UW-CoreInfoWidget.UW-CoreInfoWidget_C.AddCoreInfoDamageLog
-inline void UUW-CoreInfoWidget_C::AddCoreInfoDamageLog(struct Unknown& DamageLogInfo) {
+inline void UUW-CoreInfoWidget_C::AddCoreInfoDamageLog(struct FHitDamageLogInfo& DamageLogInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-CoreInfoWidget.UW-CoreInfoWidget_C.AddCoreInfoDamageLog");
 
 	struct AddCoreInfoDamageLog_Params {
-		struct Unknown& DamageLogInfo;
+		struct FHitDamageLogInfo& DamageLogInfo;
 	}; AddCoreInfoDamageLog_Params Params;
 
 
@@ -76,11 +76,11 @@ inline void UUW-CoreInfoWidget_C::AddMyKillMessage(struct FText Message) {
 }
 
 // Function UW-CoreInfoWidget.UW-CoreInfoWidget_C.AddCoreInfoRequestResuscitation
-inline void UUW-CoreInfoWidget_C::AddCoreInfoRequestResuscitation(struct Unknown PlayerState) {
+inline void UUW-CoreInfoWidget_C::AddCoreInfoRequestResuscitation(struct ABravoHotelPlayerState PlayerState) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-CoreInfoWidget.UW-CoreInfoWidget_C.AddCoreInfoRequestResuscitation");
 
 	struct AddCoreInfoRequestResuscitation_Params {
-		struct Unknown PlayerState;
+		struct ABravoHotelPlayerState PlayerState;
 	}; AddCoreInfoRequestResuscitation_Params Params;
 
 	Params.PlayerState = PlayerState;
@@ -91,12 +91,12 @@ inline void UUW-CoreInfoWidget_C::AddCoreInfoRequestResuscitation(struct Unknown
 }
 
 // Function UW-CoreInfoWidget.UW-CoreInfoWidget_C.AddRequestMessage
-inline void UUW-CoreInfoWidget_C::AddRequestMessage(struct FText Message, struct Unknown PlayerState) {
+inline void UUW-CoreInfoWidget_C::AddRequestMessage(struct FText Message, struct ABravoHotelPlayerState PlayerState) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-CoreInfoWidget.UW-CoreInfoWidget_C.AddRequestMessage");
 
 	struct AddRequestMessage_Params {
 		struct FText Message;
-		struct Unknown PlayerState;
+		struct ABravoHotelPlayerState PlayerState;
 	}; AddRequestMessage_Params Params;
 
 	Params.Message = Message;
@@ -108,11 +108,11 @@ inline void UUW-CoreInfoWidget_C::AddRequestMessage(struct FText Message, struct
 }
 
 // Function UW-CoreInfoWidget.UW-CoreInfoWidget_C.AddCoreInfoRouteping
-inline void UUW-CoreInfoWidget_C::AddCoreInfoRouteping(struct Unknown PlayerState) {
+inline void UUW-CoreInfoWidget_C::AddCoreInfoRouteping(struct ABravoHotelPlayerState PlayerState) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-CoreInfoWidget.UW-CoreInfoWidget_C.AddCoreInfoRouteping");
 
 	struct AddCoreInfoRouteping_Params {
-		struct Unknown PlayerState;
+		struct ABravoHotelPlayerState PlayerState;
 	}; AddCoreInfoRouteping_Params Params;
 
 	Params.PlayerState = PlayerState;
@@ -140,11 +140,11 @@ inline void UUW-CoreInfoWidget_C::AddCoreInfoMessage(struct FText Message, struc
 }
 
 // Function UW-CoreInfoWidget.UW-CoreInfoWidget_C.AddCoreInfoSmartping
-inline void UUW-CoreInfoWidget_C::AddCoreInfoSmartping(struct Unknown PlayerState) {
+inline void UUW-CoreInfoWidget_C::AddCoreInfoSmartping(struct ABravoHotelPlayerState PlayerState) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-CoreInfoWidget.UW-CoreInfoWidget_C.AddCoreInfoSmartping");
 
 	struct AddCoreInfoSmartping_Params {
-		struct Unknown PlayerState;
+		struct ABravoHotelPlayerState PlayerState;
 	}; AddCoreInfoSmartping_Params Params;
 
 	Params.PlayerState = PlayerState;
@@ -155,12 +155,12 @@ inline void UUW-CoreInfoWidget_C::AddCoreInfoSmartping(struct Unknown PlayerStat
 }
 
 // Function UW-CoreInfoWidget.UW-CoreInfoWidget_C.ShowNewWidget
-inline void UUW-CoreInfoWidget_C::ShowNewWidget(float RemainTime, struct Unknown& CoreInfoItemWidget) {
+inline void UUW-CoreInfoWidget_C::ShowNewWidget(float RemainTime, struct UUW-CoreInfoWidgetItem_C& CoreInfoItemWidget) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-CoreInfoWidget.UW-CoreInfoWidget_C.ShowNewWidget");
 
 	struct ShowNewWidget_Params {
 		float RemainTime;
-		struct Unknown& CoreInfoItemWidget;
+		struct UUW-CoreInfoWidgetItem_C& CoreInfoItemWidget;
 	}; ShowNewWidget_Params Params;
 
 	Params.RemainTime = RemainTime;

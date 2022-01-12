@@ -3,15 +3,15 @@ class UUW-ClassinfoitemWidget_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Image_ClassIcon; // 0x250 (8)
-	struct Unknown TextBlock_ClassName; // 0x258 (8)
-	struct Unknown TextBlock_Count; // 0x260 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UImage Image_ClassIcon; // 0x250 (8)
+	struct UTextBlock TextBlock_ClassName; // 0x258 (8)
+	struct UTextBlock TextBlock_Count; // 0x260 (8)
 
 	void SetClassCount(int32_t Count); // Function UW-ClassinfoitemWidget.UW-ClassinfoitemWidget_C.SetClassCount(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetClassInfo(struct Unknown& PerkDeckData); // Function UW-ClassinfoitemWidget.UW-ClassinfoitemWidget_C.SetClassInfo(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnLoaded_5B4CA9324370B6EF1C483DB3B88E6511(struct Unknown Loaded); // Function UW-ClassinfoitemWidget.UW-ClassinfoitemWidget_C.OnLoaded_5B4CA9324370B6EF1C483DB3B88E6511(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AsyncLoadingClassIcon(struct Unknown Texture); // Function UW-ClassinfoitemWidget.UW-ClassinfoitemWidget_C.AsyncLoadingClassIcon(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetClassInfo(struct FPerkDeckData& PerkDeckData); // Function UW-ClassinfoitemWidget.UW-ClassinfoitemWidget_C.SetClassInfo(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_5B4CA9324370B6EF1C483DB3B88E6511(struct Object Loaded); // Function UW-ClassinfoitemWidget.UW-ClassinfoitemWidget_C.OnLoaded_5B4CA9324370B6EF1C483DB3B88E6511(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AsyncLoadingClassIcon(struct TSoftObjectPtr<Object> Texture); // Function UW-ClassinfoitemWidget.UW-ClassinfoitemWidget_C.AsyncLoadingClassIcon(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-ClassinfoitemWidget(int32_t EntryPoint); // Function UW-ClassinfoitemWidget.UW-ClassinfoitemWidget_C.ExecuteUbergraph_UW-ClassinfoitemWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
@@ -31,11 +31,11 @@ inline void UUW-ClassinfoitemWidget_C::SetClassCount(int32_t Count) {
 }
 
 // Function UW-ClassinfoitemWidget.UW-ClassinfoitemWidget_C.SetClassInfo
-inline void UUW-ClassinfoitemWidget_C::SetClassInfo(struct Unknown& PerkDeckData) {
+inline void UUW-ClassinfoitemWidget_C::SetClassInfo(struct FPerkDeckData& PerkDeckData) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-ClassinfoitemWidget.UW-ClassinfoitemWidget_C.SetClassInfo");
 
 	struct SetClassInfo_Params {
-		struct Unknown& PerkDeckData;
+		struct FPerkDeckData& PerkDeckData;
 	}; SetClassInfo_Params Params;
 
 
@@ -48,11 +48,11 @@ inline void UUW-ClassinfoitemWidget_C::SetClassInfo(struct Unknown& PerkDeckData
 }
 
 // Function UW-ClassinfoitemWidget.UW-ClassinfoitemWidget_C.OnLoaded_5B4CA9324370B6EF1C483DB3B88E6511
-inline void UUW-ClassinfoitemWidget_C::OnLoaded_5B4CA9324370B6EF1C483DB3B88E6511(struct Unknown Loaded) {
+inline void UUW-ClassinfoitemWidget_C::OnLoaded_5B4CA9324370B6EF1C483DB3B88E6511(struct Object Loaded) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-ClassinfoitemWidget.UW-ClassinfoitemWidget_C.OnLoaded_5B4CA9324370B6EF1C483DB3B88E6511");
 
 	struct OnLoaded_5B4CA9324370B6EF1C483DB3B88E6511_Params {
-		struct Unknown Loaded;
+		struct Object Loaded;
 	}; OnLoaded_5B4CA9324370B6EF1C483DB3B88E6511_Params Params;
 
 	Params.Loaded = Loaded;
@@ -63,11 +63,11 @@ inline void UUW-ClassinfoitemWidget_C::OnLoaded_5B4CA9324370B6EF1C483DB3B88E6511
 }
 
 // Function UW-ClassinfoitemWidget.UW-ClassinfoitemWidget_C.AsyncLoadingClassIcon
-inline void UUW-ClassinfoitemWidget_C::AsyncLoadingClassIcon(struct Unknown Texture) {
+inline void UUW-ClassinfoitemWidget_C::AsyncLoadingClassIcon(struct TSoftObjectPtr<Object> Texture) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-ClassinfoitemWidget.UW-ClassinfoitemWidget_C.AsyncLoadingClassIcon");
 
 	struct AsyncLoadingClassIcon_Params {
-		struct Unknown Texture;
+		struct TSoftObjectPtr<Object> Texture;
 	}; AsyncLoadingClassIcon_Params Params;
 
 	Params.Texture = Texture;

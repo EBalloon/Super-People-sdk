@@ -3,37 +3,37 @@ class UUW-PerkLevelUp_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Disappear; // 0x250 (8)
-	struct Unknown Finish; // 0x258 (8)
-	struct Unknown Spin; // 0x260 (8)
-	struct Unknown Idle; // 0x268 (8)
-	struct Unknown Image_180; // 0x270 (8)
-	struct Unknown ItemImage_bg; // 0x278 (8)
-	struct Unknown ItemImage_Dummy1; // 0x280 (8)
-	struct Unknown ItemImage_Main; // 0x288 (8)
-	struct Unknown TextBlock_1; // 0x290 (8)
-	struct Unknown TextBlock_3; // 0x298 (8)
-	struct Unknown TextMountablewea; // 0x2A0 (8)
-	struct Unknown TextMountableweaLV1; // 0x2A8 (8)
-	struct Unknown PerkInfo; // 0x2B0 (40)
-	struct Unknown PerkData; // 0x2D8 (224)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UWidgetAnimation Disappear; // 0x250 (8)
+	struct UWidgetAnimation Finish; // 0x258 (8)
+	struct UWidgetAnimation Spin; // 0x260 (8)
+	struct UWidgetAnimation Idle; // 0x268 (8)
+	struct UImage Image_180; // 0x270 (8)
+	struct UImage ItemImage_bg; // 0x278 (8)
+	struct UImage ItemImage_Dummy1; // 0x280 (8)
+	struct UImage ItemImage_Main; // 0x288 (8)
+	struct UTextBlock TextBlock_1; // 0x290 (8)
+	struct UTextBlock TextBlock_3; // 0x298 (8)
+	struct UTextBlock TextMountablewea; // 0x2A0 (8)
+	struct UTextBlock TextMountableweaLV1; // 0x2A8 (8)
+	struct FPerkInfo PerkInfo; // 0x2B0 (40)
+	struct FPerkData PerkData; // 0x2D8 (224)
 	char bLevelUp : 0; // 0x3B8 (1)
 	char bFinishing : 0; // 0x3B9 (1)
 	float FinishTime; // 0x3BC (4)
-	enum class Unknow PerkSlot; // 0x3C0 (1)
+	enum class EPerkSlotFlag PerkSlot; // 0x3C0 (1)
 
 	struct FText Get_TextBlock_1_Text_1(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Get_TextBlock_1_Text_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	struct Unknown Get_ItemImage_bg_Brush_1(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Get_ItemImage_bg_Brush_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	struct Unknown Get_ItemImage_Main_Brush_1(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Get_ItemImage_Main_Brush_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	struct FSlateBrush Get_ItemImage_bg_Brush_1(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Get_ItemImage_bg_Brush_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	struct FSlateBrush Get_ItemImage_Main_Brush_1(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Get_ItemImage_Main_Brush_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	struct FText Get_TextMountablewea_Text_1(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Get_TextMountablewea_Text_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	enum class Unknow Get_TextBlock_2_Visibility_1(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Get_TextBlock_2_Visibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	enum class Unknow Get_TextBlock_0_Visibility_1(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Get_TextBlock_0_Visibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	enum class ESlateVisibility Get_TextBlock_2_Visibility_1(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Get_TextBlock_2_Visibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	enum class ESlateVisibility Get_TextBlock_0_Visibility_1(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Get_TextBlock_0_Visibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void StartFinish(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.StartFinish(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void StartSpin(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.StartSpin(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void EndFinish(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.EndFinish(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetPerkInfo(struct Unknown PerkInfo); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.SetPerkInfo(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetPerkInfo(struct FPerkInfo PerkInfo); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.SetPerkInfo(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void RemoveSelf(); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.RemoveSelf(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-PerkLevelUp(int32_t EntryPoint); // Function UW-PerkLevelUp.UW-PerkLevelUp_C.ExecuteUbergraph_UW-PerkLevelUp(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
@@ -57,12 +57,12 @@ inline struct FText UUW-PerkLevelUp_C::Get_TextBlock_1_Text_1() {
 }
 
 // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Get_ItemImage_bg_Brush_1
-inline struct Unknown UUW-PerkLevelUp_C::Get_ItemImage_bg_Brush_1() {
+inline struct FSlateBrush UUW-PerkLevelUp_C::Get_ItemImage_bg_Brush_1() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PerkLevelUp.UW-PerkLevelUp_C.Get_ItemImage_bg_Brush_1");
 
 	struct Get_ItemImage_bg_Brush_1_Params {
 		
-		struct Unknown ReturnValue;
+		struct FSlateBrush ReturnValue;
 
 	}; Get_ItemImage_bg_Brush_1_Params Params;
 
@@ -75,12 +75,12 @@ inline struct Unknown UUW-PerkLevelUp_C::Get_ItemImage_bg_Brush_1() {
 }
 
 // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Get_ItemImage_Main_Brush_1
-inline struct Unknown UUW-PerkLevelUp_C::Get_ItemImage_Main_Brush_1() {
+inline struct FSlateBrush UUW-PerkLevelUp_C::Get_ItemImage_Main_Brush_1() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PerkLevelUp.UW-PerkLevelUp_C.Get_ItemImage_Main_Brush_1");
 
 	struct Get_ItemImage_Main_Brush_1_Params {
 		
-		struct Unknown ReturnValue;
+		struct FSlateBrush ReturnValue;
 
 	}; Get_ItemImage_Main_Brush_1_Params Params;
 
@@ -111,12 +111,12 @@ inline struct FText UUW-PerkLevelUp_C::Get_TextMountablewea_Text_1() {
 }
 
 // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Get_TextBlock_2_Visibility_1
-inline enum class Unknow UUW-PerkLevelUp_C::Get_TextBlock_2_Visibility_1() {
+inline enum class ESlateVisibility UUW-PerkLevelUp_C::Get_TextBlock_2_Visibility_1() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PerkLevelUp.UW-PerkLevelUp_C.Get_TextBlock_2_Visibility_1");
 
 	struct Get_TextBlock_2_Visibility_1_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class ESlateVisibility ReturnValue;
 
 	}; Get_TextBlock_2_Visibility_1_Params Params;
 
@@ -129,12 +129,12 @@ inline enum class Unknow UUW-PerkLevelUp_C::Get_TextBlock_2_Visibility_1() {
 }
 
 // Function UW-PerkLevelUp.UW-PerkLevelUp_C.Get_TextBlock_0_Visibility_1
-inline enum class Unknow UUW-PerkLevelUp_C::Get_TextBlock_0_Visibility_1() {
+inline enum class ESlateVisibility UUW-PerkLevelUp_C::Get_TextBlock_0_Visibility_1() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PerkLevelUp.UW-PerkLevelUp_C.Get_TextBlock_0_Visibility_1");
 
 	struct Get_TextBlock_0_Visibility_1_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class ESlateVisibility ReturnValue;
 
 	}; Get_TextBlock_0_Visibility_1_Params Params;
 
@@ -203,11 +203,11 @@ inline void UUW-PerkLevelUp_C::EndFinish() {
 }
 
 // Function UW-PerkLevelUp.UW-PerkLevelUp_C.SetPerkInfo
-inline void UUW-PerkLevelUp_C::SetPerkInfo(struct Unknown PerkInfo) {
+inline void UUW-PerkLevelUp_C::SetPerkInfo(struct FPerkInfo PerkInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PerkLevelUp.UW-PerkLevelUp_C.SetPerkInfo");
 
 	struct SetPerkInfo_Params {
-		struct Unknown PerkInfo;
+		struct FPerkInfo PerkInfo;
 	}; SetPerkInfo_Params Params;
 
 	Params.PerkInfo = PerkInfo;

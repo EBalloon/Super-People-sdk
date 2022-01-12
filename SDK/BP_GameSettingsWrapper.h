@@ -3,8 +3,8 @@ class UBP_GameSettingsWrapper_C : public Object {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x28 (8)
-	struct Unknown Game Settings; // 0x30 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x28 (8)
+	struct UBP_GameSettings_C Game Settings; // 0x30 (8)
 
 	void ExecuteUbergraph_BP_GameSettingsWrapper(int32_t EntryPoint); // Function BP_GameSettingsWrapper.BP_GameSettingsWrapper_C.ExecuteUbergraph_BP_GameSettingsWrapper(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
 };

@@ -80,40 +80,40 @@ public:
 
 	struct FString PackageName; // 0x28 (16)
 	struct FString ApplicationDisplayName; // 0x38 (16)
-	enum class Unknow FrameTimingHint; // 0x48 (1)
+	enum class ELuminFrameTimingHint FrameTimingHint; // 0x48 (1)
 	char bProtectedContent : 0; // 0x49 (1)
 	char bManualCallToAppReady : 0; // 0x4A (1)
 	char bUseMobileRendering : 0; // 0x4B (1)
 	char bUseVulkan : 0; // 0x4C (1)
-	struct Unknown Certificate; // 0x50 (16)
-	struct Unknown IconModelPath; // 0x60 (16)
-	struct Unknown IconPortalPath; // 0x70 (16)
-	struct Unknown LocalizedIconInfos; // 0x80 (16)
+	struct FFilePath Certificate; // 0x50 (16)
+	struct FDirectoryPath IconModelPath; // 0x60 (16)
+	struct FDirectoryPath IconPortalPath; // 0x70 (16)
+	struct FLocalizedIconInfos LocalizedIconInfos; // 0x80 (16)
 	int32_t VersionCode; // 0x90 (4)
 	int32_t MinimumAPILevel; // 0x94 (4)
-	struct TArray<Unknown> AppPrivileges; // 0x98 (16)
-	struct TArray<Unknown> ExtraComponentSubElements; // 0xA8 (16)
-	struct TArray<Unknown> ExtraComponentElements; // 0xB8 (16)
+	struct TArray<enum class ELuminPrivilege> AppPrivileges; // 0x98 (16)
+	struct TArray<struct FLuminComponentSubElement> ExtraComponentSubElements; // 0xA8 (16)
+	struct TArray<struct FLuminComponentElement> ExtraComponentElements; // 0xB8 (16)
 	struct FString SpatializationPlugin; // 0xC8 (16)
 	struct FString ReverbPlugin; // 0xD8 (16)
 	struct FString OcclusionPlugin; // 0xE8 (16)
 	int32_t SoundCueCookQualityIndex; // 0xF8 (4)
 	char bRemoveDebugInfo : 0; // 0xFC (1)
-	struct Unknown VulkanValidationLayerLibs; // 0x100 (16)
+	struct FDirectoryPath VulkanValidationLayerLibs; // 0x100 (16)
 	char bFrameVignette : 0; // 0x110 (1)
-	struct TArray<Unknown> LocalizedAppNames; // 0x118 (16)
+	struct TArray<struct FLocalizedAppName> LocalizedAppNames; // 0x118 (16)
 };
 
 // ScriptStruct LuminRuntimeSettings.LocalizedIconInfos
 struct FLocalizedIconInfos {
-	struct TArray<Unknown> IconData; // 0x0 (16)
+	struct TArray<struct FLocalizedIconInfo> IconData; // 0x0 (16)
 };
 
 // ScriptStruct LuminRuntimeSettings.LocalizedIconInfo
 struct FLocalizedIconInfo {
 	struct FString LanguageCode; // 0x0 (16)
-	struct Unknown IconModelPath; // 0x10 (16)
-	struct Unknown IconPortalPath; // 0x20 (16)
+	struct FDirectoryPath IconModelPath; // 0x10 (16)
+	struct FDirectoryPath IconPortalPath; // 0x20 (16)
 };
 
 // ScriptStruct LuminRuntimeSettings.LocalizedAppName
@@ -127,13 +127,13 @@ struct FLuminComponentElement {
 	struct FString Name; // 0x0 (16)
 	struct FString VisibleName; // 0x10 (16)
 	struct FString ExecutableName; // 0x20 (16)
-	enum class Unknow ComponentType; // 0x30 (1)
-	struct TArray<Unknown> ExtraComponentSubElements; // 0x38 (16)
+	enum class ELuminComponentType ComponentType; // 0x30 (1)
+	struct TArray<struct FLuminComponentSubElement> ExtraComponentSubElements; // 0x38 (16)
 };
 
 // ScriptStruct LuminRuntimeSettings.LuminComponentSubElement
 struct FLuminComponentSubElement {
-	enum class Unknow ElementType; // 0x0 (1)
+	enum class ELuminComponentSubElementType ElementType; // 0x0 (1)
 	struct FString Value; // 0x8 (16)
 };
 

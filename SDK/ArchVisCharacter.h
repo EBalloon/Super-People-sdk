@@ -18,9 +18,9 @@ class UArchVisCharMovementComponent : public UCharacterMovementComponent {
 
 public:
 
-	struct Unknown RotationalAcceleration; // 0x6D8 (12)
-	struct Unknown RotationalDeceleration; // 0x6E4 (12)
-	struct Unknown MaxRotationalVelocity; // 0x6F0 (12)
+	struct FRotator RotationalAcceleration; // 0x6D8 (12)
+	struct FRotator RotationalDeceleration; // 0x6E4 (12)
+	struct FRotator MaxRotationalVelocity; // 0x6F0 (12)
 	float MinPitch; // 0x6FC (4)
 	float MaxPitch; // 0x700 (4)
 	float WalkingFriction; // 0x704 (4)

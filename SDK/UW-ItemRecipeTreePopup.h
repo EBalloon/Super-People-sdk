@@ -3,17 +3,17 @@ class UUW-ItemRecipeTreePopup_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Hide; // 0x250 (8)
-	struct Unknown Show; // 0x258 (8)
-	struct Unknown Bg; // 0x260 (8)
-	struct Unknown Button_OK; // 0x268 (8)
-	struct Unknown Image_168; // 0x270 (8)
-	struct Unknown Image_669; // 0x278 (8)
-	struct Unknown Message; // 0x280 (8)
-	struct Unknown TextBlock_Title; // 0x288 (8)
-	struct Unknown UW-ItemRecipeTree; // 0x290 (8)
-	struct Unknown Timer; // 0x298 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UWidgetAnimation Hide; // 0x250 (8)
+	struct UWidgetAnimation Show; // 0x258 (8)
+	struct UImage Bg; // 0x260 (8)
+	struct UButton Button_OK; // 0x268 (8)
+	struct UImage Image_168; // 0x270 (8)
+	struct UImage Image_669; // 0x278 (8)
+	struct UTextBlock Message; // 0x280 (8)
+	struct UTextBlock TextBlock_Title; // 0x288 (8)
+	struct UUW-ItemRecipeTree_C UW-ItemRecipeTree; // 0x290 (8)
+	struct FTimerHandle Timer; // 0x298 (8)
 
 	void Construct(); // Function UW-ItemRecipeTreePopup.UW-ItemRecipeTreePopup_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__Button_159_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-ItemRecipeTreePopup.UW-ItemRecipeTreePopup_C.BndEvt__Button_159_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>

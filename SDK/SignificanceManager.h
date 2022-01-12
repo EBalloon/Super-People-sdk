@@ -3,6 +3,6 @@ class USignificanceManager : public Object {
 
 public:
 
-	struct Unknown SignificanceManagerClassName; // 0x158 (24)
+	struct FSoftClassPath SignificanceManagerClassName; // 0x158 (24)
 };
 

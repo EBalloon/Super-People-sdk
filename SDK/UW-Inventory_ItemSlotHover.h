@@ -3,154 +3,154 @@ class UUW-Inventory_ItemSlotHover_C : public UBravoHotelInventoryHoverWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x280 (8)
-	struct Unknown UpArrow; // 0x288 (8)
-	struct Unknown FadeIn; // 0x290 (8)
-	struct Unknown Ammo_Compare; // 0x298 (8)
-	struct Unknown Ammo_Value; // 0x2A0 (8)
-	struct Unknown AmmoIcon; // 0x2A8 (8)
-	struct Unknown AmmoInfo; // 0x2B0 (8)
-	struct Unknown Arrow_01; // 0x2B8 (8)
-	struct Unknown Arrow_02; // 0x2C0 (8)
-	struct Unknown BuffList; // 0x2C8 (8)
-	struct Unknown BuffList_2; // 0x2D0 (8)
-	struct Unknown EffectiveRange_Compare; // 0x2D8 (8)
-	struct Unknown EffectiveRange_Value; // 0x2E0 (8)
-	struct Unknown FiringRate_Compare; // 0x2E8 (8)
-	struct Unknown FiringRate_Value; // 0x2F0 (8)
-	struct Unknown HorizontalBox_ItemRarity; // 0x2F8 (8)
-	struct Unknown HorizontalBox_MaterialRarity; // 0x300 (8)
-	struct Unknown HorizontalBox_WeaponRarity; // 0x308 (8)
-	struct Unknown Image; // 0x310 (8)
-	struct Unknown Image_2; // 0x318 (8)
-	struct Unknown Image_3; // 0x320 (8)
-	struct Unknown Image_8; // 0x328 (8)
-	struct Unknown Image_9; // 0x330 (8)
-	struct Unknown Image_10; // 0x338 (8)
-	struct Unknown Image_11; // 0x340 (8)
-	struct Unknown Image_12; // 0x348 (8)
-	struct Unknown Image_13; // 0x350 (8)
-	struct Unknown Image_14; // 0x358 (8)
-	struct Unknown Image_15; // 0x360 (8)
-	struct Unknown Image_16; // 0x368 (8)
-	struct Unknown Image_20; // 0x370 (8)
-	struct Unknown Image_22; // 0x378 (8)
-	struct Unknown Image_23; // 0x380 (8)
-	struct Unknown Image_24; // 0x388 (8)
-	struct Unknown Image_25; // 0x390 (8)
-	struct Unknown Image_26; // 0x398 (8)
-	struct Unknown Image_27; // 0x3A0 (8)
-	struct Unknown Image_28; // 0x3A8 (8)
-	struct Unknown Image_29; // 0x3B0 (8)
-	struct Unknown Image_30; // 0x3B8 (8)
-	struct Unknown Image_31; // 0x3C0 (8)
-	struct Unknown Image_32; // 0x3C8 (8)
-	struct Unknown Image_310; // 0x3D0 (8)
-	struct Unknown Image_557; // 0x3D8 (8)
-	struct Unknown Image_WeaponLock; // 0x3E0 (8)
-	struct Unknown Img_MaterialBG; // 0x3E8 (8)
-	struct Unknown IMG_MaterialIcon; // 0x3F0 (8)
-	struct Unknown IMG_Stat; // 0x3F8 (8)
-	struct Unknown ItemBg; // 0x400 (8)
-	struct Unknown ItemBg_01; // 0x408 (8)
-	struct Unknown ItemBg_02; // 0x410 (8)
-	struct Unknown ItemSlot-BG; // 0x418 (8)
-	struct Unknown ItemSlot-Capacity; // 0x420 (8)
-	struct Unknown ItemSlot-Capacity_2; // 0x428 (8)
-	struct Unknown ItemSlot-Description; // 0x430 (8)
-	struct Unknown ItemSlot-Description_2; // 0x438 (8)
-	struct Unknown ItemSlot-ItemImage; // 0x440 (8)
-	struct Unknown ItemSlot-ItemName; // 0x448 (8)
-	struct Unknown ItemSlot-ItemType; // 0x450 (8)
-	struct Unknown ItemSlot-ItemTypeMark; // 0x458 (8)
-	struct Unknown ItemSlotHover; // 0x460 (8)
-	struct Unknown PerkBG; // 0x468 (8)
-	struct Unknown PerkImage; // 0x470 (8)
-	struct Unknown PerkLevelText; // 0x478 (8)
-	struct Unknown PerkName; // 0x480 (8)
-	struct Unknown PerkSlotHover; // 0x488 (8)
-	struct Unknown PopupHover-BG_2; // 0x490 (8)
-	struct Unknown Power_Compare; // 0x498 (8)
-	struct Unknown Power_Value; // 0x4A0 (8)
-	struct Unknown SizeBox; // 0x4A8 (8)
-	struct Unknown SizeBox_7; // 0x4B0 (8)
-	struct Unknown SizeBox_ComparingText; // 0x4B8 (8)
-	struct Unknown SizeBox_ItemDivide; // 0x4C0 (8)
-	struct Unknown Stability_Compare; // 0x4C8 (8)
-	struct Unknown Stability_Value; // 0x4D0 (8)
-	struct Unknown StatSlotHover; // 0x4D8 (8)
-	struct Unknown T_BindPlayerName; // 0x4E0 (8)
-	struct Unknown T_Material; // 0x4E8 (8)
-	struct Unknown T_MaterialDesc; // 0x4F0 (8)
-	struct Unknown T_PerkDescLv1; // 0x4F8 (8)
-	struct Unknown T_PerkDescLv2; // 0x500 (8)
-	struct Unknown T_PerkDescLv3; // 0x508 (8)
-	struct Unknown T_Stat; // 0x510 (8)
-	struct Unknown T_StatDesc; // 0x518 (8)
-	struct Unknown T_TooltipDesc; // 0x520 (8)
-	struct Unknown T_UltimateDesc; // 0x528 (8)
-	struct Unknown T_UnlockUltimateLevel; // 0x530 (8)
-	struct Unknown Text_CombineTarget; // 0x538 (8)
-	struct Unknown TextBlock_3; // 0x540 (8)
-	struct Unknown TextBlock_4; // 0x548 (8)
-	struct Unknown TextBlock_5; // 0x550 (8)
-	struct Unknown TextBlock_6; // 0x558 (8)
-	struct Unknown UpArrowAni; // 0x560 (8)
-	struct Unknown UW-Inventory_ItemSlotHover_WeaponSlot; // 0x568 (8)
-	struct Unknown UW-Inventory_ItemSlotHover_WeaponSlot_2; // 0x570 (8)
-	struct Unknown UW-Inventory_ItemSlotHover_WeaponSlot_C; // 0x578 (8)
-	struct Unknown UW-Inventory_ItemSlotHover_WeaponSlot_C_2; // 0x580 (8)
-	struct Unknown UW-Inventory_ItemSlotHover_WeaponSlot_C_3; // 0x588 (8)
-	struct Unknown UW-Inventory_ItemSlotHover_WeaponSlot_C_4; // 0x590 (8)
-	struct Unknown VerticalBox_3; // 0x598 (8)
-	struct Unknown VerticalBox_BuffList; // 0x5A0 (8)
-	struct Unknown VerticalBox_BuffList_2; // 0x5A8 (8)
-	struct Unknown VerticalBox_CombineTarget; // 0x5B0 (8)
-	struct Unknown VerticalBox_Divide; // 0x5B8 (8)
-	struct Unknown VerticalBox_ItemDivide; // 0x5C0 (8)
-	struct Unknown VerticalBox_WeaponBindedInfo; // 0x5C8 (8)
-	struct Unknown WeaponItemCapacity; // 0x5D0 (8)
-	struct Unknown WeaponItemComparingName; // 0x5D8 (8)
-	struct Unknown WeaponItemDescription; // 0x5E0 (8)
-	struct Unknown WeaponItemImage; // 0x5E8 (8)
-	struct Unknown WeaponItemSlot-BG; // 0x5F0 (8)
-	struct Unknown WeaponItemSlotHover; // 0x5F8 (8)
-	struct Unknown WeaponItemType; // 0x600 (8)
-	struct Unknown WeaponLockImage; // 0x608 (8)
-	struct Unknown WeaponName; // 0x610 (8)
-	struct Unknown WidgetSwitcher; // 0x618 (8)
-	struct Unknown WidgetSwitcher_1; // 0x620 (8)
-	struct Unknown WidgetSwitcher_2; // 0x628 (8)
-	struct Unknown WidgetSwitcher_3; // 0x630 (8)
-	struct Unknown WidgetSwitcher_4; // 0x638 (8)
-	struct Unknown WidgetSwitcher_Main; // 0x640 (8)
-	struct Unknown WidgetSwitcher_PerkUltimate; // 0x648 (8)
-	struct Unknown ItemInfo; // 0x650 (152)
-	struct Unknown WeaponInfo; // 0x6E8 (2856)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x280 (8)
+	struct UWidgetAnimation UpArrow; // 0x288 (8)
+	struct UWidgetAnimation FadeIn; // 0x290 (8)
+	struct UImage Ammo_Compare; // 0x298 (8)
+	struct UTextBlock Ammo_Value; // 0x2A0 (8)
+	struct UImage AmmoIcon; // 0x2A8 (8)
+	struct UTextBlock AmmoInfo; // 0x2B0 (8)
+	struct UImage Arrow_01; // 0x2B8 (8)
+	struct UImage Arrow_02; // 0x2C0 (8)
+	struct UWrapBox BuffList; // 0x2C8 (8)
+	struct UWrapBox BuffList_2; // 0x2D0 (8)
+	struct UImage EffectiveRange_Compare; // 0x2D8 (8)
+	struct UTextBlock EffectiveRange_Value; // 0x2E0 (8)
+	struct UImage FiringRate_Compare; // 0x2E8 (8)
+	struct UTextBlock FiringRate_Value; // 0x2F0 (8)
+	struct UHorizontalBox HorizontalBox_ItemRarity; // 0x2F8 (8)
+	struct UHorizontalBox HorizontalBox_MaterialRarity; // 0x300 (8)
+	struct UHorizontalBox HorizontalBox_WeaponRarity; // 0x308 (8)
+	struct UImage Image; // 0x310 (8)
+	struct UImage Image_2; // 0x318 (8)
+	struct UImage Image_3; // 0x320 (8)
+	struct UImage Image_8; // 0x328 (8)
+	struct UImage Image_9; // 0x330 (8)
+	struct UImage Image_10; // 0x338 (8)
+	struct UImage Image_11; // 0x340 (8)
+	struct UImage Image_12; // 0x348 (8)
+	struct UImage Image_13; // 0x350 (8)
+	struct UImage Image_14; // 0x358 (8)
+	struct UImage Image_15; // 0x360 (8)
+	struct UImage Image_16; // 0x368 (8)
+	struct UImage Image_20; // 0x370 (8)
+	struct UImage Image_22; // 0x378 (8)
+	struct UImage Image_23; // 0x380 (8)
+	struct UImage Image_24; // 0x388 (8)
+	struct UImage Image_25; // 0x390 (8)
+	struct UImage Image_26; // 0x398 (8)
+	struct UImage Image_27; // 0x3A0 (8)
+	struct UImage Image_28; // 0x3A8 (8)
+	struct UImage Image_29; // 0x3B0 (8)
+	struct UImage Image_30; // 0x3B8 (8)
+	struct UImage Image_31; // 0x3C0 (8)
+	struct UImage Image_32; // 0x3C8 (8)
+	struct UImage Image_310; // 0x3D0 (8)
+	struct UImage Image_557; // 0x3D8 (8)
+	struct UImage Image_WeaponLock; // 0x3E0 (8)
+	struct UImage Img_MaterialBG; // 0x3E8 (8)
+	struct UImage IMG_MaterialIcon; // 0x3F0 (8)
+	struct UImage IMG_Stat; // 0x3F8 (8)
+	struct UImage ItemBg; // 0x400 (8)
+	struct UImage ItemBg_01; // 0x408 (8)
+	struct UImage ItemBg_02; // 0x410 (8)
+	struct UImage ItemSlot-BG; // 0x418 (8)
+	struct UTextBlock ItemSlot-Capacity; // 0x420 (8)
+	struct UTextBlock ItemSlot-Capacity_2; // 0x428 (8)
+	struct UTextBlock ItemSlot-Description; // 0x430 (8)
+	struct UTextBlock ItemSlot-Description_2; // 0x438 (8)
+	struct UImage ItemSlot-ItemImage; // 0x440 (8)
+	struct UTextBlock ItemSlot-ItemName; // 0x448 (8)
+	struct UTextBlock ItemSlot-ItemType; // 0x450 (8)
+	struct UImage ItemSlot-ItemTypeMark; // 0x458 (8)
+	struct UCanvasPanel ItemSlotHover; // 0x460 (8)
+	struct UImage PerkBG; // 0x468 (8)
+	struct UImage PerkImage; // 0x470 (8)
+	struct UTextBlock PerkLevelText; // 0x478 (8)
+	struct UTextBlock PerkName; // 0x480 (8)
+	struct UCanvasPanel PerkSlotHover; // 0x488 (8)
+	struct UImage PopupHover-BG_2; // 0x490 (8)
+	struct UImage Power_Compare; // 0x498 (8)
+	struct UTextBlock Power_Value; // 0x4A0 (8)
+	struct USizeBox SizeBox; // 0x4A8 (8)
+	struct USizeBox SizeBox_7; // 0x4B0 (8)
+	struct USizeBox SizeBox_ComparingText; // 0x4B8 (8)
+	struct USizeBox SizeBox_ItemDivide; // 0x4C0 (8)
+	struct UImage Stability_Compare; // 0x4C8 (8)
+	struct UTextBlock Stability_Value; // 0x4D0 (8)
+	struct UCanvasPanel StatSlotHover; // 0x4D8 (8)
+	struct UTextBlock T_BindPlayerName; // 0x4E0 (8)
+	struct UTextBlock T_Material; // 0x4E8 (8)
+	struct UTextBlock T_MaterialDesc; // 0x4F0 (8)
+	struct UTextBlock T_PerkDescLv1; // 0x4F8 (8)
+	struct UTextBlock T_PerkDescLv2; // 0x500 (8)
+	struct UTextBlock T_PerkDescLv3; // 0x508 (8)
+	struct UTextBlock T_Stat; // 0x510 (8)
+	struct UTextBlock T_StatDesc; // 0x518 (8)
+	struct URichTextBlock T_TooltipDesc; // 0x520 (8)
+	struct UTextBlock T_UltimateDesc; // 0x528 (8)
+	struct UTextBlock T_UnlockUltimateLevel; // 0x530 (8)
+	struct UTextBlock Text_CombineTarget; // 0x538 (8)
+	struct UTextBlock TextBlock_3; // 0x540 (8)
+	struct UTextBlock TextBlock_4; // 0x548 (8)
+	struct UTextBlock TextBlock_5; // 0x550 (8)
+	struct UTextBlock TextBlock_6; // 0x558 (8)
+	struct UCanvasPanel UpArrowAni; // 0x560 (8)
+	struct UUW-Inventory_ItemSlotHover_WeaponSlot_C UW-Inventory_ItemSlotHover_WeaponSlot; // 0x568 (8)
+	struct UUW-Inventory_ItemSlotHover_WeaponSlot_C UW-Inventory_ItemSlotHover_WeaponSlot_2; // 0x570 (8)
+	struct UUW-Inventory_ItemSlotHover_WeaponSlot_C UW-Inventory_ItemSlotHover_WeaponSlot_C; // 0x578 (8)
+	struct UUW-Inventory_ItemSlotHover_WeaponSlot_C UW-Inventory_ItemSlotHover_WeaponSlot_C_2; // 0x580 (8)
+	struct UUW-Inventory_ItemSlotHover_WeaponSlot_C UW-Inventory_ItemSlotHover_WeaponSlot_C_3; // 0x588 (8)
+	struct UUW-Inventory_ItemSlotHover_WeaponSlot_C UW-Inventory_ItemSlotHover_WeaponSlot_C_4; // 0x590 (8)
+	struct UVerticalBox VerticalBox_3; // 0x598 (8)
+	struct UVerticalBox VerticalBox_BuffList; // 0x5A0 (8)
+	struct UVerticalBox VerticalBox_BuffList_2; // 0x5A8 (8)
+	struct UVerticalBox VerticalBox_CombineTarget; // 0x5B0 (8)
+	struct UVerticalBox VerticalBox_Divide; // 0x5B8 (8)
+	struct UVerticalBox VerticalBox_ItemDivide; // 0x5C0 (8)
+	struct UVerticalBox VerticalBox_WeaponBindedInfo; // 0x5C8 (8)
+	struct UTextBlock WeaponItemCapacity; // 0x5D0 (8)
+	struct UTextBlock WeaponItemComparingName; // 0x5D8 (8)
+	struct UTextBlock WeaponItemDescription; // 0x5E0 (8)
+	struct UImage WeaponItemImage; // 0x5E8 (8)
+	struct UImage WeaponItemSlot-BG; // 0x5F0 (8)
+	struct UCanvasPanel WeaponItemSlotHover; // 0x5F8 (8)
+	struct UTextBlock WeaponItemType; // 0x600 (8)
+	struct UImage WeaponLockImage; // 0x608 (8)
+	struct UTextBlock WeaponName; // 0x610 (8)
+	struct UWidgetSwitcher WidgetSwitcher; // 0x618 (8)
+	struct UWidgetSwitcher WidgetSwitcher_1; // 0x620 (8)
+	struct UWidgetSwitcher WidgetSwitcher_2; // 0x628 (8)
+	struct UWidgetSwitcher WidgetSwitcher_3; // 0x630 (8)
+	struct UWidgetSwitcher WidgetSwitcher_4; // 0x638 (8)
+	struct UWidgetSwitcher WidgetSwitcher_Main; // 0x640 (8)
+	struct UWidgetSwitcher WidgetSwitcher_PerkUltimate; // 0x648 (8)
+	struct FInventoryItemInfo ItemInfo; // 0x650 (152)
+	struct FBravoHotelWeaponInfo WeaponInfo; // 0x6E8 (2856)
 	char bCompare : 0; // 0x1210 (1)
-	struct Unknown NormalSlateColor; // 0x1218 (40)
-	struct Unknown UpSlateColor; // 0x1240 (40)
-	struct Unknown DownSlateColor; // 0x1268 (40)
-	struct Unknown UpLinearColor; // 0x1290 (16)
-	struct Unknown DownLinearColor; // 0x12A0 (16)
-	struct Unknown WeaponObjectRef; // 0x12B0 (8)
-	struct Unknown ItemDetailInfo; // 0x12B8 (1168)
-	struct Unknown PerkInfo; // 0x1748 (44)
-	struct Unknown PerkData; // 0x1778 (224)
+	struct FSlateColor NormalSlateColor; // 0x1218 (40)
+	struct FSlateColor UpSlateColor; // 0x1240 (40)
+	struct FSlateColor DownSlateColor; // 0x1268 (40)
+	struct FLinearColor UpLinearColor; // 0x1290 (16)
+	struct FLinearColor DownLinearColor; // 0x12A0 (16)
+	struct ABravoHotelWeaponBase WeaponObjectRef; // 0x12B0 (8)
+	struct FInventoryItemDetailInfo ItemDetailInfo; // 0x12B8 (1168)
+	struct FPerkUIInfo PerkInfo; // 0x1748 (44)
+	struct FPerkData PerkData; // 0x1778 (224)
 	struct FName Ammo; // 0x1858 (8)
-	enum class Unknow DragType; // 0x1860 (1)
-	struct Unknown HoveredWidget; // 0x1868 (8)
-	struct Unknown CurrentShowingWidgetRef; // 0x1870 (8)
+	enum class ItemWidgetDragType DragType; // 0x1860 (1)
+	struct UWidget HoveredWidget; // 0x1868 (8)
+	struct UUserWidget CurrentShowingWidgetRef; // 0x1870 (8)
 	char IsUltimatePerk : 0; // 0x1878 (1)
 	struct FText UltimateName; // 0x1880 (24)
-	struct Unknown UltimateLinearColor; // 0x1898 (16)
-	struct Unknown UltimateImage; // 0x18A8 (40)
-	struct Unknown HoverTimerHandle; // 0x18D0 (8)
+	struct FLinearColor UltimateLinearColor; // 0x1898 (16)
+	struct TSoftObjectPtr<Object> UltimateImage; // 0x18A8 (40)
+	struct FTimerHandle HoverTimerHandle; // 0x18D0 (8)
 	char NeedCheckVisibility : 0; // 0x18D8 (1)
 	char IsVisualMode : 0; // 0x18D9 (1)
 	char IsRandomPerk : 0; // 0x18DA (1)
-	struct TArray<Unknown> ItemRarityImages; // 0x18E0 (16)
-	struct TArray<Unknown> WeaponRarityImages; // 0x18F0 (16)
+	struct TArray<struct UImage> ItemRarityImages; // 0x18E0 (16)
+	struct TArray<struct UImage> WeaponRarityImages; // 0x18F0 (16)
 
 	float GetDisplayAccuracy(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetDisplayAccuracy(Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <Game_BE.exe+0x2B80160>
 	float GetDisplayDamage(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetDisplayDamage(Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <Game_BE.exe+0x2B80160>
@@ -158,55 +158,55 @@ public:
 	int32_t GetDisplayLevel(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetDisplayLevel(Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <Game_BE.exe+0x2B80160>
 	int32_t GetDisplayMagSize(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetDisplayMagSize(Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <Game_BE.exe+0x2B80160>
 	int32_t GetDisplayRateofFire(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetDisplayRateofFire(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <Game_BE.exe+0x2B80160>
-	void GetCurrentClassSpecialWeaponPerkData(char& Find, struct Unknown& OutPerkData); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetCurrentClassSpecialWeaponPerkData(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void GetCurrentClassSpecialWeaponPerkData(char& Find, struct FPerkData& OutPerkData); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetCurrentClassSpecialWeaponPerkData(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void SetCurrentPerkWeaponInfoSlot(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.SetCurrentPerkWeaponInfoSlot(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetTooltipSlot(enum class Unknow DragType, struct FText BuffInfo); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.SetTooltipSlot(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetTooltipSlot(enum class ItemWidgetDragType DragType, struct FText BuffInfo); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.SetTooltipSlot(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetVisualMode(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.SetVisualMode(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetBuffSlot(enum class Unknow DragType, struct Unknown BuffInfo); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.SetBuffSlot(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetOptionSlot(enum class Unknow DragType, struct Unknown ItemOptionInfo); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.SetOptionSlot(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetMaterialSlot(enum class Unknow DragType, struct Unknown MaterialInfo); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.SetMaterialSlot(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetBuffSlot(enum class ItemWidgetDragType DragType, struct FBravoHotelBuffUIInfo BuffInfo); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.SetBuffSlot(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetOptionSlot(enum class ItemWidgetDragType DragType, struct FItemOption ItemOptionInfo); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.SetOptionSlot(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetMaterialSlot(enum class ItemWidgetDragType DragType, struct FItemMaterialData MaterialInfo); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.SetMaterialSlot(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Hide(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Hide(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Show(struct Unknown HoverWidget, char ShowItemDivideInfo, char IsRandomPerk, char& SUCCESS); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Show(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	enum class Unknow Get Vertical Box Buff List 2 Visibility(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Vertical Box Buff List 2 Visibility(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	enum class Unknow Get Buff List 1 Visibility(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Buff List 1 Visibility(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	enum class Unknow Get Size Box Comparing Text Visibility(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Size Box Comparing Text Visibility(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	enum class Unknow Get Vertical Box Combine Target Visibility(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Vertical Box Combine Target Visibility(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	enum class Unknow Get Item Slot- Description 1 Visibility(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Item Slot- Description 1 Visibility(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	enum class Unknow Get Visibility Item Divide(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Visibility Item Divide(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void GetItemWeaponData(struct Unknown& ItemWeaponData); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetItemWeaponData(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <Game_BE.exe+0x2B80160>
+	void Show(struct UBravoHotelInventoryHoverWidget HoverWidget, char ShowItemDivideInfo, char IsRandomPerk, char& SUCCESS); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Show(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	enum class ESlateVisibility Get Vertical Box Buff List 2 Visibility(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Vertical Box Buff List 2 Visibility(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	enum class ESlateVisibility Get Buff List 1 Visibility(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Buff List 1 Visibility(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	enum class ESlateVisibility Get Size Box Comparing Text Visibility(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Size Box Comparing Text Visibility(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	enum class ESlateVisibility Get Vertical Box Combine Target Visibility(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Vertical Box Combine Target Visibility(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	enum class ESlateVisibility Get Item Slot- Description 1 Visibility(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Item Slot- Description 1 Visibility(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	enum class ESlateVisibility Get Visibility Item Divide(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Visibility Item Divide(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void GetItemWeaponData(struct FItemWeapon& ItemWeaponData); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetItemWeaponData(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <Game_BE.exe+0x2B80160>
 	void SetBuffList(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.SetBuffList(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	enum class Unknow Get Horizontal Box Weapon Binded Info Visibility(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Horizontal Box Weapon Binded Info Visibility(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	struct Unknown Get Image Weapon Lock Color And Opacity(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Image Weapon Lock Color And Opacity(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	enum class Unknow Get Image Weapon Lock Visibility(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Image Weapon Lock Visibility(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void SetStatSlot(enum class Unknow StatusType, int32_t Value, enum class Unknow DragType); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.SetStatSlot(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown Get_ItemBg_ColorAndOpacity(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get_ItemBg_ColorAndOpacity(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	struct Unknown Get Perk BG Color And Opacity(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Perk BG Color And Opacity(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	struct Unknown Get_ItemBg_01_ColorAndOpacity(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get_ItemBg_01_ColorAndOpacity(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	enum class ESlateVisibility Get Horizontal Box Weapon Binded Info Visibility(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Horizontal Box Weapon Binded Info Visibility(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	struct FLinearColor Get Image Weapon Lock Color And Opacity(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Image Weapon Lock Color And Opacity(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	enum class ESlateVisibility Get Image Weapon Lock Visibility(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Image Weapon Lock Visibility(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void SetStatSlot(enum class EStatusType StatusType, int32_t Value, enum class ItemWidgetDragType DragType); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.SetStatSlot(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FLinearColor Get_ItemBg_ColorAndOpacity(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get_ItemBg_ColorAndOpacity(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	struct FLinearColor Get Perk BG Color And Opacity(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Perk BG Color And Opacity(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	struct FLinearColor Get_ItemBg_01_ColorAndOpacity(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get_ItemBg_01_ColorAndOpacity(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void SetUltimatePerkDesc(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.SetUltimatePerkDesc(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown GetSlotColor(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetSlotColor(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown Get Perk Name Color And Opacity(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Perk Name Color And Opacity(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	enum class Unknow Get Unlock Ultimate Level Visibility(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Unlock Ultimate Level Visibility(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	struct FLinearColor GetSlotColor(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetSlotColor(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FSlateColor Get Perk Name Color And Opacity(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Perk Name Color And Opacity(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	enum class ESlateVisibility Get Unlock Ultimate Level Visibility(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Unlock Ultimate Level Visibility(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void SetPerkDesc(int32_t Level); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.SetPerkDesc(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetPerksDesc(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.SetPerksDesc(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void HideHover(enum class Unknow DragType, char Force); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.HideHover(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown Get Perk Image Brush(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Perk Image Brush(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void HideHover(enum class ItemWidgetDragType DragType, char Force); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.HideHover(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FSlateBrush Get Perk Image Brush(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Perk Image Brush(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	struct FText Get Perk Name Text(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Perk Name Text(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void SetPerkSlot(struct Unknown NewPerkInfo, enum class Unknow DragType, char IsUltimatePerk); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.SetPerkSlot(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetPerkSlot(struct FPerkUIInfo NewPerkInfo, enum class ItemWidgetDragType DragType, char IsUltimatePerk); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.SetPerkSlot(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	struct FText Get_WeaponItemCapacity_Text(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get_WeaponItemCapacity_Text(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	struct FText Get_ItemSlot-Capacity_Text(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get_ItemSlot-Capacity_Text(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void GetItemType(struct FText& ItemTypeText, struct Unknown& ItemTypeTexture); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetItemType(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void GetItemType(struct FText& ItemTypeText, struct UTexture2D& ItemTypeTexture); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetItemType(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	struct FText Get Item Slot- Item Type Text(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Item Slot- Item Type Text(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	struct FText Get Weapon Item Type Text(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Weapon Item Type Text(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void GetWeaponType(enum class Unknow& WeaponType, struct FText& WeaponTypeText, struct Unknown& WeaponTypeTexture); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetWeaponType(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void GetEquippedWeaponInfoByWeaponType(enum class Unknow WeaponType, char& bResult, struct Unknown& WeaponInfo); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetEquippedWeaponInfoByWeaponType(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void GetWeaponType(enum class EWeaponType& WeaponType, struct FText& WeaponTypeText, struct UTexture2D& WeaponTypeTexture); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetWeaponType(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void GetEquippedWeaponInfoByWeaponType(enum class EWeaponType WeaponType, char& bResult, struct FBravoHotelWeaponInfo& WeaponInfo); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetEquippedWeaponInfoByWeaponType(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	struct FText Get Weapon Item Comparing Name Text(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Weapon Item Comparing Name Text(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	struct FText Get Ammo Info Text(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Ammo Info Text(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	struct Unknown Get Ammo Icon Brush(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Ammo Icon Brush(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void GetCompareAmmo(struct Unknown& SlateColor, struct FText& valueText); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetCompareAmmo(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void GetCompareFiringRate(struct Unknown& SlateColor, struct FText& valueText); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetCompareFiringRate(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void GetCompareStabillity(struct Unknown& SlateColor, struct FText& valueText); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetCompareStabillity(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void GetCompareEffectiveRange(struct Unknown& SlateColor, struct FText& valueText); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetCompareEffectiveRange(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void GetComparePower(struct Unknown& SlateColor, struct FText& valueText); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetComparePower(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	struct FSlateBrush Get Ammo Icon Brush(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Ammo Icon Brush(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void GetCompareAmmo(struct FSlateColor& SlateColor, struct FText& valueText); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetCompareAmmo(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void GetCompareFiringRate(struct FSlateColor& SlateColor, struct FText& valueText); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetCompareFiringRate(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void GetCompareStabillity(struct FSlateColor& SlateColor, struct FText& valueText); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetCompareStabillity(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void GetCompareEffectiveRange(struct FSlateColor& SlateColor, struct FText& valueText); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetCompareEffectiveRange(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void GetComparePower(struct FSlateColor& SlateColor, struct FText& valueText); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetComparePower(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	struct FText Get Ammo Value Text(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Ammo Value Text(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	struct FText Get Firing Rate Value Text(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Firing Rate Value Text(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	struct FText Get Stability Value Text(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Stability Value Text(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
@@ -214,29 +214,29 @@ public:
 	struct FText Get Power Value Text(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Power Value Text(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void IsWeaponTooltip(char& bResult); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.IsWeaponTooltip(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void IsItemTooltip(char& bResult); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.IsItemTooltip(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void GetHoverCanvas(struct Unknown& CanvasPanel, char& bResult); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetHoverCanvas(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void SetWeaponItemSlot(struct Unknown WeaponItemInfo, struct Unknown InventoryItemInfo, enum class Unknow DragType, struct FName Ammo); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.SetWeaponItemSlot(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetHoverCanvas(struct UCanvasPanel& CanvasPanel, char& bResult); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetHoverCanvas(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void SetWeaponItemSlot(struct FBravoHotelWeaponInfo WeaponItemInfo, struct FInventoryItemInfo InventoryItemInfo, enum class ItemWidgetDragType DragType, struct FName Ammo); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.SetWeaponItemSlot(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	struct FText Get Weapon Item Slot- Description Text(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Weapon Item Slot- Description Text(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	struct Unknown Get Weapon Item Slot- Item Image Brush(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Weapon Item Slot- Item Image Brush(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	struct FSlateBrush Get Weapon Item Slot- Item Image Brush(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Weapon Item Slot- Item Image Brush(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	struct FText Get Weapon Item Slot- Item Name Text(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Weapon Item Slot- Item Name Text(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void SetItemSlotInfo(struct Unknown InventoryItem, enum class Unknow DragType); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.SetItemSlotInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Show Hover(struct Unknown HoveredWidget, struct Unknown ShowingWidgetRef, char& SUCCESS); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Show Hover(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetItemSlotInfo(struct FInventoryItemInfo InventoryItem, enum class ItemWidgetDragType DragType); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.SetItemSlotInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Show Hover(struct UWidget HoveredWidget, struct UUserWidget ShowingWidgetRef, char& SUCCESS); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Show Hover(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	struct FText GetWeight(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetWeight(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	struct FText GetDescription(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetDescription(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	struct Unknown GetItemImage(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetItemImage(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	struct FSlateBrush GetItemImage(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetItemImage(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	struct FText GetName(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetName(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void OnLoaded_5CB0A85D41BD4B88F0EAB29CA9DBDD0F(struct Unknown Loaded); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.OnLoaded_5CB0A85D41BD4B88F0EAB29CA9DBDD0F(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnLoaded_A317A42643FCC3E3348F00AF47100D7C(struct Unknown Loaded); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.OnLoaded_A317A42643FCC3E3348F00AF47100D7C(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnLoaded_BF365972409319D445BAF88D964EE916(struct Unknown Loaded); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.OnLoaded_BF365972409319D445BAF88D964EE916(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnLoaded_90972E92490A36CFBC0DC4AD6ACA1B48(struct Unknown Loaded); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.OnLoaded_90972E92490A36CFBC0DC4AD6ACA1B48(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AsyncLoadIconTexture(struct Unknown IconTexture); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.AsyncLoadIconTexture(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_5CB0A85D41BD4B88F0EAB29CA9DBDD0F(struct Object Loaded); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.OnLoaded_5CB0A85D41BD4B88F0EAB29CA9DBDD0F(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_A317A42643FCC3E3348F00AF47100D7C(struct Object Loaded); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.OnLoaded_A317A42643FCC3E3348F00AF47100D7C(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_BF365972409319D445BAF88D964EE916(struct Object Loaded); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.OnLoaded_BF365972409319D445BAF88D964EE916(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_90972E92490A36CFBC0DC4AD6ACA1B48(struct Object Loaded); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.OnLoaded_90972E92490A36CFBC0DC4AD6ACA1B48(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AsyncLoadIconTexture(struct TSoftObjectPtr<UPaperSprite> IconTexture); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.AsyncLoadIconTexture(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void DelayDestroy(float Delay); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.DelayDestroy(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AsyncLoadIconObject(struct Unknown IconObject); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.AsyncLoadIconObject(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AsyncLoadStatIcon(struct Unknown IconObject); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.AsyncLoadStatIcon(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AsyncLoadIconObject(struct TSoftObjectPtr<Object> IconObject); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.AsyncLoadIconObject(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AsyncLoadStatIcon(struct TSoftObjectPtr<Object> IconObject); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.AsyncLoadStatIcon(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void HideHoverBP(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.HideHoverBP(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CheckHoverVisibility(); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.CheckHoverVisibility(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AsyncLoadMaterialIcon(struct Unknown IconObject); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.AsyncLoadMaterialIcon(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AsyncLoadMaterialIcon(struct TSoftObjectPtr<Object> IconObject); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.AsyncLoadMaterialIcon(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-Inventory_ItemSlotHover(int32_t EntryPoint); // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.ExecuteUbergraph_UW-Inventory_ItemSlotHover(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
@@ -349,12 +349,12 @@ inline int32_t UUW-Inventory_ItemSlotHover_C::GetDisplayRateofFire() {
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetCurrentClassSpecialWeaponPerkData
-inline void UUW-Inventory_ItemSlotHover_C::GetCurrentClassSpecialWeaponPerkData(char& Find, struct Unknown& OutPerkData) {
+inline void UUW-Inventory_ItemSlotHover_C::GetCurrentClassSpecialWeaponPerkData(char& Find, struct FPerkData& OutPerkData) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetCurrentClassSpecialWeaponPerkData");
 
 	struct GetCurrentClassSpecialWeaponPerkData_Params {
 		char& Find;
-		struct Unknown& OutPerkData;
+		struct FPerkData& OutPerkData;
 	}; GetCurrentClassSpecialWeaponPerkData_Params Params;
 
 
@@ -382,11 +382,11 @@ inline void UUW-Inventory_ItemSlotHover_C::SetCurrentPerkWeaponInfoSlot() {
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.SetTooltipSlot
-inline void UUW-Inventory_ItemSlotHover_C::SetTooltipSlot(enum class Unknow DragType, struct FText BuffInfo) {
+inline void UUW-Inventory_ItemSlotHover_C::SetTooltipSlot(enum class ItemWidgetDragType DragType, struct FText BuffInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.SetTooltipSlot");
 
 	struct SetTooltipSlot_Params {
-		enum class Unknow DragType;
+		enum class ItemWidgetDragType DragType;
 		struct FText BuffInfo;
 	}; SetTooltipSlot_Params Params;
 
@@ -413,12 +413,12 @@ inline void UUW-Inventory_ItemSlotHover_C::SetVisualMode() {
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.SetBuffSlot
-inline void UUW-Inventory_ItemSlotHover_C::SetBuffSlot(enum class Unknow DragType, struct Unknown BuffInfo) {
+inline void UUW-Inventory_ItemSlotHover_C::SetBuffSlot(enum class ItemWidgetDragType DragType, struct FBravoHotelBuffUIInfo BuffInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.SetBuffSlot");
 
 	struct SetBuffSlot_Params {
-		enum class Unknow DragType;
-		struct Unknown BuffInfo;
+		enum class ItemWidgetDragType DragType;
+		struct FBravoHotelBuffUIInfo BuffInfo;
 	}; SetBuffSlot_Params Params;
 
 	Params.DragType = DragType;
@@ -430,12 +430,12 @@ inline void UUW-Inventory_ItemSlotHover_C::SetBuffSlot(enum class Unknow DragTyp
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.SetOptionSlot
-inline void UUW-Inventory_ItemSlotHover_C::SetOptionSlot(enum class Unknow DragType, struct Unknown ItemOptionInfo) {
+inline void UUW-Inventory_ItemSlotHover_C::SetOptionSlot(enum class ItemWidgetDragType DragType, struct FItemOption ItemOptionInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.SetOptionSlot");
 
 	struct SetOptionSlot_Params {
-		enum class Unknow DragType;
-		struct Unknown ItemOptionInfo;
+		enum class ItemWidgetDragType DragType;
+		struct FItemOption ItemOptionInfo;
 	}; SetOptionSlot_Params Params;
 
 	Params.DragType = DragType;
@@ -447,12 +447,12 @@ inline void UUW-Inventory_ItemSlotHover_C::SetOptionSlot(enum class Unknow DragT
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.SetMaterialSlot
-inline void UUW-Inventory_ItemSlotHover_C::SetMaterialSlot(enum class Unknow DragType, struct Unknown MaterialInfo) {
+inline void UUW-Inventory_ItemSlotHover_C::SetMaterialSlot(enum class ItemWidgetDragType DragType, struct FItemMaterialData MaterialInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.SetMaterialSlot");
 
 	struct SetMaterialSlot_Params {
-		enum class Unknow DragType;
-		struct Unknown MaterialInfo;
+		enum class ItemWidgetDragType DragType;
+		struct FItemMaterialData MaterialInfo;
 	}; SetMaterialSlot_Params Params;
 
 	Params.DragType = DragType;
@@ -478,11 +478,11 @@ inline void UUW-Inventory_ItemSlotHover_C::Hide() {
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Show
-inline void UUW-Inventory_ItemSlotHover_C::Show(struct Unknown HoverWidget, char ShowItemDivideInfo, char IsRandomPerk, char& SUCCESS) {
+inline void UUW-Inventory_ItemSlotHover_C::Show(struct UBravoHotelInventoryHoverWidget HoverWidget, char ShowItemDivideInfo, char IsRandomPerk, char& SUCCESS) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Show");
 
 	struct Show_Params {
-		struct Unknown HoverWidget;
+		struct UBravoHotelInventoryHoverWidget HoverWidget;
 		char ShowItemDivideInfo;
 		char IsRandomPerk;
 		char& SUCCESS;
@@ -501,12 +501,12 @@ inline void UUW-Inventory_ItemSlotHover_C::Show(struct Unknown HoverWidget, char
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Vertical Box Buff List 2 Visibility
-inline enum class Unknow UUW-Inventory_ItemSlotHover_C::Get Vertical Box Buff List 2 Visibility() {
+inline enum class ESlateVisibility UUW-Inventory_ItemSlotHover_C::Get Vertical Box Buff List 2 Visibility() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Vertical Box Buff List 2 Visibility");
 
 	struct Get Vertical Box Buff List 2 Visibility_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class ESlateVisibility ReturnValue;
 
 	}; Get Vertical Box Buff List 2 Visibility_Params Params;
 
@@ -519,12 +519,12 @@ inline enum class Unknow UUW-Inventory_ItemSlotHover_C::Get Vertical Box Buff Li
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Buff List 1 Visibility
-inline enum class Unknow UUW-Inventory_ItemSlotHover_C::Get Buff List 1 Visibility() {
+inline enum class ESlateVisibility UUW-Inventory_ItemSlotHover_C::Get Buff List 1 Visibility() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Buff List 1 Visibility");
 
 	struct Get Buff List 1 Visibility_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class ESlateVisibility ReturnValue;
 
 	}; Get Buff List 1 Visibility_Params Params;
 
@@ -537,12 +537,12 @@ inline enum class Unknow UUW-Inventory_ItemSlotHover_C::Get Buff List 1 Visibili
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Size Box Comparing Text Visibility
-inline enum class Unknow UUW-Inventory_ItemSlotHover_C::Get Size Box Comparing Text Visibility() {
+inline enum class ESlateVisibility UUW-Inventory_ItemSlotHover_C::Get Size Box Comparing Text Visibility() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Size Box Comparing Text Visibility");
 
 	struct Get Size Box Comparing Text Visibility_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class ESlateVisibility ReturnValue;
 
 	}; Get Size Box Comparing Text Visibility_Params Params;
 
@@ -555,12 +555,12 @@ inline enum class Unknow UUW-Inventory_ItemSlotHover_C::Get Size Box Comparing T
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Vertical Box Combine Target Visibility
-inline enum class Unknow UUW-Inventory_ItemSlotHover_C::Get Vertical Box Combine Target Visibility() {
+inline enum class ESlateVisibility UUW-Inventory_ItemSlotHover_C::Get Vertical Box Combine Target Visibility() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Vertical Box Combine Target Visibility");
 
 	struct Get Vertical Box Combine Target Visibility_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class ESlateVisibility ReturnValue;
 
 	}; Get Vertical Box Combine Target Visibility_Params Params;
 
@@ -573,12 +573,12 @@ inline enum class Unknow UUW-Inventory_ItemSlotHover_C::Get Vertical Box Combine
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Item Slot- Description 1 Visibility
-inline enum class Unknow UUW-Inventory_ItemSlotHover_C::Get Item Slot- Description 1 Visibility() {
+inline enum class ESlateVisibility UUW-Inventory_ItemSlotHover_C::Get Item Slot- Description 1 Visibility() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Item Slot- Description 1 Visibility");
 
 	struct Get Item Slot- Description 1 Visibility_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class ESlateVisibility ReturnValue;
 
 	}; Get Item Slot- Description 1 Visibility_Params Params;
 
@@ -591,12 +591,12 @@ inline enum class Unknow UUW-Inventory_ItemSlotHover_C::Get Item Slot- Descripti
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Visibility Item Divide
-inline enum class Unknow UUW-Inventory_ItemSlotHover_C::Get Visibility Item Divide() {
+inline enum class ESlateVisibility UUW-Inventory_ItemSlotHover_C::Get Visibility Item Divide() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Visibility Item Divide");
 
 	struct Get Visibility Item Divide_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class ESlateVisibility ReturnValue;
 
 	}; Get Visibility Item Divide_Params Params;
 
@@ -609,11 +609,11 @@ inline enum class Unknow UUW-Inventory_ItemSlotHover_C::Get Visibility Item Divi
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetItemWeaponData
-inline void UUW-Inventory_ItemSlotHover_C::GetItemWeaponData(struct Unknown& ItemWeaponData) {
+inline void UUW-Inventory_ItemSlotHover_C::GetItemWeaponData(struct FItemWeapon& ItemWeaponData) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetItemWeaponData");
 
 	struct GetItemWeaponData_Params {
-		struct Unknown& ItemWeaponData;
+		struct FItemWeapon& ItemWeaponData;
 	}; GetItemWeaponData_Params Params;
 
 
@@ -640,12 +640,12 @@ inline void UUW-Inventory_ItemSlotHover_C::SetBuffList() {
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Horizontal Box Weapon Binded Info Visibility
-inline enum class Unknow UUW-Inventory_ItemSlotHover_C::Get Horizontal Box Weapon Binded Info Visibility() {
+inline enum class ESlateVisibility UUW-Inventory_ItemSlotHover_C::Get Horizontal Box Weapon Binded Info Visibility() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Horizontal Box Weapon Binded Info Visibility");
 
 	struct Get Horizontal Box Weapon Binded Info Visibility_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class ESlateVisibility ReturnValue;
 
 	}; Get Horizontal Box Weapon Binded Info Visibility_Params Params;
 
@@ -658,12 +658,12 @@ inline enum class Unknow UUW-Inventory_ItemSlotHover_C::Get Horizontal Box Weapo
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Image Weapon Lock Color And Opacity
-inline struct Unknown UUW-Inventory_ItemSlotHover_C::Get Image Weapon Lock Color And Opacity() {
+inline struct FLinearColor UUW-Inventory_ItemSlotHover_C::Get Image Weapon Lock Color And Opacity() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Image Weapon Lock Color And Opacity");
 
 	struct Get Image Weapon Lock Color And Opacity_Params {
 		
-		struct Unknown ReturnValue;
+		struct FLinearColor ReturnValue;
 
 	}; Get Image Weapon Lock Color And Opacity_Params Params;
 
@@ -676,12 +676,12 @@ inline struct Unknown UUW-Inventory_ItemSlotHover_C::Get Image Weapon Lock Color
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Image Weapon Lock Visibility
-inline enum class Unknow UUW-Inventory_ItemSlotHover_C::Get Image Weapon Lock Visibility() {
+inline enum class ESlateVisibility UUW-Inventory_ItemSlotHover_C::Get Image Weapon Lock Visibility() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Image Weapon Lock Visibility");
 
 	struct Get Image Weapon Lock Visibility_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class ESlateVisibility ReturnValue;
 
 	}; Get Image Weapon Lock Visibility_Params Params;
 
@@ -694,13 +694,13 @@ inline enum class Unknow UUW-Inventory_ItemSlotHover_C::Get Image Weapon Lock Vi
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.SetStatSlot
-inline void UUW-Inventory_ItemSlotHover_C::SetStatSlot(enum class Unknow StatusType, int32_t Value, enum class Unknow DragType) {
+inline void UUW-Inventory_ItemSlotHover_C::SetStatSlot(enum class EStatusType StatusType, int32_t Value, enum class ItemWidgetDragType DragType) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.SetStatSlot");
 
 	struct SetStatSlot_Params {
-		enum class Unknow StatusType;
+		enum class EStatusType StatusType;
 		int32_t Value;
-		enum class Unknow DragType;
+		enum class ItemWidgetDragType DragType;
 	}; SetStatSlot_Params Params;
 
 	Params.StatusType = StatusType;
@@ -713,12 +713,12 @@ inline void UUW-Inventory_ItemSlotHover_C::SetStatSlot(enum class Unknow StatusT
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get_ItemBg_ColorAndOpacity
-inline struct Unknown UUW-Inventory_ItemSlotHover_C::Get_ItemBg_ColorAndOpacity() {
+inline struct FLinearColor UUW-Inventory_ItemSlotHover_C::Get_ItemBg_ColorAndOpacity() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get_ItemBg_ColorAndOpacity");
 
 	struct Get_ItemBg_ColorAndOpacity_Params {
 		
-		struct Unknown ReturnValue;
+		struct FLinearColor ReturnValue;
 
 	}; Get_ItemBg_ColorAndOpacity_Params Params;
 
@@ -731,12 +731,12 @@ inline struct Unknown UUW-Inventory_ItemSlotHover_C::Get_ItemBg_ColorAndOpacity(
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Perk BG Color And Opacity
-inline struct Unknown UUW-Inventory_ItemSlotHover_C::Get Perk BG Color And Opacity() {
+inline struct FLinearColor UUW-Inventory_ItemSlotHover_C::Get Perk BG Color And Opacity() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Perk BG Color And Opacity");
 
 	struct Get Perk BG Color And Opacity_Params {
 		
-		struct Unknown ReturnValue;
+		struct FLinearColor ReturnValue;
 
 	}; Get Perk BG Color And Opacity_Params Params;
 
@@ -749,12 +749,12 @@ inline struct Unknown UUW-Inventory_ItemSlotHover_C::Get Perk BG Color And Opaci
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get_ItemBg_01_ColorAndOpacity
-inline struct Unknown UUW-Inventory_ItemSlotHover_C::Get_ItemBg_01_ColorAndOpacity() {
+inline struct FLinearColor UUW-Inventory_ItemSlotHover_C::Get_ItemBg_01_ColorAndOpacity() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get_ItemBg_01_ColorAndOpacity");
 
 	struct Get_ItemBg_01_ColorAndOpacity_Params {
 		
-		struct Unknown ReturnValue;
+		struct FLinearColor ReturnValue;
 
 	}; Get_ItemBg_01_ColorAndOpacity_Params Params;
 
@@ -781,12 +781,12 @@ inline void UUW-Inventory_ItemSlotHover_C::SetUltimatePerkDesc() {
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetSlotColor
-inline struct Unknown UUW-Inventory_ItemSlotHover_C::GetSlotColor() {
+inline struct FLinearColor UUW-Inventory_ItemSlotHover_C::GetSlotColor() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetSlotColor");
 
 	struct GetSlotColor_Params {
 		
-		struct Unknown ReturnValue;
+		struct FLinearColor ReturnValue;
 
 	}; GetSlotColor_Params Params;
 
@@ -799,12 +799,12 @@ inline struct Unknown UUW-Inventory_ItemSlotHover_C::GetSlotColor() {
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Perk Name Color And Opacity
-inline struct Unknown UUW-Inventory_ItemSlotHover_C::Get Perk Name Color And Opacity() {
+inline struct FSlateColor UUW-Inventory_ItemSlotHover_C::Get Perk Name Color And Opacity() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Perk Name Color And Opacity");
 
 	struct Get Perk Name Color And Opacity_Params {
 		
-		struct Unknown ReturnValue;
+		struct FSlateColor ReturnValue;
 
 	}; Get Perk Name Color And Opacity_Params Params;
 
@@ -817,12 +817,12 @@ inline struct Unknown UUW-Inventory_ItemSlotHover_C::Get Perk Name Color And Opa
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Unlock Ultimate Level Visibility
-inline enum class Unknow UUW-Inventory_ItemSlotHover_C::Get Unlock Ultimate Level Visibility() {
+inline enum class ESlateVisibility UUW-Inventory_ItemSlotHover_C::Get Unlock Ultimate Level Visibility() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Unlock Ultimate Level Visibility");
 
 	struct Get Unlock Ultimate Level Visibility_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class ESlateVisibility ReturnValue;
 
 	}; Get Unlock Ultimate Level Visibility_Params Params;
 
@@ -864,11 +864,11 @@ inline void UUW-Inventory_ItemSlotHover_C::SetPerksDesc() {
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.HideHover
-inline void UUW-Inventory_ItemSlotHover_C::HideHover(enum class Unknow DragType, char Force) {
+inline void UUW-Inventory_ItemSlotHover_C::HideHover(enum class ItemWidgetDragType DragType, char Force) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.HideHover");
 
 	struct HideHover_Params {
-		enum class Unknow DragType;
+		enum class ItemWidgetDragType DragType;
 		char Force;
 	}; HideHover_Params Params;
 
@@ -881,12 +881,12 @@ inline void UUW-Inventory_ItemSlotHover_C::HideHover(enum class Unknow DragType,
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Perk Image Brush
-inline struct Unknown UUW-Inventory_ItemSlotHover_C::Get Perk Image Brush() {
+inline struct FSlateBrush UUW-Inventory_ItemSlotHover_C::Get Perk Image Brush() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Perk Image Brush");
 
 	struct Get Perk Image Brush_Params {
 		
-		struct Unknown ReturnValue;
+		struct FSlateBrush ReturnValue;
 
 	}; Get Perk Image Brush_Params Params;
 
@@ -917,12 +917,12 @@ inline struct FText UUW-Inventory_ItemSlotHover_C::Get Perk Name Text() {
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.SetPerkSlot
-inline void UUW-Inventory_ItemSlotHover_C::SetPerkSlot(struct Unknown NewPerkInfo, enum class Unknow DragType, char IsUltimatePerk) {
+inline void UUW-Inventory_ItemSlotHover_C::SetPerkSlot(struct FPerkUIInfo NewPerkInfo, enum class ItemWidgetDragType DragType, char IsUltimatePerk) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.SetPerkSlot");
 
 	struct SetPerkSlot_Params {
-		struct Unknown NewPerkInfo;
-		enum class Unknow DragType;
+		struct FPerkUIInfo NewPerkInfo;
+		enum class ItemWidgetDragType DragType;
 		char IsUltimatePerk;
 	}; SetPerkSlot_Params Params;
 
@@ -972,12 +972,12 @@ inline struct FText UUW-Inventory_ItemSlotHover_C::Get_ItemSlot-Capacity_Text() 
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetItemType
-inline void UUW-Inventory_ItemSlotHover_C::GetItemType(struct FText& ItemTypeText, struct Unknown& ItemTypeTexture) {
+inline void UUW-Inventory_ItemSlotHover_C::GetItemType(struct FText& ItemTypeText, struct UTexture2D& ItemTypeTexture) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetItemType");
 
 	struct GetItemType_Params {
 		struct FText& ItemTypeText;
-		struct Unknown& ItemTypeTexture;
+		struct UTexture2D& ItemTypeTexture;
 	}; GetItemType_Params Params;
 
 
@@ -1027,13 +1027,13 @@ inline struct FText UUW-Inventory_ItemSlotHover_C::Get Weapon Item Type Text() {
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetWeaponType
-inline void UUW-Inventory_ItemSlotHover_C::GetWeaponType(enum class Unknow& WeaponType, struct FText& WeaponTypeText, struct Unknown& WeaponTypeTexture) {
+inline void UUW-Inventory_ItemSlotHover_C::GetWeaponType(enum class EWeaponType& WeaponType, struct FText& WeaponTypeText, struct UTexture2D& WeaponTypeTexture) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetWeaponType");
 
 	struct GetWeaponType_Params {
-		enum class Unknow& WeaponType;
+		enum class EWeaponType& WeaponType;
 		struct FText& WeaponTypeText;
-		struct Unknown& WeaponTypeTexture;
+		struct UTexture2D& WeaponTypeTexture;
 	}; GetWeaponType_Params Params;
 
 
@@ -1048,13 +1048,13 @@ inline void UUW-Inventory_ItemSlotHover_C::GetWeaponType(enum class Unknow& Weap
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetEquippedWeaponInfoByWeaponType
-inline void UUW-Inventory_ItemSlotHover_C::GetEquippedWeaponInfoByWeaponType(enum class Unknow WeaponType, char& bResult, struct Unknown& WeaponInfo) {
+inline void UUW-Inventory_ItemSlotHover_C::GetEquippedWeaponInfoByWeaponType(enum class EWeaponType WeaponType, char& bResult, struct FBravoHotelWeaponInfo& WeaponInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetEquippedWeaponInfoByWeaponType");
 
 	struct GetEquippedWeaponInfoByWeaponType_Params {
-		enum class Unknow WeaponType;
+		enum class EWeaponType WeaponType;
 		char& bResult;
-		struct Unknown& WeaponInfo;
+		struct FBravoHotelWeaponInfo& WeaponInfo;
 	}; GetEquippedWeaponInfoByWeaponType_Params Params;
 
 	Params.WeaponType = WeaponType;
@@ -1105,12 +1105,12 @@ inline struct FText UUW-Inventory_ItemSlotHover_C::Get Ammo Info Text() {
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Ammo Icon Brush
-inline struct Unknown UUW-Inventory_ItemSlotHover_C::Get Ammo Icon Brush() {
+inline struct FSlateBrush UUW-Inventory_ItemSlotHover_C::Get Ammo Icon Brush() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Ammo Icon Brush");
 
 	struct Get Ammo Icon Brush_Params {
 		
-		struct Unknown ReturnValue;
+		struct FSlateBrush ReturnValue;
 
 	}; Get Ammo Icon Brush_Params Params;
 
@@ -1123,11 +1123,11 @@ inline struct Unknown UUW-Inventory_ItemSlotHover_C::Get Ammo Icon Brush() {
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetCompareAmmo
-inline void UUW-Inventory_ItemSlotHover_C::GetCompareAmmo(struct Unknown& SlateColor, struct FText& valueText) {
+inline void UUW-Inventory_ItemSlotHover_C::GetCompareAmmo(struct FSlateColor& SlateColor, struct FText& valueText) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetCompareAmmo");
 
 	struct GetCompareAmmo_Params {
-		struct Unknown& SlateColor;
+		struct FSlateColor& SlateColor;
 		struct FText& valueText;
 	}; GetCompareAmmo_Params Params;
 
@@ -1142,11 +1142,11 @@ inline void UUW-Inventory_ItemSlotHover_C::GetCompareAmmo(struct Unknown& SlateC
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetCompareFiringRate
-inline void UUW-Inventory_ItemSlotHover_C::GetCompareFiringRate(struct Unknown& SlateColor, struct FText& valueText) {
+inline void UUW-Inventory_ItemSlotHover_C::GetCompareFiringRate(struct FSlateColor& SlateColor, struct FText& valueText) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetCompareFiringRate");
 
 	struct GetCompareFiringRate_Params {
-		struct Unknown& SlateColor;
+		struct FSlateColor& SlateColor;
 		struct FText& valueText;
 	}; GetCompareFiringRate_Params Params;
 
@@ -1161,11 +1161,11 @@ inline void UUW-Inventory_ItemSlotHover_C::GetCompareFiringRate(struct Unknown& 
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetCompareStabillity
-inline void UUW-Inventory_ItemSlotHover_C::GetCompareStabillity(struct Unknown& SlateColor, struct FText& valueText) {
+inline void UUW-Inventory_ItemSlotHover_C::GetCompareStabillity(struct FSlateColor& SlateColor, struct FText& valueText) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetCompareStabillity");
 
 	struct GetCompareStabillity_Params {
-		struct Unknown& SlateColor;
+		struct FSlateColor& SlateColor;
 		struct FText& valueText;
 	}; GetCompareStabillity_Params Params;
 
@@ -1180,11 +1180,11 @@ inline void UUW-Inventory_ItemSlotHover_C::GetCompareStabillity(struct Unknown& 
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetCompareEffectiveRange
-inline void UUW-Inventory_ItemSlotHover_C::GetCompareEffectiveRange(struct Unknown& SlateColor, struct FText& valueText) {
+inline void UUW-Inventory_ItemSlotHover_C::GetCompareEffectiveRange(struct FSlateColor& SlateColor, struct FText& valueText) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetCompareEffectiveRange");
 
 	struct GetCompareEffectiveRange_Params {
-		struct Unknown& SlateColor;
+		struct FSlateColor& SlateColor;
 		struct FText& valueText;
 	}; GetCompareEffectiveRange_Params Params;
 
@@ -1199,11 +1199,11 @@ inline void UUW-Inventory_ItemSlotHover_C::GetCompareEffectiveRange(struct Unkno
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetComparePower
-inline void UUW-Inventory_ItemSlotHover_C::GetComparePower(struct Unknown& SlateColor, struct FText& valueText) {
+inline void UUW-Inventory_ItemSlotHover_C::GetComparePower(struct FSlateColor& SlateColor, struct FText& valueText) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetComparePower");
 
 	struct GetComparePower_Params {
-		struct Unknown& SlateColor;
+		struct FSlateColor& SlateColor;
 		struct FText& valueText;
 	}; GetComparePower_Params Params;
 
@@ -1342,11 +1342,11 @@ inline void UUW-Inventory_ItemSlotHover_C::IsItemTooltip(char& bResult) {
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetHoverCanvas
-inline void UUW-Inventory_ItemSlotHover_C::GetHoverCanvas(struct Unknown& CanvasPanel, char& bResult) {
+inline void UUW-Inventory_ItemSlotHover_C::GetHoverCanvas(struct UCanvasPanel& CanvasPanel, char& bResult) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetHoverCanvas");
 
 	struct GetHoverCanvas_Params {
-		struct Unknown& CanvasPanel;
+		struct UCanvasPanel& CanvasPanel;
 		char& bResult;
 	}; GetHoverCanvas_Params Params;
 
@@ -1361,13 +1361,13 @@ inline void UUW-Inventory_ItemSlotHover_C::GetHoverCanvas(struct Unknown& Canvas
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.SetWeaponItemSlot
-inline void UUW-Inventory_ItemSlotHover_C::SetWeaponItemSlot(struct Unknown WeaponItemInfo, struct Unknown InventoryItemInfo, enum class Unknow DragType, struct FName Ammo) {
+inline void UUW-Inventory_ItemSlotHover_C::SetWeaponItemSlot(struct FBravoHotelWeaponInfo WeaponItemInfo, struct FInventoryItemInfo InventoryItemInfo, enum class ItemWidgetDragType DragType, struct FName Ammo) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.SetWeaponItemSlot");
 
 	struct SetWeaponItemSlot_Params {
-		struct Unknown WeaponItemInfo;
-		struct Unknown InventoryItemInfo;
-		enum class Unknow DragType;
+		struct FBravoHotelWeaponInfo WeaponItemInfo;
+		struct FInventoryItemInfo InventoryItemInfo;
+		enum class ItemWidgetDragType DragType;
 		struct FName Ammo;
 	}; SetWeaponItemSlot_Params Params;
 
@@ -1400,12 +1400,12 @@ inline struct FText UUW-Inventory_ItemSlotHover_C::Get Weapon Item Slot- Descrip
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Weapon Item Slot- Item Image Brush
-inline struct Unknown UUW-Inventory_ItemSlotHover_C::Get Weapon Item Slot- Item Image Brush() {
+inline struct FSlateBrush UUW-Inventory_ItemSlotHover_C::Get Weapon Item Slot- Item Image Brush() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Get Weapon Item Slot- Item Image Brush");
 
 	struct Get Weapon Item Slot- Item Image Brush_Params {
 		
-		struct Unknown ReturnValue;
+		struct FSlateBrush ReturnValue;
 
 	}; Get Weapon Item Slot- Item Image Brush_Params Params;
 
@@ -1436,12 +1436,12 @@ inline struct FText UUW-Inventory_ItemSlotHover_C::Get Weapon Item Slot- Item Na
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.SetItemSlotInfo
-inline void UUW-Inventory_ItemSlotHover_C::SetItemSlotInfo(struct Unknown InventoryItem, enum class Unknow DragType) {
+inline void UUW-Inventory_ItemSlotHover_C::SetItemSlotInfo(struct FInventoryItemInfo InventoryItem, enum class ItemWidgetDragType DragType) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.SetItemSlotInfo");
 
 	struct SetItemSlotInfo_Params {
-		struct Unknown InventoryItem;
-		enum class Unknow DragType;
+		struct FInventoryItemInfo InventoryItem;
+		enum class ItemWidgetDragType DragType;
 	}; SetItemSlotInfo_Params Params;
 
 	Params.InventoryItem = InventoryItem;
@@ -1453,12 +1453,12 @@ inline void UUW-Inventory_ItemSlotHover_C::SetItemSlotInfo(struct Unknown Invent
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Show Hover
-inline void UUW-Inventory_ItemSlotHover_C::Show Hover(struct Unknown HoveredWidget, struct Unknown ShowingWidgetRef, char& SUCCESS) {
+inline void UUW-Inventory_ItemSlotHover_C::Show Hover(struct UWidget HoveredWidget, struct UUserWidget ShowingWidgetRef, char& SUCCESS) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.Show Hover");
 
 	struct Show Hover_Params {
-		struct Unknown HoveredWidget;
-		struct Unknown ShowingWidgetRef;
+		struct UWidget HoveredWidget;
+		struct UUserWidget ShowingWidgetRef;
 		char& SUCCESS;
 	}; Show Hover_Params Params;
 
@@ -1510,12 +1510,12 @@ inline struct FText UUW-Inventory_ItemSlotHover_C::GetDescription() {
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetItemImage
-inline struct Unknown UUW-Inventory_ItemSlotHover_C::GetItemImage() {
+inline struct FSlateBrush UUW-Inventory_ItemSlotHover_C::GetItemImage() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.GetItemImage");
 
 	struct GetItemImage_Params {
 		
-		struct Unknown ReturnValue;
+		struct FSlateBrush ReturnValue;
 
 	}; GetItemImage_Params Params;
 
@@ -1546,11 +1546,11 @@ inline struct FText UUW-Inventory_ItemSlotHover_C::GetName() {
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.OnLoaded_5CB0A85D41BD4B88F0EAB29CA9DBDD0F
-inline void UUW-Inventory_ItemSlotHover_C::OnLoaded_5CB0A85D41BD4B88F0EAB29CA9DBDD0F(struct Unknown Loaded) {
+inline void UUW-Inventory_ItemSlotHover_C::OnLoaded_5CB0A85D41BD4B88F0EAB29CA9DBDD0F(struct Object Loaded) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.OnLoaded_5CB0A85D41BD4B88F0EAB29CA9DBDD0F");
 
 	struct OnLoaded_5CB0A85D41BD4B88F0EAB29CA9DBDD0F_Params {
-		struct Unknown Loaded;
+		struct Object Loaded;
 	}; OnLoaded_5CB0A85D41BD4B88F0EAB29CA9DBDD0F_Params Params;
 
 	Params.Loaded = Loaded;
@@ -1561,11 +1561,11 @@ inline void UUW-Inventory_ItemSlotHover_C::OnLoaded_5CB0A85D41BD4B88F0EAB29CA9DB
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.OnLoaded_A317A42643FCC3E3348F00AF47100D7C
-inline void UUW-Inventory_ItemSlotHover_C::OnLoaded_A317A42643FCC3E3348F00AF47100D7C(struct Unknown Loaded) {
+inline void UUW-Inventory_ItemSlotHover_C::OnLoaded_A317A42643FCC3E3348F00AF47100D7C(struct Object Loaded) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.OnLoaded_A317A42643FCC3E3348F00AF47100D7C");
 
 	struct OnLoaded_A317A42643FCC3E3348F00AF47100D7C_Params {
-		struct Unknown Loaded;
+		struct Object Loaded;
 	}; OnLoaded_A317A42643FCC3E3348F00AF47100D7C_Params Params;
 
 	Params.Loaded = Loaded;
@@ -1576,11 +1576,11 @@ inline void UUW-Inventory_ItemSlotHover_C::OnLoaded_A317A42643FCC3E3348F00AF4710
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.OnLoaded_BF365972409319D445BAF88D964EE916
-inline void UUW-Inventory_ItemSlotHover_C::OnLoaded_BF365972409319D445BAF88D964EE916(struct Unknown Loaded) {
+inline void UUW-Inventory_ItemSlotHover_C::OnLoaded_BF365972409319D445BAF88D964EE916(struct Object Loaded) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.OnLoaded_BF365972409319D445BAF88D964EE916");
 
 	struct OnLoaded_BF365972409319D445BAF88D964EE916_Params {
-		struct Unknown Loaded;
+		struct Object Loaded;
 	}; OnLoaded_BF365972409319D445BAF88D964EE916_Params Params;
 
 	Params.Loaded = Loaded;
@@ -1591,11 +1591,11 @@ inline void UUW-Inventory_ItemSlotHover_C::OnLoaded_BF365972409319D445BAF88D964E
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.OnLoaded_90972E92490A36CFBC0DC4AD6ACA1B48
-inline void UUW-Inventory_ItemSlotHover_C::OnLoaded_90972E92490A36CFBC0DC4AD6ACA1B48(struct Unknown Loaded) {
+inline void UUW-Inventory_ItemSlotHover_C::OnLoaded_90972E92490A36CFBC0DC4AD6ACA1B48(struct Object Loaded) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.OnLoaded_90972E92490A36CFBC0DC4AD6ACA1B48");
 
 	struct OnLoaded_90972E92490A36CFBC0DC4AD6ACA1B48_Params {
-		struct Unknown Loaded;
+		struct Object Loaded;
 	}; OnLoaded_90972E92490A36CFBC0DC4AD6ACA1B48_Params Params;
 
 	Params.Loaded = Loaded;
@@ -1606,11 +1606,11 @@ inline void UUW-Inventory_ItemSlotHover_C::OnLoaded_90972E92490A36CFBC0DC4AD6ACA
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.AsyncLoadIconTexture
-inline void UUW-Inventory_ItemSlotHover_C::AsyncLoadIconTexture(struct Unknown IconTexture) {
+inline void UUW-Inventory_ItemSlotHover_C::AsyncLoadIconTexture(struct TSoftObjectPtr<UPaperSprite> IconTexture) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.AsyncLoadIconTexture");
 
 	struct AsyncLoadIconTexture_Params {
-		struct Unknown IconTexture;
+		struct TSoftObjectPtr<UPaperSprite> IconTexture;
 	}; AsyncLoadIconTexture_Params Params;
 
 	Params.IconTexture = IconTexture;
@@ -1636,11 +1636,11 @@ inline void UUW-Inventory_ItemSlotHover_C::DelayDestroy(float Delay) {
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.AsyncLoadIconObject
-inline void UUW-Inventory_ItemSlotHover_C::AsyncLoadIconObject(struct Unknown IconObject) {
+inline void UUW-Inventory_ItemSlotHover_C::AsyncLoadIconObject(struct TSoftObjectPtr<Object> IconObject) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.AsyncLoadIconObject");
 
 	struct AsyncLoadIconObject_Params {
-		struct Unknown IconObject;
+		struct TSoftObjectPtr<Object> IconObject;
 	}; AsyncLoadIconObject_Params Params;
 
 	Params.IconObject = IconObject;
@@ -1651,11 +1651,11 @@ inline void UUW-Inventory_ItemSlotHover_C::AsyncLoadIconObject(struct Unknown Ic
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.AsyncLoadStatIcon
-inline void UUW-Inventory_ItemSlotHover_C::AsyncLoadStatIcon(struct Unknown IconObject) {
+inline void UUW-Inventory_ItemSlotHover_C::AsyncLoadStatIcon(struct TSoftObjectPtr<Object> IconObject) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.AsyncLoadStatIcon");
 
 	struct AsyncLoadStatIcon_Params {
-		struct Unknown IconObject;
+		struct TSoftObjectPtr<Object> IconObject;
 	}; AsyncLoadStatIcon_Params Params;
 
 	Params.IconObject = IconObject;
@@ -1708,11 +1708,11 @@ inline void UUW-Inventory_ItemSlotHover_C::CheckHoverVisibility() {
 }
 
 // Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.AsyncLoadMaterialIcon
-inline void UUW-Inventory_ItemSlotHover_C::AsyncLoadMaterialIcon(struct Unknown IconObject) {
+inline void UUW-Inventory_ItemSlotHover_C::AsyncLoadMaterialIcon(struct TSoftObjectPtr<Object> IconObject) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ItemSlotHover.UW-Inventory_ItemSlotHover_C.AsyncLoadMaterialIcon");
 
 	struct AsyncLoadMaterialIcon_Params {
-		struct Unknown IconObject;
+		struct TSoftObjectPtr<Object> IconObject;
 	}; AsyncLoadMaterialIcon_Params Params;
 
 	Params.IconObject = IconObject;

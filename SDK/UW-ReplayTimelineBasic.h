@@ -3,65 +3,65 @@ class UUW-ReplayTimelineBasic_C : public UBravoHotelReplayTimelineWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x360 (8)
-	struct Unknown Bg; // 0x368 (8)
-	struct Unknown Border_Timeline; // 0x370 (8)
-	struct Unknown Border_TimeToGo; // 0x378 (8)
-	struct Unknown BT_FreeCam; // 0x380 (8)
-	struct Unknown BT_ReplayPause; // 0x388 (8)
-	struct Unknown BT_ReplayResume; // 0x390 (8)
-	struct Unknown BT_SpeedDown; // 0x398 (8)
-	struct Unknown BT_SpeedUp; // 0x3A0 (8)
-	struct Unknown BT_TimelineScaleDown; // 0x3A8 (8)
-	struct Unknown BT_TimelineScaleUp; // 0x3B0 (8)
-	struct Unknown Canvas_EventMarkers; // 0x3B8 (8)
-	struct Unknown Chk_ShowKill; // 0x3C0 (8)
-	struct Unknown Chk_ShowKnockout; // 0x3C8 (8)
-	struct Unknown Chk_ShowMyKill; // 0x3D0 (8)
-	struct Unknown Chk_ShowMyKnockout; // 0x3D8 (8)
-	struct Unknown Chk_ShowMyResuscitated; // 0x3E0 (8)
-	struct Unknown Chk_ShowResuscitated; // 0x3E8 (8)
-	struct Unknown ReplayTimelineSlider; // 0x3F0 (8)
-	struct Unknown ScrollBox_Timeline; // 0x3F8 (8)
-	struct Unknown SizeBox_Timeline; // 0x400 (8)
-	struct Unknown Slider_TimelineScale; // 0x408 (8)
-	struct Unknown T_CameraType; // 0x410 (8)
-	struct Unknown T_CurrentTime; // 0x418 (8)
-	struct Unknown T_PlaySpeed; // 0x420 (8)
-	struct Unknown T_TimeToGo; // 0x428 (8)
-	struct Unknown T_TotalTime; // 0x430 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x360 (8)
+	struct UImage Bg; // 0x368 (8)
+	struct UTimelineBorder Border_Timeline; // 0x370 (8)
+	struct UBorder Border_TimeToGo; // 0x378 (8)
+	struct UButton BT_FreeCam; // 0x380 (8)
+	struct UButton BT_ReplayPause; // 0x388 (8)
+	struct UButton BT_ReplayResume; // 0x390 (8)
+	struct UButton BT_SpeedDown; // 0x398 (8)
+	struct UButton BT_SpeedUp; // 0x3A0 (8)
+	struct UButton BT_TimelineScaleDown; // 0x3A8 (8)
+	struct UButton BT_TimelineScaleUp; // 0x3B0 (8)
+	struct UCanvasPanel Canvas_EventMarkers; // 0x3B8 (8)
+	struct UCheckBox Chk_ShowKill; // 0x3C0 (8)
+	struct UCheckBox Chk_ShowKnockout; // 0x3C8 (8)
+	struct UCheckBox Chk_ShowMyKill; // 0x3D0 (8)
+	struct UCheckBox Chk_ShowMyKnockout; // 0x3D8 (8)
+	struct UCheckBox Chk_ShowMyResuscitated; // 0x3E0 (8)
+	struct UCheckBox Chk_ShowResuscitated; // 0x3E8 (8)
+	struct USlider ReplayTimelineSlider; // 0x3F0 (8)
+	struct UScrollBox ScrollBox_Timeline; // 0x3F8 (8)
+	struct USizeBox SizeBox_Timeline; // 0x400 (8)
+	struct USlider Slider_TimelineScale; // 0x408 (8)
+	struct UTextBlock T_CameraType; // 0x410 (8)
+	struct UTextBlock T_CurrentTime; // 0x418 (8)
+	struct UTextBlock T_PlaySpeed; // 0x420 (8)
+	struct UTextBlock T_TimeToGo; // 0x428 (8)
+	struct UTextBlock T_TotalTime; // 0x430 (8)
 	float TimelineSizeBoxOffset; // 0x438 (4)
-	struct Unknown* Class_EventMarker_Kill; // 0x440 (8)
-	struct Unknown* Class_EventMarker_Knockout; // 0x448 (8)
+	struct UClass* Class_EventMarker_Kill; // 0x440 (8)
+	struct UClass* Class_EventMarker_Knockout; // 0x448 (8)
 	float LastViewportSize; // 0x450 (4)
 	char IsMouseOnBorder : 0; // 0x454 (1)
-	struct Unknown* Class_EventMarker_Resuscitated; // 0x458 (8)
-	struct Unknown* Class_EventMarker_WhenReported; // 0x460 (8)
-	enum class Unknow CameraType; // 0x468 (1)
+	struct UClass* Class_EventMarker_Resuscitated; // 0x458 (8)
+	struct UClass* Class_EventMarker_WhenReported; // 0x460 (8)
+	enum class ECameraType CameraType; // 0x468 (1)
 	char ViewMode; // 0x469 (1)
 
 	void CheckCameraType(); // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.CheckCameraType(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown GetTimelineToolTipPositionBySlider(struct FString& ToolTipTime); // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.GetTimelineToolTipPositionBySlider(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FVector2D GetTimelineToolTipPositionBySlider(struct FString& ToolTipTime); // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.GetTimelineToolTipPositionBySlider(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetTimeToGo(); // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.SetTimeToGo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CheckTimeToGo(); // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.CheckTimeToGo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CalcTimelineScale(char IsUpScale); // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.CalcTimelineScale(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetTimelineToolTipText(struct FString& Text); // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.SetTimelineToolTipText(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown On_Border_Timeline_MouseLeave_1(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.On_Border_Timeline_MouseLeave_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply On_Border_Timeline_MouseLeave_1(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.On_Border_Timeline_MouseLeave_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetTickTime(); // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.SetTickTime(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	struct FText Get_T_PlaySpeed_Text_1(); // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.Get_T_PlaySpeed_Text_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	struct Unknown On_Border_Timeline_MouseMove_1(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.On_Border_Timeline_MouseMove_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown On_Border_Timeline_MouseEnter_1(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.On_Border_Timeline_MouseEnter_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown CreateEventMarker(enum class Unknow killType); // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.CreateEventMarker(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply On_Border_Timeline_MouseMove_1(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.On_Border_Timeline_MouseMove_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply On_Border_Timeline_MouseEnter_1(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.On_Border_Timeline_MouseEnter_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct UBravoHotelReplayTimelineEventMarker CreateEventMarker(enum class EKillType killType); // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.CreateEventMarker(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CheckChangeViewportSize(); // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.CheckChangeViewportSize(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetEventMarkersPos(enum class Unknow killType, float TotalTime); // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.SetEventMarkersPos(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetEventMarkersPos(enum class EKillType killType, float TotalTime); // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.SetEventMarkersPos(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetTimelineScaleBoxWidth(); // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.SetTimelineScaleBoxWidth(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Init(); // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.Init(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void TogglePauseResumeButton(char PauseResume); // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.TogglePauseResumeButton(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__BT_ReplayResume_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(); // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.BndEvt__BT_ReplayResume_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__BT_ReplayPause_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(); // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.BndEvt__BT_ReplayPause_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ChangeCameraTypeDelegate_Event_1(enum class Unknow CameraType, struct FString TargetPlayerName); // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.ChangeCameraTypeDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ChangeCameraTypeDelegate_Event_1(enum class ECameraType CameraType, struct FString TargetPlayerName); // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.ChangeCameraTypeDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__BT_FreeCam_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(); // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.BndEvt__BT_FreeCam_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__Slider_302_K2Node_ComponentBoundEvent_3_OnFloatValueChangedEvent__DelegateSignature(float Value); // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.BndEvt__Slider_302_K2Node_ComponentBoundEvent_3_OnFloatValueChangedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnReplayJumpCompleteEvent_Event_1(char bSuccess); // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.OnReplayJumpCompleteEvent_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BPUpdateTimelineScale(); // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.BPUpdateTimelineScale(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -72,7 +72,7 @@ public:
 	void BndEvt__BT_SpeedDown_K2Node_ComponentBoundEvent_8_OnButtonClickedEvent__DelegateSignature(); // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.BndEvt__BT_SpeedDown_K2Node_ComponentBoundEvent_8_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__BT_SpeedUp_K2Node_ComponentBoundEvent_9_OnButtonClickedEvent__DelegateSignature(); // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.BndEvt__BT_SpeedUp_K2Node_ComponentBoundEvent_9_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__ScrollBox_Timeline_K2Node_ComponentBoundEvent_11_OnUserScrolledEvent__DelegateSignature(float CurrentOffset); // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.BndEvt__ScrollBox_Timeline_K2Node_ComponentBoundEvent_11_OnUserScrolledEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BPUpdateKillEventMarkersPos(enum class Unknow killType, float TotalTime); // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.BPUpdateKillEventMarkersPos(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BPUpdateKillEventMarkersPos(enum class EKillType killType, float TotalTime); // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.BPUpdateKillEventMarkersPos(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnReplayPauseEvent_Event_1(char bPaused); // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.OnReplayPauseEvent_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__ReplayTimelineSlider_K2Node_ComponentBoundEvent_12_OnMouseCaptureEndEvent__DelegateSignature(); // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.BndEvt__ReplayTimelineSlider_K2Node_ComponentBoundEvent_12_OnMouseCaptureEndEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -99,12 +99,12 @@ inline void UUW-ReplayTimelineBasic_C::CheckCameraType() {
 }
 
 // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.GetTimelineToolTipPositionBySlider
-inline struct Unknown UUW-ReplayTimelineBasic_C::GetTimelineToolTipPositionBySlider(struct FString& ToolTipTime) {
+inline struct FVector2D UUW-ReplayTimelineBasic_C::GetTimelineToolTipPositionBySlider(struct FString& ToolTipTime) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.GetTimelineToolTipPositionBySlider");
 
 	struct GetTimelineToolTipPositionBySlider_Params {
 		struct FString& ToolTipTime;
-		struct Unknown ReturnValue;
+		struct FVector2D ReturnValue;
 
 	}; GetTimelineToolTipPositionBySlider_Params Params;
 
@@ -180,13 +180,13 @@ inline void UUW-ReplayTimelineBasic_C::SetTimelineToolTipText(struct FString& Te
 }
 
 // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.On_Border_Timeline_MouseLeave_1
-inline struct Unknown UUW-ReplayTimelineBasic_C::On_Border_Timeline_MouseLeave_1(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UUW-ReplayTimelineBasic_C::On_Border_Timeline_MouseLeave_1(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.On_Border_Timeline_MouseLeave_1");
 
 	struct On_Border_Timeline_MouseLeave_1_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; On_Border_Timeline_MouseLeave_1_Params Params;
 
@@ -235,13 +235,13 @@ inline struct FText UUW-ReplayTimelineBasic_C::Get_T_PlaySpeed_Text_1() {
 }
 
 // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.On_Border_Timeline_MouseMove_1
-inline struct Unknown UUW-ReplayTimelineBasic_C::On_Border_Timeline_MouseMove_1(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UUW-ReplayTimelineBasic_C::On_Border_Timeline_MouseMove_1(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.On_Border_Timeline_MouseMove_1");
 
 	struct On_Border_Timeline_MouseMove_1_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; On_Border_Timeline_MouseMove_1_Params Params;
 
@@ -258,13 +258,13 @@ inline struct Unknown UUW-ReplayTimelineBasic_C::On_Border_Timeline_MouseMove_1(
 }
 
 // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.On_Border_Timeline_MouseEnter_1
-inline struct Unknown UUW-ReplayTimelineBasic_C::On_Border_Timeline_MouseEnter_1(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UUW-ReplayTimelineBasic_C::On_Border_Timeline_MouseEnter_1(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.On_Border_Timeline_MouseEnter_1");
 
 	struct On_Border_Timeline_MouseEnter_1_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; On_Border_Timeline_MouseEnter_1_Params Params;
 
@@ -281,12 +281,12 @@ inline struct Unknown UUW-ReplayTimelineBasic_C::On_Border_Timeline_MouseEnter_1
 }
 
 // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.CreateEventMarker
-inline struct Unknown UUW-ReplayTimelineBasic_C::CreateEventMarker(enum class Unknow killType) {
+inline struct UBravoHotelReplayTimelineEventMarker UUW-ReplayTimelineBasic_C::CreateEventMarker(enum class EKillType killType) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.CreateEventMarker");
 
 	struct CreateEventMarker_Params {
-		enum class Unknow killType;
-		struct Unknown ReturnValue;
+		enum class EKillType killType;
+		struct UBravoHotelReplayTimelineEventMarker ReturnValue;
 
 	}; CreateEventMarker_Params Params;
 
@@ -314,11 +314,11 @@ inline void UUW-ReplayTimelineBasic_C::CheckChangeViewportSize() {
 }
 
 // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.SetEventMarkersPos
-inline void UUW-ReplayTimelineBasic_C::SetEventMarkersPos(enum class Unknow killType, float TotalTime) {
+inline void UUW-ReplayTimelineBasic_C::SetEventMarkersPos(enum class EKillType killType, float TotalTime) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.SetEventMarkersPos");
 
 	struct SetEventMarkersPos_Params {
-		enum class Unknow killType;
+		enum class EKillType killType;
 		float TotalTime;
 	}; SetEventMarkersPos_Params Params;
 
@@ -402,11 +402,11 @@ inline void UUW-ReplayTimelineBasic_C::BndEvt__BT_ReplayPause_K2Node_ComponentBo
 }
 
 // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.ChangeCameraTypeDelegate_Event_1
-inline void UUW-ReplayTimelineBasic_C::ChangeCameraTypeDelegate_Event_1(enum class Unknow CameraType, struct FString TargetPlayerName) {
+inline void UUW-ReplayTimelineBasic_C::ChangeCameraTypeDelegate_Event_1(enum class ECameraType CameraType, struct FString TargetPlayerName) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.ChangeCameraTypeDelegate_Event_1");
 
 	struct ChangeCameraTypeDelegate_Event_1_Params {
-		enum class Unknow CameraType;
+		enum class ECameraType CameraType;
 		struct FString TargetPlayerName;
 	}; ChangeCameraTypeDelegate_Event_1_Params Params;
 
@@ -433,11 +433,11 @@ inline void UUW-ReplayTimelineBasic_C::BndEvt__BT_FreeCam_K2Node_ComponentBoundE
 }
 
 // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.Tick
-inline void UUW-ReplayTimelineBasic_C::Tick(struct Unknown MyGeometry, float InDeltaTime) {
+inline void UUW-ReplayTimelineBasic_C::Tick(struct FGeometry MyGeometry, float InDeltaTime) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.Tick");
 
 	struct Tick_Params {
-		struct Unknown MyGeometry;
+		struct FGeometry MyGeometry;
 		float InDeltaTime;
 	}; Tick_Params Params;
 
@@ -595,11 +595,11 @@ inline void UUW-ReplayTimelineBasic_C::BndEvt__ScrollBox_Timeline_K2Node_Compone
 }
 
 // Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.BPUpdateKillEventMarkersPos
-inline void UUW-ReplayTimelineBasic_C::BPUpdateKillEventMarkersPos(enum class Unknow killType, float TotalTime) {
+inline void UUW-ReplayTimelineBasic_C::BPUpdateKillEventMarkersPos(enum class EKillType killType, float TotalTime) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-ReplayTimelineBasic.UW-ReplayTimelineBasic_C.BPUpdateKillEventMarkersPos");
 
 	struct BPUpdateKillEventMarkersPos_Params {
-		enum class Unknow killType;
+		enum class EKillType killType;
 		float TotalTime;
 	}; BPUpdateKillEventMarkersPos_Params Params;
 

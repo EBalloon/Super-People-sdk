@@ -3,9 +3,9 @@ class UUW-Lobby_WeaponInfo_C : public UUserWidget {
 
 public:
 
-	struct Unknown Image_273; // 0x248 (8)
-	struct Unknown UW-Lobby_ItemName; // 0x250 (8)
-	struct Unknown UW-Lobby_WeaponInfo_Stat; // 0x258 (8)
+	struct UImage Image_273; // 0x248 (8)
+	struct UUW-Lobby_ItemName_C UW-Lobby_ItemName; // 0x250 (8)
+	struct UUW-Lobby_WeaponInfo_Stat_C UW-Lobby_WeaponInfo_Stat; // 0x258 (8)
 
 	void SetWeaponInfo(int32_t WeaponItemID); // Function UW-Lobby_WeaponInfo.UW-Lobby_WeaponInfo_C.SetWeaponInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 };

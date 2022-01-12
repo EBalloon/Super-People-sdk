@@ -3,9 +3,9 @@ class ABP-FieldViewCam_C : public UActor {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x318 (8)
-	struct Unknown WorldViewCamera; // 0x320 (8)
-	struct Unknown DefaultSceneRoot; // 0x328 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x318 (8)
+	struct UCameraComponent WorldViewCamera; // 0x320 (8)
+	struct USceneComponent DefaultSceneRoot; // 0x328 (8)
 	float DeltaTime; // 0x330 (4)
 	char bIsBackgroundScene : 0; // 0x334 (1)
 

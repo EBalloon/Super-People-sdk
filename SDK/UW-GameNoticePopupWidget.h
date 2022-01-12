@@ -3,10 +3,10 @@ class UUW-GameNoticePopupWidget_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Image_2; // 0x250 (8)
-	struct Unknown Notice; // 0x258 (8)
-	struct Unknown WidgetSwitcher_1; // 0x260 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UImage Image_2; // 0x250 (8)
+	struct UTextBlock Notice; // 0x258 (8)
+	struct UWidgetSwitcher WidgetSwitcher_1; // 0x260 (8)
 
 	void SetMessage(struct FText Str); // Function UW-GameNoticePopupWidget.UW-GameNoticePopupWidget_C.SetMessage(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-GameNoticePopupWidget.UW-GameNoticePopupWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>

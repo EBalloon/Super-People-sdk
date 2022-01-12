@@ -295,8 +295,8 @@ struct FVector2D {
 
 // ScriptStruct CoreUObject.TwoVectors
 struct FTwoVectors {
-	struct Unknown v1; // 0x0 (12)
-	struct Unknown v2; // 0xC (12)
+	struct FVector v1; // 0x0 (12)
+	struct FVector v2; // 0xC (12)
 };
 
 // ScriptStruct CoreUObject.Plane
@@ -369,31 +369,31 @@ struct FLinearColor {
 
 // ScriptStruct CoreUObject.Box
 struct FBox {
-	struct Unknown Min; // 0x0 (12)
-	struct Unknown MAX; // 0xC (12)
+	struct FVector Min; // 0x0 (12)
+	struct FVector MAX; // 0xC (12)
 	char IsValid; // 0x18 (1)
 };
 
 // ScriptStruct CoreUObject.Box2D
 struct FBox2D {
-	struct Unknown Min; // 0x0 (8)
-	struct Unknown MAX; // 0x8 (8)
+	struct FVector2D Min; // 0x0 (8)
+	struct FVector2D MAX; // 0x8 (8)
 	char bIsValid; // 0x10 (1)
 };
 
 // ScriptStruct CoreUObject.BoxSphereBounds
 struct FBoxSphereBounds {
-	struct Unknown Origin; // 0x0 (12)
-	struct Unknown BoxExtent; // 0xC (12)
+	struct FVector Origin; // 0x0 (12)
+	struct FVector BoxExtent; // 0xC (12)
 	float SphereRadius; // 0x18 (4)
 };
 
 // ScriptStruct CoreUObject.OrientedBox
 struct FOrientedBox {
-	struct Unknown Center; // 0x0 (12)
-	struct Unknown AxisX; // 0xC (12)
-	struct Unknown AxisY; // 0x18 (12)
-	struct Unknown AxisZ; // 0x24 (12)
+	struct FVector Center; // 0x0 (12)
+	struct FVector AxisX; // 0xC (12)
+	struct FVector AxisY; // 0x18 (12)
+	struct FVector AxisZ; // 0x24 (12)
 	float ExtentX; // 0x30 (4)
 	float ExtentY; // 0x34 (4)
 	float ExtentZ; // 0x38 (4)
@@ -401,10 +401,10 @@ struct FOrientedBox {
 
 // ScriptStruct CoreUObject.Matrix
 struct FMatrix {
-	struct Unknown XPlane; // 0x0 (16)
-	struct Unknown YPlane; // 0x10 (16)
-	struct Unknown ZPlane; // 0x20 (16)
-	struct Unknown WPlane; // 0x30 (16)
+	struct FPlane XPlane; // 0x0 (16)
+	struct FPlane YPlane; // 0x10 (16)
+	struct FPlane ZPlane; // 0x20 (16)
+	struct FPlane WPlane; // 0x30 (16)
 };
 
 // ScriptStruct CoreUObject.InterpCurvePointFloat
@@ -418,7 +418,7 @@ struct FInterpCurvePointFloat {
 
 // ScriptStruct CoreUObject.InterpCurveFloat
 struct FInterpCurveFloat {
-	struct TArray<Unknown> Points; // 0x0 (16)
+	struct TArray<struct FInterpCurvePointFloat> Points; // 0x0 (16)
 	char bIsLooped : 0; // 0x10 (1)
 	float LoopKeyOffset; // 0x14 (4)
 };
@@ -426,15 +426,15 @@ struct FInterpCurveFloat {
 // ScriptStruct CoreUObject.InterpCurvePointVector2D
 struct FInterpCurvePointVector2D {
 	float InVal; // 0x0 (4)
-	struct Unknown OutVal; // 0x4 (8)
-	struct Unknown ArriveTangent; // 0xC (8)
-	struct Unknown LeaveTangent; // 0x14 (8)
+	struct FVector2D OutVal; // 0x4 (8)
+	struct FVector2D ArriveTangent; // 0xC (8)
+	struct FVector2D LeaveTangent; // 0x14 (8)
 	char InterpMode; // 0x1C (1)
 };
 
 // ScriptStruct CoreUObject.InterpCurveVector2D
 struct FInterpCurveVector2D {
-	struct TArray<Unknown> Points; // 0x0 (16)
+	struct TArray<struct FInterpCurvePointVector2D> Points; // 0x0 (16)
 	char bIsLooped : 0; // 0x10 (1)
 	float LoopKeyOffset; // 0x14 (4)
 };
@@ -442,15 +442,15 @@ struct FInterpCurveVector2D {
 // ScriptStruct CoreUObject.InterpCurvePointVector
 struct FInterpCurvePointVector {
 	float InVal; // 0x0 (4)
-	struct Unknown OutVal; // 0x4 (12)
-	struct Unknown ArriveTangent; // 0x10 (12)
-	struct Unknown LeaveTangent; // 0x1C (12)
+	struct FVector OutVal; // 0x4 (12)
+	struct FVector ArriveTangent; // 0x10 (12)
+	struct FVector LeaveTangent; // 0x1C (12)
 	char InterpMode; // 0x28 (1)
 };
 
 // ScriptStruct CoreUObject.InterpCurveVector
 struct FInterpCurveVector {
-	struct TArray<Unknown> Points; // 0x0 (16)
+	struct TArray<struct FInterpCurvePointVector> Points; // 0x0 (16)
 	char bIsLooped : 0; // 0x10 (1)
 	float LoopKeyOffset; // 0x14 (4)
 };
@@ -458,15 +458,15 @@ struct FInterpCurveVector {
 // ScriptStruct CoreUObject.InterpCurvePointQuat
 struct FInterpCurvePointQuat {
 	float InVal; // 0x0 (4)
-	struct Unknown OutVal; // 0x10 (16)
-	struct Unknown ArriveTangent; // 0x20 (16)
-	struct Unknown LeaveTangent; // 0x30 (16)
+	struct FQuat OutVal; // 0x10 (16)
+	struct FQuat ArriveTangent; // 0x20 (16)
+	struct FQuat LeaveTangent; // 0x30 (16)
 	char InterpMode; // 0x40 (1)
 };
 
 // ScriptStruct CoreUObject.InterpCurveQuat
 struct FInterpCurveQuat {
-	struct TArray<Unknown> Points; // 0x0 (16)
+	struct TArray<struct FInterpCurvePointQuat> Points; // 0x0 (16)
 	char bIsLooped : 0; // 0x10 (1)
 	float LoopKeyOffset; // 0x14 (4)
 };
@@ -474,15 +474,15 @@ struct FInterpCurveQuat {
 // ScriptStruct CoreUObject.InterpCurvePointTwoVectors
 struct FInterpCurvePointTwoVectors {
 	float InVal; // 0x0 (4)
-	struct Unknown OutVal; // 0x4 (24)
-	struct Unknown ArriveTangent; // 0x1C (24)
-	struct Unknown LeaveTangent; // 0x34 (24)
+	struct FTwoVectors OutVal; // 0x4 (24)
+	struct FTwoVectors ArriveTangent; // 0x1C (24)
+	struct FTwoVectors LeaveTangent; // 0x34 (24)
 	char InterpMode; // 0x4C (1)
 };
 
 // ScriptStruct CoreUObject.InterpCurveTwoVectors
 struct FInterpCurveTwoVectors {
-	struct TArray<Unknown> Points; // 0x0 (16)
+	struct TArray<struct FInterpCurvePointTwoVectors> Points; // 0x0 (16)
 	char bIsLooped : 0; // 0x10 (1)
 	float LoopKeyOffset; // 0x14 (4)
 };
@@ -490,24 +490,24 @@ struct FInterpCurveTwoVectors {
 // ScriptStruct CoreUObject.InterpCurvePointLinearColor
 struct FInterpCurvePointLinearColor {
 	float InVal; // 0x0 (4)
-	struct Unknown OutVal; // 0x4 (16)
-	struct Unknown ArriveTangent; // 0x14 (16)
-	struct Unknown LeaveTangent; // 0x24 (16)
+	struct FLinearColor OutVal; // 0x4 (16)
+	struct FLinearColor ArriveTangent; // 0x14 (16)
+	struct FLinearColor LeaveTangent; // 0x24 (16)
 	char InterpMode; // 0x34 (1)
 };
 
 // ScriptStruct CoreUObject.InterpCurveLinearColor
 struct FInterpCurveLinearColor {
-	struct TArray<Unknown> Points; // 0x0 (16)
+	struct TArray<struct FInterpCurvePointLinearColor> Points; // 0x0 (16)
 	char bIsLooped : 0; // 0x10 (1)
 	float LoopKeyOffset; // 0x14 (4)
 };
 
 // ScriptStruct CoreUObject.Transform
 struct FTransform {
-	struct Unknown Rotation; // 0x0 (16)
-	struct Unknown Translation; // 0x10 (12)
-	struct Unknown Scale3D; // 0x20 (12)
+	struct FQuat Rotation; // 0x0 (16)
+	struct FVector Translation; // 0x10 (12)
+	struct FVector Scale3D; // 0x20 (12)
 };
 
 // ScriptStruct CoreUObject.RandomStream
@@ -529,14 +529,14 @@ struct FFrameRate {
 
 // ScriptStruct CoreUObject.FrameTime
 struct FFrameTime {
-	struct Unknown FrameNumber; // 0x0 (4)
+	struct FFrameNumber FrameNumber; // 0x0 (4)
 	float SubFrame; // 0x4 (4)
 };
 
 // ScriptStruct CoreUObject.QualifiedFrameTime
 struct FQualifiedFrameTime {
-	struct Unknown Time; // 0x0 (8)
-	struct Unknown Rate; // 0x8 (8)
+	struct FFrameTime Time; // 0x0 (8)
+	struct FFrameRate Rate; // 0x8 (8)
 };
 
 // ScriptStruct CoreUObject.Timecode
@@ -561,7 +561,7 @@ struct FPrimaryAssetType {
 
 // ScriptStruct CoreUObject.PrimaryAssetId
 struct FPrimaryAssetId {
-	struct Unknown PrimaryAssetType; // 0x0 (8)
+	struct FPrimaryAssetType PrimaryAssetType; // 0x0 (8)
 	struct FName PrimaryAssetName; // 0x8 (8)
 };
 
@@ -573,8 +573,8 @@ struct FFloatRangeBound {
 
 // ScriptStruct CoreUObject.FloatRange
 struct FFloatRange {
-	struct Unknown LowerBound; // 0x0 (8)
-	struct Unknown UpperBound; // 0x8 (8)
+	struct FFloatRangeBound LowerBound; // 0x0 (8)
+	struct FFloatRangeBound UpperBound; // 0x8 (8)
 };
 
 // ScriptStruct CoreUObject.Int32RangeBound
@@ -585,8 +585,8 @@ struct FInt32RangeBound {
 
 // ScriptStruct CoreUObject.Int32Range
 struct FInt32Range {
-	struct Unknown LowerBound; // 0x0 (8)
-	struct Unknown UpperBound; // 0x8 (8)
+	struct FInt32RangeBound LowerBound; // 0x0 (8)
+	struct FInt32RangeBound UpperBound; // 0x8 (8)
 };
 
 // ScriptStruct CoreUObject.FloatInterval
@@ -603,29 +603,29 @@ struct FInt32Interval {
 
 // ScriptStruct CoreUObject.PolyglotTextData
 struct FPolyglotTextData {
-	enum class Unknow Category; // 0x0 (1)
+	enum class ELocalizedTextSourceCategory Category; // 0x0 (1)
 	struct FString NativeCulture; // 0x8 (16)
 	struct FString Namespace; // 0x18 (16)
 	struct FString Key; // 0x28 (16)
 	struct FString NativeString; // 0x38 (16)
-	struct TMap<Unknown, Unknown> LocalizedStrings; // 0x48 (80)
+	struct TMap<struct FString, struct FString> LocalizedStrings; // 0x48 (80)
 	char bIsMinimalPatch : 0; // 0x98 (1)
 	struct FText CachedText; // 0xA0 (24)
 };
 
 // ScriptStruct CoreUObject.AutomationEvent
 struct FAutomationEvent {
-	enum class Unknow Type; // 0x0 (1)
+	enum class EAutomationEventType Type; // 0x0 (1)
 	struct FString Message; // 0x8 (16)
 	struct FString Context; // 0x18 (16)
-	struct Unknown Artifact; // 0x28 (16)
+	struct FGuid Artifact; // 0x28 (16)
 };
 
 // ScriptStruct CoreUObject.AutomationExecutionEntry
 struct FAutomationExecutionEntry {
-	struct Unknown Event; // 0x0 (56)
+	struct FAutomationEvent Event; // 0x0 (56)
 	struct FString Filename; // 0x38 (16)
 	int32_t LineNumber; // 0x48 (4)
-	struct Unknown Timestamp; // 0x50 (8)
+	struct FDateTime Timestamp; // 0x50 (8)
 };
 

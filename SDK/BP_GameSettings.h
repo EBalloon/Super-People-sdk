@@ -7,10 +7,10 @@ public:
 	float Look Vertical Sensitivity; // 0x124 (4)
 	char Look Horizontal Invert : 0; // 0x128 (1)
 	char Look Vertical Invert : 0; // 0x129 (1)
-	struct TScriptInterface<IUnknown> Game Settings Interface; // 0x130 (16)
+	struct TScriptInterface<IBPI_GameSettingsInterface_C> Game Settings Interface; // 0x130 (16)
 	struct FString Save File Name; // 0x140 (16)
 	int32_t Save File User Index; // 0x150 (4)
-	struct TArray<Unknown> AudioEmittors; // 0x158 (16)
+	struct TArray<struct FSAudioUpdateStruct> AudioEmittors; // 0x158 (16)
 	float Audio Multiplier Master; // 0x168 (4)
 	float Audio Multiplier Music; // 0x16C (4)
 	float Audio Multiplier Voice; // 0x170 (4)
@@ -24,7 +24,7 @@ public:
 	float Volume Ambient; // 0x190 (4)
 	int32_t Video X Resolution; // 0x194 (4)
 	int32_t Video Y Resolution; // 0x198 (4)
-	struct TArray<Unknown> Camera List; // 0x1A0 (16)
+	struct TArray<struct UCameraComponent> Camera List; // 0x1A0 (16)
 	char Screen Mode; // 0x1B0 (1)
 	int32_t Resolution Scale Quality; // 0x1B4 (4)
 	float View Distance Scale; // 0x1B8 (4)
@@ -43,12 +43,12 @@ public:
 	float Bloom Intensity; // 0x1E8 (4)
 	float Gamma Intensity; // 0x1EC (4)
 	float Gain Intensity; // 0x1F0 (4)
-	struct Unknown Previous Setting State; // 0x1F8 (8)
+	struct UBP_GameSettings_C Previous Setting State; // 0x1F8 (8)
 	struct FString My Custom Combobox; // 0x200 (16)
 	float Current Frame Time; // 0x210 (4)
-	struct TArray<Unknown> Key Actions; // 0x218 (16)
-	struct TArray<Unknown> Input Float Axis List; // 0x228 (16)
-	struct TArray<Unknown> Saved Key Inputs; // 0x238 (16)
+	struct TArray<struct UBP_KeyAction_C> Key Actions; // 0x218 (16)
+	struct TArray<struct UBP_KeyInput_C> Input Float Axis List; // 0x228 (16)
+	struct TArray<struct FSKeyActionSave> Saved Key Inputs; // 0x238 (16)
 	float Volume UI; // 0x248 (4)
 	char Old ScreenMode State; // 0x24C (1)
 	float TemporalAAFilterSize; // 0x250 (4)
@@ -94,8 +94,8 @@ public:
 	void Set Film Toe(char Value, char Apply, char& Result); // Function BP_GameSettings.BP_GameSettings_C.Set Film Toe(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Modify Film Toe(char Modify); // Function BP_GameSettings.BP_GameSettings_C.Modify Film Toe(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Modify All Game Settings(char Modify); // Function BP_GameSettings.BP_GameSettings_C.Modify All Game Settings(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetFireModeSetting(enum class Unknow WeaponType, enum class Unknow NewWeaponFireMode, char Apply, char& Result); // Function BP_GameSettings.BP_GameSettings_C.SetFireModeSetting(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetFireModeSetting(struct TMap<Unknown, Unknown>& FireModeSettings); // Function BP_GameSettings.BP_GameSettings_C.GetFireModeSetting(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void SetFireModeSetting(enum class EWeaponType WeaponType, enum class EWeaponFireMode NewWeaponFireMode, char Apply, char& Result); // Function BP_GameSettings.BP_GameSettings_C.SetFireModeSetting(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetFireModeSetting(struct TMap<enum class EWeaponType, enum class EWeaponFireMode>& FireModeSettings); // Function BP_GameSettings.BP_GameSettings_C.GetFireModeSetting(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void ModifyFireModeSetting(char Modify); // Function BP_GameSettings.BP_GameSettings_C.ModifyFireModeSetting(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Get Post Process Volume(char& Value); // Function BP_GameSettings.BP_GameSettings_C.Get Post Process Volume(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void Set Post Process Volume(char Value, char Apply, char& Result); // Function BP_GameSettings.BP_GameSettings_C.Set Post Process Volume(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -127,8 +127,8 @@ public:
 	void ModifyTemporalAAFilterSize(char Modify); // Function BP_GameSettings.BP_GameSettings_C.ModifyTemporalAAFilterSize(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void GetTemporalAAFilterSize(float& Value); // Function BP_GameSettings.BP_GameSettings_C.GetTemporalAAFilterSize(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void SetTemporalAAFilterSize(float Value, char Apply, float& Result); // Function BP_GameSettings.BP_GameSettings_C.SetTemporalAAFilterSize(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetSensitivityValue(enum class Unknow MouseSensitivityType, int32_t& Sensitivity); // Function BP_GameSettings.BP_GameSettings_C.GetSensitivityValue(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void SetSensitivityValue(enum class Unknow MouseSensitivityType, int32_t Sensitivity); // Function BP_GameSettings.BP_GameSettings_C.SetSensitivityValue(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetSensitivityValue(enum class EMouseSensitivityState MouseSensitivityType, int32_t& Sensitivity); // Function BP_GameSettings.BP_GameSettings_C.GetSensitivityValue(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void SetSensitivityValue(enum class EMouseSensitivityState MouseSensitivityType, int32_t Sensitivity); // Function BP_GameSettings.BP_GameSettings_C.SetSensitivityValue(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Get Foliage Quality(int32_t& Value, struct FString& Formatted); // Function BP_GameSettings.BP_GameSettings_C.Get Foliage Quality(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void Set Foliage Quality(int32_t Value, char Apply, int32_t& Result); // Function BP_GameSettings.BP_GameSettings_C.Set Foliage Quality(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Modify Foliage Quality(char Modify); // Function BP_GameSettings.BP_GameSettings_C.Modify Foliage Quality(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -138,22 +138,22 @@ public:
 	void Modify Audio Multiplier UI(char Modify); // Function BP_GameSettings.BP_GameSettings_C.Modify Audio Multiplier UI(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Save Ini Settings(); // Function BP_GameSettings.BP_GameSettings_C.Save Ini Settings(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Load ini Settings(); // Function BP_GameSettings.BP_GameSettings_C.Load ini Settings(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Init Save Game Settings(struct TScriptInterface<IUnknown> Game Settings Interface); // Function BP_GameSettings.BP_GameSettings_C.Init Save Game Settings(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Get Saved Key Inputs(struct TArray<Unknown>& Saved Key Inputs); // Function BP_GameSettings.BP_GameSettings_C.Get Saved Key Inputs(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void Get All Key Actions(struct TArray<Unknown>& Key Actions); // Function BP_GameSettings.BP_GameSettings_C.Get All Key Actions(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void Init Save Game Settings(struct TScriptInterface<IBPI_GameSettingsInterface_C> Game Settings Interface); // Function BP_GameSettings.BP_GameSettings_C.Init Save Game Settings(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Get Saved Key Inputs(struct TArray<struct FSKeyActionSave>& Saved Key Inputs); // Function BP_GameSettings.BP_GameSettings_C.Get Saved Key Inputs(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void Get All Key Actions(struct TArray<struct UBP_KeyAction_C>& Key Actions); // Function BP_GameSettings.BP_GameSettings_C.Get All Key Actions(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void Set Save File User Index(int32_t Save File User Index); // Function BP_GameSettings.BP_GameSettings_C.Set Save File User Index(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Set Save File Name(struct FString Save File Name); // Function BP_GameSettings.BP_GameSettings_C.Set Save File Name(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Set Game Settings Interface(struct TScriptInterface<IUnknown> Game Settings Interface); // Function BP_GameSettings.BP_GameSettings_C.Set Game Settings Interface(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Get All Combinations(struct TArray<Unknown>& Combinations); // Function BP_GameSettings.BP_GameSettings_C.Get All Combinations(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Set Game Settings Interface(struct TScriptInterface<IBPI_GameSettingsInterface_C> Game Settings Interface); // Function BP_GameSettings.BP_GameSettings_C.Set Game Settings Interface(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Get All Combinations(struct TArray<struct UBP_KeyCombination_C>& Combinations); // Function BP_GameSettings.BP_GameSettings_C.Get All Combinations(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Generate Keybinding Conflicts(); // Function BP_GameSettings.BP_GameSettings_C.Generate Keybinding Conflicts(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Modify Keybindings(char Modify); // Function BP_GameSettings.BP_GameSettings_C.Modify Keybindings(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Load Key Actions(); // Function BP_GameSettings.BP_GameSettings_C.Load Key Actions(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Save Key Actions(); // Function BP_GameSettings.BP_GameSettings_C.Save Key Actions(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Store Key Input(struct Unknown& KeySave); // Function BP_GameSettings.BP_GameSettings_C.Store Key Input(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Get Key Action(struct FString Input Action Name, struct Unknown& Input Action, char& SUCCESS); // Function BP_GameSettings.BP_GameSettings_C.Get Key Action(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Store Key Input(struct FSKeyActionSave& KeySave); // Function BP_GameSettings.BP_GameSettings_C.Store Key Input(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Get Key Action(struct FString Input Action Name, struct UBP_KeyAction_C& Input Action, char& SUCCESS); // Function BP_GameSettings.BP_GameSettings_C.Get Key Action(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Fill Float Axis Inputs List(); // Function BP_GameSettings.BP_GameSettings_C.Fill Float Axis Inputs List(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Init Key Bindings(); // Function BP_GameSettings.BP_GameSettings_C.Init Key Bindings(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Update Actions Input State(float Real Time Seconds, float World Delta Seconds, struct Unknown PlayerController); // Function BP_GameSettings.BP_GameSettings_C.Update Actions Input State(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Update Actions Input State(float Real Time Seconds, float World Delta Seconds, struct APlayerController PlayerController); // Function BP_GameSettings.BP_GameSettings_C.Update Actions Input State(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Delete Settings Save File(); // Function BP_GameSettings.BP_GameSettings_C.Delete Settings Save File(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Get Look Sensitivity Combined X(float Input Axis X, float World Delta, float& Horizontal X); // Function BP_GameSettings.BP_GameSettings_C.Get Look Sensitivity Combined X(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void Get My Custom Combobox(struct FString& Value); // Function BP_GameSettings.BP_GameSettings_C.Get My Custom Combobox(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
@@ -195,8 +195,8 @@ public:
 	void Set Audio Multiplier Music(float Set Value, char Apply); // Function BP_GameSettings.BP_GameSettings_C.Set Audio Multiplier Music(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Modify Audio Multiplier Music(char Modify); // Function BP_GameSettings.BP_GameSettings_C.Modify Audio Multiplier Music(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Get Volume Master(float& Value); // Function BP_GameSettings.BP_GameSettings_C.Get Volume Master(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void Add Volume Control(struct Unknown Audio Emittor, char Audio Channel); // Function BP_GameSettings.BP_GameSettings_C.Add Volume Control(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Apply Audio Settings(char Audio Channel, enum class Unknow Type); // Function BP_GameSettings.BP_GameSettings_C.Apply Audio Settings(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Add Volume Control(struct UAudioComponent Audio Emittor, char Audio Channel); // Function BP_GameSettings.BP_GameSettings_C.Add Volume Control(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Apply Audio Settings(char Audio Channel, enum class EAudioSettingType Type); // Function BP_GameSettings.BP_GameSettings_C.Apply Audio Settings(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Get Audio Multiplier Master(float& Value); // Function BP_GameSettings.BP_GameSettings_C.Get Audio Multiplier Master(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void Set Audio Multiplier Master(float Set Value, char Apply); // Function BP_GameSettings.BP_GameSettings_C.Set Audio Multiplier Master(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Modify Audio Multiplier Master(char Modify); // Function BP_GameSettings.BP_GameSettings_C.Modify Audio Multiplier Master(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -215,9 +215,9 @@ public:
 	void Apply Screen Settings(); // Function BP_GameSettings.BP_GameSettings_C.Apply Screen Settings(Private|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Modify Screen Mode(char Modify); // Function BP_GameSettings.BP_GameSettings_C.Modify Screen Mode(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Get Screen Mode(char& Screen Mode, struct FString& Command); // Function BP_GameSettings.BP_GameSettings_C.Get Screen Mode(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void Get Screen Resolution(struct Unknown& Resolution); // Function BP_GameSettings.BP_GameSettings_C.Get Screen Resolution(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void Get Screen Resolution(struct FSVideoResolution& Resolution); // Function BP_GameSettings.BP_GameSettings_C.Get Screen Resolution(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void Set Screen Mode(char Screen Mode, char Apply, char& Result); // Function BP_GameSettings.BP_GameSettings_C.Set Screen Mode(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Set Screen Resolution(struct Unknown Resolution, char Apply, struct Unknown& Result); // Function BP_GameSettings.BP_GameSettings_C.Set Screen Resolution(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Set Screen Resolution(struct FSVideoResolution Resolution, char Apply, struct FSVideoResolution& Result); // Function BP_GameSettings.BP_GameSettings_C.Set Screen Resolution(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Modify Screen Resolution(char Modify); // Function BP_GameSettings.BP_GameSettings_C.Modify Screen Resolution(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Get Motion Blur Strength(float& Value); // Function BP_GameSettings.BP_GameSettings_C.Get Motion Blur Strength(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void Set Motion Blur Strength(float Value, char Apply, float& Result); // Function BP_GameSettings.BP_GameSettings_C.Set Motion Blur Strength(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -234,8 +234,8 @@ public:
 	void Get Vsync(char& Value); // Function BP_GameSettings.BP_GameSettings_C.Get Vsync(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void Set Vsync(char Value, char Apply, char& Result); // Function BP_GameSettings.BP_GameSettings_C.Set Vsync(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Modify Vsync(char Modify); // Function BP_GameSettings.BP_GameSettings_C.Modify Vsync(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Remove Field Of View Control From Camera(struct Unknown Camera); // Function BP_GameSettings.BP_GameSettings_C.Remove Field Of View Control From Camera(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Add Field Of View Control To Camera(struct Unknown Camera); // Function BP_GameSettings.BP_GameSettings_C.Add Field Of View Control To Camera(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Remove Field Of View Control From Camera(struct UCameraComponent Camera); // Function BP_GameSettings.BP_GameSettings_C.Remove Field Of View Control From Camera(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Add Field Of View Control To Camera(struct UCameraComponent Camera); // Function BP_GameSettings.BP_GameSettings_C.Add Field Of View Control To Camera(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Get Field Of View(float& Value); // Function BP_GameSettings.BP_GameSettings_C.Get Field Of View(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void Set Field Of View(float Value, char Apply, float& Result); // Function BP_GameSettings.BP_GameSettings_C.Set Field Of View(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Modify Field Of View(char Modify); // Function BP_GameSettings.BP_GameSettings_C.Modify Field Of View(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -259,8 +259,8 @@ public:
 	void Get Post Process Quality(int32_t& Value, struct FString& Formatted); // Function BP_GameSettings.BP_GameSettings_C.Get Post Process Quality(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void Set Post Process Quality(int32_t Value, char Apply, int32_t& Result); // Function BP_GameSettings.BP_GameSettings_C.Set Post Process Quality(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Modify Post Process Quality(char Modify); // Function BP_GameSettings.BP_GameSettings_C.Modify Post Process Quality(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Update Audio Emittor(struct Unknown Emittor, char& Is Valid); // Function BP_GameSettings.BP_GameSettings_C.Update Audio Emittor(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Create Clone(struct Unknown& Cloned Game Settings); // Function BP_GameSettings.BP_GameSettings_C.Create Clone(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Update Audio Emittor(struct FSAudioUpdateStruct Emittor, char& Is Valid); // Function BP_GameSettings.BP_GameSettings_C.Update Audio Emittor(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Create Clone(struct UBP_GameSettings_C& Cloned Game Settings); // Function BP_GameSettings.BP_GameSettings_C.Create Clone(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 };
 
 // Function BP_GameSettings.BP_GameSettings_C.SetAutoReloadSetting
@@ -669,12 +669,12 @@ inline void UBP_GameSettings_C::Modify All Game Settings(char Modify) {
 }
 
 // Function BP_GameSettings.BP_GameSettings_C.SetFireModeSetting
-inline void UBP_GameSettings_C::SetFireModeSetting(enum class Unknow WeaponType, enum class Unknow NewWeaponFireMode, char Apply, char& Result) {
+inline void UBP_GameSettings_C::SetFireModeSetting(enum class EWeaponType WeaponType, enum class EWeaponFireMode NewWeaponFireMode, char Apply, char& Result) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP_GameSettings.BP_GameSettings_C.SetFireModeSetting");
 
 	struct SetFireModeSetting_Params {
-		enum class Unknow WeaponType;
-		enum class Unknow NewWeaponFireMode;
+		enum class EWeaponType WeaponType;
+		enum class EWeaponFireMode NewWeaponFireMode;
 		char Apply;
 		char& Result;
 	}; SetFireModeSetting_Params Params;
@@ -692,12 +692,12 @@ inline void UBP_GameSettings_C::SetFireModeSetting(enum class Unknow WeaponType,
 }
 
 // Function BP_GameSettings.BP_GameSettings_C.GetFireModeSetting
-inline void UBP_GameSettings_C::GetFireModeSetting(struct TMap<Unknown, Unknown>& FireModeSettings) {
+inline void UBP_GameSettings_C::GetFireModeSetting(struct TMap<enum class EWeaponType, enum class EWeaponFireMode>& FireModeSettings) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP_GameSettings.BP_GameSettings_C.GetFireModeSetting");
 
 	struct GetFireModeSetting_Params {
-		struct TMap<Unknown;
-		Unknown>& FireModeSettings;
+		struct TMap<enum class EWeaponType;
+		enum class EWeaponFireMode>& FireModeSettings;
 	}; GetFireModeSetting_Params Params;
 
 
@@ -1255,11 +1255,11 @@ inline void UBP_GameSettings_C::SetTemporalAAFilterSize(float Value, char Apply,
 }
 
 // Function BP_GameSettings.BP_GameSettings_C.GetSensitivityValue
-inline void UBP_GameSettings_C::GetSensitivityValue(enum class Unknow MouseSensitivityType, int32_t& Sensitivity) {
+inline void UBP_GameSettings_C::GetSensitivityValue(enum class EMouseSensitivityState MouseSensitivityType, int32_t& Sensitivity) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP_GameSettings.BP_GameSettings_C.GetSensitivityValue");
 
 	struct GetSensitivityValue_Params {
-		enum class Unknow MouseSensitivityType;
+		enum class EMouseSensitivityState MouseSensitivityType;
 		int32_t& Sensitivity;
 	}; GetSensitivityValue_Params Params;
 
@@ -1274,11 +1274,11 @@ inline void UBP_GameSettings_C::GetSensitivityValue(enum class Unknow MouseSensi
 }
 
 // Function BP_GameSettings.BP_GameSettings_C.SetSensitivityValue
-inline void UBP_GameSettings_C::SetSensitivityValue(enum class Unknow MouseSensitivityType, int32_t Sensitivity) {
+inline void UBP_GameSettings_C::SetSensitivityValue(enum class EMouseSensitivityState MouseSensitivityType, int32_t Sensitivity) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP_GameSettings.BP_GameSettings_C.SetSensitivityValue");
 
 	struct SetSensitivityValue_Params {
-		enum class Unknow MouseSensitivityType;
+		enum class EMouseSensitivityState MouseSensitivityType;
 		int32_t Sensitivity;
 	}; SetSensitivityValue_Params Params;
 
@@ -1440,11 +1440,11 @@ inline void UBP_GameSettings_C::Load ini Settings() {
 }
 
 // Function BP_GameSettings.BP_GameSettings_C.Init Save Game Settings
-inline void UBP_GameSettings_C::Init Save Game Settings(struct TScriptInterface<IUnknown> Game Settings Interface) {
+inline void UBP_GameSettings_C::Init Save Game Settings(struct TScriptInterface<IBPI_GameSettingsInterface_C> Game Settings Interface) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP_GameSettings.BP_GameSettings_C.Init Save Game Settings");
 
 	struct Init Save Game Settings_Params {
-		struct TScriptInterface<IUnknown> Game Settings Interface;
+		struct TScriptInterface<IBPI_GameSettingsInterface_C> Game Settings Interface;
 	}; Init Save Game Settings_Params Params;
 
 	Params.Game Settings Interface = Game Settings Interface;
@@ -1455,11 +1455,11 @@ inline void UBP_GameSettings_C::Init Save Game Settings(struct TScriptInterface<
 }
 
 // Function BP_GameSettings.BP_GameSettings_C.Get Saved Key Inputs
-inline void UBP_GameSettings_C::Get Saved Key Inputs(struct TArray<Unknown>& Saved Key Inputs) {
+inline void UBP_GameSettings_C::Get Saved Key Inputs(struct TArray<struct FSKeyActionSave>& Saved Key Inputs) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP_GameSettings.BP_GameSettings_C.Get Saved Key Inputs");
 
 	struct Get Saved Key Inputs_Params {
-		struct TArray<Unknown>& Saved Key Inputs;
+		struct TArray<struct FSKeyActionSave>& Saved Key Inputs;
 	}; Get Saved Key Inputs_Params Params;
 
 
@@ -1472,11 +1472,11 @@ inline void UBP_GameSettings_C::Get Saved Key Inputs(struct TArray<Unknown>& Sav
 }
 
 // Function BP_GameSettings.BP_GameSettings_C.Get All Key Actions
-inline void UBP_GameSettings_C::Get All Key Actions(struct TArray<Unknown>& Key Actions) {
+inline void UBP_GameSettings_C::Get All Key Actions(struct TArray<struct UBP_KeyAction_C>& Key Actions) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP_GameSettings.BP_GameSettings_C.Get All Key Actions");
 
 	struct Get All Key Actions_Params {
-		struct TArray<Unknown>& Key Actions;
+		struct TArray<struct UBP_KeyAction_C>& Key Actions;
 	}; Get All Key Actions_Params Params;
 
 
@@ -1519,11 +1519,11 @@ inline void UBP_GameSettings_C::Set Save File Name(struct FString Save File Name
 }
 
 // Function BP_GameSettings.BP_GameSettings_C.Set Game Settings Interface
-inline void UBP_GameSettings_C::Set Game Settings Interface(struct TScriptInterface<IUnknown> Game Settings Interface) {
+inline void UBP_GameSettings_C::Set Game Settings Interface(struct TScriptInterface<IBPI_GameSettingsInterface_C> Game Settings Interface) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP_GameSettings.BP_GameSettings_C.Set Game Settings Interface");
 
 	struct Set Game Settings Interface_Params {
-		struct TScriptInterface<IUnknown> Game Settings Interface;
+		struct TScriptInterface<IBPI_GameSettingsInterface_C> Game Settings Interface;
 	}; Set Game Settings Interface_Params Params;
 
 	Params.Game Settings Interface = Game Settings Interface;
@@ -1534,11 +1534,11 @@ inline void UBP_GameSettings_C::Set Game Settings Interface(struct TScriptInterf
 }
 
 // Function BP_GameSettings.BP_GameSettings_C.Get All Combinations
-inline void UBP_GameSettings_C::Get All Combinations(struct TArray<Unknown>& Combinations) {
+inline void UBP_GameSettings_C::Get All Combinations(struct TArray<struct UBP_KeyCombination_C>& Combinations) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP_GameSettings.BP_GameSettings_C.Get All Combinations");
 
 	struct Get All Combinations_Params {
-		struct TArray<Unknown>& Combinations;
+		struct TArray<struct UBP_KeyCombination_C>& Combinations;
 	}; Get All Combinations_Params Params;
 
 
@@ -1608,11 +1608,11 @@ inline void UBP_GameSettings_C::Save Key Actions() {
 }
 
 // Function BP_GameSettings.BP_GameSettings_C.Store Key Input
-inline void UBP_GameSettings_C::Store Key Input(struct Unknown& KeySave) {
+inline void UBP_GameSettings_C::Store Key Input(struct FSKeyActionSave& KeySave) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP_GameSettings.BP_GameSettings_C.Store Key Input");
 
 	struct Store Key Input_Params {
-		struct Unknown& KeySave;
+		struct FSKeyActionSave& KeySave;
 	}; Store Key Input_Params Params;
 
 
@@ -1625,12 +1625,12 @@ inline void UBP_GameSettings_C::Store Key Input(struct Unknown& KeySave) {
 }
 
 // Function BP_GameSettings.BP_GameSettings_C.Get Key Action
-inline void UBP_GameSettings_C::Get Key Action(struct FString Input Action Name, struct Unknown& Input Action, char& SUCCESS) {
+inline void UBP_GameSettings_C::Get Key Action(struct FString Input Action Name, struct UBP_KeyAction_C& Input Action, char& SUCCESS) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP_GameSettings.BP_GameSettings_C.Get Key Action");
 
 	struct Get Key Action_Params {
 		struct FString Input Action Name;
-		struct Unknown& Input Action;
+		struct UBP_KeyAction_C& Input Action;
 		char& SUCCESS;
 	}; Get Key Action_Params Params;
 
@@ -1674,13 +1674,13 @@ inline void UBP_GameSettings_C::Init Key Bindings() {
 }
 
 // Function BP_GameSettings.BP_GameSettings_C.Update Actions Input State
-inline void UBP_GameSettings_C::Update Actions Input State(float Real Time Seconds, float World Delta Seconds, struct Unknown PlayerController) {
+inline void UBP_GameSettings_C::Update Actions Input State(float Real Time Seconds, float World Delta Seconds, struct APlayerController PlayerController) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP_GameSettings.BP_GameSettings_C.Update Actions Input State");
 
 	struct Update Actions Input State_Params {
 		float Real Time Seconds;
 		float World Delta Seconds;
-		struct Unknown PlayerController;
+		struct APlayerController PlayerController;
 	}; Update Actions Input State_Params Params;
 
 	Params.Real Time Seconds = Real Time Seconds;
@@ -2383,11 +2383,11 @@ inline void UBP_GameSettings_C::Get Volume Master(float& Value) {
 }
 
 // Function BP_GameSettings.BP_GameSettings_C.Add Volume Control
-inline void UBP_GameSettings_C::Add Volume Control(struct Unknown Audio Emittor, char Audio Channel) {
+inline void UBP_GameSettings_C::Add Volume Control(struct UAudioComponent Audio Emittor, char Audio Channel) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP_GameSettings.BP_GameSettings_C.Add Volume Control");
 
 	struct Add Volume Control_Params {
-		struct Unknown Audio Emittor;
+		struct UAudioComponent Audio Emittor;
 		char Audio Channel;
 	}; Add Volume Control_Params Params;
 
@@ -2400,12 +2400,12 @@ inline void UBP_GameSettings_C::Add Volume Control(struct Unknown Audio Emittor,
 }
 
 // Function BP_GameSettings.BP_GameSettings_C.Apply Audio Settings
-inline void UBP_GameSettings_C::Apply Audio Settings(char Audio Channel, enum class Unknow Type) {
+inline void UBP_GameSettings_C::Apply Audio Settings(char Audio Channel, enum class EAudioSettingType Type) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP_GameSettings.BP_GameSettings_C.Apply Audio Settings");
 
 	struct Apply Audio Settings_Params {
 		char Audio Channel;
-		enum class Unknow Type;
+		enum class EAudioSettingType Type;
 	}; Apply Audio Settings_Params Params;
 
 	Params.Audio Channel = Audio Channel;
@@ -2702,11 +2702,11 @@ inline void UBP_GameSettings_C::Get Screen Mode(char& Screen Mode, struct FStrin
 }
 
 // Function BP_GameSettings.BP_GameSettings_C.Get Screen Resolution
-inline void UBP_GameSettings_C::Get Screen Resolution(struct Unknown& Resolution) {
+inline void UBP_GameSettings_C::Get Screen Resolution(struct FSVideoResolution& Resolution) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP_GameSettings.BP_GameSettings_C.Get Screen Resolution");
 
 	struct Get Screen Resolution_Params {
-		struct Unknown& Resolution;
+		struct FSVideoResolution& Resolution;
 	}; Get Screen Resolution_Params Params;
 
 
@@ -2740,13 +2740,13 @@ inline void UBP_GameSettings_C::Set Screen Mode(char Screen Mode, char Apply, ch
 }
 
 // Function BP_GameSettings.BP_GameSettings_C.Set Screen Resolution
-inline void UBP_GameSettings_C::Set Screen Resolution(struct Unknown Resolution, char Apply, struct Unknown& Result) {
+inline void UBP_GameSettings_C::Set Screen Resolution(struct FSVideoResolution Resolution, char Apply, struct FSVideoResolution& Result) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP_GameSettings.BP_GameSettings_C.Set Screen Resolution");
 
 	struct Set Screen Resolution_Params {
-		struct Unknown Resolution;
+		struct FSVideoResolution Resolution;
 		char Apply;
-		struct Unknown& Result;
+		struct FSVideoResolution& Result;
 	}; Set Screen Resolution_Params Params;
 
 	Params.Resolution = Resolution;
@@ -3041,11 +3041,11 @@ inline void UBP_GameSettings_C::Modify Vsync(char Modify) {
 }
 
 // Function BP_GameSettings.BP_GameSettings_C.Remove Field Of View Control From Camera
-inline void UBP_GameSettings_C::Remove Field Of View Control From Camera(struct Unknown Camera) {
+inline void UBP_GameSettings_C::Remove Field Of View Control From Camera(struct UCameraComponent Camera) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP_GameSettings.BP_GameSettings_C.Remove Field Of View Control From Camera");
 
 	struct Remove Field Of View Control From Camera_Params {
-		struct Unknown Camera;
+		struct UCameraComponent Camera;
 	}; Remove Field Of View Control From Camera_Params Params;
 
 	Params.Camera = Camera;
@@ -3056,11 +3056,11 @@ inline void UBP_GameSettings_C::Remove Field Of View Control From Camera(struct 
 }
 
 // Function BP_GameSettings.BP_GameSettings_C.Add Field Of View Control To Camera
-inline void UBP_GameSettings_C::Add Field Of View Control To Camera(struct Unknown Camera) {
+inline void UBP_GameSettings_C::Add Field Of View Control To Camera(struct UCameraComponent Camera) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP_GameSettings.BP_GameSettings_C.Add Field Of View Control To Camera");
 
 	struct Add Field Of View Control To Camera_Params {
-		struct Unknown Camera;
+		struct UCameraComponent Camera;
 	}; Add Field Of View Control To Camera_Params Params;
 
 	Params.Camera = Camera;
@@ -3486,11 +3486,11 @@ inline void UBP_GameSettings_C::Modify Post Process Quality(char Modify) {
 }
 
 // Function BP_GameSettings.BP_GameSettings_C.Update Audio Emittor
-inline void UBP_GameSettings_C::Update Audio Emittor(struct Unknown Emittor, char& Is Valid) {
+inline void UBP_GameSettings_C::Update Audio Emittor(struct FSAudioUpdateStruct Emittor, char& Is Valid) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP_GameSettings.BP_GameSettings_C.Update Audio Emittor");
 
 	struct Update Audio Emittor_Params {
-		struct Unknown Emittor;
+		struct FSAudioUpdateStruct Emittor;
 		char& Is Valid;
 	}; Update Audio Emittor_Params Params;
 
@@ -3505,11 +3505,11 @@ inline void UBP_GameSettings_C::Update Audio Emittor(struct Unknown Emittor, cha
 }
 
 // Function BP_GameSettings.BP_GameSettings_C.Create Clone
-inline void UBP_GameSettings_C::Create Clone(struct Unknown& Cloned Game Settings) {
+inline void UBP_GameSettings_C::Create Clone(struct UBP_GameSettings_C& Cloned Game Settings) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP_GameSettings.BP_GameSettings_C.Create Clone");
 
 	struct Create Clone_Params {
-		struct Unknown& Cloned Game Settings;
+		struct UBP_GameSettings_C& Cloned Game Settings;
 	}; Create Clone_Params Params;
 
 

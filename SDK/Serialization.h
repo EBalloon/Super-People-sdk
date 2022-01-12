@@ -1,64 +1,64 @@
 // ScriptStruct Serialization.StructSerializerTestStruct
 struct FStructSerializerTestStruct {
-	struct Unknown Numerics; // 0x0 (48)
-	struct Unknown Booleans; // 0x30 (3)
-	struct Unknown Objects; // 0x38 (160)
-	struct Unknown Builtins; // 0xE0 (144)
-	struct Unknown Arrays; // 0x170 (96)
-	struct Unknown Maps; // 0x1D0 (320)
-	struct Unknown Sets; // 0x310 (320)
+	struct FStructSerializerNumericTestStruct Numerics; // 0x0 (48)
+	struct FStructSerializerBooleanTestStruct Booleans; // 0x30 (3)
+	struct FStructSerializerObjectTestStruct Objects; // 0x38 (160)
+	struct FStructSerializerBuiltinTestStruct Builtins; // 0xE0 (144)
+	struct FStructSerializerArrayTestStruct Arrays; // 0x170 (96)
+	struct FStructSerializerMapTestStruct Maps; // 0x1D0 (320)
+	struct FStructSerializerSetTestStruct Sets; // 0x310 (320)
 };
 
 // ScriptStruct Serialization.StructSerializerSetTestStruct
 struct FStructSerializerSetTestStruct {
-	struct TSet<Unknown> StrSet; // 0x0 (80)
-	struct TSet<Unknown> IntSet; // 0x50 (80)
-	struct TSet<Unknown> NameSet; // 0xA0 (80)
-	struct TSet<Unknown> StructSet; // 0xF0 (80)
+	struct TSet<struct FString> StrSet; // 0x0 (80)
+	struct TSet<int32_t> IntSet; // 0x50 (80)
+	struct TSet<struct FName> NameSet; // 0xA0 (80)
+	struct TSet<struct FStructSerializerBuiltinTestStruct> StructSet; // 0xF0 (80)
 };
 
 // ScriptStruct Serialization.StructSerializerBuiltinTestStruct
 struct FStructSerializerBuiltinTestStruct {
-	struct Unknown Guid; // 0x0 (16)
+	struct FGuid Guid; // 0x0 (16)
 	struct FName Name; // 0x10 (8)
 	struct FString String; // 0x18 (16)
 	struct FText Text; // 0x28 (24)
-	struct Unknown Vector; // 0x40 (12)
-	struct Unknown Vector4; // 0x50 (16)
-	struct Unknown Rotator; // 0x60 (12)
-	struct Unknown Quat; // 0x70 (16)
-	struct Unknown Color; // 0x80 (4)
+	struct FVector Vector; // 0x40 (12)
+	struct FVector4 Vector4; // 0x50 (16)
+	struct FRotator Rotator; // 0x60 (12)
+	struct FQuat Quat; // 0x70 (16)
+	struct FColor Color; // 0x80 (4)
 };
 
 // ScriptStruct Serialization.StructSerializerMapTestStruct
 struct FStructSerializerMapTestStruct {
-	struct TMap<Unknown, Unknown> IntToStr; // 0x0 (80)
-	struct TMap<Unknown, Unknown> StrToStr; // 0x50 (80)
-	struct TMap<Unknown, Unknown> StrToVec; // 0xA0 (80)
-	struct TMap<Unknown, Unknown> StrToStruct; // 0xF0 (80)
+	struct TMap<int32_t, struct FString> IntToStr; // 0x0 (80)
+	struct TMap<struct FString, struct FString> StrToStr; // 0x50 (80)
+	struct TMap<struct FString, struct FVector> StrToVec; // 0xA0 (80)
+	struct TMap<struct FString, struct FStructSerializerBuiltinTestStruct> StrToStruct; // 0xF0 (80)
 };
 
 // ScriptStruct Serialization.StructSerializerArrayTestStruct
 struct FStructSerializerArrayTestStruct {
-	struct TArray<Unknown> Int32Array; // 0x0 (16)
-	struct TArray<Unknown> ByteArray; // 0x10 (16)
+	struct TArray<int32_t> Int32Array; // 0x0 (16)
+	struct TArray<char> ByteArray; // 0x10 (16)
 	int32_t StaticSingleElement; // 0x20 (4)
 	int32_t StaticInt32Array[0x3]; // 0x24 (12)
 	float StaticFloatArray[0x3]; // 0x30 (12)
-	struct TArray<Unknown> VectorArray; // 0x40 (16)
-	struct TArray<Unknown> StructArray; // 0x50 (16)
+	struct TArray<struct FVector> VectorArray; // 0x40 (16)
+	struct TArray<struct FStructSerializerBuiltinTestStruct> StructArray; // 0x50 (16)
 };
 
 // ScriptStruct Serialization.StructSerializerObjectTestStruct
 struct FStructSerializerObjectTestStruct {
-	struct Unknown* Class; // 0x0 (8)
-	struct Unknown* SubClass; // 0x8 (8)
+	struct UClass* Class; // 0x0 (8)
+	struct UClass* SubClass; // 0x8 (8)
 	struct TSoftClassPtr<UObject> SoftClass; // 0x10 (40)
-	struct Unknown Object; // 0x38 (8)
-	struct TWeakObjectPtr<struct Unknown> WeakObject; // 0x40 (8)
-	struct Unknown SoftObject; // 0x48 (40)
-	struct Unknown ClassPath; // 0x70 (24)
-	struct Unknown ObjectPath; // 0x88 (24)
+	struct Object Object; // 0x38 (8)
+	struct TWeakObjectPtr<struct UMetaData> WeakObject; // 0x40 (8)
+	struct TSoftObjectPtr<UMetaData> SoftObject; // 0x48 (40)
+	struct FSoftClassPath ClassPath; // 0x70 (24)
+	struct FSoftObjectPath ObjectPath; // 0x88 (24)
 };
 
 // ScriptStruct Serialization.StructSerializerBooleanTestStruct
@@ -92,9 +92,9 @@ struct FStructSerializerNumericTestStruct {
 // ScriptStruct Serialization.StructSerializerByteArray
 struct FStructSerializerByteArray {
 	int32_t Dummy1; // 0x0 (4)
-	struct TArray<Unknown> ByteArray; // 0x8 (16)
+	struct TArray<char> ByteArray; // 0x8 (16)
 	int32_t Dummy2; // 0x18 (4)
-	struct TArray<Unknown> Int8Array; // 0x20 (16)
+	struct TArray<int8_t> Int8Array; // 0x20 (16)
 	int32_t Dummy3; // 0x30 (4)
 };
 

@@ -3,53 +3,53 @@ class UUW-AliveInfoWidget_C : public UBravoHotelAliveInfoWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x288 (8)
-	struct Unknown GoldDesc_Hide; // 0x290 (8)
-	struct Unknown GoldDesc_Show; // 0x298 (8)
-	struct Unknown Revival_Add; // 0x2A0 (8)
-	struct Unknown AliveCount_Text; // 0x2A8 (8)
-	struct Unknown AliveCount_Text_2; // 0x2B0 (8)
-	struct Unknown HorizontalBox_8; // 0x2B8 (8)
-	struct Unknown HorizontalBox_16; // 0x2C0 (8)
-	struct Unknown HorizontalBox_89; // 0x2C8 (8)
-	struct Unknown HorizontalBox_Alive; // 0x2D0 (8)
-	struct Unknown HorizontalBox_Assist; // 0x2D8 (8)
-	struct Unknown HorizontalBox_CurrentGold; // 0x2E0 (8)
-	struct Unknown HorizontalBox_Kill; // 0x2E8 (8)
-	struct Unknown HorizontalBox_Team; // 0x2F0 (8)
-	struct Unknown Image; // 0x2F8 (8)
-	struct Unknown Image_1; // 0x300 (8)
-	struct Unknown Image_2; // 0x308 (8)
-	struct Unknown Image_6; // 0x310 (8)
-	struct Unknown Image_102; // 0x318 (8)
-	struct Unknown Image_271; // 0x320 (8)
-	struct Unknown Image_376; // 0x328 (8)
-	struct Unknown Image_378; // 0x330 (8)
-	struct Unknown Image_1584; // 0x338 (8)
-	struct Unknown KillAliveBG; // 0x340 (8)
-	struct Unknown KillAliveBG_2; // 0x348 (8)
-	struct Unknown KillAliveBG_3; // 0x350 (8)
-	struct Unknown KillAliveBG_4; // 0x358 (8)
-	struct Unknown KillCount_Text; // 0x360 (8)
-	struct Unknown KillCount_Text_2; // 0x368 (8)
-	struct Unknown RichTextBlock_275; // 0x370 (8)
-	struct Unknown SizeBox_1; // 0x378 (8)
-	struct Unknown SizeBox_3; // 0x380 (8)
-	struct Unknown Spacer_2; // 0x388 (8)
-	struct Unknown T_AliveCount; // 0x390 (8)
-	struct Unknown T_AssistCount; // 0x398 (8)
-	struct Unknown T_KillCount; // 0x3A0 (8)
-	struct Unknown T_TeamCount; // 0x3A8 (8)
-	struct Unknown TextBlock_1; // 0x3B0 (8)
-	struct Unknown TextBlock_CurrentGold; // 0x3B8 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x288 (8)
+	struct UWidgetAnimation GoldDesc_Hide; // 0x290 (8)
+	struct UWidgetAnimation GoldDesc_Show; // 0x298 (8)
+	struct UWidgetAnimation Revival_Add; // 0x2A0 (8)
+	struct UTextBlock AliveCount_Text; // 0x2A8 (8)
+	struct UTextBlock AliveCount_Text_2; // 0x2B0 (8)
+	struct UHorizontalBox HorizontalBox_8; // 0x2B8 (8)
+	struct UHorizontalBox HorizontalBox_16; // 0x2C0 (8)
+	struct UHorizontalBox HorizontalBox_89; // 0x2C8 (8)
+	struct UHorizontalBox HorizontalBox_Alive; // 0x2D0 (8)
+	struct UHorizontalBox HorizontalBox_Assist; // 0x2D8 (8)
+	struct UHorizontalBox HorizontalBox_CurrentGold; // 0x2E0 (8)
+	struct UHorizontalBox HorizontalBox_Kill; // 0x2E8 (8)
+	struct UHorizontalBox HorizontalBox_Team; // 0x2F0 (8)
+	struct UImage Image; // 0x2F8 (8)
+	struct UImage Image_1; // 0x300 (8)
+	struct UImage Image_2; // 0x308 (8)
+	struct UImage Image_6; // 0x310 (8)
+	struct UImage Image_102; // 0x318 (8)
+	struct UImage Image_271; // 0x320 (8)
+	struct UImage Image_376; // 0x328 (8)
+	struct UImage Image_378; // 0x330 (8)
+	struct UImage Image_1584; // 0x338 (8)
+	struct UImage KillAliveBG; // 0x340 (8)
+	struct UImage KillAliveBG_2; // 0x348 (8)
+	struct UImage KillAliveBG_3; // 0x350 (8)
+	struct UImage KillAliveBG_4; // 0x358 (8)
+	struct UTextBlock KillCount_Text; // 0x360 (8)
+	struct UTextBlock KillCount_Text_2; // 0x368 (8)
+	struct URichTextBlock RichTextBlock_275; // 0x370 (8)
+	struct USizeBox SizeBox_1; // 0x378 (8)
+	struct USizeBox SizeBox_3; // 0x380 (8)
+	struct USpacer Spacer_2; // 0x388 (8)
+	struct UTextBlock T_AliveCount; // 0x390 (8)
+	struct UTextBlock T_AssistCount; // 0x398 (8)
+	struct UTextBlock T_KillCount; // 0x3A0 (8)
+	struct UTextBlock T_TeamCount; // 0x3A8 (8)
+	struct UTextBlock TextBlock_1; // 0x3B0 (8)
+	struct UTextBlock TextBlock_CurrentGold; // 0x3B8 (8)
 	char ShowKillCountUI : 0; // 0x3C0 (1)
 	int32_t CurrentKillCount; // 0x3C4 (4)
 	int32_t NewVar_1; // 0x3C8 (4)
-	struct Unknown ShowGoldDescHandle; // 0x3D0 (8)
-	struct Unknown AliveCount_Text_1_1; // 0x3D8 (8)
-	struct Unknown KillCount_Text_1_1; // 0x3E0 (8)
+	struct FTimerHandle ShowGoldDescHandle; // 0x3D0 (8)
+	struct UTextBlock AliveCount_Text_1_1; // 0x3D8 (8)
+	struct UTextBlock KillCount_Text_1_1; // 0x3E0 (8)
 
-	enum class Unknow Get_HorizontalBox_CurrentGold_Visibility_1(); // Function UW-AliveInfoWidget.UW-AliveInfoWidget_C.Get_HorizontalBox_CurrentGold_Visibility_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	enum class ESlateVisibility Get_HorizontalBox_CurrentGold_Visibility_1(); // Function UW-AliveInfoWidget.UW-AliveInfoWidget_C.Get_HorizontalBox_CurrentGold_Visibility_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void SetBGImageMarginValue(int32_t AliveCount); // Function UW-AliveInfoWidget.UW-AliveInfoWidget_C.SetBGImageMarginValue(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetAliveCount(int32_t AliveCount); // Function UW-AliveInfoWidget.UW-AliveInfoWidget_C.SetAliveCount(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetKillCount(int32_t KillCount); // Function UW-AliveInfoWidget.UW-AliveInfoWidget_C.SetKillCount(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -66,12 +66,12 @@ public:
 };
 
 // Function UW-AliveInfoWidget.UW-AliveInfoWidget_C.Get_HorizontalBox_CurrentGold_Visibility_1
-inline enum class Unknow UUW-AliveInfoWidget_C::Get_HorizontalBox_CurrentGold_Visibility_1() {
+inline enum class ESlateVisibility UUW-AliveInfoWidget_C::Get_HorizontalBox_CurrentGold_Visibility_1() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-AliveInfoWidget.UW-AliveInfoWidget_C.Get_HorizontalBox_CurrentGold_Visibility_1");
 
 	struct Get_HorizontalBox_CurrentGold_Visibility_1_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class ESlateVisibility ReturnValue;
 
 	}; Get_HorizontalBox_CurrentGold_Visibility_1_Params Params;
 

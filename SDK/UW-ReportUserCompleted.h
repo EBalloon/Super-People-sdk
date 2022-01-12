@@ -3,11 +3,11 @@ class UUW-ReportUserCompleted_C : public UBravoHotelReportUserCompletedWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x250 (8)
-	struct Unknown btn_confirm; // 0x258 (8)
-	struct Unknown popup-bg; // 0x260 (8)
-	struct Unknown txt_description; // 0x268 (8)
-	struct Unknown uw-bg; // 0x270 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x250 (8)
+	struct UButton btn_confirm; // 0x258 (8)
+	struct UImage popup-bg; // 0x260 (8)
+	struct UTextBlock txt_description; // 0x268 (8)
+	struct UImage uw-bg; // 0x270 (8)
 	struct FText DescriptionText; // 0x278 (24)
 
 	void Construct(); // Function UW-ReportUserCompleted.UW-ReportUserCompleted_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>

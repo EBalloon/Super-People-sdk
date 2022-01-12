@@ -3,9 +3,9 @@ class UUW-ReplayEventMarker_WhenReported_C : public UUW-ReplayEventMarkerBasic_C
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x2A0 (8)
-	struct Unknown EventInform; // 0x2A8 (8)
-	struct Unknown VisualBorder; // 0x2B0 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x2A0 (8)
+	struct UTextBlock EventInform; // 0x2A8 (8)
+	struct UBorder VisualBorder; // 0x2B0 (8)
 
 	void Construct(); // Function UW-ReplayEventMarker_WhenReported.UW-ReplayEventMarker_WhenReported_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void K2_SetKillEvent(char IsMyInfo); // Function UW-ReplayEventMarker_WhenReported.UW-ReplayEventMarker_WhenReported_C.K2_SetKillEvent(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>

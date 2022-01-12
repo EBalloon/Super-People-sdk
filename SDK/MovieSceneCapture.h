@@ -23,10 +23,10 @@ class UMovieSceneCaptureProtocolBase : public Object {
 
 public:
 
-	enum class Unknow State; // 0x50 (1)
+	enum class EMovieSceneCaptureProtocolState State; // 0x50 (1)
 
 	char IsCapturing(); // Function MovieSceneCapture.MovieSceneCaptureProtocolBase.IsCapturing(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CE5840>
-	enum class Unknow GetState(); // Function MovieSceneCapture.MovieSceneCaptureProtocolBase.GetState(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C7240>
+	enum class EMovieSceneCaptureProtocolState GetState(); // Function MovieSceneCapture.MovieSceneCaptureProtocolBase.GetState(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x36C7240>
 };
 
 // Class MovieSceneCapture.MasterAudioSubmixCaptureProtocol
@@ -42,13 +42,13 @@ class UCompositionGraphCaptureProtocol : public UMovieSceneImageCaptureProtocolB
 
 public:
 
-	struct Unknown IncludeRenderPasses; // 0x58 (16)
+	struct FCompositionGraphCapturePasses IncludeRenderPasses; // 0x58 (16)
 	char bCaptureFramesInHDR : 0; // 0x68 (1)
 	int32_t HDRCompressionQuality; // 0x6C (4)
 	char CaptureGamut; // 0x70 (1)
-	struct Unknown PostProcessingMaterial; // 0x78 (24)
+	struct FSoftObjectPath PostProcessingMaterial; // 0x78 (24)
 	char bDisableScreenPercentage : 0; // 0x90 (1)
-	struct Unknown PostProcessingMaterialPtr; // 0x98 (8)
+	struct UMaterialInterface PostProcessingMaterialPtr; // 0x98 (8)
 };
 
 // Class MovieSceneCapture.CompressedImageSequenceProtocol
@@ -73,20 +73,20 @@ class UMovieSceneCapture : public Object {
 
 public:
 
-	struct Unknown ImageCaptureProtocolType; // 0x38 (24)
-	struct Unknown AudioCaptureProtocolType; // 0x50 (24)
-	struct Unknown ImageCaptureProtocol; // 0x68 (8)
-	struct Unknown AudioCaptureProtocol; // 0x70 (8)
-	struct Unknown Settings; // 0x78 (112)
+	struct FSoftClassPath ImageCaptureProtocolType; // 0x38 (24)
+	struct FSoftClassPath AudioCaptureProtocolType; // 0x50 (24)
+	struct UMovieSceneImageCaptureProtocolBase ImageCaptureProtocol; // 0x68 (8)
+	struct UMovieSceneAudioCaptureProtocolBase AudioCaptureProtocol; // 0x70 (8)
+	struct FMovieSceneCaptureSettings Settings; // 0x78 (112)
 	char bUseSeparateProcess : 0; // 0xE8 (1)
 	char bCloseEditorWhenCaptureStarts : 0; // 0xE9 (1)
 	struct FString AdditionalCommandLineArguments; // 0xF0 (16)
 	struct FString InheritedCommandLineArguments; // 0x100 (16)
 
-	void SetImageCaptureProtocolType(struct Unknown* ProtocolType); // Function MovieSceneCapture.MovieSceneCapture.SetImageCaptureProtocolType(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CE5B30>
-	void SetAudioCaptureProtocolType(struct Unknown* ProtocolType); // Function MovieSceneCapture.MovieSceneCapture.SetAudioCaptureProtocolType(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CE5AB0>
-	struct Unknown GetImageCaptureProtocol(); // Function MovieSceneCapture.MovieSceneCapture.GetImageCaptureProtocol(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CE57F0>
-	struct Unknown GetAudioCaptureProtocol(); // Function MovieSceneCapture.MovieSceneCapture.GetAudioCaptureProtocol(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CE5750>
+	void SetImageCaptureProtocolType(struct UClass* ProtocolType); // Function MovieSceneCapture.MovieSceneCapture.SetImageCaptureProtocolType(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CE5B30>
+	void SetAudioCaptureProtocolType(struct UClass* ProtocolType); // Function MovieSceneCapture.MovieSceneCapture.SetAudioCaptureProtocolType(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CE5AB0>
+	struct UMovieSceneCaptureProtocolBase GetImageCaptureProtocol(); // Function MovieSceneCapture.MovieSceneCapture.GetImageCaptureProtocol(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CE57F0>
+	struct UMovieSceneCaptureProtocolBase GetAudioCaptureProtocol(); // Function MovieSceneCapture.MovieSceneCapture.GetAudioCaptureProtocol(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CE5750>
 };
 
 // Class MovieSceneCapture.LevelCapture
@@ -95,7 +95,7 @@ class ULevelCapture : public UMovieSceneCapture {
 public:
 
 	char bAutoStartCapture : 0; // 0x220 (1)
-	struct Unknown PrerequisiteActorId; // 0x22C (16)
+	struct FGuid PrerequisiteActorId; // 0x22C (16)
 };
 
 // Class MovieSceneCapture.UserDefinedCaptureProtocol
@@ -103,24 +103,24 @@ class UUserDefinedCaptureProtocol : public UMovieSceneImageCaptureProtocolBase {
 
 public:
 
-	struct Unknown World; // 0x58 (8)
+	struct UWorld World; // 0x58 (8)
 
 	void StopCapturingFinalPixels(); // Function MovieSceneCapture.UserDefinedCaptureProtocol.StopCapturingFinalPixels(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CE5D40>
-	void StartCapturingFinalPixels(struct Unknown& StreamID); // Function MovieSceneCapture.UserDefinedCaptureProtocol.StartCapturingFinalPixels(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3CE5BB0>
-	void ResolveBuffer(struct Unknown Buffer, struct Unknown& BufferID); // Function MovieSceneCapture.UserDefinedCaptureProtocol.ResolveBuffer(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3CE58E0>
+	void StartCapturingFinalPixels(struct FCapturedPixelsID& StreamID); // Function MovieSceneCapture.UserDefinedCaptureProtocol.StartCapturingFinalPixels(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3CE5BB0>
+	void ResolveBuffer(struct UTexture Buffer, struct FCapturedPixelsID& BufferID); // Function MovieSceneCapture.UserDefinedCaptureProtocol.ResolveBuffer(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3CE58E0>
 	void OnWarmUp(); // Function MovieSceneCapture.UserDefinedCaptureProtocol.OnWarmUp(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnTick(); // Function MovieSceneCapture.UserDefinedCaptureProtocol.OnTick(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnStartCapture(); // Function MovieSceneCapture.UserDefinedCaptureProtocol.OnStartCapture(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	char OnSetup(); // Function MovieSceneCapture.UserDefinedCaptureProtocol.OnSetup(Native|Event|Protected|BlueprintEvent) // <Game_BE.exe+0x3CE58B0>
 	void OnPreTick(); // Function MovieSceneCapture.UserDefinedCaptureProtocol.OnPreTick(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnPixelsReceived(struct Unknown& Pixels, struct Unknown& ID, struct Unknown FrameMetrics); // Function MovieSceneCapture.UserDefinedCaptureProtocol.OnPixelsReceived(Event|Protected|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnPixelsReceived(struct FCapturedPixels& Pixels, struct FCapturedPixelsID& ID, struct FFrameMetrics FrameMetrics); // Function MovieSceneCapture.UserDefinedCaptureProtocol.OnPixelsReceived(Event|Protected|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnPauseCapture(); // Function MovieSceneCapture.UserDefinedCaptureProtocol.OnPauseCapture(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnFinalize(); // Function MovieSceneCapture.UserDefinedCaptureProtocol.OnFinalize(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnCaptureFrame(); // Function MovieSceneCapture.UserDefinedCaptureProtocol.OnCaptureFrame(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	char OnCanFinalize(); // Function MovieSceneCapture.UserDefinedCaptureProtocol.OnCanFinalize(Native|Event|Protected|BlueprintEvent|Const) // <Game_BE.exe+0x3CE5880>
 	void OnBeginFinalize(); // Function MovieSceneCapture.UserDefinedCaptureProtocol.OnBeginFinalize(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown GetCurrentFrameMetrics(); // Function MovieSceneCapture.UserDefinedCaptureProtocol.GetCurrentFrameMetrics(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CE57D0>
-	struct FString GenerateFilename(struct Unknown& InFrameMetrics); // Function MovieSceneCapture.UserDefinedCaptureProtocol.GenerateFilename(Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CE53D0>
+	struct FFrameMetrics GetCurrentFrameMetrics(); // Function MovieSceneCapture.UserDefinedCaptureProtocol.GetCurrentFrameMetrics(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CE57D0>
+	struct FString GenerateFilename(struct FFrameMetrics& InFrameMetrics); // Function MovieSceneCapture.UserDefinedCaptureProtocol.GenerateFilename(Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x3CE53D0>
 };
 
 // Class MovieSceneCapture.UserDefinedImageCaptureProtocol
@@ -128,13 +128,13 @@ class UUserDefinedImageCaptureProtocol : public UUserDefinedCaptureProtocol {
 
 public:
 
-	enum class Unknow Format; // 0xD8 (1)
+	enum class EDesiredImageFormat Format; // 0xD8 (1)
 	char bEnableCompression : 0; // 0xD9 (1)
 	int32_t CompressionQuality; // 0xDC (4)
 
-	void WriteImageToDisk(struct Unknown& PixelData, struct Unknown& StreamID, struct Unknown& FrameMetrics, char bCopyImageData); // Function MovieSceneCapture.UserDefinedImageCaptureProtocol.WriteImageToDisk(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3CE5D60>
+	void WriteImageToDisk(struct FCapturedPixels& PixelData, struct FCapturedPixelsID& StreamID, struct FFrameMetrics& FrameMetrics, char bCopyImageData); // Function MovieSceneCapture.UserDefinedImageCaptureProtocol.WriteImageToDisk(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3CE5D60>
 	struct FString GenerateFilenameForCurrentFrame(); // Function MovieSceneCapture.UserDefinedImageCaptureProtocol.GenerateFilenameForCurrentFrame(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x3CE56D0>
-	struct FString GenerateFilenameForBuffer(struct Unknown Buffer, struct Unknown& StreamID); // Function MovieSceneCapture.UserDefinedImageCaptureProtocol.GenerateFilenameForBuffer(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3CE54C0>
+	struct FString GenerateFilenameForBuffer(struct UTexture Buffer, struct FCapturedPixelsID& StreamID); // Function MovieSceneCapture.UserDefinedImageCaptureProtocol.GenerateFilenameForBuffer(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x3CE54C0>
 };
 
 // Class MovieSceneCapture.VideoCaptureProtocol
@@ -148,7 +148,7 @@ public:
 
 // ScriptStruct MovieSceneCapture.CompositionGraphCapturePasses
 struct FCompositionGraphCapturePasses {
-	struct TArray<Unknown> Value; // 0x0 (16)
+	struct TArray<struct FString> Value; // 0x0 (16)
 };
 
 // ScriptStruct MovieSceneCapture.FrameMetrics
@@ -161,18 +161,18 @@ struct FFrameMetrics {
 
 // ScriptStruct MovieSceneCapture.MovieSceneCaptureSettings
 struct FMovieSceneCaptureSettings {
-	struct Unknown OutputDirectory; // 0x0 (16)
-	struct Unknown* GameModeOverride; // 0x10 (8)
+	struct FDirectoryPath OutputDirectory; // 0x0 (16)
+	struct UClass* GameModeOverride; // 0x10 (8)
 	struct FString OutputFormat; // 0x18 (16)
 	char bOverwriteExisting : 0; // 0x28 (1)
 	char bUseRelativeFrameNumbers : 0; // 0x29 (1)
 	int32_t HandleFrames; // 0x2C (4)
 	struct FString MovieExtension; // 0x30 (16)
 	char ZeroPadFrameNumbers; // 0x40 (1)
-	struct Unknown FrameRate; // 0x44 (8)
+	struct FFrameRate FrameRate; // 0x44 (8)
 	char bUseCustomFrameRate : 0; // 0x4C (1)
-	struct Unknown CustomFrameRate; // 0x50 (8)
-	struct Unknown Resolution; // 0x58 (8)
+	struct FFrameRate CustomFrameRate; // 0x50 (8)
+	struct FCaptureResolution Resolution; // 0x58 (8)
 	char bEnableTextureStreaming : 0; // 0x60 (1)
 	char bCinematicEngineScalability : 0; // 0x61 (1)
 	char bCinematicMode : 0; // 0x62 (1)
@@ -192,7 +192,7 @@ struct FCaptureResolution {
 
 // ScriptStruct MovieSceneCapture.CapturedPixelsID
 struct FCapturedPixelsID {
-	struct TMap<Unknown, Unknown> Identifiers; // 0x0 (80)
+	struct TMap<struct FName, struct FName> Identifiers; // 0x0 (80)
 };
 
 // Function MovieSceneCapture.MovieSceneCaptureProtocolBase.IsCapturing
@@ -214,12 +214,12 @@ inline char UMovieSceneCaptureProtocolBase::IsCapturing() {
 }
 
 // Function MovieSceneCapture.MovieSceneCaptureProtocolBase.GetState
-inline enum class Unknow UMovieSceneCaptureProtocolBase::GetState() {
+inline enum class EMovieSceneCaptureProtocolState UMovieSceneCaptureProtocolBase::GetState() {
 	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneCapture.MovieSceneCaptureProtocolBase.GetState");
 
 	struct GetState_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class EMovieSceneCaptureProtocolState ReturnValue;
 
 	}; GetState_Params Params;
 
@@ -232,11 +232,11 @@ inline enum class Unknow UMovieSceneCaptureProtocolBase::GetState() {
 }
 
 // Function MovieSceneCapture.MovieSceneCapture.SetImageCaptureProtocolType
-inline void UMovieSceneCapture::SetImageCaptureProtocolType(struct Unknown* ProtocolType) {
+inline void UMovieSceneCapture::SetImageCaptureProtocolType(struct UClass* ProtocolType) {
 	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneCapture.MovieSceneCapture.SetImageCaptureProtocolType");
 
 	struct SetImageCaptureProtocolType_Params {
-		struct Unknown* ProtocolType;
+		struct UClass* ProtocolType;
 	}; SetImageCaptureProtocolType_Params Params;
 
 	Params.ProtocolType = ProtocolType;
@@ -247,11 +247,11 @@ inline void UMovieSceneCapture::SetImageCaptureProtocolType(struct Unknown* Prot
 }
 
 // Function MovieSceneCapture.MovieSceneCapture.SetAudioCaptureProtocolType
-inline void UMovieSceneCapture::SetAudioCaptureProtocolType(struct Unknown* ProtocolType) {
+inline void UMovieSceneCapture::SetAudioCaptureProtocolType(struct UClass* ProtocolType) {
 	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneCapture.MovieSceneCapture.SetAudioCaptureProtocolType");
 
 	struct SetAudioCaptureProtocolType_Params {
-		struct Unknown* ProtocolType;
+		struct UClass* ProtocolType;
 	}; SetAudioCaptureProtocolType_Params Params;
 
 	Params.ProtocolType = ProtocolType;
@@ -262,12 +262,12 @@ inline void UMovieSceneCapture::SetAudioCaptureProtocolType(struct Unknown* Prot
 }
 
 // Function MovieSceneCapture.MovieSceneCapture.GetImageCaptureProtocol
-inline struct Unknown UMovieSceneCapture::GetImageCaptureProtocol() {
+inline struct UMovieSceneCaptureProtocolBase UMovieSceneCapture::GetImageCaptureProtocol() {
 	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneCapture.MovieSceneCapture.GetImageCaptureProtocol");
 
 	struct GetImageCaptureProtocol_Params {
 		
-		struct Unknown ReturnValue;
+		struct UMovieSceneCaptureProtocolBase ReturnValue;
 
 	}; GetImageCaptureProtocol_Params Params;
 
@@ -280,12 +280,12 @@ inline struct Unknown UMovieSceneCapture::GetImageCaptureProtocol() {
 }
 
 // Function MovieSceneCapture.MovieSceneCapture.GetAudioCaptureProtocol
-inline struct Unknown UMovieSceneCapture::GetAudioCaptureProtocol() {
+inline struct UMovieSceneCaptureProtocolBase UMovieSceneCapture::GetAudioCaptureProtocol() {
 	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneCapture.MovieSceneCapture.GetAudioCaptureProtocol");
 
 	struct GetAudioCaptureProtocol_Params {
 		
-		struct Unknown ReturnValue;
+		struct UMovieSceneCaptureProtocolBase ReturnValue;
 
 	}; GetAudioCaptureProtocol_Params Params;
 
@@ -312,11 +312,11 @@ inline void UUserDefinedCaptureProtocol::StopCapturingFinalPixels() {
 }
 
 // Function MovieSceneCapture.UserDefinedCaptureProtocol.StartCapturingFinalPixels
-inline void UUserDefinedCaptureProtocol::StartCapturingFinalPixels(struct Unknown& StreamID) {
+inline void UUserDefinedCaptureProtocol::StartCapturingFinalPixels(struct FCapturedPixelsID& StreamID) {
 	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneCapture.UserDefinedCaptureProtocol.StartCapturingFinalPixels");
 
 	struct StartCapturingFinalPixels_Params {
-		struct Unknown& StreamID;
+		struct FCapturedPixelsID& StreamID;
 	}; StartCapturingFinalPixels_Params Params;
 
 
@@ -329,12 +329,12 @@ inline void UUserDefinedCaptureProtocol::StartCapturingFinalPixels(struct Unknow
 }
 
 // Function MovieSceneCapture.UserDefinedCaptureProtocol.ResolveBuffer
-inline void UUserDefinedCaptureProtocol::ResolveBuffer(struct Unknown Buffer, struct Unknown& BufferID) {
+inline void UUserDefinedCaptureProtocol::ResolveBuffer(struct UTexture Buffer, struct FCapturedPixelsID& BufferID) {
 	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneCapture.UserDefinedCaptureProtocol.ResolveBuffer");
 
 	struct ResolveBuffer_Params {
-		struct Unknown Buffer;
-		struct Unknown& BufferID;
+		struct UTexture Buffer;
+		struct FCapturedPixelsID& BufferID;
 	}; ResolveBuffer_Params Params;
 
 	Params.Buffer = Buffer;
@@ -422,13 +422,13 @@ inline void UUserDefinedCaptureProtocol::OnPreTick() {
 }
 
 // Function MovieSceneCapture.UserDefinedCaptureProtocol.OnPixelsReceived
-inline void UUserDefinedCaptureProtocol::OnPixelsReceived(struct Unknown& Pixels, struct Unknown& ID, struct Unknown FrameMetrics) {
+inline void UUserDefinedCaptureProtocol::OnPixelsReceived(struct FCapturedPixels& Pixels, struct FCapturedPixelsID& ID, struct FFrameMetrics FrameMetrics) {
 	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneCapture.UserDefinedCaptureProtocol.OnPixelsReceived");
 
 	struct OnPixelsReceived_Params {
-		struct Unknown& Pixels;
-		struct Unknown& ID;
-		struct Unknown FrameMetrics;
+		struct FCapturedPixels& Pixels;
+		struct FCapturedPixelsID& ID;
+		struct FFrameMetrics FrameMetrics;
 	}; OnPixelsReceived_Params Params;
 
 	Params.FrameMetrics = FrameMetrics;
@@ -517,12 +517,12 @@ inline void UUserDefinedCaptureProtocol::OnBeginFinalize() {
 }
 
 // Function MovieSceneCapture.UserDefinedCaptureProtocol.GetCurrentFrameMetrics
-inline struct Unknown UUserDefinedCaptureProtocol::GetCurrentFrameMetrics() {
+inline struct FFrameMetrics UUserDefinedCaptureProtocol::GetCurrentFrameMetrics() {
 	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneCapture.UserDefinedCaptureProtocol.GetCurrentFrameMetrics");
 
 	struct GetCurrentFrameMetrics_Params {
 		
-		struct Unknown ReturnValue;
+		struct FFrameMetrics ReturnValue;
 
 	}; GetCurrentFrameMetrics_Params Params;
 
@@ -535,11 +535,11 @@ inline struct Unknown UUserDefinedCaptureProtocol::GetCurrentFrameMetrics() {
 }
 
 // Function MovieSceneCapture.UserDefinedCaptureProtocol.GenerateFilename
-inline struct FString UUserDefinedCaptureProtocol::GenerateFilename(struct Unknown& InFrameMetrics) {
+inline struct FString UUserDefinedCaptureProtocol::GenerateFilename(struct FFrameMetrics& InFrameMetrics) {
 	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneCapture.UserDefinedCaptureProtocol.GenerateFilename");
 
 	struct GenerateFilename_Params {
-		struct Unknown& InFrameMetrics;
+		struct FFrameMetrics& InFrameMetrics;
 		struct FString ReturnValue;
 
 	}; GenerateFilename_Params Params;
@@ -556,13 +556,13 @@ inline struct FString UUserDefinedCaptureProtocol::GenerateFilename(struct Unkno
 }
 
 // Function MovieSceneCapture.UserDefinedImageCaptureProtocol.WriteImageToDisk
-inline void UUserDefinedImageCaptureProtocol::WriteImageToDisk(struct Unknown& PixelData, struct Unknown& StreamID, struct Unknown& FrameMetrics, char bCopyImageData) {
+inline void UUserDefinedImageCaptureProtocol::WriteImageToDisk(struct FCapturedPixels& PixelData, struct FCapturedPixelsID& StreamID, struct FFrameMetrics& FrameMetrics, char bCopyImageData) {
 	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneCapture.UserDefinedImageCaptureProtocol.WriteImageToDisk");
 
 	struct WriteImageToDisk_Params {
-		struct Unknown& PixelData;
-		struct Unknown& StreamID;
-		struct Unknown& FrameMetrics;
+		struct FCapturedPixels& PixelData;
+		struct FCapturedPixelsID& StreamID;
+		struct FFrameMetrics& FrameMetrics;
 		char bCopyImageData;
 	}; WriteImageToDisk_Params Params;
 
@@ -597,12 +597,12 @@ inline struct FString UUserDefinedImageCaptureProtocol::GenerateFilenameForCurre
 }
 
 // Function MovieSceneCapture.UserDefinedImageCaptureProtocol.GenerateFilenameForBuffer
-inline struct FString UUserDefinedImageCaptureProtocol::GenerateFilenameForBuffer(struct Unknown Buffer, struct Unknown& StreamID) {
+inline struct FString UUserDefinedImageCaptureProtocol::GenerateFilenameForBuffer(struct UTexture Buffer, struct FCapturedPixelsID& StreamID) {
 	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneCapture.UserDefinedImageCaptureProtocol.GenerateFilenameForBuffer");
 
 	struct GenerateFilenameForBuffer_Params {
-		struct Unknown Buffer;
-		struct Unknown& StreamID;
+		struct UTexture Buffer;
+		struct FCapturedPixelsID& StreamID;
 		struct FString ReturnValue;
 
 	}; GenerateFilenameForBuffer_Params Params;

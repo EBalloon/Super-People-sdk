@@ -3,72 +3,72 @@ class UWBP_SPS_UseItemSelectionMenu_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Bg1; // 0x250 (8)
-	struct Unknown bg2; // 0x258 (8)
-	struct Unknown Bg3; // 0x260 (8)
-	struct Unknown Bg4; // 0x268 (8)
-	struct Unknown Bg5; // 0x270 (8)
-	struct Unknown Bg6; // 0x278 (8)
-	struct Unknown Bg7; // 0x280 (8)
-	struct Unknown Bg8; // 0x288 (8)
-	struct Unknown Canvas; // 0x290 (8)
-	struct Unknown CenterCursor; // 0x298 (8)
-	struct Unknown DisplayText; // 0x2A0 (8)
-	struct Unknown IconImage; // 0x2A8 (8)
-	struct Unknown Index1; // 0x2B0 (8)
-	struct Unknown Index2; // 0x2B8 (8)
-	struct Unknown Index3; // 0x2C0 (8)
-	struct Unknown Index4; // 0x2C8 (8)
-	struct Unknown Index5; // 0x2D0 (8)
-	struct Unknown Index6; // 0x2D8 (8)
-	struct Unknown Index7; // 0x2E0 (8)
-	struct Unknown Index8; // 0x2E8 (8)
-	struct Unknown Key1; // 0x2F0 (8)
-	struct Unknown Key2; // 0x2F8 (8)
-	struct Unknown Key3; // 0x300 (8)
-	struct Unknown Key4; // 0x308 (8)
-	struct Unknown Key5; // 0x310 (8)
-	struct Unknown Key6; // 0x318 (8)
-	struct Unknown Key7; // 0x320 (8)
-	struct Unknown Key8; // 0x328 (8)
-	struct Unknown Message2; // 0x330 (8)
-	struct Unknown Message3; // 0x338 (8)
-	struct Unknown Message3_1; // 0x340 (8)
-	struct Unknown Message3_2; // 0x348 (8)
-	struct Unknown Message3_3; // 0x350 (8)
-	struct Unknown Message3_4; // 0x358 (8)
-	struct Unknown Message3_5; // 0x360 (8)
-	struct Unknown Message3_6; // 0x368 (8)
-	struct Unknown Message3_7; // 0x370 (8)
-	struct Unknown Message3_8; // 0x378 (8)
-	struct Unknown Message4; // 0x380 (8)
-	struct Unknown Message5; // 0x388 (8)
-	struct Unknown Message6; // 0x390 (8)
-	struct Unknown Message7; // 0x398 (8)
-	struct Unknown Message8; // 0x3A0 (8)
-	struct Unknown Messgae1; // 0x3A8 (8)
-	struct Unknown Over1; // 0x3B0 (8)
-	struct Unknown Over2; // 0x3B8 (8)
-	struct Unknown Over3; // 0x3C0 (8)
-	struct Unknown Over4; // 0x3C8 (8)
-	struct Unknown Over5; // 0x3D0 (8)
-	struct Unknown Over6; // 0x3D8 (8)
-	struct Unknown Over7; // 0x3E0 (8)
-	struct Unknown Over8; // 0x3E8 (8)
-	struct Unknown UseSlot1; // 0x3F0 (8)
-	struct Unknown UseSlot2; // 0x3F8 (8)
-	struct Unknown UseSlot3; // 0x400 (8)
-	struct Unknown UseSlot4; // 0x408 (8)
-	struct Unknown UseSlot5; // 0x410 (8)
-	struct Unknown UseSlot6; // 0x418 (8)
-	struct Unknown UseSlot7; // 0x420 (8)
-	struct Unknown UseSlot8; // 0x428 (8)
-	struct Unknown UW-PlayerMarkerWidget; // 0x430 (8)
-	struct Unknown WidgetSwitcher_133; // 0x438 (8)
-	struct TArray<Unknown> SelectionWidgets; // 0x440 (16)
-	struct Unknown MenuCenter; // 0x450 (8)
-	struct Unknown ReferenceVector; // 0x458 (12)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UImage Bg1; // 0x250 (8)
+	struct UImage bg2; // 0x258 (8)
+	struct UImage Bg3; // 0x260 (8)
+	struct UImage Bg4; // 0x268 (8)
+	struct UImage Bg5; // 0x270 (8)
+	struct UImage Bg6; // 0x278 (8)
+	struct UImage Bg7; // 0x280 (8)
+	struct UImage Bg8; // 0x288 (8)
+	struct UCanvasPanel Canvas; // 0x290 (8)
+	struct UImage CenterCursor; // 0x298 (8)
+	struct UTextBlock DisplayText; // 0x2A0 (8)
+	struct UImage IconImage; // 0x2A8 (8)
+	struct UImage Index1; // 0x2B0 (8)
+	struct UImage Index2; // 0x2B8 (8)
+	struct UImage Index3; // 0x2C0 (8)
+	struct UImage Index4; // 0x2C8 (8)
+	struct UImage Index5; // 0x2D0 (8)
+	struct UImage Index6; // 0x2D8 (8)
+	struct UImage Index7; // 0x2E0 (8)
+	struct UImage Index8; // 0x2E8 (8)
+	struct UTextBlock Key1; // 0x2F0 (8)
+	struct UTextBlock Key2; // 0x2F8 (8)
+	struct UTextBlock Key3; // 0x300 (8)
+	struct UTextBlock Key4; // 0x308 (8)
+	struct UTextBlock Key5; // 0x310 (8)
+	struct UTextBlock Key6; // 0x318 (8)
+	struct UTextBlock Key7; // 0x320 (8)
+	struct UTextBlock Key8; // 0x328 (8)
+	struct UTextBlock Message2; // 0x330 (8)
+	struct UTextBlock Message3; // 0x338 (8)
+	struct UTextBlock Message3_1; // 0x340 (8)
+	struct UTextBlock Message3_2; // 0x348 (8)
+	struct UTextBlock Message3_3; // 0x350 (8)
+	struct UTextBlock Message3_4; // 0x358 (8)
+	struct UTextBlock Message3_5; // 0x360 (8)
+	struct UTextBlock Message3_6; // 0x368 (8)
+	struct UTextBlock Message3_7; // 0x370 (8)
+	struct UTextBlock Message3_8; // 0x378 (8)
+	struct UTextBlock Message4; // 0x380 (8)
+	struct UTextBlock Message5; // 0x388 (8)
+	struct UTextBlock Message6; // 0x390 (8)
+	struct UTextBlock Message7; // 0x398 (8)
+	struct UTextBlock Message8; // 0x3A0 (8)
+	struct UTextBlock Messgae1; // 0x3A8 (8)
+	struct UImage Over1; // 0x3B0 (8)
+	struct UImage Over2; // 0x3B8 (8)
+	struct UImage Over3; // 0x3C0 (8)
+	struct UImage Over4; // 0x3C8 (8)
+	struct UImage Over5; // 0x3D0 (8)
+	struct UImage Over6; // 0x3D8 (8)
+	struct UImage Over7; // 0x3E0 (8)
+	struct UImage Over8; // 0x3E8 (8)
+	struct UWBP_SPS_UseItemSelectionIcon_C UseSlot1; // 0x3F0 (8)
+	struct UWBP_SPS_UseItemSelectionIcon_C UseSlot2; // 0x3F8 (8)
+	struct UWBP_SPS_UseItemSelectionIcon_C UseSlot3; // 0x400 (8)
+	struct UWBP_SPS_UseItemSelectionIcon_C UseSlot4; // 0x408 (8)
+	struct UWBP_SPS_UseItemSelectionIcon_C UseSlot5; // 0x410 (8)
+	struct UWBP_SPS_UseItemSelectionIcon_C UseSlot6; // 0x418 (8)
+	struct UWBP_SPS_UseItemSelectionIcon_C UseSlot7; // 0x420 (8)
+	struct UWBP_SPS_UseItemSelectionIcon_C UseSlot8; // 0x428 (8)
+	struct UUW-PlayerMarkerWidget_C UW-PlayerMarkerWidget; // 0x430 (8)
+	struct UWidgetSwitcher WidgetSwitcher_133; // 0x438 (8)
+	struct TArray<struct UWBP_SPS_SelectionIcon_C> SelectionWidgets; // 0x440 (16)
+	struct FVector2D MenuCenter; // 0x450 (8)
+	struct FVector ReferenceVector; // 0x458 (12)
 	struct FMulticastInlineDelegate Selected; // 0x468 (16)
 	int32_t SelectedIndex; // 0x478 (4)
 	float AngleSize; // 0x47C (4)
@@ -81,29 +81,29 @@ public:
 	struct FName ItemKey; // 0x4C8 (8)
 	float OverOpacity; // 0x4D0 (4)
 	float BgOpacity; // 0x4D4 (4)
-	struct TMap<Unknown, Unknown> List; // 0x4D8 (80)
-	enum class Unknow IndexTextVisible; // 0x528 (1)
+	struct TMap<int32_t, struct FName> List; // 0x4D8 (80)
+	enum class ESlateVisibility IndexTextVisible; // 0x528 (1)
 	char NewVar_1 : 0; // 0x529 (1)
-	struct Unknown Image; // 0x530 (40)
+	struct TSoftObjectPtr<UPaperSprite> Image; // 0x530 (40)
 	float TextOpacity; // 0x558 (4)
 
-	void Get Icon from Index(int32_t Index, struct Unknown& Icon); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.Get Icon from Index(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown OnMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown OnMouseButtonUp(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.OnMouseButtonUp(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetVisibleOverImage(int32_t SelectIndex, enum class Unknow VisibleType); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.SetVisibleOverImage(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Get Icon from Index(int32_t Index, struct UWBP_SPS_UseItemSelectionIcon_C& Icon); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.Get Icon from Index(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply OnMouseButtonDown(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply OnMouseButtonUp(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.OnMouseButtonUp(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetVisibleOverImage(int32_t SelectIndex, enum class ESlateVisibility VisibleType); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.SetVisibleOverImage(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetActiveSelection(int32_t Index); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.SetActiveSelection(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ClearActiveSelection(); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.ClearActiveSelection(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CancelSelection(); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.CancelSelection(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ConfirmSelection(); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.ConfirmSelection(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	int32_t CalculateSelectionIndexFromVector(struct Unknown InputVector); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.CalculateSelectionIndexFromVector(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown OnMouseMove(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.OnMouseMove(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnLoaded_B2D87D22498868B7225333B61217C4AA(struct Unknown Loaded); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.OnLoaded_B2D87D22498868B7225333B61217C4AA(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	int32_t CalculateSelectionIndexFromVector(struct FVector InputVector); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.CalculateSelectionIndexFromVector(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply OnMouseMove(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.OnMouseMove(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_B2D87D22498868B7225333B61217C4AA(struct Object Loaded); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.OnLoaded_B2D87D22498868B7225333B61217C4AA(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Destruct(); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ConstructMenuElements(); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.ConstructMenuElements(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetSelectedIndex(int32_t SelectedIndex); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.SetSelectedIndex(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ä¤@t¤¸_2(int32_t Index); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.ä¤@t¤¸_2(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AssetLoad(struct Unknown Image); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.AssetLoad(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AssetLoad(struct TSoftObjectPtr<UPaperSprite> Image); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.AssetLoad(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_WBP_SPS_UseItemSelectionMenu(int32_t EntryPoint); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.ExecuteUbergraph_WBP_SPS_UseItemSelectionMenu(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 	void ClearPing__DelegateSignature(); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.ClearPing__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Hovered__DelegateSignature(struct FName ItemKey); // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.Hovered__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -111,12 +111,12 @@ public:
 };
 
 // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.Get Icon from Index
-inline void UWBP_SPS_UseItemSelectionMenu_C::Get Icon from Index(int32_t Index, struct Unknown& Icon) {
+inline void UWBP_SPS_UseItemSelectionMenu_C::Get Icon from Index(int32_t Index, struct UWBP_SPS_UseItemSelectionIcon_C& Icon) {
 	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.Get Icon from Index");
 
 	struct Get Icon from Index_Params {
 		int32_t Index;
-		struct Unknown& Icon;
+		struct UWBP_SPS_UseItemSelectionIcon_C& Icon;
 	}; Get Icon from Index_Params Params;
 
 	Params.Index = Index;
@@ -130,13 +130,13 @@ inline void UWBP_SPS_UseItemSelectionMenu_C::Get Icon from Index(int32_t Index, 
 }
 
 // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.OnMouseButtonDown
-inline struct Unknown UWBP_SPS_UseItemSelectionMenu_C::OnMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UWBP_SPS_UseItemSelectionMenu_C::OnMouseButtonDown(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.OnMouseButtonDown");
 
 	struct OnMouseButtonDown_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnMouseButtonDown_Params Params;
 
@@ -153,13 +153,13 @@ inline struct Unknown UWBP_SPS_UseItemSelectionMenu_C::OnMouseButtonDown(struct 
 }
 
 // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.OnMouseButtonUp
-inline struct Unknown UWBP_SPS_UseItemSelectionMenu_C::OnMouseButtonUp(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UWBP_SPS_UseItemSelectionMenu_C::OnMouseButtonUp(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.OnMouseButtonUp");
 
 	struct OnMouseButtonUp_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnMouseButtonUp_Params Params;
 
@@ -176,12 +176,12 @@ inline struct Unknown UWBP_SPS_UseItemSelectionMenu_C::OnMouseButtonUp(struct Un
 }
 
 // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.SetVisibleOverImage
-inline void UWBP_SPS_UseItemSelectionMenu_C::SetVisibleOverImage(int32_t SelectIndex, enum class Unknow VisibleType) {
+inline void UWBP_SPS_UseItemSelectionMenu_C::SetVisibleOverImage(int32_t SelectIndex, enum class ESlateVisibility VisibleType) {
 	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.SetVisibleOverImage");
 
 	struct SetVisibleOverImage_Params {
 		int32_t SelectIndex;
-		enum class Unknow VisibleType;
+		enum class ESlateVisibility VisibleType;
 	}; SetVisibleOverImage_Params Params;
 
 	Params.SelectIndex = SelectIndex;
@@ -250,11 +250,11 @@ inline void UWBP_SPS_UseItemSelectionMenu_C::ConfirmSelection() {
 }
 
 // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.CalculateSelectionIndexFromVector
-inline int32_t UWBP_SPS_UseItemSelectionMenu_C::CalculateSelectionIndexFromVector(struct Unknown InputVector) {
+inline int32_t UWBP_SPS_UseItemSelectionMenu_C::CalculateSelectionIndexFromVector(struct FVector InputVector) {
 	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.CalculateSelectionIndexFromVector");
 
 	struct CalculateSelectionIndexFromVector_Params {
-		struct Unknown InputVector;
+		struct FVector InputVector;
 		int32_t ReturnValue;
 
 	}; CalculateSelectionIndexFromVector_Params Params;
@@ -269,13 +269,13 @@ inline int32_t UWBP_SPS_UseItemSelectionMenu_C::CalculateSelectionIndexFromVecto
 }
 
 // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.OnMouseMove
-inline struct Unknown UWBP_SPS_UseItemSelectionMenu_C::OnMouseMove(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UWBP_SPS_UseItemSelectionMenu_C::OnMouseMove(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.OnMouseMove");
 
 	struct OnMouseMove_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnMouseMove_Params Params;
 
@@ -292,11 +292,11 @@ inline struct Unknown UWBP_SPS_UseItemSelectionMenu_C::OnMouseMove(struct Unknow
 }
 
 // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.OnLoaded_B2D87D22498868B7225333B61217C4AA
-inline void UWBP_SPS_UseItemSelectionMenu_C::OnLoaded_B2D87D22498868B7225333B61217C4AA(struct Unknown Loaded) {
+inline void UWBP_SPS_UseItemSelectionMenu_C::OnLoaded_B2D87D22498868B7225333B61217C4AA(struct Object Loaded) {
 	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.OnLoaded_B2D87D22498868B7225333B61217C4AA");
 
 	struct OnLoaded_B2D87D22498868B7225333B61217C4AA_Params {
-		struct Unknown Loaded;
+		struct Object Loaded;
 	}; OnLoaded_B2D87D22498868B7225333B61217C4AA_Params Params;
 
 	Params.Loaded = Loaded;
@@ -379,11 +379,11 @@ inline void UWBP_SPS_UseItemSelectionMenu_C::ä¤@t¤¸_2(int32_t Index) {
 }
 
 // Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.AssetLoad
-inline void UWBP_SPS_UseItemSelectionMenu_C::AssetLoad(struct Unknown Image) {
+inline void UWBP_SPS_UseItemSelectionMenu_C::AssetLoad(struct TSoftObjectPtr<UPaperSprite> Image) {
 	static auto fn = UObject::FindObject<UFunction>("Function WBP_SPS_UseItemSelectionMenu.WBP_SPS_UseItemSelectionMenu_C.AssetLoad");
 
 	struct AssetLoad_Params {
-		struct Unknown Image;
+		struct TSoftObjectPtr<UPaperSprite> Image;
 	}; AssetLoad_Params Params;
 
 	Params.Image = Image;

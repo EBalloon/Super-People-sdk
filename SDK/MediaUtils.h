@@ -8,10 +8,10 @@ enum class EMediaPlayerOptionBooleanOverride : uint8_t {
 
 // ScriptStruct MediaUtils.MediaPlayerOptions
 struct FMediaPlayerOptions {
-	struct Unknown Tracks; // 0x0 (28)
-	struct Unknown SeekTime; // 0x20 (8)
-	enum class Unknow PlayOnOpen; // 0x28 (1)
-	enum class Unknow Loop; // 0x29 (1)
+	struct FMediaPlayerTrackOptions Tracks; // 0x0 (28)
+	struct FTimespan SeekTime; // 0x20 (8)
+	enum class EMediaPlayerOptionBooleanOverride PlayOnOpen; // 0x28 (1)
+	enum class EMediaPlayerOptionBooleanOverride Loop; // 0x29 (1)
 };
 
 // ScriptStruct MediaUtils.MediaPlayerTrackOptions

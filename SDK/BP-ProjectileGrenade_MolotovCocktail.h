@@ -3,7 +3,7 @@ class ABP-ProjectileGrenade_MolotovCocktail_C : public ABravoHotelProjectileGren
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x7F8 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x7F8 (8)
 	float TextureScale; // 0x800 (4)
 	float CollisionSize; // 0x804 (4)
 

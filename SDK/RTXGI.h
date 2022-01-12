@@ -30,7 +30,7 @@ class ADDGIVolume : public UActor {
 
 public:
 
-	struct Unknown DDGIVolumeComponent; // 0x318 (8)
+	struct UDDGIVolumeComponent DDGIVolumeComponent; // 0x318 (8)
 };
 
 // Class RTXGI.DDGIVolumeComponent
@@ -38,15 +38,15 @@ class UDDGIVolumeComponent : public USceneComponent {
 
 public:
 
-	enum class Unknow RaysPerProbe; // 0x230 (1)
-	struct Unknown ProbeCounts; // 0x234 (12)
+	enum class EDDGIRaysPerProbe RaysPerProbe; // 0x230 (1)
+	struct FIntVector ProbeCounts; // 0x234 (12)
 	int32_t LightingPriority; // 0x240 (4)
 	float UpdatePriority; // 0x244 (4)
 	float ProbeMaxRayDistance; // 0x248 (4)
 	float ProbeHysteresis; // 0x24C (4)
 	float ViewBias; // 0x250 (4)
 	float NormalBias; // 0x254 (4)
-	struct Unknown LightingChannels; // 0x258 (1)
+	struct FLightingChannels LightingChannels; // 0x258 (1)
 	float VolumeBlendDistance; // 0x25C (4)
 	float VolumeBlendDistanceBlack; // 0x260 (4)
 	char EnableProbeRelocation : 0; // 0x264 (1)
@@ -65,8 +65,8 @@ public:
 	float EmissiveMultiplier; // 0x28C (4)
 	float IrradianceScalar; // 0x290 (4)
 	char SkyLight : 0; // 0x294 (1)
-	struct Unknown LastOrigin; // 0x298 (12)
-	struct Unknown ProbeScrollOffset; // 0x2A4 (12)
+	struct FVector LastOrigin; // 0x298 (12)
+	struct FIntVector ProbeScrollOffset; // 0x2A4 (12)
 
 	void DDGIClearVolumes(); // Function RTXGI.DDGIVolumeComponent.DDGIClearVolumes(Final|Exec|Native|Public) // <Game_BE.exe+0x1663AA0>
 };
@@ -76,8 +76,8 @@ class URTXGIPluginSettings : public UDeveloperSettings {
 
 public:
 
-	enum class Unknow IrradianceBits; // 0x38 (1)
-	enum class Unknow DistanceBits; // 0x39 (1)
+	enum class EDDGIIrradianceBits IrradianceBits; // 0x38 (1)
+	enum class EDDGIDistanceBits DistanceBits; // 0x39 (1)
 	float DebugProbeRadius; // 0x3C (4)
 	int32_t ProbeUpdateRayBudget; // 0x40 (4)
 };

@@ -3,11 +3,11 @@ class UUW-ImageText_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown WrapBox_Main; // 0x250 (8)
-	struct Unknown DefaultTextStyle; // 0x258 (616)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UWrapBox WrapBox_Main; // 0x250 (8)
+	struct FTextBlockStyle DefaultTextStyle; // 0x258 (616)
 	struct FText TextString; // 0x4C0 (24)
-	struct Unknown Game Settings; // 0x4D8 (8)
+	struct UBP_GameSettings_C Game Settings; // 0x4D8 (8)
 	char HorizontalAlignment; // 0x4E0 (1)
 	float KeyImageScale; // 0x4E4 (4)
 

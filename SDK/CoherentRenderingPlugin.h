@@ -14,7 +14,7 @@ class UCoherentRenderingSettings : public Object {
 
 public:
 
-	enum class Unknow RenderingLogSeverity; // 0x28 (1)
+	enum class ECoherentRenderingSettingsSeverity RenderingLogSeverity; // 0x28 (1)
 	char ShowWarningsOnScreen : 0; // 0x29 (1)
 	struct FString DeveloperOptions; // 0x30 (16)
 };
@@ -24,6 +24,6 @@ class UCohTextureUserWrapData : public Object {
 
 public:
 
-	struct Unknown Texture; // 0x70 (8)
+	struct UTexture Texture; // 0x70 (8)
 };
 

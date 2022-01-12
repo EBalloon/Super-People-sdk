@@ -3,10 +3,10 @@ class UBP-GameSettingManager_C : public UBravoHotelGameSettingManager {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x38 (8)
-	struct Unknown Game Settings Wrapper; // 0x40 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x38 (8)
+	struct UBP_GameSettingsWrapper_C Game Settings Wrapper; // 0x40 (8)
 
-	void Get Settings Instance(struct Unknown& SettingsWrapper); // Function BP-GameSettingManager.BP-GameSettingManager_C.Get Settings Instance(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Get Settings Instance(struct UBP_GameSettingsWrapper_C& SettingsWrapper); // Function BP-GameSettingManager.BP-GameSettingManager_C.Get Settings Instance(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Run Console Command(struct FString Console Command, char& -); // Function BP-GameSettingManager.BP-GameSettingManager_C.Run Console Command(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Update Audio Channel(char Audio Channel, float Volume, char& -); // Function BP-GameSettingManager.BP-GameSettingManager_C.Update Audio Channel(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ReceiveInit(); // Function BP-GameSettingManager.BP-GameSettingManager_C.ReceiveInit(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -14,11 +14,11 @@ public:
 };
 
 // Function BP-GameSettingManager.BP-GameSettingManager_C.Get Settings Instance
-inline void UBP-GameSettingManager_C::Get Settings Instance(struct Unknown& SettingsWrapper) {
+inline void UBP-GameSettingManager_C::Get Settings Instance(struct UBP_GameSettingsWrapper_C& SettingsWrapper) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-GameSettingManager.BP-GameSettingManager_C.Get Settings Instance");
 
 	struct Get Settings Instance_Params {
-		struct Unknown& SettingsWrapper;
+		struct UBP_GameSettingsWrapper_C& SettingsWrapper;
 	}; Get Settings Instance_Params Params;
 
 

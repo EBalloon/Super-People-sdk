@@ -3,29 +3,29 @@ class UUW-ArmoryWidget_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Ellipsis_M; // 0x250 (8)
-	struct Unknown CanvasPanel_123; // 0x258 (8)
-	struct Unknown Enhancing; // 0x260 (8)
-	struct Unknown Image_305; // 0x268 (8)
-	struct Unknown Image_841; // 0x270 (8)
-	struct Unknown InputEventBox; // 0x278 (8)
-	struct Unknown Skip; // 0x280 (8)
-	struct Unknown TextBlock_335; // 0x288 (8)
-	struct Unknown TextBlock_336; // 0x290 (8)
-	struct Unknown TextBlock_337; // 0x298 (8)
-	struct Unknown TextBlock_362; // 0x2A0 (8)
-	struct Unknown TextEnhanceing; // 0x2A8 (8)
-	struct Unknown UW-ArmoryInput; // 0x2B0 (8)
-	struct Unknown UW-ArmoryResultListWidget; // 0x2B8 (8)
-	struct Unknown EnhanceResultTimerHandle; // 0x2C0 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UWidgetAnimation Ellipsis_M; // 0x250 (8)
+	struct UCanvasPanel CanvasPanel_123; // 0x258 (8)
+	struct UCanvasPanel Enhancing; // 0x260 (8)
+	struct UImage Image_305; // 0x268 (8)
+	struct UImage Image_841; // 0x270 (8)
+	struct UCanvasPanel InputEventBox; // 0x278 (8)
+	struct UButton Skip; // 0x280 (8)
+	struct UTextBlock TextBlock_335; // 0x288 (8)
+	struct UTextBlock TextBlock_336; // 0x290 (8)
+	struct UTextBlock TextBlock_337; // 0x298 (8)
+	struct UTextBlock TextBlock_362; // 0x2A0 (8)
+	struct UTextBlock TextEnhanceing; // 0x2A8 (8)
+	struct UUW-ArmoryInput_C UW-ArmoryInput; // 0x2B0 (8)
+	struct UUW-ArmoryResultListWidget_C UW-ArmoryResultListWidget; // 0x2B8 (8)
+	struct FTimerHandle EnhanceResultTimerHandle; // 0x2C0 (8)
 
 	void Craft(); // Function UW-ArmoryWidget.UW-ArmoryWidget_C.Craft(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Result(); // Function UW-ArmoryWidget.UW-ArmoryWidget_C.Result(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetInputEventBox(char Visible); // Function UW-ArmoryWidget.UW-ArmoryWidget_C.SetInputEventBox(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void StopProceedingSound(); // Function UW-ArmoryWidget.UW-ArmoryWidget_C.StopProceedingSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void PlayProceedingSound(); // Function UW-ArmoryWidget.UW-ArmoryWidget_C.PlayProceedingSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetLobbyWidget(struct Unknown& Widget); // Function UW-ArmoryWidget.UW-ArmoryWidget_C.GetLobbyWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetLobbyWidget(struct UBP-LobbyWidget_Web_C& Widget); // Function UW-ArmoryWidget.UW-ArmoryWidget_C.GetLobbyWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Proceeding(); // Function UW-ArmoryWidget.UW-ArmoryWidget_C.Proceeding(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ShowArmoryUI(struct FString ArmoryResultName); // Function UW-ArmoryWidget.UW-ArmoryWidget_C.ShowArmoryUI(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-ArmoryWidget.UW-ArmoryWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -110,11 +110,11 @@ inline void UUW-ArmoryWidget_C::PlayProceedingSound() {
 }
 
 // Function UW-ArmoryWidget.UW-ArmoryWidget_C.GetLobbyWidget
-inline void UUW-ArmoryWidget_C::GetLobbyWidget(struct Unknown& Widget) {
+inline void UUW-ArmoryWidget_C::GetLobbyWidget(struct UBP-LobbyWidget_Web_C& Widget) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-ArmoryWidget.UW-ArmoryWidget_C.GetLobbyWidget");
 
 	struct GetLobbyWidget_Params {
-		struct Unknown& Widget;
+		struct UBP-LobbyWidget_Web_C& Widget;
 	}; GetLobbyWidget_Params Params;
 
 

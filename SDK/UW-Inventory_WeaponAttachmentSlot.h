@@ -3,42 +3,42 @@ class UUW-Inventory_WeaponAttachmentSlot_C : public UUW-Inventory_SlotBase_C {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x1358 (8)
-	struct Unknown Bg; // 0x1360 (8)
-	struct Unknown BGImage; // 0x1368 (8)
-	struct Unknown BorderImage; // 0x1370 (8)
-	struct Unknown EmptyImage; // 0x1378 (8)
-	struct Unknown ItemImage; // 0x1380 (8)
-	struct Unknown OverImage; // 0x1388 (8)
-	struct Unknown SizeBox_1; // 0x1390 (8)
-	enum class Unknow WeaponAttachmentType; // 0x1398 (1)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x1358 (8)
+	struct UImage Bg; // 0x1360 (8)
+	struct UImage BGImage; // 0x1368 (8)
+	struct UImage BorderImage; // 0x1370 (8)
+	struct UImage EmptyImage; // 0x1378 (8)
+	struct UImage ItemImage; // 0x1380 (8)
+	struct UImage OverImage; // 0x1388 (8)
+	struct USizeBox SizeBox_1; // 0x1390 (8)
+	enum class EWeaponAttachmentType WeaponAttachmentType; // 0x1398 (1)
 	int32_t WeaponSlotIndex; // 0x139C (4)
 	char IsHover : 0; // 0x13A0 (1)
-	struct Unknown WeaponSlotWidget; // 0x13A8 (8)
-	enum class Unknow WeaponAttachmentUseType; // 0x13B0 (1)
+	struct UUW-Inventory_WeaponSlot_C WeaponSlotWidget; // 0x13A8 (8)
+	enum class EWeaponAttachmentUseType WeaponAttachmentUseType; // 0x13B0 (1)
 	int32_t SlotMode; // 0x13B4 (4)
-	struct Unknown HoverWidget; // 0x13B8 (8)
+	struct UUW-Inventory_ItemSlotHover_C HoverWidget; // 0x13B8 (8)
 
 	void SetHoverWidgetRef(); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.SetHoverWidgetRef(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetWeaponSlot(struct Unknown WeaponSlot); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.SetWeaponSlot(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnDragDetected(struct Unknown MyGeometry, struct Unknown& PointerEvent, struct Unknown& Operation); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.OnDragDetected(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetWeaponSlot(struct UUW-Inventory_WeaponSlot_C WeaponSlot); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.SetWeaponSlot(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnDragDetected(struct FGeometry MyGeometry, struct FPointerEvent& PointerEvent, struct UDragDropOperation& Operation); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.OnDragDetected(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void IsDraging(char& bResult); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.IsDraging(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnRButtonClick(char& bResult); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.OnRButtonClick(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void UnEquip(); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.UnEquip(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Reset(); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.Reset(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Drop(); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.Drop(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Init(enum class Unknow AttachmentType, enum class Unknow WeaponAttachmentUseType); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.Init(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetInfo(int32_t SlotIndex, struct Unknown InventoryWidget, struct Unknown WeaponSlotWidget, struct Unknown InventoryItemInfo); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.SetInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnLoaded_024BD4794308D2A802E72686E4471A98(struct Unknown Loaded); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.OnLoaded_024BD4794308D2A802E72686E4471A98(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnMouseLeave(struct Unknown& MouseEvent); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Init(enum class EWeaponAttachmentType AttachmentType, enum class EWeaponAttachmentUseType WeaponAttachmentUseType); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.Init(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetInfo(int32_t SlotIndex, struct UUW-InventoryWidget_C InventoryWidget, struct UUW-Inventory_WeaponSlot_C WeaponSlotWidget, struct FInventoryItemInfo InventoryItemInfo); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.SetInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_024BD4794308D2A802E72686E4471A98(struct Object Loaded); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.OnLoaded_024BD4794308D2A802E72686E4471A98(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnMouseEnter(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnMouseLeave(struct FPointerEvent& MouseEvent); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Hover(); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.Hover(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ResetEquip(); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.ResetEquip(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CanEquip(); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.CanEquip(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ResetHover(); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.ResetHover(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SelectEquip(); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.SelectEquip(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AsyncLoadIconTexture(struct Unknown IconTexture); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.AsyncLoadIconTexture(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AsyncLoadIconTexture(struct TSoftObjectPtr<UPaperSprite> IconTexture); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.AsyncLoadIconTexture(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ResetSelectEquip(); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.ResetSelectEquip(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void MouseLeave(); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.MouseLeave(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-Inventory_WeaponAttachmentSlot(int32_t EntryPoint); // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.ExecuteUbergraph_UW-Inventory_WeaponAttachmentSlot(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
@@ -59,11 +59,11 @@ inline void UUW-Inventory_WeaponAttachmentSlot_C::SetHoverWidgetRef() {
 }
 
 // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.SetWeaponSlot
-inline void UUW-Inventory_WeaponAttachmentSlot_C::SetWeaponSlot(struct Unknown WeaponSlot) {
+inline void UUW-Inventory_WeaponAttachmentSlot_C::SetWeaponSlot(struct UUW-Inventory_WeaponSlot_C WeaponSlot) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.SetWeaponSlot");
 
 	struct SetWeaponSlot_Params {
-		struct Unknown WeaponSlot;
+		struct UUW-Inventory_WeaponSlot_C WeaponSlot;
 	}; SetWeaponSlot_Params Params;
 
 	Params.WeaponSlot = WeaponSlot;
@@ -74,13 +74,13 @@ inline void UUW-Inventory_WeaponAttachmentSlot_C::SetWeaponSlot(struct Unknown W
 }
 
 // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.OnDragDetected
-inline void UUW-Inventory_WeaponAttachmentSlot_C::OnDragDetected(struct Unknown MyGeometry, struct Unknown& PointerEvent, struct Unknown& Operation) {
+inline void UUW-Inventory_WeaponAttachmentSlot_C::OnDragDetected(struct FGeometry MyGeometry, struct FPointerEvent& PointerEvent, struct UDragDropOperation& Operation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.OnDragDetected");
 
 	struct OnDragDetected_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& PointerEvent;
-		struct Unknown& Operation;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& PointerEvent;
+		struct UDragDropOperation& Operation;
 	}; OnDragDetected_Params Params;
 
 	Params.MyGeometry = MyGeometry;
@@ -171,12 +171,12 @@ inline void UUW-Inventory_WeaponAttachmentSlot_C::Drop() {
 }
 
 // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.Init
-inline void UUW-Inventory_WeaponAttachmentSlot_C::Init(enum class Unknow AttachmentType, enum class Unknow WeaponAttachmentUseType) {
+inline void UUW-Inventory_WeaponAttachmentSlot_C::Init(enum class EWeaponAttachmentType AttachmentType, enum class EWeaponAttachmentUseType WeaponAttachmentUseType) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.Init");
 
 	struct Init_Params {
-		enum class Unknow AttachmentType;
-		enum class Unknow WeaponAttachmentUseType;
+		enum class EWeaponAttachmentType AttachmentType;
+		enum class EWeaponAttachmentUseType WeaponAttachmentUseType;
 	}; Init_Params Params;
 
 	Params.AttachmentType = AttachmentType;
@@ -188,14 +188,14 @@ inline void UUW-Inventory_WeaponAttachmentSlot_C::Init(enum class Unknow Attachm
 }
 
 // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.SetInfo
-inline void UUW-Inventory_WeaponAttachmentSlot_C::SetInfo(int32_t SlotIndex, struct Unknown InventoryWidget, struct Unknown WeaponSlotWidget, struct Unknown InventoryItemInfo) {
+inline void UUW-Inventory_WeaponAttachmentSlot_C::SetInfo(int32_t SlotIndex, struct UUW-InventoryWidget_C InventoryWidget, struct UUW-Inventory_WeaponSlot_C WeaponSlotWidget, struct FInventoryItemInfo InventoryItemInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.SetInfo");
 
 	struct SetInfo_Params {
 		int32_t SlotIndex;
-		struct Unknown InventoryWidget;
-		struct Unknown WeaponSlotWidget;
-		struct Unknown InventoryItemInfo;
+		struct UUW-InventoryWidget_C InventoryWidget;
+		struct UUW-Inventory_WeaponSlot_C WeaponSlotWidget;
+		struct FInventoryItemInfo InventoryItemInfo;
 	}; SetInfo_Params Params;
 
 	Params.SlotIndex = SlotIndex;
@@ -209,11 +209,11 @@ inline void UUW-Inventory_WeaponAttachmentSlot_C::SetInfo(int32_t SlotIndex, str
 }
 
 // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.OnLoaded_024BD4794308D2A802E72686E4471A98
-inline void UUW-Inventory_WeaponAttachmentSlot_C::OnLoaded_024BD4794308D2A802E72686E4471A98(struct Unknown Loaded) {
+inline void UUW-Inventory_WeaponAttachmentSlot_C::OnLoaded_024BD4794308D2A802E72686E4471A98(struct Object Loaded) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.OnLoaded_024BD4794308D2A802E72686E4471A98");
 
 	struct OnLoaded_024BD4794308D2A802E72686E4471A98_Params {
-		struct Unknown Loaded;
+		struct Object Loaded;
 	}; OnLoaded_024BD4794308D2A802E72686E4471A98_Params Params;
 
 	Params.Loaded = Loaded;
@@ -224,12 +224,12 @@ inline void UUW-Inventory_WeaponAttachmentSlot_C::OnLoaded_024BD4794308D2A802E72
 }
 
 // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.OnMouseEnter
-inline void UUW-Inventory_WeaponAttachmentSlot_C::OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline void UUW-Inventory_WeaponAttachmentSlot_C::OnMouseEnter(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.OnMouseEnter");
 
 	struct OnMouseEnter_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
 	}; OnMouseEnter_Params Params;
 
 	Params.MyGeometry = MyGeometry;
@@ -243,11 +243,11 @@ inline void UUW-Inventory_WeaponAttachmentSlot_C::OnMouseEnter(struct Unknown My
 }
 
 // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.OnMouseLeave
-inline void UUW-Inventory_WeaponAttachmentSlot_C::OnMouseLeave(struct Unknown& MouseEvent) {
+inline void UUW-Inventory_WeaponAttachmentSlot_C::OnMouseLeave(struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.OnMouseLeave");
 
 	struct OnMouseLeave_Params {
-		struct Unknown& MouseEvent;
+		struct FPointerEvent& MouseEvent;
 	}; OnMouseLeave_Params Params;
 
 
@@ -344,11 +344,11 @@ inline void UUW-Inventory_WeaponAttachmentSlot_C::SelectEquip() {
 }
 
 // Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.AsyncLoadIconTexture
-inline void UUW-Inventory_WeaponAttachmentSlot_C::AsyncLoadIconTexture(struct Unknown IconTexture) {
+inline void UUW-Inventory_WeaponAttachmentSlot_C::AsyncLoadIconTexture(struct TSoftObjectPtr<UPaperSprite> IconTexture) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_WeaponAttachmentSlot.UW-Inventory_WeaponAttachmentSlot_C.AsyncLoadIconTexture");
 
 	struct AsyncLoadIconTexture_Params {
-		struct Unknown IconTexture;
+		struct TSoftObjectPtr<UPaperSprite> IconTexture;
 	}; AsyncLoadIconTexture_Params Params;
 
 	Params.IconTexture = IconTexture;

@@ -3,69 +3,69 @@ class UUW-Inventory_ProximitySlot_C : public UUW-Inventory_SlotBase_C {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x1358 (8)
-	struct Unknown P_Upgrade_Arrow; // 0x1360 (8)
-	struct Unknown C_SlotHover_ItemState_Hide; // 0x1368 (8)
-	struct Unknown C_SlotHover_ItemState_Show; // 0x1370 (8)
-	struct Unknown Hover_Gold; // 0x1378 (8)
-	struct Unknown P_SlotHover; // 0x1380 (8)
-	struct Unknown BGImage; // 0x1388 (8)
-	struct Unknown BGImage_2; // 0x1390 (8)
-	struct Unknown CanvasPanel_ITemState; // 0x1398 (8)
-	struct Unknown CanvasPanel_Unnecessary; // 0x13A0 (8)
-	struct Unknown Count; // 0x13A8 (8)
-	struct Unknown Crate_Default; // 0x13B0 (8)
-	struct Unknown Crate_Hover; // 0x13B8 (8)
-	struct Unknown DurabilityBar; // 0x13C0 (8)
-	struct Unknown fill; // 0x13C8 (8)
-	struct Unknown HorizontalBox_Rarity; // 0x13D0 (8)
-	struct Unknown HoverImage; // 0x13D8 (8)
-	struct Unknown HoverImage_Gold; // 0x13E0 (8)
-	struct Unknown HoverImage_Round; // 0x13E8 (8)
-	struct Unknown Image_1; // 0x13F0 (8)
-	struct Unknown Image_2; // 0x13F8 (8)
-	struct Unknown Image_531; // 0x1400 (8)
-	struct Unknown Image_539; // 0x1408 (8)
-	struct Unknown Image_540; // 0x1410 (8)
-	struct Unknown Image_541; // 0x1418 (8)
-	struct Unknown Image_542; // 0x1420 (8)
-	struct Unknown Image_543; // 0x1428 (8)
-	struct Unknown Image_544; // 0x1430 (8)
-	struct Unknown Image_Bindable; // 0x1438 (8)
-	struct Unknown Image_Supply; // 0x1440 (8)
-	struct Unknown ItemImage; // 0x1448 (8)
-	struct Unknown ItemNameName; // 0x1450 (8)
-	struct Unknown ItemState_Text; // 0x1458 (8)
-	struct Unknown KeepedItem_List; // 0x1460 (8)
-	struct Unknown KeepedItem_ListHover; // 0x1468 (8)
-	struct Unknown LvColor; // 0x1470 (8)
-	struct Unknown NeedMaterial; // 0x1478 (8)
-	struct Unknown SizeBox_1; // 0x1480 (8)
-	struct Unknown TextBlock_Range; // 0x1488 (8)
-	struct Unknown UpgradeItem; // 0x1490 (8)
-	struct Unknown UpgradeItem_Arrow01; // 0x1498 (8)
-	struct Unknown UpgradeItem_Arrow02; // 0x14A0 (8)
-	struct Unknown UpgradeItem_default; // 0x14A8 (8)
-	struct Unknown UpgradeItem_Hover; // 0x14B0 (8)
-	struct Unknown weapon__; // 0x14B8 (8)
-	struct Unknown WeaponColorBg; // 0x14C0 (8)
-	struct Unknown WeaponEquipItem_Default; // 0x14C8 (8)
-	struct Unknown WeaponEquipItem_Hover; // 0x14D0 (8)
-	struct Unknown WeaponItemImage; // 0x14D8 (8)
-	struct Unknown WeaponType; // 0x14E0 (8)
-	struct Unknown PickupRef; // 0x14E8 (8)
-	struct Unknown DroppedItemInfo; // 0x14F0 (152)
-	struct Unknown DropBoxRef; // 0x1588 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x1358 (8)
+	struct UWidgetAnimation P_Upgrade_Arrow; // 0x1360 (8)
+	struct UWidgetAnimation C_SlotHover_ItemState_Hide; // 0x1368 (8)
+	struct UWidgetAnimation C_SlotHover_ItemState_Show; // 0x1370 (8)
+	struct UWidgetAnimation Hover_Gold; // 0x1378 (8)
+	struct UWidgetAnimation P_SlotHover; // 0x1380 (8)
+	struct UImage BGImage; // 0x1388 (8)
+	struct UImage BGImage_2; // 0x1390 (8)
+	struct UCanvasPanel CanvasPanel_ITemState; // 0x1398 (8)
+	struct UCanvasPanel CanvasPanel_Unnecessary; // 0x13A0 (8)
+	struct UTextBlock Count; // 0x13A8 (8)
+	struct UImage Crate_Default; // 0x13B0 (8)
+	struct UImage Crate_Hover; // 0x13B8 (8)
+	struct UProgressBar DurabilityBar; // 0x13C0 (8)
+	struct UImage fill; // 0x13C8 (8)
+	struct UHorizontalBox HorizontalBox_Rarity; // 0x13D0 (8)
+	struct UImage HoverImage; // 0x13D8 (8)
+	struct UImage HoverImage_Gold; // 0x13E0 (8)
+	struct UImage HoverImage_Round; // 0x13E8 (8)
+	struct UImage Image_1; // 0x13F0 (8)
+	struct UImage Image_2; // 0x13F8 (8)
+	struct UImage Image_531; // 0x1400 (8)
+	struct UImage Image_539; // 0x1408 (8)
+	struct UImage Image_540; // 0x1410 (8)
+	struct UImage Image_541; // 0x1418 (8)
+	struct UImage Image_542; // 0x1420 (8)
+	struct UImage Image_543; // 0x1428 (8)
+	struct UImage Image_544; // 0x1430 (8)
+	struct UImage Image_Bindable; // 0x1438 (8)
+	struct UImage Image_Supply; // 0x1440 (8)
+	struct UImage ItemImage; // 0x1448 (8)
+	struct UTextBlock ItemNameName; // 0x1450 (8)
+	struct UTextBlock ItemState_Text; // 0x1458 (8)
+	struct UImage KeepedItem_List; // 0x1460 (8)
+	struct UImage KeepedItem_ListHover; // 0x1468 (8)
+	struct UImage LvColor; // 0x1470 (8)
+	struct UImage NeedMaterial; // 0x1478 (8)
+	struct USizeBox SizeBox_1; // 0x1480 (8)
+	struct UTextBlock TextBlock_Range; // 0x1488 (8)
+	struct UCanvasPanel UpgradeItem; // 0x1490 (8)
+	struct UImage UpgradeItem_Arrow01; // 0x1498 (8)
+	struct UImage UpgradeItem_Arrow02; // 0x14A0 (8)
+	struct UImage UpgradeItem_default; // 0x14A8 (8)
+	struct UImage UpgradeItem_Hover; // 0x14B0 (8)
+	struct UTextBlock weapon__; // 0x14B8 (8)
+	struct UImage WeaponColorBg; // 0x14C0 (8)
+	struct UImage WeaponEquipItem_Default; // 0x14C8 (8)
+	struct UImage WeaponEquipItem_Hover; // 0x14D0 (8)
+	struct UImage WeaponItemImage; // 0x14D8 (8)
+	struct UTextBlock WeaponType; // 0x14E0 (8)
+	struct ABravoHotelPickup PickupRef; // 0x14E8 (8)
+	struct FInventoryItemInfo DroppedItemInfo; // 0x14F0 (152)
+	struct ABravoHotelDropBoxActor DropBoxRef; // 0x1588 (8)
 	char bGold : 0; // 0x1590 (1)
-	struct Unknown SelectedHoverImage; // 0x1598 (8)
-	struct Unknown WeaponData; // 0x15A0 (2856)
-	struct Unknown MedicalBGColor; // 0x20C8 (16)
+	struct UImage SelectedHoverImage; // 0x1598 (8)
+	struct FBravoHotelWeaponInfo WeaponData; // 0x15A0 (2856)
+	struct FLinearColor MedicalBGColor; // 0x20C8 (16)
 	int32_t CurCount; // 0x20D8 (4)
 	struct FMulticastInlineDelegate SetSlotInfo; // 0x20E0 (16)
-	struct Unknown TargetActor; // 0x20F0 (8)
-	struct Unknown StealableCharacter; // 0x20F8 (8)
-	struct TArray<Unknown> ShowRarityStar; // 0x2100 (16)
-	struct TArray<Unknown> ShowIconBG; // 0x2110 (16)
+	struct UActor TargetActor; // 0x20F0 (8)
+	struct ABravoHotelCharacter StealableCharacter; // 0x20F8 (8)
+	struct TArray<struct FName> ShowRarityStar; // 0x2100 (16)
+	struct TArray<struct FName> ShowIconBG; // 0x2110 (16)
 
 	void CheckHoverMaterial(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.CheckHoverMaterial(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void IsRoundItemType(char& bRoundItem); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.IsRoundItemType(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
@@ -74,7 +74,7 @@ public:
 	void SetItemInfoByInventoryComponent(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetItemInfoByInventoryComponent(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetBindInfo(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetBindInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetRarity(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetRarity(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetItemRarityColor(enum class Unknow CurrentSlot, struct Unknown ImageWidget); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetItemRarityColor(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetItemRarityColor(enum class EItemRarity CurrentSlot, struct UImage ImageWidget); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetItemRarityColor(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetRatingArrowVisibility(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetRatingArrowVisibility(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetChestItem(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetChestItem(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetEquippableAttachment(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetEquippableAttachment(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -83,32 +83,32 @@ public:
 	void WeaponEquipState(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.WeaponEquipState(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetItemName(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetItemName(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetItemCount(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetItemCount(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetWeaponImage_Internal(struct Unknown IconTexture); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetWeaponImage_Internal(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown SetItemImage_Internal(struct Unknown IconTexture); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetItemImage_Internal(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetWeaponImage_Internal(struct UPaperSprite IconTexture); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetWeaponImage_Internal(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FSlateBrush SetItemImage_Internal(struct UPaperSprite IconTexture); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetItemImage_Internal(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void IsDraging(char& bResult); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.IsDraging(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	char OnDrop(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnDrop(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnDragDetected(struct Unknown MyGeometry, struct Unknown& PointerEvent, struct Unknown& Operation); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnDragDetected(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetWeaponInfoByInventoryItemInfo(char& bResult, struct Unknown& WeaponInfo); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.GetWeaponInfoByInventoryItemInfo(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	char OnDrop(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnDrop(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnDragDetected(struct FGeometry MyGeometry, struct FPointerEvent& PointerEvent, struct UDragDropOperation& Operation); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnDragDetected(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetWeaponInfoByInventoryItemInfo(char& bResult, struct FBravoHotelWeaponInfo& WeaponInfo); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.GetWeaponInfoByInventoryItemInfo(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnRButtonClick(char& bResult); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnRButtonClick(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetCharacterRef(char& Result, struct Unknown& CharacterRef); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.GetCharacterRef(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetCharacterRef(char& Result, struct ABravoHotelCharacter& CharacterRef); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.GetCharacterRef(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetWeaponItem(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetWeaponItem(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Set_BGImage_Brush_1(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.Set_BGImage_Brush_1(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void RequestPickupItem(char RButtonClick, char& bResult); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.RequestPickupItem(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown SetItemImage(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetItemImage(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FSlateBrush SetItemImage(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetItemImage(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	struct FText GetItemName(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.GetItemName(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void OnLoaded_84877B5B4C424648BFE1AEBDF8BB89BB(struct Unknown Loaded); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnLoaded_84877B5B4C424648BFE1AEBDF8BB89BB(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_84877B5B4C424648BFE1AEBDF8BB89BB(struct Object Loaded); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnLoaded_84877B5B4C424648BFE1AEBDF8BB89BB(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnMouseLeave(struct Unknown& MouseEvent); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AsyncLoadIconTexture(struct Unknown IconTexture); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.AsyncLoadIconTexture(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Slotinfo(struct Unknown TargetActor, struct Unknown ItemInfo); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.Slotinfo(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnMouseEnter(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnMouseLeave(struct FPointerEvent& MouseEvent); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AsyncLoadIconTexture(struct TSoftObjectPtr<UPaperSprite> IconTexture); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.AsyncLoadIconTexture(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Slotinfo(struct UActor TargetActor, struct FInventoryItemInfo ItemInfo); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.Slotinfo(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnChangeWearableItem(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnChangeWearableItem(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnChangeWeapons(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnChangeWeapons(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnChangeItemInfoDelegate_Event_1(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnChangeItemInfoDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnMouseCaptureLost(); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnMouseCaptureLost(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-Inventory_ProximitySlot(int32_t EntryPoint); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.ExecuteUbergraph_UW-Inventory_ProximitySlot(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
-	void SetSlotInfo__DelegateSignature(struct Unknown TargetActor, struct Unknown ItemInfo); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetSlotInfo__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetSlotInfo__DelegateSignature(struct UActor TargetActor, struct FInventoryItemInfo ItemInfo); // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetSlotInfo__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.CheckHoverMaterial
@@ -213,12 +213,12 @@ inline void UUW-Inventory_ProximitySlot_C::SetRarity() {
 }
 
 // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetItemRarityColor
-inline void UUW-Inventory_ProximitySlot_C::SetItemRarityColor(enum class Unknow CurrentSlot, struct Unknown ImageWidget) {
+inline void UUW-Inventory_ProximitySlot_C::SetItemRarityColor(enum class EItemRarity CurrentSlot, struct UImage ImageWidget) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetItemRarityColor");
 
 	struct SetItemRarityColor_Params {
-		enum class Unknow CurrentSlot;
-		struct Unknown ImageWidget;
+		enum class EItemRarity CurrentSlot;
+		struct UImage ImageWidget;
 	}; SetItemRarityColor_Params Params;
 
 	Params.CurrentSlot = CurrentSlot;
@@ -342,11 +342,11 @@ inline void UUW-Inventory_ProximitySlot_C::SetItemCount() {
 }
 
 // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetWeaponImage_Internal
-inline void UUW-Inventory_ProximitySlot_C::SetWeaponImage_Internal(struct Unknown IconTexture) {
+inline void UUW-Inventory_ProximitySlot_C::SetWeaponImage_Internal(struct UPaperSprite IconTexture) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetWeaponImage_Internal");
 
 	struct SetWeaponImage_Internal_Params {
-		struct Unknown IconTexture;
+		struct UPaperSprite IconTexture;
 	}; SetWeaponImage_Internal_Params Params;
 
 	Params.IconTexture = IconTexture;
@@ -357,12 +357,12 @@ inline void UUW-Inventory_ProximitySlot_C::SetWeaponImage_Internal(struct Unknow
 }
 
 // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetItemImage_Internal
-inline struct Unknown UUW-Inventory_ProximitySlot_C::SetItemImage_Internal(struct Unknown IconTexture) {
+inline struct FSlateBrush UUW-Inventory_ProximitySlot_C::SetItemImage_Internal(struct UPaperSprite IconTexture) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetItemImage_Internal");
 
 	struct SetItemImage_Internal_Params {
-		struct Unknown IconTexture;
-		struct Unknown ReturnValue;
+		struct UPaperSprite IconTexture;
+		struct FSlateBrush ReturnValue;
 
 	}; SetItemImage_Internal_Params Params;
 
@@ -393,13 +393,13 @@ inline void UUW-Inventory_ProximitySlot_C::IsDraging(char& bResult) {
 }
 
 // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnDrop
-inline char UUW-Inventory_ProximitySlot_C::OnDrop(struct Unknown MyGeometry, struct Unknown PointerEvent, struct Unknown Operation) {
+inline char UUW-Inventory_ProximitySlot_C::OnDrop(struct FGeometry MyGeometry, struct FPointerEvent PointerEvent, struct UDragDropOperation Operation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnDrop");
 
 	struct OnDrop_Params {
-		struct Unknown MyGeometry;
-		struct Unknown PointerEvent;
-		struct Unknown Operation;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent PointerEvent;
+		struct UDragDropOperation Operation;
 		char ReturnValue;
 
 	}; OnDrop_Params Params;
@@ -416,13 +416,13 @@ inline char UUW-Inventory_ProximitySlot_C::OnDrop(struct Unknown MyGeometry, str
 }
 
 // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnDragDetected
-inline void UUW-Inventory_ProximitySlot_C::OnDragDetected(struct Unknown MyGeometry, struct Unknown& PointerEvent, struct Unknown& Operation) {
+inline void UUW-Inventory_ProximitySlot_C::OnDragDetected(struct FGeometry MyGeometry, struct FPointerEvent& PointerEvent, struct UDragDropOperation& Operation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnDragDetected");
 
 	struct OnDragDetected_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& PointerEvent;
-		struct Unknown& Operation;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& PointerEvent;
+		struct UDragDropOperation& Operation;
 	}; OnDragDetected_Params Params;
 
 	Params.MyGeometry = MyGeometry;
@@ -437,12 +437,12 @@ inline void UUW-Inventory_ProximitySlot_C::OnDragDetected(struct Unknown MyGeome
 }
 
 // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.GetWeaponInfoByInventoryItemInfo
-inline void UUW-Inventory_ProximitySlot_C::GetWeaponInfoByInventoryItemInfo(char& bResult, struct Unknown& WeaponInfo) {
+inline void UUW-Inventory_ProximitySlot_C::GetWeaponInfoByInventoryItemInfo(char& bResult, struct FBravoHotelWeaponInfo& WeaponInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.GetWeaponInfoByInventoryItemInfo");
 
 	struct GetWeaponInfoByInventoryItemInfo_Params {
 		char& bResult;
-		struct Unknown& WeaponInfo;
+		struct FBravoHotelWeaponInfo& WeaponInfo;
 	}; GetWeaponInfoByInventoryItemInfo_Params Params;
 
 
@@ -473,12 +473,12 @@ inline void UUW-Inventory_ProximitySlot_C::OnRButtonClick(char& bResult) {
 }
 
 // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.GetCharacterRef
-inline void UUW-Inventory_ProximitySlot_C::GetCharacterRef(char& Result, struct Unknown& CharacterRef) {
+inline void UUW-Inventory_ProximitySlot_C::GetCharacterRef(char& Result, struct ABravoHotelCharacter& CharacterRef) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.GetCharacterRef");
 
 	struct GetCharacterRef_Params {
 		char& Result;
-		struct Unknown& CharacterRef;
+		struct ABravoHotelCharacter& CharacterRef;
 	}; GetCharacterRef_Params Params;
 
 
@@ -539,12 +539,12 @@ inline void UUW-Inventory_ProximitySlot_C::RequestPickupItem(char RButtonClick, 
 }
 
 // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetItemImage
-inline struct Unknown UUW-Inventory_ProximitySlot_C::SetItemImage() {
+inline struct FSlateBrush UUW-Inventory_ProximitySlot_C::SetItemImage() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetItemImage");
 
 	struct SetItemImage_Params {
 		
-		struct Unknown ReturnValue;
+		struct FSlateBrush ReturnValue;
 
 	}; SetItemImage_Params Params;
 
@@ -575,11 +575,11 @@ inline struct FText UUW-Inventory_ProximitySlot_C::GetItemName() {
 }
 
 // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnLoaded_84877B5B4C424648BFE1AEBDF8BB89BB
-inline void UUW-Inventory_ProximitySlot_C::OnLoaded_84877B5B4C424648BFE1AEBDF8BB89BB(struct Unknown Loaded) {
+inline void UUW-Inventory_ProximitySlot_C::OnLoaded_84877B5B4C424648BFE1AEBDF8BB89BB(struct Object Loaded) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnLoaded_84877B5B4C424648BFE1AEBDF8BB89BB");
 
 	struct OnLoaded_84877B5B4C424648BFE1AEBDF8BB89BB_Params {
-		struct Unknown Loaded;
+		struct Object Loaded;
 	}; OnLoaded_84877B5B4C424648BFE1AEBDF8BB89BB_Params Params;
 
 	Params.Loaded = Loaded;
@@ -604,12 +604,12 @@ inline void UUW-Inventory_ProximitySlot_C::Construct() {
 }
 
 // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnMouseEnter
-inline void UUW-Inventory_ProximitySlot_C::OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline void UUW-Inventory_ProximitySlot_C::OnMouseEnter(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnMouseEnter");
 
 	struct OnMouseEnter_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
 	}; OnMouseEnter_Params Params;
 
 	Params.MyGeometry = MyGeometry;
@@ -623,11 +623,11 @@ inline void UUW-Inventory_ProximitySlot_C::OnMouseEnter(struct Unknown MyGeometr
 }
 
 // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnMouseLeave
-inline void UUW-Inventory_ProximitySlot_C::OnMouseLeave(struct Unknown& MouseEvent) {
+inline void UUW-Inventory_ProximitySlot_C::OnMouseLeave(struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.OnMouseLeave");
 
 	struct OnMouseLeave_Params {
-		struct Unknown& MouseEvent;
+		struct FPointerEvent& MouseEvent;
 	}; OnMouseLeave_Params Params;
 
 
@@ -640,11 +640,11 @@ inline void UUW-Inventory_ProximitySlot_C::OnMouseLeave(struct Unknown& MouseEve
 }
 
 // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.AsyncLoadIconTexture
-inline void UUW-Inventory_ProximitySlot_C::AsyncLoadIconTexture(struct Unknown IconTexture) {
+inline void UUW-Inventory_ProximitySlot_C::AsyncLoadIconTexture(struct TSoftObjectPtr<UPaperSprite> IconTexture) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.AsyncLoadIconTexture");
 
 	struct AsyncLoadIconTexture_Params {
-		struct Unknown IconTexture;
+		struct TSoftObjectPtr<UPaperSprite> IconTexture;
 	}; AsyncLoadIconTexture_Params Params;
 
 	Params.IconTexture = IconTexture;
@@ -655,11 +655,11 @@ inline void UUW-Inventory_ProximitySlot_C::AsyncLoadIconTexture(struct Unknown I
 }
 
 // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.Tick
-inline void UUW-Inventory_ProximitySlot_C::Tick(struct Unknown MyGeometry, float InDeltaTime) {
+inline void UUW-Inventory_ProximitySlot_C::Tick(struct FGeometry MyGeometry, float InDeltaTime) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.Tick");
 
 	struct Tick_Params {
-		struct Unknown MyGeometry;
+		struct FGeometry MyGeometry;
 		float InDeltaTime;
 	}; Tick_Params Params;
 
@@ -672,12 +672,12 @@ inline void UUW-Inventory_ProximitySlot_C::Tick(struct Unknown MyGeometry, float
 }
 
 // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.Slotinfo
-inline void UUW-Inventory_ProximitySlot_C::Slotinfo(struct Unknown TargetActor, struct Unknown ItemInfo) {
+inline void UUW-Inventory_ProximitySlot_C::Slotinfo(struct UActor TargetActor, struct FInventoryItemInfo ItemInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.Slotinfo");
 
 	struct Slotinfo_Params {
-		struct Unknown TargetActor;
-		struct Unknown ItemInfo;
+		struct UActor TargetActor;
+		struct FInventoryItemInfo ItemInfo;
 	}; Slotinfo_Params Params;
 
 	Params.TargetActor = TargetActor;
@@ -760,12 +760,12 @@ inline void UUW-Inventory_ProximitySlot_C::ExecuteUbergraph_UW-Inventory_Proximi
 }
 
 // Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetSlotInfo__DelegateSignature
-inline void UUW-Inventory_ProximitySlot_C::SetSlotInfo__DelegateSignature(struct Unknown TargetActor, struct Unknown ItemInfo) {
+inline void UUW-Inventory_ProximitySlot_C::SetSlotInfo__DelegateSignature(struct UActor TargetActor, struct FInventoryItemInfo ItemInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_ProximitySlot.UW-Inventory_ProximitySlot_C.SetSlotInfo__DelegateSignature");
 
 	struct SetSlotInfo__DelegateSignature_Params {
-		struct Unknown TargetActor;
-		struct Unknown ItemInfo;
+		struct UActor TargetActor;
+		struct FInventoryItemInfo ItemInfo;
 	}; SetSlotInfo__DelegateSignature_Params Params;
 
 	Params.TargetActor = TargetActor;

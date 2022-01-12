@@ -3,7 +3,7 @@ class UNetAnalyticsAggregatorConfig : public Object {
 
 public:
 
-	struct TArray<Unknown> NetAnalyticsData; // 0x28 (16)
+	struct TArray<struct FNetAnalyticsDataConfig> NetAnalyticsData; // 0x28 (16)
 };
 
 // ScriptStruct NetCore.NetAnalyticsDataConfig

@@ -3,42 +3,42 @@ class UBP-LoadingScreenWidget_C : public UBravoHotelLoadingWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x2A0 (8)
-	struct Unknown HorizontalBox_1; // 0x2A8 (8)
-	struct Unknown Image_bg; // 0x2B0 (8)
-	struct Unknown RichTextBlock; // 0x2B8 (8)
-	struct Unknown RichTextBlock_Title; // 0x2C0 (8)
-	struct Unknown Throbber_1; // 0x2C8 (8)
-	struct Unknown VerticalBox_2; // 0x2D0 (8)
-	struct TArray<Unknown> Textures; // 0x2D8 (16)
-	struct Unknown Game Settings; // 0x2E8 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x2A0 (8)
+	struct UHorizontalBox HorizontalBox_1; // 0x2A8 (8)
+	struct UImage Image_bg; // 0x2B0 (8)
+	struct URichTextBlock RichTextBlock; // 0x2B8 (8)
+	struct URichTextBlock RichTextBlock_Title; // 0x2C0 (8)
+	struct UThrobber Throbber_1; // 0x2C8 (8)
+	struct UVerticalBox VerticalBox_2; // 0x2D0 (8)
+	struct TArray<struct UTexture2D> Textures; // 0x2D8 (16)
+	struct UBP_GameSettings_C Game Settings; // 0x2E8 (8)
 	struct FString TempString; // 0x2F0 (16)
 	char Key : 0; // 0x300 (1)
 	int32_t RandomTemp; // 0x304 (4)
 	int32_t ImageIndex; // 0x308 (4)
 	int32_t TitleIndex; // 0x30C (4)
 
-	void SetInfo(enum class Unknow Type, struct Unknown& OutData); // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.SetInfo(Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnLoaded_26F99F1744F423909EA588B7F2CD8F0A(struct Unknown Loaded); // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.OnLoaded_26F99F1744F423909EA588B7F2CD8F0A(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AsyncLoad(struct Unknown Texture); // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.AsyncLoad(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetInfo(enum class ELoadingScreenType Type, struct FSelectLoadingScreenData& OutData); // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.SetInfo(Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_26F99F1744F423909EA588B7F2CD8F0A(struct Object Loaded); // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.OnLoaded_26F99F1744F423909EA588B7F2CD8F0A(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AsyncLoad(struct TSoftObjectPtr<UTexture2D> Texture); // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.AsyncLoad(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ReceiveEndAfterLoading(); // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.ReceiveEndAfterLoading(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Update(struct Unknown& Data); // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.Update(Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Update(struct FSelectLoadingScreenData& Data); // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.Update(Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetDesc(struct FString Desc); // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.SetDesc(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetTitle(struct FText Title); // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.SetTitle(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetImage(struct Unknown Imgae); // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.SetImage(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Load(struct Unknown Texture); // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.Load(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetImage(struct UTexture2D Imgae); // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.SetImage(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Load(struct TSoftObjectPtr<UTexture2D> Texture); // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.Load(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Destruct(); // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ShowDesc(float DelayTime); // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.ShowDesc(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_BP-LoadingScreenWidget(int32_t EntryPoint); // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.ExecuteUbergraph_BP-LoadingScreenWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.SetInfo
-inline void UBP-LoadingScreenWidget_C::SetInfo(enum class Unknow Type, struct Unknown& OutData) {
+inline void UBP-LoadingScreenWidget_C::SetInfo(enum class ELoadingScreenType Type, struct FSelectLoadingScreenData& OutData) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.SetInfo");
 
 	struct SetInfo_Params {
-		enum class Unknow Type;
-		struct Unknown& OutData;
+		enum class ELoadingScreenType Type;
+		struct FSelectLoadingScreenData& OutData;
 	}; SetInfo_Params Params;
 
 	Params.Type = Type;
@@ -52,11 +52,11 @@ inline void UBP-LoadingScreenWidget_C::SetInfo(enum class Unknow Type, struct Un
 }
 
 // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.OnLoaded_26F99F1744F423909EA588B7F2CD8F0A
-inline void UBP-LoadingScreenWidget_C::OnLoaded_26F99F1744F423909EA588B7F2CD8F0A(struct Unknown Loaded) {
+inline void UBP-LoadingScreenWidget_C::OnLoaded_26F99F1744F423909EA588B7F2CD8F0A(struct Object Loaded) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.OnLoaded_26F99F1744F423909EA588B7F2CD8F0A");
 
 	struct OnLoaded_26F99F1744F423909EA588B7F2CD8F0A_Params {
-		struct Unknown Loaded;
+		struct Object Loaded;
 	}; OnLoaded_26F99F1744F423909EA588B7F2CD8F0A_Params Params;
 
 	Params.Loaded = Loaded;
@@ -67,11 +67,11 @@ inline void UBP-LoadingScreenWidget_C::OnLoaded_26F99F1744F423909EA588B7F2CD8F0A
 }
 
 // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.AsyncLoad
-inline void UBP-LoadingScreenWidget_C::AsyncLoad(struct Unknown Texture) {
+inline void UBP-LoadingScreenWidget_C::AsyncLoad(struct TSoftObjectPtr<UTexture2D> Texture) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.AsyncLoad");
 
 	struct AsyncLoad_Params {
-		struct Unknown Texture;
+		struct TSoftObjectPtr<UTexture2D> Texture;
 	}; AsyncLoad_Params Params;
 
 	Params.Texture = Texture;
@@ -96,11 +96,11 @@ inline void UBP-LoadingScreenWidget_C::ReceiveEndAfterLoading() {
 }
 
 // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.Update
-inline void UBP-LoadingScreenWidget_C::Update(struct Unknown& Data) {
+inline void UBP-LoadingScreenWidget_C::Update(struct FSelectLoadingScreenData& Data) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.Update");
 
 	struct Update_Params {
-		struct Unknown& Data;
+		struct FSelectLoadingScreenData& Data;
 	}; Update_Params Params;
 
 
@@ -143,11 +143,11 @@ inline void UBP-LoadingScreenWidget_C::SetTitle(struct FText Title) {
 }
 
 // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.SetImage
-inline void UBP-LoadingScreenWidget_C::SetImage(struct Unknown Imgae) {
+inline void UBP-LoadingScreenWidget_C::SetImage(struct UTexture2D Imgae) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.SetImage");
 
 	struct SetImage_Params {
-		struct Unknown Imgae;
+		struct UTexture2D Imgae;
 	}; SetImage_Params Params;
 
 	Params.Imgae = Imgae;
@@ -158,11 +158,11 @@ inline void UBP-LoadingScreenWidget_C::SetImage(struct Unknown Imgae) {
 }
 
 // Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.Load
-inline void UBP-LoadingScreenWidget_C::Load(struct Unknown Texture) {
+inline void UBP-LoadingScreenWidget_C::Load(struct TSoftObjectPtr<UTexture2D> Texture) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-LoadingScreenWidget.BP-LoadingScreenWidget_C.Load");
 
 	struct Load_Params {
-		struct Unknown Texture;
+		struct TSoftObjectPtr<UTexture2D> Texture;
 	}; Load_Params Params;
 
 	Params.Texture = Texture;

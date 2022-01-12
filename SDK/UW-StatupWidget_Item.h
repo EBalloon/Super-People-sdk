@@ -3,13 +3,13 @@ class UUW-StatupWidget_Item_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Anim_TextBg; // 0x250 (8)
-	struct Unknown HorizontalBox_Damage; // 0x258 (8)
-	struct Unknown Image_145; // 0x260 (8)
-	struct Unknown Image_155; // 0x268 (8)
-	struct Unknown T_StatName; // 0x270 (8)
-	struct Unknown T_Value; // 0x278 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UWidgetAnimation Anim_TextBg; // 0x250 (8)
+	struct UHorizontalBox HorizontalBox_Damage; // 0x258 (8)
+	struct UImage Image_145; // 0x260 (8)
+	struct UImage Image_155; // 0x268 (8)
+	struct UTextBlock T_StatName; // 0x270 (8)
+	struct UTextBlock T_Value; // 0x278 (8)
 	struct FText Text_StatName; // 0x280 (24)
 
 	void SetStatValue(int32_t Type, float Value); // Function UW-StatupWidget_Item.UW-StatupWidget_Item_C.SetStatValue(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>

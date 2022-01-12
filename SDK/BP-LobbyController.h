@@ -3,33 +3,33 @@ class ABP-LobbyController_C : public ABravoHotelLobbyPlayerController {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x730 (8)
-	struct Unknown BP-HUDInteractionComponentBase; // 0x738 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x730 (8)
+	struct UBP-HUDInteractionComponentBase_C BP-HUDInteractionComponentBase; // 0x738 (8)
 	struct FMulticastInlineDelegate EventDispatcher_PlayLobbySound; // 0x740 (16)
 	struct FMulticastInlineDelegate EventDispatcher_StopLobbySound; // 0x750 (16)
-	struct Unknown MediaSoundComponent; // 0x760 (8)
-	struct Unknown OperationMessageWidget; // 0x768 (8)
-	enum class Unknow CurrentSceneType; // 0x770 (1)
-	struct Unknown LobbyWidgetRef; // 0x778 (8)
+	struct UMediaSoundComponent MediaSoundComponent; // 0x760 (8)
+	struct UUserWidget OperationMessageWidget; // 0x768 (8)
+	enum class ESceneType CurrentSceneType; // 0x770 (1)
+	struct UBP-LobbyWidget_Web_C LobbyWidgetRef; // 0x778 (8)
 
 	void CanInput(char& bCheck); // Function BP-LobbyController.BP-LobbyController_C.CanInput(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void CheckCohLoad(char& bCheck); // Function BP-LobbyController.BP-LobbyController_C.CheckCohLoad(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void CheckWantPopupEvent(char& bCheck); // Function BP-LobbyController.BP-LobbyController_C.CheckWantPopupEvent(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	struct Unknown GetHUDInteractionComponent(); // Function BP-LobbyController.BP-LobbyController_C.GetHUDInteractionComponent(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <Game_BE.exe+0x2B80160>
+	struct UHUDInteractionComponent GetHUDInteractionComponent(); // Function BP-LobbyController.BP-LobbyController_C.GetHUDInteractionComponent(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure|Const) // <Game_BE.exe+0x2B80160>
 	void UpdateMouseWheel(float Delta); // Function BP-LobbyController.BP-LobbyController_C.UpdateMouseWheel(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void UpdateMouseY(float Delta); // Function BP-LobbyController.BP-LobbyController_C.UpdateMouseY(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void UpdateMouseX(float Delta); // Function BP-LobbyController.BP-LobbyController_C.UpdateMouseX(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CreateDefaultSkin(); // Function BP-LobbyController.BP-LobbyController_C.CreateDefaultSkin(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetLobbyMainWidget(struct Unknown& Widget); // Function BP-LobbyController.BP-LobbyController_C.GetLobbyMainWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void InpActEvt_CloseUI_K2Node_InputActionEvent_2(struct Unknown Key); // Function BP-LobbyController.BP-LobbyController_C.InpActEvt_CloseUI_K2Node_InputActionEvent_2(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InpActEvt_LobbyMoveTab_K2Node_InputActionEvent_1(struct Unknown Key); // Function BP-LobbyController.BP-LobbyController_C.InpActEvt_LobbyMoveTab_K2Node_InputActionEvent_1(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetLobbyMainWidget(struct UBP-LobbyWidget_Web_C& Widget); // Function BP-LobbyController.BP-LobbyController_C.GetLobbyMainWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void InpActEvt_CloseUI_K2Node_InputActionEvent_2(struct FKey Key); // Function BP-LobbyController.BP-LobbyController_C.InpActEvt_CloseUI_K2Node_InputActionEvent_2(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void InpActEvt_LobbyMoveTab_K2Node_InputActionEvent_1(struct FKey Key); // Function BP-LobbyController.BP-LobbyController_C.InpActEvt_LobbyMoveTab_K2Node_InputActionEvent_1(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void InpAxisEvt_Turn_K2Node_InputAxisEvent_1(float AxisValue); // Function BP-LobbyController.BP-LobbyController_C.InpAxisEvt_Turn_K2Node_InputAxisEvent_1(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void InpAxisEvt_LookUp_K2Node_InputAxisEvent_2(float AxisValue); // Function BP-LobbyController.BP-LobbyController_C.InpAxisEvt_LookUp_K2Node_InputAxisEvent_2(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void InpAxisEvt_ZoomAxis_K2Node_InputAxisEvent_5(float AxisValue); // Function BP-LobbyController.BP-LobbyController_C.InpAxisEvt_ZoomAxis_K2Node_InputAxisEvent_5(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void PlayTutorial(); // Function BP-LobbyController.BP-LobbyController_C.PlayTutorial(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ReceiveBeginPlay(); // Function BP-LobbyController.BP-LobbyController_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void NotifyOperationMessage(struct FText& NotifyText); // Function BP-LobbyController.BP-LobbyController_C.NotifyOperationMessage(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ChangedSceneDelegate_Event_1(enum class Unknow SceneType); // Function BP-LobbyController.BP-LobbyController_C.ChangedSceneDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ChangedSceneDelegate_Event_1(enum class ESceneType SceneType); // Function BP-LobbyController.BP-LobbyController_C.ChangedSceneDelegate_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnInputPopupEvent(); // Function BP-LobbyController.BP-LobbyController_C.OnInputPopupEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CreateOptionPopup(); // Function BP-LobbyController.BP-LobbyController_C.CreateOptionPopup(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_BP-LobbyController(int32_t EntryPoint); // Function BP-LobbyController.BP-LobbyController_C.ExecuteUbergraph_BP-LobbyController(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
@@ -89,12 +89,12 @@ inline void ABP-LobbyController_C::CheckWantPopupEvent(char& bCheck) {
 }
 
 // Function BP-LobbyController.BP-LobbyController_C.GetHUDInteractionComponent
-inline struct Unknown ABP-LobbyController_C::GetHUDInteractionComponent() {
+inline struct UHUDInteractionComponent ABP-LobbyController_C::GetHUDInteractionComponent() {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-LobbyController.BP-LobbyController_C.GetHUDInteractionComponent");
 
 	struct GetHUDInteractionComponent_Params {
 		
-		struct Unknown ReturnValue;
+		struct UHUDInteractionComponent ReturnValue;
 
 	}; GetHUDInteractionComponent_Params Params;
 
@@ -166,11 +166,11 @@ inline void ABP-LobbyController_C::CreateDefaultSkin() {
 }
 
 // Function BP-LobbyController.BP-LobbyController_C.GetLobbyMainWidget
-inline void ABP-LobbyController_C::GetLobbyMainWidget(struct Unknown& Widget) {
+inline void ABP-LobbyController_C::GetLobbyMainWidget(struct UBP-LobbyWidget_Web_C& Widget) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-LobbyController.BP-LobbyController_C.GetLobbyMainWidget");
 
 	struct GetLobbyMainWidget_Params {
-		struct Unknown& Widget;
+		struct UBP-LobbyWidget_Web_C& Widget;
 	}; GetLobbyMainWidget_Params Params;
 
 
@@ -183,11 +183,11 @@ inline void ABP-LobbyController_C::GetLobbyMainWidget(struct Unknown& Widget) {
 }
 
 // Function BP-LobbyController.BP-LobbyController_C.InpActEvt_CloseUI_K2Node_InputActionEvent_2
-inline void ABP-LobbyController_C::InpActEvt_CloseUI_K2Node_InputActionEvent_2(struct Unknown Key) {
+inline void ABP-LobbyController_C::InpActEvt_CloseUI_K2Node_InputActionEvent_2(struct FKey Key) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-LobbyController.BP-LobbyController_C.InpActEvt_CloseUI_K2Node_InputActionEvent_2");
 
 	struct InpActEvt_CloseUI_K2Node_InputActionEvent_2_Params {
-		struct Unknown Key;
+		struct FKey Key;
 	}; InpActEvt_CloseUI_K2Node_InputActionEvent_2_Params Params;
 
 	Params.Key = Key;
@@ -198,11 +198,11 @@ inline void ABP-LobbyController_C::InpActEvt_CloseUI_K2Node_InputActionEvent_2(s
 }
 
 // Function BP-LobbyController.BP-LobbyController_C.InpActEvt_LobbyMoveTab_K2Node_InputActionEvent_1
-inline void ABP-LobbyController_C::InpActEvt_LobbyMoveTab_K2Node_InputActionEvent_1(struct Unknown Key) {
+inline void ABP-LobbyController_C::InpActEvt_LobbyMoveTab_K2Node_InputActionEvent_1(struct FKey Key) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-LobbyController.BP-LobbyController_C.InpActEvt_LobbyMoveTab_K2Node_InputActionEvent_1");
 
 	struct InpActEvt_LobbyMoveTab_K2Node_InputActionEvent_1_Params {
-		struct Unknown Key;
+		struct FKey Key;
 	}; InpActEvt_LobbyMoveTab_K2Node_InputActionEvent_1_Params Params;
 
 	Params.Key = Key;
@@ -303,11 +303,11 @@ inline void ABP-LobbyController_C::NotifyOperationMessage(struct FText& NotifyTe
 }
 
 // Function BP-LobbyController.BP-LobbyController_C.ChangedSceneDelegate_Event_1
-inline void ABP-LobbyController_C::ChangedSceneDelegate_Event_1(enum class Unknow SceneType) {
+inline void ABP-LobbyController_C::ChangedSceneDelegate_Event_1(enum class ESceneType SceneType) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-LobbyController.BP-LobbyController_C.ChangedSceneDelegate_Event_1");
 
 	struct ChangedSceneDelegate_Event_1_Params {
-		enum class Unknow SceneType;
+		enum class ESceneType SceneType;
 	}; ChangedSceneDelegate_Event_1_Params Params;
 
 	Params.SceneType = SceneType;

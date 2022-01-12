@@ -329,7 +329,7 @@ class UModularSynthPresetBank : public Object {
 
 public:
 
-	struct TArray<Unknown> Presets; // 0x28 (16)
+	struct TArray<struct FModularSynthPresetBankEntry> Presets; // 0x28 (16)
 };
 
 // Class Synthesis.ModularSynthComponent
@@ -339,12 +339,12 @@ public:
 
 	int32_t VoiceCount; // 0x700 (4)
 
-	void SetSynthPreset(struct Unknown& SynthPreset); // Function Synthesis.ModularSynthComponent.SetSynthPreset(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18EDB10>
+	void SetSynthPreset(struct FModularSynthPreset& SynthPreset); // Function Synthesis.ModularSynthComponent.SetSynthPreset(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18EDB10>
 	void SetSustainGain(float SustainGain); // Function Synthesis.ModularSynthComponent.SetSustainGain(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EDA90>
 	void SetStereoDelayWetlevel(float DelayWetlevel); // Function Synthesis.ModularSynthComponent.SetStereoDelayWetlevel(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EDA10>
 	void SetStereoDelayTime(float DelayTimeMsec); // Function Synthesis.ModularSynthComponent.SetStereoDelayTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ED990>
 	void SetStereoDelayRatio(float DelayRatio); // Function Synthesis.ModularSynthComponent.SetStereoDelayRatio(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ED910>
-	void SetStereoDelayMode(enum class Unknow StereoDelayMode); // Function Synthesis.ModularSynthComponent.SetStereoDelayMode(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ED890>
+	void SetStereoDelayMode(enum class ESynthStereoDelayMode StereoDelayMode); // Function Synthesis.ModularSynthComponent.SetStereoDelayMode(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ED890>
 	void SetStereoDelayIsEnabled(char StereoDelayEnabled); // Function Synthesis.ModularSynthComponent.SetStereoDelayIsEnabled(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ED800>
 	void SetStereoDelayFeedback(float DelayFeedback); // Function Synthesis.ModularSynthComponent.SetStereoDelayFeedback(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ED780>
 	void SetSpread(float Spread); // Function Synthesis.ModularSynthComponent.SetSpread(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ED700>
@@ -352,7 +352,7 @@ public:
 	void SetPortamento(float Portamento); // Function Synthesis.ModularSynthComponent.SetPortamento(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ED600>
 	void SetPitchBend(float PitchBend); // Function Synthesis.ModularSynthComponent.SetPitchBend(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ED580>
 	void SetPan(float Pan); // Function Synthesis.ModularSynthComponent.SetPan(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ED500>
-	void SetOscType(int32_t OscIndex, enum class Unknow OscType); // Function Synthesis.ModularSynthComponent.SetOscType(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ED440>
+	void SetOscType(int32_t OscIndex, enum class ESynth1OscType OscType); // Function Synthesis.ModularSynthComponent.SetOscType(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ED440>
 	void SetOscSync(char bIsSynced); // Function Synthesis.ModularSynthComponent.SetOscSync(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ED3B0>
 	void SetOscSemitones(int32_t OscIndex, float Semitones); // Function Synthesis.ModularSynthComponent.SetOscSemitones(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ED2E0>
 	void SetOscPulsewidth(int32_t OscIndex, float Pulsewidth); // Function Synthesis.ModularSynthComponent.SetOscPulsewidth(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ED210>
@@ -363,31 +363,31 @@ public:
 	void SetOscCents(int32_t OscIndex, float Cents); // Function Synthesis.ModularSynthComponent.SetOscCents(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ECE00>
 	void SetModEnvSustainGain(float SustainGain); // Function Synthesis.ModularSynthComponent.SetModEnvSustainGain(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ECD80>
 	void SetModEnvReleaseTime(float Release); // Function Synthesis.ModularSynthComponent.SetModEnvReleaseTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ECD00>
-	void SetModEnvPatch(enum class Unknow InPatchType); // Function Synthesis.ModularSynthComponent.SetModEnvPatch(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ECC80>
+	void SetModEnvPatch(enum class ESynthModEnvPatch InPatchType); // Function Synthesis.ModularSynthComponent.SetModEnvPatch(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ECC80>
 	void SetModEnvInvert(char bInvert); // Function Synthesis.ModularSynthComponent.SetModEnvInvert(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ECBF0>
 	void SetModEnvDepth(float Depth); // Function Synthesis.ModularSynthComponent.SetModEnvDepth(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ECB70>
 	void SetModEnvDecayTime(float DecayTimeMsec); // Function Synthesis.ModularSynthComponent.SetModEnvDecayTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ECAF0>
-	void SetModEnvBiasPatch(enum class Unknow InPatchType); // Function Synthesis.ModularSynthComponent.SetModEnvBiasPatch(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ECA70>
+	void SetModEnvBiasPatch(enum class ESynthModEnvBiasPatch InPatchType); // Function Synthesis.ModularSynthComponent.SetModEnvBiasPatch(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18ECA70>
 	void SetModEnvBiasInvert(char bInvert); // Function Synthesis.ModularSynthComponent.SetModEnvBiasInvert(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EC9E0>
 	void SetModEnvAttackTime(float AttackTimeMsec); // Function Synthesis.ModularSynthComponent.SetModEnvAttackTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EC960>
-	void SetLFOType(int32_t LFOIndex, enum class Unknow LFOType); // Function Synthesis.ModularSynthComponent.SetLFOType(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EC8A0>
-	void SetLFOPatch(int32_t LFOIndex, enum class Unknow LFOPatchType); // Function Synthesis.ModularSynthComponent.SetLFOPatch(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EC7E0>
-	void SetLFOMode(int32_t LFOIndex, enum class Unknow LFOMode); // Function Synthesis.ModularSynthComponent.SetLFOMode(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EC720>
+	void SetLFOType(int32_t LFOIndex, enum class ESynthLFOType LFOType); // Function Synthesis.ModularSynthComponent.SetLFOType(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EC8A0>
+	void SetLFOPatch(int32_t LFOIndex, enum class ESynthLFOPatchType LFOPatchType); // Function Synthesis.ModularSynthComponent.SetLFOPatch(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EC7E0>
+	void SetLFOMode(int32_t LFOIndex, enum class ESynthLFOMode LFOMode); // Function Synthesis.ModularSynthComponent.SetLFOMode(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EC720>
 	void SetLFOGainMod(int32_t LFOIndex, float GainMod); // Function Synthesis.ModularSynthComponent.SetLFOGainMod(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EC650>
 	void SetLFOGain(int32_t LFOIndex, float Gain); // Function Synthesis.ModularSynthComponent.SetLFOGain(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EC580>
 	void SetLFOFrequencyMod(int32_t LFOIndex, float FrequencyModHz); // Function Synthesis.ModularSynthComponent.SetLFOFrequencyMod(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EC4B0>
 	void SetLFOFrequency(int32_t LFOIndex, float FrequencyHz); // Function Synthesis.ModularSynthComponent.SetLFOFrequency(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EC3E0>
 	void SetGainDb(float GainDb); // Function Synthesis.ModularSynthComponent.SetGainDb(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EC360>
-	void SetFilterType(enum class Unknow FilterType); // Function Synthesis.ModularSynthComponent.SetFilterType(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EC2E0>
+	void SetFilterType(enum class ESynthFilterType FilterType); // Function Synthesis.ModularSynthComponent.SetFilterType(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EC2E0>
 	void SetFilterQMod(float FilterQ); // Function Synthesis.ModularSynthComponent.SetFilterQMod(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EC260>
 	void SetFilterQ(float FilterQ); // Function Synthesis.ModularSynthComponent.SetFilterQ(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EC1E0>
 	void SetFilterFrequencyMod(float FilterFrequencyHz); // Function Synthesis.ModularSynthComponent.SetFilterFrequencyMod(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EC160>
 	void SetFilterFrequency(float FilterFrequencyHz); // Function Synthesis.ModularSynthComponent.SetFilterFrequency(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EC0E0>
-	void SetFilterAlgorithm(enum class Unknow FilterAlgorithm); // Function Synthesis.ModularSynthComponent.SetFilterAlgorithm(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EC060>
+	void SetFilterAlgorithm(enum class ESynthFilterAlgorithm FilterAlgorithm); // Function Synthesis.ModularSynthComponent.SetFilterAlgorithm(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EC060>
 	void SetEnableUnison(char EnableUnison); // Function Synthesis.ModularSynthComponent.SetEnableUnison(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EBFD0>
 	void SetEnableRetrigger(char RetriggerEnabled); // Function Synthesis.ModularSynthComponent.SetEnableRetrigger(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EBF40>
 	void SetEnablePolyphony(char bEnablePolyphony); // Function Synthesis.ModularSynthComponent.SetEnablePolyphony(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EBEB0>
-	char SetEnablePatch(struct Unknown PatchId, char bIsEnabled); // Function Synthesis.ModularSynthComponent.SetEnablePatch(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EBDE0>
+	char SetEnablePatch(struct FPatchId PatchId, char bIsEnabled); // Function Synthesis.ModularSynthComponent.SetEnablePatch(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EBDE0>
 	void SetEnableLegato(char LegatoEnabled); // Function Synthesis.ModularSynthComponent.SetEnableLegato(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EBD50>
 	void SetDecayTime(float DecayTimeMsec); // Function Synthesis.ModularSynthComponent.SetDecayTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EBCD0>
 	void SetChorusFrequency(float Frequency); // Function Synthesis.ModularSynthComponent.SetChorusFrequency(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EBC50>
@@ -397,7 +397,7 @@ public:
 	void SetAttackTime(float AttackTimeMsec); // Function Synthesis.ModularSynthComponent.SetAttackTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EBA40>
 	void NoteOn(float Note, int32_t Velocity, float Duration); // Function Synthesis.ModularSynthComponent.NoteOn(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EB930>
 	void NoteOff(float Note, char bAllNotesOff, char bKillAllNotes); // Function Synthesis.ModularSynthComponent.NoteOff(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18EB820>
-	struct Unknown CreatePatch(enum class Unknow PatchSource, struct TArray<Unknown>& PatchCables, char bEnableByDefault); // Function Synthesis.ModularSynthComponent.CreatePatch(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18EB6D0>
+	struct FPatchId CreatePatch(enum class ESynth1PatchSource PatchSource, struct TArray<struct FSynth1PatchCable>& PatchCables, char bEnableByDefault); // Function Synthesis.ModularSynthComponent.CreatePatch(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18EB6D0>
 };
 
 // Class Synthesis.SourceEffectBitCrusherPreset
@@ -405,9 +405,9 @@ class USourceEffectBitCrusherPreset : public USoundEffectSourcePreset {
 
 public:
 
-	struct Unknown Settings; // 0x70 (8)
+	struct FSourceEffectBitCrusherSettings Settings; // 0x70 (8)
 
-	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SourceEffectBitCrusherPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F56C0>
+	void SetSettings(struct FSourceEffectBitCrusherSettings& InSettings); // Function Synthesis.SourceEffectBitCrusherPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F56C0>
 };
 
 // Class Synthesis.SourceEffectChorusPreset
@@ -415,9 +415,9 @@ class USourceEffectChorusPreset : public USoundEffectSourcePreset {
 
 public:
 
-	struct Unknown Settings; // 0x80 (24)
+	struct FSourceEffectChorusSettings Settings; // 0x80 (24)
 
-	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SourceEffectChorusPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F5770>
+	void SetSettings(struct FSourceEffectChorusSettings& InSettings); // Function Synthesis.SourceEffectChorusPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F5770>
 };
 
 // Class Synthesis.SourceEffectDynamicsProcessorPreset
@@ -425,9 +425,9 @@ class USourceEffectDynamicsProcessorPreset : public USoundEffectSourcePreset {
 
 public:
 
-	struct Unknown Settings; // 0x90 (40)
+	struct FSourceEffectDynamicsProcessorSettings Settings; // 0x90 (40)
 
-	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SourceEffectDynamicsProcessorPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F5820>
+	void SetSettings(struct FSourceEffectDynamicsProcessorSettings& InSettings); // Function Synthesis.SourceEffectDynamicsProcessorPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F5820>
 };
 
 // Class Synthesis.EnvelopeFollowerListener
@@ -443,11 +443,11 @@ class USourceEffectEnvelopeFollowerPreset : public USoundEffectSourcePreset {
 
 public:
 
-	struct Unknown Settings; // 0x74 (12)
+	struct FSourceEffectEnvelopeFollowerSettings Settings; // 0x74 (12)
 
-	void UnregisterEnvelopeFollowerListener(struct Unknown EnvelopeFollowerListener); // Function Synthesis.SourceEffectEnvelopeFollowerPreset.UnregisterEnvelopeFollowerListener(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18F5FA0>
-	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SourceEffectEnvelopeFollowerPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F5980>
-	void RegisterEnvelopeFollowerListener(struct Unknown EnvelopeFollowerListener); // Function Synthesis.SourceEffectEnvelopeFollowerPreset.RegisterEnvelopeFollowerListener(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18F5640>
+	void UnregisterEnvelopeFollowerListener(struct UEnvelopeFollowerListener EnvelopeFollowerListener); // Function Synthesis.SourceEffectEnvelopeFollowerPreset.UnregisterEnvelopeFollowerListener(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18F5FA0>
+	void SetSettings(struct FSourceEffectEnvelopeFollowerSettings& InSettings); // Function Synthesis.SourceEffectEnvelopeFollowerPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F5980>
+	void RegisterEnvelopeFollowerListener(struct UEnvelopeFollowerListener EnvelopeFollowerListener); // Function Synthesis.SourceEffectEnvelopeFollowerPreset.RegisterEnvelopeFollowerListener(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18F5640>
 };
 
 // Class Synthesis.SourceEffectEQPreset
@@ -455,9 +455,9 @@ class USourceEffectEQPreset : public USoundEffectSourcePreset {
 
 public:
 
-	struct Unknown Settings; // 0x78 (16)
+	struct FSourceEffectEQSettings Settings; // 0x78 (16)
 
-	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SourceEffectEQPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F58D0>
+	void SetSettings(struct FSourceEffectEQSettings& InSettings); // Function Synthesis.SourceEffectEQPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F58D0>
 };
 
 // Class Synthesis.SourceEffectFilterPreset
@@ -465,9 +465,9 @@ class USourceEffectFilterPreset : public USoundEffectSourcePreset {
 
 public:
 
-	struct Unknown Settings; // 0x74 (12)
+	struct FSourceEffectFilterSettings Settings; // 0x74 (12)
 
-	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SourceEffectFilterPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F5A30>
+	void SetSettings(struct FSourceEffectFilterSettings& InSettings); // Function Synthesis.SourceEffectFilterPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F5A30>
 };
 
 // Class Synthesis.SourceEffectFoldbackDistortionPreset
@@ -475,9 +475,9 @@ class USourceEffectFoldbackDistortionPreset : public USoundEffectSourcePreset {
 
 public:
 
-	struct Unknown Settings; // 0x74 (12)
+	struct FSourceEffectFoldbackDistortionSettings Settings; // 0x74 (12)
 
-	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SourceEffectFoldbackDistortionPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F5AE0>
+	void SetSettings(struct FSourceEffectFoldbackDistortionSettings& InSettings); // Function Synthesis.SourceEffectFoldbackDistortionPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F5AE0>
 };
 
 // Class Synthesis.SourceEffectMidSideSpreaderPreset
@@ -485,9 +485,9 @@ class USourceEffectMidSideSpreaderPreset : public USoundEffectSourcePreset {
 
 public:
 
-	struct Unknown Settings; // 0x74 (12)
+	struct FSourceEffectMidSideSpreaderSettings Settings; // 0x74 (12)
 
-	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SourceEffectMidSideSpreaderPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F5B90>
+	void SetSettings(struct FSourceEffectMidSideSpreaderSettings& InSettings); // Function Synthesis.SourceEffectMidSideSpreaderPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F5B90>
 };
 
 // Class Synthesis.SourceEffectPannerPreset
@@ -495,9 +495,9 @@ class USourceEffectPannerPreset : public USoundEffectSourcePreset {
 
 public:
 
-	struct Unknown Settings; // 0x70 (8)
+	struct FSourceEffectPannerSettings Settings; // 0x70 (8)
 
-	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SourceEffectPannerPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F5C40>
+	void SetSettings(struct FSourceEffectPannerSettings& InSettings); // Function Synthesis.SourceEffectPannerPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F5C40>
 };
 
 // Class Synthesis.SourceEffectPhaserPreset
@@ -505,9 +505,9 @@ class USourceEffectPhaserPreset : public USoundEffectSourcePreset {
 
 public:
 
-	struct Unknown Settings; // 0x78 (16)
+	struct FSourceEffectPhaserSettings Settings; // 0x78 (16)
 
-	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SourceEffectPhaserPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F5CF0>
+	void SetSettings(struct FSourceEffectPhaserSettings& InSettings); // Function Synthesis.SourceEffectPhaserPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F5CF0>
 };
 
 // Class Synthesis.SourceEffectRingModulationPreset
@@ -515,9 +515,9 @@ class USourceEffectRingModulationPreset : public USoundEffectSourcePreset {
 
 public:
 
-	struct Unknown Settings; // 0x7C (20)
+	struct FSourceEffectRingModulationSettings Settings; // 0x7C (20)
 
-	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SourceEffectRingModulationPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F5DB0>
+	void SetSettings(struct FSourceEffectRingModulationSettings& InSettings); // Function Synthesis.SourceEffectRingModulationPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F5DB0>
 };
 
 // Class Synthesis.SourceEffectSimpleDelayPreset
@@ -525,9 +525,9 @@ class USourceEffectSimpleDelayPreset : public USoundEffectSourcePreset {
 
 public:
 
-	struct Unknown Settings; // 0x80 (24)
+	struct FSourceEffectSimpleDelaySettings Settings; // 0x80 (24)
 
-	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SourceEffectSimpleDelayPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F5E50>
+	void SetSettings(struct FSourceEffectSimpleDelaySettings& InSettings); // Function Synthesis.SourceEffectSimpleDelayPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F5E50>
 };
 
 // Class Synthesis.SourceEffectStereoDelayPreset
@@ -535,9 +535,9 @@ class USourceEffectStereoDelayPreset : public USoundEffectSourcePreset {
 
 public:
 
-	struct Unknown Settings; // 0x7C (20)
+	struct FSourceEffectStereoDelaySettings Settings; // 0x7C (20)
 
-	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SourceEffectStereoDelayPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F5F00>
+	void SetSettings(struct FSourceEffectStereoDelaySettings& InSettings); // Function Synthesis.SourceEffectStereoDelayPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F5F00>
 };
 
 // Class Synthesis.SourceEffectWaveShaperPreset
@@ -545,9 +545,9 @@ class USourceEffectWaveShaperPreset : public USoundEffectSourcePreset {
 
 public:
 
-	struct Unknown Settings; // 0x70 (8)
+	struct FSourceEffectWaveShaperSettings Settings; // 0x70 (8)
 
-	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SourceEffectWaveShaperPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F5C40>
+	void SetSettings(struct FSourceEffectWaveShaperSettings& InSettings); // Function Synthesis.SourceEffectWaveShaperPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F5C40>
 };
 
 // Class Synthesis.AudioImpulseResponse
@@ -555,11 +555,11 @@ class UAudioImpulseResponse : public Object {
 
 public:
 
-	struct TArray<Unknown> ImpulseResponse; // 0x28 (16)
+	struct TArray<float> ImpulseResponse; // 0x28 (16)
 	int32_t NumChannels; // 0x38 (4)
 	int32_t SampleRate; // 0x3C (4)
 	float NormalizationVolumeDb; // 0x40 (4)
-	struct TArray<Unknown> IRData; // 0x48 (16)
+	struct TArray<float> IRData; // 0x48 (16)
 };
 
 // Class Synthesis.SubmixEffectConvolutionReverbPreset
@@ -567,13 +567,13 @@ class USubmixEffectConvolutionReverbPreset : public USoundEffectSubmixPreset {
 
 public:
 
-	struct Unknown Settings; // 0x40 (32)
-	struct Unknown ImpulseResponse; // 0x60 (8)
-	enum class Unknow BlockSize; // 0x68 (1)
+	struct FSubmixEffectConvolutionReverbSettings Settings; // 0x40 (32)
+	struct UAudioImpulseResponse ImpulseResponse; // 0x60 (8)
+	enum class ESubmixEffectConvolutionReverbBlockSize BlockSize; // 0x68 (1)
 	char bEnableHardwareAcceleration : 0; // 0x69 (1)
 
-	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SubmixEffectConvolutionReverbPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18FB0D0>
-	void SetImpulseResponse(struct Unknown InImpulseResponse); // Function Synthesis.SubmixEffectConvolutionReverbPreset.SetImpulseResponse(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FABA0>
+	void SetSettings(struct FSubmixEffectConvolutionReverbSettings& InSettings); // Function Synthesis.SubmixEffectConvolutionReverbPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18FB0D0>
+	void SetImpulseResponse(struct UAudioImpulseResponse InImpulseResponse); // Function Synthesis.SubmixEffectConvolutionReverbPreset.SetImpulseResponse(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FABA0>
 };
 
 // Class Synthesis.SubmixEffectDelayPreset
@@ -581,10 +581,10 @@ class USubmixEffectDelayPreset : public USoundEffectSubmixPreset {
 
 public:
 
-	struct Unknown Settings; // 0x74 (12)
-	struct Unknown DynamicSettings; // 0x80 (12)
+	struct FSubmixEffectDelaySettings Settings; // 0x74 (12)
+	struct FSubmixEffectDelaySettings DynamicSettings; // 0x80 (12)
 
-	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SubmixEffectDelayPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18FB170>
+	void SetSettings(struct FSubmixEffectDelaySettings& InSettings); // Function Synthesis.SubmixEffectDelayPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18FB170>
 	void SetInterpolationTime(float Time); // Function Synthesis.SubmixEffectDelayPreset.SetInterpolationTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FACB0>
 	void SetDelay(float Length); // Function Synthesis.SubmixEffectDelayPreset.SetDelay(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FA3A0>
 	float GetMaxDelayInMilliseconds(); // Function Synthesis.SubmixEffectDelayPreset.GetMaxDelayInMilliseconds(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18F9E50>
@@ -595,15 +595,15 @@ class USubmixEffectFilterPreset : public USoundEffectSubmixPreset {
 
 public:
 
-	struct Unknown Settings; // 0x74 (12)
+	struct FSubmixEffectFilterSettings Settings; // 0x74 (12)
 
-	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SubmixEffectFilterPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18FB230>
-	void SetFilterType(enum class Unknow InType); // Function Synthesis.SubmixEffectFilterPreset.SetFilterType(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FA6A0>
+	void SetSettings(struct FSubmixEffectFilterSettings& InSettings); // Function Synthesis.SubmixEffectFilterPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18FB230>
+	void SetFilterType(enum class ESubmixFilterType InType); // Function Synthesis.SubmixEffectFilterPreset.SetFilterType(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FA6A0>
 	void SetFilterQMod(float InQ); // Function Synthesis.SubmixEffectFilterPreset.SetFilterQMod(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FA620>
 	void SetFilterQ(float InQ); // Function Synthesis.SubmixEffectFilterPreset.SetFilterQ(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FA5A0>
 	void SetFilterCutoffFrequencyMod(float InFrequency); // Function Synthesis.SubmixEffectFilterPreset.SetFilterCutoffFrequencyMod(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FA520>
 	void SetFilterCutoffFrequency(float InFrequency); // Function Synthesis.SubmixEffectFilterPreset.SetFilterCutoffFrequency(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FA4A0>
-	void SetFilterAlgorithm(enum class Unknow InAlgorithm); // Function Synthesis.SubmixEffectFilterPreset.SetFilterAlgorithm(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FA420>
+	void SetFilterAlgorithm(enum class ESubmixFilterAlgorithm InAlgorithm); // Function Synthesis.SubmixEffectFilterPreset.SetFilterAlgorithm(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FA420>
 };
 
 // Class Synthesis.SubmixEffectFlexiverbPreset
@@ -611,9 +611,9 @@ class USubmixEffectFlexiverbPreset : public USoundEffectSubmixPreset {
 
 public:
 
-	struct Unknown Settings; // 0x78 (16)
+	struct FSubmixEffectFlexiverbSettings Settings; // 0x78 (16)
 
-	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SubmixEffectFlexiverbPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18FB2E0>
+	void SetSettings(struct FSubmixEffectFlexiverbSettings& InSettings); // Function Synthesis.SubmixEffectFlexiverbPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18FB2E0>
 };
 
 // Class Synthesis.SubmixEffectTapDelayPreset
@@ -621,14 +621,14 @@ class USubmixEffectTapDelayPreset : public USoundEffectSubmixPreset {
 
 public:
 
-	struct Unknown Settings; // 0x80 (24)
+	struct FSubmixEffectTapDelaySettings Settings; // 0x80 (24)
 
-	void SetTap(int32_t TapId, struct Unknown& TapInfo); // Function Synthesis.SubmixEffectTapDelayPreset.SetTap(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18FB660>
-	void SetSettings(struct Unknown& InSettings); // Function Synthesis.SubmixEffectTapDelayPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18FB3A0>
+	void SetTap(int32_t TapId, struct FTapDelayInfo& TapInfo); // Function Synthesis.SubmixEffectTapDelayPreset.SetTap(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18FB660>
+	void SetSettings(struct FSubmixEffectTapDelaySettings& InSettings); // Function Synthesis.SubmixEffectTapDelayPreset.SetSettings(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18FB3A0>
 	void SetInterpolationTime(float Time); // Function Synthesis.SubmixEffectTapDelayPreset.SetInterpolationTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FAD30>
 	void RemoveTap(int32_t TapId); // Function Synthesis.SubmixEffectTapDelayPreset.RemoveTap(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FA2A0>
-	void GetTapIds(struct TArray<Unknown>& TapIds); // Function Synthesis.SubmixEffectTapDelayPreset.GetTapIds(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F9FA0>
-	void GetTap(int32_t TapId, struct Unknown& TapInfo); // Function Synthesis.SubmixEffectTapDelayPreset.GetTap(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F9EC0>
+	void GetTapIds(struct TArray<int32_t>& TapIds); // Function Synthesis.SubmixEffectTapDelayPreset.GetTapIds(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F9FA0>
+	void GetTap(int32_t TapId, struct FTapDelayInfo& TapInfo); // Function Synthesis.SubmixEffectTapDelayPreset.GetTap(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F9EC0>
 	float GetMaxDelayInMilliseconds(); // Function Synthesis.SubmixEffectTapDelayPreset.GetMaxDelayInMilliseconds(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18F9E70>
 	void AddTap(int32_t& TapId); // Function Synthesis.SubmixEffectTapDelayPreset.AddTap(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x18F9D90>
 };
@@ -642,8 +642,8 @@ public:
 	float ValueY; // 0x10C (4)
 	struct FDelegate ValueXDelegate; // 0x110 (16)
 	struct FDelegate ValueYDelegate; // 0x120 (16)
-	struct Unknown WidgetStyle; // 0x130 (696)
-	struct Unknown SliderHandleColor; // 0x3E8 (16)
+	struct FSynth2DSliderStyle WidgetStyle; // 0x130 (696)
+	struct FLinearColor SliderHandleColor; // 0x3E8 (16)
 	char IndentHandle : 0; // 0x3F8 (1)
 	char Locked : 0; // 0x3F9 (1)
 	float StepSize; // 0x3FC (4)
@@ -655,12 +655,12 @@ public:
 	struct FMulticastInlineDelegate OnValueChangedX; // 0x448 (16)
 	struct FMulticastInlineDelegate OnValueChangedY; // 0x458 (16)
 
-	void SetValue(struct Unknown InValue); // Function Synthesis.Synth2DSlider.SetValue(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x18FB740>
+	void SetValue(struct FVector2D InValue); // Function Synthesis.Synth2DSlider.SetValue(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x18FB740>
 	void SetStepSize(float InValue); // Function Synthesis.Synth2DSlider.SetStepSize(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FB560>
-	void SetSliderHandleColor(struct Unknown InValue); // Function Synthesis.Synth2DSlider.SetSliderHandleColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x18FB460>
+	void SetSliderHandleColor(struct FLinearColor InValue); // Function Synthesis.Synth2DSlider.SetSliderHandleColor(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x18FB460>
 	void SetLocked(char InValue); // Function Synthesis.Synth2DSlider.SetLocked(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FADB0>
 	void SetIndentHandle(char InValue); // Function Synthesis.Synth2DSlider.SetIndentHandle(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FAC20>
-	struct Unknown GetValue(); // Function Synthesis.Synth2DSlider.GetValue(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x18FA050>
+	struct FVector2D GetValue(); // Function Synthesis.Synth2DSlider.GetValue(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x18FA050>
 };
 
 // Class Synthesis.GranularSynth
@@ -668,21 +668,21 @@ class UGranularSynth : public USynthComponent {
 
 public:
 
-	struct Unknown GranulatedSoundWave; // 0x700 (8)
+	struct USoundWave GranulatedSoundWave; // 0x700 (8)
 
 	void SetSustainGain(float SustainGain); // Function Synthesis.GranularSynth.SetSustainGain(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FB5E0>
-	void SetSoundWave(struct Unknown InSoundWave); // Function Synthesis.GranularSynth.SetSoundWave(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FB4E0>
+	void SetSoundWave(struct USoundWave InSoundWave); // Function Synthesis.GranularSynth.SetSoundWave(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FB4E0>
 	void SetScrubMode(char bScrubMode); // Function Synthesis.GranularSynth.SetScrubMode(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FB040>
 	void SetReleaseTimeMsec(float ReleaseTimeMsec); // Function Synthesis.GranularSynth.SetReleaseTimeMsec(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FAFC0>
-	void SetPlayheadTime(float InPositionSec, float LerpTimeSec, enum class Unknow SeekType); // Function Synthesis.GranularSynth.SetPlayheadTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FAEC0>
+	void SetPlayheadTime(float InPositionSec, float LerpTimeSec, enum class EGranularSynthSeekType SeekType); // Function Synthesis.GranularSynth.SetPlayheadTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FAEC0>
 	void SetPlaybackSpeed(float InPlayheadRate); // Function Synthesis.GranularSynth.SetPlaybackSpeed(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FAE40>
-	void SetGrainVolume(float BaseVolume, struct Unknown VolumeRange); // Function Synthesis.GranularSynth.SetGrainVolume(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x18FAA60>
+	void SetGrainVolume(float BaseVolume, struct FVector2D VolumeRange); // Function Synthesis.GranularSynth.SetGrainVolume(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x18FAA60>
 	void SetGrainsPerSecond(float InGrainsPerSecond); // Function Synthesis.GranularSynth.SetGrainsPerSecond(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FAB20>
 	void SetGrainProbability(float InGrainProbability); // Function Synthesis.GranularSynth.SetGrainProbability(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FA9E0>
-	void SetGrainPitch(float BasePitch, struct Unknown PitchRange); // Function Synthesis.GranularSynth.SetGrainPitch(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x18FA920>
-	void SetGrainPan(float BasePan, struct Unknown PanRange); // Function Synthesis.GranularSynth.SetGrainPan(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x18FA860>
-	void SetGrainEnvelopeType(enum class Unknow EnvelopeType); // Function Synthesis.GranularSynth.SetGrainEnvelopeType(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FA7E0>
-	void SetGrainDuration(float BaseDurationMsec, struct Unknown DurationRange); // Function Synthesis.GranularSynth.SetGrainDuration(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x18FA720>
+	void SetGrainPitch(float BasePitch, struct FVector2D PitchRange); // Function Synthesis.GranularSynth.SetGrainPitch(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x18FA920>
+	void SetGrainPan(float BasePan, struct FVector2D PanRange); // Function Synthesis.GranularSynth.SetGrainPan(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x18FA860>
+	void SetGrainEnvelopeType(enum class EGranularSynthEnvelopeType EnvelopeType); // Function Synthesis.GranularSynth.SetGrainEnvelopeType(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FA7E0>
+	void SetGrainDuration(float BaseDurationMsec, struct FVector2D DurationRange); // Function Synthesis.GranularSynth.SetGrainDuration(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x18FA720>
 	void SetDecayTime(float DecayTimeMsec); // Function Synthesis.GranularSynth.SetDecayTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FA320>
 	void SetAttackTime(float AttackTimeMsec); // Function Synthesis.GranularSynth.SetAttackTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FA320>
 	void NoteOn(float Note, int32_t Velocity, float Duration); // Function Synthesis.GranularSynth.NoteOn(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FA190>
@@ -701,7 +701,7 @@ public:
 	char bLockKeyframesToGridBool : 0; // 0x38 (1)
 	int32_t LockKeyframesToGrid; // 0x3C (4)
 	int32_t WaveTableResolution; // 0x40 (4)
-	struct TArray<Unknown> WaveTable; // 0x48 (16)
+	struct TArray<struct FRuntimeFloatCurve> WaveTable; // 0x48 (16)
 	char bNormalizeWaveTables : 0; // 0x58 (1)
 };
 
@@ -712,11 +712,11 @@ public:
 
 	struct FMulticastInlineDelegate OnTableAltered; // 0x700 (16)
 	struct FMulticastInlineDelegate OnNumTablesChanged; // 0x710 (16)
-	struct Unknown CurrentPreset; // 0x720 (8)
+	struct UMonoWaveTableSynthPreset CurrentPreset; // 0x720 (8)
 
 	void SetWaveTablePosition(float InPosition); // Function Synthesis.SynthComponentMonoWaveTable.SetWaveTablePosition(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FEDC0>
 	void SetSustainPedalState(char InSustainPedalState); // Function Synthesis.SynthComponentMonoWaveTable.SetSustainPedalState(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FECB0>
-	void SetPosLfoType(enum class Unknow InLfoType); // Function Synthesis.SynthComponentMonoWaveTable.SetPosLfoType(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FE600>
+	void SetPosLfoType(enum class ESynthLFOType InLfoType); // Function Synthesis.SynthComponentMonoWaveTable.SetPosLfoType(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FE600>
 	void SetPosLfoFrequency(float InLfoFrequency); // Function Synthesis.SynthComponentMonoWaveTable.SetPosLfoFrequency(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FE580>
 	void SetPosLfoDepth(float InLfoDepth); // Function Synthesis.SynthComponentMonoWaveTable.SetPosLfoDepth(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FE500>
 	void SetPositionEnvelopeSustainGain(float InSustainGain); // Function Synthesis.SynthComponentMonoWaveTable.SetPositionEnvelopeSustainGain(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FEA20>
@@ -742,7 +742,7 @@ public:
 	void SetFilterEnvelopeAttackTime(float InAttackTimeMsec); // Function Synthesis.SynthComponentMonoWaveTable.SetFilterEnvelopeAttackTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FDD10>
 	char SetCurveValue(int32_t TableIndex, int32_t KeyframeIndex, float NewValue); // Function Synthesis.SynthComponentMonoWaveTable.SetCurveValue(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FDC10>
 	char SetCurveTangent(int32_t TableIndex, float InNewTangent); // Function Synthesis.SynthComponentMonoWaveTable.SetCurveTangent(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FDB40>
-	char SetCurveInterpolationType(enum class Unknow InterpolationType, int32_t TableIndex); // Function Synthesis.SynthComponentMonoWaveTable.SetCurveInterpolationType(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FDA80>
+	char SetCurveInterpolationType(enum class CurveInterpolationType InterpolationType, int32_t TableIndex); // Function Synthesis.SynthComponentMonoWaveTable.SetCurveInterpolationType(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FDA80>
 	void SetAmpEnvelopeSustainGain(float InSustainGain); // Function Synthesis.SynthComponentMonoWaveTable.SetAmpEnvelopeSustainGain(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FDA00>
 	void SetAmpEnvelopeReleaseTime(float InReleaseTimeMsec); // Function Synthesis.SynthComponentMonoWaveTable.SetAmpEnvelopeReleaseTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FD980>
 	void SetAmpEnvelopeInvert(char bInInvert); // Function Synthesis.SynthComponentMonoWaveTable.SetAmpEnvelopeInvert(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FD8F0>
@@ -757,7 +757,7 @@ public:
 	void NoteOff(float InMidiNote); // Function Synthesis.SynthComponentMonoWaveTable.NoteOff(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FD370>
 	int32_t GetNumTableEntries(); // Function Synthesis.SynthComponentMonoWaveTable.GetNumTableEntries(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FD2B0>
 	int32_t GetMaxTableIndex(); // Function Synthesis.SynthComponentMonoWaveTable.GetMaxTableIndex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x18FD270>
-	struct TArray<Unknown> GetKeyFrameValuesForTable(float TableIndex); // Function Synthesis.SynthComponentMonoWaveTable.GetKeyFrameValuesForTable(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x18FD190>
+	struct TArray<float> GetKeyFrameValuesForTable(float TableIndex); // Function Synthesis.SynthComponentMonoWaveTable.GetKeyFrameValuesForTable(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x18FD190>
 	float GetCurveTangent(int32_t TableIndex); // Function Synthesis.SynthComponentMonoWaveTable.GetCurveTangent(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FD100>
 };
 
@@ -766,15 +766,15 @@ class USynthSamplePlayer : public USynthComponent {
 
 public:
 
-	struct Unknown SoundWave; // 0x700 (8)
+	struct USoundWave SoundWave; // 0x700 (8)
 	struct FMulticastInlineDelegate OnSampleLoaded; // 0x708 (16)
 	struct FMulticastInlineDelegate OnSamplePlaybackProgress; // 0x718 (16)
 
-	void SetSoundWave(struct Unknown InSoundWave); // Function Synthesis.SynthSamplePlayer.SetSoundWave(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FEBB0>
+	void SetSoundWave(struct USoundWave InSoundWave); // Function Synthesis.SynthSamplePlayer.SetSoundWave(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FEBB0>
 	void SetScrubTimeWidth(float InScrubTimeWidthSec); // Function Synthesis.SynthSamplePlayer.SetScrubTimeWidth(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FEB30>
 	void SetScrubMode(char bScrubMode); // Function Synthesis.SynthSamplePlayer.SetScrubMode(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FEAA0>
 	void SetPitch(float InPitch, float TimeSec); // Function Synthesis.SynthSamplePlayer.SetPitch(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FE440>
-	void SeekToTime(float TimeSec, enum class Unknow SeekType, char bWrap); // Function Synthesis.SynthSamplePlayer.SeekToTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FD550>
+	void SeekToTime(float TimeSec, enum class ESamplePlayerSeekType SeekType, char bWrap); // Function Synthesis.SynthSamplePlayer.SeekToTime(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x18FD550>
 	char IsLoaded(); // Function Synthesis.SynthSamplePlayer.IsLoaded(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x18FD340>
 	float GetSampleDuration(); // Function Synthesis.SynthSamplePlayer.GetSampleDuration(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x18FD2E0>
 	float GetCurrentPlaybackProgressTime(); // Function Synthesis.SynthSamplePlayer.GetCurrentPlaybackProgressTime(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x18FD0D0>
@@ -794,7 +794,7 @@ public:
 	struct FText ParameterName; // 0x120 (24)
 	struct FText ParameterUnits; // 0x138 (24)
 	struct FDelegate ValueDelegate; // 0x150 (16)
-	struct Unknown WidgetStyle; // 0x160 (568)
+	struct FSynthKnobStyle WidgetStyle; // 0x160 (568)
 	char Locked : 0; // 0x398 (1)
 	char IsFocusable : 0; // 0x399 (1)
 	struct FMulticastInlineDelegate OnMouseCaptureBegin; // 0x3A0 (16)
@@ -812,19 +812,19 @@ public:
 // ScriptStruct Synthesis.ModularSynthPresetBankEntry
 struct FModularSynthPresetBankEntry {
 	struct FString PresetName; // 0x0 (16)
-	struct Unknown Preset; // 0x10 (224)
+	struct FModularSynthPreset Preset; // 0x10 (224)
 };
 
 // ScriptStruct Synthesis.ModularSynthPreset
 struct FModularSynthPreset : FTableRowBase {
 	char bEnablePolyphony : 0; // 0x8 (1)
-	enum class Unknow Osc1Type; // 0xC (1)
+	enum class ESynth1OscType Osc1Type; // 0xC (1)
 	float Osc1Gain; // 0x10 (4)
 	float Osc1Octave; // 0x14 (4)
 	float Osc1Semitones; // 0x18 (4)
 	float Osc1Cents; // 0x1C (4)
 	float Osc1PulseWidth; // 0x20 (4)
-	enum class Unknow Osc2Type; // 0x24 (1)
+	enum class ESynth1OscType Osc2Type; // 0x24 (1)
 	float Osc2Gain; // 0x28 (4)
 	float Osc2Octave; // 0x2C (4)
 	float Osc2Semitones; // 0x30 (4)
@@ -837,21 +837,21 @@ struct FModularSynthPreset : FTableRowBase {
 	float Pan; // 0x48 (4)
 	float LFO1Frequency; // 0x4C (4)
 	float LFO1Gain; // 0x50 (4)
-	enum class Unknow LFO1Type; // 0x54 (1)
-	enum class Unknow LFO1Mode; // 0x55 (1)
-	enum class Unknow LFO1PatchType; // 0x56 (1)
+	enum class ESynthLFOType LFO1Type; // 0x54 (1)
+	enum class ESynthLFOMode LFO1Mode; // 0x55 (1)
+	enum class ESynthLFOPatchType LFO1PatchType; // 0x56 (1)
 	float LFO2Frequency; // 0x58 (4)
 	float LFO2Gain; // 0x5C (4)
-	enum class Unknow LFO2Type; // 0x60 (1)
-	enum class Unknow LFO2Mode; // 0x61 (1)
-	enum class Unknow LFO2PatchType; // 0x62 (1)
+	enum class ESynthLFOType LFO2Type; // 0x60 (1)
+	enum class ESynthLFOMode LFO2Mode; // 0x61 (1)
+	enum class ESynthLFOPatchType LFO2PatchType; // 0x62 (1)
 	float GainDb; // 0x64 (4)
 	float AttackTime; // 0x68 (4)
 	float DecayTime; // 0x6C (4)
 	float SustainGain; // 0x70 (4)
 	float ReleaseTime; // 0x74 (4)
-	enum class Unknow ModEnvPatchType; // 0x78 (1)
-	enum class Unknow ModEnvBiasPatchType; // 0x79 (1)
+	enum class ESynthModEnvPatch ModEnvPatchType; // 0x78 (1)
+	enum class ESynthModEnvBiasPatch ModEnvBiasPatchType; // 0x79 (1)
 	char bInvertModulationEnvelope : 0; // 0x7C (1)
 	char bInvertModulationEnvelopeBias : 0; // 0x7C (1)
 	float ModulationEnvelopeDepth; // 0x80 (4)
@@ -863,10 +863,10 @@ struct FModularSynthPreset : FTableRowBase {
 	char bRetrigger : 0; // 0x94 (1)
 	float FilterFrequency; // 0x98 (4)
 	float FilterQ; // 0x9C (4)
-	enum class Unknow FilterType; // 0xA0 (1)
-	enum class Unknow FilterAlgorithm; // 0xA1 (1)
+	enum class ESynthFilterType FilterType; // 0xA0 (1)
+	enum class ESynthFilterAlgorithm FilterAlgorithm; // 0xA1 (1)
 	char bStereoDelayEnabled : 0; // 0xA4 (1)
-	enum class Unknow StereoDelayMode; // 0xA8 (1)
+	enum class ESynthStereoDelayMode StereoDelayMode; // 0xA8 (1)
 	float StereoDelayTime; // 0xAC (4)
 	float StereoDelayFeedback; // 0xB0 (4)
 	float StereoDelayWetlevel; // 0xB4 (4)
@@ -875,19 +875,19 @@ struct FModularSynthPreset : FTableRowBase {
 	float ChorusDepth; // 0xC0 (4)
 	float ChorusFeedback; // 0xC4 (4)
 	float ChorusFrequency; // 0xC8 (4)
-	struct TArray<Unknown> Patches; // 0xD0 (16)
+	struct TArray<struct FEpicSynth1Patch> Patches; // 0xD0 (16)
 };
 
 // ScriptStruct Synthesis.EpicSynth1Patch
 struct FEpicSynth1Patch {
-	enum class Unknow PatchSource; // 0x0 (1)
-	struct TArray<Unknown> PatchCables; // 0x8 (16)
+	enum class ESynth1PatchSource PatchSource; // 0x0 (1)
+	struct TArray<struct FSynth1PatchCable> PatchCables; // 0x8 (16)
 };
 
 // ScriptStruct Synthesis.Synth1PatchCable
 struct FSynth1PatchCable {
 	float Depth; // 0x0 (4)
-	enum class Unknow Destination; // 0x4 (1)
+	enum class ESynth1PatchDestination Destination; // 0x4 (1)
 };
 
 // ScriptStruct Synthesis.PatchId
@@ -913,8 +913,8 @@ struct FSourceEffectChorusSettings {
 
 // ScriptStruct Synthesis.SourceEffectDynamicsProcessorSettings
 struct FSourceEffectDynamicsProcessorSettings {
-	enum class Unknow DynamicsProcessorType; // 0x0 (1)
-	enum class Unknow PeakMode; // 0x1 (1)
+	enum class ESourceEffectDynamicsProcessorType DynamicsProcessorType; // 0x0 (1)
+	enum class ESourceEffectDynamicsPeakMode PeakMode; // 0x1 (1)
 	float LookAheadMsec; // 0x4 (4)
 	float AttackTimeMsec; // 0x8 (4)
 	float ReleaseTimeMsec; // 0xC (4)
@@ -931,13 +931,13 @@ struct FSourceEffectDynamicsProcessorSettings {
 struct FSourceEffectEnvelopeFollowerSettings {
 	float AttackTime; // 0x0 (4)
 	float ReleaseTime; // 0x4 (4)
-	enum class Unknow PeakMode; // 0x8 (1)
+	enum class EEnvelopeFollowerPeakMode PeakMode; // 0x8 (1)
 	char bIsAnalogMode : 0; // 0x9 (1)
 };
 
 // ScriptStruct Synthesis.SourceEffectEQSettings
 struct FSourceEffectEQSettings {
-	struct TArray<Unknown> EQBands; // 0x0 (16)
+	struct TArray<struct FSourceEffectEQBand> EQBands; // 0x0 (16)
 };
 
 // ScriptStruct Synthesis.SourceEffectEQBand
@@ -950,8 +950,8 @@ struct FSourceEffectEQBand {
 
 // ScriptStruct Synthesis.SourceEffectFilterSettings
 struct FSourceEffectFilterSettings {
-	enum class Unknow FilterCircuit; // 0x0 (1)
-	enum class Unknow FilterType; // 0x1 (1)
+	enum class ESourceEffectFilterCircuit FilterCircuit; // 0x0 (1)
+	enum class ESourceEffectFilterType FilterType; // 0x1 (1)
 	float CutoffFrequency; // 0x4 (4)
 	float FilterQ; // 0x8 (4)
 };
@@ -965,9 +965,9 @@ struct FSourceEffectFoldbackDistortionSettings {
 
 // ScriptStruct Synthesis.SourceEffectMidSideSpreaderSettings
 struct FSourceEffectMidSideSpreaderSettings {
-	enum class Unknow InputMode; // 0x0 (1)
+	enum class EStereoChannelMode InputMode; // 0x0 (1)
 	float SpreadAmount; // 0x4 (4)
-	enum class Unknow OutputMode; // 0x8 (1)
+	enum class EStereoChannelMode OutputMode; // 0x8 (1)
 	char bEqualPower : 0; // 0x9 (1)
 };
 
@@ -982,13 +982,13 @@ struct FSourceEffectPhaserSettings {
 	float WetLevel; // 0x0 (4)
 	float Frequency; // 0x4 (4)
 	float Feedback; // 0x8 (4)
-	enum class Unknow LFOType; // 0xC (1)
+	enum class EPhaserLFOType LFOType; // 0xC (1)
 	char UseQuadraturePhase : 0; // 0xD (1)
 };
 
 // ScriptStruct Synthesis.SourceEffectRingModulationSettings
 struct FSourceEffectRingModulationSettings {
-	enum class Unknow ModulatorType; // 0x0 (1)
+	enum class ERingModulatorTypeSourceEffect ModulatorType; // 0x0 (1)
 	float Frequency; // 0x4 (4)
 	float Depth; // 0x8 (4)
 	float DryLevel; // 0xC (4)
@@ -1007,7 +1007,7 @@ struct FSourceEffectSimpleDelaySettings {
 
 // ScriptStruct Synthesis.SourceEffectStereoDelaySettings
 struct FSourceEffectStereoDelaySettings {
-	enum class Unknow DelayMode; // 0x0 (1)
+	enum class EStereoDelaySourceEffect DelayMode; // 0x0 (1)
 	float DelayTimeMsec; // 0x4 (4)
 	float Feedback; // 0x8 (4)
 	float DelayRatio; // 0xC (4)
@@ -1027,8 +1027,8 @@ struct FSubmixEffectConvolutionReverbSettings {
 	char bInvertRearChannelBleedPhase : 0; // 0x8 (1)
 	char bSurroundRearChannelFlip : 0; // 0x9 (1)
 	float SurroundRearChannelBleedAmount; // 0xC (4)
-	struct Unknown ImpulseResponse; // 0x10 (8)
-	char pad_14_0 : 7; // 0x14 (1)
+	struct UAudioImpulseResponse ImpulseResponse; // 0x10 (8)
+	char pad_14_0 : 3; // 0x14 (1)
 	char AllowHArdwareAcceleration : 1; // 0x18 (1)
 };
 
@@ -1041,8 +1041,8 @@ struct FSubmixEffectDelaySettings {
 
 // ScriptStruct Synthesis.SubmixEffectFilterSettings
 struct FSubmixEffectFilterSettings {
-	enum class Unknow FilterType; // 0x0 (1)
-	enum class Unknow FilterAlgorithm; // 0x1 (1)
+	enum class ESubmixFilterType FilterType; // 0x0 (1)
+	enum class ESubmixFilterAlgorithm FilterAlgorithm; // 0x1 (1)
 	float FilterFrequency; // 0x4 (4)
 	float FilterQ; // 0x8 (4)
 };
@@ -1059,12 +1059,12 @@ struct FSubmixEffectFlexiverbSettings {
 struct FSubmixEffectTapDelaySettings {
 	float MaximumDelayLength; // 0x0 (4)
 	float InterpolationTime; // 0x4 (4)
-	struct TArray<Unknown> Taps; // 0x8 (16)
+	struct TArray<struct FTapDelayInfo> Taps; // 0x8 (16)
 };
 
 // ScriptStruct Synthesis.TapDelayInfo
 struct FTapDelayInfo {
-	enum class Unknow TapLineMode; // 0x0 (1)
+	enum class ETapLineMode TapLineMode; // 0x0 (1)
 	float DelayLength; // 0x4 (4)
 	float Gain; // 0x8 (4)
 	int32_t OutputChannel; // 0xC (4)
@@ -1074,37 +1074,37 @@ struct FTapDelayInfo {
 
 // ScriptStruct Synthesis.Synth2DSliderStyle
 struct FSynth2DSliderStyle : FSlateWidgetStyle {
-	struct Unknown NormalThumbImage; // 0x8 (136)
-	struct Unknown DisabledThumbImage; // 0x90 (136)
-	struct Unknown NormalBarImage; // 0x118 (136)
-	struct Unknown DisabledBarImage; // 0x1A0 (136)
-	struct Unknown BackgroundImage; // 0x228 (136)
+	struct FSlateBrush NormalThumbImage; // 0x8 (136)
+	struct FSlateBrush DisabledThumbImage; // 0x90 (136)
+	struct FSlateBrush NormalBarImage; // 0x118 (136)
+	struct FSlateBrush DisabledBarImage; // 0x1A0 (136)
+	struct FSlateBrush BackgroundImage; // 0x228 (136)
 	float BarThickness; // 0x2B0 (4)
 };
 
 // ScriptStruct Synthesis.SynthKnobStyle
 struct FSynthKnobStyle : FSlateWidgetStyle {
-	struct Unknown LargeKnob; // 0x8 (136)
-	struct Unknown LargeKnobOverlay; // 0x90 (136)
-	struct Unknown MediumKnob; // 0x118 (136)
-	struct Unknown MediumKnobOverlay; // 0x1A0 (136)
+	struct FSlateBrush LargeKnob; // 0x8 (136)
+	struct FSlateBrush LargeKnobOverlay; // 0x90 (136)
+	struct FSlateBrush MediumKnob; // 0x118 (136)
+	struct FSlateBrush MediumKnobOverlay; // 0x1A0 (136)
 	float MinValueAngle; // 0x228 (4)
 	float MaxValueAngle; // 0x22C (4)
-	enum class Unknow KnobSize; // 0x230 (1)
+	enum class ESynthKnobSize KnobSize; // 0x230 (1)
 };
 
 // ScriptStruct Synthesis.SynthSlateStyle
 struct FSynthSlateStyle : FSlateWidgetStyle {
-	enum class Unknow SizeType; // 0x8 (1)
-	enum class Unknow ColorStyle; // 0x9 (1)
+	enum class ESynthSlateSizeType SizeType; // 0x8 (1)
+	enum class ESynthSlateColorStyle ColorStyle; // 0x9 (1)
 };
 
 // Function Synthesis.ModularSynthComponent.SetSynthPreset
-inline void UModularSynthComponent::SetSynthPreset(struct Unknown& SynthPreset) {
+inline void UModularSynthComponent::SetSynthPreset(struct FModularSynthPreset& SynthPreset) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.ModularSynthComponent.SetSynthPreset");
 
 	struct SetSynthPreset_Params {
-		struct Unknown& SynthPreset;
+		struct FModularSynthPreset& SynthPreset;
 	}; SetSynthPreset_Params Params;
 
 
@@ -1177,11 +1177,11 @@ inline void UModularSynthComponent::SetStereoDelayRatio(float DelayRatio) {
 }
 
 // Function Synthesis.ModularSynthComponent.SetStereoDelayMode
-inline void UModularSynthComponent::SetStereoDelayMode(enum class Unknow StereoDelayMode) {
+inline void UModularSynthComponent::SetStereoDelayMode(enum class ESynthStereoDelayMode StereoDelayMode) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.ModularSynthComponent.SetStereoDelayMode");
 
 	struct SetStereoDelayMode_Params {
-		enum class Unknow StereoDelayMode;
+		enum class ESynthStereoDelayMode StereoDelayMode;
 	}; SetStereoDelayMode_Params Params;
 
 	Params.StereoDelayMode = StereoDelayMode;
@@ -1297,12 +1297,12 @@ inline void UModularSynthComponent::SetPan(float Pan) {
 }
 
 // Function Synthesis.ModularSynthComponent.SetOscType
-inline void UModularSynthComponent::SetOscType(int32_t OscIndex, enum class Unknow OscType) {
+inline void UModularSynthComponent::SetOscType(int32_t OscIndex, enum class ESynth1OscType OscType) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.ModularSynthComponent.SetOscType");
 
 	struct SetOscType_Params {
 		int32_t OscIndex;
-		enum class Unknow OscType;
+		enum class ESynth1OscType OscType;
 	}; SetOscType_Params Params;
 
 	Params.OscIndex = OscIndex;
@@ -1478,11 +1478,11 @@ inline void UModularSynthComponent::SetModEnvReleaseTime(float Release) {
 }
 
 // Function Synthesis.ModularSynthComponent.SetModEnvPatch
-inline void UModularSynthComponent::SetModEnvPatch(enum class Unknow InPatchType) {
+inline void UModularSynthComponent::SetModEnvPatch(enum class ESynthModEnvPatch InPatchType) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.ModularSynthComponent.SetModEnvPatch");
 
 	struct SetModEnvPatch_Params {
-		enum class Unknow InPatchType;
+		enum class ESynthModEnvPatch InPatchType;
 	}; SetModEnvPatch_Params Params;
 
 	Params.InPatchType = InPatchType;
@@ -1538,11 +1538,11 @@ inline void UModularSynthComponent::SetModEnvDecayTime(float DecayTimeMsec) {
 }
 
 // Function Synthesis.ModularSynthComponent.SetModEnvBiasPatch
-inline void UModularSynthComponent::SetModEnvBiasPatch(enum class Unknow InPatchType) {
+inline void UModularSynthComponent::SetModEnvBiasPatch(enum class ESynthModEnvBiasPatch InPatchType) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.ModularSynthComponent.SetModEnvBiasPatch");
 
 	struct SetModEnvBiasPatch_Params {
-		enum class Unknow InPatchType;
+		enum class ESynthModEnvBiasPatch InPatchType;
 	}; SetModEnvBiasPatch_Params Params;
 
 	Params.InPatchType = InPatchType;
@@ -1583,12 +1583,12 @@ inline void UModularSynthComponent::SetModEnvAttackTime(float AttackTimeMsec) {
 }
 
 // Function Synthesis.ModularSynthComponent.SetLFOType
-inline void UModularSynthComponent::SetLFOType(int32_t LFOIndex, enum class Unknow LFOType) {
+inline void UModularSynthComponent::SetLFOType(int32_t LFOIndex, enum class ESynthLFOType LFOType) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.ModularSynthComponent.SetLFOType");
 
 	struct SetLFOType_Params {
 		int32_t LFOIndex;
-		enum class Unknow LFOType;
+		enum class ESynthLFOType LFOType;
 	}; SetLFOType_Params Params;
 
 	Params.LFOIndex = LFOIndex;
@@ -1600,12 +1600,12 @@ inline void UModularSynthComponent::SetLFOType(int32_t LFOIndex, enum class Unkn
 }
 
 // Function Synthesis.ModularSynthComponent.SetLFOPatch
-inline void UModularSynthComponent::SetLFOPatch(int32_t LFOIndex, enum class Unknow LFOPatchType) {
+inline void UModularSynthComponent::SetLFOPatch(int32_t LFOIndex, enum class ESynthLFOPatchType LFOPatchType) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.ModularSynthComponent.SetLFOPatch");
 
 	struct SetLFOPatch_Params {
 		int32_t LFOIndex;
-		enum class Unknow LFOPatchType;
+		enum class ESynthLFOPatchType LFOPatchType;
 	}; SetLFOPatch_Params Params;
 
 	Params.LFOIndex = LFOIndex;
@@ -1617,12 +1617,12 @@ inline void UModularSynthComponent::SetLFOPatch(int32_t LFOIndex, enum class Unk
 }
 
 // Function Synthesis.ModularSynthComponent.SetLFOMode
-inline void UModularSynthComponent::SetLFOMode(int32_t LFOIndex, enum class Unknow LFOMode) {
+inline void UModularSynthComponent::SetLFOMode(int32_t LFOIndex, enum class ESynthLFOMode LFOMode) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.ModularSynthComponent.SetLFOMode");
 
 	struct SetLFOMode_Params {
 		int32_t LFOIndex;
-		enum class Unknow LFOMode;
+		enum class ESynthLFOMode LFOMode;
 	}; SetLFOMode_Params Params;
 
 	Params.LFOIndex = LFOIndex;
@@ -1717,11 +1717,11 @@ inline void UModularSynthComponent::SetGainDb(float GainDb) {
 }
 
 // Function Synthesis.ModularSynthComponent.SetFilterType
-inline void UModularSynthComponent::SetFilterType(enum class Unknow FilterType) {
+inline void UModularSynthComponent::SetFilterType(enum class ESynthFilterType FilterType) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.ModularSynthComponent.SetFilterType");
 
 	struct SetFilterType_Params {
-		enum class Unknow FilterType;
+		enum class ESynthFilterType FilterType;
 	}; SetFilterType_Params Params;
 
 	Params.FilterType = FilterType;
@@ -1792,11 +1792,11 @@ inline void UModularSynthComponent::SetFilterFrequency(float FilterFrequencyHz) 
 }
 
 // Function Synthesis.ModularSynthComponent.SetFilterAlgorithm
-inline void UModularSynthComponent::SetFilterAlgorithm(enum class Unknow FilterAlgorithm) {
+inline void UModularSynthComponent::SetFilterAlgorithm(enum class ESynthFilterAlgorithm FilterAlgorithm) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.ModularSynthComponent.SetFilterAlgorithm");
 
 	struct SetFilterAlgorithm_Params {
-		enum class Unknow FilterAlgorithm;
+		enum class ESynthFilterAlgorithm FilterAlgorithm;
 	}; SetFilterAlgorithm_Params Params;
 
 	Params.FilterAlgorithm = FilterAlgorithm;
@@ -1852,11 +1852,11 @@ inline void UModularSynthComponent::SetEnablePolyphony(char bEnablePolyphony) {
 }
 
 // Function Synthesis.ModularSynthComponent.SetEnablePatch
-inline char UModularSynthComponent::SetEnablePatch(struct Unknown PatchId, char bIsEnabled) {
+inline char UModularSynthComponent::SetEnablePatch(struct FPatchId PatchId, char bIsEnabled) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.ModularSynthComponent.SetEnablePatch");
 
 	struct SetEnablePatch_Params {
-		struct Unknown PatchId;
+		struct FPatchId PatchId;
 		char bIsEnabled;
 		char ReturnValue;
 
@@ -2016,14 +2016,14 @@ inline void UModularSynthComponent::NoteOff(float Note, char bAllNotesOff, char 
 }
 
 // Function Synthesis.ModularSynthComponent.CreatePatch
-inline struct Unknown UModularSynthComponent::CreatePatch(enum class Unknow PatchSource, struct TArray<Unknown>& PatchCables, char bEnableByDefault) {
+inline struct FPatchId UModularSynthComponent::CreatePatch(enum class ESynth1PatchSource PatchSource, struct TArray<struct FSynth1PatchCable>& PatchCables, char bEnableByDefault) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.ModularSynthComponent.CreatePatch");
 
 	struct CreatePatch_Params {
-		enum class Unknow PatchSource;
-		struct TArray<Unknown>& PatchCables;
+		enum class ESynth1PatchSource PatchSource;
+		struct TArray<struct FSynth1PatchCable>& PatchCables;
 		char bEnableByDefault;
-		struct Unknown ReturnValue;
+		struct FPatchId ReturnValue;
 
 	}; CreatePatch_Params Params;
 
@@ -2041,11 +2041,11 @@ inline struct Unknown UModularSynthComponent::CreatePatch(enum class Unknow Patc
 }
 
 // Function Synthesis.SourceEffectBitCrusherPreset.SetSettings
-inline void USourceEffectBitCrusherPreset::SetSettings(struct Unknown& InSettings) {
+inline void USourceEffectBitCrusherPreset::SetSettings(struct FSourceEffectBitCrusherSettings& InSettings) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.SourceEffectBitCrusherPreset.SetSettings");
 
 	struct SetSettings_Params {
-		struct Unknown& InSettings;
+		struct FSourceEffectBitCrusherSettings& InSettings;
 	}; SetSettings_Params Params;
 
 
@@ -2058,11 +2058,11 @@ inline void USourceEffectBitCrusherPreset::SetSettings(struct Unknown& InSetting
 }
 
 // Function Synthesis.SourceEffectChorusPreset.SetSettings
-inline void USourceEffectChorusPreset::SetSettings(struct Unknown& InSettings) {
+inline void USourceEffectChorusPreset::SetSettings(struct FSourceEffectChorusSettings& InSettings) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.SourceEffectChorusPreset.SetSettings");
 
 	struct SetSettings_Params {
-		struct Unknown& InSettings;
+		struct FSourceEffectChorusSettings& InSettings;
 	}; SetSettings_Params Params;
 
 
@@ -2075,11 +2075,11 @@ inline void USourceEffectChorusPreset::SetSettings(struct Unknown& InSettings) {
 }
 
 // Function Synthesis.SourceEffectDynamicsProcessorPreset.SetSettings
-inline void USourceEffectDynamicsProcessorPreset::SetSettings(struct Unknown& InSettings) {
+inline void USourceEffectDynamicsProcessorPreset::SetSettings(struct FSourceEffectDynamicsProcessorSettings& InSettings) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.SourceEffectDynamicsProcessorPreset.SetSettings");
 
 	struct SetSettings_Params {
-		struct Unknown& InSettings;
+		struct FSourceEffectDynamicsProcessorSettings& InSettings;
 	}; SetSettings_Params Params;
 
 
@@ -2092,11 +2092,11 @@ inline void USourceEffectDynamicsProcessorPreset::SetSettings(struct Unknown& In
 }
 
 // Function Synthesis.SourceEffectEnvelopeFollowerPreset.UnregisterEnvelopeFollowerListener
-inline void USourceEffectEnvelopeFollowerPreset::UnregisterEnvelopeFollowerListener(struct Unknown EnvelopeFollowerListener) {
+inline void USourceEffectEnvelopeFollowerPreset::UnregisterEnvelopeFollowerListener(struct UEnvelopeFollowerListener EnvelopeFollowerListener) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.SourceEffectEnvelopeFollowerPreset.UnregisterEnvelopeFollowerListener");
 
 	struct UnregisterEnvelopeFollowerListener_Params {
-		struct Unknown EnvelopeFollowerListener;
+		struct UEnvelopeFollowerListener EnvelopeFollowerListener;
 	}; UnregisterEnvelopeFollowerListener_Params Params;
 
 	Params.EnvelopeFollowerListener = EnvelopeFollowerListener;
@@ -2107,11 +2107,11 @@ inline void USourceEffectEnvelopeFollowerPreset::UnregisterEnvelopeFollowerListe
 }
 
 // Function Synthesis.SourceEffectEnvelopeFollowerPreset.SetSettings
-inline void USourceEffectEnvelopeFollowerPreset::SetSettings(struct Unknown& InSettings) {
+inline void USourceEffectEnvelopeFollowerPreset::SetSettings(struct FSourceEffectEnvelopeFollowerSettings& InSettings) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.SourceEffectEnvelopeFollowerPreset.SetSettings");
 
 	struct SetSettings_Params {
-		struct Unknown& InSettings;
+		struct FSourceEffectEnvelopeFollowerSettings& InSettings;
 	}; SetSettings_Params Params;
 
 
@@ -2124,11 +2124,11 @@ inline void USourceEffectEnvelopeFollowerPreset::SetSettings(struct Unknown& InS
 }
 
 // Function Synthesis.SourceEffectEnvelopeFollowerPreset.RegisterEnvelopeFollowerListener
-inline void USourceEffectEnvelopeFollowerPreset::RegisterEnvelopeFollowerListener(struct Unknown EnvelopeFollowerListener) {
+inline void USourceEffectEnvelopeFollowerPreset::RegisterEnvelopeFollowerListener(struct UEnvelopeFollowerListener EnvelopeFollowerListener) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.SourceEffectEnvelopeFollowerPreset.RegisterEnvelopeFollowerListener");
 
 	struct RegisterEnvelopeFollowerListener_Params {
-		struct Unknown EnvelopeFollowerListener;
+		struct UEnvelopeFollowerListener EnvelopeFollowerListener;
 	}; RegisterEnvelopeFollowerListener_Params Params;
 
 	Params.EnvelopeFollowerListener = EnvelopeFollowerListener;
@@ -2139,11 +2139,11 @@ inline void USourceEffectEnvelopeFollowerPreset::RegisterEnvelopeFollowerListene
 }
 
 // Function Synthesis.SourceEffectEQPreset.SetSettings
-inline void USourceEffectEQPreset::SetSettings(struct Unknown& InSettings) {
+inline void USourceEffectEQPreset::SetSettings(struct FSourceEffectEQSettings& InSettings) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.SourceEffectEQPreset.SetSettings");
 
 	struct SetSettings_Params {
-		struct Unknown& InSettings;
+		struct FSourceEffectEQSettings& InSettings;
 	}; SetSettings_Params Params;
 
 
@@ -2156,11 +2156,11 @@ inline void USourceEffectEQPreset::SetSettings(struct Unknown& InSettings) {
 }
 
 // Function Synthesis.SourceEffectFilterPreset.SetSettings
-inline void USourceEffectFilterPreset::SetSettings(struct Unknown& InSettings) {
+inline void USourceEffectFilterPreset::SetSettings(struct FSourceEffectFilterSettings& InSettings) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.SourceEffectFilterPreset.SetSettings");
 
 	struct SetSettings_Params {
-		struct Unknown& InSettings;
+		struct FSourceEffectFilterSettings& InSettings;
 	}; SetSettings_Params Params;
 
 
@@ -2173,11 +2173,11 @@ inline void USourceEffectFilterPreset::SetSettings(struct Unknown& InSettings) {
 }
 
 // Function Synthesis.SourceEffectFoldbackDistortionPreset.SetSettings
-inline void USourceEffectFoldbackDistortionPreset::SetSettings(struct Unknown& InSettings) {
+inline void USourceEffectFoldbackDistortionPreset::SetSettings(struct FSourceEffectFoldbackDistortionSettings& InSettings) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.SourceEffectFoldbackDistortionPreset.SetSettings");
 
 	struct SetSettings_Params {
-		struct Unknown& InSettings;
+		struct FSourceEffectFoldbackDistortionSettings& InSettings;
 	}; SetSettings_Params Params;
 
 
@@ -2190,11 +2190,11 @@ inline void USourceEffectFoldbackDistortionPreset::SetSettings(struct Unknown& I
 }
 
 // Function Synthesis.SourceEffectMidSideSpreaderPreset.SetSettings
-inline void USourceEffectMidSideSpreaderPreset::SetSettings(struct Unknown& InSettings) {
+inline void USourceEffectMidSideSpreaderPreset::SetSettings(struct FSourceEffectMidSideSpreaderSettings& InSettings) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.SourceEffectMidSideSpreaderPreset.SetSettings");
 
 	struct SetSettings_Params {
-		struct Unknown& InSettings;
+		struct FSourceEffectMidSideSpreaderSettings& InSettings;
 	}; SetSettings_Params Params;
 
 
@@ -2207,11 +2207,11 @@ inline void USourceEffectMidSideSpreaderPreset::SetSettings(struct Unknown& InSe
 }
 
 // Function Synthesis.SourceEffectPannerPreset.SetSettings
-inline void USourceEffectPannerPreset::SetSettings(struct Unknown& InSettings) {
+inline void USourceEffectPannerPreset::SetSettings(struct FSourceEffectPannerSettings& InSettings) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.SourceEffectPannerPreset.SetSettings");
 
 	struct SetSettings_Params {
-		struct Unknown& InSettings;
+		struct FSourceEffectPannerSettings& InSettings;
 	}; SetSettings_Params Params;
 
 
@@ -2224,11 +2224,11 @@ inline void USourceEffectPannerPreset::SetSettings(struct Unknown& InSettings) {
 }
 
 // Function Synthesis.SourceEffectPhaserPreset.SetSettings
-inline void USourceEffectPhaserPreset::SetSettings(struct Unknown& InSettings) {
+inline void USourceEffectPhaserPreset::SetSettings(struct FSourceEffectPhaserSettings& InSettings) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.SourceEffectPhaserPreset.SetSettings");
 
 	struct SetSettings_Params {
-		struct Unknown& InSettings;
+		struct FSourceEffectPhaserSettings& InSettings;
 	}; SetSettings_Params Params;
 
 
@@ -2241,11 +2241,11 @@ inline void USourceEffectPhaserPreset::SetSettings(struct Unknown& InSettings) {
 }
 
 // Function Synthesis.SourceEffectRingModulationPreset.SetSettings
-inline void USourceEffectRingModulationPreset::SetSettings(struct Unknown& InSettings) {
+inline void USourceEffectRingModulationPreset::SetSettings(struct FSourceEffectRingModulationSettings& InSettings) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.SourceEffectRingModulationPreset.SetSettings");
 
 	struct SetSettings_Params {
-		struct Unknown& InSettings;
+		struct FSourceEffectRingModulationSettings& InSettings;
 	}; SetSettings_Params Params;
 
 
@@ -2258,11 +2258,11 @@ inline void USourceEffectRingModulationPreset::SetSettings(struct Unknown& InSet
 }
 
 // Function Synthesis.SourceEffectSimpleDelayPreset.SetSettings
-inline void USourceEffectSimpleDelayPreset::SetSettings(struct Unknown& InSettings) {
+inline void USourceEffectSimpleDelayPreset::SetSettings(struct FSourceEffectSimpleDelaySettings& InSettings) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.SourceEffectSimpleDelayPreset.SetSettings");
 
 	struct SetSettings_Params {
-		struct Unknown& InSettings;
+		struct FSourceEffectSimpleDelaySettings& InSettings;
 	}; SetSettings_Params Params;
 
 
@@ -2275,11 +2275,11 @@ inline void USourceEffectSimpleDelayPreset::SetSettings(struct Unknown& InSettin
 }
 
 // Function Synthesis.SourceEffectStereoDelayPreset.SetSettings
-inline void USourceEffectStereoDelayPreset::SetSettings(struct Unknown& InSettings) {
+inline void USourceEffectStereoDelayPreset::SetSettings(struct FSourceEffectStereoDelaySettings& InSettings) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.SourceEffectStereoDelayPreset.SetSettings");
 
 	struct SetSettings_Params {
-		struct Unknown& InSettings;
+		struct FSourceEffectStereoDelaySettings& InSettings;
 	}; SetSettings_Params Params;
 
 
@@ -2292,11 +2292,11 @@ inline void USourceEffectStereoDelayPreset::SetSettings(struct Unknown& InSettin
 }
 
 // Function Synthesis.SourceEffectWaveShaperPreset.SetSettings
-inline void USourceEffectWaveShaperPreset::SetSettings(struct Unknown& InSettings) {
+inline void USourceEffectWaveShaperPreset::SetSettings(struct FSourceEffectWaveShaperSettings& InSettings) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.SourceEffectWaveShaperPreset.SetSettings");
 
 	struct SetSettings_Params {
-		struct Unknown& InSettings;
+		struct FSourceEffectWaveShaperSettings& InSettings;
 	}; SetSettings_Params Params;
 
 
@@ -2309,11 +2309,11 @@ inline void USourceEffectWaveShaperPreset::SetSettings(struct Unknown& InSetting
 }
 
 // Function Synthesis.SubmixEffectConvolutionReverbPreset.SetSettings
-inline void USubmixEffectConvolutionReverbPreset::SetSettings(struct Unknown& InSettings) {
+inline void USubmixEffectConvolutionReverbPreset::SetSettings(struct FSubmixEffectConvolutionReverbSettings& InSettings) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.SubmixEffectConvolutionReverbPreset.SetSettings");
 
 	struct SetSettings_Params {
-		struct Unknown& InSettings;
+		struct FSubmixEffectConvolutionReverbSettings& InSettings;
 	}; SetSettings_Params Params;
 
 
@@ -2326,11 +2326,11 @@ inline void USubmixEffectConvolutionReverbPreset::SetSettings(struct Unknown& In
 }
 
 // Function Synthesis.SubmixEffectConvolutionReverbPreset.SetImpulseResponse
-inline void USubmixEffectConvolutionReverbPreset::SetImpulseResponse(struct Unknown InImpulseResponse) {
+inline void USubmixEffectConvolutionReverbPreset::SetImpulseResponse(struct UAudioImpulseResponse InImpulseResponse) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.SubmixEffectConvolutionReverbPreset.SetImpulseResponse");
 
 	struct SetImpulseResponse_Params {
-		struct Unknown InImpulseResponse;
+		struct UAudioImpulseResponse InImpulseResponse;
 	}; SetImpulseResponse_Params Params;
 
 	Params.InImpulseResponse = InImpulseResponse;
@@ -2341,11 +2341,11 @@ inline void USubmixEffectConvolutionReverbPreset::SetImpulseResponse(struct Unkn
 }
 
 // Function Synthesis.SubmixEffectDelayPreset.SetSettings
-inline void USubmixEffectDelayPreset::SetSettings(struct Unknown& InSettings) {
+inline void USubmixEffectDelayPreset::SetSettings(struct FSubmixEffectDelaySettings& InSettings) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.SubmixEffectDelayPreset.SetSettings");
 
 	struct SetSettings_Params {
-		struct Unknown& InSettings;
+		struct FSubmixEffectDelaySettings& InSettings;
 	}; SetSettings_Params Params;
 
 
@@ -2406,11 +2406,11 @@ inline float USubmixEffectDelayPreset::GetMaxDelayInMilliseconds() {
 }
 
 // Function Synthesis.SubmixEffectFilterPreset.SetSettings
-inline void USubmixEffectFilterPreset::SetSettings(struct Unknown& InSettings) {
+inline void USubmixEffectFilterPreset::SetSettings(struct FSubmixEffectFilterSettings& InSettings) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.SubmixEffectFilterPreset.SetSettings");
 
 	struct SetSettings_Params {
-		struct Unknown& InSettings;
+		struct FSubmixEffectFilterSettings& InSettings;
 	}; SetSettings_Params Params;
 
 
@@ -2423,11 +2423,11 @@ inline void USubmixEffectFilterPreset::SetSettings(struct Unknown& InSettings) {
 }
 
 // Function Synthesis.SubmixEffectFilterPreset.SetFilterType
-inline void USubmixEffectFilterPreset::SetFilterType(enum class Unknow InType) {
+inline void USubmixEffectFilterPreset::SetFilterType(enum class ESubmixFilterType InType) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.SubmixEffectFilterPreset.SetFilterType");
 
 	struct SetFilterType_Params {
-		enum class Unknow InType;
+		enum class ESubmixFilterType InType;
 	}; SetFilterType_Params Params;
 
 	Params.InType = InType;
@@ -2498,11 +2498,11 @@ inline void USubmixEffectFilterPreset::SetFilterCutoffFrequency(float InFrequenc
 }
 
 // Function Synthesis.SubmixEffectFilterPreset.SetFilterAlgorithm
-inline void USubmixEffectFilterPreset::SetFilterAlgorithm(enum class Unknow InAlgorithm) {
+inline void USubmixEffectFilterPreset::SetFilterAlgorithm(enum class ESubmixFilterAlgorithm InAlgorithm) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.SubmixEffectFilterPreset.SetFilterAlgorithm");
 
 	struct SetFilterAlgorithm_Params {
-		enum class Unknow InAlgorithm;
+		enum class ESubmixFilterAlgorithm InAlgorithm;
 	}; SetFilterAlgorithm_Params Params;
 
 	Params.InAlgorithm = InAlgorithm;
@@ -2513,11 +2513,11 @@ inline void USubmixEffectFilterPreset::SetFilterAlgorithm(enum class Unknow InAl
 }
 
 // Function Synthesis.SubmixEffectFlexiverbPreset.SetSettings
-inline void USubmixEffectFlexiverbPreset::SetSettings(struct Unknown& InSettings) {
+inline void USubmixEffectFlexiverbPreset::SetSettings(struct FSubmixEffectFlexiverbSettings& InSettings) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.SubmixEffectFlexiverbPreset.SetSettings");
 
 	struct SetSettings_Params {
-		struct Unknown& InSettings;
+		struct FSubmixEffectFlexiverbSettings& InSettings;
 	}; SetSettings_Params Params;
 
 
@@ -2530,12 +2530,12 @@ inline void USubmixEffectFlexiverbPreset::SetSettings(struct Unknown& InSettings
 }
 
 // Function Synthesis.SubmixEffectTapDelayPreset.SetTap
-inline void USubmixEffectTapDelayPreset::SetTap(int32_t TapId, struct Unknown& TapInfo) {
+inline void USubmixEffectTapDelayPreset::SetTap(int32_t TapId, struct FTapDelayInfo& TapInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.SubmixEffectTapDelayPreset.SetTap");
 
 	struct SetTap_Params {
 		int32_t TapId;
-		struct Unknown& TapInfo;
+		struct FTapDelayInfo& TapInfo;
 	}; SetTap_Params Params;
 
 	Params.TapId = TapId;
@@ -2549,11 +2549,11 @@ inline void USubmixEffectTapDelayPreset::SetTap(int32_t TapId, struct Unknown& T
 }
 
 // Function Synthesis.SubmixEffectTapDelayPreset.SetSettings
-inline void USubmixEffectTapDelayPreset::SetSettings(struct Unknown& InSettings) {
+inline void USubmixEffectTapDelayPreset::SetSettings(struct FSubmixEffectTapDelaySettings& InSettings) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.SubmixEffectTapDelayPreset.SetSettings");
 
 	struct SetSettings_Params {
-		struct Unknown& InSettings;
+		struct FSubmixEffectTapDelaySettings& InSettings;
 	}; SetSettings_Params Params;
 
 
@@ -2596,11 +2596,11 @@ inline void USubmixEffectTapDelayPreset::RemoveTap(int32_t TapId) {
 }
 
 // Function Synthesis.SubmixEffectTapDelayPreset.GetTapIds
-inline void USubmixEffectTapDelayPreset::GetTapIds(struct TArray<Unknown>& TapIds) {
+inline void USubmixEffectTapDelayPreset::GetTapIds(struct TArray<int32_t>& TapIds) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.SubmixEffectTapDelayPreset.GetTapIds");
 
 	struct GetTapIds_Params {
-		struct TArray<Unknown>& TapIds;
+		struct TArray<int32_t>& TapIds;
 	}; GetTapIds_Params Params;
 
 
@@ -2613,12 +2613,12 @@ inline void USubmixEffectTapDelayPreset::GetTapIds(struct TArray<Unknown>& TapId
 }
 
 // Function Synthesis.SubmixEffectTapDelayPreset.GetTap
-inline void USubmixEffectTapDelayPreset::GetTap(int32_t TapId, struct Unknown& TapInfo) {
+inline void USubmixEffectTapDelayPreset::GetTap(int32_t TapId, struct FTapDelayInfo& TapInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.SubmixEffectTapDelayPreset.GetTap");
 
 	struct GetTap_Params {
 		int32_t TapId;
-		struct Unknown& TapInfo;
+		struct FTapDelayInfo& TapInfo;
 	}; GetTap_Params Params;
 
 	Params.TapId = TapId;
@@ -2667,11 +2667,11 @@ inline void USubmixEffectTapDelayPreset::AddTap(int32_t& TapId) {
 }
 
 // Function Synthesis.Synth2DSlider.SetValue
-inline void USynth2DSlider::SetValue(struct Unknown InValue) {
+inline void USynth2DSlider::SetValue(struct FVector2D InValue) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.Synth2DSlider.SetValue");
 
 	struct SetValue_Params {
-		struct Unknown InValue;
+		struct FVector2D InValue;
 	}; SetValue_Params Params;
 
 	Params.InValue = InValue;
@@ -2697,11 +2697,11 @@ inline void USynth2DSlider::SetStepSize(float InValue) {
 }
 
 // Function Synthesis.Synth2DSlider.SetSliderHandleColor
-inline void USynth2DSlider::SetSliderHandleColor(struct Unknown InValue) {
+inline void USynth2DSlider::SetSliderHandleColor(struct FLinearColor InValue) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.Synth2DSlider.SetSliderHandleColor");
 
 	struct SetSliderHandleColor_Params {
-		struct Unknown InValue;
+		struct FLinearColor InValue;
 	}; SetSliderHandleColor_Params Params;
 
 	Params.InValue = InValue;
@@ -2742,12 +2742,12 @@ inline void USynth2DSlider::SetIndentHandle(char InValue) {
 }
 
 // Function Synthesis.Synth2DSlider.GetValue
-inline struct Unknown USynth2DSlider::GetValue() {
+inline struct FVector2D USynth2DSlider::GetValue() {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.Synth2DSlider.GetValue");
 
 	struct GetValue_Params {
 		
-		struct Unknown ReturnValue;
+		struct FVector2D ReturnValue;
 
 	}; GetValue_Params Params;
 
@@ -2775,11 +2775,11 @@ inline void UGranularSynth::SetSustainGain(float SustainGain) {
 }
 
 // Function Synthesis.GranularSynth.SetSoundWave
-inline void UGranularSynth::SetSoundWave(struct Unknown InSoundWave) {
+inline void UGranularSynth::SetSoundWave(struct USoundWave InSoundWave) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.GranularSynth.SetSoundWave");
 
 	struct SetSoundWave_Params {
-		struct Unknown InSoundWave;
+		struct USoundWave InSoundWave;
 	}; SetSoundWave_Params Params;
 
 	Params.InSoundWave = InSoundWave;
@@ -2820,13 +2820,13 @@ inline void UGranularSynth::SetReleaseTimeMsec(float ReleaseTimeMsec) {
 }
 
 // Function Synthesis.GranularSynth.SetPlayheadTime
-inline void UGranularSynth::SetPlayheadTime(float InPositionSec, float LerpTimeSec, enum class Unknow SeekType) {
+inline void UGranularSynth::SetPlayheadTime(float InPositionSec, float LerpTimeSec, enum class EGranularSynthSeekType SeekType) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.GranularSynth.SetPlayheadTime");
 
 	struct SetPlayheadTime_Params {
 		float InPositionSec;
 		float LerpTimeSec;
-		enum class Unknow SeekType;
+		enum class EGranularSynthSeekType SeekType;
 	}; SetPlayheadTime_Params Params;
 
 	Params.InPositionSec = InPositionSec;
@@ -2854,12 +2854,12 @@ inline void UGranularSynth::SetPlaybackSpeed(float InPlayheadRate) {
 }
 
 // Function Synthesis.GranularSynth.SetGrainVolume
-inline void UGranularSynth::SetGrainVolume(float BaseVolume, struct Unknown VolumeRange) {
+inline void UGranularSynth::SetGrainVolume(float BaseVolume, struct FVector2D VolumeRange) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.GranularSynth.SetGrainVolume");
 
 	struct SetGrainVolume_Params {
 		float BaseVolume;
-		struct Unknown VolumeRange;
+		struct FVector2D VolumeRange;
 	}; SetGrainVolume_Params Params;
 
 	Params.BaseVolume = BaseVolume;
@@ -2901,12 +2901,12 @@ inline void UGranularSynth::SetGrainProbability(float InGrainProbability) {
 }
 
 // Function Synthesis.GranularSynth.SetGrainPitch
-inline void UGranularSynth::SetGrainPitch(float BasePitch, struct Unknown PitchRange) {
+inline void UGranularSynth::SetGrainPitch(float BasePitch, struct FVector2D PitchRange) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.GranularSynth.SetGrainPitch");
 
 	struct SetGrainPitch_Params {
 		float BasePitch;
-		struct Unknown PitchRange;
+		struct FVector2D PitchRange;
 	}; SetGrainPitch_Params Params;
 
 	Params.BasePitch = BasePitch;
@@ -2918,12 +2918,12 @@ inline void UGranularSynth::SetGrainPitch(float BasePitch, struct Unknown PitchR
 }
 
 // Function Synthesis.GranularSynth.SetGrainPan
-inline void UGranularSynth::SetGrainPan(float BasePan, struct Unknown PanRange) {
+inline void UGranularSynth::SetGrainPan(float BasePan, struct FVector2D PanRange) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.GranularSynth.SetGrainPan");
 
 	struct SetGrainPan_Params {
 		float BasePan;
-		struct Unknown PanRange;
+		struct FVector2D PanRange;
 	}; SetGrainPan_Params Params;
 
 	Params.BasePan = BasePan;
@@ -2935,11 +2935,11 @@ inline void UGranularSynth::SetGrainPan(float BasePan, struct Unknown PanRange) 
 }
 
 // Function Synthesis.GranularSynth.SetGrainEnvelopeType
-inline void UGranularSynth::SetGrainEnvelopeType(enum class Unknow EnvelopeType) {
+inline void UGranularSynth::SetGrainEnvelopeType(enum class EGranularSynthEnvelopeType EnvelopeType) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.GranularSynth.SetGrainEnvelopeType");
 
 	struct SetGrainEnvelopeType_Params {
-		enum class Unknow EnvelopeType;
+		enum class EGranularSynthEnvelopeType EnvelopeType;
 	}; SetGrainEnvelopeType_Params Params;
 
 	Params.EnvelopeType = EnvelopeType;
@@ -2950,12 +2950,12 @@ inline void UGranularSynth::SetGrainEnvelopeType(enum class Unknow EnvelopeType)
 }
 
 // Function Synthesis.GranularSynth.SetGrainDuration
-inline void UGranularSynth::SetGrainDuration(float BaseDurationMsec, struct Unknown DurationRange) {
+inline void UGranularSynth::SetGrainDuration(float BaseDurationMsec, struct FVector2D DurationRange) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.GranularSynth.SetGrainDuration");
 
 	struct SetGrainDuration_Params {
 		float BaseDurationMsec;
-		struct Unknown DurationRange;
+		struct FVector2D DurationRange;
 	}; SetGrainDuration_Params Params;
 
 	Params.BaseDurationMsec = BaseDurationMsec;
@@ -3117,11 +3117,11 @@ inline void USynthComponentMonoWaveTable::SetSustainPedalState(char InSustainPed
 }
 
 // Function Synthesis.SynthComponentMonoWaveTable.SetPosLfoType
-inline void USynthComponentMonoWaveTable::SetPosLfoType(enum class Unknow InLfoType) {
+inline void USynthComponentMonoWaveTable::SetPosLfoType(enum class ESynthLFOType InLfoType) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.SynthComponentMonoWaveTable.SetPosLfoType");
 
 	struct SetPosLfoType_Params {
-		enum class Unknow InLfoType;
+		enum class ESynthLFOType InLfoType;
 	}; SetPosLfoType_Params Params;
 
 	Params.InLfoType = InLfoType;
@@ -3521,11 +3521,11 @@ inline char USynthComponentMonoWaveTable::SetCurveTangent(int32_t TableIndex, fl
 }
 
 // Function Synthesis.SynthComponentMonoWaveTable.SetCurveInterpolationType
-inline char USynthComponentMonoWaveTable::SetCurveInterpolationType(enum class Unknow InterpolationType, int32_t TableIndex) {
+inline char USynthComponentMonoWaveTable::SetCurveInterpolationType(enum class CurveInterpolationType InterpolationType, int32_t TableIndex) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.SynthComponentMonoWaveTable.SetCurveInterpolationType");
 
 	struct SetCurveInterpolationType_Params {
-		enum class Unknow InterpolationType;
+		enum class CurveInterpolationType InterpolationType;
 		int32_t TableIndex;
 		char ReturnValue;
 
@@ -3759,12 +3759,12 @@ inline int32_t USynthComponentMonoWaveTable::GetMaxTableIndex() {
 }
 
 // Function Synthesis.SynthComponentMonoWaveTable.GetKeyFrameValuesForTable
-inline struct TArray<Unknown> USynthComponentMonoWaveTable::GetKeyFrameValuesForTable(float TableIndex) {
+inline struct TArray<float> USynthComponentMonoWaveTable::GetKeyFrameValuesForTable(float TableIndex) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.SynthComponentMonoWaveTable.GetKeyFrameValuesForTable");
 
 	struct GetKeyFrameValuesForTable_Params {
 		float TableIndex;
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<float> ReturnValue;
 
 	}; GetKeyFrameValuesForTable_Params Params;
 
@@ -3797,11 +3797,11 @@ inline float USynthComponentMonoWaveTable::GetCurveTangent(int32_t TableIndex) {
 }
 
 // Function Synthesis.SynthSamplePlayer.SetSoundWave
-inline void USynthSamplePlayer::SetSoundWave(struct Unknown InSoundWave) {
+inline void USynthSamplePlayer::SetSoundWave(struct USoundWave InSoundWave) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.SynthSamplePlayer.SetSoundWave");
 
 	struct SetSoundWave_Params {
-		struct Unknown InSoundWave;
+		struct USoundWave InSoundWave;
 	}; SetSoundWave_Params Params;
 
 	Params.InSoundWave = InSoundWave;
@@ -3859,12 +3859,12 @@ inline void USynthSamplePlayer::SetPitch(float InPitch, float TimeSec) {
 }
 
 // Function Synthesis.SynthSamplePlayer.SeekToTime
-inline void USynthSamplePlayer::SeekToTime(float TimeSec, enum class Unknow SeekType, char bWrap) {
+inline void USynthSamplePlayer::SeekToTime(float TimeSec, enum class ESamplePlayerSeekType SeekType, char bWrap) {
 	static auto fn = UObject::FindObject<UFunction>("Function Synthesis.SynthSamplePlayer.SeekToTime");
 
 	struct SeekToTime_Params {
 		float TimeSec;
-		enum class Unknow SeekType;
+		enum class ESamplePlayerSeekType SeekType;
 		char bWrap;
 	}; SeekToTime_Params Params;
 

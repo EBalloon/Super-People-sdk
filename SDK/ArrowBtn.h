@@ -3,12 +3,12 @@ class UArrowBtn_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Button_68; // 0x250 (8)
-	struct Unknown Normal; // 0x258 (8)
-	struct Unknown Over; // 0x260 (8)
-	struct Unknown Overlay_113; // 0x268 (8)
-	struct Unknown Press; // 0x270 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UButton Button_68; // 0x250 (8)
+	struct UImage Normal; // 0x258 (8)
+	struct UImage Over; // 0x260 (8)
+	struct UOverlay Overlay_113; // 0x268 (8)
+	struct UImage Press; // 0x270 (8)
 	struct FMulticastInlineDelegate CilckBtn; // 0x278 (16)
 	char IsLeft : 0; // 0x288 (1)
 

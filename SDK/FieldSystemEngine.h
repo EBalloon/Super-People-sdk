@@ -3,7 +3,7 @@ class AFieldSystemActor : public UActor {
 
 public:
 
-	struct Unknown FieldSystemComponent; // 0x318 (8)
+	struct UFieldSystemComponent FieldSystemComponent; // 0x318 (8)
 };
 
 // Class FieldSystemEngine.FieldSystemComponent
@@ -11,18 +11,18 @@ class UFieldSystemComponent : public UPrimitiveComponent {
 
 public:
 
-	struct Unknown FieldSystem; // 0x4A8 (8)
-	struct TArray<Unknown> SupportedSolvers; // 0x4C0 (16)
+	struct UFieldSystem FieldSystem; // 0x4A8 (8)
+	struct TArray<struct TSoftObjectPtr<AChaosSolverActor>> SupportedSolvers; // 0x4C0 (16)
 
 	void ResetFieldSystem(); // Function FieldSystemEngine.FieldSystemComponent.ResetFieldSystem(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x47E1A00>
-	void ApplyUniformVectorFalloffForce(char Enabled, struct Unknown Position, struct Unknown Direction, float Radius, float Magnitude); // Function FieldSystemEngine.FieldSystemComponent.ApplyUniformVectorFalloffForce(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x47E1850>
-	void ApplyStrainField(char Enabled, struct Unknown Position, float Radius, float Magnitude, int32_t Iterations); // Function FieldSystemEngine.FieldSystemComponent.ApplyStrainField(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x47E16A0>
-	void ApplyStayDynamicField(char Enabled, struct Unknown Position, float Radius); // Function FieldSystemEngine.FieldSystemComponent.ApplyStayDynamicField(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x47E1580>
-	void ApplyRadialVectorFalloffForce(char Enabled, struct Unknown Position, float Radius, float Magnitude); // Function FieldSystemEngine.FieldSystemComponent.ApplyRadialVectorFalloffForce(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x47E1410>
-	void ApplyRadialForce(char Enabled, struct Unknown Position, float Magnitude); // Function FieldSystemEngine.FieldSystemComponent.ApplyRadialForce(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x47E12F0>
-	void ApplyPhysicsField(char Enabled, char Target, struct Unknown MetaData, struct Unknown Field); // Function FieldSystemEngine.FieldSystemComponent.ApplyPhysicsField(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x47E11A0>
-	void ApplyLinearForce(char Enabled, struct Unknown Direction, float Magnitude); // Function FieldSystemEngine.FieldSystemComponent.ApplyLinearForce(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x47E1080>
-	void AddFieldCommand(char Enabled, char Target, struct Unknown MetaData, struct Unknown Field); // Function FieldSystemEngine.FieldSystemComponent.AddFieldCommand(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x47E0F30>
+	void ApplyUniformVectorFalloffForce(char Enabled, struct FVector Position, struct FVector Direction, float Radius, float Magnitude); // Function FieldSystemEngine.FieldSystemComponent.ApplyUniformVectorFalloffForce(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x47E1850>
+	void ApplyStrainField(char Enabled, struct FVector Position, float Radius, float Magnitude, int32_t Iterations); // Function FieldSystemEngine.FieldSystemComponent.ApplyStrainField(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x47E16A0>
+	void ApplyStayDynamicField(char Enabled, struct FVector Position, float Radius); // Function FieldSystemEngine.FieldSystemComponent.ApplyStayDynamicField(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x47E1580>
+	void ApplyRadialVectorFalloffForce(char Enabled, struct FVector Position, float Radius, float Magnitude); // Function FieldSystemEngine.FieldSystemComponent.ApplyRadialVectorFalloffForce(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x47E1410>
+	void ApplyRadialForce(char Enabled, struct FVector Position, float Magnitude); // Function FieldSystemEngine.FieldSystemComponent.ApplyRadialForce(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x47E12F0>
+	void ApplyPhysicsField(char Enabled, char Target, struct UFieldSystemMetaData MetaData, struct UFieldNodeBase Field); // Function FieldSystemEngine.FieldSystemComponent.ApplyPhysicsField(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x47E11A0>
+	void ApplyLinearForce(char Enabled, struct FVector Direction, float Magnitude); // Function FieldSystemEngine.FieldSystemComponent.ApplyLinearForce(Final|Native|Public|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x47E1080>
+	void AddFieldCommand(char Enabled, char Target, struct UFieldSystemMetaData MetaData, struct UFieldNodeBase Field); // Function FieldSystemEngine.FieldSystemComponent.AddFieldCommand(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x47E0F30>
 };
 
 // Class FieldSystemEngine.FieldSystemMetaDataIteration
@@ -32,7 +32,7 @@ public:
 
 	int32_t Iterations; // 0xB0 (4)
 
-	struct Unknown SetMetaDataIteration(int32_t Iterations); // Function FieldSystemEngine.FieldSystemMetaDataIteration.SetMetaDataIteration(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x47E1D50>
+	struct UFieldSystemMetaDataIteration SetMetaDataIteration(int32_t Iterations); // Function FieldSystemEngine.FieldSystemMetaDataIteration.SetMetaDataIteration(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x47E1D50>
 };
 
 // Class FieldSystemEngine.FieldSystemMetaDataProcessingResolution
@@ -42,7 +42,7 @@ public:
 
 	char ResolutionType; // 0xB0 (1)
 
-	struct Unknown SetMetaDataaProcessingResolutionType(char ResolutionType); // Function FieldSystemEngine.FieldSystemMetaDataProcessingResolution.SetMetaDataaProcessingResolutionType(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x47E1DE0>
+	struct UFieldSystemMetaDataProcessingResolution SetMetaDataaProcessingResolutionType(char ResolutionType); // Function FieldSystemEngine.FieldSystemMetaDataProcessingResolution.SetMetaDataaProcessingResolutionType(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x47E1DE0>
 };
 
 // Class FieldSystemEngine.UniformInteger
@@ -52,7 +52,7 @@ public:
 
 	int32_t Magnitude; // 0xB0 (4)
 
-	struct Unknown SetUniformInteger(int32_t Magnitude); // Function FieldSystemEngine.UniformInteger.SetUniformInteger(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x47E1D50>
+	struct UUniformInteger SetUniformInteger(int32_t Magnitude); // Function FieldSystemEngine.UniformInteger.SetUniformInteger(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x47E1D50>
 };
 
 // Class FieldSystemEngine.RadialIntMask
@@ -61,12 +61,12 @@ class URadialIntMask : public UFieldNodeInt {
 public:
 
 	float Radius; // 0xB0 (4)
-	struct Unknown Position; // 0xB4 (12)
+	struct FVector Position; // 0xB4 (12)
 	int32_t InteriorValue; // 0xC0 (4)
 	int32_t ExteriorValue; // 0xC4 (4)
 	char SetMaskCondition; // 0xC8 (1)
 
-	struct Unknown SetRadialIntMask(float Radius, struct Unknown Position, int32_t InteriorValue, int32_t ExteriorValue, char SetMaskConditionIn); // Function FieldSystemEngine.RadialIntMask.SetRadialIntMask(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x47E25E0>
+	struct URadialIntMask SetRadialIntMask(float Radius, struct FVector Position, int32_t InteriorValue, int32_t ExteriorValue, char SetMaskConditionIn); // Function FieldSystemEngine.RadialIntMask.SetRadialIntMask(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x47E25E0>
 };
 
 // Class FieldSystemEngine.UniformScalar
@@ -76,7 +76,7 @@ public:
 
 	float Magnitude; // 0xB0 (4)
 
-	struct Unknown SetUniformScalar(float Magnitude); // Function FieldSystemEngine.UniformScalar.SetUniformScalar(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x47E2880>
+	struct UUniformScalar SetUniformScalar(float Magnitude); // Function FieldSystemEngine.UniformScalar.SetUniformScalar(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x47E2880>
 };
 
 // Class FieldSystemEngine.RadialFalloff
@@ -89,10 +89,10 @@ public:
 	float MaxRange; // 0xB8 (4)
 	float Default; // 0xBC (4)
 	float Radius; // 0xC0 (4)
-	struct Unknown Position; // 0xC4 (12)
+	struct FVector Position; // 0xC4 (12)
 	char Falloff; // 0xD0 (1)
 
-	struct Unknown SetRadialFalloff(float Magnitude, float MinRange, float MaxRange, float Default, float Radius, struct Unknown Position, char Falloff); // Function FieldSystemEngine.RadialFalloff.SetRadialFalloff(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x47E23C0>
+	struct URadialFalloff SetRadialFalloff(float Magnitude, float MinRange, float MaxRange, float Default, float Radius, struct FVector Position, char Falloff); // Function FieldSystemEngine.RadialFalloff.SetRadialFalloff(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x47E23C0>
 };
 
 // Class FieldSystemEngine.PlaneFalloff
@@ -105,11 +105,11 @@ public:
 	float MaxRange; // 0xB8 (4)
 	float Default; // 0xBC (4)
 	float Distance; // 0xC0 (4)
-	struct Unknown Position; // 0xC4 (12)
-	struct Unknown Normal; // 0xD0 (12)
+	struct FVector Position; // 0xC4 (12)
+	struct FVector Normal; // 0xD0 (12)
 	char Falloff; // 0xDC (1)
 
-	struct Unknown SetPlaneFalloff(float Magnitude, float MinRange, float MaxRange, float Default, float Distance, struct Unknown Position, struct Unknown Normal, char Falloff); // Function FieldSystemEngine.PlaneFalloff.SetPlaneFalloff(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x47E2140>
+	struct UPlaneFalloff SetPlaneFalloff(float Magnitude, float MinRange, float MaxRange, float Default, float Distance, struct FVector Position, struct FVector Normal, char Falloff); // Function FieldSystemEngine.PlaneFalloff.SetPlaneFalloff(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x47E2140>
 };
 
 // Class FieldSystemEngine.BoxFalloff
@@ -121,10 +121,10 @@ public:
 	float MinRange; // 0xB4 (4)
 	float MaxRange; // 0xB8 (4)
 	float Default; // 0xBC (4)
-	struct Unknown Transform; // 0xC0 (48)
+	struct FTransform Transform; // 0xC0 (48)
 	char Falloff; // 0xF0 (1)
 
-	struct Unknown SetBoxFalloff(float Magnitude, float MinRange, float MaxRange, float Default, struct Unknown Transform, char Falloff); // Function FieldSystemEngine.BoxFalloff.SetBoxFalloff(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x47E1A20>
+	struct UBoxFalloff SetBoxFalloff(float Magnitude, float MinRange, float MaxRange, float Default, struct FTransform Transform, char Falloff); // Function FieldSystemEngine.BoxFalloff.SetBoxFalloff(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x47E1A20>
 };
 
 // Class FieldSystemEngine.NoiseField
@@ -134,9 +134,9 @@ public:
 
 	float MinRange; // 0xB0 (4)
 	float MaxRange; // 0xB4 (4)
-	struct Unknown Transform; // 0xC0 (48)
+	struct FTransform Transform; // 0xC0 (48)
 
-	struct Unknown SetNoiseField(float MinRange, float MaxRange, struct Unknown Transform); // Function FieldSystemEngine.NoiseField.SetNoiseField(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x47E1E70>
+	struct UNoiseField SetNoiseField(float MinRange, float MaxRange, struct FTransform Transform); // Function FieldSystemEngine.NoiseField.SetNoiseField(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x47E1E70>
 };
 
 // Class FieldSystemEngine.UniformVector
@@ -145,9 +145,9 @@ class UUniformVector : public UFieldNodeVector {
 public:
 
 	float Magnitude; // 0xB0 (4)
-	struct Unknown Direction; // 0xB4 (12)
+	struct FVector Direction; // 0xB4 (12)
 
-	struct Unknown SetUniformVector(float Magnitude, struct Unknown Direction); // Function FieldSystemEngine.UniformVector.SetUniformVector(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x47E27A0>
+	struct UUniformVector SetUniformVector(float Magnitude, struct FVector Direction); // Function FieldSystemEngine.UniformVector.SetUniformVector(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x47E27A0>
 };
 
 // Class FieldSystemEngine.RadialVector
@@ -156,9 +156,9 @@ class URadialVector : public UFieldNodeVector {
 public:
 
 	float Magnitude; // 0xB0 (4)
-	struct Unknown Position; // 0xB4 (12)
+	struct FVector Position; // 0xB4 (12)
 
-	struct Unknown SetRadialVector(float Magnitude, struct Unknown Position); // Function FieldSystemEngine.RadialVector.SetRadialVector(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x47E27A0>
+	struct URadialVector SetRadialVector(float Magnitude, struct FVector Position); // Function FieldSystemEngine.RadialVector.SetRadialVector(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x47E27A0>
 };
 
 // Class FieldSystemEngine.RandomVector
@@ -168,7 +168,7 @@ public:
 
 	float Magnitude; // 0xB0 (4)
 
-	struct Unknown SetRandomVector(float Magnitude); // Function FieldSystemEngine.RandomVector.SetRandomVector(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x47E2880>
+	struct URandomVector SetRandomVector(float Magnitude); // Function FieldSystemEngine.RandomVector.SetRandomVector(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x47E2880>
 };
 
 // Class FieldSystemEngine.OperatorField
@@ -177,11 +177,11 @@ class UOperatorField : public UFieldNodeBase {
 public:
 
 	float Magnitude; // 0xB0 (4)
-	struct Unknown RightField; // 0xB8 (8)
-	struct Unknown LeftField; // 0xC0 (8)
+	struct UFieldNodeBase RightField; // 0xB8 (8)
+	struct UFieldNodeBase LeftField; // 0xC0 (8)
 	char Operation; // 0xC8 (1)
 
-	struct Unknown SetOperatorField(float Magnitude, struct Unknown RightField, struct Unknown LeftField, char Operation); // Function FieldSystemEngine.OperatorField.SetOperatorField(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x47E1FF0>
+	struct UOperatorField SetOperatorField(float Magnitude, struct UFieldNodeBase RightField, struct UFieldNodeBase LeftField, char Operation); // Function FieldSystemEngine.OperatorField.SetOperatorField(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x47E1FF0>
 };
 
 // Class FieldSystemEngine.ToIntegerField
@@ -189,9 +189,9 @@ class UToIntegerField : public UFieldNodeInt {
 
 public:
 
-	struct Unknown FloatField; // 0xB0 (8)
+	struct UFieldNodeFloat FloatField; // 0xB0 (8)
 
-	struct Unknown SetToIntegerField(struct Unknown FloatField); // Function FieldSystemEngine.ToIntegerField.SetToIntegerField(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x47E2940>
+	struct UToIntegerField SetToIntegerField(struct UFieldNodeFloat FloatField); // Function FieldSystemEngine.ToIntegerField.SetToIntegerField(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x47E2940>
 };
 
 // Class FieldSystemEngine.ToFloatField
@@ -199,9 +199,9 @@ class UToFloatField : public UFieldNodeFloat {
 
 public:
 
-	struct Unknown IntField; // 0xB0 (8)
+	struct UFieldNodeInt IntField; // 0xB0 (8)
 
-	struct Unknown SetToFloatField(struct Unknown IntegerField); // Function FieldSystemEngine.ToFloatField.SetToFloatField(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x47E2940>
+	struct UToFloatField SetToFloatField(struct UFieldNodeInt IntegerField); // Function FieldSystemEngine.ToFloatField.SetToFloatField(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x47E2940>
 };
 
 // Class FieldSystemEngine.CullingField
@@ -209,11 +209,11 @@ class UCullingField : public UFieldNodeBase {
 
 public:
 
-	struct Unknown Culling; // 0xB0 (8)
-	struct Unknown Field; // 0xB8 (8)
+	struct UFieldNodeBase Culling; // 0xB0 (8)
+	struct UFieldNodeBase Field; // 0xB8 (8)
 	char Operation; // 0xC0 (1)
 
-	struct Unknown SetCullingField(struct Unknown Culling, struct Unknown Field, char Operation); // Function FieldSystemEngine.CullingField.SetCullingField(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x47E1C50>
+	struct UCullingField SetCullingField(struct UFieldNodeBase Culling, struct UFieldNodeBase Field, char Operation); // Function FieldSystemEngine.CullingField.SetCullingField(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x47E1C50>
 };
 
 // Function FieldSystemEngine.FieldSystemComponent.ResetFieldSystem
@@ -231,13 +231,13 @@ inline void UFieldSystemComponent::ResetFieldSystem() {
 }
 
 // Function FieldSystemEngine.FieldSystemComponent.ApplyUniformVectorFalloffForce
-inline void UFieldSystemComponent::ApplyUniformVectorFalloffForce(char Enabled, struct Unknown Position, struct Unknown Direction, float Radius, float Magnitude) {
+inline void UFieldSystemComponent::ApplyUniformVectorFalloffForce(char Enabled, struct FVector Position, struct FVector Direction, float Radius, float Magnitude) {
 	static auto fn = UObject::FindObject<UFunction>("Function FieldSystemEngine.FieldSystemComponent.ApplyUniformVectorFalloffForce");
 
 	struct ApplyUniformVectorFalloffForce_Params {
 		char Enabled;
-		struct Unknown Position;
-		struct Unknown Direction;
+		struct FVector Position;
+		struct FVector Direction;
 		float Radius;
 		float Magnitude;
 	}; ApplyUniformVectorFalloffForce_Params Params;
@@ -254,12 +254,12 @@ inline void UFieldSystemComponent::ApplyUniformVectorFalloffForce(char Enabled, 
 }
 
 // Function FieldSystemEngine.FieldSystemComponent.ApplyStrainField
-inline void UFieldSystemComponent::ApplyStrainField(char Enabled, struct Unknown Position, float Radius, float Magnitude, int32_t Iterations) {
+inline void UFieldSystemComponent::ApplyStrainField(char Enabled, struct FVector Position, float Radius, float Magnitude, int32_t Iterations) {
 	static auto fn = UObject::FindObject<UFunction>("Function FieldSystemEngine.FieldSystemComponent.ApplyStrainField");
 
 	struct ApplyStrainField_Params {
 		char Enabled;
-		struct Unknown Position;
+		struct FVector Position;
 		float Radius;
 		float Magnitude;
 		int32_t Iterations;
@@ -277,12 +277,12 @@ inline void UFieldSystemComponent::ApplyStrainField(char Enabled, struct Unknown
 }
 
 // Function FieldSystemEngine.FieldSystemComponent.ApplyStayDynamicField
-inline void UFieldSystemComponent::ApplyStayDynamicField(char Enabled, struct Unknown Position, float Radius) {
+inline void UFieldSystemComponent::ApplyStayDynamicField(char Enabled, struct FVector Position, float Radius) {
 	static auto fn = UObject::FindObject<UFunction>("Function FieldSystemEngine.FieldSystemComponent.ApplyStayDynamicField");
 
 	struct ApplyStayDynamicField_Params {
 		char Enabled;
-		struct Unknown Position;
+		struct FVector Position;
 		float Radius;
 	}; ApplyStayDynamicField_Params Params;
 
@@ -296,12 +296,12 @@ inline void UFieldSystemComponent::ApplyStayDynamicField(char Enabled, struct Un
 }
 
 // Function FieldSystemEngine.FieldSystemComponent.ApplyRadialVectorFalloffForce
-inline void UFieldSystemComponent::ApplyRadialVectorFalloffForce(char Enabled, struct Unknown Position, float Radius, float Magnitude) {
+inline void UFieldSystemComponent::ApplyRadialVectorFalloffForce(char Enabled, struct FVector Position, float Radius, float Magnitude) {
 	static auto fn = UObject::FindObject<UFunction>("Function FieldSystemEngine.FieldSystemComponent.ApplyRadialVectorFalloffForce");
 
 	struct ApplyRadialVectorFalloffForce_Params {
 		char Enabled;
-		struct Unknown Position;
+		struct FVector Position;
 		float Radius;
 		float Magnitude;
 	}; ApplyRadialVectorFalloffForce_Params Params;
@@ -317,12 +317,12 @@ inline void UFieldSystemComponent::ApplyRadialVectorFalloffForce(char Enabled, s
 }
 
 // Function FieldSystemEngine.FieldSystemComponent.ApplyRadialForce
-inline void UFieldSystemComponent::ApplyRadialForce(char Enabled, struct Unknown Position, float Magnitude) {
+inline void UFieldSystemComponent::ApplyRadialForce(char Enabled, struct FVector Position, float Magnitude) {
 	static auto fn = UObject::FindObject<UFunction>("Function FieldSystemEngine.FieldSystemComponent.ApplyRadialForce");
 
 	struct ApplyRadialForce_Params {
 		char Enabled;
-		struct Unknown Position;
+		struct FVector Position;
 		float Magnitude;
 	}; ApplyRadialForce_Params Params;
 
@@ -336,14 +336,14 @@ inline void UFieldSystemComponent::ApplyRadialForce(char Enabled, struct Unknown
 }
 
 // Function FieldSystemEngine.FieldSystemComponent.ApplyPhysicsField
-inline void UFieldSystemComponent::ApplyPhysicsField(char Enabled, char Target, struct Unknown MetaData, struct Unknown Field) {
+inline void UFieldSystemComponent::ApplyPhysicsField(char Enabled, char Target, struct UFieldSystemMetaData MetaData, struct UFieldNodeBase Field) {
 	static auto fn = UObject::FindObject<UFunction>("Function FieldSystemEngine.FieldSystemComponent.ApplyPhysicsField");
 
 	struct ApplyPhysicsField_Params {
 		char Enabled;
 		char Target;
-		struct Unknown MetaData;
-		struct Unknown Field;
+		struct UFieldSystemMetaData MetaData;
+		struct UFieldNodeBase Field;
 	}; ApplyPhysicsField_Params Params;
 
 	Params.Enabled = Enabled;
@@ -357,12 +357,12 @@ inline void UFieldSystemComponent::ApplyPhysicsField(char Enabled, char Target, 
 }
 
 // Function FieldSystemEngine.FieldSystemComponent.ApplyLinearForce
-inline void UFieldSystemComponent::ApplyLinearForce(char Enabled, struct Unknown Direction, float Magnitude) {
+inline void UFieldSystemComponent::ApplyLinearForce(char Enabled, struct FVector Direction, float Magnitude) {
 	static auto fn = UObject::FindObject<UFunction>("Function FieldSystemEngine.FieldSystemComponent.ApplyLinearForce");
 
 	struct ApplyLinearForce_Params {
 		char Enabled;
-		struct Unknown Direction;
+		struct FVector Direction;
 		float Magnitude;
 	}; ApplyLinearForce_Params Params;
 
@@ -376,14 +376,14 @@ inline void UFieldSystemComponent::ApplyLinearForce(char Enabled, struct Unknown
 }
 
 // Function FieldSystemEngine.FieldSystemComponent.AddFieldCommand
-inline void UFieldSystemComponent::AddFieldCommand(char Enabled, char Target, struct Unknown MetaData, struct Unknown Field) {
+inline void UFieldSystemComponent::AddFieldCommand(char Enabled, char Target, struct UFieldSystemMetaData MetaData, struct UFieldNodeBase Field) {
 	static auto fn = UObject::FindObject<UFunction>("Function FieldSystemEngine.FieldSystemComponent.AddFieldCommand");
 
 	struct AddFieldCommand_Params {
 		char Enabled;
 		char Target;
-		struct Unknown MetaData;
-		struct Unknown Field;
+		struct UFieldSystemMetaData MetaData;
+		struct UFieldNodeBase Field;
 	}; AddFieldCommand_Params Params;
 
 	Params.Enabled = Enabled;
@@ -397,12 +397,12 @@ inline void UFieldSystemComponent::AddFieldCommand(char Enabled, char Target, st
 }
 
 // Function FieldSystemEngine.FieldSystemMetaDataIteration.SetMetaDataIteration
-inline struct Unknown UFieldSystemMetaDataIteration::SetMetaDataIteration(int32_t Iterations) {
+inline struct UFieldSystemMetaDataIteration UFieldSystemMetaDataIteration::SetMetaDataIteration(int32_t Iterations) {
 	static auto fn = UObject::FindObject<UFunction>("Function FieldSystemEngine.FieldSystemMetaDataIteration.SetMetaDataIteration");
 
 	struct SetMetaDataIteration_Params {
 		int32_t Iterations;
-		struct Unknown ReturnValue;
+		struct UFieldSystemMetaDataIteration ReturnValue;
 
 	}; SetMetaDataIteration_Params Params;
 
@@ -416,12 +416,12 @@ inline struct Unknown UFieldSystemMetaDataIteration::SetMetaDataIteration(int32_
 }
 
 // Function FieldSystemEngine.FieldSystemMetaDataProcessingResolution.SetMetaDataaProcessingResolutionType
-inline struct Unknown UFieldSystemMetaDataProcessingResolution::SetMetaDataaProcessingResolutionType(char ResolutionType) {
+inline struct UFieldSystemMetaDataProcessingResolution UFieldSystemMetaDataProcessingResolution::SetMetaDataaProcessingResolutionType(char ResolutionType) {
 	static auto fn = UObject::FindObject<UFunction>("Function FieldSystemEngine.FieldSystemMetaDataProcessingResolution.SetMetaDataaProcessingResolutionType");
 
 	struct SetMetaDataaProcessingResolutionType_Params {
 		char ResolutionType;
-		struct Unknown ReturnValue;
+		struct UFieldSystemMetaDataProcessingResolution ReturnValue;
 
 	}; SetMetaDataaProcessingResolutionType_Params Params;
 
@@ -435,12 +435,12 @@ inline struct Unknown UFieldSystemMetaDataProcessingResolution::SetMetaDataaProc
 }
 
 // Function FieldSystemEngine.UniformInteger.SetUniformInteger
-inline struct Unknown UUniformInteger::SetUniformInteger(int32_t Magnitude) {
+inline struct UUniformInteger UUniformInteger::SetUniformInteger(int32_t Magnitude) {
 	static auto fn = UObject::FindObject<UFunction>("Function FieldSystemEngine.UniformInteger.SetUniformInteger");
 
 	struct SetUniformInteger_Params {
 		int32_t Magnitude;
-		struct Unknown ReturnValue;
+		struct UUniformInteger ReturnValue;
 
 	}; SetUniformInteger_Params Params;
 
@@ -454,16 +454,16 @@ inline struct Unknown UUniformInteger::SetUniformInteger(int32_t Magnitude) {
 }
 
 // Function FieldSystemEngine.RadialIntMask.SetRadialIntMask
-inline struct Unknown URadialIntMask::SetRadialIntMask(float Radius, struct Unknown Position, int32_t InteriorValue, int32_t ExteriorValue, char SetMaskConditionIn) {
+inline struct URadialIntMask URadialIntMask::SetRadialIntMask(float Radius, struct FVector Position, int32_t InteriorValue, int32_t ExteriorValue, char SetMaskConditionIn) {
 	static auto fn = UObject::FindObject<UFunction>("Function FieldSystemEngine.RadialIntMask.SetRadialIntMask");
 
 	struct SetRadialIntMask_Params {
 		float Radius;
-		struct Unknown Position;
+		struct FVector Position;
 		int32_t InteriorValue;
 		int32_t ExteriorValue;
 		char SetMaskConditionIn;
-		struct Unknown ReturnValue;
+		struct URadialIntMask ReturnValue;
 
 	}; SetRadialIntMask_Params Params;
 
@@ -481,12 +481,12 @@ inline struct Unknown URadialIntMask::SetRadialIntMask(float Radius, struct Unkn
 }
 
 // Function FieldSystemEngine.UniformScalar.SetUniformScalar
-inline struct Unknown UUniformScalar::SetUniformScalar(float Magnitude) {
+inline struct UUniformScalar UUniformScalar::SetUniformScalar(float Magnitude) {
 	static auto fn = UObject::FindObject<UFunction>("Function FieldSystemEngine.UniformScalar.SetUniformScalar");
 
 	struct SetUniformScalar_Params {
 		float Magnitude;
-		struct Unknown ReturnValue;
+		struct UUniformScalar ReturnValue;
 
 	}; SetUniformScalar_Params Params;
 
@@ -500,7 +500,7 @@ inline struct Unknown UUniformScalar::SetUniformScalar(float Magnitude) {
 }
 
 // Function FieldSystemEngine.RadialFalloff.SetRadialFalloff
-inline struct Unknown URadialFalloff::SetRadialFalloff(float Magnitude, float MinRange, float MaxRange, float Default, float Radius, struct Unknown Position, char Falloff) {
+inline struct URadialFalloff URadialFalloff::SetRadialFalloff(float Magnitude, float MinRange, float MaxRange, float Default, float Radius, struct FVector Position, char Falloff) {
 	static auto fn = UObject::FindObject<UFunction>("Function FieldSystemEngine.RadialFalloff.SetRadialFalloff");
 
 	struct SetRadialFalloff_Params {
@@ -509,9 +509,9 @@ inline struct Unknown URadialFalloff::SetRadialFalloff(float Magnitude, float Mi
 		float MaxRange;
 		float Default;
 		float Radius;
-		struct Unknown Position;
+		struct FVector Position;
 		char Falloff;
-		struct Unknown ReturnValue;
+		struct URadialFalloff ReturnValue;
 
 	}; SetRadialFalloff_Params Params;
 
@@ -531,7 +531,7 @@ inline struct Unknown URadialFalloff::SetRadialFalloff(float Magnitude, float Mi
 }
 
 // Function FieldSystemEngine.PlaneFalloff.SetPlaneFalloff
-inline struct Unknown UPlaneFalloff::SetPlaneFalloff(float Magnitude, float MinRange, float MaxRange, float Default, float Distance, struct Unknown Position, struct Unknown Normal, char Falloff) {
+inline struct UPlaneFalloff UPlaneFalloff::SetPlaneFalloff(float Magnitude, float MinRange, float MaxRange, float Default, float Distance, struct FVector Position, struct FVector Normal, char Falloff) {
 	static auto fn = UObject::FindObject<UFunction>("Function FieldSystemEngine.PlaneFalloff.SetPlaneFalloff");
 
 	struct SetPlaneFalloff_Params {
@@ -540,10 +540,10 @@ inline struct Unknown UPlaneFalloff::SetPlaneFalloff(float Magnitude, float MinR
 		float MaxRange;
 		float Default;
 		float Distance;
-		struct Unknown Position;
-		struct Unknown Normal;
+		struct FVector Position;
+		struct FVector Normal;
 		char Falloff;
-		struct Unknown ReturnValue;
+		struct UPlaneFalloff ReturnValue;
 
 	}; SetPlaneFalloff_Params Params;
 
@@ -564,7 +564,7 @@ inline struct Unknown UPlaneFalloff::SetPlaneFalloff(float Magnitude, float MinR
 }
 
 // Function FieldSystemEngine.BoxFalloff.SetBoxFalloff
-inline struct Unknown UBoxFalloff::SetBoxFalloff(float Magnitude, float MinRange, float MaxRange, float Default, struct Unknown Transform, char Falloff) {
+inline struct UBoxFalloff UBoxFalloff::SetBoxFalloff(float Magnitude, float MinRange, float MaxRange, float Default, struct FTransform Transform, char Falloff) {
 	static auto fn = UObject::FindObject<UFunction>("Function FieldSystemEngine.BoxFalloff.SetBoxFalloff");
 
 	struct SetBoxFalloff_Params {
@@ -572,9 +572,9 @@ inline struct Unknown UBoxFalloff::SetBoxFalloff(float Magnitude, float MinRange
 		float MinRange;
 		float MaxRange;
 		float Default;
-		struct Unknown Transform;
+		struct FTransform Transform;
 		char Falloff;
-		struct Unknown ReturnValue;
+		struct UBoxFalloff ReturnValue;
 
 	}; SetBoxFalloff_Params Params;
 
@@ -593,14 +593,14 @@ inline struct Unknown UBoxFalloff::SetBoxFalloff(float Magnitude, float MinRange
 }
 
 // Function FieldSystemEngine.NoiseField.SetNoiseField
-inline struct Unknown UNoiseField::SetNoiseField(float MinRange, float MaxRange, struct Unknown Transform) {
+inline struct UNoiseField UNoiseField::SetNoiseField(float MinRange, float MaxRange, struct FTransform Transform) {
 	static auto fn = UObject::FindObject<UFunction>("Function FieldSystemEngine.NoiseField.SetNoiseField");
 
 	struct SetNoiseField_Params {
 		float MinRange;
 		float MaxRange;
-		struct Unknown Transform;
-		struct Unknown ReturnValue;
+		struct FTransform Transform;
+		struct UNoiseField ReturnValue;
 
 	}; SetNoiseField_Params Params;
 
@@ -616,13 +616,13 @@ inline struct Unknown UNoiseField::SetNoiseField(float MinRange, float MaxRange,
 }
 
 // Function FieldSystemEngine.UniformVector.SetUniformVector
-inline struct Unknown UUniformVector::SetUniformVector(float Magnitude, struct Unknown Direction) {
+inline struct UUniformVector UUniformVector::SetUniformVector(float Magnitude, struct FVector Direction) {
 	static auto fn = UObject::FindObject<UFunction>("Function FieldSystemEngine.UniformVector.SetUniformVector");
 
 	struct SetUniformVector_Params {
 		float Magnitude;
-		struct Unknown Direction;
-		struct Unknown ReturnValue;
+		struct FVector Direction;
+		struct UUniformVector ReturnValue;
 
 	}; SetUniformVector_Params Params;
 
@@ -637,13 +637,13 @@ inline struct Unknown UUniformVector::SetUniformVector(float Magnitude, struct U
 }
 
 // Function FieldSystemEngine.RadialVector.SetRadialVector
-inline struct Unknown URadialVector::SetRadialVector(float Magnitude, struct Unknown Position) {
+inline struct URadialVector URadialVector::SetRadialVector(float Magnitude, struct FVector Position) {
 	static auto fn = UObject::FindObject<UFunction>("Function FieldSystemEngine.RadialVector.SetRadialVector");
 
 	struct SetRadialVector_Params {
 		float Magnitude;
-		struct Unknown Position;
-		struct Unknown ReturnValue;
+		struct FVector Position;
+		struct URadialVector ReturnValue;
 
 	}; SetRadialVector_Params Params;
 
@@ -658,12 +658,12 @@ inline struct Unknown URadialVector::SetRadialVector(float Magnitude, struct Unk
 }
 
 // Function FieldSystemEngine.RandomVector.SetRandomVector
-inline struct Unknown URandomVector::SetRandomVector(float Magnitude) {
+inline struct URandomVector URandomVector::SetRandomVector(float Magnitude) {
 	static auto fn = UObject::FindObject<UFunction>("Function FieldSystemEngine.RandomVector.SetRandomVector");
 
 	struct SetRandomVector_Params {
 		float Magnitude;
-		struct Unknown ReturnValue;
+		struct URandomVector ReturnValue;
 
 	}; SetRandomVector_Params Params;
 
@@ -677,15 +677,15 @@ inline struct Unknown URandomVector::SetRandomVector(float Magnitude) {
 }
 
 // Function FieldSystemEngine.OperatorField.SetOperatorField
-inline struct Unknown UOperatorField::SetOperatorField(float Magnitude, struct Unknown RightField, struct Unknown LeftField, char Operation) {
+inline struct UOperatorField UOperatorField::SetOperatorField(float Magnitude, struct UFieldNodeBase RightField, struct UFieldNodeBase LeftField, char Operation) {
 	static auto fn = UObject::FindObject<UFunction>("Function FieldSystemEngine.OperatorField.SetOperatorField");
 
 	struct SetOperatorField_Params {
 		float Magnitude;
-		struct Unknown RightField;
-		struct Unknown LeftField;
+		struct UFieldNodeBase RightField;
+		struct UFieldNodeBase LeftField;
 		char Operation;
-		struct Unknown ReturnValue;
+		struct UOperatorField ReturnValue;
 
 	}; SetOperatorField_Params Params;
 
@@ -702,12 +702,12 @@ inline struct Unknown UOperatorField::SetOperatorField(float Magnitude, struct U
 }
 
 // Function FieldSystemEngine.ToIntegerField.SetToIntegerField
-inline struct Unknown UToIntegerField::SetToIntegerField(struct Unknown FloatField) {
+inline struct UToIntegerField UToIntegerField::SetToIntegerField(struct UFieldNodeFloat FloatField) {
 	static auto fn = UObject::FindObject<UFunction>("Function FieldSystemEngine.ToIntegerField.SetToIntegerField");
 
 	struct SetToIntegerField_Params {
-		struct Unknown FloatField;
-		struct Unknown ReturnValue;
+		struct UFieldNodeFloat FloatField;
+		struct UToIntegerField ReturnValue;
 
 	}; SetToIntegerField_Params Params;
 
@@ -721,12 +721,12 @@ inline struct Unknown UToIntegerField::SetToIntegerField(struct Unknown FloatFie
 }
 
 // Function FieldSystemEngine.ToFloatField.SetToFloatField
-inline struct Unknown UToFloatField::SetToFloatField(struct Unknown IntegerField) {
+inline struct UToFloatField UToFloatField::SetToFloatField(struct UFieldNodeInt IntegerField) {
 	static auto fn = UObject::FindObject<UFunction>("Function FieldSystemEngine.ToFloatField.SetToFloatField");
 
 	struct SetToFloatField_Params {
-		struct Unknown IntegerField;
-		struct Unknown ReturnValue;
+		struct UFieldNodeInt IntegerField;
+		struct UToFloatField ReturnValue;
 
 	}; SetToFloatField_Params Params;
 
@@ -740,14 +740,14 @@ inline struct Unknown UToFloatField::SetToFloatField(struct Unknown IntegerField
 }
 
 // Function FieldSystemEngine.CullingField.SetCullingField
-inline struct Unknown UCullingField::SetCullingField(struct Unknown Culling, struct Unknown Field, char Operation) {
+inline struct UCullingField UCullingField::SetCullingField(struct UFieldNodeBase Culling, struct UFieldNodeBase Field, char Operation) {
 	static auto fn = UObject::FindObject<UFunction>("Function FieldSystemEngine.CullingField.SetCullingField");
 
 	struct SetCullingField_Params {
-		struct Unknown Culling;
-		struct Unknown Field;
+		struct UFieldNodeBase Culling;
+		struct UFieldNodeBase Field;
 		char Operation;
-		struct Unknown ReturnValue;
+		struct UCullingField ReturnValue;
 
 	}; SetCullingField_Params Params;
 

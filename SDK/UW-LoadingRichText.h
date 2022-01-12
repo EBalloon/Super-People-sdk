@@ -3,8 +3,8 @@ class UUW-LoadingRichText_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown RichTextBlock_52; // 0x250 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct URichTextBlock RichTextBlock_52; // 0x250 (8)
 	struct FText SetText; // 0x258 (24)
 
 	void Construct(); // Function UW-LoadingRichText.UW-LoadingRichText_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>

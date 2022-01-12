@@ -3,10 +3,10 @@ class UUW-MS_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Anim_MS; // 0x250 (8)
-	struct Unknown Image_78; // 0x258 (8)
-	struct Unknown PingImage; // 0x260 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UWidgetAnimation Anim_MS; // 0x250 (8)
+	struct UImage Image_78; // 0x258 (8)
+	struct UPaperSprite PingImage; // 0x260 (8)
 
 	void UpdatePing(); // Function UW-MS.UW-MS_C.UpdatePing(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-MS.UW-MS_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>

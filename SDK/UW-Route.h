@@ -3,13 +3,13 @@ class UUW-Route_C : public UBravoHotelAircraftRouteWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x2B0 (8)
-	struct Unknown Propeller1; // 0x2B8 (8)
-	struct Unknown Aircraft; // 0x2C0 (8)
-	struct Unknown Image_156; // 0x2C8 (8)
-	struct Unknown Image_236; // 0x2D0 (8)
-	struct Unknown Image_237; // 0x2D8 (8)
-	struct Unknown MapCompRef; // 0x2E0 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x2B0 (8)
+	struct UWidgetAnimation Propeller1; // 0x2B8 (8)
+	struct UCanvasPanel Aircraft; // 0x2C0 (8)
+	struct UImage Image_156; // 0x2C8 (8)
+	struct UImage Image_236; // 0x2D0 (8)
+	struct UImage Image_237; // 0x2D8 (8)
+	struct UUW-MapComp_C MapCompRef; // 0x2E0 (8)
 
 	void StopAirCraftAnimation(); // Function UW-Route.UW-Route_C.StopAirCraftAnimation(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void UpdateAirCraftScaleByMouseWheel(float Delta); // Function UW-Route.UW-Route_C.UpdateAirCraftScaleByMouseWheel(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>

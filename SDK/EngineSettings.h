@@ -35,16 +35,16 @@ class UConsoleSettings : public Object {
 public:
 
 	int32_t MaxScrollbackSize; // 0x28 (4)
-	struct TArray<Unknown> ManualAutoCompleteList; // 0x30 (16)
-	struct TArray<Unknown> AutoCompleteMapPaths; // 0x40 (16)
+	struct TArray<struct FAutoCompleteCommand> ManualAutoCompleteList; // 0x30 (16)
+	struct TArray<struct FString> AutoCompleteMapPaths; // 0x40 (16)
 	float BackgroundOpacityPercentage; // 0x50 (4)
 	char bOrderTopToBottom : 0; // 0x54 (1)
 	char bDisplayHelpInAutoComplete : 0; // 0x55 (1)
-	struct Unknown InputColor; // 0x58 (4)
-	struct Unknown HistoryColor; // 0x5C (4)
-	struct Unknown AutoCompleteCommandColor; // 0x60 (4)
-	struct Unknown AutoCompleteCVarColor; // 0x64 (4)
-	struct Unknown AutoCompleteFadedColor; // 0x68 (4)
+	struct FColor InputColor; // 0x58 (4)
+	struct FColor HistoryColor; // 0x5C (4)
+	struct FColor AutoCompleteCommandColor; // 0x60 (4)
+	struct FColor AutoCompleteCVarColor; // 0x64 (4)
+	struct FColor AutoCompleteFadedColor; // 0x68 (4)
 };
 
 // Class EngineSettings.GameMapsSettings
@@ -53,24 +53,24 @@ class UGameMapsSettings : public Object {
 public:
 
 	struct FString LocalMapOptions; // 0x28 (16)
-	struct Unknown TransitionMap; // 0x38 (24)
+	struct FSoftObjectPath TransitionMap; // 0x38 (24)
 	char bUseSplitscreen : 0; // 0x50 (1)
 	char TwoPlayerSplitscreenLayout; // 0x51 (1)
 	char ThreePlayerSplitscreenLayout; // 0x52 (1)
-	enum class Unknow FourPlayerSplitscreenLayout; // 0x53 (1)
+	enum class EFourPlayerSplitScreenType FourPlayerSplitscreenLayout; // 0x53 (1)
 	char bOffsetPlayerGamepadIds : 0; // 0x54 (1)
-	struct Unknown GameInstanceClass; // 0x58 (24)
-	struct Unknown ServerGameInstanceClass; // 0x70 (24)
-	struct Unknown GameDefaultMap; // 0x88 (24)
-	struct Unknown ServerDefaultMap; // 0xA0 (24)
-	struct Unknown GlobalDefaultGameMode; // 0xB8 (24)
-	struct Unknown GlobalDefaultServerGameMode; // 0xD0 (24)
-	struct TArray<Unknown> GameModeMapPrefixes; // 0xE8 (16)
-	struct TArray<Unknown> GameModeClassAliases; // 0xF8 (16)
+	struct FSoftClassPath GameInstanceClass; // 0x58 (24)
+	struct FSoftClassPath ServerGameInstanceClass; // 0x70 (24)
+	struct FSoftObjectPath GameDefaultMap; // 0x88 (24)
+	struct FSoftObjectPath ServerDefaultMap; // 0xA0 (24)
+	struct FSoftClassPath GlobalDefaultGameMode; // 0xB8 (24)
+	struct FSoftClassPath GlobalDefaultServerGameMode; // 0xD0 (24)
+	struct TArray<struct FGameModeName> GameModeMapPrefixes; // 0xE8 (16)
+	struct TArray<struct FGameModeName> GameModeClassAliases; // 0xF8 (16)
 
 	void SetSkipAssigningGamepadToPlayer1(char bSkipFirstPlayer); // Function EngineSettings.GameMapsSettings.SetSkipAssigningGamepadToPlayer1(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x33F83E0>
 	char GetSkipAssigningGamepadToPlayer1(); // Function EngineSettings.GameMapsSettings.GetSkipAssigningGamepadToPlayer1(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x33F83B0>
-	struct Unknown GetGameMapsSettings(); // Function EngineSettings.GameMapsSettings.GetGameMapsSettings(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x33F8380>
+	struct UGameMapsSettings GetGameMapsSettings(); // Function EngineSettings.GameMapsSettings.GetGameMapsSettings(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x33F8380>
 };
 
 // Class EngineSettings.GameNetworkManagerSettings
@@ -113,7 +113,7 @@ public:
 	struct FString Homepage; // 0x68 (16)
 	struct FString LicensingTerms; // 0x78 (16)
 	struct FString PrivacyPolicy; // 0x88 (16)
-	struct Unknown ProjectID; // 0x98 (16)
+	struct FGuid ProjectID; // 0x98 (16)
 	struct FString ProjectName; // 0xA8 (16)
 	struct FString ProjectVersion; // 0xB8 (16)
 	struct FString SupportContact; // 0xC8 (16)
@@ -136,7 +136,7 @@ class UHudSettings : public Object {
 public:
 
 	char bShowHUD : 0; // 0x28 (1)
-	struct TArray<Unknown> DebugDisplay; // 0x30 (16)
+	struct TArray<struct FName> DebugDisplay; // 0x30 (16)
 };
 
 // ScriptStruct EngineSettings.AutoCompleteCommand
@@ -148,7 +148,7 @@ struct FAutoCompleteCommand {
 // ScriptStruct EngineSettings.GameModeName
 struct FGameModeName {
 	struct FString Name; // 0x0 (16)
-	struct Unknown GameMode; // 0x10 (24)
+	struct FSoftClassPath GameMode; // 0x10 (24)
 };
 
 // Function EngineSettings.GameMapsSettings.SetSkipAssigningGamepadToPlayer1
@@ -185,12 +185,12 @@ inline char UGameMapsSettings::GetSkipAssigningGamepadToPlayer1() {
 }
 
 // Function EngineSettings.GameMapsSettings.GetGameMapsSettings
-inline struct Unknown UGameMapsSettings::GetGameMapsSettings() {
+inline struct UGameMapsSettings UGameMapsSettings::GetGameMapsSettings() {
 	static auto fn = UObject::FindObject<UFunction>("Function EngineSettings.GameMapsSettings.GetGameMapsSettings");
 
 	struct GetGameMapsSettings_Params {
 		
-		struct Unknown ReturnValue;
+		struct UGameMapsSettings ReturnValue;
 
 	}; GetGameMapsSettings_Params Params;
 

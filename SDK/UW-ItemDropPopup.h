@@ -3,34 +3,34 @@ class UUW-ItemDropPopup_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown BlockMouse; // 0x250 (8)
-	struct Unknown Button_Accept; // 0x258 (8)
-	struct Unknown Button_Cancel; // 0x260 (8)
-	struct Unknown Button_Close; // 0x268 (8)
-	struct Unknown Button_Max; // 0x270 (8)
-	struct Unknown Button_Min; // 0x278 (8)
-	struct Unknown Image_9; // 0x280 (8)
-	struct Unknown Slider_137; // 0x288 (8)
-	struct Unknown TextBlock_Accept; // 0x290 (8)
-	struct Unknown TextBlock_MaxCount; // 0x298 (8)
-	struct Unknown TextBlock_MinCount; // 0x2A0 (8)
-	struct Unknown TextBlock_Title; // 0x2A8 (8)
-	struct Unknown TextBox_DropCount; // 0x2B0 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UButton BlockMouse; // 0x250 (8)
+	struct UButton Button_Accept; // 0x258 (8)
+	struct UButton Button_Cancel; // 0x260 (8)
+	struct UButton Button_Close; // 0x268 (8)
+	struct UButton Button_Max; // 0x270 (8)
+	struct UButton Button_Min; // 0x278 (8)
+	struct UImage Image_9; // 0x280 (8)
+	struct USlider Slider_137; // 0x288 (8)
+	struct UTextBlock TextBlock_Accept; // 0x290 (8)
+	struct UTextBlock TextBlock_MaxCount; // 0x298 (8)
+	struct UTextBlock TextBlock_MinCount; // 0x2A0 (8)
+	struct UTextBlock TextBlock_Title; // 0x2A8 (8)
+	struct UEditableTextBox TextBox_DropCount; // 0x2B0 (8)
 	int32_t CurrentCount; // 0x2B8 (4)
 	int32_t MaxCount; // 0x2BC (4)
 	struct FText LastEnteredText; // 0x2C0 (24)
-	struct Unknown ItemInfo; // 0x2D8 (152)
-	struct Unknown ItemDetailInfo; // 0x370 (1168)
-	struct Unknown PickupRef; // 0x800 (8)
-	struct Unknown DropBoxRef; // 0x808 (8)
-	struct Unknown InventoryWidget; // 0x810 (8)
+	struct FInventoryItemInfo ItemInfo; // 0x2D8 (152)
+	struct FInventoryItemDetailInfo ItemDetailInfo; // 0x370 (1168)
+	struct ABravoHotelPickup PickupRef; // 0x800 (8)
+	struct ABravoHotelDropBoxActor DropBoxRef; // 0x808 (8)
+	struct UUW-InventoryWidget_C InventoryWidget; // 0x810 (8)
 	char bClosing : 0; // 0x818 (1)
-	struct Unknown MaterialSlot; // 0x820 (8)
+	struct UUW-Inventory_MaterialSlot_C MaterialSlot; // 0x820 (8)
 
 	void CheckNumeric(struct FString CheckString, char& CheckResult); // Function UW-ItemDropPopup.UW-ItemDropPopup_C.CheckNumeric(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void GetButtonTextColor(char IsHover, char IsPress, struct Unknown& TextColor); // Function UW-ItemDropPopup.UW-ItemDropPopup_C.GetButtonTextColor(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	struct Unknown OnMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-ItemDropPopup.UW-ItemDropPopup_C.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetButtonTextColor(char IsHover, char IsPress, struct FSlateColor& TextColor); // Function UW-ItemDropPopup.UW-ItemDropPopup_C.GetButtonTextColor(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	struct FEventReply OnMouseButtonDown(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-ItemDropPopup.UW-ItemDropPopup_C.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetDefault(char InvenWeightCheck); // Function UW-ItemDropPopup.UW-ItemDropPopup_C.SetDefault(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetTextBoxText(int32_t CurrentCount); // Function UW-ItemDropPopup.UW-ItemDropPopup_C.SetTextBoxText(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetSliderValue(int32_t CurrentCount); // Function UW-ItemDropPopup.UW-ItemDropPopup_C.SetSliderValue(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -68,13 +68,13 @@ inline void UUW-ItemDropPopup_C::CheckNumeric(struct FString CheckString, char& 
 }
 
 // Function UW-ItemDropPopup.UW-ItemDropPopup_C.GetButtonTextColor
-inline void UUW-ItemDropPopup_C::GetButtonTextColor(char IsHover, char IsPress, struct Unknown& TextColor) {
+inline void UUW-ItemDropPopup_C::GetButtonTextColor(char IsHover, char IsPress, struct FSlateColor& TextColor) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-ItemDropPopup.UW-ItemDropPopup_C.GetButtonTextColor");
 
 	struct GetButtonTextColor_Params {
 		char IsHover;
 		char IsPress;
-		struct Unknown& TextColor;
+		struct FSlateColor& TextColor;
 	}; GetButtonTextColor_Params Params;
 
 	Params.IsHover = IsHover;
@@ -89,13 +89,13 @@ inline void UUW-ItemDropPopup_C::GetButtonTextColor(char IsHover, char IsPress, 
 }
 
 // Function UW-ItemDropPopup.UW-ItemDropPopup_C.OnMouseButtonDown
-inline struct Unknown UUW-ItemDropPopup_C::OnMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UUW-ItemDropPopup_C::OnMouseButtonDown(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-ItemDropPopup.UW-ItemDropPopup_C.OnMouseButtonDown");
 
 	struct OnMouseButtonDown_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnMouseButtonDown_Params Params;
 

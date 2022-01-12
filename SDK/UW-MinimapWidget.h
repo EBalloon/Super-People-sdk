@@ -3,62 +3,62 @@ class UUW-MinimapWidget_C : public UBravoHotelMiniMapWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x260 (8)
-	struct Unknown PlayerIconOnDamagingAnimation; // 0x268 (8)
-	struct Unknown ShirinkingAnimation; // 0x270 (8)
-	struct Unknown AlertIcon; // 0x278 (8)
-	struct Unknown BP-CheckWeightMap; // 0x280 (8)
-	struct Unknown BP-MapComp; // 0x288 (8)
-	struct Unknown CircleInfoGroup; // 0x290 (8)
-	struct Unknown CP-MapComp; // 0x298 (8)
-	struct Unknown CurrentProgressBar; // 0x2A0 (8)
-	struct Unknown Image_174; // 0x2A8 (8)
-	struct Unknown Image_766; // 0x2B0 (8)
-	struct Unknown InvalidationBox_2; // 0x2B8 (8)
-	struct Unknown LulledGroup; // 0x2C0 (8)
-	struct Unknown PhaseText; // 0x2C8 (8)
-	struct Unknown PlayerIconGroup; // 0x2D0 (8)
-	struct Unknown SB-MapComp; // 0x2D8 (8)
-	struct Unknown SB_CircleInfo; // 0x2E0 (8)
-	struct Unknown ShrinkingGroup; // 0x2E8 (8)
-	struct Unknown Switcher; // 0x2F0 (8)
-	struct Unknown UW-Inventory_Recipe; // 0x2F8 (8)
-	struct Unknown UW-SearchingMaterial; // 0x300 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x260 (8)
+	struct UWidgetAnimation PlayerIconOnDamagingAnimation; // 0x268 (8)
+	struct UWidgetAnimation ShirinkingAnimation; // 0x270 (8)
+	struct UImage AlertIcon; // 0x278 (8)
+	struct UBP-CheckWeightMap_C BP-CheckWeightMap; // 0x280 (8)
+	struct UUW-MapComp_C BP-MapComp; // 0x288 (8)
+	struct UCanvasPanel CircleInfoGroup; // 0x290 (8)
+	struct UCanvasPanel CP-MapComp; // 0x298 (8)
+	struct UProgressBar CurrentProgressBar; // 0x2A0 (8)
+	struct UImage Image_174; // 0x2A8 (8)
+	struct UImage Image_766; // 0x2B0 (8)
+	struct UInvalidationBox InvalidationBox_2; // 0x2B8 (8)
+	struct UCanvasPanel LulledGroup; // 0x2C0 (8)
+	struct UTextBlock PhaseText; // 0x2C8 (8)
+	struct UCanvasPanel PlayerIconGroup; // 0x2D0 (8)
+	struct USizeBox SB-MapComp; // 0x2D8 (8)
+	struct USizeBox SB_CircleInfo; // 0x2E0 (8)
+	struct UCanvasPanel ShrinkingGroup; // 0x2E8 (8)
+	struct UWidgetSwitcher Switcher; // 0x2F0 (8)
+	struct UUW-Inventory_Recipe_C UW-Inventory_Recipe; // 0x2F8 (8)
+	struct UUW-SearchingMaterial_C UW-SearchingMaterial; // 0x300 (8)
 	int32_t State; // 0x308 (4)
-	struct Unknown MapSize_Default; // 0x30C (8)
-	struct Unknown MapSize_Extend; // 0x314 (8)
+	struct FVector2D MapSize_Default; // 0x30C (8)
+	struct FVector2D MapSize_Extend; // 0x314 (8)
 	int32_t InitializeCount; // 0x31C (4)
 	char bExtendMode : 0; // 0x320 (1)
 	int32_t RecipeCount; // 0x324 (4)
-	struct Unknown TargetCharacter; // 0x328 (8)
+	struct ABravoHotelCharacter TargetCharacter; // 0x328 (8)
 
 	void SetRecipeList(); // Function UW-MinimapWidget.UW-MinimapWidget_C.SetRecipeList(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	enum class Unknow Get Recipe Visibility(); // Function UW-MinimapWidget.UW-MinimapWidget_C.Get Recipe Visibility(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void OnBlueZoneStateChanged(enum class Unknow Pre, enum class Unknow Cur); // Function UW-MinimapWidget.UW-MinimapWidget_C.OnBlueZoneStateChanged(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	enum class ESlateVisibility Get Recipe Visibility(); // Function UW-MinimapWidget.UW-MinimapWidget_C.Get Recipe Visibility(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void OnBlueZoneStateChanged(enum class EBluseZoneState Pre, enum class EBluseZoneState Cur); // Function UW-MinimapWidget.UW-MinimapWidget_C.OnBlueZoneStateChanged(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnSurvivalCirclePhaseChanged(int32_t PrevPhase, int32_t CurrentPhase); // Function UW-MinimapWidget.UW-MinimapWidget_C.OnSurvivalCirclePhaseChanged(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ResetWidget(); // Function UW-MinimapWidget.UW-MinimapWidget_C.ResetWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ToggleMapSize(struct Unknown WidgetSize); // Function UW-MinimapWidget.UW-MinimapWidget_C.ToggleMapSize(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown GetVectorCurrentTo(struct Unknown Position); // Function UW-MinimapWidget.UW-MinimapWidget_C.GetVectorCurrentTo(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void ToggleMapSize(struct FVector2D WidgetSize); // Function UW-MinimapWidget.UW-MinimapWidget_C.ToggleMapSize(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FVector2D GetVectorCurrentTo(struct FVector Position); // Function UW-MinimapWidget.UW-MinimapWidget_C.GetVectorCurrentTo(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	float CalcLengthOnWave(float Distance); // Function UW-MinimapWidget.UW-MinimapWidget_C.CalcLengthOnWave(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	float CalcDistanceRelatedToTarget(struct Unknown Vector, float Distance); // Function UW-MinimapWidget.UW-MinimapWidget_C.CalcDistanceRelatedToTarget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	struct Unknown GetTargetTo(struct Unknown Position); // Function UW-MinimapWidget.UW-MinimapWidget_C.GetTargetTo(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	struct Unknown GetTargetToPlayer(); // Function UW-MinimapWidget.UW-MinimapWidget_C.GetTargetToPlayer(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	float CalcDistanceRelatedToTarget(struct FVector Vector, float Distance); // Function UW-MinimapWidget.UW-MinimapWidget_C.CalcDistanceRelatedToTarget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	struct FVector2D GetTargetTo(struct FVector Position); // Function UW-MinimapWidget.UW-MinimapWidget_C.GetTargetTo(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	struct FVector2D GetTargetToPlayer(); // Function UW-MinimapWidget.UW-MinimapWidget_C.GetTargetToPlayer(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void UpdateCircleInfoGroup(float DeltaSeconds); // Function UW-MinimapWidget.UW-MinimapWidget_C.UpdateCircleInfoGroup(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void UpdateOnShrinking(float DeltaSeconds); // Function UW-MinimapWidget.UW-MinimapWidget_C.UpdateOnShrinking(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void UpdateActiveIcon(); // Function UW-MinimapWidget.UW-MinimapWidget_C.UpdateActiveIcon(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void UpdateTimeToActivate(); // Function UW-MinimapWidget.UW-MinimapWidget_C.UpdateTimeToActivate(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void UpdatePlayerIcon(float DeltaSeconds); // Function UW-MinimapWidget.UW-MinimapWidget_C.UpdatePlayerIcon(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnBattleRoyaleStateChanged(enum class Unknow Previous, enum class Unknow Current); // Function UW-MinimapWidget.UW-MinimapWidget_C.OnBattleRoyaleStateChanged(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-MinimapWidget.UW-MinimapWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AddAreaWidget(enum class Unknow WorldMapAreaWidgetType, struct Unknown& AreaWidgetInfo); // Function UW-MinimapWidget.UW-MinimapWidget_C.AddAreaWidget(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnBattleRoyaleStateChanged(enum class EBattleRoyaleState Previous, enum class EBattleRoyaleState Current); // Function UW-MinimapWidget.UW-MinimapWidget_C.OnBattleRoyaleStateChanged(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-MinimapWidget.UW-MinimapWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AddAreaWidget(enum class EWorldMapAreaWidgetType WorldMapAreaWidgetType, struct FAreaWidgetInfo& AreaWidgetInfo); // Function UW-MinimapWidget.UW-MinimapWidget_C.AddAreaWidget(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void NotifyNeedRefreshToMap(); // Function UW-MinimapWidget.UW-MinimapWidget_C.NotifyNeedRefreshToMap(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetToggleMinimap(char bToggle); // Function UW-MinimapWidget.UW-MinimapWidget_C.SetToggleMinimap(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnAttackedWidget(int32_t UniquePlayerId); // Function UW-MinimapWidget.UW-MinimapWidget_C.OnAttackedWidget(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnFireWidget(int32_t UniquePlayerId, struct Unknown Rotation, float Length); // Function UW-MinimapWidget.UW-MinimapWidget_C.OnFireWidget(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnFireWidget(int32_t UniquePlayerId, struct FRotator Rotation, float Length); // Function UW-MinimapWidget.UW-MinimapWidget_C.OnFireWidget(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ResetMapPlayers(); // Function UW-MinimapWidget.UW-MinimapWidget_C.ResetMapPlayers(Event|Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-MinimapWidget.UW-MinimapWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ChangeRecipeList(); // Function UW-MinimapWidget.UW-MinimapWidget_C.ChangeRecipeList(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void RemoveAreaWidget(enum class Unknow WorldMapAreaWidgetType, struct Unknown& AreaWidgetInfo); // Function UW-MinimapWidget.UW-MinimapWidget_C.RemoveAreaWidget(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void RemoveAreaWidget(enum class EWorldMapAreaWidgetType WorldMapAreaWidgetType, struct FAreaWidgetInfo& AreaWidgetInfo); // Function UW-MinimapWidget.UW-MinimapWidget_C.RemoveAreaWidget(Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ä¤@t¤¸_1(char IsShow); // Function UW-MinimapWidget.UW-MinimapWidget_C.ä¤@t¤¸_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-MinimapWidget(int32_t EntryPoint); // Function UW-MinimapWidget.UW-MinimapWidget_C.ExecuteUbergraph_UW-MinimapWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
@@ -78,12 +78,12 @@ inline void UUW-MinimapWidget_C::SetRecipeList() {
 }
 
 // Function UW-MinimapWidget.UW-MinimapWidget_C.Get Recipe Visibility
-inline enum class Unknow UUW-MinimapWidget_C::Get Recipe Visibility() {
+inline enum class ESlateVisibility UUW-MinimapWidget_C::Get Recipe Visibility() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MinimapWidget.UW-MinimapWidget_C.Get Recipe Visibility");
 
 	struct Get Recipe Visibility_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class ESlateVisibility ReturnValue;
 
 	}; Get Recipe Visibility_Params Params;
 
@@ -96,12 +96,12 @@ inline enum class Unknow UUW-MinimapWidget_C::Get Recipe Visibility() {
 }
 
 // Function UW-MinimapWidget.UW-MinimapWidget_C.OnBlueZoneStateChanged
-inline void UUW-MinimapWidget_C::OnBlueZoneStateChanged(enum class Unknow Pre, enum class Unknow Cur) {
+inline void UUW-MinimapWidget_C::OnBlueZoneStateChanged(enum class EBluseZoneState Pre, enum class EBluseZoneState Cur) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MinimapWidget.UW-MinimapWidget_C.OnBlueZoneStateChanged");
 
 	struct OnBlueZoneStateChanged_Params {
-		enum class Unknow Pre;
-		enum class Unknow Cur;
+		enum class EBluseZoneState Pre;
+		enum class EBluseZoneState Cur;
 	}; OnBlueZoneStateChanged_Params Params;
 
 	Params.Pre = Pre;
@@ -144,11 +144,11 @@ inline void UUW-MinimapWidget_C::ResetWidget() {
 }
 
 // Function UW-MinimapWidget.UW-MinimapWidget_C.ToggleMapSize
-inline void UUW-MinimapWidget_C::ToggleMapSize(struct Unknown WidgetSize) {
+inline void UUW-MinimapWidget_C::ToggleMapSize(struct FVector2D WidgetSize) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MinimapWidget.UW-MinimapWidget_C.ToggleMapSize");
 
 	struct ToggleMapSize_Params {
-		struct Unknown WidgetSize;
+		struct FVector2D WidgetSize;
 	}; ToggleMapSize_Params Params;
 
 	Params.WidgetSize = WidgetSize;
@@ -159,12 +159,12 @@ inline void UUW-MinimapWidget_C::ToggleMapSize(struct Unknown WidgetSize) {
 }
 
 // Function UW-MinimapWidget.UW-MinimapWidget_C.GetVectorCurrentTo
-inline struct Unknown UUW-MinimapWidget_C::GetVectorCurrentTo(struct Unknown Position) {
+inline struct FVector2D UUW-MinimapWidget_C::GetVectorCurrentTo(struct FVector Position) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MinimapWidget.UW-MinimapWidget_C.GetVectorCurrentTo");
 
 	struct GetVectorCurrentTo_Params {
-		struct Unknown Position;
-		struct Unknown ReturnValue;
+		struct FVector Position;
+		struct FVector2D ReturnValue;
 
 	}; GetVectorCurrentTo_Params Params;
 
@@ -197,11 +197,11 @@ inline float UUW-MinimapWidget_C::CalcLengthOnWave(float Distance) {
 }
 
 // Function UW-MinimapWidget.UW-MinimapWidget_C.CalcDistanceRelatedToTarget
-inline float UUW-MinimapWidget_C::CalcDistanceRelatedToTarget(struct Unknown Vector, float Distance) {
+inline float UUW-MinimapWidget_C::CalcDistanceRelatedToTarget(struct FVector Vector, float Distance) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MinimapWidget.UW-MinimapWidget_C.CalcDistanceRelatedToTarget");
 
 	struct CalcDistanceRelatedToTarget_Params {
-		struct Unknown Vector;
+		struct FVector Vector;
 		float Distance;
 		float ReturnValue;
 
@@ -218,12 +218,12 @@ inline float UUW-MinimapWidget_C::CalcDistanceRelatedToTarget(struct Unknown Vec
 }
 
 // Function UW-MinimapWidget.UW-MinimapWidget_C.GetTargetTo
-inline struct Unknown UUW-MinimapWidget_C::GetTargetTo(struct Unknown Position) {
+inline struct FVector2D UUW-MinimapWidget_C::GetTargetTo(struct FVector Position) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MinimapWidget.UW-MinimapWidget_C.GetTargetTo");
 
 	struct GetTargetTo_Params {
-		struct Unknown Position;
-		struct Unknown ReturnValue;
+		struct FVector Position;
+		struct FVector2D ReturnValue;
 
 	}; GetTargetTo_Params Params;
 
@@ -237,12 +237,12 @@ inline struct Unknown UUW-MinimapWidget_C::GetTargetTo(struct Unknown Position) 
 }
 
 // Function UW-MinimapWidget.UW-MinimapWidget_C.GetTargetToPlayer
-inline struct Unknown UUW-MinimapWidget_C::GetTargetToPlayer() {
+inline struct FVector2D UUW-MinimapWidget_C::GetTargetToPlayer() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MinimapWidget.UW-MinimapWidget_C.GetTargetToPlayer");
 
 	struct GetTargetToPlayer_Params {
 		
-		struct Unknown ReturnValue;
+		struct FVector2D ReturnValue;
 
 	}; GetTargetToPlayer_Params Params;
 
@@ -328,12 +328,12 @@ inline void UUW-MinimapWidget_C::UpdatePlayerIcon(float DeltaSeconds) {
 }
 
 // Function UW-MinimapWidget.UW-MinimapWidget_C.OnBattleRoyaleStateChanged
-inline void UUW-MinimapWidget_C::OnBattleRoyaleStateChanged(enum class Unknow Previous, enum class Unknow Current) {
+inline void UUW-MinimapWidget_C::OnBattleRoyaleStateChanged(enum class EBattleRoyaleState Previous, enum class EBattleRoyaleState Current) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MinimapWidget.UW-MinimapWidget_C.OnBattleRoyaleStateChanged");
 
 	struct OnBattleRoyaleStateChanged_Params {
-		enum class Unknow Previous;
-		enum class Unknow Current;
+		enum class EBattleRoyaleState Previous;
+		enum class EBattleRoyaleState Current;
 	}; OnBattleRoyaleStateChanged_Params Params;
 
 	Params.Previous = Previous;
@@ -345,11 +345,11 @@ inline void UUW-MinimapWidget_C::OnBattleRoyaleStateChanged(enum class Unknow Pr
 }
 
 // Function UW-MinimapWidget.UW-MinimapWidget_C.Tick
-inline void UUW-MinimapWidget_C::Tick(struct Unknown MyGeometry, float InDeltaTime) {
+inline void UUW-MinimapWidget_C::Tick(struct FGeometry MyGeometry, float InDeltaTime) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MinimapWidget.UW-MinimapWidget_C.Tick");
 
 	struct Tick_Params {
-		struct Unknown MyGeometry;
+		struct FGeometry MyGeometry;
 		float InDeltaTime;
 	}; Tick_Params Params;
 
@@ -362,12 +362,12 @@ inline void UUW-MinimapWidget_C::Tick(struct Unknown MyGeometry, float InDeltaTi
 }
 
 // Function UW-MinimapWidget.UW-MinimapWidget_C.AddAreaWidget
-inline void UUW-MinimapWidget_C::AddAreaWidget(enum class Unknow WorldMapAreaWidgetType, struct Unknown& AreaWidgetInfo) {
+inline void UUW-MinimapWidget_C::AddAreaWidget(enum class EWorldMapAreaWidgetType WorldMapAreaWidgetType, struct FAreaWidgetInfo& AreaWidgetInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MinimapWidget.UW-MinimapWidget_C.AddAreaWidget");
 
 	struct AddAreaWidget_Params {
-		enum class Unknow WorldMapAreaWidgetType;
-		struct Unknown& AreaWidgetInfo;
+		enum class EWorldMapAreaWidgetType WorldMapAreaWidgetType;
+		struct FAreaWidgetInfo& AreaWidgetInfo;
 	}; AddAreaWidget_Params Params;
 
 	Params.WorldMapAreaWidgetType = WorldMapAreaWidgetType;
@@ -425,12 +425,12 @@ inline void UUW-MinimapWidget_C::OnAttackedWidget(int32_t UniquePlayerId) {
 }
 
 // Function UW-MinimapWidget.UW-MinimapWidget_C.OnFireWidget
-inline void UUW-MinimapWidget_C::OnFireWidget(int32_t UniquePlayerId, struct Unknown Rotation, float Length) {
+inline void UUW-MinimapWidget_C::OnFireWidget(int32_t UniquePlayerId, struct FRotator Rotation, float Length) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MinimapWidget.UW-MinimapWidget_C.OnFireWidget");
 
 	struct OnFireWidget_Params {
 		int32_t UniquePlayerId;
-		struct Unknown Rotation;
+		struct FRotator Rotation;
 		float Length;
 	}; OnFireWidget_Params Params;
 
@@ -486,12 +486,12 @@ inline void UUW-MinimapWidget_C::ChangeRecipeList() {
 }
 
 // Function UW-MinimapWidget.UW-MinimapWidget_C.RemoveAreaWidget
-inline void UUW-MinimapWidget_C::RemoveAreaWidget(enum class Unknow WorldMapAreaWidgetType, struct Unknown& AreaWidgetInfo) {
+inline void UUW-MinimapWidget_C::RemoveAreaWidget(enum class EWorldMapAreaWidgetType WorldMapAreaWidgetType, struct FAreaWidgetInfo& AreaWidgetInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MinimapWidget.UW-MinimapWidget_C.RemoveAreaWidget");
 
 	struct RemoveAreaWidget_Params {
-		enum class Unknow WorldMapAreaWidgetType;
-		struct Unknown& AreaWidgetInfo;
+		enum class EWorldMapAreaWidgetType WorldMapAreaWidgetType;
+		struct FAreaWidgetInfo& AreaWidgetInfo;
 	}; RemoveAreaWidget_Params Params;
 
 	Params.WorldMapAreaWidgetType = WorldMapAreaWidgetType;

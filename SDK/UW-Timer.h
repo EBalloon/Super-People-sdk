@@ -3,17 +3,17 @@ class UUW-Timer_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Ani_Countdown; // 0x250 (8)
-	struct Unknown TextBlock_RemailTime; // 0x258 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UWidgetAnimation Ani_Countdown; // 0x250 (8)
+	struct UTextBlock TextBlock_RemailTime; // 0x258 (8)
 	int32_t PreTime; // 0x260 (4)
 	char ActiveTimer : 0; // 0x264 (1)
 	int32_t RemainTime; // 0x268 (4)
 
 	struct FText Get_TextBlock_RemailTime_Text_1(); // Function UW-Timer.UW-Timer_C.Get_TextBlock_RemailTime_Text_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-Timer.UW-Timer_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetVisibileState(enum class Unknow CurrentState); // Function UW-Timer.UW-Timer_C.SetVisibileState(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void 鉹@t元_2(enum class Unknow PrevState, enum class Unknow CurrentState); // Function UW-Timer.UW-Timer_C.鉹@t元_2(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetVisibileState(enum class EBattleRoyaleState CurrentState); // Function UW-Timer.UW-Timer_C.SetVisibileState(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void 鉹@t元_2(enum class EBattleRoyaleState PrevState, enum class EBattleRoyaleState CurrentState); // Function UW-Timer.UW-Timer_C.鉹@t元_2(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetTimer(int32_t RemainTime); // Function UW-Timer.UW-Timer_C.SetTimer(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void 鉹@t元_1(int32_t RemainTime); // Function UW-Timer.UW-Timer_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-Timer(int32_t EntryPoint); // Function UW-Timer.UW-Timer_C.ExecuteUbergraph_UW-Timer(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
@@ -52,11 +52,11 @@ inline void UUW-Timer_C::Construct() {
 }
 
 // Function UW-Timer.UW-Timer_C.SetVisibileState
-inline void UUW-Timer_C::SetVisibileState(enum class Unknow CurrentState) {
+inline void UUW-Timer_C::SetVisibileState(enum class EBattleRoyaleState CurrentState) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Timer.UW-Timer_C.SetVisibileState");
 
 	struct SetVisibileState_Params {
-		enum class Unknow CurrentState;
+		enum class EBattleRoyaleState CurrentState;
 	}; SetVisibileState_Params Params;
 
 	Params.CurrentState = CurrentState;
@@ -67,12 +67,12 @@ inline void UUW-Timer_C::SetVisibileState(enum class Unknow CurrentState) {
 }
 
 // Function UW-Timer.UW-Timer_C.鉹@t元_2
-inline void UUW-Timer_C::鉹@t元_2(enum class Unknow PrevState, enum class Unknow CurrentState) {
+inline void UUW-Timer_C::鉹@t元_2(enum class EBattleRoyaleState PrevState, enum class EBattleRoyaleState CurrentState) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Timer.UW-Timer_C.鉹@t元_2");
 
 	struct 鉹@t元_2_Params {
-		enum class Unknow PrevState;
-		enum class Unknow CurrentState;
+		enum class EBattleRoyaleState PrevState;
+		enum class EBattleRoyaleState CurrentState;
 	}; 鉹@t元_2_Params Params;
 
 	Params.PrevState = PrevState;

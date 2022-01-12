@@ -44,7 +44,7 @@ struct FLightPropagationVolumeSettings {
 	float LPVHairSpecularOcclusionIntensity; // 0x50 (4)
 	float LPVHairRoughnessOverride; // 0x54 (4)
 	float LPVDistantLightingIntensity; // 0x58 (4)
-	struct Unknown LPVEnvironmentColor; // 0x5C (16)
+	struct FLinearColor LPVEnvironmentColor; // 0x5C (16)
 	char bUseSeparateAOVolume : 0; // 0x6C (1)
 };
 
@@ -53,6 +53,6 @@ struct FVolumetricFogVolumeSettings {
 	char bOverride_UseVolumetricFogEmissive : 0; // 0x0 (1)
 	char bOverride_VolumetricFogEmissive : 0; // 0x0 (1)
 	char UseVolumetricFogEmissive : 0; // 0x0 (1)
-	struct Unknown VolumetricFogEmissive; // 0x4 (16)
+	struct FLinearColor VolumetricFogEmissive; // 0x4 (16)
 };
 

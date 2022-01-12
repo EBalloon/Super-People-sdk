@@ -3,41 +3,41 @@ class UUW-VehicleWidget_C : public UBravoHotelVehicleWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x2A8 (8)
-	struct Unknown FuelGauge; // 0x2B0 (8)
-	struct Unknown FuelIcon; // 0x2B8 (8)
-	struct Unknown HPFaint; // 0x2C0 (8)
-	struct Unknown HPGauge; // 0x2C8 (8)
-	struct Unknown HPIcon; // 0x2D0 (8)
-	struct Unknown SpeedText; // 0x2D8 (8)
-	struct Unknown SubInfoParent; // 0x2E0 (8)
-	struct Unknown UW-VehicleSeatWidget; // 0x2E8 (8)
-	struct Unknown CachedVehicle; // 0x2F0 (8)
-	struct Unknown MySeatColor; // 0x2F8 (16)
-	struct Unknown EmptyFuelColor; // 0x308 (16)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x2A8 (8)
+	struct UProgressBar FuelGauge; // 0x2B0 (8)
+	struct UImage FuelIcon; // 0x2B8 (8)
+	struct UProgressBar HPFaint; // 0x2C0 (8)
+	struct UProgressBar HPGauge; // 0x2C8 (8)
+	struct UImage HPIcon; // 0x2D0 (8)
+	struct UTextBlock SpeedText; // 0x2D8 (8)
+	struct UOverlay SubInfoParent; // 0x2E0 (8)
+	struct UUW-VehicleSeatWidget_C UW-VehicleSeatWidget; // 0x2E8 (8)
+	struct ABravoHotelVehicle CachedVehicle; // 0x2F0 (8)
+	struct FLinearColor MySeatColor; // 0x2F8 (16)
+	struct FLinearColor EmptyFuelColor; // 0x308 (16)
 	float InterpTargetHpRate; // 0x318 (4)
 	float InterpCurrentHpRate; // 0x31C (4)
 	float InterpSpeed; // 0x320 (4)
-	struct Unknown HPFaintCurve; // 0x328 (8)
-	struct Unknown HPColorCurve; // 0x330 (8)
-	struct Unknown SubInfoWidget; // 0x338 (8)
+	struct UCurveFloat HPFaintCurve; // 0x328 (8)
+	struct UCurveLinearColor HPColorCurve; // 0x330 (8)
+	struct UUW-VehicleSubInfo_Base_C SubInfoWidget; // 0x338 (8)
 	char EnableBind : 0; // 0x340 (1)
-	struct Unknown NewVar_1; // 0x348 (8)
+	struct ABravoHotelVehicle NewVar_1; // 0x348 (8)
 
 	void OnWheelWrecked(int32_t WheelIndex); // Function UW-VehicleWidget.UW-VehicleWidget_C.OnWheelWrecked(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetHPColor(float InPercent); // Function UW-VehicleWidget.UW-VehicleWidget_C.SetHPColor(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnSeatOccupantExited(struct Unknown Seat); // Function UW-VehicleWidget.UW-VehicleWidget_C.OnSeatOccupantExited(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnSeatOccupantEntered(struct Unknown Seat); // Function UW-VehicleWidget.UW-VehicleWidget_C.OnSeatOccupantEntered(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnSeatOccupantExited(struct UBravoHotelVehicleSeatComponent Seat); // Function UW-VehicleWidget.UW-VehicleWidget_C.OnSeatOccupantExited(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnSeatOccupantEntered(struct UBravoHotelVehicleSeatComponent Seat); // Function UW-VehicleWidget.UW-VehicleWidget_C.OnSeatOccupantEntered(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void UpdateFuelGauge(); // Function UW-VehicleWidget.UW-VehicleWidget_C.UpdateFuelGauge(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void UpdateSpeedText(); // Function UW-VehicleWidget.UW-VehicleWidget_C.UpdateSpeedText(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Hide(); // Function UW-VehicleWidget.UW-VehicleWidget_C.Hide(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Show(struct Unknown VehicleSeat); // Function UW-VehicleWidget.UW-VehicleWidget_C.Show(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-VehicleWidget.UW-VehicleWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Show(struct UBravoHotelVehicleSeatComponent VehicleSeat); // Function UW-VehicleWidget.UW-VehicleWidget_C.Show(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-VehicleWidget.UW-VehicleWidget_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-VehicleWidget.UW-VehicleWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetInfo(float CurFuel, float CurHp, struct FString CurSpeed); // Function UW-VehicleWidget.UW-VehicleWidget_C.SetInfo(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ShowVehicle(); // Function UW-VehicleWidget.UW-VehicleWidget_C.ShowVehicle(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnSeatOccupantEnter(struct Unknown SeatComponent, struct Unknown Occupant); // Function UW-VehicleWidget.UW-VehicleWidget_C.OnSeatOccupantEnter(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void 鉹@ t元_1(struct Unknown SeatComponent, struct Unknown Occupant); // Function UW-VehicleWidget.UW-VehicleWidget_C.鉹@ t元_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnSeatOccupantEnter(struct UBravoHotelVehicleSeatComponent SeatComponent, struct ABravoHotelCharacter Occupant); // Function UW-VehicleWidget.UW-VehicleWidget_C.OnSeatOccupantEnter(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void 鉹@ t元_1(struct UBravoHotelVehicleSeatComponent SeatComponent, struct ABravoHotelCharacter Occupant); // Function UW-VehicleWidget.UW-VehicleWidget_C.鉹@ t元_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void HideVehicle(); // Function UW-VehicleWidget.UW-VehicleWidget_C.HideVehicle(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetInterpTarget(); // Function UW-VehicleWidget.UW-VehicleWidget_C.SetInterpTarget(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-VehicleWidget(int32_t EntryPoint); // Function UW-VehicleWidget.UW-VehicleWidget_C.ExecuteUbergraph_UW-VehicleWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
@@ -74,11 +74,11 @@ inline void UUW-VehicleWidget_C::SetHPColor(float InPercent) {
 }
 
 // Function UW-VehicleWidget.UW-VehicleWidget_C.OnSeatOccupantExited
-inline void UUW-VehicleWidget_C::OnSeatOccupantExited(struct Unknown Seat) {
+inline void UUW-VehicleWidget_C::OnSeatOccupantExited(struct UBravoHotelVehicleSeatComponent Seat) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-VehicleWidget.UW-VehicleWidget_C.OnSeatOccupantExited");
 
 	struct OnSeatOccupantExited_Params {
-		struct Unknown Seat;
+		struct UBravoHotelVehicleSeatComponent Seat;
 	}; OnSeatOccupantExited_Params Params;
 
 	Params.Seat = Seat;
@@ -89,11 +89,11 @@ inline void UUW-VehicleWidget_C::OnSeatOccupantExited(struct Unknown Seat) {
 }
 
 // Function UW-VehicleWidget.UW-VehicleWidget_C.OnSeatOccupantEntered
-inline void UUW-VehicleWidget_C::OnSeatOccupantEntered(struct Unknown Seat) {
+inline void UUW-VehicleWidget_C::OnSeatOccupantEntered(struct UBravoHotelVehicleSeatComponent Seat) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-VehicleWidget.UW-VehicleWidget_C.OnSeatOccupantEntered");
 
 	struct OnSeatOccupantEntered_Params {
-		struct Unknown Seat;
+		struct UBravoHotelVehicleSeatComponent Seat;
 	}; OnSeatOccupantEntered_Params Params;
 
 	Params.Seat = Seat;
@@ -146,11 +146,11 @@ inline void UUW-VehicleWidget_C::Hide() {
 }
 
 // Function UW-VehicleWidget.UW-VehicleWidget_C.Show
-inline void UUW-VehicleWidget_C::Show(struct Unknown VehicleSeat) {
+inline void UUW-VehicleWidget_C::Show(struct UBravoHotelVehicleSeatComponent VehicleSeat) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-VehicleWidget.UW-VehicleWidget_C.Show");
 
 	struct Show_Params {
-		struct Unknown VehicleSeat;
+		struct UBravoHotelVehicleSeatComponent VehicleSeat;
 	}; Show_Params Params;
 
 	Params.VehicleSeat = VehicleSeat;
@@ -161,11 +161,11 @@ inline void UUW-VehicleWidget_C::Show(struct Unknown VehicleSeat) {
 }
 
 // Function UW-VehicleWidget.UW-VehicleWidget_C.Tick
-inline void UUW-VehicleWidget_C::Tick(struct Unknown MyGeometry, float InDeltaTime) {
+inline void UUW-VehicleWidget_C::Tick(struct FGeometry MyGeometry, float InDeltaTime) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-VehicleWidget.UW-VehicleWidget_C.Tick");
 
 	struct Tick_Params {
-		struct Unknown MyGeometry;
+		struct FGeometry MyGeometry;
 		float InDeltaTime;
 	}; Tick_Params Params;
 
@@ -225,12 +225,12 @@ inline void UUW-VehicleWidget_C::ShowVehicle() {
 }
 
 // Function UW-VehicleWidget.UW-VehicleWidget_C.OnSeatOccupantEnter
-inline void UUW-VehicleWidget_C::OnSeatOccupantEnter(struct Unknown SeatComponent, struct Unknown Occupant) {
+inline void UUW-VehicleWidget_C::OnSeatOccupantEnter(struct UBravoHotelVehicleSeatComponent SeatComponent, struct ABravoHotelCharacter Occupant) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-VehicleWidget.UW-VehicleWidget_C.OnSeatOccupantEnter");
 
 	struct OnSeatOccupantEnter_Params {
-		struct Unknown SeatComponent;
-		struct Unknown Occupant;
+		struct UBravoHotelVehicleSeatComponent SeatComponent;
+		struct ABravoHotelCharacter Occupant;
 	}; OnSeatOccupantEnter_Params Params;
 
 	Params.SeatComponent = SeatComponent;
@@ -242,12 +242,12 @@ inline void UUW-VehicleWidget_C::OnSeatOccupantEnter(struct Unknown SeatComponen
 }
 
 // Function UW-VehicleWidget.UW-VehicleWidget_C.鉹@ t元_1
-inline void UUW-VehicleWidget_C::鉹@ t元_1(struct Unknown SeatComponent, struct Unknown Occupant) {
+inline void UUW-VehicleWidget_C::鉹@ t元_1(struct UBravoHotelVehicleSeatComponent SeatComponent, struct ABravoHotelCharacter Occupant) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-VehicleWidget.UW-VehicleWidget_C.鉹@ t元_1");
 
 	struct 鉹@ t元_1_Params {
-		struct Unknown SeatComponent;
-		struct Unknown Occupant;
+		struct UBravoHotelVehicleSeatComponent SeatComponent;
+		struct ABravoHotelCharacter Occupant;
 	}; 鉹@ t元_1_Params Params;
 
 	Params.SeatComponent = SeatComponent;

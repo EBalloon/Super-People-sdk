@@ -3,197 +3,197 @@ class UUW-Inventory_Perk_C : public UBravoHotelInventoryPerkWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x2E8 (8)
-	struct Unknown Anim_Glow; // 0x2F0 (8)
-	struct Unknown HideFreeSupply; // 0x2F8 (8)
-	struct Unknown ShowFreeSupply; // 0x300 (8)
-	struct Unknown LevelUp; // 0x308 (8)
-	struct Unknown Ability_Defense; // 0x310 (8)
-	struct Unknown Ability_Speed; // 0x318 (8)
-	struct Unknown Ability_Power; // 0x320 (8)
-	struct Unknown Survive_FadeInOut; // 0x328 (8)
-	struct Unknown Anim_LevelUpDefense; // 0x330 (8)
-	struct Unknown Anim_LevelUpSpeed; // 0x338 (8)
-	struct Unknown Anim_LevelUpPower; // 0x340 (8)
-	struct Unknown btn_ItemTree; // 0x348 (8)
-	struct Unknown btn_PerkDeckDisabled; // 0x350 (8)
-	struct Unknown btn_PerkDeckDisabled_2; // 0x358 (8)
-	struct Unknown btn_PerkDeckEnabled; // 0x360 (8)
-	struct Unknown btn_PerkDeckEnabled_2; // 0x368 (8)
-	struct Unknown Canvas_BG; // 0x370 (8)
-	struct Unknown Canvas_ChangeClass; // 0x378 (8)
-	struct Unknown Canvas_ChangeDisable; // 0x380 (8)
-	struct Unknown Canvas_ChangeDisable_2; // 0x388 (8)
-	struct Unknown Canvas_ChangeEnable; // 0x390 (8)
-	struct Unknown Canvas_ChangeEnable_2; // 0x398 (8)
-	struct Unknown Canvas_ChangeSupply; // 0x3A0 (8)
-	struct Unknown Canvas_LevelupEffect; // 0x3A8 (8)
-	struct Unknown Canvas_Main; // 0x3B0 (8)
-	struct Unknown Canvas_Perk; // 0x3B8 (8)
-	struct Unknown Canvas_SupplyButton; // 0x3C0 (8)
-	struct Unknown Canvas_UltimateEffect; // 0x3C8 (8)
-	struct Unknown Canvas_UltimateLightEffect; // 0x3D0 (8)
-	struct Unknown HorizontalBox_300; // 0x3D8 (8)
-	struct Unknown HorizontalBox_303; // 0x3E0 (8)
-	struct Unknown HorizontalBox_Stat; // 0x3E8 (8)
-	struct Unknown HorizontalBox_UnlockLevel; // 0x3F0 (8)
-	struct Unknown Image; // 0x3F8 (8)
-	struct Unknown Image_5; // 0x400 (8)
-	struct Unknown Image_86; // 0x408 (8)
-	struct Unknown Image_126; // 0x410 (8)
-	struct Unknown Image_163; // 0x418 (8)
-	struct Unknown Image_180; // 0x420 (8)
-	struct Unknown Image_200; // 0x428 (8)
-	struct Unknown Image_203; // 0x430 (8)
-	struct Unknown Image_222; // 0x438 (8)
-	struct Unknown Image_384; // 0x440 (8)
-	struct Unknown Image_387; // 0x448 (8)
-	struct Unknown Image_388; // 0x450 (8)
-	struct Unknown Image_389; // 0x458 (8)
-	struct Unknown Image_485; // 0x460 (8)
-	struct Unknown Image_571; // 0x468 (8)
-	struct Unknown Image_1098; // 0x470 (8)
-	struct Unknown Image_1100; // 0x478 (8)
-	struct Unknown Image_1104; // 0x480 (8)
-	struct Unknown Image_Cycle; // 0x488 (8)
-	struct Unknown Image_Cycle_2; // 0x490 (8)
-	struct Unknown IMG_ClassIcon; // 0x498 (8)
-	struct Unknown Img_PerkDeckIcon; // 0x4A0 (8)
-	struct Unknown IMG_Supply; // 0x4A8 (8)
-	struct Unknown IMG_UltimatedSkill; // 0x4B0 (8)
-	struct Unknown InvalidationBox_1; // 0x4B8 (8)
-	struct Unknown KeyImageWidget; // 0x4C0 (8)
-	struct Unknown NotEnoughGold; // 0x4C8 (8)
-	struct Unknown Over_Ultimate; // 0x4D0 (8)
-	struct Unknown Overlay_UltimateKey; // 0x4D8 (8)
-	struct Unknown Spacer_251; // 0x4E0 (8)
-	struct Unknown T_ClassName; // 0x4E8 (8)
-	struct Unknown T_Defense; // 0x4F0 (8)
-	struct Unknown T_DefenseAnim; // 0x4F8 (8)
-	struct Unknown T_Power; // 0x500 (8)
-	struct Unknown T_PowerAnim; // 0x508 (8)
-	struct Unknown T_Speed; // 0x510 (8)
-	struct Unknown T_SpeedAnim; // 0x518 (8)
-	struct Unknown T_UltimateName; // 0x520 (8)
-	struct Unknown T_UnlockLevel; // 0x528 (8)
-	struct Unknown T_UnlockLevel2; // 0x530 (8)
-	struct Unknown T_WeaponName; // 0x538 (8)
-	struct Unknown TextBlock_2; // 0x540 (8)
-	struct Unknown TextBlock_3; // 0x548 (8)
-	struct Unknown TextBlock_4; // 0x550 (8)
-	struct Unknown TextBlock_9; // 0x558 (8)
-	struct Unknown TextBlock_ClassLevel; // 0x560 (8)
-	struct Unknown TextBlock_Count_Blue; // 0x568 (8)
-	struct Unknown TextBlock_Count_Green; // 0x570 (8)
-	struct Unknown TextBlock_Count_Red; // 0x578 (8)
-	struct Unknown TextBlock_Defense; // 0x580 (8)
-	struct Unknown TextBlock_Power; // 0x588 (8)
-	struct Unknown TextBlock_Price; // 0x590 (8)
-	struct Unknown TextBlock_Price_2; // 0x598 (8)
-	struct Unknown TextBlock_Select; // 0x5A0 (8)
-	struct Unknown TextBlock_Select_2; // 0x5A8 (8)
-	struct Unknown TextBlock_Speed; // 0x5B0 (8)
-	struct Unknown TextBlock_SurviveMessage01; // 0x5B8 (8)
-	struct Unknown TextBlock_SurviveMessage02; // 0x5C0 (8)
-	struct Unknown TextBlock_UltimateDesc; // 0x5C8 (8)
-	struct Unknown Title; // 0x5D0 (8)
-	struct Unknown UltiLight_001; // 0x5D8 (8)
-	struct Unknown UltiLight_002; // 0x5E0 (8)
-	struct Unknown UltiLight_003; // 0x5E8 (8)
-	struct Unknown UW-Inventory_PerkSlot; // 0x5F0 (8)
-	struct Unknown UW-Inventory_PerkSlot_2; // 0x5F8 (8)
-	struct Unknown UW-Inventory_PerkSlot_3; // 0x600 (8)
-	struct Unknown UW-Inventory_PerkSlot_4; // 0x608 (8)
-	struct Unknown UW-Inventory_PerkSlot_5; // 0x610 (8)
-	struct Unknown UW-Inventory_PerkSlot_6; // 0x618 (8)
-	struct Unknown UW-Inventory_PerkSlot_7; // 0x620 (8)
-	struct Unknown UW-Inventory_PerkSlot_8; // 0x628 (8)
-	struct Unknown UW-Inventory_PerkSlot_9; // 0x630 (8)
-	struct Unknown VB_Health; // 0x638 (8)
-	struct Unknown VB_Power; // 0x640 (8)
-	struct Unknown VB_Speed; // 0x648 (8)
-	struct Unknown VerticalBox_Blue; // 0x650 (8)
-	struct Unknown VerticalBox_Green; // 0x658 (8)
-	struct Unknown VerticalBox_Red; // 0x660 (8)
-	struct Unknown WidgetSwitcher_ChangeClass; // 0x668 (8)
-	struct Unknown WidgetSwitcher_ChangeSupply; // 0x670 (8)
-	struct Unknown WidgetSwitcher_TreeAndClass; // 0x678 (8)
-	struct Unknown WidgetSwitcher_Ultimate; // 0x680 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x2E8 (8)
+	struct UWidgetAnimation Anim_Glow; // 0x2F0 (8)
+	struct UWidgetAnimation HideFreeSupply; // 0x2F8 (8)
+	struct UWidgetAnimation ShowFreeSupply; // 0x300 (8)
+	struct UWidgetAnimation LevelUp; // 0x308 (8)
+	struct UWidgetAnimation Ability_Defense; // 0x310 (8)
+	struct UWidgetAnimation Ability_Speed; // 0x318 (8)
+	struct UWidgetAnimation Ability_Power; // 0x320 (8)
+	struct UWidgetAnimation Survive_FadeInOut; // 0x328 (8)
+	struct UWidgetAnimation Anim_LevelUpDefense; // 0x330 (8)
+	struct UWidgetAnimation Anim_LevelUpSpeed; // 0x338 (8)
+	struct UWidgetAnimation Anim_LevelUpPower; // 0x340 (8)
+	struct UButton btn_ItemTree; // 0x348 (8)
+	struct UButton btn_PerkDeckDisabled; // 0x350 (8)
+	struct UButton btn_PerkDeckDisabled_2; // 0x358 (8)
+	struct UButton btn_PerkDeckEnabled; // 0x360 (8)
+	struct UButton btn_PerkDeckEnabled_2; // 0x368 (8)
+	struct UCanvasPanel Canvas_BG; // 0x370 (8)
+	struct UCanvasPanel Canvas_ChangeClass; // 0x378 (8)
+	struct UCanvasPanel Canvas_ChangeDisable; // 0x380 (8)
+	struct UCanvasPanel Canvas_ChangeDisable_2; // 0x388 (8)
+	struct UCanvasPanel Canvas_ChangeEnable; // 0x390 (8)
+	struct UCanvasPanel Canvas_ChangeEnable_2; // 0x398 (8)
+	struct UCanvasPanel Canvas_ChangeSupply; // 0x3A0 (8)
+	struct UCanvasPanel Canvas_LevelupEffect; // 0x3A8 (8)
+	struct UCanvasPanel Canvas_Main; // 0x3B0 (8)
+	struct UCanvasPanel Canvas_Perk; // 0x3B8 (8)
+	struct UCanvasPanel Canvas_SupplyButton; // 0x3C0 (8)
+	struct UCanvasPanel Canvas_UltimateEffect; // 0x3C8 (8)
+	struct UCanvasPanel Canvas_UltimateLightEffect; // 0x3D0 (8)
+	struct UHorizontalBox HorizontalBox_300; // 0x3D8 (8)
+	struct UHorizontalBox HorizontalBox_303; // 0x3E0 (8)
+	struct UHorizontalBox HorizontalBox_Stat; // 0x3E8 (8)
+	struct UHorizontalBox HorizontalBox_UnlockLevel; // 0x3F0 (8)
+	struct UImage Image; // 0x3F8 (8)
+	struct UImage Image_5; // 0x400 (8)
+	struct UImage Image_86; // 0x408 (8)
+	struct UImage Image_126; // 0x410 (8)
+	struct UImage Image_163; // 0x418 (8)
+	struct UImage Image_180; // 0x420 (8)
+	struct UImage Image_200; // 0x428 (8)
+	struct UImage Image_203; // 0x430 (8)
+	struct UImage Image_222; // 0x438 (8)
+	struct UImage Image_384; // 0x440 (8)
+	struct UImage Image_387; // 0x448 (8)
+	struct UImage Image_388; // 0x450 (8)
+	struct UImage Image_389; // 0x458 (8)
+	struct UImage Image_485; // 0x460 (8)
+	struct UImage Image_571; // 0x468 (8)
+	struct UImage Image_1098; // 0x470 (8)
+	struct UImage Image_1100; // 0x478 (8)
+	struct UImage Image_1104; // 0x480 (8)
+	struct UImage Image_Cycle; // 0x488 (8)
+	struct UImage Image_Cycle_2; // 0x490 (8)
+	struct UImage IMG_ClassIcon; // 0x498 (8)
+	struct UImage Img_PerkDeckIcon; // 0x4A0 (8)
+	struct UImage IMG_Supply; // 0x4A8 (8)
+	struct UImage IMG_UltimatedSkill; // 0x4B0 (8)
+	struct UInvalidationBox InvalidationBox_1; // 0x4B8 (8)
+	struct UKeyImageWidget_C KeyImageWidget; // 0x4C0 (8)
+	struct UCanvasPanel NotEnoughGold; // 0x4C8 (8)
+	struct UOverlay Over_Ultimate; // 0x4D0 (8)
+	struct UOverlay Overlay_UltimateKey; // 0x4D8 (8)
+	struct USpacer Spacer_251; // 0x4E0 (8)
+	struct UTextBlock T_ClassName; // 0x4E8 (8)
+	struct UTextBlock T_Defense; // 0x4F0 (8)
+	struct UTextBlock T_DefenseAnim; // 0x4F8 (8)
+	struct UTextBlock T_Power; // 0x500 (8)
+	struct UTextBlock T_PowerAnim; // 0x508 (8)
+	struct UTextBlock T_Speed; // 0x510 (8)
+	struct UTextBlock T_SpeedAnim; // 0x518 (8)
+	struct UTextBlock T_UltimateName; // 0x520 (8)
+	struct UTextBlock T_UnlockLevel; // 0x528 (8)
+	struct UTextBlock T_UnlockLevel2; // 0x530 (8)
+	struct UTextBlock T_WeaponName; // 0x538 (8)
+	struct UTextBlock TextBlock_2; // 0x540 (8)
+	struct UTextBlock TextBlock_3; // 0x548 (8)
+	struct UTextBlock TextBlock_4; // 0x550 (8)
+	struct UTextBlock TextBlock_9; // 0x558 (8)
+	struct UTextBlock TextBlock_ClassLevel; // 0x560 (8)
+	struct UTextBlock TextBlock_Count_Blue; // 0x568 (8)
+	struct UTextBlock TextBlock_Count_Green; // 0x570 (8)
+	struct UTextBlock TextBlock_Count_Red; // 0x578 (8)
+	struct UTextBlock TextBlock_Defense; // 0x580 (8)
+	struct UTextBlock TextBlock_Power; // 0x588 (8)
+	struct UTextBlock TextBlock_Price; // 0x590 (8)
+	struct UTextBlock TextBlock_Price_2; // 0x598 (8)
+	struct UTextBlock TextBlock_Select; // 0x5A0 (8)
+	struct UTextBlock TextBlock_Select_2; // 0x5A8 (8)
+	struct UTextBlock TextBlock_Speed; // 0x5B0 (8)
+	struct UTextBlock TextBlock_SurviveMessage01; // 0x5B8 (8)
+	struct UTextBlock TextBlock_SurviveMessage02; // 0x5C0 (8)
+	struct UTextBlock TextBlock_UltimateDesc; // 0x5C8 (8)
+	struct UHorizontalBox Title; // 0x5D0 (8)
+	struct UImage UltiLight_001; // 0x5D8 (8)
+	struct UImage UltiLight_002; // 0x5E0 (8)
+	struct UImage UltiLight_003; // 0x5E8 (8)
+	struct UUW-Inventory_PerkSlot_C UW-Inventory_PerkSlot; // 0x5F0 (8)
+	struct UUW-Inventory_PerkSlot_C UW-Inventory_PerkSlot_2; // 0x5F8 (8)
+	struct UUW-Inventory_PerkSlot_C UW-Inventory_PerkSlot_3; // 0x600 (8)
+	struct UUW-Inventory_PerkSlot_C UW-Inventory_PerkSlot_4; // 0x608 (8)
+	struct UUW-Inventory_PerkSlot_C UW-Inventory_PerkSlot_5; // 0x610 (8)
+	struct UUW-Inventory_PerkSlot_C UW-Inventory_PerkSlot_6; // 0x618 (8)
+	struct UUW-Inventory_PerkSlot_C UW-Inventory_PerkSlot_7; // 0x620 (8)
+	struct UUW-Inventory_PerkSlot_C UW-Inventory_PerkSlot_8; // 0x628 (8)
+	struct UUW-Inventory_PerkSlot_C UW-Inventory_PerkSlot_9; // 0x630 (8)
+	struct UVerticalBox VB_Health; // 0x638 (8)
+	struct UVerticalBox VB_Power; // 0x640 (8)
+	struct UVerticalBox VB_Speed; // 0x648 (8)
+	struct UVerticalBox VerticalBox_Blue; // 0x650 (8)
+	struct UVerticalBox VerticalBox_Green; // 0x658 (8)
+	struct UVerticalBox VerticalBox_Red; // 0x660 (8)
+	struct UWidgetSwitcher WidgetSwitcher_ChangeClass; // 0x668 (8)
+	struct UWidgetSwitcher WidgetSwitcher_ChangeSupply; // 0x670 (8)
+	struct UWidgetSwitcher WidgetSwitcher_TreeAndClass; // 0x678 (8)
+	struct UWidgetSwitcher WidgetSwitcher_Ultimate; // 0x680 (8)
 	struct FName CurrentPerkDeckName; // 0x688 (8)
-	struct TArray<Unknown> CurrentPerkInfos; // 0x690 (16)
+	struct TArray<struct UUW-Inventory_PerkSlot_C> CurrentPerkInfos; // 0x690 (16)
 	struct FName ExpertWeaponKey; // 0x6A0 (8)
-	struct TMap<Unknown, Unknown> CurrentPerkCells; // 0x6A8 (80)
+	struct TMap<struct FName, struct UUW-Inventory_PerkSlot_C> CurrentPerkCells; // 0x6A8 (80)
 	int32_t PerkMode; // 0x6F8 (4)
-	struct Unknown HoverWidget; // 0x700 (8)
+	struct UUW-Inventory_ItemSlotHover_C HoverWidget; // 0x700 (8)
 	int32_t PowerValue; // 0x708 (4)
-	struct Unknown TimerHandle_Power; // 0x710 (8)
+	struct FTimerHandle TimerHandle_Power; // 0x710 (8)
 	int32_t SpeedValue; // 0x718 (4)
-	struct Unknown TimerHandle_Speed; // 0x720 (8)
+	struct FTimerHandle TimerHandle_Speed; // 0x720 (8)
 	int32_t DefenseValue; // 0x728 (4)
-	struct Unknown TimerHandle_Defense; // 0x730 (8)
+	struct FTimerHandle TimerHandle_Defense; // 0x730 (8)
 	char bPlayAbilityCountSoundStart : 0; // 0x738 (1)
 	char bPlayAbilityCountSoundEnd : 0; // 0x739 (1)
-	struct Unknown LevelUpSound; // 0x740 (8)
+	struct UAkAudioEvent LevelUpSound; // 0x740 (8)
 	char EnableSupplyBtn : 0; // 0x748 (1)
-	struct Unknown FreeSupplyTimer; // 0x750 (8)
-	struct Unknown NotEnoughtGoldTimer; // 0x758 (8)
-	struct TArray<Unknown> GainPerkPopups; // 0x760 (16)
+	struct FTimerHandle FreeSupplyTimer; // 0x750 (8)
+	struct FTimerHandle NotEnoughtGoldTimer; // 0x758 (8)
+	struct TArray<struct UUW-GainPerk_C> GainPerkPopups; // 0x760 (16)
 	char IsPlayingUltimateSound : 0; // 0x770 (1)
 	int32_t LastLevel; // 0x774 (4)
-	struct Unknown PerkDeckClassInfo; // 0x778 (40)
+	struct FPerkDeckClassInfo PerkDeckClassInfo; // 0x778 (40)
 
 	void SequenceEvent__ENTRYPOINTUW-Inventory_Perk_2(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SequenceEvent__ENTRYPOINTUW-Inventory_Perk_2(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SequenceEvent__ENTRYPOINTUW-Inventory_Perk_1(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SequenceEvent__ENTRYPOINTUW-Inventory_Perk_1(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetEnabledInvalidationbox(char Enabled); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetEnabledInvalidationbox(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ResetUltimateSound(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.ResetUltimateSound(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AddGainPerkPopup(struct Unknown PerkInfo, int32_t CurrentLevel, int32_t LastLevel); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AddGainPerkPopup(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AddGainPerkPopup(struct FPerkUIInfo PerkInfo, int32_t CurrentLevel, int32_t LastLevel); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AddGainPerkPopup(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void UpdateInvalidationbox(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.UpdateInvalidationbox(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnChangedToggleType(enum class Unknow ToggleType); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnChangedToggleType(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnBattleRoyaleStateChanged(enum class Unknow PreviousState, enum class Unknow CurrentState); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnBattleRoyaleStateChanged(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnChangedToggleType(enum class EToggleWidgetModeType ToggleType); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnChangedToggleType(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnBattleRoyaleStateChanged(enum class EBattleRoyaleState PreviousState, enum class EBattleRoyaleState CurrentState); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnBattleRoyaleStateChanged(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void UpdateStatsInfo(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.UpdateStatsInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown OnMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetUltimateSkillKeyIcon(struct TArray<Unknown>& Type); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetUltimateSkillKeyIcon(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply OnMouseButtonDown(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnMouseButtonDown(BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetUltimateSkillKeyIcon(struct TArray<enum class EKeySettingType>& Type); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetUltimateSkillKeyIcon(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void PlayAbilityCountSoundEnd(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PlayAbilityCountSoundEnd(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void PlayAbilityCountSoundStart(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PlayAbilityCountSoundStart(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void ShowStatusHovered(struct Unknown InHoveredWidget); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.ShowStatusHovered(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetAbilityAnimation(struct Unknown& Handle, int32_t Value, struct Unknown Animation, struct FString FunctionName, int32_t Index); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetAbilityAnimation(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void ShowStatusHovered(struct UWidget InHoveredWidget); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.ShowStatusHovered(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetAbilityAnimation(struct FTimerHandle& Handle, int32_t Value, struct UWidgetAnimation Animation, struct FString FunctionName, int32_t Index); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetAbilityAnimation(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void InitAnimation(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.InitAnimation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void DefenseCountAnimation(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.DefenseCountAnimation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SpeedCountAnimation(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SpeedCountAnimation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void PowerCountAnimation(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PowerCountAnimation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void PlaySoundBonusLevelUp(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PlaySoundBonusLevelUp(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void PlaySoundTimeBonus(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PlaySoundTimeBonus(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetPositionTargetPerk(enum class Unknow PerkSlot, int32_t PerkIndex, char& Result, struct Unknown& Position); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.GetPositionTargetPerk(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void GetSlotAndIndexTargetPerk(struct FName TargetPerkName, char& HasPerk, enum class Unknow& PerkSlot, int32_t& PerkIndex); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.GetSlotAndIndexTargetPerk(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetPositionTargetPerk(enum class EPerkSlotFlag PerkSlot, int32_t PerkIndex, char& Result, struct FVector2D& Position); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.GetPositionTargetPerk(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void GetSlotAndIndexTargetPerk(struct FName TargetPerkName, char& HasPerk, enum class EPerkSlotFlag& PerkSlot, int32_t& PerkIndex); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.GetSlotAndIndexTargetPerk(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void AddUltimateSkillUnlockEffect(int32_t CurrentLevel); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AddUltimateSkillUnlockEffect(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ResetPerkCells(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.ResetPerkCells(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetClassLevelText(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetClassLevelText(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void PerkLevelUpEffect(struct Unknown PerkInfo, int32_t CurrentLevel); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PerkLevelUpEffect(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void PerkLevelUpEffect(struct FPerkUIInfo PerkInfo, int32_t CurrentLevel); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PerkLevelUpEffect(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetPerkdeckWidget(char State); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetPerkdeckWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ShowUltimatePerk(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.ShowUltimatePerk(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void PlayStatsLevelUpAnim(struct Unknown IncreasedAbility); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PlayStatsLevelUpAnim(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void PlayStatsLevelUpAnim(struct FDisplayAbility IncreasedAbility); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PlayStatsLevelUpAnim(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void PlayLevelTextAnim(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PlayLevelTextAnim(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CheckUltimateOpen(int32_t CurrentLevel); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.CheckUltimateOpen(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void PerkLevelUp(struct Unknown PerkInfo, int32_t CurrentLevel, int32_t LastLevel); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PerkLevelUp(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void PerkLevelUp(struct FPerkUIInfo PerkInfo, int32_t CurrentLevel, int32_t LastLevel); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PerkLevelUp(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetUltimateSkillInfo(char UseLocalPlayerInfo, char IsMaxLevel); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetUltimateSkillInfo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetPriceFontColor(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetPriceFontColor(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	struct FText Get_TextBlock_Price_Text_1(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.Get_TextBlock_Price_Text_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void CreatePerkDeck(char UseLocalPlayerInfo, char IsMaxLevel); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.CreatePerkDeck(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetPerks(struct Unknown HoverWidget, char bUseLocalPlayerInfo, char bMaxLevel, char bPerkDeckMode, struct Unknown PerkDeckClassInfo); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetPerks(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnLoaded_99DDE97542548A0CC17B5FBAD209C3DD(struct Unknown Loaded); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnLoaded_99DDE97542548A0CC17B5FBAD209C3DD(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnLoaded_4F86CE894B71E485811BFEA8F94AD46E(struct Unknown Loaded); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnLoaded_4F86CE894B71E485811BFEA8F94AD46E(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnLoaded_9E0A9EF44F73119D77D7119DEA0EF67A(struct Unknown Loaded); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnLoaded_9E0A9EF44F73119D77D7119DEA0EF67A(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetPerks(struct UUW-Inventory_ItemSlotHover_C HoverWidget, char bUseLocalPlayerInfo, char bMaxLevel, char bPerkDeckMode, struct FPerkDeckClassInfo PerkDeckClassInfo); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetPerks(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_99DDE97542548A0CC17B5FBAD209C3DD(struct Object Loaded); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnLoaded_99DDE97542548A0CC17B5FBAD209C3DD(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_4F86CE894B71E485811BFEA8F94AD46E(struct Object Loaded); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnLoaded_4F86CE894B71E485811BFEA8F94AD46E(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_9E0A9EF44F73119D77D7119DEA0EF67A(struct Object Loaded); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnLoaded_9E0A9EF44F73119D77D7119DEA0EF67A(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Destruct(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AsyncLoadIcon(struct Unknown Image); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AsyncLoadIcon(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AsyncCohIcon(struct Unknown Image); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AsyncCohIcon(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AsyncLoadIcon(struct TSoftObjectPtr<Object> Image); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AsyncLoadIcon(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AsyncCohIcon(struct TSoftObjectPtr<Object> Image); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AsyncCohIcon(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void PlayReadyGivePerk(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PlayReadyGivePerk(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void StopReadyGivePerk(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.StopReadyGivePerk(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AsyncClassIcon(struct Unknown Image); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AsyncClassIcon(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AsyncClassIcon(struct TSoftObjectPtr<Object> Image); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AsyncClassIcon(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void AbilityPowerAnimationFinished(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AbilityPowerAnimationFinished(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void AbilitySpeedAnimationFinished(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AbilitySpeedAnimationFinished(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void LevelUpAnimationFinished(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.LevelUpAnimationFinished(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void PlayKillGivePerk(int32_t KillCount); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PlayKillGivePerk(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnHoveredWidget(struct Unknown HoveredWidget); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnHoveredWidget(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnHoveredWidget(struct UWidget HoveredWidget); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnHoveredWidget(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__btn_PerkDeck_K2Node_ComponentBoundEvent_4_OnButtonHoverEvent__DelegateSignature(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.BndEvt__btn_PerkDeck_K2Node_ComponentBoundEvent_4_OnButtonHoverEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void AbilityDefenseAnimationFinished(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AbilityDefenseAnimationFinished(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__btn_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.BndEvt__btn_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -202,7 +202,7 @@ public:
 	void Construct(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__btn_PerkDeckDisabled_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.BndEvt__btn_PerkDeckDisabled_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__btn_PerkDeckEnabled_1_K2Node_ComponentBoundEvent_5_OnButtonClickedEvent__DelegateSignature(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.BndEvt__btn_PerkDeckEnabled_1_K2Node_ComponentBoundEvent_5_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void 鉹@t元_1(enum class Unknow PrevState, enum class Unknow CurrentState); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void 鉹@t元_1(enum class EBattleRoyaleState PrevState, enum class EBattleRoyaleState CurrentState); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.鉹@t元_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CheckFreeSupply(char IsInventoryOpen); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.CheckFreeSupply(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void 鉹@t元_2(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.鉹@t元_2(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void StartUltimateAnim(); // Function UW-Inventory_Perk.UW-Inventory_Perk_C.StartUltimateAnim(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -271,11 +271,11 @@ inline void UUW-Inventory_Perk_C::ResetUltimateSound() {
 }
 
 // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AddGainPerkPopup
-inline void UUW-Inventory_Perk_C::AddGainPerkPopup(struct Unknown PerkInfo, int32_t CurrentLevel, int32_t LastLevel) {
+inline void UUW-Inventory_Perk_C::AddGainPerkPopup(struct FPerkUIInfo PerkInfo, int32_t CurrentLevel, int32_t LastLevel) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Perk.UW-Inventory_Perk_C.AddGainPerkPopup");
 
 	struct AddGainPerkPopup_Params {
-		struct Unknown PerkInfo;
+		struct FPerkUIInfo PerkInfo;
 		int32_t CurrentLevel;
 		int32_t LastLevel;
 	}; AddGainPerkPopup_Params Params;
@@ -304,11 +304,11 @@ inline void UUW-Inventory_Perk_C::UpdateInvalidationbox() {
 }
 
 // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnChangedToggleType
-inline void UUW-Inventory_Perk_C::OnChangedToggleType(enum class Unknow ToggleType) {
+inline void UUW-Inventory_Perk_C::OnChangedToggleType(enum class EToggleWidgetModeType ToggleType) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnChangedToggleType");
 
 	struct OnChangedToggleType_Params {
-		enum class Unknow ToggleType;
+		enum class EToggleWidgetModeType ToggleType;
 	}; OnChangedToggleType_Params Params;
 
 	Params.ToggleType = ToggleType;
@@ -319,12 +319,12 @@ inline void UUW-Inventory_Perk_C::OnChangedToggleType(enum class Unknow ToggleTy
 }
 
 // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnBattleRoyaleStateChanged
-inline void UUW-Inventory_Perk_C::OnBattleRoyaleStateChanged(enum class Unknow PreviousState, enum class Unknow CurrentState) {
+inline void UUW-Inventory_Perk_C::OnBattleRoyaleStateChanged(enum class EBattleRoyaleState PreviousState, enum class EBattleRoyaleState CurrentState) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnBattleRoyaleStateChanged");
 
 	struct OnBattleRoyaleStateChanged_Params {
-		enum class Unknow PreviousState;
-		enum class Unknow CurrentState;
+		enum class EBattleRoyaleState PreviousState;
+		enum class EBattleRoyaleState CurrentState;
 	}; OnBattleRoyaleStateChanged_Params Params;
 
 	Params.PreviousState = PreviousState;
@@ -350,13 +350,13 @@ inline void UUW-Inventory_Perk_C::UpdateStatsInfo() {
 }
 
 // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnMouseButtonDown
-inline struct Unknown UUW-Inventory_Perk_C::OnMouseButtonDown(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UUW-Inventory_Perk_C::OnMouseButtonDown(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnMouseButtonDown");
 
 	struct OnMouseButtonDown_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnMouseButtonDown_Params Params;
 
@@ -373,11 +373,11 @@ inline struct Unknown UUW-Inventory_Perk_C::OnMouseButtonDown(struct Unknown MyG
 }
 
 // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetUltimateSkillKeyIcon
-inline void UUW-Inventory_Perk_C::SetUltimateSkillKeyIcon(struct TArray<Unknown>& Type) {
+inline void UUW-Inventory_Perk_C::SetUltimateSkillKeyIcon(struct TArray<enum class EKeySettingType>& Type) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetUltimateSkillKeyIcon");
 
 	struct SetUltimateSkillKeyIcon_Params {
-		struct TArray<Unknown>& Type;
+		struct TArray<enum class EKeySettingType>& Type;
 	}; SetUltimateSkillKeyIcon_Params Params;
 
 
@@ -418,11 +418,11 @@ inline void UUW-Inventory_Perk_C::PlayAbilityCountSoundStart() {
 }
 
 // Function UW-Inventory_Perk.UW-Inventory_Perk_C.ShowStatusHovered
-inline void UUW-Inventory_Perk_C::ShowStatusHovered(struct Unknown InHoveredWidget) {
+inline void UUW-Inventory_Perk_C::ShowStatusHovered(struct UWidget InHoveredWidget) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Perk.UW-Inventory_Perk_C.ShowStatusHovered");
 
 	struct ShowStatusHovered_Params {
-		struct Unknown InHoveredWidget;
+		struct UWidget InHoveredWidget;
 	}; ShowStatusHovered_Params Params;
 
 	Params.InHoveredWidget = InHoveredWidget;
@@ -433,13 +433,13 @@ inline void UUW-Inventory_Perk_C::ShowStatusHovered(struct Unknown InHoveredWidg
 }
 
 // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetAbilityAnimation
-inline void UUW-Inventory_Perk_C::SetAbilityAnimation(struct Unknown& Handle, int32_t Value, struct Unknown Animation, struct FString FunctionName, int32_t Index) {
+inline void UUW-Inventory_Perk_C::SetAbilityAnimation(struct FTimerHandle& Handle, int32_t Value, struct UWidgetAnimation Animation, struct FString FunctionName, int32_t Index) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetAbilityAnimation");
 
 	struct SetAbilityAnimation_Params {
-		struct Unknown& Handle;
+		struct FTimerHandle& Handle;
 		int32_t Value;
-		struct Unknown Animation;
+		struct UWidgetAnimation Animation;
 		struct FString FunctionName;
 		int32_t Index;
 	}; SetAbilityAnimation_Params Params;
@@ -542,14 +542,14 @@ inline void UUW-Inventory_Perk_C::PlaySoundTimeBonus() {
 }
 
 // Function UW-Inventory_Perk.UW-Inventory_Perk_C.GetPositionTargetPerk
-inline void UUW-Inventory_Perk_C::GetPositionTargetPerk(enum class Unknow PerkSlot, int32_t PerkIndex, char& Result, struct Unknown& Position) {
+inline void UUW-Inventory_Perk_C::GetPositionTargetPerk(enum class EPerkSlotFlag PerkSlot, int32_t PerkIndex, char& Result, struct FVector2D& Position) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Perk.UW-Inventory_Perk_C.GetPositionTargetPerk");
 
 	struct GetPositionTargetPerk_Params {
-		enum class Unknow PerkSlot;
+		enum class EPerkSlotFlag PerkSlot;
 		int32_t PerkIndex;
 		char& Result;
-		struct Unknown& Position;
+		struct FVector2D& Position;
 	}; GetPositionTargetPerk_Params Params;
 
 	Params.PerkSlot = PerkSlot;
@@ -565,13 +565,13 @@ inline void UUW-Inventory_Perk_C::GetPositionTargetPerk(enum class Unknow PerkSl
 }
 
 // Function UW-Inventory_Perk.UW-Inventory_Perk_C.GetSlotAndIndexTargetPerk
-inline void UUW-Inventory_Perk_C::GetSlotAndIndexTargetPerk(struct FName TargetPerkName, char& HasPerk, enum class Unknow& PerkSlot, int32_t& PerkIndex) {
+inline void UUW-Inventory_Perk_C::GetSlotAndIndexTargetPerk(struct FName TargetPerkName, char& HasPerk, enum class EPerkSlotFlag& PerkSlot, int32_t& PerkIndex) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Perk.UW-Inventory_Perk_C.GetSlotAndIndexTargetPerk");
 
 	struct GetSlotAndIndexTargetPerk_Params {
 		struct FName TargetPerkName;
 		char& HasPerk;
-		enum class Unknow& PerkSlot;
+		enum class EPerkSlotFlag& PerkSlot;
 		int32_t& PerkIndex;
 	}; GetSlotAndIndexTargetPerk_Params Params;
 
@@ -631,11 +631,11 @@ inline void UUW-Inventory_Perk_C::SetClassLevelText() {
 }
 
 // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PerkLevelUpEffect
-inline void UUW-Inventory_Perk_C::PerkLevelUpEffect(struct Unknown PerkInfo, int32_t CurrentLevel) {
+inline void UUW-Inventory_Perk_C::PerkLevelUpEffect(struct FPerkUIInfo PerkInfo, int32_t CurrentLevel) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Perk.UW-Inventory_Perk_C.PerkLevelUpEffect");
 
 	struct PerkLevelUpEffect_Params {
-		struct Unknown PerkInfo;
+		struct FPerkUIInfo PerkInfo;
 		int32_t CurrentLevel;
 	}; PerkLevelUpEffect_Params Params;
 
@@ -677,11 +677,11 @@ inline void UUW-Inventory_Perk_C::ShowUltimatePerk() {
 }
 
 // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PlayStatsLevelUpAnim
-inline void UUW-Inventory_Perk_C::PlayStatsLevelUpAnim(struct Unknown IncreasedAbility) {
+inline void UUW-Inventory_Perk_C::PlayStatsLevelUpAnim(struct FDisplayAbility IncreasedAbility) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Perk.UW-Inventory_Perk_C.PlayStatsLevelUpAnim");
 
 	struct PlayStatsLevelUpAnim_Params {
-		struct Unknown IncreasedAbility;
+		struct FDisplayAbility IncreasedAbility;
 	}; PlayStatsLevelUpAnim_Params Params;
 
 	Params.IncreasedAbility = IncreasedAbility;
@@ -721,11 +721,11 @@ inline void UUW-Inventory_Perk_C::CheckUltimateOpen(int32_t CurrentLevel) {
 }
 
 // Function UW-Inventory_Perk.UW-Inventory_Perk_C.PerkLevelUp
-inline void UUW-Inventory_Perk_C::PerkLevelUp(struct Unknown PerkInfo, int32_t CurrentLevel, int32_t LastLevel) {
+inline void UUW-Inventory_Perk_C::PerkLevelUp(struct FPerkUIInfo PerkInfo, int32_t CurrentLevel, int32_t LastLevel) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Perk.UW-Inventory_Perk_C.PerkLevelUp");
 
 	struct PerkLevelUp_Params {
-		struct Unknown PerkInfo;
+		struct FPerkUIInfo PerkInfo;
 		int32_t CurrentLevel;
 		int32_t LastLevel;
 	}; PerkLevelUp_Params Params;
@@ -806,15 +806,15 @@ inline void UUW-Inventory_Perk_C::CreatePerkDeck(char UseLocalPlayerInfo, char I
 }
 
 // Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetPerks
-inline void UUW-Inventory_Perk_C::SetPerks(struct Unknown HoverWidget, char bUseLocalPlayerInfo, char bMaxLevel, char bPerkDeckMode, struct Unknown PerkDeckClassInfo) {
+inline void UUW-Inventory_Perk_C::SetPerks(struct UUW-Inventory_ItemSlotHover_C HoverWidget, char bUseLocalPlayerInfo, char bMaxLevel, char bPerkDeckMode, struct FPerkDeckClassInfo PerkDeckClassInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Perk.UW-Inventory_Perk_C.SetPerks");
 
 	struct SetPerks_Params {
-		struct Unknown HoverWidget;
+		struct UUW-Inventory_ItemSlotHover_C HoverWidget;
 		char bUseLocalPlayerInfo;
 		char bMaxLevel;
 		char bPerkDeckMode;
-		struct Unknown PerkDeckClassInfo;
+		struct FPerkDeckClassInfo PerkDeckClassInfo;
 	}; SetPerks_Params Params;
 
 	Params.HoverWidget = HoverWidget;
@@ -829,11 +829,11 @@ inline void UUW-Inventory_Perk_C::SetPerks(struct Unknown HoverWidget, char bUse
 }
 
 // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnLoaded_99DDE97542548A0CC17B5FBAD209C3DD
-inline void UUW-Inventory_Perk_C::OnLoaded_99DDE97542548A0CC17B5FBAD209C3DD(struct Unknown Loaded) {
+inline void UUW-Inventory_Perk_C::OnLoaded_99DDE97542548A0CC17B5FBAD209C3DD(struct Object Loaded) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnLoaded_99DDE97542548A0CC17B5FBAD209C3DD");
 
 	struct OnLoaded_99DDE97542548A0CC17B5FBAD209C3DD_Params {
-		struct Unknown Loaded;
+		struct Object Loaded;
 	}; OnLoaded_99DDE97542548A0CC17B5FBAD209C3DD_Params Params;
 
 	Params.Loaded = Loaded;
@@ -844,11 +844,11 @@ inline void UUW-Inventory_Perk_C::OnLoaded_99DDE97542548A0CC17B5FBAD209C3DD(stru
 }
 
 // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnLoaded_4F86CE894B71E485811BFEA8F94AD46E
-inline void UUW-Inventory_Perk_C::OnLoaded_4F86CE894B71E485811BFEA8F94AD46E(struct Unknown Loaded) {
+inline void UUW-Inventory_Perk_C::OnLoaded_4F86CE894B71E485811BFEA8F94AD46E(struct Object Loaded) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnLoaded_4F86CE894B71E485811BFEA8F94AD46E");
 
 	struct OnLoaded_4F86CE894B71E485811BFEA8F94AD46E_Params {
-		struct Unknown Loaded;
+		struct Object Loaded;
 	}; OnLoaded_4F86CE894B71E485811BFEA8F94AD46E_Params Params;
 
 	Params.Loaded = Loaded;
@@ -859,11 +859,11 @@ inline void UUW-Inventory_Perk_C::OnLoaded_4F86CE894B71E485811BFEA8F94AD46E(stru
 }
 
 // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnLoaded_9E0A9EF44F73119D77D7119DEA0EF67A
-inline void UUW-Inventory_Perk_C::OnLoaded_9E0A9EF44F73119D77D7119DEA0EF67A(struct Unknown Loaded) {
+inline void UUW-Inventory_Perk_C::OnLoaded_9E0A9EF44F73119D77D7119DEA0EF67A(struct Object Loaded) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnLoaded_9E0A9EF44F73119D77D7119DEA0EF67A");
 
 	struct OnLoaded_9E0A9EF44F73119D77D7119DEA0EF67A_Params {
-		struct Unknown Loaded;
+		struct Object Loaded;
 	}; OnLoaded_9E0A9EF44F73119D77D7119DEA0EF67A_Params Params;
 
 	Params.Loaded = Loaded;
@@ -888,11 +888,11 @@ inline void UUW-Inventory_Perk_C::Destruct() {
 }
 
 // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AsyncLoadIcon
-inline void UUW-Inventory_Perk_C::AsyncLoadIcon(struct Unknown Image) {
+inline void UUW-Inventory_Perk_C::AsyncLoadIcon(struct TSoftObjectPtr<Object> Image) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Perk.UW-Inventory_Perk_C.AsyncLoadIcon");
 
 	struct AsyncLoadIcon_Params {
-		struct Unknown Image;
+		struct TSoftObjectPtr<Object> Image;
 	}; AsyncLoadIcon_Params Params;
 
 	Params.Image = Image;
@@ -903,11 +903,11 @@ inline void UUW-Inventory_Perk_C::AsyncLoadIcon(struct Unknown Image) {
 }
 
 // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AsyncCohIcon
-inline void UUW-Inventory_Perk_C::AsyncCohIcon(struct Unknown Image) {
+inline void UUW-Inventory_Perk_C::AsyncCohIcon(struct TSoftObjectPtr<Object> Image) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Perk.UW-Inventory_Perk_C.AsyncCohIcon");
 
 	struct AsyncCohIcon_Params {
-		struct Unknown Image;
+		struct TSoftObjectPtr<Object> Image;
 	}; AsyncCohIcon_Params Params;
 
 	Params.Image = Image;
@@ -946,11 +946,11 @@ inline void UUW-Inventory_Perk_C::StopReadyGivePerk() {
 }
 
 // Function UW-Inventory_Perk.UW-Inventory_Perk_C.AsyncClassIcon
-inline void UUW-Inventory_Perk_C::AsyncClassIcon(struct Unknown Image) {
+inline void UUW-Inventory_Perk_C::AsyncClassIcon(struct TSoftObjectPtr<Object> Image) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Perk.UW-Inventory_Perk_C.AsyncClassIcon");
 
 	struct AsyncClassIcon_Params {
-		struct Unknown Image;
+		struct TSoftObjectPtr<Object> Image;
 	}; AsyncClassIcon_Params Params;
 
 	Params.Image = Image;
@@ -1018,11 +1018,11 @@ inline void UUW-Inventory_Perk_C::PlayKillGivePerk(int32_t KillCount) {
 }
 
 // Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnHoveredWidget
-inline void UUW-Inventory_Perk_C::OnHoveredWidget(struct Unknown HoveredWidget) {
+inline void UUW-Inventory_Perk_C::OnHoveredWidget(struct UWidget HoveredWidget) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Perk.UW-Inventory_Perk_C.OnHoveredWidget");
 
 	struct OnHoveredWidget_Params {
-		struct Unknown HoveredWidget;
+		struct UWidget HoveredWidget;
 	}; OnHoveredWidget_Params Params;
 
 	Params.HoveredWidget = HoveredWidget;
@@ -1145,12 +1145,12 @@ inline void UUW-Inventory_Perk_C::BndEvt__btn_PerkDeckEnabled_1_K2Node_Component
 }
 
 // Function UW-Inventory_Perk.UW-Inventory_Perk_C.鉹@t元_1
-inline void UUW-Inventory_Perk_C::鉹@t元_1(enum class Unknow PrevState, enum class Unknow CurrentState) {
+inline void UUW-Inventory_Perk_C::鉹@t元_1(enum class EBattleRoyaleState PrevState, enum class EBattleRoyaleState CurrentState) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_Perk.UW-Inventory_Perk_C.鉹@t元_1");
 
 	struct 鉹@t元_1_Params {
-		enum class Unknow PrevState;
-		enum class Unknow CurrentState;
+		enum class EBattleRoyaleState PrevState;
+		enum class EBattleRoyaleState CurrentState;
 	}; 鉹@t元_1_Params Params;
 
 	Params.PrevState = PrevState;

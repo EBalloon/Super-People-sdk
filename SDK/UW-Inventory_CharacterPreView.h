@@ -3,14 +3,14 @@ class UUW-Inventory_CharacterPreView_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown FadeIn; // 0x250 (8)
-	struct Unknown CharacterPreviewImage; // 0x258 (8)
-	struct Unknown Image_1; // 0x260 (8)
-	struct Unknown ControllerRef; // 0x268 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UWidgetAnimation FadeIn; // 0x250 (8)
+	struct UImage CharacterPreviewImage; // 0x258 (8)
+	struct UImage Image_1; // 0x260 (8)
+	struct ABP-BravoHotel-PlayerController_C ControllerRef; // 0x268 (8)
 
-	enum class Unknow Get_CharacterPreviewImage_Visibility_1(); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.Get_CharacterPreviewImage_Visibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	void GetCharacterPreviewRef(char& Result, struct Unknown& CharacterPreviewRef); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.GetCharacterPreviewRef(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	enum class ESlateVisibility Get_CharacterPreviewImage_Visibility_1(); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.Get_CharacterPreviewImage_Visibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void GetCharacterPreviewRef(char& Result, struct ABP-CharacterRecording_C& CharacterPreviewRef); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.GetCharacterPreviewRef(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetPreviewVisible(char bVisible); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.SetPreviewVisible(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetPlayAnimation(); // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.SetPlayAnimation(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -20,12 +20,12 @@ public:
 };
 
 // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.Get_CharacterPreviewImage_Visibility_1
-inline enum class Unknow UUW-Inventory_CharacterPreView_C::Get_CharacterPreviewImage_Visibility_1() {
+inline enum class ESlateVisibility UUW-Inventory_CharacterPreView_C::Get_CharacterPreviewImage_Visibility_1() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.Get_CharacterPreviewImage_Visibility_1");
 
 	struct Get_CharacterPreviewImage_Visibility_1_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class ESlateVisibility ReturnValue;
 
 	}; Get_CharacterPreviewImage_Visibility_1_Params Params;
 
@@ -38,12 +38,12 @@ inline enum class Unknow UUW-Inventory_CharacterPreView_C::Get_CharacterPreviewI
 }
 
 // Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.GetCharacterPreviewRef
-inline void UUW-Inventory_CharacterPreView_C::GetCharacterPreviewRef(char& Result, struct Unknown& CharacterPreviewRef) {
+inline void UUW-Inventory_CharacterPreView_C::GetCharacterPreviewRef(char& Result, struct ABP-CharacterRecording_C& CharacterPreviewRef) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-Inventory_CharacterPreView.UW-Inventory_CharacterPreView_C.GetCharacterPreviewRef");
 
 	struct GetCharacterPreviewRef_Params {
 		char& Result;
-		struct Unknown& CharacterPreviewRef;
+		struct ABP-CharacterRecording_C& CharacterPreviewRef;
 	}; GetCharacterPreviewRef_Params Params;
 
 

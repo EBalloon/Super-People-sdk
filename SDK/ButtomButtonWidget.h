@@ -3,19 +3,19 @@ class UButtomButtonWidget_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown ApplyBtn; // 0x250 (8)
-	struct Unknown ApplyDisable; // 0x258 (8)
-	struct Unknown ApplyNormalBg; // 0x260 (8)
-	struct Unknown ApplyOverBg; // 0x268 (8)
-	struct Unknown ApplyPressBg; // 0x270 (8)
-	struct Unknown Button_31; // 0x278 (8)
-	struct Unknown Lock; // 0x280 (8)
-	struct Unknown NormalBg; // 0x288 (8)
-	struct Unknown NormalBtn; // 0x290 (8)
-	struct Unknown OverBG; // 0x298 (8)
-	struct Unknown PressBg; // 0x2A0 (8)
-	struct Unknown Title_Text; // 0x2A8 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UOverlay ApplyBtn; // 0x250 (8)
+	struct UImage ApplyDisable; // 0x258 (8)
+	struct UImage ApplyNormalBg; // 0x260 (8)
+	struct UImage ApplyOverBg; // 0x268 (8)
+	struct UImage ApplyPressBg; // 0x270 (8)
+	struct UButton Button_31; // 0x278 (8)
+	struct UImage Lock; // 0x280 (8)
+	struct UImage NormalBg; // 0x288 (8)
+	struct UOverlay NormalBtn; // 0x290 (8)
+	struct UImage OverBG; // 0x298 (8)
+	struct UImage PressBg; // 0x2A0 (8)
+	struct UTextBlock Title_Text; // 0x2A8 (8)
 	struct FText Title; // 0x2B0 (24)
 	struct FMulticastInlineDelegate OnClickEventDispatcher; // 0x2C8 (16)
 	char IsDisableBnt : 0; // 0x2D8 (1)
@@ -34,7 +34,7 @@ public:
 	void SetColortype(char ColorType); // Function ButtomButtonWidget.ButtomButtonWidget_C.SetColortype(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function ButtomButtonWidget.ButtomButtonWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_ButtomButtonWidget(int32_t EntryPoint); // Function ButtomButtonWidget.ButtomButtonWidget_C.ExecuteUbergraph_ButtomButtonWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
-	void OnClickEventDispatcher__DelegateSignature(struct Unknown Widget); // Function ButtomButtonWidget.ButtomButtonWidget_C.OnClickEventDispatcher__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnClickEventDispatcher__DelegateSignature(struct UButtomButtonWidget_C Widget); // Function ButtomButtonWidget.ButtomButtonWidget_C.OnClickEventDispatcher__DelegateSignature(Public|Delegate|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 };
 
 // Function ButtomButtonWidget.ButtomButtonWidget_C.Set DisableBtn
@@ -184,11 +184,11 @@ inline void UButtomButtonWidget_C::ExecuteUbergraph_ButtomButtonWidget(int32_t E
 }
 
 // Function ButtomButtonWidget.ButtomButtonWidget_C.OnClickEventDispatcher__DelegateSignature
-inline void UButtomButtonWidget_C::OnClickEventDispatcher__DelegateSignature(struct Unknown Widget) {
+inline void UButtomButtonWidget_C::OnClickEventDispatcher__DelegateSignature(struct UButtomButtonWidget_C Widget) {
 	static auto fn = UObject::FindObject<UFunction>("Function ButtomButtonWidget.ButtomButtonWidget_C.OnClickEventDispatcher__DelegateSignature");
 
 	struct OnClickEventDispatcher__DelegateSignature_Params {
-		struct Unknown Widget;
+		struct UButtomButtonWidget_C Widget;
 	}; OnClickEventDispatcher__DelegateSignature_Params Params;
 
 	Params.Widget = Widget;

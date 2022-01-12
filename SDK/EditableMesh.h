@@ -55,8 +55,8 @@ class UEditableGeometryCollectionAdapter : public UEditableMeshAdapter {
 
 public:
 
-	struct Unknown GeometryCollection; // 0x28 (8)
-	struct Unknown OriginalGeometryCollection; // 0x30 (8)
+	struct UGeometryCollection GeometryCollection; // 0x28 (8)
+	struct UGeometryCollection OriginalGeometryCollection; // 0x30 (8)
 	int32_t GeometryCollectionLODIndex; // 0x38 (4)
 };
 
@@ -65,139 +65,139 @@ class UEditableMesh : public Object {
 
 public:
 
-	struct TArray<Unknown> Adapters; // 0x3B8 (16)
+	struct TArray<struct UEditableMeshAdapter> Adapters; // 0x3B8 (16)
 	int32_t TextureCoordinateCount; // 0x3D0 (4)
 	int32_t PendingCompactCounter; // 0x51C (4)
 	int32_t SubdivisionCount; // 0x520 (4)
 
-	void WeldVertices(struct TArray<Unknown>& VertexIDs, struct Unknown& OutNewVertexID); // Function EditableMesh.EditableMesh.WeldVertices(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1785EE0>
-	void TryToRemoveVertex(struct Unknown VertexID, char& bOutWasVertexRemoved, struct Unknown& OutNewEdgeID); // Function EditableMesh.EditableMesh.TryToRemoveVertex(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1785DB0>
-	void TryToRemovePolygonEdge(struct Unknown EdgeID, char& bOutWasEdgeRemoved, struct Unknown& OutNewPolygonID); // Function EditableMesh.EditableMesh.TryToRemovePolygonEdge(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1785C80>
-	void TriangulatePolygons(struct TArray<Unknown>& PolygonIDs, struct TArray<Unknown>& OutNewTrianglePolygons); // Function EditableMesh.EditableMesh.TriangulatePolygons(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1785B60>
-	void TessellatePolygons(struct TArray<Unknown>& PolygonIDs, enum class Unknow TriangleTessellationMode, struct TArray<Unknown>& OutNewPolygonIDs); // Function EditableMesh.EditableMesh.TessellatePolygons(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1785A00>
-	void StartModification(enum class Unknow MeshModificationType, enum class Unknow MeshTopologyChange); // Function EditableMesh.EditableMesh.StartModification(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1785940>
-	void SplitPolygons(struct TArray<Unknown>& PolygonsToSplit, struct TArray<Unknown>& OutNewEdgeIDs); // Function EditableMesh.EditableMesh.SplitPolygons(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1785800>
-	void SplitPolygonalMesh(struct Unknown& InPlane, struct TArray<Unknown>& PolygonIDs1, struct TArray<Unknown>& PolygonIDs2, struct TArray<Unknown>& BoundaryIDs); // Function EditableMesh.EditableMesh.SplitPolygonalMesh(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x1785630>
-	void SplitEdge(struct Unknown EdgeID, struct TArray<Unknown>& Splits, struct TArray<Unknown>& OutNewVertexIDs); // Function EditableMesh.EditableMesh.SplitEdge(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x17854D0>
-	void SetVerticesCornerSharpness(struct TArray<Unknown>& VertexIDs, struct TArray<Unknown>& VerticesNewCornerSharpness); // Function EditableMesh.EditableMesh.SetVerticesCornerSharpness(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x17853B0>
-	void SetVerticesAttributes(struct TArray<Unknown>& AttributesForVertices); // Function EditableMesh.EditableMesh.SetVerticesAttributes(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x17852E0>
-	void SetVertexInstancesAttributes(struct TArray<Unknown>& AttributesForVertexInstances); // Function EditableMesh.EditableMesh.SetVertexInstancesAttributes(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1785210>
+	void WeldVertices(struct TArray<struct FVertexID>& VertexIDs, struct FVertexID& OutNewVertexID); // Function EditableMesh.EditableMesh.WeldVertices(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1785EE0>
+	void TryToRemoveVertex(struct FVertexID VertexID, char& bOutWasVertexRemoved, struct FEdgeID& OutNewEdgeID); // Function EditableMesh.EditableMesh.TryToRemoveVertex(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1785DB0>
+	void TryToRemovePolygonEdge(struct FEdgeID EdgeID, char& bOutWasEdgeRemoved, struct FPolygonID& OutNewPolygonID); // Function EditableMesh.EditableMesh.TryToRemovePolygonEdge(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1785C80>
+	void TriangulatePolygons(struct TArray<struct FPolygonID>& PolygonIDs, struct TArray<struct FPolygonID>& OutNewTrianglePolygons); // Function EditableMesh.EditableMesh.TriangulatePolygons(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1785B60>
+	void TessellatePolygons(struct TArray<struct FPolygonID>& PolygonIDs, enum class ETriangleTessellationMode TriangleTessellationMode, struct TArray<struct FPolygonID>& OutNewPolygonIDs); // Function EditableMesh.EditableMesh.TessellatePolygons(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1785A00>
+	void StartModification(enum class EMeshModificationType MeshModificationType, enum class EMeshTopologyChange MeshTopologyChange); // Function EditableMesh.EditableMesh.StartModification(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1785940>
+	void SplitPolygons(struct TArray<struct FPolygonToSplit>& PolygonsToSplit, struct TArray<struct FEdgeID>& OutNewEdgeIDs); // Function EditableMesh.EditableMesh.SplitPolygons(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1785800>
+	void SplitPolygonalMesh(struct FPlane& InPlane, struct TArray<struct FPolygonID>& PolygonIDs1, struct TArray<struct FPolygonID>& PolygonIDs2, struct TArray<struct FEdgeID>& BoundaryIDs); // Function EditableMesh.EditableMesh.SplitPolygonalMesh(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x1785630>
+	void SplitEdge(struct FEdgeID EdgeID, struct TArray<float>& Splits, struct TArray<struct FVertexID>& OutNewVertexIDs); // Function EditableMesh.EditableMesh.SplitEdge(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x17854D0>
+	void SetVerticesCornerSharpness(struct TArray<struct FVertexID>& VertexIDs, struct TArray<float>& VerticesNewCornerSharpness); // Function EditableMesh.EditableMesh.SetVerticesCornerSharpness(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x17853B0>
+	void SetVerticesAttributes(struct TArray<struct FAttributesForVertex>& AttributesForVertices); // Function EditableMesh.EditableMesh.SetVerticesAttributes(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x17852E0>
+	void SetVertexInstancesAttributes(struct TArray<struct FAttributesForVertexInstance>& AttributesForVertexInstances); // Function EditableMesh.EditableMesh.SetVertexInstancesAttributes(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1785210>
 	void SetTextureCoordinateCount(int32_t NumTexCoords); // Function EditableMesh.EditableMesh.SetTextureCoordinateCount(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1785190>
 	void SetSubdivisionCount(int32_t NewSubdivisionCount); // Function EditableMesh.EditableMesh.SetSubdivisionCount(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1785110>
-	void SetPolygonsVertexAttributes(struct TArray<Unknown>& VertexAttributesForPolygons); // Function EditableMesh.EditableMesh.SetPolygonsVertexAttributes(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1784FA0>
-	void SetEdgesHardnessAutomatically(struct TArray<Unknown>& EdgeIDs, float MaxDotProductForSoftEdge); // Function EditableMesh.EditableMesh.SetEdgesHardnessAutomatically(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1784EA0>
-	void SetEdgesHardness(struct TArray<Unknown>& EdgeIDs, struct TArray<Unknown>& EdgesNewIsHard); // Function EditableMesh.EditableMesh.SetEdgesHardness(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1784D80>
-	void SetEdgesCreaseSharpness(struct TArray<Unknown>& EdgeIDs, struct TArray<Unknown>& EdgesNewCreaseSharpness); // Function EditableMesh.EditableMesh.SetEdgesCreaseSharpness(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1784C60>
-	void SetEdgesAttributes(struct TArray<Unknown>& AttributesForEdges); // Function EditableMesh.EditableMesh.SetEdgesAttributes(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1784B90>
+	void SetPolygonsVertexAttributes(struct TArray<struct FVertexAttributesForPolygon>& VertexAttributesForPolygons); // Function EditableMesh.EditableMesh.SetPolygonsVertexAttributes(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1784FA0>
+	void SetEdgesHardnessAutomatically(struct TArray<struct FEdgeID>& EdgeIDs, float MaxDotProductForSoftEdge); // Function EditableMesh.EditableMesh.SetEdgesHardnessAutomatically(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1784EA0>
+	void SetEdgesHardness(struct TArray<struct FEdgeID>& EdgeIDs, struct TArray<char>& EdgesNewIsHard); // Function EditableMesh.EditableMesh.SetEdgesHardness(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1784D80>
+	void SetEdgesCreaseSharpness(struct TArray<struct FEdgeID>& EdgeIDs, struct TArray<float>& EdgesNewCreaseSharpness); // Function EditableMesh.EditableMesh.SetEdgesCreaseSharpness(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1784C60>
+	void SetEdgesAttributes(struct TArray<struct FAttributesForEdge>& AttributesForEdges); // Function EditableMesh.EditableMesh.SetEdgesAttributes(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1784B90>
 	void SetAllowUndo(char bInAllowUndo); // Function EditableMesh.EditableMesh.SetAllowUndo(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1784B10>
 	void SetAllowSpatialDatabase(char bInAllowSpatialDatabase); // Function EditableMesh.EditableMesh.SetAllowSpatialDatabase(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1784A80>
 	void SetAllowCompact(char bInAllowCompact); // Function EditableMesh.EditableMesh.SetAllowCompact(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1784A00>
-	void SearchSpatialDatabaseForPolygonsPotentiallyIntersectingPlane(struct Unknown& InPlane, struct TArray<Unknown>& OutPolygons); // Function EditableMesh.EditableMesh.SearchSpatialDatabaseForPolygonsPotentiallyIntersectingPlane(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1784900>
-	void SearchSpatialDatabaseForPolygonsPotentiallyIntersectingLineSegment(struct Unknown LineSegmentStart, struct Unknown LineSegmentEnd, struct TArray<Unknown>& OutPolygons); // Function EditableMesh.EditableMesh.SearchSpatialDatabaseForPolygonsPotentiallyIntersectingLineSegment(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17847B0>
-	void SearchSpatialDatabaseForPolygonsInVolume(struct TArray<Unknown>& Planes, struct TArray<Unknown>& OutPolygons); // Function EditableMesh.EditableMesh.SearchSpatialDatabaseForPolygonsInVolume(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1784690>
-	struct Unknown RevertInstance(); // Function EditableMesh.EditableMesh.RevertInstance(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1784660>
+	void SearchSpatialDatabaseForPolygonsPotentiallyIntersectingPlane(struct FPlane& InPlane, struct TArray<struct FPolygonID>& OutPolygons); // Function EditableMesh.EditableMesh.SearchSpatialDatabaseForPolygonsPotentiallyIntersectingPlane(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1784900>
+	void SearchSpatialDatabaseForPolygonsPotentiallyIntersectingLineSegment(struct FVector LineSegmentStart, struct FVector LineSegmentEnd, struct TArray<struct FPolygonID>& OutPolygons); // Function EditableMesh.EditableMesh.SearchSpatialDatabaseForPolygonsPotentiallyIntersectingLineSegment(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17847B0>
+	void SearchSpatialDatabaseForPolygonsInVolume(struct TArray<struct FPlane>& Planes, struct TArray<struct FPolygonID>& OutPolygons); // Function EditableMesh.EditableMesh.SearchSpatialDatabaseForPolygonsInVolume(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1784690>
+	struct UEditableMesh RevertInstance(); // Function EditableMesh.EditableMesh.RevertInstance(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1784660>
 	void Revert(); // Function EditableMesh.EditableMesh.Revert(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1530390>
 	void RebuildRenderMesh(); // Function EditableMesh.EditableMesh.RebuildRenderMesh(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1784640>
-	void QuadrangulateMesh(struct TArray<Unknown>& OutNewPolygonIDs); // Function EditableMesh.EditableMesh.QuadrangulateMesh(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1784590>
+	void QuadrangulateMesh(struct TArray<struct FPolygonID>& OutNewPolygonIDs); // Function EditableMesh.EditableMesh.QuadrangulateMesh(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1784590>
 	void PropagateInstanceChanges(); // Function EditableMesh.EditableMesh.PropagateInstanceChanges(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1530390>
-	void MoveVertices(struct TArray<Unknown>& VerticesToMove); // Function EditableMesh.EditableMesh.MoveVertices(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x17844E0>
-	struct Unknown MakeVertexID(int32_t VertexIndex); // Function EditableMesh.EditableMesh.MakeVertexID(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1784460>
-	struct Unknown MakePolygonID(int32_t PolygonIndex); // Function EditableMesh.EditableMesh.MakePolygonID(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1784460>
-	struct Unknown MakePolygonGroupID(int32_t PolygonGroupIndex); // Function EditableMesh.EditableMesh.MakePolygonGroupID(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1784460>
-	struct Unknown MakeEdgeID(int32_t EdgeIndex); // Function EditableMesh.EditableMesh.MakeEdgeID(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1784460>
-	char IsValidVertex(struct Unknown VertexID); // Function EditableMesh.EditableMesh.IsValidVertex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17843D0>
-	char IsValidPolygonGroup(struct Unknown PolygonGroupID); // Function EditableMesh.EditableMesh.IsValidPolygonGroup(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1784340>
-	char IsValidPolygon(struct Unknown PolygonID); // Function EditableMesh.EditableMesh.IsValidPolygon(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17842B0>
-	char IsValidEdge(struct Unknown EdgeID); // Function EditableMesh.EditableMesh.IsValidEdge(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1784220>
+	void MoveVertices(struct TArray<struct FVertexToMove>& VerticesToMove); // Function EditableMesh.EditableMesh.MoveVertices(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x17844E0>
+	struct FVertexID MakeVertexID(int32_t VertexIndex); // Function EditableMesh.EditableMesh.MakeVertexID(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1784460>
+	struct FPolygonID MakePolygonID(int32_t PolygonIndex); // Function EditableMesh.EditableMesh.MakePolygonID(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1784460>
+	struct FPolygonGroupID MakePolygonGroupID(int32_t PolygonGroupIndex); // Function EditableMesh.EditableMesh.MakePolygonGroupID(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1784460>
+	struct FEdgeID MakeEdgeID(int32_t EdgeIndex); // Function EditableMesh.EditableMesh.MakeEdgeID(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1784460>
+	char IsValidVertex(struct FVertexID VertexID); // Function EditableMesh.EditableMesh.IsValidVertex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17843D0>
+	char IsValidPolygonGroup(struct FPolygonGroupID PolygonGroupID); // Function EditableMesh.EditableMesh.IsValidPolygonGroup(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1784340>
+	char IsValidPolygon(struct FPolygonID PolygonID); // Function EditableMesh.EditableMesh.IsValidPolygon(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17842B0>
+	char IsValidEdge(struct FEdgeID EdgeID); // Function EditableMesh.EditableMesh.IsValidEdge(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1784220>
 	char IsUndoAllowed(); // Function EditableMesh.EditableMesh.IsUndoAllowed(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1784200>
 	char IsSpatialDatabaseAllowed(); // Function EditableMesh.EditableMesh.IsSpatialDatabaseAllowed(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17841E0>
 	char IsPreviewingSubdivisions(); // Function EditableMesh.EditableMesh.IsPreviewingSubdivisions(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17841B0>
-	char IsOrphanedVertex(struct Unknown VertexID); // Function EditableMesh.EditableMesh.IsOrphanedVertex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1784120>
+	char IsOrphanedVertex(struct FVertexID VertexID); // Function EditableMesh.EditableMesh.IsOrphanedVertex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1784120>
 	char IsCompactAllowed(); // Function EditableMesh.EditableMesh.IsCompactAllowed(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1784100>
 	char IsCommittedAsInstance(); // Function EditableMesh.EditableMesh.IsCommittedAsInstance(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17840D0>
 	char IsCommitted(); // Function EditableMesh.EditableMesh.IsCommitted(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17840A0>
 	char IsBeingModified(); // Function EditableMesh.EditableMesh.IsBeingModified(Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1784070>
-	struct Unknown InvalidVertexID(); // Function EditableMesh.EditableMesh.InvalidVertexID(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1784050>
-	struct Unknown InvalidPolygonID(); // Function EditableMesh.EditableMesh.InvalidPolygonID(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1784030>
-	struct Unknown InvalidPolygonGroupID(); // Function EditableMesh.EditableMesh.InvalidPolygonGroupID(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1784010>
-	struct Unknown InvalidEdgeID(); // Function EditableMesh.EditableMesh.InvalidEdgeID(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1783FF0>
-	void InsetPolygons(struct TArray<Unknown>& PolygonIDs, float InsetFixedDistance, float InsetProgressTowardCenter, enum class Unknow Mode, struct TArray<Unknown>& OutNewCenterPolygonIDs, struct TArray<Unknown>& OutNewSidePolygonIDs); // Function EditableMesh.EditableMesh.InsetPolygons(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1783DB0>
-	void InsertEdgeLoop(struct Unknown EdgeID, struct TArray<Unknown>& Splits, struct TArray<Unknown>& OutNewEdgeIDs); // Function EditableMesh.EditableMesh.InsertEdgeLoop(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1783C50>
+	struct FVertexID InvalidVertexID(); // Function EditableMesh.EditableMesh.InvalidVertexID(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1784050>
+	struct FPolygonID InvalidPolygonID(); // Function EditableMesh.EditableMesh.InvalidPolygonID(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1784030>
+	struct FPolygonGroupID InvalidPolygonGroupID(); // Function EditableMesh.EditableMesh.InvalidPolygonGroupID(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1784010>
+	struct FEdgeID InvalidEdgeID(); // Function EditableMesh.EditableMesh.InvalidEdgeID(Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1783FF0>
+	void InsetPolygons(struct TArray<struct FPolygonID>& PolygonIDs, float InsetFixedDistance, float InsetProgressTowardCenter, enum class EInsetPolygonsMode Mode, struct TArray<struct FPolygonID>& OutNewCenterPolygonIDs, struct TArray<struct FPolygonID>& OutNewSidePolygonIDs); // Function EditableMesh.EditableMesh.InsetPolygons(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1783DB0>
+	void InsertEdgeLoop(struct FEdgeID EdgeID, struct TArray<float>& Splits, struct TArray<struct FEdgeID>& OutNewEdgeIDs); // Function EditableMesh.EditableMesh.InsertEdgeLoop(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1783C50>
 	void InitializeAdapters(); // Function EditableMesh.EditableMesh.InitializeAdapters(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1783C30>
-	struct Unknown GetVertexPairEdge(struct Unknown VertexID, struct Unknown NextVertexID, char& bOutEdgeWindingIsReversed); // Function EditableMesh.EditableMesh.GetVertexPairEdge(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1783B00>
-	struct Unknown GetVertexInstanceVertex(struct Unknown VertexInstanceID); // Function EditableMesh.EditableMesh.GetVertexInstanceVertex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1783A60>
+	struct FEdgeID GetVertexPairEdge(struct FVertexID VertexID, struct FVertexID NextVertexID, char& bOutEdgeWindingIsReversed); // Function EditableMesh.EditableMesh.GetVertexPairEdge(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1783B00>
+	struct FVertexID GetVertexInstanceVertex(struct FVertexInstanceID VertexInstanceID); // Function EditableMesh.EditableMesh.GetVertexInstanceVertex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1783A60>
 	int32_t GetVertexInstanceCount(); // Function EditableMesh.EditableMesh.GetVertexInstanceCount(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1783A30>
-	void GetVertexInstanceConnectedPolygons(struct Unknown VertexInstanceID, struct TArray<Unknown>& OutConnectedPolygonIDs); // Function EditableMesh.EditableMesh.GetVertexInstanceConnectedPolygons(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1783940>
-	int32_t GetVertexInstanceConnectedPolygonCount(struct Unknown VertexInstanceID); // Function EditableMesh.EditableMesh.GetVertexInstanceConnectedPolygonCount(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17838B0>
-	struct Unknown GetVertexInstanceConnectedPolygon(struct Unknown VertexInstanceID, int32_t ConnectedPolygonNumber); // Function EditableMesh.EditableMesh.GetVertexInstanceConnectedPolygon(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17837E0>
+	void GetVertexInstanceConnectedPolygons(struct FVertexInstanceID VertexInstanceID, struct TArray<struct FPolygonID>& OutConnectedPolygonIDs); // Function EditableMesh.EditableMesh.GetVertexInstanceConnectedPolygons(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1783940>
+	int32_t GetVertexInstanceConnectedPolygonCount(struct FVertexInstanceID VertexInstanceID); // Function EditableMesh.EditableMesh.GetVertexInstanceConnectedPolygonCount(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17838B0>
+	struct FPolygonID GetVertexInstanceConnectedPolygon(struct FVertexInstanceID VertexInstanceID, int32_t ConnectedPolygonNumber); // Function EditableMesh.EditableMesh.GetVertexInstanceConnectedPolygon(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17837E0>
 	int32_t GetVertexCount(); // Function EditableMesh.EditableMesh.GetVertexCount(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17837B0>
-	void GetVertexConnectedPolygons(struct Unknown VertexID, struct TArray<Unknown>& OutConnectedPolygonIDs); // Function EditableMesh.EditableMesh.GetVertexConnectedPolygons(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17836C0>
-	void GetVertexConnectedEdges(struct Unknown VertexID, struct TArray<Unknown>& OutConnectedEdgeIDs); // Function EditableMesh.EditableMesh.GetVertexConnectedEdges(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17835D0>
-	int32_t GetVertexConnectedEdgeCount(struct Unknown VertexID); // Function EditableMesh.EditableMesh.GetVertexConnectedEdgeCount(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1783540>
-	struct Unknown GetVertexConnectedEdge(struct Unknown VertexID, int32_t ConnectedEdgeNumber); // Function EditableMesh.EditableMesh.GetVertexConnectedEdge(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1783470>
-	void GetVertexAdjacentVertices(struct Unknown VertexID, struct TArray<Unknown>& OutAdjacentVertexIDs); // Function EditableMesh.EditableMesh.GetVertexAdjacentVertices(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1783380>
+	void GetVertexConnectedPolygons(struct FVertexID VertexID, struct TArray<struct FPolygonID>& OutConnectedPolygonIDs); // Function EditableMesh.EditableMesh.GetVertexConnectedPolygons(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17836C0>
+	void GetVertexConnectedEdges(struct FVertexID VertexID, struct TArray<struct FEdgeID>& OutConnectedEdgeIDs); // Function EditableMesh.EditableMesh.GetVertexConnectedEdges(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17835D0>
+	int32_t GetVertexConnectedEdgeCount(struct FVertexID VertexID); // Function EditableMesh.EditableMesh.GetVertexConnectedEdgeCount(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1783540>
+	struct FEdgeID GetVertexConnectedEdge(struct FVertexID VertexID, int32_t ConnectedEdgeNumber); // Function EditableMesh.EditableMesh.GetVertexConnectedEdge(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1783470>
+	void GetVertexAdjacentVertices(struct FVertexID VertexID, struct TArray<struct FVertexID>& OutAdjacentVertexIDs); // Function EditableMesh.EditableMesh.GetVertexAdjacentVertices(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1783380>
 	int32_t GetTextureCoordinateCount(); // Function EditableMesh.EditableMesh.GetTextureCoordinateCount(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1783350>
-	struct Unknown GetSubdivisionLimitData(); // Function EditableMesh.EditableMesh.GetSubdivisionLimitData(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1783310>
+	struct FSubdivisionLimitData GetSubdivisionLimitData(); // Function EditableMesh.EditableMesh.GetSubdivisionLimitData(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1783310>
 	int32_t GetSubdivisionCount(); // Function EditableMesh.EditableMesh.GetSubdivisionCount(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17832E0>
-	int32_t GetPolygonTriangulatedTriangleCount(struct Unknown PolygonID); // Function EditableMesh.EditableMesh.GetPolygonTriangulatedTriangleCount(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1783250>
-	struct Unknown GetPolygonTriangulatedTriangle(struct Unknown PolygonID, int32_t PolygonTriangleNumber); // Function EditableMesh.EditableMesh.GetPolygonTriangulatedTriangle(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1783180>
-	void GetPolygonPerimeterVertices(struct Unknown PolygonID, struct TArray<Unknown>& OutPolygonPerimeterVertexIDs); // Function EditableMesh.EditableMesh.GetPolygonPerimeterVertices(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1783090>
-	void GetPolygonPerimeterVertexInstances(struct Unknown PolygonID, struct TArray<Unknown>& OutPolygonPerimeterVertexInstanceIDs); // Function EditableMesh.EditableMesh.GetPolygonPerimeterVertexInstances(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1782FA0>
-	struct Unknown GetPolygonPerimeterVertexInstance(struct Unknown PolygonID, int32_t PolygonVertexNumber); // Function EditableMesh.EditableMesh.GetPolygonPerimeterVertexInstance(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1782ED0>
-	int32_t GetPolygonPerimeterVertexCount(struct Unknown PolygonID); // Function EditableMesh.EditableMesh.GetPolygonPerimeterVertexCount(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1782C80>
-	struct Unknown GetPolygonPerimeterVertex(struct Unknown PolygonID, int32_t PolygonVertexNumber); // Function EditableMesh.EditableMesh.GetPolygonPerimeterVertex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1782E00>
-	void GetPolygonPerimeterEdges(struct Unknown PolygonID, struct TArray<Unknown>& OutPolygonPerimeterEdgeIDs); // Function EditableMesh.EditableMesh.GetPolygonPerimeterEdges(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1782D10>
-	int32_t GetPolygonPerimeterEdgeCount(struct Unknown PolygonID); // Function EditableMesh.EditableMesh.GetPolygonPerimeterEdgeCount(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1782C80>
-	struct Unknown GetPolygonPerimeterEdge(struct Unknown PolygonID, int32_t PerimeterEdgeNumber, char& bOutEdgeWindingIsReversedForPolygon); // Function EditableMesh.EditableMesh.GetPolygonPerimeterEdge(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1782B60>
-	struct Unknown GetPolygonInGroup(struct Unknown PolygonGroupID, int32_t PolygonNumber); // Function EditableMesh.EditableMesh.GetPolygonInGroup(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1782A90>
+	int32_t GetPolygonTriangulatedTriangleCount(struct FPolygonID PolygonID); // Function EditableMesh.EditableMesh.GetPolygonTriangulatedTriangleCount(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1783250>
+	struct FTriangleID GetPolygonTriangulatedTriangle(struct FPolygonID PolygonID, int32_t PolygonTriangleNumber); // Function EditableMesh.EditableMesh.GetPolygonTriangulatedTriangle(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1783180>
+	void GetPolygonPerimeterVertices(struct FPolygonID PolygonID, struct TArray<struct FVertexID>& OutPolygonPerimeterVertexIDs); // Function EditableMesh.EditableMesh.GetPolygonPerimeterVertices(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1783090>
+	void GetPolygonPerimeterVertexInstances(struct FPolygonID PolygonID, struct TArray<struct FVertexInstanceID>& OutPolygonPerimeterVertexInstanceIDs); // Function EditableMesh.EditableMesh.GetPolygonPerimeterVertexInstances(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1782FA0>
+	struct FVertexInstanceID GetPolygonPerimeterVertexInstance(struct FPolygonID PolygonID, int32_t PolygonVertexNumber); // Function EditableMesh.EditableMesh.GetPolygonPerimeterVertexInstance(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1782ED0>
+	int32_t GetPolygonPerimeterVertexCount(struct FPolygonID PolygonID); // Function EditableMesh.EditableMesh.GetPolygonPerimeterVertexCount(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1782C80>
+	struct FVertexID GetPolygonPerimeterVertex(struct FPolygonID PolygonID, int32_t PolygonVertexNumber); // Function EditableMesh.EditableMesh.GetPolygonPerimeterVertex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1782E00>
+	void GetPolygonPerimeterEdges(struct FPolygonID PolygonID, struct TArray<struct FEdgeID>& OutPolygonPerimeterEdgeIDs); // Function EditableMesh.EditableMesh.GetPolygonPerimeterEdges(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1782D10>
+	int32_t GetPolygonPerimeterEdgeCount(struct FPolygonID PolygonID); // Function EditableMesh.EditableMesh.GetPolygonPerimeterEdgeCount(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1782C80>
+	struct FEdgeID GetPolygonPerimeterEdge(struct FPolygonID PolygonID, int32_t PerimeterEdgeNumber, char& bOutEdgeWindingIsReversedForPolygon); // Function EditableMesh.EditableMesh.GetPolygonPerimeterEdge(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1782B60>
+	struct FPolygonID GetPolygonInGroup(struct FPolygonGroupID PolygonGroupID, int32_t PolygonNumber); // Function EditableMesh.EditableMesh.GetPolygonInGroup(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1782A90>
 	int32_t GetPolygonGroupCount(); // Function EditableMesh.EditableMesh.GetPolygonGroupCount(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1782A60>
-	int32_t GetPolygonCountInGroup(struct Unknown PolygonGroupID); // Function EditableMesh.EditableMesh.GetPolygonCountInGroup(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17829D0>
+	int32_t GetPolygonCountInGroup(struct FPolygonGroupID PolygonGroupID); // Function EditableMesh.EditableMesh.GetPolygonCountInGroup(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17829D0>
 	int32_t GetPolygonCount(); // Function EditableMesh.EditableMesh.GetPolygonCount(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17829A0>
-	void GetPolygonAdjacentPolygons(struct Unknown PolygonID, struct TArray<Unknown>& OutAdjacentPolygons); // Function EditableMesh.EditableMesh.GetPolygonAdjacentPolygons(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17828B0>
-	struct Unknown GetGroupForPolygon(struct Unknown PolygonID); // Function EditableMesh.EditableMesh.GetGroupForPolygon(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1782810>
-	struct Unknown GetFirstValidPolygonGroup(); // Function EditableMesh.EditableMesh.GetFirstValidPolygonGroup(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17827D0>
-	void GetEdgeVertices(struct Unknown EdgeID, struct Unknown& OutEdgeVertexID0, struct Unknown& OutEdgeVertexID1); // Function EditableMesh.EditableMesh.GetEdgeVertices(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17826A0>
-	struct Unknown GetEdgeVertex(struct Unknown EdgeID, int32_t EdgeVertexNumber); // Function EditableMesh.EditableMesh.GetEdgeVertex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17825D0>
-	struct Unknown GetEdgeThatConnectsVertices(struct Unknown VertexID0, struct Unknown VertexID1); // Function EditableMesh.EditableMesh.GetEdgeThatConnectsVertices(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1782500>
-	void GetEdgeLoopElements(struct Unknown EdgeID, struct TArray<Unknown>& EdgeLoopIDs); // Function EditableMesh.EditableMesh.GetEdgeLoopElements(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1782410>
+	void GetPolygonAdjacentPolygons(struct FPolygonID PolygonID, struct TArray<struct FPolygonID>& OutAdjacentPolygons); // Function EditableMesh.EditableMesh.GetPolygonAdjacentPolygons(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17828B0>
+	struct FPolygonGroupID GetGroupForPolygon(struct FPolygonID PolygonID); // Function EditableMesh.EditableMesh.GetGroupForPolygon(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1782810>
+	struct FPolygonGroupID GetFirstValidPolygonGroup(); // Function EditableMesh.EditableMesh.GetFirstValidPolygonGroup(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17827D0>
+	void GetEdgeVertices(struct FEdgeID EdgeID, struct FVertexID& OutEdgeVertexID0, struct FVertexID& OutEdgeVertexID1); // Function EditableMesh.EditableMesh.GetEdgeVertices(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17826A0>
+	struct FVertexID GetEdgeVertex(struct FEdgeID EdgeID, int32_t EdgeVertexNumber); // Function EditableMesh.EditableMesh.GetEdgeVertex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17825D0>
+	struct FEdgeID GetEdgeThatConnectsVertices(struct FVertexID VertexID0, struct FVertexID VertexID1); // Function EditableMesh.EditableMesh.GetEdgeThatConnectsVertices(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1782500>
+	void GetEdgeLoopElements(struct FEdgeID EdgeID, struct TArray<struct FEdgeID>& EdgeLoopIDs); // Function EditableMesh.EditableMesh.GetEdgeLoopElements(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1782410>
 	int32_t GetEdgeCount(); // Function EditableMesh.EditableMesh.GetEdgeCount(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17823E0>
-	void GetEdgeConnectedPolygons(struct Unknown EdgeID, struct TArray<Unknown>& OutConnectedPolygonIDs); // Function EditableMesh.EditableMesh.GetEdgeConnectedPolygons(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17822F0>
-	int32_t GetEdgeConnectedPolygonCount(struct Unknown EdgeID); // Function EditableMesh.EditableMesh.GetEdgeConnectedPolygonCount(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1782260>
-	struct Unknown GetEdgeConnectedPolygon(struct Unknown EdgeID, int32_t ConnectedPolygonNumber); // Function EditableMesh.EditableMesh.GetEdgeConnectedPolygon(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1782190>
-	void GeneratePolygonTangentsAndNormals(struct TArray<Unknown>& PolygonIDs); // Function EditableMesh.EditableMesh.GeneratePolygonTangentsAndNormals(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x17820E0>
-	void FlipPolygons(struct TArray<Unknown>& PolygonIDs); // Function EditableMesh.EditableMesh.FlipPolygons(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1782030>
-	int32_t FindPolygonPerimeterVertexNumberForVertex(struct Unknown PolygonID, struct Unknown VertexID); // Function EditableMesh.EditableMesh.FindPolygonPerimeterVertexNumberForVertex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1781F60>
-	int32_t FindPolygonPerimeterEdgeNumberForVertices(struct Unknown PolygonID, struct Unknown EdgeVertexID0, struct Unknown EdgeVertexID1); // Function EditableMesh.EditableMesh.FindPolygonPerimeterEdgeNumberForVertices(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1781E50>
-	void FindPolygonLoop(struct Unknown EdgeID, struct TArray<Unknown>& OutEdgeLoopEdgeIDs, struct TArray<Unknown>& OutFlippedEdgeIDs, struct TArray<Unknown>& OutReversedEdgeIDPathToTake, struct TArray<Unknown>& OutPolygonIDsToSplit); // Function EditableMesh.EditableMesh.FindPolygonLoop(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1781C30>
-	void ExtrudePolygons(struct TArray<Unknown>& Polygons, float ExtrudeDistance, char bKeepNeighborsTogether, struct TArray<Unknown>& OutNewExtrudedFrontPolygons); // Function EditableMesh.EditableMesh.ExtrudePolygons(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1781A70>
-	void ExtendVertices(struct TArray<Unknown>& VertexIDs, char bOnlyExtendClosestEdge, struct Unknown ReferencePosition, struct TArray<Unknown>& OutNewExtendedVertexIDs); // Function EditableMesh.EditableMesh.ExtendVertices(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x17818C0>
-	void ExtendEdges(struct TArray<Unknown>& EdgeIDs, char bWeldNeighbors, struct TArray<Unknown>& OutNewExtendedEdgeIDs); // Function EditableMesh.EditableMesh.ExtendEdges(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1781760>
+	void GetEdgeConnectedPolygons(struct FEdgeID EdgeID, struct TArray<struct FPolygonID>& OutConnectedPolygonIDs); // Function EditableMesh.EditableMesh.GetEdgeConnectedPolygons(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17822F0>
+	int32_t GetEdgeConnectedPolygonCount(struct FEdgeID EdgeID); // Function EditableMesh.EditableMesh.GetEdgeConnectedPolygonCount(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1782260>
+	struct FPolygonID GetEdgeConnectedPolygon(struct FEdgeID EdgeID, int32_t ConnectedPolygonNumber); // Function EditableMesh.EditableMesh.GetEdgeConnectedPolygon(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1782190>
+	void GeneratePolygonTangentsAndNormals(struct TArray<struct FPolygonID>& PolygonIDs); // Function EditableMesh.EditableMesh.GeneratePolygonTangentsAndNormals(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x17820E0>
+	void FlipPolygons(struct TArray<struct FPolygonID>& PolygonIDs); // Function EditableMesh.EditableMesh.FlipPolygons(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1782030>
+	int32_t FindPolygonPerimeterVertexNumberForVertex(struct FPolygonID PolygonID, struct FVertexID VertexID); // Function EditableMesh.EditableMesh.FindPolygonPerimeterVertexNumberForVertex(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1781F60>
+	int32_t FindPolygonPerimeterEdgeNumberForVertices(struct FPolygonID PolygonID, struct FVertexID EdgeVertexID0, struct FVertexID EdgeVertexID1); // Function EditableMesh.EditableMesh.FindPolygonPerimeterEdgeNumberForVertices(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1781E50>
+	void FindPolygonLoop(struct FEdgeID EdgeID, struct TArray<struct FEdgeID>& OutEdgeLoopEdgeIDs, struct TArray<struct FEdgeID>& OutFlippedEdgeIDs, struct TArray<struct FEdgeID>& OutReversedEdgeIDPathToTake, struct TArray<struct FPolygonID>& OutPolygonIDsToSplit); // Function EditableMesh.EditableMesh.FindPolygonLoop(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1781C30>
+	void ExtrudePolygons(struct TArray<struct FPolygonID>& Polygons, float ExtrudeDistance, char bKeepNeighborsTogether, struct TArray<struct FPolygonID>& OutNewExtrudedFrontPolygons); // Function EditableMesh.EditableMesh.ExtrudePolygons(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1781A70>
+	void ExtendVertices(struct TArray<struct FVertexID>& VertexIDs, char bOnlyExtendClosestEdge, struct FVector ReferencePosition, struct TArray<struct FVertexID>& OutNewExtendedVertexIDs); // Function EditableMesh.EditableMesh.ExtendVertices(Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable) // <Game_BE.exe+0x17818C0>
+	void ExtendEdges(struct TArray<struct FEdgeID>& EdgeIDs, char bWeldNeighbors, struct TArray<struct FEdgeID>& OutNewExtendedEdgeIDs); // Function EditableMesh.EditableMesh.ExtendEdges(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1781760>
 	void EndModification(char bFromUndo); // Function EditableMesh.EditableMesh.EndModification(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x17816D0>
-	void DeleteVertexInstances(struct TArray<Unknown>& VertexInstanceIDsToDelete, char bDeleteOrphanedVertices); // Function EditableMesh.EditableMesh.DeleteVertexInstances(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x17815D0>
-	void DeleteVertexAndConnectedEdgesAndPolygons(struct Unknown VertexID, char bDeleteOrphanedEdges, char bDeleteOrphanedVertices, char bDeleteOrphanedVertexInstances, char bDeleteEmptyPolygonGroups); // Function EditableMesh.EditableMesh.DeleteVertexAndConnectedEdgesAndPolygons(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1781420>
-	void DeletePolygons(struct TArray<Unknown>& PolygonIDsToDelete, char bDeleteOrphanedEdges, char bDeleteOrphanedVertices, char bDeleteOrphanedVertexInstances, char bDeleteEmptyPolygonGroups); // Function EditableMesh.EditableMesh.DeletePolygons(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1781230>
-	void DeletePolygonGroups(struct TArray<Unknown>& PolygonGroupIDs); // Function EditableMesh.EditableMesh.DeletePolygonGroups(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1781180>
-	void DeleteOrphanVertices(struct TArray<Unknown>& VertexIDsToDelete); // Function EditableMesh.EditableMesh.DeleteOrphanVertices(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x17810D0>
-	void DeleteEdges(struct TArray<Unknown>& EdgeIDsToDelete, char bDeleteOrphanedVertices); // Function EditableMesh.EditableMesh.DeleteEdges(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1780FD0>
-	void DeleteEdgeAndConnectedPolygons(struct Unknown EdgeID, char bDeleteOrphanedEdges, char bDeleteOrphanedVertices, char bDeleteOrphanedVertexInstances, char bDeleteEmptyPolygonGroups); // Function EditableMesh.EditableMesh.DeleteEdgeAndConnectedPolygons(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1780E20>
-	void CreateVertices(struct TArray<Unknown>& VerticesToCreate, struct TArray<Unknown>& OutNewVertexIDs); // Function EditableMesh.EditableMesh.CreateVertices(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1780CE0>
-	void CreateVertexInstances(struct TArray<Unknown>& VertexInstancesToCreate, struct TArray<Unknown>& OutNewVertexInstanceIDs); // Function EditableMesh.EditableMesh.CreateVertexInstances(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1780BA0>
-	void CreatePolygons(struct TArray<Unknown>& PolygonsToCreate, struct TArray<Unknown>& OutNewPolygonIDs, struct TArray<Unknown>& OutNewEdgeIDs); // Function EditableMesh.EditableMesh.CreatePolygons(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x17809C0>
-	void CreatePolygonGroups(struct TArray<Unknown>& PolygonGroupsToCreate, struct TArray<Unknown>& OutNewPolygonGroupIDs); // Function EditableMesh.EditableMesh.CreatePolygonGroups(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1780880>
-	void CreateMissingPolygonPerimeterEdges(struct Unknown PolygonID, struct TArray<Unknown>& OutNewEdgeIDs); // Function EditableMesh.EditableMesh.CreateMissingPolygonPerimeterEdges(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1780790>
-	void CreateEmptyVertexRange(int32_t NumVerticesToCreate, struct TArray<Unknown>& OutNewVertexIDs); // Function EditableMesh.EditableMesh.CreateEmptyVertexRange(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x17806A0>
-	void CreateEdges(struct TArray<Unknown>& EdgesToCreate, struct TArray<Unknown>& OutNewEdgeIDs); // Function EditableMesh.EditableMesh.CreateEdges(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1780560>
-	void ComputePolygonsSharedEdges(struct TArray<Unknown>& PolygonIDs, struct TArray<Unknown>& OutSharedEdgeIDs); // Function EditableMesh.EditableMesh.ComputePolygonsSharedEdges(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1780440>
-	struct Unknown ComputePolygonPlane(struct Unknown PolygonID); // Function EditableMesh.EditableMesh.ComputePolygonPlane(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17803A0>
-	struct Unknown ComputePolygonNormal(struct Unknown PolygonID); // Function EditableMesh.EditableMesh.ComputePolygonNormal(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1780300>
-	struct Unknown ComputePolygonCenter(struct Unknown PolygonID); // Function EditableMesh.EditableMesh.ComputePolygonCenter(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1780260>
-	struct Unknown ComputeBoundingBoxAndSphere(); // Function EditableMesh.EditableMesh.ComputeBoundingBoxAndSphere(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1780210>
-	struct Unknown ComputeBoundingBox(); // Function EditableMesh.EditableMesh.ComputeBoundingBox(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17801C0>
-	struct Unknown CommitInstance(struct Unknown ComponentToInstanceTo); // Function EditableMesh.EditableMesh.CommitInstance(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1780130>
+	void DeleteVertexInstances(struct TArray<struct FVertexInstanceID>& VertexInstanceIDsToDelete, char bDeleteOrphanedVertices); // Function EditableMesh.EditableMesh.DeleteVertexInstances(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x17815D0>
+	void DeleteVertexAndConnectedEdgesAndPolygons(struct FVertexID VertexID, char bDeleteOrphanedEdges, char bDeleteOrphanedVertices, char bDeleteOrphanedVertexInstances, char bDeleteEmptyPolygonGroups); // Function EditableMesh.EditableMesh.DeleteVertexAndConnectedEdgesAndPolygons(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1781420>
+	void DeletePolygons(struct TArray<struct FPolygonID>& PolygonIDsToDelete, char bDeleteOrphanedEdges, char bDeleteOrphanedVertices, char bDeleteOrphanedVertexInstances, char bDeleteEmptyPolygonGroups); // Function EditableMesh.EditableMesh.DeletePolygons(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1781230>
+	void DeletePolygonGroups(struct TArray<struct FPolygonGroupID>& PolygonGroupIDs); // Function EditableMesh.EditableMesh.DeletePolygonGroups(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1781180>
+	void DeleteOrphanVertices(struct TArray<struct FVertexID>& VertexIDsToDelete); // Function EditableMesh.EditableMesh.DeleteOrphanVertices(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x17810D0>
+	void DeleteEdges(struct TArray<struct FEdgeID>& EdgeIDsToDelete, char bDeleteOrphanedVertices); // Function EditableMesh.EditableMesh.DeleteEdges(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1780FD0>
+	void DeleteEdgeAndConnectedPolygons(struct FEdgeID EdgeID, char bDeleteOrphanedEdges, char bDeleteOrphanedVertices, char bDeleteOrphanedVertexInstances, char bDeleteEmptyPolygonGroups); // Function EditableMesh.EditableMesh.DeleteEdgeAndConnectedPolygons(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1780E20>
+	void CreateVertices(struct TArray<struct FVertexToCreate>& VerticesToCreate, struct TArray<struct FVertexID>& OutNewVertexIDs); // Function EditableMesh.EditableMesh.CreateVertices(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1780CE0>
+	void CreateVertexInstances(struct TArray<struct FVertexInstanceToCreate>& VertexInstancesToCreate, struct TArray<struct FVertexInstanceID>& OutNewVertexInstanceIDs); // Function EditableMesh.EditableMesh.CreateVertexInstances(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1780BA0>
+	void CreatePolygons(struct TArray<struct FPolygonToCreate>& PolygonsToCreate, struct TArray<struct FPolygonID>& OutNewPolygonIDs, struct TArray<struct FEdgeID>& OutNewEdgeIDs); // Function EditableMesh.EditableMesh.CreatePolygons(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x17809C0>
+	void CreatePolygonGroups(struct TArray<struct FPolygonGroupToCreate>& PolygonGroupsToCreate, struct TArray<struct FPolygonGroupID>& OutNewPolygonGroupIDs); // Function EditableMesh.EditableMesh.CreatePolygonGroups(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1780880>
+	void CreateMissingPolygonPerimeterEdges(struct FPolygonID PolygonID, struct TArray<struct FEdgeID>& OutNewEdgeIDs); // Function EditableMesh.EditableMesh.CreateMissingPolygonPerimeterEdges(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1780790>
+	void CreateEmptyVertexRange(int32_t NumVerticesToCreate, struct TArray<struct FVertexID>& OutNewVertexIDs); // Function EditableMesh.EditableMesh.CreateEmptyVertexRange(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x17806A0>
+	void CreateEdges(struct TArray<struct FEdgeToCreate>& EdgesToCreate, struct TArray<struct FEdgeID>& OutNewEdgeIDs); // Function EditableMesh.EditableMesh.CreateEdges(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1780560>
+	void ComputePolygonsSharedEdges(struct TArray<struct FPolygonID>& PolygonIDs, struct TArray<struct FEdgeID>& OutSharedEdgeIDs); // Function EditableMesh.EditableMesh.ComputePolygonsSharedEdges(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1780440>
+	struct FPlane ComputePolygonPlane(struct FPolygonID PolygonID); // Function EditableMesh.EditableMesh.ComputePolygonPlane(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17803A0>
+	struct FVector ComputePolygonNormal(struct FPolygonID PolygonID); // Function EditableMesh.EditableMesh.ComputePolygonNormal(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1780300>
+	struct FVector ComputePolygonCenter(struct FPolygonID PolygonID); // Function EditableMesh.EditableMesh.ComputePolygonCenter(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1780260>
+	struct FBoxSphereBounds ComputeBoundingBoxAndSphere(); // Function EditableMesh.EditableMesh.ComputeBoundingBoxAndSphere(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x1780210>
+	struct FBox ComputeBoundingBox(); // Function EditableMesh.EditableMesh.ComputeBoundingBox(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x17801C0>
+	struct UEditableMesh CommitInstance(struct UPrimitiveComponent ComponentToInstanceTo); // Function EditableMesh.EditableMesh.CommitInstance(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1780130>
 	void Commit(); // Function EditableMesh.EditableMesh.Commit(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1780110>
-	void ChangePolygonsVertexInstances(struct TArray<Unknown>& VertexInstancesForPolygons); // Function EditableMesh.EditableMesh.ChangePolygonsVertexInstances(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x177FFF0>
-	void BevelPolygons(struct TArray<Unknown>& PolygonIDs, float BevelFixedDistance, float BevelProgressTowardCenter, struct TArray<Unknown>& OutNewCenterPolygonIDs, struct TArray<Unknown>& OutNewSidePolygonIDs); // Function EditableMesh.EditableMesh.BevelPolygons(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x177FE00>
-	void AssignPolygonsToPolygonGroups(struct TArray<Unknown>& PolygonGroupForPolygons, char bDeleteOrphanedPolygonGroups); // Function EditableMesh.EditableMesh.AssignPolygonsToPolygonGroups(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x177FD00>
+	void ChangePolygonsVertexInstances(struct TArray<struct FChangeVertexInstancesForPolygon>& VertexInstancesForPolygons); // Function EditableMesh.EditableMesh.ChangePolygonsVertexInstances(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x177FFF0>
+	void BevelPolygons(struct TArray<struct FPolygonID>& PolygonIDs, float BevelFixedDistance, float BevelProgressTowardCenter, struct TArray<struct FPolygonID>& OutNewCenterPolygonIDs, struct TArray<struct FPolygonID>& OutNewSidePolygonIDs); // Function EditableMesh.EditableMesh.BevelPolygons(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x177FE00>
+	void AssignPolygonsToPolygonGroups(struct TArray<struct FPolygonGroupForPolygon>& PolygonGroupForPolygons, char bDeleteOrphanedPolygonGroups); // Function EditableMesh.EditableMesh.AssignPolygonsToPolygonGroups(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x177FD00>
 	char AnyChangesToUndo(); // Function EditableMesh.EditableMesh.AnyChangesToUndo(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x177FCD0>
 };
 
@@ -206,8 +206,8 @@ class UEditableStaticMeshAdapter : public UEditableMeshAdapter {
 
 public:
 
-	struct Unknown StaticMesh; // 0x28 (8)
-	struct Unknown OriginalStaticMesh; // 0x30 (8)
+	struct UStaticMesh StaticMesh; // 0x28 (8)
+	struct UStaticMesh OriginalStaticMesh; // 0x30 (8)
 	int32_t StaticMeshLODIndex; // 0x38 (4)
 };
 
@@ -220,141 +220,141 @@ struct FAdaptorPolygon2Group {
 
 // ScriptStruct EditableMesh.AdaptorPolygon
 struct FAdaptorPolygon {
-	struct Unknown PolygonGroupID; // 0x0 (4)
-	struct TArray<Unknown> TriangulatedPolygonTriangleIndices; // 0x8 (16)
+	struct FPolygonGroupID PolygonGroupID; // 0x0 (4)
+	struct TArray<struct FAdaptorTriangleID> TriangulatedPolygonTriangleIndices; // 0x8 (16)
 };
 
 // ScriptStruct EditableMesh.PolygonGroupForPolygon
 struct FPolygonGroupForPolygon {
-	struct Unknown PolygonID; // 0x0 (4)
-	struct Unknown PolygonGroupID; // 0x4 (4)
+	struct FPolygonID PolygonID; // 0x0 (4)
+	struct FPolygonGroupID PolygonGroupID; // 0x4 (4)
 };
 
 // ScriptStruct EditableMesh.PolygonGroupToCreate
 struct FPolygonGroupToCreate {
-	struct Unknown PolygonGroupAttributes; // 0x0 (16)
-	struct Unknown OriginalPolygonGroupID; // 0x10 (4)
+	struct FMeshElementAttributeList PolygonGroupAttributes; // 0x0 (16)
+	struct FPolygonGroupID OriginalPolygonGroupID; // 0x10 (4)
 };
 
 // ScriptStruct EditableMesh.MeshElementAttributeList
 struct FMeshElementAttributeList {
-	struct TArray<Unknown> Attributes; // 0x0 (16)
+	struct TArray<struct FMeshElementAttributeData> Attributes; // 0x0 (16)
 };
 
 // ScriptStruct EditableMesh.MeshElementAttributeData
 struct FMeshElementAttributeData {
 	struct FName AttributeName; // 0x0 (8)
 	int32_t AttributeIndex; // 0x8 (4)
-	struct Unknown AttributeValue; // 0x10 (80)
+	struct FMeshElementAttributeValue AttributeValue; // 0x10 (80)
 };
 
 // ScriptStruct EditableMesh.VertexToMove
 struct FVertexToMove {
-	struct Unknown VertexID; // 0x0 (4)
-	struct Unknown NewVertexPosition; // 0x4 (12)
+	struct FVertexID VertexID; // 0x0 (4)
+	struct FVector NewVertexPosition; // 0x4 (12)
 };
 
 // ScriptStruct EditableMesh.ChangeVertexInstancesForPolygon
 struct FChangeVertexInstancesForPolygon {
-	struct Unknown PolygonID; // 0x0 (4)
-	struct TArray<Unknown> PerimeterVertexIndicesAndInstanceIDs; // 0x8 (16)
-	struct TArray<Unknown> VertexIndicesAndInstanceIDsForEachHole; // 0x18 (16)
+	struct FPolygonID PolygonID; // 0x0 (4)
+	struct TArray<struct FVertexIndexAndInstanceID> PerimeterVertexIndicesAndInstanceIDs; // 0x8 (16)
+	struct TArray<struct FVertexInstancesForPolygonHole> VertexIndicesAndInstanceIDsForEachHole; // 0x18 (16)
 };
 
 // ScriptStruct EditableMesh.VertexInstancesForPolygonHole
 struct FVertexInstancesForPolygonHole {
-	struct TArray<Unknown> VertexIndicesAndInstanceIDs; // 0x0 (16)
+	struct TArray<struct FVertexIndexAndInstanceID> VertexIndicesAndInstanceIDs; // 0x0 (16)
 };
 
 // ScriptStruct EditableMesh.VertexIndexAndInstanceID
 struct FVertexIndexAndInstanceID {
 	int32_t ContourIndex; // 0x0 (4)
-	struct Unknown VertexInstanceID; // 0x4 (4)
+	struct FVertexInstanceID VertexInstanceID; // 0x4 (4)
 };
 
 // ScriptStruct EditableMesh.VertexAttributesForPolygon
 struct FVertexAttributesForPolygon {
-	struct Unknown PolygonID; // 0x0 (4)
-	struct TArray<Unknown> PerimeterVertexAttributeLists; // 0x8 (16)
-	struct TArray<Unknown> VertexAttributeListsForEachHole; // 0x18 (16)
+	struct FPolygonID PolygonID; // 0x0 (4)
+	struct TArray<struct FMeshElementAttributeList> PerimeterVertexAttributeLists; // 0x8 (16)
+	struct TArray<struct FVertexAttributesForPolygonHole> VertexAttributeListsForEachHole; // 0x18 (16)
 };
 
 // ScriptStruct EditableMesh.VertexAttributesForPolygonHole
 struct FVertexAttributesForPolygonHole {
-	struct TArray<Unknown> VertexAttributeList; // 0x0 (16)
+	struct TArray<struct FMeshElementAttributeList> VertexAttributeList; // 0x0 (16)
 };
 
 // ScriptStruct EditableMesh.AttributesForEdge
 struct FAttributesForEdge {
-	struct Unknown EdgeID; // 0x0 (4)
-	struct Unknown EdgeAttributes; // 0x8 (16)
+	struct FEdgeID EdgeID; // 0x0 (4)
+	struct FMeshElementAttributeList EdgeAttributes; // 0x8 (16)
 };
 
 // ScriptStruct EditableMesh.AttributesForVertexInstance
 struct FAttributesForVertexInstance {
-	struct Unknown VertexInstanceID; // 0x0 (4)
-	struct Unknown VertexInstanceAttributes; // 0x8 (16)
+	struct FVertexInstanceID VertexInstanceID; // 0x0 (4)
+	struct FMeshElementAttributeList VertexInstanceAttributes; // 0x8 (16)
 };
 
 // ScriptStruct EditableMesh.AttributesForVertex
 struct FAttributesForVertex {
-	struct Unknown VertexID; // 0x0 (4)
-	struct Unknown VertexAttributes; // 0x8 (16)
+	struct FVertexID VertexID; // 0x0 (4)
+	struct FMeshElementAttributeList VertexAttributes; // 0x8 (16)
 };
 
 // ScriptStruct EditableMesh.PolygonToSplit
 struct FPolygonToSplit {
-	struct Unknown PolygonID; // 0x0 (4)
-	struct TArray<Unknown> VertexPairsToSplitAt; // 0x8 (16)
+	struct FPolygonID PolygonID; // 0x0 (4)
+	struct TArray<struct FVertexPair> VertexPairsToSplitAt; // 0x8 (16)
 };
 
 // ScriptStruct EditableMesh.VertexPair
 struct FVertexPair {
-	struct Unknown VertexID0; // 0x0 (4)
-	struct Unknown VertexID1; // 0x4 (4)
+	struct FVertexID VertexID0; // 0x0 (4)
+	struct FVertexID VertexID1; // 0x4 (4)
 };
 
 // ScriptStruct EditableMesh.PolygonToCreate
 struct FPolygonToCreate {
-	struct Unknown PolygonGroupID; // 0x0 (4)
-	struct TArray<Unknown> PerimeterVertices; // 0x8 (16)
-	struct Unknown OriginalPolygonID; // 0x18 (4)
-	enum class Unknow PolygonEdgeHardness; // 0x1C (1)
+	struct FPolygonGroupID PolygonGroupID; // 0x0 (4)
+	struct TArray<struct FVertexAndAttributes> PerimeterVertices; // 0x8 (16)
+	struct FPolygonID OriginalPolygonID; // 0x18 (4)
+	enum class EPolygonEdgeHardness PolygonEdgeHardness; // 0x1C (1)
 };
 
 // ScriptStruct EditableMesh.VertexAndAttributes
 struct FVertexAndAttributes {
-	struct Unknown VertexInstanceID; // 0x0 (4)
-	struct Unknown VertexID; // 0x4 (4)
-	struct Unknown PolygonVertexAttributes; // 0x8 (16)
+	struct FVertexInstanceID VertexInstanceID; // 0x0 (4)
+	struct FVertexID VertexID; // 0x4 (4)
+	struct FMeshElementAttributeList PolygonVertexAttributes; // 0x8 (16)
 };
 
 // ScriptStruct EditableMesh.EdgeToCreate
 struct FEdgeToCreate {
-	struct Unknown VertexID0; // 0x0 (4)
-	struct Unknown VertexID1; // 0x4 (4)
-	struct Unknown EdgeAttributes; // 0x8 (16)
-	struct Unknown OriginalEdgeID; // 0x18 (4)
+	struct FVertexID VertexID0; // 0x0 (4)
+	struct FVertexID VertexID1; // 0x4 (4)
+	struct FMeshElementAttributeList EdgeAttributes; // 0x8 (16)
+	struct FEdgeID OriginalEdgeID; // 0x18 (4)
 };
 
 // ScriptStruct EditableMesh.VertexInstanceToCreate
 struct FVertexInstanceToCreate {
-	struct Unknown VertexID; // 0x0 (4)
-	struct Unknown VertexInstanceAttributes; // 0x8 (16)
-	struct Unknown OriginalVertexInstanceID; // 0x18 (4)
+	struct FVertexID VertexID; // 0x0 (4)
+	struct FMeshElementAttributeList VertexInstanceAttributes; // 0x8 (16)
+	struct FVertexInstanceID OriginalVertexInstanceID; // 0x18 (4)
 };
 
 // ScriptStruct EditableMesh.VertexToCreate
 struct FVertexToCreate {
-	struct Unknown VertexAttributes; // 0x0 (16)
-	struct Unknown OriginalVertexID; // 0x10 (4)
+	struct FMeshElementAttributeList VertexAttributes; // 0x0 (16)
+	struct FVertexID OriginalVertexID; // 0x10 (4)
 };
 
 // ScriptStruct EditableMesh.SubdivisionLimitData
 struct FSubdivisionLimitData {
-	struct TArray<Unknown> VertexPositions; // 0x0 (16)
-	struct TArray<Unknown> Sections; // 0x10 (16)
-	struct TArray<Unknown> SubdividedWireEdges; // 0x20 (16)
+	struct TArray<struct FVector> VertexPositions; // 0x0 (16)
+	struct TArray<struct FSubdivisionLimitSection> Sections; // 0x10 (16)
+	struct TArray<struct FSubdividedWireEdge> SubdividedWireEdges; // 0x20 (16)
 };
 
 // ScriptStruct EditableMesh.SubdividedWireEdge
@@ -365,25 +365,25 @@ struct FSubdividedWireEdge {
 
 // ScriptStruct EditableMesh.SubdivisionLimitSection
 struct FSubdivisionLimitSection {
-	struct TArray<Unknown> SubdividedQuads; // 0x0 (16)
+	struct TArray<struct FSubdividedQuad> SubdividedQuads; // 0x0 (16)
 };
 
 // ScriptStruct EditableMesh.SubdividedQuad
 struct FSubdividedQuad {
-	struct Unknown QuadVertex0; // 0x0 (52)
-	struct Unknown QuadVertex1; // 0x34 (52)
-	struct Unknown QuadVertex2; // 0x68 (52)
-	struct Unknown QuadVertex3; // 0x9C (52)
+	struct FSubdividedQuadVertex QuadVertex0; // 0x0 (52)
+	struct FSubdividedQuadVertex QuadVertex1; // 0x34 (52)
+	struct FSubdividedQuadVertex QuadVertex2; // 0x68 (52)
+	struct FSubdividedQuadVertex QuadVertex3; // 0x9C (52)
 };
 
 // ScriptStruct EditableMesh.SubdividedQuadVertex
 struct FSubdividedQuadVertex {
 	int32_t VertexPositionIndex; // 0x0 (4)
-	struct Unknown TextureCoordinate0; // 0x4 (8)
-	struct Unknown TextureCoordinate1; // 0xC (8)
-	struct Unknown VertexColor; // 0x14 (4)
-	struct Unknown VertexNormal; // 0x18 (12)
-	struct Unknown VertexTangent; // 0x24 (12)
+	struct FVector2D TextureCoordinate0; // 0x4 (8)
+	struct FVector2D TextureCoordinate1; // 0xC (8)
+	struct FColor VertexColor; // 0x14 (4)
+	struct FVector VertexNormal; // 0x18 (12)
+	struct FVector VertexTangent; // 0x24 (12)
 	float VertexBinormalSign; // 0x30 (4)
 };
 
@@ -396,17 +396,17 @@ struct FRenderingPolygonGroup {
 
 // ScriptStruct EditableMesh.RenderingPolygon
 struct FRenderingPolygon {
-	struct Unknown PolygonGroupID; // 0x0 (4)
-	struct TArray<Unknown> TriangulatedPolygonTriangleIndices; // 0x8 (16)
+	struct FPolygonGroupID PolygonGroupID; // 0x0 (4)
+	struct TArray<struct FTriangleID> TriangulatedPolygonTriangleIndices; // 0x8 (16)
 };
 
 // Function EditableMesh.EditableMesh.WeldVertices
-inline void UEditableMesh::WeldVertices(struct TArray<Unknown>& VertexIDs, struct Unknown& OutNewVertexID) {
+inline void UEditableMesh::WeldVertices(struct TArray<struct FVertexID>& VertexIDs, struct FVertexID& OutNewVertexID) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.WeldVertices");
 
 	struct WeldVertices_Params {
-		struct TArray<Unknown>& VertexIDs;
-		struct Unknown& OutNewVertexID;
+		struct TArray<struct FVertexID>& VertexIDs;
+		struct FVertexID& OutNewVertexID;
 	}; WeldVertices_Params Params;
 
 
@@ -420,13 +420,13 @@ inline void UEditableMesh::WeldVertices(struct TArray<Unknown>& VertexIDs, struc
 }
 
 // Function EditableMesh.EditableMesh.TryToRemoveVertex
-inline void UEditableMesh::TryToRemoveVertex(struct Unknown VertexID, char& bOutWasVertexRemoved, struct Unknown& OutNewEdgeID) {
+inline void UEditableMesh::TryToRemoveVertex(struct FVertexID VertexID, char& bOutWasVertexRemoved, struct FEdgeID& OutNewEdgeID) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.TryToRemoveVertex");
 
 	struct TryToRemoveVertex_Params {
-		struct Unknown VertexID;
+		struct FVertexID VertexID;
 		char& bOutWasVertexRemoved;
-		struct Unknown& OutNewEdgeID;
+		struct FEdgeID& OutNewEdgeID;
 	}; TryToRemoveVertex_Params Params;
 
 	Params.VertexID = VertexID;
@@ -441,13 +441,13 @@ inline void UEditableMesh::TryToRemoveVertex(struct Unknown VertexID, char& bOut
 }
 
 // Function EditableMesh.EditableMesh.TryToRemovePolygonEdge
-inline void UEditableMesh::TryToRemovePolygonEdge(struct Unknown EdgeID, char& bOutWasEdgeRemoved, struct Unknown& OutNewPolygonID) {
+inline void UEditableMesh::TryToRemovePolygonEdge(struct FEdgeID EdgeID, char& bOutWasEdgeRemoved, struct FPolygonID& OutNewPolygonID) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.TryToRemovePolygonEdge");
 
 	struct TryToRemovePolygonEdge_Params {
-		struct Unknown EdgeID;
+		struct FEdgeID EdgeID;
 		char& bOutWasEdgeRemoved;
-		struct Unknown& OutNewPolygonID;
+		struct FPolygonID& OutNewPolygonID;
 	}; TryToRemovePolygonEdge_Params Params;
 
 	Params.EdgeID = EdgeID;
@@ -462,12 +462,12 @@ inline void UEditableMesh::TryToRemovePolygonEdge(struct Unknown EdgeID, char& b
 }
 
 // Function EditableMesh.EditableMesh.TriangulatePolygons
-inline void UEditableMesh::TriangulatePolygons(struct TArray<Unknown>& PolygonIDs, struct TArray<Unknown>& OutNewTrianglePolygons) {
+inline void UEditableMesh::TriangulatePolygons(struct TArray<struct FPolygonID>& PolygonIDs, struct TArray<struct FPolygonID>& OutNewTrianglePolygons) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.TriangulatePolygons");
 
 	struct TriangulatePolygons_Params {
-		struct TArray<Unknown>& PolygonIDs;
-		struct TArray<Unknown>& OutNewTrianglePolygons;
+		struct TArray<struct FPolygonID>& PolygonIDs;
+		struct TArray<struct FPolygonID>& OutNewTrianglePolygons;
 	}; TriangulatePolygons_Params Params;
 
 
@@ -481,13 +481,13 @@ inline void UEditableMesh::TriangulatePolygons(struct TArray<Unknown>& PolygonID
 }
 
 // Function EditableMesh.EditableMesh.TessellatePolygons
-inline void UEditableMesh::TessellatePolygons(struct TArray<Unknown>& PolygonIDs, enum class Unknow TriangleTessellationMode, struct TArray<Unknown>& OutNewPolygonIDs) {
+inline void UEditableMesh::TessellatePolygons(struct TArray<struct FPolygonID>& PolygonIDs, enum class ETriangleTessellationMode TriangleTessellationMode, struct TArray<struct FPolygonID>& OutNewPolygonIDs) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.TessellatePolygons");
 
 	struct TessellatePolygons_Params {
-		struct TArray<Unknown>& PolygonIDs;
-		enum class Unknow TriangleTessellationMode;
-		struct TArray<Unknown>& OutNewPolygonIDs;
+		struct TArray<struct FPolygonID>& PolygonIDs;
+		enum class ETriangleTessellationMode TriangleTessellationMode;
+		struct TArray<struct FPolygonID>& OutNewPolygonIDs;
 	}; TessellatePolygons_Params Params;
 
 	Params.TriangleTessellationMode = TriangleTessellationMode;
@@ -502,12 +502,12 @@ inline void UEditableMesh::TessellatePolygons(struct TArray<Unknown>& PolygonIDs
 }
 
 // Function EditableMesh.EditableMesh.StartModification
-inline void UEditableMesh::StartModification(enum class Unknow MeshModificationType, enum class Unknow MeshTopologyChange) {
+inline void UEditableMesh::StartModification(enum class EMeshModificationType MeshModificationType, enum class EMeshTopologyChange MeshTopologyChange) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.StartModification");
 
 	struct StartModification_Params {
-		enum class Unknow MeshModificationType;
-		enum class Unknow MeshTopologyChange;
+		enum class EMeshModificationType MeshModificationType;
+		enum class EMeshTopologyChange MeshTopologyChange;
 	}; StartModification_Params Params;
 
 	Params.MeshModificationType = MeshModificationType;
@@ -519,12 +519,12 @@ inline void UEditableMesh::StartModification(enum class Unknow MeshModificationT
 }
 
 // Function EditableMesh.EditableMesh.SplitPolygons
-inline void UEditableMesh::SplitPolygons(struct TArray<Unknown>& PolygonsToSplit, struct TArray<Unknown>& OutNewEdgeIDs) {
+inline void UEditableMesh::SplitPolygons(struct TArray<struct FPolygonToSplit>& PolygonsToSplit, struct TArray<struct FEdgeID>& OutNewEdgeIDs) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.SplitPolygons");
 
 	struct SplitPolygons_Params {
-		struct TArray<Unknown>& PolygonsToSplit;
-		struct TArray<Unknown>& OutNewEdgeIDs;
+		struct TArray<struct FPolygonToSplit>& PolygonsToSplit;
+		struct TArray<struct FEdgeID>& OutNewEdgeIDs;
 	}; SplitPolygons_Params Params;
 
 
@@ -538,14 +538,14 @@ inline void UEditableMesh::SplitPolygons(struct TArray<Unknown>& PolygonsToSplit
 }
 
 // Function EditableMesh.EditableMesh.SplitPolygonalMesh
-inline void UEditableMesh::SplitPolygonalMesh(struct Unknown& InPlane, struct TArray<Unknown>& PolygonIDs1, struct TArray<Unknown>& PolygonIDs2, struct TArray<Unknown>& BoundaryIDs) {
+inline void UEditableMesh::SplitPolygonalMesh(struct FPlane& InPlane, struct TArray<struct FPolygonID>& PolygonIDs1, struct TArray<struct FPolygonID>& PolygonIDs2, struct TArray<struct FEdgeID>& BoundaryIDs) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.SplitPolygonalMesh");
 
 	struct SplitPolygonalMesh_Params {
-		struct Unknown& InPlane;
-		struct TArray<Unknown>& PolygonIDs1;
-		struct TArray<Unknown>& PolygonIDs2;
-		struct TArray<Unknown>& BoundaryIDs;
+		struct FPlane& InPlane;
+		struct TArray<struct FPolygonID>& PolygonIDs1;
+		struct TArray<struct FPolygonID>& PolygonIDs2;
+		struct TArray<struct FEdgeID>& BoundaryIDs;
 	}; SplitPolygonalMesh_Params Params;
 
 
@@ -561,13 +561,13 @@ inline void UEditableMesh::SplitPolygonalMesh(struct Unknown& InPlane, struct TA
 }
 
 // Function EditableMesh.EditableMesh.SplitEdge
-inline void UEditableMesh::SplitEdge(struct Unknown EdgeID, struct TArray<Unknown>& Splits, struct TArray<Unknown>& OutNewVertexIDs) {
+inline void UEditableMesh::SplitEdge(struct FEdgeID EdgeID, struct TArray<float>& Splits, struct TArray<struct FVertexID>& OutNewVertexIDs) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.SplitEdge");
 
 	struct SplitEdge_Params {
-		struct Unknown EdgeID;
-		struct TArray<Unknown>& Splits;
-		struct TArray<Unknown>& OutNewVertexIDs;
+		struct FEdgeID EdgeID;
+		struct TArray<float>& Splits;
+		struct TArray<struct FVertexID>& OutNewVertexIDs;
 	}; SplitEdge_Params Params;
 
 	Params.EdgeID = EdgeID;
@@ -582,12 +582,12 @@ inline void UEditableMesh::SplitEdge(struct Unknown EdgeID, struct TArray<Unknow
 }
 
 // Function EditableMesh.EditableMesh.SetVerticesCornerSharpness
-inline void UEditableMesh::SetVerticesCornerSharpness(struct TArray<Unknown>& VertexIDs, struct TArray<Unknown>& VerticesNewCornerSharpness) {
+inline void UEditableMesh::SetVerticesCornerSharpness(struct TArray<struct FVertexID>& VertexIDs, struct TArray<float>& VerticesNewCornerSharpness) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.SetVerticesCornerSharpness");
 
 	struct SetVerticesCornerSharpness_Params {
-		struct TArray<Unknown>& VertexIDs;
-		struct TArray<Unknown>& VerticesNewCornerSharpness;
+		struct TArray<struct FVertexID>& VertexIDs;
+		struct TArray<float>& VerticesNewCornerSharpness;
 	}; SetVerticesCornerSharpness_Params Params;
 
 
@@ -601,11 +601,11 @@ inline void UEditableMesh::SetVerticesCornerSharpness(struct TArray<Unknown>& Ve
 }
 
 // Function EditableMesh.EditableMesh.SetVerticesAttributes
-inline void UEditableMesh::SetVerticesAttributes(struct TArray<Unknown>& AttributesForVertices) {
+inline void UEditableMesh::SetVerticesAttributes(struct TArray<struct FAttributesForVertex>& AttributesForVertices) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.SetVerticesAttributes");
 
 	struct SetVerticesAttributes_Params {
-		struct TArray<Unknown>& AttributesForVertices;
+		struct TArray<struct FAttributesForVertex>& AttributesForVertices;
 	}; SetVerticesAttributes_Params Params;
 
 
@@ -618,11 +618,11 @@ inline void UEditableMesh::SetVerticesAttributes(struct TArray<Unknown>& Attribu
 }
 
 // Function EditableMesh.EditableMesh.SetVertexInstancesAttributes
-inline void UEditableMesh::SetVertexInstancesAttributes(struct TArray<Unknown>& AttributesForVertexInstances) {
+inline void UEditableMesh::SetVertexInstancesAttributes(struct TArray<struct FAttributesForVertexInstance>& AttributesForVertexInstances) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.SetVertexInstancesAttributes");
 
 	struct SetVertexInstancesAttributes_Params {
-		struct TArray<Unknown>& AttributesForVertexInstances;
+		struct TArray<struct FAttributesForVertexInstance>& AttributesForVertexInstances;
 	}; SetVertexInstancesAttributes_Params Params;
 
 
@@ -665,11 +665,11 @@ inline void UEditableMesh::SetSubdivisionCount(int32_t NewSubdivisionCount) {
 }
 
 // Function EditableMesh.EditableMesh.SetPolygonsVertexAttributes
-inline void UEditableMesh::SetPolygonsVertexAttributes(struct TArray<Unknown>& VertexAttributesForPolygons) {
+inline void UEditableMesh::SetPolygonsVertexAttributes(struct TArray<struct FVertexAttributesForPolygon>& VertexAttributesForPolygons) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.SetPolygonsVertexAttributes");
 
 	struct SetPolygonsVertexAttributes_Params {
-		struct TArray<Unknown>& VertexAttributesForPolygons;
+		struct TArray<struct FVertexAttributesForPolygon>& VertexAttributesForPolygons;
 	}; SetPolygonsVertexAttributes_Params Params;
 
 
@@ -682,11 +682,11 @@ inline void UEditableMesh::SetPolygonsVertexAttributes(struct TArray<Unknown>& V
 }
 
 // Function EditableMesh.EditableMesh.SetEdgesHardnessAutomatically
-inline void UEditableMesh::SetEdgesHardnessAutomatically(struct TArray<Unknown>& EdgeIDs, float MaxDotProductForSoftEdge) {
+inline void UEditableMesh::SetEdgesHardnessAutomatically(struct TArray<struct FEdgeID>& EdgeIDs, float MaxDotProductForSoftEdge) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.SetEdgesHardnessAutomatically");
 
 	struct SetEdgesHardnessAutomatically_Params {
-		struct TArray<Unknown>& EdgeIDs;
+		struct TArray<struct FEdgeID>& EdgeIDs;
 		float MaxDotProductForSoftEdge;
 	}; SetEdgesHardnessAutomatically_Params Params;
 
@@ -701,12 +701,12 @@ inline void UEditableMesh::SetEdgesHardnessAutomatically(struct TArray<Unknown>&
 }
 
 // Function EditableMesh.EditableMesh.SetEdgesHardness
-inline void UEditableMesh::SetEdgesHardness(struct TArray<Unknown>& EdgeIDs, struct TArray<Unknown>& EdgesNewIsHard) {
+inline void UEditableMesh::SetEdgesHardness(struct TArray<struct FEdgeID>& EdgeIDs, struct TArray<char>& EdgesNewIsHard) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.SetEdgesHardness");
 
 	struct SetEdgesHardness_Params {
-		struct TArray<Unknown>& EdgeIDs;
-		struct TArray<Unknown>& EdgesNewIsHard;
+		struct TArray<struct FEdgeID>& EdgeIDs;
+		struct TArray<char>& EdgesNewIsHard;
 	}; SetEdgesHardness_Params Params;
 
 
@@ -720,12 +720,12 @@ inline void UEditableMesh::SetEdgesHardness(struct TArray<Unknown>& EdgeIDs, str
 }
 
 // Function EditableMesh.EditableMesh.SetEdgesCreaseSharpness
-inline void UEditableMesh::SetEdgesCreaseSharpness(struct TArray<Unknown>& EdgeIDs, struct TArray<Unknown>& EdgesNewCreaseSharpness) {
+inline void UEditableMesh::SetEdgesCreaseSharpness(struct TArray<struct FEdgeID>& EdgeIDs, struct TArray<float>& EdgesNewCreaseSharpness) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.SetEdgesCreaseSharpness");
 
 	struct SetEdgesCreaseSharpness_Params {
-		struct TArray<Unknown>& EdgeIDs;
-		struct TArray<Unknown>& EdgesNewCreaseSharpness;
+		struct TArray<struct FEdgeID>& EdgeIDs;
+		struct TArray<float>& EdgesNewCreaseSharpness;
 	}; SetEdgesCreaseSharpness_Params Params;
 
 
@@ -739,11 +739,11 @@ inline void UEditableMesh::SetEdgesCreaseSharpness(struct TArray<Unknown>& EdgeI
 }
 
 // Function EditableMesh.EditableMesh.SetEdgesAttributes
-inline void UEditableMesh::SetEdgesAttributes(struct TArray<Unknown>& AttributesForEdges) {
+inline void UEditableMesh::SetEdgesAttributes(struct TArray<struct FAttributesForEdge>& AttributesForEdges) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.SetEdgesAttributes");
 
 	struct SetEdgesAttributes_Params {
-		struct TArray<Unknown>& AttributesForEdges;
+		struct TArray<struct FAttributesForEdge>& AttributesForEdges;
 	}; SetEdgesAttributes_Params Params;
 
 
@@ -801,12 +801,12 @@ inline void UEditableMesh::SetAllowCompact(char bInAllowCompact) {
 }
 
 // Function EditableMesh.EditableMesh.SearchSpatialDatabaseForPolygonsPotentiallyIntersectingPlane
-inline void UEditableMesh::SearchSpatialDatabaseForPolygonsPotentiallyIntersectingPlane(struct Unknown& InPlane, struct TArray<Unknown>& OutPolygons) {
+inline void UEditableMesh::SearchSpatialDatabaseForPolygonsPotentiallyIntersectingPlane(struct FPlane& InPlane, struct TArray<struct FPolygonID>& OutPolygons) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.SearchSpatialDatabaseForPolygonsPotentiallyIntersectingPlane");
 
 	struct SearchSpatialDatabaseForPolygonsPotentiallyIntersectingPlane_Params {
-		struct Unknown& InPlane;
-		struct TArray<Unknown>& OutPolygons;
+		struct FPlane& InPlane;
+		struct TArray<struct FPolygonID>& OutPolygons;
 	}; SearchSpatialDatabaseForPolygonsPotentiallyIntersectingPlane_Params Params;
 
 
@@ -820,13 +820,13 @@ inline void UEditableMesh::SearchSpatialDatabaseForPolygonsPotentiallyIntersecti
 }
 
 // Function EditableMesh.EditableMesh.SearchSpatialDatabaseForPolygonsPotentiallyIntersectingLineSegment
-inline void UEditableMesh::SearchSpatialDatabaseForPolygonsPotentiallyIntersectingLineSegment(struct Unknown LineSegmentStart, struct Unknown LineSegmentEnd, struct TArray<Unknown>& OutPolygons) {
+inline void UEditableMesh::SearchSpatialDatabaseForPolygonsPotentiallyIntersectingLineSegment(struct FVector LineSegmentStart, struct FVector LineSegmentEnd, struct TArray<struct FPolygonID>& OutPolygons) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.SearchSpatialDatabaseForPolygonsPotentiallyIntersectingLineSegment");
 
 	struct SearchSpatialDatabaseForPolygonsPotentiallyIntersectingLineSegment_Params {
-		struct Unknown LineSegmentStart;
-		struct Unknown LineSegmentEnd;
-		struct TArray<Unknown>& OutPolygons;
+		struct FVector LineSegmentStart;
+		struct FVector LineSegmentEnd;
+		struct TArray<struct FPolygonID>& OutPolygons;
 	}; SearchSpatialDatabaseForPolygonsPotentiallyIntersectingLineSegment_Params Params;
 
 	Params.LineSegmentStart = LineSegmentStart;
@@ -841,12 +841,12 @@ inline void UEditableMesh::SearchSpatialDatabaseForPolygonsPotentiallyIntersecti
 }
 
 // Function EditableMesh.EditableMesh.SearchSpatialDatabaseForPolygonsInVolume
-inline void UEditableMesh::SearchSpatialDatabaseForPolygonsInVolume(struct TArray<Unknown>& Planes, struct TArray<Unknown>& OutPolygons) {
+inline void UEditableMesh::SearchSpatialDatabaseForPolygonsInVolume(struct TArray<struct FPlane>& Planes, struct TArray<struct FPolygonID>& OutPolygons) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.SearchSpatialDatabaseForPolygonsInVolume");
 
 	struct SearchSpatialDatabaseForPolygonsInVolume_Params {
-		struct TArray<Unknown>& Planes;
-		struct TArray<Unknown>& OutPolygons;
+		struct TArray<struct FPlane>& Planes;
+		struct TArray<struct FPolygonID>& OutPolygons;
 	}; SearchSpatialDatabaseForPolygonsInVolume_Params Params;
 
 
@@ -860,12 +860,12 @@ inline void UEditableMesh::SearchSpatialDatabaseForPolygonsInVolume(struct TArra
 }
 
 // Function EditableMesh.EditableMesh.RevertInstance
-inline struct Unknown UEditableMesh::RevertInstance() {
+inline struct UEditableMesh UEditableMesh::RevertInstance() {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.RevertInstance");
 
 	struct RevertInstance_Params {
 		
-		struct Unknown ReturnValue;
+		struct UEditableMesh ReturnValue;
 
 	}; RevertInstance_Params Params;
 
@@ -906,11 +906,11 @@ inline void UEditableMesh::RebuildRenderMesh() {
 }
 
 // Function EditableMesh.EditableMesh.QuadrangulateMesh
-inline void UEditableMesh::QuadrangulateMesh(struct TArray<Unknown>& OutNewPolygonIDs) {
+inline void UEditableMesh::QuadrangulateMesh(struct TArray<struct FPolygonID>& OutNewPolygonIDs) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.QuadrangulateMesh");
 
 	struct QuadrangulateMesh_Params {
-		struct TArray<Unknown>& OutNewPolygonIDs;
+		struct TArray<struct FPolygonID>& OutNewPolygonIDs;
 	}; QuadrangulateMesh_Params Params;
 
 
@@ -937,11 +937,11 @@ inline void UEditableMesh::PropagateInstanceChanges() {
 }
 
 // Function EditableMesh.EditableMesh.MoveVertices
-inline void UEditableMesh::MoveVertices(struct TArray<Unknown>& VerticesToMove) {
+inline void UEditableMesh::MoveVertices(struct TArray<struct FVertexToMove>& VerticesToMove) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.MoveVertices");
 
 	struct MoveVertices_Params {
-		struct TArray<Unknown>& VerticesToMove;
+		struct TArray<struct FVertexToMove>& VerticesToMove;
 	}; MoveVertices_Params Params;
 
 
@@ -954,12 +954,12 @@ inline void UEditableMesh::MoveVertices(struct TArray<Unknown>& VerticesToMove) 
 }
 
 // Function EditableMesh.EditableMesh.MakeVertexID
-inline struct Unknown UEditableMesh::MakeVertexID(int32_t VertexIndex) {
+inline struct FVertexID UEditableMesh::MakeVertexID(int32_t VertexIndex) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.MakeVertexID");
 
 	struct MakeVertexID_Params {
 		int32_t VertexIndex;
-		struct Unknown ReturnValue;
+		struct FVertexID ReturnValue;
 
 	}; MakeVertexID_Params Params;
 
@@ -973,12 +973,12 @@ inline struct Unknown UEditableMesh::MakeVertexID(int32_t VertexIndex) {
 }
 
 // Function EditableMesh.EditableMesh.MakePolygonID
-inline struct Unknown UEditableMesh::MakePolygonID(int32_t PolygonIndex) {
+inline struct FPolygonID UEditableMesh::MakePolygonID(int32_t PolygonIndex) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.MakePolygonID");
 
 	struct MakePolygonID_Params {
 		int32_t PolygonIndex;
-		struct Unknown ReturnValue;
+		struct FPolygonID ReturnValue;
 
 	}; MakePolygonID_Params Params;
 
@@ -992,12 +992,12 @@ inline struct Unknown UEditableMesh::MakePolygonID(int32_t PolygonIndex) {
 }
 
 // Function EditableMesh.EditableMesh.MakePolygonGroupID
-inline struct Unknown UEditableMesh::MakePolygonGroupID(int32_t PolygonGroupIndex) {
+inline struct FPolygonGroupID UEditableMesh::MakePolygonGroupID(int32_t PolygonGroupIndex) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.MakePolygonGroupID");
 
 	struct MakePolygonGroupID_Params {
 		int32_t PolygonGroupIndex;
-		struct Unknown ReturnValue;
+		struct FPolygonGroupID ReturnValue;
 
 	}; MakePolygonGroupID_Params Params;
 
@@ -1011,12 +1011,12 @@ inline struct Unknown UEditableMesh::MakePolygonGroupID(int32_t PolygonGroupInde
 }
 
 // Function EditableMesh.EditableMesh.MakeEdgeID
-inline struct Unknown UEditableMesh::MakeEdgeID(int32_t EdgeIndex) {
+inline struct FEdgeID UEditableMesh::MakeEdgeID(int32_t EdgeIndex) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.MakeEdgeID");
 
 	struct MakeEdgeID_Params {
 		int32_t EdgeIndex;
-		struct Unknown ReturnValue;
+		struct FEdgeID ReturnValue;
 
 	}; MakeEdgeID_Params Params;
 
@@ -1030,11 +1030,11 @@ inline struct Unknown UEditableMesh::MakeEdgeID(int32_t EdgeIndex) {
 }
 
 // Function EditableMesh.EditableMesh.IsValidVertex
-inline char UEditableMesh::IsValidVertex(struct Unknown VertexID) {
+inline char UEditableMesh::IsValidVertex(struct FVertexID VertexID) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.IsValidVertex");
 
 	struct IsValidVertex_Params {
-		struct Unknown VertexID;
+		struct FVertexID VertexID;
 		char ReturnValue;
 
 	}; IsValidVertex_Params Params;
@@ -1049,11 +1049,11 @@ inline char UEditableMesh::IsValidVertex(struct Unknown VertexID) {
 }
 
 // Function EditableMesh.EditableMesh.IsValidPolygonGroup
-inline char UEditableMesh::IsValidPolygonGroup(struct Unknown PolygonGroupID) {
+inline char UEditableMesh::IsValidPolygonGroup(struct FPolygonGroupID PolygonGroupID) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.IsValidPolygonGroup");
 
 	struct IsValidPolygonGroup_Params {
-		struct Unknown PolygonGroupID;
+		struct FPolygonGroupID PolygonGroupID;
 		char ReturnValue;
 
 	}; IsValidPolygonGroup_Params Params;
@@ -1068,11 +1068,11 @@ inline char UEditableMesh::IsValidPolygonGroup(struct Unknown PolygonGroupID) {
 }
 
 // Function EditableMesh.EditableMesh.IsValidPolygon
-inline char UEditableMesh::IsValidPolygon(struct Unknown PolygonID) {
+inline char UEditableMesh::IsValidPolygon(struct FPolygonID PolygonID) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.IsValidPolygon");
 
 	struct IsValidPolygon_Params {
-		struct Unknown PolygonID;
+		struct FPolygonID PolygonID;
 		char ReturnValue;
 
 	}; IsValidPolygon_Params Params;
@@ -1087,11 +1087,11 @@ inline char UEditableMesh::IsValidPolygon(struct Unknown PolygonID) {
 }
 
 // Function EditableMesh.EditableMesh.IsValidEdge
-inline char UEditableMesh::IsValidEdge(struct Unknown EdgeID) {
+inline char UEditableMesh::IsValidEdge(struct FEdgeID EdgeID) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.IsValidEdge");
 
 	struct IsValidEdge_Params {
-		struct Unknown EdgeID;
+		struct FEdgeID EdgeID;
 		char ReturnValue;
 
 	}; IsValidEdge_Params Params;
@@ -1160,11 +1160,11 @@ inline char UEditableMesh::IsPreviewingSubdivisions() {
 }
 
 // Function EditableMesh.EditableMesh.IsOrphanedVertex
-inline char UEditableMesh::IsOrphanedVertex(struct Unknown VertexID) {
+inline char UEditableMesh::IsOrphanedVertex(struct FVertexID VertexID) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.IsOrphanedVertex");
 
 	struct IsOrphanedVertex_Params {
-		struct Unknown VertexID;
+		struct FVertexID VertexID;
 		char ReturnValue;
 
 	}; IsOrphanedVertex_Params Params;
@@ -1251,12 +1251,12 @@ inline char UEditableMesh::IsBeingModified() {
 }
 
 // Function EditableMesh.EditableMesh.InvalidVertexID
-inline struct Unknown UEditableMesh::InvalidVertexID() {
+inline struct FVertexID UEditableMesh::InvalidVertexID() {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.InvalidVertexID");
 
 	struct InvalidVertexID_Params {
 		
-		struct Unknown ReturnValue;
+		struct FVertexID ReturnValue;
 
 	}; InvalidVertexID_Params Params;
 
@@ -1269,12 +1269,12 @@ inline struct Unknown UEditableMesh::InvalidVertexID() {
 }
 
 // Function EditableMesh.EditableMesh.InvalidPolygonID
-inline struct Unknown UEditableMesh::InvalidPolygonID() {
+inline struct FPolygonID UEditableMesh::InvalidPolygonID() {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.InvalidPolygonID");
 
 	struct InvalidPolygonID_Params {
 		
-		struct Unknown ReturnValue;
+		struct FPolygonID ReturnValue;
 
 	}; InvalidPolygonID_Params Params;
 
@@ -1287,12 +1287,12 @@ inline struct Unknown UEditableMesh::InvalidPolygonID() {
 }
 
 // Function EditableMesh.EditableMesh.InvalidPolygonGroupID
-inline struct Unknown UEditableMesh::InvalidPolygonGroupID() {
+inline struct FPolygonGroupID UEditableMesh::InvalidPolygonGroupID() {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.InvalidPolygonGroupID");
 
 	struct InvalidPolygonGroupID_Params {
 		
-		struct Unknown ReturnValue;
+		struct FPolygonGroupID ReturnValue;
 
 	}; InvalidPolygonGroupID_Params Params;
 
@@ -1305,12 +1305,12 @@ inline struct Unknown UEditableMesh::InvalidPolygonGroupID() {
 }
 
 // Function EditableMesh.EditableMesh.InvalidEdgeID
-inline struct Unknown UEditableMesh::InvalidEdgeID() {
+inline struct FEdgeID UEditableMesh::InvalidEdgeID() {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.InvalidEdgeID");
 
 	struct InvalidEdgeID_Params {
 		
-		struct Unknown ReturnValue;
+		struct FEdgeID ReturnValue;
 
 	}; InvalidEdgeID_Params Params;
 
@@ -1323,16 +1323,16 @@ inline struct Unknown UEditableMesh::InvalidEdgeID() {
 }
 
 // Function EditableMesh.EditableMesh.InsetPolygons
-inline void UEditableMesh::InsetPolygons(struct TArray<Unknown>& PolygonIDs, float InsetFixedDistance, float InsetProgressTowardCenter, enum class Unknow Mode, struct TArray<Unknown>& OutNewCenterPolygonIDs, struct TArray<Unknown>& OutNewSidePolygonIDs) {
+inline void UEditableMesh::InsetPolygons(struct TArray<struct FPolygonID>& PolygonIDs, float InsetFixedDistance, float InsetProgressTowardCenter, enum class EInsetPolygonsMode Mode, struct TArray<struct FPolygonID>& OutNewCenterPolygonIDs, struct TArray<struct FPolygonID>& OutNewSidePolygonIDs) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.InsetPolygons");
 
 	struct InsetPolygons_Params {
-		struct TArray<Unknown>& PolygonIDs;
+		struct TArray<struct FPolygonID>& PolygonIDs;
 		float InsetFixedDistance;
 		float InsetProgressTowardCenter;
-		enum class Unknow Mode;
-		struct TArray<Unknown>& OutNewCenterPolygonIDs;
-		struct TArray<Unknown>& OutNewSidePolygonIDs;
+		enum class EInsetPolygonsMode Mode;
+		struct TArray<struct FPolygonID>& OutNewCenterPolygonIDs;
+		struct TArray<struct FPolygonID>& OutNewSidePolygonIDs;
 	}; InsetPolygons_Params Params;
 
 	Params.InsetFixedDistance = InsetFixedDistance;
@@ -1350,13 +1350,13 @@ inline void UEditableMesh::InsetPolygons(struct TArray<Unknown>& PolygonIDs, flo
 }
 
 // Function EditableMesh.EditableMesh.InsertEdgeLoop
-inline void UEditableMesh::InsertEdgeLoop(struct Unknown EdgeID, struct TArray<Unknown>& Splits, struct TArray<Unknown>& OutNewEdgeIDs) {
+inline void UEditableMesh::InsertEdgeLoop(struct FEdgeID EdgeID, struct TArray<float>& Splits, struct TArray<struct FEdgeID>& OutNewEdgeIDs) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.InsertEdgeLoop");
 
 	struct InsertEdgeLoop_Params {
-		struct Unknown EdgeID;
-		struct TArray<Unknown>& Splits;
-		struct TArray<Unknown>& OutNewEdgeIDs;
+		struct FEdgeID EdgeID;
+		struct TArray<float>& Splits;
+		struct TArray<struct FEdgeID>& OutNewEdgeIDs;
 	}; InsertEdgeLoop_Params Params;
 
 	Params.EdgeID = EdgeID;
@@ -1385,14 +1385,14 @@ inline void UEditableMesh::InitializeAdapters() {
 }
 
 // Function EditableMesh.EditableMesh.GetVertexPairEdge
-inline struct Unknown UEditableMesh::GetVertexPairEdge(struct Unknown VertexID, struct Unknown NextVertexID, char& bOutEdgeWindingIsReversed) {
+inline struct FEdgeID UEditableMesh::GetVertexPairEdge(struct FVertexID VertexID, struct FVertexID NextVertexID, char& bOutEdgeWindingIsReversed) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.GetVertexPairEdge");
 
 	struct GetVertexPairEdge_Params {
-		struct Unknown VertexID;
-		struct Unknown NextVertexID;
+		struct FVertexID VertexID;
+		struct FVertexID NextVertexID;
 		char& bOutEdgeWindingIsReversed;
-		struct Unknown ReturnValue;
+		struct FEdgeID ReturnValue;
 
 	}; GetVertexPairEdge_Params Params;
 
@@ -1410,12 +1410,12 @@ inline struct Unknown UEditableMesh::GetVertexPairEdge(struct Unknown VertexID, 
 }
 
 // Function EditableMesh.EditableMesh.GetVertexInstanceVertex
-inline struct Unknown UEditableMesh::GetVertexInstanceVertex(struct Unknown VertexInstanceID) {
+inline struct FVertexID UEditableMesh::GetVertexInstanceVertex(struct FVertexInstanceID VertexInstanceID) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.GetVertexInstanceVertex");
 
 	struct GetVertexInstanceVertex_Params {
-		struct Unknown VertexInstanceID;
-		struct Unknown ReturnValue;
+		struct FVertexInstanceID VertexInstanceID;
+		struct FVertexID ReturnValue;
 
 	}; GetVertexInstanceVertex_Params Params;
 
@@ -1447,12 +1447,12 @@ inline int32_t UEditableMesh::GetVertexInstanceCount() {
 }
 
 // Function EditableMesh.EditableMesh.GetVertexInstanceConnectedPolygons
-inline void UEditableMesh::GetVertexInstanceConnectedPolygons(struct Unknown VertexInstanceID, struct TArray<Unknown>& OutConnectedPolygonIDs) {
+inline void UEditableMesh::GetVertexInstanceConnectedPolygons(struct FVertexInstanceID VertexInstanceID, struct TArray<struct FPolygonID>& OutConnectedPolygonIDs) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.GetVertexInstanceConnectedPolygons");
 
 	struct GetVertexInstanceConnectedPolygons_Params {
-		struct Unknown VertexInstanceID;
-		struct TArray<Unknown>& OutConnectedPolygonIDs;
+		struct FVertexInstanceID VertexInstanceID;
+		struct TArray<struct FPolygonID>& OutConnectedPolygonIDs;
 	}; GetVertexInstanceConnectedPolygons_Params Params;
 
 	Params.VertexInstanceID = VertexInstanceID;
@@ -1466,11 +1466,11 @@ inline void UEditableMesh::GetVertexInstanceConnectedPolygons(struct Unknown Ver
 }
 
 // Function EditableMesh.EditableMesh.GetVertexInstanceConnectedPolygonCount
-inline int32_t UEditableMesh::GetVertexInstanceConnectedPolygonCount(struct Unknown VertexInstanceID) {
+inline int32_t UEditableMesh::GetVertexInstanceConnectedPolygonCount(struct FVertexInstanceID VertexInstanceID) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.GetVertexInstanceConnectedPolygonCount");
 
 	struct GetVertexInstanceConnectedPolygonCount_Params {
-		struct Unknown VertexInstanceID;
+		struct FVertexInstanceID VertexInstanceID;
 		int32_t ReturnValue;
 
 	}; GetVertexInstanceConnectedPolygonCount_Params Params;
@@ -1485,13 +1485,13 @@ inline int32_t UEditableMesh::GetVertexInstanceConnectedPolygonCount(struct Unkn
 }
 
 // Function EditableMesh.EditableMesh.GetVertexInstanceConnectedPolygon
-inline struct Unknown UEditableMesh::GetVertexInstanceConnectedPolygon(struct Unknown VertexInstanceID, int32_t ConnectedPolygonNumber) {
+inline struct FPolygonID UEditableMesh::GetVertexInstanceConnectedPolygon(struct FVertexInstanceID VertexInstanceID, int32_t ConnectedPolygonNumber) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.GetVertexInstanceConnectedPolygon");
 
 	struct GetVertexInstanceConnectedPolygon_Params {
-		struct Unknown VertexInstanceID;
+		struct FVertexInstanceID VertexInstanceID;
 		int32_t ConnectedPolygonNumber;
-		struct Unknown ReturnValue;
+		struct FPolygonID ReturnValue;
 
 	}; GetVertexInstanceConnectedPolygon_Params Params;
 
@@ -1524,12 +1524,12 @@ inline int32_t UEditableMesh::GetVertexCount() {
 }
 
 // Function EditableMesh.EditableMesh.GetVertexConnectedPolygons
-inline void UEditableMesh::GetVertexConnectedPolygons(struct Unknown VertexID, struct TArray<Unknown>& OutConnectedPolygonIDs) {
+inline void UEditableMesh::GetVertexConnectedPolygons(struct FVertexID VertexID, struct TArray<struct FPolygonID>& OutConnectedPolygonIDs) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.GetVertexConnectedPolygons");
 
 	struct GetVertexConnectedPolygons_Params {
-		struct Unknown VertexID;
-		struct TArray<Unknown>& OutConnectedPolygonIDs;
+		struct FVertexID VertexID;
+		struct TArray<struct FPolygonID>& OutConnectedPolygonIDs;
 	}; GetVertexConnectedPolygons_Params Params;
 
 	Params.VertexID = VertexID;
@@ -1543,12 +1543,12 @@ inline void UEditableMesh::GetVertexConnectedPolygons(struct Unknown VertexID, s
 }
 
 // Function EditableMesh.EditableMesh.GetVertexConnectedEdges
-inline void UEditableMesh::GetVertexConnectedEdges(struct Unknown VertexID, struct TArray<Unknown>& OutConnectedEdgeIDs) {
+inline void UEditableMesh::GetVertexConnectedEdges(struct FVertexID VertexID, struct TArray<struct FEdgeID>& OutConnectedEdgeIDs) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.GetVertexConnectedEdges");
 
 	struct GetVertexConnectedEdges_Params {
-		struct Unknown VertexID;
-		struct TArray<Unknown>& OutConnectedEdgeIDs;
+		struct FVertexID VertexID;
+		struct TArray<struct FEdgeID>& OutConnectedEdgeIDs;
 	}; GetVertexConnectedEdges_Params Params;
 
 	Params.VertexID = VertexID;
@@ -1562,11 +1562,11 @@ inline void UEditableMesh::GetVertexConnectedEdges(struct Unknown VertexID, stru
 }
 
 // Function EditableMesh.EditableMesh.GetVertexConnectedEdgeCount
-inline int32_t UEditableMesh::GetVertexConnectedEdgeCount(struct Unknown VertexID) {
+inline int32_t UEditableMesh::GetVertexConnectedEdgeCount(struct FVertexID VertexID) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.GetVertexConnectedEdgeCount");
 
 	struct GetVertexConnectedEdgeCount_Params {
-		struct Unknown VertexID;
+		struct FVertexID VertexID;
 		int32_t ReturnValue;
 
 	}; GetVertexConnectedEdgeCount_Params Params;
@@ -1581,13 +1581,13 @@ inline int32_t UEditableMesh::GetVertexConnectedEdgeCount(struct Unknown VertexI
 }
 
 // Function EditableMesh.EditableMesh.GetVertexConnectedEdge
-inline struct Unknown UEditableMesh::GetVertexConnectedEdge(struct Unknown VertexID, int32_t ConnectedEdgeNumber) {
+inline struct FEdgeID UEditableMesh::GetVertexConnectedEdge(struct FVertexID VertexID, int32_t ConnectedEdgeNumber) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.GetVertexConnectedEdge");
 
 	struct GetVertexConnectedEdge_Params {
-		struct Unknown VertexID;
+		struct FVertexID VertexID;
 		int32_t ConnectedEdgeNumber;
-		struct Unknown ReturnValue;
+		struct FEdgeID ReturnValue;
 
 	}; GetVertexConnectedEdge_Params Params;
 
@@ -1602,12 +1602,12 @@ inline struct Unknown UEditableMesh::GetVertexConnectedEdge(struct Unknown Verte
 }
 
 // Function EditableMesh.EditableMesh.GetVertexAdjacentVertices
-inline void UEditableMesh::GetVertexAdjacentVertices(struct Unknown VertexID, struct TArray<Unknown>& OutAdjacentVertexIDs) {
+inline void UEditableMesh::GetVertexAdjacentVertices(struct FVertexID VertexID, struct TArray<struct FVertexID>& OutAdjacentVertexIDs) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.GetVertexAdjacentVertices");
 
 	struct GetVertexAdjacentVertices_Params {
-		struct Unknown VertexID;
-		struct TArray<Unknown>& OutAdjacentVertexIDs;
+		struct FVertexID VertexID;
+		struct TArray<struct FVertexID>& OutAdjacentVertexIDs;
 	}; GetVertexAdjacentVertices_Params Params;
 
 	Params.VertexID = VertexID;
@@ -1639,12 +1639,12 @@ inline int32_t UEditableMesh::GetTextureCoordinateCount() {
 }
 
 // Function EditableMesh.EditableMesh.GetSubdivisionLimitData
-inline struct Unknown UEditableMesh::GetSubdivisionLimitData() {
+inline struct FSubdivisionLimitData UEditableMesh::GetSubdivisionLimitData() {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.GetSubdivisionLimitData");
 
 	struct GetSubdivisionLimitData_Params {
 		
-		struct Unknown ReturnValue;
+		struct FSubdivisionLimitData ReturnValue;
 
 	}; GetSubdivisionLimitData_Params Params;
 
@@ -1675,11 +1675,11 @@ inline int32_t UEditableMesh::GetSubdivisionCount() {
 }
 
 // Function EditableMesh.EditableMesh.GetPolygonTriangulatedTriangleCount
-inline int32_t UEditableMesh::GetPolygonTriangulatedTriangleCount(struct Unknown PolygonID) {
+inline int32_t UEditableMesh::GetPolygonTriangulatedTriangleCount(struct FPolygonID PolygonID) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.GetPolygonTriangulatedTriangleCount");
 
 	struct GetPolygonTriangulatedTriangleCount_Params {
-		struct Unknown PolygonID;
+		struct FPolygonID PolygonID;
 		int32_t ReturnValue;
 
 	}; GetPolygonTriangulatedTriangleCount_Params Params;
@@ -1694,13 +1694,13 @@ inline int32_t UEditableMesh::GetPolygonTriangulatedTriangleCount(struct Unknown
 }
 
 // Function EditableMesh.EditableMesh.GetPolygonTriangulatedTriangle
-inline struct Unknown UEditableMesh::GetPolygonTriangulatedTriangle(struct Unknown PolygonID, int32_t PolygonTriangleNumber) {
+inline struct FTriangleID UEditableMesh::GetPolygonTriangulatedTriangle(struct FPolygonID PolygonID, int32_t PolygonTriangleNumber) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.GetPolygonTriangulatedTriangle");
 
 	struct GetPolygonTriangulatedTriangle_Params {
-		struct Unknown PolygonID;
+		struct FPolygonID PolygonID;
 		int32_t PolygonTriangleNumber;
-		struct Unknown ReturnValue;
+		struct FTriangleID ReturnValue;
 
 	}; GetPolygonTriangulatedTriangle_Params Params;
 
@@ -1715,12 +1715,12 @@ inline struct Unknown UEditableMesh::GetPolygonTriangulatedTriangle(struct Unkno
 }
 
 // Function EditableMesh.EditableMesh.GetPolygonPerimeterVertices
-inline void UEditableMesh::GetPolygonPerimeterVertices(struct Unknown PolygonID, struct TArray<Unknown>& OutPolygonPerimeterVertexIDs) {
+inline void UEditableMesh::GetPolygonPerimeterVertices(struct FPolygonID PolygonID, struct TArray<struct FVertexID>& OutPolygonPerimeterVertexIDs) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.GetPolygonPerimeterVertices");
 
 	struct GetPolygonPerimeterVertices_Params {
-		struct Unknown PolygonID;
-		struct TArray<Unknown>& OutPolygonPerimeterVertexIDs;
+		struct FPolygonID PolygonID;
+		struct TArray<struct FVertexID>& OutPolygonPerimeterVertexIDs;
 	}; GetPolygonPerimeterVertices_Params Params;
 
 	Params.PolygonID = PolygonID;
@@ -1734,12 +1734,12 @@ inline void UEditableMesh::GetPolygonPerimeterVertices(struct Unknown PolygonID,
 }
 
 // Function EditableMesh.EditableMesh.GetPolygonPerimeterVertexInstances
-inline void UEditableMesh::GetPolygonPerimeterVertexInstances(struct Unknown PolygonID, struct TArray<Unknown>& OutPolygonPerimeterVertexInstanceIDs) {
+inline void UEditableMesh::GetPolygonPerimeterVertexInstances(struct FPolygonID PolygonID, struct TArray<struct FVertexInstanceID>& OutPolygonPerimeterVertexInstanceIDs) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.GetPolygonPerimeterVertexInstances");
 
 	struct GetPolygonPerimeterVertexInstances_Params {
-		struct Unknown PolygonID;
-		struct TArray<Unknown>& OutPolygonPerimeterVertexInstanceIDs;
+		struct FPolygonID PolygonID;
+		struct TArray<struct FVertexInstanceID>& OutPolygonPerimeterVertexInstanceIDs;
 	}; GetPolygonPerimeterVertexInstances_Params Params;
 
 	Params.PolygonID = PolygonID;
@@ -1753,13 +1753,13 @@ inline void UEditableMesh::GetPolygonPerimeterVertexInstances(struct Unknown Pol
 }
 
 // Function EditableMesh.EditableMesh.GetPolygonPerimeterVertexInstance
-inline struct Unknown UEditableMesh::GetPolygonPerimeterVertexInstance(struct Unknown PolygonID, int32_t PolygonVertexNumber) {
+inline struct FVertexInstanceID UEditableMesh::GetPolygonPerimeterVertexInstance(struct FPolygonID PolygonID, int32_t PolygonVertexNumber) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.GetPolygonPerimeterVertexInstance");
 
 	struct GetPolygonPerimeterVertexInstance_Params {
-		struct Unknown PolygonID;
+		struct FPolygonID PolygonID;
 		int32_t PolygonVertexNumber;
-		struct Unknown ReturnValue;
+		struct FVertexInstanceID ReturnValue;
 
 	}; GetPolygonPerimeterVertexInstance_Params Params;
 
@@ -1774,11 +1774,11 @@ inline struct Unknown UEditableMesh::GetPolygonPerimeterVertexInstance(struct Un
 }
 
 // Function EditableMesh.EditableMesh.GetPolygonPerimeterVertexCount
-inline int32_t UEditableMesh::GetPolygonPerimeterVertexCount(struct Unknown PolygonID) {
+inline int32_t UEditableMesh::GetPolygonPerimeterVertexCount(struct FPolygonID PolygonID) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.GetPolygonPerimeterVertexCount");
 
 	struct GetPolygonPerimeterVertexCount_Params {
-		struct Unknown PolygonID;
+		struct FPolygonID PolygonID;
 		int32_t ReturnValue;
 
 	}; GetPolygonPerimeterVertexCount_Params Params;
@@ -1793,13 +1793,13 @@ inline int32_t UEditableMesh::GetPolygonPerimeterVertexCount(struct Unknown Poly
 }
 
 // Function EditableMesh.EditableMesh.GetPolygonPerimeterVertex
-inline struct Unknown UEditableMesh::GetPolygonPerimeterVertex(struct Unknown PolygonID, int32_t PolygonVertexNumber) {
+inline struct FVertexID UEditableMesh::GetPolygonPerimeterVertex(struct FPolygonID PolygonID, int32_t PolygonVertexNumber) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.GetPolygonPerimeterVertex");
 
 	struct GetPolygonPerimeterVertex_Params {
-		struct Unknown PolygonID;
+		struct FPolygonID PolygonID;
 		int32_t PolygonVertexNumber;
-		struct Unknown ReturnValue;
+		struct FVertexID ReturnValue;
 
 	}; GetPolygonPerimeterVertex_Params Params;
 
@@ -1814,12 +1814,12 @@ inline struct Unknown UEditableMesh::GetPolygonPerimeterVertex(struct Unknown Po
 }
 
 // Function EditableMesh.EditableMesh.GetPolygonPerimeterEdges
-inline void UEditableMesh::GetPolygonPerimeterEdges(struct Unknown PolygonID, struct TArray<Unknown>& OutPolygonPerimeterEdgeIDs) {
+inline void UEditableMesh::GetPolygonPerimeterEdges(struct FPolygonID PolygonID, struct TArray<struct FEdgeID>& OutPolygonPerimeterEdgeIDs) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.GetPolygonPerimeterEdges");
 
 	struct GetPolygonPerimeterEdges_Params {
-		struct Unknown PolygonID;
-		struct TArray<Unknown>& OutPolygonPerimeterEdgeIDs;
+		struct FPolygonID PolygonID;
+		struct TArray<struct FEdgeID>& OutPolygonPerimeterEdgeIDs;
 	}; GetPolygonPerimeterEdges_Params Params;
 
 	Params.PolygonID = PolygonID;
@@ -1833,11 +1833,11 @@ inline void UEditableMesh::GetPolygonPerimeterEdges(struct Unknown PolygonID, st
 }
 
 // Function EditableMesh.EditableMesh.GetPolygonPerimeterEdgeCount
-inline int32_t UEditableMesh::GetPolygonPerimeterEdgeCount(struct Unknown PolygonID) {
+inline int32_t UEditableMesh::GetPolygonPerimeterEdgeCount(struct FPolygonID PolygonID) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.GetPolygonPerimeterEdgeCount");
 
 	struct GetPolygonPerimeterEdgeCount_Params {
-		struct Unknown PolygonID;
+		struct FPolygonID PolygonID;
 		int32_t ReturnValue;
 
 	}; GetPolygonPerimeterEdgeCount_Params Params;
@@ -1852,14 +1852,14 @@ inline int32_t UEditableMesh::GetPolygonPerimeterEdgeCount(struct Unknown Polygo
 }
 
 // Function EditableMesh.EditableMesh.GetPolygonPerimeterEdge
-inline struct Unknown UEditableMesh::GetPolygonPerimeterEdge(struct Unknown PolygonID, int32_t PerimeterEdgeNumber, char& bOutEdgeWindingIsReversedForPolygon) {
+inline struct FEdgeID UEditableMesh::GetPolygonPerimeterEdge(struct FPolygonID PolygonID, int32_t PerimeterEdgeNumber, char& bOutEdgeWindingIsReversedForPolygon) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.GetPolygonPerimeterEdge");
 
 	struct GetPolygonPerimeterEdge_Params {
-		struct Unknown PolygonID;
+		struct FPolygonID PolygonID;
 		int32_t PerimeterEdgeNumber;
 		char& bOutEdgeWindingIsReversedForPolygon;
-		struct Unknown ReturnValue;
+		struct FEdgeID ReturnValue;
 
 	}; GetPolygonPerimeterEdge_Params Params;
 
@@ -1877,13 +1877,13 @@ inline struct Unknown UEditableMesh::GetPolygonPerimeterEdge(struct Unknown Poly
 }
 
 // Function EditableMesh.EditableMesh.GetPolygonInGroup
-inline struct Unknown UEditableMesh::GetPolygonInGroup(struct Unknown PolygonGroupID, int32_t PolygonNumber) {
+inline struct FPolygonID UEditableMesh::GetPolygonInGroup(struct FPolygonGroupID PolygonGroupID, int32_t PolygonNumber) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.GetPolygonInGroup");
 
 	struct GetPolygonInGroup_Params {
-		struct Unknown PolygonGroupID;
+		struct FPolygonGroupID PolygonGroupID;
 		int32_t PolygonNumber;
-		struct Unknown ReturnValue;
+		struct FPolygonID ReturnValue;
 
 	}; GetPolygonInGroup_Params Params;
 
@@ -1916,11 +1916,11 @@ inline int32_t UEditableMesh::GetPolygonGroupCount() {
 }
 
 // Function EditableMesh.EditableMesh.GetPolygonCountInGroup
-inline int32_t UEditableMesh::GetPolygonCountInGroup(struct Unknown PolygonGroupID) {
+inline int32_t UEditableMesh::GetPolygonCountInGroup(struct FPolygonGroupID PolygonGroupID) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.GetPolygonCountInGroup");
 
 	struct GetPolygonCountInGroup_Params {
-		struct Unknown PolygonGroupID;
+		struct FPolygonGroupID PolygonGroupID;
 		int32_t ReturnValue;
 
 	}; GetPolygonCountInGroup_Params Params;
@@ -1953,12 +1953,12 @@ inline int32_t UEditableMesh::GetPolygonCount() {
 }
 
 // Function EditableMesh.EditableMesh.GetPolygonAdjacentPolygons
-inline void UEditableMesh::GetPolygonAdjacentPolygons(struct Unknown PolygonID, struct TArray<Unknown>& OutAdjacentPolygons) {
+inline void UEditableMesh::GetPolygonAdjacentPolygons(struct FPolygonID PolygonID, struct TArray<struct FPolygonID>& OutAdjacentPolygons) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.GetPolygonAdjacentPolygons");
 
 	struct GetPolygonAdjacentPolygons_Params {
-		struct Unknown PolygonID;
-		struct TArray<Unknown>& OutAdjacentPolygons;
+		struct FPolygonID PolygonID;
+		struct TArray<struct FPolygonID>& OutAdjacentPolygons;
 	}; GetPolygonAdjacentPolygons_Params Params;
 
 	Params.PolygonID = PolygonID;
@@ -1972,12 +1972,12 @@ inline void UEditableMesh::GetPolygonAdjacentPolygons(struct Unknown PolygonID, 
 }
 
 // Function EditableMesh.EditableMesh.GetGroupForPolygon
-inline struct Unknown UEditableMesh::GetGroupForPolygon(struct Unknown PolygonID) {
+inline struct FPolygonGroupID UEditableMesh::GetGroupForPolygon(struct FPolygonID PolygonID) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.GetGroupForPolygon");
 
 	struct GetGroupForPolygon_Params {
-		struct Unknown PolygonID;
-		struct Unknown ReturnValue;
+		struct FPolygonID PolygonID;
+		struct FPolygonGroupID ReturnValue;
 
 	}; GetGroupForPolygon_Params Params;
 
@@ -1991,12 +1991,12 @@ inline struct Unknown UEditableMesh::GetGroupForPolygon(struct Unknown PolygonID
 }
 
 // Function EditableMesh.EditableMesh.GetFirstValidPolygonGroup
-inline struct Unknown UEditableMesh::GetFirstValidPolygonGroup() {
+inline struct FPolygonGroupID UEditableMesh::GetFirstValidPolygonGroup() {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.GetFirstValidPolygonGroup");
 
 	struct GetFirstValidPolygonGroup_Params {
 		
-		struct Unknown ReturnValue;
+		struct FPolygonGroupID ReturnValue;
 
 	}; GetFirstValidPolygonGroup_Params Params;
 
@@ -2009,13 +2009,13 @@ inline struct Unknown UEditableMesh::GetFirstValidPolygonGroup() {
 }
 
 // Function EditableMesh.EditableMesh.GetEdgeVertices
-inline void UEditableMesh::GetEdgeVertices(struct Unknown EdgeID, struct Unknown& OutEdgeVertexID0, struct Unknown& OutEdgeVertexID1) {
+inline void UEditableMesh::GetEdgeVertices(struct FEdgeID EdgeID, struct FVertexID& OutEdgeVertexID0, struct FVertexID& OutEdgeVertexID1) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.GetEdgeVertices");
 
 	struct GetEdgeVertices_Params {
-		struct Unknown EdgeID;
-		struct Unknown& OutEdgeVertexID0;
-		struct Unknown& OutEdgeVertexID1;
+		struct FEdgeID EdgeID;
+		struct FVertexID& OutEdgeVertexID0;
+		struct FVertexID& OutEdgeVertexID1;
 	}; GetEdgeVertices_Params Params;
 
 	Params.EdgeID = EdgeID;
@@ -2030,13 +2030,13 @@ inline void UEditableMesh::GetEdgeVertices(struct Unknown EdgeID, struct Unknown
 }
 
 // Function EditableMesh.EditableMesh.GetEdgeVertex
-inline struct Unknown UEditableMesh::GetEdgeVertex(struct Unknown EdgeID, int32_t EdgeVertexNumber) {
+inline struct FVertexID UEditableMesh::GetEdgeVertex(struct FEdgeID EdgeID, int32_t EdgeVertexNumber) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.GetEdgeVertex");
 
 	struct GetEdgeVertex_Params {
-		struct Unknown EdgeID;
+		struct FEdgeID EdgeID;
 		int32_t EdgeVertexNumber;
-		struct Unknown ReturnValue;
+		struct FVertexID ReturnValue;
 
 	}; GetEdgeVertex_Params Params;
 
@@ -2051,13 +2051,13 @@ inline struct Unknown UEditableMesh::GetEdgeVertex(struct Unknown EdgeID, int32_
 }
 
 // Function EditableMesh.EditableMesh.GetEdgeThatConnectsVertices
-inline struct Unknown UEditableMesh::GetEdgeThatConnectsVertices(struct Unknown VertexID0, struct Unknown VertexID1) {
+inline struct FEdgeID UEditableMesh::GetEdgeThatConnectsVertices(struct FVertexID VertexID0, struct FVertexID VertexID1) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.GetEdgeThatConnectsVertices");
 
 	struct GetEdgeThatConnectsVertices_Params {
-		struct Unknown VertexID0;
-		struct Unknown VertexID1;
-		struct Unknown ReturnValue;
+		struct FVertexID VertexID0;
+		struct FVertexID VertexID1;
+		struct FEdgeID ReturnValue;
 
 	}; GetEdgeThatConnectsVertices_Params Params;
 
@@ -2072,12 +2072,12 @@ inline struct Unknown UEditableMesh::GetEdgeThatConnectsVertices(struct Unknown 
 }
 
 // Function EditableMesh.EditableMesh.GetEdgeLoopElements
-inline void UEditableMesh::GetEdgeLoopElements(struct Unknown EdgeID, struct TArray<Unknown>& EdgeLoopIDs) {
+inline void UEditableMesh::GetEdgeLoopElements(struct FEdgeID EdgeID, struct TArray<struct FEdgeID>& EdgeLoopIDs) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.GetEdgeLoopElements");
 
 	struct GetEdgeLoopElements_Params {
-		struct Unknown EdgeID;
-		struct TArray<Unknown>& EdgeLoopIDs;
+		struct FEdgeID EdgeID;
+		struct TArray<struct FEdgeID>& EdgeLoopIDs;
 	}; GetEdgeLoopElements_Params Params;
 
 	Params.EdgeID = EdgeID;
@@ -2109,12 +2109,12 @@ inline int32_t UEditableMesh::GetEdgeCount() {
 }
 
 // Function EditableMesh.EditableMesh.GetEdgeConnectedPolygons
-inline void UEditableMesh::GetEdgeConnectedPolygons(struct Unknown EdgeID, struct TArray<Unknown>& OutConnectedPolygonIDs) {
+inline void UEditableMesh::GetEdgeConnectedPolygons(struct FEdgeID EdgeID, struct TArray<struct FPolygonID>& OutConnectedPolygonIDs) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.GetEdgeConnectedPolygons");
 
 	struct GetEdgeConnectedPolygons_Params {
-		struct Unknown EdgeID;
-		struct TArray<Unknown>& OutConnectedPolygonIDs;
+		struct FEdgeID EdgeID;
+		struct TArray<struct FPolygonID>& OutConnectedPolygonIDs;
 	}; GetEdgeConnectedPolygons_Params Params;
 
 	Params.EdgeID = EdgeID;
@@ -2128,11 +2128,11 @@ inline void UEditableMesh::GetEdgeConnectedPolygons(struct Unknown EdgeID, struc
 }
 
 // Function EditableMesh.EditableMesh.GetEdgeConnectedPolygonCount
-inline int32_t UEditableMesh::GetEdgeConnectedPolygonCount(struct Unknown EdgeID) {
+inline int32_t UEditableMesh::GetEdgeConnectedPolygonCount(struct FEdgeID EdgeID) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.GetEdgeConnectedPolygonCount");
 
 	struct GetEdgeConnectedPolygonCount_Params {
-		struct Unknown EdgeID;
+		struct FEdgeID EdgeID;
 		int32_t ReturnValue;
 
 	}; GetEdgeConnectedPolygonCount_Params Params;
@@ -2147,13 +2147,13 @@ inline int32_t UEditableMesh::GetEdgeConnectedPolygonCount(struct Unknown EdgeID
 }
 
 // Function EditableMesh.EditableMesh.GetEdgeConnectedPolygon
-inline struct Unknown UEditableMesh::GetEdgeConnectedPolygon(struct Unknown EdgeID, int32_t ConnectedPolygonNumber) {
+inline struct FPolygonID UEditableMesh::GetEdgeConnectedPolygon(struct FEdgeID EdgeID, int32_t ConnectedPolygonNumber) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.GetEdgeConnectedPolygon");
 
 	struct GetEdgeConnectedPolygon_Params {
-		struct Unknown EdgeID;
+		struct FEdgeID EdgeID;
 		int32_t ConnectedPolygonNumber;
-		struct Unknown ReturnValue;
+		struct FPolygonID ReturnValue;
 
 	}; GetEdgeConnectedPolygon_Params Params;
 
@@ -2168,11 +2168,11 @@ inline struct Unknown UEditableMesh::GetEdgeConnectedPolygon(struct Unknown Edge
 }
 
 // Function EditableMesh.EditableMesh.GeneratePolygonTangentsAndNormals
-inline void UEditableMesh::GeneratePolygonTangentsAndNormals(struct TArray<Unknown>& PolygonIDs) {
+inline void UEditableMesh::GeneratePolygonTangentsAndNormals(struct TArray<struct FPolygonID>& PolygonIDs) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.GeneratePolygonTangentsAndNormals");
 
 	struct GeneratePolygonTangentsAndNormals_Params {
-		struct TArray<Unknown>& PolygonIDs;
+		struct TArray<struct FPolygonID>& PolygonIDs;
 	}; GeneratePolygonTangentsAndNormals_Params Params;
 
 
@@ -2185,11 +2185,11 @@ inline void UEditableMesh::GeneratePolygonTangentsAndNormals(struct TArray<Unkno
 }
 
 // Function EditableMesh.EditableMesh.FlipPolygons
-inline void UEditableMesh::FlipPolygons(struct TArray<Unknown>& PolygonIDs) {
+inline void UEditableMesh::FlipPolygons(struct TArray<struct FPolygonID>& PolygonIDs) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.FlipPolygons");
 
 	struct FlipPolygons_Params {
-		struct TArray<Unknown>& PolygonIDs;
+		struct TArray<struct FPolygonID>& PolygonIDs;
 	}; FlipPolygons_Params Params;
 
 
@@ -2202,12 +2202,12 @@ inline void UEditableMesh::FlipPolygons(struct TArray<Unknown>& PolygonIDs) {
 }
 
 // Function EditableMesh.EditableMesh.FindPolygonPerimeterVertexNumberForVertex
-inline int32_t UEditableMesh::FindPolygonPerimeterVertexNumberForVertex(struct Unknown PolygonID, struct Unknown VertexID) {
+inline int32_t UEditableMesh::FindPolygonPerimeterVertexNumberForVertex(struct FPolygonID PolygonID, struct FVertexID VertexID) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.FindPolygonPerimeterVertexNumberForVertex");
 
 	struct FindPolygonPerimeterVertexNumberForVertex_Params {
-		struct Unknown PolygonID;
-		struct Unknown VertexID;
+		struct FPolygonID PolygonID;
+		struct FVertexID VertexID;
 		int32_t ReturnValue;
 
 	}; FindPolygonPerimeterVertexNumberForVertex_Params Params;
@@ -2223,13 +2223,13 @@ inline int32_t UEditableMesh::FindPolygonPerimeterVertexNumberForVertex(struct U
 }
 
 // Function EditableMesh.EditableMesh.FindPolygonPerimeterEdgeNumberForVertices
-inline int32_t UEditableMesh::FindPolygonPerimeterEdgeNumberForVertices(struct Unknown PolygonID, struct Unknown EdgeVertexID0, struct Unknown EdgeVertexID1) {
+inline int32_t UEditableMesh::FindPolygonPerimeterEdgeNumberForVertices(struct FPolygonID PolygonID, struct FVertexID EdgeVertexID0, struct FVertexID EdgeVertexID1) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.FindPolygonPerimeterEdgeNumberForVertices");
 
 	struct FindPolygonPerimeterEdgeNumberForVertices_Params {
-		struct Unknown PolygonID;
-		struct Unknown EdgeVertexID0;
-		struct Unknown EdgeVertexID1;
+		struct FPolygonID PolygonID;
+		struct FVertexID EdgeVertexID0;
+		struct FVertexID EdgeVertexID1;
 		int32_t ReturnValue;
 
 	}; FindPolygonPerimeterEdgeNumberForVertices_Params Params;
@@ -2246,15 +2246,15 @@ inline int32_t UEditableMesh::FindPolygonPerimeterEdgeNumberForVertices(struct U
 }
 
 // Function EditableMesh.EditableMesh.FindPolygonLoop
-inline void UEditableMesh::FindPolygonLoop(struct Unknown EdgeID, struct TArray<Unknown>& OutEdgeLoopEdgeIDs, struct TArray<Unknown>& OutFlippedEdgeIDs, struct TArray<Unknown>& OutReversedEdgeIDPathToTake, struct TArray<Unknown>& OutPolygonIDsToSplit) {
+inline void UEditableMesh::FindPolygonLoop(struct FEdgeID EdgeID, struct TArray<struct FEdgeID>& OutEdgeLoopEdgeIDs, struct TArray<struct FEdgeID>& OutFlippedEdgeIDs, struct TArray<struct FEdgeID>& OutReversedEdgeIDPathToTake, struct TArray<struct FPolygonID>& OutPolygonIDsToSplit) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.FindPolygonLoop");
 
 	struct FindPolygonLoop_Params {
-		struct Unknown EdgeID;
-		struct TArray<Unknown>& OutEdgeLoopEdgeIDs;
-		struct TArray<Unknown>& OutFlippedEdgeIDs;
-		struct TArray<Unknown>& OutReversedEdgeIDPathToTake;
-		struct TArray<Unknown>& OutPolygonIDsToSplit;
+		struct FEdgeID EdgeID;
+		struct TArray<struct FEdgeID>& OutEdgeLoopEdgeIDs;
+		struct TArray<struct FEdgeID>& OutFlippedEdgeIDs;
+		struct TArray<struct FEdgeID>& OutReversedEdgeIDPathToTake;
+		struct TArray<struct FPolygonID>& OutPolygonIDsToSplit;
 	}; FindPolygonLoop_Params Params;
 
 	Params.EdgeID = EdgeID;
@@ -2271,14 +2271,14 @@ inline void UEditableMesh::FindPolygonLoop(struct Unknown EdgeID, struct TArray<
 }
 
 // Function EditableMesh.EditableMesh.ExtrudePolygons
-inline void UEditableMesh::ExtrudePolygons(struct TArray<Unknown>& Polygons, float ExtrudeDistance, char bKeepNeighborsTogether, struct TArray<Unknown>& OutNewExtrudedFrontPolygons) {
+inline void UEditableMesh::ExtrudePolygons(struct TArray<struct FPolygonID>& Polygons, float ExtrudeDistance, char bKeepNeighborsTogether, struct TArray<struct FPolygonID>& OutNewExtrudedFrontPolygons) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.ExtrudePolygons");
 
 	struct ExtrudePolygons_Params {
-		struct TArray<Unknown>& Polygons;
+		struct TArray<struct FPolygonID>& Polygons;
 		float ExtrudeDistance;
 		char bKeepNeighborsTogether;
-		struct TArray<Unknown>& OutNewExtrudedFrontPolygons;
+		struct TArray<struct FPolygonID>& OutNewExtrudedFrontPolygons;
 	}; ExtrudePolygons_Params Params;
 
 	Params.ExtrudeDistance = ExtrudeDistance;
@@ -2294,14 +2294,14 @@ inline void UEditableMesh::ExtrudePolygons(struct TArray<Unknown>& Polygons, flo
 }
 
 // Function EditableMesh.EditableMesh.ExtendVertices
-inline void UEditableMesh::ExtendVertices(struct TArray<Unknown>& VertexIDs, char bOnlyExtendClosestEdge, struct Unknown ReferencePosition, struct TArray<Unknown>& OutNewExtendedVertexIDs) {
+inline void UEditableMesh::ExtendVertices(struct TArray<struct FVertexID>& VertexIDs, char bOnlyExtendClosestEdge, struct FVector ReferencePosition, struct TArray<struct FVertexID>& OutNewExtendedVertexIDs) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.ExtendVertices");
 
 	struct ExtendVertices_Params {
-		struct TArray<Unknown>& VertexIDs;
+		struct TArray<struct FVertexID>& VertexIDs;
 		char bOnlyExtendClosestEdge;
-		struct Unknown ReferencePosition;
-		struct TArray<Unknown>& OutNewExtendedVertexIDs;
+		struct FVector ReferencePosition;
+		struct TArray<struct FVertexID>& OutNewExtendedVertexIDs;
 	}; ExtendVertices_Params Params;
 
 	Params.bOnlyExtendClosestEdge = bOnlyExtendClosestEdge;
@@ -2317,13 +2317,13 @@ inline void UEditableMesh::ExtendVertices(struct TArray<Unknown>& VertexIDs, cha
 }
 
 // Function EditableMesh.EditableMesh.ExtendEdges
-inline void UEditableMesh::ExtendEdges(struct TArray<Unknown>& EdgeIDs, char bWeldNeighbors, struct TArray<Unknown>& OutNewExtendedEdgeIDs) {
+inline void UEditableMesh::ExtendEdges(struct TArray<struct FEdgeID>& EdgeIDs, char bWeldNeighbors, struct TArray<struct FEdgeID>& OutNewExtendedEdgeIDs) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.ExtendEdges");
 
 	struct ExtendEdges_Params {
-		struct TArray<Unknown>& EdgeIDs;
+		struct TArray<struct FEdgeID>& EdgeIDs;
 		char bWeldNeighbors;
-		struct TArray<Unknown>& OutNewExtendedEdgeIDs;
+		struct TArray<struct FEdgeID>& OutNewExtendedEdgeIDs;
 	}; ExtendEdges_Params Params;
 
 	Params.bWeldNeighbors = bWeldNeighbors;
@@ -2353,11 +2353,11 @@ inline void UEditableMesh::EndModification(char bFromUndo) {
 }
 
 // Function EditableMesh.EditableMesh.DeleteVertexInstances
-inline void UEditableMesh::DeleteVertexInstances(struct TArray<Unknown>& VertexInstanceIDsToDelete, char bDeleteOrphanedVertices) {
+inline void UEditableMesh::DeleteVertexInstances(struct TArray<struct FVertexInstanceID>& VertexInstanceIDsToDelete, char bDeleteOrphanedVertices) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.DeleteVertexInstances");
 
 	struct DeleteVertexInstances_Params {
-		struct TArray<Unknown>& VertexInstanceIDsToDelete;
+		struct TArray<struct FVertexInstanceID>& VertexInstanceIDsToDelete;
 		char bDeleteOrphanedVertices;
 	}; DeleteVertexInstances_Params Params;
 
@@ -2372,11 +2372,11 @@ inline void UEditableMesh::DeleteVertexInstances(struct TArray<Unknown>& VertexI
 }
 
 // Function EditableMesh.EditableMesh.DeleteVertexAndConnectedEdgesAndPolygons
-inline void UEditableMesh::DeleteVertexAndConnectedEdgesAndPolygons(struct Unknown VertexID, char bDeleteOrphanedEdges, char bDeleteOrphanedVertices, char bDeleteOrphanedVertexInstances, char bDeleteEmptyPolygonGroups) {
+inline void UEditableMesh::DeleteVertexAndConnectedEdgesAndPolygons(struct FVertexID VertexID, char bDeleteOrphanedEdges, char bDeleteOrphanedVertices, char bDeleteOrphanedVertexInstances, char bDeleteEmptyPolygonGroups) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.DeleteVertexAndConnectedEdgesAndPolygons");
 
 	struct DeleteVertexAndConnectedEdgesAndPolygons_Params {
-		struct Unknown VertexID;
+		struct FVertexID VertexID;
 		char bDeleteOrphanedEdges;
 		char bDeleteOrphanedVertices;
 		char bDeleteOrphanedVertexInstances;
@@ -2395,11 +2395,11 @@ inline void UEditableMesh::DeleteVertexAndConnectedEdgesAndPolygons(struct Unkno
 }
 
 // Function EditableMesh.EditableMesh.DeletePolygons
-inline void UEditableMesh::DeletePolygons(struct TArray<Unknown>& PolygonIDsToDelete, char bDeleteOrphanedEdges, char bDeleteOrphanedVertices, char bDeleteOrphanedVertexInstances, char bDeleteEmptyPolygonGroups) {
+inline void UEditableMesh::DeletePolygons(struct TArray<struct FPolygonID>& PolygonIDsToDelete, char bDeleteOrphanedEdges, char bDeleteOrphanedVertices, char bDeleteOrphanedVertexInstances, char bDeleteEmptyPolygonGroups) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.DeletePolygons");
 
 	struct DeletePolygons_Params {
-		struct TArray<Unknown>& PolygonIDsToDelete;
+		struct TArray<struct FPolygonID>& PolygonIDsToDelete;
 		char bDeleteOrphanedEdges;
 		char bDeleteOrphanedVertices;
 		char bDeleteOrphanedVertexInstances;
@@ -2420,11 +2420,11 @@ inline void UEditableMesh::DeletePolygons(struct TArray<Unknown>& PolygonIDsToDe
 }
 
 // Function EditableMesh.EditableMesh.DeletePolygonGroups
-inline void UEditableMesh::DeletePolygonGroups(struct TArray<Unknown>& PolygonGroupIDs) {
+inline void UEditableMesh::DeletePolygonGroups(struct TArray<struct FPolygonGroupID>& PolygonGroupIDs) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.DeletePolygonGroups");
 
 	struct DeletePolygonGroups_Params {
-		struct TArray<Unknown>& PolygonGroupIDs;
+		struct TArray<struct FPolygonGroupID>& PolygonGroupIDs;
 	}; DeletePolygonGroups_Params Params;
 
 
@@ -2437,11 +2437,11 @@ inline void UEditableMesh::DeletePolygonGroups(struct TArray<Unknown>& PolygonGr
 }
 
 // Function EditableMesh.EditableMesh.DeleteOrphanVertices
-inline void UEditableMesh::DeleteOrphanVertices(struct TArray<Unknown>& VertexIDsToDelete) {
+inline void UEditableMesh::DeleteOrphanVertices(struct TArray<struct FVertexID>& VertexIDsToDelete) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.DeleteOrphanVertices");
 
 	struct DeleteOrphanVertices_Params {
-		struct TArray<Unknown>& VertexIDsToDelete;
+		struct TArray<struct FVertexID>& VertexIDsToDelete;
 	}; DeleteOrphanVertices_Params Params;
 
 
@@ -2454,11 +2454,11 @@ inline void UEditableMesh::DeleteOrphanVertices(struct TArray<Unknown>& VertexID
 }
 
 // Function EditableMesh.EditableMesh.DeleteEdges
-inline void UEditableMesh::DeleteEdges(struct TArray<Unknown>& EdgeIDsToDelete, char bDeleteOrphanedVertices) {
+inline void UEditableMesh::DeleteEdges(struct TArray<struct FEdgeID>& EdgeIDsToDelete, char bDeleteOrphanedVertices) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.DeleteEdges");
 
 	struct DeleteEdges_Params {
-		struct TArray<Unknown>& EdgeIDsToDelete;
+		struct TArray<struct FEdgeID>& EdgeIDsToDelete;
 		char bDeleteOrphanedVertices;
 	}; DeleteEdges_Params Params;
 
@@ -2473,11 +2473,11 @@ inline void UEditableMesh::DeleteEdges(struct TArray<Unknown>& EdgeIDsToDelete, 
 }
 
 // Function EditableMesh.EditableMesh.DeleteEdgeAndConnectedPolygons
-inline void UEditableMesh::DeleteEdgeAndConnectedPolygons(struct Unknown EdgeID, char bDeleteOrphanedEdges, char bDeleteOrphanedVertices, char bDeleteOrphanedVertexInstances, char bDeleteEmptyPolygonGroups) {
+inline void UEditableMesh::DeleteEdgeAndConnectedPolygons(struct FEdgeID EdgeID, char bDeleteOrphanedEdges, char bDeleteOrphanedVertices, char bDeleteOrphanedVertexInstances, char bDeleteEmptyPolygonGroups) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.DeleteEdgeAndConnectedPolygons");
 
 	struct DeleteEdgeAndConnectedPolygons_Params {
-		struct Unknown EdgeID;
+		struct FEdgeID EdgeID;
 		char bDeleteOrphanedEdges;
 		char bDeleteOrphanedVertices;
 		char bDeleteOrphanedVertexInstances;
@@ -2496,12 +2496,12 @@ inline void UEditableMesh::DeleteEdgeAndConnectedPolygons(struct Unknown EdgeID,
 }
 
 // Function EditableMesh.EditableMesh.CreateVertices
-inline void UEditableMesh::CreateVertices(struct TArray<Unknown>& VerticesToCreate, struct TArray<Unknown>& OutNewVertexIDs) {
+inline void UEditableMesh::CreateVertices(struct TArray<struct FVertexToCreate>& VerticesToCreate, struct TArray<struct FVertexID>& OutNewVertexIDs) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.CreateVertices");
 
 	struct CreateVertices_Params {
-		struct TArray<Unknown>& VerticesToCreate;
-		struct TArray<Unknown>& OutNewVertexIDs;
+		struct TArray<struct FVertexToCreate>& VerticesToCreate;
+		struct TArray<struct FVertexID>& OutNewVertexIDs;
 	}; CreateVertices_Params Params;
 
 
@@ -2515,12 +2515,12 @@ inline void UEditableMesh::CreateVertices(struct TArray<Unknown>& VerticesToCrea
 }
 
 // Function EditableMesh.EditableMesh.CreateVertexInstances
-inline void UEditableMesh::CreateVertexInstances(struct TArray<Unknown>& VertexInstancesToCreate, struct TArray<Unknown>& OutNewVertexInstanceIDs) {
+inline void UEditableMesh::CreateVertexInstances(struct TArray<struct FVertexInstanceToCreate>& VertexInstancesToCreate, struct TArray<struct FVertexInstanceID>& OutNewVertexInstanceIDs) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.CreateVertexInstances");
 
 	struct CreateVertexInstances_Params {
-		struct TArray<Unknown>& VertexInstancesToCreate;
-		struct TArray<Unknown>& OutNewVertexInstanceIDs;
+		struct TArray<struct FVertexInstanceToCreate>& VertexInstancesToCreate;
+		struct TArray<struct FVertexInstanceID>& OutNewVertexInstanceIDs;
 	}; CreateVertexInstances_Params Params;
 
 
@@ -2534,13 +2534,13 @@ inline void UEditableMesh::CreateVertexInstances(struct TArray<Unknown>& VertexI
 }
 
 // Function EditableMesh.EditableMesh.CreatePolygons
-inline void UEditableMesh::CreatePolygons(struct TArray<Unknown>& PolygonsToCreate, struct TArray<Unknown>& OutNewPolygonIDs, struct TArray<Unknown>& OutNewEdgeIDs) {
+inline void UEditableMesh::CreatePolygons(struct TArray<struct FPolygonToCreate>& PolygonsToCreate, struct TArray<struct FPolygonID>& OutNewPolygonIDs, struct TArray<struct FEdgeID>& OutNewEdgeIDs) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.CreatePolygons");
 
 	struct CreatePolygons_Params {
-		struct TArray<Unknown>& PolygonsToCreate;
-		struct TArray<Unknown>& OutNewPolygonIDs;
-		struct TArray<Unknown>& OutNewEdgeIDs;
+		struct TArray<struct FPolygonToCreate>& PolygonsToCreate;
+		struct TArray<struct FPolygonID>& OutNewPolygonIDs;
+		struct TArray<struct FEdgeID>& OutNewEdgeIDs;
 	}; CreatePolygons_Params Params;
 
 
@@ -2555,12 +2555,12 @@ inline void UEditableMesh::CreatePolygons(struct TArray<Unknown>& PolygonsToCrea
 }
 
 // Function EditableMesh.EditableMesh.CreatePolygonGroups
-inline void UEditableMesh::CreatePolygonGroups(struct TArray<Unknown>& PolygonGroupsToCreate, struct TArray<Unknown>& OutNewPolygonGroupIDs) {
+inline void UEditableMesh::CreatePolygonGroups(struct TArray<struct FPolygonGroupToCreate>& PolygonGroupsToCreate, struct TArray<struct FPolygonGroupID>& OutNewPolygonGroupIDs) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.CreatePolygonGroups");
 
 	struct CreatePolygonGroups_Params {
-		struct TArray<Unknown>& PolygonGroupsToCreate;
-		struct TArray<Unknown>& OutNewPolygonGroupIDs;
+		struct TArray<struct FPolygonGroupToCreate>& PolygonGroupsToCreate;
+		struct TArray<struct FPolygonGroupID>& OutNewPolygonGroupIDs;
 	}; CreatePolygonGroups_Params Params;
 
 
@@ -2574,12 +2574,12 @@ inline void UEditableMesh::CreatePolygonGroups(struct TArray<Unknown>& PolygonGr
 }
 
 // Function EditableMesh.EditableMesh.CreateMissingPolygonPerimeterEdges
-inline void UEditableMesh::CreateMissingPolygonPerimeterEdges(struct Unknown PolygonID, struct TArray<Unknown>& OutNewEdgeIDs) {
+inline void UEditableMesh::CreateMissingPolygonPerimeterEdges(struct FPolygonID PolygonID, struct TArray<struct FEdgeID>& OutNewEdgeIDs) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.CreateMissingPolygonPerimeterEdges");
 
 	struct CreateMissingPolygonPerimeterEdges_Params {
-		struct Unknown PolygonID;
-		struct TArray<Unknown>& OutNewEdgeIDs;
+		struct FPolygonID PolygonID;
+		struct TArray<struct FEdgeID>& OutNewEdgeIDs;
 	}; CreateMissingPolygonPerimeterEdges_Params Params;
 
 	Params.PolygonID = PolygonID;
@@ -2593,12 +2593,12 @@ inline void UEditableMesh::CreateMissingPolygonPerimeterEdges(struct Unknown Pol
 }
 
 // Function EditableMesh.EditableMesh.CreateEmptyVertexRange
-inline void UEditableMesh::CreateEmptyVertexRange(int32_t NumVerticesToCreate, struct TArray<Unknown>& OutNewVertexIDs) {
+inline void UEditableMesh::CreateEmptyVertexRange(int32_t NumVerticesToCreate, struct TArray<struct FVertexID>& OutNewVertexIDs) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.CreateEmptyVertexRange");
 
 	struct CreateEmptyVertexRange_Params {
 		int32_t NumVerticesToCreate;
-		struct TArray<Unknown>& OutNewVertexIDs;
+		struct TArray<struct FVertexID>& OutNewVertexIDs;
 	}; CreateEmptyVertexRange_Params Params;
 
 	Params.NumVerticesToCreate = NumVerticesToCreate;
@@ -2612,12 +2612,12 @@ inline void UEditableMesh::CreateEmptyVertexRange(int32_t NumVerticesToCreate, s
 }
 
 // Function EditableMesh.EditableMesh.CreateEdges
-inline void UEditableMesh::CreateEdges(struct TArray<Unknown>& EdgesToCreate, struct TArray<Unknown>& OutNewEdgeIDs) {
+inline void UEditableMesh::CreateEdges(struct TArray<struct FEdgeToCreate>& EdgesToCreate, struct TArray<struct FEdgeID>& OutNewEdgeIDs) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.CreateEdges");
 
 	struct CreateEdges_Params {
-		struct TArray<Unknown>& EdgesToCreate;
-		struct TArray<Unknown>& OutNewEdgeIDs;
+		struct TArray<struct FEdgeToCreate>& EdgesToCreate;
+		struct TArray<struct FEdgeID>& OutNewEdgeIDs;
 	}; CreateEdges_Params Params;
 
 
@@ -2631,12 +2631,12 @@ inline void UEditableMesh::CreateEdges(struct TArray<Unknown>& EdgesToCreate, st
 }
 
 // Function EditableMesh.EditableMesh.ComputePolygonsSharedEdges
-inline void UEditableMesh::ComputePolygonsSharedEdges(struct TArray<Unknown>& PolygonIDs, struct TArray<Unknown>& OutSharedEdgeIDs) {
+inline void UEditableMesh::ComputePolygonsSharedEdges(struct TArray<struct FPolygonID>& PolygonIDs, struct TArray<struct FEdgeID>& OutSharedEdgeIDs) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.ComputePolygonsSharedEdges");
 
 	struct ComputePolygonsSharedEdges_Params {
-		struct TArray<Unknown>& PolygonIDs;
-		struct TArray<Unknown>& OutSharedEdgeIDs;
+		struct TArray<struct FPolygonID>& PolygonIDs;
+		struct TArray<struct FEdgeID>& OutSharedEdgeIDs;
 	}; ComputePolygonsSharedEdges_Params Params;
 
 
@@ -2650,12 +2650,12 @@ inline void UEditableMesh::ComputePolygonsSharedEdges(struct TArray<Unknown>& Po
 }
 
 // Function EditableMesh.EditableMesh.ComputePolygonPlane
-inline struct Unknown UEditableMesh::ComputePolygonPlane(struct Unknown PolygonID) {
+inline struct FPlane UEditableMesh::ComputePolygonPlane(struct FPolygonID PolygonID) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.ComputePolygonPlane");
 
 	struct ComputePolygonPlane_Params {
-		struct Unknown PolygonID;
-		struct Unknown ReturnValue;
+		struct FPolygonID PolygonID;
+		struct FPlane ReturnValue;
 
 	}; ComputePolygonPlane_Params Params;
 
@@ -2669,12 +2669,12 @@ inline struct Unknown UEditableMesh::ComputePolygonPlane(struct Unknown PolygonI
 }
 
 // Function EditableMesh.EditableMesh.ComputePolygonNormal
-inline struct Unknown UEditableMesh::ComputePolygonNormal(struct Unknown PolygonID) {
+inline struct FVector UEditableMesh::ComputePolygonNormal(struct FPolygonID PolygonID) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.ComputePolygonNormal");
 
 	struct ComputePolygonNormal_Params {
-		struct Unknown PolygonID;
-		struct Unknown ReturnValue;
+		struct FPolygonID PolygonID;
+		struct FVector ReturnValue;
 
 	}; ComputePolygonNormal_Params Params;
 
@@ -2688,12 +2688,12 @@ inline struct Unknown UEditableMesh::ComputePolygonNormal(struct Unknown Polygon
 }
 
 // Function EditableMesh.EditableMesh.ComputePolygonCenter
-inline struct Unknown UEditableMesh::ComputePolygonCenter(struct Unknown PolygonID) {
+inline struct FVector UEditableMesh::ComputePolygonCenter(struct FPolygonID PolygonID) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.ComputePolygonCenter");
 
 	struct ComputePolygonCenter_Params {
-		struct Unknown PolygonID;
-		struct Unknown ReturnValue;
+		struct FPolygonID PolygonID;
+		struct FVector ReturnValue;
 
 	}; ComputePolygonCenter_Params Params;
 
@@ -2707,12 +2707,12 @@ inline struct Unknown UEditableMesh::ComputePolygonCenter(struct Unknown Polygon
 }
 
 // Function EditableMesh.EditableMesh.ComputeBoundingBoxAndSphere
-inline struct Unknown UEditableMesh::ComputeBoundingBoxAndSphere() {
+inline struct FBoxSphereBounds UEditableMesh::ComputeBoundingBoxAndSphere() {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.ComputeBoundingBoxAndSphere");
 
 	struct ComputeBoundingBoxAndSphere_Params {
 		
-		struct Unknown ReturnValue;
+		struct FBoxSphereBounds ReturnValue;
 
 	}; ComputeBoundingBoxAndSphere_Params Params;
 
@@ -2725,12 +2725,12 @@ inline struct Unknown UEditableMesh::ComputeBoundingBoxAndSphere() {
 }
 
 // Function EditableMesh.EditableMesh.ComputeBoundingBox
-inline struct Unknown UEditableMesh::ComputeBoundingBox() {
+inline struct FBox UEditableMesh::ComputeBoundingBox() {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.ComputeBoundingBox");
 
 	struct ComputeBoundingBox_Params {
 		
-		struct Unknown ReturnValue;
+		struct FBox ReturnValue;
 
 	}; ComputeBoundingBox_Params Params;
 
@@ -2743,12 +2743,12 @@ inline struct Unknown UEditableMesh::ComputeBoundingBox() {
 }
 
 // Function EditableMesh.EditableMesh.CommitInstance
-inline struct Unknown UEditableMesh::CommitInstance(struct Unknown ComponentToInstanceTo) {
+inline struct UEditableMesh UEditableMesh::CommitInstance(struct UPrimitiveComponent ComponentToInstanceTo) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.CommitInstance");
 
 	struct CommitInstance_Params {
-		struct Unknown ComponentToInstanceTo;
-		struct Unknown ReturnValue;
+		struct UPrimitiveComponent ComponentToInstanceTo;
+		struct UEditableMesh ReturnValue;
 
 	}; CommitInstance_Params Params;
 
@@ -2776,11 +2776,11 @@ inline void UEditableMesh::Commit() {
 }
 
 // Function EditableMesh.EditableMesh.ChangePolygonsVertexInstances
-inline void UEditableMesh::ChangePolygonsVertexInstances(struct TArray<Unknown>& VertexInstancesForPolygons) {
+inline void UEditableMesh::ChangePolygonsVertexInstances(struct TArray<struct FChangeVertexInstancesForPolygon>& VertexInstancesForPolygons) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.ChangePolygonsVertexInstances");
 
 	struct ChangePolygonsVertexInstances_Params {
-		struct TArray<Unknown>& VertexInstancesForPolygons;
+		struct TArray<struct FChangeVertexInstancesForPolygon>& VertexInstancesForPolygons;
 	}; ChangePolygonsVertexInstances_Params Params;
 
 
@@ -2793,15 +2793,15 @@ inline void UEditableMesh::ChangePolygonsVertexInstances(struct TArray<Unknown>&
 }
 
 // Function EditableMesh.EditableMesh.BevelPolygons
-inline void UEditableMesh::BevelPolygons(struct TArray<Unknown>& PolygonIDs, float BevelFixedDistance, float BevelProgressTowardCenter, struct TArray<Unknown>& OutNewCenterPolygonIDs, struct TArray<Unknown>& OutNewSidePolygonIDs) {
+inline void UEditableMesh::BevelPolygons(struct TArray<struct FPolygonID>& PolygonIDs, float BevelFixedDistance, float BevelProgressTowardCenter, struct TArray<struct FPolygonID>& OutNewCenterPolygonIDs, struct TArray<struct FPolygonID>& OutNewSidePolygonIDs) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.BevelPolygons");
 
 	struct BevelPolygons_Params {
-		struct TArray<Unknown>& PolygonIDs;
+		struct TArray<struct FPolygonID>& PolygonIDs;
 		float BevelFixedDistance;
 		float BevelProgressTowardCenter;
-		struct TArray<Unknown>& OutNewCenterPolygonIDs;
-		struct TArray<Unknown>& OutNewSidePolygonIDs;
+		struct TArray<struct FPolygonID>& OutNewCenterPolygonIDs;
+		struct TArray<struct FPolygonID>& OutNewSidePolygonIDs;
 	}; BevelPolygons_Params Params;
 
 	Params.BevelFixedDistance = BevelFixedDistance;
@@ -2818,11 +2818,11 @@ inline void UEditableMesh::BevelPolygons(struct TArray<Unknown>& PolygonIDs, flo
 }
 
 // Function EditableMesh.EditableMesh.AssignPolygonsToPolygonGroups
-inline void UEditableMesh::AssignPolygonsToPolygonGroups(struct TArray<Unknown>& PolygonGroupForPolygons, char bDeleteOrphanedPolygonGroups) {
+inline void UEditableMesh::AssignPolygonsToPolygonGroups(struct TArray<struct FPolygonGroupForPolygon>& PolygonGroupForPolygons, char bDeleteOrphanedPolygonGroups) {
 	static auto fn = UObject::FindObject<UFunction>("Function EditableMesh.EditableMesh.AssignPolygonsToPolygonGroups");
 
 	struct AssignPolygonsToPolygonGroups_Params {
-		struct TArray<Unknown>& PolygonGroupForPolygons;
+		struct TArray<struct FPolygonGroupForPolygon>& PolygonGroupForPolygons;
 		char bDeleteOrphanedPolygonGroups;
 	}; AssignPolygonsToPolygonGroups_Params Params;
 

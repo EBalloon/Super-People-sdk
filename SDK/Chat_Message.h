@@ -3,13 +3,13 @@ class UChat_Message_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Message TextBlock; // 0x250 (8)
-	struct Unknown Username TextBlock; // 0x258 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UTextBlock Message TextBlock; // 0x250 (8)
+	struct UTextBlock Username TextBlock; // 0x258 (8)
 	struct FText UserName; // 0x260 (24)
 	struct FText Text; // 0x278 (24)
-	struct Unknown Username Color; // 0x290 (16)
-	struct Unknown Message Color; // 0x2A0 (16)
+	struct FLinearColor Username Color; // 0x290 (16)
+	struct FLinearColor Message Color; // 0x2A0 (16)
 
 	void Construct(); // Function Chat_Message.Chat_Message_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_Chat_Message(int32_t EntryPoint); // Function Chat_Message.Chat_Message_C.ExecuteUbergraph_Chat_Message(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>

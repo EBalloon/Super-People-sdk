@@ -3,101 +3,101 @@ class ABP_MoveElevator_C : public ABravoHotelMoveElevator {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x328 (8)
-	struct Unknown Box2; // 0x330 (8)
-	struct Unknown Box1; // 0x338 (8)
-	struct Unknown BravoHotelAudioEmitter; // 0x340 (8)
-	struct Unknown Upper_Rear_Display_Sub; // 0x348 (8)
-	struct Unknown Upper_Front_Display_Sub; // 0x350 (8)
-	struct Unknown Lower_Rear_Display_Sub; // 0x358 (8)
-	struct Unknown Lower_Front_Display_Sub; // 0x360 (8)
-	struct Unknown PointBox; // 0x368 (8)
-	struct Unknown FloorBox; // 0x370 (8)
-	struct Unknown Main_Display; // 0x378 (8)
-	struct Unknown Box; // 0x380 (8)
-	struct Unknown TextRender5; // 0x388 (8)
-	struct Unknown TextRender7; // 0x390 (8)
-	struct Unknown TextRender6; // 0x398 (8)
-	struct Unknown TextRender1; // 0x3A0 (8)
-	struct Unknown TextRender4; // 0x3A8 (8)
-	struct Unknown TextRender3; // 0x3B0 (8)
-	struct Unknown TextRender; // 0x3B8 (8)
-	struct Unknown TextRender2; // 0x3C0 (8)
-	struct Unknown Upper_Front_Button_Area; // 0x3C8 (8)
-	struct Unknown Upper_Rear_Button_Area; // 0x3D0 (8)
-	struct Unknown Lower_Rear_Button_Area; // 0x3D8 (8)
-	struct Unknown Lower_Front_Button_Area; // 0x3E0 (8)
-	struct Unknown Main_Rear_Button_Area; // 0x3E8 (8)
-	struct Unknown Main_Front_Button_Area; // 0x3F0 (8)
-	struct Unknown Main_Front_Button; // 0x3F8 (8)
-	struct Unknown Main_Rear_Button; // 0x400 (8)
-	struct Unknown Upper_Rear_Display; // 0x408 (8)
-	struct Unknown Upper_Front_Display; // 0x410 (8)
-	struct Unknown Lower_Rear_Display; // 0x418 (8)
-	struct Unknown Lower_Front_Display; // 0x420 (8)
-	struct Unknown Upper_Rear_Button; // 0x428 (8)
-	struct Unknown Upper_Front_Button; // 0x430 (8)
-	struct Unknown Lower_Rear_Button; // 0x438 (8)
-	struct Unknown Lower_Front_Button; // 0x440 (8)
-	struct Unknown Upper_Rear_Left; // 0x448 (8)
-	struct Unknown Upper_Rear_Right; // 0x450 (8)
-	struct Unknown Upper_Front_Left; // 0x458 (8)
-	struct Unknown Upper_Front_Right; // 0x460 (8)
-	struct Unknown Lower_Rear_Right; // 0x468 (8)
-	struct Unknown Lower_Front_Right; // 0x470 (8)
-	struct Unknown Lower_Front_Left; // 0x478 (8)
-	struct Unknown Lower_Rear_Left; // 0x480 (8)
-	struct Unknown Upper_Rear; // 0x488 (8)
-	struct Unknown Upper_Front; // 0x490 (8)
-	struct Unknown Lower_Rear; // 0x498 (8)
-	struct Unknown Lower_Front; // 0x4A0 (8)
-	struct Unknown Upper_Floor; // 0x4A8 (8)
-	struct Unknown Front_Door; // 0x4B0 (8)
-	struct Unknown Rear_Door; // 0x4B8 (8)
-	struct Unknown Lower_Floor; // 0x4C0 (8)
-	struct Unknown Main_Front_Right; // 0x4C8 (8)
-	struct Unknown Main_Front_Left; // 0x4D0 (8)
-	struct Unknown Main_Body; // 0x4D8 (8)
-	struct Unknown Scene1; // 0x4E0 (8)
-	struct Unknown Main_Rear_Right; // 0x4E8 (8)
-	struct Unknown Main_Rear_Left; // 0x4F0 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x328 (8)
+	struct UBoxComponent Box2; // 0x330 (8)
+	struct UBoxComponent Box1; // 0x338 (8)
+	struct UBravoHotelAudioEmitterComponent BravoHotelAudioEmitter; // 0x340 (8)
+	struct UStaticMeshComponent Upper_Rear_Display_Sub; // 0x348 (8)
+	struct UStaticMeshComponent Upper_Front_Display_Sub; // 0x350 (8)
+	struct UStaticMeshComponent Lower_Rear_Display_Sub; // 0x358 (8)
+	struct UStaticMeshComponent Lower_Front_Display_Sub; // 0x360 (8)
+	struct UBoxComponent PointBox; // 0x368 (8)
+	struct UBoxComponent FloorBox; // 0x370 (8)
+	struct UStaticMeshComponent Main_Display; // 0x378 (8)
+	struct UBoxComponent Box; // 0x380 (8)
+	struct UTextRenderComponent TextRender5; // 0x388 (8)
+	struct UTextRenderComponent TextRender7; // 0x390 (8)
+	struct UTextRenderComponent TextRender6; // 0x398 (8)
+	struct UTextRenderComponent TextRender1; // 0x3A0 (8)
+	struct UTextRenderComponent TextRender4; // 0x3A8 (8)
+	struct UTextRenderComponent TextRender3; // 0x3B0 (8)
+	struct UTextRenderComponent TextRender; // 0x3B8 (8)
+	struct UTextRenderComponent TextRender2; // 0x3C0 (8)
+	struct UBoxComponent Upper_Front_Button_Area; // 0x3C8 (8)
+	struct UBoxComponent Upper_Rear_Button_Area; // 0x3D0 (8)
+	struct UBoxComponent Lower_Rear_Button_Area; // 0x3D8 (8)
+	struct UBoxComponent Lower_Front_Button_Area; // 0x3E0 (8)
+	struct UBoxComponent Main_Rear_Button_Area; // 0x3E8 (8)
+	struct UBoxComponent Main_Front_Button_Area; // 0x3F0 (8)
+	struct UStaticMeshComponent Main_Front_Button; // 0x3F8 (8)
+	struct UStaticMeshComponent Main_Rear_Button; // 0x400 (8)
+	struct UStaticMeshComponent Upper_Rear_Display; // 0x408 (8)
+	struct UStaticMeshComponent Upper_Front_Display; // 0x410 (8)
+	struct UStaticMeshComponent Lower_Rear_Display; // 0x418 (8)
+	struct UStaticMeshComponent Lower_Front_Display; // 0x420 (8)
+	struct UStaticMeshComponent Upper_Rear_Button; // 0x428 (8)
+	struct UStaticMeshComponent Upper_Front_Button; // 0x430 (8)
+	struct UStaticMeshComponent Lower_Rear_Button; // 0x438 (8)
+	struct UStaticMeshComponent Lower_Front_Button; // 0x440 (8)
+	struct UStaticMeshComponent Upper_Rear_Left; // 0x448 (8)
+	struct UStaticMeshComponent Upper_Rear_Right; // 0x450 (8)
+	struct UStaticMeshComponent Upper_Front_Left; // 0x458 (8)
+	struct UStaticMeshComponent Upper_Front_Right; // 0x460 (8)
+	struct UStaticMeshComponent Lower_Rear_Right; // 0x468 (8)
+	struct UStaticMeshComponent Lower_Front_Right; // 0x470 (8)
+	struct UStaticMeshComponent Lower_Front_Left; // 0x478 (8)
+	struct UStaticMeshComponent Lower_Rear_Left; // 0x480 (8)
+	struct USceneComponent Upper_Rear; // 0x488 (8)
+	struct USceneComponent Upper_Front; // 0x490 (8)
+	struct USceneComponent Lower_Rear; // 0x498 (8)
+	struct USceneComponent Lower_Front; // 0x4A0 (8)
+	struct USceneComponent Upper_Floor; // 0x4A8 (8)
+	struct USceneComponent Front_Door; // 0x4B0 (8)
+	struct USceneComponent Rear_Door; // 0x4B8 (8)
+	struct USceneComponent Lower_Floor; // 0x4C0 (8)
+	struct UStaticMeshComponent Main_Front_Right; // 0x4C8 (8)
+	struct UStaticMeshComponent Main_Front_Left; // 0x4D0 (8)
+	struct UStaticMeshComponent Main_Body; // 0x4D8 (8)
+	struct USceneComponent Scene1; // 0x4E0 (8)
+	struct UStaticMeshComponent Main_Rear_Right; // 0x4E8 (8)
+	struct UStaticMeshComponent Main_Rear_Left; // 0x4F0 (8)
 	float ElevatorCloseDoor______0_70C4393D45E164D3C8B473964F68015B; // 0x4F8 (4)
 	char ElevatorCloseDoor__Direction_70C4393D45E164D3C8B473964F68015B; // 0x4FC (1)
-	struct Unknown ElevatorCloseDoor; // 0x500 (8)
+	struct UTimelineComponent ElevatorCloseDoor; // 0x500 (8)
 	float LowerMoving______0_95D3AE1045ABFF7C4CC7778EAC04BCDA; // 0x508 (4)
 	char LowerMoving__Direction_95D3AE1045ABFF7C4CC7778EAC04BCDA; // 0x50C (1)
-	struct Unknown LowerMoving; // 0x510 (8)
+	struct UTimelineComponent LowerMoving; // 0x510 (8)
 	float ElevatorOpenDoor______0_5DABF5354368A8D3121A6FB4685095FB; // 0x518 (4)
 	char ElevatorOpenDoor__Direction_5DABF5354368A8D3121A6FB4685095FB; // 0x51C (1)
-	struct Unknown ElevatorOpenDoor; // 0x520 (8)
+	struct UTimelineComponent ElevatorOpenDoor; // 0x520 (8)
 	float UpperMoving______0_B6B6057A44D35DFC9C1FCDB8B065C5D0; // 0x528 (4)
 	char UpperMoving__Direction_B6B6057A44D35DFC9C1FCDB8B065C5D0; // 0x52C (1)
-	struct Unknown UpperMoving; // 0x530 (8)
-	struct Unknown Upper_Location; // 0x538 (12)
-	struct Unknown Body_Position; // 0x544 (12)
+	struct UTimelineComponent UpperMoving; // 0x530 (8)
+	struct FVector Upper_Location; // 0x538 (12)
+	struct FVector Body_Position; // 0x544 (12)
 	char IsLower : 0; // 0x550 (1)
 	float DoorTravel; // 0x554 (4)
 	float DoorMoveTime; // 0x558 (4)
 	char IsMoving : 0; // 0x55C (1)
-	struct Unknown RoomPos; // 0x560 (12)
-	struct Unknown MoveFloor; // 0x570 (8)
-	struct TArray<Unknown> AddCharacters; // 0x578 (16)
+	struct FVector RoomPos; // 0x560 (12)
+	struct USceneComponent MoveFloor; // 0x570 (8)
+	struct TArray<struct ABravoHotelCharacter> AddCharacters; // 0x578 (16)
 	float AddMoveOffest; // 0x588 (4)
-	struct Unknown OpenDoorCompleted; // 0x590 (8)
-	struct Unknown OpeningDoor; // 0x598 (8)
-	struct Unknown ClosingDoor; // 0x5A0 (8)
-	struct Unknown CloseDoorCompleted; // 0x5A8 (8)
-	struct Unknown SoundEventForMoved; // 0x5B0 (8)
-	struct Unknown SoundEventForMoving; // 0x5B8 (8)
+	struct UAkAudioEvent OpenDoorCompleted; // 0x590 (8)
+	struct UAkAudioEvent OpeningDoor; // 0x598 (8)
+	struct UAkAudioEvent ClosingDoor; // 0x5A0 (8)
+	struct UAkAudioEvent CloseDoorCompleted; // 0x5A8 (8)
+	struct UAkAudioEvent SoundEventForMoved; // 0x5B0 (8)
+	struct UAkAudioEvent SoundEventForMoving; // 0x5B8 (8)
 	char IsTraceMoving : 0; // 0x5C0 (1)
-	struct Unknown TraceLocation; // 0x5C4 (12)
-	struct TArray<Unknown> AttachActors; // 0x5D0 (16)
+	struct FVector TraceLocation; // 0x5C4 (12)
+	struct TArray<struct UActor> AttachActors; // 0x5D0 (16)
 	char NewVar_1 : 0; // 0x5E0 (1)
 	char NewVar_2 : 0; // 0x5E1 (1)
-	struct Unknown ElevatorAKComponent; // 0x5E8 (8)
-	struct Unknown ButtonSound; // 0x5F0 (8)
+	struct UAkComponent ElevatorAKComponent; // 0x5E8 (8)
+	struct UAkAudioEvent ButtonSound; // 0x5F0 (8)
 
-	void SetScalarParameterList(struct TArray<Unknown>& StaticMeshList, struct FName ParameterName, float ParameterValue); // Function BP_MoveElevator.BP_MoveElevator_C.SetScalarParameterList(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetScalarParameterList(struct TArray<struct UStaticMeshComponent>& StaticMeshList, struct FName ParameterName, float ParameterValue); // Function BP_MoveElevator.BP_MoveElevator_C.SetScalarParameterList(Public|HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CloseLowerSubDoor(float AddLocation); // Function BP_MoveElevator.BP_MoveElevator_C.CloseLowerSubDoor(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CloseUpperSubDoor(float AddLocation); // Function BP_MoveElevator.BP_MoveElevator_C.CloseUpperSubDoor(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CloseDoor(float AddLocation); // Function BP_MoveElevator.BP_MoveElevator_C.CloseDoor(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -112,11 +112,11 @@ public:
 	void LowerMoving__UpdateFunc(); // Function BP_MoveElevator.BP_MoveElevator_C.LowerMoving__UpdateFunc(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ReceiveBeginPlay(); // Function BP_MoveElevator.BP_MoveElevator_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnMoveUp(); // Function BP_MoveElevator.BP_MoveElevator_C.OnMoveUp(Net|NetReliableNetMulticast|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void InteractDoor(struct Unknown ElevatorComponet); // Function BP_MoveElevator.BP_MoveElevator_C.InteractDoor(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void InteractDoor(struct UPrimitiveComponent ElevatorComponet); // Function BP_MoveElevator.BP_MoveElevator_C.InteractDoor(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnMoveDown(); // Function BP_MoveElevator.BP_MoveElevator_C.OnMoveDown(Net|NetReliableNetMulticast|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BndEvt__Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature(struct Unknown OverlappedComponent, struct Unknown OtherActor, struct Unknown OtherComp, int32_t OtherBodyIndex, char bFromSweep, struct Unknown& SweepResult); // Function BP_MoveElevator.BP_MoveElevator_C.BndEvt__Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature(HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BndEvt__Box_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature(struct Unknown OverlappedComponent, struct Unknown OtherActor, struct Unknown OtherComp, int32_t OtherBodyIndex); // Function BP_MoveElevator.BP_MoveElevator_C.BndEvt__Box_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AttachItem(struct Unknown AttachActor); // Function BP_MoveElevator.BP_MoveElevator_C.AttachItem(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature(struct UPrimitiveComponent OverlappedComponent, struct UActor OtherActor, struct UPrimitiveComponent OtherComp, int32_t OtherBodyIndex, char bFromSweep, struct FHitResult& SweepResult); // Function BP_MoveElevator.BP_MoveElevator_C.BndEvt__Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature(HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__Box_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature(struct UPrimitiveComponent OverlappedComponent, struct UActor OtherActor, struct UPrimitiveComponent OtherComp, int32_t OtherBodyIndex); // Function BP_MoveElevator.BP_MoveElevator_C.BndEvt__Box_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AttachItem(struct UActor AttachActor); // Function BP_MoveElevator.BP_MoveElevator_C.AttachItem(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnChangeElevatorState(); // Function BP_MoveElevator.BP_MoveElevator_C.OnChangeElevatorState(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void MoveStartEvent(float StartTime, char IsInit); // Function BP_MoveElevator.BP_MoveElevator_C.MoveStartEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OpenDoorEvent(float StartTime, char IsSound); // Function BP_MoveElevator.BP_MoveElevator_C.OpenDoorEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -124,22 +124,22 @@ public:
 	void MovingSatrtEvent(float StartTime); // Function BP_MoveElevator.BP_MoveElevator_C.MovingSatrtEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetImpartBase(char IsImpartBase); // Function BP_MoveElevator.BP_MoveElevator_C.SetImpartBase(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void MoveTraceObject(); // Function BP_MoveElevator.BP_MoveElevator_C.MoveTraceObject(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void DetachCharacter(struct Unknown Character); // Function BP_MoveElevator.BP_MoveElevator_C.DetachCharacter(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void DetachCharacter(struct ABravoHotelCharacter Character); // Function BP_MoveElevator.BP_MoveElevator_C.DetachCharacter(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CharactersMovingEvent(char StopElevator); // Function BP_MoveElevator.BP_MoveElevator_C.CharactersMovingEvent(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void DoorOutImpulse(struct Unknown DoorBox); // Function BP_MoveElevator.BP_MoveElevator_C.DoorOutImpulse(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BndEvt__Box1_K2Node_ComponentBoundEvent_6_ComponentBeginOverlapSignature__DelegateSignature(struct Unknown OverlappedComponent, struct Unknown OtherActor, struct Unknown OtherComp, int32_t OtherBodyIndex, char bFromSweep, struct Unknown& SweepResult); // Function BP_MoveElevator.BP_MoveElevator_C.BndEvt__Box1_K2Node_ComponentBoundEvent_6_ComponentBeginOverlapSignature__DelegateSignature(HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BndEvt__Box1_K2Node_ComponentBoundEvent_7_ComponentEndOverlapSignature__DelegateSignature(struct Unknown OverlappedComponent, struct Unknown OtherActor, struct Unknown OtherComp, int32_t OtherBodyIndex); // Function BP_MoveElevator.BP_MoveElevator_C.BndEvt__Box1_K2Node_ComponentBoundEvent_7_ComponentEndOverlapSignature__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BndEvt__Box2_K2Node_ComponentBoundEvent_8_ComponentBeginOverlapSignature__DelegateSignature(struct Unknown OverlappedComponent, struct Unknown OtherActor, struct Unknown OtherComp, int32_t OtherBodyIndex, char bFromSweep, struct Unknown& SweepResult); // Function BP_MoveElevator.BP_MoveElevator_C.BndEvt__Box2_K2Node_ComponentBoundEvent_8_ComponentBeginOverlapSignature__DelegateSignature(HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void BndEvt__Box2_K2Node_ComponentBoundEvent_9_ComponentEndOverlapSignature__DelegateSignature(struct Unknown OverlappedComponent, struct Unknown OtherActor, struct Unknown OtherComp, int32_t OtherBodyIndex); // Function BP_MoveElevator.BP_MoveElevator_C.BndEvt__Box2_K2Node_ComponentBoundEvent_9_ComponentEndOverlapSignature__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void DoorOutImpulse(struct UBoxComponent DoorBox); // Function BP_MoveElevator.BP_MoveElevator_C.DoorOutImpulse(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__Box1_K2Node_ComponentBoundEvent_6_ComponentBeginOverlapSignature__DelegateSignature(struct UPrimitiveComponent OverlappedComponent, struct UActor OtherActor, struct UPrimitiveComponent OtherComp, int32_t OtherBodyIndex, char bFromSweep, struct FHitResult& SweepResult); // Function BP_MoveElevator.BP_MoveElevator_C.BndEvt__Box1_K2Node_ComponentBoundEvent_6_ComponentBeginOverlapSignature__DelegateSignature(HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__Box1_K2Node_ComponentBoundEvent_7_ComponentEndOverlapSignature__DelegateSignature(struct UPrimitiveComponent OverlappedComponent, struct UActor OtherActor, struct UPrimitiveComponent OtherComp, int32_t OtherBodyIndex); // Function BP_MoveElevator.BP_MoveElevator_C.BndEvt__Box1_K2Node_ComponentBoundEvent_7_ComponentEndOverlapSignature__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__Box2_K2Node_ComponentBoundEvent_8_ComponentBeginOverlapSignature__DelegateSignature(struct UPrimitiveComponent OverlappedComponent, struct UActor OtherActor, struct UPrimitiveComponent OtherComp, int32_t OtherBodyIndex, char bFromSweep, struct FHitResult& SweepResult); // Function BP_MoveElevator.BP_MoveElevator_C.BndEvt__Box2_K2Node_ComponentBoundEvent_8_ComponentBeginOverlapSignature__DelegateSignature(HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void BndEvt__Box2_K2Node_ComponentBoundEvent_9_ComponentEndOverlapSignature__DelegateSignature(struct UPrimitiveComponent OverlappedComponent, struct UActor OtherActor, struct UPrimitiveComponent OtherComp, int32_t OtherBodyIndex); // Function BP_MoveElevator.BP_MoveElevator_C.BndEvt__Box2_K2Node_ComponentBoundEvent_9_ComponentEndOverlapSignature__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_BP_MoveElevator(int32_t EntryPoint); // Function BP_MoveElevator.BP_MoveElevator_C.ExecuteUbergraph_BP_MoveElevator(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function BP_MoveElevator.BP_MoveElevator_C.SetScalarParameterList
-inline void ABP_MoveElevator_C::SetScalarParameterList(struct TArray<Unknown>& StaticMeshList, struct FName ParameterName, float ParameterValue) {
+inline void ABP_MoveElevator_C::SetScalarParameterList(struct TArray<struct UStaticMeshComponent>& StaticMeshList, struct FName ParameterName, float ParameterValue) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP_MoveElevator.BP_MoveElevator_C.SetScalarParameterList");
 
 	struct SetScalarParameterList_Params {
-		struct TArray<Unknown>& StaticMeshList;
+		struct TArray<struct UStaticMeshComponent>& StaticMeshList;
 		struct FName ParameterName;
 		float ParameterValue;
 	}; SetScalarParameterList_Params Params;
@@ -355,11 +355,11 @@ inline void ABP_MoveElevator_C::OnMoveUp() {
 }
 
 // Function BP_MoveElevator.BP_MoveElevator_C.InteractDoor
-inline void ABP_MoveElevator_C::InteractDoor(struct Unknown ElevatorComponet) {
+inline void ABP_MoveElevator_C::InteractDoor(struct UPrimitiveComponent ElevatorComponet) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP_MoveElevator.BP_MoveElevator_C.InteractDoor");
 
 	struct InteractDoor_Params {
-		struct Unknown ElevatorComponet;
+		struct UPrimitiveComponent ElevatorComponet;
 	}; InteractDoor_Params Params;
 
 	Params.ElevatorComponet = ElevatorComponet;
@@ -384,16 +384,16 @@ inline void ABP_MoveElevator_C::OnMoveDown() {
 }
 
 // Function BP_MoveElevator.BP_MoveElevator_C.BndEvt__Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature
-inline void ABP_MoveElevator_C::BndEvt__Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature(struct Unknown OverlappedComponent, struct Unknown OtherActor, struct Unknown OtherComp, int32_t OtherBodyIndex, char bFromSweep, struct Unknown& SweepResult) {
+inline void ABP_MoveElevator_C::BndEvt__Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature(struct UPrimitiveComponent OverlappedComponent, struct UActor OtherActor, struct UPrimitiveComponent OtherComp, int32_t OtherBodyIndex, char bFromSweep, struct FHitResult& SweepResult) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP_MoveElevator.BP_MoveElevator_C.BndEvt__Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature");
 
 	struct BndEvt__Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature_Params {
-		struct Unknown OverlappedComponent;
-		struct Unknown OtherActor;
-		struct Unknown OtherComp;
+		struct UPrimitiveComponent OverlappedComponent;
+		struct UActor OtherActor;
+		struct UPrimitiveComponent OtherComp;
 		int32_t OtherBodyIndex;
 		char bFromSweep;
-		struct Unknown& SweepResult;
+		struct FHitResult& SweepResult;
 	}; BndEvt__Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature_Params Params;
 
 	Params.OverlappedComponent = OverlappedComponent;
@@ -411,13 +411,13 @@ inline void ABP_MoveElevator_C::BndEvt__Box_K2Node_ComponentBoundEvent_1_Compone
 }
 
 // Function BP_MoveElevator.BP_MoveElevator_C.BndEvt__Box_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature
-inline void ABP_MoveElevator_C::BndEvt__Box_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature(struct Unknown OverlappedComponent, struct Unknown OtherActor, struct Unknown OtherComp, int32_t OtherBodyIndex) {
+inline void ABP_MoveElevator_C::BndEvt__Box_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature(struct UPrimitiveComponent OverlappedComponent, struct UActor OtherActor, struct UPrimitiveComponent OtherComp, int32_t OtherBodyIndex) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP_MoveElevator.BP_MoveElevator_C.BndEvt__Box_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature");
 
 	struct BndEvt__Box_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature_Params {
-		struct Unknown OverlappedComponent;
-		struct Unknown OtherActor;
-		struct Unknown OtherComp;
+		struct UPrimitiveComponent OverlappedComponent;
+		struct UActor OtherActor;
+		struct UPrimitiveComponent OtherComp;
 		int32_t OtherBodyIndex;
 	}; BndEvt__Box_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature_Params Params;
 
@@ -432,11 +432,11 @@ inline void ABP_MoveElevator_C::BndEvt__Box_K2Node_ComponentBoundEvent_2_Compone
 }
 
 // Function BP_MoveElevator.BP_MoveElevator_C.AttachItem
-inline void ABP_MoveElevator_C::AttachItem(struct Unknown AttachActor) {
+inline void ABP_MoveElevator_C::AttachItem(struct UActor AttachActor) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP_MoveElevator.BP_MoveElevator_C.AttachItem");
 
 	struct AttachItem_Params {
-		struct Unknown AttachActor;
+		struct UActor AttachActor;
 	}; AttachItem_Params Params;
 
 	Params.AttachActor = AttachActor;
@@ -554,11 +554,11 @@ inline void ABP_MoveElevator_C::MoveTraceObject() {
 }
 
 // Function BP_MoveElevator.BP_MoveElevator_C.DetachCharacter
-inline void ABP_MoveElevator_C::DetachCharacter(struct Unknown Character) {
+inline void ABP_MoveElevator_C::DetachCharacter(struct ABravoHotelCharacter Character) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP_MoveElevator.BP_MoveElevator_C.DetachCharacter");
 
 	struct DetachCharacter_Params {
-		struct Unknown Character;
+		struct ABravoHotelCharacter Character;
 	}; DetachCharacter_Params Params;
 
 	Params.Character = Character;
@@ -584,11 +584,11 @@ inline void ABP_MoveElevator_C::CharactersMovingEvent(char StopElevator) {
 }
 
 // Function BP_MoveElevator.BP_MoveElevator_C.DoorOutImpulse
-inline void ABP_MoveElevator_C::DoorOutImpulse(struct Unknown DoorBox) {
+inline void ABP_MoveElevator_C::DoorOutImpulse(struct UBoxComponent DoorBox) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP_MoveElevator.BP_MoveElevator_C.DoorOutImpulse");
 
 	struct DoorOutImpulse_Params {
-		struct Unknown DoorBox;
+		struct UBoxComponent DoorBox;
 	}; DoorOutImpulse_Params Params;
 
 	Params.DoorBox = DoorBox;
@@ -599,16 +599,16 @@ inline void ABP_MoveElevator_C::DoorOutImpulse(struct Unknown DoorBox) {
 }
 
 // Function BP_MoveElevator.BP_MoveElevator_C.BndEvt__Box1_K2Node_ComponentBoundEvent_6_ComponentBeginOverlapSignature__DelegateSignature
-inline void ABP_MoveElevator_C::BndEvt__Box1_K2Node_ComponentBoundEvent_6_ComponentBeginOverlapSignature__DelegateSignature(struct Unknown OverlappedComponent, struct Unknown OtherActor, struct Unknown OtherComp, int32_t OtherBodyIndex, char bFromSweep, struct Unknown& SweepResult) {
+inline void ABP_MoveElevator_C::BndEvt__Box1_K2Node_ComponentBoundEvent_6_ComponentBeginOverlapSignature__DelegateSignature(struct UPrimitiveComponent OverlappedComponent, struct UActor OtherActor, struct UPrimitiveComponent OtherComp, int32_t OtherBodyIndex, char bFromSweep, struct FHitResult& SweepResult) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP_MoveElevator.BP_MoveElevator_C.BndEvt__Box1_K2Node_ComponentBoundEvent_6_ComponentBeginOverlapSignature__DelegateSignature");
 
 	struct BndEvt__Box1_K2Node_ComponentBoundEvent_6_ComponentBeginOverlapSignature__DelegateSignature_Params {
-		struct Unknown OverlappedComponent;
-		struct Unknown OtherActor;
-		struct Unknown OtherComp;
+		struct UPrimitiveComponent OverlappedComponent;
+		struct UActor OtherActor;
+		struct UPrimitiveComponent OtherComp;
 		int32_t OtherBodyIndex;
 		char bFromSweep;
-		struct Unknown& SweepResult;
+		struct FHitResult& SweepResult;
 	}; BndEvt__Box1_K2Node_ComponentBoundEvent_6_ComponentBeginOverlapSignature__DelegateSignature_Params Params;
 
 	Params.OverlappedComponent = OverlappedComponent;
@@ -626,13 +626,13 @@ inline void ABP_MoveElevator_C::BndEvt__Box1_K2Node_ComponentBoundEvent_6_Compon
 }
 
 // Function BP_MoveElevator.BP_MoveElevator_C.BndEvt__Box1_K2Node_ComponentBoundEvent_7_ComponentEndOverlapSignature__DelegateSignature
-inline void ABP_MoveElevator_C::BndEvt__Box1_K2Node_ComponentBoundEvent_7_ComponentEndOverlapSignature__DelegateSignature(struct Unknown OverlappedComponent, struct Unknown OtherActor, struct Unknown OtherComp, int32_t OtherBodyIndex) {
+inline void ABP_MoveElevator_C::BndEvt__Box1_K2Node_ComponentBoundEvent_7_ComponentEndOverlapSignature__DelegateSignature(struct UPrimitiveComponent OverlappedComponent, struct UActor OtherActor, struct UPrimitiveComponent OtherComp, int32_t OtherBodyIndex) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP_MoveElevator.BP_MoveElevator_C.BndEvt__Box1_K2Node_ComponentBoundEvent_7_ComponentEndOverlapSignature__DelegateSignature");
 
 	struct BndEvt__Box1_K2Node_ComponentBoundEvent_7_ComponentEndOverlapSignature__DelegateSignature_Params {
-		struct Unknown OverlappedComponent;
-		struct Unknown OtherActor;
-		struct Unknown OtherComp;
+		struct UPrimitiveComponent OverlappedComponent;
+		struct UActor OtherActor;
+		struct UPrimitiveComponent OtherComp;
 		int32_t OtherBodyIndex;
 	}; BndEvt__Box1_K2Node_ComponentBoundEvent_7_ComponentEndOverlapSignature__DelegateSignature_Params Params;
 
@@ -647,16 +647,16 @@ inline void ABP_MoveElevator_C::BndEvt__Box1_K2Node_ComponentBoundEvent_7_Compon
 }
 
 // Function BP_MoveElevator.BP_MoveElevator_C.BndEvt__Box2_K2Node_ComponentBoundEvent_8_ComponentBeginOverlapSignature__DelegateSignature
-inline void ABP_MoveElevator_C::BndEvt__Box2_K2Node_ComponentBoundEvent_8_ComponentBeginOverlapSignature__DelegateSignature(struct Unknown OverlappedComponent, struct Unknown OtherActor, struct Unknown OtherComp, int32_t OtherBodyIndex, char bFromSweep, struct Unknown& SweepResult) {
+inline void ABP_MoveElevator_C::BndEvt__Box2_K2Node_ComponentBoundEvent_8_ComponentBeginOverlapSignature__DelegateSignature(struct UPrimitiveComponent OverlappedComponent, struct UActor OtherActor, struct UPrimitiveComponent OtherComp, int32_t OtherBodyIndex, char bFromSweep, struct FHitResult& SweepResult) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP_MoveElevator.BP_MoveElevator_C.BndEvt__Box2_K2Node_ComponentBoundEvent_8_ComponentBeginOverlapSignature__DelegateSignature");
 
 	struct BndEvt__Box2_K2Node_ComponentBoundEvent_8_ComponentBeginOverlapSignature__DelegateSignature_Params {
-		struct Unknown OverlappedComponent;
-		struct Unknown OtherActor;
-		struct Unknown OtherComp;
+		struct UPrimitiveComponent OverlappedComponent;
+		struct UActor OtherActor;
+		struct UPrimitiveComponent OtherComp;
 		int32_t OtherBodyIndex;
 		char bFromSweep;
-		struct Unknown& SweepResult;
+		struct FHitResult& SweepResult;
 	}; BndEvt__Box2_K2Node_ComponentBoundEvent_8_ComponentBeginOverlapSignature__DelegateSignature_Params Params;
 
 	Params.OverlappedComponent = OverlappedComponent;
@@ -674,13 +674,13 @@ inline void ABP_MoveElevator_C::BndEvt__Box2_K2Node_ComponentBoundEvent_8_Compon
 }
 
 // Function BP_MoveElevator.BP_MoveElevator_C.BndEvt__Box2_K2Node_ComponentBoundEvent_9_ComponentEndOverlapSignature__DelegateSignature
-inline void ABP_MoveElevator_C::BndEvt__Box2_K2Node_ComponentBoundEvent_9_ComponentEndOverlapSignature__DelegateSignature(struct Unknown OverlappedComponent, struct Unknown OtherActor, struct Unknown OtherComp, int32_t OtherBodyIndex) {
+inline void ABP_MoveElevator_C::BndEvt__Box2_K2Node_ComponentBoundEvent_9_ComponentEndOverlapSignature__DelegateSignature(struct UPrimitiveComponent OverlappedComponent, struct UActor OtherActor, struct UPrimitiveComponent OtherComp, int32_t OtherBodyIndex) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP_MoveElevator.BP_MoveElevator_C.BndEvt__Box2_K2Node_ComponentBoundEvent_9_ComponentEndOverlapSignature__DelegateSignature");
 
 	struct BndEvt__Box2_K2Node_ComponentBoundEvent_9_ComponentEndOverlapSignature__DelegateSignature_Params {
-		struct Unknown OverlappedComponent;
-		struct Unknown OtherActor;
-		struct Unknown OtherComp;
+		struct UPrimitiveComponent OverlappedComponent;
+		struct UActor OtherActor;
+		struct UPrimitiveComponent OtherComp;
 		int32_t OtherBodyIndex;
 	}; BndEvt__Box2_K2Node_ComponentBoundEvent_9_ComponentEndOverlapSignature__DelegateSignature_Params Params;
 

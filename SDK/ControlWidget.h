@@ -3,38 +3,38 @@ class UControlWidget_C : public UBravoHotelSettingSubWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x298 (8)
-	struct Unknown 15XSensitivity; // 0x2A0 (8)
-	struct Unknown 2XSensitivity; // 0x2A8 (8)
-	struct Unknown 4XSensitivity; // 0x2B0 (8)
-	struct Unknown 6XSensitivity; // 0x2B8 (8)
-	struct Unknown 8XSensitivity; // 0x2C0 (8)
-	struct Unknown ADSSensitivity; // 0x2C8 (8)
-	struct Unknown GeneralSensitivity; // 0x2D0 (8)
-	struct Unknown ReverseLeftAndRight; // 0x2D8 (8)
-	struct Unknown ReverseUpAndDown; // 0x2E0 (8)
-	struct Unknown ScrollBox_55; // 0x2E8 (8)
-	struct Unknown TargetingSensitivity; // 0x2F0 (8)
-	struct Unknown ToggleADS; // 0x2F8 (8)
-	struct Unknown ToggleAOS; // 0x300 (8)
-	struct Unknown ToggleCrouch; // 0x308 (8)
-	struct Unknown ToggleExLean; // 0x310 (8)
-	struct Unknown ToggleFreeLook; // 0x318 (8)
-	struct Unknown ToggleSprint; // 0x320 (8)
-	struct Unknown ToggleSteadyAim; // 0x328 (8)
-	struct Unknown ToggleWalk; // 0x330 (8)
-	struct Unknown TotalSensitivity; // 0x338 (8)
-	struct Unknown UsingDetailSensitivity; // 0x340 (8)
-	struct Unknown VehicleDriverSensitivity; // 0x348 (8)
-	struct Unknown VerticalBox_1; // 0x350 (8)
-	struct Unknown VerticlaModifier; // 0x358 (8)
-	struct Unknown È°¤; // 0x360 (8)
-	struct Unknown ¤TÄ¨Ü; // 0x368 (8)
-	struct Unknown ¤…%)Ý; // 0x370 (8)
-	struct Unknown ScrollBarTimer; // 0x378 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x298 (8)
+	struct USlotItemWidget_C 15XSensitivity; // 0x2A0 (8)
+	struct USlotItemWidget_C 2XSensitivity; // 0x2A8 (8)
+	struct USlotItemWidget_C 4XSensitivity; // 0x2B0 (8)
+	struct USlotItemWidget_C 6XSensitivity; // 0x2B8 (8)
+	struct USlotItemWidget_C 8XSensitivity; // 0x2C0 (8)
+	struct USlotItemWidget_C ADSSensitivity; // 0x2C8 (8)
+	struct USlotItemWidget_C GeneralSensitivity; // 0x2D0 (8)
+	struct USlotItemWidget_C ReverseLeftAndRight; // 0x2D8 (8)
+	struct USlotItemWidget_C ReverseUpAndDown; // 0x2E0 (8)
+	struct UScrollBox ScrollBox_55; // 0x2E8 (8)
+	struct USlotItemWidget_C TargetingSensitivity; // 0x2F0 (8)
+	struct USlotItemWidget_C ToggleADS; // 0x2F8 (8)
+	struct USlotItemWidget_C ToggleAOS; // 0x300 (8)
+	struct USlotItemWidget_C ToggleCrouch; // 0x308 (8)
+	struct USlotItemWidget_C ToggleExLean; // 0x310 (8)
+	struct USlotItemWidget_C ToggleFreeLook; // 0x318 (8)
+	struct USlotItemWidget_C ToggleSprint; // 0x320 (8)
+	struct USlotItemWidget_C ToggleSteadyAim; // 0x328 (8)
+	struct USlotItemWidget_C ToggleWalk; // 0x330 (8)
+	struct USlotItemWidget_C TotalSensitivity; // 0x338 (8)
+	struct USlotItemWidget_C UsingDetailSensitivity; // 0x340 (8)
+	struct USlotItemWidget_C VehicleDriverSensitivity; // 0x348 (8)
+	struct UVerticalBox VerticalBox_1; // 0x350 (8)
+	struct USlotItemWidget_C VerticlaModifier; // 0x358 (8)
+	struct USubTitleSlotWidget_C È°¤; // 0x360 (8)
+	struct USubTitleSlotWidget_C ¤TÄ¨Ü; // 0x368 (8)
+	struct USubTitleSlotWidget_C ¤…%)Ý; // 0x370 (8)
+	struct FTimerHandle ScrollBarTimer; // 0x378 (8)
 
 	void Construct(); // Function ControlWidget.ControlWidget_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void DelegateChangeValue_Event_1(struct Unknown Value); // Function ControlWidget.ControlWidget_C.DelegateChangeValue_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void DelegateChangeValue_Event_1(struct UBravoHotelSettingSlotWidget Value); // Function ControlWidget.ControlWidget_C.DelegateChangeValue_Event_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__ScrollBox_54_K2Node_ComponentBoundEvent_0_OnUserScrolledEvent__DelegateSignature(float CurrentOffset); // Function ControlWidget.ControlWidget_C.BndEvt__ScrollBox_54_K2Node_ComponentBoundEvent_0_OnUserScrolledEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ä¤@t¤¸_1(); // Function ControlWidget.ControlWidget_C.ä¤@t¤¸_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_ControlWidget(int32_t EntryPoint); // Function ControlWidget.ControlWidget_C.ExecuteUbergraph_ControlWidget(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
@@ -55,11 +55,11 @@ inline void UControlWidget_C::Construct() {
 }
 
 // Function ControlWidget.ControlWidget_C.DelegateChangeValue_Event_1
-inline void UControlWidget_C::DelegateChangeValue_Event_1(struct Unknown Value) {
+inline void UControlWidget_C::DelegateChangeValue_Event_1(struct UBravoHotelSettingSlotWidget Value) {
 	static auto fn = UObject::FindObject<UFunction>("Function ControlWidget.ControlWidget_C.DelegateChangeValue_Event_1");
 
 	struct DelegateChangeValue_Event_1_Params {
-		struct Unknown Value;
+		struct UBravoHotelSettingSlotWidget Value;
 	}; DelegateChangeValue_Event_1_Params Params;
 
 	Params.Value = Value;

@@ -3,71 +3,71 @@ class UUW-PerkLevelUp_02_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Level_Up_New; // 0x250 (8)
-	struct Unknown VSkill_Motion; // 0x258 (8)
-	struct Unknown FinalitySkill_Motion; // 0x260 (8)
-	struct Unknown LEVEL_UP; // 0x268 (8)
-	struct Unknown CanvasPanel_294; // 0x270 (8)
-	struct Unknown FSkill_Info; // 0x278 (8)
-	struct Unknown FSkill_Title; // 0x280 (8)
-	struct Unknown HorizontalBox_290; // 0x288 (8)
-	struct Unknown Image_1; // 0x290 (8)
-	struct Unknown Image_2; // 0x298 (8)
-	struct Unknown Image_4; // 0x2A0 (8)
-	struct Unknown Image_5; // 0x2A8 (8)
-	struct Unknown Image_6; // 0x2B0 (8)
-	struct Unknown Image_9; // 0x2B8 (8)
-	struct Unknown Image_10; // 0x2C0 (8)
-	struct Unknown Image_245; // 0x2C8 (8)
-	struct Unknown Image_247; // 0x2D0 (8)
-	struct Unknown Image_413; // 0x2D8 (8)
-	struct Unknown Image_458; // 0x2E0 (8)
-	struct Unknown Image_602; // 0x2E8 (8)
-	struct Unknown Image_UltimateGetMat; // 0x2F0 (8)
-	struct Unknown IMG_FinalitySkill; // 0x2F8 (8)
-	struct Unknown Img_UltimateMaterial; // 0x300 (8)
-	struct Unknown Light; // 0x308 (8)
-	struct Unknown T_Desc; // 0x310 (8)
-	struct Unknown T_Level; // 0x318 (8)
-	struct Unknown T_PerkName; // 0x320 (8)
-	struct Unknown TextBlock_LevelUpNewText; // 0x328 (8)
-	struct Unknown UW-Inventory_PerkSlot_LevelUp; // 0x330 (8)
-	struct Unknown UW-Inventory_PerkSlot_VSkill; // 0x338 (8)
-	struct Unknown VSkill_Info; // 0x340 (8)
-	struct Unknown VSkill_Titile; // 0x348 (8)
-	struct Unknown VSkillThumbStroke_02; // 0x350 (8)
-	struct Unknown WidgetSwitcher_LevelUpInfo; // 0x358 (8)
-	struct Unknown Handle_LevelUpEffect; // 0x360 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UWidgetAnimation Level_Up_New; // 0x250 (8)
+	struct UWidgetAnimation VSkill_Motion; // 0x258 (8)
+	struct UWidgetAnimation FinalitySkill_Motion; // 0x260 (8)
+	struct UWidgetAnimation LEVEL_UP; // 0x268 (8)
+	struct UCanvasPanel CanvasPanel_294; // 0x270 (8)
+	struct UTextBlock FSkill_Info; // 0x278 (8)
+	struct UTextBlock FSkill_Title; // 0x280 (8)
+	struct UHorizontalBox HorizontalBox_290; // 0x288 (8)
+	struct UImage Image_1; // 0x290 (8)
+	struct UImage Image_2; // 0x298 (8)
+	struct UImage Image_4; // 0x2A0 (8)
+	struct UImage Image_5; // 0x2A8 (8)
+	struct UImage Image_6; // 0x2B0 (8)
+	struct UImage Image_9; // 0x2B8 (8)
+	struct UImage Image_10; // 0x2C0 (8)
+	struct UImage Image_245; // 0x2C8 (8)
+	struct UImage Image_247; // 0x2D0 (8)
+	struct UImage Image_413; // 0x2D8 (8)
+	struct UImage Image_458; // 0x2E0 (8)
+	struct UImage Image_602; // 0x2E8 (8)
+	struct UImage Image_UltimateGetMat; // 0x2F0 (8)
+	struct UImage IMG_FinalitySkill; // 0x2F8 (8)
+	struct UImage Img_UltimateMaterial; // 0x300 (8)
+	struct UImage Light; // 0x308 (8)
+	struct UTextBlock T_Desc; // 0x310 (8)
+	struct UTextBlock T_Level; // 0x318 (8)
+	struct UTextBlock T_PerkName; // 0x320 (8)
+	struct UTextBlock TextBlock_LevelUpNewText; // 0x328 (8)
+	struct UUW-Inventory_PerkSlot_C UW-Inventory_PerkSlot_LevelUp; // 0x330 (8)
+	struct UUW-Inventory_PerkSlot_C UW-Inventory_PerkSlot_VSkill; // 0x338 (8)
+	struct UTextBlock VSkill_Info; // 0x340 (8)
+	struct UTextBlock VSkill_Titile; // 0x348 (8)
+	struct UImage VSkillThumbStroke_02; // 0x350 (8)
+	struct UWidgetSwitcher WidgetSwitcher_LevelUpInfo; // 0x358 (8)
+	struct FTimerHandle Handle_LevelUpEffect; // 0x360 (8)
 	float EffectDelay; // 0x368 (4)
-	struct TArray<Unknown> PerkInfoQue; // 0x370 (16)
-	struct Unknown CurrentPerkInfo; // 0x380 (44)
-	struct TArray<Unknown> PerkLevelUpInfo; // 0x3B0 (16)
-	struct Unknown PerkLevelUpData; // 0x3C0 (376)
-	struct Unknown CurrentPerkData; // 0x538 (224)
+	struct TArray<struct FPerkUIInfo> PerkInfoQue; // 0x370 (16)
+	struct FPerkUIInfo CurrentPerkInfo; // 0x380 (44)
+	struct TArray<char> PerkLevelUpInfo; // 0x3B0 (16)
+	struct FPerkLevelUpData PerkLevelUpData; // 0x3C0 (376)
+	struct FPerkData CurrentPerkData; // 0x538 (224)
 	int32_t CurrentLevel; // 0x618 (4)
 	char IsAlreadyUnlockedUltimate : 0; // 0x61C (1)
 	char CurrentLevelUpInfo; // 0x61D (1)
-	struct TArray<Unknown> CurrentLevelQue; // 0x620 (16)
+	struct TArray<int32_t> CurrentLevelQue; // 0x620 (16)
 	float CurrentUltimateMaterialValue; // 0x630 (4)
 	char UltimateUpdate : 0; // 0x634 (1)
-	struct Unknown UltimateMaterialInstance; // 0x638 (8)
+	struct UMaterialInstanceDynamic UltimateMaterialInstance; // 0x638 (8)
 	float UltimateAnimTime; // 0x640 (4)
-	struct Unknown UltimateGetMaterialInstance; // 0x648 (8)
+	struct UMaterialInstanceDynamic UltimateGetMaterialInstance; // 0x648 (8)
 
-	void SequenceEvent__ENTRYPOINTUW-PerkLevelUp_02_4(struct Unknown Image_365); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.SequenceEvent__ENTRYPOINTUW-PerkLevelUp_02_4(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SequenceEvent__ENTRYPOINTUW-PerkLevelUp_02_4(struct UImage Image_365); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.SequenceEvent__ENTRYPOINTUW-PerkLevelUp_02_4(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SequenceEvent__ENTRYPOINTUW-PerkLevelUp_02_3(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.SequenceEvent__ENTRYPOINTUW-PerkLevelUp_02_3(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SequenceEvent__ENTRYPOINTUW-PerkLevelUp_02_2(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.SequenceEvent__ENTRYPOINTUW-PerkLevelUp_02_2(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SequenceEvent__ENTRYPOINTUW-PerkLevelUp_02_1(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.SequenceEvent__ENTRYPOINTUW-PerkLevelUp_02_1(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ResetInfos(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.ResetInfos(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void PlayLevelAndUtimate(int32_t Level, char bUltimate); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.PlayLevelAndUtimate(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	enum class Unknow GetVisibility_2(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.GetVisibility_2(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
-	enum class Unknow GetVisibility_1(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.GetVisibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	enum class ESlateVisibility GetVisibility_2(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.GetVisibility_2(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	enum class ESlateVisibility GetVisibility_1(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.GetVisibility_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void RemoveAllEffects(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.RemoveAllEffects(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void PlayLevelUpSound(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.PlayLevelUpSound(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void PlayCharacterLevelUpEffect(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.PlayCharacterLevelUpEffect(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void CheckUltimateSkill(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.CheckUltimateSkill(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown Get_FinalitySkillThumb_Brush_1(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.Get_FinalitySkillThumb_Brush_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	struct FSlateBrush Get_FinalitySkillThumb_Brush_1(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.Get_FinalitySkillThumb_Brush_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	struct FText Get_FSkill_Info_Text_1(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.Get_FSkill_Info_Text_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	struct FText Get_FSkill_Title_Text_1(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.Get_FSkill_Title_Text_1(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	struct FText Get_T_Desc_Text_1(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.Get_T_Desc_Text_1(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
@@ -79,22 +79,22 @@ public:
 	void IsOverUltimateLevel(char& IsUltimate); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.IsOverUltimateLevel(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void LevelUpEffect(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.LevelUpEffect(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void StartLevelUpEffect(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.StartLevelUpEffect(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AddToQue(struct Unknown PerkInfo, int32_t CurrentLevel); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.AddToQue(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void PlayLevelUpPopup(struct Unknown PerkInfo, int32_t CurrentLevel); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.PlayLevelUpPopup(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void StartUltimateUpdate(struct Unknown Image_365); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.StartUltimateUpdate(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AddToQue(struct FPerkUIInfo PerkInfo, int32_t CurrentLevel); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.AddToQue(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void PlayLevelUpPopup(struct FPerkUIInfo PerkInfo, int32_t CurrentLevel); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.PlayLevelUpPopup(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void StartUltimateUpdate(struct UImage Image_365); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.StartUltimateUpdate(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ResetUltimateUpdate(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.ResetUltimateUpdate(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnAnimationFinished(struct Unknown Animation); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.OnAnimationFinished(BlueprintCosmetic|Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnAnimationFinished(struct UWidgetAnimation Animation); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.OnAnimationFinished(BlueprintCosmetic|Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void UpdateUltimateMaterial(); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.UpdateUltimateMaterial(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-PerkLevelUp_02(int32_t EntryPoint); // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.ExecuteUbergraph_UW-PerkLevelUp_02(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
 
 // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.SequenceEvent__ENTRYPOINTUW-PerkLevelUp_02_4
-inline void UUW-PerkLevelUp_02_C::SequenceEvent__ENTRYPOINTUW-PerkLevelUp_02_4(struct Unknown Image_365) {
+inline void UUW-PerkLevelUp_02_C::SequenceEvent__ENTRYPOINTUW-PerkLevelUp_02_4(struct UImage Image_365) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.SequenceEvent__ENTRYPOINTUW-PerkLevelUp_02_4");
 
 	struct SequenceEvent__ENTRYPOINTUW-PerkLevelUp_02_4_Params {
-		struct Unknown Image_365;
+		struct UImage Image_365;
 	}; SequenceEvent__ENTRYPOINTUW-PerkLevelUp_02_4_Params Params;
 
 	Params.Image_365 = Image_365;
@@ -178,12 +178,12 @@ inline void UUW-PerkLevelUp_02_C::PlayLevelAndUtimate(int32_t Level, char bUltim
 }
 
 // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.GetVisibility_2
-inline enum class Unknow UUW-PerkLevelUp_02_C::GetVisibility_2() {
+inline enum class ESlateVisibility UUW-PerkLevelUp_02_C::GetVisibility_2() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.GetVisibility_2");
 
 	struct GetVisibility_2_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class ESlateVisibility ReturnValue;
 
 	}; GetVisibility_2_Params Params;
 
@@ -196,12 +196,12 @@ inline enum class Unknow UUW-PerkLevelUp_02_C::GetVisibility_2() {
 }
 
 // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.GetVisibility_1
-inline enum class Unknow UUW-PerkLevelUp_02_C::GetVisibility_1() {
+inline enum class ESlateVisibility UUW-PerkLevelUp_02_C::GetVisibility_1() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.GetVisibility_1");
 
 	struct GetVisibility_1_Params {
 		
-		enum class Unknow ReturnValue;
+		enum class ESlateVisibility ReturnValue;
 
 	}; GetVisibility_1_Params Params;
 
@@ -270,12 +270,12 @@ inline void UUW-PerkLevelUp_02_C::CheckUltimateSkill() {
 }
 
 // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.Get_FinalitySkillThumb_Brush_1
-inline struct Unknown UUW-PerkLevelUp_02_C::Get_FinalitySkillThumb_Brush_1() {
+inline struct FSlateBrush UUW-PerkLevelUp_02_C::Get_FinalitySkillThumb_Brush_1() {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.Get_FinalitySkillThumb_Brush_1");
 
 	struct Get_FinalitySkillThumb_Brush_1_Params {
 		
-		struct Unknown ReturnValue;
+		struct FSlateBrush ReturnValue;
 
 	}; Get_FinalitySkillThumb_Brush_1_Params Params;
 
@@ -465,11 +465,11 @@ inline void UUW-PerkLevelUp_02_C::StartLevelUpEffect() {
 }
 
 // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.AddToQue
-inline void UUW-PerkLevelUp_02_C::AddToQue(struct Unknown PerkInfo, int32_t CurrentLevel) {
+inline void UUW-PerkLevelUp_02_C::AddToQue(struct FPerkUIInfo PerkInfo, int32_t CurrentLevel) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.AddToQue");
 
 	struct AddToQue_Params {
-		struct Unknown PerkInfo;
+		struct FPerkUIInfo PerkInfo;
 		int32_t CurrentLevel;
 	}; AddToQue_Params Params;
 
@@ -482,11 +482,11 @@ inline void UUW-PerkLevelUp_02_C::AddToQue(struct Unknown PerkInfo, int32_t Curr
 }
 
 // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.PlayLevelUpPopup
-inline void UUW-PerkLevelUp_02_C::PlayLevelUpPopup(struct Unknown PerkInfo, int32_t CurrentLevel) {
+inline void UUW-PerkLevelUp_02_C::PlayLevelUpPopup(struct FPerkUIInfo PerkInfo, int32_t CurrentLevel) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.PlayLevelUpPopup");
 
 	struct PlayLevelUpPopup_Params {
-		struct Unknown PerkInfo;
+		struct FPerkUIInfo PerkInfo;
 		int32_t CurrentLevel;
 	}; PlayLevelUpPopup_Params Params;
 
@@ -499,11 +499,11 @@ inline void UUW-PerkLevelUp_02_C::PlayLevelUpPopup(struct Unknown PerkInfo, int3
 }
 
 // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.StartUltimateUpdate
-inline void UUW-PerkLevelUp_02_C::StartUltimateUpdate(struct Unknown Image_365) {
+inline void UUW-PerkLevelUp_02_C::StartUltimateUpdate(struct UImage Image_365) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.StartUltimateUpdate");
 
 	struct StartUltimateUpdate_Params {
-		struct Unknown Image_365;
+		struct UImage Image_365;
 	}; StartUltimateUpdate_Params Params;
 
 	Params.Image_365 = Image_365;
@@ -514,11 +514,11 @@ inline void UUW-PerkLevelUp_02_C::StartUltimateUpdate(struct Unknown Image_365) 
 }
 
 // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.Tick
-inline void UUW-PerkLevelUp_02_C::Tick(struct Unknown MyGeometry, float InDeltaTime) {
+inline void UUW-PerkLevelUp_02_C::Tick(struct FGeometry MyGeometry, float InDeltaTime) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.Tick");
 
 	struct Tick_Params {
-		struct Unknown MyGeometry;
+		struct FGeometry MyGeometry;
 		float InDeltaTime;
 	}; Tick_Params Params;
 
@@ -545,11 +545,11 @@ inline void UUW-PerkLevelUp_02_C::ResetUltimateUpdate() {
 }
 
 // Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.OnAnimationFinished
-inline void UUW-PerkLevelUp_02_C::OnAnimationFinished(struct Unknown Animation) {
+inline void UUW-PerkLevelUp_02_C::OnAnimationFinished(struct UWidgetAnimation Animation) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-PerkLevelUp_02.UW-PerkLevelUp_02_C.OnAnimationFinished");
 
 	struct OnAnimationFinished_Params {
-		struct Unknown Animation;
+		struct UWidgetAnimation Animation;
 	}; OnAnimationFinished_Params Params;
 
 	Params.Animation = Animation;

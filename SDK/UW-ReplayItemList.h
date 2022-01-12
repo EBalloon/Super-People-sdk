@@ -3,22 +3,22 @@ class UUW-ReplayItemList_C : public UUserWidget {
 
 public:
 
-	struct Unknown ArmorSlot; // 0x248 (8)
-	struct Unknown BagSlot; // 0x250 (8)
-	struct Unknown BottomSlot; // 0x258 (8)
-	struct Unknown EyeWearSlot; // 0x260 (8)
-	struct Unknown GhillieSlot; // 0x268 (8)
-	struct Unknown GlovesSlot; // 0x270 (8)
-	struct Unknown HatSlot; // 0x278 (8)
-	struct Unknown HelmetSlot; // 0x280 (8)
-	struct Unknown MaskSlot; // 0x288 (8)
-	struct Unknown OuterSlot; // 0x290 (8)
-	struct Unknown ShoesSlot; // 0x298 (8)
-	struct Unknown TopSlot; // 0x2A0 (8)
-	struct Unknown UW-Inventory_Weapon; // 0x2A8 (8)
-	struct Unknown Timer_UpdateItemList; // 0x2B0 (8)
+	struct UUW-Inventory_EquippedSlot_C ArmorSlot; // 0x248 (8)
+	struct UUW-Inventory_EquippedSlot_C BagSlot; // 0x250 (8)
+	struct UUW-Inventory_EquippedSlot_C BottomSlot; // 0x258 (8)
+	struct UUW-Inventory_EquippedSlot_C EyeWearSlot; // 0x260 (8)
+	struct UUW-Inventory_EquippedSlot_C GhillieSlot; // 0x268 (8)
+	struct UUW-Inventory_EquippedSlot_C GlovesSlot; // 0x270 (8)
+	struct UUW-Inventory_EquippedSlot_C HatSlot; // 0x278 (8)
+	struct UUW-Inventory_EquippedSlot_C HelmetSlot; // 0x280 (8)
+	struct UUW-Inventory_EquippedSlot_C MaskSlot; // 0x288 (8)
+	struct UUW-Inventory_EquippedSlot_C OuterSlot; // 0x290 (8)
+	struct UUW-Inventory_EquippedSlot_C ShoesSlot; // 0x298 (8)
+	struct UUW-Inventory_EquippedSlot_C TopSlot; // 0x2A0 (8)
+	struct UUW-Inventory_Weapon_C UW-Inventory_Weapon; // 0x2A8 (8)
+	struct FTimerHandle Timer_UpdateItemList; // 0x2B0 (8)
 
-	void SetEquippedSlot(struct Unknown InventoryItemInfo); // Function UW-ReplayItemList.UW-ReplayItemList_C.SetEquippedSlot(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetEquippedSlot(struct FInventoryItemInfo InventoryItemInfo); // Function UW-ReplayItemList.UW-ReplayItemList_C.SetEquippedSlot(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ResetEquippedList(); // Function UW-ReplayItemList.UW-ReplayItemList_C.ResetEquippedList(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetEquippedItems(); // Function UW-ReplayItemList.UW-ReplayItemList_C.SetEquippedItems(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetWeaponItems(); // Function UW-ReplayItemList.UW-ReplayItemList_C.SetWeaponItems(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -28,11 +28,11 @@ public:
 };
 
 // Function UW-ReplayItemList.UW-ReplayItemList_C.SetEquippedSlot
-inline void UUW-ReplayItemList_C::SetEquippedSlot(struct Unknown InventoryItemInfo) {
+inline void UUW-ReplayItemList_C::SetEquippedSlot(struct FInventoryItemInfo InventoryItemInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-ReplayItemList.UW-ReplayItemList_C.SetEquippedSlot");
 
 	struct SetEquippedSlot_Params {
-		struct Unknown InventoryItemInfo;
+		struct FInventoryItemInfo InventoryItemInfo;
 	}; SetEquippedSlot_Params Params;
 
 	Params.InventoryItemInfo = InventoryItemInfo;

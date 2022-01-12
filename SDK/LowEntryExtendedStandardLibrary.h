@@ -112,18 +112,18 @@ public:
 	char Type; // 0x28 (1)
 	char ByteValue; // 0x29 (1)
 	int32_t IntegerValue; // 0x2C (4)
-	struct Unknown LongBytesValue; // 0x30 (8)
+	struct ULowEntryLong LongBytesValue; // 0x30 (8)
 	float FloatValue; // 0x38 (4)
-	struct Unknown DoubleBytesValue; // 0x40 (8)
+	struct ULowEntryDouble DoubleBytesValue; // 0x40 (8)
 	char BooleanValue : 0; // 0x48 (1)
 	struct FString StringUtf8Value; // 0x50 (16)
-	struct TArray<Unknown> ByteArrayValue; // 0x60 (16)
-	struct TArray<Unknown> IntegerArrayValue; // 0x70 (16)
-	struct TArray<Unknown> LongBytesArrayValue; // 0x80 (16)
-	struct TArray<Unknown> FloatArrayValue; // 0x90 (16)
-	struct TArray<Unknown> DoubleBytesArrayValue; // 0xA0 (16)
-	struct TArray<Unknown> BooleanArrayValue; // 0xB0 (16)
-	struct TArray<Unknown> StringUtf8ArrayValue; // 0xC0 (16)
+	struct TArray<char> ByteArrayValue; // 0x60 (16)
+	struct TArray<int32_t> IntegerArrayValue; // 0x70 (16)
+	struct TArray<struct ULowEntryLong> LongBytesArrayValue; // 0x80 (16)
+	struct TArray<float> FloatArrayValue; // 0x90 (16)
+	struct TArray<struct ULowEntryDouble> DoubleBytesArrayValue; // 0xA0 (16)
+	struct TArray<char> BooleanArrayValue; // 0xB0 (16)
+	struct TArray<struct FString> StringUtf8ArrayValue; // 0xC0 (16)
 };
 
 // Class LowEntryExtendedStandardLibrary.LowEntryBitDataReader
@@ -131,7 +131,7 @@ class ULowEntryBitDataReader : public Object {
 
 public:
 
-	struct TArray<Unknown> Bytes; // 0x28 (16)
+	struct TArray<char> Bytes; // 0x28 (16)
 	int32_t Position; // 0x38 (4)
 	char CurrentByte; // 0x3C (1)
 	int32_t CurrentBytePosition; // 0x40 (4)
@@ -139,37 +139,37 @@ public:
 	void SetPosition(int32_t Position_); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.SetPosition(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1076300>
 	void Reset(); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.Reset(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10762E0>
 	int32_t Remaining(); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.Remaining(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x10762B0>
-	struct TArray<Unknown> GetStringUtf8Array(); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetStringUtf8Array(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10761D0>
+	struct TArray<struct FString> GetStringUtf8Array(); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetStringUtf8Array(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10761D0>
 	struct FString GetStringUtf8(); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetStringUtf8(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1076150>
-	struct TArray<Unknown> GetPositiveInteger3Array(); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetPositiveInteger3Array(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10760D0>
+	struct TArray<int32_t> GetPositiveInteger3Array(); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetPositiveInteger3Array(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10760D0>
 	int32_t GetPositiveInteger3(); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetPositiveInteger3(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10760A0>
-	struct TArray<Unknown> GetPositiveInteger2Array(); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetPositiveInteger2Array(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1076020>
+	struct TArray<int32_t> GetPositiveInteger2Array(); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetPositiveInteger2Array(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1076020>
 	int32_t GetPositiveInteger2(); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetPositiveInteger2(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1075FF0>
-	struct TArray<Unknown> GetPositiveInteger1Array(); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetPositiveInteger1Array(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1075F70>
+	struct TArray<int32_t> GetPositiveInteger1Array(); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetPositiveInteger1Array(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1075F70>
 	int32_t GetPositiveInteger1(); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetPositiveInteger1(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1075F40>
 	int32_t GetPosition(); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetPosition(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1075F10>
-	struct TArray<Unknown> GetLongBytesArray(); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetLongBytesArray(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1075E90>
-	struct Unknown GetLongBytes(); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetLongBytes(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1075E60>
+	struct TArray<struct ULowEntryLong> GetLongBytesArray(); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetLongBytesArray(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1075E90>
+	struct ULowEntryLong GetLongBytes(); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetLongBytes(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1075E60>
 	int32_t GetIntegerMostSignificantBits(int32_t BitCount); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetIntegerMostSignificantBits(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1075DD0>
 	int32_t GetIntegerLeastSignificantBits(int32_t BitCount); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetIntegerLeastSignificantBits(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1075D40>
-	struct TArray<Unknown> GetIntegerArrayMostSignificantBits(int32_t BitCount); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetIntegerArrayMostSignificantBits(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1075C60>
-	struct TArray<Unknown> GetIntegerArrayLeastSignificantBits(int32_t BitCount); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetIntegerArrayLeastSignificantBits(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1075B80>
-	struct TArray<Unknown> GetIntegerArray(); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetIntegerArray(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1075AD0>
+	struct TArray<int32_t> GetIntegerArrayMostSignificantBits(int32_t BitCount); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetIntegerArrayMostSignificantBits(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1075C60>
+	struct TArray<int32_t> GetIntegerArrayLeastSignificantBits(int32_t BitCount); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetIntegerArrayLeastSignificantBits(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1075B80>
+	struct TArray<int32_t> GetIntegerArray(); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetIntegerArray(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1075AD0>
 	int32_t GetInteger(); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetInteger(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1075B50>
-	struct TArray<Unknown> GetFloatArray(); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetFloatArray(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1075AD0>
+	struct TArray<float> GetFloatArray(); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetFloatArray(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1075AD0>
 	float GetFloat(); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetFloat(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1075AA0>
-	struct TArray<Unknown> GetDoubleBytesArray(); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetDoubleBytesArray(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1075A20>
-	struct Unknown GetDoubleBytes(); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetDoubleBytes(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10759F0>
-	struct Unknown GetClone(); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetClone(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10759C0>
+	struct TArray<struct ULowEntryDouble> GetDoubleBytesArray(); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetDoubleBytesArray(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1075A20>
+	struct ULowEntryDouble GetDoubleBytes(); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetDoubleBytes(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10759F0>
+	struct ULowEntryBitDataReader GetClone(); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetClone(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10759C0>
 	char GetByteMostSignificantBits(int32_t BitCount); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetByteMostSignificantBits(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1075930>
 	char GetByteLeastSignificantBits(int32_t BitCount); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetByteLeastSignificantBits(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10758A0>
-	struct TArray<Unknown> GetByteArrayMostSignificantBits(int32_t BitCount); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetByteArrayMostSignificantBits(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10757C0>
-	struct TArray<Unknown> GetByteArrayLeastSignificantBits(int32_t BitCount); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetByteArrayLeastSignificantBits(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10756E0>
-	struct TArray<Unknown> GetByteArray(); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetByteArray(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1075660>
+	struct TArray<char> GetByteArrayMostSignificantBits(int32_t BitCount); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetByteArrayMostSignificantBits(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10757C0>
+	struct TArray<char> GetByteArrayLeastSignificantBits(int32_t BitCount); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetByteArrayLeastSignificantBits(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10756E0>
+	struct TArray<char> GetByteArray(); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetByteArray(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1075660>
 	char GetByte(); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetByte(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1075630>
-	struct TArray<Unknown> GetBooleanArray(); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetBooleanArray(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10755B0>
+	struct TArray<char> GetBooleanArray(); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetBooleanArray(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10755B0>
 	char GetBoolean(); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetBoolean(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1075580>
-	struct TArray<Unknown> GetBitArray(); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetBitArray(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10755B0>
+	struct TArray<char> GetBitArray(); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetBitArray(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10755B0>
 	char GetBit(); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetBit(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1075580>
 	void Empty(); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.Empty(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1075560>
 };
@@ -179,39 +179,39 @@ class ULowEntryBitDataWriter : public Object {
 
 public:
 
-	struct TArray<Unknown> Bytes; // 0x28 (16)
+	struct TArray<char> Bytes; // 0x28 (16)
 	char CurrentByte; // 0x38 (1)
 	int32_t CurrentBytePosition; // 0x3C (4)
 
-	void AddStringUtf8Array(struct TArray<Unknown>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddStringUtf8Array(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1075490>
+	void AddStringUtf8Array(struct TArray<struct FString>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddStringUtf8Array(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1075490>
 	void AddStringUtf8(struct FString Value); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddStringUtf8(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10753F0>
-	void AddPositiveInteger3Array(struct TArray<Unknown>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddPositiveInteger3Array(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1075340>
+	void AddPositiveInteger3Array(struct TArray<int32_t>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddPositiveInteger3Array(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1075340>
 	void AddPositiveInteger3(int32_t Value); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddPositiveInteger3(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10752C0>
-	void AddPositiveInteger2Array(struct TArray<Unknown>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddPositiveInteger2Array(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1075210>
+	void AddPositiveInteger2Array(struct TArray<int32_t>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddPositiveInteger2Array(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1075210>
 	void AddPositiveInteger2(int32_t Value); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddPositiveInteger2(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1075190>
-	void AddPositiveInteger1Array(struct TArray<Unknown>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddPositiveInteger1Array(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x10750E0>
+	void AddPositiveInteger1Array(struct TArray<int32_t>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddPositiveInteger1Array(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x10750E0>
 	void AddPositiveInteger1(int32_t Value); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddPositiveInteger1(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1075060>
-	void AddLongBytesArray(struct TArray<Unknown>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddLongBytesArray(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x10749D0>
-	void AddLongBytes(struct Unknown Value); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddLongBytes(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1074950>
+	void AddLongBytesArray(struct TArray<struct ULowEntryLong>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddLongBytesArray(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x10749D0>
+	void AddLongBytes(struct ULowEntryLong Value); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddLongBytes(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1074950>
 	void AddIntegerMostSignificantBits(int32_t Value, int32_t BitCount); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddIntegerMostSignificantBits(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1074FA0>
 	void AddIntegerLeastSignificantBits(int32_t Value, int32_t BitCount); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddIntegerLeastSignificantBits(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1074EE0>
-	void AddIntegerArrayMostSignificantBits(struct TArray<Unknown>& Value, int32_t BitCount); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddIntegerArrayMostSignificantBits(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1074DE0>
-	void AddIntegerArrayLeastSignificantBits(struct TArray<Unknown>& Value, int32_t BitCount); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddIntegerArrayLeastSignificantBits(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1074CE0>
-	void AddIntegerArray(struct TArray<Unknown>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddIntegerArray(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1074C30>
+	void AddIntegerArrayMostSignificantBits(struct TArray<int32_t>& Value, int32_t BitCount); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddIntegerArrayMostSignificantBits(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1074DE0>
+	void AddIntegerArrayLeastSignificantBits(struct TArray<int32_t>& Value, int32_t BitCount); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddIntegerArrayLeastSignificantBits(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1074CE0>
+	void AddIntegerArray(struct TArray<int32_t>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddIntegerArray(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1074C30>
 	void AddInteger(int32_t Value); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddInteger(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1074BB0>
-	void AddFloatArray(struct TArray<Unknown>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddFloatArray(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1074B00>
+	void AddFloatArray(struct TArray<float>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddFloatArray(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1074B00>
 	void AddFloat(float Value); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddFloat(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1074A80>
-	void AddDoubleBytesArray(struct TArray<Unknown>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddDoubleBytesArray(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x10749D0>
-	void AddDoubleBytes(struct Unknown Value); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddDoubleBytes(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1074950>
+	void AddDoubleBytesArray(struct TArray<struct ULowEntryDouble>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddDoubleBytesArray(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x10749D0>
+	void AddDoubleBytes(struct ULowEntryDouble Value); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddDoubleBytes(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1074950>
 	void AddByteMostSignificantBits(char Value, int32_t BitCount); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddByteMostSignificantBits(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1074890>
 	void AddByteLeastSignificantBits(char Value, int32_t BitCount); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddByteLeastSignificantBits(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10747D0>
-	void AddByteArrayMostSignificantBits(struct TArray<Unknown>& Value, int32_t BitCount); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddByteArrayMostSignificantBits(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x10746D0>
-	void AddByteArrayLeastSignificantBits(struct TArray<Unknown>& Value, int32_t BitCount); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddByteArrayLeastSignificantBits(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x10745D0>
-	void AddByteArray(struct TArray<Unknown>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddByteArray(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1074520>
+	void AddByteArrayMostSignificantBits(struct TArray<char>& Value, int32_t BitCount); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddByteArrayMostSignificantBits(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x10746D0>
+	void AddByteArrayLeastSignificantBits(struct TArray<char>& Value, int32_t BitCount); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddByteArrayLeastSignificantBits(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x10745D0>
+	void AddByteArray(struct TArray<char>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddByteArray(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1074520>
 	void AddByte(char Value); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddByte(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10744A0>
-	void AddBooleanArray(struct TArray<Unknown>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddBooleanArray(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x10743F0>
+	void AddBooleanArray(struct TArray<char>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddBooleanArray(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x10743F0>
 	void AddBoolean(char Value); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddBoolean(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1074360>
-	void AddBitArray(struct TArray<Unknown>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddBitArray(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x10743F0>
+	void AddBitArray(struct TArray<char>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddBitArray(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x10743F0>
 	void AddBit(char Value); // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddBit(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1074360>
 };
 
@@ -220,7 +220,7 @@ class ULowEntryByteArray : public Object {
 
 public:
 
-	struct TArray<Unknown> ByteArray; // 0x28 (16)
+	struct TArray<char> ByteArray; // 0x28 (16)
 };
 
 // Class LowEntryExtendedStandardLibrary.LowEntryByteDataEntry
@@ -231,18 +231,18 @@ public:
 	char Type; // 0x28 (1)
 	char ByteValue; // 0x29 (1)
 	int32_t IntegerValue; // 0x2C (4)
-	struct Unknown LongBytesValue; // 0x30 (8)
+	struct ULowEntryLong LongBytesValue; // 0x30 (8)
 	float FloatValue; // 0x38 (4)
-	struct Unknown DoubleBytesValue; // 0x40 (8)
+	struct ULowEntryDouble DoubleBytesValue; // 0x40 (8)
 	char BooleanValue : 0; // 0x48 (1)
 	struct FString StringUtf8Value; // 0x50 (16)
-	struct TArray<Unknown> ByteArrayValue; // 0x60 (16)
-	struct TArray<Unknown> IntegerArrayValue; // 0x70 (16)
-	struct TArray<Unknown> LongBytesArrayValue; // 0x80 (16)
-	struct TArray<Unknown> FloatArrayValue; // 0x90 (16)
-	struct TArray<Unknown> DoubleBytesArrayValue; // 0xA0 (16)
-	struct TArray<Unknown> BooleanArrayValue; // 0xB0 (16)
-	struct TArray<Unknown> StringUtf8ArrayValue; // 0xC0 (16)
+	struct TArray<char> ByteArrayValue; // 0x60 (16)
+	struct TArray<int32_t> IntegerArrayValue; // 0x70 (16)
+	struct TArray<struct ULowEntryLong> LongBytesArrayValue; // 0x80 (16)
+	struct TArray<float> FloatArrayValue; // 0x90 (16)
+	struct TArray<struct ULowEntryDouble> DoubleBytesArrayValue; // 0xA0 (16)
+	struct TArray<char> BooleanArrayValue; // 0xB0 (16)
+	struct TArray<struct FString> StringUtf8ArrayValue; // 0xC0 (16)
 };
 
 // Class LowEntryExtendedStandardLibrary.LowEntryByteDataReader
@@ -250,33 +250,33 @@ class ULowEntryByteDataReader : public Object {
 
 public:
 
-	struct TArray<Unknown> Bytes; // 0x28 (16)
+	struct TArray<char> Bytes; // 0x28 (16)
 	int32_t Position; // 0x38 (4)
 
 	void SetPosition(int32_t Position_); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.SetPosition(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x108BB70>
 	void Reset(); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.Reset(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x108A8C0>
 	int32_t Remaining(); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.Remaining(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x108A420>
-	struct TArray<Unknown> GetStringUtf8Array(); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetStringUtf8Array(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1084C40>
+	struct TArray<struct FString> GetStringUtf8Array(); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetStringUtf8Array(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1084C40>
 	struct FString GetStringUtf8(); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetStringUtf8(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1084BC0>
-	struct TArray<Unknown> GetPositiveInteger3Array(); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetPositiveInteger3Array(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1084760>
+	struct TArray<int32_t> GetPositiveInteger3Array(); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetPositiveInteger3Array(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1084760>
 	int32_t GetPositiveInteger3(); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetPositiveInteger3(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1084730>
-	struct TArray<Unknown> GetPositiveInteger2Array(); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetPositiveInteger2Array(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10846B0>
+	struct TArray<int32_t> GetPositiveInteger2Array(); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetPositiveInteger2Array(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10846B0>
 	int32_t GetPositiveInteger2(); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetPositiveInteger2(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1084680>
-	struct TArray<Unknown> GetPositiveInteger1Array(); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetPositiveInteger1Array(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1084600>
+	struct TArray<int32_t> GetPositiveInteger1Array(); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetPositiveInteger1Array(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1084600>
 	int32_t GetPositiveInteger1(); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetPositiveInteger1(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10845D0>
 	int32_t GetPosition(); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetPosition(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x10845A0>
-	struct TArray<Unknown> GetLongBytesArray(); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetLongBytesArray(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10842C0>
-	struct Unknown GetLongBytes(); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetLongBytes(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1084290>
-	struct TArray<Unknown> GetIntegerArray(); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetIntegerArray(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1084110>
+	struct TArray<struct ULowEntryLong> GetLongBytesArray(); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetLongBytesArray(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10842C0>
+	struct ULowEntryLong GetLongBytes(); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetLongBytes(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1084290>
+	struct TArray<int32_t> GetIntegerArray(); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetIntegerArray(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1084110>
 	int32_t GetInteger(); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetInteger(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10840E0>
-	struct TArray<Unknown> GetFloatArray(); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetFloatArray(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1083FA0>
+	struct TArray<float> GetFloatArray(); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetFloatArray(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1083FA0>
 	float GetFloat(); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetFloat(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1083F70>
-	struct TArray<Unknown> GetDoubleBytesArray(); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetDoubleBytesArray(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1083EF0>
-	struct Unknown GetDoubleBytes(); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetDoubleBytes(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1083EC0>
-	struct Unknown GetClone(); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetClone(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1083E90>
-	struct TArray<Unknown> GetByteArray(); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetByteArray(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1083B60>
+	struct TArray<struct ULowEntryDouble> GetDoubleBytesArray(); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetDoubleBytesArray(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1083EF0>
+	struct ULowEntryDouble GetDoubleBytes(); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetDoubleBytes(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1083EC0>
+	struct ULowEntryByteDataReader GetClone(); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetClone(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1083E90>
+	struct TArray<char> GetByteArray(); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetByteArray(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1083B60>
 	char GetByte(); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetByte(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1083B30>
-	struct TArray<Unknown> GetBooleanArray(); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetBooleanArray(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1083AB0>
+	struct TArray<char> GetBooleanArray(); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetBooleanArray(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1083AB0>
 	char GetBoolean(); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetBoolean(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1083A80>
 	void Empty(); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.Empty(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1082BE0>
 };
@@ -286,27 +286,27 @@ class ULowEntryByteDataWriter : public Object {
 
 public:
 
-	struct TArray<Unknown> Bytes; // 0x28 (16)
+	struct TArray<char> Bytes; // 0x28 (16)
 
-	void AddStringUtf8Array(struct TArray<Unknown>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddStringUtf8Array(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x107BEB0>
+	void AddStringUtf8Array(struct TArray<struct FString>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddStringUtf8Array(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x107BEB0>
 	void AddStringUtf8(struct FString Value); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddStringUtf8(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x107BE10>
-	void AddPositiveInteger3Array(struct TArray<Unknown>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddPositiveInteger3Array(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x107BD60>
+	void AddPositiveInteger3Array(struct TArray<int32_t>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddPositiveInteger3Array(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x107BD60>
 	void AddPositiveInteger3(int32_t Value); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddPositiveInteger3(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x107BCE0>
-	void AddPositiveInteger2Array(struct TArray<Unknown>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddPositiveInteger2Array(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x107BC30>
+	void AddPositiveInteger2Array(struct TArray<int32_t>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddPositiveInteger2Array(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x107BC30>
 	void AddPositiveInteger2(int32_t Value); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddPositiveInteger2(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x107BBB0>
-	void AddPositiveInteger1Array(struct TArray<Unknown>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddPositiveInteger1Array(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x107BB00>
+	void AddPositiveInteger1Array(struct TArray<int32_t>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddPositiveInteger1Array(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x107BB00>
 	void AddPositiveInteger1(int32_t Value); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddPositiveInteger1(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x107BA80>
-	void AddLongBytesArray(struct TArray<Unknown>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddLongBytesArray(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x107B770>
-	void AddLongBytes(struct Unknown Value); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddLongBytes(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x107B6F0>
-	void AddIntegerArray(struct TArray<Unknown>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddIntegerArray(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x107B9D0>
+	void AddLongBytesArray(struct TArray<struct ULowEntryLong>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddLongBytesArray(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x107B770>
+	void AddLongBytes(struct ULowEntryLong Value); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddLongBytes(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x107B6F0>
+	void AddIntegerArray(struct TArray<int32_t>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddIntegerArray(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x107B9D0>
 	void AddInteger(int32_t Value); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddInteger(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x107B950>
-	void AddFloatArray(struct TArray<Unknown>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddFloatArray(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x107B8A0>
+	void AddFloatArray(struct TArray<float>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddFloatArray(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x107B8A0>
 	void AddFloat(float Value); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddFloat(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x107B820>
-	void AddDoubleBytesArray(struct TArray<Unknown>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddDoubleBytesArray(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x107B770>
-	void AddDoubleBytes(struct Unknown Value); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddDoubleBytes(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x107B6F0>
-	void AddByteArray(struct TArray<Unknown>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddByteArray(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x107B640>
+	void AddDoubleBytesArray(struct TArray<struct ULowEntryDouble>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddDoubleBytesArray(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x107B770>
+	void AddDoubleBytes(struct ULowEntryDouble Value); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddDoubleBytes(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x107B6F0>
+	void AddByteArray(struct TArray<char>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddByteArray(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x107B640>
 	void AddByte(char Value); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddByte(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x107B5C0>
-	void AddBooleanArray(struct TArray<Unknown>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddBooleanArray(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x107B510>
+	void AddBooleanArray(struct TArray<char>& Value); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddBooleanArray(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x107B510>
 	void AddBoolean(char Value); // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddBoolean(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x107B480>
 };
 
@@ -315,27 +315,27 @@ class ULowEntryDouble : public Object {
 
 public:
 
-	struct TArray<Unknown> Bytes; // 0x28 (16)
+	struct TArray<char> Bytes; // 0x28 (16)
 
-	void SetBytes(struct TArray<Unknown>& ByteArray, int32_t Index, int32_t Length); // Function LowEntryExtendedStandardLibrary.LowEntryDouble.SetBytes(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x108B7C0>
-	char LongBytes_LessThan(struct Unknown Value); // Function LowEntryExtendedStandardLibrary.LowEntryDouble.LongBytes_LessThan(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x10881F0>
-	char LongBytes_GreaterThan(struct Unknown Value); // Function LowEntryExtendedStandardLibrary.LowEntryDouble.LongBytes_GreaterThan(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1088160>
+	void SetBytes(struct TArray<char>& ByteArray, int32_t Index, int32_t Length); // Function LowEntryExtendedStandardLibrary.LowEntryDouble.SetBytes(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x108B7C0>
+	char LongBytes_LessThan(struct ULowEntryLong Value); // Function LowEntryExtendedStandardLibrary.LowEntryDouble.LongBytes_LessThan(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x10881F0>
+	char LongBytes_GreaterThan(struct ULowEntryLong Value); // Function LowEntryExtendedStandardLibrary.LowEntryDouble.LongBytes_GreaterThan(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1088160>
 	char Integer_LessThan(int32_t Value); // Function LowEntryExtendedStandardLibrary.LowEntryDouble.Integer_LessThan(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1086E90>
 	char Integer_GreaterThan(int32_t Value); // Function LowEntryExtendedStandardLibrary.LowEntryDouble.Integer_GreaterThan(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1086E00>
-	struct TArray<Unknown> GetBytes(); // Function LowEntryExtendedStandardLibrary.LowEntryDouble.GetBytes(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1083CD0>
+	struct TArray<char> GetBytes(); // Function LowEntryExtendedStandardLibrary.LowEntryDouble.GetBytes(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1083CD0>
 	void Float_Subtract(float Value); // Function LowEntryExtendedStandardLibrary.LowEntryDouble.Float_Subtract(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x10831F0>
 	char Float_LessThan(float Value); // Function LowEntryExtendedStandardLibrary.LowEntryDouble.Float_LessThan(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1083160>
 	char Float_GreaterThan(float Value); // Function LowEntryExtendedStandardLibrary.LowEntryDouble.Float_GreaterThan(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x10830D0>
 	char Float_Equals(float Value); // Function LowEntryExtendedStandardLibrary.LowEntryDouble.Float_Equals(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1083040>
 	void Float_Add(float Value); // Function LowEntryExtendedStandardLibrary.LowEntryDouble.Float_Add(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1082FC0>
-	void DoubleBytes_Subtract(struct Unknown Value); // Function LowEntryExtendedStandardLibrary.LowEntryDouble.DoubleBytes_Subtract(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1082B30>
-	char DoubleBytes_LessThan(struct Unknown Value); // Function LowEntryExtendedStandardLibrary.LowEntryDouble.DoubleBytes_LessThan(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1082AA0>
-	char DoubleBytes_GreaterThan(struct Unknown Value); // Function LowEntryExtendedStandardLibrary.LowEntryDouble.DoubleBytes_GreaterThan(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1082A10>
-	char DoubleBytes_Equals(struct Unknown Value); // Function LowEntryExtendedStandardLibrary.LowEntryDouble.DoubleBytes_Equals(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1082980>
-	void DoubleBytes_Add(struct Unknown Value); // Function LowEntryExtendedStandardLibrary.LowEntryDouble.DoubleBytes_Add(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1082900>
-	struct Unknown CreateClone(); // Function LowEntryExtendedStandardLibrary.LowEntryDouble.CreateClone(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x10820C0>
+	void DoubleBytes_Subtract(struct ULowEntryDouble Value); // Function LowEntryExtendedStandardLibrary.LowEntryDouble.DoubleBytes_Subtract(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1082B30>
+	char DoubleBytes_LessThan(struct ULowEntryDouble Value); // Function LowEntryExtendedStandardLibrary.LowEntryDouble.DoubleBytes_LessThan(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1082AA0>
+	char DoubleBytes_GreaterThan(struct ULowEntryDouble Value); // Function LowEntryExtendedStandardLibrary.LowEntryDouble.DoubleBytes_GreaterThan(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1082A10>
+	char DoubleBytes_Equals(struct ULowEntryDouble Value); // Function LowEntryExtendedStandardLibrary.LowEntryDouble.DoubleBytes_Equals(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1082980>
+	void DoubleBytes_Add(struct ULowEntryDouble Value); // Function LowEntryExtendedStandardLibrary.LowEntryDouble.DoubleBytes_Add(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1082900>
+	struct ULowEntryDouble CreateClone(); // Function LowEntryExtendedStandardLibrary.LowEntryDouble.CreateClone(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x10820C0>
 	struct FString CastToString(int32_t MinFractionalDigits); // Function LowEntryExtendedStandardLibrary.LowEntryDouble.CastToString(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1081A20>
-	struct Unknown CastToLongBytes(); // Function LowEntryExtendedStandardLibrary.LowEntryDouble.CastToLongBytes(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x10819F0>
+	struct ULowEntryLong CastToLongBytes(); // Function LowEntryExtendedStandardLibrary.LowEntryDouble.CastToLongBytes(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x10819F0>
 };
 
 // Class LowEntryExtendedStandardLibrary.LowEntryExecutionQueue
@@ -356,7 +356,7 @@ public:
 	char Result : 0; // 0x29 (1)
 	int32_t KeepAliveCount; // 0x2C (4)
 
-	void WaitTillDone(struct Unknown WorldContextObject, struct Unknown LatentInfo, char& Result_); // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionBoolean.WaitTillDone(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1090640>
+	void WaitTillDone(struct Object WorldContextObject, struct FLatentActionInfo LatentInfo, char& Result_); // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionBoolean.WaitTillDone(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1090640>
 	char IsDone(); // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionBoolean.IsDone(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x10902E0>
 	void GetResult(char& Result_); // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionBoolean.GetResult(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x108FD30>
 	void Done(char Result_); // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionBoolean.Done(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x108F6E0>
@@ -371,7 +371,7 @@ public:
 	float Result; // 0x2C (4)
 	int32_t KeepAliveCount; // 0x30 (4)
 
-	void WaitTillDone(struct Unknown WorldContextObject, struct Unknown LatentInfo, float& Result_); // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionFloat.WaitTillDone(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1090780>
+	void WaitTillDone(struct Object WorldContextObject, struct FLatentActionInfo LatentInfo, float& Result_); // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionFloat.WaitTillDone(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1090780>
 	char IsDone(); // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionFloat.IsDone(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x10902E0>
 	void GetResult(float& Result_); // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionFloat.GetResult(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x108FDC0>
 	void Done(float Result_); // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionFloat.Done(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x108F770>
@@ -386,7 +386,7 @@ public:
 	int32_t Result; // 0x2C (4)
 	int32_t KeepAliveCount; // 0x30 (4)
 
-	void WaitTillDone(struct Unknown WorldContextObject, struct Unknown LatentInfo, int32_t& Result_); // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionInteger.WaitTillDone(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x10908C0>
+	void WaitTillDone(struct Object WorldContextObject, struct FLatentActionInfo LatentInfo, int32_t& Result_); // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionInteger.WaitTillDone(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x10908C0>
 	char IsDone(); // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionInteger.IsDone(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x10902E0>
 	void GetResult(int32_t& Result_); // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionInteger.GetResult(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x108FE60>
 	void Done(int32_t Result_); // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionInteger.Done(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x108F7F0>
@@ -400,7 +400,7 @@ public:
 	char Finished : 0; // 0x28 (1)
 	int32_t KeepAliveCount; // 0x2C (4)
 
-	void WaitTillDone(struct Unknown WorldContextObject, struct Unknown LatentInfo); // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionNone.WaitTillDone(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1090A00>
+	void WaitTillDone(struct Object WorldContextObject, struct FLatentActionInfo LatentInfo); // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionNone.WaitTillDone(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1090A00>
 	char IsDone(); // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionNone.IsDone(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x10902E0>
 	void Done(); // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionNone.Done(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x108F870>
 };
@@ -411,13 +411,13 @@ class ULowEntryLatentActionObject : public Object {
 public:
 
 	char Finished : 0; // 0x28 (1)
-	struct Unknown Result; // 0x30 (8)
+	struct Object Result; // 0x30 (8)
 	int32_t KeepAliveCount; // 0x38 (4)
 
-	void WaitTillDone(struct Unknown WorldContextObject, struct Unknown LatentInfo, struct Unknown& Result_); // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionObject.WaitTillDone(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1090AF0>
+	void WaitTillDone(struct Object WorldContextObject, struct FLatentActionInfo LatentInfo, struct Object& Result_); // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionObject.WaitTillDone(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1090AF0>
 	char IsDone(); // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionObject.IsDone(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x10902E0>
-	void GetResult(struct Unknown& Result_); // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionObject.GetResult(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x108FEF0>
-	void Done(struct Unknown Result_); // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionObject.Done(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x108F890>
+	void GetResult(struct Object& Result_); // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionObject.GetResult(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x108FEF0>
+	void Done(struct Object Result_); // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionObject.Done(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x108F890>
 };
 
 // Class LowEntryExtendedStandardLibrary.LowEntryLatentActionString
@@ -429,7 +429,7 @@ public:
 	struct FString Result; // 0x30 (16)
 	int32_t KeepAliveCount; // 0x40 (4)
 
-	void WaitTillDone(struct Unknown WorldContextObject, struct Unknown LatentInfo, struct FString& Result_); // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionString.WaitTillDone(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1090C30>
+	void WaitTillDone(struct Object WorldContextObject, struct FLatentActionInfo LatentInfo, struct FString& Result_); // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionString.WaitTillDone(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x1090C30>
 	char IsDone(); // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionString.IsDone(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x10902E0>
 	void GetResult(struct FString& Result_); // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionString.GetResult(Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x108FF80>
 	void Done(struct FString Result_); // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionString.Done(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x108F910>
@@ -440,27 +440,27 @@ class ULowEntryLong : public Object {
 
 public:
 
-	struct TArray<Unknown> Bytes; // 0x28 (16)
+	struct TArray<char> Bytes; // 0x28 (16)
 
-	void SetBytes(struct TArray<Unknown>& ByteArray, int32_t Index, int32_t Length); // Function LowEntryExtendedStandardLibrary.LowEntryLong.SetBytes(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x108B7C0>
-	void LongBytes_Subtract(struct Unknown Value); // Function LowEntryExtendedStandardLibrary.LowEntryLong.LongBytes_Subtract(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1090540>
-	char LongBytes_LessThan(struct Unknown Value); // Function LowEntryExtendedStandardLibrary.LowEntryLong.LongBytes_LessThan(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x10904B0>
-	char LongBytes_GreaterThan(struct Unknown Value); // Function LowEntryExtendedStandardLibrary.LowEntryLong.LongBytes_GreaterThan(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1090420>
-	char LongBytes_Equals(struct Unknown Value); // Function LowEntryExtendedStandardLibrary.LowEntryLong.LongBytes_Equals(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1090390>
-	void LongBytes_Add(struct Unknown Value); // Function LowEntryExtendedStandardLibrary.LowEntryLong.LongBytes_Add(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1090310>
+	void SetBytes(struct TArray<char>& ByteArray, int32_t Index, int32_t Length); // Function LowEntryExtendedStandardLibrary.LowEntryLong.SetBytes(Final|Native|Public|HasOutParms|BlueprintCallable) // <Game_BE.exe+0x108B7C0>
+	void LongBytes_Subtract(struct ULowEntryLong Value); // Function LowEntryExtendedStandardLibrary.LowEntryLong.LongBytes_Subtract(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1090540>
+	char LongBytes_LessThan(struct ULowEntryLong Value); // Function LowEntryExtendedStandardLibrary.LowEntryLong.LongBytes_LessThan(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x10904B0>
+	char LongBytes_GreaterThan(struct ULowEntryLong Value); // Function LowEntryExtendedStandardLibrary.LowEntryLong.LongBytes_GreaterThan(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1090420>
+	char LongBytes_Equals(struct ULowEntryLong Value); // Function LowEntryExtendedStandardLibrary.LowEntryLong.LongBytes_Equals(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1090390>
+	void LongBytes_Add(struct ULowEntryLong Value); // Function LowEntryExtendedStandardLibrary.LowEntryLong.LongBytes_Add(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1090310>
 	void Integer_Subtract(int32_t Value); // Function LowEntryExtendedStandardLibrary.LowEntryLong.Integer_Subtract(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1090260>
 	char Integer_LessThan(int32_t Value); // Function LowEntryExtendedStandardLibrary.LowEntryLong.Integer_LessThan(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x10901D0>
 	char Integer_GreaterThan(int32_t Value); // Function LowEntryExtendedStandardLibrary.LowEntryLong.Integer_GreaterThan(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1090140>
 	char Integer_Equals(int32_t Value); // Function LowEntryExtendedStandardLibrary.LowEntryLong.Integer_Equals(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x10900B0>
 	void Integer_Add(int32_t Value); // Function LowEntryExtendedStandardLibrary.LowEntryLong.Integer_Add(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x1090030>
-	struct TArray<Unknown> GetBytes(); // Function LowEntryExtendedStandardLibrary.LowEntryLong.GetBytes(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1083CD0>
+	struct TArray<char> GetBytes(); // Function LowEntryExtendedStandardLibrary.LowEntryLong.GetBytes(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x1083CD0>
 	char Float_LessThan(float Value); // Function LowEntryExtendedStandardLibrary.LowEntryLong.Float_LessThan(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x108FBB0>
 	char Float_GreaterThan(float Value); // Function LowEntryExtendedStandardLibrary.LowEntryLong.Float_GreaterThan(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x108FB20>
-	char DoubleBytes_LessThan(struct Unknown Value); // Function LowEntryExtendedStandardLibrary.LowEntryLong.DoubleBytes_LessThan(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x108FA90>
-	char DoubleBytes_GreaterThan(struct Unknown Value); // Function LowEntryExtendedStandardLibrary.LowEntryLong.DoubleBytes_GreaterThan(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x108FA00>
-	struct Unknown CreateClone(); // Function LowEntryExtendedStandardLibrary.LowEntryLong.CreateClone(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x108F6B0>
+	char DoubleBytes_LessThan(struct ULowEntryDouble Value); // Function LowEntryExtendedStandardLibrary.LowEntryLong.DoubleBytes_LessThan(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x108FA90>
+	char DoubleBytes_GreaterThan(struct ULowEntryDouble Value); // Function LowEntryExtendedStandardLibrary.LowEntryLong.DoubleBytes_GreaterThan(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x108FA00>
+	struct ULowEntryLong CreateClone(); // Function LowEntryExtendedStandardLibrary.LowEntryLong.CreateClone(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x108F6B0>
 	struct FString CastToString(); // Function LowEntryExtendedStandardLibrary.LowEntryLong.CastToString(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x108F630>
-	struct Unknown CastToDoubleBytes(); // Function LowEntryExtendedStandardLibrary.LowEntryLong.CastToDoubleBytes(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x108F600>
+	struct ULowEntryDouble CastToDoubleBytes(); // Function LowEntryExtendedStandardLibrary.LowEntryLong.CastToDoubleBytes(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x108F600>
 };
 
 // Class LowEntryExtendedStandardLibrary.LowEntryParsedHashcash
@@ -470,12 +470,12 @@ public:
 
 	char Valid : 0; // 0x28 (1)
 	struct FString Resource; // 0x30 (16)
-	struct Unknown Date; // 0x40 (8)
+	struct FDateTime Date; // 0x40 (8)
 	int32_t Bits; // 0x48 (4)
 
 	struct FString ToString(); // Function LowEntryExtendedStandardLibrary.LowEntryParsedHashcash.ToString(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x10905C0>
 	struct FString GetResource(); // Function LowEntryExtendedStandardLibrary.LowEntryParsedHashcash.GetResource(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x108FCB0>
-	struct Unknown GetDate(); // Function LowEntryExtendedStandardLibrary.LowEntryParsedHashcash.GetDate(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x108FC70>
+	struct FDateTime GetDate(); // Function LowEntryExtendedStandardLibrary.LowEntryParsedHashcash.GetDate(Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x108FC70>
 	int32_t GetBits(); // Function LowEntryExtendedStandardLibrary.LowEntryParsedHashcash.GetBits(Final|Native|Public|BlueprintCallable|BlueprintPure) // <Game_BE.exe+0x108FC40>
 };
 
@@ -493,7 +493,7 @@ struct FLowEntryRegexMatch {
 	int32_t BeginIndex; // 0x4 (4)
 	int32_t EndIndex; // 0x8 (4)
 	struct FString Match; // 0x10 (16)
-	struct TArray<Unknown> CaptureGroups; // 0x20 (16)
+	struct TArray<struct FLowEntryRegexCaptureGroup> CaptureGroups; // 0x20 (16)
 };
 
 // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.SetPosition
@@ -544,12 +544,12 @@ inline int32_t ULowEntryBitDataReader::Remaining() {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetStringUtf8Array
-inline struct TArray<Unknown> ULowEntryBitDataReader::GetStringUtf8Array() {
+inline struct TArray<struct FString> ULowEntryBitDataReader::GetStringUtf8Array() {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetStringUtf8Array");
 
 	struct GetStringUtf8Array_Params {
 		
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<struct FString> ReturnValue;
 
 	}; GetStringUtf8Array_Params Params;
 
@@ -580,12 +580,12 @@ inline struct FString ULowEntryBitDataReader::GetStringUtf8() {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetPositiveInteger3Array
-inline struct TArray<Unknown> ULowEntryBitDataReader::GetPositiveInteger3Array() {
+inline struct TArray<int32_t> ULowEntryBitDataReader::GetPositiveInteger3Array() {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetPositiveInteger3Array");
 
 	struct GetPositiveInteger3Array_Params {
 		
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<int32_t> ReturnValue;
 
 	}; GetPositiveInteger3Array_Params Params;
 
@@ -616,12 +616,12 @@ inline int32_t ULowEntryBitDataReader::GetPositiveInteger3() {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetPositiveInteger2Array
-inline struct TArray<Unknown> ULowEntryBitDataReader::GetPositiveInteger2Array() {
+inline struct TArray<int32_t> ULowEntryBitDataReader::GetPositiveInteger2Array() {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetPositiveInteger2Array");
 
 	struct GetPositiveInteger2Array_Params {
 		
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<int32_t> ReturnValue;
 
 	}; GetPositiveInteger2Array_Params Params;
 
@@ -652,12 +652,12 @@ inline int32_t ULowEntryBitDataReader::GetPositiveInteger2() {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetPositiveInteger1Array
-inline struct TArray<Unknown> ULowEntryBitDataReader::GetPositiveInteger1Array() {
+inline struct TArray<int32_t> ULowEntryBitDataReader::GetPositiveInteger1Array() {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetPositiveInteger1Array");
 
 	struct GetPositiveInteger1Array_Params {
 		
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<int32_t> ReturnValue;
 
 	}; GetPositiveInteger1Array_Params Params;
 
@@ -706,12 +706,12 @@ inline int32_t ULowEntryBitDataReader::GetPosition() {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetLongBytesArray
-inline struct TArray<Unknown> ULowEntryBitDataReader::GetLongBytesArray() {
+inline struct TArray<struct ULowEntryLong> ULowEntryBitDataReader::GetLongBytesArray() {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetLongBytesArray");
 
 	struct GetLongBytesArray_Params {
 		
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<struct ULowEntryLong> ReturnValue;
 
 	}; GetLongBytesArray_Params Params;
 
@@ -724,12 +724,12 @@ inline struct TArray<Unknown> ULowEntryBitDataReader::GetLongBytesArray() {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetLongBytes
-inline struct Unknown ULowEntryBitDataReader::GetLongBytes() {
+inline struct ULowEntryLong ULowEntryBitDataReader::GetLongBytes() {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetLongBytes");
 
 	struct GetLongBytes_Params {
 		
-		struct Unknown ReturnValue;
+		struct ULowEntryLong ReturnValue;
 
 	}; GetLongBytes_Params Params;
 
@@ -780,12 +780,12 @@ inline int32_t ULowEntryBitDataReader::GetIntegerLeastSignificantBits(int32_t Bi
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetIntegerArrayMostSignificantBits
-inline struct TArray<Unknown> ULowEntryBitDataReader::GetIntegerArrayMostSignificantBits(int32_t BitCount) {
+inline struct TArray<int32_t> ULowEntryBitDataReader::GetIntegerArrayMostSignificantBits(int32_t BitCount) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetIntegerArrayMostSignificantBits");
 
 	struct GetIntegerArrayMostSignificantBits_Params {
 		int32_t BitCount;
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<int32_t> ReturnValue;
 
 	}; GetIntegerArrayMostSignificantBits_Params Params;
 
@@ -799,12 +799,12 @@ inline struct TArray<Unknown> ULowEntryBitDataReader::GetIntegerArrayMostSignifi
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetIntegerArrayLeastSignificantBits
-inline struct TArray<Unknown> ULowEntryBitDataReader::GetIntegerArrayLeastSignificantBits(int32_t BitCount) {
+inline struct TArray<int32_t> ULowEntryBitDataReader::GetIntegerArrayLeastSignificantBits(int32_t BitCount) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetIntegerArrayLeastSignificantBits");
 
 	struct GetIntegerArrayLeastSignificantBits_Params {
 		int32_t BitCount;
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<int32_t> ReturnValue;
 
 	}; GetIntegerArrayLeastSignificantBits_Params Params;
 
@@ -818,12 +818,12 @@ inline struct TArray<Unknown> ULowEntryBitDataReader::GetIntegerArrayLeastSignif
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetIntegerArray
-inline struct TArray<Unknown> ULowEntryBitDataReader::GetIntegerArray() {
+inline struct TArray<int32_t> ULowEntryBitDataReader::GetIntegerArray() {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetIntegerArray");
 
 	struct GetIntegerArray_Params {
 		
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<int32_t> ReturnValue;
 
 	}; GetIntegerArray_Params Params;
 
@@ -854,12 +854,12 @@ inline int32_t ULowEntryBitDataReader::GetInteger() {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetFloatArray
-inline struct TArray<Unknown> ULowEntryBitDataReader::GetFloatArray() {
+inline struct TArray<float> ULowEntryBitDataReader::GetFloatArray() {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetFloatArray");
 
 	struct GetFloatArray_Params {
 		
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<float> ReturnValue;
 
 	}; GetFloatArray_Params Params;
 
@@ -890,12 +890,12 @@ inline float ULowEntryBitDataReader::GetFloat() {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetDoubleBytesArray
-inline struct TArray<Unknown> ULowEntryBitDataReader::GetDoubleBytesArray() {
+inline struct TArray<struct ULowEntryDouble> ULowEntryBitDataReader::GetDoubleBytesArray() {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetDoubleBytesArray");
 
 	struct GetDoubleBytesArray_Params {
 		
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<struct ULowEntryDouble> ReturnValue;
 
 	}; GetDoubleBytesArray_Params Params;
 
@@ -908,12 +908,12 @@ inline struct TArray<Unknown> ULowEntryBitDataReader::GetDoubleBytesArray() {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetDoubleBytes
-inline struct Unknown ULowEntryBitDataReader::GetDoubleBytes() {
+inline struct ULowEntryDouble ULowEntryBitDataReader::GetDoubleBytes() {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetDoubleBytes");
 
 	struct GetDoubleBytes_Params {
 		
-		struct Unknown ReturnValue;
+		struct ULowEntryDouble ReturnValue;
 
 	}; GetDoubleBytes_Params Params;
 
@@ -926,12 +926,12 @@ inline struct Unknown ULowEntryBitDataReader::GetDoubleBytes() {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetClone
-inline struct Unknown ULowEntryBitDataReader::GetClone() {
+inline struct ULowEntryBitDataReader ULowEntryBitDataReader::GetClone() {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetClone");
 
 	struct GetClone_Params {
 		
-		struct Unknown ReturnValue;
+		struct ULowEntryBitDataReader ReturnValue;
 
 	}; GetClone_Params Params;
 
@@ -982,12 +982,12 @@ inline char ULowEntryBitDataReader::GetByteLeastSignificantBits(int32_t BitCount
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetByteArrayMostSignificantBits
-inline struct TArray<Unknown> ULowEntryBitDataReader::GetByteArrayMostSignificantBits(int32_t BitCount) {
+inline struct TArray<char> ULowEntryBitDataReader::GetByteArrayMostSignificantBits(int32_t BitCount) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetByteArrayMostSignificantBits");
 
 	struct GetByteArrayMostSignificantBits_Params {
 		int32_t BitCount;
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<char> ReturnValue;
 
 	}; GetByteArrayMostSignificantBits_Params Params;
 
@@ -1001,12 +1001,12 @@ inline struct TArray<Unknown> ULowEntryBitDataReader::GetByteArrayMostSignifican
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetByteArrayLeastSignificantBits
-inline struct TArray<Unknown> ULowEntryBitDataReader::GetByteArrayLeastSignificantBits(int32_t BitCount) {
+inline struct TArray<char> ULowEntryBitDataReader::GetByteArrayLeastSignificantBits(int32_t BitCount) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetByteArrayLeastSignificantBits");
 
 	struct GetByteArrayLeastSignificantBits_Params {
 		int32_t BitCount;
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<char> ReturnValue;
 
 	}; GetByteArrayLeastSignificantBits_Params Params;
 
@@ -1020,12 +1020,12 @@ inline struct TArray<Unknown> ULowEntryBitDataReader::GetByteArrayLeastSignifica
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetByteArray
-inline struct TArray<Unknown> ULowEntryBitDataReader::GetByteArray() {
+inline struct TArray<char> ULowEntryBitDataReader::GetByteArray() {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetByteArray");
 
 	struct GetByteArray_Params {
 		
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<char> ReturnValue;
 
 	}; GetByteArray_Params Params;
 
@@ -1056,12 +1056,12 @@ inline char ULowEntryBitDataReader::GetByte() {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetBooleanArray
-inline struct TArray<Unknown> ULowEntryBitDataReader::GetBooleanArray() {
+inline struct TArray<char> ULowEntryBitDataReader::GetBooleanArray() {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetBooleanArray");
 
 	struct GetBooleanArray_Params {
 		
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<char> ReturnValue;
 
 	}; GetBooleanArray_Params Params;
 
@@ -1092,12 +1092,12 @@ inline char ULowEntryBitDataReader::GetBoolean() {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetBitArray
-inline struct TArray<Unknown> ULowEntryBitDataReader::GetBitArray() {
+inline struct TArray<char> ULowEntryBitDataReader::GetBitArray() {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataReader.GetBitArray");
 
 	struct GetBitArray_Params {
 		
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<char> ReturnValue;
 
 	}; GetBitArray_Params Params;
 
@@ -1142,11 +1142,11 @@ inline void ULowEntryBitDataReader::Empty() {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddStringUtf8Array
-inline void ULowEntryBitDataWriter::AddStringUtf8Array(struct TArray<Unknown>& Value) {
+inline void ULowEntryBitDataWriter::AddStringUtf8Array(struct TArray<struct FString>& Value) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddStringUtf8Array");
 
 	struct AddStringUtf8Array_Params {
-		struct TArray<Unknown>& Value;
+		struct TArray<struct FString>& Value;
 	}; AddStringUtf8Array_Params Params;
 
 
@@ -1174,11 +1174,11 @@ inline void ULowEntryBitDataWriter::AddStringUtf8(struct FString Value) {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddPositiveInteger3Array
-inline void ULowEntryBitDataWriter::AddPositiveInteger3Array(struct TArray<Unknown>& Value) {
+inline void ULowEntryBitDataWriter::AddPositiveInteger3Array(struct TArray<int32_t>& Value) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddPositiveInteger3Array");
 
 	struct AddPositiveInteger3Array_Params {
-		struct TArray<Unknown>& Value;
+		struct TArray<int32_t>& Value;
 	}; AddPositiveInteger3Array_Params Params;
 
 
@@ -1206,11 +1206,11 @@ inline void ULowEntryBitDataWriter::AddPositiveInteger3(int32_t Value) {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddPositiveInteger2Array
-inline void ULowEntryBitDataWriter::AddPositiveInteger2Array(struct TArray<Unknown>& Value) {
+inline void ULowEntryBitDataWriter::AddPositiveInteger2Array(struct TArray<int32_t>& Value) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddPositiveInteger2Array");
 
 	struct AddPositiveInteger2Array_Params {
-		struct TArray<Unknown>& Value;
+		struct TArray<int32_t>& Value;
 	}; AddPositiveInteger2Array_Params Params;
 
 
@@ -1238,11 +1238,11 @@ inline void ULowEntryBitDataWriter::AddPositiveInteger2(int32_t Value) {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddPositiveInteger1Array
-inline void ULowEntryBitDataWriter::AddPositiveInteger1Array(struct TArray<Unknown>& Value) {
+inline void ULowEntryBitDataWriter::AddPositiveInteger1Array(struct TArray<int32_t>& Value) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddPositiveInteger1Array");
 
 	struct AddPositiveInteger1Array_Params {
-		struct TArray<Unknown>& Value;
+		struct TArray<int32_t>& Value;
 	}; AddPositiveInteger1Array_Params Params;
 
 
@@ -1270,11 +1270,11 @@ inline void ULowEntryBitDataWriter::AddPositiveInteger1(int32_t Value) {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddLongBytesArray
-inline void ULowEntryBitDataWriter::AddLongBytesArray(struct TArray<Unknown>& Value) {
+inline void ULowEntryBitDataWriter::AddLongBytesArray(struct TArray<struct ULowEntryLong>& Value) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddLongBytesArray");
 
 	struct AddLongBytesArray_Params {
-		struct TArray<Unknown>& Value;
+		struct TArray<struct ULowEntryLong>& Value;
 	}; AddLongBytesArray_Params Params;
 
 
@@ -1287,11 +1287,11 @@ inline void ULowEntryBitDataWriter::AddLongBytesArray(struct TArray<Unknown>& Va
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddLongBytes
-inline void ULowEntryBitDataWriter::AddLongBytes(struct Unknown Value) {
+inline void ULowEntryBitDataWriter::AddLongBytes(struct ULowEntryLong Value) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddLongBytes");
 
 	struct AddLongBytes_Params {
-		struct Unknown Value;
+		struct ULowEntryLong Value;
 	}; AddLongBytes_Params Params;
 
 	Params.Value = Value;
@@ -1336,11 +1336,11 @@ inline void ULowEntryBitDataWriter::AddIntegerLeastSignificantBits(int32_t Value
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddIntegerArrayMostSignificantBits
-inline void ULowEntryBitDataWriter::AddIntegerArrayMostSignificantBits(struct TArray<Unknown>& Value, int32_t BitCount) {
+inline void ULowEntryBitDataWriter::AddIntegerArrayMostSignificantBits(struct TArray<int32_t>& Value, int32_t BitCount) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddIntegerArrayMostSignificantBits");
 
 	struct AddIntegerArrayMostSignificantBits_Params {
-		struct TArray<Unknown>& Value;
+		struct TArray<int32_t>& Value;
 		int32_t BitCount;
 	}; AddIntegerArrayMostSignificantBits_Params Params;
 
@@ -1355,11 +1355,11 @@ inline void ULowEntryBitDataWriter::AddIntegerArrayMostSignificantBits(struct TA
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddIntegerArrayLeastSignificantBits
-inline void ULowEntryBitDataWriter::AddIntegerArrayLeastSignificantBits(struct TArray<Unknown>& Value, int32_t BitCount) {
+inline void ULowEntryBitDataWriter::AddIntegerArrayLeastSignificantBits(struct TArray<int32_t>& Value, int32_t BitCount) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddIntegerArrayLeastSignificantBits");
 
 	struct AddIntegerArrayLeastSignificantBits_Params {
-		struct TArray<Unknown>& Value;
+		struct TArray<int32_t>& Value;
 		int32_t BitCount;
 	}; AddIntegerArrayLeastSignificantBits_Params Params;
 
@@ -1374,11 +1374,11 @@ inline void ULowEntryBitDataWriter::AddIntegerArrayLeastSignificantBits(struct T
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddIntegerArray
-inline void ULowEntryBitDataWriter::AddIntegerArray(struct TArray<Unknown>& Value) {
+inline void ULowEntryBitDataWriter::AddIntegerArray(struct TArray<int32_t>& Value) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddIntegerArray");
 
 	struct AddIntegerArray_Params {
-		struct TArray<Unknown>& Value;
+		struct TArray<int32_t>& Value;
 	}; AddIntegerArray_Params Params;
 
 
@@ -1406,11 +1406,11 @@ inline void ULowEntryBitDataWriter::AddInteger(int32_t Value) {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddFloatArray
-inline void ULowEntryBitDataWriter::AddFloatArray(struct TArray<Unknown>& Value) {
+inline void ULowEntryBitDataWriter::AddFloatArray(struct TArray<float>& Value) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddFloatArray");
 
 	struct AddFloatArray_Params {
-		struct TArray<Unknown>& Value;
+		struct TArray<float>& Value;
 	}; AddFloatArray_Params Params;
 
 
@@ -1438,11 +1438,11 @@ inline void ULowEntryBitDataWriter::AddFloat(float Value) {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddDoubleBytesArray
-inline void ULowEntryBitDataWriter::AddDoubleBytesArray(struct TArray<Unknown>& Value) {
+inline void ULowEntryBitDataWriter::AddDoubleBytesArray(struct TArray<struct ULowEntryDouble>& Value) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddDoubleBytesArray");
 
 	struct AddDoubleBytesArray_Params {
-		struct TArray<Unknown>& Value;
+		struct TArray<struct ULowEntryDouble>& Value;
 	}; AddDoubleBytesArray_Params Params;
 
 
@@ -1455,11 +1455,11 @@ inline void ULowEntryBitDataWriter::AddDoubleBytesArray(struct TArray<Unknown>& 
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddDoubleBytes
-inline void ULowEntryBitDataWriter::AddDoubleBytes(struct Unknown Value) {
+inline void ULowEntryBitDataWriter::AddDoubleBytes(struct ULowEntryDouble Value) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddDoubleBytes");
 
 	struct AddDoubleBytes_Params {
-		struct Unknown Value;
+		struct ULowEntryDouble Value;
 	}; AddDoubleBytes_Params Params;
 
 	Params.Value = Value;
@@ -1504,11 +1504,11 @@ inline void ULowEntryBitDataWriter::AddByteLeastSignificantBits(char Value, int3
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddByteArrayMostSignificantBits
-inline void ULowEntryBitDataWriter::AddByteArrayMostSignificantBits(struct TArray<Unknown>& Value, int32_t BitCount) {
+inline void ULowEntryBitDataWriter::AddByteArrayMostSignificantBits(struct TArray<char>& Value, int32_t BitCount) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddByteArrayMostSignificantBits");
 
 	struct AddByteArrayMostSignificantBits_Params {
-		struct TArray<Unknown>& Value;
+		struct TArray<char>& Value;
 		int32_t BitCount;
 	}; AddByteArrayMostSignificantBits_Params Params;
 
@@ -1523,11 +1523,11 @@ inline void ULowEntryBitDataWriter::AddByteArrayMostSignificantBits(struct TArra
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddByteArrayLeastSignificantBits
-inline void ULowEntryBitDataWriter::AddByteArrayLeastSignificantBits(struct TArray<Unknown>& Value, int32_t BitCount) {
+inline void ULowEntryBitDataWriter::AddByteArrayLeastSignificantBits(struct TArray<char>& Value, int32_t BitCount) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddByteArrayLeastSignificantBits");
 
 	struct AddByteArrayLeastSignificantBits_Params {
-		struct TArray<Unknown>& Value;
+		struct TArray<char>& Value;
 		int32_t BitCount;
 	}; AddByteArrayLeastSignificantBits_Params Params;
 
@@ -1542,11 +1542,11 @@ inline void ULowEntryBitDataWriter::AddByteArrayLeastSignificantBits(struct TArr
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddByteArray
-inline void ULowEntryBitDataWriter::AddByteArray(struct TArray<Unknown>& Value) {
+inline void ULowEntryBitDataWriter::AddByteArray(struct TArray<char>& Value) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddByteArray");
 
 	struct AddByteArray_Params {
-		struct TArray<Unknown>& Value;
+		struct TArray<char>& Value;
 	}; AddByteArray_Params Params;
 
 
@@ -1574,11 +1574,11 @@ inline void ULowEntryBitDataWriter::AddByte(char Value) {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddBooleanArray
-inline void ULowEntryBitDataWriter::AddBooleanArray(struct TArray<Unknown>& Value) {
+inline void ULowEntryBitDataWriter::AddBooleanArray(struct TArray<char>& Value) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddBooleanArray");
 
 	struct AddBooleanArray_Params {
-		struct TArray<Unknown>& Value;
+		struct TArray<char>& Value;
 	}; AddBooleanArray_Params Params;
 
 
@@ -1606,11 +1606,11 @@ inline void ULowEntryBitDataWriter::AddBoolean(char Value) {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddBitArray
-inline void ULowEntryBitDataWriter::AddBitArray(struct TArray<Unknown>& Value) {
+inline void ULowEntryBitDataWriter::AddBitArray(struct TArray<char>& Value) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryBitDataWriter.AddBitArray");
 
 	struct AddBitArray_Params {
-		struct TArray<Unknown>& Value;
+		struct TArray<char>& Value;
 	}; AddBitArray_Params Params;
 
 
@@ -1685,12 +1685,12 @@ inline int32_t ULowEntryByteDataReader::Remaining() {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetStringUtf8Array
-inline struct TArray<Unknown> ULowEntryByteDataReader::GetStringUtf8Array() {
+inline struct TArray<struct FString> ULowEntryByteDataReader::GetStringUtf8Array() {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetStringUtf8Array");
 
 	struct GetStringUtf8Array_Params {
 		
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<struct FString> ReturnValue;
 
 	}; GetStringUtf8Array_Params Params;
 
@@ -1721,12 +1721,12 @@ inline struct FString ULowEntryByteDataReader::GetStringUtf8() {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetPositiveInteger3Array
-inline struct TArray<Unknown> ULowEntryByteDataReader::GetPositiveInteger3Array() {
+inline struct TArray<int32_t> ULowEntryByteDataReader::GetPositiveInteger3Array() {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetPositiveInteger3Array");
 
 	struct GetPositiveInteger3Array_Params {
 		
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<int32_t> ReturnValue;
 
 	}; GetPositiveInteger3Array_Params Params;
 
@@ -1757,12 +1757,12 @@ inline int32_t ULowEntryByteDataReader::GetPositiveInteger3() {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetPositiveInteger2Array
-inline struct TArray<Unknown> ULowEntryByteDataReader::GetPositiveInteger2Array() {
+inline struct TArray<int32_t> ULowEntryByteDataReader::GetPositiveInteger2Array() {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetPositiveInteger2Array");
 
 	struct GetPositiveInteger2Array_Params {
 		
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<int32_t> ReturnValue;
 
 	}; GetPositiveInteger2Array_Params Params;
 
@@ -1793,12 +1793,12 @@ inline int32_t ULowEntryByteDataReader::GetPositiveInteger2() {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetPositiveInteger1Array
-inline struct TArray<Unknown> ULowEntryByteDataReader::GetPositiveInteger1Array() {
+inline struct TArray<int32_t> ULowEntryByteDataReader::GetPositiveInteger1Array() {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetPositiveInteger1Array");
 
 	struct GetPositiveInteger1Array_Params {
 		
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<int32_t> ReturnValue;
 
 	}; GetPositiveInteger1Array_Params Params;
 
@@ -1847,12 +1847,12 @@ inline int32_t ULowEntryByteDataReader::GetPosition() {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetLongBytesArray
-inline struct TArray<Unknown> ULowEntryByteDataReader::GetLongBytesArray() {
+inline struct TArray<struct ULowEntryLong> ULowEntryByteDataReader::GetLongBytesArray() {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetLongBytesArray");
 
 	struct GetLongBytesArray_Params {
 		
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<struct ULowEntryLong> ReturnValue;
 
 	}; GetLongBytesArray_Params Params;
 
@@ -1865,12 +1865,12 @@ inline struct TArray<Unknown> ULowEntryByteDataReader::GetLongBytesArray() {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetLongBytes
-inline struct Unknown ULowEntryByteDataReader::GetLongBytes() {
+inline struct ULowEntryLong ULowEntryByteDataReader::GetLongBytes() {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetLongBytes");
 
 	struct GetLongBytes_Params {
 		
-		struct Unknown ReturnValue;
+		struct ULowEntryLong ReturnValue;
 
 	}; GetLongBytes_Params Params;
 
@@ -1883,12 +1883,12 @@ inline struct Unknown ULowEntryByteDataReader::GetLongBytes() {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetIntegerArray
-inline struct TArray<Unknown> ULowEntryByteDataReader::GetIntegerArray() {
+inline struct TArray<int32_t> ULowEntryByteDataReader::GetIntegerArray() {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetIntegerArray");
 
 	struct GetIntegerArray_Params {
 		
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<int32_t> ReturnValue;
 
 	}; GetIntegerArray_Params Params;
 
@@ -1919,12 +1919,12 @@ inline int32_t ULowEntryByteDataReader::GetInteger() {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetFloatArray
-inline struct TArray<Unknown> ULowEntryByteDataReader::GetFloatArray() {
+inline struct TArray<float> ULowEntryByteDataReader::GetFloatArray() {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetFloatArray");
 
 	struct GetFloatArray_Params {
 		
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<float> ReturnValue;
 
 	}; GetFloatArray_Params Params;
 
@@ -1955,12 +1955,12 @@ inline float ULowEntryByteDataReader::GetFloat() {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetDoubleBytesArray
-inline struct TArray<Unknown> ULowEntryByteDataReader::GetDoubleBytesArray() {
+inline struct TArray<struct ULowEntryDouble> ULowEntryByteDataReader::GetDoubleBytesArray() {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetDoubleBytesArray");
 
 	struct GetDoubleBytesArray_Params {
 		
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<struct ULowEntryDouble> ReturnValue;
 
 	}; GetDoubleBytesArray_Params Params;
 
@@ -1973,12 +1973,12 @@ inline struct TArray<Unknown> ULowEntryByteDataReader::GetDoubleBytesArray() {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetDoubleBytes
-inline struct Unknown ULowEntryByteDataReader::GetDoubleBytes() {
+inline struct ULowEntryDouble ULowEntryByteDataReader::GetDoubleBytes() {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetDoubleBytes");
 
 	struct GetDoubleBytes_Params {
 		
-		struct Unknown ReturnValue;
+		struct ULowEntryDouble ReturnValue;
 
 	}; GetDoubleBytes_Params Params;
 
@@ -1991,12 +1991,12 @@ inline struct Unknown ULowEntryByteDataReader::GetDoubleBytes() {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetClone
-inline struct Unknown ULowEntryByteDataReader::GetClone() {
+inline struct ULowEntryByteDataReader ULowEntryByteDataReader::GetClone() {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetClone");
 
 	struct GetClone_Params {
 		
-		struct Unknown ReturnValue;
+		struct ULowEntryByteDataReader ReturnValue;
 
 	}; GetClone_Params Params;
 
@@ -2009,12 +2009,12 @@ inline struct Unknown ULowEntryByteDataReader::GetClone() {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetByteArray
-inline struct TArray<Unknown> ULowEntryByteDataReader::GetByteArray() {
+inline struct TArray<char> ULowEntryByteDataReader::GetByteArray() {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetByteArray");
 
 	struct GetByteArray_Params {
 		
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<char> ReturnValue;
 
 	}; GetByteArray_Params Params;
 
@@ -2045,12 +2045,12 @@ inline char ULowEntryByteDataReader::GetByte() {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetBooleanArray
-inline struct TArray<Unknown> ULowEntryByteDataReader::GetBooleanArray() {
+inline struct TArray<char> ULowEntryByteDataReader::GetBooleanArray() {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataReader.GetBooleanArray");
 
 	struct GetBooleanArray_Params {
 		
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<char> ReturnValue;
 
 	}; GetBooleanArray_Params Params;
 
@@ -2095,11 +2095,11 @@ inline void ULowEntryByteDataReader::Empty() {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddStringUtf8Array
-inline void ULowEntryByteDataWriter::AddStringUtf8Array(struct TArray<Unknown>& Value) {
+inline void ULowEntryByteDataWriter::AddStringUtf8Array(struct TArray<struct FString>& Value) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddStringUtf8Array");
 
 	struct AddStringUtf8Array_Params {
-		struct TArray<Unknown>& Value;
+		struct TArray<struct FString>& Value;
 	}; AddStringUtf8Array_Params Params;
 
 
@@ -2127,11 +2127,11 @@ inline void ULowEntryByteDataWriter::AddStringUtf8(struct FString Value) {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddPositiveInteger3Array
-inline void ULowEntryByteDataWriter::AddPositiveInteger3Array(struct TArray<Unknown>& Value) {
+inline void ULowEntryByteDataWriter::AddPositiveInteger3Array(struct TArray<int32_t>& Value) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddPositiveInteger3Array");
 
 	struct AddPositiveInteger3Array_Params {
-		struct TArray<Unknown>& Value;
+		struct TArray<int32_t>& Value;
 	}; AddPositiveInteger3Array_Params Params;
 
 
@@ -2159,11 +2159,11 @@ inline void ULowEntryByteDataWriter::AddPositiveInteger3(int32_t Value) {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddPositiveInteger2Array
-inline void ULowEntryByteDataWriter::AddPositiveInteger2Array(struct TArray<Unknown>& Value) {
+inline void ULowEntryByteDataWriter::AddPositiveInteger2Array(struct TArray<int32_t>& Value) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddPositiveInteger2Array");
 
 	struct AddPositiveInteger2Array_Params {
-		struct TArray<Unknown>& Value;
+		struct TArray<int32_t>& Value;
 	}; AddPositiveInteger2Array_Params Params;
 
 
@@ -2191,11 +2191,11 @@ inline void ULowEntryByteDataWriter::AddPositiveInteger2(int32_t Value) {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddPositiveInteger1Array
-inline void ULowEntryByteDataWriter::AddPositiveInteger1Array(struct TArray<Unknown>& Value) {
+inline void ULowEntryByteDataWriter::AddPositiveInteger1Array(struct TArray<int32_t>& Value) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddPositiveInteger1Array");
 
 	struct AddPositiveInteger1Array_Params {
-		struct TArray<Unknown>& Value;
+		struct TArray<int32_t>& Value;
 	}; AddPositiveInteger1Array_Params Params;
 
 
@@ -2223,11 +2223,11 @@ inline void ULowEntryByteDataWriter::AddPositiveInteger1(int32_t Value) {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddLongBytesArray
-inline void ULowEntryByteDataWriter::AddLongBytesArray(struct TArray<Unknown>& Value) {
+inline void ULowEntryByteDataWriter::AddLongBytesArray(struct TArray<struct ULowEntryLong>& Value) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddLongBytesArray");
 
 	struct AddLongBytesArray_Params {
-		struct TArray<Unknown>& Value;
+		struct TArray<struct ULowEntryLong>& Value;
 	}; AddLongBytesArray_Params Params;
 
 
@@ -2240,11 +2240,11 @@ inline void ULowEntryByteDataWriter::AddLongBytesArray(struct TArray<Unknown>& V
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddLongBytes
-inline void ULowEntryByteDataWriter::AddLongBytes(struct Unknown Value) {
+inline void ULowEntryByteDataWriter::AddLongBytes(struct ULowEntryLong Value) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddLongBytes");
 
 	struct AddLongBytes_Params {
-		struct Unknown Value;
+		struct ULowEntryLong Value;
 	}; AddLongBytes_Params Params;
 
 	Params.Value = Value;
@@ -2255,11 +2255,11 @@ inline void ULowEntryByteDataWriter::AddLongBytes(struct Unknown Value) {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddIntegerArray
-inline void ULowEntryByteDataWriter::AddIntegerArray(struct TArray<Unknown>& Value) {
+inline void ULowEntryByteDataWriter::AddIntegerArray(struct TArray<int32_t>& Value) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddIntegerArray");
 
 	struct AddIntegerArray_Params {
-		struct TArray<Unknown>& Value;
+		struct TArray<int32_t>& Value;
 	}; AddIntegerArray_Params Params;
 
 
@@ -2287,11 +2287,11 @@ inline void ULowEntryByteDataWriter::AddInteger(int32_t Value) {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddFloatArray
-inline void ULowEntryByteDataWriter::AddFloatArray(struct TArray<Unknown>& Value) {
+inline void ULowEntryByteDataWriter::AddFloatArray(struct TArray<float>& Value) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddFloatArray");
 
 	struct AddFloatArray_Params {
-		struct TArray<Unknown>& Value;
+		struct TArray<float>& Value;
 	}; AddFloatArray_Params Params;
 
 
@@ -2319,11 +2319,11 @@ inline void ULowEntryByteDataWriter::AddFloat(float Value) {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddDoubleBytesArray
-inline void ULowEntryByteDataWriter::AddDoubleBytesArray(struct TArray<Unknown>& Value) {
+inline void ULowEntryByteDataWriter::AddDoubleBytesArray(struct TArray<struct ULowEntryDouble>& Value) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddDoubleBytesArray");
 
 	struct AddDoubleBytesArray_Params {
-		struct TArray<Unknown>& Value;
+		struct TArray<struct ULowEntryDouble>& Value;
 	}; AddDoubleBytesArray_Params Params;
 
 
@@ -2336,11 +2336,11 @@ inline void ULowEntryByteDataWriter::AddDoubleBytesArray(struct TArray<Unknown>&
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddDoubleBytes
-inline void ULowEntryByteDataWriter::AddDoubleBytes(struct Unknown Value) {
+inline void ULowEntryByteDataWriter::AddDoubleBytes(struct ULowEntryDouble Value) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddDoubleBytes");
 
 	struct AddDoubleBytes_Params {
-		struct Unknown Value;
+		struct ULowEntryDouble Value;
 	}; AddDoubleBytes_Params Params;
 
 	Params.Value = Value;
@@ -2351,11 +2351,11 @@ inline void ULowEntryByteDataWriter::AddDoubleBytes(struct Unknown Value) {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddByteArray
-inline void ULowEntryByteDataWriter::AddByteArray(struct TArray<Unknown>& Value) {
+inline void ULowEntryByteDataWriter::AddByteArray(struct TArray<char>& Value) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddByteArray");
 
 	struct AddByteArray_Params {
-		struct TArray<Unknown>& Value;
+		struct TArray<char>& Value;
 	}; AddByteArray_Params Params;
 
 
@@ -2383,11 +2383,11 @@ inline void ULowEntryByteDataWriter::AddByte(char Value) {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddBooleanArray
-inline void ULowEntryByteDataWriter::AddBooleanArray(struct TArray<Unknown>& Value) {
+inline void ULowEntryByteDataWriter::AddBooleanArray(struct TArray<char>& Value) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryByteDataWriter.AddBooleanArray");
 
 	struct AddBooleanArray_Params {
-		struct TArray<Unknown>& Value;
+		struct TArray<char>& Value;
 	}; AddBooleanArray_Params Params;
 
 
@@ -2415,11 +2415,11 @@ inline void ULowEntryByteDataWriter::AddBoolean(char Value) {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryDouble.SetBytes
-inline void ULowEntryDouble::SetBytes(struct TArray<Unknown>& ByteArray, int32_t Index, int32_t Length) {
+inline void ULowEntryDouble::SetBytes(struct TArray<char>& ByteArray, int32_t Index, int32_t Length) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryDouble.SetBytes");
 
 	struct SetBytes_Params {
-		struct TArray<Unknown>& ByteArray;
+		struct TArray<char>& ByteArray;
 		int32_t Index;
 		int32_t Length;
 	}; SetBytes_Params Params;
@@ -2436,11 +2436,11 @@ inline void ULowEntryDouble::SetBytes(struct TArray<Unknown>& ByteArray, int32_t
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryDouble.LongBytes_LessThan
-inline char ULowEntryDouble::LongBytes_LessThan(struct Unknown Value) {
+inline char ULowEntryDouble::LongBytes_LessThan(struct ULowEntryLong Value) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryDouble.LongBytes_LessThan");
 
 	struct LongBytes_LessThan_Params {
-		struct Unknown Value;
+		struct ULowEntryLong Value;
 		char ReturnValue;
 
 	}; LongBytes_LessThan_Params Params;
@@ -2455,11 +2455,11 @@ inline char ULowEntryDouble::LongBytes_LessThan(struct Unknown Value) {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryDouble.LongBytes_GreaterThan
-inline char ULowEntryDouble::LongBytes_GreaterThan(struct Unknown Value) {
+inline char ULowEntryDouble::LongBytes_GreaterThan(struct ULowEntryLong Value) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryDouble.LongBytes_GreaterThan");
 
 	struct LongBytes_GreaterThan_Params {
-		struct Unknown Value;
+		struct ULowEntryLong Value;
 		char ReturnValue;
 
 	}; LongBytes_GreaterThan_Params Params;
@@ -2512,12 +2512,12 @@ inline char ULowEntryDouble::Integer_GreaterThan(int32_t Value) {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryDouble.GetBytes
-inline struct TArray<Unknown> ULowEntryDouble::GetBytes() {
+inline struct TArray<char> ULowEntryDouble::GetBytes() {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryDouble.GetBytes");
 
 	struct GetBytes_Params {
 		
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<char> ReturnValue;
 
 	}; GetBytes_Params Params;
 
@@ -2617,11 +2617,11 @@ inline void ULowEntryDouble::Float_Add(float Value) {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryDouble.DoubleBytes_Subtract
-inline void ULowEntryDouble::DoubleBytes_Subtract(struct Unknown Value) {
+inline void ULowEntryDouble::DoubleBytes_Subtract(struct ULowEntryDouble Value) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryDouble.DoubleBytes_Subtract");
 
 	struct DoubleBytes_Subtract_Params {
-		struct Unknown Value;
+		struct ULowEntryDouble Value;
 	}; DoubleBytes_Subtract_Params Params;
 
 	Params.Value = Value;
@@ -2632,11 +2632,11 @@ inline void ULowEntryDouble::DoubleBytes_Subtract(struct Unknown Value) {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryDouble.DoubleBytes_LessThan
-inline char ULowEntryDouble::DoubleBytes_LessThan(struct Unknown Value) {
+inline char ULowEntryDouble::DoubleBytes_LessThan(struct ULowEntryDouble Value) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryDouble.DoubleBytes_LessThan");
 
 	struct DoubleBytes_LessThan_Params {
-		struct Unknown Value;
+		struct ULowEntryDouble Value;
 		char ReturnValue;
 
 	}; DoubleBytes_LessThan_Params Params;
@@ -2651,11 +2651,11 @@ inline char ULowEntryDouble::DoubleBytes_LessThan(struct Unknown Value) {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryDouble.DoubleBytes_GreaterThan
-inline char ULowEntryDouble::DoubleBytes_GreaterThan(struct Unknown Value) {
+inline char ULowEntryDouble::DoubleBytes_GreaterThan(struct ULowEntryDouble Value) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryDouble.DoubleBytes_GreaterThan");
 
 	struct DoubleBytes_GreaterThan_Params {
-		struct Unknown Value;
+		struct ULowEntryDouble Value;
 		char ReturnValue;
 
 	}; DoubleBytes_GreaterThan_Params Params;
@@ -2670,11 +2670,11 @@ inline char ULowEntryDouble::DoubleBytes_GreaterThan(struct Unknown Value) {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryDouble.DoubleBytes_Equals
-inline char ULowEntryDouble::DoubleBytes_Equals(struct Unknown Value) {
+inline char ULowEntryDouble::DoubleBytes_Equals(struct ULowEntryDouble Value) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryDouble.DoubleBytes_Equals");
 
 	struct DoubleBytes_Equals_Params {
-		struct Unknown Value;
+		struct ULowEntryDouble Value;
 		char ReturnValue;
 
 	}; DoubleBytes_Equals_Params Params;
@@ -2689,11 +2689,11 @@ inline char ULowEntryDouble::DoubleBytes_Equals(struct Unknown Value) {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryDouble.DoubleBytes_Add
-inline void ULowEntryDouble::DoubleBytes_Add(struct Unknown Value) {
+inline void ULowEntryDouble::DoubleBytes_Add(struct ULowEntryDouble Value) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryDouble.DoubleBytes_Add");
 
 	struct DoubleBytes_Add_Params {
-		struct Unknown Value;
+		struct ULowEntryDouble Value;
 	}; DoubleBytes_Add_Params Params;
 
 	Params.Value = Value;
@@ -2704,12 +2704,12 @@ inline void ULowEntryDouble::DoubleBytes_Add(struct Unknown Value) {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryDouble.CreateClone
-inline struct Unknown ULowEntryDouble::CreateClone() {
+inline struct ULowEntryDouble ULowEntryDouble::CreateClone() {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryDouble.CreateClone");
 
 	struct CreateClone_Params {
 		
-		struct Unknown ReturnValue;
+		struct ULowEntryDouble ReturnValue;
 
 	}; CreateClone_Params Params;
 
@@ -2741,12 +2741,12 @@ inline struct FString ULowEntryDouble::CastToString(int32_t MinFractionalDigits)
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryDouble.CastToLongBytes
-inline struct Unknown ULowEntryDouble::CastToLongBytes() {
+inline struct ULowEntryLong ULowEntryDouble::CastToLongBytes() {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryDouble.CastToLongBytes");
 
 	struct CastToLongBytes_Params {
 		
-		struct Unknown ReturnValue;
+		struct ULowEntryLong ReturnValue;
 
 	}; CastToLongBytes_Params Params;
 
@@ -2759,12 +2759,12 @@ inline struct Unknown ULowEntryDouble::CastToLongBytes() {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionBoolean.WaitTillDone
-inline void ULowEntryLatentActionBoolean::WaitTillDone(struct Unknown WorldContextObject, struct Unknown LatentInfo, char& Result_) {
+inline void ULowEntryLatentActionBoolean::WaitTillDone(struct Object WorldContextObject, struct FLatentActionInfo LatentInfo, char& Result_) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLatentActionBoolean.WaitTillDone");
 
 	struct WaitTillDone_Params {
-		struct Unknown WorldContextObject;
-		struct Unknown LatentInfo;
+		struct Object WorldContextObject;
+		struct FLatentActionInfo LatentInfo;
 		char& Result_;
 	}; WaitTillDone_Params Params;
 
@@ -2830,12 +2830,12 @@ inline void ULowEntryLatentActionBoolean::Done(char Result_) {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionFloat.WaitTillDone
-inline void ULowEntryLatentActionFloat::WaitTillDone(struct Unknown WorldContextObject, struct Unknown LatentInfo, float& Result_) {
+inline void ULowEntryLatentActionFloat::WaitTillDone(struct Object WorldContextObject, struct FLatentActionInfo LatentInfo, float& Result_) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLatentActionFloat.WaitTillDone");
 
 	struct WaitTillDone_Params {
-		struct Unknown WorldContextObject;
-		struct Unknown LatentInfo;
+		struct Object WorldContextObject;
+		struct FLatentActionInfo LatentInfo;
 		float& Result_;
 	}; WaitTillDone_Params Params;
 
@@ -2901,12 +2901,12 @@ inline void ULowEntryLatentActionFloat::Done(float Result_) {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionInteger.WaitTillDone
-inline void ULowEntryLatentActionInteger::WaitTillDone(struct Unknown WorldContextObject, struct Unknown LatentInfo, int32_t& Result_) {
+inline void ULowEntryLatentActionInteger::WaitTillDone(struct Object WorldContextObject, struct FLatentActionInfo LatentInfo, int32_t& Result_) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLatentActionInteger.WaitTillDone");
 
 	struct WaitTillDone_Params {
-		struct Unknown WorldContextObject;
-		struct Unknown LatentInfo;
+		struct Object WorldContextObject;
+		struct FLatentActionInfo LatentInfo;
 		int32_t& Result_;
 	}; WaitTillDone_Params Params;
 
@@ -2972,12 +2972,12 @@ inline void ULowEntryLatentActionInteger::Done(int32_t Result_) {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionNone.WaitTillDone
-inline void ULowEntryLatentActionNone::WaitTillDone(struct Unknown WorldContextObject, struct Unknown LatentInfo) {
+inline void ULowEntryLatentActionNone::WaitTillDone(struct Object WorldContextObject, struct FLatentActionInfo LatentInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLatentActionNone.WaitTillDone");
 
 	struct WaitTillDone_Params {
-		struct Unknown WorldContextObject;
-		struct Unknown LatentInfo;
+		struct Object WorldContextObject;
+		struct FLatentActionInfo LatentInfo;
 	}; WaitTillDone_Params Params;
 
 	Params.WorldContextObject = WorldContextObject;
@@ -3021,13 +3021,13 @@ inline void ULowEntryLatentActionNone::Done() {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionObject.WaitTillDone
-inline void ULowEntryLatentActionObject::WaitTillDone(struct Unknown WorldContextObject, struct Unknown LatentInfo, struct Unknown& Result_) {
+inline void ULowEntryLatentActionObject::WaitTillDone(struct Object WorldContextObject, struct FLatentActionInfo LatentInfo, struct Object& Result_) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLatentActionObject.WaitTillDone");
 
 	struct WaitTillDone_Params {
-		struct Unknown WorldContextObject;
-		struct Unknown LatentInfo;
-		struct Unknown& Result_;
+		struct Object WorldContextObject;
+		struct FLatentActionInfo LatentInfo;
+		struct Object& Result_;
 	}; WaitTillDone_Params Params;
 
 	Params.WorldContextObject = WorldContextObject;
@@ -3060,11 +3060,11 @@ inline char ULowEntryLatentActionObject::IsDone() {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionObject.GetResult
-inline void ULowEntryLatentActionObject::GetResult(struct Unknown& Result_) {
+inline void ULowEntryLatentActionObject::GetResult(struct Object& Result_) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLatentActionObject.GetResult");
 
 	struct GetResult_Params {
-		struct Unknown& Result_;
+		struct Object& Result_;
 	}; GetResult_Params Params;
 
 
@@ -3077,11 +3077,11 @@ inline void ULowEntryLatentActionObject::GetResult(struct Unknown& Result_) {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionObject.Done
-inline void ULowEntryLatentActionObject::Done(struct Unknown Result_) {
+inline void ULowEntryLatentActionObject::Done(struct Object Result_) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLatentActionObject.Done");
 
 	struct Done_Params {
-		struct Unknown Result_;
+		struct Object Result_;
 	}; Done_Params Params;
 
 	Params.Result_ = Result_;
@@ -3092,12 +3092,12 @@ inline void ULowEntryLatentActionObject::Done(struct Unknown Result_) {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryLatentActionString.WaitTillDone
-inline void ULowEntryLatentActionString::WaitTillDone(struct Unknown WorldContextObject, struct Unknown LatentInfo, struct FString& Result_) {
+inline void ULowEntryLatentActionString::WaitTillDone(struct Object WorldContextObject, struct FLatentActionInfo LatentInfo, struct FString& Result_) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLatentActionString.WaitTillDone");
 
 	struct WaitTillDone_Params {
-		struct Unknown WorldContextObject;
-		struct Unknown LatentInfo;
+		struct Object WorldContextObject;
+		struct FLatentActionInfo LatentInfo;
 		struct FString& Result_;
 	}; WaitTillDone_Params Params;
 
@@ -3163,11 +3163,11 @@ inline void ULowEntryLatentActionString::Done(struct FString Result_) {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryLong.SetBytes
-inline void ULowEntryLong::SetBytes(struct TArray<Unknown>& ByteArray, int32_t Index, int32_t Length) {
+inline void ULowEntryLong::SetBytes(struct TArray<char>& ByteArray, int32_t Index, int32_t Length) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLong.SetBytes");
 
 	struct SetBytes_Params {
-		struct TArray<Unknown>& ByteArray;
+		struct TArray<char>& ByteArray;
 		int32_t Index;
 		int32_t Length;
 	}; SetBytes_Params Params;
@@ -3184,11 +3184,11 @@ inline void ULowEntryLong::SetBytes(struct TArray<Unknown>& ByteArray, int32_t I
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryLong.LongBytes_Subtract
-inline void ULowEntryLong::LongBytes_Subtract(struct Unknown Value) {
+inline void ULowEntryLong::LongBytes_Subtract(struct ULowEntryLong Value) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLong.LongBytes_Subtract");
 
 	struct LongBytes_Subtract_Params {
-		struct Unknown Value;
+		struct ULowEntryLong Value;
 	}; LongBytes_Subtract_Params Params;
 
 	Params.Value = Value;
@@ -3199,11 +3199,11 @@ inline void ULowEntryLong::LongBytes_Subtract(struct Unknown Value) {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryLong.LongBytes_LessThan
-inline char ULowEntryLong::LongBytes_LessThan(struct Unknown Value) {
+inline char ULowEntryLong::LongBytes_LessThan(struct ULowEntryLong Value) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLong.LongBytes_LessThan");
 
 	struct LongBytes_LessThan_Params {
-		struct Unknown Value;
+		struct ULowEntryLong Value;
 		char ReturnValue;
 
 	}; LongBytes_LessThan_Params Params;
@@ -3218,11 +3218,11 @@ inline char ULowEntryLong::LongBytes_LessThan(struct Unknown Value) {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryLong.LongBytes_GreaterThan
-inline char ULowEntryLong::LongBytes_GreaterThan(struct Unknown Value) {
+inline char ULowEntryLong::LongBytes_GreaterThan(struct ULowEntryLong Value) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLong.LongBytes_GreaterThan");
 
 	struct LongBytes_GreaterThan_Params {
-		struct Unknown Value;
+		struct ULowEntryLong Value;
 		char ReturnValue;
 
 	}; LongBytes_GreaterThan_Params Params;
@@ -3237,11 +3237,11 @@ inline char ULowEntryLong::LongBytes_GreaterThan(struct Unknown Value) {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryLong.LongBytes_Equals
-inline char ULowEntryLong::LongBytes_Equals(struct Unknown Value) {
+inline char ULowEntryLong::LongBytes_Equals(struct ULowEntryLong Value) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLong.LongBytes_Equals");
 
 	struct LongBytes_Equals_Params {
-		struct Unknown Value;
+		struct ULowEntryLong Value;
 		char ReturnValue;
 
 	}; LongBytes_Equals_Params Params;
@@ -3256,11 +3256,11 @@ inline char ULowEntryLong::LongBytes_Equals(struct Unknown Value) {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryLong.LongBytes_Add
-inline void ULowEntryLong::LongBytes_Add(struct Unknown Value) {
+inline void ULowEntryLong::LongBytes_Add(struct ULowEntryLong Value) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLong.LongBytes_Add");
 
 	struct LongBytes_Add_Params {
-		struct Unknown Value;
+		struct ULowEntryLong Value;
 	}; LongBytes_Add_Params Params;
 
 	Params.Value = Value;
@@ -3358,12 +3358,12 @@ inline void ULowEntryLong::Integer_Add(int32_t Value) {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryLong.GetBytes
-inline struct TArray<Unknown> ULowEntryLong::GetBytes() {
+inline struct TArray<char> ULowEntryLong::GetBytes() {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLong.GetBytes");
 
 	struct GetBytes_Params {
 		
-		struct TArray<Unknown> ReturnValue;
+		struct TArray<char> ReturnValue;
 
 	}; GetBytes_Params Params;
 
@@ -3414,11 +3414,11 @@ inline char ULowEntryLong::Float_GreaterThan(float Value) {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryLong.DoubleBytes_LessThan
-inline char ULowEntryLong::DoubleBytes_LessThan(struct Unknown Value) {
+inline char ULowEntryLong::DoubleBytes_LessThan(struct ULowEntryDouble Value) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLong.DoubleBytes_LessThan");
 
 	struct DoubleBytes_LessThan_Params {
-		struct Unknown Value;
+		struct ULowEntryDouble Value;
 		char ReturnValue;
 
 	}; DoubleBytes_LessThan_Params Params;
@@ -3433,11 +3433,11 @@ inline char ULowEntryLong::DoubleBytes_LessThan(struct Unknown Value) {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryLong.DoubleBytes_GreaterThan
-inline char ULowEntryLong::DoubleBytes_GreaterThan(struct Unknown Value) {
+inline char ULowEntryLong::DoubleBytes_GreaterThan(struct ULowEntryDouble Value) {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLong.DoubleBytes_GreaterThan");
 
 	struct DoubleBytes_GreaterThan_Params {
-		struct Unknown Value;
+		struct ULowEntryDouble Value;
 		char ReturnValue;
 
 	}; DoubleBytes_GreaterThan_Params Params;
@@ -3452,12 +3452,12 @@ inline char ULowEntryLong::DoubleBytes_GreaterThan(struct Unknown Value) {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryLong.CreateClone
-inline struct Unknown ULowEntryLong::CreateClone() {
+inline struct ULowEntryLong ULowEntryLong::CreateClone() {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLong.CreateClone");
 
 	struct CreateClone_Params {
 		
-		struct Unknown ReturnValue;
+		struct ULowEntryLong ReturnValue;
 
 	}; CreateClone_Params Params;
 
@@ -3488,12 +3488,12 @@ inline struct FString ULowEntryLong::CastToString() {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryLong.CastToDoubleBytes
-inline struct Unknown ULowEntryLong::CastToDoubleBytes() {
+inline struct ULowEntryDouble ULowEntryLong::CastToDoubleBytes() {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryLong.CastToDoubleBytes");
 
 	struct CastToDoubleBytes_Params {
 		
-		struct Unknown ReturnValue;
+		struct ULowEntryDouble ReturnValue;
 
 	}; CastToDoubleBytes_Params Params;
 
@@ -3542,12 +3542,12 @@ inline struct FString ULowEntryParsedHashcash::GetResource() {
 }
 
 // Function LowEntryExtendedStandardLibrary.LowEntryParsedHashcash.GetDate
-inline struct Unknown ULowEntryParsedHashcash::GetDate() {
+inline struct FDateTime ULowEntryParsedHashcash::GetDate() {
 	static auto fn = UObject::FindObject<UFunction>("Function LowEntryExtendedStandardLibrary.LowEntryParsedHashcash.GetDate");
 
 	struct GetDate_Params {
 		
-		struct Unknown ReturnValue;
+		struct FDateTime ReturnValue;
 
 	}; GetDate_Params Params;
 

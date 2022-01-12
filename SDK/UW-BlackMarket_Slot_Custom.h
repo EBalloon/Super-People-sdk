@@ -3,29 +3,29 @@ class UUW-BlackMarket_Slot_Custom_C : public UUW-BlackMarket_Slot_Base_C {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x3D8 (8)
-	struct Unknown BTN-Menu02; // 0x3E0 (8)
-	struct Unknown CP-SlotInfo; // 0x3E8 (8)
-	struct Unknown IMG-BG; // 0x3F0 (8)
-	struct Unknown IMG-BG-Border; // 0x3F8 (8)
-	struct Unknown IMG-Item; // 0x400 (8)
-	struct Unknown IMG-Mask; // 0x408 (8)
-	struct Unknown IMG-Over; // 0x410 (8)
-	struct Unknown IMG-Over-Border; // 0x418 (8)
-	struct Unknown Menu02; // 0x420 (8)
-	struct Unknown Overlay_Mask; // 0x428 (8)
-	struct Unknown TXT-ItemName; // 0x430 (8)
-	struct Unknown TXT-Menu01; // 0x438 (8)
-	struct Unknown TXT-Menu02; // 0x440 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x3D8 (8)
+	struct UButton BTN-Menu02; // 0x3E0 (8)
+	struct UCanvasPanel CP-SlotInfo; // 0x3E8 (8)
+	struct UImage IMG-BG; // 0x3F0 (8)
+	struct UImage IMG-BG-Border; // 0x3F8 (8)
+	struct UImage IMG-Item; // 0x400 (8)
+	struct UImage IMG-Mask; // 0x408 (8)
+	struct UImage IMG-Over; // 0x410 (8)
+	struct UImage IMG-Over-Border; // 0x418 (8)
+	struct UOverlay Menu02; // 0x420 (8)
+	struct UOverlay Overlay_Mask; // 0x428 (8)
+	struct UTextBlock TXT-ItemName; // 0x430 (8)
+	struct UTextBlock TXT-Menu01; // 0x438 (8)
+	struct UTextBlock TXT-Menu02; // 0x440 (8)
 
-	void SetSlotInfo(struct Unknown BlackmarketDataInfo); // Function UW-BlackMarket_Slot_Custom.UW-BlackMarket_Slot_Custom_C.SetSlotInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	struct Unknown OnClick(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-BlackMarket_Slot_Custom.UW-BlackMarket_Slot_Custom_C.OnClick(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetIconTexture(struct Unknown IconTexture); // Function UW-BlackMarket_Slot_Custom.UW-BlackMarket_Slot_Custom_C.SetIconTexture(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnLoaded_7C34C7D64FB053FED5EAACB72A3EAAD0(struct Unknown Loaded); // Function UW-BlackMarket_Slot_Custom.UW-BlackMarket_Slot_Custom_C.OnLoaded_7C34C7D64FB053FED5EAACB72A3EAAD0(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetSlotInfo(struct FBravoHotelBlackMarketDataType BlackmarketDataInfo); // Function UW-BlackMarket_Slot_Custom.UW-BlackMarket_Slot_Custom_C.SetSlotInfo(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	struct FEventReply OnClick(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-BlackMarket_Slot_Custom.UW-BlackMarket_Slot_Custom_C.OnClick(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetIconTexture(struct TSoftObjectPtr<UPaperSprite> IconTexture); // Function UW-BlackMarket_Slot_Custom.UW-BlackMarket_Slot_Custom_C.SetIconTexture(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_7C34C7D64FB053FED5EAACB72A3EAAD0(struct Object Loaded); // Function UW-BlackMarket_Slot_Custom.UW-BlackMarket_Slot_Custom_C.OnLoaded_7C34C7D64FB053FED5EAACB72A3EAAD0(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-BlackMarket_Slot_Custom.UW-BlackMarket_Slot_Custom_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent); // Function UW-BlackMarket_Slot_Custom.UW-BlackMarket_Slot_Custom_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnMouseLeave(struct Unknown& MouseEvent); // Function UW-BlackMarket_Slot_Custom.UW-BlackMarket_Slot_Custom_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AysncLoading(struct Unknown IconTexture); // Function UW-BlackMarket_Slot_Custom.UW-BlackMarket_Slot_Custom_C.AysncLoading(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnMouseEnter(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent); // Function UW-BlackMarket_Slot_Custom.UW-BlackMarket_Slot_Custom_C.OnMouseEnter(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnMouseLeave(struct FPointerEvent& MouseEvent); // Function UW-BlackMarket_Slot_Custom.UW-BlackMarket_Slot_Custom_C.OnMouseLeave(BlueprintCosmetic|Event|Public|HasOutParms|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AysncLoading(struct TSoftObjectPtr<UPaperSprite> IconTexture); // Function UW-BlackMarket_Slot_Custom.UW-BlackMarket_Slot_Custom_C.AysncLoading(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SwitchMenu(); // Function UW-BlackMarket_Slot_Custom.UW-BlackMarket_Slot_Custom_C.SwitchMenu(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SwitchSlot(); // Function UW-BlackMarket_Slot_Custom.UW-BlackMarket_Slot_Custom_C.SwitchSlot(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void BndEvt__BTN-Menu02_K2Node_ComponentBoundEvent_20_OnButtonClickedEvent__DelegateSignature(); // Function UW-BlackMarket_Slot_Custom.UW-BlackMarket_Slot_Custom_C.BndEvt__BTN-Menu02_K2Node_ComponentBoundEvent_20_OnButtonClickedEvent__DelegateSignature(BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -33,11 +33,11 @@ public:
 };
 
 // Function UW-BlackMarket_Slot_Custom.UW-BlackMarket_Slot_Custom_C.SetSlotInfo
-inline void UUW-BlackMarket_Slot_Custom_C::SetSlotInfo(struct Unknown BlackmarketDataInfo) {
+inline void UUW-BlackMarket_Slot_Custom_C::SetSlotInfo(struct FBravoHotelBlackMarketDataType BlackmarketDataInfo) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-BlackMarket_Slot_Custom.UW-BlackMarket_Slot_Custom_C.SetSlotInfo");
 
 	struct SetSlotInfo_Params {
-		struct Unknown BlackmarketDataInfo;
+		struct FBravoHotelBlackMarketDataType BlackmarketDataInfo;
 	}; SetSlotInfo_Params Params;
 
 	Params.BlackmarketDataInfo = BlackmarketDataInfo;
@@ -48,13 +48,13 @@ inline void UUW-BlackMarket_Slot_Custom_C::SetSlotInfo(struct Unknown Blackmarke
 }
 
 // Function UW-BlackMarket_Slot_Custom.UW-BlackMarket_Slot_Custom_C.OnClick
-inline struct Unknown UUW-BlackMarket_Slot_Custom_C::OnClick(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline struct FEventReply UUW-BlackMarket_Slot_Custom_C::OnClick(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-BlackMarket_Slot_Custom.UW-BlackMarket_Slot_Custom_C.OnClick");
 
 	struct OnClick_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
-		struct Unknown ReturnValue;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
+		struct FEventReply ReturnValue;
 
 	}; OnClick_Params Params;
 
@@ -71,11 +71,11 @@ inline struct Unknown UUW-BlackMarket_Slot_Custom_C::OnClick(struct Unknown MyGe
 }
 
 // Function UW-BlackMarket_Slot_Custom.UW-BlackMarket_Slot_Custom_C.SetIconTexture
-inline void UUW-BlackMarket_Slot_Custom_C::SetIconTexture(struct Unknown IconTexture) {
+inline void UUW-BlackMarket_Slot_Custom_C::SetIconTexture(struct TSoftObjectPtr<UPaperSprite> IconTexture) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-BlackMarket_Slot_Custom.UW-BlackMarket_Slot_Custom_C.SetIconTexture");
 
 	struct SetIconTexture_Params {
-		struct Unknown IconTexture;
+		struct TSoftObjectPtr<UPaperSprite> IconTexture;
 	}; SetIconTexture_Params Params;
 
 	Params.IconTexture = IconTexture;
@@ -86,11 +86,11 @@ inline void UUW-BlackMarket_Slot_Custom_C::SetIconTexture(struct Unknown IconTex
 }
 
 // Function UW-BlackMarket_Slot_Custom.UW-BlackMarket_Slot_Custom_C.OnLoaded_7C34C7D64FB053FED5EAACB72A3EAAD0
-inline void UUW-BlackMarket_Slot_Custom_C::OnLoaded_7C34C7D64FB053FED5EAACB72A3EAAD0(struct Unknown Loaded) {
+inline void UUW-BlackMarket_Slot_Custom_C::OnLoaded_7C34C7D64FB053FED5EAACB72A3EAAD0(struct Object Loaded) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-BlackMarket_Slot_Custom.UW-BlackMarket_Slot_Custom_C.OnLoaded_7C34C7D64FB053FED5EAACB72A3EAAD0");
 
 	struct OnLoaded_7C34C7D64FB053FED5EAACB72A3EAAD0_Params {
-		struct Unknown Loaded;
+		struct Object Loaded;
 	}; OnLoaded_7C34C7D64FB053FED5EAACB72A3EAAD0_Params Params;
 
 	Params.Loaded = Loaded;
@@ -115,12 +115,12 @@ inline void UUW-BlackMarket_Slot_Custom_C::Construct() {
 }
 
 // Function UW-BlackMarket_Slot_Custom.UW-BlackMarket_Slot_Custom_C.OnMouseEnter
-inline void UUW-BlackMarket_Slot_Custom_C::OnMouseEnter(struct Unknown MyGeometry, struct Unknown& MouseEvent) {
+inline void UUW-BlackMarket_Slot_Custom_C::OnMouseEnter(struct FGeometry MyGeometry, struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-BlackMarket_Slot_Custom.UW-BlackMarket_Slot_Custom_C.OnMouseEnter");
 
 	struct OnMouseEnter_Params {
-		struct Unknown MyGeometry;
-		struct Unknown& MouseEvent;
+		struct FGeometry MyGeometry;
+		struct FPointerEvent& MouseEvent;
 	}; OnMouseEnter_Params Params;
 
 	Params.MyGeometry = MyGeometry;
@@ -134,11 +134,11 @@ inline void UUW-BlackMarket_Slot_Custom_C::OnMouseEnter(struct Unknown MyGeometr
 }
 
 // Function UW-BlackMarket_Slot_Custom.UW-BlackMarket_Slot_Custom_C.OnMouseLeave
-inline void UUW-BlackMarket_Slot_Custom_C::OnMouseLeave(struct Unknown& MouseEvent) {
+inline void UUW-BlackMarket_Slot_Custom_C::OnMouseLeave(struct FPointerEvent& MouseEvent) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-BlackMarket_Slot_Custom.UW-BlackMarket_Slot_Custom_C.OnMouseLeave");
 
 	struct OnMouseLeave_Params {
-		struct Unknown& MouseEvent;
+		struct FPointerEvent& MouseEvent;
 	}; OnMouseLeave_Params Params;
 
 
@@ -151,11 +151,11 @@ inline void UUW-BlackMarket_Slot_Custom_C::OnMouseLeave(struct Unknown& MouseEve
 }
 
 // Function UW-BlackMarket_Slot_Custom.UW-BlackMarket_Slot_Custom_C.AysncLoading
-inline void UUW-BlackMarket_Slot_Custom_C::AysncLoading(struct Unknown IconTexture) {
+inline void UUW-BlackMarket_Slot_Custom_C::AysncLoading(struct TSoftObjectPtr<UPaperSprite> IconTexture) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-BlackMarket_Slot_Custom.UW-BlackMarket_Slot_Custom_C.AysncLoading");
 
 	struct AysncLoading_Params {
-		struct Unknown IconTexture;
+		struct TSoftObjectPtr<UPaperSprite> IconTexture;
 	}; AysncLoading_Params Params;
 
 	Params.IconTexture = IconTexture;

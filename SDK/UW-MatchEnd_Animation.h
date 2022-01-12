@@ -3,38 +3,38 @@ class UUW-MatchEnd_Animation_C : public UUserWidget {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x248 (8)
-	struct Unknown Infos_ani; // 0x250 (8)
-	struct Unknown SimpleResult_Events; // 0x258 (8)
-	struct Unknown Lose_ani; // 0x260 (8)
-	struct Unknown Win_ani; // 0x268 (8)
-	struct Unknown Lose_Events; // 0x270 (8)
-	struct Unknown Win_Events; // 0x278 (8)
-	struct Unknown ClassName; // 0x280 (8)
-	struct Unknown ClassWeaponName; // 0x288 (8)
-	struct Unknown HeadShot; // 0x290 (8)
-	struct Unknown HorizontalBox_KillerWeaponInfo; // 0x298 (8)
-	struct Unknown HorizontalBox_Rarity; // 0x2A0 (8)
-	struct Unknown Icon_KillerClass; // 0x2A8 (8)
-	struct Unknown Image_894; // 0x2B0 (8)
-	struct Unknown Image_2002; // 0x2B8 (8)
-	struct Unknown Level; // 0x2C0 (8)
-	struct Unknown LoseMessage; // 0x2C8 (8)
-	struct Unknown Overlay_DropItems; // 0x2D0 (8)
-	struct Unknown Overlay_KillerInfo; // 0x2D8 (8)
-	struct Unknown Overlay_WeaponLevel; // 0x2E0 (8)
-	struct Unknown T_DamageType; // 0x2E8 (8)
-	struct Unknown T_WeaponLevel; // 0x2F0 (8)
-	struct Unknown TextBlock_ItemCount; // 0x2F8 (8)
-	struct Unknown Uniform_ItemList; // 0x300 (8)
-	struct Unknown UserName; // 0x308 (8)
-	struct Unknown UW-MatchEnd_RewardSlot_C_1; // 0x310 (8)
-	struct Unknown UW-SkipButton; // 0x318 (8)
-	struct Unknown WeaponName; // 0x320 (8)
-	struct Unknown WidgetSwitcher_DamageCauser; // 0x328 (8)
-	struct Unknown AnimationData; // 0x330 (2)
-	struct Unknown MatchEndWidgetRef; // 0x338 (8)
-	struct Unknown SimpleResult; // 0x340 (168)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x248 (8)
+	struct UWidgetAnimation Infos_Ani; // 0x250 (8)
+	struct UWidgetAnimation SimpleResult_Events; // 0x258 (8)
+	struct UWidgetAnimation Lose_ani; // 0x260 (8)
+	struct UWidgetAnimation Win_ani; // 0x268 (8)
+	struct UWidgetAnimation Lose_Events; // 0x270 (8)
+	struct UWidgetAnimation Win_Events; // 0x278 (8)
+	struct UTextBlock ClassName; // 0x280 (8)
+	struct UTextBlock ClassWeaponName; // 0x288 (8)
+	struct UTextBlock HeadShot; // 0x290 (8)
+	struct UHorizontalBox HorizontalBox_KillerWeaponInfo; // 0x298 (8)
+	struct UHorizontalBox HorizontalBox_Rarity; // 0x2A0 (8)
+	struct UImage Icon_KillerClass; // 0x2A8 (8)
+	struct UImage Image_894; // 0x2B0 (8)
+	struct UImage Image_2002; // 0x2B8 (8)
+	struct UTextBlock Level; // 0x2C0 (8)
+	struct UTextBlock LoseMessage; // 0x2C8 (8)
+	struct UOverlay Overlay_DropItems; // 0x2D0 (8)
+	struct UOverlay Overlay_KillerInfo; // 0x2D8 (8)
+	struct UOverlay Overlay_WeaponLevel; // 0x2E0 (8)
+	struct UTextBlock T_DamageType; // 0x2E8 (8)
+	struct UTextBlock T_WeaponLevel; // 0x2F0 (8)
+	struct UTextBlock TextBlock_ItemCount; // 0x2F8 (8)
+	struct UUniformGridPanel Uniform_ItemList; // 0x300 (8)
+	struct UTextBlock UserName; // 0x308 (8)
+	struct UUW-MatchEnd_RewardSlot_C UW-MatchEnd_RewardSlot_C_1; // 0x310 (8)
+	struct UUW-MatchEnd_ButtonBase_C UW-SkipButton; // 0x318 (8)
+	struct UTextBlock WeaponName; // 0x320 (8)
+	struct UWidgetSwitcher WidgetSwitcher_DamageCauser; // 0x328 (8)
+	struct FMatchEndAnimation AnimationData; // 0x330 (2)
+	struct UUW-MatchEndWidget_C MatchEndWidgetRef; // 0x338 (8)
+	struct FMatchEndSimpleResult SimpleResult; // 0x340 (168)
 	char MatchEnd : 0; // 0x3E8 (1)
 
 	void SequenceEvent__ENTRYPOINTUW-MatchEnd_Animation_10(); // Function UW-MatchEnd_Animation.UW-MatchEnd_Animation_C.SequenceEvent__ENTRYPOINTUW-MatchEnd_Animation_10(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -54,7 +54,7 @@ public:
 	void HideMainWidget(); // Function UW-MatchEnd_Animation.UW-MatchEnd_Animation_C.HideMainWidget(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetSimpleResult(); // Function UW-MatchEnd_Animation.UW-MatchEnd_Animation_C.SetSimpleResult(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void SetMatchEnd(); // Function UW-MatchEnd_Animation.UW-MatchEnd_Animation_C.SetMatchEnd(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void SetKillerInfo(struct Unknown& Result); // Function UW-MatchEnd_Animation.UW-MatchEnd_Animation_C.SetKillerInfo(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void SetKillerInfo(struct FMatchEndSimpleResult& Result); // Function UW-MatchEnd_Animation.UW-MatchEnd_Animation_C.SetKillerInfo(Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ReleaseSlomo(); // Function UW-MatchEnd_Animation.UW-MatchEnd_Animation_C.ReleaseSlomo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ApplySlomo(); // Function UW-MatchEnd_Animation.UW-MatchEnd_Animation_C.ApplySlomo(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void PlayWidgetLoseAni(); // Function UW-MatchEnd_Animation.UW-MatchEnd_Animation_C.PlayWidgetLoseAni(Public|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
@@ -63,13 +63,13 @@ public:
 	void PlayCharacterWinAnimation(); // Function UW-MatchEnd_Animation.UW-MatchEnd_Animation_C.PlayCharacterWinAnimation(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void PlayDefeatBGM(); // Function UW-MatchEnd_Animation.UW-MatchEnd_Animation_C.PlayDefeatBGM(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void PlayWinBGM(); // Function UW-MatchEnd_Animation.UW-MatchEnd_Animation_C.PlayWinBGM(Public|HasDefaults|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void OnLoaded_75D3BA16496147EA282F81A6BD982AD6(struct Unknown Loaded); // Function UW-MatchEnd_Animation.UW-MatchEnd_Animation_C.OnLoaded_75D3BA16496147EA282F81A6BD982AD6(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void OnLoaded_75D3BA16496147EA282F81A6BD982AD6(struct Object Loaded); // Function UW-MatchEnd_Animation.UW-MatchEnd_Animation_C.OnLoaded_75D3BA16496147EA282F81A6BD982AD6(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Construct(); // Function UW-MatchEnd_Animation.UW-MatchEnd_Animation_C.Construct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void Destruct(); // Function UW-MatchEnd_Animation.UW-MatchEnd_Animation_C.Destruct(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void AsyncIcon(struct Unknown Image); // Function UW-MatchEnd_Animation.UW-MatchEnd_Animation_C.AsyncIcon(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void AsyncIcon(struct TSoftObjectPtr<Object> Image); // Function UW-MatchEnd_Animation.UW-MatchEnd_Animation_C.AsyncIcon(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnClicked_SkipButton(); // Function UW-MatchEnd_Animation.UW-MatchEnd_Animation_C.OnClicked_SkipButton(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void DelegateOnWhoKilledMe_Event_1(struct Unknown& SimpleResult); // Function UW-MatchEnd_Animation.UW-MatchEnd_Animation_C.DelegateOnWhoKilledMe_Event_1(HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
-	void Tick(struct Unknown MyGeometry, float InDeltaTime); // Function UW-MatchEnd_Animation.UW-MatchEnd_Animation_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void DelegateOnWhoKilledMe_Event_1(struct FMatchEndSimpleResult& SimpleResult); // Function UW-MatchEnd_Animation.UW-MatchEnd_Animation_C.DelegateOnWhoKilledMe_Event_1(HasOutParms|BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function UW-MatchEnd_Animation.UW-MatchEnd_Animation_C.Tick(BlueprintCosmetic|Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ä¤@t¤¸_1(); // Function UW-MatchEnd_Animation.UW-MatchEnd_Animation_C.ä¤@t¤¸_1(BlueprintCallable|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_UW-MatchEnd_Animation(int32_t EntryPoint); // Function UW-MatchEnd_Animation.UW-MatchEnd_Animation_C.ExecuteUbergraph_UW-MatchEnd_Animation(Final|UbergraphFunction|HasDefaults) // <Game_BE.exe+0x2B80160>
 };
@@ -313,11 +313,11 @@ inline void UUW-MatchEnd_Animation_C::SetMatchEnd() {
 }
 
 // Function UW-MatchEnd_Animation.UW-MatchEnd_Animation_C.SetKillerInfo
-inline void UUW-MatchEnd_Animation_C::SetKillerInfo(struct Unknown& Result) {
+inline void UUW-MatchEnd_Animation_C::SetKillerInfo(struct FMatchEndSimpleResult& Result) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MatchEnd_Animation.UW-MatchEnd_Animation_C.SetKillerInfo");
 
 	struct SetKillerInfo_Params {
-		struct Unknown& Result;
+		struct FMatchEndSimpleResult& Result;
 	}; SetKillerInfo_Params Params;
 
 
@@ -442,11 +442,11 @@ inline void UUW-MatchEnd_Animation_C::PlayWinBGM() {
 }
 
 // Function UW-MatchEnd_Animation.UW-MatchEnd_Animation_C.OnLoaded_75D3BA16496147EA282F81A6BD982AD6
-inline void UUW-MatchEnd_Animation_C::OnLoaded_75D3BA16496147EA282F81A6BD982AD6(struct Unknown Loaded) {
+inline void UUW-MatchEnd_Animation_C::OnLoaded_75D3BA16496147EA282F81A6BD982AD6(struct Object Loaded) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MatchEnd_Animation.UW-MatchEnd_Animation_C.OnLoaded_75D3BA16496147EA282F81A6BD982AD6");
 
 	struct OnLoaded_75D3BA16496147EA282F81A6BD982AD6_Params {
-		struct Unknown Loaded;
+		struct Object Loaded;
 	}; OnLoaded_75D3BA16496147EA282F81A6BD982AD6_Params Params;
 
 	Params.Loaded = Loaded;
@@ -485,11 +485,11 @@ inline void UUW-MatchEnd_Animation_C::Destruct() {
 }
 
 // Function UW-MatchEnd_Animation.UW-MatchEnd_Animation_C.AsyncIcon
-inline void UUW-MatchEnd_Animation_C::AsyncIcon(struct Unknown Image) {
+inline void UUW-MatchEnd_Animation_C::AsyncIcon(struct TSoftObjectPtr<Object> Image) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MatchEnd_Animation.UW-MatchEnd_Animation_C.AsyncIcon");
 
 	struct AsyncIcon_Params {
-		struct Unknown Image;
+		struct TSoftObjectPtr<Object> Image;
 	}; AsyncIcon_Params Params;
 
 	Params.Image = Image;
@@ -514,11 +514,11 @@ inline void UUW-MatchEnd_Animation_C::OnClicked_SkipButton() {
 }
 
 // Function UW-MatchEnd_Animation.UW-MatchEnd_Animation_C.DelegateOnWhoKilledMe_Event_1
-inline void UUW-MatchEnd_Animation_C::DelegateOnWhoKilledMe_Event_1(struct Unknown& SimpleResult) {
+inline void UUW-MatchEnd_Animation_C::DelegateOnWhoKilledMe_Event_1(struct FMatchEndSimpleResult& SimpleResult) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MatchEnd_Animation.UW-MatchEnd_Animation_C.DelegateOnWhoKilledMe_Event_1");
 
 	struct DelegateOnWhoKilledMe_Event_1_Params {
-		struct Unknown& SimpleResult;
+		struct FMatchEndSimpleResult& SimpleResult;
 	}; DelegateOnWhoKilledMe_Event_1_Params Params;
 
 
@@ -531,11 +531,11 @@ inline void UUW-MatchEnd_Animation_C::DelegateOnWhoKilledMe_Event_1(struct Unkno
 }
 
 // Function UW-MatchEnd_Animation.UW-MatchEnd_Animation_C.Tick
-inline void UUW-MatchEnd_Animation_C::Tick(struct Unknown MyGeometry, float InDeltaTime) {
+inline void UUW-MatchEnd_Animation_C::Tick(struct FGeometry MyGeometry, float InDeltaTime) {
 	static auto fn = UObject::FindObject<UFunction>("Function UW-MatchEnd_Animation.UW-MatchEnd_Animation_C.Tick");
 
 	struct Tick_Params {
-		struct Unknown MyGeometry;
+		struct FGeometry MyGeometry;
 		float InDeltaTime;
 	}; Tick_Params Params;
 

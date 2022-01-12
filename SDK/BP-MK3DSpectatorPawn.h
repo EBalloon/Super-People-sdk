@@ -3,24 +3,24 @@ class ABP-MK3DSpectatorPawn_C : public ABravoHotelMK3DSpectatorPawn {
 
 public:
 
-	struct Unknown UberGraphFrame; // 0x3C8 (8)
-	struct Unknown FreeCam; // 0x3D0 (8)
-	struct Unknown SpringArm; // 0x3D8 (8)
-	struct Unknown ReplayMainWidget; // 0x3E0 (8)
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x3C8 (8)
+	struct UCameraComponent FreeCam; // 0x3D0 (8)
+	struct USpringArmComponent SpringArm; // 0x3D8 (8)
+	struct UUW-ReplayMainWidget_C ReplayMainWidget; // 0x3E0 (8)
 	char ViewMode; // 0x3E8 (1)
 
-	void GetReplayWidget(struct Unknown& ReplayMainWidget); // Function BP-MK3DSpectatorPawn.BP-MK3DSpectatorPawn_C.GetReplayWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
+	void GetReplayWidget(struct UUW-ReplayMainWidget_C& ReplayMainWidget); // Function BP-MK3DSpectatorPawn.BP-MK3DSpectatorPawn_C.GetReplayWidget(Public|HasOutParms|BlueprintCallable|BlueprintEvent|BlueprintPure) // <Game_BE.exe+0x2B80160>
 	void ReceiveBeginPlay(); // Function BP-MK3DSpectatorPawn.BP-MK3DSpectatorPawn_C.ReceiveBeginPlay(Event|Protected|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void OnChangedCurrentSpeedLevel(); // Function BP-MK3DSpectatorPawn.BP-MK3DSpectatorPawn_C.OnChangedCurrentSpeedLevel(Event|Public|BlueprintEvent) // <Game_BE.exe+0x2B80160>
 	void ExecuteUbergraph_BP-MK3DSpectatorPawn(int32_t EntryPoint); // Function BP-MK3DSpectatorPawn.BP-MK3DSpectatorPawn_C.ExecuteUbergraph_BP-MK3DSpectatorPawn(Final|UbergraphFunction) // <Game_BE.exe+0x2B80160>
 };
 
 // Function BP-MK3DSpectatorPawn.BP-MK3DSpectatorPawn_C.GetReplayWidget
-inline void ABP-MK3DSpectatorPawn_C::GetReplayWidget(struct Unknown& ReplayMainWidget) {
+inline void ABP-MK3DSpectatorPawn_C::GetReplayWidget(struct UUW-ReplayMainWidget_C& ReplayMainWidget) {
 	static auto fn = UObject::FindObject<UFunction>("Function BP-MK3DSpectatorPawn.BP-MK3DSpectatorPawn_C.GetReplayWidget");
 
 	struct GetReplayWidget_Params {
-		struct Unknown& ReplayMainWidget;
+		struct UUW-ReplayMainWidget_C& ReplayMainWidget;
 	}; GetReplayWidget_Params Params;
 
 

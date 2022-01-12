@@ -3,8 +3,8 @@ class UGeometryCache : public Object {
 
 public:
 
-	struct TArray<Unknown> Materials; // 0x30 (16)
-	struct TArray<Unknown> Tracks; // 0x40 (16)
+	struct TArray<struct UMaterialInterface> Materials; // 0x30 (16)
+	struct TArray<struct UGeometryCacheTrack> Tracks; // 0x40 (16)
 	int32_t StartFrame; // 0x60 (4)
 	int32_t EndFrame; // 0x64 (4)
 };
@@ -14,9 +14,9 @@ class AGeometryCacheActor : public UActor {
 
 public:
 
-	struct Unknown GeometryCacheComponent; // 0x318 (8)
+	struct UGeometryCacheComponent GeometryCacheComponent; // 0x318 (8)
 
-	struct Unknown GetGeometryCacheComponent(); // Function GeometryCache.GeometryCacheActor.GetGeometryCacheComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x16E7500>
+	struct UGeometryCacheComponent GetGeometryCacheComponent(); // Function GeometryCache.GeometryCacheActor.GetGeometryCacheComponent(Final|Native|Public|BlueprintCallable|BlueprintPure|Const) // <Game_BE.exe+0x16E7500>
 };
 
 // Class GeometryCache.GeometryCacheCodecBase
@@ -24,7 +24,7 @@ class UGeometryCacheCodecBase : public Object {
 
 public:
 
-	struct TArray<Unknown> TopologyRanges; // 0x28 (16)
+	struct TArray<int32_t> TopologyRanges; // 0x28 (16)
 };
 
 // Class GeometryCache.GeometryCacheCodecRaw
@@ -40,7 +40,7 @@ class UGeometryCacheComponent : public UMeshComponent {
 
 public:
 
-	struct Unknown GeometryCache; // 0x4D8 (8)
+	struct UGeometryCache GeometryCache; // 0x4D8 (8)
 	char bRunning : 0; // 0x4E0 (1)
 	char bLooping : 0; // 0x4E1 (1)
 	float StartTimeOffset; // 0x4E4 (4)
@@ -55,7 +55,7 @@ public:
 	void SetStartTimeOffset(float NewStartTimeOffset); // Function GeometryCache.GeometryCacheComponent.SetStartTimeOffset(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16E7AD0>
 	void SetPlaybackSpeed(float NewPlaybackSpeed); // Function GeometryCache.GeometryCacheComponent.SetPlaybackSpeed(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16E7A50>
 	void SetLooping(char bNewLooping); // Function GeometryCache.GeometryCacheComponent.SetLooping(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16E77B0>
-	char SetGeometryCache(struct Unknown NewGeomCache); // Function GeometryCache.GeometryCacheComponent.SetGeometryCache(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16E7720>
+	char SetGeometryCache(struct UGeometryCache NewGeomCache); // Function GeometryCache.GeometryCacheComponent.SetGeometryCache(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16E7720>
 	void PlayReversedFromEnd(); // Function GeometryCache.GeometryCacheComponent.PlayReversedFromEnd(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16E7700>
 	void PlayReversed(); // Function GeometryCache.GeometryCacheComponent.PlayReversed(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16E76E0>
 	void PlayFromStart(); // Function GeometryCache.GeometryCacheComponent.PlayFromStart(Final|Native|Public|BlueprintCallable) // <Game_BE.exe+0x16E76C0>
@@ -87,7 +87,7 @@ public:
 
 	uint32_t NumMeshSamples; // 0x58 (4)
 
-	void AddMeshSample(struct Unknown& MeshData, float SampleTime); // Function GeometryCache.GeometryCacheTrack_FlipbookAnimation.AddMeshSample(Final|Native|Public|HasOutParms) // <Game_BE.exe+0x16E7240>
+	void AddMeshSample(struct FGeometryCacheMeshData& MeshData, float SampleTime); // Function GeometryCache.GeometryCacheTrack_FlipbookAnimation.AddMeshSample(Final|Native|Public|HasOutParms) // <Game_BE.exe+0x16E7240>
 };
 
 // Class GeometryCache.GeometryCacheTrackStreamable
@@ -95,17 +95,17 @@ class UGeometryCacheTrackStreamable : public UGeometryCacheTrack {
 
 public:
 
-	struct Unknown Codec; // 0x58 (8)
+	struct UGeometryCacheCodecBase Codec; // 0x58 (8)
 	float StartSampleTime; // 0xC8 (4)
 };
 
 // Function GeometryCache.GeometryCacheActor.GetGeometryCacheComponent
-inline struct Unknown AGeometryCacheActor::GetGeometryCacheComponent() {
+inline struct UGeometryCacheComponent AGeometryCacheActor::GetGeometryCacheComponent() {
 	static auto fn = UObject::FindObject<UFunction>("Function GeometryCache.GeometryCacheActor.GetGeometryCacheComponent");
 
 	struct GetGeometryCacheComponent_Params {
 		
-		struct Unknown ReturnValue;
+		struct UGeometryCacheComponent ReturnValue;
 
 	}; GetGeometryCacheComponent_Params Params;
 
@@ -198,11 +198,11 @@ inline void UGeometryCacheComponent::SetLooping(char bNewLooping) {
 }
 
 // Function GeometryCache.GeometryCacheComponent.SetGeometryCache
-inline char UGeometryCacheComponent::SetGeometryCache(struct Unknown NewGeomCache) {
+inline char UGeometryCacheComponent::SetGeometryCache(struct UGeometryCache NewGeomCache) {
 	static auto fn = UObject::FindObject<UFunction>("Function GeometryCache.GeometryCacheComponent.SetGeometryCache");
 
 	struct SetGeometryCache_Params {
-		struct Unknown NewGeomCache;
+		struct UGeometryCache NewGeomCache;
 		char ReturnValue;
 
 	}; SetGeometryCache_Params Params;
@@ -449,11 +449,11 @@ inline float UGeometryCacheComponent::GetAnimationTime() {
 }
 
 // Function GeometryCache.GeometryCacheTrack_FlipbookAnimation.AddMeshSample
-inline void UGeometryCacheTrack_FlipbookAnimation::AddMeshSample(struct Unknown& MeshData, float SampleTime) {
+inline void UGeometryCacheTrack_FlipbookAnimation::AddMeshSample(struct FGeometryCacheMeshData& MeshData, float SampleTime) {
 	static auto fn = UObject::FindObject<UFunction>("Function GeometryCache.GeometryCacheTrack_FlipbookAnimation.AddMeshSample");
 
 	struct AddMeshSample_Params {
-		struct Unknown& MeshData;
+		struct FGeometryCacheMeshData& MeshData;
 		float SampleTime;
 	}; AddMeshSample_Params Params;
 
