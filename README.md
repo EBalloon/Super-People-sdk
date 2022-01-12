@@ -545,3 +545,4 @@
     upperarm_twist_01_r = 36
 
 # PS: They use an anticheat called WonderTrust. WonderTrust + Battleye
+thx to #9Esp fix typedef
